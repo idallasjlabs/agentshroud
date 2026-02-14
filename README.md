@@ -1,5 +1,26 @@
 # SecureClaw: A User-Controlled Proxy Layer for OpenClaw
 
+## 🚀 Current Status: Phase 2 Complete, Phase 3 In Progress
+
+**Latest**: Gateway Layer ✅ (89% test coverage, production-ready)
+**Next**: Hardened Container + Working Chat Interface
+
+📄 **[Phase 2 Completion Report](./PHASE2_COMPLETE.md)** — Full technical details, test coverage, API docs
+📋 **[Project Plan](./snuggly-wobbling-fox.md)** — Implementation phases and progress tracking
+
+| Phase | Status | Description |
+|-------|--------|-------------|
+| Phase 1: Clean Slate | ✅ Complete | Architecture pivot, directory structure |
+| Phase 2: Gateway Layer | ✅ Complete | PII sanitization, audit ledger, routing, approval queue |
+| Phase 3: Hardened Container | 🔨 In Progress | Docker container, persona integration, **working chat MVP** |
+| Phase 4: Parallel Digital Profile | 📅 Planned | Dedicated accounts, MCP skills |
+| Phase 5: iOS/macOS Integration | 📅 Planned | Shortcuts, Share Sheet, Quick Actions |
+| Phase 6: Browser Extension | 📅 Planned | Forward URL, clip selection |
+| Phase 7: Dashboard & Setup | 📅 Planned | Web UI, auto-deployment scripts |
+| Phase 8: Polish & Publish | 📅 Planned | Documentation, examples, release |
+
+---
+
 ## Project Summary
 
 SecureClaw is an open-source security framework that sits between your real digital life and an OpenClaw AI agent. Instead of granting OpenClaw direct access to your email, files, browser, photos, and messaging accounts — the default "god mode" that security researchers have repeatedly demonstrated is dangerous — SecureClaw creates a **parallel digital profile** that acts as a controlled data gateway.
