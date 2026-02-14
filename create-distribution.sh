@@ -33,7 +33,7 @@ echo "Copying deployment scripts and Docker files..."
 cp "$SCRIPT_DIR/deploy-openclaw.sh" "$DIST_DIR/"
 cp "$SCRIPT_DIR/setup-accounts.sh" "$DIST_DIR/"
 cp "$SCRIPT_DIR/Dockerfile.secure" "$DIST_DIR/"
-cp "$SCRIPT_DIR/docker-compose.secure.yml" "$DIST_DIR/"
+cp "$SCRIPT_DIR/docker compose.secure.yml" "$DIST_DIR/"
 cp "$SCRIPT_DIR/SECURITY.md" "$DIST_DIR/"
 
 # Create README
@@ -272,7 +272,7 @@ Secrets and API keys: `~/.oneclaw-secure/secrets/.env`
 
 ### Docker Compose
 
-Container configuration: `~/.oneclaw-secure/docker-compose.yml`
+Container configuration: `~/.oneclaw-secure/docker compose.yml`
 
 Includes:
 - Security hardening options
@@ -438,8 +438,8 @@ docker inspect oneclaw_gateway | jq '.[0].HostConfig.ReadonlyRootfs'
 # Check resource usage
 docker stats oneclaw_gateway
 
-# Adjust memory limit in docker-compose.yml
-nano ~/.oneclaw-secure/docker-compose.yml
+# Adjust memory limit in docker compose.yml
+nano ~/.oneclaw-secure/docker compose.yml
 # Change: mem_limit: 4g
 
 # Restart

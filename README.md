@@ -51,7 +51,7 @@ OPENAI_API_KEY=sk-your-key-here
 
 ```bash
 cd oneclaw-container
-docker-compose up -d
+docker compose up -d
 ```
 
 ### 4. Access
@@ -76,7 +76,7 @@ one-claw-tied-behind-your-back/
 │   │   └── .env                 # API keys (chmod 600)
 │   ├── logs/
 │   │   └── audit.log            # Security audit log
-│   └── docker-compose.yml       # Container orchestration
+│   └── docker compose.yml       # Container orchestration
 │
 ├── Dockerfile.secure            # Multi-stage secure build
 ├── deploy-local.sh              # Deployment script
@@ -111,19 +111,19 @@ All commands run from the container directory:
 cd oneclaw-container
 
 # Start
-docker-compose up -d
+docker compose up -d
 
 # Stop
-docker-compose down
+docker compose down
 
 # View logs
-docker-compose logs -f
+docker compose logs -f
 
 # Check status
 docker ps | grep openclaw
 
 # Restart
-docker-compose restart
+docker compose restart
 ```
 
 ---
@@ -167,9 +167,9 @@ docker inspect oneclaw_isaiah | jq '.[0].HostConfig.CapDrop'
 
 ```bash
 cd oneclaw-container
-docker-compose down
+docker compose down
 docker build --no-cache -t oneclaw-secure:latest -f ../Dockerfile.secure ..
-docker-compose up -d
+docker compose up -d
 ```
 
 ### Update Personality Files
@@ -180,7 +180,7 @@ nano oneclaw-container/workspace/SOUL.md
 nano oneclaw-container/workspace/USER.md
 
 cd oneclaw-container
-docker-compose restart
+docker compose restart
 ```
 
 ---
@@ -198,7 +198,7 @@ tar -czf openclaw-backup-$(date +%Y%m%d).tar.gz oneclaw-container/
 ```bash
 tar -xzf openclaw-backup-YYYYMMDD.tar.gz
 cd oneclaw-container
-docker-compose up -d
+docker compose up -d
 ```
 
 ---
@@ -209,7 +209,7 @@ docker-compose up -d
 
 ```bash
 cd oneclaw-container
-docker-compose logs
+docker compose logs
 
 # Check API key is set
 grep ANTHROPIC_API_KEY secrets/.env
@@ -225,7 +225,7 @@ docker ps | grep openclaw
 curl http://localhost:18789/health
 
 # View recent logs
-docker-compose logs --tail=50
+docker compose logs --tail=50
 ```
 
 ### Network Issues
@@ -242,7 +242,7 @@ docker exec oneclaw_isaiah nslookup google.com
 
 ```bash
 cd oneclaw-container
-docker-compose down
+docker compose down
 docker rmi oneclaw-secure:latest
 cd ..
 ./deploy-local.sh
