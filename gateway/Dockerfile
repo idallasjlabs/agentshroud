@@ -14,7 +14,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     && rm -rf /var/lib/apt/lists/*
 
 # Copy requirements and install Python dependencies
-COPY requirements.txt .
+COPY gateway/requirements.txt .
 RUN pip install --no-cache-dir --prefix=/install -r requirements.txt
 
 # Download spaCy model (this will fail gracefully, fallback to regex works)
@@ -25,6 +25,12 @@ FROM python:3.13-slim
 
 WORKDIR /app
 
+# Install OpenSCAP for compliance scanning
+RUN apt-get update && apt-get install -y --no-install-recommends \
+    libopenscap33 \
+    openscap-common \
+    && rm -rf /var/lib/apt/lists/*
+
 # Create non-root user
 RUN useradd --create-home --shell /bin/bash --uid 1000 secureclaw
 
@@ -32,11 +38,25 @@ RUN useradd --create-home --shell /bin/bash --uid 1000 secureclaw
 COPY --from=builder /install /usr/local
 
 # Copy application code
-COPY . /app/gateway/
+COPY gateway/ /app/gateway/
 
-# Create data directory and set ownership
-RUN mkdir -p /app/gateway/data && \
+# Create data directory (volume will be mounted here) and set ownership
+RUN mkdir -p /app/data && \
     chown -R secureclaw:secureclaw /app
+
+# Copy SCAP content for compliance scanning (from parent context)
+RUN mkdir -p /usr/share/xml/scap/ssg/content
+COPY docker/scap-content/ssg-debian12-ds.xml /usr/share/xml/scap/ssg/content/
+
+# OCI Image labels
+LABEL org.opencontainers.image.title="SecureClaw Gateway"
+LABEL org.opencontainers.image.description="PII sanitization proxy for SecureClaw"
+LABEL org.opencontainers.image.vendor="SecureClaw"
+LABEL org.opencontainers.image.version="0.1.0"
+LABEL org.opencontainers.image.source="https://github.com/ijefferson/oneclaw"
+
+# Prevent Python bytecode generation (read-only filesystem compatibility)
+ENV PYTHONDONTWRITEBYTECODE=1
 
 # Switch to non-root user
 USER secureclaw
@@ -51,5 +71,6 @@ HEALTHCHECK --interval=30s --timeout=5s --retries=3 \
 # Set Python path to include parent directory
 ENV PYTHONPATH=/app
 
-# Run gateway
-CMD ["uvicorn", "gateway.ingest_api.main:app", "--host", "127.0.0.1", "--port", "8080"]
+# Run gateway (bind to 0.0.0.0 for Docker port mapping to work)
+# Security: docker-compose maps only to host 127.0.0.1
+CMD ["uvicorn", "gateway.ingest_api.main:app", "--host", "0.0.0.0", "--port", "8080"]

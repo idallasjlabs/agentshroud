@@ -48,10 +48,10 @@ class MultiAgentRouter:
         self.targets: dict[str, AgentTarget] = {}
 
         # Create default target
-        # In Phase 2, this will likely be offline - router handles gracefully
+        # In Phase 3, points to openclaw container via Docker network
         self.targets[config.default_target] = AgentTarget(
             name=config.default_target,
-            url="http://localhost:18789",  # OpenClaw default gateway port
+            url="http://openclaw:18789",  # OpenClaw container hostname
             content_types=["text", "url", "photo", "file"],
             tags=[],
         )
@@ -138,7 +138,7 @@ class MultiAgentRouter:
         try:
             async with httpx.AsyncClient(timeout=30.0) as client:
                 response = await client.post(
-                    f"{target.url}/forward",  # Assuming agent has /forward endpoint
+                    f"{target.url}/chat",  # Chat service endpoint
                     json=payload,
                 )
                 response.raise_for_status()
