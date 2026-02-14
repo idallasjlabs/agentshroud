@@ -1,0 +1,45 @@
+# SecureClaw OpenClaw Container - Phase 3 MVP
+# Goal: Working chat with Isaiah's personality + security hardening
+# Base: Python 3.11 (stable, tested with OpenClaw)
+
+FROM python:3.11-slim AS base
+
+# Install system dependencies
+RUN apt-get update && apt-get install -y --no-install-recommends \
+    curl \
+    git \
+    ca-certificates \
+    && rm -rf /var/lib/apt/lists/*
+
+# Create non-root user (UID 1000)
+RUN groupadd -g 1000 openclaw && \
+    useradd -u 1000 -g openclaw -m -s /bin/bash openclaw
+
+# Set working directory
+WORKDIR /home/openclaw
+
+# Install OpenClaw globally (as root for now, switch user later)
+RUN pip install --no-cache-dir openclaw
+
+# Create workspace directories
+RUN mkdir -p /home/openclaw/.openclaw/workspace && \
+    mkdir -p /home/openclaw/.openclaw/data && \
+    chown -R openclaw:openclaw /home/openclaw
+
+# Copy persona files (will be mounted as volumes in docker-compose)
+# Placeholder - actual files mounted at runtime
+RUN mkdir -p /workspace && \
+    chown -R openclaw:openclaw /workspace
+
+# Switch to non-root user
+USER openclaw
+
+# Expose OpenClaw default port (localhost only in docker-compose)
+EXPOSE 18789
+
+# Healthcheck - verify OpenClaw is responding
+HEALTHCHECK --interval=30s --timeout=10s --start-period=40s --retries=3 \
+    CMD curl -f http://localhost:18789/health || exit 1
+
+# Entrypoint will be defined in docker-compose with environment variables
+CMD ["openclaw", "serve", "--host", "0.0.0.0", "--port", "18789"]

@@ -1,0 +1,7 @@
+# Secrets - NEVER commit
+secrets/*.txt
+secrets/*.key
+secrets/*.pem
+
+# Exclude README (documentation is OK)
+!secrets/README.md
