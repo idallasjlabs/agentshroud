@@ -195,7 +195,8 @@ class ApprovalQueue:
             if item.status != "pending":
                 continue
 
-            expires_dt = datetime.fromisoformat(item.expires_at.replace("Z", ""))
+            from datetime import timezone as tz
+            expires_dt = datetime.fromisoformat(item.expires_at.replace("Z", "+00:00"))
             if now > expires_dt:
                 item.status = "expired"
                 expired_ids.append(request_id)

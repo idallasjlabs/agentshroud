@@ -147,3 +147,60 @@ async def test_get_stats(test_ledger):
     assert stats["total_entries"] == 1
     assert "by_source" in stats
     assert stats["by_source"]["shortcut"] == 1
+
+
+@pytest.mark.asyncio
+async def test_query_with_time_filters(test_ledger):
+    """Test querying ledger with time range filters"""
+    from datetime import datetime, timezone, timedelta
+
+    # Add test entry
+    await test_ledger.record(
+        source="shortcut",
+        content="test",
+        original_content="test",
+        sanitized=False,
+        redaction_count=0,
+        redaction_types=[],
+        forwarded_to="test-agent",
+    )
+
+    # Query with time range
+    now = datetime.now(timezone.utc)
+    since = (now - timedelta(hours=1)).isoformat().replace("+00:00", "Z")
+    until = (now + timedelta(hours=1)).isoformat().replace("+00:00", "Z")
+
+    results = await test_ledger.query(since=since, until=until)
+
+    assert results.total > 0
+
+
+@pytest.mark.asyncio
+async def test_query_with_forwarded_to_filter(test_ledger):
+    """Test querying ledger with forwarded_to filter"""
+    # Add test entries with different targets
+    await test_ledger.record(
+        source="shortcut",
+        content="test1",
+        original_content="test1",
+        sanitized=False,
+        redaction_count=0,
+        redaction_types=[],
+        forwarded_to="agent1",
+    )
+
+    await test_ledger.record(
+        source="shortcut",
+        content="test2",
+        original_content="test2",
+        sanitized=False,
+        redaction_count=0,
+        redaction_types=[],
+        forwarded_to="agent2",
+    )
+
+    # Query for agent1 only
+    results = await test_ledger.query(forwarded_to="agent1")
+
+    assert results.total >= 1
+    assert all(entry.forwarded_to == "agent1" for entry in results.entries)
