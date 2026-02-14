@@ -1,0 +1,1 @@
+create ios and mac SHhorcuts to forward messages, emails, web links, etc to my openclaw agent

@@ -1,0 +1,1 @@
+create an agent to monitor openclw git hub and web and other services for vunerabilities and automatically create a plan to update openclaw and our security implementation to protect users from these vunderbilities.
