@@ -83,6 +83,7 @@ class ForwardResponse(BaseModel):
     content_hash: str = Field(..., description="SHA-256 hash of sanitized content")
     forwarded_to: str = Field(..., description="Target agent name")
     timestamp: str = Field(..., description="ISO 8601 timestamp")
+    agent_response: dict | None = Field(None, description="Agent's response if available")
 
 
 class LedgerEntry(BaseModel):

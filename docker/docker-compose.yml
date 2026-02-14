@@ -74,9 +74,9 @@ services:
       - ../tobeornottobe/USER.md:/workspace/USER:ro
       - openclaw-data:/home/openclaw/.openclaw/data
 
-    # Secrets (Anthropic API key)
+    # Secrets (OpenAI API key)
     secrets:
-      - anthropic_api_key
+      - openai_api_key
 
     # Environment
     environment:
@@ -85,7 +85,7 @@ services:
       - OPENCLAW_DISABLE_BONJOUR=1  # Disable mDNS broadcasts
       - OPENCLAW_MODE=dm             # DM mode only (no open mode)
       - OPENCLAW_SCOPE=session       # Session isolation
-      - ANTHROPIC_API_KEY_FILE=/run/secrets/anthropic_api_key
+      - OPENAI_API_KEY_FILE=/run/secrets/openai_api_key
       - OPENCLAW_WORKSPACE=/workspace
       - OPENCLAW_DATA_DIR=/home/openclaw/.openclaw/data
 
@@ -125,10 +125,10 @@ services:
       gateway:
         condition: service_healthy
 
-# Docker secrets (Anthropic API key)
+# Docker secrets (OpenAI API key)
 secrets:
-  anthropic_api_key:
-    file: ./secrets/anthropic_api_key.txt
+  openai_api_key:
+    file: ./secrets/openai_api_key.txt
 
 # Internal-only network (no external access)
 networks:

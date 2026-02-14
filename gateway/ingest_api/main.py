@@ -258,8 +258,9 @@ async def forward_content(request: ForwardRequest, auth: AuthRequired):
 
     # Step 3: Forward to agent
     forwarded_to = target.name
+    agent_response = None
     try:
-        await app_state.router.forward_to_agent(
+        agent_response = await app_state.router.forward_to_agent(
             target=target,
             sanitized_content=sanitized_content,
             ledger_id="pending",  # Will be updated with actual ID
@@ -270,6 +271,7 @@ async def forward_content(request: ForwardRequest, auth: AuthRequired):
             },
         )
         logger.info(f"Content forwarded to {target.name}")
+        logger.info(f"DEBUG: agent_response = {agent_response}")
 
     except ForwardError as e:
         # Agent offline - log but continue (graceful degradation)
@@ -299,15 +301,21 @@ async def forward_content(request: ForwardRequest, auth: AuthRequired):
         )
 
     # Step 5: Return response
-    return ForwardResponse(
-        id=ledger_entry.id,
-        sanitized=sanitized,
-        redactions=sanitization_result.entity_types_found,
-        redaction_count=len(sanitization_result.redactions),
-        content_hash=ledger_entry.content_hash,
-        forwarded_to=forwarded_to,
-        timestamp=ledger_entry.timestamp,
-    )
+    response_data = {
+        "id": ledger_entry.id,
+        "sanitized": sanitized,
+        "redactions": sanitization_result.entity_types_found,
+        "redaction_count": len(sanitization_result.redactions),
+        "content_hash": ledger_entry.content_hash,
+        "forwarded_to": forwarded_to,
+        "timestamp": ledger_entry.timestamp,
+    }
+
+    # Include agent response if available
+    if agent_response:
+        response_data["agent_response"] = agent_response
+
+    return response_data
 
 
 @app.get("/ledger", response_model=LedgerQueryResponse)
