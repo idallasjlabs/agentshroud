@@ -1,6 +1,6 @@
 {
   "gateway": {
-    "bind": "0.0.0.0",
+    "bind": "loopback",
     "port": 18789,
     "auth": {
       "mode": "token"
