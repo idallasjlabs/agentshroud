@@ -11,9 +11,9 @@ set -e
 ###############################################################################
 
 PROJECT_NAME="one-claw-tied-behind-your-back"
-INSTALL_DIR="$HOME/.openclaw-secure"
+INSTALL_DIR="$HOME/.oneclaw-secure"
 COMPOSE_FILE="$INSTALL_DIR/docker-compose.yml"
-CONFIG_FILE="$INSTALL_DIR/config/openclaw.json"
+CONFIG_FILE="$INSTALL_DIR/config/oneclaw.json"
 SECRETS_FILE="$INSTALL_DIR/secrets/.env"
 
 # Colors for output
@@ -521,13 +521,13 @@ EOF
     # Create LaunchAgent for auto-start
     mkdir -p ~/Library/LaunchAgents
 
-    cat > ~/Library/LaunchAgents/com.openclaw.macos-bridge.plist <<EOF
+    cat > ~/Library/LaunchAgents/com.oneclaw.macos-bridge.plist <<EOF
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
     <key>Label</key>
-    <string>com.openclaw.macos-bridge</string>
+    <string>com.oneclaw.macos-bridge</string>
     <key>ProgramArguments</key>
     <array>
         <string>$(which node)</string>
@@ -551,7 +551,7 @@ EOF
 EOF
 
     print_success "macOS bridge service created"
-    print_success "LaunchAgent created at ~/Library/LaunchAgents/com.openclaw.macos-bridge.plist"
+    print_success "LaunchAgent created at ~/Library/LaunchAgents/com.oneclaw.macos-bridge.plist"
     echo ""
 }
 
@@ -634,7 +634,7 @@ done
 
 # Start macOS bridge
 echo "Starting macOS bridge..."
-launchctl load ~/Library/LaunchAgents/com.openclaw.macos-bridge.plist 2>/dev/null || echo "Bridge already loaded"
+launchctl load ~/Library/LaunchAgents/com.oneclaw.macos-bridge.plist 2>/dev/null || echo "Bridge already loaded"
 
 echo ""
 echo "✓ OpenClaw is running"
@@ -657,7 +657,7 @@ cd "$(dirname "$0")"
 echo "Stopping OpenClaw services..."
 
 # Stop macOS bridge
-launchctl unload ~/Library/LaunchAgents/com.openclaw.macos-bridge.plist 2>/dev/null || true
+launchctl unload ~/Library/LaunchAgents/com.oneclaw.macos-bridge.plist 2>/dev/null || true
 
 # Stop Docker containers
 docker-compose down
@@ -673,11 +673,11 @@ echo "=== OpenClaw Status ==="
 echo ""
 
 echo "Container:"
-docker ps --filter "name=openclaw_gateway" --format "table {{.Names}}\t{{.Status}}\t{{.Ports}}"
+docker ps --filter "name=oneclaw_gateway" --format "table {{.Names}}\t{{.Status}}\t{{.Ports}}"
 echo ""
 
 echo "macOS Bridge:"
-launchctl list | grep com.openclaw.macos-bridge || echo "Not running"
+launchctl list | grep com.oneclaw.macos-bridge || echo "Not running"
 echo ""
 
 echo "Gateway Health:"
@@ -689,7 +689,7 @@ curl -s http://localhost:8765/health 2>/dev/null | jq . 2>/dev/null || echo "Bri
 echo ""
 
 echo "Resource Usage:"
-docker stats openclaw_gateway --no-stream 2>/dev/null || echo "Container not running"
+docker stats oneclaw_gateway --no-stream 2>/dev/null || echo "Container not running"
 STATUSEOF
 
     # Logs script
@@ -714,12 +714,12 @@ mkdir -p "$BACKUP_DIR"
 
 echo "Creating backup..."
 echo "Stopping services temporarily..."
-cd "$HOME/.openclaw-secure"
+cd "$HOME/.oneclaw-secure"
 ./stop.sh > /dev/null 2>&1
 
 echo "Backing up configuration, workspace, and secrets..."
 tar -czf "$BACKUP_FILE" \
-    -C "$HOME/.openclaw-secure" \
+    -C "$HOME/.oneclaw-secure" \
     config workspace secrets \
     2>/dev/null
 
@@ -731,7 +731,7 @@ echo "✓ Backup created: $BACKUP_FILE"
 echo "  Size: $(du -h "$BACKUP_FILE" | cut -f1)"
 echo ""
 echo "Restore with:"
-echo "  tar -xzf $BACKUP_FILE -C $HOME/.openclaw-secure"
+echo "  tar -xzf $BACKUP_FILE -C $HOME/.oneclaw-secure"
 BACKUPEOF
 
     # Make all scripts executable
@@ -757,9 +757,9 @@ build_docker_image() {
     cd "$INSTALL_DIR"
 
     # Build the image
-    if docker build -t openclaw-secure:latest -f Dockerfile . ; then
+    if docker build -t oneclaw-secure:latest -f Dockerfile . ; then
         print_success "Docker image built successfully"
-        print_success "Image: openclaw-secure:latest"
+        print_success "Image: oneclaw-secure:latest"
         echo ""
         echo "Security notes:"
         echo "  ✓ Source code never touched host filesystem"
@@ -835,7 +835,7 @@ display_next_steps() {
     echo ""
 
     echo "Documentation:"
-    echo "   OpenClaw Docs: https://docs.openclaw.ai"
+    echo "   OpenClaw Docs: https://docs.oneclaw.ai"
     echo "   GitHub: https://github.com/openclaw/openclaw"
     echo "   Your README: $INSTALL_DIR/README.md"
     echo ""

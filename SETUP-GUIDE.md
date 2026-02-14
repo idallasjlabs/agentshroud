@@ -31,7 +31,7 @@ OpenClaw needs an AI provider to work. You mentioned you have a Claude Max subsc
 
 **Add to OpenClaw**:
 ```bash
-cd /Users/ijefferson.admin/Development/openclaw/openclaw-container
+cd /Users/ijefferson.admin/Development/openclaw/oneclaw-container
 nano secrets/.env
 ```
 
@@ -51,7 +51,7 @@ If you prefer to avoid Claude API costs:
 OPENAI_API_KEY=sk-your-openai-key
 ```
 
-Then update `openclaw-container/config/openclaw.json`:
+Then update `oneclaw-container/config/oneclaw.json`:
 ```json
 "model": "openai/gpt-4"
 ```
@@ -61,7 +61,7 @@ Then update `openclaw-container/config/openclaw.json`:
 ## Step 2: Start OpenClaw
 
 ```bash
-cd /Users/ijefferson.admin/Development/openclaw/openclaw-container
+cd /Users/ijefferson.admin/Development/openclaw/oneclaw-container
 docker-compose up -d
 ```
 
@@ -78,7 +78,7 @@ docker ps | grep openclaw
 
 You should see:
 ```
-openclaw_isaiah   Up X seconds   127.0.0.1:18789->18789/tcp, 127.0.0.1:18790->18790/tcp
+oneclaw_isaiah   Up X seconds   127.0.0.1:18789->18789/tcp, 127.0.0.1:18790->18790/tcp
 ```
 
 ---
@@ -99,7 +99,7 @@ You'll see the OpenClaw WebChat interface. Type a message to test:
 ### Option 2: Command Line Interface
 
 ```bash
-docker exec -it openclaw_isaiah npx openclaw chat
+docker exec -it oneclaw_isaiah npx openclaw chat
 ```
 
 This opens an interactive chat session. Type messages and press Enter.
@@ -113,7 +113,7 @@ Exit with `Ctrl+C`.
 If something isn't working, check the logs:
 
 ```bash
-cd /Users/ijefferson.admin/Development/openclaw/openclaw-container
+cd /Users/ijefferson.admin/Development/openclaw/oneclaw-container
 docker-compose logs -f
 ```
 
@@ -133,20 +133,20 @@ Test that the container can ONLY access the internet:
 
 ### Should Work (Internet):
 ```bash
-docker exec openclaw_isaiah curl -I https://google.com
+docker exec oneclaw_isaiah curl -I https://google.com
 ```
 Expected: `HTTP/2 200` (Success)
 
 ### Should Fail (LAN Blocked):
 ```bash
 # Replace 192.168.1.1 with YOUR router's IP
-docker exec openclaw_isaiah curl --connect-timeout 5 http://192.168.1.1
+docker exec oneclaw_isaiah curl --connect-timeout 5 http://192.168.1.1
 ```
 Expected: `Connection timed out` or `No route to host`
 
 ### Should Fail (Host Blocked):
 ```bash
-docker exec openclaw_isaiah curl --connect-timeout 5 http://host.docker.internal:22
+docker exec oneclaw_isaiah curl --connect-timeout 5 http://host.docker.internal:22
 ```
 Expected: Connection failure
 
@@ -179,7 +179,7 @@ You'll need new accounts for security isolation:
 
 **Add to OpenClaw**:
 ```bash
-nano /Users/ijefferson.admin/Development/openclaw/openclaw-container/secrets/.env
+nano /Users/ijefferson.admin/Development/openclaw/oneclaw-container/secrets/.env
 ```
 Add:
 ```bash
@@ -188,7 +188,7 @@ TELEGRAM_BOT_TOKEN=your-bot-token-here
 
 **Restart OpenClaw**:
 ```bash
-cd /Users/ijefferson.admin/Development/openclaw/openclaw-container
+cd /Users/ijefferson.admin/Development/openclaw/oneclaw-container
 docker-compose restart
 ```
 
@@ -196,8 +196,8 @@ docker-compose restart
 
 #### 6.3: Google Calendar Integration
 ```bash
-docker exec -it openclaw_isaiah npx openclaw skills install @openclaw/calendar
-docker exec -it openclaw_isaiah npx openclaw skills configure calendar
+docker exec -it oneclaw_isaiah npx openclaw skills install @openclaw/calendar
+docker exec -it oneclaw_isaiah npx openclaw skills configure calendar
 ```
 
 Follow the OAuth prompts - they'll open a browser for you to authorize access.
@@ -229,34 +229,34 @@ For now, we'll use manual approval (safer).
 
 **Via CLI**:
 ```bash
-docker exec -it openclaw_isaiah npx openclaw chat --message "What's the weather?"
+docker exec -it oneclaw_isaiah npx openclaw chat --message "What's the weather?"
 ```
 
 ### Management Commands
 
 **Start OpenClaw**:
 ```bash
-cd /Users/ijefferson.admin/Development/openclaw/openclaw-container && docker-compose up -d
+cd /Users/ijefferson.admin/Development/openclaw/oneclaw-container && docker-compose up -d
 ```
 
 **Stop OpenClaw**:
 ```bash
-cd /Users/ijefferson.admin/Development/openclaw/openclaw-container && docker-compose down
+cd /Users/ijefferson.admin/Development/openclaw/oneclaw-container && docker-compose down
 ```
 
 **Restart OpenClaw** (after config changes):
 ```bash
-cd /Users/ijefferson.admin/Development/openclaw/openclaw-container && docker-compose restart
+cd /Users/ijefferson.admin/Development/openclaw/oneclaw-container && docker-compose restart
 ```
 
 **Check Status**:
 ```bash
-cd /Users/ijefferson.admin/Development/openclaw/openclaw-container && bash status.sh
+cd /Users/ijefferson.admin/Development/openclaw/oneclaw-container && bash status.sh
 ```
 
 **View Logs**:
 ```bash
-cd /Users/ijefferson.admin/Development/openclaw/openclaw-container && docker-compose logs -f
+cd /Users/ijefferson.admin/Development/openclaw/oneclaw-container && docker-compose logs -f
 ```
 
 ---
@@ -269,12 +269,12 @@ OpenClaw represents you using these files:
 - `workspace/USER.md` - Your professional background, context
 
 The AI reads these files on startup. To update:
-1. Edit files in `openclaw-container/workspace/`
+1. Edit files in `oneclaw-container/workspace/`
 2. Restart OpenClaw: `docker-compose restart`
 
 **Example - Update your preferred username**:
 ```bash
-nano /Users/ijefferson.admin/Development/openclaw/openclaw-container/workspace/IDENTITY
+nano /Users/ijefferson.admin/Development/openclaw/oneclaw-container/workspace/IDENTITY
 ```
 Edit the "Name" line, save, then restart.
 
@@ -286,17 +286,17 @@ Edit the "Name" line, save, then restart.
 
 List available skills:
 ```bash
-docker exec -it openclaw_isaiah npx openclaw skills list --available
+docker exec -it oneclaw_isaiah npx openclaw skills list --available
 ```
 
 Install a skill:
 ```bash
-docker exec -it openclaw_isaiah npx openclaw skills install @openclaw/todoist
+docker exec -it oneclaw_isaiah npx openclaw skills install @openclaw/todoist
 ```
 
 Configure it:
 ```bash
-docker exec -it openclaw_isaiah npx openclaw skills configure todoist
+docker exec -it oneclaw_isaiah npx openclaw skills configure todoist
 ```
 
 ### Adjust Resource Limits
@@ -313,18 +313,18 @@ Restart: `docker-compose up -d --force-recreate`
 
 Create a LaunchAgent to auto-start OpenClaw when you log in:
 ```bash
-cat > ~/Library/LaunchAgents/com.openclaw.isaiah.plist << 'EOF'
+cat > ~/Library/LaunchAgents/com.oneclaw.isaiah.plist << 'EOF'
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
     <key>Label</key>
-    <string>com.openclaw.isaiah</string>
+    <string>com.oneclaw.isaiah</string>
     <key>ProgramArguments</key>
     <array>
         <string>/usr/local/bin/docker-compose</string>
         <string>-f</string>
-        <string>/Users/ijefferson.admin/Development/openclaw/openclaw-container/docker-compose.yml</string>
+        <string>/Users/ijefferson.admin/Development/openclaw/oneclaw-container/docker-compose.yml</string>
         <string>up</string>
         <string>-d</string>
     </array>
@@ -333,14 +333,14 @@ cat > ~/Library/LaunchAgents/com.openclaw.isaiah.plist << 'EOF'
     <key>KeepAlive</key>
     <false/>
     <key>StandardOutPath</key>
-    <string>/Users/ijefferson.admin/Development/openclaw/openclaw-container/logs/launchd.log</string>
+    <string>/Users/ijefferson.admin/Development/openclaw/oneclaw-container/logs/launchd.log</string>
     <key>StandardErrorPath</key>
-    <string>/Users/ijefferson.admin/Development/openclaw/openclaw-container/logs/launchd.err</string>
+    <string>/Users/ijefferson.admin/Development/openclaw/oneclaw-container/logs/launchd.err</string>
 </dict>
 </plist>
 EOF
 
-launchctl load ~/Library/LaunchAgents/com.openclaw.isaiah.plist
+launchctl load ~/Library/LaunchAgents/com.oneclaw.isaiah.plist
 ```
 
 ---
@@ -357,7 +357,7 @@ If error: "Cannot connect to Docker daemon", start Docker Desktop or OrbStack.
 
 **Check logs**:
 ```bash
-cd /Users/ijefferson.admin/Development/openclaw/openclaw-container
+cd /Users/ijefferson.admin/Development/openclaw/oneclaw-container
 docker-compose logs
 ```
 
@@ -385,12 +385,12 @@ docker-compose logs | grep error  # Look for errors
 
 **Check token is correct**:
 ```bash
-grep TELEGRAM_BOT_TOKEN /Users/ijefferson.admin/Development/openclaw/openclaw-container/secrets/.env
+grep TELEGRAM_BOT_TOKEN /Users/ijefferson.admin/Development/openclaw/oneclaw-container/secrets/.env
 ```
 
 **Check Telegram channel is enabled**:
 ```bash
-docker exec -it openclaw_isaiah npx openclaw channels list
+docker exec -it oneclaw_isaiah npx openclaw channels list
 ```
 
 Should show `telegram: enabled`
@@ -404,7 +404,7 @@ docker-compose restart
 
 **Fix permissions**:
 ```bash
-cd /Users/ijefferson.admin/Development/openclaw/openclaw-container
+cd /Users/ijefferson.admin/Development/openclaw/oneclaw-container
 chmod 600 secrets/.env
 chmod -R 755 logs workspace config
 ```
@@ -427,7 +427,7 @@ If you need to access a specific local service (e.g., Home Assistant), you would
 
 ```bash
 cd /Users/ijefferson.admin/Development/openclaw
-tar -czf openclaw-backup-$(date +%Y%m%d).tar.gz openclaw-container/
+tar -czf openclaw-backup-$(date +%Y%m%d).tar.gz oneclaw-container/
 ```
 
 **What's backed up**:
@@ -439,7 +439,7 @@ tar -czf openclaw-backup-$(date +%Y%m%d).tar.gz openclaw-container/
 **Restore**:
 ```bash
 tar -xzf openclaw-backup-20260214.tar.gz
-cd openclaw-container
+cd oneclaw-container
 docker-compose up -d
 ```
 
@@ -447,13 +447,13 @@ docker-compose up -d
 
 **Never commit secrets to Git**:
 ```bash
-cat openclaw-container/.gitignore
+cat oneclaw-container/.gitignore
 ```
 Should include `secrets/` and `logs/`.
 
 **Encrypted backup** (recommended):
 ```bash
-tar -czf - openclaw-container/ | openssl enc -aes-256-cbc -out openclaw-backup-encrypted.tar.gz.enc
+tar -czf - oneclaw-container/ | openssl enc -aes-256-cbc -out openclaw-backup-encrypted.tar.gz.enc
 ```
 
 Decrypt:
@@ -470,7 +470,7 @@ To share this setup:
 1. **Clean your directory** (remove secrets):
 ```bash
 cd /Users/ijefferson.admin/Development/openclaw
-cp -r openclaw-container openclaw-distribution
+cp -r oneclaw-container openclaw-distribution
 cd openclaw-distribution
 rm secrets/.env
 echo "ANTHROPIC_API_KEY=" > secrets/.env
@@ -511,15 +511,15 @@ cd one-claw-tied-behind-your-back
 
 | Task | Command |
 |------|---------|
-| Start | `cd openclaw-container && docker-compose up -d` |
-| Stop | `cd openclaw-container && docker-compose down` |
-| Restart | `cd openclaw-container && docker-compose restart` |
-| Logs | `cd openclaw-container && docker-compose logs -f` |
-| Status | `cd openclaw-container && bash status.sh` |
+| Start | `cd oneclaw-container && docker-compose up -d` |
+| Stop | `cd oneclaw-container && docker-compose down` |
+| Restart | `cd oneclaw-container && docker-compose restart` |
+| Logs | `cd oneclaw-container && docker-compose logs -f` |
+| Status | `cd oneclaw-container && bash status.sh` |
 | WebChat | `open http://localhost:18790` |
-| CLI Chat | `docker exec -it openclaw_isaiah npx openclaw chat` |
-| Add Skill | `docker exec -it openclaw_isaiah npx openclaw skills install @openclaw/SKILLNAME` |
-| Security Test | `docker exec openclaw_isaiah curl --connect-timeout 5 http://192.168.1.1` (should fail) |
+| CLI Chat | `docker exec -it oneclaw_isaiah npx openclaw chat` |
+| Add Skill | `docker exec -it oneclaw_isaiah npx openclaw skills install @openclaw/SKILLNAME` |
+| Security Test | `docker exec oneclaw_isaiah curl --connect-timeout 5 http://192.168.1.1` (should fail) |
 
 ---
 

@@ -178,7 +178,7 @@ iptables -A OUTPUT -d 10.0.0.0/8 -j DROP
 ### Storage
 
 ```bash
-~/.openclaw-secure/secrets/.env
+~/.oneclaw-secure/secrets/.env
 chmod 600 (owner read/write only)
 ```
 
@@ -225,7 +225,7 @@ logging:
 ### Health Monitoring
 
 ```bash
-~/.openclaw-secure/monitor.sh
+~/.oneclaw-secure/monitor.sh
 ```
 
 - Runs via cron every 5 minutes
@@ -237,7 +237,7 @@ logging:
 ### Audit Logging
 
 ```
-~/.openclaw-secure/workspace/logs/audit.log
+~/.oneclaw-secure/workspace/logs/audit.log
 ```
 
 - Records all OpenClaw actions
@@ -291,11 +291,11 @@ app.listen(8765, '127.0.0.1');  // Localhost only
 
 ```bash
 # Update OpenClaw to latest version
-cd ~/.openclaw-secure
+cd ~/.oneclaw-secure
 ./stop.sh
 
 # Rebuild with latest source
-docker build -t openclaw-secure:latest -f Dockerfile .
+docker build -t oneclaw-secure:latest -f Dockerfile .
 
 ./start.sh
 ```
@@ -304,10 +304,10 @@ docker build -t openclaw-secure:latest -f Dockerfile .
 
 ```bash
 # Check for security advisories
-docker exec openclaw_gateway openclaw security audit
+docker exec oneclaw_gateway openclaw security audit
 
 # Review audit log
-tail -100 ~/.openclaw-secure/workspace/logs/audit.log
+tail -100 ~/.oneclaw-secure/workspace/logs/audit.log
 ```
 
 ## Incident Response
@@ -316,7 +316,7 @@ tail -100 ~/.openclaw-secure/workspace/logs/audit.log
 
 1. **Stop services immediately**
    ```bash
-   cd ~/.openclaw-secure
+   cd ~/.oneclaw-secure
    ./stop.sh
    ```
 
@@ -328,7 +328,7 @@ tail -100 ~/.openclaw-secure/workspace/logs/audit.log
 
 3. **Check for persistence**
    ```bash
-   docker inspect openclaw_gateway
+   docker inspect oneclaw_gateway
    launchctl list | grep openclaw
    ```
 
@@ -339,8 +339,8 @@ tail -100 ~/.openclaw-secure/workspace/logs/audit.log
 
 5. **Rebuild from scratch**
    ```bash
-   docker rmi openclaw-secure:latest
-   docker build -t openclaw-secure:latest -f Dockerfile .
+   docker rmi oneclaw-secure:latest
+   docker build -t oneclaw-secure:latest -f Dockerfile .
    ```
 
 6. **Report to OpenClaw team**
@@ -373,7 +373,7 @@ Ongoing:
 
 ## Questions?
 
-- OpenClaw Security: https://docs.openclaw.ai/gateway/security
+- OpenClaw Security: https://docs.oneclaw.ai/gateway/security
 - Docker Security: https://docs.docker.com/engine/security/
 - Report Issues: https://github.com/openclaw/openclaw/security
 

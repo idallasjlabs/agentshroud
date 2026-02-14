@@ -5,10 +5,10 @@
 # Project: One Claw Tied Behind Your Back
 #
 # Monitors OpenClaw services and alerts on failures
-# Add to crontab: */5 * * * * ~/.openclaw-secure/monitor.sh
+# Add to crontab: */5 * * * * ~/.oneclaw-secure/monitor.sh
 ###############################################################################
 
-INSTALL_DIR="$HOME/.openclaw-secure"
+INSTALL_DIR="$HOME/.oneclaw-secure"
 LOG_FILE="$INSTALL_DIR/logs/monitor.log"
 ALERT_THRESHOLD=3  # Number of failures before alerting
 
@@ -41,7 +41,7 @@ send_alert() {
 
 # Function: Check container status
 check_container() {
-    if docker ps --filter "name=openclaw_gateway" --format "{{.Status}}" | grep -q "Up"; then
+    if docker ps --filter "name=oneclaw_gateway" --format "{{.Status}}" | grep -q "Up"; then
         return 0
     else
         return 1
@@ -69,7 +69,7 @@ check_bridge() {
 # Function: Check resource usage
 check_resources() {
     # Get container stats
-    local stats=$(docker stats openclaw_gateway --no-stream --format "{{.CPUPerc}} {{.MemUsage}}" 2>/dev/null)
+    local stats=$(docker stats oneclaw_gateway --no-stream --format "{{.CPUPerc}} {{.MemUsage}}" 2>/dev/null)
 
     if [[ -z "$stats" ]]; then
         return 1
@@ -127,9 +127,9 @@ auto_restart() {
             send_alert "Container restart failed - manual intervention required"
         fi
     elif [[ "$component" == "bridge" ]]; then
-        launchctl unload ~/Library/LaunchAgents/com.openclaw.macos-bridge.plist 2>> "$LOG_FILE"
+        launchctl unload ~/Library/LaunchAgents/com.oneclaw.macos-bridge.plist 2>> "$LOG_FILE"
         sleep 2
-        launchctl load ~/Library/LaunchAgents/com.openclaw.macos-bridge.plist 2>> "$LOG_FILE"
+        launchctl load ~/Library/LaunchAgents/com.oneclaw.macos-bridge.plist 2>> "$LOG_FILE"
 
         if check_bridge; then
             log_message "Successfully restarted bridge"

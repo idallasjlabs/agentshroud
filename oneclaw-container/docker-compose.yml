@@ -4,7 +4,7 @@ version: '3.8'
 # All data in current directory - NO host dependencies
 
 services:
-  openclaw:
+  oneclaw:
     # Build from secure Dockerfile
     build:
       context: ..
@@ -12,13 +12,13 @@ services:
       args:
         OPENCLAW_VERSION: main
 
-    image: openclaw-secure:latest
-    container_name: openclaw_isaiah
+    image: oneclaw-secure:latest
+    container_name: oneclaw_isaiah
     hostname: isaiahs-assistant
 
     # Network isolation - internet only
     networks:
-      - openclaw_isolated
+      - oneclaw_isolated
     dns:
       - 1.1.1.1
       - 8.8.8.8
@@ -60,9 +60,9 @@ services:
     environment:
       - NODE_ENV=production
       - HOME=/app
-      - OPENCLAW_GATEWAY_BIND=0.0.0.0
-      - OPENCLAW_GATEWAY_PORT=18789
-      - OPENCLAW_WORKSPACE=/app/workspace
+      - ONECLAW_GATEWAY_BIND=0.0.0.0
+      - ONECLAW_GATEWAY_PORT=18789
+      - ONECLAW_WORKSPACE=/app/workspace
 
       # Disable telemetry and external tracking
       - TELEMETRY_DISABLED=1
@@ -72,7 +72,7 @@ services:
     # Volume mounts (read workspace persona files)
     volumes:
       - ./workspace:/app/workspace
-      - ./config:/app/.openclaw:ro
+      - ./config:/app/.oneclaw:ro
       - ./logs:/app/logs
 
     # Resource limits (prevent DoS)
@@ -100,7 +100,7 @@ services:
         max-file: "3"
 
 networks:
-  openclaw_isolated:
+  oneclaw_isolated:
     driver: bridge
     internal: false  # Allow internet
     ipam:
@@ -108,7 +108,7 @@ networks:
         - subnet: 172.30.0.0/24
           gateway: 172.30.0.1
     driver_opts:
-      com.docker.network.bridge.name: openclaw_iso
+      com.docker.network.bridge.name: oneclaw_iso
       com.docker.network.bridge.enable_icc: "false"
       com.docker.network.bridge.enable_ip_masquerade: "true"
       com.docker.network.bridge.default_bridge: "false"

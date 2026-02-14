@@ -246,7 +246,7 @@ echo -e "${BLUE}Step 7: Update Environment Variables${NC}"
 echo -e "${BLUE}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━${NC}"
 echo ""
 
-ENV_FILE="$HOME/.openclaw-secure/secrets/.env"
+ENV_FILE="$HOME/.oneclaw-secure/secrets/.env"
 
 if [[ -f "$ENV_FILE" ]]; then
     echo "Updating $ENV_FILE with your credentials..."
@@ -310,11 +310,11 @@ echo "   openclaw webhooks gmail setup --account therealidallasj@gmail.com"
 echo ""
 
 echo "Next steps:"
-echo "1. Start OpenClaw: cd ~/.openclaw-secure && ./start.sh"
+echo "1. Start OpenClaw: cd ~/.oneclaw-secure && ./start.sh"
 echo "2. Access WebChat UI: http://localhost:18790"
 echo "3. Pair your personal accounts with OpenClaw via /pair command"
 echo ""
 
 echo "Documentation:"
-echo "  https://docs.openclaw.ai"
+echo "  https://docs.oneclaw.ai"
 echo ""
