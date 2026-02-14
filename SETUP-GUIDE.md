@@ -62,11 +62,11 @@ Then update `oneclaw-container/config/oneclaw.json`:
 
 ```bash
 cd /Users/ijefferson.admin/Development/openclaw/oneclaw-container
-docker-compose up -d
+docker compose up -d
 ```
 
 **What this does**:
-- `docker-compose up` - Starts the container
+- `docker compose up` - Starts the container
 - `-d` - Runs in background (detached mode)
 
 **Wait 10-15 seconds** for OpenClaw to fully start.
@@ -114,7 +114,7 @@ If something isn't working, check the logs:
 
 ```bash
 cd /Users/ijefferson.admin/Development/openclaw/oneclaw-container
-docker-compose logs -f
+docker compose logs -f
 ```
 
 **What to look for**:
@@ -189,7 +189,7 @@ TELEGRAM_BOT_TOKEN=your-bot-token-here
 **Restart OpenClaw**:
 ```bash
 cd /Users/ijefferson.admin/Development/openclaw/oneclaw-container
-docker-compose restart
+docker compose restart
 ```
 
 **Test**: Open Telegram, search for your bot (@therealidallasj), send "Hello"
@@ -236,17 +236,17 @@ docker exec -it oneclaw_isaiah npx openclaw chat --message "What's the weather?"
 
 **Start OpenClaw**:
 ```bash
-cd /Users/ijefferson.admin/Development/openclaw/oneclaw-container && docker-compose up -d
+cd /Users/ijefferson.admin/Development/openclaw/oneclaw-container && docker compose up -d
 ```
 
 **Stop OpenClaw**:
 ```bash
-cd /Users/ijefferson.admin/Development/openclaw/oneclaw-container && docker-compose down
+cd /Users/ijefferson.admin/Development/openclaw/oneclaw-container && docker compose down
 ```
 
 **Restart OpenClaw** (after config changes):
 ```bash
-cd /Users/ijefferson.admin/Development/openclaw/oneclaw-container && docker-compose restart
+cd /Users/ijefferson.admin/Development/openclaw/oneclaw-container && docker compose restart
 ```
 
 **Check Status**:
@@ -256,7 +256,7 @@ cd /Users/ijefferson.admin/Development/openclaw/oneclaw-container && bash status
 
 **View Logs**:
 ```bash
-cd /Users/ijefferson.admin/Development/openclaw/oneclaw-container && docker-compose logs -f
+cd /Users/ijefferson.admin/Development/openclaw/oneclaw-container && docker compose logs -f
 ```
 
 ---
@@ -270,7 +270,7 @@ OpenClaw represents you using these files:
 
 The AI reads these files on startup. To update:
 1. Edit files in `oneclaw-container/workspace/`
-2. Restart OpenClaw: `docker-compose restart`
+2. Restart OpenClaw: `docker compose restart`
 
 **Example - Update your preferred username**:
 ```bash
@@ -301,13 +301,13 @@ docker exec -it oneclaw_isaiah npx openclaw skills configure todoist
 
 ### Adjust Resource Limits
 
-Edit `docker-compose.yml`:
+Edit `docker compose.yml`:
 ```yaml
 mem_limit: 4g   # Increase to 8g if you have RAM
 cpus: 2         # Increase to 4 for faster responses
 ```
 
-Restart: `docker-compose up -d --force-recreate`
+Restart: `docker compose up -d --force-recreate`
 
 ### Enable Auto-Start on Boot
 
@@ -322,9 +322,9 @@ cat > ~/Library/LaunchAgents/com.oneclaw.isaiah.plist << 'EOF'
     <string>com.oneclaw.isaiah</string>
     <key>ProgramArguments</key>
     <array>
-        <string>/usr/local/bin/docker-compose</string>
+        <string>/usr/local/bin/docker compose</string>
         <string>-f</string>
-        <string>/Users/ijefferson.admin/Development/openclaw/oneclaw-container/docker-compose.yml</string>
+        <string>/Users/ijefferson.admin/Development/openclaw/oneclaw-container/docker compose.yml</string>
         <string>up</string>
         <string>-d</string>
     </array>
@@ -358,7 +358,7 @@ If error: "Cannot connect to Docker daemon", start Docker Desktop or OrbStack.
 **Check logs**:
 ```bash
 cd /Users/ijefferson.admin/Development/openclaw/oneclaw-container
-docker-compose logs
+docker compose logs
 ```
 
 **Common issues**:
@@ -377,8 +377,8 @@ Expected: `{"status":"ok"}`
 
 If connection refused:
 ```bash
-docker-compose ps  # Check if container is running
-docker-compose logs | grep error  # Look for errors
+docker compose ps  # Check if container is running
+docker compose logs | grep error  # Look for errors
 ```
 
 ### Bot Not Responding on Telegram
@@ -397,7 +397,7 @@ Should show `telegram: enabled`
 
 **Restart after adding token**:
 ```bash
-docker-compose restart
+docker compose restart
 ```
 
 ### "Permission Denied" Errors
@@ -440,7 +440,7 @@ tar -czf openclaw-backup-$(date +%Y%m%d).tar.gz oneclaw-container/
 ```bash
 tar -xzf openclaw-backup-20260214.tar.gz
 cd oneclaw-container
-docker-compose up -d
+docker compose up -d
 ```
 
 ### Secure Backup Storage
@@ -499,7 +499,7 @@ cd one-claw-tied-behind-your-back
 
 1. ✅ **You are here** - OpenClaw is deployed and running
 2. 🔑 Add your API key (Anthropic or OpenAI)
-3. 🚀 Start the container: `docker-compose up -d`
+3. 🚀 Start the container: `docker compose up -d`
 4. 💬 Test via WebChat: http://localhost:18790
 5. 📱 Set up Telegram bot for mobile access
 6. 📧 Connect Gmail and Calendar (OAuth setup)
@@ -511,10 +511,10 @@ cd one-claw-tied-behind-your-back
 
 | Task | Command |
 |------|---------|
-| Start | `cd oneclaw-container && docker-compose up -d` |
-| Stop | `cd oneclaw-container && docker-compose down` |
-| Restart | `cd oneclaw-container && docker-compose restart` |
-| Logs | `cd oneclaw-container && docker-compose logs -f` |
+| Start | `cd oneclaw-container && docker compose up -d` |
+| Stop | `cd oneclaw-container && docker compose down` |
+| Restart | `cd oneclaw-container && docker compose restart` |
+| Logs | `cd oneclaw-container && docker compose logs -f` |
 | Status | `cd oneclaw-container && bash status.sh` |
 | WebChat | `open http://localhost:18790` |
 | CLI Chat | `docker exec -it oneclaw_isaiah npx openclaw chat` |
@@ -527,7 +527,7 @@ cd one-claw-tied-behind-your-back
 
 **Logs first**: Always check logs when something doesn't work:
 ```bash
-docker-compose logs | tail -100
+docker compose logs | tail -100
 ```
 
 **OpenClaw Documentation**: https://github.com/openclaw/openclaw

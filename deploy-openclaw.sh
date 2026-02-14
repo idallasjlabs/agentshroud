@@ -12,7 +12,7 @@ set -e
 
 PROJECT_NAME="one-claw-tied-behind-your-back"
 INSTALL_DIR="$HOME/.oneclaw-secure"
-COMPOSE_FILE="$INSTALL_DIR/docker-compose.yml"
+COMPOSE_FILE="$INSTALL_DIR/docker compose.yml"
 CONFIG_FILE="$INSTALL_DIR/config/oneclaw.json"
 SECRETS_FILE="$INSTALL_DIR/secrets/.env"
 
@@ -373,11 +373,11 @@ create_docker_compose() {
     # Copy secure build files to install directory
     SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 
-    if [[ -f "$SCRIPT_DIR/docker-compose.secure.yml" ]] && [[ -f "$SCRIPT_DIR/Dockerfile.secure" ]]; then
-        cp "$SCRIPT_DIR/docker-compose.secure.yml" "$COMPOSE_FILE"
+    if [[ -f "$SCRIPT_DIR/docker compose.secure.yml" ]] && [[ -f "$SCRIPT_DIR/Dockerfile.secure" ]]; then
+        cp "$SCRIPT_DIR/docker compose.secure.yml" "$COMPOSE_FILE"
         cp "$SCRIPT_DIR/Dockerfile.secure" "$INSTALL_DIR/Dockerfile"
 
-        # Create .env file for docker-compose
+        # Create .env file for docker compose
         cat > "$INSTALL_DIR/.env" <<EOF
 OPENCLAW_WORKSPACE_DIR=$INSTALL_DIR/workspace
 OPENCLAW_CONFIG_DIR=$INSTALL_DIR/config
@@ -388,7 +388,7 @@ EOF
         print_success "Dockerfile copied (all builds happen in container)"
     else
         print_error "Secure Docker files not found in $SCRIPT_DIR"
-        print_error "Please ensure docker-compose.secure.yml and Dockerfile.secure exist"
+        print_error "Please ensure docker compose.secure.yml and Dockerfile.secure exist"
         exit 1
     fi
 
@@ -617,7 +617,7 @@ echo ""
 
 # Start Docker containers
 echo "Starting container..."
-docker-compose up -d
+docker compose up -d
 
 # Wait for gateway to be ready
 echo "Waiting for gateway to be ready..."
@@ -660,7 +660,7 @@ echo "Stopping OpenClaw services..."
 launchctl unload ~/Library/LaunchAgents/com.oneclaw.macos-bridge.plist 2>/dev/null || true
 
 # Stop Docker containers
-docker-compose down
+docker compose down
 
 echo "✓ All services stopped"
 STOPEOF
@@ -700,7 +700,7 @@ cd "$(dirname "$0")"
 echo "=== OpenClaw Logs (Ctrl+C to exit) ==="
 echo ""
 
-docker-compose logs -f --tail=100
+docker compose logs -f --tail=100
 LOGSEOF
 
     # Backup script

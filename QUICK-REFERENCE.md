@@ -255,9 +255,9 @@ docker exec oneclaw_gateway curl --connect-timeout 5 http://192.168.1.1
 # Check current usage
 docker stats oneclaw_gateway
 
-# Adjust limits in docker-compose.yml
+# Adjust limits in docker compose.yml
 cd ~/.oneclaw-secure
-nano docker-compose.yml
+nano docker compose.yml
 # Change: mem_limit, cpus
 
 # Restart
@@ -268,7 +268,7 @@ nano docker-compose.yml
 
 ```
 ~/.oneclaw-secure/               # Main installation
-├── docker-compose.yml            # Container config
+├── docker compose.yml            # Container config
 ├── Dockerfile                    # Build instructions
 ├── config/
 │   └── oneclaw.json             # OpenClaw config
