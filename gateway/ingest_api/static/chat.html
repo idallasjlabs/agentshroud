@@ -170,9 +170,14 @@
             if (!authToken) {
                 authToken = prompt('Enter your SecureClaw auth token:\n\n(Find it in gateway logs or secureclaw.yaml)');
                 if (authToken) {
+                    // Trim whitespace from token
+                    authToken = authToken.trim();
                     // Update URL with token for refresh
                     window.history.replaceState({}, '', `?token=${authToken}`);
                 }
+            } else {
+                // Trim whitespace from URL token too
+                authToken = authToken.trim();
             }
 
             if (!authToken) {
