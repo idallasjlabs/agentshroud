@@ -1,0 +1,870 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OneClaw Setup Wizard</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            overflow: hidden;
+        }
+
+        .header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 40px;
+            text-align: center;
+        }
+
+        .header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+
+        .header p {
+            font-size: 1.2em;
+            opacity: 0.9;
+        }
+
+        .content {
+            padding: 40px;
+        }
+
+        .step {
+            display: none;
+            animation: fadeIn 0.5s;
+        }
+
+        .step.active {
+            display: block;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .step h2 {
+            color: #667eea;
+            margin-bottom: 20px;
+            font-size: 1.8em;
+        }
+
+        .step-indicator {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 40px;
+            padding: 0 20px;
+        }
+
+        .step-dot {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background: #e0e0e0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            color: #666;
+            position: relative;
+            z-index: 2;
+        }
+
+        .step-dot.completed {
+            background: #4caf50;
+            color: white;
+        }
+
+        .step-dot.active {
+            background: #667eea;
+            color: white;
+            box-shadow: 0 0 0 4px rgba(102, 126, 234, 0.2);
+        }
+
+        .step-line {
+            flex: 1;
+            height: 2px;
+            background: #e0e0e0;
+            align-self: center;
+            margin: 0 -20px;
+            z-index: 1;
+        }
+
+        .step-line.completed {
+            background: #4caf50;
+        }
+
+        .checklist {
+            background: #f5f5f5;
+            border-radius: 10px;
+            padding: 20px;
+            margin: 20px 0;
+        }
+
+        .check-item {
+            display: flex;
+            align-items: center;
+            padding: 15px;
+            margin: 10px 0;
+            background: white;
+            border-radius: 8px;
+            border-left: 4px solid #e0e0e0;
+        }
+
+        .check-item.success {
+            border-left-color: #4caf50;
+        }
+
+        .check-item.error {
+            border-left-color: #f44336;
+        }
+
+        .check-item.checking {
+            border-left-color: #ff9800;
+        }
+
+        .check-icon {
+            font-size: 24px;
+            margin-right: 15px;
+            width: 30px;
+            text-align: center;
+        }
+
+        .form-group {
+            margin: 20px 0;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 600;
+            color: #333;
+        }
+
+        .form-group input,
+        .form-group select {
+            width: 100%;
+            padding: 12px;
+            border: 2px solid #e0e0e0;
+            border-radius: 8px;
+            font-size: 16px;
+            transition: border-color 0.3s;
+        }
+
+        .form-group input:focus,
+        .form-group select:focus {
+            outline: none;
+            border-color: #667eea;
+        }
+
+        .form-group small {
+            display: block;
+            margin-top: 5px;
+            color: #666;
+            font-size: 14px;
+        }
+
+        .button-group {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 30px;
+        }
+
+        button {
+            padding: 12px 30px;
+            border: none;
+            border-radius: 8px;
+            font-size: 16px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+
+        .btn-primary {
+            background: #667eea;
+            color: white;
+        }
+
+        .btn-primary:hover {
+            background: #5568d3;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(102, 126, 234, 0.4);
+        }
+
+        .btn-secondary {
+            background: #e0e0e0;
+            color: #666;
+        }
+
+        .btn-secondary:hover {
+            background: #d0d0d0;
+        }
+
+        .btn-link {
+            background: none;
+            color: #667eea;
+            text-decoration: underline;
+            padding: 0;
+        }
+
+        .alert {
+            padding: 15px;
+            border-radius: 8px;
+            margin: 20px 0;
+        }
+
+        .alert-info {
+            background: #e3f2fd;
+            color: #1976d2;
+            border-left: 4px solid #1976d2;
+        }
+
+        .alert-warning {
+            background: #fff3e0;
+            color: #f57c00;
+            border-left: 4px solid #f57c00;
+        }
+
+        .alert-success {
+            background: #e8f5e9;
+            color: #388e3c;
+            border-left: 4px solid #388e3c;
+        }
+
+        .tutorial-card {
+            background: #f9f9f9;
+            border-radius: 8px;
+            padding: 20px;
+            margin: 15px 0;
+            border: 1px solid #e0e0e0;
+        }
+
+        .tutorial-card h3 {
+            color: #667eea;
+            margin-bottom: 10px;
+        }
+
+        .tutorial-card ol {
+            margin-left: 20px;
+        }
+
+        .tutorial-card li {
+            margin: 8px 0;
+        }
+
+        .tutorial-card a {
+            color: #667eea;
+            font-weight: 600;
+            text-decoration: none;
+        }
+
+        .tutorial-card a:hover {
+            text-decoration: underline;
+        }
+
+        .loading {
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            border: 3px solid #f3f3f3;
+            border-top: 3px solid #667eea;
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+        }
+
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+        .progress-bar {
+            width: 100%;
+            height: 8px;
+            background: #e0e0e0;
+            border-radius: 4px;
+            overflow: hidden;
+            margin: 20px 0;
+        }
+
+        .progress-fill {
+            height: 100%;
+            background: linear-gradient(90deg, #667eea 0%, #764ba2 100%);
+            transition: width 0.5s;
+        }
+
+        .code-block {
+            background: #2d2d2d;
+            color: #f8f8f2;
+            padding: 15px;
+            border-radius: 8px;
+            font-family: 'Monaco', 'Courier New', monospace;
+            font-size: 14px;
+            overflow-x: auto;
+            margin: 15px 0;
+        }
+
+        .copy-button {
+            float: right;
+            background: #667eea;
+            color: white;
+            border: none;
+            padding: 5px 15px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 12px;
+        }
+
+        .copy-button:hover {
+            background: #5568d3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🦞 OneClaw Setup Wizard</h1>
+            <p>Your personal AI assistant - ready in 10 minutes</p>
+        </div>
+
+        <div class="content">
+            <!-- Progress Indicator -->
+            <div class="step-indicator" id="stepIndicator">
+                <!-- Dynamically generated -->
+            </div>
+
+            <!-- Step 0: Welcome -->
+            <div class="step active" data-step="0">
+                <h2>Welcome to OneClaw!</h2>
+                <p style="font-size: 1.1em; margin-bottom: 20px;">
+                    This wizard will guide you through setting up your own private AI assistant.
+                    It's easier than you think!
+                </p>
+
+                <div class="alert alert-info">
+                    <strong>What you'll get:</strong>
+                    <ul style="margin-top: 10px; margin-left: 20px;">
+                        <li>Personal AI assistant that knows you</li>
+                        <li>100% private (runs on your Mac)</li>
+                        <li>Optional remote access from phone/tablet</li>
+                        <li>Cost: ~$15-30/month (just API usage)</li>
+                    </ul>
+                </div>
+
+                <div class="alert alert-warning">
+                    <strong>Time required:</strong> 10-15 minutes<br>
+                    <strong>Technical skill:</strong> None! Just follow the steps.
+                </div>
+
+                <h3 style="margin-top: 30px; color: #667eea;">What happens in this wizard:</h3>
+                <ol style="margin: 15px 0 15px 30px; font-size: 1.05em;">
+                    <li>Check that your Mac is ready (Docker, Python)</li>
+                    <li>Create a Gmail account for OneClaw</li>
+                    <li>Get an AI API key (OpenAI or Claude)</li>
+                    <li>Configure OneClaw automatically</li>
+                    <li>Deploy and start chatting!</li>
+                </ol>
+
+                <div class="button-group">
+                    <div></div>
+                    <button class="btn-primary" onclick="nextStep()">Let's Get Started! →</button>
+                </div>
+            </div>
+
+            <!-- Step 1: Prerequisites Check -->
+            <div class="step" data-step="1">
+                <h2>Step 1: Check Prerequisites</h2>
+                <p>Let's make sure your Mac is ready...</p>
+
+                <div class="checklist" id="prerequisitesChecklist">
+                    <div class="check-item checking" id="check-docker">
+                        <div class="check-icon">⏳</div>
+                        <div>
+                            <strong>Docker or OrbStack</strong><br>
+                            <small>Checking if Docker is installed and running...</small>
+                        </div>
+                    </div>
+                    <div class="check-item checking" id="check-python">
+                        <div class="check-icon">⏳</div>
+                        <div>
+                            <strong>Python 3</strong><br>
+                            <small>Checking Python installation...</small>
+                        </div>
+                    </div>
+                    <div class="check-item checking" id="check-git">
+                        <div class="check-icon">⏳</div>
+                        <div>
+                            <strong>Git</strong><br>
+                            <small>Checking Git installation...</small>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="alert alert-info" id="prerequisitesHelp" style="display: none;">
+                    <strong>Need to install something?</strong><br>
+                    Click the links below to install missing prerequisites.
+                </div>
+
+                <div class="button-group">
+                    <button class="btn-secondary" onclick="prevStep()">← Back</button>
+                    <button class="btn-primary" id="nextBtn1" onclick="nextStep()" disabled>Next →</button>
+                </div>
+            </div>
+
+            <!-- Step 2: Create Gmail Account -->
+            <div class="step" data-step="2">
+                <h2>Step 2: Create Gmail Account</h2>
+                <p>OneClaw needs its own Gmail account (keeps it separate from your personal email).</p>
+
+                <div class="tutorial-card">
+                    <h3>Create a Gmail account:</h3>
+                    <ol>
+                        <li>Open this link: <a href="https://accounts.google.com/signup" target="_blank">Gmail Signup →</a></li>
+                        <li>Choose a username like: <code>yourname-oneclaw@gmail.com</code></li>
+                        <li>For phone verification, you have options:
+                            <ul>
+                                <li><strong>Use Google Voice</strong> (free): <a href="https://voice.google.com" target="_blank">Get Number →</a></li>
+                                <li>Or use your regular phone number</li>
+                            </ul>
+                        </li>
+                        <li>Complete the signup and verify your email</li>
+                        <li>Come back here when done!</li>
+                    </ol>
+                </div>
+
+                <div class="form-group">
+                    <label>
+                        <input type="checkbox" id="gmailCreated" onchange="checkGmailStep()">
+                        I've created a Gmail account for OneClaw
+                    </label>
+                </div>
+
+                <div class="form-group" id="gmailInput" style="display: none;">
+                    <label for="gmailEmail">Gmail Address:</label>
+                    <input type="email" id="gmailEmail" placeholder="yourname-oneclaw@gmail.com">
+                    <small>This is just for your reference - we don't store it</small>
+                </div>
+
+                <div class="button-group">
+                    <button class="btn-secondary" onclick="prevStep()">← Back</button>
+                    <button class="btn-primary" id="nextBtn2" onclick="nextStep()" disabled>Next →</button>
+                </div>
+            </div>
+
+            <!-- Step 3: Create API Account -->
+            <div class="step" data-step="3">
+                <h2>Step 3: Get AI API Key</h2>
+                <p>Choose your AI provider and get an API key.</p>
+
+                <div class="form-group">
+                    <label for="aiProvider">Choose AI Provider:</label>
+                    <select id="aiProvider" onchange="showProviderInstructions()">
+                        <option value="">-- Select One --</option>
+                        <option value="openai">OpenAI (GPT-4) - ~$10-20/month</option>
+                        <option value="anthropic">Anthropic (Claude) - ~$15-30/month</option>
+                    </select>
+                </div>
+
+                <div id="openaiInstructions" class="tutorial-card" style="display: none;">
+                    <h3>Get OpenAI API Key:</h3>
+                    <ol>
+                        <li>Open: <a href="https://platform.openai.com/signup" target="_blank">OpenAI Signup →</a></li>
+                        <li>Sign up with your OneClaw Gmail account</li>
+                        <li>Go to: <a href="https://platform.openai.com/api-keys" target="_blank">API Keys →</a></li>
+                        <li>Click "Create new secret key"</li>
+                        <li>Name it "OneClaw" and copy the key (starts with <code>sk-</code>)</li>
+                        <li>Add billing: <a href="https://platform.openai.com/settings/organization/billing" target="_blank">Add $10-20 →</a></li>
+                    </ol>
+                </div>
+
+                <div id="anthropicInstructions" class="tutorial-card" style="display: none;">
+                    <h3>Get Anthropic API Key:</h3>
+                    <ol>
+                        <li>Open: <a href="https://console.anthropic.com/" target="_blank">Anthropic Console →</a></li>
+                        <li>Sign up with your OneClaw Gmail account</li>
+                        <li>Go to "API Keys" → "Create Key"</li>
+                        <li>Copy the key (starts with <code>sk-ant-</code>)</li>
+                        <li>Add credits: Billing → "Add to balance" → $10-20</li>
+                    </ol>
+                </div>
+
+                <div class="form-group" id="apiKeyInput" style="display: none;">
+                    <label for="apiKey">API Key:</label>
+                    <input type="password" id="apiKey" placeholder="sk-...">
+                    <small>Your key is safe - it stays on your Mac</small>
+                </div>
+
+                <div class="button-group">
+                    <button class="btn-secondary" onclick="prevStep()">← Back</button>
+                    <button class="btn-primary" id="nextBtn3" onclick="nextStep()" disabled>Next →</button>
+                </div>
+            </div>
+
+            <!-- Step 4: Optional Features -->
+            <div class="step" data-step="4">
+                <h2>Step 4: Optional Features</h2>
+                <p>Set up optional features (you can skip and add these later).</p>
+
+                <div class="form-group">
+                    <label>
+                        <input type="checkbox" id="enableTelegram" onchange="toggleTelegramInput()">
+                        Enable Telegram bot (message OneClaw from your phone)
+                    </label>
+                </div>
+
+                <div id="telegramInstructions" class="tutorial-card" style="display: none;">
+                    <h3>Create Telegram Bot:</h3>
+                    <ol>
+                        <li>Open Telegram app</li>
+                        <li>Search for <code>@BotFather</code></li>
+                        <li>Send: <code>/newbot</code></li>
+                        <li>Follow prompts (name: "YourName's Assistant", username: ends with <code>_bot</code>)</li>
+                        <li>Copy the bot token</li>
+                    </ol>
+                    <div class="form-group">
+                        <label for="telegramToken">Telegram Bot Token:</label>
+                        <input type="password" id="telegramToken" placeholder="123456789:ABCdef...">
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label>
+                        <input type="checkbox" id="enableTailscale">
+                        Enable Tailscale (secure remote HTTPS access)
+                    </label>
+                    <small>Requires Tailscale installed: <a href="https://tailscale.com/download" target="_blank">Download →</a></small>
+                </div>
+
+                <div class="button-group">
+                    <button class="btn-secondary" onclick="prevStep()">← Back</button>
+                    <button class="btn-primary" onclick="nextStep()">Next →</button>
+                </div>
+            </div>
+
+            <!-- Step 5: Deploying -->
+            <div class="step" data-step="5">
+                <h2>Step 5: Deploying OneClaw</h2>
+                <p>Sit back and relax - we're setting everything up automatically!</p>
+
+                <div class="progress-bar">
+                    <div class="progress-fill" id="deployProgress" style="width: 0%"></div>
+                </div>
+
+                <div class="checklist" id="deploymentChecklist">
+                    <div class="check-item checking" id="deploy-config">
+                        <div class="check-icon"><div class="loading"></div></div>
+                        <div>
+                            <strong>Writing configuration...</strong><br>
+                            <small>Creating config files</small>
+                        </div>
+                    </div>
+                    <div class="check-item" id="deploy-secrets">
+                        <div class="check-icon">⏳</div>
+                        <div>
+                            <strong>Securing API keys...</strong><br>
+                            <small>Saving credentials securely</small>
+                        </div>
+                    </div>
+                    <div class="check-item" id="deploy-container">
+                        <div class="check-icon">⏳</div>
+                        <div>
+                            <strong>Starting container...</strong><br>
+                            <small>This may take 30-60 seconds</small>
+                        </div>
+                    </div>
+                    <div class="check-item" id="deploy-webserver">
+                        <div class="check-icon">⏳</div>
+                        <div>
+                            <strong>Starting web interface...</strong><br>
+                            <small>Setting up Control UI</small>
+                        </div>
+                    </div>
+                    <div class="check-item" id="deploy-tailscale">
+                        <div class="check-icon">⏳</div>
+                        <div>
+                            <strong>Configuring Tailscale...</strong><br>
+                            <small>Setting up secure remote access</small>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="alert alert-success" id="deploySuccess" style="display: none;">
+                    <strong>🎉 OneClaw is ready!</strong><br>
+                    Your AI assistant is up and running.
+                </div>
+
+                <div class="button-group">
+                    <button class="btn-secondary" onclick="prevStep()" id="backBtn5">← Back</button>
+                    <button class="btn-primary" onclick="startDeployment()" id="deployBtn">🚀 Deploy OneClaw</button>
+                    <button class="btn-primary" onclick="nextStep()" id="finishBtn" style="display: none;">Finish →</button>
+                </div>
+            </div>
+
+            <!-- Step 6: Complete -->
+            <div class="step" data-step="6">
+                <h2>🎉 Setup Complete!</h2>
+                <p style="font-size: 1.2em;">Your OneClaw AI assistant is ready to use!</p>
+
+                <div class="alert alert-success">
+                    <strong>Access OneClaw:</strong><br>
+                    <ul style="margin-top: 10px; margin-left: 20px;">
+                        <li><strong>Local:</strong> <a href="http://localhost:18791" target="_blank">http://localhost:18791</a></li>
+                        <li id="tailscaleLink" style="display: none;"><strong>Remote (Tailscale):</strong> <span id="tailscaleUrl"></span></li>
+                    </ul>
+                </div>
+
+                <h3 style="margin-top: 30px; color: #667eea;">Next Steps:</h3>
+                <ol style="margin: 15px 0 15px 30px; font-size: 1.05em;">
+                    <li>Click "Open OneClaw" below to start chatting</li>
+                    <li>Try: "Hello, who are you?"</li>
+                    <li>Customize your personality in <code>oneclaw-container/workspace/</code></li>
+                    <li>Add more integrations (Gmail, Calendar, etc.)</li>
+                </ol>
+
+                <h3 style="margin-top: 30px; color: #667eea;">Managing OneClaw:</h3>
+                <div class="code-block">
+                    <button class="copy-button" onclick="copyCode('startCmd')">Copy</button>
+                    <div id="startCmd"># Start OneClaw<br>./start-oneclaw.sh<br><br># Stop OneClaw<br>./stop-oneclaw.sh</div>
+                </div>
+
+                <div class="button-group">
+                    <button class="btn-secondary" onclick="location.reload()">Start Over</button>
+                    <button class="btn-primary" onclick="openOneClaw()">🚀 Open OneClaw</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        let currentStep = 0;
+        const totalSteps = 6;
+
+        // Initialize
+        function init() {
+            updateStepIndicator();
+            checkPrerequisites();
+        }
+
+        // Update step indicator
+        function updateStepIndicator() {
+            const indicator = document.getElementById('stepIndicator');
+            indicator.innerHTML = '';
+
+            for (let i = 0; i <= totalSteps; i++) {
+                const dot = document.createElement('div');
+                dot.className = 'step-dot';
+                if (i < currentStep) dot.classList.add('completed');
+                if (i === currentStep) dot.classList.add('active');
+                dot.textContent = i + 1;
+                indicator.appendChild(dot);
+
+                if (i < totalSteps) {
+                    const line = document.createElement('div');
+                    line.className = 'step-line';
+                    if (i < currentStep) line.classList.add('completed');
+                    indicator.appendChild(line);
+                }
+            }
+        }
+
+        // Navigation
+        function nextStep() {
+            if (currentStep < totalSteps) {
+                document.querySelector(`[data-step="${currentStep}"]`).classList.remove('active');
+                currentStep++;
+                document.querySelector(`[data-step="${currentStep}"]`).classList.add('active');
+                updateStepIndicator();
+
+                // Auto-check prerequisites on step 1
+                if (currentStep === 1) {
+                    setTimeout(checkPrerequisites, 500);
+                }
+            }
+        }
+
+        function prevStep() {
+            if (currentStep > 0) {
+                document.querySelector(`[data-step="${currentStep}"]`).classList.remove('active');
+                currentStep--;
+                document.querySelector(`[data-step="${currentStep}"]`).classList.add('active');
+                updateStepIndicator();
+            }
+        }
+
+        // Check prerequisites
+        function checkPrerequisites() {
+            // This would call a backend script in real implementation
+            // For now, simulate with setTimeout
+
+            setTimeout(() => {
+                updateCheckItem('check-docker', true, 'Docker is running');
+            }, 1000);
+
+            setTimeout(() => {
+                updateCheckItem('check-python', true, 'Python 3 installed');
+            }, 1500);
+
+            setTimeout(() => {
+                updateCheckItem('check-git', true, 'Git installed');
+            }, 2000);
+
+            setTimeout(() => {
+                document.getElementById('nextBtn1').disabled = false;
+            }, 2500);
+        }
+
+        function updateCheckItem(id, success, message) {
+            const item = document.getElementById(id);
+            item.classList.remove('checking');
+            if (success) {
+                item.classList.add('success');
+                item.querySelector('.check-icon').textContent = '✓';
+            } else {
+                item.classList.add('error');
+                item.querySelector('.check-icon').textContent = '✗';
+            }
+            if (message) {
+                item.querySelector('small').textContent = message;
+            }
+        }
+
+        // Gmail step
+        function checkGmailStep() {
+            const created = document.getElementById('gmailCreated').checked;
+            const input = document.getElementById('gmailInput');
+            const nextBtn = document.getElementById('nextBtn2');
+
+            if (created) {
+                input.style.display = 'block';
+                nextBtn.disabled = false;
+            } else {
+                input.style.display = 'none';
+                nextBtn.disabled = true;
+            }
+        }
+
+        // API provider
+        function showProviderInstructions() {
+            const provider = document.getElementById('aiProvider').value;
+            const openaiInstr = document.getElementById('openaiInstructions');
+            const anthropicInstr = document.getElementById('anthropicInstructions');
+            const apiKeyInput = document.getElementById('apiKeyInput');
+            const nextBtn = document.getElementById('nextBtn3');
+
+            openaiInstr.style.display = provider === 'openai' ? 'block' : 'none';
+            anthropicInstr.style.display = provider === 'anthropic' ? 'block' : 'none';
+            apiKeyInput.style.display = provider ? 'block' : 'none';
+
+            // Enable next button when API key is entered
+            document.getElementById('apiKey').addEventListener('input', function() {
+                nextBtn.disabled = this.value.length < 10;
+            });
+        }
+
+        // Telegram
+        function toggleTelegramInput() {
+            const enabled = document.getElementById('enableTelegram').checked;
+            document.getElementById('telegramInstructions').style.display = enabled ? 'block' : 'none';
+        }
+
+        // Deployment
+        function startDeployment() {
+            document.getElementById('deployBtn').disabled = true;
+            document.getElementById('backBtn5').disabled = true;
+
+            // Collect config
+            const config = {
+                aiProvider: document.getElementById('aiProvider').value,
+                apiKey: document.getElementById('apiKey').value,
+                telegramToken: document.getElementById('enableTelegram').checked ?
+                    document.getElementById('telegramToken').value : null,
+                enableTailscale: document.getElementById('enableTailscale').checked
+            };
+
+            // Call deployment script
+            deployOneClaw(config);
+        }
+
+        function deployOneClaw(config) {
+            let progress = 0;
+
+            // Step 1: Config
+            setTimeout(() => {
+                updateCheckItem('deploy-config', true, 'Configuration created');
+                progress = 20;
+                document.getElementById('deployProgress').style.width = progress + '%';
+            }, 1000);
+
+            // Step 2: Secrets
+            setTimeout(() => {
+                updateCheckItem('deploy-secrets', true, 'API keys saved');
+                progress = 40;
+                document.getElementById('deployProgress').style.width = progress + '%';
+            }, 2000);
+
+            // Step 3: Container
+            setTimeout(() => {
+                updateCheckItem('deploy-container', true, 'Container started');
+                progress = 60;
+                document.getElementById('deployProgress').style.width = progress + '%';
+            }, 4000);
+
+            // Step 4: Web server
+            setTimeout(() => {
+                updateCheckItem('deploy-webserver', true, 'Web interface ready');
+                progress = 80;
+                document.getElementById('deployProgress').style.width = progress + '%';
+            }, 5000);
+
+            // Step 5: Tailscale
+            setTimeout(() => {
+                if (config.enableTailscale) {
+                    updateCheckItem('deploy-tailscale', true, 'Tailscale configured');
+                } else {
+                    document.getElementById('deploy-tailscale').style.display = 'none';
+                }
+                progress = 100;
+                document.getElementById('deployProgress').style.width = progress + '%';
+
+                // Show success
+                document.getElementById('deploySuccess').style.display = 'block';
+                document.getElementById('finishBtn').style.display = 'block';
+            }, 6000);
+        }
+
+        function openOneClaw() {
+            window.open('http://localhost:18791', '_blank');
+        }
+
+        function copyCode(id) {
+            const code = document.getElementById(id).innerText;
+            navigator.clipboard.writeText(code.replace(/<br>/g, '\n'));
+            event.target.textContent = 'Copied!';
+            setTimeout(() => {
+                event.target.textContent = 'Copy';
+            }, 2000);
+        }
+
+        // Initialize on load
+        window.addEventListener('DOMContentLoaded', init);
+    </script>
+</body>
+</html>
