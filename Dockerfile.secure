@@ -1,0 +1,95 @@
+# Secure OpenClaw Build - Multi-stage Dockerfile
+# Source code never touches the host - everything built in container
+# Project: One Claw Tied Behind Your Back
+
+###############################################################################
+# Stage 1: Clone and Build
+###############################################################################
+FROM node:22-bookworm AS builder
+
+# Install git and build dependencies
+RUN apt-get update && \
+    DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends \
+    git \
+    ca-certificates \
+    && apt-get clean && \
+    rm -rf /var/lib/apt/lists/*
+
+# Install Bun (required for OpenClaw build scripts)
+RUN curl -fsSL https://bun.sh/install | bash
+ENV PATH="/root/.bun/bin:${PATH}"
+
+# Enable Corepack for pnpm
+RUN corepack enable
+
+# Set working directory
+WORKDIR /build
+
+# Clone OpenClaw repository (specific version/tag for reproducibility)
+ARG OPENCLAW_VERSION=main
+RUN git clone --depth 1 --branch ${OPENCLAW_VERSION} https://github.com/openclaw/openclaw.git .
+
+# Install dependencies
+RUN pnpm install --frozen-lockfile
+
+# Build OpenClaw
+RUN pnpm build
+
+# Build UI (force pnpm for compatibility)
+ENV OPENCLAW_PREFER_PNPM=1
+RUN pnpm ui:build
+
+###############################################################################
+# Stage 2: Runtime Image (Minimal, Secure)
+###############################################################################
+FROM node:22-bookworm-slim AS runtime
+
+# Install minimal runtime dependencies
+RUN apt-get update && \
+    DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends \
+    curl \
+    ca-certificates \
+    && apt-get clean && \
+    rm -rf /var/lib/apt/lists/*
+
+# Enable Corepack for runtime
+RUN corepack enable
+
+# Create app directory
+WORKDIR /app
+
+# Copy built artifacts from builder stage
+# Copy core files
+COPY --from=builder /build/package.json /build/pnpm-lock.yaml /build/pnpm-workspace.yaml /build/.npmrc ./
+COPY --from=builder /build/node_modules ./node_modules
+COPY --from=builder /build/dist ./dist
+COPY --from=builder /build/ui ./ui
+COPY --from=builder /build/openclaw.mjs ./openclaw.mjs
+
+# Copy additional directories if they exist (use shell to handle missing dirs)
+RUN --mount=type=bind,from=builder,source=/build,target=/tmp/build \
+    if [ -d /tmp/build/skills ]; then cp -r /tmp/build/skills /app/; fi && \
+    if [ -d /tmp/build/plugins ]; then cp -r /tmp/build/plugins /app/; fi
+
+# Set production environment
+ENV NODE_ENV=production
+
+# Security: Change ownership to node user
+RUN chown -R node:node /app
+
+# Security: Run as non-root user (UID 1000)
+USER node
+
+# Create workspace directory
+RUN mkdir -p /app/workspace
+
+# Health check
+HEALTHCHECK --interval=30s --timeout=10s --start-period=40s --retries=3 \
+  CMD curl -f http://localhost:18789/health || exit 1
+
+# Expose ports
+EXPOSE 18789 18790
+
+# Default command: Run gateway in container-safe mode
+# Note: --bind 0.0.0.0 is safe here because Docker port mapping restricts to localhost
+CMD ["node", "openclaw.mjs", "gateway", "--bind", "0.0.0.0", "--allow-unconfigured"]

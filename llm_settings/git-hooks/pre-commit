@@ -1,0 +1,29 @@
+#!/bin/bash
+set -e
+
+echo "🔍 Scanning for secrets..."
+
+# Check if gitleaks is installed
+if command -v gitleaks &> /dev/null; then
+    gitleaks protect --verbose --redact --staged
+    if [ $? -eq 1 ]; then
+        echo "❌ SECRETS DETECTED! Commit blocked by gitleaks."
+        exit 1
+    fi
+else
+    echo "⚠️  Warning: gitleaks not installed. Install with: brew install gitleaks"
+fi
+
+# Check if git-secrets is installed
+if command -v git secrets &> /dev/null; then
+    git secrets --pre_commit_hook -- "$@"
+    if [ $? -eq 1 ]; then
+        echo "❌ SECRETS DETECTED! Commit blocked by git-secrets."
+        exit 1
+    fi
+else
+    echo "⚠️  Warning: git-secrets not installed. Install with: brew install git-secrets"
+fi
+
+echo "✅ No secrets detected - commit allowed"
+exit 0
