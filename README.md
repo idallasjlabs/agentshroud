@@ -1,244 +1,235 @@
-# One Claw Tied Behind Your Back
+# OneClaw - Your Secure Personal AI Assistant
 
-Maximum-security OpenClaw deployment for macOS - completely self-contained.
+A simple, secure way to run your own AI assistant on your Mac. Everything stays on your computer in one folder.
 
-## 🔒 Security-First Design
+## What You Get
 
-**Source code never touches your host.** Everything runs in an isolated Docker container with:
-- ✅ **No host dependencies** - All data in current directory
-- ✅ **Internet-only access** - Cannot access your LAN or VPN connections
-- ✅ **Zero-trust build** - Source cloned and built inside container
-- ✅ **Read-only filesystem** - Container root is immutable
-- ✅ **Non-root execution** - Runs as unprivileged user (UID 1000)
-- ✅ **Isaiah's personality** - Pre-loaded with your professional identity
+- 🤖 **Personal AI assistant** that knows you and speaks for you
+- 🔒 **100% private** - runs on your Mac, internet-only access (can't see your home network)
+- 📁 **Self-contained** - everything in one folder, nothing installed system-wide
+- 🌐 **Optional remote access** - securely access from phone/tablet via Tailscale
 
 ---
 
-## ⚡ Quick Start
+## Prerequisites (What You Need Installed)
 
-### 1. Deploy (First Time)
+✅ **Docker** or **OrbStack** (for running the container)
+- Install Docker Desktop: https://www.docker.com/products/docker-desktop/
+- OR install OrbStack (faster, lighter): https://orbstack.dev/
 
-```bash
-./deploy-local.sh
-```
+✅ **Python 3** (already on Mac)
+- Check: Open Terminal and type `python3 --version`
 
-This will:
-- Build OpenClaw in a secure container (10-20 minutes)
-- Load Isaiah's personality from `workspace/` files
-- Create self-contained deployment in `oneclaw-container/`
-- Never install anything on your host system
+✅ **(Optional) Tailscale** (for remote HTTPS access)
+- Only needed if you want to access OneClaw from your phone/tablet
+- Install: https://tailscale.com/download
 
-### 2. Add API Key
+---
+
+## Quick Setup (15 Minutes)
+
+### Step 1: Get an API Key
+
+OneClaw needs an AI provider. Choose one:
+
+**Option A: Claude API** (Recommended)
+1. Go to https://console.anthropic.com/
+2. Click "Get API keys" → "Create Key"
+3. Copy the key (starts with `sk-ant-`)
+4. Add $10-20 credit in "Billing" section
+5. Cost: ~$15-30/month for moderate use
+
+**Option B: OpenAI**
+1. Go to https://platform.openai.com/api-keys
+2. Click "Create new secret key"
+3. Copy the key (starts with `sk-`)
+4. Add $10-20 credit
+5. Cost: ~$10-20/month for moderate use
+
+### Step 2: Add Your API Key
+
+Open Terminal and run:
 
 ```bash
 nano oneclaw-container/secrets/.env
 ```
 
-Add one of these:
+Add this line (replace with your actual key):
 ```bash
-# Anthropic Claude (Recommended)
 ANTHROPIC_API_KEY=sk-ant-your-key-here
-
-# Or OpenAI
-OPENAI_API_KEY=sk-your-key-here
 ```
 
-**Get keys:**
-- Anthropic: https://console.anthropic.com/
-- OpenAI: https://platform.openai.com/api-keys
+Save: Press `Ctrl+O`, then `Enter`, then `Ctrl+X`
 
-### 3. Start
+### Step 3: Start OneClaw
 
 ```bash
 cd oneclaw-container
 docker compose up -d
 ```
 
-### 4. Access
+Wait 30 seconds for it to start.
 
-- **WebChat**: http://localhost:18790
-- **Gateway API**: http://localhost:18789
+### Step 4: Access the Web Interface
 
----
+#### Option A: Local Access (Easiest)
 
-## 📂 What's in This Directory
-
-```
-one-claw-tied-behind-your-back/
-├── oneclaw-container/          # ← All container data (self-contained)
-│   ├── workspace/
-│   │   ├── IDENTITY             # Isaiah's persona
-│   │   ├── SOUL.md              # Values & decision-making
-│   │   └── USER.md              # Professional background
-│   ├── config/
-│   │   └── oneclaw.json        # OpenClaw configuration
-│   ├── secrets/
-│   │   └── .env                 # API keys (chmod 600)
-│   ├── logs/
-│   │   └── audit.log            # Security audit log
-│   └── docker compose.yml       # Container orchestration
-│
-├── Dockerfile.secure            # Multi-stage secure build
-├── deploy-local.sh              # Deployment script
-├── SECURITY.md                  # Security architecture
-├── QUICK-REFERENCE.md           # Command cheat sheet
-└── README.md                    # This file
+Run this command to start the web interface:
+```bash
+python3 -m http.server 18791 --directory control-ui &
 ```
 
-**No files in your home directory. No system services. Everything in one place.**
+Then open in your browser:
+```
+http://localhost:18791
+```
+
+#### Option B: Remote Access via Tailscale (Optional)
+
+**Only do this if you want to access OneClaw from your phone or other devices.**
+
+1. Install Tailscale: https://tailscale.com/download
+2. Run this command:
+   ```bash
+   tailscale serve --bg http://127.0.0.1:18791
+   ```
+3. You'll get a URL like: `https://your-mac-name.your-tailnet.ts.net`
+4. Open that URL on any device connected to your Tailscale network
+
+**What is Tailscale?**
+- Creates a private network between your devices
+- Gives you secure HTTPS access from anywhere
+- Only devices you authorize can connect
+- Free for personal use
 
 ---
 
-## 🎭 Isaiah's Personality
+## Daily Usage
 
-Your bot represents you using these files in `oneclaw-container/workspace/`:
+### Start OneClaw
 
-| File | Purpose |
-|------|---------|
-| `IDENTITY` | Core persona, name, tone, communication style |
-| `SOUL.md` | Values, decision-making, long-term goals |
-| `USER.md` | Professional background, team, technical environment |
+```bash
+# Start the container
+cd oneclaw-container
+docker compose up -d
 
-These files are read by the AI on startup. Edit them to customize how your bot represents you.
+# Start the web interface (local access)
+python3 -m http.server 18791 --directory control-ui &
 
----
+# OR start Tailscale (remote access)
+tailscale serve --bg http://127.0.0.1:18791
+```
 
-## 📋 Daily Commands
+Then open: http://localhost:18791 (local) or https://your-mac.tailnet.ts.net (remote)
 
-All commands run from the container directory:
+### Stop OneClaw
 
 ```bash
 cd oneclaw-container
-
-# Start
-docker compose up -d
-
-# Stop
 docker compose down
 
-# View logs
+# Stop web interface
+kill $(lsof -ti:18791)
+
+# OR stop Tailscale
+tailscale serve --https=443 off
+```
+
+### View Logs (If Something's Wrong)
+
+```bash
+cd oneclaw-container
 docker compose logs -f
-
-# Check status
-docker ps | grep openclaw
-
-# Restart
-docker compose restart
 ```
+
+Press `Ctrl+C` to stop viewing logs.
 
 ---
 
-## 🔒 Verify Security
+## What's in This Folder
 
-### Test Network Isolation
-
-```bash
-# Should work (internet):
-docker exec oneclaw_isaiah curl -I https://google.com
-
-# Should FAIL (LAN blocked - use your router IP):
-docker exec oneclaw_isaiah curl --connect-timeout 5 http://192.168.1.1
-
-# Should FAIL (cannot access host):
-docker exec oneclaw_isaiah curl --connect-timeout 5 http://host.docker.internal
+```
+oneclaw/
+├── oneclaw-container/          # Everything OneClaw needs
+│   ├── workspace/              # Your personality files
+│   │   ├── IDENTITY           # Who you are, how you talk
+│   │   ├── SOUL.md            # Your values and goals
+│   │   └── USER.md            # Your background and context
+│   ├── config/
+│   │   └── config.json        # OneClaw settings
+│   ├── secrets/
+│   │   └── .env               # API keys (KEEP PRIVATE!)
+│   ├── control-ui/            # Web interface files
+│   └── docker-compose.yml     # Container configuration
+│
+├── Dockerfile.secure          # How OneClaw is built
+└── README.md                  # This file
 ```
 
-### Check Container Hardening
-
-```bash
-# Non-root user:
-docker exec oneclaw_isaiah whoami
-# Output: node
-
-# Read-only root:
-docker inspect oneclaw_isaiah | jq '.[0].HostConfig.ReadonlyRootfs'
-# Output: true
-
-# Capabilities dropped:
-docker inspect oneclaw_isaiah | jq '.[0].HostConfig.CapDrop'
-# Output: ["ALL"]
-```
+**Everything is self-contained** - no files scattered across your Mac!
 
 ---
 
-## 🔄 Updates
+## Customize Your AI's Personality
 
-### Update OpenClaw
+Your AI assistant reads these three files to understand how to represent you:
 
-```bash
-cd oneclaw-container
-docker compose down
-docker build --no-cache -t oneclaw-secure:latest -f ../Dockerfile.secure ..
-docker compose up -d
-```
+1. **IDENTITY** - Your name, role, communication style
+2. **SOUL.md** - Your values, how you make decisions
+3. **USER.md** - Your professional background, team, tech environment
 
-### Update Personality Files
-
+To update:
 ```bash
 nano oneclaw-container/workspace/IDENTITY
 nano oneclaw-container/workspace/SOUL.md
 nano oneclaw-container/workspace/USER.md
+```
 
+After editing, restart:
+```bash
 cd oneclaw-container
 docker compose restart
 ```
 
 ---
 
-## 📦 Backup & Restore
+## Troubleshooting
 
-### Backup
+### "Cannot connect to Docker"
 
+**Problem**: Docker isn't running
+
+**Fix**: Start Docker Desktop or OrbStack from your Applications folder
+
+### "Container keeps restarting"
+
+**Problem**: Missing or invalid API key
+
+**Fix**:
 ```bash
-tar -czf openclaw-backup-$(date +%Y%m%d).tar.gz oneclaw-container/
-```
+# Check your API key
+cat oneclaw-container/secrets/.env
 
-### Restore
-
-```bash
-tar -xzf openclaw-backup-YYYYMMDD.tar.gz
+# Should show: ANTHROPIC_API_KEY=sk-ant-...
+# If not, add it and restart
 cd oneclaw-container
-docker compose up -d
+docker compose restart
 ```
 
----
+### "Cannot access localhost:18791"
 
-## 🚨 Troubleshooting
+**Problem**: Web server isn't running
 
-### Container Won't Start
-
+**Fix**:
 ```bash
-cd oneclaw-container
-docker compose logs
+# Start the web server
+python3 -m http.server 18791 --directory oneclaw-container/control-ui &
 
-# Check API key is set
-grep ANTHROPIC_API_KEY secrets/.env
+# Check it's running
+curl http://localhost:18791
 ```
 
-### Gateway Not Responding
-
-```bash
-# Check if running
-docker ps | grep openclaw
-
-# Check health
-curl http://localhost:18789/health
-
-# View recent logs
-docker compose logs --tail=50
-```
-
-### Network Issues
-
-```bash
-# Verify Docker network
-docker network inspect oneclaw-container_oneclaw_isolated
-
-# Check DNS resolution
-docker exec oneclaw_isaiah nslookup google.com
-```
-
-### Reset Everything
+### "How do I reset everything?"
 
 ```bash
 cd oneclaw-container
@@ -250,103 +241,165 @@ cd ..
 
 ---
 
-## 🆘 Getting Help
+## Security Features
 
-1. **Security Architecture**: See `SECURITY.md`
-2. **Command Reference**: See `QUICK-REFERENCE.md`
-3. **OpenClaw Docs**: https://docs.oneclaw.ai
-4. **GitHub Issues**: https://github.com/openclaw/openclaw/issues
+### What OneClaw CAN Access
+- ✅ Internet (for AI API calls)
+- ✅ Files in `oneclaw-container/workspace/` (your personality)
+- ✅ Its own logs and configuration
 
----
+### What OneClaw CANNOT Access
+- ❌ Your home folder
+- ❌ Other files on your Mac
+- ❌ Your local network (router, printers, NAS, etc.)
+- ❌ Your VPN or Tailscale network
+- ❌ Other Docker containers
 
-## 📤 Share with Others
+### How It's Secured
+1. **Runs in a container** - isolated from your Mac
+2. **Non-root user** - can't modify system files
+3. **Network isolation** - internet-only access
+4. **Localhost binding** - web interface only accessible from your Mac (unless Tailscale enabled)
+5. **All capabilities dropped** - minimal permissions
 
-To share this deployment setup:
-
+To verify security:
 ```bash
-# Create distribution package (updates to create-distribution.sh needed)
-./create-distribution.sh
+# Should work (internet):
+docker exec oneclaw_isaiah curl -I https://google.com
+
+# Should FAIL (your router - use your actual router IP):
+docker exec oneclaw_isaiah curl --connect-timeout 5 http://192.168.1.1
 ```
 
-Or simply zip the entire directory:
+---
+
+## Backup Your Setup
+
+### Create Backup
 
 ```bash
-cd ..
-zip -r one-claw-tied-behind-your-back.zip one-claw-tied-behind-your-back/ \
-  -x "*/oneclaw-container/secrets/*" \
-  -x "*/oneclaw-container/logs/*" \
-  -x "*/oneclaw-container/workspace/*"
+# Backup everything
+tar -czf oneclaw-backup-$(date +%Y%m%d).tar.gz oneclaw-container/
+
+# Backup without secrets (for sharing)
+tar -czf oneclaw-backup-$(date +%Y%m%d).tar.gz \
+  --exclude='oneclaw-container/secrets/.env' \
+  --exclude='oneclaw-container/logs/*' \
+  oneclaw-container/
+```
+
+### Restore Backup
+
+```bash
+tar -xzf oneclaw-backup-20260214.tar.gz
+cd oneclaw-container
+docker compose up -d
 ```
 
 ---
 
-## 💰 Cost Estimate
+## Share with Friends
 
-**API Usage** (monthly):
-- Claude Opus 4.6: ~$15-30 (moderate use)
-- **Total: ~$15-30/month** (everything else is free)
+To share OneClaw with others:
 
-**Infrastructure:**
-- Docker: Free
-- Gmail, Telegram: Free
-- No cloud hosting needed
+1. **Remove your secrets**:
+   ```bash
+   rm oneclaw-container/secrets/.env
+   echo "ANTHROPIC_API_KEY=" > oneclaw-container/secrets/.env
+   ```
 
----
+2. **Customize personality files** (optional):
+   - Edit `workspace/IDENTITY`, `SOUL.md`, `USER.md` to be generic
+   - Or delete them so your friend can add their own
 
-## ✅ What Makes This Secure
+3. **Zip everything**:
+   ```bash
+   cd ..
+   zip -r oneclaw-for-friend.zip oneclaw/ \
+     -x "*/logs/*"
+   ```
 
-### 1. Self-Contained
-- All files in one directory
-- No system-wide installation
-- No background services on host
-- Easy to backup, move, or delete
-
-### 2. Maximum Container Isolation
-- Non-root user (UID 1000)
-- Read-only root filesystem
-- All Linux capabilities dropped
-- Process ID isolation
-- IPC namespace isolation
-- Resource limits (4GB RAM, 2 CPUs)
-
-### 3. Network Security
-- Custom Docker network (172.30.0.0/24)
-- Ports bound to localhost only
-- DNS: Cloudflare (1.1.1.1) + Google (8.8.8.8)
-- Inter-container communication disabled
-- No access to Docker host network
-
-### 4. Zero-Trust Build
-- Source code cloned INSIDE container
-- Build tools NEVER on your Mac
-- Multi-stage build discards all build artifacts
-- Final image: runtime only (2.5GB)
-
-### 5. Audit & Monitoring
-- All actions logged to `logs/audit.log`
-- 90-day retention
-- JSON format for parsing
-- Container health checks every 30s
+4. **Send them**:
+   - The zip file
+   - This README
+   - Tell them to follow "Quick Setup" above
 
 ---
 
-## 🎯 Your Bot's Identity
+## Cost Breakdown
 
-When running, your OpenClaw bot:
-- ✅ Knows it represents Isaiah Jefferson
-- ✅ Understands your role at Fluence Energy
-- ✅ Speaks with your communication style (direct, technically precise)
-- ✅ References your team, tech stack, and domain expertise
-- ✅ Follows your values (security-first, team-oriented, cost-conscious)
-- ✅ Never exposes credentials or internal details
+### Monthly Costs
+- **Claude API**: $15-30 (pay-as-you-go, ~$3 per million tokens)
+- **OpenAI API**: $10-20 (similar usage)
+- **Docker/OrbStack**: Free
+- **Tailscale**: Free (personal use)
+- **Everything else**: Free
 
-All from the three files in `oneclaw-container/workspace/`.
+**Total: $15-30/month** for a private AI assistant
+
+### One-Time Costs
+- None! Everything is free or pay-as-you-go
 
 ---
 
-**Project**: One Claw Tied Behind Your Back
-**Security Level**: Maximum
-**Host Impact**: Zero
-**Isaiah's Personality**: Loaded
+## Common Questions
 
-**Status**: 🟢 Ready to Deploy
+**Q: Will this slow down my Mac?**
+A: No. OneClaw uses 2 CPU cores max and 4GB RAM. Your Mac has plenty to spare.
+
+**Q: Can I run this on Windows or Linux?**
+A: Not yet - this setup is macOS-specific. A Linux version would work with minor changes.
+
+**Q: Is my data private?**
+A: Yes. OneClaw runs locally. Only API calls go to Claude/OpenAI (encrypted). No telemetry.
+
+**Q: Can I use my existing Claude Pro subscription?**
+A: No. Claude Pro (claude.ai) is separate from Claude API. You need API credits.
+
+**Q: What if I want to stop using it?**
+A: Just delete the `oneclaw` folder. Nothing is installed system-wide.
+
+**Q: Can I use this without Tailscale?**
+A: Yes! Tailscale is completely optional. Use `http://localhost:18791` for local-only access.
+
+---
+
+## Next Steps After Setup
+
+1. **Test the web interface** - Open http://localhost:18791 and send a test message
+2. **Customize your personality** - Edit `workspace/IDENTITY`, `SOUL.md`, `USER.md`
+3. **Set up channels** (optional):
+   - Telegram bot (for mobile messaging)
+   - Gmail integration (for email)
+   - Calendar sync
+4. **Enable Tailscale** (optional) - For remote access from phone/tablet
+
+---
+
+## Getting Help
+
+- **OneClaw Documentation**: https://docs.openclaw.ai
+- **GitHub Issues**: https://github.com/openclaw/openclaw/issues
+- **This Project**: https://github.com/idallasj/oneclaw
+
+---
+
+## What Makes This Special
+
+Unlike ChatGPT or Claude.ai:
+- ✅ **Runs locally** on your Mac (more private)
+- ✅ **Customizable personality** - it knows YOU
+- ✅ **Multiple integrations** - Telegram, Gmail, Calendar, etc.
+- ✅ **Programmable** - add your own skills and automations
+- ✅ **Self-contained** - one folder, easy to backup/move
+- ✅ **Optional remote access** - via Tailscale (secure)
+
+---
+
+**Project**: OneClaw
+**Security**: Maximum (containerized, isolated, internet-only)
+**Privacy**: 100% (runs on your Mac)
+**Cost**: ~$15-30/month (API usage only)
+**Difficulty**: Easy (just follow this guide!)
+
+**Ready?** Start with "Quick Setup" above! ⬆️
