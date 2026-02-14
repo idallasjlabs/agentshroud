@@ -233,3 +233,80 @@ async def test_concurrent_decisions(approval_queue):
     # One should succeed, one should error
     assert "error" in results
     assert ("approved" in results or "rejected" in results)
+
+
+@pytest.mark.asyncio
+async def test_decide_expired_request(approval_queue):
+    """Test deciding on an expired request raises ValueError"""
+    request = ApprovalRequest(
+        action_type="email_sending",
+        description="Test",
+        details={},
+    )
+
+    item = await approval_queue.submit(request)
+
+    # Wait for expiration (timeout is 2 seconds)
+    await asyncio.sleep(2.5)
+
+    # Try to decide on expired request
+    with pytest.raises(ValueError, match="expired"):
+        await approval_queue.decide(item.request_id, approved=True)
+
+
+@pytest.mark.asyncio
+async def test_websocket_connect(approval_queue):
+    """Test WebSocket client connection"""
+    from fastapi import WebSocket
+    from unittest.mock import AsyncMock, MagicMock
+
+    websocket = MagicMock(spec=WebSocket)
+    websocket.accept = AsyncMock()
+
+    await approval_queue.connect(websocket)
+
+    assert websocket in approval_queue.connected_clients
+    websocket.accept.assert_called_once()
+
+
+@pytest.mark.asyncio
+async def test_websocket_disconnect(approval_queue):
+    """Test WebSocket client disconnection"""
+    from fastapi import WebSocket
+    from unittest.mock import MagicMock
+
+    websocket = MagicMock(spec=WebSocket)
+
+    # Add client
+    approval_queue.connected_clients.add(websocket)
+
+    # Disconnect
+    await approval_queue.disconnect(websocket)
+
+    assert websocket not in approval_queue.connected_clients
+
+
+@pytest.mark.asyncio
+async def test_broadcast_with_failed_client(approval_queue):
+    """Test broadcast handles failed client sends"""
+    from unittest.mock import MagicMock, AsyncMock
+
+    # Add two mock websockets
+    ws1 = MagicMock()
+    ws1.send_json = AsyncMock()
+
+    ws2 = MagicMock()
+    ws2.send_json = AsyncMock(side_effect=Exception("Connection lost"))
+
+    approval_queue.connected_clients.add(ws1)
+    approval_queue.connected_clients.add(ws2)
+
+    # Broadcast message
+    await approval_queue.broadcast({"type": "test", "data": {}})
+
+    # ws1 should succeed
+    ws1.send_json.assert_called_once()
+
+    # ws2 should fail and be removed
+    assert ws2 not in approval_queue.connected_clients
+    assert ws1 in approval_queue.connected_clients
