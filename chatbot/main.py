@@ -7,7 +7,7 @@ import os
 from pathlib import Path
 from typing import Optional
 
-import anthropic
+import openai
 from fastapi import FastAPI, HTTPException
 from pydantic import BaseModel
 
@@ -85,12 +85,12 @@ PERSONA_SYSTEM_PROMPT = load_persona_files()
 @app.on_event("startup")
 async def startup_event():
     """Verify API key and persona loaded."""
-    api_key_path = Path("/run/secrets/anthropic_api_key")
+    api_key_path = Path("/run/secrets/openai_api_key")
 
     if not api_key_path.exists():
         # Fallback to environment variable
-        if not os.getenv("ANTHROPIC_API_KEY"):
-            print("WARNING: No API key found at /run/secrets/anthropic_api_key or ANTHROPIC_API_KEY env var")
+        if not os.getenv("OPENAI_API_KEY"):
+            print("WARNING: No API key found at /run/secrets/openai_api_key or OPENAI_API_KEY env var")
 
     print("✅ Isaiah Chat Service started")
     print(f"✅ Persona loaded ({len(PERSONA_SYSTEM_PROMPT)} chars)")
@@ -114,27 +114,30 @@ async def chat(request: ChatRequest):
     This endpoint is called by the Gateway after PII sanitization.
     """
     # Get API key from Docker secret or environment
-    api_key_path = Path("/run/secrets/anthropic_api_key")
+    api_key_path = Path("/run/secrets/openai_api_key")
 
     if api_key_path.exists():
         api_key = api_key_path.read_text().strip()
     else:
-        api_key = os.getenv("ANTHROPIC_API_KEY")
+        api_key = os.getenv("OPENAI_API_KEY")
         if not api_key:
             raise HTTPException(
                 status_code=500,
-                detail="Anthropic API key not configured"
+                detail="OpenAI API key not configured"
             )
 
     try:
-        client = anthropic.Anthropic(api_key=api_key)
+        client = openai.OpenAI(api_key=api_key)
 
-        # Call Claude API with Isaiah's persona
-        message = client.messages.create(
-            model="claude-sonnet-4-20250514",
+        # Call OpenAI API with Isaiah's persona
+        response = client.chat.completions.create(
+            model="gpt-4-turbo",
             max_tokens=2048,
-            system=PERSONA_SYSTEM_PROMPT,
             messages=[
+                {
+                    "role": "system",
+                    "content": PERSONA_SYSTEM_PROMPT
+                },
                 {
                     "role": "user",
                     "content": request.content
@@ -142,18 +145,18 @@ async def chat(request: ChatRequest):
             ]
         )
 
-        response_text = message.content[0].text
+        response_text = response.choices[0].message.content
 
         return ChatResponse(
             response=response_text,
-            model=message.model,
-            tokens_used=message.usage.input_tokens + message.usage.output_tokens
+            model=response.model,
+            tokens_used=response.usage.prompt_tokens + response.usage.completion_tokens
         )
 
-    except anthropic.APIError as e:
+    except openai.APIError as e:
         raise HTTPException(
             status_code=500,
-            detail=f"Anthropic API error: {str(e)}"
+            detail=f"OpenAI API error: {str(e)}"
         )
 
 
