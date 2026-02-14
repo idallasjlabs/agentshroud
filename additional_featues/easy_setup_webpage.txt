@@ -1,0 +1,4 @@
+create a web page to check for all prerequesists
+walk new user through create new email, phone number, openai or other api keys, limited fund digital wallet, etc.
+collect all values needed for .env 
+then deply and test ZZthe complete setup  from start to endZZ

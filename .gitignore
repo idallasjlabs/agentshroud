@@ -362,10 +362,37 @@ mkdocs/
 # PROJECT SPECIFIC
 # =============================================================================
 
-# OneClaw container (secure OpenClaw deployment)
-oneclaw-container/secrets/
-oneclaw-container/logs/
-oneclaw-container/config/oneclaw.json.local
+# SecureClaw - Proxy Layer Framework
+secureclaw.yaml.local
+secureclaw.*.yaml
+
+# Gateway API
+gateway/data/
+gateway/*.db
+gateway/*.sqlite*
+gateway/.env
+gateway/logs/
+
+# Dashboard
+dashboard/build/
+dashboard/dist/
+dashboard/.env.local
+dashboard/.env.production.local
+
+# Docker volumes and runtime data
+docker/data/
+docker/volumes/
+docker/logs/
+docker/.env
+
+# Shortcuts (contain auth tokens)
+shortcuts/*.env
+shortcuts/config.local.json
+
+# Browser extension builds
+browser-extension/build/
+browser-extension/dist/
+browser-extension/web-ext-artifacts/
 
 # Large data files (adjust as needed for your data lakehouse work)
 *.csv.gz

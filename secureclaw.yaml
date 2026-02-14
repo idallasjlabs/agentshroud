@@ -1,0 +1,125 @@
+# SecureClaw Configuration
+# Version: 1.0.0
+# This file defines the complete security posture and operational configuration
+
+security:
+  # Network isolation settings
+  network_isolation: true
+  allowed_networks:
+    - "0.0.0.0/0"  # Internet only
+  blocked_networks:
+    - "192.168.0.0/16"  # RFC1918 private networks
+    - "10.0.0.0/8"
+    - "172.16.0.0/12"
+
+  # PII sanitization
+  pii_redaction: true
+  pii_detection_engine: "presidio"  # Options: presidio, spacy
+  redaction_rules:
+    - type: "SSN"
+      enabled: true
+    - type: "CREDIT_CARD"
+      enabled: true
+    - type: "PHONE_NUMBER"
+      enabled: true
+    - type: "EMAIL_ADDRESS"
+      enabled: true
+    - type: "STREET_ADDRESS"
+      enabled: true
+
+  # Action approval queue
+  approval_queue: true
+  require_approval_for:
+    - email_sending
+    - file_deletion
+    - external_api_calls
+    - skill_installation
+
+gateway:
+  # Gateway API configuration
+  bind: "127.0.0.1"
+  port: 8080
+  auth_method: "shared_secret"
+  auth_token: ""  # Generated during setup
+
+  # Data ledger
+  ledger_database: "sqlite:///data/ledger.db"
+  retention_days: 90  # Auto-delete forwarded content after 90 days
+
+  # Multi-agent router
+  router_enabled: true
+  default_agent: "general"
+
+container:
+  # Container runtime
+  runtime: "podman"  # Options: podman, docker
+  rootless: true
+  read_only_rootfs: false  # Disabled for OpenClaw compatibility
+
+  # Network configuration
+  tailscale: true
+  tailscale_hostname: "secureclaw"
+  internet_only: true
+
+  # Resource limits
+  memory_limit: "4g"
+  memory_reservation: "2g"
+  cpu_limit: 2
+  pids_limit: 1024
+
+openclaw:
+  # OpenClaw-specific settings
+  version: "main"
+  default_model: "openai/gpt-4"
+  gateway_bind: "loopback"
+  gateway_port: 18789
+  ui_port: 18790
+  workspace: "/app/workspace"
+
+shortcuts:
+  # iOS/macOS Shortcuts configuration
+  endpoint: ""  # Set to Tailscale URL during setup
+  auth_token: ""  # Shared secret for shortcuts
+
+  # Feature toggles
+  voice_capture: true
+  screenshot_ocr: true
+  clipboard_monitoring: false  # Opt-in only
+  exif_stripping: true
+  photo_downsizing: true
+  max_photo_size_mb: 5
+
+browser_extension:
+  # Browser extension settings
+  allowed_domains: []  # Empty = all domains allowed
+  blocked_domains:
+    - "*.bank.com"
+    - "*.paypal.com"
+
+  # Privacy settings
+  send_cookies: false
+  send_session_tokens: false
+  send_dom: false
+  readability_mode: true
+
+dashboard:
+  # Dashboard configuration
+  bind: "127.0.0.1"
+  port: 3000
+  websocket_enabled: true
+
+  # Kill switch settings
+  kill_switch_enabled: true
+  kill_switch_action: "freeze"  # Options: freeze, shutdown, disconnect
+
+telemetry:
+  # Disable all telemetry
+  disabled: true
+  do_not_track: true
+
+logging:
+  # Logging configuration
+  level: "INFO"  # Options: DEBUG, INFO, WARNING, ERROR
+  max_size_mb: 10
+  max_files: 3
+  destination: "/app/logs"
