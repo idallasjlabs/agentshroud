@@ -55,10 +55,11 @@ class ApprovalQueue:
         """
         async with self._lock:
             # Generate ID and timestamps
+            from datetime import timezone
             request_id = str(uuid.uuid4())
-            now = datetime.utcnow()
-            submitted_at = now.isoformat() + "Z"
-            expires_at = (now + timedelta(seconds=self.config.timeout_seconds)).isoformat() + "Z"
+            now = datetime.now(timezone.utc)
+            submitted_at = now.isoformat().replace("+00:00", "Z")
+            expires_at = (now + timedelta(seconds=self.config.timeout_seconds)).isoformat().replace("+00:00", "Z")
 
             # Create queue item
             item = ApprovalQueueItem(
@@ -186,7 +187,8 @@ class ApprovalQueue:
             List of expired request IDs
         """
         # NOTE: Called within _lock context
-        now = datetime.utcnow()
+        from datetime import timezone
+        now = datetime.now(timezone.utc)
         expired_ids = []
 
         for request_id, item in self.pending.items():
