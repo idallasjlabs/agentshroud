@@ -362,10 +362,10 @@ mkdocs/
 # PROJECT SPECIFIC
 # =============================================================================
 
-# OneClaw / OpenClaw container
-openclaw-container/secrets/
-openclaw-container/logs/
-openclaw-container/config/openclaw.json.local
+# OneClaw container (secure OpenClaw deployment)
+oneclaw-container/secrets/
+oneclaw-container/logs/
+oneclaw-container/config/oneclaw.json.local
 
 # Large data files (adjust as needed for your data lakehouse work)
 *.csv.gz
