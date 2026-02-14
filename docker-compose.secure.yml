@@ -12,8 +12,8 @@ services:
       args:
         OPENCLAW_VERSION: main  # Change to specific tag for production (e.g., v2026.2.14)
 
-    image: openclaw-secure:latest
-    container_name: openclaw_gateway
+    image: oneclaw-secure:latest
+    container_name: oneclaw_gateway
     hostname: openclaw
 
     # Network isolation
@@ -63,7 +63,7 @@ services:
     # Volumes (selective write access)
     volumes:
       - workspace:/app/workspace
-      - config:/app/.openclaw:ro
+      - config:/app/.oneclaw:ro
       - logs:/app/workspace/logs
 
     # Resource limits

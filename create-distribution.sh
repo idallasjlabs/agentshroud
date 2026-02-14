@@ -138,7 +138,7 @@ brew install --cask lulu  # Free firewall (or purchase Little Snitch)
 
 This script will:
 1. Check that all prerequisites are installed
-2. Create the directory structure at `~/.openclaw-secure/`
+2. Create the directory structure at `~/.oneclaw-secure/`
 3. Generate secure authentication tokens
 4. Create OpenClaw configuration with sandbox enabled
 5. Set up Docker Compose with security hardening
@@ -155,7 +155,7 @@ Before starting OpenClaw, you need at least one AI provider API key:
 
 ```bash
 # Edit the secrets file
-nano ~/.openclaw-secure/secrets/.env
+nano ~/.oneclaw-secure/secrets/.env
 ```
 
 Required: Add ONE of the following:
@@ -188,7 +188,7 @@ The wizard opens web pages and waits for you to complete each step.
 ### Step 5: Start OpenClaw
 
 ```bash
-cd ~/.openclaw-secure
+cd ~/.oneclaw-secure
 ./start.sh
 ```
 
@@ -208,35 +208,35 @@ Or chat via Telegram with your bot: @therealidallasj
 ### Start Services
 
 ```bash
-cd ~/.openclaw-secure
+cd ~/.oneclaw-secure
 ./start.sh
 ```
 
 ### Stop Services
 
 ```bash
-cd ~/.openclaw-secure
+cd ~/.oneclaw-secure
 ./stop.sh
 ```
 
 ### Check Status
 
 ```bash
-cd ~/.openclaw-secure
+cd ~/.oneclaw-secure
 ./status.sh
 ```
 
 ### View Logs
 
 ```bash
-cd ~/.openclaw-secure
+cd ~/.oneclaw-secure
 ./logs.sh
 ```
 
 ### Create Backup
 
 ```bash
-cd ~/.openclaw-secure
+cd ~/.oneclaw-secure
 ./backup.sh
 ```
 
@@ -245,9 +245,9 @@ Backups are saved to: `~/openclaw-backups/`
 ### Restore from Backup
 
 ```bash
-cd ~/.openclaw-secure
+cd ~/.oneclaw-secure
 ./stop.sh
-tar -xzf ~/openclaw-backups/openclaw_backup_YYYYMMDD_HHMMSS.tar.gz -C ~/.openclaw-secure
+tar -xzf ~/openclaw-backups/openclaw_backup_YYYYMMDD_HHMMSS.tar.gz -C ~/.oneclaw-secure
 ./start.sh
 ```
 
@@ -255,7 +255,7 @@ tar -xzf ~/openclaw-backups/openclaw_backup_YYYYMMDD_HHMMSS.tar.gz -C ~/.opencla
 
 ### OpenClaw Configuration
 
-Main configuration: `~/.openclaw-secure/config/openclaw.json`
+Main configuration: `~/.oneclaw-secure/config/oneclaw.json`
 
 Key settings:
 - AI model selection
@@ -266,13 +266,13 @@ Key settings:
 
 ### Environment Variables
 
-Secrets and API keys: `~/.openclaw-secure/secrets/.env`
+Secrets and API keys: `~/.oneclaw-secure/secrets/.env`
 
 **Never commit this file to git or share it publicly!**
 
 ### Docker Compose
 
-Container configuration: `~/.openclaw-secure/docker-compose.yml`
+Container configuration: `~/.oneclaw-secure/docker-compose.yml`
 
 Includes:
 - Security hardening options
@@ -386,7 +386,7 @@ No official integration exists yet. Workarounds:
 docker ps
 
 # View container logs
-cd ~/.openclaw-secure
+cd ~/.oneclaw-secure
 ./logs.sh
 
 # Restart services
@@ -403,7 +403,7 @@ curl http://localhost:18789/health
 lsof -i :18789
 
 # Verify environment variables
-cat ~/.openclaw-secure/secrets/.env | grep ANTHROPIC_API_KEY
+cat ~/.oneclaw-secure/secrets/.env | grep ANTHROPIC_API_KEY
 ```
 
 ### iMessage Not Working
@@ -416,34 +416,34 @@ curl http://localhost:3000/api/v1/ping
 curl http://localhost:8765/health
 
 # Restart bridge
-launchctl unload ~/Library/LaunchAgents/com.openclaw.macos-bridge.plist
-launchctl load ~/Library/LaunchAgents/com.openclaw.macos-bridge.plist
+launchctl unload ~/Library/LaunchAgents/com.oneclaw.macos-bridge.plist
+launchctl load ~/Library/LaunchAgents/com.oneclaw.macos-bridge.plist
 ```
 
 ### Network Isolation Not Working
 
 ```bash
 # Test from inside container
-docker exec openclaw_gateway curl -I https://google.com  # Should work
-docker exec openclaw_gateway curl --connect-timeout 5 http://192.168.1.1  # Should fail
+docker exec oneclaw_gateway curl -I https://google.com  # Should work
+docker exec oneclaw_gateway curl --connect-timeout 5 http://192.168.1.1  # Should fail
 
 # Verify container security
-docker inspect openclaw_gateway | jq '.[0].HostConfig.CapDrop'
-docker inspect openclaw_gateway | jq '.[0].HostConfig.ReadonlyRootfs'
+docker inspect oneclaw_gateway | jq '.[0].HostConfig.CapDrop'
+docker inspect oneclaw_gateway | jq '.[0].HostConfig.ReadonlyRootfs'
 ```
 
 ### High Memory Usage
 
 ```bash
 # Check resource usage
-docker stats openclaw_gateway
+docker stats oneclaw_gateway
 
 # Adjust memory limit in docker-compose.yml
-nano ~/.openclaw-secure/docker-compose.yml
+nano ~/.oneclaw-secure/docker-compose.yml
 # Change: mem_limit: 4g
 
 # Restart
-cd ~/.openclaw-secure && ./stop.sh && ./start.sh
+cd ~/.oneclaw-secure && ./stop.sh && ./start.sh
 ```
 
 ## Security Best Practices
@@ -466,7 +466,7 @@ cd ~/.openclaw-secure && ./stop.sh && ./start.sh
 
 4. **Monitoring**:
    - Check logs daily: `./logs.sh`
-   - Review audit log: `~/.openclaw-secure/workspace/logs/audit.log`
+   - Review audit log: `~/.oneclaw-secure/workspace/logs/audit.log`
    - Set up automated alerts with `monitor.sh`
 
 5. **Firewall**:
@@ -539,23 +539,23 @@ A: Share the `one-claw-tied-behind-your-back-v1.0.tar.gz` file. They extract it 
 A: You can modify the Docker Compose file and firewall rules, but this is not recommended for security.
 
 **Q: Can the AI access my files?**
-A: Only files in the workspace directory (`~/.openclaw-secure/workspace/`). The container has no access to your home directory or other files.
+A: Only files in the workspace directory (`~/.oneclaw-secure/workspace/`). The container has no access to your home directory or other files.
 
 **Q: How do I uninstall?**
 A: Run:
 ```bash
-cd ~/.openclaw-secure
+cd ~/.oneclaw-secure
 ./stop.sh
-launchctl unload ~/Library/LaunchAgents/com.openclaw.macos-bridge.plist
+launchctl unload ~/Library/LaunchAgents/com.oneclaw.macos-bridge.plist
 docker rmi openclaw/openclaw:latest
-rm -rf ~/.openclaw-secure
+rm -rf ~/.oneclaw-secure
 ```
 
 ## Resources
 
 ### Documentation
 
-- **OpenClaw Docs**: https://docs.openclaw.ai
+- **OpenClaw Docs**: https://docs.oneclaw.ai
 - **GitHub**: https://github.com/openclaw/openclaw
 - **BlueBubbles Docs**: https://docs.bluebubbles.app
 - **Docker Security**: https://docs.docker.com/engine/security/
@@ -616,7 +616,7 @@ cd one-claw-tied-behind-your-back-v1.0
 
 Step 3: Add API Key
 ─────────────────────────────────────────────────────────────
-nano ~/.openclaw-secure/secrets/.env
+nano ~/.oneclaw-secure/secrets/.env
 # Add your ANTHROPIC_API_KEY or OPENAI_API_KEY
 
 Step 4: Create Service Accounts
@@ -626,7 +626,7 @@ Step 4: Create Service Accounts
 
 Step 5: Start OpenClaw
 ─────────────────────────────────────────────────────────────
-cd ~/.openclaw-secure
+cd ~/.oneclaw-secure
 ./start.sh
 
 Step 6: Access WebChat
@@ -638,7 +638,7 @@ Open browser: http://localhost:18790
 ╚════════════════════════════════════════════════════════════╝
 
 Management Commands:
-  cd ~/.openclaw-secure
+  cd ~/.oneclaw-secure
   ./start.sh   - Start services
   ./stop.sh    - Stop services
   ./status.sh  - Check status
@@ -646,7 +646,7 @@ Management Commands:
   ./backup.sh  - Create backup
 
 Documentation: See README.md for detailed information
-Help: https://docs.openclaw.ai
+Help: https://docs.oneclaw.ai
 EOF
 
 # Create LICENSE file

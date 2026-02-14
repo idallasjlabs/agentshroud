@@ -25,13 +25,13 @@ Maximum-security OpenClaw deployment for macOS - completely self-contained.
 This will:
 - Build OpenClaw in a secure container (10-20 minutes)
 - Load Isaiah's personality from `workspace/` files
-- Create self-contained deployment in `openclaw-container/`
+- Create self-contained deployment in `oneclaw-container/`
 - Never install anything on your host system
 
 ### 2. Add API Key
 
 ```bash
-nano openclaw-container/secrets/.env
+nano oneclaw-container/secrets/.env
 ```
 
 Add one of these:
@@ -50,7 +50,7 @@ OPENAI_API_KEY=sk-your-key-here
 ### 3. Start
 
 ```bash
-cd openclaw-container
+cd oneclaw-container
 docker-compose up -d
 ```
 
@@ -65,13 +65,13 @@ docker-compose up -d
 
 ```
 one-claw-tied-behind-your-back/
-├── openclaw-container/          # ← All container data (self-contained)
+├── oneclaw-container/          # ← All container data (self-contained)
 │   ├── workspace/
 │   │   ├── IDENTITY             # Isaiah's persona
 │   │   ├── SOUL.md              # Values & decision-making
 │   │   └── USER.md              # Professional background
 │   ├── config/
-│   │   └── openclaw.json        # OpenClaw configuration
+│   │   └── oneclaw.json        # OpenClaw configuration
 │   ├── secrets/
 │   │   └── .env                 # API keys (chmod 600)
 │   ├── logs/
@@ -91,7 +91,7 @@ one-claw-tied-behind-your-back/
 
 ## 🎭 Isaiah's Personality
 
-Your bot represents you using these files in `openclaw-container/workspace/`:
+Your bot represents you using these files in `oneclaw-container/workspace/`:
 
 | File | Purpose |
 |------|---------|
@@ -108,7 +108,7 @@ These files are read by the AI on startup. Edit them to customize how your bot r
 All commands run from the container directory:
 
 ```bash
-cd openclaw-container
+cd oneclaw-container
 
 # Start
 docker-compose up -d
@@ -134,28 +134,28 @@ docker-compose restart
 
 ```bash
 # Should work (internet):
-docker exec openclaw_isaiah curl -I https://google.com
+docker exec oneclaw_isaiah curl -I https://google.com
 
 # Should FAIL (LAN blocked - use your router IP):
-docker exec openclaw_isaiah curl --connect-timeout 5 http://192.168.1.1
+docker exec oneclaw_isaiah curl --connect-timeout 5 http://192.168.1.1
 
 # Should FAIL (cannot access host):
-docker exec openclaw_isaiah curl --connect-timeout 5 http://host.docker.internal
+docker exec oneclaw_isaiah curl --connect-timeout 5 http://host.docker.internal
 ```
 
 ### Check Container Hardening
 
 ```bash
 # Non-root user:
-docker exec openclaw_isaiah whoami
+docker exec oneclaw_isaiah whoami
 # Output: node
 
 # Read-only root:
-docker inspect openclaw_isaiah | jq '.[0].HostConfig.ReadonlyRootfs'
+docker inspect oneclaw_isaiah | jq '.[0].HostConfig.ReadonlyRootfs'
 # Output: true
 
 # Capabilities dropped:
-docker inspect openclaw_isaiah | jq '.[0].HostConfig.CapDrop'
+docker inspect oneclaw_isaiah | jq '.[0].HostConfig.CapDrop'
 # Output: ["ALL"]
 ```
 
@@ -166,20 +166,20 @@ docker inspect openclaw_isaiah | jq '.[0].HostConfig.CapDrop'
 ### Update OpenClaw
 
 ```bash
-cd openclaw-container
+cd oneclaw-container
 docker-compose down
-docker build --no-cache -t openclaw-secure:latest -f ../Dockerfile.secure ..
+docker build --no-cache -t oneclaw-secure:latest -f ../Dockerfile.secure ..
 docker-compose up -d
 ```
 
 ### Update Personality Files
 
 ```bash
-nano openclaw-container/workspace/IDENTITY
-nano openclaw-container/workspace/SOUL.md
-nano openclaw-container/workspace/USER.md
+nano oneclaw-container/workspace/IDENTITY
+nano oneclaw-container/workspace/SOUL.md
+nano oneclaw-container/workspace/USER.md
 
-cd openclaw-container
+cd oneclaw-container
 docker-compose restart
 ```
 
@@ -190,14 +190,14 @@ docker-compose restart
 ### Backup
 
 ```bash
-tar -czf openclaw-backup-$(date +%Y%m%d).tar.gz openclaw-container/
+tar -czf openclaw-backup-$(date +%Y%m%d).tar.gz oneclaw-container/
 ```
 
 ### Restore
 
 ```bash
 tar -xzf openclaw-backup-YYYYMMDD.tar.gz
-cd openclaw-container
+cd oneclaw-container
 docker-compose up -d
 ```
 
@@ -208,7 +208,7 @@ docker-compose up -d
 ### Container Won't Start
 
 ```bash
-cd openclaw-container
+cd oneclaw-container
 docker-compose logs
 
 # Check API key is set
@@ -232,18 +232,18 @@ docker-compose logs --tail=50
 
 ```bash
 # Verify Docker network
-docker network inspect openclaw-container_openclaw_isolated
+docker network inspect oneclaw-container_oneclaw_isolated
 
 # Check DNS resolution
-docker exec openclaw_isaiah nslookup google.com
+docker exec oneclaw_isaiah nslookup google.com
 ```
 
 ### Reset Everything
 
 ```bash
-cd openclaw-container
+cd oneclaw-container
 docker-compose down
-docker rmi openclaw-secure:latest
+docker rmi oneclaw-secure:latest
 cd ..
 ./deploy-local.sh
 ```
@@ -254,7 +254,7 @@ cd ..
 
 1. **Security Architecture**: See `SECURITY.md`
 2. **Command Reference**: See `QUICK-REFERENCE.md`
-3. **OpenClaw Docs**: https://docs.openclaw.ai
+3. **OpenClaw Docs**: https://docs.oneclaw.ai
 4. **GitHub Issues**: https://github.com/openclaw/openclaw/issues
 
 ---
@@ -273,9 +273,9 @@ Or simply zip the entire directory:
 ```bash
 cd ..
 zip -r one-claw-tied-behind-your-back.zip one-claw-tied-behind-your-back/ \
-  -x "*/openclaw-container/secrets/*" \
-  -x "*/openclaw-container/logs/*" \
-  -x "*/openclaw-container/workspace/*"
+  -x "*/oneclaw-container/secrets/*" \
+  -x "*/oneclaw-container/logs/*" \
+  -x "*/oneclaw-container/workspace/*"
 ```
 
 ---
@@ -340,7 +340,7 @@ When running, your OpenClaw bot:
 - ✅ Follows your values (security-first, team-oriented, cost-conscious)
 - ✅ Never exposes credentials or internal details
 
-All from the three files in `openclaw-container/workspace/`.
+All from the three files in `oneclaw-container/workspace/`.
 
 ---
 

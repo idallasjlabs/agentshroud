@@ -11,14 +11,14 @@
 ./deploy-openclaw.sh
 
 # 3. Add API key
-nano ~/.openclaw-secure/secrets/.env
+nano ~/.oneclaw-secure/secrets/.env
 # Add: ANTHROPIC_API_KEY=sk-ant-...
 
 # 4. Create accounts
 ./setup-accounts.sh
 
 # 5. Start
-cd ~/.openclaw-secure && ./start.sh
+cd ~/.oneclaw-secure && ./start.sh
 
 # 6. Access
 open http://localhost:18790
@@ -57,7 +57,7 @@ open http://localhost:18790
 ## 📋 Daily Commands
 
 ```bash
-cd ~/.openclaw-secure
+cd ~/.oneclaw-secure
 
 # Start services
 ./start.sh
@@ -81,32 +81,32 @@ cd ~/.openclaw-secure
 
 ```bash
 # Should work (internet)
-docker exec openclaw_gateway curl -I https://google.com
+docker exec oneclaw_gateway curl -I https://google.com
 
 # Should fail (LAN blocked)
-docker exec openclaw_gateway curl --connect-timeout 5 http://192.168.1.1
+docker exec oneclaw_gateway curl --connect-timeout 5 http://192.168.1.1
 ```
 
 ### Check Security Settings
 
 ```bash
 # Verify non-root
-docker exec openclaw_gateway whoami
+docker exec oneclaw_gateway whoami
 # Output: node
 
 # Verify read-only root
-docker inspect openclaw_gateway | jq '.[0].HostConfig.ReadonlyRootfs'
+docker inspect oneclaw_gateway | jq '.[0].HostConfig.ReadonlyRootfs'
 # Output: true
 
 # Verify capabilities dropped
-docker inspect openclaw_gateway | jq '.[0].HostConfig.CapDrop'
+docker inspect oneclaw_gateway | jq '.[0].HostConfig.CapDrop'
 # Output: ["ALL"]
 ```
 
 ### Run Security Audit
 
 ```bash
-docker exec openclaw_gateway openclaw security audit --fix
+docker exec oneclaw_gateway openclaw security audit --fix
 ```
 
 ## 📊 Monitoring
@@ -121,10 +121,10 @@ curl http://localhost:18789/health
 curl http://localhost:8765/health
 
 # Resource usage
-docker stats openclaw_gateway
+docker stats oneclaw_gateway
 
 # Audit log
-tail -50 ~/.openclaw-secure/workspace/logs/audit.log
+tail -50 ~/.oneclaw-secure/workspace/logs/audit.log
 ```
 
 ### Automated Monitoring
@@ -134,7 +134,7 @@ tail -50 ~/.openclaw-secure/workspace/logs/audit.log
 crontab -e
 
 # Add this line:
-*/5 * * * * ~/.openclaw-secure/monitor.sh
+*/5 * * * * ~/.oneclaw-secure/monitor.sh
 ```
 
 Auto-restarts on 3 consecutive failures, sends macOS notifications.
@@ -144,13 +144,13 @@ Auto-restarts on 3 consecutive failures, sends macOS notifications.
 ### Update OpenClaw
 
 ```bash
-cd ~/.openclaw-secure
+cd ~/.oneclaw-secure
 
 # Stop services
 ./stop.sh
 
 # Rebuild (pulls latest OpenClaw in container)
-docker build -t openclaw-secure:latest -f Dockerfile .
+docker build -t oneclaw-secure:latest -f Dockerfile .
 
 # Start services
 ./start.sh
@@ -166,8 +166,8 @@ brew upgrade
 brew upgrade --cask orbstack  # or docker
 
 # Rebuild OpenClaw image (picks up new Node.js)
-cd ~/.openclaw-secure
-docker build --no-cache -t openclaw-secure:latest -f Dockerfile .
+cd ~/.oneclaw-secure
+docker build --no-cache -t oneclaw-secure:latest -f Dockerfile .
 ```
 
 ## 📦 Backup & Restore
@@ -175,7 +175,7 @@ docker build --no-cache -t openclaw-secure:latest -f Dockerfile .
 ### Create Backup
 
 ```bash
-cd ~/.openclaw-secure
+cd ~/.oneclaw-secure
 ./backup.sh
 ```
 
@@ -184,11 +184,11 @@ Saves to: `~/openclaw-backups/openclaw_backup_YYYYMMDD_HHMMSS.tar.gz`
 ### Restore Backup
 
 ```bash
-cd ~/.openclaw-secure
+cd ~/.oneclaw-secure
 ./stop.sh
 
 # Extract backup
-tar -xzf ~/openclaw-backups/openclaw_backup_YYYYMMDD_HHMMSS.tar.gz -C ~/.openclaw-secure
+tar -xzf ~/openclaw-backups/openclaw_backup_YYYYMMDD_HHMMSS.tar.gz -C ~/.oneclaw-secure
 
 ./start.sh
 ```
@@ -199,10 +199,10 @@ tar -xzf ~/openclaw-backups/openclaw_backup_YYYYMMDD_HHMMSS.tar.gz -C ~/.opencla
 
 ```bash
 # Check logs
-cd ~/.openclaw-secure && ./logs.sh
+cd ~/.oneclaw-secure && ./logs.sh
 
 # Rebuild image
-docker build -t openclaw-secure:latest -f Dockerfile .
+docker build -t oneclaw-secure:latest -f Dockerfile .
 
 # Restart
 ./stop.sh && ./start.sh
@@ -218,10 +218,10 @@ docker ps | grep openclaw
 curl http://localhost:18789/health
 
 # Check API key
-cat ~/.openclaw-secure/secrets/.env | grep ANTHROPIC_API_KEY
+cat ~/.oneclaw-secure/secrets/.env | grep ANTHROPIC_API_KEY
 
 # Restart
-cd ~/.openclaw-secure && ./stop.sh && ./start.sh
+cd ~/.oneclaw-secure && ./stop.sh && ./start.sh
 ```
 
 ### iMessage Not Working
@@ -234,15 +234,15 @@ curl http://localhost:3000/api/v1/ping
 curl http://localhost:8765/health
 
 # Restart bridge
-launchctl unload ~/Library/LaunchAgents/com.openclaw.macos-bridge.plist
-launchctl load ~/Library/LaunchAgents/com.openclaw.macos-bridge.plist
+launchctl unload ~/Library/LaunchAgents/com.oneclaw.macos-bridge.plist
+launchctl load ~/Library/LaunchAgents/com.oneclaw.macos-bridge.plist
 ```
 
 ### Network Isolation Not Working
 
 ```bash
 # Test from inside container
-docker exec openclaw_gateway curl --connect-timeout 5 http://192.168.1.1
+docker exec oneclaw_gateway curl --connect-timeout 5 http://192.168.1.1
 # Should timeout/fail
 
 # Check firewall rules
@@ -253,10 +253,10 @@ docker exec openclaw_gateway curl --connect-timeout 5 http://192.168.1.1
 
 ```bash
 # Check current usage
-docker stats openclaw_gateway
+docker stats oneclaw_gateway
 
 # Adjust limits in docker-compose.yml
-cd ~/.openclaw-secure
+cd ~/.oneclaw-secure
 nano docker-compose.yml
 # Change: mem_limit, cpus
 
@@ -267,11 +267,11 @@ nano docker-compose.yml
 ## 📂 File Locations
 
 ```
-~/.openclaw-secure/               # Main installation
+~/.oneclaw-secure/               # Main installation
 ├── docker-compose.yml            # Container config
 ├── Dockerfile                    # Build instructions
 ├── config/
-│   └── openclaw.json             # OpenClaw config
+│   └── oneclaw.json             # OpenClaw config
 ├── secrets/
 │   └── .env                      # API keys (chmod 600)
 ├── workspace/
@@ -286,16 +286,16 @@ nano docker-compose.yml
 └── backup.sh                     # Backup script
 
 ~/Library/LaunchAgents/
-└── com.openclaw.macos-bridge.plist  # Bridge auto-start
+└── com.oneclaw.macos-bridge.plist  # Bridge auto-start
 
 ~/openclaw-backups/               # Backup storage
 ```
 
 ## 🆘 Getting Help
 
-1. **Check Logs**: `cd ~/.openclaw-secure && ./logs.sh`
+1. **Check Logs**: `cd ~/.oneclaw-secure && ./logs.sh`
 2. **Read Security Doc**: `less SECURITY.md`
-3. **OpenClaw Docs**: https://docs.openclaw.ai
+3. **OpenClaw Docs**: https://docs.oneclaw.ai
 4. **GitHub Issues**: https://github.com/openclaw/openclaw/issues
 5. **Discord**: https://discord.gg/openclaw
 

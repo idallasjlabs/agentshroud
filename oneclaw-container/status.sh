@@ -2,10 +2,10 @@
 echo "=== OpenClaw Status ==="
 echo ""
 echo "Container:"
-docker ps --filter "name=openclaw_isaiah" --format "table {{.Names}}\t{{.Status}}\t{{.Ports}}"
+docker ps --filter "name=oneclaw_isaiah" --format "table {{.Names}}\t{{.Status}}\t{{.Ports}}"
 echo ""
 echo "Image:"
-docker images openclaw-secure:latest --format "table {{.Repository}}\t{{.Tag}}\t{{.Size}}\t{{.CreatedSince}}"
+docker images oneclaw-secure:latest --format "table {{.Repository}}\t{{.Tag}}\t{{.Size}}\t{{.CreatedSince}}"
 echo ""
 echo "Personality Files:"
 ls -lh workspace/{IDENTITY,SOUL.md,USER.md} 2>/dev/null | awk '{print $9, "-", $5}'

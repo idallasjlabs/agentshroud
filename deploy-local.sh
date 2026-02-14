@@ -10,7 +10,7 @@ set -e
 ###############################################################################
 
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
-CONTAINER_DIR="$SCRIPT_DIR/openclaw-container"
+CONTAINER_DIR="$SCRIPT_DIR/oneclaw-container"
 
 # Colors
 BLUE='\033[0;34m'
@@ -69,7 +69,7 @@ echo ""
 
 cd "$SCRIPT_DIR"
 
-if docker build -t openclaw-secure:latest -f Dockerfile.secure . ; then
+if docker build -t oneclaw-secure:latest -f Dockerfile.secure . ; then
     echo -e "${GREEN}✓${NC} Image built successfully"
 else
     echo -e "${RED}ERROR:${NC} Build failed"
@@ -150,10 +150,10 @@ echo ""
 
 echo "🔍 Verify Network Isolation:"
 echo "   # Should work (internet):"
-echo "   docker exec openclaw_isaiah curl -I https://google.com"
+echo "   docker exec oneclaw_isaiah curl -I https://google.com"
 echo ""
 echo "   # Should fail (LAN blocked - use your router IP):"
-echo "   docker exec openclaw_isaiah curl --connect-timeout 5 http://192.168.1.1"
+echo "   docker exec oneclaw_isaiah curl --connect-timeout 5 http://192.168.1.1"
 echo ""
 
 echo "🆘 Troubleshooting:"
