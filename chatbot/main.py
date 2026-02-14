@@ -35,8 +35,8 @@ def load_persona_files() -> str:
 
     persona_parts = []
 
-    # Load IDENTITY
-    identity_path = workspace / "IDENTITY.md"
+    # Load IDENTITY (no .md extension in mount)
+    identity_path = workspace / "IDENTITY"
     if identity_path.exists():
         persona_parts.append(f"# IDENTITY\n{identity_path.read_text()}")
 
@@ -45,8 +45,8 @@ def load_persona_files() -> str:
     if soul_path.exists():
         persona_parts.append(f"\n# SOUL\n{soul_path.read_text()}")
 
-    # Load USER
-    user_path = workspace / "USER.md"
+    # Load USER (no .md extension in mount)
+    user_path = workspace / "USER"
     if user_path.exists():
         persona_parts.append(f"\n# USER CONTEXT\n{user_path.read_text()}")
 
