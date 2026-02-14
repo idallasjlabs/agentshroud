@@ -1,45 +1,58 @@
-# SecureClaw OpenClaw Container - Phase 3 MVP
+# SecureClaw Chat Service Container - Phase 3 MVP
 # Goal: Working chat with Isaiah's personality + security hardening
-# Base: Python 3.11 (stable, tested with OpenClaw)
+# Base: Python 3.11 (stable)
 
 FROM python:3.11-slim AS base
 
-# Install system dependencies
+# Install system dependencies (minimal - curl for healthcheck, openscap for compliance scanning)
 RUN apt-get update && apt-get install -y --no-install-recommends \
     curl \
-    git \
     ca-certificates \
+    libopenscap33 \
+    openscap-common \
     && rm -rf /var/lib/apt/lists/*
 
 # Create non-root user (UID 1000)
 RUN groupadd -g 1000 openclaw && \
     useradd -u 1000 -g openclaw -m -s /bin/bash openclaw
 
+# Create workspace and app directories
+RUN mkdir -p /workspace /app && \
+    chown -R openclaw:openclaw /workspace /app
+
 # Set working directory
-WORKDIR /home/openclaw
+WORKDIR /app
 
-# Install OpenClaw globally (as root for now, switch user later)
-RUN pip install --no-cache-dir openclaw
+# Copy chatbot service files
+COPY chatbot/requirements.txt .
+COPY chatbot/main.py .
 
-# Create workspace directories
-RUN mkdir -p /home/openclaw/.openclaw/workspace && \
-    mkdir -p /home/openclaw/.openclaw/data && \
-    chown -R openclaw:openclaw /home/openclaw
+# Install Python dependencies
+RUN pip install --no-cache-dir -r requirements.txt
 
-# Copy persona files (will be mounted as volumes in docker-compose)
-# Placeholder - actual files mounted at runtime
-RUN mkdir -p /workspace && \
-    chown -R openclaw:openclaw /workspace
+# Copy SCAP content for compliance scanning
+RUN mkdir -p /usr/share/xml/scap/ssg/content
+COPY docker/scap-content/ssg-debian12-ds.xml /usr/share/xml/scap/ssg/content/
+
+# OCI Image labels
+LABEL org.opencontainers.image.title="SecureClaw OpenClaw Chat"
+LABEL org.opencontainers.image.description="Isaiah persona chat service with Anthropic Claude API"
+LABEL org.opencontainers.image.vendor="SecureClaw"
+LABEL org.opencontainers.image.version="0.1.0"
+LABEL org.opencontainers.image.source="https://github.com/ijefferson/oneclaw"
+
+# Prevent Python bytecode generation (read-only filesystem compatibility)
+ENV PYTHONDONTWRITEBYTECODE=1
 
 # Switch to non-root user
 USER openclaw
 
-# Expose OpenClaw default port (localhost only in docker-compose)
+# Expose chat service port (localhost only in docker-compose)
 EXPOSE 18789
 
-# Healthcheck - verify OpenClaw is responding
+# Healthcheck - verify service is responding
 HEALTHCHECK --interval=30s --timeout=10s --start-period=40s --retries=3 \
     CMD curl -f http://localhost:18789/health || exit 1
 
-# Entrypoint will be defined in docker-compose with environment variables
-CMD ["openclaw", "serve", "--host", "0.0.0.0", "--port", "18789"]
+# Start chat service
+CMD ["uvicorn", "main:app", "--host", "0.0.0.0", "--port", "18789"]

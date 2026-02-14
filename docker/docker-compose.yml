@@ -1,11 +1,9 @@
-version: '3.8'
-
 services:
   # SecureClaw Gateway (Phase 2) - PII sanitization, audit ledger, routing
   gateway:
     build:
-      context: ../gateway
-      dockerfile: Dockerfile
+      context: ..
+      dockerfile: gateway/Dockerfile
     container_name: secureclaw-gateway
     hostname: gateway
     restart: unless-stopped
@@ -23,15 +21,19 @@ services:
     environment:
       - PYTHONUNBUFFERED=1
       - LOG_LEVEL=INFO
+      - PYTHONDONTWRITEBYTECODE=1
 
     # Security hardening
     security_opt:
       - no-new-privileges:true
+      # seccomp temporarily disabled to debug thread creation issue
+      # - seccomp=./seccomp/gateway-seccomp.json
     cap_drop:
       - ALL
-    read_only: false  # Gateway needs to write to ledger DB
+    read_only: true  # Read-only root filesystem with volume exceptions
     tmpfs:
       - /tmp:noexec,nosuid,size=100m
+      - /var/tmp:noexec,nosuid,size=50m
 
     # Resource limits
     mem_limit: 512m
@@ -39,9 +41,9 @@ services:
     cpus: 1.0
     pids_limit: 100
 
-    # Health check
+    # Health check (using Python since curl not installed in slim image)
     healthcheck:
-      test: ["CMD", "curl", "-f", "http://localhost:8080/status"]
+      test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://127.0.0.1:8080/status').read()"]
       interval: 30s
       timeout: 10s
       retries: 3
@@ -54,8 +56,8 @@ services:
   # OpenClaw Chat Agent (Phase 3) - Isaiah's persona + security hardening
   openclaw:
     build:
-      context: .
-      dockerfile: Dockerfile.openclaw
+      context: ..
+      dockerfile: docker/Dockerfile.openclaw
     container_name: openclaw-chat
     hostname: openclaw
     restart: unless-stopped
@@ -79,6 +81,7 @@ services:
     # Environment
     environment:
       - PYTHONUNBUFFERED=1
+      - PYTHONDONTWRITEBYTECODE=1
       - OPENCLAW_DISABLE_BONJOUR=1  # Disable mDNS broadcasts
       - OPENCLAW_MODE=dm             # DM mode only (no open mode)
       - OPENCLAW_SCOPE=session       # Session isolation
@@ -89,12 +92,15 @@ services:
     # Security hardening
     security_opt:
       - no-new-privileges:true
+      # seccomp temporarily disabled to debug thread creation issue
+      # - seccomp=./seccomp/openclaw-seccomp.json
     cap_drop:
       - ALL
-    read_only: false  # OpenClaw needs to write conversation history
+    read_only: true  # Read-only root filesystem with volume exceptions
     tmpfs:
       - /tmp:noexec,nosuid,size=200m
       - /var/tmp:noexec,nosuid,size=50m
+      - /home/openclaw/.cache:noexec,nosuid,size=50m
 
     # Resource limits
     mem_limit: 2g
