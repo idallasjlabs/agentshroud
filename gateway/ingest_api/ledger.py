@@ -135,11 +135,12 @@ class DataLedger:
             raise RuntimeError("Ledger not initialized. Call initialize() first.")
 
         # Generate ID and timestamps
+        from datetime import timezone
         entry_id = str(uuid.uuid4())
-        now = datetime.utcnow()
-        timestamp_iso = now.isoformat() + "Z"
+        now = datetime.now(timezone.utc)
+        timestamp_iso = now.isoformat().replace("+00:00", "Z")
         expires_at = now + timedelta(days=self.config.retention_days)
-        expires_iso = expires_at.isoformat() + "Z"
+        expires_iso = expires_at.isoformat().replace("+00:00", "Z")
 
         # Hash content (never store raw)
         content_hash = self._hash_content(content)
@@ -377,7 +378,8 @@ class DataLedger:
         if not self.db:
             raise RuntimeError("Ledger not initialized")
 
-        now = datetime.utcnow().isoformat() + "Z"
+        from datetime import timezone
+        now = datetime.now(timezone.utc).isoformat().replace("+00:00", "Z")
 
         cursor = await self.db.execute(
             "DELETE FROM ledger WHERE expires_at IS NOT NULL AND expires_at < ?", (now,)

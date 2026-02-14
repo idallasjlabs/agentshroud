@@ -44,6 +44,16 @@ class PIISanitizer:
 
         Falls back to regex if Presidio/spaCy unavailable or incompatible.
         """
+        # Check Python version first - Presidio incompatible with Python 3.14+
+        import sys
+        if sys.version_info >= (3, 14):
+            logger.warning(
+                f"Python {sys.version_info.major}.{sys.version_info.minor} detected. "
+                "Presidio/spaCy not yet compatible with Python 3.14+. Using regex fallback."
+            )
+            self.mode = "regex"
+            return
+
         try:
             from presidio_analyzer import AnalyzerEngine
             from presidio_anonymizer import AnonymizerEngine

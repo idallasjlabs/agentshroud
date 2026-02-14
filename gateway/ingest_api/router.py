@@ -194,9 +194,10 @@ class MultiAgentRouter:
         for t in targets_to_check:
             try:
                 async with httpx.AsyncClient(timeout=5.0) as client:
+                    from datetime import timezone
                     response = await client.get(f"{t.url}/health")
                     t.healthy = response.status_code == 200
-                    t.last_health_check = datetime.utcnow().isoformat() + "Z"
+                    t.last_health_check = datetime.now(timezone.utc).isoformat().replace("+00:00", "Z")
 
                     results[t.name] = {
                         "healthy": t.healthy,
@@ -205,8 +206,9 @@ class MultiAgentRouter:
                     }
 
             except Exception as e:
+                from datetime import timezone
                 t.healthy = False
-                t.last_health_check = datetime.utcnow().isoformat() + "Z"
+                t.last_health_check = datetime.now(timezone.utc).isoformat().replace("+00:00", "Z")
 
                 results[t.name] = {
                     "healthy": False,
