@@ -14,7 +14,8 @@ from contextlib import asynccontextmanager
 from typing import Annotated
 
 from fastapi import Depends, FastAPI, HTTPException, Query, Request, WebSocket, status
-from fastapi.responses import JSONResponse
+from fastapi.responses import JSONResponse, HTMLResponse
+from pathlib import Path
 
 from ..approval_queue.queue import ApprovalQueue
 from .auth import create_auth_dependency
@@ -195,6 +196,20 @@ AuthRequired = Annotated[None, Depends(auth_dep)]
 
 
 # === Endpoints ===
+
+
+@app.get("/", response_class=HTMLResponse)
+async def web_chat():
+    """Web chat interface
+
+    No authentication required for the HTML page.
+    Authentication happens via JavaScript when calling /forward.
+    """
+    chat_html_path = Path(__file__).parent / "static" / "chat.html"
+    if chat_html_path.exists():
+        return chat_html_path.read_text()
+    else:
+        return "<h1>Chat interface not found</h1>"
 
 
 @app.get("/status", response_model=StatusResponse)
