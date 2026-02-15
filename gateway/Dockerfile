@@ -25,10 +25,10 @@ FROM python:3.13-slim
 
 WORKDIR /app
 
-# Install OpenSCAP for compliance scanning
+# Install OpenSCAP for compliance scanning (Debian Trixie = libopenscap33)
 RUN apt-get update && apt-get install -y --no-install-recommends \
     libopenscap33 \
-    openscap-common \
+    openscap-scanner \
     && rm -rf /var/lib/apt/lists/*
 
 # Create non-root user
