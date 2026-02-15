@@ -1,58 +1,76 @@
-# SecureClaw Chat Service Container - Phase 3 MVP
-# Goal: Working chat with Isaiah's personality + security hardening
-# Base: Python 3.11 (stable)
+# SecureClaw OpenClaw Container - Real OpenClaw Platform
+# Goal: Full OpenClaw features (agents, skills, MCP) with bot identity
+# Base: Node.js 22 (required by OpenClaw)
+# Source: https://github.com/openclaw/openclaw
 
-FROM python:3.11-slim AS base
+FROM node:22-bookworm
 
-# Install system dependencies (minimal - curl for healthcheck, openscap for compliance scanning)
-RUN apt-get update && apt-get install -y --no-install-recommends \
-    curl \
-    ca-certificates \
-    libopenscap33 \
-    openscap-common \
-    && rm -rf /var/lib/apt/lists/*
+# Install system dependencies
+# - Bun (required for OpenClaw build scripts)
+# - SSH client (for bot to connect to remote systems)
+# - OpenSCAP (for compliance scanning)
+RUN curl -fsSL https://bun.sh/install | bash && \
+    apt-get update && \
+    apt-get install -y --no-install-recommends \
+        openssh-client \
+        git \
+        curl \
+        ca-certificates \
+        libopenscap25 \
+        openscap-scanner \
+    && apt-get clean && \
+    rm -rf /var/lib/apt/lists/* /var/cache/apt/archives/*
 
-# Create non-root user (UID 1000)
-RUN groupadd -g 1000 openclaw && \
-    useradd -u 1000 -g openclaw -m -s /bin/bash openclaw
+# Add Bun to PATH
+ENV PATH="/root/.bun/bin:${PATH}"
 
-# Create workspace and app directories
-RUN mkdir -p /workspace /app && \
-    chown -R openclaw:openclaw /workspace /app
+# Enable pnpm (OpenClaw uses pnpm for package management)
+RUN corepack enable
 
 # Set working directory
 WORKDIR /app
 
-# Copy chatbot service files
-COPY chatbot/requirements.txt .
-COPY chatbot/main.py .
+# Install OpenClaw from npm registry
+# Using latest version, will run onboarding on first start
+RUN npm install -g openclaw@latest
 
-# Install Python dependencies
-RUN pip install --no-cache-dir -r requirements.txt
+# Create directories for OpenClaw configuration and workspace
+# ~/.openclaw - configuration, API keys, memory
+# ~/openclaw/workspace - bot's working files
+RUN mkdir -p /home/node/.openclaw && \
+    mkdir -p /home/node/openclaw/workspace && \
+    mkdir -p /home/node/.ssh && \
+    chown -R node:node /home/node
 
 # Copy SCAP content for compliance scanning
 RUN mkdir -p /usr/share/xml/scap/ssg/content
 COPY docker/scap-content/ssg-debian12-ds.xml /usr/share/xml/scap/ssg/content/
 
+# Copy startup script that exports API keys from secrets
+COPY docker/scripts/start-openclaw.sh /usr/local/bin/start-openclaw.sh
+RUN chmod +x /usr/local/bin/start-openclaw.sh
+
 # OCI Image labels
-LABEL org.opencontainers.image.title="SecureClaw OpenClaw Chat"
-LABEL org.opencontainers.image.description="Isaiah persona chat service with Anthropic Claude API"
+LABEL org.opencontainers.image.title="SecureClaw OpenClaw Bot"
+LABEL org.opencontainers.image.description="Real OpenClaw platform for therealidallasj bot"
 LABEL org.opencontainers.image.vendor="SecureClaw"
-LABEL org.opencontainers.image.version="0.1.0"
-LABEL org.opencontainers.image.source="https://github.com/ijefferson/oneclaw"
+LABEL org.opencontainers.image.version="0.2.0"
+LABEL org.opencontainers.image.source="https://github.com/idallasj/oneclaw"
 
-# Prevent Python bytecode generation (read-only filesystem compatibility)
-ENV PYTHONDONTWRITEBYTECODE=1
+# Switch to non-root user (node user has UID 1000)
+USER node
 
-# Switch to non-root user
-USER openclaw
+# Set home directory
+ENV HOME=/home/node
+WORKDIR /home/node
 
-# Expose chat service port (localhost only in docker-compose)
+# Expose OpenClaw gateway port
 EXPOSE 18789
 
-# Healthcheck - verify service is responding
-HEALTHCHECK --interval=30s --timeout=10s --start-period=40s --retries=3 \
-    CMD curl -f http://localhost:18789/health || exit 1
+# Healthcheck - verify OpenClaw gateway is responding
+HEALTHCHECK --interval=30s --timeout=10s --start-period=60s --retries=3 \
+    CMD curl -f http://localhost:18789/api/health || exit 1
 
-# Start chat service
-CMD ["uvicorn", "main:app", "--host", "0.0.0.0", "--port", "18789"]
+# Start OpenClaw gateway via wrapper script
+# Script exports API keys from Docker secrets before starting OpenClaw
+CMD ["/usr/local/bin/start-openclaw.sh"]
