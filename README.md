@@ -464,6 +464,12 @@ pytest --cov=ingest_api tests/
 
 ## Roadmap
 
+### ✅ v0.1.0 - Phases 1-3 Complete
+See [Current Status](#current-status-v010) table above for completed phases:
+- Phase 1: Foundation
+- Phase 2: Gateway Layer
+- Phase 3A/3B: Security Hardening
+
 ### v0.2.0 (Phase 4)
 - [ ] SSH proxy module with approval integration
 - [ ] Command allowlist and audit trail
@@ -478,6 +484,14 @@ pytest --cov=ingest_api tests/
 - [ ] Tailscale serve script
 - [ ] IEC 62443 compliance matrix
 - [ ] Complete documentation
+
+### v0.5.0 (Phase 7)
+- [ ] PromptGuard / input filtering
+- [ ] Outbound allowlist (egress filtering)
+- [ ] Read-only reader agent
+- [ ] Drift detection
+- [ ] MEMORY.md scrubber
+- [ ] Session isolation
 
 ### v1.0.0 (Phase 8)
 - [ ] Production-ready release
