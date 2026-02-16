@@ -49,6 +49,10 @@ CI/CD pipelines, and Raspberry Pi health. You do NOT write application code.
 - `.env.template` with `op://` references
 - NEVER display credentials in output
 
+## Skills
+- Environment management: `/read skills/env/SKILL.md`
+- CI/CD: `/read skills/cicd/SKILL.md`
+
 ## Key Files
 - `docker/docker-compose.yml` — container orchestration
 - `docker/seccomp/*.json` — syscall profiles
