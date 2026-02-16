@@ -328,7 +328,31 @@ async def forward_content(request: ForwardRequest, auth: AuthRequired):
 
     # Include agent response if available
     if agent_response:
-        response_data["agent_response"] = agent_response
+        # Step 5.1: Block credentials from being displayed via untrusted sources
+        blocked_response, was_blocked = await app_state.sanitizer.block_credentials(
+            content=agent_response,
+            source=request.source
+        )
+
+        if was_blocked:
+            logger.warning(
+                f"Blocked credential display from source={request.source}, "
+                f"ledger_id={ledger_entry.id}"
+            )
+            # Log the blocking event in ledger
+            await app_state.ledger.record(
+                source="gateway_security",
+                content=f"Blocked credential display to {request.source}",
+                original_content=agent_response[:100],  # First 100 chars for audit
+                sanitized=True,
+                redaction_count=1,
+                redaction_types=["CREDENTIALS"],
+                forwarded_to="blocked",
+                content_type="security_event",
+                metadata={"original_ledger_id": ledger_entry.id},
+            )
+
+        response_data["agent_response"] = blocked_response
 
     return response_data
 
