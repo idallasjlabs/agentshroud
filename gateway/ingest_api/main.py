@@ -33,6 +33,7 @@ from .models import (
 )
 from .router import ForwardError, MultiAgentRouter
 from .sanitizer import PIISanitizer
+from fastapi.middleware.cors import CORSMiddleware
 
 # Configure logging
 logging.basicConfig(
@@ -140,6 +141,16 @@ app = FastAPI(
     description="Ingest API for the SecureClaw proxy layer framework",
     version="0.1.0",
     lifespan=lifespan,
+)
+
+# CORS middleware for web chat UI
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["http://localhost:8080", "http://127.0.0.1:8080",
+                   "http://localhost:18790", "http://127.0.0.1:18790"],
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
 )
 
 
