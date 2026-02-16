@@ -37,6 +37,7 @@ class RouterConfig(BaseModel):
 
     enabled: bool = True
     default_target: str = "general"
+    default_url: str = "http://openclaw:18789"
     targets: dict[str, str] = Field(default_factory=dict)
 
 
