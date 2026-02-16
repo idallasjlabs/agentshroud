@@ -374,6 +374,12 @@ docker exec -u node openclaw-bot ssh -T -o BatchMode=yes pi-dev "echo 'SSH Succe
 
 ## Quick Reference
 
+### 🔐 Credentials in 1Password
+All SSH connection details are stored in 1Password:
+- Raspberry Pi hostname: `raspberrypi.tail240ea8.ts.net`
+- Username: `secureclaw-bot` (hyphen, not underscore)
+- SSH public key (also documented below)
+
 ### Public Key (Copy-Paste Ready)
 ```
 ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIE/kQadW0OjqtR7Ersmh+uutCIasXZ9HWUNUCNDEpHLO openclaw-bot@therealidallasj
@@ -387,6 +393,9 @@ echo "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIE/kQadW0OjqtR7Ersmh+uutCIasXZ9HWUNUCN
 ### Test Connection
 ```bash
 docker exec -u node openclaw-bot ssh pi-dev "hostname && whoami"
+# Expected output:
+# raspberrypi
+# secureclaw-bot
 ```
 
 ---
