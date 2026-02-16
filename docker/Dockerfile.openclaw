@@ -34,6 +34,18 @@ WORKDIR /app
 # Using latest version, will run onboarding on first start
 RUN npm install -g openclaw@latest
 
+# Install Playwright for browser automation (browser-fetch skill)
+# Install as root so it's available system-wide
+RUN npm install -g playwright@latest && \
+    npx playwright install --with-deps chromium
+
+# Install 1Password CLI for secure secret management
+RUN curl -L -o /tmp/op.zip "https://cache.agilebits.com/dist/1P/op2/pkg/v2.32.0/op_linux_arm64_v2.32.0.zip" && \
+    unzip -q /tmp/op.zip -d /tmp/ && \
+    mv /tmp/op /usr/local/bin/op && \
+    chmod +x /usr/local/bin/op && \
+    rm /tmp/op.zip /tmp/op.sig
+
 # Create directories for OpenClaw configuration and workspace
 # ~/.openclaw - configuration, API keys, memory
 # ~/openclaw/workspace - bot's working files
