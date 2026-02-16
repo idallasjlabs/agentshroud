@@ -325,10 +325,10 @@ class PIISanitizer:
             (r'api[_\s]?key[:\s]+[\w\-]{20,}', "api_key"),
             (r'secret[:\s]+[\w\-]{20,}', "secret"),
             (r'token[:\s]+[\w\-]{20,}', "token"),
-            # TOTP codes (6 digits)
-            (r'\b\d{6}\b', "totp_code"),
-            # High entropy strings that look like passwords
-            (r'\b[a-zA-Z0-9!@#$%^&*]{16,}\b', "high_entropy_string"),
+            # TOTP codes (only in context of OTP/TOTP/one-time/verification)
+            (r'(?:totp|otp|one.time|verification|2fa|mfa)[:\s]+\d{6}\b', "totp_code"),
+            # High entropy strings that look like passwords (require mixed case + special chars)
+            (r'\b(?=[A-Za-z0-9!@#$%^&*]*[A-Z])(?=[A-Za-z0-9!@#$%^&*]*[a-z])(?=[A-Za-z0-9!@#$%^&*]*[0-9])(?=[A-Za-z0-9!@#$%^&*]*[!@#$%^&*])[A-Za-z0-9!@#$%^&*]{16,}\b', "high_entropy_string"),
             # SSH private keys
             (r'-----BEGIN (?:RSA |OPENSSH )?PRIVATE KEY-----', "ssh_private_key"),
             # Credit cards (catch in case PII sanitizer missed)
