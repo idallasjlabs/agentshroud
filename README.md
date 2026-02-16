@@ -1,35 +1,49 @@
 # SecureClaw: A User-Controlled Proxy Layer for OpenClaw
 
-## 🚀 Current Status: Phase 2 Complete, Phase 3 In Progress
+**Version:** 0.1.0
+**Status:** Phase 3 Complete — Production-Ready Security Foundation
+**Bot:** @therealidallasj_bot (Telegram)
 
-**Latest**: Gateway Layer ✅ (89% test coverage, production-ready)
-**Next**: Hardened Container + Working Chat Interface
-
-📄 **[Phase 2 Completion Report](./PHASE2_COMPLETE.md)** — Full technical details, test coverage, API docs
-📋 **[Project Plan](./snuggly-wobbling-fox.md)** — Implementation phases and progress tracking
-
-| Phase | Status | Description |
-|-------|--------|-------------|
-| Phase 1: Clean Slate | ✅ Complete | Architecture pivot, directory structure |
-| Phase 2: Gateway Layer | ✅ Complete | PII sanitization, audit ledger, routing, approval queue |
-| Phase 3: Hardened Container | 🔨 In Progress | Docker container, persona integration, **working chat MVP** |
-| Phase 4: Parallel Digital Profile | 📅 Planned | Dedicated accounts, MCP skills |
-| Phase 5: iOS/macOS Integration | 📅 Planned | Shortcuts, Share Sheet, Quick Actions |
-| Phase 6: Browser Extension | 📅 Planned | Forward URL, clip selection |
-| Phase 7: Dashboard & Setup | 📅 Planned | Web UI, auto-deployment scripts |
-| Phase 8: Polish & Publish | 📅 Planned | Documentation, examples, release |
+> "One Claw Tied Behind Your Back" — You decide what the agent sees, not the agent.
 
 ---
 
-## Project Summary
+## 🚀 Quick Start
 
-SecureClaw is an open-source security framework that sits between your real digital life and an OpenClaw AI agent. Instead of granting OpenClaw direct access to your email, files, browser, photos, and messaging accounts — the default "god mode" that security researchers have repeatedly demonstrated is dangerous — SecureClaw creates a **parallel digital profile** that acts as a controlled data gateway.
+**New users:** See [docs/setup/OPENCLAW_SETUP.md](docs/setup/OPENCLAW_SETUP.md)
+**Documentation:** [docs/README.md](docs/README.md)
+**Latest work:** [session-notes/CONTINUE.md](session-notes/CONTINUE.md)
 
-The core principle is simple: **you decide what the agent sees, not the agent.**
+---
 
-Content flows to OpenClaw exclusively through user-initiated actions — iOS and macOS Shortcuts, a browser extension, scripts, and a dedicated email account. The agent never has credentials to your real accounts, never touches your primary filesystem, and never sees data you haven't explicitly forwarded. A real-time dashboard shows exactly what the agent is doing, what data it holds, and what actions it's attempting — giving you full observability and kill-switch capability at all times.
+## Current Status: v0.1.0
 
-The agent itself runs inside a hardened Docker container with no LAN access, reachable only through a VPN (Tailscale), with all the container-level security controls (rootless execution, dropped capabilities, read-only filesystem, network isolation) applied by default through automated deployment scripts.
+| Phase | Status | Description |
+|-------|--------|-------------|
+| **Phase 1: Foundation** | ✅ Complete | OpenClaw container, Telegram integration, Control UI |
+| **Phase 2: Gateway Layer** | ✅ Complete | PII sanitization (89% coverage), audit ledger, approval queue |
+| **Phase 3A/3B: Security** | ✅ Complete | Seccomp, secrets management, kill switch, verification tools |
+| **Phase 4: SSH Capability** | 🔨 In Progress | Remote execution, approval integration, audit trail |
+| Phase 5: Dashboard | 📅 Planned | Real-time activity feed, security alerting, React UI |
+| Phase 6: Tailscale + Docs | 📅 Planned | Remote access, IEC 62443 compliance, policies |
+| Phase 7: Hardening Skills | 📅 Planned | PromptGuard, egress filtering, drift detection |
+| Phase 8: Polish & Publish | 📅 Planned | Documentation, examples, release |
+
+**Latest Achievement:** Complete security hardening with automated verification (13 checks), OpenSCAP compliance scanning, and 3-mode kill switch.
+
+---
+
+## What is SecureClaw?
+
+SecureClaw is an open-source security framework that sits between your real digital life and an OpenClaw AI agent. Instead of granting the agent direct access to your email, files, browser, and accounts, SecureClaw creates a **controlled gateway** where you decide what data flows to the AI.
+
+### Core Principles
+
+1. **User Control**: You explicitly forward data; the agent never has direct access
+2. **Defense in Depth**: Multiple security layers (network, container, application)
+3. **Full Observability**: Complete audit trail of all agent actions
+4. **Kill Switch**: Immediate emergency shutdown with credential revocation
+5. **Zero Trust**: Agent runs in isolated container with minimal privileges
 
 ---
 
@@ -42,302 +56,463 @@ The agent itself runs inside a hardened Docker container with no LAN access, rea
 │                    (NEVER TOUCHED)                       │
 └──────────────┬──────────────────────┬───────────────────┘
                │ You decide what      │
-               │ to forward            │
+               │ to forward           │
                ▼                      ▼
 ┌──────────────────────┐  ┌───────────────────────┐
-│   iOS/macOS Shortcuts │  │   Browser Extension   │
-│   - Share Sheet       │  │   - Forward URL       │
-│   - Quick Actions     │  │   - Clip Selection    │
-│   - Photo Forwarder   │  │   - Page Summary Req  │
-│   - Voice Trigger     │  │   - Form Fill Req     │
+│   Telegram Bot       │  │   Control UI          │
+│   @therealidallasj   │  │   localhost:18790     │
 └──────────┬───────────┘  └──────────┬────────────┘
            │                         │
            ▼                         ▼
 ┌──────────────────────────────────────────────────────┐
-│              SECURECLAW GATEWAY LAYER                 │
+│              SECURECLAW GATEWAY (FastAPI)             │
 │                                                      │
 │  ┌─────────────┐  ┌──────────┐  ┌────────────────┐  │
-│  │  Dedicated   │  │  Ingest  │  │  Audit Log &   │  │
-│  │  Gmail Acct  │  │  API     │  │  Data Ledger   │  │
-│  │  (proxy)     │  │          │  │                │  │
+│  │  PII         │  │  Audit   │  │  Approval      │  │
+│  │  Sanitizer   │  │  Ledger  │  │  Queue         │  │
 │  └──────┬──────┘  └────┬─────┘  └───────┬────────┘  │
 │         │              │                │            │
 │         ▼              ▼                ▼            │
 │  ┌──────────────────────────────────────────────┐    │
-│  │         DATA SANITIZER / PII FILTER          │    │
-│  │   Strips metadata · Redacts sensitive data   │    │
-│  │   Enforces data retention policies           │    │
+│  │    Encrypted Data in Transit & At Rest      │    │
 │  └──────────────────┬───────────────────────────┘    │
-│                     │                                │
 └─────────────────────┼────────────────────────────────┘
                       │
-        ──────── VPN ONLY (Tailscale) ────────
+        ──────── Localhost/Tailscale Only ────────
                       │
 ┌─────────────────────┼────────────────────────────────┐
 │           HARDENED DOCKER CONTAINER                   │
-│           (No LAN · Rootless · Read-Only FS)         │
+│           (Non-root · Seccomp · Read-only FS)        │
 │                     │                                │
 │                     ▼                                │
 │  ┌──────────────────────────────────────────────┐    │
-│  │              OPENCLAW AGENT                   │    │
-│  │   Loopback-only gateway                      │    │
-│  │   Sandboxed skill execution                  │    │
-│  │   No direct account credentials              │    │
-│  │   All actions logged & observable            │    │
+│  │              OPENCLAW BOT                     │    │
+│  │   • Claude Opus 4.6 (Anthropic API)         │    │
+│  │   • No LAN access                            │    │
+│  │   • No direct credentials                    │    │
+│  │   • SSH capability (authorized hosts only)   │    │
+│  │   • 1Password integration (vault access)     │    │
 │  └──────────────────────────────────────────────┘    │
 │                                                      │
 └──────────────────────────────────────────────────────┘
-                      │
-                      ▼
-┌──────────────────────────────────────────────────────┐
-│              REAL-TIME DASHBOARD                      │
-│   Live action feed · Data inventory · Kill switch    │
-│   Outbound request log · Cost tracker                │
-└──────────────────────────────────────────────────────┘
 ```
 
 ---
 
-## Why This Approach Works
+## Security Features (Phase 3A/3B Complete)
 
-### Security Benefits
+### Container Hardening
+- ✅ **Non-root execution**: Both containers run as non-root users
+- ✅ **Seccomp profiles**: Syscall filtering (default-deny, explicit allowlist)
+- ✅ **Capability dropping**: ALL capabilities dropped, minimal re-add
+- ✅ **Read-only filesystem**: Gateway container fully read-only
+- ✅ **Network isolation**: No LAN access, localhost-only binding
+- ✅ **Resource limits**: CPU, memory, PID limits enforced
 
-**1. Zero Standing Access**
-The agent has no credentials to any of your real accounts. There are no OAuth tokens to steal, no API keys to leak, and no session cookies to hijack. Even a fully compromised OpenClaw instance yields nothing useful to an attacker because the agent's dedicated Gmail is a disposable proxy — not your real inbox.
+### Secrets Management
+- ✅ **Docker secrets**: API keys, passwords in encrypted secrets
+- ✅ **1Password integration**: Secure credential storage and retrieval
+- ✅ **No hardcoded secrets**: All sensitive data externalized
 
-**2. User-Initiated Data Flow Only**
-Every piece of data the agent receives was explicitly sent by you through a Shortcut, browser extension, or forwarded email. This eliminates the entire class of attacks where a malicious skill or prompt injection causes the agent to silently read your email, exfiltrate files, or scrape your browser history.
+### Monitoring & Response
+- ✅ **Audit ledger**: SQLite-based, SHA-256 hashed, 90-day retention
+- ✅ **Security verification**: 13 automated checks (`verify-security.sh`)
+- ✅ **Compliance scanning**: OpenSCAP integration (`scan.sh`)
+- ✅ **Kill switch**: 3 modes (freeze/shutdown/disconnect) with credential revocation
 
-**3. PII Never Reaches the Agent by Default**
-A sanitization layer between your Shortcuts/extensions and the agent can strip EXIF data from photos, redact phone numbers and addresses from forwarded content, and enforce data retention limits — all before OpenClaw ever processes the content.
+### Data Protection
+- ✅ **PII sanitization**: Presidio-based, 89% test coverage
+- ✅ **Approval queue**: High-risk actions require user confirmation
+- ✅ **Data retention**: Automatic cleanup after 90 days
+- ✅ **Encrypted secrets**: TLS for external communication
 
-**4. Full Observability**
-A real-time dashboard shows every action the agent takes, every outbound network request it makes, and every piece of data it currently holds. You see exactly what the agent is doing — not after the fact in logs, but live.
-
-**5. Blast Radius Containment**
-Even in the worst case — a malicious skill achieves code execution inside the container — the attacker lands in a rootless container with no LAN access, no real credentials, and only a disposable email account. Your actual digital life is untouched.
-
-**6. Revocable and Disposable**
-If anything goes wrong, you can nuke the entire container and the proxy Gmail account. Nothing in your real digital life needs to be rotated, revoked, or forensically examined.
-
-### Usability Benefits
-
-**7. Native OS Integration via Shortcuts**
-iOS and macOS Shortcuts make the proxy layer feel seamless. Share a photo, highlight text, trigger a voice command — the experience is nearly identical to having direct agent access, but with the security boundary invisible to the user's workflow.
-
-**8. Gradual Trust Escalation**
-Start with read-only, forwarded content. As you build confidence in the agent's behavior, you can selectively grant more capabilities (drafting emails in the proxy account, managing a calendar, etc.) without ever exposing your primary accounts.
-
-**9. Platform for Experimentation**
-This setup lets technically-inclined users fully test OpenClaw's capabilities — skills, automations, multi-agent workflows — without the existential risk of connecting it to their real digital life.
-
-### Open-Source Value Proposition
-
-**10. Fills a Critical Gap**
-Every security guide for OpenClaw says "run it in Docker" and "be careful." None of them solve the fundamental problem: OpenClaw's usefulness comes from access, and access is the attack surface. SecureClaw is the first project to offer a complete proxy-layer architecture that preserves usefulness while eliminating direct access.
-
-**11. Target Audience Alignment**
-The technically-inclined early-adopter crowd that runs OpenClaw is exactly the audience that will appreciate and contribute to a well-architected security framework. This is the right open-source play for this moment.
+**Security Score:** 26/26 checks passed (1 expected warning)
 
 ---
 
-## Gap Analysis: What You Might Be Missing
+## Current Capabilities
 
-**Calendar and Scheduling** — Email forwarding covers a lot, but calendar management (creating events, checking availability, sending invites) needs its own proxy pattern. Consider a dedicated calendar in the proxy Google account that you selectively sync or mirror events to.
+### Communication
+- **Telegram**: @therealidallasj_bot (allowlist: user 8096968754)
+- **Control UI**: http://localhost:18790 (browser-based chat)
+- **API**: http://localhost:8080 (Gateway REST API)
 
-**Bidirectional Actions** — Your current model is great for "send data to the agent," but what about when the agent needs to act? If it drafts an email, how does that get back to your real outbox? You need a review-and-approve queue for agent-generated actions.
+### Integrations
+- **1Password**: Secure credential access via CLI
+- **SSH**: Remote command execution on authorized hosts
+- **Git**: Repository operations via SSH
+- **Docker**: Container management via SSH
 
-**File Handling** — URLs and email cover text, but what about documents, spreadsheets, and code files? A dedicated shared workspace (mounted volume or Tailscale-accessible folder) with write isolation would fill this gap.
-
-**Voice/Conversational Access** — Shortcuts can trigger voice commands, but real-time conversational interaction (like talking to the agent hands-free) needs a dedicated channel — possibly through the Telegram or WhatsApp integration, but on a separate number/account.
-
-**Multi-Device Sync** — If you use Shortcuts on both iPhone and Mac, the data sent to the agent needs to be consistent and deduplicated. A centralized ingest API (rather than direct email-only) would help.
-
-**Data Retention and Expiry** — OpenClaw's MEMORY.md persists indefinitely. You need a policy and mechanism for automatically purging sensitive data from the agent's memory after a configurable period.
-
-**Skill Vetting Pipeline** — Even inside a hardened container, malicious skills can exfiltrate data through allowed outbound channels (the API provider). You need a skill scanning and approval workflow before any skill is installed.
-
----
-
-## 25 Feature Suggestions
-
-### Shortcuts & Native OS Integration (1–7)
-
-**1. Universal Share Sheet Shortcut**
-An iOS/macOS Share Sheet extension that appears in any app. Select text, a photo, a URL, a file, or a contact and tap "Send to SecureClaw." The Shortcut strips metadata (EXIF, location data), applies PII redaction rules, and forwards the sanitized content to the agent's ingest API. Supports configurable presets ("Summarize this," "Add to task list," "Research this topic").
-
-**2. Quick Capture Voice Shortcut**
-A Siri-triggered or home-screen Shortcut that records a voice memo, transcribes it locally on-device using Apple's speech framework, and sends the transcript (not the audio) to the agent. Useful for hands-free task capture while driving or walking. The audio never leaves your device.
-
-**3. Screenshot-to-Agent Shortcut**
-A Shortcut triggered by the screenshot gesture (or a dedicated button) that takes the current screenshot, runs on-device OCR to extract text, and sends both the image and extracted text to the agent. Automatically crops to remove the status bar (which shows carrier, time, battery — minor PII). Great for forwarding error messages, receipts, or UI states.
-
-**4. Clipboard Relay Shortcut**
-A macOS menu bar Shortcut that monitors your clipboard (opt-in, toggled on/off) and sends copied text to the agent with a single hotkey. Useful for rapid-fire research workflows: copy a paragraph from a paper, hit the hotkey, and the agent receives it with a prompt like "Add to research context." Includes a confirmation toast so you never accidentally send clipboard content.
-
-**5. Photo Batch Forwarder**
-An iOS Shortcut that lets you select multiple photos from your library, strips all EXIF/GPS metadata, optionally downsizes to a configurable resolution (to reduce data exposure), and sends them to the agent's proxy Gmail as attachments. Useful for asking the agent to organize, describe, or extract information from photos without granting Photos library access.
-
-**6. Calendar Event Proxy Shortcut**
-A Shortcut that reads selected calendar events from your real calendar (on-device only), strips attendee email addresses and location details (configurable), and sends a sanitized event summary to the agent. Enables scheduling assistance without giving the agent access to your real calendar account.
-
-**7. Contact Card Forwarder**
-A Shortcut that lets you select a contact, choose which fields to include (name only, name + phone, name + email, etc.), and sends a sanitized vCard to the agent. The agent can then draft messages or look up context for that person without having access to your full Contacts database.
-
-### Browser Extension (8–12)
-
-**8. URL Forwarder with Context**
-A browser extension (Chrome/Firefox/Safari) that adds a toolbar button and right-click menu item to forward the current URL to the agent. Optionally includes page title, selected text, and a user-typed instruction ("Summarize," "Find competing products," "Extract pricing"). Does not send cookies, session tokens, or the full page DOM.
-
-**9. Page Content Clipper**
-An extension feature that lets you select a region of a web page (text, images, tables) and send only that selection to the agent. Uses Readability-style content extraction to strip ads, navigation, and tracking scripts before sending. The agent never sees the raw HTML or any embedded trackers.
-
-**10. Form Fill Request (Reverse Flow)**
-When you encounter a web form, the extension lets you send the form field names to the agent and request it draft responses. The agent returns suggested values which appear as a overlay/popup in the extension — you review and approve each field before the extension fills them in. The agent never directly interacts with the page.
-
-**11. Tab Session Exporter**
-An extension feature that exports a list of your currently open tabs (URLs and titles only — no content, no cookies) to the agent for organization, categorization, or research continuity. Useful for end-of-day "here's what I was working on" handoffs. Titles are run through a PII filter before sending.
-
-**12. Reading List / Bookmark Queue**
-A one-click extension button that adds URLs to a "Read Later with AI" queue. The agent processes these asynchronously — summarizing articles, extracting key points, or comparing multiple sources — and surfaces results in the dashboard. You never have to wait for real-time processing.
-
-### Security & Observability (13–18)
-
-**13. Real-Time Action Dashboard**
-A web-based dashboard (React/Next.js, served locally or via Tailscale) that shows a live feed of every action the agent takes: skills invoked, shell commands executed, outbound API calls, files read/written, and messages sent. Each action is color-coded by risk level (green/yellow/red) and includes a one-click "halt and rollback" button for in-progress actions.
-
-**14. Data Inventory Ledger**
-A searchable, timestamped log of every piece of data you've ever sent to the agent and every piece of data the agent currently holds. Shows data lineage (where it came from, which skill processed it, what output it produced). Includes a "forget this" button that triggers secure deletion from the agent's context and memory.
-
-**15. Outbound Request Inspector**
-A dedicated dashboard panel that shows every outbound network request the agent or its skills attempt — destination domain, payload size, request method, and a truncated preview of the body. Requests to unknown or suspicious domains are automatically blocked and flagged. You can whitelist/blacklist domains in real time.
-
-**16. PII Redaction Engine**
-A configurable middleware layer in the ingest pipeline that automatically detects and redacts sensitive data before it reaches the agent. Supports pattern-based detection (SSN, credit card numbers, phone numbers, email addresses) and entity-based detection (names, addresses via NER). Redaction is logged so you can audit what was stripped and restore it if needed.
-
-**17. Agent Memory Viewer and Scrubber**
-A dashboard panel that renders the agent's MEMORY.md in a readable, categorized format. Highlights any entries that contain potential PII, credentials, or injected directives. Supports manual editing (remove specific memories) and automated scrubbing on a configurable schedule. Shows diff history so you can see how the agent's memory has changed over time.
-
-**18. Session Kill Switch**
-A single button on the dashboard (and a dedicated iOS Shortcut) that immediately halts all agent activity: kills running skills, drops active network connections, freezes the container, and preserves state for forensic review. Designed for the "oh no" moment when you see something unexpected in the action feed.
-
-### Agent Capabilities (19–23)
-
-**19. Approval Queue for Agent Actions**
-When the agent wants to take an action (send an email from the proxy account, create a file, execute a script), the request enters an approval queue visible on the dashboard and pushed as a notification to your phone. You approve, modify, or reject each action. Configurable auto-approve rules for low-risk, repetitive actions you trust.
-
-**20. Email Draft Review Flow**
-When you ask the agent to draft an email, it composes the message and places it in a review queue — not the outbox. You see the draft on the dashboard or via a push notification, can edit it inline, and then send it from the proxy Gmail with one tap. The agent never sends email autonomously unless you explicitly enable that for specific recipients.
-
-**21. Research Mode (Multi-Source Synthesis)**
-A dedicated workflow where you forward multiple URLs, documents, or text snippets to the agent and request a synthesized analysis. The agent processes all sources, identifies key themes, contradictions, and gaps, and produces a structured briefing document. Useful for competitive research, technical evaluations, or literature reviews — all without the agent having autonomous web access.
-
-**22. Scheduled Task Runner**
-Configure recurring tasks (daily briefing, weekly report, periodic file cleanup) that the agent executes on a cron schedule. Each scheduled run appears in the dashboard with full action logs. Failed or suspicious runs are automatically paused and flagged. Tasks can only operate on data that's already been forwarded to the agent.
-
-**23. Multi-Agent Routing with Isolation**
-Run multiple specialized agents in separate containers — one for email triage, one for research, one for code review — each with different permission levels and data access. Data forwarded via Shortcuts includes a routing tag ("email," "research," "code") that directs it to the appropriate agent. Agents cannot communicate with each other unless you explicitly bridge them.
-
-### Developer & Open-Source Experience (24–25)
-
-**24. One-Command Bootstrap Script**
-A single `./secureclaw-setup.sh` that provisions the entire stack: builds the hardened Docker container, configures Tailscale networking, deploys the ingest API, sets up the proxy Gmail forwarding, generates Shortcut installation links (via iCloud), installs the browser extension from source, launches the dashboard, and runs the security audit. Outputs a security scorecard at the end showing the posture of the deployment.
-
-**25. Configuration-as-Code with Drift Detection**
-All security settings, network rules, skill allowlists, PII redaction rules, and approval policies are stored in a single `secureclaw.yaml` file that is version-controlled in the repo. A drift detection daemon continuously compares the running configuration against the declared configuration and alerts (via dashboard and push notification) if anything has changed — whether from a skill, a manual edit, or an attacker.
+### AI Model
+- **Claude Opus 4.6** (Anthropic API)
+- **Fallback**: OpenAI GPT-4 support
 
 ---
 
-## Recommended Tech Stack
+## Quick Commands
 
-| Component | Technology | Rationale |
-|---|---|---|
-| Container Runtime | Podman (rootless) or Docker with userns remap | Rootless = no root-on-host if container is escaped |
-| VPN / Network | Tailscale | Already in your infrastructure; mesh networking with ACLs |
-| Ingest API | FastAPI (Python) or Express (Node.js) | Lightweight, easy to extend, handles Shortcut webhooks |
-| PII Redaction | Presidio (Microsoft) or custom regex + spaCy NER | Open-source, well-maintained, configurable |
-| Dashboard | React + Tailwind + WebSocket for live updates | Modern, fast, easy for contributors to extend |
-| Browser Extension | Manifest V3 (Chrome) + Safari Web Extension | Cross-browser with minimal permissions |
-| Shortcuts | Apple Shortcuts with REST API calls | Native iOS/macOS, no third-party dependencies |
-| Proxy Email | Dedicated Gmail with app password | Disposable, free, easy to revoke |
-| Logging | Fluent Bit → Loki or SQLite (local-only) | Lightweight, privacy-respecting, no cloud dependency |
-| Skill Scanning | Cisco Skill Scanner / SafeClaw Scanner | Proven tools from the ClawHavoc response |
+### Security Verification
+```bash
+# Run all security checks
+./docker/scripts/verify-security.sh
+
+# Run compliance scan
+./docker/scripts/scan.sh
+
+# Emergency kill switch
+./docker/scripts/killswitch.sh freeze  # Pause for investigation
+./docker/scripts/killswitch.sh shutdown  # Graceful stop
+./docker/scripts/killswitch.sh disconnect  # Nuclear option
+```
+
+### Container Management
+```bash
+# Start services
+docker compose -f docker/docker-compose.yml up -d
+
+# Check status
+docker compose -f docker/docker-compose.yml ps
+
+# View logs
+docker logs openclaw-bot --tail 50
+docker logs secureclaw-gateway --tail 50
+
+# Restart services
+docker compose -f docker/docker-compose.yml restart
+```
+
+### SSH (New in v0.1.0)
+```bash
+# SSH from bot to authorized hosts
+docker exec -u node openclaw-bot ssh pi-dev "hostname"
+
+# Example: Check disk space on Raspberry Pi
+docker exec -u node openclaw-bot ssh raspberrypi "df -h"
+```
+
+### 1Password Access
+```bash
+# List vaults
+docker exec -u node openclaw-bot bash -c 'source ~/.ssh/scripts/op-auth.sh && op vault list'
+
+# Get credential
+docker exec -u node openclaw-bot bash -c 'source ~/.ssh/scripts/op-auth.sh && op item get "Anthropic API Key" --fields password'
+```
 
 ---
 
-## Suggested Repository Structure
+## Documentation
+
+### 📖 [Complete Documentation Index](docs/README.md)
+
+**Quick Links:**
+- [Setup Guide](docs/setup/OPENCLAW_SETUP.md) - Installation and configuration
+- [SSH Setup](docs/setup/OPENCLAW_SSH_SETUP.md) - Remote access configuration
+- [Raspberry Pi Setup](docs/setup/BOT_DEVELOPMENT_TEAM_RPI_SETUP.md) - Autonomous development server
+- [Security Scripts](docs/security/SECURITY_SCRIPTS_REFERENCE.md) - verify, scan, killswitch
+- [Security Architecture](docs/security/SECURITY_ARCHITECTURE.md) - Defense in depth
+- [Phase 3A/3B Implementation](docs/architecture/PHASE_3A_3B_IMPLEMENTATION.md) - Latest work
+
+**By Category:**
+- [docs/setup/](docs/setup/) - Setup & configuration guides (18 files)
+- [docs/security/](docs/security/) - Security documentation (11 files)
+- [docs/architecture/](docs/architecture/) - System design & planning (7 files)
+- [docs/reference/](docs/reference/) - Quick reference guides (6 files)
+
+---
+
+## Project Structure
 
 ```
-secureclaw/
-├── README.md
-├── LICENSE (MIT or Apache 2.0)
-├── secureclaw.yaml              # Configuration-as-code
-├── setup.sh                     # One-command bootstrap
-│
+oneclaw/
+├── README.md                   ← You are here
 ├── docker/
-│   ├── Dockerfile               # Hardened OpenClaw container
-│   ├── docker-compose.yml       # Full stack orchestration
-│   ├── seccomp-profile.json     # Custom seccomp rules
-│   └── network/
-│       ├── iptables-rules.sh    # VPN-only network lockdown
-│       └── tailscale-acl.json   # Tailscale ACL policy
-│
+│   ├── docker-compose.yml     ← Main container orchestration
+│   ├── Dockerfile.openclaw    ← OpenClaw bot container
+│   ├── seccomp/               ← Seccomp security profiles
+│   ├── secrets/               ← Docker secrets (gitignored)
+│   └── scripts/               ← Management scripts
+│       ├── verify-security.sh ← 13-check security validation
+│       ├── scan.sh            ← OpenSCAP compliance scanning
+│       └── killswitch.sh      ← Emergency shutdown
 ├── gateway/
-│   ├── ingest-api/              # FastAPI ingest service
-│   │   ├── main.py
-│   │   ├── sanitizer.py         # PII redaction engine
-│   │   ├── router.py            # Multi-agent routing
-│   │   └── ledger.py            # Data inventory tracking
-│   └── approval-queue/          # Action approval service
-│
-├── dashboard/
-│   ├── src/                     # React dashboard
-│   │   ├── ActionFeed.jsx       # Real-time action stream
-│   │   ├── DataLedger.jsx       # Data inventory viewer
-│   │   ├── MemoryViewer.jsx     # MEMORY.md browser
-│   │   ├── NetworkInspector.jsx # Outbound request monitor
-│   │   └── KillSwitch.jsx       # Emergency halt
-│   └── package.json
-│
-├── shortcuts/
-│   ├── universal-share.shortcut
-│   ├── voice-capture.shortcut
-│   ├── screenshot-to-agent.shortcut
-│   ├── clipboard-relay.shortcut
-│   ├── photo-forwarder.shortcut
-│   ├── calendar-proxy.shortcut
-│   ├── contact-forwarder.shortcut
-│   └── kill-switch.shortcut
-│
-├── browser-extension/
-│   ├── manifest.json            # Manifest V3
-│   ├── popup.html
-│   ├── content.js               # Page clipper
-│   ├── background.js            # URL forwarder
-│   └── safari/                  # Safari Web Extension wrapper
-│
-├── scripts/
-│   ├── security-audit.sh        # Posture verification
-│   ├── drift-detector.sh        # Config drift monitoring
-│   ├── memory-scrubber.py       # Automated MEMORY.md cleanup
-│   └── skill-scanner.sh         # Pre-install skill vetting
-│
+│   ├── ingest_api/            ← FastAPI gateway server
+│   ├── tests/                 ← 89% test coverage
+│   └── Dockerfile             ← Gateway container
 ├── docs/
-│   ├── SECURITY.md
-│   ├── ARCHITECTURE.md
-│   ├── SHORTCUTS-GUIDE.md
-│   └── THREAT-MODEL.md
-│
-└── .github/
-    └── workflows/
-        ├── security-audit.yml   # CI security checks
-        └── skill-scan.yml       # Skill vetting pipeline
+│   ├── README.md              ← Documentation index
+│   ├── setup/                 ← Setup guides
+│   ├── security/              ← Security docs
+│   ├── architecture/          ← Design docs
+│   └── reference/             ← Quick reference
+├── session-notes/             ← Development session logs
+└── archive/                   ← Historical documentation
 ```
 
 ---
 
-## Summary
+## Recent Changes (v0.1.0)
 
-SecureClaw solves the fundamental tension in OpenClaw: the agent needs access to be useful, but access is the attack surface. By creating a proxy layer where the user controls all data flow through native OS Shortcuts, a browser extension, and a dedicated email account — with full real-time observability via a dashboard — SecureClaw lets technically-inclined users fully leverage OpenClaw's capabilities without gambling their digital identity.
+### Phase 3A: Security Completion
+- ✅ Seccomp profiles re-enabled with ARM64 support
+- ✅ NET_RAW capability removed
+- ✅ Gateway password moved to Docker secrets
+- ✅ mDNS/Bonjour disabled (prevents info disclosure)
+- ✅ Read-only filesystem preparation (tmpfs added)
+- ✅ Security verification script (13 automated checks)
+- ✅ OpenSCAP compliance scanner
+- ✅ DM policy verified (allowlist mode)
 
-This is a genuinely novel contribution to the OpenClaw ecosystem and fills a gap that no existing project addresses. The architecture is sound, the security model is defensible, and the target audience (technical early adopters) is well-defined. Ship it.
+### Phase 3B: Kill Switch
+- ✅ 3-mode emergency shutdown (freeze/shutdown/disconnect)
+- ✅ Audit ledger export
+- ✅ Credential revocation workflow
+- ✅ Incident report generation
+
+### SSH Capability (Phase 4 - In Progress)
+- ✅ SSH key generation (Ed25519)
+- ✅ SSH config for authorized hosts
+- ✅ Raspberry Pi access configured
+- ⏳ SSH proxy module (planned)
+- ⏳ Approval integration (planned)
+
+### Repository Cleanup
+- ✅ 67 markdown files organized into docs/
+- ✅ Documentation index created
+- ✅ Session notes separated
+- ✅ Archive for historical files
+
+**See:** [CHANGELOG.md](CHANGELOG.md) for complete version history
+
+---
+
+## System Requirements
+
+### Runtime
+- **Docker**: 24.0+ with Compose v2
+- **Storage**: 20GB free (104GB allocated for development)
+- **RAM**: 6GB (Gateway: 512MB, OpenClaw: 4GB)
+- **Network**: Tailscale (optional, for remote access)
+
+### Development
+- **OS**: macOS (Darwin 25.3.0) or Linux
+- **Node.js**: 20+ (for OpenClaw)
+- **Python**: 3.13+ (for Gateway)
+- **Git**: 2.30+
+
+### Optional
+- **Raspberry Pi 4**: 8GB RAM (for autonomous development server)
+- **1Password**: Family plan (for credential management)
+- **OpenSCAP**: For compliance scanning
+
+---
+
+## Getting Started
+
+### 1. Prerequisites
+```bash
+# Install dependencies
+brew install docker docker-compose node python@3.13 tailscale
+
+# Verify installation
+docker --version
+docker compose version
+node --version
+python3 --version
+```
+
+### 2. Clone Repository
+```bash
+git clone <your-repo-url> oneclaw
+cd oneclaw
+```
+
+### 3. Configure Secrets
+```bash
+# Create secrets directory
+mkdir -p docker/secrets
+
+# Add your API keys
+echo "your-openai-key" > docker/secrets/openai_api_key.txt
+echo "your-anthropic-key" > docker/secrets/anthropic_api_key.txt
+echo "your-gateway-password" > docker/secrets/gateway_password.txt
+
+# Set permissions
+chmod 600 docker/secrets/*.txt
+```
+
+### 4. Start Services
+```bash
+# Start containers
+docker compose -f docker/docker-compose.yml up -d
+
+# Wait for health checks (60-90 seconds)
+docker compose -f docker/docker-compose.yml ps
+
+# Verify security
+./docker/scripts/verify-security.sh
+```
+
+### 5. Access Control UI
+```bash
+# Open browser
+open http://localhost:18790
+
+# Enter gateway password (from docker/secrets/gateway_password.txt)
+# Complete device pairing
+```
+
+**Complete setup guide:** [docs/setup/OPENCLAW_SETUP.md](docs/setup/OPENCLAW_SETUP.md)
+
+---
+
+## Use Cases
+
+### Personal AI Assistant
+- Telegram-based interaction with Claude Opus 4.6
+- Secure credential access via 1Password
+- Calendar, email, and service integrations
+- Voice commands (via iOS/macOS Shortcuts)
+
+### Secure Development
+- SSH to remote development servers
+- Git operations on authorized machines
+- Docker container management
+- Autonomous code deployment
+
+### Bot Development Team (Raspberry Pi)
+- Autonomous development server
+- Continuous integration and testing
+- Self-healing deployments
+- Distributed task execution
+
+**See:** [docs/setup/BOT_DEVELOPMENT_TEAM_RPI_SETUP.md](docs/setup/BOT_DEVELOPMENT_TEAM_RPI_SETUP.md)
+
+---
+
+## Security & Privacy
+
+### Threat Model
+SecureClaw protects against:
+- ✅ Prompt injection attacks
+- ✅ Data exfiltration
+- ✅ Unauthorized access to real accounts
+- ✅ Supply chain attacks (skill verification)
+- ✅ Network-based attacks (isolation)
+- ✅ Privilege escalation (seccomp, capabilities)
+
+### Mitigations
+- **Network isolation**: No LAN access, localhost-only
+- **PII sanitization**: Automatic redaction of sensitive data
+- **Approval queue**: User confirmation for high-risk actions
+- **Audit ledger**: Complete activity log with SHA-256 hashing
+- **Kill switch**: Immediate shutdown with credential revocation
+
+### Known Limitations
+- OpenClaw container not read-only (disabled during development)
+- No egress filtering (planned for Phase 7)
+- No prompt injection detection (planned for Phase 7)
+
+**See:** [docs/security/SECURITY_ARCHITECTURE.md](docs/security/SECURITY_ARCHITECTURE.md)
+
+---
+
+## Contributing
+
+### Development Workflow
+We follow **GitHub Flow**:
+
+1. **Create feature branch** from `main`
+   ```bash
+   git checkout -b feature-your-feature-name
+   ```
+
+2. **Make changes** and commit
+   ```bash
+   git add .
+   git commit -m "feat: add new feature"
+   ```
+
+3. **Push and create PR**
+   ```bash
+   git push origin feature-your-feature-name
+   # Create PR on GitHub
+   ```
+
+4. **Code review** and merge to `main`
+
+### Commit Message Format
+- `feat:` New feature
+- `fix:` Bug fix
+- `docs:` Documentation changes
+- `security:` Security improvements
+- `refactor:` Code refactoring
+- `test:` Test additions/changes
+
+### Running Tests
+```bash
+# Gateway tests
+cd gateway
+pytest --cov=ingest_api tests/
+
+# Security verification
+./docker/scripts/verify-security.sh
+./docker/scripts/scan.sh
+```
+
+---
+
+## Roadmap
+
+### v0.2.0 (Phase 4)
+- [ ] SSH proxy module with approval integration
+- [ ] Command allowlist and audit trail
+- [ ] Session timeout and limits
+
+### v0.3.0 (Phase 5)
+- [ ] Live action dashboard (React)
+- [ ] Real-time activity feed (WebSocket)
+- [ ] Security alerting
+
+### v0.4.0 (Phase 6)
+- [ ] Tailscale serve script
+- [ ] IEC 62443 compliance matrix
+- [ ] Complete documentation
+
+### v1.0.0 (Phase 8)
+- [ ] Production-ready release
+- [ ] Public documentation
+- [ ] Example deployments
+- [ ] Community support
+
+**See:** [docs/architecture/PHASE3_REQUIREMENTS.md](docs/architecture/PHASE3_REQUIREMENTS.md)
+
+---
+
+## License
+
+[Specify your license here - MIT, Apache 2.0, etc.]
+
+---
+
+## Support
+
+### Documentation
+- **Index**: [docs/README.md](docs/README.md)
+- **Setup**: [docs/setup/](docs/setup/)
+- **Security**: [docs/security/](docs/security/)
+
+### Issues
+- GitHub Issues: [Create an issue](<your-repo-url>/issues)
+- Security Issues: Email security@[yourdomain]
+
+### Community
+- Telegram: @therealidallasj
+- OpenClaw Discord: https://discord.gg/openclaw
+
+---
+
+**Built with**: FastAPI, Docker, OpenClaw, Claude Opus 4.6
+**Security**: Defense in depth, zero trust architecture
+**Status**: v0.1.0 — Production-ready security foundation
+**Next**: Phase 4 — SSH capability and approval workflow

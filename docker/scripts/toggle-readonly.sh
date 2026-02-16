@@ -1,0 +1,73 @@
+#!/bin/bash
+set -euo pipefail
+
+MODE="${1:-}"
+
+if [ "$MODE" = "dev" ]; then
+    echo "🔧 Enabling DEVELOPMENT mode (read-write)"
+    sed -i.bak 's/read_only: true/read_only: false/g' docker/docker-compose.yml
+    echo "✅ Containers will be writable"
+
+elif [ "$MODE" = "prod" ]; then
+    echo "🔒 Enabling PRODUCTION mode (read-only)"
+    sed -i.bak 's/read_only: false/read_only: true/g' docker/docker-compose.yml
+    echo "✅ Containers will be read-only"
+
+elif [ "$MODE" = "test" ]; then
+    echo "🧪 Testing read-only mode..."
+
+    # Enable read-only
+    sed -i.bak 's/read_only: false/read_only: true/g' docker/docker-compose.yml
+
+    # Rebuild
+    docker-compose -f docker/docker-compose.yml down
+    docker-compose -f docker/docker-compose.yml up -d --build
+
+    # Wait for healthy
+    echo "Waiting for containers to be healthy..."
+    sleep 30
+
+    # Test OS immutability
+    echo ""
+    echo "Testing OS immutability..."
+
+    if docker exec openclaw-bot touch /etc/test-file 2>&1 | grep -q "Read-only file system"; then
+        echo "✅ OpenClaw OS is read-only"
+    else
+        echo "❌ OpenClaw OS is WRITABLE (BAD)"
+    fi
+
+    if docker exec openclaw-bot touch /home/node/workspace/test-file 2>&1; then
+        echo "✅ OpenClaw workspace is writable"
+        docker exec openclaw-bot rm /home/node/workspace/test-file
+    else
+        echo "❌ OpenClaw workspace is read-only (BAD)"
+    fi
+
+    if docker exec openclaw-gateway touch /etc/test-file 2>&1 | grep -q "Read-only file system"; then
+        echo "✅ Gateway OS is read-only"
+    else
+        echo "❌ Gateway OS is WRITABLE (BAD)"
+    fi
+
+    if docker exec openclaw-gateway touch /app/data/test-file 2>&1; then
+        echo "✅ Gateway data is writable"
+        docker exec openclaw-gateway rm /app/data/test-file
+    else
+        echo "❌ Gateway data is read-only (BAD)"
+    fi
+
+    echo ""
+    echo "Read-only test complete!"
+
+else
+    echo "Usage: $0 {dev|prod|test}"
+    echo ""
+    echo "  dev   - Enable development mode (read-write)"
+    echo "  prod  - Enable production mode (read-only)"
+    echo "  test  - Test read-only mode and verify"
+    exit 1
+fi
+
+echo ""
+echo "Run 'docker-compose -f docker/docker-compose.yml up -d' to apply changes"
