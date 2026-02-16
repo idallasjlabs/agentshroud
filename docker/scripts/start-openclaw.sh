@@ -3,6 +3,14 @@
 
 set -e
 
+# Export Gateway password from secret file
+if [ -f "/run/secrets/gateway_password" ]; then
+    export OPENCLAW_GATEWAY_PASSWORD=$(cat /run/secrets/gateway_password)
+    echo "[startup] Loaded Gateway password"
+else
+    echo "[startup] Warning: Gateway password file not found"
+fi
+
 # Export OpenAI API key from secret file
 if [ -f "/run/secrets/openai_api_key" ]; then
     export OPENAI_API_KEY=$(cat /run/secrets/openai_api_key)
