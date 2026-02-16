@@ -273,3 +273,86 @@ class PIISanitizer:
             "presidio" or "regex"
         """
         return self.mode
+
+    async def block_credentials(self, content: str, source: str) -> tuple[str, bool]:
+        """Block credential display via untrusted sources (e.g., Telegram)
+
+        Args:
+            content: Response text to check
+            source: Source of request
+
+        Allowed sources (credentials NOT blocked):
+            - console: Direct docker exec commands
+            - localhost: Browser at 127.0.0.1
+            - control_ui: OpenClaw Control UI (localhost or Tailscale)
+            - tailscale: Access via Tailscale network
+            - api: API calls from trusted sources
+
+        Blocked sources (credentials blocked):
+            - telegram: Telegram messaging (remote/untrusted)
+            - external_api: External API calls
+            - remote: General remote access
+            - untrusted: Explicitly untrusted sources
+
+        Returns:
+            Tuple of (sanitized_content, was_blocked)
+                - sanitized_content: Original or redacted content
+                - was_blocked: True if credentials were detected and blocked
+        """
+        # Only block for untrusted remote sources
+        # Allow: console, localhost, control_ui, tailscale, api (from trusted sources)
+        blocked_sources = ["telegram", "external_api", "remote", "untrusted"]
+
+        if source not in blocked_sources:
+            return (content, False)
+
+        # Patterns that indicate credentials are being displayed
+        credential_patterns = [
+            # Password displays
+            (r'password[:\s]+[\w!@#$%^&*()_+\-=\[\]{};:\'",.<>?/\\|`~]{8,}',
+             "password"),
+            # JSON formatted credentials (from op item get --format json)
+            (r'"value":\s*"[\w!@#$%^&*()_+\-=\[\]{};:\'",.<>?/\\|`~]{8,}"',
+             "json_credential"),
+            (r'"password":\s*"[\w!@#$%^&*()_+\-=\[\]{};:\'",.<>?/\\|`~]{8,}"',
+             "json_password"),
+            # API keys
+            (r'\b(sk-[a-zA-Z0-9]{20,})', "openai_api_key"),
+            (r'\bghp_[a-zA-Z0-9]{36}', "github_token"),
+            (r'\bAKIA[A-Z0-9]{16}', "aws_access_key"),
+            (r'\bops_[a-zA-Z0-9]{26}', "1password_token"),
+            # Generic API key patterns
+            (r'api[_\s]?key[:\s]+[\w\-]{20,}', "api_key"),
+            (r'secret[:\s]+[\w\-]{20,}', "secret"),
+            (r'token[:\s]+[\w\-]{20,}', "token"),
+            # TOTP codes (6 digits)
+            (r'\b\d{6}\b', "totp_code"),
+            # High entropy strings that look like passwords
+            (r'\b[a-zA-Z0-9!@#$%^&*]{16,}\b', "high_entropy_string"),
+            # SSH private keys
+            (r'-----BEGIN (?:RSA |OPENSSH )?PRIVATE KEY-----', "ssh_private_key"),
+            # Credit cards (catch in case PII sanitizer missed)
+            (r'\b\d{4}[\s-]?\d{4}[\s-]?\d{4}[\s-]?\d{4}\b', "credit_card"),
+            # SSN (catch in case PII sanitizer missed)
+            (r'\b\d{3}-\d{2}-\d{4}\b', "ssn"),
+        ]
+
+        # Check for credential patterns
+        for pattern, cred_type in credential_patterns:
+            if re.search(pattern, content, re.IGNORECASE | re.MULTILINE):
+                logger.warning(
+                    f"Blocked {cred_type} from being displayed via {source}"
+                )
+
+                # Return blocking message
+                blocked_message = (
+                    "🔒 [REDACTED: Credentials cannot be displayed via Telegram]\n\n"
+                    "For security, passwords and secrets are only accessible via:\n"
+                    "• Console: docker exec openclaw-bot get-credential <name>\n"
+                    "• Control UI: http://localhost:18790\n\n"
+                    "If you need to configure a service, ask me to do it. "
+                    "I can use credentials internally without displaying them."
+                )
+                return (blocked_message, True)
+
+        return (content, False)
