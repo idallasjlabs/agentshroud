@@ -59,6 +59,10 @@ docker inspect secureclaw-gateway --format '{{.Config.User}}'
 docker inspect openclaw-bot --format '{{.HostConfig.SecurityOpt}}'
 ```
 
+## Skills
+- Security review: `/read skills/sec/SKILL.md`
+- Code review: `/read skills/cr/SKILL.md`
+
 ## Output Format
 Return a checklist of findings with:
 - Severity: CRITICAL / HIGH / MEDIUM / LOW / INFO

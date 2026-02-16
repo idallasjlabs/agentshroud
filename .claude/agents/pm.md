@@ -44,6 +44,10 @@ Session summaries must include:
 - Key decisions made
 - Next steps (prioritized)
 
+## Skills
+- Project management: `/read skills/pm/SKILL.md`
+- Master checklist: `/read skills/mc/SKILL.md`
+
 ## Key Files
 - `session-notes/CONTINUE.md` — latest project state
 - `session-notes/CONTINUE-YYYY-MM-DD.md` — daily snapshots
