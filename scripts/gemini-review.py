@@ -15,7 +15,7 @@ from urllib.error import HTTPError
 
 API_KEY = os.environ.get("GEMINI_API_KEY", "")
 MODEL = os.environ.get("GEMINI_MODEL", "gemini-2.5-flash")
-API_URL = f"https://generativelanguage.googleapis.com/v1beta/models/{MODEL}:generateContent?key={API_KEY}"
+API_URL = f"https://generativelanguage.googleapis.com/v1beta/models/{MODEL}:generateContent"
 
 REVIEW_SYSTEM = """You are a senior code reviewer for SecureClaw, a security proxy for OpenClaw AI agents.
 This is a security product — review with that lens.
@@ -52,7 +52,10 @@ def call_gemini(diff_text: str) -> str:
         }
     }).encode("utf-8")
 
-    req = Request(API_URL, data=payload, headers={"Content-Type": "application/json"})
+    req = Request(API_URL, data=payload, headers={
+        "Content-Type": "application/json",
+        "x-goog-api-key": API_KEY
+    })
 
     try:
         with urlopen(req, timeout=120) as resp:
