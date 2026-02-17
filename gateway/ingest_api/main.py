@@ -13,8 +13,11 @@ import time
 from contextlib import asynccontextmanager
 from typing import Annotated
 
+import hmac
+
 from fastapi import Depends, FastAPI, HTTPException, Query, Request, WebSocket, status
 from fastapi.responses import JSONResponse, HTMLResponse
+from starlette.responses import RedirectResponse
 from pathlib import Path
 
 from ..approval_queue.queue import ApprovalQueue
@@ -539,7 +542,6 @@ async def approval_websocket(websocket: WebSocket, token: str | None = Query(Non
     3. Server pushes new approval requests and decisions
     4. Client can send decisions: {"type": "decide", "request_id": "...", "approved": true}
     """
-    import hmac
     if not token or not hmac.compare_digest(token, app_state.config.auth_token):
         await websocket.close(code=4003, reason="Authentication failed")
         await app_state.event_bus.emit(make_event(
@@ -616,7 +618,6 @@ async def serve_dashboard(request: Request, token: str | None = Query(None)):
     On first auth via query param, sets an httpOnly cookie and redirects
     to a clean URL (token removed from query string / browser history).
     """
-    import hmac
     from starlette.responses import RedirectResponse
 
     # Check cookie first
@@ -682,7 +683,6 @@ async def dashboard_ws_token(request: Request):
     The dashboard JS calls this to get the token for WebSocket connections,
     avoiding direct token injection into HTML (XSS mitigation).
     """
-    import hmac
     cookie_token = request.cookies.get("dashboard_token")
     if not cookie_token or not hmac.compare_digest(cookie_token, app_state.config.auth_token):
         return JSONResponse(status_code=403, content={"detail": "Forbidden"})
@@ -692,7 +692,6 @@ async def dashboard_ws_token(request: Request):
 @app.websocket("/ws/activity")
 async def activity_websocket(websocket: WebSocket, token: str | None = Query(None)):
     """WebSocket for real-time activity feed"""
-    import hmac
     if not token or not hmac.compare_digest(token, app_state.config.auth_token):
         await websocket.close(code=4003, reason="Authentication failed")
         await app_state.event_bus.emit(make_event(
