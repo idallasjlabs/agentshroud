@@ -97,13 +97,7 @@ body{background:var(--bg);color:var(--text);font-family:-apple-system,BlinkMacSy
   let token = params.get('token') || '';
   const wsProto = location.protocol === 'https:' ? 'wss:' : 'ws:';
 
-  // Fetch WS token from server (cookie-authenticated) to avoid token in HTML
-  if (!token) {
-    fetch('/dashboard/ws-token', {credentials: 'same-origin'})
-      .then(r => r.ok ? r.json() : Promise.reject())
-      .then(d => { token = d.token; connectWS(); })
-      .catch(() => console.warn('Could not fetch WS token'));
-  }
+
   const feedEl = document.getElementById('feed');
   const sshListEl = document.getElementById('sshList');
   const approvalListEl = document.getElementById('approvalList');
@@ -259,7 +253,15 @@ body{background:var(--bg);color:var(--text);font-family:-apple-system,BlinkMacSy
 
   setInterval(updateUptime, 1000);
   setInterval(fetchStats, 30000);
-  connect();
+  // Connect WS: use token from URL if available, otherwise fetch via cookie auth
+  if (token) {
+    connect();
+  } else {
+    fetch('/dashboard/ws-token', {credentials: 'same-origin'})
+      .then(function(r) { return r.ok ? r.json() : Promise.reject(); })
+      .then(function(d) { token = d.token; connect(); })
+      .catch(function() { console.warn('Could not fetch WS token'); });
+  }
   if (Notification.permission === 'default') Notification.requestPermission();
 })();
 </script>
