@@ -13,6 +13,7 @@ import pytest_asyncio
 from unittest.mock import patch, AsyncMock, MagicMock
 from httpx import AsyncClient, ASGITransport
 from starlette.testclient import TestClient
+from starlette.websockets import WebSocketDisconnect
 
 from gateway.ingest_api.main import app, app_state, lifespan
 from gateway.ingest_api.event_bus import EventBus, make_event
@@ -90,15 +91,13 @@ class TestWebSocketHandshakeAuth:
 
     def test_ws_approvals_rejects_no_token(self, sync_client):
         """WS /ws/approvals closes immediately without token"""
-        from starlette.websockets import WebSocketDisconnect
-        with pytest.raises(Exception):
+        with pytest.raises((WebSocketDisconnect, Exception)):
             with sync_client.websocket_connect("/ws/approvals") as ws:
                 ws.receive_json()  # Should not get here
 
     def test_ws_approvals_rejects_bad_token(self, sync_client):
         """WS /ws/approvals closes with bad token"""
-        from starlette.websockets import WebSocketDisconnect
-        with pytest.raises(Exception):
+        with pytest.raises((WebSocketDisconnect, Exception)):
             with sync_client.websocket_connect("/ws/approvals?token=wrong") as ws:
                 ws.receive_json()
 
@@ -110,15 +109,13 @@ class TestWebSocketHandshakeAuth:
 
     def test_ws_activity_rejects_no_token(self, sync_client):
         """WS /ws/activity closes immediately without token"""
-        from starlette.websockets import WebSocketDisconnect
-        with pytest.raises(Exception):
+        with pytest.raises((WebSocketDisconnect, Exception)):
             with sync_client.websocket_connect("/ws/activity") as ws:
                 ws.receive_json()
 
     def test_ws_activity_rejects_bad_token(self, sync_client):
         """WS /ws/activity closes with bad token"""
-        from starlette.websockets import WebSocketDisconnect
-        with pytest.raises(Exception):
+        with pytest.raises((WebSocketDisconnect, Exception)):
             with sync_client.websocket_connect("/ws/activity?token=wrong") as ws:
                 ws.receive_json()
 
@@ -275,4 +272,4 @@ class TestDashboardSecureCookie:
         assert resp.status_code == 302
         cookie_header = resp.headers.get("set-cookie", "")
         # On HTTP, secure flag should NOT be present
-        assert "Secure" not in cookie_header.split(";")[0]  # not in cookie value
+        assert "; secure" not in cookie_header.lower()
