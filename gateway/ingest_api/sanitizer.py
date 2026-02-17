@@ -42,6 +42,7 @@ class PIISanitizer:
         self._entropy_pattern = re.compile(
             r'\b(?=[A-Za-z0-9!@#$%^&*]*[A-Z])(?=[A-Za-z0-9!@#$%^&*]*[a-z])(?=[A-Za-z0-9!@#$%^&*]*[0-9])(?=[A-Za-z0-9!@#$%^&*]*[!@#$%^&*])[A-Za-z0-9!@#$%^&*]{16,}\b'
         )
+        self._aws_key_pattern = re.compile(r"\bAKIA[0-9A-Z]{16}\b")
 
         if config.engine == "presidio":
             self._init_presidio()
@@ -328,7 +329,7 @@ class PIISanitizer:
             # API keys
             (r'\b(sk-[a-zA-Z0-9]{20,})', "openai_api_key"),
             (r'\bghp_[a-zA-Z0-9]{36}', "github_token"),
-            (r'\bAKIA[A-Z0-9]{16}', "aws_access_key"),
+            (self._aws_key_pattern, "aws_access_key"),
             (r'\bops_[a-zA-Z0-9]{26}', "1password_token"),
             # Generic API key patterns
             (r'api[_\s]?key[:\s]+[\w\-]{20,}', "api_key"),

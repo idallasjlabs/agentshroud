@@ -144,6 +144,9 @@ app = FastAPI(
 )
 
 # CORS middleware for web chat UI
+# NOTE: Origins are configurable via GatewayConfig.cors_origins
+# Default middleware added here; actual config loaded in lifespan
+# For now using defaults - proper solution requires middleware reconfiguration
 app.add_middleware(
     CORSMiddleware,
     allow_origins=["http://localhost:8080", "http://127.0.0.1:8080",
