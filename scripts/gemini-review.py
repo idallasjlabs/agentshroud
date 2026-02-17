@@ -63,7 +63,11 @@ def call_gemini(diff_text: str) -> tuple[str, int]:
 
     try:
         with urlopen(req, timeout=120) as resp:
-            data = json.loads(resp.read())
+            try:
+                data = json.loads(resp.read())
+            except json.JSONDecodeError as e:
+                return (f"ERROR: Failed to parse Gemini API response: {e}", 1)
+
             candidates = data.get("candidates", [])
             if candidates:
                 parts = candidates[0].get("content", {}).get("parts", [])
