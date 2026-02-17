@@ -17,7 +17,11 @@ if [ -z "$ITEM" ]; then
     exit 1
 fi
 
-# Fast-path: use env vars when set (avoids 1Password call entirely)
+# Fast-path: use env vars when set (avoids 1Password call entirely).
+# Security trade-off: GMAIL_APP_PASSWORD and GMAIL_USERNAME live in the process
+# environment for the container lifetime (set by start-openclaw.sh at boot).
+# Callers MUST NOT log the return value of this script — doing so would expose
+# credentials in log aggregation pipelines.
 case "$ITEM" in
     gmail-app-password)
         if [ -n "${GMAIL_APP_PASSWORD:-}" ]; then
