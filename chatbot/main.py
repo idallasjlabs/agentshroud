@@ -3,6 +3,7 @@ Isaiah Chat Service - Phase 3 MVP
 Minimal chat service with Isaiah's personality loaded from persona files.
 """
 
+import logging
 import os
 from contextlib import asynccontextmanager
 from pathlib import Path
@@ -11,6 +12,8 @@ from typing import Optional
 import openai
 from fastapi import FastAPI, HTTPException
 from pydantic import BaseModel
+
+logger = logging.getLogger("chatbot")
 
 
 class ChatRequest(BaseModel):
@@ -65,7 +68,7 @@ async def lifespan(app: FastAPI):
 
     # Load persona
     _persona_prompt = load_persona_files()
-    print(f"\u2705 Persona loaded ({len(_persona_prompt)} chars)")
+    logger.info(f"✅ Persona loaded ({len(_persona_prompt)} chars)")
 
     # Load API key once
     api_key_path = Path("/run/secrets/openai_api_key")
@@ -75,14 +78,14 @@ async def lifespan(app: FastAPI):
         api_key = os.getenv("OPENAI_API_KEY")
 
     if not api_key:
-        print("WARNING: No API key found")
+        logger.warning("No API key found")
     else:
         _openai_client = openai.OpenAI(api_key=api_key)
-        print("\u2705 OpenAI client initialized")
+        logger.info("✅ OpenAI client initialized")
 
-    print("\u2705 Isaiah Chat Service started")
+    logger.info("✅ Isaiah Chat Service started")
     yield
-    print("Isaiah Chat Service shutting down")
+    logger.info("Isaiah Chat Service shutting down")
 
 
 app = FastAPI(title="Isaiah Chat Service", version="0.1.0", lifespan=lifespan)

@@ -19,32 +19,11 @@ from pathlib import Path
 
 
 
-def test_config():
-    tmp = tempfile.NamedTemporaryFile(suffix=".db", delete=False)
-    return GatewayConfig(
-        bind="127.0.0.1",
-        port=8080,
-        auth_method="shared_secret",
-        auth_token="test-token-xyz",
-        ledger=LedgerConfig(backend="sqlite", path=Path(tmp.name), retention_days=90),
-        router=RouterConfig(enabled=True, default_target="test-agent", targets={}),
-        pii=PIIConfig(engine="regex", entities=["US_SSN", "EMAIL_ADDRESS", "PHONE_NUMBER", "CREDIT_CARD"], enabled=True),
-        approval_queue=ApprovalQueueConfig(enabled=True, actions=["email_sending"], timeout_seconds=3600),
-        log_level="WARNING",
-    )
-
-
-
-
-def auth_headers():
-    return {"Authorization": "Bearer test-token-xyz"}
-
-
-
-
 @pytest_asyncio.fixture
-async def client(test_config):
-    with patch('gateway.ingest_api.main.load_config', return_value=test_config):
+async def client(test_config, auth_headers):
+    with patch('gateway.ingest_api.main.load_config', return_value=test_config), \
+         patch('gateway.ingest_api.router.MultiAgentRouter.forward_to_agent', new_callable=AsyncMock) as mock_forward:
+        mock_forward.return_value = "mocked response"
         async with lifespan(app):
             transport = ASGITransport(app=app)
             async with AsyncClient(transport=transport, base_url="http://test") as ac:

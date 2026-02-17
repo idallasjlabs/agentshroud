@@ -7,9 +7,10 @@ import logging
 import secrets
 from pathlib import Path
 from typing import Any
+from urllib.parse import urlparse
 
 import yaml
-from pydantic import BaseModel, Field
+from pydantic import BaseModel, Field, field_validator
 from pydantic_settings import BaseSettings
 
 logger = logging.getLogger("secureclaw.gateway.config")
@@ -39,6 +40,23 @@ class RouterConfig(BaseModel):
     default_target: str = "general"
     default_url: str = "http://openclaw:18789"
     targets: dict[str, str] = Field(default_factory=dict)
+
+    @field_validator("default_url")
+    @classmethod
+    def validate_default_url(cls, v: str) -> str:
+        """Validate that default_url uses http/https and points to localhost or openclaw"""
+        if not v.startswith(("http://", "https://")):
+            raise ValueError("default_url must start with http:// or https://")
+
+        parsed = urlparse(v)
+        allowed_hosts = ["localhost", "127.0.0.1", "openclaw"]
+
+        if parsed.hostname not in allowed_hosts:
+            raise ValueError(
+                f"default_url host must be one of {allowed_hosts}, got: {parsed.hostname}"
+            )
+
+        return v
 
 
 class ApprovalQueueConfig(BaseModel):
