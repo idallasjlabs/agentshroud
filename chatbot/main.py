@@ -13,6 +13,12 @@ import openai
 from fastapi import FastAPI, HTTPException
 from pydantic import BaseModel
 
+# Configure logging
+logging.basicConfig(
+    level=logging.INFO,
+    format="%(asctime)s | %(levelname)s | %(name)s | %(message)s"
+)
+
 logger = logging.getLogger("chatbot")
 
 
@@ -127,8 +133,9 @@ async def chat(request: ChatRequest):
             tokens_used=response.usage.prompt_tokens + response.usage.completion_tokens,
         )
 
-    except openai.APIError as e:
-        raise HTTPException(status_code=500, detail=f"OpenAI API error: {str(e)}")
+    except Exception as e:
+        logger.error(f"Chat request failed: {e}", exc_info=True)
+        raise HTTPException(status_code=502, detail=f"Chat service error: {str(e)}")
 
 
 if __name__ == "__main__":
