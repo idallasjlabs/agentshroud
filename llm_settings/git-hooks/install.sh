@@ -5,22 +5,27 @@
 
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 HOOK_SOURCE="$SCRIPT_DIR/pre-commit"
+GITLEAKS_CONFIG="$SCRIPT_DIR/gitleaks.toml"
 
 if [ "$1" == "--global" ]; then
     # Set up global git template
     echo "📦 Setting up global git hooks template..."
-    
+
     TEMPLATE_DIR="${GIT_TEMPLATE_DIR:-$HOME/.git-templates}"
     HOOKS_DIR="$TEMPLATE_DIR/hooks"
-    
+
     mkdir -p "$HOOKS_DIR"
     cp "$HOOK_SOURCE" "$HOOKS_DIR/pre-commit"
     chmod +x "$HOOKS_DIR/pre-commit"
-    
+
+    # Note: gitleaks.toml cannot be placed in template (it goes to repo root)
+    # It will be copied by llm-init.sh when deploying to repos
+
     git config --global init.templateDir "$TEMPLATE_DIR"
-    
+
     echo "✅ Global template configured at $TEMPLATE_DIR"
     echo "   All NEW repos will automatically get hooks"
+    echo "   Note: gitleaks.toml must be deployed per-repo (use llm-init.sh)"
     echo ""
     echo "To apply to existing repos, run:"
     echo "   cd <repo> && git init"
@@ -28,10 +33,16 @@ if [ "$1" == "--global" ]; then
 elif [ -d ".git" ]; then
     # Install to current repo
     echo "📦 Installing hooks to current repository..."
-    
+
     cp "$HOOK_SOURCE" .git/hooks/pre-commit
     chmod +x .git/hooks/pre-commit
-    
+
+    # Copy gitleaks.toml to repo root if it exists
+    if [ -f "$GITLEAKS_CONFIG" ]; then
+        cp "$GITLEAKS_CONFIG" gitleaks.toml
+        echo "✅ gitleaks.toml copied to repo root"
+    fi
+
     echo "✅ Pre-commit hook installed to $(pwd)/.git/hooks/"
     
     # Optionally set up git-secrets

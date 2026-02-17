@@ -9,7 +9,7 @@
       "url": "https://mcp.atlassian.com/v1/mcp"
     },
     "awslabs.aws-api-mcp-server": {
-      "command": "uvx",
+      "command": "/opt/homebrew/bin/uvx",
       "args": [
         "awslabs.aws-api-mcp-server@latest",
         "--readonly"
