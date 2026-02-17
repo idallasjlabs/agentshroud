@@ -97,8 +97,11 @@ async def test_ssh_submit_queues_approval(client):
 
 @pytest.mark.asyncio
 async def test_dashboard_returns_html(client):
-    """GET /dashboard with valid auth returns HTML."""
-    resp = await client.get("/dashboard?token=test-token-12345")
+    """GET /dashboard with valid cookie auth returns HTML."""
+    resp = await client.get(
+        "/dashboard",
+        cookies={"dashboard_token": "test-token-12345"},
+    )
     assert resp.status_code in (200, 201)
     assert "text/html" in resp.headers["content-type"]
     assert "SecureClaw" in resp.text
