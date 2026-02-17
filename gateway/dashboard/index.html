@@ -230,10 +230,10 @@ body{background:var(--bg);color:var(--text);font-family:-apple-system,BlinkMacSy
   }
 
   approvalListEl.addEventListener('click', function(evt) {
-    var btn = evt.target.closest('[data-id]');
+    const btn = evt.target.closest('[data-id]');
     if (!btn) return;
-    var id = btn.dataset.id;
-    var approved = btn.dataset.action === 'approve';
+    const id = btn.dataset.id;
+    const approved = btn.dataset.action === 'approve';
     fetch('/approve/' + encodeURIComponent(id) + '/decide', {
       method: 'POST',
       headers: {'Authorization':'Bearer ' + token, 'Content-Type':'application/json'},
