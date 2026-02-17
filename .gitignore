@@ -421,3 +421,4 @@ data/processed/
 # Core dumps
 core
 core.*
+.venv311/
