@@ -22,6 +22,7 @@ while [[ $# -gt 0 ]]; do
   case "$1" in
     --dry-run) DRY_RUN=true; shift ;;
     --clean)   CLEAN=true; shift ;;
+    -h|--help) echo "Usage: $0 [--dry-run] [--clean]"; exit 0 ;;
     *) echo "Unknown option: $1"; exit 1 ;;
   esac
 done
@@ -123,4 +124,4 @@ read -r -d '' SKILL_PM << 'END' || true
 END
 write_skill "pm" "$SKILL_PM"
 
-echo "✓ All skills deployed"
+if $DRY_RUN; then echo "Dry run complete — no files written."; else echo "✓ All skills deployed"; fi
