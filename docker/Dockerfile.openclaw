@@ -3,28 +3,26 @@
 # Base: Node.js 22 (required by OpenClaw)
 # Source: https://github.com/openclaw/openclaw
 
-FROM node:22-bookworm
+FROM node:22-bookworm-slim
+# TODO: Pin to digest for production: FROM node:22-bookworm-slim@sha256:<digest>
+# Update with: docker pull node:22-bookworm-slim && docker inspect --format='{{index .RepoDigests 0}}' node:22-bookworm-slim
 
 # Install system dependencies
-# - Bun (required for OpenClaw build scripts)
-# - SSH client (for bot to connect to remote systems)
-# - OpenSCAP (for compliance scanning)
-# - gosu (for dropping privileges in entrypoint)
-RUN curl -fsSL https://bun.sh/install | bash && \
-    apt-get update && \
+RUN apt-get update && \
     apt-get install -y --no-install-recommends \
         openssh-client \
         git \
         curl \
         ca-certificates \
+        unzip \
         libopenscap25 \
         openscap-scanner \
         gosu \
     && apt-get clean && \
     rm -rf /var/lib/apt/lists/* /var/cache/apt/archives/*
 
-# Add Bun to PATH
-ENV PATH="/root/.bun/bin:${PATH}"
+# Install bun via npm (avoids curl|bash supply chain risk)
+RUN npm install -g bun@latest
 
 # Enable pnpm (OpenClaw uses pnpm for package management)
 RUN corepack enable
@@ -33,24 +31,22 @@ RUN corepack enable
 WORKDIR /app
 
 # Install OpenClaw from npm registry
-# Using latest version, will run onboarding on first start
+# TODO: Pin to specific version for reproducible builds: openclaw@X.Y.Z
 RUN npm install -g openclaw@latest
 
 # Install Playwright for browser automation (browser-fetch skill)
-# Install as root so it's available system-wide
 RUN npm install -g playwright@latest && \
     npx playwright install --with-deps chromium
 
-# Install 1Password CLI for secure secret management
-RUN curl -L -o /tmp/op.zip "https://cache.agilebits.com/dist/1P/op2/pkg/v2.32.0/op_linux_arm64_v2.32.0.zip" && \
+# Install 1Password CLI for secure secret management (multi-arch)
+RUN ARCH=$(dpkg --print-architecture) && \
+    curl -L -o /tmp/op.zip "https://cache.agilebits.com/dist/1P/op2/pkg/v2.32.0/op_linux_${ARCH}_v2.32.0.zip" && \
     unzip -q /tmp/op.zip -d /tmp/ && \
     mv /tmp/op /usr/local/bin/op && \
     chmod +x /usr/local/bin/op && \
-    rm /tmp/op.zip /tmp/op.sig
+    rm -f /tmp/op.zip /tmp/op.sig
 
 # Create directories for OpenClaw configuration and workspace
-# ~/.openclaw - configuration, API keys, memory
-# ~/openclaw/workspace - bot's working files
 RUN mkdir -p /home/node/.openclaw && \
     mkdir -p /home/node/openclaw/workspace && \
     mkdir -p /home/node/.ssh && \
@@ -60,31 +56,19 @@ RUN mkdir -p /home/node/.openclaw && \
 RUN mkdir -p /usr/share/xml/scap/ssg/content
 COPY docker/scap-content/ssg-debian12-ds.xml /usr/share/xml/scap/ssg/content/
 
-# Copy startup script that exports API keys from secrets
+# Copy startup and utility scripts
 COPY docker/scripts/start-openclaw.sh /usr/local/bin/start-openclaw.sh
-RUN chmod +x /usr/local/bin/start-openclaw.sh
-
-# Copy 1Password CLI wrapper for authenticated commands
 COPY docker/scripts/op-wrapper.sh /usr/local/bin/op-wrapper.sh
-RUN chmod +x /usr/local/bin/op-wrapper.sh
-
-# Copy 1Password skill for bot to retrieve credentials
-COPY docker/scripts/1password-skill.sh /usr/local/bin/1password-skill
-RUN chmod +x /usr/local/bin/1password-skill
-
-# Copy simple credential getter
 COPY docker/scripts/get-credential.sh /usr/local/bin/get-credential
-RUN chmod +x /usr/local/bin/get-credential
-
-# Copy bot capabilities documentation
-COPY docker/bot-capabilities.md /app/bot-capabilities.md
-
-# Copy system instructions for security rules
-COPY docker/SYSTEM-INSTRUCTIONS-SECURITY.md /app/SYSTEM-INSTRUCTIONS-SECURITY.md
-
-# Copy entrypoint script that runs as root to setup browsers, then drops to node user
 COPY docker/scripts/entrypoint-openclaw.sh /usr/local/bin/entrypoint-openclaw.sh
-RUN chmod +x /usr/local/bin/entrypoint-openclaw.sh
+RUN chmod +x /usr/local/bin/start-openclaw.sh \
+    /usr/local/bin/op-wrapper.sh \
+    /usr/local/bin/get-credential \
+    /usr/local/bin/entrypoint-openclaw.sh
+
+# Copy documentation
+COPY docker/bot-capabilities.md /app/bot-capabilities.md
+COPY docker/SYSTEM-INSTRUCTIONS-SECURITY.md /app/SYSTEM-INSTRUCTIONS-SECURITY.md
 
 # OCI Image labels
 LABEL org.opencontainers.image.title="SecureClaw OpenClaw Bot"
@@ -95,18 +79,15 @@ LABEL org.opencontainers.image.source="https://github.com/idallasj/oneclaw"
 
 # Switch to non-root user (node user has UID 1000)
 USER node
-
-# Set home directory
 ENV HOME=/home/node
 WORKDIR /home/node
 
 # Expose OpenClaw gateway port
 EXPOSE 18789
 
-# Healthcheck - verify OpenClaw gateway is responding
+# Healthcheck
 HEALTHCHECK --interval=30s --timeout=10s --start-period=60s --retries=3 \
     CMD curl -f http://localhost:18789/api/health || exit 1
 
 # Start OpenClaw gateway via wrapper script
-# Script exports API keys from Docker secrets before starting OpenClaw
 CMD ["/usr/local/bin/start-openclaw.sh"]

@@ -1,7 +1,9 @@
 #!/bin/bash
 # Restart OpenClaw and/or Gateway
 
-cd /Users/ijefferson.admin/Development/oneclaw
+# Auto-detect project root
+PROJECT_ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")/../.." && pwd)"
+cd "$PROJECT_ROOT"
 
 SERVICE=${1:-all}
 

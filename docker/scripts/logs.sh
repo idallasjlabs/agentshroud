@@ -1,7 +1,9 @@
 #!/bin/bash
 # View OpenClaw and Gateway logs
 
-cd /Users/ijefferson.admin/Development/oneclaw
+# Auto-detect project root
+PROJECT_ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")/../.." && pwd)"
+cd "$PROJECT_ROOT"
 
 SERVICE=${1:-all}
 LINES=${2:-50}

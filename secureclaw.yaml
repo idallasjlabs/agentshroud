@@ -5,7 +5,7 @@
 security:
   # Network isolation settings
   network_isolation: true
-  allowed_networks:
+  allowed_networks:  # Required for LLM API access (OpenAI, Anthropic)
     - "0.0.0.0/0"  # Internet only
   blocked_networks:
     - "192.168.0.0/16"  # RFC1918 private networks
@@ -40,7 +40,7 @@ gateway:
   bind: "127.0.0.1"
   port: 8080
   auth_method: "shared_secret"
-  auth_token: ""  # Generated during setup
+  auth_token: ""  # REQUIRED: Generate with: python3 -c "import secrets; print(secrets.token_hex(32))"  # Generated during setup
 
   # Data ledger
   ledger_database: "sqlite:///data/ledger.db"
@@ -54,7 +54,7 @@ container:
   # Container runtime
   runtime: "podman"  # Options: podman, docker
   rootless: true
-  read_only_rootfs: false  # Disabled for OpenClaw compatibility
+  read_only_rootfs: true  # Read-only root filesystem (recommended)
 
   # Network configuration
   tailscale: true
@@ -70,7 +70,7 @@ container:
 openclaw:
   # OpenClaw-specific settings
   version: "main"
-  default_model: "openai/gpt-4"
+  default_model: "openai/gpt-4o"  # Updated from gpt-4
   gateway_bind: "loopback"
   gateway_port: 18789
   ui_port: 18790
@@ -78,8 +78,8 @@ openclaw:
 
 shortcuts:
   # iOS/macOS Shortcuts configuration
-  endpoint: ""  # Set to Tailscale URL during setup
-  auth_token: ""  # Shared secret for shortcuts
+  endpoint: ""  # REQUIRED: Set to Tailscale URL during setup
+  auth_token: ""  # REQUIRED: Generate with: python3 -c "import secrets; print(secrets.token_hex(32))"  # Shared secret for shortcuts
 
   # Feature toggles
   voice_capture: true
