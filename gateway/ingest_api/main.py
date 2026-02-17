@@ -628,12 +628,13 @@ async def serve_dashboard(request: Request, token: str | None = Query(None)):
     elif token and hmac.compare_digest(token, app_state.config.auth_token):
         # Valid token in query param - set cookie and redirect to clean URL
         redirect = RedirectResponse(url="/dashboard", status_code=302)
+        is_secure = request.url.scheme == "https" or request.headers.get("x-forwarded-proto") == "https"
         redirect.set_cookie(
             key="dashboard_token",
             value=token,
             httponly=True,
             samesite="strict",
-            secure=False,  # Gateway binds to localhost; set True if behind TLS
+            secure=is_secure,
             max_age=86400,  # 24 hours
         )
         return redirect
@@ -643,11 +644,6 @@ async def serve_dashboard(request: Request, token: str | None = Query(None)):
     dashboard_path = Path(__file__).parent.parent / "dashboard" / "index.html"
     if dashboard_path.exists():
         html = dashboard_path.read_text()
-        # Inject token for JS use (page is already authed, token needed for WS/API)
-        html = html.replace(
-            "const token = params.get('token') || '';",
-            f"const token = params.get('token') || '{app_state.config.auth_token}';",
-        )
         response = HTMLResponse(html)
         response.headers["Content-Security-Policy"] = (
             "default-src 'none'; script-src 'unsafe-inline'; "
@@ -677,6 +673,20 @@ async def dashboard_stats(auth: AuthRequired):
         "pending_approval_items": pending_items,
         **bus_stats,
     }
+
+
+@app.get("/dashboard/ws-token")
+async def dashboard_ws_token(request: Request):
+    """Return a WS auth token for cookie-authenticated dashboard sessions.
+
+    The dashboard JS calls this to get the token for WebSocket connections,
+    avoiding direct token injection into HTML (XSS mitigation).
+    """
+    import hmac
+    cookie_token = request.cookies.get("dashboard_token")
+    if not cookie_token or not hmac.compare_digest(cookie_token, app_state.config.auth_token):
+        return JSONResponse(status_code=403, content={"detail": "Forbidden"})
+    return JSONResponse(content={"token": app_state.config.auth_token})
 
 
 @app.websocket("/ws/activity")

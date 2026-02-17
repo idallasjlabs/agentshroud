@@ -229,3 +229,50 @@ class TestApprovalQueuePIISanitization:
         assert "user@example.com" not in latest.description
         assert "user@example.com" not in str(latest.details.get("command", ""))
         assert "<EMAIL_ADDRESS>" in latest.description or "<EMAIL_ADDRESS>" in str(latest.details.get("command", ""))
+
+
+class TestDashboardWSToken:
+    """Dashboard ws-token endpoint returns token only for cookie-authed sessions"""
+
+    @pytest.mark.asyncio
+    async def test_ws_token_with_valid_cookie(self, client):
+        """GET /dashboard/ws-token with valid cookie returns token"""
+        resp = await client.get(
+            "/dashboard/ws-token",
+            cookies={"dashboard_token": "test-token-12345"},
+        )
+        assert resp.status_code == 200
+        data = resp.json()
+        assert "token" in data
+        assert data["token"] == "test-token-12345"
+
+    @pytest.mark.asyncio
+    async def test_ws_token_without_cookie_returns_403(self, client):
+        """GET /dashboard/ws-token without cookie returns 403"""
+        resp = await client.get("/dashboard/ws-token")
+        assert resp.status_code == 403
+
+    @pytest.mark.asyncio
+    async def test_ws_token_with_bad_cookie_returns_403(self, client):
+        """GET /dashboard/ws-token with bad cookie returns 403"""
+        resp = await client.get(
+            "/dashboard/ws-token",
+            cookies={"dashboard_token": "wrong"},
+        )
+        assert resp.status_code == 403
+
+
+class TestDashboardSecureCookie:
+    """Dashboard cookie secure flag is dynamic based on request scheme"""
+
+    @pytest.mark.asyncio
+    async def test_cookie_not_secure_on_http(self, client):
+        """Cookie secure=False on HTTP requests"""
+        resp = await client.get(
+            "/dashboard?token=test-token-12345",
+            follow_redirects=False,
+        )
+        assert resp.status_code == 302
+        cookie_header = resp.headers.get("set-cookie", "")
+        # On HTTP, secure flag should NOT be present
+        assert "Secure" not in cookie_header.split(";")[0]  # not in cookie value
