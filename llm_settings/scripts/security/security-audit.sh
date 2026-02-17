@@ -1,5 +1,4 @@
 #!/bin/bash
-# NOTE: This script is designed for macOS. Linux support is planned.
 # security-audit.sh
 # Initial security audit and setup for a repository
 
