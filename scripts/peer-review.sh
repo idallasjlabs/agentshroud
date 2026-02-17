@@ -62,7 +62,7 @@ GEMINI_FILE="$REVIEWS_DIR/gemini-review-$TIMESTAMP.md"
   echo ""
   echo "---"
   echo ""
-  echo "$DIFF" | python3 scripts/gemini-review.py 2>/dev/null || echo "ERROR: Gemini review failed"
+  echo "$DIFF" | ~/miniforge3/envs/oneclaw/bin/python scripts/gemini-review.py 2>/dev/null || echo "ERROR: Gemini review failed"
 } > "$GEMINI_FILE"
 echo "   ✅ Saved: $GEMINI_FILE"
 
