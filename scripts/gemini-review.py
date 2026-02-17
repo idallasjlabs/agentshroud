@@ -36,10 +36,14 @@ Severities: CRITICAL (blocks merge), HIGH (fix before merge), MEDIUM (fix soon),
 If the code looks good, say so. Be constructive."""
 
 
-def call_gemini(diff_text: str) -> str:
-    """Call Gemini API and return the review text."""
+def call_gemini(diff_text: str) -> tuple[str, int]:
+    """Call Gemini API and return the review text and exit code.
+
+    Returns:
+        tuple: (review_text, exit_code) where exit_code is 0 for success, 1 for error
+    """
     if not API_KEY:
-        return "ERROR: GEMINI_API_KEY not set in environment"
+        return ("ERROR: GEMINI_API_KEY not set in environment", 1)
 
     prompt = f"Review this code diff:\n\n```diff\n{diff_text}\n```"
 
@@ -63,13 +67,13 @@ def call_gemini(diff_text: str) -> str:
             candidates = data.get("candidates", [])
             if candidates:
                 parts = candidates[0].get("content", {}).get("parts", [])
-                return "".join(p.get("text", "") for p in parts)
-            return "ERROR: No response from Gemini API"
+                return ("".join(p.get("text", "") for p in parts), 0)
+            return ("ERROR: No response from Gemini API", 1)
     except HTTPError as e:
         body = e.read().decode("utf-8", errors="replace")
-        return f"ERROR: Gemini API returned {e.code}: {body[:500]}"
+        return (f"ERROR: Gemini API returned {e.code}: {body[:500]}", 1)
     except Exception as e:
-        return f"ERROR: Gemini API call failed: {e}"
+        return (f"ERROR: Gemini API call failed: {e}", 1)
 
 
 def main():
@@ -96,8 +100,9 @@ def main():
         diff_text = diff_text[:max_chars] + "\n\n[TRUNCATED — diff exceeded 120K chars]"
         print(f"Warning: diff truncated to {max_chars} chars", file=sys.stderr)
 
-    result = call_gemini(diff_text)
+    result, exit_code = call_gemini(diff_text)
     print(result)
+    sys.exit(exit_code)
 
 
 if __name__ == "__main__":

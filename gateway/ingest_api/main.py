@@ -144,13 +144,13 @@ app = FastAPI(
 )
 
 # CORS middleware for web chat UI
-# NOTE: Origins are configurable via GatewayConfig.cors_origins
-# Default middleware added here; actual config loaded in lifespan
-# For now using defaults - proper solution requires middleware reconfiguration
+# Using default origins from GatewayConfig - actual config loaded in lifespan
+# Note: FastAPI middleware is added at app construction time, before config is loaded
+# So we use the config class defaults here, which can be overridden in secureclaw.yaml
+default_config = GatewayConfig()
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:8080", "http://127.0.0.1:8080",
-                   "http://localhost:18790", "http://127.0.0.1:18790"],
+    allow_origins=default_config.cors_origins,
     allow_credentials=True,
     allow_methods=["GET", "POST", "OPTIONS"],
     allow_headers=["Content-Type", "Authorization"],
