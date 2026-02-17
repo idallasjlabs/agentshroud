@@ -232,20 +232,9 @@ def load_config(config_path: Path | None = None) -> GatewayConfig:
         )
 
     # Build final config
-    # Map SSH configuration
+    # Map SSH configuration — use Pydantic model parsing directly
     ssh_section = raw_config.get("ssh", {})
-    ssh_config = None
-    if ssh_section:
-        from .ssh_config import SSHConfig, SSHHostConfig
-        hosts = {}
-        for name, hcfg in ssh_section.get("hosts", {}).items():
-            hosts[name] = SSHHostConfig(**hcfg)
-        ssh_config = SSHConfig(
-            enabled=ssh_section.get("enabled", False),
-            hosts=hosts,
-            global_denied_commands=ssh_section.get("global_denied_commands", []),
-            require_approval=ssh_section.get("require_approval", True),
-        )
+    ssh_config = SSHConfig(**ssh_section) if ssh_section else SSHConfig()
 
     config = GatewayConfig(
         bind=gateway.get("bind", "127.0.0.1"),
