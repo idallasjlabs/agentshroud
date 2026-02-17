@@ -246,7 +246,7 @@ def load_config(config_path: Path | None = None) -> GatewayConfig:
         pii=pii_config,
         approval_queue=approval_config,
         log_level=raw_config.get("logging", {}).get("level", "INFO"),
-        ssh=ssh_config or SSHConfig(),
+        ssh=ssh_config,
     )
 
     logger.info(
