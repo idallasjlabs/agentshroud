@@ -111,9 +111,8 @@ body{background:var(--bg);color:var(--text);font-family:-apple-system,BlinkMacSy
   let feedEmpty = true;
 
   function connect() {
-    ws = new WebSocket(wsProto + '//' + location.host + '/ws/activity');
+    ws = new WebSocket(wsProto + '//' + location.host + '/ws/activity?token=' + encodeURIComponent(token));
     ws.onopen = function() {
-      ws.send(JSON.stringify({token: token}));
     };
     ws.onmessage = function(e) {
       const msg = JSON.parse(e.data);

@@ -109,7 +109,7 @@ class SSHProxy:
         # Build SSH command with strict host key checking
         ssh_args = [
             "ssh",
-            "-o", f"StrictHostKeyChecking=accept-new",
+            "-o", "StrictHostKeyChecking=yes",
             "-o", "BatchMode=yes",
         ]
         if host.known_hosts_file:

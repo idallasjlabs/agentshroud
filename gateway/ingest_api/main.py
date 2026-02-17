@@ -530,32 +530,27 @@ async def list_pending_approvals(auth: AuthRequired):
 
 
 @app.websocket("/ws/approvals")
-async def approval_websocket(websocket: WebSocket):
+async def approval_websocket(websocket: WebSocket, token: str | None = Query(None)):
     """WebSocket endpoint for real-time approval notifications
 
     Protocol:
-    1. Client connects
-    2. Client sends auth token as first message: {"token": "<token>"}
-    3. Server validates token
-    4. Server pushes new approval requests and decisions
-    5. Client can send decisions: {"type": "decide", "request_id": "...", "approved": true}
+    1. Client connects with token as query param: /ws/approvals?token=<token>
+    2. Server validates token during handshake - rejects before accepting
+    3. Server pushes new approval requests and decisions
+    4. Client can send decisions: {"type": "decide", "request_id": "...", "approved": true}
     """
+    import hmac
+    if not token or not hmac.compare_digest(token, app_state.config.auth_token):
+        await websocket.close(code=4003, reason="Authentication failed")
+        await app_state.event_bus.emit(make_event(
+            "auth_failed", "WebSocket authentication failed",
+            {}, "warning"
+        ))
+        return
+
     await app_state.approval_queue.connect(websocket)
 
     try:
-        # Wait for auth token
-        auth_msg = await websocket.receive_json()
-        token = auth_msg.get("token")
-
-        if not token or token != app_state.config.auth_token:
-            await websocket.send_json({"type": "error", "message": "Authentication failed"})
-            await app_state.event_bus.emit(make_event(
-                "auth_failed", "WebSocket authentication failed",
-                {}, "warning"
-            ))
-            await websocket.close()
-            return
-
         await websocket.send_json({"type": "authenticated"})
 
         # Keep connection open and handle messages
@@ -615,13 +610,45 @@ if __name__ == "__main__":
 
 
 @app.get("/dashboard")
-async def serve_dashboard(token: str | None = Query(None)):
-    """Serve the dashboard HTML (requires auth via query param)"""
-    if not token or token != app_state.config.auth_token:
+async def serve_dashboard(request: Request, token: str | None = Query(None)):
+    """Serve the dashboard HTML (requires auth via query param or cookie)
+
+    On first auth via query param, sets an httpOnly cookie and redirects
+    to a clean URL (token removed from query string / browser history).
+    """
+    import hmac
+    from starlette.responses import RedirectResponse
+
+    # Check cookie first
+    cookie_token = request.cookies.get("dashboard_token")
+    authenticated = False
+
+    if cookie_token and hmac.compare_digest(cookie_token, app_state.config.auth_token):
+        authenticated = True
+    elif token and hmac.compare_digest(token, app_state.config.auth_token):
+        # Valid token in query param - set cookie and redirect to clean URL
+        redirect = RedirectResponse(url="/dashboard", status_code=302)
+        redirect.set_cookie(
+            key="dashboard_token",
+            value=token,
+            httponly=True,
+            samesite="strict",
+            secure=False,  # Gateway binds to localhost; set True if behind TLS
+            max_age=86400,  # 24 hours
+        )
+        return redirect
+
+    if not authenticated:
         return JSONResponse(status_code=403, content={"detail": "Forbidden"})
     dashboard_path = Path(__file__).parent.parent / "dashboard" / "index.html"
     if dashboard_path.exists():
-        response = HTMLResponse(dashboard_path.read_text())
+        html = dashboard_path.read_text()
+        # Inject token for JS use (page is already authed, token needed for WS/API)
+        html = html.replace(
+            "const token = params.get('token') || '';",
+            f"const token = params.get('token') || '{app_state.config.auth_token}';",
+        )
+        response = HTMLResponse(html)
         response.headers["Content-Security-Policy"] = (
             "default-src 'none'; script-src 'unsafe-inline'; "
             "style-src 'unsafe-inline'; connect-src 'self'; "
@@ -653,18 +680,20 @@ async def dashboard_stats(auth: AuthRequired):
 
 
 @app.websocket("/ws/activity")
-async def activity_websocket(websocket: WebSocket):
+async def activity_websocket(websocket: WebSocket, token: str | None = Query(None)):
     """WebSocket for real-time activity feed"""
+    import hmac
+    if not token or not hmac.compare_digest(token, app_state.config.auth_token):
+        await websocket.close(code=4003, reason="Authentication failed")
+        await app_state.event_bus.emit(make_event(
+            "auth_failed", "Activity WebSocket authentication failed",
+            {}, "warning"
+        ))
+        return
+
     await websocket.accept()
 
     try:
-        auth_msg = await websocket.receive_json()
-        token = auth_msg.get("token")
-        if not token or token != app_state.config.auth_token:
-            await websocket.send_json({"type": "error", "message": "Authentication failed"})
-            await websocket.close()
-            return
-
         await websocket.send_json({"type": "authenticated"})
 
         # Subscribe to events
@@ -785,11 +814,17 @@ async def ssh_exec(request: SSHExecRequest, auth: AuthRequired):
         return await _execute_and_record("policy")
 
     # Requires approval — submit to queue and return 202
+    # Sanitize command/reason before storing in approval queue (PII leak prevention)
     from .models import ApprovalRequest
+    sanitized_cmd = await app_state.sanitizer.sanitize(request.command)
+    sanitized_reason = ""
+    if request.reason:
+        sanitized_reason_result = await app_state.sanitizer.sanitize(request.reason)
+        sanitized_reason = sanitized_reason_result.sanitized_content
     approval_req = ApprovalRequest(
         action_type="ssh_exec",
-        description=f"SSH command on {request.host}: {request.command}",
-        details={"host": request.host, "command": request.command, "timeout": request.timeout, "reason": request.reason},
+        description=f"SSH command on {request.host}: {sanitized_cmd.sanitized_content}",
+        details={"host": request.host, "command": sanitized_cmd.sanitized_content, "timeout": request.timeout, "reason": sanitized_reason},
         agent_id="ssh-proxy",
     )
     item = await app_state.approval_queue.submit(approval_req)

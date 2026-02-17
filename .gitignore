@@ -393,3 +393,4 @@ data/processed/
 core
 core.*
 .venv311/
+.zshrc
