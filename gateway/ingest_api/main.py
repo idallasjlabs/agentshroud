@@ -114,6 +114,14 @@ async def lifespan(app: FastAPI):
         logger.critical(f"Failed to initialize approval queue: {e}")
         raise
 
+    # Initialize SSH proxy
+    from ..ssh_proxy.proxy import SSHProxy
+    if app_state.config.ssh.enabled:
+        app_state.ssh_proxy = SSHProxy(app_state.config.ssh)
+        logger.info('SSH proxy initialized')
+    else:
+        app_state.ssh_proxy = None
+
     # Record start time
     app_state.start_time = time.time()
 
@@ -569,3 +577,123 @@ if __name__ == "__main__":
     import uvicorn
 
     uvicorn.run(app, host="127.0.0.1", port=8080)
+
+
+# === SSH Endpoints ===
+
+from .models import SSHExecRequest, SSHExecResponse
+from ..ssh_proxy.proxy import SSHProxy
+import hashlib
+from datetime import datetime, timezone
+
+
+@app.post("/ssh/exec")
+async def ssh_exec(request: SSHExecRequest, auth: AuthRequired):
+    """Execute SSH command with validation and approval"""
+    if app_state.ssh_proxy is None:
+        raise HTTPException(status_code=503, detail="SSH proxy not configured")
+
+    proxy: SSHProxy = app_state.ssh_proxy
+
+    # Check host exists
+    if request.host not in proxy.config.hosts:
+        raise HTTPException(status_code=404, detail=f"Unknown SSH host: {request.host}")
+
+    # Validate command
+    valid, denial_reason = proxy.validate_command(request.host, request.command)
+    if not valid:
+        # Audit denied command — sanitize PII before storing
+        sanitized = await app_state.sanitizer.sanitize(request.command)
+        content_hash = hashlib.sha256(f"{request.command}:{request.host}".encode()).hexdigest()
+        await app_state.ledger.record(
+            source="ssh",
+            content=f"DENIED: {sanitized.sanitized_content}",
+            original_content=content_hash,
+            sanitized=len(sanitized.redactions) > 0,
+            redaction_count=len(sanitized.redactions),
+            redaction_types=[r.entity_type for r in sanitized.redactions],
+            forwarded_to=request.host,
+            content_type="ssh_command",
+            metadata={"host": request.host, "denied_reason": denial_reason, "reason": request.reason},
+        )
+        raise HTTPException(status_code=403, detail=denial_reason)
+
+    async def _execute_and_record(approved_by: str) -> SSHExecResponse:
+        """Execute command and record to ledger with PII sanitization."""
+        result = await proxy.execute(request.host, request.command, request.timeout)
+        # Sanitize command for ledger storage
+        sanitized = await app_state.sanitizer.sanitize(request.command)
+        content_hash = hashlib.sha256(f"{request.command}:{request.host}".encode()).hexdigest()
+        entry = await app_state.ledger.record(
+            source="ssh",
+            content=sanitized.sanitized_content,
+            original_content=content_hash,
+            sanitized=len(sanitized.redactions) > 0,
+            redaction_count=len(sanitized.redactions),
+            redaction_types=[r.entity_type for r in sanitized.redactions],
+            forwarded_to=request.host,
+            content_type="ssh_command",
+            metadata={
+                "host": request.host,
+                "exit_code": result.exit_code,
+                "duration": result.duration_seconds,
+                "approved_by": approved_by,
+                "reason": request.reason,
+            },
+        )
+        now = datetime.now(timezone.utc).isoformat().replace("+00:00", "Z")
+        return SSHExecResponse(
+            request_id=entry.id,
+            host=request.host,
+            command=request.command,
+            stdout=result.stdout,
+            stderr=result.stderr,
+            exit_code=result.exit_code,
+            duration_seconds=result.duration_seconds,
+            approved_by=approved_by,
+            timestamp=now,
+            audit_id=entry.id,
+        )
+
+    # Check auto-approval
+    if proxy.is_auto_approved(request.host, request.command):
+        return await _execute_and_record("auto")
+
+    # If require_approval is false, execute directly (still validated above)
+    if not proxy.config.require_approval:
+        return await _execute_and_record("policy")
+
+    # Requires approval — submit to queue and return 202
+    from .models import ApprovalRequest
+    approval_req = ApprovalRequest(
+        action_type="ssh_exec",
+        description=f"SSH command on {request.host}: {request.command}",
+        details={"host": request.host, "command": request.command, "timeout": request.timeout, "reason": request.reason},
+        agent_id="ssh-proxy",
+    )
+    item = await app_state.approval_queue.submit(approval_req)
+    return JSONResponse(
+        status_code=202,
+        content={"request_id": item.request_id, "status": "pending_approval",
+                 "message": f"Command requires approval: {request.command}"},
+    )
+
+
+@app.get("/ssh/hosts")
+async def ssh_hosts(auth: AuthRequired):
+    """List configured SSH hosts (names only)"""
+    if app_state.ssh_proxy is None:
+        return {"hosts": []}
+    return {"hosts": list(app_state.ssh_proxy.config.hosts.keys())}
+
+
+@app.get("/ssh/history")
+async def ssh_history(
+    auth: AuthRequired,
+    page: int = Query(1, ge=1),
+    page_size: int = Query(50, ge=1, le=200),
+):
+    """Query SSH audit entries from ledger"""
+    return await app_state.ledger.query(
+        page=page, page_size=page_size, source="ssh",
+    )

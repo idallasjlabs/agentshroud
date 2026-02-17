@@ -10,6 +10,9 @@
 llm_settings/env/.llm_env
 llm_settings/mcp-servers/**/.env
 
+# Gitleaks security reports
+**/*gitleaks-report*.json
+
 # Keys & Certificates
 *.pem
 *.key
