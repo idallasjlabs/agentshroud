@@ -33,8 +33,6 @@ from .models import (
 )
 from .router import ForwardError, MultiAgentRouter
 from .sanitizer import PIISanitizer
-from fastapi.middleware.cors import CORSMiddleware
-
 # Configure logging
 logging.basicConfig(
     level=logging.INFO,
@@ -81,6 +79,7 @@ async def lifespan(app: FastAPI):
 
     # Set log level from config
     logging.getLogger().setLevel(app_state.config.log_level)
+    logger.info(f"CORS configured with origins: {app_state.config.cors_origins}")
 
     # Initialize PII sanitizer
     try:
@@ -143,18 +142,40 @@ app = FastAPI(
     lifespan=lifespan,
 )
 
-# CORS middleware for web chat UI
-# Using default origins from GatewayConfig - actual config loaded in lifespan
-# Note: FastAPI middleware is added at app construction time, before config is loaded
-# So we use the config class defaults here, which can be overridden in secureclaw.yaml
-default_config = GatewayConfig()
-app.add_middleware(
-    CORSMiddleware,
-    allow_origins=default_config.cors_origins,
-    allow_credentials=True,
-    allow_methods=["GET", "POST", "OPTIONS"],
-    allow_headers=["Content-Type", "Authorization"],
-)
+
+# === CORS Middleware ===
+# Custom CORS middleware that reads from app_state.config at runtime
+# This allows secureclaw.yaml overrides to take effect
+
+
+@app.middleware("http")
+async def cors_middleware(request: Request, call_next):
+    """CORS middleware that uses config from app_state"""
+    # Handle preflight requests
+    if request.method == "OPTIONS":
+        origin = request.headers.get("origin")
+        if hasattr(app_state, "config") and origin in app_state.config.cors_origins:
+            return JSONResponse(
+                content={},
+                headers={
+                    "Access-Control-Allow-Origin": origin,
+                    "Access-Control-Allow-Credentials": "true",
+                    "Access-Control-Allow-Methods": "GET, POST, OPTIONS",
+                    "Access-Control-Allow-Headers": "Content-Type, Authorization",
+                },
+            )
+        return JSONResponse(content={}, status_code=403)
+
+    # Process request
+    response = await call_next(request)
+
+    # Add CORS headers to response
+    origin = request.headers.get("origin")
+    if hasattr(app_state, "config") and origin in app_state.config.cors_origins:
+        response.headers["Access-Control-Allow-Origin"] = origin
+        response.headers["Access-Control-Allow-Credentials"] = "true"
+
+    return response
 
 
 # === Request Logging Middleware ===
