@@ -11,6 +11,7 @@ from urllib.parse import urlparse
 
 import yaml
 from pydantic import BaseModel, Field, field_validator
+from .ssh_config import SSHConfig
 from pydantic_settings import BaseSettings
 
 logger = logging.getLogger("secureclaw.gateway.config")
@@ -103,6 +104,7 @@ class GatewayConfig(BaseModel):
     pii: PIIConfig = Field(default_factory=PIIConfig)
     approval_queue: ApprovalQueueConfig = Field(default_factory=ApprovalQueueConfig)
     log_level: str = "INFO"
+    ssh: SSHConfig = Field(default_factory=SSHConfig)
 
 
 def _entity_type_mapping(yaml_type: str) -> str:
@@ -230,6 +232,21 @@ def load_config(config_path: Path | None = None) -> GatewayConfig:
         )
 
     # Build final config
+    # Map SSH configuration
+    ssh_section = raw_config.get("ssh", {})
+    ssh_config = None
+    if ssh_section:
+        from .ssh_config import SSHConfig, SSHHostConfig
+        hosts = {}
+        for name, hcfg in ssh_section.get("hosts", {}).items():
+            hosts[name] = SSHHostConfig(**hcfg)
+        ssh_config = SSHConfig(
+            enabled=ssh_section.get("enabled", False),
+            hosts=hosts,
+            global_denied_commands=ssh_section.get("global_denied_commands", []),
+            require_approval=ssh_section.get("require_approval", True),
+        )
+
     config = GatewayConfig(
         bind=gateway.get("bind", "127.0.0.1"),
         port=gateway.get("port", 8080),
@@ -240,6 +257,7 @@ def load_config(config_path: Path | None = None) -> GatewayConfig:
         pii=pii_config,
         approval_queue=approval_config,
         log_level=raw_config.get("logging", {}).get("level", "INFO"),
+        ssh=ssh_config or SSHConfig(),
     )
 
     logger.info(
