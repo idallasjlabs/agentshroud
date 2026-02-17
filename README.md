@@ -1,7 +1,7 @@
 # SecureClaw: A User-Controlled Proxy Layer for OpenClaw
 
-**Version:** 0.1.0
-**Status:** Phase 3 Complete — Production-Ready Security Foundation
+**Version:** 0.2.0
+**Status:** Phase 5 Complete — SSH Proxy + Live Dashboard
 **Bot:** @therealidallasj_bot (Telegram)
 
 > "One Claw Tied Behind Your Back" — You decide what the agent sees, not the agent.
@@ -16,20 +16,20 @@
 
 ---
 
-## Current Status: v0.1.0
+## Current Status: v0.2.0
 
 | Phase | Status | Description |
 |-------|--------|-------------|
 | **Phase 1: Foundation** | ✅ Complete | OpenClaw container, Telegram integration, Control UI |
 | **Phase 2: Gateway Layer** | ✅ Complete | PII sanitization (89% coverage), audit ledger, approval queue |
 | **Phase 3A/3B: Security** | ✅ Complete | Seccomp, secrets management, kill switch, verification tools |
-| **Phase 4: SSH Capability** | 🔨 In Progress | Remote execution, approval integration, audit trail |
-| Phase 5: Dashboard | 📅 Planned | Real-time activity feed, security alerting, React UI |
+| **Phase 4: SSH Capability** | ✅ Complete | SSH proxy, approval integration, command audit trail |
+| **Phase 5: Dashboard** | ✅ Complete | Real-time activity feed, WebSocket events, live dashboard |
 | Phase 6: Tailscale + Docs | 📅 Planned | Remote access, IEC 62443 compliance, policies |
 | Phase 7: Hardening Skills | 📅 Planned | PromptGuard, egress filtering, drift detection |
 | Phase 8: Polish & Publish | 📅 Planned | Documentation, examples, release |
 
-**Latest Achievement:** Complete security hardening with automated verification (13 checks), OpenSCAP compliance scanning, and 3-mode kill switch.
+**Latest Achievement:** SSH proxy with approval workflow, live dashboard with real-time WebSocket activity feed, and SQLite-backed approval queue persistence.
 
 ---
 
@@ -198,6 +198,35 @@ docker exec -u node openclaw-bot bash -c 'source ~/.ssh/scripts/op-auth.sh && op
 # Get credential
 docker exec -u node openclaw-bot bash -c 'source ~/.ssh/scripts/op-auth.sh && op item get "Anthropic API Key" --fields password'
 ```
+
+---
+
+## Deploy on macOS
+
+1. **Prerequisites**: Docker Desktop, Git
+2. **Clone**: `git clone https://github.com/idallasj/oneclaw.git && cd oneclaw`
+3. **Create secrets**:
+   ```bash
+   mkdir -p docker/secrets
+   echo "your-openai-key" > docker/secrets/openai_api_key.txt
+   echo "your-anthropic-key" > docker/secrets/anthropic_api_key.txt
+   python3 -c "import secrets; print(secrets.token_hex(32))" > docker/secrets/gateway_password.txt
+   # 1Password secrets (optional):
+   echo "email" > docker/secrets/1password_bot_email.txt
+   echo "password" > docker/secrets/1password_bot_master_password.txt
+   echo "secret-key" > docker/secrets/1password_bot_secret_key.txt
+   ```
+4. **Configure**: Edit `secureclaw.yaml` — set `gateway.auth_token`
+5. **Build & run**:
+   ```bash
+   cd docker
+   docker compose build
+   docker compose up -d
+   ```
+6. **Access**:
+   - Gateway API: http://localhost:8080/status
+   - Dashboard: http://localhost:8080/dashboard?token=YOUR_AUTH_TOKEN
+   - OpenClaw UI: http://localhost:18790
 
 ---
 
@@ -464,21 +493,13 @@ pytest --cov=ingest_api tests/
 
 ## Roadmap
 
-### ✅ v0.1.0 - Phases 1-3 Complete
-See [Current Status](#current-status-v010) table above for completed phases:
+### ✅ v0.2.0 - Phases 1-5 Complete
+See [Current Status](#current-status-v020) table above for completed phases:
 - Phase 1: Foundation
 - Phase 2: Gateway Layer
 - Phase 3A/3B: Security Hardening
-
-### v0.2.0 (Phase 4)
-- [ ] SSH proxy module with approval integration
-- [ ] Command allowlist and audit trail
-- [ ] Session timeout and limits
-
-### v0.3.0 (Phase 5)
-- [ ] Live action dashboard (React)
-- [ ] Real-time activity feed (WebSocket)
-- [ ] Security alerting
+- Phase 4: SSH Proxy + Approval Integration
+- Phase 5: Live Dashboard + WebSocket Events
 
 ### v0.4.0 (Phase 6)
 - [ ] Tailscale serve script
@@ -511,7 +532,36 @@ See [Current Status](#current-status-v010) table above for completed phases:
 
 ## Support
 
-### Documentation
+### Deploy on macOS
+
+1. **Prerequisites**: Docker Desktop, Git
+2. **Clone**: `git clone https://github.com/idallasj/oneclaw.git && cd oneclaw`
+3. **Create secrets**:
+   ```bash
+   mkdir -p docker/secrets
+   echo "your-openai-key" > docker/secrets/openai_api_key.txt
+   echo "your-anthropic-key" > docker/secrets/anthropic_api_key.txt
+   python3 -c "import secrets; print(secrets.token_hex(32))" > docker/secrets/gateway_password.txt
+   # 1Password secrets (optional):
+   echo "email" > docker/secrets/1password_bot_email.txt
+   echo "password" > docker/secrets/1password_bot_master_password.txt
+   echo "secret-key" > docker/secrets/1password_bot_secret_key.txt
+   ```
+4. **Configure**: Edit `secureclaw.yaml` — set `gateway.auth_token`
+5. **Build & run**:
+   ```bash
+   cd docker
+   docker compose build
+   docker compose up -d
+   ```
+6. **Access**:
+   - Gateway API: http://localhost:8080/status
+   - Dashboard: http://localhost:8080/dashboard?token=YOUR_AUTH_TOKEN
+   - OpenClaw UI: http://localhost:18790
+
+---
+
+## Documentation
 - **Index**: [docs/README.md](docs/README.md)
 - **Setup**: [docs/setup/](docs/setup/)
 - **Security**: [docs/security/](docs/security/)
@@ -528,5 +578,5 @@ See [Current Status](#current-status-v010) table above for completed phases:
 
 **Built with**: FastAPI, Docker, OpenClaw, Claude Opus 4.6
 **Security**: Defense in depth, zero trust architecture
-**Status**: v0.1.0 — Production-ready security foundation
-**Next**: Phase 4 — SSH capability and approval workflow
+**Status**: v0.2.0 — SSH proxy + live dashboard
+**Next**: Phase 6 — Tailscale integration and documentation
