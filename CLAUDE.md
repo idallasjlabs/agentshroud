@@ -1,152 +1,331 @@
-# CLAUDE.md — SecureClaw Repository Constitution
+# CLAUDE.md
+#
+# Guidance for Claude Code (claude.ai/code) when working in this repository.
+# These instructions are authoritative. Follow them strictly.
+# Keep actions deterministic, minimal, and aligned with how this repo is actually run.
 
-> **"One Claw Tied Behind Your Back"** — You decide what the agent sees, not the agent.
+──────────────────────────────────────────────────────────────────────────────
+## 0) PRIME DIRECTIVE (NON-NEGOTIABLE)
+──────────────────────────────────────────────────────────────────────────────
 
----
+- **Do NOT create new files** unless absolutely required to satisfy the request.
+- **Prefer modifying existing files** over adding new ones.
+- **Never create documentation files** (`*.md`, README, design docs) unless the
+  **user explicitly asks** for documentation.
+- If a new file is genuinely required:
+  - Explain **why**
+  - Propose the **minimum viable file**
+  - Wait for confirmation before creating it
+- Never broaden scope beyond the explicit request.
+- Never perform opportunistic refactors.
 
-## Prime Directive
+If instructions conflict, follow this file over all other guidance.
 
-You are working on **SecureClaw**, an open-source security proxy layer for OpenClaw.
-The codebase lives on a **Raspberry Pi 4 (8GB, Debian 11, ARM64)** accessed via Tailscale SSH.
+──────────────────────────────────────────────────────────────────────────────
+## 0.1) MULTI-AGENT HIERARCHY (CLAUDE CODE IS PRIMARY)
+──────────────────────────────────────────────────────────────────────────────
 
-**Rules:**
-1. **TDD always.** Red → Green → Refactor. No exceptions.
-2. **No new files unless explicitly requested.** Don't create docs, configs, or helpers speculatively.
-3. **No opportunistic refactors.** Fix what you're asked to fix. Nothing more.
-4. **Security first.** This is a security product. Every change gets security review.
-5. **Tests must be fast and isolated.** No real network, no real DB, no sleeps.
+**YOU (Claude Code) are the PRIMARY developer in this repository.**
 
----
+This repository uses a multi-agent development approach with clear role separation:
 
-## Project Overview
+### PRIMARY Developer: Claude Code (You)
+**Responsibilities:**
+- Architectural decisions
+- Feature implementation
+- Schema and API design
+- Complex refactors
+- Documentation strategy
+- Code ownership
 
-- **Gateway** (`gateway/`): FastAPI proxy — PII sanitizer, audit ledger, approval queue, multi-agent router
-- **Chatbot** (`chatbot/`): Telegram bot interface
-- **Docker** (`docker/`): Hardened containers (seccomp, cap_drop ALL, read-only FS, secrets)
-- **Skills** (`.claude/skills/`): TDD, QA, CR, PR, Git Guard, CI/CD, etc.
-- **Agents** (`.claude/agents/`): Dev team roles
+**Configuration:** `.claude/` directory
+- Advanced agents, skills, and hooks enabled
+- Full development permissions
+- Plan mode for safety
 
-## Environment
+### SECONDARY/TERTIARY Developers: Gemini CLI & ChatGPT Codex
+**Responsibilities:**
+- Test augmentation (add missing tests, edge cases)
+- Validation runs (execute commands, report results)
+- Safe refactors ONLY (after tests pass, local changes only)
 
-| Item | Value |
-|------|-------|
-| Host | Raspberry Pi 4 Model B (8GB) |
-| OS | Debian 11 (Bullseye) aarch64 |
-| Python | 3.11 via miniforge3 (`~/miniforge3/envs/oneclaw`) |
-| Node | v22 |
-| Docker | 29.x |
-| Network | Tailscale only |
-| SSH | `secureclaw-bot@raspberrypi.tail240ea8.ts.net` |
-| Repo | `~/Development/oneclaw` |
+**What they CANNOT do:**
+- Make architectural decisions (defer to you)
+- Implement new features (your job)
+- Perform large refactors (your job)
+- Create documentation (unless explicitly requested)
 
-### Running Tests
+**Configuration:**
+- Gemini CLI: `.gemini/` directory with `settings.json` (MCP servers) and `GEMINI.md` (context)
+- ChatGPT Codex: `.codex/` directory with `config.toml` (MCP servers, feature flags) and `AGENTS.md` (context)
+- Neither has agents, skills, or hooks (Claude Code exclusive features)
+- Both enforce secondary/tertiary agent role via their context files
+
+### When to Use Each Agent
+
+**Use Claude Code (you) for:**
+- New features
+- Bug fixes
+- Refactoring
+- Architecture changes
+- Documentation
+- PRs and commits
+
+**Use Gemini/Codex for:**
+- Adding test coverage after Claude implements changes
+- Running validation scripts
+- Small, safe refactors (variable naming, helper extraction)
+- Test result reporting
+
+**Never delegate primary development to Gemini or Codex.**
+
+──────────────────────────────────────────────────────────────────────────────
+## 1) PROJECT OVERVIEW (SCOPE AWARENESS)
+──────────────────────────────────────────────────────────────────────────────
+
+This repository implements a **Data Lakehouse platform** for extracting,
+processing, validating, and serving operational data from distributed
+energy storage systems.
+
+### Primary Focus
+
+**Data Lakehouse Pipelines**
+- Extract data from multiple Central DAS (Data Acquisition System) instances
+- Normalize, validate, and partition data
+- Persist data in an S3-based lakehouse (Parquet + Athena)
+- Emphasis on:
+  - Schema stability
+  - Partition correctness
+  - Deterministic transformations
+  - Backward compatibility
+
+### Supporting / Optional Integrations (ONLY when explicitly requested)
+
+**CTA API Integration**
+- Interactive extraction from Fluence Central Terminal Application (CTA) REST APIs
+- Used for real-time monitoring or device resource queries
+- Not a primary workflow; treat as auxiliary
+
+Do not assume CTA work unless explicitly requested.
+
+──────────────────────────────────────────────────────────────────────────────
+## 2) HOW TO WORK IN THIS REPO (SDLC EXPECTATIONS)
+──────────────────────────────────────────────────────────────────────────────
+
+### Definition of Done (DoD)
+
+A change is considered **done** only when:
+
+- The change is **strictly scoped** to the request
+- Existing behavior is preserved unless explicitly changed
+- The impacted workflow runs successfully
+- You provide **evidence of validation**, in this priority order:
+
+  1. **Unit tests** (required for code behavior changes)
+  2. **Data validation output**
+     - Stage 1 / Stage 2 checks
+     - Schema verification
+     - Controlled reprocess
+  3. Script execution output (small scoped run)
+  4. Notebook execution (only if that is the established workflow)
+
+- Any change affecting mappings, derivations, schemas, or partitions includes
+  **targeted verification examples**
+
+### Preferred Workflow
+
+1. **Plan first**
+   - Identify impacted scripts, modules, or pipelines
+   - Clarify assumptions and risks
+2. **Design the smallest safe change**
+   - Inline notes only (PR description or comments)
+   - Do not create new documentation unless asked
+3. **Implement minimal code**
+4. **Validate**
+   - Tests first
+   - Then data validation as applicable
+5. **Summarize**
+   - What changed
+   - How it was tested
+   - Risks and assumptions
+
+──────────────────────────────────────────────────────────────────────────────
+## 3) TEST-DRIVEN DEVELOPMENT (DEFAULT EXPECTATION)
+──────────────────────────────────────────────────────────────────────────────
+
+For **all code behavior changes**, follow **TDD**.
+
+### Red → Green → Refactor
+
+1. **RED**
+   - Write the smallest failing unit test that captures the desired behavior
+   - Include edge cases where failure is plausible
+
+2. **GREEN**
+   - Implement the **minimum** code required to pass the test
+   - Avoid premature abstraction or optimization
+
+3. **REFACTOR**
+   - Improve clarity, naming, and structure
+   - Behavior must remain unchanged
+   - All tests must stay green
+
+### Test Quality Rules
+
+- Tests must be **fast and isolated**
+  - No real network calls
+  - No real AWS calls
+  - No real databases
+  - No sleeps or timing dependencies
+- Prefer:
+  - Pure functions
+  - Dependency injection
+  - Small deterministic fixtures
+- Assert **behavior**, not internal implementation details
+
+### Data Pipeline Reality (Allowed Supplements)
+
+TDD does **not** replace data validation for pipelines.
+
+For pipeline work:
+- Unit tests validate transformation logic
+- Data validation confirms:
+  - Schema consistency
+  - Partition correctness
+  - No unintended data loss or duplication
+
+──────────────────────────────────────────────────────────────────────────────
+## 4) LANGUAGE & TOOLING STANDARDS
+──────────────────────────────────────────────────────────────────────────────
+
+### Python Standards
+
+- Test runner: `pytest`
+- Coverage expectation: **≥ 80% on new or modified code**
+- Formatting: `black`
+- Linting: `ruff`
+- Type checking: `mypy` (when applicable)
+
+Preferred commands:
+- Unit tests: `pytest -q`
+- Full tests: `pytest`
+- Lint: `ruff check .`
+- Format: `black .`
+- Types: `mypy .`
+
+### Next.js / UI Standards (when applicable)
+
+- Test runner: `jest` or `vitest` (pick one per project)
+- Testing utilities: React Testing Library
+- Type checking: `tsc`
+- Linting: project-configured ESLint
+
+Preferred commands:
+- Unit tests: `pnpm test` (or npm/yarn)
+- Type check: `pnpm typecheck`
+- Lint: `pnpm lint`
+- Build: `pnpm build`
+
+──────────────────────────────────────────────────────────────────────────────
+## 5) SECURITY & SAFETY REQUIREMENTS
+──────────────────────────────────────────────────────────────────────────────
+
+Always assume **production impact**.
+
+- Treat all inputs as untrusted
+- Validate and sanitize at boundaries
+- Use parameterized queries and safe APIs
+- Never log secrets or sensitive data
+- Never commit credentials
+- Use least-privilege assumptions
+- Explicitly flag:
+  - Schema or query injection risks
+  - Path traversal
+  - Unsafe deserialization
+  - Privilege escalation
+  - Cross-tenant or cross-site access issues
+
+When uncertain, **call it out explicitly** and ask before proceeding.
+
+──────────────────────────────────────────────────────────────────────────────
+## 6) CLAUDE CODE OPERATIONAL RULES
+──────────────────────────────────────────────────────────────────────────────
+
+### Planning
+
+- Use **Plan Mode** for any non-trivial change
+- Propose:
+  - Change plan
+  - Test plan
+  - Validation strategy
+- Do not execute broad changes without confirmation
+
+### Subagents
+
+If available, use subagents for:
+- Running tests
+- Writing release notes
+- Security review
+
+Subagents must:
+- Produce concise, scoped output
+- Avoid speculative refactors or design changes
+
+### Skills
+
+When a skill is invoked (e.g. `/tdd`, `/pr`), follow it **exactly**.
+
+### Background Tasks
+
+Long-running commands (tests, builds, scans) may be run in the background.
+Report only failures or actionable summaries.
+
+### MCP Tools (External Integrations)
+
+Claude Code has access to MCP servers for external service integration:
+
+| MCP Server | Capabilities |
+|------------|--------------|
+| **GitHub** | Repos, PRs, issues, code search |
+| **Atlassian** | Jira issues, Confluence pages |
+| **AWS API** | All AWS CLI commands (readonly by default) |
+
+Use MCP tools when:
+- Accessing external services (GitHub, Jira, AWS)
+- Querying data from cloud resources
+- Reading documentation from Confluence
+
+MCP Skills available:
+- `/aws-mcp-profile` - Configure AWS MCP profile
+- `/mcp-doctor` - Diagnose MCP issues
+- `/mcp-auth-reset` - Reset MCP authentication
+
+──────────────────────────────────────────────────────────────────────────────
+## 7) DATA PLATFORM GUARDRAILS
+──────────────────────────────────────────────────────────────────────────────
+
+Be explicit about:
+- DAS instances, arrays, and date ranges considered
+- Partitioning and schema changes
+- Athena table compatibility
+- Backward compatibility risks
+
+Never:
+- Break schema compatibility silently
+- Change partitioning without calling it out
+- Reprocess large data ranges unless explicitly requested
+
+──────────────────────────────────────────────────────────────────────────────
+## 8) ENVIRONMENT SETUP
+──────────────────────────────────────────────────────────────────────────────
+
+### Conda Environment
+
 ```bash
-~/miniforge3/envs/oneclaw/bin/python -m pytest gateway/tests/ -v
-```
+conda env create -f environment/environment.yml
+conda activate gsdl
 
-### Running with Coverage
-```bash
-~/miniforge3/envs/oneclaw/bin/python -m pytest gateway/tests/ --cov=gateway --cov-report=term-missing
-```
-
-### Code Quality
-```bash
-~/miniforge3/envs/oneclaw/bin/python -m ruff check gateway/
-~/miniforge3/envs/oneclaw/bin/python -m black --check gateway/
-```
-
----
-
-## Definition of Done
-
-A task is done when:
-- [ ] Tests written FIRST (TDD red phase)
-- [ ] All tests pass (green phase)
-- [ ] Code cleaned up (refactor phase)
-- [ ] Coverage ≥ 80% on changed files
-- [ ] No security regressions
-- [ ] Committed on a feature branch (never direct to main)
-- [ ] PR opened with: summary, how tested, rollback plan
-
-## Git Workflow
-
-- Branch from latest `main`: `feat/description`, `fix/description`, `test/description`
-- Commit messages: `type: short description` (feat, fix, test, docs, refactor, chore)
-- Squash merge PRs
-- Never force-push to `main`
-
-## Security Constraints
-
-- **No credentials in code.** Use `op read` or Docker secrets.
-- **No `op item get --format json`** — always `op read <reference>`.
-- **No direct filesystem access** from OpenClaw container.
-- **All data flows through gateway.**
-- **Approval queue** for sensitive operations.
-- **Audit everything.**
-
-## Pi-Specific Notes
-
-- ARM64 — some packages need aarch64 builds
-- CPU is 2-3x slower than x86 — be patient with builds
-- 8GB RAM — set container memory limits
-- No sudo for `secureclaw-bot` — use conda, not system packages
-- Original `.venv` (Python 3.9) is for Mac — don't touch it
-- Use `~/miniforge3/envs/oneclaw/bin/python` for everything
-
-## Current Status
-
-- **Coverage:** 92% (116 tests)
-- **Branch:** `fix/code-review-2026-02-16`
-- **Phase:** 3A/3B complete, Phase 4 (SSH Capability) in progress
-- **Grade:** B+
-
-## Agent Hierarchy
-
-- **Claude Code** is the PRIMARY developer (via `.claude/agents/developer`)
-- All other agents are SECONDARY — they do not write production code
-- See `.claude/agents/` for the full team
-
----
-
-## Multi-Model Peer Review (Standard Process)
-
-Every branch must pass peer review from all three models before PR.
-
-### Workflow
-1. **Claude** (primary) develops on a feature branch using TDD
-2. **Gemini + Codex** review the diff via `scripts/peer-review.sh`
-3. Reviews saved to `reviews/gemini-review-*.md` and `reviews/codex-review-*.md`
-4. **Claude** reads both review files, fixes CRITICAL/HIGH issues, documents MEDIUM/LOW as TODOs
-5. Tests must pass after fixes
-6. PR opened only after all three models are satisfied
-
-### Running Peer Review
-```bash
-# Review current branch vs main
-./scripts/peer-review.sh branch
-
-# Review staged changes only
-./scripts/peer-review.sh staged
-
-# Review last commit
-./scripts/peer-review.sh last
-```
-
-### After Review — Claude Fixes
-```bash
-claude -p "Read reviews/gemini-review-TIMESTAMP.md and reviews/codex-review-TIMESTAMP.md. List all findings by severity. Fix CRITICAL and HIGH items. Create TODO list for MEDIUM and LOW. Run tests after fixes."
-```
-
-### Models
-| Model | Role | CLI |
-|-------|------|-----|
-| Claude (Anthropic) | Primary developer | `claude` |
-| Gemini (Google) | Peer reviewer | `gemini` |
-| Codex (OpenAI) | Peer reviewer | `codex` |
-
-### Rules
-- Never merge without peer review from at least 2 models
-- CRITICAL findings block merge
-- HIGH findings should be fixed before merge
-- MEDIUM/LOW can be tracked as TODOs
-- Reviews are committed to `reviews/` for audit trail
+# Platform-specific alternatives:
+# environment/macos/conda_environment_macos.yml
+# environment/linux/conda_environment_linux.yml
+# environment/windows/conda_environment_windows.yml
