@@ -4,7 +4,7 @@
 
 set -e
 
-COMPOSE_FILE="/Users/ijefferson.admin/Development/oneclaw/docker/docker-compose.yml"
+COMPOSE_FILE="$DOCKER_DIR/docker-compose.yml"
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 DOCKER_DIR="$(dirname "$SCRIPT_DIR")"
 

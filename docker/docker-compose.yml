@@ -114,7 +114,7 @@ services:
 
     # SECURITY: Read-only root filesystem (DISABLED during development)
     # Enable after each phase for testing. See DEVELOPMENT_WORKFLOW_READ_ONLY.md
-    read_only: false
+    read_only: true  # Production: read-only rootfs (use toggle-readonly.sh for dev)
     tmpfs:
       - /tmp:noexec,nosuid,size=500m
       - /var/tmp:noexec,nosuid,size=100m
@@ -171,14 +171,12 @@ networks:
       config:
         - subnet: 172.20.0.0/16
 
-  # Isolated network - OpenClaw CANNOT access host LAN
-  # OpenClaw can ONLY:
-  # 1. Talk to Gateway (on this network)
-  # 2. Make outbound internet connections (for LLM APIs)
-  # 3. SSH to systems YOU authorize
+  # Backend network - OpenClaw talks to Gateway and internet (LLM APIs)
+  # NOTE: internal: false is required for outbound API calls to LLM providers
+  # Network isolation is enforced via iptables/seccomp, not Docker networking
   secureclaw-isolated:
     driver: bridge
-    internal: false  # Allows internet (LLM APIs), but NO LAN routes
+    internal: false  # Required for LLM API access (OpenAI, Anthropic, etc.)
     ipam:
       config:
         - subnet: 172.21.0.0/16

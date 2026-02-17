@@ -142,7 +142,7 @@ llm-init() {
     # 1. Claude Code (PRIMARY Developer)
     echo "1️⃣  Claude Code (PRIMARY)"
     if [ -d "$source_dir/.claude" ]; then
-        cp -i -pr "$source_dir/.claude" .
+        cp -n -pr "$source_dir/.claude" .
         # Remove local/sensitive files that should not be deployed
         rm -f .claude/settings.local.json 2>/dev/null
         find .claude -name '*.local.*' -delete 2>/dev/null
@@ -153,7 +153,7 @@ llm-init() {
     fi
 
     if [ -f "$source_dir/CLAUDE.md" ]; then
-        cp -i -a "$source_dir/CLAUDE.md" .
+        cp -n -a "$source_dir/CLAUDE.md" .
         echo "   ✅ CLAUDE.md copied"
     else
         echo "   ⚠️  CLAUDE.md not found in source"
@@ -176,7 +176,7 @@ llm-init() {
     # 2. Gemini CLI (SECONDARY Agent)
     echo "2️⃣  Gemini CLI (SECONDARY)"
     if [ -d "$source_dir/.gemini" ]; then
-        cp -i -pr "$source_dir/.gemini" .
+        cp -n -pr "$source_dir/.gemini" .
         # Remove local/sensitive files that should not be deployed
         rm -f .gemini/settings.local.json 2>/dev/null
         find .gemini -name '*.local.*' -delete 2>/dev/null
@@ -189,7 +189,7 @@ llm-init() {
     # 3. Codex CLI (TERTIARY Agent)
     echo "3️⃣  Codex CLI (TERTIARY)"
     if [ -d "$source_dir/.codex" ]; then
-        cp -i -pr "$source_dir/.codex" .
+        cp -n -pr "$source_dir/.codex" .
         # Remove local/sensitive files that should not be deployed
         rm -f .codex/config.local.toml 2>/dev/null
         find .codex -name '*.local.*' -delete 2>/dev/null
@@ -199,7 +199,7 @@ llm-init() {
     fi
 
     if [ -f "$source_dir/AGENTS.md" ]; then
-        cp -i -a "$source_dir/AGENTS.md" .
+        cp -n -a "$source_dir/AGENTS.md" .
         echo "   ✅ AGENTS.md copied"
     else
         echo "   ⚠️  AGENTS.md not found in source"
@@ -211,25 +211,25 @@ llm-init() {
     if [ -d "$source_dir/.github" ]; then
         # Only copy .github if it doesn't exist, or merge agents/ subdirectory
         if [ ! -d ".github" ]; then
-            cp -i -pr "$source_dir/.github" .
+            cp -n -pr "$source_dir/.github" .
             echo "   ✅ .github/ directory copied"
         else
             # Merge agents directory
             if [ -d "$source_dir/.github/agents" ]; then
                 mkdir -p .github/agents
-                cp -i -pr "$source_dir/.github/agents/"* .github/agents/ 2>/dev/null
+                cp -n -pr "$source_dir/.github/agents/"* .github/agents/ 2>/dev/null
                 echo "   ✅ .github/agents/ merged"
             fi
 
             # Copy setup documentation
             if [ -f "$source_dir/.github/COPILOT_CLI_SETUP.md" ]; then
-                cp -i -a "$source_dir/.github/COPILOT_CLI_SETUP.md" .github/
+                cp -n -a "$source_dir/.github/COPILOT_CLI_SETUP.md" .github/
                 echo "   ✅ .github/COPILOT_CLI_SETUP.md copied"
             fi
 
             # Copy config example
             if [ -f "$source_dir/.github/copilot-config.json.example" ]; then
-                cp -i -a "$source_dir/.github/copilot-config.json.example" .github/
+                cp -n -a "$source_dir/.github/copilot-config.json.example" .github/
                 echo "   ✅ .github/copilot-config.json.example copied"
             fi
         fi
@@ -241,7 +241,7 @@ llm-init() {
     # 5. MCP Configuration
     echo "5️⃣  MCP Servers"
     if [ -f "$source_dir/.mcp.json" ]; then
-        cp -i -a "$source_dir/.mcp.json" .
+        cp -n -a "$source_dir/.mcp.json" .
         echo "   ✅ .mcp.json copied"
     else
         echo "   ⚠️  .mcp.json not found in source"
@@ -267,7 +267,7 @@ llm-init() {
 
         for subdir in "${llm_subdirs[@]}"; do
             if [ -d "$source_dir/llm_settings/$subdir" ]; then
-                cp -i -pr "$source_dir/llm_settings/$subdir" llm_settings/
+                cp -n -pr "$source_dir/llm_settings/$subdir" llm_settings/
                 echo "   ✅ llm_settings/$subdir/ copied (recursive)"
             else
                 echo "   ⚠️  llm_settings/$subdir/ not found in source"
@@ -276,7 +276,7 @@ llm-init() {
 
         # Also copy any loose files at the llm_settings root level
         find "$source_dir/llm_settings" -maxdepth 1 -type f -print0 2>/dev/null | while IFS= read -r -d '' file; do
-            cp -i -a "$file" llm_settings/
+            cp -n -a "$file" llm_settings/
             echo "   ✅ llm_settings/$(basename "$file") copied"
         done
 
