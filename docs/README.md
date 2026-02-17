@@ -6,6 +6,16 @@
 
 ## 📚 Documentation Structure
 
+### [deploy/](./deploy/) - Deployment Guides
+Platform-specific deployment and update instructions.
+
+| Platform | Architecture | Guide |
+|----------|-------------|-------|
+| Raspberry Pi | aarch64 | [raspberry-pi.md](./deploy/raspberry-pi.md) |
+| Linux | x86_64, aarch64 | [linux.md](./deploy/linux.md) |
+| macOS | arm64, x86_64 | [macos.md](./deploy/macos.md) |
+| All Platforms | — | [updating.md](./deploy/updating.md) |
+
 ### [setup/](./setup/) - Setup & Configuration Guides
 Complete guides for setting up SecureClaw and all integrated services.
 
