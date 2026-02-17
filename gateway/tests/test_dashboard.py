@@ -99,3 +99,21 @@ def test_ws_activity_requires_auth(sync_client):
         ws.send_json({"token": "wrong-token"})
         msg = ws.receive_json()
         assert msg["type"] == "error"
+
+
+@pytest.mark.asyncio
+async def test_dashboard_has_csp_header(client):
+    """GET /dashboard includes Content-Security-Policy header"""
+    resp = await client.get("/dashboard?token=test-token-12345")
+    assert resp.status_code == 200
+    csp = resp.headers.get("content-security-policy", "")
+    assert "default-src" in csp
+    assert "script-src" in csp
+
+
+@pytest.mark.asyncio
+async def test_dashboard_xss_prevention(client):
+    """Dashboard HTML uses data attributes instead of onclick for approvals"""
+    resp = await client.get("/dashboard?token=test-token-12345")
+    assert "onclick" not in resp.text
+    assert "data-action" in resp.text or "data-id" in resp.text or "addEventListener" in resp.text
