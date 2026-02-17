@@ -33,7 +33,7 @@ async def test_resolve_target_default(router):
     target = await router.resolve_target(request)
 
     assert target.name == "test-agent"
-    assert target.url == "http://localhost:18789"
+    assert target.url == "http://openclaw:18789"
 
 
 @pytest.mark.asyncio
