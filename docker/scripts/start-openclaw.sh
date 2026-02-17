@@ -27,58 +27,54 @@ else
     echo "[startup] Warning: Anthropic API key file not found"
 fi
 
-# Sign in to 1Password (bot's personal account)
-if [ -f "/run/secrets/1password_bot_email" ] && [ -f "/run/secrets/1password_bot_master_password" ] && [ -f "/run/secrets/1password_bot_secret_key" ]; then
-    OP_EMAIL=$(cat /run/secrets/1password_bot_email)
-    OP_PASSWORD=$(cat /run/secrets/1password_bot_master_password)
-    OP_SECRET_KEY=$(cat /run/secrets/1password_bot_secret_key)
+# Sign in to 1Password using shared auth library (3-tier fallback)
+SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+# shellcheck source=op-auth-common.sh
+source "$SCRIPT_DIR/op-auth-common.sh"
 
-    echo "[startup] Signing in to 1Password as $OP_EMAIL..."
+if op_authenticate 2>/dev/null; then
+    echo "[startup] ✓ Signed in to 1Password successfully"
 
-    # Use --raw to get just the session token (avoids dangerous eval)
-    # Try adding account first (first boot); fall back to signin if already added
-    mkdir -p "$HOME/.config/op"
-    chmod 700 "$HOME/.config/op"
-    OP_SESSION=$(echo "$OP_PASSWORD" | op account add \
-        --address my.1password.com \
-        --email "$OP_EMAIL" \
-        --secret-key "$OP_SECRET_KEY" \
-        --signin --raw 2>/dev/null) || \
-    OP_SESSION=$(echo "$OP_PASSWORD" | op signin \
-        --account my.1password.com \
-        --raw 2>/dev/null) || \
-    OP_SESSION=""
-
-    if [ -n "$OP_SESSION" ]; then
-        export OP_SESSION_my="$OP_SESSION"
-        echo "[startup] ✓ Signed in to 1Password successfully"
-
-        # Test vault access
-        if op vault list --session "$OP_SESSION" >/dev/null 2>&1; then
-            VAULTS=$(op vault list --session "$OP_SESSION" 2>&1 | tail -n +2 | awk '{print $2}' | tr '\n' ', ' | sed 's/,$//')
-            echo "[startup] ✓ 1Password vault access confirmed"
-            echo "[startup] Available vaults: $VAULTS"
-        else
-            echo "[startup] ⚠ Could not list vaults"
-        fi
-
-        # Load Brave Search API key from 1Password
-        # Item title contains '@' which breaks op:// URIs — use item ID instead
-        # Item ID: 6j6ij5tzld6kobvit5tk6ufrhq (Brave Search API - therealidallasj@gmail.com)
-        BRAVE_API_KEY=$(op read --session "$OP_SESSION" \
-            "op://SecureClaw Bot Credentials/6j6ij5tzld6kobvit5tk6ufrhq/brach search api key" 2>/dev/null) || true
-        if [ -n "$BRAVE_API_KEY" ]; then
-            export BRAVE_API_KEY
-            echo "[startup] ✓ Loaded Brave Search API key"
-        else
-            echo "[startup] ⚠ Could not load Brave Search API key"
-        fi
+    # Test vault access
+    if op vault list --session "$OP_SESSION" >/dev/null 2>&1; then
+        VAULTS=$(op vault list --session "$OP_SESSION" 2>&1 | tail -n +2 | awk '{print $2}' | tr '\n' ', ' | sed 's/,$//')
+        echo "[startup] ✓ 1Password vault access confirmed"
+        echo "[startup] Available vaults: $VAULTS"
     else
-        echo "[startup] ⚠ 1Password signin failed"
+        echo "[startup] ⚠ Could not list vaults"
     fi
 
-    # Clear sensitive data from environment
-    unset OP_PASSWORD OP_SECRET_KEY
+    # Load Brave Search API key from 1Password
+    # Item title contains '@' which breaks op:// URIs — use item ID instead
+    # Item ID: 6j6ij5tzld6kobvit5tk6ufrhq (Brave Search API - therealidallasj@gmail.com)
+    BRAVE_API_KEY=$(op read --session "$OP_SESSION" \
+        "op://SecureClaw Bot Credentials/6j6ij5tzld6kobvit5tk6ufrhq/brach search api key" 2>/dev/null) || true
+    if [ -n "$BRAVE_API_KEY" ]; then
+        export BRAVE_API_KEY
+        echo "[startup] ✓ Loaded Brave Search API key"
+    else
+        echo "[startup] ⚠ Could not load Brave Search API key"
+    fi
+
+    # Load Gmail credentials from 1Password at startup so they survive session expiry
+    # Item ID: he6wcfkfieekqkomuxdunal2xa (Gmail - therealidallasj)
+    GMAIL_APP_PASSWORD=$(op read --session "$OP_SESSION" \
+        "op://SecureClaw Bot Credentials/he6wcfkfieekqkomuxdunal2xa/openclaw bot password" 2>/dev/null) || true
+    if [ -n "$GMAIL_APP_PASSWORD" ]; then
+        export GMAIL_APP_PASSWORD
+        echo "[startup] ✓ Loaded Gmail app password"
+    else
+        echo "[startup] ⚠ Could not load Gmail app password"
+    fi
+
+    GMAIL_USERNAME=$(op read --session "$OP_SESSION" \
+        "op://SecureClaw Bot Credentials/he6wcfkfieekqkomuxdunal2xa/username" 2>/dev/null) || true
+    if [ -n "$GMAIL_USERNAME" ]; then
+        export GMAIL_USERNAME
+        echo "[startup] ✓ Loaded Gmail username"
+    else
+        echo "[startup] ⚠ Could not load Gmail username"
+    fi
 else
     echo "[startup] Warning: 1Password credentials not found (optional)"
 fi

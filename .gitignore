@@ -42,6 +42,8 @@ api_keys.txt
 *password*
 *secret*
 *token*
+# Exception: scripts whose names contain these words but are not secrets
+!docker/scripts/1password-skill.sh
 
 # SSH & GPG
 .ssh/
