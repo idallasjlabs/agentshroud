@@ -1,0 +1,5 @@
+[allowlist]
+  description = "Ignore OpenSCAP 'REDACTED' placeholders"
+  # This stops Gitleaks from flagging the actual string "REDACTED" 
+  # regardless of which file it's in.
+  regexes = ['REDACTED']

@@ -123,3 +123,36 @@ logging:
   max_size_mb: 10
   max_files: 3
   destination: "/app/logs"
+
+# SSH Proxy configuration
+ssh:
+  enabled: true
+  require_approval: true
+  global_denied_commands:
+    - "rm -rf /"
+    - "mkfs"
+    - "dd if="
+  hosts:
+    pi:
+      host: "raspberrypi.tail240ea8.ts.net"
+      port: 22
+      username: "secureclaw-bot"
+      key_path: "/home/secureclaw-bot/.ssh/id_ed25519"
+      allowed_commands:
+        - "git status"
+        - "git log"
+        - "ls"
+        - "cat"
+        - "whoami"
+        - "df -h"
+        - "uptime"
+      denied_commands:
+        - "rm -rf"
+        - "shutdown"
+        - "reboot"
+      max_session_seconds: 30
+      auto_approve_commands:
+        - "git status"
+        - "ls"
+        - "whoami"
+        - "uptime"

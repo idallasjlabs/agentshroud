@@ -1,5 +1,4 @@
 #!/bin/bash
-# NOTE: This script is designed for macOS. Linux support is planned.
 # setup-direnv.sh
 # Configure direnv for secure environment variable management
 
