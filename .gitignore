@@ -424,3 +424,11 @@ core.*
 llm_settings/mcp-servers/github/.env
 **/.env
 !**/.env.example
+
+# Catch-all for accidentally created secret/token files
+*_secret*
+*_token*
+*.secret
+*.token
+secret_*
+token_*
