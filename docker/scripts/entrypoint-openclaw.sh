@@ -1,7 +1,7 @@
 #!/bin/bash
 # OpenClaw entrypoint - setup browsers on first run, then start OpenClaw
 
-set -e
+set -euo pipefail
 
 echo "[entrypoint] Checking Playwright browsers..."
 
