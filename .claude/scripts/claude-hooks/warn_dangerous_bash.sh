@@ -7,12 +7,14 @@ dangerous_patterns=(
   "rm -rf /"
   "rm -rf ~"
   "rm -rf \*"
-  "curl .*\|.*sh"
-  "wget .*\|.*sh"
+  "curl .* | .*sh"
+  "wget .* | .*sh"
+  "curl .*|.*sh"
+  "wget .*|.*sh"
   "chmod -R 777"
   "dd if="
   ":(){ :|:& };:"
-  "eval \"\$("
+  'eval "$('
   "sudo rm"
   "mkfs"
   "> /dev/sd"
@@ -20,7 +22,7 @@ dangerous_patterns=(
 )
 
 for pattern in "${dangerous_patterns[@]}"; do
-  if [[ "$cmd" =~ $pattern ]]; then
+  if echo "$cmd" | grep -qE "$pattern" 2>/dev/null; then
     echo "⚠️  WARNING: Potentially dangerous command detected:"
     echo "    $cmd"
     echo ""
