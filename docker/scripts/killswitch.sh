@@ -164,17 +164,20 @@ case "$MODE" in
 
         # Overwrite secret files (do not delete - needed for docker-compose)
         if [ -f "$DOCKER_DIR/secrets/openai_api_key.txt" ]; then
-            shred -fuz "$DOCKER_DIR/secrets/openai_api_key.txt" 2>/dev/null || dd if=/dev/urandom of="$DOCKER_DIR/secrets/openai_api_key.txt" bs=4096 count=1 status=none
+            # Use shred if available, fall back to dd overwrite
+                        shred -fuz "$DOCKER_DIR/secrets/openai_api_key.txt" 2>/dev/null || dd if=/dev/urandom of="$DOCKER_DIR/secrets/openai_api_key.txt" bs=4096 count=1 status=none
             echo "REVOKED_$(date +%s)" > "$DOCKER_DIR/secrets/openai_api_key.txt"
         fi
 
         if [ -f "$DOCKER_DIR/secrets/anthropic_api_key.txt" ]; then
-            shred -fuz "$DOCKER_DIR/secrets/anthropic_api_key.txt" 2>/dev/null || dd if=/dev/urandom of="$DOCKER_DIR/secrets/anthropic_api_key.txt" bs=4096 count=1 status=none
+            # Use shred if available, fall back to dd overwrite
+                        shred -fuz "$DOCKER_DIR/secrets/anthropic_api_key.txt" 2>/dev/null || dd if=/dev/urandom of="$DOCKER_DIR/secrets/anthropic_api_key.txt" bs=4096 count=1 status=none
             echo "REVOKED_$(date +%s)" > "$DOCKER_DIR/secrets/anthropic_api_key.txt"
         fi
 
         if [ -f "$DOCKER_DIR/secrets/gateway_password.txt" ]; then
-            shred -fuz "$DOCKER_DIR/secrets/gateway_password.txt" 2>/dev/null || dd if=/dev/urandom of="$DOCKER_DIR/secrets/gateway_password.txt" bs=4096 count=1 status=none
+            # Use shred if available, fall back to dd overwrite
+                        shred -fuz "$DOCKER_DIR/secrets/gateway_password.txt" 2>/dev/null || dd if=/dev/urandom of="$DOCKER_DIR/secrets/gateway_password.txt" bs=4096 count=1 status=none
             echo "REVOKED_$(date +%s)" > "$DOCKER_DIR/secrets/gateway_password.txt"
         fi
 
