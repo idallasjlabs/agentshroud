@@ -206,8 +206,7 @@ body{background:var(--bg);color:var(--text);font-family:-apple-system,BlinkMacSy
         // Merge server-side event counts
         if (data.events_by_type) {
           for (var k in data.events_by_type) {
-            if (!eventCounts[k] || data.events_by_type[k] > eventCounts[k])
-              eventCounts[k] = data.events_by_type[k];
+            eventCounts[k] = Math.max(eventCounts[k] || 0, data.events_by_type[k]);
           }
           updateStatCounters();
         }
@@ -224,19 +223,23 @@ body{background:var(--bg);color:var(--text);font-family:-apple-system,BlinkMacSy
       return '<div class="approval-item">'
         + '<div class="desc"><strong>' + esc(item.action_type) + '</strong>: ' + esc(item.description) + '</div>'
         + '<div class="actions">'
-        + '<button class="btn btn-approve" onclick="decide(\'' + item.request_id + '\',true)">Approve</button>'
-        + '<button class="btn btn-reject" onclick="decide(\'' + item.request_id + '\',false)">Reject</button>'
+        + '<button class="btn btn-approve" data-id="' + esc(item.request_id) + '" data-action="approve">Approve</button>'
+        + '<button class="btn btn-reject" data-id="' + esc(item.request_id) + '" data-action="reject">Reject</button>'
         + '</div></div>';
     }).join('');
   }
 
-  window.decide = function(id, approved) {
-    fetch('/approve/' + id + '/decide', {
+  approvalListEl.addEventListener('click', function(evt) {
+    var btn = evt.target.closest('[data-id]');
+    if (!btn) return;
+    var id = btn.dataset.id;
+    var approved = btn.dataset.action === 'approve';
+    fetch('/approve/' + encodeURIComponent(id) + '/decide', {
       method: 'POST',
       headers: {'Authorization':'Bearer ' + token, 'Content-Type':'application/json'},
       body: JSON.stringify({request_id: id, approved: approved, reason: 'Dashboard decision'})
     }).then(function(){ fetchStats(); });
-  };
+  });
 
   function updateUptime() {
     var s = Math.floor((Date.now() - startTime) / 1000);

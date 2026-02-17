@@ -40,37 +40,43 @@ class EventBus:
         # Track auth failures for severity escalation
         self._auth_failures: list[float] = []
 
-    def subscribe(self, callback: Callable) -> None:
+    async def subscribe(self, callback: Callable) -> None:
         """Subscribe to all events"""
-        self._subscribers.append(callback)
+        async with self._lock:
+            self._subscribers.append(callback)
 
-    def unsubscribe(self, callback: Callable) -> None:
+    async def unsubscribe(self, callback: Callable) -> None:
         """Unsubscribe from events"""
-        try:
-            self._subscribers.remove(callback)
-        except ValueError:
-            pass
+        async with self._lock:
+            try:
+                self._subscribers.remove(callback)
+            except ValueError:
+                pass
 
     async def emit(self, event: GatewayEvent) -> None:
         """Emit an event to all subscribers"""
-        # Track event
-        self._recent_events.append(event)
-        if len(self._recent_events) > self._max_recent:
-            self._recent_events = self._recent_events[-self._max_recent:]
-        self._event_counts[event.type] += 1
+        async with self._lock:
+            # Track event
+            self._recent_events.append(event)
+            if len(self._recent_events) > self._max_recent:
+                self._recent_events = self._recent_events[-self._max_recent:]
+            self._event_counts[event.type] += 1
 
-        # Track auth failures for severity escalation
-        if event.type == "auth_failed":
-            now = time.time()
-            self._auth_failures.append(now)
-            # Keep only last 5 minutes
-            cutoff = now - 300
-            self._auth_failures = [t for t in self._auth_failures if t > cutoff]
-            if len(self._auth_failures) >= 3:
-                event.severity = "critical"
+            # Track auth failures for severity escalation
+            if event.type == "auth_failed":
+                now = time.time()
+                self._auth_failures.append(now)
+                # Keep only last 5 minutes
+                cutoff = now - 300
+                self._auth_failures = [t for t in self._auth_failures if t > cutoff]
+                if len(self._auth_failures) >= 3:
+                    event.severity = "critical"
 
-        # Notify subscribers
-        for callback in list(self._subscribers):
+            # Copy subscribers under lock
+            callbacks = list(self._subscribers)
+
+        # Notify subscribers outside lock to avoid deadlocks
+        for callback in callbacks:
             try:
                 result = callback(event)
                 if asyncio.iscoroutine(result):
@@ -78,17 +84,19 @@ class EventBus:
             except Exception as e:
                 logger.warning(f"Event subscriber error: {e}")
 
-    def get_stats(self) -> dict[str, Any]:
+    async def get_stats(self) -> dict[str, Any]:
         """Get event statistics"""
-        return {
-            "total_events": sum(self._event_counts.values()),
-            "events_by_type": dict(self._event_counts),
-            "recent_count": len(self._recent_events),
-        }
+        async with self._lock:
+            return {
+                "total_events": sum(self._event_counts.values()),
+                "events_by_type": dict(self._event_counts),
+                "recent_count": len(self._recent_events),
+            }
 
-    def get_recent(self, limit: int = 50) -> list[dict[str, Any]]:
+    async def get_recent(self, limit: int = 50) -> list[dict[str, Any]]:
         """Get recent events"""
-        return [e.to_dict() for e in self._recent_events[-limit:]]
+        async with self._lock:
+            return [e.to_dict() for e in self._recent_events[-limit:]]
 
 
 def make_event(
