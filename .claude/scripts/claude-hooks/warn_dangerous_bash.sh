@@ -3,16 +3,20 @@ set -euo pipefail
 
 cmd="${CLAUDE_TOOL_INPUT:-}"
 
-# Patterns we want to WARN about (not block)
 dangerous_patterns=(
   "rm -rf /"
   "rm -rf ~"
-  "rm -rf \\*"
-  "curl .*\\|.*sh"
-  "wget .*\\|.*sh"
+  "rm -rf \*"
+  "curl .*\|.*sh"
+  "wget .*\|.*sh"
   "chmod -R 777"
   "dd if="
-  ":(){ :|:& };:"   # fork bomb
+  ":(){ :|:& };:"
+  "eval \"\$("
+  "sudo rm"
+  "mkfs"
+  "> /dev/sd"
+  "> /dev/nvme"
 )
 
 for pattern in "${dangerous_patterns[@]}"; do

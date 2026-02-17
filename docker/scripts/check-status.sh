@@ -1,7 +1,9 @@
 #!/bin/bash
 # Check OpenClaw and Gateway status
 
-cd /Users/ijefferson.admin/Development/oneclaw
+# Auto-detect project root
+PROJECT_ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")/../.." && pwd)"
+cd "$PROJECT_ROOT"
 
 echo "=== Container Status ==="
 docker compose -f docker/docker-compose.yml ps

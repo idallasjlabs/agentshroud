@@ -20,8 +20,8 @@ elif [ "$MODE" = "test" ]; then
     sed -i.bak 's/read_only: false/read_only: true/g' docker/docker-compose.yml
 
     # Rebuild
-    docker-compose -f docker/docker-compose.yml down
-    docker-compose -f docker/docker-compose.yml up -d --build
+    docker compose -f docker/docker-compose.yml down
+    docker compose -f docker/docker-compose.yml up -d --build
 
     # Wait for healthy
     echo "Waiting for containers to be healthy..."
@@ -70,4 +70,4 @@ else
 fi
 
 echo ""
-echo "Run 'docker-compose -f docker/docker-compose.yml up -d' to apply changes"
+echo "Run 'docker compose -f docker/docker-compose.yml up -d' to apply changes"
