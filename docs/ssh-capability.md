@@ -67,7 +67,7 @@ Commands that fail validation never reach the approval queue:
 
 | Layer | Purpose | Implementation |
 |-------|---------|----------------|
-| **Injection Detection** | Block shell metacharacters (`; \| & \` $()` etc.) | Regex pattern in `INJECTION_PATTERNS` |
+| **Injection Detection** | Block shell metacharacters (`; \| & \` $()` etc.) | Regex pattern in `INJECTION_PATTERNS` and executed directly without a shell (via `asyncio.create_subprocess_exec`) |
 | **Global Deny List** | Block catastrophic commands across all hosts | `global_denied_commands` in config |
 | **Per-Host Deny List** | Block host-specific dangerous commands | `denied_commands` per host |
 | **Per-Host Allow List** | Whitelist-only mode when non-empty | `allowed_commands` per host |
