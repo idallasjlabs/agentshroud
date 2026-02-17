@@ -51,7 +51,7 @@ class MultiAgentRouter:
         # In Phase 3, points to openclaw container via Docker network
         self.targets[config.default_target] = AgentTarget(
             name=config.default_target,
-            url="http://openclaw:18789",  # OpenClaw container hostname
+            url=config.default_url,
             content_types=["text", "url", "photo", "file"],
             tags=[],
         )
