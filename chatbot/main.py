@@ -68,7 +68,7 @@ async def lifespan(app: FastAPI):
 
     # Load persona
     _persona_prompt = load_persona_files()
-    logger.info(f"✅ Persona loaded ({len(_persona_prompt)} chars)")
+    logger.info("✅ Persona loaded (%d chars)", len(_persona_prompt))
 
     # Load API key once
     api_key_path = Path("/run/secrets/openai_api_key")
