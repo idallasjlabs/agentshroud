@@ -1,13 +1,24 @@
 #!/bin/bash
 # Shared 1Password authentication helper
 # Source this file, then call op_authenticate.
-# On success: OP_SESSION and OP_SESSION_my are set in the calling scope.
+#
+# Outputs (intentional globals written to the calling scope):
+#   OP_SESSION     — raw session token, valid for the current shell invocation
+#   OP_SESSION_my  — same token, NOT exported; callers that need it in child
+#                    processes must export it explicitly and unset before exec
+#
+# On success: returns 0, OP_SESSION and OP_SESSION_my are set.
 # On failure: returns 1 (never exits, safe to source).
 
 # Allow override for testing (default: Docker secrets mount)
 OP_SECRETS_DIR="${OP_SECRETS_DIR:-/run/secrets}"
 
 op_authenticate() {
+    # Guard against path traversal in OP_SECRETS_DIR
+    case "$OP_SECRETS_DIR" in
+        *..*) echo "[op-auth] ERROR: OP_SECRETS_DIR must not contain '..'" >&2; return 1 ;;
+    esac
+
     # Tier 1: reuse existing session if still valid
     if [ -n "${OP_SESSION_my:-}" ]; then
         if op vault list --session "$OP_SESSION_my" >/dev/null 2>&1; then
@@ -31,11 +42,15 @@ op_authenticate() {
     chmod 700 "$HOME/.config/op"
 
     # Tier 2: op account add --signin --raw (first boot — account not yet registered)
-    OP_SESSION=$(echo "$password" | op account add \
-        --address my.1password.com \
-        --email "$email" \
-        --secret-key "$secret_key" \
-        --signin --raw 2>/dev/null) || true
+    # Skip when secret_key is absent; op account add requires it and would produce a
+    # misleading error rather than falling through gracefully.
+    if [ -n "$secret_key" ]; then
+        OP_SESSION=$(echo "$password" | op account add \
+            --address my.1password.com \
+            --email "$email" \
+            --secret-key "$secret_key" \
+            --signin --raw 2>/dev/null) || true
+    fi
 
     # Tier 3: op signin --raw fallback (account already added on prior boot)
     if [ -z "${OP_SESSION:-}" ]; then
@@ -50,7 +65,9 @@ op_authenticate() {
     unset password secret_key
 
     if [ -n "${OP_SESSION:-}" ]; then
-        export OP_SESSION_my="$OP_SESSION"
+        # Not exported: callers export explicitly only when child processes need it,
+        # and must unset before exec to avoid leaking into long-lived processes.
+        OP_SESSION_my="$OP_SESSION"
         return 0
     else
         echo "[op-auth] ERROR: Failed to authenticate with 1Password" >&2
