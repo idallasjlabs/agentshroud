@@ -621,7 +621,13 @@ async def serve_dashboard(token: str | None = Query(None)):
         return JSONResponse(status_code=403, content={"detail": "Forbidden"})
     dashboard_path = Path(__file__).parent.parent / "dashboard" / "index.html"
     if dashboard_path.exists():
-        return HTMLResponse(dashboard_path.read_text())
+        response = HTMLResponse(dashboard_path.read_text())
+        response.headers["Content-Security-Policy"] = (
+            "default-src 'none'; script-src 'unsafe-inline'; "
+            "style-src 'unsafe-inline'; connect-src 'self'; "
+            "img-src 'self'; font-src 'self'"
+        )
+        return response
     return HTMLResponse("<h1>Dashboard not found</h1>", status_code=404)
 
 
@@ -631,7 +637,7 @@ async def dashboard_stats(auth: AuthRequired):
     uptime = time.time() - app_state.start_time
     ledger_stats = await app_state.ledger.get_stats()
     pending = await app_state.approval_queue.get_pending()
-    bus_stats = app_state.event_bus.get_stats()
+    bus_stats = await app_state.event_bus.get_stats()
     pending_items = [
         {"request_id": p.request_id, "action_type": p.action_type,
          "description": p.description, "submitted_at": p.submitted_at}
@@ -668,7 +674,7 @@ async def activity_websocket(websocket: WebSocket):
         async def on_event(event):
             await queue.put(event)
 
-        app_state.event_bus.subscribe(on_event)
+        await app_state.event_bus.subscribe(on_event)
 
         try:
             while True:
@@ -679,7 +685,7 @@ async def activity_websocket(websocket: WebSocket):
                     # Send ping to keep alive
                     await websocket.send_json({"type": "ping"})
         finally:
-            app_state.event_bus.unsubscribe(on_event)
+            await app_state.event_bus.unsubscribe(on_event)
 
     except Exception as e:
         logger.warning(f"Activity WebSocket error: {e}")
