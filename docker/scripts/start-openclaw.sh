@@ -61,6 +61,18 @@ if [ -f "/run/secrets/1password_bot_email" ] && [ -f "/run/secrets/1password_bot
         else
             echo "[startup] ⚠ Could not list vaults"
         fi
+
+        # Load Brave Search API key from 1Password
+        # Item title contains '@' which breaks op:// URIs — use item ID instead
+        # Item ID: 6j6ij5tzld6kobvit5tk6ufrhq (Brave Search API - therealidallasj@gmail.com)
+        BRAVE_API_KEY=$(op read --session "$OP_SESSION" \
+            "op://SecureClaw Bot Credentials/6j6ij5tzld6kobvit5tk6ufrhq/brach search api key" 2>/dev/null) || true
+        if [ -n "$BRAVE_API_KEY" ]; then
+            export BRAVE_API_KEY
+            echo "[startup] ✓ Loaded Brave Search API key"
+        else
+            echo "[startup] ⚠ Could not load Brave Search API key"
+        fi
     else
         echo "[startup] ⚠ 1Password signin failed"
     fi
