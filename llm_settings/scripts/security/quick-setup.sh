@@ -1,4 +1,5 @@
 #!/bin/bash
+# NOTE: This script is designed for macOS. Linux support is planned.
 # quick-setup.sh
 # Quick security setup for a repository (runs all security scripts)
 

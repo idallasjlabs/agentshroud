@@ -1,4 +1,5 @@
 #!/bin/bash
+# NOTE: This script is designed for macOS. Linux support is planned.
 # setup-pgpass.sh
 # Configure PostgreSQL password file for secure authentication
 
