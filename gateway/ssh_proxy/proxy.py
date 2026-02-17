@@ -4,7 +4,9 @@ Executes SSH commands via asyncio subprocess with validation and timeout enforce
 """
 
 import asyncio
+import os
 import re
+import shlex
 import time
 from dataclasses import dataclass
 
@@ -22,8 +24,18 @@ class SSHResult:
     command: str
 
 
-# Shell metacharacters that indicate injection attempts
-INJECTION_PATTERNS = re.compile(r"[;|&`]|\$\(|\|\||&&")
+# Comprehensive shell metacharacter/injection patterns
+# Catches: ; | & ` $() ${} $VAR \n \r >> << > < and backslash sequences
+INJECTION_PATTERNS = re.compile(
+    r"[;|&`><]"           # basic shell metacharacters
+    r"|\$\("              # $(...)
+    r"|\$\{"              # ${...}
+    r"|\$[A-Za-z_]"       # $VAR
+    r"|\|\|"              # ||
+    r"|&&"                # &&
+    r"|[\n\r]"            # newlines
+    r"|\\[nrtabfv\\]"     # backslash escape sequences
+)
 
 
 class SSHProxy:
@@ -61,14 +73,26 @@ class SSHProxy:
 
         # Check allowlist (if non-empty, command must match one)
         if host.allowed_commands:
-            if not any(command == allowed or command.startswith(allowed + " ") or allowed == command.split()[0]
-                       for allowed in host.allowed_commands):
+            matched = False
+            for allowed in host.allowed_commands:
+                if command == allowed:
+                    matched = True
+                    break
+                # Allow "allowed_cmd arg1 arg2" if base matches and args have no injection
+                if command.startswith(allowed + " "):
+                    # Verify remaining args are safe (already checked by INJECTION_PATTERNS above)
+                    matched = True
+                    break
+            if not matched:
                 return False, f"Command not in allowed list for host {host_name}"
 
         return True, "OK"
 
     def is_auto_approved(self, host_name: str, command: str) -> bool:
-        """Check if a command is auto-approved (no human approval needed)."""
+        """Check if a command is auto-approved (no human approval needed).
+
+        Auto-approve requires EXACT match — no extra arguments allowed.
+        """
         if host_name not in self.config.hosts:
             return False
         host = self.config.hosts[host_name]
@@ -82,9 +106,15 @@ class SSHProxy:
         host = self.config.hosts[host_name]
         effective_timeout = timeout or host.max_session_seconds
 
-        # Build SSH command
-        ssh_args = ["ssh", "-o", "StrictHostKeyChecking=no", "-o", "BatchMode=yes",
-                     "-p", str(host.port)]
+        # Build SSH command with strict host key checking
+        ssh_args = [
+            "ssh",
+            "-o", f"StrictHostKeyChecking=accept-new",
+            "-o", "BatchMode=yes",
+        ]
+        if host.known_hosts_file:
+            ssh_args.extend(["-o", f"UserKnownHostsFile={host.known_hosts_file}"])
+        ssh_args.extend(["-p", str(host.port)])
         if host.key_path:
             ssh_args.extend(["-i", host.key_path])
         ssh_args.append(f"{host.username}@{host.host}")
@@ -119,9 +149,15 @@ class SSHProxy:
                 duration_seconds=duration,
                 host=host_name, command=command,
             )
-        except Exception as e:
+        except OSError as e:
             duration = time.monotonic() - start
             return SSHResult(
                 stdout="", stderr=str(e), exit_code=-1,
+                duration_seconds=duration, host=host_name, command=command,
+            )
+        except asyncio.CancelledError:
+            duration = time.monotonic() - start
+            return SSHResult(
+                stdout="", stderr="Cancelled", exit_code=-1,
                 duration_seconds=duration, host=host_name, command=command,
             )

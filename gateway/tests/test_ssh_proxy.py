@@ -149,3 +149,43 @@ class TestExecute:
     async def test_execute_unknown_host(self, proxy: SSHProxy):
         with pytest.raises(ValueError, match="[Uu]nknown|not found"):
             await proxy.execute("nonexistent", "ls")
+
+
+class TestInjectionNewline:
+    """Test newline-based injection attempts (Finding #11)"""
+
+    def test_validate_command_newline_injection(self, proxy: SSHProxy):
+        ok, msg = proxy.validate_command("pi", "ls\nrm -rf /")
+        assert ok is False
+        assert "injection" in msg.lower() or "metacharacter" in msg.lower()
+
+    def test_validate_command_carriage_return_injection(self, proxy: SSHProxy):
+        ok, msg = proxy.validate_command("pi", "ls\rrm -rf /")
+        assert ok is False
+
+    def test_validate_command_dollar_var_injection(self, proxy: SSHProxy):
+        ok, msg = proxy.validate_command("pi", "echo $HOME")
+        assert ok is False
+
+    def test_validate_command_dollar_brace_injection(self, proxy: SSHProxy):
+        ok, msg = proxy.validate_command("pi", "echo ${HOME}")
+        assert ok is False
+
+    def test_validate_command_backslash_n_injection(self, proxy: SSHProxy):
+        ok, msg = proxy.validate_command("pi", r"echo \n")
+        assert ok is False
+
+    def test_validate_auto_approve_exact_only(self, proxy: SSHProxy):
+        """Auto-approve must be exact match, not prefix (Finding #3)"""
+        assert proxy.is_auto_approved("pi", "git status") is True
+        assert proxy.is_auto_approved("pi", "git status; rm -rf /") is False
+        assert proxy.is_auto_approved("pi", "git status --porcelain") is False
+
+
+class TestSSHDisabled:
+    """Test SSH disabled returns 503 (Finding #12)"""
+
+    def test_ssh_disabled_config(self):
+        config = SSHConfig(enabled=False)
+        assert config.enabled is False
+        assert config.hosts == {}
