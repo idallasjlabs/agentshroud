@@ -36,11 +36,18 @@ if [ -f "/run/secrets/1password_bot_email" ] && [ -f "/run/secrets/1password_bot
     echo "[startup] Signing in to 1Password as $OP_EMAIL..."
 
     # Use --raw to get just the session token (avoids dangerous eval)
+    # Try adding account first (first boot); fall back to signin if already added
+    mkdir -p "$HOME/.config/op"
+    chmod 700 "$HOME/.config/op"
     OP_SESSION=$(echo "$OP_PASSWORD" | op account add \
         --address my.1password.com \
         --email "$OP_EMAIL" \
         --secret-key "$OP_SECRET_KEY" \
-        --signin --raw 2>/dev/null || echo "")
+        --signin --raw 2>/dev/null) || \
+    OP_SESSION=$(echo "$OP_PASSWORD" | op signin \
+        --account my.1password.com \
+        --raw 2>/dev/null) || \
+    OP_SESSION=""
 
     if [ -n "$OP_SESSION" ]; then
         export OP_SESSION_my="$OP_SESSION"
