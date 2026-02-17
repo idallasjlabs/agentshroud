@@ -163,3 +163,28 @@ class AgentTarget(BaseModel):
     last_health_check: str | None = None
     content_types: list[str] = Field(default_factory=list)
     tags: list[str] = Field(default_factory=list)
+
+
+# === SSH Models ===
+
+
+class SSHExecRequest(BaseModel):
+    """Request to execute an SSH command"""
+    host: str = Field(..., description="SSH host name from config")
+    command: str = Field(..., description="Command to execute")
+    timeout: int | None = Field(default=None, description="Timeout in seconds")
+    reason: str = Field(default="", description="Reason for execution")
+
+
+class SSHExecResponse(BaseModel):
+    """Response from SSH command execution"""
+    request_id: str
+    host: str
+    command: str
+    stdout: str
+    stderr: str
+    exit_code: int
+    duration_seconds: float
+    approved_by: str
+    timestamp: str
+    audit_id: str
