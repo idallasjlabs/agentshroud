@@ -32,13 +32,10 @@ secrets.yml
 config.json
 application-secrets.properties
 .token
-*_token
 api_keys.txt
 
 # Passwords & Secrets (pattern matching)
 *password*
-*secret*
-*token*
 
 # SSH & GPG
 .ssh/
@@ -422,3 +419,8 @@ data/processed/
 core
 core.*
 .venv311/
+
+# MCP server secrets
+llm_settings/mcp-servers/github/.env
+**/.env
+!**/.env.example

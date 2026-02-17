@@ -1,7 +1,9 @@
 #!/bin/bash
 # Set default model for OpenClaw
 
-cd /Users/ijefferson.admin/Development/oneclaw
+# Auto-detect project root
+PROJECT_ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")/../.." && pwd)"
+cd "$PROJECT_ROOT"
 
 if [ -z "$1" ]; then
     echo "Usage: ./set-model.sh <model>"
