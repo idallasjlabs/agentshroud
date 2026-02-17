@@ -236,3 +236,95 @@ must be validated directly in production.  Follow these procedures **exactly**.
 1. Test on **your own device** first.
 2. Exit node changes → test 1 site, confirm Zabbix + VPN, wait 1 hour.
 3. ACL changes → `tailscale debug` before and after.
+
+---
+
+### H. Service Control for Production Testing
+
+#### H.1 Pause Glue Jobs Before Testing
+```bash
+# 1. List all triggers for the job
+aws glue get-triggers --query "Triggers[?Actions[?JobName=='<JOB_NAME>']].Name"
+
+# 2. Disable the scheduled trigger
+aws glue update-trigger --name <TRIGGER_NAME> --trigger-update State=DISABLED
+
+# 3. Verify no jobs currently running
+aws glue get-job-runs --job-name <JOB_NAME> --max-results 5 \\
+  --query "JobRuns[?JobRunState=='RUNNING']"
+
+# 4. After testing - RE-ENABLE (critical!)
+aws glue update-trigger --name <TRIGGER_NAME> --trigger-update State=ENABLED
+```
+
+#### H.2 Pause Step Functions Before Testing
+```bash
+# 1. Check for active executions
+aws stepfunctions list-executions \\
+  --state-machine-arn arn:aws:states:us-east-1:<ACCOUNT>:stateMachine:<SM_NAME> \\
+  --status-filter RUNNING
+
+# 2. If needed, stop test executions only (NEVER stop production executions)
+aws stepfunctions stop-execution \\
+  --execution-arn arn:aws:states:us-east-1:<ACCOUNT>:execution:<SM_NAME>:TEST-<ID> \\
+  --cause "Stopping for test cleanup"
+
+# 3. Disable EventBridge rule (if scheduled)
+aws events disable-rule --name <RULE_NAME>
+
+# 4. After testing - RE-ENABLE
+aws events enable-rule --name <RULE_NAME>
+```
+
+#### H.3 Database Tables for Test Data
+
+**Pattern: Add \`_test_flag\` column to tables requiring production testing:**
+
+```sql
+-- Step 1: Add test flag column (one-time setup)
+ALTER TABLE <TABLE_NAME> ADD COLUMN IF NOT EXISTS _test_flag BOOLEAN DEFAULT FALSE;
+CREATE INDEX IF NOT EXISTS idx_<TABLE_NAME>_test_flag ON <TABLE_NAME>(_test_flag) WHERE _test_flag = TRUE;
+
+-- Step 2: Insert test data with flag
+BEGIN;
+SAVEPOINT test_start;
+INSERT INTO <TABLE_NAME> (..., _test_flag) VALUES (..., TRUE);
+
+-- Step 3: Verify test data
+SELECT * FROM <TABLE_NAME> WHERE _test_flag = TRUE;
+
+-- Step 4: ALWAYS rollback (never commit test data)
+ROLLBACK TO SAVEPOINT test_start;
+ROLLBACK;
+```
+
+**Known Tables (fe-gsdl-poc-database):**
+| Table | Size | Test Flag Support |
+|-------|------|-------------------|
+| \`errortracker\` | 20+ GB | Recommended - add \`_test_flag\` |
+| \`errortracker_v2\` | Migration | Recommended - add \`_test_flag\` |
+
+**Zabbix MySQL Tables (READ-ONLY in most cases):**
+| Table | Modify? | Safe Alternative |
+|-------|---------|------------------|
+| \`hosts\` | NEVER | Use maintenance mode |
+| \`items\` | Via API | Zabbix trapper items |
+| \`triggers\` | Via API | Clone template first |
+| \`history*\` | NEVER | Read-only queries |
+
+#### H.4 Cleanup Verification Checklist
+```bash
+# S3 test data removed?
+aws s3 ls s3://fluenceenergy-ops-data-lakehouse/das_catalog/_test/ --recursive
+
+# Athena test tables dropped?
+aws athena start-query-execution \\
+  --query-string "SHOW TABLES IN test_scratch" \\
+  --work-group primary
+
+# Database test rows removed?
+psql -h fe-gsdl-poc-database... -c "SELECT COUNT(*) FROM <TABLE> WHERE _test_flag = TRUE"
+
+# Triggers re-enabled?
+aws glue get-trigger --name <TRIGGER_NAME> --query "Trigger.State"
+```

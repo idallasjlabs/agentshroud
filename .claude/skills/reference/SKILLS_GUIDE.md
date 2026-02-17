@@ -1,7 +1,7 @@
 # GSDE&G Claude Code Skills Reference
 
 > Complete guide for using Claude Code skills in your GitHub workflow.
-> Skills are invoked with: `/read skills/<category>/<skill-name>.md`
+> Skills are invoked with slash commands: `/qa`, `/tdd`, `/aws`, etc.
 
 ---
 
@@ -9,16 +9,22 @@
 
 | Workflow Stage | Skill to Invoke | Purpose |
 |----------------|-----------------|---------|
-| Starting a task | `workflow/skill-git-guard.md` | Branch naming, workflow rules |
-| Writing code | `workflow/skill-tdd.md` | TDD discipline (Red-Green-Refactor) |
-| Testing in prod | `core/skill-qa.md` | Production testing procedures |
-| Data validation | `data/skill-data-validation.md` | Athena queries, data quality |
-| Using MCP tools | `mcp/skill-mcp-tools.md` | GitHub, Jira, AWS integrations |
-| Code review | `core/skill-cr.md` | Review checklist, security |
-| Creating PR | `core/skill-pr.md` | PR description template |
-| Before merge | `production/skill-prod-safety.md` | Pre-deploy checklist |
-| Incident | `production/skill-incident-response.md` | Rollback procedures |
-| Quick reference | `reference/skill-master-checklist.md` | Combined checklist |
+| Starting a task | `/gg` | Branch naming, workflow rules |
+| Writing code | `/tdd` | TDD discipline (Red-Green-Refactor) |
+| Testing in prod | `/qa` | Production testing procedures |
+| Data validation | `/data` | Athena queries, data quality |
+| Using MCP tools | `/mcp` | GitHub, Jira, AWS integrations |
+| Code review | `/cr` | Review checklist, security |
+| Creating PR | `/pr` | PR description template |
+| Before merge | `/ps` | Pre-deploy checklist |
+| Incident response | `/production` | Rollback procedures |
+| AWS operations | `/aws` | Cloud inventory, cost optimization, FinOps |
+| Root cause analysis | `/8d` | BESS incident investigation, 8D methodology |
+| Mac app inventory | `/mac` | Discover all macOS applications |
+| Security review | `/sec` | SecureClaw 4-layer security review |
+| Environment setup | `/env` | SecureClaw Pi environment management |
+| Project tracking | `/pm` | SecureClaw roadmap and sprint tracking |
+| Quick reference | `/mc` | Combined checklist |
 
 ---
 
@@ -26,14 +32,14 @@
 
 ### 1. Branch Creation
 ```bash
-# Invoke: /read skills/workflow/skill-git-guard.md
+# Invoke: /gg
 git checkout main && git pull
 git checkout -b feat/GSDE-123-add-partition-pruning
 ```
 
 ### 2. Development (TDD)
 ```bash
-# Invoke: /read skills/workflow/skill-tdd.md
+# Invoke: /tdd
 # RED: Write failing test
 pytest tests/test_new_feature.py -v  # Should fail
 
@@ -47,7 +53,7 @@ ruff check . && ruff format .
 
 ### 3. Production Testing (if needed)
 ```bash
-# Invoke: /read skills/core/skill-qa.md
+# Invoke: /qa
 # Follow Section H for service control
 
 # 1. Disable triggers
@@ -62,16 +68,16 @@ aws glue update-trigger --name <TRIGGER> --trigger-update State=ENABLED
 
 ### 4. Pull Request
 ```bash
-# Invoke: /read skills/core/skill-pr.md
+# Invoke: /pr
 gh pr create --title "feat(data-lake): add partition pruning" --body "..."
 
-# Invoke: /read skills/core/skill-cr.md
+# Invoke: /cr
 # Self-review using checklist
 ```
 
 ### 5. Pre-Merge
 ```bash
-# Invoke: /read skills/production/skill-prod-safety.md
+# Invoke: /ps
 # Complete all checklist items:
 # - [ ] RDS snapshot taken
 # - [ ] Rollback plan documented
@@ -84,24 +90,27 @@ gh pr create --title "feat(data-lake): add partition pruning" --body "..."
 
 ```
 .claude/skills/
-├── core/                           # Core development skills
-│   ├── skill-qa.md                 # QA + Production Testing Runbook
-│   ├── skill-cr.md                 # Code Review Checklist
-│   └── skill-pr.md                 # PR Description Generator
-├── workflow/                       # Development process
-│   ├── skill-tdd.md                # TDD Coach
-│   ├── skill-git-guard.md          # GitHub Workflow Rules
-│   └── skill-cicd.md               # CI/CD Pipeline Design
-├── production/                     # Production safety
-│   ├── skill-prod-safety.md        # Pre/Post Deploy Checklist
-│   └── skill-incident-response.md  # Incident Rollback Guide
-├── data/                           # Data operations
-│   └── skill-data-validation.md    # Athena Query Patterns
-├── mcp/                            # Tool integrations
-│   └── skill-mcp-tools.md          # MCP Server Usage
-└── reference/                      # Quick reference
-    ├── skill-master-checklist.md   # Combined Lifecycle
-    └── SKILLS_GUIDE.md             # This document
+├── qa/SKILL.md                    # QA + Production Testing Runbook
+├── cr/SKILL.md                    # Code Review Checklist
+├── pr/SKILL.md                    # PR Description Generator
+├── tdd/SKILL.md                   # TDD Coach
+├── gg/SKILL.md                    # GitHub Workflow Rules
+├── cicd/SKILL.md                  # CI/CD Pipeline Design
+├── ps/SKILL.md                    # Pre/Post Deploy Checklist
+├── production/SKILL.md            # Incident Rollback Guide
+├── data/SKILL.md                  # Athena Query Patterns
+├── mcp/SKILL.md                   # MCP Server Usage
+├── mc/SKILL.md                    # Combined Lifecycle Checklist
+├── aws/SKILL.md                   # AWS Cloud Management & FinOps
+├── 8d/SKILL.md                    # 8D Root Cause Analysis
+├── mac/SKILL.md                   # Mac App Discovery
+└── reference/
+    └── SKILLS_GUIDE.md            # This document
+
+llm_settings/skills/               # Additional SecureClaw-specific skills
+├── sec/SKILL.md                   # Security Review
+├── env/SKILL.md                   # Environment Management
+└── pm/SKILL.md                    # Project Management
 ```
 
 ---
@@ -141,28 +150,42 @@ aws s3 rm s3://fluenceenergy-ops-data-lakehouse/das_catalog/_test/ --recursive
 ## Skills by Category
 
 ### Core Development
-- **QA** (`core/skill-qa.md`) - Production testing procedures, service control, DB test patterns
-- **CR** (`core/skill-cr.md`) - Code review checklist with production safety checks
-- **PR** (`core/skill-pr.md`) - PR description generator with rollback plans
+- **QA** (`/qa`) - Production testing procedures, service control, DB test patterns
+- **CR** (`/cr`) - Code review checklist with production safety checks
+- **PR** (`/pr`) - PR description generator with rollback plans
 
 ### Workflow
-- **TDD** (`workflow/skill-tdd.md`) - Test-driven development discipline
-- **GIT-GUARD** (`workflow/skill-git-guard.md`) - GitHub workflow enforcement
-- **CICD** (`workflow/skill-cicd.md`) - CI/CD pipeline design
+- **TDD** (`/tdd`) - Test-driven development discipline
+- **GIT-GUARD** (`/gg`) - GitHub workflow enforcement
+- **CICD** (`/cicd`) - CI/CD pipeline design
 
 ### Production Safety
-- **PROD-SAFETY** (`production/skill-prod-safety.md`) - Pre/post-deployment checklists
-- **INCIDENT** (`production/skill-incident-response.md`) - Incident response and rollback
+- **PROD-SAFETY** (`/ps`) - Pre/post-deployment checklists
+- **INCIDENT** (`/production`) - Incident response and rollback
 
 ### Data Operations
-- **DATA-VAL** (`data/skill-data-validation.md`) - Data quality validation with cost control
+- **DATA-VAL** (`/data`) - Data quality validation with cost control
+
+### Cloud & FinOps
+- **AWS** (`/aws`) - AWS cloud inventory, cost optimization, FY26 40% reduction plan, script templates (bash/python), tagging governance, EBS/RDS/S3 rightsizing
+
+### Investigation
+- **8D** (`/8d`) - BESS incident root cause analysis, Athena telemetry queries, 8D methodology (D0-D8), anomaly detection, IS/IS NOT matrix, 5 Whys
+
+### System Utilities
+- **MAC** (`/mac`) - macOS application inventory (10 collection methods), categorization (22 categories), JSON manifest + Markdown catalog, web-sourced alternatives
+
+### SecureClaw (Project-Specific)
+- **SEC** (`/sec`) - 4-layer security review (application, container, network, data flow), threat model
+- **ENV** (`/env`) - Raspberry Pi environment management, Docker hardening, ARM64 considerations, CI/CD workflow
+- **PM** (`/pm`) - 8-phase roadmap tracking, continuity files, sprint management, 6-agent coordination
 
 ### MCP Tools
-- **MCP-TOOLS** (`mcp/skill-mcp-tools.md`) - GitHub, Jira, AWS MCP integration
+- **MCP-TOOLS** (`/mcp`) - GitHub, Jira, AWS MCP integration
 
 ### Reference
-- **MASTER** (`reference/skill-master-checklist.md`) - Combined quick-reference checklist
-- **GUIDE** (`reference/SKILLS_GUIDE.md`) - This reference document
+- **MASTER** (`/mc`) - Combined quick-reference checklist
+- **GUIDE** (this document) - Skills reference guide
 
 ---
 
@@ -183,7 +206,7 @@ Since we deploy directly to production:
 3. **Always cleanup and re-enable**
    - Remove test data from S3, database, Athena
    - Re-enable all triggers and schedules
-   - Verify cleanup with checklist (skill-qa.md Section H.4)
+   - Verify cleanup with checklist (`/qa` Section H.4)
 
 4. **Document everything**
    - Timestamped test logs in PR
@@ -197,7 +220,7 @@ Since we deploy directly to production:
 ### P1 Incident Response
 1. **Assess** (5 min max) - Check Glue, Step Functions, CloudWatch, S3, RDS
 2. **Communicate** - Post in #gsde-incidents, create Jira ticket, call lead
-3. **Rollback** - Use procedures in `production/skill-incident-response.md`
+3. **Rollback** - Use `/production` for detailed rollback procedures
 4. **Post-mortem** - Blameless review within 48 hours
 
 ### Emergency Contacts
@@ -212,30 +235,48 @@ Since we deploy directly to production:
 
 ```bash
 # When starting a new feature
-/read skills/workflow/skill-git-guard.md
-/read skills/workflow/skill-tdd.md
+/gg
+/tdd
 
 # When testing in production
-/read skills/core/skill-qa.md
+/qa
 
 # When validating data
-/read skills/data/skill-data-validation.md
+/data
 
 # When using MCP tools
-/read skills/mcp/skill-mcp-tools.md
+/mcp
 
 # Before creating PR
-/read skills/core/skill-pr.md
-/read skills/core/skill-cr.md
+/pr
+/cr
 
 # Before merge
-/read skills/production/skill-prod-safety.md
+/ps
 
 # During incident
-/read skills/production/skill-incident-response.md
+/production
+
+# AWS operations
+/aws
+
+# Root cause analysis
+/8d
+
+# Mac app inventory
+/mac
+
+# SecureClaw security review
+/sec
+
+# SecureClaw environment setup
+/env
+
+# SecureClaw project tracking
+/pm
 
 # Quick reference
-/read skills/reference/skill-master-checklist.md
+/mc
 ```
 
 ---
@@ -250,6 +291,6 @@ Since we deploy directly to production:
 
 ---
 
-**Last Updated:** 2026-02-09
+**Last Updated:** 2026-02-16
 **Repository:** LLM_Settings
 **Deployment:** This file is copied to target repos via `llm-init.sh`

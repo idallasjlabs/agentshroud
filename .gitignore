@@ -10,6 +10,9 @@
 llm_settings/env/.llm_env
 llm_settings/mcp-servers/**/.env
 
+# Gitleaks security reports
+**/*gitleaks-report*.json
+
 # Keys & Certificates
 *.pem
 *.key
@@ -32,10 +35,13 @@ secrets.yml
 config.json
 application-secrets.properties
 .token
+*_token
 api_keys.txt
 
 # Passwords & Secrets (pattern matching)
 *password*
+*secret*
+*token*
 
 # SSH & GPG
 .ssh/
@@ -359,38 +365,6 @@ mkdocs/
 # PROJECT SPECIFIC
 # =============================================================================
 
-# SecureClaw - Proxy Layer Framework
-secureclaw.yaml.local
-secureclaw.*.yaml
-
-# Gateway API
-gateway/data/
-gateway/*.db
-gateway/*.sqlite*
-gateway/.env
-gateway/logs/
-
-# Dashboard
-dashboard/build/
-dashboard/dist/
-dashboard/.env.local
-dashboard/.env.production.local
-
-# Docker volumes and runtime data
-docker/data/
-docker/volumes/
-docker/logs/
-docker/.env
-
-# Shortcuts (contain auth tokens)
-shortcuts/*.env
-shortcuts/config.local.json
-
-# Browser extension builds
-browser-extension/build/
-browser-extension/dist/
-browser-extension/web-ext-artifacts/
-
 # Large data files (adjust as needed for your data lakehouse work)
 *.csv.gz
 *.parquet.gz
@@ -418,17 +392,3 @@ data/processed/
 # Core dumps
 core
 core.*
-.venv311/
-
-# MCP server secrets
-llm_settings/mcp-servers/github/.env
-**/.env
-!**/.env.example
-
-# Catch-all for accidentally created secret/token files
-*_secret*
-*_token*
-*.secret
-*.token
-secret_*
-token_*
