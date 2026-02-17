@@ -94,8 +94,10 @@ body{background:var(--bg);color:var(--text);font-family:-apple-system,BlinkMacSy
 <script>
 (function(){
   const params = new URLSearchParams(location.search);
-  const token = params.get('token') || '';
+  let token = params.get('token') || '';
   const wsProto = location.protocol === 'https:' ? 'wss:' : 'ws:';
+
+
   const feedEl = document.getElementById('feed');
   const sshListEl = document.getElementById('sshList');
   const approvalListEl = document.getElementById('approvalList');
@@ -111,9 +113,8 @@ body{background:var(--bg);color:var(--text);font-family:-apple-system,BlinkMacSy
   let feedEmpty = true;
 
   function connect() {
-    ws = new WebSocket(wsProto + '//' + location.host + '/ws/activity');
+    ws = new WebSocket(wsProto + '//' + location.host + '/ws/activity?token=' + encodeURIComponent(token));
     ws.onopen = function() {
-      ws.send(JSON.stringify({token: token}));
     };
     ws.onmessage = function(e) {
       const msg = JSON.parse(e.data);
@@ -252,7 +253,15 @@ body{background:var(--bg);color:var(--text);font-family:-apple-system,BlinkMacSy
 
   setInterval(updateUptime, 1000);
   setInterval(fetchStats, 30000);
-  connect();
+  // Connect WS: use token from URL if available, otherwise fetch via cookie auth
+  if (token) {
+    connect();
+  } else {
+    fetch('/dashboard/ws-token', {credentials: 'same-origin'})
+      .then(function(r) { return r.ok ? r.json() : Promise.reject(); })
+      .then(function(d) { token = d.token; connect(); })
+      .catch(function() { console.warn('Could not fetch WS token'); });
+  }
   if (Notification.permission === 'default') Notification.requestPermission();
 })();
 </script>
