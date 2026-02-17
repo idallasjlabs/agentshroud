@@ -105,3 +105,48 @@ A task is done when:
 - **Claude Code** is the PRIMARY developer (via `.claude/agents/developer`)
 - All other agents are SECONDARY — they do not write production code
 - See `.claude/agents/` for the full team
+
+---
+
+## Multi-Model Peer Review (Standard Process)
+
+Every branch must pass peer review from all three models before PR.
+
+### Workflow
+1. **Claude** (primary) develops on a feature branch using TDD
+2. **Gemini + Codex** review the diff via `scripts/peer-review.sh`
+3. Reviews saved to `reviews/gemini-review-*.md` and `reviews/codex-review-*.md`
+4. **Claude** reads both review files, fixes CRITICAL/HIGH issues, documents MEDIUM/LOW as TODOs
+5. Tests must pass after fixes
+6. PR opened only after all three models are satisfied
+
+### Running Peer Review
+```bash
+# Review current branch vs main
+./scripts/peer-review.sh branch
+
+# Review staged changes only
+./scripts/peer-review.sh staged
+
+# Review last commit
+./scripts/peer-review.sh last
+```
+
+### After Review — Claude Fixes
+```bash
+claude -p "Read reviews/gemini-review-TIMESTAMP.md and reviews/codex-review-TIMESTAMP.md. List all findings by severity. Fix CRITICAL and HIGH items. Create TODO list for MEDIUM and LOW. Run tests after fixes."
+```
+
+### Models
+| Model | Role | CLI |
+|-------|------|-----|
+| Claude (Anthropic) | Primary developer | `claude` |
+| Gemini (Google) | Peer reviewer | `gemini` |
+| Codex (OpenAI) | Peer reviewer | `codex` |
+
+### Rules
+- Never merge without peer review from at least 2 models
+- CRITICAL findings block merge
+- HIGH findings should be fixed before merge
+- MEDIUM/LOW can be tracked as TODOs
+- Reviews are committed to `reviews/` for audit trail

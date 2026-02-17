@@ -34,6 +34,15 @@ class PIISanitizer:
         self.analyzer = None
         self.anonymizer = None
 
+        # Precompile regex patterns for block_credentials performance
+        self._totp_pattern = re.compile(
+            r'(?:totp|otp|one.time|verification|2fa|mfa)[:\s]+\d{6}\b',
+            re.IGNORECASE | re.MULTILINE
+        )
+        self._entropy_pattern = re.compile(
+            r'\b(?=[A-Za-z0-9!@#$%^&*]*[A-Z])(?=[A-Za-z0-9!@#$%^&*]*[a-z])(?=[A-Za-z0-9!@#$%^&*]*[0-9])(?=[A-Za-z0-9!@#$%^&*]*[!@#$%^&*])[A-Za-z0-9!@#$%^&*]{16,}\b'
+        )
+
         if config.engine == "presidio":
             self._init_presidio()
         else:
@@ -326,9 +335,9 @@ class PIISanitizer:
             (r'secret[:\s]+[\w\-]{20,}', "secret"),
             (r'token[:\s]+[\w\-]{20,}', "token"),
             # TOTP codes (only in context of OTP/TOTP/one-time/verification)
-            (r'(?:totp|otp|one.time|verification|2fa|mfa)[:\s]+\d{6}\b', "totp_code"),
+            (self._totp_pattern, "totp_code"),
             # High entropy strings that look like passwords (require mixed case + special chars)
-            (r'\b(?=[A-Za-z0-9!@#$%^&*]*[A-Z])(?=[A-Za-z0-9!@#$%^&*]*[a-z])(?=[A-Za-z0-9!@#$%^&*]*[0-9])(?=[A-Za-z0-9!@#$%^&*]*[!@#$%^&*])[A-Za-z0-9!@#$%^&*]{16,}\b', "high_entropy_string"),
+            (self._entropy_pattern, "high_entropy_string"),
             # SSH private keys
             (r'-----BEGIN (?:RSA |OPENSSH )?PRIVATE KEY-----', "ssh_private_key"),
             # Credit cards (catch in case PII sanitizer missed)
@@ -339,7 +348,13 @@ class PIISanitizer:
 
         # Check for credential patterns
         for pattern, cred_type in credential_patterns:
-            if re.search(pattern, content, re.IGNORECASE | re.MULTILINE):
+            # Pattern can be either a string or compiled regex
+            if isinstance(pattern, re.Pattern):
+                match = pattern.search(content)
+            else:
+                match = re.search(pattern, content, re.IGNORECASE | re.MULTILINE)
+
+            if match:
                 logger.warning(
                     f"Blocked {cred_type} from being displayed via {source}"
                 )
