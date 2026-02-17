@@ -4,9 +4,9 @@
 
 set -euo pipefail
 
-ITEM="$1"
+ITEM="${1:-}"
 
-if [ -z "${ITEM:-}" ]; then
+if [ -z "$ITEM" ]; then
     echo "Usage: get-credential <credential-name>"
     echo ""
     echo "Available credentials:"
@@ -17,49 +17,49 @@ if [ -z "${ITEM:-}" ]; then
     exit 1
 fi
 
-# Authenticate with 1Password using --raw (no eval)
-authenticate() {
-    local email password secret_key
-    email=$(cat /run/secrets/1password_bot_email 2>/dev/null || echo "")
-    password=$(cat /run/secrets/1password_bot_master_password 2>/dev/null || echo "")
-    secret_key=$(cat /run/secrets/1password_bot_secret_key 2>/dev/null || echo "")
+# Fast-path: use env vars when set (avoids 1Password call entirely)
+case "$ITEM" in
+    gmail-app-password)
+        if [ -n "${GMAIL_APP_PASSWORD:-}" ]; then
+            echo "$GMAIL_APP_PASSWORD"
+            exit 0
+        fi
+        ;;
+    gmail-username)
+        if [ -n "${GMAIL_USERNAME:-}" ]; then
+            echo "$GMAIL_USERNAME"
+            exit 0
+        fi
+        ;;
+esac
 
-    if [ -z "$email" ] || [ -z "$password" ]; then
-        echo "ERROR: 1Password credentials not found" >&2
-        exit 1
-    fi
+# Source shared auth library and authenticate
+SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+# shellcheck source=op-auth-common.sh
+source "$SCRIPT_DIR/op-auth-common.sh"
 
-    OP_SESSION=$(echo "$password" | op account add \
-        --address my.1password.com \
-        --email "$email" \
-        --secret-key "$secret_key" \
-        --signin --raw 2>/dev/null || echo "")
+if ! op_authenticate; then
+    echo "ERROR: Failed to authenticate with 1Password" >&2
+    exit 1
+fi
 
-    unset password secret_key
-
-    if [ -z "$OP_SESSION" ]; then
-        echo "ERROR: Failed to authenticate with 1Password" >&2
-        exit 1
-    fi
-}
-
-authenticate
-
+# Item ID avoids title containing '@' which breaks op:// URIs
+# Item: "Gmail - therealidallasj" in vault "SecureClaw Bot Credentials"
 VAULT="SecureClaw Bot Credentials"
-ITEM_NAME="Gmail - therealidallasj"
+ITEM_ID="he6wcfkfieekqkomuxdunal2xa"
 
 case "$ITEM" in
     gmail-username)
-        op item get "$ITEM_NAME" --vault "$VAULT" --fields label=username --reveal --session "$OP_SESSION"
+        op read --session "$OP_SESSION" "op://$VAULT/$ITEM_ID/username"
         ;;
     gmail-password)
-        op item get "$ITEM_NAME" --vault "$VAULT" --fields label=password --reveal --session "$OP_SESSION"
+        op read --session "$OP_SESSION" "op://$VAULT/$ITEM_ID/password"
         ;;
     gmail-app-password)
-        op item get "$ITEM_NAME" --vault "$VAULT" --fields label="openclaw bot password" --reveal --session "$OP_SESSION"
+        op read --session "$OP_SESSION" "op://$VAULT/$ITEM_ID/openclaw bot password"
         ;;
     gmail-totp)
-        op item get "$ITEM_NAME" --vault "$VAULT" --otp --session "$OP_SESSION"
+        op item get "$ITEM_ID" --vault "$VAULT" --otp --session "$OP_SESSION"
         ;;
     list)
         echo "Available credentials in $VAULT:"
