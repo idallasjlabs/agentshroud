@@ -32,8 +32,11 @@ def sync_client(test_config):
 
 @pytest.mark.asyncio
 async def test_dashboard_serves_html(client):
-    """GET /dashboard with valid auth serves HTML"""
-    resp = await client.get("/dashboard?token=test-token-12345")
+    """GET /dashboard with valid cookie serves HTML"""
+    resp = await client.get(
+        "/dashboard",
+        cookies={"dashboard_token": "test-token-12345"},
+    )
     assert resp.status_code == 200
     assert "text/html" in resp.headers["content-type"]
     assert "SecureClaw" in resp.text
@@ -68,17 +71,15 @@ async def test_dashboard_stats_requires_auth(client):
 
 
 def test_ws_activity_connects(sync_client):
-    """WebSocket /ws/activity connects and authenticates"""
-    with sync_client.websocket_connect("/ws/activity") as ws:
-        ws.send_json({"token": "test-token-12345"})
+    """WebSocket /ws/activity connects and authenticates via query param"""
+    with sync_client.websocket_connect("/ws/activity?token=test-token-12345") as ws:
         msg = ws.receive_json()
         assert msg["type"] == "authenticated"
 
 
 def test_ws_activity_receives_events(sync_client):
     """WebSocket /ws/activity receives emitted events"""
-    with sync_client.websocket_connect("/ws/activity") as ws:
-        ws.send_json({"token": "test-token-12345"})
+    with sync_client.websocket_connect("/ws/activity?token=test-token-12345") as ws:
         auth_msg = ws.receive_json()
         assert auth_msg["type"] == "authenticated"
 
@@ -94,17 +95,20 @@ def test_ws_activity_receives_events(sync_client):
 
 
 def test_ws_activity_requires_auth(sync_client):
-    """WebSocket /ws/activity rejects bad auth"""
-    with sync_client.websocket_connect("/ws/activity") as ws:
-        ws.send_json({"token": "wrong-token"})
-        msg = ws.receive_json()
-        assert msg["type"] == "error"
+    """WebSocket /ws/activity rejects bad auth during handshake"""
+    from starlette.websockets import WebSocketDisconnect
+    with pytest.raises(Exception):
+        with sync_client.websocket_connect("/ws/activity?token=wrong-token") as ws:
+            ws.receive_json()
 
 
 @pytest.mark.asyncio
 async def test_dashboard_has_csp_header(client):
     """GET /dashboard includes Content-Security-Policy header"""
-    resp = await client.get("/dashboard?token=test-token-12345")
+    resp = await client.get(
+        "/dashboard",
+        cookies={"dashboard_token": "test-token-12345"},
+    )
     assert resp.status_code == 200
     csp = resp.headers.get("content-security-policy", "")
     assert "default-src" in csp
@@ -114,6 +118,9 @@ async def test_dashboard_has_csp_header(client):
 @pytest.mark.asyncio
 async def test_dashboard_xss_prevention(client):
     """Dashboard HTML uses data attributes instead of onclick for approvals"""
-    resp = await client.get("/dashboard?token=test-token-12345")
+    resp = await client.get(
+        "/dashboard",
+        cookies={"dashboard_token": "test-token-12345"},
+    )
     assert "onclick" not in resp.text
     assert "data-action" in resp.text or "data-id" in resp.text or "addEventListener" in resp.text
