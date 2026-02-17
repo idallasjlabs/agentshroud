@@ -18,6 +18,7 @@ llm-init() {
     echo "🚀 Deploying LLM AI tool configurations..."
     echo "   Source: $source_dir"
     echo "   Target: $target_dir"
+    echo "   Mode: Synchronize (add new, update existing, remove obsolete)"
     echo ""
 
     # Verify source directory exists
@@ -29,6 +30,13 @@ llm-init() {
     # Create target directory if it doesn't exist
     if [ ! -d "$target_dir" ]; then
         echo "❌ Error: Target directory not found: $target_dir"
+        return 1
+    fi
+
+    # Check for rsync (required for synchronization)
+    if ! command -v rsync &> /dev/null; then
+        echo "❌ Error: rsync not found (required for synchronization)"
+        echo "   Install with: brew install rsync"
         return 1
     fi
 
@@ -142,19 +150,31 @@ llm-init() {
     # 1. Claude Code (PRIMARY Developer)
     echo "1️⃣  Claude Code (PRIMARY)"
     if [ -d "$source_dir/.claude" ]; then
-        cp -n -pr "$source_dir/.claude" .
-        # Remove local/sensitive files that should not be deployed
-        rm -f .claude/settings.local.json 2>/dev/null
-        find .claude -name '*.local.*' -delete 2>/dev/null
-        rm -rf .claude/.cache .claude/tmp .claude/logs 2>/dev/null
-        echo "   ✅ .claude/ directory copied"
+        rsync -a --delete \
+            --exclude='settings.local.json' \
+            --exclude='*.local.*' \
+            --exclude='.cache/' \
+            --exclude='tmp/' \
+            --exclude='logs/' \
+            --exclude='.credentials.json' \
+            --exclude='history.jsonl' \
+            --exclude='debug/' \
+            --exclude='file-history/' \
+            --exclude='paste-cache/' \
+            --exclude='session-env/' \
+            --exclude='shell-snapshots/' \
+            --exclude='stats-cache.json' \
+            --exclude='statsig/' \
+            --exclude='todos/' \
+            "$source_dir/.claude/" .claude/
+        echo "   ✅ .claude/ synchronized (secrets preserved)"
     else
         echo "   ⚠️  .claude/ directory not found in source"
     fi
 
     if [ -f "$source_dir/CLAUDE.md" ]; then
-        cp -n -a "$source_dir/CLAUDE.md" .
-        echo "   ✅ CLAUDE.md copied"
+        rsync -a "$source_dir/CLAUDE.md" .
+        echo "   ✅ CLAUDE.md synchronized"
     else
         echo "   ⚠️  CLAUDE.md not found in source"
     fi
@@ -176,11 +196,14 @@ llm-init() {
     # 2. Gemini CLI (SECONDARY Agent)
     echo "2️⃣  Gemini CLI (SECONDARY)"
     if [ -d "$source_dir/.gemini" ]; then
-        cp -n -pr "$source_dir/.gemini" .
-        # Remove local/sensitive files that should not be deployed
-        rm -f .gemini/settings.local.json 2>/dev/null
-        find .gemini -name '*.local.*' -delete 2>/dev/null
-        echo "   ✅ .gemini/ directory copied"
+        rsync -a --delete \
+            --exclude='settings.local.json' \
+            --exclude='*.local.*' \
+            --exclude='.cache/' \
+            --exclude='tmp/' \
+            --exclude='logs/' \
+            "$source_dir/.gemini/" .gemini/
+        echo "   ✅ .gemini/ synchronized (secrets preserved)"
     else
         echo "   ⚠️  .gemini/ directory not found in source"
     fi
@@ -189,18 +212,21 @@ llm-init() {
     # 3. Codex CLI (TERTIARY Agent)
     echo "3️⃣  Codex CLI (TERTIARY)"
     if [ -d "$source_dir/.codex" ]; then
-        cp -n -pr "$source_dir/.codex" .
-        # Remove local/sensitive files that should not be deployed
-        rm -f .codex/config.local.toml 2>/dev/null
-        find .codex -name '*.local.*' -delete 2>/dev/null
-        echo "   ✅ .codex/ directory copied"
+        rsync -a --delete \
+            --exclude='config.local.toml' \
+            --exclude='*.local.*' \
+            --exclude='.cache/' \
+            --exclude='tmp/' \
+            --exclude='logs/' \
+            "$source_dir/.codex/" .codex/
+        echo "   ✅ .codex/ synchronized (secrets preserved)"
     else
         echo "   ⚠️  .codex/ directory not found in source"
     fi
 
     if [ -f "$source_dir/AGENTS.md" ]; then
-        cp -n -a "$source_dir/AGENTS.md" .
-        echo "   ✅ AGENTS.md copied"
+        rsync -a "$source_dir/AGENTS.md" .
+        echo "   ✅ AGENTS.md synchronized"
     else
         echo "   ⚠️  AGENTS.md not found in source"
     fi
@@ -209,29 +235,23 @@ llm-init() {
     # 4. GitHub Copilot CLI (QUATERNARY Agent)
     echo "4️⃣  GitHub Copilot CLI (QUATERNARY)"
     if [ -d "$source_dir/.github" ]; then
-        # Only copy .github if it doesn't exist, or merge agents/ subdirectory
-        if [ ! -d ".github" ]; then
-            cp -n -pr "$source_dir/.github" .
-            echo "   ✅ .github/ directory copied"
-        else
-            # Merge agents directory
-            if [ -d "$source_dir/.github/agents" ]; then
-                mkdir -p .github/agents
-                cp -n -pr "$source_dir/.github/agents/"* .github/agents/ 2>/dev/null
-                echo "   ✅ .github/agents/ merged"
-            fi
+        # Only sync .github/agents, COPILOT_CLI_SETUP.md, and copilot-config.json.example
+        # (Avoid overwriting repo's own .github/workflows, CODEOWNERS, etc.)
+        if [ -d "$source_dir/.github/agents" ]; then
+            mkdir -p .github/agents
+            rsync -a --delete \
+                "$source_dir/.github/agents/" .github/agents/
+            echo "   ✅ .github/agents/ synchronized"
+        fi
 
-            # Copy setup documentation
-            if [ -f "$source_dir/.github/COPILOT_CLI_SETUP.md" ]; then
-                cp -n -a "$source_dir/.github/COPILOT_CLI_SETUP.md" .github/
-                echo "   ✅ .github/COPILOT_CLI_SETUP.md copied"
-            fi
+        if [ -f "$source_dir/.github/COPILOT_CLI_SETUP.md" ]; then
+            rsync -a "$source_dir/.github/COPILOT_CLI_SETUP.md" .github/
+            echo "   ✅ .github/COPILOT_CLI_SETUP.md synchronized"
+        fi
 
-            # Copy config example
-            if [ -f "$source_dir/.github/copilot-config.json.example" ]; then
-                cp -n -a "$source_dir/.github/copilot-config.json.example" .github/
-                echo "   ✅ .github/copilot-config.json.example copied"
-            fi
+        if [ -f "$source_dir/.github/copilot-config.json.example" ]; then
+            rsync -a "$source_dir/.github/copilot-config.json.example" .github/
+            echo "   ✅ .github/copilot-config.json.example synchronized"
         fi
     else
         echo "   ⚠️  .github/ directory not found in source"
@@ -241,63 +261,45 @@ llm-init() {
     # 5. MCP Configuration
     echo "5️⃣  MCP Servers"
     if [ -f "$source_dir/.mcp.json" ]; then
-        cp -n -a "$source_dir/.mcp.json" .
-        echo "   ✅ .mcp.json copied"
+        rsync -a "$source_dir/.mcp.json" .
+        echo "   ✅ .mcp.json synchronized"
     else
         echo "   ⚠️  .mcp.json not found in source"
     fi
     echo ""
 
-    # 6. LLM Settings (all subdirectories deployed recursively)
+    # 6. LLM Settings (all subdirectories synchronized recursively)
     echo "6️⃣  LLM Settings Directory"
     if [ -d "$source_dir/llm_settings" ]; then
-        # Create llm_settings directory structure
         mkdir -p llm_settings
 
-        # Define all subdirectories to deploy recursively
-        local llm_subdirs=(
-            "docs"
-            "env"
-            "git-hooks"
-            "mcp-servers"
-            "scripts"
-            "skills"
-            "templates"
-        )
-
-        for subdir in "${llm_subdirs[@]}"; do
-            if [ -d "$source_dir/llm_settings/$subdir" ]; then
-                cp -n -pr "$source_dir/llm_settings/$subdir" llm_settings/
-                echo "   ✅ llm_settings/$subdir/ copied (recursive)"
-            else
-                echo "   ⚠️  llm_settings/$subdir/ not found in source"
-            fi
-        done
-
-        # Also copy any loose files at the llm_settings root level
-        find "$source_dir/llm_settings" -maxdepth 1 -type f -print0 2>/dev/null | while IFS= read -r -d '' file; do
-            cp -n -a "$file" llm_settings/
-            echo "   ✅ llm_settings/$(basename "$file") copied"
-        done
-
-        # Post-copy cleanup: remove sensitive/local files
-        echo ""
-        echo "   🧹 Cleaning sensitive files..."
-
-        # Remove .env files from mcp-servers (keep .env.example)
-        find llm_settings/mcp-servers -name '.env' -delete 2>/dev/null
-        find llm_settings/mcp-servers -name '.env.*' ! -name '.env.example' -delete 2>/dev/null
-        rm -rf llm_settings/mcp-servers/github/.claude 2>/dev/null
-
-        # Remove any local/sensitive files across all subdirs
-        find llm_settings -name '*.local.*' -delete 2>/dev/null
-        find llm_settings -name '.DS_Store' -delete 2>/dev/null
+        # Synchronize llm_settings with secrets/local files excluded
+        rsync -a --delete \
+            --exclude='.env' \
+            --exclude='.env.*' \
+            --exclude='!.env.example' \
+            --exclude='*.local.*' \
+            --exclude='.DS_Store' \
+            --exclude='.cache/' \
+            --exclude='tmp/' \
+            --exclude='logs/' \
+            --exclude='*token*' \
+            --exclude='*secret*' \
+            --exclude='*credential*' \
+            --exclude='*password*' \
+            --exclude='*.pem' \
+            --exclude='*.key' \
+            --exclude='mcp-servers/*/.claude' \
+            --filter='protect .env' \
+            --filter='protect .env.*' \
+            --filter='protect *.local.*' \
+            "$source_dir/llm_settings/" llm_settings/
 
         # Make scripts executable
-        find llm_settings/scripts -name '*.sh' -exec chmod +x {} \; 2>/dev/null || true
-        find llm_settings/git-hooks -name '*.sh' -exec chmod +x {} \; 2>/dev/null || true
+        find llm_settings/scripts -type f -name '*.sh' -exec chmod +x {} \; 2>/dev/null || true
+        find llm_settings/git-hooks -type f -exec chmod +x {} \; 2>/dev/null || true
 
-        echo "   ✅ Sensitive files cleaned, scripts made executable"
+        echo "   ✅ llm_settings/ synchronized (secrets preserved, scripts executable)"
     else
         echo "   ⚠️  llm_settings/ directory not found in source"
     fi
@@ -306,47 +308,47 @@ llm-init() {
     # 7. Git Security Configuration
     echo "7️⃣  Git Security Configuration"
 
-    # Deploy .gitignore
+    # Deploy .gitignore (prompt if exists)
     if [ -f "$source_dir/llm_settings/templates/.gitignore" ]; then
         if [ -f ".gitignore" ]; then
             echo "   ⚠️  .gitignore already exists"
             read -p "   Replace with comprehensive template? [y/N] " -n 1 -r
             echo
             if [[ $REPLY =~ ^[Yy]$ ]]; then
-                cp -a "$source_dir/llm_settings/templates/.gitignore" .
+                rsync -a "$source_dir/llm_settings/templates/.gitignore" .
                 echo "   ✅ .gitignore replaced with template"
             else
                 echo "   ⏭️  Skipped .gitignore (kept existing)"
             fi
         else
-            cp -a "$source_dir/llm_settings/templates/.gitignore" .
-            echo "   ✅ .gitignore copied from template"
+            rsync -a "$source_dir/llm_settings/templates/.gitignore" .
+            echo "   ✅ .gitignore deployed from template"
         fi
     else
         echo "   ⚠️  .gitignore template not found in source"
     fi
 
-    # Deploy .pre-commit-config.yaml
+    # Deploy .pre-commit-config.yaml (prompt if exists)
     if [ -f "$source_dir/llm_settings/templates/.pre-commit-config.yaml" ]; then
         if [ -f ".pre-commit-config.yaml" ]; then
             echo "   ⚠️  .pre-commit-config.yaml already exists"
             read -p "   Replace with template? [y/N] " -n 1 -r
             echo
             if [[ $REPLY =~ ^[Yy]$ ]]; then
-                cp -a "$source_dir/llm_settings/templates/.pre-commit-config.yaml" .
+                rsync -a "$source_dir/llm_settings/templates/.pre-commit-config.yaml" .
                 echo "   ✅ .pre-commit-config.yaml replaced"
             else
                 echo "   ⏭️  Skipped .pre-commit-config.yaml (kept existing)"
             fi
         else
-            cp -a "$source_dir/llm_settings/templates/.pre-commit-config.yaml" .
-            echo "   ✅ .pre-commit-config.yaml copied"
+            rsync -a "$source_dir/llm_settings/templates/.pre-commit-config.yaml" .
+            echo "   ✅ .pre-commit-config.yaml deployed"
         fi
     else
         echo "   ⚠️  .pre-commit-config.yaml template not found in source"
     fi
 
-    # Deploy .gitallowed
+    # Deploy .gitallowed (merge if exists)
     if [ -f "$source_dir/llm_settings/templates/.gitallowed" ]; then
         if [ -f ".gitallowed" ]; then
             echo "   ⚠️  .gitallowed already exists"
@@ -362,11 +364,19 @@ llm-init() {
                 echo "   ⏭️  Skipped .gitallowed (kept existing)"
             fi
         else
-            cp -a "$source_dir/llm_settings/templates/.gitallowed" .
-            echo "   ✅ .gitallowed copied from template"
+            rsync -a "$source_dir/llm_settings/templates/.gitallowed" .
+            echo "   ✅ .gitallowed deployed from template"
         fi
     else
         echo "   ⚠️  .gitallowed template not found in source"
+    fi
+
+    # Deploy gitleaks.toml (gitleaks configuration)
+    if [ -f "$source_dir/llm_settings/git-hooks/gitleaks.toml" ]; then
+        rsync -a "$source_dir/llm_settings/git-hooks/gitleaks.toml" .
+        echo "   ✅ gitleaks.toml deployed (custom gitleaks config)"
+    else
+        echo "   ⚠️  gitleaks.toml not found in source"
     fi
 
     # Check if this is a git repository
@@ -444,10 +454,16 @@ llm-init() {
     echo ""
 
     echo "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
-    echo "✅ LLM AI tool configurations deployed successfully!"
+    echo "✅ LLM AI tool configurations synchronized successfully!"
     echo "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
     echo ""
-    echo "📁 Files deployed:"
+    echo "🔄 Synchronization behavior:"
+    echo "   ✅ Added new files from source"
+    echo "   ✅ Updated existing files to match source"
+    echo "   ✅ Removed obsolete files (no longer in source)"
+    echo "   ✅ Preserved secrets (.env, *.local.*, credentials, tokens)"
+    echo ""
+    echo "📁 Files synchronized:"
     echo "   - .claude/                      (agents, skills, hooks, settings)"
     echo "   - .gemini/                      (settings.json with MCP + GEMINI.md context)"
     echo "   - .codex/                       (config.toml with MCP)"
