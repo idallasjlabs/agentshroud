@@ -33,6 +33,7 @@ from .models import (
 )
 from .router import ForwardError, MultiAgentRouter
 from .sanitizer import PIISanitizer
+from .event_bus import EventBus, make_event
 # Configure logging
 logging.basicConfig(
     level=logging.INFO,
@@ -53,6 +54,7 @@ class AppState:
     router: MultiAgentRouter
     approval_queue: ApprovalQueue
     start_time: float
+    event_bus: EventBus
 
 
 app_state = AppState()
@@ -121,6 +123,10 @@ async def lifespan(app: FastAPI):
         logger.info('SSH proxy initialized')
     else:
         app_state.ssh_proxy = None
+
+    # Initialize event bus
+    app_state.event_bus = EventBus()
+    logger.info("Event bus initialized")
 
     # Record start time
     app_state.start_time = time.time()
@@ -358,6 +364,19 @@ async def forward_content(request: ForwardRequest, auth: AuthRequired):
             detail="Failed to record in ledger",
         )
 
+    # Emit forward event
+    await app_state.event_bus.emit(make_event(
+        "forward", f"Content forwarded from {request.source} to {forwarded_to}",
+        {"source": request.source, "content_type": request.content_type, "forwarded_to": forwarded_to},
+        "warning" if sanitized else "info"
+    ))
+    if sanitized:
+        await app_state.event_bus.emit(make_event(
+            "pii_detected", f"{len(sanitization_result.redactions)} PII entities redacted",
+            {"types": sanitization_result.entity_types_found, "count": len(sanitization_result.redactions)},
+            "warning"
+        ))
+
     # Step 5: Return response
     response_data = {
         "id": ledger_entry.id,
@@ -469,6 +488,10 @@ async def submit_approval_request(request: ApprovalRequest, auth: AuthRequired):
     Authentication required.
     """
     item = await app_state.approval_queue.submit(request)
+    await app_state.event_bus.emit(make_event(
+        "approval_submitted", f"Approval requested: {request.action_type} - {request.description}",
+        {"request_id": item.request_id, "action_type": request.action_type},
+    ))
     return item
 
 
@@ -484,6 +507,10 @@ async def decide_approval(
         item = await app_state.approval_queue.decide(
             request_id=request_id, approved=decision.approved, reason=decision.reason
         )
+        await app_state.event_bus.emit(make_event(
+            "approval_decided", f"Approval {'approved' if decision.approved else 'rejected'}: {request_id}",
+            {"request_id": request_id, "approved": decision.approved},
+        ))
         return item
 
     except KeyError:
@@ -522,6 +549,10 @@ async def approval_websocket(websocket: WebSocket):
 
         if not token or token != app_state.config.auth_token:
             await websocket.send_json({"type": "error", "message": "Authentication failed"})
+            await app_state.event_bus.emit(make_event(
+                "auth_failed", "WebSocket authentication failed",
+                {}, "warning"
+            ))
             await websocket.close()
             return
 
@@ -579,6 +610,81 @@ if __name__ == "__main__":
     uvicorn.run(app, host="127.0.0.1", port=8080)
 
 
+
+# === Dashboard Endpoints ===
+
+
+@app.get("/dashboard")
+async def serve_dashboard(token: str | None = Query(None)):
+    """Serve the dashboard HTML (requires auth via query param)"""
+    if not token or token != app_state.config.auth_token:
+        return JSONResponse(status_code=403, content={"detail": "Forbidden"})
+    dashboard_path = Path(__file__).parent.parent / "dashboard" / "index.html"
+    if dashboard_path.exists():
+        return HTMLResponse(dashboard_path.read_text())
+    return HTMLResponse("<h1>Dashboard not found</h1>", status_code=404)
+
+
+@app.get("/dashboard/stats")
+async def dashboard_stats(auth: AuthRequired):
+    """JSON stats for dashboard"""
+    uptime = time.time() - app_state.start_time
+    ledger_stats = await app_state.ledger.get_stats()
+    pending = await app_state.approval_queue.get_pending()
+    bus_stats = app_state.event_bus.get_stats()
+    pending_items = [
+        {"request_id": p.request_id, "action_type": p.action_type,
+         "description": p.description, "submitted_at": p.submitted_at}
+        for p in pending
+    ]
+    return {
+        "uptime_seconds": uptime,
+        "ledger_entries": ledger_stats.get("total_entries", 0),
+        "pending_approvals": len(pending),
+        "pending_approval_items": pending_items,
+        **bus_stats,
+    }
+
+
+@app.websocket("/ws/activity")
+async def activity_websocket(websocket: WebSocket):
+    """WebSocket for real-time activity feed"""
+    await websocket.accept()
+
+    try:
+        auth_msg = await websocket.receive_json()
+        token = auth_msg.get("token")
+        if not token or token != app_state.config.auth_token:
+            await websocket.send_json({"type": "error", "message": "Authentication failed"})
+            await websocket.close()
+            return
+
+        await websocket.send_json({"type": "authenticated"})
+
+        # Subscribe to events
+        import asyncio
+        queue: asyncio.Queue = asyncio.Queue()
+
+        async def on_event(event):
+            await queue.put(event)
+
+        app_state.event_bus.subscribe(on_event)
+
+        try:
+            while True:
+                try:
+                    event = await asyncio.wait_for(queue.get(), timeout=30)
+                    await websocket.send_json(event.to_dict())
+                except asyncio.TimeoutError:
+                    # Send ping to keep alive
+                    await websocket.send_json({"type": "ping"})
+        finally:
+            app_state.event_bus.unsubscribe(on_event)
+
+    except Exception as e:
+        logger.warning(f"Activity WebSocket error: {e}")
+
+
 # === SSH Endpoints ===
 
 from .models import SSHExecRequest, SSHExecResponse
@@ -616,6 +722,11 @@ async def ssh_exec(request: SSHExecRequest, auth: AuthRequired):
             content_type="ssh_command",
             metadata={"host": request.host, "denied_reason": denial_reason, "reason": request.reason},
         )
+        await app_state.event_bus.emit(make_event(
+            "ssh_denied", f"SSH denied on {request.host}: {denial_reason}",
+            {"host": request.host, "reason": denial_reason},
+            "critical" if "injection" in denial_reason.lower() else "warning"
+        ))
         raise HTTPException(status_code=403, detail=denial_reason)
 
     async def _execute_and_record(approved_by: str) -> SSHExecResponse:
@@ -641,6 +752,10 @@ async def ssh_exec(request: SSHExecRequest, auth: AuthRequired):
                 "reason": request.reason,
             },
         )
+        await app_state.event_bus.emit(make_event(
+            "ssh_exec", f"SSH command on {request.host} (exit {result.exit_code})",
+            {"host": request.host, "command": request.command[:80], "exit_code": result.exit_code, "duration": result.duration_seconds},
+        ))
         now = datetime.now(timezone.utc).isoformat().replace("+00:00", "Z")
         return SSHExecResponse(
             request_id=entry.id,
