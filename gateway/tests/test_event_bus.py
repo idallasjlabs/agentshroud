@@ -15,7 +15,7 @@ def bus():
 async def test_subscribe_receive_events(bus):
     """Subscriber receives emitted events"""
     received = []
-    bus.subscribe(lambda e: received.append(e))
+    await bus.subscribe(lambda e: received.append(e))
     event = make_event("forward", "Content forwarded")
     await bus.emit(event)
     assert len(received) == 1
@@ -28,10 +28,10 @@ async def test_unsubscribe_stops_events(bus):
     """Unsubscribed callback stops receiving events"""
     received = []
     cb = lambda e: received.append(e)
-    bus.subscribe(cb)
+    await bus.subscribe(cb)
     await bus.emit(make_event("forward", "first"))
     assert len(received) == 1
-    bus.unsubscribe(cb)
+    await bus.unsubscribe(cb)
     await bus.emit(make_event("forward", "second"))
     assert len(received) == 1  # no new events
 
@@ -40,8 +40,8 @@ async def test_unsubscribe_stops_events(bus):
 async def test_emit_to_multiple_subscribers(bus):
     """Multiple subscribers all receive the same event"""
     r1, r2 = [], []
-    bus.subscribe(lambda e: r1.append(e))
-    bus.subscribe(lambda e: r2.append(e))
+    await bus.subscribe(lambda e: r1.append(e))
+    await bus.subscribe(lambda e: r2.append(e))
     await bus.emit(make_event("ssh_exec", "Command executed"))
     assert len(r1) == 1
     assert len(r2) == 1
@@ -74,7 +74,7 @@ async def test_get_stats(bus):
     await bus.emit(make_event("forward", "a"))
     await bus.emit(make_event("forward", "b"))
     await bus.emit(make_event("ssh_exec", "c"))
-    stats = bus.get_stats()
+    stats = await bus.get_stats()
     assert stats["total_events"] == 3
     assert stats["events_by_type"]["forward"] == 2
     assert stats["events_by_type"]["ssh_exec"] == 1
@@ -85,7 +85,7 @@ async def test_get_recent(bus):
     """Recent events are returned in order"""
     for i in range(5):
         await bus.emit(make_event("forward", f"event {i}"))
-    recent = bus.get_recent(3)
+    recent = await bus.get_recent(3)
     assert len(recent) == 3
     assert recent[-1]["summary"] == "event 4"
 
@@ -94,7 +94,7 @@ async def test_get_recent(bus):
 async def test_auth_failure_escalation(bus):
     """3+ auth failures in 5 min escalates to critical"""
     received = []
-    bus.subscribe(lambda e: received.append(e))
+    await bus.subscribe(lambda e: received.append(e))
     for i in range(3):
         await bus.emit(make_event("auth_failed", f"fail {i}"))
     # Third one should be critical
@@ -107,6 +107,6 @@ async def test_async_subscriber(bus):
     received = []
     async def cb(e):
         received.append(e)
-    bus.subscribe(cb)
+    await bus.subscribe(cb)
     await bus.emit(make_event("forward", "async test"))
     assert len(received) == 1
