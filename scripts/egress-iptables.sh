@@ -49,20 +49,25 @@ iptables -A SECURECLAW_EGRESS -m state --state ESTABLISHED,RELATED -j ACCEPT
 # Allow loopback
 iptables -A SECURECLAW_EGRESS -o lo -j ACCEPT
 
-# Allow DNS
-for port in "${ALLOWED_PORTS[@]}"; do
-    iptables -A SECURECLAW_EGRESS -p tcp --dport "$port" -j ACCEPT
-    iptables -A SECURECLAW_EGRESS -p udp --dport "$port" -j ACCEPT
-done
-
-# Allow specific IPs
+# Allow DNS to specified DNS servers only
 for ip in "${ALLOWED_IPS[@]}"; do
-    iptables -A SECURECLAW_EGRESS -d "$ip" -j ACCEPT
+    iptables -A SECURECLAW_EGRESS -d "$ip" -p udp --dport 53 -j ACCEPT
+    iptables -A SECURECLAW_EGRESS -d "$ip" -p tcp --dport 53 -j ACCEPT
 done
 
-# Allow specific CIDRs
+# Allow specific IPs on allowed ports only
+for ip in "${ALLOWED_IPS[@]}"; do
+    for port in "${ALLOWED_PORTS[@]}"; do
+        [ "$port" = "53" ] && continue  # Already handled above
+        iptables -A SECURECLAW_EGRESS -d "$ip" -p tcp --dport "$port" -j ACCEPT
+    done
+done
+
+# Allow specific CIDRs on allowed ports only
 for cidr in "${ALLOWED_CIDRS[@]}"; do
-    iptables -A SECURECLAW_EGRESS -d "$cidr" -j ACCEPT
+    for port in "${ALLOWED_PORTS[@]}"; do
+        iptables -A SECURECLAW_EGRESS -d "$cidr" -p tcp --dport "$port" -j ACCEPT
+    done
 done
 
 # Default deny with logging
@@ -74,5 +79,18 @@ iptables -A SECURECLAW_EGRESS -j DROP
 iptables -D FORWARD -i "$DOCKER_BRIDGE" -j SECURECLAW_EGRESS 2>/dev/null || true
 iptables -I FORWARD -i "$DOCKER_BRIDGE" -j SECURECLAW_EGRESS
 
-echo "Egress filtering rules applied successfully."
-echo "To remove: iptables -D FORWARD -i $DOCKER_BRIDGE -j SECURECLAW_EGRESS && iptables -F SECURECLAW_EGRESS && iptables -X SECURECLAW_EGRESS"
+echo "Egress filtering rules applied successfully (IPv4)."
+
+# IPv6: default deny all egress from Docker bridge
+ip6tables -N SECURECLAW_EGRESS6 2>/dev/null || ip6tables -F SECURECLAW_EGRESS6
+ip6tables -A SECURECLAW_EGRESS6 -m state --state ESTABLISHED,RELATED -j ACCEPT
+ip6tables -A SECURECLAW_EGRESS6 -o lo -j ACCEPT
+ip6tables -A SECURECLAW_EGRESS6 -j LOG --log-prefix "SECURECLAW_EGRESS6_DENY: " --log-level 4
+ip6tables -A SECURECLAW_EGRESS6 -j DROP
+ip6tables -D FORWARD -i "$DOCKER_BRIDGE" -j SECURECLAW_EGRESS6 2>/dev/null || true
+ip6tables -I FORWARD -i "$DOCKER_BRIDGE" -j SECURECLAW_EGRESS6
+
+echo "IPv6 egress deny-all applied."
+echo ""
+echo "To remove IPv4: iptables -D FORWARD -i $DOCKER_BRIDGE -j SECURECLAW_EGRESS && iptables -F SECURECLAW_EGRESS && iptables -X SECURECLAW_EGRESS"
+echo "To remove IPv6: ip6tables -D FORWARD -i $DOCKER_BRIDGE -j SECURECLAW_EGRESS6 && ip6tables -F SECURECLAW_EGRESS6 && ip6tables -X SECURECLAW_EGRESS6"
