@@ -1,6 +1,7 @@
 #!/usr/bin/env zsh
 # OneClaw Version Manager CLI
 # Usage: openclaw-manage.sh <command> [options]
+# Requires: curl, python3 (for json.tool)
 
 set -euo pipefail
 
@@ -83,6 +84,17 @@ done
 
 # Handle remaining args (version for some commands)
 VERSION="${1:-}"
+
+# Input validation: VERSION and APPROVAL_ID must be safe for JSON interpolation
+validate_input() {
+    local val="$1" name="$2"
+    if [[ -n "$val" && ! "$val" =~ ^[A-Za-z0-9._-]+$ ]]; then
+        echo "Error: $name contains invalid characters (allowed: A-Za-z0-9._-)" >&2
+        exit 1
+    fi
+}
+validate_input "$VERSION" "version"
+validate_input "$APPROVAL_ID" "approval-id"
 
 case "${COMMAND:-}" in
     check)

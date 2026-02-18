@@ -10,7 +10,7 @@ services:
       - "127.0.0.1:8080:8080"
       - "127.0.0.1:3000:3000"
     env_file:
-      - ../recommended.env
+      - recommended.env
     volumes:
       - gateway-data:/app/data
       - gateway-logs:/app/logs
