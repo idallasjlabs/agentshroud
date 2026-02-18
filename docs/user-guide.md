@@ -48,7 +48,7 @@ Just type your question or request. The bot will respond with the AI's answer.
 ### Tips
 
 - **Be specific** — The AI works best with clear, detailed requests
-- **Don't worry about PII** — The sanitizer removes personal data automatically
+- **PII protection** — The sanitizer automatically strips personal data, but avoid sending highly sensitive info when possible
 - **Long responses** — The bot may split long replies into multiple messages
 - **Patience** — AI responses take a few seconds; don't spam requests
 
@@ -101,7 +101,7 @@ Each entry shows:
 If you need direct access to the SecureClaw server:
 
 ```bash
-ssh secureclaw-bot@raspberrypi.tail240ea8.ts.net
+ssh secureclaw-bot@<your-tailscale-hostname>
 ```
 
 **Requirements:**

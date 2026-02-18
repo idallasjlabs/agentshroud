@@ -17,6 +17,13 @@
 
 set -euo pipefail
 
+# Require root/sudo for tailscale serve commands
+if [ "$(id -u)" -ne 0 ]; then
+    echo "ERROR: This script must be run with sudo."
+    echo "Usage: sudo $0 {start|stop|status}"
+    exit 1
+fi
+
 GATEWAY_PORT=8080
 CONTROL_UI_PORT=18790
 DASHBOARD_PORT=8050
@@ -35,7 +42,7 @@ cmd_start() {
 
     echo ""
     echo "==> Done. Services are now available at:"
-    HOSTNAME=$(tailscale status --self --json | python3 -c "import sys,json; print(json.load(sys.stdin)['Self']['DNSName'].rstrip('.'))" 2>/dev/null || echo "<your-tailscale-hostname>")
+    HOSTNAME=$(tailscale status --self --json | python3 -c "import sys,json; print(json.load(sys.stdin)['Self']['DNSName'].rstrip('.'))" 2>/dev/null || echo "<your-tailscale-hostname>")  # python3 OK here: runs on host, not in conda env
     echo "  Gateway:   https://${HOSTNAME}/"
     echo "  Control:   https://${HOSTNAME}/ui"
     echo "  Dashboard: https://${HOSTNAME}/dashboard"

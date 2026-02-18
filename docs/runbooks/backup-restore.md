@@ -19,7 +19,7 @@
 Add to crontab (`crontab -e`):
 
 ```cron
-# Daily backup at 02:00 UTC
+# Daily backup at 02:00 UTC (create scripts/backup.sh from the manual procedure below)
 0 2 * * * /home/secureclaw-bot/Development/oneclaw/scripts/backup.sh
 ```
 
@@ -90,7 +90,7 @@ If the Pi is completely lost:
 
 2. **Restore code:**
    ```bash
-   git clone https://github.com/therealidallasj/oneclaw.git ~/Development/oneclaw
+   git clone https://github.com/idallasj/oneclaw.git ~/Development/oneclaw
    ```
 
 3. **Restore conda env:**
