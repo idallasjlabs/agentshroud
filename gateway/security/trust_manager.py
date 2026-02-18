@@ -33,6 +33,8 @@ class TrustConfig:
     success_points: float = 5.0
     failure_points: float = -20.0
     violation_points: float = -50.0
+    # Rate limiting
+    max_successes_per_hour: int = 10
     # Decay: points lost per hour of inactivity
     decay_rate: float = 0.5
     decay_interval_hours: float = 24.0
@@ -194,23 +196,39 @@ class TrustManager:
             row = (self.config.initial_score, now)
 
         current_score = self._apply_decay(row[0], row[1])
+
+        # Rate-limit trust gains to prevent rapid escalation
+        if delta > 0:
+            one_hour_ago = now - 3600
+            recent = self._conn.execute(
+                """SELECT COUNT(*) FROM trust_history
+                   WHERE agent_id = ? AND event_type = 'success'
+                   AND timestamp > ?""",
+                (agent_id, one_hour_ago),
+            ).fetchone()[0]
+            if recent >= self.config.max_successes_per_hour:
+                delta = 0  # Cap gains, still record the event
+
         new_score = max(0.0, current_score + delta)
         new_level = self._score_to_level(new_score)
 
-        # Update counters
-        counter_col = {
+        # Update counters — use safe whitelist, never interpolate user input
+        _COUNTER_COLS = {
             "success": "total_successes",
             "failure": "total_failures",
             "violation": "total_violations",
-        }.get(event_type)
+        }
+        counter_col = _COUNTER_COLS.get(event_type)
+        if counter_col and counter_col not in _COUNTER_COLS.values():
+            raise ValueError(f"Invalid counter column: {counter_col}")
 
-        self._conn.execute(
-            f"""UPDATE trust_scores
-                SET score = ?, level = ?, last_action_time = ?
-                {f', {counter_col} = {counter_col} + 1' if counter_col else ''}
-                WHERE agent_id = ?""",
-            (new_score, int(new_level), now, agent_id),
-        )
+        if counter_col:
+            # Safe: counter_col is from a hardcoded whitelist above
+            sql = f"UPDATE trust_scores SET score = ?, level = ?, last_action_time = ?, {counter_col} = {counter_col} + 1 WHERE agent_id = ?"
+        else:
+            sql = "UPDATE trust_scores SET score = ?, level = ?, last_action_time = ? WHERE agent_id = ?"
+
+        self._conn.execute(sql, (new_score, int(new_level), now, agent_id))
         self._conn.execute(
             """INSERT INTO trust_history
                (agent_id, timestamp, event_type, score_delta, new_score, new_level, details)
