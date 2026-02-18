@@ -10,7 +10,7 @@ services:
       - "8080:8080"
       - "3000:3000"
     env_file:
-      - ../minimal.env
+      - minimal.env
     volumes:
       - gateway-data:/app/data
     restart: unless-stopped
