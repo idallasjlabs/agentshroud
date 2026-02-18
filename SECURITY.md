@@ -62,13 +62,13 @@ OneClaw provides 12 security modules (see [README](README.md) for details):
 
 ## Known Issues
 
-### CVE-2026-22708 — OpenClaw Upstream
+### SC-2026-001 — Gateway Auth Bypass (Mitigated)
 
 **Severity:** Medium
-**Affected:** OpenClaw versions prior to latest patched release
-**Impact:** Potential information disclosure through gateway API when authentication is misconfigured
+**Affected:** Configurations where `auth_method` is set to `none`
+**Impact:** Potential information disclosure through gateway API when authentication is disabled
 **Mitigation:** OneClaw enforces authentication by default. Ensure `GATEWAY_AUTH_TOKEN` is set and `auth_method` is not `none`.
-**Status:** Mitigated in OneClaw via mandatory auth enforcement. Upstream fix pending.
+**Status:** Mitigated — OneClaw refuses to start with `auth_method=none` in production mode.
 
 ## Security Best Practices
 
