@@ -11,7 +11,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Summary
 
-**First stable release!** Complete enterprise security proxy with 12 security modules, 293+ tests at 92%+ coverage, professional documentation, and CI/CD pipeline.
+**First stable release!** Complete enterprise security proxy with 12 security modules, 351 tests at 92%+ coverage, professional documentation, and CI/CD pipeline.
 
 ### Added
 
@@ -47,7 +47,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Expanded SSH proxy command allowlists
 
 ### Security
-- Mitigated CVE-2026-22708 (upstream OpenClaw) via mandatory auth enforcement
+- Mitigated gateway auth bypass (SC-2026-001) via mandatory auth enforcement
 - Added prompt injection detection
 - Network egress filtering blocks LAN access by default
 - All mutations require human approval
