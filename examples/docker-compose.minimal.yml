@@ -1,0 +1,19 @@
+# OneClaw — Minimal Docker Compose
+# Quick start for development and testing
+
+services:
+  gateway:
+    build:
+      context: ../gateway
+      dockerfile: Dockerfile
+    ports:
+      - "8080:8080"
+      - "3000:3000"
+    env_file:
+      - minimal.env
+    volumes:
+      - gateway-data:/app/data
+    restart: unless-stopped
+
+volumes:
+  gateway-data:

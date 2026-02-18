@@ -1,199 +1,134 @@
 # Changelog
 
-All notable changes to SecureClaw will be documented in this file.
+All notable changes to OneClaw (SecureClaw) will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ---
 
-## [0.1.0] - 2026-02-16
+## [1.0.0] - 2026-02-18
 
 ### Summary
-First tagged release! Complete security hardening (Phase 3A/3B), SSH capability foundation (Phase 4 start), and comprehensive repository organization.
 
-**Security Score**: 26/26 checks passed (1 expected warning)
-**Test Coverage**: Gateway 89%
-**Documentation**: 74 files organized into 4 categories
-
----
+**First stable release!** Complete enterprise security proxy with 12 security modules, 351 tests at 92%+ coverage, professional documentation, and CI/CD pipeline.
 
 ### Added
 
-#### Security (Phase 3A)
-- **Seccomp profiles** re-enabled with ARM64 support (`clone3`, `membarrier`, `rseq` syscalls)
-- **Security verification script** (`docker/scripts/verify-security.sh`) with 13 automated checks
-- **OpenSCAP compliance scanner** (`docker/scripts/scan.sh`) with HTML/XML report generation
-- **Docker secrets** for gateway password (moved from hardcoded value)
-- **mDNS/Bonjour disable** (`OPENCLAW_DISABLE_BONJOUR=1`) to prevent information disclosure
-- **Tmpfs mounts** for `/home/node/.local` and `/home/node/.config` (read-only fs prep)
+#### Phase 6: Tailscale & Documentation
+- **Tailscale integration** for secure remote access
+- **IEC 62443 compliance** documentation and alignment
+- **Security policies** and operational runbooks
+- **Comprehensive documentation** site (architecture, setup, reference, deploy)
 
-#### Emergency Response (Phase 3B)
-- **Kill switch script** (`docker/scripts/killswitch.sh`) with 3 modes:
-  - `freeze`: Pause containers for forensic investigation
-  - `shutdown`: Graceful stop preserving volumes
-  - `disconnect`: Nuclear option with credential revocation and incident reporting
+#### Phase 7: Security Hardening
+- **PromptGuard module** — detects and blocks prompt injection attacks
+- **Egress filter** — network-level outbound connection control
+- **Drift detector** — monitors container filesystem for unauthorized changes
+- **Trust manager** — cryptographic verification of agent identity
+- **Encrypted store** — at-rest encryption for sensitive configuration
+- **Agent isolation** — enhanced seccomp profiles and resource limits
+- **Peer review system** — automated multi-model security review for PRs
 
-#### SSH Capability (Phase 4 - Start)
-- **SSH key generation** (Ed25519) for bot container
-- **SSH configuration** (`/home/node/.ssh/config`) for authorized hosts
-- **Raspberry Pi access** configured (alias: `pi-dev`, `raspberrypi`)
-- **SSH helper script** for remote command execution
-
-#### 1Password Integration
-- **Authentication helper** (`/home/node/.ssh/scripts/op-auth.sh`) for non-interactive signin
-- **Vault access** from bot commands
-- **Documentation** for 1Password CLI usage patterns
-
-#### Documentation
-- **Repository organization**: 67 markdown files moved to structured directories
-  - `docs/setup/` - 18 setup guides
-  - `docs/security/` - 11 security docs
-  - `docs/architecture/` - 7 design docs
-  - `docs/reference/` - 6 quick reference guides
-- **Documentation index** (`docs/README.md`) with categorized links
-- **Session notes** separated into `session-notes/` directory
-- **Archive** created for historical files (24 files)
-- **Repository cleanup summary** (`REPOSITORY_CLEANUP.md`)
-- **SSH setup guide** (`docs/setup/OPENCLAW_SSH_SETUP.md`)
-- **1Password usage guide** (`docs/setup/1PASSWORD_BOT_USAGE.md`)
-- **Raspberry Pi setup guide** (`docs/setup/BOT_DEVELOPMENT_TEAM_RPI_SETUP.md`)
-- **Distributed node architecture** (future) (`docs/architecture/DISTRIBUTED_OPENCLAW_NODE_ARCHITECTURE.md`)
-- **Security scripts reference** (`docs/security/SECURITY_SCRIPTS_REFERENCE.md`)
-
----
+#### Phase 8: Polish & Publish
+- **README overhaul** — professional documentation with architecture diagram
+- **SECURITY.md** — vulnerability reporting and disclosure policy
+- **CONTRIBUTING.md** — contributor guide with code style and PR process
+- **LICENSE** — MIT License (Isaiah Jefferson)
+- **Example configurations** — minimal, recommended, paranoid env files
+- **Docker Compose examples** — minimal and production deployments
+- **GitHub Actions CI** — automated testing, coverage, security scan, linting
+- **OpenClaw Version Manager** — security-reviewed version upgrades/downgrades
 
 ### Changed
-
-#### Security Hardening
-- **Removed NET_RAW capability** from OpenClaw container (Tailscale runs on host)
-- **Gateway password** moved from environment variable to Docker secret
-- **DM policy** verified as "allowlist" mode (user 8096968754)
-- **Seccomp profiles** updated with ARM64-specific syscalls
-
-#### Container Configuration
-- **OpenClaw container** now has tmpfs for `.local` and `.config`
-- **Docker Compose** updated with security secret mounts
-- **Startup script** (`docker/scripts/start-openclaw.sh`) loads gateway password from secret
-
-#### Documentation Structure
-- **Main README** completely rewritten for v0.1.0
-- **All documentation** references updated to new structure
-- **Quick start** section added to README
-- **Commit message format** defined for GitHub Flow
-
----
-
-### Fixed
-- **SSH config permissions** issues in container (moved to `openclaw-ssh` volume)
-- **1Password authentication** non-interactive flow (TTY error resolved)
-- **Arithmetic expansion** in bash scripts (`$((VAR + 1))` instead of `((VAR++))`)
-
----
+- Upgraded test suite from 89% to 92%+ coverage
+- Improved PII sanitizer with additional entity types
+- Enhanced approval queue with SQLite persistence
+- Expanded SSH proxy command allowlists
 
 ### Security
-
-#### Threat Mitigations
-- **Seccomp**: Default-deny syscall policy, explicit allowlist
-- **Capability dropping**: ALL capabilities dropped, no adds (NET_RAW removed)
-- **Secrets management**: No hardcoded credentials, Docker secrets only
-- **Information disclosure**: mDNS/Bonjour disabled
-- **Emergency response**: Kill switch with credential revocation
-
-#### Verification Results
-```
-✅ 26/26 security checks passed
-⚠️  1 warning (read-only disabled during development - expected)
-❌ 0 failed checks
-```
-
-#### Security Tools
-- `verify-security.sh`: 13-check automated validation
-- `scan.sh`: OpenSCAP compliance scanning
-- `killswitch.sh`: 3-mode emergency shutdown
+- Mitigated gateway auth bypass (SC-2026-001) via mandatory auth enforcement
+- Added prompt injection detection
+- Network egress filtering blocks LAN access by default
+- All mutations require human approval
 
 ---
 
-### Deprecated
-- None
+## [0.2.0] - 2026-02-17
+
+### Summary
+SSH proxy capability with approval workflow, live dashboard with real-time WebSocket events.
+
+### Added
+
+#### Phase 4: SSH Capability
+- **SSH proxy** with command allowlists and denied command patterns
+- **Approval integration** — SSH commands routed through approval queue
+- **Auto-approve** for safe read-only commands (git status, ls, whoami)
+- **Session management** with timeout enforcement
+- **Command audit trail** in SQLite ledger
+
+#### Phase 5: Dashboard
+- **Real-time dashboard** with WebSocket live activity feed
+- **Approval management** — approve/deny from dashboard UI
+- **System health** monitoring (gateway, agent, ledger stats)
+- **WebSocket event bus** for push notifications
+- **Static file serving** for dashboard assets
+
+### Changed
+- Approval queue now persisted in SQLite (was in-memory)
+- Router supports SSH-type forwarding
 
 ---
 
-### Removed
-- **NET_RAW capability** from OpenClaw container
-- **Hardcoded gateway password** from docker-compose.yml
-- **67 markdown files** from root directory (moved to organized structure)
+## [0.1.0] - 2026-02-16
+
+### Summary
+First tagged release with core security framework.
+
+### Added
+
+#### Phase 1: Foundation
+- OpenClaw container deployment
+- Telegram bot integration (@therealidallasj_bot)
+- Basic control UI
+
+#### Phase 2: Gateway Layer
+- **PII sanitizer** — Microsoft Presidio-powered detection & redaction
+- **Audit ledger** — SQLite-backed immutable log
+- **Approval queue** — human-in-the-loop for sensitive actions
+- **Multi-agent router** — routes content to appropriate agents
+- **Authentication** — HMAC shared secret and JWT support
+- **Data forwarding API** — REST endpoints for content ingestion
+
+#### Phase 3A/3B: Security Hardening
+- **Seccomp profiles** with ARM64 support
+- **Docker secrets** management
+- **Kill switch** — emergency freeze/shutdown/disconnect
+- **Security verification** script (13 automated checks)
+- **Read-only rootfs** preparation
+- **mDNS/Bonjour** disabled
+- **Tmpfs mounts** for writable paths
+
+### Security
+- 26/26 security checks passing
+- Gateway authentication enforced
+- Container isolation with resource limits
 
 ---
 
-### Infrastructure
+## Migration Guide: v0.2.0 → v1.0.0
 
-#### Containers
-- **Gateway**: FastAPI, Python 3.13, 512MB RAM, read-only filesystem
-- **OpenClaw**: Node.js 22, 4GB RAM, seccomp active, non-root execution
+### Breaking Changes
+None. v1.0.0 is backwards compatible with v0.2.0 configurations.
 
-#### Integrations
-- **Telegram**: @therealidallasj_bot (allowlist mode)
-- **1Password**: CLI integration with auto-authentication
-- **SSH**: Remote execution on authorized hosts
-- **Tailscale**: VPN for remote access (optional)
+### New Required Configuration
+None. All new features are opt-in.
 
-#### Storage
-- **Docker Desktop**: 104GB allocated
-- **Actual usage**: ~18GB
-- **Free space**: 75GB on Raspberry Pi target
-
----
-
-## [Unreleased]
-
-### Phase 4: SSH Capability (In Progress)
-- [ ] SSH proxy module with approval integration
-- [ ] Command allowlist and audit trail
-- [ ] Session timeout and limits
-- [ ] SSH access logging
-
-### Phase 5: Live Action Dashboard (Planned)
-- [ ] Real-time activity feed (WebSocket)
-- [ ] Security alerting
-- [ ] React frontend
-- [ ] Serve from gateway
-
-### Phase 6: Tailscale + Documentation (Planned)
-- [ ] Tailscale serve script
-- [ ] IEC 62443 compliance matrix
-- [ ] Container security policy
-- [ ] CI/CD security checklist
-
-### Phase 7: Hardening Skills (Planned)
-- [ ] PromptGuard / input filtering
-- [ ] Outbound allowlist
-- [ ] Read-only reader agent
-- [ ] Drift detection
-
-### Phase 8: Polish & Publish (Planned)
-- [ ] Production documentation
-- [ ] Example deployments
-- [ ] Community support
-- [ ] Public release
-
----
-
-## Version History
-
-- **0.1.0** (2026-02-16): First release - Security foundation complete
-- More versions coming soon...
-
----
-
-## Links
-
-- **Documentation**: [docs/README.md](docs/README.md)
-- **Setup Guide**: [docs/setup/OPENCLAW_SETUP.md](docs/setup/OPENCLAW_SETUP.md)
-- **Security**: [docs/security/SECURITY_ARCHITECTURE.md](docs/security/SECURITY_ARCHITECTURE.md)
-- **Latest Session**: [session-notes/CONTINUE.md](session-notes/CONTINUE.md)
-
----
-
-**Maintained by**: Claude Sonnet 4.5 + @therealidallasj_bot
-**Security**: Defense in depth, zero trust architecture
+### Recommended Steps
+1. Update your `.env` with new security module settings (see `examples/recommended.env`)
+2. Enable PromptGuard: `PROMPT_GUARD_ENABLED=true`
+3. Enable egress filtering: `EGRESS_FILTER_ENABLED=true`
+4. Review `examples/paranoid.env` for maximum security settings
+5. Set up GitHub Actions CI (copy `.github/workflows/ci.yml`)
+6. Run the version manager: `scripts/openclaw-manage.sh check`
