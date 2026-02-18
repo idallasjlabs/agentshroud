@@ -1,0 +1,85 @@
+# SecureClaw-specific Falco rules
+
+# Shell spawned in container
+- rule: Container Shell Spawned
+  desc: Detect shell spawned inside a container
+  condition: >
+    spawned_process and container and
+    proc.name in (bash, sh, zsh, dash, csh, ksh, fish) and
+    not proc.pname in (start-openclaw.sh, entrypoint-openclaw.sh, security-entrypoint.sh, security-scheduler.sh, security-scan.sh)
+  output: >
+    Shell spawned in container (user=%user.name container=%container.name shell=%proc.name parent=%proc.pname cmdline=%proc.cmdline)
+  priority: WARNING
+  tags: [secureclaw, shell, container]
+
+# Unexpected outbound connections from openclaw
+- rule: Unexpected Outbound Connection from OpenClaw
+  desc: Detect outbound network connections from openclaw container to unexpected destinations
+  condition: >
+    outbound and container and container.name = "openclaw" and
+    not fd.sip in (
+      "127.0.0.0/8",
+      "10.0.0.0/8",
+      "172.16.0.0/12",
+      "192.168.0.0/16"
+    )
+  output: >
+    Unexpected outbound connection from OpenClaw (container=%container.name connection=%fd.name dest=%fd.sip:%fd.sport user=%user.name process=%proc.name)
+  priority: ERROR
+  tags: [secureclaw, network, openclaw]
+
+# File access outside workspace
+- rule: File Access Outside Workspace
+  desc: Detect file access outside the designated workspace directory
+  condition: >
+    open_write and container and container.name = "openclaw" and
+    not fd.name startswith /home/node/ and
+    not fd.name startswith /tmp/ and
+    not fd.name startswith /proc/ and
+    not fd.name startswith /dev/null
+  output: >
+    File write outside workspace (container=%container.name file=%fd.name user=%user.name process=%proc.name)
+  priority: ERROR
+  tags: [secureclaw, filesystem, openclaw]
+
+# Privilege escalation attempts
+- rule: Privilege Escalation Attempt
+  desc: Detect attempts to escalate privileges inside containers
+  condition: >
+    spawned_process and container and
+    (proc.name in (sudo, su, newgrp, setuid) or
+     proc.name = "chmod" and proc.args contains "+s")
+  output: >
+    Privilege escalation attempt (container=%container.name user=%user.name process=%proc.name cmdline=%proc.cmdline)
+  priority: CRITICAL
+  tags: [secureclaw, privilege_escalation]
+
+# Secret file access
+- rule: Secret File Access
+  desc: Detect access to sensitive files (shadow, SSH keys, etc.)
+  condition: >
+    open_read and container and
+    (fd.name = "/etc/shadow" or
+     fd.name startswith /etc/ssh/ssh_host or
+     fd.name startswith /root/.ssh/ or
+     fd.name contains id_rsa or
+     fd.name contains id_ed25519)
+  output: >
+    Sensitive file accessed (container=%container.name file=%fd.name user=%user.name process=%proc.name)
+  priority: CRITICAL
+  tags: [secureclaw, secrets]
+
+# Crypto mining detection
+- rule: Crypto Mining Detection
+  desc: Detect potential cryptocurrency mining activity
+  condition: >
+    spawned_process and container and
+    (proc.name in (xmrig, minerd, minergate, cpuminer, ethminer) or
+     proc.cmdline contains "stratum+tcp" or
+     proc.cmdline contains "stratum+ssl" or
+     proc.cmdline contains "cryptonight" or
+     proc.cmdline contains "--coin=")
+  output: >
+    Crypto mining activity detected (container=%container.name user=%user.name process=%proc.name cmdline=%proc.cmdline)
+  priority: CRITICAL
+  tags: [secureclaw, cryptomining]
