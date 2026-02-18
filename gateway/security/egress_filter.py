@@ -42,12 +42,23 @@ class EgressPolicy:
     deny_all: bool = True  # Default deny
 
     def matches_domain(self, domain: str) -> bool:
-        """Check if domain matches any allowed domain (supports wildcards)."""
+        """Check if domain matches any allowed domain (supports wildcards).
+
+        Wildcards only match one subdomain level to prevent overly broad rules.
+        e.g., *.github.com matches foo.github.com but NOT foo.bar.github.com.
+        """
+        domain = domain.lower().rstrip(".")
         for allowed in self.allowed_domains:
+            allowed = allowed.lower().rstrip(".")
             if allowed.startswith("*."):
-                suffix = allowed[1:]  # ".example.com"
-                if domain.endswith(suffix) or domain == allowed[2:]:
+                base = allowed[2:]  # "github.com"
+                if domain == base:
                     return True
+                # Only match one level deep: "sub.github.com" yes, "a.b.github.com" no
+                if domain.endswith("." + base):
+                    prefix = domain[: -(len(base) + 1)]
+                    if "." not in prefix:  # Only one subdomain level
+                        return True
             elif domain == allowed:
                 return True
         return False
@@ -120,6 +131,13 @@ class EgressFilter:
             elif port is None:
                 port = 443 if parsed.scheme == "https" else 80
 
+        # Block private/loopback IPs unless explicitly in allowlist
+        if self._is_private_ip(parsed_dest) and not policy.matches_ip(parsed_dest):
+            return self._record(
+                agent_id, destination, port, EgressAction.DENY,
+                f"private/loopback IP '{parsed_dest}' blocked (SSRF protection)"
+            )
+
         # Check port first
         if not policy.matches_port(port):
             return self._record(
@@ -152,6 +170,16 @@ class EgressFilter:
             agent_id, destination, port, EgressAction.ALLOW,
             "default allow (deny_all=False)"
         )
+
+    @staticmethod
+    def _is_private_ip(host: str) -> bool:
+        """Check if host is a private, loopback, or link-local IP."""
+        try:
+            addr = ipaddress.ip_address(host)
+            return addr.is_private or addr.is_loopback or addr.is_link_local or addr.is_reserved
+        except ValueError:
+            # Not an IP address (it's a domain) — check for localhost
+            return host.lower() in ("localhost", "localhost.")
 
     def _record(
         self, agent_id: str, dest: str, port: Optional[int],

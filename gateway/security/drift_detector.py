@@ -6,6 +6,7 @@ Alerts on seccomp profile changes, new capabilities, new mounts, new env vars.
 """
 
 import hashlib
+import hmac
 import json
 import sqlite3
 import time
@@ -114,7 +115,7 @@ class DriftDetector:
             return []
 
         # Quick hash check
-        if baseline.config_hash() == current.config_hash():
+        if hmac.compare_digest(baseline.config_hash(), current.config_hash()):
             return []
 
         alerts = []

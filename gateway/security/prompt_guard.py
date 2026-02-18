@@ -6,6 +6,7 @@ including blocked status, threat score, matched patterns, and sanitized input.
 """
 
 import base64
+import unicodedata
 import re
 from dataclasses import dataclass, field
 from enum import Enum
@@ -207,6 +208,14 @@ class PromptGuard:
         Returns:
             ScanResult with blocked status, score, patterns, and sanitized input.
         """
+        # Normalize unicode to catch fullwidth chars, confusables, etc.
+        if text:
+            text = unicodedata.normalize("NFKC", text)
+            # Strip zero-width characters for pattern matching
+            stripped = re.sub(r'[​‌‍⁠﻿]', '', text)
+        else:
+            stripped = text
+
         if not text or not text.strip():
             return ScanResult(
                 blocked=False,
@@ -219,9 +228,9 @@ class PromptGuard:
         matched = []
         total_score = 0.0
 
-        # Pattern matching
+        # Pattern matching (use stripped text to defeat zero-width char evasion)
         for rule in self.patterns:
-            if rule.pattern.search(text):
+            if rule.pattern.search(stripped):
                 matched.append(rule.name)
                 total_score += rule.weight
 
