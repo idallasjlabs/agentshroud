@@ -168,6 +168,12 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; b
 let currentStep = 1;
 let selectedRuntime = 'docker';
 
+function esc(s) {
+  const d = document.createElement('div');
+  d.textContent = s;
+  return d.innerHTML;
+}
+
 function goStep(n) {
   document.getElementById('step-' + currentStep).classList.remove('active');
   document.getElementById('step-' + n).classList.add('active');
@@ -185,7 +191,7 @@ async function checkPrereqs() {
     data.checks.forEach(c => {
       const icon = c.status ? '✅' : (c.required ? '❌' : '⚠️');
       const cls = c.status ? 'check-ok' : (c.required ? 'check-fail' : 'check-warn');
-      list.innerHTML += `<li><span>${c.name}</span><span class="${cls}">${icon} ${c.detail}</span></li>`;
+      list.innerHTML += `<li><span>${esc(c.name)}</span><span class="${cls}">${icon} ${esc(c.detail)}</span></li>`;
     });
     const status = document.getElementById('prereq-status');
     if (data.ready) {
@@ -211,8 +217,8 @@ async function loadRuntimes() {
       const avail = data.available.includes(rt);
       const sel = rt === selectedRuntime ? 'selected' : '';
       cards.innerHTML += `<div class="runtime-card ${sel} ${avail ? '' : 'disabled'}" onclick="selectRuntime('${rt}', this)" data-rt="${rt}">
-        <h3>${icons[rt] || ''} ${names[rt] || rt} ${avail ? '' : '(not installed)'}</h3>
-        <p>${desc}</p>
+        <h3>${icons[rt] || ''} ${esc(names[rt] || rt)} ${avail ? '' : '(not installed)'}</h3>
+        <p>${esc(desc)}</p>
       </div>`;
     }
     // Security comparison table
@@ -220,7 +226,7 @@ async function loadRuntimes() {
     let html = '<h3 style="margin-bottom:0.5rem;font-size:0.95rem;">Security Comparison</h3><table class="summary-table">';
     html += '<tr><td></td><td>Docker</td><td>Podman</td><td>Apple</td></tr>';
     for (const [feat, rts] of Object.entries(comp)) {
-      html += `<tr><td>${feat}</td><td>${rts.docker ? '✅' : '—'}</td><td>${rts.podman ? '✅' : '—'}</td><td>${rts.apple ? '✅' : '—'}</td></tr>`;
+      html += `<tr><td>${esc(feat)}</td><td>${rts.docker ? '✅' : '—'}</td><td>${rts.podman ? '✅' : '—'}</td><td>${rts.apple ? '✅' : '—'}</td></tr>`;
     }
     html += '</table>';
     document.getElementById('security-comparison').innerHTML = html;

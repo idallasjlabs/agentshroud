@@ -15,8 +15,12 @@ from datetime import datetime, timezone
 from pathlib import Path
 from typing import Any, Optional
 
-from fastapi import APIRouter, HTTPException, WebSocket, WebSocketDisconnect
+from fastapi import APIRouter, Depends, HTTPException, Query, Request, WebSocket, WebSocketDisconnect
+from fastapi.security import HTTPBearer, HTTPAuthorizationCredentials
 from pydantic import BaseModel
+
+from ..ingest_api.auth import verify_token
+from ..ingest_api.config import load_config
 
 from ..runtime import detect_runtime, get_engine
 from ..runtime.config import RuntimeConfig
@@ -25,6 +29,33 @@ from ..runtime.security import get_security_comparison, warn_missing_features
 logger = logging.getLogger("secureclaw.web.api")
 
 router = APIRouter(prefix="/api", tags=["management"])
+
+# --- Auth dependency -------------------------------------------------------
+
+_bearer = HTTPBearer()
+
+async def require_auth(
+    credentials: HTTPAuthorizationCredentials = Depends(_bearer),
+) -> str:
+    """Require valid Bearer token for all management endpoints."""
+    config = load_config()
+    if not verify_token(credentials.credentials, config.auth_token):
+        raise HTTPException(status_code=401, detail="Invalid token")
+    return "authenticated"
+
+# --- Input validation ------------------------------------------------------
+
+VALID_SERVICES = frozenset({
+    "secureclaw-gateway", "secureclaw-openclaw", "falco", "wazuh-agent", "clamav",
+})
+
+VALID_KILLSWITCH_MODES = frozenset({"freeze", "shutdown", "disconnect"})
+
+def _validate_service_name(name: str) -> str:
+    """Validate service name against allowlist to prevent injection."""
+    if name not in VALID_SERVICES:
+        raise HTTPException(status_code=400, detail=f"Invalid service name. Must be one of: {sorted(VALID_SERVICES)}")
+    return name
 
 # --- Models ----------------------------------------------------------------
 
@@ -51,7 +82,7 @@ class UpdateRequest(BaseModel):
 
 
 @router.get("/status")
-async def get_status() -> dict:
+async def get_status(user: str = Depends(require_auth)) -> dict:
     """Full system status including all services and runtime info."""
     runtime_config = RuntimeConfig.from_env()
     available_runtimes = detect_runtime()
@@ -116,8 +147,9 @@ async def get_status() -> dict:
 
 
 @router.post("/services/{name}/start")
-async def start_service(name: str) -> dict:
+async def start_service(name: str, user: str = Depends(require_auth)) -> dict:
     """Start a specific service container."""
+    _validate_service_name(name)
     engine = _get_engine()
     try:
         # For now, start via compose
@@ -128,8 +160,9 @@ async def start_service(name: str) -> dict:
 
 
 @router.post("/services/{name}/stop")
-async def stop_service(name: str) -> dict:
+async def stop_service(name: str, user: str = Depends(require_auth)) -> dict:
     """Stop a specific service container."""
+    _validate_service_name(name)
     engine = _get_engine()
     try:
         engine.stop(name)
@@ -139,8 +172,9 @@ async def stop_service(name: str) -> dict:
 
 
 @router.post("/services/{name}/restart")
-async def restart_service(name: str) -> dict:
+async def restart_service(name: str, user: str = Depends(require_auth)) -> dict:
     """Restart a specific service container."""
+    _validate_service_name(name)
     engine = _get_engine()
     try:
         engine.stop(name)
@@ -155,14 +189,13 @@ async def restart_service(name: str) -> dict:
 
 
 @router.post("/killswitch/{mode}")
-async def killswitch(mode: str, action: KillSwitchAction) -> dict:
+async def killswitch(mode: str, action: KillSwitchAction, user: str = Depends(require_auth)) -> dict:
     """Emergency kill switch: freeze, shutdown, or disconnect."""
     if not action.confirm:
         raise HTTPException(status_code=400, detail="Must confirm kill switch action")
 
-    valid_modes = ("freeze", "shutdown", "disconnect")
-    if mode not in valid_modes:
-        raise HTTPException(status_code=400, detail=f"Mode must be one of: {valid_modes}")
+    if mode not in VALID_KILLSWITCH_MODES:
+        raise HTTPException(status_code=400, detail=f"Mode must be one of: {sorted(VALID_KILLSWITCH_MODES)}")
 
     engine = _get_engine()
 
@@ -197,7 +230,7 @@ async def killswitch(mode: str, action: KillSwitchAction) -> dict:
 
 
 @router.get("/config")
-async def get_config() -> dict:
+async def get_config(user: str = Depends(require_auth)) -> dict:
     """Get current configuration."""
     config_path = Path("secureclaw.yaml")
     if config_path.exists():
@@ -207,10 +240,16 @@ async def get_config() -> dict:
 
 
 @router.put("/config")
-async def update_config(update: ConfigUpdate) -> dict:
+async def update_config(update: ConfigUpdate, user: str = Depends(require_auth)) -> dict:
     """Update configuration (writes YAML and optionally restarts)."""
     import yaml
     config_path = Path("secureclaw.yaml")
+
+    # Validate config keys against allowlist
+    ALLOWED_TOP_KEYS = {"runtime", "security", "services", "network", "logging", "approval", "pii", "egress"}
+    unexpected = set(update.config.keys()) - ALLOWED_TOP_KEYS
+    if unexpected:
+        raise HTTPException(status_code=400, detail=f"Unknown config keys: {sorted(unexpected)}")
 
     # Backup current
     if config_path.exists():
@@ -222,13 +261,13 @@ async def update_config(update: ConfigUpdate) -> dict:
 
 
 @router.post("/config/import")
-async def import_config(update: ConfigUpdate) -> dict:
+async def import_config(update: ConfigUpdate, user: str = Depends(require_auth)) -> dict:
     """Import configuration from uploaded data."""
     return await update_config(update)
 
 
 @router.get("/config/export")
-async def export_config() -> dict:
+async def export_config(user: str = Depends(require_auth)) -> dict:
     """Export current configuration."""
     return await get_config()
 
@@ -237,7 +276,7 @@ async def export_config() -> dict:
 
 
 @router.post("/rebuild")
-async def rebuild() -> dict:
+async def rebuild(user: str = Depends(require_auth)) -> dict:
     """Rebuild containers with latest images."""
     engine = _get_engine()
     config = RuntimeConfig.from_env()
@@ -256,7 +295,7 @@ async def rebuild() -> dict:
 
 
 @router.get("/updates/openclaw")
-async def check_openclaw_updates() -> dict:
+async def check_openclaw_updates(user: str = Depends(require_auth)) -> dict:
     """Check for OpenClaw updates from GitHub."""
     import subprocess
     try:
@@ -283,7 +322,7 @@ async def check_openclaw_updates() -> dict:
 
 
 @router.post("/updates/openclaw/upgrade")
-async def upgrade_openclaw(req: UpdateRequest) -> dict:
+async def upgrade_openclaw(req: UpdateRequest, user: str = Depends(require_auth)) -> dict:
     """Upgrade OpenClaw with security review."""
     # Safety: check kill switch state
     engine = _get_engine()
@@ -310,14 +349,14 @@ async def upgrade_openclaw(req: UpdateRequest) -> dict:
 
 
 @router.post("/updates/openclaw/rollback")
-async def rollback_openclaw() -> dict:
+async def rollback_openclaw(user: str = Depends(require_auth)) -> dict:
     """Rollback OpenClaw to previous version."""
     # This would restore from a backup image tag
     return {"status": "rollback_initiated", "note": "Restoring previous container image"}
 
 
 @router.get("/updates/secureclaw")
-async def check_secureclaw_updates() -> dict:
+async def check_secureclaw_updates(user: str = Depends(require_auth)) -> dict:
     """Check for SecureClaw updates from GitHub."""
     import subprocess
 
@@ -366,7 +405,7 @@ async def check_secureclaw_updates() -> dict:
 
 
 @router.post("/updates/secureclaw/upgrade")
-async def upgrade_secureclaw(req: UpdateRequest) -> dict:
+async def upgrade_secureclaw(req: UpdateRequest, user: str = Depends(require_auth)) -> dict:
     """Pull latest SecureClaw, test, rebuild, restart. Auto-rollback on failure."""
     import subprocess
 
@@ -447,7 +486,7 @@ async def upgrade_secureclaw(req: UpdateRequest) -> dict:
 
 
 @router.post("/updates/secureclaw/rollback")
-async def rollback_secureclaw() -> dict:
+async def rollback_secureclaw(user: str = Depends(require_auth)) -> dict:
     """Revert to previous git commit and rebuild."""
     import subprocess
     try:
@@ -463,7 +502,7 @@ async def rollback_secureclaw() -> dict:
 
 
 @router.get("/updates/history")
-async def update_history() -> dict:
+async def update_history(user: str = Depends(require_auth)) -> dict:
     """Return update history from audit log."""
     # In production this reads from the data ledger
     import subprocess
@@ -482,7 +521,7 @@ async def update_history() -> dict:
 
 
 @router.get("/security/report")
-async def security_report() -> dict:
+async def security_report(user: str = Depends(require_auth)) -> dict:
     """Aggregate security report."""
     return {
         "timestamp": datetime.now(timezone.utc).isoformat(),
@@ -498,14 +537,17 @@ async def security_report() -> dict:
 
 @router.get("/logs")
 async def get_logs(
+    user: str = Depends(require_auth),
     service: Optional[str] = None,
     severity: Optional[str] = None,
     since: Optional[str] = None,
     tail: int = 100,
 ) -> dict:
     """Retrieve container logs with optional filtering."""
+    tail = max(1, min(tail, 1000))  # Clamp to sane range
     engine = _get_engine()
     if service:
+        _validate_service_name(service)
         try:
             logs = engine.logs(service, tail=tail)
             return {"service": service, "logs": logs.splitlines()}
@@ -528,8 +570,15 @@ active_websockets: list[WebSocket] = []
 
 
 @router.websocket("/ws/logs")
-async def ws_logs(websocket: WebSocket):
-    """WebSocket endpoint for real-time log streaming."""
+async def ws_logs(websocket: WebSocket, token: str = Query(default="")):
+    """WebSocket endpoint for real-time log streaming. Requires auth token."""
+    if not token:
+        await websocket.close(code=4001, reason="Authentication required")
+        return
+    config = load_config()
+    if not verify_token(token, config.auth_token):
+        await websocket.close(code=4003, reason="Invalid credentials")
+        return
     await websocket.accept()
     active_websockets.append(websocket)
     try:
@@ -551,8 +600,15 @@ async def ws_logs(websocket: WebSocket):
 
 
 @router.websocket("/ws/updates")
-async def ws_updates(websocket: WebSocket):
-    """WebSocket for real-time update progress."""
+async def ws_updates(websocket: WebSocket, token: str = Query(default="")):
+    """WebSocket for real-time update progress. Requires auth token."""
+    if not token:
+        await websocket.close(code=4001, reason="Authentication required")
+        return
+    config = load_config()
+    if not verify_token(token, config.auth_token):
+        await websocket.close(code=4003, reason="Invalid credentials")
+        return
     await websocket.accept()
     try:
         while True:

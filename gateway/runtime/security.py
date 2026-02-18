@@ -94,13 +94,23 @@ SECURITY_FEATURES: list[SecurityFeature] = [
 ]
 
 
+VALID_RUNTIMES = frozenset({"docker", "podman", "apple"})
+
+def _validate_runtime(runtime: str) -> str:
+    """Validate runtime name to prevent attribute access injection."""
+    if runtime not in VALID_RUNTIMES:
+        raise ValueError(f"Invalid runtime: {runtime!r}. Must be one of: {sorted(VALID_RUNTIMES)}")
+    return runtime
+
 def get_features_for_runtime(runtime: str) -> list[SecurityFeature]:
     """Return features available for a given runtime."""
+    _validate_runtime(runtime)
     return [f for f in SECURITY_FEATURES if getattr(f, runtime, False)]
 
 
 def get_missing_features(runtime: str) -> list[SecurityFeature]:
     """Return features NOT available for a given runtime."""
+    _validate_runtime(runtime)
     return [f for f in SECURITY_FEATURES if not getattr(f, runtime, False)]
 
 
@@ -114,6 +124,7 @@ def get_security_comparison() -> dict[str, dict[str, bool]]:
 
 def warn_missing_features(runtime: str) -> list[str]:
     """Return warning messages for missing security features."""
+    _validate_runtime(runtime)
     warnings = []
     for feat in get_missing_features(runtime):
         notes = getattr(feat, f"{runtime}_notes", "")
@@ -127,6 +138,7 @@ def warn_missing_features(runtime: str) -> list[str]:
 
 def get_security_options(runtime: str) -> dict:
     """Return recommended security CLI options for a runtime."""
+    _validate_runtime(runtime)
     if runtime == "docker":
         return {
             "security_opt": ["no-new-privileges", "seccomp=docker/seccomp/secureclaw-seccomp.json"],
