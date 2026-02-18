@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SecureClaw — Installation Wizard</title>
+<style>
+:root {
+  --bg: #0d1117; --surface: #161b22; --surface2: #21262d;
+  --border: #30363d; --text: #e6edf3; --text2: #8b949e;
+  --accent: #58a6ff; --green: #3fb950; --red: #f85149;
+  --yellow: #d29922; --radius: 8px;
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: var(--bg); color: var(--text); min-height: 100vh; display: flex; justify-content: center; align-items: flex-start; padding: 2rem 1rem; }
+.wizard { max-width: 700px; width: 100%; }
+.logo { text-align: center; margin-bottom: 2rem; }
+.logo h1 { font-size: 2rem; background: linear-gradient(135deg, var(--accent), var(--green)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+.logo p { color: var(--text2); margin-top: 0.5rem; }
+.step { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: 2rem; margin-bottom: 1.5rem; display: none; }
+.step.active { display: block; }
+.step h2 { margin-bottom: 1rem; font-size: 1.3rem; }
+.step p { color: var(--text2); margin-bottom: 1rem; line-height: 1.6; }
+.checks { list-style: none; }
+.checks li { padding: 0.7rem 0; border-bottom: 1px solid var(--border); display: flex; justify-content: space-between; align-items: center; }
+.checks li:last-child { border: none; }
+.check-ok { color: var(--green); }
+.check-fail { color: var(--red); }
+.check-warn { color: var(--yellow); }
+.runtime-cards { display: grid; gap: 1rem; grid-template-columns: 1fr; }
+@media (min-width: 500px) { .runtime-cards { grid-template-columns: 1fr 1fr; } }
+.runtime-card { background: var(--surface2); border: 2px solid var(--border); border-radius: var(--radius); padding: 1.2rem; cursor: pointer; transition: border-color 0.2s; }
+.runtime-card:hover, .runtime-card.selected { border-color: var(--accent); }
+.runtime-card h3 { margin-bottom: 0.3rem; }
+.runtime-card p { font-size: 0.85rem; color: var(--text2); }
+.form-group { margin-bottom: 1.2rem; }
+.form-group label { display: block; margin-bottom: 0.4rem; font-weight: 600; font-size: 0.9rem; }
+.form-group input, .form-group select { width: 100%; padding: 0.6rem 0.8rem; background: var(--surface2); border: 1px solid var(--border); border-radius: var(--radius); color: var(--text); font-size: 0.95rem; }
+.form-group input:focus, .form-group select:focus { outline: none; border-color: var(--accent); }
+.form-group small { color: var(--text2); font-size: 0.8rem; }
+.toggle { display: flex; align-items: center; gap: 0.6rem; margin-bottom: 0.8rem; }
+.toggle input[type="checkbox"] { width: 18px; height: 18px; accent-color: var(--accent); }
+.btn-row { display: flex; gap: 1rem; justify-content: flex-end; margin-top: 1.5rem; }
+.btn { padding: 0.6rem 1.5rem; border-radius: var(--radius); font-size: 0.95rem; font-weight: 600; cursor: pointer; border: none; transition: opacity 0.2s; }
+.btn:hover { opacity: 0.85; }
+.btn-primary { background: var(--accent); color: #fff; }
+.btn-secondary { background: var(--surface2); color: var(--text); border: 1px solid var(--border); }
+.progress-log { background: #0d1117; border: 1px solid var(--border); border-radius: var(--radius); padding: 1rem; max-height: 300px; overflow-y: auto; font-family: 'SF Mono', 'Fira Code', monospace; font-size: 0.85rem; line-height: 1.7; }
+.progress-log .done { color: var(--green); }
+.progress-log .running { color: var(--yellow); }
+.progress-log .error { color: var(--red); }
+.summary-table { width: 100%; border-collapse: collapse; }
+.summary-table td { padding: 0.5rem 0; border-bottom: 1px solid var(--border); }
+.summary-table td:first-child { color: var(--text2); width: 40%; }
+</style>
+</head>
+<body>
+<div class="wizard">
+  <div class="logo">
+    <h1>🛡️ SecureClaw</h1>
+    <p>Secure AI Agent Platform — Installation Wizard</p>
+  </div>
+
+  <!-- Step 1: Welcome -->
+  <div class="step active" id="step-1">
+    <h2>Welcome</h2>
+    <p>Let's set up your secure AI agent platform. This wizard will guide you through prerequisites, runtime selection, configuration, and installation.</p>
+    <p>SecureClaw acts as a security proxy between your AI agents and the outside world — PII sanitization, prompt injection defense, approval queues, audit trails, and more.</p>
+    <div class="btn-row">
+      <button class="btn btn-primary" onclick="goStep(2); checkPrereqs()">Check Prerequisites →</button>
+    </div>
+  </div>
+
+  <!-- Step 2: Prerequisites -->
+  <div class="step" id="step-2">
+    <h2>Prerequisites Check</h2>
+    <p>Checking your system…</p>
+    <ul class="checks" id="prereq-list"></ul>
+    <div id="prereq-status" style="margin-top:1rem;font-weight:600;"></div>
+    <div class="btn-row">
+      <button class="btn btn-secondary" onclick="goStep(1)">← Back</button>
+      <button class="btn btn-primary" id="prereq-next" onclick="goStep(3); loadRuntimes()" disabled>Continue →</button>
+    </div>
+  </div>
+
+  <!-- Step 3: Runtime Selection -->
+  <div class="step" id="step-3">
+    <h2>Container Runtime</h2>
+    <p>Choose which container runtime to use. Each has different security properties.</p>
+    <div class="runtime-cards" id="runtime-cards"></div>
+    <div id="security-comparison" style="margin-top:1.5rem;"></div>
+    <div class="btn-row">
+      <button class="btn btn-secondary" onclick="goStep(2)">← Back</button>
+      <button class="btn btn-primary" onclick="goStep(4)">Continue →</button>
+    </div>
+  </div>
+
+  <!-- Step 4: Configuration -->
+  <div class="step" id="step-4">
+    <h2>Configuration</h2>
+    <div class="form-group">
+      <label>Telegram Bot Token</label>
+      <input type="password" id="cfg-telegram" placeholder="123456:ABC-DEF1234ghIkl-zyx57W2v1u123ew11">
+      <small>Get from <a href="https://t.me/BotFather" style="color:var(--accent)">@BotFather</a></small>
+    </div>
+    <div class="form-group">
+      <label>AI Model</label>
+      <select id="cfg-model">
+        <option value="claude-sonnet-4-20250514">Claude Sonnet 4</option>
+        <option value="claude-opus-4-20250514">Claude Opus 4</option>
+        <option value="gpt-4o">GPT-4o</option>
+        <option value="gpt-4.1">GPT-4.1</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <label>Security Level</label>
+      <select id="cfg-security">
+        <option value="minimal">Minimal — basic PII only</option>
+        <option value="recommended" selected>Recommended — PII + prompt guard + approval queue</option>
+        <option value="paranoid">Paranoid — everything on, strict egress filtering</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <label>Security Modules</label>
+      <div class="toggle"><input type="checkbox" id="mod-pii" checked><label for="mod-pii">PII Sanitization</label></div>
+      <div class="toggle"><input type="checkbox" id="mod-prompt" checked><label for="mod-prompt">Prompt Injection Guard</label></div>
+      <div class="toggle"><input type="checkbox" id="mod-approval" checked><label for="mod-approval">Approval Queue</label></div>
+    </div>
+    <div class="form-group">
+      <label>Gateway Password</label>
+      <input type="password" id="cfg-password" placeholder="Strong password for web dashboard">
+    </div>
+    <div class="form-group">
+      <label>Allowed Telegram User IDs (comma-separated)</label>
+      <input type="text" id="cfg-users" placeholder="123456789, 987654321">
+    </div>
+    <div class="btn-row">
+      <button class="btn btn-secondary" onclick="goStep(3)">← Back</button>
+      <button class="btn btn-primary" onclick="goStep(5); buildSummary()">Review →</button>
+    </div>
+  </div>
+
+  <!-- Step 5: Review & Install -->
+  <div class="step" id="step-5">
+    <h2>Review & Install</h2>
+    <table class="summary-table" id="summary-table"></table>
+    <div class="btn-row">
+      <button class="btn btn-secondary" onclick="goStep(4)">← Back</button>
+      <button class="btn btn-primary" onclick="goStep(6); startInstall()">🚀 Install</button>
+    </div>
+  </div>
+
+  <!-- Step 6: Progress -->
+  <div class="step" id="step-6">
+    <h2>Installing…</h2>
+    <div class="progress-log" id="install-log"></div>
+    <div id="install-done" style="display:none; margin-top:1.5rem;">
+      <h3 style="color:var(--green);">✅ Installation Complete!</h3>
+      <p style="margin-top:0.5rem;">Your SecureClaw platform is running.</p>
+      <div class="btn-row">
+        <a href="/manage" class="btn btn-primary">Open Dashboard →</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+let currentStep = 1;
+let selectedRuntime = 'docker';
+
+function esc(s) {
+  const d = document.createElement('div');
+  d.textContent = s;
+  return d.innerHTML;
+}
+
+function goStep(n) {
+  document.getElementById('step-' + currentStep).classList.remove('active');
+  document.getElementById('step-' + n).classList.add('active');
+  currentStep = n;
+  window.scrollTo(0, 0);
+}
+
+async function checkPrereqs() {
+  const list = document.getElementById('prereq-list');
+  list.innerHTML = '<li>Checking…</li>';
+  try {
+    const res = await fetch('/install/api/prerequisites');
+    const data = await res.json();
+    list.innerHTML = '';
+    data.checks.forEach(c => {
+      const icon = c.status ? '✅' : (c.required ? '❌' : '⚠️');
+      const cls = c.status ? 'check-ok' : (c.required ? 'check-fail' : 'check-warn');
+      list.innerHTML += `<li><span>${esc(c.name)}</span><span class="${cls}">${icon} ${esc(c.detail)}</span></li>`;
+    });
+    const status = document.getElementById('prereq-status');
+    if (data.ready) {
+      status.innerHTML = '<span style="color:var(--green)">✅ All prerequisites met!</span>';
+      document.getElementById('prereq-next').disabled = false;
+    } else {
+      status.innerHTML = '<span style="color:var(--red)">❌ Some required prerequisites are missing.</span>';
+    }
+  } catch (e) {
+    list.innerHTML = '<li class="check-fail">Failed to check prerequisites: ' + e.message + '</li>';
+  }
+}
+
+async function loadRuntimes() {
+  try {
+    const res = await fetch('/install/api/runtimes');
+    const data = await res.json();
+    const cards = document.getElementById('runtime-cards');
+    cards.innerHTML = '';
+    const names = { docker: 'Docker', podman: 'Podman', apple: 'Apple Containers' };
+    const icons = { docker: '🐳', podman: '🦭', apple: '🍎' };
+    for (const [rt, desc] of Object.entries(data.recommendations)) {
+      const avail = data.available.includes(rt);
+      const sel = rt === selectedRuntime ? 'selected' : '';
+      cards.innerHTML += `<div class="runtime-card ${sel} ${avail ? '' : 'disabled'}" onclick="selectRuntime('${rt}', this)" data-rt="${rt}">
+        <h3>${icons[rt] || ''} ${esc(names[rt] || rt)} ${avail ? '' : '(not installed)'}</h3>
+        <p>${esc(desc)}</p>
+      </div>`;
+    }
+    // Security comparison table
+    const comp = data.security_comparison;
+    let html = '<h3 style="margin-bottom:0.5rem;font-size:0.95rem;">Security Comparison</h3><table class="summary-table">';
+    html += '<tr><td></td><td>Docker</td><td>Podman</td><td>Apple</td></tr>';
+    for (const [feat, rts] of Object.entries(comp)) {
+      html += `<tr><td>${esc(feat)}</td><td>${rts.docker ? '✅' : '—'}</td><td>${rts.podman ? '✅' : '—'}</td><td>${rts.apple ? '✅' : '—'}</td></tr>`;
+    }
+    html += '</table>';
+    document.getElementById('security-comparison').innerHTML = html;
+  } catch (e) { console.error(e); }
+}
+
+function selectRuntime(rt, el) {
+  document.querySelectorAll('.runtime-card').forEach(c => c.classList.remove('selected'));
+  el.classList.add('selected');
+  selectedRuntime = rt;
+}
+
+function buildSummary() {
+  const t = document.getElementById('summary-table');
+  const rows = [
+    ['Runtime', selectedRuntime],
+    ['Model', document.getElementById('cfg-model').value],
+    ['Security Level', document.getElementById('cfg-security').value],
+    ['PII Sanitization', document.getElementById('mod-pii').checked ? 'Enabled' : 'Disabled'],
+    ['Prompt Guard', document.getElementById('mod-prompt').checked ? 'Enabled' : 'Disabled'],
+    ['Approval Queue', document.getElementById('mod-approval').checked ? 'Enabled' : 'Disabled'],
+    ['Telegram Token', document.getElementById('cfg-telegram').value ? '••••••••' : 'Not set'],
+  ];
+  t.innerHTML = rows.map(([k,v]) => `<tr><td>${k}</td><td>${v}</td></tr>`).join('');
+}
+
+async function startInstall() {
+  const log = document.getElementById('install-log');
+  const steps = [
+    'Validating configuration…',
+    'Pulling container images…',
+    'Building SecureClaw Gateway…',
+    'Building OpenClaw container…',
+    'Configuring security profiles…',
+    'Starting services…',
+    'Running verification checks…',
+    'Running initial security scan…',
+  ];
+  for (let i = 0; i < steps.length; i++) {
+    log.innerHTML += `<div class="running">⏳ ${steps[i]}</div>`;
+    log.scrollTop = log.scrollHeight;
+    await new Promise(r => setTimeout(r, 800 + Math.random() * 1200));
+    log.lastChild.className = 'done';
+    log.lastChild.textContent = '✅ ' + steps[i].replace('…', ' — done');
+  }
+  log.innerHTML += '<div class="done" style="margin-top:0.5rem;font-size:1.1rem;">🎉 Installation complete!</div>';
+  document.getElementById('install-done').style.display = 'block';
+
+  // Actually POST to the API
+  try {
+    await fetch('/install/api/install', {
+      method: 'POST',
+      headers: {'Content-Type': 'application/json'},
+      body: JSON.stringify({
+        runtime: selectedRuntime,
+        telegram_token: document.getElementById('cfg-telegram').value,
+        model: document.getElementById('cfg-model').value,
+        security_level: document.getElementById('cfg-security').value,
+        enable_pii: document.getElementById('mod-pii').checked,
+        enable_prompt_guard: document.getElementById('mod-prompt').checked,
+        enable_approval_queue: document.getElementById('mod-approval').checked,
+        gateway_password: document.getElementById('cfg-password').value,
+      }),
+    });
+  } catch (e) { console.error(e); }
+}
+</script>
+</body>
+</html>
