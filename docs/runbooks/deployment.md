@@ -4,7 +4,7 @@
 
 ## Prerequisites
 
-- SSH access to Pi: `ssh secureclaw-bot@raspberrypi.tail240ea8.ts.net`
+- SSH access to Pi: `ssh secureclaw-bot@<your-tailscale-hostname>`
 - conda env `oneclaw` with Python 3.11
 - Docker and Docker Compose installed
 - GitHub access via `gh` CLI
