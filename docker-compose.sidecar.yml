@@ -1,0 +1,59 @@
+# SecureClaw Sidecar Mode — Optional Security Scanning
+#
+# WARNING: This mode does NOT guarantee all traffic is scanned.
+# OpenClaw is exposed normally. SecureClaw provides an optional
+# /api/scan endpoint for security scanning.
+#
+# For guaranteed security, use docker-compose.secure.yml (proxy mode).
+#
+# Usage:
+#   docker compose -f docker-compose.sidecar.yml up -d
+
+services:
+  secureclaw-gateway:
+    build:
+      context: .
+      dockerfile: Dockerfile.gateway
+    container_name: secureclaw-gateway
+    ports:
+      - "8081:8080"
+    networks:
+      - shared
+    environment:
+      - SECURECLAW_MODE=sidecar
+      - OPENCLAW_INTERNAL_URL=http://openclaw:3000
+      - SECURECLAW_CONFIG=/app/secureclaw.yaml
+    volumes:
+      - ./secureclaw.yaml:/app/secureclaw.yaml:ro
+      - gateway-data:/app/data
+    healthcheck:
+      test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://localhost:8080/health')"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+    restart: unless-stopped
+
+  openclaw:
+    image: openclaw:latest
+    container_name: openclaw
+    ports:
+      - "3000:3000"  # Exposed normally in sidecar mode
+    networks:
+      - shared
+    environment:
+      - OPENCLAW_BIND=0.0.0.0
+      - OPENCLAW_PORT=3000
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:3000/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+    restart: unless-stopped
+
+networks:
+  shared:
+    driver: bridge
+    name: secureclaw-shared
+
+volumes:
+  gateway-data:
