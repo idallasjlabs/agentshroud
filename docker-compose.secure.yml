@@ -1,0 +1,71 @@
+# SecureClaw Proxy Mode — Full Network Isolation
+#
+# Two networks:
+# - "external" — only SecureClaw gateway exposed to host
+# - "internal" — OpenClaw container, NOT exposed to host
+#
+# SecureClaw gateway bridges both networks.
+# OpenClaw joins ONLY the internal network.
+#
+# All traffic MUST flow through the security pipeline.
+#
+# Usage:
+#   docker compose -f docker-compose.secure.yml up -d
+#
+# Verify:
+#   ./scripts/verify-proxy.sh
+
+services:
+  secureclaw-gateway:
+    build:
+      context: .
+      dockerfile: Dockerfile.gateway
+    container_name: secureclaw-gateway
+    ports:
+      - "8080:8080"
+    networks:
+      - external
+      - internal
+    environment:
+      - SECURECLAW_MODE=proxy
+      - OPENCLAW_INTERNAL_URL=http://openclaw:3000
+      - SECURECLAW_CONFIG=/app/secureclaw.yaml
+    volumes:
+      - ./secureclaw.yaml:/app/secureclaw.yaml:ro
+      - gateway-data:/app/data
+    healthcheck:
+      test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://localhost:8080/health')"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 10s
+    restart: unless-stopped
+
+  openclaw:
+    image: openclaw:latest
+    container_name: openclaw
+    # NO port mapping — only accessible via internal network
+    networks:
+      - internal
+    environment:
+      - OPENCLAW_BIND=0.0.0.0
+      - OPENCLAW_PORT=3000
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:3000/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 15s
+    restart: unless-stopped
+
+networks:
+  external:
+    driver: bridge
+    name: secureclaw-external
+  internal:
+    driver: bridge
+    internal: true  # No external access — isolated
+    name: secureclaw-internal
+
+volumes:
+  gateway-data:
