@@ -103,7 +103,10 @@ class EncryptedStore:
         key = self._derive_key(salt)
 
         aesgcm = AESGCM(key)
-        ciphertext = aesgcm.encrypt(nonce, plaintext, None)
+
+        # Use version + key_id as AAD to prevent header tampering
+        aad = struct.pack("B", BLOB_VERSION) + struct.pack(">I", self.key_id)
+        ciphertext = aesgcm.encrypt(nonce, plaintext, aad)
 
         blob = (
             struct.pack("B", BLOB_VERSION)
@@ -146,7 +149,10 @@ class EncryptedStore:
 
         key = self._derive_key(salt)
         aesgcm = AESGCM(key)
-        return aesgcm.decrypt(nonce, ciphertext, None)
+
+        # Reconstruct AAD from blob header
+        aad = struct.pack("B", version) + struct.pack(">I", blob_key_id)
+        return aesgcm.decrypt(nonce, ciphertext, aad)
 
     def decrypt_str(self, blob: bytes) -> str:
         """Decrypt and return as UTF-8 string."""
