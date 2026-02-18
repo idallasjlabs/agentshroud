@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SecureClaw — Management Dashboard</title>
+<style>
+:root {
+  --bg: #0d1117; --surface: #161b22; --surface2: #21262d;
+  --border: #30363d; --text: #e6edf3; --text2: #8b949e;
+  --accent: #58a6ff; --green: #3fb950; --red: #f85149;
+  --yellow: #d29922; --orange: #db6d28; --radius: 8px;
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: var(--bg); color: var(--text); min-height: 100vh; }
+.header { background: var(--surface); border-bottom: 1px solid var(--border); padding: 1rem 1.5rem; display: flex; align-items: center; justify-content: space-between; }
+.header h1 { font-size: 1.3rem; }
+.header h1 span { background: linear-gradient(135deg, var(--accent), var(--green)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+.header .meta { color: var(--text2); font-size: 0.85rem; }
+.tabs { display: flex; background: var(--surface); border-bottom: 1px solid var(--border); overflow-x: auto; }
+.tab { padding: 0.8rem 1.2rem; cursor: pointer; color: var(--text2); border-bottom: 2px solid transparent; white-space: nowrap; font-size: 0.9rem; transition: all 0.2s; }
+.tab:hover { color: var(--text); }
+.tab.active { color: var(--accent); border-bottom-color: var(--accent); }
+.content { max-width: 1200px; margin: 0 auto; padding: 1.5rem; }
+.panel { display: none; }
+.panel.active { display: block; }
+.card { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: 1.2rem; margin-bottom: 1rem; }
+.card h3 { font-size: 1rem; margin-bottom: 0.8rem; color: var(--text2); }
+.grid { display: grid; gap: 1rem; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); }
+.service-row { display: flex; justify-content: space-between; align-items: center; padding: 0.7rem 0; border-bottom: 1px solid var(--border); }
+.service-row:last-child { border: none; }
+.badge { display: inline-block; padding: 0.15rem 0.6rem; border-radius: 12px; font-size: 0.8rem; font-weight: 600; }
+.badge-green { background: rgba(63,185,80,0.15); color: var(--green); }
+.badge-red { background: rgba(248,81,73,0.15); color: var(--red); }
+.badge-yellow { background: rgba(210,153,34,0.15); color: var(--yellow); }
+.btn { padding: 0.45rem 1rem; border-radius: var(--radius); font-size: 0.85rem; font-weight: 600; cursor: pointer; border: none; transition: opacity 0.2s; }
+.btn:hover { opacity: 0.85; }
+.btn-sm { padding: 0.3rem 0.7rem; font-size: 0.8rem; }
+.btn-primary { background: var(--accent); color: #fff; }
+.btn-danger { background: var(--red); color: #fff; }
+.btn-secondary { background: var(--surface2); color: var(--text); border: 1px solid var(--border); }
+.btn-success { background: var(--green); color: #fff; }
+.btn-group { display: flex; gap: 0.5rem; flex-wrap: wrap; }
+.log-viewer { background: #0d1117; border: 1px solid var(--border); border-radius: var(--radius); padding: 1rem; font-family: 'SF Mono','Fira Code',monospace; font-size: 0.82rem; line-height: 1.6; max-height: 500px; overflow-y: auto; white-space: pre-wrap; word-break: break-all; }
+.config-editor { width: 100%; min-height: 300px; background: #0d1117; color: var(--text); border: 1px solid var(--border); border-radius: var(--radius); padding: 1rem; font-family: 'SF Mono','Fira Code',monospace; font-size: 0.85rem; resize: vertical; }
+.update-split { display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; }
+@media (max-width: 700px) { .update-split { grid-template-columns: 1fr; } }
+.version-box { text-align: center; padding: 1rem; }
+.version-box .current { font-size: 1.8rem; font-weight: 700; }
+.version-box .label { color: var(--text2); font-size: 0.85rem; margin-top: 0.3rem; }
+.version-arrow { color: var(--accent); font-size: 1.2rem; margin: 0.5rem 0; }
+.changelog { background: var(--surface2); border-radius: var(--radius); padding: 1rem; max-height: 200px; overflow-y: auto; font-size: 0.85rem; margin: 1rem 0; }
+.progress-bar { height: 4px; background: var(--surface2); border-radius: 2px; overflow: hidden; margin: 1rem 0; }
+.progress-bar .fill { height: 100%; background: var(--accent); transition: width 0.3s; }
+.history-table { width: 100%; border-collapse: collapse; font-size: 0.85rem; }
+.history-table th { text-align: left; color: var(--text2); padding: 0.5rem; border-bottom: 1px solid var(--border); }
+.history-table td { padding: 0.5rem; border-bottom: 1px solid var(--border); }
+.killswitch-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 1rem; margin-top: 1rem; }
+.killswitch-card { background: var(--surface2); border: 1px solid var(--border); border-radius: var(--radius); padding: 1.2rem; text-align: center; }
+.killswitch-card h4 { margin-bottom: 0.5rem; }
+.killswitch-card p { font-size: 0.8rem; color: var(--text2); margin-bottom: 1rem; }
+.filter-row { display: flex; gap: 0.8rem; margin-bottom: 1rem; flex-wrap: wrap; }
+.filter-row select, .filter-row input { background: var(--surface2); border: 1px solid var(--border); border-radius: var(--radius); padding: 0.4rem 0.7rem; color: var(--text); font-size: 0.85rem; }
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>🛡️ <span>SecureClaw</span> Dashboard</h1>
+  <div class="meta" id="header-meta">Loading…</div>
+</div>
+
+<div class="tabs" id="tab-bar">
+  <div class="tab active" data-panel="status">Status</div>
+  <div class="tab" data-panel="controls">Controls</div>
+  <div class="tab" data-panel="config">Configuration</div>
+  <div class="tab" data-panel="security">Security</div>
+  <div class="tab" data-panel="logs">Logs</div>
+  <div class="tab" data-panel="updates">Updates</div>
+</div>
+
+<div class="content">
+
+  <!-- STATUS -->
+  <div class="panel active" id="panel-status">
+    <div class="grid" id="service-grid"></div>
+    <div class="card">
+      <h3>System</h3>
+      <div id="system-info"></div>
+    </div>
+  </div>
+
+  <!-- CONTROLS -->
+  <div class="panel" id="panel-controls">
+    <div class="card">
+      <h3>Service Control</h3>
+      <div id="service-controls"></div>
+    </div>
+    <div class="card">
+      <h3>🚨 Kill Switch</h3>
+      <p style="color:var(--text2);margin-bottom:0.5rem;">Emergency actions. Use with caution.</p>
+      <div class="killswitch-grid">
+        <div class="killswitch-card">
+          <h4>🥶 Freeze</h4>
+          <p>Pause AI agent — stops all actions but keeps container running</p>
+          <button class="btn btn-secondary" onclick="killswitch('freeze')">Freeze</button>
+        </div>
+        <div class="killswitch-card">
+          <h4>🔌 Shutdown</h4>
+          <p>Stop all services gracefully</p>
+          <button class="btn btn-danger" onclick="killswitch('shutdown')">Shutdown</button>
+        </div>
+        <div class="killswitch-card">
+          <h4>💀 Disconnect</h4>
+          <p>Remove AI containers entirely — nuclear option</p>
+          <button class="btn btn-danger" onclick="killswitch('disconnect')">Disconnect</button>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <h3>Maintenance</h3>
+      <div class="btn-group">
+        <button class="btn btn-primary" onclick="rebuild()">🔨 Rebuild Containers</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- CONFIGURATION -->
+  <div class="panel" id="panel-config">
+    <div class="card">
+      <h3>Configuration Editor</h3>
+      <textarea class="config-editor" id="config-editor"></textarea>
+      <div class="btn-group" style="margin-top:1rem;">
+        <button class="btn btn-secondary" onclick="loadConfig()">Reload</button>
+        <button class="btn btn-primary" onclick="saveConfig()">💾 Save & Apply</button>
+        <button class="btn btn-secondary" onclick="exportConfig()">📥 Export</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- SECURITY -->
+  <div class="panel" id="panel-security">
+    <div class="card">
+      <h3>Security Report</h3>
+      <div id="security-report"></div>
+    </div>
+  </div>
+
+  <!-- LOGS -->
+  <div class="panel" id="panel-logs">
+    <div class="filter-row">
+      <select id="log-service">
+        <option value="">All Services</option>
+        <option value="secureclaw-gateway">Gateway</option>
+        <option value="secureclaw-openclaw">OpenClaw</option>
+      </select>
+      <input type="number" id="log-tail" value="100" min="10" max="1000" style="width:80px;" placeholder="Lines">
+      <button class="btn btn-sm btn-primary" onclick="loadLogs()">Refresh</button>
+      <button class="btn btn-sm btn-secondary" id="log-auto-btn" onclick="toggleAutoLog()">Auto ▶</button>
+    </div>
+    <div class="log-viewer" id="log-viewer">Click refresh to load logs…</div>
+  </div>
+
+  <!-- UPDATES -->
+  <div class="panel" id="panel-updates">
+    <div class="update-split">
+      <!-- OpenClaw -->
+      <div class="card">
+        <h3>OpenClaw</h3>
+        <div class="version-box">
+          <div class="label">Current Version</div>
+          <div class="current" id="oc-current">…</div>
+          <div class="version-arrow">↓</div>
+          <div class="label">Latest Available</div>
+          <div class="current" id="oc-latest" style="color:var(--accent)">…</div>
+        </div>
+        <div id="oc-changelog" class="changelog" style="display:none;"></div>
+        <div class="btn-group" style="justify-content:center;margin-top:1rem;">
+          <button class="btn btn-primary" onclick="checkOCUpdates()">Check Updates</button>
+          <button class="btn btn-success" id="oc-upgrade-btn" onclick="upgradeOC()" disabled>Upgrade</button>
+          <button class="btn btn-secondary" onclick="rollbackOC()">Rollback</button>
+        </div>
+        <div class="progress-bar" id="oc-progress" style="display:none;"><div class="fill" style="width:0%"></div></div>
+      </div>
+
+      <!-- SecureClaw -->
+      <div class="card">
+        <h3>SecureClaw</h3>
+        <div class="version-box">
+          <div class="label">Current Version</div>
+          <div class="current" id="sc-current">…</div>
+          <div class="label" id="sc-commit" style="font-family:monospace;font-size:0.8rem;"></div>
+          <div class="version-arrow">↓</div>
+          <div class="label">Latest Available</div>
+          <div class="current" id="sc-latest" style="color:var(--accent)">…</div>
+          <div class="label" id="sc-behind"></div>
+        </div>
+        <div id="sc-changelog" class="changelog" style="display:none;"></div>
+        <div class="btn-group" style="justify-content:center;margin-top:1rem;">
+          <button class="btn btn-primary" onclick="checkSCUpdates()">Check Updates</button>
+          <button class="btn btn-success" id="sc-upgrade-btn" onclick="upgradeSC()" disabled>Pull + Test + Rebuild</button>
+          <button class="btn btn-secondary" onclick="rollbackSC()">Rollback</button>
+        </div>
+        <div class="progress-bar" id="sc-progress" style="display:none;"><div class="fill" style="width:0%"></div></div>
+        <div id="sc-update-log" class="log-viewer" style="display:none;max-height:200px;margin-top:1rem;"></div>
+      </div>
+    </div>
+
+    <div class="card" style="margin-top:1.5rem;">
+      <h3>Update History</h3>
+      <table class="history-table">
+        <thead><tr><th>Commit</th><th>Message</th></tr></thead>
+        <tbody id="update-history"></tbody>
+      </table>
+    </div>
+  </div>
+
+</div>
+
+<script>
+// Tab switching
+document.querySelectorAll('.tab').forEach(tab => {
+  tab.addEventListener('click', () => {
+    document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+    document.querySelectorAll('.panel').forEach(p => p.classList.remove('active'));
+    tab.classList.add('active');
+    document.getElementById('panel-' + tab.dataset.panel).classList.add('active');
+  });
+});
+
+// --- Status ---
+async function loadStatus() {
+  try {
+    const res = await fetch('/api/status');
+    const data = await res.json();
+    document.getElementById('header-meta').textContent =
+      `${data.platform.os} ${data.platform.arch} | Runtime: ${data.runtime.active || 'none'} | ${data.timestamp.split('T')[1]?.split('.')[0] || ''}`;
+
+    // Services grid
+    const grid = document.getElementById('service-grid');
+    grid.innerHTML = '';
+    const icons = {'secureclaw-gateway':'🛡️','secureclaw-openclaw':'🤖','falco':'🦅','wazuh-agent':'👁️','clamav':'🦠'};
+    for (const [name, info] of Object.entries(data.services)) {
+      const running = info.status === 'running';
+      grid.innerHTML += `<div class="card">
+        <div class="service-row">
+          <span>${icons[name]||'📦'} <strong>${name}</strong></span>
+          <span class="badge ${running ? 'badge-green' : 'badge-red'}">${running ? '● Running' : '● Stopped'}</span>
+        </div>
+        ${info.image ? `<div style="font-size:0.8rem;color:var(--text2);margin-top:0.3rem;">${info.image}</div>` : ''}
+        ${info.details ? `<div style="font-size:0.8rem;color:var(--text2);">${info.details}</div>` : ''}
+      </div>`;
+    }
+
+    // System info
+    const sys = document.getElementById('system-info');
+    sys.innerHTML = `
+      <div style="display:flex;gap:2rem;flex-wrap:wrap;">
+        <div>💾 Disk: ${data.system.disk_used_pct}% used (${data.system.disk_free_gb} GB free)</div>
+        <div>🏗️ Runtime: ${data.runtime.active || 'none'} ${data.runtime.rootless ? '(rootless)' : ''}</div>
+        <div>Available: ${data.runtime.available.join(', ') || 'none'}</div>
+      </div>`;
+
+    // Service controls
+    const ctrl = document.getElementById('service-controls');
+    ctrl.innerHTML = '';
+    for (const name of Object.keys(data.services)) {
+      ctrl.innerHTML += `<div class="service-row">
+        <span>${icons[name]||'📦'} ${name}</span>
+        <div class="btn-group">
+          <button class="btn btn-sm btn-success" onclick="svcAction('${name}','start')">Start</button>
+          <button class="btn btn-sm btn-danger" onclick="svcAction('${name}','stop')">Stop</button>
+          <button class="btn btn-sm btn-secondary" onclick="svcAction('${name}','restart')">Restart</button>
+        </div>
+      </div>`;
+    }
+  } catch (e) {
+    document.getElementById('header-meta').textContent = 'Error loading status: ' + e.message;
+  }
+}
+
+async function svcAction(name, action) {
+  try {
+    await fetch(`/api/services/${name}/${action}`, {method:'POST',headers:{'Content-Type':'application/json'},body:'{}'});
+    setTimeout(loadStatus, 1000);
+  } catch(e) { alert('Error: ' + e.message); }
+}
+
+async function killswitch(mode) {
+  if (!confirm(`Are you sure you want to ${mode}? This is an emergency action.`)) return;
+  try {
+    await fetch(`/api/killswitch/${mode}`, {method:'POST',headers:{'Content-Type':'application/json'},body:'{"confirm":true}'});
+    setTimeout(loadStatus, 2000);
+  } catch(e) { alert('Error: ' + e.message); }
+}
+
+async function rebuild() {
+  if (!confirm('Rebuild all containers? Services will restart.')) return;
+  try {
+    const res = await fetch('/api/rebuild', {method:'POST'});
+    const data = await res.json();
+    alert(data.status === 'rebuilt' ? 'Rebuild complete!' : 'Error: ' + JSON.stringify(data));
+    loadStatus();
+  } catch(e) { alert('Error: ' + e.message); }
+}
+
+// --- Config ---
+async function loadConfig() {
+  try {
+    const res = await fetch('/api/config');
+    const data = await res.json();
+    document.getElementById('config-editor').value = typeof data.config === 'string' ? data.config : JSON.stringify(data.config, null, 2);
+  } catch(e) { alert('Error: ' + e.message); }
+}
+
+async function saveConfig() {
+  if (!confirm('Save and apply configuration? Services may restart.')) return;
+  try {
+    const text = document.getElementById('config-editor').value;
+    const config = JSON.parse(text);
+    await fetch('/api/config', {method:'PUT',headers:{'Content-Type':'application/json'},body:JSON.stringify({config})});
+    alert('Configuration saved!');
+  } catch(e) { alert('Error: ' + e.message); }
+}
+
+function exportConfig() {
+  const text = document.getElementById('config-editor').value;
+  const blob = new Blob([text], {type:'application/json'});
+  const a = document.createElement('a');
+  a.href = URL.createObjectURL(blob);
+  a.download = 'secureclaw-config.json';
+  a.click();
+}
+
+// --- Logs ---
+let autoLogInterval = null;
+async function loadLogs() {
+  const svc = document.getElementById('log-service').value;
+  const tail = document.getElementById('log-tail').value || 100;
+  try {
+    const url = svc ? `/api/logs?service=${svc}&tail=${tail}` : `/api/logs?tail=${tail}`;
+    const res = await fetch(url);
+    const data = await res.json();
+    const viewer = document.getElementById('log-viewer');
+    if (data.logs) {
+      if (Array.isArray(data.logs)) {
+        viewer.textContent = data.logs.join('\n');
+      } else {
+        let text = '';
+        for (const [s, lines] of Object.entries(data.logs)) {
+          text += `=== ${s} ===\n${lines.join('\n')}\n\n`;
+        }
+        viewer.textContent = text;
+      }
+    }
+    viewer.scrollTop = viewer.scrollHeight;
+  } catch(e) { document.getElementById('log-viewer').textContent = 'Error: ' + e.message; }
+}
+
+function toggleAutoLog() {
+  const btn = document.getElementById('log-auto-btn');
+  if (autoLogInterval) {
+    clearInterval(autoLogInterval);
+    autoLogInterval = null;
+    btn.textContent = 'Auto ▶';
+  } else {
+    loadLogs();
+    autoLogInterval = setInterval(loadLogs, 5000);
+    btn.textContent = 'Auto ⏸';
+  }
+}
+
+// --- Security ---
+async function loadSecurity() {
+  try {
+    const res = await fetch('/api/security/report');
+    const data = await res.json();
+    const el = document.getElementById('security-report');
+    let html = '<h4>Runtime Security Features</h4><table class="history-table"><thead><tr><th>Feature</th><th>Docker</th><th>Podman</th><th>Apple</th></tr></thead><tbody>';
+    for (const [feat, rts] of Object.entries(data.runtime_security || {})) {
+      html += `<tr><td>${feat}</td><td>${rts.docker?'✅':'—'}</td><td>${rts.podman?'✅':'—'}</td><td>${rts.apple?'✅':'—'}</td></tr>`;
+    }
+    html += '</tbody></table>';
+    if (data.warnings?.length) {
+      html += '<h4 style="margin-top:1rem;color:var(--yellow);">⚠️ Warnings</h4><ul>';
+      data.warnings.forEach(w => html += `<li style="color:var(--text2);font-size:0.85rem;">${w}</li>`);
+      html += '</ul>';
+    }
+    el.innerHTML = html;
+  } catch(e) { document.getElementById('security-report').textContent = 'Error: ' + e.message; }
+}
+
+// --- Updates ---
+async function checkOCUpdates() {
+  try {
+    const res = await fetch('/api/updates/openclaw');
+    const data = await res.json();
+    document.getElementById('oc-current').textContent = data.current || '?';
+    document.getElementById('oc-latest').textContent = data.latest || '?';
+    document.getElementById('oc-upgrade-btn').disabled = !data.update_available;
+    if (data.update_available) {
+      document.getElementById('oc-latest').style.color = 'var(--green)';
+    }
+  } catch(e) { alert('Error: ' + e.message); }
+}
+
+async function upgradeOC() {
+  if (!confirm('Upgrade OpenClaw? This will restart the AI agent.')) return;
+  const prog = document.getElementById('oc-progress');
+  prog.style.display = 'block';
+  prog.querySelector('.fill').style.width = '30%';
+  try {
+    const res = await fetch('/api/updates/openclaw/upgrade', {method:'POST',headers:{'Content-Type':'application/json'},body:'{}'});
+    prog.querySelector('.fill').style.width = '100%';
+    const data = await res.json();
+    alert(data.status === 'upgraded' ? 'OpenClaw upgraded!' : 'Error: ' + data.error);
+    checkOCUpdates();
+  } catch(e) { alert('Error: ' + e.message); }
+}
+
+async function rollbackOC() {
+  if (!confirm('Rollback OpenClaw to previous version?')) return;
+  await fetch('/api/updates/openclaw/rollback', {method:'POST'});
+  checkOCUpdates();
+}
+
+async function checkSCUpdates() {
+  try {
+    const res = await fetch('/api/updates/secureclaw');
+    const data = await res.json();
+    document.getElementById('sc-current').textContent = data.current_version || 'dev';
+    document.getElementById('sc-commit').textContent = data.current_commit || '';
+    document.getElementById('sc-latest').textContent = data.latest_version || data.current_version || 'dev';
+    document.getElementById('sc-behind').textContent = data.commits_behind ? `${data.commits_behind} commits behind` : 'Up to date';
+    document.getElementById('sc-behind').style.color = data.commits_behind ? 'var(--yellow)' : 'var(--green)';
+    document.getElementById('sc-upgrade-btn').disabled = !data.update_available;
+    loadUpdateHistory();
+  } catch(e) { alert('Error: ' + e.message); }
+}
+
+async function upgradeSC() {
+  if (!confirm('Upgrade SecureClaw? This will: git pull → run tests → rebuild → restart. Auto-rollback on failure.')) return;
+  const prog = document.getElementById('sc-progress');
+  const log = document.getElementById('sc-update-log');
+  prog.style.display = 'block';
+  log.style.display = 'block';
+  log.textContent = 'Starting upgrade…\n';
+
+  const steps = ['git_pull','security_review','run_tests','rebuild','restart'];
+  let pct = 0;
+  const timer = setInterval(() => {
+    pct = Math.min(pct + 5, 90);
+    prog.querySelector('.fill').style.width = pct + '%';
+  }, 1000);
+
+  try {
+    const res = await fetch('/api/updates/secureclaw/upgrade', {method:'POST',headers:{'Content-Type':'application/json'},body:'{}'});
+    clearInterval(timer);
+    const data = await res.json();
+    prog.querySelector('.fill').style.width = '100%';
+
+    if (data.steps) {
+      data.steps.forEach(s => {
+        const icon = s.status === 'done' ? '✅' : (s.status === 'running' ? '⏳' : '❌');
+        log.textContent += `${icon} ${s.step}`;
+        if (s.changed_files) log.textContent += ` (${s.changed_files} files changed)`;
+        if (s.security_concerns?.length) log.textContent += `\n   ⚠️ ${s.security_concerns.join(', ')}`;
+        log.textContent += '\n';
+      });
+    }
+
+    if (data.status === 'upgraded') {
+      log.textContent += '\n🎉 Upgrade successful!\n';
+    } else {
+      log.textContent += `\n❌ Upgrade failed: ${data.error}\n`;
+      if (data.rolled_back_to) log.textContent += `↩️ Rolled back to ${data.rolled_back_to}\n`;
+    }
+    checkSCUpdates();
+  } catch(e) {
+    clearInterval(timer);
+    log.textContent += '❌ Error: ' + e.message + '\n';
+  }
+}
+
+async function rollbackSC() {
+  if (!confirm('Rollback SecureClaw to previous commit? Will rebuild containers.')) return;
+  await fetch('/api/updates/secureclaw/rollback', {method:'POST'});
+  checkSCUpdates();
+}
+
+async function loadUpdateHistory() {
+  try {
+    const res = await fetch('/api/updates/history');
+    const data = await res.json();
+    const tbody = document.getElementById('update-history');
+    tbody.innerHTML = '';
+    (data.history || []).forEach(line => {
+      const parts = line.split(' ');
+      const hash = parts[0];
+      const msg = parts.slice(1).join(' ');
+      tbody.innerHTML += `<tr><td style="font-family:monospace;color:var(--accent);">${hash}</td><td>${msg}</td></tr>`;
+    });
+  } catch(e) {}
+}
+
+// --- Init ---
+loadStatus();
+loadConfig();
+loadSecurity();
+setInterval(loadStatus, 30000);
+</script>
+</body>
+</html>
