@@ -1,0 +1,20 @@
+"""SecureClaw Management Dashboard routes."""
+
+from __future__ import annotations
+
+import logging
+from pathlib import Path
+
+from fastapi import APIRouter
+from fastapi.responses import HTMLResponse
+
+logger = logging.getLogger("secureclaw.web.management")
+
+router = APIRouter(prefix="/manage", tags=["management"])
+
+
+@router.get("/", response_class=HTMLResponse)
+async def dashboard():
+    """Serve the management dashboard."""
+    template = Path(__file__).parent / "templates" / "management.html"
+    return HTMLResponse(template.read_text())
