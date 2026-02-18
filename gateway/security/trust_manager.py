@@ -78,6 +78,8 @@ class TrustManager:
         self.action_levels = action_levels or dict(DEFAULT_ACTION_LEVELS)
         self.db_path = db_path
         self._conn = sqlite3.connect(db_path)
+        if db_path != ":memory:":
+            self._conn.execute("PRAGMA journal_mode=WAL")
         self._init_db()
 
     def _init_db(self):
@@ -219,11 +221,10 @@ class TrustManager:
             "violation": "total_violations",
         }
         counter_col = _COUNTER_COLS.get(event_type)
-        if counter_col and counter_col not in _COUNTER_COLS.values():
-            raise ValueError(f"Invalid counter column: {counter_col}")
 
         if counter_col:
-            # Safe: counter_col is from a hardcoded whitelist above
+            # Safe: counter_col comes from hardcoded dict above, never from user input
+            assert counter_col in ("total_successes", "total_failures", "total_violations")
             sql = f"UPDATE trust_scores SET score = ?, level = ?, last_action_time = ?, {counter_col} = {counter_col} + 1 WHERE agent_id = ?"
         else:
             sql = "UPDATE trust_scores SET score = ?, level = ?, last_action_time = ? WHERE agent_id = ?"

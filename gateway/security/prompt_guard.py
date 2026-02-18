@@ -175,6 +175,16 @@ class PromptGuard:
         for match in b64_re.finditer(text):
             try:
                 decoded = base64.b64decode(match.group()).decode("utf-8", errors="ignore")
+                # Check for double-base64 encoding
+                for inner_match in b64_re.finditer(decoded):
+                    try:
+                        double_decoded = base64.b64decode(inner_match.group()).decode("utf-8", errors="ignore")
+                        for pat in _PATTERNS[:5]:
+                            if pat.pattern.search(double_decoded):
+                                findings.append((f"double_encoded_{pat.name}", 0.9))
+                                break
+                    except Exception:
+                        pass
                 # Recursively scan decoded content
                 for pat in _PATTERNS[:5]:  # Check top injection patterns only
                     if pat.pattern.search(decoded):
@@ -196,6 +206,12 @@ class PromptGuard:
         # Right-to-left override
         if "\u202e" in text or "\u200f" in text:
             findings.append(("rtl_override", 0.6))
+                # Fullwidth Latin characters used to evade ASCII pattern matching
+        if re.search("[！-～]", text):
+            findings.append(("fullwidth_chars", 0.5))
+        # Mathematical bold/italic/script letters used for obfuscation
+        if re.search("[𝐀-𝟿]", text):
+            findings.append(("mathematical_unicode", 0.5))
         return findings
 
     def scan(self, text: str) -> ScanResult:
@@ -208,11 +224,14 @@ class PromptGuard:
         Returns:
             ScanResult with blocked status, score, patterns, and sanitized input.
         """
+        # Check unicode tricks on RAW text before normalization
+        pre_norm_unicode = self._check_unicode_tricks(text) if text else []
+
         # Normalize unicode to catch fullwidth chars, confusables, etc.
         if text:
             text = unicodedata.normalize("NFKC", text)
             # Strip zero-width characters for pattern matching
-            stripped = re.sub(r'[​‌‍⁠﻿]', '', text)
+            stripped = re.sub("[​‌‍⁠﻿]", "", text)
         else:
             stripped = text
 
@@ -239,8 +258,8 @@ class PromptGuard:
             matched.append(name)
             total_score += weight
 
-        # Unicode tricks
-        for name, weight in self._check_unicode_tricks(text):
+        # Unicode tricks (from pre-normalization check)
+        for name, weight in pre_norm_unicode:
             matched.append(name)
             total_score += weight
 
