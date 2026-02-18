@@ -173,13 +173,22 @@ class EgressFilter:
 
     @staticmethod
     def _is_private_ip(host: str) -> bool:
-        """Check if host is a private, loopback, or link-local IP."""
+        """Check if host is a private, loopback, link-local, or reserved IP.
+
+        Covers: RFC 1918, loopback (v4+v6), link-local, IPv6 ULA,
+        IPv4-mapped IPv6, and localhost hostnames.
+        """
         try:
             addr = ipaddress.ip_address(host)
+            # Check IPv4-mapped IPv6 addresses (e.g., ::ffff:127.0.0.1)
+            if isinstance(addr, ipaddress.IPv6Address) and addr.ipv4_mapped:
+                mapped = addr.ipv4_mapped
+                return mapped.is_private or mapped.is_loopback or mapped.is_link_local or mapped.is_reserved
             return addr.is_private or addr.is_loopback or addr.is_link_local or addr.is_reserved
         except ValueError:
-            # Not an IP address (it's a domain) — check for localhost
-            return host.lower() in ("localhost", "localhost.")
+            # Not an IP address (it's a domain) — check for localhost variants
+            normalized = host.lower().rstrip(".")
+            return normalized in ("localhost", "ip6-localhost", "ip6-loopback")
 
     def _record(
         self, agent_id: str, dest: str, port: Optional[int],

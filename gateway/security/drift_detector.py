@@ -56,6 +56,8 @@ class DriftDetector:
     def __init__(self, db_path: str = ":memory:"):
         self.db_path = db_path
         self._conn = sqlite3.connect(db_path)
+        if db_path != ":memory:":
+            self._conn.execute("PRAGMA journal_mode=WAL")
         self._init_db()
 
     def _init_db(self):
