@@ -120,7 +120,7 @@ services:
       - /var/tmp:noexec,nosuid,size=100m
       - /home/node/.npm:noexec,nosuid,size=200m
       - /home/node/.local:noexec,nosuid,size=100m
-      - /home/node/.config:noexec,nosuid,size=100m
+      - /home/node/.config:noexec,nosuid,size=100m,uid=1000,gid=1000
       # .cache/ms-playwright is now a volume (persistent browsers)
 
     # Resource limits (increased for Node.js + OpenClaw)
