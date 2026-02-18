@@ -1,0 +1,37 @@
+# Falco configuration for SecureClaw
+# JSON output for programmatic parsing
+
+json_output: true
+json_include_output_property: true
+json_include_tags_property: true
+
+log_stderr: true
+log_syslog: false
+log_level: warning
+
+# File output
+file_output:
+  enabled: true
+  keep_alive: true
+  filename: /var/log/falco/falco-events.json
+
+# gRPC server
+grpc:
+  enabled: true
+  bind_address: "unix:///var/run/falco/falco.sock"
+  threadiness: 2
+
+grpc_output:
+  enabled: true
+
+# Stdout output (for docker logs)
+stdout_output:
+  enabled: true
+
+# Rate limiting
+outputs:
+  rate: 1
+  max_burst: 10
+
+# Buffered outputs
+buffered_outputs: true
