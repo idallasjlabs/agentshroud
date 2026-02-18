@@ -33,6 +33,8 @@ services:
     volumes:
       - ./secureclaw.yaml:/app/secureclaw.yaml:ro
       - gateway-data:/app/data
+      - security-reports:/var/log/security
+      - falco-alerts:/var/log/falco:ro
     healthcheck:
       test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://localhost:8080/health')"]
       interval: 30s
@@ -58,6 +60,30 @@ services:
       start_period: 15s
     restart: unless-stopped
 
+  falco:
+    image: falcosecurity/falco:latest
+    privileged: true
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock:ro
+      - /dev:/host/dev:ro
+      - /proc:/host/proc:ro
+      - ./docker/falco/falco.yaml:/etc/falco/falco.yaml:ro
+      - ./docker/falco/rules.yaml:/etc/falco/rules.d/secureclaw.yaml:ro
+      - falco-alerts:/var/log/falco
+    networks:
+      - internal
+    restart: unless-stopped
+
+  wazuh:
+    image: wazuh/wazuh-agent:latest
+    volumes:
+      - openclaw-workspace:/host/workspace:ro
+      - ./docker/wazuh/ossec.conf:/var/ossec/etc/ossec.conf:ro
+      - security-reports:/host/security-reports:ro
+    networks:
+      - internal
+    restart: unless-stopped
+
 networks:
   external:
     driver: bridge
@@ -69,3 +95,7 @@ networks:
 
 volumes:
   gateway-data:
+  security-reports:
+  falco-alerts:
+  clamav-db:
+  openclaw-workspace:
