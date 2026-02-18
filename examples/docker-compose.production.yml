@@ -1,0 +1,48 @@
+# OneClaw — Production Docker Compose
+# Hardened deployment with all security features
+
+services:
+  gateway:
+    build:
+      context: ../gateway
+      dockerfile: Dockerfile
+    ports:
+      - "127.0.0.1:8080:8080"
+      - "127.0.0.1:3000:3000"
+    env_file:
+      - recommended.env
+    volumes:
+      - gateway-data:/app/data
+      - gateway-logs:/app/logs
+    read_only: true
+    tmpfs:
+      - /tmp:size=64M
+      - /home/node/.local:size=32M
+      - /home/node/.config:size=32M
+    security_opt:
+      - no-new-privileges:true
+      - seccomp=../docker/seccomp/secureclaw-arm64.json
+    deploy:
+      resources:
+        limits:
+          memory: 4g
+          cpus: "2.0"
+        reservations:
+          memory: 2g
+    pids_limit: 1024
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8080/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 15s
+    logging:
+      driver: json-file
+      options:
+        max-size: "10m"
+        max-file: "3"
+
+volumes:
+  gateway-data:
+  gateway-logs:
