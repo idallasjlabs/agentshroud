@@ -31,6 +31,15 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     openscap-scanner \
     && rm -rf /var/lib/apt/lists/*
 
+# ClamAV for malware scanning
+RUN apt-get update && apt-get install -y --no-install-recommends \
+    clamav clamav-daemon clamav-freshclam \
+    && rm -rf /var/lib/apt/lists/* \
+    && mkdir -p /var/lib/clamav
+
+# Trivy vulnerability scanner (ARM64 compatible)
+RUN curl -sfL https://raw.githubusercontent.com/aquasecurity/trivy/main/contrib/install.sh | sh -s -- -b /usr/local/bin
+
 # Create non-root user
 RUN useradd --create-home --shell /bin/bash --uid 1000 secureclaw
 
@@ -57,6 +66,16 @@ LABEL org.opencontainers.image.source="https://github.com/ijefferson/oneclaw"
 
 # Prevent Python bytecode generation (read-only filesystem compatibility)
 ENV PYTHONDONTWRITEBYTECODE=1
+
+# Copy security scripts
+COPY docker/scripts/security-entrypoint.sh /usr/local/bin/security-entrypoint.sh
+COPY docker/scripts/security-scheduler.sh /usr/local/bin/security-scheduler.sh
+COPY docker/scripts/security-scan.sh /usr/local/bin/security-scan.sh
+COPY docker/scripts/security-report.sh /usr/local/bin/security-report.sh
+RUN chmod +x /usr/local/bin/security-*.sh
+
+# Create security log directory
+RUN mkdir -p /var/log/security && chown secureclaw:secureclaw /var/log/security
 
 # Switch to non-root user
 USER secureclaw
