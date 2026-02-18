@@ -29,6 +29,16 @@ ALLOWED_PORTS=(
     "443"   # HTTPS
 )
 
+# Validate inputs to prevent command injection
+if [[ ! "$DOCKER_NETWORK" =~ ^[a-zA-Z0-9_-]+$ ]]; then
+    echo "ERROR: DOCKER_NETWORK contains invalid characters: $DOCKER_NETWORK"
+    exit 1
+fi
+if [[ ! "$DOCKER_BRIDGE" =~ ^[a-zA-Z0-9_-]+$ ]]; then
+    echo "ERROR: DOCKER_BRIDGE contains invalid characters: $DOCKER_BRIDGE"
+    exit 1
+fi
+
 echo "=== SecureClaw Egress Filtering ==="
 echo "Network: $DOCKER_NETWORK"
 echo "Bridge:  $DOCKER_BRIDGE"
