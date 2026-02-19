@@ -176,21 +176,40 @@ The live dashboard provides real-time visibility into agent activity:
 
 ## Documentation
 
+### Quick Start
 | Document | Description |
 |----------|-------------|
 | [Setup Guide](docs/setup/OPENCLAW_SETUP.md) | Full installation walkthrough |
-| [Architecture](docs/architecture/) | System design and security model |
 | [User Guide](docs/user-guide.md) | Day-to-day usage |
 | [Security](SECURITY.md) | Vulnerability reporting & security overview |
 | [Contributing](CONTRIBUTING.md) | How to contribute |
-| [Changelog](CHANGELOG.md) | Version history |
-| [Compliance](docs/compliance/) | IEC 62443 alignment |
-| [Runbooks](docs/runbooks/) | Operational procedures |
-| [SSH Config](docs/ssh-configuration.md) | SSH proxy setup |
-| [Deploy](docs/deploy/) | Deployment guides |
+
+### Technical Documentation
+| Category | Directory | Description |
+|----------|-----------|-------------|
+| **Architecture** | [docs/architecture/](docs/architecture/) | System design, ADRs, deployment, network topology |
+| **Flows** | [docs/flows/](docs/flows/) | State diagrams, DFDs, sequence diagrams, activity diagrams |
+| **Data** | [docs/data/](docs/data/) | ERDs, data dictionary, schema documentation |
+| **API** | [docs/api/](docs/api/) | OpenAPI spec, API reference, integration guides |
+| **Security** | [docs/security/](docs/security/) | Threat model, security architecture, access control |
+| **Operations** | [docs/operations/](docs/operations/) | Runbooks, SOPs, incident response, deployment procedures |
+| **Requirements** | [docs/requirements/](docs/requirements/) | SRS, FRD, NFR, use cases |
+| **Testing** | [docs/testing/](docs/testing/) | Test plans, coverage reports, benchmarks |
+| **Project** | [docs/project/](docs/project/) | RACI, glossary, release notes |
+| **Integrations** | [docs/integrations/](docs/integrations/) | ICDs, integration architecture, message schemas |
+| **Reference** | [docs/reference/](docs/reference/) | Quick references and guides |
+| **Setup** | [docs/setup/](docs/setup/) | Installation and configuration guides |
+| **Compliance** | [docs/compliance/](docs/compliance/) | IEC 62443 alignment and compliance documentation |
+
+### Development Resources
+| Resource | Location | Description |
+|----------|----------|-------------|
+| [Examples](examples/) | Configuration examples and templates |
+| [Scripts](scripts/) | Utility scripts and automation tools |
+| [Gateway Source](gateway/) | Core proxy implementation |
+| [Changelog](CHANGELOG.md) | Version history and changes |
 
 ---
-
 ## Example Configurations
 
 See the [`examples/`](examples/) directory:
