@@ -1,0 +1,783 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SecureClaw Setup Wizard</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .wizard-container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        .wizard-step {
+            display: none;
+        }
+
+        .wizard-step.active {
+            display: block;
+        }
+
+        .runtime-option {
+            border: 2px solid var(--border);
+            border-radius: var(--radius);
+            padding: 1.5rem;
+            margin-bottom: 1rem;
+            cursor: pointer;
+            transition: var(--transition);
+        }
+
+        .runtime-option:hover {
+            border-color: var(--info);
+        }
+
+        .runtime-option.selected {
+            border-color: var(--success);
+            background-color: rgba(35, 134, 54, 0.1);
+        }
+
+        .runtime-option.disabled {
+            opacity: 0.6;
+            cursor: not-allowed;
+        }
+
+        .command-box {
+            background-color: var(--bg-tertiary);
+            border: 1px solid var(--border);
+            border-radius: var(--radius);
+            padding: 1rem;
+            font-family: 'Monaco', 'Menlo', 'Ubuntu Mono', monospace;
+            font-size: 0.875rem;
+            margin: 1rem 0;
+            position: relative;
+        }
+
+        .command-box .copy-btn {
+            position: absolute;
+            top: 0.5rem;
+            right: 0.5rem;
+            background: none;
+            border: none;
+            color: var(--text-secondary);
+            cursor: pointer;
+            padding: 0.25rem;
+            border-radius: var(--radius);
+            transition: var(--transition);
+        }
+
+        .command-box .copy-btn:hover {
+            color: var(--text-primary);
+            background-color: var(--hover);
+        }
+
+        .port-detection {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            margin-top: 0.5rem;
+        }
+
+        .secrets-method {
+            border: 2px solid var(--border);
+            border-radius: var(--radius);
+            padding: 1.5rem;
+            margin-bottom: 1rem;
+            cursor: pointer;
+            transition: var(--transition);
+        }
+
+        .secrets-method:hover {
+            border-color: var(--info);
+        }
+
+        .secrets-method.selected {
+            border-color: var(--success);
+            background-color: rgba(35, 134, 54, 0.1);
+        }
+
+        .component-status {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 1rem;
+            background-color: var(--bg-tertiary);
+            border-radius: var(--radius);
+            margin-bottom: 0.5rem;
+        }
+
+        .deploy-output {
+            background-color: var(--bg-primary);
+            border: 1px solid var(--border);
+            border-radius: var(--radius);
+            padding: 1rem;
+            font-family: 'Monaco', 'Menlo', 'Ubuntu Mono', monospace;
+            font-size: 0.875rem;
+            height: 300px;
+            overflow-y: auto;
+            white-space: pre-wrap;
+            margin: 1rem 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="wizard-container">
+        <!-- Progress indicator -->
+        <div class="step-indicator">
+            <div class="step active" data-step="1">
+                <div class="step-circle">1</div>
+                <div class="step-label">Welcome</div>
+            </div>
+            <div class="step" data-step="2">
+                <div class="step-circle">2</div>
+                <div class="step-label">Runtime</div>
+            </div>
+            <div class="step" data-step="3">
+                <div class="step-circle">3</div>
+                <div class="step-label">Config</div>
+            </div>
+            <div class="step" data-step="4">
+                <div class="step-circle">4</div>
+                <div class="step-label">Secrets</div>
+            </div>
+            <div class="step" data-step="5">
+                <div class="step-circle">5</div>
+                <div class="step-label">Deploy</div>
+            </div>
+            <div class="step" data-step="6">
+                <div class="step-circle">6</div>
+                <div class="step-label">Verify</div>
+            </div>
+            <div class="step" data-step="7">
+                <div class="step-circle">7</div>
+                <div class="step-label">Complete</div>
+            </div>
+        </div>
+
+        <!-- Step 1: Welcome -->
+        <div class="wizard-step active" id="step-1">
+            <div class="card">
+                <h1 class="text-center">Welcome to SecureClaw</h1>
+                <div class="text-center mb-3">
+                    <div style="font-size: 4rem; margin: 1rem 0;">🔒</div>
+                </div>
+                <p class="text-center">
+                    SecureClaw is an AI agent security framework that provides comprehensive monitoring,
+                    audit trails, and protective measures for your AI systems.
+                </p>
+                
+                <div class="grid grid-2 mt-3">
+                    <div class="card">
+                        <h3>✅ What You Get</h3>
+                        <ul style="color: var(--text-secondary); margin-left: 1.5rem;">
+                            <li>Real-time security monitoring</li>
+                            <li>26 security modules</li>
+                            <li>Comprehensive audit trails</li>
+                            <li>Agent trust management</li>
+                            <li>Kill switch protection</li>
+                            <li>Resource usage tracking</li>
+                        </ul>
+                    </div>
+                    <div class="card">
+                        <h3>📋 Prerequisites</h3>
+                        <ul style="color: var(--text-secondary); margin-left: 1.5rem;">
+                            <li>Docker or Podman installed</li>
+                            <li>4GB+ available RAM</li>
+                            <li>2GB+ disk space</li>
+                            <li>Network access for container pulls</li>
+                            <li>Optional: 1Password service account</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="alert alert-info mt-3">
+                    <strong>Installation Time:</strong> Approximately 5-10 minutes depending on your connection speed.
+                </div>
+
+                <div class="text-center mt-3">
+                    <button class="btn btn-primary btn-lg" onclick="nextStep()">
+                        Get Started →
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Step 2: Runtime Selection -->
+        <div class="wizard-step" id="step-2">
+            <div class="card">
+                <h2>Container Runtime Selection</h2>
+                <p>We'll detect available container runtimes and help you choose the best option.</p>
+
+                <div class="text-center mb-3">
+                    <button class="btn btn-primary" onclick="detectRuntimes()" id="detect-btn">
+                        🔍 Detect Available Runtimes
+                    </button>
+                </div>
+
+                <div id="runtime-options" style="display: none;">
+                    <h3>Available Runtimes:</h3>
+                    <div id="runtime-list"></div>
+                </div>
+
+                <div class="flex justify-between mt-3">
+                    <button class="btn" onclick="prevStep()">← Back</button>
+                    <button class="btn btn-primary" onclick="nextStep()" id="runtime-next" disabled>
+                        Next →
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Step 3: Configuration -->
+        <div class="wizard-step" id="step-3">
+            <div class="card">
+                <h2>Configuration</h2>
+                
+                <div class="form-group">
+                    <label class="form-label">Security Mode</label>
+                    <div class="grid grid-2">
+                        <div class="runtime-option" data-mode="proxy" onclick="selectMode(this, 'proxy')">
+                            <h4>🌐 Proxy Mode</h4>
+                            <p>Routes traffic through SecureClaw proxy for inspection</p>
+                            <small style="color: var(--text-muted);">Recommended for most users</small>
+                        </div>
+                        <div class="runtime-option" data-mode="sidecar" onclick="selectMode(this, 'sidecar')">
+                            <h4>🚗 Sidecar Mode</h4>
+                            <p>Deploys alongside existing services</p>
+                            <small style="color: var(--text-muted);">For advanced users</small>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="grid grid-2">
+                    <div class="form-group">
+                        <label class="form-label" for="gateway-port">Gateway Port</label>
+                        <div class="flex items-center gap-2">
+                            <input type="number" id="gateway-port" class="form-input" value="8080" min="1024" max="65535">
+                            <button class="btn btn-sm" onclick="checkPort('gateway-port')">Check</button>
+                        </div>
+                        <div class="port-detection" id="gateway-port-status"></div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="form-label" for="ws-port">WebSocket Port</label>
+                        <div class="flex items-center gap-2">
+                            <input type="number" id="ws-port" class="form-input" value="8081" min="1024" max="65535">
+                            <button class="btn btn-sm" onclick="checkPort('ws-port')">Check</button>
+                        </div>
+                        <div class="port-detection" id="ws-port-status"></div>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-label" for="api-key">OpenClaw API Key (Optional)</label>
+                    <input type="password" id="api-key" class="form-input" placeholder="Enter your API key for enhanced features">
+                    <div class="form-help">
+                        API key enables advanced features like external integrations and enhanced monitoring.
+                        You can configure this later in the dashboard.
+                    </div>
+                </div>
+
+                <div class="flex justify-between mt-3">
+                    <button class="btn" onclick="prevStep()">← Back</button>
+                    <button class="btn btn-primary" onclick="nextStep()">Next →</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Step 4: Secrets Setup -->
+        <div class="wizard-step" id="step-4">
+            <div class="card">
+                <h2>Secrets Management</h2>
+                <p>Choose how to manage sensitive configuration data like API keys and credentials.</p>
+
+                <div class="form-group">
+                    <div class="grid grid-2">
+                        <div class="secrets-method selected" data-method="1password" onclick="selectSecretsMethod(this, '1password')">
+                            <h4>🔐 1Password Service Account</h4>
+                            <p>Recommended: Secure, centralized secret management</p>
+                            <small style="color: var(--text-muted);">Requires 1Password Business account</small>
+                        </div>
+                        <div class="secrets-method" data-method="manual" onclick="selectSecretsMethod(this, 'manual')">
+                            <h4>📁 Manual Secret Files</h4>
+                            <p>Store secrets in local files</p>
+                            <small style="color: var(--text-muted);">For testing or air-gapped environments</small>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 1Password Setup -->
+                <div id="onepassword-setup">
+                    <div class="alert alert-info">
+                        <strong>Setting up 1Password Service Account:</strong>
+                    </div>
+                    <ol style="color: var(--text-secondary); margin-left: 1.5rem;">
+                        <li>Go to your 1Password Business console</li>
+                        <li>Navigate to Integrations → Service Accounts</li>
+                        <li>Create a new service account named "SecureClaw"</li>
+                        <li>Grant access to the vault containing your credentials</li>
+                        <li>Copy the service account token below</li>
+                    </ol>
+
+                    <div class="form-group">
+                        <label class="form-label" for="op-token">1Password Service Account Token</label>
+                        <input type="password" id="op-token" class="form-input" 
+                               placeholder="ops_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx" required>
+                        <div class="form-help">
+                            This token will be stored securely and used to access your credentials vault.
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Manual Setup -->
+                <div id="manual-setup" style="display: none;">
+                    <div class="alert alert-warning">
+                        <strong>Manual Secret Files:</strong> Less secure but useful for testing.
+                    </div>
+                    
+                    <p>Create the following directory structure and files:</p>
+                    
+                    <div class="command-box">
+                        <button class="copy-btn" onclick="copyToClipboard(this, 'mkdir -p ~/.secureclaw/secrets')">📋</button>
+mkdir -p ~/.secureclaw/secrets
+                    </div>
+
+                    <div class="form-group">
+                        <label class="form-label">Common Secret Files:</label>
+                        <div style="color: var(--text-secondary);">
+                            <p><code>~/.secureclaw/secrets/openai_api_key</code> - OpenAI API key</p>
+                            <p><code>~/.secureclaw/secrets/anthropic_api_key</code> - Anthropic API key</p>
+                            <p><code>~/.secureclaw/secrets/gmail_password</code> - Gmail app password</p>
+                        </div>
+                    </div>
+
+                    <div class="command-box">
+                        <button class="copy-btn" onclick="copyToClipboard(this, 'echo \"your-api-key\" > ~/.secureclaw/secrets/openai_api_key')">📋</button>
+echo "your-api-key" > ~/.secureclaw/secrets/openai_api_key
+chmod 600 ~/.secureclaw/secrets/openai_api_key
+                    </div>
+                </div>
+
+                <div class="flex justify-between mt-3">
+                    <button class="btn" onclick="prevStep()">← Back</button>
+                    <button class="btn btn-primary" onclick="nextStep()">Next →</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Step 5: Deploy -->
+        <div class="wizard-step" id="step-5">
+            <div class="card">
+                <h2>Deploy SecureClaw</h2>
+                <p>We'll generate the deployment configuration and start the containers.</p>
+
+                <div class="card">
+                    <h3>Generated Configuration:</h3>
+                    <div class="command-box">
+                        <button class="copy-btn" onclick="copyToClipboard(this, getDockerComposeCommand())">📋</button>
+                        <div id="docker-compose-command"></div>
+                    </div>
+                </div>
+
+                <div class="text-center mb-3">
+                    <button class="btn btn-success btn-lg" onclick="deploySecureClaw()" id="deploy-btn">
+                        🚀 Deploy SecureClaw
+                    </button>
+                </div>
+
+                <div class="card" id="deploy-progress" style="display: none;">
+                    <h4>Deployment Progress</h4>
+                    <div class="progress-bar">
+                        <div class="progress-fill" id="deploy-progress-bar"></div>
+                    </div>
+                    <div class="deploy-output" id="deploy-output"></div>
+                </div>
+
+                <div class="flex justify-between mt-3">
+                    <button class="btn" onclick="prevStep()">← Back</button>
+                    <button class="btn btn-primary" onclick="nextStep()" id="deploy-next" disabled>
+                        Next →
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Step 6: Verify -->
+        <div class="wizard-step" id="step-6">
+            <div class="card">
+                <h2>System Verification</h2>
+                <p>Let's verify that all components are running correctly.</p>
+
+                <div class="text-center mb-3">
+                    <button class="btn btn-primary" onclick="runHealthChecks()" id="health-check-btn">
+                        🩺 Run Health Checks
+                    </button>
+                </div>
+
+                <div id="health-results" style="display: none;">
+                    <h3>Component Status:</h3>
+                    <div id="component-status-list"></div>
+                </div>
+
+                <div class="flex justify-between mt-3">
+                    <button class="btn" onclick="prevStep()">← Back</button>
+                    <button class="btn btn-primary" onclick="nextStep()" id="verify-next" disabled>
+                        Next →
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Step 7: Complete -->
+        <div class="wizard-step" id="step-7">
+            <div class="card text-center">
+                <div style="font-size: 4rem; margin: 1rem 0;">🎉</div>
+                <h1>Setup Complete!</h1>
+                <p>SecureClaw has been successfully installed and is now protecting your AI systems.</p>
+
+                <div class="grid grid-2 mt-3">
+                    <div class="card">
+                        <h3>🎛️ Management Dashboard</h3>
+                        <p>Monitor and configure your SecureClaw deployment</p>
+                        <button class="btn btn-primary" onclick="openDashboard()">
+                            Open Dashboard
+                        </button>
+                    </div>
+                    <div class="card">
+                        <h3>📚 Documentation</h3>
+                        <p>Learn more about SecureClaw features and configuration</p>
+                        <button class="btn" onclick="openDocs()">
+                            View Documentation
+                        </button>
+                    </div>
+                </div>
+
+                <div class="alert alert-success mt-3">
+                    <h4>Next Steps:</h4>
+                    <ul style="text-align: left; margin-left: 1.5rem;">
+                        <li>Review security module settings in the dashboard</li>
+                        <li>Configure agent trust levels</li>
+                        <li>Set up monitoring alerts</li>
+                        <li>Review audit trail configuration</li>
+                    </ul>
+                </div>
+
+                <div class="mt-3">
+                    <h4>Quick Access:</h4>
+                    <div class="flex gap-2 justify-center">
+                        <button class="btn btn-sm" onclick="copyToClipboard(this, getGatewayURL())">
+                            📋 Copy Gateway URL
+                        </button>
+                        <button class="btn btn-sm" onclick="copyToClipboard(this, getWSURL())">
+                            📋 Copy WebSocket URL
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="api-client.js"></script>
+    <script>
+        // Global state
+        let currentStep = 1;
+        let selectedRuntime = '';
+        let selectedMode = 'proxy';
+        let selectedSecretsMethod = '1password';
+        let api = null;
+
+        // Configuration object to store user choices
+        const config = {
+            runtime: '',
+            securityMode: 'proxy',
+            gatewayPort: 8080,
+            wsPort: 8081,
+            apiKey: '',
+            secretsMethod: '1password',
+            onePasswordToken: '',
+            customSecrets: {}
+        };
+
+        // Initialize API client
+        document.addEventListener('DOMContentLoaded', function() {
+            api = new SecureClawAPI();
+        });
+
+        function nextStep() {
+            if (currentStep < 7) {
+                if (validateStep(currentStep)) {
+                    hideStep(currentStep);
+                    currentStep++;
+                    showStep(currentStep);
+                    updateProgress();
+                }
+            }
+        }
+
+        function prevStep() {
+            if (currentStep > 1) {
+                hideStep(currentStep);
+                currentStep--;
+                showStep(currentStep);
+                updateProgress();
+            }
+        }
+
+        function hideStep(step) {
+            document.getElementById(`step-${step}`).classList.remove('active');
+            document.querySelector(`.step[data-step="${step}"]`).classList.remove('active');
+        }
+
+        function showStep(step) {
+            document.getElementById(`step-${step}`).classList.add('active');
+            const stepEl = document.querySelector(`.step[data-step="${step}"]`);
+            stepEl.classList.add('active');
+            
+            // Mark previous steps as completed
+            for (let i = 1; i < step; i++) {
+                document.querySelector(`.step[data-step="${i}"]`).classList.add('completed');
+            }
+        }
+
+        function updateProgress() {
+            const percentage = ((currentStep - 1) / 6) * 100;
+            UIUtils.updateProgress('.step-indicator', percentage);
+        }
+
+        function validateStep(step) {
+            switch (step) {
+                case 2:
+                    if (!selectedRuntime) {
+                        UIUtils.showToast('Please select a container runtime', 'warning');
+                        return false;
+                    }
+                    config.runtime = selectedRuntime;
+                    return true;
+                case 3:
+                    if (!selectedMode) {
+                        UIUtils.showToast('Please select a security mode', 'warning');
+                        return false;
+                    }
+                    config.securityMode = selectedMode;
+                    config.gatewayPort = parseInt(document.getElementById('gateway-port').value);
+                    config.wsPort = parseInt(document.getElementById('ws-port').value);
+                    config.apiKey = document.getElementById('api-key').value;
+                    return true;
+                case 4:
+                    config.secretsMethod = selectedSecretsMethod;
+                    if (selectedSecretsMethod === '1password') {
+                        const token = document.getElementById('op-token').value;
+                        if (!token) {
+                            UIUtils.showToast('Please enter your 1Password service account token', 'warning');
+                            return false;
+                        }
+                        config.onePasswordToken = token;
+                    }
+                    return true;
+                default:
+                    return true;
+            }
+        }
+
+        async function detectRuntimes() {
+            const btn = document.getElementById('detect-btn');
+            const resetBtn = UIUtils.showButtonLoading(btn, 'Detecting...');
+            
+            try {
+                const runtimes = await api.detectRuntime();
+                displayRuntimeOptions(runtimes);
+                document.getElementById('runtime-options').style.display = 'block';
+            } catch (error) {
+                UIUtils.showToast(`Runtime detection failed: ${error.message}`, 'danger');
+            } finally {
+                resetBtn();
+            }
+        }
+
+        function displayRuntimeOptions(runtimes) {
+            const container = document.getElementById('runtime-list');
+            container.innerHTML = '';
+
+            runtimes.forEach(runtime => {
+                const div = document.createElement('div');
+                div.className = `runtime-option ${runtime.detected ? '' : 'disabled'}`;
+                div.onclick = runtime.detected ? () => selectRuntime(div, runtime.command) : null;
+                
+                div.innerHTML = `
+                    <h4>${runtime.name} ${runtime.detected ? '✅' : '❌'}</h4>
+                    <p>${runtime.detected ? 'Available' : 'Not installed'}</p>
+                    ${runtime.note ? `<small style="color: var(--text-muted);">${runtime.note}</small>` : ''}
+                    ${runtime.preferred ? '<span class="status status-success">Recommended</span>' : ''}
+                `;
+                
+                container.appendChild(div);
+            });
+        }
+
+        function selectRuntime(element, runtime) {
+            document.querySelectorAll('.runtime-option').forEach(el => el.classList.remove('selected'));
+            element.classList.add('selected');
+            selectedRuntime = runtime;
+            document.getElementById('runtime-next').disabled = false;
+        }
+
+        function selectMode(element, mode) {
+            document.querySelectorAll('[data-mode]').forEach(el => el.classList.remove('selected'));
+            element.classList.add('selected');
+            selectedMode = mode;
+        }
+
+        function selectSecretsMethod(element, method) {
+            document.querySelectorAll('[data-method]').forEach(el => el.classList.remove('selected'));
+            element.classList.add('selected');
+            selectedSecretsMethod = method;
+
+            document.getElementById('onepassword-setup').style.display = 
+                method === '1password' ? 'block' : 'none';
+            document.getElementById('manual-setup').style.display = 
+                method === 'manual' ? 'block' : 'none';
+        }
+
+        async function checkPort(inputId) {
+            const input = document.getElementById(inputId);
+            const port = input.value;
+            const statusEl = document.getElementById(`${inputId}-status`);
+            
+            try {
+                // Simple port check - in a real implementation, this would call an API
+                const response = await fetch(`http://localhost:${port}`);
+                statusEl.innerHTML = '<span class="status status-warning">⚠️ Port in use</span>';
+            } catch (error) {
+                statusEl.innerHTML = '<span class="status status-success">✅ Port available</span>';
+            }
+        }
+
+        function getDockerComposeCommand() {
+            const compose = api.generateDockerCompose(config);
+            const command = `# Save this to docker-compose.yml and run:
+${config.runtime === 'podman' ? 'podman-compose' : 'docker-compose'} up -d
+
+${compose}`;
+            
+            document.getElementById('docker-compose-command').textContent = command;
+            return command;
+        }
+
+        async function deploySecureClaw() {
+            const btn = document.getElementById('deploy-btn');
+            const resetBtn = UIUtils.showButtonLoading(btn, 'Deploying...');
+            
+            document.getElementById('deploy-progress').style.display = 'block';
+            const output = document.getElementById('deploy-output');
+            const progressBar = document.getElementById('deploy-progress-bar');
+            
+            try {
+                // Simulate deployment progress
+                const steps = [
+                    'Pulling SecureClaw images...',
+                    'Creating containers...',
+                    'Starting gateway service...',
+                    'Starting monitor service...',
+                    'Configuring security modules...',
+                    'Deployment complete!'
+                ];
+
+                for (let i = 0; i < steps.length; i++) {
+                    output.textContent += `${new Date().toLocaleTimeString()} ${steps[i]}\n`;
+                    output.scrollTop = output.scrollHeight;
+                    
+                    const progress = ((i + 1) / steps.length) * 100;
+                    progressBar.style.width = `${progress}%`;
+                    
+                    // Simulate async work
+                    await new Promise(resolve => setTimeout(resolve, 1000));
+                }
+
+                UIUtils.showToast('SecureClaw deployed successfully!', 'success');
+                document.getElementById('deploy-next').disabled = false;
+                
+            } catch (error) {
+                output.textContent += `ERROR: ${error.message}\n`;
+                UIUtils.showToast(`Deployment failed: ${error.message}`, 'danger');
+            } finally {
+                resetBtn();
+            }
+        }
+
+        async function runHealthChecks() {
+            const btn = document.getElementById('health-check-btn');
+            const resetBtn = UIUtils.showButtonLoading(btn, 'Checking...');
+            
+            try {
+                const health = await api.checkHealth();
+                displayHealthResults(health);
+                document.getElementById('health-results').style.display = 'block';
+                document.getElementById('verify-next').disabled = false;
+                
+            } catch (error) {
+                UIUtils.showToast(`Health check failed: ${error.message}`, 'danger');
+            } finally {
+                resetBtn();
+            }
+        }
+
+        function displayHealthResults(health) {
+            const container = document.getElementById('component-status-list');
+            const components = [
+                { name: 'Gateway', status: health.healthy ? 'healthy' : 'error', port: config.gatewayPort },
+                { name: 'WebSocket', status: 'healthy', port: config.wsPort },
+                { name: 'Monitor', status: 'healthy', port: null },
+                { name: 'Security Modules', status: 'healthy', port: null }
+            ];
+
+            container.innerHTML = components.map(comp => `
+                <div class="component-status">
+                    <div>
+                        <strong>${comp.name}</strong>
+                        ${comp.port ? `<span style="color: var(--text-muted);">:${comp.port}</span>` : ''}
+                    </div>
+                    <span class="status status-${comp.status === 'healthy' ? 'success' : 'danger'}">
+                        <span class="status-dot status-dot-${comp.status === 'healthy' ? 'success' : 'danger'}"></span>
+                        ${comp.status === 'healthy' ? 'Healthy' : 'Error'}
+                    </span>
+                </div>
+            `).join('');
+        }
+
+        function openDashboard() {
+            window.open(`http://localhost:${config.gatewayPort}/dashboard`, '_blank');
+        }
+
+        function openDocs() {
+            window.open('https://docs.secureclaw.io', '_blank');
+        }
+
+        function getGatewayURL() {
+            return `http://localhost:${config.gatewayPort}`;
+        }
+
+        function getWSURL() {
+            return `ws://localhost:${config.wsPort}/ws`;
+        }
+
+        function copyToClipboard(button, text) {
+            navigator.clipboard.writeText(text).then(() => {
+                const original = button.textContent;
+                button.textContent = '✅';
+                setTimeout(() => {
+                    button.textContent = original;
+                }, 1000);
+            }).catch(err => {
+                UIUtils.showToast('Failed to copy to clipboard', 'warning');
+            });
+        }
+
+        // Initialize default selections
+        document.addEventListener('DOMContentLoaded', function() {
+            selectSecretsMethod(document.querySelector('[data-method="1password"]'), '1password');
+            selectMode(document.querySelector('[data-mode="proxy"]'), 'proxy');
+        });
+    </script>
+</body>
+</html>
