@@ -4,6 +4,7 @@ Webhook Receiver — receives Telegram/channel webhooks, routes through pipeline
 Provides FastAPI routes that sit in front of OpenClaw, ensuring all
 inbound webhooks pass through the SecurityPipeline before forwarding.
 """
+from __future__ import annotations
 
 import json
 import logging
