@@ -1,1 +1,0 @@
- we need to add a folder where files and synblic links for files can be shared and shortcusts and script to copyu the files in the same hiearacrhy as the host system treating this folder as root or ~
