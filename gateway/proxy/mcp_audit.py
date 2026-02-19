@@ -48,6 +48,8 @@ class MCPAuditTrail:
 
     GENESIS_HASH = "0" * 64
 
+    MAX_PENDING_CALLS = 1000  # Prevent unbounded growth
+
     def __init__(self):
         self._entries: list[MCPAuditEntry] = []
         self._last_hash: str = self.GENESIS_HASH
@@ -62,6 +64,16 @@ class MCPAuditTrail:
 
     def start_call(self, call_id: str) -> None:
         """Record the start time of a tool call for duration tracking."""
+        # Evict stale entries (>5 min old) if we hit the limit
+        if len(self._call_start_times) >= self.MAX_PENDING_CALLS:
+            now = time.time()
+            stale = [k for k, v in self._call_start_times.items() if now - v > 300]
+            for k in stale:
+                del self._call_start_times[k]
+            # If still over limit after eviction, drop oldest
+            if len(self._call_start_times) >= self.MAX_PENDING_CALLS:
+                oldest = min(self._call_start_times, key=self._call_start_times.get)
+                del self._call_start_times[oldest]
         self._call_start_times[call_id] = time.time()
 
     def log_tool_call(
