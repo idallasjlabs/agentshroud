@@ -1,4 +1,4 @@
-# Updating SecureClaw
+# Updating AgentShroud
 
 Universal update guide for all platforms.
 
@@ -42,7 +42,7 @@ For deployments without Git:
    ```
 4. Copy your configuration:
    ```bash
-   cp oneclaw.backup/secureclaw.yaml oneclaw/secureclaw.yaml
+   cp oneclaw.backup/agentshroud.yaml oneclaw/agentshroud.yaml
    cp -r oneclaw.backup/docker/secrets oneclaw/docker/secrets
    ```
 5. Rebuild and restart:
@@ -52,7 +52,7 @@ For deployments without Git:
 
 ## Database Migrations
 
-Currently, SecureClaw does not require database migrations. If future versions introduce migrations, they will be documented in the release notes and run automatically on startup.
+Currently, AgentShroud does not require database migrations. If future versions introduce migrations, they will be documented in the release notes and run automatically on startup.
 
 ## Rollback Procedure
 

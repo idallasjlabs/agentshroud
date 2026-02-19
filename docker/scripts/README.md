@@ -1,6 +1,6 @@
 # OpenClaw Management Scripts
 
-Useful scripts for managing your OpenClaw + SecureClaw deployment.
+Useful scripts for managing your OpenClaw + AgentShroud deployment.
 
 ## Quick Reference
 
@@ -209,7 +209,7 @@ docker compose -f docker/docker-compose.yml ps
 
 # View logs
 docker logs openclaw-bot --tail 50
-docker logs secureclaw-gateway --tail 50
+docker logs agentshroud-gateway --tail 50
 ```
 
 ### OpenClaw CLI
@@ -313,7 +313,7 @@ docker compose -f docker/docker-compose.yml exec openclaw ls -la /run/secrets/
 ---
 
 **Last Updated**: 2026-02-15
-**System**: OpenClaw 2026.2.14 + SecureClaw Gateway 0.2.0
+**System**: OpenClaw 2026.2.14 + AgentShroud Gateway 0.2.0
 
 ---
 

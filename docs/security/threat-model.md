@@ -1,13 +1,13 @@
-# SecureClaw Threat Model (STRIDE Analysis)
+# AgentShroud Threat Model (STRIDE Analysis)
 
 ## Executive Summary
 
-This document provides a comprehensive STRIDE-based threat analysis for SecureClaw, identifying potential security threats and corresponding mitigation strategies. The analysis covers the complete attack surface including network communications, container isolation, data flows, and administrative interfaces.
+This document provides a comprehensive STRIDE-based threat analysis for AgentShroud, identifying potential security threats and corresponding mitigation strategies. The analysis covers the complete attack surface including network communications, container isolation, data flows, and administrative interfaces.
 
 ## Threat Modeling Scope
 
 ### System Components in Scope
-- SecureClaw Gateway (FastAPI application)
+- AgentShroud Gateway (FastAPI application)
 - Container network isolation (external/internal networks)
 - Audit system and hash chain integrity
 - PII detection and sanitization
@@ -234,11 +234,11 @@ Prompt Injection
 - **Socket Protection**: Docker socket never mounted in agent containers
 - **Compose Validation**: Automated scanning for dangerous volume mounts
 - **Rootless Docker**: Run Docker daemon as non-root user where possible
-- **Socket Proxying**: Filtered Docker API access through SecureClaw gateway
+- **Socket Proxying**: Filtered Docker API access through AgentShroud gateway
 
 ## Threat Intelligence Integration
 
-SecureClaw integrates with external threat intelligence feeds:
+AgentShroud integrates with external threat intelligence feeds:
 
 ### Threat Feeds
 - **DNS Threat Intelligence**: Real-time malicious domain feeds
@@ -274,4 +274,4 @@ Context Multiplier:
 | Prompt Injection | Pattern Matching | Unicode Normalization | Anomaly Detection |
 | Container Escape | seccomp Profiles | Capability Dropping | Runtime Monitoring |
 
-This comprehensive threat model ensures SecureClaw addresses security risks across all STRIDE categories while providing layered defenses and comprehensive monitoring for threat detection and response.
+This comprehensive threat model ensures AgentShroud addresses security risks across all STRIDE categories while providing layered defenses and comprehensive monitoring for threat detection and response.

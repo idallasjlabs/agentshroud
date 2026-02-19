@@ -1,4 +1,4 @@
-# SecureClaw MCP Proxy Configuration
+# AgentShroud MCP Proxy Configuration
 #
 # Register MCP servers here. The proxy intercepts all tool calls,
 # applies security checks, and forwards to the actual server.

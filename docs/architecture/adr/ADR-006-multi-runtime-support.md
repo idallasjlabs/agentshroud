@@ -5,7 +5,7 @@
 
 ## Context
 
-SecureClaw must support diverse container runtime environments across different operating systems and security requirements.
+AgentShroud must support diverse container runtime environments across different operating systems and security requirements.
 
 ## Decision
 

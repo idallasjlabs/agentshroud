@@ -11,7 +11,7 @@ import logging
 import time
 from typing import Any
 
-logger = logging.getLogger("secureclaw.proxy.webhook_receiver")
+logger = logging.getLogger("agentshroud.proxy.webhook_receiver")
 
 
 class WebhookReceiver:

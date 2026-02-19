@@ -1,10 +1,10 @@
-# SecureClaw Proxy Mode — Full Network Isolation + Egress Control
+# AgentShroud Proxy Mode — Full Network Isolation + Egress Control
 #
 # Two networks:
-# - "external" — only SecureClaw gateway exposed to host
+# - "external" — only AgentShroud gateway exposed to host
 # - "internal" — OpenClaw container, NOT exposed to host
 #
-# SecureClaw gateway bridges both networks.
+# AgentShroud gateway bridges both networks.
 # OpenClaw joins ONLY the internal network.
 #
 # Egress controls (Phase 11):
@@ -20,11 +20,11 @@
 #   ./scripts/verify-proxy.sh
 
 services:
-  secureclaw-gateway:
+  agentshroud-gateway:
     build:
       context: .
       dockerfile: Dockerfile.gateway
-    container_name: secureclaw-gateway
+    container_name: agentshroud-gateway
     ports:
       - "8080:8080"
       - "5353:53/udp"    # DNS filter endpoint
@@ -33,16 +33,16 @@ services:
       - external
       - internal
     environment:
-      - SECURECLAW_MODE=proxy
+      - AGENTSHROUD_MODE=proxy
       - OPENCLAW_INTERNAL_URL=http://openclaw:3000
-      - SECURECLAW_CONFIG=/app/secureclaw.yaml
-      - SECURECLAW_EGRESS_CONFIG=/app/egress-config.yml
+      - AGENTSHROUD_CONFIG=/app/agentshroud.yaml
+      - AGENTSHROUD_EGRESS_CONFIG=/app/egress-config.yml
       # API keys live HERE, never in OpenClaw container
       # Load from 1Password or host env at deploy time
       # - OPENAI_API_KEY=<injected at runtime>
       # - GITHUB_TOKEN=<injected at runtime>
     volumes:
-      - ./secureclaw.yaml:/app/secureclaw.yaml:ro
+      - ./agentshroud.yaml:/app/agentshroud.yaml:ro
       - ./examples/egress-config.yml:/app/egress-config.yml:ro
       - gateway-data:/app/data
       - security-reports:/var/log/security
@@ -63,14 +63,14 @@ services:
       - internal
     # DNS: all queries go through gateway DNS filter
     dns:
-      - secureclaw-gateway
+      - agentshroud-gateway
     environment:
       - OPENCLAW_BIND=0.0.0.0
       - OPENCLAW_PORT=3000
       # NO API keys here — gateway injects auth on proxied requests
       # Proxy all HTTP through gateway
-      - HTTP_PROXY=http://secureclaw-gateway:8080
-      - HTTPS_PROXY=http://secureclaw-gateway:8080
+      - HTTP_PROXY=http://agentshroud-gateway:8080
+      - HTTPS_PROXY=http://agentshroud-gateway:8080
     volumes:
       # Only mount sandboxed workspace — no host root, no secrets
       - openclaw-workspace:/workspace
@@ -96,7 +96,7 @@ services:
       - /dev:/host/dev:ro
       - /proc:/host/proc:ro
       - ./docker/falco/falco.yaml:/etc/falco/falco.yaml:ro
-      - ./docker/falco/rules.yaml:/etc/falco/rules.d/secureclaw.yaml:ro
+      - ./docker/falco/rules.yaml:/etc/falco/rules.d/agentshroud.yaml:ro
       - falco-alerts:/var/log/falco
     networks:
       - internal
@@ -115,11 +115,11 @@ services:
 networks:
   external:
     driver: bridge
-    name: secureclaw-external
+    name: agentshroud-external
   internal:
     driver: bridge
     internal: true  # No external access — isolated
-    name: secureclaw-internal
+    name: agentshroud-internal
 
 volumes:
   gateway-data:
@@ -131,7 +131,7 @@ volumes:
 
   # === MCP Servers (Phase 9) ===
   # MCP servers run on the internal network ONLY.
-  # All MCP traffic is routed through the SecureClaw gateway proxy.
+  # All MCP traffic is routed through the AgentShroud gateway proxy.
   # Add your MCP servers here. Example:
   #
   # mcp-homeassistant:
@@ -151,5 +151,5 @@ volumes:
   #   restart: unless-stopped
   #
   # IMPORTANT: MCP servers must ONLY be on the "internal" network.
-  # The secureclaw-gateway bridges internal↔external and applies
+  # The agentshroud-gateway bridges internal↔external and applies
   # security inspection to all MCP tool calls via the MCP Proxy Layer.

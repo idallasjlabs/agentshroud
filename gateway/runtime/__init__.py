@@ -12,7 +12,7 @@ from .docker_engine import DockerEngine
 from .podman_engine import PodmanEngine
 from .apple_engine import AppleContainerEngine
 
-logger = logging.getLogger("secureclaw.runtime")
+logger = logging.getLogger("agentshroud.runtime")
 
 __all__ = [
     "ContainerEngine",

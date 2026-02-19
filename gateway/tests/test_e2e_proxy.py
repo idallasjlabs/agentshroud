@@ -2,7 +2,7 @@
 E2E Proxy Pipeline Tests — verify security pipeline actually works.
 
 These tests run against the REAL proxy pipeline (not mocks) to prove
-that traffic flows through SecureClaw's security modules.
+that traffic flows through AgentShroud's security modules.
 """
 
 import asyncio

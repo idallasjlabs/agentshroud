@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SecureClaw Chat - therealidallasj</title>
+    <title>AgentShroud Chat - therealidallasj</title>
     <style>
         * {
             margin: 0;
@@ -135,7 +135,7 @@
 </head>
 <body>
     <header>
-        <h1>SecureClaw Chat</h1>
+        <h1>AgentShroud Chat</h1>
         <div class="status" id="status">Connecting...</div>
     </header>
 
@@ -168,7 +168,7 @@
             authToken = urlParams.get('token');
 
             if (!authToken) {
-                authToken = prompt('Enter your SecureClaw auth token:\n\n(Find it in gateway logs or secureclaw.yaml)');
+                authToken = prompt('Enter your AgentShroud auth token:\n\n(Find it in gateway logs or agentshroud.yaml)');
                 if (authToken) {
                     // Trim whitespace from token
                     authToken = authToken.trim();
@@ -194,7 +194,7 @@
                 sendButton.disabled = false;
                 messageInput.focus();
             } catch (err) {
-                showError('Failed to connect to SecureClaw Gateway');
+                showError('Failed to connect to AgentShroud Gateway');
             }
         }
 

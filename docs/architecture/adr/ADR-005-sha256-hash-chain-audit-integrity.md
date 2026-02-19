@@ -5,7 +5,7 @@
 
 ## Context
 
-SecureClaw requires tamper-evident audit logging to ensure security event integrity. Options evaluated:
+AgentShroud requires tamper-evident audit logging to ensure security event integrity. Options evaluated:
 
 1. **Traditional Logging**: Standard log files with optional encryption
 2. **Database Audit Tables**: Structured logging with database integrity constraints  

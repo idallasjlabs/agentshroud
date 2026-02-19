@@ -104,7 +104,7 @@ async def test_dashboard_returns_html(client):
     )
     assert resp.status_code in (200, 201)
     assert "text/html" in resp.headers["content-type"]
-    assert "SecureClaw" in resp.text
+    assert "AgentShroud" in resp.text
 
 
 @pytest.mark.asyncio

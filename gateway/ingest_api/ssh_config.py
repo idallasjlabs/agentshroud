@@ -1,4 +1,4 @@
-"""SSH configuration models for SecureClaw Gateway"""
+"""SSH configuration models for AgentShroud Gateway"""
 
 import os
 from pydantic import BaseModel, Field, field_validator

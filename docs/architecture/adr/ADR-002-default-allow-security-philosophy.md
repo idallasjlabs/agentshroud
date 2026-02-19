@@ -5,7 +5,7 @@
 
 ## Context
 
-SecureClaw must balance security protection with agent functionality. Two security philosophies were evaluated:
+AgentShroud must balance security protection with agent functionality. Two security philosophies were evaluated:
 
 1. **Default-Deny**: Block all actions unless explicitly permitted (whitelist approach)
 2. **Default-Allow**: Allow all actions while logging comprehensively, blocking only clear threats
@@ -63,4 +63,4 @@ Action → Threat Analysis → Log Everything → Progressive Enforcement
 - Log retention policies with automated archiving
 - Intelligent alerting with threat prioritization
 
-This philosophy enables SecureClaw to protect against threats while preserving agent capabilities and building intelligence for future enforcement.
+This philosophy enables AgentShroud to protect against threats while preserving agent capabilities and building intelligence for future enforcement.

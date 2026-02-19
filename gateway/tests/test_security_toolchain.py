@@ -306,7 +306,7 @@ SAMPLE_FALCO_ALERT = {
     "priority": "Warning",
     "output": "Shell spawned in container (user=root container=openclaw shell=bash)",
     "source": "syscall",
-    "hostname": "secureclaw-host",
+    "hostname": "agentshroud-host",
     "output_fields": {
         "container.id": "abc123",
         "container.name": "openclaw",
@@ -320,7 +320,7 @@ SAMPLE_FALCO_CRITICAL = {
     "priority": "Critical",
     "output": "Sensitive file accessed",
     "source": "syscall",
-    "hostname": "secureclaw-host",
+    "hostname": "agentshroud-host",
     "output_fields": {},
 }
 
@@ -346,7 +346,7 @@ class TestFalcoParser:
 
     def test_is_secureclaw_rule_true(self):
         assert is_secureclaw_rule("Container Shell Spawned")
-        assert is_secureclaw_rule("SecureClaw Custom Rule")
+        assert is_secureclaw_rule("AgentShroud Custom Rule")
         assert is_secureclaw_rule("Crypto Mining Detection")
 
     def test_is_secureclaw_rule_false(self):
@@ -406,7 +406,7 @@ from gateway.security.wazuh_client import (
 SAMPLE_WAZUH_FIM = {
     "timestamp": "2024-01-15T10:30:00Z",
     "rule": {"id": "553", "level": 7, "description": "File modified"},
-    "agent": {"name": "secureclaw-agent"},
+    "agent": {"name": "agentshroud-agent"},
     "syscheck": {
         "path": "/host/workspace/config.yaml",
         "event": "modified",
@@ -418,7 +418,7 @@ SAMPLE_WAZUH_FIM = {
 SAMPLE_WAZUH_ROOTKIT = {
     "timestamp": "2024-01-15T10:31:00Z",
     "rule": {"id": "510", "level": 14, "description": "Trojan detected"},
-    "agent": {"name": "secureclaw-agent"},
+    "agent": {"name": "agentshroud-agent"},
     "syscheck": {},
 }
 
@@ -577,7 +577,7 @@ class TestHealthReport:
             "recommendations": ["🔴 TRIVY: 1 CRITICAL findings"],
         }
         text = format_report(report)
-        assert "SecureClaw" in text
+        assert "AgentShroud" in text
         assert "85.0" in text
         assert "Grade: B" in text
 

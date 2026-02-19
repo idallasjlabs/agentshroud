@@ -12,7 +12,7 @@ import aiosqlite
 
 from ..ingest_api.models import ApprovalQueueItem
 
-logger = logging.getLogger("secureclaw.gateway.approval_queue.store")
+logger = logging.getLogger("agentshroud.gateway.approval_queue.store")
 
 SCHEMA = """
 CREATE TABLE IF NOT EXISTS approval_items (

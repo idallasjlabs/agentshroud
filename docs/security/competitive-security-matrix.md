@@ -1,10 +1,10 @@
-# Competitive Security Matrix — SecureClaw vs AI Agent Platforms
+# Competitive Security Matrix — AgentShroud vs AI Agent Platforms
 
 **February 2026 | 26 Security Modules Compared**
 
 ## Module Comparison
 
-| # | Security Module | SecureClaw | OpenClaw | NanoClaw | Zetherion | HyperAgent | CogniShield | Autonomix | SentinelBot | VoxMind | NeuralNest | AgentForge | MindWeave |
+| # | Security Module | AgentShroud | OpenClaw | NanoClaw | Zetherion | HyperAgent | CogniShield | Autonomix | SentinelBot | VoxMind | NeuralNest | AgentForge | MindWeave |
 |---|----------------|-----------|----------|----------|-----------|------------|-------------|-----------|-------------|---------|------------|------------|-----------|
 | 1 | PII Sanitizer (Presidio + regex) | ✅ | ❌ | ❌ | ⚠️ | ❌ | ⚠️ | ❌ | ❌ | ❌ | ❌ | ❌ | ❌ |
 | 2 | Tamper-Evident Audit (SHA-256 chain) | ✅ | ❌ | ❌ | ❌ | ❌ | ❌ | ❌ | ❌ | ❌ | ❌ | ❌ | ❌ |
@@ -37,7 +37,7 @@
 
 | Platform | Score | Percentage |
 |----------|-------|-----------|
-| **SecureClaw** | **26/26** | **100%** |
+| **AgentShroud** | **26/26** | **100%** |
 | Zetherion | 4/26 | 15% |
 | CogniShield | 3/26 | 12% |
 | NanoClaw | 1.5/26 | 6% |
@@ -46,7 +46,7 @@
 
 ## Container Security Toolchain Comparison
 
-| Tool | SecureClaw | OpenClaw | NanoClaw | Zetherion | All Others |
+| Tool | AgentShroud | OpenClaw | NanoClaw | Zetherion | All Others |
 |------|-----------|----------|----------|-----------|-----------|
 | Trivy (CVE scanning) | ✅ Baked in | ❌ | ❌ | ❌ | ❌ |
 | ClamAV (malware) | ✅ Baked in | ❌ | ❌ | ❌ | ❌ |
@@ -60,21 +60,21 @@
 
 ## Key Takeaways
 
-1. **SecureClaw is the only platform with ANY of modules 12-26** — these are novel security capabilities that don't exist anywhere in the AI agent ecosystem
-2. **No competitor has a tamper-evident audit trail** — hash chains for audit integrity are unique to SecureClaw
-3. **No competitor inspects MCP tool calls** — SecureClaw is the only platform that can see what tools are doing
+1. **AgentShroud is the only platform with ANY of modules 12-26** — these are novel security capabilities that don't exist anywhere in the AI agent ecosystem
+2. **No competitor has a tamper-evident audit trail** — hash chains for audit integrity are unique to AgentShroud
+3. **No competitor inspects MCP tool calls** — AgentShroud is the only platform that can see what tools are doing
 4. **No competitor scans web content for prompt injection** — CVE-2026-22708 remains unmitigated on all other platforms
-5. **Zero competitors have baked-in container security tools** — SecureClaw ships with 5 enterprise security tools by default
+5. **Zero competitors have baked-in container security tools** — AgentShroud ships with 5 enterprise security tools by default
 
 ## Updated Magic Quadrant Position
 
 | Platform | Features (x) | Security (y) | Quadrant |
 |----------|-------------|-------------|----------|
-| **SecureClaw** | **9.5** | **10.0** | **Leaders** |
+| **AgentShroud** | **9.5** | **10.0** | **Leaders** |
 | Zetherion | 7.0 | 3.0 | Visionaries |
 | CogniShield | 5.0 | 2.5 | Niche |
 | OpenClaw | 9.0 | 1.5 | Challengers |
 | NanoClaw | 7.0 | 1.5 | Challengers |
 | All others | 3-6 | 0-1 | Niche |
 
-SecureClaw's security score increased from 9.5 to **10.0** with the addition of 8 deep hardening modules that address attack vectors no other platform has even identified, let alone mitigated.
+AgentShroud's security score increased from 9.5 to **10.0** with the addition of 8 deep hardening modules that address attack vectors no other platform has even identified, let alone mitigated.

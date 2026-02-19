@@ -1,4 +1,4 @@
-# Backup & Restore Runbook — SecureClaw
+# Backup & Restore Runbook — AgentShroud
 
 > Last updated: 2026-02-18
 
@@ -20,7 +20,7 @@ Add to crontab (`crontab -e`):
 
 ```cron
 # Daily backup at 02:00 UTC (create scripts/backup.sh from the manual procedure below)
-0 2 * * * /home/secureclaw-bot/Development/oneclaw/scripts/backup.sh
+0 2 * * * /home/agentshroud-bot/Development/oneclaw/scripts/backup.sh
 ```
 
 ### Manual Backup
@@ -42,18 +42,18 @@ cp docker-compose.yml "$BACKUP_DIR/"
 cp data/*.db "$BACKUP_DIR/" 2>/dev/null || true
 
 # Compress
-tar -czf "backups/secureclaw-$(date +%Y-%m-%d).tar.gz" "$BACKUP_DIR"
+tar -czf "backups/agentshroud-$(date +%Y-%m-%d).tar.gz" "$BACKUP_DIR"
 rm -rf "$BACKUP_DIR"
 
-echo "Backup saved to backups/secureclaw-$(date +%Y-%m-%d).tar.gz"
+echo "Backup saved to backups/agentshroud-$(date +%Y-%m-%d).tar.gz"
 ```
 
 ### Off-Site Backup
 
 ```bash
 # Copy to another Tailscale device
-scp backups/secureclaw-$(date +%Y-%m-%d).tar.gz \
-    user@other-device.tail240ea8.ts.net:/backups/secureclaw/
+scp backups/agentshroud-$(date +%Y-%m-%d).tar.gz \
+    user@other-device.tail240ea8.ts.net:/backups/agentshroud/
 ```
 
 ---
@@ -69,7 +69,7 @@ cd ~/Development/oneclaw
 docker compose down
 
 # Extract backup
-tar -xzf backups/secureclaw-YYYY-MM-DD.tar.gz
+tar -xzf backups/agentshroud-YYYY-MM-DD.tar.gz
 
 # Restore data
 cp YYYY-MM-DD/audit_ledger.jsonl data/
@@ -103,13 +103,13 @@ If the Pi is completely lost:
 4. **Restore secrets from 1Password:**
    ```bash
    # Re-create Docker Secrets from 1Password
-   op item get "SecureClaw Bot" --fields "telegram_token" | docker secret create telegram_token -
+   op item get "AgentShroud Bot" --fields "telegram_token" | docker secret create telegram_token -
    # ... repeat for other secrets
    ```
 
 5. **Restore data from backup:**
    ```bash
-   scp user@backup-host:/backups/secureclaw/latest.tar.gz /tmp/
+   scp user@backup-host:/backups/agentshroud/latest.tar.gz /tmp/
    tar -xzf /tmp/latest.tar.gz -C data/
    ```
 

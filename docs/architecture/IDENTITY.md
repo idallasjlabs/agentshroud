@@ -1,4 +1,4 @@
-# Identity Reference - SecureClaw System
+# Identity Reference - AgentShroud System
 
 **Last Updated**: 2026-02-15
 
@@ -17,7 +17,7 @@
 - **Telegram Bot**: @therealidallasj_bot
 - **Email**: therealidallasj@gmail.com
 - **Role**: AI assistant, automated agent
-- **Platform**: OpenClaw + SecureClaw
+- **Platform**: OpenClaw + AgentShroud
 
 ---
 

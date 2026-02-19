@@ -1,4 +1,4 @@
-# Deploying SecureClaw on Linux (x86_64 / aarch64)
+# Deploying AgentShroud on Linux (x86_64 / aarch64)
 
 ## Prerequisites
 
@@ -47,11 +47,11 @@ docker run --rm hello-world
 ./docker/secrets/setup-secrets.sh
 ```
 
-### 4. Configure SecureClaw
+### 4. Configure AgentShroud
 
 ```bash
-cp secureclaw.yaml.example secureclaw.yaml   # if an example exists
-nano secureclaw.yaml
+cp agentshroud.yaml.example agentshroud.yaml   # if an example exists
+nano agentshroud.yaml
 ```
 
 ### 5. Build and Start
@@ -72,12 +72,12 @@ curl http://localhost:8080/status
 
 ### Non-Root User
 
-Run SecureClaw as a non-root user with Docker group access:
+Run AgentShroud as a non-root user with Docker group access:
 
 ```bash
-sudo adduser secureclaw --disabled-password
-sudo usermod -aG docker secureclaw
-sudo su - secureclaw
+sudo adduser agentshroud --disabled-password
+sudo usermod -aG docker agentshroud
+sudo su - agentshroud
 ```
 
 ### Firewall
@@ -100,19 +100,19 @@ sudo ufw allow 8080/tcp
 
 ## Systemd Service for Auto-Start
 
-Create `/etc/systemd/system/secureclaw.service`:
+Create `/etc/systemd/system/agentshroud.service`:
 
 ```ini
 [Unit]
-Description=SecureClaw Gateway
+Description=AgentShroud Gateway
 Requires=docker.service
 After=docker.service
 
 [Service]
 Type=oneshot
 RemainAfterExit=yes
-User=secureclaw
-WorkingDirectory=/home/secureclaw/oneclaw/docker
+User=agentshroud
+WorkingDirectory=/home/agentshroud/oneclaw/docker
 ExecStart=/usr/bin/docker compose up -d
 ExecStop=/usr/bin/docker compose down
 TimeoutStartSec=120
@@ -125,7 +125,7 @@ Enable and start:
 
 ```bash
 sudo systemctl daemon-reload
-sudo systemctl enable --now secureclaw
+sudo systemctl enable --now agentshroud
 ```
 
 ## Updating to Latest Release
@@ -145,7 +145,7 @@ Docker images build natively on your host architecture. If you need multi-arch i
 
 ```bash
 docker buildx create --use
-docker buildx build --platform linux/amd64,linux/arm64 -t secureclaw:latest .
+docker buildx build --platform linux/amd64,linux/arm64 -t agentshroud:latest .
 ```
 
 For single-machine deployments, native builds are simpler and faster.

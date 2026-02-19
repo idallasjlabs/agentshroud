@@ -39,7 +39,7 @@ OpenClaw supports multiple ways to interact with your bot:
   - Configuration and settings
   - Chat history
 
-- **SecureClaw Gateway** - Port 8080
+- **AgentShroud Gateway** - Port 8080
   - iOS Shortcuts integration
   - Email forwarding
   - Custom web interface
@@ -70,7 +70,7 @@ docker compose -f docker/docker-compose.yml ps
 ```
 
 Both containers should show `(healthy)`:
-- `secureclaw-gateway` - Your audit/PII layer
+- `agentshroud-gateway` - Your audit/PII layer
 - `openclaw-bot` - Real OpenClaw platform
 
 ### 2. Access OpenClaw Control UI
@@ -204,20 +204,20 @@ http://localhost:18789
 - Manage MCP servers
 - Configure channels
 
-### Through SecureClaw Gateway (Port 8080)
+### Through AgentShroud Gateway (Port 8080)
 
 **Your existing web chat still works** and now talks to real OpenClaw:
 
 ```bash
 # Get Gateway auth token
-TOKEN=$(docker logs secureclaw-gateway 2>&1 | grep "Generated new token" -A3 | tail -2 | xargs)
+TOKEN=$(docker logs agentshroud-gateway 2>&1 | grep "Generated new token" -A3 | tail -2 | xargs)
 
 # Open web chat
 open "http://localhost:8080/?token=$TOKEN"
 ```
 
 Messages go through:
-1. Your browser/shortcut → SecureClaw Gateway (PII sanitization, audit)
+1. Your browser/shortcut → AgentShroud Gateway (PII sanitization, audit)
 2. Gateway → OpenClaw Gateway (port 18789)
 3. OpenClaw processes with full agents/skills
 4. Response back through the chain
@@ -288,7 +288,7 @@ Switch between providers:
                  │
                  ▼
 ┌────────────────────────────────────────────┐
-│ SecureClaw Gateway (Port 8080)             │
+│ AgentShroud Gateway (Port 8080)             │
 │ - PII Sanitization                         │
 │ - Audit Ledger                             │
 │ - Approval Queue                           │
@@ -388,7 +388,7 @@ docker compose -f docker/docker-compose.yml exec openclaw openclaw dashboard --n
 
 ```bash
 # Test from Gateway container
-docker exec secureclaw-gateway curl http://openclaw:18789/api/health
+docker exec agentshroud-gateway curl http://openclaw:18789/api/health
 
 # Check network
 docker network inspect oneclaw_secureclaw-internal
@@ -426,8 +426,8 @@ docker compose -f docker/docker-compose.yml exec openclaw ssh -vvv user@host
 
 **Network Security:**
 - ✅ OpenClaw Gateway bound to localhost only (127.0.0.1:18789)
-- ✅ Internal Docker network (secureclaw-internal)
-- ✅ SecureClaw Gateway as audit/PII layer
+- ✅ Internal Docker network (agentshroud-internal)
+- ✅ AgentShroud Gateway as audit/PII layer
 - ⚠️ Internet access enabled (OpenClaw needs to reach LLM APIs)
 
 **Secrets Management:**
@@ -460,4 +460,4 @@ docker compose -f docker/docker-compose.yml exec openclaw ssh -vvv user@host
 
 **Questions or issues?** Check the official OpenClaw docs: https://docs.openclaw.ai
 
-**SecureClaw Gateway docs**: See `CONTINUE.md` for Gateway features and troubleshooting.
+**AgentShroud Gateway docs**: See `CONTINUE.md` for Gateway features and troubleshooting.

@@ -1,10 +1,10 @@
-# Deployment Runbook — SecureClaw
+# Deployment Runbook — AgentShroud
 
 > Last updated: 2026-02-18
 
 ## Prerequisites
 
-- SSH access to Pi: `ssh secureclaw-bot@<your-tailscale-hostname>`
+- SSH access to Pi: `ssh agentshroud-bot@<your-tailscale-hostname>`
 - conda env `oneclaw` with Python 3.11
 - Docker and Docker Compose installed
 - GitHub access via `gh` CLI
@@ -50,7 +50,7 @@ docker compose up -d
 
 # Verify health
 docker compose ps
-docker logs secureclaw-gateway --tail 20
+docker logs agentshroud-gateway --tail 20
 ```
 
 ### 6. Verify

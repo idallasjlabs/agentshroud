@@ -2,7 +2,7 @@
 
 **Date**: 2026-02-16
 **Account**: therealidallasj@gmail.com
-**Purpose**: Shared Google services for SecureClaw bot
+**Purpose**: Shared Google services for AgentShroud bot
 
 ---
 
@@ -314,7 +314,7 @@ PYTHON
 ### Step 1: Create Google Cloud Project
 
 1. Go to https://console.cloud.google.com
-2. Create new project: "SecureClaw Bot"
+2. Create new project: "AgentShroud Bot"
 3. Enable APIs:
    - Google Calendar API
    - Google People API (Contacts)
@@ -324,7 +324,7 @@ PYTHON
 
 1. Go to Credentials → Create Credentials → OAuth Client ID
 2. Application type: Desktop app
-3. Name: "SecureClaw Bot"
+3. Name: "AgentShroud Bot"
 4. Download JSON credentials
 
 ### Step 3: Store Credentials
@@ -332,7 +332,7 @@ PYTHON
 ```bash
 # Add to 1Password
 docker exec openclaw-bot 1password-skill create-item \
-  --vault "SecureClaw Bot Credentials" \
+  --vault "AgentShroud Bot Credentials" \
   --title "Google OAuth Client" \
   --type "login" \
   --field "client_id" "[from JSON]" \

@@ -253,7 +253,7 @@ def format_report(report: dict[str, Any]) -> str:
         Formatted report string.
     """
     lines = [
-        "🛡️ SecureClaw Security Health Report",
+        "🛡️ AgentShroud Security Health Report",
         f"📅 {report['timestamp'][:10]}",
         "",
         f"Overall Score: {report['overall_score']}/100 (Grade: {report['grade']})",

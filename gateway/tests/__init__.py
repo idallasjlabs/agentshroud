@@ -1,1 +1,1 @@
-"""Test Suite for SecureClaw Gateway"""
+"""Test Suite for AgentShroud Gateway"""

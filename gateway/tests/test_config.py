@@ -7,8 +7,8 @@ from gateway.ingest_api.config import load_config
 
 
 def test_load_config():
-    """Test loading configuration from secureclaw.yaml"""
-    # This should find ../secureclaw.yaml from the tests directory
+    """Test loading configuration from agentshroud.yaml"""
+    # This should find ../agentshroud.yaml from the tests directory
     config = load_config()
 
     assert config is not None

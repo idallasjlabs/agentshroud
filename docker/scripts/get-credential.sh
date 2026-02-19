@@ -48,8 +48,8 @@ if ! op_authenticate; then
 fi
 
 # Item ID avoids title containing '@' which breaks op:// URIs
-# Item: "Gmail - therealidallasj" in vault "SecureClaw Bot Credentials"
-VAULT="SecureClaw Bot Credentials"
+# Item: "Gmail - therealidallasj" in vault "AgentShroud Bot Credentials"
+VAULT="AgentShroud Bot Credentials"
 ITEM_ID="he6wcfkfieekqkomuxdunal2xa"
 
 case "$ITEM" in

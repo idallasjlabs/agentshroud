@@ -1,5 +1,5 @@
 #!/bin/bash
-# SecureClaw System Health Check
+# AgentShroud System Health Check
 # Verifies all components are operational
 
 set -e
@@ -7,7 +7,7 @@ set -e
 cd "$(dirname "$0")/../.."
 
 echo "================================================================"
-echo "SecureClaw + OpenClaw Health Check"
+echo "AgentShroud + OpenClaw Health Check"
 echo "================================================================"
 echo ""
 
@@ -62,7 +62,7 @@ fi
 
 # Check 6: Internal networking
 echo -n "6. Internal network... "
-if docker exec secureclaw-gateway python -c "import urllib.request; urllib.request.urlopen('http://openclaw:18789/api/health', timeout=3)" > /dev/null 2>&1; then
+if docker exec agentshroud-gateway python -c "import urllib.request; urllib.request.urlopen('http://openclaw:18789/api/health', timeout=3)" > /dev/null 2>&1; then
     check_pass "Gateway → OpenClaw connected"
 else
     check_fail "Gateway → OpenClaw connection failed"

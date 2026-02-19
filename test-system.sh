@@ -1,9 +1,9 @@
 #!/bin/bash
-# Comprehensive SecureClaw system test
+# Comprehensive AgentShroud system test
 
 set -e
 
-echo "=== SecureClaw System Test ==="
+echo "=== AgentShroud System Test ==="
 echo
 
 echo "1. Testing Gateway Status..."

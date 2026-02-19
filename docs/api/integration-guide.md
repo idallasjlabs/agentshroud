@@ -1,20 +1,20 @@
 # Integration Guide
-## SecureClaw v0.9.0
+## AgentShroud v0.9.0
 
 ### Overview
 
-This guide provides comprehensive instructions for integrating SecureClaw with various systems and platforms. SecureClaw is designed as a transparent security proxy that can be integrated with minimal configuration changes to existing AI agent infrastructure.
+This guide provides comprehensive instructions for integrating AgentShroud with various systems and platforms. AgentShroud is designed as a transparent security proxy that can be integrated with minimal configuration changes to existing AI agent infrastructure.
 
 ---
 
 ## OpenClaw Integration (Primary Target)
 
-SecureClaw is purpose-built for OpenClaw AI agents, providing seamless integration with transparent proxy functionality.
+AgentShroud is purpose-built for OpenClaw AI agents, providing seamless integration with transparent proxy functionality.
 
 ### Architecture Overview
 
 ```
-[User] → [SecureClaw Proxy] → [OpenClaw Agent] → [External Services]
+[User] → [AgentShroud Proxy] → [OpenClaw Agent] → [External Services]
                 ↓
         [Security Modules] → [Audit System]
 ```
@@ -23,13 +23,13 @@ SecureClaw is purpose-built for OpenClaw AI agents, providing seamless integrati
 
 **1. Docker Compose Integration**
 
-Add SecureClaw to your existing OpenClaw deployment:
+Add AgentShroud to your existing OpenClaw deployment:
 
 ```yaml
 version: '3.8'
 services:
-  secureclaw:
-    image: secureclaw:0.9.0
+  agentshroud:
+    image: agentshroud:0.9.0
     ports:
       - "8443:8443"
     environment:
@@ -38,7 +38,7 @@ services:
       - AUDIT_ENABLED=true
     volumes:
       - ./config:/app/config
-      - secureclaw-data:/app/data
+      - agentshroud-data:/app/data
     networks:
       - openclaw-net
 
@@ -46,14 +46,14 @@ services:
     image: openclaw:latest
     environment:
       - PROXY_MODE=true
-      - PROXY_ENDPOINT=http://secureclaw:8080
+      - PROXY_ENDPOINT=http://agentshroud:8080
     networks:
       - openclaw-net
     depends_on:
-      - secureclaw
+      - agentshroud
 
 volumes:
-  secureclaw-data:
+  agentshroud-data:
 
 networks:
   openclaw-net:
@@ -63,11 +63,11 @@ networks:
 **2. Environment Configuration**
 
 ```bash
-# SecureClaw Configuration
-export SECURECLAW_MODE=proxy
-export SECURECLAW_UPSTREAM=http://localhost:3000
-export SECURECLAW_PORT=8443
-export SECURECLAW_LOG_LEVEL=info
+# AgentShroud Configuration
+export AGENTSHROUD_MODE=proxy
+export AGENTSHROUD_UPSTREAM=http://localhost:3000
+export AGENTSHROUD_PORT=8443
+export AGENTSHROUD_LOG_LEVEL=info
 
 # OpenClaw Integration
 export OPENCLAW_PROXY_ENABLED=true
@@ -149,13 +149,13 @@ Expected response indicates successful integration:
 
 ## Generic AI Agent Integration
 
-SecureClaw can protect any AI agent system through HTTP proxy mode.
+AgentShroud can protect any AI agent system through HTTP proxy mode.
 
 ### HTTP Proxy Mode
 
 **1. Agent Configuration**
 
-Configure your AI agent to route traffic through SecureClaw:
+Configure your AI agent to route traffic through AgentShroud:
 
 ```python
 # Python Agent Example
@@ -168,7 +168,7 @@ class SecureAgent:
         self.session = requests.Session()
         self.session.headers.update({
             'X-Agent-ID': self.agent_id,
-            'Authorization': f'Bearer {os.getenv("SECURECLAW_TOKEN")}'
+            'Authorization': f'Bearer {os.getenv("AGENTSHROUD_TOKEN")}'
         })
 
     def send_message(self, message):
@@ -197,7 +197,7 @@ class SecureAIAgent {
       baseURL: proxyUrl,
       headers: {
         'X-Agent-ID': agentId,
-        'Authorization': `Bearer ${process.env.SECURECLAW_TOKEN}`
+        'Authorization': `Bearer ${process.env.AGENTSHROUD_TOKEN}`
       }
     });
   }
@@ -243,13 +243,13 @@ curl -X POST http://localhost:8443/api/v1/ingest \
 
 ## MCP Server Integration
 
-Secure Model Context Protocol communications through SecureClaw MCP proxy.
+Secure Model Context Protocol communications through AgentShroud MCP proxy.
 
 ### MCP Proxy Configuration
 
 **1. MCP Server Setup**
 
-Configure MCP servers to connect through SecureClaw:
+Configure MCP servers to connect through AgentShroud:
 
 ```json
 {
@@ -292,7 +292,7 @@ const mcpClient = new MCPClient({
     type: 'http',
     url: 'http://localhost:8444',
     headers: {
-      'Authorization': `Bearer ${process.env.SECURECLAW_TOKEN}`,
+      'Authorization': `Bearer ${process.env.AGENTSHROUD_TOKEN}`,
       'X-Agent-ID': 'my-agent-001'
     }
   },
@@ -337,7 +337,7 @@ policies:
 
 ## Monitoring System Integration
 
-Integrate SecureClaw with monitoring and alerting systems.
+Integrate AgentShroud with monitoring and alerting systems.
 
 ### Webhook Alerts
 
@@ -396,12 +396,12 @@ Security alert webhook payload:
 
 **1. Metrics Endpoint**
 
-Configure Prometheus to scrape SecureClaw metrics:
+Configure Prometheus to scrape AgentShroud metrics:
 
 ```yaml
 # prometheus.yml
 scrape_configs:
-  - job_name: 'secureclaw'
+  - job_name: 'agentshroud'
     static_configs:
       - targets: ['localhost:8443']
     metrics_path: '/metrics'
@@ -411,7 +411,7 @@ scrape_configs:
 
 **2. Available Metrics**
 
-SecureClaw exposes comprehensive security metrics:
+AgentShroud exposes comprehensive security metrics:
 
 ```
 # Security metrics
@@ -430,12 +430,12 @@ secureclaw_audit_entries_total
 
 **3. Grafana Dashboard**
 
-Import SecureClaw Grafana dashboard:
+Import AgentShroud Grafana dashboard:
 
 ```json
 {
   "dashboard": {
-    "title": "SecureClaw Security Dashboard",
+    "title": "AgentShroud Security Dashboard",
     "panels": [
       {
         "title": "Security Violations",
@@ -466,8 +466,8 @@ Create service account with limited vault access:
 
 ```bash
 # Create service account
-op service-account create "SecureClaw Bot" \
-  --vault "SecureClaw Bot Credentials" \
+op service-account create "AgentShroud Bot" \
+  --vault "AgentShroud Bot Credentials" \
   --permissions read
 
 # Generate service account token
@@ -479,7 +479,7 @@ export OP_SERVICE_ACCOUNT_TOKEN="<service-account-token>"
 Organize credentials in dedicated vault:
 
 ```
-SecureClaw Bot Credentials/
+AgentShroud Bot Credentials/
 ├── API Keys/
 │   ├── Brave Search API
 │   ├── Threat Intelligence Feed
@@ -500,7 +500,7 @@ SecureClaw Bot Credentials/
     "provider": "1password",
     "service_account": {
       "token_file": "/run/secrets/1password_service_account",
-      "vault": "SecureClaw Bot Credentials"
+      "vault": "AgentShroud Bot Credentials"
     },
     "items": {
       "brave_api_key": "Brave Search API",
@@ -524,7 +524,7 @@ class CredentialManager {
   async getApiKey(itemName) {
     try {
       const { stdout } = await execPromise(
-        `op item get "${itemName}" --vault "SecureClaw Bot Credentials" --fields api_key --reveal`
+        `op item get "${itemName}" --vault "AgentShroud Bot Credentials" --fields api_key --reveal`
       );
       return stdout.trim();
     } catch (error) {
@@ -538,7 +538,7 @@ class CredentialManager {
 
 ## CI/CD Pipeline Integration
 
-Integrate SecureClaw security testing into development workflows.
+Integrate AgentShroud security testing into development workflows.
 
 ### GitHub Actions Integration
 
@@ -546,7 +546,7 @@ Integrate SecureClaw security testing into development workflows.
 
 ```yaml
 # .github/workflows/security-test.yml
-name: SecureClaw Security Testing
+name: AgentShroud Security Testing
 
 on:
   pull_request:
@@ -560,13 +560,13 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       
-      - name: Start SecureClaw
+      - name: Start AgentShroud
         run: |
-          docker run -d --name secureclaw \
+          docker run -d --name agentshroud \
             -p 8443:8443 \
             -e SECURITY_LEVEL=enforce \
             -e TEST_MODE=true \
-            secureclaw:latest
+            agentshroud:latest
           
           # Wait for startup
           timeout 60 bash -c 'until curl -f http://localhost:8443/health; do sleep 5; done'
@@ -579,7 +579,7 @@ jobs:
         run: |
           docker run --rm --network host \
             -v $(pwd):/workspace \
-            secureclaw/security-scanner:latest \
+            agentshroud/security-scanner:latest \
             --target http://localhost:8443 \
             --config /workspace/.security-scan.yml
 
@@ -603,7 +603,7 @@ jobs:
 
 ```yaml
 # .github/workflows/deploy.yml
-name: Deploy with SecureClaw
+name: Deploy with AgentShroud
 
 on:
   release:
@@ -613,19 +613,19 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
-      - name: Deploy SecureClaw
+      - name: Deploy AgentShroud
         run: |
-          # Deploy SecureClaw first
-          kubectl apply -f k8s/secureclaw/
-          kubectl wait --for=condition=ready pod -l app=secureclaw
+          # Deploy AgentShroud first
+          kubectl apply -f k8s/agentshroud/
+          kubectl wait --for=condition=ready pod -l app=agentshroud
           
-          # Deploy application behind SecureClaw
+          # Deploy application behind AgentShroud
           kubectl apply -f k8s/app/
           
       - name: Verify Security Integration
         run: |
           # Test security endpoints
-          kubectl port-forward svc/secureclaw 8443:8443 &
+          kubectl port-forward svc/agentshroud 8443:8443 &
           sleep 10
           
           curl -f http://localhost:8443/health
@@ -644,18 +644,18 @@ COPY package*.json ./
 RUN npm ci --only=production
 
 FROM node:18-alpine AS runtime
-RUN addgroup -g 1001 -S secureclaw && \
-    adduser -S secureclaw -u 1001
+RUN addgroup -g 1001 -S agentshroud && \
+    adduser -S agentshroud -u 1001
 
 WORKDIR /app
 COPY --from=builder /app/node_modules ./node_modules
-COPY --chown=secureclaw:secureclaw . .
+COPY --chown=agentshroud:agentshroud . .
 
 # Security hardening
 RUN chmod -R 755 /app && \
-    chown -R secureclaw:secureclaw /app
+    chown -R agentshroud:agentshroud /app
 
-USER secureclaw
+USER agentshroud
 EXPOSE 8443
 
 HEALTHCHECK --interval=30s --timeout=3s --start-period=5s --retries=3 \
@@ -674,13 +674,13 @@ services:
     image: aquasec/trivy:latest
     command: |
       sh -c "
-        trivy image --exit-code 0 --severity LOW,MEDIUM secureclaw:latest
-        trivy image --exit-code 1 --severity HIGH,CRITICAL secureclaw:latest
+        trivy image --exit-code 0 --severity LOW,MEDIUM agentshroud:latest
+        trivy image --exit-code 1 --severity HIGH,CRITICAL agentshroud:latest
       "
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock
     depends_on:
-      - secureclaw
+      - agentshroud
 ```
 
-This integration guide provides comprehensive instructions for deploying SecureClaw across various environments and systems while maintaining security best practices and operational efficiency.
+This integration guide provides comprehensive instructions for deploying AgentShroud across various environments and systems while maintaining security best practices and operational efficiency.

@@ -1,4 +1,4 @@
-# SecureClaw: Enterprise Security for Autonomous AI Agents
+# AgentShroud: Enterprise Security for Autonomous AI Agents
 
 **White Paper v1.0 — February 2026**
 **Author: Isaiah Jefferson**
@@ -11,17 +11,17 @@
 
 AI agents are being deployed into production with access to email, calendars, files, SSH sessions, and financial accounts — yet the platforms running these agents have virtually no security controls. No PII filtering. No kill switches. No audit trails. No prompt injection defense. The industry is shipping root access to an LLM and hoping for the best.
 
-SecureClaw is an open-source security proxy layer that wraps AI agent platforms — starting with OpenClaw, the leading open-source AI personal assistant — and adds enterprise-grade security controls without modifying the underlying platform. It operates as a transparent FastAPI gateway: the agent doesn't know SecureClaw exists, which means platform updates flow through cleanly and the security layer is independently testable and auditable.
+AgentShroud is an open-source security proxy layer that wraps AI agent platforms — starting with OpenClaw, the leading open-source AI personal assistant — and adds enterprise-grade security controls without modifying the underlying platform. It operates as a transparent FastAPI gateway: the agent doesn't know AgentShroud exists, which means platform updates flow through cleanly and the security layer is independently testable and auditable.
 
-SecureClaw provides 18 security modules: PII sanitization (Microsoft Presidio), a tamper-evident audit ledger (SHA-256 hash chain), a human approval queue for dangerous actions, a three-mode kill switch, an SSH proxy with command injection detection, a real-time security dashboard, AES-256-GCM encrypted memory, prompt injection defense (11+ pattern detectors), a progressive trust system, egress filtering with SSRF protection, container drift detection, container hardening via seccomp profiles and capability dropping, an MCP tool call proxy with per-tool permissions and injection/PII inspection, a web traffic proxy with prompt injection scanning of fetched content, DNS tunneling detection, sub-agent monitoring with trust inheritance, file I/O sandboxing, and an API key isolation vault.
+AgentShroud provides 18 security modules: PII sanitization (Microsoft Presidio), a tamper-evident audit ledger (SHA-256 hash chain), a human approval queue for dangerous actions, a three-mode kill switch, an SSH proxy with command injection detection, a real-time security dashboard, AES-256-GCM encrypted memory, prompt injection defense (11+ pattern detectors), a progressive trust system, egress filtering with SSRF protection, container drift detection, container hardening via seccomp profiles and capability dropping, an MCP tool call proxy with per-tool permissions and injection/PII inspection, a web traffic proxy with prompt injection scanning of fetched content, DNS tunneling detection, sub-agent monitoring with trust inheritance, file I/O sandboxing, and an API key isolation vault.
 
-**New in v0.3.0:** SecureClaw now includes a full defense-in-depth container security toolchain — Trivy for build-time CVE scanning, ClamAV for runtime malware detection, Falco for kernel-level syscall monitoring, Wazuh for host integrity monitoring, and OpenSCAP for compliance scanning. All five tools are integrated out of the box: users run `docker-compose up` and get full security instrumentation with zero additional configuration. No other AI agent platform provides any of these capabilities. SecureClaw is the only platform with build-to-runtime container security coverage.
+**New in v0.3.0:** AgentShroud now includes a full defense-in-depth container security toolchain — Trivy for build-time CVE scanning, ClamAV for runtime malware detection, Falco for kernel-level syscall monitoring, Wazuh for host integrity monitoring, and OpenSCAP for compliance scanning. All five tools are integrated out of the box: users run `docker-compose up` and get full security instrumentation with zero additional configuration. No other AI agent platform provides any of these capabilities. AgentShroud is the only platform with build-to-runtime container security coverage.
 
 **New in v0.4.0:** Three new security layers that address attack vectors no other platform defends against. The **MCP Proxy Layer** (Phase 9) intercepts every MCP tool call, applying per-tool permissions, injection/PII inspection, and rate limiting — existing MCP servers work without modification. The **Web Traffic Proxy** (Phase 10) routes all outbound HTTP through the gateway, scanning fetched web content for prompt injection (mitigating CVE-2026-22708), blocking SSRF attacks, and detecting PII exfiltration in URLs. **Full Egress Control** (Phase 11) adds DNS tunneling detection, sub-agent oversight with trust inheritance, file I/O sandboxing, API key isolation (keys never in the agent container), and unified multi-channel egress monitoring. All modules default to monitor mode (log and inspect, block only real threats) except the API key vault which enforces by default — a deliberate design principle ensuring security doesn't break functionality.
 
 The entire stack runs on a Raspberry Pi 4 with 8GB RAM. It has 951 tests at 92%+ code coverage. It's open source, it's free, and it's the only solution in its class.
 
-This paper details the architecture, security controls, compliance posture, and competitive landscape for SecureClaw. It is intended for security engineers evaluating AI agent deployments, CISOs building governance frameworks, and anyone who believes AI agents should be secured like any other privileged system component.
+This paper details the architecture, security controls, compliance posture, and competitive landscape for AgentShroud. It is intended for security engineers evaluating AI agent deployments, CISOs building governance frameworks, and anyone who believes AI agents should be secured like any other privileged system component.
 
 ---
 
@@ -72,7 +72,7 @@ These aren't theoretical. Prompt injection attacks have been demonstrated agains
 
 ### 2.1 Design Principle: Transparent Proxy
 
-SecureClaw's core design decision is to never modify the AI platform itself. Instead, it operates as a transparent proxy — a FastAPI gateway that sits between the messaging channels and the agent container:
+AgentShroud's core design decision is to never modify the AI platform itself. Instead, it operates as a transparent proxy — a FastAPI gateway that sits between the messaging channels and the agent container:
 
 ```
 ┌──────────────────────────────────────────────────────────┐
@@ -82,7 +82,7 @@ SecureClaw's core design decision is to never modify the AI platform itself. Ins
                          │
                          ▼
 ┌──────────────────────────────────────────────────────────┐
-│              SecureClaw Gateway (FastAPI)                 │
+│              AgentShroud Gateway (FastAPI)                 │
 │                                                          │
 │  ┌─────────┐ ┌──────────┐ ┌───────────┐ ┌───────────┐   │
 │  │   PII   │ │ Prompt   │ │ Approval  │ │  Egress   │   │
@@ -121,7 +121,7 @@ SecureClaw's core design decision is to never modify the AI platform itself. Ins
 
 This architecture provides three critical properties:
 
-1. **No fork required.** OpenClaw (or any wrapped platform) continues to receive upstream updates. SecureClaw never patches the agent — it wraps it. This eliminates the maintenance burden of tracking a fork and means security improvements are decoupled from platform release cycles.
+1. **No fork required.** OpenClaw (or any wrapped platform) continues to receive upstream updates. AgentShroud never patches the agent — it wraps it. This eliminates the maintenance burden of tracking a fork and means security improvements are decoupled from platform release cycles.
 
 2. **Platform-agnostic potential.** The same gateway can proxy for other agent platforms — NanoClaw, custom agents, or future platforms. The security controls are generic to the "messages in, actions out" pattern that all agents share.
 
@@ -133,7 +133,7 @@ A typical message lifecycle:
 
 ```
 1. User sends message via Telegram
-2. SecureClaw Gateway receives the message
+2. AgentShroud Gateway receives the message
 3. PII Sanitizer scans inbound text → redacts SSN, replaces with [REDACTED]
 4. Prompt Injection Defense scores the message → passes (score below threshold)
 5. Progressive Trust checks user's trust level → STANDARD, action permitted
@@ -157,7 +157,7 @@ If the agent attempts a dangerous action (SSH command, file deletion, etc.), the
 
 **What it does:** Prevents personally identifiable information from reaching the AI model or leaking in responses.
 
-**How it works:** Built on Microsoft Presidio, an open-source PII detection engine that uses NLP (spaCy models), regular expressions, and context-aware analysis. SecureClaw runs Presidio on both inbound and outbound message paths.
+**How it works:** Built on Microsoft Presidio, an open-source PII detection engine that uses NLP (spaCy models), regular expressions, and context-aware analysis. AgentShroud runs Presidio on both inbound and outbound message paths.
 
 Detected entity types include:
 - Social Security Numbers (SSN)
@@ -231,7 +231,7 @@ Modifying any historical entry breaks every subsequent hash in the chain, making
 
 **What it does:** Mediates all SSH access from the AI agent to external hosts, with command injection detection and per-host access control.
 
-**How it works:** Rather than giving the agent direct SSH access, all connections route through the SecureClaw SSH proxy. The proxy:
+**How it works:** Rather than giving the agent direct SSH access, all connections route through the AgentShroud SSH proxy. The proxy:
 
 1. **Validates the target host** against an allowlist of trusted hosts.
 2. **Inspects the command** for injection patterns: semicolons (`;`), pipes (`|`), backticks (`` ` ``), `$()` subshells, `&&`/`||` chains, and redirect operators.
@@ -253,7 +253,7 @@ Modifying any historical entry breaks every subsequent hash in the chain, making
 - Historical audit replay — scrub through past events for investigation.
 - Security event highlighting — PII detections, approval requests, trust changes, and kill switch activations are visually distinguished.
 
-**Why no framework?** SecureClaw is designed to run on constrained hardware. A React build pipeline would add complexity, dependencies, and resource consumption that a Pi doesn't need. The dashboard is a single HTML file with inline CSS and vanilla JavaScript. It loads in under 200ms.
+**Why no framework?** AgentShroud is designed to run on constrained hardware. A React build pipeline would add complexity, dependencies, and resource consumption that a Pi doesn't need. The dashboard is a single HTML file with inline CSS and vanilla JavaScript. It loads in under 200ms.
 
 ### 3.7 Encrypted Memory (AES-256-GCM) — Phase 7
 
@@ -320,7 +320,7 @@ UNTRUSTED → BASIC → STANDARD → ELEVATED → FULL
 - **Wildcard support** — `*.github.com` matches one subdomain level (e.g., `api.github.com` but not `a.b.github.com`).
 - **Per-agent policies** — different agents can have different egress rules.
 - **SSRF protection** — automatically blocks connections to private IP ranges (10.x, 172.16-31.x, 192.168.x, 127.x), link-local addresses, and IPv6 loopback.
-- **iptables template** — for network-level enforcement, SecureClaw generates iptables rules that can be applied to the host, providing defense-in-depth beyond application-layer filtering.
+- **iptables template** — for network-level enforcement, AgentShroud generates iptables rules that can be applied to the host, providing defense-in-depth beyond application-layer filtering.
 
 **Attacks prevented:** Data exfiltration to attacker-controlled servers, SSRF attacks against internal services, DNS rebinding, C2 communication from a compromised agent.
 
@@ -346,7 +346,7 @@ UNTRUSTED → BASIC → STANDARD → ELEVATED → FULL
 **What it does:** Reduces the container's attack surface to the minimum required for operation.
 
 **Controls applied:**
-- **seccomp profiles:** Custom profiles for ARM64 that allow only the syscalls the agent actually needs. Default Docker seccomp blocks ~44 syscalls; SecureClaw's profile is more restrictive.
+- **seccomp profiles:** Custom profiles for ARM64 that allow only the syscalls the agent actually needs. Default Docker seccomp blocks ~44 syscalls; AgentShroud's profile is more restrictive.
 - **Capability dropping:** `cap_drop: ALL` removes all Linux capabilities. No `CAP_NET_RAW` (no raw sockets), no `CAP_SYS_ADMIN` (no mount/unmount), no `CAP_DAC_OVERRIDE` (no permission bypass).
 - **Docker Secrets:** All credentials (API keys, SSH keys, passwords) are stored as Docker Secrets, mounted as in-memory tmpfs. Never passed as environment variables (which are visible in `/proc`, `docker inspect`, and crash dumps).
 - **1Password integration:** Runtime secrets are fetched from 1Password at startup, reducing the number of secrets stored in Docker at all.
@@ -375,7 +375,7 @@ UNTRUSTED → BASIC → STANDARD → ELEVATED → FULL
 
 ### 3.14 Web Traffic Proxy — Phase 10
 
-**What it does:** Routes all outbound HTTP from the OpenClaw container through the SecureClaw gateway, scanning fetched web content for prompt injection, blocking SSRF attacks, and detecting PII exfiltration in URLs.
+**What it does:** Routes all outbound HTTP from the OpenClaw container through the AgentShroud gateway, scanning fetched web content for prompt injection, blocking SSRF attacks, and detecting PII exfiltration in URLs.
 
 **How it works:** The OpenClaw container's outbound HTTP is configured to route through the gateway's web proxy. Every request and response passes through the security pipeline.
 
@@ -387,7 +387,7 @@ UNTRUSTED → BASIC → STANDARD → ELEVATED → FULL
 - **Per-domain rate limiting:** Prevent excessive requests to any single domain.
 - **Content-type filtering:** Block unexpected content types (e.g., executables).
 - **Response size limits:** Prevent the agent from downloading excessively large files.
-- **X-SecureClaw-\* headers:** Flagged content receives headers indicating what was detected, enabling downstream processing decisions.
+- **X-AgentShroud-\* headers:** Flagged content receives headers indicating what was detected, enabling downstream processing decisions.
 - **Passthrough mode:** For debugging, the proxy can pass traffic through without inspection while still logging.
 
 **107 new tests** covering all detection patterns, encoding bypasses, and edge cases.
@@ -417,7 +417,7 @@ UNTRUSTED → BASIC → STANDARD → ELEVATED → FULL
 - Staging pattern detection: identifies behavior consistent with data staging for exfiltration (collecting data into a single file before sending it out).
 
 **API Key Isolation (Key Vault):**
-- API keys are stored ONLY in the SecureClaw gateway, never in the OpenClaw container.
+- API keys are stored ONLY in the AgentShroud gateway, never in the OpenClaw container.
 - Transparent injection: the gateway adds API keys to outbound requests automatically — the agent never sees the raw key.
 - Leak detection: monitors all outbound traffic for patterns matching known API key formats.
 - Per-agent scoping: different agents can have access to different API keys.
@@ -432,7 +432,7 @@ UNTRUSTED → BASIC → STANDARD → ELEVATED → FULL
 
 **123 new tests** covering DNS tunneling patterns, sub-agent lifecycle, file sandboxing edge cases, key vault enforcement, and egress aggregation.
 
-**Design principle:** All Phase 11 modules default to monitor mode except the key vault. This "transparent security" approach means deploying SecureClaw doesn't break existing workflows. Organizations can observe their agent's behavior in monitor mode, tune policies, and then selectively enable enforcement — a critical adoption strategy.
+**Design principle:** All Phase 11 modules default to monitor mode except the key vault. This "transparent security" approach means deploying AgentShroud doesn't break existing workflows. Organizations can observe their agent's behavior in monitor mode, tune policies, and then selectively enable enforcement — a critical adoption strategy.
 
 **Attacks prevented:** DNS tunneling exfiltration, sub-agent trust escalation, file-based data staging, API key theft, slow-drip exfiltration, runaway sub-agents.
 
@@ -440,7 +440,7 @@ UNTRUSTED → BASIC → STANDARD → ELEVATED → FULL
 
 ## 4. Defense-in-Depth Container Security
 
-SecureClaw v0.3.0 introduces a full lifecycle container security toolchain. Five industry-standard security tools are integrated into the deployment — three built directly into container images, two deployed as standard sidecar containers. The result: every SecureClaw deployment has build-time vulnerability scanning, runtime malware detection, kernel-level behavioral monitoring, host integrity monitoring, and compliance scanning. No other AI agent platform offers any of these capabilities.
+AgentShroud v0.3.0 introduces a full lifecycle container security toolchain. Five industry-standard security tools are integrated into the deployment — three built directly into container images, two deployed as standard sidecar containers. The result: every AgentShroud deployment has build-time vulnerability scanning, runtime malware detection, kernel-level behavioral monitoring, host integrity monitoring, and compliance scanning. No other AI agent platform offers any of these capabilities.
 
 ### 4.1 Build-Time Image Scanning (Trivy)
 
@@ -461,7 +461,7 @@ SecureClaw v0.3.0 introduces a full lifecycle container security toolchain. Five
 
 **What it does:** Provides continuous antivirus and malware detection inside every container.
 
-**How it works:** ClamAV is built into the SecureClaw container images. The deployment includes:
+**How it works:** ClamAV is built into the AgentShroud container images. The deployment includes:
 
 - **freshclam daemon:** Runs automatically and updates the virus signature database every 4 hours. No manual intervention required. The ClamAV database covers millions of known malware signatures including trojans, worms, ransomware, and cryptominers.
 - **Scheduled scanning:** A daily full scan of all workspace directories, uploaded files, and temporary storage. Scan schedule is configurable via environment variables.
@@ -485,9 +485,9 @@ SecureClaw v0.3.0 introduces a full lifecycle container security toolchain. Five
 - **Reverse shells:** Identifies network sockets with redirected stdin/stdout — the signature of a reverse shell.
 - **File access outside workspace:** Alerts when the agent container reads or writes files outside its designated workspace directory.
 
-**Custom SecureClaw rules:** In addition to Falco's default ruleset, SecureClaw includes custom rules specific to AI agent security:
+**Custom AgentShroud rules:** In addition to Falco's default ruleset, AgentShroud includes custom rules specific to AI agent security:
 
-- **Direct outbound connection bypass:** Detects if the OpenClaw container makes outbound network connections that bypass the SecureClaw gateway. All agent traffic should route through the proxy — a direct connection indicates either a misconfiguration or an attempted bypass.
+- **Direct outbound connection bypass:** Detects if the OpenClaw container makes outbound network connections that bypass the AgentShroud gateway. All agent traffic should route through the proxy — a direct connection indicates either a misconfiguration or an attempted bypass.
 - **Audit ledger tampering:** Alerts on any process other than the gateway writing to the audit ledger database.
 - **Secret file access:** Monitors access to Docker secret mount paths outside of expected startup initialization.
 
@@ -500,12 +500,12 @@ SecureClaw v0.3.0 introduces a full lifecycle container security toolchain. Five
 - **File Integrity Monitoring (FIM):** Watches for changes to files and directories that should rarely or never change. Monitored paths include:
   - `/home/node/.openclaw/workspace` — agent workspace files
   - `/home/node/.openclaw/config` — configuration files
-  - `/var/lib/secureclaw/audit` — the audit ledger database
+  - `/var/lib/agentshroud/audit` — the audit ledger database
   - Docker Compose files and environment files
   - Container entrypoint scripts and security configurations
 - **Rootkit detection:** Scans for known rootkit signatures, hidden processes, hidden ports, and suspicious kernel modules.
 - **Log analysis:** Parses syslog, Docker daemon logs, and application logs for security-relevant events (failed logins, permission denied errors, OOM kills).
-- **Centralized alerting:** All Wazuh alerts feed into the SecureClaw dashboard and audit ledger, providing a single pane of glass for security events.
+- **Centralized alerting:** All Wazuh alerts feed into the AgentShroud dashboard and audit ledger, providing a single pane of glass for security events.
 
 **Attacks prevented:** Host-level file tampering, rootkit installation, configuration drift that bypasses container-level controls, audit log manipulation at the filesystem level.
 
@@ -513,7 +513,7 @@ SecureClaw v0.3.0 introduces a full lifecycle container security toolchain. Five
 
 **What it does:** Evaluates the deployment against established security benchmarks and compliance standards.
 
-**How it works:** OpenSCAP is built into the SecureClaw images and runs scheduled compliance scans against:
+**How it works:** OpenSCAP is built into the AgentShroud images and runs scheduled compliance scans against:
 
 - **DISA STIG profiles:** Security Technical Implementation Guides published by the Defense Information Systems Agency. These profiles define hardening requirements for Linux systems and container environments.
 - **CIS Benchmarks:** Center for Internet Security benchmarks for Docker, Linux, and the specific base OS distribution.
@@ -527,7 +527,7 @@ SecureClaw v0.3.0 introduces a full lifecycle container security toolchain. Five
 
 ### 4.6 Daily Security Health Report
 
-All five security tools — plus the SecureClaw gateway's own metrics — feed into an automated daily security health report.
+All five security tools — plus the AgentShroud gateway's own metrics — feed into an automated daily security health report.
 
 **Report contents:**
 
@@ -538,7 +538,7 @@ All five security tools — plus the SecureClaw gateway's own metrics — feed i
 | Runtime Behavior | Falco | Alert count by severity, top triggered rules, new alert types |
 | File Integrity | Wazuh | Files changed, unauthorized modifications, rootkit scan results |
 | Compliance | OpenSCAP | Pass rate, new failures, deviation from baseline |
-| Gateway Security | SecureClaw | PII detections, injection attempts, approval queue activity, trust level changes |
+| Gateway Security | AgentShroud | PII detections, injection attempts, approval queue activity, trust level changes |
 
 **Overall Security Score:** Each section contributes to a composite score (A through F). The score is calculated using weighted averages — CRITICAL Trivy findings and Falco alerts weigh more heavily than informational Wazuh events.
 
@@ -550,7 +550,7 @@ All five security tools — plus the SecureClaw gateway's own metrics — feed i
 
 ### 4.7 Zero-Configuration Security
 
-A defining principle of SecureClaw's container security is that it requires zero additional setup. When a user runs `docker-compose up`, they get:
+A defining principle of AgentShroud's container security is that it requires zero additional setup. When a user runs `docker-compose up`, they get:
 
 - Trivy scanning integrated into the image build
 - ClamAV running with automatic signature updates
@@ -561,13 +561,13 @@ A defining principle of SecureClaw's container security is that it requires zero
 
 There is no manual tool installation. No post-deployment configuration. No separate security infrastructure to maintain. Security is the default state, not an optional add-on.
 
-This is deliberate. Security tools that require manual setup don't get set up. By baking everything into the Docker Compose deployment, SecureClaw ensures that every deployment — from a developer's laptop to a production Raspberry Pi — has the same security coverage.
+This is deliberate. Security tools that require manual setup don't get set up. By baking everything into the Docker Compose deployment, AgentShroud ensures that every deployment — from a developer's laptop to a production Raspberry Pi — has the same security coverage.
 
 ### 4.8 Container Security — Competitive Comparison
 
 No other AI agent platform provides any of these capabilities:
 
-| Capability | SecureClaw | OpenClaw | NanoClaw | Zetherion | Everyone Else |
+| Capability | AgentShroud | OpenClaw | NanoClaw | Zetherion | Everyone Else |
 |---|---|---|---|---|---|
 | Image CVE scanning | ✅ Trivy built-in | ❌ | ❌ | ❌ | ❌ |
 | Runtime malware detection | ✅ ClamAV built-in | ❌ | ❌ | ❌ | ❌ |
@@ -577,7 +577,7 @@ No other AI agent platform provides any of these capabilities:
 | Daily security health report | ✅ Automated | ❌ | ❌ | ❌ | ❌ |
 | Zero-config security | ✅ `docker-compose up` | ❌ | ❌ | ❌ | ❌ |
 
-SecureClaw is the only AI agent platform with full lifecycle container security — from build to runtime. This is not an add-on or a paid tier. It ships with every deployment.
+AgentShroud is the only AI agent platform with full lifecycle container security — from build to runtime. This is not an add-on or a paid tier. It ships with every deployment.
 
 ---
 
@@ -585,7 +585,7 @@ SecureClaw is the only AI agent platform with full lifecycle container security 
 
 ### 4.1 IEC 62443 (Industrial Automation Security)
 
-SecureClaw maps to several IEC 62443 requirements:
+AgentShroud maps to several IEC 62443 requirements:
 
 - **FR 1 (Identification & Authentication):** Cookie-based dashboard auth, per-user trust levels.
 - **FR 2 (Use Control):** Progressive trust system, approval queue, per-host SSH access control.
@@ -597,7 +597,7 @@ SecureClaw maps to several IEC 62443 requirements:
 
 ### 4.2 EU AI Act
 
-The EU AI Act (effective August 2025) imposes requirements on high-risk AI systems. SecureClaw addresses several:
+The EU AI Act (effective August 2025) imposes requirements on high-risk AI systems. AgentShroud addresses several:
 
 - **Article 9 (Risk Management):** Progressive trust system provides continuous risk assessment. Kill switch enables immediate risk mitigation.
 - **Article 12 (Record-Keeping):** Tamper-evident audit ledger satisfies logging requirements. Encrypted memory ensures log integrity.
@@ -620,12 +620,12 @@ The EU AI Act (effective August 2025) imposes requirements on high-risk AI syste
 The AI agent security space is nascent. Most platforms treat security as an afterthought — if they treat it at all. We evaluated 11 platforms across four dimensions: **Security Depth** (number and sophistication of controls) and **Operational Maturity** (testing, documentation, deployment readiness).
 
 ```
-                    SecureClaw Competitive Positioning
+                    AgentShroud Competitive Positioning
                     
      Security Depth
            ▲
      High  │
-           │  ★ SecureClaw
+           │  ★ AgentShroud
            │
            │
      Med   │
@@ -639,11 +639,11 @@ The AI agent security space is nascent. Most platforms treat security as an afte
                               Operational Maturity
 ```
 
-**SecureClaw** is the only platform in the upper quadrant, combining deep security controls (18 gateway modules + 5 container security tools) with operational maturity (951 tests, 92%+ coverage, Docker Compose deployment, runs on a Pi 4). With the addition of the MCP Proxy, Web Traffic Proxy, and Full Egress Control (Phases 9-11), SecureClaw's security score rises to **10.0** — the only platform with gateway-level, container-level, MCP-level, and egress-level security instrumentation.
+**AgentShroud** is the only platform in the upper quadrant, combining deep security controls (18 gateway modules + 5 container security tools) with operational maturity (951 tests, 92%+ coverage, Docker Compose deployment, runs on a Pi 4). With the addition of the MCP Proxy, Web Traffic Proxy, and Full Egress Control (Phases 9-11), AgentShroud's security score rises to **10.0** — the only platform with gateway-level, container-level, MCP-level, and egress-level security instrumentation.
 
 ### 6.2 Comparison Table
 
-| Capability              | SecureClaw | OpenClaw | NanoClaw | Zetherion | Industry Avg |
+| Capability              | AgentShroud | OpenClaw | NanoClaw | Zetherion | Industry Avg |
 |-------------------------|:----------:|:--------:|:--------:|:---------:|:------------:|
 | PII filtering           | ✅          | ❌        | ❌        | ❌         | 0/11         |
 | Tamper-evident audit    | ✅          | ❌        | ❌        | ❌         | 0/11         |
@@ -673,15 +673,15 @@ The AI agent security space is nascent. Most platforms treat security as an afte
 
 ### 6.3 Key Differentiators
 
-**vs. OpenClaw:** SecureClaw wraps OpenClaw. OpenClaw is an excellent agent platform with 12+ channel integrations and broad tool support. It has no security layer. SecureClaw adds one without modification.
+**vs. OpenClaw:** AgentShroud wraps OpenClaw. OpenClaw is an excellent agent platform with 12+ channel integrations and broad tool support. It has no security layer. AgentShroud adds one without modification.
 
-**vs. NanoClaw:** NanoClaw offers basic approval workflows but lacks PII filtering, audit integrity, kill switches, and the depth of SecureClaw's security stack.
+**vs. NanoClaw:** NanoClaw offers basic approval workflows but lacks PII filtering, audit integrity, kill switches, and the depth of AgentShroud's security stack.
 
 **vs. Zetherion:** Zetherion has some container security and basic encrypted state, but no PII sanitization, no prompt injection defense, and no transparent proxy architecture.
 
-**vs. building your own:** You could. It's roughly 6 months of security engineering for one person. Or you can deploy SecureClaw today with `docker compose up`.
+**vs. building your own:** You could. It's roughly 6 months of security engineering for one person. Or you can deploy AgentShroud today with `docker compose up`.
 
-**Unique to SecureClaw (no known equivalent in any platform):**
+**Unique to AgentShroud (no known equivalent in any platform):**
 
 - **MCP Proxy:** The only platform that intercepts and inspects MCP tool calls. Every other platform passes tool calls directly to MCP servers with no visibility.
 - **Web Content Injection Scanning:** The only platform that scans fetched web content for prompt injection before it reaches the model. CVE-2026-22708 is unmitigated on every other platform.
@@ -755,14 +755,14 @@ Every security module has dedicated tests covering normal operation, edge cases,
 
 ### 8.2 Resource Footprint
 
-SecureClaw is designed to run on constrained hardware. The primary development and deployment target is a Raspberry Pi 4 with 8GB RAM:
+AgentShroud is designed to run on constrained hardware. The primary development and deployment target is a Raspberry Pi 4 with 8GB RAM:
 
 - **Gateway memory:** ~120MB RSS
 - **Dashboard:** Single HTML file, <50KB
 - **SQLite databases:** Minimal disk I/O, no external database server
 - **Presidio (PII):** Loads spaCy model on startup (~200MB), then runs inline with <50ms per message scan
 
-The total stack (SecureClaw + OpenClaw) runs comfortably on a Pi 4 with room to spare.
+The total stack (AgentShroud + OpenClaw) runs comfortably on a Pi 4 with room to spare.
 
 ### 8.3 Latency
 
@@ -780,7 +780,7 @@ Total added latency for a typical message roundtrip: <70ms — imperceptible giv
 
 ## 9. Deep Security Hardening (v0.9.0)
 
-SecureClaw v0.9.0 introduces the deepest security hardening phase yet implemented — eight additional security modules that address attack vectors no other AI agent platform has even identified, let alone mitigated. This phase represents the evolution from "secure by design" to "hardened by paranoia."
+AgentShroud v0.9.0 introduces the deepest security hardening phase yet implemented — eight additional security modules that address attack vectors no other AI agent platform has even identified, let alone mitigated. This phase represents the evolution from "secure by design" to "hardened by paranoia."
 
 ### 9.1 Log Sanitizer (gateway/security/log_sanitizer.py)
 
@@ -895,7 +895,7 @@ SecureClaw v0.9.0 introduces the deepest security hardening phase yet implemente
   - `cap_add: SYS_ADMIN` (enables mount operations and other admin functions)
   - `cap_add: NET_RAW` (enables raw socket access)
 
-- **Network isolation verification:** Ensures containers use dedicated networks rather than the default bridge, and validates that sensitive containers (like SecureClaw gateway) are on separate networks from agent containers
+- **Network isolation verification:** Ensures containers use dedicated networks rather than the default bridge, and validates that sensitive containers (like AgentShroud gateway) are on separate networks from agent containers
 
 **Two-network architecture validation:** Confirms the proper isolation pattern where:
 1. External network: gateway ↔ internet/channels
@@ -947,11 +947,11 @@ These eight modules represent security controls that **no other AI agent platfor
 
 **Security philosophy:** The deep hardening phase embodies "paranoid security" — assuming that every data channel, every metadata field, and every system interface could be weaponized by a sophisticated attacker. This level of hardening is typically seen only in classified systems and high-security environments.
 
-**Total coverage:** With the addition of these 8 modules, SecureClaw now implements 26 distinct security controls — more than any other AI agent platform by a factor of 6x. The nearest competitor (Zetherion) implements 4 security controls.
+**Total coverage:** With the addition of these 8 modules, AgentShroud now implements 26 distinct security controls — more than any other AI agent platform by a factor of 6x. The nearest competitor (Zetherion) implements 4 security controls.
 
 ## 10. Security Supply Chain Analysis
 
-SecureClaw's own security posture is only as strong as its dependencies. This section provides a comprehensive security analysis of every component in SecureClaw's supply chain, with security grades and risk assessments.
+AgentShroud's own security posture is only as strong as its dependencies. This section provides a comprehensive security analysis of every component in AgentShroud's supply chain, with security grades and risk assessments.
 
 ### 10.1 Core Runtime Dependencies
 
@@ -1024,12 +1024,12 @@ SecureClaw's own security posture is only as strong as its dependencies. This se
 - **Vulnerability details:** The Wazuh manager deserializes data from cluster nodes without proper validation, allowing arbitrary code execution if an attacker can control cluster traffic
 - **Exploitation status:** **Actively exploited by Mirai botnets in 2025** for DDoS deployment and cryptocurrency mining
 - **Patched version:** v4.9.1 (released February 2026)
-- **SecureClaw mitigation:** 
+- **AgentShroud mitigation:** 
   - **MUST pin Wazuh to v4.9.1 or higher**
   - **Internal network isolation:** Wazuh manager only accessible from container network
-  - **No external exposure:** Wazuh API not exposed outside SecureClaw gateway
+  - **No external exposure:** Wazuh API not exposed outside AgentShroud gateway
 
-**Risk assessment:** Medium-High if unpatched. The RCE vulnerability is severe and actively exploited, but proper network isolation and version pinning reduce risk to manageable levels. SecureClaw deployments MUST verify Wazuh version during startup.
+**Risk assessment:** Medium-High if unpatched. The RCE vulnerability is severe and actively exploited, but proper network isolation and version pinning reduce risk to manageable levels. AgentShroud deployments MUST verify Wazuh version during startup.
 
 **OpenSCAP: Grade A**
 - **Maintainer:** NIST National Institute of Standards and Technology + Red Hat
@@ -1061,15 +1061,15 @@ SecureClaw's own security posture is only as strong as its dependencies. This se
 3. **Quarterly supply chain review** to reassess dependency grades and identify new risks
 4. **Consider dependency alternatives** for any component that drops below Grade B+
 
-The overall supply chain grade for SecureClaw is **A-** (down from A due to the Wazuh CVE, but recoverable with proper patching and isolation).
+The overall supply chain grade for AgentShroud is **A-** (down from A due to the Wazuh CVE, but recoverable with proper patching and isolation).
 
 ## 11. Competitive Security Comparison Matrix
 
-The AI agent security landscape is sparse. SecureClaw implements 26 distinct security modules across gateway-level, container-level, MCP-level, and egress-level controls. The nearest competitor implements 4. This section provides the complete competitive analysis.
+The AI agent security landscape is sparse. AgentShroud implements 26 distinct security modules across gateway-level, container-level, MCP-level, and egress-level controls. The nearest competitor implements 4. This section provides the complete competitive analysis.
 
 ### 11.1 Complete 26-Module Security Matrix
 
-| Security Module | SecureClaw | OpenClaw | NanoClaw | Zetherion | LangChain Agents | AutoGPT | Semantic Kernel | CrewAI | Multi-On | Adept | Others (Avg) |
+| Security Module | AgentShroud | OpenClaw | NanoClaw | Zetherion | LangChain Agents | AutoGPT | Semantic Kernel | CrewAI | Multi-On | Adept | Others (Avg) |
 |---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
 | **Gateway Security (Core)** |
 | 1. PII Sanitizer (Microsoft Presidio) | ✅ | ❌ | ❌ | ❌ | ❌ | ❌ | ❌ | ❌ | ❌ | ❌ | ❌ |
@@ -1108,9 +1108,9 @@ The AI agent security landscape is sparse. SecureClaw implements 26 distinct sec
 - ⚠️ **Partial implementation** or basic version
 - ❌ **Not implemented**
 
-### 11.2 Unique SecureClaw Modules (No Competitor Implementation)
+### 11.2 Unique AgentShroud Modules (No Competitor Implementation)
 
-**Modules 12-26 are UNIQUE to SecureClaw.** No other AI agent platform has identified these attack vectors, let alone implemented countermeasures:
+**Modules 12-26 are UNIQUE to AgentShroud.** No other AI agent platform has identified these attack vectors, let alone implemented countermeasures:
 
 **Container Security (5 unique modules):**
 - Build-time CVE scanning integrated into deployment
@@ -1150,25 +1150,25 @@ The AI agent security landscape is sparse. SecureClaw implements 26 distinct sec
 
 ### 11.4 Security Coverage Gap Analysis
 
-**Industry gap:** The average AI agent platform implements **0.36 security modules** (4 total across 11 platforms). SecureClaw implements **26 modules** — a **72x difference** in security coverage.
+**Industry gap:** The average AI agent platform implements **0.36 security modules** (4 total across 11 platforms). AgentShroud implements **26 modules** — a **72x difference** in security coverage.
 
 **Attack vector coverage:**
-- **Data protection:** Only SecureClaw prevents PII exfiltration, credential leaks, or data tampering
-- **Behavioral control:** Only SecureClaw provides approval workflows, trust management, or kill switches
-- **Infrastructure security:** Only SecureClaw provides container hardening, malware detection, or compliance scanning
-- **Advanced threats:** Only SecureClaw defends against prompt injection, context poisoning, or supply chain attacks
+- **Data protection:** Only AgentShroud prevents PII exfiltration, credential leaks, or data tampering
+- **Behavioral control:** Only AgentShroud provides approval workflows, trust management, or kill switches
+- **Infrastructure security:** Only AgentShroud provides container hardening, malware detection, or compliance scanning
+- **Advanced threats:** Only AgentShroud defends against prompt injection, context poisoning, or supply chain attacks
 
 **Compliance readiness:**
-- **GDPR/CCPA:** Only SecureClaw provides PII sanitization required for data protection compliance
-- **EU AI Act:** Only SecureClaw provides audit trails and human oversight required for high-risk AI systems
-- **Enterprise security:** Only SecureClaw provides the depth of controls expected in enterprise environments
-- **Government/classified:** Only SecureClaw provides hardening appropriate for sensitive environments
+- **GDPR/CCPA:** Only AgentShroud provides PII sanitization required for data protection compliance
+- **EU AI Act:** Only AgentShroud provides audit trails and human oversight required for high-risk AI systems
+- **Enterprise security:** Only AgentShroud provides the depth of controls expected in enterprise environments
+- **Government/classified:** Only AgentShroud provides hardening appropriate for sensitive environments
 
 ### 11.5 Security Score Evolution
 
-**SecureClaw Security Score: 10.0/10.0** (up from 9.5 in v0.4.0)
+**AgentShroud Security Score: 10.0/10.0** (up from 9.5 in v0.4.0)
 
-The addition of the Deep Security Hardening modules (v0.9.0) brings SecureClaw's security score to the maximum 10.0. This represents comprehensive coverage across all identified attack vectors with defense-in-depth implementation:
+The addition of the Deep Security Hardening modules (v0.9.0) brings AgentShroud's security score to the maximum 10.0. This represents comprehensive coverage across all identified attack vectors with defense-in-depth implementation:
 
 - **Gateway security:** Complete (6/6 core modules + 5/5 advanced modules)
 - **Container security:** Complete (6/6 modules covering build-to-runtime lifecycle)
@@ -1187,9 +1187,9 @@ The 26-module security matrix reveals a stark reality: **the AI agent industry h
 
 **This is not sustainable.** As AI agents gain access to increasingly sensitive systems — email, financial accounts, corporate databases, cloud infrastructure — the lack of security controls represents an existential risk to adoption.
 
-**SecureClaw exists to bridge this gap** by providing enterprise-grade security controls that wrap existing agent platforms without requiring forks or modifications. Organizations can continue using their preferred agent platform (OpenClaw, NanoClaw, or custom solutions) while gaining comprehensive security coverage.
+**AgentShroud exists to bridge this gap** by providing enterprise-grade security controls that wrap existing agent platforms without requiring forks or modifications. Organizations can continue using their preferred agent platform (OpenClaw, NanoClaw, or custom solutions) while gaining comprehensive security coverage.
 
-**The security delta is not incremental — it's categorical.** SecureClaw doesn't just implement more security modules; it implements an entirely different approach to AI agent security based on defense-in-depth, transparent proxying, and comprehensive threat modeling.
+**The security delta is not incremental — it's categorical.** AgentShroud doesn't just implement more security modules; it implements an entirely different approach to AI agent security based on defense-in-depth, transparent proxying, and comprehensive threat modeling.
 
 ## 12. Roadmap
 
@@ -1224,11 +1224,11 @@ The 26-module security matrix reveals a stark reality: **the AI agent industry h
 
 AI agents are the most powerful — and most underprotected — software systems being deployed today. They have broad access, unpredictable behavior, and virtually no security controls. The industry's current approach of "deploy and hope" is not sustainable.
 
-SecureClaw exists because security shouldn't be optional, and it shouldn't require forking your agent platform. By operating as a transparent proxy, SecureClaw adds 26 enterprise-grade security modules to any AI agent without touching a single line of agent code. PII never reaches the model. Every action is logged in a tamper-evident chain. Dangerous operations require human approval. And when something goes wrong, you have a kill switch — not a frantic search through Docker containers.
+AgentShroud exists because security shouldn't be optional, and it shouldn't require forking your agent platform. By operating as a transparent proxy, AgentShroud adds 26 enterprise-grade security modules to any AI agent without touching a single line of agent code. PII never reaches the model. Every action is logged in a tamper-evident chain. Dangerous operations require human approval. And when something goes wrong, you have a kill switch — not a frantic search through Docker containers.
 
 The entire stack is open source, runs on a Raspberry Pi, and has 951 tests at 92%+ coverage. It's real, it's tested, and it's available today.
 
-If you're deploying AI agents in production — whether for personal use, for your team, or for your enterprise — you need a security layer. SecureClaw is that layer.
+If you're deploying AI agents in production — whether for personal use, for your team, or for your enterprise — you need a security layer. AgentShroud is that layer.
 
 **Get started:** [github.com/idallasj/oneclaw](https://github.com/idallasj/oneclaw)
 **Questions:** Open an issue on GitHub
@@ -1236,4 +1236,4 @@ If you're deploying AI agents in production — whether for personal use, for yo
 
 ---
 
-*SecureClaw is open-source software released under the MIT License. This white paper reflects the state of the project as of February 2026 (v0.9.0, Deep Security Hardening complete). All phases through 11 are implemented and tested (951 tests). Features marked as "Planned" are on the roadmap but not yet implemented.*
+*AgentShroud is open-source software released under the MIT License. This white paper reflects the state of the project as of February 2026 (v0.9.0, Deep Security Hardening complete). All phases through 11 are implemented and tested (951 tests). Features marked as "Planned" are on the roadmap but not yet implemented.*

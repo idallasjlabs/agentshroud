@@ -1,10 +1,10 @@
 # Security Supply Chain Analysis
 
-**SecureClaw v0.9.0 — February 2026**
+**AgentShroud v0.9.0 — February 2026**
 
 ## Overview
 
-"Who watches the watchmen?" SecureClaw's security is only as strong as the tools and libraries it's built on. This document profiles every critical dependency in our security toolchain.
+"Who watches the watchmen?" AgentShroud's security is only as strong as the tools and libraries it's built on. This document profiles every critical dependency in our security toolchain.
 
 ## Verdict Summary
 
