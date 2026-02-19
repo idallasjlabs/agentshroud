@@ -47,7 +47,7 @@ if op_authenticate 2>/dev/null; then
     # Item title contains '@' which breaks op:// URIs — use item ID instead
     # Item ID: 6j6ij5tzld6kobvit5tk6ufrhq (Brave Search API - therealidallasj@gmail.com)
     BRAVE_API_KEY="$(op read --session "$OP_SESSION" \
-        "op://SecureClaw Bot Credentials/6j6ij5tzld6kobvit5tk6ufrhq/brach search api key" 2>/dev/null)" || true
+        "op://AgentShroud Bot Credentials/6j6ij5tzld6kobvit5tk6ufrhq/brach search api key" 2>/dev/null)" || true
     if [ -n "$BRAVE_API_KEY" ]; then
         export BRAVE_API_KEY
         echo "[startup] ✓ Loaded Brave Search API key"
@@ -61,7 +61,7 @@ if op_authenticate 2>/dev/null; then
     # calling 1Password, so callers must never log the return value of get-credential.
     # Item ID: he6wcfkfieekqkomuxdunal2xa (Gmail - therealidallasj)
     GMAIL_APP_PASSWORD="$(op read --session "$OP_SESSION" \
-        "op://SecureClaw Bot Credentials/he6wcfkfieekqkomuxdunal2xa/openclaw bot password" 2>/dev/null)" || true
+        "op://AgentShroud Bot Credentials/he6wcfkfieekqkomuxdunal2xa/openclaw bot password" 2>/dev/null)" || true
     if [ -n "$GMAIL_APP_PASSWORD" ]; then
         export GMAIL_APP_PASSWORD
         echo "[startup] ✓ Loaded Gmail app password"
@@ -70,7 +70,7 @@ if op_authenticate 2>/dev/null; then
     fi
 
     GMAIL_USERNAME="$(op read --session "$OP_SESSION" \
-        "op://SecureClaw Bot Credentials/he6wcfkfieekqkomuxdunal2xa/username" 2>/dev/null)" || true
+        "op://AgentShroud Bot Credentials/he6wcfkfieekqkomuxdunal2xa/username" 2>/dev/null)" || true
     if [ -n "$GMAIL_USERNAME" ]; then
         export GMAIL_USERNAME
         echo "[startup] ✓ Loaded Gmail username"

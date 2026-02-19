@@ -410,9 +410,9 @@ class TestRuntimeConfig:
     def test_from_env_set(self):
         from gateway.runtime.config import RuntimeConfig
         with patch.dict(os.environ, {
-            "SECURECLAW_RUNTIME": "podman",
-            "SECURECLAW_ROOTLESS": "true",
-            "SECURECLAW_COMPOSE_FILE": "custom.yml",
+            "AGENTSHROUD_RUNTIME": "podman",
+            "AGENTSHROUD_ROOTLESS": "true",
+            "AGENTSHROUD_COMPOSE_FILE": "custom.yml",
         }):
             config = RuntimeConfig.from_env()
             assert config.runtime == "podman"
@@ -632,7 +632,7 @@ class TestWebAPI:
     def test_stop_service(self, mock_engine, client):
         eng = MagicMock()
         mock_engine.return_value = eng
-        resp = client.post("/api/services/secureclaw-gateway/stop")
+        resp = client.post("/api/services/agentshroud-gateway/stop")
         assert resp.status_code == 200
 
     @patch("gateway.web.api._get_engine")
@@ -666,7 +666,7 @@ class TestWebAPI:
         eng = MagicMock()
         eng.logs.return_value = "line1\nline2"
         mock_engine.return_value = eng
-        resp = client.get("/api/logs?service=secureclaw-gateway&tail=10")
+        resp = client.get("/api/logs?service=agentshroud-gateway&tail=10")
         assert resp.status_code == 200
         assert "logs" in resp.json()
 
@@ -686,7 +686,7 @@ class TestWebAPI:
     @patch("subprocess.run")
     def test_check_secureclaw_updates(self, mock_run, client):
         mock_run.return_value = MagicMock(stdout="abc1234\n", returncode=0)
-        resp = client.get("/api/updates/secureclaw")
+        resp = client.get("/api/updates/agentshroud")
         assert resp.status_code == 200
 
     def test_update_history(self, client):
@@ -748,7 +748,7 @@ class TestInstallerAPI:
     def test_installer_page(self, client):
         resp = client.get("/install/")
         assert resp.status_code == 200
-        assert "SecureClaw" in resp.text
+        assert "AgentShroud" in resp.text
 
 
 class TestManagementPage:
@@ -764,7 +764,7 @@ class TestManagementPage:
     def test_dashboard_page(self, client):
         resp = client.get("/manage/")
         assert resp.status_code == 200
-        assert "SecureClaw" in resp.text
+        assert "AgentShroud" in resp.text
         assert "Dashboard" in resp.text
 
 

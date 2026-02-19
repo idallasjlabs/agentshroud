@@ -1,4 +1,4 @@
-"""Event Bus for SecureClaw Gateway
+"""Event Bus for AgentShroud Gateway
 
 Simple in-process pub/sub event bus for broadcasting gateway events
 to WebSocket clients and other subscribers.
@@ -12,7 +12,7 @@ from dataclasses import dataclass, field, asdict
 from datetime import datetime, timezone
 from typing import Any, Callable, Coroutine
 
-logger = logging.getLogger("secureclaw.gateway.event_bus")
+logger = logging.getLogger("agentshroud.gateway.event_bus")
 
 
 @dataclass

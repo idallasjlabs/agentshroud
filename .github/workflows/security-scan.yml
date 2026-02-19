@@ -18,12 +18,12 @@ jobs:
       - uses: actions/checkout@v4
 
       - name: Build Gateway Image
-        run: docker build -t secureclaw-gateway:scan -f gateway/Dockerfile .
+        run: docker build -t agentshroud-gateway:scan -f gateway/Dockerfile .
 
       - name: Run Trivy on Gateway Image
         uses: aquasecurity/trivy-action@master
         with:
-          image-ref: secureclaw-gateway:scan
+          image-ref: agentshroud-gateway:scan
           format: sarif
           output: trivy-gateway.sarif
           severity: CRITICAL,HIGH
@@ -37,12 +37,12 @@ jobs:
           category: trivy-gateway
 
       - name: Build OpenClaw Image
-        run: docker build -t secureclaw-openclaw:scan -f docker/Dockerfile.openclaw .
+        run: docker build -t agentshroud-openclaw:scan -f docker/Dockerfile.openclaw .
 
       - name: Run Trivy on OpenClaw Image
         uses: aquasecurity/trivy-action@master
         with:
-          image-ref: secureclaw-openclaw:scan
+          image-ref: agentshroud-openclaw:scan
           format: sarif
           output: trivy-openclaw.sarif
           severity: CRITICAL,HIGH

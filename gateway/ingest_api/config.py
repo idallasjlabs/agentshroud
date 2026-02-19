@@ -1,6 +1,6 @@
-"""Configuration loader for SecureClaw Gateway
+"""Configuration loader for AgentShroud Gateway
 
-Loads configuration from secureclaw.yaml and provides typed access via Pydantic models.
+Loads configuration from agentshroud.yaml and provides typed access via Pydantic models.
 """
 
 import logging
@@ -14,7 +14,7 @@ from pydantic import BaseModel, Field, field_validator
 from .ssh_config import SSHConfig
 from pydantic_settings import BaseSettings
 
-logger = logging.getLogger("secureclaw.gateway.config")
+logger = logging.getLogger("agentshroud.gateway.config")
 
 
 class PIIConfig(BaseModel):
@@ -108,7 +108,7 @@ class GatewayConfig(BaseModel):
 
 
 def _entity_type_mapping(yaml_type: str) -> str:
-    """Map secureclaw.yaml entity names to Presidio/internal entity names"""
+    """Map agentshroud.yaml entity names to Presidio/internal entity names"""
     mapping = {
         "SSN": "US_SSN",
         "CREDIT_CARD": "CREDIT_CARD",
@@ -120,13 +120,13 @@ def _entity_type_mapping(yaml_type: str) -> str:
 
 
 def load_config(config_path: Path | None = None) -> GatewayConfig:
-    """Load and validate configuration from secureclaw.yaml
+    """Load and validate configuration from agentshroud.yaml
 
     Search order:
     1. Explicit path argument
-    2. SECURECLAW_CONFIG environment variable
-    3. ./secureclaw.yaml (relative to CWD)
-    4. ../secureclaw.yaml (for when running from gateway/)
+    2. AGENTSHROUD_CONFIG environment variable
+    3. ./agentshroud.yaml (relative to CWD)
+    4. ../agentshroud.yaml (for when running from gateway/)
 
     If auth_token is empty, generates a cryptographically random 32-byte
     hex token and logs it to stdout (once) so the user can configure their
@@ -147,16 +147,16 @@ def load_config(config_path: Path | None = None) -> GatewayConfig:
     # Determine config file path
     if config_path:
         path = config_path
-    elif env_path := os.getenv("SECURECLAW_CONFIG"):
+    elif env_path := os.getenv("AGENTSHROUD_CONFIG"):
         path = Path(env_path)
-    elif Path("secureclaw.yaml").exists():
-        path = Path("secureclaw.yaml")
-    elif Path("../secureclaw.yaml").exists():
-        path = Path("../secureclaw.yaml")
+    elif Path("agentshroud.yaml").exists():
+        path = Path("agentshroud.yaml")
+    elif Path("../agentshroud.yaml").exists():
+        path = Path("../agentshroud.yaml")
     else:
         raise FileNotFoundError(
-            "No secureclaw.yaml found. Searched: "
-            "./secureclaw.yaml, ../secureclaw.yaml, $SECURECLAW_CONFIG"
+            "No agentshroud.yaml found. Searched: "
+            "./agentshroud.yaml, ../agentshroud.yaml, $AGENTSHROUD_CONFIG"
         )
 
     logger.info(f"Loading configuration from {path.absolute()}")
@@ -224,9 +224,9 @@ def load_config(config_path: Path | None = None) -> GatewayConfig:
         auth_token = secrets.token_hex(32)
         logger.warning(
             "\n" + "=" * 80 + "\n"
-            "No auth_token found in secureclaw.yaml. Generated new token:\n\n"
+            "No auth_token found in agentshroud.yaml. Generated new token:\n\n"
             f"    {auth_token}\n\n"
-            "Add this to secureclaw.yaml under gateway.auth_token or use it for this session.\n"
+            "Add this to agentshroud.yaml under gateway.auth_token or use it for this session.\n"
             "Save this token for your iOS Shortcuts and browser extension.\n"
             + "=" * 80
         )

@@ -1,9 +1,9 @@
 /**
- * SecureClaw API Client
+ * AgentShroud API Client
  * Handles all API communication, WebSocket connections, and shared functionality
  */
 
-class SecureClawAPI {
+class AgentShroudAPI {
   constructor(options = {}) {
     this.baseURL = options.baseURL || 'http://localhost:8080';
     this.wsURL = options.wsURL || 'ws://localhost:8081/ws';
@@ -279,9 +279,9 @@ class SecureClawAPI {
 
     let compose = `version: '3.8'
 services:
-  secureclaw-gateway:
-    image: secureclaw/gateway:latest
-    container_name: secureclaw-gateway
+  agentshroud-gateway:
+    image: agentshroud/gateway:latest
+    container_name: agentshroud-gateway
     restart: unless-stopped
     ports:
       - "${gatewayPort}:8080"
@@ -307,30 +307,30 @@ services:
     }
 
     compose += `
-  secureclaw-monitor:
-    image: secureclaw/monitor:latest
-    container_name: secureclaw-monitor
+  agentshroud-monitor:
+    image: agentshroud/monitor:latest
+    container_name: agentshroud-monitor
     restart: unless-stopped
     depends_on:
-      - secureclaw-gateway
+      - agentshroud-gateway
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock:ro
     environment:
-      - GATEWAY_URL=http://secureclaw-gateway:8080
+      - GATEWAY_URL=http://agentshroud-gateway:8080
 `;
 
     if (securityMode === 'sidecar') {
       compose += `
-  secureclaw-proxy:
-    image: secureclaw/proxy:latest
-    container_name: secureclaw-proxy
+  agentshroud-proxy:
+    image: agentshroud/proxy:latest
+    container_name: agentshroud-proxy
     restart: unless-stopped
     ports:
       - "3128:3128"
     depends_on:
-      - secureclaw-gateway
+      - agentshroud-gateway
     environment:
-      - GATEWAY_URL=http://secureclaw-gateway:8080
+      - GATEWAY_URL=http://agentshroud-gateway:8080
 `;
     }
 
@@ -642,6 +642,6 @@ const UIUtils = {
 
 // Export for use in other files
 if (typeof window !== 'undefined') {
-  window.SecureClawAPI = SecureClawAPI;
+  window.AgentShroudAPI = AgentShroudAPI;
   window.UIUtils = UIUtils;
 }

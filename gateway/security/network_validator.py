@@ -49,7 +49,7 @@ class NetworkValidator:
         self.docker_client = None
         self.findings: List[NetworkSecurityFinding] = []
         self.expected_networks = {
-            'openclaw_internal',  # Internal network for SecureClaw components
+            'openclaw_internal',  # Internal network for AgentShroud components
             'openclaw_external',  # External network for internet access
             'default'            # Docker default network
         }

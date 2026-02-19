@@ -1,4 +1,4 @@
-"""SSH Proxy module for SecureClaw Gateway
+"""SSH Proxy module for AgentShroud Gateway
 
 Executes SSH commands via asyncio subprocess with validation and timeout enforcement.
 """

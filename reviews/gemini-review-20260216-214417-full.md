@@ -17,17 +17,17 @@ Here's a detailed review:
 ### `.claude/scripts/deploy-claude-skills.sh`
 
 *   **LOW** .claude/scripts/deploy-claude-skills.sh:114 — Reduced detailed production testing guidance
-    The previous `qa/SKILL.md` contained extensive, detailed production testing procedures (e.g., using `_test/` prefixes, `SAVEPOINT`s, `_test_flag` columns, specific AWS CLI commands for testing and cleanup). While the new `sec/SKILL.md` focuses on high-level security principles, the practical, step-by-step guidance for *safely* testing changes in a production-like environment (which is a critical security concern for SecureClaw) appears to be largely removed. This could lead to less secure testing practices if developers lack explicit instructions.
+    The previous `qa/SKILL.md` contained extensive, detailed production testing procedures (e.g., using `_test/` prefixes, `SAVEPOINT`s, `_test_flag` columns, specific AWS CLI commands for testing and cleanup). While the new `sec/SKILL.md` focuses on high-level security principles, the practical, step-by-step guidance for *safely* testing changes in a production-like environment (which is a critical security concern for AgentShroud) appears to be largely removed. This could lead to less secure testing practices if developers lack explicit instructions.
     Suggested fix: Consider creating a separate "Production Testing" skill or integrating key, actionable safety procedures into the `sec/SKILL.md` or `cr/SKILL.md` to ensure developers have clear, secure guidelines for validating changes in sensitive environments.
 
 *   **INFO** .claude/scripts/deploy-claude-skills.sh:114 — Improved skill focus and conciseness
-    The new set of skills (`tdd`, `sec`, `cr`, `env`, `pm`) is more concise and directly aligned with the SecureClaw project's needs, especially the dedicated `sec/SKILL.md`. This will help the AI agent stay focused and reduce context window pressure.
+    The new set of skills (`tdd`, `sec`, `cr`, `env`, `pm`) is more concise and directly aligned with the AgentShroud project's needs, especially the dedicated `sec/SKILL.md`. This will help the AI agent stay focused and reduce context window pressure.
     Suggested fix: None, this is a positive change.
 
 ### `.claude/scripts/missing/deploy-claude-skills.sh`
 
 *   **INFO** .claude/scripts/missing/deploy-claude-skills.sh — Removal of redundant skill deployment script
-    The deletion of this script is appropriate as its functionality is either replaced or deemed unnecessary for the new SecureClaw skill set.
+    The deletion of this script is appropriate as its functionality is either replaced or deemed unnecessary for the new AgentShroud skill set.
     Suggested fix: None.
 
 ### `.gitignore`

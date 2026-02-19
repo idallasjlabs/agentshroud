@@ -9,11 +9,11 @@
 
 ```
 ======================================
-SecureClaw Security Verification
+AgentShroud Security Verification
 ======================================
 
 [1/13] Checking non-root users...
-✓ Gateway running as non-root user: secureclaw
+✓ Gateway running as non-root user: agentshroud
 ✓ OpenClaw running as non-root user: node
 
 [2/13] Checking read-only root filesystem...
@@ -49,8 +49,8 @@ SecureClaw Security Verification
 ✓ OpenClaw has Gateway password secret mounted
 
 [10/13] Checking network isolation...
-✓ Gateway on secureclaw-internal network
-✓ OpenClaw on secureclaw-isolated network
+✓ Gateway on agentshroud-internal network
+✓ OpenClaw on agentshroud-isolated network
 ✓ OpenClaw NOT on external network (properly isolated)
 
 [11/13] Checking container health...
@@ -99,7 +99,7 @@ Some security features are disabled (expected during development).
 ```
 NAME                 IMAGE             COMMAND                  SERVICE    CREATED         STATUS
 openclaw-bot         docker-openclaw   "docker-entrypoint.s…"   openclaw   5 minutes ago   Up (healthy)
-secureclaw-gateway   docker-gateway    "uvicorn gateway.ing…"   gateway    5 minutes ago   Up (healthy)
+agentshroud-gateway   docker-gateway    "uvicorn gateway.ing…"   gateway    5 minutes ago   Up (healthy)
 ```
 
 ### OpenClaw Bot Logs (Recent)
@@ -109,7 +109,7 @@ secureclaw-gateway   docker-gateway    "uvicorn gateway.ing…"   gateway    5 m
 [startup] Loaded Anthropic API key
 [startup] ✓ Signed in to 1Password successfully
 [startup] ✓ 1Password vault access confirmed
-[startup] Available vaults: Private,SecureClaw,Shared
+[startup] Available vaults: Private,AgentShroud,Shared
 [startup] Starting OpenClaw gateway...
 [gateway] agent model: anthropic/claude-opus-4-6
 [gateway] listening on ws://0.0.0.0:18789 (PID 53)

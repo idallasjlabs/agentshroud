@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SecureClaw Setup Wizard</title>
+    <title>AgentShroud Setup Wizard</title>
     <link rel="stylesheet" href="styles.css">
     <style>
         .wizard-container {
@@ -158,12 +158,12 @@
         <!-- Step 1: Welcome -->
         <div class="wizard-step active" id="step-1">
             <div class="card">
-                <h1 class="text-center">Welcome to SecureClaw</h1>
+                <h1 class="text-center">Welcome to AgentShroud</h1>
                 <div class="text-center mb-3">
                     <div style="font-size: 4rem; margin: 1rem 0;">🔒</div>
                 </div>
                 <p class="text-center">
-                    SecureClaw is an AI agent security framework that provides comprehensive monitoring,
+                    AgentShroud is an AI agent security framework that provides comprehensive monitoring,
                     audit trails, and protective measures for your AI systems.
                 </p>
                 
@@ -239,7 +239,7 @@
                     <div class="grid grid-2">
                         <div class="runtime-option" data-mode="proxy" onclick="selectMode(this, 'proxy')">
                             <h4>🌐 Proxy Mode</h4>
-                            <p>Routes traffic through SecureClaw proxy for inspection</p>
+                            <p>Routes traffic through AgentShroud proxy for inspection</p>
                             <small style="color: var(--text-muted);">Recommended for most users</small>
                         </div>
                         <div class="runtime-option" data-mode="sidecar" onclick="selectMode(this, 'sidecar')">
@@ -315,7 +315,7 @@
                     <ol style="color: var(--text-secondary); margin-left: 1.5rem;">
                         <li>Go to your 1Password Business console</li>
                         <li>Navigate to Integrations → Service Accounts</li>
-                        <li>Create a new service account named "SecureClaw"</li>
+                        <li>Create a new service account named "AgentShroud"</li>
                         <li>Grant access to the vault containing your credentials</li>
                         <li>Copy the service account token below</li>
                     </ol>
@@ -339,23 +339,23 @@
                     <p>Create the following directory structure and files:</p>
                     
                     <div class="command-box">
-                        <button class="copy-btn" onclick="copyToClipboard(this, 'mkdir -p ~/.secureclaw/secrets')">📋</button>
-mkdir -p ~/.secureclaw/secrets
+                        <button class="copy-btn" onclick="copyToClipboard(this, 'mkdir -p ~/.agentshroud/secrets')">📋</button>
+mkdir -p ~/.agentshroud/secrets
                     </div>
 
                     <div class="form-group">
                         <label class="form-label">Common Secret Files:</label>
                         <div style="color: var(--text-secondary);">
-                            <p><code>~/.secureclaw/secrets/openai_api_key</code> - OpenAI API key</p>
-                            <p><code>~/.secureclaw/secrets/anthropic_api_key</code> - Anthropic API key</p>
-                            <p><code>~/.secureclaw/secrets/gmail_password</code> - Gmail app password</p>
+                            <p><code>~/.agentshroud/secrets/openai_api_key</code> - OpenAI API key</p>
+                            <p><code>~/.agentshroud/secrets/anthropic_api_key</code> - Anthropic API key</p>
+                            <p><code>~/.agentshroud/secrets/gmail_password</code> - Gmail app password</p>
                         </div>
                     </div>
 
                     <div class="command-box">
-                        <button class="copy-btn" onclick="copyToClipboard(this, 'echo \"your-api-key\" > ~/.secureclaw/secrets/openai_api_key')">📋</button>
-echo "your-api-key" > ~/.secureclaw/secrets/openai_api_key
-chmod 600 ~/.secureclaw/secrets/openai_api_key
+                        <button class="copy-btn" onclick="copyToClipboard(this, 'echo \"your-api-key\" > ~/.agentshroud/secrets/openai_api_key')">📋</button>
+echo "your-api-key" > ~/.agentshroud/secrets/openai_api_key
+chmod 600 ~/.agentshroud/secrets/openai_api_key
                     </div>
                 </div>
 
@@ -369,7 +369,7 @@ chmod 600 ~/.secureclaw/secrets/openai_api_key
         <!-- Step 5: Deploy -->
         <div class="wizard-step" id="step-5">
             <div class="card">
-                <h2>Deploy SecureClaw</h2>
+                <h2>Deploy AgentShroud</h2>
                 <p>We'll generate the deployment configuration and start the containers.</p>
 
                 <div class="card">
@@ -381,8 +381,8 @@ chmod 600 ~/.secureclaw/secrets/openai_api_key
                 </div>
 
                 <div class="text-center mb-3">
-                    <button class="btn btn-success btn-lg" onclick="deploySecureClaw()" id="deploy-btn">
-                        🚀 Deploy SecureClaw
+                    <button class="btn btn-success btn-lg" onclick="deployAgentShroud()" id="deploy-btn">
+                        🚀 Deploy AgentShroud
                     </button>
                 </div>
 
@@ -434,19 +434,19 @@ chmod 600 ~/.secureclaw/secrets/openai_api_key
             <div class="card text-center">
                 <div style="font-size: 4rem; margin: 1rem 0;">🎉</div>
                 <h1>Setup Complete!</h1>
-                <p>SecureClaw has been successfully installed and is now protecting your AI systems.</p>
+                <p>AgentShroud has been successfully installed and is now protecting your AI systems.</p>
 
                 <div class="grid grid-2 mt-3">
                     <div class="card">
                         <h3>🎛️ Management Dashboard</h3>
-                        <p>Monitor and configure your SecureClaw deployment</p>
+                        <p>Monitor and configure your AgentShroud deployment</p>
                         <button class="btn btn-primary" onclick="openDashboard()">
                             Open Dashboard
                         </button>
                     </div>
                     <div class="card">
                         <h3>📚 Documentation</h3>
-                        <p>Learn more about SecureClaw features and configuration</p>
+                        <p>Learn more about AgentShroud features and configuration</p>
                         <button class="btn" onclick="openDocs()">
                             View Documentation
                         </button>
@@ -501,7 +501,7 @@ chmod 600 ~/.secureclaw/secrets/openai_api_key
 
         // Initialize API client
         document.addEventListener('DOMContentLoaded', function() {
-            api = new SecureClawAPI();
+            api = new AgentShroudAPI();
         });
 
         function nextStep() {
@@ -664,7 +664,7 @@ ${compose}`;
             return command;
         }
 
-        async function deploySecureClaw() {
+        async function deployAgentShroud() {
             const btn = document.getElementById('deploy-btn');
             const resetBtn = UIUtils.showButtonLoading(btn, 'Deploying...');
             
@@ -675,7 +675,7 @@ ${compose}`;
             try {
                 // Simulate deployment progress
                 const steps = [
-                    'Pulling SecureClaw images...',
+                    'Pulling AgentShroud images...',
                     'Creating containers...',
                     'Starting gateway service...',
                     'Starting monitor service...',
@@ -694,7 +694,7 @@ ${compose}`;
                     await new Promise(resolve => setTimeout(resolve, 1000));
                 }
 
-                UIUtils.showToast('SecureClaw deployed successfully!', 'success');
+                UIUtils.showToast('AgentShroud deployed successfully!', 'success');
                 document.getElementById('deploy-next').disabled = false;
                 
             } catch (error) {
@@ -750,7 +750,7 @@ ${compose}`;
         }
 
         function openDocs() {
-            window.open('https://docs.secureclaw.io', '_blank');
+            window.open('https://docs.agentshroud.io', '_blank');
         }
 
         function getGatewayURL() {

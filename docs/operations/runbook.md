@@ -1,12 +1,12 @@
-# SecureClaw Operations Runbook
+# AgentShroud Operations Runbook
 
-This runbook provides step-by-step procedures for operating SecureClaw in production environments.
+This runbook provides step-by-step procedures for operating AgentShroud in production environments.
 
 ## System Architecture Overview
 
 ```
 ┌─────────────────┐    ┌──────────────────┐    ┌─────────────────┐
-│   External      │    │   SecureClaw     │    │   OpenClaw      │
+│   External      │    │   AgentShroud     │    │   OpenClaw      │
 │   Clients       │───▶│   Gateway        │───▶│   Container     │
 │                 │    │   (Port 8443)    │    │   (Port 8000)   │
 └─────────────────┘    └──────────────────┘    └─────────────────┘
@@ -19,19 +19,19 @@ This runbook provides step-by-step procedures for operating SecureClaw in produc
                        └─────────────────┘
 ```
 
-## 1. Starting and Stopping SecureClaw
+## 1. Starting and Stopping AgentShroud
 
 ### Starting the System
 
 **Standard startup sequence:**
 
 ```bash
-# 1. Navigate to SecureClaw directory
-cd /path/to/secureclaw
+# 1. Navigate to AgentShroud directory
+cd /path/to/agentshroud
 
 # 2. Verify configuration files exist
 ls -la config/
-# Should see: secureclaw.yaml, egress-config.yml, mcp-config.yml
+# Should see: agentshroud.yaml, egress-config.yml, mcp-config.yml
 
 # 3. Check Docker secrets are available
 docker secret ls
@@ -45,7 +45,7 @@ docker compose ps
 # All services should show "Up" status
 
 # 6. Check logs for startup errors
-docker compose logs -f secureclaw
+docker compose logs -f agentshroud
 ```
 
 **Alternative: Manual service start**
@@ -55,10 +55,10 @@ docker compose logs -f secureclaw
 docker compose up -d db
 
 # Wait for database readiness
-docker compose exec db sqlite3 /data/secureclaw.db ".databases"
+docker compose exec db sqlite3 /data/agentshroud.db ".databases"
 
-# Start SecureClaw gateway
-docker compose up -d secureclaw
+# Start AgentShroud gateway
+docker compose up -d agentshroud
 
 # Start monitoring
 docker compose up -d prometheus grafana
@@ -75,7 +75,7 @@ curl -X POST https://localhost:8443/admin/kill-switch \
   -d '{"mode": "soft_kill", "reason": "maintenance"}'
 
 # 2. Wait for active requests to complete (check dashboard)
-# Monitor: https://localhost:3000/d/secureclaw
+# Monitor: https://localhost:3000/d/agentshroud
 
 # 3. Stop services gracefully
 docker compose stop
@@ -99,7 +99,7 @@ docker compose down
 docker compose restart
 
 # Restart specific service
-docker compose restart secureclaw
+docker compose restart agentshroud
 
 # Restart with configuration reload
 docker compose down
@@ -136,9 +136,9 @@ curl -s https://localhost:8443/health/detailed | jq '.'
 
 ```bash
 # Database connectivity
-docker compose exec secureclaw python -c "
+docker compose exec agentshroud python -c "
 import sqlite3
-conn = sqlite3.connect('/data/secureclaw.db')
+conn = sqlite3.connect('/data/agentshroud.db')
 print(f'Tables: {conn.execute(\"SELECT name FROM sqlite_master WHERE type=\\\"table\\\"\").fetchall()}')
 conn.close()
 print('Database: OK')
@@ -167,7 +167,7 @@ open https://localhost:3000
 # Pass: admin
 
 # Key dashboards:
-# - SecureClaw Overview: System metrics, request rates
+# - AgentShroud Overview: System metrics, request rates
 # - Security Events: Blocked requests, violations
 # - Audit Trail: Recent audit entries, trust levels
 # - Performance: Response times, resource usage
@@ -177,7 +177,7 @@ open https://localhost:3000
 
 ```bash
 # Direct metrics access
-curl -s http://localhost:9090/metrics | grep secureclaw
+curl -s http://localhost:9090/metrics | grep agentshroud
 
 # Key metrics to monitor:
 # secureclaw_requests_total
@@ -195,7 +195,7 @@ curl -s http://localhost:9090/metrics | grep secureclaw
 
 ```bash
 # Connect to audit database
-docker compose exec secureclaw sqlite3 /data/secureclaw.db
+docker compose exec agentshroud sqlite3 /data/agentshroud.db
 
 # Recent audit entries
 .mode column
@@ -220,13 +220,13 @@ ORDER BY ae.timestamp DESC;
 
 ```bash
 # Real-time log monitoring
-docker compose logs -f secureclaw
+docker compose logs -f agentshroud
 
 # Filter by log level
-docker compose logs secureclaw 2>&1 | grep "ERROR\|WARN"
+docker compose logs agentshroud 2>&1 | grep "ERROR\|WARN"
 
 # Export logs for analysis
-docker compose logs --since "24h" secureclaw > secureclaw-logs-$(date +%Y%m%d).txt
+docker compose logs --since "24h" agentshroud > agentshroud-logs-$(date +%Y%m%d).txt
 ```
 
 ### Web Interface Access
@@ -276,7 +276,7 @@ curl -s -H "Authorization: Bearer $ADMIN_TOKEN" \
 
 # Response actions:
 # 1. Verify trigger reason in logs
-docker compose logs secureclaw | grep -i "kill.*switch"
+docker compose logs agentshroud | grep -i "kill.*switch"
 
 # 2. Check for ongoing threats
 curl -s -H "Authorization: Bearer $ADMIN_TOKEN" \
@@ -304,7 +304,7 @@ curl -X POST -H "Authorization: Bearer $ADMIN_TOKEN" \
   -d '{"mode": "hard_kill", "reason": "audit_integrity_failure"}'
 
 # 2. Export audit logs before any changes
-docker compose exec secureclaw sqlite3 /data/secureclaw.db \
+docker compose exec agentshroud sqlite3 /data/agentshroud.db \
   ".output audit_backup_$(date +%Y%m%d_%H%M%S).sql" \
   ".dump audit_entries"
 
@@ -388,7 +388,7 @@ curl -s -H "Authorization: Bearer $ADMIN_TOKEN" \
 # 1. Generate new certificates
 openssl req -x509 -newkey rsa:4096 -keyout new-server.key \
   -out new-server.crt -days 365 -nodes \
-  -subj "/CN=secureclaw.local"
+  -subj "/CN=agentshroud.local"
 
 # 2. Update secrets
 docker secret create ssl-cert-new new-server.crt
@@ -406,12 +406,12 @@ docker service update --force secureclaw_secureclaw
 
 ## 6. System Updates
 
-### SecureClaw Updates
+### AgentShroud Updates
 
 ```bash
 # 1. Run update script
-chmod +x scripts/update-secureclaw.sh
-./scripts/update-secureclaw.sh
+chmod +x scripts/update-agentshroud.sh
+./scripts/update-agentshroud.sh
 
 # Script performs:
 # - Backup current configuration
@@ -423,20 +423,20 @@ chmod +x scripts/update-secureclaw.sh
 
 # 2. Manual update process
 # Backup current state
-docker compose exec secureclaw sqlite3 /data/secureclaw.db \
+docker compose exec agentshroud sqlite3 /data/agentshroud.db \
   ".backup /data/backup_$(date +%Y%m%d).db"
 
 # Pull new image
-docker compose pull secureclaw
+docker compose pull agentshroud
 
 # Stop current service
-docker compose stop secureclaw
+docker compose stop agentshroud
 
 # Start with new image
-docker compose up -d secureclaw
+docker compose up -d agentshroud
 
 # Check logs for migration messages
-docker compose logs -f secureclaw
+docker compose logs -f agentshroud
 
 # Verify system health
 curl -s https://localhost:8443/health
@@ -446,21 +446,21 @@ curl -s https://localhost:8443/health
 
 ```bash
 # 1. Backup current configuration
-cp config/secureclaw.yaml config/secureclaw.yaml.backup.$(date +%Y%m%d)
+cp config/agentshroud.yaml config/agentshroud.yaml.backup.$(date +%Y%m%d)
 
 # 2. Edit configuration
-vim config/secureclaw.yaml
+vim config/agentshroud.yaml
 
 # 3. Validate configuration
-docker compose exec secureclaw python -c "
+docker compose exec agentshroud python -c "
 import yaml
-with open('/config/secureclaw.yaml') as f:
+with open('/config/agentshroud.yaml') as f:
     config = yaml.safe_load(f)
 print('Configuration valid')
 "
 
 # 4. Apply changes (requires restart)
-docker compose restart secureclaw
+docker compose restart agentshroud
 
 # 5. Verify changes took effect
 curl -s -H "Authorization: Bearer $ADMIN_TOKEN" \
@@ -475,13 +475,13 @@ curl -s -H "Authorization: Bearer $ADMIN_TOKEN" \
 
 ```bash
 #!/bin/bash
-# backup-secureclaw.sh (run via cron)
+# backup-agentshroud.sh (run via cron)
 
-BACKUP_DIR="/backup/secureclaw/$(date +%Y/%m)"
+BACKUP_DIR="/backup/agentshroud/$(date +%Y/%m)"
 mkdir -p "$BACKUP_DIR"
 
 # Database backup
-docker compose exec secureclaw sqlite3 /data/secureclaw.db \
+docker compose exec agentshroud sqlite3 /data/agentshroud.db \
   ".backup $BACKUP_DIR/audit_$(date +%Y%m%d_%H%M%S).db"
 
 # Configuration backup
@@ -498,7 +498,7 @@ gpg --encrypt --armor -r backup@company.com \
   "$BACKUP_DIR/backup_$(date +%Y%m%d).tar.gz"
 
 # Clean up old backups (>30 days)
-find /backup/secureclaw -name "*.gz" -mtime +30 -delete
+find /backup/agentshroud -name "*.gz" -mtime +30 -delete
 
 echo "Backup completed: $BACKUP_DIR"
 ```
@@ -510,7 +510,7 @@ echo "Backup completed: $BACKUP_DIR"
 ./scripts/backup-now.sh maintenance-$(date +%Y%m%d)
 
 # Export audit trail for compliance
-docker compose exec secureclaw sqlite3 /data/secureclaw.db \
+docker compose exec agentshroud sqlite3 /data/agentshroud.db \
   -header -csv "SELECT * FROM audit_entries WHERE timestamp > '2024-01-01'" \
   > audit_export_$(date +%Y%m%d).csv
 ```
@@ -520,23 +520,23 @@ docker compose exec secureclaw sqlite3 /data/secureclaw.db \
 **Database restore:**
 
 ```bash
-# 1. Stop SecureClaw
-docker compose stop secureclaw
+# 1. Stop AgentShroud
+docker compose stop agentshroud
 
 # 2. Backup current database
-docker compose exec db sqlite3 /data/secureclaw.db \
+docker compose exec db sqlite3 /data/agentshroud.db \
   ".backup /data/current_backup.db"
 
 # 3. Restore from backup
-docker compose exec db sqlite3 /data/secureclaw.db \
+docker compose exec db sqlite3 /data/agentshroud.db \
   ".restore /data/backup_20240115.db"
 
 # 4. Verify integrity
-docker compose exec db sqlite3 /data/secureclaw.db \
+docker compose exec db sqlite3 /data/agentshroud.db \
   "PRAGMA integrity_check;"
 
 # 5. Start service
-docker compose start secureclaw
+docker compose start agentshroud
 
 # 6. Verify audit chain
 curl -s -H "Authorization: Bearer $ADMIN_TOKEN" \
@@ -547,12 +547,12 @@ curl -s -H "Authorization: Bearer $ADMIN_TOKEN" \
 
 ```bash
 # 1. Restore configuration files
-cp backup/config_20240115/secureclaw.yaml config/
+cp backup/config_20240115/agentshroud.yaml config/
 cp backup/config_20240115/egress-config.yml config/
 cp backup/config_20240115/mcp-config.yml config/
 
 # 2. Restart with restored config
-docker compose restart secureclaw
+docker compose restart agentshroud
 
 # 3. Verify configuration
 curl -s -H "Authorization: Bearer $ADMIN_TOKEN" \
@@ -569,14 +569,14 @@ curl -s -H "Authorization: Bearer $ADMIN_TOKEN" \
 
 ```bash
 # 1. Check logs for error messages
-docker compose logs secureclaw | tail -50
+docker compose logs agentshroud | tail -50
 
 # 2. Verify configuration syntax
 docker compose config
 
 # 3. Check port conflicts
 netstat -tlnp | grep :8443
-# If in use, set SECURECLAW_PORT_OFFSET environment variable
+# If in use, set AGENTSHROUD_PORT_OFFSET environment variable
 
 # 4. Verify secrets exist
 docker secret ls | grep -E "(openclaw-api-key|admin-token|ssl-cert)"
@@ -592,7 +592,7 @@ systemctl status docker
 
 ```bash
 # Port conflict resolution
-export SECURECLAW_PORT_OFFSET=100
+export AGENTSHROUD_PORT_OFFSET=100
 docker compose up -d
 # Service will use port 8543 instead of 8443
 
@@ -601,9 +601,9 @@ echo "your_openclaw_api_key" | docker secret create openclaw-api-key -
 echo "your_admin_token" | docker secret create admin-token -
 
 # Configuration fix
-docker compose exec secureclaw python -c "
+docker compose exec agentshroud python -c "
 import yaml
-with open('/config/secureclaw.yaml') as f:
+with open('/config/agentshroud.yaml') as f:
     yaml.safe_load(f)  # Will raise exception if invalid
 "
 ```
@@ -620,14 +620,14 @@ docker stats --no-stream
 free -h
 
 # 2. Check audit table size
-docker compose exec secureclaw sqlite3 /data/secureclaw.db \
+docker compose exec agentshroud sqlite3 /data/agentshroud.db \
   "SELECT COUNT(*) as entries, 
           SUM(LENGTH(content)) as content_bytes,
           MAX(timestamp) as latest_entry
    FROM audit_entries;"
 
 # 3. Check for memory leaks in logs
-docker compose logs secureclaw | grep -i "memory\|oom"
+docker compose logs agentshroud | grep -i "memory\|oom"
 ```
 
 **Mitigation:**
@@ -635,18 +635,18 @@ docker compose logs secureclaw | grep -i "memory\|oom"
 ```bash
 # 1. Increase Docker memory limits
 # Edit docker-compose.yml:
-# secureclaw:
+# agentshroud:
 #   mem_limit: 2g
 #   mem_reservation: 1g
 
 # 2. Archive old audit entries
-docker compose exec secureclaw python scripts/archive_old_audits.py --days=90
+docker compose exec agentshroud python scripts/archive_old_audits.py --days=90
 
 # 3. Restart service to clear memory
-docker compose restart secureclaw
+docker compose restart agentshroud
 
 # 4. Enable audit compression in config
-# secureclaw.yaml:
+# agentshroud.yaml:
 # audit:
 #   compression: true
 #   batch_size: 50
@@ -660,18 +660,18 @@ docker compose restart secureclaw
 
 ```bash
 # 1. Check for long-running transactions
-docker compose exec secureclaw sqlite3 /data/secureclaw.db \
+docker compose exec agentshroud sqlite3 /data/agentshroud.db \
   "PRAGMA busy_timeout = 30000;"
 
 # 2. Enable WAL mode for better concurrency
-docker compose exec secureclaw sqlite3 /data/secureclaw.db \
+docker compose exec agentshroud sqlite3 /data/agentshroud.db \
   "PRAGMA journal_mode=WAL;"
 
 # 3. Check for abandoned connections
-docker compose logs secureclaw | grep -i "database.*lock"
+docker compose logs agentshroud | grep -i "database.*lock"
 
 # 4. Restart service if issue persists
-docker compose restart secureclaw
+docker compose restart agentshroud
 ```
 
 ### SSL/TLS Certificate Issues
@@ -685,7 +685,7 @@ docker compose restart secureclaw
 openssl x509 -in /run/secrets/ssl-cert -text -noout | grep -A 2 "Validity"
 
 # 2. Test SSL connection
-openssl s_client -connect localhost:8443 -servername secureclaw.local
+openssl s_client -connect localhost:8443 -servername agentshroud.local
 
 # 3. Check certificate chain
 curl -vI https://localhost:8443/health
@@ -696,7 +696,7 @@ curl -vI https://localhost:8443/health
 ```bash
 # 1. Generate new self-signed certificate
 openssl req -x509 -newkey rsa:4096 -keyout server.key -out server.crt \
-  -days 365 -nodes -subj "/CN=secureclaw.local"
+  -days 365 -nodes -subj "/CN=agentshroud.local"
 
 # 2. Update Docker secrets (requires restart)
 docker secret create ssl-cert-new server.crt
@@ -728,7 +728,7 @@ curl -w "@curl-format.txt" -s https://localhost:8443/health
 # time_total: %{time_total}\n
 
 # 2. Check database performance
-docker compose exec secureclaw sqlite3 /data/secureclaw.db \
+docker compose exec agentshroud sqlite3 /data/agentshroud.db \
   ".timer on" \
   "SELECT COUNT(*) FROM audit_entries WHERE timestamp > datetime('now', '-1 day');"
 
@@ -755,8 +755,8 @@ top -p $(docker inspect --format '{{.State.Pid}}' secureclaw_secureclaw_1)
 #   batch_size: 200
 
 # 4. Add database indexes if missing
-docker compose exec secureclaw sqlite3 /data/secureclaw.db \
+docker compose exec agentshroud sqlite3 /data/agentshroud.db \
   "CREATE INDEX IF NOT EXISTS idx_audit_timestamp ON audit_entries(timestamp);"
 ```
 
-This runbook provides the essential procedures for day-to-day SecureClaw operations. Keep it updated as the system evolves and add site-specific procedures as needed.
+This runbook provides the essential procedures for day-to-day AgentShroud operations. Keep it updated as the system evolves and add site-specific procedures as needed.

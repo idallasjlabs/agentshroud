@@ -11,7 +11,7 @@ import time
 from dataclasses import dataclass, field
 from typing import Any, Optional
 
-logger = logging.getLogger("secureclaw.proxy.forwarder")
+logger = logging.getLogger("agentshroud.proxy.forwarder")
 
 
 @dataclass

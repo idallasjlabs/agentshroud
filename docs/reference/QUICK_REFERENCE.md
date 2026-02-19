@@ -42,7 +42,7 @@ docker compose -f docker/docker-compose.yml ps
 
 # Logs
 docker logs openclaw-bot --tail 50
-docker logs secureclaw-gateway --tail 50
+docker logs agentshroud-gateway --tail 50
 ```
 
 ---

@@ -1,7 +1,7 @@
 # Changelog
-## SecureClaw Project History
+## AgentShroud Project History
 
-All notable changes to the SecureClaw project are documented in this file. The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/), and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
+All notable changes to the AgentShroud project are documented in this file. The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/), and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ---
 
@@ -357,4 +357,4 @@ The project has shown consistent growth in testing coverage:
 - **Simple Audit** (0.1.0) → **Comprehensive Forensic System** (0.9.0)
 - **Container Support** (0.1.0) → **Multi-Runtime Production Ready** (0.9.0)
 
-This changelog demonstrates SecureClaw's evolution from a basic security gateway to a comprehensive enterprise-ready security proxy platform with extensive testing, documentation, and production hardening.
+This changelog demonstrates AgentShroud's evolution from a basic security gateway to a comprehensive enterprise-ready security proxy platform with extensive testing, documentation, and production hardening.

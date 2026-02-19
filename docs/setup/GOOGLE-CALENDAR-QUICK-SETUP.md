@@ -90,7 +90,7 @@ The Google APIs we installed (googleapis) are more powerful but need OAuth setup
 ### Step 1: Create Google Cloud Project
 
 1. Go to https://console.cloud.google.com
-2. Create project: "SecureClaw Bot"
+2. Create project: "AgentShroud Bot"
 3. Enable APIs:
    - Google Calendar API
    - Google People API (Contacts)
@@ -100,7 +100,7 @@ The Google APIs we installed (googleapis) are more powerful but need OAuth setup
 1. Go to APIs & Services → Credentials
 2. Create Credentials → OAuth Client ID
 3. Application type: **Desktop app**
-4. Name: "SecureClaw Bot"
+4. Name: "AgentShroud Bot"
 5. Download JSON → Save as `credentials.json`
 
 ### Step 3: Get OAuth Token (One-Time)
@@ -210,7 +210,7 @@ async function listCalendarEvents() {
 
         // Create event
         const event = {
-            summary: 'Test Event from SecureClaw',
+            summary: 'Test Event from AgentShroud',
             start: {
                 dateTime: '2026-02-20T10:00:00-08:00',
                 timeZone: 'America/Los_Angeles',
@@ -351,6 +351,6 @@ docker exec openclaw-bot node /home/node/google-calendar-helper.js list
 **Later** (for production):
 1. Set up OAuth2 properly
 2. Create a proper OpenClaw skill
-3. Integrate with SecureClaw gateway
+3. Integrate with AgentShroud gateway
 
 **Want me to run the test script now?**

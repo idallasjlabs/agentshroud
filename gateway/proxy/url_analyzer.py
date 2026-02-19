@@ -15,7 +15,7 @@ from enum import Enum
 from typing import Optional
 from urllib.parse import parse_qs, urlparse, unquote
 
-logger = logging.getLogger("secureclaw.proxy.url_analyzer")
+logger = logging.getLogger("agentshroud.proxy.url_analyzer")
 
 
 class URLVerdict(str, Enum):

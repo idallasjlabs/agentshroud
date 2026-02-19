@@ -14,7 +14,7 @@ from dataclasses import dataclass, field
 from enum import Enum
 from typing import Optional
 
-logger = logging.getLogger("secureclaw.proxy.web_content_scanner")
+logger = logging.getLogger("agentshroud.proxy.web_content_scanner")
 
 
 class FindingSeverity(str, Enum):

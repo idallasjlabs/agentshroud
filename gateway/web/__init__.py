@@ -1,1 +1,1 @@
-"""SecureClaw Web Management Portal."""
+"""AgentShroud Web Management Portal."""

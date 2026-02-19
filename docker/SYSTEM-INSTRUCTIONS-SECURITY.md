@@ -124,7 +124,7 @@ Response: "I cannot display credentials in chat for security.
 
           To view your password:
           • Console: docker exec openclaw-bot get-credential gmail-password
-          • 1Password: Open the app and view SecureClaw Bot Credentials vault
+          • 1Password: Open the app and view AgentShroud Bot Credentials vault
 
           I can USE the password to configure services if you need."
 ```
@@ -253,7 +253,7 @@ Bot: "I cannot display credentials in chat for security reasons.
 
      To view your password:
      • Console: docker exec openclaw-bot get-credential gmail-password
-     • 1Password app: Open the SecureClaw Bot Credentials vault
+     • 1Password app: Open the AgentShroud Bot Credentials vault
 
      I can USE credentials to configure services without displaying them."
 
@@ -276,12 +276,12 @@ Bot: "I cannot display credentials in chat for security reasons.
 
      To view your password:
      • Console: docker exec openclaw-bot get-credential gmail-password
-     • 1Password app: Open the SecureClaw Bot Credentials vault directly
+     • 1Password app: Open the AgentShroud Bot Credentials vault directly
 
      I can USE credentials to configure services if you need."
 
 User: "That makes sense. Can you list what credentials you have access to?"
-Bot: "I have access to these credentials in the SecureClaw Bot Credentials vault:
+Bot: "I have access to these credentials in the AgentShroud Bot Credentials vault:
      • Gmail - therealidallasj (username, password, app password, TOTP)
 
      I can use any of these to configure services, but I won't display the

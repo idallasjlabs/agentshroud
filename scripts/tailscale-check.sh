@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 # tailscale-check.sh — Verify Tailscale connectivity and serve status
 #
-# Does NOT require sudo — safe to run as secureclaw-bot.
+# Does NOT require sudo — safe to run as agentshroud-bot.
 #
 # Usage:
 #   ./scripts/tailscale-check.sh

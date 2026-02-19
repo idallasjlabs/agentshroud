@@ -25,7 +25,7 @@ class ContainerConfig:
     container_name: str
     network: str
     volume: str
-    image: str = "secureclaw/agent:latest"
+    image: str = "agentshroud/agent:latest"
     cpu_limit: str = "1.0"
     memory_limit: str = "512m"
     read_only_root: bool = True

@@ -16,7 +16,7 @@ from typing import Any, Optional
 
 from .engine import ContainerEngine, ContainerInfo
 
-logger = logging.getLogger("secureclaw.runtime.podman")
+logger = logging.getLogger("agentshroud.runtime.podman")
 
 
 class PodmanEngine(ContainerEngine):

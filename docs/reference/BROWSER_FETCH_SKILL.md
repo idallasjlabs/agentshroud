@@ -8,7 +8,7 @@
 
 ## Overview
 
-The `browser-fetch` skill enables SecureClaw to decrypt and extract content from JavaScript-heavy websites, specifically designed for 1Password share links. This allows you to securely share credentials with your bot without sending passwords in plain text via Telegram.
+The `browser-fetch` skill enables AgentShroud to decrypt and extract content from JavaScript-heavy websites, specifically designed for 1Password share links. This allows you to securely share credentials with your bot without sending passwords in plain text via Telegram.
 
 **Security Model:**
 - 1Password share links are client-side encrypted (decryption key is in the URL fragment after `#`)
@@ -27,7 +27,7 @@ User → Telegram: "Here's my password: MyP@ssw0rd123"
 ```
 **Problem:** Password sent in plain text, visible in Telegram chat history forever
 
-### SecureClaw Method ✅
+### AgentShroud Method ✅
 ```
 User → 1Password: Create share link (client-side encrypted)
 User → Telegram: "Fetch this link: https://share.1password.com/s#..."
@@ -363,9 +363,9 @@ Location: `/home/node/.openclaw/logs/browser-fetch.log`
 
 ---
 
-## Integration with SecureClaw Workflow
+## Integration with AgentShroud Workflow
 
-Browser-fetch complements other SecureClaw security layers:
+Browser-fetch complements other AgentShroud security layers:
 
 1. **Gateway Password** - Required for Control UI access
 2. **Device Pairing** - Each browser must be approved

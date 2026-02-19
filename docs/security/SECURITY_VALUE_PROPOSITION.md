@@ -1,13 +1,13 @@
-# SecureClaw Security Value Proposition
+# AgentShroud Security Value Proposition
 
 **Date**: 2026-02-16
-**Question**: Is SecureClaw more secure than just running OpenClaw directly, and what real value does it provide?
+**Question**: Is AgentShroud more secure than just running OpenClaw directly, and what real value does it provide?
 
 ---
 
 ## TL;DR - The Honest Answer
 
-**YES, SecureClaw provides real security value, but NOT for all the reasons you might think.**
+**YES, AgentShroud provides real security value, but NOT for all the reasons you might think.**
 
 The **gateway** is where 90% of the value lives. Docker is standard best practice. Some features are over-engineered.
 
@@ -44,7 +44,7 @@ The **gateway** is where 90% of the value lives. Docker is standard best practic
 
 ### Option 2: OpenClaw in Basic Docker Container
 
-**Setup**: Run OpenClaw in Docker without the SecureClaw gateway.
+**Setup**: Run OpenClaw in Docker without the AgentShroud gateway.
 
 **Security Posture**:
 - ❌ **No approval queue** - Agent still acts immediately
@@ -67,7 +67,7 @@ The **gateway** is where 90% of the value lives. Docker is standard best practic
 
 ---
 
-### Option 3: SecureClaw (Current Architecture)
+### Option 3: AgentShroud (Current Architecture)
 
 **Setup**: OpenClaw in Docker + FastAPI gateway + security controls.
 
@@ -170,14 +170,14 @@ The **gateway** is where 90% of the value lives. Docker is standard best practic
 #### 5. **Docker Isolation**
 **Problem Solved**: Agent can't access host filesystem.
 
-**Value**: **MEDIUM** - Standard best practice, everyone should do this anyway. Not unique to SecureClaw.
+**Value**: **MEDIUM** - Standard best practice, everyone should do this anyway. Not unique to AgentShroud.
 
 ---
 
 #### 6. **Separate Bot Accounts** (iCloud, Gmail)
 **Problem Solved**: Compromised bot doesn't compromise your real accounts.
 
-**Value**: **MEDIUM** - Good hygiene, but can be done with Option 1 or 2 as well. Not unique to SecureClaw.
+**Value**: **MEDIUM** - Good hygiene, but can be done with Option 1 or 2 as well. Not unique to AgentShroud.
 
 ---
 
@@ -212,9 +212,9 @@ The **gateway** is where 90% of the value lives. Docker is standard best practic
 
 ---
 
-## What Makes SecureClaw Different?
+## What Makes AgentShroud Different?
 
-| Feature | Option 1 (Direct) | Option 2 (Docker) | Option 3 (SecureClaw) |
+| Feature | Option 1 (Direct) | Option 2 (Docker) | Option 3 (AgentShroud) |
 |---------|-------------------|-------------------|----------------------|
 | **Human Approval** | ❌ No | ❌ No | ✅ **YES** (Gateway) |
 | **PII Sanitization** | ❌ No | ❌ No | ✅ **YES** (Gateway) |
@@ -288,7 +288,7 @@ Looking at the Phase 3 plan, let me assess what's actually valuable:
 
 ## The Bottom Line
 
-### Is SecureClaw worth the effort?
+### Is AgentShroud worth the effort?
 
 **YES, if you value:**
 1. **Control** - Approval queue gives you veto power over risky operations
@@ -337,7 +337,7 @@ Looking at the Phase 3 plan, let me assess what's actually valuable:
 
 ---
 
-### Option C: Abandon SecureClaw
+### Option C: Abandon AgentShroud
 **Just use OpenClaw in Docker:**
 
 - Basic docker-compose.yml
@@ -375,7 +375,7 @@ Looking at the Phase 3 plan, let me assess what's actually valuable:
 
 ## The Real Security Value
 
-**SecureClaw's security value comes from the GATEWAY:**
+**AgentShroud's security value comes from the GATEWAY:**
 
 1. **You decide** - Approval queue means autonomous AI doesn't run unchecked
 2. **Your data stays private** - PII sanitizer prevents leakage to LLM APIs

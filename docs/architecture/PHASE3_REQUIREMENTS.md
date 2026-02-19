@@ -200,7 +200,7 @@ No feature creep. No advanced features until basic chat works. Focus:
 
 5. **File Permissions** (Priority 2)
    - `~/.openclaw/` → 700 (owner only)
-   - `secureclaw.yaml` → 600 (owner read/write only)
+   - `agentshroud.yaml` → 600 (owner read/write only)
    - Verify on every container start
 
 6. **Credential Management** (Priority 2)
@@ -236,7 +236,7 @@ No feature creep. No advanced features until basic chat works. Focus:
   - Healthcheck: verify process running, localhost binding
 
 - [ ] Create `docker/docker-compose.yml`
-  - Service: `secureclaw-gateway` (from Phase 2)
+  - Service: `agentshroud-gateway` (from Phase 2)
   - Service: `openclaw-chat` (new)
   - Network: `internal` (no external access)
   - Volumes: persona files (read-only), data directory (read/write)

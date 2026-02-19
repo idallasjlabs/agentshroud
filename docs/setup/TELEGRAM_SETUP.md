@@ -72,7 +72,7 @@ Telegram Bot API (Telegram's servers)
     ↓
 OpenClaw Container (polls Telegram API)
     ↓
-SecureClaw Gateway (optional - if you enable it)
+AgentShroud Gateway (optional - if you enable it)
     ↓
 OpenAI/Anthropic APIs (for LLM processing)
 ```
@@ -87,7 +87,7 @@ OpenAI/Anthropic APIs (for LLM processing)
 
 4. **Data Storage**: All conversations are stored in the `openclaw-config` Docker volume.
 
-5. **Gateway Integration** (optional): You can route Telegram messages through SecureClaw Gateway for additional PII sanitization and audit logging:
+5. **Gateway Integration** (optional): You can route Telegram messages through AgentShroud Gateway for additional PII sanitization and audit logging:
    - Edit `gateway/ingest_api/channels.py` to add Telegram webhook handler
    - Configure Telegram to send messages to Gateway first (port 8080)
    - Gateway sanitizes and forwards to OpenClaw

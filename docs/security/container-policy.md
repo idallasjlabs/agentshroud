@@ -1,6 +1,6 @@
-# Container Security Policy — SecureClaw
+# Container Security Policy — AgentShroud
 
-> Last updated: 2026-02-18 | SecureClaw v0.2.0
+> Last updated: 2026-02-18 | AgentShroud v0.2.0
 
 ## 1. Container Hardening
 
@@ -20,7 +20,7 @@ cap_drop:
 
 Containers run with Docker's default seccomp profile, which blocks ~44 dangerous syscalls including `mount`, `reboot`, `kexec_load`, and `ptrace`.
 
-**Future:** Custom seccomp profile (`seccomp/secureclaw.json`) restricting to the minimal syscall set.
+**Future:** Custom seccomp profile (`seccomp/agentshroud.json`) restricting to the minimal syscall set.
 
 ### 1.3 Read-Only Filesystem (Planned)
 
@@ -40,8 +40,8 @@ volumes:
 
 The application runs as a non-root user inside the container:
 ```dockerfile
-RUN adduser --disabled-password --no-create-home secureclaw
-USER secureclaw
+RUN adduser --disabled-password --no-create-home agentshroud
+USER agentshroud
 ```
 
 ### 1.5 Resource Limits

@@ -1,6 +1,6 @@
-# SecureClaw Dev Environment — Raspberry Pi 4 (8GB) Setup Checklist
+# AgentShroud Dev Environment — Raspberry Pi 4 (8GB) Setup Checklist
 
-# SecureClaw Dev Environment — Raspberry Pi 4 (8GB) Setup Checklist
+# AgentShroud Dev Environment — Raspberry Pi 4 (8GB) Setup Checklist
 
 ## Current System Profile
 
@@ -12,7 +12,7 @@
 | Storage | 115GB (75GB free) |
 | Hostname | raspberrypi.tail240ea8.ts.net |
 | Primary User | idallasj |
-| Bot User | secureclaw-bot |
+| Bot User | agentshroud-bot |
 | Network | Tailscale |
 
 ---
@@ -39,13 +39,13 @@ sudo systemctl restart sshd
 ssh idallasj@raspberrypi.tail240ea8.ts.net
 
 # Create bot user
-sudo useradd -m -s /bin/bash secureclaw-bot
-sudo mkdir -p /home/secureclaw-bot/.ssh
+sudo useradd -m -s /bin/bash agentshroud-bot
+sudo mkdir -p /home/agentshroud-bot/.ssh
 # Add the bot's public key:
-sudo nano /home/secureclaw-bot/.ssh/authorized_keys
-sudo chown -R secureclaw-bot:secureclaw-bot /home/secureclaw-bot/.ssh
-sudo chmod 700 /home/secureclaw-bot/.ssh
-sudo chmod 600 /home/secureclaw-bot/.ssh/authorized_keys
+sudo nano /home/agentshroud-bot/.ssh/authorized_keys
+sudo chown -R agentshroud-bot:agentshroud-bot /home/agentshroud-bot/.ssh
+sudo chmod 700 /home/agentshroud-bot/.ssh
+sudo chmod 600 /home/agentshroud-bot/.ssh/authorized_keys
 ```
 
 - [ ] Restrict SSH access to Tailscale interface only
@@ -105,7 +105,7 @@ sudo apt update && sudo apt full-upgrade -y
 
 ## Phase 2: Development Tools
 
-### Node.js (for OpenClaw & SecureClaw)
+### Node.js (for OpenClaw & AgentShroud)
 
 - [ ] Install Node.js 20 LTS via NodeSource
 
@@ -122,7 +122,7 @@ npm --version
 
 ```bash
 curl -fsSL https://get.docker.com | sh
-sudo usermod -aG docker secureclaw-bot
+sudo usermod -aG docker agentshroud-bot
 sudo usermod -aG docker $USER
 sudo systemctl enable docker
 sudo systemctl start docker
@@ -153,9 +153,9 @@ git --version
 - [ ] Configure bot user's Git identity
 
 ```bash
-sudo -u secureclaw-bot git config --global user.name "secureclaw-bot"
-sudo -u secureclaw-bot git config --global user.email "secureclaw-bot@users.noreply.github.com"
-sudo -u secureclaw-bot git config --global init.defaultBranch main
+sudo -u agentshroud-bot git config --global user.name "agentshroud-bot"
+sudo -u agentshroud-bot git config --global user.email "agentshroud-bot@users.noreply.github.com"
+sudo -u agentshroud-bot git config --global init.defaultBranch main
 ```
 
 ### Python (for testing tools)
@@ -180,7 +180,7 @@ sudo apt install -y build-essential curl wget jq tree htop tmux
 
 ### Bot Account (You Do This Manually)
 
-- [ ] Create GitHub account (e.g., `secureclaw-bot`)
+- [ ] Create GitHub account (e.g., `agentshroud-bot`)
 - [ ] Save credentials in 1Password
 - [ ] Generate Personal Access Token (PAT) with scopes:
   - `repo` (full repo access)
@@ -190,7 +190,7 @@ sudo apt install -y build-essential curl wget jq tree htop tmux
 
 ### Repo Access
 
-- [ ] Add `secureclaw-bot` as collaborator on SecureClaw repo (Write permission)
+- [ ] Add `agentshroud-bot` as collaborator on AgentShroud repo (Write permission)
 - [ ] Configure branch protection on `main`:
   - Require PR reviews
   - Require status checks to pass
@@ -201,29 +201,29 @@ sudo apt install -y build-essential curl wget jq tree htop tmux
 - [ ] Set up Git credentials for bot user
 
 ```bash
-sudo -u secureclaw-bot bash
+sudo -u agentshroud-bot bash
 mkdir -p ~/projects
 cd ~/projects
 
 # Store token securely (use 1Password CLI or credential helper)
 git config --global credential.helper store
 # Or better — use SSH key:
-ssh-keygen -t ed25519 -C "secureclaw-bot@raspberrypi.tail240ea8.ts.net"
+ssh-keygen -t ed25519 -C "agentshroud-bot@raspberrypi.tail240ea8.ts.net"
 cat ~/.ssh/id_ed25519.pub
 # Add this key to the bot's GitHub account → Settings → SSH Keys
 
-git clone git@github.com:<your-username>/secureclaw.git
-cd secureclaw
+git clone git@github.com:<your-username>/agentshroud.git
+cd agentshroud
 ```
 
 ---
 
 ## Phase 4: Project Structure
 
-- [ ] Initialize SecureClaw repo structure
+- [ ] Initialize AgentShroud repo structure
 
 ```
-secureclaw/
+agentshroud/
 ├── .github/
 │   └── workflows/
 │       ├── ci.yml              # Run tests on every PR
@@ -362,9 +362,9 @@ sudo apt update && sudo apt install -y 1password-cli
 - [ ] Create `.env.template` with 1Password references
 
 ```bash
-GITHUB_TOKEN=op://SecureClaw/GitHub-Bot-PAT/password
-ANTHROPIC_API_KEY=op://SecureClaw/Anthropic-API/password
-TELEGRAM_BOT_TOKEN=op://SecureClaw/Telegram-Bot/password
+GITHUB_TOKEN=op://AgentShroud/GitHub-Bot-PAT/password
+ANTHROPIC_API_KEY=op://AgentShroud/Anthropic-API/password
+TELEGRAM_BOT_TOKEN=op://AgentShroud/Telegram-Bot/password
 ```
 
 - [ ] Run services with secrets injected
@@ -383,7 +383,7 @@ op run --env-file=.env.template -- docker compose up
   - Docker container health
   - Git operations (push/pull success rate)
   - Test pass/fail rates
-- [ ] Set up structured logging in SecureClaw
+- [ ] Set up structured logging in AgentShroud
 
 ```bash
 # Check Pi temperature (important for sustained workloads)
@@ -402,7 +402,7 @@ vcgencmd measure_temp
 ## Phase 9: OpenClaw Agent Configuration
 
 - [ ] Install OpenClaw on your primary machine (Mac)
-- [ ] Configure SSH tool for Pi access: `secureclaw-bot@raspberrypi.tail240ea8.ts.net`
+- [ ] Configure SSH tool for Pi access: `agentshroud-bot@raspberrypi.tail240ea8.ts.net`
 - [ ] Configure GitHub MCP server
 - [ ] Configure Telegram bot for notifications
 - [ ] Set Claude as AI model via Anthropic API key
@@ -415,7 +415,7 @@ vcgencmd measure_temp
 Run these checks before starting development:
 
 ```bash
-# On the Pi, as secureclaw-bot user:
+# On the Pi, as agentshroud-bot user:
 node --version          # 20.x
 npm --version           # 10.x
 docker --version        # 24.x+
@@ -425,7 +425,7 @@ python3 --version       # 3.9+
 op --version            # 2.x
 
 # Connectivity
-ssh secureclaw-bot@raspberrypi.tail240ea8.ts.net "echo 'SSH OK'"
+ssh agentshroud-bot@raspberrypi.tail240ea8.ts.net "echo 'SSH OK'"
 curl -s https://api.github.com/rate_limit | jq '.rate.remaining'
 
 # Docker
@@ -510,16 +510,16 @@ sudo systemctl restart sshd
 - [ ] **Create dedicated bot user with limited permissions**
 
 ```bash
-sudo useradd -m -s /bin/bash secureclaw-bot
-sudo mkdir -p /home/secureclaw-bot/.ssh
+sudo useradd -m -s /bin/bash agentshroud-bot
+sudo mkdir -p /home/agentshroud-bot/.ssh
 
 # Add the bot's public key:
-sudo nano /home/secureclaw-bot/.ssh/authorized_keys
+sudo nano /home/agentshroud-bot/.ssh/authorized_keys
 # Paste your public key here
 
-sudo chown -R secureclaw-bot:secureclaw-bot /home/secureclaw-bot/.ssh
-sudo chmod 700 /home/secureclaw-bot/.ssh
-sudo chmod 600 /home/secureclaw-bot/.ssh/authorized_keys
+sudo chown -R agentshroud-bot:agentshroud-bot /home/agentshroud-bot/.ssh
+sudo chmod 700 /home/agentshroud-bot/.ssh
+sudo chmod 600 /home/agentshroud-bot/.ssh/authorized_keys
 ```
 
 - [ ] **Restrict SSH access to Tailscale interface only**
@@ -537,7 +537,7 @@ sudo systemctl restart sshd
 
 # Test SSH over Tailscale before closing current session!
 # From another terminal:
-ssh secureclaw-bot@<tailscale-ip>
+ssh agentshroud-bot@<tailscale-ip>
 ```
 
 - [ ] **Set up UFW firewall**
@@ -619,7 +619,7 @@ cat /etc/debian_version  # Should show 12.x
 
 ## Phase 2: Development Tools
 
-### Node.js (for OpenClaw & SecureClaw)
+### Node.js (for OpenClaw & AgentShroud)
 
 - [ ] **Install Node.js 20 LTS via NodeSource**
 
@@ -649,7 +649,7 @@ sudo npm install -g typescript ts-node nodemon
 curl -fsSL https://get.docker.com | sh
 
 # Add users to docker group
-sudo usermod -aG docker secureclaw-bot
+sudo usermod -aG docker agentshroud-bot
 sudo usermod -aG docker $USER
 
 # Enable Docker service
@@ -676,7 +676,7 @@ docker compose version  # Should be v2.x.x
 docker run --rm hello-world
 
 # Test as bot user
-sudo -u secureclaw-bot docker run --rm hello-world
+sudo -u agentshroud-bot docker run --rm hello-world
 
 # Check Docker info
 docker info | grep "Storage Driver"
@@ -717,11 +717,11 @@ git --version  # Should be 2.30+ (2.39+ on Bookworm)
 - [ ] **Configure bot user's Git identity**
 
 ```bash
-sudo -u secureclaw-bot git config --global user.name "secureclaw-bot"
-sudo -u secureclaw-bot git config --global user.email "secureclaw-bot@users.noreply.github.com"
-sudo -u secureclaw-bot git config --global init.defaultBranch main
-sudo -u secureclaw-bot git config --global pull.rebase false
-sudo -u secureclaw-bot git config --global core.editor "nano"
+sudo -u agentshroud-bot git config --global user.name "agentshroud-bot"
+sudo -u agentshroud-bot git config --global user.email "agentshroud-bot@users.noreply.github.com"
+sudo -u agentshroud-bot git config --global init.defaultBranch main
+sudo -u agentshroud-bot git config --global pull.rebase false
+sudo -u agentshroud-bot git config --global core.editor "nano"
 ```
 
 ### Python (for testing tools)
@@ -768,19 +768,19 @@ sudo apt install -y libraspberrypi-bin
 ### Bot Account (Manual Setup Required)
 
 - [ ] **Create GitHub account**
-  - Username: `secureclaw-bot` (or your preferred name)
+  - Username: `agentshroud-bot` (or your preferred name)
   - Email: Create dedicated email for bot
   - Enable 2FA
 
 - [ ] **Save credentials in 1Password**
-  - Vault: SecureClaw
+  - Vault: AgentShroud
   - Item: "GitHub Bot Account"
   - Include: username, password, 2FA recovery codes
 
 - [ ] **Generate Personal Access Token (PAT)**
   1. Go to: https://github.com/settings/tokens
   2. Click "Generate new token (classic)"
-  3. Name: "SecureClaw Bot Development"
+  3. Name: "AgentShroud Bot Development"
   4. Scopes:
      - `repo` (full repo access)
      - `workflow` (GitHub Actions)
@@ -790,9 +790,9 @@ sudo apt install -y libraspberrypi-bin
 
 ### Repo Access
 
-- [ ] **Add `secureclaw-bot` as collaborator**
+- [ ] **Add `agentshroud-bot` as collaborator**
   1. Go to repo: Settings → Collaborators
-  2. Add `secureclaw-bot` with **Write** permission
+  2. Add `agentshroud-bot` with **Write** permission
   3. Bot account accepts invitation
 
 - [ ] **Configure branch protection on `main`**
@@ -811,10 +811,10 @@ sudo apt install -y libraspberrypi-bin
 
 ```bash
 # Switch to bot user
-sudo -u secureclaw-bot bash
+sudo -u agentshroud-bot bash
 
 # Generate SSH key
-ssh-keygen -t ed25519 -C "secureclaw-bot@github" -f ~/.ssh/id_ed25519_github
+ssh-keygen -t ed25519 -C "agentshroud-bot@github" -f ~/.ssh/id_ed25519_github
 # Press Enter for no passphrase (bot needs unattended access)
 
 # Display public key
@@ -837,24 +837,24 @@ chmod 600 ~/.ssh/config
   1. Log in as bot account
   2. Go to: Settings → SSH and GPG keys
   3. Click "New SSH key"
-  4. Title: "Raspberry Pi 4 - SecureClaw Dev"
+  4. Title: "Raspberry Pi 4 - AgentShroud Dev"
   5. Paste public key
   6. Add key
 
-- [ ] **Clone SecureClaw repository**
+- [ ] **Clone AgentShroud repository**
 
 ```bash
-# Still as secureclaw-bot user
+# Still as agentshroud-bot user
 mkdir -p ~/projects
 cd ~/projects
 
 # Test SSH connection
 ssh -T git@github.com
-# Should see: "Hi secureclaw-bot! You've successfully authenticated..."
+# Should see: "Hi agentshroud-bot! You've successfully authenticated..."
 
 # Clone repo
-git clone git@github.com:<your-username>/oneclaw.git secureclaw
-cd secureclaw
+git clone git@github.com:<your-username>/oneclaw.git agentshroud
+cd agentshroud
 
 # Verify
 git remote -v
@@ -865,10 +865,10 @@ git status
 
 ## Phase 4: Project Structure
 
-- [ ] **Initialize SecureClaw repo structure**
+- [ ] **Initialize AgentShroud repo structure**
 
 ```bash
-cd ~/projects/secureclaw
+cd ~/projects/agentshroud
 
 # Create directory structure
 mkdir -p .github/workflows
@@ -893,7 +893,7 @@ chmod +x scripts/*.sh
 
 **Recommended structure:**
 ```
-secureclaw/
+agentshroud/
 ├── .github/
 │   └── workflows/
 │       ├── ci.yml              # Run tests on every PR
@@ -1015,7 +1015,7 @@ jobs:
         run: npm run build
 
       - name: Test Docker build
-        run: docker build -t secureclaw:test .
+        run: docker build -t agentshroud:test .
 ```
 
 - [ ] **Create `.github/workflows/deploy.yml`**
@@ -1089,7 +1089,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     && gosu nobody true
 
 # Create non-root user
-RUN groupadd -r secureclaw && useradd -r -g secureclaw secureclaw
+RUN groupadd -r agentshroud && useradd -r -g agentshroud agentshroud
 
 # Set working directory
 WORKDIR /app
@@ -1107,7 +1107,7 @@ COPY . .
 RUN npm run build || true
 
 # Create data directory
-RUN mkdir -p /app/data && chown secureclaw:secureclaw /app/data
+RUN mkdir -p /app/data && chown agentshroud:agentshroud /app/data
 
 # Health check
 HEALTHCHECK --interval=30s --timeout=5s --retries=3 --start-period=10s \
@@ -1121,7 +1121,7 @@ RUN chmod +x /entrypoint.sh
 RUN rm -rf /tmp/* /var/tmp/* /root/.npm /root/.cache
 
 # Switch to non-root user context (will be enforced by entrypoint)
-USER secureclaw
+USER agentshroud
 
 EXPOSE 3000
 
@@ -1137,13 +1137,13 @@ set -e
 
 # If running as root, drop privileges
 if [ "$(id -u)" = "0" ]; then
-    echo "[entrypoint] Running as root, dropping privileges to secureclaw user"
+    echo "[entrypoint] Running as root, dropping privileges to agentshroud user"
 
     # Ensure data directory has correct ownership
-    chown -R secureclaw:secureclaw /app/data 2>/dev/null || true
+    chown -R agentshroud:agentshroud /app/data 2>/dev/null || true
 
-    # Execute command as secureclaw user
-    exec gosu secureclaw "$@"
+    # Execute command as agentshroud user
+    exec gosu agentshroud "$@"
 else
     # Already running as non-root, execute directly
     echo "[entrypoint] Running as user $(whoami)"
@@ -1157,18 +1157,18 @@ fi
 version: '3.8'
 
 services:
-  secureclaw:
+  agentshroud:
     build:
       context: ..
       dockerfile: docker/Dockerfile
-    container_name: secureclaw
+    container_name: agentshroud
     restart: unless-stopped
 
     ports:
       - "127.0.0.1:3000:3000"  # Localhost only
 
     volumes:
-      - secureclaw-data:/app/data
+      - agentshroud-data:/app/data
 
     environment:
       - NODE_ENV=production
@@ -1198,7 +1198,7 @@ services:
     pids_limit: 100
 
 volumes:
-  secureclaw-data:
+  agentshroud-data:
     driver: local
 ```
 
@@ -1239,12 +1239,12 @@ op vault list
 - [ ] **Create `.env.example` template**
 
 ```bash
-# SecureClaw Environment Variables
+# AgentShroud Environment Variables
 # Copy to .env and fill in values
 
 # GitHub
 GITHUB_TOKEN=your-github-pat-here
-GITHUB_REPO=username/secureclaw
+GITHUB_REPO=username/agentshroud
 
 # Anthropic API
 ANTHROPIC_API_KEY=sk-ant-api03-...
@@ -1253,7 +1253,7 @@ ANTHROPIC_API_KEY=sk-ant-api03-...
 TELEGRAM_BOT_TOKEN=1234567890:ABCdefGHI...
 
 # Database
-DATABASE_URL=sqlite:///app/data/secureclaw.db
+DATABASE_URL=sqlite:///app/data/agentshroud.db
 
 # Logging
 LOG_LEVEL=info
@@ -1266,13 +1266,13 @@ ENABLE_GITHUB_INTEGRATION=true
 - [ ] **Create `.env.template` with 1Password references**
 
 ```bash
-# SecureClaw Environment Variables (1Password)
+# AgentShroud Environment Variables (1Password)
 # Run with: op run --env-file=.env.template -- <command>
 
-GITHUB_TOKEN=op://SecureClaw/GitHub-Bot-PAT/password
-ANTHROPIC_API_KEY=op://SecureClaw/Anthropic-API/password
-TELEGRAM_BOT_TOKEN=op://SecureClaw/Telegram-Bot/password
-DATABASE_URL=sqlite:///app/data/secureclaw.db
+GITHUB_TOKEN=op://AgentShroud/GitHub-Bot-PAT/password
+ANTHROPIC_API_KEY=op://AgentShroud/Anthropic-API/password
+TELEGRAM_BOT_TOKEN=op://AgentShroud/Telegram-Bot/password
+DATABASE_URL=sqlite:///app/data/agentshroud.db
 LOG_LEVEL=info
 ENABLE_TELEGRAM=true
 ENABLE_GITHUB_INTEGRATION=true
@@ -1285,9 +1285,9 @@ ENABLE_GITHUB_INTEGRATION=true
 op run --env-file=.env.template -- docker compose up -d
 
 # Or create Docker secrets
-op read "op://SecureClaw/GitHub-Bot-PAT/password" > docker/secrets/github_token.txt
-op read "op://SecureClaw/Anthropic-API/password" > docker/secrets/anthropic_api_key.txt
-op read "op://SecureClaw/Telegram-Bot/password" > docker/secrets/telegram_bot_token.txt
+op read "op://AgentShroud/GitHub-Bot-PAT/password" > docker/secrets/github_token.txt
+op read "op://AgentShroud/Anthropic-API/password" > docker/secrets/anthropic_api_key.txt
+op read "op://AgentShroud/Telegram-Bot/password" > docker/secrets/telegram_bot_token.txt
 ```
 
 ---
@@ -1295,7 +1295,7 @@ op read "op://SecureClaw/Telegram-Bot/password" > docker/secrets/telegram_bot_to
 ## Phase 8: Monitoring & Observability
 
 - [ ] **Add to existing Zabbix monitoring**
-  1. Create new host: "Raspberry Pi 4 - SecureClaw Dev"
+  1. Create new host: "Raspberry Pi 4 - AgentShroud Dev"
   2. Add templates:
      - Linux by Zabbix agent
      - Docker by Zabbix agent 2
@@ -1311,7 +1311,7 @@ op read "op://SecureClaw/Telegram-Bot/password" > docker/secrets/telegram_bot_to
   - Test pass/fail rates
   - GitHub API rate limit
 
-- [ ] **Set up structured logging in SecureClaw**
+- [ ] **Set up structured logging in AgentShroud**
 
 Create `src/logger.ts`:
 ```typescript
@@ -1414,7 +1414,7 @@ Add to OpenClaw config or skills:
   "ssh_targets": {
     "pi-dev": {
       "host": "<tailscale-ip>",
-      "user": "secureclaw-bot",
+      "user": "agentshroud-bot",
       "key": "~/.ssh/id_ed25519",
       "description": "Raspberry Pi 4 development server"
     }
@@ -1438,11 +1438,11 @@ Create OpenClaw skill or system prompt:
 ```markdown
 # Bot Development Team Workflow
 
-You are part of an autonomous development team working on SecureClaw.
+You are part of an autonomous development team working on AgentShroud.
 
 ## Your Environment
 - Development server: Raspberry Pi 4 (8GB) at <tailscale-ip>
-- Repository: git@github.com:username/secureclaw.git
+- Repository: git@github.com:username/agentshroud.git
 - CI/CD: GitHub Actions
 - Communication: Telegram (@therealidallasj_bot)
 
@@ -1474,7 +1474,7 @@ You are part of an autonomous development team working on SecureClaw.
 Run these checks before starting development:
 
 ```bash
-# On the Pi, as secureclaw-bot user:
+# On the Pi, as agentshroud-bot user:
 
 echo "=== Node.js ==="
 node --version          # Expected: v20.x.x
@@ -1487,8 +1487,8 @@ docker run --rm hello-world
 
 echo "=== Git ==="
 git --version           # Expected: 2.30+
-git config user.name    # Expected: secureclaw-bot
-git config user.email   # Expected: secureclaw-bot@...
+git config user.name    # Expected: agentshroud-bot
+git config user.email   # Expected: agentshroud-bot@...
 
 echo "=== Python ==="
 python3 --version       # Expected: 3.9+ (3.11+ on Bookworm)
@@ -1510,7 +1510,7 @@ ping -c 3 8.8.8.8       # Internet connectivity
 
 echo "=== SSH ==="
 ssh -T git@github.com   # GitHub SSH key
-# Expected: "Hi secureclaw-bot! You've successfully authenticated..."
+# Expected: "Hi agentshroud-bot! You've successfully authenticated..."
 
 echo "=== Firewall ==="
 sudo ufw status verbose # Should show SSH allowed on tailscale0
@@ -1521,9 +1521,9 @@ sudo ufw status verbose # Should show SSH allowed on tailscale0
 ```bash
 # Clone test
 cd ~/projects
-rm -rf secureclaw-test
-git clone git@github.com:<username>/secureclaw.git secureclaw-test
-cd secureclaw-test
+rm -rf agentshroud-test
+git clone git@github.com:<username>/agentshroud.git agentshroud-test
+cd agentshroud-test
 
 # Make test commit
 git checkout -b test-setup
@@ -1538,21 +1538,21 @@ git checkout main
 git branch -D test-setup
 git push origin --delete test-setup
 cd ..
-rm -rf secureclaw-test
+rm -rf agentshroud-test
 ```
 
 ### Docker Test
 
 ```bash
 # Build test
-cd ~/projects/secureclaw
-docker build -f docker/Dockerfile -t secureclaw:test .
+cd ~/projects/agentshroud
+docker build -f docker/Dockerfile -t agentshroud:test .
 
 # Run test
-docker run --rm secureclaw:test node --version
+docker run --rm agentshroud:test node --version
 
 # Cleanup
-docker rmi secureclaw:test
+docker rmi agentshroud:test
 ```
 
 ### Performance Test
@@ -1734,7 +1734,7 @@ vcgencmd get_throttled
 ### Slow Builds
 ```bash
 # Use build cache
-docker build --cache-from=secureclaw:latest
+docker build --cache-from=agentshroud:latest
 
 # Multi-stage builds
 # (Already in Dockerfile)
@@ -1750,7 +1750,7 @@ docker pull node:20-slim
 1. **Test bot development workflow:**
    ```bash
    # From your Mac:
-   openclaw "SSH to the Pi and run 'git status' in the secureclaw repo"
+   openclaw "SSH to the Pi and run 'git status' in the agentshroud repo"
    ```
 
 2. **Create first feature:**
@@ -1776,7 +1776,7 @@ docker pull node:20-slim
 
 **Setup Complete!** 🎉
 
-Your Raspberry Pi 4 is now ready to run the autonomous Bot Development Team for SecureClaw.
+Your Raspberry Pi 4 is now ready to run the autonomous Bot Development Team for AgentShroud.
 
 **Last Updated:** 2026-02-16
 **Setup Guide Version:** 1.0
