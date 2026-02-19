@@ -1,0 +1,456 @@
+# SecureClaw Deployment Architecture
+
+## Overview
+
+SecureClaw supports flexible deployment patterns optimized for different operational requirements and container runtime environments. The system provides two primary deployment modes: **Proxy Mode** for maximum security isolation and **Sidecar Mode** for performance-critical scenarios requiring minimal latency.
+
+## Deployment Modes
+
+### Proxy Mode (Recommended)
+
+Proxy mode implements complete network isolation with SecureClaw as the sole gateway to OpenClaw agents:
+
+```
+┌─────────────────────────────────────────────────────────────────────┐
+│                        Docker Host Environment                      │
+│                                                                     │
+│  ┌─ External Network (secureclaw_external) ─────────────────────┐   │
+│  │                                                              │   │
+│  │    ┌─────────────┐    ┌─────────────┐    ┌─────────────┐     │   │
+│  │    │   Ingress   │    │  Dashboard  │    │  Metrics    │     │   │
+│  │    │   Nginx     │◄──►│   WebApp    │◄──►│ Collector   │     │   │
+│  │    │ :80/:443    │    │   :3000     │    │   :9090     │     │   │
+│  │    └─────┬───────┘    └─────────────┘    └─────────────┘     │   │
+│  └──────────┼───────────────────────────────────────────────────┘   │
+│             │                                                       │
+│  ┌─ Management Network (secureclaw_mgmt) ─────────┐                 │
+│  │          │                                     │                 │
+│  │    ┌─────▼───────┐    ┌─────────────┐          │                 │
+│  │    │ SecureClaw  │    │   SQLite    │          │                 │
+│  │    │  Gateway    │◄──►│  Database   │          │                 │
+│  │    │   :8080     │    │  (Volume)   │          │                 │
+│  │    └─────┬───────┘    └─────────────┘          │                 │
+│  └──────────┼─────────────────────────────────────┘                 │
+│             │                                                       │
+│  ┌─ Internal Network (secureclaw_internal) ───────┐                 │
+│  │          │                                     │                 │
+│  │    ┌─────▼───────┐    ┌─────────────┐          │                 │
+│  │    │ OpenClaw    │    │  Memory/    │          │                 │
+│  │    │   Agent     │◄──►│  Skills     │          │                 │
+│  │    │ (Isolated)  │    │  Storage    │          │                 │
+│  │    └─────────────┘    └─────────────┘          │                 │
+│  └─────────────────────────────────────────────────┘                 │
+└─────────────────────────────────────────────────────────────────────┘
+```
+
+### Sidecar Mode (Performance Optimized)
+
+Sidecar mode co-locates SecureClaw with OpenClaw for reduced latency while maintaining security controls:
+
+```
+┌─────────────────────────────────────────────────────────────────────┐
+│                        Docker Host Environment                      │
+│                                                                     │
+│  ┌─ Shared Network (secureclaw_shared) ──────────────────────────┐   │
+│  │                                                             │   │
+│  │  ┌─────────────┐                    ┌─────────────┐         │   │
+│  │  │  External   │                    │ SecureClaw  │         │   │
+│  │  │  Traffic    │───── Traffic ────►│  Gateway    │         │   │
+│  │  │   :80/443   │      Flow         │   :8080     │         │   │
+│  │  └─────────────┘                    └──────┬──────┘         │   │
+│  │                                            │                │   │
+│  │                   Local Network            │                │   │
+│  │                   Communication            │                │   │
+│  │                        │                   │                │   │
+│  │  ┌─────────────┐       │            ┌─────▼───────┐         │   │
+│  │  │ OpenClaw    │◄──────┴────────────┤ OpenClaw    │         │   │
+│  │  │ Agent Core  │    Shared Memory    │ Agent Sidecar│        │   │
+│  │  │             │    Communication    │ (SecureClaw)│         │   │
+│  │  └─────────────┘                    └─────────────┘         │   │
+│  └─────────────────────────────────────────────────────────────┘   │
+└─────────────────────────────────────────────────────────────────────┘
+```
+
+## Multi-Runtime Support
+
+### Docker Runtime
+
+Standard Docker deployment using docker-compose:
+
+```yaml
+# docker-compose.yml
+version: '3.8'
+
+services:
+  secureclaw-gateway:
+    image: secureclaw/gateway:latest
+    container_name: secureclaw-gateway
+    networks:
+      - secureclaw_external
+      - secureclaw_internal
+    ports:
+      - "${SECURECLAW_PORT:-8080}:8080"
+    volumes:
+      - secureclaw_config:/app/config
+      - secureclaw_audit:/app/audit
+      - /var/run/docker.sock:/var/run/docker.sock:ro
+    environment:
+      - SECURECLAW_MODE=proxy
+      - OPENCLAW_INTERNAL_URL=http://openclaw:8000
+      - DATABASE_URL=sqlite:///app/data/audit.db
+    depends_on:
+      - openclaw-agent
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8080/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+
+  openclaw-agent:
+    image: openclaw/agent:latest
+    container_name: openclaw-agent
+    networks:
+      - secureclaw_internal
+    volumes:
+      - openclaw_workspace:/workspace
+      - openclaw_memory:/app/memory
+    environment:
+      - OPENCLAW_WORKSPACE=/workspace
+      - OPENCLAW_SECURITY_MODE=transparent
+    restart: unless-stopped
+
+networks:
+  secureclaw_external:
+    driver: bridge
+    ipam:
+      config:
+        - subnet: 172.20.0.0/24
+          gateway: 172.20.0.1
+  secureclaw_internal:
+    driver: bridge
+    internal: true
+    ipam:
+      config:
+        - subnet: 172.21.0.0/24
+          gateway: 172.21.0.1
+
+volumes:
+  secureclaw_config:
+    driver: local
+  secureclaw_audit:
+    driver: local
+  openclaw_workspace:
+    driver: local
+  openclaw_memory:
+    driver: local
+```
+
+### Podman Support
+
+Podman deployment with rootless containers and systemd integration:
+
+```yaml
+# podman-compose.yml
+version: '3.8'
+
+services:
+  secureclaw-gateway:
+    image: secureclaw/gateway:latest
+    container_name: secureclaw-gateway
+    security_opt:
+      - label=type:container_runtime_t
+    networks:
+      - secureclaw_external
+      - secureclaw_internal
+    ports:
+      - "${SECURECLAW_PORT:-8080}:8080"
+    volumes:
+      - secureclaw_config:/app/config:Z
+      - secureclaw_audit:/app/audit:Z
+      - /run/user/${UID}/podman/podman.sock:/var/run/docker.sock:ro
+    environment:
+      - CONTAINER_RUNTIME=podman
+      - SECURECLAW_MODE=proxy
+    user: "${UID}:${GID}"
+    userns_mode: keep-id
+    restart: unless-stopped
+
+networks:
+  secureclaw_external:
+    driver: bridge
+  secureclaw_internal:
+    driver: bridge
+    internal: true
+```
+
+### Apple Containers (macOS)
+
+Native macOS deployment using Apple's container runtime:
+
+```yaml
+# docker-compose.darwin.yml
+version: '3.8'
+
+services:
+  secureclaw-gateway:
+    platform: linux/arm64
+    image: secureclaw/gateway:arm64
+    ports:
+      - "${SECURECLAW_PORT:-8080}:8080"
+    networks:
+      - secureclaw_external
+      - secureclaw_internal
+    volumes:
+      - type: bind
+        source: /Users/Shared/SecureClaw/config
+        target: /app/config
+      - type: bind
+        source: /Users/Shared/SecureClaw/audit
+        target: /app/audit
+    environment:
+      - CONTAINER_RUNTIME=apple
+      - MACOS_KEYCHAIN_INTEGRATION=enabled
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+```
+
+## Network Topology
+
+### Three-Network Architecture
+
+SecureClaw implements a three-tier network model for maximum security:
+
+```
+Internet
+   │
+   ▼
+┌─────────────────────────────────────────────┐
+│          External Network                   │
+│        (secureclaw_external)                │
+│    ┌─────────────┐    ┌─────────────┐       │
+│    │   Ingress   │    │  Dashboard  │       │
+│    │   Proxy     │    │    Web      │       │ ◄── DMZ Zone
+│    │ (Public IP) │    │  Interface  │       │
+│    └─────┬───────┘    └─────────────┘       │
+└──────────┼─────────────────────────────────────┘
+           │
+    ┌──────▼──────┐
+    │  SecureClaw │
+    │   Gateway   │ ◄── Security Enforcement Point
+    │ (Dual-Homed)│
+    └──────┬──────┘
+           │
+┌──────────▼─────────────────────────────────────┐
+│         Management Network                     │
+│        (secureclaw_mgmt)                       │
+│  ┌─────────────┐    ┌─────────────┐            │ ◄── Control Plane
+│  │  Security   │    │   Audit     │            │
+│  │  Modules    │    │  Database   │            │
+│  └─────┬───────┘    └─────────────┘            │
+└────────┼──────────────────────────────────────────┘
+         │
+┌────────▼──────────────────────────────────────┐
+│         Internal Network                      │
+│       (secureclaw_internal)                   │
+│  ┌─────────────┐    ┌─────────────┐           │ ◄── Protected Zone
+│  │  OpenClaw   │    │   Memory    │           │
+│  │   Agent     │    │   Storage   │           │
+│  └─────────────┘    └─────────────┘           │
+└─────────────────────────────────────────────────┘
+```
+
+### DNS Routing Configuration
+
+SecureClaw provides intelligent DNS routing for service discovery:
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│                    DNS Resolution Flow                      │
+│                                                             │
+│  External Domain          SecureClaw DNS         Internal   │
+│  Resolution               Filter & Router        Services   │
+│                                                             │
+│  api.example.com ────────► DNS Filter ─────────► Gateway   │
+│                           │                     Service    │
+│  *.openclaw.local ───────►│ Block/Allow ──────► OpenClaw   │
+│                           │ Lists              Agent       │
+│  malicious.domain ───────►│                                │
+│                           ▼                               │
+│                        [BLOCKED]                          │
+│                                                           │
+│  Internal DNS Mapping:                                    │
+│  • gateway.secureclaw.local    → 172.20.0.2              │
+│  • agent.secureclaw.local      → 172.21.0.2              │
+│  • dashboard.secureclaw.local  → 172.20.0.3              │
+│  • audit.secureclaw.local      → 172.21.0.3              │
+└─────────────────────────────────────────────────────────────┘
+```
+
+## Port Mappings and Auto-Detection
+
+### Default Port Allocation
+
+```
+Component               Default Port    Auto-Detect Range
+─────────────────────────────────────────────────────────
+SecureClaw Gateway      8080           8080-8089
+Dashboard Web UI        3000           3000-3009
+OpenClaw Agent         8000           8000-8009
+SSH Proxy              2222           2222-2229
+MCP Proxy              8888           8888-8897
+Prometheus Metrics     9090           9090-9099
+Health Check           9999           9999-9999
+```
+
+### Multi-Instance Support
+
+SecureClaw automatically detects port conflicts and assigns available ports:
+
+```python
+# Port Auto-Detection Algorithm
+def find_available_port(base_port: int, instance_id: int) -> int:
+    """
+    Auto-detect available ports for multi-instance deployments
+    """
+    candidate_port = base_port + instance_id
+    max_attempts = 10
+    
+    for attempt in range(max_attempts):
+        port = candidate_port + attempt
+        if is_port_available(port):
+            return port
+    
+    raise PortExhaustionError(f"No available ports in range {base_port}-{base_port + max_attempts}")
+
+# Environment Variable Substitution
+SECURECLAW_GATEWAY_PORT=${SECURECLAW_PORT_BASE:-8080}
+SECURECLAW_INSTANCE_ID=${SECURECLAW_INSTANCE:-0}
+```
+
+## Volume Mounts and Secrets Management
+
+### Persistent Storage Architecture
+
+```
+Host Filesystem                    Container Mount Points
+───────────────                   ─────────────────────
+/opt/secureclaw/
+├── config/
+│   ├── gateway.yaml         ───► /app/config/gateway.yaml
+│   ├── security.yaml        ───► /app/config/security.yaml
+│   └── trust-policies.yaml  ───► /app/config/trust-policies.yaml
+├── data/
+│   ├── audit.db            ───► /app/data/audit.db
+│   ├── approval-queue.db   ───► /app/data/approval-queue.db
+│   └── trust-scores.json   ───► /app/data/trust-scores.json
+├── logs/
+│   ├── gateway.log         ───► /app/logs/gateway.log
+│   ├── security.log        ───► /app/logs/security.log
+│   └── audit.log           ───► /app/logs/audit.log
+└── secrets/
+    ├── tls-certificates/   ───► /app/certs/
+    ├── api-keys.env        ───► /run/secrets/api-keys
+    └── signing-key.pem     ───► /run/secrets/signing-key
+```
+
+### Secrets Management Integration
+
+SecureClaw supports multiple secrets management backends:
+
+#### Docker Secrets
+```yaml
+secrets:
+  api_keys:
+    file: ./secrets/api-keys.env
+  tls_cert:
+    external: true
+    external_name: secureclaw_tls_cert
+  signing_key:
+    external: true
+    external_name: secureclaw_signing_key
+
+services:
+  secureclaw-gateway:
+    secrets:
+      - source: api_keys
+        target: /run/secrets/api-keys
+        uid: '1000'
+        gid: '1000'
+        mode: 0400
+```
+
+#### HashiCorp Vault Integration
+```yaml
+environment:
+  - VAULT_ADDR=https://vault.example.com
+  - VAULT_ROLE=secureclaw-gateway
+  - VAULT_AUTH_METHOD=kubernetes
+  - VAULT_SECRET_PATH=secret/secureclaw/production
+```
+
+#### Cloud Provider Secrets
+```yaml
+# AWS Secrets Manager
+environment:
+  - AWS_REGION=us-west-2
+  - AWS_SECRETS_MANAGER_ARN=arn:aws:secretsmanager:us-west-2:123456789:secret:secureclaw-prod
+
+# Azure Key Vault
+environment:
+  - AZURE_KEYVAULT_URL=https://secureclaw.vault.azure.net/
+  - AZURE_CLIENT_ID=${AZURE_CLIENT_ID}
+  - AZURE_TENANT_ID=${AZURE_TENANT_ID}
+```
+
+## Zero-Configuration Deployment
+
+SecureClaw achieves "docker-compose up = fully secured" through intelligent defaults and auto-configuration:
+
+```bash
+# Complete deployment in three commands
+git clone https://github.com/idallasj/oneclaw.git
+cd oneclaw/deployments/secureclaw
+docker-compose up -d
+
+# Automatic configuration includes:
+# - Network isolation setup
+# - Security module initialization
+# - Default security policies
+# - Audit trail initialization
+# - Trust level baseline establishment
+# - Health monitoring activation
+```
+
+### Deployment Validation
+
+Automated deployment validation ensures security posture:
+
+```bash
+#!/bin/bash
+# deployment-validator.sh
+
+echo "🔍 Validating SecureClaw deployment..."
+
+# Network isolation check
+docker network inspect secureclaw_internal | jq '.Internal' | grep -q true || {
+    echo "❌ Internal network not properly isolated"
+    exit 1
+}
+
+# Security module health check
+curl -sf http://localhost:8080/health/security || {
+    echo "❌ Security modules not responding"
+    exit 1
+}
+
+# Audit system verification
+curl -sf http://localhost:8080/audit/chain/verify || {
+    echo "❌ Audit hash chain invalid"
+    exit 1
+}
+
+echo "✅ SecureClaw deployment validated successfully"
+```
+
+This deployment architecture ensures SecureClaw provides robust security controls while maintaining operational simplicity and supporting diverse container runtime environments.
