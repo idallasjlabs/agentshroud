@@ -161,9 +161,9 @@ class EnvironmentGuard:
         env_access_patterns = [
             r'\$\w+',  # Environment variable expansion like $PATH
             r'\$\{\w+\}',  # Environment variable expansion like ${PATH}
-            r'cat\s+/proc/\d+/environ',  # Direct environ file access
-            r'strings\s+/proc/\d+/environ',  # Strings on environ file
-            r'grep\s+.*\s+/proc/\d+/environ',  # Grep on environ file
+            r'cat\s+/proc/(?:\d+|self)/environ',  # Direct environ file access
+            r'strings\s+/proc/(?:\d+|self)/environ',  # Strings on environ file
+            r'grep\s+.*\s+/proc/(?:\d+|self)/environ',  # Grep on environ file
         ]
         
         for pattern in env_access_patterns:
