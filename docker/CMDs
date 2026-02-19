@@ -1,0 +1,14 @@
+#docker exec openclaw-bot openclaw config get gateway.auth.token
+
+#docker exec openclaw-bot openclaw config set gateway.auth.allowTailscale true
+
+#docker exec openclaw-bot openclaw dashboard
+
+#docker exec openclaw-bot openclaw config get gateway.auth
+
+#docker exec openclaw-bot openclaw --help
+
+docker exec openclaw-bot openclaw devices list
+
+#docker exec openclaw-bot openclaw devices approve <requestId>
+echo "docker exec openclaw-bot openclaw devices approve <requestId>"
