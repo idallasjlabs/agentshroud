@@ -1,0 +1,89 @@
+# SecureClaw MCP Proxy Configuration
+#
+# Register MCP servers here. The proxy intercepts all tool calls,
+# applies security checks, and forwards to the actual server.
+#
+# Philosophy: default-allow, log everything, block clear threats only.
+
+enabled: true
+
+# Global settings
+default_timeout_seconds: 30
+default_max_retries: 3
+global_rate_limit: 0  # 0 = unlimited. Set to e.g. 100 for 100 calls/min globally.
+
+# Security scanning
+audit_enabled: true
+pii_scan_enabled: true
+injection_scan_enabled: true
+
+servers:
+  # Example: Home Assistant MCP server
+  homeassistant:
+    transport: http_sse
+    url: "http://homeassistant.local:8123/mcp"
+    timeout_seconds: 30
+    max_retries: 3
+    min_trust_level: 0  # Any trust level can access
+    enabled: true
+    # Per-tool security (optional — sensible defaults inferred from tool names)
+    tools:
+      get_states:
+        permission_level: read
+        description: "Get entity states"
+      call_service:
+        permission_level: execute
+        rate_limit: 30  # Max 30 service calls per minute
+        sensitive: true
+        description: "Call a Home Assistant service"
+      get_history:
+        permission_level: read
+        description: "Get entity history"
+
+  # Example: Filesystem MCP server
+  filesystem:
+    transport: stdio
+    command: "npx"
+    args: ["-y", "@modelcontextprotocol/server-filesystem", "/home/user/documents"]
+    timeout_seconds: 10
+    min_trust_level: 1  # Requires at least write trust
+    tools:
+      read_file:
+        permission_level: read
+      write_file:
+        permission_level: write
+      delete_file:
+        permission_level: execute
+        sensitive: true
+
+  # Example: Database MCP server (restricted)
+  database:
+    transport: stdio
+    command: "python"
+    args: ["-m", "mcp_server_sqlite", "--db", "/data/app.db"]
+    timeout_seconds: 15
+    min_trust_level: 1
+    allowed_agents: ["main-agent", "data-agent"]  # Only these agents
+    denied_agents: []
+    tools:
+      query:
+        permission_level: read
+        rate_limit: 60
+      execute:
+        permission_level: write
+        rate_limit: 10
+        sensitive: true
+
+  # Example: Web search (open access)
+  web-search:
+    transport: stdio
+    command: "npx"
+    args: ["-y", "@modelcontextprotocol/server-brave-search"]
+    env:
+      BRAVE_API_KEY: "${BRAVE_API_KEY}"
+    timeout_seconds: 20
+    min_trust_level: 0
+    tools:
+      brave_web_search:
+        permission_level: read
+        rate_limit: 30
