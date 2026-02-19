@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# setup-secrets.sh — Interactive Docker secrets creator for SecureClaw
+# setup-secrets.sh — Interactive Docker secrets creator for AgentShroud
 # Generates all required secret files for docker-compose.
 set -euo pipefail
 
@@ -7,7 +7,7 @@ SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 cd "$SCRIPT_DIR"
 
 echo "╔═══════════════════════════════════════╗"
-echo "║  SecureClaw — Docker Secrets Setup    ║"
+echo "║  AgentShroud — Docker Secrets Setup    ║"
 echo "╚═══════════════════════════════════════╝"
 echo ""
 
@@ -63,7 +63,7 @@ if $ok; then
     echo "All required secrets created. Gateway password:"
     echo "  $(cat gateway_password.txt)"
     echo ""
-    echo "Next: edit secureclaw.yaml and run docker compose up -d"
+    echo "Next: edit agentshroud.yaml and run docker compose up -d"
 else
     echo ""
     echo "Some secrets are missing. Re-run this script."

@@ -1,8 +1,8 @@
-# SecureClaw Audit Specification
+# AgentShroud Audit Specification
 
 ## Overview
 
-SecureClaw implements a comprehensive audit system with cryptographic integrity guarantees through SHA-256 hash chaining. The audit system captures all security-relevant events across the platform, providing complete traceability for compliance, forensic analysis, and security monitoring.
+AgentShroud implements a comprehensive audit system with cryptographic integrity guarantees through SHA-256 hash chaining. The audit system captures all security-relevant events across the platform, providing complete traceability for compliance, forensic analysis, and security monitoring.
 
 ## Audit Event Types and Schema
 
@@ -17,7 +17,7 @@ SecureClaw implements a comprehensive audit system with cryptographic integrity 
   "timestamp": "2025-12-19T10:30:45.123Z",
   "user_id": "user_12345",
   "source_ip": "192.168.1.100",
-  "user_agent": "SecureClaw-Dashboard/1.0",
+  "user_agent": "AgentShroud-Dashboard/1.0",
   "success": true,
   "failure_reason": null,
   "session_id": "sess_abc123def456",
@@ -121,7 +121,7 @@ SecureClaw implements a comprehensive audit system with cryptographic integrity 
   "event_type": "container_deployed",
   "timestamp": "2025-12-19T10:30:49.567Z",
   "container_id": "cont_abc123",
-  "image": "secureclaw/gateway:v1.2.3",
+  "image": "agentshroud/gateway:v1.2.3",
   "runtime": "docker",
   "security_context": {
     "seccomp_profile": "restricted",
@@ -377,7 +377,7 @@ GET /api/v1/audit/verify
 ### Real-Time Event Streaming
 ```python
 # WebSocket connection for real-time audit events
-ws://api.secureclaw.local/audit/stream
+ws://api.agentshroud.local/audit/stream
   ?categories=SEC,AUTH
   &threat_levels=HIGH,CRITICAL
   &agents=agent_12345,agent_67890
@@ -454,8 +454,8 @@ Data_Confidentiality:
 {
   "processing_activity": "AI_Agent_Security_Monitoring",
   "controller": {
-    "name": "SecureClaw Security System",
-    "contact": "privacy@secureclaw.com"
+    "name": "AgentShroud Security System",
+    "contact": "privacy@agentshroud.com"
   },
   "purposes": [
     "Security monitoring and threat detection",
@@ -545,4 +545,4 @@ Scalability_Limits:
   archive_threshold: "100GB active storage"
 ```
 
-This comprehensive audit specification ensures SecureClaw provides enterprise-grade audit capabilities meeting international compliance standards while maintaining high performance and scalability.
+This comprehensive audit specification ensures AgentShroud provides enterprise-grade audit capabilities meeting international compliance standards while maintaining high performance and scalability.

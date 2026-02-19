@@ -15,7 +15,7 @@ from datetime import datetime, timezone
 from pathlib import Path
 from typing import Any
 
-logger = logging.getLogger("secureclaw.version_manager")
+logger = logging.getLogger("agentshroud.version_manager")
 
 # Pattern to mask credentials in output
 CREDENTIAL_PATTERNS = [

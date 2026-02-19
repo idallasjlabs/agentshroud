@@ -1,6 +1,6 @@
-# SecureClaw Security Architecture
+# AgentShroud Security Architecture
 
-**Project**: SecureClaw - A User-Controlled Proxy Layer for OpenClaw
+**Project**: AgentShroud - A User-Controlled Proxy Layer for OpenClaw
 **Version**: 0.2.0
 **Date**: 2026-02-15
 **Status**: Production-Ready Security Model
@@ -9,7 +9,7 @@
 
 ## Executive Summary
 
-SecureClaw is an **open-source security framework** that enables safe use of OpenClaw AI agents by creating a controlled isolation boundary. Instead of granting OpenClaw "god mode" access to your digital life (email, files, browser, photos, messaging), SecureClaw implements a **zero-trust proxy architecture** where:
+AgentShroud is an **open-source security framework** that enables safe use of OpenClaw AI agents by creating a controlled isolation boundary. Instead of granting OpenClaw "god mode" access to your digital life (email, files, browser, photos, messaging), AgentShroud implements a **zero-trust proxy architecture** where:
 
 ✅ **You control all data flow** - Agent only sees what you explicitly share
 ✅ **No host filesystem access** - Agent cannot read/write your local files
@@ -50,9 +50,9 @@ SecureClaw is an **open-source security framework** that enables safe use of Ope
    - Trojan code executes with agent's privileges
    - Attacker uses agent as entry point
 
-### What SecureClaw Does
+### What AgentShroud Does
 
-| Attack Vector | SecureClaw Mitigation |
+| Attack Vector | AgentShroud Mitigation |
 |--------------|----------------------|
 | Prompt injection → steal credentials | Agent has NO access to your real accounts - uses separate bot accounts |
 | Prompt injection → read files | Agent has NO filesystem access - isolated Docker volumes only |
@@ -75,7 +75,7 @@ SecureClaw is an **open-source security framework** that enables safe use of Ope
 └─────────────────────────────────────────────────────────────┘
                             ↕ (YOU control this boundary)
 ┌─────────────────────────────────────────────────────────────┐
-│ SECURECLAW GATEWAY (Proxy & Audit Layer)                   │
+│ AGENTSHROUD GATEWAY (Proxy & Audit Layer)                   │
 │ - Port: localhost:8080                                      │
 │ - PII Sanitization (removes SSN, credit cards, etc.)        │
 │ - Audit Ledger (logs all data sent to agent)               │
@@ -91,7 +91,7 @@ SecureClaw is an **open-source security framework** that enables safe use of Ope
 ┌─────────────────────────────────────────────────────────────┐
 │ OPENCLAW BOT (Isolated - Cannot Access Host)               │
 │ - Port: localhost:18789 (UI access only)                    │
-│ - Network: secureclaw-isolated (no LAN routes)              │
+│ - Network: agentshroud-isolated (no LAN routes)              │
 │ - Filesystem: Docker volumes ONLY (no host mounts)          │
 │ - Identity: therealidallasj@gmail.com (separate account)    │
 │ - Capabilities:                                             │
@@ -136,7 +136,7 @@ openclaw:
 
   # ✅ Isolated Docker network (no LAN access)
   networks:
-    - secureclaw-isolated  # Cannot reach 192.168.x.x, 10.x.x.x, etc.
+    - agentshroud-isolated  # Cannot reach 192.168.x.x, 10.x.x.x, etc.
 
   # ✅ Port exposed ONLY to localhost for UI access
   ports:
@@ -200,7 +200,7 @@ pids_limit: 512      # Max 512 processes
 **Implementation**:
 ```yaml
 networks:
-  secureclaw-isolated:
+  agentshroud-isolated:
     driver: bridge
     internal: false  # Allows internet, but Docker network is isolated
     ipam:
@@ -251,7 +251,7 @@ curl http://localhost:8080/ledger \
   -H "Authorization: Bearer $TOKEN" | jq
 
 # Export audit log
-docker exec secureclaw-gateway sqlite3 /app/data/ledger.db \
+docker exec agentshroud-gateway sqlite3 /app/data/ledger.db \
   "SELECT * FROM ledger ORDER BY timestamp DESC LIMIT 100"
 ```
 
@@ -338,7 +338,7 @@ secrets:
 
 ### Principle: You Decide What The Agent Sees
 
-**NOT SecureClaw** (OpenClaw default - dangerous):
+**NOT AgentShroud** (OpenClaw default - dangerous):
 ```
 ┌─────────────────┐
 │ OpenClaw Agent  │
@@ -353,7 +353,7 @@ secrets:
 ❌ Agent browses web with your identity
 ❌ Prompt injection → attacker controls your accounts
 
-**SecureClaw** (this project - safe):
+**AgentShroud** (this project - safe):
 ```
 ┌──────────────────────────────────────┐
 │ YOU (manually triggered actions)     │
@@ -453,7 +453,7 @@ secrets:
 5. **Regular audits**
    ```bash
    # Review audit ledger weekly
-   docker exec secureclaw-gateway sqlite3 /app/data/ledger.db \
+   docker exec agentshroud-gateway sqlite3 /app/data/ledger.db \
      "SELECT timestamp, source, forwarded_to FROM ledger WHERE timestamp > datetime('now', '-7 days')"
    ```
 
@@ -461,7 +461,7 @@ secrets:
 
 ## Limitations & Residual Risks
 
-### What SecureClaw DOES NOT Protect Against
+### What AgentShroud DOES NOT Protect Against
 
 1. **Social engineering of YOU**
    - Attacker tricks you into forwarding sensitive email to agent
@@ -529,7 +529,7 @@ We welcome contributions in:
 
 ### Security Checklist
 
-Before using SecureClaw:
+Before using AgentShroud:
 - [ ] Create separate bot accounts (email, GitHub, etc.)
 - [ ] Generate separate API keys for bot (not your personal keys)
 - [ ] Review docker-compose.yml (no host mounts you didn't intend)
@@ -567,5 +567,5 @@ docker compose -f docker/docker-compose.yml up -d --build
 **Version**: 0.2.0
 **Last Updated**: 2026-02-15
 **License**: MIT
-**Repository**: https://github.com/idallasj/oneclaw (SecureClaw)
+**Repository**: https://github.com/idallasj/oneclaw (AgentShroud)
 **Upstream**: https://openclaw.ai (OpenClaw)

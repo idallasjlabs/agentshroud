@@ -14,7 +14,7 @@ import time
 from dataclasses import dataclass, field
 from typing import Any
 
-logger = logging.getLogger("secureclaw.proxy.sidecar")
+logger = logging.getLogger("agentshroud.proxy.sidecar")
 
 SIDECAR_WARNING = (
     "SIDECAR MODE: Traffic can bypass this scanner. "

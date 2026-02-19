@@ -1,4 +1,4 @@
-# SecureClaw Docker Configuration
+# AgentShroud Docker Configuration
 
 **Status**: ✅ **READY TO RUN** (pending API key setup)
 **Phase**: 3 (Hardened Container + Persona Integration)
@@ -50,7 +50,7 @@ curl http://localhost:8080/status
 
 ```
 ┌─────────────────────────────────────────┐
-│  secureclaw-gateway                     │
+│  agentshroud-gateway                     │
 │  - Port: 127.0.0.1:8080 (localhost only)│
 │  - PII sanitization + audit ledger      │
 │  - Multi-agent routing                  │
@@ -135,7 +135,7 @@ docker-compose ps
 
 # Expected:
 # NAME                STATUS              PORTS
-# secureclaw-gateway  Up (healthy)        127.0.0.1:8080->8080/tcp
+# agentshroud-gateway  Up (healthy)        127.0.0.1:8080->8080/tcp
 # openclaw-chat       Up (healthy)
 ```
 
@@ -210,7 +210,7 @@ docker-compose up -d
 
 ```bash
 # Gateway
-docker exec -it secureclaw-gateway bash
+docker exec -it agentshroud-gateway bash
 
 # OpenClaw
 docker exec -it openclaw-chat bash

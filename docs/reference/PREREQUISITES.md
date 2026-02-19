@@ -1,4 +1,4 @@
-# SecureClaw Prerequisites
+# AgentShroud Prerequisites
 
 **Version**: 1.0.0
 **Last Updated**: 2026-02-16
@@ -8,7 +8,7 @@
 
 ## Overview
 
-SecureClaw requires careful setup of **isolated accounts** to maintain the "One Claw Tied Behind Your Back" security model. This document lists all prerequisites and setup steps.
+AgentShroud requires careful setup of **isolated accounts** to maintain the "One Claw Tied Behind Your Back" security model. This document lists all prerequisites and setup steps.
 
 ---
 
@@ -69,7 +69,7 @@ SecureClaw requires careful setup of **isolated accounts** to maintain the "One 
 
 **Setup Steps**:
 1. Create new Gmail: https://accounts.google.com/signup
-2. Use format like: `yourname.bot@gmail.com` or `secureclaw.bot@gmail.com`
+2. Use format like: `yourname.bot@gmail.com` or `agentshroud.bot@gmail.com`
 3. Use Google Voice number for 2FA
 4. Enable 2-Step Verification
 5. Generate App Password for bot use
@@ -129,7 +129,7 @@ SecureClaw requires careful setup of **isolated accounts** to maintain the "One 
 **Setup Steps**:
 1. Create 1Password account: https://1password.com/sign-up
 2. Choose Family plan (or join existing Family plan)
-3. Create dedicated vault: "SecureClaw Bot Credentials"
+3. Create dedicated vault: "AgentShroud Bot Credentials"
 4. **DO NOT** store credentials in default "Shared" vault
 5. Share bot vault ONLY with bot account
 6. Add bot credentials (Gmail, API keys, etc.)
@@ -143,7 +143,7 @@ SecureClaw requires careful setup of **isolated accounts** to maintain the "One 
 
 **Your Vaults**:
 - Private (your personal vault)
-- SecureClaw Bot Credentials (bot's vault) ✅
+- AgentShroud Bot Credentials (bot's vault) ✅
 - Family Shared (no bot access) ✅
 - Shared Vault - Do Not Use (empty) ✅
 
@@ -451,7 +451,7 @@ oneclaw/
 │   ├── Dockerfile                  # Gateway container definition
 │   ├── requirements.txt            # Python dependencies
 │   └── ingest_api/                 # Gateway API code
-├── secureclaw.yaml                 # Main configuration file
+├── agentshroud.yaml                 # Main configuration file
 └── README.md
 ```
 
@@ -489,8 +489,8 @@ chmod 600 docker/secrets/*.txt
 - External access: Tailscale VPN only
 
 **Docker Networks**:
-- `secureclaw-internal` (bridge, Gateway ↔ Host)
-- `secureclaw-isolated` (bridge, Gateway ↔ OpenClaw, no LAN)
+- `agentshroud-internal` (bridge, Gateway ↔ Host)
+- `agentshroud-isolated` (bridge, Gateway ↔ OpenClaw, no LAN)
 
 **No Exposed Ports**: All access via localhost or Tailscale
 
@@ -506,7 +506,7 @@ Use this checklist to verify all prerequisites:
 - [ ] Telegram account created (using Google Voice)
 - [ ] Telegram bot created (@BotFather)
 - [ ] 1Password account created (added to Family plan)
-- [ ] 1Password vault created ("SecureClaw Bot Credentials")
+- [ ] 1Password vault created ("AgentShroud Bot Credentials")
 - [ ] Bot added to Family plan (no access to default Shared vault)
 - [ ] OpenAI API key obtained
 - [ ] Anthropic API key obtained
@@ -522,7 +522,7 @@ Use this checklist to verify all prerequisites:
 ### Configuration
 - [ ] Docker secrets created in `docker/secrets/`
 - [ ] File permissions set (`chmod 600 docker/secrets/*.txt`)
-- [ ] `secureclaw.yaml` configured
+- [ ] `agentshroud.yaml` configured
 - [ ] Docker containers built (`docker compose build`)
 - [ ] Docker containers running (`docker compose up -d`)
 - [ ] Containers healthy (`docker compose ps`)
@@ -644,7 +644,7 @@ docker logs openclaw-bot 2>&1 | grep -i 1password
 **Containers not healthy**:
 ```bash
 # Check logs
-docker logs secureclaw-gateway
+docker logs agentshroud-gateway
 docker logs openclaw-bot
 
 # Restart containers
@@ -671,7 +671,7 @@ Based on your configuration:
 - ✅ Separate Gmail account (therealidallasj@gmail.com)
 - ✅ Separate Telegram account (@therealidallasj_bot)
 - ✅ 1Password account (added to Family plan)
-- ✅ Dedicated vault (SecureClaw Bot Credentials)
+- ✅ Dedicated vault (AgentShroud Bot Credentials)
 - ✅ No data in default Shared vault
 - ✅ Docker installed and working
 - ✅ Python 3.13 installed

@@ -1,10 +1,10 @@
-# SecureClaw Schema Documentation
+# AgentShroud Schema Documentation
 
-This document defines the database schemas, configuration file formats, and Docker secrets structure used by SecureClaw.
+This document defines the database schemas, configuration file formats, and Docker secrets structure used by AgentShroud.
 
 ## SQLite Database Schema
 
-SecureClaw uses SQLite for persistent storage of approval queue and audit data.
+AgentShroud uses SQLite for persistent storage of approval queue and audit data.
 
 ### Approval Queue Schema
 
@@ -113,7 +113,7 @@ END;
 ```python
 # Database connection settings
 DATABASE_CONFIG = {
-    "path": "/data/secureclaw.db",
+    "path": "/data/agentshroud.db",
     "timeout": 30.0,                # Connection timeout
     "check_same_thread": False,     # Allow multi-threading
     "journal_mode": "WAL",          # Write-Ahead Logging for performance
@@ -273,12 +273,12 @@ rate_limiter = RateLimiterState()
 
 ## Configuration File Schemas
 
-### Main Configuration (secureclaw.yaml)
+### Main Configuration (agentshroud.yaml)
 
 ```yaml
-# SecureClaw main configuration schema
+# AgentShroud main configuration schema
 api_version: "v1"
-kind: "SecureClawConfig"
+kind: "AgentShroudConfig"
 
 # Gateway settings
 gateway:
@@ -813,14 +813,14 @@ monitoring:
 
 ## Docker Secrets Structure
 
-SecureClaw uses Docker secrets for sensitive configuration data.
+AgentShroud uses Docker secrets for sensitive configuration data.
 
 ### Secret File Structure
 
 ```bash
 # Docker secrets directory structure
 /run/secrets/
-├── secureclaw-db-password          # Database password
+├── agentshroud-db-password          # Database password
 ├── openclaw-api-key               # OpenClaw API key
 ├── virustotal-api-key             # VirusTotal API key (optional)
 ├── urlvoid-api-key                # URLVoid API key (optional)
@@ -835,7 +835,7 @@ SecureClaw uses Docker secrets for sensitive configuration data.
 
 ```yaml
 secrets:
-  secureclaw-db-password:
+  agentshroud-db-password:
     external: true                  # Created externally
   
   openclaw-api-key:
@@ -863,10 +863,10 @@ secrets:
     file: ./secrets/admin-token.txt
 
 services:
-  secureclaw:
-    image: secureclaw:latest
+  agentshroud:
+    image: agentshroud:latest
     secrets:
-      - secureclaw-db-password
+      - agentshroud-db-password
       - openclaw-api-key
       - virustotal-api-key
       - urlvoid-api-key
@@ -876,7 +876,7 @@ services:
       - ssl-key
       - admin-token
     environment:
-      - SECURECLAW_DB_PASSWORD_FILE=/run/secrets/secureclaw-db-password
+      - AGENTSHROUD_DB_PASSWORD_FILE=/run/secrets/agentshroud-db-password
       - OPENCLAW_API_KEY_FILE=/run/secrets/openclaw-api-key
       - VIRUSTOTAL_API_KEY_FILE=/run/secrets/virustotal-api-key
       - URLVOID_API_KEY_FILE=/run/secrets/urlvoid-api-key
@@ -906,7 +906,7 @@ webhook_signing_secret_for_alerts
 eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9...
 
 # Database password generation
-openssl rand -hex 32 > secrets/secureclaw-db-password.txt
+openssl rand -hex 32 > secrets/agentshroud-db-password.txt
 ```
 
 ### Secret Rotation Script
@@ -933,7 +933,7 @@ docker secret create "$NEW_SECRET" "$NEW_SECRET_FILE"
 echo "Updating service to use new secret..."
 docker service update --secret-rm "$SECRET_NAME" \
                       --secret-add "source=${NEW_SECRET},target=${SECRET_NAME}" \
-                      secureclaw
+                      agentshroud
 
 echo "Removing old secret..."
 docker secret rm "$SECRET_NAME"
@@ -945,4 +945,4 @@ docker secret rm "$NEW_SECRET"
 echo "Secret rotation complete for: $SECRET_NAME"
 ```
 
-This schema documentation provides the complete data structure foundation for SecureClaw, ensuring consistency across all components and proper handling of sensitive data through Docker secrets.
+This schema documentation provides the complete data structure foundation for AgentShroud, ensuring consistency across all components and proper handling of sensitive data through Docker secrets.

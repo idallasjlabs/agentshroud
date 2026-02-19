@@ -5,7 +5,7 @@
 
 ## Context
 
-SecureClaw must be deployable with minimal configuration while achieving full security posture.
+AgentShroud must be deployable with minimal configuration while achieving full security posture.
 
 ## Decision
 

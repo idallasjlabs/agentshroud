@@ -1,4 +1,4 @@
-# SecureClaw Phase 3 - Quick Start Guide
+# AgentShroud Phase 3 - Quick Start Guide
 
 **Goal**: Get a working chat interface with Isaiah's personality in <5 minutes.
 
@@ -49,7 +49,7 @@ docker-compose up -d
 # Creating volume "docker_openclaw-data"
 # Building gateway...
 # Building openclaw...
-# Creating secureclaw-gateway ... done
+# Creating agentshroud-gateway ... done
 # Creating openclaw-chat       ... done
 ```
 
@@ -61,7 +61,7 @@ docker-compose ps
 
 # Expected output:
 # NAME                STATUS              PORTS
-# secureclaw-gateway  Up (healthy)        127.0.0.1:8080->8080/tcp
+# agentshroud-gateway  Up (healthy)        127.0.0.1:8080->8080/tcp
 # openclaw-chat       Up (healthy)
 
 # View logs
@@ -202,9 +202,9 @@ docker-compose down
 
 # Expected output:
 # Stopping openclaw-chat       ... done
-# Stopping secureclaw-gateway  ... done
+# Stopping agentshroud-gateway  ... done
 # Removing openclaw-chat       ... done
-# Removing secureclaw-gateway  ... done
+# Removing agentshroud-gateway  ... done
 # Removing network docker_secureclaw-internal
 ```
 
@@ -224,7 +224,7 @@ docker-compose up -d --build
 
 Once chat is working:
 
-1. **Save your auth token** → Add to `secureclaw.yaml` under `gateway.auth_token`
+1. **Save your auth token** → Add to `agentshroud.yaml` under `gateway.auth_token`
 2. **Test personality** → Ask questions about energy storage, AWS, data engineering
 3. **Verify security** → Run security audit script (Phase 3, Day 2)
 4. **Add iOS Shortcut** → Forward messages to gateway (Phase 4)
@@ -272,7 +272,7 @@ docker exec openclaw-chat ls -la /run/secrets/
          │ (Gateway API)
          ▼
 ┌─────────────────────────────────┐
-│  secureclaw-gateway container   │
+│  agentshroud-gateway container   │
 │  - PII sanitization             │
 │  - Audit ledger                 │
 │  - Routing                      │

@@ -6,7 +6,7 @@ PROJECT_ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")/../.." && pwd)"
 cd "$PROJECT_ROOT"
 
 echo "╔══════════════════════════════════════════════════════════════╗"
-echo "║         OpenClaw + SecureClaw Complete System Test          ║"
+echo "║         OpenClaw + AgentShroud Complete System Test          ║"
 echo "╚══════════════════════════════════════════════════════════════╝"
 echo ""
 

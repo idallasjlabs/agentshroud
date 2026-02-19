@@ -15,11 +15,11 @@ case $SERVICE in
         ;;
     gateway|gw)
         echo "=== Gateway Logs (last $LINES lines) ==="
-        docker logs secureclaw-gateway --tail $LINES
+        docker logs agentshroud-gateway --tail $LINES
         ;;
     all|*)
         echo "=== Gateway Logs (last $LINES lines) ==="
-        docker logs secureclaw-gateway --tail $LINES
+        docker logs agentshroud-gateway --tail $LINES
         echo -e "\n=== OpenClaw Logs (last $LINES lines) ==="
         docker logs openclaw-bot --tail $LINES
         ;;

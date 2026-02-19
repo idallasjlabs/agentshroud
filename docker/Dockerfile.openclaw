@@ -1,4 +1,4 @@
-# SecureClaw OpenClaw Container - Real OpenClaw Platform
+# AgentShroud OpenClaw Container - Real OpenClaw Platform
 # Goal: Full OpenClaw features (agents, skills, MCP) with bot identity
 # Base: Node.js 22 (required by OpenClaw)
 # Source: https://github.com/openclaw/openclaw
@@ -90,9 +90,9 @@ COPY docker/bot-capabilities.md /app/bot-capabilities.md
 COPY docker/SYSTEM-INSTRUCTIONS-SECURITY.md /app/SYSTEM-INSTRUCTIONS-SECURITY.md
 
 # OCI Image labels
-LABEL org.opencontainers.image.title="SecureClaw OpenClaw Bot"
+LABEL org.opencontainers.image.title="AgentShroud OpenClaw Bot"
 LABEL org.opencontainers.image.description="Real OpenClaw platform for therealidallasj bot"
-LABEL org.opencontainers.image.vendor="SecureClaw"
+LABEL org.opencontainers.image.vendor="AgentShroud"
 LABEL org.opencontainers.image.version="0.2.0"
 LABEL org.opencontainers.image.source="https://github.com/idallasj/oneclaw"
 

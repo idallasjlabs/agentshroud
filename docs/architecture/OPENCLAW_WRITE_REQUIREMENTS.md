@@ -218,7 +218,7 @@
 
 ## Current Docker Configuration
 
-Here's what's currently mounted in your SecureClaw setup:
+Here's what's currently mounted in your AgentShroud setup:
 
 ### ✅ Persistent Volumes (Data Survives Container Restart)
 

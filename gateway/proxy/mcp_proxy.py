@@ -21,7 +21,7 @@ from .mcp_config import MCPProxyConfig, MCPServerConfig, MCPTransport
 from .mcp_inspector import MCPInspector, ThreatLevel
 from .mcp_permissions import MCPPermissionManager
 
-logger = logging.getLogger("secureclaw.proxy.mcp_proxy")
+logger = logging.getLogger("agentshroud.proxy.mcp_proxy")
 
 
 @dataclass

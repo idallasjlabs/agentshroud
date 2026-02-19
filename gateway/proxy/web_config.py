@@ -8,7 +8,7 @@ import logging
 from dataclasses import dataclass, field
 from typing import Optional
 
-logger = logging.getLogger("secureclaw.proxy.web_config")
+logger = logging.getLogger("agentshroud.proxy.web_config")
 
 
 @dataclass

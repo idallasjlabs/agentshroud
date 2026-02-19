@@ -1,4 +1,4 @@
-# SecureClaw (OneClaw) — Code Review Report
+# AgentShroud (OneClaw) — Code Review Report
 
 **Repository:** `~/Development/oneclaw`
 **Reviewer:** OpenClaw Bot (TDD + QA perspectives)
@@ -9,7 +9,7 @@
 
 ## Executive Summary
 
-SecureClaw is a well-architected security proxy layer for OpenClaw with solid foundations: proper PII sanitization, audit ledger, approval queue, and multi-agent routing. The code quality is **above average** for an early-stage project. However, there are **critical security gaps**, **test coverage holes**, and **architectural concerns** that should be addressed before production use.
+AgentShroud is a well-architected security proxy layer for OpenClaw with solid foundations: proper PII sanitization, audit ledger, approval queue, and multi-agent routing. The code quality is **above average** for an early-stage project. However, there are **critical security gaps**, **test coverage holes**, and **architectural concerns** that should be addressed before production use.
 
 **Grade: B-** — Good bones, needs hardening.
 
@@ -58,14 +58,14 @@ All 5 integration tests are empty `pass` statements. This means **zero end-to-en
 
 ## 🟡 Important Issues
 
-### 5. `secureclaw-isolated` Network Doesn't Actually Isolate (SECURITY)
+### 5. `agentshroud-isolated` Network Doesn't Actually Isolate (SECURITY)
 **File:** `docker/docker-compose.yml`
 ```yaml
-secureclaw-isolated:
+agentshroud-isolated:
     driver: bridge
     internal: false  # <-- This allows internet AND LAN access
 ```
-The comment says "NO LAN routes" but `internal: false` means Docker applies normal routing, which **includes LAN**. The `blocked_networks` in `secureclaw.yaml` are only config values — nothing enforces them at the network level.
+The comment says "NO LAN routes" but `internal: false` means Docker applies normal routing, which **includes LAN**. The `blocked_networks` in `agentshroud.yaml` are only config values — nothing enforces them at the network level.
 
 **Fix:** Use `internal: true` + explicit iptables rules for API egress, or use a custom network plugin.
 

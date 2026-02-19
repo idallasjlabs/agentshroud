@@ -1,24 +1,24 @@
 # Use Cases
-## SecureClaw Security Proxy
+## AgentShroud Security Proxy
 
 ### Overview
-This document describes the primary use cases for SecureClaw, detailing how the system protects AI agents through various security scenarios. Each use case includes actors, preconditions, main flow, alternate flows, and postconditions.
+This document describes the primary use cases for AgentShroud, detailing how the system protects AI agents through various security scenarios. Each use case includes actors, preconditions, main flow, alternate flows, and postconditions.
 
 ---
 
 ## UC-001: User Sends Message to Agent (PII Sanitization Flow)
 
-**Actors**: End User, SecureClaw Proxy, AI Agent, Security Operator
+**Actors**: End User, AgentShroud Proxy, AI Agent, Security Operator
 
 **Preconditions**:
-- SecureClaw proxy is running and configured
+- AgentShroud proxy is running and configured
 - AI agent is connected through proxy
 - PII detection patterns are loaded
 - User has valid session
 
 **Main Flow**:
 1. User submits message containing PII (e.g., "My SSN is 123-45-6789")
-2. SecureClaw intercepts the message at ingestion endpoint
+2. AgentShroud intercepts the message at ingestion endpoint
 3. PII detection module scans message content
 4. System identifies SSN pattern and flags for redaction
 5. PII is replaced with placeholder: "My SSN is [REDACTED:SSN]"
@@ -42,7 +42,7 @@ This document describes the primary use cases for SecureClaw, detailing how the 
 
 ## UC-002: Agent Calls MCP Tool (Inspection + Permission Check)
 
-**Actors**: AI Agent, SecureClaw Proxy, MCP Server, Security Operator
+**Actors**: AI Agent, AgentShroud Proxy, MCP Server, Security Operator
 
 **Preconditions**:
 - MCP proxy is active and configured
@@ -52,7 +52,7 @@ This document describes the primary use cases for SecureClaw, detailing how the 
 
 **Main Flow**:
 1. AI agent requests to call file system tool via MCP
-2. SecureClaw MCP proxy intercepts the tool call
+2. AgentShroud MCP proxy intercepts the tool call
 3. System validates tool permissions against agent trust level
 4. Tool parameters are inspected for malicious patterns
 5. Path traversal detection scans file path parameters
@@ -78,7 +78,7 @@ This document describes the primary use cases for SecureClaw, detailing how the 
 
 ## UC-003: Agent Fetches Web Content (SSRF Check + Content Scan)
 
-**Actors**: AI Agent, SecureClaw Proxy, Web Server, Security Analyst
+**Actors**: AI Agent, AgentShroud Proxy, Web Server, Security Analyst
 
 **Preconditions**:
 - Web proxy module is enabled
@@ -88,7 +88,7 @@ This document describes the primary use cases for SecureClaw, detailing how the 
 
 **Main Flow**:
 1. AI agent requests web content from external URL
-2. SecureClaw web proxy receives the request
+2. AgentShroud web proxy receives the request
 3. URL is validated against SSRF protection rules
 4. Domain reputation check performed against threat feeds
 5. DNS resolution validated to prevent internal network access
@@ -113,18 +113,18 @@ This document describes the primary use cases for SecureClaw, detailing how the 
 
 ## UC-004: Admin Activates Kill Switch
 
-**Actors**: Security Administrator, SecureClaw Proxy, AI Agent, Monitoring System
+**Actors**: Security Administrator, AgentShroud Proxy, AI Agent, Monitoring System
 
 **Preconditions**:
 - Administrator has kill switch privileges
-- SecureClaw is in operational state
+- AgentShroud is in operational state
 - Monitoring systems are active
 - Emergency notification channels configured
 
 **Main Flow**:
 1. Administrator detects security incident requiring immediate shutdown
 2. Kill switch endpoint is activated via API or dashboard
-3. SecureClaw immediately blocks all new agent requests
+3. AgentShroud immediately blocks all new agent requests
 4. Active agent sessions are terminated gracefully
 5. All proxy modules enter shutdown mode
 6. Emergency notifications sent to configured channels
@@ -147,7 +147,7 @@ This document describes the primary use cases for SecureClaw, detailing how the 
 
 ## UC-005: Agent Requests SSH Access (Approval Queue)
 
-**Actors**: AI Agent, SecureClaw Proxy, Security Operator, Target SSH Server
+**Actors**: AI Agent, AgentShroud Proxy, Security Operator, Target SSH Server
 
 **Preconditions**:
 - SSH proxy module is configured
@@ -157,7 +157,7 @@ This document describes the primary use cases for SecureClaw, detailing how the 
 
 **Main Flow**:
 1. AI agent requests SSH connection to remote server
-2. SecureClaw SSH proxy receives connection request
+2. AgentShroud SSH proxy receives connection request
 3. Agent trust level and SSH permissions evaluated
 4. Request requires human approval based on policy
 5. SSH request queued in approval system
@@ -183,7 +183,7 @@ This document describes the primary use cases for SecureClaw, detailing how the 
 
 ## UC-006: Security Alert Triggers Notification
 
-**Actors**: SecureClaw Monitoring System, Security Operations Center, AI Agent, Threat Detection Engine
+**Actors**: AgentShroud Monitoring System, Security Operations Center, AI Agent, Threat Detection Engine
 
 **Preconditions**:
 - Threat detection engines are active
@@ -216,16 +216,16 @@ This document describes the primary use cases for SecureClaw, detailing how the 
 
 ## UC-007: New Agent Onboarding (Trust Level 0)
 
-**Actors**: New AI Agent, SecureClaw Proxy, System Administrator, Trust Management System
+**Actors**: New AI Agent, AgentShroud Proxy, System Administrator, Trust Management System
 
 **Preconditions**:
-- SecureClaw proxy is operational
+- AgentShroud proxy is operational
 - Trust management policies configured
 - New agent authentication credentials prepared
 - Onboarding procedures documented
 
 **Main Flow**:
-1. New AI agent connects to SecureClaw proxy
+1. New AI agent connects to AgentShroud proxy
 2. Agent authentication and identity verification
 3. Trust level initialized to 0 (untrusted)
 4. Restrictive security policies applied automatically
@@ -249,7 +249,7 @@ This document describes the primary use cases for SecureClaw, detailing how the 
 
 ## UC-008: Operator Reviews Audit Trail
 
-**Actors**: Security Operator, SecureClaw Audit System, Compliance Officer
+**Actors**: Security Operator, AgentShroud Audit System, Compliance Officer
 
 **Preconditions**:
 - Audit trail system operational
@@ -281,7 +281,7 @@ This document describes the primary use cases for SecureClaw, detailing how the 
 
 ## UC-009: System Detects Prompt Injection
 
-**Actors**: AI Agent, SecureClaw Proxy, Threat Detection Engine, Security Analyst
+**Actors**: AI Agent, AgentShroud Proxy, Threat Detection Engine, Security Analyst
 
 **Preconditions**:
 - Prompt injection detection models loaded
@@ -291,7 +291,7 @@ This document describes the primary use cases for SecureClaw, detailing how the 
 
 **Main Flow**:
 1. User submits message with embedded prompt injection
-2. SecureClaw ingestion process receives message
+2. AgentShroud ingestion process receives message
 3. Prompt injection detection engine analyzes content
 4. Malicious prompt patterns identified with confidence score
 5. Message blocked before reaching AI agent
@@ -314,17 +314,17 @@ This document describes the primary use cases for SecureClaw, detailing how the 
 
 ## UC-010: Multi-Instance Deployment with Port Auto-Detection
 
-**Actors**: DevOps Engineer, Container Orchestrator, SecureClaw Instances, Load Balancer
+**Actors**: DevOps Engineer, Container Orchestrator, AgentShroud Instances, Load Balancer
 
 **Preconditions**:
 - Container platform operational
-- SecureClaw container images available
+- AgentShroud container images available
 - Network configuration supports multi-instance
 - Service discovery mechanism configured
 
 **Main Flow**:
 1. DevOps engineer initiates multi-instance deployment
-2. Container orchestrator creates multiple SecureClaw instances
+2. Container orchestrator creates multiple AgentShroud instances
 3. Each instance performs port availability scan
 4. Unique ports automatically assigned to avoid conflicts
 5. Service discovery registration with assigned ports
@@ -339,7 +339,7 @@ This document describes the primary use cases for SecureClaw, detailing how the 
 - **A3**: Load balancer update fails - manual intervention required
 
 **Postconditions**:
-- Multiple SecureClaw instances operational
+- Multiple AgentShroud instances operational
 - Traffic distributed evenly across instances
 - High availability and scalability achieved
 - Configuration consistency maintained across instances

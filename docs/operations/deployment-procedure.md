@@ -1,6 +1,6 @@
-# SecureClaw Deployment Procedure
+# AgentShroud Deployment Procedure
 
-This document provides step-by-step instructions for deploying SecureClaw in production and development environments.
+This document provides step-by-step instructions for deploying AgentShroud in production and development environments.
 
 ## Prerequisites
 
@@ -39,7 +39,7 @@ gpg --version            # GPG 2.2+ (for secret encryption)
 
 | Port | Protocol | Purpose | Firewall Rule |
 |------|----------|---------|---------------|
-| 8443 | HTTPS | SecureClaw API | Allow from trusted networks |
+| 8443 | HTTPS | AgentShroud API | Allow from trusted networks |
 | 8000 | HTTP | OpenClaw (internal) | Block external access |
 | 3000 | HTTP | Grafana (optional) | Allow from admin networks |
 | 9090 | HTTP | Prometheus (optional) | Allow from admin networks |
@@ -65,14 +65,14 @@ op --version
 
 ## Deployment Modes
 
-SecureClaw supports two deployment modes:
+AgentShroud supports two deployment modes:
 
 ### Proxy Mode (Recommended)
 
-SecureClaw acts as a reverse proxy in front of OpenClaw:
+AgentShroud acts as a reverse proxy in front of OpenClaw:
 
 ```
-Client → SecureClaw (8443) → OpenClaw (8000)
+Client → AgentShroud (8443) → OpenClaw (8000)
 ```
 
 **Advantages:**
@@ -83,10 +83,10 @@ Client → SecureClaw (8443) → OpenClaw (8000)
 
 ### Sidecar Mode (Advanced)
 
-SecureClaw runs alongside OpenClaw with shared networking:
+AgentShroud runs alongside OpenClaw with shared networking:
 
 ```
-Client → Load Balancer → [SecureClaw + OpenClaw] Pod
+Client → Load Balancer → [AgentShroud + OpenClaw] Pod
 ```
 
 **Advantages:**
@@ -114,22 +114,22 @@ curl -L "https://github.com/docker/compose/releases/latest/download/docker-compo
 chmod +x /usr/local/bin/docker-compose
 
 # 4. Create dedicated user (security best practice)
-useradd -r -s /bin/bash -m -d /opt/secureclaw secureclaw
-usermod -aG docker secureclaw
+useradd -r -s /bin/bash -m -d /opt/agentshroud agentshroud
+usermod -aG docker agentshroud
 
 # 5. Create directory structure
-sudo -u secureclaw mkdir -p /opt/secureclaw/{config,secrets,data,logs,backup}
+sudo -u agentshroud mkdir -p /opt/agentshroud/{config,secrets,data,logs,backup}
 ```
 
 ### Step 2: Repository Clone and Configuration
 
 ```bash
-# Switch to SecureClaw user
-su - secureclaw
-cd /opt/secureclaw
+# Switch to AgentShroud user
+su - agentshroud
+cd /opt/agentshroud
 
 # Clone repository
-git clone https://github.com/company/secureclaw.git .
+git clone https://github.com/company/agentshroud.git .
 git checkout v1.0.0  # Use specific version tag
 
 # Verify files
@@ -146,7 +146,7 @@ chmod +x scripts/*.sh
 
 ```bash
 # Generate secure random passwords
-openssl rand -hex 32 > secrets/secureclaw-db-password.txt
+openssl rand -hex 32 > secrets/agentshroud-db-password.txt
 openssl rand -hex 32 > secrets/admin-token.txt
 openssl rand -base64 32 > secrets/webhook-secret.txt
 
@@ -171,8 +171,8 @@ chmod 600 secrets/*.txt
 export OP_SERVICE_ACCOUNT_TOKEN="your_service_account_token"
 
 # Create secrets from 1Password
-op item get "SecureClaw DB Password" --fields password > secrets/secureclaw-db-password.txt
-op item get "SecureClaw Admin Token" --fields token > secrets/admin-token.txt
+op item get "AgentShroud DB Password" --fields password > secrets/agentshroud-db-password.txt
+op item get "AgentShroud Admin Token" --fields token > secrets/admin-token.txt
 op item get "OpenClaw API Key" --fields api_key > secrets/openclaw-api-key.txt
 
 # Set proper permissions
@@ -187,7 +187,7 @@ chmod 600 secrets/*.txt
 # Generate self-signed certificate
 openssl req -x509 -newkey rsa:4096 -keyout secrets/ssl-key.pem \
   -out secrets/ssl-cert.pem -days 365 -nodes \
-  -subj "/C=US/ST=State/L=City/O=Organization/CN=secureclaw.local"
+  -subj "/C=US/ST=State/L=City/O=Organization/CN=agentshroud.local"
 
 # Set proper permissions
 chmod 600 secrets/ssl-*.pem
@@ -211,7 +211,7 @@ chmod 600 secrets/ssl-*.pem
 
 # Set up auto-renewal
 crontab -e
-# Add: 0 3 * * * certbot renew --quiet && docker compose restart secureclaw
+# Add: 0 3 * * * certbot renew --quiet && docker compose restart agentshroud
 ```
 
 #### Option C: Corporate Certificate Authority
@@ -232,18 +232,18 @@ chmod 600 secrets/ssl-*.pem
 
 ```bash
 # Copy example configuration
-cp config/secureclaw.yaml.example config/secureclaw.yaml
+cp config/agentshroud.yaml.example config/agentshroud.yaml
 cp config/egress-config.yml.example config/egress-config.yml
 cp config/mcp-config.yml.example config/mcp-config.yml
 
 # Edit main configuration
-vim config/secureclaw.yaml
+vim config/agentshroud.yaml
 ```
 
 **Key configuration sections to customize:**
 
 ```yaml
-# config/secureclaw.yaml
+# config/agentshroud.yaml
 gateway:
   host: "0.0.0.0"                    # Change if binding to specific interface
   port: 8443                         # Default HTTPS port
@@ -272,15 +272,15 @@ monitoring:
 
 ### Step 6: Port Configuration
 
-SecureClaw includes automatic port conflict detection:
+AgentShroud includes automatic port conflict detection:
 
 ```bash
 # Check for port conflicts
 ./scripts/check-ports.sh
 
-# If port 8443 is in use, SecureClaw will auto-detect and use an offset
+# If port 8443 is in use, AgentShroud will auto-detect and use an offset
 # You can also manually set the offset:
-export SECURECLAW_PORT_OFFSET=100
+export AGENTSHROUD_PORT_OFFSET=100
 # This will use port 8543 instead of 8443
 
 # Verify the selected port
@@ -297,7 +297,7 @@ export SECURECLAW_PORT_OFFSET=100
 docker secret ls
 
 # Expected output should include:
-# secureclaw-db-password
+# agentshroud-db-password
 # admin-token
 # openclaw-api-key  
 # ssl-cert
@@ -321,7 +321,7 @@ docker compose ps
 # secureclaw_grafana_1      Up   3000/tcp
 
 # View startup logs
-docker compose logs -f secureclaw
+docker compose logs -f agentshroud
 ```
 
 ### Step 9: Health Verification
@@ -335,7 +335,7 @@ curl -k https://localhost:8443/health
 # Expected: {"status": "healthy", "timestamp": "..."}
 
 # Test with custom port offset (if used)
-ACTUAL_PORT=$((8443 + ${SECURECLAW_PORT_OFFSET:-0}))
+ACTUAL_PORT=$((8443 + ${AGENTSHROUD_PORT_OFFSET:-0}))
 curl -k https://localhost:$ACTUAL_PORT/health
 
 # Detailed health check
@@ -378,9 +378,9 @@ open https://localhost:3000
 # Username: admin
 # Password: admin (change immediately)
 
-# Import SecureClaw dashboard
+# Import AgentShroud dashboard
 # 1. Go to Dashboards > Import
-# 2. Upload: monitoring/grafana/secureclaw-dashboard.json
+# 2. Upload: monitoring/grafana/agentshroud-dashboard.json
 # 3. Configure data source: http://prometheus:9090
 
 # Set up alerting
@@ -391,8 +391,8 @@ open https://localhost:3000
 ### Prometheus Configuration
 
 ```bash
-# Verify Prometheus is scraping SecureClaw metrics
-curl http://localhost:9090/api/v1/targets | jq '.data.activeTargets[] | select(.labels.job=="secureclaw")'
+# Verify Prometheus is scraping AgentShroud metrics
+curl http://localhost:9090/api/v1/targets | jq '.data.activeTargets[] | select(.labels.job=="agentshroud")'
 
 # Check key metrics are available
 curl 'http://localhost:9090/api/v1/query?query=secureclaw_requests_total'
@@ -412,7 +412,7 @@ set -e
 ADMIN_TOKEN=$(cat secrets/admin-token.txt)
 BASE_URL="https://localhost:8443"
 
-echo "Testing SecureClaw deployment..."
+echo "Testing AgentShroud deployment..."
 
 # Test 1: Health check
 echo "1. Health check..."
@@ -488,33 +488,33 @@ ufw allow from 192.168.0.0/16 to any port 8443
 ufw allow ssh
 
 # 3. Set up log rotation
-cat > /etc/logrotate.d/secureclaw << 'EOF'
-/opt/secureclaw/logs/*.log {
+cat > /etc/logrotate.d/agentshroud << 'EOF'
+/opt/agentshroud/logs/*.log {
     daily
     rotate 30
     compress
     delaycompress
     missingok
     notifempty
-    create 0644 secureclaw secureclaw
+    create 0644 agentshroud agentshroud
     postrotate
-        docker compose -f /opt/secureclaw/docker-compose.yml restart secureclaw
+        docker compose -f /opt/agentshroud/docker-compose.yml restart agentshroud
     endscript
 }
 EOF
 
 # 4. Set up automated backups
-cat > /opt/secureclaw/scripts/backup.sh << 'EOF'
+cat > /opt/agentshroud/scripts/backup.sh << 'EOF'
 #!/bin/bash
-BACKUP_DIR="/backup/secureclaw/$(date +%Y/%m)"
+BACKUP_DIR="/backup/agentshroud/$(date +%Y/%m)"
 mkdir -p "$BACKUP_DIR"
 
 # Database backup
-docker compose exec -T secureclaw sqlite3 /data/secureclaw.db \
+docker compose exec -T agentshroud sqlite3 /data/agentshroud.db \
   ".backup $BACKUP_DIR/audit_$(date +%Y%m%d_%H%M%S).db"
 
 # Configuration backup
-cp -r /opt/secureclaw/config "$BACKUP_DIR/config_$(date +%Y%m%d)/"
+cp -r /opt/agentshroud/config "$BACKUP_DIR/config_$(date +%Y%m%d)/"
 
 # Compress and clean up
 tar czf "$BACKUP_DIR/backup_$(date +%Y%m%d).tar.gz" \
@@ -522,14 +522,14 @@ tar czf "$BACKUP_DIR/backup_$(date +%Y%m%d).tar.gz" \
 rm -rf "$BACKUP_DIR"/*.db "$BACKUP_DIR"/config_*
 
 # Keep only 30 days of backups
-find /backup/secureclaw -name "*.tar.gz" -mtime +30 -delete
+find /backup/agentshroud -name "*.tar.gz" -mtime +30 -delete
 EOF
 
-chmod +x /opt/secureclaw/scripts/backup.sh
+chmod +x /opt/agentshroud/scripts/backup.sh
 
 # Add to cron
-crontab -u secureclaw -e
-# Add: 0 2 * * * /opt/secureclaw/scripts/backup.sh
+crontab -u agentshroud -e
+# Add: 0 2 * * * /opt/agentshroud/scripts/backup.sh
 ```
 
 ### Performance Tuning
@@ -551,7 +551,7 @@ systemctl restart docker
 
 # 2. Set resource limits in docker-compose.yml
 # Add to services:
-#   secureclaw:
+#   agentshroud:
 #     mem_limit: 4g
 #     mem_reservation: 2g
 #     cpus: '2.0'
@@ -572,7 +572,7 @@ lsof -i :8443
 kill $(lsof -t -i :8443)
 
 # Option 2: Use port offset
-export SECURECLAW_PORT_OFFSET=100
+export AGENTSHROUD_PORT_OFFSET=100
 docker compose down
 docker compose up -d
 
@@ -599,7 +599,7 @@ echo | openssl s_client -connect localhost:8443 -servername localhost
 
 ```bash
 # Check logs
-docker compose logs secureclaw
+docker compose logs agentshroud
 
 # Common issues:
 # - Missing secrets: Run create-secrets.sh
@@ -608,9 +608,9 @@ docker compose logs secureclaw
 # - Invalid config: Validate YAML syntax
 
 # Debug startup
-docker compose run --rm secureclaw python -c "
+docker compose run --rm agentshroud python -c "
 import yaml
-with open('/config/secureclaw.yaml') as f:
+with open('/config/agentshroud.yaml') as f:
     config = yaml.safe_load(f)
     print('Configuration loaded successfully')
 "
@@ -620,13 +620,13 @@ with open('/config/secureclaw.yaml') as f:
 
 ```bash
 # Check database file permissions
-ls -la /opt/secureclaw/data/
+ls -la /opt/agentshroud/data/
 
 # Should be owned by 999:999 (Docker user)
-chown -R 999:999 /opt/secureclaw/data/
+chown -R 999:999 /opt/agentshroud/data/
 
 # Test database connectivity
-docker compose exec secureclaw sqlite3 /data/secureclaw.db ".databases"
+docker compose exec agentshroud sqlite3 /data/agentshroud.db ".databases"
 ```
 
 ## Maintenance Procedures
@@ -640,7 +640,7 @@ docker compose exec secureclaw sqlite3 /data/secureclaw.db ".databases"
 | Weekly | Update system packages | `apt update && apt upgrade` |
 | Weekly | Backup database | `./scripts/backup.sh` |
 | Monthly | Review audit logs | Access Grafana dashboard |
-| Monthly | Update SecureClaw | `./scripts/update-secureclaw.sh` |
+| Monthly | Update AgentShroud | `./scripts/update-agentshroud.sh` |
 | Quarterly | Security review | Review configurations and access |
 | Quarterly | DR test | Test backup/restore procedures |
 
@@ -668,4 +668,4 @@ docker compose up -d
 ./test-deployment.sh
 ```
 
-This deployment procedure ensures a secure, reliable SecureClaw installation. Always test in a development environment before deploying to production, and maintain regular backups of configuration and audit data.
+This deployment procedure ensures a secure, reliable AgentShroud installation. Always test in a development environment before deploying to production, and maintain regular backups of configuration and audit data.

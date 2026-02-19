@@ -1,4 +1,4 @@
-"""Security and edge case tests for SecureClaw Gateway"""
+"""Security and edge case tests for AgentShroud Gateway"""
 
 import pytest
 from gateway.ingest_api.sanitizer import PIISanitizer

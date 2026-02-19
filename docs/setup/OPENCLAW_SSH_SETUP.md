@@ -29,20 +29,20 @@ On your **Raspberry Pi**, run these commands:
 # SSH into the Pi as idallasj (your primary user)
 ssh idallasj@raspberrypi.tail240ea8.ts.net
 
-# Create .ssh directory for secureclaw-bot if it doesn't exist
-sudo mkdir -p /home/secureclaw-bot/.ssh
+# Create .ssh directory for agentshroud-bot if it doesn't exist
+sudo mkdir -p /home/agentshroud-bot/.ssh
 
 # Add the OpenClaw bot's public key
 echo "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIE/kQadW0OjqtR7Ersmh+uutCIasXZ9HWUNUCNDEpHLO openclaw-bot@therealidallasj" | \
-    sudo tee -a /home/secureclaw-bot/.ssh/authorized_keys
+    sudo tee -a /home/agentshroud-bot/.ssh/authorized_keys
 
 # Set correct ownership and permissions
-sudo chown -R secureclaw-bot:secureclaw-bot /home/secureclaw-bot/.ssh
-sudo chmod 700 /home/secureclaw-bot/.ssh
-sudo chmod 600 /home/secureclaw-bot/.ssh/authorized_keys
+sudo chown -R agentshroud-bot:agentshroud-bot /home/agentshroud-bot/.ssh
+sudo chmod 700 /home/agentshroud-bot/.ssh
+sudo chmod 600 /home/agentshroud-bot/.ssh/authorized_keys
 
 # Verify the key was added
-sudo cat /home/secureclaw-bot/.ssh/authorized_keys
+sudo cat /home/agentshroud-bot/.ssh/authorized_keys
 ```
 
 ### Step 2: Test SSH Connection from OpenClaw Bot
@@ -60,7 +60,7 @@ docker exec -u node openclaw-bot ssh -T pi-dev
 docker exec -u node openclaw-bot ssh pi-dev "hostname && whoami"
 # Expected output:
 # raspberrypi
-# secureclaw-bot
+# agentshroud-bot
 ```
 
 ### Step 3: Verify from OpenClaw UI or Telegram
@@ -92,7 +92,7 @@ The bot has been configured with the following SSH settings:
 ```
 Host pi-dev raspberrypi
     HostName raspberrypi.tail240ea8.ts.net
-    User secureclaw-bot
+    User agentshroud-bot
     IdentityFile ~/.ssh/id_ed25519
     IdentitiesOnly yes
     StrictHostKeyChecking accept-new
@@ -101,7 +101,7 @@ Host pi-dev raspberrypi
 ```
 
 **Aliases:** `pi-dev`, `raspberrypi`
-**User:** `secureclaw-bot`
+**User:** `agentshroud-bot`
 **Hostname:** `raspberrypi.tail240ea8.ts.net`
 
 ### Default Settings (All Hosts)
@@ -211,13 +211,13 @@ docker exec -u node openclaw-bot ssh pi-dev
 docker exec -u node openclaw-bot ssh pi-dev "uptime"
 
 # Run multiple commands
-docker exec -u node openclaw-bot ssh pi-dev "cd /home/secureclaw-bot/projects && git status"
+docker exec -u node openclaw-bot ssh pi-dev "cd /home/agentshroud-bot/projects && git status"
 
 # Copy file to Pi
-docker exec -u node openclaw-bot scp /path/to/file pi-dev:/home/secureclaw-bot/
+docker exec -u node openclaw-bot scp /path/to/file pi-dev:/home/agentshroud-bot/
 
 # Copy file from Pi
-docker exec -u node openclaw-bot scp pi-dev:/home/secureclaw-bot/file.txt /tmp/
+docker exec -u node openclaw-bot scp pi-dev:/home/agentshroud-bot/file.txt /tmp/
 ```
 
 ### From OpenClaw Bot (Natural Language)
@@ -234,7 +234,7 @@ Please SSH to pi-dev and create a new directory: ~/projects/test
 
 **Complex Task:**
 ```
-SSH to raspberrypi, clone the secureclaw repo, install dependencies, and run tests
+SSH to raspberrypi, clone the agentshroud repo, install dependencies, and run tests
 ```
 
 ---
@@ -246,10 +246,10 @@ SSH to raspberrypi, clone the secureclaw repo, install dependencies, and run tes
 **Solution:**
 ```bash
 # 1. Verify public key is on target host
-ssh idallasj@raspberrypi.tail240ea8.ts.net "sudo cat /home/secureclaw-bot/.ssh/authorized_keys"
+ssh idallasj@raspberrypi.tail240ea8.ts.net "sudo cat /home/agentshroud-bot/.ssh/authorized_keys"
 
 # 2. Check permissions on target host
-ssh idallasj@raspberrypi.tail240ea8.ts.net "sudo ls -la /home/secureclaw-bot/.ssh/"
+ssh idallasj@raspberrypi.tail240ea8.ts.net "sudo ls -la /home/agentshroud-bot/.ssh/"
 # Should be: drwx------ (700) for .ssh/, -rw------- (600) for authorized_keys
 
 # 3. Test with verbose output
@@ -344,11 +344,11 @@ docker exec openclaw-bot ls -la /home/node/.ssh/
 docker exec -u node openclaw-bot ssh -G pi-dev | grep -E "hostname|user|identityfile"
 # Expected:
 #   hostname raspberrypi.tail240ea8.ts.net
-#   user secureclaw-bot
+#   user agentshroud-bot
 #   identityfile ~/.ssh/id_ed25519
 
 # 3. Check public key is on Pi
-ssh idallasj@raspberrypi.tail240ea8.ts.net "sudo cat /home/secureclaw-bot/.ssh/authorized_keys | grep openclaw-bot"
+ssh idallasj@raspberrypi.tail240ea8.ts.net "sudo cat /home/agentshroud-bot/.ssh/authorized_keys | grep openclaw-bot"
 # Expected: ssh-ed25519 AAAAC3Nza... openclaw-bot@therealidallasj
 
 # 4. Test bot SSH connection
@@ -358,7 +358,7 @@ docker exec -u node openclaw-bot ssh -T -o BatchMode=yes pi-dev "echo 'SSH Succe
 # 5. Verify SSH from OpenClaw works
 # Via Telegram or Control UI:
 # "SSH to pi-dev and run: whoami"
-# Expected: secureclaw-bot
+# Expected: agentshroud-bot
 ```
 
 ---
@@ -377,7 +377,7 @@ docker exec -u node openclaw-bot ssh -T -o BatchMode=yes pi-dev "echo 'SSH Succe
 ### 🔐 Credentials in 1Password
 All SSH connection details are stored in 1Password:
 - Raspberry Pi hostname: `raspberrypi.tail240ea8.ts.net`
-- Username: `secureclaw-bot` (hyphen, not underscore)
+- Username: `agentshroud-bot` (hyphen, not underscore)
 - SSH public key (also documented below)
 
 ### Public Key (Copy-Paste Ready)
@@ -387,7 +387,7 @@ ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIE/kQadW0OjqtR7Ersmh+uutCIasXZ9HWUNUCNDEpHLO
 
 ### One-Liner to Add to Pi
 ```bash
-echo "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIE/kQadW0OjqtR7Ersmh+uutCIasXZ9HWUNUCNDEpHLO openclaw-bot@therealidallasj" | sudo tee -a /home/secureclaw-bot/.ssh/authorized_keys && sudo chown secureclaw-bot:secureclaw-bot /home/secureclaw-bot/.ssh/authorized_keys && sudo chmod 600 /home/secureclaw-bot/.ssh/authorized_keys
+echo "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIE/kQadW0OjqtR7Ersmh+uutCIasXZ9HWUNUCNDEpHLO openclaw-bot@therealidallasj" | sudo tee -a /home/agentshroud-bot/.ssh/authorized_keys && sudo chown agentshroud-bot:agentshroud-bot /home/agentshroud-bot/.ssh/authorized_keys && sudo chmod 600 /home/agentshroud-bot/.ssh/authorized_keys
 ```
 
 ### Test Connection
@@ -395,7 +395,7 @@ echo "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIE/kQadW0OjqtR7Ersmh+uutCIasXZ9HWUNUCN
 docker exec -u node openclaw-bot ssh pi-dev "hostname && whoami"
 # Expected output:
 # raspberrypi
-# secureclaw-bot
+# agentshroud-bot
 ```
 
 ---

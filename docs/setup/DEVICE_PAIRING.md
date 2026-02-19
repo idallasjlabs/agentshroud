@@ -1,4 +1,4 @@
-# SecureClaw Device Pairing Management
+# AgentShroud Device Pairing Management
 
 **Version**: 1.0
 **Last Updated**: 2026-02-16
@@ -7,7 +7,7 @@
 
 ## Overview
 
-Device pairing is a critical security feature in SecureClaw that ensures only explicitly approved devices can access the OpenClaw Control UI. This is a second layer of authentication beyond the gateway password.
+Device pairing is a critical security feature in AgentShroud that ensures only explicitly approved devices can access the OpenClaw Control UI. This is a second layer of authentication beyond the gateway password.
 
 **Security Model:**
 1. **Gateway Password** - Required for ALL connections (first layer)
@@ -19,14 +19,14 @@ This dual-layer approach prevents unauthorized access even if the gateway passwo
 
 ## Why Device Pairing Matters
 
-For SecureClaw ("One Claw Tied Behind Your Back"), device pairing ensures:
+For AgentShroud ("One Claw Tied Behind Your Back"), device pairing ensures:
 - You control exactly which devices can manage the AI agent
 - Each new browser/computer requires your explicit approval
 - Stolen passwords alone cannot grant access
 - Full audit trail of which devices have connected
 - Ability to revoke access from compromised devices
 
-**Never disable device pairing** - it's a core SecureClaw security feature.
+**Never disable device pairing** - it's a core AgentShroud security feature.
 
 ---
 
@@ -374,9 +374,9 @@ docker exec openclaw-bot openclaw devices reject <OLD_REQUEST_ID_2>
 
 ---
 
-## Integration with SecureClaw Workflow
+## Integration with AgentShroud Workflow
 
-Device pairing integrates with other SecureClaw security features:
+Device pairing integrates with other AgentShroud security features:
 
 1. **Gateway Password** (First layer)
    - Stored in: `docker/secrets/gateway_password.txt`

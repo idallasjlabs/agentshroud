@@ -1,9 +1,9 @@
 #!/usr/bin/env bash
-# Quick verification script for SecureClaw Gateway
+# Quick verification script for AgentShroud Gateway
 
 set -e
 
-echo "=== SecureClaw Gateway Verification ==="
+echo "=== AgentShroud Gateway Verification ==="
 echo ""
 
 # Check Python version
