@@ -297,7 +297,7 @@ def setup_resource_guard(limits: Optional[ResourceLimits] = None) -> ResourceGua
             elif resource_type == "temp_files":
                 # Check temp file limit
                 usage = self.usage_by_agent.get(agent_id, ResourceUsage())
-                current_count = len(usage.temp_files)
+                current_count = usage.temp_files_count
                 if current_count + amount > self.limits.max_temp_files:
                     return False, f"Agent {agent_id} temp_files ({current_count + amount}) exceeds limit ({self.limits.max_temp_files})"
                 return True, ""
