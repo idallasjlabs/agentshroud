@@ -6,9 +6,11 @@ Design: log-and-allow for ambiguous cases, block only clear threats.
 import base64
 import logging
 import re
+import unicodedata
 from dataclasses import dataclass, field
 from enum import Enum
 from typing import Any, Optional
+from urllib.parse import unquote
 
 logger = logging.getLogger("secureclaw.proxy.mcp_inspector")
 
@@ -128,11 +130,78 @@ class MCPInspector:
                 results.extend(self._extract_strings(v, f"{path}[{i}]"))
         return results
 
+    @staticmethod
+    def _normalize_unicode(text: str) -> str:
+        """Normalize Unicode homoglyphs to ASCII for pattern matching.
+        
+        Converts confusable characters (Cyrillic а→a, fullwidth Ａ→A, etc.)
+        to their ASCII equivalents so injection patterns can't be bypassed
+        by substituting look-alike characters.
+        """
+        # NFKC normalization maps fullwidth, compatibility, and many
+        # confusable code points to their canonical forms.
+        return unicodedata.normalize('NFKC', text)
+
+    @staticmethod
+    def _decode_layers(text: str, max_depth: int = 3) -> list[str]:
+        """Decode base64 and URL-encoded layers to catch hidden payloads.
+        
+        Returns list of decoded versions (including original).
+        """
+        results = [text]
+        current = text
+        for _ in range(max_depth):
+            decoded_any = False
+
+            # Try URL decoding
+            url_decoded = unquote(current)
+            if url_decoded != current:
+                results.append(url_decoded)
+                current = url_decoded
+                decoded_any = True
+                continue
+
+            # Try base64 decoding
+            try:
+                # Only attempt if it looks like base64
+                stripped = current.strip()
+                if len(stripped) >= 20 and re.match(r'^[A-Za-z0-9+/=_-]+$', stripped):
+                    padded = stripped + '=' * (-len(stripped) % 4)
+                    raw = base64.b64decode(padded, validate=True)
+                    decoded_str = raw.decode('utf-8', errors='strict')
+                    # Only keep if it produced printable text
+                    if decoded_str.isprintable() or '
+' in decoded_str:
+                        results.append(decoded_str)
+                        current = decoded_str
+                        decoded_any = True
+                        continue
+            except Exception:
+                pass
+
+            if not decoded_any:
+                break
+
+        return results
+
     def _check_injection(self, text: str, field_path: str) -> list[InspectionFinding]:
-        """Check text for prompt injection patterns."""
+        """Check text for prompt injection patterns.
+        
+        Normalizes Unicode homoglyphs and decodes base64/URL-encoded layers
+        before pattern matching to prevent bypass via encoding tricks.
+        """
         findings = []
-        for pattern, desc in self._compiled_high:
-            if pattern.search(text):
+        # Build list of text variants to check
+        normalized = self._normalize_unicode(text)
+        variants = set()
+        for t in [text, normalized]:
+            for decoded in self._decode_layers(t):
+                variants.add(decoded)
+                variants.add(self._normalize_unicode(decoded))
+
+        for variant in variants:
+            for pattern, desc in self._compiled_high:
+                if pattern.search(variant):
                 findings.append(InspectionFinding(
                     finding_type=FindingType.INJECTION,
                     threat_level=ThreatLevel.HIGH,
@@ -140,16 +209,26 @@ class MCPInspector:
                     field_path=field_path,
                     matched_value=text[:100] + "..." if len(text) > 100 else text,
                 ))
-        for pattern, desc in self._compiled_low:
-            if pattern.search(text):
-                findings.append(InspectionFinding(
-                    finding_type=FindingType.INJECTION,
-                    threat_level=ThreatLevel.LOW,
-                    description=f"Possible injection: {desc}",
-                    field_path=field_path,
-                    matched_value=text[:100] + "..." if len(text) > 100 else text,
-                ))
-        return findings
+                break  # One match per pattern is enough
+            for pattern, desc in self._compiled_low:
+                if pattern.search(variant):
+                    findings.append(InspectionFinding(
+                        finding_type=FindingType.INJECTION,
+                        threat_level=ThreatLevel.LOW,
+                        description=f"Possible injection: {desc}",
+                        field_path=field_path,
+                        matched_value=text[:100] + "..." if len(text) > 100 else text,
+                    ))
+                    break  # One match per pattern is enough
+
+        # Deduplicate findings by description
+        seen = set()
+        unique = []
+        for f in findings:
+            if f.description not in seen:
+                seen.add(f.description)
+                unique.append(f)
+        return unique
 
     def _check_pii(self, text: str, field_path: str) -> list[InspectionFinding]:
         """Check text for PII patterns."""
@@ -252,6 +331,18 @@ class MCPInspector:
                 findings.extend(self._check_suspicious_encoding(text, path))
             if check_sensitive:
                 findings.extend(self._check_sensitive_ops(text, path))
+
+        # Cross-parameter PII check: concatenate all param values to catch
+        # PII split across multiple fields (e.g., SSN digits in separate params)
+        if check_pii and len(strings) > 1:
+            concatenated = " ".join(s for s, _ in strings if s != tool_name)
+            cross_findings = self._check_pii(concatenated, "params[concatenated]")
+            # Only add findings we didn't already catch in individual fields
+            existing_descs = {f.description for f in findings}
+            for cf in cross_findings:
+                if cf.description not in existing_descs:
+                    cf.field_path = "params[cross-field]"
+                    findings.append(cf)
 
         # Determine if we should block
         block_threshold = ThreatLevel.MEDIUM if self.strict_mode else ThreatLevel.HIGH
