@@ -75,7 +75,7 @@ class TestNetworkValidator:
         os.unlink(f.name)
         
         assert len(findings) >= 1
-        assert any("host" in finding.issue_description.lower() for finding in findings)
+        assert any("host" in finding.description.lower() for finding in findings)
     
     def test_validate_docker_compose_config_privileged_flagged(self):
         """Test that privileged containers are flagged."""
@@ -105,7 +105,7 @@ class TestNetworkValidator:
         os.unlink(f.name)
         
         assert len(findings) >= 1
-        assert any("privileged" in finding.issue_description.lower() for finding in findings)
+        assert any("privileged" in finding.description.lower() for finding in findings)
     
     def test_validate_docker_compose_config_openclaw_isolation(self):
         """Test that OpenClaw container isolation is validated."""
@@ -134,7 +134,7 @@ class TestNetworkValidator:
         os.unlink(f.name)
         
         # Should flag that openclaw is not properly isolated
-        network_findings = [f for f in findings if "network" in f.issue_description.lower()]
+        network_findings = [f for f in findings if "network" in f.description.lower()]
         assert len(network_findings) >= 1
     
     def test_validate_docker_compose_config_missing_internal_network(self):
@@ -230,17 +230,18 @@ class TestNetworkValidator:
         """Test NetworkSecurityFinding dataclass structure."""
         # This test verifies the NetworkSecurityFinding class has required fields
         finding = NetworkSecurityFinding(
-            service_name="test_service",
-            issue_type="NETWORK_MISCONFIGURATION",
-            issue_description="Service runs in privileged mode",
+            category="NETWORK_MISCONFIGURATION",
             severity="HIGH",
-            recommendation="Remove privileged flag"
+            service_name="test_service",
+            description="Service runs in privileged mode",
+            details={},
+            remediation="Remove privileged flag"
         )
         
         assert finding.service_name == "test_service"
-        assert finding.issue_type == "NETWORK_MISCONFIGURATION"
+        assert finding.category == "NETWORK_MISCONFIGURATION"
         assert finding.severity == "HIGH"
-        assert finding.recommendation == "Remove privileged flag"
+        assert finding.remediation == "Remove privileged flag"
     
     def test_network_validation_comprehensive_rules(self):
         """Test comprehensive network validation rules."""

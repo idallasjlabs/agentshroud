@@ -4,6 +4,7 @@ Proxy Pipeline — all messages flow through security checks.
 Inbound: prompt guard → PII sanitizer → trust check → audit → forward
 Outbound: PII sanitizer → egress filter → audit → return
 """
+from __future__ import annotations
 
 import hashlib
 import logging
