@@ -65,6 +65,8 @@ class TunnelingPattern:
 
 
 class DNSFilter:
+    MAX_AUDIT_ENTRIES = 50000  # Prevent unbounded growth
+
     def __init__(self, config: DNSFilterConfig):
         self.config = config
         self._audit: list[DNSQuery] = []
@@ -108,6 +110,9 @@ class DNSFilter:
             timestamp=now, agent_id=agent_id, domain=domain,
             allowed=allowed, flagged=flagged, reason=reason,
         )
+        # Evict oldest entries if at capacity
+        if len(self._audit) >= self.MAX_AUDIT_ENTRIES:
+            self._audit = self._audit[-(self.MAX_AUDIT_ENTRIES // 2):]
         self._audit.append(query)
 
         if flagged:
