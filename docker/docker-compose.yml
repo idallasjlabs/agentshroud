@@ -88,6 +88,7 @@ services:
       - 1password_bot_email
       - 1password_bot_master_password
       - 1password_bot_secret_key
+      - 1password_service_account
 
     # Environment variables
     environment:
@@ -160,6 +161,8 @@ secrets:
     file: ./secrets/1password_bot_master_password.txt
   1password_bot_secret_key:
     file: ./secrets/1password_bot_secret_key.txt
+  1password_service_account:
+    file: ./secrets/1password_service_account
 
 # Network architecture for SecureClaw isolation
 networks:
