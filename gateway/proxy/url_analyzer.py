@@ -236,7 +236,12 @@ class URLAnalyzer:
 
     @staticmethod
     def _resolve_host(hostname: str) -> Optional[str]:
-        """Resolve hostname to IP. Returns None on failure."""
+        """Resolve hostname to IP. Returns None on failure.
+        
+        NOTE: DNS rebinding attacks can change resolution between this check
+        and the actual request. For full protection, the HTTP client should
+        connect through this proxy and pin the resolved IP for the request.
+        """
         try:
             result = socket.getaddrinfo(hostname, None, socket.AF_UNSPEC, socket.SOCK_STREAM)
             if result:

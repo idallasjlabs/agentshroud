@@ -7,6 +7,7 @@ Enforce mode: hard path restrictions.
 
 import fnmatch
 import logging
+import os
 import re
 import time
 from dataclasses import dataclass, field
@@ -124,16 +125,22 @@ class FileSandbox:
     def _check(self, path: str, agent_id: str, operation: str, size: int = 0) -> FileVerdict:
         flags: list[str] = []
 
-        # Check blocked paths
-        if self._matches_blocked(path):
+        # Resolve symlinks to prevent path traversal
+        try:
+            resolved = os.path.realpath(path)
+        except (OSError, ValueError):
+            resolved = path
+
+        # Check blocked paths against both original and resolved
+        if self._matches_blocked(path) or (resolved != path and self._matches_blocked(resolved)):
             flags.append(f"sensitive path: {path}")
 
-        # In enforce mode, check allowed paths
+        # In enforce mode, check allowed paths against resolved path
         if self.config.mode == "enforce":
             allowed_paths = (self.config.allowed_read_paths if operation == "read"
                              else self.config.allowed_write_paths)
             if allowed_paths is not None:
-                if not any(path.startswith(p) for p in allowed_paths):
+                if not any(resolved.startswith(p) for p in allowed_paths):
                     flags.append(f"path outside allowed: {path}")
 
         flagged = len(flags) > 0
