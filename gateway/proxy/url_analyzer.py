@@ -278,6 +278,33 @@ class URLAnalyzer:
                         return  # One finding is enough
 
 
+    def analyze_and_pin(self, url: str) -> URLAnalysisResult:
+        """Analyze URL and pin resolved IP to mitigate DNS rebinding TOCTOU.
+        
+        When resolve_dns=True, this method resolves the hostname ONCE and
+        returns the resolved IP in the result. Callers MUST use resolved_ip
+        for the actual HTTP connection instead of re-resolving the hostname.
+        
+        This prevents attackers from changing DNS records between our security
+        check and the actual request.
+        """
+        result = self.analyze(url)
+        if not result.is_ssrf and self.resolve_dns and result.domain:
+            resolved = self._resolve_host(result.domain)
+            if resolved:
+                result.resolved_ip = resolved
+                # Double-check the resolved IP isn't private
+                if self._is_private_ip(resolved):
+                    result.is_ssrf = True
+                    result.verdict = URLVerdict.BLOCK
+                    result.findings.append(URLFinding(
+                        category='ssrf', severity='critical',
+                        description='SSRF: hostname resolves to private IP (pinned)',
+                        detail=f'host={result.domain} -> {resolved}',
+                    ))
+        return result
+
+
 def _looks_like_base64(s: str) -> bool:
     """Heuristic: does this string look like base64-encoded data?"""
     if len(s) < 20:
