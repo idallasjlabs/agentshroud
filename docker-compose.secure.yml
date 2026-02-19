@@ -99,3 +99,17 @@ volumes:
   falco-alerts:
   clamav-db:
   openclaw-workspace:
+
+  # === MCP Servers (Phase 9) ===
+  # MCP servers run on the internal network ONLY.
+  # All MCP traffic is routed through the SecureClaw gateway proxy.
+  # Add your MCP servers here. They must ONLY be on the "internal" network.
+  # The secureclaw-gateway bridges internal<->external and applies
+  # security inspection to all MCP tool calls via the MCP Proxy Layer.
+  #
+  # Example:
+  # mcp-homeassistant:
+  #   image: your-mcp-server:latest
+  #   networks:
+  #     - internal
+  #   restart: unless-stopped
