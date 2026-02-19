@@ -9,7 +9,7 @@
 
 The bot's 1Password account (therealidallasj@gmail.com) is now working! The signin is successful and the bot can access its own "Private" vault.
 
-However, the "SecureClaw Bot Credentials" vault is **not visible** to the bot yet. This means the vault sharing step hasn't been completed.
+However, the "AgentShroud Bot Credentials" vault is **not visible** to the bot yet. This means the vault sharing step hasn't been completed.
 
 ### What the bot can currently see:
 
@@ -18,15 +18,15 @@ Available vaults: Private
 
 Items in Private vault:
 - 1Password Account (The Jeffersons)
-- SecureClaw Bot
+- AgentShroud Bot
 ```
 
 ### What the bot needs to see:
 
 ```
-Available vaults: Private, SecureClaw Bot Credentials
+Available vaults: Private, AgentShroud Bot Credentials
 
-Items in SecureClaw Bot Credentials vault:
+Items in AgentShroud Bot Credentials vault:
 - Gmail - therealidallasj (with username, password, TOTP)
 - [Any other credentials you want the bot to access]
 ```
@@ -35,18 +35,18 @@ Items in SecureClaw Bot Credentials vault:
 
 ## How to Share the Vault
 
-You need to share the "SecureClaw Bot Credentials" vault from **your main 1Password account** to the bot's account.
+You need to share the "AgentShroud Bot Credentials" vault from **your main 1Password account** to the bot's account.
 
 ### Option 1: Share Existing Vault
 
-If you already created "SecureClaw Bot Credentials" vault in your main account:
+If you already created "AgentShroud Bot Credentials" vault in your main account:
 
 1. **Sign in to your main 1Password account** at https://my.1password.com
    - Use your personal email (not therealidallasj@gmail.com)
 
 2. **Go to the vault**:
    - Click "Vaults" in the sidebar
-   - Find "SecureClaw Bot Credentials"
+   - Find "AgentShroud Bot Credentials"
 
 3. **Share the vault**:
    - Click the vault settings (gear icon)
@@ -66,7 +66,7 @@ If you haven't created the vault yet:
 
 2. **Create the vault**:
    - Click "Vaults" → "Create Vault"
-   - Name: `SecureClaw Bot Credentials`
+   - Name: `AgentShroud Bot Credentials`
    - Description: `Credentials for OpenClaw bot to access via CLI`
 
 3. **Add credentials**:
@@ -117,7 +117,7 @@ You should now see:
 [startup] Signing in to 1Password as therealidallasj@gmail.com...
 [startup] ✓ Signed in to 1Password successfully
 [startup] ✓ 1Password vault access confirmed
-[startup] Available vaults: Private, SecureClaw Bot Credentials
+[startup] Available vaults: Private, AgentShroud Bot Credentials
 ```
 
 ### Verify vault access:
@@ -126,14 +126,14 @@ You should now see:
 # List all vaults
 docker exec openclaw-bot op vault list
 
-# Should show both Private and SecureClaw Bot Credentials
+# Should show both Private and AgentShroud Bot Credentials
 
 # List items in the shared vault
-docker exec openclaw-bot op item list --vault "SecureClaw Bot Credentials"
+docker exec openclaw-bot op item list --vault "AgentShroud Bot Credentials"
 
 # Get Gmail password
 docker exec openclaw-bot op item get "Gmail - therealidallasj" \
-  --vault "SecureClaw Bot Credentials" \
+  --vault "AgentShroud Bot Credentials" \
   --fields label=password
 ```
 
@@ -160,7 +160,7 @@ I recommend **Option 3** (use the bot's Private vault) because:
 ✅ Better security - credentials stay in one account
 ✅ Easier to manage - all bot credentials in one place
 
-Then update commands to reference `--vault "Private"` instead of `--vault "SecureClaw Bot Credentials"`.
+Then update commands to reference `--vault "Private"` instead of `--vault "AgentShroud Bot Credentials"`.
 
 ---
 
@@ -196,7 +196,7 @@ Once the bot can access credentials from 1Password:
 | `docker/scripts/start-openclaw.sh` | ✅ Updated (better signin handling) |
 | Bot's 1Password account | ✅ Created and working |
 | Bot's "Private" vault | ✅ Exists and accessible |
-| "SecureClaw Bot Credentials" vault | ⚠️ Not shared yet (OR doesn't exist) |
+| "AgentShroud Bot Credentials" vault | ⚠️ Not shared yet (OR doesn't exist) |
 | Gmail credentials in 1Password | ⚠️ Needs to be added |
 
 ---

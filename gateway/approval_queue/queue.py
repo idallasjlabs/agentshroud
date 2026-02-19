@@ -1,4 +1,4 @@
-"""Approval Queue for SecureClaw Gateway
+"""Approval Queue for AgentShroud Gateway
 
 In-memory queue for agent actions requiring human approval.
 WebSocket broadcast for real-time notifications.
@@ -15,7 +15,7 @@ from fastapi import WebSocket
 from ..ingest_api.config import ApprovalQueueConfig
 from ..ingest_api.models import ApprovalQueueItem, ApprovalRequest
 
-logger = logging.getLogger("secureclaw.gateway.approval_queue")
+logger = logging.getLogger("agentshroud.gateway.approval_queue")
 
 
 class ApprovalQueue:

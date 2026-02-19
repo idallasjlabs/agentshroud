@@ -1,6 +1,6 @@
 # Utility Scripts
 
-Security, maintenance, and audit scripts for SecureClaw.
+Security, maintenance, and audit scripts for AgentShroud.
 
 ## Scripts (to be implemented throughout development)
 
@@ -14,7 +14,7 @@ Security, maintenance, and audit scripts for SecureClaw.
 - Outputs security scorecard (0-100)
 
 **drift-detector.sh** (Week 4)
-- Validates current config against `secureclaw.yaml`
+- Validates current config against `agentshroud.yaml`
 - Detects unauthorized changes
 - Alerts on security posture degradation
 

@@ -37,7 +37,7 @@ Instead of using simple SSH to run commands on the Raspberry Pi, install OpenCla
 │  Raspberry Pi 4         │
 │  raspberrypi            │
 │                         │
-│  secureclaw-bot user    │
+│  agentshroud-bot user    │
 │  (bash commands)        │
 └─────────────────────────┘
 ```
@@ -117,7 +117,7 @@ Instead of using simple SSH to run commands on the Raspberry Pi, install OpenCla
 
 - [x] SSH hardening (key-only, Tailscale-only)
 - [x] UFW firewall configuration
-- [x] Dedicated secureclaw-bot user
+- [x] Dedicated agentshroud-bot user
 - [ ] Node.js 20 LTS installation
 - [ ] Docker & Docker Compose installation
 - [ ] Git configuration
@@ -133,8 +133,8 @@ Instead of using simple SSH to run commands on the Raspberry Pi, install OpenCla
 sudo npm install -g openclaw@latest
 
 # 2. Create OpenClaw workspace
-sudo mkdir -p /home/secureclaw-bot/.openclaw
-sudo chown -R secureclaw-bot:secureclaw-bot /home/secureclaw-bot/.openclaw
+sudo mkdir -p /home/agentshroud-bot/.openclaw
+sudo chown -R agentshroud-bot:agentshroud-bot /home/agentshroud-bot/.openclaw
 
 # 3. Configure OpenClaw for daemon mode
 sudo tee /etc/systemd/system/openclaw-node.service > /dev/null <<EOF
@@ -145,9 +145,9 @@ Wants=network-online.target
 
 [Service]
 Type=simple
-User=secureclaw-bot
-Group=secureclaw-bot
-WorkingDirectory=/home/secureclaw-bot
+User=agentshroud-bot
+Group=agentshroud-bot
+WorkingDirectory=/home/agentshroud-bot
 ExecStart=/usr/bin/openclaw gateway --bind lan --allow-unconfigured
 Restart=always
 RestartSec=10
@@ -160,7 +160,7 @@ NoNewPrivileges=true
 PrivateTmp=true
 ProtectSystem=strict
 ProtectHome=true
-ReadWritePaths=/home/secureclaw-bot/.openclaw
+ReadWritePaths=/home/agentshroud-bot/.openclaw
 ProtectKernelTunables=true
 ProtectKernelModules=true
 ProtectControlGroups=true
@@ -183,7 +183,7 @@ sudo systemctl start openclaw-node
 
 ```bash
 # Start pairing mode
-sudo -u secureclaw-bot openclaw node pair
+sudo -u agentshroud-bot openclaw node pair
 
 # This generates a pairing code (e.g., "abc123-def456")
 ```
@@ -213,7 +213,7 @@ openclaw node list
 # Should show: raspberrypi (connected)
 
 # On Pi:
-sudo -u secureclaw-bot openclaw node status
+sudo -u agentshroud-bot openclaw node status
 # Should show: paired with main node
 ```
 
@@ -224,7 +224,7 @@ sudo -u secureclaw-bot openclaw node status
 **Configure node permissions and restrictions:**
 
 ```yaml
-# On Pi: /home/secureclaw-bot/.openclaw/config.yaml
+# On Pi: /home/agentshroud-bot/.openclaw/config.yaml
 
 node:
   name: raspberrypi-dev
@@ -257,7 +257,7 @@ node:
     - sudo  # No privilege escalation
 
   # Filesystem restrictions
-  workspace: /home/secureclaw-bot/.openclaw/workspace
+  workspace: /home/agentshroud-bot/.openclaw/workspace
   allow_filesystem_access: false
 
   # API restrictions
@@ -274,7 +274,7 @@ node:
 **Create Pi-specific skills:**
 
 ```bash
-# On Pi: /home/secureclaw-bot/.openclaw/skills/
+# On Pi: /home/agentshroud-bot/.openclaw/skills/
 
 # 1. GPIO Control (Pi-specific)
 skills/
@@ -303,7 +303,7 @@ skills/
 **Example: Pi Temperature Monitoring Skill**
 
 ```javascript
-// /home/secureclaw-bot/.openclaw/skills/temperature/temp.js
+// /home/agentshroud-bot/.openclaw/skills/temperature/temp.js
 
 import { execSync } from 'child_process';
 
@@ -492,7 +492,7 @@ When ready to migrate from Option 1 to Option 2:
 
 ### Step 6: Deprecate SSH (Optional)
 - [ ] Remove SSH public key from Pi
-- [ ] Disable SSH access for secureclaw-bot
+- [ ] Disable SSH access for agentshroud-bot
 - [ ] Update firewall rules
 - [ ] Document changes
 
@@ -621,7 +621,7 @@ Triggers:
 - **Phase 8 (Month 3):** Advanced features
   - Custom Pi skills (GPIO, camera)
   - Distributed workflow templates
-  - Full integration with SecureClaw
+  - Full integration with AgentShroud
 
 ### Decision Points
 - [ ] Option 1 working satisfactorily?
@@ -638,7 +638,7 @@ Triggers:
 - OpenClaw Skills: https://openclaw.ai/docs/skills
 - Distributed Architecture: https://openclaw.ai/docs/distributed
 
-### Related SecureClaw Docs
+### Related AgentShroud Docs
 - `BOT_DEVELOPMENT_TEAM_RPI_SETUP.md` - Pi preparation
 - `OPENCLAW_SSH_SETUP.md` - Current SSH approach (Option 1)
 - `SECURITY_SCRIPTS_REFERENCE.md` - Security tooling

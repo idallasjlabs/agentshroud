@@ -1,9 +1,9 @@
 #!/usr/bin/env bash
-# tailscale-serve.sh — Expose SecureClaw services over Tailscale HTTPS
+# tailscale-serve.sh — Expose AgentShroud services over Tailscale HTTPS
 #
 # IMPORTANT: This script requires sudo because `tailscale serve` modifies
 # the Tailscale daemon configuration. Run it as a user with sudo privileges,
-# NOT as the secureclaw-bot service account.
+# NOT as the agentshroud-bot service account.
 #
 # Usage:
 #   sudo ./scripts/tailscale-serve.sh start   # Enable all serves
@@ -29,7 +29,7 @@ CONTROL_UI_PORT=18790
 DASHBOARD_PORT=8050
 
 cmd_start() {
-    echo "==> Enabling Tailscale HTTPS serve for SecureClaw services..."
+    echo "==> Enabling Tailscale HTTPS serve for AgentShroud services..."
 
     echo "  → Gateway API on / → http://127.0.0.1:${GATEWAY_PORT}"
     tailscale serve --bg --https=443 / http://127.0.0.1:${GATEWAY_PORT}

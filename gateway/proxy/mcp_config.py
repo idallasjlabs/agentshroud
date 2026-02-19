@@ -5,7 +5,7 @@ from dataclasses import dataclass, field
 from enum import Enum
 from typing import Any, Optional
 
-logger = logging.getLogger("secureclaw.proxy.mcp_config")
+logger = logging.getLogger("agentshroud.proxy.mcp_config")
 
 
 class MCPTransport(str, Enum):

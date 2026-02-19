@@ -89,7 +89,7 @@ Your account: https://clawhub.com/users/therealidallasj
 ```bash
 # Using 1password-skill
 docker exec openclaw-bot 1password-skill create-item \
-  --vault "SecureClaw Bot Credentials" \
+  --vault "AgentShroud Bot Credentials" \
   --title "ClawHub - therealidallasj" \
   --type "login" \
   --username "therealidallasj" \
@@ -254,7 +254,7 @@ clawhub install therealidallasj/securebrowser
 
 ## Documentation
 
-- Full docs: https://docs.secureclaw.dev/skills/securebrowser
+- Full docs: https://docs.agentshroud.dev/skills/securebrowser
 - Security policy: Included in references/
 - Examples: See README.md
 ```
@@ -443,4 +443,4 @@ docker exec openclaw-bot clawhub publish /home/node/.openclaw/skills/securebrows
 
 **Skill URL**: `https://clawhub.com/skills/therealidallasj/securebrowser` (after publication)
 
-Let's establish SecureClaw as the gold standard for AI agent security! 🛡️
+Let's establish AgentShroud as the gold standard for AI agent security! 🛡️

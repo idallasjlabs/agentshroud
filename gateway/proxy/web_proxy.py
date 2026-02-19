@@ -21,7 +21,7 @@ from .url_analyzer import URLAnalyzer, URLAnalysisResult, URLVerdict
 from .web_config import WebProxyConfig, DomainSettings
 from .web_content_scanner import WebContentScanner, ScanResult as ContentScanResult
 
-logger = logging.getLogger("secureclaw.proxy.web_proxy")
+logger = logging.getLogger("agentshroud.proxy.web_proxy")
 
 
 class ProxyAction(str, Enum):
@@ -188,7 +188,7 @@ class WebProxy:
         # --- Passthrough mode ---
         if self.config.passthrough_mode:
             result.action = ProxyAction.ALLOW
-            result.security_headers["X-SecureClaw-Mode"] = "passthrough"
+            result.security_headers["X-AgentShroud-Mode"] = "passthrough"
             self._audit("web_request_passthrough", url, {"method": method})
             result.processing_time_ms = (time.time() - start) * 1000
             self._stats["allowed"] += 1
@@ -251,7 +251,7 @@ class WebProxy:
                 for f in url_result.findings
             ]
             result.action = ProxyAction.FLAG
-            result.security_headers["X-SecureClaw-URL-Flags"] = str(len(url_result.findings))
+            result.security_headers["X-AgentShroud-URL-Flags"] = str(len(url_result.findings))
             if any(f.category == "pii" for f in url_result.findings):
                 self._stats["pii_in_urls"] += 1
 
@@ -265,7 +265,7 @@ class WebProxy:
             self._stats["allowed"] += 1
             self._audit("web_request", url, {"method": method})
 
-        result.security_headers["X-SecureClaw-Proxy"] = "active"
+        result.security_headers["X-AgentShroud-Proxy"] = "active"
         result.processing_time_ms = (time.time() - start) * 1000
         return result
 
@@ -345,8 +345,8 @@ class WebProxy:
 
             if scan.has_prompt_injection:
                 self._stats["prompt_injections_detected"] += 1
-                result.security_headers["X-SecureClaw-Injection-Score"] = f"{scan.prompt_injection_score:.2f}"
-                result.security_headers["X-SecureClaw-Injection-Warning"] = "true"
+                result.security_headers["X-AgentShroud-Injection-Score"] = f"{scan.prompt_injection_score:.2f}"
+                result.security_headers["X-AgentShroud-Injection-Warning"] = "true"
 
             if scan.has_pii:
                 self._stats["pii_in_responses"] += 1

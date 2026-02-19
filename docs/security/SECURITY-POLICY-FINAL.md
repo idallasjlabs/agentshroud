@@ -1,4 +1,4 @@
-# SecureClaw Security Policy - Final Decision
+# AgentShroud Security Policy - Final Decision
 
 **Date**: 2026-02-16
 **Version**: 3.0 (Ultra-Conservative)
@@ -69,7 +69,7 @@ docker exec openclaw-bot get-credential gmail-password
 ```
 
 ### 1Password App
-Open 1Password and view "SecureClaw Bot Credentials" vault directly
+Open 1Password and view "AgentShroud Bot Credentials" vault directly
 
 ### Internal Use (Bot)
 ```

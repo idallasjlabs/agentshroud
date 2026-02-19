@@ -21,7 +21,7 @@ from ..tools.openclaw_manager import (
     upgrade,
 )
 
-logger = logging.getLogger("secureclaw.version_routes")
+logger = logging.getLogger("agentshroud.version_routes")
 
 router = APIRouter(prefix="/api/v1/versions", tags=["versions"])
 

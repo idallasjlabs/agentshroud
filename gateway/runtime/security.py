@@ -9,7 +9,7 @@ import logging
 from dataclasses import dataclass
 from typing import Optional
 
-logger = logging.getLogger("secureclaw.runtime.security")
+logger = logging.getLogger("agentshroud.runtime.security")
 
 
 @dataclass
@@ -141,7 +141,7 @@ def get_security_options(runtime: str) -> dict:
     _validate_runtime(runtime)
     if runtime == "docker":
         return {
-            "security_opt": ["no-new-privileges", "seccomp=docker/seccomp/secureclaw-seccomp.json"],
+            "security_opt": ["no-new-privileges", "seccomp=docker/seccomp/agentshroud-seccomp.json"],
             "cap_drop": ["ALL"],
             "cap_add": ["NET_BIND_SERVICE"],
             "read_only": True,

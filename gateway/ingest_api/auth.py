@@ -1,4 +1,4 @@
-"""Authentication and rate limiting for SecureClaw Gateway
+"""Authentication and rate limiting for AgentShroud Gateway
 
 Implements Bearer token authentication with constant-time comparison
 and simple token-bucket rate limiting.
@@ -15,7 +15,7 @@ from fastapi.security import HTTPAuthorizationCredentials, HTTPBearer
 
 from .config import GatewayConfig
 
-logger = logging.getLogger("secureclaw.gateway.auth")
+logger = logging.getLogger("agentshroud.gateway.auth")
 
 security = HTTPBearer()
 

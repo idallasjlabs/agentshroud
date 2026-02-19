@@ -1,5 +1,5 @@
 #!/bin/bash
-# Update SecureClaw to latest from main branch
+# Update AgentShroud to latest from main branch
 # This script:
 # 1. Backs up current volumes
 # 2. Pulls latest code
@@ -13,7 +13,7 @@ SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 REPO_ROOT="$(cd "$SCRIPT_DIR/.." && pwd)"
 BACKUP_DIR="$REPO_ROOT/backup-$(date +%Y%m%d-%H%M%S)"
 
-echo "=== SecureClaw Update Script ==="
+echo "=== AgentShroud Update Script ==="
 echo "Repository: $REPO_ROOT"
 echo "Backup directory: $BACKUP_DIR"
 echo

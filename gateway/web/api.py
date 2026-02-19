@@ -1,4 +1,4 @@
-"""SecureClaw Management REST API.
+"""AgentShroud Management REST API.
 
 All management actions available as REST endpoints.
 Requires gateway authentication.
@@ -26,7 +26,7 @@ from ..runtime import detect_runtime, get_engine
 from ..runtime.config import RuntimeConfig
 from ..runtime.security import get_security_comparison, warn_missing_features
 
-logger = logging.getLogger("secureclaw.web.api")
+logger = logging.getLogger("agentshroud.web.api")
 
 router = APIRouter(prefix="/api", tags=["management"])
 
@@ -46,7 +46,7 @@ async def require_auth(
 # --- Input validation ------------------------------------------------------
 
 VALID_SERVICES = frozenset({
-    "secureclaw-gateway", "secureclaw-openclaw", "falco", "wazuh-agent", "clamav",
+    "agentshroud-gateway", "agentshroud-openclaw", "falco", "wazuh-agent", "clamav",
 })
 
 VALID_KILLSWITCH_MODES = frozenset({"freeze", "shutdown", "disconnect"})
@@ -101,7 +101,7 @@ async def get_status(user: str = Depends(require_auth)) -> dict:
     disk = shutil.disk_usage("/")
 
     services = {}
-    service_names = ["secureclaw-gateway", "secureclaw-openclaw", "falco", "wazuh-agent", "clamav"]
+    service_names = ["agentshroud-gateway", "agentshroud-openclaw", "falco", "wazuh-agent", "clamav"]
     container_map = {c.name: c for c in containers}
 
     for svc_name in service_names:
@@ -200,7 +200,7 @@ async def killswitch(mode: str, action: KillSwitchAction, user: str = Depends(re
     engine = _get_engine()
 
     if mode == "freeze":
-        for name in ["secureclaw-openclaw"]:
+        for name in ["agentshroud-openclaw"]:
             try:
                 engine.pause(name)
             except Exception:
@@ -215,7 +215,7 @@ async def killswitch(mode: str, action: KillSwitchAction, user: str = Depends(re
         return {"status": "shutdown", "mode": mode}
 
     elif mode == "disconnect":
-        for name in ["secureclaw-openclaw"]:
+        for name in ["agentshroud-openclaw"]:
             try:
                 engine.stop(name)
                 engine.rm(name, force=True)
@@ -232,7 +232,7 @@ async def killswitch(mode: str, action: KillSwitchAction, user: str = Depends(re
 @router.get("/config")
 async def get_config(user: str = Depends(require_auth)) -> dict:
     """Get current configuration."""
-    config_path = Path("secureclaw.yaml")
+    config_path = Path("agentshroud.yaml")
     if config_path.exists():
         import yaml
         return {"config": yaml.safe_load(config_path.read_text()), "path": str(config_path)}
@@ -243,7 +243,7 @@ async def get_config(user: str = Depends(require_auth)) -> dict:
 async def update_config(update: ConfigUpdate, user: str = Depends(require_auth)) -> dict:
     """Update configuration (writes YAML and optionally restarts)."""
     import yaml
-    config_path = Path("secureclaw.yaml")
+    config_path = Path("agentshroud.yaml")
 
     # Validate config keys against allowlist
     ALLOWED_TOP_KEYS = {"runtime", "security", "services", "network", "logging", "approval", "pii", "egress"}
@@ -283,15 +283,15 @@ async def rebuild(user: str = Depends(require_auth)) -> dict:
     try:
         engine.compose_down(config.compose_file)
         # Rebuild images
-        engine.build("gateway/Dockerfile", "secureclaw-gateway:latest", ".")
-        engine.build("docker/Dockerfile.openclaw", "secureclaw-openclaw:latest", ".")
+        engine.build("gateway/Dockerfile", "agentshroud-gateway:latest", ".")
+        engine.build("docker/Dockerfile.openclaw", "agentshroud-openclaw:latest", ".")
         engine.compose_up(config.compose_file)
         return {"status": "rebuilt"}
     except Exception as e:
         raise HTTPException(status_code=500, detail=str(e))
 
 
-# --- Updates (OpenClaw + SecureClaw) ----------------------------------------
+# --- Updates (OpenClaw + AgentShroud) ----------------------------------------
 
 
 @router.get("/updates/openclaw")
@@ -310,7 +310,7 @@ async def check_openclaw_updates(user: str = Depends(require_auth)) -> dict:
     # Try to get current version from container
     engine = _get_engine()
     try:
-        current = engine.exec("secureclaw-openclaw", ["openclaw", "--version"]).strip()
+        current = engine.exec("agentshroud-openclaw", ["openclaw", "--version"]).strip()
     except Exception:
         current = "unknown"
 
@@ -332,13 +332,13 @@ async def upgrade_openclaw(req: UpdateRequest, user: str = Depends(require_auth)
     try:
         # 1. Pull new image / update npm package
         steps.append({"step": "pull", "status": "running"})
-        engine.exec("secureclaw-openclaw", ["npm", "install", "-g", f"openclaw@{version}"])
+        engine.exec("agentshroud-openclaw", ["npm", "install", "-g", f"openclaw@{version}"])
         steps[-1]["status"] = "done"
 
         # 2. Restart
         steps.append({"step": "restart", "status": "running"})
-        engine.stop("secureclaw-openclaw")
-        engine.rm("secureclaw-openclaw", force=True)
+        engine.stop("agentshroud-openclaw")
+        engine.rm("agentshroud-openclaw", force=True)
         engine.compose_up(RuntimeConfig.from_env().compose_file)
         steps[-1]["status"] = "done"
 
@@ -355,9 +355,9 @@ async def rollback_openclaw(user: str = Depends(require_auth)) -> dict:
     return {"status": "rollback_initiated", "note": "Restoring previous container image"}
 
 
-@router.get("/updates/secureclaw")
+@router.get("/updates/agentshroud")
 async def check_secureclaw_updates(user: str = Depends(require_auth)) -> dict:
-    """Check for SecureClaw updates from GitHub."""
+    """Check for AgentShroud updates from GitHub."""
     import subprocess
 
     try:
@@ -404,9 +404,9 @@ async def check_secureclaw_updates(user: str = Depends(require_auth)) -> dict:
     }
 
 
-@router.post("/updates/secureclaw/upgrade")
+@router.post("/updates/agentshroud/upgrade")
 async def upgrade_secureclaw(req: UpdateRequest, user: str = Depends(require_auth)) -> dict:
-    """Pull latest SecureClaw, test, rebuild, restart. Auto-rollback on failure."""
+    """Pull latest AgentShroud, test, rebuild, restart. Auto-rollback on failure."""
     import subprocess
 
     steps = []
@@ -460,8 +460,8 @@ async def upgrade_secureclaw(req: UpdateRequest, user: str = Depends(require_aut
         steps.append({"step": "rebuild", "status": "running"})
         engine = _get_engine()
         config = RuntimeConfig.from_env()
-        engine.build("gateway/Dockerfile", "secureclaw-gateway:latest", ".")
-        engine.build("docker/Dockerfile.openclaw", "secureclaw-openclaw:latest", ".")
+        engine.build("gateway/Dockerfile", "agentshroud-gateway:latest", ".")
+        engine.build("docker/Dockerfile.openclaw", "agentshroud-openclaw:latest", ".")
         steps[-1]["status"] = "done"
 
         # 5. Restart services
@@ -485,7 +485,7 @@ async def upgrade_secureclaw(req: UpdateRequest, user: str = Depends(require_aut
         return {"status": "failed", "error": str(e), "steps": steps, "rolled_back_to": rollback_hash}
 
 
-@router.post("/updates/secureclaw/rollback")
+@router.post("/updates/agentshroud/rollback")
 async def rollback_secureclaw(user: str = Depends(require_auth)) -> dict:
     """Revert to previous git commit and rebuild."""
     import subprocess
@@ -493,7 +493,7 @@ async def rollback_secureclaw(user: str = Depends(require_auth)) -> dict:
         subprocess.run(["git", "reset", "--hard", "HEAD~1"], capture_output=True, timeout=30, cwd=".")
         engine = _get_engine()
         config = RuntimeConfig.from_env()
-        engine.build("gateway/Dockerfile", "secureclaw-gateway:latest", ".")
+        engine.build("gateway/Dockerfile", "agentshroud-gateway:latest", ".")
         engine.compose_down(config.compose_file)
         engine.compose_up(config.compose_file)
         return {"status": "rolled_back"}
@@ -556,7 +556,7 @@ async def get_logs(
     else:
         # Combined logs from all services
         all_logs = {}
-        for svc in ["secureclaw-gateway", "secureclaw-openclaw"]:
+        for svc in ["agentshroud-gateway", "agentshroud-openclaw"]:
             try:
                 all_logs[svc] = engine.logs(svc, tail=tail).splitlines()
             except Exception:
@@ -587,7 +587,7 @@ async def ws_logs(websocket: WebSocket, token: str = Query(default="")):
             await asyncio.sleep(5)
             try:
                 engine = _get_engine()
-                for svc in ["secureclaw-gateway", "secureclaw-openclaw"]:
+                for svc in ["agentshroud-gateway", "agentshroud-openclaw"]:
                     try:
                         logs = engine.logs(svc, tail=5)
                         await websocket.send_json({"service": svc, "logs": logs.splitlines()})

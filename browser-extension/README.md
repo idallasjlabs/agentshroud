@@ -1,6 +1,6 @@
 # Browser Extension
 
-Forward web content to SecureClaw without exposing cookies, session tokens, or trackers.
+Forward web content to AgentShroud without exposing cookies, session tokens, or trackers.
 
 ## Structure (to be implemented in Week 3-4)
 

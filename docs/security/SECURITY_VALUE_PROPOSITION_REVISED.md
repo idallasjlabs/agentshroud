@@ -1,4 +1,4 @@
-# SecureClaw Security Value Proposition - REVISED
+# AgentShroud Security Value Proposition - REVISED
 
 **Date**: 2026-02-16
 **Status**: Requirements Clarification - NONE of this is over-engineered
@@ -9,7 +9,7 @@
 
 ### This is NOT a Personal Tool
 
-**SecureClaw is designed for:**
+**AgentShroud is designed for:**
 
 1. **Multi-User/Multi-Tenant Scenarios**
    - Other people will chat with your bot
@@ -17,13 +17,13 @@
    - Ultra-conservative credential policy is ESSENTIAL
 
 2. **External Hosting**
-   - SecureClaw could run on external providers
+   - AgentShroud could run on external providers
    - Container must be secure against provider compromise
    - Defense-in-depth is critical
 
 3. **Security Testing Testbed**
    - User needs to validate security for OTHER mission-critical systems
-   - SecureClaw is the proving ground
+   - AgentShroud is the proving ground
    - If it's not enterprise-grade here, you can't trust it elsewhere
 
 4. **Immutable Infrastructure**
@@ -47,7 +47,7 @@
 - **With ultra-conservative policy**: Bot refuses, suggests 1Password
 
 **Use Case**:
-- You're showing SecureClaw to colleagues
+- You're showing AgentShroud to colleagues
 - They send messages to test it
 - They should NOT be able to extract credentials
 
@@ -69,7 +69,7 @@
 - **With seccomp**: Syscall blocked, exploit fails
 
 **Real-World Scenario**:
-- SecureClaw hosted on AWS/GCP/DigitalOcean
+- AgentShroud hosted on AWS/GCP/DigitalOcean
 - Provider has malicious employee with host access
 - Seccomp prevents privilege escalation from container
 
@@ -127,7 +127,7 @@ services:
 
 **Use Case 1: Security Testbed**
 - You're validating container security for other critical systems
-- SecureClaw is the reference implementation
+- AgentShroud is the reference implementation
 - If you can't prove compliance HERE, you can't trust it ANYWHERE
 
 **Use Case 2: External Hosting**
@@ -136,7 +136,7 @@ services:
 - **With OpenSCAP reports**: "Here's independent verification against NIST 800-53"
 
 **Use Case 3: Multi-Tenant SaaS**
-- You host SecureClaw for multiple customers
+- You host AgentShroud for multiple customers
 - Compliance scanning proves isolation
 - IEC 62443 matrix shows defense-in-depth
 
@@ -447,7 +447,7 @@ ls -lh "$REPORT_DIR"/*${TIMESTAMP}*
 **File**: `docs/IEC62443-compliance-matrix.md`
 
 ```markdown
-# IEC 62443 Compliance Matrix - SecureClaw
+# IEC 62443 Compliance Matrix - AgentShroud
 
 ## FR 1: Identification and Authentication Control (IAC)
 
@@ -530,7 +530,7 @@ ls -lh "$REPORT_DIR"/*${TIMESTAMP}*
 #!/bin/bash
 set -euo pipefail
 
-echo "🔐 SecureClaw Security Verification"
+echo "🔐 AgentShroud Security Verification"
 echo "===================================="
 echo ""
 
@@ -659,4 +659,4 @@ fi
 
 **All features are justified. We just need to FINISH them.**
 
-Let's execute Phase 3A properly and make SecureClaw bulletproof.
+Let's execute Phase 3A properly and make AgentShroud bulletproof.

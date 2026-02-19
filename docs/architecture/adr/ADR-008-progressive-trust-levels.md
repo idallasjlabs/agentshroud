@@ -5,7 +5,7 @@
 
 ## Context
 
-SecureClaw must balance security controls with agent functionality, adapting restrictions based on observed behavior.
+AgentShroud must balance security controls with agent functionality, adapting restrictions based on observed behavior.
 
 ## Decision
 

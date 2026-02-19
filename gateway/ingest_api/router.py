@@ -1,4 +1,4 @@
-"""Multi-Agent Router for SecureClaw Gateway
+"""Multi-Agent Router for AgentShroud Gateway
 
 Routes sanitized content to appropriate OpenClaw agent containers.
 Handles graceful degradation when agents are offline.
@@ -13,7 +13,7 @@ import httpx
 from .config import RouterConfig
 from .models import AgentTarget, ForwardRequest
 
-logger = logging.getLogger("secureclaw.gateway.router")
+logger = logging.getLogger("agentshroud.gateway.router")
 
 
 class RouterError(Exception):

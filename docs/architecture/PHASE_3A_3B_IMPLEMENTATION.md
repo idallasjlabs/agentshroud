@@ -219,7 +219,7 @@ sleep 60 && docker compose -f docker/docker-compose.yml ps
 # Enter gateway password: b539ae0c7a720f71e9b26cfab1b53c58ae362a0ad40d857eaed9a44a15932a05
 
 # 7. Verify seccomp is active
-docker inspect --format '{{.HostConfig.SecurityOpt}}' secureclaw-gateway
+docker inspect --format '{{.HostConfig.SecurityOpt}}' agentshroud-gateway
 docker inspect --format '{{.HostConfig.SecurityOpt}}' openclaw-bot
 # Should include: seccomp=./seccomp/gateway-seccomp.json
 
@@ -278,7 +278,7 @@ If issues occur during testing:
 ### Emergency container access
 ```bash
 # If containers fail to start, access logs:
-docker logs secureclaw-gateway
+docker logs agentshroud-gateway
 docker logs openclaw-bot
 
 # If containers are frozen, resume:

@@ -1,7 +1,7 @@
 # Apple Services Setup Guide
 
 **Apple ID**: therealidallasj@gmail.com
-**Purpose**: Shared Apple services for SecureClaw bot usage
+**Purpose**: Shared Apple services for AgentShroud bot usage
 
 ---
 
@@ -193,7 +193,7 @@ password = get_credential("apple-app-password")
 ### Credential Storage
 All Apple credentials stored in:
 ```
-1Password: SecureClaw Bot Credentials vault
+1Password: AgentShroud Bot Credentials vault
 Item: Apple ID - therealidallasj
 Fields:
   - username: therealidallasj@gmail.com

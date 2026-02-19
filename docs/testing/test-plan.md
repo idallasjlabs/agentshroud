@@ -1,9 +1,9 @@
 # Test Plan
-## SecureClaw v0.9.0
+## AgentShroud v0.9.0
 
 ### 1. Executive Summary
 
-This document outlines the comprehensive testing strategy for SecureClaw, a security proxy layer for AI agents. The testing approach covers unit, integration, end-to-end, and security testing across multiple environments. Current metrics show 1000+ tests across 26 security modules with >90% code coverage target.
+This document outlines the comprehensive testing strategy for AgentShroud, a security proxy layer for AI agents. The testing approach covers unit, integration, end-to-end, and security testing across multiple environments. Current metrics show 1000+ tests across 26 security modules with >90% code coverage target.
 
 ### 2. Test Strategy
 
@@ -367,4 +367,4 @@ This document outlines the comprehensive testing strategy for SecureClaw, a secu
 - Monthly: Performance baseline updates
 - Quarterly: Security configuration review
 
-This comprehensive test plan ensures SecureClaw meets its security, performance, and reliability requirements while maintaining compatibility across multiple deployment platforms.
+This comprehensive test plan ensures AgentShroud meets its security, performance, and reliability requirements while maintaining compatibility across multiple deployment platforms.

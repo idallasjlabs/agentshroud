@@ -17,7 +17,7 @@ API_KEY = os.environ.get("GEMINI_API_KEY", "")
 MODEL = os.environ.get("GEMINI_MODEL", "gemini-2.5-flash")
 API_URL = f"https://generativelanguage.googleapis.com/v1beta/models/{MODEL}:generateContent"
 
-REVIEW_SYSTEM = """You are a senior code reviewer for SecureClaw, a security proxy for OpenClaw AI agents.
+REVIEW_SYSTEM = """You are a senior code reviewer for AgentShroud, a security proxy for OpenClaw AI agents.
 This is a security product — review with that lens.
 
 Focus on:

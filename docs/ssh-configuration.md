@@ -2,7 +2,7 @@
 
 ## Configuration File
 
-SSH proxy settings live in the `ssh:` section of `secureclaw.yaml`. The gateway reads this on startup and constructs the `SSHConfig` / `SSHHostConfig` models.
+SSH proxy settings live in the `ssh:` section of `agentshroud.yaml`. The gateway reads this on startup and constructs the `SSHConfig` / `SSHHostConfig` models.
 
 ## Full Annotated Example
 
@@ -30,10 +30,10 @@ ssh:
       port: 22
 
       # SSH username (default: "root")
-      username: "secureclaw-bot"
+      username: "agentshroud-bot"
 
       # Path to private key (~ is expanded; empty string = use SSH agent/defaults)
-      key_path: "/home/secureclaw-bot/.ssh/id_ed25519"
+      key_path: "/home/agentshroud-bot/.ssh/id_ed25519"
 
       # Whitelist of allowed commands. If non-empty, ONLY these commands
       # (and commands starting with them + arguments) are permitted.
@@ -97,7 +97,7 @@ ssh:
       host: "staging.example.com"
       port: 22
       username: "deploy"
-      key_path: "/home/secureclaw-bot/.ssh/id_ed25519"
+      key_path: "/home/agentshroud-bot/.ssh/id_ed25519"
       allowed_commands: []        # start open, restrict later
       denied_commands:
         - "rm -rf"
@@ -119,7 +119,7 @@ ssh-keyscan -p 22 staging.example.com >> ~/.ssh/known_hosts
 Or specify a dedicated file:
 
 ```yaml
-      known_hosts_file: "/etc/secureclaw/known_hosts"
+      known_hosts_file: "/etc/agentshroud/known_hosts"
 ```
 
 ### Step 5: Restart the gateway
@@ -156,8 +156,8 @@ ssh:
       host: "db-primary.internal.example.com"
       port: 2222
       username: "monitor"
-      key_path: "/etc/secureclaw/keys/prod_monitor"
-      known_hosts_file: "/etc/secureclaw/known_hosts"
+      key_path: "/etc/agentshroud/keys/prod_monitor"
+      known_hosts_file: "/etc/agentshroud/known_hosts"
 
       # Only allow read-only monitoring commands
       allowed_commands:

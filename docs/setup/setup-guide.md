@@ -1,10 +1,10 @@
-# SecureClaw Setup Guide
+# AgentShroud Setup Guide
 
-Welcome to SecureClaw! This guide will take you from zero to a fully secured AI assistant in minutes. SecureClaw is a security-hardened wrapper around OpenClaw that provides enterprise-grade protection for AI workloads.
+Welcome to AgentShroud! This guide will take you from zero to a fully secured AI assistant in minutes. AgentShroud is a security-hardened wrapper around OpenClaw that provides enterprise-grade protection for AI workloads.
 
-## What is SecureClaw?
+## What is AgentShroud?
 
-SecureClaw adds 26 security modules on top of OpenClaw, including:
+AgentShroud adds 26 security modules on top of OpenClaw, including:
 - **Egress filtering** — Control what domains your AI can access
 - **Message scanning** — Block malicious prompts and data exfiltration
 - **Audit logging** — Tamper-evident trail of all AI actions
@@ -51,24 +51,24 @@ containers --version
 
 ## Quick Start (5 minutes)
 
-For the impatient, here's the zero-config way to get SecureClaw running:
+For the impatient, here's the zero-config way to get AgentShroud running:
 
 ```bash
 # Clone the repository
 git clone https://github.com/idallasj/oneclaw.git
 cd oneclaw
 
-# Start SecureClaw with secure defaults
+# Start AgentShroud with secure defaults
 docker compose -f docker-compose.secure.yml up -d
 
 # Wait for startup (30-60 seconds)
-docker compose logs -f secureclaw-gateway
+docker compose logs -f agentshroud-gateway
 
 # Test the deployment
 curl http://localhost:8080/health
 ```
 
-That's it! SecureClaw is now running with:
+That's it! AgentShroud is now running with:
 - ✅ All 26 security modules enabled
 - ✅ OpenClaw AI assistant ready
 - ✅ Web dashboard at https://localhost:8443
@@ -90,16 +90,16 @@ ls -la
 You should see:
 ```
 docker-compose.yml              # Standard OpenClaw
-docker-compose.secure.yml       # SecureClaw (recommended)
+docker-compose.secure.yml       # AgentShroud (recommended)
 docker-compose.sidecar.yml      # Sidecar mode
-secureclaw.yaml                 # Security configuration
+agentshroud.yaml                 # Security configuration
 egress-config.yml              # Egress filtering rules
 mcp-config.yml                 # MCP server permissions
 ```
 
 ### Step 2: Choose Your Container Runtime
 
-SecureClaw supports three container runtimes. Pick the one that fits your environment:
+AgentShroud supports three container runtimes. Pick the one that fits your environment:
 
 #### Option A: Docker (Most Common)
 
@@ -108,7 +108,7 @@ SecureClaw supports three container runtimes. Pick the one that fits your enviro
 docker info
 docker compose version
 
-# Start SecureClaw
+# Start AgentShroud
 docker compose -f docker-compose.secure.yml up -d
 
 # Check status
@@ -125,7 +125,7 @@ podman-compose --version
 # Enable podman socket (if not already)
 systemctl --user enable --now podman.socket
 
-# Start SecureClaw
+# Start AgentShroud
 podman-compose -f docker-compose.secure.yml up -d
 
 # Check status
@@ -139,7 +139,7 @@ podman-compose -f docker-compose.secure.yml ps
 containers version
 containers info
 
-# Start SecureClaw
+# Start AgentShroud
 containers compose -f docker-compose.secure.yml up -d
 
 # Check status  
@@ -148,7 +148,7 @@ containers compose -f docker-compose.secure.yml ps
 
 ### Step 3: Configure Secrets Management
 
-SecureClaw supports three methods for secrets management. Choose based on your security requirements:
+AgentShroud supports three methods for secrets management. Choose based on your security requirements:
 
 #### Option A: 1Password Service Account (Recommended)
 
@@ -157,8 +157,8 @@ Most secure option for production. Secrets never touch disk unencrypted.
 1. **Create a Service Account**:
    - Go to https://my.1password.com → Developer → Service Accounts
    - Click "Create Service Account"
-   - Name: "SecureClaw Bot"
-   - Grant access to a dedicated vault (create "SecureClaw Bot Credentials")
+   - Name: "AgentShroud Bot"
+   - Grant access to a dedicated vault (create "AgentShroud Bot Credentials")
 
 2. **Save the token securely**:
    ```bash
@@ -177,7 +177,7 @@ Most secure option for production. Secrets never touch disk unencrypted.
    
    # Test access (requires op CLI)
    op vault list
-   op item list --vault "SecureClaw Bot Credentials"
+   op item list --vault "AgentShroud Bot Credentials"
    ```
 
 #### Option B: Docker Secrets (Swarm Mode)
@@ -193,7 +193,7 @@ echo "your_openai_key" | docker secret create openai_api_key -
 echo "your_anthropic_key" | docker secret create anthropic_api_key -
 
 # Deploy with secrets
-docker stack deploy -c docker-compose.secure.yml secureclaw
+docker stack deploy -c docker-compose.secure.yml agentshroud
 ```
 
 #### Option C: Environment Variables (Development Only)
@@ -217,13 +217,13 @@ docker compose -f docker-compose.secure.yml up -d
 
 ### Step 4: Choose Security Mode
 
-SecureClaw offers two deployment modes:
+AgentShroud offers two deployment modes:
 
 #### Proxy Mode (Default)
-SecureClaw sits between the internet and OpenClaw, filtering all traffic:
+AgentShroud sits between the internet and OpenClaw, filtering all traffic:
 
 ```
-Internet → SecureClaw Gateway → OpenClaw → AI Models
+Internet → AgentShroud Gateway → OpenClaw → AI Models
          ↑ (Port 8080)      ↑ (Internal)
          Security Filtering  AI Assistant
 ```
@@ -236,10 +236,10 @@ Internet → SecureClaw Gateway → OpenClaw → AI Models
 **Use when**: You want maximum security and don't mind slight latency
 
 #### Sidecar Mode
-SecureClaw runs alongside OpenClaw, providing security services:
+AgentShroud runs alongside OpenClaw, providing security services:
 
 ```
-Internet → OpenClaw ← Security Services ← SecureClaw Sidecar
+Internet → OpenClaw ← Security Services ← AgentShroud Sidecar
          ↑ (Port 3000)                   ↑ (Internal APIs)
          AI Assistant                    Security Monitoring
 ```
@@ -258,11 +258,11 @@ docker compose -f docker-compose.sidecar.yml up -d
 
 ### Step 5: Configure Ports
 
-SecureClaw uses several ports by default:
+AgentShroud uses several ports by default:
 
 | Port | Service | Description |
 |------|---------|-------------|
-| 8080 | Gateway | Main SecureClaw API (Proxy mode) |
+| 8080 | Gateway | Main AgentShroud API (Proxy mode) |
 | 8443 | Dashboard | Web-based security dashboard |
 | 3000 | OpenClaw | AI assistant API (Sidecar mode) |
 | 9090 | Metrics | Prometheus metrics endpoint |
@@ -281,14 +281,14 @@ docker compose -f docker-compose.secure.yml up -d
 ```
 
 #### Multi-Instance Setup
-Running multiple SecureClaw instances (useful on Mac Studio or shared hosts):
+Running multiple AgentShroud instances (useful on Mac Studio or shared hosts):
 
 ```bash
 # First instance (default ports)
 docker compose -f docker-compose.secure.yml up -d
 
 # Second instance (offset by 100)
-SECURECLAW_PORT_OFFSET=100 docker compose -f docker-compose.secure.yml -p secureclaw2 up -d
+AGENTSHROUD_PORT_OFFSET=100 docker compose -f docker-compose.secure.yml -p secureclaw2 up -d
 ```
 
 This creates:
@@ -296,16 +296,16 @@ This creates:
 - Instance 2: 8180, 8543, 3100
 
 #### Auto-Detection
-SecureClaw includes a PortManager that automatically finds available ports:
+AgentShroud includes a PortManager that automatically finds available ports:
 
 ```yaml
 # In docker-compose.secure.yml
 environment:
-  - SECURECLAW_AUTO_PORTS=true
-  - SECURECLAW_PORT_BASE=8000
+  - AGENTSHROUD_AUTO_PORTS=true
+  - AGENTSHROUD_PORT_BASE=8000
 ```
 
-### Step 6: Deploy SecureClaw
+### Step 6: Deploy AgentShroud
 
 Choose your deployment method:
 
@@ -320,7 +320,7 @@ docker compose -f docker-compose.secure.yml up
 docker compose -f docker-compose.secure.yml up -d
 
 # View logs
-docker compose logs -f secureclaw-gateway
+docker compose logs -f agentshroud-gateway
 
 # Stop when needed
 docker compose -f docker-compose.secure.yml down
@@ -336,7 +336,7 @@ docker compose -f docker-compose.secure.yml up -d
 
 ### Step 7: Verify Installation
 
-Run these checks to confirm SecureClaw is working:
+Run these checks to confirm AgentShroud is working:
 
 #### Health Check
 ```bash
@@ -368,10 +368,10 @@ Accept the self-signed certificate for development (or configure TLS for product
 
 #### Test a Message
 ```bash
-# Send a test message through SecureClaw
+# Send a test message through AgentShroud
 curl -X POST http://localhost:8080/api/chat \
   -H "Content-Type: application/json" \
-  -d '{"message": "Hello, SecureClaw!"}'
+  -d '{"message": "Hello, AgentShroud!"}'
 
 # Check the dashboard for the logged interaction
 ```
@@ -386,8 +386,8 @@ curl -X POST http://localhost:8080/api/chat \
 2. **Navigate** to Developer → Service Accounts
 3. **Click** "Create Service Account"
 4. **Configure**:
-   - Name: `SecureClaw Production Bot` (or similar)
-   - Description: `Service account for SecureClaw secrets management`
+   - Name: `AgentShroud Production Bot` (or similar)
+   - Description: `Service account for AgentShroud secrets management`
 5. **Save** the service account token immediately
 
 ### Set Up Vault Access
@@ -395,12 +395,12 @@ curl -X POST http://localhost:8080/api/chat \
 Service accounts can only access vaults they're explicitly granted access to:
 
 1. **Create a dedicated vault**:
-   - Name: "SecureClaw Bot Credentials"
-   - Description: "Secrets for SecureClaw AI assistant"
+   - Name: "AgentShroud Bot Credentials"
+   - Description: "Secrets for AgentShroud AI assistant"
 
 2. **Grant access**:
    - Go to the service account settings
-   - Add vault permissions: "SecureClaw Bot Credentials" → Read
+   - Add vault permissions: "AgentShroud Bot Credentials" → Read
    - Save changes
 
 3. **Add your secrets** to this vault:
@@ -408,10 +408,10 @@ Service accounts can only access vaults they're explicitly granted access to:
    OpenAI API Key → item name: "OpenAI - GPT API"
    Anthropic API Key → item name: "Anthropic - Claude API"  
    Brave Search API → item name: "Brave Search API"
-   Gmail App Password → item name: "Gmail - SecureClaw Bot"
+   Gmail App Password → item name: "Gmail - AgentShroud Bot"
    ```
 
-### Configure SecureClaw
+### Configure AgentShroud
 
 1. **Save the service account token**:
    ```bash
@@ -427,7 +427,7 @@ Service accounts can only access vaults they're explicitly granted access to:
        file: ./secrets/1password_service_account
    
    services:
-     secureclaw-gateway:
+     agentshroud-gateway:
        secrets:
          - 1password_service_account
        environment:
@@ -437,17 +437,17 @@ Service accounts can only access vaults they're explicitly granted access to:
 3. **Test the integration**:
    ```bash
    # Inside the container
-   docker compose exec secureclaw-gateway bash
+   docker compose exec agentshroud-gateway bash
    export OP_SERVICE_ACCOUNT_TOKEN=$(cat /run/secrets/1password_service_account)
    op vault list
-   op item get "OpenAI - GPT API" --vault "SecureClaw Bot Credentials"
+   op item get "OpenAI - GPT API" --vault "AgentShroud Bot Credentials"
    ```
 
 ### Important Notes
 
 - **Always use `--vault` flag** with service accounts:
   ```bash
-  op item list --vault "SecureClaw Bot Credentials"
+  op item list --vault "AgentShroud Bot Credentials"
   ```
 - **Rotate tokens regularly** (every 90 days recommended)
 - **Monitor usage** in the 1Password admin dashboard
@@ -455,9 +455,9 @@ Service accounts can only access vaults they're explicitly granted access to:
 
 ## Configuration Reference
 
-SecureClaw uses three main configuration files:
+AgentShroud uses three main configuration files:
 
-### secureclaw.yaml - Main Configuration
+### agentshroud.yaml - Main Configuration
 
 ```yaml
 # Security mode: proxy (default) or sidecar
@@ -622,7 +622,7 @@ modules:
 
 ## Multi-Instance Setup
 
-Running multiple SecureClaw instances is useful for:
+Running multiple AgentShroud instances is useful for:
 - **Development vs Production** isolation
 - **Multiple teams** sharing a host
 - **A/B testing** different configurations
@@ -634,16 +634,16 @@ A typical Mac Studio setup running both Docker and Apple Containers:
 
 ```bash
 # Instance 1: Docker (Production)
-cd /Users/admin/secureclaw-prod
+cd /Users/admin/agentshroud-prod
 docker compose -f docker-compose.secure.yml up -d
 
 # Instance 2: Apple Containers (Development)
-cd /Users/admin/secureclaw-dev
-SECURECLAW_PORT_OFFSET=100 containers compose -f docker-compose.secure.yml up -d
+cd /Users/admin/agentshroud-dev
+AGENTSHROUD_PORT_OFFSET=100 containers compose -f docker-compose.secure.yml up -d
 
 # Instance 3: Testing (different config)
-cd /Users/admin/secureclaw-test
-SECURECLAW_PORT_OFFSET=200 docker compose -f docker-compose.sidecar.yml up -d
+cd /Users/admin/agentshroud-test
+AGENTSHROUD_PORT_OFFSET=200 docker compose -f docker-compose.sidecar.yml up -d
 ```
 
 Result:
@@ -656,10 +656,10 @@ Result:
 Set these for each instance:
 
 ```bash
-export SECURECLAW_INSTANCE_NAME="production"
-export SECURECLAW_PORT_OFFSET=0
-export SECURECLAW_DATA_DIR="/data/secureclaw-prod"
-export SECURECLAW_CONFIG_DIR="/config/prod"
+export AGENTSHROUD_INSTANCE_NAME="production"
+export AGENTSHROUD_PORT_OFFSET=0
+export AGENTSHROUD_DATA_DIR="/data/agentshroud-prod"
+export AGENTSHROUD_CONFIG_DIR="/config/prod"
 ```
 
 ### Port Auto-Detection
@@ -670,26 +670,26 @@ The PortManager automatically finds available ports:
 # docker-compose.multi.yml
 version: '3.8'
 services:
-  secureclaw-gateway:
+  agentshroud-gateway:
     environment:
-      - SECURECLAW_AUTO_PORTS=true
-      - SECURECLAW_PORT_BASE=${SECURECLAW_PORT_OFFSET:-8000}
-      - SECURECLAW_INSTANCE=${SECURECLAW_INSTANCE_NAME:-default}
+      - AGENTSHROUD_AUTO_PORTS=true
+      - AGENTSHROUD_PORT_BASE=${AGENTSHROUD_PORT_OFFSET:-8000}
+      - AGENTSHROUD_INSTANCE=${AGENTSHROUD_INSTANCE_NAME:-default}
 ```
 
 ## Updating
 
-SecureClaw includes automated update scripts for safe upgrades:
+AgentShroud includes automated update scripts for safe upgrades:
 
-### Update SecureClaw
+### Update AgentShroud
 
 ```bash
 # Automated update with backup and rollback
-./scripts/update-secureclaw.sh
+./scripts/update-agentshroud.sh
 
 # What it does:
 # 1. Backs up current configuration and data
-# 2. Pulls latest SecureClaw images
+# 2. Pulls latest AgentShroud images
 # 3. Stops current deployment
 # 4. Starts new deployment
 # 5. Runs health checks
@@ -715,7 +715,7 @@ If you prefer manual control:
 
 ```bash
 # 1. Backup current state
-docker compose -f docker-compose.secure.yml exec secureclaw-gateway \
+docker compose -f docker-compose.secure.yml exec agentshroud-gateway \
   /scripts/backup-data.sh /backups/$(date +%Y%m%d-%H%M%S)
 
 # 2. Pull latest images
@@ -736,7 +736,7 @@ curl http://localhost:8080/health
 
 # Or manually:
 docker compose -f docker-compose.secure.yml down
-docker image tag secureclaw:backup secureclaw:latest
+docker image tag agentshroud:backup agentshroud:latest
 docker compose -f docker-compose.secure.yml up -d
 ```
 
@@ -753,7 +753,7 @@ lsof -i :8080
 sudo ss -tulpn | grep :8080
 
 # Use port offset
-SECURECLAW_PORT_OFFSET=100 docker compose -f docker-compose.secure.yml up -d
+AGENTSHROUD_PORT_OFFSET=100 docker compose -f docker-compose.secure.yml up -d
 
 # Or kill the conflicting process
 sudo kill $(lsof -t -i:8080)
@@ -775,7 +775,7 @@ op account get
 
 # Check vault access
 op vault list
-op item list --vault "SecureClaw Bot Credentials"
+op item list --vault "AgentShroud Bot Credentials"
 ```
 
 **Solutions**:
@@ -790,13 +790,13 @@ op item list --vault "SecureClaw Bot Credentials"
 **Diagnose**:
 ```bash
 # Check container logs
-docker logs secureclaw-gateway
+docker logs agentshroud-gateway
 
 # Check health endpoint directly
-docker compose exec secureclaw-gateway curl http://localhost:8080/health
+docker compose exec agentshroud-gateway curl http://localhost:8080/health
 
 # Inspect container
-docker inspect secureclaw-gateway | jq '.[0].State.Health'
+docker inspect agentshroud-gateway | jq '.[0].State.Health'
 ```
 
 **Common causes**:
@@ -812,7 +812,7 @@ docker inspect secureclaw-gateway | jq '.[0].State.Health'
 **Run tests manually**:
 ```bash
 # Enter container
-docker compose exec secureclaw-gateway bash
+docker compose exec agentshroud-gateway bash
 
 # Run specific test categories
 python -m pytest gateway/tests/test_security.py -v
@@ -841,7 +841,7 @@ environment:
   - GMAIL_APP_PASSWORD=${GMAIL_APP_PASSWORD}
 
 # Test SMTP connection manually
-docker compose exec secureclaw-gateway \
+docker compose exec agentshroud-gateway \
   nc -zv smtp.gmail.com 465
 ```
 
@@ -852,13 +852,13 @@ docker compose exec secureclaw-gateway \
 **Diagnose**:
 ```bash
 # Check resource usage
-docker stats secureclaw-gateway
+docker stats agentshroud-gateway
 
 # Check response times
 time curl http://localhost:8080/health
 
 # Look for bottlenecks in logs
-docker logs secureclaw-gateway | grep -i "slow\|timeout\|error"
+docker logs agentshroud-gateway | grep -i "slow\|timeout\|error"
 ```
 
 **Solutions**:
@@ -922,13 +922,13 @@ curl -s http://localhost:8080/health | jq '.'
 
 ```bash
 # Check audit logs are being written
-docker compose exec secureclaw-gateway ls -la /data/audit/
+docker compose exec agentshroud-gateway ls -la /data/audit/
 
 # View recent audit entries
-docker compose exec secureclaw-gateway tail -f /data/audit/$(date +%Y-%m-%d).log
+docker compose exec agentshroud-gateway tail -f /data/audit/$(date +%Y-%m-%d).log
 
 # Verify tamper detection
-docker compose exec secureclaw-gateway \
+docker compose exec agentshroud-gateway \
   python -c "
 import hashlib
 import json
@@ -980,19 +980,19 @@ Before going to production, verify:
 
 ## What's Next?
 
-With SecureClaw running, you're ready to:
+With AgentShroud running, you're ready to:
 
-1. **Customize security policies** in `secureclaw.yaml`
+1. **Customize security policies** in `agentshroud.yaml`
 2. **Add your AI model APIs** via 1Password integration  
 3. **Set up monitoring** with Prometheus and Grafana
 4. **Configure alerts** to Slack or email
 5. **Scale to multiple instances** for high availability
 
 For advanced configuration, see the [Configuration Guide](configuration-guide.md).  
-For troubleshooting, join our [Discord community](https://discord.gg/secureclaw).
+For troubleshooting, join our [Discord community](https://discord.gg/agentshroud).
 
 **Questions?** File an issue at https://github.com/idallasj/oneclaw/issues
 
 ---
 
-*SecureClaw: Secure AI, by design. 🔒*
+*AgentShroud: Secure AI, by design. 🔒*

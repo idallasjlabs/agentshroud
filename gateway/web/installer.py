@@ -1,4 +1,4 @@
-"""SecureClaw Web Installer — Step-by-step installation wizard."""
+"""AgentShroud Web Installer — Step-by-step installation wizard."""
 
 from __future__ import annotations
 
@@ -17,7 +17,7 @@ from ..runtime import detect_runtime
 from ..runtime.config import RuntimeConfig
 from ..runtime.security import get_security_comparison
 
-logger = logging.getLogger("secureclaw.web.installer")
+logger = logging.getLogger("agentshroud.web.installer")
 
 router = APIRouter(prefix="/install", tags=["installer"])
 

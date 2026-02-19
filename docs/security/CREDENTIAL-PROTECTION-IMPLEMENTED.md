@@ -17,7 +17,7 @@ We've implemented **multi-layer credential protection** to ensure passwords and 
 
 ### Layer 1: Gateway Credential Filter (ACTIVE)
 
-The SecureClaw gateway now **automatically blocks** any response containing credentials before sending to Telegram.
+The AgentShroud gateway now **automatically blocks** any response containing credentials before sending to Telegram.
 
 **Blocked patterns:**
 - Passwords (8+ characters with special chars)
@@ -91,7 +91,7 @@ curl http://localhost:8080/ledger -H "Authorization: Bearer $TOKEN"
 2. **Confirm credentials exist**
    ```
    You: "Do you have my Gmail password?"
-   Bot: "Yes, I have access to Gmail credentials in 1Password (SecureClaw Bot Credentials vault)"
+   Bot: "Yes, I have access to Gmail credentials in 1Password (AgentShroud Bot Credentials vault)"
    ```
 
 3. **List available credentials**
@@ -307,7 +307,7 @@ Bot: 🔒 [REDACTED message]
        │
        v
 ┌─────────────────────┐
-│  SecureClaw Gateway │
+│  AgentShroud Gateway │
 │  1. Receive request │
 │  2. Sanitize PII    │
 │  3. Forward to bot  │

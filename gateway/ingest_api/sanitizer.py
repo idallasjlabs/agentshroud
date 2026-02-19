@@ -1,4 +1,4 @@
-"""PII Sanitization Engine for SecureClaw Gateway
+"""PII Sanitization Engine for AgentShroud Gateway
 
 Detects and redacts personally identifiable information using:
 1. Microsoft Presidio with spaCy (if available)
@@ -13,7 +13,7 @@ from typing import Literal
 from .config import PIIConfig
 from .models import RedactionDetail, RedactionResult
 
-logger = logging.getLogger("secureclaw.gateway.sanitizer")
+logger = logging.getLogger("agentshroud.gateway.sanitizer")
 
 
 class PIISanitizer:
@@ -27,7 +27,7 @@ class PIISanitizer:
         """Initialize sanitizer
 
         Args:
-            config: PII configuration from secureclaw.yaml
+            config: PII configuration from agentshroud.yaml
         """
         self.config = config
         self.mode: Literal["presidio", "regex"] = "regex"

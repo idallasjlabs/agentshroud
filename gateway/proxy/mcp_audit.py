@@ -11,7 +11,7 @@ import uuid
 from dataclasses import dataclass, field
 from typing import Any, Optional
 
-logger = logging.getLogger("secureclaw.proxy.mcp_audit")
+logger = logging.getLogger("agentshroud.proxy.mcp_audit")
 
 
 @dataclass

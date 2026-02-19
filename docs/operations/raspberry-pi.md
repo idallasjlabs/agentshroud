@@ -1,4 +1,4 @@
-# Deploying SecureClaw on Raspberry Pi (aarch64)
+# Deploying AgentShroud on Raspberry Pi (aarch64)
 
 ## Prerequisites
 
@@ -38,13 +38,13 @@ docker run --rm hello-world
 
 Follow the prompts to configure API keys and credentials.
 
-### 4. Configure SecureClaw
+### 4. Configure AgentShroud
 
-Edit `secureclaw.yaml` with your desired settings:
+Edit `agentshroud.yaml` with your desired settings:
 
 ```bash
-cp secureclaw.yaml.example secureclaw.yaml   # if an example exists
-nano secureclaw.yaml
+cp agentshroud.yaml.example agentshroud.yaml   # if an example exists
+nano agentshroud.yaml
 ```
 
 ### 5. Build and Start
@@ -71,7 +71,7 @@ All Docker images are built natively on the Pi's ARM64 architecture. Initial bui
 
 ### Memory and Swap
 
-The Pi 4 with 4 GB RAM can run SecureClaw, but we recommend configuring at least **2 GB of swap** to avoid OOM kills during Docker builds:
+The Pi 4 with 4 GB RAM can run AgentShroud, but we recommend configuring at least **2 GB of swap** to avoid OOM kills during Docker builds:
 
 ```bash
 sudo dphys-swapfile swapoff

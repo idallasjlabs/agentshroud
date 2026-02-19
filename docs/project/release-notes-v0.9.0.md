@@ -1,4 +1,4 @@
-# Release Notes - SecureClaw v0.9.0
+# Release Notes - AgentShroud v0.9.0
 ## "Deep Hardening" Release
 
 **Release Date**: February 15, 2026  
@@ -9,7 +9,7 @@
 
 ## Executive Summary
 
-SecureClaw v0.9.0 represents a major milestone in security proxy maturity, delivering deep security hardening, comprehensive documentation, and production-ready deployment capabilities. This release focuses on enterprise readiness with enhanced security controls, performance optimizations, and extensive documentation to support large-scale deployments.
+AgentShroud v0.9.0 represents a major milestone in security proxy maturity, delivering deep security hardening, comprehensive documentation, and production-ready deployment capabilities. This release focuses on enterprise readiness with enhanced security controls, performance optimizations, and extensive documentation to support large-scale deployments.
 
 **Key Highlights**:
 - **1,100+ tests** with **94.2% code coverage** across **26 security modules**
@@ -289,17 +289,17 @@ SecureClaw v0.9.0 represents a major milestone in security proxy maturity, deliv
 
 1. **Backup Current Configuration**
 ```bash
-cp /app/config/secureclaw.yml /app/config/secureclaw.yml.backup
+cp /app/config/agentshroud.yml /app/config/agentshroud.yml.backup
 ```
 
 2. **Update Container Image**
 ```bash
-docker pull secureclaw:0.9.0
+docker pull agentshroud:0.9.0
 ```
 
 3. **Run Migration Scripts**
 ```bash
-docker run --rm -v /app/data:/data secureclaw:0.9.0 migrate
+docker run --rm -v /app/data:/data agentshroud:0.9.0 migrate
 ```
 
 4. **Verify Migration**
@@ -352,14 +352,14 @@ curl -X GET http://localhost:8443/api/v1/health
 **Docker Deployment**
 ```bash
 # Pull the latest image
-docker pull secureclaw:0.9.0
+docker pull agentshroud:0.9.0
 
 # Run with default configuration
 docker run -d \
-  --name secureclaw \
+  --name agentshroud \
   -p 8443:8443 \
-  -v secureclaw-data:/app/data \
-  secureclaw:0.9.0
+  -v agentshroud-data:/app/data \
+  agentshroud:0.9.0
 
 # Verify deployment
 curl -f http://localhost:8443/health
@@ -368,7 +368,7 @@ curl -f http://localhost:8443/health
 **Docker Compose Deployment**
 ```bash
 # Download reference configuration
-curl -o docker-compose.yml https://docs.secureclaw.io/docker-compose.yml
+curl -o docker-compose.yml https://docs.agentshroud.io/docker-compose.yml
 
 # Deploy the stack
 docker-compose up -d
@@ -380,20 +380,20 @@ docker-compose ps
 **Kubernetes Deployment**
 ```bash
 # Add Helm repository
-helm repo add secureclaw https://helm.secureclaw.io
+helm repo add agentshroud https://helm.agentshroud.io
 
 # Install with default values
-helm install secureclaw secureclaw/secureclaw
+helm install agentshroud agentshroud/agentshroud
 
 # Check deployment status
-kubectl get pods -l app=secureclaw
+kubectl get pods -l app=agentshroud
 ```
 
 ### 📋 System Requirements
 
 **Minimum Requirements**
 - **CPU**: 2 cores, 2.0 GHz
-- **Memory**: 1GB RAM (512MB for SecureClaw + 512MB system overhead)
+- **Memory**: 1GB RAM (512MB for AgentShroud + 512MB system overhead)
 - **Storage**: 10GB available space
 - **Network**: 100 Mbps bandwidth
 
@@ -429,8 +429,8 @@ kubectl get pods -l app=secureclaw
 ### 🔧 Troubleshooting
 
 **Common Issues**
-- **Startup Failures**: Check logs at `/app/logs/secureclaw.log`
-- **Configuration Errors**: Validate using `secureclaw config validate`
+- **Startup Failures**: Check logs at `/app/logs/agentshroud.log`
+- **Configuration Errors**: Validate using `agentshroud config validate`
 - **Performance Issues**: Review metrics at `/api/v1/dashboard`
 - **Security Alerts**: Investigate using audit trail at `/api/v1/audit`
 
@@ -446,11 +446,11 @@ kubectl get pods -l app=secureclaw
 
 ### 👥 Contributors
 
-Special thanks to the SecureClaw development team, security researchers, and community contributors who made this release possible through their dedication to AI agent security.
+Special thanks to the AgentShroud development team, security researchers, and community contributors who made this release possible through their dedication to AI agent security.
 
 ### 🔒 Security Research
 
-We acknowledge the security researchers and ethical hackers who helped identify and resolve security issues through responsible disclosure, making SecureClaw more secure for everyone.
+We acknowledge the security researchers and ethical hackers who helped identify and resolve security issues through responsible disclosure, making AgentShroud more secure for everyone.
 
 ### 🏢 Enterprise Partners
 
@@ -458,8 +458,8 @@ Thanks to our enterprise partners who provided feedback, testing environments, a
 
 ---
 
-SecureClaw v0.9.0 represents our commitment to providing enterprise-grade security for AI agents with comprehensive protection, extensive testing, and production-ready deployment capabilities. This "Deep Hardening" release establishes the foundation for v1.0.0 and beyond, ensuring AI agents can operate safely and securely in production environments.
+AgentShroud v0.9.0 represents our commitment to providing enterprise-grade security for AI agents with comprehensive protection, extensive testing, and production-ready deployment capabilities. This "Deep Hardening" release establishes the foundation for v1.0.0 and beyond, ensuring AI agents can operate safely and securely in production environments.
 
-**Download SecureClaw v0.9.0**: `docker pull secureclaw:0.9.0`  
+**Download AgentShroud v0.9.0**: `docker pull agentshroud:0.9.0`  
 **Documentation**: `/home/node/.openclaw/workspace/docs-draft/`  
 **Release Date**: February 15, 2026

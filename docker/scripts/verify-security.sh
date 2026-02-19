@@ -1,5 +1,5 @@
 #!/bin/bash
-# SecureClaw Security Verification Script
+# AgentShroud Security Verification Script
 # Validates all security controls are properly configured
 
 set -e
@@ -18,7 +18,7 @@ FAILED=0
 WARNINGS=0
 
 echo "======================================"
-echo "SecureClaw Security Verification"
+echo "AgentShroud Security Verification"
 echo "======================================"
 echo ""
 
@@ -39,7 +39,7 @@ check_warn() {
 
 # Check 1: Both containers running as non-root
 echo "[1/13] Checking non-root users..."
-GATEWAY_USER=$(docker inspect --format '{{.Config.User}}' secureclaw-gateway 2>/dev/null || echo "")
+GATEWAY_USER=$(docker inspect --format '{{.Config.User}}' agentshroud-gateway 2>/dev/null || echo "")
 OPENCLAW_USER=$(docker inspect --format '{{.Config.User}}' openclaw-bot 2>/dev/null || echo "")
 
 if [ "$GATEWAY_USER" != "" ] && [ "$GATEWAY_USER" != "0" ] && [ "$GATEWAY_USER" != "root" ]; then
@@ -57,7 +57,7 @@ fi
 # Check 2: Read-only root filesystem
 echo ""
 echo "[2/13] Checking read-only root filesystem..."
-GATEWAY_READONLY=$(docker inspect --format '{{.HostConfig.ReadonlyRootfs}}' secureclaw-gateway 2>/dev/null || echo "false")
+GATEWAY_READONLY=$(docker inspect --format '{{.HostConfig.ReadonlyRootfs}}' agentshroud-gateway 2>/dev/null || echo "false")
 OPENCLAW_READONLY=$(docker inspect --format '{{.HostConfig.ReadonlyRootfs}}' openclaw-bot 2>/dev/null || echo "false")
 
 if [ "$GATEWAY_READONLY" == "true" ]; then
@@ -75,7 +75,7 @@ fi
 # Check 3: All capabilities dropped
 echo ""
 echo "[3/13] Checking capabilities..."
-GATEWAY_CAPDROP=$(docker inspect --format '{{.HostConfig.CapDrop}}' secureclaw-gateway 2>/dev/null || echo "")
+GATEWAY_CAPDROP=$(docker inspect --format '{{.HostConfig.CapDrop}}' agentshroud-gateway 2>/dev/null || echo "")
 OPENCLAW_CAPDROP=$(docker inspect --format '{{.HostConfig.CapDrop}}' openclaw-bot 2>/dev/null || echo "")
 
 if echo "$GATEWAY_CAPDROP" | grep -q "ALL"; then
@@ -104,7 +104,7 @@ fi
 # Check 5: no-new-privileges set
 echo ""
 echo "[5/13] Checking no-new-privileges..."
-GATEWAY_SECOPT=$(docker inspect --format '{{.HostConfig.SecurityOpt}}' secureclaw-gateway 2>/dev/null || echo "")
+GATEWAY_SECOPT=$(docker inspect --format '{{.HostConfig.SecurityOpt}}' agentshroud-gateway 2>/dev/null || echo "")
 OPENCLAW_SECOPT=$(docker inspect --format '{{.HostConfig.SecurityOpt}}' openclaw-bot 2>/dev/null || echo "")
 
 if echo "$GATEWAY_SECOPT" | grep -q "no-new-privileges:true"; then
@@ -137,7 +137,7 @@ fi
 # Check 7: Localhost-only binding
 echo ""
 echo "[7/13] Checking localhost-only port binding..."
-GATEWAY_PORTS=$(docker port secureclaw-gateway 2>/dev/null || echo "")
+GATEWAY_PORTS=$(docker port agentshroud-gateway 2>/dev/null || echo "")
 OPENCLAW_PORTS=$(docker port openclaw-bot 2>/dev/null || echo "")
 
 if echo "$GATEWAY_PORTS" | grep -q "127.0.0.1"; then
@@ -155,7 +155,7 @@ fi
 # Check 8: Resource limits set
 echo ""
 echo "[8/13] Checking resource limits..."
-GATEWAY_MEM=$(docker inspect --format '{{.HostConfig.Memory}}' secureclaw-gateway 2>/dev/null || echo "0")
+GATEWAY_MEM=$(docker inspect --format '{{.HostConfig.Memory}}' agentshroud-gateway 2>/dev/null || echo "0")
 OPENCLAW_MEM=$(docker inspect --format '{{.HostConfig.Memory}}' openclaw-bot 2>/dev/null || echo "0")
 
 if [ "$GATEWAY_MEM" -gt 0 ]; then
@@ -193,22 +193,22 @@ fi
 # Check 10: Network isolation
 echo ""
 echo "[10/13] Checking network isolation..."
-GATEWAY_NETWORKS=$(docker inspect --format '{{range $k,$v := .NetworkSettings.Networks}}{{$k}} {{end}}' secureclaw-gateway 2>/dev/null || echo "")
+GATEWAY_NETWORKS=$(docker inspect --format '{{range $k,$v := .NetworkSettings.Networks}}{{$k}} {{end}}' agentshroud-gateway 2>/dev/null || echo "")
 OPENCLAW_NETWORKS=$(docker inspect --format '{{range $k,$v := .NetworkSettings.Networks}}{{$k}} {{end}}' openclaw-bot 2>/dev/null || echo "")
 
-if echo "$GATEWAY_NETWORKS" | grep -q "secureclaw-internal"; then
-    check_pass "Gateway on secureclaw-internal network"
+if echo "$GATEWAY_NETWORKS" | grep -q "agentshroud-internal"; then
+    check_pass "Gateway on agentshroud-internal network"
 else
-    check_fail "Gateway not on secureclaw-internal network"
+    check_fail "Gateway not on agentshroud-internal network"
 fi
 
-if echo "$OPENCLAW_NETWORKS" | grep -q "secureclaw-isolated"; then
-    check_pass "OpenClaw on secureclaw-isolated network"
+if echo "$OPENCLAW_NETWORKS" | grep -q "agentshroud-isolated"; then
+    check_pass "OpenClaw on agentshroud-isolated network"
 else
-    check_fail "OpenClaw not on secureclaw-isolated network"
+    check_fail "OpenClaw not on agentshroud-isolated network"
 fi
 
-if ! echo "$OPENCLAW_NETWORKS" | grep -q "secureclaw-internal"; then
+if ! echo "$OPENCLAW_NETWORKS" | grep -q "agentshroud-internal"; then
     check_pass "OpenClaw NOT on external network (properly isolated)"
 else
     check_fail "OpenClaw on external network (should be isolated)"
@@ -217,7 +217,7 @@ fi
 # Check 11: Both containers healthy
 echo ""
 echo "[11/13] Checking container health..."
-GATEWAY_HEALTH=$(docker inspect --format '{{.State.Health.Status}}' secureclaw-gateway 2>/dev/null || echo "unknown")
+GATEWAY_HEALTH=$(docker inspect --format '{{.State.Health.Status}}' agentshroud-gateway 2>/dev/null || echo "unknown")
 OPENCLAW_HEALTH=$(docker inspect --format '{{.State.Health.Status}}' openclaw-bot 2>/dev/null || echo "unknown")
 
 if [ "$GATEWAY_HEALTH" == "healthy" ]; then

@@ -1,4 +1,4 @@
-"""SecureClaw Management Dashboard routes."""
+"""AgentShroud Management Dashboard routes."""
 
 from __future__ import annotations
 
@@ -8,7 +8,7 @@ from pathlib import Path
 from fastapi import APIRouter
 from fastapi.responses import HTMLResponse
 
-logger = logging.getLogger("secureclaw.web.management")
+logger = logging.getLogger("agentshroud.web.management")
 
 router = APIRouter(prefix="/manage", tags=["management"])
 

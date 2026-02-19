@@ -1,8 +1,8 @@
-# SecureClaw Access Control Matrix
+# AgentShroud Access Control Matrix
 
 ## Overview
 
-SecureClaw implements Role-Based Access Control (RBAC) with trust-level progression to provide granular permission management. The system supports five primary roles with trust levels ranging from 0 (untrusted) to 4 (highly trusted), enabling dynamic security controls based on behavioral analysis.
+AgentShroud implements Role-Based Access Control (RBAC) with trust-level progression to provide granular permission management. The system supports five primary roles with trust levels ranging from 0 (untrusted) to 4 (highly trusted), enabling dynamic security controls based on behavioral analysis.
 
 ## RBAC Role Definitions
 
@@ -11,7 +11,7 @@ SecureClaw implements Role-Based Access Control (RBAC) with trust-level progress
 #### Admin (admin)
 **Trust Level**: N/A (Administrative)
 **Description**: Full system administration capabilities
-**Typical Users**: SecureClaw system administrators, security team leads
+**Typical Users**: AgentShroud system administrators, security team leads
 
 #### Operator (operator)  
 **Trust Level**: N/A (Administrative)
@@ -292,7 +292,7 @@ restrictions: multi_approval, full_audit, admin_oversight
 
 ### Dynamic Permission Adjustment
 
-SecureClaw continuously monitors agent behavior and can dynamically adjust permissions:
+AgentShroud continuously monitors agent behavior and can dynamically adjust permissions:
 
 ```python
 def adjust_permissions(agent_id: str, trust_score: float, recent_behavior: Dict):
@@ -315,4 +315,4 @@ def adjust_permissions(agent_id: str, trust_score: float, recent_behavior: Dict)
     return adjustments
 ```
 
-This comprehensive access control matrix ensures SecureClaw provides appropriate security boundaries while enabling agent functionality based on demonstrated trustworthiness and operational requirements.
+This comprehensive access control matrix ensures AgentShroud provides appropriate security boundaries while enabling agent functionality based on demonstrated trustworthiness and operational requirements.

@@ -1,4 +1,4 @@
-# SecureClaw Egress Control Configuration
+# AgentShroud Egress Control Configuration
 # ========================================
 # Default: monitoring mode (log everything, block nothing)
 # Switch to "enforce" for hard restrictions in high-security deployments
@@ -44,7 +44,7 @@ key_vault:
     #   source: env:OPENAI_API_KEY   # or op://vault/item/field
     #   scopes: ["agent-main", "agent-code"]
     # - name: github
-    #   source: op://SecureClaw Bot Credentials/GitHub/token
+    #   source: op://AgentShroud Bot Credentials/GitHub/token
     #   scopes: ["agent-main"]
 
 egress_monitor:
