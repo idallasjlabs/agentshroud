@@ -83,6 +83,8 @@ class WebProxyResult:
 class RateLimiter:
     """Simple in-memory per-domain rate limiter using sliding window."""
 
+    MAX_TRACKED_DOMAINS = 10000  # Prevent unbounded growth
+
     def __init__(self):
         self._windows: dict[str, list[float]] = {}
 
@@ -92,6 +94,18 @@ class RateLimiter:
         window_start = now - 60.0
 
         if domain not in self._windows:
+            # Evict stale domains if at capacity
+            if len(self._windows) >= self.MAX_TRACKED_DOMAINS:
+                now_t = time.time()
+                stale = [d for d, ts in self._windows.items()
+                         if not ts or ts[-1] < now_t - 120]
+                for d in stale:
+                    del self._windows[d]
+                # If still over, drop oldest
+                if len(self._windows) >= self.MAX_TRACKED_DOMAINS:
+                    oldest_d = min(self._windows,
+                                   key=lambda d: self._windows[d][-1] if self._windows[d] else 0)
+                    del self._windows[oldest_d]
             self._windows[domain] = []
 
         # Clean old entries
