@@ -506,9 +506,10 @@ class TestSecurityFeatures:
         assert "notes" in opts
 
     def test_security_options_unknown(self):
+        import pytest
         from gateway.runtime.security import get_security_options
-        opts = get_security_options("lxc")
-        assert opts == {}
+        with pytest.raises(ValueError, match="Invalid runtime"):
+            get_security_options("lxc")
 
 
 # ============================================================
