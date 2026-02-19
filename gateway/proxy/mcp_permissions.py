@@ -61,6 +61,8 @@ class MCPPermissionManager:
     Default-allow philosophy: tools work unless there is a specific reason to block.
     """
 
+    MAX_RATE_LIMIT_ENTRIES = 10000  # Prevent unbounded growth
+
     def __init__(self, config: Optional[MCPProxyConfig] = None):
         self.config = config or MCPProxyConfig()
         self._rate_limits: dict[str, RateLimitEntry] = {}
@@ -183,6 +185,11 @@ class MCPPermissionManager:
         now = time.time()
 
         if key not in self._rate_limits:
+            # Evict stale entries if over limit
+            if len(self._rate_limits) >= self.MAX_RATE_LIMIT_ENTRIES:
+                stale = [k for k, v in self._rate_limits.items() if now - v.window_start > v.window_seconds * 2]
+                for k in stale:
+                    del self._rate_limits[k]
             self._rate_limits[key] = RateLimitEntry(count=1, window_start=now)
             return PermissionCheck(allowed=True)
 
