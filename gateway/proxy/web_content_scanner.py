@@ -133,6 +133,8 @@ class WebContentScanner:
         self.injection_threshold = injection_threshold
         self.max_scan_bytes = max_scan_bytes
 
+    MAX_SCAN_LENGTH = 2_000_000  # 2MB max to prevent ReDoS on adversarial input
+
     def scan(self, content: str, content_type: str = "text/html") -> ScanResult:
         """Scan content for security issues.
 
@@ -144,6 +146,11 @@ class WebContentScanner:
             ScanResult with all findings. Content is never blocked.
         """
         start = time.time()
+        # Truncate to prevent ReDoS on adversarial input
+        if len(content) > self.MAX_SCAN_LENGTH:
+            content = content[:self.MAX_SCAN_LENGTH]
+            logger.warning("Content truncated to %d chars for scanning", self.MAX_SCAN_LENGTH)
+
         result = ScanResult(content_length=len(content))
 
         # Truncate for scanning (performance)
