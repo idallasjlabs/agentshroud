@@ -1,0 +1,72 @@
+# SecureClaw Web Proxy Configuration
+# ===================================
+# Controls how the gateway proxies OpenClaw's outbound HTTP traffic.
+#
+# Design: default-allow with SSRF hard-blocks and flag-based detection.
+# Web browsing works exactly as before; threats are logged and flagged.
+
+web_proxy:
+  # Enable/disable the web proxy
+  enabled: true
+
+  # Passthrough mode: skip all checks, just log (for debugging)
+  passthrough_mode: false
+
+  # --- Domain Denylist ---
+  # These domains are hard-blocked. Add known malicious domains here.
+  denied_domains:
+    - evil.com
+    - malware-payload.net
+    - phishing-site.org
+    - prompt-inject.attacker.com
+    # Add your own:
+    # - bad-domain.example.com
+
+  # --- Per-Domain Settings ---
+  # Override defaults for specific domains.
+  domain_settings:
+    "api.openai.com":
+      max_response_bytes: 52428800  # 50MB (large API responses)
+      rate_limit_rpm: 60
+      timeout_seconds: 60
+
+    "*.github.com":
+      max_response_bytes: 20971520  # 20MB
+      rate_limit_rpm: 120
+
+    "*.stackoverflow.com":
+      rate_limit_rpm: 60
+
+  # --- Response Limits ---
+  default_max_response_bytes: 15728640  # 15MB
+  default_timeout_seconds: 30
+
+  # --- Rate Limiting ---
+  # Per-domain, requests per minute. Generous defaults.
+  default_rate_limit_rpm: 120
+
+  # --- Content Type Filtering ---
+  # Suspicious types get flagged (but still passed through)
+  suspicious_content_types:
+    - application/x-executable
+    - application/x-msdos-program
+    - application/x-msdownload
+
+  # --- Prompt Injection Scanning ---
+  scan_responses: true
+  # Score threshold for flagging (0.0-1.0). Lower = more sensitive.
+  prompt_injection_flag_threshold: 0.3
+
+  # --- PII Detection ---
+  detect_pii_in_urls: true
+  detect_pii_in_responses: true
+
+  # --- SSRF Protection ---
+  # Always enabled. Blocks all private/reserved IP ranges.
+  # This is the ONLY hard block besides domain denylist.
+  block_private_ips: true
+
+  # --- Logging ---
+  log_request_headers: false
+  log_response_headers: true
+  log_response_body_preview: 500  # chars (0 to disable)
