@@ -2,7 +2,7 @@
 
 ## Overview
 
-SecureClaw supports running multiple AI agents, each in its own isolated container.
+AgentShroud supports running multiple AI agents, each in its own isolated container.
 This document describes the architecture for achieving shared-nothing isolation
 between agents while routing requests through the central gateway.
 
@@ -49,7 +49,7 @@ version: "3.8"
 
 services:
   gateway:
-    image: secureclaw/gateway:latest
+    image: agentshroud/gateway:latest
     ports:
       - "8080:8080"
     networks:
@@ -58,7 +58,7 @@ services:
       AGENT_REGISTRY: /config/agents.json
 
   agent-alpha:
-    image: secureclaw/agent:latest
+    image: agentshroud/agent:latest
     container_name: sc-agent-alpha
     networks:
       - net-alpha
@@ -78,7 +78,7 @@ services:
           memory: 512m
 
   agent-beta:
-    image: secureclaw/agent:latest
+    image: agentshroud/agent:latest
     container_name: sc-agent-beta
     networks:
       - net-beta

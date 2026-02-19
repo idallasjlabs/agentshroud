@@ -1,5 +1,5 @@
 #!/bin/bash
-# Restore SecureClaw from backup
+# Restore AgentShroud from backup
 # Usage: restore-backup.sh <backup-directory>
 
 set -euo pipefail
@@ -17,7 +17,7 @@ fi
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 REPO_ROOT="$(cd "$SCRIPT_DIR/.." && pwd)"
 
-echo "=== SecureClaw Backup Restore ==="
+echo "=== AgentShroud Backup Restore ==="
 echo "Restoring from: $BACKUP_DIR"
 echo
 

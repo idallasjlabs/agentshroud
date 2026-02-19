@@ -17,7 +17,7 @@ Access from anywhere on your Tailnet:
 ### Option 2: Gateway Dashboard on Port 8080
 
 ```bash
-# Serve the SecureClaw Gateway Dashboard
+# Serve the AgentShroud Gateway Dashboard
 sudo tailscale serve --bg --https=443 http://localhost:8080
 ```
 

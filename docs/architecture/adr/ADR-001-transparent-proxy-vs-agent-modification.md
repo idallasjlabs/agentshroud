@@ -5,7 +5,7 @@
 
 ## Context
 
-SecureClaw requires a mechanism to provide security controls for OpenClaw AI agents. Two primary approaches were considered:
+AgentShroud requires a mechanism to provide security controls for OpenClaw AI agents. Two primary approaches were considered:
 
 1. **Agent Modification Approach**: Integrate security controls directly into the OpenClaw agent codebase
 2. **Transparent Proxy Approach**: Implement security controls as an external proxy layer
@@ -63,7 +63,7 @@ The transparent proxy will:
 ## Consequences
 
 ### Positive Consequences
-- **Rapid Adoption**: Existing OpenClaw users can add SecureClaw without code changes
+- **Rapid Adoption**: Existing OpenClaw users can add AgentShroud without code changes
 - **Security Focus**: Security team can focus on security controls without agent domain knowledge
 - **Independent Evolution**: Agent and security features can evolve independently
 - **Clear Audit Trail**: All security decisions are external to the agent and fully auditable
@@ -86,4 +86,4 @@ The transparent proxy will:
 - **Medium Risk**: Proxy availability must be carefully managed
 - **Low Risk**: Security policy management is simplified by external implementation
 
-This decision establishes SecureClaw as a transparent security layer that enhances OpenClaw deployments without requiring agent modifications, enabling rapid adoption while maintaining clear security boundaries.
+This decision establishes AgentShroud as a transparent security layer that enhances OpenClaw deployments without requiring agent modifications, enabling rapid adoption while maintaining clear security boundaries.

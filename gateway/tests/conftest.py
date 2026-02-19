@@ -1,4 +1,4 @@
-"""Shared test fixtures for SecureClaw Gateway tests"""
+"""Shared test fixtures for AgentShroud Gateway tests"""
 
 import asyncio
 import tempfile

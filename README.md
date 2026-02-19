@@ -17,7 +17,7 @@
 
 > *"One Claw Tied Behind Your Back"* — You decide what the agent sees, not the agent.
 
-OneClaw (SecureClaw) is a security proxy that sits between your real digital life and an OpenClaw AI agent. It provides **12 security modules**, a **human approval queue**, **full audit logging**, and a **real-time dashboard** — ensuring your AI assistant never sees data you haven't explicitly approved.
+OneClaw (AgentShroud) is a security proxy that sits between your real digital life and an OpenClaw AI agent. It provides **12 security modules**, a **human approval queue**, **full audit logging**, and a **real-time dashboard** — ensuring your AI assistant never sees data you haven't explicitly approved.
 
 ---
 
@@ -31,7 +31,7 @@ OneClaw (SecureClaw) is a security proxy that sits between your real digital lif
                            │ HTTPS (Tailscale)
                            ▼
 ┌─────────────────────────────────────────────────────────────┐
-│                  SECURECLAW GATEWAY                         │
+│                  AGENTSHROUD GATEWAY                         │
 │                                                             │
 │  ┌──────────┐  ┌──────────┐  ┌──────────┐  ┌───────────┐  │
 │  │   PII    │  │ Approval │  │  Audit   │  │  Prompt   │  │
@@ -151,7 +151,7 @@ The live dashboard provides real-time visibility into agent activity:
 
 ```
 ┌─────────────────────────────────────────────────────────┐
-│  SecureClaw Dashboard          [Kill Switch] [Settings] │
+│  AgentShroud Dashboard          [Kill Switch] [Settings] │
 ├─────────────────────────────────────────────────────────┤
 │                                                         │
 │  Activity Feed (Live)              Approval Queue (3)   │

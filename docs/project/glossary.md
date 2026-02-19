@@ -1,16 +1,16 @@
 # Glossary
-## SecureClaw Project Terminology
+## AgentShroud Project Terminology
 
 ### A
 
 **AI Agent**  
-An artificial intelligence system that autonomously performs tasks, makes decisions, and interacts with external systems on behalf of users. In the context of SecureClaw, these are the systems being protected by the security proxy layer.
+An artificial intelligence system that autonomously performs tasks, makes decisions, and interacts with external systems on behalf of users. In the context of AgentShroud, these are the systems being protected by the security proxy layer.
 
 **Approval Queue**  
 A security control mechanism that requires human authorization before executing high-risk operations. Requests are queued for review by security operators with configurable timeouts and escalation procedures.
 
 **Audit Trail**  
-A chronological record of system activities, security events, and user actions maintained for compliance, forensic analysis, and security monitoring. SecureClaw implements tamper-evident audit trails using cryptographic hash chains.
+A chronological record of system activities, security events, and user actions maintained for compliance, forensic analysis, and security monitoring. AgentShroud implements tamper-evident audit trails using cryptographic hash chains.
 
 ### B
 
@@ -20,18 +20,18 @@ The process of analyzing AI agent actions over time to identify anomalous or pot
 ### C
 
 **Container Runtime**  
-Software that executes and manages containers. SecureClaw supports Docker, Podman, and Apple Containers for cross-platform deployment flexibility.
+Software that executes and manages containers. AgentShroud supports Docker, Podman, and Apple Containers for cross-platform deployment flexibility.
 
 **CVE-2026-22708**  
-A theoretical vulnerability identifier representing prompt injection attacks that bypass traditional input validation. SecureClaw's prompt injection defense specifically addresses this class of vulnerabilities.
+A theoretical vulnerability identifier representing prompt injection attacks that bypass traditional input validation. AgentShroud's prompt injection defense specifically addresses this class of vulnerabilities.
 
 **CVE-2026-25253**  
-A theoretical vulnerability identifier for DNS tunneling attacks used to exfiltrate data through DNS queries. SecureClaw's DNS filtering module detects and blocks these attacks.
+A theoretical vulnerability identifier for DNS tunneling attacks used to exfiltrate data through DNS queries. AgentShroud's DNS filtering module detects and blocks these attacks.
 
 ### D
 
 **Defense-in-Depth**  
-A security strategy that employs multiple layers of security controls to protect against various attack vectors. SecureClaw implements this through 26 integrated security modules working in concert.
+A security strategy that employs multiple layers of security controls to protect against various attack vectors. AgentShroud implements this through 26 integrated security modules working in concert.
 
 **DNS Filtering**  
 Security control that monitors and filters Domain Name System queries to block access to malicious domains, detect DNS tunneling attempts, and prevent data exfiltration through DNS channels.
@@ -45,12 +45,12 @@ A technique where data is encoded and transmitted through DNS queries and respon
 Network security control that monitors and restricts outbound network traffic from AI agents to prevent data exfiltration, unauthorized communications, and access to restricted resources.
 
 **Enforce Mode**  
-Operational mode where SecureClaw actively blocks violations and enforces security policies. Contrasts with Monitor Mode where violations are logged but not blocked.
+Operational mode where AgentShroud actively blocks violations and enforces security policies. Contrasts with Monitor Mode where violations are logged but not blocked.
 
 ### F
 
 **False Positive**  
-A security alert or detection that incorrectly identifies legitimate activity as malicious. SecureClaw includes mechanisms to tune detection algorithms and reduce false positive rates.
+A security alert or detection that incorrectly identifies legitimate activity as malicious. AgentShroud includes mechanisms to tune detection algorithms and reduce false positive rates.
 
 ### H
 
@@ -60,7 +60,7 @@ Cryptographic technique where each audit log entry includes the hash of the prev
 ### I
 
 **Injection Attack**  
-Security attack where malicious code or commands are inserted into application inputs to manipulate system behavior. SecureClaw defends against various injection types including prompt injection and SQL injection.
+Security attack where malicious code or commands are inserted into application inputs to manipulate system behavior. AgentShroud defends against various injection types including prompt injection and SQL injection.
 
 ### K
 
@@ -70,52 +70,52 @@ Emergency control mechanism that immediately terminates all or specific AI agent
 ### M
 
 **MCP (Model Context Protocol)**  
-A protocol that enables AI agents to interact with external tools and services in a structured manner. SecureClaw provides secure proxy functionality for MCP communications with permission validation and audit logging.
+A protocol that enables AI agents to interact with external tools and services in a structured manner. AgentShroud provides secure proxy functionality for MCP communications with permission validation and audit logging.
 
 **Monitor Mode**  
-Operational mode where SecureClaw observes and logs security events without blocking them. Used for baseline establishment, testing, and gradual deployment scenarios.
+Operational mode where AgentShroud observes and logs security events without blocking them. Used for baseline establishment, testing, and gradual deployment scenarios.
 
 ### N
 
 **NFKC Normalization**  
-Unicode normalization form that converts text to a canonical representation. SecureClaw uses NFKC normalization to prevent bypass attempts using Unicode variations of malicious patterns.
+Unicode normalization form that converts text to a canonical representation. AgentShroud uses NFKC normalization to prevent bypass attempts using Unicode variations of malicious patterns.
 
 ### O
 
 **OpenClaw**  
-The primary AI agent platform that SecureClaw is designed to protect. OpenClaw provides the core AI agent runtime and tool ecosystem that SecureClaw secures through proxy functionality.
+The primary AI agent platform that AgentShroud is designed to protect. OpenClaw provides the core AI agent runtime and tool ecosystem that AgentShroud secures through proxy functionality.
 
 ### P
 
 **PII (Personally Identifiable Information)**  
-Any information that can be used to identify, contact, or locate a specific individual. SecureClaw automatically detects and sanitizes PII in communications to prevent privacy violations and compliance issues.
+Any information that can be used to identify, contact, or locate a specific individual. AgentShroud automatically detects and sanitizes PII in communications to prevent privacy violations and compliance issues.
 
 **Prompt Injection**  
 Attack technique where malicious instructions are embedded in user inputs to manipulate AI agent behavior, potentially causing the agent to ignore safety instructions or perform unauthorized actions.
 
 **Proxy Mode**  
-Operational configuration where SecureClaw sits between clients and AI agents, intercepting and securing all communications. Enables transparent security without requiring agent modifications.
+Operational configuration where AgentShroud sits between clients and AI agents, intercepting and securing all communications. Enables transparent security without requiring agent modifications.
 
 ### R
 
 **Redaction**  
-The process of removing or obscuring sensitive information from data while preserving the overall structure and meaning. SecureClaw redacts PII while maintaining message coherence for AI processing.
+The process of removing or obscuring sensitive information from data while preserving the overall structure and meaning. AgentShroud redacts PII while maintaining message coherence for AI processing.
 
 ### S
 
-**SecureClaw**  
+**AgentShroud**  
 The comprehensive security proxy layer designed to protect AI agents from various security threats through 26 integrated security modules, providing defense-in-depth protection with comprehensive audit capabilities.
 
 **Sidecar Mode**  
-Deployment pattern where SecureClaw runs alongside AI agents as a companion service, providing security services without requiring direct integration into the agent codebase.
+Deployment pattern where AgentShroud runs alongside AI agents as a companion service, providing security services without requiring direct integration into the agent codebase.
 
 **SSRF (Server-Side Request Forgery)**  
-Attack where an attacker causes a server to make unauthorized requests to internal or external systems. SecureClaw's web proxy prevents SSRF attacks through URL validation and request filtering.
+Attack where an attacker causes a server to make unauthorized requests to internal or external systems. AgentShroud's web proxy prevents SSRF attacks through URL validation and request filtering.
 
 ### T
 
 **Threat Intelligence**  
-Information about current and potential security threats, including malicious domains, IP addresses, and attack patterns. SecureClaw integrates threat intelligence feeds to enhance detection capabilities.
+Information about current and potential security threats, including malicious domains, IP addresses, and attack patterns. AgentShroud integrates threat intelligence feeds to enhance detection capabilities.
 
 **Trust Level**  
 Numerical score (typically 0-10) representing the trustworthiness of an AI agent based on behavior patterns, validation history, and security assessments. Higher trust levels receive fewer restrictions.
@@ -126,25 +126,25 @@ System for calculating, maintaining, and applying trust scores to AI agents. Tru
 ### U
 
 **Unicode Bypass**  
-Attack technique using Unicode characters that appear similar to ASCII characters to bypass text-based security filters. SecureClaw prevents this through NFKC normalization and comprehensive pattern matching.
+Attack technique using Unicode characters that appear similar to ASCII characters to bypass text-based security filters. AgentShroud prevents this through NFKC normalization and comprehensive pattern matching.
 
 ### V
 
 **Vulnerability Assessment**  
-Systematic evaluation of security weaknesses in systems and applications. SecureClaw undergoes regular vulnerability assessments and implements controls to address identified risks.
+Systematic evaluation of security weaknesses in systems and applications. AgentShroud undergoes regular vulnerability assessments and implements controls to address identified risks.
 
 ### W
 
 **Webhook**  
-HTTP callback mechanism that allows SecureClaw to send real-time notifications to external monitoring and alerting systems when security events occur.
+HTTP callback mechanism that allows AgentShroud to send real-time notifications to external monitoring and alerting systems when security events occur.
 
 ### Z
 
 **Zero-Config Deployment**  
-Installation and deployment approach requiring minimal or no manual configuration. SecureClaw provides zero-config deployment with secure defaults and automatic service discovery.
+Installation and deployment approach requiring minimal or no manual configuration. AgentShroud provides zero-config deployment with secure defaults and automatic service discovery.
 
 **Zero-Trust Architecture**  
-Security model that assumes no implicit trust and continuously validates every access request regardless of the user's location or previous authentication. SecureClaw implements zero-trust principles for AI agent security.
+Security model that assumes no implicit trust and continuously validates every access request regardless of the user's location or previous authentication. AgentShroud implements zero-trust principles for AI agent security.
 
 ---
 
@@ -255,4 +255,4 @@ System's ability to handle increased workload by adding resources or optimizing 
 **Service Level Agreement (SLA)**  
 Formal agreement defining expected service performance levels, availability targets, and response times.
 
-This glossary provides comprehensive definitions for terms used throughout the SecureClaw project documentation, enabling clear communication and understanding across technical and non-technical stakeholders.
+This glossary provides comprehensive definitions for terms used throughout the AgentShroud project documentation, enabling clear communication and understanding across technical and non-technical stakeholders.

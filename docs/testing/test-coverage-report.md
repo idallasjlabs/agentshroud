@@ -1,9 +1,9 @@
 # Test Coverage Report
-## SecureClaw v0.9.0
+## AgentShroud v0.9.0
 
 ### Executive Summary
 
-This report provides a comprehensive analysis of test coverage across SecureClaw's 26 security modules. Current metrics show 1,100+ tests achieving 94.2% overall code coverage, exceeding the 90% target. Critical security paths maintain 100% coverage while performance and integration testing provide robust validation of system functionality.
+This report provides a comprehensive analysis of test coverage across AgentShroud's 26 security modules. Current metrics show 1,100+ tests achieving 94.2% overall code coverage, exceeding the 90% target. Critical security paths maintain 100% coverage while performance and integration testing provide robust validation of system functionality.
 
 **Key Metrics**:
 - **Total Tests**: 1,134
@@ -472,4 +472,4 @@ This report provides a comprehensive analysis of test coverage across SecureClaw
 - **Critical Path Tests**: 45 seconds (blocking tests only)
 - **Security Tests**: 8 minutes (comprehensive security validation)
 
-This test coverage report demonstrates SecureClaw's commitment to comprehensive testing and continuous quality improvement. The 94.2% overall coverage exceeds industry standards while maintaining 100% coverage of security-critical paths.
+This test coverage report demonstrates AgentShroud's commitment to comprehensive testing and continuous quality improvement. The 94.2% overall coverage exceeds industry standards while maintaining 100% coverage of security-critical paths.

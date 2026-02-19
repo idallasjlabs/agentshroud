@@ -1,4 +1,4 @@
-# Daily Operations Runbook — SecureClaw
+# Daily Operations Runbook — AgentShroud
 
 > Last updated: 2026-02-18
 
@@ -39,10 +39,10 @@ for line in sys.stdin:
 ### 4. Log Review
 ```bash
 # Check for errors in gateway
-docker logs --since 24h secureclaw-gateway 2>&1 | grep -i error
+docker logs --since 24h agentshroud-gateway 2>&1 | grep -i error
 
 # Check for warnings
-docker logs --since 24h secureclaw-gateway 2>&1 | grep -i warning
+docker logs --since 24h agentshroud-gateway 2>&1 | grep -i warning
 ```
 
 ### 5. Resource Usage

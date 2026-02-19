@@ -70,7 +70,7 @@ echo "   ✅ Saved: $GEMINI_FILE"
 echo "🟢 Running Codex review..."
 CODEX_FILE="$REVIEWS_DIR/codex-review-$TIMESTAMP.md"
 
-REVIEW_PROMPT="You are a senior code reviewer for SecureClaw, a security proxy for OpenClaw AI agents.
+REVIEW_PROMPT="You are a senior code reviewer for AgentShroud, a security proxy for OpenClaw AI agents.
 
 Review the following code changes. Focus on:
 1. Security: credential handling, injection, PII leaks, container security

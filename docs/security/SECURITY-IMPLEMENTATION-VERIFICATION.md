@@ -225,7 +225,7 @@ $ docker compose -f docker/docker-compose.yml ps
 
 NAME                 STATUS
 openclaw-bot         Up 13 minutes (healthy)
-secureclaw-gateway   Up 17 minutes (healthy)
+agentshroud-gateway   Up 17 minutes (healthy)
 ```
 
 Both containers are healthy and running with updated security configurations.

@@ -1,4 +1,4 @@
-"""SecureClaw Proxy — security pipeline for all OpenClaw traffic."""
+"""AgentShroud Proxy — security pipeline for all OpenClaw traffic."""
 
 from .mcp_audit import MCPAuditEntry, MCPAuditTrail
 from .mcp_config import MCPProxyConfig, MCPServerConfig, MCPToolConfig, MCPTransport, PermissionLevel

@@ -1,4 +1,4 @@
-# SecureClaw Security Scripts Reference
+# AgentShroud Security Scripts Reference
 
 Quick reference for the security validation and emergency response scripts.
 
@@ -254,7 +254,7 @@ chmod +x docker/scripts/killswitch.sh
 ### Prometheus/Grafana
 Export metrics from verify-security.sh:
 ```bash
-./docker/scripts/verify-security.sh > /var/log/secureclaw/security-check.log
+./docker/scripts/verify-security.sh > /var/log/agentshroud/security-check.log
 # Parse log for metrics
 ```
 
@@ -268,8 +268,8 @@ Set up alerts for:
 ### Logging
 All scripts log to stdout/stderr. Redirect as needed:
 ```bash
-./docker/scripts/verify-security.sh 2>&1 | tee -a /var/log/secureclaw/verify-$(date +%Y%m%d).log
-./docker/scripts/scan.sh 2>&1 | tee -a /var/log/secureclaw/scan-$(date +%Y%m%d).log
+./docker/scripts/verify-security.sh 2>&1 | tee -a /var/log/agentshroud/verify-$(date +%Y%m%d).log
+./docker/scripts/scan.sh 2>&1 | tee -a /var/log/agentshroud/scan-$(date +%Y%m%d).log
 ```
 
 ---

@@ -1,4 +1,4 @@
-# SecureClaw Configuration
+# AgentShroud Configuration
 # Version: 1.0.0
 # This file defines the complete security posture and operational configuration
 
@@ -58,7 +58,7 @@ container:
 
   # Network configuration
   tailscale: true
-  tailscale_hostname: "secureclaw"
+  tailscale_hostname: "agentshroud"
   internet_only: true
 
   # Resource limits
@@ -136,8 +136,8 @@ ssh:
     pi:
       host: "raspberrypi.tail240ea8.ts.net"
       port: 22
-      username: "secureclaw-bot"
-      key_path: "/home/secureclaw-bot/.ssh/id_ed25519"
+      username: "agentshroud-bot"
+      key_path: "/home/agentshroud-bot/.ssh/id_ed25519"
       allowed_commands:
         - "git status"
         - "git log"

@@ -1,7 +1,7 @@
-# SecureClaw Sidecar Mode — Optional Security Scanning
+# AgentShroud Sidecar Mode — Optional Security Scanning
 #
 # WARNING: This mode does NOT guarantee all traffic is scanned.
-# OpenClaw is exposed normally. SecureClaw provides an optional
+# OpenClaw is exposed normally. AgentShroud provides an optional
 # /api/scan endpoint for security scanning.
 #
 # For guaranteed security, use docker-compose.secure.yml (proxy mode).
@@ -10,21 +10,21 @@
 #   docker compose -f docker-compose.sidecar.yml up -d
 
 services:
-  secureclaw-gateway:
+  agentshroud-gateway:
     build:
       context: .
       dockerfile: Dockerfile.gateway
-    container_name: secureclaw-gateway
+    container_name: agentshroud-gateway
     ports:
       - "8081:8080"
     networks:
       - shared
     environment:
-      - SECURECLAW_MODE=sidecar
+      - AGENTSHROUD_MODE=sidecar
       - OPENCLAW_INTERNAL_URL=http://openclaw:3000
-      - SECURECLAW_CONFIG=/app/secureclaw.yaml
+      - AGENTSHROUD_CONFIG=/app/agentshroud.yaml
     volumes:
-      - ./secureclaw.yaml:/app/secureclaw.yaml:ro
+      - ./agentshroud.yaml:/app/agentshroud.yaml:ro
       - gateway-data:/app/data
     healthcheck:
       test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://localhost:8080/health')"]
@@ -53,7 +53,7 @@ services:
 networks:
   shared:
     driver: bridge
-    name: secureclaw-shared
+    name: agentshroud-shared
 
 volumes:
   gateway-data:

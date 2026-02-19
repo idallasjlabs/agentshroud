@@ -26,9 +26,9 @@ PRIORITY_MAP = {
     "Debug": "LOW",
 }
 
-# SecureClaw-specific rule prefixes
-SECURECLAW_RULES = [
-    "SecureClaw",
+# AgentShroud-specific rule prefixes
+AGENTSHROUD_RULES = [
+    "AgentShroud",
     "OpenClaw",
     "Container Shell",
     "Unexpected Outbound",
@@ -49,7 +49,7 @@ def read_alerts(
     Args:
         alert_dir: Directory containing Falco alert files.
         since: Only return alerts after this timestamp.
-        secureclaw_only: Filter to SecureClaw-specific rules only.
+        secureclaw_only: Filter to AgentShroud-specific rules only.
 
     Returns:
         List of parsed alert dicts.
@@ -81,7 +81,7 @@ def read_alerts(
         since_str = since.isoformat()
         alerts = [a for a in alerts if a.get("timestamp", "") >= since_str]
 
-    # Filter SecureClaw rules
+    # Filter AgentShroud rules
     if secureclaw_only:
         alerts = [a for a in alerts if is_secureclaw_rule(a.get("rule", ""))]
 
@@ -119,15 +119,15 @@ def parse_alert(raw: dict[str, Any]) -> dict[str, Any] | None:
 
 
 def is_secureclaw_rule(rule_name: str) -> bool:
-    """Check if a rule is SecureClaw-specific.
+    """Check if a rule is AgentShroud-specific.
 
     Args:
         rule_name: Falco rule name.
 
     Returns:
-        True if rule matches SecureClaw patterns.
+        True if rule matches AgentShroud patterns.
     """
-    return any(rule_name.startswith(prefix) for prefix in SECURECLAW_RULES)
+    return any(rule_name.startswith(prefix) for prefix in AGENTSHROUD_RULES)
 
 
 def categorize_alerts(alerts: list[dict[str, Any]]) -> dict[str, list[dict[str, Any]]]:

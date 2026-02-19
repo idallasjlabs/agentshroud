@@ -1,6 +1,6 @@
-# SecureClaw State Diagrams
+# AgentShroud State Diagrams
 
-This document illustrates the state machines that govern SecureClaw's security and operational behavior.
+This document illustrates the state machines that govern AgentShroud's security and operational behavior.
 
 ## 1. Agent Trust Levels
 
@@ -405,5 +405,5 @@ Mode Characteristics:
 │             │ • Monitoring emphasis                                   │
 └─────────────┴─────────────────────────────────────────────────────────┘
 
-These state diagrams ensure SecureClaw operates predictably and securely across all operational scenarios, with clear transitions and comprehensive audit trails for compliance and forensic analysis.
+These state diagrams ensure AgentShroud operates predictably and securely across all operational scenarios, with clear transitions and comprehensive audit trails for compliance and forensic analysis.
 ```

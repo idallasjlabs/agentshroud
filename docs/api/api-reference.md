@@ -1,9 +1,9 @@
 # API Reference
-## SecureClaw v0.9.0
+## AgentShroud v0.9.0
 
 ### Overview
 
-SecureClaw provides a comprehensive REST API for security proxy management and monitoring. All endpoints implement authentication, rate limiting, and comprehensive audit logging. The API follows OpenAPI 3.0 specification and supports JSON content negotiation.
+AgentShroud provides a comprehensive REST API for security proxy management and monitoring. All endpoints implement authentication, rate limiting, and comprehensive audit logging. The API follows OpenAPI 3.0 specification and supports JSON content negotiation.
 
 **Base URL**: `https://localhost:8443/api/v1`  
 **Authentication**: Bearer token or API key  
@@ -622,4 +622,4 @@ Endpoints supporting pagination use cursor-based pagination:
 }
 ```
 
-This API reference provides comprehensive documentation for integrating with SecureClaw's security proxy functionality while maintaining security, performance, and reliability standards.
+This API reference provides comprehensive documentation for integrating with AgentShroud's security proxy functionality while maintaining security, performance, and reliability standards.

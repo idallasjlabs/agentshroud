@@ -1,10 +1,10 @@
-# SecureClaw System Architecture Document (SAD)
+# AgentShroud System Architecture Document (SAD)
 
 ## Executive Overview
 
-SecureClaw is a transparent security proxy layer designed to provide comprehensive protection for OpenClaw AI agents without requiring modifications to the agent codebase. Operating as a FastAPI gateway, SecureClaw intercepts all external communications, applies security controls, and maintains detailed audit trails while preserving the agent's functionality and user experience.
+AgentShroud is a transparent security proxy layer designed to provide comprehensive protection for OpenClaw AI agents without requiring modifications to the agent codebase. Operating as a FastAPI gateway, AgentShroud intercepts all external communications, applies security controls, and maintains detailed audit trails while preserving the agent's functionality and user experience.
 
-The system implements a defense-in-depth strategy with 26 security modules operating across 7 distinct layers, from network isolation to application-level content filtering. SecureClaw's design philosophy centers on "default-allow with comprehensive logging" - enabling agent functionality while capturing threats for analysis and progressive enforcement.
+The system implements a defense-in-depth strategy with 26 security modules operating across 7 distinct layers, from network isolation to application-level content filtering. AgentShroud's design philosophy centers on "default-allow with comprehensive logging" - enabling agent functionality while capturing threats for analysis and progressive enforcement.
 
 Key capabilities include:
 - **Transparent Proxy**: Zero modification required for existing OpenClaw deployments
@@ -16,11 +16,11 @@ Key capabilities include:
 
 ## System Context
 
-SecureClaw serves as a security enforcement point positioned between external networks and OpenClaw agent containers. The system architecture follows a two-network isolation model where external traffic flows through SecureClaw's security controls before reaching the protected OpenClaw environment.
+AgentShroud serves as a security enforcement point positioned between external networks and OpenClaw agent containers. The system architecture follows a two-network isolation model where external traffic flows through AgentShroud's security controls before reaching the protected OpenClaw environment.
 
 ```
 ┌─────────────────┐    ┌─────────────────┐    ┌─────────────────┐
-│   External      │    │   SecureClaw    │    │    OpenClaw     │
+│   External      │    │   AgentShroud    │    │    OpenClaw     │
 │   Networks      │◄──►│   Security      │◄──►│    Agent        │
 │                 │    │   Gateway       │    │   Container     │
 │ • Users/APIs    │    │                 │    │                 │
@@ -38,7 +38,7 @@ SecureClaw serves as a security enforcement point positioned between external ne
 ### Core Components
 
 #### 1. Gateway (FastAPI)
-**Location**: `secureclaw/gateway/`  
+**Location**: `agentshroud/gateway/`  
 **Purpose**: Primary ingress point handling HTTP/HTTPS traffic routing
 
 The Gateway component serves as the main entry point for all HTTP-based communications. Built on FastAPI, it provides:
@@ -48,7 +48,7 @@ The Gateway component serves as the main entry point for all HTTP-based communic
 - Request/response middleware integration for security modules
 
 #### 2. PII Sanitizer (Presidio + Regex)
-**Location**: `secureclaw/pii/`  
+**Location**: `agentshroud/pii/`  
 **Purpose**: Detection and redaction of personally identifiable information
 
 Combines Microsoft Presidio's ML-based entity recognition with custom regex patterns:
@@ -58,7 +58,7 @@ Combines Microsoft Presidio's ML-based entity recognition with custom regex patt
 - **Redaction Modes**: Replace, mask, hash, or log-only based on sensitivity levels
 
 #### 3. Audit Ledger (SHA-256 Hash Chain)
-**Location**: `secureclaw/audit/`  
+**Location**: `agentshroud/audit/`  
 **Purpose**: Tamper-evident logging with cryptographic integrity
 
 Implements blockchain-inspired hash chaining for audit integrity:
@@ -75,7 +75,7 @@ Key features:
 - **Compliance Support**: Structured logging for IEC 62443 and NIST frameworks
 
 #### 4. Approval Queue (SQLite)
-**Location**: `secureclaw/approval/`  
+**Location**: `agentshroud/approval/`  
 **Purpose**: Human-in-the-loop security decision management
 
 SQLite-based workflow engine supporting:
@@ -85,7 +85,7 @@ SQLite-based workflow engine supporting:
 - **Approval Context**: Full request context preservation for informed decisions
 
 #### 5. Kill Switch (3 Modes)
-**Location**: `secureclaw/killswitch/`  
+**Location**: `agentshroud/killswitch/`  
 **Purpose**: Emergency response and threat containment
 
 Three operational modes:
@@ -96,7 +96,7 @@ Three operational modes:
 Mode transitions support automated threat response and manual intervention.
 
 #### 6. SSH Proxy
-**Location**: `secureclaw/ssh/`  
+**Location**: `agentshroud/ssh/`  
 **Purpose**: Secure shell connection proxying with session recording
 
 Features:
@@ -106,7 +106,7 @@ Features:
 - **Privilege Escalation Detection**: Monitor for suspicious privilege changes
 
 #### 7. MCP Proxy (Model Context Protocol)
-**Location**: `secureclaw/mcp/`  
+**Location**: `agentshroud/mcp/`  
 **Purpose**: Tool and skill invocation security with capability-based access control
 
 MCP-specific security controls:
@@ -116,7 +116,7 @@ MCP-specific security controls:
 - **Tool Chain Analysis**: Detect suspicious tool usage patterns
 
 #### 8. Web Proxy
-**Location**: `secureclaw/web/`  
+**Location**: `agentshroud/web/`  
 **Purpose**: HTTP/HTTPS traffic inspection and filtering
 
 Advanced web security features:
@@ -126,7 +126,7 @@ Advanced web security features:
 - **Rate Limiting**: Adaptive rate limiting based on request patterns
 
 #### 9. DNS Filter
-**Location**: `secureclaw/dns/`  
+**Location**: `agentshroud/dns/`  
 **Purpose**: DNS-based threat prevention and data exfiltration detection
 
 DNS security capabilities:
@@ -136,7 +136,7 @@ DNS security capabilities:
 - **DNS-over-HTTPS**: Secure DNS resolution with logging
 
 #### 10. Dashboard (WebSocket)
-**Location**: `secureclaw/dashboard/`  
+**Location**: `agentshroud/dashboard/`  
 **Purpose**: Real-time security monitoring and control interface
 
 Web-based dashboard providing:
@@ -146,7 +146,7 @@ Web-based dashboard providing:
 - **Agent Status**: Trust level progression and agent health monitoring
 
 #### 11. Trust Manager
-**Location**: `secureclaw/trust/`  
+**Location**: `agentshroud/trust/`  
 **Purpose**: Dynamic trust level calculation and policy enforcement
 
 Trust-based security model:
@@ -156,7 +156,7 @@ Trust-based security model:
 - **Trust Persistence**: Long-term trust relationship management
 
 #### 12. Egress Monitor
-**Location**: `secureclaw/egress/`  
+**Location**: `agentshroud/egress/`  
 **Purpose**: Outbound traffic analysis and data loss prevention
 
 Egress security controls:
@@ -167,7 +167,7 @@ Egress security controls:
 
 ## Two-Network Docker Architecture
 
-SecureClaw implements strict network isolation using Docker's custom bridge networks:
+AgentShroud implements strict network isolation using Docker's custom bridge networks:
 
 ```
 ┌─────────────────────────────────────────────────────────────────┐
@@ -176,7 +176,7 @@ SecureClaw implements strict network isolation using Docker's custom bridge netw
 │  ┌─ External Network (secureclaw_external) ─┐                  │
 │  │                                          │                  │
 │  │  ┌─────────────────┐    ┌──────────────┐ │                  │
-│  │  │  SecureClaw     │    │   Ingress    │ │                  │
+│  │  │  AgentShroud     │    │   Ingress    │ │                  │
 │  │  │   Gateway       │◄──►│   Proxy      │ │                  │
 │  │  │  (Port 8080)    │    │ (Port 80/443)│ │                  │
 │  │  └─────────────────┘    └──────────────┘ │                  │
@@ -185,7 +185,7 @@ SecureClaw implements strict network isolation using Docker's custom bridge netw
 │  ┌─ Internal Network (secureclaw_internal) ─┐                  │
 │  │                 │                        │                  │
 │  │  ┌─────────────────┐    ┌──────────────┐ │                  │
-│  │  │  SecureClaw     │    │   OpenClaw   │ │                  │
+│  │  │  AgentShroud     │    │   OpenClaw   │ │                  │
 │  │  │   Gateway       │◄──►│    Agent     │ │                  │
 │  │  │ (Internal Only) │    │   Container  │ │                  │
 │  │  └─────────────────┘    └──────────────┘ │                  │
@@ -196,7 +196,7 @@ SecureClaw implements strict network isolation using Docker's custom bridge netw
 ### Network Isolation Benefits:
 
 1. **Attack Surface Reduction**: OpenClaw containers have no direct external exposure
-2. **Traffic Inspection**: All communication flows through SecureClaw security controls
+2. **Traffic Inspection**: All communication flows through AgentShroud security controls
 3. **Lateral Movement Prevention**: Compromised containers cannot access external networks
 4. **Policy Enforcement**: Network-level controls complement application-layer security
 

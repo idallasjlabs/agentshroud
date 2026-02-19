@@ -2,7 +2,7 @@
 
 ## Overview
 
-The SSH proxy module provides **controlled remote command execution** through the SecureClaw Gateway. Instead of granting agents or automation direct SSH access to hosts, all commands flow through the Gateway API, which enforces validation, approval workflows, and audit logging before any command reaches the target.
+The SSH proxy module provides **controlled remote command execution** through the AgentShroud Gateway. Instead of granting agents or automation direct SSH access to hosts, all commands flow through the Gateway API, which enforces validation, approval workflows, and audit logging before any command reaches the target.
 
 **Why it exists:**
 
@@ -15,7 +15,7 @@ The SSH proxy module provides **controlled remote command execution** through th
 
 ```
 ┌──────────┐     ┌───────────────────────────────────────────────┐     ┌─────────────┐
-│          │     │              SecureClaw Gateway               │     │             │
+│          │     │              AgentShroud Gateway               │     │             │
 │  Client  │────▶│                                               │────▶│ Target Host │
 │  (API)   │ POST│  ┌────────────┐  ┌──────────────┐            │ SSH │ (e.g. Pi)   │
 │          │◀────│  │  Command   │─▶│  Approval    │            │◀────│             │

@@ -44,7 +44,7 @@ This document reviews the attack surface introduced by the SSH proxy module and 
 **Mitigations:**
 - Allow list constrains which commands can run
 - Deny list blocks known dangerous commands
-- The SSH user (`secureclaw-bot`) should have minimal OS-level permissions
+- The SSH user (`agentshroud-bot`) should have minimal OS-level permissions
 - `max_session_seconds` limits exposure time
 
 **Residual risk:** Low-Medium. Security depends on OS-level user permissions being properly restricted. The proxy cannot prevent escalation if the SSH user has `sudo` access.
@@ -89,10 +89,10 @@ This document reviews the attack surface introduced by the SSH proxy module and 
 Eliminate the TOFU risk by pre-populating host keys before the first connection:
 
 ```bash
-ssh-keyscan -p 22 target-host.example.com >> /etc/secureclaw/known_hosts
+ssh-keyscan -p 22 target-host.example.com >> /etc/agentshroud/known_hosts
 ```
 
-Then configure each host with `known_hosts_file: "/etc/secureclaw/known_hosts"` and change `StrictHostKeyChecking` from `accept-new` to `yes` (requires code change).
+Then configure each host with `known_hosts_file: "/etc/agentshroud/known_hosts"` and change `StrictHostKeyChecking` from `accept-new` to `yes` (requires code change).
 
 ### 2. Network Segmentation
 
@@ -131,9 +131,9 @@ Ensure each SSH user account on target hosts:
 - Has a restricted shell if possible (e.g., `rbash`)
 - Uses `ForceCommand` in `sshd_config` for an additional layer of restriction
 
-## Comparison: Direct SSH vs. SecureClaw SSH Proxy
+## Comparison: Direct SSH vs. AgentShroud SSH Proxy
 
-| Aspect | Direct SSH | SecureClaw SSH Proxy |
+| Aspect | Direct SSH | AgentShroud SSH Proxy |
 |--------|-----------|---------------------|
 | **Access control** | SSH keys / passwords only | Auth token + allow/deny lists + injection detection |
 | **Approval workflow** | None | Human approval queue for sensitive commands |

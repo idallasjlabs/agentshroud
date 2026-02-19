@@ -1,6 +1,6 @@
 OpenAI Codex v0.101.0 (research preview)
 --------
-workdir: /home/secureclaw-bot/Development/oneclaw
+workdir: /home/agentshroud-bot/Development/oneclaw
 model: o4-mini
 provider: openai
 approval: never
@@ -10,7 +10,7 @@ reasoning summaries: auto
 session id: 019c697e-820e-7e03-bcf9-8ee9890a5682
 --------
 user
-You are reviewing SecureClaw infra fixes. For each finding: [SEVERITY] file - Description. Severities: CRITICAL, HIGH, MEDIUM, LOW, INFO.
+You are reviewing AgentShroud infra fixes. For each finding: [SEVERITY] file - Description. Severities: CRITICAL, HIGH, MEDIUM, LOW, INFO.
 
 Diff:
 diff --git a/.claude/scripts/claude-hooks/run_targeted_tests.sh b/.claude/scripts/claude-hooks/run_targeted_tests.sh
@@ -113,7 +113,7 @@ index 6e4ba4f..f792827 100755
 -#   ├── cicd/  SKILL.md   — CI/CD Pipeline Advisor
 -#   ├── ps/    SKILL.md   — Production Safety Checklist
 -#   └── mc/    SKILL.md   — Master Checklist (Combined Reference)
-+# Deploys Claude Code skills for the SecureClaw project.
++# Deploys Claude Code skills for the AgentShroud project.
 +# Enforces: Test-Driven Development | Security Review | Production Safety
  #
  # Usage:
@@ -479,7 +479,7 @@ index 6e4ba4f..f792827 100755
 -aws stepfunctions stop-execution \\
 -  --execution-arn arn:aws:states:us-east-1:<ACCOUNT>:execution:<SM_NAME>:TEST-<ID> \\
 -  --cause "Stopping for test cleanup"
-+echo "Deploying SecureClaw skills to $SKILLS_ROOT/"
++echo "Deploying AgentShroud skills to $SKILLS_ROOT/"
  
 -# 3. Disable EventBridge rule (if scheduled)
 -aws events disable-rule --name <RULE_NAME>
@@ -1229,7 +1229,7 @@ index 6e4ba4f..f792827 100755
 -  echo ""
 -  exit 0
 -fi
-+Senior security reviewer for SecureClaw — a security proxy for AI agents.
++Senior security reviewer for AgentShroud — a security proxy for AI agents.
 +
 +## Focus Areas
 +1. **Credential handling** — no hardcoded secrets, use 1Password/env

@@ -1,5 +1,5 @@
 #!/bin/bash
-# SecureClaw OpenSCAP Compliance Scanner
+# AgentShroud OpenSCAP Compliance Scanner
 # Runs SCAP security compliance checks on both containers
 
 set -e
@@ -15,7 +15,7 @@ RED='\033[0;31m'
 NC='\033[0m'
 
 echo "======================================"
-echo "SecureClaw OpenSCAP Compliance Scan"
+echo "AgentShroud OpenSCAP Compliance Scan"
 echo "======================================"
 echo ""
 
@@ -29,7 +29,7 @@ if ! docker ps | grep -q "openclaw-bot"; then
     exit 1
 fi
 
-if ! docker ps | grep -q "secureclaw-gateway"; then
+if ! docker ps | grep -q "agentshroud-gateway"; then
     echo -e "${RED}Error:${NC} Gateway container is not running"
     echo "Start containers with: docker compose -f docker/docker-compose.yml up -d"
     exit 1
@@ -46,7 +46,7 @@ else
     echo -e "${GREEN}✓${NC} OpenSCAP found in OpenClaw container"
 fi
 
-if ! docker exec secureclaw-gateway which oscap >/dev/null 2>&1; then
+if ! docker exec agentshroud-gateway which oscap >/dev/null 2>&1; then
     echo -e "${YELLOW}Warning:${NC} OpenSCAP not installed in Gateway container"
     echo "OpenSCAP can be added to the Dockerfile for compliance scanning"
     echo "Skipping Gateway SCAP scan..."
@@ -91,20 +91,20 @@ if [ "$GATEWAY_SCAP" = true ]; then
     echo "Scanning Gateway container..."
 
     # Check for available SCAP content
-    SCAP_CONTENT=$(docker exec secureclaw-gateway find /usr/share/xml/scap -name "*-ds.xml" 2>/dev/null | head -1 || echo "")
+    SCAP_CONTENT=$(docker exec agentshroud-gateway find /usr/share/xml/scap -name "*-ds.xml" 2>/dev/null | head -1 || echo "")
 
     if [ -n "$SCAP_CONTENT" ]; then
         echo "Using SCAP content: $SCAP_CONTENT"
 
         # Run SCAP evaluation
-        docker exec secureclaw-gateway oscap xccdf eval \
+        docker exec agentshroud-gateway oscap xccdf eval \
             --results-arf "/tmp/gateway-scan-$TIMESTAMP.xml" \
             --report "/tmp/gateway-scan-$TIMESTAMP.html" \
             "$SCAP_CONTENT" 2>&1 | tee "$REPORTS_DIR/gateway-scan-$TIMESTAMP.log" || true
 
         # Copy reports out of container
-        docker cp "secureclaw-gateway:/tmp/gateway-scan-$TIMESTAMP.xml" "$REPORTS_DIR/" 2>/dev/null || true
-        docker cp "secureclaw-gateway:/tmp/gateway-scan-$TIMESTAMP.html" "$REPORTS_DIR/" 2>/dev/null || true
+        docker cp "agentshroud-gateway:/tmp/gateway-scan-$TIMESTAMP.xml" "$REPORTS_DIR/" 2>/dev/null || true
+        docker cp "agentshroud-gateway:/tmp/gateway-scan-$TIMESTAMP.html" "$REPORTS_DIR/" 2>/dev/null || true
 
         echo -e "${GREEN}✓${NC} Gateway scan complete"
         echo "   Report: $REPORTS_DIR/gateway-scan-$TIMESTAMP.html"
@@ -131,47 +131,47 @@ echo ""
 echo "Running manual security checks..."
 {
     echo "======================================"
-    echo "SecureClaw Manual Security Checks"
+    echo "AgentShroud Manual Security Checks"
     echo "Date: $(date)"
     echo "======================================"
     echo ""
 
     echo "Container User (should be non-root):"
-    echo "  Gateway: $(docker exec secureclaw-gateway whoami)"
+    echo "  Gateway: $(docker exec agentshroud-gateway whoami)"
     echo "  OpenClaw: $(docker exec openclaw-bot whoami)"
     echo ""
 
     echo "Read-only filesystem test:"
     echo -n "  Gateway: "
-    docker exec secureclaw-gateway touch /test-file 2>&1 && echo "FAIL" || echo "PASS (read-only)"
+    docker exec agentshroud-gateway touch /test-file 2>&1 && echo "FAIL" || echo "PASS (read-only)"
     echo -n "  OpenClaw: "
     docker exec openclaw-bot touch /test-file 2>&1 && echo "FAIL (expected during dev)" || echo "PASS (read-only)"
     echo ""
 
     echo "Network connectivity:"
     echo -n "  Gateway to internet: "
-    docker exec secureclaw-gateway ping -c 1 8.8.8.8 >/dev/null 2>&1 && echo "PASS" || echo "FAIL"
+    docker exec agentshroud-gateway ping -c 1 8.8.8.8 >/dev/null 2>&1 && echo "PASS" || echo "FAIL"
     echo -n "  OpenClaw to internet: "
     docker exec openclaw-bot ping -c 1 8.8.8.8 >/dev/null 2>&1 && echo "PASS" || echo "FAIL"
     echo ""
 
     echo "Port bindings (should be 127.0.0.1 only):"
-    docker port secureclaw-gateway
+    docker port agentshroud-gateway
     docker port openclaw-bot
     echo ""
 
     echo "Security options:"
     echo "  Gateway:"
-    docker inspect --format '  {{.HostConfig.SecurityOpt}}' secureclaw-gateway
+    docker inspect --format '  {{.HostConfig.SecurityOpt}}' agentshroud-gateway
     echo "  OpenClaw:"
     docker inspect --format '  {{.HostConfig.SecurityOpt}}' openclaw-bot
     echo ""
 
     echo "Capabilities:"
     echo "  Gateway dropped: {{.HostConfig.CapDrop}}"
-    docker inspect --format '  {{.HostConfig.CapDrop}}' secureclaw-gateway
+    docker inspect --format '  {{.HostConfig.CapDrop}}' agentshroud-gateway
     echo "  Gateway added: {{.HostConfig.CapAdd}}"
-    docker inspect --format '  {{.HostConfig.CapAdd}}' secureclaw-gateway
+    docker inspect --format '  {{.HostConfig.CapAdd}}' agentshroud-gateway
     echo "  OpenClaw dropped: {{.HostConfig.CapDrop}}"
     docker inspect --format '  {{.HostConfig.CapDrop}}' openclaw-bot
     echo "  OpenClaw added: {{.HostConfig.CapAdd}}"

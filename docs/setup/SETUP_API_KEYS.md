@@ -1,6 +1,6 @@
 # API Keys Setup Guide
 
-**System**: OpenClaw + SecureClaw Gateway
+**System**: OpenClaw + AgentShroud Gateway
 **Bot**: @therealidallasj_bot
 **Last Updated**: 2026-02-15
 

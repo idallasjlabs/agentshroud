@@ -70,7 +70,7 @@ For more complex needs, use the `1password-skill` command:
 1password-skill list-vaults
 
 # List items in a vault
-1password-skill list-items "SecureClaw Bot Credentials"
+1password-skill list-items "AgentShroud Bot Credentials"
 
 # Get specific field
 1password-skill get-field "Gmail - therealidallasj" "openclaw bot password"
@@ -172,7 +172,7 @@ Is it a chat interface?
 
 You have read-only access to:
 - **Private** (your own vault)
-- **SecureClaw Bot Credentials** (shared credentials for bot use)
+- **AgentShroud Bot Credentials** (shared credentials for bot use)
 
 You do NOT have access to:
 - Family Shared vaults

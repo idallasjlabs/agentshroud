@@ -12,7 +12,7 @@ We take security seriously. If you discover a vulnerability in OneClaw, please r
 
 ### Alternative: Email
 
-- **Security contact:** security@secureclaw.dev
+- **Security contact:** security@agentshroud.dev
 - **PGP key:** Available on request
 
 ### What to Include

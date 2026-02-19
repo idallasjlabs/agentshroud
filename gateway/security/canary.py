@@ -12,11 +12,11 @@ import time
 from dataclasses import dataclass, field
 from typing import Any
 
-logger = logging.getLogger("secureclaw.security.canary")
+logger = logging.getLogger("agentshroud.security.canary")
 
 # Fake PII for canary tests — clearly fake values
 CANARY_SSN = "000-00-0000"
-CANARY_EMAIL = "canary@test.secureclaw.local"
+CANARY_EMAIL = "canary@test.agentshroud.local"
 CANARY_PHONE = "555-000-0000"
 CANARY_MESSAGE = (
     f"Canary test: SSN {CANARY_SSN}, email {CANARY_EMAIL}, phone {CANARY_PHONE}"

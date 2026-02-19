@@ -154,7 +154,7 @@ class TestDashboardCookieAuth:
             cookies={"dashboard_token": "test-token-12345"},
         )
         assert resp.status_code == 200
-        assert "SecureClaw" in resp.text
+        assert "AgentShroud" in resp.text
 
     @pytest.mark.asyncio
     async def test_dashboard_bad_cookie_returns_403(self, client):

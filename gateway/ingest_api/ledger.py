@@ -1,4 +1,4 @@
-"""Data Ledger for SecureClaw Gateway
+"""Data Ledger for AgentShroud Gateway
 
 SQLite-based audit trail of all forwarded content.
 CRITICAL: Stores only SHA-256 hashes, never raw content.
@@ -18,7 +18,7 @@ import aiosqlite
 from .config import LedgerConfig
 from .models import LedgerEntry, LedgerQueryResponse
 
-logger = logging.getLogger("secureclaw.gateway.ledger")
+logger = logging.getLogger("agentshroud.gateway.ledger")
 
 
 # Database schema

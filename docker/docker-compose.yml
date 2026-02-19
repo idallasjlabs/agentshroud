@@ -1,10 +1,10 @@
 services:
-  # SecureClaw Gateway (Phase 2) - PII sanitization, audit ledger, routing
+  # AgentShroud Gateway (Phase 2) - PII sanitization, audit ledger, routing
   gateway:
     build:
       context: ..
       dockerfile: gateway/Dockerfile
-    container_name: secureclaw-gateway
+    container_name: agentshroud-gateway
     hostname: gateway
     restart: unless-stopped
 
@@ -14,7 +14,7 @@ services:
 
     # Data persistence
     volumes:
-      - ../secureclaw.yaml:/app/secureclaw.yaml:ro
+      - ../agentshroud.yaml:/app/agentshroud.yaml:ro
       - gateway-data:/app/data
 
     # Environment
@@ -50,8 +50,8 @@ services:
 
     # Network - Gateway on BOTH networks to act as proxy
     networks:
-      - secureclaw-internal  # External (localhost access)
-      - secureclaw-isolated  # Internal (to OpenClaw)
+      - agentshroud-internal  # External (localhost access)
+      - agentshroud-isolated  # Internal (to OpenClaw)
 
   # OpenClaw Bot (Real OpenClaw Platform) - therealidallasj
   # SECURITY: Fully isolated - NO host filesystem access, NO LAN access
@@ -140,7 +140,7 @@ services:
 
     # SECURITY: Isolated network - NO access to host LAN
     networks:
-      - secureclaw-isolated
+      - agentshroud-isolated
 
     # Dependencies
     depends_on:
@@ -164,10 +164,10 @@ secrets:
   1password_service_account:
     file: ./secrets/1password_service_account
 
-# Network architecture for SecureClaw isolation
+# Network architecture for AgentShroud isolation
 networks:
   # External network - Gateway accessible from localhost
-  secureclaw-internal:
+  agentshroud-internal:
     driver: bridge
     internal: false  # Allows localhost access to Gateway
     ipam:
@@ -177,7 +177,7 @@ networks:
   # Backend network - OpenClaw talks to Gateway and internet (LLM APIs)
   # NOTE: internal: false is required for outbound API calls to LLM providers
   # Network isolation is enforced via iptables/seccomp, not Docker networking
-  secureclaw-isolated:
+  agentshroud-isolated:
     driver: bridge
     internal: false  # Required for LLM API access (OpenAI, Anthropic, etc.)
     ipam:

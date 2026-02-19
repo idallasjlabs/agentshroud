@@ -12,7 +12,7 @@ from typing import Optional
 
 from .mcp_config import MCPProxyConfig, MCPServerConfig, MCPToolConfig, PermissionLevel
 
-logger = logging.getLogger("secureclaw.proxy.mcp_permissions")
+logger = logging.getLogger("agentshroud.proxy.mcp_permissions")
 
 # Trust level → maximum permission allowed
 TRUST_PERMISSION_MAP: dict[int, PermissionLevel] = {

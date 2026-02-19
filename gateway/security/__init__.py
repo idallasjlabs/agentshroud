@@ -1,4 +1,4 @@
-# Security toolchain modules for SecureClaw
+# Security toolchain modules for AgentShroud
 """
 Security scanning and monitoring integration:
 - Trivy: Container vulnerability scanning

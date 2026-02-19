@@ -1,4 +1,4 @@
-"""Pydantic models for SecureClaw Gateway API
+"""Pydantic models for AgentShroud Gateway API
 
 Defines request and response schemas for all endpoints.
 """

@@ -1,10 +1,10 @@
-# SecureClaw Sequence Diagrams
+# AgentShroud Sequence Diagrams
 
-This document shows the interaction sequences for key SecureClaw operations using ASCII sequence diagrams.
+This document shows the interaction sequences for key AgentShroud operations using ASCII sequence diagrams.
 
 ## 1. Normal Message Flow
 
-Standard user message processing through the SecureClaw gateway.
+Standard user message processing through the AgentShroud gateway.
 
 ```
 User    Gateway    Sanitizer    Audit     OpenClaw    Audit     User
@@ -232,4 +232,4 @@ Security Checks:
 - Size limits enforcement
 ```
 
-These sequence diagrams show how SecureClaw maintains security at every step of the interaction flow, with multiple checkpoints and comprehensive audit logging for all operations.
+These sequence diagrams show how AgentShroud maintains security at every step of the interaction flow, with multiple checkpoints and comprehensive audit logging for all operations.

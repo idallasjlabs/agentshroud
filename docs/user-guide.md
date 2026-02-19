@@ -1,10 +1,10 @@
-# SecureClaw User Guide
+# AgentShroud User Guide
 
-> Last updated: 2026-02-18 | SecureClaw v0.2.0
+> Last updated: 2026-02-18 | AgentShroud v0.2.0
 
-## What is SecureClaw?
+## What is AgentShroud?
 
-SecureClaw is a security-focused AI gateway that lets you interact with an AI assistant via Telegram while protecting your private data. It sits between you and the AI, automatically:
+AgentShroud is a security-focused AI gateway that lets you interact with an AI assistant via Telegram while protecting your private data. It sits between you and the AI, automatically:
 
 - **Stripping personal information** (emails, phone numbers, addresses) before it reaches the AI
 - **Blocking credentials** from appearing in responses
@@ -17,15 +17,15 @@ SecureClaw is a security-focused AI gateway that lets you interact with an AI as
 
 ### 1. Find the Bot
 
-Open Telegram and search for your SecureClaw bot (the bot name is configured by your admin). Start a conversation with it.
+Open Telegram and search for your AgentShroud bot (the bot name is configured by your admin). Start a conversation with it.
 
 ### 2. Verify You're Authorized
 
-SecureClaw only responds to authorized users. If you send a message and get no reply, your Telegram user ID hasn't been added to the allowed list. Ask your admin to add you.
+AgentShroud only responds to authorized users. If you send a message and get no reply, your Telegram user ID hasn't been added to the allowed list. Ask your admin to add you.
 
 ### 3. Start Chatting
 
-Just type naturally! SecureClaw forwards your messages to the AI and relays responses back. Behind the scenes, it's protecting your data.
+Just type naturally! AgentShroud forwards your messages to the AI and relays responses back. Behind the scenes, it's protecting your data.
 
 ---
 
@@ -98,10 +98,10 @@ Each entry shows:
 
 ## SSH Access
 
-If you need direct access to the SecureClaw server:
+If you need direct access to the AgentShroud server:
 
 ```bash
-ssh secureclaw-bot@<your-tailscale-hostname>
+ssh agentshroud-bot@<your-tailscale-hostname>
 ```
 
 **Requirements:**
@@ -109,7 +109,7 @@ ssh secureclaw-bot@<your-tailscale-hostname>
 - Your device authorized on the tailnet
 - SSH key added to the server
 
-**Important:** The `secureclaw-bot` account has limited permissions by design. It cannot run sudo or modify system files.
+**Important:** The `agentshroud-bot` account has limited permissions by design. It cannot run sudo or modify system files.
 
 ---
 

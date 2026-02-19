@@ -1,5 +1,5 @@
 #!/bin/bash
-# SecureClaw Kill Switch
+# AgentShroud Kill Switch
 # Emergency shutdown with optional credential revocation
 #
 # Usage:
@@ -22,7 +22,7 @@ NC='\033[0m'
 MODE="${1:-}"
 
 usage() {
-    echo "SecureClaw Kill Switch - Emergency Shutdown"
+    echo "AgentShroud Kill Switch - Emergency Shutdown"
     echo ""
     echo "Usage: $0 <mode>"
     echo ""
@@ -68,10 +68,10 @@ confirm() {
 # Mode-specific confirmation
 case "$MODE" in
     freeze)
-        confirm "Freeze SecureClaw containers?"
+        confirm "Freeze AgentShroud containers?"
         ;;
     shutdown)
-        confirm "Shutdown SecureClaw containers?"
+        confirm "Shutdown AgentShroud containers?"
         ;;
     disconnect)
         echo -e "${RED}WARNING: DISCONNECT MODE${NC}"
@@ -93,7 +93,7 @@ esac
 
 echo ""
 echo "======================================"
-echo "SecureClaw Kill Switch - $MODE"
+echo "AgentShroud Kill Switch - $MODE"
 echo "======================================"
 echo ""
 
@@ -140,7 +140,7 @@ case "$MODE" in
         echo "[1/7] Exporting audit ledger..."
         LEDGER_EXPORT="$INCIDENTS_DIR/ledger-export-$TIMESTAMP.db"
 
-        if docker cp secureclaw-gateway:/app/data/ledger.db "$LEDGER_EXPORT" 2>/dev/null; then
+        if docker cp agentshroud-gateway:/app/data/ledger.db "$LEDGER_EXPORT" 2>/dev/null; then
             echo -e "${GREEN}✓${NC} Audit ledger exported to: $LEDGER_EXPORT"
         else
             echo -e "${YELLOW}⚠${NC} Could not export audit ledger (container may not be running)"
@@ -187,7 +187,7 @@ case "$MODE" in
         echo "[5/7] Generating incident report..."
 
         cat > "$INCIDENT_REPORT" <<EOF
-# SecureClaw Security Incident Report
+# AgentShroud Security Incident Report
 
 **Date:** $(date)
 **Action:** Kill Switch - DISCONNECT
@@ -195,7 +195,7 @@ case "$MODE" in
 
 ## Summary
 
-The SecureClaw kill switch was activated in DISCONNECT mode. All containers have been stopped, credentials cleared, and audit logs exported.
+The AgentShroud kill switch was activated in DISCONNECT mode. All containers have been stopped, credentials cleared, and audit logs exported.
 
 ## Actions Taken
 
@@ -211,12 +211,12 @@ You MUST manually revoke the following credentials:
 
 ### OpenAI API Key
 1. Go to: https://platform.openai.com/api-keys
-2. Find the key used for SecureClaw (check \`$LEDGER_EXPORT\` for recent usage)
+2. Find the key used for AgentShroud (check \`$LEDGER_EXPORT\` for recent usage)
 3. Click "Revoke" to invalidate the key
 
 ### Anthropic API Key
 1. Go to: https://console.anthropic.com/settings/keys
-2. Find the key used for SecureClaw
+2. Find the key used for AgentShroud
 3. Delete the key to invalidate it
 
 ### 1Password Session (if applicable)
@@ -243,7 +243,7 @@ You MUST manually revoke the following credentials:
 
 ### Gateway Container
 \`\`\`
-$(docker inspect secureclaw-gateway 2>/dev/null || echo "Container not found")
+$(docker inspect agentshroud-gateway 2>/dev/null || echo "Container not found")
 \`\`\`
 
 ### OpenClaw Container
@@ -255,7 +255,7 @@ $(docker inspect openclaw-bot 2>/dev/null || echo "Container not found")
 
 ### Gateway Logs (last 50 lines)
 \`\`\`
-$(docker logs --tail 50 secureclaw-gateway 2>/dev/null || echo "No logs available")
+$(docker logs --tail 50 agentshroud-gateway 2>/dev/null || echo "No logs available")
 \`\`\`
 
 ### OpenClaw Logs (last 50 lines)

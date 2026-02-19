@@ -15,7 +15,7 @@ from typing import Any, Optional
 
 from .engine import ContainerEngine, ContainerInfo
 
-logger = logging.getLogger("secureclaw.runtime.apple")
+logger = logging.getLogger("agentshroud.runtime.apple")
 
 
 class AppleContainerEngine(ContainerEngine):

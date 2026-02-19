@@ -1,13 +1,13 @@
 # System Requirements Specification (SRS)
-## SecureClaw v0.9.0
+## AgentShroud v0.9.0
 
 ### 1. Purpose and Scope
 
 #### 1.1 Purpose
-This document specifies the system requirements for SecureClaw, a comprehensive security proxy layer designed to protect OpenClaw AI agents from security threats. SecureClaw implements a defense-in-depth approach with 26 security modules to ensure safe operation of AI agents in production environments.
+This document specifies the system requirements for AgentShroud, a comprehensive security proxy layer designed to protect OpenClaw AI agents from security threats. AgentShroud implements a defense-in-depth approach with 26 security modules to ensure safe operation of AI agents in production environments.
 
 #### 1.2 Scope
-SecureClaw provides:
+AgentShroud provides:
 - Multi-layer security filtering for AI agent communications
 - Real-time threat detection and mitigation
 - Comprehensive audit trail and compliance logging
@@ -293,4 +293,4 @@ SecureClaw provides:
 - **Medium**: Resource exhaustion
 - **Low**: Integration compatibility issues
 
-This specification serves as the foundation for SecureClaw implementation and testing, ensuring comprehensive security coverage for AI agent operations.
+This specification serves as the foundation for AgentShroud implementation and testing, ensuring comprehensive security coverage for AI agent operations.

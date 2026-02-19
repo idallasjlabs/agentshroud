@@ -425,7 +425,7 @@ docker exec openclaw-bot node /home/node/test-icloud-mail.js
 Once all services are working:
 
 1. **Create OpenClaw skill** for iCloud services
-2. **Integrate with SecureClaw gateway**
+2. **Integrate with AgentShroud gateway**
 3. **Add to bot capabilities**
 4. **Test via Telegram**
 

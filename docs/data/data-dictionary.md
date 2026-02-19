@@ -1,6 +1,6 @@
-# SecureClaw Data Dictionary
+# AgentShroud Data Dictionary
 
-This document defines all data entities and their structures within the SecureClaw system.
+This document defines all data entities and their structures within the AgentShroud system.
 
 ## Core Audit Entities
 
@@ -343,4 +343,4 @@ ConfigurationSetting (standalone)
 | **CONFIDENTIAL** | DNSQuery, URLAnalysisResult, InspectionResult | Read: Security Team, Write: System | At rest + transit |
 | **RESTRICTED** | AuditEntry, MCPAuditEntry, ApprovalRequest, SecurityFinding | Read: Admin only, Write: System | At rest + transit + backup |
 
-This data dictionary ensures consistent data handling across all SecureClaw components while maintaining security and compliance requirements.
+This data dictionary ensures consistent data handling across all AgentShroud components while maintaining security and compliance requirements.

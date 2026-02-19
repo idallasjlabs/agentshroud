@@ -1,12 +1,12 @@
-# SecureClaw Security Architecture
+# AgentShroud Security Architecture
 
 ## Executive Summary
 
-SecureClaw implements a defense-in-depth security architecture with 26 specialized security modules operating across 7 distinct layers. This comprehensive approach ensures robust protection against emerging AI-specific threats while maintaining compatibility with existing OpenClaw deployments.
+AgentShroud implements a defense-in-depth security architecture with 26 specialized security modules operating across 7 distinct layers. This comprehensive approach ensures robust protection against emerging AI-specific threats while maintaining compatibility with existing OpenClaw deployments.
 
 ## Defense-in-Depth Architecture
 
-SecureClaw's security model follows the principle of defense-in-depth, implementing multiple security controls at different architectural layers:
+AgentShroud's security model follows the principle of defense-in-depth, implementing multiple security controls at different architectural layers:
 
 ```
 ┌─────────────────────────────────────────────────────────────────┐
@@ -158,7 +158,7 @@ SecureClaw's security model follows the principle of defense-in-depth, implement
 
 #### 17. API Key Manager
 - **Purpose**: External service authentication token management
-- **Location**: SecureClaw gateway
+- **Location**: AgentShroud gateway
 - **Mode**: Enforce (controls all external API access)
 - **Features**: Proxy-side key storage, automatic injection, rotation management
 
@@ -226,7 +226,7 @@ SecureClaw's security model follows the principle of defense-in-depth, implement
 **Severity**: Critical (CVSS 9.8)
 **Description**: Malicious prompts can exploit container runtime vulnerabilities to escape isolation.
 
-**SecureClaw Mitigations**:
+**AgentShroud Mitigations**:
 - **Prompt Guard System**: Pattern matching detects known escape sequences
 - **Container Runtime Security**: Runtime monitoring detects escape attempts
 - **seccomp Profiles**: Whitelist system calls prevent exploitation
@@ -236,7 +236,7 @@ SecureClaw's security model follows the principle of defense-in-depth, implement
 **Severity**: High (CVSS 7.5)
 **Description**: Agents can exfiltrate personally identifiable information through DNS queries.
 
-**SecureClaw Mitigations**:
+**AgentShroud Mitigations**:
 - **DNS Filter**: Statistical analysis detects unusual query patterns
 - **PII Sanitizer**: Presidio scanning prevents PII from reaching DNS layer
 - **DNS Query Logging**: Complete audit trail of all DNS requests
@@ -386,4 +386,4 @@ Trust Levels:
 └── Level 4: 81-100 points (Highly Trusted)
 ```
 
-This comprehensive security architecture ensures SecureClaw provides enterprise-grade protection for OpenClaw AI agents while maintaining operational efficiency and ease of deployment.
+This comprehensive security architecture ensures AgentShroud provides enterprise-grade protection for OpenClaw AI agents while maintaining operational efficiency and ease of deployment.

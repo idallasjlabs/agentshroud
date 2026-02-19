@@ -1,4 +1,4 @@
-"""SecureClaw Gateway - Main FastAPI Application
+"""AgentShroud Gateway - Main FastAPI Application
 
 Entry point for the gateway API. Wires together all components:
 - PII sanitization
@@ -43,7 +43,7 @@ logging.basicConfig(
     format="%(asctime)s | %(levelname)s | %(name)s | %(message)s",
     datefmt="%Y-%m-%dT%H:%M:%S%z",
 )
-logger = logging.getLogger("secureclaw.gateway.main")
+logger = logging.getLogger("agentshroud.gateway.main")
 
 
 # === Application State ===
@@ -72,7 +72,7 @@ async def lifespan(app: FastAPI):
 
     # === STARTUP ===
     logger.info("=" * 80)
-    logger.info("SecureClaw Gateway starting up...")
+    logger.info("AgentShroud Gateway starting up...")
 
     # Load configuration
     try:
@@ -135,14 +135,14 @@ async def lifespan(app: FastAPI):
     app_state.start_time = time.time()
 
     logger.info(
-        f"SecureClaw Gateway ready at {app_state.config.bind}:{app_state.config.port}"
+        f"AgentShroud Gateway ready at {app_state.config.bind}:{app_state.config.port}"
     )
     logger.info("=" * 80)
 
     yield
 
     # === SHUTDOWN ===
-    logger.info("SecureClaw Gateway shutting down...")
+    logger.info("AgentShroud Gateway shutting down...")
 
     # Close ledger
     await app_state.ledger.close()
@@ -153,8 +153,8 @@ async def lifespan(app: FastAPI):
 # === Application ===
 
 app = FastAPI(
-    title="SecureClaw Gateway",
-    description="Ingest API for the SecureClaw proxy layer framework",
+    title="AgentShroud Gateway",
+    description="Ingest API for the AgentShroud proxy layer framework",
     version="0.1.0",
     lifespan=lifespan,
 )
@@ -162,7 +162,7 @@ app = FastAPI(
 
 # === CORS Middleware ===
 # Custom CORS middleware that reads from app_state.config at runtime
-# This allows secureclaw.yaml overrides to take effect
+# This allows agentshroud.yaml overrides to take effect
 
 
 @app.middleware("http")

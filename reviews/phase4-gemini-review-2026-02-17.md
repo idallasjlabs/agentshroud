@@ -102,8 +102,8 @@ The introduction of SSH proxy functionality is a significant addition, and the d
 
 *   **[MEDIUM] gateway/ingest_api/ssh_config.py:15 — `key_path` security implications**
     The `key_path` field specifies the path to the SSH private key.
-    1.  **Absolute vs. Relative Paths**: If `key_path` is relative, its interpretation depends on the current working directory of the `secureclaw` process, which can be insecure or unpredictable. It should ideally be an absolute path.
-    2.  **Permissions**: The system running `secureclaw` must have appropriate permissions to read this key, and the key itself must have restrictive file permissions (e.g., `0o600`). This is an operational concern, but the config should guide users towards secure practices.
+    1.  **Absolute vs. Relative Paths**: If `key_path` is relative, its interpretation depends on the current working directory of the `agentshroud` process, which can be insecure or unpredictable. It should ideally be an absolute path.
+    2.  **Permissions**: The system running `agentshroud` must have appropriate permissions to read this key, and the key itself must have restrictive file permissions (e.g., `0o600`). This is an operational concern, but the config should guide users towards secure practices.
     3.  **Dedicated Keys**: It's best practice for the proxy to use a dedicated SSH key pair, not a user's personal key (like `~/.ssh/id_rsa`).
     Suggested fix:
     *   Add a comment or documentation clarifying that `key_path` should be an absolute path and that the key should have strict permissions.
@@ -120,7 +120,7 @@ The introduction of SSH proxy functionality is a significant addition, and the d
         *   A `known_hosts` file that is pre-populated and managed securely (e.g., via configuration management).
         *   Integrating with a host key management system.
         *   For initial connection, requiring manual verification and adding to a `known_hosts` file.
-    *   **Documentation**: Clearly document how host keys should be managed for the SecureClaw SSH proxy.
+    *   **Documentation**: Clearly document how host keys should be managed for the AgentShroud SSH proxy.
 *   **[HIGH] gateway/ssh_proxy/proxy.py:27 — Incomplete `INJECTION_PATTERNS`**
     The current `INJECTION_PATTERNS` regex is good but misses some common shell injection vectors:
     *   **Variable expansion**: `$VAR`, `${VAR}`. An attacker could define an environment variable (if possible) or rely on existing ones.
@@ -198,11 +198,11 @@ The introduction of SSH proxy functionality is a significant addition, and the d
     Suggested fix: Add a test case for `is_auto_approved` where `self.config.require_approval` is `False`. This would require modifying `is_auto_approved` logic to check this global flag first.
     *Self-correction*: The `is_auto_approved` method is *only* for checking if a command is on the host's specific auto-approval list. The global `require_approval` flag should be handled *before* calling `is_auto_approved` in the `ssh_exec` endpoint. The current `ssh_exec` endpoint logic does not check `self.config.require_approval` before calling `is_auto_approved`. This is a bug in `main.py`.
 
-#### `secureclaw.yaml`
+#### `agentshroud.yaml`
 
-*   **[LOW] secureclaw.yaml:132 — `key_path` example**
+*   **[LOW] agentshroud.yaml:132 — `key_path` example**
     The example `key_path: "~/.ssh/id_ed25519"` uses a tilde (`~`), which implies a user's home directory. As discussed, it's better to use absolute paths for clarity and security in a service context.
-    Suggested fix: Change the example to an absolute path like `/etc/secureclaw/ssh_keys/id_ed25519` or `/var/lib/secureclaw/ssh_keys/id_ed25519`, and add a comment about permissions.
+    Suggested fix: Change the example to an absolute path like `/etc/agentshroud/ssh_keys/id_ed25519` or `/var/lib/agentshroud/ssh_keys/id_ed25519`, and add a comment about permissions.
 
 ---
 
@@ -218,4 +218,4 @@ The introduction of SSH proxy functionality is a significant addition, and the d
 
 ### Conclusion
 
-The new SSH proxy feature is a powerful addition, but the current implementation has critical security flaws that must be addressed immediately. The `StrictHostKeyChecking=no` is a severe vulnerability, and the command validation logic is too permissive. Once these are resolved, the feature will significantly enhance SecureClaw's capabilities. The testing coverage is good, but a few edge cases and the `load_config` parsing should be explicitly tested.
+The new SSH proxy feature is a powerful addition, but the current implementation has critical security flaws that must be addressed immediately. The `StrictHostKeyChecking=no` is a severe vulnerability, and the command validation logic is too permissive. Once these are resolved, the feature will significantly enhance AgentShroud's capabilities. The testing coverage is good, but a few edge cases and the `load_config` parsing should be explicitly tested.

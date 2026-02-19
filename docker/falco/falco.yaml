@@ -1,4 +1,4 @@
-# Falco configuration for SecureClaw
+# Falco configuration for AgentShroud
 # JSON output for programmatic parsing
 
 json_output: true

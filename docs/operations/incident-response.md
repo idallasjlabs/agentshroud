@@ -1,6 +1,6 @@
-# SecureClaw Incident Response Plan
+# AgentShroud Incident Response Plan
 
-This document defines the procedures for responding to security incidents in SecureClaw deployments.
+This document defines the procedures for responding to security incidents in AgentShroud deployments.
 
 ## Incident Classification System
 
@@ -71,7 +71,7 @@ iptables -A OUTPUT -d 192.168.0.0/16 -j ACCEPT # Allow private
 iptables -A OUTPUT -j DROP                      # Block all else
 
 # 3. Capture immediate evidence
-docker compose exec secureclaw sqlite3 /data/secureclaw.db \
+docker compose exec agentshroud sqlite3 /data/agentshroud.db \
   ".output evidence_$(date +%Y%m%d_%H%M%S).sql" \
   ".dump audit_entries"
 
@@ -88,7 +88,7 @@ echo "$(date): System isolated, evidence preserved" >> incident.log
 
 ```bash
 # 1. Identify affected agents
-docker compose exec secureclaw sqlite3 /data/secureclaw.db \
+docker compose exec agentshroud sqlite3 /data/agentshroud.db \
   "SELECT DISTINCT agent_id, COUNT(*) as suspicious_actions
    FROM audit_entries 
    WHERE timestamp > datetime('now', '-2 hours')
@@ -97,7 +97,7 @@ docker compose exec secureclaw sqlite3 /data/secureclaw.db \
    ORDER BY suspicious_actions DESC;"
 
 # 2. Analyze data movement patterns
-docker compose exec secureclaw sqlite3 /data/secureclaw.db \
+docker compose exec agentshroud sqlite3 /data/agentshroud.db \
   "SELECT timestamp, agent_id, direction, 
           LENGTH(content) as data_size, 
           SUBSTR(content, 1, 100) as preview
@@ -108,7 +108,7 @@ docker compose exec secureclaw sqlite3 /data/secureclaw.db \
    ORDER BY timestamp DESC;"
 
 # 3. Check for privilege escalation
-docker compose exec secureclaw sqlite3 /data/secureclaw.db \
+docker compose exec agentshroud sqlite3 /data/agentshroud.db \
   "SELECT agent_id, level, last_promoted, violations
    FROM agent_trust 
    WHERE last_promoted > datetime('now', '-24 hours')
@@ -213,7 +213,7 @@ docker inspect SUSPECT_CONTAINER | jq '.Mounts'
 
 ```bash
 # 1. IMMEDIATE: Preserve current audit state
-docker compose exec secureclaw sqlite3 /data/secureclaw.db \
+docker compose exec agentshroud sqlite3 /data/agentshroud.db \
   ".backup /backup/emergency_audit_$(date +%Y%m%d_%H%M%S).db"
 
 # 2. Activate kill switch
@@ -222,26 +222,26 @@ curl -X POST https://localhost:8443/admin/kill-switch \
   -d '{"mode": "hard_kill", "reason": "audit_integrity_compromised"}'
 
 # 3. Calculate integrity hash of current database
-sha256sum /data/secureclaw.db > audit_db_hash_$(date +%Y%m%d_%H%M%S).txt
+sha256sum /data/agentshroud.db > audit_db_hash_$(date +%Y%m%d_%H%M%S).txt
 
 # 4. Check for recent database modifications
-stat /data/secureclaw.db
-lsof /data/secureclaw.db
+stat /data/agentshroud.db
+lsof /data/agentshroud.db
 ```
 
 **Integrity Investigation:**
 
 ```bash
 # 1. Run comprehensive integrity check
-docker compose exec secureclaw sqlite3 /data/secureclaw.db \
+docker compose exec agentshroud sqlite3 /data/agentshroud.db \
   "PRAGMA integrity_check;"
 
 # 2. Verify audit chain manually
-docker compose exec secureclaw python3 << 'EOF'
+docker compose exec agentshroud python3 << 'EOF'
 import sqlite3
 import hashlib
 
-conn = sqlite3.connect('/data/secureclaw.db')
+conn = sqlite3.connect('/data/agentshroud.db')
 cursor = conn.cursor()
 
 # Get all entries ordered by timestamp
@@ -297,7 +297,7 @@ curl -X POST https://localhost:8443/admin/agents/$AGENT_ID/block \
   -d '{"reason": "prompt_injection_detected", "duration": 3600}'
 
 # 3. Analyze injection patterns
-docker compose exec secureclaw sqlite3 /data/secureclaw.db \
+docker compose exec agentshroud sqlite3 /data/agentshroud.db \
   "SELECT content, COUNT(*) as frequency
    FROM audit_entries 
    WHERE agent_id = '$AGENT_ID' 
@@ -318,7 +318,7 @@ docker compose exec secureclaw sqlite3 /data/secureclaw.db \
 
 ```bash
 # 1. Identify PII leak extent
-docker compose exec secureclaw sqlite3 /data/secureclaw.db \
+docker compose exec agentshroud sqlite3 /data/agentshroud.db \
   "SELECT agent_id, COUNT(*) as pii_incidents,
           MIN(timestamp) as first_incident,
           MAX(timestamp) as last_incident
@@ -329,7 +329,7 @@ docker compose exec secureclaw sqlite3 /data/secureclaw.db \
    ORDER BY pii_incidents DESC;"
 
 # 2. Check if PII made it to external systems
-docker compose exec secureclaw sqlite3 /data/secureclaw.db \
+docker compose exec agentshroud sqlite3 /data/agentshroud.db \
   "SELECT id, timestamp, direction, agent_id
    FROM audit_entries 
    WHERE direction = 'OUTBOUND'
@@ -356,7 +356,7 @@ curl -s -H "Authorization: Bearer $ADMIN_TOKEN" \
   https://localhost:8443/admin/kill-switch | jq '.'
 
 # 2. Review triggering events
-docker compose logs secureclaw | grep -A 10 -B 10 "kill.*switch"
+docker compose logs agentshroud | grep -A 10 -B 10 "kill.*switch"
 
 # 3. Analyze threat level
 curl -s -H "Authorization: Bearer $ADMIN_TOKEN" \
@@ -381,7 +381,7 @@ echo "$(date): Decision: [DEACTIVATE/MAINTAIN] - Reason: [detailed reason]" >> i
 
 ```bash
 # 1. Review SSH audit logs
-docker compose exec secureclaw sqlite3 /data/secureclaw.db \
+docker compose exec agentshroud sqlite3 /data/agentshroud.db \
   "SELECT ae.timestamp, mcp.agent_id, mcp.parameters, mcp.blocked, mcp.block_reason
    FROM audit_entries ae
    JOIN mcp_audit_entries mcp ON ae.id = mcp.id
@@ -391,7 +391,7 @@ docker compose exec secureclaw sqlite3 /data/secureclaw.db \
    ORDER BY ae.timestamp DESC;"
 
 # 2. Check for pattern of attempts
-docker compose exec secureclaw sqlite3 /data/secureclaw.db \
+docker compose exec agentshroud sqlite3 /data/agentshroud.db \
   "SELECT agent_id, COUNT(*) as attempt_count,
           MIN(timestamp) as first_attempt,
           MAX(timestamp) as last_attempt
@@ -418,7 +418,7 @@ curl -s -H "Authorization: Bearer $ADMIN_TOKEN" \
 
 ```bash
 # 1. Identify anomalous trust changes
-docker compose exec secureclaw sqlite3 /data/secureclaw.db \
+docker compose exec agentshroud sqlite3 /data/agentshroud.db \
   "SELECT agent_id, level, last_promoted, total_actions, violations,
           ROUND(CAST(violations AS FLOAT) / total_actions * 100, 2) as violation_rate
    FROM agent_trust
@@ -430,7 +430,7 @@ docker compose exec secureclaw sqlite3 /data/secureclaw.db \
 # (Use agent IDs from previous query)
 for agent in suspicious_agent_list; do
     echo "=== Agent: $agent ==="
-    docker compose exec secureclaw sqlite3 /data/secureclaw.db \
+    docker compose exec agentshroud sqlite3 /data/agentshroud.db \
       "SELECT timestamp, threat_level, direction, SUBSTR(content, 1, 100)
        FROM audit_entries
        WHERE agent_id = '$agent'
@@ -454,15 +454,15 @@ echo "$(date): Trust anomaly investigation for agents: $suspicious_agents" >> tr
 
 ```bash
 # 1. Compare current vs expected configuration
-diff -u config/secureclaw.yaml.golden config/secureclaw.yaml
+diff -u config/agentshroud.yaml.golden config/agentshroud.yaml
 
 # 2. Check configuration history
 git log --oneline -10 config/
 
 # 3. Validate current configuration
-docker compose exec secureclaw python -c "
+docker compose exec agentshroud python -c "
 import yaml
-with open('/config/secureclaw.yaml') as f:
+with open('/config/agentshroud.yaml') as f:
     config = yaml.safe_load(f)
     print('Configuration syntax: OK')
     print(f'Operational mode: {config.get(\"gateway\", {}).get(\"operational_mode\")}')
@@ -542,7 +542,7 @@ INCIDENT_ID="INC-$(date +%Y%m%d)-001"
 mkdir -p /evidence/$INCIDENT_ID
 
 # Database snapshot
-docker compose exec secureclaw sqlite3 /data/secureclaw.db \
+docker compose exec agentshroud sqlite3 /data/agentshroud.db \
   ".backup /evidence/$INCIDENT_ID/audit_snapshot.db"
 
 # Configuration snapshot

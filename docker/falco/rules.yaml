@@ -1,4 +1,4 @@
-# SecureClaw-specific Falco rules
+# AgentShroud-specific Falco rules
 
 # Shell spawned in container
 - rule: Container Shell Spawned
@@ -10,7 +10,7 @@
   output: >
     Shell spawned in container (user=%user.name container=%container.name shell=%proc.name parent=%proc.pname cmdline=%proc.cmdline)
   priority: WARNING
-  tags: [secureclaw, shell, container]
+  tags: [agentshroud, shell, container]
 
 # Unexpected outbound connections from openclaw
 - rule: Unexpected Outbound Connection from OpenClaw
@@ -26,7 +26,7 @@
   output: >
     Unexpected outbound connection from OpenClaw (container=%container.name connection=%fd.name dest=%fd.sip:%fd.sport user=%user.name process=%proc.name)
   priority: ERROR
-  tags: [secureclaw, network, openclaw]
+  tags: [agentshroud, network, openclaw]
 
 # File access outside workspace
 - rule: File Access Outside Workspace
@@ -40,7 +40,7 @@
   output: >
     File write outside workspace (container=%container.name file=%fd.name user=%user.name process=%proc.name)
   priority: ERROR
-  tags: [secureclaw, filesystem, openclaw]
+  tags: [agentshroud, filesystem, openclaw]
 
 # Privilege escalation attempts
 - rule: Privilege Escalation Attempt
@@ -52,7 +52,7 @@
   output: >
     Privilege escalation attempt (container=%container.name user=%user.name process=%proc.name cmdline=%proc.cmdline)
   priority: CRITICAL
-  tags: [secureclaw, privilege_escalation]
+  tags: [agentshroud, privilege_escalation]
 
 # Secret file access
 - rule: Secret File Access
@@ -67,7 +67,7 @@
   output: >
     Sensitive file accessed (container=%container.name file=%fd.name user=%user.name process=%proc.name)
   priority: CRITICAL
-  tags: [secureclaw, secrets]
+  tags: [agentshroud, secrets]
 
 # Crypto mining detection
 - rule: Crypto Mining Detection
@@ -82,4 +82,4 @@
   output: >
     Crypto mining activity detected (container=%container.name user=%user.name process=%proc.name cmdline=%proc.cmdline)
   priority: CRITICAL
-  tags: [secureclaw, cryptomining]
+  tags: [agentshroud, cryptomining]

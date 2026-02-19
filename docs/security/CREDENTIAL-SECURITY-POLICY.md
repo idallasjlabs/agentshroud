@@ -33,7 +33,7 @@ Credentials should only be:
 
 ### Option 1: Gateway-Level Filtering (Recommended)
 
-The SecureClaw gateway already sanitizes PII. Extend it to detect and block credential exposure:
+The AgentShroud gateway already sanitizes PII. Extend it to detect and block credential exposure:
 
 **Block patterns in responses to Telegram:**
 - Passwords (high entropy strings)
@@ -65,7 +65,7 @@ def sanitize_credentials(text: str, source: str) -> str:
 Require explicit approval before retrieving credentials:
 
 ```yaml
-# In secureclaw.yaml
+# In agentshroud.yaml
 approval_queue:
   enabled: true
   require_approval_for:
@@ -80,7 +80,7 @@ approval_queue:
 Configure OpenClaw to reject credential commands from Telegram:
 
 ```yaml
-# In secureclaw.yaml
+# In agentshroud.yaml
 command_restrictions:
   telegram:
     blocked_commands:
@@ -95,7 +95,7 @@ command_restrictions:
 Only you (owner) can retrieve credentials, not other Telegram users:
 
 ```yaml
-# In secureclaw.yaml
+# In agentshroud.yaml
 access_control:
   credential_operations:
     allowed_users:
@@ -109,7 +109,7 @@ access_control:
 ## Recommended Configuration (All 4 Options Combined)
 
 ```yaml
-# secureclaw.yaml
+# agentshroud.yaml
 security:
   # Option 1: Gateway filters credentials in responses
   sanitizer:
@@ -273,7 +273,7 @@ def check_command_allowed(command: str, user_id: int, source: str) -> bool:
     return True
 ```
 
-### Step 3: Update secureclaw.yaml
+### Step 3: Update agentshroud.yaml
 
 Add security configuration:
 

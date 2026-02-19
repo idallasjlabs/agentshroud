@@ -1,6 +1,6 @@
-# Incident Response Playbook — SecureClaw
+# Incident Response Playbook — AgentShroud
 
-> Last updated: 2026-02-18 | SecureClaw v0.2.0
+> Last updated: 2026-02-18 | AgentShroud v0.2.0
 
 ## 1. Detection — What Triggers an Incident
 
@@ -47,9 +47,9 @@
    # Export audit ledger
    cp data/audit_ledger.jsonl /tmp/incident-$(date +%Y%m%d-%H%M%S)/
    # Export container logs
-   docker logs secureclaw-gateway > /tmp/incident-$(date +%Y%m%d-%H%M%S)/gateway.log 2>&1
+   docker logs agentshroud-gateway > /tmp/incident-$(date +%Y%m%d-%H%M%S)/gateway.log 2>&1
    # Snapshot running state if container still up
-   docker inspect secureclaw-gateway > /tmp/incident-$(date +%Y%m%d-%H%M%S)/inspect.json
+   docker inspect agentshroud-gateway > /tmp/incident-$(date +%Y%m%d-%H%M%S)/inspect.json
    ```
 
 3. **Rotate compromised credentials:**
@@ -134,9 +134,9 @@ docker compose up -d
 | Evidence | Location | Command |
 |----------|----------|---------|
 | Audit ledger | `data/audit_ledger.jsonl` | `cp data/audit_ledger.jsonl /tmp/evidence/` |
-| Gateway logs | Docker stdout | `docker logs secureclaw-gateway > evidence/gateway.log 2>&1` |
-| Container state | Docker inspect | `docker inspect secureclaw-gateway > evidence/inspect.json` |
-| Network connections | Container exec | `docker exec secureclaw-gateway ss -tlnp > evidence/netstat.log` |
+| Gateway logs | Docker stdout | `docker logs agentshroud-gateway > evidence/gateway.log 2>&1` |
+| Container state | Docker inspect | `docker inspect agentshroud-gateway > evidence/inspect.json` |
+| Network connections | Container exec | `docker exec agentshroud-gateway ss -tlnp > evidence/netstat.log` |
 | Docker events | Docker daemon | `docker events --since 24h --format '{{json .}}' > evidence/events.json` |
 | Tailscale status | Tailscale CLI | `tailscale status > evidence/tailscale.log` |
 
@@ -229,9 +229,9 @@ Kill switch: [Active / Not needed]
 ### Stakeholder Notification
 
 ```
-Subject: SecureClaw Security Incident Notification — [Date]
+Subject: AgentShroud Security Incident Notification — [Date]
 
-We are writing to inform you of a security incident affecting the SecureClaw system.
+We are writing to inform you of a security incident affecting the AgentShroud system.
 
 Date of detection: [Date/Time UTC]
 Nature: [Brief description]

@@ -1,4 +1,4 @@
-# Troubleshooting Runbook — SecureClaw
+# Troubleshooting Runbook — AgentShroud
 
 > Last updated: 2026-02-18
 
@@ -14,7 +14,7 @@
 docker compose ps
 
 # 2. Check gateway logs for errors
-docker logs --tail 50 secureclaw-gateway
+docker logs --tail 50 agentshroud-gateway
 
 # 3. Is the Telegram webhook active?
 curl -s "https://api.telegram.org/bot<TOKEN>/getWebhookInfo" | python3 -m json.tool
@@ -97,10 +97,10 @@ grep '"event_type": "kill_switch"' data/audit_ledger.jsonl | tail -5
 **Check:**
 ```bash
 # Check exit code
-docker inspect secureclaw-gateway --format='{{.State.ExitCode}}'
+docker inspect agentshroud-gateway --format='{{.State.ExitCode}}'
 
 # Check last logs before crash
-docker logs --tail 100 secureclaw-gateway
+docker logs --tail 100 agentshroud-gateway
 
 # Check resource usage
 docker stats --no-stream
@@ -148,7 +148,7 @@ docker compose ps
 curl -s http://localhost:8050/
 
 # Check dashboard logs
-docker logs secureclaw-dashboard --tail 50
+docker logs agentshroud-dashboard --tail 50
 ```
 
 **Fixes:**
@@ -198,7 +198,7 @@ ps aux | grep -E '(python|docker|tailscale)'
 ## Getting Help
 
 1. Check this runbook first
-2. Review gateway logs: `docker logs secureclaw-gateway`
+2. Review gateway logs: `docker logs agentshroud-gateway`
 3. Review audit ledger: `tail data/audit_ledger.jsonl`
 4. Check GitHub issues: `gh issue list`
 5. Run test suite to verify system integrity

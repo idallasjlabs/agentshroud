@@ -1,6 +1,6 @@
-# SecureClaw Dashboard
+# AgentShroud Dashboard
 
-Real-time observability and control interface for SecureClaw.
+Real-time observability and control interface for AgentShroud.
 
 ## Components (to be implemented in Week 2)
 

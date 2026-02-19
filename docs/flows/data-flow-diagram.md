@@ -1,15 +1,15 @@
-# SecureClaw Data Flow Diagrams
+# AgentShroud Data Flow Diagrams
 
-This document illustrates the flow of data through the SecureClaw system at three levels of detail.
+This document illustrates the flow of data through the AgentShroud system at three levels of detail.
 
 ## Level 0: Context Diagram
 
-The highest level view shows SecureClaw as a transparent security gateway between users and OpenClaw AI agents.
+The highest level view shows AgentShroud as a transparent security gateway between users and OpenClaw AI agents.
 
 ```
 ┌─────────────┐    ┌─────────────────────┐    ┌─────────────┐
 │             │    │                     │    │             │
-│   External  │───▶│   SecureClaw        │───▶│  OpenClaw   │
+│   External  │───▶│   AgentShroud        │───▶│  OpenClaw   │
 │   Users/    │    │   Gateway           │    │  Container  │
 │   APIs      │◀───│   (FastAPI)         │◀───│             │
 │             │    │                     │    │             │
@@ -30,20 +30,20 @@ The highest level view shows SecureClaw as a transparent security gateway betwee
 
 **Key Components:**
 - **External Users/APIs**: HTTP clients, chat interfaces, automation systems
-- **SecureClaw Gateway**: Security proxy with audit, filtering, and control
+- **AgentShroud Gateway**: Security proxy with audit, filtering, and control
 - **OpenClaw Container**: AI agent runtime environment
 - **External Resources**: Systems the AI agent needs to access
 
 ## Level 1: Security Components
 
-This level shows the key security components within SecureClaw that process and monitor traffic.
+This level shows the key security components within AgentShroud that process and monitor traffic.
 
 ```
 User Request
      │
      ▼
 ┌─────────────────────────────────────────────────────────────┐
-│  SecureClaw Gateway                                         │
+│  AgentShroud Gateway                                         │
 │                                                             │
 │  ┌─────────────┐  ┌─────────────┐  ┌─────────────┐          │
 │  │             │  │             │  │             │          │

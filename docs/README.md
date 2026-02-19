@@ -1,4 +1,4 @@
-# SecureClaw Documentation
+# AgentShroud Documentation
 
 **Last Updated:** 2026-02-16
 
@@ -17,7 +17,7 @@ Platform-specific deployment and update instructions.
 | All Platforms | — | [updating.md](./deploy/updating.md) |
 
 ### [setup/](./setup/) - Setup & Configuration Guides
-Complete guides for setting up SecureClaw and all integrated services.
+Complete guides for setting up AgentShroud and all integrated services.
 
 **Key Documents:**
 - [OpenClaw Setup](./setup/OPENCLAW_SETUP.md) - Main OpenClaw bot installation
@@ -111,7 +111,7 @@ Quick reference guides, commands, and how-to documentation.
 - Control UI accessible
 
 ### ✅ Phase 2: Gateway & Integration (Complete)
-- SecureClaw Gateway operational (FastAPI, 89% coverage)
+- AgentShroud Gateway operational (FastAPI, 89% coverage)
 - PII sanitization active
 - Audit ledger recording all activity
 - 1Password integration working
@@ -200,7 +200,7 @@ Quick reference guides, commands, and how-to documentation.
 ### System Issues
 - Run security verification: `./docker/scripts/verify-security.sh`
 - Check container logs: `docker logs openclaw-bot`
-- Check gateway logs: `docker logs secureclaw-gateway`
+- Check gateway logs: `docker logs agentshroud-gateway`
 
 ### Service Status
 - OpenClaw: http://localhost:18790

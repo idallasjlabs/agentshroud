@@ -1,4 +1,4 @@
-# Deploying SecureClaw on macOS (Apple Silicon / Intel)
+# Deploying AgentShroud on macOS (Apple Silicon / Intel)
 
 ## Prerequisites
 
@@ -32,11 +32,11 @@ Launch Docker Desktop and wait for it to be ready (whale icon in menu bar).
 ./docker/secrets/setup-secrets.sh
 ```
 
-### 4. Configure SecureClaw
+### 4. Configure AgentShroud
 
 ```bash
-cp secureclaw.yaml.example secureclaw.yaml   # if an example exists
-nano secureclaw.yaml
+cp agentshroud.yaml.example agentshroud.yaml   # if an example exists
+nano agentshroud.yaml
 ```
 
 ### 5. Build and Start

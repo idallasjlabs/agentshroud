@@ -1,10 +1,10 @@
-# IEC 62443 Compliance Matrix — SecureClaw
+# IEC 62443 Compliance Matrix — AgentShroud
 
-> Last updated: 2026-02-18 | SecureClaw v0.2.0
+> Last updated: 2026-02-18 | AgentShroud v0.2.0
 
 ## Overview
 
-IEC 62443 defines security levels (SL) for Industrial Automation and Control Systems (IACS). This matrix maps SecureClaw's security features to the seven Foundational Requirements (FR) across four security levels.
+IEC 62443 defines security levels (SL) for Industrial Automation and Control Systems (IACS). This matrix maps AgentShroud's security features to the seven Foundational Requirements (FR) across four security levels.
 
 | Level | Description | Threat Actor |
 |-------|-------------|-------------|
@@ -19,7 +19,7 @@ IEC 62443 defines security levels (SL) for Industrial Automation and Control Sys
 
 ## FR 1: Identification and Authentication Control (IAC)
 
-| Requirement | SL1 | SL2 | SL3 | SL4 | SecureClaw Implementation | Status |
+| Requirement | SL1 | SL2 | SL3 | SL4 | AgentShroud Implementation | Status |
 |---|:---:|:---:|:---:|:---:|---|---|
 | Human user ID & auth | ✅ | ✅ | ✅ | ⬜ | Telegram user ID + configurable `ALLOWED_USERS` allowlist | Implemented |
 | Software process ID & auth | ✅ | ✅ | ⬜ | ⬜ | API token auth for gateway endpoints | Implemented |
@@ -33,10 +33,10 @@ IEC 62443 defines security levels (SL) for Industrial Automation and Control Sys
 
 ## FR 2: Use Control (UC)
 
-| Requirement | SL1 | SL2 | SL3 | SL4 | SecureClaw Implementation | Status |
+| Requirement | SL1 | SL2 | SL3 | SL4 | AgentShroud Implementation | Status |
 |---|:---:|:---:|:---:|:---:|---|---|
 | Authorization enforcement | ✅ | ✅ | ✅ | ⬜ | Approval queue for privileged operations | Implemented |
-| Least privilege | ✅ | ✅ | ✅ | ⬜ | Bot runs as unprivileged `secureclaw-bot` user | Implemented |
+| Least privilege | ✅ | ✅ | ✅ | ⬜ | Bot runs as unprivileged `agentshroud-bot` user | Implemented |
 | Permission management | ✅ | ✅ | ⬜ | ⬜ | Role-based via allowed users config | Implemented |
 | Session lock/termination | ✅ | ✅ | ✅ | ⬜ | Kill switch: freeze/shutdown/disconnect modes | Implemented |
 
@@ -46,7 +46,7 @@ IEC 62443 defines security levels (SL) for Industrial Automation and Control Sys
 
 ## FR 3: System Integrity (SI)
 
-| Requirement | SL1 | SL2 | SL3 | SL4 | SecureClaw Implementation | Status |
+| Requirement | SL1 | SL2 | SL3 | SL4 | AgentShroud Implementation | Status |
 |---|:---:|:---:|:---:|:---:|---|---|
 | Communication integrity | ✅ | ✅ | ⬜ | ⬜ | Tailscale WireGuard encryption (in-transit) | Implemented |
 | Input validation | ✅ | ✅ | ✅ | ⬜ | PII sanitizer scrubs all LLM-bound messages | Implemented |
@@ -59,7 +59,7 @@ IEC 62443 defines security levels (SL) for Industrial Automation and Control Sys
 
 ## FR 4: Data Confidentiality (DC)
 
-| Requirement | SL1 | SL2 | SL3 | SL4 | SecureClaw Implementation | Status |
+| Requirement | SL1 | SL2 | SL3 | SL4 | AgentShroud Implementation | Status |
 |---|:---:|:---:|:---:|:---:|---|---|
 | Confidentiality at rest | ✅ | ✅ | ⬜ | ⬜ | Secrets in 1Password/Docker Secrets, not on disk | Implemented |
 | Confidentiality in transit | ✅ | ✅ | ✅ | ⬜ | Tailscale (WireGuard), Telegram TLS | Implemented |
@@ -72,7 +72,7 @@ IEC 62443 defines security levels (SL) for Industrial Automation and Control Sys
 
 ## FR 5: Restricted Data Flow (RDF)
 
-| Requirement | SL1 | SL2 | SL3 | SL4 | SecureClaw Implementation | Status |
+| Requirement | SL1 | SL2 | SL3 | SL4 | AgentShroud Implementation | Status |
 |---|:---:|:---:|:---:|:---:|---|---|
 | Network segmentation | ✅ | ✅ | ⬜ | ⬜ | Docker bridge network, Tailscale ACLs | Implemented |
 | Zone boundary protection | ✅ | ⬜ | ⬜ | ⬜ | Single-host deployment currently | Gap |
@@ -84,7 +84,7 @@ IEC 62443 defines security levels (SL) for Industrial Automation and Control Sys
 
 ## FR 6: Timely Response to Events (TRE)
 
-| Requirement | SL1 | SL2 | SL3 | SL4 | SecureClaw Implementation | Status |
+| Requirement | SL1 | SL2 | SL3 | SL4 | AgentShroud Implementation | Status |
 |---|:---:|:---:|:---:|:---:|---|---|
 | Audit log accessibility | ✅ | ✅ | ✅ | ⬜ | Append-only audit ledger with dashboard view | Implemented |
 | Continuous monitoring | ✅ | ✅ | ⬜ | ⬜ | Event bus for real-time security events | Implemented |
@@ -97,7 +97,7 @@ IEC 62443 defines security levels (SL) for Industrial Automation and Control Sys
 
 ## FR 7: Resource Availability (RA)
 
-| Requirement | SL1 | SL2 | SL3 | SL4 | SecureClaw Implementation | Status |
+| Requirement | SL1 | SL2 | SL3 | SL4 | AgentShroud Implementation | Status |
 |---|:---:|:---:|:---:|:---:|---|---|
 | Denial of service protection | ✅ | ⬜ | ⬜ | ⬜ | Rate limiting on Telegram side only | Gap |
 | Resource management | ✅ | ✅ | ⬜ | ⬜ | Docker resource limits (planned) | Partial |
@@ -120,7 +120,7 @@ IEC 62443 defines security levels (SL) for Industrial Automation and Control Sys
 | FR 6: Timely Response | **2** | 3 | Medium — log integrity |
 | FR 7: Resource Availability | **1** | 2 | High — backups, rate limiting |
 
-**Overall SecureClaw Rating: SL 2**
+**Overall AgentShroud Rating: SL 2**
 
 ### Key Components Referenced
 

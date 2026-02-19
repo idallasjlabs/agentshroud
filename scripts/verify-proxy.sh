@@ -1,5 +1,5 @@
 #!/bin/zsh
-# SecureClaw Proxy Verification Script
+# AgentShroud Proxy Verification Script
 #
 # Usage:
 #   ./scripts/verify-proxy.sh           # Full verification

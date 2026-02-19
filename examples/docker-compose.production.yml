@@ -21,7 +21,7 @@ services:
       - /home/node/.config:size=32M
     security_opt:
       - no-new-privileges:true
-      - seccomp=../docker/seccomp/secureclaw-arm64.json
+      - seccomp=../docker/seccomp/agentshroud-arm64.json
     deploy:
       resources:
         limits:

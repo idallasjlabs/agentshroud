@@ -1,6 +1,6 @@
 # iOS/macOS Shortcuts
 
-Native OS integration for forwarding content to SecureClaw without granting direct access.
+Native OS integration for forwarding content to AgentShroud without granting direct access.
 
 ## Shortcuts (to be implemented in Week 3)
 
@@ -11,7 +11,7 @@ Native OS integration for forwarding content to SecureClaw without granting dire
    - POST to `/forward` endpoint
 
 2. **voice-capture.shortcut** - Voice command integration
-   - "Hey Siri, send to SecureClaw"
+   - "Hey Siri, send to AgentShroud"
    - Records and transcribes locally (Apple Speech framework)
    - Sends transcript only (audio never leaves device)
 

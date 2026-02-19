@@ -8,7 +8,7 @@ from typing import Any, Optional
 
 from .engine import ContainerEngine, ContainerInfo
 
-logger = logging.getLogger("secureclaw.runtime.docker")
+logger = logging.getLogger("agentshroud.runtime.docker")
 
 
 class DockerEngine(ContainerEngine):
