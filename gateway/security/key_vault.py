@@ -120,6 +120,14 @@ class KeyVault:
     def get_audit_log(self) -> list[KeyAuditEvent]:
         return list(self._audit)
 
+    def check_value_match(self, text: str) -> list[str]:
+        """Check if any stored key values appear in text. Returns matching key names."""
+        matched = []
+        for name, entry in self._keys.items():
+            if entry.value in text:
+                matched.append(name)
+        return matched
+
     def _agent_in_scope(self, agent_id: str, scopes: list[str]) -> bool:
         return "*" in scopes or agent_id in scopes
 
@@ -150,10 +158,10 @@ class KeyLeakDetector:
     def scan_outbound(self, text: str) -> LeakScanResult:
         leaked = []
         # Check stored keys
-        for name, entry in self.vault._keys.items():
-            if entry.value in text:
-                leaked.append(name)
-                self.vault._log_audit(name, "", "leak_detected", "key found in outbound content")
+        matched = self.vault.check_value_match(text)
+        for name in matched:
+            leaked.append(name)
+            self.vault._log_audit(name, "", "leak_detected", "key found in outbound content")
 
         # Check generic patterns
         if not leaked:
