@@ -4,6 +4,7 @@ Web Content Scanner — detect prompt injection and PII in fetched web content.
 Key design: FLAG, don't block. Content always passes through but gets
 annotated with findings so the pipeline can handle it appropriately.
 """
+from __future__ import annotations
 
 import base64
 import logging

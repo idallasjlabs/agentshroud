@@ -19,12 +19,11 @@ class MetadataGuard:
         self.strip_headers = {'Server', 'X-Powered-By'}
         
         # Headers to sanitize (remove internal IPs)
-        self.sanitize_headers = {'Via', 'X-Forwarded-For', 'X-Real-IP'}
+        self.sanitizable_headers = {'Via', 'X-Forwarded-For', 'X-Real-IP'}
         
         # Internal IP patterns (RFC 1918 + loopback + link-local)
         self.internal_ip_pattern = re.compile(
-            r'(?:(?:10\.|192\.168\.|172\.(?:1[6-9]|2[0-9]|3[0-1])\.|127\.|169\.254\.)'
-            r'\d{1,3}\.\d{1,3}\.\d{1,3}|::1|fc00::|fe80::)'
+            r'(?:10\.\d{1,3}\.\d{1,3}\.\d{1,3}|192\.168\.\d{1,3}\.\d{1,3}|172\.(?:1[6-9]|2[0-9]|3[0-1])\.\d{1,3}\.\d{1,3}|127\.\d{1,3}\.\d{1,3}\.\d{1,3}|169\.254\.\d{1,3}\.\d{1,3}|::1|fc00::|fe80::)'
         )
         
         # EXIF magic bytes
@@ -67,7 +66,7 @@ class MetadataGuard:
                 continue
                 
             # Sanitize headers that might contain internal IPs
-            if key in self.sanitize_headers:
+            if key in self.sanitizable_headers:
                 value = self.internal_ip_pattern.sub('[REDACTED]', str(value))
                 
             sanitized[key] = value

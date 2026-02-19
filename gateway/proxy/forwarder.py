@@ -3,6 +3,7 @@ HTTP Forwarder — forwards sanitized requests to OpenClaw on internal network.
 
 Connection pooling, timeout handling, retry logic, health checks.
 """
+from __future__ import annotations
 
 import asyncio
 import logging

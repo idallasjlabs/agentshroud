@@ -6,6 +6,7 @@ the security pipeline, and forwards to the actual MCP server.
 Design: transparent drop-in. Default-allow. Log everything, block only clear threats.
 Supports stdio and HTTP/SSE transports with connection pooling.
 """
+from __future__ import annotations
 
 import asyncio
 import json
