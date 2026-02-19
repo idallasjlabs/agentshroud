@@ -1,0 +1,74 @@
+# SecureClaw Egress Control Configuration
+# ========================================
+# Default: monitoring mode (log everything, block nothing)
+# Switch to "enforce" for hard restrictions in high-security deployments
+
+dns_filter:
+  mode: monitor          # "monitor" or "enforce"
+  allowed_domains: null  # null = allow all; set list for allowlist
+  max_subdomain_length: 80
+  max_label_length: 50
+  entropy_threshold: 4.0
+  max_queries_per_minute: 120
+
+subagent_monitor:
+  mode: monitor
+  max_concurrent_per_session: 20
+  inherit_trust: true
+
+file_sandbox:
+  mode: monitor
+  allowed_read_paths: null   # null = allow all in monitor mode
+  allowed_write_paths: null
+  blocked_paths:
+    - /etc/shadow
+    - /etc/passwd
+    - /etc/sudoers
+    - "**/.ssh/id_*"
+    - "**/.ssh/authorized_keys"
+    - "**/.env"
+    - "**/.env.*"
+    - "**/.aws/credentials"
+    - "**/.gnupg/*"
+  staging_size_threshold: 50000
+  staging_time_window: 300
+
+key_vault:
+  redact_in_logs: true
+  detect_leaks: true
+  keys:
+    # Keys are loaded from environment or 1Password at runtime.
+    # Never put actual key values in config files.
+    # Example:
+    # - name: openai
+    #   source: env:OPENAI_API_KEY   # or op://vault/item/field
+    #   scopes: ["agent-main", "agent-code"]
+    # - name: github
+    #   source: op://SecureClaw Bot Credentials/GitHub/token
+    #   scopes: ["agent-main"]
+
+egress_monitor:
+  mode: monitor
+  http_requests_per_hour: 500
+  dns_queries_per_hour: 1000
+  file_writes_per_hour: 200
+  mcp_calls_per_hour: 200
+  drip_flagged_threshold: 20
+  drip_channel_threshold: 2
+
+# High-security preset (uncomment to enable):
+# dns_filter:
+#   mode: enforce
+#   allowed_domains:
+#     - api.openai.com
+#     - api.anthropic.com
+#     - github.com
+#     - pypi.org
+#     - registry.npmjs.org
+# subagent_monitor:
+#   mode: enforce
+#   max_concurrent_per_session: 5
+# file_sandbox:
+#   mode: enforce
+#   allowed_read_paths: ["/workspace", "/tmp"]
+#   allowed_write_paths: ["/workspace", "/tmp"]
