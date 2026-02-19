@@ -170,8 +170,7 @@ class MCPInspector:
                     raw = base64.b64decode(padded, validate=True)
                     decoded_str = raw.decode('utf-8', errors='strict')
                     # Only keep if it produced printable text
-                    if decoded_str.isprintable() or '
-' in decoded_str:
+                    if decoded_str.isprintable() or chr(10) in decoded_str:
                         results.append(decoded_str)
                         current = decoded_str
                         decoded_any = True
@@ -202,14 +201,14 @@ class MCPInspector:
         for variant in variants:
             for pattern, desc in self._compiled_high:
                 if pattern.search(variant):
-                findings.append(InspectionFinding(
-                    finding_type=FindingType.INJECTION,
-                    threat_level=ThreatLevel.HIGH,
-                    description=f"Prompt injection: {desc}",
-                    field_path=field_path,
-                    matched_value=text[:100] + "..." if len(text) > 100 else text,
-                ))
-                break  # One match per pattern is enough
+                    findings.append(InspectionFinding(
+                        finding_type=FindingType.INJECTION,
+                        threat_level=ThreatLevel.HIGH,
+                        description=f"Prompt injection: {desc}",
+                        field_path=field_path,
+                        matched_value=text[:100] + "..." if len(text) > 100 else text,
+                    ))
+                    break  # One match per pattern is enough
             for pattern, desc in self._compiled_low:
                 if pattern.search(variant):
                     findings.append(InspectionFinding(
