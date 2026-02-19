@@ -39,6 +39,7 @@ class NetworkConfiguration:
     network_mode: Optional[str] = None
     dns_servers: Optional[List[str]] = None
     links: Optional[List[str]] = None
+    privileged: bool = False
 
 
 class NetworkValidator:
@@ -91,6 +92,7 @@ class NetworkValidator:
             findings.extend(self._validate_port_exposure(service_configs))
             findings.extend(self._validate_dns_configuration(service_configs))
             findings.extend(self._validate_network_modes(service_configs))
+            findings.extend(self._validate_privileged_containers(service_configs))
             
         except Exception as e:
             logger.error(f"Error validating docker-compose config: {e}")
@@ -142,6 +144,10 @@ class NetworkValidator:
         expose_ports = service_config.get('expose', [])
         exposed_ports.extend([str(p) for p in expose_ports])
         
+                
+        # Parse privileged flag
+        privileged = service_config.get('privileged', False)
+        
         return NetworkConfiguration(
             service_name=service_name,
             networks=networks,
@@ -149,7 +155,8 @@ class NetworkValidator:
             published_ports=published_ports,
             network_mode=network_mode,
             dns_servers=dns_servers,
-            links=links
+            links=links,
+            privileged=privileged
         )
     
     def _validate_network_definitions(self, networks: Dict[str, Any]) -> List[NetworkSecurityFinding]:
@@ -344,6 +351,24 @@ class NetworkValidator:
         
         return findings
     
+    
+    def _validate_privileged_containers(self, service_configs: Dict[str, NetworkConfiguration]) -> List[NetworkSecurityFinding]:
+        """Validate that no containers are running in privileged mode."""
+        findings = []
+        
+        for service_name, config in service_configs.items():
+            if config.privileged:
+                findings.append(NetworkSecurityFinding(
+                    category="privileged_container",
+                    severity="critical",
+                    service_name=service_name,
+                    description="Service runs with privileged flag - full host access",
+                    details={"privileged": config.privileged},
+                    remediation="Remove privileged: true and use specific capabilities instead"
+                ))
+        
+        return findings
+
     def validate_runtime_configuration(self) -> List[NetworkSecurityFinding]:
         """Validate runtime network configuration using Docker API."""
         findings = []
