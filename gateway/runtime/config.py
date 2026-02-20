@@ -17,10 +17,10 @@ class RuntimeConfig:
     Loaded from environment variables or a config dict.
 
     Environment variables:
-        AGENTSHROUD_RUNTIME: docker | podman | apple (default: auto-detect)
-        AGENTSHROUD_ROOTLESS: true | false (default: true for podman)
-        AGENTSHROUD_COMPOSE_FILE: path to compose file
-        AGENTSHROUD_RUNTIME_SOCKET: custom socket path
+        SECURECLAW_RUNTIME: docker | podman | apple (default: auto-detect)
+        SECURECLAW_ROOTLESS: true | false (default: true for podman)
+        SECURECLAW_COMPOSE_FILE: path to compose file
+        SECURECLAW_RUNTIME_SOCKET: custom socket path
     """
 
     runtime: Optional[str] = None  # None = auto-detect
@@ -31,10 +31,10 @@ class RuntimeConfig:
     @classmethod
     def from_env(cls) -> "RuntimeConfig":
         """Load configuration from environment variables."""
-        runtime = os.environ.get("AGENTSHROUD_RUNTIME")
-        rootless_str = os.environ.get("AGENTSHROUD_ROOTLESS")
-        compose_file = os.environ.get("AGENTSHROUD_COMPOSE_FILE", "docker-compose.secure.yml")
-        socket_path = os.environ.get("AGENTSHROUD_RUNTIME_SOCKET")
+        runtime = os.environ.get("SECURECLAW_RUNTIME")
+        rootless_str = os.environ.get("SECURECLAW_ROOTLESS")
+        compose_file = os.environ.get("SECURECLAW_COMPOSE_FILE", "docker-compose.secure.yml")
+        socket_path = os.environ.get("SECURECLAW_RUNTIME_SOCKET")
 
         rootless = None
         if rootless_str is not None:

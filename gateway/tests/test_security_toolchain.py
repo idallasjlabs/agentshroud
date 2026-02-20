@@ -295,7 +295,7 @@ class TestClamAVRun:
 from gateway.security.falco_monitor import (
     parse_alert,
     categorize_alerts,
-    is_secureclaw_rule,
+    is_agentshroud_rule,
     read_alerts,
     generate_summary as falco_summary,
 )
@@ -344,14 +344,14 @@ class TestFalcoParser:
         result = parse_alert(SAMPLE_FALCO_ALERT)
         assert result["container_name"] == "openclaw"
 
-    def test_is_secureclaw_rule_true(self):
-        assert is_secureclaw_rule("Container Shell Spawned")
-        assert is_secureclaw_rule("AgentShroud Custom Rule")
-        assert is_secureclaw_rule("Crypto Mining Detection")
+    def test_is_agentshroud_rule_true(self):
+        assert is_agentshroud_rule("Container Shell Spawned")
+        assert is_agentshroud_rule("AgentShroud Custom Rule")
+        assert is_agentshroud_rule("Crypto Mining Detection")
 
-    def test_is_secureclaw_rule_false(self):
-        assert not is_secureclaw_rule("Random System Rule")
-        assert not is_secureclaw_rule("")
+    def test_is_agentshroud_rule_false(self):
+        assert not is_agentshroud_rule("Random System Rule")
+        assert not is_agentshroud_rule("")
 
 
 class TestFalcoCategorize:
