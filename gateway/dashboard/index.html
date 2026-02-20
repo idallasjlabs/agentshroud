@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>AgentShroud Dashboard</title>
+<title>SecureClaw Dashboard</title>
 <style>
 *{margin:0;padding:0;box-sizing:border-box}
 :root{--bg:#0d1117;--surface:#161b22;--border:#30363d;--text:#c9d1d9;--text-dim:#8b949e;--accent:#58a6ff;--green:#3fb950;--yellow:#d29922;--red:#f85149;--purple:#bc8cff}
@@ -57,7 +57,7 @@ body{background:var(--bg);color:var(--text);font-family:-apple-system,BlinkMacSy
 <body>
 <div class="header">
   <span class="logo">🛡️</span>
-  <h1>AgentShroud</h1>
+  <h1>SecureClaw</h1>
   <span class="status-dot disconnected" id="statusDot"></span>
   <span id="statusText" style="color:var(--text-dim);font-size:12px">Connecting...</span>
   <span class="uptime" id="uptime"></span>
@@ -170,7 +170,7 @@ body{background:var(--bg);color:var(--text);font-family:-apple-system,BlinkMacSy
     // Critical alert
     if (ev.severity === 'critical') {
       if (Notification.permission === 'granted') {
-        new Notification('⚠️ AgentShroud Alert', {body: ev.summary});
+        new Notification('⚠️ SecureClaw Alert', {body: ev.summary});
       } else if (Notification.permission !== 'denied') {
         Notification.requestPermission();
       }
