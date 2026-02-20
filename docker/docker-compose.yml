@@ -4,18 +4,19 @@ services:
     build:
       context: ..
       dockerfile: gateway/Dockerfile
-    container_name: secureclaw-gateway
+    container_name: agentshroud-gateway
     hostname: gateway
     restart: unless-stopped
 
     # Security: localhost-only binding
     ports:
-      - "127.0.0.1:8080:8080"
+      - "0.0.0.0:8080:8080"
 
     # Data persistence
     volumes:
-      - ../secureclaw.yaml:/app/secureclaw.yaml:ro
+      - ../agentshroud.yaml:/app/secureclaw.yaml:ro
       - gateway-data:/app/data
+      - ../web:/app/web:ro
 
     # Environment
     environment:

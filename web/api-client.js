@@ -6,7 +6,7 @@
 class SecureClawAPI {
   constructor(options = {}) {
     this.baseURL = options.baseURL || 'http://localhost:8080';
-    this.wsURL = options.wsURL || 'ws://localhost:8081/ws';
+    this.wsURL = options.wsURL || 'ws://localhost:8080/ws';
     this.timeout = options.timeout || 10000;
     this.ws = null;
     this.wsReconnectAttempts = 0;
