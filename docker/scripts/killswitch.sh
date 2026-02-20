@@ -108,8 +108,8 @@ case "$MODE" in
         echo "[2/2] Containers are now paused for forensic analysis"
         echo ""
         echo "To resume:  docker compose -f $DOCKER_DIR/docker-compose.yml unpause"
-        echo "To inspect: docker exec openclaw-bot /bin/bash"
-        echo "            docker logs openclaw-bot"
+        echo "To inspect: docker exec agentshroud-bot /bin/bash"
+        echo "            docker logs agentshroud-bot"
         echo ""
         ;;
 
@@ -120,7 +120,7 @@ case "$MODE" in
 
         echo ""
         echo "[2/3] Checking volumes..."
-        docker volume ls | grep -E "(openclaw|gateway)" || true
+        docker volume ls | grep -E "(agentshroud|gateway)" || true
         echo -e "${GREEN}✓${NC} Volumes preserved"
 
         echo ""
@@ -154,8 +154,8 @@ case "$MODE" in
         echo ""
         echo "[3/7] Clearing cached credentials from volumes..."
 
-        # Remove API keys from OpenClaw config volume
-        docker run --rm -v agentshroud_openclaw-config:/data alpine sh -c \
+        # Remove API keys from AgentShroud config volume
+        docker run --rm -v agentshroud_agentshroud-config:/data alpine sh -c \
             "find /data -type f -name '*.key' -o -name '*api*' -o -name '*token*' | xargs rm -f" 2>/dev/null || true
         echo -e "${GREEN}✓${NC} Cleared cached credentials from volumes"
 
@@ -246,9 +246,9 @@ You MUST manually revoke the following credentials:
 $(docker inspect agentshroud-gateway 2>/dev/null || echo "Container not found")
 \`\`\`
 
-### OpenClaw Container
+### AgentShroud Container
 \`\`\`
-$(docker inspect openclaw-bot 2>/dev/null || echo "Container not found")
+$(docker inspect agentshroud-bot 2>/dev/null || echo "Container not found")
 \`\`\`
 
 ## Recent Logs
@@ -258,9 +258,9 @@ $(docker inspect openclaw-bot 2>/dev/null || echo "Container not found")
 $(docker logs --tail 50 agentshroud-gateway 2>/dev/null || echo "No logs available")
 \`\`\`
 
-### OpenClaw Logs (last 50 lines)
+### AgentShroud Logs (last 50 lines)
 \`\`\`
-$(docker logs --tail 50 openclaw-bot 2>/dev/null || echo "No logs available")
+$(docker logs --tail 50 agentshroud-bot 2>/dev/null || echo "No logs available")
 \`\`\`
 
 ---

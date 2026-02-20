@@ -7,7 +7,7 @@ set -e
 LOG_DIR="/var/log/security"
 GATEWAY_URL="${GATEWAY_URL:-http://localhost:8080}"
 TIMESTAMP=$(date -u +%Y%m%d-%H%M%S)
-WORKSPACE="${OPENCLAW_WORKSPACE:-/home/node}"
+WORKSPACE="${AGENTSHROUD_WORKSPACE:-/home/node}"
 
 mkdir -p "$LOG_DIR"/{trivy,clamav,oscap}
 
