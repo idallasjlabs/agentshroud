@@ -12,7 +12,7 @@ import json
 import secrets
 import time
 from dataclasses import dataclass, field
-from typing import List, Optional, Set
+from typing import Dict, List, Optional, Set
 from urllib.parse import urlparse
 import posixpath
 
@@ -47,7 +47,8 @@ class OAuthSecurityValidator:
         self.require_pkce = require_pkce
         self.require_s256 = False
         self._known_shared_ids: Set[str] = set()
-        self._used_states: Set[str] = set()
+        self._used_states: Dict[str, float] = {}
+        self._max_states = 100000
 
     def register_known_shared_ids(self, ids: List[str]):
         self._known_shared_ids.update(ids)
@@ -80,7 +81,12 @@ class OAuthSecurityValidator:
         return True
 
     def record_state_used(self, state: str):
-        self._used_states.add(state)
+        self._used_states[state] = time.time()
+        # Evict oldest entries if over limit
+        if len(self._used_states) > self._max_states:
+            oldest = sorted(self._used_states, key=self._used_states.get)[:len(self._used_states) - self._max_states]
+            for k in oldest:
+                del self._used_states[k]
 
     def check_state_reuse(self, state: str):
         if state in self._used_states:

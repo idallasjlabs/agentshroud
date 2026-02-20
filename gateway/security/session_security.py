@@ -41,6 +41,8 @@ class Session:
 
 
 class SessionManager:
+    MAX_TOTAL_SESSIONS = 10000
+
     def __init__(self, max_session_age: int = 3600, max_sessions_per_ip: int = 10, rate_limit_window: int = 60):
         self.max_session_age = max_session_age
         self.max_sessions_per_ip = max_sessions_per_ip
@@ -60,6 +62,10 @@ class SessionManager:
             raise RateLimitExceeded(f"Rate limit exceeded for {ip}")
         times.append(now)
         self._ip_creation_times[ip] = times
+
+        # Evict expired sessions if at capacity
+        if len(self._sessions) >= self.MAX_TOTAL_SESSIONS:
+            self.cleanup_expired()
 
         sid = secrets.token_urlsafe(32)
         fp = self._fingerprint(ip, user_agent)
@@ -110,4 +116,9 @@ class SessionManager:
         expired = [sid for sid, s in self._sessions.items() if now - s.created_at > self.max_session_age]
         for sid in expired:
             del self._sessions[sid]
+        # Clean up stale IP rate-limit entries
+        stale_ips = [ip for ip, times in self._ip_creation_times.items()
+                     if not any(now - t <= self.rate_limit_window for t in times)]
+        for ip in stale_ips:
+            del self._ip_creation_times[ip]
         return len(expired)
