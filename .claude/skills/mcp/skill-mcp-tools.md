@@ -123,10 +123,10 @@ aws iam simulate-principal-policy \
 ### Authentication Issues
 ```bash
 # Reset GitHub MCP auth
-/mcp-auth-reset github
+/mcpm-auth-reset github
 
 # Check MCP server status
-/mcp-doctor
+/mcpm-doctor
 
 # Verify AWS credentials
 aws sts get-caller-identity

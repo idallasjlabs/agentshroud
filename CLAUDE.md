@@ -296,9 +296,9 @@ Use MCP tools when:
 - Reading documentation from Confluence
 
 MCP Skills available:
-- `/aws-mcp-profile` - Configure AWS MCP profile
-- `/mcp-doctor` - Diagnose MCP issues
-- `/mcp-auth-reset` - Reset MCP authentication
+- `/mcpm-aws-profile` - Configure AWS MCP profile
+- `/mcpm-doctor` - Diagnose MCP issues
+- `/mcpm-auth-reset` - Reset MCP authentication
 
 ──────────────────────────────────────────────────────────────────────────────
 ## 7) DATA PLATFORM GUARDRAILS

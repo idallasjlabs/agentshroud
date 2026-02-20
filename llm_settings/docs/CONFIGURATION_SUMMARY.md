@@ -25,7 +25,7 @@ LLM_Settings/
 ├── .claude/                          # Claude Code (PRIMARY)
 │   ├── agents/                       # Subagents (doc-writer, security, tests)
 │   ├── scripts/claude-hooks/         # Pre/Post hooks
-│   ├── skills/                       # /pr, /tdd, /aws-mcp-profile, /mcp-doctor, /mcp-auth-reset
+│   ├── skills/                       # /pr, /tdd, /mcpm-aws-profile, /mcpm-doctor, /mcpm-auth-reset
 │   ├── settings.json                 # Team config
 │   ├── settings.local.json           # Personal overrides
 │   └── statusline.sh                # Custom status line
@@ -118,7 +118,7 @@ LLM_Settings/
 ### Claude Code ('.claude/')
 - **Format:** JSON
 - **Agents:** 3 subagents (doc-writer, security-reviewer, testrunner)
-- **Skills:** 5 skills (/pr, /tdd, /aws-mcp-profile, /mcp-doctor, /mcp-auth-reset)
+- **Skills:** 5 skills (/pr, /tdd, /mcpm-aws-profile, /mcpm-doctor, /mcpm-auth-reset)
 - **Hooks:** 3 hooks (warn_dangerous_bash, auto_format_python, run_targeted_tests)
 - **Context:** CLAUDE.md loaded automatically
 - **MCP:** Via .mcp.json (GitHub, Atlassian, AWS API)
