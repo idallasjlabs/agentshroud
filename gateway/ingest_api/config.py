@@ -124,7 +124,7 @@ def load_config(config_path: Path | None = None) -> GatewayConfig:
 
     Search order:
     1. Explicit path argument
-    2. AGENTSHROUD_CONFIG environment variable
+    2. SECURECLAW_CONFIG environment variable
     3. ./agentshroud.yaml (relative to CWD)
     4. ../agentshroud.yaml (for when running from gateway/)
 
@@ -147,7 +147,7 @@ def load_config(config_path: Path | None = None) -> GatewayConfig:
     # Determine config file path
     if config_path:
         path = config_path
-    elif env_path := os.getenv("AGENTSHROUD_CONFIG"):
+    elif env_path := os.getenv("SECURECLAW_CONFIG"):
         path = Path(env_path)
     elif Path("agentshroud.yaml").exists():
         path = Path("agentshroud.yaml")
@@ -156,7 +156,7 @@ def load_config(config_path: Path | None = None) -> GatewayConfig:
     else:
         raise FileNotFoundError(
             "No agentshroud.yaml found. Searched: "
-            "./agentshroud.yaml, ../agentshroud.yaml, $AGENTSHROUD_CONFIG"
+            "./agentshroud.yaml, ../agentshroud.yaml, $SECURECLAW_CONFIG"
         )
 
     logger.info(f"Loading configuration from {path.absolute()}")
