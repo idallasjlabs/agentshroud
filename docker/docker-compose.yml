@@ -55,16 +55,16 @@ services:
     # Network - Gateway on BOTH networks to act as proxy
     networks:
       - agentshroud-internal  # External (localhost access)
-      - agentshroud-isolated  # Internal (to OpenClaw)
+      - agentshroud-isolated  # Internal (to AgentShroud)
 
-  # OpenClaw Bot (Real OpenClaw Platform) - therealidallasj
+  # AgentShroud Bot (Real AgentShroud Platform) - therealidallasj
   # SECURITY: Fully isolated - NO host filesystem access, NO LAN access
-  openclaw:
+  agentshroud:
     build:
       context: ..
-      dockerfile: docker/Dockerfile.openclaw
-    container_name: openclaw-bot
-    hostname: openclaw
+      dockerfile: docker/Dockerfile.agentshroud
+    container_name: agentshroud-bot
+    hostname: agentshroud
     restart: unless-stopped
 
     # SECURITY: Port exposed to localhost only for UI access
@@ -75,14 +75,14 @@ services:
 
     # SECURITY: Only isolated Docker volumes - NO host directory mounts
     volumes:
-      # OpenClaw config directory (API keys, settings, memory)
-      - openclaw-config:/home/node/.openclaw
+      # AgentShroud config directory (API keys, settings, memory)
+      - agentshroud-config:/home/node/.agentshroud
       # Bot's workspace (files the agent works with)
-      - openclaw-workspace:/home/node/openclaw/workspace
+      - agentshroud-workspace:/home/node/agentshroud/workspace
       # SSH keys for bot (generated inside container)
-      - openclaw-ssh:/home/node/.ssh
+      - agentshroud-ssh:/home/node/.ssh
       # Playwright browser binaries (persistent across restarts)
-      - openclaw-browsers:/home/node/.cache/ms-playwright
+      - agentshroud-browsers:/home/node/.cache/ms-playwright
 
     # Secrets (API keys and 1Password)
     secrets:
@@ -113,7 +113,7 @@ services:
     # Security hardening
     security_opt:
       - no-new-privileges:true
-      - seccomp=./seccomp/openclaw-seccomp.json
+      - seccomp=./seccomp/agentshroud-seccomp.json
     cap_drop:
       - ALL
 
@@ -128,7 +128,7 @@ services:
       - /home/node/.config:noexec,nosuid,size=100m,uid=1000,gid=1000
       # .cache/ms-playwright is now a volume (persistent browsers)
 
-    # Resource limits (increased for Node.js + OpenClaw)
+    # Resource limits (increased for Node.js + AgentShroud)
     mem_limit: 4g
     memswap_limit: 4g
     cpus: 2.0
@@ -178,7 +178,7 @@ networks:
       config:
         - subnet: 172.20.0.0/16
 
-  # Backend network - OpenClaw talks to Gateway and internet (LLM APIs)
+  # Backend network - AgentShroud talks to Gateway and internet (LLM APIs)
   # NOTE: internal: false is required for outbound API calls to LLM providers
   # Network isolation is enforced via iptables/seccomp, not Docker networking
   agentshroud-isolated:
@@ -196,11 +196,11 @@ networks:
 volumes:
   gateway-data:
     driver: local
-  openclaw-config:
+  agentshroud-config:
     driver: local
-  openclaw-workspace:
+  agentshroud-workspace:
     driver: local
-  openclaw-ssh:
+  agentshroud-ssh:
     driver: local
-  openclaw-browsers:
+  agentshroud-browsers:
     driver: local

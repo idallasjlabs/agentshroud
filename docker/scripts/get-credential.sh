@@ -1,5 +1,5 @@
 #!/bin/bash
-# Simple credential retrieval for OpenClaw bot
+# Simple credential retrieval for AgentShroud bot
 # Usage: get-credential <credential-name>
 
 set -euo pipefail
@@ -19,7 +19,7 @@ fi
 
 # Fast-path: use env vars when set (avoids 1Password call entirely).
 # Security trade-off: GMAIL_APP_PASSWORD and GMAIL_USERNAME live in the process
-# environment for the container lifetime (set by start-openclaw.sh at boot).
+# environment for the container lifetime (set by start-agentshroud.sh at boot).
 # Callers MUST NOT log the return value of this script — doing so would expose
 # credentials in log aggregation pipelines.
 case "$ITEM" in
@@ -60,7 +60,7 @@ case "$ITEM" in
         op read --session "$OP_SESSION" "op://$VAULT/$ITEM_ID/password"
         ;;
     gmail-app-password)
-        op read --session "$OP_SESSION" "op://$VAULT/$ITEM_ID/openclaw bot password"
+        op read --session "$OP_SESSION" "op://$VAULT/$ITEM_ID/agentshroud bot password"
         ;;
     gmail-totp)
         op item get "$ITEM_ID" --vault "$VAULT" --otp --session "$OP_SESSION"

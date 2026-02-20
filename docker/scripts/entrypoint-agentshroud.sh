@@ -1,5 +1,5 @@
 #!/bin/bash
-# OpenClaw entrypoint - setup browsers on first run, then start OpenClaw
+# AgentShroud entrypoint - setup browsers on first run, then start AgentShroud
 
 set -euo pipefail
 
@@ -18,5 +18,5 @@ else
 fi
 
 # Run startup script as node user (no privilege drop needed - already set USER in Dockerfile)
-echo "[entrypoint] Starting OpenClaw..."
-exec /usr/local/bin/start-openclaw.sh
+echo "[entrypoint] Starting AgentShroud..."
+exec /usr/local/bin/start-agentshroud.sh

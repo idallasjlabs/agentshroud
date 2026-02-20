@@ -1,6 +1,6 @@
 #!/bin/bash
-# OpenClaw entrypoint wrapper
-# Exports API keys from Docker secrets before starting OpenClaw
+# AgentShroud entrypoint wrapper
+# Exports API keys from Docker secrets before starting AgentShroud
 
 # Export OpenAI API key from secret file
 if [ -f "$OPENAI_API_KEY_FILE" ]; then
