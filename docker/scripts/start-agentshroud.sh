@@ -4,8 +4,9 @@
 set -euo pipefail
 
 # Export Gateway password from secret file
+# Note: OpenClaw CLI expects OPENCLAW_GATEWAY_PASSWORD env var
 if [ -f "/run/secrets/gateway_password" ]; then
-    export AGENTSHROUD_GATEWAY_PASSWORD="$(cat /run/secrets/gateway_password)"
+    export OPENCLAW_GATEWAY_PASSWORD="$(cat /run/secrets/gateway_password)"
     echo "[startup] Loaded Gateway password"
 else
     echo "[startup] Warning: Gateway password file not found"
