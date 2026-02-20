@@ -10,12 +10,16 @@ services:
 
     # Security: localhost-only binding
     ports:
-      - "127.0.0.1:8080:8080"
+      - "0.0.0.0:8080:8080"
 
     # Data persistence
     volumes:
+
       - ../agentshroud.yaml:/app/agentshroud.yaml:ro
+
+
       - gateway-data:/app/data
+      - ../web:/app/web:ro
 
     # Environment
     environment:
