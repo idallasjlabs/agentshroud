@@ -1,6 +1,6 @@
 # Gateway Layer
 
-The gateway layer is the core of AgentShroud's proxy architecture. It sits between user-forwarded content and the OpenClaw agent.
+The gateway layer is the core of SecureClaw's proxy architecture. It sits between user-forwarded content and the OpenClaw agent.
 
 ## Structure
 
@@ -41,7 +41,7 @@ gateway/
 - Regex fallback for Python 3.14 compatibility
 - Detects: SSN, credit cards, phone, email, addresses
 - **Fail closed**: Never forwards unsanitized content on error
-- Configurable via agentshroud.yaml
+- Configurable via secureclaw.yaml
 
 ### Data Ledger
 - SQLite with aiosqlite (fully async)
@@ -59,7 +59,7 @@ gateway/
 ### Authentication
 - Bearer token with constant-time comparison (prevents timing attacks)
 - Rate limiting: 100 requests/minute per IP
-- Auto-generates token if not in agentshroud.yaml
+- Auto-generates token if not in secureclaw.yaml
 
 ## Setup
 
@@ -73,7 +73,7 @@ pip install -r gateway/requirements.txt
 
 ### 2. Configure
 
-Edit `agentshroud.yaml` at project root:
+Edit `secureclaw.yaml` at project root:
 - Set `gateway.auth_token` (or let it auto-generate)
 - Configure PII redaction rules
 - Set ledger retention period
