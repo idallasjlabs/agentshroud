@@ -10,9 +10,9 @@ COMMAND=$1
 case $COMMAND in
     status)
         echo "=== Telegram Channel Status ==="
-        docker compose -f docker/docker-compose.yml exec agentshroud agentshroud channels list
+        docker compose -f docker/docker-compose.yml exec agentshroud openclaw channels list
         echo -e "\n=== Telegram Pairing Status ==="
-        docker compose -f docker/docker-compose.yml exec agentshroud agentshroud pairing list telegram
+        docker compose -f docker/docker-compose.yml exec agentshroud openclaw pairing list telegram
         ;;
     add)
         if [ -z "$2" ]; then
@@ -22,25 +22,25 @@ case $COMMAND in
         fi
         echo "Adding Telegram channel..."
         docker compose -f docker/docker-compose.yml exec agentshroud \
-            agentshroud channels add --channel telegram --token "$2"
+            openclaw channels add --channel telegram --token "$2"
         echo -e "\n✅ Channel added. Check pairing with: ./telegram.sh status"
         ;;
     remove)
         echo "Removing Telegram channel..."
         docker compose -f docker/docker-compose.yml exec agentshroud \
-            agentshroud channels remove telegram
+            openclaw channels remove telegram
         echo -e "\n✅ Channel removed"
         ;;
     approve)
         if [ -z "$2" ]; then
             echo "First, list pending pairings:"
-            docker compose -f docker/docker-compose.yml exec agentshroud agentshroud pairing list
-            echo -e "\nUsage: ./telegram.sh approve <PAIRING_ID>"
+            docker compose -f docker/docker-compose.yml exec agentshroud openclaw pairing list telegram
+            echo -e "\nUsage: ./telegram.sh approve <PAIRING_CODE>"
             exit 1
         fi
         echo "Approving pairing: $2"
         docker compose -f docker/docker-compose.yml exec agentshroud \
-            agentshroud pairing approve telegram "$2"
+            openclaw pairing approve telegram "$2"
         echo -e "\n✅ Pairing approved"
         ;;
     *)
