@@ -10,7 +10,7 @@ from typing import Any
 from fastapi import APIRouter, Depends, HTTPException
 from pydantic import BaseModel, Field
 
-from ..tools.openclaw_manager import (
+from ..tools.agentshroud_manager import (
     check_current_version,
     downgrade,
     list_available_versions,

@@ -6,7 +6,7 @@ import tempfile
 
 import pytest
 
-from gateway.tools.openclaw_manager import (
+from gateway.tools.agentshroud_manager import (
     check_current_version,
     downgrade,
     list_available_versions,
