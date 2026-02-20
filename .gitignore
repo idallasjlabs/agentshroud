@@ -396,3 +396,4 @@ core
 core.*
 .venv311/
 .zshrc
+.venv-marvin/
