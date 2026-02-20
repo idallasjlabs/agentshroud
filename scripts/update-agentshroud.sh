@@ -1,19 +1,18 @@
 #!/bin/bash
-# Update AgentShroud to latest from main branch
+# Update OpenClaw to latest npm version
 # This script:
-# 1. Backs up current volumes
-# 2. Pulls latest code
-# 3. Rebuilds containers
-# 4. Restores config
-# 5. Runs system test
+# 1. Backs up current config
+# 2. Rebuilds openclaw container with latest npm version
+# 3. Restores config
+# 4. Tests openclaw startup
 
 set -euo pipefail
 
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 REPO_ROOT="$(cd "$SCRIPT_DIR/.." && pwd)"
-BACKUP_DIR="$REPO_ROOT/backup-$(date +%Y%m%d-%H%M%S)"
+BACKUP_DIR="$REPO_ROOT/backup-openclaw-$(date +%Y%m%d-%H%M%S)"
 
-echo "=== AgentShroud Update Script ==="
+echo "=== OpenClaw Update Script ==="
 echo "Repository: $REPO_ROOT"
 echo "Backup directory: $BACKUP_DIR"
 echo
@@ -24,98 +23,50 @@ mkdir -p "$BACKUP_DIR"
 echo "✓ Created: $BACKUP_DIR"
 echo
 
-# 2. Export current volumes
-echo "2. Backing up volumes..."
+# 2. Export openclaw config volume
+echo "2. Backing up OpenClaw config..."
 docker run --rm \
   -v docker_openclaw-config:/data \
   -v "$BACKUP_DIR":/backup \
   alpine tar czf /backup/openclaw-config.tar.gz -C /data .
-echo "  ✓ openclaw-config"
-
-docker run --rm \
-  -v docker_gateway-data:/data \
-  -v "$BACKUP_DIR":/backup \
-  alpine tar czf /backup/gateway-data.tar.gz -C /data .
-echo "  ✓ gateway-data"
-
-docker run --rm \
-  -v docker_openclaw-workspace:/data \
-  -v "$BACKUP_DIR":/backup \
-  alpine tar czf /backup/openclaw-workspace.tar.gz -C /data .
-echo "  ✓ openclaw-workspace"
-
-docker run --rm \
-  -v docker_openclaw-ssh:/data \
-  -v "$BACKUP_DIR":/backup \
-  alpine tar czf /backup/openclaw-ssh.tar.gz -C /data .
-echo "  ✓ openclaw-ssh"
-
-echo "✓ Volumes backed up to $BACKUP_DIR"
+echo "✓ Config backed up to $BACKUP_DIR"
 echo
 
-# 3. Pull latest code
-echo "3. Pulling latest code from main..."
-cd "$REPO_ROOT"
-git fetch origin main
-git checkout main
-git pull origin main
-echo "✓ Code updated to latest main"
+# 3. Stop openclaw container
+echo "3. Stopping openclaw container..."
+docker compose -f "$REPO_ROOT/docker/docker-compose.yml" stop openclaw
+docker compose -f "$REPO_ROOT/docker/docker-compose.yml" rm -f openclaw
+echo "✓ Container stopped and removed"
 echo
 
-# 4. Stop containers
-echo "4. Stopping containers..."
-docker compose -f docker/docker-compose.yml down
-echo "✓ Containers stopped"
-echo
-
-# 5. Restore volumes
-echo "5. Restoring volumes..."
+# 4. Restore config volume
+echo "4. Restoring config..."
 docker run --rm \
   -v docker_openclaw-config:/data \
   -v "$BACKUP_DIR":/backup \
   alpine sh -c "rm -rf /data/* && tar xzf /backup/openclaw-config.tar.gz -C /data"
-echo "  ✓ openclaw-config"
-
-docker run --rm \
-  -v docker_gateway-data:/data \
-  -v "$BACKUP_DIR":/backup \
-  alpine sh -c "rm -rf /data/* && tar xzf /backup/gateway-data.tar.gz -C /data"
-echo "  ✓ gateway-data"
-
-docker run --rm \
-  -v docker_openclaw-workspace:/data \
-  -v "$BACKUP_DIR":/backup \
-  alpine sh -c "rm -rf /data/* && tar xzf /backup/openclaw-workspace.tar.gz -C /data"
-echo "  ✓ openclaw-workspace"
-
-docker run --rm \
-  -v docker_openclaw-ssh:/data \
-  -v "$BACKUP_DIR":/backup \
-  alpine sh -c "rm -rf /data/* && tar xzf /backup/openclaw-ssh.tar.gz -C /data"
-echo "  ✓ openclaw-ssh"
-
-echo "✓ Volumes restored"
+echo "✓ Config restored"
 echo
 
-# 6. Rebuild and start containers
-echo "6. Rebuilding and starting containers..."
-docker compose -f docker/docker-compose.yml up -d --build
-echo "✓ Containers rebuilt and started"
+# 5. Rebuild and start openclaw with latest npm version
+echo "5. Rebuilding openclaw container with latest version..."
+echo "   (This will pull latest openclaw@latest from npm)"
+docker compose -f "$REPO_ROOT/docker/docker-compose.yml" up -d --build openclaw
+echo "✓ Container rebuilt and started"
 echo
 
-# 7. Wait for services to be healthy
-echo "7. Waiting for services to become healthy (60s)..."
+# 6. Wait for service to be healthy
+echo "6. Waiting for openclaw to become healthy (60s)..."
 sleep 60
 echo
 
-# 8. Run system test
-echo "8. Running system test..."
-if [ -f "$REPO_ROOT/test-system.sh" ]; then
-  bash "$REPO_ROOT/test-system.sh"
-else
-  echo "⚠ test-system.sh not found, skipping system test"
-  docker compose -f docker/docker-compose.yml ps
-fi
+# 7. Check status and logs
+echo "7. Checking openclaw status..."
+docker compose -f "$REPO_ROOT/docker/docker-compose.yml" ps openclaw
+echo
+
+echo "8. Recent logs:"
+docker compose -f "$REPO_ROOT/docker/docker-compose.yml" logs openclaw --tail=15
 echo
 
 echo "=== Update Complete ==="
