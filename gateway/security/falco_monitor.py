@@ -27,7 +27,7 @@ PRIORITY_MAP = {
 }
 
 # AgentShroud-specific rule prefixes
-AGENTSHROUD_RULES = [
+SECURECLAW_RULES = [
     "AgentShroud",
     "OpenClaw",
     "Container Shell",
@@ -42,14 +42,14 @@ AGENTSHROUD_RULES = [
 def read_alerts(
     alert_dir: Path = DEFAULT_ALERT_DIR,
     since: datetime | None = None,
-    secureclaw_only: bool = False,
+    agentshroud_only: bool = False,
 ) -> list[dict[str, Any]]:
     """Read Falco alerts from the alert directory.
 
     Args:
         alert_dir: Directory containing Falco alert files.
         since: Only return alerts after this timestamp.
-        secureclaw_only: Filter to AgentShroud-specific rules only.
+        agentshroud_only: Filter to AgentShroud-specific rules only.
 
     Returns:
         List of parsed alert dicts.
@@ -82,8 +82,8 @@ def read_alerts(
         alerts = [a for a in alerts if a.get("timestamp", "") >= since_str]
 
     # Filter AgentShroud rules
-    if secureclaw_only:
-        alerts = [a for a in alerts if is_secureclaw_rule(a.get("rule", ""))]
+    if agentshroud_only:
+        alerts = [a for a in alerts if is_agentshroud_rule(a.get("rule", ""))]
 
     return alerts
 
@@ -118,7 +118,7 @@ def parse_alert(raw: dict[str, Any]) -> dict[str, Any] | None:
     }
 
 
-def is_secureclaw_rule(rule_name: str) -> bool:
+def is_agentshroud_rule(rule_name: str) -> bool:
     """Check if a rule is AgentShroud-specific.
 
     Args:
@@ -127,7 +127,7 @@ def is_secureclaw_rule(rule_name: str) -> bool:
     Returns:
         True if rule matches AgentShroud patterns.
     """
-    return any(rule_name.startswith(prefix) for prefix in AGENTSHROUD_RULES)
+    return any(rule_name.startswith(prefix) for prefix in SECURECLAW_RULES)
 
 
 def categorize_alerts(alerts: list[dict[str, Any]]) -> dict[str, list[dict[str, Any]]]:
@@ -193,6 +193,6 @@ def generate_summary(alerts: list[dict[str, Any]]) -> dict[str, Any]:
         "medium": len(categories["MEDIUM"]),
         "low": len(categories["LOW"]),
         "top_rules": [{"rule": r, "count": c} for r, c in top_rules],
-        "secureclaw_alerts": len([a for a in alerts if is_secureclaw_rule(a.get("rule", ""))]),
+        "agentshroud_alerts": len([a for a in alerts if is_agentshroud_rule(a.get("rule", ""))]),
         "timestamp": datetime.now(timezone.utc).isoformat(),
     }

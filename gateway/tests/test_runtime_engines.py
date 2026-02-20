@@ -410,9 +410,9 @@ class TestRuntimeConfig:
     def test_from_env_set(self):
         from gateway.runtime.config import RuntimeConfig
         with patch.dict(os.environ, {
-            "AGENTSHROUD_RUNTIME": "podman",
-            "AGENTSHROUD_ROOTLESS": "true",
-            "AGENTSHROUD_COMPOSE_FILE": "custom.yml",
+            "SECURECLAW_RUNTIME": "podman",
+            "SECURECLAW_ROOTLESS": "true",
+            "SECURECLAW_COMPOSE_FILE": "custom.yml",
         }):
             config = RuntimeConfig.from_env()
             assert config.runtime == "podman"
@@ -684,7 +684,7 @@ class TestWebAPI:
             assert "latest" in data
 
     @patch("subprocess.run")
-    def test_check_secureclaw_updates(self, mock_run, client):
+    def test_check_agentshroud_updates(self, mock_run, client):
         mock_run.return_value = MagicMock(stdout="abc1234\n", returncode=0)
         resp = client.get("/api/updates/agentshroud")
         assert resp.status_code == 200
