@@ -49,7 +49,7 @@ class GitGuard:
         """
         self.mode = mode
         self.findings: List[SecurityFinding] = []
-        self.quarantine_dir = Path(tempfile.gettempdir()) / "secureclaw_quarantine"
+        self.quarantine_dir = Path(tempfile.gettempdir()) / "agentshroud_quarantine"
         self.quarantine_dir.mkdir(exist_ok=True)
         
         # Patterns for detecting malicious content

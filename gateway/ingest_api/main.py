@@ -16,7 +16,6 @@ from typing import Annotated
 import hmac
 
 from fastapi import Depends, FastAPI, HTTPException, Query, Request, WebSocket, status
-from fastapi.staticfiles import StaticFiles
 from fastapi.responses import JSONResponse, HTMLResponse
 from starlette.responses import RedirectResponse
 from pathlib import Path
@@ -34,7 +33,7 @@ from .models import (
     LedgerEntry,
     LedgerQueryResponse,
     StatusResponse,
-
+)
 from .router import ForwardError, MultiAgentRouter
 from .sanitizer import PIISanitizer
 from .event_bus import EventBus, make_event
@@ -43,8 +42,8 @@ logging.basicConfig(
     level=logging.INFO,
     format="%(asctime)s | %(levelname)s | %(name)s | %(message)s",
     datefmt="%Y-%m-%dT%H:%M:%S%z",
-
-logger = logging.getLogger("agentshroud.gateway.main"
+)
+logger = logging.getLogger("agentshroud.gateway.main")
 
 
 # === Application State ===
@@ -61,7 +60,7 @@ class AppState:
     event_bus: EventBus
 
 
-app_state = AppState(
+app_state = AppState()
 
 
 # === Lifespan Management ===
@@ -72,83 +71,83 @@ async def lifespan(app: FastAPI):
     """FastAPI lifespan - startup and shutdown"""
 
     # === STARTUP ===
-    logger.info("=" * 80
-    logger.info("AgentShroud Gateway starting up..."
+    logger.info("=" * 80)
+    logger.info("AgentShroud Gateway starting up...")
 
     # Load configuration
     try:
-        app_state.config = load_config(
-        logger.info("Configuration loaded successfully"
+        app_state.config = load_config()
+        logger.info("Configuration loaded successfully")
     except Exception as e:
-        logger.critical(f"Failed to load configuration: {e}"
+        logger.critical(f"Failed to load configuration: {e}")
         raise
 
     # Set log level from config
-    logging.getLogger().setLevel(app_state.config.log_level
-    logger.info(f"CORS configured with origins: {app_state.config.cors_origins}"
+    logging.getLogger().setLevel(app_state.config.log_level)
+    logger.info(f"CORS configured with origins: {app_state.config.cors_origins}")
 
     # Initialize PII sanitizer
     try:
-        app_state.sanitizer = PIISanitizer(app_state.config.pii
-        logger.info(f"PII sanitizer initialized (mode: {app_state.sanitizer.get_mode()})"
+        app_state.sanitizer = PIISanitizer(app_state.config.pii)
+        logger.info(f"PII sanitizer initialized (mode: {app_state.sanitizer.get_mode()})")
     except Exception as e:
-        logger.critical(f"Failed to initialize PII sanitizer: {e}"
+        logger.critical(f"Failed to initialize PII sanitizer: {e}")
         raise
 
     # Initialize data ledger
     try:
-        app_state.ledger = DataLedger(app_state.config.ledger
-        await app_state.ledger.initialize(
-        logger.info("Data ledger initialized"
+        app_state.ledger = DataLedger(app_state.config.ledger)
+        await app_state.ledger.initialize()
+        logger.info("Data ledger initialized")
     except Exception as e:
-        logger.critical(f"Failed to initialize data ledger: {e}"
+        logger.critical(f"Failed to initialize data ledger: {e}")
         raise
 
     # Initialize router
     try:
-        app_state.router = MultiAgentRouter(app_state.config.router
-        logger.info("Multi-agent router initialized"
+        app_state.router = MultiAgentRouter(app_state.config.router)
+        logger.info("Multi-agent router initialized")
     except Exception as e:
-        logger.critical(f"Failed to initialize router: {e}"
+        logger.critical(f"Failed to initialize router: {e}")
         raise
 
     # Initialize approval queue
     try:
-        app_state.approval_queue = ApprovalQueue(app_state.config.approval_queue
-        logger.info("Approval queue initialized"
+        app_state.approval_queue = ApprovalQueue(app_state.config.approval_queue)
+        logger.info("Approval queue initialized")
     except Exception as e:
-        logger.critical(f"Failed to initialize approval queue: {e}"
+        logger.critical(f"Failed to initialize approval queue: {e}")
         raise
 
     # Initialize SSH proxy
     from ..ssh_proxy.proxy import SSHProxy
     if app_state.config.ssh.enabled:
-        app_state.ssh_proxy = SSHProxy(app_state.config.ssh
-        logger.info('SSH proxy initialized'
+        app_state.ssh_proxy = SSHProxy(app_state.config.ssh)
+        logger.info('SSH proxy initialized')
     else:
         app_state.ssh_proxy = None
 
     # Initialize event bus
-    app_state.event_bus = EventBus(
-    logger.info("Event bus initialized"
+    app_state.event_bus = EventBus()
+    logger.info("Event bus initialized")
 
     # Record start time
-    app_state.start_time = time.time(
+    app_state.start_time = time.time()
 
     logger.info(
         f"AgentShroud Gateway ready at {app_state.config.bind}:{app_state.config.port}"
-    
-    logger.info("=" * 80
+    )
+    logger.info("=" * 80)
 
     yield
 
     # === SHUTDOWN ===
-    logger.info("AgentShroud Gateway shutting down..."
+    logger.info("AgentShroud Gateway shutting down...")
 
     # Close ledger
-    await app_state.ledger.close(
+    await app_state.ledger.close()
 
-    logger.info("Shutdown complete"
+    logger.info("Shutdown complete")
 
 
 # === Application ===
@@ -158,14 +157,7 @@ app = FastAPI(
     description="Ingest API for the AgentShroud proxy layer framework",
     version="0.1.0",
     lifespan=lifespan,
-
-
-# === Static Files ===
-# Mount web interface at root
-web_path = Path(__file__).parent.parent.parent / "web"
-if web_path.exists():
-    app.mount("/", StaticFiles(directory=str(web_path), html=True), name="static"
-
+)
 
 
 # === CORS Middleware ===
@@ -173,12 +165,12 @@ if web_path.exists():
 # This allows agentshroud.yaml overrides to take effect
 
 
-@app.middleware("http"
+@app.middleware("http")
 async def cors_middleware(request: Request, call_next):
     """CORS middleware that uses config from app_state"""
     # Handle preflight requests
     if request.method == "OPTIONS":
-        origin = request.headers.get("origin"
+        origin = request.headers.get("origin")
         if hasattr(app_state, "config") and origin in app_state.config.cors_origins:
             return JSONResponse(
                 content={},
@@ -188,14 +180,14 @@ async def cors_middleware(request: Request, call_next):
                     "Access-Control-Allow-Methods": "GET, POST, OPTIONS",
                     "Access-Control-Allow-Headers": "Content-Type, Authorization",
                 },
-            
-        return JSONResponse(content={}, status_code=403
+            )
+        return JSONResponse(content={}, status_code=403)
 
     # Process request
-    response = await call_next(request
+    response = await call_next(request)
 
     # Add CORS headers to response
-    origin = request.headers.get("origin"
+    origin = request.headers.get("origin")
     if hasattr(app_state, "config") and origin in app_state.config.cors_origins:
         response.headers["Access-Control-Allow-Origin"] = origin
         response.headers["Access-Control-Allow-Credentials"] = "true"
@@ -206,21 +198,21 @@ async def cors_middleware(request: Request, call_next):
 # === Request Logging Middleware ===
 
 
-@app.middleware("http"
+@app.middleware("http")
 async def log_requests(request: Request, call_next):
     """Log all incoming requests
 
     Never logs request bodies (may contain PII).
     """
-    start_time = time.time(
+    start_time = time.time()
 
-    response = await call_next(request
+    response = await call_next(request)
 
     duration = time.time() - start_time
     logger.info(
         f"{request.method} {request.url.path} -> {response.status_code} "
         f"({duration:.3f}s)"
-    
+    )
 
     return response
 
@@ -228,19 +220,19 @@ async def log_requests(request: Request, call_next):
 # === Global Exception Handler ===
 
 
-@app.exception_handler(Exception
+@app.exception_handler(Exception)
 async def global_exception_handler(request: Request, exc: Exception):
     """Catch-all error handler
 
     Never leaks stack traces or internal details to client.
     Logs full traceback at ERROR level.
     """
-    logger.error(f"Unhandled exception: {exc}", exc_info=True
+    logger.error(f"Unhandled exception: {exc}", exc_info=True)
 
     return JSONResponse(
         status_code=status.HTTP_500_INTERNAL_SERVER_ERROR,
         content={"detail": "Internal server error"},
-    
+    )
 
 
 # === Dependency: Authentication ===
@@ -248,8 +240,8 @@ async def global_exception_handler(request: Request, exc: Exception):
 
 async def auth_dep(request: Request) -> None:
     """Authentication dependency for protected endpoints"""
-    dep = create_auth_dependency(app_state.config
-    await dep(request
+    dep = create_auth_dependency(app_state.config)
+    await dep(request)
 
 
 AuthRequired = Annotated[None, Depends(auth_dep)]
@@ -258,7 +250,7 @@ AuthRequired = Annotated[None, Depends(auth_dep)]
 # === Endpoints ===
 
 
-@app.get("/", response_class=HTMLResponse
+@app.get("/", response_class=HTMLResponse)
 async def web_chat():
     """Web chat interface
 
@@ -267,20 +259,20 @@ async def web_chat():
     """
     chat_html_path = Path(__file__).parent / "static" / "chat.html"
     if chat_html_path.exists():
-        return chat_html_path.read_text(
+        return chat_html_path.read_text()
     else:
         return "<h1>Chat interface not found</h1>"
 
 
-@app.get("/status", response_model=StatusResponse
+@app.get("/status", response_model=StatusResponse)
 async def health_check():
     """Health check endpoint
 
     No authentication required.
     """
     uptime = time.time() - app_state.start_time
-    stats = await app_state.ledger.get_stats(
-    pending = await app_state.approval_queue.get_pending(
+    stats = await app_state.ledger.get_stats()
+    pending = await app_state.approval_queue.get_pending()
 
     return StatusResponse(
         status="healthy",
@@ -290,10 +282,10 @@ async def health_check():
         pending_approvals=len(pending),
         pii_engine=app_state.sanitizer.get_mode(),
         config_loaded=True,
-    
+    )
 
 
-@app.post("/forward", response_model=ForwardResponse, status_code=status.HTTP_201_CREATED
+@app.post("/forward", response_model=ForwardResponse, status_code=status.HTTP_201_CREATED)
 async def forward_content(request: ForwardRequest, auth: AuthRequired):
     """Main ingest endpoint
 
@@ -305,31 +297,31 @@ async def forward_content(request: ForwardRequest, auth: AuthRequired):
     logger.info(
         f"Ingest request: source={request.source}, "
         f"type={request.content_type}, size={len(request.content)}"
-    
+    )
 
     # Step 1: Sanitize PII
     try:
-        sanitization_result = await app_state.sanitizer.sanitize(request.content
+        sanitization_result = await app_state.sanitizer.sanitize(request.content)
     except Exception as e:
-        logger.error(f"PII sanitization failed: {e}"
+        logger.error(f"PII sanitization failed: {e}")
         # CRITICAL: Fail closed - never forward unsanitized content
         raise HTTPException(
             status_code=status.HTTP_500_INTERNAL_SERVER_ERROR,
             detail="Content sanitization failed. Request blocked for safety.",
-        
+        )
 
     sanitized_content = sanitization_result.sanitized_content
     sanitized = len(sanitization_result.redactions) > 0
 
     # Step 2: Resolve routing target
     try:
-        target = await app_state.router.resolve_target(request
+        target = await app_state.router.resolve_target(request)
     except Exception as e:
-        logger.error(f"Routing failed: {e}"
+        logger.error(f"Routing failed: {e}")
         raise HTTPException(
             status_code=status.HTTP_500_INTERNAL_SERVER_ERROR,
             detail="Failed to resolve routing target",
-        
+        )
 
     # Step 3: Forward to agent
     forwarded_to = target.name
@@ -344,13 +336,13 @@ async def forward_content(request: ForwardRequest, auth: AuthRequired):
                 "content_type": request.content_type,
                 **request.metadata,
             },
-        
-        logger.info(f"Content forwarded to {target.name}"
-        logger.info(f"DEBUG: agent_response = {agent_response}"
+        )
+        logger.info(f"Content forwarded to {target.name}")
+        logger.info(f"DEBUG: agent_response = {agent_response}")
 
     except ForwardError as e:
-        # Agent offline - log but continue (graceful degradation
-        logger.warning(f"Forward failed: {e}. Content logged but not delivered."
+        # Agent offline - log but continue (graceful degradation)
+        logger.warning(f"Forward failed: {e}. Content logged but not delivered.")
         forwarded_to = f"{target.name} (offline)"
 
     # Step 4: Record in ledger
@@ -365,28 +357,28 @@ async def forward_content(request: ForwardRequest, auth: AuthRequired):
             forwarded_to=forwarded_to,
             content_type=request.content_type,
             metadata=request.metadata,
-        
+        )
     except Exception as e:
-        logger.error(f"Ledger recording failed: {e}"
+        logger.error(f"Ledger recording failed: {e}")
         # Non-critical - content was already forwarded
         # But we should still notify
         raise HTTPException(
             status_code=status.HTTP_500_INTERNAL_SERVER_ERROR,
             detail="Failed to record in ledger",
-        
+        )
 
     # Emit forward event
     await app_state.event_bus.emit(make_event(
         "forward", f"Content forwarded from {request.source} to {forwarded_to}",
         {"source": request.source, "content_type": request.content_type, "forwarded_to": forwarded_to},
         "warning" if sanitized else "info"
-    )
+    ))
     if sanitized:
         await app_state.event_bus.emit(make_event(
             "pii_detected", f"{len(sanitization_result.redactions)} PII entities redacted",
             {"types": sanitization_result.entity_types_found, "count": len(sanitization_result.redactions)},
             "warning"
-        )
+        ))
 
     # Step 5: Return response
     response_data = {
@@ -405,13 +397,13 @@ async def forward_content(request: ForwardRequest, auth: AuthRequired):
         blocked_response, was_blocked = await app_state.sanitizer.block_credentials(
             content=agent_response,
             source=request.source
-        
+        )
 
         if was_blocked:
             logger.warning(
                 f"Blocked credential display from source={request.source}, "
                 f"ledger_id={ledger_entry.id}"
-            
+            )
             # Log the blocking event in ledger
             await app_state.ledger.record(
                 source="gateway_security",
@@ -423,14 +415,14 @@ async def forward_content(request: ForwardRequest, auth: AuthRequired):
                 forwarded_to="blocked",
                 content_type="security_event",
                 metadata={"original_ledger_id": ledger_entry.id},
-            
+            )
 
         response_data["agent_response"] = blocked_response
 
     return response_data
 
 
-@app.get("/ledger", response_model=LedgerQueryResponse
+@app.get("/ledger", response_model=LedgerQueryResponse)
 async def query_ledger(
     auth: AuthRequired,
     page: int = Query(1, ge=1),
@@ -452,61 +444,61 @@ async def query_ledger(
         since=since,
         until=until,
         forwarded_to=forwarded_to,
-    
+    )
 
 
-@app.get("/ledger/{entry_id}", response_model=LedgerEntry
+@app.get("/ledger/{entry_id}", response_model=LedgerEntry)
 async def get_ledger_entry(entry_id: str, auth: AuthRequired):
     """Get a single ledger entry by ID
 
     Authentication required.
     """
-    entry = await app_state.ledger.get_entry(entry_id
+    entry = await app_state.ledger.get_entry(entry_id)
     if not entry:
-        raise HTTPException(status_code=404, detail="Ledger entry not found"
+        raise HTTPException(status_code=404, detail="Ledger entry not found")
     return entry
 
 
-@app.delete("/ledger/{entry_id}"
+@app.delete("/ledger/{entry_id}")
 async def delete_ledger_entry(entry_id: str, auth: AuthRequired):
     """'Forget this' - permanently delete a ledger entry
 
     Implements right to erasure.
     Authentication required.
     """
-    deleted = await app_state.ledger.delete_entry(entry_id
+    deleted = await app_state.ledger.delete_entry(entry_id)
     if not deleted:
-        raise HTTPException(status_code=404, detail="Ledger entry not found"
+        raise HTTPException(status_code=404, detail="Ledger entry not found")
 
     return {"deleted": True, "id": entry_id}
 
 
-@app.get("/agents"
+@app.get("/agents")
 async def list_agents(auth: AuthRequired):
     """List all configured agent targets with health status
 
     Authentication required.
     """
-    targets = app_state.router.list_targets(
+    targets = app_state.router.list_targets()
     return {"agents": [t.model_dump() for t in targets]}
 
 
-@app.post("/approve", response_model=ApprovalQueueItem
+@app.post("/approve", response_model=ApprovalQueueItem)
 async def submit_approval_request(request: ApprovalRequest, auth: AuthRequired):
     """Submit an action for human approval
 
     Called by agents when attempting sensitive actions.
     Authentication required.
     """
-    item = await app_state.approval_queue.submit(request
+    item = await app_state.approval_queue.submit(request)
     await app_state.event_bus.emit(make_event(
         "approval_submitted", f"Approval requested: {request.action_type} - {request.description}",
         {"request_id": item.request_id, "action_type": request.action_type},
-    )
+    ))
     return item
 
 
-@app.post("/approve/{request_id}/decide", response_model=ApprovalQueueItem
+@app.post("/approve/{request_id}/decide", response_model=ApprovalQueueItem)
 async def decide_approval(
     request_id: str, decision: ApprovalDecision, auth: AuthRequired
 ):
@@ -517,30 +509,30 @@ async def decide_approval(
     try:
         item = await app_state.approval_queue.decide(
             request_id=request_id, approved=decision.approved, reason=decision.reason
-        
+        )
         await app_state.event_bus.emit(make_event(
             "approval_decided", f"Approval {'approved' if decision.approved else 'rejected'}: {request_id}",
             {"request_id": request_id, "approved": decision.approved},
-        )
+        ))
         return item
 
     except KeyError:
-        raise HTTPException(status_code=404, detail="Approval request not found"
+        raise HTTPException(status_code=404, detail="Approval request not found")
 
     except ValueError as e:
-        raise HTTPException(status_code=409, detail=str(e)
+        raise HTTPException(status_code=409, detail=str(e))
 
 
-@app.get("/approve/pending", response_model=list[ApprovalQueueItem]
+@app.get("/approve/pending", response_model=list[ApprovalQueueItem])
 async def list_pending_approvals(auth: AuthRequired):
     """List all pending approval requests
 
     Authentication required.
     """
-    return await app_state.approval_queue.get_pending(
+    return await app_state.approval_queue.get_pending()
 
 
-@app.websocket("/ws/approvals"
+@app.websocket("/ws/approvals")
 async def approval_websocket(websocket: WebSocket, token: str | None = Query(None)):
     """WebSocket endpoint for real-time approval notifications
 
@@ -551,31 +543,31 @@ async def approval_websocket(websocket: WebSocket, token: str | None = Query(Non
     4. Client can send decisions: {"type": "decide", "request_id": "...", "approved": true}
     """
     if not token or not hmac.compare_digest(token, app_state.config.auth_token):
-        await websocket.close(code=4003, reason="Authentication failed"
+        await websocket.close(code=4003, reason="Authentication failed")
         await app_state.event_bus.emit(make_event(
             "auth_failed", "WebSocket authentication failed",
             {}, "warning"
-        )
+        ))
         return
 
-    await app_state.approval_queue.connect(websocket
+    await app_state.approval_queue.connect(websocket)
 
     try:
-        await websocket.send_json({"type": "authenticated"}
+        await websocket.send_json({"type": "authenticated"})
 
         # Keep connection open and handle messages
         while True:
-            message = await websocket.receive_json(
+            message = await websocket.receive_json()
 
             # Handle decision messages
             if message.get("type") == "decide":
-                request_id = message.get("request_id"
-                approved = message.get("approved"
+                request_id = message.get("request_id")
+                approved = message.get("approved")
 
                 if not request_id or approved is None:
                     await websocket.send_json(
                         {"type": "error", "message": "Invalid decision message"}
-                    
+                    )
                     continue
 
                 try:
@@ -583,7 +575,7 @@ async def approval_websocket(websocket: WebSocket, token: str | None = Query(Non
                         request_id=request_id,
                         approved=approved,
                         reason=message.get("reason", ""),
-                    
+                    )
 
                     await websocket.send_json(
                         {
@@ -593,18 +585,18 @@ async def approval_websocket(websocket: WebSocket, token: str | None = Query(Non
                                 "status": item.status,
                             },
                         }
-                    
+                    )
 
                 except (KeyError, ValueError) as e:
                     await websocket.send_json(
                         {"type": "error", "message": str(e)}
-                    
+                    )
 
     except Exception as e:
-        logger.warning(f"WebSocket error: {e}"
+        logger.warning(f"WebSocket error: {e}")
 
     finally:
-        await app_state.approval_queue.disconnect(websocket
+        await app_state.approval_queue.disconnect(websocket)
 
 
 # === Entry Point for Testing ===
@@ -612,16 +604,16 @@ async def approval_websocket(websocket: WebSocket, token: str | None = Query(Non
 if __name__ == "__main__":
     import uvicorn
 
-    uvicorn.run(app, host="127.0.0.1", port=8080
+    uvicorn.run(app, host="127.0.0.1", port=8080)
 
 
 
 # === Dashboard Endpoints ===
 
 
-@app.get("/dashboard"
+@app.get("/dashboard")
 async def serve_dashboard(request: Request, token: str | None = Query(None)):
-    """Serve the dashboard HTML (requires auth via query param or cookie
+    """Serve the dashboard HTML (requires auth via query param or cookie)
 
     On first auth via query param, sets an httpOnly cookie and redirects
     to a clean URL (token removed from query string / browser history).
@@ -629,14 +621,14 @@ async def serve_dashboard(request: Request, token: str | None = Query(None)):
     from starlette.responses import RedirectResponse
 
     # Check cookie first
-    cookie_token = request.cookies.get("dashboard_token"
+    cookie_token = request.cookies.get("dashboard_token")
     authenticated = False
 
     if cookie_token and hmac.compare_digest(cookie_token, app_state.config.auth_token):
         authenticated = True
     elif token and hmac.compare_digest(token, app_state.config.auth_token):
         # Valid token in query param - set cookie and redirect to clean URL
-        redirect = RedirectResponse(url="/dashboard", status_code=302
+        redirect = RedirectResponse(url="/dashboard", status_code=302)
         is_secure = request.url.scheme == "https" or request.headers.get("x-forwarded-proto") == "https"
         redirect.set_cookie(
             key="dashboard_token",
@@ -645,31 +637,31 @@ async def serve_dashboard(request: Request, token: str | None = Query(None)):
             samesite="strict",
             secure=is_secure,
             max_age=86400,  # 24 hours
-        
+        )
         return redirect
 
     if not authenticated:
-        return JSONResponse(status_code=403, content={"detail": "Forbidden"}
+        return JSONResponse(status_code=403, content={"detail": "Forbidden"})
     dashboard_path = Path(__file__).parent.parent / "dashboard" / "index.html"
     if dashboard_path.exists():
-        html = dashboard_path.read_text(
-        response = HTMLResponse(html
+        html = dashboard_path.read_text()
+        response = HTMLResponse(html)
         response.headers["Content-Security-Policy"] = (
             "default-src 'none'; script-src 'unsafe-inline'; "
             "style-src 'unsafe-inline'; connect-src 'self'; "
             "img-src 'self'; font-src 'self'"
-        
+        )
         return response
-    return HTMLResponse("<h1>Dashboard not found</h1>", status_code=404
+    return HTMLResponse("<h1>Dashboard not found</h1>", status_code=404)
 
 
-@app.get("/dashboard/stats"
+@app.get("/dashboard/stats")
 async def dashboard_stats(auth: AuthRequired):
     """JSON stats for dashboard"""
     uptime = time.time() - app_state.start_time
-    ledger_stats = await app_state.ledger.get_stats(
-    pending = await app_state.approval_queue.get_pending(
-    bus_stats = await app_state.event_bus.get_stats(
+    ledger_stats = await app_state.ledger.get_stats()
+    pending = await app_state.approval_queue.get_pending()
+    bus_stats = await app_state.event_bus.get_stats()
     pending_items = [
         {"request_id": p.request_id, "action_type": p.action_type,
          "description": p.description, "submitted_at": p.submitted_at}
@@ -684,57 +676,57 @@ async def dashboard_stats(auth: AuthRequired):
     }
 
 
-@app.get("/dashboard/ws-token"
+@app.get("/dashboard/ws-token")
 async def dashboard_ws_token(request: Request):
     """Return a WS auth token for cookie-authenticated dashboard sessions.
 
     The dashboard JS calls this to get the token for WebSocket connections,
     avoiding direct token injection into HTML (XSS mitigation).
     """
-    cookie_token = request.cookies.get("dashboard_token"
+    cookie_token = request.cookies.get("dashboard_token")
     if not cookie_token or not hmac.compare_digest(cookie_token, app_state.config.auth_token):
-        return JSONResponse(status_code=403, content={"detail": "Forbidden"}
-    return JSONResponse(content={"token": app_state.config.auth_token}
+        return JSONResponse(status_code=403, content={"detail": "Forbidden"})
+    return JSONResponse(content={"token": app_state.config.auth_token})
 
 
-@app.websocket("/ws/activity"
+@app.websocket("/ws/activity")
 async def activity_websocket(websocket: WebSocket, token: str | None = Query(None)):
     """WebSocket for real-time activity feed"""
     if not token or not hmac.compare_digest(token, app_state.config.auth_token):
-        await websocket.close(code=4003, reason="Authentication failed"
+        await websocket.close(code=4003, reason="Authentication failed")
         await app_state.event_bus.emit(make_event(
             "auth_failed", "Activity WebSocket authentication failed",
             {}, "warning"
-        )
+        ))
         return
 
-    await websocket.accept(
+    await websocket.accept()
 
     try:
-        await websocket.send_json({"type": "authenticated"}
+        await websocket.send_json({"type": "authenticated"})
 
         # Subscribe to events
         import asyncio
-        queue: asyncio.Queue = asyncio.Queue(
+        queue: asyncio.Queue = asyncio.Queue()
 
         async def on_event(event):
-            await queue.put(event
+            await queue.put(event)
 
-        await app_state.event_bus.subscribe(on_event
+        await app_state.event_bus.subscribe(on_event)
 
         try:
             while True:
                 try:
-                    event = await asyncio.wait_for(queue.get(), timeout=30
-                    await websocket.send_json(event.to_dict()
+                    event = await asyncio.wait_for(queue.get(), timeout=30)
+                    await websocket.send_json(event.to_dict())
                 except asyncio.TimeoutError:
                     # Send ping to keep alive
-                    await websocket.send_json({"type": "ping"}
+                    await websocket.send_json({"type": "ping"})
         finally:
-            await app_state.event_bus.unsubscribe(on_event
+            await app_state.event_bus.unsubscribe(on_event)
 
     except Exception as e:
-        logger.warning(f"Activity WebSocket error: {e}"
+        logger.warning(f"Activity WebSocket error: {e}")
 
 
 # === SSH Endpoints ===
@@ -745,24 +737,24 @@ import hashlib
 from datetime import datetime, timezone
 
 
-@app.post("/ssh/exec"
+@app.post("/ssh/exec")
 async def ssh_exec(request: SSHExecRequest, auth: AuthRequired):
     """Execute SSH command with validation and approval"""
     if app_state.ssh_proxy is None:
-        raise HTTPException(status_code=503, detail="SSH proxy not configured"
+        raise HTTPException(status_code=503, detail="SSH proxy not configured")
 
     proxy: SSHProxy = app_state.ssh_proxy
 
     # Check host exists
     if request.host not in proxy.config.hosts:
-        raise HTTPException(status_code=404, detail=f"Unknown SSH host: {request.host}"
+        raise HTTPException(status_code=404, detail=f"Unknown SSH host: {request.host}")
 
     # Validate command
-    valid, denial_reason = proxy.validate_command(request.host, request.command
+    valid, denial_reason = proxy.validate_command(request.host, request.command)
     if not valid:
         # Audit denied command — sanitize PII before storing
-        sanitized = await app_state.sanitizer.sanitize(request.command
-        content_hash = hashlib.sha256(f"{request.command}:{request.host}".encode()).hexdigest(
+        sanitized = await app_state.sanitizer.sanitize(request.command)
+        content_hash = hashlib.sha256(f"{request.command}:{request.host}".encode()).hexdigest()
         await app_state.ledger.record(
             source="ssh",
             content=f"DENIED: {sanitized.sanitized_content}",
@@ -773,20 +765,20 @@ async def ssh_exec(request: SSHExecRequest, auth: AuthRequired):
             forwarded_to=request.host,
             content_type="ssh_command",
             metadata={"host": request.host, "denied_reason": denial_reason, "reason": request.reason},
-        
+        )
         await app_state.event_bus.emit(make_event(
             "ssh_denied", f"SSH denied on {request.host}: {denial_reason}",
             {"host": request.host, "reason": denial_reason},
             "critical" if "injection" in denial_reason.lower() else "warning"
-        )
-        raise HTTPException(status_code=403, detail=denial_reason
+        ))
+        raise HTTPException(status_code=403, detail=denial_reason)
 
     async def _execute_and_record(approved_by: str) -> SSHExecResponse:
         """Execute command and record to ledger with PII sanitization."""
-        result = await proxy.execute(request.host, request.command, request.timeout
+        result = await proxy.execute(request.host, request.command, request.timeout)
         # Sanitize command for ledger storage
-        sanitized = await app_state.sanitizer.sanitize(request.command
-        content_hash = hashlib.sha256(f"{request.command}:{request.host}".encode()).hexdigest(
+        sanitized = await app_state.sanitizer.sanitize(request.command)
+        content_hash = hashlib.sha256(f"{request.command}:{request.host}".encode()).hexdigest()
         entry = await app_state.ledger.record(
             source="ssh",
             content=sanitized.sanitized_content,
@@ -803,12 +795,12 @@ async def ssh_exec(request: SSHExecRequest, auth: AuthRequired):
                 "approved_by": approved_by,
                 "reason": request.reason,
             },
-        
+        )
         await app_state.event_bus.emit(make_event(
             "ssh_exec", f"SSH command on {request.host} (exit {result.exit_code})",
             {"host": request.host, "command": request.command[:80], "exit_code": result.exit_code, "duration": result.duration_seconds},
-        )
-        now = datetime.now(timezone.utc).isoformat().replace("+00:00", "Z"
+        ))
+        now = datetime.now(timezone.utc).isoformat().replace("+00:00", "Z")
         return SSHExecResponse(
             request_id=entry.id,
             host=request.host,
@@ -820,39 +812,39 @@ async def ssh_exec(request: SSHExecRequest, auth: AuthRequired):
             approved_by=approved_by,
             timestamp=now,
             audit_id=entry.id,
-        
+        )
 
     # Check auto-approval
     if proxy.is_auto_approved(request.host, request.command):
-        return await _execute_and_record("auto"
+        return await _execute_and_record("auto")
 
-    # If require_approval is false, execute directly (still validated above
+    # If require_approval is false, execute directly (still validated above)
     if not proxy.config.require_approval:
-        return await _execute_and_record("policy"
+        return await _execute_and_record("policy")
 
     # Requires approval — submit to queue and return 202
-    # Sanitize command/reason before storing in approval queue (PII leak prevention
+    # Sanitize command/reason before storing in approval queue (PII leak prevention)
     from .models import ApprovalRequest
-    sanitized_cmd = await app_state.sanitizer.sanitize(request.command
+    sanitized_cmd = await app_state.sanitizer.sanitize(request.command)
     sanitized_reason = ""
     if request.reason:
-        sanitized_reason_result = await app_state.sanitizer.sanitize(request.reason
+        sanitized_reason_result = await app_state.sanitizer.sanitize(request.reason)
         sanitized_reason = sanitized_reason_result.sanitized_content
     approval_req = ApprovalRequest(
         action_type="ssh_exec",
         description=f"SSH command on {request.host}: {sanitized_cmd.sanitized_content}",
         details={"host": request.host, "command": sanitized_cmd.sanitized_content, "timeout": request.timeout, "reason": sanitized_reason},
         agent_id="ssh-proxy",
-    
-    item = await app_state.approval_queue.submit(approval_req
+    )
+    item = await app_state.approval_queue.submit(approval_req)
     return JSONResponse(
         status_code=202,
         content={"request_id": item.request_id, "status": "pending_approval",
                  "message": f"Command requires approval: {request.command}"},
-    
+    )
 
 
-@app.get("/ssh/hosts"
+@app.get("/ssh/hosts")
 async def ssh_hosts(auth: AuthRequired):
     """List configured SSH hosts (names only)"""
     if app_state.ssh_proxy is None:
@@ -860,7 +852,7 @@ async def ssh_hosts(auth: AuthRequired):
     return {"hosts": list(app_state.ssh_proxy.config.hosts.keys())}
 
 
-@app.get("/ssh/history"
+@app.get("/ssh/history")
 async def ssh_history(
     auth: AuthRequired,
     page: int = Query(1, ge=1),
@@ -869,4 +861,4 @@ async def ssh_history(
     """Query SSH audit entries from ledger"""
     return await app_state.ledger.query(
         page=page, page_size=page_size, source="ssh",
-    
+    )
