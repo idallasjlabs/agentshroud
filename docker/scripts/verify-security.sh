@@ -40,7 +40,7 @@ check_warn() {
 # Check 1: Both containers running as non-root
 echo "[1/13] Checking non-root users..."
 GATEWAY_USER=$(docker inspect --format '{{.Config.User}}' agentshroud-gateway 2>/dev/null || echo "")
-OPENCLAW_USER=$(docker inspect --format '{{.Config.User}}' openclaw-bot 2>/dev/null || echo "")
+AGENTSHROUD_USER=$(docker inspect --format '{{.Config.User}}' agentshroud-bot 2>/dev/null || echo "")
 
 if [ "$GATEWAY_USER" != "" ] && [ "$GATEWAY_USER" != "0" ] && [ "$GATEWAY_USER" != "root" ]; then
     check_pass "Gateway running as non-root user: $GATEWAY_USER"
@@ -48,17 +48,17 @@ else
     check_fail "Gateway running as root or user not set"
 fi
 
-if [ "$OPENCLAW_USER" != "" ] && [ "$OPENCLAW_USER" != "0" ] && [ "$OPENCLAW_USER" != "root" ]; then
-    check_pass "OpenClaw running as non-root user: $OPENCLAW_USER"
+if [ "$AGENTSHROUD_USER" != "" ] && [ "$AGENTSHROUD_USER" != "0" ] && [ "$AGENTSHROUD_USER" != "root" ]; then
+    check_pass "AgentShroud running as non-root user: $AGENTSHROUD_USER"
 else
-    check_fail "OpenClaw running as root or user not set"
+    check_fail "AgentShroud running as root or user not set"
 fi
 
 # Check 2: Read-only root filesystem
 echo ""
 echo "[2/13] Checking read-only root filesystem..."
 GATEWAY_READONLY=$(docker inspect --format '{{.HostConfig.ReadonlyRootfs}}' agentshroud-gateway 2>/dev/null || echo "false")
-OPENCLAW_READONLY=$(docker inspect --format '{{.HostConfig.ReadonlyRootfs}}' openclaw-bot 2>/dev/null || echo "false")
+AGENTSHROUD_READONLY=$(docker inspect --format '{{.HostConfig.ReadonlyRootfs}}' agentshroud-bot 2>/dev/null || echo "false")
 
 if [ "$GATEWAY_READONLY" == "true" ]; then
     check_pass "Gateway has read-only root filesystem"
@@ -66,17 +66,17 @@ else
     check_fail "Gateway does not have read-only root filesystem"
 fi
 
-if [ "$OPENCLAW_READONLY" == "true" ]; then
-    check_pass "OpenClaw has read-only root filesystem"
+if [ "$AGENTSHROUD_READONLY" == "true" ]; then
+    check_pass "AgentShroud has read-only root filesystem"
 else
-    check_warn "OpenClaw does not have read-only root filesystem (expected during development)"
+    check_warn "AgentShroud does not have read-only root filesystem (expected during development)"
 fi
 
 # Check 3: All capabilities dropped
 echo ""
 echo "[3/13] Checking capabilities..."
 GATEWAY_CAPDROP=$(docker inspect --format '{{.HostConfig.CapDrop}}' agentshroud-gateway 2>/dev/null || echo "")
-OPENCLAW_CAPDROP=$(docker inspect --format '{{.HostConfig.CapDrop}}' openclaw-bot 2>/dev/null || echo "")
+AGENTSHROUD_CAPDROP=$(docker inspect --format '{{.HostConfig.CapDrop}}' agentshroud-bot 2>/dev/null || echo "")
 
 if echo "$GATEWAY_CAPDROP" | grep -q "ALL"; then
     check_pass "Gateway has dropped all capabilities"
@@ -84,28 +84,28 @@ else
     check_fail "Gateway has not dropped all capabilities: $GATEWAY_CAPDROP"
 fi
 
-if echo "$OPENCLAW_CAPDROP" | grep -q "ALL"; then
-    check_pass "OpenClaw has dropped all capabilities"
+if echo "$AGENTSHROUD_CAPDROP" | grep -q "ALL"; then
+    check_pass "AgentShroud has dropped all capabilities"
 else
-    check_fail "OpenClaw has not dropped all capabilities: $OPENCLAW_CAPDROP"
+    check_fail "AgentShroud has not dropped all capabilities: $AGENTSHROUD_CAPDROP"
 fi
 
 # Check 4: NET_RAW capability not added
 echo ""
 echo "[4/13] Checking NET_RAW capability..."
-OPENCLAW_CAPADD=$(docker inspect --format '{{.HostConfig.CapAdd}}' openclaw-bot 2>/dev/null || echo "")
+AGENTSHROUD_CAPADD=$(docker inspect --format '{{.HostConfig.CapAdd}}' agentshroud-bot 2>/dev/null || echo "")
 
-if ! echo "$OPENCLAW_CAPADD" | grep -q "NET_RAW"; then
-    check_pass "OpenClaw does not have NET_RAW capability"
+if ! echo "$AGENTSHROUD_CAPADD" | grep -q "NET_RAW"; then
+    check_pass "AgentShroud does not have NET_RAW capability"
 else
-    check_fail "OpenClaw has NET_RAW capability (should be removed)"
+    check_fail "AgentShroud has NET_RAW capability (should be removed)"
 fi
 
 # Check 5: no-new-privileges set
 echo ""
 echo "[5/13] Checking no-new-privileges..."
 GATEWAY_SECOPT=$(docker inspect --format '{{.HostConfig.SecurityOpt}}' agentshroud-gateway 2>/dev/null || echo "")
-OPENCLAW_SECOPT=$(docker inspect --format '{{.HostConfig.SecurityOpt}}' openclaw-bot 2>/dev/null || echo "")
+AGENTSHROUD_SECOPT=$(docker inspect --format '{{.HostConfig.SecurityOpt}}' agentshroud-bot 2>/dev/null || echo "")
 
 if echo "$GATEWAY_SECOPT" | grep -q "no-new-privileges:true"; then
     check_pass "Gateway has no-new-privileges enabled"
@@ -113,10 +113,10 @@ else
     check_fail "Gateway does not have no-new-privileges enabled"
 fi
 
-if echo "$OPENCLAW_SECOPT" | grep -q "no-new-privileges:true"; then
-    check_pass "OpenClaw has no-new-privileges enabled"
+if echo "$AGENTSHROUD_SECOPT" | grep -q "no-new-privileges:true"; then
+    check_pass "AgentShroud has no-new-privileges enabled"
 else
-    check_fail "OpenClaw does not have no-new-privileges enabled"
+    check_fail "AgentShroud does not have no-new-privileges enabled"
 fi
 
 # Check 6: Seccomp profiles active
@@ -128,17 +128,17 @@ else
     check_warn "Gateway does not have seccomp profile active (check if disabled for debugging)"
 fi
 
-if echo "$OPENCLAW_SECOPT" | grep -q "seccomp"; then
-    check_pass "OpenClaw has seccomp profile active"
+if echo "$AGENTSHROUD_SECOPT" | grep -q "seccomp"; then
+    check_pass "AgentShroud has seccomp profile active"
 else
-    check_warn "OpenClaw does not have seccomp profile active (check if disabled for debugging)"
+    check_warn "AgentShroud does not have seccomp profile active (check if disabled for debugging)"
 fi
 
 # Check 7: Localhost-only binding
 echo ""
 echo "[7/13] Checking localhost-only port binding..."
 GATEWAY_PORTS=$(docker port agentshroud-gateway 2>/dev/null || echo "")
-OPENCLAW_PORTS=$(docker port openclaw-bot 2>/dev/null || echo "")
+AGENTSHROUD_PORTS=$(docker port agentshroud-bot 2>/dev/null || echo "")
 
 if echo "$GATEWAY_PORTS" | grep -q "127.0.0.1"; then
     check_pass "Gateway bound to localhost only"
@@ -146,17 +146,17 @@ else
     check_fail "Gateway not bound to localhost (exposed to network)"
 fi
 
-if echo "$OPENCLAW_PORTS" | grep -q "127.0.0.1"; then
-    check_pass "OpenClaw UI bound to localhost only"
+if echo "$AGENTSHROUD_PORTS" | grep -q "127.0.0.1"; then
+    check_pass "AgentShroud UI bound to localhost only"
 else
-    check_fail "OpenClaw UI not bound to localhost (exposed to network)"
+    check_fail "AgentShroud UI not bound to localhost (exposed to network)"
 fi
 
 # Check 8: Resource limits set
 echo ""
 echo "[8/13] Checking resource limits..."
 GATEWAY_MEM=$(docker inspect --format '{{.HostConfig.Memory}}' agentshroud-gateway 2>/dev/null || echo "0")
-OPENCLAW_MEM=$(docker inspect --format '{{.HostConfig.Memory}}' openclaw-bot 2>/dev/null || echo "0")
+AGENTSHROUD_MEM=$(docker inspect --format '{{.HostConfig.Memory}}' agentshroud-bot 2>/dev/null || echo "0")
 
 if [ "$GATEWAY_MEM" -gt 0 ]; then
     check_pass "Gateway has memory limit: $((GATEWAY_MEM / 1024 / 1024))MB"
@@ -164,10 +164,10 @@ else
     check_fail "Gateway does not have memory limit"
 fi
 
-if [ "$OPENCLAW_MEM" -gt 0 ]; then
-    check_pass "OpenClaw has memory limit: $((OPENCLAW_MEM / 1024 / 1024))MB"
+if [ "$AGENTSHROUD_MEM" -gt 0 ]; then
+    check_pass "AgentShroud has memory limit: $((AGENTSHROUD_MEM / 1024 / 1024))MB"
 else
-    check_fail "OpenClaw does not have memory limit"
+    check_fail "AgentShroud does not have memory limit"
 fi
 
 # Check 9: Docker secrets mounted
@@ -177,24 +177,24 @@ echo "[9/13] Checking Docker secrets..."
 # Gateway doesn't need secrets currently
 check_pass "Gateway secrets check (not required)"
 
-# Check if OpenClaw has secret files mounted
-if docker exec openclaw-bot test -f /run/secrets/openai_api_key 2>/dev/null; then
-    check_pass "OpenClaw has OpenAI API key secret mounted"
+# Check if AgentShroud has secret files mounted
+if docker exec agentshroud-bot test -f /run/secrets/openai_api_key 2>/dev/null; then
+    check_pass "AgentShroud has OpenAI API key secret mounted"
 else
-    check_fail "OpenClaw missing OpenAI API key secret"
+    check_fail "AgentShroud missing OpenAI API key secret"
 fi
 
-if docker exec openclaw-bot test -f /run/secrets/gateway_password 2>/dev/null; then
-    check_pass "OpenClaw has Gateway password secret mounted"
+if docker exec agentshroud-bot test -f /run/secrets/gateway_password 2>/dev/null; then
+    check_pass "AgentShroud has Gateway password secret mounted"
 else
-    check_fail "OpenClaw missing Gateway password secret"
+    check_fail "AgentShroud missing Gateway password secret"
 fi
 
 # Check 10: Network isolation
 echo ""
 echo "[10/13] Checking network isolation..."
 GATEWAY_NETWORKS=$(docker inspect --format '{{range $k,$v := .NetworkSettings.Networks}}{{$k}} {{end}}' agentshroud-gateway 2>/dev/null || echo "")
-OPENCLAW_NETWORKS=$(docker inspect --format '{{range $k,$v := .NetworkSettings.Networks}}{{$k}} {{end}}' openclaw-bot 2>/dev/null || echo "")
+AGENTSHROUD_NETWORKS=$(docker inspect --format '{{range $k,$v := .NetworkSettings.Networks}}{{$k}} {{end}}' agentshroud-bot 2>/dev/null || echo "")
 
 if echo "$GATEWAY_NETWORKS" | grep -q "agentshroud-internal"; then
     check_pass "Gateway on agentshroud-internal network"
@@ -202,23 +202,23 @@ else
     check_fail "Gateway not on agentshroud-internal network"
 fi
 
-if echo "$OPENCLAW_NETWORKS" | grep -q "agentshroud-isolated"; then
-    check_pass "OpenClaw on agentshroud-isolated network"
+if echo "$AGENTSHROUD_NETWORKS" | grep -q "agentshroud-isolated"; then
+    check_pass "AgentShroud on agentshroud-isolated network"
 else
-    check_fail "OpenClaw not on agentshroud-isolated network"
+    check_fail "AgentShroud not on agentshroud-isolated network"
 fi
 
-if ! echo "$OPENCLAW_NETWORKS" | grep -q "agentshroud-internal"; then
-    check_pass "OpenClaw NOT on external network (properly isolated)"
+if ! echo "$AGENTSHROUD_NETWORKS" | grep -q "agentshroud-internal"; then
+    check_pass "AgentShroud NOT on external network (properly isolated)"
 else
-    check_fail "OpenClaw on external network (should be isolated)"
+    check_fail "AgentShroud on external network (should be isolated)"
 fi
 
 # Check 11: Both containers healthy
 echo ""
 echo "[11/13] Checking container health..."
 GATEWAY_HEALTH=$(docker inspect --format '{{.State.Health.Status}}' agentshroud-gateway 2>/dev/null || echo "unknown")
-OPENCLAW_HEALTH=$(docker inspect --format '{{.State.Health.Status}}' openclaw-bot 2>/dev/null || echo "unknown")
+AGENTSHROUD_HEALTH=$(docker inspect --format '{{.State.Health.Status}}' agentshroud-bot 2>/dev/null || echo "unknown")
 
 if [ "$GATEWAY_HEALTH" == "healthy" ]; then
     check_pass "Gateway is healthy"
@@ -226,39 +226,39 @@ else
     check_fail "Gateway health: $GATEWAY_HEALTH"
 fi
 
-if [ "$OPENCLAW_HEALTH" == "healthy" ]; then
-    check_pass "OpenClaw is healthy"
+if [ "$AGENTSHROUD_HEALTH" == "healthy" ]; then
+    check_pass "AgentShroud is healthy"
 else
-    check_fail "OpenClaw health: $OPENCLAW_HEALTH"
+    check_fail "AgentShroud health: $AGENTSHROUD_HEALTH"
 fi
 
 # Check 12: Environment variables properly set
 echo ""
 echo "[12/13] Checking security environment variables..."
-OPENCLAW_ENV=$(docker inspect --format '{{range .Config.Env}}{{println .}}{{end}}' openclaw-bot 2>/dev/null || echo "")
+AGENTSHROUD_ENV=$(docker inspect --format '{{range .Config.Env}}{{println .}}{{end}}' agentshroud-bot 2>/dev/null || echo "")
 
-if echo "$OPENCLAW_ENV" | grep -q "OPENCLAW_DISABLE_HOST_FILESYSTEM=true"; then
-    check_pass "OpenClaw has host filesystem disabled"
+if echo "$AGENTSHROUD_ENV" | grep -q "AGENTSHROUD_DISABLE_HOST_FILESYSTEM=true"; then
+    check_pass "AgentShroud has host filesystem disabled"
 else
-    check_fail "OpenClaw does not have host filesystem disabled"
+    check_fail "AgentShroud does not have host filesystem disabled"
 fi
 
-if echo "$OPENCLAW_ENV" | grep -q "OPENCLAW_SANDBOX_MODE=strict"; then
-    check_pass "OpenClaw in strict sandbox mode"
+if echo "$AGENTSHROUD_ENV" | grep -q "AGENTSHROUD_SANDBOX_MODE=strict"; then
+    check_pass "AgentShroud in strict sandbox mode"
 else
-    check_fail "OpenClaw not in strict sandbox mode"
+    check_fail "AgentShroud not in strict sandbox mode"
 fi
 
-if echo "$OPENCLAW_ENV" | grep -q "OPENCLAW_DISABLE_BONJOUR=1"; then
-    check_pass "OpenClaw has Bonjour/mDNS disabled"
+if echo "$AGENTSHROUD_ENV" | grep -q "AGENTSHROUD_DISABLE_BONJOUR=1"; then
+    check_pass "AgentShroud has Bonjour/mDNS disabled"
 else
-    check_fail "OpenClaw does not have Bonjour/mDNS disabled"
+    check_fail "AgentShroud does not have Bonjour/mDNS disabled"
 fi
 
 # Check 13: No hardcoded secrets in docker-compose.yml
 echo ""
 echo "[13/13] Checking for hardcoded secrets..."
-if grep -q "OPENCLAW_GATEWAY_PASSWORD=" "$COMPOSE_FILE" | grep -v "OPENCLAW_GATEWAY_PASSWORD_FILE"; then
+if grep -q "AGENTSHROUD_GATEWAY_PASSWORD=" "$COMPOSE_FILE" | grep -v "AGENTSHROUD_GATEWAY_PASSWORD_FILE"; then
     check_fail "Hardcoded gateway password found in docker-compose.yml"
 else
     check_pass "No hardcoded gateway password in docker-compose.yml"

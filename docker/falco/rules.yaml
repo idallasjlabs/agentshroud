@@ -6,17 +6,17 @@
   condition: >
     spawned_process and container and
     proc.name in (bash, sh, zsh, dash, csh, ksh, fish) and
-    not proc.pname in (start-openclaw.sh, entrypoint-openclaw.sh, security-entrypoint.sh, security-scheduler.sh, security-scan.sh)
+    not proc.pname in (start-agentshroud.sh, entrypoint-agentshroud.sh, security-entrypoint.sh, security-scheduler.sh, security-scan.sh)
   output: >
     Shell spawned in container (user=%user.name container=%container.name shell=%proc.name parent=%proc.pname cmdline=%proc.cmdline)
   priority: WARNING
   tags: [agentshroud, shell, container]
 
-# Unexpected outbound connections from openclaw
-- rule: Unexpected Outbound Connection from OpenClaw
-  desc: Detect outbound network connections from openclaw container to unexpected destinations
+# Unexpected outbound connections from agentshroud
+- rule: Unexpected Outbound Connection from AgentShroud
+  desc: Detect outbound network connections from agentshroud container to unexpected destinations
   condition: >
-    outbound and container and container.name = "openclaw" and
+    outbound and container and container.name = "agentshroud" and
     not fd.sip in (
       "127.0.0.0/8",
       "10.0.0.0/8",
@@ -24,15 +24,15 @@
       "192.168.0.0/16"
     )
   output: >
-    Unexpected outbound connection from OpenClaw (container=%container.name connection=%fd.name dest=%fd.sip:%fd.sport user=%user.name process=%proc.name)
+    Unexpected outbound connection from AgentShroud (container=%container.name connection=%fd.name dest=%fd.sip:%fd.sport user=%user.name process=%proc.name)
   priority: ERROR
-  tags: [agentshroud, network, openclaw]
+  tags: [agentshroud, network]
 
 # File access outside workspace
 - rule: File Access Outside Workspace
   desc: Detect file access outside the designated workspace directory
   condition: >
-    open_write and container and container.name = "openclaw" and
+    open_write and container and container.name = "agentshroud" and
     not fd.name startswith /home/node/ and
     not fd.name startswith /tmp/ and
     not fd.name startswith /proc/ and
@@ -40,7 +40,7 @@
   output: >
     File write outside workspace (container=%container.name file=%fd.name user=%user.name process=%proc.name)
   priority: ERROR
-  tags: [agentshroud, filesystem, openclaw]
+  tags: [agentshroud, filesystem]
 
 # Privilege escalation attempts
 - rule: Privilege Escalation Attempt
