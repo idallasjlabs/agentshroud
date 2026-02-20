@@ -415,17 +415,17 @@ AgentShroud exposes comprehensive security metrics:
 
 ```
 # Security metrics
-secureclaw_requests_total{agent_id, status}
-secureclaw_security_violations_total{type, severity}
-secureclaw_pii_detections_total{type}
-secureclaw_prompt_injections_blocked_total
-secureclaw_processing_duration_seconds{module}
+agentshroud_requests_total{agent_id, status}
+agentshroud_security_violations_total{type, severity}
+agentshroud_pii_detections_total{type}
+agentshroud_prompt_injections_blocked_total
+agentshroud_processing_duration_seconds{module}
 
 # System metrics
-secureclaw_active_agents
-secureclaw_memory_usage_bytes
-secureclaw_cpu_usage_percent
-secureclaw_audit_entries_total
+agentshroud_active_agents
+agentshroud_memory_usage_bytes
+agentshroud_cpu_usage_percent
+agentshroud_audit_entries_total
 ```
 
 **3. Grafana Dashboard**
@@ -442,7 +442,7 @@ Import AgentShroud Grafana dashboard:
         "type": "stat",
         "targets": [
           {
-            "expr": "sum(rate(secureclaw_security_violations_total[5m]))",
+            "expr": "sum(rate(agentshroud_security_violations_total[5m]))",
             "legendFormat": "Violations/sec"
           }
         ]

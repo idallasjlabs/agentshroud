@@ -55,8 +55,8 @@ For the impatient, here's the zero-config way to get AgentShroud running:
 
 ```bash
 # Clone the repository
-git clone https://github.com/idallasj/oneclaw.git
-cd oneclaw
+git clone https://github.com/idallasj/agentshroud.git
+cd agentshroud
 
 # Start AgentShroud with secure defaults
 docker compose -f docker-compose.secure.yml up -d
@@ -82,8 +82,8 @@ That's it! AgentShroud is now running with:
 ### Step 1: Clone the Repository
 
 ```bash
-git clone https://github.com/idallasj/oneclaw.git
-cd oneclaw
+git clone https://github.com/idallasj/agentshroud.git
+cd agentshroud
 ls -la
 ```
 
@@ -288,7 +288,7 @@ Running multiple AgentShroud instances (useful on Mac Studio or shared hosts):
 docker compose -f docker-compose.secure.yml up -d
 
 # Second instance (offset by 100)
-AGENTSHROUD_PORT_OFFSET=100 docker compose -f docker-compose.secure.yml -p secureclaw2 up -d
+AGENTSHROUD_PORT_OFFSET=100 docker compose -f docker-compose.secure.yml -p agentshroud2 up -d
 ```
 
 This creates:
@@ -991,7 +991,7 @@ With AgentShroud running, you're ready to:
 For advanced configuration, see the [Configuration Guide](configuration-guide.md).  
 For troubleshooting, join our [Discord community](https://discord.gg/agentshroud).
 
-**Questions?** File an issue at https://github.com/idallasj/oneclaw/issues
+**Questions?** File an issue at https://github.com/idallasj/agentshroud/issues
 
 ---
 

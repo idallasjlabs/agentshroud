@@ -148,10 +148,10 @@ print('Database: OK')
 curl -s http://localhost:8000/health || echo "OpenClaw unreachable"
 
 # Disk space check
-df -h /var/lib/docker/volumes/secureclaw_data/_data
+df -h /var/lib/docker/volumes/agentshroud_data/_data
 
 # Memory usage
-docker stats secureclaw_secureclaw_1 --no-stream
+docker stats agentshroud_agentshroud_1 --no-stream
 ```
 
 ### Dashboard Access
@@ -180,11 +180,11 @@ open https://localhost:3000
 curl -s http://localhost:9090/metrics | grep agentshroud
 
 # Key metrics to monitor:
-# secureclaw_requests_total
-# secureclaw_blocks_total  
-# secureclaw_trust_level_changes
-# secureclaw_response_time_seconds
-# secureclaw_audit_chain_length
+# agentshroud_requests_total
+# agentshroud_blocks_total  
+# agentshroud_trust_level_changes
+# agentshroud_response_time_seconds
+# agentshroud_audit_chain_length
 ```
 
 ## 3. Viewing Audit Logs
@@ -353,7 +353,7 @@ echo "new_api_key_here" | docker secret create openclaw-api-key-new -
 # 3. Update service configuration
 docker service update --secret-rm openclaw-api-key \
   --secret-add source=openclaw-api-key-new,target=openclaw-api-key \
-  secureclaw_secureclaw
+  agentshroud_agentshroud
 
 # 4. Test connectivity
 curl -s https://localhost:8443/health | grep openclaw
@@ -374,7 +374,7 @@ docker secret create admin-token-new new-admin-token.txt
 # 3. Update service
 docker service update --secret-rm admin-token \
   --secret-add source=admin-token-new,target=admin-token \
-  secureclaw_secureclaw
+  agentshroud_agentshroud
 
 # 4. Test admin endpoints
 export ADMIN_TOKEN=$(cat new-admin-token.txt)
@@ -398,10 +398,10 @@ docker secret create ssl-key-new new-server.key
 docker service update --secret-rm ssl-cert --secret-rm ssl-key \
   --secret-add source=ssl-cert-new,target=ssl-cert \
   --secret-add source=ssl-key-new,target=ssl-key \
-  secureclaw_secureclaw
+  agentshroud_agentshroud
 
 # 4. Restart to load new certificates
-docker service update --force secureclaw_secureclaw
+docker service update --force agentshroud_agentshroud
 ```
 
 ## 6. System Updates
@@ -733,7 +733,7 @@ docker compose exec agentshroud sqlite3 /data/agentshroud.db \
   "SELECT COUNT(*) FROM audit_entries WHERE timestamp > datetime('now', '-1 day');"
 
 # 3. Monitor resource usage
-top -p $(docker inspect --format '{{.State.Pid}}' secureclaw_secureclaw_1)
+top -p $(docker inspect --format '{{.State.Pid}}' agentshroud_agentshroud_1)
 ```
 
 **Performance tuning:**

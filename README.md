@@ -8,16 +8,16 @@
   S E C U R E C L A W   G A T E W A Y
 ```
 
-# OneClaw — Enterprise Security Proxy for OpenClaw AI Agents
+# AgentShroud — Enterprise Security Proxy for OpenClaw AI Agents
 
-[![Tests](https://github.com/idallasj/oneclaw/actions/workflows/ci.yml/badge.svg)](https://github.com/idallasj/oneclaw/actions/workflows/ci.yml)
-[![Coverage](https://img.shields.io/badge/coverage-92%25-brightgreen)](https://github.com/idallasj/oneclaw)
+[![Tests](https://github.com/idallasj/agentshroud/actions/workflows/ci.yml/badge.svg)](https://github.com/idallasj/agentshroud/actions/workflows/ci.yml)
+[![Coverage](https://img.shields.io/badge/coverage-92%25-brightgreen)](https://github.com/idallasj/agentshroud)
 [![Python 3.11](https://img.shields.io/badge/python-3.11-blue.svg)](https://python.org)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
 > *"One Claw Tied Behind Your Back"* — You decide what the agent sees, not the agent.
 
-OneClaw (AgentShroud) is a security proxy that sits between your real digital life and an OpenClaw AI agent. It provides **12 security modules**, a **human approval queue**, **full audit logging**, and a **real-time dashboard** — ensuring your AI assistant never sees data you haven't explicitly approved.
+AgentShroud (AgentShroud) is a security proxy that sits between your real digital life and an OpenClaw AI agent. It provides **12 security modules**, a **human approval queue**, **full audit logging**, and a **real-time dashboard** — ensuring your AI assistant never sees data you haven't explicitly approved.
 
 ---
 
@@ -82,13 +82,13 @@ OneClaw (AgentShroud) is a security proxy that sits between your real digital li
 
 ## Quickstart
 
-Get OneClaw running in 5 minutes:
+Get AgentShroud running in 5 minutes:
 
 ### 1. Clone & Configure
 
 ```bash
-git clone https://github.com/idallasj/oneclaw.git
-cd oneclaw
+git clone https://github.com/idallasj/agentshroud.git
+cd agentshroud
 
 # Copy example config
 cp examples/minimal.env .env
@@ -119,16 +119,16 @@ open http://localhost:3000
 curl -X POST http://localhost:8080/api/v1/forward \
   -H "Authorization: Bearer YOUR_TOKEN" \
   -H "Content-Type: application/json" \
-  -d '{"content": "Hello from OneClaw!", "source": "api", "content_type": "text"}'
+  -d '{"content": "Hello from AgentShroud!", "source": "api", "content_type": "text"}'
 ```
 
 That's it! The gateway is now filtering all data between you and your OpenClaw agent.
 
 ---
 
-## OneClaw vs Plain OpenClaw
+## AgentShroud vs Plain OpenClaw
 
-| Feature | Plain OpenClaw | OneClaw |
+| Feature | Plain OpenClaw | AgentShroud |
 |---------|---------------|---------|
 | PII detection & redaction | ❌ | ✅ Presidio-powered |
 | Human approval queue | ❌ | ✅ Telegram/API/Dashboard |
@@ -226,8 +226,8 @@ See the [`examples/`](examples/) directory:
 
 ```bash
 # Clone
-git clone https://github.com/idallasj/oneclaw.git
-cd oneclaw
+git clone https://github.com/idallasj/agentshroud.git
+cd agentshroud
 
 # Create virtual environment
 python3.11 -m venv .venv
@@ -251,4 +251,4 @@ pytest gateway/tests/ -v --cov=gateway --cov-report=term-missing
 
 ## Acknowledgments
 
-Built on top of [OpenClaw](https://github.com/nicholasgasior/openclaw) — the open-source AI agent framework. OneClaw adds the security layer that makes it safe for real-world use.
+Built on top of [OpenClaw](https://github.com/nicholasgasior/openclaw) — the open-source AI agent framework. AgentShroud adds the security layer that makes it safe for real-world use.

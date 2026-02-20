@@ -14,8 +14,8 @@ AgentShroud requires network isolation to prevent unauthorized access to OpenCla
 ## Decision
 
 Implement **Two-Network Container Isolation** with:
-- **External Network** (`secureclaw_external`): Internet-facing with AgentShroud Gateway
-- **Internal Network** (`secureclaw_internal`): Isolated network for OpenClaw agents
+- **External Network** (`agentshroud_external`): Internet-facing with AgentShroud Gateway
+- **Internal Network** (`agentshroud_internal`): Isolated network for OpenClaw agents
 
 ### Network Configuration
 ```

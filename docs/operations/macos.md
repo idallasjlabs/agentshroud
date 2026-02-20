@@ -12,8 +12,8 @@
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/yourusername/oneclaw.git
-cd oneclaw
+git clone https://github.com/yourusername/agentshroud.git
+cd agentshroud
 ```
 
 ### 2. Install Docker Desktop
@@ -78,7 +78,7 @@ This is useful for rapid iteration during development. For production use, Docke
 ## Updating to Latest Release
 
 ```bash
-cd ~/oneclaw
+cd ~/agentshroud
 git fetch --all --tags
 git checkout v<new-version>
 cd docker && docker compose build && docker compose up -d

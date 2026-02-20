@@ -2,11 +2,11 @@
 
 ## Reporting a Vulnerability
 
-We take security seriously. If you discover a vulnerability in OneClaw, please report it responsibly.
+We take security seriously. If you discover a vulnerability in AgentShroud, please report it responsibly.
 
 ### Preferred: GitHub Security Advisories
 
-1. Go to [Security Advisories](https://github.com/idallasj/oneclaw/security/advisories)
+1. Go to [Security Advisories](https://github.com/idallasj/agentshroud/security/advisories)
 2. Click **"Report a vulnerability"**
 3. Provide a detailed description, steps to reproduce, and impact assessment
 
@@ -45,7 +45,7 @@ We will credit reporters unless they prefer anonymity.
 
 ## Security Features Overview
 
-OneClaw provides 12 security modules (see [README](README.md) for details):
+AgentShroud provides 12 security modules (see [README](README.md) for details):
 
 - **PII Sanitizer** — Redacts personal data before it reaches the AI agent
 - **Approval Queue** — Human-in-the-loop for sensitive operations
@@ -67,8 +67,8 @@ OneClaw provides 12 security modules (see [README](README.md) for details):
 **Severity:** Medium
 **Affected:** Configurations where `auth_method` is set to `none`
 **Impact:** Potential information disclosure through gateway API when authentication is disabled
-**Mitigation:** OneClaw enforces authentication by default. Ensure `GATEWAY_AUTH_TOKEN` is set and `auth_method` is not `none`.
-**Status:** Mitigated — OneClaw refuses to start with `auth_method=none` in production mode.
+**Mitigation:** AgentShroud enforces authentication by default. Ensure `GATEWAY_AUTH_TOKEN` is set and `auth_method` is not `none`.
+**Status:** Mitigated — AgentShroud refuses to start with `auth_method=none` in production mode.
 
 ## Security Best Practices
 
@@ -78,5 +78,5 @@ OneClaw provides 12 security modules (see [README](README.md) for details):
 4. **Enable Seccomp profiles** — restricts available system calls
 5. **Review the approval queue** — don't auto-approve sensitive actions
 6. **Monitor the dashboard** — watch for anomalous activity patterns
-7. **Keep OneClaw updated** — use the version manager for security-reviewed upgrades
+7. **Keep AgentShroud updated** — use the version manager for security-reviewed upgrades
 8. **Rotate credentials** regularly via the encrypted store
