@@ -1,5 +1,5 @@
 #!/bin/bash
-# Restart OpenClaw and/or Gateway
+# Restart AgentShroud and/or Gateway
 
 # Auto-detect project root
 PROJECT_ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")/../.." && pwd)"
@@ -8,9 +8,9 @@ cd "$PROJECT_ROOT"
 SERVICE=${1:-all}
 
 case $SERVICE in
-    openclaw|oc)
-        echo "Restarting OpenClaw..."
-        docker compose -f docker/docker-compose.yml restart openclaw
+    agentshroud|oc)
+        echo "Restarting AgentShroud..."
+        docker compose -f docker/docker-compose.yml restart agentshroud
         ;;
     gateway|gw)
         echo "Restarting Gateway..."
@@ -33,4 +33,4 @@ sleep 30
 docker compose -f docker/docker-compose.yml ps
 
 echo -e "\n✅ Restart complete"
-echo -e "\n📋 Usage: ./restart.sh [openclaw|gateway|all|rebuild]"
+echo -e "\n📋 Usage: ./restart.sh [agentshroud|gateway|all|rebuild]"
