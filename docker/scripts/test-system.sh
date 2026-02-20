@@ -6,7 +6,7 @@ PROJECT_ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")/../.." && pwd)"
 cd "$PROJECT_ROOT"
 
 echo "╔══════════════════════════════════════════════════════════════╗"
-echo "║         OpenClaw + AgentShroud Complete System Test          ║"
+echo "║         AgentShroud + AgentShroud Complete System Test          ║"
 echo "╚══════════════════════════════════════════════════════════════╝"
 echo ""
 
@@ -17,21 +17,21 @@ echo ""
 
 echo "2️⃣  API Keys Status"
 echo "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
-docker compose -f docker/docker-compose.yml exec openclaw bash -c '
+docker compose -f docker/docker-compose.yml exec agentshroud bash -c '
 export OPENAI_API_KEY=$(cat /run/secrets/openai_api_key)
 export ANTHROPIC_API_KEY=$(cat /run/secrets/anthropic_api_key)
-openclaw models status | grep -A 5 "Auth overview"
+agentshroud models status | grep -A 5 "Auth overview"
 '
 echo ""
 
 echo "3️⃣  Telegram Status"
 echo "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
-docker compose -f docker/docker-compose.yml exec openclaw openclaw channels list | grep -A 2 "Telegram"
+docker compose -f docker/docker-compose.yml exec agentshroud agentshroud channels list | grep -A 2 "Telegram"
 echo ""
 
 echo "4️⃣  Gmail Status"
 echo "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
-docker compose -f docker/docker-compose.yml exec openclaw openclaw channels list | grep -i gmail || echo "Gmail not configured yet"
+docker compose -f docker/docker-compose.yml exec agentshroud agentshroud channels list | grep -i gmail || echo "Gmail not configured yet"
 echo ""
 
 echo "5️⃣  Gateway Health"

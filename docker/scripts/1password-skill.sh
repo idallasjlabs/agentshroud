@@ -1,5 +1,5 @@
 #!/bin/bash
-# 1Password Skill for OpenClaw
+# 1Password Skill for AgentShroud
 # Allows the bot to retrieve credentials from 1Password vaults
 # Usage: 1password-skill.sh <action> <args>
 
@@ -82,7 +82,7 @@ case "$ACTION" in
         ;;
     help|*)
         cat <<EOF
-1Password Skill for OpenClaw
+1Password Skill for AgentShroud
 
 Usage: 1password-skill.sh <action> [args]
 
@@ -111,7 +111,7 @@ Examples:
   1password-skill.sh get-totp "Gmail - therealidallasj"
 
   # Get custom field
-  1password-skill.sh get-field "Gmail - therealidallasj" "openclaw bot password"
+  1password-skill.sh get-field "Gmail - therealidallasj" "agentshroud bot password"
 EOF
         exit 0
         ;;

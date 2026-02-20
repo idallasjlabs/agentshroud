@@ -67,8 +67,8 @@ container:
   cpu_limit: 2
   pids_limit: 1024
 
-openclaw:
-  # OpenClaw-specific settings
+agentshroud:
+  # AgentShroud-specific settings
   version: "main"
   default_model: "openai/gpt-4o"  # Updated from gpt-4
   gateway_bind: "loopback"

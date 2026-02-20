@@ -1,14 +1,14 @@
 #!/bin/bash
 set -euo pipefail
 
-# Helper script for working with OpenClaw workspace (Docker volume)
+# Helper script for working with AgentShroud workspace (Docker volume)
 
-CONTAINER="openclaw-bot"
-WORKSPACE="/home/node/openclaw/workspace"
+CONTAINER="agentshroud-bot"
+WORKSPACE="/home/node/agentshroud/workspace"
 
 usage() {
     cat <<EOF
-OpenClaw Workspace Helper
+AgentShroud Workspace Helper
 
 Usage:
   $0 ls [path]              List files in workspace
