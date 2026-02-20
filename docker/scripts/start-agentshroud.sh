@@ -85,6 +85,6 @@ else
     echo "[startup] Warning: 1Password credentials not found (optional)"
 fi
 
-# Start AgentShroud gateway
+# Start AgentShroud gateway (powered by OpenClaw CLI)
 echo "[startup] Starting AgentShroud gateway..."
-exec agentshroud gateway --allow-unconfigured --bind lan
+exec openclaw gateway --allow-unconfigured --bind lan
