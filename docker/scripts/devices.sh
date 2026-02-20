@@ -1,5 +1,5 @@
 #!/bin/bash
-# Manage OpenClaw trusted devices
+# Manage AgentShroud trusted devices
 
 cd /Users/ijefferson.admin/Development/agentshroud
 
@@ -7,31 +7,31 @@ COMMAND=$1
 
 case $COMMAND in
     list)
-        echo "=== OpenClaw Trusted Devices ==="
-        docker compose -f docker/docker-compose.yml exec openclaw openclaw devices list
+        echo "=== AgentShroud Trusted Devices ==="
+        docker compose -f docker/docker-compose.yml exec agentshroud agentshroud devices list
         ;;
     approve)
         if [ -z "$2" ]; then
             echo "First, list pending devices:"
-            docker compose -f docker/docker-compose.yml exec openclaw openclaw devices list
+            docker compose -f docker/docker-compose.yml exec agentshroud agentshroud devices list
             echo ""
             echo "Usage: ./devices.sh approve <REQUEST_ID>"
             echo "Example: ./devices.sh approve 6c16f64f-c3df-4544-aa6b-a89182228d4c"
             exit 1
         fi
         echo "Approving device: $2"
-        docker compose -f docker/docker-compose.yml exec openclaw openclaw devices approve "$2"
+        docker compose -f docker/docker-compose.yml exec agentshroud agentshroud devices approve "$2"
         echo ""
         echo "✅ Device approved. Refresh the browser to connect."
         ;;
     approve-all)
         echo "⚠️  WARNING: This will approve ALL pending device requests."
         echo ""
-        docker compose -f docker/docker-compose.yml exec openclaw openclaw devices list
+        docker compose -f docker/docker-compose.yml exec agentshroud agentshroud devices list
         echo ""
         read -p "Are you sure you want to approve all? (yes/no): " confirm
         if [ "$confirm" = "yes" ]; then
-            docker compose -f docker/docker-compose.yml exec openclaw openclaw devices approve-all
+            docker compose -f docker/docker-compose.yml exec agentshroud agentshroud devices approve-all
             echo "✅ All devices approved"
         else
             echo "Cancelled"
@@ -40,18 +40,18 @@ case $COMMAND in
     remove|unpair)
         if [ -z "$2" ]; then
             echo "First, list paired devices:"
-            docker compose -f docker/docker-compose.yml exec openclaw openclaw devices list
+            docker compose -f docker/docker-compose.yml exec agentshroud agentshroud devices list
             echo ""
             echo "Usage: ./devices.sh remove <DEVICE_ID>"
             echo "Example: ./devices.sh remove 542982a6190c3b6e9c7383fa484df6ec..."
             exit 1
         fi
         echo "Removing device: $2"
-        docker compose -f docker/docker-compose.yml exec openclaw openclaw devices unpair "$2"
+        docker compose -f docker/docker-compose.yml exec agentshroud agentshroud devices unpair "$2"
         echo "✅ Device removed"
         ;;
     *)
-        echo "OpenClaw Device Management"
+        echo "AgentShroud Device Management"
         echo ""
         echo "Usage: ./devices.sh <command> [args]"
         echo ""

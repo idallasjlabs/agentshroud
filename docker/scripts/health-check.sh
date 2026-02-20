@@ -7,7 +7,7 @@ set -e
 cd "$(dirname "$0")/../.."
 
 echo "================================================================"
-echo "AgentShroud + OpenClaw Health Check"
+echo "AgentShroud + AgentShroud Health Check"
 echo "================================================================"
 echo ""
 
@@ -35,8 +35,8 @@ else
     check_fail "Gateway not responding"
 fi
 
-# Check 3: OpenClaw UI
-echo -n "3. OpenClaw UI... "
+# Check 3: AgentShroud UI
+echo -n "3. AgentShroud UI... "
 HTTP_CODE=$(curl -so /dev/null -w '%{http_code}' http://localhost:18790 2>/dev/null || echo "000")
 if [ "$HTTP_CODE" = "200" ] || [ "$HTTP_CODE" = "302" ]; then
     check_pass "UI accessible (HTTP $HTTP_CODE)"
@@ -46,7 +46,7 @@ fi
 
 # Check 4: Internet access
 echo -n "4. Internet access... "
-if docker exec openclaw-bot curl -sf -m 3 https://api.openai.com > /dev/null 2>&1; then
+if docker exec agentshroud-bot curl -sf -m 3 https://api.openai.com > /dev/null 2>&1; then
     check_pass "Outbound internet working"
 else
     check_fail "No internet access"
@@ -54,7 +54,7 @@ fi
 
 # Check 5: Security token
 echo -n "5. Security token... "
-if docker compose -f docker/docker-compose.yml exec -T openclaw printenv OPENCLAW_GATEWAY_TOKEN 2>/dev/null | grep -q '[a-f0-9]'; then
+if docker compose -f docker/docker-compose.yml exec -T agentshroud printenv AGENTSHROUD_GATEWAY_TOKEN 2>/dev/null | grep -q '[a-f0-9]'; then
     check_pass "Gateway token configured"
 else
     check_fail "Gateway token missing"
@@ -62,13 +62,13 @@ fi
 
 # Check 6: Internal networking
 echo -n "6. Internal network... "
-if docker exec agentshroud-gateway python -c "import urllib.request; urllib.request.urlopen('http://openclaw:18789/api/health', timeout=3)" > /dev/null 2>&1; then
-    check_pass "Gateway → OpenClaw connected"
+if docker exec agentshroud-gateway python -c "import urllib.request; urllib.request.urlopen('http://agentshroud:18789/api/health', timeout=3)" > /dev/null 2>&1; then
+    check_pass "Gateway → AgentShroud connected"
 else
-    check_fail "Gateway → OpenClaw connection failed"
+    check_fail "Gateway → AgentShroud connection failed"
 fi
 
 echo ""
 echo "================================================================"
-echo "OpenClaw UI: http://localhost:18790"
+echo "AgentShroud UI: http://localhost:18790"
 echo "================================================================"

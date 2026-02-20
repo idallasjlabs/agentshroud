@@ -54,7 +54,7 @@ fi
 # --- Initial ClamAV Scan ---
 log "Running initial ClamAV scan on workspace..."
 if command -v clamscan >/dev/null 2>&1; then
-    WORKSPACE="${OPENCLAW_WORKSPACE:-/home/node}"
+    WORKSPACE="${AGENTSHROUD_WORKSPACE:-/home/node}"
     clamscan -r --no-summary "$WORKSPACE" \
         > "$LOG_DIR/clamav/clamscan-$TIMESTAMP.log" 2>&1 || true
 
