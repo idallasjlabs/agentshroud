@@ -18,7 +18,7 @@
 
 ```bash
 # Navigate to docker directory
-cd /Users/ijefferson.admin/Development/oneclaw/docker
+cd /Users/ijefferson.admin/Development/agentshroud/docker
 
 # Create API key file
 echo "sk-ant-api03-YOUR_KEY_HERE" > secrets/anthropic_api_key.txt
@@ -44,7 +44,7 @@ ls -la secrets/anthropic_api_key.txt
 docker-compose up -d
 
 # Expected output:
-# Creating network "docker_secureclaw-internal"
+# Creating network "docker_agentshroud-internal"
 # Creating volume "docker_gateway-data"
 # Creating volume "docker_openclaw-data"
 # Building gateway...
@@ -205,7 +205,7 @@ docker-compose down
 # Stopping agentshroud-gateway  ... done
 # Removing openclaw-chat       ... done
 # Removing agentshroud-gateway  ... done
-# Removing network docker_secureclaw-internal
+# Removing network docker_agentshroud-internal
 ```
 
 ### Nuclear Option (Reset Everything)
@@ -238,7 +238,7 @@ Once chat is working:
 
 ```bash
 # Check network configuration
-docker network inspect docker_secureclaw-internal
+docker network inspect docker_agentshroud-internal
 
 # Verify no external ports on openclaw
 docker ps | grep openclaw

@@ -546,7 +546,7 @@ Before using AgentShroud:
 docker compose -f docker/docker-compose.yml down
 
 # 2. Review audit ledger
-docker run --rm -v oneclaw_gateway-data:/data alpine \
+docker run --rm -v agentshroud_gateway-data:/data alpine \
   cat /data/ledger.db > ledger-backup.db
 
 # 3. Revoke bot's API keys
@@ -558,7 +558,7 @@ docker run --rm -v oneclaw_gateway-data:/data alpine \
 sqlite3 ledger-backup.db "SELECT * FROM ledger ORDER BY timestamp DESC"
 
 # 5. Rebuild from clean state
-docker volume rm oneclaw_openclaw-config oneclaw_openclaw-workspace
+docker volume rm agentshroud_openclaw-config agentshroud_openclaw-workspace
 docker compose -f docker/docker-compose.yml up -d --build
 ```
 
@@ -567,5 +567,5 @@ docker compose -f docker/docker-compose.yml up -d --build
 **Version**: 0.2.0
 **Last Updated**: 2026-02-15
 **License**: MIT
-**Repository**: https://github.com/idallasj/oneclaw (AgentShroud)
+**Repository**: https://github.com/idallasj/agentshroud (AgentShroud)
 **Upstream**: https://openclaw.ai (OpenClaw)

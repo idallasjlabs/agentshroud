@@ -63,7 +63,7 @@ class TestDomainDenylist:
         assert r.action in (ProxyAction.ALLOW, ProxyAction.FLAG)
 
     def test_github_passes(self, proxy):
-        r = proxy.check_request("https://github.com/agentshroud/oneclaw")
+        r = proxy.check_request("https://github.com/agentshroud/agentshroud")
         assert not r.blocked
 
     def test_stackoverflow_passes(self, proxy):

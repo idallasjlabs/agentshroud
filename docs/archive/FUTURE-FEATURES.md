@@ -30,7 +30,7 @@ The agent operates in a **separate digital environment** from your primary onlin
 **Complexity**: Medium
 **ETA**: 4-6 weeks
 
-**Description**: Create iOS and macOS Shortcuts that allow you to quickly forward information to your OneClaw agent without opening apps or typing commands.
+**Description**: Create iOS and macOS Shortcuts that allow you to quickly forward information to your AgentShroud agent without opening apps or typing commands.
 
 **Use Cases**:
 - Forward current web page to agent with note
@@ -46,7 +46,7 @@ The agent operates in a **separate digital environment** from your primary onlin
 
 **iOS Shortcuts**:
 ```
-Shortcut: "Send to OneClaw"
+Shortcut: "Send to AgentShroud"
 ├─ Receive: Text, URLs, Images, Files
 ├─ Show prompt: "What do you want to ask about this?"
 ├─ Send email to: therealidallasj@gmail.com
@@ -62,14 +62,14 @@ Shortcut: "Forward to Agent"
 ├─ Show dialog: "Add context or question?"
 ├─ Compose email to therealidallasj@gmail.com
 ├─ Send with attachment/quote
-└─ Notify: "Sent to OneClaw"
+└─ Notify: "Sent to AgentShroud"
 ```
 
 **Example Workflows**:
 
 1. **"Summarize This Article"**:
    - Select text in Safari
-   - Right-click → Services → "Send to OneClaw"
+   - Right-click → Services → "Send to AgentShroud"
    - Shortcut emails article + "Please summarize" to agent
    - Agent processes via Gmail integration
    - Reply arrives in dedicated inbox
@@ -81,7 +81,7 @@ Shortcut: "Forward to Agent"
 
 3. **"Remember This"**:
    - Take screenshot
-   - Share → "Send to OneClaw"
+   - Share → "Send to AgentShroud"
    - Add note: "Remember this for later"
    - Agent stores in memory
 
@@ -114,20 +114,20 @@ Create Gmail filters and labels for intelligent processing:
 Gmail Filter Rules:
 ├─ From: your-primary-email@gmail.com
 │   ├─ Subject contains: [ASK]
-│   │   → Label: "OneClaw/Questions"
+│   │   → Label: "AgentShroud/Questions"
 │   │   → Star
 │   │   → Mark as unread
 │   │
 │   ├─ Subject contains: [REMEMBER]
-│   │   → Label: "OneClaw/Memory"
+│   │   → Label: "AgentShroud/Memory"
 │   │   → Archive
 │   │
 │   └─ Subject contains: [TASK]
-│       → Label: "OneClaw/Tasks"
+│       → Label: "AgentShroud/Tasks"
 │       → Star
 │
 └─ From: trusted-sender@domain.com
-    → Label: "OneClaw/Approved"
+    → Label: "AgentShroud/Approved"
     → Process automatically
 ```
 
@@ -139,7 +139,7 @@ You:  Forward email with subject "[ASK] What's the deadline?"
       ↓
       Filter applies label + star
       ↓
-      OneClaw's Gmail watcher detects new labeled email
+      AgentShroud's Gmail watcher detects new labeled email
       ↓
       Agent processes question
       ↓
@@ -225,7 +225,7 @@ Even if someone steals your gateway token, they can't connect without your physi
 **Implementation**:
 ```bash
 # Cron job (runs weekly)
-0 3 * * 0 /Users/you/Development/oneclaw/auto-update.sh
+0 3 * * 0 /Users/you/Development/agentshroud/auto-update.sh
 
 # auto-update.sh
 #!/bin/bash
@@ -289,12 +289,12 @@ Interactive web wizard that guides users through:
 **Complexity**: Very High
 **ETA**: 6+ months
 
-**Description**: Native mobile apps for iOS and Android that connect securely to your OneClaw instance.
+**Description**: Native mobile apps for iOS and Android that connect securely to your AgentShroud instance.
 
 **Features**:
 - Push notifications for agent replies
 - Voice input via Siri/Google Assistant
-- Share sheet integration (share anything to OneClaw)
+- Share sheet integration (share anything to AgentShroud)
 - Background sync
 - Offline queue (messages sent when back online)
 - Tailscale VPN integration for secure remote access
@@ -385,13 +385,13 @@ Returns: "Here are the top 10 Docker security best practices..."
 **Features**:
 - Voice input (speech-to-text)
 - Voice output (text-to-speech)
-- Wake word ("Hey OneClaw")
+- Wake word ("Hey AgentShroud")
 - Natural conversation flow
 - Integration with ElevenLabs or OpenAI TTS
 
 **Use Case**:
 ```
-You: "Hey OneClaw, what's on my calendar today?"
+You: "Hey AgentShroud, what's on my calendar today?"
 Agent: [Speaks] "You have three items: Meeting at 10am, lunch with Sarah at noon..."
 ```
 
@@ -546,7 +546,7 @@ Knowledge Base/
 │   │   └─ Sister.md (birthday, preferences, past conversations)
 │   └─ Friends/
 ├─ Projects/
-│   ├─ OneClaw Setup/ (technical details, decisions made)
+│   ├─ AgentShroud Setup/ (technical details, decisions made)
 │   └─ Home Renovation/
 ├─ Reference/
 │   ├─ Recipes/
@@ -595,7 +595,7 @@ Agent: "On Feb 14, 2026, you researched Docker security and noted:
 **Complexity**: Very High
 **ETA**: 6+ months
 
-**Description**: Family/team can share one OneClaw instance with role-based permissions.
+**Description**: Family/team can share one AgentShroud instance with role-based permissions.
 
 **Use Case**: Family assistant shared by household members.
 

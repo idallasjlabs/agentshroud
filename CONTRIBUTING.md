@@ -1,4 +1,4 @@
-# Contributing to OneClaw
+# Contributing to AgentShroud
 
 Thank you for your interest in contributing! This guide covers the process from setup to merge.
 
@@ -6,8 +6,8 @@ Thank you for your interest in contributing! This guide covers the process from 
 
 ```bash
 # 1. Fork and clone
-git clone https://github.com/YOUR_USERNAME/oneclaw.git
-cd oneclaw
+git clone https://github.com/YOUR_USERNAME/agentshroud.git
+cd agentshroud
 
 # 2. Create Python 3.11 virtual environment
 python3.11 -m venv .venv
@@ -91,4 +91,4 @@ We follow the [Contributor Covenant](https://www.contributor-covenant.org/versio
 
 ## Questions?
 
-Open a [Discussion](https://github.com/idallasj/oneclaw/discussions) or file an issue.
+Open a [Discussion](https://github.com/idallasj/agentshroud/discussions) or file an issue.

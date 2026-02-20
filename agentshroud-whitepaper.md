@@ -2,7 +2,7 @@
 
 **White Paper v1.0 — February 2026**
 **Author: Isaiah Jefferson**
-**Repository: github.com/idallasj/oneclaw**
+**Repository: github.com/idallasj/agentshroud**
 **Version: v0.4.0 (Phase 11)**
 
 ---
@@ -705,8 +705,8 @@ The AI agent security space is nascent. Most platforms treat security as an afte
 ### 7.2 Quick Start
 
 ```bash
-git clone https://github.com/idallasj/oneclaw.git
-cd oneclaw
+git clone https://github.com/idallasj/agentshroud.git
+cd agentshroud
 cp .env.example .env
 # Edit .env with your configuration
 docker compose up -d
@@ -1230,7 +1230,7 @@ The entire stack is open source, runs on a Raspberry Pi, and has 951 tests at 92
 
 If you're deploying AI agents in production — whether for personal use, for your team, or for your enterprise — you need a security layer. AgentShroud is that layer.
 
-**Get started:** [github.com/idallasj/oneclaw](https://github.com/idallasj/oneclaw)
+**Get started:** [github.com/idallasj/agentshroud](https://github.com/idallasj/agentshroud)
 **Questions:** Open an issue on GitHub
 **Author:** Isaiah Jefferson
 

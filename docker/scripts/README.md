@@ -295,9 +295,9 @@ docker compose -f docker/docker-compose.yml exec openclaw ls -la /run/secrets/
 
 ## File Locations
 
-- **Scripts**: `/Users/ijefferson.admin/Development/oneclaw/docker/scripts/`
-- **API Keys**: `/Users/ijefferson.admin/Development/oneclaw/docker/secrets/`
-- **Docker Compose**: `/Users/ijefferson.admin/Development/oneclaw/docker/docker-compose.yml`
+- **Scripts**: `/Users/ijefferson.admin/Development/agentshroud/docker/scripts/`
+- **API Keys**: `/Users/ijefferson.admin/Development/agentshroud/docker/secrets/`
+- **Docker Compose**: `/Users/ijefferson.admin/Development/agentshroud/docker/docker-compose.yml`
 - **OpenClaw Config**: Docker volume `openclaw-config` (inside container: `~/.openclaw/`)
 - **Gateway Data**: Docker volume `gateway-data`
 

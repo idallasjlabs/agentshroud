@@ -10,8 +10,8 @@
 
 set -euo pipefail
 
-PYTHON="${HOME}/miniforge3/envs/oneclaw/bin/python"
-PROJECT_DIR="${HOME}/Development/oneclaw"
+PYTHON="${HOME}/miniforge3/envs/agentshroud/bin/python"
+PROJECT_DIR="${HOME}/Development/agentshroud"
 cd "${PROJECT_DIR}"
 
 GREEN='\033[0;32m'

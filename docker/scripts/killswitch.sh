@@ -155,7 +155,7 @@ case "$MODE" in
         echo "[3/7] Clearing cached credentials from volumes..."
 
         # Remove API keys from OpenClaw config volume
-        docker run --rm -v oneclaw_openclaw-config:/data alpine sh -c \
+        docker run --rm -v agentshroud_openclaw-config:/data alpine sh -c \
             "find /data -type f -name '*.key' -o -name '*api*' -o -name '*token*' | xargs rm -f" 2>/dev/null || true
         echo -e "${GREEN}✓${NC} Cleared cached credentials from volumes"
 

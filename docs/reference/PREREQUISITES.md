@@ -431,7 +431,7 @@ sudo tailscale up
 ## 🗂️ File Structure
 
 ```
-oneclaw/
+agentshroud/
 ├── docker/
 │   ├── docker-compose.yml          # Container orchestration
 │   ├── Dockerfile.openclaw         # OpenClaw container definition
@@ -543,8 +543,8 @@ After all prerequisites are met:
 
 ```bash
 # Clone repo
-git clone https://github.com/yourusername/oneclaw.git
-cd oneclaw
+git clone https://github.com/yourusername/agentshroud.git
+cd agentshroud
 
 # Create secrets
 mkdir -p docker/secrets

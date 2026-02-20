@@ -129,7 +129,7 @@ AgentShroud implements a comprehensive audit system with cryptographic integrity
     "user_namespace": true
   },
   "network_config": {
-    "networks": ["secureclaw_internal"],
+    "networks": ["agentshroud_internal"],
     "exposed_ports": []
   }
 }

@@ -178,7 +178,7 @@ iptables -A OUTPUT -d 10.0.0.0/8 -j DROP
 ### Storage
 
 ```bash
-~/.oneclaw-secure/secrets/.env
+~/.agentshroud-secure/secrets/.env
 chmod 600 (owner read/write only)
 ```
 
@@ -225,7 +225,7 @@ logging:
 ### Health Monitoring
 
 ```bash
-~/.oneclaw-secure/monitor.sh
+~/.agentshroud-secure/monitor.sh
 ```
 
 - Runs via cron every 5 minutes
@@ -237,7 +237,7 @@ logging:
 ### Audit Logging
 
 ```
-~/.oneclaw-secure/workspace/logs/audit.log
+~/.agentshroud-secure/workspace/logs/audit.log
 ```
 
 - Records all OpenClaw actions
@@ -291,11 +291,11 @@ app.listen(8765, '127.0.0.1');  // Localhost only
 
 ```bash
 # Update OpenClaw to latest version
-cd ~/.oneclaw-secure
+cd ~/.agentshroud-secure
 ./stop.sh
 
 # Rebuild with latest source
-docker build -t oneclaw-secure:latest -f Dockerfile .
+docker build -t agentshroud-secure:latest -f Dockerfile .
 
 ./start.sh
 ```
@@ -304,10 +304,10 @@ docker build -t oneclaw-secure:latest -f Dockerfile .
 
 ```bash
 # Check for security advisories
-docker exec oneclaw_gateway openclaw security audit
+docker exec agentshroud_gateway openclaw security audit
 
 # Review audit log
-tail -100 ~/.oneclaw-secure/workspace/logs/audit.log
+tail -100 ~/.agentshroud-secure/workspace/logs/audit.log
 ```
 
 ## Incident Response
@@ -316,7 +316,7 @@ tail -100 ~/.oneclaw-secure/workspace/logs/audit.log
 
 1. **Stop services immediately**
    ```bash
-   cd ~/.oneclaw-secure
+   cd ~/.agentshroud-secure
    ./stop.sh
    ```
 
@@ -328,7 +328,7 @@ tail -100 ~/.oneclaw-secure/workspace/logs/audit.log
 
 3. **Check for persistence**
    ```bash
-   docker inspect oneclaw_gateway
+   docker inspect agentshroud_gateway
    launchctl list | grep openclaw
    ```
 
@@ -339,8 +339,8 @@ tail -100 ~/.oneclaw-secure/workspace/logs/audit.log
 
 5. **Rebuild from scratch**
    ```bash
-   docker rmi oneclaw-secure:latest
-   docker build -t oneclaw-secure:latest -f Dockerfile .
+   docker rmi agentshroud-secure:latest
+   docker build -t agentshroud-secure:latest -f Dockerfile .
    ```
 
 6. **Report to OpenClaw team**
@@ -373,7 +373,7 @@ Ongoing:
 
 ## Questions?
 
-- OpenClaw Security: https://docs.oneclaw.ai/gateway/security
+- OpenClaw Security: https://docs.agentshroud.ai/gateway/security
 - Docker Security: https://docs.docker.com/engine/security/
 - Report Issues: https://github.com/openclaw/openclaw/security
 

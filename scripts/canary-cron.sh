@@ -5,8 +5,8 @@
 # On failure: writes alert to ~/logs/canary-alert.log
 # On success: logs to ~/logs/canary.log
 
-PYTHON="${HOME}/miniforge3/envs/oneclaw/bin/python"
-PROJECT_DIR="${HOME}/Development/oneclaw"
+PYTHON="${HOME}/miniforge3/envs/agentshroud/bin/python"
+PROJECT_DIR="${HOME}/Development/agentshroud"
 LOG_DIR="${HOME}/logs"
 CANARY_LOG="${LOG_DIR}/canary.log"
 ALERT_LOG="${LOG_DIR}/canary-alert.log"

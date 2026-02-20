@@ -1,8 +1,8 @@
-# OneClaw Control UI Connection Guide
+# AgentShroud Control UI Connection Guide
 
 ## Quick Fix: Connect to Gateway
 
-Your OneClaw gateway is running at `ws://127.0.0.1:18789`. Here's how to connect the Control UI.
+Your AgentShroud gateway is running at `ws://127.0.0.1:18789`. Here's how to connect the Control UI.
 
 ### Step 1: Open Control UI
 
@@ -31,7 +31,7 @@ The UI should show "Connected" in green. If not, try:
 
 1. **Check if gateway is running**:
    ```bash
-   docker ps | grep oneclaw
+   docker ps | grep agentshroud
    ```
    Should show: `Up X minutes (healthy)`
 
@@ -48,7 +48,7 @@ The UI should show "Connected" in green. If not, try:
 
 3. **Check gateway logs**:
    ```bash
-   docker logs oneclaw_isaiah --tail 50
+   docker logs agentshroud_isaiah --tail 50
    ```
    Look for connection attempts or errors
 
@@ -75,18 +75,18 @@ Try opening this directly in your browser.
 
 1. **Restart everything**:
    ```bash
-   ./stop-oneclaw.sh
-   ./start-oneclaw.sh
+   ./stop-agentshroud.sh
+   ./start-agentshroud.sh
    ```
 
 2. **Check gateway health**:
    ```bash
-   docker exec oneclaw_isaiah node openclaw.mjs health
+   docker exec agentshroud_isaiah node openclaw.mjs health
    ```
 
 3. **Verify token**:
    ```bash
-   grep OPENCLAW_GATEWAY_TOKEN oneclaw-container/secrets/.env
+   grep OPENCLAW_GATEWAY_TOKEN agentshroud-container/secrets/.env
    ```
 
 ### "Disconnected (1006): no reason"
@@ -99,14 +99,14 @@ This WebSocket error usually means:
 **Fix**:
 1. Get fresh token:
    ```bash
-   cat oneclaw-container/secrets/.env | grep OPENCLAW_GATEWAY_TOKEN
+   cat agentshroud-container/secrets/.env | grep OPENCLAW_GATEWAY_TOKEN
    ```
 
 2. Clear browser cache and cookies for localhost:18791
 
 3. Restart gateway:
    ```bash
-   docker compose -f oneclaw-container/docker-compose.yml restart
+   docker compose -f agentshroud-container/docker-compose.yml restart
    ```
 
 ### "Connection timeout"
@@ -124,7 +124,7 @@ docker    123 you    45u  IPv4  0x...      0t0  TCP localhost:18789 (LISTEN)
 
 If nothing, gateway isn't listening. Check logs:
 ```bash
-docker logs oneclaw_isaiah --tail 100
+docker logs agentshroud_isaiah --tail 100
 ```
 
 ## Manual Connection Test
@@ -158,18 +158,18 @@ If the web UI won't connect, you can use the CLI directly:
 
 ```bash
 # Check status
-docker exec oneclaw_isaiah node openclaw.mjs status
+docker exec agentshroud_isaiah node openclaw.mjs status
 
 # Send a test message
-docker exec oneclaw_isaiah node openclaw.mjs message send \
+docker exec agentshroud_isaiah node openclaw.mjs message send \
   --target test \
   --message "Hello, this is a test"
 
 # View models
-docker exec oneclaw_isaiah node openclaw.mjs models status
+docker exec agentshroud_isaiah node openclaw.mjs models status
 
 # Check logs
-docker exec oneclaw_isaiah node openclaw.mjs logs --tail 50
+docker exec agentshroud_isaiah node openclaw.mjs logs --tail 50
 ```
 
 ## Getting Help
@@ -178,30 +178,30 @@ If still having issues:
 
 1. Export logs:
    ```bash
-   docker logs oneclaw_isaiah > /tmp/oneclaw-debug.log
+   docker logs agentshroud_isaiah > /tmp/agentshroud-debug.log
    ```
 
 2. Check container status:
    ```bash
-   docker inspect oneclaw_isaiah | grep -A 5 State
+   docker inspect agentshroud_isaiah | grep -A 5 State
    ```
 
 3. Open GitHub issue with:
    - Error message
    - Browser console logs (F12 → Console tab)
-   - Output of `docker logs oneclaw_isaiah --tail 100`
+   - Output of `docker logs agentshroud_isaiah --tail 100`
    - macOS version
    - Docker version
 
 ## Success Checklist
 
-- [ ] `docker ps` shows oneclaw_isaiah as "Up" and "healthy"
-- [ ] `docker logs oneclaw_isaiah` shows "gateway listening on ws://127.0.0.1:18789"
+- [ ] `docker ps` shows agentshroud_isaiah as "Up" and "healthy"
+- [ ] `docker logs agentshroud_isaiah` shows "gateway listening on ws://127.0.0.1:18789"
 - [ ] http://localhost:18791 loads the Control UI
 - [ ] Control UI shows "Connected" to gateway
 - [ ] Can send test message and get response
 
-If all checked ✅ → You're ready to use OneClaw!
+If all checked ✅ → You're ready to use AgentShroud!
 
 ---
 
