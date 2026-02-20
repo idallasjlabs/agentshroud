@@ -31,23 +31,23 @@ cd docker && docker compose build && docker compose up -d
 
 For deployments without Git:
 
-1. Download the release tarball from the [Releases page](https://github.com/yourusername/oneclaw/releases)
+1. Download the release tarball from the [Releases page](https://github.com/yourusername/agentshroud/releases)
 2. Back up your current installation:
    ```bash
-   cp -r oneclaw oneclaw.backup
+   cp -r agentshroud agentshroud.backup
    ```
 3. Extract the new release:
    ```bash
-   tar xzf oneclaw-v0.2.0.tar.gz
+   tar xzf agentshroud-v0.2.0.tar.gz
    ```
 4. Copy your configuration:
    ```bash
-   cp oneclaw.backup/agentshroud.yaml oneclaw/agentshroud.yaml
-   cp -r oneclaw.backup/docker/secrets oneclaw/docker/secrets
+   cp agentshroud.backup/agentshroud.yaml agentshroud/agentshroud.yaml
+   cp -r agentshroud.backup/docker/secrets agentshroud/docker/secrets
    ```
 5. Rebuild and restart:
    ```bash
-   cd oneclaw/docker && docker compose build && docker compose up -d
+   cd agentshroud/docker && docker compose build && docker compose up -d
    ```
 
 ## Database Migrations
@@ -74,9 +74,9 @@ cd docker && docker compose build && docker compose up -d
 Restore from your backup:
 
 ```bash
-rm -rf oneclaw
-mv oneclaw.backup oneclaw
-cd oneclaw/docker && docker compose build && docker compose up -d
+rm -rf agentshroud
+mv agentshroud.backup agentshroud
+cd agentshroud/docker && docker compose build && docker compose up -d
 ```
 
 ## Checking the Changelog
@@ -91,4 +91,4 @@ git log v0.1.0..v0.2.0 --oneline
 cat CHANGELOG.md
 ```
 
-Release notes are also published on the [GitHub Releases page](https://github.com/yourusername/oneclaw/releases).
+Release notes are also published on the [GitHub Releases page](https://github.com/yourusername/agentshroud/releases).

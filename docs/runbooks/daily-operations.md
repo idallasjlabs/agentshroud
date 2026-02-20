@@ -62,10 +62,10 @@ du -sh data/
 ### 1. Dependency Updates
 ```bash
 # Check for known vulnerabilities
-~/miniforge3/envs/oneclaw/bin/pip audit
+~/miniforge3/envs/agentshroud/bin/pip audit
 
 # Check for outdated packages
-~/miniforge3/envs/oneclaw/bin/pip list --outdated
+~/miniforge3/envs/agentshroud/bin/pip list --outdated
 ```
 
 ### 2. Backup Verification
@@ -85,7 +85,7 @@ tailscale status
 
 ### 4. Test Suite
 ```bash
-~/miniforge3/envs/oneclaw/bin/python -m pytest gateway/tests/ -v
+~/miniforge3/envs/agentshroud/bin/python -m pytest gateway/tests/ -v
 # All tests should pass. Failures indicate drift.
 ```
 

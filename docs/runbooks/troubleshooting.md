@@ -121,10 +121,10 @@ docker stats --no-stream
 **Check:**
 ```bash
 # Run with verbose output
-~/miniforge3/envs/oneclaw/bin/python -m pytest gateway/tests/ -v --tb=long
+~/miniforge3/envs/agentshroud/bin/python -m pytest gateway/tests/ -v --tb=long
 
 # Run specific failing test
-~/miniforge3/envs/oneclaw/bin/python -m pytest gateway/tests/test_specific.py::test_name -v
+~/miniforge3/envs/agentshroud/bin/python -m pytest gateway/tests/test_specific.py::test_name -v
 ```
 
 **Fixes:**

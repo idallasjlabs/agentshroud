@@ -6,13 +6,13 @@ This package contains everything you need to make your OpenClaw bot represent yo
 
 | File | OpenClaw Location | Purpose |
 |------|-------------------|---------|
-| `IDENTITY.md` | `~/.oneclaw/workspace/IDENTITY` | Core persona, name, tone, personality |
-| `SOUL.md` | `~/.oneclaw/workspace/SOUL.md` | Deep behavioral traits, values, communication style |
-| `USER.md` | `~/.oneclaw/workspace/USER` | Known facts about you (preferences, background, context) |
+| `IDENTITY.md` | `~/.agentshroud/workspace/IDENTITY` | Core persona, name, tone, personality |
+| `SOUL.md` | `~/.agentshroud/workspace/SOUL.md` | Deep behavioral traits, values, communication style |
+| `USER.md` | `~/.agentshroud/workspace/USER` | Known facts about you (preferences, background, context) |
 
 ### Setup Steps
 
-1. **Copy the files** into your OpenClaw workspace directory (`~/.oneclaw/workspace/`)
+1. **Copy the files** into your OpenClaw workspace directory (`~/.agentshroud/workspace/`)
 2. **Edit `IDENTITY`** — customize the name, emoji, and personality description
 3. **Link your LinkedIn** — OpenClaw can access LinkedIn via browser skills or you can paste your full profile text into USER
 4. **Restart the gateway** — `openclaw gateway restart` or modify via Control UI

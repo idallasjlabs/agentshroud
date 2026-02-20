@@ -5,7 +5,7 @@
 ## Prerequisites
 
 - SSH access to Pi: `ssh agentshroud-bot@<your-tailscale-hostname>`
-- conda env `oneclaw` with Python 3.11
+- conda env `agentshroud` with Python 3.11
 - Docker and Docker Compose installed
 - GitHub access via `gh` CLI
 - 1Password CLI (`op`) for secrets
@@ -15,7 +15,7 @@
 ### 1. Pull Latest Code
 
 ```bash
-cd ~/Development/oneclaw
+cd ~/Development/agentshroud
 git checkout main
 git pull origin main
 ```
@@ -23,14 +23,14 @@ git pull origin main
 ### 2. Run Tests
 
 ```bash
-~/miniforge3/envs/oneclaw/bin/python -m pytest gateway/tests/ -v
+~/miniforge3/envs/agentshroud/bin/python -m pytest gateway/tests/ -v
 # ALL tests must pass before deploying
 ```
 
 ### 3. Update Dependencies (if changed)
 
 ```bash
-~/miniforge3/envs/oneclaw/bin/pip install -r requirements.txt
+~/miniforge3/envs/agentshroud/bin/pip install -r requirements.txt
 ```
 
 ### 4. Build Containers
@@ -90,7 +90,7 @@ See [Raspberry Pi Setup Guide](../deploy/raspberry-pi.md) for initial installati
 ### Quick Summary
 
 1. Clone repo
-2. Create conda env: `conda create -n oneclaw python=3.11`
+2. Create conda env: `conda create -n agentshroud python=3.11`
 3. Install deps: `pip install -r requirements.txt`
 4. Configure secrets via 1Password + Docker Secrets
 5. `docker compose up -d`

@@ -7,7 +7,7 @@ set -e
 echo 🚀 Deploying AgentShroud Gateway...
 
 # Navigate to docker directory
-cd ~/Development/oneclaw/docker
+cd ~/Development/agentshroud/docker
 
 # Build the gateway service
 echo 📦 Building gateway container...
@@ -27,4 +27,4 @@ echo 🌐 Access the web dashboard at:
 echo  http://marvin.tail240ea8.ts.net:8080/
 echo 
 echo 📋 To check logs:
-echo  cd /home/node/Development/oneclaw/docker
+echo  cd /home/node/Development/agentshroud/docker

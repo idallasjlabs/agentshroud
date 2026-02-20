@@ -7,7 +7,7 @@
 
 | Requirement | Status | Implementation |
 |-------------|--------|----------------|
-| Everything in current folder | ✅ EXCEEDS | All data in `oneclaw-container/` - zero host files |
+| Everything in current folder | ✅ EXCEEDS | All data in `agentshroud-container/` - zero host files |
 | No host dependencies | ✅ EXCEEDS | Only Docker required, no system services |
 | Internet-only access | ✅ EXCEEDS | Custom network, LAN/VPN blocked |
 | No LAN access | ✅ EXCEEDS | Network isolation + firewall verification |
@@ -220,7 +220,7 @@ This deployment meets or exceeds:
 ### Monitoring:
 - Container health checks every 30s
 - Audit log: `/app/logs/audit.log` (90-day retention)
-- Docker events: `docker events --filter container=oneclaw_isaiah`
+- Docker events: `docker events --filter container=agentshroud_isaiah`
 
 ---
 
@@ -228,7 +228,7 @@ This deployment meets or exceeds:
 
 ```bash
 # Verify container security
-docker inspect oneclaw_isaiah | jq '{
+docker inspect agentshroud_isaiah | jq '{
   ReadOnlyRoot: .HostConfig.ReadonlyRootfs,
   User: .Config.User,
   CapDrop: .HostConfig.CapDrop,
@@ -241,16 +241,16 @@ docker inspect oneclaw_isaiah | jq '{
 }'
 
 # Test network isolation
-docker exec oneclaw_isaiah curl -I --connect-timeout 5 https://google.com  # Should work
-docker exec oneclaw_isaiah curl -I --connect-timeout 5 http://192.168.1.1  # Should fail
-docker exec oneclaw_isaiah curl -I --connect-timeout 5 http://10.0.0.1     # Should fail
-docker exec oneclaw_isaiah curl -I --connect-timeout 5 http://172.16.0.1   # Should fail
+docker exec agentshroud_isaiah curl -I --connect-timeout 5 https://google.com  # Should work
+docker exec agentshroud_isaiah curl -I --connect-timeout 5 http://192.168.1.1  # Should fail
+docker exec agentshroud_isaiah curl -I --connect-timeout 5 http://10.0.0.1     # Should fail
+docker exec agentshroud_isaiah curl -I --connect-timeout 5 http://172.16.0.1   # Should fail
 
 # Verify non-root
-docker exec oneclaw_isaiah id  # Should show uid=1000(node)
+docker exec agentshroud_isaiah id  # Should show uid=1000(node)
 
 # Check filesystem
-docker exec oneclaw_isaiah touch /test 2>&1  # Should fail (read-only)
+docker exec agentshroud_isaiah touch /test 2>&1  # Should fail (read-only)
 ```
 
 ---

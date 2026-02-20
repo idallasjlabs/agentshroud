@@ -20,13 +20,13 @@ Add to crontab (`crontab -e`):
 
 ```cron
 # Daily backup at 02:00 UTC (create scripts/backup.sh from the manual procedure below)
-0 2 * * * /home/agentshroud-bot/Development/oneclaw/scripts/backup.sh
+0 2 * * * /home/agentshroud-bot/Development/agentshroud/scripts/backup.sh
 ```
 
 ### Manual Backup
 
 ```bash
-cd ~/Development/oneclaw
+cd ~/Development/agentshroud
 
 # Create timestamped backup
 BACKUP_DIR="backups/$(date +%Y-%m-%d)"
@@ -63,7 +63,7 @@ scp backups/agentshroud-$(date +%Y-%m-%d).tar.gz \
 ### Restore from Backup
 
 ```bash
-cd ~/Development/oneclaw
+cd ~/Development/agentshroud
 
 # Stop services
 docker compose down
@@ -90,13 +90,13 @@ If the Pi is completely lost:
 
 2. **Restore code:**
    ```bash
-   git clone https://github.com/idallasj/oneclaw.git ~/Development/oneclaw
+   git clone https://github.com/idallasj/agentshroud.git ~/Development/agentshroud
    ```
 
 3. **Restore conda env:**
    ```bash
-   conda create -n oneclaw python=3.11
-   conda activate oneclaw
+   conda create -n agentshroud python=3.11
+   conda activate agentshroud
    pip install -r requirements.txt
    ```
 
@@ -123,7 +123,7 @@ If the Pi is completely lost:
    ```bash
    ./scripts/tailscale-check.sh
    curl http://localhost:8080/health
-   ~/miniforge3/envs/oneclaw/bin/python -m pytest gateway/tests/ -v
+   ~/miniforge3/envs/agentshroud/bin/python -m pytest gateway/tests/ -v
    ```
 
 ---

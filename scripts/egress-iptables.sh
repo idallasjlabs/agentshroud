@@ -8,7 +8,7 @@
 set -euo pipefail
 
 # Configuration — edit these for your environment
-DOCKER_NETWORK="${DOCKER_NETWORK:-secureclaw_network}"
+DOCKER_NETWORK="${DOCKER_NETWORK:-agentshroud_network}"
 DOCKER_BRIDGE="${DOCKER_BRIDGE:-br-agentshroud}"
 
 # Allowed outbound destinations (add your domains/IPs here)

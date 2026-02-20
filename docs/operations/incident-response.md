@@ -76,7 +76,7 @@ docker compose exec agentshroud sqlite3 /data/agentshroud.db \
   ".dump audit_entries"
 
 # 4. Preserve container state
-docker commit secureclaw_secureclaw_1 evidence:$(date +%Y%m%d_%H%M%S)
+docker commit agentshroud_agentshroud_1 evidence:$(date +%Y%m%d_%H%M%S)
 
 # 5. Start incident log
 echo "$(date): P1 INCIDENT - Data exfiltration detected" >> incident.log
