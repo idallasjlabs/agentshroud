@@ -1,5 +1,5 @@
 #!/bin/bash
-# View OpenClaw and Gateway logs
+# View AgentShroud and Gateway logs
 
 # Auto-detect project root
 PROJECT_ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")/../.." && pwd)"
@@ -9,9 +9,9 @@ SERVICE=${1:-all}
 LINES=${2:-50}
 
 case $SERVICE in
-    openclaw|oc)
-        echo "=== OpenClaw Logs (last $LINES lines) ==="
-        docker logs openclaw-bot --tail $LINES
+    agentshroud|oc)
+        echo "=== AgentShroud Logs (last $LINES lines) ==="
+        docker logs agentshroud-bot --tail $LINES
         ;;
     gateway|gw)
         echo "=== Gateway Logs (last $LINES lines) ==="
@@ -20,9 +20,9 @@ case $SERVICE in
     all|*)
         echo "=== Gateway Logs (last $LINES lines) ==="
         docker logs agentshroud-gateway --tail $LINES
-        echo -e "\n=== OpenClaw Logs (last $LINES lines) ==="
-        docker logs openclaw-bot --tail $LINES
+        echo -e "\n=== AgentShroud Logs (last $LINES lines) ==="
+        docker logs agentshroud-bot --tail $LINES
         ;;
 esac
 
-echo -e "\n📋 Usage: ./logs.sh [openclaw|gateway|all] [lines]"
+echo -e "\n📋 Usage: ./logs.sh [agentshroud|gateway|all] [lines]"
