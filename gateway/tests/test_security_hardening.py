@@ -105,13 +105,13 @@ class TestEncryptedStore:
         assert store2.get_blob_key_id(new_blobs[0]) == 2
 
     def test_env_var_secret(self):
-        os.environ["AGENTSHROUD_MASTER_SECRET"] = "env-secret"
+        os.environ["SECURECLAW_MASTER_SECRET"] = "env-secret"
         try:
             store = EncryptedStore()
             blob = store.encrypt("env test")
             assert store.decrypt_str(blob) == "env test"
         finally:
-            del os.environ["AGENTSHROUD_MASTER_SECRET"]
+            del os.environ["SECURECLAW_MASTER_SECRET"]
 
     def test_file_secret(self):
         with tempfile.NamedTemporaryFile(mode="w", suffix=".key", delete=False) as f:
@@ -123,7 +123,7 @@ class TestEncryptedStore:
         os.unlink(f.name)
 
     def test_no_secret_raises(self):
-        os.environ.pop("AGENTSHROUD_MASTER_SECRET", None)
+        os.environ.pop("SECURECLAW_MASTER_SECRET", None)
         with pytest.raises(ValueError, match="No master secret"):
             EncryptedStore()
 

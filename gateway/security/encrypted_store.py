@@ -66,7 +66,7 @@ class EncryptedStore:
 
         Args:
             master_secret: The master secret string. If None, reads from secret_path
-                or AGENTSHROUD_MASTER_SECRET env var.
+                or SECURECLAW_MASTER_SECRET env var.
             secret_path: Path to Docker secret file (e.g. /run/secrets/master_key).
             iterations: PBKDF2 iteration count.
             key_id: Numeric key identifier for rotation tracking.
@@ -77,7 +77,7 @@ class EncryptedStore:
         if not self._master_secret:
             raise ValueError(
                 "No master secret provided. Set master_secret, secret_path, "
-                "or AGENTSHROUD_MASTER_SECRET environment variable."
+                "or SECURECLAW_MASTER_SECRET environment variable."
             )
 
     @staticmethod
@@ -91,7 +91,7 @@ class EncryptedStore:
             p = Path(secret_path)
             if p.exists():
                 return p.read_bytes().strip()
-        env_secret = os.environ.get("AGENTSHROUD_MASTER_SECRET")
+        env_secret = os.environ.get("SECURECLAW_MASTER_SECRET")
         if env_secret:
             return env_secret.encode("utf-8")
         return None
