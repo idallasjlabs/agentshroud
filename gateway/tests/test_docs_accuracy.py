@@ -53,7 +53,7 @@ class TestReadmeAccuracy:
         assert "MIT" in readme
 
     def test_architecture_diagram_present(self, readme):
-        assert "AGENTSHROUD GATEWAY" in readme
+        assert "SECURECLAW GATEWAY" in readme
 
     def test_quickstart_section_present(self, readme):
         assert "Quickstart" in readme or "quickstart" in readme

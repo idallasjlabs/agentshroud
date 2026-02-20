@@ -356,7 +356,7 @@ async def rollback_openclaw(user: str = Depends(require_auth)) -> dict:
 
 
 @router.get("/updates/agentshroud")
-async def check_secureclaw_updates(user: str = Depends(require_auth)) -> dict:
+async def check_agentshroud_updates(user: str = Depends(require_auth)) -> dict:
     """Check for AgentShroud updates from GitHub."""
     import subprocess
 
@@ -405,7 +405,7 @@ async def check_secureclaw_updates(user: str = Depends(require_auth)) -> dict:
 
 
 @router.post("/updates/agentshroud/upgrade")
-async def upgrade_secureclaw(req: UpdateRequest, user: str = Depends(require_auth)) -> dict:
+async def upgrade_agentshroud(req: UpdateRequest, user: str = Depends(require_auth)) -> dict:
     """Pull latest AgentShroud, test, rebuild, restart. Auto-rollback on failure."""
     import subprocess
 
@@ -486,7 +486,7 @@ async def upgrade_secureclaw(req: UpdateRequest, user: str = Depends(require_aut
 
 
 @router.post("/updates/agentshroud/rollback")
-async def rollback_secureclaw(user: str = Depends(require_auth)) -> dict:
+async def rollback_agentshroud(user: str = Depends(require_auth)) -> dict:
     """Revert to previous git commit and rebuild."""
     import subprocess
     try:
