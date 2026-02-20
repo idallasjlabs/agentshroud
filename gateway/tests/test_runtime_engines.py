@@ -410,9 +410,9 @@ class TestRuntimeConfig:
     def test_from_env_set(self):
         from gateway.runtime.config import RuntimeConfig
         with patch.dict(os.environ, {
-            "SECURECLAW_RUNTIME": "podman",
-            "SECURECLAW_ROOTLESS": "true",
-            "SECURECLAW_COMPOSE_FILE": "custom.yml",
+            "AGENTSHROUD_RUNTIME": "podman",
+            "AGENTSHROUD_ROOTLESS": "true",
+            "AGENTSHROUD_COMPOSE_FILE": "custom.yml",
         }):
             config = RuntimeConfig.from_env()
             assert config.runtime == "podman"

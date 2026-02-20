@@ -27,7 +27,7 @@ PRIORITY_MAP = {
 }
 
 # AgentShroud-specific rule prefixes
-SECURECLAW_RULES = [
+AGENTSHROUD_RULES = [
     "AgentShroud",
     "OpenClaw",
     "Container Shell",
@@ -127,7 +127,7 @@ def is_agentshroud_rule(rule_name: str) -> bool:
     Returns:
         True if rule matches AgentShroud patterns.
     """
-    return any(rule_name.startswith(prefix) for prefix in SECURECLAW_RULES)
+    return any(rule_name.startswith(prefix) for prefix in AGENTSHROUD_RULES)
 
 
 def categorize_alerts(alerts: list[dict[str, Any]]) -> dict[str, list[dict[str, Any]]]:

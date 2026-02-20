@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>SecureClaw — Installation Wizard</title>
+<title>AgentShroud — Installation Wizard</title>
 <style>
 :root {
   --bg: #0d1117; --surface: #161b22; --surface2: #21262d;
@@ -57,7 +57,7 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; b
 <body>
 <div class="wizard">
   <div class="logo">
-    <h1>🛡️ SecureClaw</h1>
+    <h1>🛡️ AgentShroud</h1>
     <p>Secure AI Agent Platform — Installation Wizard</p>
   </div>
 
@@ -65,7 +65,7 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; b
   <div class="step active" id="step-1">
     <h2>Welcome</h2>
     <p>Let's set up your secure AI agent platform. This wizard will guide you through prerequisites, runtime selection, configuration, and installation.</p>
-    <p>SecureClaw acts as a security proxy between your AI agents and the outside world — PII sanitization, prompt injection defense, approval queues, audit trails, and more.</p>
+    <p>AgentShroud acts as a security proxy between your AI agents and the outside world — PII sanitization, prompt injection defense, approval queues, audit trails, and more.</p>
     <div class="btn-row">
       <button class="btn btn-primary" onclick="goStep(2); checkPrereqs()">Check Prerequisites →</button>
     </div>
@@ -156,7 +156,7 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; b
     <div class="progress-log" id="install-log"></div>
     <div id="install-done" style="display:none; margin-top:1.5rem;">
       <h3 style="color:var(--green);">✅ Installation Complete!</h3>
-      <p style="margin-top:0.5rem;">Your SecureClaw platform is running.</p>
+      <p style="margin-top:0.5rem;">Your AgentShroud platform is running.</p>
       <div class="btn-row">
         <a href="/manage" class="btn btn-primary">Open Dashboard →</a>
       </div>
@@ -258,7 +258,7 @@ async function startInstall() {
   const steps = [
     'Validating configuration…',
     'Pulling container images…',
-    'Building SecureClaw Gateway…',
+    'Building AgentShroud Gateway…',
     'Building OpenClaw container…',
     'Configuring security profiles…',
     'Starting services…',
