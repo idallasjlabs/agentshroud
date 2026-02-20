@@ -54,9 +54,9 @@ Claude Code is the **PRIMARY developer** in this repository. It has the most adv
 ├── skills/                    # Skill definitions (workflows)
 │   ├── pr/SKILL.md           # /pr command - PR descriptions
 │   ├── tdd/SKILL.md          # /tdd command - TDD workflow
-│   ├── aws-mcp-profile/SKILL.md   # /aws-mcp-profile - AWS MCP setup
-│   ├── mcp-doctor/SKILL.md        # /mcp-doctor - Diagnose MCP issues
-│   └── mcp-auth-reset/SKILL.md    # /mcp-auth-reset - Reset MCP auth
+│   ├── mcpm-aws-profile/SKILL.md  # /mcpm-aws-profile - AWS MCP setup
+│   ├── mcpm-doctor/SKILL.md       # /mcpm-doctor - Diagnose MCP issues
+│   └── mcpm-auth-reset/SKILL.md   # /mcpm-auth-reset - Reset MCP auth
 ├── settings.json             # Team-shared configuration
 ├── settings.local.json       # Personal overrides (gitignored)
 └── statusline.sh            # Custom status line
@@ -640,9 +640,9 @@ Claude Code includes skills for managing MCP servers:
 
 | Skill | Command | Purpose |
 |-------|---------|---------|
-| AWS MCP Profile | `/aws-mcp-profile` | Configure AWS profile for MCP |
-| MCP Doctor | `/mcp-doctor` | Diagnose MCP connection issues |
-| MCP Auth Reset | `/mcp-auth-reset` | Reset and re-authenticate MCP |
+| AWS MCP Profile | `/mcpm-aws-profile` | Configure AWS profile for MCP |
+| MCP Doctor | `/mcpm-doctor` | Diagnose MCP connection issues |
+| MCP Auth Reset | `/mcpm-auth-reset` | Reset and re-authenticate MCP |
 
 See `MCP_README.md` for complete setup instructions and `MCP_ADDITIONAL_SERVICES.md` for AWS API MCP server details.
 

@@ -21,9 +21,9 @@
 | AWS operations | `/aws` | Cloud inventory, cost optimization, FinOps |
 | Root cause analysis | `/8d` | BESS incident investigation, 8D methodology |
 | Mac app inventory | `/mac` | Discover all macOS applications |
-| Security review | `/sec` | AgentShroud 4-layer security review |
-| Environment setup | `/env` | AgentShroud Pi environment management |
-| Project tracking | `/pm` | AgentShroud roadmap and sprint tracking |
+| Security review | `/sec` | SecureClaw 4-layer security review |
+| Environment setup | `/env` | SecureClaw Pi environment management |
+| Project tracking | `/pm` | SecureClaw roadmap and sprint tracking |
 | Quick reference | `/mc` | Combined checklist |
 
 ---
@@ -107,7 +107,7 @@ gh pr create --title "feat(data-lake): add partition pruning" --body "..."
 └── reference/
     └── SKILLS_GUIDE.md            # This document
 
-llm_settings/skills/               # Additional AgentShroud-specific skills
+llm_settings/skills/               # Additional SecureClaw-specific skills
 ├── sec/SKILL.md                   # Security Review
 ├── env/SKILL.md                   # Environment Management
 └── pm/SKILL.md                    # Project Management
@@ -175,7 +175,7 @@ aws s3 rm s3://fluenceenergy-ops-data-lakehouse/das_catalog/_test/ --recursive
 ### System Utilities
 - **MAC** (`/mac`) - macOS application inventory (10 collection methods), categorization (22 categories), JSON manifest + Markdown catalog, web-sourced alternatives
 
-### AgentShroud (Project-Specific)
+### SecureClaw (Project-Specific)
 - **SEC** (`/sec`) - 4-layer security review (application, container, network, data flow), threat model
 - **ENV** (`/env`) - Raspberry Pi environment management, Docker hardening, ARM64 considerations, CI/CD workflow
 - **PM** (`/pm`) - 8-phase roadmap tracking, continuity files, sprint management, 6-agent coordination
@@ -266,13 +266,13 @@ Since we deploy directly to production:
 # Mac app inventory
 /mac
 
-# AgentShroud security review
+# SecureClaw security review
 /sec
 
-# AgentShroud environment setup
+# SecureClaw environment setup
 /env
 
-# AgentShroud project tracking
+# SecureClaw project tracking
 /pm
 
 # Quick reference
