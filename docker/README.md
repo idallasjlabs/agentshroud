@@ -231,7 +231,7 @@ docker exec openclaw-chat ls -la /workspace/
 docker exec openclaw-chat ls -la /run/secrets/
 
 # Check network config
-docker network inspect docker_secureclaw-internal
+docker network inspect docker_agentshroud-internal
 
 # Verify no external ports on openclaw
 docker ps | grep openclaw

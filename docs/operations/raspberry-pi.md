@@ -12,8 +12,8 @@
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/yourusername/oneclaw.git
-cd oneclaw
+git clone https://github.com/yourusername/agentshroud.git
+cd agentshroud
 ```
 
 ### 2. Install Docker
@@ -95,7 +95,7 @@ Docker's default seccomp profile works on ARM64. If you use a custom seccomp pro
 ### From Git (tracking main)
 
 ```bash
-cd ~/Development/oneclaw
+cd ~/Development/agentshroud
 git pull origin main
 cd docker && docker compose build && docker compose up -d
 ```
@@ -103,7 +103,7 @@ cd docker && docker compose build && docker compose up -d
 ### From a Tagged Release
 
 ```bash
-cd ~/Development/oneclaw
+cd ~/Development/agentshroud
 git fetch --all --tags
 git checkout v0.2.0
 cd docker && docker compose build && docker compose up -d

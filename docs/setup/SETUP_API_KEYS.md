@@ -19,7 +19,7 @@ OpenClaw supports multiple AI providers. This guide will help you set up both Op
 Once you have your Anthropic API key, save it:
 
 ```bash
-cd /Users/ijefferson.admin/Development/oneclaw
+cd /Users/ijefferson.admin/Development/agentshroud
 
 # Create the secret file
 echo "YOUR_ANTHROPIC_API_KEY_HERE" > docker/secrets/anthropic_api_key.txt
@@ -52,7 +52,7 @@ chmod 600 docker/secrets/openai_api_key.txt
 The container needs to be restarted to mount the new Anthropic API key secret:
 
 ```bash
-cd /Users/ijefferson.admin/Development/oneclaw
+cd /Users/ijefferson.admin/Development/agentshroud
 
 docker compose -f docker/docker-compose.yml restart openclaw
 ```
@@ -94,7 +94,7 @@ docker compose -f docker/docker-compose.yml ps
 ### Option B: Via Command Line
 
 ```bash
-cd /Users/ijefferson.admin/Development/oneclaw
+cd /Users/ijefferson.admin/Development/agentshroud
 
 # Add OpenAI authentication
 docker compose -f docker/docker-compose.yml exec openclaw \

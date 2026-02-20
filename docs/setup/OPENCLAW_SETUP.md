@@ -51,13 +51,13 @@ OpenClaw supports multiple ways to interact with your bot:
 ### 1. Build and Start OpenClaw
 
 ```bash
-cd /Users/ijefferson.admin/Development/oneclaw
+cd /Users/ijefferson.admin/Development/agentshroud
 
 # Stop old containers
 docker compose -f docker/docker-compose.yml down
 
 # Remove old volumes (optional - clean slate)
-docker volume rm oneclaw_openclaw-data 2>/dev/null || true
+docker volume rm agentshroud_openclaw-data 2>/dev/null || true
 
 # Build and start with new OpenClaw
 docker compose -f docker/docker-compose.yml up -d --build
@@ -341,16 +341,16 @@ Switch between providers:
 docker volume ls | grep openclaw
 
 # Inspect volume location
-docker volume inspect oneclaw_openclaw-config
-docker volume inspect oneclaw_openclaw-workspace
-docker volume inspect oneclaw_openclaw-ssh
+docker volume inspect agentshroud_openclaw-config
+docker volume inspect agentshroud_openclaw-workspace
+docker volume inspect agentshroud_openclaw-ssh
 
 # Backup volumes
-docker run --rm -v oneclaw_openclaw-config:/data -v $(pwd):/backup \
+docker run --rm -v agentshroud_openclaw-config:/data -v $(pwd):/backup \
   alpine tar czf /backup/openclaw-config-backup.tar.gz /data
 
 # Restore volumes
-docker run --rm -v oneclaw_openclaw-config:/data -v $(pwd):/backup \
+docker run --rm -v agentshroud_openclaw-config:/data -v $(pwd):/backup \
   alpine tar xzf /backup/openclaw-config-backup.tar.gz -C /
 ```
 
@@ -391,7 +391,7 @@ docker compose -f docker/docker-compose.yml exec openclaw openclaw dashboard --n
 docker exec agentshroud-gateway curl http://openclaw:18789/api/health
 
 # Check network
-docker network inspect oneclaw_secureclaw-internal
+docker network inspect agentshroud_agentshroud-internal
 
 # Verify both containers on same network
 docker compose -f docker/docker-compose.yml ps

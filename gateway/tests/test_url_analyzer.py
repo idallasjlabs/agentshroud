@@ -117,7 +117,7 @@ class TestLegitimateURLsAllowed:
         assert not r.is_ssrf
 
     def test_github_allowed(self, analyzer):
-        r = analyzer.analyze("https://github.com/agentshroud/oneclaw")
+        r = analyzer.analyze("https://github.com/agentshroud/agentshroud")
         assert r.verdict == URLVerdict.ALLOW
 
     def test_stackoverflow_allowed(self, analyzer):

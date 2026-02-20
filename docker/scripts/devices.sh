@@ -1,7 +1,7 @@
 #!/bin/bash
 # Manage OpenClaw trusted devices
 
-cd /Users/ijefferson.admin/Development/oneclaw
+cd /Users/ijefferson.admin/Development/agentshroud
 
 COMMAND=$1
 

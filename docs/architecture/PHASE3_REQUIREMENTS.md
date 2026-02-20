@@ -87,9 +87,9 @@ No feature creep. No advanced features until basic chat works. Focus:
 
 ```yaml
 # Container persona files (read-only)
-~/.oneclaw/workspace/IDENTITY    → /tobeornottobe/IDENTITY.md
-~/.oneclaw/workspace/SOUL.md     → /tobeornottobe/SOUL.md
-~/.oneclaw/workspace/USER        → /tobeornottobe/USER.md
+~/.agentshroud/workspace/IDENTITY    → /tobeornottobe/IDENTITY.md
+~/.agentshroud/workspace/SOUL.md     → /tobeornottobe/SOUL.md
+~/.agentshroud/workspace/USER        → /tobeornottobe/USER.md
 ```
 
 **Implementation**: Mount these as read-only volumes in docker-compose.yml
@@ -387,23 +387,23 @@ curl -X POST http://localhost:8080/forward \
 ## References
 
 **Persona Files**:
-- `/Users/ijefferson.admin/Development/oneclaw/tobeornottobe/IDENTITY.md`
-- `/Users/ijefferson.admin/Development/oneclaw/tobeornottobe/SOUL.md`
-- `/Users/ijefferson.admin/Development/oneclaw/tobeornottobe/USER.md`
-- `/Users/ijefferson.admin/Development/oneclaw/tobeornottobe/aboutme.txt`
+- `/Users/ijefferson.admin/Development/agentshroud/tobeornottobe/IDENTITY.md`
+- `/Users/ijefferson.admin/Development/agentshroud/tobeornottobe/SOUL.md`
+- `/Users/ijefferson.admin/Development/agentshroud/tobeornottobe/USER.md`
+- `/Users/ijefferson.admin/Development/agentshroud/tobeornottobe/aboutme.txt`
 
 **Feature Planning**:
-- `/Users/ijefferson.admin/Development/oneclaw/additional_featues/10_skills_to_harden_openclaw.txt`
-- `/Users/ijefferson.admin/Development/oneclaw/additional_featues/10_skils_for_the_openclaw_autodeploy_repo.txt`
-- `/Users/ijefferson.admin/Development/oneclaw/additional_featues/security_agent.txt`
+- `/Users/ijefferson.admin/Development/agentshroud/additional_featues/10_skills_to_harden_openclaw.txt`
+- `/Users/ijefferson.admin/Development/agentshroud/additional_featues/10_skils_for_the_openclaw_autodeploy_repo.txt`
+- `/Users/ijefferson.admin/Development/agentshroud/additional_featues/security_agent.txt`
 
 **Phase 2 Deliverables**:
-- `/Users/ijefferson.admin/Development/oneclaw/PHASE2_COMPLETE.md`
+- `/Users/ijefferson.admin/Development/agentshroud/PHASE2_COMPLETE.md`
 - Gateway API: 10 endpoints, 89% test coverage, 87 tests passing
 - PII sanitization, audit ledger, multi-agent routing, approval queue
 
 **Phase 1 Deliverables**:
-- `/Users/ijefferson.admin/Development/oneclaw/docs/PHASE-1-COMPLETION.md`
+- `/Users/ijefferson.admin/Development/agentshroud/docs/PHASE-1-COMPLETION.md`
 - Clean slate, new directory structure, configuration templates
 
 ---

@@ -256,9 +256,9 @@ Token: acd0842962070d58c2bb825876aab743c4c45ddbc2eae7e475c4058e0b3f7832
 6. `/docs/SESSION-SUMMARY.md` (this file)
 
 **Files Modified Earlier**:
-1. `/oneclaw-container/config/openclaw.json` → Renamed, then replaced with minimal config
-2. `/oneclaw-container/secrets/.env` → Commented out empty ANTHROPIC_API_KEY
-3. `/start-oneclaw.sh` → Updated to use spa-server.py
+1. `/agentshroud-container/config/openclaw.json` → Renamed, then replaced with minimal config
+2. `/agentshroud-container/secrets/.env` → Commented out empty ANTHROPIC_API_KEY
+3. `/start-agentshroud.sh` → Updated to use spa-server.py
 4. `/wizard-deploy.sh` → Updated to use spa-server.py
 5. `/spa-server.py` → Created SPA-aware web server
 
@@ -269,7 +269,7 @@ Token: acd0842962070d58c2bb825876aab743c4c45ddbc2eae7e475c4058e0b3f7832
 **Verified Security Measures**:
 
 ✅ **Network Isolation**:
-- Container on custom bridge network: `oneclaw_isolated`
+- Container on custom bridge network: `agentshroud_isolated`
 - Ports bound to localhost only: `127.0.0.1:18789-18790`
 - No routes to RFC1918 private ranges (192.168.x.x, 10.x.x.x, 172.16.x.x)
 
@@ -316,14 +316,14 @@ cpus: 2
 ### 5. Tasks Completed
 
 **Task List**:
-- ✅ #13: Add OpenAI API key to OneClaw
-- ✅ #14: Configure OneClaw to use OpenAI model
-- ✅ #15: Connect Control UI to OneClaw gateway
-- ✅ #19: Complete current OneClaw setup for testing
+- ✅ #13: Add OpenAI API key to AgentShroud
+- ✅ #14: Configure AgentShroud to use OpenAI model
+- ✅ #15: Connect Control UI to AgentShroud gateway
+- ✅ #19: Complete current AgentShroud setup for testing
 - ✅ #20: Create comprehensive security documentation
 - ✅ #21: Create future features roadmap
 - ✅ #22: Write announcement story for repo
-- ⚠️ #16: Test OneClaw with first message (blocked by connection issue)
+- ⚠️ #16: Test AgentShroud with first message (blocked by connection issue)
 - 📝 #17: (Optional) Create Telegram bot for mobile access
 - 📝 #18: (Optional) Configure Gmail integration
 
@@ -331,29 +331,29 @@ cpus: 2
 
 **Container Status**:
 ```bash
-docker ps | grep oneclaw
-# Result: oneclaw_isaiah running, healthy
+docker ps | grep agentshroud
+# Result: agentshroud_isaiah running, healthy
 
-docker logs oneclaw_isaiah --tail 20
+docker logs agentshroud_isaiah --tail 20
 # Result: Gateway listening on ws://127.0.0.1:18789
 ```
 
 **Gateway Health**:
 ```bash
-docker exec oneclaw_isaiah node openclaw.mjs status
+docker exec agentshroud_isaiah node openclaw.mjs status
 # Result: Gateway operational, model configured
 ```
 
 **Network Isolation** (not fully tested):
 ```bash
 # Should test:
-docker exec oneclaw_isaiah curl http://192.168.1.1
+docker exec agentshroud_isaiah curl http://192.168.1.1
 # Expected: Connection timeout or refused
 ```
 
 **API Key Verification**:
 ```bash
-docker exec oneclaw_isaiah sh -c 'echo $OPENAI_API_KEY | cut -c1-20'
+docker exec agentshroud_isaiah sh -c 'echo $OPENAI_API_KEY | cut -c1-20'
 # Result: sk-proj-Op8IhhIBP38F (key loaded)
 ```
 
@@ -384,7 +384,7 @@ docker exec oneclaw_isaiah sh -c 'echo $OPENAI_API_KEY | cut -c1-20'
 1. Check if Control UI has built-in settings page
 2. Test WebSocket connection with wscat manually
 3. Try accessing gateway's built-in UI (if exists): http://localhost:18789/
-4. Use CLI as alternative: `docker exec oneclaw_isaiah node openclaw.mjs message send`
+4. Use CLI as alternative: `docker exec agentshroud_isaiah node openclaw.mjs message send`
 
 ## Technical Decisions
 
@@ -485,7 +485,7 @@ docker exec oneclaw_isaiah sh -c 'echo $OPENAI_API_KEY | cut -c1-20'
    - Set up GitHub Discussions
 
 2. **Apple Shortcuts Development**
-   - Create "Send to OneClaw" shortcut (iOS)
+   - Create "Send to AgentShroud" shortcut (iOS)
    - Create "Forward to Agent" shortcut (macOS)
    - Test with various content types
    - Document in `/docs/SHORTCUTS-GUIDE.md`
@@ -566,7 +566,7 @@ This session accomplished the primary goals:
 
 ```bash
 # Initial connection diagnosis
-docker logs oneclaw_isaiah --tail 50
+docker logs agentshroud_isaiah --tail 50
 
 # Config updates
 mv config.json openclaw.json
@@ -577,19 +577,19 @@ docker compose down
 docker compose up -d
 
 # Model configuration attempts
-docker exec oneclaw_isaiah node openclaw.mjs models status
-docker exec oneclaw_isaiah node openclaw.mjs models set openai/gpt-4
+docker exec agentshroud_isaiah node openclaw.mjs models status
+docker exec agentshroud_isaiah node openclaw.mjs models set openai/gpt-4
 
 # Device management
-docker exec oneclaw_isaiah node openclaw.mjs devices list
+docker exec agentshroud_isaiah node openclaw.mjs devices list
 
 # Status checks
-docker exec oneclaw_isaiah node openclaw.mjs status
-docker exec oneclaw_isaiah sh -c 'echo $OPENAI_API_KEY | cut -c1-20'
+docker exec agentshroud_isaiah node openclaw.mjs status
+docker exec agentshroud_isaiah sh -c 'echo $OPENAI_API_KEY | cut -c1-20'
 
 # Web server management
 lsof -ti:18791 | xargs kill
-python3 spa-server.py 18791 oneclaw-container/control-ui &
+python3 spa-server.py 18791 agentshroud-container/control-ui &
 
 # File operations
 mkdir -p docs

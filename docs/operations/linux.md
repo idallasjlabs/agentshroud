@@ -12,8 +12,8 @@
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/yourusername/oneclaw.git
-cd oneclaw
+git clone https://github.com/yourusername/agentshroud.git
+cd agentshroud
 ```
 
 ### 2. Install Docker
@@ -112,7 +112,7 @@ After=docker.service
 Type=oneshot
 RemainAfterExit=yes
 User=agentshroud
-WorkingDirectory=/home/agentshroud/oneclaw/docker
+WorkingDirectory=/home/agentshroud/agentshroud/docker
 ExecStart=/usr/bin/docker compose up -d
 ExecStop=/usr/bin/docker compose down
 TimeoutStartSec=120
@@ -131,7 +131,7 @@ sudo systemctl enable --now agentshroud
 ## Updating to Latest Release
 
 ```bash
-cd ~/oneclaw
+cd ~/agentshroud
 git fetch --all --tags
 git checkout v<new-version>
 cd docker && docker compose build && docker compose up -d

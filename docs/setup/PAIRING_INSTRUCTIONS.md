@@ -102,7 +102,7 @@ Once paired, your browser will remember the token. You can then:
 If you lose the token or need it again:
 
 ```bash
-cd /Users/ijefferson.admin/Development/oneclaw
+cd /Users/ijefferson.admin/Development/agentshroud
 docker compose -f docker/docker-compose.yml exec openclaw \
   printenv OPENCLAW_GATEWAY_TOKEN
 ```

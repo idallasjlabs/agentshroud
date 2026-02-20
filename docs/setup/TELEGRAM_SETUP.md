@@ -21,7 +21,7 @@ Add the Telegram channel to OpenClaw:
 
 ```bash
 # From your Mac terminal
-cd /Users/ijefferson.admin/Development/oneclaw
+cd /Users/ijefferson.admin/Development/agentshroud
 
 # Add Telegram channel
 docker compose -f docker/docker-compose.yml exec openclaw openclaw channels add \

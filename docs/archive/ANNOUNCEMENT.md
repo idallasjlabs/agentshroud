@@ -101,7 +101,7 @@ Our setup? **Internet-only, no exceptions.**
 │  Docker       │                 │
 │  Container    │                 │
 │               │                 │
-│   OneClaw     │                 │
+│   AgentShroud     │                 │
 │   Gateway     │                 │
 │               │                 │
 └───────────────┼─────────────────┘
@@ -145,12 +145,12 @@ Even if an attacker achieves remote code execution inside the container:
 ```
 You check your primary Gmail, see an important email.
 Forward to: therealidallasj@gmail.com with subject "[ASK] Summarize this"
-OneClaw processes it, replies to your primary email with summary.
+AgentShroud processes it, replies to your primary email with summary.
 ```
 
 **Throughout the day**:
 ```
-iPhone: Select article in Safari → Share → "Send to OneClaw" Shortcut
+iPhone: Select article in Safari → Share → "Send to AgentShroud" Shortcut
         Auto-emails to agent with "TLDR this"
 
 Mac: Select code in any editor → Keyboard shortcut ⌘⇧O
@@ -192,7 +192,7 @@ Agent: "You have 3 reminders:
    - ✓ Create new Gmail account using Google Voice number
    - ✓ Get OpenAI or Anthropic API key
    - ✓ (Optional) Create Telegram bot via @BotFather
-3. Click "Deploy OneClaw"
+3. Click "Deploy AgentShroud"
 4. Done.
 
 The wizard:
@@ -230,7 +230,7 @@ This is **version 1.0**—a secure foundation. Here's where we're going:
 
 ### Near-Term (1-3 months)
 - **Apple Shortcuts Integration**: One-tap forwarding from iPhone/Mac
-  - "Send to OneClaw" Share Sheet
+  - "Send to AgentShroud" Share Sheet
   - Keyboard shortcuts for selected text
   - Voice command shortcuts
 
@@ -254,7 +254,7 @@ This is **version 1.0**—a secure foundation. Here's where we're going:
 - **Mobile Apps** (iOS/Android): Native apps with push notifications
 - **Desktop App** (Electron): System tray, global hotkeys, auto-start
 - **Multi-Agent Orchestration**: Specialized agents (Research, Code, Personal, Finance)
-- **Voice Interface**: "Hey OneClaw, what's on my calendar?"
+- **Voice Interface**: "Hey AgentShroud, what's on my calendar?"
 
 ---
 
@@ -321,12 +321,12 @@ One claw is tied. The other is free to help you.
 
 ## Get Involved
 
-**Repository**: https://github.com/idallasj/oneclaw
+**Repository**: https://github.com/idallasj/agentshroud
 
 **Quick Start**:
 ```bash
-git clone https://github.com/idallasj/oneclaw.git
-cd oneclaw
+git clone https://github.com/idallasj/agentshroud.git
+cd agentshroud
 open setup-wizard.html
 ```
 
@@ -427,6 +427,6 @@ I chose option 2.
 - If compromised, attacker gets a burner email and $40, not your digital identity
 - Open source, auditable, runs locally
 - Need developers, security engineers, and testers
-- https://github.com/idallasj/oneclaw
+- https://github.com/idallasj/agentshroud
 
 **Let's make AI assistants actually safe to use.**

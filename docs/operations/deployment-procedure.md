@@ -314,11 +314,11 @@ docker compose up -d
 docker compose ps
 
 # Expected output:
-# secureclaw_secureclaw_1   Up   0.0.0.0:8443->8443/tcp
-# secureclaw_openclaw_1     Up   8000/tcp
-# secureclaw_db_1           Up   
-# secureclaw_prometheus_1   Up   9090/tcp
-# secureclaw_grafana_1      Up   3000/tcp
+# agentshroud_agentshroud_1   Up   0.0.0.0:8443->8443/tcp
+# agentshroud_openclaw_1     Up   8000/tcp
+# agentshroud_db_1           Up   
+# agentshroud_prometheus_1   Up   9090/tcp
+# agentshroud_grafana_1      Up   3000/tcp
 
 # View startup logs
 docker compose logs -f agentshroud
@@ -395,7 +395,7 @@ open https://localhost:3000
 curl http://localhost:9090/api/v1/targets | jq '.data.activeTargets[] | select(.labels.job=="agentshroud")'
 
 # Check key metrics are available
-curl 'http://localhost:9090/api/v1/query?query=secureclaw_requests_total'
+curl 'http://localhost:9090/api/v1/query?query=agentshroud_requests_total'
 ```
 
 ## Post-Deployment Validation

@@ -1,5 +1,5 @@
 #!/usr/bin/env zsh
-# OneClaw Version Manager CLI
+# AgentShroud Version Manager CLI
 # Usage: openclaw-manage.sh <command> [options]
 # Requires: curl, python3 (for json.tool)
 
@@ -10,7 +10,7 @@ AUTH_TOKEN="${GATEWAY_AUTH_TOKEN:-}"
 
 usage() {
     cat <<EOF
-OneClaw Version Manager
+AgentShroud Version Manager
 
 Usage: $(basename "$0") <command> [options]
 

@@ -11,9 +11,9 @@
 # ============================================================================
 set -euo pipefail
 
-REPO_DIR="$HOME/Development/oneclaw"
+REPO_DIR="$HOME/Development/agentshroud"
 REVIEWS_DIR="$REPO_DIR/reviews"
-PYTHON="$HOME/miniforge3/envs/oneclaw/bin/python"
+PYTHON="$HOME/miniforge3/envs/agentshroud/bin/python"
 TIMESTAMP=$(date +%Y%m%d-%H%M%S)
 BRANCH=$(cd "$REPO_DIR" && git branch --show-current)
 TARGET="${1:-branch}"
@@ -62,7 +62,7 @@ GEMINI_FILE="$REVIEWS_DIR/gemini-review-$TIMESTAMP.md"
   echo ""
   echo "---"
   echo ""
-  echo "$DIFF" | ~/miniforge3/envs/oneclaw/bin/python scripts/gemini-review.py 2>/dev/null || echo "ERROR: Gemini review failed"
+  echo "$DIFF" | ~/miniforge3/envs/agentshroud/bin/python scripts/gemini-review.py 2>/dev/null || echo "ERROR: Gemini review failed"
 } > "$GEMINI_FILE"
 echo "   ✅ Saved: $GEMINI_FILE"
 

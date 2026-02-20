@@ -265,7 +265,7 @@ Run this complete test to verify everything:
 #!/bin/bash
 # Save as: test-complete-system.sh
 
-cd /Users/ijefferson.admin/Development/oneclaw
+cd /Users/ijefferson.admin/Development/agentshroud
 
 echo "=== Complete System Test ==="
 echo ""

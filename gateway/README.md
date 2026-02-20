@@ -41,7 +41,7 @@ gateway/
 - Regex fallback for Python 3.14 compatibility
 - Detects: SSN, credit cards, phone, email, addresses
 - **Fail closed**: Never forwards unsanitized content on error
-- Configurable via secureclaw.yaml
+- Configurable via agentshroud.yaml
 
 ### Data Ledger
 - SQLite with aiosqlite (fully async)
@@ -59,7 +59,7 @@ gateway/
 ### Authentication
 - Bearer token with constant-time comparison (prevents timing attacks)
 - Rate limiting: 100 requests/minute per IP
-- Auto-generates token if not in secureclaw.yaml
+- Auto-generates token if not in agentshroud.yaml
 
 ## Setup
 
@@ -73,7 +73,7 @@ pip install -r gateway/requirements.txt
 
 ### 2. Configure
 
-Edit `secureclaw.yaml` at project root:
+Edit `agentshroud.yaml` at project root:
 - Set `gateway.auth_token` (or let it auto-generate)
 - Configure PII redaction rules
 - Set ledger retention period
