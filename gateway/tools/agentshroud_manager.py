@@ -76,11 +76,11 @@ def check_current_version(db_path: str | None = None) -> dict[str, Any]:
             }
 
         # No history — try to detect from environment
-        openclaw_version = os.environ.get("OPENCLAW_VERSION", "unknown")
+        agentshroud_version = os.environ.get("AGENTSHROUD_VERSION", "unknown")
         return {
-            "current_version": openclaw_version,
+            "current_version": agentshroud_version,
             "installed_at": None,
-            "status": "detected" if openclaw_version != "unknown" else "unknown",
+            "status": "detected" if agentshroud_version != "unknown" else "unknown",
         }
     finally:
         conn.close()
