@@ -31,28 +31,28 @@ elif [ "$MODE" = "test" ]; then
     echo ""
     echo "Testing OS immutability..."
 
-    if docker exec openclaw-bot touch /etc/test-file 2>&1 | grep -q "Read-only file system"; then
-        echo "✅ OpenClaw OS is read-only"
+    if docker exec agentshroud-bot touch /etc/test-file 2>&1 | grep -q "Read-only file system"; then
+        echo "✅ AgentShroud OS is read-only"
     else
-        echo "❌ OpenClaw OS is WRITABLE (BAD)"
+        echo "❌ AgentShroud OS is WRITABLE (BAD)"
     fi
 
-    if docker exec openclaw-bot touch /home/node/workspace/test-file 2>&1; then
-        echo "✅ OpenClaw workspace is writable"
-        docker exec openclaw-bot rm /home/node/workspace/test-file
+    if docker exec agentshroud-bot touch /home/node/workspace/test-file 2>&1; then
+        echo "✅ AgentShroud workspace is writable"
+        docker exec agentshroud-bot rm /home/node/workspace/test-file
     else
-        echo "❌ OpenClaw workspace is read-only (BAD)"
+        echo "❌ AgentShroud workspace is read-only (BAD)"
     fi
 
-    if docker exec openclaw-gateway touch /etc/test-file 2>&1 | grep -q "Read-only file system"; then
+    if docker exec agentshroud-gateway touch /etc/test-file 2>&1 | grep -q "Read-only file system"; then
         echo "✅ Gateway OS is read-only"
     else
         echo "❌ Gateway OS is WRITABLE (BAD)"
     fi
 
-    if docker exec openclaw-gateway touch /app/data/test-file 2>&1; then
+    if docker exec agentshroud-gateway touch /app/data/test-file 2>&1; then
         echo "✅ Gateway data is writable"
-        docker exec openclaw-gateway rm /app/data/test-file
+        docker exec agentshroud-gateway rm /app/data/test-file
     else
         echo "❌ Gateway data is read-only (BAD)"
     fi

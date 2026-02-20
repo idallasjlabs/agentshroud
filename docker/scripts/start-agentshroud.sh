@@ -1,11 +1,11 @@
 #!/bin/bash
-# OpenClaw startup wrapper - exports API keys from Docker secrets
+# AgentShroud startup wrapper - exports API keys from Docker secrets
 
 set -euo pipefail
 
 # Export Gateway password from secret file
 if [ -f "/run/secrets/gateway_password" ]; then
-    export OPENCLAW_GATEWAY_PASSWORD="$(cat /run/secrets/gateway_password)"
+    export AGENTSHROUD_GATEWAY_PASSWORD="$(cat /run/secrets/gateway_password)"
     echo "[startup] Loaded Gateway password"
 else
     echo "[startup] Warning: Gateway password file not found"
@@ -61,7 +61,7 @@ if op_authenticate 2>/dev/null; then
     # calling 1Password, so callers must never log the return value of get-credential.
     # Item ID: he6wcfkfieekqkomuxdunal2xa (Gmail - therealidallasj)
     GMAIL_APP_PASSWORD="$(op read --session "$OP_SESSION" \
-        "op://AgentShroud Bot Credentials/he6wcfkfieekqkomuxdunal2xa/openclaw bot password" 2>/dev/null)" || true
+        "op://AgentShroud Bot Credentials/he6wcfkfieekqkomuxdunal2xa/agentshroud bot password" 2>/dev/null)" || true
     if [ -n "$GMAIL_APP_PASSWORD" ]; then
         export GMAIL_APP_PASSWORD
         echo "[startup] ✓ Loaded Gmail app password"
@@ -85,6 +85,6 @@ else
     echo "[startup] Warning: 1Password credentials not found (optional)"
 fi
 
-# Start OpenClaw gateway
-echo "[startup] Starting OpenClaw gateway..."
-exec openclaw gateway --allow-unconfigured --bind lan
+# Start AgentShroud gateway
+echo "[startup] Starting AgentShroud gateway..."
+exec agentshroud gateway --allow-unconfigured --bind lan

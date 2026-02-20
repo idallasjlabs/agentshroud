@@ -19,12 +19,12 @@ NC='\033[0m' # No Color
 
 # Helper function to run op commands in container
 run_op() {
-    docker exec openclaw-bot sh -c "export OP_EMAIL=\$(cat /run/secrets/1password_bot_email); export OP_PASSWORD=\$(cat /run/secrets/1password_bot_master_password); export OP_SECRET_KEY=\$(cat /run/secrets/1password_bot_secret_key); eval \$(echo \"\$OP_PASSWORD\" | op account add --address my.1password.com --email \"\$OP_EMAIL\" --signin 2>&1); op $1" 2>&1
+    docker exec agentshroud-bot sh -c "export OP_EMAIL=\$(cat /run/secrets/1password_bot_email); export OP_PASSWORD=\$(cat /run/secrets/1password_bot_master_password); export OP_SECRET_KEY=\$(cat /run/secrets/1password_bot_secret_key); eval \$(echo \"\$OP_PASSWORD\" | op account add --address my.1password.com --email \"\$OP_EMAIL\" --signin 2>&1); op $1" 2>&1
 }
 
 # Check if container is running
-if ! docker ps | grep -q openclaw-bot; then
-    echo -e "${RED}ERROR: openclaw-bot container is not running${NC}"
+if ! docker ps | grep -q agentshroud-bot; then
+    echo -e "${RED}ERROR: agentshroud-bot container is not running${NC}"
     exit 1
 fi
 
