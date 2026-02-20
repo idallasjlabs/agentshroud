@@ -853,7 +853,7 @@ ssh -T git@github.com
 # Should see: "Hi agentshroud-bot! You've successfully authenticated..."
 
 # Clone repo
-git clone git@github.com:<your-username>/oneclaw.git agentshroud
+git clone git@github.com:<your-username>/agentshroud.git agentshroud
 cd agentshroud
 
 # Verify

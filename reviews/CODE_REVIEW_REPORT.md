@@ -1,6 +1,6 @@
-# AgentShroud (OneClaw) — Code Review Report
+# AgentShroud (AgentShroud) — Code Review Report
 
-**Repository:** `~/Development/oneclaw`
+**Repository:** `~/Development/agentshroud`
 **Reviewer:** OpenClaw Bot (TDD + QA perspectives)
 **Date:** 2026-02-16
 **Overall Coverage:** 79% (1,073 / 1,363 statements)

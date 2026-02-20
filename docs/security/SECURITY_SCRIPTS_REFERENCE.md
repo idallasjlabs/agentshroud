@@ -222,13 +222,13 @@ chmod +x docker/scripts/killswitch.sh
 ### Daily Security Check (cron)
 ```bash
 # Add to crontab: crontab -e
-0 9 * * * /Users/ijefferson.admin/Development/oneclaw/docker/scripts/verify-security.sh
+0 9 * * * /Users/ijefferson.admin/Development/agentshroud/docker/scripts/verify-security.sh
 ```
 
 ### Weekly Compliance Scan (cron)
 ```bash
 # Add to crontab: crontab -e
-0 2 * * 0 /Users/ijefferson.admin/Development/oneclaw/docker/scripts/scan.sh
+0 2 * * 0 /Users/ijefferson.admin/Development/agentshroud/docker/scripts/scan.sh
 ```
 
 ### CI/CD Integration

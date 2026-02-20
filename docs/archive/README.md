@@ -1,4 +1,4 @@
-# OneClaw Documentation
+# AgentShroud Documentation
 
 Complete documentation for "One Claw Tied Behind Your Back" - a secure, isolated OpenClaw deployment.
 
@@ -177,33 +177,33 @@ Traditional AI assistant deployments grant:
 ### Essential Commands
 
 ```bash
-# Start OneClaw
-./start-oneclaw.sh
+# Start AgentShroud
+./start-agentshroud.sh
 
-# Stop OneClaw
-./stop-oneclaw.sh
+# Stop AgentShroud
+./stop-agentshroud.sh
 
 # View logs
-docker logs oneclaw_isaiah -f
+docker logs agentshroud_isaiah -f
 
 # Check status
-docker exec oneclaw_isaiah node openclaw.mjs status
+docker exec agentshroud_isaiah node openclaw.mjs status
 
 # Run security audit
-docker exec oneclaw_isaiah node openclaw.mjs security audit
+docker exec agentshroud_isaiah node openclaw.mjs security audit
 ```
 
 ### Important Files
 
 ```
-oneclaw/
+agentshroud/
 ├── setup-wizard.html          # Interactive setup (USE THIS FIRST)
 ├── wizard-deploy.sh           # Automated deployment script
-├── start-oneclaw.sh           # Start everything
-├── stop-oneclaw.sh            # Stop everything
+├── start-agentshroud.sh           # Start everything
+├── stop-agentshroud.sh            # Stop everything
 ├── spa-server.py              # Web server for Control UI
 ├── Dockerfile.secure          # Container build definition
-├── oneclaw-container/
+├── agentshroud-container/
 │   ├── docker-compose.yml     # Container orchestration
 │   ├── config/
 │   │   └── openclaw.json      # OpenClaw configuration
@@ -243,7 +243,7 @@ PayPal:   therealidallasj@gmail.com (with $40 limit)
    → See [CONNECTION-GUIDE.md](./CONNECTION-GUIDE.md)
 
 2. **"Container won't start"**
-   → Check logs: `docker logs oneclaw_isaiah`
+   → Check logs: `docker logs agentshroud_isaiah`
 
 3. **"Security concerns"**
    → Read [SECURITY-ANALYSIS.md](./SECURITY-ANALYSIS.md)

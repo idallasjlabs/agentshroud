@@ -1,4 +1,4 @@
-# OneClaw Security Analysis & Hardening
+# AgentShroud Security Analysis & Hardening
 
 ## Overview
 
@@ -20,7 +20,7 @@ This document analyzes the major security vulnerabilities discovered in OpenClaw
 - [The Register: OpenClaw ecosystem still suffering severe security issues](https://www.theregister.com/2026/02/02/openclaw_security_issues/)
 
 **Our Solution**:
-- ✅ **Network Isolation**: Our container runs with `--network oneclaw_isolated` preventing direct internet exposure
+- ✅ **Network Isolation**: Our container runs with `--network agentshroud_isolated` preventing direct internet exposure
 - ✅ **No Public Access**: Gateway bound to `loopback` only (127.0.0.1), unreachable from external networks
 - ✅ **Token Authentication**: OPENCLAW_GATEWAY_TOKEN required for all connections
 - ✅ **Separate Digital Environment**: Acts as air-gapped staging area for information forwarding
@@ -151,7 +151,7 @@ This document analyzes the major security vulnerabilities discovered in OpenClaw
                                                    │
                    ┌───────────────────────────────┼───────────────────────────────┐
                    │  Docker Container             │                               │
-                   │  (oneclaw_isaiah)             │                               │
+                   │  (agentshroud_isaiah)             │                               │
                    │                                │                               │
                    │  ┌──────────────────────────┐ │                               │
                    │  │  OpenClaw Gateway        │ │                               │
@@ -214,7 +214,7 @@ user: "1000:1000"             # Run as non-root user
 mem_limit: 4g                 # Limit memory to 4GB
 cpus: 2                       # Limit CPU usage
 networks:
-  - oneclaw_isolated          # Custom isolated bridge network
+  - agentshroud_isolated          # Custom isolated bridge network
 ports:
   - "127.0.0.1:18789-18790:18789-18790"  # Localhost-only binding
 ```
@@ -296,7 +296,7 @@ Primary Telegram                                            @therealidallasj
 - OpenAI API charges (set spending limits in OpenAI dashboard)
 
 **Recovery**:
-1. Stop container: `./stop-oneclaw.sh`
+1. Stop container: `./stop-agentshroud.sh`
 2. Revoke service account API keys in OpenAI dashboard
 3. Change password on therealidallasj@gmail.com
 4. Rebuild container from clean image
@@ -369,10 +369,10 @@ Primary Telegram                                            @therealidallasj
 Before deploying:
 
 - [ ] Verify Docker version is current (`docker --version`)
-- [ ] Confirm container runs as non-root (`docker exec oneclaw_isaiah whoami` → should say "node")
-- [ ] Check network isolation (`docker exec oneclaw_isaiah ping -c 1 192.168.1.1` → should fail)
-- [ ] Verify internet access (`docker exec oneclaw_isaiah ping -c 1 8.8.8.8` → should succeed)
-- [ ] Confirm localhost-only binding (`docker port oneclaw_isaiah` → should show 127.0.0.1)
+- [ ] Confirm container runs as non-root (`docker exec agentshroud_isaiah whoami` → should say "node")
+- [ ] Check network isolation (`docker exec agentshroud_isaiah ping -c 1 192.168.1.1` → should fail)
+- [ ] Verify internet access (`docker exec agentshroud_isaiah ping -c 1 8.8.8.8` → should succeed)
+- [ ] Confirm localhost-only binding (`docker port agentshroud_isaiah` → should show 127.0.0.1)
 - [ ] Test gateway authentication (try connecting without token → should fail)
 - [ ] Set OpenAI spending limit ($50/month recommended)
 - [ ] Enable 2FA on therealidallasj@gmail.com
@@ -387,26 +387,26 @@ Before deploying:
 
 ```bash
 # Check for failed login attempts
-docker logs oneclaw_isaiah | grep "auth failed"
+docker logs agentshroud_isaiah | grep "auth failed"
 
 # Monitor API usage
-docker exec oneclaw_isaiah node openclaw.mjs status
+docker exec agentshroud_isaiah node openclaw.mjs status
 
 # Check for suspicious connections
-docker logs oneclaw_isaiah | grep "connection from"
+docker logs agentshroud_isaiah | grep "connection from"
 ```
 
 ### Weekly Security Audit
 
 ```bash
 # Run OpenClaw's built-in security audit
-docker exec oneclaw_isaiah node openclaw.mjs security audit
+docker exec agentshroud_isaiah node openclaw.mjs security audit
 
 # Check for container updates
 docker pull openclaw-secure:latest
 
 # Review installed skills
-docker exec oneclaw_isaiah node openclaw.mjs skills list
+docker exec agentshroud_isaiah node openclaw.mjs skills list
 ```
 
 ### Incident Response Plan
@@ -416,22 +416,22 @@ docker exec oneclaw_isaiah node openclaw.mjs skills list
 1. **Immediate Actions** (< 5 minutes):
    ```bash
    # Stop container
-   ./stop-oneclaw.sh
+   ./stop-agentshroud.sh
 
    # Disconnect from network
-   docker network disconnect oneclaw_isolated oneclaw_isaiah
+   docker network disconnect agentshroud_isolated agentshroud_isaiah
    ```
 
 2. **Investigation** (< 30 minutes):
    ```bash
    # Export logs
-   docker logs oneclaw_isaiah > /tmp/incident-logs.txt
+   docker logs agentshroud_isaiah > /tmp/incident-logs.txt
 
    # Check last commands
-   docker exec oneclaw_isaiah node openclaw.mjs logs --tail 1000
+   docker exec agentshroud_isaiah node openclaw.mjs logs --tail 1000
 
    # Review audit log
-   docker exec oneclaw_isaiah cat /app/logs/audit.log
+   docker exec agentshroud_isaiah cat /app/logs/audit.log
    ```
 
 3. **Containment** (< 1 hour):
@@ -443,17 +443,17 @@ docker exec oneclaw_isaiah node openclaw.mjs skills list
 4. **Recovery** (< 2 hours):
    ```bash
    # Remove compromised container
-   docker compose -f oneclaw-container/docker-compose.yml down
-   docker rmi oneclaw-secure:latest
+   docker compose -f agentshroud-container/docker-compose.yml down
+   docker rmi agentshroud-secure:latest
 
    # Rebuild from source
-   docker build -t oneclaw-secure:latest -f Dockerfile.secure .
+   docker build -t agentshroud-secure:latest -f Dockerfile.secure .
 
    # Generate new gateway token
-   openssl rand -hex 32 > oneclaw-container/secrets/.env
+   openssl rand -hex 32 > agentshroud-container/secrets/.env
 
    # Restart with fresh config
-   ./start-oneclaw.sh
+   ./start-agentshroud.sh
    ```
 
 5. **Post-Incident**:

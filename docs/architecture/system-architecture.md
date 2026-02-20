@@ -30,7 +30,7 @@ AgentShroud serves as a security enforcement point positioned between external n
 └─────────────────┘    └─────────────────┘    └─────────────────┘
         │                        │                        │
         └─ External Network ─────┴─ Internal Network ─────┘
-        (secureclaw_external)        (secureclaw_internal)
+        (agentshroud_external)        (agentshroud_internal)
 ```
 
 ## Component Architecture
@@ -173,7 +173,7 @@ AgentShroud implements strict network isolation using Docker's custom bridge net
 ┌─────────────────────────────────────────────────────────────────┐
 │                     Docker Host                                 │
 │                                                                 │
-│  ┌─ External Network (secureclaw_external) ─┐                  │
+│  ┌─ External Network (agentshroud_external) ─┐                  │
 │  │                                          │                  │
 │  │  ┌─────────────────┐    ┌──────────────┐ │                  │
 │  │  │  AgentShroud     │    │   Ingress    │ │                  │
@@ -182,7 +182,7 @@ AgentShroud implements strict network isolation using Docker's custom bridge net
 │  │  └─────────────────┘    └──────────────┘ │                  │
 │  └─────────────────┬────────────────────────┘                  │
 │                    │                                            │
-│  ┌─ Internal Network (secureclaw_internal) ─┐                  │
+│  ┌─ Internal Network (agentshroud_internal) ─┐                  │
 │  │                 │                        │                  │
 │  │  ┌─────────────────┐    ┌──────────────┐ │                  │
 │  │  │  AgentShroud     │    │   OpenClaw   │ │                  │

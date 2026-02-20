@@ -14,7 +14,7 @@ Proxy mode implements complete network isolation with AgentShroud as the sole ga
 ┌─────────────────────────────────────────────────────────────────────┐
 │                        Docker Host Environment                      │
 │                                                                     │
-│  ┌─ External Network (secureclaw_external) ─────────────────────┐   │
+│  ┌─ External Network (agentshroud_external) ─────────────────────┐   │
 │  │                                                              │   │
 │  │    ┌─────────────┐    ┌─────────────┐    ┌─────────────┐     │   │
 │  │    │   Ingress   │    │  Dashboard  │    │  Metrics    │     │   │
@@ -23,7 +23,7 @@ Proxy mode implements complete network isolation with AgentShroud as the sole ga
 │  │    └─────┬───────┘    └─────────────┘    └─────────────┘     │   │
 │  └──────────┼───────────────────────────────────────────────────┘   │
 │             │                                                       │
-│  ┌─ Management Network (secureclaw_mgmt) ─────────┐                 │
+│  ┌─ Management Network (agentshroud_mgmt) ─────────┐                 │
 │  │          │                                     │                 │
 │  │    ┌─────▼───────┐    ┌─────────────┐          │                 │
 │  │    │ AgentShroud  │    │   SQLite    │          │                 │
@@ -32,7 +32,7 @@ Proxy mode implements complete network isolation with AgentShroud as the sole ga
 │  │    └─────┬───────┘    └─────────────┘          │                 │
 │  └──────────┼─────────────────────────────────────┘                 │
 │             │                                                       │
-│  ┌─ Internal Network (secureclaw_internal) ───────┐                 │
+│  ┌─ Internal Network (agentshroud_internal) ───────┐                 │
 │  │          │                                     │                 │
 │  │    ┌─────▼───────┐    ┌─────────────┐          │                 │
 │  │    │ OpenClaw    │    │  Memory/    │          │                 │
@@ -51,7 +51,7 @@ Sidecar mode co-locates AgentShroud with OpenClaw for reduced latency while main
 ┌─────────────────────────────────────────────────────────────────────┐
 │                        Docker Host Environment                      │
 │                                                                     │
-│  ┌─ Shared Network (secureclaw_shared) ──────────────────────────┐   │
+│  ┌─ Shared Network (agentshroud_shared) ──────────────────────────┐   │
 │  │                                                             │   │
 │  │  ┌─────────────┐                    ┌─────────────┐         │   │
 │  │  │  External   │                    │ AgentShroud  │         │   │
@@ -86,13 +86,13 @@ services:
     image: agentshroud/gateway:latest
     container_name: agentshroud-gateway
     networks:
-      - secureclaw_external
-      - secureclaw_internal
+      - agentshroud_external
+      - agentshroud_internal
     ports:
       - "${AGENTSHROUD_PORT:-8080}:8080"
     volumes:
-      - secureclaw_config:/app/config
-      - secureclaw_audit:/app/audit
+      - agentshroud_config:/app/config
+      - agentshroud_audit:/app/audit
       - /var/run/docker.sock:/var/run/docker.sock:ro
     environment:
       - AGENTSHROUD_MODE=proxy
@@ -111,7 +111,7 @@ services:
     image: openclaw/agent:latest
     container_name: openclaw-agent
     networks:
-      - secureclaw_internal
+      - agentshroud_internal
     volumes:
       - openclaw_workspace:/workspace
       - openclaw_memory:/app/memory
@@ -121,13 +121,13 @@ services:
     restart: unless-stopped
 
 networks:
-  secureclaw_external:
+  agentshroud_external:
     driver: bridge
     ipam:
       config:
         - subnet: 172.20.0.0/24
           gateway: 172.20.0.1
-  secureclaw_internal:
+  agentshroud_internal:
     driver: bridge
     internal: true
     ipam:
@@ -136,9 +136,9 @@ networks:
           gateway: 172.21.0.1
 
 volumes:
-  secureclaw_config:
+  agentshroud_config:
     driver: local
-  secureclaw_audit:
+  agentshroud_audit:
     driver: local
   openclaw_workspace:
     driver: local
@@ -161,13 +161,13 @@ services:
     security_opt:
       - label=type:container_runtime_t
     networks:
-      - secureclaw_external
-      - secureclaw_internal
+      - agentshroud_external
+      - agentshroud_internal
     ports:
       - "${AGENTSHROUD_PORT:-8080}:8080"
     volumes:
-      - secureclaw_config:/app/config:Z
-      - secureclaw_audit:/app/audit:Z
+      - agentshroud_config:/app/config:Z
+      - agentshroud_audit:/app/audit:Z
       - /run/user/${UID}/podman/podman.sock:/var/run/docker.sock:ro
     environment:
       - CONTAINER_RUNTIME=podman
@@ -177,9 +177,9 @@ services:
     restart: unless-stopped
 
 networks:
-  secureclaw_external:
+  agentshroud_external:
     driver: bridge
-  secureclaw_internal:
+  agentshroud_internal:
     driver: bridge
     internal: true
 ```
@@ -199,8 +199,8 @@ services:
     ports:
       - "${AGENTSHROUD_PORT:-8080}:8080"
     networks:
-      - secureclaw_external
-      - secureclaw_internal
+      - agentshroud_external
+      - agentshroud_internal
     volumes:
       - type: bind
         source: /Users/Shared/AgentShroud/config
@@ -227,7 +227,7 @@ Internet
    ▼
 ┌─────────────────────────────────────────────┐
 │          External Network                   │
-│        (secureclaw_external)                │
+│        (agentshroud_external)                │
 │    ┌─────────────┐    ┌─────────────┐       │
 │    │   Ingress   │    │  Dashboard  │       │
 │    │   Proxy     │    │    Web      │       │ ◄── DMZ Zone
@@ -243,7 +243,7 @@ Internet
            │
 ┌──────────▼─────────────────────────────────────┐
 │         Management Network                     │
-│        (secureclaw_mgmt)                       │
+│        (agentshroud_mgmt)                       │
 │  ┌─────────────┐    ┌─────────────┐            │ ◄── Control Plane
 │  │  Security   │    │   Audit     │            │
 │  │  Modules    │    │  Database   │            │
@@ -252,7 +252,7 @@ Internet
          │
 ┌────────▼──────────────────────────────────────┐
 │         Internal Network                      │
-│       (secureclaw_internal)                   │
+│       (agentshroud_internal)                   │
 │  ┌─────────────┐    ┌─────────────┐           │ ◄── Protected Zone
 │  │  OpenClaw   │    │   Memory    │           │
 │  │   Agent     │    │   Storage   │           │
@@ -365,10 +365,10 @@ secrets:
     file: ./secrets/api-keys.env
   tls_cert:
     external: true
-    external_name: secureclaw_tls_cert
+    external_name: agentshroud_tls_cert
   signing_key:
     external: true
-    external_name: secureclaw_signing_key
+    external_name: agentshroud_signing_key
 
 services:
   agentshroud-gateway:
@@ -409,8 +409,8 @@ AgentShroud achieves "docker-compose up = fully secured" through intelligent def
 
 ```bash
 # Complete deployment in three commands
-git clone https://github.com/idallasj/oneclaw.git
-cd oneclaw/deployments/agentshroud
+git clone https://github.com/idallasj/agentshroud.git
+cd agentshroud/deployments/agentshroud
 docker-compose up -d
 
 # Automatic configuration includes:
@@ -433,7 +433,7 @@ Automated deployment validation ensures security posture:
 echo "🔍 Validating AgentShroud deployment..."
 
 # Network isolation check
-docker network inspect secureclaw_internal | jq '.Internal' | grep -q true || {
+docker network inspect agentshroud_internal | jq '.Internal' | grep -q true || {
     echo "❌ Internal network not properly isolated"
     exit 1
 }

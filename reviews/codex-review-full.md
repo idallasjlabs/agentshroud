@@ -1,6 +1,6 @@
 OpenAI Codex v0.101.0 (research preview)
 --------
-workdir: /home/agentshroud-bot/Development/oneclaw
+workdir: /home/agentshroud-bot/Development/agentshroud
 model: o4-mini
 provider: openai
 approval: never

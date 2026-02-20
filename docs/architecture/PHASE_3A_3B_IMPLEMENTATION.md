@@ -198,7 +198,7 @@ docker exec openclaw-bot ls -la /run/secrets/gateway_password
 ### Phase 3A Testing
 ```bash
 # 1. Start containers with new security configuration
-cd /Users/ijefferson.admin/Development/oneclaw
+cd /Users/ijefferson.admin/Development/agentshroud
 docker compose -f docker/docker-compose.yml down
 docker compose -f docker/docker-compose.yml up -d --build
 
