@@ -54,7 +54,9 @@ RUN ARCH=$(dpkg --print-architecture) && \
     rm -f /tmp/op.zip /tmp/op.sig
 
 # Create directories for AgentShroud configuration and workspace
+# Note: OpenClaw CLI expects ~/.openclaw, so we symlink it to ~/.agentshroud
 RUN mkdir -p /home/node/.agentshroud && \
+    ln -s /home/node/.agentshroud /home/node/.openclaw && \
     mkdir -p /home/node/agentshroud/workspace && \
     mkdir -p /home/node/.ssh && \
     chown -R node:node /home/node
