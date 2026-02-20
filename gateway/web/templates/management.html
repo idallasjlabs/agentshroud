@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>SecureClaw — Management Dashboard</title>
+<title>AgentShroud — Management Dashboard</title>
 <style>
 :root {
   --bg: #0d1117; --surface: #161b22; --surface2: #21262d;
@@ -66,7 +66,7 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; b
 <body>
 
 <div class="header">
-  <h1>🛡️ <span>SecureClaw</span> Dashboard</h1>
+  <h1>🛡️ <span>AgentShroud</span> Dashboard</h1>
   <div class="meta" id="header-meta">Loading…</div>
 </div>
 
@@ -183,9 +183,9 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; b
         <div class="progress-bar" id="oc-progress" style="display:none;"><div class="fill" style="width:0%"></div></div>
       </div>
 
-      <!-- SecureClaw -->
+      <!-- AgentShroud -->
       <div class="card">
-        <h3>SecureClaw</h3>
+        <h3>AgentShroud</h3>
         <div class="version-box">
           <div class="label">Current Version</div>
           <div class="current" id="sc-current">…</div>
@@ -446,7 +446,7 @@ async function checkSCUpdates() {
 }
 
 async function upgradeSC() {
-  if (!confirm('Upgrade SecureClaw? This will: git pull → run tests → rebuild → restart. Auto-rollback on failure.')) return;
+  if (!confirm('Upgrade AgentShroud? This will: git pull → run tests → rebuild → restart. Auto-rollback on failure.')) return;
   const prog = document.getElementById('sc-progress');
   const log = document.getElementById('sc-update-log');
   prog.style.display = 'block';
@@ -490,7 +490,7 @@ async function upgradeSC() {
 }
 
 async function rollbackSC() {
-  if (!confirm('Rollback SecureClaw to previous commit? Will rebuild containers.')) return;
+  if (!confirm('Rollback AgentShroud to previous commit? Will rebuild containers.')) return;
   await fetch('/api/updates/secureclaw/rollback', {method:'POST'});
   checkSCUpdates();
 }

@@ -7,7 +7,7 @@ on the same Mac), ports may collide. This module:
 1. Checks if configured ports are already in use
 2. Auto-selects next available port if conflict detected
 3. Logs all port assignments for visibility
-4. Supports SECURECLAW_PORT_OFFSET env var for manual offset
+4. Supports AGENTSHROUD_PORT_OFFSET env var for manual offset
 
 Usage:
     from gateway.tools.port_manager import PortManager
@@ -78,7 +78,7 @@ class PortManager:
 
     def __init__(self, host: str = "0.0.0.0"):
         self.host = host
-        self._offset = int(os.environ.get("SECURECLAW_PORT_OFFSET", "0"))
+        self._offset = int(os.environ.get("AGENTSHROUD_PORT_OFFSET", "0"))
 
     @staticmethod
     def is_port_available(port: int, host: str = "0.0.0.0") -> bool:
