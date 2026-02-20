@@ -5,7 +5,7 @@
  | |_| | | | |  __/ |___ | | (_| |\ V  V / 
   \___/|_| |_|\___|\____||_|\__,_| \_/\_/  
                                             
-  S E C U R E C L A W   G A T E W A Y
+  A G E N T S H R O U D   G A T E W A Y
 ```
 
 # AgentShroud — Enterprise Security Proxy for OpenClaw AI Agents
@@ -251,4 +251,4 @@ pytest gateway/tests/ -v --cov=gateway --cov-report=term-missing
 
 ## Acknowledgments
 
-Built on top of [OpenClaw](https://github.com/nicholasgasior/openclaw) — the open-source AI agent framework. AgentShroud adds the security layer that makes it safe for real-world use.
+Built on top of [OpenClaw](https://github.com/openclaw/openclaw) — the open-source AI agent framework. AgentShroud adds the security layer that makes it safe for real-world use.
