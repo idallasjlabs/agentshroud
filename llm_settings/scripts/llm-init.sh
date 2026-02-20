@@ -275,10 +275,17 @@ llm-init() {
 
         # Synchronize llm_settings with secrets/local files excluded
         rsync -a --delete \
-            --exclude='.env' \
-            --exclude='.env.*' \
-            --exclude='!.env.example' \
-            --exclude='*.local.*' \
+            --filter='include .env.example' \
+            --filter='include .env.*.example' \
+            --filter='include .llm_env_example' \
+            --filter='exclude .env' \
+            --filter='exclude .env.*' \
+            --filter='exclude .llm_env' \
+            --filter='exclude *.local.*' \
+            --filter='protect .env' \
+            --filter='protect .env.*' \
+            --filter='protect .llm_env' \
+            --filter='protect *.local.*' \
             --exclude='.DS_Store' \
             --exclude='.cache/' \
             --exclude='tmp/' \
@@ -290,9 +297,6 @@ llm-init() {
             --exclude='*.pem' \
             --exclude='*.key' \
             --exclude='mcp-servers/*/.claude' \
-            --filter='protect .env' \
-            --filter='protect .env.*' \
-            --filter='protect *.local.*' \
             "$source_dir/llm_settings/" llm_settings/
 
         # Make scripts executable
