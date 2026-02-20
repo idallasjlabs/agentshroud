@@ -1,6 +1,6 @@
 # Gateway Layer
 
-The gateway layer is the core of SecureClaw's proxy architecture. It sits between user-forwarded content and the OpenClaw agent.
+The gateway layer is the core of AgentShroud's proxy architecture. It sits between user-forwarded content and the OpenClaw agent.
 
 ## Structure
 

@@ -125,7 +125,7 @@ class TestResolveports:
         result = pm.resolve_ports({"a": 59180, "b": 59180})
         assert result.ports["a"] != result.ports["b"]
 
-    @patch.dict("os.environ", {"SECURECLAW_PORT_OFFSET": "100"})
+    @patch.dict("os.environ", {"AGENTSHROUD_PORT_OFFSET": "100"})
     def test_offset_applied(self):
         pm = PortManager(host="127.0.0.1")
         result = pm.resolve_ports({"svc": 59100})
