@@ -8,7 +8,7 @@
 
 ## Overview
 
-AgentShroud requires careful setup of **isolated accounts** to maintain the "One Claw Tied Behind Your Back" security model. This document lists all prerequisites and setup steps.
+AgentShroud requires careful setup of **isolated accounts** to maintain the "One Shroud Over Every Wire" security model. This document lists all prerequisites and setup steps.
 
 ---
 
