@@ -61,10 +61,44 @@ def send_message(message):
     """Send message to OpenClaw via gateway"""
     timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
 
-    # For now, just echo back (placeholder for real API integration)
     print(f"\n[{timestamp}] You: {message}")
-    print(f"[{timestamp}] Bot: API integration pending - message received")
-    print("           (Requires gateway /forward endpoint configuration)")
+    print(f"[{timestamp}] Bot: Thinking...")
+
+    try:
+        # Prepare request to gateway
+        payload = json.dumps({
+            "content": message,
+            "source": "chat-console",
+            "content_type": "text",
+            "metadata": {
+                "user": "admin",
+                "interface": "text-console"
+            }
+        }).encode('utf-8')
+
+        req = urllib.request.Request(
+            f"{GATEWAY_URL}/forward",
+            data=payload,
+            headers={'Content-Type': 'application/json'},
+            method='POST'
+        )
+
+        with urllib.request.urlopen(req, timeout=30) as response:
+            data = json.loads(response.read().decode())
+
+            if 'sanitized_content' in data:
+                print(f"\r[{timestamp}] Bot: {data['sanitized_content']}")
+            elif 'response' in data:
+                print(f"\r[{timestamp}] Bot: {data['response']}")
+            else:
+                print(f"\r[{timestamp}] Bot: (Response received but no content)")
+
+    except urllib.error.HTTPError as e:
+        error_msg = e.read().decode() if e.fp else str(e)
+        print(f"\r[{timestamp}] Error: HTTP {e.code} - {error_msg}")
+    except Exception as e:
+        print(f"\r[{timestamp}] Error: {e}")
+
     print()
 
 def main():
