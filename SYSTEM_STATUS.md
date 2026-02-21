@@ -25,39 +25,37 @@
    - Bot cannot respond to LLM requests
    - **User Action Required**: Top up credits at https://console.anthropic.com
 
-2. **iMessage Integration Broken**
+2. **iMessage Integration - Needs Permission**
    - Error: "Not authorized to send Apple events to Messages (-1743)"
-   - Root cause: Container cannot access macOS permissions
-   - **Solution**: Use BlueBubbles (requires user setup)
+   - Root cause: `agentshroud-bot` user needs Automation permission for Messages.app
+   - **Solution**: Grant permission in System Settings (see docs/setup/IMESSAGE_FIX.md)
 
-### BlueBubbles Setup Required
-**Waiting on User to Complete:**
-1. Sign into Messages.app with `agentshroud.ai@gmail.com` (as agentshroud-bot user)
-2. Install BlueBubbles Server
-3. Complete Firebase setup (~5 min)
-4. Set API password and store in 1Password
-5. Grant macOS permissions (Full Disk Access, Automation, Accessibility)
+### iMessage Fix Required
+**USER ACTION NEEDED:**
+1. Switch to `agentshroud-bot` user on Marvin (Fast User Switch)
+2. Open System Settings → Privacy & Security → Automation
+3. Grant Terminal/SSH permission to control Messages
+4. Verify Messages.app is signed in
+5. Test: `imsg send "+13015188813" "test"`
 
-**Then I can:**
-- Configure OpenClaw to use BlueBubbles
-- Test end-to-end iMessage functionality
-- Disable broken SSH-based method
+**Infrastructure is correct:**
+- ✅ imsg installed and working
+- ✅ imessage-exporter installed
+- ✅ SSH from container works
+- ✅ OpenClaw configuration correct
+- ❌ Just needs Automation permission grant
 
 ## 📋 Next Steps for User
 
 ### Immediate (Required for Bot to Work)
 1. **Top up Anthropic API credits** - Bot cannot respond without this
-2. **Complete BlueBubbles setup** - Follow `docs/setup/IMESSAGE_STATUS.md`
+2. **Grant iMessage Automation permission** - Follow `docs/setup/IMESSAGE_FIX.md`
 
 ### When Ready to Continue
-Send me:
-- BlueBubbles server URL (or just port number if using Tailscale)
-- Location of API password in 1Password
-
-I will then:
-- Configure OpenClaw BlueBubbles channel
-- Test message sending/receiving
-- Mark iMessage integration as complete
+After granting permission:
+- Test: `imsg send "+13015188813" "test"` as agentshroud-bot user
+- If it works, iMessage integration is complete
+- Bot will be able to send/receive iMessages automatically
 
 ## 📁 Documentation
 
