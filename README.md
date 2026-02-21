@@ -15,7 +15,7 @@
 [![Python 3.11](https://img.shields.io/badge/python-3.11-blue.svg)](https://python.org)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
-> *"One Claw Tied Behind Your Back"* — You decide what the agent sees, not the agent.
+> *"One Shroud Over Every Wire"* — You decide what the agent sees, not the agent.
 
 AgentShroud (AgentShroud) is a security proxy that sits between your real digital life and an OpenClaw AI agent. It provides **12 security modules**, a **human approval queue**, **full audit logging**, and a **real-time dashboard** — ensuring your AI assistant never sees data you haven't explicitly approved.
 

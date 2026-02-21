@@ -1,4 +1,4 @@
-# One Claw Tied Behind Your Back: A Story About Trust, Isolation, and AI Assistants
+# One Shroud Over Every Wire: A Story About Trust, Isolation, and AI Assistants
 
 ## The Problem
 
@@ -18,7 +18,7 @@ What if the container got compromised? What if a malicious skill slipped through
 
 **I needed OpenClaw. But I didn't trust it.**
 
-So I built a version with one claw tied behind its back.
+So I built a version with one shroud over every wire.
 
 ---
 
@@ -46,7 +46,7 @@ Primary Telegram ───────► OpenClaw Agent
                             └─ All chats compromised if breached
 ```
 
-**One Claw Tied Behind Your Back** (Secure):
+**One Shroud Over Every Wire** (Secure):
 ```
 Your Real Digital Life          Information Valve          Agent's Isolated World
 ==================              ================           ======================
@@ -209,7 +209,7 @@ The wizard:
 
 ## Real-World Security Comparison
 
-| Aspect | Typical OpenClaw Setup | One Claw Behind Back |
+| Aspect | Typical OpenClaw Setup | One Shroud Over Wire |
 |--------|----------------------|---------------------|
 | **Network Exposure** | Often 0.0.0.0:18789 (public) | 127.0.0.1:18789 (localhost-only) |
 | **Internet Scan Visible?** | Yes (21,639 found by Censys) | No (not routable) |
@@ -313,9 +313,9 @@ I trust that:
 
 **The only way to be safe is to assume you'll be breached, and limit what the attacker gets.**
 
-That's what "One Claw Tied Behind Your Back" means. The agent is powerful, useful, and productive—but it can only touch what you explicitly hand to it. It cannot reach into your digital life and grab things on its own.
+That's what "One Shroud Over Every Wire" means. The agent is powerful, useful, and productive—but it can only touch what you explicitly hand to it. It cannot reach into your digital life and grab things on its own.
 
-One claw is tied. The other is free to help you.
+One shroud covers every wire. The agent is free to help you.
 
 ---
 
@@ -415,7 +415,7 @@ I chose option 2.
 
 **Join me. Let's build the most secure AI assistant together.**
 
-🦞 **One Claw Tied Behind Your Back**
+🦞 **One Shroud Over Every Wire**
 
 *Because the best security is the kind that assumes you'll be breached.*
 

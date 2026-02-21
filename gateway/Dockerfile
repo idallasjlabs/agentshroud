@@ -1,4 +1,4 @@
-# Multi-stage Dockerfile for SecureClaw Gateway
+# Multi-stage Dockerfile for AgentShroud Gateway
 # Stage 1: Builder - Install dependencies and spaCy model
 # Stage 2: Runtime - Non-root user, minimal image
 
@@ -41,7 +41,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 RUN curl -sfL https://raw.githubusercontent.com/aquasecurity/trivy/main/contrib/install.sh | sh -s -- -b /usr/local/bin
 
 # Create non-root user
-RUN useradd --create-home --shell /bin/bash --uid 1000 secureclaw
+RUN useradd --create-home --shell /bin/bash --uid 1000 agentshroud
 
 # Copy installed packages from builder
 COPY --from=builder /install /usr/local
@@ -51,18 +51,18 @@ COPY gateway/ /app/gateway/
 
 # Create data directory (volume will be mounted here) and set ownership
 RUN mkdir -p /app/data && \
-    chown -R secureclaw:secureclaw /app
+    chown -R agentshroud:agentshroud /app
 
 # Copy SCAP content for compliance scanning (from parent context)
 RUN mkdir -p /usr/share/xml/scap/ssg/content
 COPY docker/scap-content/ssg-debian12-ds.xml /usr/share/xml/scap/ssg/content/
 
 # OCI Image labels
-LABEL org.opencontainers.image.title="SecureClaw Gateway"
-LABEL org.opencontainers.image.description="PII sanitization proxy for SecureClaw"
-LABEL org.opencontainers.image.vendor="SecureClaw"
+LABEL org.opencontainers.image.title="AgentShroud Gateway"
+LABEL org.opencontainers.image.description="PII sanitization proxy for AgentShroud"
+LABEL org.opencontainers.image.vendor="AgentShroud"
 LABEL org.opencontainers.image.version="0.1.0"
-LABEL org.opencontainers.image.source="https://github.com/ijefferson/oneclaw"
+LABEL org.opencontainers.image.source="https://github.com/idallasj/agentshroud"
 
 # Prevent Python bytecode generation (read-only filesystem compatibility)
 ENV PYTHONDONTWRITEBYTECODE=1
@@ -75,10 +75,10 @@ COPY docker/scripts/security-report.sh /usr/local/bin/security-report.sh
 RUN chmod +x /usr/local/bin/security-*.sh
 
 # Create security log directory
-RUN mkdir -p /var/log/security && chown secureclaw:secureclaw /var/log/security
+RUN mkdir -p /var/log/security && chown agentshroud:agentshroud /var/log/security
 
 # Switch to non-root user
-USER secureclaw
+USER agentshroud
 
 # Expose gateway port
 EXPOSE 8080
