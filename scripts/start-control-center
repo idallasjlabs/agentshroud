@@ -1,0 +1,4 @@
+#!/bin/bash
+echo "Starting AgentShroud Text Control Center..."
+cd $(dirname $0)/..
+python3 src/interfaces/text_control_center.py --tmux
