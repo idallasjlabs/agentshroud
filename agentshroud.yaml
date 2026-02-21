@@ -13,7 +13,7 @@ security:
     - "172.16.0.0/12"
 
   # PII sanitization
-  pii_redaction: true
+  pii_redaction: false  # DISABLED - was blocking all messages
   pii_detection_engine: "presidio"  # Options: presidio, spacy
   redaction_rules:
     - type: "SSN"
