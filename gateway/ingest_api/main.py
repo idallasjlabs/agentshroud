@@ -251,17 +251,17 @@ AuthRequired = Annotated[None, Depends(auth_dep)]
 
 
 @app.get("/", response_class=HTMLResponse)
-async def web_chat():
-    """Web chat interface
+async def management_dashboard():
+    """Management Dashboard - Command Center
 
     No authentication required for the HTML page.
-    Authentication happens via JavaScript when calling /forward.
+    Authentication happens via JavaScript when calling API endpoints.
     """
-    chat_html_path = Path(__file__).parent / "static" / "chat.html"
-    if chat_html_path.exists():
-        return chat_html_path.read_text()
+    dashboard_path = Path("/app/web/management-dashboard.html")
+    if dashboard_path.exists():
+        return dashboard_path.read_text()
     else:
-        return "<h1>Chat interface not found</h1>"
+        return "<h1>Management Dashboard not found</h1>"
 
 
 @app.get("/status", response_model=StatusResponse)
