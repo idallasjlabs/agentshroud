@@ -79,7 +79,7 @@ LABEL org.opencontainers.image.title="AgentShroud OpenClaw Bot"
 LABEL org.opencontainers.image.description="Real OpenClaw platform for therealidallasj bot"
 LABEL org.opencontainers.image.vendor="AgentShroud"
 LABEL org.opencontainers.image.version="0.2.0"
-LABEL org.opencontainers.image.source="https://github.com/idallasj/oneclaw"
+LABEL org.opencontainers.image.source="https://github.com/idallasj/agentshroud"
 
 # Switch to non-root user (node user has UID 1000)
 USER node

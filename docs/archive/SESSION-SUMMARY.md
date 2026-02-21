@@ -188,7 +188,7 @@ This document summarizes all work completed during the session where we research
 **Narrative Structure**:
 1. **The Problem**: 42,900 exposed AI assistants
 2. **The Crisis**: CVE-2026-25253, mass exposure, supply chain attack
-3. **The Philosophy**: "One Claw Tied Behind Your Back"
+3. **The Philosophy**: "One Shroud Over Every Wire"
 4. **The Solution**: Separate digital environment + isolation
 5. **The Architecture**: Network isolation diagram
 6. **Daily Workflow**: Real-world usage examples
