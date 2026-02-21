@@ -358,7 +358,7 @@ When a credential request comes in:
 
 ---
 
-**This is the CORRECT security posture for the "One Claw Tied Behind Your Back" philosophy.** 🎯
+**This is the CORRECT security posture for the "One Shroud Over Every Wire" philosophy.** 🎯
 
 The bot can access and USE credentials but will NEVER display them where they could be recorded or compromised.
 
