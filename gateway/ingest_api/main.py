@@ -251,17 +251,90 @@ AuthRequired = Annotated[None, Depends(auth_dep)]
 
 
 @app.get("/", response_class=HTMLResponse)
-async def management_dashboard():
-    """Management Dashboard - Command Center
+async def system_control():
+    """System Control - Live Dashboard
 
-    No authentication required for the HTML page.
-    Authentication happens via JavaScript when calling API endpoints.
+    Shows real-time system status with links to controls.
     """
-    dashboard_path = Path("/app/web/management-dashboard.html")
-    if dashboard_path.exists():
-        return dashboard_path.read_text()
-    else:
-        return "<h1>Management Dashboard not found</h1>"
+    uptime = time.time() - app_state.start_time
+    stats = await app_state.ledger.get_stats()
+    pending = await app_state.approval_queue.get_pending()
+
+    html = f"""<!DOCTYPE html>
+<html>
+<head>
+    <title>AgentShroud Control</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {{ font-family: monospace; background: #1a1a1a; color: #e0e0e0; padding: 2rem; }}
+        .container {{ max-width: 1200px; margin: 0 auto; }}
+        h1 {{ color: #4ade80; }}
+        .status {{ background: #2a2a2a; padding: 1.5rem; border-radius: 8px; margin: 1rem 0; }}
+        .healthy {{ color: #4ade80; }}
+        .warning {{ color: #fbbf24; }}
+        .error {{ color: #ef4444; }}
+        .section {{ margin: 2rem 0; }}
+        a {{ color: #60a5fa; text-decoration: none; }}
+        a:hover {{ text-decoration: underline; }}
+        .metric {{ display: inline-block; margin-right: 2rem; }}
+        code {{ background: #3a3a3a; padding: 0.2rem 0.5rem; border-radius: 4px; }}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🛡️ AgentShroud Control Center</h1>
+
+        <div class="status">
+            <h2 class="healthy">● System Status: HEALTHY</h2>
+            <div class="metric">Version: 0.1.0</div>
+            <div class="metric">Uptime: {int(uptime)}s</div>
+            <div class="metric">PII Engine: {app_state.sanitizer.get_mode()}</div>
+        </div>
+
+        <div class="section">
+            <h2>📊 Metrics</h2>
+            <div class="status">
+                <div class="metric">Ledger Entries: {stats.get('total_entries', 0)}</div>
+                <div class="metric">Pending Approvals: {len(pending)}</div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>🎛️ Controls</h2>
+            <div class="status">
+                <p><a href="http://localhost:18790" target="_blank">→ OpenClaw Control UI</a> (Bot interface)</p>
+                <p><a href="/status">→ Gateway Status API</a></p>
+                <p><a href="/ledger">→ Data Ledger</a></p>
+                <p><a href="/approval-queue">→ Approval Queue</a></p>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>📡 Endpoints</h2>
+            <div class="status">
+                <p><code>POST /forward</code> - Forward content to agent</p>
+                <p><code>GET /status</code> - Health check</p>
+                <p><code>GET /ledger</code> - Query ledger</p>
+                <p><code>GET /approval-queue</code> - List pending approvals</p>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>🔗 Access</h2>
+            <div class="status">
+                <p>Local: <code>http://localhost:8080</code></p>
+                <p>Tailscale: <code>http://100.90.175.83:8080</code></p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Auto-refresh every 30 seconds
+        setTimeout(() => location.reload(), 30000);
+    </script>
+</body>
+</html>"""
+    return HTMLResponse(html)
 
 
 @app.get("/status", response_model=StatusResponse)
