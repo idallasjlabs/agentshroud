@@ -2,7 +2,7 @@
 
 ## Overview
 
-This document analyzes the major security vulnerabilities discovered in OpenClaw during 2026 and demonstrates how our "One Claw Tied Behind Your Back" implementation addresses each concern through defense-in-depth architecture.
+This document analyzes the major security vulnerabilities discovered in OpenClaw during 2026 and demonstrates how our "One Shroud Over Every Wire" implementation addresses each concern through defense-in-depth architecture.
 
 ## Critical Vulnerabilities Identified in OpenClaw (2026)
 
@@ -305,7 +305,7 @@ Primary Telegram                                            @therealidallasj
 
 ## Comparison: Traditional Setup vs. Our Approach
 
-| Security Aspect | Traditional OpenClaw | One Claw Tied Behind Your Back |
+| Security Aspect | Traditional OpenClaw | One Shroud Over Every Wire |
 |----------------|---------------------|--------------------------------|
 | **Network Access** | Full LAN + Internet | Internet-only (RFC1918 blocked) |
 | **Email Integration** | Primary Gmail via OAuth | Separate service account |
@@ -475,7 +475,7 @@ Tracked in [FUTURE-FEATURES.md](./FUTURE-FEATURES.md):
 
 ## Conclusion
 
-The OpenClaw platform faced significant security challenges in early 2026, with critical vulnerabilities affecting tens of thousands of installations worldwide. Our "One Claw Tied Behind Your Back" implementation addresses these concerns through:
+The OpenClaw platform faced significant security challenges in early 2026, with critical vulnerabilities affecting tens of thousands of installations worldwide. Our "One Shroud Over Every Wire" implementation addresses these concerns through:
 
 1. **Network isolation** (internet-only, no LAN access)
 2. **Separate digital environment** (dedicated service accounts)
