@@ -1,0 +1,5 @@
+#!/bin/bash
+# Start AgentShroud Text Chat Console
+echo "Starting AgentShroud Chat Console..."
+cd $(dirname $0)/..
+python3 src/interfaces/chat_console.py
