@@ -42,6 +42,9 @@ from ..ssh_proxy.proxy import SSHProxy
 from .router import ForwardError, MultiAgentRouter
 from .sanitizer import PIISanitizer
 from .event_bus import EventBus, make_event
+from ..web.api import router as management_api_router
+from ..web.management import router as management_dashboard_router
+from .version_routes import router as version_router
 
 # Configure logging
 logging.basicConfig(
@@ -163,9 +166,31 @@ async def lifespan(app: FastAPI):
 app = FastAPI(
     title="AgentShroud Gateway",
     description="Ingest API for the AgentShroud proxy layer framework",
-    version="0.1.0",
+    version="0.5.0",
     lifespan=lifespan,
 )
+
+# === Dependency: Authentication ===
+
+
+async def auth_dep(request: Request) -> None:
+    """Authentication dependency for protected endpoints"""
+    dep = create_auth_dependency(app_state.config)
+    await dep(request)
+
+
+AuthRequired = Annotated[None, Depends(auth_dep)]
+
+
+
+# Mount management API (has its own Bearer auth on each endpoint)
+app.include_router(management_api_router)
+
+# Mount management dashboard (serves /manage/)
+app.include_router(management_dashboard_router)
+
+# Mount version management routes (gateway Bearer auth)
+app.include_router(version_router, dependencies=[Depends(auth_dep)])
 
 
 # === CORS Middleware ===
@@ -243,17 +268,6 @@ async def global_exception_handler(request: Request, exc: Exception):
     )
 
 
-# === Dependency: Authentication ===
-
-
-async def auth_dep(request: Request) -> None:
-    """Authentication dependency for protected endpoints"""
-    dep = create_auth_dependency(app_state.config)
-    await dep(request)
-
-
-AuthRequired = Annotated[None, Depends(auth_dep)]
-
 
 # === Endpoints ===
 
@@ -294,7 +308,7 @@ async def system_control():
 
         <div class="status">
             <h2 class="healthy">● System Status: HEALTHY</h2>
-            <div class="metric">Version: 0.1.0</div>
+            <div class="metric">Version: 0.5.0</div>
             <div class="metric">Uptime: {int(uptime)}s</div>
             <div class="metric">PII Engine: {app_state.sanitizer.get_mode()}</div>
         </div>
@@ -311,9 +325,11 @@ async def system_control():
             <h2>🎛️ Controls</h2>
             <div class="status">
                 <p><a href="http://localhost:18790" target="_blank">→ OpenClaw Control UI</a> (Bot interface)</p>
+                <p><a href="/dashboard">→ Activity Dashboard</a> (real-time event feed)</p>
+                <p><a href="/manage/">→ Management Dashboard</a> (service controls, config, logs)</p>
                 <p><a href="/status">→ Gateway Status API</a></p>
                 <p><a href="/ledger">→ Data Ledger</a></p>
-                <p><a href="/approval-queue">→ Approval Queue</a></p>
+                <p><a href="/approve/pending">→ Approval Queue</a></p>
             </div>
         </div>
 
@@ -357,7 +373,7 @@ async def health_check():
 
     return StatusResponse(
         status="healthy",
-        version="0.1.0",
+        version="0.5.0",
         uptime_seconds=uptime,
         ledger_entries=stats.get("total_entries", 0),
         pending_approvals=len(pending),
@@ -704,6 +720,37 @@ async def approval_websocket(websocket: WebSocket, token: str | None = Query(Non
 
     finally:
         await app_state.approval_queue.disconnect(websocket)
+
+
+# === Collaborators Endpoint ===
+
+
+@app.get("/collaborators")
+async def get_collaborators(auth: AuthRequired):
+    """Return collaborator data from the shared bot workspace volume.
+
+    Reads COLLABORATORS.md and contributor logs from /data/bot-workspace.
+    Authentication required.
+    """
+    workspace = Path("/data/bot-workspace")
+    result: dict = {"collaborators_md": None, "contributor_logs": []}
+
+    collab_file = workspace / "COLLABORATORS.md"
+    if collab_file.exists():
+        result["collaborators_md"] = collab_file.read_text()
+
+    contrib_dir = workspace / "memory" / "contributors"
+    if contrib_dir.is_dir():
+        logs = []
+        for f in sorted(contrib_dir.iterdir()):
+            if f.is_file():
+                try:
+                    logs.append({"filename": f.name, "content": f.read_text()})
+                except Exception:
+                    pass
+        result["contributor_logs"] = logs
+
+    return result
 
 
 # === Entry Point for Testing ===

@@ -60,6 +60,10 @@ body{background:var(--bg);color:var(--text);font-family:-apple-system,BlinkMacSy
   <h1>AgentShroud</h1>
   <span class="status-dot disconnected" id="statusDot"></span>
   <span id="statusText" style="color:var(--text-dim);font-size:12px">Connecting...</span>
+  <nav style="margin-left:auto;display:flex;gap:16px;align-items:center">
+    <a href="/" style="color:var(--text-dim);font-size:12px;text-decoration:none" title="System Control">Control</a>
+    <a href="/manage/" style="color:var(--text-dim);font-size:12px;text-decoration:none" title="Management Dashboard">Manage</a>
+  </nav>
   <span class="uptime" id="uptime"></span>
 </div>
 <div class="grid">
@@ -88,6 +92,10 @@ body{background:var(--bg);color:var(--text);font-family:-apple-system,BlinkMacSy
     <div class="card">
       <h2>Pending Approvals</h2>
       <div id="approvalList"><div class="empty">No pending approvals</div></div>
+    </div>
+    <div class="card">
+      <h2>Collaborators</h2>
+      <div id="collaboratorsList"><div class="empty">Loading...</div></div>
     </div>
   </div>
 </div>
@@ -253,13 +261,48 @@ body{background:var(--bg);color:var(--text);font-family:-apple-system,BlinkMacSy
 
   setInterval(updateUptime, 1000);
   setInterval(fetchStats, 30000);
+
+  function fetchCollaborators() {
+    fetch('/collaborators', {headers:{'Authorization':'Bearer ' + token}})
+      .then(function(r) { return r.ok ? r.json() : Promise.reject(r.status); })
+      .then(function(data) { renderCollaborators(data); })
+      .catch(function(err) {
+        document.getElementById('collaboratorsList').innerHTML =
+          '<div class="empty">Unavailable' + (err === 403 ? ' (auth required)' : '') + '</div>';
+      });
+  }
+
+  function renderCollaborators(data) {
+    var el = document.getElementById('collaboratorsList');
+    var html = '';
+    if (data.collaborators_md) {
+      html += '<details open><summary style="cursor:pointer;color:var(--accent);font-size:12px;margin-bottom:6px">COLLABORATORS.md</summary>'
+        + '<pre style="white-space:pre-wrap;font-size:11px;color:var(--text-dim);max-height:200px;overflow-y:auto">'
+        + esc(data.collaborators_md) + '</pre></details>';
+    }
+    if (data.contributor_logs && data.contributor_logs.length) {
+      html += '<details><summary style="cursor:pointer;color:var(--accent);font-size:12px;margin-top:8px">'
+        + 'Contributor Logs (' + data.contributor_logs.length + ')</summary>';
+      data.contributor_logs.forEach(function(log) {
+        html += '<div style="margin-top:6px"><div style="font-size:11px;color:var(--text-dim)">' + esc(log.filename) + '</div>'
+          + '<pre style="white-space:pre-wrap;font-size:11px;max-height:120px;overflow-y:auto">'
+          + esc(log.content.substring(0, 2000)) + '</pre></div>';
+      });
+      html += '</details>';
+    }
+    if (!html) html = '<div class="empty">No collaborator data found in workspace</div>';
+    el.innerHTML = html;
+  }
+
+  setInterval(fetchCollaborators, 60000);
   // Connect WS: use token from URL if available, otherwise fetch via cookie auth
   if (token) {
     connect();
+    fetchCollaborators();
   } else {
     fetch('/dashboard/ws-token', {credentials: 'same-origin'})
       .then(function(r) { return r.ok ? r.json() : Promise.reject(); })
-      .then(function(d) { token = d.token; connect(); })
+      .then(function(d) { token = d.token; connect(); fetchCollaborators(); })
       .catch(function() { console.warn('Could not fetch WS token'); });
   }
   if (Notification.permission === 'default') Notification.requestPermission();
