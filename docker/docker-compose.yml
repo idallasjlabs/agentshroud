@@ -109,8 +109,8 @@ services:
       - ANTHROPIC_API_KEY_FILE=/run/secrets/anthropic_api_key
       - OP_SERVICE_ACCOUNT_TOKEN_FILE=/run/secrets/1password_service_account
       # Bot identity
-      - OPENCLAW_BOT_NAME=therealidallasj_bot
-      - OPENCLAW_BOT_EMAIL=therealidallasj@gmail.com
+      - OPENCLAW_BOT_NAME=agentshroud_bot
+      - OPENCLAW_BOT_EMAIL=agentshroud.ai@gmail.com
       # Security: Disable features that access host
       - OPENCLAW_DISABLE_HOST_FILESYSTEM=true
       - OPENCLAW_SANDBOX_MODE=strict

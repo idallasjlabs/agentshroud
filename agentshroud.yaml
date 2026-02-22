@@ -140,6 +140,14 @@ logging:
   max_files: 3
   destination: "/app/logs"
 
+credentials:
+  # Credential isolation (P2) — gateway op-proxy
+  # The gateway reads 1Password secrets on behalf of the bot.
+  # Only references matching these patterns are permitted.
+  # Activated in the FINAL PR when OP_SERVICE_ACCOUNT_TOKEN moves to the gateway.
+  allowed_op_paths:
+    - "op://AgentShroud Bot Credentials/*"
+
 # SSH Proxy configuration
 ssh:
   enabled: true
