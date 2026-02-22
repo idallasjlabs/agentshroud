@@ -13,18 +13,18 @@ branding/logos/png/
 
 ```css
 /* AgentShroud Blue */
---brand-primary: #8bf0fb;
---brand-primary-rgb: rgb(139, 240, 251);
---brand-primary-hsl: hsl(184, 93%, 76%);
+--brand-primary: #1583f0;
+--brand-primary-rgb: rgb(21, 131, 240);
+--brand-primary-hsl: hsl(211, 90%, 51%);
 ```
 
 ## Quick Color Palette
 
 ```css
 /* Primary */
---brand-blue: #8bf0fb;
---brand-blue-light: #c5f7fd;
---brand-blue-dark: #51e9f9;
+--brand-blue: #1583f0;
+--brand-blue-light: #4da2f4;
+--brand-blue-dark: #0e69c0;
 
 /* Semantic Colors */
 --success: #00ff88;
@@ -101,7 +101,7 @@ branding/
 ### CSS Variables
 ```css
 :root {
-  --brand-primary: #8bf0fb;
+  --brand-primary: #1583f0;
   --font-sans: Inter, system-ui, sans-serif;
 }
 
@@ -115,9 +115,9 @@ branding/
 ```css
 @media (prefers-color-scheme: dark) {
   :root {
-    --bg: #1a1a1a;
-    --text: #e0e0e0;
-    --accent: #8bf0fb;
+    --bg: #08090b;
+    --text: #e2e8f0;
+    --accent: #1583f0;
   }
 }
 ```
@@ -137,4 +137,4 @@ See `branding/README.md` for full documentation.
 
 ---
 
-**Quick Start:** Use `logo-transparent.png` + `#8bf0fb` color + Inter font
+**Quick Start:** Use `logo-transparent.png` + `#1583f0` color + Inter font

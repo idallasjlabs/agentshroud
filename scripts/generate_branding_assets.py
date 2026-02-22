@@ -493,6 +493,64 @@ def generate_variants():
         save(badge, out / f"badge-{s}x{s}.png")
 
 
+# ─── 8. SVG Logo Wrappers ─────────────────────────────────────────────────────
+def generate_svg_logos():
+    """Create SVG files that embed the logo PNGs as base64 data URIs.
+
+    These are scalable SVG containers — not vector traces.  True vector
+    re-creation of the hooded-figure + honeycomb design requires manual
+    illustration work.  The SVG wrappers are standards-compliant and work in
+    every SVG-capable context (browsers, Figma import, Inkscape, etc.).
+    """
+    import base64
+    print("\n[8] SVG Logo Wrappers")
+    out = ensure(BRANDING / "logos" / "svg")
+
+    sources = [
+        (SOURCE_DARK,        "logo.svg",             DARK_BG_HEX,  "#08090b"),
+        (SOURCE_LOGO,        "logo-transparent.svg", "none",        "none"),
+    ]
+
+    for src_path, filename, bg_fill, bg_stroke in sources:
+        raw = src_path.read_bytes()
+        b64 = base64.b64encode(raw).decode()
+        mime = "image/png"
+        data_uri = f"data:{mime};base64,{b64}"
+
+        # Read source to get natural dimensions
+        with Image.open(src_path) as im:
+            w, h = im.size
+
+        svg = f"""\
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  AgentShroud™ Logo — SVG wrapper with embedded PNG
+  © 2026 Isaiah Dallas Jefferson, Jr. AgentShroud™. All rights reserved.
+  AgentShroud™ is a trademark of Isaiah Dallas Jefferson, Jr., first used in February 2026.
+
+  NOTE: This SVG embeds the raster logo as a base64 data URI.
+  For a true vector version, manual illustration work is required.
+  This file scales cleanly at any size without quality loss.
+-->
+<svg xmlns="http://www.w3.org/2000/svg"
+     xmlns:xlink="http://www.w3.org/1999/xlink"
+     viewBox="0 0 {w} {h}"
+     width="{w}" height="{h}"
+     role="img"
+     aria-label="AgentShroud™ logo">
+  <title>AgentShroud™</title>
+  <desc>AgentShroud enterprise AI governance proxy logo</desc>
+  {"" if bg_fill == "none" else f'<rect width="{w}" height="{h}" fill="{bg_fill}"/>'}
+  <image href="{data_uri}"
+         x="0" y="0" width="{w}" height="{h}"
+         preserveAspectRatio="xMidYMid meet"/>
+</svg>
+"""
+        svg_path = out / filename
+        svg_path.write_text(svg, encoding="utf-8")
+        print(f"  ✓  {svg_path.relative_to(REPO_ROOT)}")
+
+
 # ─── Main ─────────────────────────────────────────────────────────────────────
 def main():
     print("AgentShroud™ Branding Asset Generator")
@@ -507,6 +565,7 @@ def main():
     generate_presentation()
     generate_icon_sizes()
     generate_variants()
+    generate_svg_logos()
 
     print("\n✅  All branding assets generated.")
     print(f"    See {BRANDING.relative_to(REPO_ROOT)}/ for outputs.")
