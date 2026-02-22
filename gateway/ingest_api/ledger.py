@@ -4,13 +4,11 @@ SQLite-based audit trail of all forwarded content.
 CRITICAL: Stores only SHA-256 hashes, never raw content.
 """
 
-import asyncio
 import hashlib
 import json
 import logging
 import uuid
 from datetime import datetime, timedelta
-from pathlib import Path
 from typing import Any
 
 import aiosqlite
@@ -136,6 +134,7 @@ class DataLedger:
 
         # Generate ID and timestamps
         from datetime import timezone
+
         entry_id = str(uuid.uuid4())
         now = datetime.now(timezone.utc)
         timestamp_iso = now.isoformat().replace("+00:00", "Z")
@@ -379,6 +378,7 @@ class DataLedger:
             raise RuntimeError("Ledger not initialized")
 
         from datetime import timezone
+
         now = datetime.now(timezone.utc).isoformat().replace("+00:00", "Z")
 
         cursor = await self.db.execute(

@@ -4,7 +4,7 @@ Focuses on easily testable functions without complex mocking.
 """
 
 import pytest
-from unittest.mock import MagicMock, AsyncMock, patch
+from unittest.mock import MagicMock, patch
 from fastapi import HTTPException
 
 from gateway.ingest_api.main import log_requests, global_exception_handler
@@ -14,7 +14,6 @@ from gateway.ingest_api.models import ForwardRequest
 @pytest.mark.asyncio
 async def test_log_requests_middleware():
     """Test request logging middleware"""
-    import time
 
     # Mock request and call_next
     request = MagicMock()
@@ -140,10 +139,9 @@ async def test_approval_decision_valid():
 async def test_lifespan_initialization(test_config):
     """Test FastAPI lifespan initialization"""
     from gateway.ingest_api.main import lifespan, app, app_state
-    from unittest.mock import patch
 
     # Temporarily override config loading
-    with patch('gateway.ingest_api.main.load_config', return_value=test_config):
+    with patch("gateway.ingest_api.main.load_config", return_value=test_config):
         async with lifespan(app):
             # Verify app_state was initialized
             assert app_state.config == test_config

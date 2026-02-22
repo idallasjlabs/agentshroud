@@ -6,13 +6,11 @@ Loads configuration from agentshroud.yaml and provides typed access via Pydantic
 import logging
 import secrets
 from pathlib import Path
-from typing import Any
 from urllib.parse import urlparse
 
 import yaml
 from pydantic import BaseModel, Field, field_validator
 from .ssh_config import SSHConfig
-from pydantic_settings import BaseSettings
 
 logger = logging.getLogger("agentshroud.gateway.config")
 
@@ -67,7 +65,9 @@ class RouterConfig(BaseModel):
 
         for name, url in v.items():
             if not url.startswith(("http://", "https://")):
-                raise ValueError(f"Target '{name}' URL must start with http:// or https://")
+                raise ValueError(
+                    f"Target '{name}' URL must start with http:// or https://"
+                )
 
             parsed = urlparse(url)
             if parsed.hostname not in allowed_hosts:
@@ -93,12 +93,14 @@ class GatewayConfig(BaseModel):
     port: int = 8080
     auth_method: str = "shared_secret"
     auth_token: str = ""
-    cors_origins: list[str] = Field(default_factory=lambda: [
-        "http://localhost:8080",
-        "http://localhost:18790",
-        "http://127.0.0.1:8080",
-        "http://127.0.0.1:18790"
-    ])
+    cors_origins: list[str] = Field(
+        default_factory=lambda: [
+            "http://localhost:8080",
+            "http://localhost:18790",
+            "http://127.0.0.1:8080",
+            "http://127.0.0.1:18790",
+        ]
+    )
     ledger: LedgerConfig = Field(default_factory=LedgerConfig)
     router: RouterConfig = Field(default_factory=RouterConfig)
     pii: PIIConfig = Field(default_factory=PIIConfig)
@@ -227,8 +229,7 @@ def load_config(config_path: Path | None = None) -> GatewayConfig:
             "No auth_token found in agentshroud.yaml. Generated new token:\n\n"
             f"    {auth_token}\n\n"
             "Add this to agentshroud.yaml under gateway.auth_token or use it for this session.\n"
-            "Save this token for your iOS Shortcuts and browser extension.\n"
-            + "=" * 80
+            "Save this token for your iOS Shortcuts and browser extension.\n" + "=" * 80
         )
 
     # Build final config

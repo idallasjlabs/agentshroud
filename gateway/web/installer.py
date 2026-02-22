@@ -14,7 +14,6 @@ from fastapi.responses import HTMLResponse
 from pydantic import BaseModel
 
 from ..runtime import detect_runtime
-from ..runtime.config import RuntimeConfig
 from ..runtime.security import get_security_comparison
 
 logger = logging.getLogger("agentshroud.web.installer")
@@ -66,52 +65,68 @@ async def check_prerequisites() -> dict:
     # OS
     os_name = platform.system()
     arch = platform.machine()
-    checks.append(PrerequisiteCheck(
-        name="Operating System",
-        status=os_name in ("Linux", "Darwin"),
-        detail=f"{os_name} {arch}",
-    ))
+    checks.append(
+        PrerequisiteCheck(
+            name="Operating System",
+            status=os_name in ("Linux", "Darwin"),
+            detail=f"{os_name} {arch}",
+        )
+    )
 
     # Architecture
-    checks.append(PrerequisiteCheck(
-        name="Architecture",
-        status=arch in ("x86_64", "aarch64", "arm64"),
-        detail=arch,
-    ))
+    checks.append(
+        PrerequisiteCheck(
+            name="Architecture",
+            status=arch in ("x86_64", "aarch64", "arm64"),
+            detail=arch,
+        )
+    )
 
     # Container runtime
     runtimes = detect_runtime()
-    checks.append(PrerequisiteCheck(
-        name="Container Runtime",
-        status=len(runtimes) > 0,
-        detail=f"Found: {', '.join(runtimes)}" if runtimes else "None found — install Docker, Podman, or Apple Containers",
-    ))
+    checks.append(
+        PrerequisiteCheck(
+            name="Container Runtime",
+            status=len(runtimes) > 0,
+            detail=(
+                f"Found: {', '.join(runtimes)}"
+                if runtimes
+                else "None found — install Docker, Podman, or Apple Containers"
+            ),
+        )
+    )
 
     # Python
     py_version = platform.python_version()
     py_ok = tuple(int(x) for x in py_version.split(".")[:2]) >= (3, 11)
-    checks.append(PrerequisiteCheck(
-        name="Python 3.11+",
-        status=py_ok,
-        detail=f"Python {py_version}",
-    ))
+    checks.append(
+        PrerequisiteCheck(
+            name="Python 3.11+",
+            status=py_ok,
+            detail=f"Python {py_version}",
+        )
+    )
 
     # Git
     git_ok = shutil.which("git") is not None
-    checks.append(PrerequisiteCheck(
-        name="Git",
-        status=git_ok,
-        detail="Installed" if git_ok else "Not found",
-    ))
+    checks.append(
+        PrerequisiteCheck(
+            name="Git",
+            status=git_ok,
+            detail="Installed" if git_ok else "Not found",
+        )
+    )
 
     # Disk space
     disk = shutil.disk_usage("/")
     disk_gb = disk.free / (1024**3)
-    checks.append(PrerequisiteCheck(
-        name="Disk Space (>2GB free)",
-        status=disk_gb > 2.0,
-        detail=f"{disk_gb:.1f} GB free",
-    ))
+    checks.append(
+        PrerequisiteCheck(
+            name="Disk Space (>2GB free)",
+            status=disk_gb > 2.0,
+            detail=f"{disk_gb:.1f} GB free",
+        )
+    )
 
     # RAM (Linux only)
     try:
@@ -120,28 +135,34 @@ async def check_prerequisites() -> dict:
                 if line.startswith("MemTotal"):
                     ram_kb = int(line.split()[1])
                     ram_gb = ram_kb / (1024**2)
-                    checks.append(PrerequisiteCheck(
-                        name="RAM (>1GB recommended)",
-                        status=ram_gb > 1.0,
-                        detail=f"{ram_gb:.1f} GB",
-                        required=False,
-                    ))
+                    checks.append(
+                        PrerequisiteCheck(
+                            name="RAM (>1GB recommended)",
+                            status=ram_gb > 1.0,
+                            detail=f"{ram_gb:.1f} GB",
+                            required=False,
+                        )
+                    )
                     break
     except FileNotFoundError:
         # macOS — use sysctl
         try:
             result = subprocess.run(
                 ["sysctl", "-n", "hw.memsize"],
-                capture_output=True, text=True, timeout=5,
+                capture_output=True,
+                text=True,
+                timeout=5,
             )
             if result.returncode == 0:
                 ram_gb = int(result.stdout.strip()) / (1024**3)
-                checks.append(PrerequisiteCheck(
-                    name="RAM (>1GB recommended)",
-                    status=ram_gb > 1.0,
-                    detail=f"{ram_gb:.1f} GB",
-                    required=False,
-                ))
+                checks.append(
+                    PrerequisiteCheck(
+                        name="RAM (>1GB recommended)",
+                        status=ram_gb > 1.0,
+                        detail=f"{ram_gb:.1f} GB",
+                        required=False,
+                    )
+                )
         except Exception:
             pass
 

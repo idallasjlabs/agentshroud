@@ -1,14 +1,14 @@
 """Tests for port_manager — port conflict detection and auto-assignment."""
 
 import socket
-import threading
-import time
 import pytest
 from unittest.mock import patch
 
 from gateway.tools.port_manager import (
-    PortManager, PortAssignment, PortResolution,
-    DEFAULT_PORTS, PORT_SEARCH_RANGE,
+    PortManager,
+    PortAssignment,
+    PortResolution,
+    PORT_SEARCH_RANGE,
 )
 
 

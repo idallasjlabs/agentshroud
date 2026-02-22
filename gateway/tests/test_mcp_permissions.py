@@ -6,7 +6,6 @@ from gateway.proxy.mcp_config import (
     MCPProxyConfig,
     MCPServerConfig,
     MCPToolConfig,
-    MCPTransport,
     PermissionLevel,
 )
 from gateway.proxy.mcp_permissions import (
@@ -14,8 +13,8 @@ from gateway.proxy.mcp_permissions import (
     TRUST_PERMISSION_MAP,
 )
 
-
 # === PermissionLevel ordering ===
+
 
 class TestPermissionLevel:
     def test_read_lt_write(self):
@@ -40,6 +39,7 @@ class TestPermissionLevel:
 
 # === Trust level mapping ===
 
+
 class TestTrustMapping:
     def test_trust_0_read_only(self):
         assert TRUST_PERMISSION_MAP[0] == PermissionLevel.READ
@@ -56,6 +56,7 @@ class TestTrustMapping:
 
 # === MCPPermissionManager ===
 
+
 @pytest.fixture
 def config():
     return MCPProxyConfig(
@@ -64,11 +65,23 @@ def config():
                 name="test-server",
                 min_trust_level=0,
                 tools={
-                    "read_data": MCPToolConfig(name="read_data", permission_level=PermissionLevel.READ),
-                    "write_data": MCPToolConfig(name="write_data", permission_level=PermissionLevel.WRITE),
-                    "exec_cmd": MCPToolConfig(name="exec_cmd", permission_level=PermissionLevel.EXECUTE),
-                    "admin_op": MCPToolConfig(name="admin_op", permission_level=PermissionLevel.ADMIN),
-                    "limited": MCPToolConfig(name="limited", permission_level=PermissionLevel.READ, rate_limit=3),
+                    "read_data": MCPToolConfig(
+                        name="read_data", permission_level=PermissionLevel.READ
+                    ),
+                    "write_data": MCPToolConfig(
+                        name="write_data", permission_level=PermissionLevel.WRITE
+                    ),
+                    "exec_cmd": MCPToolConfig(
+                        name="exec_cmd", permission_level=PermissionLevel.EXECUTE
+                    ),
+                    "admin_op": MCPToolConfig(
+                        name="admin_op", permission_level=PermissionLevel.ADMIN
+                    ),
+                    "limited": MCPToolConfig(
+                        name="limited",
+                        permission_level=PermissionLevel.READ,
+                        rate_limit=3,
+                    ),
                 },
                 allowed_agents=["agent-a", "agent-b"],
                 denied_agents=["agent-x"],
@@ -184,7 +197,9 @@ class TestInferPermission:
         assert mgr.infer_permission_level("read_data", sc) == PermissionLevel.READ
 
     def test_pattern_sensitive(self, mgr):
-        assert mgr.infer_permission_level("run_shell_command") == PermissionLevel.EXECUTE
+        assert (
+            mgr.infer_permission_level("run_shell_command") == PermissionLevel.EXECUTE
+        )
 
     def test_pattern_read(self, mgr):
         assert mgr.infer_permission_level("get_users") == PermissionLevel.READ
@@ -196,7 +211,9 @@ class TestInferPermission:
         assert mgr.infer_permission_level("delete_record") == PermissionLevel.EXECUTE
 
     def test_default_write(self, mgr):
-        assert mgr.infer_permission_level("do_something_custom") == PermissionLevel.WRITE
+        assert (
+            mgr.infer_permission_level("do_something_custom") == PermissionLevel.WRITE
+        )
 
 
 class TestRateLimiting:

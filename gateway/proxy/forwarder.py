@@ -3,13 +3,14 @@ HTTP Forwarder — forwards sanitized requests to OpenClaw on internal network.
 
 Connection pooling, timeout handling, retry logic, health checks.
 """
+
 from __future__ import annotations
 
 import asyncio
 import logging
 import time
 from dataclasses import dataclass, field
-from typing import Any, Optional
+from typing import Any
 
 logger = logging.getLogger("agentshroud.proxy.forwarder")
 
@@ -17,6 +18,7 @@ logger = logging.getLogger("agentshroud.proxy.forwarder")
 @dataclass
 class ForwarderConfig:
     """Configuration for the HTTP forwarder."""
+
     target_url: str = "http://openclaw:3000"
     timeout_seconds: float = 30.0
     max_retries: int = 3
@@ -29,6 +31,7 @@ class ForwarderConfig:
 @dataclass
 class ForwardResult:
     """Result of forwarding a request."""
+
     success: bool
     status_code: int = 0
     body: str = ""
@@ -53,7 +56,9 @@ class HTTPForwarder:
         self._total_forwarded: int = 0
         self._total_errors: int = 0
         self._last_forward_time: float = 0
-        self._response_handler: Any = None  # For testing: callable(path, body) -> (status, response)
+        self._response_handler: Any = (
+            None  # For testing: callable(path, body) -> (status, response)
+        )
 
     def set_response_handler(self, handler):
         """Set a mock response handler for testing."""
@@ -88,11 +93,15 @@ class HTTPForwarder:
                     # Real HTTP forwarding
                     try:
                         import aiohttp
+
                         url = f"{self.config.target_url}{path}"
-                        timeout = aiohttp.ClientTimeout(total=self.config.timeout_seconds)
+                        timeout = aiohttp.ClientTimeout(
+                            total=self.config.timeout_seconds
+                        )
                         async with aiohttp.ClientSession(timeout=timeout) as session:
                             async with session.request(
-                                method, url,
+                                method,
+                                url,
                                 data=body,
                                 headers=headers or {"Content-Type": "application/json"},
                             ) as resp:
@@ -128,7 +137,9 @@ class HTTPForwarder:
                         latency_ms=(time.time() - start) * 1000,
                     )
 
-        return ForwardResult(success=False, error="Max retries exceeded", retries=retries)
+        return ForwardResult(
+            success=False, error="Max retries exceeded", retries=retries
+        )
 
     async def health_check(self) -> bool:
         """Check if the OpenClaw backend is healthy."""

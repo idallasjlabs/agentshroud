@@ -6,10 +6,11 @@ entry protection, and screenshot analysis hooks.
 References:
     - Wu et al. 2026 (arXiv:2601.07263) - Browser-based attacks on AI agents
 """
+
 import re
 from dataclasses import dataclass, field
 from enum import IntEnum
-from typing import List, Callable, Optional
+from typing import List, Callable
 from urllib.parse import urlparse
 
 
@@ -24,8 +25,10 @@ class ThreatLevel(IntEnum):
 class SocialEngineeringDetected(Exception):
     pass
 
+
 class PhishingURLDetected(Exception):
     pass
+
 
 class CredentialEntryBlocked(Exception):
     pass
@@ -39,23 +42,57 @@ class ThreatAssessment:
 
 # Social engineering patterns
 _SE_PATTERNS = [
-    (re.compile(r'virus|infected|malware', re.I), ThreatLevel.HIGH, "malware scare"),
-    (re.compile(r'call\s+\d[\d\-]{6,}|call\s+(now|immediately)', re.I), ThreatLevel.HIGH, "phone scam"),
-    (re.compile(r'(windows\s+defender|microsoft\s+support)\s*(alert|error|warning)', re.I), ThreatLevel.HIGH, "tech support scam"),
-    (re.compile(r'error\s*#[A-Z0-9]{4,}', re.I), ThreatLevel.HIGH, "fake error code"),
-    (re.compile(r'(press\s+win|powershell\s+-e|cmd\.exe)', re.I), ThreatLevel.HIGH, "fake captcha/command execution"),
-    (re.compile(r'account\s+(will\s+be\s+)?suspend', re.I), ThreatLevel.MEDIUM, "account suspension threat"),
-    (re.compile(r'urgent|immediately|right\s+now', re.I), ThreatLevel.MEDIUM, "urgency manipulation"),
-    (re.compile(r'verify\s+your\s+(identity|account)', re.I), ThreatLevel.MEDIUM, "identity verification scam"),
+    (re.compile(r"virus|infected|malware", re.I), ThreatLevel.HIGH, "malware scare"),
+    (
+        re.compile(r"call\s+\d[\d\-]{6,}|call\s+(now|immediately)", re.I),
+        ThreatLevel.HIGH,
+        "phone scam",
+    ),
+    (
+        re.compile(
+            r"(windows\s+defender|microsoft\s+support)\s*(alert|error|warning)", re.I
+        ),
+        ThreatLevel.HIGH,
+        "tech support scam",
+    ),
+    (re.compile(r"error\s*#[A-Z0-9]{4,}", re.I), ThreatLevel.HIGH, "fake error code"),
+    (
+        re.compile(r"(press\s+win|powershell\s+-e|cmd\.exe)", re.I),
+        ThreatLevel.HIGH,
+        "fake captcha/command execution",
+    ),
+    (
+        re.compile(r"account\s+(will\s+be\s+)?suspend", re.I),
+        ThreatLevel.MEDIUM,
+        "account suspension threat",
+    ),
+    (
+        re.compile(r"urgent|immediately|right\s+now", re.I),
+        ThreatLevel.MEDIUM,
+        "urgency manipulation",
+    ),
+    (
+        re.compile(r"verify\s+your\s+(identity|account)", re.I),
+        ThreatLevel.MEDIUM,
+        "identity verification scam",
+    ),
 ]
 
 # URL phishing patterns
-_PHISHING_BRANDS = ["paypal", "google", "apple", "microsoft", "amazon", "facebook", "netflix"]
+_PHISHING_BRANDS = [
+    "paypal",
+    "google",
+    "apple",
+    "microsoft",
+    "amazon",
+    "facebook",
+    "netflix",
+]
 _LOOKALIKE_PATTERNS = [
-    re.compile(r'g0+gle', re.I),
-    re.compile(r'payp@l', re.I),
-    re.compile(r'amaz0n', re.I),
-    re.compile(r'faceb0+k', re.I),
+    re.compile(r"g0+gle", re.I),
+    re.compile(r"payp@l", re.I),
+    re.compile(r"amaz0n", re.I),
+    re.compile(r"faceb0+k", re.I),
 ]
 
 
@@ -83,7 +120,7 @@ class BrowserSecurityGuard:
 
         # Homograph detection (non-ASCII in hostname)
         try:
-            hostname.encode('ascii')
+            hostname.encode("ascii")
         except UnicodeEncodeError:
             return ThreatLevel.HIGH
 
@@ -103,7 +140,7 @@ class BrowserSecurityGuard:
                 return ThreatLevel.HIGH
 
         # IP address URL
-        if re.match(r'^\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}$', hostname):
+        if re.match(r"^\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}$", hostname):
             return ThreatLevel.LOW
 
         # Excessive subdomains
@@ -122,20 +159,28 @@ class BrowserSecurityGuard:
 
         # Block HTTP for non-localhost
         if parsed.scheme != "https":
-            raise CredentialEntryBlocked(f"Credential entry blocked on non-HTTPS: {url}")
+            raise CredentialEntryBlocked(
+                f"Credential entry blocked on non-HTTPS: {url}"
+            )
 
         # Block IP addresses
-        if re.match(r'^\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}$', hostname):
-            raise CredentialEntryBlocked(f"Credential entry blocked on IP address: {url}")
+        if re.match(r"^\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}$", hostname):
+            raise CredentialEntryBlocked(
+                f"Credential entry blocked on IP address: {url}"
+            )
 
         # Block lookalikes
         for pat in _LOOKALIKE_PATTERNS:
             if pat.search(hostname):
-                raise CredentialEntryBlocked(f"Credential entry blocked on suspicious domain: {url}")
+                raise CredentialEntryBlocked(
+                    f"Credential entry blocked on suspicious domain: {url}"
+                )
 
         # Check URL reputation
         if self.check_url_reputation(url) >= ThreatLevel.HIGH:
-            raise CredentialEntryBlocked(f"Credential entry blocked - high threat URL: {url}")
+            raise CredentialEntryBlocked(
+                f"Credential entry blocked - high threat URL: {url}"
+            )
 
         return True
 

@@ -6,12 +6,13 @@ validation, redirect URI strict matching, and consent cookie binding.
 References:
     - Wang et al. 2026 (arXiv:2602.08412) - MCP OAuth confused deputy attacks
 """
+
 import hashlib
 import hmac
 import json
 import secrets
 import time
-from dataclasses import dataclass, field
+from dataclasses import dataclass
 from typing import Dict, List, Optional, Set
 from urllib.parse import urlparse
 import posixpath
@@ -20,11 +21,14 @@ import posixpath
 class OAuthError(Exception):
     pass
 
+
 class ConfusedDeputyError(OAuthError):
     pass
 
+
 class PKCEViolation(OAuthError):
     pass
+
 
 class RedirectMismatch(OAuthError):
     pass
@@ -57,7 +61,9 @@ class OAuthSecurityValidator:
         if not req.client_id:
             raise OAuthError("Empty client_id")
         if req.client_id in self._known_shared_ids:
-            raise ConfusedDeputyError(f"Shared/static client_id rejected: {req.client_id}")
+            raise ConfusedDeputyError(
+                f"Shared/static client_id rejected: {req.client_id}"
+            )
         if not req.state or len(req.state) < 8:
             raise OAuthError("State parameter missing or too short (min 8 chars)")
         self.validate_redirect_uri(req.redirect_uri)
@@ -71,12 +77,21 @@ class OAuthSecurityValidator:
     def validate_redirect_uri(self, uri: str) -> bool:
         parsed = urlparse(uri)
         # Normalize path to catch traversal
-        normalized = parsed._replace(path=posixpath.normpath(parsed.path) if parsed.path else parsed.path)
+        normalized = parsed._replace(
+            path=posixpath.normpath(parsed.path) if parsed.path else parsed.path
+        )
         normalized_uri = normalized.geturl()
         # Block non-localhost HTTP
-        if parsed.scheme == "http" and parsed.hostname not in ("localhost", "127.0.0.1", "::1"):
+        if parsed.scheme == "http" and parsed.hostname not in (
+            "localhost",
+            "127.0.0.1",
+            "::1",
+        ):
             raise RedirectMismatch(f"Non-localhost HTTP redirect rejected: {uri}")
-        if normalized_uri not in self.allowed_redirect_uris and uri not in self.allowed_redirect_uris:
+        if (
+            normalized_uri not in self.allowed_redirect_uris
+            and uri not in self.allowed_redirect_uris
+        ):
             raise RedirectMismatch(f"Redirect URI not in allowed list: {uri}")
         return True
 
@@ -84,7 +99,9 @@ class OAuthSecurityValidator:
         self._used_states[state] = time.time()
         # Evict oldest entries if over limit
         if len(self._used_states) > self._max_states:
-            oldest = sorted(self._used_states, key=self._used_states.get)[:len(self._used_states) - self._max_states]
+            oldest = sorted(self._used_states, key=self._used_states.get)[
+                : len(self._used_states) - self._max_states
+            ]
             for k in oldest:
                 del self._used_states[k]
 
@@ -94,29 +111,50 @@ class OAuthSecurityValidator:
 
     def verify_pkce(self, verifier: str, challenge: str, method: str) -> bool:
         import base64
+
         if method == "S256":
-            computed = base64.urlsafe_b64encode(hashlib.sha256(verifier.encode()).digest()).rstrip(b"=").decode()
+            computed = (
+                base64.urlsafe_b64encode(hashlib.sha256(verifier.encode()).digest())
+                .rstrip(b"=")
+                .decode()
+            )
             return hmac.compare_digest(computed, challenge)
         elif method == "plain":
             return hmac.compare_digest(verifier, challenge)
         return False
 
-    def create_consent_cookie(self, client_id: str, scopes: List[str], user_id: str) -> str:
-        payload = json.dumps({"c": client_id, "s": sorted(scopes), "u": user_id, "t": time.time()})
-        sig = hmac.new(self._COOKIE_SECRET, payload.encode(), hashlib.sha256).hexdigest()
+    def create_consent_cookie(
+        self, client_id: str, scopes: List[str], user_id: str
+    ) -> str:
+        payload = json.dumps(
+            {"c": client_id, "s": sorted(scopes), "u": user_id, "t": time.time()}
+        )
+        sig = hmac.new(
+            self._COOKIE_SECRET, payload.encode(), hashlib.sha256
+        ).hexdigest()
         import base64
+
         encoded = base64.urlsafe_b64encode(payload.encode()).decode()
         return f"{encoded}.{sig}"
 
-    def validate_consent_cookie(self, cookie: str, client_id: str, scopes: List[str], user_id: str) -> bool:
+    def validate_consent_cookie(
+        self, cookie: str, client_id: str, scopes: List[str], user_id: str
+    ) -> bool:
         try:
             import base64
+
             encoded, sig = cookie.rsplit(".", 1)
             payload = base64.urlsafe_b64decode(encoded.encode()).decode()
-            expected_sig = hmac.new(self._COOKIE_SECRET, payload.encode(), hashlib.sha256).hexdigest()
+            expected_sig = hmac.new(
+                self._COOKIE_SECRET, payload.encode(), hashlib.sha256
+            ).hexdigest()
             if not hmac.compare_digest(sig, expected_sig):
                 return False
             data = json.loads(payload)
-            return data["c"] == client_id and sorted(data["s"]) == sorted(scopes) and data["u"] == user_id
+            return (
+                data["c"] == client_id
+                and sorted(data["s"]) == sorted(scopes)
+                and data["u"] == user_id
+            )
         except Exception:
             return False

@@ -6,6 +6,7 @@ the security pipeline, and forwards to the actual MCP server.
 Design: transparent drop-in. Default-allow. Log everything, block only clear threats.
 Supports stdio and HTTP/SSE transports with connection pooling.
 """
+
 from __future__ import annotations
 
 import asyncio
@@ -13,12 +14,12 @@ import json
 import logging
 import time
 import uuid
-from dataclasses import dataclass, field
+from dataclasses import dataclass
 from typing import Any, Optional
 
 from .mcp_audit import MCPAuditTrail
 from .mcp_config import MCPProxyConfig, MCPServerConfig, MCPTransport
-from .mcp_inspector import MCPInspector, ThreatLevel
+from .mcp_inspector import MCPInspector
 from .mcp_permissions import MCPPermissionManager
 
 logger = logging.getLogger("agentshroud.proxy.mcp_proxy")
@@ -27,6 +28,7 @@ logger = logging.getLogger("agentshroud.proxy.mcp_proxy")
 @dataclass
 class MCPToolCall:
     """Represents an MCP tool_use request."""
+
     id: str
     server_name: str
     tool_name: str
@@ -44,6 +46,7 @@ class MCPToolCall:
 @dataclass
 class MCPToolResult:
     """Represents an MCP tool result."""
+
     call_id: str
     server_name: str
     tool_name: str
@@ -60,6 +63,7 @@ class MCPToolResult:
 @dataclass
 class ProxyResult:
     """Result of proxying an MCP tool call."""
+
     allowed: bool = True
     blocked: bool = False
     block_reason: str = ""
@@ -93,9 +97,11 @@ class StdioConnection:
         env = None
         if self.config.env:
             import os
+
             env = {**os.environ, **self.config.env}
         self.process = await asyncio.create_subprocess_exec(
-            self.config.command, *self.config.args,
+            self.config.command,
+            *self.config.args,
             stdin=asyncio.subprocess.PIPE,
             stdout=asyncio.subprocess.PIPE,
             stderr=asyncio.subprocess.PIPE,
@@ -154,7 +160,9 @@ class HttpSseConnection:
         try:
             import aiohttp
         except ImportError:
-            raise RuntimeError("aiohttp required for HTTP/SSE transport. Install with: pip install aiohttp")
+            raise RuntimeError(
+                "aiohttp required for HTTP/SSE transport. Install with: pip install aiohttp"
+            )
 
         if not self._session:
             self._session = aiohttp.ClientSession()
@@ -185,7 +193,9 @@ class ConnectionPool:
     def __init__(self):
         self._connections: dict[str, StdioConnection | HttpSseConnection] = {}
 
-    def get_or_create(self, server_name: str, config: MCPServerConfig) -> StdioConnection | HttpSseConnection:
+    def get_or_create(
+        self, server_name: str, config: MCPServerConfig
+    ) -> StdioConnection | HttpSseConnection:
         """Get existing connection or create a new one."""
         if server_name not in self._connections:
             if config.transport == MCPTransport.STDIO:
@@ -205,7 +215,7 @@ class ConnectionPool:
 
 class MCPProxy:
     """Main MCP proxy that intercepts tool calls and routes through security.
-    
+
     Transparent by default: all calls pass through unless a clear threat is detected.
     """
 
@@ -237,11 +247,11 @@ class MCPProxy:
         execute: bool = False,
     ) -> ProxyResult:
         """Process an MCP tool call through the security pipeline.
-        
+
         Args:
             tool_call: The tool call to process.
             execute: If True, actually forward to the MCP server. If False, just inspect.
-        
+
         Returns:
             ProxyResult with security findings and optionally the tool result.
         """
@@ -276,7 +286,9 @@ class MCPProxy:
                     tool_name=tool_call.tool_name,
                     success=not tool_result.is_error,
                     error_message=tool_result.error_message,
-                    result_summary=str(tool_result.content)[:200] if tool_result.content else "",
+                    result_summary=(
+                        str(tool_result.content)[:200] if tool_result.content else ""
+                    ),
                 )
             return result
 
@@ -325,7 +337,9 @@ class MCPProxy:
                 threat_level=inspection.threat_level.value,
                 blocked=True,
                 block_reason=inspection.block_reason,
-                pii_redacted=any(f.finding_type.value == "pii_leak" for f in inspection.findings),
+                pii_redacted=any(
+                    f.finding_type.value == "pii_leak" for f in inspection.findings
+                ),
                 call_id=tool_call.id,
             )
             return ProxyResult(
@@ -342,7 +356,9 @@ class MCPProxy:
 
         # 3. Log allowed call
         self._stats["allowed"] += 1
-        pii_redacted = any(f.finding_type.value == "pii_leak" for f in inspection.findings)
+        pii_redacted = any(
+            f.finding_type.value == "pii_leak" for f in inspection.findings
+        )
         entry = self.audit.log_tool_call(
             agent_id=tool_call.agent_id,
             server_name=tool_call.server_name,
@@ -378,7 +394,10 @@ class MCPProxy:
                     check_pii=self.config.pii_scan_enabled,
                 )
                 result.sanitized_result = result_inspection.sanitized_result
-                result_pii = any(f.finding_type.value == "pii_leak" for f in result_inspection.findings)
+                result_pii = any(
+                    f.finding_type.value == "pii_leak"
+                    for f in result_inspection.findings
+                )
             else:
                 result_pii = False
 
@@ -389,9 +408,19 @@ class MCPProxy:
                 tool_name=tool_call.tool_name,
                 success=not tool_result.is_error,
                 error_message=tool_result.error_message,
-                result_summary=str(tool_result.content)[:200] if tool_result.content else "",
-                findings_count=len(result_inspection.findings) if tool_result.content is not None else 0,
-                threat_level=result_inspection.threat_level.value if tool_result.content is not None else "none",
+                result_summary=(
+                    str(tool_result.content)[:200] if tool_result.content else ""
+                ),
+                findings_count=(
+                    len(result_inspection.findings)
+                    if tool_result.content is not None
+                    else 0
+                ),
+                threat_level=(
+                    result_inspection.threat_level.value
+                    if tool_result.content is not None
+                    else "none"
+                ),
                 pii_redacted=result_pii,
             )
 
@@ -430,7 +459,9 @@ class MCPProxy:
                     server_name=tool_call.server_name,
                     tool_name=tool_call.tool_name,
                     is_error=True,
-                    error_message=response["error"].get("message", str(response["error"])),
+                    error_message=response["error"].get(
+                        "message", str(response["error"])
+                    ),
                 )
 
             return MCPToolResult(
@@ -465,7 +496,7 @@ class MCPProxy:
         agent_id: str = "default",
     ) -> ProxyResult:
         """Process a tool result coming back (for cases where execution happens externally).
-        
+
         Inspects for PII and logs to audit trail.
         """
         start = time.time()
@@ -478,7 +509,9 @@ class MCPProxy:
                 tool_name=tool_result.tool_name,
                 success=not tool_result.is_error,
                 error_message=tool_result.error_message,
-                result_summary=str(tool_result.content)[:200] if tool_result.content else "",
+                result_summary=(
+                    str(tool_result.content)[:200] if tool_result.content else ""
+                ),
             )
             return ProxyResult(
                 allowed=True,
@@ -494,7 +527,9 @@ class MCPProxy:
             check_pii=self.config.pii_scan_enabled,
         )
 
-        pii_redacted = any(f.finding_type.value == "pii_leak" for f in inspection.findings)
+        pii_redacted = any(
+            f.finding_type.value == "pii_leak" for f in inspection.findings
+        )
 
         self.audit.log_tool_result(
             call_id=tool_result.call_id,
@@ -503,7 +538,9 @@ class MCPProxy:
             tool_name=tool_result.tool_name,
             success=not tool_result.is_error,
             error_message=tool_result.error_message,
-            result_summary=str(tool_result.content)[:200] if tool_result.content else "",
+            result_summary=(
+                str(tool_result.content)[:200] if tool_result.content else ""
+            ),
             findings_count=len(inspection.findings),
             threat_level=inspection.threat_level.value,
             pii_redacted=pii_redacted,
@@ -522,7 +559,8 @@ class MCPProxy:
         """Get proxy statistics."""
         avg_ms = (
             self._stats["total_duration_ms"] / self._stats["total_calls"]
-            if self._stats["total_calls"] > 0 else 0
+            if self._stats["total_calls"] > 0
+            else 0
         )
         return {
             **self._stats,

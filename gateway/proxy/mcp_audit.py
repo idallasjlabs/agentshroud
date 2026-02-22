@@ -8,7 +8,7 @@ import hashlib
 import logging
 import time
 import uuid
-from dataclasses import dataclass, field
+from dataclasses import dataclass
 from typing import Any, Optional
 
 logger = logging.getLogger("agentshroud.proxy.mcp_audit")
@@ -17,6 +17,7 @@ logger = logging.getLogger("agentshroud.proxy.mcp_audit")
 @dataclass
 class MCPAuditEntry:
     """A single MCP tool call audit entry."""
+
     id: str
     timestamp: float
     direction: str  # "tool_call" or "tool_result"
@@ -55,7 +56,9 @@ class MCPAuditTrail:
         self._last_hash: str = self.GENESIS_HASH
         self._call_start_times: dict[str, float] = {}
 
-    def _compute_chain_hash(self, content: str, direction: str, timestamp: float) -> tuple[str, str]:
+    def _compute_chain_hash(
+        self, content: str, direction: str, timestamp: float
+    ) -> tuple[str, str]:
         """Compute hash chain values. Returns (content_hash, chain_hash)."""
         content_hash = hashlib.sha256(content.encode()).hexdigest()
         chain_input = f"{self._last_hash}:{content_hash}:{direction}:{timestamp}"
@@ -122,7 +125,9 @@ class MCPAuditTrail:
         logger.info(
             "MCP audit: %s %s/%s by %s [%s] %s",
             "BLOCKED" if blocked else "ALLOWED",
-            server_name, tool_name, agent_id,
+            server_name,
+            tool_name,
+            agent_id,
             threat_level,
             block_reason or "ok",
         )
@@ -175,7 +180,9 @@ class MCPAuditTrail:
         logger.info(
             "MCP audit result: %s %s/%s [%.1fms] %s",
             "OK" if success else "ERROR",
-            server_name, tool_name, duration_ms,
+            server_name,
+            tool_name,
+            duration_ms,
             error_message or "success",
         )
         return entry
@@ -228,7 +235,9 @@ class MCPAuditTrail:
         return [e for e in self._entries if e.blocked]
 
     def get_failed_entries(self) -> list[MCPAuditEntry]:
-        return [e for e in self._entries if not e.success and e.direction == "tool_result"]
+        return [
+            e for e in self._entries if not e.success and e.direction == "tool_result"
+        ]
 
     def generate_report(self) -> dict[str, Any]:
         """Generate an MCP audit report summary."""

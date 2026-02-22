@@ -1,6 +1,5 @@
 """Test Context Window Poisoning Defense."""
 
-import pytest
 from gateway.security.context_guard import check_message
 
 

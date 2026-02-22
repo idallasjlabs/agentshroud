@@ -4,6 +4,7 @@ Proxy Pipeline — all messages flow through security checks.
 Inbound: prompt guard → PII sanitizer → trust check → audit → forward
 Outbound: PII sanitizer → egress filter → audit → return
 """
+
 from __future__ import annotations
 
 import hashlib
@@ -25,6 +26,7 @@ class PipelineAction(str, Enum):
 @dataclass
 class PipelineResult:
     """Result of running a message through the security pipeline."""
+
     original_message: str
     sanitized_message: str
     action: PipelineAction = PipelineAction.FORWARD
@@ -66,6 +68,7 @@ class PipelineResult:
 @dataclass
 class AuditChainEntry:
     """An entry in the SHA-256 hash chain audit ledger."""
+
     id: str
     timestamp: float
     direction: str
@@ -84,8 +87,11 @@ class AuditChain:
         self._entries: list[AuditChainEntry] = []
         self._last_hash: str = self.GENESIS_HASH
 
-    def append(self, content: str, direction: str, metadata: dict[str, Any] | None = None) -> AuditChainEntry:
+    def append(
+        self, content: str, direction: str, metadata: dict[str, Any] | None = None
+    ) -> AuditChainEntry:
         import uuid
+
         now = time.time()
         content_hash = hashlib.sha256(content.encode()).hexdigest()
         chain_input = f"{self._last_hash}:{content_hash}:{direction}:{now}"
@@ -155,7 +161,10 @@ class SecurityPipeline:
         self.approval_queue = approval_queue
         self.prompt_block_threshold = prompt_block_threshold
         self.approval_actions = approval_actions or [
-            "execute_command", "delete_file", "admin_action", "install_package"
+            "execute_command",
+            "delete_file",
+            "admin_action",
+            "install_package",
         ]
         self.audit_chain = AuditChain()
         self._stats = {
@@ -226,7 +235,9 @@ class SecurityPipeline:
                 result.blocked = True
                 result.block_reason = f"Trust level insufficient for action {action}"
                 self._stats["inbound_blocked"] += 1
-                entry = self.audit_chain.append(result.sanitized_message, "inbound_trust_denied", metadata)
+                entry = self.audit_chain.append(
+                    result.sanitized_message, "inbound_trust_denied", metadata
+                )
                 result.audit_entry_id = entry.id
                 result.audit_hash = entry.chain_hash
                 result.processing_time_ms = (time.time() - start) * 1000
@@ -237,7 +248,9 @@ class SecurityPipeline:
             result.action = PipelineAction.QUEUE_APPROVAL
             result.queued_for_approval = True
             self._stats["inbound_queued"] += 1
-            entry = self.audit_chain.append(result.sanitized_message, "inbound_queued", metadata)
+            entry = self.audit_chain.append(
+                result.sanitized_message, "inbound_queued", metadata
+            )
             result.audit_entry_id = entry.id
             result.audit_hash = entry.chain_hash
             result.processing_time_ms = (time.time() - start) * 1000
@@ -268,6 +281,15 @@ class SecurityPipeline:
             timestamp=start,
         )
 
+        # Step 0: Strip Claude XML internal blocks
+        if self.pii_sanitizer:
+            filtered_response, xml_filtered = self.pii_sanitizer.filter_xml_blocks(
+                response
+            )
+            if xml_filtered:
+                result.sanitized_message = filtered_response
+                response = filtered_response
+
         # Step 1: PII sanitization on outbound
         if self.pii_sanitizer:
             sanitize_result = await self.pii_sanitizer.sanitize(response)
@@ -287,7 +309,9 @@ class SecurityPipeline:
                     result.blocked = True
                     result.block_reason = f"Egress blocked: {url} — {attempt.rule}"
                     self._stats["outbound_blocked"] += 1
-                    entry = self.audit_chain.append(result.sanitized_message, "outbound_blocked", metadata)
+                    entry = self.audit_chain.append(
+                        result.sanitized_message, "outbound_blocked", metadata
+                    )
                     result.audit_entry_id = entry.id
                     result.audit_hash = entry.chain_hash
                     result.processing_time_ms = (time.time() - start) * 1000

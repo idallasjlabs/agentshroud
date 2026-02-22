@@ -1,9 +1,6 @@
 """Unit tests for pipeline components."""
 
-import pytest
-import pytest_asyncio
-
-from gateway.proxy.pipeline import AuditChain, AuditChainEntry
+from gateway.proxy.pipeline import AuditChain
 
 
 class TestAuditChain:
@@ -69,6 +66,7 @@ class TestAuditChain:
     def test_content_hash_deterministic(self):
         chain = AuditChain()
         import hashlib
+
         expected = hashlib.sha256("test".encode()).hexdigest()
         entry = chain.append("test", "inbound")
         assert entry.content_hash == expected

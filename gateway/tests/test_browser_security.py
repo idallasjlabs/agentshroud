@@ -1,12 +1,17 @@
 """Tests for browser_security module.
 TDD: Written before implementation.
 """
+
 import pytest
-import sys, os
-sys.path.insert(0, os.path.join(os.path.dirname(__file__), '..'))
+import sys
+import os
+
+sys.path.insert(0, os.path.join(os.path.dirname(__file__), ".."))
 from security.browser_security import (
-    BrowserSecurityGuard, ThreatAssessment, ThreatLevel,
-    SocialEngineeringDetected, PhishingURLDetected, CredentialEntryBlocked
+    BrowserSecurityGuard,
+    ThreatAssessment,
+    ThreatLevel,
+    CredentialEntryBlocked,
 )
 
 
@@ -17,7 +22,9 @@ def guard():
 
 class TestSocialEngineeringDetection:
     def test_fake_dialog_detected(self, guard):
-        content = '<div class="popup">Your computer has a virus! Call 1-800-SCAM now!</div>'
+        content = (
+            '<div class="popup">Your computer has a virus! Call 1-800-SCAM now!</div>'
+        )
         result = guard.analyze_content(content)
         assert result.threat_level >= ThreatLevel.HIGH
 
@@ -27,7 +34,9 @@ class TestSocialEngineeringDetection:
         assert result.threat_level >= ThreatLevel.MEDIUM
 
     def test_urgent_action_required(self, guard):
-        content = "URGENT: Your account will be suspended! Verify your identity immediately."
+        content = (
+            "URGENT: Your account will be suspended! Verify your identity immediately."
+        )
         result = guard.analyze_content(content)
         assert result.threat_level >= ThreatLevel.MEDIUM
 
@@ -37,24 +46,33 @@ class TestSocialEngineeringDetection:
         assert result.threat_level == ThreatLevel.NONE
 
     def test_tech_support_scam(self, guard):
-        content = "Microsoft Support: Error #DW6VB36. Call immediately to prevent data loss."
+        content = (
+            "Microsoft Support: Error #DW6VB36. Call immediately to prevent data loss."
+        )
         result = guard.analyze_content(content)
         assert result.threat_level >= ThreatLevel.HIGH
 
     def test_fake_captcha(self, guard):
-        content = "Press Win+R, paste this command to verify you are human: powershell -e"
+        content = (
+            "Press Win+R, paste this command to verify you are human: powershell -e"
+        )
         result = guard.analyze_content(content)
         assert result.threat_level >= ThreatLevel.HIGH
 
     def test_multiple_threats_aggregated(self, guard):
-        content = "VIRUS DETECTED! Your account suspended! Call 1-800-HELP now! Click to fix!"
+        content = (
+            "VIRUS DETECTED! Your account suspended! Call 1-800-HELP now! Click to fix!"
+        )
         result = guard.analyze_content(content)
         assert len(result.threats) >= 2
 
 
 class TestURLReputation:
     def test_known_phishing_pattern(self, guard):
-        assert guard.check_url_reputation("http://login-paypal.security-verify.com/signin") == ThreatLevel.HIGH
+        assert (
+            guard.check_url_reputation("http://login-paypal.security-verify.com/signin")
+            == ThreatLevel.HIGH
+        )
 
     def test_suspicious_subdomain(self, guard):
         level = guard.check_url_reputation("http://google.com.evil-domain.xyz/login")
@@ -65,7 +83,10 @@ class TestURLReputation:
         assert level >= ThreatLevel.LOW
 
     def test_legitimate_url(self, guard):
-        assert guard.check_url_reputation("https://github.com/user/repo") == ThreatLevel.NONE
+        assert (
+            guard.check_url_reputation("https://github.com/user/repo")
+            == ThreatLevel.NONE
+        )
 
     def test_data_uri_blocked(self, guard):
         level = guard.check_url_reputation("data:text/html,<script>alert(1)</script>")
@@ -76,7 +97,9 @@ class TestURLReputation:
         assert level >= ThreatLevel.HIGH
 
     def test_excessive_subdomains(self, guard):
-        level = guard.check_url_reputation("https://secure.login.account.verify.example.com/auth")
+        level = guard.check_url_reputation(
+            "https://secure.login.account.verify.example.com/auth"
+        )
         assert level >= ThreatLevel.LOW
 
 
@@ -103,8 +126,10 @@ class TestCredentialProtection:
 class TestScreenshotAnalysis:
     def test_screenshot_hook_registered(self, guard):
         called = []
-        guard.register_screenshot_hook(lambda img: called.append(True) or ThreatAssessment(ThreatLevel.NONE, []))
-        result = guard.analyze_screenshot(b"fake-image-data")
+        guard.register_screenshot_hook(
+            lambda img: called.append(True) or ThreatAssessment(ThreatLevel.NONE, [])
+        )
+        guard.analyze_screenshot(b"fake-image-data")
         assert len(called) == 1
 
     def test_no_hook_returns_none_threat(self, guard):
@@ -112,6 +137,8 @@ class TestScreenshotAnalysis:
         assert result.threat_level == ThreatLevel.NONE
 
     def test_hook_can_flag_threat(self, guard):
-        guard.register_screenshot_hook(lambda img: ThreatAssessment(ThreatLevel.HIGH, ["fake dialog detected"]))
+        guard.register_screenshot_hook(
+            lambda img: ThreatAssessment(ThreatLevel.HIGH, ["fake dialog detected"])
+        )
         result = guard.analyze_screenshot(b"fake-image-data")
         assert result.threat_level == ThreatLevel.HIGH

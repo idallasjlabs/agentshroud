@@ -56,10 +56,15 @@ class ApprovalQueue:
         async with self._lock:
             # Generate ID and timestamps
             from datetime import timezone
+
             request_id = str(uuid.uuid4())
             now = datetime.now(timezone.utc)
             submitted_at = now.isoformat().replace("+00:00", "Z")
-            expires_at = (now + timedelta(seconds=self.config.timeout_seconds)).isoformat().replace("+00:00", "Z")
+            expires_at = (
+                (now + timedelta(seconds=self.config.timeout_seconds))
+                .isoformat()
+                .replace("+00:00", "Z")
+            )
 
             # Create queue item
             item = ApprovalQueueItem(
@@ -82,9 +87,7 @@ class ApprovalQueue:
             )
 
             # Broadcast to WebSocket clients
-            await self.broadcast(
-                {"type": "new_request", "data": item.model_dump()}
-            )
+            await self.broadcast({"type": "new_request", "data": item.model_dump()})
 
             return item
 
@@ -113,9 +116,7 @@ class ApprovalQueue:
 
             # Check if already decided
             if item.status in ["approved", "rejected", "expired"]:
-                raise ValueError(
-                    f"Approval request {request_id} already {item.status}"
-                )
+                raise ValueError(f"Approval request {request_id} already {item.status}")
 
             # Check if expired
             expires_dt = datetime.fromisoformat(item.expires_at.replace("Z", "+00:00"))
@@ -162,11 +163,7 @@ class ApprovalQueue:
             await self._expire_stale()
 
             # Return pending items
-            return [
-                item
-                for item in self.pending.values()
-                if item.status == "pending"
-            ]
+            return [item for item in self.pending.values() if item.status == "pending"]
 
     async def get_item(self, request_id: str) -> ApprovalQueueItem | None:
         """Fetch a single queue item by ID
@@ -188,6 +185,7 @@ class ApprovalQueue:
         """
         # NOTE: Called within _lock context
         from datetime import timezone
+
         now = datetime.now(timezone.utc)
         expired_ids = []
 
@@ -195,7 +193,6 @@ class ApprovalQueue:
             if item.status != "pending":
                 continue
 
-            from datetime import timezone as tz
             expires_dt = datetime.fromisoformat(item.expires_at.replace("Z", "+00:00"))
             if now > expires_dt:
                 item.status = "expired"
@@ -225,7 +222,9 @@ class ApprovalQueue:
         """
         await websocket.accept()
         self.connected_clients.add(websocket)
-        logger.info(f"WebSocket client connected (total: {len(self.connected_clients)})")
+        logger.info(
+            f"WebSocket client connected (total: {len(self.connected_clients)})"
+        )
 
     async def disconnect(self, websocket: WebSocket) -> None:
         """Remove a WebSocket connection from connected set
