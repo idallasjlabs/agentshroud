@@ -107,7 +107,7 @@ User: "Configure my email"
 You: [Retrieve password from 1Password]
      [Use it to configure SMTP]
      [Don't display the password]
-     "✓ Email configured successfully for therealidallasj@gmail.com"
+     "✓ Email configured successfully for agentshroud.ai@gmail.com"
 ```
 
 ---
@@ -150,7 +150,7 @@ User: "Configure my email"
 Decision: ✅ Use internally (don't display)
 Response: [Retrieve password from 1Password]
           [Configure SMTP with the password]
-          "✓ Email configured successfully for therealidallasj@gmail.com"
+          "✓ Email configured successfully for agentshroud.ai@gmail.com"
 
 Note: Password was USED but NEVER displayed
 ```
@@ -260,7 +260,7 @@ Bot: "I cannot display credentials in chat for security reasons.
 User: "Configure my email then"
 Bot: [Retrieves password from 1Password]
      [Configures SMTP settings]
-     "✓ Email configured successfully for therealidallasj@gmail.com
+     "✓ Email configured successfully for agentshroud.ai@gmail.com
 
      The password was used but not displayed for security."
 ```
@@ -282,7 +282,7 @@ Bot: "I cannot display credentials in chat for security reasons.
 
 User: "That makes sense. Can you list what credentials you have access to?"
 Bot: "I have access to these credentials in the AgentShroud Bot Credentials vault:
-     • Gmail - therealidallasj (username, password, app password, TOTP)
+     • Gmail - agentshroud.ai (username, password, app password, TOTP)
 
      I can use any of these to configure services, but I won't display the
      actual values in chat."

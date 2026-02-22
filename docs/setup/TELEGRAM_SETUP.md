@@ -1,6 +1,6 @@
 # Telegram Bot Setup for OpenClaw
 
-**Goal**: Control your OpenClaw bot (therealidallasj) via Telegram on Mac, iPhone, iPad, and Apple Watch.
+**Goal**: Control your OpenClaw bot (agentshroud.ai) via Telegram on Mac, iPhone, iPad, and Apple Watch.
 
 ---
 
@@ -9,8 +9,8 @@
 1. **Open Telegram** on any device (Mac, iPhone, iPad)
 2. **Search for @BotFather** (the official Telegram bot creator)
 3. **Start a chat** with BotFather and send: `/newbot`
-4. **Choose a name** for your bot (e.g., "therealidallasj")
-5. **Choose a username** (must end in 'bot', e.g., "therealidallasj_bot")
+4. **Choose a name** for your bot (e.g., "agentshroud.ai")
+5. **Choose a username** (must end in 'bot', e.g., "agentshroud.ai_bot")
 6. **Copy the API token** BotFather gives you (looks like: `1234567890:ABCdefGHIjklMNOpqrsTUVwxyz`)
 
 ---
@@ -83,7 +83,7 @@ OpenAI/Anthropic APIs (for LLM processing)
 
 2. **Message Privacy**: Messages travel through Telegram's servers, then to your OpenClaw container. Telegram can technically read messages (they're not end-to-end encrypted for bots).
 
-3. **Bot Identity**: The bot runs as "therealidallasj@gmail.com" with its own accounts (NOT your personal accounts).
+3. **Bot Identity**: The bot runs as "agentshroud.ai@gmail.com" with its own accounts (NOT your personal accounts).
 
 4. **Data Storage**: All conversations are stored in the `openclaw-config` Docker volume.
 

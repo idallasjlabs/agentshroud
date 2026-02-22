@@ -212,7 +212,7 @@ sleep 60 && docker compose -f docker/docker-compose.yml ps
 ./docker/scripts/scan.sh
 
 # 5. Test Telegram integration
-# Send message to @therealidallasj_bot: "Hello"
+# Send message to @agentshroud.ai_bot: "Hello"
 
 # 6. Test Control UI
 # Open: http://localhost:18790

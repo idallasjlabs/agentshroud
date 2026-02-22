@@ -1,7 +1,7 @@
 # iCloud Services Setup - Complete Guide
 
 **Date**: 2026-02-16
-**Apple ID**: therealidallasj@gmail.com
+**Apple ID**: agentshroud.ai@gmail.com
 **Status**: ✅ Apple ID created, ready for service setup
 
 ---
@@ -16,7 +16,7 @@ Since your Apple ID likely has Two-Factor Authentication enabled, you'll need to
 ### Generate App-Specific Password
 
 1. Go to https://appleid.apple.com
-2. Sign in with: therealidallasj@gmail.com
+2. Sign in with: agentshroud.ai@gmail.com
 3. Go to **Security** section
 4. Click **App-Specific Passwords**
 5. Click **Generate an app-specific password**
@@ -37,7 +37,7 @@ Since your Apple ID likely has Two-Factor Authentication enabled, you'll need to
 Server: imap.mail.me.com
 Port: 993
 Security: SSL/TLS
-Username: therealidallasj@gmail.com
+Username: agentshroud.ai@gmail.com
 Password: [App-specific password or main password]
 ```
 
@@ -46,7 +46,7 @@ Password: [App-specific password or main password]
 Server: smtp.mail.me.com
 Port: 587
 Security: STARTTLS
-Username: therealidallasj@gmail.com
+Username: agentshroud.ai@gmail.com
 Password: [Same as IMAP]
 ```
 
@@ -56,7 +56,7 @@ Password: [Same as IMAP]
 const Imap = require('node-imap');
 
 const imap = new Imap({
-    user: 'therealidallasj@gmail.com',
+    user: 'agentshroud.ai@gmail.com',
     password: '[password from 1Password]',
     host: 'imap.mail.me.com',
     port: 993,
@@ -84,7 +84,7 @@ imap.connect();
 **CalDAV URL**: `https://caldav.icloud.com/`
 
 **Authentication**:
-- Username: therealidallasj@gmail.com
+- Username: agentshroud.ai@gmail.com
 - Password: [App-specific password]
 
 ### Discovery Process
@@ -140,7 +140,7 @@ function testCalDAV(username, password) {
 }
 
 // Test with credentials from 1Password
-testCalDAV('therealidallasj@gmail.com', '[password]');
+testCalDAV('agentshroud.ai@gmail.com', '[password]');
 ```
 
 ---
@@ -152,7 +152,7 @@ testCalDAV('therealidallasj@gmail.com', '[password]');
 **CardDAV URL**: `https://contacts.icloud.com/`
 
 **Authentication**:
-- Username: therealidallasj@gmail.com
+- Username: agentshroud.ai@gmail.com
 - Password: [App-specific password]
 
 ### Discovery Process
@@ -200,7 +200,7 @@ function testCardDAV(username, password) {
     req.end();
 }
 
-testCardDAV('therealidallasj@gmail.com', '[password]');
+testCardDAV('agentshroud.ai@gmail.com', '[password]');
 ```
 
 ---
@@ -235,7 +235,7 @@ end tell
 const Imap = require('node-imap');
 
 const imap = new Imap({
-    user: 'therealidallasj@gmail.com',
+    user: 'agentshroud.ai@gmail.com',
     password: '[app-specific password]',
     host: 'imap.mail.me.com',
     port: 993,
@@ -292,7 +292,7 @@ Let me create a comprehensive test script that tries all services:
 const https = require('https');
 
 const CREDENTIALS = {
-    username: 'therealidallasj@gmail.com',
+    username: 'agentshroud.ai@gmail.com',
     password: null // Will be loaded from 1Password
 };
 
@@ -390,7 +390,7 @@ docker exec openclaw-bot sh -c "cd /home/node && npm install node-imap mailcompo
 
 ### Step 1: Generate App-Specific Password
 - [ ] Go to https://appleid.apple.com
-- [ ] Sign in with therealidallasj@gmail.com
+- [ ] Sign in with agentshroud.ai@gmail.com
 - [ ] Security → App-Specific Passwords
 - [ ] Generate password (label: "OpenClaw Bot")
 - [ ] Store in 1Password as "icloud app password"

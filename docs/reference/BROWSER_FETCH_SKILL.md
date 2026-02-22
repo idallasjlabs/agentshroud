@@ -94,9 +94,9 @@ docker exec -u node openclaw-bot node /home/node/.openclaw/skills/browser-fetch/
 === CONTENT ===
 Someone shared an item with you.
 
-Gmail - therealidallasj
+Gmail - agentshroud.ai
 username
-therealidallasj@gmail.com
+agentshroud.ai@gmail.com
 Copy
 password
 ••••••••••

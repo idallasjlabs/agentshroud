@@ -84,7 +84,7 @@ curl http://localhost:8080/ledger -H "Authorization: Bearer $TOKEN"
    You: "Configure my Gmail account"
    Bot: [Internally retrieves gmail-app-password from 1Password]
    Bot: [Configures email using the password]
-   Bot: "✓ Gmail configured successfully for therealidallasj@gmail.com"
+   Bot: "✓ Gmail configured successfully for agentshroud.ai@gmail.com"
    Note: Password was USED but never DISPLAYED
    ```
 
@@ -98,7 +98,7 @@ curl http://localhost:8080/ledger -H "Authorization: Bearer $TOKEN"
    ```
    You: "What credentials do you have access to?"
    Bot: "I have access to:
-   • Gmail - therealidallasj (username, password, app password, TOTP)
+   • Gmail - agentshroud.ai (username, password, app password, TOTP)
 
    Passwords are only viewable via console or Control UI."
    ```
@@ -176,7 +176,7 @@ Let me show you that it's working right now.
 
 ```bash
 $ docker exec openclaw-bot get-credential gmail-username
-therealidallasj@gmail.com  ✅ Works
+agentshroud.ai@gmail.com  ✅ Works
 
 $ docker exec openclaw-bot get-credential gmail-password
 6nE7YN77Ahs4zG!A2ZUTN*@m  ✅ Works
@@ -256,7 +256,7 @@ Audit Log: "credential_accessed, user=owner, source=console"
 You via Telegram: "Configure my email so you can send messages"
 Bot: [Retrieves gmail-app-password from 1Password]
 Bot: [Configures SMTP with password]
-Bot: "✓ Email configured. I can now send emails as therealidallasj@gmail.com"
+Bot: "✓ Email configured. I can now send emails as agentshroud.ai@gmail.com"
 Audit Log: "credential_used_internally, displayed=false"
 ```
 
