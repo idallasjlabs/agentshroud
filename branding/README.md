@@ -39,9 +39,9 @@ branding/
 ### Primary Color
 
 **AgentShroud Blue**
-- Hex: `#8bf0fb`
-- RGB: `rgb(139, 240, 251)`
-- HSL: `hsl(184, 93%, 76%)`
+- Hex: `#1583f0`
+- RGB: `rgb(21, 131, 240)`
+- HSL: `hsl(211, 90%, 51%)`
 
 ### Color Palette
 
@@ -77,4 +77,4 @@ Contact: agentshroud.ai@gmail.com
 
 ---
 
-**Last Updated:** 2026-02-20
+**Last Updated:** 2026-02-22
