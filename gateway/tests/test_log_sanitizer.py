@@ -1,7 +1,6 @@
 """Test Log Sanitizer - verify PII and credential scrubbing from log output."""
 
 import logging
-import pytest
 from gateway.security.log_sanitizer import LogSanitizer, install_log_sanitizer
 
 
@@ -10,7 +9,7 @@ class TestLogSanitizer:
         self.sanitizer = LogSanitizer()
 
     def _filter_msg(self, msg):
-        rec = logging.LogRecord('test', logging.INFO, '', 0, msg, (), None)
+        rec = logging.LogRecord("test", logging.INFO, "", 0, msg, (), None)
         self.sanitizer.filter(rec)
         return rec.msg
 
@@ -59,7 +58,7 @@ class TestLogSanitizer:
         assert result == msg
 
     def test_filter_always_returns_true(self):
-        rec = logging.LogRecord('test', logging.INFO, '', 0, "test", (), None)
+        rec = logging.LogRecord("test", logging.INFO, "", 0, "test", (), None)
         assert self.sanitizer.filter(rec) is True
 
     def test_install_log_sanitizer_no_error(self):

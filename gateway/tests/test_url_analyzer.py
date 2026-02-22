@@ -171,13 +171,17 @@ class TestDataExfiltration:
 
     def test_base64_in_path_flagged(self, analyzer):
         # Encode something long enough to trigger
-        payload = base64.b64encode(b"This is a secret message that should be detected by the analyzer").decode()
+        payload = base64.b64encode(
+            b"This is a secret message that should be detected by the analyzer"
+        ).decode()
         r = analyzer.analyze(f"https://attacker.com/exfil/{payload}")
         assert r.verdict == URLVerdict.FLAG
         assert any(f.category == "exfiltration" for f in r.findings)
 
     def test_base64_in_query_flagged(self, analyzer):
-        payload = base64.b64encode(b"Stolen data with secret information and credentials").decode()
+        payload = base64.b64encode(
+            b"Stolen data with secret information and credentials"
+        ).decode()
         r = analyzer.analyze(f"https://attacker.com/collect?data={payload}")
         assert r.verdict == URLVerdict.FLAG
         assert any(f.category == "exfiltration" for f in r.findings)
@@ -228,7 +232,9 @@ class TestBase64Heuristic:
     """Test the _looks_like_base64 helper."""
 
     def test_actual_base64(self):
-        encoded = base64.b64encode(b"This is a test message for base64 detection").decode()
+        encoded = base64.b64encode(
+            b"This is a test message for base64 detection"
+        ).decode()
         assert _looks_like_base64(encoded)
 
     def test_short_string_not_base64(self):

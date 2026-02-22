@@ -36,13 +36,32 @@ class PIISanitizer:
 
         # Precompile regex patterns for block_credentials performance
         self._totp_pattern = re.compile(
-            r'(?:totp|otp|one.time|verification|2fa|mfa)[:\s]+\d{6}\b',
-            re.IGNORECASE | re.MULTILINE
+            r"(?:totp|otp|one.time|verification|2fa|mfa)[:\s]+\d{6}\b",
+            re.IGNORECASE | re.MULTILINE,
         )
         self._entropy_pattern = re.compile(
-            r'\b(?=[A-Za-z0-9!@#$%^&*]*[A-Z])(?=[A-Za-z0-9!@#$%^&*]*[a-z])(?=[A-Za-z0-9!@#$%^&*]*[0-9])(?=[A-Za-z0-9!@#$%^&*]*[!@#$%^&*])[A-Za-z0-9!@#$%^&*]{16,}\b'
+            r"\b(?=[A-Za-z0-9!@#$%^&*]*[A-Z])(?=[A-Za-z0-9!@#$%^&*]*[a-z])(?=[A-Za-z0-9!@#$%^&*]*[0-9])(?=[A-Za-z0-9!@#$%^&*]*[!@#$%^&*])[A-Za-z0-9!@#$%^&*]{16,}\b"
         )
         self._aws_key_pattern = re.compile(r"\bAKIA[0-9A-Z]{16}\b")
+
+        # Precompiled XML block patterns for filter_xml_blocks
+        self._xml_block_patterns = [
+            # Closed pairs (DOTALL so .* matches newlines)
+            re.compile(r"<function_calls>.*?</function_calls>", re.DOTALL),
+            re.compile(r"<function_results>.*?</function_results>", re.DOTALL),
+            re.compile(r"<thinking>.*?</thinking>", re.DOTALL),
+            re.compile(r"<system-reminder>.*?</system-reminder>", re.DOTALL),
+            re.compile(r"<invoke[^>]*>.*?</invoke>", re.DOTALL),
+            re.compile(r"<parameter[^>]*>.*?</parameter>", re.DOTALL),
+            # Unclosed/truncated variants (match to end of string)
+            re.compile(r"<function_calls>(?:(?!</function_calls>).)*$", re.DOTALL),
+            re.compile(r"<function_results>(?:(?!</function_results>).)*$", re.DOTALL),
+            re.compile(r"<thinking>(?:(?!</thinking>).)*$", re.DOTALL),
+            re.compile(r"<system-reminder>(?:(?!</system-reminder>).)*$", re.DOTALL),
+            re.compile(r"<invoke[^>]*>(?:(?!</invoke>).)*$", re.DOTALL),
+        ]
+        # Whitespace cleanup pattern
+        self._excessive_newlines_pattern = re.compile(r"\n{3,}")
 
         if config.engine == "presidio":
             self._init_presidio()
@@ -56,6 +75,7 @@ class PIISanitizer:
         """
         # Check Python version first - Presidio incompatible with Python 3.14+
         import sys
+
         if sys.version_info >= (3, 14):
             logger.warning(
                 f"Python {sys.version_info.major}.{sys.version_info.minor} detected. "
@@ -73,7 +93,7 @@ class PIISanitizer:
                 import spacy
 
                 # Try to load the model
-                nlp = spacy.load("en_core_web_lg")
+                spacy.load("en_core_web_lg")
                 logger.info("spaCy model en_core_web_lg loaded successfully")
 
                 # Initialize Presidio engines
@@ -136,7 +156,9 @@ class PIISanitizer:
                 )
 
             # Anonymize
-            anonymized = self.anonymizer.anonymize(text=content, analyzer_results=results)
+            anonymized = self.anonymizer.anonymize(
+                text=content, analyzer_results=results
+            )
 
             # Build redaction details
             redactions = [
@@ -176,7 +198,6 @@ class PIISanitizer:
         """
         sanitized = content
         redactions: list[RedactionDetail] = []
-        offset = 0  # Track offset due to replacements
 
         # Define patterns (order matters - longer patterns first)
         patterns = []
@@ -319,32 +340,38 @@ class PIISanitizer:
         # Patterns that indicate credentials are being displayed
         credential_patterns = [
             # Password displays
-            (r'password[:\s]+[\w!@#$%^&*()_+\-=\[\]{};:\'",.<>?/\\|`~]{8,}',
-             "password"),
+            (
+                r'password[:\s]+[\w!@#$%^&*()_+\-=\[\]{};:\'",.<>?/\\|`~]{8,}',
+                "password",
+            ),
             # JSON formatted credentials (from op item get --format json)
-            (r'"value":\s*"[\w!@#$%^&*()_+\-=\[\]{};:\'",.<>?/\\|`~]{8,}"',
-             "json_credential"),
-            (r'"password":\s*"[\w!@#$%^&*()_+\-=\[\]{};:\'",.<>?/\\|`~]{8,}"',
-             "json_password"),
+            (
+                r'"value":\s*"[\w!@#$%^&*()_+\-=\[\]{};:\'",.<>?/\\|`~]{8,}"',
+                "json_credential",
+            ),
+            (
+                r'"password":\s*"[\w!@#$%^&*()_+\-=\[\]{};:\'",.<>?/\\|`~]{8,}"',
+                "json_password",
+            ),
             # API keys
-            (r'\b(sk-[a-zA-Z0-9]{20,})', "openai_api_key"),
-            (r'\bghp_[a-zA-Z0-9]{36}', "github_token"),
+            (r"\b(sk-[a-zA-Z0-9]{20,})", "openai_api_key"),
+            (r"\bghp_[a-zA-Z0-9]{36}", "github_token"),
             (self._aws_key_pattern, "aws_access_key"),
-            (r'\bops_[a-zA-Z0-9]{26}', "1password_token"),
+            (r"\bops_[a-zA-Z0-9]{26}", "1password_token"),
             # Generic API key patterns
-            (r'api[_\s]?key[:\s]+[\w\-]{20,}', "api_key"),
-            (r'secret[:\s]+[\w\-]{20,}', "secret"),
-            (r'token[:\s]+[\w\-]{20,}', "token"),
+            (r"api[_\s]?key[:\s]+[\w\-]{20,}", "api_key"),
+            (r"secret[:\s]+[\w\-]{20,}", "secret"),
+            (r"token[:\s]+[\w\-]{20,}", "token"),
             # TOTP codes (only in context of OTP/TOTP/one-time/verification)
             (self._totp_pattern, "totp_code"),
             # High entropy strings that look like passwords (require mixed case + special chars)
             (self._entropy_pattern, "high_entropy_string"),
             # SSH private keys
-            (r'-----BEGIN (?:RSA |OPENSSH )?PRIVATE KEY-----', "ssh_private_key"),
+            (r"-----BEGIN (?:RSA |OPENSSH )?PRIVATE KEY-----", "ssh_private_key"),
             # Credit cards (catch in case PII sanitizer missed)
-            (r'\b\d{4}[\s-]?\d{4}[\s-]?\d{4}[\s-]?\d{4}\b', "credit_card"),
+            (r"\b\d{4}[\s-]?\d{4}[\s-]?\d{4}[\s-]?\d{4}\b", "credit_card"),
             # SSN (catch in case PII sanitizer missed)
-            (r'\b\d{3}-\d{2}-\d{4}\b', "ssn"),
+            (r"\b\d{3}-\d{2}-\d{4}\b", "ssn"),
         ]
 
         # Check for credential patterns
@@ -356,9 +383,7 @@ class PIISanitizer:
                 match = re.search(pattern, content, re.IGNORECASE | re.MULTILINE)
 
             if match:
-                logger.warning(
-                    f"Blocked {cred_type} from being displayed via {source}"
-                )
+                logger.warning(f"Blocked {cred_type} from being displayed via {source}")
 
                 # Return blocking message
                 blocked_message = (
@@ -372,3 +397,31 @@ class PIISanitizer:
                 return (blocked_message, True)
 
         return (content, False)
+
+    def filter_xml_blocks(self, content: str) -> tuple[str, bool]:
+        """Remove Claude XML function call blocks from responses
+
+        Strips out internal Claude tool use blocks that should not be shown to users:
+        - <function_calls>...</function_calls>
+        - <function_results>...</function_results>
+        - <thinking>...</thinking>
+        - <system-reminder>...</system-reminder>
+
+        Args:
+            content: Response text from Claude that may contain XML blocks
+
+        Returns:
+            Tuple of (filtered_content, was_filtered)
+                - filtered_content: Content with XML blocks removed
+                - was_filtered: True if any XML blocks were found and removed
+        """
+        filtered = content
+
+        for pattern in self._xml_block_patterns:
+            filtered = pattern.sub("", filtered)
+
+        # Collapse 3+ newlines to 2
+        filtered = self._excessive_newlines_pattern.sub("\n\n", filtered)
+        filtered = filtered.strip()
+
+        return (filtered, filtered != content.strip())

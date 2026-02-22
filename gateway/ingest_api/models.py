@@ -3,11 +3,9 @@
 Defines request and response schemas for all endpoints.
 """
 
-from datetime import datetime
 from typing import Any
 
 from pydantic import BaseModel, Field, field_validator
-
 
 # === Request Models ===
 
@@ -20,9 +18,12 @@ class ForwardRequest(BaseModel):
 
     content: str = Field(..., description="The text/data being forwarded")
     source: str = Field(
-        ..., description="Source of the content: shortcut, browser_extension, script, api"
+        ...,
+        description="Source of the content: shortcut, browser_extension, script, api",
     )
-    content_type: str = Field(default="text", description="Type: text, url, photo, file")
+    content_type: str = Field(
+        default="text", description="Type: text, url, photo, file"
+    )
     metadata: dict[str, Any] = Field(
         default_factory=dict, description="Optional routing hints and context"
     )
@@ -53,11 +54,15 @@ class ApprovalRequest(BaseModel):
     """
 
     action_type: str = Field(..., description="Type of action requiring approval")
-    description: str = Field(..., description="Human-readable description of the action")
+    description: str = Field(
+        ..., description="Human-readable description of the action"
+    )
     details: dict[str, Any] = Field(
         default_factory=dict, description="Action-specific payload"
     )
-    agent_id: str = Field(default="openclaw-main", description="Agent requesting approval")
+    agent_id: str = Field(
+        default="openclaw-main", description="Agent requesting approval"
+    )
 
 
 class ApprovalDecision(BaseModel):
@@ -83,7 +88,9 @@ class ForwardResponse(BaseModel):
     content_hash: str = Field(..., description="SHA-256 hash of sanitized content")
     forwarded_to: str = Field(..., description="Target agent name")
     timestamp: str = Field(..., description="ISO 8601 timestamp")
-    agent_response: str | None = Field(None, description="Agent's response if available")
+    agent_response: str | None = Field(
+        None, description="Agent's response if available"
+    )
 
 
 class LedgerEntry(BaseModel):
@@ -170,6 +177,7 @@ class AgentTarget(BaseModel):
 
 class SSHExecRequest(BaseModel):
     """Request to execute an SSH command"""
+
     host: str = Field(..., description="SSH host name from config")
     command: str = Field(..., description="Command to execute")
     timeout: int | None = Field(default=None, description="Timeout in seconds")
@@ -178,6 +186,7 @@ class SSHExecRequest(BaseModel):
 
 class SSHExecResponse(BaseModel):
     """Response from SSH command execution"""
+
     request_id: str
     host: str
     command: str

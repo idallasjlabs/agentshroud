@@ -11,13 +11,13 @@ Shows real-time status of the security proxy pipeline including:
 """
 
 import time
-from dataclasses import dataclass, field
-from typing import Any, Optional
+from dataclasses import dataclass
 
 
 @dataclass
 class ProxyStatusReport:
     """Complete proxy status report for the dashboard."""
+
     mode: str  # "proxy", "sidecar", "unprotected"
     mode_icon: str
     last_message_proxied_ago: float  # seconds
@@ -39,10 +39,26 @@ class ProxyStatusReport:
         else:
             mode_str = "UNPROTECTED \u274c"
 
-        last_msg = f"{self.last_message_proxied_ago:.0f}s ago" if self.last_message_proxied_ago > 0 else "never"
-        chain_str = f"VERIFIED \u2705 ({self.audit_chain_entries} entries)" if self.audit_chain_valid else "BROKEN \u274c"
-        direct_str = f"\u2705 (last tested: {self.direct_access_last_tested:.0f}s ago)" if self.direct_access_blocked else "\u274c EXPOSED"
-        canary_str = f"PASSED \u2705 (last run: {self.canary_last_run:.0f}s ago)" if self.canary_passed else "FAILED \u274c"
+        last_msg = (
+            f"{self.last_message_proxied_ago:.0f}s ago"
+            if self.last_message_proxied_ago > 0
+            else "never"
+        )
+        chain_str = (
+            f"VERIFIED \u2705 ({self.audit_chain_entries} entries)"
+            if self.audit_chain_valid
+            else "BROKEN \u274c"
+        )
+        direct_str = (
+            f"\u2705 (last tested: {self.direct_access_last_tested:.0f}s ago)"
+            if self.direct_access_blocked
+            else "\u274c EXPOSED"
+        )
+        canary_str = (
+            f"PASSED \u2705 (last run: {self.canary_last_run:.0f}s ago)"
+            if self.canary_passed
+            else "FAILED \u274c"
+        )
 
         return {
             "proxy_mode": mode_str,
@@ -78,6 +94,7 @@ class ProxyDashboard:
 
     def record_pii_redaction(self, count: int = 1):
         import datetime
+
         today = datetime.date.today().day
         if today != self._pii_reset_day:
             self._pii_today = 0
@@ -105,12 +122,16 @@ class ProxyDashboard:
                 "sidecar": "\u26a0\ufe0f",
                 "unprotected": "\u274c",
             }.get(self._mode, "\u2753"),
-            last_message_proxied_ago=(now - self._last_message_time) if self._last_message_time else -1,
+            last_message_proxied_ago=(
+                (now - self._last_message_time) if self._last_message_time else -1
+            ),
             pii_sanitized_today=self._pii_today,
             audit_chain_entries=self._audit_entries,
             audit_chain_valid=self._audit_valid,
             direct_access_blocked=self._direct_blocked,
-            direct_access_last_tested=(now - self._direct_tested_at) if self._direct_tested_at else -1,
+            direct_access_last_tested=(
+                (now - self._direct_tested_at) if self._direct_tested_at else -1
+            ),
             canary_passed=self._canary_passed,
             canary_last_run=(now - self._canary_run_at) if self._canary_run_at else -1,
             uptime_seconds=now - self._started_at,

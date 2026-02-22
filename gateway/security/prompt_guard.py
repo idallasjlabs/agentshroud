@@ -8,7 +8,7 @@ including blocked status, threat score, matched patterns, and sanitized input.
 import base64
 import unicodedata
 import re
-from dataclasses import dataclass, field
+from dataclasses import dataclass
 from enum import Enum
 from typing import Optional
 
@@ -174,11 +174,15 @@ class PromptGuard:
         b64_re = re.compile(r"[A-Za-z0-9+/]{20,}={0,2}")
         for match in b64_re.finditer(text):
             try:
-                decoded = base64.b64decode(match.group()).decode("utf-8", errors="ignore")
+                decoded = base64.b64decode(match.group()).decode(
+                    "utf-8", errors="ignore"
+                )
                 # Check for double-base64 encoding
                 for inner_match in b64_re.finditer(decoded):
                     try:
-                        double_decoded = base64.b64decode(inner_match.group()).decode("utf-8", errors="ignore")
+                        double_decoded = base64.b64decode(inner_match.group()).decode(
+                            "utf-8", errors="ignore"
+                        )
                         for pat in _PATTERNS[:5]:
                             if pat.pattern.search(double_decoded):
                                 findings.append((f"double_encoded_{pat.name}", 0.9))
@@ -206,7 +210,7 @@ class PromptGuard:
         # Right-to-left override
         if "\u202e" in text or "\u200f" in text:
             findings.append(("rtl_override", 0.6))
-                # Fullwidth Latin characters used to evade ASCII pattern matching
+            # Fullwidth Latin characters used to evade ASCII pattern matching
         if re.search("[！-～]", text):
             findings.append(("fullwidth_chars", 0.5))
         # Mathematical bold/italic/script letters used for obfuscation

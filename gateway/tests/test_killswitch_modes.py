@@ -42,7 +42,11 @@ class TestKillSwitchScript:
 
     def test_disconnect_exports_ledger(self, script_content):
         # Disconnect mode should export/backup audit data
-        assert "ledger" in script_content.lower() or "export" in script_content.lower() or "audit" in script_content.lower()
+        assert (
+            "ledger" in script_content.lower()
+            or "export" in script_content.lower()
+            or "audit" in script_content.lower()
+        )
 
     def test_has_confirmation_prompt(self, script_content):
         # Should confirm before destructive actions
@@ -52,11 +56,19 @@ class TestKillSwitchScript:
         assert "usage" in script_content
 
     def test_invalid_mode_shows_usage(self, script_content):
-        assert "usage" in script_content and "Error" in script_content or "Invalid" in script_content
+        assert (
+            "usage" in script_content
+            and "Error" in script_content
+            or "Invalid" in script_content
+        )
 
     def test_creates_incident_record(self, script_content):
         # Should create a timestamped incident record
-        assert "TIMESTAMP" in script_content or "timestamp" in script_content or "date" in script_content
+        assert (
+            "TIMESTAMP" in script_content
+            or "timestamp" in script_content
+            or "date" in script_content
+        )
 
     def test_sets_strict_mode(self, script_content):
         assert "set -e" in script_content, "Script should use strict error handling"

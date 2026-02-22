@@ -11,6 +11,7 @@ from typing import Any, Optional
 @dataclass
 class ContainerInfo:
     """Lightweight container metadata returned by ps/inspect."""
+
     name: str
     id: str = ""
     image: str = ""

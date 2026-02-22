@@ -1,9 +1,7 @@
 """Tests for EventBus"""
 
-import asyncio
 import pytest
-import pytest_asyncio
-from gateway.ingest_api.event_bus import EventBus, GatewayEvent, make_event
+from gateway.ingest_api.event_bus import EventBus, make_event
 
 
 @pytest.fixture
@@ -27,7 +25,10 @@ async def test_subscribe_receive_events(bus):
 async def test_unsubscribe_stops_events(bus):
     """Unsubscribed callback stops receiving events"""
     received = []
-    cb = lambda e: received.append(e)
+
+    def cb(e):
+        received.append(e)
+
     await bus.subscribe(cb)
     await bus.emit(make_event("forward", "first"))
     assert len(received) == 1
@@ -105,8 +106,10 @@ async def test_auth_failure_escalation(bus):
 async def test_async_subscriber(bus):
     """Async callbacks work"""
     received = []
+
     async def cb(e):
         received.append(e)
+
     await bus.subscribe(cb)
     await bus.emit(make_event("forward", "async test"))
     assert len(received) == 1

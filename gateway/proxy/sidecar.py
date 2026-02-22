@@ -25,6 +25,7 @@ SIDECAR_WARNING = (
 @dataclass
 class ScanRequest:
     """Request to scan a message."""
+
     content: str
     agent_id: str = "default"
     action: str = "send_message"
@@ -34,6 +35,7 @@ class ScanRequest:
 @dataclass
 class ScanResponse:
     """Response from sidecar scan."""
+
     sanitized_content: str
     original_content: str
     security_report: dict[str, Any] = field(default_factory=dict)

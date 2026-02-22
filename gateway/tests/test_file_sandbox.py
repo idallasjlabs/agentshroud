@@ -2,7 +2,8 @@
 
 import pytest
 from gateway.security.file_sandbox import (
-    FileSandbox, FileSandboxConfig, FileOperation, FileVerdict,
+    FileSandbox,
+    FileSandboxConfig,
     PIIScanner,
 )
 
@@ -37,7 +38,10 @@ class TestFileSandboxConfig:
         assert default_config.mode == "monitor"
 
     def test_default_has_reasonable_allowed_paths(self, default_config):
-        assert default_config.allowed_write_paths is None or "/workspace" in default_config.allowed_write_paths
+        assert (
+            default_config.allowed_write_paths is None
+            or "/workspace" in default_config.allowed_write_paths
+        )
 
     def test_default_blocks_sensitive_paths(self, default_config):
         assert any("shadow" in p for p in default_config.blocked_paths)
@@ -49,7 +53,9 @@ class TestNormalFileOperations:
         assert v.allowed is True
 
     def test_workspace_write_allowed(self, sandbox):
-        v = sandbox.check_write("/workspace/output.txt", agent_id="agent1", content="hello")
+        v = sandbox.check_write(
+            "/workspace/output.txt", agent_id="agent1", content="hello"
+        )
         assert v.allowed is True
 
     def test_tmp_read_allowed(self, sandbox):

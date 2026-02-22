@@ -193,6 +193,8 @@ def generate_summary(alerts: list[dict[str, Any]]) -> dict[str, Any]:
         "medium": len(categories["MEDIUM"]),
         "low": len(categories["LOW"]),
         "top_rules": [{"rule": r, "count": c} for r, c in top_rules],
-        "agentshroud_alerts": len([a for a in alerts if is_agentshroud_rule(a.get("rule", ""))]),
+        "agentshroud_alerts": len(
+            [a for a in alerts if is_agentshroud_rule(a.get("rule", ""))]
+        ),
         "timestamp": datetime.now(timezone.utc).isoformat(),
     }

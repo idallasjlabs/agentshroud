@@ -10,7 +10,6 @@ import logging
 import os
 import re
 import sqlite3
-import subprocess
 from datetime import datetime, timezone
 from pathlib import Path
 from typing import Any
@@ -19,8 +18,10 @@ logger = logging.getLogger("agentshroud.version_manager")
 
 # Pattern to mask credentials in output
 CREDENTIAL_PATTERNS = [
-    re.compile(r'(token|password|secret|key|auth)["\s:=]+["\']?([A-Za-z0-9_\-\.]{8,})', re.I),
-    re.compile(r'(Bearer\s+)([A-Za-z0-9_\-\.]{8,})', re.I),
+    re.compile(
+        r'(token|password|secret|key|auth)["\s:=]+["\']?([A-Za-z0-9_\-\.]{8,})', re.I
+    ),
+    re.compile(r"(Bearer\s+)([A-Za-z0-9_\-\.]{8,})", re.I),
 ]
 
 VERSION_DB_PATH = os.environ.get(
@@ -90,9 +91,7 @@ def list_versions(db_path: str | None = None) -> list[dict[str, Any]]:
     """List all version history entries."""
     conn = _get_db(db_path)
     try:
-        rows = conn.execute(
-            "SELECT * FROM version_history ORDER BY id DESC"
-        ).fetchall()
+        rows = conn.execute("SELECT * FROM version_history ORDER BY id DESC").fetchall()
         return [dict(row) for row in rows]
     finally:
         conn.close()
@@ -102,7 +101,18 @@ def list_available_versions() -> list[str]:
     """List available OpenClaw versions (from git tags or known versions)."""
     # In production this would query GitHub API or local git tags
     # For now, return known versions
-    return ["1.0.0", "0.9.0", "0.8.0", "0.7.0", "0.6.0", "0.5.0", "0.4.0", "0.3.0", "0.2.0", "0.1.0"]
+    return [
+        "1.0.0",
+        "0.9.0",
+        "0.8.0",
+        "0.7.0",
+        "0.6.0",
+        "0.5.0",
+        "0.4.0",
+        "0.3.0",
+        "0.2.0",
+        "0.1.0",
+    ]
 
 
 def security_review(target_version: str) -> dict[str, Any]:
@@ -125,7 +135,9 @@ def security_review(target_version: str) -> dict[str, Any]:
     if re.match(r"^\d+\.\d+\.\d+$", target_version):
         review["checks"].append({"check": "version_format", "status": "pass"})
     else:
-        review["checks"].append({"check": "version_format", "status": "fail", "detail": "Invalid semver"})
+        review["checks"].append(
+            {"check": "version_format", "status": "fail", "detail": "Invalid semver"}
+        )
         review["passed"] = False
 
     # Check 2: Known CVEs (simulated — in production, query a CVE database)
@@ -215,10 +227,16 @@ def downgrade(
     review = security_review(target_version)
 
     # Downgrade has higher risk
-    review["risk_level"] = "medium" if review["risk_level"] == "low" else review["risk_level"]
+    review["risk_level"] = (
+        "medium" if review["risk_level"] == "low" else review["risk_level"]
+    )
 
     if not review["passed"]:
-        return {"status": "blocked", "reason": "Security review failed", "review": review}
+        return {
+            "status": "blocked",
+            "reason": "Security review failed",
+            "review": review,
+        }
 
     if dry_run:
         return {

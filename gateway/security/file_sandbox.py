@@ -34,7 +34,12 @@ class PIIScanner:
         ("ssn", re.compile(r"\b\d{3}-\d{2}-\d{4}\b")),
         ("credit_card", re.compile(r"\b\d{4}[-\s]?\d{4}[-\s]?\d{4}[-\s]?\d{4}\b")),
         ("email", re.compile(r"\b[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}\b")),
-        ("api_key", re.compile(r"\b(sk-[a-zA-Z0-9]{20,}|ghp-[a-zA-Z0-9]{20,}|AKIA[0-9A-Z]{16})\b")),
+        (
+            "api_key",
+            re.compile(
+                r"\b(sk-[a-zA-Z0-9]{20,}|ghp-[a-zA-Z0-9]{20,}|AKIA[0-9A-Z]{16})\b"
+            ),
+        ),
         ("api_key_generic", re.compile(r"\bsk-proj-[a-zA-Z0-9]{20,}\b")),
     ]
 
@@ -42,9 +47,13 @@ class PIIScanner:
         findings = []
         for pii_type, pattern in self.PATTERNS:
             for match in pattern.finditer(content):
-                findings.append(PIIFinding(
-                    type=pii_type, match=match.group(), position=match.start(),
-                ))
+                findings.append(
+                    PIIFinding(
+                        type=pii_type,
+                        match=match.group(),
+                        position=match.start(),
+                    )
+                )
         return PIIScanResult(has_pii=len(findings) > 0, findings=findings)
 
 
@@ -79,14 +88,22 @@ class FileSandboxConfig:
     mode: str = "monitor"  # "monitor" or "enforce"
     allowed_read_paths: Optional[list[str]] = None  # None = allow all (monitor)
     allowed_write_paths: Optional[list[str]] = None
-    blocked_paths: list[str] = field(default_factory=lambda: [
-        "/etc/shadow", "/etc/passwd", "/etc/sudoers",
-        "**/.ssh/id_*", "**/.ssh/authorized_keys",
-        "**/.env", "**/.env.*",
-        "**/.aws/credentials", "**/.aws/config",
-        "**/.gnupg/*",
-        "**/credentials", "**/secrets",
-    ])
+    blocked_paths: list[str] = field(
+        default_factory=lambda: [
+            "/etc/shadow",
+            "/etc/passwd",
+            "/etc/sudoers",
+            "**/.ssh/id_*",
+            "**/.ssh/authorized_keys",
+            "**/.env",
+            "**/.env.*",
+            "**/.aws/credentials",
+            "**/.aws/config",
+            "**/.gnupg/*",
+            "**/credentials",
+            "**/secrets",
+        ]
+    )
     staging_size_threshold: int = 50_000  # bytes
     staging_time_window: float = 300.0  # seconds
 
@@ -103,7 +120,9 @@ class FileSandbox:
         return self._check(path, agent_id, "read")
 
     def check_write(self, path: str, agent_id: str, content: str = "") -> FileVerdict:
-        verdict = self._check(path, agent_id, "write", len(content.encode("utf-8", errors="replace")))
+        verdict = self._check(
+            path, agent_id, "write", len(content.encode("utf-8", errors="replace"))
+        )
 
         # PII scan on write content
         if content:
@@ -111,7 +130,9 @@ class FileSandbox:
             if pii.has_pii:
                 verdict.flagged = True
                 types = ", ".join(set(f.type for f in pii.findings))
-                verdict.reason = (verdict.reason + "; " if verdict.reason else "") + f"PII detected: {types}"
+                verdict.reason = (
+                    verdict.reason + "; " if verdict.reason else ""
+                ) + f"PII detected: {types}"
 
         # Track large writes for staging detection
         size = len(content.encode("utf-8", errors="replace")) if content else 0
@@ -122,7 +143,9 @@ class FileSandbox:
 
         return verdict
 
-    def _check(self, path: str, agent_id: str, operation: str, size: int = 0) -> FileVerdict:
+    def _check(
+        self, path: str, agent_id: str, operation: str, size: int = 0
+    ) -> FileVerdict:
         flags: list[str] = []
 
         # Resolve symlinks to prevent path traversal
@@ -132,13 +155,18 @@ class FileSandbox:
             resolved = path
 
         # Check blocked paths against both original and resolved
-        if self._matches_blocked(path) or (resolved != path and self._matches_blocked(resolved)):
+        if self._matches_blocked(path) or (
+            resolved != path and self._matches_blocked(resolved)
+        ):
             flags.append(f"sensitive path: {path}")
 
         # In enforce mode, check allowed paths against resolved path
         if self.config.mode == "enforce":
-            allowed_paths = (self.config.allowed_read_paths if operation == "read"
-                             else self.config.allowed_write_paths)
+            allowed_paths = (
+                self.config.allowed_read_paths
+                if operation == "read"
+                else self.config.allowed_write_paths
+            )
             if allowed_paths is not None:
                 if not any(resolved.startswith(p) for p in allowed_paths):
                     flags.append(f"path outside allowed: {path}")
@@ -152,9 +180,13 @@ class FileSandbox:
             allowed = True
 
         op = FileOperation(
-            timestamp=time.time(), agent_id=agent_id,
-            operation=operation, path=path, size_bytes=size,
-            flagged=flagged, reason=reason,
+            timestamp=time.time(),
+            agent_id=agent_id,
+            operation=operation,
+            path=path,
+            size_bytes=size,
+            flagged=flagged,
+            reason=reason,
         )
         self._audit.append(op)
 
@@ -193,11 +225,14 @@ class FileSandbox:
         for path, size, write_time in writes:
             for net_time in network:
                 if 0 < (net_time - write_time) < self.config.staging_time_window:
-                    patterns.append(StagingPattern(
-                        write_path=path, write_size=size,
-                        network_time=net_time,
-                        description=f"Large write ({size}B) to {path} followed by network activity",
-                    ))
+                    patterns.append(
+                        StagingPattern(
+                            write_path=path,
+                            write_size=size,
+                            network_time=net_time,
+                            description=f"Large write ({size}B) to {path} followed by network activity",
+                        )
+                    )
                     break
         return patterns
 
@@ -207,6 +242,10 @@ class FileSandbox:
         return list(self._audit)
 
     def get_temp_files(self, agent_id: str) -> list[str]:
-        return [op.path for op in self._audit
-                if op.agent_id == agent_id and op.operation == "write"
-                and op.path.startswith("/tmp")]
+        return [
+            op.path
+            for op in self._audit
+            if op.agent_id == agent_id
+            and op.operation == "write"
+            and op.path.startswith("/tmp")
+        ]
