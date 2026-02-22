@@ -4,6 +4,7 @@ Loads configuration from agentshroud.yaml and provides typed access via Pydantic
 """
 
 import logging
+import os
 import secrets
 from pathlib import Path
 from urllib.parse import urlparse
@@ -221,15 +222,26 @@ def load_config(config_path: Path | None = None) -> GatewayConfig:
     )
 
     # Get or generate auth token
-    auth_token = gateway.get("auth_token", "")
+    # Priority: 1) Docker secret file, 2) YAML config, 3) generate random
+    auth_token = ""
+    secret_file = os.environ.get("GATEWAY_AUTH_TOKEN_FILE", "")
+    if secret_file:
+        try:
+            with open(secret_file) as f:
+                auth_token = f.read().strip()
+            logger.info("Loaded auth_token from secret file.")
+        except OSError as e:
+            logger.warning(f"Could not read GATEWAY_AUTH_TOKEN_FILE ({secret_file}): {e}")
+    if not auth_token:
+        auth_token = gateway.get("auth_token", "")
     if not auth_token:
         auth_token = secrets.token_hex(32)
         logger.warning(
             "\n" + "=" * 80 + "\n"
-            "No auth_token found in agentshroud.yaml. Generated new token:\n\n"
+            "No auth_token found in secret file or agentshroud.yaml. Generated new token:\n\n"
             f"    {auth_token}\n\n"
-            "Add this to agentshroud.yaml under gateway.auth_token or use it for this session.\n"
-            "Save this token for your iOS Shortcuts and browser extension.\n" + "=" * 80
+            "Set GATEWAY_AUTH_TOKEN_FILE env var or add auth_token to agentshroud.yaml.\n"
+            + "=" * 80
         )
 
     # Build final config
