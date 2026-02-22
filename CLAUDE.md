@@ -83,30 +83,51 @@ This repository uses a multi-agent development approach with clear role separati
 ## 1) PROJECT OVERVIEW (SCOPE AWARENESS)
 ──────────────────────────────────────────────────────────────────────────────
 
-This repository implements a **Data Lakehouse platform** for extracting,
-processing, validating, and serving operational data from distributed
-energy storage systems.
+**AgentShroud** is an open-source, enterprise-grade **transparent proxy
+framework** for the safe, auditable, and governed deployment of autonomous
+AI agents in real-world production environments.
 
-### Primary Focus
+It sits as an intermediary layer between AI agents (Claude Code, Gemini CLI,
+OpenAI Codex, OpenClaw, and others) and the systems they interact with —
+intercepting, inspecting, logging, and enforcing policy on every action
+without disrupting the agent's native workflow.
 
-**Data Lakehouse Pipelines**
-- Extract data from multiple Central DAS (Data Acquisition System) instances
-- Normalize, validate, and partition data
-- Persist data in an S3-based lakehouse (Parquet + Athena)
-- Emphasis on:
-  - Schema stability
-  - Partition correctness
-  - Deterministic transformations
-  - Backward compatibility
+### Primary Components
 
-### Supporting / Optional Integrations (ONLY when explicitly requested)
+**Gateway (FastAPI — `gateway/`)**
+- Ingest API: forwards data between users and agents with PII filtering,
+  approval queue, and audit logging
+- Security modules: 14+ modules covering prompt injection, egress, SSH
+  proxy, container hardening, kill switch, MCP proxy, HTTP CONNECT proxy,
+  credential isolation, and more
+- Authentication: HMAC/JWT shared-secret for the bot; human approval queue
+  for dangerous actions
 
-**CTA API Integration**
-- Interactive extraction from Fluence Central Terminal Application (CTA) REST APIs
-- Used for real-time monitoring or device resource queries
-- Not a primary workflow; treat as auxiliary
+**Bot Container (`docker/`)**
+- OpenClaw-based autonomous agent (therealidallasj bot, runs on macOS Docker)
+- Cron jobs, Telegram channel, 1Password credential integration
+- Baked-in config bootstrapped by init script on every startup
 
-Do not assume CTA work unless explicitly requested.
+**Infrastructure**
+- Docker Compose (macOS host), Tailscale for secure remote access
+- Raspberry Pi node (`raspberrypi.tail240ea8.ts.net`) for SSH experiments
+- 1Password service account for credential isolation (P2)
+- Integrations: GitHub, Atlassian (Jira/Confluence), AWS via MCP servers
+
+### Development Goals (guide scope decisions)
+
+- **Personal mastery through real building** — develop hands-on fluency with
+  Claude Code, OpenAI Codex, Gemini CLI, MCP, multi-agent coordination, and
+  enterprise integrations (GitHub, Atlassian Jira/Confluence, AWS) by shipping
+  production software with these tools — not through courses
+- Prove that autonomous agents can be deployed safely in enterprise settings
+- Provide a real, working reference implementation — not a whitepaper
+- Enable the architect/owner (non-developer) to direct LLM agents to build
+  production-quality software
+- Demonstrate secure multi-agent collaboration and external contributor access
+- Show enterprise colleagues a concrete, deployable example of governed AI work
+
+Do not expand scope beyond explicit requests. When unsure, ask.
 
 ──────────────────────────────────────────────────────────────────────────────
 ## 2) HOW TO WORK IN THIS REPO (SDLC EXPECTATIONS)
@@ -301,31 +322,90 @@ MCP Skills available:
 - `/mcpm-auth-reset` - Reset MCP authentication
 
 ──────────────────────────────────────────────────────────────────────────────
-## 7) DATA PLATFORM GUARDRAILS
+## 7) AGENT SECURITY GUARDRAILS
 ──────────────────────────────────────────────────────────────────────────────
 
 Be explicit about:
-- DAS instances, arrays, and date ranges considered
-- Partitioning and schema changes
-- Athena table compatibility
-- Backward compatibility risks
+- Which agent (main vs collaborator) handles a given action
+- Gateway security module impact of any code change
+- Credential scope — never widen what the bot can access
+- Container isolation assumptions and blast radius
 
 Never:
-- Break schema compatibility silently
-- Change partitioning without calling it out
-- Reprocess large data ranges unless explicitly requested
+- Log or expose secrets (API keys, 1Password tokens, passwords)
+- Silently remove or disable a security module
+- Grant the bot container direct access to production credentials
+- Route sensitive actions around the human approval queue
 
 ──────────────────────────────────────────────────────────────────────────────
 ## 8) ENVIRONMENT SETUP
 ──────────────────────────────────────────────────────────────────────────────
 
-### Conda Environment
+### Gateway (Python)
 
 ```bash
-conda env create -f environment/environment.yml
-conda activate gsdl
+# Create virtual environment
+python3.11 -m venv .venv
+source .venv/bin/activate
+pip install -r gateway/requirements.txt
 
-# Platform-specific alternatives:
-# environment/macos/conda_environment_macos.yml
-# environment/linux/conda_environment_linux.yml
-# environment/windows/conda_environment_windows.yml
+# Run tests
+pytest gateway/tests/ -q
+
+# Lint / format
+ruff check .
+black .
+```
+
+### Bot Container (Docker)
+
+```bash
+# Start all services
+docker compose -f docker/docker-compose.yml up -d
+
+# Check health
+docker ps          # look for (healthy) on both containers
+docker logs agentshroud-bot --tail 50
+
+# Execute into bot
+docker exec -it agentshroud-bot bash
+
+# Restart after config changes
+docker compose -f docker/docker-compose.yml restart agentshroud-bot
+```
+
+### MCP Servers (Claude Code)
+
+MCP servers are configured in `.claude/settings.json`. They provide
+GitHub, Atlassian (Jira/Confluence), and AWS access to Claude Code.
+No additional setup is required if the MCP servers are already running.
+
+──────────────────────────────────────────────────────────────────────────────
+## 9) COMMUNICATION STANDARDS (TRADEMARK)
+──────────────────────────────────────────────────────────────────────────────
+
+All external communications must include a trademark statement.
+Full templates are in [COMMUNICATION-TEMPLATES.md](COMMUNICATION-TEMPLATES.md).
+
+### Quick Reference
+
+| Context | Statement to append |
+|---------|---------------------|
+| PR descriptions, GitHub issues, Confluence | **Option 1** (default) |
+| Telegram, Slack, quick replies | **Option 2** |
+| First contact with any new collaborator | **Option 3** |
+| README, docs, whitepapers | **Option 4** |
+
+**Option 1 (default):**
+> *AgentShroud™ is a trademark of Isaiah Jefferson. All rights reserved. Unauthorized use of the AgentShroud name, brand, or associated intellectual property is prohibited.*
+
+**Option 2 (compact):**
+> *AgentShroud™ — Proprietary & Confidential. © 2026 Isaiah Jefferson. All rights reserved.*
+
+**Option 3 (collaborator first contact):**
+> *This communication is issued under the AgentShroud™ project. AgentShroud™ is a trademark of Isaiah Jefferson, established February 2026. All project materials, methodologies, architectures, and associated intellectual property are proprietary and confidential. Participation as a collaborator does not transfer ownership, licensing rights, or any claim to the AgentShroud™ brand or codebase without a separate written agreement.*
+
+**Option 4 (docs footer):**
+> AgentShroud™ is a trademark of Isaiah Jefferson · First use February 2026 · All rights reserved
+> Unauthorized use of the AgentShroud name or brand is strictly prohibited · Federal trademark registration pending
+

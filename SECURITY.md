@@ -60,6 +60,14 @@ AgentShroud provides 12 security modules (see [README](README.md) for details):
 - **Agent Isolation** — Seccomp, rootless, read-only rootfs, resource limits
 - **Live Dashboard** — Real-time monitoring and alerting
 
+---
+
+AgentShroud™ is a trademark of Isaiah Dallas Jefferson, Jr., first used in February 2026. Protected by common law trademark rights. Federal trademark registration pending. Unauthorized reproduction, distribution, or use of the AgentShroud name or brand is strictly prohibited.
+© 2026 Isaiah Dallas Jefferson, Jr.. All rights reserved.
+See [TRADEMARK.md](TRADEMARK.md).
+
+---
+
 ## Known Issues
 
 ### SC-2026-001 — Gateway Auth Bypass (Mitigated)
