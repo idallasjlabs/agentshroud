@@ -26,19 +26,22 @@ else
     echo "[startup] Warning: OpenAI API key file not found"
 fi
 
-# Export Anthropic API key from secret file
-if [ -f "/run/secrets/anthropic_api_key" ]; then
-    export ANTHROPIC_API_KEY="$(cat /run/secrets/anthropic_api_key)"
-    echo "[startup] Loaded Anthropic API key"
-else
-    echo "[startup] Warning: Anthropic API key file not found"
-fi
-
 # FINAL: Load secrets via gateway op-proxy (bot has no direct 1Password access).
 # op-wrapper.sh routes "op read" through POST /credentials/op-proxy when
 # GATEWAY_AUTH_TOKEN and GATEWAY_OP_PROXY_URL are set.
 if [ -n "${GATEWAY_AUTH_TOKEN:-}" ] && [ -n "${GATEWAY_OP_PROXY_URL:-}" ]; then
     echo "[startup] Loading secrets via gateway op-proxy (${GATEWAY_OP_PROXY_URL})"
+
+    # Load Claude OAuth token (replaces static ANTHROPIC_API_KEY)
+    # Item: AgentShroud - Anthropic Claude OAuth Token (Agent Shroud Bot Credentials vault)
+    ANTHROPIC_OAUTH_TOKEN="$(/usr/local/bin/op-wrapper.sh read \
+        "op://Agent Shroud Bot Credentials/AgentShroud - Anthropic Claude OAuth Token/claude oath token" 2>/dev/null)" || true
+    if [ -n "$ANTHROPIC_OAUTH_TOKEN" ]; then
+        export ANTHROPIC_OAUTH_TOKEN
+        echo "[startup] ✓ Loaded Claude OAuth token"
+    else
+        echo "[startup] ⚠ Could not load Claude OAuth token"
+    fi
 
     # Load Brave Search API key
     # Item ID: 6j6ij5tzld6kobvit5tk6ufrhq (Brave Search API - agentshroud.ai@gmail.com)
