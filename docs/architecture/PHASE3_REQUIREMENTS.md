@@ -245,7 +245,7 @@ No feature creep. No advanced features until basic chat works. Focus:
 
 - [ ] Create `docker/entrypoint.sh`
   - Verify file permissions (700 on ~/.openclaw, 600 on config)
-  - Load secrets from `/run/secrets/anthropic_api_key`
+  - Load secrets from `/run/secrets/anthropic_oauth_token`
   - Start OpenClaw with persona files
   - Trap SIGTERM for graceful shutdown
 

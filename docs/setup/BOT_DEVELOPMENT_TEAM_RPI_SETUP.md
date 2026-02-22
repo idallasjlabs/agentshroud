@@ -1286,7 +1286,7 @@ op run --env-file=.env.template -- docker compose up -d
 
 # Or create Docker secrets
 op read "op://AgentShroud/GitHub-Bot-PAT/password" > docker/secrets/github_token.txt
-op read "op://AgentShroud/Anthropic-API/password" > docker/secrets/anthropic_api_key.txt
+op read "op://AgentShroud/Anthropic-OAuth/token" > docker/secrets/anthropic_oauth_token.txt
 op read "op://AgentShroud/Telegram-Bot/password" > docker/secrets/telegram_bot_token.txt
 ```
 

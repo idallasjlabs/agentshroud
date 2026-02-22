@@ -106,7 +106,7 @@ echo "Anthropic: $(cat $ANTHROPIC_API_KEY_FILE | head -c 25)..."
 
 # Edit keys
 nano docker/secrets/openai_api_key.txt
-nano docker/secrets/anthropic_api_key.txt
+nano docker/secrets/anthropic_oauth_token.txt
 
 # After editing, restart
 ./docker/scripts/restart.sh rebuild
