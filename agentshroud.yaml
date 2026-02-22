@@ -140,6 +140,18 @@ logging:
   max_files: 3
   destination: "/app/logs"
 
+channels:
+  # Channel ownership (P3) — Telegram + email oversight
+  # All bot messages and emails route through the gateway for PII scanning,
+  # recipient allowlisting, and approval queue integration.
+  email:
+    enabled: true
+    allowed_recipients: []  # Add trusted addresses here; empty = all require approval
+    rate_limit_per_hour: 10
+    require_approval_for_new: true
+  telegram:
+    enabled: true
+
 credentials:
   # Credential isolation (P2) — gateway op-proxy
   # The gateway reads 1Password secrets on behalf of the bot.
