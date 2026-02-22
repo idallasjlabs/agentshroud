@@ -37,6 +37,16 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     && rm -rf /var/lib/apt/lists/* \
     && mkdir -p /var/lib/clamav
 
+# Install 1Password CLI for op-proxy credential broker
+RUN apt-get update && apt-get install -y --no-install-recommends curl ca-certificates gpg \
+    && curl -sS https://downloads.1password.com/linux/keys/1password.asc \
+        | gpg --dearmor --output /usr/share/keyrings/1password-archive-keyring.gpg \
+    && arch=$(dpkg --print-architecture) \
+    && echo "deb [arch=${arch} signed-by=/usr/share/keyrings/1password-archive-keyring.gpg] https://downloads.1password.com/linux/debian/${arch} stable main" \
+        > /etc/apt/sources.list.d/1password.list \
+    && apt-get update && apt-get install -y --no-install-recommends 1password-cli \
+    && rm -rf /var/lib/apt/lists/*
+
 # Trivy vulnerability scanner (ARM64 compatible)
 RUN curl -sfL https://raw.githubusercontent.com/aquasecurity/trivy/main/contrib/install.sh | sh -s -- -b /usr/local/bin
 
@@ -66,6 +76,8 @@ LABEL org.opencontainers.image.source="https://github.com/ijefferson/oneclaw"
 
 # Prevent Python bytecode generation (read-only filesystem compatibility)
 ENV PYTHONDONTWRITEBYTECODE=1
+# Redirect op CLI config to tmpfs mount (read-only root filesystem)
+ENV XDG_CONFIG_HOME=/tmp
 
 # Copy security scripts
 COPY docker/scripts/security-entrypoint.sh /usr/local/bin/security-entrypoint.sh
