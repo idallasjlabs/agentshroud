@@ -46,7 +46,7 @@ if op_authenticate 2>/dev/null; then
 
     # Load Brave Search API key from 1Password
     # Item title contains '@' which breaks op:// URIs — use item ID instead
-    # Item ID: 6j6ij5tzld6kobvit5tk6ufrhq (Brave Search API - therealidallasj@gmail.com)
+    # Item ID: 6j6ij5tzld6kobvit5tk6ufrhq (Brave Search API - agentshroud.ai@gmail.com)
     BRAVE_API_KEY="$(op read --session "$OP_SESSION" \
         "op://AgentShroud Bot Credentials/6j6ij5tzld6kobvit5tk6ufrhq/brach search api key" 2>/dev/null)" || true
     if [ -n "$BRAVE_API_KEY" ]; then

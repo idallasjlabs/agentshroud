@@ -17,6 +17,10 @@ else
     echo "[entrypoint] Warning: No Playwright browsers found in /root/.cache/ms-playwright"
 fi
 
+# Apply required OpenClaw config (agents, bindings, cron jobs)
+echo "[entrypoint] Applying OpenClaw config..."
+/usr/local/bin/init-openclaw-config.sh
+
 # Run startup script as node user (no privilege drop needed - already set USER in Dockerfile)
 echo "[entrypoint] Starting AgentShroud..."
 exec /usr/local/bin/start-agentshroud.sh
