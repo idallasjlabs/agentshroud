@@ -11,6 +11,8 @@ set -euo pipefail
 # Note: OpenClaw CLI expects OPENCLAW_GATEWAY_PASSWORD env var
 if [ -f "/run/secrets/gateway_password" ]; then
     export OPENCLAW_GATEWAY_PASSWORD="$(cat /run/secrets/gateway_password)"
+    # FINAL: also set GATEWAY_AUTH_TOKEN so op-wrapper.sh routes through gateway
+    export GATEWAY_AUTH_TOKEN="$OPENCLAW_GATEWAY_PASSWORD"
     echo "[startup] Loaded Gateway password"
 else
     echo "[startup] Warning: Gateway password file not found"
@@ -32,26 +34,15 @@ else
     echo "[startup] Warning: Anthropic API key file not found"
 fi
 
-# Sign in to 1Password using shared auth library (3-tier fallback)
-SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
-# shellcheck source=op-auth-common.sh
-source "$SCRIPT_DIR/op-auth-common.sh"
+# FINAL: Load secrets via gateway op-proxy (bot has no direct 1Password access).
+# op-wrapper.sh routes "op read" through POST /credentials/op-proxy when
+# GATEWAY_AUTH_TOKEN and GATEWAY_OP_PROXY_URL are set.
+if [ -n "${GATEWAY_AUTH_TOKEN:-}" ] && [ -n "${GATEWAY_OP_PROXY_URL:-}" ]; then
+    echo "[startup] Loading secrets via gateway op-proxy (${GATEWAY_OP_PROXY_URL})"
 
-if op_authenticate 2>/dev/null; then
-    echo "[startup] ✓ Signed in to 1Password successfully"
-
-    # Confirm vault access without logging vault names (Finding 3: avoid
-    # enumerating vault scope in logs visible to log aggregation pipelines)
-    if op vault list --session "$OP_SESSION" >/dev/null 2>&1; then
-        echo "[startup] ✓ 1Password vault access confirmed"
-    else
-        echo "[startup] ⚠ Could not list vaults"
-    fi
-
-    # Load Brave Search API key from 1Password
-    # Item title contains '@' which breaks op:// URIs — use item ID instead
+    # Load Brave Search API key
     # Item ID: 6j6ij5tzld6kobvit5tk6ufrhq (Brave Search API - agentshroud.ai@gmail.com)
-    BRAVE_API_KEY="$(op read --session "$OP_SESSION" \
+    BRAVE_API_KEY="$(/usr/local/bin/op-wrapper.sh read \
         "op://AgentShroud Bot Credentials/6j6ij5tzld6kobvit5tk6ufrhq/brach search api key" 2>/dev/null)" || true
     if [ -n "$BRAVE_API_KEY" ]; then
         export BRAVE_API_KEY
@@ -60,12 +51,9 @@ if op_authenticate 2>/dev/null; then
         echo "[startup] ⚠ Could not load Brave Search API key"
     fi
 
-    # Load Gmail credentials from 1Password at startup so they survive session expiry.
-    # Security trade-off (Finding 7): these values live in the process environment for
-    # the container lifetime. get-credential.sh fast-paths from these env vars without
-    # calling 1Password, so callers must never log the return value of get-credential.
+    # Load Gmail credentials
     # Item ID: he6wcfkfieekqkomuxdunal2xa (Gmail - agentshroud.ai)
-    GMAIL_APP_PASSWORD="$(op read --session "$OP_SESSION" \
+    GMAIL_APP_PASSWORD="$(/usr/local/bin/op-wrapper.sh read \
         "op://AgentShroud Bot Credentials/he6wcfkfieekqkomuxdunal2xa/agentshroud bot password" 2>/dev/null)" || true
     if [ -n "$GMAIL_APP_PASSWORD" ]; then
         export GMAIL_APP_PASSWORD
@@ -74,7 +62,7 @@ if op_authenticate 2>/dev/null; then
         echo "[startup] ⚠ Could not load Gmail app password"
     fi
 
-    GMAIL_USERNAME="$(op read --session "$OP_SESSION" \
+    GMAIL_USERNAME="$(/usr/local/bin/op-wrapper.sh read \
         "op://AgentShroud Bot Credentials/he6wcfkfieekqkomuxdunal2xa/username" 2>/dev/null)" || true
     if [ -n "$GMAIL_USERNAME" ]; then
         export GMAIL_USERNAME
@@ -82,12 +70,8 @@ if op_authenticate 2>/dev/null; then
     else
         echo "[startup] ⚠ Could not load Gmail username"
     fi
-
-    # Finding 2: unset session token before exec so the long-lived gateway process
-    # does not carry it in its environment (helper scripts re-auth via Tier 2/3).
-    unset OP_SESSION OP_SESSION_my
 else
-    echo "[startup] Warning: 1Password credentials not found (optional)"
+    echo "[startup] Warning: Gateway op-proxy not configured, 1Password secrets unavailable"
 fi
 
 # Start AgentShroud gateway (powered by OpenClaw CLI)
