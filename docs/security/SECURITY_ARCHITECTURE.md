@@ -1,8 +1,8 @@
 # AgentShroud Security Architecture
 
 **Project**: AgentShroud - A User-Controlled Proxy Layer for OpenClaw
-**Version**: 0.2.0
-**Date**: 2026-02-15
+**Version**: 0.5.0
+**Date**: 2026-02-22
 **Status**: Production-Ready Security Model
 
 ---
@@ -564,8 +564,8 @@ docker compose -f docker/docker-compose.yml up -d --build
 
 ---
 
-**Version**: 0.2.0
-**Last Updated**: 2026-02-15
+**Version**: 0.5.0
+**Last Updated**: 2026-02-22
 **License**: MIT
 **Repository**: https://github.com/idallasj/agentshroud (AgentShroud)
 **Upstream**: https://openclaw.ai (OpenClaw)

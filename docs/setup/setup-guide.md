@@ -190,7 +190,7 @@ docker swarm init
 
 # Create secrets from files
 echo "your_openai_key" | docker secret create openai_api_key -
-echo "your_anthropic_key" | docker secret create anthropic_api_key -
+echo "your_anthropic_oauth_token" | docker secret create anthropic_oauth_token -
 
 # Deploy with secrets
 docker stack deploy -c docker-compose.secure.yml agentshroud

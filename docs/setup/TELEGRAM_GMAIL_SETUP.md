@@ -277,7 +277,7 @@ echo ""
 echo "2. API Keys Status"
 docker compose -f docker/docker-compose.yml exec openclaw bash -c '
 export OPENAI_API_KEY=$(cat /run/secrets/openai_api_key)
-export ANTHROPIC_API_KEY=$(cat /run/secrets/anthropic_api_key)
+# NOTE: Anthropic auth now uses Claude OAuth token via op-proxy (no env var needed)
 openclaw models status | head -20
 '
 echo ""
