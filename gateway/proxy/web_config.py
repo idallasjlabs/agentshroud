@@ -73,6 +73,26 @@ class WebProxyConfig:
     # --- SSRF protection (always hard-block) ---
     block_private_ips: bool = True
 
+    # --- Domain mode ---
+    # "allowlist": only explicitly listed domains are permitted (default-deny)
+    # "denylist": all domains pass unless explicitly blocked (default-allow)
+    mode: str = "denylist"
+
+    # Allowlist: permitted domains when mode == "allowlist"
+    # Supports wildcard prefix: "*.github.com" matches foo.github.com and github.com
+    allowed_domains: list[str] = field(
+        default_factory=lambda: [
+            "api.openai.com",
+            "api.anthropic.com",
+            "api.telegram.org",
+            "oauth2.googleapis.com",
+            "www.googleapis.com",
+            "gmail.googleapis.com",
+            "*.github.com",
+            "*.githubusercontent.com",
+        ]
+    )
+
     # --- Passthrough / debug mode ---
     passthrough_mode: bool = False  # If True, skip all checks, just log
 
@@ -80,6 +100,23 @@ class WebProxyConfig:
     log_request_headers: bool = False
     log_response_headers: bool = True
     log_response_body_preview: int = 500  # chars of body to log (0 = none)
+
+    def is_domain_allowed(self, domain: str) -> bool:
+        """Check if a domain is on the allowlist (used when mode == 'allowlist').
+
+        Supports exact matches and wildcard prefix: *.example.com matches
+        foo.example.com and example.com itself.
+        """
+        domain = domain.lower().rstrip(".")
+        for entry in self.allowed_domains:
+            entry_lower = entry.lower().rstrip(".")
+            if domain == entry_lower:
+                return True
+            if entry_lower.startswith("*."):
+                suffix = entry_lower[2:]  # e.g. "github.com"
+                if domain == suffix or domain.endswith("." + suffix):
+                    return True
+        return False
 
     def get_domain_settings(self, domain: str) -> DomainSettings:
         """Get settings for a specific domain, falling back to defaults."""
