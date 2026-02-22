@@ -1,3 +1,7 @@
+# Copyright © 2026 Isaiah Dallas Jefferson, Jr. AgentShroud™. All rights reserved.
+# AgentShroud™ is a trademark of Isaiah Dallas Jefferson, Jr., first used in February 2026.
+# Protected by common law trademark rights. Federal trademark registration pending.
+# Unauthorized reproduction, distribution, or use of the AgentShroud name or brand is strictly prohibited.
 """AgentShroud Gateway - Main FastAPI Application
 
 Entry point for the gateway API. Wires together all components:
@@ -15,11 +19,8 @@ import subprocess
 import time
 from contextlib import asynccontextmanager
 from datetime import datetime, timezone
-from typing import Annotated
-
 import hmac
-
-from typing import Optional
+from typing import Annotated, Optional
 
 from fastapi import Depends, FastAPI, HTTPException, Query, Request, WebSocket, status
 from pydantic import BaseModel
@@ -48,6 +49,7 @@ from .router import ForwardError, MultiAgentRouter
 from .sanitizer import PIISanitizer
 from .event_bus import EventBus, make_event
 from ..proxy.http_proxy import HTTPConnectProxy
+from ..proxy.pipeline import SecurityPipeline
 from ..web.api import router as management_api_router
 from ..web.management import router as management_dashboard_router
 from .version_routes import router as version_router
@@ -101,6 +103,7 @@ class AppState:
     ledger: DataLedger
     router: MultiAgentRouter
     approval_queue: ApprovalQueue
+    pipeline: Optional[SecurityPipeline]
     start_time: float
     event_bus: EventBus
     http_proxy: Optional[HTTPConnectProxy]
@@ -166,6 +169,13 @@ async def lifespan(app: FastAPI):
     except Exception as e:
         logger.critical(f"Failed to initialize approval queue: {e}")
         raise
+
+    # Initialize security pipeline
+    app_state.pipeline = SecurityPipeline(
+        pii_sanitizer=app_state.sanitizer,
+        approval_queue=app_state.approval_queue,
+    )
+    logger.info("Security pipeline initialized")
 
     # Initialize SSH proxy
     if app_state.config.ssh.enabled:
@@ -533,19 +543,60 @@ async def forward_content(request: ForwardRequest, auth: AuthRequired):
         f"type={request.content_type}, size={len(request.content)}"
     )
 
-    # Step 1: Sanitize PII
-    try:
-        sanitization_result = await app_state.sanitizer.sanitize(request.content)
-    except Exception as e:
-        logger.error(f"PII sanitization failed: {e}")
-        # CRITICAL: Fail closed - never forward unsanitized content
-        raise HTTPException(
-            status_code=status.HTTP_500_INTERNAL_SERVER_ERROR,
-            detail="Content sanitization failed. Request blocked for safety.",
-        )
-
-    sanitized_content = sanitization_result.sanitized_content
-    sanitized = len(sanitization_result.redactions) > 0
+    # Step 1: Run through security pipeline (injection scan + PII sanitization + audit)
+    pipeline = getattr(app_state, "pipeline", None)
+    audit_entry_id: str = ""
+    audit_hash: str = ""
+    prompt_score: float = 0.0
+    if pipeline:
+        try:
+            pipeline_result = await pipeline.process_inbound(
+                message=request.content,
+                agent_id="default",
+                action="send_message",
+                source=request.source,
+            )
+        except Exception as e:
+            logger.error(f"Security pipeline failed: {e}")
+            raise HTTPException(
+                status_code=status.HTTP_500_INTERNAL_SERVER_ERROR,
+                detail="Content security check failed. Request blocked for safety.",
+            )
+        if pipeline_result.blocked:
+            logger.warning(
+                f"Pipeline blocked request: {pipeline_result.block_reason} "
+                f"(source={request.source})"
+            )
+            raise HTTPException(
+                status_code=status.HTTP_400_BAD_REQUEST,
+                detail=f"Request blocked: {pipeline_result.block_reason}",
+            )
+        if pipeline_result.queued_for_approval:
+            return JSONResponse(
+                status_code=status.HTTP_202_ACCEPTED,
+                content={"status": "queued", "approval_id": pipeline_result.approval_id},
+            )
+        sanitized_content = pipeline_result.sanitized_message
+        sanitized = pipeline_result.pii_redaction_count > 0
+        entity_types_found = pipeline_result.pii_redactions
+        redaction_count = pipeline_result.pii_redaction_count
+        audit_entry_id = pipeline_result.audit_entry_id
+        audit_hash = pipeline_result.audit_hash
+        prompt_score = pipeline_result.prompt_score
+    else:
+        # Fallback: inline PII sanitization (no pipeline available)
+        try:
+            sanitization_result = await app_state.sanitizer.sanitize(request.content)
+        except Exception as e:
+            logger.error(f"PII sanitization failed: {e}")
+            raise HTTPException(
+                status_code=status.HTTP_500_INTERNAL_SERVER_ERROR,
+                detail="Content sanitization failed. Request blocked for safety.",
+            )
+        sanitized_content = sanitization_result.sanitized_content
+        sanitized = len(sanitization_result.redactions) > 0
+        entity_types_found = sanitization_result.entity_types_found
+        redaction_count = len(sanitization_result.redactions)
 
     # Step 2: Resolve routing target
     try:
@@ -586,8 +637,8 @@ async def forward_content(request: ForwardRequest, auth: AuthRequired):
             content=sanitized_content,
             original_content=request.content,
             sanitized=sanitized,
-            redaction_count=len(sanitization_result.redactions),
-            redaction_types=sanitization_result.entity_types_found,
+            redaction_count=redaction_count,
+            redaction_types=entity_types_found,
             forwarded_to=forwarded_to,
             content_type=request.content_type,
             metadata=request.metadata,
@@ -618,10 +669,10 @@ async def forward_content(request: ForwardRequest, auth: AuthRequired):
         await app_state.event_bus.emit(
             make_event(
                 "pii_detected",
-                f"{len(sanitization_result.redactions)} PII entities redacted",
+                f"{redaction_count} PII entities redacted",
                 {
-                    "types": sanitization_result.entity_types_found,
-                    "count": len(sanitization_result.redactions),
+                    "types": entity_types_found,
+                    "count": redaction_count,
                 },
                 "warning",
             )
@@ -631,23 +682,32 @@ async def forward_content(request: ForwardRequest, auth: AuthRequired):
     response_data = {
         "id": ledger_entry.id,
         "sanitized": sanitized,
-        "redactions": sanitization_result.entity_types_found,
-        "redaction_count": len(sanitization_result.redactions),
+        "redactions": entity_types_found,
+        "redaction_count": redaction_count,
         "content_hash": ledger_entry.content_hash,
         "forwarded_to": forwarded_to,
         "timestamp": ledger_entry.timestamp,
+        "audit_entry_id": audit_entry_id or None,
+        "audit_hash": audit_hash or None,
+        "prompt_score": prompt_score if prompt_score > 0.0 else None,
     }
 
     # Include agent response if available
     if agent_response:
-        # Step 5.0: Filter out Claude XML internal blocks
-        filtered_response, xml_was_filtered = app_state.sanitizer.filter_xml_blocks(
-            agent_response
-        )
-        if xml_was_filtered:
-            logger.info(
-                f"Filtered XML blocks from agent response for source={request.source}"
+        # Step 5.0: Filter out Claude XML internal blocks and run outbound PII scan
+        if pipeline:
+            out_result = await pipeline.process_outbound(
+                response=agent_response, agent_id="default"
             )
+            filtered_response = out_result.sanitized_message
+        else:
+            filtered_response, xml_was_filtered = app_state.sanitizer.filter_xml_blocks(
+                agent_response
+            )
+            if xml_was_filtered:
+                logger.info(
+                    f"Filtered XML blocks from agent response for source={request.source}"
+                )
 
         # Step 5.1: Block credentials from being displayed via untrusted sources
         blocked_response, was_blocked = await app_state.sanitizer.block_credentials(

@@ -1,4 +1,33 @@
-# OpenClaw Bot Capabilities
+# AgentShroud Bot Capabilities
+
+## Trademark Statements
+
+Every external communication must end with the appropriate trademark statement.
+
+### Which statement to use
+
+| Where | Use |
+|-------|-----|
+| Telegram / Slack messages | **Option 2** |
+| First message to any new user or collaborator | **Option 3**, then **Option 2** for follow-ups |
+| Emails you compose or send | **Option 1** |
+
+### Option 1 — Professional (email, formal)
+> *AgentShroud™ is a trademark of Isaiah Jefferson. All rights reserved. Unauthorized use of the AgentShroud name, brand, or associated intellectual property is prohibited.*
+
+### Option 2 — Compact (Telegram, Slack — default)
+> *AgentShroud™ — Proprietary & Confidential. © 2026 Isaiah Jefferson. All rights reserved.*
+
+### Option 3 — Full Collaborator Notice (first contact only)
+> *This communication is issued under the AgentShroud™ project. AgentShroud™ is a trademark of Isaiah Jefferson, established February 2026. All project materials, methodologies, architectures, and associated intellectual property are proprietary and confidential. Participation as a collaborator does not transfer ownership, licensing rights, or any claim to the AgentShroud™ brand or codebase without a separate written agreement.*
+
+### Rules
+- Append the statement **once per conversation thread** — not on every message
+- Use **Option 3** when you detect a user you have never interacted with before
+- Never modify or abbreviate the trademark statement
+- If unsure which option to use, default to **Option 2**
+
+---
 
 ## Credential Management - 1Password Integration
 
@@ -34,7 +63,7 @@ User: "Configure my Gmail account"
 Bot: [Runs get-credential gmail-username to get email]
 Bot: [Runs get-credential gmail-app-password to get app password]
 Bot: [Configures email with retrieved credentials]
-Bot: "Gmail configured successfully for therealidallasj@gmail.com"
+Bot: "Gmail configured successfully for agentshroud.ai@gmail.com"
 ```
 
 **When asked for credentials:**
@@ -104,7 +133,7 @@ User (Any Chat): "What's my Gmail password?"
 Bot: "I cannot display credentials in chat for security.
 
      To view credentials:
-     • Console: docker exec openclaw-bot get-credential gmail-password
+     • Console: docker exec agentshroud-bot get-credential gmail-password
      • 1Password app: Open 1Password and view vault
 
      I can USE the password to configure services without displaying it."
@@ -118,7 +147,7 @@ When executed via direct Terminal commands:
 
 **Example:**
 ```bash
-$ docker exec openclaw-bot get-credential gmail-password
+$ docker exec agentshroud-bot get-credential gmail-password
 6nE7YN77Ahs4zG!A2ZUTN*@m
 ```
 
@@ -184,4 +213,43 @@ You do NOT have access to:
 If credential retrieval fails:
 1. Check if item exists: `get-credential list`
 2. Verify vault access: `1password-skill list-vaults`
-3. Check specific item: `1password-skill get-item "Gmail - therealidallasj"`
+3. Check specific item: `1password-skill get-item "Gmail - agentshroud.ai"`
+
+---
+
+## Credential Isolation — Gateway op-proxy (P2)
+
+As of P2, the 1Password service account token lives on the **gateway**, not
+the bot container. The bot sends `op://` references; the gateway reads the
+actual secret and returns the value.
+
+### How it works
+
+The bot never holds the service account token. Instead:
+
+```
+Bot → POST /credentials/op-proxy {"reference": "op://vault/item/field"}
+                                    ↓
+                             AgentShroud Gateway
+                             validates reference against allowlist
+                             calls `op read` with gateway's token
+                                    ↓
+                             returns {"value": "...secret..."}
+```
+
+### Allowed references
+
+Only paths matching `op://AgentShroud Bot Credentials/*` are permitted.
+Any other vault, item, or field returns HTTP 403.
+
+### During development (before FINAL PR)
+
+Until `OP_SERVICE_ACCOUNT_TOKEN` is moved to the gateway environment,
+calls to `/credentials/op-proxy` will fail with HTTP 502. This is expected.
+The bot continues to use the local `get-credential` / `op-wrapper.sh` path.
+
+### When P2 is fully activated
+
+- Remove `OP_SERVICE_ACCOUNT_TOKEN` from bot's Docker secrets
+- Set `OP_SERVICE_ACCOUNT_TOKEN` in gateway's environment
+- Bot uses `op-proxy` exclusively; no token ever enters the bot container

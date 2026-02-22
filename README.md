@@ -1,23 +1,41 @@
-```
-   ___              ____  _                
-  / _ \ _ __   ___ / ___|| | __ ___      __
- | | | | '_ \ / _ \ |    | |/ _` \ \ /\ / /
- | |_| | | | |  __/ |___ | | (_| |\ V  V / 
-  \___/|_| |_|\___|\____||_|\__,_| \_/\_/  
-                                            
-  A G E N T S H R O U D   G A T E W A Y
-```
+<div align="center">
 
-# AgentShroud — Enterprise Security Proxy for OpenClaw AI Agents
+<!-- AgentShroud™ Brand Header -->
+<img src="branding/logos/png/logo-transparent.png" alt="AgentShroud™ Logo" width="120" height="120" />
 
-[![Tests](https://github.com/idallasj/agentshroud/actions/workflows/ci.yml/badge.svg)](https://github.com/idallasj/agentshroud/actions/workflows/ci.yml)
-[![Coverage](https://img.shields.io/badge/coverage-92%25-brightgreen)](https://github.com/idallasj/agentshroud)
-[![Python 3.11](https://img.shields.io/badge/python-3.11-blue.svg)](https://python.org)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+<h1>AgentShroud™</h1>
 
-> *"One Claw Tied Behind Your Back"* — You decide what the agent sees, not the agent.
+<p><strong>Enterprise Governance Proxy for Autonomous AI Agents</strong></p>
 
-AgentShroud (AgentShroud) is a security proxy that sits between your real digital life and an OpenClaw AI agent. It provides **12 security modules**, a **human approval queue**, **full audit logging**, and a **real-time dashboard** — ensuring your AI assistant never sees data you haven't explicitly approved.
+<p>
+  <a href="https://github.com/idallasj/agentshroud/actions/workflows/ci.yml">
+    <img src="https://github.com/idallasj/agentshroud/actions/workflows/ci.yml/badge.svg" alt="Tests" />
+  </a>
+  <a href="https://github.com/idallasj/agentshroud">
+    <img src="https://img.shields.io/badge/coverage-92%25-brightgreen" alt="Coverage" />
+  </a>
+  <img src="https://img.shields.io/badge/python-3.11-blue.svg" alt="Python 3.11" />
+  <a href="LICENSE">
+    <img src="https://img.shields.io/badge/License-MIT-yellow.svg" alt="MIT License" />
+  </a>
+  <img src="https://img.shields.io/badge/trademark-AgentShroud™-1583f0" alt="AgentShroud™ Trademark" />
+</p>
+
+<p><em>Built by a system architect, for system architects. Powered by agents. Governed by design.</em></p>
+
+<hr />
+
+</div>
+
+**AgentShroud** is an open-source, enterprise-grade transparent proxy framework designed to enable the safe, auditable, and governed deployment of autonomous AI agents in real-world production environments.
+
+It bridges the gap between the transformative potential of autonomous AI agents and the security, compliance, and governance requirements of modern enterprises — proving that speed and safety are not mutually exclusive.
+
+AgentShroud sits as an intermediary layer between AI agents — Claude Code, Gemini CLI, OpenAI Codex, OpenClaw, and others — and the systems they interact with. Every API call, file write, cloud resource change, and tool invocation is intercepted, inspected, logged, and policy-enforced without disrupting the agent's native workflow.
+
+Think of it as a **security mesh for autonomous agents**: invisible to the agent, indispensable to the enterprise.
+
+AgentShroud is simultaneously a **production-grade tool**, a **learning laboratory**, and a **living proof of concept** — built in the open, by a system architect, using the very technologies it governs. It is itself built almost entirely by AI agents under human architectural direction, making it a real working demonstration of the methodology it enables. It is not a whitepaper. It is not a pilot. It is a production-grade reference implementation that enterprise leaders can examine, fork, and deploy.
 
 ---
 
@@ -26,7 +44,7 @@ AgentShroud (AgentShroud) is a security proxy that sits between your real digita
 ```
 ┌─────────────────────────────────────────────────────────────┐
 │                      YOUR DEVICES                           │
-│  iOS Shortcuts · Browser Extension · API · SSH Terminal     │
+│  Telegram · iOS Shortcuts · Browser Extension · SSH · API  │
 └──────────────────────────┬──────────────────────────────────┘
                            │ HTTPS (Tailscale)
                            ▼
@@ -48,16 +66,24 @@ AgentShroud (AgentShroud) is a security proxy that sits between your real digita
 │  │  Proxy   │  │  Switch  │  │Isolation │  │ (WebSocket│  │
 │  └──────────┘  └──────────┘  └──────────┘  └───────────┘  │
 │                                                             │
+│  ┌──────────┐  ┌──────────┐  ┌──────────┐  ┌───────────┐  │
+│  │   HTTP   │  │   MCP    │  │  Web     │  │Credential │  │
+│  │  CONNECT │  │  Proxy   │  │  Proxy   │  │Isolation  │  │
+│  │  Proxy   │  │          │  │          │  │(op-proxy) │  │
+│  └──────────┘  └──────────┘  └──────────┘  └───────────┘  │
+│                                                             │
 │  Multi-Agent Router · Auth (HMAC/JWT) · WebSocket Events   │
 └──────────────────────────┬──────────────────────────────────┘
                            │ Filtered & Approved
                            ▼
 ┌─────────────────────────────────────────────────────────────┐
-│              OPENCLAW AGENT (Containerized)                  │
-│  Read-only rootfs · Seccomp · Memory limits · No network*   │
+│              AI AGENT CONTAINER (OpenClaw)                   │
+│  Read-only rootfs · Seccomp · Memory limits · Internet-only │
+│  1Password via op-proxy (token stays on gateway)            │
 └─────────────────────────────────────────────────────────────┘
-                    * Internet-only, no LAN access
 ```
+
+**MCP-native**: Any MCP-compatible agent (Claude Code, Gemini CLI, Codex) can plug in without modification. AgentShroud extends MCP with an enterprise governance layer.
 
 ---
 
@@ -67,16 +93,18 @@ AgentShroud (AgentShroud) is a security proxy that sits between your real digita
 |---|--------|-------------|
 | 1 | **PII Sanitizer** | Microsoft Presidio-powered detection & redaction of SSN, credit cards, emails, phone numbers, addresses |
 | 2 | **Approval Queue** | Human-in-the-loop approval for sensitive actions (email, file deletion, API calls, SSH commands) |
-| 3 | **Audit Ledger** | SQLite-backed immutable log of all data flows and agent actions |
-| 4 | **Prompt Guard** | Detects and blocks prompt injection, jailbreak attempts, and payload smuggling |
-| 5 | **Egress Filter** | Network-level control of outbound connections; blocks LAN, allows only approved endpoints |
-| 6 | **Trust Manager** | Cryptographic verification of agent identity and configuration integrity |
+| 3 | **Audit Ledger** | SQLite-backed immutable log with SHA-256 hash chain of all data flows and agent actions |
+| 4 | **Prompt Guard** | Detects and blocks prompt injection, jailbreak attempts, and payload smuggling (11+ pattern detectors) |
+| 5 | **Egress Filter** | Network-level control of outbound connections; blocks LAN, SSRF, and DNS tunneling; domain allowlist |
+| 6 | **Trust Manager** | Cryptographic verification of agent identity and configuration integrity; progressive trust levels |
 | 7 | **Drift Detector** | Monitors container filesystem and configuration for unauthorized changes |
-| 8 | **Encrypted Store** | At-rest encryption for sensitive configuration and credentials |
+| 8 | **Encrypted Store** | AES-256-GCM at-rest encryption for sensitive configuration and credentials |
 | 9 | **SSH Proxy** | Secure SSH access through approval workflow with command allowlists and audit trail |
 | 10 | **Kill Switch** | Emergency shutdown with credential revocation — freeze, shutdown, or disconnect modes |
 | 11 | **Agent Isolation** | Seccomp profiles, read-only rootfs, memory/PID limits, rootless container execution |
 | 12 | **Live Dashboard** | Real-time WebSocket activity feed, approval management, and system health monitoring |
+| 13 | **HTTP CONNECT Proxy** | All bot outbound traffic routed through gateway; allowlist enforcement; traffic statistics |
+| 14 | **Credential Isolation** | `op://` references proxied via gateway; 1Password service account token never in the bot container |
 
 ---
 
@@ -126,22 +154,41 @@ That's it! The gateway is now filtering all data between you and your OpenClaw a
 
 ---
 
-## AgentShroud vs Plain OpenClaw
+## Why AgentShroud
 
-| Feature | Plain OpenClaw | AgentShroud |
-|---------|---------------|---------|
+Most enterprises are not moving slowly because they lack interest in AI — they are moving slowly because they lack a safe on-ramp. The risks are real: agents with unconstrained access can exfiltrate data, rack up cloud costs, corrupt repositories, or expose internal systems to collaborators who shouldn't have that visibility.
+
+AgentShroud answers the question every CIO, CISO, and innovation leader is quietly asking: *"How do we actually let AI agents do real work without creating unacceptable risk?"*
+
+### Core Objectives
+
+**Personal Mastery Through Real Building** — AgentShroud is an intentional learning vehicle. The project exists in part to develop hands-on fluency with the current generation of autonomous agent frameworks and developer tools — including Claude Code, OpenAI Codex, Google Gemini CLI, MCP, multi-agent coordination, GitHub, Atlassian Jira/Confluence, and AWS. The goal is not theoretical familiarity — it is working knowledge, earned by shipping something real.
+
+**Observability Without Obstruction** — Every action taken by an AI agent is captured, attributed, and made auditable. Nothing happens in the dark.
+
+**Policy Enforcement at the Agent Layer** — Configurable guardrails prevent agents from taking destructive, unauthorized, or out-of-scope actions. Scope-limited permissions, rate limiting, blast radius controls, and dry-run modes.
+
+**Secure Multi-Agent Orchestration** — Controlled environment for multiple agents and external collaborators without exposing sensitive systems or credentials.
+
+**MCP-Native Architecture** — Built around the Model Context Protocol. Any MCP-compatible agent can plug in without modification. AgentShroud extends MCP with an enterprise governance layer.
+
+### AgentShroud vs Unprotected Agent
+
+| Feature | Unprotected Agent | AgentShroud |
+|---------|-------------------|-------------|
 | PII detection & redaction | ❌ | ✅ Presidio-powered |
 | Human approval queue | ❌ | ✅ Telegram/API/Dashboard |
-| Audit trail | Basic logs | ✅ Immutable SQLite ledger |
-| Prompt injection defense | ❌ | ✅ PromptGuard module |
-| Network egress control | ❌ | ✅ LAN blocked, allowlist |
-| Container hardening | Basic | ✅ Seccomp + read-only + rootless |
+| Audit trail | Basic logs | ✅ Immutable SHA-256 ledger |
+| Prompt injection defense | ❌ | ✅ 11+ pattern detectors |
+| Outbound traffic control | ❌ | ✅ HTTP CONNECT proxy + domain allowlist |
+| Credential isolation | ❌ | ✅ op-proxy — token never in bot |
+| Container hardening | Minimal | ✅ Seccomp + read-only rootfs + rootless |
 | SSH with approval | ❌ | ✅ Command allowlists + audit |
 | Kill switch | ❌ | ✅ Freeze/shutdown/disconnect |
 | Real-time dashboard | ❌ | ✅ WebSocket live feed |
 | Drift detection | ❌ | ✅ Filesystem monitoring |
-| Encrypted secrets store | ❌ | ✅ At-rest encryption |
-| Version management | ❌ | ✅ Security-reviewed upgrades |
+| MCP tool governance | ❌ | ✅ Per-tool permissions + rate limits |
+| Multi-agent support | Per-platform | ✅ Claude Code, Gemini, Codex, OpenClaw |
 
 ---
 
@@ -243,12 +290,34 @@ pytest gateway/tests/ -v --cov=gateway --cov-report=term-missing
 
 ---
 
-## License
+## Who It's For
 
-[MIT](LICENSE) © 2026 Isaiah Jefferson
+AgentShroud is designed for technically-minded enterprise leaders — architects, engineers, and innovation executives — who want to move beyond theoretical AI adoption and demonstrate to their organizations what responsible, high-velocity AI-augmented work actually looks like in practice.
+
+It is equally a resource for individuals who learn best by building: professionals who want to develop real fluency with agentic AI not through courses, but through the discipline of shipping production software with these tools.
+
+If you are a system architect who wants to use LLMs to build real software, bring in outside collaborators securely, or show corporate stakeholders that speed and safety are not mutually exclusive — this is for you.
 
 ---
 
 ## Acknowledgments
 
-Built on top of [OpenClaw](https://github.com/openclaw/openclaw) — the open-source AI agent framework. AgentShroud adds the security layer that makes it safe for real-world use.
+The bot layer is built on [OpenClaw](https://github.com/openclaw/openclaw) — the open-source AI agent framework. AgentShroud wraps it with an enterprise security and governance layer without modifying the underlying platform.
+
+---
+
+<div align="center">
+
+<img src="branding/logos/png/logo-transparent.png" alt="AgentShroud™" width="48" height="48" />
+
+**AgentShroud™** · Enterprise AI Governance Gateway
+
+[MIT License](LICENSE) · © 2026 Isaiah Dallas Jefferson, Jr. · All rights reserved
+
+*AgentShroud™ is a trademark of Isaiah Dallas Jefferson, Jr., first used in February 2026.*
+*Protected by common law trademark rights. Federal trademark registration pending.*
+*Unauthorized reproduction, distribution, or use of the AgentShroud name or brand is strictly prohibited.*
+
+[agentshroud.ai@gmail.com](mailto:agentshroud.ai@gmail.com) · [github.com/idallasj/agentshroud](https://github.com/idallasj/agentshroud)
+
+</div>

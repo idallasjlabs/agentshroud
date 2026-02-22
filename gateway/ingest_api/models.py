@@ -1,3 +1,7 @@
+# Copyright © 2026 Isaiah Dallas Jefferson, Jr. AgentShroud™. All rights reserved.
+# AgentShroud™ is a trademark of Isaiah Dallas Jefferson, Jr., first used in February 2026.
+# Protected by common law trademark rights. Federal trademark registration pending.
+# Unauthorized reproduction, distribution, or use of the AgentShroud name or brand is strictly prohibited.
 """Pydantic models for AgentShroud Gateway API
 
 Defines request and response schemas for all endpoints.
@@ -90,6 +94,15 @@ class ForwardResponse(BaseModel):
     timestamp: str = Field(..., description="ISO 8601 timestamp")
     agent_response: str | None = Field(
         None, description="Agent's response if available"
+    )
+    audit_entry_id: str | None = Field(
+        None, description="Pipeline audit chain entry ID"
+    )
+    audit_hash: str | None = Field(
+        None, description="SHA-256 hash chain entry for tamper-evident audit"
+    )
+    prompt_score: float | None = Field(
+        None, description="Prompt injection risk score (0.0–1.0)"
     )
 
 
