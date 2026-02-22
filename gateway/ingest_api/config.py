@@ -122,6 +122,10 @@ class GatewayConfig(BaseModel):
     log_level: str = "INFO"
     channels: ChannelsConfig = Field(default_factory=ChannelsConfig)
     ssh: SSHConfig = Field(default_factory=SSHConfig)
+    # Domains permitted through the HTTP CONNECT proxy (proxy.allowed_domains in YAML)
+    proxy_allowed_domains: list[str] = Field(default_factory=list)
+    # Raw mcp_proxy section from YAML — passed to MCPProxyConfig.from_dict() at startup
+    mcp_proxy_data: dict = Field(default_factory=dict)
 
 
 def _entity_type_mapping(yaml_type: str) -> str:
@@ -275,6 +279,13 @@ def load_config(config_path: Path | None = None) -> GatewayConfig:
     ssh_section = raw_config.get("ssh", {})
     ssh_config = SSHConfig(**ssh_section) if ssh_section else SSHConfig()
 
+    # HTTP CONNECT proxy domain allowlist (proxy.allowed_domains in YAML)
+    proxy_section = raw_config.get("proxy", {})
+    proxy_allowed_domains = proxy_section.get("allowed_domains", [])
+
+    # MCP proxy config (raw dict — converted to MCPProxyConfig in main.py at startup)
+    mcp_proxy_data = raw_config.get("mcp_proxy", {})
+
     config = GatewayConfig(
         bind=gateway.get("bind", "127.0.0.1"),
         port=gateway.get("port", 8080),
@@ -287,6 +298,8 @@ def load_config(config_path: Path | None = None) -> GatewayConfig:
         log_level=raw_config.get("logging", {}).get("level", "INFO"),
         channels=channels_config,
         ssh=ssh_config,
+        proxy_allowed_domains=proxy_allowed_domains,
+        mcp_proxy_data=mcp_proxy_data,
     )
 
     logger.info(
