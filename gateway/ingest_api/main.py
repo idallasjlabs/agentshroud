@@ -36,6 +36,8 @@ from .models import (
     ApprovalDecision,
     ApprovalQueueItem,
     ApprovalRequest,
+    EmailSendRequest,
+    EmailSendResponse,
     ForwardRequest,
     ForwardResponse,
     LedgerEntry,
@@ -49,6 +51,7 @@ from .router import ForwardError, MultiAgentRouter
 from .sanitizer import PIISanitizer
 from .event_bus import EventBus, make_event
 from ..proxy.http_proxy import HTTPConnectProxy
+from ..proxy.webhook_receiver import WebhookReceiver
 from ..proxy.pipeline import SecurityPipeline
 from ..web.api import router as management_api_router
 from ..web.management import router as management_dashboard_router
@@ -525,6 +528,126 @@ async def op_proxy(request: OpProxyRequest, auth: AuthRequired):
     # Never log the value — only confirm success
     logger.info("op-proxy: secret read successfully for reference pattern")
     return {"value": result.stdout.strip()}
+
+
+# === Channel Ownership (P3) ===
+#
+# Telegram: all inbound messages route through WebhookReceiver + SecurityPipeline
+# Email:    bot submits send requests here; gateway validates, scans PII, and
+#           either approves or queues for human review.
+#
+# Activated now. The bot uses these endpoints once it's updated to call the
+# gateway instead of sending directly (FINAL PR wires docker-compose).
+
+# Allowed recipient list for email_send — add addresses as needed.
+# Empty list = all recipients require approval queue.
+_EMAIL_ALLOWED_RECIPIENTS: list[str] = [
+    # Fill in trusted addresses; unknown recipients always go to approval queue.
+]
+
+
+def _is_email_recipient_allowed(address: str) -> bool:
+    """Return True if the email address is on the pre-approved recipient list."""
+    return address.lower().strip() in {r.lower() for r in _EMAIL_ALLOWED_RECIPIENTS}
+
+
+@app.post("/webhook/telegram")
+async def telegram_webhook(request: Request, auth: AuthRequired):
+    """Telegram inbound webhook (P3: channel ownership).
+
+    All Telegram messages destined for the bot pass through this endpoint.
+    Messages are scanned for prompt injection and PII before being forwarded.
+    Authentication required.
+    """
+    try:
+        payload = await request.json()
+    except Exception:
+        payload = {}
+
+    # Build receiver using available app_state components
+    pipeline = getattr(app_state, "pipeline", None)
+    forwarder = getattr(app_state, "forwarder", None)
+    receiver = WebhookReceiver(pipeline=pipeline, forwarder=forwarder)
+
+    result = await receiver.process_webhook(payload, source="telegram")
+    logger.info(f"telegram-webhook: status={result.get('status')}")
+    return result
+
+
+@app.post("/email/send", status_code=status.HTTP_200_OK)
+async def email_send(request: EmailSendRequest, auth: AuthRequired):
+    """Email send gateway (P3: channel ownership).
+
+    The bot submits email send requests here instead of calling Gmail directly.
+    Controls:
+    - PII scan on body (redacts before logging)
+    - Recipient allowlist: known addresses return 200 (approved)
+    - Unknown recipients: submitted to approval queue → 202 (queued)
+
+    Authentication required.
+    """
+    now = datetime.now(timezone.utc).isoformat().replace("+00:00", "Z")
+
+    # PII scan on body
+    sanitizer = getattr(app_state, "sanitizer", None)
+    pii_redacted = False
+    sanitized_body = request.body
+    if sanitizer:
+        try:
+            scan = sanitizer.sanitize(request.body)
+            sanitized_body = scan.sanitized_content
+            pii_redacted = len(scan.redactions) > 0
+            if pii_redacted:
+                logger.warning(
+                    f"email-send: PII redacted from body ({len(scan.redactions)} items)"
+                )
+        except Exception as e:
+            logger.warning(f"email-send: PII scan failed ({e}), proceeding with original body")
+
+    # Recipient allowlist check
+    if _is_email_recipient_allowed(request.to):
+        logger.info("email-send: approved for allowed recipient")
+        return EmailSendResponse(
+            status="approved",
+            sanitized_body=sanitized_body,
+            pii_redacted=pii_redacted,
+            timestamp=now,
+        )
+
+    # Unknown recipient → queue for approval
+    approval_queue = getattr(app_state, "approval_queue", None)
+    if approval_queue:
+        approval_req = ApprovalRequest(
+            action_type="email_sending",
+            description=f"Send email to {request.to}: {request.subject}",
+            details={
+                "to": request.to,
+                "subject": request.subject,
+                "body": sanitized_body,
+                "pii_redacted": pii_redacted,
+            },
+            agent_id=request.agent_id,
+        )
+        item = await approval_queue.submit(approval_req)
+        logger.info(f"email-send: queued for approval (id={item.request_id})")
+        from fastapi.responses import JSONResponse as _JSONResponse
+        return _JSONResponse(
+            status_code=status.HTTP_202_ACCEPTED,
+            content=EmailSendResponse(
+                status="queued",
+                sanitized_body=sanitized_body,
+                pii_redacted=pii_redacted,
+                approval_id=item.request_id,
+                timestamp=now,
+            ).model_dump(),
+        )
+
+    # No approval queue available (e.g. during startup or tests) — block send
+    logger.warning("email-send: unknown recipient blocked (no approval queue available)")
+    raise HTTPException(
+        status_code=status.HTTP_403_FORBIDDEN,
+        detail="Recipient not in allowlist and no approval queue available",
+    )
 
 
 @app.post(
