@@ -182,7 +182,7 @@ Bot via Telegram: "I cannot display credentials via Telegram. However, I've logg
 You via Telegram: "Configure Gmail"
 Bot: [Internally: runs get-credential gmail-app-password]
 Bot: [Uses credential to configure email]
-Bot via Telegram: "✓ Gmail configured successfully for therealidallasj@gmail.com"
+Bot via Telegram: "✓ Gmail configured successfully for agentshroud.ai@gmail.com"
   Note: Credentials were used but never displayed
 ```
 

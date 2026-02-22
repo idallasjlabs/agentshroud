@@ -172,7 +172,7 @@ Quick reference guides, commands, and how-to documentation.
 ## 🎯 Use Cases
 
 ### Personal AI Assistant
-- Telegram-based interaction (@therealidallasj_bot)
+- Telegram-based interaction (@agentshroud.ai_bot)
 - 1Password credential management
 - Gmail/Calendar integration
 - iCloud integration
@@ -205,7 +205,7 @@ Quick reference guides, commands, and how-to documentation.
 ### Service Status
 - OpenClaw: http://localhost:18790
 - Gateway: http://localhost:8080
-- Telegram: @therealidallasj_bot
+- Telegram: @agentshroud.ai_bot
 
 ---
 
@@ -238,5 +238,5 @@ When adding new documentation:
 
 ---
 
-**Documentation maintained by:** Claude Sonnet 4.5 + @therealidallasj_bot
+**Documentation maintained by:** Claude Sonnet 4.5 + @agentshroud.ai_bot
 **Last major update:** Phase 3A/3B Security Completion (2026-02-16)

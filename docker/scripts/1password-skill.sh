@@ -106,16 +106,16 @@ Examples:
   1password-skill.sh list-items
 
   # Get Gmail password
-  1password-skill.sh get-password "Gmail - therealidallasj"
+  1password-skill.sh get-password "Gmail - agentshroud.ai"
 
   # Get Gmail username
-  1password-skill.sh get-username "Gmail - therealidallasj"
+  1password-skill.sh get-username "Gmail - agentshroud.ai"
 
   # Get TOTP code
-  1password-skill.sh get-totp "Gmail - therealidallasj"
+  1password-skill.sh get-totp "Gmail - agentshroud.ai"
 
   # Get custom field
-  1password-skill.sh get-field "Gmail - therealidallasj" "agentshroud bot password"
+  1password-skill.sh get-field "Gmail - agentshroud.ai" "agentshroud bot password"
 EOF
         exit 0
         ;;

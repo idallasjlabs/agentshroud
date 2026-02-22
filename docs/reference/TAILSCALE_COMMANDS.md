@@ -72,7 +72,7 @@ Replace `youremail@example.com` with your actual Tailscale email.
 
 - **OpenClaw Control UI**: http://localhost:18790 (local only)
 - **Gateway Dashboard**: http://localhost:8080 (local only)
-- **Telegram Bot**: @therealidallasj_bot (active)
+- **Telegram Bot**: @agentshroud.ai_bot (active)
 - **Gmail**: Not yet configured
 
 ## Next Steps

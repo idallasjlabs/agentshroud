@@ -1,4 +1,4 @@
-# OpenClaw Setup Guide - therealidallasj Bot
+# OpenClaw Setup Guide - agentshroud.ai Bot
 
 **Version**: 0.2.0
 **Date**: 2026-02-15
@@ -116,16 +116,16 @@ docker compose -f docker/docker-compose.yml exec openclaw openclaw providers add
 
 ### Step 2: Configure Bot Identity
 
-Set up therealidallasj as the bot's identity:
+Set up agentshroud.ai as the bot's identity:
 
 ```bash
 docker compose -f docker/docker-compose.yml exec openclaw openclaw config set \
   --key "bot.name" \
-  --value "therealidallasj"
+  --value "agentshroud.ai"
 
 docker compose -f docker/docker-compose.yml exec openclaw openclaw config set \
   --key "bot.email" \
-  --value "therealidallasj@gmail.com"
+  --value "agentshroud.ai@gmail.com"
 ```
 
 ### Step 3: Load Persona (Optional)
@@ -174,7 +174,7 @@ Generate SSH keys for the bot:
 
 ```bash
 # Generate SSH key pair inside container
-docker compose -f docker/docker-compose.yml exec -u node openclaw ssh-keygen -t ed25519 -f /home/node/.ssh/id_ed25519 -N "" -C "therealidallasj@bot"
+docker compose -f docker/docker-compose.yml exec -u node openclaw ssh-keygen -t ed25519 -f /home/node/.ssh/id_ed25519 -N "" -C "agentshroud.ai@bot"
 
 # Get the public key to add to target systems
 docker compose -f docker/docker-compose.yml exec openclaw cat /home/node/.ssh/id_ed25519.pub

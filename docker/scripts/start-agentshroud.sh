@@ -64,7 +64,7 @@ if op_authenticate 2>/dev/null; then
     # Security trade-off (Finding 7): these values live in the process environment for
     # the container lifetime. get-credential.sh fast-paths from these env vars without
     # calling 1Password, so callers must never log the return value of get-credential.
-    # Item ID: he6wcfkfieekqkomuxdunal2xa (Gmail - therealidallasj)
+    # Item ID: he6wcfkfieekqkomuxdunal2xa (Gmail - agentshroud.ai)
     GMAIL_APP_PASSWORD="$(op read --session "$OP_SESSION" \
         "op://AgentShroud Bot Credentials/he6wcfkfieekqkomuxdunal2xa/agentshroud bot password" 2>/dev/null)" || true
     if [ -n "$GMAIL_APP_PASSWORD" ]; then

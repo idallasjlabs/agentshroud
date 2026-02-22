@@ -7,7 +7,7 @@
 
 ## Current Situation
 
-The bot's 1Password account (therealidallasj@gmail.com) is now working! The signin is successful and the bot can access its own "Private" vault.
+The bot's 1Password account (agentshroud.ai@gmail.com) is now working! The signin is successful and the bot can access its own "Private" vault.
 
 However, the "AgentShroud Bot Credentials" vault is **not visible** to the bot yet. This means the vault sharing step hasn't been completed.
 
@@ -27,7 +27,7 @@ Items in Private vault:
 Available vaults: Private, AgentShroud Bot Credentials
 
 Items in AgentShroud Bot Credentials vault:
-- Gmail - therealidallasj (with username, password, TOTP)
+- Gmail - agentshroud.ai (with username, password, TOTP)
 - [Any other credentials you want the bot to access]
 ```
 
@@ -42,7 +42,7 @@ You need to share the "AgentShroud Bot Credentials" vault from **your main 1Pass
 If you already created "AgentShroud Bot Credentials" vault in your main account:
 
 1. **Sign in to your main 1Password account** at https://my.1password.com
-   - Use your personal email (not therealidallasj@gmail.com)
+   - Use your personal email (not agentshroud.ai@gmail.com)
 
 2. **Go to the vault**:
    - Click "Vaults" in the sidebar
@@ -51,7 +51,7 @@ If you already created "AgentShroud Bot Credentials" vault in your main account:
 3. **Share the vault**:
    - Click the vault settings (gear icon)
    - Click "Manage Access" or "Share Vault"
-   - Add: `therealidallasj@gmail.com` (the bot's account)
+   - Add: `agentshroud.ai@gmail.com` (the bot's account)
    - Grant: **Read-only** access (bot doesn't need to edit)
 
 4. **Confirm sharing**:
@@ -72,8 +72,8 @@ If you haven't created the vault yet:
 3. **Add credentials**:
    - Click "New Item" in the vault
    - Add Gmail credentials:
-     - Title: `Gmail - therealidallasj`
-     - Username: `therealidallasj@gmail.com`
+     - Title: `Gmail - agentshroud.ai`
+     - Username: `agentshroud.ai@gmail.com`
      - Password: [Your Gmail app password]
      - TOTP: [Your 2FA secret if needed]
 
@@ -84,15 +84,15 @@ If you haven't created the vault yet:
 Alternative approach - just add credentials to the bot's existing "Private" vault:
 
 1. **Sign in as the bot** at https://my.1password.com
-   - Email: `therealidallasj@gmail.com`
+   - Email: `agentshroud.ai@gmail.com`
    - Master Password: [the one you created]
    - Secret Key: `A3-5Q7Q4G-9P59AL-CK3QN-83KVZ-VC8GL-BPV8H`
 
 2. **Add credentials to Private vault**:
    - Click "New Item"
    - Add Gmail credentials:
-     - Title: `Gmail - therealidallasj`
-     - Username: `therealidallasj@gmail.com`
+     - Title: `Gmail - agentshroud.ai`
+     - Username: `agentshroud.ai@gmail.com`
      - Password: [Your Gmail app password]
      - TOTP: [Your 2FA secret if needed]
 
@@ -114,7 +114,7 @@ docker logs openclaw-bot 2>&1 | grep -E "\[startup\]|1Password"
 
 You should now see:
 ```
-[startup] Signing in to 1Password as therealidallasj@gmail.com...
+[startup] Signing in to 1Password as agentshroud.ai@gmail.com...
 [startup] ✓ Signed in to 1Password successfully
 [startup] ✓ 1Password vault access confirmed
 [startup] Available vaults: Private, AgentShroud Bot Credentials
@@ -132,7 +132,7 @@ docker exec openclaw-bot op vault list
 docker exec openclaw-bot op item list --vault "AgentShroud Bot Credentials"
 
 # Get Gmail password
-docker exec openclaw-bot op item get "Gmail - therealidallasj" \
+docker exec openclaw-bot op item get "Gmail - agentshroud.ai" \
   --vault "AgentShroud Bot Credentials" \
   --fields label=password
 ```
@@ -144,7 +144,7 @@ docker exec openclaw-bot op item get "Gmail - therealidallasj" \
 docker exec openclaw-bot op item list --vault "Private"
 
 # Get Gmail password
-docker exec openclaw-bot op item get "Gmail - therealidallasj" \
+docker exec openclaw-bot op item get "Gmail - agentshroud.ai" \
   --vault "Private" \
   --fields label=password
 ```

@@ -1,6 +1,6 @@
 # Telegram & Gmail Integration Guide
 
-**Goal**: Get @therealidallasj_bot working on Telegram and Gmail for full MVP functionality
+**Goal**: Get @agentshroud.ai_bot working on Telegram and Gmail for full MVP functionality
 **Status**: Telegram configured, Gmail needs setup
 
 ---
@@ -8,7 +8,7 @@
 ## Part 1: Test Telegram Bot
 
 ### ✅ Current Status
-- Bot: **@therealidallasj_bot** 
+- Bot: **@agentshroud.ai_bot** 
 - Status: **Running** (confirmed in logs)
 - Token: Configured
 - Pairing: Ready
@@ -16,7 +16,7 @@
 ### Test Now
 
 1. **Open Telegram** on any device (Mac, iPhone, iPad, etc.)
-2. **Search for**: `@therealidallasj_bot`
+2. **Search for**: `@agentshroud.ai_bot`
 3. **Send a message**: "Hello! Are you working?"
 4. **Wait for response**
 
@@ -101,7 +101,7 @@ Send a test email:
 3. Check your Gmail inbox
 
 **Via Telegram**:
-1. Message @therealidallasj_bot on Telegram
+1. Message @agentshroud.ai_bot on Telegram
 2. Say: "Send an email to your-email@gmail.com with subject 'Test' and say hello"
 3. Check your Gmail inbox
 
@@ -169,7 +169,7 @@ Check logs periodically:
 ### 5. Test Regularly
 
 **Weekly Test Checklist**:
-- [ ] Message @therealidallasj_bot on Telegram
+- [ ] Message @agentshroud.ai_bot on Telegram
 - [ ] Ask bot to send a test email
 - [ ] Check both API keys are working
 - [ ] Verify containers are healthy
@@ -239,7 +239,7 @@ docker compose -f docker/docker-compose.yml exec openclaw openclaw pairing appro
 
 You need to start a conversation first:
 1. Open Telegram
-2. Search @therealidallasj_bot
+2. Search @agentshroud.ai_bot
 3. Click **START** or **/start**
 4. Try messaging again
 
@@ -297,7 +297,7 @@ echo ""
 echo "=== Test Complete ==="
 echo ""
 echo "Next steps:"
-echo "1. Message @therealidallasj_bot on Telegram"
+echo "1. Message @agentshroud.ai_bot on Telegram"
 echo "2. Ask bot to send a test email"
 echo "3. Verify both work"
 ```
@@ -344,7 +344,7 @@ After upgrading:
 - OpenClaw containers healthy
 - OpenAI API configured
 - Anthropic API configured
-- Telegram bot @therealidallasj_bot running
+- Telegram bot @agentshroud.ai_bot running
 - Safari and Chrome connected
 
 ⏳ **Needs Setup**:
@@ -357,7 +357,7 @@ After upgrading:
 ./docker/scripts/check-status.sh
 
 # Test Telegram
-# (Message @therealidallasj_bot on Telegram)
+# (Message @agentshroud.ai_bot on Telegram)
 
 # Add Gmail
 docker compose -f docker/docker-compose.yml exec openclaw \
@@ -384,4 +384,4 @@ docker compose -f docker/docker-compose.yml exec openclaw \
 
 ---
 
-**Next**: Test @therealidallasj_bot on Telegram, then set up Gmail following Part 2!
+**Next**: Test @agentshroud.ai_bot on Telegram, then set up Gmail following Part 2!

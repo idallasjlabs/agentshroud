@@ -1,6 +1,6 @@
 # Apple Services Setup Guide
 
-**Apple ID**: therealidallasj@gmail.com
+**Apple ID**: agentshroud.ai@gmail.com
 **Purpose**: Shared Apple services for AgentShroud bot usage
 
 ---
@@ -12,8 +12,8 @@
 Server: imap.mail.me.com
 Port: 993
 Security: SSL/TLS
-Username: therealidallasj@gmail.com
-Password: [From 1Password: Apple ID - therealidallasj]
+Username: agentshroud.ai@gmail.com
+Password: [From 1Password: Apple ID - agentshroud.ai]
 ```
 
 ### SMTP Settings (Outgoing Mail)
@@ -21,8 +21,8 @@ Password: [From 1Password: Apple ID - therealidallasj]
 Server: smtp.mail.me.com
 Port: 587
 Security: STARTTLS
-Username: therealidallasj@gmail.com
-Password: [From 1Password: Apple ID - therealidallasj]
+Username: agentshroud.ai@gmail.com
+Password: [From 1Password: Apple ID - agentshroud.ai]
 ```
 
 **Note**: You may need to generate an app-specific password at https://appleid.apple.com if 2FA is enabled.
@@ -36,8 +36,8 @@ Password: [From 1Password: Apple ID - therealidallasj]
 Server: caldav.icloud.com
 Port: 443
 Security: SSL
-Username: therealidallasj@gmail.com
-Password: [From 1Password: Apple ID - therealidallasj]
+Username: agentshroud.ai@gmail.com
+Password: [From 1Password: Apple ID - agentshroud.ai]
 Path: /[your-calendar-id]/
 ```
 
@@ -67,8 +67,8 @@ Path: /[your-calendar-id]/
 Server: contacts.icloud.com
 Port: 443
 Security: SSL
-Username: therealidallasj@gmail.com
-Password: [From 1Password: Apple ID - therealidallasj]
+Username: agentshroud.ai@gmail.com
+Password: [From 1Password: Apple ID - agentshroud.ai]
 Path: /[your-contacts-id]/
 ```
 
@@ -87,7 +87,7 @@ If you enable 2FA on the Apple ID (recommended), you'll need app-specific passwo
 - Sign in
 - Go to Security section
 - Generate app-specific password
-- Store in 1Password under "Apple ID - therealidallasj" with label "openclaw bot password"
+- Store in 1Password under "Apple ID - agentshroud.ai" with label "openclaw bot password"
 
 ---
 
@@ -100,7 +100,7 @@ import imaplib
 import smtplib
 
 # Retrieve credentials from 1Password
-email = "therealidallasj@gmail.com"
+email = "agentshroud.ai@gmail.com"
 password = get_credential("apple-app-password")
 
 # Connect to IMAP
@@ -119,7 +119,7 @@ smtp.login(email, password)
 import caldav
 
 # Retrieve credentials from 1Password
-username = "therealidallasj@gmail.com"
+username = "agentshroud.ai@gmail.com"
 password = get_credential("apple-app-password")
 
 # Connect to CalDAV
@@ -139,7 +139,7 @@ import vobject
 import requests
 
 # Retrieve credentials from 1Password
-username = "therealidallasj@gmail.com"
+username = "agentshroud.ai@gmail.com"
 password = get_credential("apple-app-password")
 
 # CardDAV operations
@@ -153,7 +153,7 @@ password = get_credential("apple-app-password")
 ### Apple ID Creation
 - [ ] Go to https://account.apple.com/account
 - [ ] Click "Create Your Apple ID"
-- [ ] Use email: therealidallasj@gmail.com
+- [ ] Use email: agentshroud.ai@gmail.com
 - [ ] Use password from 1Password
 - [ ] Verify email (check Gmail)
 - [ ] Set up security questions
@@ -194,9 +194,9 @@ password = get_credential("apple-app-password")
 All Apple credentials stored in:
 ```
 1Password: AgentShroud Bot Credentials vault
-Item: Apple ID - therealidallasj
+Item: Apple ID - agentshroud.ai
 Fields:
-  - username: therealidallasj@gmail.com
+  - username: agentshroud.ai@gmail.com
   - password: [main Apple ID password]
   - openclaw bot password: [app-specific password for bot]
 ```

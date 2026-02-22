@@ -177,7 +177,7 @@ Maintain clear visual hierarchy:
 ## Contact
 
 **Brand Inquiries:**
-- Email: therealidallasj@gmail.com
+- Email: agentshroud.ai@gmail.com
 - Repository: github.com/idallasj/agentshroud
 
 **Asset Requests:**

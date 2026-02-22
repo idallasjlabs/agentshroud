@@ -1,7 +1,7 @@
 # API Keys Setup Guide
 
 **System**: OpenClaw + AgentShroud Gateway
-**Bot**: @therealidallasj_bot
+**Bot**: @agentshroud.ai_bot
 **Last Updated**: 2026-02-15
 
 ---
@@ -152,13 +152,13 @@ Both should show checkmarks, not "Missing auth".
 
 ## Step 6: Add Telegram Bot
 
-Now add your @therealidallasj_bot to OpenClaw:
+Now add your @agentshroud.ai_bot to OpenClaw:
 
 1. **Get the token from @BotFather**:
-   - Open Telegram as @therealidallasj (you)
+   - Open Telegram as @agentshroud.ai (you)
    - Message **@BotFather**
    - Send: `/mybots`
-   - Select: `@therealidallasj_bot`
+   - Select: `@agentshroud.ai_bot`
    - Click: **API Token**
    - Copy the full token
 
@@ -185,8 +185,8 @@ docker compose -f docker/docker-compose.yml exec openclaw \
 
 ### Test via Telegram
 
-1. Open Telegram as **@therealidallasj** (you)
-2. Search for and message **@therealidallasj_bot** (your bot)
+1. Open Telegram as **@agentshroud.ai** (you)
+2. Search for and message **@agentshroud.ai_bot** (your bot)
 3. Send: "Hello! Can you hear me?"
 4. Wait for AI response
 
@@ -296,7 +296,7 @@ docker compose -f docker/docker-compose.yml exec openclaw openclaw channels list
 - [ ] Add both providers via Control UI or CLI
 - [ ] Set default model
 - [ ] Verify both providers show as configured
-- [ ] Get bot token from @BotFather for @therealidallasj_bot
+- [ ] Get bot token from @BotFather for @agentshroud.ai_bot
 - [ ] Add Telegram channel with token
 - [ ] Approve Telegram pairing
 - [ ] Test bot via Telegram
@@ -304,4 +304,4 @@ docker compose -f docker/docker-compose.yml exec openclaw openclaw channels list
 
 ---
 
-**Next**: Once setup is complete, you can message @therealidallasj_bot from any device (Mac, iPhone, iPad, Apple Watch) and get AI responses!
+**Next**: Once setup is complete, you can message @agentshroud.ai_bot from any device (Mac, iPhone, iPad, Apple Watch) and get AI responses!

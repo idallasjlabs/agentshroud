@@ -1,7 +1,7 @@
 # Google Services Setup - Calendar, Contacts, Keep
 
 **Date**: 2026-02-16
-**Account**: therealidallasj@gmail.com
+**Account**: agentshroud.ai@gmail.com
 **Purpose**: Shared Google services for AgentShroud bot
 
 ---
@@ -21,7 +21,7 @@
 **CalDAV URL**: `https://apidata.googleusercontent.com/caldav/v2/`
 
 **Authentication**:
-- Username: `therealidallasj@gmail.com`
+- Username: `agentshroud.ai@gmail.com`
 - Password: [App password from 1Password]
 
 ### Python Integration
@@ -31,7 +31,7 @@ import caldav
 from datetime import datetime
 
 # Retrieve credentials from 1Password
-username = "therealidallasj@gmail.com"
+username = "agentshroud.ai@gmail.com"
 password = get_credential("gmail-app-password")
 
 # Connect to Google Calendar via CalDAV
@@ -81,10 +81,10 @@ gcalcli quick "Lunch with team next Monday at noon"
 
 ### Server Settings
 
-**CardDAV URL**: `https://www.googleapis.com/carddav/v1/principals/therealidallasj@gmail.com/lists/default/`
+**CardDAV URL**: `https://www.googleapis.com/carddav/v1/principals/agentshroud.ai@gmail.com/lists/default/`
 
 **Authentication**:
-- Username: `therealidallasj@gmail.com`
+- Username: `agentshroud.ai@gmail.com`
 - Password: [App password from 1Password]
 
 ### Python Integration
@@ -94,7 +94,7 @@ import vobject
 import requests
 from requests.auth import HTTPBasicAuth
 
-username = "therealidallasj@gmail.com"
+username = "agentshroud.ai@gmail.com"
 password = get_credential("gmail-app-password")
 
 # CardDAV endpoint
@@ -155,7 +155,7 @@ pip3 install gkeepapi
 import gkeepapi
 
 keep = gkeepapi.Keep()
-success = keep.login('therealidallasj@gmail.com', 'password')
+success = keep.login('agentshroud.ai@gmail.com', 'password')
 
 # Create note
 note = keep.createNote('My Title', 'My note content')
@@ -226,7 +226,7 @@ import caldav
 
 client = caldav.DAVClient(
     url="https://apidata.googleusercontent.com/caldav/v2/",
-    username="therealidallasj@gmail.com",
+    username="agentshroud.ai@gmail.com",
     password="nkcy luwd cwou zimj"
 )
 
@@ -251,7 +251,7 @@ docker exec openclaw-bot python3 << 'PYTHON'
 import requests
 from requests.auth import HTTPBasicAuth
 
-username = "therealidallasj@gmail.com"
+username = "agentshroud.ai@gmail.com"
 password = "nkcy luwd cwou zimj"
 
 url = f"https://www.googleapis.com/carddav/v1/principals/{username}/lists/default/"
@@ -388,7 +388,7 @@ docker exec openclaw-bot python3 -c "
 import caldav
 client = caldav.DAVClient(
     url='https://apidata.googleusercontent.com/caldav/v2/',
-    username='therealidallasj@gmail.com',
+    username='agentshroud.ai@gmail.com',
     password='nkcy luwd cwou zimj'
 )
 print('Calendars:', [c.name for c in client.principal().calendars()])

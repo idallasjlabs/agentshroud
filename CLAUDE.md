@@ -104,7 +104,7 @@ without disrupting the agent's native workflow.
   for dangerous actions
 
 **Bot Container (`docker/`)**
-- OpenClaw-based autonomous agent (therealidallasj bot, runs on macOS Docker)
+- OpenClaw-based autonomous agent (agentshroud.ai bot, runs on macOS Docker)
 - Cron jobs, Telegram channel, 1Password credential integration
 - Baked-in config bootstrapped by init script on every startup
 
