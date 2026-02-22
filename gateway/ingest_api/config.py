@@ -90,6 +90,16 @@ class ApprovalQueueConfig(BaseModel):
     timeout_seconds: int = 3600  # 1 hour
 
 
+class ChannelsConfig(BaseModel):
+    """Channel ownership configuration (P3: Telegram + email oversight)"""
+
+    email_enabled: bool = True
+    email_allowed_recipients: list[str] = Field(default_factory=list)
+    email_rate_limit_per_hour: int = 10
+    email_require_approval_for_new: bool = True
+    telegram_enabled: bool = True
+
+
 class GatewayConfig(BaseModel):
     """Complete gateway configuration"""
 
@@ -110,6 +120,7 @@ class GatewayConfig(BaseModel):
     pii: PIIConfig = Field(default_factory=PIIConfig)
     approval_queue: ApprovalQueueConfig = Field(default_factory=ApprovalQueueConfig)
     log_level: str = "INFO"
+    channels: ChannelsConfig = Field(default_factory=ChannelsConfig)
     ssh: SSHConfig = Field(default_factory=SSHConfig)
 
 
@@ -247,6 +258,18 @@ def load_config(config_path: Path | None = None) -> GatewayConfig:
             + "=" * 80
         )
 
+    # Map channels configuration
+    channels_raw = raw_config.get("channels", {})
+    email_raw = channels_raw.get("email", {}) if isinstance(channels_raw, dict) else {}
+    telegram_raw = channels_raw.get("telegram", {}) if isinstance(channels_raw, dict) else {}
+    channels_config = ChannelsConfig(
+        email_enabled=email_raw.get("enabled", True),
+        email_allowed_recipients=email_raw.get("allowed_recipients", []),
+        email_rate_limit_per_hour=email_raw.get("rate_limit_per_hour", 10),
+        email_require_approval_for_new=email_raw.get("require_approval_for_new", True),
+        telegram_enabled=telegram_raw.get("enabled", True),
+    )
+
     # Build final config
     # Map SSH configuration — use Pydantic model parsing directly
     ssh_section = raw_config.get("ssh", {})
@@ -262,6 +285,7 @@ def load_config(config_path: Path | None = None) -> GatewayConfig:
         pii=pii_config,
         approval_queue=approval_config,
         log_level=raw_config.get("logging", {}).get("level", "INFO"),
+        channels=channels_config,
         ssh=ssh_config,
     )
 
