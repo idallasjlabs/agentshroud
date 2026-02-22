@@ -92,6 +92,37 @@ if (!hasBinding) {
   changed = true;
 }
 
+// ── Patch 3: mcpServers — wrap all MCP server commands with the AgentShroud proxy ──
+
+// Wraps each MCP server command so that all tools/call traffic is routed through
+// the AgentShroud gateway for inspection, PII scanning, and audit logging.
+// Idempotent: already-wrapped entries are left untouched.
+
+const MCP_WRAPPER = '/usr/local/bin/mcp-proxy-wrapper.js';
+
+config.mcpServers = config.mcpServers || {};
+
+for (const [name, server] of Object.entries(config.mcpServers)) {
+  // Skip entries that are already wrapped (command is Node or wrapper itself)
+  const cmd = server.command || '';
+  if (cmd === 'node' && Array.isArray(server.args) && server.args[0] === MCP_WRAPPER) {
+    continue; // already wrapped
+  }
+  if (cmd === MCP_WRAPPER) {
+    continue; // already wrapped (direct invocation)
+  }
+
+  // Wrap: node mcp-proxy-wrapper.js <server-name> -- <original-command> [original-args...]
+  const originalArgs = Array.isArray(server.args) ? server.args : [];
+  config.mcpServers[name] = {
+    ...server,
+    command: 'node',
+    args: [MCP_WRAPPER, name, '--', cmd, ...originalArgs],
+  };
+  console.log(`[init-patch] Wrapped MCP server '${name}' with AgentShroud proxy`);
+  changed = true;
+}
+
 // ── Write back ────────────────────────────────────────────────────────────────
 
 if (changed || isNew) {

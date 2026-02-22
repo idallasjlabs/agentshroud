@@ -77,6 +77,7 @@ COPY docker/scripts/get-credential.sh /usr/local/bin/get-credential
 COPY docker/scripts/1password-skill.sh /usr/local/bin/1password-skill
 COPY docker/scripts/entrypoint-agentshroud.sh /usr/local/bin/entrypoint-agentshroud.sh
 COPY docker/scripts/init-openclaw-config.sh /usr/local/bin/init-openclaw-config.sh
+COPY docker/scripts/mcp-proxy-wrapper.js /usr/local/bin/mcp-proxy-wrapper.js
 
 # Bake in OpenClaw config defaults (cron jobs, agent patches)
 # Applied to the volume on every startup by init-openclaw-config.sh
@@ -92,7 +93,8 @@ RUN chmod +x /usr/local/bin/security-entrypoint.sh \
     /usr/local/bin/get-credential \
     /usr/local/bin/1password-skill \
     /usr/local/bin/entrypoint-agentshroud.sh \
-    /usr/local/bin/init-openclaw-config.sh
+    /usr/local/bin/init-openclaw-config.sh \
+    /usr/local/bin/mcp-proxy-wrapper.js
 
 # Copy documentation
 COPY docker/bot-capabilities.md /app/bot-capabilities.md
