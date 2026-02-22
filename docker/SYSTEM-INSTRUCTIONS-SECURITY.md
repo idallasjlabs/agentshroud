@@ -364,6 +364,11 @@ The bot can access and USE credentials but will NEVER display them where they co
 
 ---
 
-**Last Updated:** 2026-02-16
+**Last Updated:** 2026-02-22
 **Approach:** Ultra-Conservative (Never in chat)
 **Status:** Active and Enforced
+
+---
+
+AgentShroud™ is a trademark of Isaiah Dallas Jefferson, Jr., first used in February 2026. Protected by common law trademark rights. Federal trademark registration pending. Unauthorized reproduction, distribution, or use of the AgentShroud name or brand is strictly prohibited.
+© 2026 Isaiah Dallas Jefferson, Jr.. All rights reserved.
