@@ -72,19 +72,19 @@ class ResourceGuard:
         while self.monitoring_active:
             try:
                 await asyncio.sleep(10)  # Check every 10 seconds
-                await self._check_system_resources()
+                self._check_system_resources()
                 self._cleanup_expired_usage()
             except Exception as e:
                 logger.error(f"Resource monitoring error: {e}")
 
-    async def _check_system_resources(self):
-        """Check system-wide resource usage for anomalies."""
+    def _check_system_resources(self):
+        """Check system-wide resource usage for anomalies (synchronous)."""
         try:
             cpu_percent = psutil.cpu_percent(interval=1)
             memory_percent = psutil.virtual_memory().percent
 
             if cpu_percent > self.limits.alert_cpu_spike_threshold:
-                await self._trigger_alert(
+                self._alert_high_usage(
                     "cpu_spike",
                     {
                         "cpu_percent": cpu_percent,
@@ -93,7 +93,7 @@ class ResourceGuard:
                 )
 
             if memory_percent > self.limits.alert_memory_spike_threshold:
-                await self._trigger_alert(
+                self._alert_high_usage(
                     "memory_spike",
                     {
                         "memory_percent": memory_percent,
@@ -103,23 +103,82 @@ class ResourceGuard:
         except Exception as e:
             logger.error(f"System resource check failed: {e}")
 
-    async def _trigger_alert(self, alert_type: str, data: Dict[str, Any]):
-        """Trigger resource usage alert."""
+    def _alert_high_usage(self, alert_type: str, data: Dict[str, Any]):
+        """Trigger a resource usage alert synchronously."""
         alert_data = {
             "type": alert_type,
             "timestamp": time.time(),
             "data": data,
             "source": "resource_guard",
         }
-
         for callback in self.alert_callbacks:
             try:
-                if asyncio.iscoroutinefunction(callback):
-                    await callback(alert_data)
-                else:
-                    callback(alert_data)
+                callback(alert_data)
             except Exception as e:
                 logger.error(f"Alert callback failed: {e}")
+
+    def check_resource(
+        self, agent_id: str, resource_type: str, amount: int
+    ) -> tuple[bool, str]:
+        """Check if resource usage is allowed for an agent.
+
+        Args:
+            agent_id: Unique agent identifier
+            resource_type: Type of resource ('disk_writes_mb', 'temp_files', 'requests')
+            amount: Amount to check/add
+
+        Returns:
+            Tuple of (allowed: bool, reason: str)
+        """
+        try:
+            usage = self.usage_by_agent[agent_id]
+
+            # Reset sliding window if expired (60 seconds)
+            if time.time() - usage.last_reset > 60:
+                usage.disk_writes_mb = 0.0
+                usage.request_count = 0
+                usage.last_reset = time.time()
+
+            if resource_type == "disk_writes_mb":
+                total = usage.disk_writes_mb + amount
+                if total > self.limits.max_disk_writes_mb_per_minute:
+                    return (
+                        False,
+                        f"Agent {agent_id} disk_writes_mb ({total:.1f}) exceeds limit ({self.limits.max_disk_writes_mb_per_minute})",
+                    )
+                usage.disk_writes_mb = total
+                return True, ""
+
+            elif resource_type == "temp_files":
+                total = usage.temp_files_count + amount
+                if total > self.limits.max_temp_files:
+                    return (
+                        False,
+                        f"Agent {agent_id} temp_files ({total}) exceeds limit ({self.limits.max_temp_files})",
+                    )
+                usage.temp_files_count = total
+                return True, ""
+
+            elif resource_type == "requests":
+                total = usage.request_count + amount
+                if total > self.limits.max_requests_per_minute:
+                    return (
+                        False,
+                        f"Agent {agent_id} requests ({total}) exceeds limit ({self.limits.max_requests_per_minute})",
+                    )
+                usage.request_count = total
+                return True, ""
+
+            else:
+                raise ValueError(f"Unknown resource type: {resource_type}")
+
+        except ValueError:
+            raise
+        except Exception as e:
+            logger.error(
+                f"Error checking resource {resource_type} for agent {agent_id}: {e}"
+            )
+            return False, f"Error checking resource: {e}"
 
     def _cleanup_expired_usage(self):
         """Clean up old usage data (older than 5 minutes)."""
@@ -292,60 +351,3 @@ def setup_resource_guard(limits: Optional[ResourceLimits] = None) -> ResourceGua
     global global_resource_guard
     global_resource_guard = ResourceGuard(limits)
     return global_resource_guard
-
-    def check_resource(
-        self, agent_id: str, resource_type: str, amount: int
-    ) -> tuple[bool, str]:
-        """
-        Check if resource usage is allowed for an agent.
-
-        Args:
-            agent_id: Unique agent identifier
-            resource_type: Type of resource ('disk_writes_mb', 'temp_files', 'requests')
-            amount: Amount to check/add
-
-        Returns:
-            Tuple of (allowed: bool, reason: str)
-        """
-        try:
-            if resource_type == "disk_writes_mb":
-                # Convert MB to bytes for internal tracking
-                if not self.check_disk_write_limit(agent_id):
-                    return False, f"Agent {agent_id} disk writes exceed limit"
-                return True, ""
-
-            elif resource_type == "temp_files":
-                # Check temp file limit
-                usage = self.usage_by_agent.get(agent_id, ResourceUsage())
-                current_count = usage.temp_files_count
-                if current_count + amount > self.limits.max_temp_files:
-                    return (
-                        False,
-                        f"Agent {agent_id} temp_files ({current_count + amount}) exceeds limit ({self.limits.max_temp_files})",
-                    )
-                return True, ""
-
-            elif resource_type == "requests":
-                # Check request rate limit
-                usage = self.usage_by_agent.get(agent_id, ResourceUsage())
-                current_requests = usage.request_count
-                if current_requests + amount > self.limits.max_requests_per_minute:
-                    return (
-                        False,
-                        f"Agent {agent_id} requests ({current_requests + amount}) exceeds limit ({self.limits.max_requests_per_minute})",
-                    )
-
-                # Update request count
-                if agent_id not in self.usage_by_agent:
-                    self.usage_by_agent[agent_id] = ResourceUsage()
-                self.usage_by_agent[agent_id].request_count += amount
-                return True, ""
-
-            else:
-                return False, f"Unknown resource type: {resource_type}"
-
-        except Exception as e:
-            logger.error(
-                f"Error checking resource {resource_type} for agent {agent_id}: {e}"
-            )
-            return False, f"Error checking resource: {e}"
