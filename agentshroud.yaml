@@ -50,6 +50,22 @@ gateway:
   router_enabled: true
   default_agent: "general"
 
+proxy:
+  # HTTP CONNECT proxy — intercepts all bot outbound traffic (activated in FINAL PR)
+  # The proxy server starts on port 8181 now. The bot uses it only after
+  # HTTP_PROXY=http://gateway:8181 is set in docker-compose.yml (FINAL PR).
+  mode: allowlist  # default-deny: only listed domains can connect
+  listen_port: 8181
+  allowed_domains:
+    - api.openai.com
+    - api.anthropic.com
+    - api.telegram.org
+    - oauth2.googleapis.com
+    - www.googleapis.com
+    - gmail.googleapis.com
+    - "*.github.com"
+    - "*.githubusercontent.com"
+
 container:
   # Container runtime
   runtime: "podman"  # Options: podman, docker

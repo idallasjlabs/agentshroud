@@ -551,3 +551,85 @@ class TestWebProxyConfig:
 
     def test_passthrough_mode_default_off(self, config):
         assert not config.passthrough_mode
+
+
+# ============================================================
+# Allowlist Mode
+# ============================================================
+class TestAllowlistMode:
+    """Default-deny allowlist: unlisted domains are blocked."""
+
+    @pytest.fixture
+    def allowlist_config(self):
+        return WebProxyConfig(
+            mode="allowlist",
+            allowed_domains=["api.openai.com", "*.github.com"],
+        )
+
+    @pytest.fixture
+    def allowlist_proxy(self, allowlist_config, audit_chain):
+        return WebProxy(config=allowlist_config, audit_chain=audit_chain)
+
+    def test_listed_domain_passes(self, allowlist_proxy):
+        r = allowlist_proxy.check_request("https://api.openai.com/v1/chat")
+        assert not r.blocked
+
+    def test_unlisted_domain_blocked(self, allowlist_proxy):
+        r = allowlist_proxy.check_request("https://www.google.com/search?q=test")
+        assert r.blocked
+        assert "allowlist" in r.block_reason.lower()
+
+    def test_wildcard_subdomain_passes(self, allowlist_proxy):
+        r = allowlist_proxy.check_request("https://api.github.com/repos")
+        assert not r.blocked
+
+    def test_wildcard_deeper_subdomain_passes(self, allowlist_proxy):
+        r = allowlist_proxy.check_request("https://raw.github.com/user/repo/file")
+        assert not r.blocked
+
+    def test_ssrf_blocked_before_allowlist_check(self, allowlist_proxy):
+        r = allowlist_proxy.check_request("http://127.0.0.1:8080/")
+        assert r.blocked
+        assert r.is_ssrf
+
+    def test_denylist_mode_still_works(self, proxy):
+        """Default (denylist) mode is unchanged."""
+        r = proxy.check_request("https://evil.com/payload")
+        assert r.blocked
+        r2 = proxy.check_request("https://www.google.com/search?q=test")
+        assert not r2.blocked
+
+    def test_default_mode_is_denylist(self):
+        cfg = WebProxyConfig()
+        assert cfg.mode == "denylist"
+
+
+class TestIsDomainAllowed:
+    """Unit tests for WebProxyConfig.is_domain_allowed()."""
+
+    def test_exact_match(self):
+        cfg = WebProxyConfig(mode="allowlist", allowed_domains=["api.openai.com"])
+        assert cfg.is_domain_allowed("api.openai.com") is True
+        assert cfg.is_domain_allowed("other.openai.com") is False
+
+    def test_wildcard_matches_subdomain(self):
+        cfg = WebProxyConfig(mode="allowlist", allowed_domains=["*.github.com"])
+        assert cfg.is_domain_allowed("api.github.com") is True
+        assert cfg.is_domain_allowed("raw.github.com") is True
+
+    def test_wildcard_matches_root_domain(self):
+        cfg = WebProxyConfig(mode="allowlist", allowed_domains=["*.example.com"])
+        assert cfg.is_domain_allowed("example.com") is True
+
+    def test_wildcard_does_not_match_other_root(self):
+        cfg = WebProxyConfig(mode="allowlist", allowed_domains=["*.example.com"])
+        assert cfg.is_domain_allowed("notexample.com") is False
+        assert cfg.is_domain_allowed("evil-example.com") is False
+
+    def test_case_insensitive(self):
+        cfg = WebProxyConfig(mode="allowlist", allowed_domains=["API.OpenAI.com"])
+        assert cfg.is_domain_allowed("api.openai.com") is True
+
+    def test_empty_allowlist_blocks_everything(self):
+        cfg = WebProxyConfig(mode="allowlist", allowed_domains=[])
+        assert cfg.is_domain_allowed("api.openai.com") is False

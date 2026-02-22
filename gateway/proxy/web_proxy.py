@@ -221,9 +221,25 @@ class WebProxy:
             result.processing_time_ms = (time.time() - start) * 1000
             return result
 
-        # Hard block: denied domain
+        # Hard block: domain policy check
         domain = url_result.domain
-        if domain and self.config.is_domain_denied(domain):
+        if self.config.mode == "allowlist":
+            # Default-deny: block unless explicitly listed
+            if not domain or not self.config.is_domain_allowed(domain):
+                result.action = ProxyAction.BLOCK
+                result.blocked = True
+                result.block_reason = f"Domain not in allowlist: {domain or url}"
+                self._stats["blocked"] += 1
+                self._stats["blocked_domain"] += 1
+                self._audit(
+                    "web_request_blocked_allowlist",
+                    url,
+                    {"method": method, "domain": domain or ""},
+                )
+                result.processing_time_ms = (time.time() - start) * 1000
+                return result
+        elif domain and self.config.is_domain_denied(domain):
+            # Default-allow: block only explicitly denied domains
             result.action = ProxyAction.BLOCK
             result.blocked = True
             result.block_reason = f"Domain denied: {domain}"
