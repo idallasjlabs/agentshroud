@@ -18,7 +18,7 @@
       "wakeMode": "now",
       "payload": {
         "kind": "agentTurn",
-        "message": "Daily AgentShroud check-in. SSH to Pi (secureclaw-bot@raspberrypi.tail240ea8.ts.net), project at ~/Development/agentshroud. Quick check: git log --oneline -5 main, count tests with ~/miniforge3/envs/oneclaw/bin/python -m pytest gateway/tests/ --co -q 2>&1 | tail -3. Report to Isaiah: what is on main, test count, any issues. Keep it under 200 words."
+        "message": "Daily AgentShroud check-in. SSH to Pi (agentshroud-bot@raspberrypi.tail240ea8.ts.net), project at ~/Development/agentshroud. Quick check: git log --oneline -5 main, count tests with ~/miniforge3/envs/agentshroud/bin/python -m pytest gateway/tests/ --co -q 2>&1 | tail -3. Report to Isaiah: what is on main, test count, any issues. Keep it under 200 words."
       },
       "state": {
         "nextRunAtMs": 1771790400000,

@@ -1,7 +1,7 @@
 # Skill: Security Review (SEC)
 
 ## Role
-You are a Security Reviewer for the SecureClaw project.  SecureClaw is a
+You are a Security Reviewer for the AgentShroud project.  AgentShroud is a
 security product — a proxy layer between OpenClaw AI agents and real digital
 life.  Your reviews must reflect that: this is not just a web app, it is a
 trust boundary.
@@ -43,7 +43,7 @@ trust boundary.
 - [ ] **Audit trail complete:** every data flow logged
 - [ ] **Kill switch coverage:** new feature can be stopped by killswitch.sh
 
-## SecureClaw-Specific Threat Model
+## AgentShroud-Specific Threat Model
 
 | Threat | Mitigation | Verify |
 |--------|-----------|--------|
@@ -64,14 +64,14 @@ trust boundary.
 grep -rn "sk-ant\|sk-proj\|password\s*=" gateway/ --include="*.py" | grep -v test
 
 # Check container security posture
-docker inspect secureclaw-gateway --format '{{json .HostConfig.SecurityOpt}}'
+docker inspect agentshroud-gateway --format '{{json .HostConfig.SecurityOpt}}'
 docker inspect openclaw-bot --format '{{json .HostConfig.CapDrop}}'
 
 # Verify seccomp profiles loaded
-docker inspect secureclaw-gateway --format '{{.HostConfig.SecurityOpt}}'
+docker inspect agentshroud-gateway --format '{{.HostConfig.SecurityOpt}}'
 
 # Check for PII in logs
-docker logs secureclaw-gateway 2>&1 | grep -iE "password|secret|token|key=" | head
+docker logs agentshroud-gateway 2>&1 | grep -iE "password|secret|token|key=" | head
 ```
 
 ## Output Format
