@@ -210,3 +210,44 @@ class SSHExecResponse(BaseModel):
     approved_by: str
     timestamp: str
     audit_id: str
+
+
+# === Channel Ownership Models (P3) ===
+
+
+class EmailSendRequest(BaseModel):
+    """Request to send an email through the gateway (P3: channel ownership).
+
+    The bot submits this to the gateway instead of calling Gmail directly.
+    Gateway validates recipient, scans body for PII, and either approves or
+    queues the send for human approval.
+    """
+
+    to: str = Field(..., description="Recipient email address")
+    subject: str = Field(..., description="Email subject")
+    body: str = Field(..., description="Email body text")
+    agent_id: str = Field(default="openclaw-main", description="Requesting agent")
+
+    @field_validator("subject")
+    @classmethod
+    def subject_not_empty(cls, v: str) -> str:
+        if not v.strip():
+            raise ValueError("subject must not be empty")
+        return v
+
+    @field_validator("body")
+    @classmethod
+    def body_not_empty(cls, v: str) -> str:
+        if not v.strip():
+            raise ValueError("body must not be empty")
+        return v
+
+
+class EmailSendResponse(BaseModel):
+    """Response from POST /email/send."""
+
+    status: str = Field(..., description="approved | queued | blocked")
+    sanitized_body: str | None = Field(None, description="Body after PII redaction")
+    pii_redacted: bool = Field(False, description="Whether PII was removed from body")
+    approval_id: str | None = Field(None, description="Approval queue ID if queued")
+    timestamp: str = Field(..., description="ISO 8601 timestamp")
