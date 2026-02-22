@@ -3,22 +3,30 @@
 ## Font Families
 
 ### Primary Typeface
-**To be defined**
+**Inter** — Finalized
 
-Recommended options:
-- **Inter** - Modern, highly legible, tech-friendly
-- **IBM Plex Sans** - Technical, open-source
-- **Space Grotesk** - Geometric, modern
-- **Montserrat** - Clean, professional
+- **Rationale:** Exceptional screen legibility, neutral technical voice, variable font support, and active maintenance. Used across all web and documentation surfaces since v0.5.0.
+- **License:** SIL Open Font License 1.1 — free for commercial use
+- **Source:** [rsms.me/inter](https://rsms.me/inter) · Google Fonts
+- **CSS stack:**
+  ```css
+  --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+  ```
+
+**Alternatives considered:** IBM Plex Sans (too corporate), Space Grotesk (too stylized for body text), Montserrat (better for display/marketing than UI)
 
 ### Monospace (Code/Technical)
-**To be defined**
+**JetBrains Mono** — Finalized
 
-Recommended options:
-- **JetBrains Mono** - Developer-focused
-- **Fira Code** - Ligature support
-- **IBM Plex Mono** - Pairs with IBM Plex Sans
-- **Source Code Pro** - Adobe, highly legible
+- **Rationale:** Developer-native, optimized for code readability, ligature support, and high x-height for terminal contexts. Pairs naturally with Inter.
+- **License:** SIL Open Font License 1.1 — free for commercial use
+- **Source:** [jetbrains.com/lp/mono](https://www.jetbrains.com/lp/mono) · Google Fonts
+- **CSS stack:**
+  ```css
+  --font-mono: 'JetBrains Mono', 'SF Mono', 'Cascadia Code', 'Fira Code', Consolas, monospace;
+  ```
+
+**Alternatives considered:** Fira Code (good ligatures but lower x-height), IBM Plex Mono (pairs with Plex Sans, not Inter), Source Code Pro (less distinctive in dark UI)
 
 ## Type Scale
 
@@ -94,4 +102,4 @@ Recommended options:
 
 ---
 
-**Last Updated:** 2026-02-20
+**Last Updated:** 2026-02-22
