@@ -7,7 +7,6 @@ Requires gateway authentication.
 from __future__ import annotations
 
 import asyncio
-import json
 import logging
 import platform
 import time
@@ -15,7 +14,14 @@ from datetime import datetime, timezone
 from pathlib import Path
 from typing import Any, Optional
 
-from fastapi import APIRouter, Depends, HTTPException, Query, Request, WebSocket, WebSocketDisconnect
+from fastapi import (
+    APIRouter,
+    Depends,
+    HTTPException,
+    Query,
+    WebSocket,
+    WebSocketDisconnect,
+)
 from fastapi.security import HTTPBearer, HTTPAuthorizationCredentials
 from pydantic import BaseModel
 
@@ -34,6 +40,7 @@ router = APIRouter(prefix="/api", tags=["management"])
 
 _bearer = HTTPBearer()
 
+
 async def require_auth(
     credentials: HTTPAuthorizationCredentials = Depends(_bearer),
 ) -> str:
@@ -43,19 +50,31 @@ async def require_auth(
         raise HTTPException(status_code=401, detail="Invalid token")
     return "authenticated"
 
+
 # --- Input validation ------------------------------------------------------
 
-VALID_SERVICES = frozenset({
-    "agentshroud-gateway", "agentshroud-openclaw", "falco", "wazuh-agent", "clamav",
-})
+VALID_SERVICES = frozenset(
+    {
+        "agentshroud-gateway",
+        "agentshroud-openclaw",
+        "falco",
+        "wazuh-agent",
+        "clamav",
+    }
+)
 
 VALID_KILLSWITCH_MODES = frozenset({"freeze", "shutdown", "disconnect"})
+
 
 def _validate_service_name(name: str) -> str:
     """Validate service name against allowlist to prevent injection."""
     if name not in VALID_SERVICES:
-        raise HTTPException(status_code=400, detail=f"Invalid service name. Must be one of: {sorted(VALID_SERVICES)}")
+        raise HTTPException(
+            status_code=400,
+            detail=f"Invalid service name. Must be one of: {sorted(VALID_SERVICES)}",
+        )
     return name
+
 
 # --- Models ----------------------------------------------------------------
 
@@ -98,17 +117,28 @@ async def get_status(user: str = Depends(require_auth)) -> dict:
 
     # System info
     import shutil
+
     disk = shutil.disk_usage("/")
 
     services = {}
-    service_names = ["agentshroud-gateway", "agentshroud-openclaw", "falco", "wazuh-agent", "clamav"]
+    service_names = [
+        "agentshroud-gateway",
+        "agentshroud-openclaw",
+        "falco",
+        "wazuh-agent",
+        "clamav",
+    ]
     container_map = {c.name: c for c in containers}
 
     for svc_name in service_names:
         if svc_name in container_map:
             c = container_map[svc_name]
             services[svc_name] = {
-                "status": "running" if "Up" in c.status or "running" in c.status.lower() else "stopped",
+                "status": (
+                    "running"
+                    if "Up" in c.status or "running" in c.status.lower()
+                    else "stopped"
+                ),
                 "image": c.image,
                 "id": c.id[:12],
                 "details": c.status,
@@ -189,13 +219,18 @@ async def restart_service(name: str, user: str = Depends(require_auth)) -> dict:
 
 
 @router.post("/killswitch/{mode}")
-async def killswitch(mode: str, action: KillSwitchAction, user: str = Depends(require_auth)) -> dict:
+async def killswitch(
+    mode: str, action: KillSwitchAction, user: str = Depends(require_auth)
+) -> dict:
     """Emergency kill switch: freeze, shutdown, or disconnect."""
     if not action.confirm:
         raise HTTPException(status_code=400, detail="Must confirm kill switch action")
 
     if mode not in VALID_KILLSWITCH_MODES:
-        raise HTTPException(status_code=400, detail=f"Mode must be one of: {sorted(VALID_KILLSWITCH_MODES)}")
+        raise HTTPException(
+            status_code=400,
+            detail=f"Mode must be one of: {sorted(VALID_KILLSWITCH_MODES)}",
+        )
 
     engine = _get_engine()
 
@@ -235,21 +270,39 @@ async def get_config(user: str = Depends(require_auth)) -> dict:
     config_path = Path("agentshroud.yaml")
     if config_path.exists():
         import yaml
-        return {"config": yaml.safe_load(config_path.read_text()), "path": str(config_path)}
+
+        return {
+            "config": yaml.safe_load(config_path.read_text()),
+            "path": str(config_path),
+        }
     return {"config": {}, "path": str(config_path), "exists": False}
 
 
 @router.put("/config")
-async def update_config(update: ConfigUpdate, user: str = Depends(require_auth)) -> dict:
+async def update_config(
+    update: ConfigUpdate, user: str = Depends(require_auth)
+) -> dict:
     """Update configuration (writes YAML and optionally restarts)."""
     import yaml
+
     config_path = Path("agentshroud.yaml")
 
     # Validate config keys against allowlist
-    ALLOWED_TOP_KEYS = {"runtime", "security", "services", "network", "logging", "approval", "pii", "egress"}
+    ALLOWED_TOP_KEYS = {
+        "runtime",
+        "security",
+        "services",
+        "network",
+        "logging",
+        "approval",
+        "pii",
+        "egress",
+    }
     unexpected = set(update.config.keys()) - ALLOWED_TOP_KEYS
     if unexpected:
-        raise HTTPException(status_code=400, detail=f"Unknown config keys: {sorted(unexpected)}")
+        raise HTTPException(
+            status_code=400, detail=f"Unknown config keys: {sorted(unexpected)}"
+        )
 
     # Backup current
     if config_path.exists():
@@ -261,7 +314,9 @@ async def update_config(update: ConfigUpdate, user: str = Depends(require_auth))
 
 
 @router.post("/config/import")
-async def import_config(update: ConfigUpdate, user: str = Depends(require_auth)) -> dict:
+async def import_config(
+    update: ConfigUpdate, user: str = Depends(require_auth)
+) -> dict:
     """Import configuration from uploaded data."""
     return await update_config(update)
 
@@ -298,10 +353,13 @@ async def rebuild(user: str = Depends(require_auth)) -> dict:
 async def check_openclaw_updates(user: str = Depends(require_auth)) -> dict:
     """Check for OpenClaw updates from GitHub."""
     import subprocess
+
     try:
         result = subprocess.run(
             ["npm", "view", "openclaw", "version"],
-            capture_output=True, text=True, timeout=30,
+            capture_output=True,
+            text=True,
+            timeout=30,
         )
         latest = result.stdout.strip() if result.returncode == 0 else "unknown"
     except Exception:
@@ -317,12 +375,16 @@ async def check_openclaw_updates(user: str = Depends(require_auth)) -> dict:
     return {
         "current": current,
         "latest": latest,
-        "update_available": current != latest and latest != "unknown" and current != "unknown",
+        "update_available": current != latest
+        and latest != "unknown"
+        and current != "unknown",
     }
 
 
 @router.post("/updates/openclaw/upgrade")
-async def upgrade_openclaw(req: UpdateRequest, user: str = Depends(require_auth)) -> dict:
+async def upgrade_openclaw(
+    req: UpdateRequest, user: str = Depends(require_auth)
+) -> dict:
     """Upgrade OpenClaw with security review."""
     # Safety: check kill switch state
     engine = _get_engine()
@@ -332,7 +394,9 @@ async def upgrade_openclaw(req: UpdateRequest, user: str = Depends(require_auth)
     try:
         # 1. Pull new image / update npm package
         steps.append({"step": "pull", "status": "running"})
-        engine.exec("agentshroud-openclaw", ["npm", "install", "-g", f"openclaw@{version}"])
+        engine.exec(
+            "agentshroud-openclaw", ["npm", "install", "-g", f"openclaw@{version}"]
+        )
         steps[-1]["status"] = "done"
 
         # 2. Restart
@@ -352,7 +416,10 @@ async def upgrade_openclaw(req: UpdateRequest, user: str = Depends(require_auth)
 async def rollback_openclaw(user: str = Depends(require_auth)) -> dict:
     """Rollback OpenClaw to previous version."""
     # This would restore from a backup image tag
-    return {"status": "rollback_initiated", "note": "Restoring previous container image"}
+    return {
+        "status": "rollback_initiated",
+        "note": "Restoring previous container image",
+    }
 
 
 @router.get("/updates/agentshroud")
@@ -364,33 +431,51 @@ async def check_agentshroud_updates(user: str = Depends(require_auth)) -> dict:
         # Current commit
         current = subprocess.run(
             ["git", "rev-parse", "--short", "HEAD"],
-            capture_output=True, text=True, timeout=10, cwd=".",
+            capture_output=True,
+            text=True,
+            timeout=10,
+            cwd=".",
         )
         current_hash = current.stdout.strip() if current.returncode == 0 else "unknown"
 
         # Current version from git tag
         tag_result = subprocess.run(
             ["git", "describe", "--tags", "--abbrev=0"],
-            capture_output=True, text=True, timeout=10, cwd=".",
+            capture_output=True,
+            text=True,
+            timeout=10,
+            cwd=".",
         )
-        current_version = tag_result.stdout.strip() if tag_result.returncode == 0 else "dev"
+        current_version = (
+            tag_result.stdout.strip() if tag_result.returncode == 0 else "dev"
+        )
 
         # Fetch latest from remote
-        subprocess.run(["git", "fetch", "--tags"], capture_output=True, timeout=30, cwd=".")
+        subprocess.run(
+            ["git", "fetch", "--tags"], capture_output=True, timeout=30, cwd="."
+        )
 
         # Check if behind
         behind = subprocess.run(
             ["git", "rev-list", "--count", "HEAD..origin/main"],
-            capture_output=True, text=True, timeout=10, cwd=".",
+            capture_output=True,
+            text=True,
+            timeout=10,
+            cwd=".",
         )
         commits_behind = int(behind.stdout.strip()) if behind.returncode == 0 else 0
 
         # Latest remote tag
         remote_tag = subprocess.run(
             ["git", "describe", "--tags", "--abbrev=0", "origin/main"],
-            capture_output=True, text=True, timeout=10, cwd=".",
+            capture_output=True,
+            text=True,
+            timeout=10,
+            cwd=".",
         )
-        latest_version = remote_tag.stdout.strip() if remote_tag.returncode == 0 else current_version
+        latest_version = (
+            remote_tag.stdout.strip() if remote_tag.returncode == 0 else current_version
+        )
 
     except Exception as e:
         return {"error": str(e)}
@@ -405,7 +490,9 @@ async def check_agentshroud_updates(user: str = Depends(require_auth)) -> dict:
 
 
 @router.post("/updates/agentshroud/upgrade")
-async def upgrade_agentshroud(req: UpdateRequest, user: str = Depends(require_auth)) -> dict:
+async def upgrade_agentshroud(
+    req: UpdateRequest, user: str = Depends(require_auth)
+) -> dict:
     """Pull latest AgentShroud, test, rebuild, restart. Auto-rollback on failure."""
     import subprocess
 
@@ -415,14 +502,22 @@ async def upgrade_agentshroud(req: UpdateRequest, user: str = Depends(require_au
     try:
         # 0. Record current commit for rollback
         result = subprocess.run(
-            ["git", "rev-parse", "HEAD"], capture_output=True, text=True, timeout=10, cwd="."
+            ["git", "rev-parse", "HEAD"],
+            capture_output=True,
+            text=True,
+            timeout=10,
+            cwd=".",
         )
         rollback_hash = result.stdout.strip()
 
         # 1. Git pull
         steps.append({"step": "git_pull", "status": "running"})
         pull = subprocess.run(
-            ["git", "pull", "--ff-only"], capture_output=True, text=True, timeout=60, cwd="."
+            ["git", "pull", "--ff-only"],
+            capture_output=True,
+            text=True,
+            timeout=60,
+            cwd=".",
         )
         if pull.returncode != 0:
             raise RuntimeError(f"git pull failed: {pull.stderr}")
@@ -432,7 +527,10 @@ async def upgrade_agentshroud(req: UpdateRequest, user: str = Depends(require_au
         steps.append({"step": "security_review", "status": "running"})
         diff = subprocess.run(
             ["git", "diff", "--name-only", f"{rollback_hash}..HEAD"],
-            capture_output=True, text=True, timeout=10, cwd="."
+            capture_output=True,
+            text=True,
+            timeout=10,
+            cwd=".",
         )
         changed_files = diff.stdout.strip().splitlines() if diff.returncode == 0 else []
         security_concerns = []
@@ -450,7 +548,10 @@ async def upgrade_agentshroud(req: UpdateRequest, user: str = Depends(require_au
             steps.append({"step": "run_tests", "status": "running"})
             tests = subprocess.run(
                 ["python", "-m", "pytest", "gateway/tests/", "-v", "--tb=short"],
-                capture_output=True, text=True, timeout=300, cwd="."
+                capture_output=True,
+                text=True,
+                timeout=300,
+                cwd=".",
             )
             if tests.returncode != 0:
                 raise RuntimeError(f"Tests failed:\n{tests.stdout}\n{tests.stderr}")
@@ -478,19 +579,32 @@ async def upgrade_agentshroud(req: UpdateRequest, user: str = Depends(require_au
             steps.append({"step": "rollback", "status": "running"})
             subprocess.run(
                 ["git", "reset", "--hard", rollback_hash],
-                capture_output=True, timeout=30, cwd="."
+                capture_output=True,
+                timeout=30,
+                cwd=".",
             )
             steps[-1]["status"] = "done"
 
-        return {"status": "failed", "error": str(e), "steps": steps, "rolled_back_to": rollback_hash}
+        return {
+            "status": "failed",
+            "error": str(e),
+            "steps": steps,
+            "rolled_back_to": rollback_hash,
+        }
 
 
 @router.post("/updates/agentshroud/rollback")
 async def rollback_agentshroud(user: str = Depends(require_auth)) -> dict:
     """Revert to previous git commit and rebuild."""
     import subprocess
+
     try:
-        subprocess.run(["git", "reset", "--hard", "HEAD~1"], capture_output=True, timeout=30, cwd=".")
+        subprocess.run(
+            ["git", "reset", "--hard", "HEAD~1"],
+            capture_output=True,
+            timeout=30,
+            cwd=".",
+        )
         engine = _get_engine()
         config = RuntimeConfig.from_env()
         engine.build("gateway/Dockerfile", "agentshroud-gateway:latest", ".")
@@ -506,10 +620,14 @@ async def update_history(user: str = Depends(require_auth)) -> dict:
     """Return update history from audit log."""
     # In production this reads from the data ledger
     import subprocess
+
     try:
         result = subprocess.run(
             ["git", "log", "--oneline", "-20"],
-            capture_output=True, text=True, timeout=10, cwd="."
+            capture_output=True,
+            text=True,
+            timeout=10,
+            cwd=".",
         )
         commits = result.stdout.strip().splitlines() if result.returncode == 0 else []
         return {"history": commits}
@@ -590,7 +708,9 @@ async def ws_logs(websocket: WebSocket, token: str = Query(default="")):
                 for svc in ["agentshroud-gateway", "agentshroud-openclaw"]:
                     try:
                         logs = engine.logs(svc, tail=5)
-                        await websocket.send_json({"service": svc, "logs": logs.splitlines()})
+                        await websocket.send_json(
+                            {"service": svc, "logs": logs.splitlines()}
+                        )
                     except Exception:
                         pass
             except Exception:
@@ -612,7 +732,7 @@ async def ws_updates(websocket: WebSocket, token: str = Query(default="")):
     await websocket.accept()
     try:
         while True:
-            data = await websocket.receive_text()
+            await websocket.receive_text()
             # Client can request update progress
             await websocket.send_json({"status": "connected"})
     except WebSocketDisconnect:

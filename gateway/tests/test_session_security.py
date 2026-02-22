@@ -1,19 +1,28 @@
 """Tests for session_security module.
 TDD: Written before implementation.
 """
+
 import pytest
 import time
-import sys, os
-sys.path.insert(0, os.path.join(os.path.dirname(__file__), '..'))
+import sys
+import os
+
+sys.path.insert(0, os.path.join(os.path.dirname(__file__), ".."))
 from security.session_security import (
-    SessionManager, Session, SessionError,
-    SessionExpired, SessionBindingError, EventInjectionError, RateLimitExceeded
+    SessionManager,
+    SessionError,
+    SessionExpired,
+    SessionBindingError,
+    EventInjectionError,
+    RateLimitExceeded,
 )
 
 
 @pytest.fixture
 def manager():
-    return SessionManager(max_session_age=3600, max_sessions_per_ip=10, rate_limit_window=60)
+    return SessionManager(
+        max_session_age=3600, max_sessions_per_ip=10, rate_limit_window=60
+    )
 
 
 class TestSessionCreation:
@@ -23,7 +32,9 @@ class TestSessionCreation:
         assert len(s.session_id) >= 32
 
     def test_session_id_is_cryptographically_random(self, manager):
-        ids = {manager.create_session(f"1.2.3.{i}", "UA").session_id for i in range(100)}
+        ids = {
+            manager.create_session(f"1.2.3.{i}", "UA").session_id for i in range(100)
+        }
         assert len(ids) == 100  # all unique
 
     def test_session_bound_to_identity(self, manager):
@@ -53,7 +64,9 @@ class TestSessionValidation:
             manager.validate_session("nonexistent", "1.2.3.4", "UA")
 
     def test_expired_session_rejected(self):
-        mgr = SessionManager(max_session_age=0, max_sessions_per_ip=10, rate_limit_window=60)
+        mgr = SessionManager(
+            max_session_age=0, max_sessions_per_ip=10, rate_limit_window=60
+        )
         s = mgr.create_session("1.2.3.4", "UA")
         time.sleep(0.01)
         with pytest.raises(SessionExpired):
@@ -95,20 +108,26 @@ class TestEventInjection:
 
 class TestRateLimiting:
     def test_rate_limit_exceeded(self):
-        mgr = SessionManager(max_session_age=3600, max_sessions_per_ip=3, rate_limit_window=60)
+        mgr = SessionManager(
+            max_session_age=3600, max_sessions_per_ip=3, rate_limit_window=60
+        )
         for _ in range(3):
             mgr.create_session("10.0.0.1", "UA")
         with pytest.raises(RateLimitExceeded):
             mgr.create_session("10.0.0.1", "UA")
 
     def test_different_ips_not_rate_limited(self):
-        mgr = SessionManager(max_session_age=3600, max_sessions_per_ip=2, rate_limit_window=60)
+        mgr = SessionManager(
+            max_session_age=3600, max_sessions_per_ip=2, rate_limit_window=60
+        )
         mgr.create_session("10.0.0.1", "UA")
         mgr.create_session("10.0.0.1", "UA")
         mgr.create_session("10.0.0.2", "UA")  # should succeed
 
     def test_rate_limit_resets_after_window(self):
-        mgr = SessionManager(max_session_age=3600, max_sessions_per_ip=1, rate_limit_window=0)
+        mgr = SessionManager(
+            max_session_age=3600, max_sessions_per_ip=1, rate_limit_window=0
+        )
         mgr.create_session("10.0.0.1", "UA")
         time.sleep(0.01)
         mgr.create_session("10.0.0.1", "UA")  # should succeed since window=0
@@ -116,7 +135,9 @@ class TestRateLimiting:
 
 class TestSessionCleanup:
     def test_cleanup_expired(self):
-        mgr = SessionManager(max_session_age=0, max_sessions_per_ip=100, rate_limit_window=60)
+        mgr = SessionManager(
+            max_session_age=0, max_sessions_per_ip=100, rate_limit_window=60
+        )
         for i in range(5):
             mgr.create_session(f"1.2.3.{i}", "UA")
         time.sleep(0.01)

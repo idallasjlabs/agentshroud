@@ -31,6 +31,7 @@ def tmp_version_db(monkeypatch):
     monkeypatch.setenv("VERSION_DB_PATH", path)
     # Also patch the module-level variable
     import gateway.tools.agentshroud_manager as mgr
+
     monkeypatch.setattr(mgr, "VERSION_DB_PATH", path)
     yield path
     os.unlink(path)

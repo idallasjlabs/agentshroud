@@ -8,9 +8,11 @@ Entry point for the gateway API. Wires together all components:
 - Authentication
 """
 
+import hashlib
 import logging
 import time
 from contextlib import asynccontextmanager
+from datetime import datetime, timezone
 from typing import Annotated
 
 import hmac
@@ -32,11 +34,15 @@ from .models import (
     ForwardResponse,
     LedgerEntry,
     LedgerQueryResponse,
+    SSHExecRequest,
+    SSHExecResponse,
     StatusResponse,
 )
+from ..ssh_proxy.proxy import SSHProxy
 from .router import ForwardError, MultiAgentRouter
 from .sanitizer import PIISanitizer
 from .event_bus import EventBus, make_event
+
 # Configure logging
 logging.basicConfig(
     level=logging.INFO,
@@ -47,6 +53,7 @@ logger = logging.getLogger("agentshroud.gateway.main")
 
 
 # === Application State ===
+
 
 class AppState:
     """Container for application-wide state"""
@@ -89,7 +96,9 @@ async def lifespan(app: FastAPI):
     # Initialize PII sanitizer
     try:
         app_state.sanitizer = PIISanitizer(app_state.config.pii)
-        logger.info(f"PII sanitizer initialized (mode: {app_state.sanitizer.get_mode()})")
+        logger.info(
+            f"PII sanitizer initialized (mode: {app_state.sanitizer.get_mode()})"
+        )
     except Exception as e:
         logger.critical(f"Failed to initialize PII sanitizer: {e}")
         raise
@@ -120,10 +129,9 @@ async def lifespan(app: FastAPI):
         raise
 
     # Initialize SSH proxy
-    from ..ssh_proxy.proxy import SSHProxy
     if app_state.config.ssh.enabled:
         app_state.ssh_proxy = SSHProxy(app_state.config.ssh)
-        logger.info('SSH proxy initialized')
+        logger.info("SSH proxy initialized")
     else:
         app_state.ssh_proxy = None
 
@@ -358,7 +366,9 @@ async def health_check():
     )
 
 
-@app.post("/forward", response_model=ForwardResponse, status_code=status.HTTP_201_CREATED)
+@app.post(
+    "/forward", response_model=ForwardResponse, status_code=status.HTTP_201_CREATED
+)
 async def forward_content(request: ForwardRequest, auth: AuthRequired):
     """Main ingest endpoint
 
@@ -441,17 +451,30 @@ async def forward_content(request: ForwardRequest, auth: AuthRequired):
         )
 
     # Emit forward event
-    await app_state.event_bus.emit(make_event(
-        "forward", f"Content forwarded from {request.source} to {forwarded_to}",
-        {"source": request.source, "content_type": request.content_type, "forwarded_to": forwarded_to},
-        "warning" if sanitized else "info"
-    ))
+    await app_state.event_bus.emit(
+        make_event(
+            "forward",
+            f"Content forwarded from {request.source} to {forwarded_to}",
+            {
+                "source": request.source,
+                "content_type": request.content_type,
+                "forwarded_to": forwarded_to,
+            },
+            "warning" if sanitized else "info",
+        )
+    )
     if sanitized:
-        await app_state.event_bus.emit(make_event(
-            "pii_detected", f"{len(sanitization_result.redactions)} PII entities redacted",
-            {"types": sanitization_result.entity_types_found, "count": len(sanitization_result.redactions)},
-            "warning"
-        ))
+        await app_state.event_bus.emit(
+            make_event(
+                "pii_detected",
+                f"{len(sanitization_result.redactions)} PII entities redacted",
+                {
+                    "types": sanitization_result.entity_types_found,
+                    "count": len(sanitization_result.redactions),
+                },
+                "warning",
+            )
+        )
 
     # Step 5: Return response
     response_data = {
@@ -466,10 +489,18 @@ async def forward_content(request: ForwardRequest, auth: AuthRequired):
 
     # Include agent response if available
     if agent_response:
+        # Step 5.0: Filter out Claude XML internal blocks
+        filtered_response, xml_was_filtered = app_state.sanitizer.filter_xml_blocks(
+            agent_response
+        )
+        if xml_was_filtered:
+            logger.info(
+                f"Filtered XML blocks from agent response for source={request.source}"
+            )
+
         # Step 5.1: Block credentials from being displayed via untrusted sources
         blocked_response, was_blocked = await app_state.sanitizer.block_credentials(
-            content=agent_response,
-            source=request.source
+            content=filtered_response, source=request.source
         )
 
         if was_blocked:
@@ -564,10 +595,13 @@ async def submit_approval_request(request: ApprovalRequest, auth: AuthRequired):
     Authentication required.
     """
     item = await app_state.approval_queue.submit(request)
-    await app_state.event_bus.emit(make_event(
-        "approval_submitted", f"Approval requested: {request.action_type} - {request.description}",
-        {"request_id": item.request_id, "action_type": request.action_type},
-    ))
+    await app_state.event_bus.emit(
+        make_event(
+            "approval_submitted",
+            f"Approval requested: {request.action_type} - {request.description}",
+            {"request_id": item.request_id, "action_type": request.action_type},
+        )
+    )
     return item
 
 
@@ -583,10 +617,13 @@ async def decide_approval(
         item = await app_state.approval_queue.decide(
             request_id=request_id, approved=decision.approved, reason=decision.reason
         )
-        await app_state.event_bus.emit(make_event(
-            "approval_decided", f"Approval {'approved' if decision.approved else 'rejected'}: {request_id}",
-            {"request_id": request_id, "approved": decision.approved},
-        ))
+        await app_state.event_bus.emit(
+            make_event(
+                "approval_decided",
+                f"Approval {'approved' if decision.approved else 'rejected'}: {request_id}",
+                {"request_id": request_id, "approved": decision.approved},
+            )
+        )
         return item
 
     except KeyError:
@@ -617,10 +654,9 @@ async def approval_websocket(websocket: WebSocket, token: str | None = Query(Non
     """
     if not token or not hmac.compare_digest(token, app_state.config.auth_token):
         await websocket.close(code=4003, reason="Authentication failed")
-        await app_state.event_bus.emit(make_event(
-            "auth_failed", "WebSocket authentication failed",
-            {}, "warning"
-        ))
+        await app_state.event_bus.emit(
+            make_event("auth_failed", "WebSocket authentication failed", {}, "warning")
+        )
         return
 
     await app_state.approval_queue.connect(websocket)
@@ -661,9 +697,7 @@ async def approval_websocket(websocket: WebSocket, token: str | None = Query(Non
                     )
 
                 except (KeyError, ValueError) as e:
-                    await websocket.send_json(
-                        {"type": "error", "message": str(e)}
-                    )
+                    await websocket.send_json({"type": "error", "message": str(e)})
 
     except Exception as e:
         logger.warning(f"WebSocket error: {e}")
@@ -680,7 +714,6 @@ if __name__ == "__main__":
     uvicorn.run(app, host="127.0.0.1", port=8080)
 
 
-
 # === Dashboard Endpoints ===
 
 
@@ -691,7 +724,6 @@ async def serve_dashboard(request: Request, token: str | None = Query(None)):
     On first auth via query param, sets an httpOnly cookie and redirects
     to a clean URL (token removed from query string / browser history).
     """
-    from starlette.responses import RedirectResponse
 
     # Check cookie first
     cookie_token = request.cookies.get("dashboard_token")
@@ -702,7 +734,10 @@ async def serve_dashboard(request: Request, token: str | None = Query(None)):
     elif token and hmac.compare_digest(token, app_state.config.auth_token):
         # Valid token in query param - set cookie and redirect to clean URL
         redirect = RedirectResponse(url="/dashboard", status_code=302)
-        is_secure = request.url.scheme == "https" or request.headers.get("x-forwarded-proto") == "https"
+        is_secure = (
+            request.url.scheme == "https"
+            or request.headers.get("x-forwarded-proto") == "https"
+        )
         redirect.set_cookie(
             key="dashboard_token",
             value=token,
@@ -736,8 +771,12 @@ async def dashboard_stats(auth: AuthRequired):
     pending = await app_state.approval_queue.get_pending()
     bus_stats = await app_state.event_bus.get_stats()
     pending_items = [
-        {"request_id": p.request_id, "action_type": p.action_type,
-         "description": p.description, "submitted_at": p.submitted_at}
+        {
+            "request_id": p.request_id,
+            "action_type": p.action_type,
+            "description": p.description,
+            "submitted_at": p.submitted_at,
+        }
         for p in pending
     ]
     return {
@@ -757,7 +796,9 @@ async def dashboard_ws_token(request: Request):
     avoiding direct token injection into HTML (XSS mitigation).
     """
     cookie_token = request.cookies.get("dashboard_token")
-    if not cookie_token or not hmac.compare_digest(cookie_token, app_state.config.auth_token):
+    if not cookie_token or not hmac.compare_digest(
+        cookie_token, app_state.config.auth_token
+    ):
         return JSONResponse(status_code=403, content={"detail": "Forbidden"})
     return JSONResponse(content={"token": app_state.config.auth_token})
 
@@ -767,10 +808,11 @@ async def activity_websocket(websocket: WebSocket, token: str | None = Query(Non
     """WebSocket for real-time activity feed"""
     if not token or not hmac.compare_digest(token, app_state.config.auth_token):
         await websocket.close(code=4003, reason="Authentication failed")
-        await app_state.event_bus.emit(make_event(
-            "auth_failed", "Activity WebSocket authentication failed",
-            {}, "warning"
-        ))
+        await app_state.event_bus.emit(
+            make_event(
+                "auth_failed", "Activity WebSocket authentication failed", {}, "warning"
+            )
+        )
         return
 
     await websocket.accept()
@@ -780,6 +822,7 @@ async def activity_websocket(websocket: WebSocket, token: str | None = Query(Non
 
         # Subscribe to events
         import asyncio
+
         queue: asyncio.Queue = asyncio.Queue()
 
         async def on_event(event):
@@ -804,11 +847,6 @@ async def activity_websocket(websocket: WebSocket, token: str | None = Query(Non
 
 # === SSH Endpoints ===
 
-from .models import SSHExecRequest, SSHExecResponse
-from ..ssh_proxy.proxy import SSHProxy
-import hashlib
-from datetime import datetime, timezone
-
 
 @app.post("/ssh/exec")
 async def ssh_exec(request: SSHExecRequest, auth: AuthRequired):
@@ -827,7 +865,9 @@ async def ssh_exec(request: SSHExecRequest, auth: AuthRequired):
     if not valid:
         # Audit denied command — sanitize PII before storing
         sanitized = await app_state.sanitizer.sanitize(request.command)
-        content_hash = hashlib.sha256(f"{request.command}:{request.host}".encode()).hexdigest()
+        content_hash = hashlib.sha256(
+            f"{request.command}:{request.host}".encode()
+        ).hexdigest()
         await app_state.ledger.record(
             source="ssh",
             content=f"DENIED: {sanitized.sanitized_content}",
@@ -837,13 +877,20 @@ async def ssh_exec(request: SSHExecRequest, auth: AuthRequired):
             redaction_types=[r.entity_type for r in sanitized.redactions],
             forwarded_to=request.host,
             content_type="ssh_command",
-            metadata={"host": request.host, "denied_reason": denial_reason, "reason": request.reason},
+            metadata={
+                "host": request.host,
+                "denied_reason": denial_reason,
+                "reason": request.reason,
+            },
         )
-        await app_state.event_bus.emit(make_event(
-            "ssh_denied", f"SSH denied on {request.host}: {denial_reason}",
-            {"host": request.host, "reason": denial_reason},
-            "critical" if "injection" in denial_reason.lower() else "warning"
-        ))
+        await app_state.event_bus.emit(
+            make_event(
+                "ssh_denied",
+                f"SSH denied on {request.host}: {denial_reason}",
+                {"host": request.host, "reason": denial_reason},
+                "critical" if "injection" in denial_reason.lower() else "warning",
+            )
+        )
         raise HTTPException(status_code=403, detail=denial_reason)
 
     async def _execute_and_record(approved_by: str) -> SSHExecResponse:
@@ -851,7 +898,9 @@ async def ssh_exec(request: SSHExecRequest, auth: AuthRequired):
         result = await proxy.execute(request.host, request.command, request.timeout)
         # Sanitize command for ledger storage
         sanitized = await app_state.sanitizer.sanitize(request.command)
-        content_hash = hashlib.sha256(f"{request.command}:{request.host}".encode()).hexdigest()
+        content_hash = hashlib.sha256(
+            f"{request.command}:{request.host}".encode()
+        ).hexdigest()
         entry = await app_state.ledger.record(
             source="ssh",
             content=sanitized.sanitized_content,
@@ -869,10 +918,18 @@ async def ssh_exec(request: SSHExecRequest, auth: AuthRequired):
                 "reason": request.reason,
             },
         )
-        await app_state.event_bus.emit(make_event(
-            "ssh_exec", f"SSH command on {request.host} (exit {result.exit_code})",
-            {"host": request.host, "command": request.command[:80], "exit_code": result.exit_code, "duration": result.duration_seconds},
-        ))
+        await app_state.event_bus.emit(
+            make_event(
+                "ssh_exec",
+                f"SSH command on {request.host} (exit {result.exit_code})",
+                {
+                    "host": request.host,
+                    "command": request.command[:80],
+                    "exit_code": result.exit_code,
+                    "duration": result.duration_seconds,
+                },
+            )
+        )
         now = datetime.now(timezone.utc).isoformat().replace("+00:00", "Z")
         return SSHExecResponse(
             request_id=entry.id,
@@ -897,7 +954,7 @@ async def ssh_exec(request: SSHExecRequest, auth: AuthRequired):
 
     # Requires approval — submit to queue and return 202
     # Sanitize command/reason before storing in approval queue (PII leak prevention)
-    from .models import ApprovalRequest
+
     sanitized_cmd = await app_state.sanitizer.sanitize(request.command)
     sanitized_reason = ""
     if request.reason:
@@ -906,14 +963,22 @@ async def ssh_exec(request: SSHExecRequest, auth: AuthRequired):
     approval_req = ApprovalRequest(
         action_type="ssh_exec",
         description=f"SSH command on {request.host}: {sanitized_cmd.sanitized_content}",
-        details={"host": request.host, "command": sanitized_cmd.sanitized_content, "timeout": request.timeout, "reason": sanitized_reason},
+        details={
+            "host": request.host,
+            "command": sanitized_cmd.sanitized_content,
+            "timeout": request.timeout,
+            "reason": sanitized_reason,
+        },
         agent_id="ssh-proxy",
     )
     item = await app_state.approval_queue.submit(approval_req)
     return JSONResponse(
         status_code=202,
-        content={"request_id": item.request_id, "status": "pending_approval",
-                 "message": f"Command requires approval: {request.command}"},
+        content={
+            "request_id": item.request_id,
+            "status": "pending_approval",
+            "message": f"Command requires approval: {request.command}",
+        },
     )
 
 
@@ -933,5 +998,7 @@ async def ssh_history(
 ):
     """Query SSH audit entries from ledger"""
     return await app_state.ledger.query(
-        page=page, page_size=page_size, source="ssh",
+        page=page,
+        page_size=page_size,
+        source="ssh",
     )

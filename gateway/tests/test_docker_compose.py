@@ -1,11 +1,9 @@
 """Docker Compose Validation Tests — parse and validate compose files."""
 
-import os
 from pathlib import Path
 
 import pytest
 import yaml
-
 
 REPO_ROOT = Path(__file__).parent.parent.parent
 
@@ -28,6 +26,7 @@ def _load_compose_raw(filename: str) -> str:
 
 
 # --- Example Compose Files ---
+
 
 class TestMinimalCompose:
     """Validate examples/docker-compose.minimal.yml."""
@@ -59,13 +58,16 @@ class TestProductionCompose:
 
     def test_gateway_read_only(self, compose):
         gateway = compose["services"]["gateway"]
-        assert gateway.get("read_only") is True, "Production gateway should have read_only rootfs"
+        assert (
+            gateway.get("read_only") is True
+        ), "Production gateway should have read_only rootfs"
 
     def test_gateway_no_new_privileges(self, compose):
         gateway = compose["services"]["gateway"]
         security_opts = gateway.get("security_opt", [])
-        assert any("no-new-privileges" in str(opt) for opt in security_opts), \
-            "Production gateway should set no-new-privileges"
+        assert any(
+            "no-new-privileges" in str(opt) for opt in security_opts
+        ), "Production gateway should set no-new-privileges"
 
     def test_gateway_has_healthcheck(self, compose):
         gateway = compose["services"]["gateway"]
@@ -85,8 +87,9 @@ class TestProductionCompose:
         gateway = compose["services"]["gateway"]
         for port in gateway.get("ports", []):
             port_str = str(port)
-            assert "127.0.0.1" in port_str, \
-                f"Production ports should bind to localhost, got: {port_str}"
+            assert (
+                "127.0.0.1" in port_str
+            ), f"Production ports should bind to localhost, got: {port_str}"
 
     def test_gateway_has_tmpfs(self, compose):
         gateway = compose["services"]["gateway"]

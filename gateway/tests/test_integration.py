@@ -1,8 +1,6 @@
 """Integration tests for the full gateway stack"""
 
 import pytest
-from httpx import AsyncClient, ASGITransport
-from gateway.ingest_api.main import app
 
 
 @pytest.mark.asyncio

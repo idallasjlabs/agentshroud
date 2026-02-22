@@ -163,7 +163,7 @@ async def test_request_expiration(approval_queue):
         details={},
     )
 
-    item = await approval_queue.submit(request)
+    await approval_queue.submit(request)
 
     # Wait for expiration (timeout is 2 seconds)
     await asyncio.sleep(2.5)
@@ -232,7 +232,7 @@ async def test_concurrent_decisions(approval_queue):
 
     # One should succeed, one should error
     assert "error" in results
-    assert ("approved" in results or "rejected" in results)
+    assert "approved" in results or "rejected" in results
 
 
 @pytest.mark.asyncio

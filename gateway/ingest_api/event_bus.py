@@ -10,7 +10,7 @@ import time
 from collections import defaultdict
 from dataclasses import dataclass, field, asdict
 from datetime import datetime, timezone
-from typing import Any, Callable, Coroutine
+from typing import Any, Callable
 
 logger = logging.getLogger("agentshroud.gateway.event_bus")
 
@@ -18,6 +18,7 @@ logger = logging.getLogger("agentshroud.gateway.event_bus")
 @dataclass
 class GatewayEvent:
     """A single gateway event"""
+
     type: str
     timestamp: str
     summary: str
@@ -59,7 +60,7 @@ class EventBus:
             # Track event
             self._recent_events.append(event)
             if len(self._recent_events) > self._max_recent:
-                self._recent_events = self._recent_events[-self._max_recent:]
+                self._recent_events = self._recent_events[-self._max_recent :]
             self._event_counts[event.type] += 1
 
             # Track auth failures for severity escalation

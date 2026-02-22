@@ -6,12 +6,10 @@ Actions are gated by minimum trust levels. Trust is earned through
 successful operations and decays over time or on violations.
 """
 
-import json
 import sqlite3
 import time
 from dataclasses import dataclass
 from enum import IntEnum
-from pathlib import Path
 from typing import Optional
 
 
@@ -130,8 +128,13 @@ class TrustManager:
             """INSERT INTO trust_scores
                (agent_id, score, level, last_action_time, created_at)
                VALUES (?, ?, ?, ?, ?)""",
-            (agent_id, self.config.initial_score,
-             int(self.config.initial_level), now, now),
+            (
+                agent_id,
+                self.config.initial_score,
+                int(self.config.initial_level),
+                now,
+                now,
+            ),
         )
         self._conn.commit()
         return self.config.initial_level
@@ -224,7 +227,11 @@ class TrustManager:
 
         if counter_col:
             # Safe: counter_col comes from hardcoded dict above, never from user input
-            assert counter_col in ("total_successes", "total_failures", "total_violations")
+            assert counter_col in (
+                "total_successes",
+                "total_failures",
+                "total_violations",
+            )
             sql = f"UPDATE trust_scores SET score = ?, level = ?, last_action_time = ?, {counter_col} = {counter_col} + 1 WHERE agent_id = ?"
         else:
             sql = "UPDATE trust_scores SET score = ?, level = ?, last_action_time = ? WHERE agent_id = ?"

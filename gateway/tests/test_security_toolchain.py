@@ -5,14 +5,10 @@ Target: 50+ tests.
 """
 
 import json
-import sqlite3
 import tempfile
 import time
-from datetime import datetime, timezone, timedelta
 from pathlib import Path
 from unittest.mock import patch, MagicMock
-
-import pytest
 
 # ═══════════════════════════════════════════
 # Trivy Report Tests
@@ -23,7 +19,6 @@ from gateway.security.trivy_report import (
     generate_summary,
     run_trivy_scan,
 )
-
 
 SAMPLE_TRIVY_OUTPUT = {
     "Results": [
@@ -126,9 +121,16 @@ class TestTrivyParser:
         assert result["scanner"] == "trivy"
 
     def test_parse_unknown_severity(self):
-        raw = {"Results": [{"Target": "t", "Vulnerabilities": [
-            {"VulnerabilityID": "X", "Severity": "WEIRD", "PkgName": "p"}
-        ]}]}
+        raw = {
+            "Results": [
+                {
+                    "Target": "t",
+                    "Vulnerabilities": [
+                        {"VulnerabilityID": "X", "Severity": "WEIRD", "PkgName": "p"}
+                    ],
+                }
+            ]
+        }
         result = parse_trivy_output(raw)
         assert result["by_severity"]["UNKNOWN"] == 1
 
@@ -147,9 +149,16 @@ class TestTrivySummary:
         assert s["critical"] == 2
 
     def test_summary_warning_high_only(self):
-        raw = {"Results": [{"Target": "t", "Vulnerabilities": [
-            {"VulnerabilityID": "X", "Severity": "HIGH", "PkgName": "p"}
-        ]}]}
+        raw = {
+            "Results": [
+                {
+                    "Target": "t",
+                    "Vulnerabilities": [
+                        {"VulnerabilityID": "X", "Severity": "HIGH", "PkgName": "p"}
+                    ],
+                }
+            ]
+        }
         report = parse_trivy_output(raw)
         s = generate_summary(report)
         assert s["status"] == "warning"
@@ -174,6 +183,7 @@ class TestTrivyRun:
     @patch("gateway.security.trivy_report.subprocess.run")
     def test_run_timeout(self, mock_run):
         import subprocess
+
         mock_run.side_effect = subprocess.TimeoutExpired(cmd="trivy", timeout=600)
         result = run_trivy_scan()
         assert result["error"] == "timeout"
@@ -199,13 +209,12 @@ class TestTrivyRun:
 # ClamAV Scanner Tests
 # ═══════════════════════════════════════════
 
-from gateway.security.clamav_scanner import (
+from gateway.security.clamav_scanner import (  # noqa: E402
     parse_clamscan_output,
     generate_summary as clamav_summary,
     run_clamscan,
     update_virus_db,
 )
-
 
 SAMPLE_CLAMSCAN_CLEAN = """/home/node/file1.py: OK
 /home/node/file2.js: OK
@@ -292,7 +301,7 @@ class TestClamAVRun:
 # Falco Monitor Tests
 # ═══════════════════════════════════════════
 
-from gateway.security.falco_monitor import (
+from gateway.security.falco_monitor import (  # noqa: E402
     parse_alert,
     categorize_alerts,
     is_agentshroud_rule,
@@ -395,7 +404,7 @@ class TestFalcoSummary:
 # Wazuh Client Tests
 # ═══════════════════════════════════════════
 
-from gateway.security.wazuh_client import (
+from gateway.security.wazuh_client import (  # noqa: E402
     parse_alert as wazuh_parse,
     get_fim_events,
     get_rootkit_events,
@@ -471,14 +480,13 @@ class TestWazuhSummary:
 # Health Report Tests
 # ═══════════════════════════════════════════
 
-from gateway.security.health_report import (
+from gateway.security.health_report import (  # noqa: E402
     calculate_tool_score,
     calculate_overall_score,
     score_to_grade,
     generate_report,
     format_report,
     get_trend,
-    init_db,
 )
 
 
@@ -550,8 +558,20 @@ class TestHealthReport:
         with tempfile.TemporaryDirectory() as tmpdir:
             db_path = Path(tmpdir) / "test.db"
             summaries = {
-                "trivy": {"critical": 1, "high": 2, "medium": 0, "low": 0, "findings": 3},
-                "clamav": {"critical": 0, "high": 0, "medium": 0, "low": 0, "findings": 0},
+                "trivy": {
+                    "critical": 1,
+                    "high": 2,
+                    "medium": 0,
+                    "low": 0,
+                    "findings": 3,
+                },
+                "clamav": {
+                    "critical": 0,
+                    "high": 0,
+                    "medium": 0,
+                    "low": 0,
+                    "findings": 0,
+                },
             }
             report = generate_report(summaries, db_path=db_path)
             assert "grade" in report
@@ -570,7 +590,13 @@ class TestHealthReport:
                 "trivy": {
                     "score": 70,
                     "weight": 0.25,
-                    "summary": {"status": "warning", "critical": 1, "high": 2, "medium": 0, "low": 0},
+                    "summary": {
+                        "status": "warning",
+                        "critical": 1,
+                        "high": 2,
+                        "medium": 0,
+                        "low": 0,
+                    },
                 },
             },
             "trend": [],
@@ -590,7 +616,13 @@ class TestHealthReport:
         with tempfile.TemporaryDirectory() as tmpdir:
             db_path = Path(tmpdir) / "test.db"
             summaries = {
-                "trivy": {"critical": 0, "high": 0, "medium": 0, "low": 0, "findings": 0},
+                "trivy": {
+                    "critical": 0,
+                    "high": 0,
+                    "medium": 0,
+                    "low": 0,
+                    "findings": 0,
+                },
             }
             generate_report(summaries, db_path=db_path, save_history=True)
             generate_report(summaries, db_path=db_path, save_history=True)
@@ -602,7 +634,7 @@ class TestHealthReport:
 # Alert Dispatcher Tests
 # ═══════════════════════════════════════════
 
-from gateway.security.alert_dispatcher import AlertDispatcher
+from gateway.security.alert_dispatcher import AlertDispatcher  # noqa: E402
 
 
 class TestAlertDispatcher:
@@ -618,7 +650,9 @@ class TestAlertDispatcher:
         with tempfile.TemporaryDirectory() as tmpdir:
             d = self._make_dispatcher(tmpdir)
             with patch.object(d, "_send_notification", return_value=True):
-                result = d.dispatch({"id": "CVE-1", "severity": "CRITICAL", "tool": "trivy"})
+                result = d.dispatch(
+                    {"id": "CVE-1", "severity": "CRITICAL", "tool": "trivy"}
+                )
                 assert result["action"] == "notified"
 
     def test_low_alert_buffered(self):
@@ -645,8 +679,12 @@ class TestAlertDispatcher:
             d = self._make_dispatcher(tmpdir)
             with patch.object(d, "_send_notification", return_value=True):
                 for i in range(3):
-                    d.dispatch({"id": f"CVE-R{i}", "severity": "CRITICAL", "tool": "trivy"})
-                result = d.dispatch({"id": "CVE-R3", "severity": "CRITICAL", "tool": "trivy"})
+                    d.dispatch(
+                        {"id": f"CVE-R{i}", "severity": "CRITICAL", "tool": "trivy"}
+                    )
+                result = d.dispatch(
+                    {"id": "CVE-R3", "severity": "CRITICAL", "tool": "trivy"}
+                )
                 assert result["action"] == "rate_limited"
 
     def test_get_digest(self):
@@ -669,7 +707,9 @@ class TestAlertDispatcher:
     def test_cleanup_seen(self):
         with tempfile.TemporaryDirectory() as tmpdir:
             d = self._make_dispatcher(tmpdir)
-            d._seen_ids["old"] = time.time() - 100  # Within 60s dedup window? No, dedup=60
+            d._seen_ids["old"] = (
+                time.time() - 100
+            )  # Within 60s dedup window? No, dedup=60
             d._seen_ids["very_old"] = time.time() - 200
             removed = d.cleanup_seen()
             assert removed == 2
@@ -685,12 +725,16 @@ class TestAlertDispatcher:
         with tempfile.TemporaryDirectory() as tmpdir:
             d = self._make_dispatcher(tmpdir)
             with patch.object(d, "_send_notification", return_value=True):
-                result = d.dispatch({"id": "CVE-H1", "severity": "HIGH", "tool": "falco"})
+                result = d.dispatch(
+                    {"id": "CVE-H1", "severity": "HIGH", "tool": "falco"}
+                )
                 assert result["action"] == "notified"
 
     def test_notify_failure(self):
         with tempfile.TemporaryDirectory() as tmpdir:
             d = self._make_dispatcher(tmpdir)
             with patch.object(d, "_send_notification", return_value=False):
-                result = d.dispatch({"id": "CVE-F1", "severity": "CRITICAL", "tool": "trivy"})
+                result = d.dispatch(
+                    {"id": "CVE-F1", "severity": "CRITICAL", "tool": "trivy"}
+                )
                 assert result["action"] == "notify_failed"

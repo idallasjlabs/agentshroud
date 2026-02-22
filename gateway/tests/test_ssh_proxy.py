@@ -4,7 +4,6 @@ import asyncio
 from unittest.mock import AsyncMock, MagicMock, patch
 
 import pytest
-import pytest_asyncio
 
 from gateway.ingest_api.ssh_config import SSHConfig, SSHHostConfig
 from gateway.ssh_proxy.proxy import SSHProxy, SSHResult
@@ -20,7 +19,14 @@ def ssh_config() -> SSHConfig:
                 port=22,
                 username="deploy",
                 key_path="/home/user/.ssh/id_rsa",
-                allowed_commands=["git status", "git log", "ls", "cat", "whoami", "df -h"],
+                allowed_commands=[
+                    "git status",
+                    "git log",
+                    "ls",
+                    "cat",
+                    "whoami",
+                    "df -h",
+                ],
                 denied_commands=["rm -rf", "shutdown", "reboot"],
                 max_session_seconds=30,
                 auto_approve_commands=["git status", "ls", "whoami"],

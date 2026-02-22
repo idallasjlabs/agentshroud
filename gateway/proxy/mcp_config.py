@@ -3,7 +3,7 @@
 import logging
 from dataclasses import dataclass, field
 from enum import Enum
-from typing import Any, Optional
+from typing import Any
 
 logger = logging.getLogger("agentshroud.proxy.mcp_config")
 
@@ -47,6 +47,7 @@ class PermissionLevel(str, Enum):
 @dataclass
 class MCPToolConfig:
     """Configuration for a specific MCP tool."""
+
     name: str
     permission_level: PermissionLevel = PermissionLevel.READ
     rate_limit: int = 0  # 0 = unlimited, N = max calls per minute
@@ -57,6 +58,7 @@ class MCPToolConfig:
 @dataclass
 class MCPServerConfig:
     """Configuration for an MCP server."""
+
     name: str
     transport: MCPTransport = MCPTransport.STDIO
     command: str = ""  # For stdio transport
@@ -75,6 +77,7 @@ class MCPServerConfig:
 @dataclass
 class MCPProxyConfig:
     """Top-level MCP proxy configuration."""
+
     enabled: bool = True
     servers: dict[str, MCPServerConfig] = field(default_factory=dict)
     default_timeout_seconds: int = 30
@@ -93,7 +96,9 @@ class MCPProxyConfig:
             for tname, tdata in sdata.get("tools", {}).items():
                 tools[tname] = MCPToolConfig(
                     name=tname,
-                    permission_level=PermissionLevel(tdata.get("permission_level", "read")),
+                    permission_level=PermissionLevel(
+                        tdata.get("permission_level", "read")
+                    ),
                     rate_limit=tdata.get("rate_limit", 0),
                     sensitive=tdata.get("sensitive", False),
                     description=tdata.get("description", ""),
@@ -105,8 +110,12 @@ class MCPProxyConfig:
                 args=sdata.get("args", []),
                 url=sdata.get("url", ""),
                 env=sdata.get("env", {}),
-                timeout_seconds=sdata.get("timeout_seconds", data.get("default_timeout_seconds", 30)),
-                max_retries=sdata.get("max_retries", data.get("default_max_retries", 3)),
+                timeout_seconds=sdata.get(
+                    "timeout_seconds", data.get("default_timeout_seconds", 30)
+                ),
+                max_retries=sdata.get(
+                    "max_retries", data.get("default_max_retries", 3)
+                ),
                 min_trust_level=sdata.get("min_trust_level", 0),
                 tools=tools,
                 allowed_agents=sdata.get("allowed_agents", []),

@@ -26,6 +26,7 @@ CANARY_MESSAGE = (
 @dataclass
 class CanaryCheck:
     """Individual canary check result."""
+
     name: str
     passed: bool
     details: str = ""
@@ -34,6 +35,7 @@ class CanaryCheck:
 @dataclass
 class CanaryResult:
     """Result of running the canary system."""
+
     verified: bool
     checks: dict[str, bool] = field(default_factory=dict)
     check_details: list[CanaryCheck] = field(default_factory=list)
@@ -127,7 +129,9 @@ async def run_canary(
         try:
             healthy = await forwarder.health_check()
             proxy_check.passed = healthy
-            proxy_check.details = "Proxy target healthy" if healthy else "Proxy target unhealthy"
+            proxy_check.details = (
+                "Proxy target healthy" if healthy else "Proxy target unhealthy"
+            )
         except Exception as e:
             proxy_check.details = f"Health check failed: {e}"
         if not proxy_check.passed:

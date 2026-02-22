@@ -19,9 +19,7 @@ async def client(test_config):
     with patch("gateway.ingest_api.main.load_config", return_value=test_config):
         async with lifespan(app):
             transport = ASGITransport(app=app)
-            async with AsyncClient(
-                transport=transport, base_url="http://test"
-            ) as ac:
+            async with AsyncClient(transport=transport, base_url="http://test") as ac:
                 yield ac
 
 
@@ -110,9 +108,7 @@ async def test_dashboard_returns_html(client):
 @pytest.mark.asyncio
 async def test_dashboard_stats_returns_json(client):
     """GET /dashboard/stats returns JSON stats."""
-    resp = await client.get(
-        "/dashboard/stats", headers=AUTH
-    )
+    resp = await client.get("/dashboard/stats", headers=AUTH)
     assert resp.status_code in (200, 201)
     data = resp.json()
     # Should have some stats structure

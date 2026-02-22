@@ -7,7 +7,6 @@ with logging of all egress attempts.
 
 import ipaddress
 import logging
-import re
 import time
 from dataclasses import dataclass, field
 from enum import Enum
@@ -36,6 +35,7 @@ class EgressAttempt:
 @dataclass
 class EgressPolicy:
     """Egress policy for an agent or global default."""
+
     allowed_domains: list[str] = field(default_factory=list)
     allowed_ips: list[str] = field(default_factory=list)  # CIDR or single IP
     allowed_ports: list[int] = field(default_factory=lambda: [80, 443])
@@ -134,41 +134,59 @@ class EgressFilter:
         # Block private/loopback IPs unless explicitly in allowlist
         if self._is_private_ip(parsed_dest) and not policy.matches_ip(parsed_dest):
             return self._record(
-                agent_id, destination, port, EgressAction.DENY,
-                f"private/loopback IP '{parsed_dest}' blocked (SSRF protection)"
+                agent_id,
+                destination,
+                port,
+                EgressAction.DENY,
+                f"private/loopback IP '{parsed_dest}' blocked (SSRF protection)",
             )
 
         # Check port first
         if not policy.matches_port(port):
             return self._record(
-                agent_id, destination, port, EgressAction.DENY,
-                f"port {port} not allowed"
+                agent_id,
+                destination,
+                port,
+                EgressAction.DENY,
+                f"port {port} not allowed",
             )
 
         # Check domain
         if policy.matches_domain(parsed_dest):
             return self._record(
-                agent_id, destination, port, EgressAction.ALLOW,
-                f"domain '{parsed_dest}' in allowlist"
+                agent_id,
+                destination,
+                port,
+                EgressAction.ALLOW,
+                f"domain '{parsed_dest}' in allowlist",
             )
 
         # Check IP
         if policy.matches_ip(parsed_dest):
             return self._record(
-                agent_id, destination, port, EgressAction.ALLOW,
-                f"IP '{parsed_dest}' in allowlist"
+                agent_id,
+                destination,
+                port,
+                EgressAction.ALLOW,
+                f"IP '{parsed_dest}' in allowlist",
             )
 
         # Default deny
         if policy.deny_all:
             return self._record(
-                agent_id, destination, port, EgressAction.DENY,
-                f"default deny: '{parsed_dest}' not in allowlist"
+                agent_id,
+                destination,
+                port,
+                EgressAction.DENY,
+                f"default deny: '{parsed_dest}' not in allowlist",
             )
 
         return self._record(
-            agent_id, destination, port, EgressAction.ALLOW,
-            "default allow (deny_all=False)"
+            agent_id,
+            destination,
+            port,
+            EgressAction.ALLOW,
+            "default allow (deny_all=False)",
         )
 
     @staticmethod
@@ -183,16 +201,30 @@ class EgressFilter:
             # Check IPv4-mapped IPv6 addresses (e.g., ::ffff:127.0.0.1)
             if isinstance(addr, ipaddress.IPv6Address) and addr.ipv4_mapped:
                 mapped = addr.ipv4_mapped
-                return mapped.is_private or mapped.is_loopback or mapped.is_link_local or mapped.is_reserved
-            return addr.is_private or addr.is_loopback or addr.is_link_local or addr.is_reserved
+                return (
+                    mapped.is_private
+                    or mapped.is_loopback
+                    or mapped.is_link_local
+                    or mapped.is_reserved
+                )
+            return (
+                addr.is_private
+                or addr.is_loopback
+                or addr.is_link_local
+                or addr.is_reserved
+            )
         except ValueError:
             # Not an IP address (it's a domain) — check for localhost variants
             normalized = host.lower().rstrip(".")
             return normalized in ("localhost", "ip6-localhost", "ip6-loopback")
 
     def _record(
-        self, agent_id: str, dest: str, port: Optional[int],
-        action: EgressAction, rule: str
+        self,
+        agent_id: str,
+        dest: str,
+        port: Optional[int],
+        action: EgressAction,
+        rule: str,
     ) -> EgressAttempt:
         attempt = EgressAttempt(
             timestamp=time.time(),
@@ -204,10 +236,12 @@ class EgressFilter:
         )
         self._log.append(attempt)
         if len(self._log) > self._max_log_size:
-            self._log = self._log[-self._max_log_size // 2:]
+            self._log = self._log[-self._max_log_size // 2 :]
 
         if action == EgressAction.DENY:
-            logger.warning(f"EGRESS DENIED: agent={agent_id} dest={dest} port={port} rule={rule}")
+            logger.warning(
+                f"EGRESS DENIED: agent={agent_id} dest={dest} port={port} rule={rule}"
+            )
         else:
             logger.info(f"EGRESS ALLOWED: agent={agent_id} dest={dest} port={port}")
 

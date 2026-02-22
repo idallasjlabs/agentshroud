@@ -83,8 +83,9 @@ class EgressMonitor:
     def record(self, event: EgressEvent):
         self._events[event.agent_id].append(event)
 
-    def get_events(self, agent_id: str,
-                   channel: Optional[EgressChannel] = None) -> list[EgressEvent]:
+    def get_events(
+        self, agent_id: str, channel: Optional[EgressChannel] = None
+    ) -> list[EgressEvent]:
         events = self._events.get(agent_id, [])
         if channel:
             events = [e for e in events if e.channel == channel]
@@ -110,36 +111,48 @@ class EgressMonitor:
         for channel, limit in limits.items():
             count = sum(1 for e in recent if e.channel == channel)
             if count >= limit:
-                alerts.append(AnomalyAlert(
-                    severity=AlertSeverity.MEDIUM,
-                    description=f"High volume: {count} {channel.value} events in 1h (limit: {limit})",
-                    agent_id=agent_id, channel=channel,
-                    action="log" if self.config.mode == "monitor" else "block",
-                ))
+                alerts.append(
+                    AnomalyAlert(
+                        severity=AlertSeverity.MEDIUM,
+                        description=f"High volume: {count} {channel.value} events in 1h (limit: {limit})",
+                        agent_id=agent_id,
+                        channel=channel,
+                        action="log" if self.config.mode == "monitor" else "block",
+                    )
+                )
 
         # Flagged event anomalies
         flagged = [e for e in recent if e.flagged]
         if flagged:
             flagged_channels = set(e.channel for e in flagged)
-            if (len(flagged) >= self.config.drip_flagged_threshold and
-                    len(flagged_channels) >= self.config.drip_channel_threshold):
-                alerts.append(AnomalyAlert(
-                    severity=AlertSeverity.HIGH,
-                    description=(f"Coordinated drip: {len(flagged)} flagged events "
-                                 f"across {len(flagged_channels)} channels"),
-                    agent_id=agent_id,
-                    action="log" if self.config.mode == "monitor" else "block",
-                ))
+            if (
+                len(flagged) >= self.config.drip_flagged_threshold
+                and len(flagged_channels) >= self.config.drip_channel_threshold
+            ):
+                alerts.append(
+                    AnomalyAlert(
+                        severity=AlertSeverity.HIGH,
+                        description=(
+                            f"Coordinated drip: {len(flagged)} flagged events "
+                            f"across {len(flagged_channels)} channels"
+                        ),
+                        agent_id=agent_id,
+                        action="log" if self.config.mode == "monitor" else "block",
+                    )
+                )
 
             # Individual flagged high-severity
             for e in flagged:
                 if e.size_bytes > 10000:
-                    alerts.append(AnomalyAlert(
-                        severity=AlertSeverity.MEDIUM,
-                        description=f"Large flagged event: {e.size_bytes}B to {e.destination}",
-                        agent_id=agent_id, channel=e.channel,
-                        action="log",
-                    ))
+                    alerts.append(
+                        AnomalyAlert(
+                            severity=AlertSeverity.MEDIUM,
+                            description=f"Large flagged event: {e.size_bytes}B to {e.destination}",
+                            agent_id=agent_id,
+                            channel=e.channel,
+                            action="log",
+                        )
+                    )
 
         return alerts
 
