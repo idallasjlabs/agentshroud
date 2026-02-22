@@ -25,6 +25,7 @@ services:
     # Secrets
     secrets:
       - gateway_password
+      - 1password_service_account
 
     # Environment
     environment:
@@ -32,6 +33,7 @@ services:
       - LOG_LEVEL=INFO
       - PYTHONDONTWRITEBYTECODE=1
       - GATEWAY_AUTH_TOKEN_FILE=/run/secrets/gateway_password
+      - OP_SERVICE_ACCOUNT_TOKEN_FILE=/run/secrets/1password_service_account
 
     # Security hardening
     security_opt:
@@ -90,7 +92,8 @@ services:
       # Playwright browser binaries (persistent across restarts)
       - agentshroud-browsers:/home/node/.cache/ms-playwright
 
-    # Secrets (API keys and 1Password)
+    # Secrets (API keys and 1Password interactive auth only — no service account)
+    # FINAL: 1password_service_account moved to gateway; bot uses op-proxy endpoint
     secrets:
       - openai_api_key
       - anthropic_api_key
@@ -98,7 +101,6 @@ services:
       - 1password_bot_email
       - 1password_bot_master_password
       - 1password_bot_secret_key
-      - 1password_service_account
 
     # Environment variables
     environment:
@@ -107,7 +109,11 @@ services:
       - OPENCLAW_GATEWAY_PASSWORD_FILE=/run/secrets/gateway_password
       - OPENAI_API_KEY_FILE=/run/secrets/openai_api_key
       - ANTHROPIC_API_KEY_FILE=/run/secrets/anthropic_api_key
-      - OP_SERVICE_ACCOUNT_TOKEN_FILE=/run/secrets/1password_service_account
+      # FINAL: Route all outbound internet through gateway HTTP CONNECT proxy
+      - HTTP_PROXY=http://gateway:8181
+      - HTTPS_PROXY=http://gateway:8181
+      # FINAL: Route 1Password credential lookups through gateway op-proxy endpoint
+      - GATEWAY_OP_PROXY_URL=http://gateway:8080
       # Bot identity
       - OPENCLAW_BOT_NAME=agentshroud_bot
       - OPENCLAW_BOT_EMAIL=agentshroud.ai@gmail.com
@@ -184,19 +190,17 @@ networks:
       config:
         - subnet: 172.20.0.0/16
 
-  # Backend network - AgentShroud talks to Gateway and internet (LLM APIs)
-  # NOTE: internal: false is required for outbound API calls to LLM providers
-  # Network isolation is enforced via iptables/seccomp, not Docker networking
+  # Backend network - AgentShroud talks to Gateway ONLY
+  # FINAL: internal: true — bot has no direct internet access.
+  # All outbound traffic must go through the HTTP CONNECT proxy at gateway:8181.
   agentshroud-isolated:
     driver: bridge
-    internal: false  # Required for LLM API access (OpenAI, Anthropic, etc.)
+    internal: true  # FINAL: bot isolated — internet via HTTP proxy at gateway:8181
     ipam:
       config:
         - subnet: 172.21.0.0/16
     driver_opts:
-      com.docker.network.bridge.enable_ip_masquerade: "true"
       com.docker.network.bridge.enable_icc: "true"  # Inter-container communication
-      com.docker.network.bridge.host_binding_ipv4: "0.0.0.0"
 
 # Named volumes for data persistence
 volumes:
