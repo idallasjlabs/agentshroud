@@ -21,11 +21,16 @@ services:
       - gateway-data:/app/data
       - ../web:/app/web:ro
 
+    # Secrets
+    secrets:
+      - gateway_password
+
     # Environment
     environment:
       - PYTHONUNBUFFERED=1
       - LOG_LEVEL=INFO
       - PYTHONDONTWRITEBYTECODE=1
+      - GATEWAY_AUTH_TOKEN_FILE=/run/secrets/gateway_password
 
     # Security hardening
     security_opt:
