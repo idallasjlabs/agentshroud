@@ -51,8 +51,11 @@ from ..ssh_proxy.proxy import SSHProxy
 from .router import ForwardError, MultiAgentRouter
 from .sanitizer import PIISanitizer
 from .event_bus import EventBus, make_event
-from ..proxy.http_proxy import HTTPConnectProxy
-from ..proxy.mcp_proxy import MCPProxy, MCPToolCall
+from ..proxy.http_proxy import ALLOWED_DOMAINS, HTTPConnectProxy
+from ..proxy.mcp_proxy import MCPProxy, MCPToolCall, MCPToolResult
+from ..proxy.mcp_config import MCPProxyConfig
+from ..proxy.web_config import WebProxyConfig
+from ..proxy.web_proxy import WebProxy
 from ..proxy.webhook_receiver import WebhookReceiver
 from ..proxy.pipeline import SecurityPipeline
 from ..web.api import router as management_api_router
@@ -183,9 +186,16 @@ async def lifespan(app: FastAPI):
     )
     logger.info("Security pipeline initialized")
 
-    # Initialize MCP proxy
-    app_state.mcp_proxy = MCPProxy()
-    logger.info("MCP proxy initialized")
+    # Initialize MCP proxy — load server registry from agentshroud.yaml mcp_proxy section
+    mcp_proxy_config = (
+        MCPProxyConfig.from_dict(app_state.config.mcp_proxy_data)
+        if app_state.config.mcp_proxy_data
+        else MCPProxyConfig()
+    )
+    app_state.mcp_proxy = MCPProxy(config=mcp_proxy_config)
+    logger.info(
+        f"MCP proxy initialized: {len(mcp_proxy_config.servers)} server(s) registered"
+    )
 
     # Initialize SSH proxy
     if app_state.config.ssh.enabled:
@@ -211,7 +221,11 @@ async def lifespan(app: FastAPI):
     # Activated in the FINAL PR by setting HTTP_PROXY on the bot container.
     # Running it now adds zero risk — the bot doesn't use it until then.
     try:
-        app_state.http_proxy = HTTPConnectProxy()
+        # Use allowed_domains from agentshroud.yaml (proxy.allowed_domains),
+        # falling back to the hardcoded default if the YAML section is absent.
+        _proxy_domains = app_state.config.proxy_allowed_domains or ALLOWED_DOMAINS
+        _web_proxy = WebProxy(config=WebProxyConfig(mode="allowlist", allowed_domains=_proxy_domains))
+        app_state.http_proxy = HTTPConnectProxy(web_proxy=_web_proxy)
         await app_state.http_proxy.start()
         logger.info("HTTP CONNECT proxy started on port 8181")
     except Exception as e:
@@ -604,6 +618,52 @@ async def mcp_proxy_endpoint(request: MCPProxyRequest, auth: AuthRequired):
         "audit_entry_id": result.audit_entry_id,
         "findings_count": result.findings_count,
         "threat_level": result.threat_level,
+        "processing_time_ms": result.processing_time_ms,
+    }
+
+
+class MCPResultRequest(BaseModel):
+    """Request body for POST /mcp/result — submit a tool result for outbound audit."""
+
+    server_name: str
+    tool_name: str
+    call_id: str = ""
+    content: Optional[dict] = None
+    agent_id: str = "default"
+
+
+@app.post("/mcp/result", status_code=status.HTTP_200_OK)
+async def mcp_result_endpoint(request: MCPResultRequest, auth: AuthRequired):
+    """MCP tool result outbound audit endpoint.
+
+    Receives a tool result from the bot's mcp-proxy-wrapper.js after the actual
+    MCP server has executed the call. Runs it through the security inspector for
+    PII/credential scanning and logs to the tamper-evident audit trail.
+
+    Results are never blocked — only redacted and audited.
+    Authentication required.
+    """
+    proxy = getattr(app_state, "mcp_proxy", None)
+    if proxy is None:
+        raise HTTPException(
+            status_code=status.HTTP_503_SERVICE_UNAVAILABLE,
+            detail="MCP proxy not initialized",
+        )
+
+    tool_result = MCPToolResult(
+        call_id=request.call_id,
+        server_name=request.server_name,
+        tool_name=request.tool_name,
+        content=request.content,
+    )
+
+    result = await proxy.process_tool_result(tool_result, agent_id=request.agent_id)
+
+    return {
+        "audit_entry_id": result.audit_entry_id,
+        "findings_count": result.findings_count,
+        "threat_level": result.threat_level,
+        "sanitized_result": result.sanitized_result,
         "processing_time_ms": result.processing_time_ms,
     }
 
