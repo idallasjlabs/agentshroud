@@ -51,6 +51,7 @@ from .router import ForwardError, MultiAgentRouter
 from .sanitizer import PIISanitizer
 from .event_bus import EventBus, make_event
 from ..proxy.http_proxy import HTTPConnectProxy
+from ..proxy.mcp_proxy import MCPProxy, MCPToolCall
 from ..proxy.webhook_receiver import WebhookReceiver
 from ..proxy.pipeline import SecurityPipeline
 from ..web.api import router as management_api_router
@@ -106,6 +107,7 @@ class AppState:
     ledger: DataLedger
     router: MultiAgentRouter
     approval_queue: ApprovalQueue
+    mcp_proxy: Optional[MCPProxy]
     pipeline: Optional[SecurityPipeline]
     start_time: float
     event_bus: EventBus
@@ -179,6 +181,10 @@ async def lifespan(app: FastAPI):
         approval_queue=app_state.approval_queue,
     )
     logger.info("Security pipeline initialized")
+
+    # Initialize MCP proxy
+    app_state.mcp_proxy = MCPProxy()
+    logger.info("MCP proxy initialized")
 
     # Initialize SSH proxy
     if app_state.config.ssh.enabled:
@@ -528,6 +534,68 @@ async def op_proxy(request: OpProxyRequest, auth: AuthRequired):
     # Never log the value — only confirm success
     logger.info("op-proxy: secret read successfully for reference pattern")
     return {"value": result.stdout.strip()}
+
+
+# === MCP Proxy (P4) ===
+
+
+class MCPProxyRequest(BaseModel):
+    """Request body for POST /mcp/proxy — intercept a single MCP tool call."""
+
+    server_name: str
+    tool_name: str
+    parameters: dict = {}
+    agent_id: str = "default"
+
+
+@app.post("/mcp/proxy", status_code=status.HTTP_200_OK)
+async def mcp_proxy_endpoint(request: MCPProxyRequest, auth: AuthRequired):
+    """MCP tool call interception endpoint.
+
+    Receives an MCP tool call, runs it through the security inspector
+    (injection detection, PII scan, permission check), and returns the
+    proxy result. The bot should send all MCP tool calls here before
+    forwarding to the actual MCP server.
+
+    Authentication required.
+    """
+    proxy = getattr(app_state, "mcp_proxy", None)
+    if proxy is None:
+        raise HTTPException(
+            status_code=status.HTTP_503_SERVICE_UNAVAILABLE,
+            detail="MCP proxy not initialized",
+        )
+
+    tool_call = MCPToolCall(
+        id="",  # auto-generated in __post_init__
+        server_name=request.server_name,
+        tool_name=request.tool_name,
+        parameters=request.parameters,
+        agent_id=request.agent_id,
+    )
+
+    result = await proxy.process_tool_call(tool_call, execute=False)
+
+    if result.blocked:
+        logger.warning(
+            f"MCP proxy blocked tool call: server={request.server_name} "
+            f"tool={request.tool_name} agent={request.agent_id} "
+            f"reason={result.block_reason}"
+        )
+        raise HTTPException(
+            status_code=status.HTTP_403_FORBIDDEN,
+            detail=f"Tool call blocked: {result.block_reason}",
+        )
+
+    return {
+        "allowed": result.allowed,
+        "call_id": result.call_id,
+        "sanitized_params": result.sanitized_params,
+        "audit_entry_id": result.audit_entry_id,
+        "findings_count": result.findings_count,
+        "threat_level": result.threat_level,
+        "processing_time_ms": result.processing_time_ms,
+    }
 
 
 # === Channel Ownership (P3) ===
