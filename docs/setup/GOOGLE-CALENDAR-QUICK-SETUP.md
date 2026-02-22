@@ -33,7 +33,7 @@ Create `/home/node/test-google-calendar.js`:
 const fetch = require('node-fetch');
 
 async function testGoogleCalendar() {
-    const username = 'therealidallasj@gmail.com';
+    const username = 'agentshroud.ai@gmail.com';
     const password = 'nkcy luwd cwou zimj'; // App password from 1Password
 
     // Google CalDAV endpoint
@@ -276,7 +276,7 @@ cat > /tmp/google-calendar-helper.js << 'EOF'
 #!/usr/bin/env node
 const https = require('https');
 
-const username = 'therealidallasj@gmail.com';
+const username = 'agentshroud.ai@gmail.com';
 const password = 'nkcy luwd cwou zimj';
 const auth = 'Basic ' + Buffer.from(username + ':' + password).toString('base64');
 

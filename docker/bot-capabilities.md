@@ -102,10 +102,10 @@ For more complex needs, use the `1password-skill` command:
 1password-skill list-items "AgentShroud Bot Credentials"
 
 # Get specific field
-1password-skill get-field "Gmail - therealidallasj" "openclaw bot password"
+1password-skill get-field "Gmail - agentshroud.ai" "openclaw bot password"
 
 # Get TOTP
-1password-skill get-totp "Gmail - therealidallasj"
+1password-skill get-totp "Gmail - agentshroud.ai"
 ```
 
 ### Security Rules (Ultra-Conservative)

@@ -366,7 +366,7 @@ Test every major feature to ensure it still works:
 
 ```bash
 # Test 1: 1Password retrieval
-docker exec openclaw-bot 1password-skill get-field "Apple ID - therealidallasj" "oenclaw bot password"
+docker exec openclaw-bot 1password-skill get-field "Apple ID - agentshroud.ai" "oenclaw bot password"
 # Expected: Password retrieved successfully
 
 # Test 2: iCloud services

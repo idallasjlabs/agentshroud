@@ -12,7 +12,7 @@ for common law trademark rights in AgentShroud™.
 | Asset | First Created | Notes |
 |-------|--------------|-------|
 | GitHub repository `idallasj/agentshroud` | February 2026 | Verify: `https://github.com/idallasj/agentshroud` — created date visible in repo |
-| Telegram bot `@therealidallasj_bot` (AgentShroud) | February 2026 | Bot operational; identity associated with AgentShroud platform |
+| Telegram bot `@agentshroud.ai_bot` (AgentShroud) | February 2026 | Bot operational; identity associated with AgentShroud platform |
 | Gmail identity `agentshroud.ai@gmail.com` | February 20, 2026 | First use in commerce date |
 | Domain / brand use | February 20, 2026 | First commerce use per trademark claim |
 | Docker Hub image `agentshroud` | February 2026 | Container registry entry |
@@ -80,7 +80,7 @@ git log --reverse --format="%H %ai %s" | head -5
 To strengthen the trademark evidence, capture the following externally (outside git):
 
 1. **GitHub repository**: Screenshot of the "About" section showing name and creation date
-2. **Telegram bot**: Screenshot of the bot profile (`@therealidallasj_bot`) showing creation/launch
+2. **Telegram bot**: Screenshot of the bot profile (`@agentshroud.ai_bot`) showing creation/launch
 3. **Gmail account**: Screenshot of `agentshroud.ai@gmail.com` account settings showing creation date
 4. **Domain WHOIS**: If a domain is registered, export the WHOIS record showing registration date
 5. **This file**: Export as PDF with creation timestamp from a trusted source (GitHub, Notion, etc.)

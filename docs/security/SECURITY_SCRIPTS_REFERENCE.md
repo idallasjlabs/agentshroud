@@ -174,7 +174,7 @@ docker compose -f docker/docker-compose.yml up -d
 1. **OpenAI**: https://platform.openai.com/api-keys
 2. **Anthropic**: https://console.anthropic.com/settings/keys
 3. **1Password**: https://my.1password.com/ → Active Sessions
-4. **Telegram**: Message @BotFather → /revoke → @therealidallasj_bot
+4. **Telegram**: Message @BotFather → /revoke → @agentshroud.ai_bot
 
 **Incident Report Includes:**
 - Complete container state snapshots

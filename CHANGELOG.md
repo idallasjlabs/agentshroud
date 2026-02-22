@@ -30,7 +30,7 @@ Two new security modules landing via open PRs (#24, #25). Dependency: P1 must me
 - **Token isolation** — `OP_SERVICE_ACCOUNT_TOKEN` moves to gateway; bot container never holds it
 - **Docker config persistence** — cron `jobs.json` and `apply-patches.js` baked into Docker image
 - **Init script** — `init-openclaw-config.sh` runs on every startup to guarantee agent routing and bindings
-- **Email migration** — bot identity moved from `therealidallasj@gmail.com` → `agentshroud.ai@gmail.com`
+- **Email migration** — bot identity moved from `agentshroud.ai@gmail.com` → `agentshroud.ai@gmail.com`
 - **Op-wrapper hardening** — credential retrieval uses Python subprocess (no shell expansion)
 
 ### Security
@@ -153,7 +153,7 @@ First tagged release with core security framework.
 
 #### Phase 1: Foundation
 - OpenClaw container deployment
-- Telegram bot integration (@therealidallasj_bot)
+- Telegram bot integration (@agentshroud.ai_bot)
 - Basic control UI
 
 #### Phase 2: Gateway Layer
