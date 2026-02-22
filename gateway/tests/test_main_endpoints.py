@@ -31,7 +31,7 @@ async def test_status_no_auth_required(client):
     assert resp.status_code == 200
     data = resp.json()
     assert data["status"] == "healthy"
-    assert data["version"] == "0.1.0"
+    assert data["version"] == "0.5.0"
     assert data["config_loaded"] is True
     assert "pii_engine" in data
 
