@@ -667,10 +667,11 @@ class TestWebAPI:
     def client(self):
         from fastapi import FastAPI
         from fastapi.testclient import TestClient
-        from gateway.web.api import router
+        from gateway.web.api import router, require_auth
 
         app = FastAPI()
         app.include_router(router)
+        app.dependency_overrides[require_auth] = lambda: "test-token"
         return TestClient(app)
 
     @patch("gateway.web.api._get_engine")
@@ -850,10 +851,11 @@ class TestConfigRoundTrip:
     def client(self):
         from fastapi import FastAPI
         from fastapi.testclient import TestClient
-        from gateway.web.api import router
+        from gateway.web.api import router, require_auth
 
         app = FastAPI()
         app.include_router(router)
+        app.dependency_overrides[require_auth] = lambda: "test-token"
         return TestClient(app)
 
     def test_put_then_get(self, client, tmp_path, monkeypatch):

@@ -289,6 +289,7 @@ async def update_config(
 
     # Validate config keys against allowlist
     ALLOWED_TOP_KEYS = {
+        "gateway",
         "runtime",
         "security",
         "services",
