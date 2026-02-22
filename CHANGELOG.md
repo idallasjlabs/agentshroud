@@ -1,17 +1,80 @@
-# Changelog
+# Changelog — AgentShroud™
 
-All notable changes to AgentShroud (AgentShroud) will be documented in this file.
+All notable changes to AgentShroud™ will be documented in this file.
+AgentShroud™ is a trademark of Isaiah Dallas Jefferson, Jr., first used in February 2026. Federal trademark registration pending.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ---
 
-## [1.0.0] - 2026-02-18
+## [Unreleased] — feat/http-connect-proxy + feat/credential-isolation
 
 ### Summary
 
-**First stable release!** Complete enterprise security proxy with 12 security modules, 351 tests at 92%+ coverage, professional documentation, and CI/CD pipeline.
+Two new security modules landing via open PRs (#24, #25). Dependency: P1 must merge before P2.
+
+### Added
+
+#### P1: HTTP CONNECT Proxy (PR #24)
+- **HTTP CONNECT proxy** on port 8181 — all bot outbound traffic routed through gateway
+- **Domain allowlist enforcement** — default-deny; only approved domains reachable
+- **Traffic statistics** endpoint (`GET /proxy/status`) — allowed/blocked counts, recent requests
+- **AppState integration** — proxy lifecycle tied to FastAPI lifespan
+
+#### P2: Credential Isolation (PR #25)
+- **`/credentials/op-proxy` endpoint** — bot sends `op://` reference, gateway reads secret from 1Password
+- **Allowlist validation** — only paths matching `op://AgentShroud Bot Credentials/*` are permitted
+- **Path traversal protection** — `fnmatch` pattern check blocks any reference outside allowed vault
+- **OpProxyRequest model** — typed Pydantic request for credential proxy
+- **Token isolation** — `OP_SERVICE_ACCOUNT_TOKEN` moves to gateway; bot container never holds it
+- **Docker config persistence** — cron `jobs.json` and `apply-patches.js` baked into Docker image
+- **Init script** — `init-openclaw-config.sh` runs on every startup to guarantee agent routing and bindings
+- **Email migration** — bot identity moved from `therealidallasj@gmail.com` → `agentshroud.ai@gmail.com`
+- **Op-wrapper hardening** — credential retrieval uses Python subprocess (no shell expansion)
+
+### Security
+- 1Password service account token isolated to gateway — eliminates bot-side credential exposure
+- Bot outbound HTTP restricted to approved domain allowlist
+- Shell expansion credential leak pattern eliminated in `op-wrapper.sh`
+
+---
+
+## [0.5.0] - 2026-02-21
+
+### Summary
+
+Full visibility release — all agent routing, binding, and session issues resolved. Bot responses
+now reliably reach the main agent (claude-opus-4-6). XML function-call leak to Telegram eliminated.
+
+### Fixed
+
+#### Agent Routing (P0)
+- **Main agent not default**: collaborator was sole entry in `agents.list` → all isolated sessions
+  routed to collaborator (which has `exec`, `browser`, `cron` in deny list)
+- **Fix**: added `main` as first entry in `agents.list` → main is now the system default
+- **Telegram binding missing**: Isaiah's peer ID (`8096968754`) had no explicit binding → fell
+  through to collaborator default; added explicit `main` binding in `openclaw.json`
+- **sessionTarget mismatch**: cron jobs used `systemEvent` + `sessionTarget: main` → events queue
+  but LLM never executes; reverted all jobs to `isolated` + `agentTurn` + `agentId: main`
+
+#### Security
+- **Leaked Gmail app password purged** from collaborator session logs and cron run logs
+- **Hallucinated cron jobs** (every-minute `cron_TIMESTAMP` IDs) identified as collaborator agent
+  hallucination — never existed in real storage; confirmed clean
+
+### Added
+- **Verified end-to-end**: cron run confirms `sessionKey: agent:main:cron:...`, model `claude-opus-4-6`,
+  real diagnostic output (no XML leak)
+- **54 pre-existing test failures resolved** (P0 gate-clearing)
+
+---
+
+## [0.4.0] - 2026-02-19
+
+### Summary
+
+**Container security toolchain + XML filter security fix.** 18 security modules, MCP proxy, web traffic proxy, full egress control, 951 tests at 92%+ coverage, and defense-in-depth container scanning (Trivy, ClamAV, Falco, Wazuh, OpenSCAP).
 
 ### Added
 
@@ -117,13 +180,17 @@ First tagged release with core security framework.
 
 ---
 
-## Migration Guide: v0.2.0 → v1.0.0
+## Migration Notes
 
-### Breaking Changes
-None. v1.0.0 is backwards compatible with v0.2.0 configurations.
+### v0.4.0 → v0.5.0
+- No breaking changes to the gateway API
+- `openclaw.json` must have `main` as first entry in `agents.list` (handled automatically by `init-openclaw-config.sh`)
+- All cron jobs should use `sessionTarget: isolated` + `payload.kind: agentTurn` + `agentId: main`
 
-### New Required Configuration
-None. All new features are opt-in.
+### v0.3.0 → v0.4.0
+- Container security toolchain requires updated Docker images (Trivy, ClamAV, Falco, Wazuh, OpenSCAP)
+- `filter_xml_blocks` is now active — raw XML tool calls are stripped from agent responses
+- All existing configurations remain compatible
 
 ### Recommended Steps
 1. Update your `.env` with new security module settings (see `examples/recommended.env`)
