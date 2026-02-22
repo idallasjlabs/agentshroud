@@ -1,4 +1,6 @@
-# Contributing to AgentShroud
+# Contributing to AgentShroud™
+
+> *This communication is issued under the AgentShroud™ project. AgentShroud™ is a trademark of Isaiah Jefferson, established February 2026. All project materials, methodologies, architectures, and associated intellectual property are proprietary and confidential. Participation as a collaborator does not transfer ownership, licensing rights, or any claim to the AgentShroud™ brand or codebase without a separate written agreement.*
 
 Thank you for your interest in contributing! This guide covers the process from setup to merge.
 
@@ -92,3 +94,9 @@ We follow the [Contributor Covenant](https://www.contributor-covenant.org/versio
 ## Questions?
 
 Open a [Discussion](https://github.com/idallasj/agentshroud/discussions) or file an issue.
+
+---
+
+AgentShroud™ is a trademark of Isaiah Dallas Jefferson, Jr., first used in February 2026. Protected by common law trademark rights. Federal trademark registration pending. Unauthorized reproduction, distribution, or use of the AgentShroud name or brand is strictly prohibited.
+© 2026 Isaiah Dallas Jefferson, Jr.. All rights reserved.
+See [TRADEMARK.md](TRADEMARK.md).

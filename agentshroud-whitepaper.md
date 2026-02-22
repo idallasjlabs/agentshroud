@@ -1,27 +1,27 @@
-# AgentShroud: Enterprise Security for Autonomous AI Agents
+# AgentShroud: Enterprise Governance for Autonomous AI Agents
 
-**White Paper v1.0 — February 2026**
-**Author: Isaiah Jefferson**
+**White Paper v1.1 — February 2026**
+**Author: Isaiah Dallas Jefferson, Jr., Chief Innovation Engineer**
 **Repository: github.com/idallasj/agentshroud**
-**Version: v0.4.0 (Phase 11)**
+**Version: v0.5.0**
 
 ---
 
 ## Executive Summary
 
-AI agents are being deployed into production with access to email, calendars, files, SSH sessions, and financial accounts — yet the platforms running these agents have virtually no security controls. No PII filtering. No kill switches. No audit trails. No prompt injection defense. The industry is shipping root access to an LLM and hoping for the best.
+AI agents are being deployed into production with access to email, calendars, files, SSH sessions, cloud infrastructure, and financial accounts — yet the platforms running these agents have virtually no security controls. No PII filtering. No kill switches. No audit trails. No prompt injection defense. The industry is shipping privileged system access to an LLM and hoping for the best.
 
-AgentShroud is an open-source security proxy layer that wraps AI agent platforms — starting with OpenClaw, the leading open-source AI personal assistant — and adds enterprise-grade security controls without modifying the underlying platform. It operates as a transparent FastAPI gateway: the agent doesn't know AgentShroud exists, which means platform updates flow through cleanly and the security layer is independently testable and auditable.
+AgentShroud is an open-source, enterprise-grade transparent proxy framework that wraps AI agent platforms — starting with OpenClaw, but designed to govern any MCP-compatible agent including Claude Code, Gemini CLI, and OpenAI Codex — and adds enterprise-grade security controls without modifying the underlying platform. It operates as a transparent FastAPI gateway: the agent doesn't know AgentShroud exists, which means platform updates flow through cleanly and the security layer is independently testable and auditable.
 
-AgentShroud provides 18 security modules: PII sanitization (Microsoft Presidio), a tamper-evident audit ledger (SHA-256 hash chain), a human approval queue for dangerous actions, a three-mode kill switch, an SSH proxy with command injection detection, a real-time security dashboard, AES-256-GCM encrypted memory, prompt injection defense (11+ pattern detectors), a progressive trust system, egress filtering with SSRF protection, container drift detection, container hardening via seccomp profiles and capability dropping, an MCP tool call proxy with per-tool permissions and injection/PII inspection, a web traffic proxy with prompt injection scanning of fetched content, DNS tunneling detection, sub-agent monitoring with trust inheritance, file I/O sandboxing, and an API key isolation vault.
+**v0.5.0 (current)** provides 14 implemented security modules: PII sanitization (Microsoft Presidio), a tamper-evident audit ledger (SHA-256 hash chain), a human approval queue for dangerous actions, a three-mode kill switch, an SSH proxy with command injection detection, a real-time security dashboard, AES-256-GCM encrypted memory, prompt injection defense (11+ pattern detectors), a progressive trust system, egress filtering with SSRF protection, container drift detection, container hardening via seccomp profiles and capability dropping, an HTTP CONNECT proxy that routes all bot outbound traffic through the gateway with domain allowlist enforcement, and a credential isolation layer that proxies 1Password `op://` references through the gateway so the service account token never enters the bot container.
 
-**New in v0.3.0:** AgentShroud now includes a full defense-in-depth container security toolchain — Trivy for build-time CVE scanning, ClamAV for runtime malware detection, Falco for kernel-level syscall monitoring, Wazuh for host integrity monitoring, and OpenSCAP for compliance scanning. All five tools are integrated out of the box: users run `docker-compose up` and get full security instrumentation with zero additional configuration. No other AI agent platform provides any of these capabilities. AgentShroud is the only platform with build-to-runtime container security coverage.
+**v0.4.0 additions:** Three deeper security layers. The **MCP Proxy Layer** intercepts every MCP tool call, applying per-tool permissions, injection/PII inspection, and rate limiting. The **Web Traffic Proxy** routes all outbound HTTP through the gateway, scanning fetched content for prompt injection and blocking SSRF. **Full Egress Control** adds DNS tunneling detection, sub-agent oversight with trust inheritance, file I/O sandboxing, API key isolation, and a defense-in-depth container toolchain (Trivy, ClamAV, Falco, Wazuh, OpenSCAP).
 
-**New in v0.4.0:** Three new security layers that address attack vectors no other platform defends against. The **MCP Proxy Layer** (Phase 9) intercepts every MCP tool call, applying per-tool permissions, injection/PII inspection, and rate limiting — existing MCP servers work without modification. The **Web Traffic Proxy** (Phase 10) routes all outbound HTTP through the gateway, scanning fetched web content for prompt injection (mitigating CVE-2026-22708), blocking SSRF attacks, and detecting PII exfiltration in URLs. **Full Egress Control** (Phase 11) adds DNS tunneling detection, sub-agent oversight with trust inheritance, file I/O sandboxing, API key isolation (keys never in the agent container), and unified multi-channel egress monitoring. All modules default to monitor mode (log and inspect, block only real threats) except the API key vault which enforces by default — a deliberate design principle ensuring security doesn't break functionality.
+**Beyond security:** AgentShroud is simultaneously a production-grade tool, a learning laboratory, and a living proof of concept — built in the open, by a system architect, using the very technologies it governs. The project exists in part to develop hands-on fluency with the current generation of autonomous agent frameworks: Claude Code, OpenAI Codex, Google Gemini CLI, MCP tool orchestration, multi-agent coordination, and enterprise integration with GitHub, Atlassian Jira/Confluence, and AWS. The goal is not theoretical familiarity — it is working knowledge, earned by shipping something real. A system architect (not a traditional developer) directs autonomous agents to build production-quality software, demonstrating that speed and safety are not mutually exclusive.
 
-The entire stack runs on a Raspberry Pi 4 with 8GB RAM. It has 951 tests at 92%+ code coverage. It's open source, it's free, and it's the only solution in its class.
+The entire stack runs on a standard macOS host with Docker. It has 951+ tests at 92%+ code coverage. It's open source, it's free, and it's the only solution in its class.
 
-This paper details the architecture, security controls, compliance posture, and competitive landscape for AgentShroud. It is intended for security engineers evaluating AI agent deployments, CISOs building governance frameworks, and anyone who believes AI agents should be secured like any other privileged system component.
+This paper details the architecture, security controls, compliance posture, and the broader enterprise governance case for AgentShroud. It is intended for security engineers evaluating AI agent deployments, CISOs building governance frameworks, and innovation leaders who believe AI agents should be secured like any other privileged system component.
 
 ---
 
@@ -1236,4 +1236,10 @@ If you're deploying AI agents in production — whether for personal use, for yo
 
 ---
 
-*AgentShroud is open-source software released under the MIT License. This white paper reflects the state of the project as of February 2026 (v0.9.0, Deep Security Hardening complete). All phases through 11 are implemented and tested (951 tests). Features marked as "Planned" are on the roadmap but not yet implemented.*
+*AgentShroud is open-source software released under the MIT License. This white paper reflects the state of the project as of February 2026 (v0.5.0). All phases through P2 credential isolation are implemented and tested (951+ tests). Features marked as "Planned" are on the roadmap but not yet implemented.*
+
+---
+
+AgentShroud™ is a trademark of Isaiah Dallas Jefferson, Jr., first used in February 2026. Protected by common law trademark rights. Federal trademark registration pending. Unauthorized reproduction, distribution, or use of the AgentShroud name or brand is strictly prohibited.
+© 2026 Isaiah Dallas Jefferson, Jr.. All rights reserved.
+See [TRADEMARK.md](TRADEMARK.md).
