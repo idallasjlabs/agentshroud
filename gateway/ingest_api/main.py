@@ -17,6 +17,8 @@ from typing import Annotated
 
 import hmac
 
+from typing import Optional
+
 from fastapi import Depends, FastAPI, HTTPException, Query, Request, WebSocket, status
 from fastapi.responses import JSONResponse, HTMLResponse
 from starlette.responses import RedirectResponse
@@ -42,6 +44,7 @@ from ..ssh_proxy.proxy import SSHProxy
 from .router import ForwardError, MultiAgentRouter
 from .sanitizer import PIISanitizer
 from .event_bus import EventBus, make_event
+from ..proxy.http_proxy import HTTPConnectProxy
 from ..web.api import router as management_api_router
 from ..web.management import router as management_dashboard_router
 from .version_routes import router as version_router
@@ -68,6 +71,7 @@ class AppState:
     approval_queue: ApprovalQueue
     start_time: float
     event_bus: EventBus
+    http_proxy: Optional[HTTPConnectProxy]
 
 
 app_state = AppState()
@@ -142,6 +146,17 @@ async def lifespan(app: FastAPI):
     app_state.event_bus = EventBus()
     logger.info("Event bus initialized")
 
+    # Initialize HTTP CONNECT proxy (port 8181)
+    # Activated in the FINAL PR by setting HTTP_PROXY on the bot container.
+    # Running it now adds zero risk — the bot doesn't use it until then.
+    try:
+        app_state.http_proxy = HTTPConnectProxy()
+        await app_state.http_proxy.start()
+        logger.info("HTTP CONNECT proxy started on port 8181")
+    except Exception as e:
+        logger.warning(f"HTTP CONNECT proxy failed to start: {e} (continuing)")
+        app_state.http_proxy = None
+
     # Record start time
     app_state.start_time = time.time()
 
@@ -154,6 +169,10 @@ async def lifespan(app: FastAPI):
 
     # === SHUTDOWN ===
     logger.info("AgentShroud Gateway shutting down...")
+
+    # Stop HTTP CONNECT proxy
+    if getattr(app_state, "http_proxy", None):
+        await app_state.http_proxy.stop()
 
     # Close ledger
     await app_state.ledger.close()
@@ -380,6 +399,20 @@ async def health_check():
         pii_engine=app_state.sanitizer.get_mode(),
         config_loaded=True,
     )
+
+
+@app.get("/proxy/status")
+async def proxy_status(auth: AuthRequired):
+    """HTTP CONNECT proxy traffic statistics.
+
+    Shows allowed/blocked counts and recent requests.
+    Returns enabled: false if the proxy failed to start.
+    Authentication required.
+    """
+    if not getattr(app_state, "http_proxy", None):
+        return {"enabled": False, "total": 0, "allowed": 0, "blocked": 0, "recent": []}
+    stats = app_state.http_proxy.get_stats()
+    return {"enabled": True, **stats}
 
 
 @app.post(
