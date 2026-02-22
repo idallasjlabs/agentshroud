@@ -2,8 +2,10 @@
 
 import pytest
 from gateway.security.key_vault import (
-    KeyVault, KeyVaultConfig, KeyEntry, KeyScope,
-    KeyInjector, KeyLeakDetector,
+    KeyVault,
+    KeyVaultConfig,
+    KeyInjector,
+    KeyLeakDetector,
 )
 
 
@@ -74,7 +76,9 @@ class TestKeyInjection:
         headers = {"Content-Type": "application/json"}
         result = injector.inject_for_request(
             "https://api.openai.com/v1/chat",
-            headers, agent_id="agent1", key_name="openai",
+            headers,
+            agent_id="agent1",
+            key_name="openai",
         )
         assert "Authorization" in result
         assert "sk-test-openai-key-12345" in result["Authorization"]
@@ -84,7 +88,9 @@ class TestKeyInjection:
         headers = {}
         result = injector.inject_for_request(
             "https://api.github.com/repos",
-            headers, agent_id="agent3", key_name="github",
+            headers,
+            agent_id="agent3",
+            key_name="github",
         )
         assert "Authorization" not in result
 
@@ -93,7 +99,9 @@ class TestKeyInjection:
         headers = {"Content-Type": "application/json", "X-Custom": "value"}
         result = injector.inject_for_request(
             "https://api.openai.com/v1/chat",
-            headers, agent_id="agent1", key_name="openai",
+            headers,
+            agent_id="agent1",
+            key_name="openai",
         )
         assert result["Content-Type"] == "application/json"
         assert result["X-Custom"] == "value"
@@ -126,7 +134,9 @@ class TestKeyRedaction:
 class TestKeyLeakDetection:
     def test_detect_key_in_outbound(self, vault):
         detector = KeyLeakDetector(vault)
-        result = detector.scan_outbound("Here is data sk-test-openai-key-12345 more data")
+        result = detector.scan_outbound(
+            "Here is data sk-test-openai-key-12345 more data"
+        )
         assert result.leak_detected is True
         assert "openai" in result.leaked_key_names
 

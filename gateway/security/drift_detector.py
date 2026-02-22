@@ -125,93 +125,117 @@ class DriftDetector:
 
         # Seccomp profile
         if current.seccomp_profile != baseline.seccomp_profile:
-            alerts.append(DriftAlert(
-                container_id=current.container_id, timestamp=now,
-                category="seccomp",
-                description="Seccomp profile changed",
-                baseline_value=baseline.seccomp_profile,
-                current_value=current.seccomp_profile,
-                severity="critical",
-            ))
+            alerts.append(
+                DriftAlert(
+                    container_id=current.container_id,
+                    timestamp=now,
+                    category="seccomp",
+                    description="Seccomp profile changed",
+                    baseline_value=baseline.seccomp_profile,
+                    current_value=current.seccomp_profile,
+                    severity="critical",
+                )
+            )
 
         # Capabilities
         new_caps = set(current.capabilities) - set(baseline.capabilities)
         if new_caps:
-            alerts.append(DriftAlert(
-                container_id=current.container_id, timestamp=now,
-                category="capabilities",
-                description=f"New capabilities added: {', '.join(sorted(new_caps))}",
-                baseline_value=json.dumps(sorted(baseline.capabilities)),
-                current_value=json.dumps(sorted(current.capabilities)),
-                severity="critical",
-            ))
+            alerts.append(
+                DriftAlert(
+                    container_id=current.container_id,
+                    timestamp=now,
+                    category="capabilities",
+                    description=f"New capabilities added: {', '.join(sorted(new_caps))}",
+                    baseline_value=json.dumps(sorted(baseline.capabilities)),
+                    current_value=json.dumps(sorted(current.capabilities)),
+                    severity="critical",
+                )
+            )
 
         removed_caps = set(baseline.capabilities) - set(current.capabilities)
         if removed_caps:
-            alerts.append(DriftAlert(
-                container_id=current.container_id, timestamp=now,
-                category="capabilities",
-                description=f"Capabilities removed: {', '.join(sorted(removed_caps))}",
-                baseline_value=json.dumps(sorted(baseline.capabilities)),
-                current_value=json.dumps(sorted(current.capabilities)),
-                severity="medium",
-            ))
+            alerts.append(
+                DriftAlert(
+                    container_id=current.container_id,
+                    timestamp=now,
+                    category="capabilities",
+                    description=f"Capabilities removed: {', '.join(sorted(removed_caps))}",
+                    baseline_value=json.dumps(sorted(baseline.capabilities)),
+                    current_value=json.dumps(sorted(current.capabilities)),
+                    severity="medium",
+                )
+            )
 
         # Mounts
         new_mounts = set(current.mounts) - set(baseline.mounts)
         if new_mounts:
-            alerts.append(DriftAlert(
-                container_id=current.container_id, timestamp=now,
-                category="mounts",
-                description=f"New mounts detected: {', '.join(sorted(new_mounts))}",
-                baseline_value=json.dumps(sorted(baseline.mounts)),
-                current_value=json.dumps(sorted(current.mounts)),
-                severity="high",
-            ))
+            alerts.append(
+                DriftAlert(
+                    container_id=current.container_id,
+                    timestamp=now,
+                    category="mounts",
+                    description=f"New mounts detected: {', '.join(sorted(new_mounts))}",
+                    baseline_value=json.dumps(sorted(baseline.mounts)),
+                    current_value=json.dumps(sorted(current.mounts)),
+                    severity="high",
+                )
+            )
 
         # Env vars
         new_env = set(current.env_vars) - set(baseline.env_vars)
         if new_env:
-            alerts.append(DriftAlert(
-                container_id=current.container_id, timestamp=now,
-                category="env",
-                description=f"New environment variables: {', '.join(sorted(new_env))}",
-                baseline_value=json.dumps(sorted(baseline.env_vars)),
-                current_value=json.dumps(sorted(current.env_vars)),
-                severity="high",
-            ))
+            alerts.append(
+                DriftAlert(
+                    container_id=current.container_id,
+                    timestamp=now,
+                    category="env",
+                    description=f"New environment variables: {', '.join(sorted(new_env))}",
+                    baseline_value=json.dumps(sorted(baseline.env_vars)),
+                    current_value=json.dumps(sorted(current.env_vars)),
+                    severity="high",
+                )
+            )
 
         # Image
         if current.image != baseline.image:
-            alerts.append(DriftAlert(
-                container_id=current.container_id, timestamp=now,
-                category="image",
-                description="Container image changed",
-                baseline_value=baseline.image,
-                current_value=current.image,
-                severity="high",
-            ))
+            alerts.append(
+                DriftAlert(
+                    container_id=current.container_id,
+                    timestamp=now,
+                    category="image",
+                    description="Container image changed",
+                    baseline_value=baseline.image,
+                    current_value=current.image,
+                    severity="high",
+                )
+            )
 
         # Security settings
         if current.privileged and not baseline.privileged:
-            alerts.append(DriftAlert(
-                container_id=current.container_id, timestamp=now,
-                category="security",
-                description="Container is now running in privileged mode",
-                baseline_value="privileged=False",
-                current_value="privileged=True",
-                severity="critical",
-            ))
+            alerts.append(
+                DriftAlert(
+                    container_id=current.container_id,
+                    timestamp=now,
+                    category="security",
+                    description="Container is now running in privileged mode",
+                    baseline_value="privileged=False",
+                    current_value="privileged=True",
+                    severity="critical",
+                )
+            )
 
         if not current.read_only and baseline.read_only:
-            alerts.append(DriftAlert(
-                container_id=current.container_id, timestamp=now,
-                category="security",
-                description="Root filesystem is no longer read-only",
-                baseline_value="read_only=True",
-                current_value="read_only=False",
-                severity="high",
-            ))
+            alerts.append(
+                DriftAlert(
+                    container_id=current.container_id,
+                    timestamp=now,
+                    category="security",
+                    description="Root filesystem is no longer read-only",
+                    baseline_value="read_only=True",
+                    current_value="read_only=False",
+                    severity="high",
+                )
+            )
 
         # Store alerts
         for alert in alerts:
@@ -220,17 +244,25 @@ class DriftDetector:
                    (container_id, timestamp, category, description,
                     baseline_value, current_value, severity)
                    VALUES (?, ?, ?, ?, ?, ?, ?)""",
-                (alert.container_id, alert.timestamp, alert.category,
-                 alert.description, alert.baseline_value, alert.current_value,
-                 alert.severity),
+                (
+                    alert.container_id,
+                    alert.timestamp,
+                    alert.category,
+                    alert.description,
+                    alert.baseline_value,
+                    alert.current_value,
+                    alert.severity,
+                ),
             )
         self._conn.commit()
 
         return alerts
 
     def get_alerts(
-        self, container_id: Optional[str] = None,
-        unacknowledged_only: bool = False, limit: int = 100
+        self,
+        container_id: Optional[str] = None,
+        unacknowledged_only: bool = False,
+        limit: int = 100,
     ) -> list[dict]:
         """Retrieve stored drift alerts."""
         query = "SELECT * FROM drift_alerts WHERE 1=1"
@@ -246,10 +278,15 @@ class DriftDetector:
         rows = self._conn.execute(query, params).fetchall()
         return [
             {
-                "id": r[0], "container_id": r[1], "timestamp": r[2],
-                "category": r[3], "description": r[4],
-                "baseline_value": r[5], "current_value": r[6],
-                "severity": r[7], "acknowledged": bool(r[8]),
+                "id": r[0],
+                "container_id": r[1],
+                "timestamp": r[2],
+                "category": r[3],
+                "description": r[4],
+                "baseline_value": r[5],
+                "current_value": r[6],
+                "severity": r[7],
+                "acknowledged": bool(r[8]),
             }
             for r in rows
         ]

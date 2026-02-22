@@ -1,6 +1,5 @@
 """Configuration Validation Tests — example configs and validation."""
 
-import os
 from pathlib import Path
 
 import pytest
@@ -144,36 +143,43 @@ class TestConfigValidation:
 
     def test_invalid_router_url_rejected(self):
         from gateway.ingest_api.config import RouterConfig
+
         with pytest.raises(Exception):
             RouterConfig(default_url="ftp://evil.com")
 
     def test_router_url_must_be_localhost_or_openclaw(self):
         from gateway.ingest_api.config import RouterConfig
+
         with pytest.raises(Exception):
             RouterConfig(default_url="http://attacker.com:8080")
 
     def test_valid_router_url_accepted(self):
         from gateway.ingest_api.config import RouterConfig
+
         config = RouterConfig(default_url="http://localhost:8080")
         assert config.default_url == "http://localhost:8080"
 
     def test_invalid_target_url_rejected(self):
         from gateway.ingest_api.config import RouterConfig
+
         with pytest.raises(Exception):
             RouterConfig(targets={"evil": "http://evil.com:1234"})
 
     def test_empty_content_rejected(self):
         from gateway.ingest_api.models import ForwardRequest
+
         with pytest.raises(Exception):
             ForwardRequest(content="   ", source="api")
 
     def test_invalid_source_rejected(self):
         from gateway.ingest_api.models import ForwardRequest
+
         with pytest.raises(Exception):
             ForwardRequest(content="hello", source="invalid_source")
 
     def test_valid_forward_request(self):
         from gateway.ingest_api.models import ForwardRequest
+
         req = ForwardRequest(content="hello", source="api")
         assert req.source == "api"
 

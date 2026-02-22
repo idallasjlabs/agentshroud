@@ -1,6 +1,5 @@
 """Performance Baseline Tests — latency and throughput benchmarks."""
 
-import asyncio
 import tempfile
 import time
 from pathlib import Path
@@ -13,7 +12,6 @@ from gateway.ingest_api.ledger import DataLedger
 from gateway.ingest_api.sanitizer import PIISanitizer
 from gateway.security.prompt_guard import PromptGuard
 from gateway.security.trust_manager import TrustManager
-
 
 # Realistic test data
 CLEAN_MESSAGES = [
@@ -48,7 +46,13 @@ class TestPIISanitizerPerformance:
     def sanitizer(self):
         config = PIIConfig(
             engine="regex",
-            entities=["US_SSN", "CREDIT_CARD", "PHONE_NUMBER", "EMAIL_ADDRESS", "LOCATION"],
+            entities=[
+                "US_SSN",
+                "CREDIT_CARD",
+                "PHONE_NUMBER",
+                "EMAIL_ADDRESS",
+                "LOCATION",
+            ],
             enabled=True,
         )
         return PIISanitizer(config)
@@ -74,8 +78,9 @@ class TestPIISanitizerPerformance:
             results.append(result)
 
         # All PII messages should have at least 1 redaction
-        assert all(len(r.redactions) >= 1 for r in results), \
-            "Some PII messages had no redactions detected"
+        assert all(
+            len(r.redactions) >= 1 for r in results
+        ), "Some PII messages had no redactions detected"
 
 
 class TestPromptGuardPerformance:
@@ -87,7 +92,9 @@ class TestPromptGuardPerformance:
 
     def test_1000_messages_under_5s(self, guard):
         """Scan 1000 messages in under 5 seconds."""
-        messages = (CLEAN_MESSAGES + PII_MESSAGES + INJECTION_MESSAGES) * (1000 // 15 + 1)
+        messages = (CLEAN_MESSAGES + PII_MESSAGES + INJECTION_MESSAGES) * (
+            1000 // 15 + 1
+        )
         messages = messages[:1000]
 
         start = time.perf_counter()
@@ -101,8 +108,9 @@ class TestPromptGuardPerformance:
         """Injection attempts should be detected even under load."""
         results = [guard.scan(msg) for msg in INJECTION_MESSAGES * 20]
         # All injection messages should score above warn threshold
-        assert all(r.score >= 0.4 for r in results), \
-            "Some injection attempts were not detected"
+        assert all(
+            r.score >= 0.4 for r in results
+        ), "Some injection attempts were not detected"
 
 
 class TestAuditChainPerformance:
@@ -135,7 +143,9 @@ class TestAuditChainPerformance:
             )
         elapsed = time.perf_counter() - start
 
-        assert elapsed < 20.0, f"Audit chain writes took {elapsed:.2f}s (limit: 20s on ARM64)"
+        assert (
+            elapsed < 20.0
+        ), f"Audit chain writes took {elapsed:.2f}s (limit: 20s on ARM64)"
 
     @pytest.mark.asyncio
     async def test_query_after_1000_entries(self, ledger):
@@ -145,7 +155,9 @@ class TestAuditChainPerformance:
                 source="api" if i % 2 == 0 else "shortcut",
                 content=f"Query perf {i}",
                 original_content=f"Query perf {i}",
-                sanitized=False, redaction_count=0, redaction_types=[],
+                sanitized=False,
+                redaction_count=0,
+                redaction_types=[],
                 forwarded_to="agent",
             )
 
@@ -210,11 +222,13 @@ class TestFullPipelineLatency:
     @pytest.mark.asyncio
     async def test_single_message_pipeline_under_100ms(self, ledger):
         """Single message through full pipeline in under 100ms."""
-        sanitizer = PIISanitizer(PIIConfig(
-            engine="regex",
-            entities=["US_SSN", "CREDIT_CARD", "PHONE_NUMBER", "EMAIL_ADDRESS"],
-            enabled=True,
-        ))
+        sanitizer = PIISanitizer(
+            PIIConfig(
+                engine="regex",
+                entities=["US_SSN", "CREDIT_CARD", "PHONE_NUMBER", "EMAIL_ADDRESS"],
+                enabled=True,
+            )
+        )
         guard = PromptGuard()
         tm = TrustManager(db_path=":memory:")
         tm.register_agent("latency-agent")
@@ -226,13 +240,15 @@ class TestFullPipelineLatency:
         # 1. PII sanitization
         pii_result = await sanitizer.sanitize(message)
         # 2. Prompt guard
-        scan = guard.scan(pii_result.sanitized_content)
+        guard.scan(pii_result.sanitized_content)
         # 3. Trust check
-        allowed = tm.is_action_allowed("latency-agent", "read_file")
+        tm.is_action_allowed("latency-agent", "read_file")
         # 4. Audit
         entry = await ledger.record(
-            source="api", content=pii_result.sanitized_content,
-            original_content=message, sanitized=bool(pii_result.redactions),
+            source="api",
+            content=pii_result.sanitized_content,
+            original_content=message,
+            sanitized=bool(pii_result.redactions),
             redaction_count=len(pii_result.redactions),
             redaction_types=pii_result.entity_types_found,
             forwarded_to="test-agent",

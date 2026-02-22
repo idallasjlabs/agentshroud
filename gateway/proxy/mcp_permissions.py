@@ -7,10 +7,10 @@ Trust levels map to permission ceilings, not floors.
 import fnmatch
 import logging
 import time
-from dataclasses import dataclass, field
+from dataclasses import dataclass
 from typing import Optional
 
-from .mcp_config import MCPProxyConfig, MCPServerConfig, MCPToolConfig, PermissionLevel
+from .mcp_config import MCPProxyConfig, MCPServerConfig, PermissionLevel
 
 logger = logging.getLogger("agentshroud.proxy.mcp_permissions")
 
@@ -24,21 +24,40 @@ TRUST_PERMISSION_MAP: dict[int, PermissionLevel] = {
 
 # Tools that are inherently sensitive (pattern-matched)
 SENSITIVE_TOOL_PATTERNS: list[str] = [
-    "*shell*", "*exec*", "*command*", "*rm_*", "*delete*",
-    "*sudo*", "*admin*", "*drop_*", "*truncate*",
+    "*shell*",
+    "*exec*",
+    "*command*",
+    "*rm_*",
+    "*delete*",
+    "*sudo*",
+    "*admin*",
+    "*drop_*",
+    "*truncate*",
 ]
 
 # Tools that are inherently read-only (pattern-matched)
 READ_ONLY_PATTERNS: list[str] = [
-    "*get*", "*list*", "*read*", "*search*", "*query*",
-    "*describe*", "*show*", "*info*", "*status*", "*health*",
-    "*fetch*", "*find*", "*count*", "*browse*",
+    "*get*",
+    "*list*",
+    "*read*",
+    "*search*",
+    "*query*",
+    "*describe*",
+    "*show*",
+    "*info*",
+    "*status*",
+    "*health*",
+    "*fetch*",
+    "*find*",
+    "*count*",
+    "*browse*",
 ]
 
 
 @dataclass
 class PermissionCheck:
     """Result of a permission check."""
+
     allowed: bool
     reason: str = ""
     required_level: Optional[PermissionLevel] = None
@@ -50,6 +69,7 @@ class PermissionCheck:
 @dataclass
 class RateLimitEntry:
     """Track rate limit state for a tool+agent combo."""
+
     count: int = 0
     window_start: float = 0.0
     window_seconds: float = 60.0
@@ -57,7 +77,7 @@ class RateLimitEntry:
 
 class MCPPermissionManager:
     """Manages permissions for MCP tool calls.
-    
+
     Default-allow philosophy: tools work unless there is a specific reason to block.
     """
 
@@ -76,9 +96,11 @@ class MCPPermissionManager:
         """Get trust level, defaulting to 1 (write) for unknown agents."""
         return self._trust_levels.get(agent_id, 1)
 
-    def infer_permission_level(self, tool_name: str, server_config: Optional[MCPServerConfig] = None) -> PermissionLevel:
+    def infer_permission_level(
+        self, tool_name: str, server_config: Optional[MCPServerConfig] = None
+    ) -> PermissionLevel:
         """Infer the permission level needed for a tool based on its name.
-        
+
         Checks explicit config first, then falls back to pattern matching.
         """
         # Check explicit tool config first
@@ -99,23 +121,38 @@ class MCPPermissionManager:
         # Default: WRITE level (generous but not unrestricted)
         return PermissionLevel.WRITE
 
-    def check_agent_server_access(self, agent_id: str, server_name: str) -> PermissionCheck:
+    def check_agent_server_access(
+        self, agent_id: str, server_name: str
+    ) -> PermissionCheck:
         """Check if an agent can access a server at all."""
         server_config = self.config.servers.get(server_name)
         if not server_config:
             # Unknown server — allow but log
-            return PermissionCheck(allowed=True, reason="Unknown server, default allow", logged_only=True)
+            return PermissionCheck(
+                allowed=True, reason="Unknown server, default allow", logged_only=True
+            )
 
         if not server_config.enabled:
-            return PermissionCheck(allowed=False, reason=f"Server {server_name} is disabled")
+            return PermissionCheck(
+                allowed=False, reason=f"Server {server_name} is disabled"
+            )
 
         # Check denylist first
         if server_config.denied_agents and agent_id in server_config.denied_agents:
-            return PermissionCheck(allowed=False, reason=f"Agent {agent_id} denied for server {server_name}")
+            return PermissionCheck(
+                allowed=False,
+                reason=f"Agent {agent_id} denied for server {server_name}",
+            )
 
         # Check allowlist (empty = all allowed)
-        if server_config.allowed_agents and agent_id not in server_config.allowed_agents:
-            return PermissionCheck(allowed=False, reason=f"Agent {agent_id} not in allowlist for {server_name}")
+        if (
+            server_config.allowed_agents
+            and agent_id not in server_config.allowed_agents
+        ):
+            return PermissionCheck(
+                allowed=False,
+                reason=f"Agent {agent_id} not in allowlist for {server_name}",
+            )
 
         # Check minimum trust level
         trust_level = self.get_trust_level(agent_id)
@@ -135,7 +172,7 @@ class MCPPermissionManager:
         tool_name: str,
     ) -> PermissionCheck:
         """Check if an agent can call a specific tool.
-        
+
         Default-allow: only blocks if trust level is clearly insufficient
         for a known-dangerous operation.
         """
@@ -165,7 +202,7 @@ class MCPPermissionManager:
         tool_name: str,
     ) -> PermissionCheck:
         """Check and update rate limits for a tool call.
-        
+
         Returns allowed=True and increments counter, or allowed=False if limited.
         """
         # Get configured rate limit
@@ -187,7 +224,11 @@ class MCPPermissionManager:
         if key not in self._rate_limits:
             # Evict stale entries if over limit
             if len(self._rate_limits) >= self.MAX_RATE_LIMIT_ENTRIES:
-                stale = [k for k, v in self._rate_limits.items() if now - v.window_start > v.window_seconds * 2]
+                stale = [
+                    k
+                    for k, v in self._rate_limits.items()
+                    if now - v.window_start > v.window_seconds * 2
+                ]
                 for k in stale:
                     del self._rate_limits[k]
             self._rate_limits[key] = RateLimitEntry(count=1, window_start=now)

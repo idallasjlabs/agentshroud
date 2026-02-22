@@ -77,7 +77,7 @@ class KeyVault:
         if entry is None:
             return None
         if not self._agent_in_scope(agent_id, entry.scopes):
-            self._log_audit(name, agent_id, "access_denied", f"agent not in scope")
+            self._log_audit(name, agent_id, "access_denied", "agent not in scope")
             return None
         self._log_audit(name, agent_id, "accessed")
         return entry.value
@@ -132,18 +132,24 @@ class KeyVault:
         return "*" in scopes or agent_id in scopes
 
     def _log_audit(self, key_name: str, agent_id: str, action: str, details: str = ""):
-        self._audit.append(KeyAuditEvent(
-            timestamp=time.time(), key_name=key_name,
-            agent_id=agent_id, action=action, details=details,
-        ))
+        self._audit.append(
+            KeyAuditEvent(
+                timestamp=time.time(),
+                key_name=key_name,
+                agent_id=agent_id,
+                action=action,
+                details=details,
+            )
+        )
 
 
 class KeyInjector:
     def __init__(self, vault: KeyVault):
         self.vault = vault
 
-    def inject_for_request(self, url: str, headers: dict,
-                           agent_id: str, key_name: str) -> dict:
+    def inject_for_request(
+        self, url: str, headers: dict, agent_id: str, key_name: str
+    ) -> dict:
         key = self.vault.get_key(key_name, agent_id)
         result = dict(headers)
         if key:
@@ -161,14 +167,21 @@ class KeyLeakDetector:
         matched = self.vault.check_value_match(text)
         for name in matched:
             leaked.append(name)
-            self.vault._log_audit(name, "", "leak_detected", "key found in outbound content")
+            self.vault._log_audit(
+                name, "", "leak_detected", "key found in outbound content"
+            )
 
         # Check generic patterns
         if not leaked:
             for pattern in GENERIC_KEY_PATTERNS:
                 if pattern.search(text):
                     leaked.append("unknown_key_pattern")
-                    self.vault._log_audit("unknown", "", "leak_detected", "generic key pattern in outbound")
+                    self.vault._log_audit(
+                        "unknown",
+                        "",
+                        "leak_detected",
+                        "generic key pattern in outbound",
+                    )
                     break
 
         return LeakScanResult(leak_detected=len(leaked) > 0, leaked_key_names=leaked)

@@ -42,6 +42,7 @@ PORT_SEARCH_RANGE = 100  # Will try up to +100 from base
 @dataclass
 class PortAssignment:
     """Record of a port assignment decision."""
+
     service: str
     requested: int
     assigned: int
@@ -52,6 +53,7 @@ class PortAssignment:
 @dataclass
 class PortResolution:
     """Result of resolving all ports for an instance."""
+
     assignments: dict[str, PortAssignment] = field(default_factory=dict)
     offset_applied: int = 0
     conflicts_found: int = 0
@@ -97,7 +99,9 @@ class PortManager:
             # Double-check by trying to connect (catches TIME_WAIT etc.)
             with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
                 s.settimeout(0.5)
-                result = s.connect_ex((host if host != "0.0.0.0" else "127.0.0.1", port))
+                result = s.connect_ex(
+                    (host if host != "0.0.0.0" else "127.0.0.1", port)
+                )
                 if result == 0:
                     # Something is actually listening
                     return False
@@ -117,9 +121,13 @@ class PortManager:
         except OSError:
             return False
 
-    def find_available_port(self, base: int, host: str = "0.0.0.0",
-                           check_udp: bool = False,
-                           exclude: Optional[set[int]] = None) -> int:
+    def find_available_port(
+        self,
+        base: int,
+        host: str = "0.0.0.0",
+        check_udp: bool = False,
+        exclude: Optional[set[int]] = None,
+    ) -> int:
         """Find next available port starting from base.
 
         Args:
@@ -146,8 +154,9 @@ class PortManager:
             f"No available port found in range {base}-{base + PORT_SEARCH_RANGE}"
         )
 
-    def resolve_ports(self, requested: Optional[dict[str, int]] = None,
-                      auto_resolve: bool = True) -> PortResolution:
+    def resolve_ports(
+        self, requested: Optional[dict[str, int]] = None, auto_resolve: bool = True
+    ) -> PortResolution:
         """Resolve all ports, detecting conflicts and auto-assigning if needed.
 
         Args:
@@ -200,7 +209,9 @@ class PortManager:
                 result.conflicts_found += 1
                 logger.warning(
                     "Port conflict: %s wanted %d, assigned %d",
-                    service, port, new_port,
+                    service,
+                    port,
+                    new_port,
                 )
             else:
                 assignment = PortAssignment(
@@ -218,7 +229,8 @@ class PortManager:
         if result.conflicts_found:
             logger.info(
                 "Port resolution: %d conflict(s) resolved\n%s",
-                result.conflicts_found, result.summary(),
+                result.conflicts_found,
+                result.summary(),
             )
         else:
             logger.info("All ports available:\n%s", result.summary())
@@ -256,6 +268,7 @@ def check_and_report(host: str = "0.0.0.0") -> PortResolution:
 
 if __name__ == "__main__":
     import sys
+
     logging.basicConfig(level=logging.INFO, format="%(message)s")
     host = sys.argv[1] if len(sys.argv) > 1 else "0.0.0.0"
     result = check_and_report(host)

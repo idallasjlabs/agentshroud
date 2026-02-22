@@ -10,7 +10,7 @@ import math
 import re
 import time
 from collections import defaultdict
-from dataclasses import dataclass, field
+from dataclasses import dataclass
 from typing import Optional
 
 logger = logging.getLogger(__name__)
@@ -25,7 +25,9 @@ class EntropyCalculator:
         for c in s:
             freq[c] += 1
         length = len(s)
-        return -sum((count / length) * math.log2(count / length) for count in freq.values())
+        return -sum(
+            (count / length) * math.log2(count / length) for count in freq.values()
+        )
 
 
 @dataclass
@@ -71,7 +73,9 @@ class DNSFilter:
         self.config = config
         self._audit: list[DNSQuery] = []
         self._query_times: dict[str, list[float]] = defaultdict(list)
-        self._hex_re = re.compile(r"^[0-9a-f]{%d,}$" % config.hex_pattern_min_length, re.I)
+        self._hex_re = re.compile(
+            r"^[0-9a-f]{%d,}$" % config.hex_pattern_min_length, re.I
+        )
         self._b64_re = re.compile(
             r"^[A-Za-z0-9+/]{%d,}={0,2}$" % config.base64_pattern_min_length
         )
@@ -107,16 +111,22 @@ class DNSFilter:
             allowed = True  # monitor mode never blocks
 
         query = DNSQuery(
-            timestamp=now, agent_id=agent_id, domain=domain,
-            allowed=allowed, flagged=flagged, reason=reason,
+            timestamp=now,
+            agent_id=agent_id,
+            domain=domain,
+            allowed=allowed,
+            flagged=flagged,
+            reason=reason,
         )
         # Evict oldest entries if at capacity
         if len(self._audit) >= self.MAX_AUDIT_ENTRIES:
-            self._audit = self._audit[-(self.MAX_AUDIT_ENTRIES // 2):]
+            self._audit = self._audit[-(self.MAX_AUDIT_ENTRIES // 2) :]
         self._audit.append(query)
 
         if flagged:
-            logger.warning("DNS query flagged: %s from %s — %s", domain, agent_id, reason)
+            logger.warning(
+                "DNS query flagged: %s from %s — %s", domain, agent_id, reason
+            )
 
         return DNSVerdict(allowed=allowed, flagged=flagged, reason=reason)
 
@@ -141,7 +151,10 @@ class DNSFilter:
             if self._hex_re.match(label):
                 patterns.append(TunnelingPattern("hex_encoding", label, 0.8))
 
-            if self._b64_re.match(label) and len(label) >= self.config.base64_pattern_min_length:
+            if (
+                self._b64_re.match(label)
+                and len(label) >= self.config.base64_pattern_min_length
+            ):
                 patterns.append(TunnelingPattern("base64_encoding", label, 0.9))
 
             entropy = EntropyCalculator.shannon_entropy(label)

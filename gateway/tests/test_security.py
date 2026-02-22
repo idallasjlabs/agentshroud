@@ -1,20 +1,20 @@
 """Security and edge case tests for AgentShroud Gateway"""
 
 import pytest
-from gateway.ingest_api.sanitizer import PIISanitizer
-from gateway.ingest_api.config import PIIConfig
 from gateway.ingest_api.auth import verify_token, RateLimiter
 from gateway.ingest_api.models import ForwardRequest
 import time
 
-
 # === PII Security Tests ===
+
 
 @pytest.mark.asyncio
 async def test_very_large_content(sanitizer):
     """Test handling of very large content (1MB+)"""
     # Create 1MB of content with embedded PII
-    large_content = "Normal text. " * 50000 + "My SSN is 123-45-6789. " + "More text. " * 20000
+    large_content = (
+        "Normal text. " * 50000 + "My SSN is 123-45-6789. " + "More text. " * 20000
+    )
 
     result = await sanitizer.sanitize(large_content)
 
@@ -67,6 +67,7 @@ async def test_null_bytes_in_content(sanitizer):
 
 # === Authentication Security Tests ===
 
+
 def test_constant_time_comparison():
     """Verify token comparison is constant-time"""
     correct_token = "secret-token-12345"
@@ -103,22 +104,17 @@ def test_rate_limiter():
 
 # === Input Validation Tests ===
 
+
 def test_empty_content_rejection():
     """Test that empty content is rejected"""
     with pytest.raises(ValueError, match="content must not be empty"):
-        ForwardRequest(
-            content="   ",  # Only whitespace
-            source="api"
-        )
+        ForwardRequest(content="   ", source="api")  # Only whitespace
 
 
 def test_invalid_source_rejection():
     """Test that invalid source is rejected"""
     with pytest.raises(ValueError, match="source must be one of"):
-        ForwardRequest(
-            content="test",
-            source="invalid_source"
-        )
+        ForwardRequest(content="test", source="invalid_source")
 
 
 def test_valid_sources():
@@ -131,6 +127,7 @@ def test_valid_sources():
 
 
 # === Edge Cases ===
+
 
 @pytest.mark.asyncio
 async def test_nested_pii_patterns(sanitizer):
@@ -159,11 +156,7 @@ async def test_malformed_json_metadata(sanitizer):
     """Test handling of malformed metadata"""
     # This is handled by Pydantic validation in ForwardRequest
     # Metadata is a dict, so Python will validate it
-    request = ForwardRequest(
-        content="test",
-        source="api",
-        metadata={"valid": "dict"}
-    )
+    request = ForwardRequest(content="test", source="api", metadata={"valid": "dict"})
     assert request.metadata == {"valid": "dict"}
 
 
@@ -224,6 +217,7 @@ async def test_extremely_long_content(sanitizer):
 
 
 # === Timing Attack Tests ===
+
 
 def test_timing_attack_resistance():
     """Verify authentication doesn't leak timing information"""

@@ -15,7 +15,9 @@ logger = logging.getLogger(__name__)
 DEFAULT_LOG_DIR = Path("/var/log/security/clamav")
 
 
-def update_virus_db(freshclam_bin: str = "freshclam", timeout: int = 300) -> dict[str, Any]:
+def update_virus_db(
+    freshclam_bin: str = "freshclam", timeout: int = 300
+) -> dict[str, Any]:
     """Update ClamAV virus database using freshclam.
 
     Args:
@@ -103,10 +105,12 @@ def parse_clamscan_output(output: str, returncode: int = 0) -> dict[str, Any]:
         # Infected file: /path/to/file: Eicar-Signature FOUND
         match = re.match(r"^(.+?):\s+(.+?)\s+FOUND$", line)
         if match:
-            infected_files.append({
-                "file": match.group(1),
-                "signature": match.group(2),
-            })
+            infected_files.append(
+                {
+                    "file": match.group(1),
+                    "signature": match.group(2),
+                }
+            )
             continue
 
         # OK lines
@@ -136,6 +140,7 @@ def parse_clamscan_output(output: str, returncode: int = 0) -> dict[str, Any]:
 def save_report(report: dict[str, Any], log_dir: Path = DEFAULT_LOG_DIR) -> Path:
     """Save a ClamAV report to the log directory."""
     import json
+
     log_dir.mkdir(parents=True, exist_ok=True)
     ts = datetime.now(timezone.utc).strftime("%Y%m%d-%H%M%S")
     path = log_dir / f"clamav-{ts}.json"

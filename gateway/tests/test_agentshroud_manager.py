@@ -1,6 +1,5 @@
 """Tests for OpenClaw Version Manager."""
 
-import json
 import os
 import tempfile
 

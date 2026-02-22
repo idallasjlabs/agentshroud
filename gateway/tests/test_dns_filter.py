@@ -1,11 +1,10 @@
 """Tests for DNS exfiltration prevention."""
 
-import time
 import pytest
-from unittest.mock import MagicMock, patch
 from gateway.security.dns_filter import (
-    DNSFilter, DNSFilterConfig, DNSQuery, DNSVerdict,
-    TunnelingPattern, EntropyCalculator,
+    DNSFilter,
+    DNSFilterConfig,
+    EntropyCalculator,
 )
 
 
@@ -64,8 +63,12 @@ class TestNormalDNSResolution:
 
     def test_common_services_allowed(self, dns_filter):
         domains = [
-            "api.openai.com", "pypi.org", "registry.npmjs.org",
-            "github.com", "smtp.gmail.com", "imap.mail.me.com",
+            "api.openai.com",
+            "pypi.org",
+            "registry.npmjs.org",
+            "github.com",
+            "smtp.gmail.com",
+            "imap.mail.me.com",
         ]
         for d in domains:
             v = dns_filter.check(d, agent_id="agent1")
@@ -169,7 +172,9 @@ class TestAuditLogging:
         assert hasattr(logs[0], "allowed")
 
     def test_flagged_queries_in_log(self, dns_filter):
-        dns_filter.check("aGVsbG8gd29ybGQgdGhpcyBpcyBiYXNlNjQ.evil.com", agent_id="agent1")
+        dns_filter.check(
+            "aGVsbG8gd29ybGQgdGhpcyBpcyBiYXNlNjQ.evil.com", agent_id="agent1"
+        )
         flagged = dns_filter.get_flagged_queries(agent_id="agent1")
         assert len(flagged) >= 1
 
