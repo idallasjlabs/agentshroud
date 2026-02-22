@@ -24,7 +24,7 @@ Instead of using simple SSH to run commands on the Raspberry Pi, install OpenCla
 ```
 ┌─────────────────────────┐
 │  Mac (OpenClaw Main)    │
-│  @therealidallasj_bot   │
+│  @agentshroud.ai_bot   │
 │                         │
 │  ┌──────────────────┐   │
 │  │ OpenClaw Bot     │   │
@@ -50,7 +50,7 @@ Instead of using simple SSH to run commands on the Raspberry Pi, install OpenCla
 ```
 ┌─────────────────────────┐
 │  Mac (OpenClaw Main)    │
-│  @therealidallasj_bot   │
+│  @agentshroud.ai_bot   │
 │                         │
 │  ┌──────────────────┐   │
 │  │ OpenClaw Node 1  │   │

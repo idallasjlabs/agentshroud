@@ -1,6 +1,6 @@
 # Quick Reference Card
 
-**Bot**: @therealidallasj_bot | **User**: @therealidallasj | **UI**: http://localhost:18790
+**Bot**: @agentshroud.ai_bot | **User**: @agentshroud.ai | **UI**: http://localhost:18790
 
 ---
 
@@ -131,4 +131,4 @@ nano docker/secrets/anthropic_api_key.txt
 
 ---
 
-**Test**: Message @therealidallasj_bot on Telegram!
+**Test**: Message @agentshroud.ai_bot on Telegram!

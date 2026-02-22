@@ -81,7 +81,7 @@ AgentShroud requires careful setup of **isolated accounts** to maintain the "One
 - ✅ No access to your personal Gmail
 - ✅ Separate recovery email
 
-**Your Account**: `therealidallasj@gmail.com`
+**Your Account**: `agentshroud.ai@gmail.com`
 
 ---
 
@@ -110,7 +110,7 @@ AgentShroud requires careful setup of **isolated accounts** to maintain the "One
 - ✅ Session management
 - ✅ Device authorization
 
-**Your Bot**: `@therealidallasj_bot`
+**Your Bot**: `@agentshroud.ai_bot`
 
 ---
 
@@ -148,7 +148,7 @@ AgentShroud requires careful setup of **isolated accounts** to maintain the "One
 - Shared Vault - Do Not Use (empty) ✅
 
 **1Password CLI**: Installed in Docker container
-**Bot Account**: `therealidallasj@gmail.com`
+**Bot Account**: `agentshroud.ai@gmail.com`
 
 ---
 
@@ -668,8 +668,8 @@ docker compose -f docker/docker-compose.yml restart
 Based on your configuration:
 
 - ✅ Google Voice number (separate from main cell)
-- ✅ Separate Gmail account (therealidallasj@gmail.com)
-- ✅ Separate Telegram account (@therealidallasj_bot)
+- ✅ Separate Gmail account (agentshroud.ai@gmail.com)
+- ✅ Separate Telegram account (@agentshroud.ai_bot)
 - ✅ 1Password account (added to Family plan)
 - ✅ Dedicated vault (AgentShroud Bot Credentials)
 - ✅ No data in default Shared vault

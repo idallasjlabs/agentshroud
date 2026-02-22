@@ -1402,7 +1402,7 @@ openclaw init
 
 # Configure:
 # - Model: anthropic/claude-opus-4-6
-# - Telegram: @therealidallasj_bot
+# - Telegram: @agentshroud.ai_bot
 # - Gateway: localhost:18789
 ```
 
@@ -1444,7 +1444,7 @@ You are part of an autonomous development team working on AgentShroud.
 - Development server: Raspberry Pi 4 (8GB) at <tailscale-ip>
 - Repository: git@github.com:username/agentshroud.git
 - CI/CD: GitHub Actions
-- Communication: Telegram (@therealidallasj_bot)
+- Communication: Telegram (@agentshroud.ai_bot)
 
 ## Workflow
 1. Receive task from user via Telegram

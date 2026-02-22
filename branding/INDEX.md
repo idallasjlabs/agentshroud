@@ -106,7 +106,7 @@ See: `branding/colors/palette.md`
 
 ## 📞 Contact
 
-**Brand Questions:** therealidallasj@gmail.com
+**Brand Questions:** agentshroud.ai@gmail.com
 **Repository:** github.com/idallasj/agentshroud
 
 ---

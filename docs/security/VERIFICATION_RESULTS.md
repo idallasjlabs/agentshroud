@@ -113,7 +113,7 @@ agentshroud-gateway   docker-gateway    "uvicorn gateway.ing…"   gateway    5 
 [startup] Starting OpenClaw gateway...
 [gateway] agent model: anthropic/claude-opus-4-6
 [gateway] listening on ws://0.0.0.0:18789 (PID 53)
-[telegram] [default] starting provider (@therealidallasj_bot)
+[telegram] [default] starting provider (@agentshroud.ai_bot)
 [ws] webchat connected
 ```
 
@@ -223,7 +223,7 @@ This will be validated in the next Telegram interaction test.
 ### Manual Testing (Next Session)
 ```bash
 # 1. Test Telegram integration
-# Send message to @therealidallasj_bot: "Hello"
+# Send message to @agentshroud.ai_bot: "Hello"
 # Verify only user 8096968754 can interact
 
 # 2. Test Control UI
