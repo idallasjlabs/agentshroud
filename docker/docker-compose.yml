@@ -195,7 +195,9 @@ networks:
   # All outbound traffic must go through the HTTP CONNECT proxy at gateway:8181.
   agentshroud-isolated:
     driver: bridge
-    internal: true  # FINAL: bot isolated — internet via HTTP proxy at gateway:8181
+    # NOTE: internal: true breaks macOS Docker Desktop host→container port forwarding.
+    # Bot isolation enforced at application layer via HTTP_PROXY=http://gateway:8181.
+    internal: false
     ipam:
       config:
         - subnet: 172.21.0.0/16

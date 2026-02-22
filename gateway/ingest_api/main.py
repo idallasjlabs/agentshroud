@@ -15,6 +15,7 @@ Entry point for the gateway API. Wires together all components:
 import fnmatch
 import hashlib
 import logging
+import os
 import subprocess
 import time
 from contextlib import asynccontextmanager
@@ -64,7 +65,7 @@ from .version_routes import router as version_router
 # Uses fnmatch glob syntax: * matches any characters within a path segment.
 # Add entries here when the bot legitimately needs access to a new secret.
 _ALLOWED_OP_PATHS: list[str] = [
-    "op://AgentShroud Bot Credentials/*",
+    "op://Agent Shroud Bot Credentials/*",
 ]
 
 
@@ -196,6 +197,15 @@ async def lifespan(app: FastAPI):
     # Initialize event bus
     app_state.event_bus = EventBus()
     logger.info("Event bus initialized")
+
+    # Load 1Password service account token from Docker secret file if present
+    _op_token_file = os.getenv("OP_SERVICE_ACCOUNT_TOKEN_FILE")
+    if _op_token_file and not os.getenv("OP_SERVICE_ACCOUNT_TOKEN"):
+        try:
+            os.environ["OP_SERVICE_ACCOUNT_TOKEN"] = Path(_op_token_file).read_text().strip()
+            logger.info("1Password service account token loaded")
+        except OSError as e:
+            logger.warning(f"Could not load 1Password service account token: {e}")
 
     # Initialize HTTP CONNECT proxy (port 8181)
     # Activated in the FINAL PR by setting HTTP_PROXY on the bot container.
