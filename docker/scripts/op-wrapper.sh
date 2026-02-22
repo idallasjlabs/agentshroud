@@ -31,9 +31,9 @@ if [ -n "${GATEWAY_OP_PROXY_URL:-}" ] && [ -n "${GATEWAY_AUTH_TOKEN:-}" ]; then
             -X POST "${GATEWAY_OP_PROXY_URL}/credentials/op-proxy" \
             -d "{\"reference\":\"${json_ref}\"}" 2>/dev/null) || true
         if [ -n "$response" ]; then
-            # Extract .value from JSON response
-            printf '%s' "$response" | python3 -c \
-                "import sys, json; print(json.load(sys.stdin)['value'], end='')"
+            # Extract .value from JSON response (use node since python3 may not be present)
+            printf '%s' "$response" | node -e \
+                "let d=''; process.stdin.on('data',c=>d+=c); process.stdin.on('end',()=>process.stdout.write(JSON.parse(d).value))"
             exit 0
         fi
         echo "[op-wrapper] ERROR: Gateway op-proxy request failed" >&2

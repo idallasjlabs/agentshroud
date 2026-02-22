@@ -43,7 +43,7 @@ if [ -n "${GATEWAY_AUTH_TOKEN:-}" ] && [ -n "${GATEWAY_OP_PROXY_URL:-}" ]; then
     # Load Brave Search API key
     # Item ID: 6j6ij5tzld6kobvit5tk6ufrhq (Brave Search API - agentshroud.ai@gmail.com)
     BRAVE_API_KEY="$(/usr/local/bin/op-wrapper.sh read \
-        "op://AgentShroud Bot Credentials/6j6ij5tzld6kobvit5tk6ufrhq/brach search api key" 2>/dev/null)" || true
+        "op://Agent Shroud Bot Credentials/6j6ij5tzld6kobvit5tk6ufrhq/brave search api key" 2>/dev/null)" || true
     if [ -n "$BRAVE_API_KEY" ]; then
         export BRAVE_API_KEY
         echo "[startup] ✓ Loaded Brave Search API key"
@@ -52,9 +52,9 @@ if [ -n "${GATEWAY_AUTH_TOKEN:-}" ] && [ -n "${GATEWAY_OP_PROXY_URL:-}" ]; then
     fi
 
     # Load Gmail credentials
-    # Item ID: he6wcfkfieekqkomuxdunal2xa (Gmail - agentshroud.ai)
+    # Item ID: wgblbbbqkmnyobh2xtr6r65k34 (Gmail - agentshroud.ai@gmail.com)
     GMAIL_APP_PASSWORD="$(/usr/local/bin/op-wrapper.sh read \
-        "op://AgentShroud Bot Credentials/he6wcfkfieekqkomuxdunal2xa/agentshroud bot password" 2>/dev/null)" || true
+        "op://Agent Shroud Bot Credentials/wgblbbbqkmnyobh2xtr6r65k34/password" 2>/dev/null)" || true
     if [ -n "$GMAIL_APP_PASSWORD" ]; then
         export GMAIL_APP_PASSWORD
         echo "[startup] ✓ Loaded Gmail app password"
@@ -63,7 +63,7 @@ if [ -n "${GATEWAY_AUTH_TOKEN:-}" ] && [ -n "${GATEWAY_OP_PROXY_URL:-}" ]; then
     fi
 
     GMAIL_USERNAME="$(/usr/local/bin/op-wrapper.sh read \
-        "op://AgentShroud Bot Credentials/he6wcfkfieekqkomuxdunal2xa/username" 2>/dev/null)" || true
+        "op://Agent Shroud Bot Credentials/wgblbbbqkmnyobh2xtr6r65k34/username" 2>/dev/null)" || true
     if [ -n "$GMAIL_USERNAME" ]; then
         export GMAIL_USERNAME
         echo "[startup] ✓ Loaded Gmail username"
