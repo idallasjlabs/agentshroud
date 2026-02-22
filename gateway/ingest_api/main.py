@@ -8,8 +8,10 @@ Entry point for the gateway API. Wires together all components:
 - Authentication
 """
 
+import fnmatch
 import hashlib
 import logging
+import subprocess
 import time
 from contextlib import asynccontextmanager
 from datetime import datetime, timezone
@@ -20,6 +22,7 @@ import hmac
 from typing import Optional
 
 from fastapi import Depends, FastAPI, HTTPException, Query, Request, WebSocket, status
+from pydantic import BaseModel
 from fastapi.responses import JSONResponse, HTMLResponse
 from starlette.responses import RedirectResponse
 from pathlib import Path
@@ -48,6 +51,35 @@ from ..proxy.http_proxy import HTTPConnectProxy
 from ..web.api import router as management_api_router
 from ..web.management import router as management_dashboard_router
 from .version_routes import router as version_router
+
+# === Credential Isolation (P2) ===
+
+# Allowed op:// reference patterns for the gateway op-proxy.
+# Uses fnmatch glob syntax: * matches any characters within a path segment.
+# Add entries here when the bot legitimately needs access to a new secret.
+_ALLOWED_OP_PATHS: list[str] = [
+    "op://AgentShroud Bot Credentials/*",
+]
+
+
+def _is_op_reference_allowed(reference: str) -> bool:
+    """Return True if the op:// reference matches an allowed path pattern."""
+    if not reference or not reference.startswith("op://"):
+        return False
+    # Reject path traversal attempts
+    if ".." in reference:
+        return False
+    for pattern in _ALLOWED_OP_PATHS:
+        if fnmatch.fnmatch(reference, pattern):
+            return True
+    return False
+
+
+class OpProxyRequest(BaseModel):
+    """Request body for POST /credentials/op-proxy."""
+
+    reference: str  # e.g. "op://AgentShroud Bot Credentials/API Keys/openai"
+
 
 # Configure logging
 logging.basicConfig(
@@ -194,6 +226,11 @@ app = FastAPI(
 
 async def auth_dep(request: Request) -> None:
     """Authentication dependency for protected endpoints"""
+    if not hasattr(app_state, "config"):
+        raise HTTPException(
+            status_code=status.HTTP_401_UNAUTHORIZED,
+            detail="Service not initialized",
+        )
     dep = create_auth_dependency(app_state.config)
     await dep(request)
 
@@ -413,6 +450,71 @@ async def proxy_status(auth: AuthRequired):
         return {"enabled": False, "total": 0, "allowed": 0, "blocked": 0, "recent": []}
     stats = app_state.http_proxy.get_stats()
     return {"enabled": True, **stats}
+
+
+@app.post("/credentials/op-proxy")
+async def op_proxy(request: OpProxyRequest, auth: AuthRequired):
+    """1Password credential proxy (P2: credential isolation).
+
+    Reads a secret from 1Password on behalf of the bot. The bot sends an
+    op:// reference; the gateway validates it against the allowlist and
+    returns the value. This keeps the 1Password service account token on
+    the gateway rather than the bot.
+
+    Activated in the FINAL PR when OP_SERVICE_ACCOUNT_TOKEN is moved from
+    the bot to the gateway. Until then, the gateway won't have the token
+    and calls will fail with 502 — that's expected during development.
+
+    Authentication required.
+    """
+    reference = request.reference
+
+    # Validate op:// format
+    if not reference.startswith("op://"):
+        raise HTTPException(
+            status_code=status.HTTP_422_UNPROCESSABLE_ENTITY,
+            detail="reference must start with op://",
+        )
+
+    # Validate against allowlist (also blocks path traversal)
+    if not _is_op_reference_allowed(reference):
+        logger.warning(f"op-proxy: disallowed reference blocked: {reference!r}")
+        raise HTTPException(
+            status_code=status.HTTP_403_FORBIDDEN,
+            detail="op:// reference not in allowed paths",
+        )
+
+    # Call op read on the gateway (requires OP_SERVICE_ACCOUNT_TOKEN env var)
+    try:
+        result = subprocess.run(
+            ["op", "read", reference],
+            capture_output=True,
+            text=True,
+            timeout=10,
+        )
+    except subprocess.TimeoutExpired:
+        logger.error("op-proxy: 1Password read timed out")
+        raise HTTPException(
+            status_code=status.HTTP_504_GATEWAY_TIMEOUT,
+            detail="1Password read timed out",
+        )
+    except FileNotFoundError:
+        logger.error("op-proxy: 'op' CLI not found on gateway")
+        raise HTTPException(
+            status_code=status.HTTP_503_SERVICE_UNAVAILABLE,
+            detail="1Password CLI not available on gateway",
+        )
+
+    if result.returncode != 0:
+        logger.error(f"op-proxy: op read failed (exit {result.returncode})")
+        raise HTTPException(
+            status_code=status.HTTP_502_BAD_GATEWAY,
+            detail="Failed to read secret from 1Password",
+        )
+
+    # Never log the value — only confirm success
+    logger.info("op-proxy: secret read successfully for reference pattern")
+    return {"value": result.stdout.strip()}
 
 
 @app.post(

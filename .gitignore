@@ -12,7 +12,8 @@ llm_settings/mcp-servers/**/.env
 
 # Gitleaks security reports
 **/*gitleaks-report*.json
-
+# openclaw/ runtime data (root-level only — NOT docker/config/openclaw/)
+/openclaw
 # Keys & Certificates
 *.pem
 *.key
