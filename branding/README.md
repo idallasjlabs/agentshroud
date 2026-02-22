@@ -73,7 +73,7 @@ branding/
 
 ## Need Help?
 
-Contact: therealidallasj@gmail.com
+Contact: agentshroud.ai@gmail.com
 
 ---
 

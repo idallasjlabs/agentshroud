@@ -63,7 +63,7 @@ services:
       - agentshroud-internal  # External (localhost access)
       - agentshroud-isolated  # Internal (to AgentShroud)
 
-  # AgentShroud Bot (Real AgentShroud Platform) - therealidallasj
+  # AgentShroud Bot (Real AgentShroud Platform) - agentshroud.ai
   # SECURITY: Fully isolated - NO host filesystem access, NO LAN access
   agentshroud:
     build:

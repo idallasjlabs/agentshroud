@@ -14,7 +14,7 @@ An SSH key has been generated inside the OpenClaw bot container for secure remot
 **Add this public key to your Raspberry Pi and any other hosts the bot should access:**
 
 ```
-ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIE/kQadW0OjqtR7Ersmh+uutCIasXZ9HWUNUCNDEpHLO openclaw-bot@therealidallasj
+ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIE/kQadW0OjqtR7Ersmh+uutCIasXZ9HWUNUCNDEpHLO openclaw-bot@agentshroud.ai
 ```
 
 ---
@@ -33,7 +33,7 @@ ssh idallasj@raspberrypi.tail240ea8.ts.net
 sudo mkdir -p /home/agentshroud-bot/.ssh
 
 # Add the OpenClaw bot's public key
-echo "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIE/kQadW0OjqtR7Ersmh+uutCIasXZ9HWUNUCNDEpHLO openclaw-bot@therealidallasj" | \
+echo "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIE/kQadW0OjqtR7Ersmh+uutCIasXZ9HWUNUCNDEpHLO openclaw-bot@agentshroud.ai" | \
     sudo tee -a /home/agentshroud-bot/.ssh/authorized_keys
 
 # Set correct ownership and permissions
@@ -128,7 +128,7 @@ On the **target machine**:
 ```bash
 # Add the bot's public key to authorized_keys
 mkdir -p ~/.ssh
-echo "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIE/kQadW0OjqtR7Ersmh+uutCIasXZ9HWUNUCNDEpHLO openclaw-bot@therealidallasj" >> ~/.ssh/authorized_keys
+echo "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIE/kQadW0OjqtR7Ersmh+uutCIasXZ9HWUNUCNDEpHLO openclaw-bot@agentshroud.ai" >> ~/.ssh/authorized_keys
 chmod 700 ~/.ssh
 chmod 600 ~/.ssh/authorized_keys
 ```
@@ -187,7 +187,7 @@ docker exec -u node openclaw-bot ssh -T myserver "whoami"
 4. **Key Rotation**: To rotate the key:
    ```bash
    # Generate new key
-   docker exec -u node openclaw-bot ssh-keygen -t ed25519 -C "openclaw-bot@therealidallasj" -f /home/node/.ssh/id_ed25519_new -N ""
+   docker exec -u node openclaw-bot ssh-keygen -t ed25519 -C "openclaw-bot@agentshroud.ai" -f /home/node/.ssh/id_ed25519_new -N ""
 
    # Update authorized_keys on all hosts
    # ... (add new public key)
@@ -349,7 +349,7 @@ docker exec -u node openclaw-bot ssh -G pi-dev | grep -E "hostname|user|identity
 
 # 3. Check public key is on Pi
 ssh idallasj@raspberrypi.tail240ea8.ts.net "sudo cat /home/agentshroud-bot/.ssh/authorized_keys | grep openclaw-bot"
-# Expected: ssh-ed25519 AAAAC3Nza... openclaw-bot@therealidallasj
+# Expected: ssh-ed25519 AAAAC3Nza... openclaw-bot@agentshroud.ai
 
 # 4. Test bot SSH connection
 docker exec -u node openclaw-bot ssh -T -o BatchMode=yes pi-dev "echo 'SSH Success!'"
@@ -382,12 +382,12 @@ All SSH connection details are stored in 1Password:
 
 ### Public Key (Copy-Paste Ready)
 ```
-ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIE/kQadW0OjqtR7Ersmh+uutCIasXZ9HWUNUCNDEpHLO openclaw-bot@therealidallasj
+ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIE/kQadW0OjqtR7Ersmh+uutCIasXZ9HWUNUCNDEpHLO openclaw-bot@agentshroud.ai
 ```
 
 ### One-Liner to Add to Pi
 ```bash
-echo "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIE/kQadW0OjqtR7Ersmh+uutCIasXZ9HWUNUCNDEpHLO openclaw-bot@therealidallasj" | sudo tee -a /home/agentshroud-bot/.ssh/authorized_keys && sudo chown agentshroud-bot:agentshroud-bot /home/agentshroud-bot/.ssh/authorized_keys && sudo chmod 600 /home/agentshroud-bot/.ssh/authorized_keys
+echo "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIE/kQadW0OjqtR7Ersmh+uutCIasXZ9HWUNUCNDEpHLO openclaw-bot@agentshroud.ai" | sudo tee -a /home/agentshroud-bot/.ssh/authorized_keys && sudo chown agentshroud-bot:agentshroud-bot /home/agentshroud-bot/.ssh/authorized_keys && sudo chmod 600 /home/agentshroud-bot/.ssh/authorized_keys
 ```
 
 ### Test Connection

@@ -226,12 +226,12 @@ You MUST manually revoke the following credentials:
 ### 1Password Session (if applicable)
 1. Go to: https://my.1password.com/
 2. Sign in and go to Settings > Active Sessions
-3. Revoke any sessions from "therealidallasj_bot"
+3. Revoke any sessions from "agentshroud.ai_bot"
 
 ### Telegram Bot Token (if needed)
 1. Message @BotFather on Telegram
 2. Send: /revoke
-3. Select: @therealidallasj_bot
+3. Select: @agentshroud.ai_bot
 4. Confirm revocation
 
 ## Next Steps
@@ -290,7 +290,7 @@ EOF
         echo "1. OpenAI:     https://platform.openai.com/api-keys"
         echo "2. Anthropic:  https://console.anthropic.com/settings/keys"
         echo "3. 1Password:  https://my.1password.com/ (Active Sessions)"
-        echo "4. Telegram:   Message @BotFather -> /revoke -> @therealidallasj_bot"
+        echo "4. Telegram:   Message @BotFather -> /revoke -> @agentshroud.ai_bot"
         echo ""
         echo "Full incident report: $INCIDENT_REPORT"
         echo ""

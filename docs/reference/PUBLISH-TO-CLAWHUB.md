@@ -28,8 +28,8 @@ docker exec openclaw-bot npm install -g clawhub
 
 # 2. Create account and login
 docker exec openclaw-bot clawhub login
-# Username: therealidallasj
-# Email: therealidallasj@gmail.com
+# Username: agentshroud.ai
+# Email: agentshroud.ai@gmail.com
 # Password: [Generate with 1Password]
 
 # 3. Publish skill
@@ -72,16 +72,16 @@ docker exec openclaw-bot clawhub login
 Welcome to ClawHub!
 
 ? Create new account or login?: Create new account
-? Username: therealidallasj
-? Email: therealidallasj@gmail.com
+? Username: agentshroud.ai
+? Email: agentshroud.ai@gmail.com
 ? Password: [Enter password]
 ? Confirm password: [Enter password]
 
 Creating account...
 ✓ Account created successfully!
-✓ Logged in as: therealidallasj
+✓ Logged in as: agentshroud.ai
 
-Your account: https://clawhub.com/users/therealidallasj
+Your account: https://clawhub.com/users/agentshroud.ai
 ```
 
 **Important**: Store credentials in 1Password:
@@ -90,9 +90,9 @@ Your account: https://clawhub.com/users/therealidallasj
 # Using 1password-skill
 docker exec openclaw-bot 1password-skill create-item \
   --vault "AgentShroud Bot Credentials" \
-  --title "ClawHub - therealidallasj" \
+  --title "ClawHub - agentshroud.ai" \
   --type "login" \
-  --username "therealidallasj" \
+  --username "agentshroud.ai" \
   --password "[password from signup]" \
   --url "https://clawhub.com"
 ```
@@ -150,8 +150,8 @@ Uploading...
 ✓ Metadata saved
 ✓ Published successfully!
 
-Your skill: https://clawhub.com/skills/therealidallasj/securebrowser
-Install with: clawhub install therealidallasj/securebrowser
+Your skill: https://clawhub.com/skills/agentshroud.ai/securebrowser
+Install with: clawhub install agentshroud.ai/securebrowser
 ```
 
 ---
@@ -163,12 +163,12 @@ Install with: clawhub install therealidallasj/securebrowser
 docker exec openclaw-bot clawhub search securebrowser
 
 # Should show:
-# therealidallasj/securebrowser (1.0.0)
+# agentshroud.ai/securebrowser (1.0.0)
 # Enterprise-grade secure browser automation
 # Downloads: 1 | Stars: 0 | Updated: 2026-02-16
 
 # View skill details
-docker exec openclaw-bot clawhub info therealidallasj/securebrowser
+docker exec openclaw-bot clawhub info agentshroud.ai/securebrowser
 ```
 
 ---
@@ -182,7 +182,7 @@ Test that others can install your skill:
 docker exec openclaw-bot rm -rf /home/node/.openclaw/skills/securebrowser
 
 # Install from ClawHub
-docker exec openclaw-bot clawhub install therealidallasj/securebrowser
+docker exec openclaw-bot clawhub install agentshroud.ai/securebrowser
 
 # Verify it works
 docker exec openclaw-bot openclaw skills check securebrowser
@@ -197,7 +197,7 @@ docker exec openclaw-bot openclaw skills check securebrowser
 ### Add Security Badge
 
 ```bash
-docker exec openclaw-bot clawhub update therealidallasj/securebrowser \
+docker exec openclaw-bot clawhub update agentshroud.ai/securebrowser \
   --badge "security:enterprise" \
   --badge "audit:passed" \
   --badge "owasp:aligned"
@@ -211,7 +211,7 @@ docker exec openclaw-bot python3 /home/node/.openclaw/skills/securebrowser/scrip
   navigate --url "https://www.apple.com" --screenshot
 
 # Upload to ClawHub
-docker exec openclaw-bot clawhub add-screenshot therealidallasj/securebrowser \
+docker exec openclaw-bot clawhub add-screenshot agentshroud.ai/securebrowser \
   /home/node/.openclaw/audit/screenshots/latest.png \
   --caption "Secure navigation to Apple.com"
 ```
@@ -249,7 +249,7 @@ AI agents need browser automation, but standard tools lack security controls. Se
 ## Installation
 
 ```bash
-clawhub install therealidallasj/securebrowser
+clawhub install agentshroud.ai/securebrowser
 ```
 
 ## Documentation
@@ -260,7 +260,7 @@ clawhub install therealidallasj/securebrowser
 ```
 
 ```bash
-docker exec openclaw-bot clawhub update therealidallasj/securebrowser \
+docker exec openclaw-bot clawhub update agentshroud.ai/securebrowser \
   --long-description @CLAWHUB_DESCRIPTION.md
 ```
 
@@ -271,7 +271,7 @@ docker exec openclaw-bot clawhub update therealidallasj/securebrowser \
 ### View Skill Stats
 
 ```bash
-docker exec openclaw-bot clawhub stats therealidallasj/securebrowser
+docker exec openclaw-bot clawhub stats agentshroud.ai/securebrowser
 ```
 
 **Shows**:
@@ -285,7 +285,7 @@ docker exec openclaw-bot clawhub stats therealidallasj/securebrowser
 
 ```bash
 # Who's using your skill?
-docker exec openclaw-bot clawhub analytics therealidallasj/securebrowser --period 7d
+docker exec openclaw-bot clawhub analytics agentshroud.ai/securebrowser --period 7d
 ```
 
 ---
@@ -298,7 +298,7 @@ When you improve the skill:
 # 1. Edit files in /home/node/.openclaw/skills/securebrowser/
 
 # 2. Bump version
-docker exec openclaw-bot clawhub version therealidallasj/securebrowser patch
+docker exec openclaw-bot clawhub version agentshroud.ai/securebrowser patch
 # Increments: 1.0.0 → 1.0.1
 
 # 3. Publish update
@@ -353,8 +353,8 @@ Perfect for:
 • Audited browser interactions
 • Enterprise AI deployments
 
-Install: clawhub install therealidallasj/securebrowser
-Docs: https://clawhub.com/skills/therealidallasj/securebrowser
+Install: clawhub install agentshroud.ai/securebrowser
+Docs: https://clawhub.com/skills/agentshroud.ai/securebrowser
 
 #OpenClaw #AIAgents #Security #Enterprise #BrowserAutomation
 ```
@@ -413,8 +413,8 @@ docker exec openclaw-bot chown -R node:node /home/node/.openclaw/skills/securebr
 
 **You'll know it worked when**:
 
-1. ✅ ClawHub shows your skill: `https://clawhub.com/skills/therealidallasj/securebrowser`
-2. ✅ Others can install: `clawhub install therealidallasj/securebrowser`
+1. ✅ ClawHub shows your skill: `https://clawhub.com/skills/agentshroud.ai/securebrowser`
+2. ✅ Others can install: `clawhub install agentshroud.ai/securebrowser`
 3. ✅ Search finds it: `clawhub search securebrowser`
 4. ✅ Downloads counter increments
 5. ✅ Community feedback appears
@@ -437,10 +437,10 @@ Your enterprise-grade SecureBrowser skill is now:
 ```bash
 # Complete publication in 3 commands:
 docker exec openclaw-bot npm install -g clawhub
-docker exec openclaw-bot clawhub login  # Username: therealidallasj
+docker exec openclaw-bot clawhub login  # Username: agentshroud.ai
 docker exec openclaw-bot clawhub publish /home/node/.openclaw/skills/securebrowser
 ```
 
-**Skill URL**: `https://clawhub.com/skills/therealidallasj/securebrowser` (after publication)
+**Skill URL**: `https://clawhub.com/skills/agentshroud.ai/securebrowser` (after publication)
 
 Let's establish AgentShroud as the gold standard for AI agent security! 🛡️

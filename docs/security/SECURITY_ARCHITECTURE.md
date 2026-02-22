@@ -93,7 +93,7 @@ AgentShroud is an **open-source security framework** that enables safe use of Op
 │ - Port: localhost:18789 (UI access only)                    │
 │ - Network: agentshroud-isolated (no LAN routes)              │
 │ - Filesystem: Docker volumes ONLY (no host mounts)          │
-│ - Identity: therealidallasj@gmail.com (separate account)    │
+│ - Identity: agentshroud.ai@gmail.com (separate account)    │
 │ - Capabilities:                                             │
 │   ✅ Internet access (LLM APIs: OpenAI, Anthropic)          │
 │   ✅ SSH outbound (to systems YOU authorize)                │
@@ -107,8 +107,8 @@ AgentShroud is an **open-source security framework** that enables safe use of Op
 ┌─────────────────────────────────────────────────────────────┐
 │ EXTERNAL RESOURCES (Agent CAN Access)                       │
 │ - LLM APIs (api.openai.com, api.anthropic.com)             │
-│ - Bot's GitHub account (@therealidallasj)                   │
-│ - Bot's email (therealidallasj@gmail.com)                   │
+│ - Bot's GitHub account (@agentshroud.ai)                   │
+│ - Bot's email (agentshroud.ai@gmail.com)                   │
 │ - SSH to authorized systems (test VMs, staging servers)     │
 │ - Bot's Telegram/Discord channels                           │
 └─────────────────────────────────────────────────────────────┘
@@ -273,7 +273,7 @@ docker exec agentshroud-gateway sqlite3 /app/data/ledger.db \
 1. Agent attempts sensitive action
 2. Gateway captures request, adds to approval queue
 3. You receive notification (dashboard, email, Telegram)
-4. You review: "Git push to github.com/therealidallasj/repo - Approve?"
+4. You review: "Git push to github.com/agentshroud.ai/repo - Approve?"
 5. You approve or deny
 6. Gateway forwards approved request to agent
 ```
@@ -314,10 +314,10 @@ secrets:
 
 **Objective**: Agent uses separate accounts, not yours
 
-**Bot accounts** (therealidallasj):
-- GitHub: @therealidallasj (separate from your real account)
-- Email: therealidallasj@gmail.com (separate inbox)
-- Telegram: @therealidallasj_bot
+**Bot accounts** (agentshroud.ai):
+- GitHub: @agentshroud.ai (separate from your real account)
+- Email: agentshroud.ai@gmail.com (separate inbox)
+- Telegram: @agentshroud.ai_bot
 - Digital wallet: Limited funds (e.g., $50 max)
 
 **Your accounts** (never given to agent):
@@ -384,7 +384,7 @@ secrets:
 
 1. **iOS/macOS Shortcuts**
    ```
-   You: Select photo → Share → "Send to therealidallasj"
+   You: Select photo → Share → "Send to agentshroud.ai"
    Shortcut: POST photo to Gateway
    Gateway: Log, sanitize, forward to agent
    Agent: Process photo (no access to other photos)
@@ -400,7 +400,7 @@ secrets:
 
 3. **Email Forwarding**
    ```
-   You: Forward email to therealidallasj@gmail.com
+   You: Forward email to agentshroud.ai@gmail.com
    Email server: Deliver to agent's inbox
    Agent: Process forwarded email (cannot read your inbox)
    ```
@@ -414,7 +414,7 @@ secrets:
 
 5. **Telegram/Discord**
    ```
-   You: Message @therealidallasj_bot
+   You: Message @agentshroud.ai_bot
    Bot: Receive via OpenClaw channel
    Agent: Process message
    ```
@@ -550,9 +550,9 @@ docker run --rm -v agentshroud_gateway-data:/data alpine \
   cat /data/ledger.db > ledger-backup.db
 
 # 3. Revoke bot's API keys
-# - OpenAI dashboard: revoke therealidallasj's key
-# - GitHub: revoke @therealidallasj's token
-# - Email: change therealidallasj@gmail.com password
+# - OpenAI dashboard: revoke agentshroud.ai's key
+# - GitHub: revoke @agentshroud.ai's token
+# - Email: change agentshroud.ai@gmail.com password
 
 # 4. Analyze what happened
 sqlite3 ledger-backup.db "SELECT * FROM ledger ORDER BY timestamp DESC"
