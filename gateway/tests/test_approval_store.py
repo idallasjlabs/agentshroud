@@ -1,6 +1,5 @@
 """Tests for SQLite-backed approval queue persistence."""
 
-import tempfile
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
 

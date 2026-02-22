@@ -1,7 +1,6 @@
 """Tests for the canary verification system."""
 
 import pytest
-import pytest_asyncio
 
 from gateway.security.canary import (
     CANARY_EMAIL,
@@ -69,7 +68,10 @@ async def test_canary_verifies_pii_stripping(canary_pipeline):
     result = await run_canary(pipeline=canary_pipeline)
     assert result.checks["pii"] is True
     pii_detail = next(c for c in result.check_details if c.name == "pii")
-    assert "stripped" in pii_detail.details.lower() or "redaction" in pii_detail.details.lower()
+    assert (
+        "stripped" in pii_detail.details.lower()
+        or "redaction" in pii_detail.details.lower()
+    )
 
 
 @pytest.mark.asyncio

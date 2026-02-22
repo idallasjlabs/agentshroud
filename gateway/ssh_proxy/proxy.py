@@ -4,9 +4,7 @@ Executes SSH commands via asyncio subprocess with validation and timeout enforce
 """
 
 import asyncio
-import os
 import re
-import shlex
 import time
 from dataclasses import dataclass
 
@@ -16,6 +14,7 @@ from gateway.ingest_api.ssh_config import SSHConfig
 @dataclass
 class SSHResult:
     """Result of an SSH command execution"""
+
     stdout: str
     stderr: str
     exit_code: int
@@ -27,14 +26,14 @@ class SSHResult:
 # Comprehensive shell metacharacter/injection patterns
 # Catches: ; | & ` $() ${} $VAR \n \r >> << > < and backslash sequences
 INJECTION_PATTERNS = re.compile(
-    r"[;|&`><]"           # basic shell metacharacters
-    r"|\$\("              # $(...)
-    r"|\$\{"              # ${...}
-    r"|\$[A-Za-z_]"       # $VAR
-    r"|\|\|"              # ||
-    r"|&&"                # &&
-    r"|[\n\r]"            # newlines
-    r"|\\[nrtabfv\\]"     # backslash escape sequences
+    r"[;|&`><]"  # basic shell metacharacters
+    r"|\$\("  # $(...)
+    r"|\$\{"  # ${...}
+    r"|\$[A-Za-z_]"  # $VAR
+    r"|\|\|"  # ||
+    r"|&&"  # &&
+    r"|[\n\r]"  # newlines
+    r"|\\[nrtabfv\\]"  # backslash escape sequences
 )
 
 
@@ -98,7 +97,9 @@ class SSHProxy:
         host = self.config.hosts[host_name]
         return command in host.auto_approve_commands
 
-    async def execute(self, host_name: str, command: str, timeout: int | None = None) -> SSHResult:
+    async def execute(
+        self, host_name: str, command: str, timeout: int | None = None
+    ) -> SSHResult:
         """Execute a command on a remote host via SSH."""
         if host_name not in self.config.hosts:
             raise ValueError(f"Unknown host: {host_name}")
@@ -109,8 +110,10 @@ class SSHProxy:
         # Build SSH command with strict host key checking
         ssh_args = [
             "ssh",
-            "-o", "StrictHostKeyChecking=yes",
-            "-o", "BatchMode=yes",
+            "-o",
+            "StrictHostKeyChecking=yes",
+            "-o",
+            "BatchMode=yes",
         ]
         if host.known_hosts_file:
             ssh_args.extend(["-o", f"UserKnownHostsFile={host.known_hosts_file}"])
@@ -136,9 +139,12 @@ class SSHProxy:
                 await proc.wait()
                 duration = time.monotonic() - start
                 return SSHResult(
-                    stdout="", stderr=f"Timeout: command exceeded {effective_timeout}s",
-                    exit_code=-1, duration_seconds=duration,
-                    host=host_name, command=command,
+                    stdout="",
+                    stderr=f"Timeout: command exceeded {effective_timeout}s",
+                    exit_code=-1,
+                    duration_seconds=duration,
+                    host=host_name,
+                    command=command,
                 )
 
             duration = time.monotonic() - start
@@ -147,17 +153,26 @@ class SSHProxy:
                 stderr=stderr_bytes.decode("utf-8", errors="replace"),
                 exit_code=proc.returncode or 0,
                 duration_seconds=duration,
-                host=host_name, command=command,
+                host=host_name,
+                command=command,
             )
         except OSError as e:
             duration = time.monotonic() - start
             return SSHResult(
-                stdout="", stderr=str(e), exit_code=-1,
-                duration_seconds=duration, host=host_name, command=command,
+                stdout="",
+                stderr=str(e),
+                exit_code=-1,
+                duration_seconds=duration,
+                host=host_name,
+                command=command,
             )
         except asyncio.CancelledError:
             duration = time.monotonic() - start
             return SSHResult(
-                stdout="", stderr="Cancelled", exit_code=-1,
-                duration_seconds=duration, host=host_name, command=command,
+                stdout="",
+                stderr="Cancelled",
+                exit_code=-1,
+                duration_seconds=duration,
+                host=host_name,
+                command=command,
             )

@@ -84,7 +84,10 @@ class AlertDispatcher:
             # Send immediate notification
             self._sent_times.append(now)
             success = self._send_notification(alert)
-            return {"action": "notified" if success else "notify_failed", "alert_id": alert_id}
+            return {
+                "action": "notified" if success else "notify_failed",
+                "alert_id": alert_id,
+            }
         else:
             # Buffer for daily digest
             self._digest_buffer.append(alert)
@@ -130,14 +133,16 @@ class AlertDispatcher:
             import urllib.request
             import urllib.error
 
-            payload = json.dumps({
-                "type": "security_alert",
-                "severity": alert.get("severity", "UNKNOWN"),
-                "tool": alert.get("tool", "unknown"),
-                "message": self._format_alert_message(alert),
-                "alert_id": alert.get("id", ""),
-                "timestamp": datetime.now(timezone.utc).isoformat(),
-            }).encode()
+            payload = json.dumps(
+                {
+                    "type": "security_alert",
+                    "severity": alert.get("severity", "UNKNOWN"),
+                    "tool": alert.get("tool", "unknown"),
+                    "message": self._format_alert_message(alert),
+                    "alert_id": alert.get("id", ""),
+                    "timestamp": datetime.now(timezone.utc).isoformat(),
+                }
+            ).encode()
 
             req = urllib.request.Request(
                 f"{self.gateway_url}/api/alerts",
@@ -200,7 +205,9 @@ class AlertDispatcher:
             Number of entries removed.
         """
         now = time.time()
-        expired = [k for k, v in self._seen_ids.items() if (now - v) > self.dedup_window]
+        expired = [
+            k for k, v in self._seen_ids.items() if (now - v) > self.dedup_window
+        ]
         for k in expired:
             del self._seen_ids[k]
         return len(expired)

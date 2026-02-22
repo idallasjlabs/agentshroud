@@ -1,7 +1,6 @@
 """Documentation Verification Tests — ensure docs match reality."""
 
 import re
-import subprocess
 from pathlib import Path
 
 import pytest
@@ -78,9 +77,13 @@ class TestReadmeModulesMatchCode:
     @pytest.mark.parametrize("module_name,file_path", MODULE_FILES.items())
     def test_module_has_implementation(self, module_name, file_path):
         path = REPO_ROOT / file_path
-        assert path.exists(), f"Module '{module_name}' missing implementation at {file_path}"
+        assert (
+            path.exists()
+        ), f"Module '{module_name}' missing implementation at {file_path}"
         content = path.read_text()
-        assert len(content) > 100, f"Module '{module_name}' at {file_path} appears to be a stub"
+        assert (
+            len(content) > 100
+        ), f"Module '{module_name}' at {file_path} appears to be a stub"
 
 
 class TestSecurityMdAccuracy:
@@ -96,9 +99,11 @@ class TestSecurityMdAccuracy:
     def test_has_security_contact(self, security_md):
         assert "security" in security_md.lower()
         # Should have some contact method
-        assert ("email" in security_md.lower() or
-                "advisories" in security_md.lower() or
-                "@" in security_md)
+        assert (
+            "email" in security_md.lower()
+            or "advisories" in security_md.lower()
+            or "@" in security_md
+        )
 
     def test_has_disclosure_policy(self, security_md):
         assert "Disclosure" in security_md or "disclosure" in security_md
@@ -151,7 +156,9 @@ class TestTestCountAccuracy:
         for test_file in tests_dir.glob("test_*.py"):
             content = test_file.read_text()
             # Count def test_ and async def test_ functions
-            test_count += len(re.findall(r"^\s*(?:async\s+)?def\s+test_", content, re.MULTILINE))
+            test_count += len(
+                re.findall(r"^\s*(?:async\s+)?def\s+test_", content, re.MULTILINE)
+            )
             # Count parametrize decorators (each adds tests)
             test_count += len(re.findall(r"@pytest\.mark\.parametrize", content))
 

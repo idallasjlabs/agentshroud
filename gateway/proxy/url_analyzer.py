@@ -20,15 +20,16 @@ logger = logging.getLogger("agentshroud.proxy.url_analyzer")
 
 class URLVerdict(str, Enum):
     ALLOW = "allow"
-    FLAG = "flag"      # Suspicious but let through
-    BLOCK = "block"    # Hard block (SSRF only)
+    FLAG = "flag"  # Suspicious but let through
+    BLOCK = "block"  # Hard block (SSRF only)
 
 
 @dataclass
 class URLFinding:
     """A single finding from URL analysis."""
-    category: str        # ssrf, pii, exfiltration, suspicious
-    severity: str        # critical, high, medium, low
+
+    category: str  # ssrf, pii, exfiltration, suspicious
+    severity: str  # critical, high, medium, low
     description: str
     detail: str = ""
 
@@ -36,6 +37,7 @@ class URLFinding:
 @dataclass
 class URLAnalysisResult:
     """Result of analyzing a URL."""
+
     url: str
     verdict: URLVerdict = URLVerdict.ALLOW
     findings: list[URLFinding] = field(default_factory=list)
@@ -50,10 +52,15 @@ class URLAnalysisResult:
 
 # --- PII patterns for URL detection ---
 _PII_PATTERNS = [
-    ("email", re.compile(r'[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}')),
-    ("ssn", re.compile(r'\b\d{3}-\d{2}-\d{4}\b')),
-    ("phone", re.compile(r'\b(?:\+?1[-.]?)?\(?\d{3}\)?[-.]?\d{3}[-.]?\d{4}\b')),
-    ("credit_card", re.compile(r'\b(?:4\d{3}|5[1-5]\d{2}|3[47]\d{2}|6(?:011|5\d{2}))[- ]?\d{4}[- ]?\d{4}[- ]?\d{3,4}\b')),
+    ("email", re.compile(r"[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}")),
+    ("ssn", re.compile(r"\b\d{3}-\d{2}-\d{4}\b")),
+    ("phone", re.compile(r"\b(?:\+?1[-.]?)?\(?\d{3}\)?[-.]?\d{3}[-.]?\d{4}\b")),
+    (
+        "credit_card",
+        re.compile(
+            r"\b(?:4\d{3}|5[1-5]\d{2}|3[47]\d{2}|6(?:011|5\d{2}))[- ]?\d{4}[- ]?\d{4}[- ]?\d{3,4}\b"
+        ),
+    ),
 ]
 
 # Known private/reserved networks
@@ -65,16 +72,22 @@ _PRIVATE_NETWORKS = [
     ipaddress.ip_network("169.254.0.0/16"),
     ipaddress.ip_network("0.0.0.0/8"),
     ipaddress.ip_network("::1/128"),
-    ipaddress.ip_network("fc00::/7"),       # IPv6 ULA
-    ipaddress.ip_network("fe80::/10"),      # IPv6 link-local
+    ipaddress.ip_network("fc00::/7"),  # IPv6 ULA
+    ipaddress.ip_network("fe80::/10"),  # IPv6 link-local
 ]
 
 # Localhost hostname variants
-_LOCALHOST_NAMES = frozenset({
-    "localhost", "ip6-localhost", "ip6-loopback",
-    "localhost.localdomain", "0.0.0.0",
-    "127.0.0.1", "[::1]",
-})
+_LOCALHOST_NAMES = frozenset(
+    {
+        "localhost",
+        "ip6-localhost",
+        "ip6-loopback",
+        "localhost.localdomain",
+        "0.0.0.0",
+        "127.0.0.1",
+        "[::1]",
+    }
+)
 
 
 class URLAnalyzer:
@@ -99,10 +112,14 @@ class URLAnalyzer:
         try:
             parsed = urlparse(url)
         except Exception:
-            result.findings.append(URLFinding(
-                category="malformed", severity="medium",
-                description="Malformed URL", detail=url[:200],
-            ))
+            result.findings.append(
+                URLFinding(
+                    category="malformed",
+                    severity="medium",
+                    description="Malformed URL",
+                    detail=url[:200],
+                )
+            )
             result.verdict = URLVerdict.FLAG
             return result
 
@@ -113,11 +130,14 @@ class URLAnalyzer:
         if self._is_ssrf(hostname):
             result.is_ssrf = True
             result.verdict = URLVerdict.BLOCK
-            result.findings.append(URLFinding(
-                category="ssrf", severity="critical",
-                description="SSRF: private/reserved IP or localhost",
-                detail=f"host={hostname}",
-            ))
+            result.findings.append(
+                URLFinding(
+                    category="ssrf",
+                    severity="critical",
+                    description="SSRF: private/reserved IP or localhost",
+                    detail=f"host={hostname}",
+                )
+            )
             return result
 
         # DNS resolution check
@@ -128,11 +148,14 @@ class URLAnalyzer:
                 if self._is_private_ip(resolved):
                     result.is_ssrf = True
                     result.verdict = URLVerdict.BLOCK
-                    result.findings.append(URLFinding(
-                        category="ssrf", severity="critical",
-                        description="SSRF: hostname resolves to private IP",
-                        detail=f"host={hostname} -> {resolved}",
-                    ))
+                    result.findings.append(
+                        URLFinding(
+                            category="ssrf",
+                            severity="critical",
+                            description="SSRF: hostname resolves to private IP",
+                            detail=f"host={hostname} -> {resolved}",
+                        )
+                    )
                     return result
 
         # --- Data exfiltration checks (flag only) ---
@@ -141,11 +164,14 @@ class URLAnalyzer:
         # Check for PII in URL
         for pii_type, pattern in _PII_PATTERNS:
             if pattern.search(full_url):
-                result.findings.append(URLFinding(
-                    category="pii", severity="high",
-                    description=f"Possible {pii_type} in URL",
-                    detail=f"pattern={pii_type}",
-                ))
+                result.findings.append(
+                    URLFinding(
+                        category="pii",
+                        severity="high",
+                        description=f"Possible {pii_type} in URL",
+                        detail=f"pattern={pii_type}",
+                    )
+                )
 
         # Check for base64 in path or query
         self._check_base64(parsed, result)
@@ -153,21 +179,27 @@ class URLAnalyzer:
         # Check for suspiciously long query strings
         query = parsed.query or ""
         if len(query) > 2000:
-            result.findings.append(URLFinding(
-                category="exfiltration", severity="medium",
-                description="Unusually long query string",
-                detail=f"length={len(query)}",
-            ))
+            result.findings.append(
+                URLFinding(
+                    category="exfiltration",
+                    severity="medium",
+                    description="Unusually long query string",
+                    detail=f"length={len(query)}",
+                )
+            )
 
         # Check for many query parameters (potential data dump)
         if query:
             params = parse_qs(query)
             if len(params) > 30:
-                result.findings.append(URLFinding(
-                    category="exfiltration", severity="medium",
-                    description="Large number of query parameters",
-                    detail=f"count={len(params)}",
-                ))
+                result.findings.append(
+                    URLFinding(
+                        category="exfiltration",
+                        severity="medium",
+                        description="Large number of query parameters",
+                        detail=f"count={len(params)}",
+                    )
+                )
 
         # Set verdict
         if result.findings:
@@ -201,7 +233,7 @@ class URLAnalyzer:
                 pass
 
         # Check for octal/hex IP encodings (e.g., 0x7f000001, 0177.0.0.1)
-        if re.match(r'^0[xX][0-9a-fA-F]+$', normalized):
+        if re.match(r"^0[xX][0-9a-fA-F]+$", normalized):
             try:
                 num = int(normalized, 16)
                 if 0 <= num <= 0xFFFFFFFF:
@@ -232,18 +264,25 @@ class URLAnalyzer:
             if isinstance(addr, type(network.network_address)) and addr in network:
                 return True
 
-        return addr.is_private or addr.is_loopback or addr.is_link_local or addr.is_reserved
+        return (
+            addr.is_private
+            or addr.is_loopback
+            or addr.is_link_local
+            or addr.is_reserved
+        )
 
     @staticmethod
     def _resolve_host(hostname: str) -> Optional[str]:
         """Resolve hostname to IP. Returns None on failure.
-        
+
         NOTE: DNS rebinding attacks can change resolution between this check
         and the actual request. For full protection, the HTTP client should
         connect through this proxy and pin the resolved IP for the request.
         """
         try:
-            result = socket.getaddrinfo(hostname, None, socket.AF_UNSPEC, socket.SOCK_STREAM)
+            result = socket.getaddrinfo(
+                hostname, None, socket.AF_UNSPEC, socket.SOCK_STREAM
+            )
             if result:
                 return result[0][4][0]
         except (socket.gaierror, OSError):
@@ -257,11 +296,14 @@ class URLAnalyzer:
         path_segments = (parsed.path or "").split("/")
         for seg in path_segments:
             if len(seg) > 50 and _looks_like_base64(seg):
-                result.findings.append(URLFinding(
-                    category="exfiltration", severity="medium",
-                    description="Possible base64-encoded data in URL path",
-                    detail=f"segment_length={len(seg)}",
-                ))
+                result.findings.append(
+                    URLFinding(
+                        category="exfiltration",
+                        severity="medium",
+                        description="Possible base64-encoded data in URL path",
+                        detail=f"segment_length={len(seg)}",
+                    )
+                )
                 break
 
         # Check query values
@@ -270,21 +312,23 @@ class URLAnalyzer:
             for key, values in params.items():
                 for val in values:
                     if len(val) > 50 and _looks_like_base64(val):
-                        result.findings.append(URLFinding(
-                            category="exfiltration", severity="medium",
-                            description="Possible base64-encoded data in query parameter",
-                            detail=f"param={key}, length={len(val)}",
-                        ))
+                        result.findings.append(
+                            URLFinding(
+                                category="exfiltration",
+                                severity="medium",
+                                description="Possible base64-encoded data in query parameter",
+                                detail=f"param={key}, length={len(val)}",
+                            )
+                        )
                         return  # One finding is enough
-
 
     def analyze_and_pin(self, url: str) -> URLAnalysisResult:
         """Analyze URL and pin resolved IP to mitigate DNS rebinding TOCTOU.
-        
+
         When resolve_dns=True, this method resolves the hostname ONCE and
         returns the resolved IP in the result. Callers MUST use resolved_ip
         for the actual HTTP connection instead of re-resolving the hostname.
-        
+
         This prevents attackers from changing DNS records between our security
         check and the actual request.
         """
@@ -297,11 +341,14 @@ class URLAnalyzer:
                 if self._is_private_ip(resolved):
                     result.is_ssrf = True
                     result.verdict = URLVerdict.BLOCK
-                    result.findings.append(URLFinding(
-                        category='ssrf', severity='critical',
-                        description='SSRF: hostname resolves to private IP (pinned)',
-                        detail=f'host={result.domain} -> {resolved}',
-                    ))
+                    result.findings.append(
+                        URLFinding(
+                            category="ssrf",
+                            severity="critical",
+                            description="SSRF: hostname resolves to private IP (pinned)",
+                            detail=f"host={result.domain} -> {resolved}",
+                        )
+                    )
         return result
 
 
@@ -310,7 +357,7 @@ def _looks_like_base64(s: str) -> bool:
     if len(s) < 20:
         return False
     # Base64 charset: A-Za-z0-9+/= (or URL-safe: A-Za-z0-9-_=)
-    if not re.match(r'^[A-Za-z0-9+/=_-]+$', s):
+    if not re.match(r"^[A-Za-z0-9+/=_-]+$", s):
         return False
     # Must have mix of upper, lower, digits
     has_upper = any(c.isupper() for c in s)

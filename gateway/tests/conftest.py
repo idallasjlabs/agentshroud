@@ -1,6 +1,5 @@
 """Shared test fixtures for AgentShroud Gateway tests"""
 
-import asyncio
 import tempfile
 from pathlib import Path
 

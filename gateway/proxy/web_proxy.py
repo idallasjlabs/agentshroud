@@ -10,29 +10,29 @@ Design principles:
 - Async content scanning to minimize latency
 """
 
-import asyncio
 import logging
 import time
 from dataclasses import dataclass, field
 from enum import Enum
 from typing import Any, Optional
 
-from .url_analyzer import URLAnalyzer, URLAnalysisResult, URLVerdict
-from .web_config import WebProxyConfig, DomainSettings
-from .web_content_scanner import WebContentScanner, ScanResult as ContentScanResult
+from .url_analyzer import URLAnalyzer
+from .web_config import WebProxyConfig
+from .web_content_scanner import WebContentScanner
 
 logger = logging.getLogger("agentshroud.proxy.web_proxy")
 
 
 class ProxyAction(str, Enum):
-    ALLOW = "allow"       # Passed through cleanly
-    FLAG = "flag"         # Passed through but flagged with findings
-    BLOCK = "block"       # Hard blocked (SSRF or denied domain)
+    ALLOW = "allow"  # Passed through cleanly
+    FLAG = "flag"  # Passed through but flagged with findings
+    BLOCK = "block"  # Hard blocked (SSRF or denied domain)
 
 
 @dataclass
 class WebProxyResult:
     """Result of proxying a web request."""
+
     url: str
     action: ProxyAction = ProxyAction.ALLOW
     blocked: bool = False
@@ -97,21 +97,24 @@ class RateLimiter:
             # Evict stale domains if at capacity
             if len(self._windows) >= self.MAX_TRACKED_DOMAINS:
                 now_t = time.time()
-                stale = [d for d, ts in self._windows.items()
-                         if not ts or ts[-1] < now_t - 120]
+                stale = [
+                    d
+                    for d, ts in self._windows.items()
+                    if not ts or ts[-1] < now_t - 120
+                ]
                 for d in stale:
                     del self._windows[d]
                 # If still over, drop oldest
                 if len(self._windows) >= self.MAX_TRACKED_DOMAINS:
-                    oldest_d = min(self._windows,
-                                   key=lambda d: self._windows[d][-1] if self._windows[d] else 0)
+                    oldest_d = min(
+                        self._windows,
+                        key=lambda d: self._windows[d][-1] if self._windows[d] else 0,
+                    )
                     del self._windows[oldest_d]
             self._windows[domain] = []
 
         # Clean old entries
-        self._windows[domain] = [
-            t for t in self._windows[domain] if t > window_start
-        ]
+        self._windows[domain] = [t for t in self._windows[domain] if t > window_start]
 
         if len(self._windows[domain]) >= rpm_limit:
             return False
@@ -167,7 +170,9 @@ class WebProxy:
             "pii_in_responses": 0,
         }
 
-    def check_request(self, url: str, method: str = "GET", headers: Optional[dict] = None) -> WebProxyResult:
+    def check_request(
+        self, url: str, method: str = "GET", headers: Optional[dict] = None
+    ) -> WebProxyResult:
         """Check an outbound HTTP request before it's sent.
 
         This is the pre-flight check. Only SSRF and denied domains are blocked.
@@ -205,10 +210,14 @@ class WebProxy:
             result.block_reason = f"SSRF blocked: {url_result.domain or url}"
             self._stats["blocked"] += 1
             self._stats["blocked_ssrf"] += 1
-            self._audit("web_request_blocked_ssrf", url, {
-                "method": method,
-                "findings": [f.description for f in url_result.findings],
-            })
+            self._audit(
+                "web_request_blocked_ssrf",
+                url,
+                {
+                    "method": method,
+                    "findings": [f.description for f in url_result.findings],
+                },
+            )
             result.processing_time_ms = (time.time() - start) * 1000
             return result
 
@@ -220,9 +229,14 @@ class WebProxy:
             result.block_reason = f"Domain denied: {domain}"
             self._stats["blocked"] += 1
             self._stats["blocked_domain"] += 1
-            self._audit("web_request_blocked_domain", url, {
-                "method": method, "domain": domain,
-            })
+            self._audit(
+                "web_request_blocked_domain",
+                url,
+                {
+                    "method": method,
+                    "domain": domain,
+                },
+            )
             result.processing_time_ms = (time.time() - start) * 1000
             return result
 
@@ -233,34 +247,52 @@ class WebProxy:
                 result.action = ProxyAction.BLOCK
                 result.blocked = True
                 result.rate_limited = True
-                result.block_reason = f"Rate limited: {domain} ({settings.rate_limit_rpm} rpm)"
+                result.block_reason = (
+                    f"Rate limited: {domain} ({settings.rate_limit_rpm} rpm)"
+                )
                 self._stats["blocked"] += 1
                 self._stats["blocked_rate_limit"] += 1
-                self._audit("web_request_rate_limited", url, {
-                    "method": method, "domain": domain,
-                    "limit": settings.rate_limit_rpm,
-                })
+                self._audit(
+                    "web_request_rate_limited",
+                    url,
+                    {
+                        "method": method,
+                        "domain": domain,
+                        "limit": settings.rate_limit_rpm,
+                    },
+                )
                 result.processing_time_ms = (time.time() - start) * 1000
                 return result
 
         # URL findings (flag, don't block)
         if url_result.flagged:
             result.url_findings = [
-                {"category": f.category, "severity": f.severity,
-                 "description": f.description, "detail": f.detail}
+                {
+                    "category": f.category,
+                    "severity": f.severity,
+                    "description": f.description,
+                    "detail": f.detail,
+                }
                 for f in url_result.findings
             ]
             result.action = ProxyAction.FLAG
-            result.security_headers["X-AgentShroud-URL-Flags"] = str(len(url_result.findings))
+            result.security_headers["X-AgentShroud-URL-Flags"] = str(
+                len(url_result.findings)
+            )
             if any(f.category == "pii" for f in url_result.findings):
                 self._stats["pii_in_urls"] += 1
 
         # Audit the request
         if result.action == ProxyAction.FLAG:
             self._stats["flagged"] += 1
-            self._audit("web_request_flagged", url, {
-                "method": method, "findings": result.url_findings,
-            })
+            self._audit(
+                "web_request_flagged",
+                url,
+                {
+                    "method": method,
+                    "findings": result.url_findings,
+                },
+            )
         else:
             self._stats["allowed"] += 1
             self._audit("web_request", url, {"method": method})
@@ -302,30 +334,39 @@ class WebProxy:
             return result
 
         # Content type check (flag suspicious types)
-        if content_type and any(ct in content_type.lower() for ct in self.config.suspicious_content_types):
-            result.content_findings.append({
-                "category": "content_type",
-                "severity": "medium",
-                "description": f"Suspicious content type: {content_type}",
-            })
+        if content_type and any(
+            ct in content_type.lower() for ct in self.config.suspicious_content_types
+        ):
+            result.content_findings.append(
+                {
+                    "category": "content_type",
+                    "severity": "medium",
+                    "description": f"Suspicious content type: {content_type}",
+                }
+            )
 
         # Response size check (flag but don't block)
         domain = ""
         try:
             from urllib.parse import urlparse
+
             domain = (urlparse(url).hostname or "").lower()
         except Exception:
             pass
 
         if domain:
             settings = self.config.get_domain_settings(domain)
-            effective_size = response_size or len(body.encode("utf-8", errors="replace"))
+            effective_size = response_size or len(
+                body.encode("utf-8", errors="replace")
+            )
             if effective_size > settings.max_response_bytes:
-                result.content_findings.append({
-                    "category": "size",
-                    "severity": "low",
-                    "description": f"Response exceeds size limit ({effective_size} > {settings.max_response_bytes})",
-                })
+                result.content_findings.append(
+                    {
+                        "category": "size",
+                        "severity": "low",
+                        "description": f"Response exceeds size limit ({effective_size} > {settings.max_response_bytes})",
+                    }
+                )
 
         # Content scanning
         if self.config.scan_responses and body:
@@ -333,19 +374,23 @@ class WebProxy:
 
             if scan.flagged:
                 for finding in scan.findings:
-                    result.content_findings.append({
-                        "category": finding.category,
-                        "severity": finding.severity.value,
-                        "description": finding.description,
-                        "evidence": finding.evidence[:200],
-                    })
+                    result.content_findings.append(
+                        {
+                            "category": finding.category,
+                            "severity": finding.severity.value,
+                            "description": finding.description,
+                            "evidence": finding.evidence[:200],
+                        }
+                    )
 
             result.prompt_injection_score = scan.prompt_injection_score
             result.has_prompt_injection = scan.has_prompt_injection
 
             if scan.has_prompt_injection:
                 self._stats["prompt_injections_detected"] += 1
-                result.security_headers["X-AgentShroud-Injection-Score"] = f"{scan.prompt_injection_score:.2f}"
+                result.security_headers["X-AgentShroud-Injection-Score"] = (
+                    f"{scan.prompt_injection_score:.2f}"
+                )
                 result.security_headers["X-AgentShroud-Injection-Warning"] = "true"
 
             if scan.has_pii:
@@ -354,23 +399,33 @@ class WebProxy:
         # Set action based on findings
         if result.content_findings:
             result.action = ProxyAction.FLAG
-            self._audit("web_response_flagged", url, {
-                "content_type": content_type,
-                "status_code": status_code,
-                "findings": result.content_findings,
-                "injection_score": result.prompt_injection_score,
-            })
+            self._audit(
+                "web_response_flagged",
+                url,
+                {
+                    "content_type": content_type,
+                    "status_code": status_code,
+                    "findings": result.content_findings,
+                    "injection_score": result.prompt_injection_score,
+                },
+            )
         else:
             result.action = ProxyAction.ALLOW
-            self._audit("web_response", url, {
-                "content_type": content_type,
-                "status_code": status_code,
-            })
+            self._audit(
+                "web_response",
+                url,
+                {
+                    "content_type": content_type,
+                    "status_code": status_code,
+                },
+            )
 
         result.processing_time_ms = (time.time() - start) * 1000
         return result
 
-    def _audit(self, event_type: str, url: str, metadata: dict[str, Any]) -> Optional[str]:
+    def _audit(
+        self, event_type: str, url: str, metadata: dict[str, Any]
+    ) -> Optional[str]:
         """Record an audit entry in the hash chain."""
         if self.audit_chain is None:
             return None

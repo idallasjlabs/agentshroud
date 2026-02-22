@@ -1,11 +1,10 @@
 """Tests for sub-agent oversight and monitoring."""
 
-import time
 import pytest
-from unittest.mock import MagicMock
 from gateway.security.subagent_monitor import (
-    SubagentMonitor, SubagentMonitorConfig, SubagentInfo,
-    SubagentEvent, SubagentEventType,
+    SubagentMonitor,
+    SubagentMonitorConfig,
+    SubagentEventType,
 )
 
 
@@ -47,8 +46,10 @@ class TestSubagentMonitorConfig:
 class TestSubagentTracking:
     def test_register_subagent(self, monitor):
         info = monitor.register_spawn(
-            session_id="sess1", agent_id="sub1",
-            parent_id="main", parent_trust=3,
+            session_id="sess1",
+            agent_id="sub1",
+            parent_id="main",
+            parent_trust=3,
         )
         assert info.agent_id == "sub1"
         assert info.parent_id == "main"
@@ -86,12 +87,16 @@ class TestTrustInheritance:
     def test_trust_violation_flagged(self, monitor):
         """If sub-agent tries tool above its trust, flag it."""
         monitor.register_spawn("sess1", "sub1", "main", 1)
-        result = monitor.check_tool_usage("sess1", "sub1", "send_email", required_trust=3)
+        result = monitor.check_tool_usage(
+            "sess1", "sub1", "send_email", required_trust=3
+        )
         assert result.flagged is True
 
     def test_tool_within_trust_allowed(self, monitor):
         monitor.register_spawn("sess1", "sub1", "main", 3)
-        result = monitor.check_tool_usage("sess1", "sub1", "read_file", required_trust=1)
+        result = monitor.check_tool_usage(
+            "sess1", "sub1", "read_file", required_trust=1
+        )
         assert result.flagged is False
 
 
@@ -157,13 +162,17 @@ class TestPermissionMonitoring:
     def test_monitor_mode_allows_all_tools(self, monitor):
         """In monitor mode, even trust violations are allowed (just flagged)."""
         monitor.register_spawn("sess1", "sub1", "main", 1)
-        result = monitor.check_tool_usage("sess1", "sub1", "send_email", required_trust=3)
+        result = monitor.check_tool_usage(
+            "sess1", "sub1", "send_email", required_trust=3
+        )
         assert result.allowed is True
         assert result.flagged is True
 
     def test_enforce_mode_blocks_trust_violation(self, strict_monitor):
         strict_monitor.register_spawn("sess1", "sub1", "main", 1)
-        result = strict_monitor.check_tool_usage("sess1", "sub1", "send_email", required_trust=3)
+        result = strict_monitor.check_tool_usage(
+            "sess1", "sub1", "send_email", required_trust=3
+        )
         assert result.allowed is False
 
 

@@ -60,7 +60,9 @@ def get_engine(preference: Optional[str] = None) -> ContainerEngine:
     if preference:
         key = preference.lower()
         if key not in engines:
-            raise ValueError(f"Unknown runtime: {preference!r}. Choose from: {list(engines)}")
+            raise ValueError(
+                f"Unknown runtime: {preference!r}. Choose from: {list(engines)}"
+            )
         return engines[key]()
 
     available = detect_runtime()

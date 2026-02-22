@@ -97,7 +97,9 @@ class MultiAgentRouter:
         # Priority 4: Default target
         default_target = self.targets.get(self.config.default_target)
         if not default_target:
-            raise RouterError(f"Default target '{self.config.default_target}' not found")
+            raise RouterError(
+                f"Default target '{self.config.default_target}' not found"
+            )
 
         logger.debug(f"Routing to default target: {self.config.default_target}")
         return default_target
@@ -177,9 +179,7 @@ class MultiAgentRouter:
             logger.error(f"Unexpected error forwarding to {target.name}: {e}")
             raise ForwardError(f"Failed to forward to {target.name}") from e
 
-    async def health_check(
-        self, target: AgentTarget | None = None
-    ) -> dict[str, Any]:
+    async def health_check(self, target: AgentTarget | None = None) -> dict[str, Any]:
         """Check health of one or all agent targets
 
         Args:
@@ -195,9 +195,12 @@ class MultiAgentRouter:
             try:
                 async with httpx.AsyncClient(timeout=5.0) as client:
                     from datetime import timezone
+
                     response = await client.get(f"{t.url}/health")
                     t.healthy = response.status_code == 200
-                    t.last_health_check = datetime.now(timezone.utc).isoformat().replace("+00:00", "Z")
+                    t.last_health_check = (
+                        datetime.now(timezone.utc).isoformat().replace("+00:00", "Z")
+                    )
 
                     results[t.name] = {
                         "healthy": t.healthy,
@@ -207,8 +210,11 @@ class MultiAgentRouter:
 
             except Exception as e:
                 from datetime import timezone
+
                 t.healthy = False
-                t.last_health_check = datetime.now(timezone.utc).isoformat().replace("+00:00", "Z")
+                t.last_health_check = (
+                    datetime.now(timezone.utc).isoformat().replace("+00:00", "Z")
+                )
 
                 results[t.name] = {
                     "healthy": False,

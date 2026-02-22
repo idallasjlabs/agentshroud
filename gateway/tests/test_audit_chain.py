@@ -69,9 +69,13 @@ class TestAuditChainIntegrity:
     async def test_hash_is_sha256(self, ledger):
         """Content hash should be a valid SHA-256 hex digest."""
         entry = await ledger.record(
-            source="api", content="test content",
-            original_content="test content", sanitized=False,
-            redaction_count=0, redaction_types=[], forwarded_to="agent",
+            source="api",
+            content="test content",
+            original_content="test content",
+            sanitized=False,
+            redaction_count=0,
+            redaction_types=[],
+            forwarded_to="agent",
         )
         assert len(entry.content_hash) == 64
         int(entry.content_hash, 16)  # Should be valid hex
@@ -81,9 +85,13 @@ class TestAuditChainIntegrity:
         """Verify hash matches SHA-256 of the content."""
         content = "verify this hash"
         entry = await ledger.record(
-            source="api", content=content,
-            original_content=content, sanitized=False,
-            redaction_count=0, redaction_types=[], forwarded_to="agent",
+            source="api",
+            content=content,
+            original_content=content,
+            sanitized=False,
+            redaction_count=0,
+            redaction_types=[],
+            forwarded_to="agent",
         )
         expected_hash = hashlib.sha256(content.encode("utf-8")).hexdigest()
         assert entry.content_hash == expected_hash
@@ -96,9 +104,13 @@ class TestTamperDetection:
     async def test_entry_retrieval_by_id(self, ledger):
         """Can retrieve specific entry by ID for verification."""
         entry = await ledger.record(
-            source="api", content="tamper test",
-            original_content="tamper test", sanitized=False,
-            redaction_count=0, redaction_types=[], forwarded_to="agent",
+            source="api",
+            content="tamper test",
+            original_content="tamper test",
+            sanitized=False,
+            redaction_count=0,
+            redaction_types=[],
+            forwarded_to="agent",
         )
         retrieved = await ledger.get_entry(entry.id)
         assert retrieved is not None
@@ -114,9 +126,13 @@ class TestTamperDetection:
     async def test_delete_entry_removes_it(self, ledger):
         """Deleted entry is gone (right to erasure)."""
         entry = await ledger.record(
-            source="api", content="to be deleted",
-            original_content="to be deleted", sanitized=False,
-            redaction_count=0, redaction_types=[], forwarded_to="agent",
+            source="api",
+            content="to be deleted",
+            original_content="to be deleted",
+            sanitized=False,
+            redaction_count=0,
+            redaction_types=[],
+            forwarded_to="agent",
         )
         assert await ledger.delete_entry(entry.id)
         assert await ledger.get_entry(entry.id) is None
@@ -135,9 +151,13 @@ class TestChainExportAndVerification:
         """Paginated queries return correct subsets."""
         for i in range(25):
             await ledger.record(
-                source="api", content=f"page test {i}",
-                original_content=f"page test {i}", sanitized=False,
-                redaction_count=0, redaction_types=[], forwarded_to="agent",
+                source="api",
+                content=f"page test {i}",
+                original_content=f"page test {i}",
+                sanitized=False,
+                redaction_count=0,
+                redaction_types=[],
+                forwarded_to="agent",
             )
 
         page1 = await ledger.query(page=1, page_size=10)
@@ -153,9 +173,13 @@ class TestChainExportAndVerification:
         for i in range(10):
             source = "shortcut" if i % 2 == 0 else "api"
             await ledger.record(
-                source=source, content=f"filter test {i}",
-                original_content=f"filter test {i}", sanitized=False,
-                redaction_count=0, redaction_types=[], forwarded_to="agent",
+                source=source,
+                content=f"filter test {i}",
+                original_content=f"filter test {i}",
+                sanitized=False,
+                redaction_count=0,
+                redaction_types=[],
+                forwarded_to="agent",
             )
 
         shortcut_entries = await ledger.query(source="shortcut")
@@ -187,11 +211,16 @@ class TestConcurrentWrites:
     @pytest.mark.asyncio
     async def test_50_concurrent_writes(self, ledger):
         """50 concurrent write operations should all succeed."""
+
         async def write_entry(i):
             return await ledger.record(
-                source="api", content=f"concurrent {i}",
-                original_content=f"concurrent {i}", sanitized=False,
-                redaction_count=0, redaction_types=[], forwarded_to="agent",
+                source="api",
+                content=f"concurrent {i}",
+                original_content=f"concurrent {i}",
+                sanitized=False,
+                redaction_count=0,
+                redaction_types=[],
+                forwarded_to="agent",
             )
 
         results = await asyncio.gather(*[write_entry(i) for i in range(50)])
@@ -206,16 +235,24 @@ class TestConcurrentWrites:
         # Pre-populate
         for i in range(10):
             await ledger.record(
-                source="api", content=f"pre {i}",
-                original_content=f"pre {i}", sanitized=False,
-                redaction_count=0, redaction_types=[], forwarded_to="agent",
+                source="api",
+                content=f"pre {i}",
+                original_content=f"pre {i}",
+                sanitized=False,
+                redaction_count=0,
+                redaction_types=[],
+                forwarded_to="agent",
             )
 
         async def write(i):
             return await ledger.record(
-                source="api", content=f"during {i}",
-                original_content=f"during {i}", sanitized=False,
-                redaction_count=0, redaction_types=[], forwarded_to="agent",
+                source="api",
+                content=f"during {i}",
+                original_content=f"during {i}",
+                sanitized=False,
+                redaction_count=0,
+                redaction_types=[],
+                forwarded_to="agent",
             )
 
         async def read():
@@ -236,9 +273,13 @@ class TestRetention:
         # Create entries (they get auto-expiry based on retention_days)
         for i in range(5):
             await ledger.record(
-                source="api", content=f"retention test {i}",
-                original_content=f"retention test {i}", sanitized=False,
-                redaction_count=0, redaction_types=[], forwarded_to="agent",
+                source="api",
+                content=f"retention test {i}",
+                original_content=f"retention test {i}",
+                sanitized=False,
+                redaction_count=0,
+                redaction_types=[],
+                forwarded_to="agent",
             )
 
         # Normal entries shouldn't be expired (retention_days=90)

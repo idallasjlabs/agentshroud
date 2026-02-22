@@ -27,7 +27,13 @@ class DockerEngine(ContainerEngine):
 
     # -- image -----------------------------------------------------------
 
-    def build(self, dockerfile: str, tag: str, context: str = ".", build_args: Optional[dict[str, str]] = None) -> str:
+    def build(
+        self,
+        dockerfile: str,
+        tag: str,
+        context: str = ".",
+        build_args: Optional[dict[str, str]] = None,
+    ) -> str:
         cmd = [self._cli, "build", "-f", dockerfile, "-t", tag]
         for k, v in (build_args or {}).items():
             cmd += ["--build-arg", f"{k}={v}"]

@@ -1,14 +1,11 @@
 """Tests for authentication and rate limiting"""
 
-import hmac
 import time
 
 import pytest
-from fastapi import HTTPException, Request
-from fastapi.testclient import TestClient
+from fastapi import HTTPException
 
 from gateway.ingest_api.auth import RateLimiter, create_auth_dependency, verify_token
-from gateway.ingest_api.config import GatewayConfig
 
 
 def test_verify_token_valid():

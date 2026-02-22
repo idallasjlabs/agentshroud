@@ -196,10 +196,13 @@ def generate_summary(alerts: list[dict[str, Any]]) -> dict[str, Any]:
         status = "clean"
 
     # Files modified
-    modified_files = list({
-        a["file_path"] for a in fim_events
-        if a.get("file_path") and a.get("alert_type") == "file_integrity_modified"
-    })
+    modified_files = list(
+        {
+            a["file_path"]
+            for a in fim_events
+            if a.get("file_path") and a.get("alert_type") == "file_integrity_modified"
+        }
+    )
 
     return {
         "tool": "wazuh",

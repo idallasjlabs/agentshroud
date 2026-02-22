@@ -1,8 +1,5 @@
 """Tests for configuration loading"""
 
-import pytest
-from pathlib import Path
-
 from gateway.ingest_api.config import load_config
 
 

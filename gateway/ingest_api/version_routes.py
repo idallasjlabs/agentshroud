@@ -7,7 +7,7 @@ approval through the approval queue before execution.
 import logging
 from typing import Any
 
-from fastapi import APIRouter, Depends, HTTPException
+from fastapi import APIRouter, HTTPException
 from pydantic import BaseModel, Field
 
 from ..tools.agentshroud_manager import (
@@ -30,7 +30,9 @@ class VersionRequest(BaseModel):
     """Request for version change operations."""
 
     target_version: str = Field(..., description="Target version (semver)")
-    approval_id: str | None = Field(None, description="Approval queue ID (required for mutations)")
+    approval_id: str | None = Field(
+        None, description="Approval queue ID (required for mutations)"
+    )
     dry_run: bool = Field(False, description="Preview without executing")
 
 

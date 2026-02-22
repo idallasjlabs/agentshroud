@@ -3,27 +3,25 @@
 Design: log-and-allow for ambiguous cases, block only clear threats.
 """
 
-import base64
 import logging
-import re
-import unicodedata
 from dataclasses import dataclass, field
 from enum import Enum
 from typing import Any, Optional, Dict, List
-from urllib.parse import unquote
 
 logger = logging.getLogger(__name__)
 
 
 class ThreatLevel(Enum):
     """Threat level classification."""
+
     LOW = "low"
-    MEDIUM = "medium" 
+    MEDIUM = "medium"
     HIGH = "high"
 
 
 class FindingType(Enum):
     """Type of security finding."""
+
     INJECTION = "injection"
     PII = "pii"
     ENCODING = "encoding"
@@ -33,6 +31,7 @@ class FindingType(Enum):
 @dataclass
 class InspectionFinding:
     """A single finding from inspection."""
+
     finding_type: FindingType
     threat_level: ThreatLevel
     field_path: str
@@ -43,27 +42,30 @@ class InspectionFinding:
 @dataclass
 class InspectionResult:
     """Result of inspecting a tool call or response."""
+
     blocked: bool
     block_reason: str
     findings: List[InspectionFinding] = field(default_factory=list)
     sanitized_params: Optional[Dict[str, Any]] = None
-    
+
     @property
     def highest_threat(self) -> ThreatLevel:
         """Return the highest threat level from all findings."""
         if not self.findings:
             return ThreatLevel.LOW
-        
+
         threat_order = {ThreatLevel.LOW: 0, ThreatLevel.MEDIUM: 1, ThreatLevel.HIGH: 2}
-        return max(self.findings, key=lambda f: threat_order[f.threat_level]).threat_level
+        return max(
+            self.findings, key=lambda f: threat_order[f.threat_level]
+        ).threat_level
 
 
 class MCPInspector:
     """Inspects MCP tool calls and responses for security threats."""
-    
+
     def __init__(self, strict_mode: bool = False):
         self.strict_mode = strict_mode
-        
+
     def inspect_tool_call(
         self,
         tool_name: str,
@@ -75,7 +77,7 @@ class MCPInspector:
     ) -> InspectionResult:
         """Inspect an outgoing tool call."""
         findings = []
-        
+
         # Basic implementation for tests to pass
         result = InspectionResult(
             blocked=False,
@@ -85,7 +87,7 @@ class MCPInspector:
         )
         result.threat_level = result.highest_threat
         return result
-        
+
     def inspect_tool_result(
         self,
         result_content: Any,
@@ -94,7 +96,7 @@ class MCPInspector:
     ) -> InspectionResult:
         """Inspect a tool result."""
         findings = []
-        
+
         # Basic implementation for tests to pass
         result = InspectionResult(
             blocked=False,

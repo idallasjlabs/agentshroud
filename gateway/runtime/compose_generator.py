@@ -18,6 +18,7 @@ logger = logging.getLogger("agentshroud.runtime.compose")
 @dataclass
 class ServiceDef:
     """Definition of a single service for compose generation."""
+
     name: str
     image: str
     build: Optional[str] = None  # Dockerfile/Containerfile path
@@ -44,14 +45,22 @@ DEFAULT_SERVICES = [
         image="agentshroud-gateway:latest",
         build="gateway/Dockerfile",
         ports=["127.0.0.1:8080:8080"],
-        volumes=["gateway-data:/app/data", "./agentshroud.yaml:/app/agentshroud.yaml:ro"],
+        volumes=[
+            "gateway-data:/app/data",
+            "./agentshroud.yaml:/app/agentshroud.yaml:ro",
+        ],
         networks=["agentshroud-internal"],
         security_opt=["no-new-privileges"],
         cap_drop=["ALL"],
         cap_add=["NET_BIND_SERVICE"],
         read_only=True,
         healthcheck={
-            "test": ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://127.0.0.1:8080/status')"],
+            "test": [
+                "CMD",
+                "python",
+                "-c",
+                "import urllib.request; urllib.request.urlopen('http://127.0.0.1:8080/status')",
+            ],
             "interval": "30s",
             "timeout": "5s",
             "retries": 3,
@@ -181,8 +190,8 @@ def generate_apple_script(
         "",
         'ACTION="${1:-up}"',
         "",
-        "if [[ \"$ACTION\" == \"up\" ]]; then",
-        "  echo \"Starting AgentShroud services...\"",
+        'if [[ "$ACTION" == "up" ]]; then',
+        '  echo "Starting AgentShroud services..."',
     ]
 
     for svc in services:

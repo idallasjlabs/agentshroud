@@ -41,7 +41,13 @@ class PodmanEngine(ContainerEngine):
 
     # -- image -----------------------------------------------------------
 
-    def build(self, dockerfile: str, tag: str, context: str = ".", build_args: Optional[dict[str, str]] = None) -> str:
+    def build(
+        self,
+        dockerfile: str,
+        tag: str,
+        context: str = ".",
+        build_args: Optional[dict[str, str]] = None,
+    ) -> str:
         cmd = [self._cli, "build", "-f", dockerfile, "-t", tag]
         for k, v in (build_args or {}).items():
             cmd += ["--build-arg", f"{k}={v}"]
@@ -126,7 +132,11 @@ class PodmanEngine(ContainerEngine):
         for item in data:
             containers.append(
                 ContainerInfo(
-                    name=item.get("Names", [item.get("Name", "")])[0] if isinstance(item.get("Names"), list) else item.get("Names", item.get("Name", "")),
+                    name=(
+                        item.get("Names", [item.get("Name", "")])[0]
+                        if isinstance(item.get("Names"), list)
+                        else item.get("Names", item.get("Name", ""))
+                    ),
                     id=item.get("Id", item.get("ID", "")),
                     image=item.get("Image", ""),
                     status=item.get("Status", item.get("State", "")),

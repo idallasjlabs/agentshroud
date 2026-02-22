@@ -1,20 +1,18 @@
 """Tests for Dashboard endpoints and WebSocket activity feed"""
 
 import asyncio
-import json
-import time
 import pytest
 import pytest_asyncio
-from unittest.mock import patch, AsyncMock
+from unittest.mock import patch
 from httpx import AsyncClient, ASGITransport
 
 from gateway.ingest_api.main import app, app_state, lifespan
-from gateway.ingest_api.event_bus import EventBus, make_event
+from gateway.ingest_api.event_bus import make_event
 
 
 @pytest_asyncio.fixture
 async def client(test_config):
-    with patch('gateway.ingest_api.main.load_config', return_value=test_config):
+    with patch("gateway.ingest_api.main.load_config", return_value=test_config):
         async with lifespan(app):
             transport = ASGITransport(app=app)
             async with AsyncClient(transport=transport, base_url="http://test") as ac:
@@ -25,7 +23,8 @@ async def client(test_config):
 def sync_client(test_config):
     """Sync TestClient for WebSocket tests"""
     from starlette.testclient import TestClient
-    with patch('gateway.ingest_api.main.load_config', return_value=test_config):
+
+    with patch("gateway.ingest_api.main.load_config", return_value=test_config):
         with TestClient(app) as c:
             yield c
 
@@ -96,7 +95,6 @@ def test_ws_activity_receives_events(sync_client):
 
 def test_ws_activity_requires_auth(sync_client):
     """WebSocket /ws/activity rejects bad auth during handshake"""
-    from starlette.websockets import WebSocketDisconnect
     with pytest.raises(Exception):
         with sync_client.websocket_connect("/ws/activity?token=wrong-token") as ws:
             ws.receive_json()
@@ -123,4 +121,8 @@ async def test_dashboard_xss_prevention(client):
         cookies={"dashboard_token": "test-token-12345"},
     )
     assert "onclick" not in resp.text
-    assert "data-action" in resp.text or "data-id" in resp.text or "addEventListener" in resp.text
+    assert (
+        "data-action" in resp.text
+        or "data-id" in resp.text
+        or "addEventListener" in resp.text
+    )

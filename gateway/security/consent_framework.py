@@ -7,6 +7,7 @@ References:
     - Maloyan & Namiot 2026 (arXiv:2601.17548) - MCP security analysis
     - Chen et al. 2026 (arXiv:2602.14364) - Agent configuration vulnerabilities
 """
+
 import re
 import time
 from dataclasses import dataclass, field
@@ -15,6 +16,7 @@ from typing import List, Optional, Dict
 
 class ConfigValidationError(Exception):
     pass
+
 
 class ShellInjectionDetected(ConfigValidationError):
     pass
@@ -38,24 +40,24 @@ class ConsentDecision:
 
 # Patterns that indicate shell injection attempts
 _DANGEROUS_PATTERNS = [
-    re.compile(r'curl\s+.+\|\s*(sh|bash)', re.I),
-    re.compile(r'wget\s+.+&&', re.I),
-    re.compile(r'rm\s+-rf\s+/', re.I),
-    re.compile(r'\|\s*nc\s+', re.I),
-    re.compile(r'`[^`]+`'),
-    re.compile(r'\$\([^)]+\)'),
-    re.compile(r'\|\s*(sh|bash)\b', re.I),
-    re.compile(r'eval\s+', re.I),
-    re.compile(r'base64\s+-d', re.I),
-    re.compile(r'powershell', re.I),
-    re.compile(r'curl\s+https?://\S+\s+\|', re.I),
+    re.compile(r"curl\s+.+\|\s*(sh|bash)", re.I),
+    re.compile(r"wget\s+.+&&", re.I),
+    re.compile(r"rm\s+-rf\s+/", re.I),
+    re.compile(r"\|\s*nc\s+", re.I),
+    re.compile(r"`[^`]+`"),
+    re.compile(r"\$\([^)]+\)"),
+    re.compile(r"\|\s*(sh|bash)\b", re.I),
+    re.compile(r"eval\s+", re.I),
+    re.compile(r"base64\s+-d", re.I),
+    re.compile(r"powershell", re.I),
+    re.compile(r"curl\s+https?://\S+\s+\|", re.I),
 ]
 
 # Patterns suggesting secrets in env values
 _SECRET_PATTERNS = [
-    re.compile(r'^sk-[a-zA-Z0-9]{10,}'),
-    re.compile(r'^(ghp|gho|ghu|ghs|ghr)_[a-zA-Z0-9]{20,}'),
-    re.compile(r'^[a-zA-Z0-9/+=]{40,}$'),
+    re.compile(r"^sk-[a-zA-Z0-9]{10,}"),
+    re.compile(r"^(ghp|gho|ghu|ghs|ghr)_[a-zA-Z0-9]{20,}"),
+    re.compile(r"^[a-zA-Z0-9/+=]{40,}$"),
 ]
 
 
@@ -95,7 +97,9 @@ class ConsentFramework:
         full_args = " ".join(config.args)
         for pattern in _DANGEROUS_PATTERNS:
             if pattern.search(full_args) or pattern.search(config.command):
-                raise ShellInjectionDetected(f"Dangerous pattern detected: {pattern.pattern}")
+                raise ShellInjectionDetected(
+                    f"Dangerous pattern detected: {pattern.pattern}"
+                )
 
         # Check whitelist
         if config.command in self._whitelist:

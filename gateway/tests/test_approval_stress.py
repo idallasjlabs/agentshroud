@@ -16,7 +16,9 @@ from gateway.ingest_api.models import ApprovalRequest
 
 @pytest_asyncio.fixture
 async def queue():
-    config = ApprovalQueueConfig(enabled=True, actions=["email_sending"], timeout_seconds=5)
+    config = ApprovalQueueConfig(
+        enabled=True, actions=["email_sending"], timeout_seconds=5
+    )
     return ApprovalQueue(config)
 
 
@@ -37,6 +39,7 @@ class TestConcurrentApprovalRequests:
     @pytest.mark.asyncio
     async def test_100_concurrent_submissions(self, queue):
         """Submit 100 requests concurrently — all should succeed."""
+
         async def submit_one(i):
             req = ApprovalRequest(
                 action_type="email_sending",
@@ -96,7 +99,11 @@ class TestApprovalTimeout:
         item = await queue.submit(req)
 
         # Manually expire it
-        item.expires_at = (datetime.now(timezone.utc) - timedelta(seconds=10)).isoformat().replace("+00:00", "Z")
+        item.expires_at = (
+            (datetime.now(timezone.utc) - timedelta(seconds=10))
+            .isoformat()
+            .replace("+00:00", "Z")
+        )
 
         with pytest.raises(ValueError, match="expired"):
             await queue.decide(item.request_id, approved=True)
@@ -111,7 +118,11 @@ class TestApprovalTimeout:
         )
         item = await queue.submit(req)
         # Manually expire
-        item.expires_at = (datetime.now(timezone.utc) - timedelta(seconds=10)).isoformat().replace("+00:00", "Z")
+        item.expires_at = (
+            (datetime.now(timezone.utc) - timedelta(seconds=10))
+            .isoformat()
+            .replace("+00:00", "Z")
+        )
 
         pending = await queue.get_pending()
         # The expired item should not be in pending
@@ -126,6 +137,7 @@ class TestApprovalStorePersistence:
     async def test_store_save_and_load(self, store):
         """Items saved to store can be reloaded."""
         from gateway.ingest_api.models import ApprovalQueueItem
+
         now = datetime.now(timezone.utc)
         item = ApprovalQueueItem(
             request_id="test-001",
@@ -155,6 +167,7 @@ class TestApprovalStorePersistence:
             await store1.initialize()
 
             from gateway.ingest_api.models import ApprovalQueueItem
+
             now = datetime.now(timezone.utc)
             item = ApprovalQueueItem(
                 request_id="persist-001",
@@ -163,7 +176,9 @@ class TestApprovalStorePersistence:
                 details={},
                 agent_id="agent-1",
                 submitted_at=now.isoformat().replace("+00:00", "Z"),
-                expires_at=(now + timedelta(hours=1)).isoformat().replace("+00:00", "Z"),
+                expires_at=(now + timedelta(hours=1))
+                .isoformat()
+                .replace("+00:00", "Z"),
                 status="pending",
             )
             await store1.save(item)
@@ -183,6 +198,7 @@ class TestApprovalStorePersistence:
     async def test_store_expires_old_items(self, store):
         """Store marks expired items on load."""
         from gateway.ingest_api.models import ApprovalQueueItem
+
         past = datetime.now(timezone.utc) - timedelta(hours=2)
         item = ApprovalQueueItem(
             request_id="expired-001",
@@ -191,7 +207,9 @@ class TestApprovalStorePersistence:
             details={},
             agent_id="agent-1",
             submitted_at=past.isoformat().replace("+00:00", "Z"),
-            expires_at=(past + timedelta(seconds=10)).isoformat().replace("+00:00", "Z"),
+            expires_at=(past + timedelta(seconds=10))
+            .isoformat()
+            .replace("+00:00", "Z"),
             status="pending",
         )
         await store.save(item)
@@ -203,6 +221,7 @@ class TestApprovalStorePersistence:
     async def test_store_update_status(self, store):
         """Status updates persist."""
         from gateway.ingest_api.models import ApprovalQueueItem
+
         now = datetime.now(timezone.utc)
         item = ApprovalQueueItem(
             request_id="status-001",

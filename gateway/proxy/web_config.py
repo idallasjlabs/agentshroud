@@ -6,7 +6,6 @@ Default-allow policy: everything passes unless explicitly denied or SSRF.
 
 import logging
 from dataclasses import dataclass, field
-from typing import Optional
 
 logger = logging.getLogger("agentshroud.proxy.web_config")
 
@@ -14,6 +13,7 @@ logger = logging.getLogger("agentshroud.proxy.web_config")
 @dataclass
 class DomainSettings:
     """Per-domain configuration overrides."""
+
     max_response_bytes: int = 15 * 1024 * 1024  # 15MB
     allowed_content_types: list[str] = field(default_factory=list)  # empty = all
     rate_limit_rpm: int = 120  # requests per minute
@@ -30,12 +30,14 @@ class WebProxyConfig:
 
     # --- Domain lists ---
     # Denylist: hard-blocked domains (known malicious, phishing, etc.)
-    denied_domains: list[str] = field(default_factory=lambda: [
-        "evil.com",
-        "malware-payload.net",
-        "phishing-site.org",
-        "prompt-inject.attacker.com",
-    ])
+    denied_domains: list[str] = field(
+        default_factory=lambda: [
+            "evil.com",
+            "malware-payload.net",
+            "phishing-site.org",
+            "prompt-inject.attacker.com",
+        ]
+    )
 
     # Per-domain settings overrides (domain -> DomainSettings)
     domain_settings: dict[str, DomainSettings] = field(default_factory=dict)
@@ -51,11 +53,13 @@ class WebProxyConfig:
     # Empty = allow all. If set, only these content types pass without a flag.
     allowed_content_types: list[str] = field(default_factory=list)
     # Content types that always get flagged (but still passed through)
-    suspicious_content_types: list[str] = field(default_factory=lambda: [
-        "application/x-executable",
-        "application/x-msdos-program",
-        "application/x-msdownload",
-    ])
+    suspicious_content_types: list[str] = field(
+        default_factory=lambda: [
+            "application/x-executable",
+            "application/x-msdos-program",
+            "application/x-msdownload",
+        ]
+    )
 
     # --- Prompt injection scanning ---
     scan_responses: bool = True
@@ -84,7 +88,7 @@ class WebProxyConfig:
         # Check wildcard matches
         parts = domain.split(".")
         for i in range(len(parts) - 1):
-            wildcard = "*." + ".".join(parts[i + 1:])
+            wildcard = "*." + ".".join(parts[i + 1 :])
             if wildcard in self.domain_settings:
                 return self.domain_settings[wildcard]
         return DomainSettings(

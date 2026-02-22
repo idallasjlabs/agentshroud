@@ -5,23 +5,22 @@ detection logic, compose generation, security feature mapping,
 runtime config, and web API endpoints.
 """
 
-import json
 import os
-import subprocess
-from unittest.mock import MagicMock, patch, PropertyMock
+from unittest.mock import MagicMock, patch
 
 import pytest
-
 
 # ============================================================
 # Runtime detection
 # ============================================================
+
 
 class TestDetectRuntime:
     @patch("shutil.which")
     def test_detect_docker(self, mock_which):
         mock_which.side_effect = lambda x: "/usr/bin/docker" if x == "docker" else None
         from gateway.runtime import detect_runtime
+
         result = detect_runtime()
         assert "docker" in result
         assert "podman" not in result
@@ -30,13 +29,17 @@ class TestDetectRuntime:
     def test_detect_podman(self, mock_which):
         mock_which.side_effect = lambda x: "/usr/bin/podman" if x == "podman" else None
         from gateway.runtime import detect_runtime
+
         result = detect_runtime()
         assert "podman" in result
 
     @patch("shutil.which")
     def test_detect_apple(self, mock_which):
-        mock_which.side_effect = lambda x: "/usr/bin/container" if x == "container" else None
+        mock_which.side_effect = lambda x: (
+            "/usr/bin/container" if x == "container" else None
+        )
         from gateway.runtime import detect_runtime
+
         result = detect_runtime()
         assert "apple" in result
 
@@ -44,6 +47,7 @@ class TestDetectRuntime:
     def test_detect_multiple(self, mock_which):
         mock_which.return_value = "/usr/bin/whatever"
         from gateway.runtime import detect_runtime
+
         result = detect_runtime()
         assert len(result) == 3
 
@@ -51,6 +55,7 @@ class TestDetectRuntime:
     def test_detect_none(self, mock_which):
         mock_which.return_value = None
         from gateway.runtime import detect_runtime
+
         result = detect_runtime()
         assert result == []
 
@@ -61,6 +66,7 @@ class TestGetEngine:
         mock_which.return_value = "/usr/bin/docker"
         from gateway.runtime import get_engine
         from gateway.runtime.docker_engine import DockerEngine
+
         engine = get_engine("docker")
         assert isinstance(engine, DockerEngine)
 
@@ -69,6 +75,7 @@ class TestGetEngine:
         mock_which.return_value = "/usr/bin/podman"
         from gateway.runtime import get_engine
         from gateway.runtime.podman_engine import PodmanEngine
+
         engine = get_engine("podman")
         assert isinstance(engine, PodmanEngine)
 
@@ -77,11 +84,13 @@ class TestGetEngine:
         mock_which.return_value = "/usr/bin/container"
         from gateway.runtime import get_engine
         from gateway.runtime.apple_engine import AppleContainerEngine
+
         engine = get_engine("apple")
         assert isinstance(engine, AppleContainerEngine)
 
     def test_invalid_runtime(self):
         from gateway.runtime import get_engine
+
         with pytest.raises(ValueError, match="Unknown runtime"):
             get_engine("kubernetes")
 
@@ -91,6 +100,7 @@ class TestGetEngine:
         mock_which.return_value = "/usr/bin/whatever"
         from gateway.runtime import get_engine
         from gateway.runtime.docker_engine import DockerEngine
+
         engine = get_engine()
         assert isinstance(engine, DockerEngine)
 
@@ -98,6 +108,7 @@ class TestGetEngine:
     def test_no_runtime_available(self, mock_which):
         mock_which.return_value = None
         from gateway.runtime import get_engine
+
         with pytest.raises(RuntimeError, match="No container runtime"):
             get_engine()
 
@@ -106,15 +117,17 @@ class TestGetEngine:
 # Docker Engine
 # ============================================================
 
+
 class TestDockerEngine:
     def setup_method(self):
         from gateway.runtime.docker_engine import DockerEngine
+
         self.engine = DockerEngine()
 
     @patch("subprocess.run")
     def test_build(self, mock_run):
         mock_run.return_value = MagicMock(stdout="sha256:abc123\n", returncode=0)
-        result = self.engine.build("Dockerfile", "myimage:latest", ".")
+        self.engine.build("Dockerfile", "myimage:latest", ".")
         assert mock_run.called
         args = mock_run.call_args[0][0]
         assert "build" in args
@@ -146,7 +159,7 @@ class TestDockerEngine:
     @patch("subprocess.run")
     def test_run_basic(self, mock_run):
         mock_run.return_value = MagicMock(stdout="container123\n", returncode=0)
-        result = self.engine.run("nginx:latest", "web")
+        self.engine.run("nginx:latest", "web")
         args = mock_run.call_args[0][0]
         assert "run" in args
         assert "--name" in args
@@ -158,7 +171,8 @@ class TestDockerEngine:
     def test_run_with_options(self, mock_run):
         mock_run.return_value = MagicMock(stdout="c1\n", returncode=0)
         self.engine.run(
-            "img", "c1",
+            "img",
+            "c1",
             ports={"8080": "80"},
             volumes={"/data": "/app/data"},
             env={"KEY": "val"},
@@ -222,7 +236,9 @@ class TestDockerEngine:
 
     @patch("subprocess.run")
     def test_logs(self, mock_run):
-        mock_run.return_value = MagicMock(stdout="log line 1\nlog line 2\n", returncode=0)
+        mock_run.return_value = MagicMock(
+            stdout="log line 1\nlog line 2\n", returncode=0
+        )
         logs = self.engine.logs("web", tail=50)
         assert "log line" in logs
         args = mock_run.call_args[0][0]
@@ -236,7 +252,9 @@ class TestDockerEngine:
 
     @patch("subprocess.run")
     def test_inspect(self, mock_run):
-        mock_run.return_value = MagicMock(stdout='[{"Id":"abc","Name":"web"}]', returncode=0)
+        mock_run.return_value = MagicMock(
+            stdout='[{"Id":"abc","Name":"web"}]', returncode=0
+        )
         info = self.engine.inspect("web")
         assert info["Id"] == "abc"
 
@@ -294,10 +312,12 @@ class TestDockerEngine:
 # Podman Engine
 # ============================================================
 
+
 class TestPodmanEngine:
     def setup_method(self):
         with patch("shutil.which", return_value=None):
             from gateway.runtime.podman_engine import PodmanEngine
+
             self.engine = PodmanEngine()
 
     @patch("subprocess.run")
@@ -306,7 +326,6 @@ class TestPodmanEngine:
         self.engine.run("img", "c1", volumes={"/data": "/app"})
         args = mock_run.call_args[0][0]
         # Podman should add :z for SELinux
-        vol_args = [a for a in args if "-v" == args[args.index(a)-1] if args.index(a) > 0] if "-v" in args else []
         joined = " ".join(args)
         assert ":z" in joined
 
@@ -322,7 +341,9 @@ class TestPodmanEngine:
 
     @patch("subprocess.run")
     def test_generate_systemd(self, mock_run):
-        mock_run.return_value = MagicMock(stdout="[Unit]\nDescription=...", returncode=0)
+        mock_run.return_value = MagicMock(
+            stdout="[Unit]\nDescription=...", returncode=0
+        )
         result = self.engine.generate_systemd("web")
         assert "[Unit]" in result
 
@@ -336,15 +357,19 @@ class TestPodmanEngine:
 # Apple Container Engine
 # ============================================================
 
+
 class TestAppleContainerEngine:
     def setup_method(self):
         from gateway.runtime.apple_engine import AppleContainerEngine
+
         self.engine = AppleContainerEngine()
 
     @patch("subprocess.run")
     def test_run_ignores_seccomp(self, mock_run):
         mock_run.return_value = MagicMock(stdout="c1\n", returncode=0)
-        self.engine.run("img", "c1", seccomp="/path", caps=["NET_ADMIN"], privileged=True)
+        self.engine.run(
+            "img", "c1", seccomp="/path", caps=["NET_ADMIN"], privileged=True
+        )
         args = mock_run.call_args[0][0]
         # Apple should NOT pass seccomp, caps, or privileged
         assert "seccomp" not in " ".join(args)
@@ -363,7 +388,10 @@ class TestAppleContainerEngine:
 
     @patch("subprocess.run")
     def test_pause_fallback(self, mock_run):
-        mock_run.side_effect = [Exception("not supported"), MagicMock(stdout="", returncode=0)]
+        mock_run.side_effect = [
+            Exception("not supported"),
+            MagicMock(stdout="", returncode=0),
+        ]
         # Should not raise — falls back to stop
         self.engine.pause("web")
 
@@ -386,7 +414,10 @@ class TestAppleContainerEngine:
 
     @patch("subprocess.run")
     def test_network_graceful_fail(self, mock_run):
-        mock_run.side_effect = [Exception("not supported"), MagicMock(stdout="", returncode=0)]
+        mock_run.side_effect = [
+            Exception("not supported"),
+            MagicMock(stdout="", returncode=0),
+        ]
         # Should not raise
         self.engine.network_create("mynet")
         self.engine.network_rm("mynet")
@@ -398,9 +429,11 @@ class TestAppleContainerEngine:
 # Runtime Config
 # ============================================================
 
+
 class TestRuntimeConfig:
     def test_from_env_defaults(self):
         from gateway.runtime.config import RuntimeConfig
+
         with patch.dict(os.environ, {}, clear=True):
             config = RuntimeConfig.from_env()
             assert config.runtime is None
@@ -409,11 +442,15 @@ class TestRuntimeConfig:
 
     def test_from_env_set(self):
         from gateway.runtime.config import RuntimeConfig
-        with patch.dict(os.environ, {
-            "AGENTSHROUD_RUNTIME": "podman",
-            "AGENTSHROUD_ROOTLESS": "true",
-            "AGENTSHROUD_COMPOSE_FILE": "custom.yml",
-        }):
+
+        with patch.dict(
+            os.environ,
+            {
+                "AGENTSHROUD_RUNTIME": "podman",
+                "AGENTSHROUD_ROOTLESS": "true",
+                "AGENTSHROUD_COMPOSE_FILE": "custom.yml",
+            },
+        ):
             config = RuntimeConfig.from_env()
             assert config.runtime == "podman"
             assert config.rootless is True
@@ -421,22 +458,26 @@ class TestRuntimeConfig:
 
     def test_from_dict(self):
         from gateway.runtime.config import RuntimeConfig
+
         config = RuntimeConfig.from_dict({"runtime": "apple", "rootless": False})
         assert config.runtime == "apple"
         assert config.rootless is False
 
     def test_effective_rootless_podman(self):
         from gateway.runtime.config import RuntimeConfig
+
         config = RuntimeConfig(runtime="podman")
         assert config.effective_rootless is True
 
     def test_effective_rootless_docker(self):
         from gateway.runtime.config import RuntimeConfig
+
         config = RuntimeConfig(runtime="docker")
         assert config.effective_rootless is False
 
     def test_effective_rootless_override(self):
         from gateway.runtime.config import RuntimeConfig
+
         config = RuntimeConfig(runtime="podman", rootless=False)
         assert config.effective_rootless is False
 
@@ -445,9 +486,11 @@ class TestRuntimeConfig:
 # Security Features
 # ============================================================
 
+
 class TestSecurityFeatures:
     def test_get_features_docker(self):
         from gateway.runtime.security import get_features_for_runtime
+
         features = get_features_for_runtime("docker")
         names = [f.name for f in features]
         assert "seccomp" in names
@@ -456,6 +499,7 @@ class TestSecurityFeatures:
 
     def test_get_features_podman(self):
         from gateway.runtime.security import get_features_for_runtime
+
         features = get_features_for_runtime("podman")
         names = [f.name for f in features]
         assert "rootless" in names
@@ -463,6 +507,7 @@ class TestSecurityFeatures:
 
     def test_get_features_apple(self):
         from gateway.runtime.security import get_features_for_runtime
+
         features = get_features_for_runtime("apple")
         names = [f.name for f in features]
         assert "vm_isolation" in names
@@ -470,6 +515,7 @@ class TestSecurityFeatures:
 
     def test_missing_features(self):
         from gateway.runtime.security import get_missing_features
+
         missing = get_missing_features("docker")
         names = [f.name for f in missing]
         assert "vm_isolation" in names
@@ -477,6 +523,7 @@ class TestSecurityFeatures:
 
     def test_security_comparison(self):
         from gateway.runtime.security import get_security_comparison
+
         comp = get_security_comparison()
         assert "seccomp" in comp
         assert comp["seccomp"]["docker"] is True
@@ -485,29 +532,34 @@ class TestSecurityFeatures:
 
     def test_warn_missing(self):
         from gateway.runtime.security import warn_missing_features
+
         warnings = warn_missing_features("docker")
         assert len(warnings) > 0
         assert any("vm_isolation" in w for w in warnings)
 
     def test_security_options_docker(self):
         from gateway.runtime.security import get_security_options
+
         opts = get_security_options("docker")
         assert "security_opt" in opts
         assert "cap_drop" in opts
 
     def test_security_options_podman(self):
         from gateway.runtime.security import get_security_options
+
         opts = get_security_options("podman")
         assert "userns" in opts
 
     def test_security_options_apple(self):
         from gateway.runtime.security import get_security_options
+
         opts = get_security_options("apple")
         assert "notes" in opts
 
     def test_security_options_unknown(self):
         import pytest
         from gateway.runtime.security import get_security_options
+
         with pytest.raises(ValueError, match="Invalid runtime"):
             get_security_options("lxc")
 
@@ -516,9 +568,11 @@ class TestSecurityFeatures:
 # Compose Generator
 # ============================================================
 
+
 class TestComposeGenerator:
     def test_generate_docker_compose(self):
         from gateway.runtime.compose_generator import generate_compose
+
         result = generate_compose(runtime="docker")
         assert "services:" in result
         assert "gateway:" in result
@@ -528,11 +582,13 @@ class TestComposeGenerator:
 
     def test_generate_podman_compose(self):
         from gateway.runtime.compose_generator import generate_compose
+
         result = generate_compose(runtime="podman")
         assert ":z" in result  # SELinux labels
 
     def test_generate_custom_services(self):
         from gateway.runtime.compose_generator import generate_compose, ServiceDef
+
         services = [ServiceDef(name="test", image="test:latest", ports=["8080:80"])]
         result = generate_compose(services=services, runtime="docker")
         assert "test:" in result
@@ -540,6 +596,7 @@ class TestComposeGenerator:
 
     def test_generate_apple_script(self):
         from gateway.runtime.compose_generator import generate_apple_script
+
         result = generate_apple_script()
         assert "#!/bin/zsh" in result
         assert "container run" in result
@@ -548,6 +605,7 @@ class TestComposeGenerator:
 
     def test_apple_script_custom_services(self):
         from gateway.runtime.compose_generator import generate_apple_script, ServiceDef
+
         services = [ServiceDef(name="myapp", image="app:v1", ports=["3000:3000"])]
         result = generate_apple_script(services=services)
         assert "myapp" in result
@@ -555,6 +613,7 @@ class TestComposeGenerator:
 
     def test_compose_has_security_opts(self):
         from gateway.runtime.compose_generator import generate_compose
+
         result = generate_compose(runtime="docker")
         assert "no-new-privileges" in result
         assert "cap_drop" in result
@@ -562,11 +621,13 @@ class TestComposeGenerator:
 
     def test_compose_depends_on(self):
         from gateway.runtime.compose_generator import generate_compose
+
         result = generate_compose(runtime="docker")
         assert "depends_on" in result
 
     def test_compose_healthcheck(self):
         from gateway.runtime.compose_generator import generate_compose
+
         result = generate_compose(runtime="docker")
         assert "healthcheck" in result
 
@@ -575,9 +636,11 @@ class TestComposeGenerator:
 # ContainerInfo dataclass
 # ============================================================
 
+
 class TestContainerInfo:
     def test_defaults(self):
         from gateway.runtime.engine import ContainerInfo
+
         info = ContainerInfo(name="test")
         assert info.name == "test"
         assert info.id == ""
@@ -586,6 +649,7 @@ class TestContainerInfo:
 
     def test_with_data(self):
         from gateway.runtime.engine import ContainerInfo
+
         info = ContainerInfo(name="web", id="abc123", image="nginx", status="running")
         assert info.image == "nginx"
         assert info.status == "running"
@@ -595,6 +659,7 @@ class TestContainerInfo:
 # Web API (using TestClient)
 # ============================================================
 
+
 class TestWebAPI:
     """Test the management API endpoints with mocked runtime."""
 
@@ -603,6 +668,7 @@ class TestWebAPI:
         from fastapi import FastAPI
         from fastapi.testclient import TestClient
         from gateway.web.api import router
+
         app = FastAPI()
         app.include_router(router)
         return TestClient(app)
@@ -710,12 +776,14 @@ class TestWebAPI:
 # Installer API
 # ============================================================
 
+
 class TestInstallerAPI:
     @pytest.fixture
     def client(self):
         from fastapi import FastAPI
         from fastapi.testclient import TestClient
         from gateway.web.installer import router
+
         app = FastAPI()
         app.include_router(router)
         return TestClient(app)
@@ -737,11 +805,14 @@ class TestInstallerAPI:
         assert "security_comparison" in data
 
     def test_install(self, client):
-        resp = client.post("/install/api/install", json={
-            "runtime": "docker",
-            "model": "claude-sonnet-4-20250514",
-            "security_level": "recommended",
-        })
+        resp = client.post(
+            "/install/api/install",
+            json={
+                "runtime": "docker",
+                "model": "claude-sonnet-4-20250514",
+                "security_level": "recommended",
+            },
+        )
         assert resp.status_code == 200
         assert resp.json()["status"] == "started"
 
@@ -757,6 +828,7 @@ class TestManagementPage:
         from fastapi import FastAPI
         from fastapi.testclient import TestClient
         from gateway.web.management import router
+
         app = FastAPI()
         app.include_router(router)
         return TestClient(app)
@@ -772,12 +844,14 @@ class TestManagementPage:
 # Config import/export round-trip
 # ============================================================
 
+
 class TestConfigRoundTrip:
     @pytest.fixture
     def client(self):
         from fastapi import FastAPI
         from fastapi.testclient import TestClient
         from gateway.web.api import router
+
         app = FastAPI()
         app.include_router(router)
         return TestClient(app)

@@ -2,8 +2,6 @@
 
 import pytest
 
-from gateway.ingest_api.sanitizer import PIISanitizer
-
 
 @pytest.mark.asyncio
 async def test_ssn_detection(sanitizer):

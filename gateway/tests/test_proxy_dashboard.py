@@ -1,8 +1,5 @@
 """Tests for the proxy dashboard status display."""
 
-import pytest
-import time
-
 from gateway.dashboard.proxy_status import ProxyDashboard, ProxyStatusReport
 
 

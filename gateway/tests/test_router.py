@@ -4,7 +4,7 @@ import pytest
 
 from gateway.ingest_api.config import RouterConfig
 from gateway.ingest_api.models import AgentTarget, ForwardRequest
-from gateway.ingest_api.router import ForwardError, MultiAgentRouter, RouterError
+from gateway.ingest_api.router import ForwardError, MultiAgentRouter
 
 
 @pytest.fixture
@@ -154,7 +154,7 @@ async def test_forward_to_agent_http_error(router, monkeypatch):
             raise httpx.HTTPStatusError(
                 "Server error",
                 request=httpx.Request("POST", "http://test"),
-                response=self
+                response=self,
             )
 
     async def mock_post(*args, **kwargs):
@@ -178,10 +178,12 @@ async def test_forward_to_agent_http_error(router, monkeypatch):
 @pytest.mark.asyncio
 async def test_forward_to_agent_unexpected_error(router, monkeypatch):
     """Test forwarding handles unexpected exceptions"""
+
     async def mock_post(*args, **kwargs):
         raise RuntimeError("Unexpected error")
 
     import httpx
+
     monkeypatch.setattr(httpx.AsyncClient, "post", mock_post)
 
     target = AgentTarget(name="error-agent", url="http://localhost:18789")

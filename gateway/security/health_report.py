@@ -215,9 +215,13 @@ def generate_report(
     for tool, info in tool_scores.items():
         s = info["summary"]
         if s.get("critical", 0) > 0:
-            recommendations.append(f"🔴 {tool.upper()}: {s['critical']} CRITICAL findings — immediate action required")
+            recommendations.append(
+                f"🔴 {tool.upper()}: {s['critical']} CRITICAL findings — immediate action required"
+            )
         if s.get("high", 0) > 0:
-            recommendations.append(f"🟠 {tool.upper()}: {s['high']} HIGH findings — review soon")
+            recommendations.append(
+                f"🟠 {tool.upper()}: {s['high']} HIGH findings — review soon"
+            )
 
     if not recommendations:
         recommendations.append("✅ No critical or high findings — looking good!")
@@ -264,9 +268,13 @@ def format_report(report: dict[str, Any]) -> str:
 
     for tool, info in report.get("tool_scores", {}).items():
         s = info["summary"]
-        status_icon = {"clean": "✅", "warning": "⚠️", "critical": "🔴", "error": "❌", "info": "ℹ️"}.get(
-            s.get("status", ""), "❓"
-        )
+        status_icon = {
+            "clean": "✅",
+            "warning": "⚠️",
+            "critical": "🔴",
+            "error": "❌",
+            "info": "ℹ️",
+        }.get(s.get("status", ""), "❓")
         lines.append(
             f"  {status_icon} {tool.upper()}: {info['score']:.0f}/100 "
             f"(C:{s.get('critical', 0)} H:{s.get('high', 0)} M:{s.get('medium', 0)} L:{s.get('low', 0)})"

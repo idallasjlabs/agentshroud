@@ -1,7 +1,6 @@
 """Test Environment Leakage Guard."""
 
-import pytest
-from gateway.security.env_guard import check_command, scrub_output, EnvironmentGuard
+from gateway.security.env_guard import check_command, scrub_output
 
 
 class TestCheckCommand:

@@ -11,7 +11,7 @@ from collections import defaultdict
 from typing import Callable
 
 from fastapi import HTTPException, Request, status
-from fastapi.security import HTTPAuthorizationCredentials, HTTPBearer
+from fastapi.security import HTTPBearer
 
 from .config import GatewayConfig
 
