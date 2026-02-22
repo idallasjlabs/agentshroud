@@ -21,7 +21,6 @@ if [ -z "$1" ]; then
     echo "Current model:"
     docker compose -f docker/docker-compose.yml exec agentshroud bash -c '
     export OPENAI_API_KEY=$(cat /run/secrets/openai_api_key)
-    export ANTHROPIC_API_KEY=$(cat /run/secrets/anthropic_api_key)
     agentshroud models status | head -n 3
     '
     exit 1
@@ -30,7 +29,6 @@ fi
 echo "Setting default model to: $1"
 docker compose -f docker/docker-compose.yml exec agentshroud bash -c "
 export OPENAI_API_KEY=\$(cat /run/secrets/openai_api_key)
-export ANTHROPIC_API_KEY=\$(cat /run/secrets/anthropic_api_key)
 agentshroud models set $1
 "
 
