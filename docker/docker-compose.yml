@@ -20,6 +20,7 @@ services:
 
       - gateway-data:/app/data
       - ../web:/app/web:ro
+      - agentshroud-workspace:/data/bot-workspace:ro
 
     # Secrets
     secrets:
