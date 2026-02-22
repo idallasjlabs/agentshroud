@@ -32,7 +32,7 @@ echo "2. Restoring volumes..."
 
 if [ -f "$BACKUP_DIR/openclaw-config.tar.gz" ]; then
   docker run --rm \
-    -v docker_openclaw-config:/data \
+    -v docker_agentshroud-config:/data \
     -v "$BACKUP_DIR":/backup \
     alpine sh -c "rm -rf /data/* && tar xzf /backup/openclaw-config.tar.gz -C /data"
   echo "  ✓ openclaw-config"
@@ -48,7 +48,7 @@ fi
 
 if [ -f "$BACKUP_DIR/openclaw-workspace.tar.gz" ]; then
   docker run --rm \
-    -v docker_openclaw-workspace:/data \
+    -v docker_agentshroud-workspace:/data \
     -v "$BACKUP_DIR":/backup \
     alpine sh -c "rm -rf /data/* && tar xzf /backup/openclaw-workspace.tar.gz -C /data"
   echo "  ✓ openclaw-workspace"
@@ -56,7 +56,7 @@ fi
 
 if [ -f "$BACKUP_DIR/openclaw-ssh.tar.gz" ]; then
   docker run --rm \
-    -v docker_openclaw-ssh:/data \
+    -v docker_agentshroud-ssh:/data \
     -v "$BACKUP_DIR":/backup \
     alpine sh -c "rm -rf /data/* && tar xzf /backup/openclaw-ssh.tar.gz -C /data"
   echo "  ✓ openclaw-ssh"
