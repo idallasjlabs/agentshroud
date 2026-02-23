@@ -8,6 +8,8 @@ Covers: URL allowlist/denylist, SSRF blocking, prompt injection detection,
 hidden content, zero-width chars, PII, response size, rate limiting,
 content-type filtering, data exfiltration, passthrough mode.
 """
+from __future__ import annotations
+
 
 import base64
 

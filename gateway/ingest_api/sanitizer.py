@@ -8,6 +8,8 @@ Detects and redacts personally identifiable information using:
 1. Microsoft Presidio with spaCy (if available)
 2. Regex patterns (fallback)
 """
+from __future__ import annotations
+
 
 import asyncio
 import logging

@@ -10,6 +10,7 @@ Reads Wazuh alerts from shared volume for file integrity monitoring
 and rootkit detection.
 """
 
+
 import json
 import logging
 from datetime import datetime, timezone

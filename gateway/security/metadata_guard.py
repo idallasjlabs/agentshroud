@@ -6,6 +6,8 @@
 Metadata Channel Guard - Security Hardening Module
 Sanitize HTTP headers, image metadata, and filenames to prevent information disclosure.
 """
+from __future__ import annotations
+
 
 import re
 import unicodedata

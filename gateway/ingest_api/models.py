@@ -9,6 +9,7 @@ from __future__ import annotations
 Defines request and response schemas for all endpoints.
 """
 
+
 from typing import Any, Optional
 
 from pydantic import BaseModel, Field, field_validator

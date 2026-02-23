@@ -5,6 +5,8 @@
 """Tests for oauth_security module - MCP OAuth proxy security.
 TDD: Written before implementation.
 """
+from __future__ import annotations
+
 
 import pytest
 import sys

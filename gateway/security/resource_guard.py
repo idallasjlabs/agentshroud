@@ -6,6 +6,8 @@
 Resource Exhaustion Guard - Security Hardening Module
 Monitor and limit resource usage to prevent DoS attacks and resource exhaustion.
 """
+from __future__ import annotations
+
 
 import asyncio
 import os

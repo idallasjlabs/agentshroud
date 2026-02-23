@@ -12,6 +12,7 @@ Actions are gated by minimum trust levels. Trust is earned through
 successful operations and decays over time or on violations.
 """
 
+
 import sqlite3
 import time
 from dataclasses import dataclass

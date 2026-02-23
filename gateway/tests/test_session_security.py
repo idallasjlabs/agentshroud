@@ -5,6 +5,8 @@
 """Tests for session_security module.
 TDD: Written before implementation.
 """
+from __future__ import annotations
+
 
 import pytest
 import time
