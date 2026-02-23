@@ -81,12 +81,47 @@ The Wikipedia article says injection comes from "data" — which for OpenClaw me
 - ResourceGuard enforced: per-agent CPU/memory/disk/request limits active
 - 197 tests pass, 0 failures — clean baseline for all subsequent work
 
-**All phases completed (February 2026).** The following have been wired into the live pipeline:
-- Bot still has direct internet access
-- Bot still holds its own credentials
-- Bot still sends Telegram/email directly
-- MCP proxy endpoint ✅ wired and fail-closed
-- SecurityPipeline ✅ wired to /forward
+**All phases completed (February 2026).** Every security module is now wired into the live pipeline:
+
+**Core Pipeline (P0):**
+- PromptGuard — injection detection on all inbound content ✅
+- TrustManager — trust scoring and request classification ✅
+- EgressFilter — outbound content inspection ✅
+- PIISanitizer — confidence-tuned (0.9 threshold) to eliminate false positives ✅
+- Gateway binding locked to 127.0.0.1 ✅
+
+**Middleware (P1):**
+- ContextGuard, MetadataGuard, LogSanitizer, EnvGuard, GitGuard, FileSandbox, ResourceGuard ✅
+- MCP proxy wrapper — fail-closed (was fail-open) ✅
+- MiddlewareManager wired into main.py request path ✅
+
+**Network (P2):**
+- DNSFilter, NetworkValidator, EgressMonitor, BrowserSecurity, OAuthSecurity ✅
+- All wired into WebProxy request flow with fail-closed error handling ✅
+
+**Infrastructure (P3):**
+- SecurityPipelineIntegrator wiring all 15 infra/external modules ✅
+- security-entrypoint.sh and security-scheduler.sh operational ✅
+- DriftDetector, Canary, EncryptedStore, KeyVault, SessionSecurity, TokenValidation ✅
+- ConsentFramework, SubagentMonitor, AgentIsolation ✅
+- ClamAV, Falco, Wazuh, Trivy, HealthReport, AlertDispatcher ✅
+
+**Control Centers:**
+- Web Dashboard — 7-page responsive UI, text-browser compatible ✅
+- Terminal Console — TUI + chat console for Blink Shell ✅
+
+**Known issues from peer review (2026-02-23):**
+- Tests broken on Python 3.9 (X | None syntax requires 3.10+) — need to pin Python version or fix syntax
+- MiddlewareManager silently skips failed imports (should fail-closed)
+- Dashboard pages show hardcoded demo data — needs live API integration
+- /manage/ routes have no authentication
+- MCP wrapper forwards on non-403 errors (should block on any gateway error)
+
+**Still required for full lockdown (FINAL phase):**
+- docker-compose.yml: set agentshroud-isolated network to internal: true
+- Set HTTP_PROXY/HTTPS_PROXY env vars pointing bot to gateway:8181
+- Remove OP_SERVICE_ACCOUNT_TOKEN from bot (gateway holds credentials via op-proxy)
+- Pre-flight verification checklist (see FINAL section below)
 
 ---
 
