@@ -11,6 +11,8 @@ References:
     - Naik et al. 2026 (arXiv:2602.13477) - Token passthrough vulnerabilities
     - Maloyan & Namiot 2026 (arXiv:2601.17548) - MCP security analysis
 """
+from __future__ import annotations
+
 import base64
 import json
 import sqlite3

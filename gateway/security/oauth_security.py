@@ -10,6 +10,8 @@ validation, redirect URI strict matching, and consent cookie binding.
 References:
     - Wang et al. 2026 (arXiv:2602.08412) - MCP OAuth confused deputy attacks
 """
+from __future__ import annotations
+
 
 import hashlib
 import hmac

@@ -10,6 +10,7 @@ All mutation operations (upgrade, downgrade, rollback) require
 approval through the approval queue before execution.
 """
 
+
 import logging
 from typing import Any
 

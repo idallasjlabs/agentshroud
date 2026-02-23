@@ -11,6 +11,7 @@ Default mode: monitor (observe and audit everything, block nothing).
 Enforce mode: hard limits on concurrency and trust-gated tool access.
 """
 
+
 import logging
 import time
 from dataclasses import dataclass

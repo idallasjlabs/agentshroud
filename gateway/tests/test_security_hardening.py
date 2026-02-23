@@ -7,6 +7,8 @@ Tests for Phase 7: Security Hardening modules.
 Tests encrypted_store, prompt_guard, trust_manager, egress_filter,
 drift_detector, and agent_isolation.
 """
+from __future__ import annotations
+
 
 import base64
 import os
