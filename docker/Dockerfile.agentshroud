@@ -83,6 +83,10 @@ COPY docker/scripts/mcp-proxy-wrapper.js /usr/local/bin/mcp-proxy-wrapper.js
 # Applied to the volume on every startup by init-openclaw-config.sh
 COPY docker/config/openclaw/ /app/config-defaults/openclaw/
 
+# Bake in SSH allowlist config (approved hosts, key-only auth)
+# Applied to /home/node/.ssh/config on every startup by init-openclaw-config.sh
+COPY docker/config/ssh/ /app/config-defaults/ssh/
+
 RUN chmod +x /usr/local/bin/security-entrypoint.sh \
     /usr/local/bin/security-scheduler.sh \
     /usr/local/bin/security-scan.sh \

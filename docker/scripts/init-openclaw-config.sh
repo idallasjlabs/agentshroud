@@ -11,6 +11,8 @@
 # What this does:
 #   1. Bootstraps cron/jobs.json from image defaults (only on fresh volume)
 #   2. Patches openclaw.json for required agent routing (always, idempotent)
+#   3. Manages workspace brand/identity files
+#   4. Refreshes SSH config (approved host allowlist) from image defaults
 
 set -euo pipefail
 
@@ -69,4 +71,21 @@ if [ -f "${AGENTS_FILE}" ] && ! grep -q "BRAND.md" "${AGENTS_FILE}" 2>/dev/null;
   echo "[init] ✓ Added BRAND.md to AGENTS.md session startup checklist"
 else
   echo "[init] ✓ AGENTS.md already references BRAND.md — skipping"
+fi
+
+# ── 4. SSH config — always refresh from image (approved host allowlist) ──────
+# Authoritative allowlist of approved SSH hosts.
+# Overwrites on every startup so repo changes take effect on next restart.
+# To add a new host: update docker/config/ssh/config in the repo, rebuild image.
+
+SSH_CONFIG_SRC="/app/config-defaults/ssh/config"
+SSH_CONFIG_DST="/home/node/.ssh/config"
+
+if [ -f "${SSH_CONFIG_SRC}" ]; then
+  mkdir -p "/home/node/.ssh"
+  cp "${SSH_CONFIG_SRC}" "${SSH_CONFIG_DST}"
+  chmod 600 "${SSH_CONFIG_DST}"
+  echo "[init] ✓ Refreshed SSH config (approved host allowlist)"
+else
+  echo "[init] ⚠ SSH config defaults not found — skipping"
 fi
