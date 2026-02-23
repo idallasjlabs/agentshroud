@@ -91,6 +91,8 @@ services:
       - agentshroud-ssh:/home/node/.ssh
       # Playwright browser binaries (persistent across restarts)
       - agentshroud-browsers:/home/node/.cache/ms-playwright
+      # Branding assets (read-only) — logos, colors, email templates, guidelines
+      - ../branding:/app/branding:ro
 
     # Secrets (API keys and 1Password interactive auth only — no service account)
     # FINAL: 1password_service_account moved to gateway; bot uses op-proxy endpoint
