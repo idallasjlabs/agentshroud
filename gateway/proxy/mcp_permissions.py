@@ -10,6 +10,7 @@ Design: default-allow with escalation for dangerous operations.
 Trust levels map to permission ceilings, not floors.
 """
 
+
 import fnmatch
 import logging
 import time

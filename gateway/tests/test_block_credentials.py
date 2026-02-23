@@ -6,6 +6,8 @@
 
 TDD approach: Tests written first for credential blocking behavior.
 """
+from __future__ import annotations
+
 
 import pytest
 from gateway.ingest_api.sanitizer import PIISanitizer

@@ -10,6 +10,7 @@ Web Proxy Configuration — settings for HTTP traffic proxying.
 Default-allow policy: everything passes unless explicitly denied or SSRF.
 """
 
+
 import logging
 from dataclasses import dataclass, field
 

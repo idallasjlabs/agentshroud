@@ -9,6 +9,7 @@ from __future__ import annotations
 Runs clamscan/freshclam as local binaries and parses output.
 """
 
+
 import logging
 import re
 import subprocess

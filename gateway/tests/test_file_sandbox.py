@@ -3,6 +3,8 @@
 # Protected by common law trademark rights. Federal trademark registration pending.
 # Unauthorized reproduction, distribution, or use of the AgentShroud name or brand is strictly prohibited.
 """Tests for file I/O sandboxing."""
+from __future__ import annotations
+
 
 import pytest
 from gateway.security.file_sandbox import (

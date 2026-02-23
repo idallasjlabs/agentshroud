@@ -10,6 +10,7 @@ Every MCP tool call and response is logged with full parameters (PII redacted),
 included in the existing cryptographic hash chain, and queryable for reports.
 """
 
+
 import hashlib
 import logging
 import time

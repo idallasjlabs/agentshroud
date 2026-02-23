@@ -10,6 +10,7 @@ Aggregates data from all security tools, calculates a weighted score,
 tracks history in SQLite, and generates formatted reports.
 """
 
+
 import json
 import logging
 import sqlite3
