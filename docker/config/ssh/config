@@ -5,6 +5,19 @@
 # IMPORTANT: Each approved host MUST include "ProxyCommand none" to override
 # the wildcard block at the bottom.
 
+Host host.docker.internal
+    HostName host.docker.internal
+    User agentshroud-bot
+    Port 22
+    IdentityFile ~/.ssh/id_ed25519
+    IdentitiesOnly yes
+    PasswordAuthentication no
+    PubkeyAuthentication yes
+    StrictHostKeyChecking accept-new
+    ServerAliveInterval 30
+    ServerAliveCountMax 3
+    ProxyCommand none
+
 Host pi raspberrypi
     HostName raspberrypi.tail240ea8.ts.net
     User agentshroud-bot

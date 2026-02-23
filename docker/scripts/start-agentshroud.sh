@@ -108,8 +108,36 @@ echo "[startup] Starting AgentShroud gateway..."
 openclaw gateway --allow-unconfigured --bind lan &
 OPENCLAW_PID=$!
 
-# Forward TERM/INT to openclaw so Docker stop/restart is clean
-trap 'kill $OPENCLAW_PID 2>/dev/null' TERM INT
+# Read Telegram bot token once — shared by startup and shutdown notifications
+_telegram_bot_token() {
+    node -e "
+        try {
+            const c = JSON.parse(require('fs').readFileSync(
+                '/home/node/.openclaw/openclaw.json', 'utf8'));
+            process.stdout.write(
+                (c.channels && c.channels.telegram && c.channels.telegram.botToken) || '');
+        } catch(e) {}
+    " 2>/dev/null
+}
+_telegram_send() {
+    local text="$1"
+    local token
+    token="$(_telegram_bot_token)"
+    [ -z "$token" ] && return 1
+    curl -sf -X POST "https://api.telegram.org/bot${token}/sendMessage" \
+        -H "Content-Type: application/json" \
+        -d "{\"chat_id\":\"8096968754\",\"text\":\"${text}\"}" \
+        >/dev/null 2>&1
+}
+
+# Forward TERM/INT to openclaw and send shutdown notification
+trap '
+    echo "[startup] Shutdown signal received — sending Telegram notification..."
+    _telegram_send "🔴 AgentShroud bot shutting down." \
+        && echo "[startup] ✓ Sent Telegram shutdown notification" \
+        || echo "[startup] ⚠ Could not send Telegram shutdown notification"
+    kill $OPENCLAW_PID 2>/dev/null
+' TERM INT
 
 # Wait for gateway to be ready, then send Telegram startup notification
 (
@@ -124,28 +152,9 @@ trap 'kill $OPENCLAW_PID 2>/dev/null' TERM INT
     # Give Telegram provider time to connect after gateway is ready
     sleep 5
 
-    # Read bot token from openclaw.json on the volume
-    TELEGRAM_BOT_TOKEN="$(node -e "
-        try {
-            const c = JSON.parse(require('fs').readFileSync(
-                '/home/node/.openclaw/openclaw.json', 'utf8'));
-            process.stdout.write(
-                (c.channels && c.channels.telegram && c.channels.telegram.botToken) || '');
-        } catch(e) {}
-    " 2>/dev/null)"
-
-    TELEGRAM_CHAT_ID="8096968754"
-
-    if [ -n "$TELEGRAM_BOT_TOKEN" ]; then
-        curl -sf -X POST "https://api.telegram.org/bot${TELEGRAM_BOT_TOKEN}/sendMessage" \
-            -H "Content-Type: application/json" \
-            -d "{\"chat_id\":\"${TELEGRAM_CHAT_ID}\",\"text\":\"🛡️ AgentShroud bot online — Telegram delivery confirmed after rebuild.\"}" \
-            >/dev/null 2>&1 \
-            && echo "[startup] ✓ Sent Telegram startup notification" \
-            || echo "[startup] ⚠ Could not send Telegram startup notification"
-    else
-        echo "[startup] ⚠ Telegram bot token not found — skipping startup notification"
-    fi
+    _telegram_send "🛡️ AgentShroud bot online — Telegram delivery confirmed after rebuild." \
+        && echo "[startup] ✓ Sent Telegram startup notification" \
+        || echo "[startup] ⚠ Could not send Telegram startup notification"
 ) &
 
 wait $OPENCLAW_PID
