@@ -590,6 +590,35 @@ async def mcp_proxy_endpoint(request: MCPProxyRequest, auth: AuthRequired):
             detail="MCP proxy not initialized",
         )
 
+    # iMessage recipient allowlist (P5: iMessage channel ownership).
+    # Checked before security inspection so unknown recipients never reach the tool.
+    if request.server_name == _IMESSAGE_SERVER and request.tool_name == _IMESSAGE_SEND_TOOL:
+        recipient = request.parameters.get("to", "")
+        config = getattr(app_state, "config", None)
+        allowed = config.channels.imessage_allowed_recipients if config else []
+        if not _is_imessage_recipient_allowed(recipient, allowed):
+            approval_queue = getattr(app_state, "approval_queue", None)
+            if approval_queue:
+                approval_req = ApprovalRequest(
+                    action_type="imessage_sending",
+                    description=f"Send iMessage to {recipient}",
+                    details={
+                        "to": recipient,
+                        "body": str(request.parameters.get("body", ""))[:200],
+                    },
+                    agent_id=request.agent_id,
+                )
+                item = await approval_queue.submit(approval_req)
+                logger.info(f"imessage-send: queued for approval (id={item.request_id})")
+                return JSONResponse(
+                    status_code=status.HTTP_202_ACCEPTED,
+                    content={"status": "queued", "approval_id": item.request_id},
+                )
+            raise HTTPException(
+                status_code=status.HTTP_403_FORBIDDEN,
+                detail="iMessage recipient not in allowlist and no approval queue available",
+            )
+
     tool_call = MCPToolCall(
         id="",  # auto-generated in __post_init__
         server_name=request.server_name,
@@ -687,6 +716,16 @@ _EMAIL_ALLOWED_RECIPIENTS: list[str] = [
 def _is_email_recipient_allowed(address: str) -> bool:
     """Return True if the email address is on the pre-approved recipient list."""
     return address.lower().strip() in {r.lower() for r in _EMAIL_ALLOWED_RECIPIENTS}
+
+
+# iMessage channel ownership (P5)
+_IMESSAGE_SERVER = "mac-messages"
+_IMESSAGE_SEND_TOOL = "tool_send_message"
+
+
+def _is_imessage_recipient_allowed(recipient: str, allowed: list[str]) -> bool:
+    """Return True if the iMessage recipient is on the pre-approved list."""
+    return recipient.strip() in {r.strip() for r in allowed}
 
 
 @app.post("/webhook/telegram")
