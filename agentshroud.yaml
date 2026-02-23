@@ -196,36 +196,6 @@ mcp_proxy:
           permission_level: read
           rate_limit: 10
 
-mcp_proxy:
-  # MCP tool call security layer — inspects all OpenClaw MCP tool calls.
-  # The mcp-proxy-wrapper.js in the bot container sends every tools/call here
-  # before forwarding to the actual MCP server subprocess.
-  enabled: true
-  pii_scan_enabled: true
-  injection_scan_enabled: true
-  audit_enabled: true
-  global_rate_limit: 0  # 0 = unlimited; set per-server below if needed
-
-  # Register MCP servers here to configure per-server trust levels and
-  # per-tool permission levels. Unknown servers default to trust_level=1 (WRITE).
-  # Add entries when installing new MCP servers in OpenClaw.
-  servers: {}
-  # Example server entry:
-  # servers:
-  #   github:
-  #     min_trust_level: 1       # 0=READ, 1=WRITE, 2=EXECUTE, 3=ADMIN
-  #     tools:
-  #       get_file_contents:     { permission_level: read }
-  #       create_or_update_file: { permission_level: write }
-  #       delete_file:           { permission_level: execute }
-  #   filesystem:
-  #     min_trust_level: 2
-  #     tools:
-  #       read_file:  { permission_level: read }
-  #       write_file: { permission_level: write }
-  #       delete_file: { permission_level: execute }
-
-credentials:
   # Credential isolation (P2) — gateway op-proxy
   # The gateway reads 1Password secrets on behalf of the bot.
   # Only references matching these patterns are permitted.
