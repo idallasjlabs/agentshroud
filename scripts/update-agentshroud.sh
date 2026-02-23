@@ -26,7 +26,7 @@ echo
 # 2. Export openclaw config volume
 echo "2. Backing up OpenClaw config..."
 docker run --rm \
-  -v docker_openclaw-config:/data \
+  -v docker_agentshroud-config:/data \
   -v "$BACKUP_DIR":/backup \
   alpine tar czf /backup/openclaw-config.tar.gz -C /data .
 echo "✓ Config backed up to $BACKUP_DIR"
@@ -34,15 +34,15 @@ echo
 
 # 3. Stop openclaw container
 echo "3. Stopping openclaw container..."
-docker compose -f "$REPO_ROOT/docker/docker-compose.yml" stop openclaw
-docker compose -f "$REPO_ROOT/docker/docker-compose.yml" rm -f openclaw
+docker compose -f "$REPO_ROOT/docker/docker-compose.yml" stop agentshroud
+docker compose -f "$REPO_ROOT/docker/docker-compose.yml" rm -f agentshroud
 echo "✓ Container stopped and removed"
 echo
 
 # 4. Restore config volume
 echo "4. Restoring config..."
 docker run --rm \
-  -v docker_openclaw-config:/data \
+  -v docker_agentshroud-config:/data \
   -v "$BACKUP_DIR":/backup \
   alpine sh -c "rm -rf /data/* && tar xzf /backup/openclaw-config.tar.gz -C /data"
 echo "✓ Config restored"
@@ -51,7 +51,7 @@ echo
 # 5. Rebuild and start openclaw with latest npm version
 echo "5. Rebuilding openclaw container with latest version..."
 echo "   (This will pull latest openclaw@latest from npm)"
-docker compose -f "$REPO_ROOT/docker/docker-compose.yml" up -d --build openclaw
+docker compose -f "$REPO_ROOT/docker/docker-compose.yml" up -d --build agentshroud
 echo "✓ Container rebuilt and started"
 echo
 
@@ -62,11 +62,11 @@ echo
 
 # 7. Check status and logs
 echo "7. Checking openclaw status..."
-docker compose -f "$REPO_ROOT/docker/docker-compose.yml" ps openclaw
+docker compose -f "$REPO_ROOT/docker/docker-compose.yml" ps agentshroud
 echo
 
 echo "8. Recent logs:"
-docker compose -f "$REPO_ROOT/docker/docker-compose.yml" logs openclaw --tail=15
+docker compose -f "$REPO_ROOT/docker/docker-compose.yml" logs agentshroud --tail=15
 echo
 
 echo "=== Update Complete ==="
