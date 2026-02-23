@@ -23,9 +23,9 @@ from typing import Any, Optional
 from .url_analyzer import URLAnalyzer
 from .web_config import WebProxyConfig
 from .web_content_scanner import WebContentScanner
-from ..security.dns_filter import DNSFilter
+from ..security.dns_filter import DNSFilter, DNSFilterConfig
 from ..security.network_validator import NetworkValidator
-from ..security.egress_monitor import EgressMonitor
+from ..security.egress_monitor import EgressMonitor, EgressMonitorConfig
 from ..security.browser_security import BrowserSecurityGuard
 from ..security.oauth_security import OAuthSecurityValidator
 
@@ -166,11 +166,11 @@ class WebProxy:
         self.content_scanner = content_scanner or WebContentScanner()
         self.rate_limiter = RateLimiter()
         # Network Security Modules
-        self.dns_filter = DNSFilter()
+        self.dns_filter = DNSFilter(DNSFilterConfig())
         self.network_validator = NetworkValidator()
-        self.egress_monitor = EgressMonitor()
+        self.egress_monitor = EgressMonitor(EgressMonitorConfig())
         self.browser_security = BrowserSecurityGuard()
-        self.oauth_security = OAuthSecurityValidator()
+        self.oauth_security = OAuthSecurityValidator([])  # Empty allowed redirect URIs
         self._stats = {
             "total_requests": 0,
             "allowed": 0,
@@ -216,6 +216,40 @@ class WebProxy:
 
         # --- URL analysis ---
         url_result = self.url_analyzer.analyze(url)
+
+        
+        # --- DNS Security Check ---
+        try:
+            if url_result.domain:
+                dns_verdict = self.dns_filter.check(url_result.domain, 'web-proxy')
+                if not dns_verdict.allowed:
+                    result.action = ProxyAction.BLOCK
+                    result.blocked = True
+                    result.block_reason = f"DNS filter blocked: {dns_verdict.reason}"
+                    self._stats["blocked"] += 1
+                    self._audit("web_request_blocked_dns", url, {"method": method, "reason": dns_verdict.reason})
+                    result.processing_time_ms = (time.time() - start) * 1000
+                    return result
+                elif dns_verdict.flagged:
+                    if not hasattr(result, 'url_findings') or not result.url_findings:
+                        result.url_findings = []
+                    result.url_findings.append({
+                        "category": "dns",
+                        "severity": "medium",
+                        "description": f"DNS flagged: {dns_verdict.reason}",
+                        "detail": dns_verdict.reason
+                    })
+                    if result.action != ProxyAction.BLOCK:
+                        result.action = ProxyAction.FLAG
+        except Exception as e:
+            logger.warning(f"DNS filter error for {url}: {e}")
+            # Fail-closed: block the request on DNS filter error
+            result.action = ProxyAction.BLOCK
+            result.blocked = True
+            result.block_reason = f"DNS security check failed: {str(e)}"
+            self._stats["blocked"] += 1
+            result.processing_time_ms = (time.time() - start) * 1000
+            return result
 
         # Hard block: SSRF
         if url_result.is_ssrf:
@@ -312,6 +346,59 @@ class WebProxy:
             )
             if any(f.category == "pii" for f in url_result.findings):
                 self._stats["pii_in_urls"] += 1
+
+        # --- Browser Security Check ---
+        try:
+            user_agent = (headers or {}).get('User-Agent', '').lower()
+            if any(browser in user_agent for browser in ['mozilla', 'chrome', 'safari', 'edge', 'webkit']):
+                url_reputation = self.browser_security.check_url_reputation(url)
+                if url_reputation.value >= 3:  # HIGH or CRITICAL threat
+                    result.action = ProxyAction.BLOCK
+                    result.blocked = True
+                    result.block_reason = f"Browser security blocked: {url_reputation.name} threat level"
+                    self._stats["blocked"] += 1
+                    self._audit("web_request_blocked_browser", url, {"method": method, "threat_level": url_reputation.name})
+                    result.processing_time_ms = (time.time() - start) * 1000
+                    return result
+                elif url_reputation.value >= 2:  # MEDIUM threat
+                    if not result.url_findings:
+                        result.url_findings = []
+                    result.url_findings.append({
+                        "category": "browser_security",
+                        "severity": "medium", 
+                        "description": f"Browser security warning: {url_reputation.name} threat level",
+                        "detail": f"URL reputation: {url_reputation.name}"
+                    })
+                    if result.action != ProxyAction.BLOCK:
+                        result.action = ProxyAction.FLAG
+        except Exception as e:
+            logger.warning(f"Browser security error for {url}: {e}")
+            # Fail-closed: block the request on browser security error  
+            result.action = ProxyAction.BLOCK
+            result.blocked = True
+            result.block_reason = f"Browser security check failed: {str(e)}"
+            self._stats["blocked"] += 1
+            result.processing_time_ms = (time.time() - start) * 1000
+            return result
+
+        # --- OAuth Security Check ---
+        try:
+            auth_header = (headers or {}).get('Authorization', '')
+            if auth_header or any(key.lower().startswith('auth') for key in (headers or {})):
+                if not result.url_findings:
+                    result.url_findings = []
+                result.url_findings.append({
+                    "category": "oauth_security",
+                    "severity": "low",
+                    "description": "Authentication headers detected",
+                    "detail": "Request contains authorization or authentication headers"
+                })
+                if result.action == ProxyAction.ALLOW:
+                    result.action = ProxyAction.FLAG
+        except Exception as e:
+            logger.warning(f"OAuth security error for {url}: {e}")
+            # Don't fail-closed for OAuth as it might be a false positive
+
 
         # Audit the request
         if result.action == ProxyAction.FLAG:
@@ -450,6 +537,31 @@ class WebProxy:
                     "status_code": status_code,
                 },
             )
+
+                # --- Egress Monitoring ---
+        try:
+            from ..security.egress_monitor import EgressEvent, EgressChannel
+            from urllib.parse import urlparse
+            
+            parsed = urlparse(url)
+            egress_event = EgressEvent(
+                timestamp=time.time(),
+                agent_id='web-proxy',
+                channel=EgressChannel.HTTP,
+                destination=parsed.hostname or url,
+                metadata={
+                    'url': url,
+                    'status_code': status_code,
+                    'content_type': content_type,
+                    'response_size': response_size or len(body.encode('utf-8', errors='replace')),
+                    'findings_count': len(result.content_findings),
+                    'action': result.action.value
+                }
+            )
+            self.egress_monitor.record(egress_event)
+        except Exception as e:
+            logger.warning(f"Egress monitoring error for {url}: {e}")
+            # Continue processing - egress monitoring is for logging only
 
         result.processing_time_ms = (time.time() - start) * 1000
         return result
