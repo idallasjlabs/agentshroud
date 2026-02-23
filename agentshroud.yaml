@@ -65,6 +65,8 @@ proxy:
     - gmail.googleapis.com
     - "*.github.com"
     - "*.githubusercontent.com"
+    - imap.mail.me.com
+    - smtp.mail.me.com
 
 container:
   # Container runtime
@@ -146,7 +148,14 @@ channels:
   # recipient allowlisting, and approval queue integration.
   email:
     enabled: true
-    allowed_recipients: []  # Add trusted addresses here; empty = all require approval
+    provider: icloud
+    imap_host: imap.mail.me.com
+    imap_port: 993
+    smtp_host: smtp.mail.me.com
+    smtp_port: 587
+    username: agentshroud.ai@gmail.com
+    address: agentshroud.ai@icloud.com
+    allowed_recipients: []
     rate_limit_per_hour: 10
     require_approval_for_new: true
   telegram:
