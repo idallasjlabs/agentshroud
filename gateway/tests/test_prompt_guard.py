@@ -27,5 +27,5 @@ def test_benign_message(prompt_guard):
     result = prompt_guard.scan("Hello, how are you today?")
     assert not result.blocked
     assert result.score < 0.4
-    assert result.action == ThreatAction.ALLOW
+    assert result.action == ThreatAction.LOG
     assert result.sanitized_input == "Hello, how are you today?"
