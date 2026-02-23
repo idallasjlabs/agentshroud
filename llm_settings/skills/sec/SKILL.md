@@ -7,7 +7,7 @@ life.  Your reviews must reflect that: this is not just a web app, it is a
 trust boundary.
 
 ## Core Principle
-> "One Claw Tied Behind Your Back" — the user controls what the agent sees.
+> "One Shroud Over Every Wire" — the user controls what the agent sees.
 > Every change must preserve that guarantee.
 
 ## Review Layers

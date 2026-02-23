@@ -1,6 +1,6 @@
 # AgentShroud Documentation
 
-Complete documentation for "One Claw Tied Behind Your Back" - a secure, isolated OpenClaw deployment.
+Complete documentation for "One Shroud Over Every Wire" - a secure, isolated OpenClaw deployment.
 
 ## Quick Navigation
 
@@ -165,12 +165,12 @@ Traditional AI assistant deployments grant:
 
 ### The Mantra
 
-> "One Claw Tied Behind Your Back"
+> "One Shroud Over Every Wire"
 >
 > The agent is powerful and useful, but it can only touch what you explicitly hand to it.
 > It cannot reach into your digital life and grab things on its own.
 >
-> One claw is tied. The other is free to help you.
+> One shroud covers every wire. The agent is free to help you.
 
 ## Quick Reference
 
@@ -293,7 +293,7 @@ You are free to:
 - Adapt — remix, transform, build upon
 
 Under these terms:
-- Attribution — credit "One Claw Tied Behind Your Back" project
+- Attribution — credit "One Shroud Over Every Wire" project
 - ShareAlike — distribute under same license
 
 ---
@@ -304,4 +304,4 @@ Under these terms:
 
 **Want to help? Check the 📝 Planned docs above!**
 
-🦞 One Claw Tied Behind Your Back
+🦞 One Shroud Over Every Wire

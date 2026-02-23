@@ -1,4 +1,4 @@
-# Security Audit - One Claw Tied Behind Your Back
+# Security Audit - One Shroud Over Every Wire
 
 **Date:** $(date)
 **Auditor:** Claude Code (via comprehensive security review)
