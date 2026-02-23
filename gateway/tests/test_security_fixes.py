@@ -165,9 +165,9 @@ class TestDashboardCookieAuth:
     @pytest.mark.asyncio
     async def test_dashboard_cookie_auth_serves_html(self, client):
         """GET /dashboard with valid cookie serves HTML"""
+        client.cookies = {"dashboard_token": "test-token-12345"}
         resp = await client.get(
             "/dashboard",
-            cookies={"dashboard_token": "test-token-12345"},
         )
         assert resp.status_code == 200
         assert "AgentShroud" in resp.text
@@ -175,9 +175,9 @@ class TestDashboardCookieAuth:
     @pytest.mark.asyncio
     async def test_dashboard_bad_cookie_returns_403(self, client):
         """GET /dashboard with invalid cookie returns 403"""
+        client.cookies = {"dashboard_token": "wrong-token"}
         resp = await client.get(
             "/dashboard",
-            cookies={"dashboard_token": "wrong-token"},
         )
         assert resp.status_code == 403
 
@@ -258,9 +258,9 @@ class TestDashboardWSToken:
     @pytest.mark.asyncio
     async def test_ws_token_with_valid_cookie(self, client):
         """GET /dashboard/ws-token with valid cookie returns token"""
+        client.cookies = {"dashboard_token": "test-token-12345"}
         resp = await client.get(
             "/dashboard/ws-token",
-            cookies={"dashboard_token": "test-token-12345"},
         )
         assert resp.status_code == 200
         data = resp.json()
@@ -276,9 +276,9 @@ class TestDashboardWSToken:
     @pytest.mark.asyncio
     async def test_ws_token_with_bad_cookie_returns_403(self, client):
         """GET /dashboard/ws-token with bad cookie returns 403"""
+        client.cookies = {"dashboard_token": "wrong"}
         resp = await client.get(
             "/dashboard/ws-token",
-            cookies={"dashboard_token": "wrong"},
         )
         assert resp.status_code == 403
 
