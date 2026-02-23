@@ -15,7 +15,7 @@ def test_load_config():
     assert config is not None
     assert config.bind == "127.0.0.1"
     assert config.port == 8080
-    assert config.pii.enabled is False
+    assert config.pii.enabled is True
     assert "US_SSN" in config.pii.entities or "EMAIL_ADDRESS" in config.pii.entities
     assert config.ledger.retention_days == 90
 
