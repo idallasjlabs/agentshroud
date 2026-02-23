@@ -44,7 +44,7 @@ class TestReadmeAccuracy:
             "Encrypted Store",
             "SSH Proxy",
             "Kill Switch",
-            "Agent Isolation",
+            "Isolation Verifier",
             "Dashboard",
         ]
         for module in expected_modules:
@@ -77,7 +77,7 @@ class TestReadmeModulesMatchCode:
         "Drift Detector": "gateway/security/drift_detector.py",
         "Encrypted Store": "gateway/security/encrypted_store.py",
         "SSH Proxy": "gateway/ssh_proxy/proxy.py",
-        "Agent Isolation": "gateway/security/agent_isolation.py",
+        "Isolation Verifier": "gateway/security/agent_isolation.py",
     }
 
     @pytest.mark.parametrize("module_name,file_path", MODULE_FILES.items())
