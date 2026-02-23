@@ -18,9 +18,9 @@
  *   GATEWAY_URL          Gateway base URL (default: http://gateway:8080)
  *   GATEWAY_AUTH_TOKEN   Bearer token for gateway auth (required in production)
  *
- * Fail-open: if the gateway is unreachable, the tool call is forwarded with a
- * warning logged to stderr. This preserves OpenClaw functionality during gateway
- * maintenance, at the cost of unaudited calls.
+ * Fail-closed: if the gateway is unreachable or returns any non-200 response,
+ * the tool call is BLOCKED. This ensures no unaudited calls can pass through,
+ * even during gateway maintenance or errors.
  */
 
 'use strict';
@@ -144,11 +144,15 @@ async function inspectCall(msg) {
       agent_id: AGENT_ID,
     });
   } catch (err) {
-    // Gateway unreachable — fail open, log, forward as-is
+    // Gateway unreachable — fail CLOSED, block the call
     process.stderr.write(
-      `[mcp-proxy] Gateway unreachable (${err.message}) — forwarding ${toolName} without inspection\n`
+      `[mcp-proxy] Gateway unreachable (${err.message}) — BLOCKING ${toolName} (fail-closed)\n`
     );
-    return null;
+    return {
+      jsonrpc: '2.0',
+      id: msg.id,
+      error: { code: -32600, message: `AgentShroud gateway unreachable: ${err.message}. Tool call blocked for safety.` },
+    };
   }
 
   if (gatewayResult.status === 403) {
@@ -166,10 +170,19 @@ async function inspectCall(msg) {
   }
 
   if (gatewayResult.status !== 200) {
+    // Any non-200 response (500, timeout, etc.) blocks the call (fail-closed).
+    // Only an explicit 200 from the gateway means the call is approved.
+    const detail =
+      (gatewayResult.body && gatewayResult.body.detail) ||
+      `Gateway returned HTTP ${gatewayResult.status}`;
     process.stderr.write(
-      `[mcp-proxy] Gateway returned ${gatewayResult.status} for ${toolName} — forwarding anyway\n`
+      `[mcp-proxy] BLOCKED: ${serverName}/${toolName} — gateway returned ${gatewayResult.status} (fail-closed)\n`
     );
-    return null;
+    return {
+      jsonrpc: '2.0',
+      id: msg.id,
+      error: { code: -32600, message: `AgentShroud gateway error (HTTP ${gatewayResult.status}): ${detail}. Tool call blocked for safety.` },
+    };
   }
 
   // Replace arguments with gateway-sanitized version (PII redacted)
