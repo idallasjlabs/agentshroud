@@ -39,3 +39,34 @@ fi
 # All other fields (Telegram token, channel config, etc.) are preserved.
 
 node "${DEFAULTS_DIR}/apply-patches.js" "${OPENCLAW_DIR}/openclaw.json"
+
+# ── 3. Workspace brand/identity files ────────────────────────────────────────
+# BRAND.md    — always refreshed from image (authoritative trademark & brand rules)
+# IDENTITY.md — seeded on first run only (bot evolves this over time)
+# AGENTS.md   — append "read BRAND.md" instruction if not already present
+
+WORKSPACE_DIR="${OPENCLAW_DIR}/workspace"
+mkdir -p "${WORKSPACE_DIR}"
+
+# BRAND.md: always overwrite — it's the authoritative source from the repo.
+cp "${DEFAULTS_DIR}/workspace/BRAND.md" "${WORKSPACE_DIR}/BRAND.md"
+echo "[init] ✓ Refreshed BRAND.md (trademark & brand rules)"
+
+# IDENTITY.md: seed only if missing or still the unfilled OpenClaw default.
+IDENTITY_FILE="${WORKSPACE_DIR}/IDENTITY.md"
+if [ ! -f "${IDENTITY_FILE}" ] || grep -q "_Fill this in during your first conversation_" "${IDENTITY_FILE}" 2>/dev/null; then
+  cp "${DEFAULTS_DIR}/workspace/IDENTITY.md" "${IDENTITY_FILE}"
+  echo "[init] ✓ Seeded IDENTITY.md with AgentShroud identity"
+else
+  echo "[init] ✓ IDENTITY.md already set — skipping"
+fi
+
+# AGENTS.md: add "read BRAND.md" to the session startup checklist if absent.
+AGENTS_FILE="${WORKSPACE_DIR}/AGENTS.md"
+if [ -f "${AGENTS_FILE}" ] && ! grep -q "BRAND.md" "${AGENTS_FILE}" 2>/dev/null; then
+  # Insert after the last numbered item in the "Every Session" section
+  sed -i 's/4\. \*\*If in MAIN SESSION\*\*/5. Read `BRAND.md` — AgentShroud trademark \& communication standards\n4. **If in MAIN SESSION**/' "${AGENTS_FILE}"
+  echo "[init] ✓ Added BRAND.md to AGENTS.md session startup checklist"
+else
+  echo "[init] ✓ AGENTS.md already references BRAND.md — skipping"
+fi
