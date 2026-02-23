@@ -1,0 +1,114 @@
+/* AgentShroud Web Control Center Styles
+ * Progressive Enhancement, Text Browser Compatible, Responsive Design
+ * Brand Colors: Primary Blue #1583f0, Deep Navy #0a2540, Success #22c55e, Warning #f59e0b, Alert #ef4444
+ */
+
+/* ==== CSS RESET & BASE ==== */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+/* CSS Custom Properties for Theming */
+:root {
+  /* AgentShroud Brand Colors */
+  --primary: #1583f0;
+  --primary-light: #4da2f4;
+  --primary-dark: #0e69c0;
+  --navy: #0a2540;
+  --steel: #3a7bd5;
+  --ice: #b3d9ff;
+  
+  /* Semantic Colors */
+  --success: #22c55e;
+  --warning: #f59e0b;
+  --alert: #ef4444;
+  --info: #a78bfa;
+  
+  /* Dark Theme (Default) */
+  --bg-void: #08090b;
+  --bg-abyss: #0f1219;
+  --bg-cavern: #161c27;
+  --bg-chamber: #1e2535;
+  
+  --text-primary: #e2e8f0;
+  --text-secondary: #94a3b8;
+  --text-muted: #546280;
+  
+  --border: #232b3d;
+  --border-bright: #2e3a50;
+  
+  /* Light Theme Override */
+  --bg-light: #ffffff;
+  --text-light: #1a1a1a;
+  --border-light: #e0e0e0;
+  
+  /* Layout */
+  --radius: 8px;
+  --shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  --transition: all 0.2s ease;
+}/* ==== BASE TYPOGRAPHY & LAYOUT ==== */
+html { font-size: 16px; }
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  line-height: 1.6;
+  background: var(--bg-void);
+  color: var(--text-primary);
+  min-height: 100vh;
+}
+
+/* Text Browsers: Ensure good contrast and readability */
+@media screen and (max-device-width: 1px) {
+  body { 
+    background: white; 
+    color: black; 
+    font-family: monospace; 
+  }
+}
+
+/* ==== HEADER & NAVIGATION ==== */
+.header {
+  background: var(--bg-abyss);
+  border-bottom: 1px solid var(--border);
+  padding: 1rem 1.5rem;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.header-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.header h1 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.logo-text {
+  background: linear-gradient(135deg, var(--primary), var(--steel));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}/* Simplified CSS for quick deployment */
+.nav-tabs { background: #0f1219; border-bottom: 1px solid #232b3d; }
+.nav-list { display: flex; list-style: none; padding: 0; }
+.nav-link { display: block; padding: 0.75rem 1.25rem; color: #94a3b8; text-decoration: none; }
+.nav-link.active { color: #1583f0; border-bottom: 2px solid #1583f0; }
+.main-content { max-width: 1400px; margin: 0 auto; padding: 2rem; }
+.card { background: #161c27; border: 1px solid #232b3d; border-radius: 8px; padding: 1.5rem; margin-bottom: 1.5rem; }
+.card-header { display: flex; justify-content: space-between; margin-bottom: 1rem; border-bottom: 1px solid #232b3d; padding-bottom: 0.75rem; }
+.btn { padding: 0.5rem 1rem; border-radius: 8px; border: none; cursor: pointer; }
+.btn-primary { background: #1583f0; color: white; }
+.btn-secondary { background: #1e2535; color: #e2e8f0; border: 1px solid #232b3d; }
+.status-badge { padding: 0.25rem 0.75rem; border-radius: 12px; font-size: 0.75rem; }
+.status-badge.online { background: rgba(34,197,94,0.15); color: #22c55e; }
+.table { width: 100%; border-collapse: collapse; }
+.table th, .table td { padding: 0.75rem; border-bottom: 1px solid #232b3d; }
+EOFls -la gateway/web/static/
