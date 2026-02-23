@@ -105,4 +105,47 @@ echo "[startup] Bootstrapping OpenClaw config..."
 
 # Start AgentShroud gateway (powered by OpenClaw CLI)
 echo "[startup] Starting AgentShroud gateway..."
-exec openclaw gateway --allow-unconfigured --bind lan
+openclaw gateway --allow-unconfigured --bind lan &
+OPENCLAW_PID=$!
+
+# Forward TERM/INT to openclaw so Docker stop/restart is clean
+trap 'kill $OPENCLAW_PID 2>/dev/null' TERM INT
+
+# Wait for gateway to be ready, then send Telegram startup notification
+(
+    # Poll health endpoint — up to 60s
+    for i in $(seq 1 30); do
+        if curl -sf http://localhost:18789/api/health >/dev/null 2>&1; then
+            break
+        fi
+        sleep 2
+    done
+
+    # Give Telegram provider time to connect after gateway is ready
+    sleep 5
+
+    # Read bot token from openclaw.json on the volume
+    TELEGRAM_BOT_TOKEN="$(node -e "
+        try {
+            const c = JSON.parse(require('fs').readFileSync(
+                '/home/node/.openclaw/openclaw.json', 'utf8'));
+            process.stdout.write(
+                (c.channels && c.channels.telegram && c.channels.telegram.botToken) || '');
+        } catch(e) {}
+    " 2>/dev/null)"
+
+    TELEGRAM_CHAT_ID="8096968754"
+
+    if [ -n "$TELEGRAM_BOT_TOKEN" ]; then
+        curl -sf -X POST "https://api.telegram.org/bot${TELEGRAM_BOT_TOKEN}/sendMessage" \
+            -H "Content-Type: application/json" \
+            -d "{\"chat_id\":\"${TELEGRAM_CHAT_ID}\",\"text\":\"🛡️ AgentShroud bot online — Telegram delivery confirmed after rebuild.\"}" \
+            >/dev/null 2>&1 \
+            && echo "[startup] ✓ Sent Telegram startup notification" \
+            || echo "[startup] ⚠ Could not send Telegram startup notification"
+    else
+        echo "[startup] ⚠ Telegram bot token not found — skipping startup notification"
+    fi
+) &
+
+wait $OPENCLAW_PID
