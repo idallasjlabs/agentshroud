@@ -3,6 +3,8 @@
 # Protected by common law trademark rights. Federal trademark registration pending.
 # Unauthorized reproduction, distribution, or use of the AgentShroud name or brand is strictly prohibited.
 """Tests for port_manager — port conflict detection and auto-assignment."""
+from __future__ import annotations
+
 
 import socket
 import pytest

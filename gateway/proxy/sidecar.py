@@ -12,6 +12,8 @@ without full proxy mode. For guaranteed protection, use proxy mode.
 Exposes POST /api/scan endpoint that accepts a message, runs the
 security pipeline, and returns the sanitized message + security report.
 """
+from __future__ import annotations
+
 
 import logging
 import time

@@ -6,6 +6,8 @@
 
 Runs clamscan/freshclam as local binaries and parses output.
 """
+from __future__ import annotations
+
 
 import logging
 import re

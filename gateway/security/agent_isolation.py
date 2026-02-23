@@ -8,6 +8,8 @@ Per-Agent Container Isolation — agent registry and isolation verification.
 Maps agent IDs to container configurations and validates
 network namespace separation and shared-nothing constraints.
 """
+from __future__ import annotations
+
 
 from dataclasses import dataclass, field, asdict
 from enum import Enum

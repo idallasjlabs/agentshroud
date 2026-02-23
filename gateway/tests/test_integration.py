@@ -3,6 +3,8 @@
 # Protected by common law trademark rights. Federal trademark registration pending.
 # Unauthorized reproduction, distribution, or use of the AgentShroud name or brand is strictly prohibited.
 """Integration tests for the full gateway stack"""
+from __future__ import annotations
+
 
 import pytest
 

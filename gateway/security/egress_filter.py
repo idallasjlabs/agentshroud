@@ -8,6 +8,8 @@ Egress Filtering — block unauthorized outbound traffic.
 Domain/IP allowlist with default-deny policy. Configurable per-agent
 with logging of all egress attempts.
 """
+from __future__ import annotations
+
 
 import ipaddress
 import logging

@@ -7,6 +7,8 @@
 Implements Bearer token authentication with constant-time comparison
 and simple token-bucket rate limiting.
 """
+from __future__ import annotations
+
 
 import hmac
 import logging

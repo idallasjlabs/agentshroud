@@ -5,6 +5,8 @@
 """Tests for token_validation module.
 TDD: Written before implementation.
 """
+from __future__ import annotations
+
 import pytest
 import json
 import time

@@ -8,6 +8,8 @@ Sub-agent Oversight — track, audit, and optionally restrict sub-agent activity
 Default mode: monitor (observe and audit everything, block nothing).
 Enforce mode: hard limits on concurrency and trust-gated tool access.
 """
+from __future__ import annotations
+
 
 import logging
 import time

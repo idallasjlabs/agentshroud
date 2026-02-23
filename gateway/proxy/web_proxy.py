@@ -13,6 +13,8 @@ Design principles:
 - Passthrough mode for debugging
 - Async content scanning to minimize latency
 """
+from __future__ import annotations
+
 
 import logging
 import time

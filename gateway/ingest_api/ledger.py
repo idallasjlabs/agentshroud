@@ -7,6 +7,8 @@
 SQLite-based audit trail of all forwarded content.
 CRITICAL: Stores only SHA-256 hashes, never raw content.
 """
+from __future__ import annotations
+
 
 import hashlib
 import json

@@ -7,6 +7,8 @@
 In-memory queue for agent actions requiring human approval.
 WebSocket broadcast for real-time notifications.
 """
+from __future__ import annotations
+
 
 import asyncio
 import logging

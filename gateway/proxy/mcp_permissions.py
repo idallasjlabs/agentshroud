@@ -7,6 +7,8 @@
 Design: default-allow with escalation for dangerous operations.
 Trust levels map to permission ceilings, not floors.
 """
+from __future__ import annotations
+
 
 import fnmatch
 import logging
