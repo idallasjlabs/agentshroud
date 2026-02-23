@@ -160,6 +160,7 @@ class ContextGuard:
                 )
             )
             self.session_metrics["size_limit_exceeded"] += 1
+            return attacks  # Skip expensive regex analysis on oversized messages
 
         # Check total context size
         if context_size_before + message_length > self.max_context_size:

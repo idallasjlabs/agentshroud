@@ -151,6 +151,49 @@ channels:
     require_approval_for_new: true
   telegram:
     enabled: true
+  imessage:
+    enabled: true
+    # Phone numbers / handles the bot may message without human approval.
+    # Anything not listed goes to the approval queue first.
+    allowed_recipients:
+      - "+13015188813"   # Isaiah (US)
+      - "8096968754"     # Isaiah (Telegram-style ID used as iMessage handle)
+      - "8506022825"
+      - "8545356403"
+      - "8279589982"
+    rate_limit_per_hour: 30
+    require_approval_for_new: true
+
+mcp_proxy:
+  # Per-server trust levels and per-tool permission overrides.
+  # The gateway wires this into MCPProxy on startup.
+  # Tools not listed here inherit the server default (read permission, no rate limit).
+  servers:
+    mac-messages:
+      transport: http_sse
+      # Bridge runs on macOS host: npx mcp-proxy uvx mac-messages-mcp --port 8200
+      url: "http://host.docker.internal:8200"
+      timeout_seconds: 30
+      tools:
+        tool_send_message:
+          permission_level: write
+          rate_limit: 30      # max 30 sends per minute
+          sensitive: true     # extra audit logging
+        tool_get_recent_messages:
+          permission_level: read
+          rate_limit: 60
+        tool_get_chats:
+          permission_level: read
+          rate_limit: 60
+        tool_find_contact:
+          permission_level: read
+          rate_limit: 60
+        tool_fuzzy_search_messages:
+          permission_level: read
+          rate_limit: 30
+        tool_check_imessage_availability:
+          permission_level: read
+          rate_limit: 10
 
 mcp_proxy:
   # MCP tool call security layer — inspects all OpenClaw MCP tool calls.
