@@ -548,18 +548,11 @@ class WebProxy:
             
             parsed = urlparse(url)
             egress_event = EgressEvent(
-                timestamp=time.time(),
                 agent_id='web-proxy',
                 channel=EgressChannel.HTTP,
                 destination=parsed.hostname or url,
-                metadata={
-                    'url': url,
-                    'status_code': status_code,
-                    'content_type': content_type,
-                    'response_size': response_size or len(body.encode('utf-8', errors='replace')),
-                    'findings_count': len(result.content_findings),
-                    'action': result.action.value
-                }
+                size_bytes=response_size or len(body.encode('utf-8', errors='replace')),
+                details=str({'url': url, 'status_code': status_code, 'content_type': content_type, 'action': result.action.value}),
             )
             self.egress_monitor.record(egress_event)
         except Exception as e:
