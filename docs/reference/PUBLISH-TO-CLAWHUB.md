@@ -237,7 +237,7 @@ AI agents need browser automation, but standard tools lack security controls. Se
 
 ## Security Philosophy
 
-"One Claw Tied Behind Your Back" - Maximum capability with maximum security.
+"One Shroud Over Every Wire" - Maximum capability with maximum security.
 
 ## Use Cases
 
@@ -340,7 +340,7 @@ Use this for announcements:
 ```
 🚀 SecureBrowser 1.0.0 - Enterprise Browser Automation for AI Agents
 
-Built with "One Claw Tied Behind Your Back" philosophy:
+Built with "One Shroud Over Every Wire" philosophy:
 ✅ URL allowlisting
 ✅ Risk-based approvals
 ✅ Comprehensive audit logging

@@ -2,7 +2,7 @@
 
 ## Overview
 
-This document tracks planned enhancements for "One Claw Tied Behind Your Back" - a secure, isolated OpenClaw deployment that serves as a separate digital environment for AI assistance.
+This document tracks planned enhancements for "One Shroud Over Every Wire" - a secure, isolated OpenClaw deployment that serves as a separate digital environment for AI assistance.
 
 ## Core Philosophy
 

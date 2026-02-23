@@ -420,7 +420,7 @@ credential_patterns = [
 - Share bot access with family (they can't see your passwords)
 - Continue working on projects (bot configures services using credentials internally)
 
-**The "One Claw Tied Behind Your Back" philosophy is maintained:**
+**The "One Shroud Over Every Wire" philosophy is maintained:**
 - Bot only sees what you explicitly share (via 1Password vaults)
 - Bot can USE credentials but not DISPLAY them remotely
 - Bot's actions are logged and auditable
