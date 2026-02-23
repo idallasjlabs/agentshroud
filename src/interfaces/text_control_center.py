@@ -180,9 +180,31 @@ class ControlCenter:
             active_modules = sum(1 for m in module_list if m.get('active', False))
             inactive_modules = len(module_list) - active_modules
         
-        print(f"{ANSI.BOLD}{ANSI.CYAN}║{ANSI.RESET} Inbound:  1,234 │ {ANSI.GREEN}●{ANSI.RESET} Active:  {active_modules:<2} │ {ANSI.RED}⚠{ANSI.RESET} CRITICAL: 0     {ANSI.BOLD}{ANSI.CYAN}║{ANSI.RESET}")
-        print(f"{ANSI.BOLD}{ANSI.CYAN}║{ANSI.RESET} Blocked:     12 │ {ANSI.RED}○{ANSI.RESET} Inactive: {inactive_modules:<2} │ {ANSI.YELLOW}⚠{ANSI.RESET} HIGH:     2     {ANSI.BOLD}{ANSI.CYAN}║{ANSI.RESET}")
-        print(f"{ANSI.BOLD}{ANSI.CYAN}║{ANSI.RESET} Sanitized:   89 │ {ANSI.RED}✗{ANSI.RESET} Error:    {error_modules:<2} │ {ANSI.YELLOW}⚠{ANSI.RESET} MEDIUM:   5     {ANSI.BOLD}{ANSI.CYAN}║{ANSI.RESET}")
+        # Fetch pipeline stats from API
+        pipeline = self.make_api_request("/proxy/status")
+        if pipeline and "error" not in pipeline:
+            inbound = str(pipeline.get("inbound_total", "N/A"))
+            blocked = str(pipeline.get("blocked_total", "N/A"))
+            sanitized = str(pipeline.get("sanitized_total", "N/A"))
+        else:
+            inbound = "N/A"
+            blocked = "N/A"
+            sanitized = "N/A"
+        
+        # Fetch alert counts from API
+        alerts_data = self.make_api_request("/alerts/summary")
+        if alerts_data and "error" not in alerts_data:
+            critical = str(alerts_data.get("critical", 0))
+            high = str(alerts_data.get("high", 0))
+            medium = str(alerts_data.get("medium", 0))
+        else:
+            critical = "N/A"
+            high = "N/A"
+            medium = "N/A"
+        
+        print(f"{ANSI.BOLD}{ANSI.CYAN}║{ANSI.RESET} Inbound: {inbound:>5} │ {ANSI.GREEN}●{ANSI.RESET} Active:  {active_modules:<2} │ {ANSI.RED}⚠{ANSI.RESET} CRITICAL: {critical:<4} {ANSI.BOLD}{ANSI.CYAN}║{ANSI.RESET}")
+        print(f"{ANSI.BOLD}{ANSI.CYAN}║{ANSI.RESET} Blocked: {blocked:>5} │ {ANSI.RED}○{ANSI.RESET} Inactive: {inactive_modules:<2} │ {ANSI.YELLOW}⚠{ANSI.RESET} HIGH:     {high:<4} {ANSI.BOLD}{ANSI.CYAN}║{ANSI.RESET}")
+        print(f"{ANSI.BOLD}{ANSI.CYAN}║{ANSI.RESET} Sanitized:{sanitized:>4} │ {ANSI.RED}✗{ANSI.RESET} Error:    {error_modules:<2} │ {ANSI.YELLOW}⚠{ANSI.RESET} MEDIUM:   {medium:<4} {ANSI.BOLD}{ANSI.CYAN}║{ANSI.RESET}")
         
         # Navigation
         print(f"{ANSI.BOLD}{ANSI.CYAN}╠══════════════════════════════════════════════════════════╣{ANSI.RESET}")
@@ -274,14 +296,21 @@ class ControlCenter:
         
         print(f"{ANSI.BOLD}{ANSI.MAGENTA}╔══ AUDIT LOG ══════════════════════════════════════════════╗{ANSI.RESET}")
         
-        # Sample log entries (in real implementation, get from API)
-        logs = [
-            {"time": "23:42:15", "level": "INFO", "message": "Module PII-Scanner activated"},
-            {"time": "23:41:45", "level": "WARN", "message": "High risk content detected in message #1234"},
-            {"time": "23:41:22", "level": "INFO", "message": "Approval request submitted for user@domain.com"},
-            {"time": "23:40:55", "level": "ERROR", "message": "Failed to connect to external API"},
-            {"time": "23:40:12", "level": "INFO", "message": "Successfully processed 50 messages"},
-        ]
+        # Fetch recent log entries from API
+        log_result = self.make_api_request("/logs?tail=5")
+        if log_result and "error" not in log_result:
+            raw_logs = log_result.get("logs", [])
+            if isinstance(raw_logs, list):
+                logs = []
+                for entry in raw_logs[-5:]:
+                    if isinstance(entry, dict):
+                        logs.append(entry)
+                    elif isinstance(entry, str):
+                        logs.append({"time": "", "level": "INFO", "message": entry[:35]})
+            else:
+                logs = [{"time": "", "level": "INFO", "message": "No log entries available"}]
+        else:
+            logs = [{"time": "", "level": "INFO", "message": "N/A \u2014 connect gateway API for logs"}]
         
         for log in logs:
             level_color = ANSI.GREEN if log["level"] == "INFO" else ANSI.YELLOW if log["level"] == "WARN" else ANSI.RED
@@ -298,11 +327,14 @@ class ControlCenter:
         
         print(f"{ANSI.BOLD}{ANSI.CYAN}╔══ SSH HOST STATUS ════════════════════════════════════════╗{ANSI.RESET}")
         
-        hosts = [
-            {"name": "Marvin", "status": "online", "ping": "2ms"},
-            {"name": "Pi", "status": "online", "ping": "15ms"}, 
-            {"name": "Trillian", "status": "offline", "ping": "timeout"}
-        ]
+        # Fetch SSH host status from API
+        ssh_result = self.make_api_request("/ssh/hosts")
+        if ssh_result and "error" not in ssh_result:
+            hosts = ssh_result.get("hosts", [])
+            if not hosts:
+                hosts = [{"name": "N/A", "status": "unknown", "ping": "\u2014"}]
+        else:
+            hosts = [{"name": "N/A \u2014 connect API", "status": "unknown", "ping": "\u2014"}]
         
         for host in hosts:
             status_color = ANSI.GREEN if host["status"] == "online" else ANSI.RED
