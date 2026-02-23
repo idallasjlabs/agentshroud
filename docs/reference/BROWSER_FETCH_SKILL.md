@@ -374,7 +374,7 @@ Browser-fetch complements other AgentShroud security layers:
 5. **Browser-Fetch** - Secure credential sharing without plain text (this document)
 6. **Audit Ledger** - All actions logged to gateway
 
-All layers work together to implement "One Claw Tied Behind Your Back."
+All layers work together to implement "One Shroud Over Every Wire."
 
 ---
 

@@ -19,7 +19,7 @@ This dual-layer approach prevents unauthorized access even if the gateway passwo
 
 ## Why Device Pairing Matters
 
-For AgentShroud ("One Claw Tied Behind Your Back"), device pairing ensures:
+For AgentShroud ("One Shroud Over Every Wire"), device pairing ensures:
 - You control exactly which devices can manage the AI agent
 - Each new browser/computer requires your explicit approval
 - Stolen passwords alone cannot grant access
@@ -398,7 +398,7 @@ Device pairing integrates with other AgentShroud security features:
    - Must approve via Control UI before execution
    - Full audit trail in gateway ledger
 
-All four layers work together to implement "One Claw Tied Behind Your Back."
+All four layers work together to implement "One Shroud Over Every Wire."
 
 ---
 
