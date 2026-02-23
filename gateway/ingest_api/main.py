@@ -53,7 +53,7 @@ from ..ssh_proxy.proxy import SSHProxy
 from .router import ForwardError, MultiAgentRouter
 from .sanitizer import PIISanitizer
 from ..security.prompt_guard import PromptGuard
-from ..security.trust_manager import TrustManager
+from ..security.trust_manager import TrustManager, TrustLevel
 from ..security.egress_filter import EgressFilter
 from .event_bus import EventBus, make_event
 from ..proxy.http_proxy import ALLOWED_DOMAINS, HTTPConnectProxy
@@ -207,6 +207,13 @@ async def lifespan(app: FastAPI):
 
     try:
         app_state.trust_manager = TrustManager()
+        app_state.trust_manager.register_agent("default")
+        # Elevate default agent to STANDARD so internal API calls work
+        app_state.trust_manager._conn.execute(
+            "UPDATE trust_scores SET score = 200, level = ? WHERE agent_id = ?",
+            (int(TrustLevel.STANDARD), "default")
+        )
+        app_state.trust_manager._conn.commit()
         logger.info("TrustManager initialized")
     except Exception as e:
         logger.critical(f"Failed to initialize TrustManager: {e}")
