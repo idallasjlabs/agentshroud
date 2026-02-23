@@ -6,6 +6,8 @@
 
 Tests the full pipeline: auth -> sanitize -> route -> ledger -> respond.
 """
+from __future__ import annotations
+
 
 import pytest
 import pytest_asyncio

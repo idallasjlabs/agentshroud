@@ -10,6 +10,8 @@ Covers:
 - CRITICAL-3: Dashboard cookie-based auth with redirect
 - CRITICAL-4: PII sanitization in approval queue details
 """
+from __future__ import annotations
+
 
 import pytest
 import pytest_asyncio

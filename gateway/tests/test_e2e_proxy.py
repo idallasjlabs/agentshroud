@@ -8,6 +8,8 @@ E2E Proxy Pipeline Tests — verify security pipeline actually works.
 These tests run against the REAL proxy pipeline (not mocks) to prove
 that traffic flows through AgentShroud's security modules.
 """
+from __future__ import annotations
+
 
 import json
 import pytest

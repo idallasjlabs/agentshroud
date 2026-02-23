@@ -13,6 +13,8 @@ Shows real-time status of the security proxy pipeline including:
 - Direct access blocked status
 - Canary status
 """
+from __future__ import annotations
+
 
 import time
 from dataclasses import dataclass

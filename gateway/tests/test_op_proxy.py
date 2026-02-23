@@ -3,6 +3,8 @@
 # Protected by common law trademark rights. Federal trademark registration pending.
 # Unauthorized reproduction, distribution, or use of the AgentShroud name or brand is strictly prohibited.
 """Tests for POST /credentials/op-proxy endpoint (P2: credential isolation)."""
+from __future__ import annotations
+
 
 from unittest.mock import patch, MagicMock
 

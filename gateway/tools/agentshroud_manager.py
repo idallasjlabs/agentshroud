@@ -8,6 +8,8 @@ Manages OpenClaw versions with mandatory security review.
 Supports check, list, upgrade, downgrade, and rollback operations.
 All mutations go through the approval queue.
 """
+from __future__ import annotations
+
 
 import json
 import logging

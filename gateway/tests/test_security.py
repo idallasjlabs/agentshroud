@@ -3,6 +3,8 @@
 # Protected by common law trademark rights. Federal trademark registration pending.
 # Unauthorized reproduction, distribution, or use of the AgentShroud name or brand is strictly prohibited.
 """Security and edge case tests for AgentShroud Gateway"""
+from __future__ import annotations
+
 
 import pytest
 from gateway.ingest_api.auth import verify_token, RateLimiter

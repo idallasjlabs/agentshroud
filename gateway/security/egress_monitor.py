@@ -8,6 +8,8 @@ Unified Egress Monitoring — aggregate all egress channels, detect anomalies.
 Default mode: monitor (alert only, never block).
 Aggregates HTTP, DNS, MCP, and file I/O egress into a single view.
 """
+from __future__ import annotations
+
 
 import logging
 import time

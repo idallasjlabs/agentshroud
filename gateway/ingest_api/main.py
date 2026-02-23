@@ -4,6 +4,7 @@
 # Unauthorized reproduction, distribution, or use of the AgentShroud name or brand is strictly prohibited.
 """AgentShroud Gateway - Main FastAPI Application
 
+
 Entry point for the gateway API. Wires together all components:
 - PII sanitization
 - Data ledger
@@ -11,6 +12,8 @@ Entry point for the gateway API. Wires together all components:
 - Approval queue
 - Authentication
 """
+
+from __future__ import annotations
 
 import fnmatch
 import hashlib
@@ -60,6 +63,7 @@ from ..proxy.webhook_receiver import WebhookReceiver
 from ..proxy.pipeline import SecurityPipeline
 from ..web.api import router as management_api_router
 from ..web.management import router as management_dashboard_router
+from ..web.dashboard_endpoints import router as dashboard_api_router, install_log_handler
 from .version_routes import router as version_router
 
 # === Credential Isolation (P2) ===
@@ -236,6 +240,7 @@ async def lifespan(app: FastAPI):
     # Record start time
     app_state.start_time = time.time()
 
+    install_log_handler()
     logger.info(
         f"AgentShroud Gateway ready at {app_state.config.bind}:{app_state.config.port}"
     )
@@ -285,6 +290,7 @@ AuthRequired = Annotated[None, Depends(auth_dep)]
 
 # Mount management API (has its own Bearer auth on each endpoint)
 app.include_router(management_api_router)
+app.include_router(dashboard_api_router)
 
 # Mount management dashboard (serves /manage/)
 app.include_router(management_dashboard_router)

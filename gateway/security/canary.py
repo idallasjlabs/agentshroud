@@ -10,6 +10,8 @@ Sends fake PII through the pipeline and verifies:
 2. Audit entry exists with valid hash chain
 3. Proxy mode is active (health check)
 """
+from __future__ import annotations
+
 
 import logging
 import time
