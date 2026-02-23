@@ -157,6 +157,10 @@ services:
       retries: 3
       start_period: 60s
 
+    # host.docker.internal → macOS host (for MCP servers that must run on host, e.g. mac-messages-mcp)
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+
     # SECURITY: Isolated network - NO access to host LAN
     networks:
       - agentshroud-isolated
