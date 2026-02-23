@@ -90,6 +90,10 @@ class TestWebProxySecurityIntegration(unittest.TestCase):
             self.proxy.config.passthrough_mode = False
             self.proxy.config.mode = "default"
             self.proxy.config.scan_responses = True
+            self.proxy.config.is_domain_denied = Mock(return_value=False)
+            self.proxy.config.is_domain_allowed = Mock(return_value=True)
+            self.proxy.config.suspicious_content_types = []
+            self.proxy.config.get_domain_settings = Mock(return_value=Mock(rate_limit_rpm=100, max_response_bytes=10_000_000))
             self.proxy.audit_chain = Mock()
 
     def test_dns_filter_blocks_suspicious_domains(self):
@@ -188,7 +192,7 @@ class TestWebProxySecurityIntegration(unittest.TestCase):
     def test_egress_monitor_logs_responses(self):
         """Test that egress monitor logs all outbound connections."""
         # Setup
-        self.proxy.content_scanner.scan.return_value = Mock(flagged=False, findings=[])
+        self.proxy.content_scanner.scan.return_value = Mock(flagged=False, findings=[], prompt_injection_score=0.0, has_prompt_injection=False, has_pii=False)
         
         # Execute
         result = self.proxy.scan_response(
@@ -204,7 +208,7 @@ class TestWebProxySecurityIntegration(unittest.TestCase):
         call_args = self.proxy.egress_monitor.record.call_args[0][0]
         self.assertEqual(call_args.agent_id, 'web-proxy')
         self.assertEqual(call_args.destination, 'example.com')
-        self.assertIn('url', call_args.metadata)
+        self.assertIn('url', call_args.details)
 
     def test_graceful_degradation_dns_error(self):
         """Test that DNS filter errors cause fail-closed behavior."""
@@ -238,7 +242,7 @@ class TestWebProxySecurityIntegration(unittest.TestCase):
     def test_graceful_degradation_egress_error(self):
         """Test that egress monitoring errors don't break response processing."""
         # Setup
-        self.proxy.content_scanner.scan.return_value = Mock(flagged=False, findings=[])
+        self.proxy.content_scanner.scan.return_value = Mock(flagged=False, findings=[], prompt_injection_score=0.0, has_prompt_injection=False, has_pii=False)
         self.proxy.egress_monitor.record.side_effect = Exception("Monitoring service down")
         
         # Execute - should not raise exception
