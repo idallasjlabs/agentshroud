@@ -63,7 +63,8 @@ else
     echo "[startup] Warning: Gateway op-proxy not configured, 1Password secrets unavailable"
 fi
 
-# Apply OpenClaw config defaults (cron jobs, agent patches, workspace brand files)
+# Apply OpenClaw config defaults (SSH allowlist, cron jobs, agent patches, workspace brand files)
+echo "[startup] Bootstrapping OpenClaw config..."
 /usr/local/bin/init-openclaw-config.sh
 
 # Start AgentShroud gateway (powered by OpenClaw CLI)

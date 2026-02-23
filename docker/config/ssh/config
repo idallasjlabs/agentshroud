@@ -1,0 +1,51 @@
+# AgentShroud SSH Allowlist
+# Only hosts listed here can be reached via SSH from the bot container.
+# This file is refreshed from the image on every container startup.
+# To add a new approved host, add a Host block ABOVE the "Block all" section.
+# IMPORTANT: Each approved host MUST include "ProxyCommand none" to override
+# the wildcard block at the bottom.
+
+Host pi raspberrypi
+    HostName raspberrypi.tail240ea8.ts.net
+    User agentshroud-bot
+    Port 22
+    IdentityFile ~/.ssh/id_ed25519
+    IdentitiesOnly yes
+    PasswordAuthentication no
+    PubkeyAuthentication yes
+    StrictHostKeyChecking accept-new
+    ServerAliveInterval 60
+    ServerAliveCountMax 3
+    ProxyCommand none
+
+Host marvin
+    HostName marvin.tail240ea8.ts.net
+    User agentshroud-bot
+    Port 22
+    IdentityFile ~/.ssh/id_ed25519
+    IdentitiesOnly yes
+    PasswordAuthentication no
+    PubkeyAuthentication yes
+    StrictHostKeyChecking accept-new
+    ServerAliveInterval 60
+    ServerAliveCountMax 3
+    ProxyCommand none
+
+Host trillian
+    HostName trillian.tail240ea8.ts.net
+    User agentshroud-bot
+    Port 22
+    IdentityFile ~/.ssh/id_ed25519
+    IdentitiesOnly yes
+    PasswordAuthentication no
+    PubkeyAuthentication yes
+    StrictHostKeyChecking accept-new
+    ServerAliveInterval 60
+    ServerAliveCountMax 3
+    ProxyCommand none
+
+# ─── Block all other SSH connections ─────────────────────────────────────────
+# SECURITY: Any host not listed above will fail immediately.
+# Approved hosts override this via "ProxyCommand none" in their block above.
+Host *
+    ProxyCommand /bin/false
