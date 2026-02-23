@@ -6,6 +6,8 @@
 Git Hook Guard - Security Hardening Module
 Scan git hooks and package installation scripts for malicious content.
 """
+from __future__ import annotations
+
 
 import os
 import re

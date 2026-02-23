@@ -4,8 +4,11 @@
 # Unauthorized reproduction, distribution, or use of the AgentShroud name or brand is strictly prohibited.
 """Configuration loader for AgentShroud Gateway
 
+
 Loads configuration from agentshroud.yaml and provides typed access via Pydantic models.
 """
+
+from __future__ import annotations
 
 import logging
 import secrets

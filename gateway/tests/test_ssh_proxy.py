@@ -3,6 +3,8 @@
 # Protected by common law trademark rights. Federal trademark registration pending.
 # Unauthorized reproduction, distribution, or use of the AgentShroud name or brand is strictly prohibited.
 """Tests for SSH Proxy module"""
+from __future__ import annotations
+
 
 import asyncio
 from unittest.mock import AsyncMock, MagicMock, patch

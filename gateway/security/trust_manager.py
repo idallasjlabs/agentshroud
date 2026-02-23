@@ -9,6 +9,8 @@ Trust levels from UNTRUSTED to FULL, backed by SQLite persistence.
 Actions are gated by minimum trust levels. Trust is earned through
 successful operations and decays over time or on violations.
 """
+from __future__ import annotations
+
 
 import sqlite3
 import time

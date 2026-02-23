@@ -3,6 +3,8 @@
 # Protected by common law trademark rights. Federal trademark registration pending.
 # Unauthorized reproduction, distribution, or use of the AgentShroud name or brand is strictly prohibited.
 """Test Context Window Poisoning Defense."""
+from __future__ import annotations
+
 
 from gateway.security.context_guard import check_message
 

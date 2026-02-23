@@ -6,6 +6,8 @@
 
 Runs trivy as a local binary (not docker run) and parses JSON output.
 """
+from __future__ import annotations
+
 
 import json
 import logging
