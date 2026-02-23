@@ -36,9 +36,9 @@ def sync_client(test_config):
 @pytest.mark.asyncio
 async def test_dashboard_serves_html(client):
     """GET /dashboard with valid cookie serves HTML"""
+    client.cookies = {"dashboard_token": "test-token-12345"}
     resp = await client.get(
         "/dashboard",
-        cookies={"dashboard_token": "test-token-12345"},
     )
     assert resp.status_code == 200
     assert "text/html" in resp.headers["content-type"]
@@ -107,9 +107,9 @@ def test_ws_activity_requires_auth(sync_client):
 @pytest.mark.asyncio
 async def test_dashboard_has_csp_header(client):
     """GET /dashboard includes Content-Security-Policy header"""
+    client.cookies = {"dashboard_token": "test-token-12345"}
     resp = await client.get(
         "/dashboard",
-        cookies={"dashboard_token": "test-token-12345"},
     )
     assert resp.status_code == 200
     csp = resp.headers.get("content-security-policy", "")
@@ -120,9 +120,9 @@ async def test_dashboard_has_csp_header(client):
 @pytest.mark.asyncio
 async def test_dashboard_xss_prevention(client):
     """Dashboard HTML uses data attributes instead of onclick for approvals"""
+    client.cookies = {"dashboard_token": "test-token-12345"}
     resp = await client.get(
         "/dashboard",
-        cookies={"dashboard_token": "test-token-12345"},
     )
     assert "onclick" not in resp.text
     assert (
