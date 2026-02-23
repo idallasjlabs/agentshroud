@@ -90,11 +90,17 @@ if [ -n "${GATEWAY_AUTH_TOKEN:-}" ] && [ -n "${GATEWAY_OP_PROXY_URL:-}" ]; then
         echo "[startup] ⚠ Could not load Brave Search API key after retries"
     fi
 
-    # Gmail credentials intentionally not loaded at startup.
-    # Loading GMAIL_APP_PASSWORD on every restart authenticates from the Docker
-    # container IP, which Google flags as suspicious and locks the account.
-    # Re-enable only after the Gmail accounts are recovered and a safe auth
-    # strategy (e.g. OAuth2 refresh token) is in place.
+    # iCloud email credentials (replaces Gmail, which is locked out)
+    ICLOUD_APP_PASSWORD="$(op_proxy_read_with_retry "iCloud app password" \
+        "op://AgentShroud Bot Credentials/AgentShroud - iCloud Mail [agentshroud.ai@icloud.com]/agentshroud app-specific password")" || true
+    if [ -n "$ICLOUD_APP_PASSWORD" ]; then
+        export ICLOUD_APP_PASSWORD
+        export ICLOUD_USERNAME="agentshroud.ai@gmail.com"
+        export ICLOUD_EMAIL="agentshroud.ai@icloud.com"
+        echo "[startup] ✓ Loaded iCloud email credentials"
+    else
+        echo "[startup] ⚠ Could not load iCloud app-specific password after retries"
+    fi
 else
     echo "[startup] Warning: Gateway op-proxy not configured, 1Password secrets unavailable"
 fi

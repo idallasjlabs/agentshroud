@@ -119,7 +119,7 @@ services:
       - GATEWAY_OP_PROXY_URL=http://gateway:8080
       # Bot identity
       - OPENCLAW_BOT_NAME=agentshroud_bot
-      - OPENCLAW_BOT_EMAIL=agentshroud.ai@gmail.com
+      - OPENCLAW_BOT_EMAIL=agentshroud.ai@icloud.com
       # Security: Disable features that access host
       - OPENCLAW_DISABLE_HOST_FILESYSTEM=true
       - OPENCLAW_SANDBOX_MODE=strict
