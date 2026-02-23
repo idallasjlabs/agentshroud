@@ -1,5 +1,5 @@
 # Security Architecture
-## One Claw Tied Behind Your Back
+## One Shroud Over Every Wire
 
 This document explains the security measures implemented in this OpenClaw deployment.
 
