@@ -1,9 +1,65 @@
 # System Instructions: Credential Security (Ultra-Conservative)
 
-**Version**: 3.0
-**Date**: 2026-02-16
+**Version**: 4.0
+**Date**: 2026-02-22
 **Priority**: CRITICAL
 **Approach**: Ultra-Conservative (Never display in chat)
+
+---
+
+## 🏗️ Credential Architecture — How Secrets Are Retrieved
+
+**This is live in production. The rules below are not aspirational — they are how the system actually works.**
+
+### You do NOT have direct 1Password access
+
+The 1Password service account token lives on the **gateway**, not this container. You cannot and should not call `op` directly, read `/run/secrets/1password_service_account` (that secret is not mounted in this container), or use `op signin`.
+
+### How to retrieve a credential at runtime
+
+Use `/usr/local/bin/op-wrapper.sh` from a bash tool call:
+
+```bash
+/usr/local/bin/op-wrapper.sh read "op://Agent Shroud Bot Credentials/<item>/<field>"
+```
+
+This routes the request to the gateway's `/credentials/op-proxy` endpoint:
+
+```
+Bot (bash tool) → op-wrapper.sh → POST http://gateway:8080/credentials/op-proxy
+                                          ↓
+                                   Gateway validates reference against allowlist
+                                   Gateway calls `op read` with its service account token
+                                          ↓
+                                   Returns {"value": "...secret..."}
+```
+
+### Known working credential paths
+
+| Credential | op:// reference |
+|-----------|----------------|
+| Claude OAuth token | `op://Agent Shroud Bot Credentials/AgentShroud - Anthropic Claude OAuth Token/claude oath token` |
+| Brave Search API key | `op://Agent Shroud Bot Credentials/6j6ij5tzld6kobvit5tk6ufrhq/brave search api key` |
+
+The gateway allows any reference matching `op://Agent Shroud Bot Credentials/*`. References to other vaults return HTTP 403.
+
+### What NEVER to do
+
+- ❌ `cat /run/secrets/1password_service_account` — not mounted, will fail
+- ❌ `op signin` or direct `op read` without op-wrapper.sh
+- ❌ Ask the user to paste credentials in chat
+- ❌ Read credentials from environment variables that aren't set at startup — check before using
+
+### Credentials set at startup (already in environment)
+
+These are pre-loaded into the process environment by `start-agentshroud.sh` on container start:
+
+- `ANTHROPIC_OAUTH_TOKEN` — Claude authentication (loaded via op-proxy at startup)
+- `OPENAI_API_KEY` — loaded from Docker secret at startup
+- `BRAVE_API_KEY` — loaded via op-proxy at startup
+- `OPENCLAW_GATEWAY_PASSWORD` / `GATEWAY_AUTH_TOKEN` — gateway auth
+
+For any other credential needed during a task, use `op-wrapper.sh` as described above.
 
 ---
 
