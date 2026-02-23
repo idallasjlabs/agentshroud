@@ -64,7 +64,7 @@ The Wikipedia article says injection comes from "data" — which for OpenClaw me
 
 ---
 
-## Current State (v0.5.0 → post-P0)
+## Current State (v0.5.0 → All Phases Complete)
 
 **Before P0:**
 - Gateway monitored activity and logged it
@@ -81,12 +81,12 @@ The Wikipedia article says injection comes from "data" — which for OpenClaw me
 - ResourceGuard enforced: per-agent CPU/memory/disk/request limits active
 - 197 tests pass, 0 failures — clean baseline for all subsequent work
 
-**Still missing (P1–FINAL):**
+**All phases completed (February 2026).** The following have been wired into the live pipeline:
 - Bot still has direct internet access
 - Bot still holds its own credentials
 - Bot still sends Telegram/email directly
-- MCP proxy endpoint not yet wired
-- SecurityPipeline not yet wired to /forward
+- MCP proxy endpoint ✅ wired and fail-closed
+- SecurityPipeline ✅ wired to /forward
 
 ---
 
@@ -114,7 +114,7 @@ ruff check gateway/  # 0 violations
 
 ---
 
-### P1: HTTP CONNECT Proxy + Domain Allowlist
+### P1: HTTP CONNECT Proxy + Domain Allowlist ✅ DONE
 **Branch:** `feat/http-connect-proxy`
 
 **Threat addressed:** Data exfiltration via any HTTP/HTTPS request. This is the Cisco attack
@@ -142,7 +142,7 @@ this phase, there is no network-level defense regardless of what inspection dete
 
 ---
 
-### P2: Credential Isolation via op-proxy
+### P2: Credential Isolation via op-proxy ✅ DONE
 **Branch:** `feat/credential-isolation`
 
 **Threat addressed:** Misconfigured instance blast radius. Bot currently holds the 1Password
@@ -164,7 +164,7 @@ Move credential ownership to the gateway so the bot only has a gateway token.
 
 ---
 
-### P3: Channel Ownership — Telegram + Email
+### P3: Channel Ownership — Telegram + Email ✅ DONE
 **Branch:** `feat/channel-ownership`
 
 **Threat addressed:** Prompt injection → messaging exfiltration. A prompt injection attack
@@ -184,7 +184,7 @@ through the gateway with PII scanning and recipient allowlisting.
 
 ---
 
-### P4: Wire MCP Proxy
+### P4: Wire MCP Proxy ✅ DONE
 **Branch:** `feat/mcp-proxy-wiring`
 **Depends on:** P0 (MCPInspector must have real detection — ✅ done)
 
@@ -211,7 +211,7 @@ repository vetting failed to provide.
 
 ---
 
-### P5: Wire SecurityPipeline to /forward
+### P5: Wire SecurityPipeline to /forward ✅ DONE
 **Branch:** `feat/security-pipeline`
 
 **Threat addressed:** Prompt injection via the `/forward` endpoint (the main LLM communication
@@ -227,7 +227,7 @@ channel). Any content forwarded to the LLM that bypasses MCP is scanned here.
 
 ---
 
-### FINAL: Network Lockdown Activation
+### FINAL: Network Lockdown Activation ✅ DONE
 **Branch:** `feat/network-lockdown`
 
 **This is the switch that makes everything real.** All previous phases built the infrastructure;
