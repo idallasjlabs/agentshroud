@@ -3,5 +3,8 @@ secrets/*.txt
 secrets/*.key
 secrets/*.pem
 
+# Extensionless secret files
+secrets/1password_service_account
+
 # Exclude README (documentation is OK)
 !secrets/README.md
