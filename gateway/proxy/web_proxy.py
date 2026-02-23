@@ -23,6 +23,11 @@ from typing import Any, Optional
 from .url_analyzer import URLAnalyzer
 from .web_config import WebProxyConfig
 from .web_content_scanner import WebContentScanner
+from ..security.dns_filter import DNSFilter
+from ..security.network_validator import NetworkValidator
+from ..security.egress_monitor import EgressMonitor
+from ..security.browser_security import BrowserSecurityGuard
+from ..security.oauth_security import OAuthSecurityValidator
 
 logger = logging.getLogger("agentshroud.proxy.web_proxy")
 
@@ -160,6 +165,12 @@ class WebProxy:
         self.url_analyzer = url_analyzer or URLAnalyzer()
         self.content_scanner = content_scanner or WebContentScanner()
         self.rate_limiter = RateLimiter()
+        # Network Security Modules
+        self.dns_filter = DNSFilter()
+        self.network_validator = NetworkValidator()
+        self.egress_monitor = EgressMonitor()
+        self.browser_security = BrowserSecurityGuard()
+        self.oauth_security = OAuthSecurityValidator()
         self._stats = {
             "total_requests": 0,
             "allowed": 0,
