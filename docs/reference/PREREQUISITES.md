@@ -171,7 +171,7 @@ AgentShroud requires careful setup of **isolated accounts** to maintain the "One
 
 ### 6. Anthropic Account (Claude API)
 
-**Required**: Anthropic API key for Claude models
+**Required**: Anthropic OAuth token for Claude models
 
 **Setup Steps**:
 1. Create account: https://console.anthropic.com
@@ -437,7 +437,7 @@ agentshroud/
 │   ├── Dockerfile.openclaw         # OpenClaw container definition
 │   ├── secrets/                    # Docker secrets (gitignored)
 │   │   ├── openai_api_key.txt
-│   │   ├── anthropic_api_key.txt
+│   │   ├── anthropic_oauth_token.txt
 │   │   ├── 1password_bot_email.txt
 │   │   ├── 1password_bot_master_password.txt
 │   │   └── 1password_bot_secret_key.txt
@@ -464,7 +464,7 @@ agentshroud/
 **Required Secrets** (stored in `docker/secrets/`):
 
 1. `openai_api_key.txt` - OpenAI API key
-2. `anthropic_api_key.txt` - Anthropic API key
+2. `anthropic_oauth_token.txt` - Anthropic OAuth token
 3. `1password_bot_email.txt` - Bot's 1Password email
 4. `1password_bot_master_password.txt` - Bot's 1Password master password
 5. `1password_bot_secret_key.txt` - Bot's 1Password Secret Key
@@ -509,7 +509,7 @@ Use this checklist to verify all prerequisites:
 - [ ] 1Password vault created ("AgentShroud Bot Credentials")
 - [ ] Bot added to Family plan (no access to default Shared vault)
 - [ ] OpenAI API key obtained
-- [ ] Anthropic API key obtained
+- [ ] Anthropic OAuth token obtained
 
 ### Software
 - [ ] Docker Desktop installed (v4.25.0+)
@@ -549,7 +549,7 @@ cd agentshroud
 # Create secrets
 mkdir -p docker/secrets
 echo "your-openai-key" > docker/secrets/openai_api_key.txt
-echo "your-anthropic-key" > docker/secrets/anthropic_api_key.txt
+echo "your-anthropic-key" > docker/secrets/anthropic_oauth_token.txt
 echo "bot@gmail.com" > docker/secrets/1password_bot_email.txt
 echo "bot-password" > docker/secrets/1password_bot_master_password.txt
 echo "A3-XXXXXX-..." > docker/secrets/1password_bot_secret_key.txt
@@ -677,7 +677,7 @@ Based on your configuration:
 - ✅ Python 3.13 installed
 - ✅ All Python packages installed
 - ✅ OpenAI API key configured
-- ✅ Anthropic API key configured
+- ✅ Anthropic OAuth token configured
 - ✅ Containers running and healthy
 - ✅ 1Password authentication working
 - ✅ Tailscale configured (marvin.tail240ea8.ts.net)

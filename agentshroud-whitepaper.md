@@ -19,7 +19,7 @@ AgentShroud is an open-source, enterprise-grade transparent proxy framework that
 
 **Beyond security:** AgentShroud is simultaneously a production-grade tool, a learning laboratory, and a living proof of concept — built in the open, by a system architect, using the very technologies it governs. The project exists in part to develop hands-on fluency with the current generation of autonomous agent frameworks: Claude Code, OpenAI Codex, Google Gemini CLI, MCP tool orchestration, multi-agent coordination, and enterprise integration with GitHub, Atlassian Jira/Confluence, and AWS. The goal is not theoretical familiarity — it is working knowledge, earned by shipping something real. A system architect (not a traditional developer) directs autonomous agents to build production-quality software, demonstrating that speed and safety are not mutually exclusive.
 
-The entire stack runs on a standard macOS host with Docker. It has 951+ tests at 92%+ code coverage. It's open source, it's free, and it's the only solution in its class.
+The entire stack runs on a standard macOS host with Docker. It has 1300+ tests at 92%+ code coverage. It's open source, it's free, and it's the only solution in its class.
 
 This paper details the architecture, security controls, compliance posture, and the broader enterprise governance case for AgentShroud. It is intended for security engineers evaluating AI agent deployments, CISOs building governance frameworks, and innovation leaders who believe AI agents should be secured like any other privileged system component.
 
@@ -639,7 +639,7 @@ The AI agent security space is nascent. Most platforms treat security as an afte
                               Operational Maturity
 ```
 
-**AgentShroud** is the only platform in the upper quadrant, combining deep security controls (18 gateway modules + 5 container security tools) with operational maturity (951 tests, 92%+ coverage, Docker Compose deployment, runs on a Pi 4). With the addition of the MCP Proxy, Web Traffic Proxy, and Full Egress Control (Phases 9-11), AgentShroud's security score rises to **10.0** — the only platform with gateway-level, container-level, MCP-level, and egress-level security instrumentation.
+**AgentShroud** is the only platform in the upper quadrant, combining deep security controls (18 gateway modules + 5 container security tools) with operational maturity (1300+ tests, 92%+ coverage, Docker Compose deployment, runs on a Pi 4). With the addition of the MCP Proxy, Web Traffic Proxy, and Full Egress Control (Phases 9-11), AgentShroud's security score rises to **10.0** — the only platform with gateway-level, container-level, MCP-level, and egress-level security instrumentation.
 
 ### 6.2 Comparison Table
 
@@ -1226,7 +1226,7 @@ AI agents are the most powerful — and most underprotected — software systems
 
 AgentShroud exists because security shouldn't be optional, and it shouldn't require forking your agent platform. By operating as a transparent proxy, AgentShroud adds 26 enterprise-grade security modules to any AI agent without touching a single line of agent code. PII never reaches the model. Every action is logged in a tamper-evident chain. Dangerous operations require human approval. And when something goes wrong, you have a kill switch — not a frantic search through Docker containers.
 
-The entire stack is open source, runs on a Raspberry Pi, and has 951 tests at 92%+ coverage. It's real, it's tested, and it's available today.
+The entire stack is open source, runs on a Raspberry Pi, and has 1300+ tests at 92%+ coverage. It's real, it's tested, and it's available today.
 
 If you're deploying AI agents in production — whether for personal use, for your team, or for your enterprise — you need a security layer. AgentShroud is that layer.
 
@@ -1236,7 +1236,7 @@ If you're deploying AI agents in production — whether for personal use, for yo
 
 ---
 
-*AgentShroud is open-source software released under the MIT License. This white paper reflects the state of the project as of February 2026 (v0.5.0). All phases through P2 credential isolation are implemented and tested (951+ tests). Features marked as "Planned" are on the roadmap but not yet implemented.*
+*AgentShroud is open-source software released under the MIT License. This white paper reflects the state of the project as of February 2026 (v0.5.0). All phases through P5 (SecurityPipeline wiring) are implemented and tested (1300+ tests). Features marked as "Planned" are on the roadmap but not yet implemented.*
 
 ---
 

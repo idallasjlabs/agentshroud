@@ -48,7 +48,7 @@ docker/secrets/README.md
 ### Test 2: Check README Content
 ```bash
 $ grep "sk-ant" docker/secrets/README.md
-echo "sk-ant-api03-..." > docker/secrets/anthropic_api_key.txt
+echo "oauth-token-placeholder" > docker/secrets/anthropic_oauth_token.txt
 ```
 ✅ PASS: Only placeholder examples (not real keys)
 
@@ -71,8 +71,8 @@ docker/secrets/README.md   |  44 +++++++
 
 **REQUIRED**: Users must create their own API key file:
 ```bash
-echo "sk-ant-api03-YOUR_REAL_KEY" > docker/secrets/anthropic_api_key.txt
-chmod 600 docker/secrets/anthropic_api_key.txt
+echo "YOUR_ANTHROPIC_OAUTH_TOKEN" > docker/secrets/anthropic_oauth_token.txt
+chmod 600 docker/secrets/anthropic_oauth_token.txt
 ```
 
 This file will be:

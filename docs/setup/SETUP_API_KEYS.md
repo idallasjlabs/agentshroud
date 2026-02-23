@@ -2,33 +2,33 @@
 
 **System**: OpenClaw + AgentShroud Gateway
 **Bot**: @agentshroud.ai_bot
-**Last Updated**: 2026-02-15
+**Last Updated: 2026-02-22
 
 ---
 
 ## Overview
 
-OpenClaw supports multiple AI providers. This guide will help you set up both OpenAI and Anthropic API keys.
+OpenClaw supports multiple AI providers. This guide covers OpenAI API key setup and Anthropic OAuth token configuration.> **Note:** As of v0.5.0, Anthropic authentication uses a Claude OAuth token routed through the gateway op-proxy endpoint. The bot container no longer needs direct access to the Anthropic secret — credential isolation is handled by the gateway.
 
 ---
 
 ## Step 1: Save API Keys to Secret Files
 
-### Create the Anthropic API Key File
+### Create the Anthropic OAuth Token File
 
-Once you have your Anthropic API key, save it:
+Once you have your Anthropic OAuth token, save it:
 
 ```bash
 cd /Users/ijefferson.admin/Development/agentshroud
 
 # Create the secret file
-echo "YOUR_ANTHROPIC_API_KEY_HERE" > docker/secrets/anthropic_api_key.txt
+echo "YOUR_ANTHROPIC_OAUTH_TOKEN_HERE" > docker/secrets/anthropic_oauth_token.txt
 
 # Secure the file
-chmod 600 docker/secrets/anthropic_api_key.txt
+chmod 600 docker/secrets/anthropic_oauth_token.txt
 ```
 
-Replace `YOUR_ANTHROPIC_API_KEY_HERE` with your actual Anthropic API key.
+Replace `YOUR_ANTHROPIC_OAUTH_TOKEN_HERE` with your actual Anthropic OAuth token.
 
 ### Verify OpenAI Key Exists
 
@@ -49,7 +49,7 @@ chmod 600 docker/secrets/openai_api_key.txt
 
 ## Step 2: Restart OpenClaw Container
 
-The container needs to be restarted to mount the new Anthropic API key secret:
+The container needs to be restarted to mount the new Anthropic OAuth token secret:
 
 ```bash
 cd /Users/ijefferson.admin/Development/agentshroud
@@ -75,7 +75,7 @@ docker compose -f docker/docker-compose.yml ps
 
 1. **Connect to Control UI**:
    - Go to http://localhost:18790
-   - Enter gateway password: `b539ae0c7a720f71e9b26cfab1b53c58ae362a0ad40d857eaed9a44a15932a05`
+   - Enter gateway password: `<your-gateway-password-from-docker/secrets/gateway_password.txt>`
    - Click "Connect"
 
 2. **Add OpenAI Provider**:
@@ -88,7 +88,7 @@ docker compose -f docker/docker-compose.yml ps
 3. **Add Anthropic Provider**:
    - Click **Add Provider** again
    - Select **Anthropic**
-   - Paste your Anthropic API key
+   - Paste your Anthropic OAuth token
    - Click **Save**
 
 ### Option B: Via Command Line
@@ -102,7 +102,7 @@ docker compose -f docker/docker-compose.yml exec openclaw \
 
 # Add Anthropic authentication
 docker compose -f docker/docker-compose.yml exec openclaw \
-  openclaw models auth add --provider anthropic --api-key "$(cat docker/secrets/anthropic_api_key.txt)"
+  openclaw models auth add --provider anthropic --api-key "$(cat docker/secrets/anthropic_oauth_token.txt)"
 ```
 
 ---
@@ -231,13 +231,13 @@ docker compose -f docker/docker-compose.yml exec openclaw openclaw pairing list
 
 ```bash
 # Check if the secret file exists
-ls -la docker/secrets/anthropic_api_key.txt
+ls -la docker/secrets/anthropic_oauth_token.txt
 
 # View container logs
 docker logs openclaw-bot
 
 # If secret file is missing or has wrong permissions:
-chmod 600 docker/secrets/anthropic_api_key.txt
+chmod 600 docker/secrets/anthropic_oauth_token.txt
 docker compose -f docker/docker-compose.yml restart openclaw
 ```
 
@@ -290,7 +290,7 @@ docker compose -f docker/docker-compose.yml exec openclaw openclaw channels list
 
 ## Summary Checklist
 
-- [ ] Save Anthropic API key to `docker/secrets/anthropic_api_key.txt`
+- [ ] Save Anthropic OAuth token to `docker/secrets/anthropic_oauth_token.txt`
 - [ ] Verify OpenAI key exists in `docker/secrets/openai_api_key.txt`
 - [ ] Restart OpenClaw container
 - [ ] Add both providers via Control UI or CLI
