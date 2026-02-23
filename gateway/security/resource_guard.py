@@ -65,7 +65,7 @@ class ResourceGuard:
     def _start_monitoring_task(self):
         """Start background monitoring task."""
         try:
-            loop = asyncio.get_event_loop()
+            loop = asyncio.get_running_loop()
             loop.create_task(self._monitor_resources())
         except RuntimeError:
             # No event loop running, monitoring will be manual
