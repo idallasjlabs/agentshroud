@@ -132,6 +132,16 @@ async def lifespan(app: FastAPI):
     logger.info("=" * 80)
     logger.info("AgentShroud Gateway starting up...")
 
+    # Load 1Password service account token first — bot op-proxy calls depend on it
+    # being available as early as possible to minimize startup race window.
+    _op_token_file = os.getenv("OP_SERVICE_ACCOUNT_TOKEN_FILE")
+    if _op_token_file and not os.getenv("OP_SERVICE_ACCOUNT_TOKEN"):
+        try:
+            os.environ["OP_SERVICE_ACCOUNT_TOKEN"] = Path(_op_token_file).read_text().strip()
+            logger.info("1Password service account token loaded")
+        except OSError as e:
+            logger.warning(f"Could not load 1Password service account token: {e}")
+
     # Load configuration
     try:
         app_state.config = load_config()
@@ -207,15 +217,6 @@ async def lifespan(app: FastAPI):
     # Initialize event bus
     app_state.event_bus = EventBus()
     logger.info("Event bus initialized")
-
-    # Load 1Password service account token from Docker secret file if present
-    _op_token_file = os.getenv("OP_SERVICE_ACCOUNT_TOKEN_FILE")
-    if _op_token_file and not os.getenv("OP_SERVICE_ACCOUNT_TOKEN"):
-        try:
-            os.environ["OP_SERVICE_ACCOUNT_TOKEN"] = Path(_op_token_file).read_text().strip()
-            logger.info("1Password service account token loaded")
-        except OSError as e:
-            logger.warning(f"Could not load 1Password service account token: {e}")
 
     # Initialize HTTP CONNECT proxy (port 8181)
     # Activated in the FINAL PR by setting HTTP_PROXY on the bot container.
