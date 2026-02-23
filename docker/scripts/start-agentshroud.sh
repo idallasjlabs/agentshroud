@@ -29,29 +29,65 @@ fi
 # FINAL: Load secrets via gateway op-proxy (bot has no direct 1Password access).
 # op-wrapper.sh routes "op read" through POST /credentials/op-proxy when
 # GATEWAY_AUTH_TOKEN and GATEWAY_OP_PROXY_URL are set.
+
+# Retry wrapper for op-proxy reads — handles race condition where the bot
+# restarts before the gateway's 1Password connection is fully ready.
+# Usage: op_proxy_read_with_retry <label> <op-reference>
+# Returns the secret value on stdout; exits non-zero only if all retries fail.
+op_proxy_read_with_retry() {
+    local label="$1"
+    local reference="$2"
+    # Cascading waits: 5s, 10s, 15s, 30s, 60s — total patience: 2 minutes before final attempt
+    local delays=(5 10 15 30 60)
+    local value=""
+
+    for i in "${!delays[@]}"; do
+        local attempt=$((i + 1))
+        local total=$(( ${#delays[@]} + 1 ))
+        value="$(/usr/local/bin/op-wrapper.sh read "$reference" 2>/dev/null)" || true
+        if [ -n "$value" ]; then
+            printf '%s' "$value"
+            return 0
+        fi
+        local wait="${delays[$i]}"
+        echo "[startup] ⚠ ${label}: attempt ${attempt}/${total} failed — retrying in ${wait}s" >&2
+        sleep "$wait"
+    done
+
+    # Final attempt after all waits exhausted
+    value="$(/usr/local/bin/op-wrapper.sh read "$reference" 2>/dev/null)" || true
+    if [ -n "$value" ]; then
+        printf '%s' "$value"
+        return 0
+    fi
+
+    echo "[startup] ✗ ${label}: all ${total} attempts failed after 2 minutes" >&2
+    return 1
+}
+
 if [ -n "${GATEWAY_AUTH_TOKEN:-}" ] && [ -n "${GATEWAY_OP_PROXY_URL:-}" ]; then
     echo "[startup] Loading secrets via gateway op-proxy (${GATEWAY_OP_PROXY_URL})"
 
     # Load Claude OAuth token (replaces static ANTHROPIC_API_KEY)
     # Item: AgentShroud - Anthropic Claude OAuth Token (Agent Shroud Bot Credentials vault)
-    ANTHROPIC_OAUTH_TOKEN="$(/usr/local/bin/op-wrapper.sh read \
-        "op://Agent Shroud Bot Credentials/AgentShroud - Anthropic Claude OAuth Token/claude oath token" 2>/dev/null)" || true
+    ANTHROPIC_OAUTH_TOKEN="$(op_proxy_read_with_retry "Claude OAuth token" \
+        "op://Agent Shroud Bot Credentials/AgentShroud - Anthropic Claude OAuth Token/claude oath token")" || true
     if [ -n "$ANTHROPIC_OAUTH_TOKEN" ]; then
         export ANTHROPIC_OAUTH_TOKEN
         echo "[startup] ✓ Loaded Claude OAuth token"
     else
-        echo "[startup] ⚠ Could not load Claude OAuth token"
+        echo "[startup] ⚠ Could not load Claude OAuth token after retries"
     fi
 
     # Load Brave Search API key
     # Item ID: 6j6ij5tzld6kobvit5tk6ufrhq (Brave Search API - agentshroud.ai@gmail.com)
-    BRAVE_API_KEY="$(/usr/local/bin/op-wrapper.sh read \
-        "op://Agent Shroud Bot Credentials/6j6ij5tzld6kobvit5tk6ufrhq/brave search api key" 2>/dev/null)" || true
+    BRAVE_API_KEY="$(op_proxy_read_with_retry "Brave Search API key" \
+        "op://Agent Shroud Bot Credentials/6j6ij5tzld6kobvit5tk6ufrhq/brave search api key")" || true
     if [ -n "$BRAVE_API_KEY" ]; then
         export BRAVE_API_KEY
         echo "[startup] ✓ Loaded Brave Search API key"
     else
-        echo "[startup] ⚠ Could not load Brave Search API key"
+        echo "[startup] ⚠ Could not load Brave Search API key after retries"
     fi
 
     # Gmail credentials intentionally not loaded at startup.

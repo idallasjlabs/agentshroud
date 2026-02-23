@@ -283,12 +283,6 @@ def load_config(config_path: Path | None = None) -> GatewayConfig:
         imessage_require_approval_for_new=imessage_raw.get("require_approval_for_new", True),
     )
 
-    # Map MCP proxy configuration
-    mcp_proxy_raw = raw_config.get("mcp_proxy", {})
-    mcp_proxy_config = (
-        MCPProxyConfig.from_dict(mcp_proxy_raw) if mcp_proxy_raw else MCPProxyConfig()
-    )
-
     # Build final config
     # Map SSH configuration — use Pydantic model parsing directly
     ssh_section = raw_config.get("ssh", {})
