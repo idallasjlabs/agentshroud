@@ -217,39 +217,62 @@ If credential retrieval fails:
 
 ---
 
-## Credential Isolation — Gateway op-proxy (P2)
+## Credential Isolation — Gateway op-proxy (ACTIVE)
 
-As of P2, the 1Password service account token lives on the **gateway**, not
-the bot container. The bot sends `op://` references; the gateway reads the
-actual secret and returns the value.
+The 1Password service account token lives on the **gateway**, not this container.
+**This is live in production.** You have no direct 1Password access.
 
-### How it works
+### How to retrieve a credential
 
-The bot never holds the service account token. Instead:
+Use `/usr/local/bin/op-wrapper.sh` from a bash tool call:
 
-```
-Bot → POST /credentials/op-proxy {"reference": "op://vault/item/field"}
-                                    ↓
-                             AgentShroud Gateway
-                             validates reference against allowlist
-                             calls `op read` with gateway's token
-                                    ↓
-                             returns {"value": "...secret..."}
+```bash
+/usr/local/bin/op-wrapper.sh read "op://Agent Shroud Bot Credentials/<item>/<field>"
 ```
 
-### Allowed references
+Example — fetch a Telegram bot token:
+```bash
+/usr/local/bin/op-wrapper.sh read "op://Agent Shroud Bot Credentials/Telegram Bot/token"
+```
 
-Only paths matching `op://AgentShroud Bot Credentials/*` are permitted.
-Any other vault, item, or field returns HTTP 403.
+The wrapper routes the request to the gateway's op-proxy endpoint and returns the raw secret value.
 
-### During development (before FINAL PR)
+### Credential flow
 
-Until `OP_SERVICE_ACCOUNT_TOKEN` is moved to the gateway environment,
-calls to `/credentials/op-proxy` will fail with HTTP 502. This is expected.
-The bot continues to use the local `get-credential` / `op-wrapper.sh` path.
+```
+bash tool → /usr/local/bin/op-wrapper.sh read "op://..."
+                ↓
+           POST http://gateway:8080/credentials/op-proxy
+                ↓
+           Gateway validates reference (allowlist: op://Agent Shroud Bot Credentials/*)
+           Gateway calls `op read` with its service account token
+                ↓
+           Returns the secret value
+```
 
-### When P2 is fully activated
+### Allowlist
 
-- Remove `OP_SERVICE_ACCOUNT_TOKEN` from bot's Docker secrets
-- Set `OP_SERVICE_ACCOUNT_TOKEN` in gateway's environment
-- Bot uses `op-proxy` exclusively; no token ever enters the bot container
+Only `op://Agent Shroud Bot Credentials/*` references are permitted.
+Any other vault returns HTTP 403.
+
+### Known working credentials
+
+| What | op:// reference |
+|------|----------------|
+| Claude OAuth token | `op://Agent Shroud Bot Credentials/AgentShroud - Anthropic Claude OAuth Token/claude oath token` |
+| Brave Search API key | `op://Agent Shroud Bot Credentials/6j6ij5tzld6kobvit5tk6ufrhq/brave search api key` |
+
+### Already in your environment at startup
+
+These are pre-loaded — you do not need to call op-wrapper.sh for them:
+
+- `ANTHROPIC_OAUTH_TOKEN` — Claude API auth
+- `OPENAI_API_KEY` — OpenAI API auth
+- `BRAVE_API_KEY` — Brave Search API
+- `OPENCLAW_GATEWAY_PASSWORD` / `GATEWAY_AUTH_TOKEN` — gateway auth
+
+### What NEVER to do
+
+- ❌ `cat /run/secrets/1password_service_account` — not mounted in this container
+- ❌ `op signin` or bare `op read` without op-wrapper.sh
+- ❌ Ask the user to paste credentials in chat
