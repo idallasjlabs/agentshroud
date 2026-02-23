@@ -17,6 +17,8 @@ services:
 
       - ../agentshroud.yaml:/app/agentshroud.yaml:ro
 
+      # SSH keys for gateway SSH proxy (read-only — keys generated in bot container)
+      - agentshroud-ssh:/var/agentshroud-ssh:ro
 
       - gateway-data:/app/data
       - ../web:/app/web:ro

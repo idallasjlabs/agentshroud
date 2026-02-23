@@ -190,9 +190,12 @@ credentials:
     - "op://AgentShroud Bot Credentials/*"
 
 # SSH Proxy configuration
+# Approved hosts only — no command-level restrictions (unrestricted dev access).
+# SSH key mounted from agentshroud-ssh volume at /var/agentshroud-ssh (read-only).
+# known_hosts stored at /tmp/ssh_known_hosts (gateway tmpfs, accept-new policy).
 ssh:
   enabled: true
-  require_approval: true
+  require_approval: false
   global_denied_commands:
     - "rm -rf /"
     - "mkfs"
@@ -202,22 +205,20 @@ ssh:
       host: "raspberrypi.tail240ea8.ts.net"
       port: 22
       username: "agentshroud-bot"
-      key_path: "/home/agentshroud-bot/.ssh/id_ed25519"
-      allowed_commands:
-        - "git status"
-        - "git log"
-        - "ls"
-        - "cat"
-        - "whoami"
-        - "df -h"
-        - "uptime"
-      denied_commands:
-        - "rm -rf"
-        - "shutdown"
-        - "reboot"
-      max_session_seconds: 30
-      auto_approve_commands:
-        - "git status"
-        - "ls"
-        - "whoami"
-        - "uptime"
+      key_path: "/var/agentshroud-ssh/id_ed25519"
+      known_hosts_file: "/tmp/ssh_known_hosts"
+      max_session_seconds: 300
+    marvin:
+      host: "marvin.tail240ea8.ts.net"
+      port: 22
+      username: "agentshroud-bot"
+      key_path: "/var/agentshroud-ssh/id_ed25519"
+      known_hosts_file: "/tmp/ssh_known_hosts"
+      max_session_seconds: 300
+    trillian:
+      host: "trillian.tail240ea8.ts.net"
+      port: 22
+      username: "agentshroud-bot"
+      key_path: "/var/agentshroud-ssh/id_ed25519"
+      known_hosts_file: "/tmp/ssh_known_hosts"
+      max_session_seconds: 300
