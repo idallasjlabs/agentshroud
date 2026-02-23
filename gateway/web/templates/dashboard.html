@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AgentShroud Web Control Center</title>
+    <link rel="stylesheet" href="/static/agentshroud-dashboard.css">
+    <style>
+        body { background: #08090b; color: #e2e8f0; font-family: system-ui; margin: 0; padding: 0; }
+        .header { background: #0f1219; padding: 1rem 2rem; border-bottom: 1px solid #232b3d; }
+        .header h1 { margin: 0; color: #1583f0; }
+        .nav-tabs { background: #0f1219; border-bottom: 1px solid #232b3d; }
+        .nav-list { display: flex; list-style: none; margin: 0; padding: 0 2rem; }
+        .nav-link { display: block; padding: 1rem 1.5rem; color: #94a3b8; text-decoration: none; }
+        .nav-link.active { color: #1583f0; border-bottom: 2px solid #1583f0; }
+        .main-content { padding: 2rem; max-width: 1200px; margin: 0 auto; }
+        .card { background: #161c27; border: 1px solid #232b3d; border-radius: 8px; padding: 1.5rem; margin-bottom: 1.5rem; }
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1.5rem; }
+        .status-item { display: flex; align-items: center; gap: 1rem; padding: 1rem; background: #1e2535; border-radius: 6px; }
+        .status-indicator { width: 12px; height: 12px; border-radius: 50%; background: #22c55e; }
+        .btn { padding: 0.5rem 1rem; border-radius: 6px; border: none; cursor: pointer; }
+        .btn-primary { background: #1583f0; color: white; }
+        .btn-secondary { background: #1e2535; color: #e2e8f0; border: 1px solid #232b3d; }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <h1>🛡️ AgentShroud Control Center</h1>
+    </header>
+
+    <!-- Navigation -->
+    <nav class="nav-tabs">
+        <ul class="nav-list">
+            <li><a href="/dashboard" class="nav-link active">Dashboard</a></li>
+            <li><a href="/dashboard/approvals" class="nav-link">Approvals</a></li>
+            <li><a href="/dashboard/modules" class="nav-link">Modules</a></li>
+            <li><a href="/dashboard/audit" class="nav-link">Audit Log</a></li>
+            <li><a href="/dashboard/ssh" class="nav-link">SSH Hosts</a></li>
+            <li><a href="/dashboard/collaborators" class="nav-link">Collaborators</a></li>
+            <li><a href="/dashboard/killswitch" class="nav-link">Kill Switch</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <!-- System Overview -->
+        <section class="card">
+            <h2>System Overview</h2>
+            <div class="grid">
+                <div class="status-item">
+                    <span class="status-indicator"></span>
+                    <div>
+                        <div style="font-weight: 600;">Gateway Status</div>
+                        <div style="font-size: 0.9rem; color: #94a3b8;">Running</div>
+                    </div>
+                </div>
+                <div class="status-item">
+                    <span class="status-indicator"></span>
+                    <div>
+                        <div style="font-weight: 600;">Security Modules</div>
+                        <div style="font-size: 0.9rem; color: #94a3b8;">24/30 Active</div>
+                    </div>
+                </div>
+                <div class="status-item">
+                    <span class="status-indicator"></span>
+                    <div>
+                        <div style="font-weight: 600;">Active Users</div>
+                        <div style="font-size: 0.9rem; color: #94a3b8;">3 Online</div>
+                    </div>
+                </div>
+                <div class="status-item">
+                    <span class="status-indicator"></span>
+                    <div>
+                        <div style="font-weight: 600;">System Health</div>
+                        <div style="font-size: 0.9rem; color: #94a3b8;">Optimal</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Quick Actions -->
+        <section class="card">
+            <h2>Quick Actions</h2>
+            <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
+                <a href="/dashboard/approvals" class="btn btn-primary">Review Approvals</a>
+                <a href="/dashboard/modules" class="btn btn-secondary">Manage Modules</a>
+                <a href="/dashboard/audit" class="btn btn-secondary">View Audit Log</a>
+                <a href="/dashboard/killswitch" class="btn" style="background: #ef4444; color: white;">Emergency Stop</a>
+            </div>
+        </section>
+
+        <!-- Status -->
+        <section class="card">
+            <h2>System Status</h2>
+            <p>AgentShroud is running normally. All critical security modules are active and monitoring interactions.</p>
+            <p><strong>Uptime:</strong> 15 days, 8 hours, 23 minutes</p>
+            <p><strong>Version:</strong> 1.2.3</p>
+            <p><strong>Last Updated:</strong> Feb 20, 2024</p>
+        </section>
+    </main>
+</body>
+</html>
+EOFhead -50 gateway/web/management.py
