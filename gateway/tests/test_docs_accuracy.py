@@ -3,6 +3,8 @@
 # Protected by common law trademark rights. Federal trademark registration pending.
 # Unauthorized reproduction, distribution, or use of the AgentShroud name or brand is strictly prohibited.
 """Documentation Verification Tests — ensure docs match reality."""
+from __future__ import annotations
+
 
 import re
 from pathlib import Path

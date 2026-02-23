@@ -9,6 +9,7 @@ from __future__ import annotations
 Runs trivy as a local binary (not docker run) and parses JSON output.
 """
 
+
 import json
 import logging
 import subprocess

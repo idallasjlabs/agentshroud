@@ -6,6 +6,8 @@
 Main Endpoints Integration Tests - P1 Middleware Wiring
 Tests for main.py endpoint integration with middleware blocking.
 """
+from __future__ import annotations
+
 
 import pytest
 from unittest.mock import AsyncMock, MagicMock, patch

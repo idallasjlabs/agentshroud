@@ -6,6 +6,8 @@
 
 Focuses on easily testable functions without complex mocking.
 """
+from __future__ import annotations
+
 
 import pytest
 from unittest.mock import MagicMock, patch

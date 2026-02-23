@@ -7,6 +7,8 @@
 Covers: Trivy, ClamAV, Falco, Wazuh, Health Report, Alert Dispatcher.
 Target: 50+ tests.
 """
+from __future__ import annotations
+
 
 import json
 import tempfile

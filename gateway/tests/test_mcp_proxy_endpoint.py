@@ -1,4 +1,6 @@
 """Integration tests for POST /mcp/proxy endpoint (P4: MCP proxy wiring)."""
+from __future__ import annotations
+
 
 import pytest
 import pytest_asyncio

@@ -6,6 +6,7 @@ from __future__ import annotations
 # Unauthorized reproduction, distribution, or use of the AgentShroud name or brand is strictly prohibited.
 """SSH configuration models for AgentShroud Gateway"""
 
+
 import os
 from pydantic import BaseModel, Field, field_validator
 

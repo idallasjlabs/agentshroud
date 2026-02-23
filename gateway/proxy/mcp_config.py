@@ -6,6 +6,7 @@ from __future__ import annotations
 # Unauthorized reproduction, distribution, or use of the AgentShroud name or brand is strictly prohibited.
 """MCP Proxy Configuration — YAML-based MCP server registry."""
 
+
 import logging
 from dataclasses import dataclass, field
 from enum import Enum

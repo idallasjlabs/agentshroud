@@ -3,6 +3,8 @@
 # Protected by common law trademark rights. Federal trademark registration pending.
 # Unauthorized reproduction, distribution, or use of the AgentShroud name or brand is strictly prohibited.
 """Approval Queue Stress Tests — concurrent requests and timeouts."""
+from __future__ import annotations
+
 
 import asyncio
 import tempfile

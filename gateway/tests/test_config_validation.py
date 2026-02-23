@@ -6,6 +6,7 @@ from __future__ import annotations
 # Unauthorized reproduction, distribution, or use of the AgentShroud name or brand is strictly prohibited.
 """Configuration Validation Tests — example configs and validation."""
 
+
 from pathlib import Path
 
 import pytest

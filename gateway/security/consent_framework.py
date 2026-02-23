@@ -11,6 +11,8 @@ References:
     - Maloyan & Namiot 2026 (arXiv:2601.17548) - MCP security analysis
     - Chen et al. 2026 (arXiv:2602.14364) - Agent configuration vulnerabilities
 """
+from __future__ import annotations
+
 
 import re
 import time
