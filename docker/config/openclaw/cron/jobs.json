@@ -18,7 +18,7 @@
       "wakeMode": "now",
       "payload": {
         "kind": "agentTurn",
-        "message": "Daily AgentShroud check-in. SSH to Pi (secureclaw-bot@raspberrypi.tail240ea8.ts.net), project at ~/Development/agentshroud. Quick check: git log --oneline -5 main, count tests with ~/miniforge3/envs/oneclaw/bin/python -m pytest gateway/tests/ --co -q 2>&1 | tail -3. Report to Isaiah: what is on main, test count, any issues. Keep it under 200 words."
+        "message": "Daily AgentShroud check-in. SSH to Pi (secureclaw-bot@raspberrypi.tail240ea8.ts.net) — if Pi is unreachable, try marvin then trillian. Project at ~/Development/agentshroud. Quick check: git log --oneline -5 main, count tests with ~/miniforge3/envs/oneclaw/bin/python -m pytest gateway/tests/ --co -q 2>&1 | tail -3. Send the report via Telegram to Isaiah (chat ID 8096968754): what is on main, test count, any issues. Keep it under 200 words."
       },
       "state": {
         "nextRunAtMs": 1771790400000,
@@ -49,7 +49,7 @@
       "wakeMode": "now",
       "payload": {
         "kind": "agentTurn",
-        "message": "Weekly AgentShroud project summary. Read /home/node/.openclaw/workspace/memory/agentshroud-roadmap.md and recent daily notes in /home/node/.openclaw/workspace/memory/. Compile a brief weekly status: phases completed, current phase progress percentage, blockers, and what is planned for next week. Send to Isaiah."
+        "message": "Weekly AgentShroud project summary. Read /home/node/.openclaw/workspace/memory/agentshroud-roadmap.md and recent daily notes in /home/node/.openclaw/workspace/memory/. Compile a brief weekly status: phases completed, current phase progress percentage, blockers, and what is planned for next week. Send the summary via Telegram to Isaiah (chat ID 8096968754)."
       },
       "state": {
         "nextRunAtMs": 1772236800000,
@@ -109,7 +109,7 @@
       "wakeMode": "now",
       "payload": {
         "kind": "agentTurn",
-        "message": "Send the daily AM competitive analysis report via Telegram (not email — Gmail is temporarily unavailable). Read /home/node/.openclaw/workspace/competitive-analysis.md. Send the full content to Isaiah as a Telegram message. Format it as: 📊 AgentShroud Competitive Analysis (AM) — [today date]. Include all sections. Keep under 3800 characters, truncate gracefully if needed."
+        "message": "Send the daily AM competitive analysis report via Telegram (not email — Gmail is temporarily unavailable). Read /home/node/.openclaw/workspace/competitive-analysis.md. Send the full content to Isaiah via Telegram (chat ID 8096968754). Format it as: 📊 AgentShroud Competitive Analysis (AM) — [today date]. Include all sections. Keep under 3800 characters, truncate gracefully if needed."
       },
       "state": {
         "consecutiveErrors": 0
@@ -136,7 +136,7 @@
       "wakeMode": "now",
       "payload": {
         "kind": "agentTurn",
-        "message": "Generate a collaborator activity report. Read all files in /home/node/.openclaw/workspace/memory/contributors/ for today's date. Summarize: who messaged the bot, what they asked, what recommendations they made, any action items for Isaiah. If no collaborator activity today, say No collaborator activity since last report. Keep it concise."
+        "message": "Generate a collaborator activity report. Read all files in /home/node/.openclaw/workspace/memory/contributors/ for today's date. Summarize: who messaged the bot, what they asked, what recommendations they made, any action items for Isaiah. If no collaborator activity today, say No collaborator activity since last report. Keep it concise. Send the report via Telegram to Isaiah (chat ID 8096968754)."
       },
       "state": {
         "nextRunAtMs": 1771858800000,
@@ -165,7 +165,7 @@
       "wakeMode": "now",
       "payload": {
         "kind": "agentTurn",
-        "message": "Generate a collaborator activity report. Read all files in /home/node/.openclaw/workspace/memory/contributors/ for today's date. Summarize: who messaged the bot, what they asked, what recommendations they made, any action items for Isaiah. If no collaborator activity today, say No collaborator activity since last report. Keep it concise."
+        "message": "Generate a collaborator activity report. Read all files in /home/node/.openclaw/workspace/memory/contributors/ for today's date. Summarize: who messaged the bot, what they asked, what recommendations they made, any action items for Isaiah. If no collaborator activity today, say No collaborator activity since last report. Keep it concise. Send the report via Telegram to Isaiah (chat ID 8096968754)."
       },
       "state": {
         "nextRunAtMs": 1771861500000,
@@ -194,7 +194,7 @@
       "wakeMode": "now",
       "payload": {
         "kind": "agentTurn",
-        "message": "Generate the daily collaborator digest. Read ALL files in /home/node/.openclaw/workspace/memory/contributors/ for today's date. Create a comprehensive summary: 1) Total interactions per collaborator 2) Key questions asked 3) Recommendations and suggestions made 4) Action items requiring Isaiah's attention 5) Any concerns or notable patterns. If no collaborator activity today, say No collaborator activity today."
+        "message": "Generate the daily collaborator digest. Read ALL files in /home/node/.openclaw/workspace/memory/contributors/ for today's date. Create a comprehensive summary: 1) Total interactions per collaborator 2) Key questions asked 3) Recommendations and suggestions made 4) Action items requiring Isaiah's attention 5) Any concerns or notable patterns. If no collaborator activity today, say No collaborator activity today. Send the digest via Telegram to Isaiah (chat ID 8096968754)."
       },
       "state": {
         "nextRunAtMs": 1771826400000,
@@ -252,7 +252,7 @@
       "wakeMode": "now",
       "payload": {
         "kind": "agentTurn",
-        "message": "Send the afternoon competitive analysis report via Telegram (not email — Gmail is temporarily unavailable). Read /home/node/.openclaw/workspace/competitive-analysis.md. Send the full content to Isaiah as a Telegram message. Format it as: 📊 AgentShroud Competitive Analysis (PM) — [today date]. Include all sections. Keep under 3800 characters, truncate gracefully if needed."
+        "message": "Send the afternoon competitive analysis report via Telegram (not email — Gmail is temporarily unavailable). Read /home/node/.openclaw/workspace/competitive-analysis.md. Send the full content to Isaiah via Telegram (chat ID 8096968754). Format it as: 📊 AgentShroud Competitive Analysis (PM) — [today date]. Include all sections. Keep under 3800 characters, truncate gracefully if needed."
       },
       "state": {
         "consecutiveErrors": 0
