@@ -7,7 +7,7 @@
 Defines request and response schemas for all endpoints.
 """
 
-from typing import Any
+from typing import Any, Optional
 
 from pydantic import BaseModel, Field, field_validator
 
@@ -31,7 +31,7 @@ class ForwardRequest(BaseModel):
     metadata: dict[str, Any] = Field(
         default_factory=dict, description="Optional routing hints and context"
     )
-    route_to: str | None = Field(
+    route_to: Optional[str] = Field(
         default=None, description="Optional explicit target agent name"
     )
 
@@ -92,16 +92,16 @@ class ForwardResponse(BaseModel):
     content_hash: str = Field(..., description="SHA-256 hash of sanitized content")
     forwarded_to: str = Field(..., description="Target agent name")
     timestamp: str = Field(..., description="ISO 8601 timestamp")
-    agent_response: str | None = Field(
+    agent_response: Optional[str] = Field(
         None, description="Agent's response if available"
     )
-    audit_entry_id: str | None = Field(
+    audit_entry_id: Optional[str] = Field(
         None, description="Pipeline audit chain entry ID"
     )
-    audit_hash: str | None = Field(
+    audit_hash: Optional[str] = Field(
         None, description="SHA-256 hash chain entry for tamper-evident audit"
     )
-    prompt_score: float | None = Field(
+    prompt_score: Optional[float] = Field(
         None, description="Prompt injection risk score (0.0–1.0)"
     )
 
@@ -180,7 +180,7 @@ class AgentTarget(BaseModel):
     name: str
     url: str
     healthy: bool = False
-    last_health_check: str | None = None
+    last_health_check: Optional[str] = None
     content_types: list[str] = Field(default_factory=list)
     tags: list[str] = Field(default_factory=list)
 
@@ -193,7 +193,7 @@ class SSHExecRequest(BaseModel):
 
     host: str = Field(..., description="SSH host name from config")
     command: str = Field(..., description="Command to execute")
-    timeout: int | None = Field(default=None, description="Timeout in seconds")
+    timeout: Optional[int] = Field(default=None, description="Timeout in seconds")
     reason: str = Field(default="", description="Reason for execution")
 
 
@@ -247,7 +247,7 @@ class EmailSendResponse(BaseModel):
     """Response from POST /email/send."""
 
     status: str = Field(..., description="approved | queued | blocked")
-    sanitized_body: str | None = Field(None, description="Body after PII redaction")
+    sanitized_body: Optional[str] = Field(None, description="Body after PII redaction")
     pii_redacted: bool = Field(False, description="Whether PII was removed from body")
-    approval_id: str | None = Field(None, description="Approval queue ID if queued")
+    approval_id: Optional[str] = Field(None, description="Approval queue ID if queued")
     timestamp: str = Field(..., description="ISO 8601 timestamp")
