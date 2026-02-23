@@ -53,6 +53,7 @@ from .sanitizer import PIISanitizer
 from ..security.prompt_guard import PromptGuard
 from ..security.trust_manager import TrustManager
 from ..security.egress_filter import EgressFilter
+from .middleware import MiddlewareManager
 from .event_bus import EventBus, make_event
 from ..proxy.http_proxy import ALLOWED_DOMAINS, HTTPConnectProxy
 from ..proxy.mcp_proxy import MCPProxy, MCPToolCall, MCPToolResult
@@ -216,6 +217,27 @@ async def lifespan(app: FastAPI):
     except Exception as e:
         logger.critical(f"Failed to initialize EgressFilter: {e}")
         raise
+    # Initialize P1 middleware manager
+    try:
+        app_state.middleware_manager = MiddlewareManager()
+        logger.info("P1 MiddlewareManager initialized")
+    except Exception as e:
+        logger.critical(f"Failed to initialize MiddlewareManager: {e}")
+        raise
+
+    # Wire log sanitizer into Python logging
+    try:
+        log_sanitizer = app_state.middleware_manager.get_log_sanitizer()
+        if log_sanitizer:
+            # Add the log sanitizer filter to all handlers
+            for handler in logging.getLogger().handlers:
+                handler.addFilter(log_sanitizer)
+            logger.info("Log sanitizer wired into logging system")
+        else:
+            logger.warning("Log sanitizer not available - logging may contain sensitive data")
+    except Exception as e:
+        logger.warning(f"Failed to wire log sanitizer: {e}")
+
 
     # Initialize security pipeline
     app_state.pipeline = SecurityPipeline(
@@ -874,6 +896,47 @@ async def forward_content(request: ForwardRequest, auth: AuthRequired):
         f"Ingest request: source={request.source}, "
         f"type={request.content_type}, size={len(request.content)}"
     )
+
+    # Step 0: P1 Middleware Security Processing
+    middleware_manager = getattr(app_state, "middleware_manager", None)
+    if middleware_manager:
+        try:
+            # Prepare request data for middleware processing
+            request_data = {
+                "message": request.content,
+                "content_type": request.content_type,
+                "source": request.source,
+                "headers": {}  # Add headers if available in request
+            }
+
+            # Process through middleware
+            middleware_result = middleware_manager.process(request_data, "unknown")
+
+            if not middleware_result.allowed:
+                logger.warning(f"Middleware blocked request: {middleware_result.reason}")
+                raise HTTPException(
+                    status_code=status.HTTP_403_FORBIDDEN,
+                    detail=f"Request blocked by middleware: {middleware_result.reason}"
+                )
+
+            # If middleware modified the request, update it
+            if middleware_result.modified_request:
+                if "message" in middleware_result.modified_request:
+                    request.content = middleware_result.modified_request["message"]
+                logger.info("Request modified by middleware")
+
+        except HTTPException:
+            # Re-raise HTTP exceptions (these are intentional blocks)
+            raise
+        except Exception as e:
+            logger.error(f"Middleware processing error: {e}")
+            # Fail closed - block request on middleware error
+            raise HTTPException(
+                status_code=status.HTTP_500_INTERNAL_SERVER_ERROR,
+                detail="Middleware processing failed. Request blocked for safety."
+            )
+    else:
+        logger.warning("MiddlewareManager not available - middleware security checks skipped")
 
     # Step 1: Run through security pipeline (injection scan + PII sanitization + audit)
     pipeline = getattr(app_state, "pipeline", None)
