@@ -166,7 +166,7 @@ services:
       - "host.docker.internal:host-gateway"
       - "marvin.tail240ea8.ts.net:100.90.175.83"
       - "raspberrypi.tail240ea8.ts.net:100.107.248.66"
-      - "trillian.tail240ea8.ts.net:100.93.113.72"
+      - "trillian.tail240ea8.ts.net:100.94.68.61"
 
     # SECURITY: Isolated network - NO access to host LAN
     networks:
