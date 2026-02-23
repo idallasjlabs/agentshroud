@@ -105,4 +105,56 @@ echo "[startup] Bootstrapping OpenClaw config..."
 
 # Start AgentShroud gateway (powered by OpenClaw CLI)
 echo "[startup] Starting AgentShroud gateway..."
-exec openclaw gateway --allow-unconfigured --bind lan
+openclaw gateway --allow-unconfigured --bind lan &
+OPENCLAW_PID=$!
+
+# Read Telegram bot token once — shared by startup and shutdown notifications
+_telegram_bot_token() {
+    node -e "
+        try {
+            const c = JSON.parse(require('fs').readFileSync(
+                '/home/node/.openclaw/openclaw.json', 'utf8'));
+            process.stdout.write(
+                (c.channels && c.channels.telegram && c.channels.telegram.botToken) || '');
+        } catch(e) {}
+    " 2>/dev/null
+}
+_telegram_send() {
+    local text="$1"
+    local token
+    token="$(_telegram_bot_token)"
+    [ -z "$token" ] && return 1
+    curl -sf -X POST "https://api.telegram.org/bot${token}/sendMessage" \
+        -H "Content-Type: application/json" \
+        -d "{\"chat_id\":\"8096968754\",\"text\":\"${text}\"}" \
+        >/dev/null 2>&1
+}
+
+# Forward TERM/INT to openclaw and send shutdown notification
+trap '
+    echo "[startup] Shutdown signal received — sending Telegram notification..."
+    _telegram_send "🔴 AgentShroud bot shutting down." \
+        && echo "[startup] ✓ Sent Telegram shutdown notification" \
+        || echo "[startup] ⚠ Could not send Telegram shutdown notification"
+    kill $OPENCLAW_PID 2>/dev/null
+' TERM INT
+
+# Wait for gateway to be ready, then send Telegram startup notification
+(
+    # Poll health endpoint — up to 60s
+    for i in $(seq 1 30); do
+        if curl -sf http://localhost:18789/api/health >/dev/null 2>&1; then
+            break
+        fi
+        sleep 2
+    done
+
+    # Give Telegram provider time to connect after gateway is ready
+    sleep 5
+
+    _telegram_send "🛡️ AgentShroud bot online — Telegram delivery confirmed after rebuild." \
+        && echo "[startup] ✓ Sent Telegram startup notification" \
+        || echo "[startup] ⚠ Could not send Telegram startup notification"
+) &
+
+wait $OPENCLAW_PID
