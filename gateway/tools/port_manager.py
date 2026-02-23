@@ -20,6 +20,8 @@ Usage:
     # Returns {"gateway": 8080, "dns": 5353, "dashboard": 8443} if free,
     # or auto-incremented ports if any are taken.
 """
+from __future__ import annotations
+
 
 import logging
 import os

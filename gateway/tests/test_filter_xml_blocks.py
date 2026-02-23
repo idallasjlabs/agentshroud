@@ -6,6 +6,8 @@
 
 TDD approach: Tests written first for XML block filtering behavior.
 """
+from __future__ import annotations
+
 
 import pytest
 from gateway.ingest_api.sanitizer import PIISanitizer

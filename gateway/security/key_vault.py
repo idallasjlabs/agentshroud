@@ -8,6 +8,8 @@ API Key Isolation — keys live only in the gateway, never in agent containers.
 Keys are stored in memory (encrypted at rest in production), scoped per-agent,
 injected transparently on proxied requests, and redacted from all output.
 """
+from __future__ import annotations
+
 
 import logging
 import re

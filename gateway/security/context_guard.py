@@ -6,6 +6,8 @@
 Context Window Poisoning Defense - Security Hardening Module
 Detect attempts to manipulate the AI context window through malicious inputs.
 """
+from __future__ import annotations
+
 
 import re
 import time

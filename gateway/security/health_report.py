@@ -7,6 +7,8 @@
 Aggregates data from all security tools, calculates a weighted score,
 tracks history in SQLite, and generates formatted reports.
 """
+from __future__ import annotations
+
 
 import json
 import logging

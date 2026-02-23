@@ -6,6 +6,8 @@
 
 Executes SSH commands via asyncio subprocess with validation and timeout enforcement.
 """
+from __future__ import annotations
+
 
 import asyncio
 import re

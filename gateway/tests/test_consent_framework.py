@@ -5,6 +5,8 @@
 """Tests for consent_framework module - MCP server config validation.
 TDD: Written before implementation.
 """
+from __future__ import annotations
+
 
 import pytest
 import sys

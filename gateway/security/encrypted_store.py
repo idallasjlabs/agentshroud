@@ -8,6 +8,8 @@ Encrypted Memory Store — AES-256-GCM encryption for data at rest.
 Provides EncryptedStore class for encrypting audit ledger entries,
 cached PII, and memory/state files. Supports key rotation.
 """
+from __future__ import annotations
+
 
 import base64
 import ctypes

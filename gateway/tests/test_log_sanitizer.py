@@ -3,6 +3,8 @@
 # Protected by common law trademark rights. Federal trademark registration pending.
 # Unauthorized reproduction, distribution, or use of the AgentShroud name or brand is strictly prohibited.
 """Test Log Sanitizer - verify PII and credential scrubbing from log output."""
+from __future__ import annotations
+
 
 import logging
 from gateway.security.log_sanitizer import LogSanitizer, install_log_sanitizer

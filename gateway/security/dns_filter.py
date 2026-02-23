@@ -8,6 +8,8 @@ DNS Exfiltration Prevention — monitor and optionally block DNS tunneling.
 Default mode: monitor (log everything, block nothing).
 Enforce mode: block tunneling patterns and enforce allowlist.
 """
+from __future__ import annotations
+
 
 import logging
 import math

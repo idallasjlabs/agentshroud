@@ -8,6 +8,8 @@ Drift Detection — detect unauthorized container config changes.
 Snapshots container configuration and compares against known-good baselines.
 Alerts on seccomp profile changes, new capabilities, new mounts, new env vars.
 """
+from __future__ import annotations
+
 
 import hashlib
 import hmac

@@ -6,6 +6,8 @@
 
 Defines request and response schemas for all endpoints.
 """
+from __future__ import annotations
+
 
 from typing import Any
 

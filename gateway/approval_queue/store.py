@@ -6,6 +6,8 @@
 
 Uses aiosqlite to persist approval items across restarts.
 """
+from __future__ import annotations
+
 
 import json
 import logging
