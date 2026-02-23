@@ -158,8 +158,15 @@ services:
       start_period: 60s
 
     # host.docker.internal → macOS host (for MCP servers that must run on host, e.g. mac-messages-mcp)
+    # Tailscale hosts → static IPs: Docker's embedded DNS doesn't forward to Tailscale
+    # MagicDNS (100.100.100.100), so *.tail240ea8.ts.net resolves incorrectly inside
+    # the container. Pinned IPs bypass the DNS proxy entirely.
+    # To update: run `tailscale ip --4 <hostname>` on the macOS host.
     extra_hosts:
       - "host.docker.internal:host-gateway"
+      - "marvin.tail240ea8.ts.net:100.90.175.83"
+      - "raspberrypi.tail240ea8.ts.net:100.107.248.66"
+      - "trillian.tail240ea8.ts.net:100.93.113.72"
 
     # SECURITY: Isolated network - NO access to host LAN
     networks:
