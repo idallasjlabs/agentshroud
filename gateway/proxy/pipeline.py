@@ -183,6 +183,32 @@ class SecurityPipeline:
             "pii_redactions_total": 0,
         }
 
+        # Fail-closed: raise immediately if a required guard is missing.
+        # Without PII sanitization, the pipeline would pass raw PII through
+        # to agents — that's unacceptable.
+        _REQUIRED_GUARDS = ("pii_sanitizer",)
+        missing_required = [
+            g for g in _REQUIRED_GUARDS if getattr(self, g) is None
+        ]
+        if missing_required:
+            raise RuntimeError(
+                f"SecurityPipeline cannot start: required guards missing: "
+                f"{missing_required}. Refusing to operate in fail-open mode."
+            )
+
+        # Warn loudly about recommended guards that are absent.
+        # These don't block startup but produce CRITICAL logs so operators
+        # notice the degraded security posture immediately.
+        _RECOMMENDED_GUARDS = ("prompt_guard", "egress_filter")
+        for guard_name in _RECOMMENDED_GUARDS:
+            if getattr(self, guard_name) is None:
+                logger.critical(
+                    "SecurityPipeline: recommended guard %r is not configured. "
+                    "Security checks for this guard will be SKIPPED. "
+                    "This degrades protection -- configure it before production use.",
+                    guard_name,
+                )
+
     async def process_inbound(
         self,
         message: str,
