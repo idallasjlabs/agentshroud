@@ -13,7 +13,8 @@ security:
     - "172.16.0.0/12"
 
   # PII sanitization
-  pii_redaction: false  # DISABLED - was blocking all messages
+  pii_min_confidence: 0.9  # Increase confidence threshold to reduce false positives
+  pii_redaction: true  # Re-enabled with higher confidence threshold
   pii_detection_engine: "presidio"  # Options: presidio, spacy
   redaction_rules:
     - type: "SSN"

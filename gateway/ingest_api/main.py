@@ -52,6 +52,9 @@ from .models import (
 from ..ssh_proxy.proxy import SSHProxy
 from .router import ForwardError, MultiAgentRouter
 from .sanitizer import PIISanitizer
+from ..security.prompt_guard import PromptGuard
+from ..security.trust_manager import TrustManager
+from ..security.egress_filter import EgressFilter
 from .event_bus import EventBus, make_event
 from ..proxy.http_proxy import ALLOWED_DOMAINS, HTTPConnectProxy
 from ..proxy.mcp_proxy import MCPProxy, MCPToolCall, MCPToolResult
@@ -113,6 +116,9 @@ class AppState:
     ledger: DataLedger
     router: MultiAgentRouter
     approval_queue: ApprovalQueue
+    prompt_guard: PromptGuard
+    trust_manager: TrustManager
+    egress_filter: EgressFilter
     mcp_proxy: Optional[MCPProxy]
     pipeline: Optional[SecurityPipeline]
     start_time: float
@@ -191,9 +197,34 @@ async def lifespan(app: FastAPI):
         logger.critical(f"Failed to initialize approval queue: {e}")
         raise
 
+    # Initialize security components
+    try:
+        app_state.prompt_guard = PromptGuard(block_threshold=0.8, warn_threshold=0.4)
+        logger.info("PromptGuard initialized")
+    except Exception as e:
+        logger.critical(f"Failed to initialize PromptGuard: {e}")
+        raise
+
+    try:
+        app_state.trust_manager = TrustManager()
+        logger.info("TrustManager initialized")
+    except Exception as e:
+        logger.critical(f"Failed to initialize TrustManager: {e}")
+        raise
+
+    try:
+        app_state.egress_filter = EgressFilter()
+        logger.info("EgressFilter initialized")
+    except Exception as e:
+        logger.critical(f"Failed to initialize EgressFilter: {e}")
+        raise
+
     # Initialize security pipeline
     app_state.pipeline = SecurityPipeline(
+        prompt_guard=app_state.prompt_guard,
         pii_sanitizer=app_state.sanitizer,
+        trust_manager=app_state.trust_manager,
+        egress_filter=app_state.egress_filter,
         approval_queue=app_state.approval_queue,
     )
     logger.info("Security pipeline initialized")
