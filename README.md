@@ -19,6 +19,7 @@
     <img src="https://img.shields.io/badge/License-MIT-yellow.svg" alt="MIT License" />
   </a>
   <img src="https://img.shields.io/badge/trademark-AgentShroud™-1583f0" alt="AgentShroud™ Trademark" />
+  <img src="https://img.shields.io/badge/modules-30-blueviolet" alt="30 Security Modules" />
 </p>
 
 <p><em>Built by a system architect, for system architects. Powered by agents. Governed by design.</em></p>
@@ -35,7 +36,22 @@ AgentShroud sits as an intermediary layer between AI agents — Claude Code, Gem
 
 Think of it as a **security mesh for autonomous agents**: invisible to the agent, indispensable to the enterprise.
 
-AgentShroud is simultaneously a **production-grade tool**, a **learning laboratory**, and a **living proof of concept** — built in the open, by a system architect, using the very technologies it governs. It is itself built almost entirely by AI agents under human architectural direction, making it a real working demonstration of the methodology it enables. It is not a whitepaper. It is not a pilot. It is a production-grade reference implementation that enterprise leaders can examine, fork, and deploy.
+AgentShroud is simultaneously a **production-grade tool**, a **learning laboratory**, and a **living proof of concept** — built in the open, by a system architect, using the very technologies it governs. It is itself built almost entirely by AI agents under human architectural direction, making it a real working demonstration of the methodology it enables.
+
+---
+
+## What's New — February 2026
+
+A major development sprint wired all **30 security modules** into the live pipeline and delivered two complete control center interfaces:
+
+- **P0 — Core Pipeline**: PromptGuard, TrustManager, EgressFilter, PII fix, gateway binding
+- **P1 — Middleware**: 7 modules wired + MCP fail-closed enforcement
+- **P2 — Network Modules**: 5 modules wired into the request flow
+- **P3 — Infrastructure**: 15 modules integrated via SecurityPipelineIntegrator
+- **Web Control Center**: 7-page responsive dashboard for browser-based management
+- **Terminal Control Center**: Full TUI + chat console (optimized for Blink Shell / mobile)
+
+All 30 security modules are now **active in the pipeline** — no stubs, no dead code, no planned-but-unbuilt features.
 
 ---
 
@@ -62,8 +78,8 @@ AgentShroud is simultaneously a **production-grade tool**, a **learning laborato
 │  └──────────┘  └──────────┘  └──────────┘  └───────────┘  │
 │                                                             │
 │  ┌──────────┐  ┌──────────┐  ┌──────────┐  ┌───────────┐  │
-│  │   SSH    │  │   Kill   │  │  Agent   │  │ Dashboard │  │
-│  │  Proxy   │  │  Switch  │  │Isolation │  │ (WebSocket│  │
+│  │   SSH    │  │   Kill   │  │  Agent   │  │  Context  │  │
+│  │  Proxy   │  │  Switch  │  │Isolation │  │   Guard   │  │
 │  └──────────┘  └──────────┘  └──────────┘  └───────────┘  │
 │                                                             │
 │  ┌──────────┐  ┌──────────┐  ┌──────────┐  ┌───────────┐  │
@@ -72,7 +88,19 @@ AgentShroud is simultaneously a **production-grade tool**, a **learning laborato
 │  │  Proxy   │  │          │  │          │  │(op-proxy) │  │
 │  └──────────┘  └──────────┘  └──────────┘  └───────────┘  │
 │                                                             │
+│  ┌──────────┐  ┌──────────┐  ┌──────────┐  ┌───────────┐  │
+│  │ Browser  │  │   Git    │  │ Key Leak │  │  DNS      │  │
+│  │ Security │  │  Guard   │  │ Detector │  │  Filter   │  │
+│  │  Guard   │  │          │  │          │  │           │  │
+│  └──────────┘  └──────────┘  └──────────┘  └───────────┘  │
+│                                                             │
+│  ┌──────────┐  ┌──────────┐  ┌──────────┐  ┌───────────┐  │
+│  │Subagent  │  │ Sidecar  │  │ Metadata │  │Environment│  │
+│  │ Monitor  │  │ Scanner  │  │  Guard   │  │  Guard    │  │
+│  └──────────┘  └──────────┘  └──────────┘  └───────────┘  │
+│                                                             │
 │  Multi-Agent Router · Auth (HMAC/JWT) · WebSocket Events   │
+│  Web Control Center · Terminal Control Center (TUI)        │
 └──────────────────────────┬──────────────────────────────────┘
                            │ Filtered & Approved
                            ▼
@@ -87,24 +115,100 @@ AgentShroud is simultaneously a **production-grade tool**, a **learning laborato
 
 ---
 
-## Security Modules
+## 30 Security Modules
+
+AgentShroud implements a defense-in-depth strategy with 30 security modules operating across 7 distinct layers, from network isolation to application-level content filtering.
+
+### Core Security Pipeline
 
 | # | Module | Description |
 |---|--------|-------------|
 | 1 | **PII Sanitizer** | Microsoft Presidio-powered detection & redaction of SSN, credit cards, emails, phone numbers, addresses |
-| 2 | **Approval Queue** | Human-in-the-loop approval for sensitive actions (email, file deletion, API calls, SSH commands) |
-| 3 | **Audit Ledger** | SQLite-backed immutable log with SHA-256 hash chain of all data flows and agent actions |
-| 4 | **Prompt Guard** | Detects and blocks prompt injection, jailbreak attempts, and payload smuggling (11+ pattern detectors) |
-| 5 | **Egress Filter** | Network-level control of outbound connections; blocks LAN, SSRF, and DNS tunneling; domain allowlist |
+| 2 | **PII Scanner** | Deep content scanning for PII patterns across all data flows |
+| 3 | **Prompt Guard** | Detects and blocks prompt injection, jailbreak attempts, and payload smuggling (11+ pattern detectors) |
+| 4 | **Egress Filter** | Network-level control of outbound connections; blocks LAN, SSRF, and DNS tunneling; domain allowlist |
+| 5 | **Egress Monitor** | Real-time monitoring and alerting on outbound traffic patterns and anomalies |
 | 6 | **Trust Manager** | Cryptographic verification of agent identity and configuration integrity; progressive trust levels |
 | 7 | **Drift Detector** | Monitors container filesystem and configuration for unauthorized changes |
 | 8 | **Encrypted Store** | AES-256-GCM at-rest encryption for sensitive configuration and credentials |
+
+### Proxy & Network Layer
+
+| # | Module | Description |
+|---|--------|-------------|
 | 9 | **SSH Proxy** | Secure SSH access through approval workflow with command allowlists and audit trail |
-| 10 | **Kill Switch** | Emergency shutdown with credential revocation — freeze, shutdown, or disconnect modes |
-| 11 | **Agent Isolation** | Seccomp profiles, read-only rootfs, memory/PID limits, rootless container execution |
-| 12 | **Live Dashboard** | Real-time WebSocket activity feed, approval management, and system health monitoring |
-| 13 | **HTTP CONNECT Proxy** | All bot outbound traffic routed through gateway; allowlist enforcement; traffic statistics |
-| 14 | **Credential Isolation** | `op://` references proxied via gateway; 1Password service account token never in the bot container |
+| 10 | **HTTP CONNECT Proxy** | All bot outbound traffic routed through gateway; allowlist enforcement; traffic statistics |
+| 11 | **MCP Inspector** | Deep inspection of MCP tool calls for injection, PII, encoding, and sensitive operations |
+| 12 | **MCP Permission Manager** | Per-tool permission policies, rate limiting, and scope enforcement for MCP tools |
+| 13 | **MCP Proxy** | Full MCP JSON-RPC proxy with fail-closed enforcement — uninspected calls are blocked |
+| 14 | **Web Proxy** | HTTP/HTTPS content proxy with domain filtering and content inspection |
+| 15 | **Web Content Scanner** | Scans proxied web content for injection payloads, malicious scripts, and data exfiltration attempts |
+| 16 | **DNS Filter** | DNS-level domain filtering and tunneling detection |
+
+### Agent Containment
+
+| # | Module | Description |
+|---|--------|-------------|
+| 17 | **Kill Switch** | Emergency shutdown with credential revocation — freeze, shutdown, or disconnect modes |
+| 18 | **Isolation Verifier** | Validates container security posture: seccomp, read-only rootfs, capability drops, rootless execution |
+| 19 | **Credential Isolation** | `op://` references proxied via gateway; 1Password service account token never in the bot container |
+| 20 | **Resource Guard** | Per-agent CPU, memory, disk, and request rate limits with cumulative tracking |
+
+### Content & Context Guards
+
+| # | Module | Description |
+|---|--------|-------------|
+| 21 | **Context Guard** | Validates conversation context integrity and detects context manipulation attacks |
+| 22 | **Environment Guard** | Monitors and enforces environment variable security policies |
+| 23 | **Metadata Guard** | Inspects and sanitizes metadata in requests and responses to prevent information leakage |
+| 24 | **Browser Security Guard** | Security controls for browser automation: URL filtering, script injection prevention, download policies |
+| 25 | **Git Guard** | Monitors git operations for force pushes, sensitive file commits, and unauthorized branch operations |
+| 26 | **Key Leak Detector** | Scans all content for exposed API keys, tokens, private keys, and other credentials |
+| 27 | **Log Sanitizer** | Ensures sensitive data is redacted from all log output before persistence |
+
+### Infrastructure & Monitoring
+
+| # | Module | Description |
+|---|--------|-------------|
+| 28 | **Subagent Monitor** | Tracks and controls spawned sub-agents; enforces depth limits and resource boundaries |
+| 29 | **Sidecar Scanner** | Inspects sidecar containers and services for security compliance |
+| 30 | **Audit Ledger** | SQLite-backed immutable log with SHA-256 hash chain of all data flows and agent actions |
+
+### Supporting Infrastructure
+
+| Component | Description |
+|-----------|-------------|
+| **Approval Queue** | Human-in-the-loop approval for sensitive actions (email, file deletion, API calls, SSH commands) |
+| **Session Manager** | Manages agent sessions, authentication state, and session-scoped permissions |
+| **Port Manager** | Controls and audits network port allocations and bindings |
+| **Proxy Dashboard** | Real-time WebSocket activity feed, approval management, and system health monitoring |
+| **SecurityPipelineIntegrator** | Orchestrates all 30 modules into a unified processing pipeline |
+
+---
+
+## Control Centers
+
+### Web Control Center
+
+A 7-page responsive web dashboard providing full management capabilities:
+
+- **Dashboard** — Real-time activity feed, system health, active alerts
+- **Security Modules** — Status and configuration for all 30 modules
+- **Approval Queue** — Review and action pending approval requests
+- **Audit Trail** — Browse and search the immutable audit ledger
+- **Agent Management** — Monitor connected agents, trust levels, resource usage
+- **Settings** — Gateway configuration, allowlists, notification preferences
+- **Kill Switch** — Emergency controls with one-click freeze/shutdown/disconnect
+
+### Terminal Control Center
+
+A full TUI (Text User Interface) + chat console designed for terminal-first workflows, optimized for Blink Shell and mobile SSH access:
+
+- Module status overview and health monitoring
+- Interactive approval queue management
+- Live activity feed in terminal
+- Chat console for direct agent interaction
+- Keyboard-driven navigation for efficiency
 
 ---
 
@@ -137,7 +241,7 @@ docker compose -f examples/docker-compose.minimal.yml up -d
 # Health check
 curl -s http://localhost:8080/health | python3 -m json.tool
 
-# Dashboard
+# Web Control Center
 open http://localhost:3000
 ```
 
@@ -176,48 +280,26 @@ AgentShroud answers the question every CIO, CISO, and innovation leader is quiet
 
 | Feature | Unprotected Agent | AgentShroud |
 |---------|-------------------|-------------|
-| PII detection & redaction | ❌ | ✅ Presidio-powered |
-| Human approval queue | ❌ | ✅ Telegram/API/Dashboard |
-| Audit trail | Basic logs | ✅ Immutable SHA-256 ledger |
-| Prompt injection defense | ❌ | ✅ 11+ pattern detectors |
-| Outbound traffic control | ❌ | ✅ HTTP CONNECT proxy + domain allowlist |
+| PII detection & redaction | ❌ | ✅ Presidio-powered + deep scanning |
+| Human approval queue | ❌ | ✅ Telegram/API/Web/TUI Dashboard |
+| Audit trail | Basic logs | ✅ Immutable SHA-256 hash-chain ledger |
+| Prompt injection defense | ❌ | ✅ 11+ pattern detectors + context guard |
+| Outbound traffic control | ❌ | ✅ HTTP CONNECT proxy + domain allowlist + DNS filter |
 | Credential isolation | ❌ | ✅ op-proxy — token never in bot |
-| Container hardening | Minimal | ✅ Seccomp + read-only rootfs + rootless |
+| Container hardening | Minimal | ✅ Seccomp + read-only rootfs + rootless + isolation verifier |
 | SSH with approval | ❌ | ✅ Command allowlists + audit |
 | Kill switch | ❌ | ✅ Freeze/shutdown/disconnect |
-| Real-time dashboard | ❌ | ✅ WebSocket live feed |
+| Real-time dashboard | ❌ | ✅ Web Control Center (7 pages) + Terminal TUI |
 | Drift detection | ❌ | ✅ Filesystem monitoring |
-| MCP tool governance | ❌ | ✅ Per-tool permissions + rate limits |
+| MCP tool governance | ❌ | ✅ Per-tool permissions + rate limits + fail-closed |
 | Multi-agent support | Per-platform | ✅ Claude Code, Gemini, Codex, OpenClaw |
-
----
-
-## Dashboard
-
-The live dashboard provides real-time visibility into agent activity:
-
-```
-┌─────────────────────────────────────────────────────────┐
-│  AgentShroud Dashboard          [Kill Switch] [Settings] │
-├─────────────────────────────────────────────────────────┤
-│                                                         │
-│  Activity Feed (Live)              Approval Queue (3)   │
-│  ─────────────────                 ──────────────────   │
-│  10:21 Forward text → general      🔴 Send email to     │
-│  10:20 PII: 2 items redacted          boss@corp.com    │
-│  10:19 SSH: git status (auto)         [Approve] [Deny] │
-│  10:18 Auth: token verified                             │
-│  10:15 Agent: response sent        🟡 Delete /tmp/data  │
-│                                       [Approve] [Deny] │
-│  System Health                                          │
-│  ─────────────                     🟡 Install package   │
-│  Gateway: ● Online                    requests==2.31    │
-│  Agent: ● Online                      [Approve] [Deny] │
-│  Ledger: 1,247 entries                                  │
-│  Uptime: 4d 12h 33m                                    │
-│                                                         │
-└─────────────────────────────────────────────────────────┘
-```
+| Git operation security | ❌ | ✅ Force push detection, secret scanning |
+| Key/credential leak detection | ❌ | ✅ Real-time scanning across all content |
+| Browser automation security | ❌ | ✅ URL filtering, script injection prevention |
+| Sub-agent control | ❌ | ✅ Depth limits, resource boundaries |
+| Web content scanning | ❌ | ✅ Injection and exfiltration detection |
+| Environment hardening | ❌ | ✅ Environment variable policy enforcement |
+| Log sanitization | ❌ | ✅ Sensitive data redacted before persistence |
 
 ---
 
@@ -257,6 +339,7 @@ The live dashboard provides real-time visibility into agent activity:
 | [Changelog](CHANGELOG.md) | Version history and changes |
 
 ---
+
 ## Example Configurations
 
 See the [`examples/`](examples/) directory:
