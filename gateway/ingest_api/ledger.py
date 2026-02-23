@@ -15,6 +15,7 @@ import json
 import logging
 import uuid
 from datetime import datetime, timedelta
+from typing import Optional
 from typing import Any
 
 import aiosqlite
@@ -117,7 +118,7 @@ class DataLedger:
         redaction_types: list[str],
         forwarded_to: str,
         content_type: str = "text",
-        metadata: dict | None = None,
+        metadata: Optional[dict] = None,
     ) -> LedgerEntry:
         """Create a new ledger entry
 
@@ -203,10 +204,10 @@ class DataLedger:
         self,
         page: int = 1,
         page_size: int = 50,
-        source: str | None = None,
-        since: str | None = None,
-        until: str | None = None,
-        forwarded_to: str | None = None,
+        source: Optional[str] = None,
+        since: Optional[str] = None,
+        until: Optional[str] = None,
+        forwarded_to: Optional[str] = None,
     ) -> LedgerQueryResponse:
         """Query ledger entries with pagination and filters
 

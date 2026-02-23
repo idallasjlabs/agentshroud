@@ -12,6 +12,7 @@ Loads configuration from agentshroud.yaml and provides typed access via Pydantic
 import logging
 import secrets
 from pathlib import Path
+from typing import Optional
 from urllib.parse import urlparse
 
 import yaml
@@ -27,7 +28,7 @@ class PIIConfig(BaseModel):
     engine: str = "presidio"
     entities: list[str] = Field(default_factory=list)
     enabled: bool = True
-    min_confidence: float = 0.7
+    min_confidence: float = 0.8
 
 
 class LedgerConfig(BaseModel):
@@ -146,7 +147,7 @@ def _entity_type_mapping(yaml_type: str) -> str:
     return mapping.get(yaml_type, yaml_type)
 
 
-def load_config(config_path: Path | None = None) -> GatewayConfig:
+def load_config(config_path: Optional[Path] = None) -> GatewayConfig:
     """Load and validate configuration from agentshroud.yaml
 
     Search order:
@@ -201,6 +202,7 @@ def load_config(config_path: Path | None = None) -> GatewayConfig:
 
     # Map PII configuration
     pii_enabled = security.get("pii_redaction", True)
+    pii_min_confidence = security.get("pii_min_confidence", 0.8)
     pii_engine = security.get("pii_detection_engine", "presidio")
     redaction_rules = security.get("redaction_rules", [])
 
@@ -215,6 +217,7 @@ def load_config(config_path: Path | None = None) -> GatewayConfig:
         engine=pii_engine,
         entities=enabled_entities,
         enabled=pii_enabled,
+        min_confidence=pii_min_confidence,
     )
 
     # Map ledger configuration
