@@ -54,25 +54,11 @@ if [ -n "${GATEWAY_AUTH_TOKEN:-}" ] && [ -n "${GATEWAY_OP_PROXY_URL:-}" ]; then
         echo "[startup] ⚠ Could not load Brave Search API key"
     fi
 
-    # Load Gmail credentials
-    # Item ID: wgblbbbqkmnyobh2xtr6r65k34 (Gmail - agentshroud.ai@gmail.com)
-    GMAIL_APP_PASSWORD="$(/usr/local/bin/op-wrapper.sh read \
-        "op://Agent Shroud Bot Credentials/wgblbbbqkmnyobh2xtr6r65k34/password" 2>/dev/null)" || true
-    if [ -n "$GMAIL_APP_PASSWORD" ]; then
-        export GMAIL_APP_PASSWORD
-        echo "[startup] ✓ Loaded Gmail app password"
-    else
-        echo "[startup] ⚠ Could not load Gmail app password"
-    fi
-
-    GMAIL_USERNAME="$(/usr/local/bin/op-wrapper.sh read \
-        "op://Agent Shroud Bot Credentials/wgblbbbqkmnyobh2xtr6r65k34/username" 2>/dev/null)" || true
-    if [ -n "$GMAIL_USERNAME" ]; then
-        export GMAIL_USERNAME
-        echo "[startup] ✓ Loaded Gmail username"
-    else
-        echo "[startup] ⚠ Could not load Gmail username"
-    fi
+    # Gmail credentials intentionally not loaded at startup.
+    # Loading GMAIL_APP_PASSWORD on every restart authenticates from the Docker
+    # container IP, which Google flags as suspicious and locks the account.
+    # Re-enable only after the Gmail accounts are recovered and a safe auth
+    # strategy (e.g. OAuth2 refresh token) is in place.
 else
     echo "[startup] Warning: Gateway op-proxy not configured, 1Password secrets unavailable"
 fi
