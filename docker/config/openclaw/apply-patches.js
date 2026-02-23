@@ -10,6 +10,9 @@
  *   1. Ensures `main` is the first (default) agent in agents.list
  *   2. Ensures Isaiah's Telegram ID (8096968754) is bound to the main agent
  *
+ * NOTE: OpenClaw does not support MCP servers (it uses its own plugin system).
+ * iMessage is handled by OpenClaw's built-in imessage extension via cliPath/imsg-ssh.
+ *
  * Safe to run on every container startup:
  *   - If openclaw.json exists: patches it in-place, preserving all other fields
  *     (Telegram token, channel config, API keys, etc. are untouched)

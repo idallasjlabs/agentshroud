@@ -91,13 +91,17 @@ class ApprovalQueueConfig(BaseModel):
 
 
 class ChannelsConfig(BaseModel):
-    """Channel ownership configuration (P3: Telegram + email oversight)"""
+    """Channel ownership configuration (P3: Telegram + email oversight, P5: iMessage)"""
 
     email_enabled: bool = True
     email_allowed_recipients: list[str] = Field(default_factory=list)
     email_rate_limit_per_hour: int = 10
     email_require_approval_for_new: bool = True
     telegram_enabled: bool = True
+    imessage_enabled: bool = True
+    imessage_allowed_recipients: list[str] = Field(default_factory=list)
+    imessage_rate_limit_per_hour: int = 30
+    imessage_require_approval_for_new: bool = True
 
 
 class GatewayConfig(BaseModel):
@@ -266,12 +270,23 @@ def load_config(config_path: Path | None = None) -> GatewayConfig:
     channels_raw = raw_config.get("channels", {})
     email_raw = channels_raw.get("email", {}) if isinstance(channels_raw, dict) else {}
     telegram_raw = channels_raw.get("telegram", {}) if isinstance(channels_raw, dict) else {}
+    imessage_raw = channels_raw.get("imessage", {}) if isinstance(channels_raw, dict) else {}
     channels_config = ChannelsConfig(
         email_enabled=email_raw.get("enabled", True),
         email_allowed_recipients=email_raw.get("allowed_recipients", []),
         email_rate_limit_per_hour=email_raw.get("rate_limit_per_hour", 10),
         email_require_approval_for_new=email_raw.get("require_approval_for_new", True),
         telegram_enabled=telegram_raw.get("enabled", True),
+        imessage_enabled=imessage_raw.get("enabled", True),
+        imessage_allowed_recipients=imessage_raw.get("allowed_recipients", []),
+        imessage_rate_limit_per_hour=imessage_raw.get("rate_limit_per_hour", 30),
+        imessage_require_approval_for_new=imessage_raw.get("require_approval_for_new", True),
+    )
+
+    # Map MCP proxy configuration
+    mcp_proxy_raw = raw_config.get("mcp_proxy", {})
+    mcp_proxy_config = (
+        MCPProxyConfig.from_dict(mcp_proxy_raw) if mcp_proxy_raw else MCPProxyConfig()
     )
 
     # Build final config
