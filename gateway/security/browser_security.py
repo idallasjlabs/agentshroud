@@ -10,6 +10,8 @@ entry protection, and screenshot analysis hooks.
 References:
     - Wu et al. 2026 (arXiv:2601.07263) - Browser-based attacks on AI agents
 """
+from __future__ import annotations
+
 
 import re
 from dataclasses import dataclass, field

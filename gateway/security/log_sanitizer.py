@@ -6,6 +6,8 @@
 Log Sanitizer - Security Hardening Module
 Scrubs PII, credentials, and sensitive data from ALL log output.
 """
+from __future__ import annotations
+
 
 import logging
 import re

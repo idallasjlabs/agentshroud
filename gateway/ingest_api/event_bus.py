@@ -7,6 +7,8 @@
 Simple in-process pub/sub event bus for broadcasting gateway events
 to WebSocket clients and other subscribers.
 """
+from __future__ import annotations
+
 
 import asyncio
 import logging

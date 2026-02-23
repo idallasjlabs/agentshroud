@@ -7,6 +7,8 @@
 Reads Wazuh alerts from shared volume for file integrity monitoring
 and rootkit detection.
 """
+from __future__ import annotations
+
 
 import json
 import logging

@@ -8,6 +8,8 @@ File I/O Sandboxing — monitor and optionally restrict file operations.
 Default mode: monitor (log everything, flag sensitive access, block nothing).
 Enforce mode: hard path restrictions.
 """
+from __future__ import annotations
+
 
 import fnmatch
 import logging

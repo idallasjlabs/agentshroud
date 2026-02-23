@@ -3,6 +3,8 @@
 # Protected by common law trademark rights. Federal trademark registration pending.
 # Unauthorized reproduction, distribution, or use of the AgentShroud name or brand is strictly prohibited.
 """SSH configuration models for AgentShroud Gateway"""
+from __future__ import annotations
+
 
 import os
 from pydantic import BaseModel, Field, field_validator

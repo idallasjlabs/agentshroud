@@ -3,6 +3,8 @@
 # Protected by common law trademark rights. Federal trademark registration pending.
 # Unauthorized reproduction, distribution, or use of the AgentShroud name or brand is strictly prohibited.
 """Shared test fixtures for AgentShroud Gateway tests"""
+from __future__ import annotations
+
 
 import tempfile
 from pathlib import Path

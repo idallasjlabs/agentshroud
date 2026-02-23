@@ -6,6 +6,8 @@
 Container Network Isolation Validator - Security Hardening Module
 Validate docker-compose network configuration and detect security issues.
 """
+from __future__ import annotations
+
 
 import yaml
 import json

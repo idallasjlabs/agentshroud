@@ -12,6 +12,8 @@ domain allowlist before a TCP tunnel is established.
 Running this server now adds zero risk — the bot has no HTTP_PROXY set
 yet, so it doesn't use this server until FINAL.
 """
+from __future__ import annotations
+
 
 import asyncio
 import logging

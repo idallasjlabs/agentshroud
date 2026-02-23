@@ -4,6 +4,8 @@ TDD red phase: these tests define the required behaviour for:
   POST /webhook/telegram  — inbound Telegram messages through the gateway
   POST /email/send        — bot email requests mediated by the gateway
 """
+from __future__ import annotations
+
 
 from unittest.mock import AsyncMock, MagicMock, patch
 

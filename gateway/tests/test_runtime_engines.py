@@ -8,6 +8,8 @@ Covers all three engines (Docker, Podman, Apple Containers),
 detection logic, compose generation, security feature mapping,
 runtime config, and web API endpoints.
 """
+from __future__ import annotations
+
 
 import os
 from unittest.mock import MagicMock, patch

@@ -3,6 +3,8 @@
 # Protected by common law trademark rights. Federal trademark registration pending.
 # Unauthorized reproduction, distribution, or use of the AgentShroud name or brand is strictly prohibited.
 """Configuration Validation Tests — example configs and validation."""
+from __future__ import annotations
+
 
 from pathlib import Path
 
