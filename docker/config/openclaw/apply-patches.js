@@ -123,23 +123,6 @@ if ((config.agents.defaults.compaction.reserveTokensFloor || 0) < RESERVE_FLOOR)
   changed = true;
 }
 
-// ── Patch 4: agents.defaults.compaction.reserveTokensFloor ───────────────────
-
-// Prevents "Context limit exceeded" resets by reserving a token buffer before
-// the hard context limit is hit. OpenClaw triggers a hard reset when the buffer
-// runs out; raising the floor gives the compaction pass room to summarise first.
-
-config.agents = config.agents || {};
-config.agents.defaults = config.agents.defaults || {};
-config.agents.defaults.compaction = config.agents.defaults.compaction || {};
-
-const RESERVE_FLOOR = 4000;
-if ((config.agents.defaults.compaction.reserveTokensFloor || 0) < RESERVE_FLOOR) {
-  config.agents.defaults.compaction.reserveTokensFloor = RESERVE_FLOOR;
-  console.log(`[init-patch] Set agents.defaults.compaction.reserveTokensFloor = ${RESERVE_FLOOR}`);
-  changed = true;
-}
-
 // ── Write back ────────────────────────────────────────────────────────────────
 
 if (changed || isNew) {
