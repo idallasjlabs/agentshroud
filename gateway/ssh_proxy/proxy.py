@@ -113,11 +113,11 @@ class SSHProxy:
         host = self.config.hosts[host_name]
         effective_timeout = timeout or host.max_session_seconds
 
-        # Build SSH command — accept-new adds unknown host keys automatically
+        # Build SSH command — reject unknown host keys for security
         ssh_args = [
             "ssh",
             "-o",
-            "StrictHostKeyChecking=accept-new",
+            "StrictHostKeyChecking=yes",
             "-o",
             "BatchMode=yes",
         ]
