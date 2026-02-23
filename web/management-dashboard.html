@@ -467,7 +467,7 @@
                         <div id="security-overview">
                             <div class="flex items-center justify-between mb-2">
                                 <span>Active Modules</span>
-                                <strong id="active-modules">--/26</strong>
+                                <strong id="active-modules">--</strong>
                             </div>
                             <div class="flex items-center justify-between mb-2">
                                 <span>Threats Blocked</span>
@@ -940,8 +940,9 @@
         function updateOverviewCards(health, modules, agents, resources) {
             // Security overview
             const activeModules = modules.filter(m => m.status === 'active').length;
-            document.getElementById('active-modules').textContent = `${activeModules}/26`;
-            document.getElementById('threats-blocked').textContent = '247'; // Mock data
+            document.getElementById('active-modules').textContent = `${activeModules}/${modules.length}`;
+            // TODO: fetch real blocked count from /proxy/status endpoint
+            document.getElementById('threats-blocked').textContent = 'N/A';
             
             // Agent overview
             document.getElementById('active-agents').textContent = agents.length;
