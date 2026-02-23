@@ -120,3 +120,65 @@ External advisors with restricted access (Sonnet model, limited tools):
 3. **Fail-closed** — security defaults to deny, not allow
 4. **Everything in Git** — all work on branches, all branches pushed, nothing lost
 5. **Humans decide, agents execute** — Isaiah approves plans before agents run
+
+---
+
+## Development Environment
+
+### Hardware
+
+| Machine | Role | Specs | Container Runtime | Owner |
+|---------|------|-------|-------------------|-------|
+| **Marvin** (Mac Studio) | Primary dev/build server | Apple M1 Ultra, macOS Tahoe 26.3 | Docker (→ Apple Container System) | Isaiah (non-admin user) |
+| **Trillian** (Mac Mini) | Secondary build/CI | Intel 2018, macOS 15.7.4 | Docker | Team |
+| **Pi** (Raspberry Pi 4B) | Edge/test node | ARM64, Debian 11 | Podman | Team |
+
+All machines connected via **Tailscale** mesh VPN (`tail240ea8.ts.net`). SSH restricted to alias-based access only (wildcard `ProxyCommand /bin/false` blocks unregistered hosts).
+
+### Communication & Tooling
+
+| Tool | Purpose | Who Uses It |
+|------|---------|-------------|
+| **Telegram** | Primary command channel — Isaiah ↔ Bot | Isaiah, Bot, Advisors |
+| **OpenClaw Console** | Agent runtime, session management, sub-agent orchestration | Bot (Scrum Master) |
+| **GitHub** | Source control, PRs, branch management | All (repo: `idallasj/agentshroud`) |
+| **1Password** | Secrets management (Service Account → op-proxy) | Bot (via gateway), Isaiah |
+| **Blink Shell** | iPad terminal access (TUI dashboard, SSH) | Isaiah |
+| **Git Worktrees** | Parallel branch development without conflicts | Bot (all dev work) |
+
+### Container Architecture
+
+```
+┌─────────────────────────────────────────┐
+│  Marvin (Mac Studio M1 Ultra)           │
+│                                         │
+│  ┌───────────────┐  ┌───────────────┐   │
+│  │  agentshroud   │  │   gateway     │   │
+│  │  (OpenClaw)    │←→│  (FastAPI)    │   │
+│  │  Docker        │  │  Docker       │   │
+│  └───────────────┘  └───────────────┘   │
+│         │                    │           │
+│         └────── Tailscale ───┘           │
+│                    │                     │
+│  Future: Apple Container System          │
+│  (native macOS containers, no Docker)    │
+└────────────────────┬────────────────────┘
+                     │ Tailscale mesh
+        ┌────────────┼────────────┐
+        ▼            ▼            ▼
+   ┌─────────┐ ┌─────────┐ ┌──────────┐
+   │ Trillian │ │   Pi    │ │  iPad    │
+   │ Docker   │ │ Podman  │ │ Blink    │
+   │ Intel    │ │ ARM64   │ │ Shell    │
+   └─────────┘ └─────────┘ └──────────┘
+```
+
+### Development Workflow
+
+1. **Isaiah** sets priorities via Telegram from Mac Studio or iPad (Blink Shell)
+2. **Bot** (OpenClaw) receives instructions, plans sprints, spawns sub-agents
+3. **Sub-agents** execute on Marvin via SSH, each in isolated git worktrees
+4. **Code** is committed, tested, and pushed per-branch
+5. **Peer review** runs as a sub-agent before any merge
+6. **Merges** are sequential with tests after each step
+7. **Deployment** via Docker Compose on Marvin (primary), with Trillian and Pi as secondary nodes
