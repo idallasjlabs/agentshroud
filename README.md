@@ -5,7 +5,11 @@
 
 <h1>AgentShroud™</h1>
 
+
 <p><strong>Enterprise Governance Proxy for Autonomous AI Agents</strong></p>
+
+> *"One Shroud Over Every Wire"* — You decide what the agent sees, not the agent.
+
 
 <p>
   <a href="https://github.com/idallasj/agentshroud/actions/workflows/ci.yml">
