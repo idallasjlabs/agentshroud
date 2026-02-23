@@ -95,34 +95,31 @@ if (!hasBinding) {
   changed = true;
 }
 
-// ── Patch 3: mcpServers — wrap all MCP server commands with the AgentShroud proxy ──
+// ── Patch 3: mcpServers cleanup — remove legacy key rejected by OpenClaw ────
+// openclaw@latest rejects 'mcpServers' as an unrecognised top-level key and
+// exits with code 1, putting the container into a crash loop.
+// MCP proxy wrapping will be re-implemented via the correct OpenClaw API.
 
-// Wraps each MCP server command so that all tools/call traffic is routed through
-// the AgentShroud gateway for inspection, PII scanning, and audit logging.
-// Idempotent: already-wrapped entries are left untouched.
+if (Object.prototype.hasOwnProperty.call(config, 'mcpServers')) {
+  delete config.mcpServers;
+  console.log('[init-patch] Removed legacy mcpServers key (unrecognised by current OpenClaw)');
+  changed = true;
+}
 
-const MCP_WRAPPER = '/usr/local/bin/mcp-proxy-wrapper.js';
+// ── Patch 4: agents.defaults.compaction.reserveTokensFloor ───────────────────
 
-config.mcpServers = config.mcpServers || {};
+// Prevents "Context limit exceeded" resets by reserving a token buffer before
+// the hard context limit is hit. OpenClaw triggers a hard reset when the buffer
+// runs out; raising the floor gives the compaction pass room to summarise first.
 
-for (const [name, server] of Object.entries(config.mcpServers)) {
-  // Skip entries that are already wrapped (command is Node or wrapper itself)
-  const cmd = server.command || '';
-  if (cmd === 'node' && Array.isArray(server.args) && server.args[0] === MCP_WRAPPER) {
-    continue; // already wrapped
-  }
-  if (cmd === MCP_WRAPPER) {
-    continue; // already wrapped (direct invocation)
-  }
+config.agents = config.agents || {};
+config.agents.defaults = config.agents.defaults || {};
+config.agents.defaults.compaction = config.agents.defaults.compaction || {};
 
-  // Wrap: node mcp-proxy-wrapper.js <server-name> -- <original-command> [original-args...]
-  const originalArgs = Array.isArray(server.args) ? server.args : [];
-  config.mcpServers[name] = {
-    ...server,
-    command: 'node',
-    args: [MCP_WRAPPER, name, '--', cmd, ...originalArgs],
-  };
-  console.log(`[init-patch] Wrapped MCP server '${name}' with AgentShroud proxy`);
+const RESERVE_FLOOR = 4000;
+if ((config.agents.defaults.compaction.reserveTokensFloor || 0) < RESERVE_FLOOR) {
+  config.agents.defaults.compaction.reserveTokensFloor = RESERVE_FLOOR;
+  console.log(`[init-patch] Set agents.defaults.compaction.reserveTokensFloor = ${RESERVE_FLOOR}`);
   changed = true;
 }
 
