@@ -6,6 +6,7 @@ from __future__ import annotations
 # Unauthorized reproduction, distribution, or use of the AgentShroud name or brand is strictly prohibited.
 """Shared test fixtures for AgentShroud Gateway tests"""
 
+
 import tempfile
 from pathlib import Path
 

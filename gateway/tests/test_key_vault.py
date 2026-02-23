@@ -3,6 +3,8 @@
 # Protected by common law trademark rights. Federal trademark registration pending.
 # Unauthorized reproduction, distribution, or use of the AgentShroud name or brand is strictly prohibited.
 """Tests for API key isolation and vault."""
+from __future__ import annotations
+
 
 import pytest
 from gateway.security.key_vault import (

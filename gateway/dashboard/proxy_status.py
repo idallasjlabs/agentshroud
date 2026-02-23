@@ -16,6 +16,7 @@ Shows real-time status of the security proxy pipeline including:
 - Canary status
 """
 
+
 import time
 from dataclasses import dataclass
 

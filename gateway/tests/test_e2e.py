@@ -7,6 +7,8 @@
 Tests the complete flow through authentication, forwarding,
 PII sanitization, ledger, event bus, and dashboard.
 """
+from __future__ import annotations
+
 
 import pytest
 import pytest_asyncio

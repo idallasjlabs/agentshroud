@@ -11,6 +11,8 @@ References:
     - Chen et al. 2026 (arXiv:2602.14364) - Session hijacking in agent frameworks
     - Wang et al. 2026 (arXiv:2602.08412) - Event injection attacks
 """
+from __future__ import annotations
+
 
 import hashlib
 import secrets

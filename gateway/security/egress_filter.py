@@ -11,6 +11,7 @@ Domain/IP allowlist with default-deny policy. Configurable per-agent
 with logging of all egress attempts.
 """
 
+
 import ipaddress
 import logging
 import time

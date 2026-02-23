@@ -8,6 +8,8 @@ Prompt Injection Defense — detect and block prompt injection attempts.
 Scoring system with configurable thresholds. Returns structured results
 including blocked status, threat score, matched patterns, and sanitized input.
 """
+from __future__ import annotations
+
 
 import base64
 import unicodedata

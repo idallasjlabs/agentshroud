@@ -6,6 +6,8 @@
 Environment Leakage Guard - Security Hardening Module
 Block agent access to environment variables and prevent credential leakage.
 """
+from __future__ import annotations
+
 
 import os
 import re

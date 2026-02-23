@@ -11,6 +11,7 @@ Default mode: monitor (log everything, flag sensitive access, block nothing).
 Enforce mode: hard path restrictions.
 """
 
+
 import fnmatch
 import logging
 import os

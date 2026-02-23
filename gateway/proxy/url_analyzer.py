@@ -8,6 +8,8 @@ URL Analyzer — detect SSRF, data exfiltration, and suspicious URL patterns.
 Hard blocks: SSRF (private IPs) only.
 Flags: PII in URLs, base64 payloads, suspiciously long query strings.
 """
+from __future__ import annotations
+
 
 import base64
 import ipaddress
