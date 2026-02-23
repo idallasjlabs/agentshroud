@@ -40,14 +40,14 @@ class TestForwardEndpoint:
             
             # Mock auth dependency
             with patch('gateway.ingest_api.main.create_auth_dependency') as mock_auth_dep:
-                mock_auth_dep.return_value = lambda: mock_auth
+                mock_auth_dep.return_value = AsyncMock()
                 
                 response = client.post(
                     "/forward",
                     json={
                         "content": "test message",
                         "content_type": "text/plain",
-                        "source": "test"
+                        "source": "api"
                     },
                     headers={"Authorization": "Bearer fake-token"}
                 )
@@ -102,14 +102,14 @@ class TestForwardEndpoint:
             
             # Mock auth dependency
             with patch('gateway.ingest_api.main.create_auth_dependency') as mock_auth_dep:
-                mock_auth_dep.return_value = lambda: mock_auth
+                mock_auth_dep.return_value = AsyncMock()
                 
                 response = client.post(
                     "/forward",
                     json={
                         "content": "test message",
                         "content_type": "text/plain",
-                        "source": "test"
+                        "source": "api"
                     },
                     headers={"Authorization": "Bearer fake-token"}
                 )
@@ -136,14 +136,14 @@ class TestForwardEndpoint:
             
             # Mock auth dependency
             with patch('gateway.ingest_api.main.create_auth_dependency') as mock_auth_dep:
-                mock_auth_dep.return_value = lambda: mock_auth
+                mock_auth_dep.return_value = AsyncMock()
                 
                 response = client.post(
                     "/forward",
                     json={
                         "content": "test message",
                         "content_type": "text/plain",
-                        "source": "test"
+                        "source": "api"
                     },
                     headers={"Authorization": "Bearer fake-token"}
                 )
@@ -190,7 +190,7 @@ class TestApprovalEndpoints:
             
             # Mock auth dependency
             with patch('gateway.ingest_api.main.create_auth_dependency') as mock_auth_dep:
-                mock_auth_dep.return_value = lambda: mock_auth
+                mock_auth_dep.return_value = AsyncMock()
                 
                 response = client.get(
                     "/approval-queue",
@@ -215,7 +215,7 @@ class TestApprovalEndpoints:
             
             # Mock auth dependency
             with patch('gateway.ingest_api.main.create_auth_dependency') as mock_auth_dep:
-                mock_auth_dep.return_value = lambda: mock_auth
+                mock_auth_dep.return_value = AsyncMock()
                 
                 response = client.post(
                     "/approve",
@@ -251,7 +251,7 @@ class TestMCPProxyEndpoint:
             
             # Mock auth dependency
             with patch('gateway.ingest_api.main.create_auth_dependency') as mock_auth_dep:
-                mock_auth_dep.return_value = lambda: mock_auth
+                mock_auth_dep.return_value = AsyncMock()
                 
                 response = client.post(
                     "/mcp/proxy",
