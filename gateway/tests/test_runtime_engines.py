@@ -833,9 +833,11 @@ class TestManagementPage:
         from fastapi import FastAPI
         from fastapi.testclient import TestClient
         from gateway.web.management import router
+        from gateway.web.api import require_auth
 
         app = FastAPI()
         app.include_router(router)
+        app.dependency_overrides[require_auth] = lambda: "test-user"
         return TestClient(app)
 
     def test_dashboard_page(self, client):
