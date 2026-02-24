@@ -139,7 +139,7 @@ _telegram_send() {
 # Forward TERM/INT to openclaw and send shutdown notification
 trap '
     echo "[startup] Shutdown signal received — sending Telegram notification..."
-    _telegram_send "🔴 AgentShroud bot shutting down on $(hostname -s) [${INSTANCE_NAME:-production}]" \
+    _telegram_send "🔴 AgentShroud bot shutting down — $(whoami)@$(hostname -s)" \
         && echo "[startup] ✓ Sent Telegram shutdown notification" \
         || echo "[startup] ⚠ Could not send Telegram shutdown notification"
     kill $OPENCLAW_PID 2>/dev/null
@@ -158,7 +158,7 @@ trap '
     # Give Telegram provider time to connect after gateway is ready
     sleep 5
 
-    _telegram_send "🛡️ AgentShroud bot online on $(hostname -s) [${INSTANCE_NAME:-production}] — Telegram delivery confirmed." \
+    _telegram_send "🛡️ AgentShroud bot online — $(whoami)@$(hostname -s) — Telegram delivery confirmed." \
         && echo "[startup] ✓ Sent Telegram startup notification" \
         || echo "[startup] ⚠ Could not send Telegram startup notification"
 ) &
