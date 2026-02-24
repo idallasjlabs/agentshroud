@@ -17,9 +17,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 COPY gateway/requirements.txt .
 RUN pip install --no-cache-dir --prefix=/install -r requirements.txt
 
-# Download spaCy model (this will fail gracefully, fallback to regex works)
-RUN /install/bin/python -m spacy download en_core_web_lg || echo "spaCy model download failed, will use regex fallback"
-
 # === Runtime Stage ===
 FROM python:3.13-slim
 
@@ -88,6 +85,9 @@ RUN chmod +x /usr/local/bin/security-*.sh
 
 # Create security log directory
 RUN mkdir -p /var/log/security && chown agentshroud:agentshroud /var/log/security
+
+# Download spaCy NLP model for PII detection (560MB, cached in Docker layer)
+RUN python3 -m spacy download en_core_web_lg || echo "spaCy model download failed — will use regex fallback"
 
 # Switch to non-root user
 USER agentshroud
