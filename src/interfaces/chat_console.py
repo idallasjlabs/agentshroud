@@ -16,6 +16,23 @@ from datetime import datetime
 GATEWAY_URL = "http://localhost:8080"
 OPENCLAW_URL = "http://localhost:18790"
 
+def _read_auth_token():
+    """Read gateway password from secrets file or environment."""
+    import os
+    token = os.environ.get("GATEWAY_AUTH_TOKEN", "")
+    if not token:
+        for path in ["/run/secrets/gateway_password", "docker/secrets/gateway_password.txt"]:
+            try:
+                token = open(path).read().strip()
+                break
+            except OSError:
+                pass
+    if not token:
+        token = input("Gateway password: ").strip()
+    return token
+
+AUTH_TOKEN = _read_auth_token()
+
 def print_banner():
     """Display chat console banner"""
     print("\033[2J\033[H")  # Clear screen
@@ -39,7 +56,7 @@ def print_help():
 def check_status():
     """Check gateway and bot status"""
     try:
-        with urllib.request.urlopen(f"{GATEWAY_URL}/status", timeout=5) as response:
+        with urllib.request.urlopen(urllib.request.Request(f"{GATEWAY_URL}/status", headers={'Authorization': f'Bearer {AUTH_TOKEN}'})), timeout=5) as response:
             data = json.loads(response.read().decode())
             print(f"\n✓ Gateway Status: {data['status']}")
             print(f"  Version: {data['version']}")
@@ -79,7 +96,7 @@ def send_message(message):
         req = urllib.request.Request(
             f"{GATEWAY_URL}/forward",
             data=payload,
-            headers={'Content-Type': 'application/json'},
+            headers={'Content-Type': 'application/json', 'Authorization': f'Bearer {AUTH_TOKEN}'},
             method='POST'
         )
 
