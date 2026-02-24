@@ -90,17 +90,24 @@ if [ -n "${GATEWAY_AUTH_TOKEN:-}" ] && [ -n "${GATEWAY_OP_PROXY_URL:-}" ]; then
         echo "[startup] ⚠ Could not load Brave Search API key after retries"
     fi
 
-    # iCloud email credentials (replaces Gmail, which is locked out)
-    ICLOUD_APP_PASSWORD="$(op_proxy_read_with_retry "iCloud app password" \
-        "op://AgentShroud Bot Credentials/AgentShroud - iCloud Mail [agentshroud.ai@icloud.com]/agentshroud app-specific password")" || true
-    if [ -n "$ICLOUD_APP_PASSWORD" ]; then
-        export ICLOUD_APP_PASSWORD
-        export ICLOUD_USERNAME="agentshroud.ai@gmail.com"
-        export ICLOUD_EMAIL="agentshroud.ai@icloud.com"
-        echo "[startup] ✓ Loaded iCloud email credentials"
-    else
-        echo "[startup] ⚠ Could not load iCloud app-specific password after retries"
-    fi
+    # iCloud email credentials — loaded in background to avoid blocking startup
+    # (non-critical: email features degrade gracefully without iCloud creds)
+    _ICLOUD_ENV_FILE="/tmp/.icloud-env"
+    (
+        ICLOUD_APP_PASSWORD="$(op_proxy_read_with_retry "iCloud app password" \
+            "op://Agent Shroud Bot Credentials/AgentShroud - iCloud Mail [agentshroud.ai@icloud.com]/agentshroud app-specific password")" || true
+        if [ -n "$ICLOUD_APP_PASSWORD" ]; then
+            cat > "$_ICLOUD_ENV_FILE" << EOF
+export ICLOUD_APP_PASSWORD="$ICLOUD_APP_PASSWORD"
+export ICLOUD_USERNAME="agentshroud.ai@gmail.com"
+export ICLOUD_EMAIL="agentshroud.ai@icloud.com"
+EOF
+            echo "[startup] ✓ Loaded iCloud email credentials (background)"
+        else
+            echo "[startup] ⚠ Could not load iCloud app-specific password after retries"
+        fi
+    ) &
+    _ICLOUD_BG_PID=$!
 else
     echo "[startup] Warning: Gateway op-proxy not configured, 1Password secrets unavailable"
 fi
@@ -108,6 +115,21 @@ fi
 # Apply OpenClaw config defaults (SSH allowlist, cron jobs, agent patches, workspace brand files)
 echo "[startup] Bootstrapping OpenClaw config..."
 /usr/local/bin/init-openclaw-config.sh
+
+# Wait briefly for background iCloud fetch, then source if ready
+if [ -n "${_ICLOUD_BG_PID:-}" ]; then
+    # Give it 3 seconds — if it's not done, gateway starts without iCloud
+    for _i in 1 2 3; do
+        if [ -f "${_ICLOUD_ENV_FILE:-/tmp/.icloud-env}" ]; then
+            . "$_ICLOUD_ENV_FILE"
+            break
+        fi
+        sleep 1
+    done
+    if [ ! -f "${_ICLOUD_ENV_FILE:-/tmp/.icloud-env}" ]; then
+        echo "[startup] iCloud credentials still loading in background — gateway starting without them"
+    fi
+fi
 
 # Start AgentShroud gateway (powered by OpenClaw CLI)
 echo "[startup] Starting AgentShroud gateway..."
