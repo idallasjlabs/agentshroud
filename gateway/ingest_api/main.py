@@ -2764,7 +2764,7 @@ async def deep_security_test(auth: AuthRequired):
             data=json.dumps({"reference": "op://Agent Shroud Bot Credentials/25ghxryyvup5wpufgfldgc2vjm/agentshroud app-specific password"}).encode(),
             headers={"Authorization": f"Bearer {gw}", "Content-Type": "application/json"}, method="POST")
         try:
-            resp = urllib.request.urlopen(req, timeout=60)
+            resp = urllib.request.urlopen(req, timeout=120)  # 1Password cold start can take >60s
             return resp.status == 200, f"op-proxy: {resp.status}"
         except Exception as e:
             return False, f"op-proxy: {e}"
