@@ -93,7 +93,20 @@ class MetadataGuard:
         # Normalize using NFKC (canonical decomposition + canonical composition)
         filename = unicodedata.normalize("NFKC", filename)
 
-        return filename
+        # Strip path traversal sequences
+        # Remove .. components and absolute path prefixes
+        filename = filename.replace("\\", "/")  # Normalize backslash
+        parts = filename.split("/")
+        safe_parts = [p for p in parts if p and p != ".."]
+        filename = "/".join(safe_parts) if len(safe_parts) > 1 else (safe_parts[0] if safe_parts else "unnamed")
+
+        # Strip leading slashes (prevent absolute paths)
+        filename = filename.lstrip("/")
+
+        # Strip null bytes
+        filename = filename.replace("\x00", "")
+
+        return filename or "unnamed"
 
     def check_for_exif(self, data: bytes) -> bool:
         """Check if binary data contains EXIF metadata."""

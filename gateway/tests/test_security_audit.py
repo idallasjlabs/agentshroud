@@ -540,6 +540,21 @@ class TestNetworkSecurity:
         clean = guard.sanitize_filename("malicious<script>.txt")
         assert "<" not in clean or isinstance(clean, str)  # Sanitizes dangerous chars
 
+    def test_metadata_path_traversal_stripped(self):
+        from gateway.security.metadata_guard import MetadataGuard
+        guard = MetadataGuard()
+        # Basic path traversal
+        assert ".." not in guard.sanitize_filename("../../etc/passwd")
+        # Backslash traversal
+        assert ".." not in guard.sanitize_filename("..\\..\\windows\\system32\\config")
+        # Absolute path stripped
+        result = guard.sanitize_filename("/etc/shadow")
+        assert not result.startswith("/")
+        # Null byte injection
+        assert "\x00" not in guard.sanitize_filename("test.php\x00.jpg")
+        # Empty after sanitize
+        assert guard.sanitize_filename("../../..") == "unnamed"
+
     def test_metadata_oversized_headers(self):
         from gateway.security.metadata_guard import MetadataGuard
         guard = MetadataGuard()
