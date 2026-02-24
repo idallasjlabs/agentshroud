@@ -1,0 +1,8 @@
+# Override ports for test instance (avoids conflict with production on 8080)
+services:
+  gateway:
+    ports: !override
+      - "127.0.0.1:9080:8080"
+  agentshroud:
+    ports: !override
+      - "127.0.0.1:19790:18789"
