@@ -154,6 +154,23 @@ async def lifespan(app: FastAPI):
         except OSError as e:
             logger.warning(f"Could not load 1Password service account token: {e}")
 
+    # Pre-warm 1Password CLI (cold start takes >60s, subsequent calls <2s)
+    if os.getenv("OP_SERVICE_ACCOUNT_TOKEN"):
+        import threading
+
+        def _prewarm_op():
+            try:
+                subprocess.run(
+                    ["op", "whoami"],
+                    capture_output=True, text=True, timeout=120,
+                )
+                logger.info("1Password CLI pre-warmed successfully")
+            except Exception as e:
+                logger.warning(f"1Password CLI pre-warm failed (non-fatal): {e}")
+
+        threading.Thread(target=_prewarm_op, daemon=True).start()
+        logger.info("1Password CLI pre-warm started (background)")
+
     # Load configuration
     try:
         app_state.config = load_config()
@@ -758,7 +775,7 @@ async def op_proxy(request: OpProxyRequest, auth: AuthRequired):
             ["op", "read", reference],
             capture_output=True,
             text=True,
-            timeout=10,
+            timeout=90,  # 1Password cold start can take >60s
         )
     except subprocess.TimeoutExpired:
         logger.error("op-proxy: 1Password read timed out")
