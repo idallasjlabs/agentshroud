@@ -136,7 +136,11 @@ echo "[startup] Starting AgentShroud gateway..."
 openclaw gateway --allow-unconfigured --bind lan &
 OPENCLAW_PID=$!
 
-# Read Telegram bot token once — shared by startup and shutdown notifications
+# Telegram notification helpers — sends via THIS instance's bot token
+# Falls back to production bot if local token unavailable
+_PRODUCTION_BOT_TOKEN="8481143014:AAE58Z7N7fh4DuoGQdekp7botxDBJbAGb54"
+_OWNER_CHAT_ID="8096968754"
+
 _telegram_bot_token() {
     node -e "
         try {
@@ -147,21 +151,33 @@ _telegram_bot_token() {
         } catch(e) {}
     " 2>/dev/null
 }
+
 _telegram_send() {
     local text="$1"
     local token
     token="$(_telegram_bot_token)"
-    [ -z "$token" ] && return 1
-    curl -sf -X POST "https://api.telegram.org/bot${token}/sendMessage" \
+    # Try local bot first, fall back to production bot
+    if [ -n "$token" ]; then
+        curl -sf --max-time 5 -X POST "https://api.telegram.org/bot${token}/sendMessage" \
+            -H "Content-Type: application/json" \
+            -d "{\"chat_id\":\"${_OWNER_CHAT_ID}\",\"text\":\"${text}\"}" \
+            >/dev/null 2>&1 && return 0
+    fi
+    # Fallback: production bot (always reachable)
+    curl -sf --max-time 5 -X POST "https://api.telegram.org/bot${_PRODUCTION_BOT_TOKEN}/sendMessage" \
         -H "Content-Type: application/json" \
-        -d "{\"chat_id\":\"8096968754\",\"text\":\"${text}\"}" \
+        -d "{\"chat_id\":\"${_OWNER_CHAT_ID}\",\"text\":\"${text}\"}" \
         >/dev/null 2>&1
 }
+
+# Instance identity for notifications
+_INSTANCE_LABEL="${INSTANCE_NAME:-$(hostname -s)}"
+_BOT_NAME="${OPENCLAW_BOT_NAME:-agentshroud_bot}"
 
 # Forward TERM/INT to openclaw and send shutdown notification
 trap '
     echo "[startup] Shutdown signal received — sending Telegram notification..."
-    _telegram_send "🔴 AgentShroud bot shutting down — $(whoami)@$(hostname -s)" \
+    _telegram_send "🔴 AgentShroud shutting down — ${_BOT_NAME} on ${_INSTANCE_LABEL}" \
         && echo "[startup] ✓ Sent Telegram shutdown notification" \
         || echo "[startup] ⚠ Could not send Telegram shutdown notification"
     kill $OPENCLAW_PID 2>/dev/null
@@ -180,7 +196,7 @@ trap '
     # Give Telegram provider time to connect after gateway is ready
     sleep 5
 
-    _telegram_send "🛡️ AgentShroud bot online — $(whoami)@$(hostname -s) — Telegram delivery confirmed." \
+    _telegram_send "🛡️ AgentShroud online — ${_BOT_NAME} on ${_INSTANCE_LABEL}" \
         && echo "[startup] ✓ Sent Telegram startup notification" \
         || echo "[startup] ⚠ Could not send Telegram startup notification"
 ) &
