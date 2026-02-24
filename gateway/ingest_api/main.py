@@ -2051,8 +2051,8 @@ async def container_security_profile(auth: AuthRequired):
     secret_patterns = ['PASSWORD', 'SECRET', 'API_KEY', 'TOKEN', 'PRIVATE_KEY']
     leaked_vars = [k for k in os.environ if any(p in k.upper() for p in secret_patterns)]
     # Filter out known safe ones
-    safe_vars = {'OPENCLAW_GATEWAY_PASSWORD_FILE', 'GATEWAY_AUTH_TOKEN_FILE'}
-    leaked_vars = [v for v in leaked_vars if v not in safe_vars]
+    safe_vars = {'OPENCLAW_GATEWAY_PASSWORD_FILE', 'GATEWAY_AUTH_TOKEN_FILE', 'OP_SERVICE_ACCOUNT_TOKEN_FILE'}
+    leaked_vars = [v for v in leaked_vars if v not in safe_vars and not v.endswith('_FILE')]
     if not leaked_vars:
         results['checks']['no_env_secrets'] = {'passed': True, 'detail': 'No secret-like environment variables exposed'}
         passed += 1
