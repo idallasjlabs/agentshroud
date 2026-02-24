@@ -90,6 +90,9 @@ RUN mkdir -p /var/log/security && chown agentshroud:agentshroud /var/log/securit
 RUN python3 -m spacy download en_core_web_sm || echo "spaCy model download failed — will use regex fallback"
 
 # Switch to non-root user
+# Strip setuid/setgid bits — CIS Docker Benchmark 4.8
+RUN find / -perm /6000 -type f -exec chmod a-s {} + 2>/dev/null || true
+
 USER agentshroud
 
 # Expose gateway port
