@@ -175,7 +175,9 @@ class FileSandbox:
                 else self.config.allowed_write_paths
             )
             if allowed_paths is not None:
-                if not any(resolved.startswith(p) for p in allowed_paths):
+                # Resolve allowed paths too (e.g. /tmp -> /private/tmp on macOS)
+                resolved_allowed = [os.path.realpath(p) for p in allowed_paths]
+                if not any(resolved.startswith(p) for p in (allowed_paths + resolved_allowed)):
                     flags.append(f"path outside allowed: {path}")
 
         flagged = len(flags) > 0
