@@ -33,7 +33,7 @@ from fastapi.responses import JSONResponse, HTMLResponse
 from starlette.responses import RedirectResponse
 from pathlib import Path
 
-from ..approval_queue.queue import ApprovalQueue
+from ..approval_queue.enhanced_queue import EnhancedApprovalQueue
 from .auth import create_auth_dependency
 from .config import GatewayConfig, load_config
 from .ledger import DataLedger
@@ -212,8 +212,15 @@ async def lifespan(app: FastAPI):
 
     # Initialize approval queue
     try:
-        app_state.approval_queue = ApprovalQueue(app_state.config.approval_queue)
-        logger.info("Approval queue initialized")
+        from ..approval_queue.store import ApprovalStore
+        store = ApprovalStore("/tmp/agentshroud_approvals.db")  # TODO: Use config path
+        app_state.approval_queue = EnhancedApprovalQueue(
+            app_state.config.approval_queue, 
+            app_state.config.tool_risk,
+            store
+        )
+        await app_state.approval_queue.initialize()
+        logger.info(f"Enhanced approval queue initialized (enforce_mode={app_state.config.tool_risk.enforce_mode})")
     except Exception as e:
         logger.critical(f"Failed to initialize approval queue: {e}")
         raise
@@ -441,7 +448,7 @@ async def lifespan(app: FastAPI):
         if app_state.config.mcp_proxy_data
         else MCPProxyConfig()
     )
-    app_state.mcp_proxy = MCPProxy(config=mcp_proxy_config)
+    app_state.mcp_proxy = MCPProxy(config=mcp_proxy_config, approval_queue=app_state.approval_queue)
     logger.info(
         f"MCP proxy initialized: {len(mcp_proxy_config.servers)} server(s) registered"
     )
@@ -491,6 +498,11 @@ async def lifespan(app: FastAPI):
         await app_state.http_proxy.stop()
 
     # Close ledger
+
+    # Close approval queue
+    if hasattr(app_state, "approval_queue") and app_state.approval_queue:
+        await app_state.approval_queue.close()
+        logger.info("Approval queue closed")
     await app_state.ledger.close()
 
     logger.info("Shutdown complete")
