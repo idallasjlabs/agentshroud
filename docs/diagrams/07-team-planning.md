@@ -9,23 +9,23 @@
 ```mermaid
 graph TB
     subgraph Owner["Product Owner / Architect"]
-        ISAIAH["Isaiah Jefferson\n━━━━━━━━━━━━━━━━━\nRole: Product Owner, Architect,\nProject Manager, Operator\n\nResponsibilities:\n• Vision & roadmap\n• Requirements & priorities\n• Architecture decisions\n• Production operations\n• Security approvals\n• Credential management\n• External communications"]
+        ISAIAH["Isaiah Jefferson\nProduct Owner · Architect · Operator\nSecurity approvals · Credential mgmt"]
     end
 
     subgraph PrimaryDev["Primary Developer"]
-        CLAUDE["Claude Code\n(claude-sonnet-4-6)\n━━━━━━━━━━━━━━━━━\nRole: Lead Engineer\n\nResponsibilities:\n• Feature implementation\n• Bug fixes & hotfixes\n• Architecture design\n• Schema & API design\n• PRs & commits\n• Code review\n• Documentation\n\nConfig: .claude/\nTools: All (agents, skills, hooks)"]
+        CLAUDE["Claude Code (claude-sonnet-4-6)\nLead Engineer\nFeatures · Bugs · Arch · PRs · Docs"]
     end
 
     subgraph SecondaryDev["Secondary Developer"]
-        GEMINI["Gemini CLI\n━━━━━━━━━━━━━━━━━\nRole: Test Engineer\n\nResponsibilities:\n• Test augmentation\n• Edge case coverage\n• Safe refactors\n• Validation runs\n\nConfig: .gemini/\nTools: Limited (no agents/hooks)"]
+        GEMINI["Gemini CLI\nTest Engineer\nTest augmentation · Safe refactors"]
     end
 
     subgraph TertiaryDev["Tertiary Developer"]
-        CODEX["ChatGPT Codex\n━━━━━━━━━━━━━━━━━\nRole: QA / Support Engineer\n\nResponsibilities:\n• Test coverage gaps\n• Validation scripts\n• Small safe refactors\n\nConfig: .codex/\nTools: Limited (no agents/hooks)"]
+        CODEX["ChatGPT Codex\nQA / Support Engineer\nTest coverage · Validation scripts"]
     end
 
     subgraph Production["Production Agent"]
-        BOT["AgentShroud Bot\n(@agentshroud_bot)\n━━━━━━━━━━━━━━━━━\nRole: Autonomous Agent (Prod)\n\nRunning:\n• OpenClaw / claude-opus-4-6\n• 8 cron jobs\n• Telegram + iMessage + Email\n• GitHub, AWS, Atlassian MCP\n\nOverseen by gateway policies"]
+        BOT["AgentShroud Bot (@agentshroud_bot)\nAutonomous Agent · OpenClaw\nTelegram · iMessage · 8 Cron Jobs"]
     end
 
     ISAIAH -->|"Directs"| CLAUDE
@@ -59,7 +59,7 @@ graph TB
         SEC_GW["gateway_password.txt"]
         SEC_OAI["openai_api_key.txt"]
         SEC_OP["1password_service_account"]
-        SEC_BOT["1password_bot_*\n(email / password / key)"]
+        SEC_BOT["1password_bot credentials"]
     end
 
     subgraph Volumes["Docker Volumes (auto-created)"]
@@ -70,13 +70,13 @@ graph TB
     end
 
     subgraph Images["Docker Images (must build before run)"]
-        IMG_GW["docker-gateway\nFROM python:3.11-slim\ngateway/Dockerfile"]
-        IMG_BOT["docker-agentshroud\nFROM node:22-bookworm-slim\ndocker/Dockerfile.agentshroud"]
+        IMG_GW["docker-gateway\nPython 3.11 · gateway/Dockerfile"]
+        IMG_BOT["docker-agentshroud\nNode.js 22 · docker/Dockerfile.agentshroud"]
     end
 
     subgraph Containers["Containers (startup order)"]
-        GW_C["agentshroud-gateway\n(starts first)\ndepends on: secrets + image"]
-        BOT_C["agentshroud-bot\n(starts after gateway healthy)\ndepends_on: gateway service_healthy"]
+        GW_C["agentshroud-gateway\n(starts first)"]
+        BOT_C["agentshroud-bot\n(starts after gateway healthy)"]
     end
 
     OP --> SEC_OP

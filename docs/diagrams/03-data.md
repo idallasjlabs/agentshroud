@@ -22,17 +22,17 @@ flowchart TD
     end
 
     subgraph Gateway["Gateway Container"]
-        PII["PII Sanitizer\nPresidio / regex\nRedacts: SSN, CC, Email,\nPhone, Address"]
+        PII["PII Sanitizer\nPresidio · regex\nSSN · CC · Email · Phone"]
         AUDIT["Audit Ledger\nSHA-256 hash only\nNever stores raw content"]
-        APPROVAL["Approval Queue\nHuman gate for:\nemail_sending\nfile_deletion\nexternal_api_calls\nskill_installation"]
-        MCP_GATE["MCP Inspector\nInjection scan\nPII leak check\nSensitive op detection"]
+        APPROVAL["Approval Queue\nHuman gate for\ndangerous actions"]
+        MCP_GATE["MCP Inspector\nInjection scan\nPII leak · Sensitive op"]
         PROXY["HTTP CONNECT Proxy\nDomain allowlist\nDefault-deny egress"]
     end
 
     subgraph Stores["Persistent Storage"]
-        LEDGER_DB[("ledger.db\nAudit trail\n90-day retention")]
+        LEDGER_DB[("ledger.db\nAudit trail · 90-day TTL")]
         APPROVAL_DB[("approval_queue.db\nPending approvals")]
-        BOT_CONFIG[("agentshroud-config volume\nopenclaw.json\nSession history\nCron jobs")]
+        BOT_CONFIG[("agentshroud-config volume\nopenclaw.json · Sessions · Cron")]
     end
 
     subgraph Egress["External Services (Allowlisted)"]
@@ -132,12 +132,12 @@ flowchart LR
 
     subgraph L2["Layer 2 — Ingestion (Gateway)"]
         HASH1["original_content_hash\nSHA-256(raw)"]
-        REDACT["PII Redaction\n[PHONE_NUMBER]\n[EMAIL_ADDRESS]\n[SSN] etc"]
+        REDACT["PII Redaction\n[PHONE] [EMAIL] [SSN]\n→ placeholders only"]
         HASH2["content_hash\nSHA-256(sanitized)"]
     end
 
     subgraph L3["Layer 3 — Persistence (ledger.db)"]
-        LEDGER_ROW["ledger row\nid, timestamp, source\ncontent_hash ← sanitized\noriginal_content_hash ← raw\nsanitized=1, redaction_count\nexpires_at = now+90d"]
+        LEDGER_ROW["ledger row\ncontent_hash · original_hash\nsanitized · redaction_count\nexpires_at = now+90d"]
     end
 
     subgraph L4["Layer 4 — Processing (Bot)"]
