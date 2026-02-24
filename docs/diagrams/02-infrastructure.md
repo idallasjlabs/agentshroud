@@ -8,61 +8,60 @@
 
 ```mermaid
 graph TB
-    subgraph Internet["Internet (External)"]
-        OAI["OpenAI API\napi.openai.com"]
-        ANTH["Anthropic API\napi.anthropic.com"]
-        TG["Telegram API\napi.telegram.org"]
-        GH["GitHub\ngithub.com"]
-        OP["1Password\nmy.1password.com"]
-        BRAVE["Brave Search\napi.search.brave.com"]
+    subgraph Internet["Internet (External Services)"]
+        OAI["OpenAI API"]
+        ANTH["Anthropic API"]
+        TG["Telegram API"]
+        GH["GitHub"]
+        OP["1Password Cloud"]
+        BRAVE["Brave Search API"]
     end
 
-    subgraph Tailscale["Tailscale Overlay Network (tail240ea8.ts.net)"]
-        MARVIN["marvin\n100.90.175.83\nDevelopment node"]
-        PI["raspberrypi\n100.107.248.66\nRaspberry Pi\nagentshroud-bot user"]
-        TRILLIAN["trillian\n100.94.68.61\nDevelopment node"]
+    subgraph Tailscale["Tailscale Overlay  ·  tail240ea8.ts.net"]
+        MARVIN["marvin\n100.90.175.83"]
+        PI["raspberrypi\n100.107.248.66\nagentshroud-bot user"]
+        TRILLIAN["trillian\n100.94.68.61"]
     end
 
-    subgraph MacOS["macOS Host (Development Machine)"]
+    subgraph MacOS["macOS Host  ·  Development Machine"]
         direction TB
 
         subgraph DockerCompose["Docker Compose"]
             direction LR
 
-            subgraph NetInternal["agentshroud-internal\n172.20.0.0/16 (bridge, external)"]
-                GW["Gateway Container\nagentshroud-gateway\n:8080 → REST API\n:8181 → HTTP CONNECT proxy\nPython 3.11 / FastAPI\n512 MB / 1 CPU"]
+            subgraph NetInternal["agentshroud-internal  ·  172.20.0.0/16"]
+                GW["agentshroud-gateway\n:8080 REST API\n:8181 CONNECT Proxy\nPython 3.11 · 512 MB"]
             end
 
-            subgraph NetIsolated["agentshroud-isolated\n172.21.0.0/16 (bridge, ICC enabled)"]
-                BOT["Bot Container\nagentshroud-bot\n:18789 → OpenClaw gateway\n:18790 (host) → Web UI\nNode.js 22 / OpenClaw\n4 GB / 2 CPU"]
+            subgraph NetIsolated["agentshroud-isolated  ·  172.21.0.0/16"]
+                BOT["agentshroud-bot\n:18789 OpenClaw\n:18790 Web UI\nNode.js 22 · 4 GB"]
             end
 
             GW -.->|"shared network"| BOT
         end
 
         subgraph Volumes["Named Docker Volumes"]
-            V1["agentshroud-config\n/home/node/.agentshroud"]
-            V2["agentshroud-workspace\n/home/node/agentshroud/workspace"]
-            V3["agentshroud-ssh\n/home/node/.ssh"]
+            V1["agentshroud-config\n~/.agentshroud"]
+            V2["agentshroud-workspace\n~/workspace"]
+            V3["agentshroud-ssh\n~/.ssh"]
             V4["agentshroud-browsers\nPlaywright binaries"]
-            V5["gateway-data\n/app/data (ledger.db)"]
+            V5["gateway-data\nledger.db"]
         end
 
         subgraph Secrets["Docker Secrets"]
             S1["gateway_password.txt"]
             S2["openai_api_key.txt"]
             S3["1password_service_account"]
-            S4["1password_bot_email/password/key"]
+            S4["1password_bot credentials"]
         end
 
-        HOST_GW["host.docker.internal\n(host-gateway)"]
-        TAILSCALE_HOST["Tailscale daemon\n(runs on macOS host)"]
+        TAILSCALE_HOST["Tailscale Daemon\n(macOS host)"]
     end
 
-    BOT -->|"HTTP_PROXY=http://gateway:8181\nAll outbound HTTPS"| GW
-    GW -->|"allowlisted domains only"| Internet
+    BOT -->|"HTTP_PROXY=gateway:8181"| GW
+    GW -->|"Allowlisted domains only"| Internet
     BOT -->|"SSH via gateway proxy"| Tailscale
-    MacOS -->|"Tailscale MagicDNS\n(static IPs pinned in extra_hosts)"| Tailscale
+    MacOS -->|"MagicDNS (static IPs)"| Tailscale
 ```
 
 ---
@@ -89,13 +88,13 @@ graph LR
     LOCALHOST -->|":18790"| BOT_ISO
 
     BOT_ISO -->|"HTTP CONNECT\nAll traffic"| GW_ISO
-    GW_INT -->|"HTTPS (port 443)\nAllowlisted only:\napi.openai.com\napi.anthropic.com\napi.telegram.org\n*.github.com\nimap.mail.me.com\nsmtp.mail.me.com"| Internet(("Internet"))
+    GW_INT -->|"HTTPS 443\nAllowlisted domains only"| Internet(("Internet"))
 
-    GW_INT -.->|"Blocked by default\n(private RFC1918)"| LAN(("LAN\n192.168.x.x\n10.x.x.x\n172.16.x.x"))
+    GW_INT -.->|"Blocked — RFC1918"| LAN(("LAN\n10.x / 172.16.x\n192.168.x"))
 
-    TS -->|"Encrypted tunnel\nWireGuard"| MARVIN["marvin\n100.90.175.83"]
-    TS -->|"Encrypted tunnel"| PI["raspberrypi\n100.107.248.66"]
-    TS -->|"Encrypted tunnel"| TRILLIAN["trillian\n100.94.68.61"]
+    TS -->|"WireGuard tunnel"| MARVIN["marvin\n100.90.175.83"]
+    TS -->|"WireGuard tunnel"| PI["raspberrypi\n100.107.248.66"]
+    TS -->|"WireGuard tunnel"| TRILLIAN["trillian\n100.94.68.61"]
 ```
 
 ---
@@ -104,14 +103,14 @@ graph LR
 
 ```mermaid
 graph TB
-    subgraph GitHub["GitHub (idallasj/agentshroud)"]
+    subgraph GitHub["GitHub  ·  idallasj/agentshroud"]
         REPO["Source code\nmain branch"]
-        CI["GitHub Actions CI\ntest + lint + security-scan"]
+        CI["GitHub Actions CI\ntest · lint · security-scan"]
         PR["Pull Requests\nfeat/* fix/* docs/*"]
     end
 
     subgraph MacOS["macOS Host"]
-        CLONE["Local clone\n/Development/agentshroud\n(main branch)"]
+        CLONE["Local clone\n~/Development/agentshroud"]
         WORKTREES["Git Worktrees\n../agentshroud-worktrees/<branch>"]
         DC["Docker Compose\ndocker/docker-compose.yml"]
 
@@ -124,12 +123,12 @@ graph TB
     DEV["Developer\n(Claude Code / Isaiah)"] -->|"git push"| PR
     PR -->|"squash merge"| REPO
     REPO -->|"triggers"| CI
-    CI -->|"pytest ≥90% coverage\nblack + isort + flake8\npip-audit"| CI
+    CI -->|"pytest ≥90%\nblack/isort/flake8\npip-audit"| CI
 
     REPO -->|"git pull"| CLONE
-    CLONE -->|"docker compose build\n+ up -d"| DC
+    CLONE -->|"docker compose build & up"| DC
     DC -->|"runs"| Running
 
-    DEV -->|"creates worktree\n../agentshroud-worktrees/<branch>"| WORKTREES
+    DEV -->|"creates worktree"| WORKTREES
     WORKTREES -->|"merges to main via PR"| REPO
 ```
