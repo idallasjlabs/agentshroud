@@ -50,13 +50,13 @@ C4Container
     Person(isaiah, "Isaiah Jefferson", "Owner / Operator")
 
     System_Boundary(agentshroud, "AgentShroud (Docker Compose — macOS host)") {
-        Container(gateway, "Gateway", "Python 3.11 / FastAPI", "REST API :8080\nHTTP CONNECT proxy :8181\nOp-proxy endpoint\nAudit ledger\nApproval queue\nPII sanitizer\nSSH proxy\nMCP inspector")
+        Container(gateway, "Gateway", "Python 3.11 / FastAPI", "REST :8080 · CONNECT :8181\nOp-proxy · PII sanitizer\nApproval queue · MCP inspector\nAudit ledger · SSH proxy")
 
-        Container(bot, "AgentShroud Bot", "Node.js 22 / OpenClaw", "Autonomous AI agent :18789\nTelegram channel\niMessage channel\nEmail channel (iCloud)\nCron scheduler\nBrowser control\nMCP server integration")
+        Container(bot, "AgentShroud Bot", "Node.js 22 / OpenClaw", "Autonomous AI agent :18789\nTelegram · iMessage · Email\n8 cron jobs · Browser control\nMCP server integration")
 
-        ContainerDb(ledger_db, "Ledger DB", "SQLite (aiosqlite)", "Audit trail — SHA-256 hashes only\n90-day retention\nData: ledger.db")
+        ContainerDb(ledger_db, "Ledger DB", "SQLite (aiosqlite)", "Audit trail — SHA-256 hashes only\n90-day retention · ledger.db")
 
-        ContainerDb(approval_db, "Approval DB", "SQLite (aiosqlite)", "Pending human-approval items\nData: approval_queue.db")
+        ContainerDb(approval_db, "Approval DB", "SQLite (aiosqlite)", "Pending human-approval items\napproval_queue.db")
     }
 
     System_Ext(openai, "OpenAI API", "api.openai.com")

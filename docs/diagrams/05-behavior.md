@@ -8,46 +8,46 @@
 
 ```mermaid
 flowchart TD
-    START(["User sends message\nor cron fires"])
+    START(["User Message\nor Cron Fire"])
 
-    RECV["Bot receives event\n(Telegram / iMessage / Web / Cron)"]
+    RECV["Bot Receives Event\n(Telegram / iMessage / Web / Cron)"]
 
-    ROUTE{"Route to agent?\n(bindings config)"}
-    MAIN["Main agent\n(agentshroud_bot)"]
+    ROUTE{"Route to Agent?\n(bindings config)"}
+    MAIN["Main Agent\n(agentshroud_bot)"]
 
-    LLM_CALL["LLM inference\n(OpenAI GPT-4o\nor Anthropic Claude)"]
+    LLM_CALL["LLM Inference\nGPT-4o / Claude"]
 
-    DECIDE{"Agent decides\nnext action"}
+    DECIDE{"Agent Decides\nNext Action"}
 
-    REPLY_ONLY["Send reply to user"]
+    REPLY_ONLY["Send Reply\nto User"]
 
-    TOOL_CALL["Issue tool call\n(MCP server)"]
+    TOOL_CALL["Issue Tool Call\n(MCP Server)"]
 
-    MCP_INSPECT["MCP Inspector\ninjection scan\nPII scan\nsensitive op scan"]
+    MCP_INSPECT["MCP Inspector\nInjection · PII · Sensitivity"]
 
-    THREAT{"Threat level?"}
-    NONE_LOW["NONE / LOW\nAllow + log"]
-    MEDIUM["MEDIUM\nAllow + audit flag"]
-    HIGH_THREAT["HIGH\nBlock + alert Isaiah"]
+    THREAT{"Threat Level?"}
+    NONE_LOW["NONE / LOW\nAllow + Log"]
+    MEDIUM["MEDIUM\nAllow + Audit Flag"]
+    HIGH_THREAT["HIGH\nBlock + Alert Isaiah"]
 
-    APPROVAL_CHECK{"Action type\nrequires approval?\n(email_sending\nfile_deletion\nexternal_api_calls\nskill_installation)"}
+    APPROVAL_CHECK{"Approval\nRequired?"}
 
-    QUEUE_ITEM["Add to approval queue\nNotify Isaiah via Telegram\nWait up to 1 hour"]
+    QUEUE_ITEM["Queue Item\nNotify Isaiah → Wait 1h"]
 
-    DECISION{"Isaiah decides"}
-    APPROVED["Approved\nExecute action"]
-    REJECTED["Rejected\nLog + notify bot"]
-    EXPIRED["Expired (1h timeout)\nAuto-reject"]
+    DECISION{"Isaiah Decides"}
+    APPROVED["Approved\nExecute Action"]
+    REJECTED["Rejected\nLog + Notify Bot"]
+    EXPIRED["Expired (1h)\nAuto-reject"]
 
-    EXECUTE["Execute action\nvia HTTP CONNECT proxy"]
+    EXECUTE["Execute via\nHTTP CONNECT Proxy"]
 
-    LEDGER["Write audit entry\nto ledger.db\n(SHA-256 hash only)"]
+    LEDGER["Write to ledger.db\n(SHA-256 only)"]
 
-    END(["Response delivered\nto user"])
+    END(["Response Delivered\nto User"])
 
     START --> RECV
     RECV --> ROUTE
-    ROUTE -->|"Telegram ID 8096968754 → main"| MAIN
+    ROUTE -->|"Peer 8096968754 → main"| MAIN
     MAIN --> LLM_CALL
     LLM_CALL --> DECIDE
 
@@ -65,8 +65,8 @@ flowchart TD
     MEDIUM --> APPROVAL_CHECK
     HIGH_THREAT --> LEDGER
 
-    APPROVAL_CHECK -->|"No approval needed"| EXECUTE
-    APPROVAL_CHECK -->|"Approval needed"| QUEUE_ITEM
+    APPROVAL_CHECK -->|"No"| EXECUTE
+    APPROVAL_CHECK -->|"Yes"| QUEUE_ITEM
 
     QUEUE_ITEM --> DECISION
     DECISION -->|"✅ Approved"| APPROVED
@@ -117,7 +117,7 @@ sequenceDiagram
     GW-->>Bot: {"result": ...}
 
     Bot->>GW: POST /ingest<br/>{"source": "telegram", "content": "reply text"}
-    Note over GW: HMAC auth check\nPII redaction (Presidio)\nRoute to agent
+    Note over GW: HMAC auth check<br/>PII redaction (Presidio)<br/>Route to agent
     GW->>Ledger: INSERT INTO ledger<br/>(SHA-256 hash only)
     GW-->>Bot: 200 OK
 
@@ -171,17 +171,16 @@ stateDiagram-v2
 
     active --> reset : Hard context overflow\n(>200K tokens,\nall recovery failed)
 
-    reset --> fresh : New session UUID created\nPrevious session archived\nin agents/main/sessions/
+    reset --> fresh : New session UUID created\nPrevious session archived
 
     active --> idle : No messages\n(health monitor active\n300s interval)
 
     idle --> active : New message received
 
     note right of compacting
-        openclaw auto-compaction
-        reserveTokensFloor = 4000
+        auto-compaction
+        reserveTokensFloor=4000
         triggers at ~196K tokens
-        leaving 4K buffer for summary
     end note
 
     note right of reset
