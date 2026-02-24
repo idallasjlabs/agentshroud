@@ -79,7 +79,11 @@ class MiddlewareManager:
             
         try:
             # FileSandbox requires a config
-            config = FileSandboxConfig()  # Use default config
+            config = FileSandboxConfig(
+                mode="enforce",
+                allowed_read_paths=["/app", "/tmp", "/proc/meminfo", "/proc/cpuinfo"],
+                allowed_write_paths=["/tmp", "/app/data", "/app/logs"],
+            )
             self.file_sandbox = FileSandbox(config)
             logger.info("FileSandbox initialized")
         except Exception as e:
