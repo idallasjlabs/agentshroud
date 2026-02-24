@@ -261,6 +261,84 @@ async def lifespan(app: FastAPI):
     )
     logger.info("Security pipeline initialized")
 
+    # P3 background/infrastructure security modules
+    try:
+        from ..security.alert_dispatcher import AlertDispatcher
+        app_state.alert_dispatcher = AlertDispatcher()
+        logger.info("AlertDispatcher initialized")
+    except Exception as e:
+        logger.warning(f"AlertDispatcher unavailable: {e}")
+
+    try:
+        from ..security.drift_detector import DriftDetector
+        app_state.drift_detector = DriftDetector()
+        logger.info("DriftDetector initialized")
+    except Exception as e:
+        logger.warning(f"DriftDetector unavailable: {e}")
+
+    try:
+        from ..security import health_report as _health_report_mod
+        app_state.health_report = _health_report_mod
+        logger.info("SecurityHealthReport module loaded")
+    except Exception as e:
+        logger.warning(f"SecurityHealthReport unavailable: {e}")
+
+    try:
+        from ..security.encrypted_store import EncryptedStore
+        app_state.encrypted_store = EncryptedStore()
+        logger.info("EncryptedStore initialized")
+    except Exception as e:
+        logger.warning(f"EncryptedStore unavailable: {e}")
+
+    try:
+        from ..security.key_vault import KeyVault, KeyVaultConfig
+        app_state.key_vault = KeyVault(KeyVaultConfig())
+        logger.info("KeyVault initialized")
+    except Exception as e:
+        logger.warning(f"KeyVault unavailable: {e}")
+
+    try:
+        from ..security.canary import run_canary
+        app_state.canary_runner = run_canary
+        logger.info("Canary checks registered")
+    except Exception as e:
+        logger.warning(f"Canary checks unavailable: {e}")
+
+    try:
+        from ..security import clamav_scanner as _clamav_mod
+        app_state.clamav_scanner = _clamav_mod
+        logger.info("ClamAV scanner module loaded")
+    except Exception as e:
+        logger.info(f"ClamAV scanner unavailable (optional): {e}")
+
+    try:
+        from ..security import trivy_report as _trivy_mod
+        app_state.trivy_scanner = _trivy_mod
+        logger.info("Trivy scanner module loaded")
+    except Exception as e:
+        logger.info(f"Trivy scanner unavailable (optional): {e}")
+
+    try:
+        from ..security import falco_monitor as _falco_mod
+        app_state.falco_monitor = _falco_mod
+        logger.info("Falco monitor module loaded")
+    except Exception as e:
+        logger.info(f"Falco monitor unavailable (optional): {e}")
+
+    try:
+        from ..security import wazuh_client as _wazuh_mod
+        app_state.wazuh_client = _wazuh_mod
+        logger.info("Wazuh client module loaded")
+    except Exception as e:
+        logger.info(f"Wazuh client unavailable (optional): {e}")
+
+    try:
+        from ..security.network_validator import NetworkValidator
+        app_state.network_validator = NetworkValidator()
+        logger.info("NetworkValidator initialized")
+    except Exception as e:
+        logger.info(f"NetworkValidator unavailable: {e}")
+
     # Initialize MCP proxy — load server registry from agentshroud.yaml mcp_proxy section
     mcp_proxy_config = (
         MCPProxyConfig.from_dict(app_state.config.mcp_proxy_data)
@@ -1653,3 +1731,55 @@ async def ssh_history(
         page_size=page_size,
         source="ssh",
     )
+
+
+@app.get("/manage/modules")
+async def list_security_modules(auth: AuthRequired):
+    """List all security modules and their status."""
+    modules = {}
+
+    # P0 — Pipeline Core
+    modules["pii_sanitizer"] = {"tier": "P0", "status": "active", "mode": getattr(app_state.sanitizer, 'mode', 'unknown')}
+    modules["approval_queue"] = {"tier": "P0", "status": "active" if app_state.approval_queue else "unavailable"}
+    modules["security_pipeline"] = {"tier": "P0", "status": "active" if app_state.pipeline else "unavailable"}
+
+    # P0 — Pipeline Guards
+    modules["prompt_guard"] = {"tier": "P0", "status": "active" if app_state.prompt_guard else "unavailable"}
+    modules["trust_manager"] = {"tier": "P0", "status": "active" if app_state.trust_manager else "unavailable"}
+    modules["egress_filter"] = {"tier": "P0", "status": "active" if app_state.egress_filter else "unavailable"}
+
+    # P1 — Middleware
+    mm = app_state.middleware_manager
+    if mm:
+        for name in ["context_guard", "metadata_guard", "log_sanitizer", "env_guard",
+                      "git_guard", "file_sandbox", "resource_guard",
+                      "session_manager", "token_validator", "consent_framework",
+                      "subagent_monitor", "agent_registry"]:
+            obj = getattr(mm, name, None)
+            modules[name] = {"tier": "P1", "status": "active" if obj else "unavailable"}
+
+    # P2 — Network
+    for name in ["dns_filter", "egress_monitor", "browser_security", "oauth_security", "network_validator"]:
+        obj = getattr(app_state, name, None)
+        status = "active" if obj else "loaded" if hasattr(app_state, name) else "unavailable"
+        modules[name] = {"tier": "P2", "status": status}
+
+    # P3 — Infrastructure & Background
+    for name in ["alert_dispatcher", "drift_detector", "health_report",
+                  "encrypted_store", "key_vault", "canary_runner",
+                  "clamav_scanner", "trivy_scanner", "falco_monitor", "wazuh_client"]:
+        obj = getattr(app_state, name, None)
+        status = "loaded" if obj else "unavailable"
+        modules[name] = {"tier": "P3", "status": status}
+
+    active = sum(1 for m in modules.values() if m["status"] == "active")
+    loaded = sum(1 for m in modules.values() if m["status"] == "loaded")
+    unavailable = sum(1 for m in modules.values() if m["status"] == "unavailable")
+
+    return {
+        "total": len(modules),
+        "active": active,
+        "loaded": loaded,
+        "unavailable": unavailable,
+        "modules": modules
+    }
