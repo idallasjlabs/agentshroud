@@ -51,7 +51,7 @@ services:
 
     # Resource limits
     mem_limit: 768m
-    memswap_limit: 512m
+    memswap_limit: 768m
     cpus: 1.0
     pids_limit: 100
 
