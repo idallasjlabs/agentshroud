@@ -35,17 +35,44 @@ class WebhookReceiver:
         self.pipeline = pipeline
         self.forwarder = forwarder
         
-        # Initialize session manager if not provided
+        # Initialize session manager if not provided and in production environment
         if session_manager is None:
-            base_workspace = Path("/home/node/.openclaw/workspace")
-            # TODO: Load owner_user_id from config
-            owner_user_id = "1234567890"  # This should come from config
-            self.session_manager = UserSessionManager(
-                base_workspace=base_workspace,
-                owner_user_id=owner_user_id
-            )
+            try:
+                base_workspace = Path("/home/node/.openclaw/workspace")
+                # Only initialize if the base path exists or can be created
+                if base_workspace.exists() or self._can_create_directory(base_workspace):
+                    # TODO: Load owner_user_id from config
+                    owner_user_id = "1234567890"  # This should come from config
+                    self.session_manager = UserSessionManager(
+                        base_workspace=base_workspace,
+                        owner_user_id=owner_user_id
+                    )
+                else:
+                    logger.warning("Cannot create workspace directory - session isolation disabled")
+                    self.session_manager = None
+            except Exception as e:
+                logger.warning(f"Failed to initialize session manager: {e} - session isolation disabled")
+                self.session_manager = None
         else:
             self.session_manager = session_manager
+            
+        self._stats = {
+            "webhooks_received": 0,
+            "webhooks_forwarded": 0,
+            "webhooks_blocked": 0,
+            "last_webhook_time": 0.0,
+        }
+
+    def _can_create_directory(self, path: Path) -> bool:
+        """Check if we can create the given directory path."""
+        try:
+            # Try creating a temporary test directory to check permissions
+            test_path = path.parent / ".test_mkdir"
+            test_path.mkdir(parents=True, exist_ok=True)
+            test_path.rmdir()
+            return True
+        except Exception:
+            return False
             
         self._stats = {
             "webhooks_received": 0,
@@ -69,20 +96,22 @@ class WebhookReceiver:
             return {"status": "skipped", "reason": "no message text in payload"}
 
         # Extract user ID from payload for session isolation
-        user_id = self._extract_user_id(payload, source)
-        if not user_id:
-            logger.warning(f"No user ID found in {source} payload")
-            user_id = "anonymous"
+        user_id = None
+        if self.session_manager:
+            user_id = self._extract_user_id(payload, source)
+            if not user_id:
+                logger.warning(f"No user ID found in {source} payload")
+                user_id = "anonymous"
 
-        logger.info(f"Processing message from user {user_id}")
+            logger.info(f"Processing message from user {user_id}")
 
-        # Store user message in conversation history
-        self.session_manager.add_conversation_message(
-            user_id=user_id,
-            role="user", 
-            content=message_text,
-            metadata={"source": source, "timestamp": time.time()}
-        )
+            # Store user message in conversation history
+            self.session_manager.add_conversation_message(
+                user_id=user_id,
+                role="user", 
+                content=message_text,
+                metadata={"source": source, "timestamp": time.time()}
+            )
 
         if self.pipeline:
             result = await self.pipeline.process_inbound(
@@ -112,10 +141,13 @@ class WebhookReceiver:
                     "message": "Action queued for approval",
                 }
 
-            # Prepare session-isolated payload
-            session_payload = self._prepare_session_payload(
-                payload, result.sanitized_message, user_id
-            )
+            # Prepare session-isolated payload if session manager is available
+            if self.session_manager and user_id:
+                session_payload = self._prepare_session_payload(
+                    payload, result.sanitized_message, user_id
+                )
+            else:
+                session_payload = self._replace_message(payload, result.sanitized_message)
 
             if self.forwarder:
                 forward_result = await self.forwarder.forward(
@@ -127,7 +159,7 @@ class WebhookReceiver:
                     self._stats["webhooks_forwarded"] += 1
 
                     # Store assistant response in conversation history
-                    if forward_result.body:
+                    if forward_result.body and self.session_manager and user_id:
                         self.session_manager.add_conversation_message(
                             user_id=user_id,
                             role="assistant",
