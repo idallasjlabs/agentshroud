@@ -264,11 +264,7 @@ async def lifespan(app: FastAPI):
     # P3 background/infrastructure security modules
     try:
         from ..security.alert_dispatcher import AlertDispatcher
-        app_state.alert_dispatcher = AlertDispatcher(
-            log_dir="/var/log/security",
-            dedup_window=300,
-            rate_limit_per_min=60
-        )
+        app_state.alert_dispatcher = AlertDispatcher()
         logger.info("AlertDispatcher initialized")
     except Exception as e:
         logger.warning(f"AlertDispatcher unavailable: {e}")
@@ -289,7 +285,8 @@ async def lifespan(app: FastAPI):
 
     try:
         from ..security.encrypted_store import EncryptedStore
-        app_state.encrypted_store = EncryptedStore()
+        _master = os.getenv("OPENCLAW_GATEWAY_PASSWORD", "")
+        app_state.encrypted_store = EncryptedStore(master_secret=_master) if _master else None
         logger.info("EncryptedStore initialized")
     except Exception as e:
         logger.warning(f"EncryptedStore unavailable: {e}")
