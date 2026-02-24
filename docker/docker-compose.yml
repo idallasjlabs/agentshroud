@@ -113,8 +113,8 @@ services:
       - OPENCLAW_GATEWAY_PASSWORD_FILE=/run/secrets/gateway_password
       - OPENAI_API_KEY_FILE=/run/secrets/openai_api_key
       # FINAL: Route all outbound internet through gateway HTTP CONNECT proxy
-      - HTTP_PROXY=http://gateway:8181
-      - HTTPS_PROXY=http://gateway:8181
+      # - HTTP_PROXY=http://gateway:8181  # DISABLED: enable in FINAL phase
+      # - HTTPS_PROXY=http://gateway:8181  # DISABLED: enable in FINAL phase
       # FINAL: Route 1Password credential lookups through gateway op-proxy endpoint
       - GATEWAY_OP_PROXY_URL=http://gateway:8080
       # Bot identity
