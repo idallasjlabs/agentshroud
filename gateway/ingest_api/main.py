@@ -1888,11 +1888,11 @@ async def list_security_modules(auth: AuthRequired):
 
 
 @app.post("/manage/scan/clamav")
-async def run_clamav_scan(auth: AuthRequired, target: str = "/home"):
+async def run_clamav_scan(auth: AuthRequired, target: str = "/app"):
     """Run ClamAV antivirus scan."""
     if not app_state.clamav_scanner:
         return {"error": "ClamAV scanner not available"}
-    result = app_state.clamav_scanner.run_clamscan(target=target, timeout=300)
+    result = app_state.clamav_scanner.run_clamscan(target=target, timeout=120)
     if app_state.alert_dispatcher and result.get("infected_count", 0) > 0:
         app_state.alert_dispatcher.dispatch(
             severity="CRITICAL",
@@ -1917,10 +1917,10 @@ async def run_canary_checks(auth: AuthRequired):
     """Run canary integrity checks."""
     if not app_state.canary_runner:
         return {"error": "Canary checks not available"}
-    pipeline = getattr(app_state, "security_pipeline", None)
+    pipeline = getattr(app_state, "pipeline", None)
     forwarder = getattr(app_state, "forwarder", None)
     result = await app_state.canary_runner(pipeline=pipeline, forwarder=forwarder)
-    return {"passed": result.passed, "checks": [{"name": c.name, "passed": c.passed, "details": c.details} for c in result.checks], "duration": result.duration}
+    return result.to_dict()
 
 
 @app.get("/manage/health")
