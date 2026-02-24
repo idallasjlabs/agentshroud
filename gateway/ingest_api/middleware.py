@@ -18,6 +18,11 @@ from gateway.security.env_guard import EnvironmentGuard
 from gateway.security.git_guard import GitGuard
 from gateway.security.file_sandbox import FileSandbox, FileSandboxConfig
 from gateway.security.resource_guard import ResourceGuard
+from gateway.security.session_security import SessionManager
+from gateway.security.token_validation import TokenValidator
+from gateway.security.consent_framework import ConsentFramework
+from gateway.security.subagent_monitor import SubagentMonitor, SubagentMonitorConfig
+from gateway.security.agent_isolation import AgentRegistry
 
 logger = logging.getLogger(__name__)
 
@@ -88,7 +93,46 @@ class MiddlewareManager:
             logger.error(f"Failed to initialize ResourceGuard: {e}")
             self.resource_guard = None
         
-        logger.info("MiddlewareManager initialized with P1 security modules")
+        # P2 request-path modules
+        try:
+            self.session_manager = SessionManager()
+            logger.info("SessionManager initialized")
+        except Exception as e:
+            logger.error(f"Failed to initialize SessionManager: {e}")
+            self.session_manager = None
+
+        try:
+            self.token_validator = TokenValidator(
+                expected_audience="agentshroud-gateway",
+                expected_issuer="agentshroud"
+            )
+            logger.info("TokenValidator initialized")
+        except Exception as e:
+            logger.error(f"Failed to initialize TokenValidator: {e}")
+            self.token_validator = None
+
+        try:
+            self.consent_framework = ConsentFramework()
+            logger.info("ConsentFramework initialized")
+        except Exception as e:
+            logger.error(f"Failed to initialize ConsentFramework: {e}")
+            self.consent_framework = None
+
+        try:
+            self.subagent_monitor = SubagentMonitor(SubagentMonitorConfig())
+            logger.info("SubagentMonitor initialized")
+        except Exception as e:
+            logger.error(f"Failed to initialize SubagentMonitor: {e}")
+            self.subagent_monitor = None
+
+        try:
+            self.agent_registry = AgentRegistry()
+            logger.info("AgentRegistry initialized")
+        except Exception as e:
+            logger.error(f"Failed to initialize AgentRegistry: {e}")
+            self.agent_registry = None
+
+        logger.info("MiddlewareManager initialized with all security modules")
     
     def process(self, request_data: Dict[str, Any], session_id: str = None) -> MiddlewareResult:
         """Process request through all middleware modules.
