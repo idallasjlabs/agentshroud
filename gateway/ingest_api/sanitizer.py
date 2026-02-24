@@ -140,7 +140,18 @@ class PIISanitizer:
             RuntimeError: If sanitization fails critically
         """
         if self.mode == "presidio" and self.analyzer and self.anonymizer:
-            return await self._sanitize_presidio(content)
+            # Hybrid: run Presidio first, then regex to catch gaps
+            # (en_core_web_sm misses SSN/phone; regex catches them)
+            presidio_result = await self._sanitize_presidio(content)
+            regex_result = await self._sanitize_regex(presidio_result.sanitized_content)
+            # Merge redactions from both passes
+            all_redactions = presidio_result.redactions + regex_result.redactions
+            all_types = list(set(presidio_result.entity_types_found + regex_result.entity_types_found))
+            return RedactionResult(
+                sanitized_content=regex_result.sanitized_content,
+                redactions=all_redactions,
+                entity_types_found=all_types,
+            )
         else:
             return await self._sanitize_regex(content)
 
