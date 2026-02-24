@@ -66,13 +66,9 @@ class TestPIIDetection:
 
     @pytest.mark.asyncio
     async def test_ssn_space_separated(self, sanitizer):
-        """SSN with spaces: 123 45 6789 — Presidio only."""
+        """SSN with spaces: 123 45 6789."""
         result = await sanitizer.sanitize("SSN: 123 45 6789")
-        try:
-            import presidio_analyzer
-            assert "123 45 6789" not in result.sanitized_content
-        except ImportError:
-            pass  # Regex fallback only catches dashed format
+        assert "123 45 6789" not in result.sanitized_content
 
     @pytest.mark.asyncio
     async def test_phone_us_standard(self, sanitizer):
@@ -114,13 +110,9 @@ class TestPIIDetection:
 
     @pytest.mark.asyncio
     async def test_credit_card_amex(self, sanitizer):
-        """Amex card: 378282246310005 — Presidio catches, regex may miss (15 digits)."""
+        """Amex card: 378282246310005 (15 digits starting with 37)."""
         result = await sanitizer.sanitize("Amex: 378282246310005")
-        try:
-            import presidio_analyzer
-            assert "378282246310005" not in result.sanitized_content
-        except ImportError:
-            pass  # 15-digit Amex not caught by 4x4 regex pattern
+        assert "378282246310005" not in result.sanitized_content
 
     @pytest.mark.asyncio
     async def test_multiple_pii_single_message(self, sanitizer):

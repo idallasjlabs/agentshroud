@@ -245,6 +245,13 @@ class PIISanitizer:
                     "<US_SSN>",
                 )
             )
+            patterns.append(
+                (
+                    "US_SSN",
+                    re.compile(r"\b\d{3}\s\d{2}\s\d{4}\b"),  # XXX XX XXXX
+                    "<US_SSN>",
+                )
+            )
 
         if "CREDIT_CARD" in entities:
             # Matches various credit card formats
@@ -254,6 +261,14 @@ class PIISanitizer:
                     re.compile(
                         r"\b(?:\d{4}[-\s]?){3}\d{4}\b"  # 4111-1111-1111-1111 or 4111 1111 1111 1111
                     ),
+                    "<CREDIT_CARD>",
+                )
+            )
+            # Amex: 15 digits starting with 34 or 37
+            patterns.append(
+                (
+                    "CREDIT_CARD",
+                    re.compile(r"\b3[47]\d{13}\b"),
                     "<CREDIT_CARD>",
                 )
             )
