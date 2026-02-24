@@ -99,8 +99,8 @@ class PIISanitizer:
                 import spacy
 
                 # Try to load the model
-                spacy.load("en_core_web_lg")
-                logger.info("spaCy model en_core_web_lg loaded successfully")
+                spacy.load("en_core_web_sm")
+                logger.info("spaCy model en_core_web_sm loaded successfully")
 
                 # Initialize Presidio engines
                 self.analyzer = AnalyzerEngine()
