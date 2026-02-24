@@ -287,7 +287,12 @@ async def lifespan(app: FastAPI):
 
     try:
         from ..security.encrypted_store import EncryptedStore
-        _master = os.getenv("OPENCLAW_GATEWAY_PASSWORD", "")
+        _master = os.getenv("OPENCLAW_GATEWAY_PASSWORD", "") or os.getenv("GATEWAY_AUTH_TOKEN", "")
+        if not _master:
+            try:
+                _master = open("/run/secrets/gateway_password").read().strip()
+            except OSError:
+                pass
         if _master:
             app_state.encrypted_store = EncryptedStore(master_secret=_master)
         else:
