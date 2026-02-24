@@ -7,6 +7,7 @@ services:
     container_name: agentshroud-gateway
     hostname: gateway
     restart: unless-stopped
+    stop_grace_period: 15s
 
     # Security: localhost-only binding
     ports:
@@ -76,6 +77,7 @@ services:
     container_name: agentshroud-bot
     hostname: agentshroud
     restart: unless-stopped
+    stop_grace_period: 15s
 
     # SECURITY: Port exposed to localhost only for UI access
     # Control UI accessible via: http://localhost:18790
