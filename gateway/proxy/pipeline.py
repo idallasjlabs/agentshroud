@@ -8,7 +8,7 @@ from __future__ import annotations
 Proxy Pipeline — all messages flow through security checks.
 
 Inbound: prompt guard → PII sanitizer → trust check → audit → forward
-Outbound: PII sanitizer → egress filter → audit → return
+Outbound: PII sanitizer → outbound info filter → egress filter → audit → return
 """
 
 
@@ -50,6 +50,10 @@ class PipelineResult:
     direction: str = "inbound"
     timestamp: float = 0.0
     processing_time_ms: float = 0.0
+    # New fields for outbound info filter
+    info_filter_redactions: list[str] = field(default_factory=list)
+    info_filter_redaction_count: int = 0
+    info_disclosure_risk: str = ""
 
     def to_dict(self) -> dict[str, Any]:
         return {
@@ -67,6 +71,9 @@ class PipelineResult:
             "queued_for_approval": self.queued_for_approval,
             "direction": self.direction,
             "processing_time_ms": self.processing_time_ms,
+            "info_filter_redactions": self.info_filter_redactions,
+            "info_filter_redaction_count": self.info_filter_redaction_count,
+            "info_disclosure_risk": self.info_disclosure_risk,
         }
 
 
@@ -146,7 +153,7 @@ class SecurityPipeline:
     """Main security pipeline that all messages pass through.
 
     Wires together: PromptGuard, PIISanitizer, TrustManager,
-    EgressFilter, ApprovalQueue, and AuditChain.
+    EgressFilter, ApprovalQueue, OutboundInfoFilter, and AuditChain.
     """
 
     def __init__(
@@ -156,6 +163,7 @@ class SecurityPipeline:
         trust_manager=None,
         egress_filter=None,
         approval_queue=None,
+        outbound_filter=None,
         prompt_block_threshold: float = 0.8,
         approval_actions: list[str] | None = None,
     ):
@@ -164,6 +172,7 @@ class SecurityPipeline:
         self.trust_manager = trust_manager
         self.egress_filter = egress_filter
         self.approval_queue = approval_queue
+        self.outbound_filter = outbound_filter
         self.prompt_block_threshold = prompt_block_threshold
         self.approval_actions = approval_actions or [
             "execute_command",
@@ -180,7 +189,9 @@ class SecurityPipeline:
             "outbound_total": 0,
             "outbound_sanitized": 0,
             "outbound_blocked": 0,
+            "outbound_info_filtered": 0,
             "pii_redactions_total": 0,
+            "info_redactions_total": 0,
         }
 
         # Fail-closed: raise immediately if a required guard is missing.
@@ -199,7 +210,7 @@ class SecurityPipeline:
         # Warn loudly about recommended guards that are absent.
         # These don't block startup but produce CRITICAL logs so operators
         # notice the degraded security posture immediately.
-        _RECOMMENDED_GUARDS = ("prompt_guard", "egress_filter")
+        _RECOMMENDED_GUARDS = ("prompt_guard", "egress_filter", "outbound_filter")
         for guard_name in _RECOMMENDED_GUARDS:
             if getattr(self, guard_name) is None:
                 logger.critical(
@@ -301,6 +312,8 @@ class SecurityPipeline:
         agent_id: str = "default",
         destination_urls: list[str] | None = None,
         metadata: dict[str, Any] | None = None,
+        user_trust_level: str = "UNTRUSTED",
+        source: str = "api",
     ) -> PipelineResult:
         """Process an outbound response through the security pipeline."""
         start = time.time()
@@ -330,6 +343,31 @@ class SecurityPipeline:
             if sanitize_result.redactions:
                 self._stats["outbound_sanitized"] += 1
                 self._stats["pii_redactions_total"] += len(sanitize_result.redactions)
+
+        # Step 1.5: Outbound Information Filter (NEW)
+        if self.outbound_filter:
+            filter_result = self.outbound_filter.filter_response(
+                response_text=result.sanitized_message,
+                user_trust_level=user_trust_level,
+                source=source
+            )
+            
+            result.sanitized_message = filter_result.filtered_text
+            result.info_filter_redactions = filter_result.categories_found
+            result.info_filter_redaction_count = filter_result.redaction_count
+            result.info_disclosure_risk = filter_result.risk_level
+            
+            if filter_result.matches:
+                self._stats["outbound_info_filtered"] += 1
+                self._stats["info_redactions_total"] += filter_result.redaction_count
+                
+                # Log high-risk responses for additional review
+                if filter_result.risk_level == "high":
+                    logger.warning(
+                        f"High-density information disclosure blocked: "
+                        f"{len(filter_result.matches)} matches, categories={filter_result.categories_found}, "
+                        f"trust={user_trust_level}, source={source}"
+                    )
 
         # Step 2: Egress filter
         if self.egress_filter and destination_urls:
