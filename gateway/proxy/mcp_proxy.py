@@ -26,6 +26,8 @@ from .mcp_audit import MCPAuditTrail
 from .mcp_config import MCPProxyConfig, MCPServerConfig, MCPTransport
 from .mcp_inspector import MCPInspector
 from .mcp_permissions import MCPPermissionManager
+from ..approval_queue.enhanced_queue import EnhancedApprovalQueue
+from ..approval_queue.enhanced_queue import EnhancedApprovalQueue
 
 logger = logging.getLogger("agentshroud.proxy.mcp_proxy")
 
@@ -231,6 +233,7 @@ class MCPProxy:
         inspector: Optional[MCPInspector] = None,
         audit_trail: Optional[MCPAuditTrail] = None,
         passthrough: bool = False,
+        approval_queue: Optional[EnhancedApprovalQueue] = None,
     ):
         self.config = config or MCPProxyConfig()
         self.permissions = permission_manager or MCPPermissionManager(self.config)
@@ -238,6 +241,7 @@ class MCPProxy:
         self.audit = audit_trail or MCPAuditTrail()
         self.pool = ConnectionPool()
         self.passthrough = passthrough  # Bypass mode for debugging
+        self.approval_queue = approval_queue
         self._stats = {
             "total_calls": 0,
             "allowed": 0,
@@ -297,6 +301,28 @@ class MCPProxy:
                 )
             return result
 
+
+        # === APPROVAL CHECK ===
+        approved, denial_reason = await self.check_approval_required(tool_call)
+        if not approved:
+            self._stats["blocked"] += 1
+            entry = self.audit.log_tool_call(
+                agent_id=tool_call.agent_id,
+                server_name=tool_call.server_name,
+                tool_name=tool_call.tool_name,
+                parameters=tool_call.parameters,
+                blocked=True,
+                block_reason=denial_reason,
+                call_id=tool_call.id,
+            )
+            return ProxyResult(
+                allowed=False,
+                blocked=True,
+                block_reason=denial_reason,
+                call_id=tool_call.id,
+                audit_entry_id=entry.id,
+                processing_time_ms=(time.time() - start) * 1000,
+            )
         # === Security Pipeline ===
 
         # 1. Permission check
@@ -578,3 +604,52 @@ class MCPProxy:
     async def shutdown(self) -> None:
         """Clean shutdown — close all connections."""
         await self.pool.stop_all()
+
+    async def check_approval_required(
+        self, 
+        tool_call: MCPToolCall
+    ) -> tuple[bool, Optional[str]]:
+        """Check if a tool call requires approval and wait for it if needed.
+        
+        Returns:
+            (approved, reason) - If approved is False, reason contains the error message
+        """
+        if not self.approval_queue:
+            return True, None  # No approval queue configured, allow by default
+            
+        # Check if tool requires approval
+        request_id, requires_wait = await self.approval_queue.submit_tool_request(
+            tool_call.tool_name,
+            tool_call.parameters,
+            tool_call.agent_id
+        )
+        
+        if not requires_wait:
+            return True, None  # Tool doesnt require approval
+    async def check_approval_required(self, tool_call):
+        """Check if a tool call requires approval and wait for it if needed."""
+        if not self.approval_queue:
+            return True, None  # No approval queue configured, allow by default
+            
+        # Check if tool requires approval
+        request_id, requires_wait = await self.approval_queue.submit_tool_request(
+            tool_call.tool_name,
+            tool_call.parameters,
+            tool_call.agent_id
+        )
+        
+        if not requires_wait:
+            return True, None  # Tool doesn't require approval
+            
+        logger.info(f"Tool {tool_call.tool_name} requires approval, waiting for decision (request_id: {request_id})")
+        
+        # Wait for approval decision
+        approved = await self.approval_queue.wait_for_decision(request_id)
+        
+        if not approved:
+            item = await self.approval_queue.get_item(request_id)
+            status = item.status if item else "denied"
+            reason = f"Tool call '{tool_call.tool_name}' requires human approval and was {status}. The operator has been notified. Do not attempt to work around this restriction."
+            return False, reason
+            
+        return True, None

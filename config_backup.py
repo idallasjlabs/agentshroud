@@ -109,82 +109,6 @@ class ChannelsConfig(BaseModel):
     imessage_require_approval_for_new: bool = True
 
 
-
-class ToolRiskPolicy(BaseModel):
-    """Risk policy configuration for a tool tier"""
-    require_approval: bool = False
-    timeout_seconds: int = 300  # 5 minutes default
-    timeout_action: str = "deny"  # deny or allow
-    notify_channels: list[str] = Field(default_factory=lambda: ["websocket"])
-    owner_bypass: bool = False
-
-
-class ToolRiskConfig(BaseModel):
-    """Tool risk tier configuration"""
-    
-    critical: ToolRiskPolicy = Field(default_factory=lambda: ToolRiskPolicy(
-        require_approval=True,
-        timeout_seconds=300,
-        timeout_action="deny",
-        notify_channels=["websocket", "telegram_admin"],
-        owner_bypass=False
-    ))
-    
-    high: ToolRiskPolicy = Field(default_factory=lambda: ToolRiskPolicy(
-        require_approval=True, 
-        timeout_seconds=300,
-        timeout_action="deny",
-        notify_channels=["websocket"],
-        owner_bypass=True
-    ))
-    
-    medium: ToolRiskPolicy = Field(default_factory=lambda: ToolRiskPolicy(
-        require_approval=False,
-        timeout_seconds=300,
-        timeout_action="deny",
-        notify_channels=["websocket"],
-        owner_bypass=True
-    ))
-    
-    low: ToolRiskPolicy = Field(default_factory=lambda: ToolRiskPolicy(
-        require_approval=False,
-        timeout_seconds=300,
-        timeout_action="deny",
-        notify_channels=["websocket"],
-        owner_bypass=True
-    ))
-    
-    # Tool classifications
-    tool_classifications: dict[str, str] = Field(default_factory=lambda: {
-        # Critical: irreversible external impact
-        "exec": "critical",
-        "cron": "critical", 
-        "sessions_send": "critical",
-        
-        # High: sensitive resource access
-        "nodes": "high",
-        "browser": "high",
-        "apply_patch": "high", 
-        "subagents": "high",
-        
-        # Medium: read potentially sensitive data
-        "grep": "medium",
-        "find": "medium",
-        "sessions_list": "medium",
-        "sessions_history": "medium", 
-        "session_status": "medium",
-        
-        # Low: safe read-only operations
-        "ls": "low",
-        "canvas": "low", 
-        "process": "low",
-    })
-    
-    # Global enforcement settings
-    enforce_mode: bool = True
-    monitor_only_mode: bool = False
-    owner_user_id: str = ""  # Telegram user ID for owner bypass
-
 class GatewayConfig(BaseModel):
     """Complete gateway configuration"""
 
@@ -380,10 +304,6 @@ def load_config(config_path: Optional[Path] = None) -> GatewayConfig:
     # MCP proxy config (raw dict — converted to MCPProxyConfig in main.py at startup)
     mcp_proxy_data = raw_config.get("mcp_proxy", {})
 
-    # Tool risk tier config
-    tool_risk_section = raw_config.get("tool_risk", {})
-    tool_risk_config = ToolRiskConfig(**tool_risk_section) if tool_risk_section else ToolRiskConfig()
-
     config = GatewayConfig(
         bind=gateway.get("bind", "127.0.0.1"),
         port=gateway.get("port", 8080),
@@ -398,7 +318,6 @@ def load_config(config_path: Optional[Path] = None) -> GatewayConfig:
         ssh=ssh_config,
         proxy_allowed_domains=proxy_allowed_domains,
         mcp_proxy_data=mcp_proxy_data,
-        tool_risk=tool_risk_config,
     )
 
     logger.info(
@@ -411,3 +330,77 @@ def load_config(config_path: Optional[Path] = None) -> GatewayConfig:
     return config
 
 
+class ToolRiskPolicy(BaseModel):
+    """Risk policy configuration for a tool tier"""
+    require_approval: bool = False
+    timeout_seconds: int = 300  # 5 minutes default
+    timeout_action: str = "deny"  # deny or allow
+    notify_channels: list[str] = Field(default_factory=lambda: ["websocket"])
+    owner_bypass: bool = False
+
+
+class ToolRiskConfig(BaseModel):
+    """Tool risk tier configuration"""
+    
+    critical: ToolRiskPolicy = Field(default_factory=lambda: ToolRiskPolicy(
+        require_approval=True,
+        timeout_seconds=300,
+        timeout_action="deny",
+        notify_channels=["websocket", "telegram_admin"],
+        owner_bypass=False
+    ))
+    
+    high: ToolRiskPolicy = Field(default_factory=lambda: ToolRiskPolicy(
+        require_approval=True, 
+        timeout_seconds=300,
+        timeout_action="deny",
+        notify_channels=["websocket"],
+        owner_bypass=True
+    ))
+    
+    medium: ToolRiskPolicy = Field(default_factory=lambda: ToolRiskPolicy(
+        require_approval=False,
+        timeout_seconds=300,
+        timeout_action="deny",
+        notify_channels=["websocket"],
+        owner_bypass=True
+    ))
+    
+    low: ToolRiskPolicy = Field(default_factory=lambda: ToolRiskPolicy(
+        require_approval=False,
+        timeout_seconds=300,
+        timeout_action="deny",
+        notify_channels=["websocket"],
+        owner_bypass=True
+    ))
+    
+    # Tool classifications
+    tool_classifications: dict[str, str] = Field(default_factory=lambda: {
+        # Critical: irreversible external impact
+        "exec": "critical",
+        "cron": "critical", 
+        "sessions_send": "critical",
+        
+        # High: sensitive resource access
+        "nodes": "high",
+        "browser": "high",
+        "apply_patch": "high", 
+        "subagents": "high",
+        
+        # Medium: read potentially sensitive data
+        "grep": "medium",
+        "find": "medium",
+        "sessions_list": "medium",
+        "sessions_history": "medium", 
+        "session_status": "medium",
+        
+        # Low: safe read-only operations
+        "ls": "low",
+        "canvas": "low", 
+        "process": "low",
+    })
+    
+    # Global enforcement settings
+    enforce_mode: bool = True
+    monitor_only_mode: bool = False
+    owner_user_id: str = ""  # Telegram user ID for owner bypass
