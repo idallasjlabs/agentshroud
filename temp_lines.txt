@@ -1,4 +1,0 @@
-
-# TEMP: Tool risk config parsing
-tool_risk_section = raw_config.get("tool_risk", {})
-tool_risk_config = ToolRiskConfig(**tool_risk_section) if tool_risk_section else ToolRiskConfig()
