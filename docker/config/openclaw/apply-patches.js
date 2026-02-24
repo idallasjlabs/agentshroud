@@ -123,6 +123,43 @@ if ((config.agents.defaults.compaction.reserveTokensFloor || 0) < RESERVE_FLOOR)
   changed = true;
 }
 
+
+// ── Patch 5: plugins.entries.telegram — ensure Telegram plugin is enabled ────
+// Without this, OpenClaw starts the gateway but never initialises the Telegram
+// provider, so the bot appears online (startup notification fires via curl) but
+// never receives or processes incoming messages.
+
+config.plugins = config.plugins || {};
+config.plugins.entries = config.plugins.entries || {};
+config.plugins.entries.telegram = config.plugins.entries.telegram || {};
+
+if (!config.plugins.entries.telegram.enabled) {
+  config.plugins.entries.telegram.enabled = true;
+  console.log('[init-patch] Enabled Telegram plugin (plugins.entries.telegram.enabled = true)');
+  changed = true;
+}
+
+// ── Patch 6: gateway.auth.token — read from OPENCLAW_GATEWAY_PASSWORD env ────
+// The gateway requires auth for websocket connections. Without gateway.auth.token
+// in the config, the CLI can't connect to its own gateway (password_missing).
+
+const gwPassword = process.env.OPENCLAW_GATEWAY_PASSWORD;
+if (gwPassword) {
+  config.gateway = config.gateway || {};
+  config.gateway.auth = config.gateway.auth || {};
+  if (config.gateway.auth.token !== gwPassword) {
+    config.gateway.auth.token = gwPassword;
+    console.log('[init-patch] Set gateway.auth.token from OPENCLAW_GATEWAY_PASSWORD');
+    changed = true;
+  }
+  config.gateway.remote = config.gateway.remote || {};
+  if (config.gateway.remote.password !== gwPassword) {
+    config.gateway.remote.password = gwPassword;
+    console.log('[init-patch] Set gateway.remote.password from OPENCLAW_GATEWAY_PASSWORD');
+    changed = true;
+  }
+}
+
 // ── Write back ────────────────────────────────────────────────────────────────
 
 if (changed || isNew) {
