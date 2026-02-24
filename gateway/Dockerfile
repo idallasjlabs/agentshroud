@@ -32,7 +32,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 RUN apt-get update && apt-get install -y --no-install-recommends \
     clamav clamav-daemon clamav-freshclam \
     && rm -rf /var/lib/apt/lists/* \
-    && mkdir -p /var/lib/clamav
+    && mkdir -p /var/lib/clamav \n    && freshclam --quiet 2>/dev/null || echo "freshclam: virus DB download deferred to runtime"
 
 # Install 1Password CLI for op-proxy credential broker
 RUN apt-get update && apt-get install -y --no-install-recommends curl ca-certificates gpg \

@@ -1908,7 +1908,7 @@ async def run_trivy_scan(auth: AuthRequired, target: str = "fs"):
     """Run Trivy vulnerability scan."""
     if not app_state.trivy_scanner:
         return {"error": "Trivy scanner not available"}
-    result = app_state.trivy_scanner.run_trivy(scan_type=target, timeout=300)
+    result = app_state.trivy_scanner.run_trivy_scan(scan_type=target, timeout=300)
     return result
 
 
@@ -1917,9 +1917,10 @@ async def run_canary_checks(auth: AuthRequired):
     """Run canary integrity checks."""
     if not app_state.canary_runner:
         return {"error": "Canary checks not available"}
-    targets = getattr(app_state, "canary_targets", [])
-    result = app_state.canary_runner(targets)
-    return result
+    pipeline = getattr(app_state, "security_pipeline", None)
+    forwarder = getattr(app_state, "forwarder", None)
+    result = await app_state.canary_runner(pipeline=pipeline, forwarder=forwarder)
+    return {"passed": result.passed, "checks": [{"name": c.name, "passed": c.passed, "details": c.details} for c in result.checks], "duration": result.duration}
 
 
 @app.get("/manage/health")
