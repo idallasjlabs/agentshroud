@@ -1889,10 +1889,13 @@ async def list_security_modules(auth: AuthRequired):
 
 @app.post("/manage/scan/clamav")
 async def run_clamav_scan(auth: AuthRequired, target: str = "/app"):
-    """Run ClamAV antivirus scan."""
+    """Run ClamAV antivirus scan. Tries clamdscan (daemon) first, falls back to clamscan."""
     if not app_state.clamav_scanner:
         return {"error": "ClamAV scanner not available"}
-    result = app_state.clamav_scanner.run_clamscan(target=target, timeout=120)
+    import shutil as _sh
+    # Prefer clamdscan (daemon mode, shared memory) over clamscan (loads full DB per invocation)
+    _bin = "clamdscan" if _sh.which("clamdscan") else "clamscan"
+    result = app_state.clamav_scanner.run_clamscan(target=target, timeout=120, clamscan_bin=_bin)
     if app_state.alert_dispatcher and result.get("infected_count", 0) > 0:
         app_state.alert_dispatcher.dispatch(
             severity="CRITICAL",
