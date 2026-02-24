@@ -9,15 +9,15 @@
 ```mermaid
 graph TB
     subgraph TB0["Trust Zone 0 — Owner (Highest Trust)"]
-        ISAIAH["Isaiah Jefferson\nFull control:\n- Approve/reject actions\n- Gateway admin\n- Container restart\n- Secret rotation"]
+        ISAIAH["Isaiah Jefferson\nApprove actions · Gateway admin\nSecret rotation · Full control"]
     end
 
     subgraph TB1["Trust Zone 1 — Gateway (Trusted Enforcer)"]
-        GW["AgentShroud Gateway\n- Holds 1Password service account\n- Enforces all security policy\n- Signs all ledger entries\n- Controls approval queue\n- HMAC/JWT token validation"]
+        GW["AgentShroud Gateway\nHolds 1Password credentials\nEnforces all security policy"]
     end
 
     subgraph TB2["Trust Zone 2 — Bot (Supervised Agent)"]
-        BOT["AgentShroud Bot\n- No direct credential access\n- No direct internet access\n- All secrets via op-proxy\n- All outbound via HTTP CONNECT proxy\n- All MCP calls via MCP inspector"]
+        BOT["AgentShroud Bot\nNo direct credentials or internet\nAll access via gateway"]
     end
 
     subgraph TB3["Trust Zone 3 — External Services (Conditional)"]
@@ -29,13 +29,13 @@ graph TB
     end
 
     subgraph TB4["Trust Zone 4 — Infrastructure Nodes (SSH-gated)"]
-        PI["raspberrypi\nSSH: approved host\nUser: agentshroud-bot\nKey: id_ed25519"]
+        PI["raspberrypi\nSSH: approved host\nagentshroud-bot user"]
         MARVIN["marvin\nSSH: approved host"]
         TRILLIAN["trillian\nSSH: approved host"]
     end
 
     subgraph DENIED["Blocked / Untrusted"]
-        LAN["LAN (RFC1918)\n10.x / 172.16.x / 192.168.x\nBlocked by gateway\nbot cannot reach host LAN"]
+        LAN["LAN (RFC1918)\n10.x / 172.16.x / 192.168.x\nBlocked by gateway"]
         UNLISTED["Unlisted domains\nBlocked by default-deny\nHTTP CONNECT proxy"]
     end
 
@@ -60,25 +60,24 @@ sequenceDiagram
     participant BOT as Bot Container<br/>(no service account)
     participant ENV as Bot Environment
 
-    Note over GW: OP_SERVICE_ACCOUNT_TOKEN<br/>loaded from Docker secret<br/>/run/secrets/1password_service_account
+    Note over GW: Service account token<br/>loaded from Docker secret
 
-    Note over BOT: Starts with ZERO 1Password access.<br/>Uses op-proxy endpoint on gateway.
+    Note over BOT: No direct 1Password access<br/>All secrets via op-proxy
 
-    BOT->>GW: POST /credentials/op-proxy<br/>{"reference": "op://AgentShroud Bot Credentials/..."}
-    Note over GW: Validates GATEWAY_AUTH_TOKEN<br/>Checks allowed_op_paths pattern<br/>"op://AgentShroud Bot Credentials/*"
+    BOT->>GW: POST /credentials/op-proxy<br/>{reference: "op://..."}
+    Note over GW: Validates auth token<br/>Checks allowed_op_paths
     GW->>OP: op read "op://..." (service account)
     OP-->>GW: Secret value
     GW-->>BOT: {"value": "<secret>"}
 
-    Note over BOT: op_proxy_read_with_retry()<br/>Cascading retries: 5s,10s,15s,30s,60s
+    Note over BOT: op_proxy_read_with_retry()<br/>Cascading retries: 5s→10s→30s→60s
 
     BOT->>ENV: export ANTHROPIC_OAUTH_TOKEN
     BOT->>ENV: export BRAVE_API_KEY
     BOT->>ENV: export ICLOUD_APP_PASSWORD
     BOT->>ENV: export ICLOUD_USERNAME
-    BOT->>ENV: export ICLOUD_EMAIL
 
-    Note over ENV: Secrets live only in container<br/>memory as env vars.<br/>Never written to disk.<br/>Never logged.
+    Note over ENV: Env vars only\nNever written to disk\nNever logged
 ```
 
 ---
@@ -87,21 +86,21 @@ sequenceDiagram
 
 ```mermaid
 flowchart TD
-    BOT_REQ["Bot makes outbound request\n(any HTTPS connection)"]
+    BOT_REQ["Bot makes outbound request"]
 
     CHECK1{"HTTP_PROXY set?\nhttp://gateway:8181"}
-    DIRECT["Direct connection\n(would bypass all controls)\nNOT CONFIGURED"]
-    CONNECT["HTTP CONNECT tunnel\nrequest to gateway:8181"]
+    DIRECT["Direct connection\n(bypasses all controls)\nNOT CONFIGURED"]
+    CONNECT["HTTP CONNECT tunnel\nto gateway:8181"]
 
-    CHECK2{"Domain allowlisted?\n(agentshroud.yaml\nproxy.allowed_domains)"}
+    CHECK2{"Domain allowlisted?\n(agentshroud.yaml)"}
 
-    ALLOWED["Allowlisted domains:\napi.openai.com\napi.anthropic.com\napi.telegram.org\noauth2.googleapis.com\nwww.googleapis.com\n*.github.com\n*.githubusercontent.com\nimap.mail.me.com\nsmtp.mail.me.com"]
+    ALLOWED["Allowlisted Domains\nOpenAI · Anthropic · Telegram\nGitHub · iCloud · googleapis"]
 
-    BLOCKED["Blocked (403 Forbidden)\nAll other domains\nAll RFC1918 addresses\n(10.x / 172.16.x / 192.168.x)"]
+    BLOCKED["Blocked (403)\nAll unlisted domains\nAll RFC1918 addresses"]
 
     TCP["TCP tunnel established\nGateway relays traffic"]
 
-    LOG["Connection logged:\n- timestamp\n- target domain\n- allowed/blocked\n- connection count"]
+    LOG["Connection logged\ntimestamp · domain\nallowed / blocked"]
 
     BOT_REQ --> CHECK1
     CHECK1 -->|"Yes (production)"| CONNECT
