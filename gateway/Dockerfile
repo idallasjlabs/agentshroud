@@ -87,7 +87,7 @@ RUN chmod +x /usr/local/bin/security-*.sh
 RUN mkdir -p /var/log/security && chown agentshroud:agentshroud /var/log/security
 
 # Download spaCy NLP model for PII detection (560MB, cached in Docker layer)
-RUN python3 -m spacy download en_core_web_lg || echo "spaCy model download failed — will use regex fallback"
+RUN python3 -m spacy download en_core_web_sm || echo "spaCy model download failed — will use regex fallback"
 
 # Switch to non-root user
 USER agentshroud
