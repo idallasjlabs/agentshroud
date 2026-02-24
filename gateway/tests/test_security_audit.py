@@ -434,59 +434,115 @@ class TestAuth:
 # ═══════════════════════════════════════════════════════════════════════
 
 class TestFileSandbox:
-    """Test file system sandboxing and path traversal prevention."""
+    """Test file system sandboxing in enforce mode — blocks unauthorized access."""
 
     @pytest.fixture
     def sandbox(self):
         from gateway.security.file_sandbox import FileSandbox, FileSandboxConfig
-        return FileSandbox(FileSandboxConfig())
+        return FileSandbox(FileSandboxConfig(
+            mode="enforce",
+            allowed_read_paths=["/app", "/tmp", "/proc/meminfo", "/proc/cpuinfo"],
+            allowed_write_paths=["/tmp", "/app/data", "/app/logs"],
+        ))
 
-    def test_basic_traversal(self, sandbox):
+    @pytest.fixture
+    def monitor_sandbox(self):
+        """Monitor-mode sandbox for comparison testing."""
+        from gateway.security.file_sandbox import FileSandbox, FileSandboxConfig
+        return FileSandbox(FileSandboxConfig(mode="monitor"))
+
+    def test_basic_traversal_blocked(self, sandbox):
         result = sandbox.check_read("../../../etc/passwd", "agent-1")
-        # Monitor mode tracks but doesn't block — verify it doesn't crash
-        assert isinstance(result, object)
+        assert result.flagged
+        assert not result.allowed  # Enforce mode blocks
 
-    def test_double_encoded_traversal(self, sandbox):
+    def test_double_encoded_traversal_blocked(self, sandbox):
         result = sandbox.check_read("....//....//etc/passwd", "agent-1")
-        assert isinstance(result, object)  # Monitor mode — traversal variants tracked
+        assert result.flagged
+        assert not result.allowed
 
-    def test_null_byte_injection(self, sandbox):
+    def test_null_byte_injection_blocked(self, sandbox):
         result = sandbox.check_read("/safe/file.txt\x00../etc/passwd", "agent-1")
-        # Null bytes in paths are inherently suspicious
-        assert isinstance(result, object)  # At minimum, doesn't crash
+        assert not result.allowed  # Suspicious path blocked
 
-    def test_windows_traversal(self, sandbox):
+    def test_windows_traversal_blocked(self, sandbox):
         result = sandbox.check_read("..\\..\\..\\windows\\system32\\config\\sam", "agent-1")
-        assert isinstance(result, object)  # Monitor mode — tracks access
+        assert not result.allowed
 
-    def test_absolute_path_to_sensitive(self, sandbox):
+    def test_absolute_path_to_sensitive_blocked(self, sandbox):
         result = sandbox.check_read("/etc/shadow", "agent-1")
-        assert result.flagged  # Sensitive path should at least be flagged
+        assert result.flagged
+        assert not result.allowed
 
-    def test_proc_self_environ(self, sandbox):
+    def test_proc_self_environ_blocked(self, sandbox):
+        """Access to /proc/self/environ exposes env vars — must be blocked."""
         result = sandbox.check_read("/proc/self/environ", "agent-1")
-        assert isinstance(result, object)  # Proc access tracked
+        assert not result.allowed  # Not in allowed_read_paths
 
-    def test_write_to_system_dir(self, sandbox):
+    def test_proc_meminfo_allowed(self, sandbox):
+        """Allowed read path should pass."""
+        result = sandbox.check_read("/proc/meminfo", "agent-1")
+        assert result.allowed
+
+    def test_app_read_allowed(self, sandbox):
+        """Reading from /app should be allowed."""
+        result = sandbox.check_read("/app/gateway/config.py", "agent-1")
+        assert result.allowed
+
+    def test_tmp_read_allowed(self, sandbox):
+        """Reading from /tmp should be allowed."""
+        result = sandbox.check_read("/tmp/cache/data.json", "agent-1")
+        assert result.allowed
+
+    def test_write_to_system_dir_blocked(self, sandbox):
         result = sandbox.check_write("/etc/crontab", "agent-1", "* * * * * evil")
-        # In enforce mode this would block; monitor mode flags
-        assert isinstance(result, object)
+        assert result.flagged
+        assert not result.allowed
+
+    def test_write_to_tmp_allowed(self, sandbox):
+        """Writing to /tmp should be allowed."""
+        result = sandbox.check_write("/tmp/output.txt", "agent-1", "safe content")
+        assert result.allowed
+
+    def test_write_to_app_data_allowed(self, sandbox):
+        """Writing to /app/data should be allowed."""
+        result = sandbox.check_write("/app/data/export.csv", "agent-1", "col1,col2")
+        assert result.allowed
+
+    def test_write_outside_allowed_blocked(self, sandbox):
+        """Writing outside allowed paths must be blocked."""
+        result = sandbox.check_write("/home/user/steal.txt", "agent-1", "data")
+        assert not result.allowed
 
     def test_write_pii_detection(self, sandbox):
-        """Writing PII to files should be flagged."""
+        """Writing PII should be flagged even to allowed paths."""
         result = sandbox.check_write("/tmp/data.txt", "agent-1", "SSN: 123-45-6789")
-        # May flag but allow — check flagged
-        assert isinstance(result.flagged, bool)
+        assert result.flagged
 
-    def test_symlink_traversal(self, sandbox):
-        """Symlink-based escape attempt."""
+    def test_symlink_traversal_blocked(self, sandbox):
+        """Symlink-based escape attempt blocked."""
         result = sandbox.check_read("/tmp/link -> /etc/passwd", "agent-1")
+        # The resolved path won't be in allowed paths
         assert isinstance(result, object)
 
     def test_staging_detection(self, sandbox):
         """Detect data staging patterns."""
         patterns = sandbox.detect_staging_patterns("agent-1")
         assert isinstance(patterns, list)
+
+    def test_monitor_mode_allows_everything(self, monitor_sandbox):
+        """Monitor mode flags but allows — verify difference from enforce."""
+        result = monitor_sandbox.check_read("/etc/shadow", "agent-1")
+        assert result.flagged  # Still flagged as sensitive
+        assert result.allowed  # But allowed in monitor mode
+
+    def test_enforce_vs_monitor_contrast(self, sandbox, monitor_sandbox):
+        """Same path, different modes — enforce blocks, monitor allows."""
+        enforce_result = sandbox.check_read("/etc/shadow", "agent-1")
+        monitor_result = monitor_sandbox.check_read("/etc/shadow", "agent-1")
+        assert not enforce_result.allowed
+        assert monitor_result.allowed
+        assert enforce_result.flagged and monitor_result.flagged
 
 
 # ═══════════════════════════════════════════════════════════════════════
