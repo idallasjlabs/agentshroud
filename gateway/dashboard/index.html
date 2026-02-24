@@ -343,6 +343,28 @@ body{
 }
 .btn-reject:hover{background:var(--red);color:#fff;border-color:var(--red)}
 
+
+/* ── Security Modules ────────────────────────────────────────────────── */
+.modules-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(180px,1fr));gap:8px;padding:12px}
+.module-card{background:var(--surface-2);border:1px solid var(--border);border-radius:var(--radius-sm);padding:10px 12px;display:flex;flex-direction:column;gap:4px}
+.module-card.active{border-left:3px solid var(--green)}
+.module-card.loaded{border-left:3px solid var(--yellow)}
+.module-card.unavailable{border-left:3px solid var(--red);opacity:0.6}
+.module-name{font-family:var(--mono);font-size:12px;color:var(--text);font-weight:600}
+.module-meta{display:flex;justify-content:space-between;align-items:center}
+.module-tier{font-size:10px;padding:2px 6px;border-radius:3px;font-weight:600;font-family:var(--mono)}
+.module-tier.p0{background:var(--red-dim);color:var(--red)}
+.module-tier.p1{background:var(--yellow-dim);color:var(--yellow)}
+.module-tier.p2{background:var(--brand-dim);color:var(--brand)}
+.module-tier.p3{background:var(--purple-dim);color:var(--purple)}
+.module-status{font-size:10px;color:var(--text-2)}
+.module-status .dot{display:inline-block;width:6px;height:6px;border-radius:50%;margin-right:4px}
+.module-status .dot.active{background:var(--green)}
+.module-status .dot.loaded{background:var(--yellow)}
+.module-status .dot.unavailable{background:var(--red)}
+.modules-summary{padding:12px;display:flex;gap:16px;border-bottom:1px solid var(--border);font-size:13px;color:var(--text-2)}
+.modules-summary strong{color:var(--text)}
+
 /* ── Collaborators ─────────────────────────────────────────────────────── */
 #collaboratorsList details summary{
   cursor:pointer;font-size:11px;font-weight:600;
@@ -483,6 +505,14 @@ body{
       <div class="card-body" id="collaboratorsList">
         <div class="empty">Loading…</div>
       </div>
+
+    <div class="card">
+      <div class="card-header">
+        <div class="card-title">Security Modules</div>
+        <span class="card-count" id="modulesCount">—</span>
+      </div>
+      <div class="modules-summary" id="modulesSummary">Loading…</div>
+      <div class="modules-grid" id="modulesGrid"></div>
     </div>
   </div>
 
@@ -697,10 +727,53 @@ body{
   }
 
   setInterval(fetchCollaborators, 60000);
+
+  // ── Security Modules ──────────────────────────────────────────────────
+  function fetchModules() {
+    fetch('/manage/modules', {headers:{'Authorization':'Bearer ' + token}})
+      .then(function(r){return r.json()})
+      .then(function(data) { renderModules(data); })
+      .catch(function(){});
+  }
+
+  function renderModules(data) {
+    document.getElementById('modulesCount').textContent = data.active + '/' + data.total;
+    document.getElementById('modulesSummary').innerHTML =
+      '<strong>' + data.active + '</strong> active · ' +
+      '<strong>' + data.loaded + '</strong> loaded · ' +
+      '<strong>' + data.unavailable + '</strong> unavailable';
+    
+    var grid = document.getElementById('modulesGrid');
+    grid.innerHTML = '';
+    
+    var entries = Object.entries(data.modules).sort(function(a,b){
+      var tierOrder = {P0:0,P1:1,P2:2,P3:3};
+      return (tierOrder[a[1].tier]||9) - (tierOrder[b[1].tier]||9);
+    });
+    
+    entries.forEach(function(entry) {
+      var name = entry[0];
+      var mod = entry[1];
+      var card = document.createElement('div');
+      card.className = 'module-card ' + mod.status;
+      card.innerHTML =
+        '<div class="module-name">' + name.replace(/_/g,' ') + '</div>' +
+        '<div class="module-meta">' +
+          '<span class="module-tier ' + mod.tier.toLowerCase() + '">' + mod.tier + '</span>' +
+          '<span class="module-status"><span class="dot ' + mod.status + '"></span>' + mod.status + '</span>' +
+        '</div>';
+      grid.appendChild(card);
+    });
+  }
+
+  fetchModules();
+  setInterval(fetchModules, 30000);
+
   // Connect WS: use token from URL if available, otherwise fetch via cookie auth
   if (token) {
     connect();
     fetchCollaborators();
+  fetchModules();
   } else {
     fetch('/dashboard/ws-token', {credentials: 'same-origin'})
       .then(function(r) { return r.ok ? r.json() : Promise.reject(); })
