@@ -306,10 +306,9 @@ async def lifespan(app: FastAPI):
     try:
         from ..security.drift_detector import DriftDetector
         app_state.drift_detector = DriftDetector(
-            baseline_dir=str(_data_dir / "baselines"),
-            alert_callback=lambda alert: logger.warning("DRIFT: %s", alert),
+            db_path=str(_data_dir / "drift.db"),
         )
-        logger.info("✓ DriftDetector → /app/data/baselines")
+        logger.info("✓ DriftDetector → %s/drift.db", _data_dir)
     except Exception as e:
         logger.error(f"✗ DriftDetector: {e}")
         app_state.drift_detector = None
@@ -355,14 +354,14 @@ async def lifespan(app: FastAPI):
 
     # -- Canary: integrity checks on critical files --
     try:
-        from ..security.canary import run_canary, CanaryCheck
+        from ..security.canary import run_canary
         app_state.canary_runner = run_canary
-        app_state.canary_checks = [
-            CanaryCheck(name="config_integrity", path="/app/agentshroud.yaml"),
-            CanaryCheck(name="binary_integrity", path="/usr/local/bin/trivy"),
-            CanaryCheck(name="secrets_present", path="/run/secrets/gateway_password"),
+        app_state.canary_targets = [
+            "/app/agentshroud.yaml",
+            "/usr/local/bin/trivy",
+            "/run/secrets/gateway_password",
         ]
-        logger.info("✓ Canary (3 integrity checks registered)")
+        logger.info("✓ Canary (3 integrity targets registered)")
     except Exception as e:
         logger.error(f"✗ Canary: {e}")
         app_state.canary_runner = None
@@ -1919,12 +1918,9 @@ async def run_canary_checks(auth: AuthRequired):
     """Run canary integrity checks."""
     if not app_state.canary_runner:
         return {"error": "Canary checks not available"}
-    checks = getattr(app_state, "canary_checks", [])
-    results = []
-    for check in checks:
-        result = app_state.canary_runner(check)
-        results.append(result)
-    return {"checks": results}
+    targets = getattr(app_state, "canary_targets", [])
+    result = app_state.canary_runner(targets)
+    return result
 
 
 @app.get("/manage/health")
