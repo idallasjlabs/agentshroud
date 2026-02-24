@@ -30,7 +30,7 @@ flowchart TD
     MEDIUM["MEDIUM\nAllow + audit flag"]
     HIGH_THREAT["HIGH\nBlock + alert Isaiah"]
 
-    APPROVAL_CHECK{"Action type\nrequires approval?\n(email_sending\nfile_deletion\nexternal_api_calls\nskill_installation)"]
+    APPROVAL_CHECK{"Action type\nrequires approval?\n(email_sending\nfile_deletion\nexternal_api_calls\nskill_installation)"}
 
     QUEUE_ITEM["Add to approval queue\nNotify Isaiah via Telegram\nWait up to 1 hour"]
 
