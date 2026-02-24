@@ -102,8 +102,14 @@ class PIISanitizer:
                 spacy.load("en_core_web_sm")
                 logger.info("spaCy model en_core_web_sm loaded successfully")
 
-                # Initialize Presidio engines
-                self.analyzer = AnalyzerEngine()
+                # Initialize Presidio engines with our specific spaCy model
+                from presidio_analyzer.nlp_engine import NlpEngineProvider
+                nlp_config = {
+                    "nlp_engine_name": "spacy",
+                    "models": [{"lang_code": "en", "model_name": "en_core_web_sm"}],
+                }
+                nlp_engine = NlpEngineProvider(nlp_configuration=nlp_config).create_engine()
+                self.analyzer = AnalyzerEngine(nlp_engine=nlp_engine, supported_languages=["en"])
                 self.anonymizer = AnonymizerEngine()
                 self.mode = "presidio"
                 logger.info("Presidio PII detection engine initialized")
