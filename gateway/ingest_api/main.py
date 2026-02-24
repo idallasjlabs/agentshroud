@@ -77,7 +77,7 @@ from .version_routes import router as version_router
 # Uses fnmatch glob syntax: * matches any characters within a path segment.
 # Add entries here when the bot legitimately needs access to a new secret.
 _ALLOWED_OP_PATHS: list[str] = [
-    "op://Agent Shroud Bot Credentials/*",
+    "op://Agent Shroud Bot Credentials/*/*",
 ]
 
 
