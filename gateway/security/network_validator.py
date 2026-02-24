@@ -62,7 +62,7 @@ class NetworkValidator:
         try:
             self.docker_client = docker.from_env()
         except Exception as e:
-            logger.error(f"Failed to connect to Docker: {e}")
+            logger.info("NetworkValidator: Docker socket not available (expected in containerized deployments) — static validation only")
 
     def validate_docker_compose_config(
         self, compose_file_path: str

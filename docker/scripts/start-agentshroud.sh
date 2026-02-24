@@ -95,7 +95,7 @@ if [ -n "${GATEWAY_AUTH_TOKEN:-}" ] && [ -n "${GATEWAY_OP_PROXY_URL:-}" ]; then
     _ICLOUD_ENV_FILE="/tmp/.icloud-env"
     (
         ICLOUD_APP_PASSWORD="$(op_proxy_read_with_retry "iCloud app password" \
-            "op://Agent Shroud Bot Credentials/AgentShroud - iCloud Mail [agentshroud.ai@icloud.com]/agentshroud app-specific password")" || true
+            "op://Agent Shroud Bot Credentials/25ghxryyvup5wpufgfldgc2vjm/agentshroud app-specific password")" || true
         if [ -n "$ICLOUD_APP_PASSWORD" ]; then
             cat > "$_ICLOUD_ENV_FILE" << EOF
 export ICLOUD_APP_PASSWORD="$ICLOUD_APP_PASSWORD"
