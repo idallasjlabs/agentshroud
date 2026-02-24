@@ -344,10 +344,9 @@ async def lifespan(app: FastAPI):
     # -- KeyVault: secure credential storage with audit trail --
     try:
         from ..security.key_vault import KeyVault, KeyVaultConfig
-        app_state.key_vault = KeyVault(KeyVaultConfig(
-            db_path=str(_data_dir / "keyvault.db"),
-        ))
-        logger.info("✓ KeyVault → /app/data/keyvault.db")
+        app_state.key_vault = KeyVault(KeyVaultConfig())
+
+        logger.info("✓ KeyVault initialized")
     except Exception as e:
         logger.error(f"✗ KeyVault: {e}")
         app_state.key_vault = None
