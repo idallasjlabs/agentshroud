@@ -1,0 +1,40 @@
+# .github/workflows/block-destructive-branch.yml
+# Prevents stale/dangerous branches from being merged into main.
+# Add branch names to BLOCKED_BRANCHES when identified as destructive.
+name: Block destructive branches
+
+on:
+  pull_request:
+    branches: [main]
+
+jobs:
+  check-source-branch:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check for blocked branches
+        run: |
+          BLOCKED_BRANCHES=(
+            "final/network-lockdown"
+            "release/v0.9.0"
+          )
+          SOURCE="${{ github.head_ref }}"
+          for blocked in "${BLOCKED_BRANCHES[@]}"; do
+            if [ "$SOURCE" = "$blocked" ]; then
+              echo "::error::Branch '$blocked' is blocked from merging into main (flagged as destructive)"
+              exit 1
+            fi
+          done
+          echo "✅ Branch '$SOURCE' is allowed"
+
+      - name: Check for mass deletions
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Analyze diff size
+        run: |
+          DELETIONS=$(git diff --shortstat origin/main...HEAD | grep -oP '\d+(?= deletion)' || echo 0)
+          if [ "${DELETIONS:-0}" -gt 5000 ]; then
+            echo "::warning::This PR deletes $DELETIONS lines — requires manual review"
+            echo "## ⚠️ Large Deletion Warning" >> $GITHUB_STEP_SUMMARY
+            echo "This PR deletes **$DELETIONS lines**. Branches with >5000 deletions require explicit approval." >> $GITHUB_STEP_SUMMARY
+          fi
