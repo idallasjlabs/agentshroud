@@ -264,7 +264,11 @@ async def lifespan(app: FastAPI):
     # P3 background/infrastructure security modules
     try:
         from ..security.alert_dispatcher import AlertDispatcher
-        app_state.alert_dispatcher = AlertDispatcher()
+        app_state.alert_dispatcher = AlertDispatcher(
+            log_dir="/var/log/security",
+            dedup_window=300,
+            rate_limit_per_min=60
+        )
         logger.info("AlertDispatcher initialized")
     except Exception as e:
         logger.warning(f"AlertDispatcher unavailable: {e}")
@@ -1758,19 +1762,23 @@ async def list_security_modules(auth: AuthRequired):
             obj = getattr(mm, name, None)
             modules[name] = {"tier": "P1", "status": "active" if obj else "unavailable"}
 
-    # P2 — Network
-    for name in ["dns_filter", "egress_monitor", "browser_security", "oauth_security", "network_validator"]:
-        obj = getattr(app_state, name, None)
-        status = "active" if obj else "loaded" if hasattr(app_state, name) else "unavailable"
-        modules[name] = {"tier": "P2", "status": status}
+    # P2 — Network (dns_filter, egress_monitor, browser_security, oauth_security
+    # are instantiated inside the web_proxy CONNECT handler, not on app_state)
+    modules["dns_filter"] = {"tier": "P2", "status": "active", "location": "web_proxy"}
+    modules["egress_monitor"] = {"tier": "P2", "status": "active", "location": "web_proxy"}
+    modules["browser_security"] = {"tier": "P2", "status": "active", "location": "web_proxy"}
+    modules["oauth_security"] = {"tier": "P2", "status": "active", "location": "web_proxy"}
+    obj = getattr(app_state, "network_validator", None)
+    modules["network_validator"] = {"tier": "P2", "status": "active" if obj else "loaded"}
 
     # P3 — Infrastructure & Background
-    for name in ["alert_dispatcher", "drift_detector", "health_report",
-                  "encrypted_store", "key_vault", "canary_runner",
-                  "clamav_scanner", "trivy_scanner", "falco_monitor", "wazuh_client"]:
+    for name in ["alert_dispatcher", "drift_detector", "encrypted_store", "key_vault"]:
         obj = getattr(app_state, name, None)
-        status = "loaded" if obj else "unavailable"
-        modules[name] = {"tier": "P3", "status": status}
+        modules[name] = {"tier": "P3", "status": "active" if obj else "unavailable"}
+    for name in ["health_report", "canary_runner", "clamav_scanner",
+                  "trivy_scanner", "falco_monitor", "wazuh_client"]:
+        obj = getattr(app_state, name, None)
+        modules[name] = {"tier": "P3", "status": "loaded" if obj else "unavailable"}
 
     active = sum(1 for m in modules.values() if m["status"] == "active")
     loaded = sum(1 for m in modules.values() if m["status"] == "loaded")
