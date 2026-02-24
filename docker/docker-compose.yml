@@ -50,8 +50,8 @@ services:
       - /var/tmp:noexec,nosuid,size=50m
 
     # Resource limits
-    mem_limit: 768m
-    memswap_limit: 768m
+    mem_limit: 1280m
+    memswap_limit: 1280m
     cpus: 1.0
     pids_limit: 100
 
