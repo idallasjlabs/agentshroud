@@ -32,3 +32,4 @@ eval-type-backport>=0.2.0; python_version < "3.10"
 
 # System monitoring
 psutil>=6.0.0,<7.0.0
+docker
