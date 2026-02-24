@@ -2,19 +2,19 @@
 # ============================================================
 # AgentShroud Deploy Script
 # ============================================================
-# Deploys AgentShroud on any server (Marvin/Pi/Trillian).
-# Auto-detects Docker or Podman. Finds available ports.
-# 
-# Usage: ./scripts/deploy.sh [--port PORT] [--name NAME]
-# Example: ./scripts/deploy.sh --port 9000 --name test-v2
-# Default: port 8080, name from hostname
+# Deploys AgentShroud on any server. Auto-detects runtime.
+# Selects Telegram bot token by hostname.
+#
+# Usage: ./scripts/deploy.sh [--port PORT] [--name NAME] [--find-port]
 # ============================================================
 
 set -euo pipefail
+export PATH="/usr/local/bin:/opt/homebrew/bin:$PATH"
 
 # --- Parse args ---
 GATEWAY_PORT=8080
-INSTANCE_NAME="agentshroud-$(hostname -s)"
+INSTANCE_NAME=""
+FIND_PORT=false
 
 while [[ $# -gt 0 ]]; do
     case $1 in
@@ -23,16 +23,16 @@ while [[ $# -gt 0 ]]; do
         --find-port) FIND_PORT=true; shift ;;
         -h|--help)
             echo "Usage: $0 [--port PORT] [--name NAME] [--find-port]"
-            echo "  --port PORT    Gateway port (default: 8080)"
-            echo "  --name NAME    Instance name (default: agentshroud-<hostname>)"
-            echo "  --find-port    Auto-find available port starting from 9000"
             exit 0 ;;
         *) echo "Unknown arg: $1"; exit 1 ;;
     esac
 done
 
+HOSTNAME_SHORT="$(hostname -s | tr '[:upper:]' '[:lower:]')"
+[ -z "$INSTANCE_NAME" ] && INSTANCE_NAME="agentshroud-${HOSTNAME_SHORT}"
+
 # --- Auto-find port if requested ---
-if [ "${FIND_PORT:-false}" = "true" ]; then
+if [ "$FIND_PORT" = "true" ]; then
     PORT=9000
     while [ $PORT -lt 65000 ]; do
         if ! netstat -an 2>/dev/null | grep -q "[:.]${PORT} .*LISTEN" && \
@@ -43,131 +43,233 @@ if [ "${FIND_PORT:-false}" = "true" ]; then
         fi
         PORT=$((PORT + 1))
     done
-    echo "🔍 Auto-selected port: $GATEWAY_PORT"
+fi
+
+# --- Select Telegram bot token by hostname ---
+SCRIPT_DIR="$(cd "$(dirname "$0")" && pwd)"
+PROJECT_DIR="$(dirname "$SCRIPT_DIR")"
+SECRETS_DIR="$PROJECT_DIR/docker/secrets"
+
+TELEGRAM_TOKEN=""
+TELEGRAM_BOT_NAME=""
+case "$HOSTNAME_SHORT" in
+    marvin*)
+        TELEGRAM_TOKEN_FILE="$SECRETS_DIR/telegram_bot_token_marvin.txt"
+        TELEGRAM_BOT_NAME="agentshroud_marvin_bot"
+        ;;
+    trillian*)
+        TELEGRAM_TOKEN_FILE="$SECRETS_DIR/telegram_bot_token_trillian.txt"
+        TELEGRAM_BOT_NAME="agentshroud_trillian_bot"
+        ;;
+    raspberrypi*|rpi*)
+        TELEGRAM_TOKEN_FILE="$SECRETS_DIR/telegram_bot_token_rpi.txt"
+        TELEGRAM_BOT_NAME="agentshroud_raspberrypi_bot"
+        ;;
+    *)
+        echo "⚠️  Unknown hostname '$HOSTNAME_SHORT' — no Telegram bot token mapped."
+        echo "   Add a case in deploy.sh for this host, or manually set the token."
+        TELEGRAM_TOKEN_FILE=""
+        TELEGRAM_BOT_NAME="unknown"
+        ;;
+esac
+
+if [ -n "$TELEGRAM_TOKEN_FILE" ] && [ -f "$TELEGRAM_TOKEN_FILE" ]; then
+    TELEGRAM_TOKEN=$(cat "$TELEGRAM_TOKEN_FILE")
+    echo "🤖 Telegram bot: @${TELEGRAM_BOT_NAME}"
+elif [ -n "$TELEGRAM_TOKEN_FILE" ]; then
+    echo "⚠️  Token file not found: $TELEGRAM_TOKEN_FILE"
+    echo "   Instance will start without Telegram configured."
 fi
 
 # --- Detect container runtime ---
 RUNTIME=""
 COMPOSE_CMD=""
 
+# Check Docker
 if command -v docker >/dev/null 2>&1; then
-    # Check if docker compose plugin exists
     if docker compose version >/dev/null 2>&1; then
         RUNTIME="docker"
         COMPOSE_CMD="docker compose"
     fi
 fi
 
+# Check Podman
 if [ -z "$RUNTIME" ] && command -v podman >/dev/null 2>&1; then
     RUNTIME="podman"
     if command -v podman-compose >/dev/null 2>&1; then
         COMPOSE_CMD="podman-compose"
-    elif podman compose version >/dev/null 2>&1; then
-        COMPOSE_CMD="podman compose"
     else
-        echo "❌ Podman found but no compose plugin. Install: pip3 install podman-compose"
+        echo "❌ Podman found but no podman-compose. Install: pip3 install podman-compose"
         exit 1
     fi
 fi
 
+# Check Colima Docker socket
+if [ -z "$RUNTIME" ] && [ -S "$HOME/.colima/docker.sock" ]; then
+    export DOCKER_HOST="unix://$HOME/.colima/docker.sock"
+    if docker compose version >/dev/null 2>&1; then
+        RUNTIME="docker (colima)"
+        COMPOSE_CMD="docker compose"
+    fi
+fi
+
 if [ -z "$RUNTIME" ]; then
-    echo "❌ No container runtime found. Install Docker or Podman."
-    echo ""
-    echo "  macOS:   brew install --cask docker   (or)  brew install podman"
-    echo "  Debian:  sudo apt-get install podman"
-    echo "  Pi:      sudo apt-get install podman"
+    echo "❌ No container runtime found."
+    echo "   macOS:   brew install --cask docker  OR  brew install colima docker docker-compose"
+    echo "   Debian:  sudo apt-get install podman && pip3 install podman-compose"
     exit 1
 fi
 
+echo ""
 echo "🚀 AgentShroud Deploy"
 echo "====================="
-echo "  Host:      $(hostname -s)"
-echo "  Runtime:   $RUNTIME ($COMPOSE_CMD)"
+echo "  Host:      $HOSTNAME_SHORT"
+echo "  Runtime:   $RUNTIME"
 echo "  Instance:  $INSTANCE_NAME"
 echo "  Port:      $GATEWAY_PORT"
+echo "  Bot:       @${TELEGRAM_BOT_NAME}"
 echo ""
 
-SCRIPT_DIR="$(cd "$(dirname "$0")" && pwd)"
-PROJECT_DIR="$(dirname "$SCRIPT_DIR")"
 COMPOSE_DIR="$PROJECT_DIR/docker"
-
 cd "$COMPOSE_DIR"
 
-# --- Stop existing instance if running ---
+# --- Stop existing instance ---
 echo "🛑 Stopping existing instance (if any)..."
-COMPOSE_PROJECT_NAME="$INSTANCE_NAME" $COMPOSE_CMD \
-    -f docker-compose.yml down 2>/dev/null || true
+COMPOSE_PROJECT_NAME="$INSTANCE_NAME" $COMPOSE_CMD -f docker-compose.yml down 2>/dev/null || true
 
-# --- Create port override if not default ---
-OVERRIDE_ARGS=""
-if [ "$GATEWAY_PORT" != "8080" ]; then
-    OVERRIDE_FILE="docker-compose.${INSTANCE_NAME}.yml"
-    cat > "$OVERRIDE_FILE" << EOF
+# --- Create compose override ---
+OVERRIDE_FILE="docker-compose.${INSTANCE_NAME}.yml"
+cat > "$OVERRIDE_FILE" << EOF
+# Auto-generated by deploy.sh for $HOSTNAME_SHORT
 services:
   gateway:
     container_name: ${INSTANCE_NAME}-gateway
     ports: !override
       - "127.0.0.1:${GATEWAY_PORT}:8080"
+    environment:
+      - INSTANCE_NAME=${INSTANCE_NAME}
   agentshroud:
     container_name: ${INSTANCE_NAME}-bot
+    ports: !override
+      - "127.0.0.1:0:18789"
+    environment:
+      - INSTANCE_NAME=${INSTANCE_NAME}
+      - OPENCLAW_BOT_NAME=${TELEGRAM_BOT_NAME}
 EOF
-    OVERRIDE_ARGS="-f $OVERRIDE_FILE"
-    echo "📄 Port override: $OVERRIDE_FILE"
-fi
+
+# Add unique subnets to avoid overlap
+# Use hostname hash for deterministic subnet
+SUBNET_BASE=$((0x$(echo -n "$INSTANCE_NAME" | md5sum 2>/dev/null | cut -c1-2 || md5 -qs "$INSTANCE_NAME" | cut -c1-2) % 200 + 20))
+cat >> "$OVERRIDE_FILE" << EOF
+networks:
+  agentshroud-isolated:
+    name: ${INSTANCE_NAME}-isolated
+    ipam:
+      config:
+        - subnet: 172.${SUBNET_BASE}.0.0/16
+  agentshroud-internal:
+    name: ${INSTANCE_NAME}-internal
+    ipam:
+      config:
+        - subnet: 172.$((SUBNET_BASE + 1)).0.0/16
+EOF
+
+echo "📄 Override: $OVERRIDE_FILE"
 
 # --- Build ---
 echo ""
-echo "🔨 Building..."
+echo "🔨 Building (this may take a few minutes)..."
 COMPOSE_PROJECT_NAME="$INSTANCE_NAME" $COMPOSE_CMD \
-    -f docker-compose.yml $OVERRIDE_ARGS \
-    build 2>&1 | tail -10
+    -f docker-compose.yml -f "$OVERRIDE_FILE" \
+    build 2>&1 | tail -5
 
 # --- Start ---
 echo ""
 echo "🚀 Starting..."
 COMPOSE_PROJECT_NAME="$INSTANCE_NAME" $COMPOSE_CMD \
-    -f docker-compose.yml $OVERRIDE_ARGS \
+    -f docker-compose.yml -f "$OVERRIDE_FILE" \
     up -d 2>&1
 
 echo ""
 echo "⏳ Waiting 20 seconds for startup..."
 sleep 20
 
+# --- Inject Telegram bot token into openclaw.json ---
+if [ -n "$TELEGRAM_TOKEN" ]; then
+    echo ""
+    echo "🔑 Configuring Telegram bot token..."
+    BOT_CONTAINER="${INSTANCE_NAME}-bot"
+    
+    # Wait for container to be running
+    for i in $(seq 1 10); do
+        if $RUNTIME inspect "$BOT_CONTAINER" >/dev/null 2>&1; then
+            break
+        fi
+        sleep 2
+    done
+
+    # Inject token via node inside container
+    $RUNTIME exec "$BOT_CONTAINER" node -e "
+        const fs = require('fs');
+        const p = '/home/node/.openclaw/openclaw.json';
+        try {
+            const c = JSON.parse(fs.readFileSync(p, 'utf8'));
+            if (!c.channels) c.channels = {};
+            if (!c.channels.telegram) c.channels.telegram = {};
+            c.channels.telegram.botToken = '${TELEGRAM_TOKEN}';
+            c.channels.telegram.name = '${TELEGRAM_BOT_NAME}';
+            c.channels.telegram.enabled = true;
+            c.channels.telegram.dmPolicy = 'pairing';
+            if (!c.channels.telegram.allowFrom) {
+                c.channels.telegram.allowFrom = ['8096968754','8506022825','8545356403','8279589982','8526379012'];
+            }
+            fs.writeFileSync(p, JSON.stringify(c, null, 4));
+            console.log('   ✅ Token injected for @${TELEGRAM_BOT_NAME}');
+        } catch(e) {
+            console.log('   ⚠️  Could not inject token: ' + e.message);
+            console.log('   Config will need manual setup on first run.');
+        }
+    " 2>&1
+
+    # Restart bot to pick up new token
+    echo "   Restarting bot to apply token..."
+    $RUNTIME restart "$BOT_CONTAINER" 2>/dev/null || true
+    sleep 10
+fi
+
 # --- Health check ---
 echo ""
 echo "🏥 Health check..."
 COMPOSE_PROJECT_NAME="$INSTANCE_NAME" $COMPOSE_CMD \
-    -f docker-compose.yml $OVERRIDE_ARGS \
+    -f docker-compose.yml -f "$OVERRIDE_FILE" \
     ps 2>&1
 
-# Check gateway
 echo ""
-echo -n "Gateway API (port $GATEWAY_PORT)... "
+echo -n "Gateway (port $GATEWAY_PORT)... "
 if curl -sf --max-time 5 "http://127.0.0.1:${GATEWAY_PORT}/status" >/dev/null 2>&1; then
     echo "✅ UP"
 else
-    echo "⚠️  Not responding yet (may still be starting)"
+    echo "⚠️  Not responding (may still be starting)"
 fi
 
-# --- Tailscale serve (if available) ---
+# --- Tailscale serve ---
 if command -v tailscale >/dev/null 2>&1; then
     echo ""
-    echo "🌐 Setting up Tailscale serve..."
+    echo "🌐 Configuring Tailscale serve..."
     tailscale serve --bg --https=$GATEWAY_PORT http://127.0.0.1:$GATEWAY_PORT 2>&1 || true
-    TS_NAME=$(tailscale status --self --json 2>/dev/null | python3 -c 'import sys,json; print(json.load(sys.stdin)["Self"]["DNSName"].rstrip("."))' 2>/dev/null || echo "unknown")
-    echo "   Tailscale URL: https://${TS_NAME}:${GATEWAY_PORT}"
 fi
 
 # --- Summary ---
 echo ""
 echo "============================================"
-echo "✅ $INSTANCE_NAME deployed on $(hostname -s)"
+echo "✅ $INSTANCE_NAME deployed on $HOSTNAME_SHORT"
 echo "============================================"
 echo ""
-echo "  Gateway:  http://127.0.0.1:${GATEWAY_PORT}"
-echo "  Runtime:  $RUNTIME"
+echo "  Gateway:   http://127.0.0.1:${GATEWAY_PORT}"
+echo "  Telegram:  @${TELEGRAM_BOT_NAME}"
+echo "  Runtime:   $RUNTIME"
 echo ""
-echo "  Commands:"
-echo "    Logs:   cd $COMPOSE_DIR && COMPOSE_PROJECT_NAME=$INSTANCE_NAME $COMPOSE_CMD -f docker-compose.yml $OVERRIDE_ARGS logs -f"
-echo "    Stop:   cd $COMPOSE_DIR && COMPOSE_PROJECT_NAME=$INSTANCE_NAME $COMPOSE_CMD -f docker-compose.yml $OVERRIDE_ARGS down"
-echo "    Status: cd $COMPOSE_DIR && COMPOSE_PROJECT_NAME=$INSTANCE_NAME $COMPOSE_CMD -f docker-compose.yml $OVERRIDE_ARGS ps"
+echo "  Manage:"
+echo "    Logs:    cd $COMPOSE_DIR && COMPOSE_PROJECT_NAME=$INSTANCE_NAME $COMPOSE_CMD -f docker-compose.yml -f $OVERRIDE_FILE logs -f"
+echo "    Stop:    cd $COMPOSE_DIR && COMPOSE_PROJECT_NAME=$INSTANCE_NAME $COMPOSE_CMD -f docker-compose.yml -f $OVERRIDE_FILE down"
+echo "    Status:  cd $COMPOSE_DIR && COMPOSE_PROJECT_NAME=$INSTANCE_NAME $COMPOSE_CMD -f docker-compose.yml -f $OVERRIDE_FILE ps"
