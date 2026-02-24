@@ -139,6 +139,13 @@ class PIISanitizer:
         Raises:
             RuntimeError: If sanitization fails critically
         """
+        if not self.config.enabled:
+            return RedactionResult(
+                sanitized_content=content,
+                redactions=[],
+                entity_types_found=[],
+            )
+
         if self.mode == "presidio" and self.analyzer and self.anonymizer:
             # Hybrid: run Presidio first, then regex to catch gaps
             # (en_core_web_sm misses SSN/phone; regex catches them)
@@ -225,7 +232,12 @@ class PIISanitizer:
         # Define patterns (order matters - longer patterns first)
         patterns = []
 
-        if "US_SSN" in self.config.entities:
+        # If no entities configured, detect all by default
+        entities = self.config.entities or [
+            "US_SSN", "CREDIT_CARD", "PHONE_NUMBER", "EMAIL_ADDRESS", "LOCATION"
+        ]
+
+        if "US_SSN" in entities:
             patterns.append(
                 (
                     "US_SSN",
@@ -234,7 +246,7 @@ class PIISanitizer:
                 )
             )
 
-        if "CREDIT_CARD" in self.config.entities:
+        if "CREDIT_CARD" in entities:
             # Matches various credit card formats
             patterns.append(
                 (
@@ -246,7 +258,7 @@ class PIISanitizer:
                 )
             )
 
-        if "PHONE_NUMBER" in self.config.entities:
+        if "PHONE_NUMBER" in entities:
             patterns.append(
                 (
                     "PHONE_NUMBER",
@@ -257,7 +269,7 @@ class PIISanitizer:
                 )
             )
 
-        if "EMAIL_ADDRESS" in self.config.entities:
+        if "EMAIL_ADDRESS" in entities:
             patterns.append(
                 (
                     "EMAIL_ADDRESS",
@@ -266,7 +278,7 @@ class PIISanitizer:
                 )
             )
 
-        if "LOCATION" in self.config.entities:
+        if "LOCATION" in entities:
             # Basic street address pattern (number + street name)
             patterns.append(
                 (
