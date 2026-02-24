@@ -1893,8 +1893,9 @@ async def run_clamav_scan(auth: AuthRequired, target: str = "/app"):
     if not app_state.clamav_scanner:
         return {"error": "ClamAV scanner not available"}
     import shutil as _sh
-    # Prefer clamdscan (daemon mode, shared memory) over clamscan (loads full DB per invocation)
-    _bin = "clamdscan" if _sh.which("clamdscan") else "clamscan"
+    # Prefer clamdscan (daemon, shared memory) if clamd is running, else clamscan
+    import os as _os
+    _bin = "clamdscan" if (_sh.which("clamdscan") and _os.path.exists("/var/run/clamav/clamd.ctl")) else "clamscan"
     result = app_state.clamav_scanner.run_clamscan(target=target, timeout=120, clamscan_bin=_bin)
     if app_state.alert_dispatcher and result.get("infected_count", 0) > 0:
         app_state.alert_dispatcher.dispatch(
