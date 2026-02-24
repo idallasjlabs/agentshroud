@@ -336,3 +336,40 @@ After all phases are complete:
 4. `ruff check gateway/` → 0 violations before PR
 5. PR with summary + test plan + verification steps
 6. Review and merge; system remains working on `main` at all times
+
+---
+
+## Current State (2026-02-24)
+
+### Module Status Summary
+- **Total**: 33 module instances tracked
+- **Active** (processing requests): 27
+- **Loaded** (available on demand): 6
+- **Unavailable**: 0
+
+### PII Detection
+- **Engine**: Microsoft Presidio with spaCy `en_core_web_sm` NLP model
+- **Fallback**: Regex-based detection
+- **Entity types**: US_SSN, CREDIT_CARD, PHONE_NUMBER, EMAIL_ADDRESS, LOCATION + all Presidio built-in recognizers
+- **Confidence threshold**: 0.9
+
+### Architecture
+- **Gateway**: Python FastAPI (uvicorn), port 8080
+- **Bot**: OpenClaw (Node.js), port 18789
+- **Both containers**: non-root user, read-only rootfs, tmpfs for /tmp
+- **Docker compose**: Colima (dev), Docker Desktop (production)
+- **Networking**: Isolated Docker networks, CONNECT proxy on 8181
+
+### Endpoints
+| Endpoint | Auth | Description |
+|----------|------|-------------|
+| GET /status | No | Health check + version |
+| GET /manage/modules | Bearer | All 33 modules with tier + status |
+| GET /dashboard | Cookie/Query | Web control center |
+| GET /dashboard/stats | Bearer | KPI data |
+| POST /credentials/op-proxy | Bearer | 1Password credential broker |
+| POST /mcp/proxy | Bearer | MCP tool proxy |
+| POST /approve | Bearer | Submit action for approval |
+| POST /ssh/exec | Bearer | SSH proxy |
+| GET /ledger | Bearer | Audit trail |
+| GET /collaborators | Bearer | Team directory |

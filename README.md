@@ -16,9 +16,9 @@
     <img src="https://github.com/idallasj/agentshroud/actions/workflows/ci.yml/badge.svg" alt="Tests" />
   </a>
   <a href="https://github.com/idallasj/agentshroud">
-    <img src="https://img.shields.io/badge/coverage-92%25-brightgreen" alt="Coverage" />
+    <img src="https://img.shields.io/badge/coverage-91%25-brightgreen" alt="Coverage" />
   </a>
-  <img src="https://img.shields.io/badge/python-3.11-blue.svg" alt="Python 3.11" />
+  <img src="https://img.shields.io/badge/python-3.13-blue.svg" alt="Python 3.11" />
   <a href="LICENSE">
     <img src="https://img.shields.io/badge/License-MIT-yellow.svg" alt="MIT License" />
   </a>
@@ -49,9 +49,9 @@ AgentShroud is simultaneously a **production-grade tool**, a **learning laborato
 A major development sprint wired all **30 security modules** into the live pipeline and delivered two complete control center interfaces:
 
 - **P0 — Core Pipeline**: PromptGuard, TrustManager, EgressFilter, PII fix, gateway binding
-- **P1 — Middleware**: 7 modules wired + MCP fail-closed enforcement
-- **P2 — Network Modules**: 5 modules wired into the request flow
-- **P3 — Infrastructure**: 15 modules integrated via SecurityPipelineIntegrator
+- **P1 — Middleware**: 12 modules wired (7 original + SessionManager, TokenValidator, ConsentFramework, SubagentMonitor, AgentRegistry) + MCP fail-closed enforcement
+- **P2 — Network**: 5 modules active in web proxy into the request flow
+- **P3 — Infrastructure**: 10 modules loaded (AlertDispatcher, DriftDetector, EncryptedStore, KeyVault, Canary, ClamAV, Trivy, Falco, Wazuh, HealthReport)
 - **Web Control Center**: 7-page responsive dashboard for browser-based management
 - **Terminal Control Center**: Full TUI + chat console (optimized for Blink Shell / mobile)
 
