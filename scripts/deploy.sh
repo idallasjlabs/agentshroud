@@ -45,40 +45,51 @@ if [ "$FIND_PORT" = "true" ]; then
     done
 fi
 
-# --- Select Telegram bot token by hostname ---
+# --- Select Telegram bot token by user + hostname ---
+# agentshroud-bot user → per-host dev/test bot
+# any other user (e.g. Isaiah) → production @agentshroud_bot
 SCRIPT_DIR="$(cd "$(dirname "$0")" && pwd)"
 PROJECT_DIR="$(dirname "$SCRIPT_DIR")"
 SECRETS_DIR="$PROJECT_DIR/docker/secrets"
+CURRENT_USER="$(whoami)"
 
 TELEGRAM_TOKEN=""
+TELEGRAM_TOKEN_FILE=""
 TELEGRAM_BOT_NAME=""
-case "$HOSTNAME_SHORT" in
-    marvin*)
-        TELEGRAM_TOKEN_FILE="$SECRETS_DIR/telegram_bot_token_marvin.txt"
-        TELEGRAM_BOT_NAME="agentshroud_marvin_bot"
-        ;;
-    trillian*)
-        TELEGRAM_TOKEN_FILE="$SECRETS_DIR/telegram_bot_token_trillian.txt"
-        TELEGRAM_BOT_NAME="agentshroud_trillian_bot"
-        ;;
-    raspberrypi*|rpi*)
-        TELEGRAM_TOKEN_FILE="$SECRETS_DIR/telegram_bot_token_rpi.txt"
-        TELEGRAM_BOT_NAME="agentshroud_raspberrypi_bot"
-        ;;
-    *)
-        echo "⚠️  Unknown hostname '$HOSTNAME_SHORT' — no Telegram bot token mapped."
-        echo "   Add a case in deploy.sh for this host, or manually set the token."
-        TELEGRAM_TOKEN_FILE=""
-        TELEGRAM_BOT_NAME="unknown"
-        ;;
-esac
+
+if [ "$CURRENT_USER" = "agentshroud-bot" ]; then
+    # Dev/test bot — select by hostname
+    case "$HOSTNAME_SHORT" in
+        marvin*)
+            TELEGRAM_TOKEN_FILE="$SECRETS_DIR/telegram_bot_token_marvin.txt"
+            TELEGRAM_BOT_NAME="agentshroud_marvin_bot"
+            ;;
+        trillian*)
+            TELEGRAM_TOKEN_FILE="$SECRETS_DIR/telegram_bot_token_trillian.txt"
+            TELEGRAM_BOT_NAME="agentshroud_trillian_bot"
+            ;;
+        raspberrypi*|rpi*)
+            TELEGRAM_TOKEN_FILE="$SECRETS_DIR/telegram_bot_token_rpi.txt"
+            TELEGRAM_BOT_NAME="agentshroud_raspberrypi_bot"
+            ;;
+        *)
+            echo "⚠️  Unknown hostname '$HOSTNAME_SHORT' — no dev bot token mapped."
+            echo "   Add a case in deploy.sh for this host."
+            TELEGRAM_BOT_NAME="unknown"
+            ;;
+    esac
+else
+    # Production bot — used by Isaiah or any non-bot user
+    TELEGRAM_TOKEN_FILE="$SECRETS_DIR/telegram_bot_token_production.txt"
+    TELEGRAM_BOT_NAME="agentshroud_bot"
+fi
 
 if [ -n "$TELEGRAM_TOKEN_FILE" ] && [ -f "$TELEGRAM_TOKEN_FILE" ]; then
     TELEGRAM_TOKEN=$(cat "$TELEGRAM_TOKEN_FILE")
-    echo "🤖 Telegram bot: @${TELEGRAM_BOT_NAME}"
+    echo "🤖 Telegram bot: @${TELEGRAM_BOT_NAME} (user: $CURRENT_USER)"
 elif [ -n "$TELEGRAM_TOKEN_FILE" ]; then
     echo "⚠️  Token file not found: $TELEGRAM_TOKEN_FILE"
-    echo "   Instance will start without Telegram configured."
+    echo "   Create it with: echo 'YOUR_BOT_TOKEN' > $TELEGRAM_TOKEN_FILE"
 fi
 
 # --- Detect container runtime ---
