@@ -7,6 +7,7 @@
 ## 7. Data Flow Diagram — How Data Moves Through the System
 
 ```mermaid
+%%{init: {'theme': 'base', 'themeVariables': {'primaryColor': '#161c27', 'primaryTextColor': '#e2e8f0', 'primaryBorderColor': '#1583f0', 'lineColor': '#3a7bd5', 'secondaryColor': '#0f1219', 'tertiaryColor': '#08090b', 'background': '#08090b', 'mainBkg': '#161c27', 'nodeBorder': '#1583f0', 'clusterBkg': '#0f1219', 'clusterBorder': '#232b3d', 'titleColor': '#4da2f4', 'edgeLabelBackground': '#0f1219', 'fontFamily': 'Inter, system-ui, sans-serif', 'fontSize': '14px'}}}%%
 flowchart TD
     subgraph Sources["Input Channels"]
         TG_IN["Telegram\n@agentshroud_bot"]
@@ -77,6 +78,7 @@ flowchart TD
 ## 8. Entity Relationship Diagram (ERD)
 
 ```mermaid
+%%{init: {'theme': 'base', 'themeVariables': {'primaryColor': '#161c27', 'primaryTextColor': '#e2e8f0', 'primaryBorderColor': '#1583f0', 'lineColor': '#3a7bd5', 'secondaryColor': '#0f1219', 'tertiaryColor': '#08090b', 'background': '#08090b', 'mainBkg': '#161c27', 'nodeBorder': '#1583f0', 'clusterBkg': '#0f1219', 'clusterBorder': '#232b3d', 'titleColor': '#4da2f4', 'edgeLabelBackground': '#0f1219', 'fontFamily': 'Inter, system-ui, sans-serif', 'fontSize': '14px'}}}%%
 erDiagram
     LEDGER {
         TEXT id PK "UUID"
@@ -123,6 +125,7 @@ erDiagram
 End-to-end traceability from source to consumption.
 
 ```mermaid
+%%{init: {'theme': 'base', 'themeVariables': {'primaryColor': '#161c27', 'primaryTextColor': '#e2e8f0', 'primaryBorderColor': '#1583f0', 'lineColor': '#3a7bd5', 'secondaryColor': '#0f1219', 'tertiaryColor': '#08090b', 'background': '#08090b', 'mainBkg': '#161c27', 'nodeBorder': '#1583f0', 'clusterBkg': '#0f1219', 'clusterBorder': '#232b3d', 'titleColor': '#4da2f4', 'edgeLabelBackground': '#0f1219', 'fontFamily': 'Inter, system-ui, sans-serif', 'fontSize': '14px'}}}%%
 flowchart LR
     subgraph L1["Layer 1 — Source"]
         SRC1["Telegram message\n(raw user text)"]
@@ -171,6 +174,7 @@ flowchart LR
 ## 10. Data Dictionary / Catalog Map
 
 ```mermaid
+%%{init: {'theme': 'base', 'themeVariables': {'primaryColor': '#161c27', 'primaryTextColor': '#e2e8f0', 'primaryBorderColor': '#1583f0', 'lineColor': '#3a7bd5', 'secondaryColor': '#0f1219', 'tertiaryColor': '#08090b', 'background': '#08090b', 'mainBkg': '#161c27', 'nodeBorder': '#1583f0', 'clusterBkg': '#0f1219', 'clusterBorder': '#232b3d', 'titleColor': '#4da2f4', 'edgeLabelBackground': '#0f1219', 'fontFamily': 'Inter, system-ui, sans-serif', 'fontSize': '14px'}}}%%
 mindmap
   root((AgentShroud\nData Assets))
     SQLite DBs

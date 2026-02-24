@@ -7,6 +7,7 @@
 ## 21. Agile Team Diagram — Structure & Roles
 
 ```mermaid
+%%{init: {'theme': 'base', 'themeVariables': {'primaryColor': '#161c27', 'primaryTextColor': '#e2e8f0', 'primaryBorderColor': '#1583f0', 'lineColor': '#3a7bd5', 'secondaryColor': '#0f1219', 'tertiaryColor': '#08090b', 'background': '#08090b', 'mainBkg': '#161c27', 'nodeBorder': '#1583f0', 'clusterBkg': '#0f1219', 'clusterBorder': '#232b3d', 'titleColor': '#4da2f4', 'edgeLabelBackground': '#0f1219', 'fontFamily': 'Inter, system-ui, sans-serif', 'fontSize': '14px'}}}%%
 graph TB
     subgraph Owner["Product Owner / Architect"]
         ISAIAH["Isaiah Jefferson\n━━━━━━━━━━━━━━━━━\nRole: Product Owner, Architect,\nProject Manager, Operator\n\nResponsibilities:\n• Vision & roadmap\n• Requirements & priorities\n• Architecture decisions\n• Production operations\n• Security approvals\n• Credential management\n• External communications"]
@@ -46,6 +47,7 @@ graph TB
 Safe deployment order: components lower in the graph must be deployed first.
 
 ```mermaid
+%%{init: {'theme': 'base', 'themeVariables': {'primaryColor': '#161c27', 'primaryTextColor': '#e2e8f0', 'primaryBorderColor': '#1583f0', 'lineColor': '#3a7bd5', 'secondaryColor': '#0f1219', 'tertiaryColor': '#08090b', 'background': '#08090b', 'mainBkg': '#161c27', 'nodeBorder': '#1583f0', 'clusterBkg': '#0f1219', 'clusterBorder': '#232b3d', 'titleColor': '#4da2f4', 'edgeLabelBackground': '#0f1219', 'fontFamily': 'Inter, system-ui, sans-serif', 'fontSize': '14px'}}}%%
 graph TB
     subgraph External["External Dependencies (no deploy needed)"]
         OP["1Password Cloud"]
@@ -109,6 +111,7 @@ graph TB
 ## 23. Roadmap / Timeline — Development Phases
 
 ```mermaid
+%%{init: {'theme': 'base', 'themeVariables': {'primaryColor': '#161c27', 'primaryTextColor': '#e2e8f0', 'primaryBorderColor': '#1583f0', 'lineColor': '#3a7bd5', 'secondaryColor': '#0f1219', 'tertiaryColor': '#08090b', 'background': '#08090b', 'mainBkg': '#161c27', 'nodeBorder': '#1583f0', 'clusterBkg': '#0f1219', 'clusterBorder': '#232b3d', 'titleColor': '#4da2f4', 'edgeLabelBackground': '#0f1219', 'fontFamily': 'Inter, system-ui, sans-serif', 'fontSize': '14px'}}}%%
 gantt
     title AgentShroud Development Roadmap — 2026
     dateFormat  YYYY-MM-DD
