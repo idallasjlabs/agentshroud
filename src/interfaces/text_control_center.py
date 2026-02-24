@@ -147,7 +147,7 @@ class ControlCenter:
         
         # Get data
         status = self.make_api_request('/status')
-        modules = self.make_api_request('/modules')
+        modules = self.make_api_request('/manage/modules')
         
         # Header
         print(f"{ANSI.BOLD}{ANSI.CYAN}╔══ AGENTSHROUD CONTROL CENTER ════════════════════════════╗{ANSI.RESET}")
@@ -172,13 +172,13 @@ class ControlCenter:
         print(f"{ANSI.BOLD}{ANSI.CYAN}║{ANSI.RESET} {'PIPELINE':<12} │ {'MODULES (30)':<13} │ {'ALERTS':<15} {ANSI.BOLD}{ANSI.CYAN}║{ANSI.RESET}")
         
         # Module stats
-        active_modules = 26
-        inactive_modules = 4
+        active_modules = 0
+        inactive_modules = 0
         error_modules = 0
-        if 'error' not in modules:
-            module_list = modules.get('modules', [])
-            active_modules = sum(1 for m in module_list if m.get('active', False))
-            inactive_modules = len(module_list) - active_modules
+        if 'error' not in modules and isinstance(modules, dict):
+            active_modules = modules.get('active', 0)
+            inactive_modules = modules.get('loaded', 0) + modules.get('unavailable', 0)
+            error_modules = modules.get('unavailable', 0)
         
         # Fetch pipeline stats from API
         pipeline = self.make_api_request("/proxy/status")
@@ -269,7 +269,7 @@ class ControlCenter:
         
         print(f"{ANSI.BOLD}{ANSI.BLUE}╔══ SECURITY MODULES ═══════════════════════════════════════╗{ANSI.RESET}")
         
-        result = self.make_api_request('/modules')
+        result = self.make_api_request('/manage/modules')
         
         if 'error' in result:
             print(f"{ANSI.BOLD}{ANSI.BLUE}║{ANSI.RESET} {ANSI.RED}Error:{ANSI.RESET} {result['error']:<50} {ANSI.BOLD}{ANSI.BLUE}║{ANSI.RESET}")
