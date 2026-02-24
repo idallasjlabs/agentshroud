@@ -57,6 +57,7 @@ from .sanitizer import PIISanitizer
 from ..security.prompt_guard import PromptGuard
 from ..security.trust_manager import TrustManager, TrustLevel
 from ..security.egress_filter import EgressFilter
+from ..security.outbound_filter import OutboundInfoFilter
 from .middleware import MiddlewareManager
 from .event_bus import EventBus, make_event
 from ..proxy.http_proxy import ALLOWED_DOMAINS, HTTPConnectProxy
@@ -268,6 +269,14 @@ async def lifespan(app: FastAPI):
         logger.warning(f"Failed to wire log sanitizer: {e}")
 
 
+    # Initialize outbound information filter
+    try:
+        app_state.outbound_filter = OutboundInfoFilter(app_state.config.outbound_filter)
+        logger.info(f"Outbound information filter initialized (mode: {app_state.outbound_filter.mode})")
+    except Exception as e:
+        logger.critical(f"Failed to initialize outbound information filter: {e}")
+        raise
+
     # Initialize security pipeline
     app_state.pipeline = SecurityPipeline(
         prompt_guard=app_state.prompt_guard,
@@ -275,6 +284,7 @@ async def lifespan(app: FastAPI):
         trust_manager=app_state.trust_manager,
         egress_filter=app_state.egress_filter,
         approval_queue=app_state.approval_queue,
+        outbound_filter=app_state.outbound_filter,
     )
     logger.info("Security pipeline initialized")
     logger.info("Security pipeline initialized")
@@ -1279,8 +1289,27 @@ async def forward_content(request: ForwardRequest, auth: AuthRequired):
     if agent_response:
         # Step 5.0: Filter out Claude XML internal blocks and run outbound PII scan
         if pipeline:
+            # Get user trust level for outbound filtering
+            user_trust_level = "UNTRUSTED"
+            if pipeline.trust_manager:
+                trust_info = pipeline.trust_manager.get_trust("default")
+                if trust_info:
+                    trust_levels = ["UNTRUSTED", "BASIC", "STANDARD", "ELEVATED", "FULL"]
+                    trust_score = trust_info[0]
+                    if trust_score >= 400:
+                        user_trust_level = "FULL"
+                    elif trust_score >= 300:
+                        user_trust_level = "ELEVATED"
+                    elif trust_score >= 200:
+                        user_trust_level = "STANDARD"
+                    elif trust_score >= 100:
+                        user_trust_level = "BASIC"
+            
             out_result = await pipeline.process_outbound(
-                response=agent_response, agent_id="default"
+                response=agent_response, 
+                agent_id="default",
+                user_trust_level=user_trust_level,
+                source=request.source
             )
             filtered_response = out_result.sanitized_message
         else:
