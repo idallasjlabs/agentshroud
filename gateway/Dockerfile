@@ -30,7 +30,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 
 # ClamAV for malware scanning
 RUN apt-get update && apt-get install -y --no-install-recommends \
-    clamav clamav-daemon clamav-freshclam \
+    clamav clamav-daemon clamav-freshclam clamdscan \
     && rm -rf /var/lib/apt/lists/* \
     && mkdir -p /var/lib/clamav \n    && freshclam --quiet 2>/dev/null || echo "freshclam: virus DB download deferred to runtime"
 
