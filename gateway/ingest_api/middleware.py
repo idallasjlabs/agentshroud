@@ -26,6 +26,8 @@ from gateway.security.token_validation import TokenValidator
 from gateway.security.consent_framework import ConsentFramework
 from gateway.security.subagent_monitor import SubagentMonitor, SubagentMonitorConfig
 from gateway.security.agent_isolation import AgentRegistry
+from gateway.security.rbac import RBACManager, Action, Resource, ToolTier
+from gateway.security.rbac_config import RBACConfig
 from gateway.security.session_manager import UserSessionManager
 from gateway.security.tool_result_sanitizer import ToolResultSanitizer, ToolResultPIIConfig
 
@@ -47,6 +49,15 @@ class MiddlewareManager:
         """Initialize all security modules."""
         self.original_request_data = None  # Track original request
         
+
+        # Initialize RBAC system
+        try:
+            self.rbac_config = RBACConfig()
+            self.rbac_manager = RBACManager(self.rbac_config)
+            logger.info("RBAC system initialized")
+        except Exception as e:
+            logger.error(f"Failed to initialize RBAC system: {e}")
+            self.rbac_manager = None
         # Initialize session manager for per-user isolation
         try:
             base_workspace = Path("/home/node/.openclaw/workspace")
@@ -178,6 +189,11 @@ class MiddlewareManager:
                     allowed=False,
                     reason="No user identification found"
                 )
+
+            # RBAC Check - Check basic permissions first
+            rbac_result = self._check_rbac_permissions(request_data, user_id)
+            if not rbac_result.allowed:
+                return rbac_result
             
             # Session Isolation Enforcement - This is the new critical security check
             isolation_result = self._enforce_session_isolation(request_data, user_id)
@@ -291,6 +307,130 @@ class MiddlewareManager:
                 reason=f"Middleware processing error: {str(e)}"
             )
 
+    def _check_rbac_permissions(self, request_data: Dict[str, Any], user_id: str) -> MiddlewareResult:
+        """Check RBAC permissions for the request."""
+        if not self.rbac_manager:
+            logger.warning("RBAC manager not available - proceeding without RBAC")
+            return MiddlewareResult(allowed=True)
+        
+        try:
+            message_content = request_data.get('message', '')
+            if isinstance(message_content, dict):
+                message_content = str(message_content)
+            
+            # Determine what the user is trying to do
+            action, resource, tool_tier = self._analyze_request_for_rbac(message_content, request_data)
+            
+            # Check basic permission
+            if action and resource:
+                context = {"tool_tier": tool_tier} if tool_tier else None
+                permission = self.rbac_manager.check_permission(user_id, action, resource, context)
+                
+                if not permission.allowed:
+                    if permission.requires_approval:
+                        logger.info(f"User {user_id} action requires approval: {permission.reason}")
+                        return MiddlewareResult(
+                            allowed=False,
+                            reason=f"Action requires approval: {permission.reason}"
+                        )
+                    else:
+                        logger.warning(f"RBAC denied user {user_id}: {permission.reason}")
+                        return MiddlewareResult(
+                            allowed=False,
+                            reason=f"Access denied: {permission.reason}"
+                        )
+            
+            # Check tool tier permissions specifically
+            if tool_tier:
+                tool_permission = self.rbac_manager.check_tool_permission(user_id, tool_tier)
+                if not tool_permission.allowed:
+                    if tool_permission.requires_approval:
+                        logger.info(f"User {user_id} tool usage requires approval: {tool_permission.reason}")
+                        return MiddlewareResult(
+                            allowed=False,
+                            reason=f"Tool usage requires approval: {tool_permission.reason}"
+                        )
+                    else:
+                        logger.warning(f"RBAC denied tool usage for user {user_id}: {tool_permission.reason}")
+                        return MiddlewareResult(
+                            allowed=False,
+                            reason=f"Tool access denied: {tool_permission.reason}"
+                        )
+            
+            # Log successful RBAC check for auditing
+            user_role = self.rbac_manager.get_user_role(user_id)
+            logger.debug(f"RBAC check passed for user {user_id} (role: {user_role.value})")
+            
+            return MiddlewareResult(allowed=True)
+            
+        except Exception as e:
+            logger.error(f"RBAC check error: {e}")
+            return MiddlewareResult(
+                allowed=False,
+                reason=f"RBAC check error: {str(e)}"
+            )
+
+    def _analyze_request_for_rbac(self, message_content: str, request_data: Dict[str, Any]) -> Tuple[Optional[Action], Optional[Resource], Optional[ToolTier]]:
+        """Analyze request to determine RBAC action, resource, and tool tier."""
+        message_lower = message_content.lower()
+        
+        # Determine action based on message content
+        action = None
+        resource = None
+        tool_tier = None
+        
+        # Check for file operations
+        file_patterns = [
+            r'(?:read|cat|view|open|ls|dir)',
+            r'(?:write|edit|create|save|modify)',
+            r'(?:delete|remove|rm|trash)',
+            r'(?:execute|run|exec)'
+        ]
+        
+        if any(re.search(pattern, message_lower) for pattern in file_patterns[:1]):
+            action = Action.READ
+            resource = Resource.FILES
+        elif any(re.search(pattern, message_lower) for pattern in file_patterns[1:2]):
+            action = Action.WRITE
+            resource = Resource.FILES
+        elif any(re.search(pattern, message_lower) for pattern in file_patterns[2:3]):
+            action = Action.DELETE
+            resource = Resource.FILES
+        elif any(re.search(pattern, message_lower) for pattern in file_patterns[3:4]):
+            action = Action.EXECUTE
+            resource = Resource.TOOLS
+        
+        # Determine tool tier based on operation type
+        critical_tools = ['ssh', 'sudo', 'rm -rf', 'format', 'delete database', 'drop table']
+        high_tools = ['git push', 'deploy', 'install', 'update system', 'network config']
+        medium_tools = ['exec', 'run', 'command', 'script']
+        low_tools = ['read', 'list', 'show', 'get', 'fetch']
+        
+        if any(tool in message_lower for tool in critical_tools):
+            tool_tier = ToolTier.CRITICAL
+        elif any(tool in message_lower for tool in high_tools):
+            tool_tier = ToolTier.HIGH
+        elif any(tool in message_lower for tool in medium_tools):
+            tool_tier = ToolTier.MEDIUM
+        elif any(tool in message_lower for tool in low_tools):
+            tool_tier = ToolTier.LOW
+        
+        # If we couldn't determine the action from content, default based on common patterns
+        if not action:
+            if '?' in message_content or any(word in message_lower for word in ['what', 'how', 'show', 'list']):
+                action = Action.READ
+                resource = Resource.SYSTEM
+                tool_tier = ToolTier.LOW
+            else:
+                action = Action.TOOL_USE
+                resource = Resource.TOOLS
+                tool_tier = ToolTier.MEDIUM  # Default to medium for unknown operations
+        
+        return action, resource, tool_tier
+
+    def get_rbac_manager(self) -> Optional[RBACManager]:
+        """Get the RBAC manager for external access."""
+        return self.rbac_manager
     def _extract_user_id(self, request_data: Dict[str, Any]) -> Optional[str]:
         """Extract user ID from request data."""
         # Check session context first
