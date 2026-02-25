@@ -1,0 +1,95 @@
+# AgentShroud Configuration with Tool Risk Tiers
+gateway:
+  bind: "127.0.0.1"
+  port: 8080
+  auth_method: shared_secret
+  # auth_token will be auto-generated if not provided
+
+security:
+  pii_redaction: true
+  pii_detection_engine: presidio
+  pii_min_confidence: 0.8
+  approval_queue: true
+  require_approval_for: []  # Deprecated - use tool_risk section instead
+
+# Tool Risk Tier Configuration
+tool_risk:
+  # Global settings
+  enforce_mode: true          # Set to false to disable approval enforcement
+  monitor_only_mode: false    # Set to true to log only (no blocking)
+  owner_user_id: ""          # Telegram user ID for owner bypass (optional)
+  
+  # Risk tier policies
+  critical:
+    require_approval: true
+    timeout_seconds: 300      # 5 minutes
+    timeout_action: deny      # deny or approve on timeout
+    notify_channels:
+      - websocket
+      - telegram_admin
+    owner_bypass: false       # Owner cannot bypass critical approvals
+  
+  high:
+    require_approval: true
+    timeout_seconds: 300
+    timeout_action: deny
+    notify_channels:
+      - websocket
+    owner_bypass: true        # Owner can bypass high-tier approvals
+  
+  medium:
+    require_approval: false   # Monitor only
+    timeout_seconds: 300
+    timeout_action: deny
+    notify_channels:
+      - websocket
+    owner_bypass: true
+  
+  low:
+    require_approval: false   # No approval needed
+    timeout_seconds: 300
+    timeout_action: deny
+    notify_channels:
+      - websocket
+    owner_bypass: true
+  
+  # Tool classifications (override defaults here if needed)
+  tool_classifications:
+    # Critical: irreversible external impact
+    exec: critical
+    cron: critical
+    sessions_send: critical
+    
+    # High: sensitive resource access
+    nodes: high
+    browser: high
+    apply_patch: high
+    subagents: high
+    
+    # Medium: read potentially sensitive data
+    grep: medium
+    find: medium
+    sessions_list: medium
+    sessions_history: medium
+    session_status: medium
+    
+    # Low: safe read-only operations
+    ls: low
+    canvas: low
+    process: low
+
+logging:
+  level: INFO
+
+channels:
+  telegram:
+    enabled: true
+  email:
+    enabled: true
+    allowed_recipients: []
+    rate_limit_per_hour: 10
+    require_approval_for_new: true
+
+mcp_proxy:
+  enabled: true
+  servers: {}  # Add your MCP servers here
