@@ -212,8 +212,9 @@ class TestPathIsolationManager:
         user_id = "test_user"
         manager.register_user_session(user_id)
         
-        # Path already in agentshroud structure
-        already_isolated = f"/tmp/agentshroud/{user_id}/file.txt"
+        # Path already in manager's namespace (use actual base dir)
+        user_dir = manager._get_user_temp_dir(user_id)
+        already_isolated = f"{user_dir}/file.txt"
         result = manager.rewrite_path(already_isolated, user_id)
         
         assert result.was_rewritten is False
