@@ -15,6 +15,7 @@ Enforce mode: hard path restrictions with separation of privilege protections.
 import fnmatch
 import logging
 import os
+import sys
 import re
 import time
 from dataclasses import dataclass, field
@@ -227,10 +228,15 @@ class FileSandbox:
             resolved = os.path.realpath(path)
         except (OSError, ValueError):
             resolved = path
+        # macOS: /tmp -> /private/tmp, /etc -> /private/etc - normalize for pattern matching
+        if sys.platform == "darwin" and resolved.startswith("/private/"):
+            resolved_canonical = resolved[len("/private"):]  # /private/tmp/x -> /tmp/x
+        else:
+            resolved_canonical = resolved
 
         # Check blocked paths against both original and resolved
         if self._matches_blocked(path) or (
-            resolved != path and self._matches_blocked(resolved)
+            resolved != path and self._matches_blocked(resolved)) or self._matches_blocked(resolved_canonical
         ):
             flags.append(f"security-sensitive path: {path}")
 
@@ -243,7 +249,7 @@ class FileSandbox:
             if operation == "write":
                 # For writes, use explicit allowed list or defaults
                 allowed_paths = self.config.allowed_write_paths or self.config.allowed_write_default
-                if not (self._matches_allowed_paths(path, allowed_paths) or self._matches_allowed_paths(resolved, allowed_paths)):
+                if not (self._matches_allowed_paths(path, allowed_paths) or self._matches_allowed_paths(resolved, allowed_paths) or self._matches_allowed_paths(resolved_canonical, allowed_paths)):
                     flags.append(f"write outside allowed workspace: {path}")
             elif operation == "read":
                 # For reads, check if it's in blocked paths
