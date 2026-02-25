@@ -2867,3 +2867,129 @@ async def deep_security_test(auth: AuthRequired):
         "verdict": "ALL CLEAR" if failed == 0 else f"{failed} FAILURE(S)"
     }
     return results
+
+
+# ═══════════════════════════════════════════════════
+# RBAC MANAGEMENT ENDPOINTS  
+# ═══════════════════════════════════════════════════
+
+@app.get("/manage/rbac/users")
+async def list_users_and_roles(request: Request):
+    """List all users and their roles (admin+ only)."""
+    # Extract user ID from request (this would need proper implementation)
+    user_id = request.headers.get("X-User-ID") or "unknown"
+    
+    if not hasattr(app_state, "middleware_manager") or not app_state.middleware_manager:
+        raise HTTPException(status_code=503, detail="RBAC system not available")
+    
+    rbac_manager = app_state.middleware_manager.get_rbac_manager()
+    if not rbac_manager:
+        raise HTTPException(status_code=503, detail="RBAC manager not available")
+    
+    # Check permission
+    result = rbac_manager.list_users_and_roles(user_id)
+    if not result.allowed:
+        raise HTTPException(status_code=403, detail=result.reason)
+    
+    try:
+        users_info = []
+        for user_id, role in rbac_manager.config.user_roles.items():
+            users_info.append({
+                "user_id": user_id,
+                "role": role.value,
+                "is_owner": rbac_manager.config.is_owner(user_id)
+            })
+        
+        return {
+            "users": users_info,
+            "total": len(users_info),
+            "role_hierarchy": rbac_manager.get_role_hierarchy()
+        }
+        
+    except Exception as e:
+        logger.error(f"Error listing users: {e}")
+        raise HTTPException(status_code=500, detail=f"Error listing users: {str(e)}")
+
+
+@app.put("/manage/rbac/users/{target_user_id}")
+async def set_user_role(target_user_id: str, request: Request, role: str):
+    """Set a user's role (owner only)."""
+    # Extract requesting user ID from request
+    requesting_user_id = request.headers.get("X-User-ID") or "unknown"
+    
+    if not hasattr(app_state, "middleware_manager") or not app_state.middleware_manager:
+        raise HTTPException(status_code=503, detail="RBAC system not available")
+    
+    rbac_manager = app_state.middleware_manager.get_rbac_manager()
+    if not rbac_manager:
+        raise HTTPException(status_code=503, detail="RBAC manager not available")
+    
+    # Validate role
+    from gateway.security.rbac_config import Role
+    try:
+        new_role = Role(role)
+    except ValueError:
+        raise HTTPException(status_code=400, detail=f"Invalid role: {role}")
+    
+    # Set role
+    result = rbac_manager.set_user_role(requesting_user_id, target_user_id, new_role)
+    if not result.allowed:
+        raise HTTPException(status_code=403, detail=result.reason)
+    
+    return {
+        "success": True,
+        "message": f"User {target_user_id} role set to {role}",
+        "user_id": target_user_id,
+        "new_role": role
+    }
+
+
+@app.get("/manage/rbac/users/{user_id}/permissions")
+async def get_user_permissions(user_id: str, request: Request):
+    """Get permissions summary for a user (admin+ only)."""
+    # Extract requesting user ID from request
+    requesting_user_id = request.headers.get("X-User-ID") or "unknown"
+    
+    if not hasattr(app_state, "middleware_manager") or not app_state.middleware_manager:
+        raise HTTPException(status_code=503, detail="RBAC system not available")
+    
+    rbac_manager = app_state.middleware_manager.get_rbac_manager()
+    if not rbac_manager:
+        raise HTTPException(status_code=503, detail="RBAC manager not available")
+    
+    # Check if requesting user has permission to view user info
+    from gateway.security.rbac import Action, Resource
+    permission = rbac_manager.check_permission(requesting_user_id, Action.READ, Resource.USERS)
+    if not permission.allowed:
+        raise HTTPException(status_code=403, detail=permission.reason)
+    
+    try:
+        summary = rbac_manager.get_user_permissions_summary(user_id)
+        return summary
+        
+    except Exception as e:
+        logger.error(f"Error getting user permissions: {e}")
+        raise HTTPException(status_code=500, detail=f"Error getting permissions: {str(e)}")
+
+
+@app.get("/manage/rbac/my-permissions")
+async def get_my_permissions(request: Request):
+    """Get permissions summary for the current user."""
+    # Extract user ID from request
+    user_id = request.headers.get("X-User-ID") or "unknown"
+    
+    if not hasattr(app_state, "middleware_manager") or not app_state.middleware_manager:
+        raise HTTPException(status_code=503, detail="RBAC system not available")
+    
+    rbac_manager = app_state.middleware_manager.get_rbac_manager()
+    if not rbac_manager:
+        raise HTTPException(status_code=503, detail="RBAC manager not available")
+    
+    try:
+        summary = rbac_manager.get_user_permissions_summary(user_id)
+        return summary
+        
+    except Exception as e:
+        logger.error(f"Error getting user permissions: {e}")
+        raise HTTPException(status_code=500, detail=f"Error getting permissions: {str(e)}")
+
