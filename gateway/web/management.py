@@ -12,10 +12,12 @@ from __future__ import annotations
 import logging
 from pathlib import Path
 
-from fastapi import APIRouter, Depends
+from fastapi import APIRouter, Depends, HTTPException
 from fastapi.responses import HTMLResponse
+from pydantic import BaseModel
 
 from .api import require_auth
+from ..security.egress_config import get_egress_config, set_egress_config, EgressFilterConfig
 
 logger = logging.getLogger("agentshroud.web.management")
 
@@ -245,3 +247,63 @@ async def killswitch():
     </body>
     </html>
     """)
+
+
+# Pydantic models for egress management
+class EgressAllowlistUpdate(BaseModel):
+    """Request model for updating egress allowlist."""
+    domains: list[str]
+    mode: str = "enforce"  # "enforce" or "monitor"
+
+
+class EgressAllowlistResponse(BaseModel):
+    """Response model for egress allowlist."""
+    domains: list[str]
+    mode: str
+    denylist: list[str]
+
+
+@router.get("/egress/allowlist", response_model=EgressAllowlistResponse)
+async def get_egress_allowlist():
+    """Get current egress allowlist configuration."""
+    config = get_egress_config()
+    return EgressAllowlistResponse(
+        domains=config.default_allowlist,
+        mode=config.mode,
+        denylist=config.default_denylist
+    )
+
+
+@router.put("/egress/allowlist")
+async def update_egress_allowlist(update: EgressAllowlistUpdate):
+    """Update egress allowlist configuration (owner only)."""
+    # Validate mode
+    if update.mode not in ("enforce", "monitor"):
+        raise HTTPException(
+            status_code=400, 
+            detail="Mode must be 'enforce' or 'monitor'"
+        )
+    
+    # Get current config
+    current_config = get_egress_config()
+    
+    # Create updated config
+    new_config = EgressFilterConfig(
+        mode=update.mode,
+        default_allowlist=update.domains,
+        default_denylist=current_config.default_denylist,  # Keep existing denylist
+        agent_allowlists=current_config.agent_allowlists,
+        allowed_ips=current_config.allowed_ips,
+        allowed_ports=current_config.allowed_ports,
+        strict_mode=current_config.strict_mode
+    )
+    
+    # Update global config
+    set_egress_config(new_config)
+    
+    return {
+        "status": "success", 
+        "message": f"Egress allowlist updated with {len(update.domains)} domains in {update.mode} mode",
+        "domains": update.domains,
+        "mode": update.mode
+    }
