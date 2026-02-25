@@ -12,7 +12,7 @@ verification capabilities.
 
 import json
 import logging
-from datetime import datetime
+from datetime import datetime, timezone
 from io import StringIO
 from typing import Optional, TextIO, Union
 from urllib.parse import quote
@@ -137,7 +137,7 @@ class AuditExporter:
             "record_count": len(events),
             "hash_verification": hash_verification,
             "export_content": export_content if output is None else None,
-            "export_timestamp": datetime.now(datetime.timezone.utc).isoformat() + "Z",
+            "export_timestamp": datetime.now(tz=timezone.utc).isoformat() + "Z",
         }
 
     def _export_cef(self, events: list[AuditEvent]) -> str:
@@ -196,7 +196,7 @@ class AuditExporter:
         export_data = {
             **self.config.jsonld_context,
             "@type": "AuditExport",
-            "exportTimestamp": datetime.now(datetime.timezone.utc).isoformat() + "Z",
+            "exportTimestamp": datetime.now(tz=timezone.utc).isoformat() + "Z",
             "events": []
         }
         
@@ -224,7 +224,7 @@ class AuditExporter:
         export_data = {
             "export_metadata": {
                 "format": "json",
-                "export_timestamp": datetime.now(datetime.timezone.utc).isoformat() + "Z",
+                "export_timestamp": datetime.now(tz=timezone.utc).isoformat() + "Z",
                 "record_count": len(events),
                 "vendor": self.config.cef_vendor,
                 "product": self.config.cef_product,
