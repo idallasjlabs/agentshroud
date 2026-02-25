@@ -8,7 +8,7 @@ from __future__ import annotations
 Egress Filtering — block unauthorized outbound traffic.
 
 Domain/IP allowlist with default-deny policy. Configurable per-agent
-with logging of all egress attempts.
+with logging of all egress attempts. Supports enforce and monitor modes.
 """
 
 
@@ -19,6 +19,8 @@ from dataclasses import dataclass, field
 from enum import Enum
 from typing import Optional
 from urllib.parse import urlparse
+
+from .egress_config import get_egress_config, EgressFilterConfig
 
 logger = logging.getLogger(__name__)
 
@@ -96,9 +98,12 @@ class EgressPolicy:
 
 
 class EgressFilter:
-    """Filter outbound connections based on allowlists."""
+    """Filter outbound connections based on allowlists with enforce/monitor modes."""
 
-    def __init__(self, default_policy: Optional[EgressPolicy] = None):
+    def __init__(self, 
+                 config: Optional[EgressFilterConfig] = None,
+                 default_policy: Optional[EgressPolicy] = None):
+        self.config = config or get_egress_config()
         self.default_policy = default_policy or EgressPolicy()
         self._agent_policies: dict[str, EgressPolicy] = {}
         self._log: list[EgressAttempt] = []
@@ -137,6 +142,16 @@ class EgressFilter:
                 port = parsed.port
             elif port is None:
                 port = 443 if parsed.scheme == "https" else 80
+        elif ":" in destination and not self._is_ipv6(destination):
+            # Handle host:port format (not IPv6)
+            try:
+                host_part, port_part = destination.rsplit(":", 1)
+                parsed_dest = host_part
+                if port is None:
+                    port = int(port_part)
+            except (ValueError, IndexError):
+                # If parsing fails, treat as hostname
+                parsed_dest = destination
 
         # Block private/loopback IPs unless explicitly in allowlist
         if self._is_private_ip(parsed_dest) and not policy.matches_ip(parsed_dest):
@@ -150,51 +165,125 @@ class EgressFilter:
 
         # Check port first
         if not policy.matches_port(port):
+            action = EgressAction.DENY if self.config.mode == "enforce" else EgressAction.ALLOW
             return self._record(
                 agent_id,
                 destination,
                 port,
-                EgressAction.DENY,
-                f"port {port} not allowed",
+                action,
+                f"port {port} not allowed ({'blocked' if action == EgressAction.DENY else 'monitored'})",
             )
 
-        # Check domain
+        # Check denylist first (overrides allowlist in strict mode)
+        if self.config.is_denylisted(parsed_dest):
+            action = EgressAction.DENY if self.config.mode == "enforce" else EgressAction.ALLOW
+            return self._record(
+                agent_id,
+                destination,
+                port,
+                action,
+                f"domain '{parsed_dest}' in denylist ({'blocked' if action == EgressAction.DENY else 'monitored'})",
+            )
+
+        # Check config-based allowlist
+        effective_allowlist = self.config.get_effective_allowlist(agent_id)
+        if self._matches_allowlist_domain(parsed_dest, effective_allowlist):
+            return self._record(
+                agent_id,
+                destination,
+                port,
+                EgressAction.ALLOW,
+                f"domain '{parsed_dest}' in config allowlist",
+            )
+
+        # Check policy-based domain allowlist (legacy)
         if policy.matches_domain(parsed_dest):
             return self._record(
                 agent_id,
                 destination,
                 port,
                 EgressAction.ALLOW,
-                f"domain '{parsed_dest}' in allowlist",
+                f"domain '{parsed_dest}' in policy allowlist",
             )
 
-        # Check IP
+        # Check config-based IP allowlist
+        if parsed_dest and self._matches_ip_list(parsed_dest, self.config.allowed_ips):
+            return self._record(
+                agent_id,
+                destination,
+                port,
+                EgressAction.ALLOW,
+                f"IP '{parsed_dest}' in config allowlist",
+            )
+
+        # Check policy-based IP allowlist (legacy)
         if policy.matches_ip(parsed_dest):
             return self._record(
                 agent_id,
                 destination,
                 port,
                 EgressAction.ALLOW,
-                f"IP '{parsed_dest}' in allowlist",
+                f"IP '{parsed_dest}' in policy allowlist",
             )
 
-        # Default deny
-        if policy.deny_all:
+        # Default behavior based on mode
+        if self.config.mode == "enforce":
+            # In enforce mode, unknown domains are blocked
             return self._record(
                 agent_id,
                 destination,
                 port,
                 EgressAction.DENY,
-                f"default deny: '{parsed_dest}' not in allowlist",
+                f"enforce mode: '{parsed_dest}' not in allowlist - BLOCKED",
+            )
+        else:
+            # In monitor mode, unknown domains are allowed but logged
+            return self._record(
+                agent_id,
+                destination,
+                port,
+                EgressAction.ALLOW,
+                f"monitor mode: '{parsed_dest}' not in allowlist - logged only",
             )
 
-        return self._record(
-            agent_id,
-            destination,
-            port,
-            EgressAction.ALLOW,
-            "default allow (deny_all=False)",
-        )
+    def _matches_allowlist_domain(self, domain: str, allowlist: set[str]) -> bool:
+        """Check if domain matches any domain in the allowlist (supports wildcards)."""
+        domain = domain.lower().rstrip(".")
+        for allowed in allowlist:
+            allowed = allowed.lower().rstrip(".")
+            if allowed.startswith("*."):
+                base = allowed[2:]  # "github.com"
+                if domain == base:
+                    return True
+                # Only match one level deep: "sub.github.com" yes, "a.b.github.com" no
+                if domain.endswith("." + base):
+                    prefix = domain[: -(len(base) + 1)]
+                    if "." not in prefix:  # Only one subdomain level
+                        return True
+            elif domain == allowed:
+                return True
+        return False
+
+    def _matches_ip_list(self, ip_str: str, ip_list: list[str]) -> bool:
+        """Check if IP matches any IP/CIDR in the list."""
+        try:
+            addr = ipaddress.ip_address(ip_str)
+        except ValueError:
+            return False
+        for allowed in ip_list:
+            try:
+                network = ipaddress.ip_network(allowed, strict=False)
+                if addr in network:
+                    return True
+            except ValueError:
+                if ip_str == allowed:
+                    return True
+        return False
+
+    @staticmethod
+    def _is_ipv6(host: str) -> bool:
+        """Check if host looks like an IPv6 address."""
+        return "::" in host or (host.count(":") > 2)
 
     @staticmethod
     def _is_private_ip(host: str) -> bool:
@@ -233,6 +322,15 @@ class EgressFilter:
         action: EgressAction,
         rule: str,
     ) -> EgressAttempt:
+        # Add helpful error message for enforce mode blocks
+        details = ""
+        if action == EgressAction.DENY and self.config.mode == "enforce":
+            details = (
+                f"AgentShroud blocked this request in enforce mode. "
+                f"Domain '{dest}' is not in the allowlist. "
+                f"Contact your administrator to add trusted domains."
+            )
+        
         attempt = EgressAttempt(
             timestamp=time.time(),
             agent_id=agent_id,
@@ -240,6 +338,7 @@ class EgressFilter:
             port=port,
             action=action,
             rule=rule,
+            details=details,
         )
         self._log.append(attempt)
         if len(self._log) > self._max_log_size:
@@ -247,10 +346,14 @@ class EgressFilter:
 
         if action == EgressAction.DENY:
             logger.warning(
-                f"EGRESS DENIED: agent={agent_id} dest={dest} port={port} rule={rule}"
+                f"EGRESS DENIED: agent={agent_id} dest={dest} port={port} "
+                f"mode={self.config.mode} rule={rule}"
             )
         else:
-            logger.info(f"EGRESS ALLOWED: agent={agent_id} dest={dest} port={port}")
+            logger.info(
+                f"EGRESS ALLOWED: agent={agent_id} dest={dest} port={port} "
+                f"mode={self.config.mode}"
+            )
 
         return attempt
 
