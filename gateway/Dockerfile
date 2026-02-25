@@ -95,6 +95,7 @@ COPY SECURITY.md /app/SECURITY.md
 COPY CONTRIBUTING.md /app/CONTRIBUTING.md
 COPY examples/ /app/examples/
 COPY docker/docker-compose.yml /app/docker/docker-compose.yml
+COPY setup.cfg /app/setup.cfg
 COPY docker/scripts/killswitch.sh /app/docker/scripts/killswitch.sh
 
 # Switch to non-root user

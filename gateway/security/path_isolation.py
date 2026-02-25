@@ -207,9 +207,10 @@ class PathIsolationManager:
                 # Calculate relative path from the isolated directory
                 try:
                     relative_path = os.path.relpath(abs_path, isolated_abs)
-                    # Don't rewrite if it's already in an agentshroud subdirectory
-                    if relative_path.startswith('agentshroud' + os.sep):
-                        return path
+                    # Check if path is already in the user's namespace
+                    user_temp_dir = self._get_user_temp_dir(user_id)
+                    if abs_path.startswith(user_temp_dir + os.sep) or abs_path == user_temp_dir:
+                        return abs_path
                     
                     # Rewrite to user's isolated directory
                     user_temp_dir = self._get_user_temp_dir(user_id)
