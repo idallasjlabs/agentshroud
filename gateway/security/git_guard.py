@@ -10,6 +10,7 @@ from __future__ import annotations
 
 
 import os
+import stat
 import re
 import json
 import logging
@@ -205,7 +206,10 @@ class GitGuard:
         for hook_file in hooks_dir.iterdir():
             if hook_file.is_file() and not hook_file.name.endswith(".sample"):
                 # Check if hook is executable
-                if os.access(hook_file, os.X_OK):
+                # Check if hook has execute permissions (using stat to avoid noexec filesystem issues)
+                file_stat = os.stat(hook_file)
+                has_execute_permission = bool(file_stat.st_mode & stat.S_IXUSR)
+                if has_execute_permission:
                     findings.extend(self._analyze_script_file(hook_file, "git_hook"))
                 else:
                     # Non-executable hook - still analyze but lower severity

@@ -229,10 +229,31 @@ class FileSandbox:
 
         return verdict
 
+    def _detect_raw_traversal(self, path: str) -> str:
+        """Detect path traversal attempts in raw input before normalization."""
+        # Detect double-dot patterns (including double-encoded)
+        if re.search(r'\.\.+[/\\]', path) or re.search(r'[/\\]\.\.+', path):
+            return "path traversal sequence detected"
+        
+        # Detect Windows-style traversal with backslashes  
+        if '\\' in path and ('system32' in path.lower() or 'windows' in path.lower()):
+            return "Windows-style path traversal detected"
+            
+        # Detect encoded traversal patterns
+        if '....//....' in path or '....//' in path:
+            return "double-encoded traversal detected"
+            
+        return ""
+
     def _check(
         self, path: str, agent_id: str, operation: str, size: int = 0
     ) -> FileVerdict:
         flags: list[str] = []
+
+        # Pre-normalization traversal detection
+        raw_traversal = self._detect_raw_traversal(path)
+        if raw_traversal:
+            flags.append(raw_traversal)
 
         # Resolve symlinks to prevent path traversal
         try:
