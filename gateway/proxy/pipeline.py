@@ -8,7 +8,7 @@ from __future__ import annotations
 Proxy Pipeline — all messages flow through security checks.
 
 Inbound: prompt guard → PII sanitizer → trust check → audit → forward
-Outbound: PII sanitizer → outbound info filter → egress filter → audit → return
+Outbound: PII sanitizer → outbound info filter → canary tripwire → encoding detector → egress filter → audit → return
 """
 
 
@@ -54,6 +54,11 @@ class PipelineResult:
     info_filter_redactions: list[str] = field(default_factory=list)
     info_filter_redaction_count: int = 0
     info_disclosure_risk: str = ""
+    # New fields for canary tripwire and encoding detection
+    canary_detections: list[str] = field(default_factory=list)
+    canary_blocked: bool = False
+    encoding_detections: list[str] = field(default_factory=list)
+    encoding_decoded_segments: int = 0
 
     def to_dict(self) -> dict[str, Any]:
         return {
@@ -74,6 +79,10 @@ class PipelineResult:
             "info_filter_redactions": self.info_filter_redactions,
             "info_filter_redaction_count": self.info_filter_redaction_count,
             "info_disclosure_risk": self.info_disclosure_risk,
+            "canary_detections": self.canary_detections,
+            "canary_blocked": self.canary_blocked,
+            "encoding_detections": self.encoding_detections,
+            "encoding_decoded_segments": self.encoding_decoded_segments,
         }
 
 
@@ -153,7 +162,8 @@ class SecurityPipeline:
     """Main security pipeline that all messages pass through.
 
     Wires together: PromptGuard, PIISanitizer, TrustManager,
-    EgressFilter, ApprovalQueue, OutboundInfoFilter, and AuditChain.
+    EgressFilter, ApprovalQueue, OutboundInfoFilter, CanaryTripwire,
+    EncodingDetector, and AuditChain.
     """
 
     def __init__(
@@ -164,6 +174,8 @@ class SecurityPipeline:
         egress_filter=None,
         approval_queue=None,
         outbound_filter=None,
+        canary_tripwire=None,
+        encoding_detector=None,
         prompt_block_threshold: float = 0.8,
         approval_actions: list[str] | None = None,
     ):
@@ -173,6 +185,8 @@ class SecurityPipeline:
         self.egress_filter = egress_filter
         self.approval_queue = approval_queue
         self.outbound_filter = outbound_filter
+        self.canary_tripwire = canary_tripwire
+        self.encoding_detector = encoding_detector
         self.prompt_block_threshold = prompt_block_threshold
         self.approval_actions = approval_actions or [
             "execute_command",
@@ -190,6 +204,8 @@ class SecurityPipeline:
             "outbound_sanitized": 0,
             "outbound_blocked": 0,
             "outbound_info_filtered": 0,
+            "canary_blocked": 0,
+            "encoding_detected": 0,
             "pii_redactions_total": 0,
             "info_redactions_total": 0,
         }
@@ -210,7 +226,7 @@ class SecurityPipeline:
         # Warn loudly about recommended guards that are absent.
         # These don't block startup but produce CRITICAL logs so operators
         # notice the degraded security posture immediately.
-        _RECOMMENDED_GUARDS = ("prompt_guard", "egress_filter", "outbound_filter")
+        _RECOMMENDED_GUARDS = ("prompt_guard", "egress_filter", "outbound_filter", "canary_tripwire", "encoding_detector")
         for guard_name in _RECOMMENDED_GUARDS:
             if getattr(self, guard_name) is None:
                 logger.critical(
@@ -368,6 +384,62 @@ class SecurityPipeline:
                         f"{len(filter_result.matches)} matches, categories={filter_result.categories_found}, "
                         f"trust={user_trust_level}, source={source}"
                     )
+
+        # Step 1.6: Encoding Bypass Detection
+        if self.encoding_detector:
+            encoding_result = self.encoding_detector.detect_and_decode(
+                text=result.sanitized_message,
+                source=source
+            )
+            
+            # Re-scan decoded content with previous filters if encoding was detected
+            if encoding_result.has_encoded_content:
+                result.encoding_detections = encoding_result.encodings_detected
+                result.encoding_decoded_segments = len(encoding_result.decoded_segments)
+                self._stats["encoding_detected"] += 1
+                
+                # Update the message to the fully decoded version for further processing
+                result.sanitized_message = encoding_result.fully_decoded_text
+                
+                logger.info(
+                    f"Encoding bypass detected: {len(encoding_result.encodings_detected)} methods, "
+                    f"{len(encoding_result.decoded_segments)} segments decoded from {source}"
+                )
+
+        # Step 1.7: Canary Tripwire (Final Defense)
+        if self.canary_tripwire:
+            tripwire_result = self.canary_tripwire.scan_response(
+                response_text=result.sanitized_message,
+                source=source
+            )
+            
+            if tripwire_result.is_blocked:
+                # BLOCK the entire response - no redaction, complete block
+                result.action = PipelineAction.BLOCK
+                result.blocked = True
+                result.canary_blocked = True
+                result.block_reason = f"Canary tripwire triggered: {len(tripwire_result.detections)} detections"
+                result.canary_detections = [d.canary_value for d in tripwire_result.detections]
+                self._stats["canary_blocked"] += 1
+                
+                # Audit the block
+                entry = self.audit_chain.append(
+                    f"CANARY_BLOCKED: {len(tripwire_result.detections)} detections", 
+                    "outbound_canary_blocked", 
+                    {**(metadata or {}), "canary_methods": tripwire_result.scan_methods_used}
+                )
+                result.audit_entry_id = entry.id
+                result.audit_hash = entry.chain_hash
+                result.processing_time_ms = (time.time() - start) * 1000
+                
+                # Log critical alert
+                logger.critical(
+                    f"CANARY TRIPWIRE BLOCKED RESPONSE from {source}: "
+                    f"{len(tripwire_result.detections)} canary detections, "
+                    f"methods={tripwire_result.scan_methods_used}"
+                )
+                
+                return result
 
         # Step 2: Egress filter
         if self.egress_filter and destination_urls:
