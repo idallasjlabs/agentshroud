@@ -38,6 +38,11 @@ AUTH = {"Authorization": "Bearer test-token-12345"}
 @pytest.mark.asyncio
 async def test_forward_pii_sanitized_and_ledger_entry(client):
     """Forward content → PII sanitized → ledger entry created → event bus fired."""
+    # Ensure test users have RBAC permissions
+    from gateway.security.rbac_config import Role
+    if hasattr(app_state, 'middleware_manager') and app_state.middleware_manager and hasattr(app_state.middleware_manager, 'rbac_manager') and app_state.middleware_manager.rbac_manager:
+        app_state.middleware_manager.rbac_manager.config.user_roles["test-user"] = Role.COLLABORATOR
+        app_state.middleware_manager.rbac_manager.config.user_roles["api"] = Role.COLLABORATOR
     bus: EventBus = getattr(app_state, "event_bus", None)
     events_before = len(bus._recent_events) if bus else 0
 
