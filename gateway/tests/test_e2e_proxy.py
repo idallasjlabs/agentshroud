@@ -24,6 +24,7 @@ from gateway.proxy.forwarder import ForwarderConfig, HTTPForwarder
 from gateway.proxy.webhook_receiver import WebhookReceiver
 from gateway.proxy.sidecar import ScanRequest, SidecarScanner
 from gateway.security.prompt_guard import PromptGuard
+from gateway.security.egress_config import EgressFilterConfig
 from gateway.security.egress_filter import EgressFilter, EgressPolicy
 from gateway.security.trust_manager import TrustManager
 from gateway.ingest_api.sanitizer import PIISanitizer
