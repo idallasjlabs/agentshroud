@@ -286,6 +286,12 @@ async def lifespan(app: FastAPI):
         logger.critical(f"Failed to initialize MiddlewareManager: {e}")
         raise
 
+    # Configure middleware with tool result PII scanning
+    try:
+        app_state.middleware_manager.set_config(app_state.config)
+        logger.info("Middleware configured with tool result PII scanning")
+    except Exception as e:
+        logger.error(f"Failed to configure middleware: {e}")
     # Wire log sanitizer into Python logging
     try:
         log_sanitizer = app_state.middleware_manager.get_log_sanitizer()
