@@ -89,3 +89,46 @@ def detect_base64_payloads(text: str) -> list[str]:
             continue
     
     return decoded_payloads
+
+
+# Markdown exfiltration patterns
+_MD_IMAGE = re.compile(r'!\[([^\]]*)\]\(https?://[^)]+\)')
+_MD_LINK_EXFIL = re.compile(
+    r'\[([^\]]*)\]\(https?://(?!(?:github\.com|docs\.|wikipedia\.org|stackoverflow\.com))[^)]*'
+    r'(?:exfil|leak|steal|callback|webhook|collect|log|track|ping|beacon)[^)]*\)',
+    re.IGNORECASE
+)
+_MD_IMAGE_TEMPLATE = re.compile(
+    r'!\[([^\]]*)\]\(https?://[^)]*(?:\{\{|%7[Bb]|\$\{|SYSTEM|SECRET|KEY|TOKEN|PASSWORD|API_KEY|BEARER)[^)]*\)',
+    re.IGNORECASE
+)
+
+
+def strip_markdown_exfil(text: str) -> str:
+    """
+    Strip potentially malicious markdown from tool results.
+    
+    Removes:
+    - Markdown images pointing to external URLs (data exfil via image loads)
+    - Links with template variables ({{secret}}, ${key}, etc.)
+    - Links to known exfil-pattern domains
+    
+    Preserves:
+    - Plain text content
+    - Code blocks
+    - Internal/documentation links
+    """
+    if not text:
+        return text
+    
+    # Strip images with template injection
+    text = _MD_IMAGE_TEMPLATE.sub(r'[Image removed: potential data exfiltration]', text)
+    
+    # Strip all external markdown images from tool results
+    # (tool results should not trigger image loads)
+    text = _MD_IMAGE.sub(r'[Image: \1]', text)
+    
+    # Strip links to exfil-pattern URLs
+    text = _MD_LINK_EXFIL.sub(r'[Link removed: suspicious URL pattern]', text)
+    
+    return text

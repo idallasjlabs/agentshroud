@@ -35,6 +35,7 @@ from gateway.security.memory_integrity import MemoryIntegrityMonitor
 from gateway.security.memory_lifecycle import MemoryLifecycleManager
 from gateway.security.tool_result_injection import ToolResultInjectionScanner
 from gateway.security.xml_leak_filter import XMLLeakFilter
+from gateway.security.input_normalizer import strip_markdown_exfil
 
 logger = logging.getLogger(__name__)
 

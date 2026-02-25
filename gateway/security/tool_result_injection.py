@@ -10,7 +10,7 @@ are embedded in web pages, emails, or other tool results that the agent processe
 """
 from __future__ import annotations
 
-from gateway.security.input_normalizer import normalize_input
+from gateway.security.input_normalizer import normalize_input, strip_markdown_exfil
 
 import base64
 import re
@@ -253,6 +253,9 @@ class ToolResultInjectionScanner:
 
         # Normalize to defeat encoding evasion
         result_content = normalize_input(result_content)
+
+        # Strip markdown exfiltration attempts from tool output
+        result_content = strip_markdown_exfil(result_content)
 
         if not result_content or not result_content.strip():
             return InjectionResult(
