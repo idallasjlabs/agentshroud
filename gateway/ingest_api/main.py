@@ -69,6 +69,7 @@ from ..proxy.webhook_receiver import WebhookReceiver
 from ..proxy.pipeline import SecurityPipeline
 from gateway.security.session_manager import UserSessionManager
 from ..web.api import router as management_api_router
+from ..security.killswitch_monitor import KillSwitchMonitor
 from ..web.management import router as management_dashboard_router
 from ..web.dashboard_endpoints import router as dashboard_api_router, install_log_handler
 from .version_routes import router as version_router
@@ -372,6 +373,16 @@ async def lifespan(app: FastAPI):
     except Exception as e:
         logger.error(f"✗ AlertDispatcher: {e}")
         app_state.alert_dispatcher = None
+
+    # -- KillSwitchMonitor: automated kill switch verification and heartbeat monitoring --
+    try:
+        app_state.killswitch_monitor = KillSwitchMonitor(
+            alert_dispatcher=app_state.alert_dispatcher
+        )
+        logger.info("✓ KillSwitchMonitor → kill switch verification and anomaly detection enabled")
+    except Exception as e:
+        logger.error(f"✗ KillSwitchMonitor: {e}")
+        app_state.killswitch_monitor = None
 
     # -- DriftDetector: detects config changes from baseline --
     try:
@@ -1953,6 +1964,7 @@ async def list_security_modules(auth: AuthRequired):
     import shutil as _shutil
     p3_modules = {
         "alert_dispatcher": {"check": "alert_dispatcher"},
+        "killswitch_monitor": {"check": "killswitch_monitor"},
         "drift_detector": {"check": "drift_detector"},
         "encrypted_store": {"check": "encrypted_store"},
         "key_vault": {"check": "key_vault"},
@@ -2053,6 +2065,8 @@ async def security_health_report(auth: AuthRequired):
         report["modules"]["key_vault"] = {"status": "active"}
     if app_state.alert_dispatcher:
         report["modules"]["alert_dispatcher"] = {"status": "active"}
+    if app_state.killswitch_monitor:
+        report["modules"]["killswitch_monitor"] = {"status": "active"}
     if app_state.falco_monitor:
         report["modules"]["falco_monitor"] = {"status": "listening"}
     if app_state.wazuh_client:
@@ -2258,7 +2272,7 @@ async def container_security_profile(auth: AuthRequired):
             pass
     # Just check our own app_state
     unavail_count = 0
-    for attr in ['pipeline', 'alert_dispatcher', 'drift_detector', 'encrypted_store',
+    for attr in ['pipeline', 'alert_dispatcher', 'killswitch_monitor', 'drift_detector', 'encrypted_store',
                  'key_vault', 'canary_runner', 'clamav_scanner', 'trivy_scanner',
                  'falco_monitor', 'wazuh_client', 'network_validator']:
         if getattr(app_state, attr, None) is None:
@@ -2867,3 +2881,56 @@ async def deep_security_test(auth: AuthRequired):
         "verdict": "ALL CLEAR" if failed == 0 else f"{failed} FAILURE(S)"
     }
     return results
+
+
+@app.post("/manage/killswitch/verify")
+async def verify_killswitch(auth: AuthRequired, dry_run: bool = True):
+    """Run kill switch verification test.
+    
+    Args:
+        dry_run: If True (default), only validate without executing. Set to False for actual testing.
+        
+    Returns:
+        Verification results including test status and any issues found.
+    """
+    if not app_state.killswitch_monitor:
+        return {"error": "Kill switch monitor not available"}
+        
+    try:
+        result = app_state.killswitch_monitor.verify_killswitch(dry_run=dry_run)
+        
+        # Also run a heartbeat check as part of verification
+        heartbeat = app_state.killswitch_monitor.heartbeat_check()
+        result["heartbeat_status"] = heartbeat
+        
+        return result
+    except Exception as e:
+        logger.error(f"Kill switch verification failed: {e}")
+        return {
+            "error": f"Verification failed: {str(e)}",
+            "timestamp": __import__("datetime").datetime.now(
+                __import__("datetime").timezone.utc
+            ).isoformat()
+        }
+
+
+@app.get("/manage/killswitch/status")
+async def killswitch_status(auth: AuthRequired):
+    """Get kill switch monitor status and recent results.
+    
+    Returns:
+        Current status including last verification, heartbeat history, and anomaly detection.
+    """
+    if not app_state.killswitch_monitor:
+        return {"error": "Kill switch monitor not available"}
+        
+    try:
+        return app_state.killswitch_monitor.get_status()
+    except Exception as e:
+        logger.error(f"Failed to get kill switch status: {e}")
+        return {
+            "error": f"Status check failed: {str(e)}",
+            "timestamp": __import__("datetime").datetime.now(
+                __import__("datetime").timezone.utc
+            ).isoformat()
+        }
