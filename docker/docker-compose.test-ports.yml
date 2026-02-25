@@ -1,8 +1,19 @@
-# Override ports for test instance (avoids conflict with production on 8080)
+# Override ports and identity for Marvin test instance
 services:
   gateway:
     ports: !override
       - "127.0.0.1:9080:8080"
   agentshroud:
+    hostname: marvin
     ports: !override
       - "127.0.0.1:19790:18789"
+    environment:
+      - NODE_ENV=production
+      - OPENCLAW_GATEWAY_BIND=lan
+      - OPENCLAW_GATEWAY_PASSWORD_FILE=/run/secrets/gateway_password
+      - GATEWAY_OP_PROXY_URL=http://gateway:8080
+      - OPENCLAW_BOT_NAME=agentshroud-bot
+      - OPENCLAW_BOT_EMAIL=agentshroud.ai@icloud.com
+      - OPENCLAW_DISABLE_HOST_FILESYSTEM=true
+      - OPENCLAW_SANDBOX_MODE=strict
+      - OPENCLAW_DISABLE_BONJOUR=1
