@@ -35,7 +35,7 @@ from pathlib import Path
 
 from ..approval_queue.queue import ApprovalQueue
 from .auth import create_auth_dependency
-from .config import GatewayConfig, load_config
+from .config import GatewayConfig, load_config, get_module_mode, check_monitor_mode_warnings
 from .ledger import DataLedger
 from .models import (
     ApprovalDecision,
@@ -175,6 +175,8 @@ async def lifespan(app: FastAPI):
     try:
         app_state.config = load_config()
         logger.info("Configuration loaded successfully")
+        # Check for monitor mode warnings
+        check_monitor_mode_warnings(app_state.config, logger)
     except Exception as e:
         logger.critical(f"Failed to load configuration: {e}")
         raise
@@ -185,9 +187,11 @@ async def lifespan(app: FastAPI):
 
     # Initialize PII sanitizer
     try:
-        app_state.sanitizer = PIISanitizer(app_state.config.pii)
+        sanitizer_mode = get_module_mode(app_state.config, "pii_sanitizer")
+        sanitizer_action = app_state.config.security.pii_sanitizer.action or "redact"
+        app_state.sanitizer = PIISanitizer(app_state.config.pii, mode=sanitizer_mode, action=sanitizer_action)
         logger.info(
-            f"PII sanitizer initialized (mode: {app_state.sanitizer.get_mode()})"
+            f"PII sanitizer initialized (mode: {app_state.sanitizer.get_mode()}, action: {sanitizer_action})"
         )
     except Exception as e:
         logger.critical(f"Failed to initialize PII sanitizer: {e}")
@@ -220,7 +224,11 @@ async def lifespan(app: FastAPI):
 
     # Initialize security components
     try:
-        app_state.prompt_guard = PromptGuard(block_threshold=0.8, warn_threshold=0.4)
+        prompt_guard_mode = get_module_mode(app_state.config, "prompt_guard")
+        # Set thresholds based on mode - in monitor mode, set very high threshold so nothing blocks
+        block_threshold = 999.0 if prompt_guard_mode == "monitor" else 0.8
+        warn_threshold = 999.0 if prompt_guard_mode == "monitor" else 0.4
+        app_state.prompt_guard = PromptGuard(block_threshold=block_threshold, warn_threshold=warn_threshold)
         logger.info("PromptGuard initialized")
     except Exception as e:
         logger.critical(f"Failed to initialize PromptGuard: {e}")
@@ -241,8 +249,22 @@ async def lifespan(app: FastAPI):
         raise
 
     try:
-        app_state.egress_filter = EgressFilter()
-        logger.info("EgressFilter initialized")
+        egress_mode = get_module_mode(app_state.config, "egress_filter")
+        # Create default policy with required domains for AgentShroud operation
+        from ..security.egress_filter import EgressPolicy
+        default_policy = EgressPolicy(
+            allowed_domains=[
+                "api.anthropic.com",
+                "api.openai.com",
+                "imap.gmail.com",
+                "smtp.gmail.com",
+                "*.googleapis.com",
+                "api.telegram.org"
+            ] + app_state.config.proxy_allowed_domains,
+            deny_all=(egress_mode == "enforce")
+        )
+        app_state.egress_filter = EgressFilter(default_policy=default_policy)
+        logger.info(f"EgressFilter initialized (mode: {egress_mode}, deny_all: {default_policy.deny_all})")
     except Exception as e:
         logger.critical(f"Failed to initialize EgressFilter: {e}")
         raise
@@ -436,14 +458,20 @@ async def lifespan(app: FastAPI):
         app_state.network_validator = None
 
     # Initialize MCP proxy — load server registry from agentshroud.yaml mcp_proxy section
+    mcp_mode = get_module_mode(app_state.config, "mcp_proxy")
     mcp_proxy_config = (
         MCPProxyConfig.from_dict(app_state.config.mcp_proxy_data)
         if app_state.config.mcp_proxy_data
         else MCPProxyConfig()
     )
+    # In enforce mode, enable all security scanning
+    if mcp_mode == "enforce":
+        mcp_proxy_config.pii_scan_enabled = True
+        mcp_proxy_config.injection_scan_enabled = True
+        mcp_proxy_config.audit_enabled = True
     app_state.mcp_proxy = MCPProxy(config=mcp_proxy_config)
     logger.info(
-        f"MCP proxy initialized: {len(mcp_proxy_config.servers)} server(s) registered"
+        f"MCP proxy initialized (mode: {mcp_mode}): {len(mcp_proxy_config.servers)} server(s) registered"
     )
 
     # Initialize SSH proxy
