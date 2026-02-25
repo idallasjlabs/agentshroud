@@ -302,7 +302,7 @@ async def lifespan(app: FastAPI):
 
     # Initialize outbound information filter
     try:
-        app_state.outbound_filter = OutboundInfoFilter(app_state.config.outbound_filter)
+        app_state.outbound_filter = OutboundInfoFilter(getattr(app_state.config, "outbound_filter", None))
         logger.info(f"Outbound information filter initialized (mode: {app_state.outbound_filter.mode})")
     except Exception as e:
         logger.critical(f"Failed to initialize outbound information filter: {e}")
