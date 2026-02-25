@@ -27,6 +27,8 @@ from gateway.security.consent_framework import ConsentFramework
 from gateway.security.subagent_monitor import SubagentMonitor, SubagentMonitorConfig
 from gateway.security.agent_isolation import AgentRegistry
 from gateway.security.session_manager import UserSessionManager
+from gateway.security.tool_result_injection import ToolResultInjectionScanner
+from gateway.security.xml_leak_filter import XMLLeakFilter
 
 logger = logging.getLogger(__name__)
 
@@ -156,6 +158,22 @@ class MiddlewareManager:
         except Exception as e:
             logger.error(f"Failed to initialize AgentRegistry: {e}")
             self.agent_registry = None
+
+        # Tool result injection scanner
+        try:
+            self.tool_injection_scanner = ToolResultInjectionScanner()
+            logger.info("ToolResultInjectionScanner initialized")
+        except Exception as e:
+            logger.error(f"Failed to initialize ToolResultInjectionScanner: {e}")
+            self.tool_injection_scanner = None
+        
+        # XML leak filter
+        try:
+            self.xml_leak_filter = XMLLeakFilter()
+            logger.info("XMLLeakFilter initialized")
+        except Exception as e:
+            logger.error(f"Failed to initialize XMLLeakFilter: {e}")
+            self.xml_leak_filter = None
 
     async def process_request(
         self,
@@ -462,6 +480,94 @@ class MiddlewareManager:
                 )
         
         return MiddlewareResult(allowed=True)
+    
+    def scan_tool_result(self, tool_name: str, result_content: str) -> Optional[str]:
+        """
+        Scan tool result for injection attempts and return sanitized content.
+        
+        Args:
+            tool_name: Name of the tool that produced the result
+            result_content: The content returned by the tool
+            
+        Returns:
+            Sanitized content, or None if result should be blocked entirely
+        """
+        if not self.tool_injection_scanner:
+            logger.warning("ToolResultInjectionScanner not available - tool result passed through unsanitized")
+            return result_content
+        
+        try:
+            scan_result = self.tool_injection_scanner.scan_tool_result(tool_name, result_content)
+            
+            # Log the scan result
+            if scan_result.patterns:
+                logger.warning(
+                    f"Tool result injection detected in {tool_name}: "
+                    f"severity={scan_result.severity.value}, "
+                    f"action={scan_result.action.value}, "
+                    f"patterns={scan_result.patterns}"
+                )
+            
+            # Handle based on severity
+            if scan_result.action.value == "strip":
+                # HIGH severity - content filtered
+                logger.error(
+                    f"HIGH severity injection detected in {tool_name} result - content filtered. "
+                    f"Patterns: {scan_result.patterns}"
+                )
+                return scan_result.sanitized_content
+            
+            elif scan_result.action.value == "warn":
+                # MEDIUM severity - warning added
+                logger.warning(
+                    f"MEDIUM severity injection detected in {tool_name} result - warning added. "
+                    f"Patterns: {scan_result.patterns}"
+                )
+                return scan_result.sanitized_content
+            
+            else:
+                # LOW severity - log only
+                if scan_result.patterns:
+                    logger.info(
+                        f"LOW severity patterns detected in {tool_name} result: {scan_result.patterns}"
+                    )
+                return result_content
+                
+        except Exception as e:
+            logger.error(f"Error scanning tool result from {tool_name}: {e}")
+            # Fail open for tool results to avoid breaking functionality
+            return result_content
+    
+    def filter_outbound_response(self, response_content: str) -> str:
+        """
+        Filter outbound response to remove sensitive XML and path information.
+        
+        Args:
+            response_content: The response content to filter
+            
+        Returns:
+            Filtered response content
+        """
+        if not self.xml_leak_filter:
+            logger.warning("XMLLeakFilter not available - response passed through unfiltered")
+            return response_content
+        
+        try:
+            filter_result = self.xml_leak_filter.filter_response(response_content)
+            
+            if filter_result.filter_applied:
+                logger.info(
+                    f"XML/path information filtered from response. "
+                    f"Removed: {len(filter_result.removed_items)} items"
+                )
+                logger.debug(f"Filtered items: {filter_result.removed_items}")
+            
+            return filter_result.filtered_content
+            
+        except Exception as e:
+            logger.error(f"Error filtering outbound response: {e}")
+            # Fail open to avoid breaking responses
+            return response_content
     
     def get_log_sanitizer(self) -> Optional[LogSanitizer]:
         """Get the log sanitizer for integration with logging system."""
