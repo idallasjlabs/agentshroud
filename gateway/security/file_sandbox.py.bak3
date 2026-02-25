@@ -161,12 +161,6 @@ class FileSandboxConfig:
             "**/terraform/**",
             "**/ansible/**",
             "**/.github/**",
-            # macOS-compatible patterns (handle /System/Volumes/Data prefix)
-            "**/agentshroud/**",
-            "**/config/**",
-            "**/modules/**",
-            "**/security/**",
-            "**/gateway/**",
         ]
     )
     # Allowed write paths - agent can only write to its own workspace

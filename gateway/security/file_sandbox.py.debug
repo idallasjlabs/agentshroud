@@ -161,12 +161,6 @@ class FileSandboxConfig:
             "**/terraform/**",
             "**/ansible/**",
             "**/.github/**",
-            # macOS-compatible patterns (handle /System/Volumes/Data prefix)
-            "**/agentshroud/**",
-            "**/config/**",
-            "**/modules/**",
-            "**/security/**",
-            "**/gateway/**",
         ]
     )
     # Allowed write paths - agent can only write to its own workspace
@@ -243,12 +237,12 @@ class FileSandbox:
             if operation == "write":
                 # For writes, use explicit allowed list or defaults
                 allowed_paths = self.config.allowed_write_paths or self.config.allowed_write_default
-                if not (self._matches_allowed_paths(path, allowed_paths) or self._matches_allowed_paths(resolved, allowed_paths)):
+                if not self._matches_allowed_paths(resolved, allowed_paths):
                     flags.append(f"write outside allowed workspace: {path}")
             elif operation == "read":
                 # For reads, check if it's in blocked paths
                 allowed_paths = self.config.allowed_read_paths
-                if allowed_paths is not None and not (self._matches_allowed_paths(path, allowed_paths) or self._matches_allowed_paths(resolved, allowed_paths)):
+                if allowed_paths is not None and not self._matches_allowed_paths(resolved, allowed_paths):
                     flags.append(f"read outside allowed paths: {path}")
 
         flagged = len(flags) > 0
