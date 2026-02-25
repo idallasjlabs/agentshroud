@@ -67,6 +67,7 @@ from ..proxy.web_config import WebProxyConfig
 from ..proxy.web_proxy import WebProxy
 from ..proxy.webhook_receiver import WebhookReceiver
 from ..proxy.pipeline import SecurityPipeline
+from gateway.security.session_manager import UserSessionManager
 from ..web.api import router as management_api_router
 from ..web.management import router as management_dashboard_router
 from ..web.dashboard_endpoints import router as dashboard_api_router, install_log_handler
@@ -126,6 +127,7 @@ class AppState:
     egress_filter: EgressFilter
     mcp_proxy: Optional[MCPProxy]
     pipeline: Optional[SecurityPipeline]
+    session_manager: Optional[UserSessionManager]
     start_time: float
     event_bus: EventBus
     http_proxy: Optional[HTTPConnectProxy]
@@ -316,7 +318,20 @@ async def lifespan(app: FastAPI):
         outbound_filter=app_state.outbound_filter,
     )
     logger.info("Security pipeline initialized")
-    logger.info("Security pipeline initialized")
+
+    # Initialize per-user session manager for session isolation
+    try:
+        base_workspace = Path("/home/node/.openclaw/workspace")
+        # TODO: Load owner_user_id from config - for now use a default
+        owner_user_id = getattr(app_state.config, 'owner_user_id', '1234567890') if app_state.config else '1234567890'
+        app_state.session_manager = UserSessionManager(
+            base_workspace=base_workspace,
+            owner_user_id=owner_user_id
+        )
+        logger.info("UserSessionManager initialized")
+    except Exception as e:
+        logger.error(f"Failed to initialize UserSessionManager: {e}")
+        app_state.session_manager = None
 
     # ══════════════════════════════════════════════════════════════════
     # P3 — Background & Infrastructure Security Modules
@@ -1036,7 +1051,8 @@ async def telegram_webhook(request: Request, auth: AuthRequired):
     # Build receiver using available app_state components
     pipeline = getattr(app_state, "pipeline", None)
     forwarder = getattr(app_state, "forwarder", None)
-    receiver = WebhookReceiver(pipeline=pipeline, forwarder=forwarder)
+    session_manager = getattr(app_state, "session_manager", None)
+    receiver = WebhookReceiver(pipeline=pipeline, forwarder=forwarder, session_manager=session_manager)
 
     result = await receiver.process_webhook(payload, source="telegram")
     logger.info(f"telegram-webhook: status={result.get('status')}")
