@@ -260,6 +260,8 @@ class GatewayConfig(BaseModel):
     mcp_proxy_data: dict = Field(default_factory=dict)
     # Security modules configuration
     security: SecurityConfig = Field(default_factory=SecurityConfig)
+    # Tool result PII configuration
+    tool_result_pii: dict = Field(default_factory=lambda: {"enabled": True, "tool_overrides": {"icloud": {"entities": ["US_SSN", "CREDIT_CARD", "PHONE_NUMBER", "EMAIL_ADDRESS", "LOCATION"], "min_confidence": 0.7}, "email": {"entities": ["US_SSN", "CREDIT_CARD", "PHONE_NUMBER", "EMAIL_ADDRESS"], "min_confidence": 0.7}, "contacts": {"entities": ["PHONE_NUMBER", "EMAIL_ADDRESS", "LOCATION"], "min_confidence": 0.8}, "web_search": {"entities": ["US_SSN", "CREDIT_CARD", "PHONE_NUMBER"], "min_confidence": 0.8}, "web_fetch": {"entities": ["US_SSN", "CREDIT_CARD", "PHONE_NUMBER", "EMAIL_ADDRESS"], "min_confidence": 0.8}, "browser": {"entities": ["US_SSN", "CREDIT_CARD"], "min_confidence": 0.9}}})
     # Tool risk tier configuration
     tool_risk: ToolRiskConfig = Field(default_factory=ToolRiskConfig)
 
