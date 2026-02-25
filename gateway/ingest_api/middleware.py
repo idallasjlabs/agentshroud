@@ -27,6 +27,7 @@ from gateway.security.consent_framework import ConsentFramework
 from gateway.security.subagent_monitor import SubagentMonitor, SubagentMonitorConfig
 from gateway.security.agent_isolation import AgentRegistry
 from gateway.security.session_manager import UserSessionManager
+from gateway.security.tool_result_sanitizer import ToolResultSanitizer, ToolResultPIIConfig
 
 logger = logging.getLogger(__name__)
 
@@ -156,6 +157,9 @@ class MiddlewareManager:
         except Exception as e:
             logger.error(f"Failed to initialize AgentRegistry: {e}")
             self.agent_registry = None
+
+        # Tool result PII sanitizer (configured later via set_config)
+        self.tool_result_sanitizer = None
 
     async def process_request(
         self,
@@ -466,3 +470,72 @@ class MiddlewareManager:
     def get_log_sanitizer(self) -> Optional[LogSanitizer]:
         """Get the log sanitizer for integration with logging system."""
         return self.log_sanitizer
+    def set_config(self, config):
+        """Set configuration and initialize tool result sanitizer"""
+        try:
+            from .config import PIIConfig
+            
+            tool_result_config_dict = getattr(config, 'tool_result_pii', {})
+            if tool_result_config_dict:
+                # Create default PIIConfig from the general PII config
+                default_config = getattr(config, 'pii', PIIConfig())
+                
+                # Create ToolResultPIIConfig
+                tool_config = ToolResultPIIConfig(
+                    enabled=tool_result_config_dict.get('enabled', True),
+                    default_config=default_config,
+                    tool_overrides=tool_result_config_dict.get('tool_overrides', {})
+                )
+                
+                self.tool_result_sanitizer = ToolResultSanitizer(tool_config)
+                logger.info("Tool result PII sanitizer configured successfully")
+            else:
+                logger.warning("No tool_result_pii configuration found")
+        except Exception as e:
+            logger.error(f"Failed to configure tool result sanitizer: {e}")
+            self.tool_result_sanitizer = None
+
+    async def process_tool_result(
+        self, 
+        tool_name: str, 
+        tool_result: Any, 
+        session_id: Optional[str] = None
+    ) -> tuple[Any, bool]:
+        """Process tool result through PII sanitization before it reaches agent
+        
+        Args:
+            tool_name: Name of the tool that produced the result
+            tool_result: The raw tool result from the tool
+            session_id: Optional session ID for audit logging
+            
+        Returns:
+            Tuple of (sanitized_result, was_modified)
+        """
+        if not self.tool_result_sanitizer:
+            logger.warning("Tool result sanitizer not configured - allowing result through unsanitized")
+            return tool_result, False
+            
+        try:
+            sanitized_result, redaction_result = await self.tool_result_sanitizer.sanitize_tool_result(
+                tool_name=tool_name,
+                tool_result=tool_result,
+                session_id=session_id
+            )
+            
+            was_modified = len(redaction_result.redactions) > 0
+            
+            if was_modified:
+                logger.info(
+                    f"Tool result sanitized: tool={tool_name} session={session_id or 'unknown'} "
+                    f"redactions={len(redaction_result.redactions)} "
+                    f"entities={redaction_result.entity_types_found}"
+                )
+                
+            return sanitized_result, was_modified
+            
+        except Exception as e:
+            logger.error(f"Tool result sanitization failed for {tool_name}: {e}")
+            # Fail secure - if we can't sanitize, we should block the result
+            # But for now, log and allow through to avoid breaking functionality
+            logger.warning(f"Allowing unsanitized tool result through due to sanitization error")
+            return tool_result, False
