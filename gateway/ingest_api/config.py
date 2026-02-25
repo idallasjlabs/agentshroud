@@ -232,6 +232,19 @@ class ToolRiskConfig(BaseModel):
     monitor_only_mode: bool = False
     owner_user_id: str = ""  # Telegram user ID for owner bypass
 
+
+class AuditExportConfig(BaseModel):
+    """Configuration for compliance audit export functionality."""
+
+    enabled: bool = True
+    default_format: str = "json"
+    cef_vendor: str = "AgentShroud"
+    cef_product: str = "Gateway"
+    cef_version: str = "0.7.0"
+    include_hash_verification: bool = True
+    db_path: str = "/tmp/agentshroud_audit.db"
+    max_export_records: int = 10000
+
 class GatewayConfig(BaseModel):
     """Complete gateway configuration"""
 
@@ -262,6 +275,9 @@ class GatewayConfig(BaseModel):
     security: SecurityConfig = Field(default_factory=SecurityConfig)
     # Tool risk tier configuration
     tool_risk: ToolRiskConfig = Field(default_factory=ToolRiskConfig)
+    # Compliance audit export configuration
+    audit_export: AuditExportConfig = Field(default_factory=AuditExportConfig)
+
 
 
 def _entity_type_mapping(yaml_type: str) -> str:
@@ -446,6 +462,10 @@ def load_config(config_path: Optional[Path] = None) -> GatewayConfig:
                     current_config.action = module_data["action"]
     # Tool risk tier config
     tool_risk_section = raw_config.get("tool_risk", {})
+    # Audit export configuration
+    audit_export_section = raw_config.get("audit_export", {})
+    audit_export_config = AuditExportConfig(**audit_export_section) if audit_export_section else AuditExportConfig()
+
     tool_risk_config = ToolRiskConfig(**tool_risk_section) if tool_risk_section else ToolRiskConfig()
 
     config = GatewayConfig(
@@ -462,6 +482,8 @@ def load_config(config_path: Optional[Path] = None) -> GatewayConfig:
         ssh=ssh_config,
         security=security_config,
         proxy_allowed_domains=proxy_allowed_domains,
+        audit_export=audit_export_config,
+
         mcp_proxy_data=mcp_proxy_data,
         tool_risk=tool_risk_config,
     )
