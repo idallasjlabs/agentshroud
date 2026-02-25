@@ -1160,11 +1160,12 @@ async def forward_content(request: ForwardRequest, auth: AuthRequired):
                 "message": request.content,
                 "content_type": request.content_type,
                 "source": request.source,
-                "headers": {}  # Add headers if available in request
+                "headers": {},  # Add headers if available in request
+                "user_id": getattr(request, "user_id", None) or getattr(request, "source", "anonymous")
             }
 
             # Process through middleware
-            middleware_result = middleware_manager.process(request_data, "unknown")
+            middleware_result = await middleware_manager.process_request(request_data, "unknown")
 
             if not middleware_result.allowed:
                 logger.warning(f"Middleware blocked request: {middleware_result.reason}")
