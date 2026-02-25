@@ -365,6 +365,13 @@ class TestMiddlewareSessionEnforcement:
             mock_path.return_value = temp_workspace
             manager = MiddlewareManager()
             
+            # Set test users in RBAC so they aren't blocked as viewers
+            if manager.rbac_manager:
+                from gateway.security.rbac_config import Role
+                for uid in ["user_123", "user_456", "user_789"]:
+                    manager.rbac_manager.config.user_roles[uid] = Role.COLLABORATOR
+                manager.rbac_manager.config.user_roles["admin_123"] = Role.OWNER
+            
             # Mock the session manager initialization
             manager.user_session_manager = UserSessionManager(
                 base_workspace=temp_workspace,
