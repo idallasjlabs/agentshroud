@@ -12,7 +12,7 @@ services:
       - OPENCLAW_GATEWAY_BIND=lan
       - OPENCLAW_GATEWAY_PASSWORD_FILE=/run/secrets/gateway_password
       - GATEWAY_OP_PROXY_URL=http://gateway:8080
-      - OPENCLAW_BOT_NAME=agentshroud-bot
+      - OPENCLAW_BOT_NAME=agentshroud_bot_marvin
       - OPENCLAW_BOT_EMAIL=agentshroud.ai@icloud.com
       - OPENCLAW_DISABLE_HOST_FILESYSTEM=true
       - OPENCLAW_SANDBOX_MODE=strict
