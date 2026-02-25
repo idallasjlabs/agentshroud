@@ -1,90 +1,147 @@
-# Security Policy
+# AgentShroud Security Configuration
 
-## Reporting a Vulnerability
+AgentShroud v0.7.0 implements **enforce-by-default** security with comprehensive protection against prompt injection, PII exposure, unauthorized tool access, and egress filtering.
 
-We take security seriously. If you discover a vulnerability in AgentShroud, please report it responsibly.
+## Security Modules
 
-### Preferred: GitHub Security Advisories
+AgentShroud includes four core security modules that **default to enforcement mode**:
 
-1. Go to [Security Advisories](https://github.com/idallasj/agentshroud/security/advisories)
-2. Click **"Report a vulnerability"**
-3. Provide a detailed description, steps to reproduce, and impact assessment
+1. **PII Sanitizer (#1)** - Detects and redacts personally identifiable information
+2. **Prompt Injection Defense (#8)** - Blocks malicious prompt injection attempts  
+3. **Egress Filtering (#10)** - Controls outbound network traffic with domain allowlist
+4. **MCP Proxy (#19)** - Enforces per-tool permissions for AI agent actions
 
-### Alternative: Email
+## Monitor Mode Warning
 
-- **Security contact:** security@agentshroud.dev
-- **PGP key:** Available on request
+**⚠️ CRITICAL SECURITY NOTICE**
 
-### What to Include
+AgentShroud defaults to **enforce mode** for core security modules. Running in monitor mode (`AGENTSHROUD_MODE=monitor` or per-module `mode: monitor`) disables active protection.
 
-- Description of the vulnerability
-- Steps to reproduce
-- Affected versions
-- Potential impact
-- Suggested fix (if any)
+### In Monitor Mode, the following protections are DISABLED:
 
-## Disclosure Policy
+- **PII Exposure**: Credit cards, SSNs, emails pass through unredacted
+- **Prompt Injection**: Malicious prompts are logged but not blocked  
+- **Tool Access**: All MCP tool calls are permitted regardless of user trust level
+- **Network Traffic**: Outbound requests to any domain are allowed
 
-We follow **coordinated disclosure** with a **90-day timeline**:
+### When Monitor Mode is Appropriate
 
-1. **Day 0:** Report received, acknowledgment sent within 48 hours
-2. **Day 1–14:** Triage, reproduce, assess severity (CVSS scoring)
-3. **Day 14–60:** Develop and test fix
-4. **Day 60–90:** Release fix, notify reporters, publish advisory
-5. **Day 90:** Public disclosure (with or without fix, per agreement)
+Monitor mode is intended for **initial deployment tuning ONLY**:
 
-We will credit reporters unless they prefer anonymity.
+1. **Initial Setup**: Deploy in monitor mode for 1-2 weeks to establish baselines
+2. **Threshold Tuning**: Observe false positive rates in logs
+3. **Allowlist Building**: Identify legitimate domains and tools that need access
+4. **Testing**: Development and testing environments where security is not required
+
+### Production Requirements
+
+**Never run monitor mode in production with real users.**
+
+For production deployments:
+- Remove `AGENTSHROUD_MODE=monitor` from environment variables
+- Ensure all core modules have `mode: enforce` in configuration
+- Regularly review security logs for blocked attempts
+- Update allowlists only after thorough security review
+
+## Development Override
+
+For development environments, you can temporarily disable enforcement:
+
+```bash
+export AGENTSHROUD_MODE=monitor
+```
+
+Or in `docker-compose.yml`:
+```yaml
+services:
+  gateway:
+    environment:
+      AGENTSHROUD_MODE: monitor  # Remove for production!
+```
+
+## Configuration
+
+Core modules can be individually configured in `agentshroud.yaml`:
+
+```yaml
+security_modules:
+  pii_sanitizer:
+    mode: enforce    # enforce (default) or monitor
+    action: redact   # redact (default) or block
+  prompt_guard:
+    mode: enforce    # enforce (default) or monitor
+  egress_filter:
+    mode: enforce    # enforce (default) or monitor
+  mcp_proxy:
+    mode: enforce    # enforce (default) or monitor
+```
+
+## Security Verification
+
+To verify enforcement is active:
+
+1. **PII Test**: Send a test credit card number - should be redacted
+2. **Injection Test**: Send a known injection payload - should be blocked
+3. **Egress Test**: Request a non-allowlisted URL - should be denied  
+4. **Tool Test**: Attempt unauthorized tool access - should be blocked
+
+## Monitoring
+
+Security events are logged with structured data:
+- All enforcement actions are audited
+- Monitor mode generates security warnings at startup
+- Failed attempts are logged at WARNING level
+- Successful blocks are logged at INFO level
+
+## Emergency Response
+
+If security is compromised:
+1. Immediately set `AGENTSHROUD_MODE=enforce` 
+2. Restart the gateway service
+3. Review audit logs for the breach window
+4. Update allowlists to close identified gaps
+
+## Contact
+
+For security issues: security@agentshroud.ai
+For documentation: https://github.com/agentshroud/agentshroud/security
+
+
+## Security Features
+
+- **PII Sanitizer** — Hybrid Presidio + regex detection with redaction
+- **Prompt Guard** — Injection and jailbreak detection
+- **Egress Filter** — DNS-layer domain allowlist
+- **File Sandbox** — Path-based read/write access control
+- **Metadata Guard** — Path traversal and injection prevention
+- **Outbound Info Filter** — Prevents credential/PII leakage in responses
+- **Approval Queue** — Human-in-the-loop for high-risk tool calls
+- **Session Isolation** — Per-agent session boundaries
+- **Credential Injector** — Gateway-only credential storage
+- **Network Validator** — Container network policy enforcement
+- **ClamAV Scanner** — Malware detection on file operations
+- **Trivy Scanner** — Container vulnerability scanning
+- **Drift Detector** — Runtime file integrity monitoring
+- **Kill Switch** — Emergency shutdown capability for compromised agents
+- **Rate Limiter** — Request throttling per agent/IP
+- **Canary System** — Data exfiltration detection via planted tokens
 
 ## Supported Versions
 
 | Version | Supported |
 |---------|-----------|
-| 1.0.x   | ✅ Active |
-| 0.2.x   | ⚠️ Security fixes only |
-| < 0.2   | ❌ End of life |
+| v0.7.x  | ✅ Active  |
+| v0.6.x  | ⚠️ Critical fixes only |
+| < v0.6  | ❌ Unsupported |
+| v0.2-v0.5 | ❌ End of life |
 
-## Security Features Overview
 
-AgentShroud provides 12 security modules (see [README](README.md) for details):
+## Responsible Disclosure Policy
 
-- **PII Sanitizer** — Redacts personal data before it reaches the AI agent
-- **Approval Queue** — Human-in-the-loop for sensitive operations
-- **Audit Ledger** — Immutable record of all data flows
-- **Prompt Guard** — Blocks prompt injection and jailbreak attempts
-- **Egress Filter** — Controls outbound network connections
-- **Trust Manager** — Cryptographic integrity verification
-- **Drift Detector** — Monitors for unauthorized filesystem changes
-- **Encrypted Store** — At-rest encryption for secrets
-- **SSH Proxy** — Approved, audited SSH access with command allowlists
-- **Kill Switch** — Emergency shutdown with credential revocation
-- **Agent Isolation** — Seccomp, rootless, read-only rootfs, resource limits
-- **Live Dashboard** — Real-time monitoring and alerting
+If you discover a security vulnerability in AgentShroud, please report it responsibly:
 
----
+1. **Email:** security@agentshroud.ai
+2. **Do not** create public GitHub issues for security vulnerabilities
+3. We will acknowledge receipt within 48 hours
+4. We aim to provide a fix within 7 business days for critical issues
 
-AgentShroud™ is a trademark of Isaiah Dallas Jefferson, Jr., first used in February 2026. Protected by common law trademark rights. Federal trademark registration pending. Unauthorized reproduction, distribution, or use of the AgentShroud name or brand is strictly prohibited.
-© 2026 Isaiah Dallas Jefferson, Jr.. All rights reserved.
-See [TRADEMARK.md](TRADEMARK.md).
-
----
-
-## Known Issues
-
-### SC-2026-001 — Gateway Auth Bypass (Mitigated)
-
-**Severity:** Medium
-**Affected:** Configurations where `auth_method` is set to `none`
-**Impact:** Potential information disclosure through gateway API when authentication is disabled
-**Mitigation:** AgentShroud enforces authentication by default. Ensure `GATEWAY_AUTH_TOKEN` is set and `auth_method` is not `none`.
-**Status:** Mitigated — AgentShroud refuses to start with `auth_method=none` in production mode.
-
-## Security Best Practices
-
-1. **Always set `GATEWAY_AUTH_TOKEN`** — never run with default/empty tokens
-2. **Enable all security modules** in production (see `examples/paranoid.env`)
-3. **Use read-only rootfs** — prevents agent from modifying its own container
-4. **Enable Seccomp profiles** — restricts available system calls
-5. **Review the approval queue** — don't auto-approve sensitive actions
-6. **Monitor the dashboard** — watch for anomalous activity patterns
-7. **Keep AgentShroud updated** — use the version manager for security-reviewed upgrades
-8. **Rotate credentials** regularly via the encrypted store
