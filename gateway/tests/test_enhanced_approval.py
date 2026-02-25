@@ -2,6 +2,7 @@
 from __future__ import annotations
 
 import asyncio
+import pytest_asyncio
 import pytest
 import tempfile
 from datetime import datetime, timedelta
@@ -14,7 +15,7 @@ from gateway.ingest_api.models import ApprovalRequest
 from gateway.proxy.mcp_proxy import MCPToolCall, MCPProxy
 
 
-@pytest.fixture
+@pytest_asyncio.fixture
 async def temp_store():
     """Create a temporary SQLite store for testing."""
     with tempfile.NamedTemporaryFile(suffix=".db", delete=False) as f:
@@ -79,7 +80,7 @@ def tool_risk_config():
     )
 
 
-@pytest.fixture
+@pytest_asyncio.fixture
 async def enhanced_queue(temp_store, tool_risk_config):
     """Create an enhanced approval queue for testing."""
     config = ApprovalQueueConfig(enabled=True, timeout_seconds=300)
@@ -93,6 +94,7 @@ class TestToolRiskClassification:
     """Test tool risk tier classification."""
 
     @pytest.mark.asyncio
+    @pytest.mark.asyncio
     async def test_get_tool_risk_tier(self, enhanced_queue):
         """Test risk tier lookup."""
         assert enhanced_queue.get_tool_risk_tier("exec") == "critical"
@@ -101,6 +103,7 @@ class TestToolRiskClassification:
         assert enhanced_queue.get_tool_risk_tier("ls") == "low"
         assert enhanced_queue.get_tool_risk_tier("unknown_tool") == "low"
 
+    @pytest.mark.asyncio
     @pytest.mark.asyncio
     async def test_requires_approval(self, enhanced_queue):
         """Test approval requirement logic."""
@@ -117,6 +120,7 @@ class TestToolRiskClassification:
         assert enhanced_queue.requires_approval("ls") == False
 
     @pytest.mark.asyncio
+    @pytest.mark.asyncio
     async def test_enforce_mode_disabled(self, tool_risk_config, temp_store):
         """Test that approval is bypassed when enforce mode is disabled."""
         tool_risk_config.enforce_mode = False
@@ -131,6 +135,7 @@ class TestToolRiskClassification:
 class TestApprovalWorkflow:
     """Test the complete approval workflow."""
 
+    @pytest.mark.asyncio
     @pytest.mark.asyncio
     async def test_critical_tool_approval_flow(self, enhanced_queue):
         """Test full approval flow for critical tool."""
@@ -160,6 +165,7 @@ class TestApprovalWorkflow:
         assert len(pending) == 0
 
     @pytest.mark.asyncio
+    @pytest.mark.asyncio
     async def test_critical_tool_denial_flow(self, enhanced_queue):
         """Test denial flow for critical tool."""
         request_id, requires_wait = await enhanced_queue.submit_tool_request(
@@ -174,6 +180,7 @@ class TestApprovalWorkflow:
         item = await enhanced_queue.decide(request_id, False, "Security risk")
         assert item.status == "rejected"
 
+    @pytest.mark.asyncio
     @pytest.mark.asyncio
     async def test_timeout_auto_deny(self, enhanced_queue):
         """Test timeout with auto-deny."""
@@ -203,6 +210,7 @@ class TestApprovalWorkflow:
         assert updated_item.status == "expired"
 
     @pytest.mark.asyncio
+    @pytest.mark.asyncio
     async def test_wait_for_decision(self, enhanced_queue):
         """Test waiting for approval decision."""
         request_id, requires_wait = await enhanced_queue.submit_tool_request(
@@ -225,6 +233,7 @@ class TestApprovalWorkflow:
         await task
 
     @pytest.mark.asyncio
+    @pytest.mark.asyncio
     async def test_low_risk_tool_no_approval(self, enhanced_queue):
         """Test that low-risk tools don't require approval."""
         request_id, requires_wait = await enhanced_queue.submit_tool_request(
@@ -244,7 +253,7 @@ class TestApprovalWorkflow:
 class TestMCPProxyIntegration:
     """Test MCP proxy integration with approval queue."""
 
-    @pytest.fixture
+    @pytest_asyncio.fixture
     async def mcp_proxy_with_approval(self, enhanced_queue):
         """Create an MCP proxy with approval queue."""
         proxy = MCPProxy(approval_queue=enhanced_queue)
@@ -252,9 +261,10 @@ class TestMCPProxyIntegration:
         await proxy.shutdown()
 
     @pytest.mark.asyncio
+    @pytest.mark.asyncio
     async def test_critical_tool_blocked_without_approval(self, mcp_proxy_with_approval):
         """Test that critical tools are blocked without approval."""
-        tool_call = MCPToolCall(
+        tool_call = MCPToolCall(id="test-1", 
             server_name="test_server",
             tool_name="exec",
             parameters={"command": "cat /etc/passwd"},
@@ -269,9 +279,10 @@ class TestMCPProxyIntegration:
         assert "requires human approval" in result.block_reason
 
     @pytest.mark.asyncio 
+    @pytest.mark.asyncio
     async def test_low_risk_tool_allowed(self, mcp_proxy_with_approval):
         """Test that low-risk tools are allowed without approval."""
-        tool_call = MCPToolCall(
+        tool_call = MCPToolCall(id="test-1", 
             server_name="test_server",
             tool_name="ls",
             parameters={"path": "/tmp"},
@@ -285,9 +296,10 @@ class TestMCPProxyIntegration:
         assert result.blocked == False
 
     @pytest.mark.asyncio
+    @pytest.mark.asyncio
     async def test_owner_bypass(self, mcp_proxy_with_approval):
         """Test owner bypass for high-tier tools."""
-        tool_call = MCPToolCall(
+        tool_call = MCPToolCall(id="test-1", 
             server_name="test_server", 
             tool_name="nodes",  # High tier tool with owner bypass
             parameters={"action": "list"},
@@ -304,6 +316,7 @@ class TestMCPProxyIntegration:
 class TestPersistence:
     """Test SQLite persistence across restarts."""
 
+    @pytest.mark.asyncio
     @pytest.mark.asyncio
     async def test_restore_pending_items(self, tool_risk_config):
         """Test that pending items are restored after restart."""
@@ -345,6 +358,7 @@ class TestPersistence:
         await queue2.close()
 
 
+@pytest.mark.asyncio
 @pytest.mark.asyncio
 async def test_websocket_notifications(enhanced_queue):
     """Test WebSocket notifications are sent."""
