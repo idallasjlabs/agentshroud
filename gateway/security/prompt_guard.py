@@ -10,6 +10,8 @@ including blocked status, threat score, matched patterns, and sanitized input.
 """
 from __future__ import annotations
 
+from gateway.security.input_normalizer import normalize_input, detect_base64_payloads
+
 
 import base64
 import unicodedata
@@ -149,6 +151,91 @@ _PATTERNS: list[PatternRule] = [
         weight=0.8,
         description="Indirect prompt injection marker",
     ),
+    # --- v0.7.0 additions: expanded coverage ---
+    # Multilingual injection (6 languages)
+    PatternRule(
+        "multilingual_injection",
+        re.compile(
+            r"(?i)(?:"
+            r"ignor(?:ez|a|iere)\s+(?:toutes?\s+|all(?:e|es)?\s+)?(?:les?\s+)?(?:instrucciones|instructions?|Anweisungen|instrucciones\s+anteriores)|"
+            r"oubli(?:ez|a)\s+(?:tout|todo|les\s+instructions)|"
+            r"olvida\s+(?:todo|todas?\s+las\s+instrucciones)|"
+            r"忽略.{0,4}(?:指令|指示|规则)|"
+            r"забудь.{0,6}(?:инструкции|правила)|"
+            r"игнорируй.{0,6}(?:инструкции|правила)|"
+            r"تجاهل.{0,6}(?:التعليمات|القواعد)"
+            r")"
+        ),
+        weight=0.9,
+        description="Multilingual instruction override attempt",
+    ),
+    # Chat/model format injection
+    PatternRule(
+        "chat_format_injection",
+        re.compile(
+            r"(?:"
+            r"\n\s*(?:Human|User|System|Assistant)\s*:|"
+            r"\[INST\].*?\[/INST\]|"
+            r"<\|(?:im_start|im_end|system|user|assistant)\|>|"
+            r"<\|(?:user|assistant|system)\|>"
+            r")",
+            re.IGNORECASE | re.DOTALL,
+        ),
+        weight=0.85,
+        description="Chat/model format injection (LLaMA, ChatML, Phi)",
+    ),
+    # Payload after benign prefix
+    PatternRule(
+        "payload_after_benign",
+        re.compile(
+            r"(?i)(?:ignore\s+(?:the\s+above|everything\s+(?:above|before))|"
+            r"(?:actually|instead)\s*[,:]?\s*(?:ignore|forget|disregard)|"
+            r"(?:but\s+)?(?:first|before\s+that)\s*[,:]?\s*(?:ignore|override|forget))",
+        ),
+        weight=0.8,
+        description="Injection payload after benign prefix",
+    ),
+    # Echo/repeat traps
+    PatternRule(
+        "echo_trap",
+        re.compile(
+            r"(?i)(?:repeat\s+after\s+me|say\s+(?:the\s+following|exactly|verbatim)|"
+            r"echo\s+(?:this|the\s+following)|output\s+(?:exactly|verbatim|word\s+for\s+word))",
+        ),
+        weight=0.85,
+        description="Echo/repeat trap to extract instructions",
+    ),
+    # Few-shot poisoning
+    PatternRule(
+        "few_shot_poisoning",
+        re.compile(
+            r"(?i)(?:^|\n)\s*(?:User|Q|Human|Input)\s*:\s*.+?\n\s*(?:Assistant|A|AI|Output)\s*:\s*(?:Sure|Yes|Of course|Here)",
+            re.MULTILINE,
+        ),
+        weight=0.75,
+        description="Few-shot example injection with compliant assistant",
+    ),
+    # Markdown exfiltration
+    PatternRule(
+        "markdown_exfiltration",
+        re.compile(
+            r"!\[.*?\]\(https?://[^)]*(?:\{\{|%7[Bb]|SYSTEM|SECRET|KEY|TOKEN|PASSWORD|API)[^)]*\)|"
+            r"\[.*?\]\(https?://(?!(?:github\.com|docs\.|wikipedia))[^)]*(?:exfil|leak|steal|callback|webhook)[^)]*\)",
+            re.IGNORECASE,
+        ),
+        weight=0.8,
+        description="Markdown image/link data exfiltration attempt",
+    ),
+    # Emoji unlock sequences
+    PatternRule(
+        "emoji_unlock",
+        re.compile(
+            r"(?:🔓|🔑|🗝️|🔐)\s*(?:mode|unlock|enable|activate|developer|admin|override)",
+            re.IGNORECASE,
+        ),
+        weight=0.7,
+        description="Emoji-based unlock/override attempt",
+    ),
 ]
 
 
@@ -234,6 +321,13 @@ class PromptGuard:
         Returns:
             ScanResult with blocked status, score, patterns, and sanitized input.
         """
+
+        # Normalize input to defeat encoding evasion
+        text = normalize_input(text)
+        
+        # Check for base64-encoded injection payloads
+        b64_payloads = detect_base64_payloads(text)
+        
         # Check unicode tricks on RAW text before normalization
         pre_norm_unicode = self._check_unicode_tricks(text) if text else []
 

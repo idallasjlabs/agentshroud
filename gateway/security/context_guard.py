@@ -8,6 +8,8 @@ Detect attempts to manipulate the AI context window through malicious inputs.
 """
 from __future__ import annotations
 
+from gateway.security.input_normalizer import normalize_input
+
 
 import re
 import time
@@ -123,6 +125,10 @@ class ContextGuard:
         Returns:
             List of detected attacks
         """
+
+        # Normalize input to defeat encoding evasion
+        message = normalize_input(message)
+
         attacks = []
         current_time = time.time()
 
@@ -454,11 +460,10 @@ class ContextGuard:
                 block_reasons.append(
                     f"Critical {attack.attack_type}: {attack.description}"
                 )
-            elif attack.severity == "high" and attack.attack_type in [
-                "message_size_limit",
-                "context_size_limit",
-            ]:
-                block_reasons.append(f"Size limit: {attack.description}")
+            elif attack.severity == "high":
+                block_reasons.append(
+                    f"High-severity {attack.attack_type}: {attack.description}"
+                )
 
         return len(block_reasons) > 0, block_reasons
 
