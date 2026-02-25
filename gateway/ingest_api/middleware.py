@@ -586,6 +586,13 @@ class MiddlewareManager:
             file_path_abs = str(Path(file_path).resolve())
             user_workspace_abs = str(Path(user_workspace).resolve())
             
+            # Normalize macOS /private prefix
+            for prefix in ["/private"]:
+                if file_path_abs.startswith(prefix) and not user_workspace_abs.startswith(prefix):
+                    file_path_abs = file_path_abs[len(prefix):]
+                elif user_workspace_abs.startswith(prefix) and not file_path_abs.startswith(prefix):
+                    user_workspace_abs = user_workspace_abs[len(prefix):]
+            
             # Allow access to user's own workspace
             if file_path_abs.startswith(user_workspace_abs):
                 return True
@@ -624,8 +631,8 @@ class MiddlewareManager:
                         logger.warning(f"User {user_id} attempted cross-session access to user {other_user_part}: {file_path}")
                         return False
             
-            # Default to allowing other paths (will be caught by existing file sandbox)
-            return True
+            # Default deny — paths not explicitly allowed are blocked
+            return False
             
         except Exception as e:
             logger.error(f"Error checking path permissions for {file_path}: {e}")
