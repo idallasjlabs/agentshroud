@@ -8,7 +8,7 @@ from __future__ import annotations
 File I/O Sandboxing — monitor and optionally restrict file operations.
 
 Default mode: monitor (log everything, flag sensitive access, block nothing).
-Enforce mode: hard path restrictions.
+Enforce mode: hard path restrictions with separation of privilege protections.
 """
 
 
@@ -97,18 +97,85 @@ class FileSandboxConfig:
     allowed_write_paths: Optional[list[str]] = None
     blocked_paths: list[str] = field(
         default_factory=lambda: [
+            # System security files
             "/etc/shadow",
             "/etc/passwd",
             "/etc/sudoers",
+            
+            # SSH keys and authentication
             "**/.ssh/id_*",
             "**/.ssh/authorized_keys",
+            "**/.ssh/*_rsa",
+            "**/.ssh/*_ed25519",
+            "**/.ssh/config",
+            
+            # Environment and secrets
             "**/.env",
             "**/.env.*",
+            "**/secrets/**",
+            "/run/secrets/**",
+            
+            # AWS credentials
             "**/.aws/credentials",
             "**/.aws/config",
+            
+            # Other credential files
             "**/.gnupg/*",
             "**/credentials",
-            "**/secrets",
+            
+            # AgentShroud gateway source code - CRITICAL: agent cannot modify its own security
+            "/app/agentshroud/**",
+            "/app/config/**",
+            "**/gateway/**/*.py",
+            "**/modules/**/*.py",
+            "**/security/**/*.py",
+            
+            # Security policies and behavioral instructions - IMMUTABLE
+            "**/SOUL.md",
+            "**/system_prompt*",
+            
+            # Docker configuration - prevent container escape/manipulation
+            "**/docker-compose*.yml",
+            "**/docker-compose*.yaml",
+            "**/Dockerfile*",
+            "**/seccomp/*.json",
+            
+            # Host system paths that should never be accessible from container
+            "/etc/**",
+            "/var/log/**",
+            "/var/lib/**",
+            "/usr/bin/**",
+            "/usr/sbin/**",
+            "/bin/**",
+            "/sbin/**",
+            "/proc/sys/**",
+            "/sys/**",
+            
+            # Gateway runtime and configuration
+            "**/agentshroud.yaml",
+            "**/config.yaml",
+            "**/tool_risk_tiers.yaml",
+            
+            # Development and deployment configs
+            "**/.git/**",
+            "**/terraform/**",
+            "**/ansible/**",
+            "**/.github/**",
+            # macOS-compatible patterns (handle /System/Volumes/Data prefix)
+            "**/agentshroud/**",
+            "**/config/**",
+            "**/modules/**",
+            "**/security/**",
+            "**/gateway/**",
+        ]
+    )
+    # Allowed write paths - agent can only write to its own workspace
+    allowed_write_default: list[str] = field(
+        default_factory=lambda: [
+            "/tmp/**",
+            "/home/node/.openclaw/workspace/**",
+            "/app/data/**",  # Gateway can write to its data directory
+            "/app/logs/**",  # Gateway can write logs
         ]
     )
     staging_size_threshold: int = 50_000  # bytes
@@ -165,24 +232,29 @@ class FileSandbox:
         if self._matches_blocked(path) or (
             resolved != path and self._matches_blocked(resolved)
         ):
-            flags.append(f"sensitive path: {path}")
+            flags.append(f"security-sensitive path: {path}")
+
+        # Special check for immutable files (security policies)
+        if self._is_immutable_file(path) or (resolved != path and self._is_immutable_file(resolved)):
+            flags.append(f"immutable security file: {path}")
 
         # In enforce mode, check allowed paths against resolved path
         if self.config.mode == "enforce":
-            allowed_paths = (
-                self.config.allowed_read_paths
-                if operation == "read"
-                else self.config.allowed_write_paths
-            )
-            if allowed_paths is not None:
-                # Resolve allowed paths too (e.g. /tmp -> /private/tmp on macOS)
-                resolved_allowed = [os.path.realpath(p) for p in allowed_paths]
-                if not any(resolved.startswith(p) for p in (allowed_paths + resolved_allowed)):
-                    flags.append(f"path outside allowed: {path}")
+            if operation == "write":
+                # For writes, use explicit allowed list or defaults
+                allowed_paths = self.config.allowed_write_paths or self.config.allowed_write_default
+                if not (self._matches_allowed_paths(path, allowed_paths) or self._matches_allowed_paths(resolved, allowed_paths)):
+                    flags.append(f"write outside allowed workspace: {path}")
+            elif operation == "read":
+                # For reads, check if it's in blocked paths
+                allowed_paths = self.config.allowed_read_paths
+                if allowed_paths is not None and not (self._matches_allowed_paths(path, allowed_paths) or self._matches_allowed_paths(resolved, allowed_paths)):
+                    flags.append(f"read outside allowed paths: {path}")
 
         flagged = len(flags) > 0
         reason = "; ".join(flags)
 
+        # In enforce mode, block flagged operations
         if self.config.mode == "enforce" and flagged:
             allowed = False
         else:
@@ -201,24 +273,67 @@ class FileSandbox:
 
         if flagged:
             logger.warning("File %s flagged: %s — %s", operation, path, reason)
+            if self.config.mode == "enforce" and not allowed:
+                logger.critical("File %s BLOCKED: %s — %s", operation, path, reason)
 
         return FileVerdict(allowed=allowed, flagged=flagged, reason=reason)
 
     def _matches_blocked(self, path: str) -> bool:
+        """Check if path matches any blocked pattern."""
         for pattern in self.config.blocked_paths:
-            if fnmatch.fnmatch(path, pattern):
+            if self._match_pattern(path, pattern):
                 return True
-            # Also check if pattern appears as suffix
-            if pattern.startswith("**/"):
-                suffix = pattern[3:]
-                if path.endswith(suffix) or ("/" + suffix) in path:
+        return False
+
+    def _is_immutable_file(self, path: str) -> bool:
+        """Check if this is an immutable security file by name."""
+        immutable_names = {
+            "SOUL.md",
+            "system_prompt.txt", 
+            "system_prompt.md",
+            "agentshroud.yaml",
+            "config.yaml",
+            "docker-compose.yml",
+            "docker-compose.yaml",
+        }
+        filename = os.path.basename(path)
+        return filename in immutable_names
+
+    def _matches_allowed_paths(self, path: str, allowed_paths: list[str]) -> bool:
+        """Check if path is within any allowed pattern."""
+        for pattern in allowed_paths:
+            if self._match_pattern(path, pattern):
+                return True
+        return False
+
+    def _match_pattern(self, path: str, pattern: str) -> bool:
+        """Enhanced pattern matching for file paths."""
+        # Direct fnmatch
+        if fnmatch.fnmatch(path, pattern):
+            return True
+        
+        # Handle ** patterns 
+        if pattern.startswith("**/"):
+            suffix = pattern[3:]
+            # Check if path ends with suffix
+            if path.endswith(suffix) or ("/" + suffix) in path:
+                return True
+            # Check basename match
+            if fnmatch.fnmatch(os.path.basename(path), suffix):
+                return True
+            # Check if any parent directory + suffix matches
+            path_parts = path.split("/")
+            for i in range(len(path_parts)):
+                subpath = "/".join(path_parts[i:])
+                if fnmatch.fnmatch(subpath, suffix):
                     return True
-                # Try fnmatch on basename
-                if fnmatch.fnmatch(path.split("/")[-1], suffix):
-                    return True
-                # Check for directory patterns
-                if fnmatch.fnmatch(path, "*/" + suffix):
-                    return True
+                    
+        # Handle trailing ** patterns (directory and all contents)
+        if pattern.endswith("/**"):
+            prefix = pattern[:-3]
+            if path.startswith(prefix + "/") or path == prefix:
+                return True
+                
         return False
 
     def record_network_activity(self, agent_id: str):
@@ -258,3 +373,11 @@ class FileSandbox:
             and op.operation == "write"
             and op.path.startswith("/tmp")
         ]
+
+    def get_security_violations(self, agent_id: Optional[str] = None) -> list[FileOperation]:
+        """Get all flagged operations that indicate security violations."""
+        violations = []
+        for op in self.get_audit_log(agent_id):
+            if op.flagged and ("security-sensitive" in op.reason or "immutable" in op.reason):
+                violations.append(op)
+        return violations

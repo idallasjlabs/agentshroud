@@ -20,6 +20,8 @@ services:
     networks:
       - shared
     environment:
+      # Uncomment to disable enforcement during development/tuning:
+      # AGENTSHROUD_MODE: monitor
       - AGENTSHROUD_MODE=sidecar
       - OPENCLAW_INTERNAL_URL=http://openclaw:3000
       - AGENTSHROUD_CONFIG=/app/agentshroud.yaml
@@ -41,6 +43,8 @@ services:
     networks:
       - shared
     environment:
+      # Uncomment to disable enforcement during development/tuning:
+      # AGENTSHROUD_MODE: monitor
       - OPENCLAW_BIND=0.0.0.0
       - OPENCLAW_PORT=3000
     healthcheck:
