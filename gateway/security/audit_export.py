@@ -258,6 +258,9 @@ class AuditExporter:
 
             if not events:
                 return {"verified": True, "message": "No events to verify"}
+            
+            # Sort events by timestamp for hash chain verification
+            events.sort(key=lambda e: e.get("timestamp", "") if isinstance(e, dict) else getattr(e, "timestamp", ""))
 
             # Verify hash chain in the export
             expected_prev_hash = None

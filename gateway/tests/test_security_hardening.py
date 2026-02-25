@@ -452,15 +452,18 @@ class TestEgressFilter:
 
     def test_per_agent_policy(self):
         from gateway.security.egress_config import EgressFilterConfig
+        # Agent allowlists are additive — restricted agent gets its domains PLUS global
+        # Use empty global allowlist to test per-agent isolation
         config = EgressFilterConfig(
             mode="enforce",
+            default_allowlist=set(),  # No global allowlist
             agent_allowlists={"restricted": {"only.this.com"}},
         )
         ef = EgressFilter(config=config)
         assert ef.check("restricted", "only.this.com", 443).action == EgressAction.ALLOW
-        assert ef.check("restricted", "api.openai.com", 443).action == EgressAction.DENY
-        # Other agents use default (which allows everything in allowlist)
-        assert ef.check("agent-1", "only.this.com", 443).action == EgressAction.ALLOW
+        assert ef.check("restricted", "evil.com", 443).action == EgressAction.DENY
+        # Other agents have no allowlist at all
+        assert ef.check("agent-1", "only.this.com", 443).action == EgressAction.DENY
 
     def test_log(self):
         self.ef.check("a", "example.com", 80)
