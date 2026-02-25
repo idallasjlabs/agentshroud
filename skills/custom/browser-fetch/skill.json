@@ -1,0 +1,43 @@
+{
+  "name": "browser-fetch",
+  "version": "1.0.0",
+  "description": "Securely fetch content from JavaScript-heavy websites using headless browser",
+  "author": "SecureClaw",
+  "keywords": ["browser", "playwright", "automation", "1password", "security"],
+  "tools": [
+    {
+      "name": "browser_fetch",
+      "description": "Fetch content from a URL using headless browser (Playwright). Use for JavaScript-heavy sites like 1Password share links that require client-side decryption. **REQUIRES APPROVAL** - will request permission before opening any URL.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "url": {
+            "type": "string",
+            "description": "The URL to fetch (must be HTTPS)"
+          },
+          "waitForSelector": {
+            "type": "string",
+            "description": "Optional CSS selector to wait for before extracting content",
+            "default": "body"
+          },
+          "screenshot": {
+            "type": "boolean",
+            "description": "Take a screenshot for debugging",
+            "default": false
+          }
+        },
+        "required": ["url"]
+      },
+      "exec": "node /home/node/.openclaw/skills/browser-fetch/browser-fetch.js"
+    }
+  ],
+  "security": {
+    "requiresApproval": true,
+    "auditLogging": true,
+    "networkAccess": "internet",
+    "filesystemAccess": "none"
+  },
+  "dependencies": {
+    "playwright": "^1.0.0"
+  }
+}
