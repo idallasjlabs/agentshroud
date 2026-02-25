@@ -451,20 +451,16 @@ class TestEgressFilter:
         assert result.action == EgressAction.DENY
 
     def test_per_agent_policy(self):
-        strict = EgressPolicy(allowed_domains=["only.this.com"], allowed_ports=[443])
-        self.ef.set_agent_policy("restricted", strict)
-        assert (
-            self.ef.check("restricted", "only.this.com", 443).action
-            == EgressAction.ALLOW
+        from gateway.security.egress_config import EgressFilterConfig
+        config = EgressFilterConfig(
+            mode="enforce",
+            agent_allowlists={"restricted": {"only.this.com"}},
         )
-        assert (
-            self.ef.check("restricted", "api.openai.com", 443).action
-            == EgressAction.DENY
-        )
-        # Other agents still use default
-        assert (
-            self.ef.check("agent-1", "api.openai.com", 443).action == EgressAction.ALLOW
-        )
+        ef = EgressFilter(config=config)
+        assert ef.check("restricted", "only.this.com", 443).action == EgressAction.ALLOW
+        assert ef.check("restricted", "api.openai.com", 443).action == EgressAction.DENY
+        # Other agents use default (which allows everything in allowlist)
+        assert ef.check("agent-1", "only.this.com", 443).action == EgressAction.ALLOW
 
     def test_log(self):
         self.ef.check("a", "example.com", 80)
