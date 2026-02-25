@@ -27,10 +27,10 @@ class TestForwardEndpoint:
         
         # Mock middleware manager to block the request
         mock_middleware = MagicMock()
-        mock_middleware.process.return_value = MiddlewareResult(
+        mock_middleware.process_request = AsyncMock(return_value=MiddlewareResult(
             allowed=False,
             reason="Test middleware block"
-        )
+        ))
         
         # Mock auth
         mock_auth = MagicMock()
@@ -59,7 +59,7 @@ class TestForwardEndpoint:
                 assert "Request blocked by middleware" in response.json()["detail"]
                 
                 # Verify middleware was called
-                mock_middleware.process.assert_called_once()
+                mock_middleware.process_request.assert_called_once()
     
     def test_forward_middleware_allowed(self):
         """Test that middleware allows requests when they pass checks."""

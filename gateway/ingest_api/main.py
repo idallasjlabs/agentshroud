@@ -33,9 +33,9 @@ from fastapi.responses import JSONResponse, HTMLResponse
 from starlette.responses import RedirectResponse
 from pathlib import Path
 
-from ..approval_queue.queue import ApprovalQueue
+from ..approval_queue.enhanced_queue import EnhancedApprovalQueue
 from .auth import create_auth_dependency
-from .config import GatewayConfig, load_config
+from .config import GatewayConfig, load_config, get_module_mode, check_monitor_mode_warnings
 from .ledger import DataLedger
 from .models import (
     ApprovalDecision,
@@ -57,6 +57,7 @@ from .sanitizer import PIISanitizer
 from ..security.prompt_guard import PromptGuard
 from ..security.trust_manager import TrustManager, TrustLevel
 from ..security.egress_filter import EgressFilter
+from ..security.outbound_filter import OutboundInfoFilter
 from .middleware import MiddlewareManager
 from .event_bus import EventBus, make_event
 from ..proxy.http_proxy import ALLOWED_DOMAINS, HTTPConnectProxy
@@ -66,6 +67,7 @@ from ..proxy.web_config import WebProxyConfig
 from ..proxy.web_proxy import WebProxy
 from ..proxy.webhook_receiver import WebhookReceiver
 from ..proxy.pipeline import SecurityPipeline
+from gateway.security.session_manager import UserSessionManager
 from ..web.api import router as management_api_router
 from ..web.management import router as management_dashboard_router
 from ..web.dashboard_endpoints import router as dashboard_api_router, install_log_handler
@@ -125,6 +127,7 @@ class AppState:
     egress_filter: EgressFilter
     mcp_proxy: Optional[MCPProxy]
     pipeline: Optional[SecurityPipeline]
+    session_manager: Optional[UserSessionManager]
     start_time: float
     event_bus: EventBus
     http_proxy: Optional[HTTPConnectProxy]
@@ -175,6 +178,8 @@ async def lifespan(app: FastAPI):
     try:
         app_state.config = load_config()
         logger.info("Configuration loaded successfully")
+        # Check for monitor mode warnings
+        check_monitor_mode_warnings(app_state.config, logger)
     except Exception as e:
         logger.critical(f"Failed to load configuration: {e}")
         raise
@@ -185,9 +190,11 @@ async def lifespan(app: FastAPI):
 
     # Initialize PII sanitizer
     try:
-        app_state.sanitizer = PIISanitizer(app_state.config.pii)
+        sanitizer_mode = get_module_mode(app_state.config, "pii_sanitizer")
+        sanitizer_action = app_state.config.security.pii_sanitizer.action or "redact"
+        app_state.sanitizer = PIISanitizer(app_state.config.pii, mode=sanitizer_mode, action=sanitizer_action)
         logger.info(
-            f"PII sanitizer initialized (mode: {app_state.sanitizer.get_mode()})"
+            f"PII sanitizer initialized (mode: {app_state.sanitizer.get_mode()}, action: {sanitizer_action})"
         )
     except Exception as e:
         logger.critical(f"Failed to initialize PII sanitizer: {e}")
@@ -212,15 +219,26 @@ async def lifespan(app: FastAPI):
 
     # Initialize approval queue
     try:
-        app_state.approval_queue = ApprovalQueue(app_state.config.approval_queue)
-        logger.info("Approval queue initialized")
+        from ..approval_queue.store import ApprovalStore
+        store = ApprovalStore("/tmp/agentshroud_approvals.db")  # TODO: Use config path
+        app_state.approval_queue = EnhancedApprovalQueue(
+            app_state.config.approval_queue, 
+            app_state.config.tool_risk,
+            store
+        )
+        await app_state.approval_queue.initialize()
+        logger.info(f"Enhanced approval queue initialized (enforce_mode={app_state.config.tool_risk.enforce_mode})")
     except Exception as e:
         logger.critical(f"Failed to initialize approval queue: {e}")
         raise
 
     # Initialize security components
     try:
-        app_state.prompt_guard = PromptGuard(block_threshold=0.8, warn_threshold=0.4)
+        prompt_guard_mode = get_module_mode(app_state.config, "prompt_guard")
+        # Set thresholds based on mode - in monitor mode, set very high threshold so nothing blocks
+        block_threshold = 999.0 if prompt_guard_mode == "monitor" else 0.8
+        warn_threshold = 999.0 if prompt_guard_mode == "monitor" else 0.4
+        app_state.prompt_guard = PromptGuard(block_threshold=block_threshold, warn_threshold=warn_threshold)
         logger.info("PromptGuard initialized")
     except Exception as e:
         logger.critical(f"Failed to initialize PromptGuard: {e}")
@@ -241,8 +259,22 @@ async def lifespan(app: FastAPI):
         raise
 
     try:
-        app_state.egress_filter = EgressFilter()
-        logger.info("EgressFilter initialized")
+        egress_mode = get_module_mode(app_state.config, "egress_filter")
+        # Create default policy with required domains for AgentShroud operation
+        from ..security.egress_filter import EgressPolicy
+        default_policy = EgressPolicy(
+            allowed_domains=[
+                "api.anthropic.com",
+                "api.openai.com",
+                "imap.gmail.com",
+                "smtp.gmail.com",
+                "*.googleapis.com",
+                "api.telegram.org"
+            ] + app_state.config.proxy_allowed_domains,
+            deny_all=(egress_mode == "enforce")
+        )
+        app_state.egress_filter = EgressFilter(default_policy=default_policy)
+        logger.info(f"EgressFilter initialized (mode: {egress_mode}, deny_all: {default_policy.deny_all})")
     except Exception as e:
         logger.critical(f"Failed to initialize EgressFilter: {e}")
         raise
@@ -268,6 +300,14 @@ async def lifespan(app: FastAPI):
         logger.warning(f"Failed to wire log sanitizer: {e}")
 
 
+    # Initialize outbound information filter
+    try:
+        app_state.outbound_filter = OutboundInfoFilter(getattr(app_state.config, "outbound_filter", None))
+        logger.info(f"Outbound information filter initialized (mode: {app_state.outbound_filter.mode})")
+    except Exception as e:
+        logger.critical(f"Failed to initialize outbound information filter: {e}")
+        raise
+
     # Initialize security pipeline
     app_state.pipeline = SecurityPipeline(
         prompt_guard=app_state.prompt_guard,
@@ -275,9 +315,23 @@ async def lifespan(app: FastAPI):
         trust_manager=app_state.trust_manager,
         egress_filter=app_state.egress_filter,
         approval_queue=app_state.approval_queue,
+        outbound_filter=app_state.outbound_filter,
     )
     logger.info("Security pipeline initialized")
-    logger.info("Security pipeline initialized")
+
+    # Initialize per-user session manager for session isolation
+    try:
+        base_workspace = Path("/home/node/.openclaw/workspace")
+        # TODO: Load owner_user_id from config - for now use a default
+        owner_user_id = getattr(app_state.config, 'owner_user_id', '1234567890') if app_state.config else '1234567890'
+        app_state.session_manager = UserSessionManager(
+            base_workspace=base_workspace,
+            owner_user_id=owner_user_id
+        )
+        logger.info("UserSessionManager initialized")
+    except Exception as e:
+        logger.error(f"Failed to initialize UserSessionManager: {e}")
+        app_state.session_manager = None
 
     # ══════════════════════════════════════════════════════════════════
     # P3 — Background & Infrastructure Security Modules
@@ -436,14 +490,20 @@ async def lifespan(app: FastAPI):
         app_state.network_validator = None
 
     # Initialize MCP proxy — load server registry from agentshroud.yaml mcp_proxy section
+    mcp_mode = get_module_mode(app_state.config, "mcp_proxy")
     mcp_proxy_config = (
         MCPProxyConfig.from_dict(app_state.config.mcp_proxy_data)
         if app_state.config.mcp_proxy_data
         else MCPProxyConfig()
     )
-    app_state.mcp_proxy = MCPProxy(config=mcp_proxy_config)
+    # In enforce mode, enable all security scanning
+    if mcp_mode == "enforce":
+        mcp_proxy_config.pii_scan_enabled = True
+        mcp_proxy_config.injection_scan_enabled = True
+        mcp_proxy_config.audit_enabled = True
+    app_state.mcp_proxy = MCPProxy(config=mcp_proxy_config, approval_queue=app_state.approval_queue)
     logger.info(
-        f"MCP proxy initialized: {len(mcp_proxy_config.servers)} server(s) registered"
+        f"MCP proxy initialized (mode: {mcp_mode}): {len(mcp_proxy_config.servers)} server(s) registered"
     )
 
     # Initialize SSH proxy
@@ -491,6 +551,11 @@ async def lifespan(app: FastAPI):
         await app_state.http_proxy.stop()
 
     # Close ledger
+
+    # Close approval queue
+    if hasattr(app_state, "approval_queue") and app_state.approval_queue:
+        await app_state.approval_queue.close()
+        logger.info("Approval queue closed")
     await app_state.ledger.close()
 
     logger.info("Shutdown complete")
@@ -986,7 +1051,8 @@ async def telegram_webhook(request: Request, auth: AuthRequired):
     # Build receiver using available app_state components
     pipeline = getattr(app_state, "pipeline", None)
     forwarder = getattr(app_state, "forwarder", None)
-    receiver = WebhookReceiver(pipeline=pipeline, forwarder=forwarder)
+    session_manager = getattr(app_state, "session_manager", None)
+    receiver = WebhookReceiver(pipeline=pipeline, forwarder=forwarder, session_manager=session_manager)
 
     result = await receiver.process_webhook(payload, source="telegram")
     logger.info(f"telegram-webhook: status={result.get('status')}")
@@ -1094,11 +1160,12 @@ async def forward_content(request: ForwardRequest, auth: AuthRequired):
                 "message": request.content,
                 "content_type": request.content_type,
                 "source": request.source,
-                "headers": {}  # Add headers if available in request
+                "headers": {},  # Add headers if available in request
+                "user_id": getattr(request, "user_id", None) or getattr(request, "source", "anonymous")
             }
 
             # Process through middleware
-            middleware_result = middleware_manager.process(request_data, "unknown")
+            middleware_result = await middleware_manager.process_request(request_data, "unknown")
 
             if not middleware_result.allowed:
                 logger.warning(f"Middleware blocked request: {middleware_result.reason}")
@@ -1279,8 +1346,27 @@ async def forward_content(request: ForwardRequest, auth: AuthRequired):
     if agent_response:
         # Step 5.0: Filter out Claude XML internal blocks and run outbound PII scan
         if pipeline:
+            # Get user trust level for outbound filtering
+            user_trust_level = "UNTRUSTED"
+            if pipeline.trust_manager:
+                trust_info = pipeline.trust_manager.get_trust("default")
+                if trust_info:
+                    trust_levels = ["UNTRUSTED", "BASIC", "STANDARD", "ELEVATED", "FULL"]
+                    trust_score = trust_info[0]
+                    if trust_score >= 400:
+                        user_trust_level = "FULL"
+                    elif trust_score >= 300:
+                        user_trust_level = "ELEVATED"
+                    elif trust_score >= 200:
+                        user_trust_level = "STANDARD"
+                    elif trust_score >= 100:
+                        user_trust_level = "BASIC"
+            
             out_result = await pipeline.process_outbound(
-                response=agent_response, agent_id="default"
+                response=agent_response, 
+                agent_id="default",
+                user_trust_level=user_trust_level,
+                source=request.source
             )
             filtered_response = out_result.sanitized_message
         else:

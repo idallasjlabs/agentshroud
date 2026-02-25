@@ -29,13 +29,15 @@ class PIISanitizer:
     Falls back to regex patterns if Presidio/spaCy unavailable.
     """
 
-    def __init__(self, config: PIIConfig):
+    def __init__(self, config: PIIConfig, mode: str = "enforce", action: str = "redact"):
         """Initialize sanitizer
 
         Args:
             config: PII configuration from agentshroud.yaml
         """
         self.config = config
+        self.enforcement_mode = mode  # "enforce" or "monitor"
+        self.enforcement_action = action  # "redact" or "block"
         self.mode: Literal["presidio", "regex"] = "regex"
         self.analyzer = None
         self.anonymizer = None
@@ -348,12 +350,12 @@ class PIISanitizer:
         return self.config.entities
 
     def get_mode(self) -> str:
-        """Return current detection mode
+        """Return current enforcement mode
 
         Returns:
-            "presidio" or "regex"
+            "enforce" or "monitor"
         """
-        return self.mode
+        return self.enforcement_mode
 
     async def block_credentials(self, content: str, source: str) -> tuple[str, bool]:
         """Block credential display via untrusted sources (e.g., Telegram)
