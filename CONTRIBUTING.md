@@ -11,8 +11,8 @@ Thank you for your interest in contributing! This guide covers the process from 
 git clone https://github.com/YOUR_USERNAME/agentshroud.git
 cd agentshroud
 
-# 2. Create Python 3.11 virtual environment
-python3.11 -m venv .venv
+# 2. Create Python 3.9+ virtual environment
+python3 -m venv .venv
 source .venv/bin/activate
 
 # 3. Install dependencies
