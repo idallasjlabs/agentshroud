@@ -105,3 +105,22 @@ If security is compromised:
 
 For security issues: security@agentshroud.ai
 For documentation: https://github.com/agentshroud/agentshroud/security
+
+## Supported Versions
+
+| Version | Supported |
+|---------|-----------|
+| v0.7.x  | ✅ Active  |
+| v0.6.x  | ⚠️ Critical fixes only |
+| < v0.6  | ❌ Unsupported |
+
+
+## Responsible Disclosure Policy
+
+If you discover a security vulnerability in AgentShroud, please report it responsibly:
+
+1. **Email:** security@agentshroud.ai
+2. **Do not** create public GitHub issues for security vulnerabilities
+3. We will acknowledge receipt within 48 hours
+4. We aim to provide a fix within 7 business days for critical issues
+
