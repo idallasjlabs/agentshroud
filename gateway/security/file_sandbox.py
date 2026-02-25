@@ -141,7 +141,18 @@ class FileSandboxConfig:
             "**/Dockerfile*",
             "**/seccomp/*.json",
             
-            # Host system paths that should never be accessible from container
+            # Cross-session memory protection - prevent users from accessing each other's memory
+            "**/memory/*/",  # Block access to other users' memory directories
+            "**/.openclaw/workspace/memory/*/",  # Block specific OpenClaw memory paths
+            "**/MEMORY.md",  # Block access to other users' MEMORY.md files (except own session)
+            "**/workspace/*/memory/**",  # Block cross-workspace memory access
+            "**/session_*/memory/**",  # Block cross-session memory access
+            "**/agent_*/memory/**",  # Block cross-agent memory access
+            
+            # Shared memory and temporary file isolation
+            "/tmp/agentshroud/*/",  # Block cross-user temp directory access (handled by PathIsolation)
+            "/var/tmp/agentshroud/*/",  # Block cross-user var temp access
+                        # Host system paths that should never be accessible from container
             "/etc/**",
             "/var/log/**",
             "/var/lib/**",
