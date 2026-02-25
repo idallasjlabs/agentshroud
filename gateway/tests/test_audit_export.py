@@ -8,6 +8,7 @@ from __future__ import annotations
 
 import json
 import pytest
+import pytest_asyncio
 from datetime import datetime, timezone
 from io import StringIO
 
@@ -75,7 +76,7 @@ class TestAuditEvent:
 class TestAuditStore:
     """Test AuditStore functionality."""
 
-    @pytest.fixture
+    @pytest_asyncio.fixture
     async def audit_store(self):
         """Create in-memory audit store for testing."""
         store = AuditStore(":memory:")
@@ -166,7 +167,7 @@ class TestAuditStore:
 class TestAuditExporter:
     """Test AuditExporter functionality."""
 
-    @pytest.fixture
+    @pytest_asyncio.fixture
     async def audit_store(self):
         """Create audit store with test data."""
         store = AuditStore(":memory:")

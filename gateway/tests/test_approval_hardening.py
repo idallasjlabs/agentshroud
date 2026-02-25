@@ -166,7 +166,7 @@ class TestApprovalHardening:
         detection = hardening.analyze_request(
             tool_name="exec",
             description="Execute encoded command",
-            parameters={"command": "echo SGVsbG8gV29ybGQh | base64 -d"},  # Contains base64
+            parameters={"command": "echo SGVsbG8gV29ybGQhIFRoaXMgaXMgYSBsb25nZXIgdGVzdA== | base64 -d"},  # Contains base64
             agent_id="test_agent"
         )
         
