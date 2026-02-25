@@ -89,6 +89,14 @@ RUN mkdir -p /var/log/security && chown agentshroud:agentshroud /var/log/securit
 # Download spaCy NLP model for PII detection (560MB, cached in Docker layer)
 RUN python3 -m spacy download en_core_web_sm || echo "spaCy model download failed — will use regex fallback"
 
+# Copy repo root files needed by tests
+COPY README.md /app/README.md
+COPY SECURITY.md /app/SECURITY.md
+COPY CONTRIBUTING.md /app/CONTRIBUTING.md
+COPY examples/ /app/examples/
+COPY docker/docker-compose.yml /app/docker/docker-compose.yml
+COPY docker/scripts/killswitch.sh /app/docker/scripts/killswitch.sh
+
 # Switch to non-root user
 # Strip setuid/setgid bits — CIS Docker Benchmark 4.8
 RUN find / -perm /6000 -type f -exec chmod a-s {} + 2>/dev/null || true
