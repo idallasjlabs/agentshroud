@@ -10,6 +10,8 @@ are embedded in web pages, emails, or other tool results that the agent processe
 """
 from __future__ import annotations
 
+from gateway.security.input_normalizer import normalize_input
+
 import base64
 import re
 import unicodedata
@@ -248,6 +250,10 @@ class ToolResultInjectionScanner:
         Returns:
             InjectionResult with detected patterns and sanitized content
         """
+
+        # Normalize to defeat encoding evasion
+        result_content = normalize_input(result_content)
+
         if not result_content or not result_content.strip():
             return InjectionResult(
                 severity=InjectionSeverity.LOW,
