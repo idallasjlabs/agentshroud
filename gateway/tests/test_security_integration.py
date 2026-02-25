@@ -24,6 +24,7 @@ from gateway.ingest_api.ledger import DataLedger
 from gateway.ingest_api.sanitizer import PIISanitizer
 from gateway.security.prompt_guard import PromptGuard
 from gateway.security.trust_manager import TrustManager, TrustLevel
+from gateway.security.egress_config import EgressFilterConfig
 from gateway.security.egress_filter import EgressFilter, EgressPolicy, EgressAction
 from gateway.security.drift_detector import DriftDetector, ContainerSnapshot
 from gateway.security.encrypted_store import EncryptedStore
@@ -78,7 +79,7 @@ def egress_filter():
         allowed_domains=["api.openai.com", "api.anthropic.com"],
         allowed_ports=[443],
     )
-    return EgressFilter(default_policy=policy)
+    return EgressFilter(config=EgressFilterConfig(mode='enforce'), default_policy=policy)
 
 
 @pytest.fixture
