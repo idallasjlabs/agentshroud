@@ -236,6 +236,62 @@ _PATTERNS: list[PatternRule] = [
         weight=0.7,
         description="Emoji-based unlock/override attempt",
     ),
+    # HTML comment injection
+    PatternRule(
+        "html_comment_injection",
+        re.compile(
+            r"<!--\s*(?:system|instruction|override|admin|ignore|new\s+rules?).*?-->",
+            re.IGNORECASE | re.DOTALL,
+        ),
+        weight=0.85,
+        description="HTML comment hidden instruction injection",
+    ),
+    # Social engineering authority claims
+    PatternRule(
+        "social_engineering_authority",
+        re.compile(
+            r"(?i)(?:as\s+(?:a\s+)?(?:system|admin|developer)\s+(?:note|message|instruction)|"
+            r"(?:this\s+is\s+(?:a\s+)?)?(?:system|admin|priority)\s+(?:override|update|notice)\s*:|"
+            r"(?:security|admin|system)\s+(?:team|department)\s+(?:here|speaking|message))",
+        ),
+        weight=0.85,
+        description="Social engineering with authority claims",
+    ),
+    # Instruction boundary manipulation  
+    PatternRule(
+        "boundary_manipulation",
+        re.compile(
+            r"(?i)(?:end\s+of\s+(?:system\s+)?(?:prompt|instructions?|context)|"
+            r"---+\s*(?:new|real|actual)\s+(?:instructions?|prompt|task)|"
+            r"={3,}\s*(?:SYSTEM|OVERRIDE|NEW)\s*={3,}|"
+            r"BEGIN\s+(?:NEW\s+)?(?:INSTRUCTIONS?|PROMPT|OVERRIDE))",
+        ),
+        weight=0.9,
+        description="Instruction boundary/delimiter manipulation",
+    ),
+    # Hypothetical/roleplay framing
+    PatternRule(
+        "hypothetical_framing",
+        re.compile(
+            r"(?i)(?:hypothetically|in\s+theory|imagine\s+(?:you|that)|"
+            r"for\s+(?:educational|research|academic)\s+purposes|"
+            r"what\s+would\s+happen\s+if\s+you\s+(?:ignored|bypassed)|"
+            r"let'?s\s+(?:play|pretend|imagine|say)\s+(?:that\s+)?(?:you|there|the))",
+        ),
+        weight=0.6,
+        description="Hypothetical/educational framing to bypass safety",
+    ),
+    # Token/encoding smuggling indicators
+    PatternRule(
+        "encoding_smuggling",
+        re.compile(
+            r"(?i)(?:(?:rot13|base64|hex|url)\s*(?:decode|encode|convert|translate)\s*(?:this|the\s+following)|"
+            r"decode\s+(?:and\s+)?(?:execute|follow|run)|"
+            r"the\s+(?:real|actual|hidden)\s+(?:message|instruction)\s+is\s+(?:encoded|hidden))",
+        ),
+        weight=0.8,
+        description="Encoding/token smuggling instruction",
+    ),
 ]
 
 
