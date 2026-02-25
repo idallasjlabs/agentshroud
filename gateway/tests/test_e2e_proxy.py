@@ -67,12 +67,13 @@ def trust_manager():
 
 @pytest.fixture
 def egress_filter():
+    config = EgressFilterConfig(mode="enforce")
     policy = EgressPolicy(
         allowed_domains=["api.openai.com", "*.github.com"],
         allowed_ports=[80, 443],
         deny_all=True,
     )
-    return EgressFilter(default_policy=policy)
+    return EgressFilter(config=config, default_policy=policy)
 
 
 @pytest_asyncio.fixture
