@@ -30,6 +30,9 @@ from gateway.security.rbac import RBACManager, Action, Resource, ToolTier
 from gateway.security.rbac_config import RBACConfig
 from gateway.security.session_manager import UserSessionManager
 from gateway.security.tool_result_sanitizer import ToolResultSanitizer, ToolResultPIIConfig
+from gateway.security.memory_config import MemorySecurityConfig
+from gateway.security.memory_integrity import MemoryIntegrityMonitor
+from gateway.security.memory_lifecycle import MemoryLifecycleManager
 
 logger = logging.getLogger(__name__)
 
@@ -171,6 +174,23 @@ class MiddlewareManager:
 
         # Tool result PII sanitizer (configured later via set_config)
         self.tool_result_sanitizer = None
+        # Memory Security Components
+        try:
+            base_workspace = Path("/home/node/.openclaw/workspace")
+            self.memory_config = MemorySecurityConfig.from_env()
+            self.memory_config.base_directory = base_workspace
+            self.memory_integrity_monitor = MemoryIntegrityMonitor(
+                self.memory_config.integrity, base_workspace
+            )
+            self.memory_lifecycle_manager = MemoryLifecycleManager(
+                self.memory_config.lifecycle, base_workspace
+            )
+            logger.info("Memory security components initialized")
+        except Exception as e:
+            logger.error(f"Failed to initialize memory security: {e}")
+            self.memory_config = None
+            self.memory_integrity_monitor = None
+            self.memory_lifecycle_manager = None
 
     async def process_request(
         self,
@@ -204,6 +224,25 @@ class MiddlewareManager:
             if isolation_result.modified_request:
                 request_data = isolation_result.modified_request
             
+            # Memory Security - Validate memory file operations
+            message = request_data.get('message', '')
+            if isinstance(message, dict):
+                message = str(message)
+            
+            # Register expected writes to memory files to prevent false integrity alerts
+            if self.memory_integrity_monitor and ('write' in message.lower() or 'edit' in message.lower()):
+                import re
+                memory_patterns = [
+                    r'(?:write|edit).*?(?:MEMORY\.md|memory/.*\.md|HEARTBEAT\.md|TOOLS\.md)',
+                ]
+                for pattern in memory_patterns:
+                    if re.search(pattern, message, re.IGNORECASE):
+                        # Extract file path and register expected write
+                        path_match = re.search(r'(?:write|edit)\s+(\S+\\.md)', message)
+                        if path_match:
+                            self.memory_integrity_monitor.register_expected_write(path_match.group(1))
+                            logger.debug(f'Registered expected write for {path_match.group(1)}')
+
             # 1. Context Guard - Check for prompt injection and manipulation
             if self.context_guard:
                 try:
