@@ -307,3 +307,54 @@ async def update_egress_allowlist(update: EgressAllowlistUpdate):
         "domains": update.domains,
         "mode": update.mode
     }
+# =====================================================# Credential Rotation Management (R-22)
+# =====================================================
+@router.get("/credentials/status")
+async def credentials_status():
+    """Get status of all managed credentials including age and rotation schedule."""
+    from gateway.security.key_rotation import KeyRotationManager
+    from gateway.security.key_rotation_config import KeyRotationConfig
+    
+    # Initialize with default config
+    # In production, this would be loaded from persistent storage
+    manager = KeyRotationManager(KeyRotationConfig())
+    
+    return {
+        "credentials": manager.get_all_credentials_status(),
+        "health": manager.get_health_score()
+    }
+
+
+@router.post("/credentials/rotate/{credential_id}")
+async def rotate_credential(credential_id: str, force: bool = False):
+    """Trigger manual rotation for a specific credential (owner only)."""
+    from gateway.security.key_rotation import KeyRotationManager
+    from gateway.security.key_rotation_config import KeyRotationConfig
+    
+    manager = KeyRotationManager(KeyRotationConfig())
+    
+    if credential_id not in manager._credentials:
+        raise HTTPException(
+            status_code=404,
+            detail=f"Credential {credential_id} not found"
+        )
+    
+    result = await manager.rotate_credential(credential_id, force=force)
+    
+    if not result["success"]:
+        raise HTTPException(
+            status_code=400,
+            detail=result["error"]
+        )
+    
+    return result
+
+
+@router.get("/credentials/health")
+async def credentials_health():
+    """Get overall credential health score and status summary."""
+    from gateway.security.key_rotation import KeyRotationManager
+    from gateway.security.key_rotation_config import KeyRotationConfig
+    
+    manager = KeyRotationManager(KeyRotationConfig())
+    return manager.get_health_score()
