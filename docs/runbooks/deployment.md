@@ -90,7 +90,7 @@ See [Raspberry Pi Setup Guide](../deploy/raspberry-pi.md) for initial installati
 ### Quick Summary
 
 1. Clone repo
-2. Create conda env: `conda create -n agentshroud python=3.11`
+2. Create conda env: `conda create -n agentshroud python=3.13`
 3. Install deps: `pip install -r requirements.txt`
 4. Configure secrets via 1Password + Docker Secrets
 5. `docker compose up -d`

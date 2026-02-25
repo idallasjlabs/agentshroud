@@ -40,6 +40,62 @@ Two new security modules landing via open PRs (#24, #25). Dependency: P1 must me
 
 ---
 
+## [0.7.0] - 2026-02-25
+
+### Summary
+Major security hardening release. All 33 modules enforcing, prompt injection defense expanded, input normalization layer added. Full test suite: 1953 passed, 0 failed, 0 skipped, 0 warnings on both macOS (Python 3.14) and Docker/Linux (Python 3.13).
+
+### Added
+- **Input Normalizer** — NFKC normalization, zero-width char stripping, HTML/URL decode before all scanning
+- **7 new PromptGuard patterns** — multilingual injection (6 languages), chat format injection (LLaMA/ChatML/Phi), payload-after-benign, echo traps, few-shot poisoning, markdown exfiltration, emoji unlock
+- **ContextGuard enforcement** — `should_block_message()` now blocks high-severity attacks (was detect-only)
+- **SecurityPipeline** — all 33 modules wired across P0/P1/P2/P3 tiers
+- **FileSandbox enforce mode** — read/write allowlists, path traversal blocked
+- **RBAC** — owner/collaborator/viewer roles, viewer blocked from manage operations
+- **Session isolation** — per-user workspaces, cross-user access blocked
+- **Path isolation** — per-user temp directories, cross-user file access blocked
+- **Audit export** — JSON, CEF, JSON-LD formats with hash chain verification
+- **Key rotation**, **memory lifecycle**, **credential isolation** modules
+- **Prompt protection** — outbound system prompt leak detection with fuzzy matching
+- **`/manage/modules` endpoint** — returns all 33 modules with tier + status
+- **Enforcement audit script** — 40-check automated verification
+
+### Fixed
+- Middleware `_is_path_allowed_for_user` changed from fail-open to FileSandbox fallback
+- `datetime.utcnow()` → `datetime.now(tz=timezone.utc)` for Python 3.13 compat
+- macOS `/private` prefix normalization in path comparisons
+- pytest cache warnings eliminated via `pytest.ini`
+
+### Security
+- 33/33 modules active and enforcing
+- PromptGuard: 18 patterns (was 11), now blocks multilingual + encoding evasion
+- ContextGuard: blocks high-severity injection (was monitor-only)
+- FileSandbox: enforce mode blocks `/etc/shadow`, SSH keys, path traversal
+- EgressFilter: enforce mode blocks unlisted domains
+- MCP proxy: fail-closed on error
+
+---
+
+## [0.6.0] - 2026-02-23
+
+### Summary
+First production-ready release. All 30 original security modules wired into live pipeline. Web Control Center and TUI Console delivered.
+
+### Added
+- **Web Control Center** — 7-page dashboard for security management
+- **TUI Console** — terminal-based control center + chat console
+- **All 30 security modules** wired into SecurityPipeline
+- **`GET /manage/modules`** — module status endpoint
+- **Docker deployment** — Colima support for non-admin users
+- **Per-host Telegram bots** — separate bot tokens per deployment
+
+### Fixed
+- Gateway binds 127.0.0.1 (was 0.0.0.0)
+- PII redaction threshold tuned to 0.9
+- Python 3.9 compat across 50+ files
+
+---
+
 ## [0.5.0] - 2026-02-21
 
 ### Summary

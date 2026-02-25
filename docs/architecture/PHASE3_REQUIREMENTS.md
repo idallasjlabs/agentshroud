@@ -228,7 +228,7 @@ No feature creep. No advanced features until basic chat works. Focus:
 ### Step 1: Container Configuration (Day 1)
 
 - [ ] Create `docker/Dockerfile.openclaw`
-  - Base: `python:3.11-slim` (not latest - for stability)
+  - Base: `python:3.13-slim` (not latest - for stability)
   - Install OpenClaw dependencies
   - Create non-root user `openclaw` (UID 1000)
   - Set working directory `/home/openclaw/.openclaw`

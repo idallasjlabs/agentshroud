@@ -131,7 +131,7 @@ Your Pi will be reachable at its Tailscale hostname (e.g., `raspberrypi.tail240e
 ### Slow Builds
 
 - Use an SSD instead of an SD card — dramatically improves I/O.
-- Pre-pull base images: `docker pull python:3.11-slim`
+- Pre-pull base images: `docker pull python:3.13-slim`
 - Use Docker BuildKit: `DOCKER_BUILDKIT=1 docker compose build`
 
 ### Container Won't Start
