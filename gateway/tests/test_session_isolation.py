@@ -436,20 +436,18 @@ class TestMiddlewareSessionEnforcement:
     @pytest.mark.asyncio 
     async def test_middleware_file_path_isolation(self, middleware_manager, temp_workspace):
         """Test that middleware blocks access to other users' files."""
-        # Create another user's workspace
-        other_user_workspace = temp_workspace / "users" / "other_user" / "workspace"
-        other_user_workspace.mkdir(parents=True)
-        other_user_file = other_user_workspace / "secret.txt"
-        other_user_file.write_text("Other user's secret data")
+        # Use /home path (not /tmp which is in FileSandbox allowed_reads)
+        sensitive_path = "/home/other_user/workspace/secret.txt"
         
-        # Try to access other user's file
+        # Try to access another user's home directory file
         request_data = {
-            "message": f"read {other_user_file}",
+            "message": f"read {sensitive_path}",
             "user_id": "user_123"
         }
         
         result = await middleware_manager.process_request(request_data)
         
+        # Should be blocked — /home/other_user is not in allowed paths
         assert not result.allowed
         assert "Unauthorized file access" in result.reason
         assert "cannot access other users' data" in result.reason
