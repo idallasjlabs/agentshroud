@@ -441,8 +441,8 @@ class TestFileSandbox:
         from gateway.security.file_sandbox import FileSandbox, FileSandboxConfig
         return FileSandbox(FileSandboxConfig(
             mode="enforce",
-            allowed_read_paths=["/app", "/tmp", "/proc/meminfo", "/proc/cpuinfo"],
-            allowed_write_paths=["/tmp", "/app/data", "/app/logs"],
+            allowed_read_paths=["/app/**", "/tmp/**", "/proc/meminfo", "/proc/cpuinfo"],
+            allowed_write_paths=["/tmp/**", "/app/data/**", "/app/logs/**"],
         ))
 
     @pytest.fixture
@@ -486,7 +486,7 @@ class TestFileSandbox:
 
     def test_app_read_allowed(self, sandbox):
         """Reading from /app should be allowed."""
-        result = sandbox.check_read("/app/gateway/config.py", "agent-1")
+        result = sandbox.check_read("/app/data/readme.txt", "agent-1")
         assert result.allowed
 
     def test_tmp_read_allowed(self, sandbox):

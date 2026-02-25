@@ -106,6 +106,26 @@ If security is compromised:
 For security issues: security@agentshroud.ai
 For documentation: https://github.com/agentshroud/agentshroud/security
 
+
+## Security Features
+
+- **PII Sanitizer** — Hybrid Presidio + regex detection with redaction
+- **Prompt Guard** — Injection and jailbreak detection
+- **Egress Filter** — DNS-layer domain allowlist
+- **File Sandbox** — Path-based read/write access control
+- **Metadata Guard** — Path traversal and injection prevention
+- **Outbound Info Filter** — Prevents credential/PII leakage in responses
+- **Approval Queue** — Human-in-the-loop for high-risk tool calls
+- **Session Isolation** — Per-agent session boundaries
+- **Credential Injector** — Gateway-only credential storage
+- **Network Validator** — Container network policy enforcement
+- **ClamAV Scanner** — Malware detection on file operations
+- **Trivy Scanner** — Container vulnerability scanning
+- **Drift Detector** — Runtime file integrity monitoring
+- **Kill Switch** — Emergency shutdown capability for compromised agents
+- **Rate Limiter** — Request throttling per agent/IP
+- **Canary System** — Data exfiltration detection via planted tokens
+
 ## Supported Versions
 
 | Version | Supported |
@@ -113,6 +133,7 @@ For documentation: https://github.com/agentshroud/agentshroud/security
 | v0.7.x  | ✅ Active  |
 | v0.6.x  | ⚠️ Critical fixes only |
 | < v0.6  | ❌ Unsupported |
+| v0.2-v0.5 | ❌ End of life |
 
 
 ## Responsible Disclosure Policy
