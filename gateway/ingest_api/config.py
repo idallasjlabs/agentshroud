@@ -109,6 +109,129 @@ class ChannelsConfig(BaseModel):
     imessage_require_approval_for_new: bool = True
 
 
+
+
+class SecurityModuleConfig(BaseModel):
+    """Security module configuration"""
+
+    mode: str = "enforce"  # enforce, monitor
+    action: Optional[str] = None  # For PII: redact, block
+
+
+class SecurityConfig(BaseModel):
+    """Complete security configuration"""
+
+    pii_sanitizer: SecurityModuleConfig = Field(default_factory=lambda: SecurityModuleConfig(action="redact"))
+    prompt_guard: SecurityModuleConfig = Field(default_factory=SecurityModuleConfig)
+    egress_filter: SecurityModuleConfig = Field(default_factory=SecurityModuleConfig)
+    mcp_proxy: SecurityModuleConfig = Field(default_factory=SecurityModuleConfig)
+
+
+def get_module_mode(config: "GatewayConfig", module_name: str) -> str:
+    """Return module mode, respecting the global permissive override."""
+    import os
+    
+    # Check for global override
+    permissive = os.getenv("AGENTSHROUD_MODE", "enforce") == "monitor"
+    if permissive:
+        return "monitor"
+    
+    # Get module-specific config
+    module_config = getattr(config.security, module_name, None)
+    if module_config:
+        return module_config.mode
+    
+    # Default to enforce
+    return "enforce"
+
+
+def check_monitor_mode_warnings(config: "GatewayConfig", logger):
+    """Log warnings for any core modules running in monitor mode."""
+    core_modules = ["pii_sanitizer", "prompt_guard", "egress_filter", "mcp_proxy"]
+    
+    for module_name in core_modules:
+        mode = get_module_mode(config, module_name)
+        if mode == "monitor":
+            logger.warning(
+                f"SECURITY: Module {module_name} is in MONITOR mode. "
+                f"Threats will be logged but NOT blocked. "
+                f"Set mode: enforce or remove AGENTSHROUD_MODE=monitor for production."
+            )
+class ToolRiskPolicy(BaseModel):
+    """Risk policy configuration for a tool tier"""
+    require_approval: bool = False
+    timeout_seconds: int = 300  # 5 minutes default
+    timeout_action: str = "deny"  # deny or allow
+    notify_channels: list[str] = Field(default_factory=lambda: ["websocket"])
+    owner_bypass: bool = False
+
+
+class ToolRiskConfig(BaseModel):
+    """Tool risk tier configuration"""
+    
+    critical: ToolRiskPolicy = Field(default_factory=lambda: ToolRiskPolicy(
+        require_approval=True,
+        timeout_seconds=300,
+        timeout_action="deny",
+        notify_channels=["websocket", "telegram_admin"],
+        owner_bypass=False
+    ))
+    
+    high: ToolRiskPolicy = Field(default_factory=lambda: ToolRiskPolicy(
+        require_approval=True, 
+        timeout_seconds=300,
+        timeout_action="deny",
+        notify_channels=["websocket"],
+        owner_bypass=True
+    ))
+    
+    medium: ToolRiskPolicy = Field(default_factory=lambda: ToolRiskPolicy(
+        require_approval=False,
+        timeout_seconds=300,
+        timeout_action="deny",
+        notify_channels=["websocket"],
+        owner_bypass=True
+    ))
+    
+    low: ToolRiskPolicy = Field(default_factory=lambda: ToolRiskPolicy(
+        require_approval=False,
+        timeout_seconds=300,
+        timeout_action="deny",
+        notify_channels=["websocket"],
+        owner_bypass=True
+    ))
+    
+    # Tool classifications
+    tool_classifications: dict[str, str] = Field(default_factory=lambda: {
+        # Critical: irreversible external impact
+        "exec": "critical",
+        "cron": "critical", 
+        "sessions_send": "critical",
+        
+        # High: sensitive resource access
+        "nodes": "high",
+        "browser": "high",
+        "apply_patch": "high", 
+        "subagents": "high",
+        
+        # Medium: read potentially sensitive data
+        "grep": "medium",
+        "find": "medium",
+        "sessions_list": "medium",
+        "sessions_history": "medium", 
+        "session_status": "medium",
+        
+        # Low: safe read-only operations
+        "ls": "low",
+        "canvas": "low", 
+        "process": "low",
+    })
+    
+    # Global enforcement settings
+    enforce_mode: bool = True
+    monitor_only_mode: bool = False
+    owner_user_id: str = ""  # Telegram user ID for owner bypass
+
 class GatewayConfig(BaseModel):
     """Complete gateway configuration"""
 
@@ -135,6 +258,10 @@ class GatewayConfig(BaseModel):
     proxy_allowed_domains: list[str] = Field(default_factory=list)
     # Raw mcp_proxy section from YAML — passed to MCPProxyConfig.from_dict() at startup
     mcp_proxy_data: dict = Field(default_factory=dict)
+    # Security modules configuration
+    security: SecurityConfig = Field(default_factory=SecurityConfig)
+    # Tool risk tier configuration
+    tool_risk: ToolRiskConfig = Field(default_factory=ToolRiskConfig)
 
 
 def _entity_type_mapping(yaml_type: str) -> str:
@@ -302,6 +429,25 @@ def load_config(config_path: Optional[Path] = None) -> GatewayConfig:
     # MCP proxy config (raw dict — converted to MCPProxyConfig in main.py at startup)
     mcp_proxy_data = raw_config.get("mcp_proxy", {})
 
+    
+    # Map security configuration
+    security_raw = raw_config.get("security_modules", {})
+    security_config = SecurityConfig()
+    
+    # Override defaults with YAML values if present
+    for module in ["pii_sanitizer", "prompt_guard", "egress_filter", "mcp_proxy"]:
+        if module in security_raw:
+            module_data = security_raw[module]
+            if hasattr(security_config, module):
+                current_config = getattr(security_config, module)
+                if "mode" in module_data:
+                    current_config.mode = module_data["mode"]
+                if "action" in module_data:
+                    current_config.action = module_data["action"]
+    # Tool risk tier config
+    tool_risk_section = raw_config.get("tool_risk", {})
+    tool_risk_config = ToolRiskConfig(**tool_risk_section) if tool_risk_section else ToolRiskConfig()
+
     config = GatewayConfig(
         bind=gateway.get("bind", "127.0.0.1"),
         port=gateway.get("port", 8080),
@@ -314,8 +460,10 @@ def load_config(config_path: Optional[Path] = None) -> GatewayConfig:
         log_level=raw_config.get("logging", {}).get("level", "INFO"),
         channels=channels_config,
         ssh=ssh_config,
+        security=security_config,
         proxy_allowed_domains=proxy_allowed_domains,
         mcp_proxy_data=mcp_proxy_data,
+        tool_risk=tool_risk_config,
     )
 
     logger.info(
@@ -326,3 +474,5 @@ def load_config(config_path: Optional[Path] = None) -> GatewayConfig:
     )
 
     return config
+
+

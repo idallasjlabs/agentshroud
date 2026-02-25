@@ -46,6 +46,7 @@ async def test_forward_pii_sanitized_and_ledger_entry(client):
         json={
             "content": "Call me at 555-123-4567 or email john@example.com",
             "source": "api",
+            "user_id": "test-user",
             "content_type": "text",
         },
         headers=AUTH,

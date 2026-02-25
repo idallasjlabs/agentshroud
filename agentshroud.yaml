@@ -245,3 +245,23 @@ ssh:
       key_path: "/var/agentshroud-ssh/id_ed25519"
       known_hosts_file: "/tmp/ssh_known_hosts"
       max_session_seconds: 300
+
+# Security Module Configuration (v0.7.0 - Enforce by Default)
+security_modules:
+  # PII Sanitizer - redacts sensitive data from all messages
+  pii_sanitizer:
+    mode: enforce      # enforce (default) or monitor 
+    action: redact     # redact (default) or block
+
+  # Prompt Injection Defense - blocks malicious prompt manipulation
+  prompt_guard:
+    mode: enforce      # enforce (default) or monitor
+
+  # Egress Filter - controls outbound network traffic  
+  egress_filter:
+    mode: enforce      # enforce (default) or monitor
+
+  # MCP Proxy - enforces per-tool permissions
+  mcp_proxy:
+    mode: enforce      # enforce (default) or monitor
+
