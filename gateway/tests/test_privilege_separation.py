@@ -210,31 +210,25 @@ class TestPatternMatching:
         assert verdict.flagged is True
     
     def test_symlink_resolution(self, strict_sandbox):
-        """Test that symlinks are resolved for security checks.""" 
-        # This test assumes we can create temp files for testing
-        with tempfile.TemporaryDirectory() as tmpdir:
-            # Create a file outside allowed paths
-            protected_file = os.path.join(tmpdir, "protected.txt")
-            Path(protected_file).write_text("sensitive")
+        """Symlinks should be resolved - symlink to blocked path must be caught."""
+        workspace_dir = "/tmp/test_workspace"
+        os.makedirs(workspace_dir, exist_ok=True)
+        symlink_path = os.path.join(workspace_dir, "link_to_shadow")
+        
+        try:
+            if os.path.lexists(symlink_path):
+                os.unlink(symlink_path)
+            os.symlink("/etc/shadow", symlink_path)
             
-            # Create symlink in allowed path pointing to protected file
-            workspace_dir = "/tmp/test_workspace"
-            os.makedirs(workspace_dir, exist_ok=True)
-            symlink_path = os.path.join(workspace_dir, "link_to_protected")
-            
-            try:
-                os.symlink(protected_file, symlink_path)
-                
-                # Access via symlink should be blocked if target is protected
-                # (This test depends on the symlink resolution working correctly)
-                verdict = strict_sandbox.check_write(symlink_path, "agent1", "modified")
-                
-                # The exact behavior depends on implementation, but it should be secured
-                assert verdict.flagged  # At minimum it should be flagged
-            except (OSError, NotImplementedError):
-                # Skip if symlinks not supported in test environment
-                pytest.skip("Symlinks not supported in test environment")
-
+            verdict = strict_sandbox.check_read(symlink_path, "agent1")
+            assert verdict.flagged or not verdict.allowed, (
+                f"Symlink to /etc/shadow allowed without flagging: {verdict}"
+            )
+        except NotImplementedError:
+            pytest.skip("Symlinks not supported")
+        finally:
+            if os.path.lexists(symlink_path):
+                os.unlink(symlink_path)
 
 class TestSecurityViolationLogging:
     """Test that security violations are properly logged and tracked."""
