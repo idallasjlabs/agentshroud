@@ -16,14 +16,14 @@
     <img src="https://github.com/idallasj/agentshroud/actions/workflows/ci.yml/badge.svg" alt="Tests" />
   </a>
   <a href="https://github.com/idallasj/agentshroud">
-    <img src="https://img.shields.io/badge/coverage-91%25-brightgreen" alt="Coverage" />
+    <img src="https://img.shields.io/badge/coverage-94%25-brightgreen" alt="Coverage" />
   </a>
-  <img src="https://img.shields.io/badge/python-3.13-blue.svg" alt="Python 3.11" />
+  <img src="https://img.shields.io/badge/python-3.9%2B-blue.svg" alt="Python 3.9+" />
   <a href="LICENSE">
     <img src="https://img.shields.io/badge/License-MIT-yellow.svg" alt="MIT License" />
   </a>
   <img src="https://img.shields.io/badge/trademark-AgentShroud™-1583f0" alt="AgentShroud™ Trademark" />
-  <img src="https://img.shields.io/badge/modules-30-blueviolet" alt="30 Security Modules" />
+  <img src="https://img.shields.io/badge/modules-33-blueviolet" alt="33 Security Modules" />
 </p>
 
 <p><em>Built by a system architect, for system architects. Powered by agents. Governed by design.</em></p>
@@ -46,7 +46,7 @@ AgentShroud is simultaneously a **production-grade tool**, a **learning laborato
 
 ## What's New — February 2026
 
-A major development sprint wired all **30 security modules** into the live pipeline and delivered two complete control center interfaces:
+A major development sprint wired all **33 security modules** into the live pipeline and delivered two complete control center interfaces:
 
 - **P0 — Core Pipeline**: PromptGuard, TrustManager, EgressFilter, PII fix, gateway binding
 - **P1 — Middleware**: 12 modules wired (7 original + SessionManager, TokenValidator, ConsentFramework, SubagentMonitor, AgentRegistry) + MCP fail-closed enforcement
@@ -55,7 +55,7 @@ A major development sprint wired all **30 security modules** into the live pipel
 - **Web Control Center**: 7-page responsive dashboard for browser-based management
 - **Terminal Control Center**: Full TUI + chat console (optimized for Blink Shell / mobile)
 
-All 30 security modules are now **active in the pipeline** — no stubs, no dead code, no planned-but-unbuilt features.
+All 33 security modules are now **active in the pipeline** — no stubs, no dead code, no planned-but-unbuilt features.
 
 ---
 
@@ -121,7 +121,7 @@ All 30 security modules are now **active in the pipeline** — no stubs, no dead
 
 ## 30 Security Modules
 
-AgentShroud implements a defense-in-depth strategy with 30 security modules operating across 7 distinct layers, from network isolation to application-level content filtering.
+AgentShroud implements a defense-in-depth strategy with 33 security modules operating across 7 distinct layers, from network isolation to application-level content filtering.
 
 ### Core Security Pipeline
 
@@ -186,7 +186,7 @@ AgentShroud implements a defense-in-depth strategy with 30 security modules oper
 | **Session Manager** | Manages agent sessions, authentication state, and session-scoped permissions |
 | **Port Manager** | Controls and audits network port allocations and bindings |
 | **Proxy Dashboard** | Real-time WebSocket activity feed, approval management, and system health monitoring |
-| **SecurityPipelineIntegrator** | Orchestrates all 30 modules into a unified processing pipeline |
+| **SecurityPipelineIntegrator** | Orchestrates all 33 modules into a unified processing pipeline |
 
 ---
 
@@ -197,7 +197,7 @@ AgentShroud implements a defense-in-depth strategy with 30 security modules oper
 A 7-page responsive web dashboard providing full management capabilities:
 
 - **Dashboard** — Real-time activity feed, system health, active alerts
-- **Security Modules** — Status and configuration for all 30 modules
+- **Security Modules** — Status and configuration for all 33 modules
 - **Approval Queue** — Review and action pending approval requests
 - **Audit Trail** — Browse and search the immutable audit ledger
 - **Agent Management** — Monitor connected agents, trust levels, resource usage
@@ -364,7 +364,7 @@ git clone https://github.com/idallasj/agentshroud.git
 cd agentshroud
 
 # Create virtual environment
-python3.11 -m venv .venv
+python3 -m venv .venv
 source .venv/bin/activate
 pip install -r gateway/requirements.txt
 

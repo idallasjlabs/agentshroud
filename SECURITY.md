@@ -131,9 +131,9 @@ For documentation: https://github.com/agentshroud/agentshroud/security
 | Version | Supported |
 |---------|-----------|
 | v0.7.x  | ✅ Active  |
+| v0.7.x  | ✅ Current release |
 | v0.6.x  | ⚠️ Critical fixes only |
 | < v0.6  | ❌ Unsupported |
-| v0.2-v0.5 | ❌ End of life |
 
 
 ## Responsible Disclosure Policy

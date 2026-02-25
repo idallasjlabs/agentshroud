@@ -64,7 +64,7 @@ The Wikipedia article says injection comes from "data" — which for OpenClaw me
 
 ---
 
-## Current State (v0.5.0 → All Phases Complete)
+## Current State (v0.7.0 → All Phases Complete)
 
 **Before P0:**
 - Gateway monitored activity and logged it
