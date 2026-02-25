@@ -401,12 +401,14 @@ class TestTrustManager:
 
 class TestEgressFilter:
     def setup_method(self):
+        from gateway.security.egress_config import EgressFilterConfig
         policy = EgressPolicy(
             allowed_domains=["api.openai.com", "*.github.com"],
             allowed_ips=["10.0.0.0/8", "192.168.1.100"],
             allowed_ports=[80, 443],
         )
-        self.ef = EgressFilter(default_policy=policy)
+        config = EgressFilterConfig(mode="enforce")
+        self.ef = EgressFilter(config=config, default_policy=policy)
 
     def test_allowed_domain(self):
         result = self.ef.check("agent-1", "api.openai.com", 443)
