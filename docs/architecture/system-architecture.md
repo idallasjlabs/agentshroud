@@ -4,7 +4,7 @@
 
 AgentShroud is a transparent security proxy layer designed to provide comprehensive protection for OpenClaw AI agents without requiring modifications to the agent codebase. Operating as a FastAPI gateway, AgentShroud intercepts all external communications, applies security controls, and maintains detailed audit trails while preserving the agent's functionality and user experience.
 
-The system implements a defense-in-depth strategy with 30 security modules operating across 7 distinct layers, from network isolation to application-level content filtering. AgentShroud's design philosophy centers on "default-allow with comprehensive logging" - enabling agent functionality while capturing threats for analysis and progressive enforcement.
+The system implements a defense-in-depth strategy with 33 security modules operating across 7 distinct layers, from network isolation to application-level content filtering. AgentShroud's design philosophy centers on "default-allow with comprehensive logging" - enabling agent functionality while capturing threats for analysis and progressive enforcement.
 
 Key capabilities include:
 - **Transparent Proxy**: Zero modification required for existing OpenClaw deployments

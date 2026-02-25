@@ -95,7 +95,7 @@ If the Pi is completely lost:
 
 3. **Restore conda env:**
    ```bash
-   conda create -n agentshroud python=3.11
+   conda create -n agentshroud python=3.13
    conda activate agentshroud
    pip install -r requirements.txt
    ```
