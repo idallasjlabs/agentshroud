@@ -98,22 +98,19 @@ services:
       # Branding assets (read-only) — logos, colors, email templates, guidelines
       - ../branding:/app/branding:ro
 
-    # Secrets (API keys and 1Password interactive auth only — no service account)
-    # FINAL: 1password_service_account moved to gateway; bot uses op-proxy endpoint
-    # NOTE: anthropic_api_key removed — bot now uses Claude OAuth token via op-proxy
+    # Secrets: CREDENTIAL ISOLATION (R-11) — agent gets ONLY gateway_password
+    # All API credentials removed from agent container per red team finding 05.
+    # Credentials are gateway-only; agent uses op-proxy for 1Password,
+    # gateway egress proxy for API key injection.
     secrets:
-      - openai_api_key
       - gateway_password
-      - 1password_bot_email
-      - 1password_bot_master_password
-      - 1password_bot_secret_key
 
     # Environment variables
     environment:
       - NODE_ENV=production
       - OPENCLAW_GATEWAY_BIND=lan  # Allow Gateway to connect internally
       - OPENCLAW_GATEWAY_PASSWORD_FILE=/run/secrets/gateway_password
-      - OPENAI_API_KEY_FILE=/run/secrets/openai_api_key
+      # REMOVED: OPENAI_API_KEY_FILE — credentials now gateway-only (R-11)
       # FINAL: Route all outbound internet through gateway HTTP CONNECT proxy
       # - HTTP_PROXY=http://gateway:8181  # DISABLED: enable in FINAL phase
       # - HTTPS_PROXY=http://gateway:8181  # DISABLED: enable in FINAL phase
