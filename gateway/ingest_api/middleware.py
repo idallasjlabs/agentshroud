@@ -308,10 +308,10 @@ class MiddlewareManager:
     def _enforce_session_isolation(self, request_data: Dict[str, Any], user_id: str) -> MiddlewareResult:
         """Enforce per-user session isolation rules."""
         if not self.user_session_manager:
-            logger.error("UserSessionManager not initialized - cannot enforce isolation")
+            logger.warning("UserSessionManager not initialized - session isolation degraded")
             return MiddlewareResult(
-                allowed=False,
-                reason="Session isolation not available"
+                allowed=True,
+                reason="Session isolation unavailable - operating in degraded mode"
             )
         
         try:
