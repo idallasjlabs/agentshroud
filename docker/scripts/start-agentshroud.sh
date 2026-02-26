@@ -18,6 +18,16 @@ else
     echo "[startup] Warning: Gateway password file not found"
 fi
 
+# Export Telegram bot token from secret file (per-host token injection)
+# The apply-patches.js script reads TELEGRAM_BOT_TOKEN and injects it into openclaw.json
+if [ -f "/run/secrets/telegram_bot_token" ]; then
+    export TELEGRAM_BOT_TOKEN="$(cat /run/secrets/telegram_bot_token)"
+    echo "[startup] Loaded Telegram bot token"
+elif [ -n "${TELEGRAM_BOT_TOKEN_FILE:-}" ] && [ -f "$TELEGRAM_BOT_TOKEN_FILE" ]; then
+    export TELEGRAM_BOT_TOKEN="$(cat "$TELEGRAM_BOT_TOKEN_FILE")"
+    echo "[startup] Loaded Telegram bot token from $TELEGRAM_BOT_TOKEN_FILE"
+fi
+
 # Export OpenAI API key from secret file
 if [ -f "/run/secrets/openai_api_key" ]; then
     export OPENAI_API_KEY="$(cat /run/secrets/openai_api_key)"
