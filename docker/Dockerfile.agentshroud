@@ -40,6 +40,9 @@ WORKDIR /app
 # Install OpenClaw from npm registry
 # TODO: Pin to specific version for reproducible builds: openclaw@X.Y.Z
 RUN npm install -g openclaw@latest
+# SECURITY: Route LLM API through AgentShroud gateway
+COPY docker/scripts/patch-anthropic-sdk.sh /tmp/patch-anthropic-sdk.sh
+RUN sh /tmp/patch-anthropic-sdk.sh && rm /tmp/patch-anthropic-sdk.sh
 
 # Install Playwright for browser automation (browser-fetch skill)
 RUN npm install -g playwright@latest && \
