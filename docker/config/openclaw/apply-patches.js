@@ -191,6 +191,55 @@ if (telegramToken) {
   }
 }
 
+
+// ── Patch 9: channels.telegram.groups — default group config ─────────────────
+// All groups default to requireMention: false so both bots respond without @mention.
+
+config.channels = config.channels || {};
+config.channels.telegram = config.channels.telegram || {};
+config.channels.telegram.groups = config.channels.telegram.groups || {};
+
+if (!config.channels.telegram.groups['*']) {
+  config.channels.telegram.groups['*'] = { requireMention: false };
+  console.log('[init-patch] Set channels.telegram.groups.* = { requireMention: false }');
+  changed = true;
+} else if (config.channels.telegram.groups['*'].requireMention !== false) {
+  config.channels.telegram.groups['*'].requireMention = false;
+  console.log('[init-patch] Set channels.telegram.groups.*.requireMention = false');
+  changed = true;
+}
+
+// ── Patch 10: channels.telegram.allowFrom — authorized senders ───────────────
+// Ensures all collaborators are in the allowFrom list for Telegram.
+
+const AUTHORIZED_SENDERS = [
+  '8096968754',   // Isaiah
+  '8506022825',   // Brett
+  '8545356403',   // Chris
+  '8279589982',   // Steve
+  '8526379012',   // TJ
+];
+
+config.channels.telegram.allowFrom = config.channels.telegram.allowFrom || [];
+let sendersChanged = false;
+for (const sender of AUTHORIZED_SENDERS) {
+  if (!config.channels.telegram.allowFrom.includes(sender)) {
+    config.channels.telegram.allowFrom.push(sender);
+    sendersChanged = true;
+  }
+}
+if (sendersChanged) {
+  console.log('[init-patch] Updated channels.telegram.allowFrom with authorized senders');
+  changed = true;
+}
+
+// ── Patch 11: channels.telegram.groupPolicy — allowlist mode ─────────────────
+if (config.channels.telegram.groupPolicy !== 'allowlist') {
+  config.channels.telegram.groupPolicy = 'allowlist';
+  console.log('[init-patch] Set channels.telegram.groupPolicy = allowlist');
+  changed = true;
+}
+
 // ── Write back ────────────────────────────────────────────────────────────────
 
 if (changed || isNew) {
