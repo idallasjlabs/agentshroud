@@ -23,6 +23,8 @@ services:
       - OPENCLAW_DISABLE_BONJOUR=1
       # Route ALL Telegram API calls through AgentShroud gateway
       - TELEGRAM_API_BASE_URL=http://gateway:8080/telegram-api
+      # Route ALL LLM API calls through gateway for message scanning
+      - ANTHROPIC_BASE_URL=http://gateway:8080
       # Route ALL outbound HTTP through gateway CONNECT proxy
       - HTTP_PROXY=http://gateway:8181
       - HTTPS_PROXY=http://gateway:8181
