@@ -4,7 +4,7 @@ AgentShroud Text Chat Console - Chat with OpenClaw as Admin
 
 Usage:
     python3 src/interfaces/chat_console.py
-    ./scripts/chat-console
+    ./scripts/api
 """
 import sys
 import json
@@ -56,7 +56,7 @@ def print_help():
 def check_status():
     """Check gateway and bot status"""
     try:
-        with urllib.request.urlopen(urllib.request.Request(f"{GATEWAY_URL}/status", headers={'Authorization': f'Bearer {AUTH_TOKEN}'})), timeout=5) as response:
+        with urllib.request.urlopen(urllib.request.Request(f"{GATEWAY_URL}/status", headers={'Authorization': f'Bearer {AUTH_TOKEN}'}), timeout=5) as response:
             data = json.loads(response.read().decode())
             print(f"\n✓ Gateway Status: {data['status']}")
             print(f"  Version: {data['version']}")
@@ -85,7 +85,7 @@ def send_message(message):
         # Prepare request to gateway
         payload = json.dumps({
             "content": message,
-            "source": "chat-console",
+            "source": "api",
             "content_type": "text",
             "metadata": {
                 "user": "admin",

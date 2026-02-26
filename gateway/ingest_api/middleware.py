@@ -37,6 +37,25 @@ from gateway.security.tool_result_injection import ToolResultInjectionScanner
 from gateway.security.xml_leak_filter import XMLLeakFilter
 from gateway.security.input_normalizer import strip_markdown_exfil
 
+from gateway.security.alert_dispatcher import AlertDispatcher
+from gateway.security.approval_hardening import ApprovalHardening, ApprovalHardeningConfig
+from gateway.security.audit_export import AuditExporter, AuditExportConfig
+from gateway.security.browser_security import BrowserSecurityGuard
+from gateway.security.credential_injector import CredentialInjector, CredentialInjectorConfig
+from gateway.security.dns_filter import DNSFilter, DNSFilterConfig
+from gateway.security.drift_detector import DriftDetector
+from gateway.security.egress_monitor import EgressMonitor, EgressMonitorConfig
+from gateway.security.input_normalizer import strip_markdown_exfil, normalize_input
+from gateway.security.key_rotation import KeyRotationManager
+from gateway.security.killswitch_monitor import KillSwitchMonitor
+from gateway.security.multi_turn_tracker import MultiTurnTracker
+from gateway.security.network_validator import NetworkValidator
+from gateway.security.oauth_security import OAuthSecurityValidator
+from gateway.security.output_canary import OutputCanary
+from gateway.security.path_isolation import PathIsolationManager, PathIsolationConfig
+from gateway.security.tool_chain_analyzer import ToolChainAnalyzer
+from gateway.security.tool_result_sanitizer_enhanced import ToolResultSanitizer as EnhancedToolResultSanitizer, ToolResultSanitizerConfig as EnhancedSanitizerConfig
+
 logger = logging.getLogger(__name__)
 
 
@@ -66,9 +85,9 @@ class MiddlewareManager:
             self.rbac_manager = None
         # Initialize session manager for per-user isolation
         try:
-            base_workspace = Path("/home/node/.openclaw/workspace")
-            # TODO: Load owner_user_id from config
-            owner_user_id = "1234567890"  # This should come from config
+            base_workspace = Path("/tmp/agentshroud/workspace")
+            base_workspace.mkdir(parents=True, exist_ok=True)
+            owner_user_id = "8096968754"
             self.user_session_manager = UserSessionManager(
                 base_workspace=base_workspace,
                 owner_user_id=owner_user_id
@@ -142,7 +161,10 @@ class MiddlewareManager:
             self.session_manager = None
             
         try:
-            self.token_validator = TokenValidator()
+            self.token_validator = TokenValidator(
+                expected_audience="agentshroud-gateway",
+                expected_issuer="agentshroud"
+            )
             logger.info("TokenValidator initialized")
         except Exception as e:
             logger.error(f"Failed to initialize TokenValidator: {e}")
@@ -156,12 +178,7 @@ class MiddlewareManager:
             self.consent_framework = None
             
         try:
-            config = SubagentMonitorConfig(
-                max_subagents=5,
-                max_depth=2,
-                timeout_seconds=300,
-                allowed_operations=["read", "write", "execute"],
-            )
+            config = SubagentMonitorConfig()
             self.subagent_monitor = SubagentMonitor(config)
             logger.info("SubagentMonitor initialized")
         except Exception as e:
@@ -179,7 +196,8 @@ class MiddlewareManager:
         self.tool_result_sanitizer = None
         # Memory Security Components
         try:
-            base_workspace = Path("/home/node/.openclaw/workspace")
+            base_workspace = Path("/tmp/agentshroud/workspace")
+            base_workspace.mkdir(parents=True, exist_ok=True)
             self.memory_config = MemorySecurityConfig.from_env()
             self.memory_config.base_directory = base_workspace
             self.memory_integrity_monitor = MemoryIntegrityMonitor(
@@ -209,6 +227,136 @@ class MiddlewareManager:
         except Exception as e:
             logger.error(f"Failed to initialize XMLLeakFilter: {e}")
             self.xml_leak_filter = None
+
+        # === NEWLY WIRED MODULES (v0.8.0) ===
+        
+        # Alert Dispatcher
+        try:
+            self.alert_dispatcher = AlertDispatcher(alert_log=Path("/tmp/agentshroud/alerts/security.log"))
+            logger.info("AlertDispatcher initialized")
+        except Exception as e:
+            logger.error(f"Failed to initialize AlertDispatcher: {e}")
+            self.alert_dispatcher = None
+
+        # Approval Hardening
+        try:
+            self.approval_hardening = ApprovalHardening(ApprovalHardeningConfig())
+            logger.info("ApprovalHardening initialized")
+        except Exception as e:
+            logger.error(f"Failed to initialize ApprovalHardening: {e}")
+            self.approval_hardening = None
+
+        # Browser Security Guard
+        try:
+            self.browser_security = BrowserSecurityGuard()
+            logger.info("BrowserSecurityGuard initialized")
+        except Exception as e:
+            logger.error(f"Failed to initialize BrowserSecurityGuard: {e}")
+            self.browser_security = None
+
+        # Credential Injector
+        try:
+            self.credential_injector = CredentialInjector()
+            logger.info("CredentialInjector initialized")
+        except Exception as e:
+            logger.error(f"Failed to initialize CredentialInjector: {e}")
+            self.credential_injector = None
+
+        # DNS Filter
+        try:
+            self.dns_filter = DNSFilter(DNSFilterConfig())
+            logger.info("DNSFilter initialized")
+        except Exception as e:
+            logger.error(f"Failed to initialize DNSFilter: {e}")
+            self.dns_filter = None
+
+        # Drift Detector
+        try:
+            self.drift_detector = DriftDetector()
+            logger.info("DriftDetector initialized")
+        except Exception as e:
+            logger.error(f"Failed to initialize DriftDetector: {e}")
+            self.drift_detector = None
+
+        # Egress Monitor
+        try:
+            self.egress_monitor = EgressMonitor(EgressMonitorConfig())
+            logger.info("EgressMonitor initialized")
+        except Exception as e:
+            logger.error(f"Failed to initialize EgressMonitor: {e}")
+            self.egress_monitor = None
+
+        # Key Rotation Manager
+        try:
+            self.key_rotation = KeyRotationManager()
+            logger.info("KeyRotationManager initialized")
+        except Exception as e:
+            logger.error(f"Failed to initialize KeyRotationManager: {e}")
+            self.key_rotation = None
+
+        # Kill Switch Monitor
+        try:
+            self.killswitch_monitor = KillSwitchMonitor()
+            logger.info("KillSwitchMonitor initialized")
+        except Exception as e:
+            logger.error(f"Failed to initialize KillSwitchMonitor: {e}")
+            self.killswitch_monitor = None
+
+        # Multi-Turn Tracker
+        try:
+            self.multi_turn_tracker = MultiTurnTracker()
+            logger.info("MultiTurnTracker initialized")
+        except Exception as e:
+            logger.error(f"Failed to initialize MultiTurnTracker: {e}")
+            self.multi_turn_tracker = None
+
+        # Network Validator
+        try:
+            self.network_validator = NetworkValidator()
+            logger.info("NetworkValidator initialized")
+        except Exception as e:
+            logger.error(f"Failed to initialize NetworkValidator: {e}")
+            self.network_validator = None
+
+        # OAuth Security Validator
+        try:
+            self.oauth_security = OAuthSecurityValidator(allowed_redirect_uris=["https://agentshroud.ai/callback"])
+            logger.info("OAuthSecurityValidator initialized")
+        except Exception as e:
+            logger.error(f"Failed to initialize OAuthSecurityValidator: {e}")
+            self.oauth_security = None
+
+        # Output Canary
+        try:
+            self.output_canary = OutputCanary()
+            logger.info("OutputCanary initialized")
+        except Exception as e:
+            logger.error(f"Failed to initialize OutputCanary: {e}")
+            self.output_canary = None
+
+        # Path Isolation Manager
+        try:
+            self.path_isolation = PathIsolationManager(PathIsolationConfig())
+            logger.info("PathIsolationManager initialized")
+        except Exception as e:
+            logger.error(f"Failed to initialize PathIsolationManager: {e}")
+            self.path_isolation = None
+
+        # Tool Chain Analyzer
+        try:
+            self.tool_chain_analyzer = ToolChainAnalyzer()
+            logger.info("ToolChainAnalyzer initialized")
+        except Exception as e:
+            logger.error(f"Failed to initialize ToolChainAnalyzer: {e}")
+            self.tool_chain_analyzer = None
+
+        # Enhanced Tool Result Sanitizer
+        try:
+            self.enhanced_tool_sanitizer = EnhancedToolResultSanitizer(EnhancedSanitizerConfig())
+            logger.info("EnhancedToolResultSanitizer initialized")
+        except Exception as e:
+            logger.error(f"Failed to initialize EnhancedToolResultSanitizer: {e}")
+            self.enhanced_tool_sanitizer = None
 
     async def process_request(
         self,
@@ -488,6 +636,34 @@ class MiddlewareManager:
     def get_rbac_manager(self) -> Optional[RBACManager]:
         """Get the RBAC manager for external access."""
         return self.rbac_manager
+
+    def get_multi_turn_tracker(self):
+        return self.multi_turn_tracker
+
+    def get_output_canary(self):
+        return self.output_canary
+
+    def get_tool_chain_analyzer(self):
+        return self.tool_chain_analyzer
+
+    def get_dns_filter(self):
+        return self.dns_filter
+
+    def get_alert_dispatcher(self):
+        return self.alert_dispatcher
+
+    def get_killswitch_monitor(self):
+        return self.killswitch_monitor
+
+    def get_drift_detector(self):
+        return self.drift_detector
+
+    def get_network_validator(self):
+        return self.network_validator
+
+    def get_enhanced_tool_sanitizer(self):
+        return self.enhanced_tool_sanitizer
+
     def _extract_user_id(self, request_data: Dict[str, Any]) -> Optional[str]:
         """Extract user ID from request data."""
         # Check session context first

@@ -37,6 +37,9 @@ class ForwardRequest(BaseModel):
     route_to: Optional[str] = Field(
         default=None, description="Optional explicit target agent name"
     )
+    user_id: Optional[str] = Field(
+        default=None, description="Telegram/platform user ID for RBAC. Set by gateway for webhook requests."
+    )
 
     @field_validator("content")
     @classmethod
@@ -48,7 +51,7 @@ class ForwardRequest(BaseModel):
     @field_validator("source")
     @classmethod
     def validate_source(cls, v: str) -> str:
-        allowed = {"shortcut", "browser_extension", "script", "api"}
+        allowed = {"shortcut", "browser_extension", "script", "api", "telegram", "chat-console", "control-center"}
         if v not in allowed:
             raise ValueError(f"source must be one of {allowed}")
         return v
