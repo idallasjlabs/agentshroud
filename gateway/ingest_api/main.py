@@ -54,6 +54,8 @@ from .models import (
 from ..ssh_proxy.proxy import SSHProxy
 from .router import ForwardError, MultiAgentRouter
 from .sanitizer import PIISanitizer
+from ..security.canary_tripwire import CanaryTripwire
+from ..security.encoding_detector import EncodingDetector
 from ..security.prompt_guard import PromptGuard
 from ..security.trust_manager import TrustManager, TrustLevel
 from ..security.egress_filter import EgressFilter
@@ -316,6 +318,22 @@ async def lifespan(app: FastAPI):
         raise
 
     # Initialize security pipeline
+    # Initialize canary tripwire
+    try:
+        app_state.canary_tripwire = CanaryTripwire()
+        logger.info("CanaryTripwire initialized")
+    except Exception as e:
+        logger.critical(f"Failed to initialize CanaryTripwire: {e}")
+        app_state.canary_tripwire = None
+
+    # Initialize encoding detector
+    try:
+        app_state.encoding_detector = EncodingDetector()
+        logger.info("EncodingDetector initialized")
+    except Exception as e:
+        logger.critical(f"Failed to initialize EncodingDetector: {e}")
+        app_state.encoding_detector = None
+
     app_state.pipeline = SecurityPipeline(
         prompt_guard=app_state.prompt_guard,
         pii_sanitizer=app_state.sanitizer,
@@ -323,14 +341,16 @@ async def lifespan(app: FastAPI):
         egress_filter=app_state.egress_filter,
         approval_queue=app_state.approval_queue,
         outbound_filter=app_state.outbound_filter,
+        canary_tripwire=app_state.canary_tripwire,
+        encoding_detector=app_state.encoding_detector,
     )
     logger.info("Security pipeline initialized")
 
     # Initialize per-user session manager for session isolation
     try:
-        base_workspace = Path("/home/node/.openclaw/workspace")
-        # TODO: Load owner_user_id from config - for now use a default
-        owner_user_id = getattr(app_state.config, 'owner_user_id', '1234567890') if app_state.config else '1234567890'
+        base_workspace = Path("/tmp/agentshroud/workspace")
+        base_workspace.mkdir(parents=True, exist_ok=True)
+        owner_user_id = "8096968754"
         app_state.session_manager = UserSessionManager(
             base_workspace=base_workspace,
             owner_user_id=owner_user_id
@@ -1178,7 +1198,7 @@ async def forward_content(request: ForwardRequest, auth: AuthRequired):
                 "content_type": request.content_type,
                 "source": request.source,
                 "headers": {},  # Add headers if available in request
-                "user_id": getattr(request, "user_id", None) or getattr(request, "source", "anonymous")
+                "user_id": getattr(request, "user_id", None) or "8096968754"  # Default to owner for direct API calls
             }
 
             # Process through middleware
