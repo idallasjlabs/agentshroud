@@ -213,11 +213,17 @@ if (!config.channels.telegram.groups['*']) {
 // Ensures all collaborators are in the allowFrom list for Telegram.
 
 const AUTHORIZED_SENDERS = [
+  // Humans
   '8096968754',   // Isaiah
   '8506022825',   // Brett
   '8545356403',   // Chris
   '8279589982',   // Steve
   '8526379012',   // TJ
+  // Bots (inter-bot group chat)
+  '8481143014',   // @agentshroud_bot (production)
+  '8736289266',   // @agentshroud_marvin_bot
+  '8751040644',   // @agentshroud_trillian_bot
+  '8690957340',   // @agentshroud_raspberrypi_bot
 ];
 
 config.channels.telegram.allowFrom = config.channels.telegram.allowFrom || [];
