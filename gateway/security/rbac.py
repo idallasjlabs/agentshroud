@@ -77,7 +77,7 @@ class RBACManager:
         
         # COLLABORATOR role - can interact and use limited tools
         matrix[Role.COLLABORATOR] = {
-            Action.READ: {Resource.FILES, Resource.SESSIONS, Resource.TOOLS},
+            Action.READ: {Resource.FILES, Resource.SESSIONS, Resource.TOOLS, Resource.SYSTEM},
             Action.WRITE: {Resource.FILES},
             Action.EXECUTE: {Resource.TOOLS},
             Action.TOOL_USE: {Resource.TOOLS},
