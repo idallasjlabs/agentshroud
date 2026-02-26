@@ -160,6 +160,37 @@ if (gwPassword) {
   }
 }
 
+// ── Patch 7: gateway.controlUi — allow Host-header origin fallback ───────────
+// When gateway binds non-loopback (OPENCLAW_GATEWAY_BIND=lan), OpenClaw 2026.2.24+
+// requires explicit CORS origins for the Control UI. Since we bind lan for internal
+// Docker networking but only expose via localhost port mapping, the Host-header
+// fallback is safe and avoids the crash loop.
+
+config.gateway = config.gateway || {};
+config.gateway.controlUi = config.gateway.controlUi || {};
+
+if (!config.gateway.controlUi.dangerouslyAllowHostHeaderOriginFallback) {
+  config.gateway.controlUi.dangerouslyAllowHostHeaderOriginFallback = true;
+  console.log('[init-patch] Set gateway.controlUi.dangerouslyAllowHostHeaderOriginFallback = true');
+  changed = true;
+}
+
+// ── Patch 8: channels.telegram.botToken — inject from TELEGRAM_BOT_TOKEN env ─
+// Allows per-host bot token injection via Docker environment variable.
+// If TELEGRAM_BOT_TOKEN is set, it overrides whatever is in the config.
+// This enables the same image to run different bots on different hosts.
+
+const telegramToken = process.env.TELEGRAM_BOT_TOKEN;
+if (telegramToken) {
+  config.channels = config.channels || {};
+  config.channels.telegram = config.channels.telegram || {};
+  if (config.channels.telegram.botToken !== telegramToken) {
+    config.channels.telegram.botToken = telegramToken;
+    console.log('[init-patch] Set channels.telegram.botToken from TELEGRAM_BOT_TOKEN env');
+    changed = true;
+  }
+}
+
 // ── Write back ────────────────────────────────────────────────────────────────
 
 if (changed || isNew) {
