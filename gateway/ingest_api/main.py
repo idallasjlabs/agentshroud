@@ -1201,6 +1201,7 @@ async def forward_content(request: ForwardRequest, auth: AuthRequired):
                 "user_id": getattr(request, "user_id", None) or "8096968754"  # Default to owner for direct API calls
             }
 
+
             # Process through middleware
             middleware_result = await middleware_manager.process_request(request_data, "unknown")
 
