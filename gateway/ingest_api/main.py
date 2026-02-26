@@ -567,7 +567,18 @@ async def lifespan(app: FastAPI):
         logger.info("HTTP CONNECT proxy started on port 8181")
     except Exception as e:
         logger.warning(f"HTTP CONNECT proxy failed to start: {e} (continuing)")
-        app_state.http_proxy = None
+
+    # Initialize Telegram API reverse proxy
+    try:
+        app_state.telegram_proxy = TelegramAPIProxy(
+            pipeline=app_state.pipeline,
+            middleware_manager=app_state.middleware_manager,
+            sanitizer=app_state.sanitizer,
+        )
+        logger.info("Telegram API reverse proxy initialized")
+    except Exception as e:
+        logger.error(f"Failed to initialize Telegram API proxy: {e}")
+        app_state.telegram_proxy = None
 
     # Record start time
     app_state.start_time = time.time()
@@ -1170,6 +1181,49 @@ async def email_send(request: EmailSendRequest, auth: AuthRequired):
         status_code=status.HTTP_403_FORBIDDEN,
         detail="Recipient not in allowlist and no approval queue available",
     )
+
+
+
+# === Telegram API Reverse Proxy ===
+# All bot Telegram API calls route through this endpoint.
+# Inbound messages are scanned (PII, injection, RBAC).
+# Outbound messages are filtered (credentials, XML).
+
+@app.api_route(
+    "/telegram-api/{path:path}",
+    methods=["GET", "POST"],
+    include_in_schema=False,
+)
+async def telegram_api_proxy(request: Request, path: str, auth: AuthRequired):
+    """Proxy Telegram Bot API calls through security pipeline."""
+    telegram_proxy = getattr(app_state, "telegram_proxy", None)
+    if not telegram_proxy:
+        raise HTTPException(status_code=503, detail="Telegram proxy not available")
+
+    # Extract bot token and method from path: bot<token>/<method>
+    import re as _re
+    match = _re.match(r"bot([^/]+)/(.+)", path)
+    if not match:
+        raise HTTPException(status_code=400, detail="Invalid Telegram API path")
+
+    bot_token = match.group(1)
+    method = match.group(2)
+
+    # Read request body
+    body = await request.body() if request.method == "POST" else None
+    content_type = request.headers.get("content-type")
+
+    result = await telegram_proxy.proxy_request(bot_token, method, body, content_type)
+    return JSONResponse(content=result)
+
+
+@app.get("/telegram-proxy/stats")
+async def telegram_proxy_stats(auth: AuthRequired):
+    """Return Telegram proxy statistics."""
+    telegram_proxy = getattr(app_state, "telegram_proxy", None)
+    if not telegram_proxy:
+        return {"status": "not_initialized"}
+    return telegram_proxy.get_stats()
 
 
 @app.post(
