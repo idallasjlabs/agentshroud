@@ -69,6 +69,7 @@ from ..proxy.web_config import WebProxyConfig
 from ..proxy.web_proxy import WebProxy
 from ..proxy.webhook_receiver import WebhookReceiver
 from ..proxy.telegram_proxy import TelegramAPIProxy
+from ..proxy.llm_proxy import LLMProxy
 from ..proxy.pipeline import SecurityPipeline
 from gateway.security.session_manager import UserSessionManager
 from ..web.api import router as management_api_router
@@ -580,6 +581,18 @@ async def lifespan(app: FastAPI):
     except Exception as e:
         logger.error(f"Failed to initialize Telegram API proxy: {e}")
         app_state.telegram_proxy = None
+
+    # Initialize LLM API reverse proxy
+    try:
+        app_state.llm_proxy = LLMProxy(
+            pipeline=app_state.pipeline,
+            middleware_manager=app_state.middleware_manager,
+            sanitizer=app_state.sanitizer,
+        )
+        logger.info("LLM API reverse proxy initialized (Anthropic)")
+    except Exception as e:
+        logger.error(f"Failed to initialize LLM proxy: {e}")
+        app_state.llm_proxy = None
 
     # Record start time
     app_state.start_time = time.time()
@@ -1183,6 +1196,59 @@ async def email_send(request: EmailSendRequest, auth: AuthRequired):
         detail="Recipient not in allowlist and no approval queue available",
     )
 
+
+
+
+
+# === LLM API Reverse Proxy ===
+# All OpenClaw ↔ Anthropic traffic routes through this endpoint.
+# User messages are scanned (PII, injection). Responses are filtered (credentials, XML).
+# Activated by setting ANTHROPIC_BASE_URL=http://gateway:8080 on the bot container.
+
+@app.api_route(
+    "/v1/{path:path}",
+    methods=["GET", "POST"],
+    include_in_schema=False,
+)
+async def llm_api_proxy(request: Request, path: str):
+    """Proxy Anthropic API calls through security pipeline."""
+    llm_proxy = getattr(app_state, "llm_proxy", None)
+    if not llm_proxy:
+        raise HTTPException(status_code=503, detail="LLM proxy not available")
+
+    body = await request.body() if request.method == "POST" else None
+    headers = dict(request.headers)
+
+    status_code, resp_headers, resp_body = await llm_proxy.proxy_messages(
+        f"/v1/{path}", body, headers
+    )
+
+    # Check if streaming response
+    content_type = resp_headers.get("content-type", "")
+    if "text/event-stream" in content_type:
+        # For streaming, pass through directly (TODO: add streaming filter)
+        from starlette.responses import StreamingResponse
+        import io
+        return StreamingResponse(
+            io.BytesIO(resp_body),
+            status_code=status_code,
+            media_type="text/event-stream",
+            headers={k: v for k, v in resp_headers.items() if k.lower() not in ("transfer-encoding", "content-length")},
+        )
+
+    return JSONResponse(
+        content=json.loads(resp_body) if resp_body else {},
+        status_code=status_code,
+    )
+
+
+@app.get("/llm-proxy/stats")
+async def llm_proxy_stats(auth: AuthRequired):
+    """Return LLM proxy statistics."""
+    llm_proxy = getattr(app_state, "llm_proxy", None)
+    if not llm_proxy:
+        return {"status": "not_initialized"}
+    return llm_proxy.get_stats()
 
 
 # === Telegram API Reverse Proxy ===
