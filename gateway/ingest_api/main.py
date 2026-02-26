@@ -68,6 +68,7 @@ from ..proxy.mcp_config import MCPProxyConfig
 from ..proxy.web_config import WebProxyConfig
 from ..proxy.web_proxy import WebProxy
 from ..proxy.webhook_receiver import WebhookReceiver
+from ..proxy.telegram_proxy import TelegramAPIProxy
 from ..proxy.pipeline import SecurityPipeline
 from gateway.security.session_manager import UserSessionManager
 from ..web.api import router as management_api_router
