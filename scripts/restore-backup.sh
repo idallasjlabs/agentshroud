@@ -14,6 +14,9 @@ if [ -z "$BACKUP_DIR" ] || [ ! -d "$BACKUP_DIR" ]; then
   exit 1
 fi
 
+# Make BACKUP_DIR absolute (important for docker volume mounts)
+BACKUP_DIR="$(cd "$BACKUP_DIR" && pwd)"
+
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 REPO_ROOT="$(cd "$SCRIPT_DIR/.." && pwd)"
 
@@ -27,42 +30,47 @@ docker compose -f "$REPO_ROOT/docker/docker-compose.yml" down
 echo "✓ Containers stopped"
 echo
 
-# Restore volumes
 echo "2. Restoring volumes..."
 
-if [ -f "$BACKUP_DIR/openclaw-config.tar.gz" ]; then
-  docker run --rm \
-    -v docker_agentshroud-config:/data \
-    -v "$BACKUP_DIR":/backup \
-    alpine sh -c "rm -rf /data/* && tar xzf /backup/openclaw-config.tar.gz -C /data"
-  echo "  ✓ openclaw-config"
+restore_tar_to_volume() {
+  local tar_name="$1"
+  local volume_name="$2"
+  local label="$3"
+
+  if [ -f "$BACKUP_DIR/$tar_name" ]; then
+    echo "  - Restoring $label from $tar_name -> $volume_name"
+
+    docker run --rm \
+      -v "${volume_name}":/data \
+      -v "${BACKUP_DIR}":/backup:ro \
+      alpine sh -euc "
+        rm -rf /data/* &&
+        tar xzf \"/backup/${tar_name}\" -C /data
+      "
+
+    echo "    ✓ $label"
+  else
+    echo "  - (skip) $label: $tar_name not found in backup"
+  fi
+}
+
+# If none of the known tarballs exist, fail fast with a helpful message
+if ! ls "$BACKUP_DIR"/*.tar.gz >/dev/null 2>&1; then
+  echo
+  echo "ERROR: No .tar.gz files found in:"
+  echo "  $BACKUP_DIR"
+  echo
+  echo "Tip: choose one of the listed backup-* directories, e.g.:"
+  echo "  scripts/restore-backup.sh backup-openclaw-20260228-204949"
+  exit 1
 fi
 
-if [ -f "$BACKUP_DIR/gateway-data.tar.gz" ]; then
-  docker run --rm \
-    -v docker_gateway-data:/data \
-    -v "$BACKUP_DIR":/backup \
-    alpine sh -c "rm -rf /data/* && tar xzf /backup/gateway-data.tar.gz -C /data"
-  echo "  ✓ gateway-data"
-fi
+restore_tar_to_volume "openclaw-config.tar.gz"     "docker_agentshroud-config"     "openclaw-config"
+restore_tar_to_volume "gateway-data.tar.gz"        "docker_gateway-data"          "gateway-data"
+restore_tar_to_volume "openclaw-workspace.tar.gz"  "docker_agentshroud-workspace" "openclaw-workspace"
+restore_tar_to_volume "openclaw-ssh.tar.gz"        "docker_agentshroud-ssh"       "openclaw-ssh"
 
-if [ -f "$BACKUP_DIR/openclaw-workspace.tar.gz" ]; then
-  docker run --rm \
-    -v docker_agentshroud-workspace:/data \
-    -v "$BACKUP_DIR":/backup \
-    alpine sh -c "rm -rf /data/* && tar xzf /backup/openclaw-workspace.tar.gz -C /data"
-  echo "  ✓ openclaw-workspace"
-fi
-
-if [ -f "$BACKUP_DIR/openclaw-ssh.tar.gz" ]; then
-  docker run --rm \
-    -v docker_agentshroud-ssh:/data \
-    -v "$BACKUP_DIR":/backup \
-    alpine sh -c "rm -rf /data/* && tar xzf /backup/openclaw-ssh.tar.gz -C /data"
-  echo "  ✓ openclaw-ssh"
-fi
-
-echo "✓ Volumes restored"
+echo "✓ Volume restore step complete"
 echo
 
 # Start containers
