@@ -52,9 +52,9 @@ if ! op_authenticate; then
 fi
 
 # Item ID avoids title containing '@' which breaks op:// URIs
-# Item: "Gmail - agentshroud.ai" in vault "AgentShroud Bot Credentials"
-VAULT="AgentShroud Bot Credentials"
-ITEM_ID="he6wcfkfieekqkomuxdunal2xa"
+# Item: "AgentShroud - Google" in vault "Agent Shroud Bot Credentials"
+VAULT="Agent Shroud Bot Credentials"
+ITEM_ID="wgblbbbqkmnyobh2xtr6r65k34"
 
 case "$ITEM" in
     gmail-username)
@@ -64,7 +64,7 @@ case "$ITEM" in
         op read --session "$OP_SESSION" "op://$VAULT/$ITEM_ID/password"
         ;;
     gmail-app-password)
-        op read --session "$OP_SESSION" "op://$VAULT/$ITEM_ID/agentshroud bot password"
+        op read --session "$OP_SESSION" "op://$VAULT/$ITEM_ID/password"
         ;;
     gmail-totp)
         op item get "$ITEM_ID" --vault "$VAULT" --otp --session "$OP_SESSION"

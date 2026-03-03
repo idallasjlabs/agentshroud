@@ -210,7 +210,7 @@ mcp_proxy:
   # Only references matching these patterns are permitted.
   # Activated in the FINAL PR when OP_SERVICE_ACCOUNT_TOKEN moves to the gateway.
   allowed_op_paths:
-    - "op://AgentShroud Bot Credentials/*"
+    - "op://Agent Shroud Bot Credentials/*"
 
 # SSH Proxy configuration
 # Approved hosts only — no command-level restrictions (unrestricted dev access).
