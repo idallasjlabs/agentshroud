@@ -109,7 +109,7 @@
       "wakeMode": "now",
       "payload": {
         "kind": "agentTurn",
-        "message": "Send the daily competitive analysis email. Steps: 1) Read /home/node/.openclaw/workspace/competitive-analysis.md. 2) Get Gmail app password via: export OP_SERVICE_ACCOUNT_TOKEN=$(cat /run/secrets/1password_service_account) && op item get e7akoviwa6kqdnpj3jtpsiahmm --vault Agent\\ Shroud\\ Bot\\ Credentials --fields label=openclaw\\ bot\\ password --reveal. 3) Send email to idallasj@gmail.com from agentshroud.ai@gmail.com using nodemailer (smtp.gmail.com:465 SSL). Subject: AgentShroud Daily Competitive Analysis AM - [today date]. Body: full competitive analysis as plain text. 4) Report success or failure."
+        "message": "Send the daily competitive analysis email. Steps: 1) Read /home/node/.openclaw/workspace/competitive-analysis.md. 2) Get Gmail app password via: export OP_SERVICE_ACCOUNT_TOKEN=$(cat /run/secrets/1password_service_account) && op item get tdx3r77qoplljrv45luh7zkngi --vault Agent\\ Shroud\\ Bot\\ Credentials --fields label=password --reveal. 3) Send email to idallasj@gmail.com from agentshroud.ai@gmail.com using nodemailer (smtp.gmail.com:465 SSL). Subject: AgentShroud Daily Competitive Analysis AM - [today date]. Body: full competitive analysis as plain text. 4) Report success or failure."
       },
       "state": {
         "nextRunAtMs": 1771848000000,
@@ -256,7 +256,7 @@
       "wakeMode": "now",
       "payload": {
         "kind": "agentTurn",
-        "message": "Send the afternoon competitive analysis email. Steps: 1) Read /home/node/.openclaw/workspace/competitive-analysis.md. 2) Get Gmail app password: export OP_SERVICE_ACCOUNT_TOKEN=$(cat /run/secrets/1password_service_account) && op item get e7akoviwa6kqdnpj3jtpsiahmm --vault 'Agent Shroud Bot Credentials' --fields label='openclaw bot password' --reveal. 3) Send email to idallasj@gmail.com from agentshroud.ai@gmail.com using nodemailer (smtp.gmail.com:465 SSL). Subject: 'AgentShroud Daily Competitive Analysis (PM) - [today date]'. Body: the full competitive analysis as plain text. 4) Report success or failure."
+        "message": "Send the afternoon competitive analysis email. Steps: 1) Read /home/node/.openclaw/workspace/competitive-analysis.md. 2) Get Gmail app password: export OP_SERVICE_ACCOUNT_TOKEN=$(cat /run/secrets/1password_service_account) && op item get tdx3r77qoplljrv45luh7zkngi --vault 'Agent Shroud Bot Credentials' --fields label='password' --reveal. 3) Send email to idallasj@gmail.com from agentshroud.ai@gmail.com using nodemailer (smtp.gmail.com:465 SSL). Subject: 'AgentShroud Daily Competitive Analysis (PM) - [today date]'. Body: the full competitive analysis as plain text. 4) Report success or failure."
       },
       "state": {
         "nextRunAtMs": 1771794000000,

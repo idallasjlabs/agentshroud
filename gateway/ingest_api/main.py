@@ -104,7 +104,7 @@ def _is_op_reference_allowed(reference: str) -> bool:
 class OpProxyRequest(BaseModel):
     """Request body for POST /credentials/op-proxy."""
 
-    reference: str  # e.g. "op://AgentShroud Bot Credentials/API Keys/openai"
+    reference: str  # e.g. "op://Agent Shroud Bot Credentials/API Keys/openai"
 
 
 # Configure logging
@@ -1261,7 +1261,7 @@ async def llm_proxy_stats(auth: AuthRequired):
     methods=["GET", "POST"],
     include_in_schema=False,
 )
-async def telegram_api_proxy(request: Request, path: str, auth: AuthRequired):
+async def telegram_api_proxy(request: Request, path: str):
     """Proxy Telegram Bot API calls through security pipeline."""
     telegram_proxy = getattr(app_state, "telegram_proxy", None)
     if not telegram_proxy:

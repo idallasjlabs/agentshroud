@@ -38,7 +38,7 @@ Bot (bash tool) → op-wrapper.sh → POST http://gateway:8080/credentials/op-pr
 
 | Credential | op:// reference |
 |-----------|----------------|
-| Claude OAuth token | `op://Agent Shroud Bot Credentials/AgentShroud - Anthropic Claude OAuth Token/claude oath token` |
+| Claude OAuth token | `op://AgentShroud - Anthropic Claude OAuth Token- Anthropic Claude OAuth Token/claude oath token` |
 | Brave Search API key | `op://Agent Shroud Bot Credentials/6j6ij5tzld6kobvit5tk6ufrhq/brave search api key` |
 
 The gateway allows any reference matching `op://Agent Shroud Bot Credentials/*`. References to other vaults return HTTP 403.

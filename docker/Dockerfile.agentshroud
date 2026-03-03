@@ -48,6 +48,11 @@ RUN sh /tmp/patch-anthropic-sdk.sh && rm /tmp/patch-anthropic-sdk.sh
 RUN npm install -g playwright@latest && \
     npx playwright install --with-deps chromium
 
+# SECURITY: Route Telegram API through AgentShroud gateway
+# NOTE: placed after Playwright to preserve the expensive Playwright cache layer
+COPY docker/scripts/patch-telegram-sdk.sh /tmp/patch-telegram-sdk.sh
+RUN sh /tmp/patch-telegram-sdk.sh && rm /tmp/patch-telegram-sdk.sh
+
 # Install 1Password CLI for secure secret management (multi-arch)
 RUN ARCH=$(dpkg --print-architecture) && \
     curl -L -o /tmp/op.zip "https://cache.agilebits.com/dist/1P/op2/pkg/v2.32.0/op_linux_${ARCH}_v2.32.0.zip" && \
