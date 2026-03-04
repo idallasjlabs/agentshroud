@@ -265,3 +265,19 @@ security_modules:
   mcp_proxy:
     mode: enforce      # enforce (default) or monitor
 
+  # DNS Exfiltration Filter - blocks DNS tunneling and enforces domain allowlist
+  dns_filter:
+    mode: enforce      # enforce (default) or monitor
+
+  # Sub-agent Oversight - enforces concurrency limits and trust-gated tool access
+  subagent_monitor:
+    mode: enforce      # enforce (default) or monitor
+
+  # Unified Egress Monitor - anomaly detection across all egress channels
+  egress_monitor:
+    mode: enforce      # enforce (default) or monitor
+
+  # Kill Switch - live enforcement (dry_run disabled)
+  killswitch:
+    mode: enforce      # enforce (default) or monitor
+

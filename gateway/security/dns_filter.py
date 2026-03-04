@@ -39,7 +39,7 @@ class EntropyCalculator:
 
 @dataclass
 class DNSFilterConfig:
-    mode: str = "monitor"  # "monitor" or "enforce"
+    mode: str = "enforce"  # "monitor" or "enforce"
     allowed_domains: Optional[list[str]] = None  # None = allow all
     max_subdomain_length: int = 80
     max_label_length: int = 50
