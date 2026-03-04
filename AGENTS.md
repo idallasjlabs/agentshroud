@@ -170,7 +170,7 @@ Always assume **production impact**.
 ## 8) CODEX CLI CONFIGURATION
 ──────────────────────────────────────────────────────────────────────────────
 
-Codex CLI uses native TOML configuration without agents, skills, or hooks.
+Codex CLI uses TOML configuration with context loading and MCP servers.
 
 ### What You Have
 
@@ -185,14 +185,19 @@ Codex CLI uses native TOML configuration without agents, skills, or hooks.
 - Establishes scope boundaries
 - Provides workflow guidance
 
+**Agent Library:** `.codex/agents/`
+- 38 agent `.md` files (one per skill in the Claude Code skill catalog)
+- These are **reference files**, not natively loaded by Codex CLI
+- To use: paste the contents of the relevant `.codex/agents/<name>.md` into your prompt, or reference the skill by name and ask Codex to follow those instructions
+
 ### What You Don't Have
 
 Codex CLI does NOT support:
-- Specialized agents (`.codex/agents/` does not exist)
-- Skills (`.codex/skills/` does not exist)
-- Automated hooks (`.codex/scripts/` does not exist)
+- Native agent invocation syntax (no `@agent-name`)
+- Skills (`/skills` returns nothing — not a Codex feature)
+- Automated hooks — Claude Code exclusive
 
-These are Claude Code exclusive features. If you need advanced capabilities, defer to Claude Code.
+To activate a skill behavior in Codex, paste the content of `.codex/agents/<name>.md` into your session prompt.
 
 ──────────────────────────────────────────────────────────────────────────────
 ## 9) CONFIGURATION FILES

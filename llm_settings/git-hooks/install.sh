@@ -66,5 +66,17 @@ fi
 
 echo ""
 echo "🔍 Checking for required tools..."
-command -v gitleaks &> /dev/null && echo "✅ gitleaks installed" || echo "⚠️  gitleaks missing: brew install gitleaks"
-command -v git-secrets &> /dev/null && echo "✅ git-secrets installed" || echo "⚠️  git-secrets missing: brew install git-secrets"
+if command -v gitleaks &>/dev/null; then
+    echo "✅ gitleaks installed"
+elif command -v brew &>/dev/null; then
+    echo "⚠️  gitleaks missing: brew install gitleaks"
+else
+    echo "⚠️  gitleaks missing: https://github.com/gitleaks/gitleaks#installing"
+fi
+if command -v git-secrets &>/dev/null; then
+    echo "✅ git-secrets installed"
+elif command -v brew &>/dev/null; then
+    echo "⚠️  git-secrets missing: brew install git-secrets"
+else
+    echo "⚠️  git-secrets missing: https://github.com/awslabs/git-secrets#installing-git-secrets"
+fi
