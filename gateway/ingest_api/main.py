@@ -221,7 +221,10 @@ async def lifespan(app: FastAPI):
     # Initialize approval queue
     try:
         from ..approval_queue.store import ApprovalStore
-        store = ApprovalStore("/tmp/agentshroud_approvals.db")  # TODO: Use config path
+        import tempfile
+        _data_dir = os.environ.get("AGENTSHROUD_DATA_DIR", tempfile.gettempdir())
+        _approval_db = os.path.join(_data_dir, "agentshroud_approvals.db")
+        store = ApprovalStore(_approval_db)
         app_state.approval_queue = EnhancedApprovalQueue(
             app_state.config.approval_queue, 
             app_state.config.tool_risk,
