@@ -73,6 +73,60 @@ else
   echo "[init] ✓ AGENTS.md already references BRAND.md — skipping"
 fi
 
+# ── 4. Memory persistence — backup/restore across fresh installs ─────────────
+# Memory files (MEMORY.md, memory/*.md) are the bot's continuity.
+# They live on the workspace volume, which survives rebuilds but not volume
+# deletion. A host-mounted backup directory provides durability across
+# fresh installs, volume resets, and machine migrations.
+
+MEMORY_BACKUP_DIR="/app/memory-backup"
+MEMORY_DIR="${WORKSPACE_DIR}/memory"
+MEMORY_FILE="${WORKSPACE_DIR}/MEMORY.md"
+
+# Restore: if workspace has no memory but backup exists, restore it
+if [ -d "${MEMORY_BACKUP_DIR}" ] && [ "$(ls -A ${MEMORY_BACKUP_DIR} 2>/dev/null)" ]; then
+  if [ ! -f "${MEMORY_FILE}" ] && [ ! -d "${MEMORY_DIR}" ]; then
+    echo "[init] Fresh workspace detected — restoring memory from backup"
+    # Restore MEMORY.md
+    if [ -f "${MEMORY_BACKUP_DIR}/MEMORY.md" ]; then
+      cp "${MEMORY_BACKUP_DIR}/MEMORY.md" "${MEMORY_FILE}"
+      echo "[init] ✓ Restored MEMORY.md"
+    fi
+    # Restore memory/ directory
+    if [ -d "${MEMORY_BACKUP_DIR}/memory" ]; then
+      mkdir -p "${MEMORY_DIR}"
+      cp -r "${MEMORY_BACKUP_DIR}/memory/"* "${MEMORY_DIR}/" 2>/dev/null || true
+      echo "[init] ✓ Restored memory/ directory ($(ls ${MEMORY_DIR} | wc -l) files)"
+    fi
+    # Restore USER.md, TOOLS.md if they exist in backup
+    for f in USER.md TOOLS.md HEARTBEAT.md; do
+      if [ -f "${MEMORY_BACKUP_DIR}/${f}" ]; then
+        cp "${MEMORY_BACKUP_DIR}/${f}" "${WORKSPACE_DIR}/${f}"
+        echo "[init] ✓ Restored ${f}"
+      fi
+    done
+  else
+    echo "[init] ✓ Memory already present — no restore needed"
+  fi
+else
+  echo "[init] ✓ No memory backup found (first-ever install or backup not mounted)"
+fi
+
+# Backup: save current memory to backup directory (runs every startup)
+if [ -d "${MEMORY_BACKUP_DIR}" ]; then
+  if [ -f "${MEMORY_FILE}" ] || [ -d "${MEMORY_DIR}" ]; then
+    [ -f "${MEMORY_FILE}" ] && cp "${MEMORY_FILE}" "${MEMORY_BACKUP_DIR}/MEMORY.md"
+    if [ -d "${MEMORY_DIR}" ]; then
+      mkdir -p "${MEMORY_BACKUP_DIR}/memory"
+      cp -r "${MEMORY_DIR}/"* "${MEMORY_BACKUP_DIR}/memory/" 2>/dev/null || true
+    fi
+    for f in USER.md TOOLS.md HEARTBEAT.md; do
+      [ -f "${WORKSPACE_DIR}/${f}" ] && cp "${WORKSPACE_DIR}/${f}" "${MEMORY_BACKUP_DIR}/${f}"
+    done
+    echo "[init] ✓ Memory backed up to ${MEMORY_BACKUP_DIR}"
+  fi
+fi
+
 # ── 4. SSH config — always refresh from image (approved host allowlist) ──────
 # Authoritative allowlist of approved SSH hosts.
 # Overwrites on every startup so repo changes take effect on next restart.
