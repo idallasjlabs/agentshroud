@@ -49,7 +49,7 @@ class KillSwitchConfig:
     alert_severity: str = "CRITICAL"
     
     # Test Configuration
-    dry_run_enabled: bool = True  # Always start in dry-run mode for safety
+    dry_run_enabled: bool = False  # Live enforcement; set KILLSWITCH_DRY_RUN=true to override
     test_freeze_mode: bool = True  # Test freeze mode by default
     test_shutdown_mode: bool = False  # Test shutdown mode (more disruptive)
     test_disconnect_mode: bool = False  # Test disconnect mode (most disruptive)
@@ -101,7 +101,7 @@ class KillSwitchConfig:
             alert_on_heartbeat_miss=os.getenv("KILLSWITCH_ALERT_HEARTBEAT_MISS", "true").lower() == "true",
             alert_on_anomaly=os.getenv("KILLSWITCH_ALERT_ANOMALY", "true").lower() == "true",
             alert_severity=os.getenv("KILLSWITCH_ALERT_SEVERITY", "CRITICAL"),
-            dry_run_enabled=os.getenv("KILLSWITCH_DRY_RUN", "true").lower() == "true",
+            dry_run_enabled=os.getenv("KILLSWITCH_DRY_RUN", "false").lower() == "true",
             test_freeze_mode=os.getenv("KILLSWITCH_TEST_FREEZE", "true").lower() == "true",
             test_shutdown_mode=os.getenv("KILLSWITCH_TEST_SHUTDOWN", "false").lower() == "true",
             test_disconnect_mode=os.getenv("KILLSWITCH_TEST_DISCONNECT", "false").lower() == "true",

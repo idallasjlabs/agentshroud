@@ -125,6 +125,10 @@ class SecurityConfig(BaseModel):
     prompt_guard: SecurityModuleConfig = Field(default_factory=SecurityModuleConfig)
     egress_filter: SecurityModuleConfig = Field(default_factory=SecurityModuleConfig)
     mcp_proxy: SecurityModuleConfig = Field(default_factory=SecurityModuleConfig)
+    dns_filter: SecurityModuleConfig = Field(default_factory=SecurityModuleConfig)
+    subagent_monitor: SecurityModuleConfig = Field(default_factory=SecurityModuleConfig)
+    egress_monitor: SecurityModuleConfig = Field(default_factory=SecurityModuleConfig)
+    killswitch: SecurityModuleConfig = Field(default_factory=SecurityModuleConfig)
 
 
 def get_module_mode(config: "GatewayConfig", module_name: str) -> str:
@@ -147,7 +151,10 @@ def get_module_mode(config: "GatewayConfig", module_name: str) -> str:
 
 def check_monitor_mode_warnings(config: "GatewayConfig", logger):
     """Log warnings for any core modules running in monitor mode."""
-    core_modules = ["pii_sanitizer", "prompt_guard", "egress_filter", "mcp_proxy"]
+    core_modules = [
+        "pii_sanitizer", "prompt_guard", "egress_filter", "mcp_proxy",
+        "dns_filter", "subagent_monitor", "egress_monitor", "killswitch",
+    ]
     
     for module_name in core_modules:
         mode = get_module_mode(config, module_name)
