@@ -146,10 +146,10 @@ echo "[startup] Starting AgentShroud gateway..."
 openclaw gateway --allow-unconfigured --bind lan &
 OPENCLAW_PID=$!
 
-# Telegram notification helpers — sends via THIS instance's bot token
-# Falls back to production bot if local token unavailable
-_PRODUCTION_BOT_TOKEN="8481143014:AAE58Z7N7fh4DuoGQdekp7botxDBJbAGb54"
+# Telegram notification helpers — ALL traffic routes through AgentShroud gateway
+# No direct api.telegram.org calls. No hardcoded bot tokens.
 _OWNER_CHAT_ID="8096968754"
+_GATEWAY_TELEGRAM_BASE="${GATEWAY_OP_PROXY_URL:-http://gateway:8080}/telegram-api"
 
 _telegram_bot_token() {
     node -e "
@@ -166,16 +166,14 @@ _telegram_send() {
     local text="$1"
     local token
     token="$(_telegram_bot_token)"
-    # Try local bot first, fall back to production bot
-    if [ -n "$token" ]; then
-        curl -sf --max-time 5 -X POST "https://api.telegram.org/bot${token}/sendMessage" \
-            -H "Content-Type: application/json" \
-            -d "{\"chat_id\":\"${_OWNER_CHAT_ID}\",\"text\":\"${text}\"}" \
-            >/dev/null 2>&1 && return 0
+    if [ -z "$token" ]; then
+        echo "[startup] ⚠ No Telegram bot token available — cannot send notification" >&2
+        return 1
     fi
-    # Fallback: production bot (always reachable)
-    curl -sf --max-time 5 -X POST "https://api.telegram.org/bot${_PRODUCTION_BOT_TOKEN}/sendMessage" \
+    # Route through AgentShroud gateway Telegram proxy (never direct to api.telegram.org)
+    curl -sf --max-time 10 -X POST "${_GATEWAY_TELEGRAM_BASE}/bot${token}/sendMessage" \
         -H "Content-Type: application/json" \
+        -H "Authorization: Bearer ${GATEWAY_AUTH_TOKEN:-}" \
         -d "{\"chat_id\":\"${_OWNER_CHAT_ID}\",\"text\":\"${text}\"}" \
         >/dev/null 2>&1
 }

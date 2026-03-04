@@ -48,12 +48,12 @@ else
     check_fail "UI not accessible (HTTP $HTTP_CODE)"
 fi
 
-# Check 4: Internet access
-echo -n "4. Internet access... "
-if docker exec agentshroud-bot curl -sf -m 3 https://api.openai.com > /dev/null 2>&1; then
-    check_pass "Outbound internet working"
+# Check 4: Internet access (via gateway — bot has no direct internet)
+echo -n "4. Internet access (via gateway)... "
+if docker exec agentshroud-gateway python -c "import urllib.request; urllib.request.urlopen('https://api.openai.com', timeout=5).read()" > /dev/null 2>&1; then
+    check_pass "Gateway outbound internet working"
 else
-    check_fail "No internet access"
+    check_fail "Gateway has no internet access"
 fi
 
 # Check 5: Security token
