@@ -117,28 +117,28 @@ LLM_Settings/
 
 ### Claude Code ('.claude/')
 - **Format:** JSON
-- **Agents:** 3 subagents (doc-writer, security-reviewer, testrunner)
-- **Skills:** 5 skills (/pr, /tdd, /mcpm-aws-profile, /mcpm-doctor, /mcpm-auth-reset)
+- **Agents:** Subagents (doc-writer, security-reviewer, testrunner)
+- **Skills:** 36 skills (`/8d`, `/aws`, `/browser`, `/bs`, `/cicd`, `/cr`, `/data`, `/env`, `/gg`, `/icloud`, `/mac`, `/mc`, `/mcpm`, `/mcpm-auth-reset`, `/mcpm-aws-profile`, `/mcpm-doctor`, `/pm`, `/pr`, `/production`, `/ps`, `/qa`, `/sec`, `/sec-defense`, `/sec-offense`, `/tdd`, `/ti`, `/tw`, plus 9 podcast pipeline skills)
 - **Hooks:** 3 hooks (warn_dangerous_bash, auto_format_python, run_targeted_tests)
 - **Context:** CLAUDE.md loaded automatically
 - **MCP:** Via .mcp.json (GitHub, Atlassian, AWS API)
 
 ### Gemini CLI ('.gemini/')
 - **Format:** JSON
-- **Agents:** None (not supported)
-- **Skills:** None (not supported)
+- **Agents:** 38 reference files in `.gemini/agents/` — paste content to use (no native invocation)
+- **Skills:** No native support
 - **Hooks:** None (not supported)
 - **Context:** GEMINI.md loaded via /memory refresh
 - **MCP:** Via settings.json
 
 ### Codex CLI ('.codex/')
 - **Format:** TOML
-- **Agents:** None (not supported)
-- **Skills:** None (not supported)
+- **Agents:** 38 reference files in `.codex/agents/` — paste content to use (no native invocation)
+- **Skills:** No native support (`/skills` not a Codex feature)
 - **Hooks:** None (not supported)
 - **Context:** AGENTS.md loaded via model_instructions_file
-- **MCP:** Via config.toml
-- **Features:** Feature flags enabled (shell_snapshot, etc.)
+- **MCP:** Via config.toml (aws-api server, github, atlassian)
+- **Features:** Feature flags enabled (shell_snapshot, web_search=disabled)
 
 ### GitHub Copilot CLI ('.github/agents/')
 - **Format:** JSON (config) + Markdown (agent profiles)
@@ -157,8 +157,8 @@ LLM_Settings/
 | Feature | Claude | Gemini | Codex | Copilot |
 |---------|--------|--------|-------|---------|
 | **Config Format** | JSON | JSON | TOML | JSON |
-| **Custom Agents** | Subagents (MD) | ❌ | ❌ | Agent profiles (.agent.md) |
-| **Skills** | ✅ /skill | ❌ | ❌ | ❌ |
+| **Custom Agents** | Subagents (MD) | Library only (paste to use) | Library only (paste to use) | Agent profiles (.agent.md) |
+| **Skills** | ✅ /skill | ❌ (no native syntax) | ❌ (no native syntax) | ❌ |
 | **Hooks** | ✅ Pre/Post | ❌ | ❌ | ❌ |
 | **Context File** | Auto-load | Manual refresh | Auto-load | Agent profiles |
 | **MCP Servers** | ✅ | ✅ | ✅ | ✅ |
