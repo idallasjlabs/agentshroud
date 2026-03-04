@@ -419,6 +419,12 @@ class MiddlewareManager:
                     attacks = self.context_guard.analyze_message(session_id or 'unknown', message_content)
                     if attacks:
                         for attack in attacks:
+                            # repetition_attack fires on legitimate structured output (nc output,
+                            # status checks, etc.) — log it but never block on it.
+                            # Only block on instruction_injection, which is the real threat.
+                            if attack.attack_type == 'repetition_attack':
+                                logger.info(f"Context repetition noted (not blocking): {attack.description}")
+                                continue
                             if attack.severity in ['critical', 'high']:
                                 logger.warning(f"Context attack detected: {attack.description}")
                                 return MiddlewareResult(
@@ -427,7 +433,8 @@ class MiddlewareManager:
                                 )
                 except Exception as e:
                     logger.error(f"ContextGuard processing error: {e}")
-            
+                    return MiddlewareResult(allowed=False, reason=f"ContextGuard error: {str(e)}")
+
             # 2. Metadata Guard - Sanitize headers and metadata
             if self.metadata_guard:
                 try:
@@ -457,7 +464,8 @@ class MiddlewareManager:
                         )
                 except Exception as e:
                     logger.error(f"EnvGuard processing error: {e}")
-            
+                    return MiddlewareResult(allowed=False, reason=f"EnvGuard error: {str(e)}")
+
             # 4. Git Guard - Check for git-related security issues
             if self.git_guard:
                 try:
@@ -491,7 +499,8 @@ class MiddlewareManager:
                             
                 except Exception as e:
                     logger.error(f"FileSandbox processing error: {e}")
-            
+                    return MiddlewareResult(allowed=False, reason=f"FileSandbox error: {str(e)}")
+
             # 6. Session Send Security - Check for cross-session messaging attempts
             cross_session_result = self._check_cross_session_access(request_data, user_id)
             if not cross_session_result.allowed:
@@ -685,10 +694,10 @@ class MiddlewareManager:
     def _enforce_session_isolation(self, request_data: Dict[str, Any], user_id: str) -> MiddlewareResult:
         """Enforce per-user session isolation rules."""
         if not self.user_session_manager:
-            logger.warning("UserSessionManager not initialized - session isolation degraded")
+            logger.error("UserSessionManager not initialized - session isolation fail-closed")
             return MiddlewareResult(
-                allowed=True,
-                reason="Session isolation unavailable - operating in degraded mode"
+                allowed=False,
+                reason="Session isolation unavailable - request denied"
             )
         
         try:
@@ -726,7 +735,9 @@ class MiddlewareManager:
         patterns = [
             r'/[a-zA-Z0-9_./\-]+',  # Unix-style absolute paths
             r'[a-zA-Z0-9_./\-]+/[a-zA-Z0-9_./\-]+',  # Relative paths with slashes
-            r'[a-zA-Z0-9_./\-]+\.(?:txt|md|py|js|json|yaml|yml|conf|cfg|log|csv|xml)',  # Files with extensions
+            # Only match files with explicit path prefix (./  ../  ~/) to avoid
+            # false positives on bare words like "config.yaml" in conversation.
+            r'(?:\.{1,2}/|~/)[a-zA-Z0-9_./\-]+\.(?:txt|md|py|js|json|yaml|yml|conf|cfg|log|csv|xml)',
         ]
         
         paths = []
@@ -757,7 +768,12 @@ class MiddlewareManager:
         """Check if a file path is allowed for a user to access."""
         if not self.user_session_manager:
             return False
-        
+
+        # Owner bypass — owner identity has access to all paths
+        if (self.user_session_manager.owner_user_id and
+                user_id == self.user_session_manager.owner_user_id):
+            return True
+
         try:
             # Convert to absolute paths for comparison
             file_path_abs = str(Path(file_path).resolve())

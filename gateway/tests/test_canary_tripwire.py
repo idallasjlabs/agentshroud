@@ -3,7 +3,7 @@ from __future__ import annotations
 import base64
 import codecs
 import pytest
-from gateway.security.canary_tripwire import CanaryTripwire, CanaryConfig
+from gateway.security.canary_tripwire import CanaryTripwire, CanaryConfig, TripwireResponse
 
 class TestCanaryTripwire:
     def setup_method(self):
@@ -69,3 +69,29 @@ class TestCanaryTripwire:
     def test_no_canaries(self):
         tw = CanaryTripwire(CanaryConfig(values=[]))
         assert not tw.scan("987-65-4321").detected
+
+    # --- scan_response() bridge tests ---
+
+    def test_scan_response_returns_tripwire_response(self):
+        r = self.tw.scan_response(response_text="normal text", source="test")
+        assert isinstance(r, TripwireResponse)
+
+    def test_scan_response_blocks_on_canary(self):
+        r = self.tw.scan_response(response_text="987-65-4321", source="pipeline")
+        assert r.is_blocked is True
+        assert "987-65-4321" in r.detections
+
+    def test_scan_response_passes_clean_text(self):
+        r = self.tw.scan_response(response_text="Hello, clean output.", source="pipeline")
+        assert r.is_blocked is False
+        assert r.detections == []
+
+    def test_scan_response_no_block_when_block_disabled(self):
+        tw = CanaryTripwire(CanaryConfig(block_on_detect=False))
+        r = tw.scan_response(response_text="987-65-4321", source="pipeline")
+        assert r.is_blocked is False
+        assert "987-65-4321" in r.detections
+
+    def test_scan_response_records_scan_method(self):
+        r = self.tw.scan_response(response_text="987-65-4321", source="pipeline")
+        assert len(r.scan_methods_used) > 0
