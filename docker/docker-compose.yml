@@ -1,5 +1,4 @@
 services:
-  # AgentShroud Gateway (Phase 2) - PII sanitization, audit ledger, routing
   gateway:
     build:
       context: ..
@@ -9,68 +8,53 @@ services:
     hostname: gateway
     restart: unless-stopped
     stop_grace_period: 15s
-
-    # Security: localhost-only binding
     ports:
-      - "127.0.0.1:8080:8080"
-
-    # Data persistence
+    - 127.0.0.1:8080:8080
     volumes:
-
-      - ../agentshroud.yaml:/app/agentshroud.yaml:ro
-
-      # SSH keys for gateway SSH proxy (read-only — keys generated in bot container)
-      - agentshroud-ssh:/var/agentshroud-ssh:ro
-
-      - gateway-data:/app/data
-      - ../web:/app/web:ro
-      - agentshroud-workspace:/data/bot-workspace:ro
-
-    # Secrets
+    - ../agentshroud.yaml:/app/agentshroud.yaml:ro
+    - agentshroud-ssh:/var/agentshroud-ssh:ro
+    - gateway-data:/app/data
+    - ../web:/app/web:ro
+    - agentshroud-workspace:/data/bot-workspace:ro
     secrets:
-      - gateway_password
-      - 1password_service_account
-
-    # Environment
+    - gateway_password
+    - 1password_service_account
     environment:
-      - PYTHONUNBUFFERED=1
-      - LOG_LEVEL=INFO
-      - PYTHONDONTWRITEBYTECODE=1
-      - GATEWAY_AUTH_TOKEN_FILE=/run/secrets/gateway_password
-      - OP_SERVICE_ACCOUNT_TOKEN_FILE=/run/secrets/1password_service_account
-
-    # Security hardening
+    - PYTHONUNBUFFERED=1
+    - LOG_LEVEL=INFO
+    - PYTHONDONTWRITEBYTECODE=1
+    - GATEWAY_AUTH_TOKEN_FILE=/run/secrets/gateway_password
+    - OP_SERVICE_ACCOUNT_TOKEN_FILE=/run/secrets/1password_service_account
     security_opt:
-      - no-new-privileges:true
-      - seccomp=./seccomp/gateway-seccomp.json
+    - no-new-privileges:true
+    - seccomp=./seccomp/gateway-seccomp.json
     cap_drop:
-      - ALL
-    read_only: true  # Read-only root filesystem with volume exceptions
+    - ALL
+    read_only: true
     tmpfs:
-      - /tmp:noexec,nosuid,size=100m
-      - /var/tmp:noexec,nosuid,size=50m
-
-    # Resource limits
+    - /tmp:noexec,nosuid,size=100m
+    - /var/tmp:noexec,nosuid,size=50m
     mem_limit: 1280m
     memswap_limit: 1280m
     cpus: 1.0
     pids_limit: 100
-
-    # Health check (using Python since curl not installed in slim image)
     healthcheck:
-      test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://127.0.0.1:8080/status').read()"]
+      test:
+      - CMD
+      - python
+      - -c
+      - import urllib.request; urllib.request.urlopen('http://127.0.0.1:8080/status').read()
       interval: 30s
       timeout: 10s
       retries: 3
       start_period: 10s
-
-    # Network - Gateway on BOTH networks to act as proxy
     networks:
-      - agentshroud-internal  # External (localhost access)
-      - agentshroud-isolated  # Internal (to AgentShroud)
-
-  # AgentShroud Bot (Real AgentShroud Platform) - agentshroud.ai
-  # SECURITY: Fully isolated - NO host filesystem access, NO LAN access
+    - agentshroud-internal
+    - agentshroud-isolated
+    dns:
+    - 172.20.0.10
+    depends_on:
+    - pihole
   agentshroud:
     build:
       context: ..
@@ -80,108 +64,93 @@ services:
     hostname: agentshroud
     restart: unless-stopped
     stop_grace_period: 15s
-
-    # SECURITY: Port exposed to localhost only for UI access
-    # Control UI accessible via: http://localhost:18790
-    # NOTE: Using 18790 due to port conflict - change back to 18789 after Docker Desktop restart
     ports:
-      - "127.0.0.1:18790:18789"
-
-    # SECURITY: Only isolated Docker volumes - NO host directory mounts
+    - 127.0.0.1:18790:18789
     volumes:
-      # AgentShroud config directory (API keys, settings, memory)
-      - agentshroud-config:/home/node/.agentshroud
-      # Bot's workspace (files the agent works with)
-      - agentshroud-workspace:/home/node/agentshroud/workspace
-      # SSH keys for bot (generated inside container)
-      - agentshroud-ssh:/home/node/.ssh
-      # Playwright browser binaries (persistent across restarts)
-      - agentshroud-browsers:/home/node/.cache/ms-playwright
-      # Branding assets (read-only) — logos, colors, email templates, guidelines
-      - ../branding:/app/branding:ro
-      # Memory persistence — host bind mount survives volume resets, fresh installs, and machine migration
-      - ../memory-backup:/app/memory-backup
-
-    # Secrets: CREDENTIAL ISOLATION (R-11) — agent gets ONLY gateway_password
-    # All API credentials removed from agent container per red team finding 05.
-    # Credentials are gateway-only; agent uses op-proxy for 1Password,
-    # gateway egress proxy for API key injection.
+    - agentshroud-config:/home/node/.agentshroud
+    - agentshroud-workspace:/home/node/agentshroud/workspace
+    - agentshroud-ssh:/home/node/.ssh
+    - agentshroud-browsers:/home/node/.cache/ms-playwright
+    - ../branding:/app/branding:ro
+    - ../memory-backup:/app/memory-backup
     secrets:
-      - gateway_password
-      - telegram_bot_token
-
-    # Environment variables
+    - gateway_password
+    - telegram_bot_token
     environment:
-      - NODE_ENV=production
-      - OPENCLAW_GATEWAY_BIND=lan  # Allow Gateway to connect internally
-      - OPENCLAW_GATEWAY_PASSWORD_FILE=/run/secrets/gateway_password
-      - TELEGRAM_BOT_TOKEN_FILE=/run/secrets/telegram_bot_token
-      # REMOVED: OPENAI_API_KEY_FILE — credentials now gateway-only (R-11)
-      # FINAL: Route all outbound internet through gateway HTTP CONNECT proxy
-      # - HTTP_PROXY=http://gateway:8181  # DISABLED: enable in FINAL phase
-      # - HTTPS_PROXY=http://gateway:8181  # DISABLED: enable in FINAL phase
-      # FINAL: Route 1Password credential lookups through gateway op-proxy endpoint
-      - GATEWAY_OP_PROXY_URL=http://gateway:8080
-      - ANTHROPIC_BASE_URL=http://gateway:8080
-      # Route Telegram API calls through gateway for security scanning
-      - TELEGRAM_API_BASE_URL=http://gateway:8080/telegram-api
-      # Bot identity
-      - OPENCLAW_BOT_NAME=agentshroud_bot
-      - OPENCLAW_BOT_EMAIL=agentshroud.ai@icloud.com
-      # Security: Disable features that access host
-      - OPENCLAW_DISABLE_HOST_FILESYSTEM=true
-      - OPENCLAW_SANDBOX_MODE=strict
-      - OPENCLAW_DISABLE_BONJOUR=1
-
-    # Security hardening
+    - NODE_ENV=production
+    - OPENCLAW_GATEWAY_BIND=lan
+    - OPENCLAW_GATEWAY_PASSWORD_FILE=/run/secrets/gateway_password
+    - TELEGRAM_BOT_TOKEN_FILE=/run/secrets/telegram_bot_token
+    - GATEWAY_OP_PROXY_URL=http://gateway:8080
+    - ANTHROPIC_BASE_URL=http://gateway:8080
+    - TELEGRAM_API_BASE_URL=http://gateway:8080/telegram-api
+    - OPENCLAW_BOT_NAME=agentshroud_bot
+    - OPENCLAW_BOT_EMAIL=agentshroud.ai@icloud.com
+    - OPENCLAW_DISABLE_HOST_FILESYSTEM=true
+    - OPENCLAW_SANDBOX_MODE=strict
+    - OPENCLAW_DISABLE_BONJOUR=1
     security_opt:
-      - no-new-privileges:true
-      - seccomp=./seccomp/agentshroud-seccomp.json
+    - no-new-privileges:true
+    - seccomp=./seccomp/agentshroud-seccomp.json
     cap_drop:
-      - ALL
-
-    # SECURITY: Read-only root filesystem (DISABLED during development)
-    # Enable after each phase for testing. See DEVELOPMENT_WORKFLOW_READ_ONLY.md
-    read_only: true  # Production: read-only rootfs (use toggle-readonly.sh for dev)
+    - ALL
+    read_only: true
     tmpfs:
-      - /tmp:noexec,nosuid,size=500m
-      - /var/tmp:noexec,nosuid,size=100m
-      - /home/node/.npm:noexec,nosuid,size=200m
-      - /home/node/.local:noexec,nosuid,size=100m
-      - /home/node/.config:noexec,nosuid,size=100m,uid=1000,gid=1000
-      # .cache/ms-playwright is now a volume (persistent browsers)
-
-    # Resource limits (increased for Node.js + AgentShroud)
+    - /tmp:noexec,nosuid,size=500m
+    - /var/tmp:noexec,nosuid,size=100m
+    - /home/node/.npm:noexec,nosuid,size=200m
+    - /home/node/.local:noexec,nosuid,size=100m
+    - /home/node/.config:noexec,nosuid,size=100m,uid=1000,gid=1000
     mem_limit: 4g
     memswap_limit: 4g
     cpus: 2.0
     pids_limit: 512
-
-    # Health check
     healthcheck:
-      test: ["CMD", "curl", "-f", "http://localhost:18789/api/health"]
+      test:
+      - CMD
+      - curl
+      - -f
+      - http://localhost:18789/api/health
       interval: 30s
       timeout: 10s
       retries: 3
       start_period: 60s
-
-    # host.docker.internal → macOS host (for MCP servers that must run on host, e.g. mac-messages-mcp)
-    # Tailscale hosts → static IPs: Docker's embedded DNS doesn't forward to Tailscale
-    # the container. Pinned IPs bypass the DNS proxy entirely.
-    # To update: run `tailscale ip --4 <hostname>` on the macOS host.
     extra_hosts:
-      - "host.docker.internal:host-gateway"
-
-    # SECURITY: Isolated network - NO access to host LAN
+    - host.docker.internal:host-gateway
     networks:
-      - agentshroud-isolated
-
-    # Dependencies
+    - agentshroud-isolated
     depends_on:
       gateway:
         condition: service_healthy
-
-# Docker secrets (API keys and 1Password)
+      pihole:
+        condition: service_started
+    dns:
+    - 172.20.0.10
+  pihole:
+    image: pihole/pihole:latest
+    container_name: agentshroud-pihole
+    hostname: pihole
+    restart: unless-stopped
+    environment:
+      TZ: America/Chicago
+      WEBPASSWORD_FILE: /run/secrets/pihole_password
+      PIHOLE_DNS_: 1.1.1.1;1.0.0.1
+      DNSMASQ_LISTENING: all
+      FTLCONF_LOCAL_IPV4: 172.20.0.10
+    volumes:
+    - pihole-config:/etc/pihole
+    - pihole-dnsmasq:/etc/dnsmasq.d
+    ports:
+    - 127.0.0.1:5353:53/tcp
+    - 127.0.0.1:5353:53/udp
+    - 127.0.0.1:5380:80/tcp
+    networks:
+      agentshroud-internal:
+        ipv4_address: 172.20.0.10
+    cap_add:
+    - NET_ADMIN
+    secrets:
+    - pihole_password
 secrets:
   openai_api_key:
     file: ./secrets/openai_api_key.txt
@@ -199,32 +168,23 @@ secrets:
     file: ./secrets/1password_service_account
   telegram_bot_token:
     file: ./secrets/telegram_bot_token_production.txt
-
-# Network architecture for AgentShroud isolation
+  pihole_password:
+    file: ./secrets/pihole_password.txt
 networks:
-  # External network - Gateway accessible from localhost
   agentshroud-internal:
     driver: bridge
-    internal: false  # Allows localhost access to Gateway
-    ipam:
-      config:
-        - subnet: 172.20.0.0/16
-
-  # Backend network - AgentShroud talks to Gateway ONLY
-  # FINAL: internal: true — bot has no direct internet access.
-  # All outbound traffic must go through the HTTP CONNECT proxy at gateway:8181.
-  agentshroud-isolated:
-    driver: bridge
-    # NOTE: internal: true breaks macOS Docker Desktop host→container port forwarding.
-    # Bot isolation enforced at application layer via HTTP_PROXY=http://gateway:8181.
     internal: false
     ipam:
       config:
-        - subnet: 172.21.0.0/16
+      - subnet: 172.20.0.0/16
+  agentshroud-isolated:
+    driver: bridge
+    internal: false
+    ipam:
+      config:
+      - subnet: 172.21.0.0/16
     driver_opts:
-      com.docker.network.bridge.enable_icc: "true"  # Inter-container communication
-
-# Named volumes for data persistence
+      com.docker.network.bridge.enable_icc: 'true'
 volumes:
   gateway-data:
     driver: local
@@ -236,4 +196,7 @@ volumes:
     driver: local
   agentshroud-browsers:
     driver: local
-
+  pihole-config:
+    driver: local
+  pihole-dnsmasq:
+    driver: local
