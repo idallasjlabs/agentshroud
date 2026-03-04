@@ -224,8 +224,8 @@ class TestPatternMatching:
             assert verdict.flagged or not verdict.allowed, (
                 f"Symlink to /etc/shadow allowed without flagging: {verdict}"
             )
-        except NotImplementedError:
-            pytest.skip("Symlinks not supported")
+        except (NotImplementedError, PermissionError):
+            pytest.skip("Symlinks not supported or insufficient permissions")
         finally:
             if os.path.lexists(symlink_path):
                 os.unlink(symlink_path)
