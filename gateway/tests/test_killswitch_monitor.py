@@ -33,7 +33,7 @@ class TestKillSwitchConfig:
         assert config.heartbeat_miss_threshold == 3
         assert config.max_tool_calls_per_minute == 20
         assert config.max_tokens_per_hour == 100000
-        assert config.dry_run_enabled is True
+        assert config.dry_run_enabled is False  # enforce mode: dry_run disabled (v0.8.0)
         assert config.alert_severity == "CRITICAL"
 
 
