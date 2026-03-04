@@ -32,7 +32,7 @@ list_vaults() {
 
 # List items in a vault
 list_items() {
-    local vault="${1:-AgentShroud Bot Credentials}"
+    local vault="${1:-Agent Shroud Bot Credentials}"
     _validate_arg "vault" "$vault"
     op_authenticate
     op item list --vault "$vault" --session "$OP_SESSION"
@@ -42,7 +42,7 @@ list_items() {
 get_field() {
     local item="$1"
     local field="${2:-password}"
-    local vault="${3:-AgentShroud Bot Credentials}"
+    local vault="${3:-Agent Shroud Bot Credentials}"
     _validate_arg "item" "$item"
     _validate_arg "field" "$field"
     _validate_arg "vault" "$vault"
@@ -54,7 +54,7 @@ get_field() {
 # Get TOTP code
 get_totp() {
     local item="$1"
-    local vault="${2:-AgentShroud Bot Credentials}"
+    local vault="${2:-Agent Shroud Bot Credentials}"
     _validate_arg "item" "$item"
     _validate_arg "vault" "$vault"
 
@@ -73,16 +73,16 @@ case "$ACTION" in
         list_items "${2:-}"
         ;;
     get-password)
-        get_field "$2" "password" "${3:-AgentShroud Bot Credentials}"
+        get_field "$2" "password" "${3:-Agent Shroud Bot Credentials}"
         ;;
     get-username)
-        get_field "$2" "username" "${3:-AgentShroud Bot Credentials}"
+        get_field "$2" "username" "${3:-Agent Shroud Bot Credentials}"
         ;;
     get-field)
-        get_field "$2" "$3" "${4:-AgentShroud Bot Credentials}"
+        get_field "$2" "$3" "${4:-Agent Shroud Bot Credentials}"
         ;;
     get-totp)
-        get_totp "$2" "${3:-AgentShroud Bot Credentials}"
+        get_totp "$2" "${3:-Agent Shroud Bot Credentials}"
         ;;
     help|*)
         cat <<EOF
@@ -92,7 +92,7 @@ Usage: 1password-skill.sh <action> [args]
 
 Actions:
   list-vaults                          List all vaults bot can access
-  list-items [vault]                   List items in vault (default: AgentShroud Bot Credentials)
+  list-items [vault]                   List items in vault (default: Agent Shroud Bot Credentials)
   get-password <item> [vault]          Get password from item
   get-username <item> [vault]          Get username from item
   get-field <item> <field> [vault]     Get specific field from item
@@ -106,16 +106,16 @@ Examples:
   1password-skill.sh list-items
 
   # Get Gmail password
-  1password-skill.sh get-password "Gmail - agentshroud.ai"
+  1password-skill.sh get-password "AgentShroud - Google"
 
   # Get Gmail username
-  1password-skill.sh get-username "Gmail - agentshroud.ai"
+  1password-skill.sh get-username "AgentShroud - Google"
 
   # Get TOTP code
-  1password-skill.sh get-totp "Gmail - agentshroud.ai"
+  1password-skill.sh get-totp "AgentShroud - Google"
 
   # Get custom field
-  1password-skill.sh get-field "Gmail - agentshroud.ai" "agentshroud bot password"
+  1password-skill.sh get-field "AgentShroud - Google" "agentshroud bot password"
 EOF
         exit 0
         ;;

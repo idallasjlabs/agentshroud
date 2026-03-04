@@ -139,9 +139,10 @@ if (!config.plugins.entries.telegram.enabled) {
   changed = true;
 }
 
-// ── Patch 6: gateway.auth.token — read from OPENCLAW_GATEWAY_PASSWORD env ────
-// The gateway requires auth for websocket connections. Without gateway.auth.token
-// in the config, the CLI can't connect to its own gateway (password_missing).
+// ── Patch 6: gateway auth — read from OPENCLAW_GATEWAY_PASSWORD env ────
+// OpenClaw checks gateway.auth.password for websocket auth (not gateway.auth.token).
+// Both fields are set for compatibility. gateway.remote.password is what the CLI
+// sends when connecting to the gateway; it must match gateway.auth.password.
 
 const gwPassword = process.env.OPENCLAW_GATEWAY_PASSWORD;
 if (gwPassword) {
@@ -150,6 +151,11 @@ if (gwPassword) {
   if (config.gateway.auth.token !== gwPassword) {
     config.gateway.auth.token = gwPassword;
     console.log('[init-patch] Set gateway.auth.token from OPENCLAW_GATEWAY_PASSWORD');
+    changed = true;
+  }
+  if (config.gateway.auth.password !== gwPassword) {
+    config.gateway.auth.password = gwPassword;
+    console.log('[init-patch] Set gateway.auth.password from OPENCLAW_GATEWAY_PASSWORD');
     changed = true;
   }
   config.gateway.remote = config.gateway.remote || {};
