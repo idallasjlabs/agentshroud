@@ -19,10 +19,6 @@
         "AWS_REGION": "${AWS_REGION:-us-east-1}",
         "FASTMCP_LOG_LEVEL": "${FASTMCP_LOG_LEVEL:-ERROR}"
       }
-    },
-    "mac-messages": {
-      "command": "/Users/ijefferson.admin/.local/bin/mac-messages-mcp",
-      "args": []
     }
   }
 }
