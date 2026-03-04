@@ -27,6 +27,7 @@ import hashlib
 import logging
 import os
 import re
+import tempfile
 import time
 from datetime import datetime, timezone
 from pathlib import Path
@@ -699,7 +700,7 @@ class TestAuditTrail:
 
     def test_alert_dispatcher_write(self):
         from gateway.security.alert_dispatcher import AlertDispatcher
-        path = Path("/tmp/test-alert-write.jsonl")
+        path = Path(tempfile.mkdtemp()) / "test-alert-write.jsonl"
         if path.exists():
             path.unlink()
         ad = AlertDispatcher(alert_log=path)
