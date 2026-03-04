@@ -97,6 +97,8 @@ services:
       - agentshroud-browsers:/home/node/.cache/ms-playwright
       # Branding assets (read-only) — logos, colors, email templates, guidelines
       - ../branding:/app/branding:ro
+      # Memory persistence — host bind mount survives volume resets, fresh installs, and machine migration
+      - ../memory-backup:/app/memory-backup
 
     # Secrets: CREDENTIAL ISOLATION (R-11) — agent gets ONLY gateway_password
     # All API credentials removed from agent container per red team finding 05.
@@ -232,3 +234,4 @@ volumes:
     driver: local
   agentshroud-browsers:
     driver: local
+

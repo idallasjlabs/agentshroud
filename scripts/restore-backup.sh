@@ -23,6 +23,15 @@ REPO_ROOT="$(cd "$SCRIPT_DIR/.." && pwd)"
 echo "=== AgentShroud Backup Restore ==="
 echo "Restoring from: $BACKUP_DIR"
 echo
+echo "⚠️  WARNING: This will DESTROY all current data and replace it with the backup."
+echo "   All container volumes will be wiped and restored from: $BACKUP_DIR"
+echo
+read -p "Type 'RESTORE' to confirm (anything else aborts): " CONFIRM
+if [ "$CONFIRM" != "RESTORE" ]; then
+  echo "Aborted."
+  exit 0
+fi
+echo
 
 # Stop containers
 echo "1. Stopping containers..."
