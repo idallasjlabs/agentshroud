@@ -143,3 +143,48 @@ if [ -f "${SSH_CONFIG_SRC}" ]; then
 else
   echo "[init] ⚠ SSH config defaults not found — skipping"
 fi
+
+# ── 5. Memory persistence — backup & restore ─────────────────────────────────
+# Memory files (MEMORY.md, memory/*.md) are the bot continuity across sessions.
+# They live on the workspace volume, but must survive:
+#   - docker compose down -v  (volume deletion)
+#   - Fresh installs on new machines
+#   - Container image rebuilds
+#
+# Strategy: host-mounted /app/memory-backup is a bind mount to the repo
+# memory-backup/ directory. On every startup, we:
+#   1. Restore from backup if workspace memory is empty (fresh volume)
+#   2. Backup current memory to the host mount (on every startup)
+
+MEMORY_BACKUP_DIR="/app/memory-backup"
+WORKSPACE_MEMORY="${WORKSPACE_DIR}/memory"
+WORKSPACE_MEMORY_FILE="${WORKSPACE_DIR}/MEMORY.md"
+
+if [ -d "${MEMORY_BACKUP_DIR}" ]; then
+  # Restore: if workspace has no memory but backup does, restore it
+  if [ ! -f "${WORKSPACE_MEMORY_FILE}" ] && [ -f "${MEMORY_BACKUP_DIR}/MEMORY.md" ]; then
+    echo "[init] Fresh volume detected — restoring memory from backup"
+    cp "${MEMORY_BACKUP_DIR}/MEMORY.md" "${WORKSPACE_MEMORY_FILE}"
+    echo "[init]   Restored MEMORY.md"
+  fi
+
+  if [ ! -d "${WORKSPACE_MEMORY}" ] || [ -z "$(ls -A "${WORKSPACE_MEMORY}" 2>/dev/null)" ]; then
+    if [ -d "${MEMORY_BACKUP_DIR}/memory" ] && [ -n "$(ls -A "${MEMORY_BACKUP_DIR}/memory" 2>/dev/null)" ]; then
+      mkdir -p "${WORKSPACE_MEMORY}"
+      cp -r "${MEMORY_BACKUP_DIR}/memory/"* "${WORKSPACE_MEMORY}/"
+      echo "[init]   Restored memory/ directory"
+    fi
+  fi
+
+  # Backup: snapshot current memory to host mount (runs every startup)
+  if [ -f "${WORKSPACE_MEMORY_FILE}" ]; then
+    mkdir -p "${MEMORY_BACKUP_DIR}/memory"
+    cp "${WORKSPACE_MEMORY_FILE}" "${MEMORY_BACKUP_DIR}/MEMORY.md"
+    if [ -d "${WORKSPACE_MEMORY}" ]; then
+      cp -r "${WORKSPACE_MEMORY}/"* "${MEMORY_BACKUP_DIR}/memory/" 2>/dev/null || true
+    fi
+    echo "[init] Memory backed up to host mount (survives volume resets)"
+  fi
+else
+  echo "[init] Memory backup mount not available — memory NOT persisted to host"
+fi
