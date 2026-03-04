@@ -67,6 +67,10 @@ class MiddlewareResult:
     modified_request: Optional[Dict[str, Any]] = None
 
 
+# Owner user IDs bypass content scanning (FileSandbox, ContextGuard)
+# These users are the system operators - their messages should never be blocked
+OWNER_USER_IDS = {"8096968754"}  # Isaiah Jefferson - system owner
+
 class MiddlewareManager:
     """Manages the P1 security middleware modules."""
     
@@ -410,7 +414,7 @@ class MiddlewareManager:
                             logger.debug(f'Registered expected write for {path_match.group(1)}')
 
             # 1. Context Guard - Check for prompt injection and manipulation
-            if self.context_guard:
+            if self.context_guard and user_id not in OWNER_USER_IDS:
                 try:
                     message_content = request_data.get('message', '')
                     if isinstance(message_content, dict):
@@ -468,7 +472,7 @@ class MiddlewareManager:
                     logger.error(f"GitGuard processing error: {e}")
             
             # 5. File Sandbox - Validate file operations (now session-aware)
-            if self.file_sandbox and self.user_session_manager:
+            if self.file_sandbox and self.user_session_manager and user_id not in OWNER_USER_IDS:
                 try:
                     # Check if request contains file operations
                     message_content = request_data.get('message', '')
