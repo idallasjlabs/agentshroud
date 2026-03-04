@@ -72,7 +72,9 @@ fi
 
 mkdir -p "$(dirname "$out")"
 
-curl -sS https://api.openai.com/v1/audio/transcriptions \
+# Route through gateway proxy if configured
+OPENAI_API_BASE="${OPENAI_BASE_URL:-https://api.openai.com}"
+curl -sS "${OPENAI_API_BASE}/v1/audio/transcriptions" \
   -H "Authorization: Bearer $OPENAI_API_KEY" \
   -H "Accept: application/json" \
   -F "file=@${in}" \

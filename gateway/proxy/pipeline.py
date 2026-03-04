@@ -475,3 +475,29 @@ class SecurityPipeline:
 
     def verify_audit_chain(self) -> tuple[bool, str]:
         return self.audit_chain.verify_chain()
+    def set_global_mode(self, mode: str) -> None:
+        """Set global observatory mode for all security modules.
+        
+        Args:
+            mode: "monitor" or "enforce"
+        """
+        # Update components that support mode switching
+        if hasattr(self.pii_sanitizer, "set_mode"):
+            self.pii_sanitizer.set_mode(mode)
+        
+        if hasattr(self.prompt_guard, "set_mode"):
+            self.prompt_guard.set_mode(mode)
+        
+        if hasattr(self.egress_filter, "set_mode"):
+            self.egress_filter.set_mode(mode)
+        
+        # Update prompt guard thresholds based on mode
+        if self.prompt_guard:
+            if mode == "monitor":
+                # In monitor mode, set very high threshold so nothing blocks
+                self.prompt_guard.block_threshold = 999.0
+                self.prompt_guard.warn_threshold = 999.0
+            else:
+                # In enforce mode, use normal thresholds
+                self.prompt_guard.block_threshold = 0.8
+                self.prompt_guard.warn_threshold = 0.4
