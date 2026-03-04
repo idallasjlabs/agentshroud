@@ -11,8 +11,13 @@ echo ""
 echo "1️⃣  Checking for gitleaks..."
 if ! command -v gitleaks &> /dev/null; then
     echo "📦 Installing gitleaks..."
-    brew install gitleaks
-    echo "✅ gitleaks installed"
+    if command -v brew &>/dev/null; then
+        brew install gitleaks
+        echo "✅ gitleaks installed"
+    else
+        echo "❌ gitleaks not found. Install it from: https://github.com/gitleaks/gitleaks#installing"
+        exit 1
+    fi
 else
     echo "✅ gitleaks already installed"
 fi
@@ -22,8 +27,13 @@ echo ""
 echo "2️⃣  Checking for git-secrets..."
 if ! command -v git-secrets &> /dev/null; then
     echo "📦 Installing git-secrets..."
-    brew install git-secrets
-    echo "✅ git-secrets installed"
+    if command -v brew &>/dev/null; then
+        brew install git-secrets
+        echo "✅ git-secrets installed"
+    else
+        echo "❌ git-secrets not found. Install it from: https://github.com/awslabs/git-secrets#installing-git-secrets"
+        exit 1
+    fi
 else
     echo "✅ git-secrets already installed"
 fi
@@ -82,7 +92,9 @@ if [ -f ".gitignore" ]; then
     fi
 else
     echo "❌ No .gitignore file found!"
-    echo "   Create one with: cp ~/Development/LLM_Settings/llm_settings/templates/.gitignore ."
+    SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+    TEMPLATES_DIR="$(cd "$SCRIPT_DIR/../../templates" 2>/dev/null && pwd || echo '<llm_settings>/templates')"
+    echo "   Create one with: cp $TEMPLATES_DIR/.gitignore ."
 fi
 echo ""
 

@@ -1,0 +1,63 @@
+# SecureBrowser Security Configuration
+# Part of SecureClaw "One Claw Tied Behind Your Back" framework
+
+security:
+  # URL Allowlist - Only these domains are accessible
+  url_allowlist:
+    - "apple.com"
+    - "icloud.com"
+    - "account.apple.com"
+    - "appleid.apple.com"
+    # Add more trusted domains as needed
+  
+  # URL Blocklist - Explicitly blocked domains
+  url_blocklist:
+    - "*.onion"
+    - "*.torproject.org"
+    # Dark web, torrents, etc.
+  
+  # Approval Requirements - Actions requiring manual approval
+  approval_required:
+    - action: "fill_form"
+      patterns: ["password", "credit_card", "ssn", "cvv"]
+    - action: "fill_field"
+      patterns: ["password", "credit_card", "ssn", "cvv"]
+    - action: "click"
+      patterns: ["delete", "remove", "cancel_subscription", "destroy"]
+    - action: "execute_javascript"
+      always: true
+  
+  # Rate Limits - Prevent abuse
+  rate_limits:
+    requests_per_minute: 30
+    requests_per_hour: 500
+    requests_per_day: 5000
+  
+  # Audit Settings - Logging and monitoring
+  audit:
+    log_all_actions: true
+    save_screenshots: true
+    screenshot_dir: "/home/node/.openclaw/audit/screenshots"
+    screenshot_retention_days: 30
+    audit_log_path: "/home/node/.openclaw/audit/browser_audit.jsonl"
+  
+  # Browser Settings - Playwright configuration
+  browser:
+    headless: true
+    timeout: 30000
+    user_agent: "SecureClaw/1.0 (Enterprise Browser Automation)"
+    block_third_party_cookies: true
+    block_ads: true
+    javascript_enabled: true
+    ignore_https_errors: false
+    accept_downloads: false
+
+# Enterprise Security Defaults
+# These cannot be overridden without modifying source code
+hardcoded_security:
+  - No credential extraction from DOM
+  - No cross-domain navigation without approval
+  - No localStorage/sessionStorage access
+  - No cookie extraction
+  - Isolated contexts per task
+  - No persistent browser state

@@ -10,10 +10,16 @@ echo ""
 # Check if direnv is installed
 if ! command -v direnv &> /dev/null; then
     echo "📦 Installing direnv..."
-    if command -v brew &> /dev/null; then
+    if command -v brew &>/dev/null; then
         brew install direnv
+    elif command -v apt-get &>/dev/null; then
+        sudo apt-get install -y direnv
+    elif command -v dnf &>/dev/null; then
+        sudo dnf install -y direnv
+    elif command -v yum &>/dev/null; then
+        sudo yum install -y direnv
     else
-        echo "❌ Error: Homebrew not found. Install direnv manually:"
+        echo "❌ Error: No supported package manager found. Install direnv manually:"
         echo "   https://direnv.net/docs/installation.html"
         exit 1
     fi

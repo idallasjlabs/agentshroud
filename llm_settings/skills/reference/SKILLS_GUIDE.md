@@ -1,19 +1,23 @@
-# GSDE&G Claude Code Skills Reference
+# GSDE&G Skills Reference
 
-> Complete guide for using Claude Code skills in your GitHub workflow.
-> Skills are invoked with slash commands: `/qa`, `/tdd`, `/aws`, etc.
+> Complete guide for using skills across all LLM CLIs.
+> - **Claude Code:** invoke with `/skill-name`
+> - **Gemini CLI / Codex CLI:** paste `.gemini/agents/<name>.md` or `.codex/agents/<name>.md` into your prompt
 
 ---
 
 ## Quick Reference: When to Use Each Skill
 
-| Workflow Stage | Skill to Invoke | Purpose |
-|----------------|-----------------|---------|
+| Workflow Stage | Skill | Purpose |
+|----------------|-------|---------|
 | Starting a task | `/gg` | Branch naming, workflow rules |
 | Writing code | `/tdd` | TDD discipline (Red-Green-Refactor) |
 | Testing in prod | `/qa` | Production testing procedures |
 | Data validation | `/data` | Athena queries, data quality |
-| Using MCP tools | `/mcp` | GitHub, Jira, AWS integrations |
+| Using MCP tools | `/mcpm` | GitHub, Jira, AWS integrations |
+| MCP diagnostics | `/mcpm-doctor` | Diagnose MCP server issues |
+| MCP auth reset | `/mcpm-auth-reset` | Reset MCP authentication |
+| AWS MCP profile | `/mcpm-aws-profile` | Configure AWS MCP profile |
 | Code review | `/cr` | Review checklist, security |
 | Creating PR | `/pr` | PR description template |
 | Before merge | `/ps` | Pre-deploy checklist |
@@ -21,10 +25,28 @@
 | AWS operations | `/aws` | Cloud inventory, cost optimization, FinOps |
 | Root cause analysis | `/8d` | BESS incident investigation, 8D methodology |
 | Mac app inventory | `/mac` | Discover all macOS applications |
-| Security review | `/sec` | AgentShroud 4-layer security review |
-| Environment setup | `/env` | AgentShroud Pi environment management |
-| Project tracking | `/pm` | AgentShroud roadmap and sprint tracking |
+| Security review | `/sec` | SecureClaw 4-layer security review |
+| Defensive security | `/sec-defense` | Blue team STPA-Sec audit |
+| Offensive security | `/sec-offense` | Red team adversarial testing |
+| Environment setup | `/env` | SecureClaw Pi environment management |
+| Project tracking | `/pm` | SecureClaw roadmap and sprint tracking |
+| Technical writing | `/tw` | Documentation authoring |
+| Technical diagrams | `/ti` | Mermaid diagram generation |
+| Branding | `/bs` | Visual brand consistency |
 | Quick reference | `/mc` | Combined checklist |
+| Browser automation | `/browser` | Playwright browser automation with security controls |
+| iCloud services | `/icloud` | Calendar, Contacts, Mail via CalDAV/CardDAV |
+| Podcast audio | `/apollo` | Convert scripts to audio via ElevenLabs |
+| Podcast notes | `/athena` | Show notes and cheat sheets |
+| Podcast curriculum | `/atlas` | Episode learning architecture |
+| Podcast diagrams | `/daedalus` | PlantUML/Mermaid concept illustrations |
+| Podcast references | `/hermes` | Fact-check and reference verification |
+| Podcast retention | `/mnemosyne` | Spaced repetition study materials |
+| Podcast feedback | `/oracle` | Episode quality analysis |
+| Podcast dialogue | `/socrates` | Curriculum-to-dialogue script writing |
+| Podcast audit | `/vulcan` | Technical accuracy quality gate |
+| System audit docs | `/sad` | 13-section exhaustive codebase documentation |
+| System audit vault | `/sav` | Complete Obsidian vault for a codebase |
 
 ---
 
@@ -90,27 +112,31 @@ gh pr create --title "feat(data-lake): add partition pruning" --body "..."
 
 ```
 .claude/skills/
-├── qa/SKILL.md                    # QA + Production Testing Runbook
-├── cr/SKILL.md                    # Code Review Checklist
-├── pr/SKILL.md                    # PR Description Generator
-├── tdd/SKILL.md                   # TDD Coach
-├── gg/SKILL.md                    # GitHub Workflow Rules
-├── cicd/SKILL.md                  # CI/CD Pipeline Design
-├── ps/SKILL.md                    # Pre/Post Deploy Checklist
-├── production/SKILL.md            # Incident Rollback Guide
-├── data/SKILL.md                  # Athena Query Patterns
-├── mcp/SKILL.md                   # MCP Server Usage
-├── mc/SKILL.md                    # Combined Lifecycle Checklist
-├── aws/SKILL.md                   # AWS Cloud Management & FinOps
 ├── 8d/SKILL.md                    # 8D Root Cause Analysis
+├── aws/SKILL.md                   # AWS Cloud Management & FinOps
+├── bs/SKILL.md                    # Branding Specialist
+├── cicd/SKILL.md                  # CI/CD Pipeline Design
+├── cr/SKILL.md                    # Code Review Checklist
+├── data/SKILL.md                  # Athena Query Patterns
+├── env/SKILL.md                   # Environment Management
+├── gg/SKILL.md                    # GitHub Workflow Rules
 ├── mac/SKILL.md                   # Mac App Discovery
+├── mc/SKILL.md                    # Combined Lifecycle Checklist
+├── mcpm/SKILL.md                  # MCP Server Usage
+├── mcpm-auth-reset/SKILL.md       # MCP Auth Reset
+├── mcpm-aws-profile/SKILL.md      # AWS MCP Profile Configuration
+├── mcpm-doctor/SKILL.md           # MCP Diagnostics
+├── pm/SKILL.md                    # Project Management
+├── pr/SKILL.md                    # PR Description Generator
+├── production/SKILL.md            # Incident Rollback Guide
+├── ps/SKILL.md                    # Pre/Post Deploy Checklist
+├── qa/SKILL.md                    # QA + Production Testing Runbook
+├── sec/SKILL.md                   # Security Review
+├── tdd/SKILL.md                   # TDD Coach
+├── ti/SKILL.md                    # Technical Illustrator
+├── tw/SKILL.md                    # Technical Writer
 └── reference/
     └── SKILLS_GUIDE.md            # This document
-
-llm_settings/skills/               # Additional AgentShroud-specific skills
-├── sec/SKILL.md                   # Security Review
-├── env/SKILL.md                   # Environment Management
-└── pm/SKILL.md                    # Project Management
 ```
 
 ---
@@ -175,13 +201,21 @@ aws s3 rm s3://fluenceenergy-ops-data-lakehouse/das_catalog/_test/ --recursive
 ### System Utilities
 - **MAC** (`/mac`) - macOS application inventory (10 collection methods), categorization (22 categories), JSON manifest + Markdown catalog, web-sourced alternatives
 
-### AgentShroud (Project-Specific)
+### SecureClaw (Project-Specific)
 - **SEC** (`/sec`) - 4-layer security review (application, container, network, data flow), threat model
 - **ENV** (`/env`) - Raspberry Pi environment management, Docker hardening, ARM64 considerations, CI/CD workflow
 - **PM** (`/pm`) - 8-phase roadmap tracking, continuity files, sprint management, 6-agent coordination
 
 ### MCP Tools
-- **MCP-TOOLS** (`/mcp`) - GitHub, Jira, AWS MCP integration
+- **MCPM** (`/mcpm`) - GitHub, Jira, AWS MCP integration
+- **MCPM-DOCTOR** (`/mcpm-doctor`) - Diagnose MCP server issues
+- **MCPM-AUTH-RESET** (`/mcpm-auth-reset`) - Reset MCP authentication
+- **MCPM-AWS-PROFILE** (`/mcpm-aws-profile`) - Configure AWS MCP profile
+
+### Content & Communication
+- **TW** (`/tw`) - Technical documentation authoring: READMEs, runbooks, ADRs, API reference
+- **TI** (`/ti`) - Mermaid diagram generation: architecture, data flow, sequence, ER, state diagrams
+- **BS** (`/bs`) - Brand consistency: color tokens, typography, diagram themes, voice & tone
 
 ### Reference
 - **MASTER** (`/mc`) - Combined quick-reference checklist
@@ -245,7 +279,16 @@ Since we deploy directly to production:
 /data
 
 # When using MCP tools
-/mcp
+/mcpm
+
+# MCP diagnostics
+/mcpm-doctor
+
+# Reset MCP auth
+/mcpm-auth-reset
+
+# Configure AWS MCP profile
+/mcpm-aws-profile
 
 # Before creating PR
 /pr
@@ -266,14 +309,23 @@ Since we deploy directly to production:
 # Mac app inventory
 /mac
 
-# AgentShroud security review
+# SecureClaw security review
 /sec
 
-# AgentShroud environment setup
+# SecureClaw environment setup
 /env
 
-# AgentShroud project tracking
+# SecureClaw project tracking
 /pm
+
+# Technical documentation
+/tw
+
+# Creating a diagram
+/ti
+
+# Brand consistency check
+/bs
 
 # Quick reference
 /mc
@@ -291,6 +343,7 @@ Since we deploy directly to production:
 
 ---
 
-**Last Updated:** 2026-02-16
+**Last Updated:** 2026-03-02
 **Repository:** LLM_Settings
 **Deployment:** This file is copied to target repos via `llm-init.sh`
+**Skills:** 36 skills — universal across Claude Code (`/skill`), Gemini CLI (`@skill`), Codex CLI (`@skill`)
