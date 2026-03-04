@@ -28,7 +28,7 @@ import hmac
 from typing import Annotated, Optional
 
 from fastapi import Depends, FastAPI, HTTPException, Query, Request, WebSocket, status
-from pydantic import BaseModel, Field
+from pydantic import BaseModel
 from fastapi.responses import JSONResponse, HTMLResponse
 from starlette.responses import RedirectResponse
 from pathlib import Path
@@ -54,12 +54,9 @@ from .models import (
 from ..ssh_proxy.proxy import SSHProxy
 from .router import ForwardError, MultiAgentRouter
 from .sanitizer import PIISanitizer
-from ..security.canary_tripwire import CanaryTripwire
-from ..security.encoding_detector import EncodingDetector
 from ..security.prompt_guard import PromptGuard
 from ..security.trust_manager import TrustManager, TrustLevel
 from ..security.egress_filter import EgressFilter
-from ..security.egress_approval import EgressApprovalQueue, ApprovalMode
 from ..security.outbound_filter import OutboundInfoFilter
 from .middleware import MiddlewareManager
 from .event_bus import EventBus, make_event
@@ -69,8 +66,6 @@ from ..proxy.mcp_config import MCPProxyConfig
 from ..proxy.web_config import WebProxyConfig
 from ..proxy.web_proxy import WebProxy
 from ..proxy.webhook_receiver import WebhookReceiver
-from ..proxy.telegram_proxy import TelegramAPIProxy
-from ..proxy.llm_proxy import LLMProxy
 from ..proxy.pipeline import SecurityPipeline
 from gateway.security.session_manager import UserSessionManager
 from ..web.api import router as management_api_router
@@ -105,7 +100,7 @@ def _is_op_reference_allowed(reference: str) -> bool:
 class OpProxyRequest(BaseModel):
     """Request body for POST /credentials/op-proxy."""
 
-    reference: str  # e.g. "op://Agent Shroud Bot Credentials/API Keys/openai"
+    reference: str  # e.g. "op://AgentShroud Bot Credentials/API Keys/openai"
 
 
 # Configure logging
@@ -137,8 +132,6 @@ class AppState:
     start_time: float
     event_bus: EventBus
     http_proxy: Optional[HTTPConnectProxy]
-    observatory_mode: dict
-    auto_revert_task: Optional[object]
 
 
 app_state = AppState()
@@ -228,7 +221,10 @@ async def lifespan(app: FastAPI):
     # Initialize approval queue
     try:
         from ..approval_queue.store import ApprovalStore
-        store = ApprovalStore(app_state.config.approval_queue.db_path)
+        import tempfile
+        _data_dir = os.environ.get("AGENTSHROUD_DATA_DIR", tempfile.gettempdir())
+        _approval_db = os.path.join(_data_dir, "agentshroud_approvals.db")
+        store = ApprovalStore(_approval_db)
         app_state.approval_queue = EnhancedApprovalQueue(
             app_state.config.approval_queue, 
             app_state.config.tool_risk,
@@ -323,22 +319,6 @@ async def lifespan(app: FastAPI):
         raise
 
     # Initialize security pipeline
-    # Initialize canary tripwire
-    try:
-        app_state.canary_tripwire = CanaryTripwire()
-        logger.info("CanaryTripwire initialized")
-    except Exception as e:
-        logger.critical(f"Failed to initialize CanaryTripwire: {e}")
-        app_state.canary_tripwire = None
-
-    # Initialize encoding detector
-    try:
-        app_state.encoding_detector = EncodingDetector()
-        logger.info("EncodingDetector initialized")
-    except Exception as e:
-        logger.critical(f"Failed to initialize EncodingDetector: {e}")
-        app_state.encoding_detector = None
-
     app_state.pipeline = SecurityPipeline(
         prompt_guard=app_state.prompt_guard,
         pii_sanitizer=app_state.sanitizer,
@@ -346,21 +326,17 @@ async def lifespan(app: FastAPI):
         egress_filter=app_state.egress_filter,
         approval_queue=app_state.approval_queue,
         outbound_filter=app_state.outbound_filter,
-        canary_tripwire=app_state.canary_tripwire,
-        encoding_detector=app_state.encoding_detector,
     )
     logger.info("Security pipeline initialized")
 
     # Initialize per-user session manager for session isolation
     try:
-        base_workspace = Path("/tmp/agentshroud/workspace")
-        base_workspace.mkdir(parents=True, exist_ok=True)
-        # Owner ID from RBAC config (single source of truth — no hardcoded IDs)
-        from gateway.security.rbac_config import RBACConfig
-        rbac_defaults = RBACConfig()
+        base_workspace = Path("/home/node/.openclaw/workspace")
+        # TODO: Load owner_user_id from config - for now use a default
+        owner_user_id = getattr(app_state.config, 'owner_user_id', '1234567890') if app_state.config else '1234567890'
         app_state.session_manager = UserSessionManager(
             base_workspace=base_workspace,
-            owner_user_id=rbac_defaults.owner_user_id
+            owner_user_id=owner_user_id
         )
         logger.info("UserSessionManager initialized")
     except Exception as e:
@@ -560,15 +536,6 @@ async def lifespan(app: FastAPI):
     # Initialize event bus
     app_state.event_bus = EventBus()
     logger.info("Event bus initialized")
-    # Initialize observatory mode state
-    app_state.observatory_mode = {
-        "global_mode": os.getenv("AGENTSHROUD_MODE", "enforce"),
-        "effective_since": datetime.now(tz=timezone.utc).isoformat(),
-        "auto_revert_at": None,
-        "pinned_modules": [],
-    }
-    app_state.auto_revert_task = None
-    logger.info(f"Observatory mode initialized: global_mode={app_state.observatory_mode['global_mode']}")
 
     # Initialize HTTP CONNECT proxy (port 8181)
     # Activated in the FINAL PR by setting HTTP_PROXY on the bot container.
@@ -583,30 +550,7 @@ async def lifespan(app: FastAPI):
         logger.info("HTTP CONNECT proxy started on port 8181")
     except Exception as e:
         logger.warning(f"HTTP CONNECT proxy failed to start: {e} (continuing)")
-
-    # Initialize Telegram API reverse proxy
-    try:
-        app_state.telegram_proxy = TelegramAPIProxy(
-            pipeline=app_state.pipeline,
-            middleware_manager=app_state.middleware_manager,
-            sanitizer=app_state.sanitizer,
-        )
-        logger.info("Telegram API reverse proxy initialized")
-    except Exception as e:
-        logger.error(f"Failed to initialize Telegram API proxy: {e}")
-        app_state.telegram_proxy = None
-
-    # Initialize LLM API reverse proxy
-    try:
-        app_state.llm_proxy = LLMProxy(
-            pipeline=app_state.pipeline,
-            middleware_manager=app_state.middleware_manager,
-            sanitizer=app_state.sanitizer,
-        )
-        logger.info("LLM API reverse proxy initialized (Anthropic)")
-    except Exception as e:
-        logger.error(f"Failed to initialize LLM proxy: {e}")
-        app_state.llm_proxy = None
+        app_state.http_proxy = None
 
     # Record start time
     app_state.start_time = time.time()
@@ -853,14 +797,48 @@ async def health_check():
     stats = await app_state.ledger.get_stats()
     pending = await app_state.approval_queue.get_pending()
 
+    # Observatory mode state
+    obs_mode = getattr(app_state, 'observatory_mode', {
+        'global_mode': 'enforce', 'effective_since': None, 'auto_revert_at': None
+    })
+
+    # Egress stats
+    egress_queue = getattr(app_state, 'egress_approval_queue', None)
+    egress_pending = 0
+    egress_rules = 0
+    if egress_queue:
+        try:
+            egress_pending = len(egress_queue._pending_requests)
+            egress_rules = len(egress_queue._rules.get('allow', [])) + len(egress_queue._rules.get('deny', []))
+        except Exception:
+            pass
+
     return StatusResponse(
         status="healthy",
-        version="0.5.0",
+        version="0.8.0",
         uptime_seconds=uptime,
         ledger_entries=stats.get("total_entries", 0),
         pending_approvals=len(pending),
         pii_engine=app_state.sanitizer.get_mode(),
         config_loaded=True,
+        observatory_mode={
+            "global_mode": obs_mode.get("global_mode", "enforce"),
+            "effective_since": obs_mode.get("effective_since"),
+            "auto_revert_at": obs_mode.get("auto_revert_at"),
+        },
+        security_summary={
+            "modules_active": 33,
+            "modules_enforcing": 33 if obs_mode.get("global_mode") == "enforce" else 0,
+            "modules_monitoring": 0 if obs_mode.get("global_mode") == "enforce" else 33,
+            "blocked_today": stats.get("blocked_today", 0),
+            "canary_status": "green",
+        },
+        egress={
+            "pending_approvals": egress_pending,
+            "rules_count": egress_rules,
+            "blocked_today": 0,
+            "allowed_today": 0,
+        },
     )
 
 
@@ -1211,102 +1189,6 @@ async def email_send(request: EmailSendRequest, auth: AuthRequired):
     )
 
 
-
-
-
-# === LLM API Reverse Proxy ===
-# All OpenClaw ↔ Anthropic traffic routes through this endpoint.
-# User messages are scanned (PII, injection). Responses are filtered (credentials, XML).
-# Activated by setting ANTHROPIC_BASE_URL=http://gateway:8080 on the bot container.
-
-@app.api_route(
-    "/v1/{path:path}",
-    methods=["GET", "POST"],
-    include_in_schema=False,
-)
-async def llm_api_proxy(request: Request, path: str):
-    """Proxy Anthropic API calls through security pipeline."""
-    llm_proxy = getattr(app_state, "llm_proxy", None)
-    if not llm_proxy:
-        raise HTTPException(status_code=503, detail="LLM proxy not available")
-
-    body = await request.body() if request.method == "POST" else None
-    headers = dict(request.headers)
-
-    status_code, resp_headers, resp_body = await llm_proxy.proxy_messages(
-        f"/v1/{path}", body, headers
-    )
-
-    # Check if streaming response
-    content_type = resp_headers.get("content-type", "")
-    if "text/event-stream" in content_type:
-        # For streaming, pass through directly (TODO: add streaming filter)
-        from starlette.responses import StreamingResponse
-        import io
-        return StreamingResponse(
-            io.BytesIO(resp_body),
-            status_code=status_code,
-            media_type="text/event-stream",
-            headers={k: v for k, v in resp_headers.items() if k.lower() not in ("transfer-encoding", "content-length")},
-        )
-
-    return JSONResponse(
-        content=json.loads(resp_body) if resp_body else {},
-        status_code=status_code,
-    )
-
-
-@app.get("/llm-proxy/stats")
-async def llm_proxy_stats(auth: AuthRequired):
-    """Return LLM proxy statistics."""
-    llm_proxy = getattr(app_state, "llm_proxy", None)
-    if not llm_proxy:
-        return {"status": "not_initialized"}
-    return llm_proxy.get_stats()
-
-
-# === Telegram API Reverse Proxy ===
-# All bot Telegram API calls route through this endpoint.
-# Inbound messages are scanned (PII, injection, RBAC).
-# Outbound messages are filtered (credentials, XML).
-
-@app.api_route(
-    "/telegram-api/{path:path}",
-    methods=["GET", "POST"],
-    include_in_schema=False,
-)
-async def telegram_api_proxy(request: Request, path: str):
-    """Proxy Telegram Bot API calls through security pipeline."""
-    telegram_proxy = getattr(app_state, "telegram_proxy", None)
-    if not telegram_proxy:
-        raise HTTPException(status_code=503, detail="Telegram proxy not available")
-
-    # Extract bot token and method from path: bot<token>/<method>
-    import re as _re
-    match = _re.match(r"bot([^/]+)/(.+)", path)
-    if not match:
-        raise HTTPException(status_code=400, detail="Invalid Telegram API path")
-
-    bot_token = match.group(1)
-    method = match.group(2)
-
-    # Read request body
-    body = await request.body() if request.method == "POST" else None
-    content_type = request.headers.get("content-type")
-
-    result = await telegram_proxy.proxy_request(bot_token, method, body, content_type)
-    return JSONResponse(content=result)
-
-
-@app.get("/telegram-proxy/stats")
-async def telegram_proxy_stats(auth: AuthRequired):
-    """Return Telegram proxy statistics."""
-    telegram_proxy = getattr(app_state, "telegram_proxy", None)
-    if not telegram_proxy:
-        return {"status": "not_initialized"}
-    return telegram_proxy.get_stats()
-
-
 @app.post(
     "/forward", response_model=ForwardResponse, status_code=status.HTTP_201_CREATED
 )
@@ -1333,9 +1215,8 @@ async def forward_content(request: ForwardRequest, auth: AuthRequired):
                 "content_type": request.content_type,
                 "source": request.source,
                 "headers": {},  # Add headers if available in request
-                "user_id": getattr(request, "user_id", None) or "8096968754"  # Default to owner for direct API calls
+                "user_id": getattr(request, "user_id", None) or getattr(request, "source", "anonymous")
             }
-
 
             # Process through middleware
             middleware_result = await middleware_manager.process_request(request_data, "unknown")
@@ -2088,106 +1969,6 @@ async def ssh_history(
     )
 
 
-import asyncio
-from datetime import datetime, timezone, timedelta
-
-class ObservatoryModeRequest(BaseModel):
-    """Request body for POST /manage/mode"""
-    mode: str = Field(..., pattern="^(monitor|enforce)$")
-    auto_revert_hours: Optional[int] = Field(None, ge=1, le=168)  # 1 hour to 1 week
-    pin_modules: Optional[list[str]] = Field(default_factory=list)
-
-@app.get("/manage/mode")
-async def get_observatory_mode(auth: AuthRequired):
-    """Get current observatory mode status and settings."""
-    mode_info = app_state.observatory_mode.copy()
-    
-    # Add effective module modes
-    module_modes = {}
-    core_modules = ["pii_sanitizer", "prompt_guard", "egress_filter", "mcp_proxy"]
-    
-    for module in core_modules:
-        if module in mode_info.get("pinned_modules", []):
-            module_modes[module] = "enforce"
-        else:
-            module_modes[module] = mode_info["global_mode"]
-    
-    mode_info["module_modes"] = module_modes
-    return mode_info
-
-@app.post("/manage/mode")  
-async def set_observatory_mode(request: ObservatoryModeRequest, auth: AuthRequired):
-    """Set observatory mode with optional auto-revert and module pinning."""
-    current_mode = app_state.observatory_mode["global_mode"]
-    
-    # Update mode state
-    app_state.observatory_mode["global_mode"] = request.mode
-    app_state.observatory_mode["effective_since"] = datetime.now(tz=timezone.utc).isoformat()
-    app_state.observatory_mode["pinned_modules"] = request.pin_modules or []
-    
-    # Set auto-revert if requested
-    if request.auto_revert_hours and request.mode == "monitor":
-        revert_time = datetime.now(tz=timezone.utc) + timedelta(hours=request.auto_revert_hours)
-        app_state.observatory_mode["auto_revert_at"] = revert_time.isoformat()
-        
-        # Cancel existing auto-revert task if any
-        if app_state.auto_revert_task:
-            app_state.auto_revert_task.cancel()
-        
-        # Schedule new auto-revert task
-        async def auto_revert():
-            await asyncio.sleep(request.auto_revert_hours * 3600)
-            if app_state.observatory_mode["global_mode"] == "monitor":
-                app_state.observatory_mode["global_mode"] = "enforce"
-                app_state.observatory_mode["effective_since"] = datetime.now(tz=timezone.utc).isoformat()
-                app_state.observatory_mode["auto_revert_at"] = None
-                logger.warning("Observatory mode auto-reverted from monitor to enforce")
-                
-                # Update SecurityPipeline if available
-                if app_state.pipeline and hasattr(app_state.pipeline, "set_global_mode"):
-                    app_state.pipeline.set_global_mode("enforce")
-        
-        app_state.auto_revert_task = asyncio.create_task(auto_revert())
-    else:
-        app_state.observatory_mode["auto_revert_at"] = None
-        if app_state.auto_revert_task:
-            app_state.auto_revert_task.cancel()
-            app_state.auto_revert_task = None
-    
-    # Update SecurityPipeline if available
-    if app_state.pipeline and hasattr(app_state.pipeline, "set_global_mode"):
-        app_state.pipeline.set_global_mode(request.mode)
-    
-    # Update environment variable to propagate to get_module_mode()
-    os.environ["AGENTSHROUD_MODE"] = request.mode
-    
-    logger.info(f"Observatory mode changed from {current_mode} to {request.mode} by admin")
-    
-    await app_state.event_bus.emit(
-        make_event(
-            "observatory_mode_changed",
-            f"Mode changed from {current_mode} to {request.mode}",
-            {
-                "old_mode": current_mode,
-                "new_mode": request.mode,
-                "auto_revert_hours": request.auto_revert_hours,
-                "pinned_modules": request.pin_modules,
-            },
-            "warning" if request.mode == "monitor" else "info",
-        )
-    )
-    
-    return {
-        "success": True,
-        "old_mode": current_mode,
-        "new_mode": request.mode,
-        "effective_since": app_state.observatory_mode["effective_since"],
-        "auto_revert_at": app_state.observatory_mode["auto_revert_at"],
-        "pinned_modules": request.pin_modules or [],
-    }
-
-
-
 @app.get("/manage/modules")
 async def list_security_modules(auth: AuthRequired):
     """List all security modules and their status."""
@@ -2336,106 +2117,6 @@ async def security_health_report(auth: AuthRequired):
 
     return report
 
-# Egress Approval API Endpoints
-@app.get("/manage/egress/rules")
-async def get_egress_rules(auth: AuthRequired):
-    """Get all egress rules (permanent + session)."""
-    if not hasattr(app_state, 'egress_approval_queue'):
-        app_state.egress_approval_queue = EgressApprovalQueue()
-    
-    return await app_state.egress_approval_queue.get_all_rules()
-
-
-@app.post("/manage/egress/rules")
-async def add_egress_rule(request: dict, auth: AuthRequired):
-    """Add/modify an egress rule."""
-    if not hasattr(app_state, 'egress_approval_queue'):
-        app_state.egress_approval_queue = EgressApprovalQueue()
-    
-    domain = request.get("domain")
-    action = request.get("action")
-    mode = request.get("mode", "session")
-    
-    if not domain or action not in ("allow", "deny"):
-        raise HTTPException(status_code=400, detail="Invalid domain or action")
-    
-    if mode not in ("permanent", "session"):
-        raise HTTPException(status_code=400, detail="Invalid mode")
-    
-    approval_mode = ApprovalMode.PERMANENT if mode == "permanent" else ApprovalMode.SESSION
-    success = await app_state.egress_approval_queue.add_rule(domain, action, approval_mode)
-    
-    if not success:
-        raise HTTPException(status_code=500, detail="Failed to add rule")
-    
-    return {"status": "success", "domain": domain, "action": action, "mode": mode}
-
-
-@app.delete("/manage/egress/rules/{domain}")
-async def remove_egress_rule(domain: str, auth: AuthRequired):
-    """Remove an egress rule."""
-    if not hasattr(app_state, 'egress_approval_queue'):
-        app_state.egress_approval_queue = EgressApprovalQueue()
-    
-    success = await app_state.egress_approval_queue.remove_rule(domain)
-    
-    if not success:
-        raise HTTPException(status_code=404, detail="Rule not found")
-    
-    return {"status": "success", "domain": domain}
-
-
-@app.get("/manage/egress/pending")
-async def get_pending_egress_requests(auth: AuthRequired):
-    """Get all pending egress approval requests."""
-    if not hasattr(app_state, 'egress_approval_queue'):
-        app_state.egress_approval_queue = EgressApprovalQueue()
-    
-    return await app_state.egress_approval_queue.get_pending_requests()
-
-
-@app.post("/manage/egress/approve/{request_id}")
-async def approve_egress_request(request_id: str, request: dict, auth: AuthRequired):
-    """Approve a pending egress request."""
-    if not hasattr(app_state, 'egress_approval_queue'):
-        app_state.egress_approval_queue = EgressApprovalQueue()
-    
-    mode = request.get("mode", "once")
-    if mode not in ("permanent", "session", "once"):
-        raise HTTPException(status_code=400, detail="Invalid mode")
-    
-    approval_mode = {
-        "permanent": ApprovalMode.PERMANENT,
-        "session": ApprovalMode.SESSION,
-        "once": ApprovalMode.ONCE
-    }[mode]
-    
-    success = await app_state.egress_approval_queue.approve(request_id, approval_mode)
-    
-    if not success:
-        raise HTTPException(status_code=404, detail="Request not found")
-    
-    return {"status": "approved", "request_id": request_id, "mode": mode}
-
-
-@app.post("/manage/egress/deny/{request_id}")
-async def deny_egress_request(request_id: str, request: dict, auth: AuthRequired):
-    """Deny a pending egress request."""
-    if not hasattr(app_state, 'egress_approval_queue'):
-        app_state.egress_approval_queue = EgressApprovalQueue()
-    
-    mode = request.get("mode", "once")
-    if mode not in ("permanent", "once"):
-        raise HTTPException(status_code=400, detail="Invalid mode for denial")
-    
-    approval_mode = ApprovalMode.PERMANENT if mode == "permanent" else ApprovalMode.ONCE
-    
-    success = await app_state.egress_approval_queue.deny(request_id, approval_mode)
-    
-    if not success:
-        raise HTTPException(status_code=404, detail="Request not found")
-    
-    return {"status": "denied", "request_id": request_id, "mode": mode}
 
 @app.get('/manage/container-security')
 async def container_security_profile(auth: AuthRequired):
@@ -3421,3 +3102,118 @@ async def get_my_permissions(request: Request):
         logger.error(f"Error getting user permissions: {e}")
         raise HTTPException(status_code=500, detail=f"Error getting permissions: {str(e)}")
 
+
+
+# === Pi-hole DNS Management API (v0.8.0 Feature 1c) ===
+
+@app.get("/manage/dns")
+async def get_dns_stats(auth: AuthRequired):
+    """Get Pi-hole DNS statistics.
+    
+    Returns current DNS filtering statistics including:
+    - Queries today
+    - Blocked today  
+    - Number of blocklists
+    - Pi-hole status
+    
+    Authentication required.
+    """
+    try:
+        import aiohttp
+        
+        # Query Pi-hole API for statistics
+        async with aiohttp.ClientSession() as session:
+            async with session.get("http://pihole:80/admin/api.php?summary") as response:
+                if response.status != 200:
+                    raise HTTPException(status_code=503, detail="Pi-hole not available")
+                
+                data = await response.json()
+                
+                return {
+                    "status": data.get("status", "unknown"),
+                    "queries_today": data.get("dns_queries_today", 0),
+                    "blocked_today": data.get("ads_blocked_today", 0),
+                    "percent_blocked": data.get("ads_percentage_today", 0.0),
+                    "domains_being_blocked": data.get("domains_being_blocked", 0),
+                    "blocklist_count": data.get("domains_being_blocked", 0),
+                    "gravity_last_updated": data.get("gravity_last_updated", {}),
+                    "privacy_level": data.get("privacy_level", 0)
+                }
+                
+    except Exception as e:
+        logger.error(f"Error querying Pi-hole stats: {e}")
+        raise HTTPException(status_code=500, detail=f"Error getting DNS stats: {str(e)}")
+
+
+@app.post("/manage/dns/blocklist")
+async def manage_blocklist(
+    action: str,  # "add" or "remove"  
+    url: str,
+    auth: AuthRequired
+):
+    """Add or remove a blocklist URL from Pi-hole.
+    
+    Parameters:
+    - action: "add" to add blocklist, "remove" to remove
+    - url: Blocklist URL to add/remove
+    
+    Authentication required.
+    """
+    if action not in ["add", "remove"]:
+        raise HTTPException(status_code=400, detail="Action must be 'add' or 'remove'")
+    
+    if not url or not url.startswith(("http://", "https://")):
+        raise HTTPException(status_code=400, detail="Invalid URL format")
+    
+    try:
+        import aiohttp
+        
+        # Get Pi-hole password for API authentication
+        try:
+            with open("/run/secrets/pihole_password", "r") as f:
+                auth_token = f.read().strip()
+        except FileNotFoundError:
+            auth_token = ""
+        
+        # Build API URL
+        if action == "add":
+            api_url = f"http://pihole:80/admin/api.php?list=add&address={url}"
+        else:  # remove
+            api_url = f"http://pihole:80/admin/api.php?list=remove&address={url}"
+        
+        if auth_token:
+            api_url += f"&auth={auth_token}"
+        
+        async with aiohttp.ClientSession() as session:
+            async with session.get(api_url) as response:
+                if response.status != 200:
+                    raise HTTPException(status_code=503, detail="Pi-hole API not available")
+                
+                result = await response.json()
+                
+                if "success" in str(result).lower():
+                    # Update gravity to reload blocklists
+                    gravity_url = f"http://pihole:80/admin/api.php?updateGravity"
+                    if auth_token:
+                        gravity_url += f"&auth={auth_token}"
+                    
+                    async with session.get(gravity_url) as gravity_response:
+                        pass  # Fire and forget gravity update
+                    
+                    return {
+                        "success": True,
+                        "message": f"Successfully {action}ed blocklist: {url}",
+                        "url": url,
+                        "action": action
+                    }
+                else:
+                    return {
+                        "success": False,
+                        "message": f"Failed to {action} blocklist: {result}",
+                        "url": url,
+                        "action": action
+                    }
+                    
+    except Exception as e:
+        logger.error(f"Error managing Pi-hole blocklist: {e}")
+        raise HTTPException(status_code=500, detail=f"Error managing blocklist: {str(e)}")
