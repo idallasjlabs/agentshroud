@@ -220,6 +220,59 @@ services:
       pihole:
         condition: service_started
 
+  # ── Tailscale mesh VPN sidecar (D4 / Fix-10 mTLS) ─────────────────────────
+  # Provides encrypted mesh networking between gateway and bot containers.
+  # Bot and gateway can communicate over Tailscale's encrypted WireGuard layer
+  # instead of the plain Docker bridge — preventing lateral-movement attacks
+  # from a compromised container on the same bridge network.
+  #
+  # Activation: set TS_AUTHKEY in docker/secrets/tailscale_authkey.txt
+  # and uncomment the `tailscale` network entry in each service above.
+  #
+  # To get an auth key: https://login.tailscale.com/admin/settings/authkeys
+  # (use ephemeral + reusable for containers)
+  tailscale:
+    image: tailscale/tailscale:latest
+    container_name: agentshroud-tailscale
+    hostname: agentshroud-ts
+    restart: unless-stopped
+
+    volumes:
+      - tailscale-state:/var/lib/tailscale
+      - /dev/net/tun:/dev/net/tun
+
+    cap_add:
+      - NET_ADMIN
+      - NET_RAW
+
+    secrets:
+      - tailscale_authkey
+
+    environment:
+      - TS_AUTHKEY_FILE=/run/secrets/tailscale_authkey
+      # Advertise the isolated Docker subnet so gateway/bot routes to peers
+      # via Tailscale rather than the plain bridge.
+      - TS_EXTRA_ARGS=--advertise-routes=172.21.0.0/16 --accept-routes
+      - TS_STATE_DIR=/var/lib/tailscale
+      - TS_USERSPACE=false  # Use kernel WireGuard for performance
+
+    security_opt:
+      - no-new-privileges:true
+
+    mem_limit: 128m
+    memswap_limit: 128m
+    pids_limit: 64
+
+    networks:
+      - agentshroud-isolated
+
+    healthcheck:
+      test: ["CMD", "tailscale", "status"]
+      interval: 60s
+      timeout: 10s
+      retries: 3
+      start_period: 30s
+
 # Docker secrets (API keys and 1Password)
 secrets:
   openai_api_key:
@@ -240,6 +293,8 @@ secrets:
     file: ./secrets/telegram_bot_token_production.txt
   pihole_password:
     file: ./secrets/pihole_password.txt
+  tailscale_authkey:
+    file: ./secrets/tailscale_authkey.txt
 
 # Network architecture for AgentShroud isolation
 networks:
@@ -280,4 +335,6 @@ volumes:
   pihole-etc:
     driver: local
   pihole-dnsmasq:
+    driver: local
+  tailscale-state:
     driver: local
