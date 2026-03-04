@@ -352,10 +352,12 @@ async def lifespan(app: FastAPI):
     try:
         base_workspace = Path("/tmp/agentshroud/workspace")
         base_workspace.mkdir(parents=True, exist_ok=True)
-        owner_user_id = "8096968754"
+        # Owner ID from RBAC config (single source of truth — no hardcoded IDs)
+        from gateway.security.rbac_config import RBACConfig
+        rbac_defaults = RBACConfig()
         app_state.session_manager = UserSessionManager(
             base_workspace=base_workspace,
-            owner_user_id=owner_user_id
+            owner_user_id=rbac_defaults.owner_user_id
         )
         logger.info("UserSessionManager initialized")
     except Exception as e:
