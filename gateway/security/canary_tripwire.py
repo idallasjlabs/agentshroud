@@ -39,6 +39,13 @@ class CanaryTripwire:
         self._detections = 0
         self._alerts: list = []
 
+    def register_canary(self, value: str, target: str = "") -> None:
+        """Register a new canary value at runtime for dynamic tripwire testing."""
+        with self._lock:
+            if value not in self.config.values:
+                self.config.values.append(value)
+        logger.debug("Canary registered: %r (target=%r)", value, target)
+
     @property
     def detection_count(self) -> int:
         with self._lock:
