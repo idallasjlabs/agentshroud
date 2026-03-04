@@ -63,10 +63,47 @@ services:
       retries: 3
       start_period: 10s
 
+    # Route gateway DNS through Pi-hole sinkhole
+    dns:
+      - 172.21.0.10
+
     # Network - Gateway on BOTH networks to act as proxy
     networks:
       - agentshroud-internal  # External (localhost access)
       - agentshroud-isolated  # Internal (to AgentShroud)
+
+  # Pi-hole DNS Sinkhole — blocks malicious/exfil domains at DNS layer
+  # Sits on agentshroud-isolated network; bot and gateway resolve DNS through it.
+  pihole:
+    image: pihole/pihole:latest
+    container_name: agentshroud-pihole
+    hostname: pihole
+    restart: unless-stopped
+
+    environment:
+      - WEBPASSWORD_FILE=/run/secrets/pihole_password
+      - DNSMASQ_LISTENING=all
+      - PIHOLE_DNS_=8.8.8.8;8.8.4.4
+      - DNS_BOGUS_PRIV=true
+      - DNS_FQDN_REQUIRED=true
+
+    secrets:
+      - pihole_password
+
+    volumes:
+      - pihole-etc:/etc/pihole
+      - pihole-dnsmasq:/etc/dnsmasq.d
+
+    cap_add:
+      - NET_ADMIN  # Required for dnsmasq
+
+    mem_limit: 256m
+    memswap_limit: 256m
+    pids_limit: 64
+
+    networks:
+      agentshroud-isolated:
+        ipv4_address: 172.21.0.10
 
   # AgentShroud Bot (Real AgentShroud Platform) - agentshroud.ai
   # SECURITY: Fully isolated - NO host filesystem access, NO LAN access
@@ -113,9 +150,9 @@ services:
       - OPENCLAW_GATEWAY_PASSWORD_FILE=/run/secrets/gateway_password
       - TELEGRAM_BOT_TOKEN_FILE=/run/secrets/telegram_bot_token
       # REMOVED: OPENAI_API_KEY_FILE — credentials now gateway-only (R-11)
-      # FINAL: Route all outbound internet through gateway HTTP CONNECT proxy
-      # - HTTP_PROXY=http://gateway:8181  # DISABLED: enable in FINAL phase
-      # - HTTPS_PROXY=http://gateway:8181  # DISABLED: enable in FINAL phase
+      # Route all outbound internet through gateway HTTP CONNECT proxy
+      - HTTP_PROXY=http://gateway:8181
+      - HTTPS_PROXY=http://gateway:8181
       # FINAL: Route 1Password credential lookups through gateway op-proxy endpoint
       - GATEWAY_OP_PROXY_URL=http://gateway:8080
       - ANTHROPIC_BASE_URL=http://gateway:8080
@@ -155,7 +192,7 @@ services:
 
     # Health check
     healthcheck:
-      test: ["CMD", "curl", "-f", "http://localhost:18789/api/health"]
+      test: ["CMD", "curl", "-f", "http://localhost:18789/health"]
       interval: 30s
       timeout: 10s
       retries: 3
@@ -168,6 +205,10 @@ services:
     extra_hosts:
       - "host.docker.internal:host-gateway"
 
+    # Route bot DNS through Pi-hole sinkhole
+    dns:
+      - 172.21.0.10
+
     # SECURITY: Isolated network - NO access to host LAN
     networks:
       - agentshroud-isolated
@@ -176,6 +217,8 @@ services:
     depends_on:
       gateway:
         condition: service_healthy
+      pihole:
+        condition: service_started
 
 # Docker secrets (API keys and 1Password)
 secrets:
@@ -195,6 +238,8 @@ secrets:
     file: ./secrets/1password_service_account
   telegram_bot_token:
     file: ./secrets/telegram_bot_token_production.txt
+  pihole_password:
+    file: ./secrets/pihole_password.txt
 
 # Network architecture for AgentShroud isolation
 networks:
@@ -231,4 +276,8 @@ volumes:
   agentshroud-ssh:
     driver: local
   agentshroud-browsers:
+    driver: local
+  pihole-etc:
+    driver: local
+  pihole-dnsmasq:
     driver: local

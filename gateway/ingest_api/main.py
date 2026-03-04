@@ -183,7 +183,16 @@ async def lifespan(app: FastAPI):
     try:
         app_state.config = load_config()
         logger.info("Configuration loaded successfully")
-        # Check for monitor mode warnings
+        # Audit global mode override BEFORE per-module warnings
+        _mode = os.getenv("AGENTSHROUD_MODE", "enforce")
+        if _mode != "enforce":
+            logger.critical(
+                "SECURITY AUDIT: AGENTSHROUD_MODE=%r — ALL module enforcement is DISABLED. "
+                "Every security module is running in monitor-only mode. "
+                "This setting must NEVER be used in production.",
+                _mode,
+            )
+        # Check for per-module monitor mode warnings
         check_monitor_mode_warnings(app_state.config, logger)
     except Exception as e:
         logger.critical(f"Failed to load configuration: {e}")
