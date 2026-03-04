@@ -182,9 +182,23 @@ _telegram_send() {
 _INSTANCE_LABEL="${INSTANCE_NAME:-$(hostname -s)}"
 _BOT_NAME="${OPENCLAW_BOT_NAME:-agentshroud_bot}"
 
-# Forward TERM/INT to openclaw and send shutdown notification
+# Forward TERM/INT to openclaw, backup memory, send shutdown notification
 trap '
-    echo "[startup] Shutdown signal received — sending Telegram notification..."
+    echo "[startup] Shutdown signal received — backing up memory..."
+    MEMORY_BACKUP_DIR="/app/memory-backup"
+    WORKSPACE_DIR="/home/node/.openclaw/workspace"
+    if [ -d "${MEMORY_BACKUP_DIR}" ]; then
+        [ -f "${WORKSPACE_DIR}/MEMORY.md" ] && cp "${WORKSPACE_DIR}/MEMORY.md" "${MEMORY_BACKUP_DIR}/MEMORY.md"
+        if [ -d "${WORKSPACE_DIR}/memory" ]; then
+            mkdir -p "${MEMORY_BACKUP_DIR}/memory"
+            cp -r "${WORKSPACE_DIR}/memory/"* "${MEMORY_BACKUP_DIR}/memory/" 2>/dev/null || true
+        fi
+        for f in USER.md TOOLS.md HEARTBEAT.md; do
+            [ -f "${WORKSPACE_DIR}/${f}" ] && cp "${WORKSPACE_DIR}/${f}" "${MEMORY_BACKUP_DIR}/${f}"
+        done
+        echo "[startup] ✓ Memory backed up before shutdown"
+    fi
+    echo "[startup] Sending Telegram notification..."
     _telegram_send "🔴 AgentShroud shutting down — ${_BOT_NAME} on ${_INSTANCE_LABEL}" \
         && echo "[startup] ✓ Sent Telegram shutdown notification" \
         || echo "[startup] ⚠ Could not send Telegram shutdown notification"
