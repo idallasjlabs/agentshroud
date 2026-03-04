@@ -423,23 +423,23 @@ class SecurityPipeline:
 
         # Step 1.6: Encoding Bypass Detection
         if self.encoding_detector:
-            encoding_result = self.encoding_detector.detect_and_decode(
+            encoding_result = self.encoding_detector.analyze(
                 text=result.sanitized_message,
-                source=source
             )
-            
+
             # Re-scan decoded content with previous filters if encoding was detected
-            if encoding_result.has_encoded_content:
-                result.encoding_detections = encoding_result.encodings_detected
-                result.encoding_decoded_segments = len(encoding_result.decoded_segments)
+            if encoding_result.detected:
+                encodings_found = [layer.encoding for layer in encoding_result.layers]
+                result.encoding_detections = encodings_found
+                result.encoding_decoded_segments = len(encoding_result.layers)
                 self._stats["encoding_detected"] += 1
-                
+
                 # Update the message to the fully decoded version for further processing
-                result.sanitized_message = encoding_result.fully_decoded_text
-                
+                result.sanitized_message = encoding_result.cleaned_text
+
                 logger.info(
-                    f"Encoding bypass detected: {len(encoding_result.encodings_detected)} methods, "
-                    f"{len(encoding_result.decoded_segments)} segments decoded from {source}"
+                    f"Encoding bypass detected: {len(encodings_found)} methods, "
+                    f"{len(encoding_result.layers)} segments decoded from {source}"
                 )
 
         # Step 1.7: Canary Tripwire (Final Defense)
@@ -455,7 +455,7 @@ class SecurityPipeline:
                 result.blocked = True
                 result.canary_blocked = True
                 result.block_reason = f"Canary tripwire triggered: {len(tripwire_result.detections)} detections"
-                result.canary_detections = [d.canary_value for d in tripwire_result.detections]
+                result.canary_detections = tripwire_result.detections
                 self._stats["canary_blocked"] += 1
                 
                 # Audit the block
