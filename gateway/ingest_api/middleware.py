@@ -67,9 +67,9 @@ class MiddlewareResult:
     modified_request: Optional[Dict[str, Any]] = None
 
 
-# Owner user IDs bypass content scanning (FileSandbox, ContextGuard)
-# These users are the system operators - their messages should never be blocked
-OWNER_USER_IDS = {"8096968754"}  # Isaiah Jefferson - system owner
+# Owner detection: delegates to RBAC config (single source of truth).
+# Middleware resolves owner status dynamically — no hardcoded user IDs here.
+# See gateway/security/rbac_config.py for owner_user_id configuration.
 
 class MiddlewareManager:
     """Manages the P1 security middleware modules."""
@@ -414,7 +414,9 @@ class MiddlewareManager:
                             logger.debug(f'Registered expected write for {path_match.group(1)}')
 
             # 1. Context Guard - Check for prompt injection and manipulation
-            if self.context_guard and user_id not in OWNER_USER_IDS:
+            if self.context_guard and self._is_owner(user_id):
+                logger.info(f"ContextGuard bypassed for owner user {user_id}")
+            elif self.context_guard:
                 try:
                     message_content = request_data.get('message', '')
                     if isinstance(message_content, dict):
@@ -472,7 +474,9 @@ class MiddlewareManager:
                     logger.error(f"GitGuard processing error: {e}")
             
             # 5. File Sandbox - Validate file operations (now session-aware)
-            if self.file_sandbox and self.user_session_manager and user_id not in OWNER_USER_IDS:
+            if self.file_sandbox and self.user_session_manager and self._is_owner(user_id):
+                logger.info(f"FileSandbox bypassed for owner user {user_id}")
+            elif self.file_sandbox and self.user_session_manager and not self._is_owner(user_id):
                 try:
                     # Check if request contains file operations
                     message_content = request_data.get('message', '')
@@ -723,6 +727,14 @@ class MiddlewareManager:
                 allowed=False,
                 reason=f"Session isolation error: {str(e)}"
             )
+
+    def _is_owner(self, user_id: str) -> bool:
+        """Check if user_id is the system owner via RBAC config (single source of truth)."""
+        if hasattr(self, 'rbac_manager') and self.rbac_manager:
+            return self.rbac_manager.config.is_owner(user_id)
+        # Fallback: check RBACConfig defaults if no manager is initialized yet
+        from gateway.security.rbac_config import RBACConfig
+        return RBACConfig().is_owner(user_id)
 
     def _extract_file_paths(self, message: str) -> list[str]:
         """Extract potential file paths from message content."""

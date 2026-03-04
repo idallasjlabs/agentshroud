@@ -28,7 +28,7 @@ import hmac
 from typing import Annotated, Optional
 
 from fastapi import Depends, FastAPI, HTTPException, Query, Request, WebSocket, status
-from pydantic import BaseModel
+from pydantic import BaseModel, Field
 from fastapi.responses import JSONResponse, HTMLResponse
 from starlette.responses import RedirectResponse
 from pathlib import Path
@@ -59,6 +59,7 @@ from ..security.encoding_detector import EncodingDetector
 from ..security.prompt_guard import PromptGuard
 from ..security.trust_manager import TrustManager, TrustLevel
 from ..security.egress_filter import EgressFilter
+from ..security.egress_approval import EgressApprovalQueue, ApprovalMode
 from ..security.outbound_filter import OutboundInfoFilter
 from .middleware import MiddlewareManager
 from .event_bus import EventBus, make_event
@@ -136,6 +137,8 @@ class AppState:
     start_time: float
     event_bus: EventBus
     http_proxy: Optional[HTTPConnectProxy]
+    observatory_mode: dict
+    auto_revert_task: Optional[object]
 
 
 app_state = AppState()
@@ -225,7 +228,7 @@ async def lifespan(app: FastAPI):
     # Initialize approval queue
     try:
         from ..approval_queue.store import ApprovalStore
-        store = ApprovalStore("/tmp/agentshroud_approvals.db")  # TODO: Use config path
+        store = ApprovalStore(app_state.config.approval_queue.db_path)
         app_state.approval_queue = EnhancedApprovalQueue(
             app_state.config.approval_queue, 
             app_state.config.tool_risk,
@@ -352,10 +355,12 @@ async def lifespan(app: FastAPI):
     try:
         base_workspace = Path("/tmp/agentshroud/workspace")
         base_workspace.mkdir(parents=True, exist_ok=True)
-        owner_user_id = "8096968754"
+        # Owner ID from RBAC config (single source of truth — no hardcoded IDs)
+        from gateway.security.rbac_config import RBACConfig
+        rbac_defaults = RBACConfig()
         app_state.session_manager = UserSessionManager(
             base_workspace=base_workspace,
-            owner_user_id=owner_user_id
+            owner_user_id=rbac_defaults.owner_user_id
         )
         logger.info("UserSessionManager initialized")
     except Exception as e:
@@ -555,6 +560,15 @@ async def lifespan(app: FastAPI):
     # Initialize event bus
     app_state.event_bus = EventBus()
     logger.info("Event bus initialized")
+    # Initialize observatory mode state
+    app_state.observatory_mode = {
+        "global_mode": os.getenv("AGENTSHROUD_MODE", "enforce"),
+        "effective_since": datetime.now(tz=timezone.utc).isoformat(),
+        "auto_revert_at": None,
+        "pinned_modules": [],
+    }
+    app_state.auto_revert_task = None
+    logger.info(f"Observatory mode initialized: global_mode={app_state.observatory_mode['global_mode']}")
 
     # Initialize HTTP CONNECT proxy (port 8181)
     # Activated in the FINAL PR by setting HTTP_PROXY on the bot container.
@@ -2074,6 +2088,106 @@ async def ssh_history(
     )
 
 
+import asyncio
+from datetime import datetime, timezone, timedelta
+
+class ObservatoryModeRequest(BaseModel):
+    """Request body for POST /manage/mode"""
+    mode: str = Field(..., pattern="^(monitor|enforce)$")
+    auto_revert_hours: Optional[int] = Field(None, ge=1, le=168)  # 1 hour to 1 week
+    pin_modules: Optional[list[str]] = Field(default_factory=list)
+
+@app.get("/manage/mode")
+async def get_observatory_mode(auth: AuthRequired):
+    """Get current observatory mode status and settings."""
+    mode_info = app_state.observatory_mode.copy()
+    
+    # Add effective module modes
+    module_modes = {}
+    core_modules = ["pii_sanitizer", "prompt_guard", "egress_filter", "mcp_proxy"]
+    
+    for module in core_modules:
+        if module in mode_info.get("pinned_modules", []):
+            module_modes[module] = "enforce"
+        else:
+            module_modes[module] = mode_info["global_mode"]
+    
+    mode_info["module_modes"] = module_modes
+    return mode_info
+
+@app.post("/manage/mode")  
+async def set_observatory_mode(request: ObservatoryModeRequest, auth: AuthRequired):
+    """Set observatory mode with optional auto-revert and module pinning."""
+    current_mode = app_state.observatory_mode["global_mode"]
+    
+    # Update mode state
+    app_state.observatory_mode["global_mode"] = request.mode
+    app_state.observatory_mode["effective_since"] = datetime.now(tz=timezone.utc).isoformat()
+    app_state.observatory_mode["pinned_modules"] = request.pin_modules or []
+    
+    # Set auto-revert if requested
+    if request.auto_revert_hours and request.mode == "monitor":
+        revert_time = datetime.now(tz=timezone.utc) + timedelta(hours=request.auto_revert_hours)
+        app_state.observatory_mode["auto_revert_at"] = revert_time.isoformat()
+        
+        # Cancel existing auto-revert task if any
+        if app_state.auto_revert_task:
+            app_state.auto_revert_task.cancel()
+        
+        # Schedule new auto-revert task
+        async def auto_revert():
+            await asyncio.sleep(request.auto_revert_hours * 3600)
+            if app_state.observatory_mode["global_mode"] == "monitor":
+                app_state.observatory_mode["global_mode"] = "enforce"
+                app_state.observatory_mode["effective_since"] = datetime.now(tz=timezone.utc).isoformat()
+                app_state.observatory_mode["auto_revert_at"] = None
+                logger.warning("Observatory mode auto-reverted from monitor to enforce")
+                
+                # Update SecurityPipeline if available
+                if app_state.pipeline and hasattr(app_state.pipeline, "set_global_mode"):
+                    app_state.pipeline.set_global_mode("enforce")
+        
+        app_state.auto_revert_task = asyncio.create_task(auto_revert())
+    else:
+        app_state.observatory_mode["auto_revert_at"] = None
+        if app_state.auto_revert_task:
+            app_state.auto_revert_task.cancel()
+            app_state.auto_revert_task = None
+    
+    # Update SecurityPipeline if available
+    if app_state.pipeline and hasattr(app_state.pipeline, "set_global_mode"):
+        app_state.pipeline.set_global_mode(request.mode)
+    
+    # Update environment variable to propagate to get_module_mode()
+    os.environ["AGENTSHROUD_MODE"] = request.mode
+    
+    logger.info(f"Observatory mode changed from {current_mode} to {request.mode} by admin")
+    
+    await app_state.event_bus.emit(
+        make_event(
+            "observatory_mode_changed",
+            f"Mode changed from {current_mode} to {request.mode}",
+            {
+                "old_mode": current_mode,
+                "new_mode": request.mode,
+                "auto_revert_hours": request.auto_revert_hours,
+                "pinned_modules": request.pin_modules,
+            },
+            "warning" if request.mode == "monitor" else "info",
+        )
+    )
+    
+    return {
+        "success": True,
+        "old_mode": current_mode,
+        "new_mode": request.mode,
+        "effective_since": app_state.observatory_mode["effective_since"],
+        "auto_revert_at": app_state.observatory_mode["auto_revert_at"],
+        "pinned_modules": request.pin_modules or [],
+    }
+
+
+
 @app.get("/manage/modules")
 async def list_security_modules(auth: AuthRequired):
     """List all security modules and their status."""
@@ -2222,6 +2336,106 @@ async def security_health_report(auth: AuthRequired):
 
     return report
 
+# Egress Approval API Endpoints
+@app.get("/manage/egress/rules")
+async def get_egress_rules(auth: AuthRequired):
+    """Get all egress rules (permanent + session)."""
+    if not hasattr(app_state, 'egress_approval_queue'):
+        app_state.egress_approval_queue = EgressApprovalQueue()
+    
+    return await app_state.egress_approval_queue.get_all_rules()
+
+
+@app.post("/manage/egress/rules")
+async def add_egress_rule(request: dict, auth: AuthRequired):
+    """Add/modify an egress rule."""
+    if not hasattr(app_state, 'egress_approval_queue'):
+        app_state.egress_approval_queue = EgressApprovalQueue()
+    
+    domain = request.get("domain")
+    action = request.get("action")
+    mode = request.get("mode", "session")
+    
+    if not domain or action not in ("allow", "deny"):
+        raise HTTPException(status_code=400, detail="Invalid domain or action")
+    
+    if mode not in ("permanent", "session"):
+        raise HTTPException(status_code=400, detail="Invalid mode")
+    
+    approval_mode = ApprovalMode.PERMANENT if mode == "permanent" else ApprovalMode.SESSION
+    success = await app_state.egress_approval_queue.add_rule(domain, action, approval_mode)
+    
+    if not success:
+        raise HTTPException(status_code=500, detail="Failed to add rule")
+    
+    return {"status": "success", "domain": domain, "action": action, "mode": mode}
+
+
+@app.delete("/manage/egress/rules/{domain}")
+async def remove_egress_rule(domain: str, auth: AuthRequired):
+    """Remove an egress rule."""
+    if not hasattr(app_state, 'egress_approval_queue'):
+        app_state.egress_approval_queue = EgressApprovalQueue()
+    
+    success = await app_state.egress_approval_queue.remove_rule(domain)
+    
+    if not success:
+        raise HTTPException(status_code=404, detail="Rule not found")
+    
+    return {"status": "success", "domain": domain}
+
+
+@app.get("/manage/egress/pending")
+async def get_pending_egress_requests(auth: AuthRequired):
+    """Get all pending egress approval requests."""
+    if not hasattr(app_state, 'egress_approval_queue'):
+        app_state.egress_approval_queue = EgressApprovalQueue()
+    
+    return await app_state.egress_approval_queue.get_pending_requests()
+
+
+@app.post("/manage/egress/approve/{request_id}")
+async def approve_egress_request(request_id: str, request: dict, auth: AuthRequired):
+    """Approve a pending egress request."""
+    if not hasattr(app_state, 'egress_approval_queue'):
+        app_state.egress_approval_queue = EgressApprovalQueue()
+    
+    mode = request.get("mode", "once")
+    if mode not in ("permanent", "session", "once"):
+        raise HTTPException(status_code=400, detail="Invalid mode")
+    
+    approval_mode = {
+        "permanent": ApprovalMode.PERMANENT,
+        "session": ApprovalMode.SESSION,
+        "once": ApprovalMode.ONCE
+    }[mode]
+    
+    success = await app_state.egress_approval_queue.approve(request_id, approval_mode)
+    
+    if not success:
+        raise HTTPException(status_code=404, detail="Request not found")
+    
+    return {"status": "approved", "request_id": request_id, "mode": mode}
+
+
+@app.post("/manage/egress/deny/{request_id}")
+async def deny_egress_request(request_id: str, request: dict, auth: AuthRequired):
+    """Deny a pending egress request."""
+    if not hasattr(app_state, 'egress_approval_queue'):
+        app_state.egress_approval_queue = EgressApprovalQueue()
+    
+    mode = request.get("mode", "once")
+    if mode not in ("permanent", "once"):
+        raise HTTPException(status_code=400, detail="Invalid mode for denial")
+    
+    approval_mode = ApprovalMode.PERMANENT if mode == "permanent" else ApprovalMode.ONCE
+    
+    success = await app_state.egress_approval_queue.deny(request_id, approval_mode)
+    
+    if not success:
+        raise HTTPException(status_code=404, detail="Request not found")
+    
+    return {"status": "denied", "request_id": request_id, "mode": mode}
 
 @app.get('/manage/container-security')
 async def container_security_profile(auth: AuthRequired):
