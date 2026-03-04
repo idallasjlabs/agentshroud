@@ -364,7 +364,9 @@ class TestEgressApprovalAPI:
         
         # Mock app_state
         with patch('gateway.ingest_api.main.app_state', mock_app_state):
-            async with httpx.AsyncClient(app=app, base_url="http://test") as client:
+            from httpx import ASGITransport
+            transport = ASGITransport(app=app)
+            async with httpx.AsyncClient(transport=transport, base_url="http://test") as client:
                 # This would fail due to auth, but we can test the logic
                 try:
                     response = await client.get("/manage/egress/rules")
