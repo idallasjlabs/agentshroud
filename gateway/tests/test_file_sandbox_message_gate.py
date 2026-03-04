@@ -50,9 +50,15 @@ def session_manager(temp_workspace):
 
 @pytest.fixture
 def manager(session_manager):
-    """MiddlewareManager with real session_manager, all other deps mocked."""
+    """MiddlewareManager with real session_manager, all other deps mocked.
+
+    Uses __new__ to avoid running the real __init__ (which touches sockets,
+    filesystems, etc.).  Each attribute must be set explicitly — add any new
+    middleware attributes added to process_request here.
+    """
     mm = MiddlewareManager.__new__(MiddlewareManager)
     mm.user_session_manager = session_manager
+    # Guards used in process_request — all None/mock so they don't interfere
     mm.context_guard = None
     mm.metadata_guard = None
     mm.env_guard = None
@@ -62,6 +68,11 @@ def manager(session_manager):
     mm.log_sanitizer = None
     mm.memory_integrity_monitor = None
     mm.original_request_data = None
+    # Batch B — new wired modules (set None to skip their logic in these tests)
+    mm.multi_turn_tracker = None
+    mm.tool_chain_analyzer = None
+    mm.browser_security = None
+    mm.path_isolation = None
     return mm
 
 
