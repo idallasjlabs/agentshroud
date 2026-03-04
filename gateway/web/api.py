@@ -13,6 +13,7 @@ Requires gateway authentication.
 
 import asyncio
 import logging
+import os
 import platform
 import time
 from datetime import datetime, timezone
@@ -100,6 +101,79 @@ class ConfigUpdate(BaseModel):
 class UpdateRequest(BaseModel):
     version: Optional[str] = None  # None = latest
     skip_tests: bool = False  # NOT recommended; safety gate
+
+
+class ModeRequest(BaseModel):
+    mode: str  # "enforce" | "monitor" | "observatory"
+    revert_after_minutes: int = 30  # auto-revert to "enforce" after this delay
+
+
+# --- Observatory Mode -------------------------------------------------------
+
+VALID_AGENTSHROUD_MODES = frozenset({"enforce", "monitor", "observatory"})
+
+# Tracks any pending auto-revert asyncio task so we can cancel it on re-call
+_revert_task: Optional[asyncio.Task] = None
+
+
+@router.get("/mode")
+async def get_mode(user: str = Depends(require_auth)) -> dict:
+    """Return the current AGENTSHROUD_MODE."""
+    current = os.environ.get("AGENTSHROUD_MODE", "enforce")
+    return {
+        "mode": current,
+        "timestamp": datetime.now(timezone.utc).isoformat(),
+    }
+
+
+@router.put("/mode")
+async def set_mode(req: ModeRequest, user: str = Depends(require_auth)) -> dict:
+    """Set AGENTSHROUD_MODE at runtime with automatic revert to 'enforce'."""
+    global _revert_task
+
+    if req.mode not in VALID_AGENTSHROUD_MODES:
+        raise HTTPException(
+            status_code=400,
+            detail=f"mode must be one of: {sorted(VALID_AGENTSHROUD_MODES)}",
+        )
+
+    revert_minutes = max(1, min(req.revert_after_minutes, 480))  # 1 min – 8 hrs
+
+    previous = os.environ.get("AGENTSHROUD_MODE", "enforce")
+    os.environ["AGENTSHROUD_MODE"] = req.mode
+
+    if req.mode != "enforce":
+        logger.critical(
+            "AGENTSHROUD_MODE changed from '%s' → '%s' — auto-revert in %d min",
+            previous,
+            req.mode,
+            revert_minutes,
+        )
+    else:
+        logger.info("AGENTSHROUD_MODE set to 'enforce'")
+
+    # Cancel any existing revert task before scheduling a new one
+    if _revert_task and not _revert_task.done():
+        _revert_task.cancel()
+
+    async def _auto_revert():
+        await asyncio.sleep(revert_minutes * 60)
+        if os.environ.get("AGENTSHROUD_MODE") != "enforce":
+            logger.critical(
+                "AGENTSHROUD_MODE auto-reverted '%s' → 'enforce' after %d min",
+                os.environ.get("AGENTSHROUD_MODE"),
+                revert_minutes,
+            )
+            os.environ["AGENTSHROUD_MODE"] = "enforce"
+
+    _revert_task = asyncio.create_task(_auto_revert())
+
+    return {
+        "mode": req.mode,
+        "previous_mode": previous,
+        "auto_revert_in_minutes": revert_minutes,
+        "timestamp": datetime.now(timezone.utc).isoformat(),
+    }
 
 
 # --- Status -----------------------------------------------------------------
