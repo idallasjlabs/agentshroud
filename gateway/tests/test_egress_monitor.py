@@ -22,13 +22,19 @@ def default_config():
 
 
 @pytest.fixture
-def monitor(default_config):
-    return EgressMonitor(config=default_config)
+def monitor_config():
+    return EgressMonitorConfig(mode="monitor")
+
+
+@pytest.fixture
+def monitor(monitor_config):
+    return EgressMonitor(config=monitor_config)
 
 
 class TestEgressMonitorConfig:
-    def test_default_mode_is_monitor(self, default_config):
-        assert default_config.mode == "monitor"
+    def test_default_mode_is_enforce(self, default_config):
+        """Default mode is enforce after v0.8.0 enforcement hardening."""
+        assert default_config.mode == "enforce"
 
     def test_generous_baselines(self, default_config):
         assert default_config.http_requests_per_hour >= 200

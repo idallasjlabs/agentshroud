@@ -29,8 +29,13 @@ def strict_config():
 
 
 @pytest.fixture
-def monitor(default_config):
-    return SubagentMonitor(config=default_config)
+def monitor_config():
+    return SubagentMonitorConfig(mode="monitor")
+
+
+@pytest.fixture
+def monitor(monitor_config):
+    return SubagentMonitor(config=monitor_config)
 
 
 @pytest.fixture
@@ -39,8 +44,9 @@ def strict_monitor(strict_config):
 
 
 class TestSubagentMonitorConfig:
-    def test_default_mode_is_monitor(self, default_config):
-        assert default_config.mode == "monitor"
+    def test_default_mode_is_enforce(self, default_config):
+        """Default mode is enforce after v0.8.0 enforcement hardening."""
+        assert default_config.mode == "enforce"
 
     def test_generous_concurrent_default(self, default_config):
         assert default_config.max_concurrent_per_session >= 10

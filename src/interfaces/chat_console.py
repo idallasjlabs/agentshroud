@@ -4,7 +4,7 @@ AgentShroud Text Chat Console - Chat with OpenClaw as Admin
 
 Usage:
     python3 src/interfaces/chat_console.py
-    ./scripts/api
+    ./scripts/chat-console
 """
 import sys
 import json
