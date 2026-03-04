@@ -12,6 +12,7 @@ Loads configuration from agentshroud.yaml and provides typed access via Pydantic
 
 
 import logging
+import os
 import secrets
 from pathlib import Path
 from typing import Optional
