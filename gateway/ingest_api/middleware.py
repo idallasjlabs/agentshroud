@@ -409,6 +409,49 @@ class MiddlewareManager:
                             self.memory_integrity_monitor.register_expected_write(path_match.group(1))
                             logger.debug(f'Registered expected write for {path_match.group(1)}')
 
+            # 0.8. Multi-Turn Tracker — cumulative cross-turn disclosure risk
+            if self.multi_turn_tracker:
+                try:
+                    message_content_mt = request_data.get('message', '')
+                    if isinstance(message_content_mt, dict):
+                        message_content_mt = str(message_content_mt)
+                    mt_session_id = session_id or user_id or 'unknown'
+                    mt_ctx = self.multi_turn_tracker.track_message(mt_session_id, message_content_mt)
+                    if mt_ctx.blocked:
+                        logger.warning(
+                            f"MultiTurnTracker blocked session {mt_session_id}: "
+                            f"score={mt_ctx.total_score:.2f}, events={len(mt_ctx.events)}"
+                        )
+                        return MiddlewareResult(
+                            allowed=False,
+                            reason=f"Multi-turn disclosure risk exceeded threshold (score={mt_ctx.total_score:.2f})",
+                        )
+                except Exception as e:
+                    logger.error(f"MultiTurnTracker error: {e}")
+                    return MiddlewareResult(allowed=False, reason=f"MultiTurnTracker error: {str(e)}")
+
+            # 0.9. Tool Chain Analyzer — block suspicious tool call sequences (tool calls only)
+            if self.tool_chain_analyzer and self._is_tool_call_request(request_data):
+                try:
+                    tc_session_id = session_id or user_id or 'unknown'
+                    for tc in request_data.get('tool_calls', []):
+                        tool_name = tc.get('name', 'unknown')
+                        tool_params = tc.get('input', {})
+                        call_id = tc.get('id', '')
+                        allow, chain_match = self.tool_chain_analyzer.analyze_tool_call(
+                            tc_session_id, tool_name, tool_params, call_id
+                        )
+                        if not allow:
+                            reason = (
+                                f"Suspicious tool chain detected: {chain_match.chain_name}"
+                                if chain_match else "Suspicious tool chain detected"
+                            )
+                            logger.warning(f"ToolChainAnalyzer blocked {tool_name} for user {user_id}: {reason}")
+                            return MiddlewareResult(allowed=False, reason=reason)
+                except Exception as e:
+                    logger.error(f"ToolChainAnalyzer error: {e}")
+                    return MiddlewareResult(allowed=False, reason=f"ToolChainAnalyzer error: {str(e)}")
+
             # 1. Context Guard - Check for prompt injection and manipulation
             if self.context_guard:
                 try:
@@ -465,6 +508,27 @@ class MiddlewareManager:
                 except Exception as e:
                     logger.error(f"EnvGuard processing error: {e}")
                     return MiddlewareResult(allowed=False, reason=f"EnvGuard error: {str(e)}")
+
+            # 3.5. Browser Security Guard — social engineering detection
+            if self.browser_security:
+                try:
+                    bs_message = request_data.get('message', '')
+                    if isinstance(bs_message, dict):
+                        bs_message = str(bs_message)
+                    assessment = self.browser_security.analyze_content(bs_message)
+                    # ThreatLevel enum: NONE=0, LOW=1, MEDIUM=2, HIGH=3, CRITICAL=4
+                    if assessment.threat_level.value >= 3:  # HIGH or CRITICAL
+                        logger.warning(
+                            f"BrowserSecurityGuard: {assessment.threat_level.name} threat for user {user_id}: "
+                            f"{assessment.threats}"
+                        )
+                        return MiddlewareResult(
+                            allowed=False,
+                            reason=f"Browser security threat detected: {', '.join(assessment.threats)}",
+                        )
+                except Exception as e:
+                    logger.error(f"BrowserSecurityGuard error: {e}")
+                    return MiddlewareResult(allowed=False, reason=f"BrowserSecurityGuard error: {str(e)}")
 
             # 4. Git Guard - Scan message content for malicious git/supply-chain patterns
             if self.git_guard:
@@ -528,6 +592,27 @@ class MiddlewareManager:
                 except Exception as e:
                     logger.error(f"FileSandbox processing error: {e}")
                     return MiddlewareResult(allowed=False, reason=f"FileSandbox error: {str(e)}")
+
+            # 5.5. Path Isolation Manager — enforce per-user path isolation for tool calls
+            if self.path_isolation and self._is_tool_call_request(request_data):
+                try:
+                    for tc in request_data.get('tool_calls', []):
+                        tc_input = tc.get('input', {})
+                        for v in tc_input.values():
+                            if isinstance(v, str) and ('/' in v or '\\' in v):
+                                rewrite = self.path_isolation.rewrite_path(v, user_id)
+                                if rewrite.blocked:
+                                    logger.warning(
+                                        f"PathIsolationManager blocked path {v} for user {user_id}: "
+                                        f"{rewrite.reason}"
+                                    )
+                                    return MiddlewareResult(
+                                        allowed=False,
+                                        reason=f"Path isolation violation: {rewrite.reason}",
+                                    )
+                except Exception as e:
+                    logger.error(f"PathIsolationManager error: {e}")
+                    return MiddlewareResult(allowed=False, reason=f"PathIsolationManager error: {str(e)}")
 
             # 6. Session Send Security - Check for cross-session messaging attempts
             cross_session_result = self._check_cross_session_access(request_data, user_id)
