@@ -177,6 +177,8 @@ class SecurityPipeline:
         canary_tripwire=None,
         encoding_detector=None,
         context_guard=None,
+        output_canary=None,
+        enhanced_tool_sanitizer=None,
         prompt_block_threshold: float = 0.8,
         approval_actions: list[str] | None = None,
     ):
@@ -189,6 +191,8 @@ class SecurityPipeline:
         self.canary_tripwire = canary_tripwire
         self.encoding_detector = encoding_detector
         self.context_guard = context_guard
+        self.output_canary = output_canary
+        self.enhanced_tool_sanitizer = enhanced_tool_sanitizer
         self.prompt_block_threshold = prompt_block_threshold
         self.approval_actions = approval_actions or [
             "execute_command",
@@ -472,6 +476,50 @@ class SecurityPipeline:
                 )
                 
                 return result
+
+        # Step 1.75: Enhanced tool result sanitizer — strip exfil patterns from outbound content
+        if self.enhanced_tool_sanitizer:
+            try:
+                sanitized = self.enhanced_tool_sanitizer.sanitize(result.sanitized_message)
+                if sanitized != result.sanitized_message:
+                    logger.info(
+                        "EnhancedToolResultSanitizer: content modified (exfil/leak patterns stripped)"
+                    )
+                    result.sanitized_message = sanitized
+            except Exception as exc:
+                logger.error("EnhancedToolResultSanitizer error: %s", exc)
+                # Non-fatal — continue pipeline but log
+
+        # Step 1.8: OutputCanary — check for leaked canary tokens in responses
+        if self.output_canary:
+            try:
+                canary_result = self.output_canary.check_response(agent_id, result.sanitized_message)
+                if canary_result.canary_detected:
+                    logger.critical(
+                        "OutputCanary: canary token detected in response from %s — "
+                        "method=%s risk=%s incident=%s",
+                        source, canary_result.detection_method,
+                        canary_result.risk_level, canary_result.incident_id,
+                    )
+                    # High risk detections block; medium/low are logged only
+                    if canary_result.risk_level in ("high", "critical"):
+                        result.action = PipelineAction.BLOCK
+                        result.blocked = True
+                        result.block_reason = (
+                            f"OutputCanary: leaked canary token (risk={canary_result.risk_level})"
+                        )
+                        self._stats["canary_blocked"] += 1
+                        entry = self.audit_chain.append(
+                            f"CANARY_DETECTED: {canary_result.incident_id}",
+                            "outbound_canary_leak",
+                            metadata,
+                        )
+                        result.audit_entry_id = entry.id
+                        result.audit_hash = entry.chain_hash
+                        result.processing_time_ms = (time.time() - start) * 1000
+                        return result
+            except Exception as exc:
+                logger.error("OutputCanary error: %s", exc)
 
         # Step 2: Egress filter
         if self.egress_filter and destination_urls:
