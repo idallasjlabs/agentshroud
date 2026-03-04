@@ -466,37 +466,65 @@ class MiddlewareManager:
                     logger.error(f"EnvGuard processing error: {e}")
                     return MiddlewareResult(allowed=False, reason=f"EnvGuard error: {str(e)}")
 
-            # 4. Git Guard - Check for git-related security issues
+            # 4. Git Guard - Scan message content for malicious git/supply-chain patterns
             if self.git_guard:
                 try:
-                    # Git guard is repository-based, so we'll do a basic check
-                    # In a real implementation, this would need more context
-                    logger.debug("Git security check passed (basic validation)")
+                    message_content = request_data.get('message', '')
+                    if isinstance(message_content, dict):
+                        message_content = str(message_content)
+                    findings = self.git_guard.scan_content(message_content)
+                    for finding in findings:
+                        if finding.threat_level.value in ('critical', 'high'):
+                            logger.warning(
+                                f"GitGuard blocked {finding.threat_level.value} finding "
+                                f"for user {user_id}: {finding.description}"
+                            )
+                            return MiddlewareResult(
+                                allowed=False,
+                                reason=f"GitGuard: {finding.description}",
+                            )
                 except Exception as e:
                     logger.error(f"GitGuard processing error: {e}")
-            
-            # 5. File Sandbox - Validate file operations (now session-aware)
-            if self.file_sandbox and self.user_session_manager:
+                    return MiddlewareResult(allowed=False, reason=f"GitGuard error: {str(e)}")
+
+            # 5. File Sandbox - Validate file operations (now session-aware).
+            # ONLY runs for actual tool calls — plain chat messages that mention
+            # file-like words (e.g. "check config.yaml") must NOT be blocked.
+            if self.file_sandbox and self.user_session_manager and self._is_tool_call_request(request_data):
                 try:
                     # Check if request contains file operations
                     message_content = request_data.get('message', '')
                     if isinstance(message_content, dict):
                         message_content = str(message_content)
-                    
+
                     # Extract file paths from message
                     file_paths = self._extract_file_paths(message_content)
-                    
+
+                    # Also extract paths from tool_calls inputs
+                    for tc in request_data.get('tool_calls', []):
+                        tc_input = tc.get('input', {})
+                        for v in tc_input.values():
+                            if isinstance(v, str) and ('/' in v or '\\' in v):
+                                file_paths.append(v)
+
                     # Check if user is trying to access files outside their workspace
                     user_workspace = self.user_session_manager.get_user_workspace_path(user_id)
-                    
+
                     for file_path in file_paths:
                         if not self._is_path_allowed_for_user(file_path, user_workspace, user_id):
-                            logger.warning(f"User {user_id} attempted to access unauthorized path: {file_path}")
-                            return MiddlewareResult(
-                                allowed=False,
-                                reason=f"Unauthorized file access: {file_path} - cannot access other users' data"
-                            )
-                            
+                            if user_id == self.user_session_manager.owner_user_id:
+                                logger.info(
+                                    f"Owner {user_id} accessed path outside workspace (audited): {file_path}"
+                                )
+                            else:
+                                logger.warning(
+                                    f"User {user_id} attempted to access unauthorized path: {file_path}"
+                                )
+                                return MiddlewareResult(
+                                    allowed=False,
+                                    reason=f"Unauthorized file access: {file_path} - cannot access other users' data",
+                                )
+
                 except Exception as e:
                     logger.error(f"FileSandbox processing error: {e}")
                     return MiddlewareResult(allowed=False, reason=f"FileSandbox error: {str(e)}")
@@ -863,6 +891,23 @@ class MiddlewareManager:
         
         return MiddlewareResult(allowed=True)
     
+    def _is_tool_call_request(self, request_data: Dict[str, Any]) -> bool:
+        """Return True only when the request contains actual tool calls or tool results.
+
+        Plain chat messages that happen to mention file-like words (e.g. "check
+        config.yaml") must NOT trigger file-path extraction and sandbox checks.
+        Only requests that carry tool_calls / tool_results keys with non-empty
+        lists, or whose ``type`` field is ``"tool_call"``, are considered tool
+        operations.
+        """
+        if request_data.get('type') == 'tool_call':
+            return True
+        if request_data.get('tool_calls'):   # non-empty list
+            return True
+        if request_data.get('tool_results'):  # non-empty list
+            return True
+        return False
+
     def scan_tool_result(self, tool_name: str, result_content: str) -> Optional[str]:
         """
         Scan tool result for injection attempts and return sanitized content.

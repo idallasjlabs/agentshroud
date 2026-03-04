@@ -176,6 +176,7 @@ class SecurityPipeline:
         outbound_filter=None,
         canary_tripwire=None,
         encoding_detector=None,
+        context_guard=None,
         prompt_block_threshold: float = 0.8,
         approval_actions: list[str] | None = None,
     ):
@@ -187,6 +188,7 @@ class SecurityPipeline:
         self.outbound_filter = outbound_filter
         self.canary_tripwire = canary_tripwire
         self.encoding_detector = encoding_detector
+        self.context_guard = context_guard
         self.prompt_block_threshold = prompt_block_threshold
         self.approval_actions = approval_actions or [
             "execute_command",
@@ -226,7 +228,7 @@ class SecurityPipeline:
         # Warn loudly about recommended guards that are absent.
         # These don't block startup but produce CRITICAL logs so operators
         # notice the degraded security posture immediately.
-        _RECOMMENDED_GUARDS = ("prompt_guard", "egress_filter", "outbound_filter", "canary_tripwire", "encoding_detector")
+        _RECOMMENDED_GUARDS = ("context_guard", "prompt_guard", "egress_filter", "outbound_filter", "canary_tripwire", "encoding_detector")
         for guard_name in _RECOMMENDED_GUARDS:
             if getattr(self, guard_name) is None:
                 logger.critical(
@@ -253,6 +255,36 @@ class SecurityPipeline:
             direction="inbound",
             timestamp=start,
         )
+
+        # Step 0: ContextGuard — cross-turn injection and repetition detection.
+        # Runs before PromptGuard to catch session-level attacks.  Repetition
+        # attacks are logged but not blocked (they fire on legitimate structured
+        # output).  Only critical/high instruction-injection findings block.
+        if self.context_guard:
+            try:
+                attacks = self.context_guard.analyze_message(agent_id, message)
+                for attack in attacks:
+                    if attack.attack_type == "repetition_attack":
+                        logger.info("ContextGuard: repetition noted (not blocking): %s", attack.description)
+                        continue
+                    if attack.severity in ("critical", "high"):
+                        result.action = PipelineAction.BLOCK
+                        result.blocked = True
+                        result.block_reason = f"ContextGuard: {attack.attack_type} — {attack.description}"
+                        self._stats["inbound_blocked"] += 1
+                        entry = self.audit_chain.append(message, "inbound_context_blocked", metadata)
+                        result.audit_entry_id = entry.id
+                        result.audit_hash = entry.chain_hash
+                        result.processing_time_ms = (time.time() - start) * 1000
+                        return result
+            except Exception as exc:
+                logger.error("ContextGuard error in pipeline: %s", exc)
+                # Fail closed — block on error to maintain security posture
+                result.action = PipelineAction.BLOCK
+                result.blocked = True
+                result.block_reason = f"ContextGuard error: {exc}"
+                result.processing_time_ms = (time.time() - start) * 1000
+                return result
 
         # Step 1: Prompt injection scan
         if self.prompt_guard:
