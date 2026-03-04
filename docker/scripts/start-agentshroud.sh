@@ -146,10 +146,10 @@ echo "[startup] Starting AgentShroud gateway..."
 openclaw gateway --allow-unconfigured --bind lan &
 OPENCLAW_PID=$!
 
-# Telegram notification helpers — sends via THIS instance's bot token
-# Falls back to production bot if local token unavailable
-_PRODUCTION_BOT_TOKEN="8481143014:AAE58Z7N7fh4DuoGQdekp7botxDBJbAGb54"
+# Telegram notification helpers — ALL traffic routes through AgentShroud gateway
+# No direct api.telegram.org calls. No hardcoded bot tokens.
 _OWNER_CHAT_ID="8096968754"
+_GATEWAY_TELEGRAM_BASE="${GATEWAY_OP_PROXY_URL:-http://gateway:8080}/telegram-api"
 
 _telegram_bot_token() {
     node -e "
@@ -166,16 +166,14 @@ _telegram_send() {
     local text="$1"
     local token
     token="$(_telegram_bot_token)"
-    # Try local bot first, fall back to production bot
-    if [ -n "$token" ]; then
-        curl -sf --max-time 5 -X POST "https://api.telegram.org/bot${token}/sendMessage" \
-            -H "Content-Type: application/json" \
-            -d "{\"chat_id\":\"${_OWNER_CHAT_ID}\",\"text\":\"${text}\"}" \
-            >/dev/null 2>&1 && return 0
+    if [ -z "$token" ]; then
+        echo "[startup] ⚠ No Telegram bot token available — cannot send notification" >&2
+        return 1
     fi
-    # Fallback: production bot (always reachable)
-    curl -sf --max-time 5 -X POST "https://api.telegram.org/bot${_PRODUCTION_BOT_TOKEN}/sendMessage" \
+    # Route through AgentShroud gateway Telegram proxy (never direct to api.telegram.org)
+    curl -sf --max-time 10 -X POST "${_GATEWAY_TELEGRAM_BASE}/bot${token}/sendMessage" \
         -H "Content-Type: application/json" \
+        -H "Authorization: Bearer ${GATEWAY_AUTH_TOKEN:-}" \
         -d "{\"chat_id\":\"${_OWNER_CHAT_ID}\",\"text\":\"${text}\"}" \
         >/dev/null 2>&1
 }
@@ -184,9 +182,23 @@ _telegram_send() {
 _INSTANCE_LABEL="${INSTANCE_NAME:-$(hostname -s)}"
 _BOT_NAME="${OPENCLAW_BOT_NAME:-agentshroud_bot}"
 
-# Forward TERM/INT to openclaw and send shutdown notification
+# Forward TERM/INT to openclaw, backup memory, send shutdown notification
 trap '
-    echo "[startup] Shutdown signal received — sending Telegram notification..."
+    echo "[startup] Shutdown signal received — backing up memory..."
+    MEMORY_BACKUP_DIR="/app/memory-backup"
+    WORKSPACE_DIR="/home/node/.openclaw/workspace"
+    if [ -d "${MEMORY_BACKUP_DIR}" ]; then
+        [ -f "${WORKSPACE_DIR}/MEMORY.md" ] && cp "${WORKSPACE_DIR}/MEMORY.md" "${MEMORY_BACKUP_DIR}/MEMORY.md"
+        if [ -d "${WORKSPACE_DIR}/memory" ]; then
+            mkdir -p "${MEMORY_BACKUP_DIR}/memory"
+            cp -r "${WORKSPACE_DIR}/memory/"* "${MEMORY_BACKUP_DIR}/memory/" 2>/dev/null || true
+        fi
+        for f in USER.md TOOLS.md HEARTBEAT.md; do
+            [ -f "${WORKSPACE_DIR}/${f}" ] && cp "${WORKSPACE_DIR}/${f}" "${MEMORY_BACKUP_DIR}/${f}"
+        done
+        echo "[startup] ✓ Memory backed up before shutdown"
+    fi
+    echo "[startup] Sending Telegram notification..."
     _telegram_send "🔴 AgentShroud shutting down — ${_BOT_NAME} on ${_INSTANCE_LABEL}" \
         && echo "[startup] ✓ Sent Telegram shutdown notification" \
         || echo "[startup] ⚠ Could not send Telegram shutdown notification"
