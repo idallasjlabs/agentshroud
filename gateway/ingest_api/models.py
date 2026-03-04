@@ -135,7 +135,7 @@ class LedgerQueryResponse(BaseModel):
 
 
 class StatusResponse(BaseModel):
-    """Health check response"""
+    """Health check response with v0.8.0 security dashboard data"""
 
     status: str = Field(..., description="Service status: healthy, degraded, unhealthy")
     version: str = Field(..., description="Gateway version")
@@ -144,6 +144,9 @@ class StatusResponse(BaseModel):
     pending_approvals: int = Field(..., description="Pending approval requests")
     pii_engine: str = Field(..., description="PII detection engine: presidio or regex")
     config_loaded: bool = Field(..., description="Whether config loaded successfully")
+    observatory_mode: Optional[dict] = Field(None, description="Observatory mode state")
+    security_summary: Optional[dict] = Field(None, description="Security modules summary")
+    egress: Optional[dict] = Field(None, description="Egress firewall stats")
 
 
 class ApprovalQueueItem(BaseModel):
