@@ -6,7 +6,7 @@ import logging
 import re
 import time
 import uuid
-from dataclasses import asdict, dataclass
+from dataclasses import dataclass
 from enum import Enum
 from pathlib import Path
 from typing import Dict, List, Optional, Set
@@ -167,13 +167,16 @@ class EgressApprovalQueue:
         
         try:
             with open(self.rules_file, 'r') as f:
-                data = json.load(f)
+                content = f.read().strip()
+                if not content:  # Empty file
+                    return
+                data = json.loads(content)
             
             for rule_data in data.get("permanent_rules", []):
                 rule = EgressRule(
                     domain=rule_data["domain"],
                     action=rule_data["action"],
-                    mode=ApprovalMode.PERMANENT,
+                    mode=ApprovalMode(rule_data.get("mode", "permanent")),
                     created_at=rule_data["created_at"],
                     expires_at=rule_data.get("expires_at")
                 )
@@ -187,7 +190,14 @@ class EgressApprovalQueue:
         try:
             data = {
                 "permanent_rules": [
-                    asdict(rule) for rule in self._permanent_rules.values()
+                    {
+                        "domain": rule.domain,
+                        "action": rule.action,
+                        "mode": rule.mode.value,
+                        "created_at": rule.created_at,
+                        "expires_at": rule.expires_at
+                    }
+                    for rule in self._permanent_rules.values()
                 ]
             }
             
