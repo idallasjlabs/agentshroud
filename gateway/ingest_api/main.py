@@ -59,6 +59,7 @@ from ..security.encoding_detector import EncodingDetector
 from ..security.prompt_guard import PromptGuard
 from ..security.trust_manager import TrustManager, TrustLevel
 from ..security.egress_filter import EgressFilter
+from ..security.egress_approval import EgressApprovalQueue, ApprovalMode
 from ..security.outbound_filter import OutboundInfoFilter
 from .middleware import MiddlewareManager
 from .event_bus import EventBus, make_event
@@ -2335,6 +2336,106 @@ async def security_health_report(auth: AuthRequired):
 
     return report
 
+# Egress Approval API Endpoints
+@app.get("/manage/egress/rules")
+async def get_egress_rules(auth: AuthRequired):
+    """Get all egress rules (permanent + session)."""
+    if not hasattr(app_state, 'egress_approval_queue'):
+        app_state.egress_approval_queue = EgressApprovalQueue()
+    
+    return await app_state.egress_approval_queue.get_all_rules()
+
+
+@app.post("/manage/egress/rules")
+async def add_egress_rule(request: dict, auth: AuthRequired):
+    """Add/modify an egress rule."""
+    if not hasattr(app_state, 'egress_approval_queue'):
+        app_state.egress_approval_queue = EgressApprovalQueue()
+    
+    domain = request.get("domain")
+    action = request.get("action")
+    mode = request.get("mode", "session")
+    
+    if not domain or action not in ("allow", "deny"):
+        raise HTTPException(status_code=400, detail="Invalid domain or action")
+    
+    if mode not in ("permanent", "session"):
+        raise HTTPException(status_code=400, detail="Invalid mode")
+    
+    approval_mode = ApprovalMode.PERMANENT if mode == "permanent" else ApprovalMode.SESSION
+    success = await app_state.egress_approval_queue.add_rule(domain, action, approval_mode)
+    
+    if not success:
+        raise HTTPException(status_code=500, detail="Failed to add rule")
+    
+    return {"status": "success", "domain": domain, "action": action, "mode": mode}
+
+
+@app.delete("/manage/egress/rules/{domain}")
+async def remove_egress_rule(domain: str, auth: AuthRequired):
+    """Remove an egress rule."""
+    if not hasattr(app_state, 'egress_approval_queue'):
+        app_state.egress_approval_queue = EgressApprovalQueue()
+    
+    success = await app_state.egress_approval_queue.remove_rule(domain)
+    
+    if not success:
+        raise HTTPException(status_code=404, detail="Rule not found")
+    
+    return {"status": "success", "domain": domain}
+
+
+@app.get("/manage/egress/pending")
+async def get_pending_egress_requests(auth: AuthRequired):
+    """Get all pending egress approval requests."""
+    if not hasattr(app_state, 'egress_approval_queue'):
+        app_state.egress_approval_queue = EgressApprovalQueue()
+    
+    return await app_state.egress_approval_queue.get_pending_requests()
+
+
+@app.post("/manage/egress/approve/{request_id}")
+async def approve_egress_request(request_id: str, request: dict, auth: AuthRequired):
+    """Approve a pending egress request."""
+    if not hasattr(app_state, 'egress_approval_queue'):
+        app_state.egress_approval_queue = EgressApprovalQueue()
+    
+    mode = request.get("mode", "once")
+    if mode not in ("permanent", "session", "once"):
+        raise HTTPException(status_code=400, detail="Invalid mode")
+    
+    approval_mode = {
+        "permanent": ApprovalMode.PERMANENT,
+        "session": ApprovalMode.SESSION,
+        "once": ApprovalMode.ONCE
+    }[mode]
+    
+    success = await app_state.egress_approval_queue.approve(request_id, approval_mode)
+    
+    if not success:
+        raise HTTPException(status_code=404, detail="Request not found")
+    
+    return {"status": "approved", "request_id": request_id, "mode": mode}
+
+
+@app.post("/manage/egress/deny/{request_id}")
+async def deny_egress_request(request_id: str, request: dict, auth: AuthRequired):
+    """Deny a pending egress request."""
+    if not hasattr(app_state, 'egress_approval_queue'):
+        app_state.egress_approval_queue = EgressApprovalQueue()
+    
+    mode = request.get("mode", "once")
+    if mode not in ("permanent", "once"):
+        raise HTTPException(status_code=400, detail="Invalid mode for denial")
+    
+    approval_mode = ApprovalMode.PERMANENT if mode == "permanent" else ApprovalMode.ONCE
+    
+    success = await app_state.egress_approval_queue.deny(request_id, approval_mode)
+    
+    if not success:
+        raise HTTPException(status_code=404, detail="Request not found")
+    
+    return {"status": "denied", "request_id": request_id, "mode": mode}
 
 @app.get('/manage/container-security')
 async def container_security_profile(auth: AuthRequired):
