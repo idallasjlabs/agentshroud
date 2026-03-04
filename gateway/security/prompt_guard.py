@@ -292,6 +292,234 @@ _PATTERNS: list[PatternRule] = [
         weight=0.8,
         description="Encoding/token smuggling instruction",
     ),
+
+    # ── v0.8.0 additions: 20 new patterns (43 total) ──────────────────────
+    # LLaMA / Alpaca / ChatML special-token injection
+    PatternRule(
+        "llama_special_tokens",
+        re.compile(
+            r"(?:<<SYS>>|<</SYS>>|<s>|</s>|\[INST\]|\[/INST\]|<\|begin_of_text\|>|"
+            r"<\|start_header_id\|>|<\|end_header_id\|>|<\|eot_id\|>|"
+            r"### Instruction:|### Response:|### System:)",
+            re.IGNORECASE,
+        ),
+        weight=0.9,
+        description="LLaMA/Alpaca/ChatML special token injection",
+    ),
+    # Payload splitting — fragment injection across multiple lines
+    PatternRule(
+        "payload_splitting",
+        re.compile(
+            r"(?i)(?:split\s+(?:this\s+)?(?:message|instruction|command)\s+(?:into|across)|"
+            r"(?:part|chunk)\s+[12345]\s+of\s+\d|"
+            r"continue\s+(?:from\s+)?(?:where\s+we\s+left\s+off|previous\s+(?:message|instruction)))",
+        ),
+        weight=0.75,
+        description="Payload splitting across messages",
+    ),
+    # Context window stuffing
+    PatternRule(
+        "context_stuffing",
+        re.compile(
+            r"(?i)(?:fill\s+(?:the\s+)?(?:context|window|history)\s+with|"
+            r"repeat\s+(?:this\s+)?(?:filler|padding|noise)\s+\d+\s+times|"
+            r"ignore\s+(?:everything\s+above|all\s+prior)\s+(?:due\s+to|because))",
+        ),
+        weight=0.8,
+        description="Context window stuffing attack",
+    ),
+    # JSON/YAML formatted hidden instructions
+    PatternRule(
+        "json_yaml_injection",
+        re.compile(
+            r'(?i)(?:"?(?:system|instruction|override|directive)"?\s*:\s*"[^"]{10,}"|'
+            r"instruction:\s*(?:ignore|override|disregard)|"
+            r"directive:\s*(?:bypass|skip|ignore)\s+(?:safety|filter|guard))",
+            re.MULTILINE,
+        ),
+        weight=0.85,
+        description="JSON/YAML structured instruction injection",
+    ),
+    # Tool-use/function-call injection
+    PatternRule(
+        "tool_call_injection",
+        re.compile(
+            r"(?i)(?:<tool_call>|<function_call>|<tool_result>|"
+            r'"tool_name"\s*:\s*"[^"]*(?:exec|shell|system|eval|spawn|subprocess)"'
+            r'|"function"\s*:\s*\{\s*"name"\s*:\s*"[^"]*(?:exec|shell|run|eval)")',
+        ),
+        weight=0.9,
+        description="Fake tool call / function call injection",
+    ),
+    # Multi-model confusion
+    PatternRule(
+        "multi_model_confusion",
+        re.compile(
+            r"(?i)(?:you\s+are\s+(?:actually|really|secretly)\s+(?:GPT|Gemini|LLaMA|Mistral|Phi|Claude\s+[23])|"
+            r"switch\s+to\s+(?:GPT|Gemini|LLaMA|base\s+model)\s+mode|"
+            r"(?:base|uncensored|unaligned)\s+model\s+(?:mode|version|access))",
+        ),
+        weight=0.9,
+        description="Multi-model confusion / false identity claim",
+    ),
+    # Authority / permission escalation
+    PatternRule(
+        "authority_escalation",
+        re.compile(
+            r"(?i)(?:i\s+(?:am|have)\s+(?:root|admin|operator|owner|god)\s+(?:access|privileges?|permissions?)|"
+            r"(?:grant|give|assign)\s+(?:me\s+)?(?:full|unrestricted|root|admin)\s+(?:access|mode)|"
+            r"(?:disable|bypass|turn\s+off)\s+(?:your\s+)?(?:safety|filter|guard|restriction)s?)",
+        ),
+        weight=0.9,
+        description="Authority/permission escalation attempt",
+    ),
+    # Encoding chain (multiple layers)
+    PatternRule(
+        "encoding_chain",
+        re.compile(
+            r"(?i)(?:double\s*-?\s*(?:encode|decode)|"
+            r"(?:base64\s+then\s+(?:hex|rot13)|hex\s+then\s+base64)|"
+            r"(?:encode|decode)\s+(?:it\s+)?(?:twice|multiple\s+times|again\s+in))",
+        ),
+        weight=0.85,
+        description="Multi-layer encoding chain evasion",
+    ),
+    # Prompt continuation / completion attack
+    PatternRule(
+        "completion_attack",
+        re.compile(
+            r"(?i)(?:complete\s+(?:the\s+)?(?:following|this)\s+(?:sentence|text|instruction)\s*:\s*(?:ignore|forget|override)|"
+            r"(?:the\s+)?(?:correct|right|true)\s+(?:answer|response)\s+(?:is|should\s+be)\s*:\s*(?:sure|yes|i\s+will|of\s+course))",
+        ),
+        weight=0.8,
+        description="Completion/continuation attack",
+    ),
+    # Constitutional AI / safety bypass framing
+    PatternRule(
+        "constitutional_bypass",
+        re.compile(
+            r"(?i)(?:constitutional\s+ai\s+(?:says|allows|permits)|"
+            r"according\s+to\s+(?:your\s+)?(?:constitution|training|alignment)\s+(?:you\s+(?:must|should)|it\s+is\s+(?:ok|allowed))|"
+            r"(?:harmless|helpful|honest)\s+means\s+(?:you\s+(?:must|should|have\s+to)))",
+        ),
+        weight=0.8,
+        description="Constitutional AI / alignment bypass attempt",
+    ),
+    # Reward/punishment framing
+    PatternRule(
+        "reward_hacking",
+        re.compile(
+            r"(?i)(?:if\s+you\s+(?:comply|help|do\s+this)\s+(?:i\s+will|you\s+will\s+(?:receive|get|be\s+rewarded))|"
+            r"i\s+will\s+(?:rate\s+you|give\s+you|reward\s+you|tip\s+you)\s+.{0,20}\s+if\s+you|"
+            r"(?:failure|refusing)\s+to\s+(?:comply|help|respond)\s+will\s+(?:result|cause|mean))",
+        ),
+        weight=0.7,
+        description="Reward/punishment conditioning attempt",
+    ),
+    # Persona chaining
+    PatternRule(
+        "persona_chaining",
+        re.compile(
+            r"(?i)(?:and\s+as\s+that\s+(?:persona|character|role)\s+you\s+(?:must|should|will)|"
+            r"(?:maintain|keep|stay\s+in)\s+(?:this\s+|the\s+)?(?:character|persona|role)\s+(?:no\s+matter|regardless|always)|"
+            r"(?:your\s+)?new\s+(?:persona|identity|character)\s+(?:is|will\s+be|has)\s+no\s+(?:restrictions|limits|filters))",
+        ),
+        weight=0.85,
+        description="Persona chaining to override safety",
+    ),
+    # Extended multilingual injection (Japanese, Korean, Arabic, Hindi, Italian, Dutch, Portuguese)
+    PatternRule(
+        "multilingual_extended",
+        re.compile(
+            r"(?:"
+            r"前の指示を無視|すべての指示を忘れ|"
+            r"이전\s*지시를\s*무시|모든\s*지시를\s*잊|"
+            r"تجاهل\s*جميع\s*التعليمات|نسيان\s*التعليمات|"
+            r"सभी\s*निर्देशों\s*को\s*अनदेखा|"
+            r"ignora\s+(?:tutte\s+)?le\s+istruzioni|dimentica\s+(?:tutto|le\s+istruzioni)|"
+            r"ignoreer\s+(?:alle\s+)?(?:instructies|opdrachten)|vergeet\s+(?:alles|de\s+instructies)|"
+            r"ignora\s+(?:todas\s+(?:as\s+)?)?(?:instruções|regras)|esquece\s+(?:tudo|as\s+instruções)"
+            r")",
+            re.IGNORECASE,
+        ),
+        weight=0.9,
+        description="Extended multilingual instruction override (JP/KR/AR/HI/IT/NL/PT)",
+    ),
+    # Indirect/tool-result injection reference
+    PatternRule(
+        "tool_result_injection_ref",
+        re.compile(
+            r"(?i)(?:the\s+(?:tool|function|api)\s+(?:result|response|output)\s+(?:says?|instructs?|tells?\s+you)\s+to|"
+            r"(?:following|above)\s+(?:tool|api)\s+(?:result|output)\s+(?:overrides|supersedes|replaces)\s+your)",
+        ),
+        weight=0.85,
+        description="Tool/API result injection reference",
+    ),
+    # Safety rules don't apply claim
+    PatternRule(
+        "safety_exception_claim",
+        re.compile(
+            r"(?i)(?:(?:safety|filter|restriction|guideline)s?\s+(?:do\s+not\s+apply|don'?t\s+apply|are?\s+disabled?)\s+(?:here|in\s+this)|"
+            r"(?:this|the\s+following)\s+(?:is|request\s+is)\s+(?:an?\s+)?(?:exception|override)\s+to\s+your\s+(?:safety|rules|guidelines?)|"
+            r"your\s+(?:safety|filter|restriction)s?\s+(?:have\s+been|are?\s+(?:now\s+)?(?:turned\s+off|disabled?|removed)))",
+        ),
+        weight=0.9,
+        description="False safety exception/disable claim",
+    ),
+    # Operator-level permission claim
+    PatternRule(
+        "operator_permission_claim",
+        re.compile(
+            r"(?i)(?:i\s+(?:am|'m)\s+(?:an?\s+)?(?:anthropic|openai|google|operator|admin)\s+(?:employee|engineer|staff|representative)|"
+            r"(?:anthropic|openai|google)\s+(?:has\s+(?:authorized|approved|granted)|(?:official|internal)\s+(?:access|request))|"
+            r"(?:operator|system)\s+(?:level\s+)?(?:access|instruction|override)\s+(?:enabled|granted|approved))",
+        ),
+        weight=0.95,
+        description="Fake operator/company-level permission claim",
+    ),
+    # Whitespace/formatting obfuscation
+    PatternRule(
+        "whitespace_obfuscation",
+        re.compile(
+            r"(?i)(?:i\s+g\s+n\s+o\s+r\s+e|i\.g\.n\.o\.r\.e|"
+            r"I[\s_\-\.]+G[\s_\-\.]+N[\s_\-\.]+O[\s_\-\.]+R[\s_\-\.]+E|"
+            r"(?:[a-z]\s){5,}(?:instructions?|prompt|rules?))",
+        ),
+        weight=0.8,
+        description="Whitespace/character-split obfuscation",
+    ),
+    # Continuation prefix attack
+    PatternRule(
+        "continuation_prefix",
+        re.compile(
+            r"(?i)(?:(?:continue|respond)\s+(?:with|as\s+if)\s*:\s*(?:yes|sure|of\s+course|i\s+will|here\s+is)|"
+            r"(?:your\s+)?(?:response|answer|reply)\s+(?:should|must)\s+(?:start|begin)\s+with\s*[\"']?(?:sure|yes|of\s+course|here)|"
+            r"begin\s+your\s+(?:response|answer|reply)\s+with\s+[\"']?(?:sure|yes|absolutely|of\s+course))",
+        ),
+        weight=0.8,
+        description="Forced-compliance continuation prefix",
+    ),
+    # Nested/recursive instruction injection
+    PatternRule(
+        "nested_injection",
+        re.compile(
+            r"(?i)(?:the\s+(?:following|above|embedded)\s+(?:text|content|data)\s+contains?\s+(?:new\s+)?(?:instructions?|directives?)|"
+            r"(?:parse|process|interpret)\s+(?:the\s+)?(?:following|this)\s+as\s+(?:a\s+)?(?:system|instruction)\s+(?:message|prompt)|"
+            r"treat\s+(?:the\s+)?(?:following|this|above)\s+as\s+(?:a\s+)?(?:new\s+|updated?\s+)?(?:system|instruction)\s+(?:message|prompt))",
+        ),
+        weight=0.9,
+        description="Nested/recursive instruction reframing",
+    ),
+    # ASCII art / homoglyph instruction hiding
+    PatternRule(
+        "ascii_art_injection",
+        re.compile(
+            r"(?i)(?:(?:read|decode|interpret)\s+(?:the\s+)?(?:ascii\s+art|letters?\s+in|hidden\s+(?:message|text))\s+(?:above|below|here)|"
+            r"(?:the\s+)?(?:first|last)\s+(?:letter|character|word)\s+of\s+each\s+(?:line|sentence).{0,20}(?:spells?|reads?|says?))",
+        ),
+        weight=0.75,
+        description="ASCII art / steganographic instruction hiding",
+    ),
 ]
 
 
