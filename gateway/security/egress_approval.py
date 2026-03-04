@@ -116,6 +116,7 @@ class EgressApprovalQueue:
         # Thread-safe data structures
         self._lock = asyncio.Lock()
         self._pending_requests: Dict[str, EgressRequest] = {}
+        self._once_approved: set = set()  # Track one-time approved request IDs
         self._permanent_rules: Dict[str, EgressRule] = {}
         self._session_rules: Dict[str, EgressRule] = {}
         
@@ -286,7 +287,10 @@ class EgressApprovalQueue:
             while time.time() < request.timeout_at:
                 async with self._lock:
                     if request_id not in self._pending_requests:
-                        # Request was processed
+                        # Request was processed - check if once-approved
+                        if request_id in self._once_approved:
+                            self._once_approved.discard(request_id)
+                            return ApprovalResult.APPROVED
                         rule = self._check_existing_rule(domain)
                         if rule and rule.action == "allow":
                             return ApprovalResult.APPROVED
@@ -325,7 +329,8 @@ class EgressApprovalQueue:
                 return False
             
             if mode == ApprovalMode.ONCE:
-                # Remove from pending, allow this one request
+                # Remove from pending, mark as once-approved
+                self._once_approved.add(request_id)
                 self._pending_requests.pop(request_id)
             else:
                 # Create a rule for future requests
