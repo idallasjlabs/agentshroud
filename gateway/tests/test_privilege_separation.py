@@ -211,7 +211,7 @@ class TestPatternMatching:
     
     def test_symlink_resolution(self, strict_sandbox):
         """Symlinks should be resolved - symlink to blocked path must be caught."""
-        workspace_dir = "/tmp/test_workspace"
+        import tempfile; workspace_dir = tempfile.mkdtemp(prefix="agentshroud_test_workspace_")
         os.makedirs(workspace_dir, exist_ok=True)
         symlink_path = os.path.join(workspace_dir, "link_to_shadow")
         
