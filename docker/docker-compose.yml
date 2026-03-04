@@ -4,6 +4,7 @@ services:
     build:
       context: ..
       dockerfile: gateway/Dockerfile
+    image: agentshroud-gateway:latest
     container_name: agentshroud-gateway
     hostname: gateway
     restart: unless-stopped
@@ -74,6 +75,7 @@ services:
     build:
       context: ..
       dockerfile: docker/Dockerfile.agentshroud
+    image: agentshroud-bot:latest
     container_name: agentshroud-bot
     hostname: agentshroud
     restart: unless-stopped
