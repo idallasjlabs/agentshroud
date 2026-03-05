@@ -55,12 +55,16 @@ COPY docker/scripts/patch-telegram-sdk.sh /tmp/patch-telegram-sdk.sh
 RUN sh /tmp/patch-telegram-sdk.sh && rm /tmp/patch-telegram-sdk.sh
 
 # Install 1Password CLI for secure secret management (multi-arch)
+# R2-H1: GPG signature verification for supply chain integrity
 RUN ARCH=$(dpkg --print-architecture) && \
     curl -L -o /tmp/op.zip "https://cache.agilebits.com/dist/1P/op2/pkg/v2.32.0/op_linux_${ARCH}_v2.32.0.zip" && \
+    curl -L -o /tmp/op.sig "https://cache.agilebits.com/dist/1P/op2/pkg/v2.32.0/op_linux_${ARCH}_v2.32.0.zip.sig" && \
+    curl -sS https://downloads.1password.com/linux/keys/1password.asc | gpg --dearmor --output /tmp/1password.gpg && \
+    gpg --no-default-keyring --keyring /tmp/1password.gpg --verify /tmp/op.sig /tmp/op.zip && \
     unzip -q /tmp/op.zip -d /tmp/ && \
     mv /tmp/op /usr/local/bin/op && \
     chmod +x /usr/local/bin/op && \
-    rm -f /tmp/op.zip /tmp/op.sig
+    rm -f /tmp/op.zip /tmp/op.sig /tmp/1password.gpg
 
 # Create directories for AgentShroud configuration and workspace
 # Note: OpenClaw CLI expects ~/.openclaw, so we symlink it to ~/.agentshroud
@@ -119,6 +123,9 @@ LABEL org.opencontainers.image.description="AgentShroud platform for agentshroud
 LABEL org.opencontainers.image.vendor="AgentShroud"
 LABEL org.opencontainers.image.version="0.2.0"
 LABEL org.opencontainers.image.source="https://github.com/idallasj/agentshroud"
+
+# Strip setuid/setgid bits — CIS Docker Benchmark 4.8 (R2-H2 fix)
+RUN find / -perm /6000 -type f -exec chmod a-s {} + 2>/dev/null || true
 
 # Switch to non-root user (node user has UID 1000)
 USER node

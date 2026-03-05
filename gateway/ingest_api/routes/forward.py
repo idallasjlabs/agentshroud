@@ -38,9 +38,6 @@ _EMAIL_ALLOWED_RECIPIENTS: list[str] = [
     # Fill in trusted addresses; unknown recipients always go to approval queue.
 ]
 
-# iMessage channel ownership (P5)
-_IMESSAGE_SERVER = "mac-messages"
-_IMESSAGE_SEND_TOOL = "tool_send_message"
 
 
 # Authentication dependency
