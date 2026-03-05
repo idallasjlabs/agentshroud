@@ -428,8 +428,8 @@ def load_config(config_path: Optional[Path] = None) -> GatewayConfig:
         auth_token = secrets.token_hex(32)
         logger.warning(
             "\n" + "=" * 80 + "\n"
-            "No auth_token found in secret file or agentshroud.yaml. Generated new token:\n\n"
-            f"    {auth_token}\n\n"
+            "No auth_token found in secret file or agentshroud.yaml. Generated new token (first 8 chars): "
+            f"    {auth_token[:8]}...(redacted)\n\n"
             "Set GATEWAY_AUTH_TOKEN_FILE env var or add auth_token to agentshroud.yaml.\n"
             + "=" * 80
         )
