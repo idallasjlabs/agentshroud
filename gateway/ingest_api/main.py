@@ -52,6 +52,7 @@ from .models import (
 )
 from .routes.health import router as health_router
 from .routes.forward import router as forward_router
+from .routes.approval import router as approval_router
 from ..ssh_proxy.proxy import SSHProxy
 from .router import ForwardError, MultiAgentRouter
 from ..security.prompt_guard import PromptGuard
@@ -141,6 +142,7 @@ AuthRequired = Annotated[None, Depends(auth_dep)]
 
 app.include_router(health_router)
 app.include_router(forward_router)
+app.include_router(approval_router)
 # Mount management API (has its own Bearer auth on each endpoint)
 app.include_router(management_api_router)
 app.include_router(dashboard_api_router)
@@ -633,124 +635,6 @@ async def list_agents(auth: AuthRequired):
     targets = app_state.router.list_targets()
     return {"agents": [t.model_dump() for t in targets]}
 
-
-@app.post("/approve", response_model=ApprovalQueueItem)
-async def submit_approval_request(request: ApprovalRequest, auth: AuthRequired):
-    """Submit an action for human approval
-
-    Called by agents when attempting sensitive actions.
-    Authentication required.
-    """
-    item = await app_state.approval_queue.submit(request)
-    await app_state.event_bus.emit(
-        make_event(
-            "approval_submitted",
-            f"Approval requested: {request.action_type} - {request.description}",
-            {"request_id": item.request_id, "action_type": request.action_type},
-        )
-    )
-    return item
-
-
-@app.post("/approve/{request_id}/decide", response_model=ApprovalQueueItem)
-async def decide_approval(
-    request_id: str, decision: ApprovalDecision, auth: AuthRequired
-):
-    """Approve or reject a pending action
-
-    Authentication required.
-    """
-    try:
-        item = await app_state.approval_queue.decide(
-            request_id=request_id, approved=decision.approved, reason=decision.reason
-        )
-        await app_state.event_bus.emit(
-            make_event(
-                "approval_decided",
-                f"Approval {'approved' if decision.approved else 'rejected'}: {request_id}",
-                {"request_id": request_id, "approved": decision.approved},
-            )
-        )
-        return item
-
-    except KeyError:
-        raise HTTPException(status_code=404, detail="Approval request not found")
-
-    except ValueError as e:
-        raise HTTPException(status_code=409, detail=str(e))
-
-
-@app.get("/approve/pending", response_model=list[ApprovalQueueItem])
-async def list_pending_approvals(auth: AuthRequired):
-    """List all pending approval requests
-
-    Authentication required.
-    """
-    return await app_state.approval_queue.get_pending()
-
-
-@app.websocket("/ws/approvals")
-async def approval_websocket(websocket: WebSocket, token: str | None = Query(None)):
-    """WebSocket endpoint for real-time approval notifications
-
-    Protocol:
-    1. Client connects with token as query param: /ws/approvals?token=<token>
-    2. Server validates token during handshake - rejects before accepting
-    3. Server pushes new approval requests and decisions
-    4. Client can send decisions: {"type": "decide", "request_id": "...", "approved": true}
-    """
-    if not token or not hmac.compare_digest(token, app_state.config.auth_token):
-        await websocket.close(code=4003, reason="Authentication failed")
-        await app_state.event_bus.emit(
-            make_event("auth_failed", "WebSocket authentication failed", {}, "warning")
-        )
-        return
-
-    await app_state.approval_queue.connect(websocket)
-
-    try:
-        await websocket.send_json({"type": "authenticated"})
-
-        # Keep connection open and handle messages
-        while True:
-            message = await websocket.receive_json()
-
-            # Handle decision messages
-            if message.get("type") == "decide":
-                request_id = message.get("request_id")
-                approved = message.get("approved")
-
-                if not request_id or approved is None:
-                    await websocket.send_json(
-                        {"type": "error", "message": "Invalid decision message"}
-                    )
-                    continue
-
-                try:
-                    item = await app_state.approval_queue.decide(
-                        request_id=request_id,
-                        approved=approved,
-                        reason=message.get("reason", ""),
-                    )
-
-                    await websocket.send_json(
-                        {
-                            "type": "decision_ack",
-                            "data": {
-                                "request_id": request_id,
-                                "status": item.status,
-                            },
-                        }
-                    )
-
-                except (KeyError, ValueError) as e:
-                    await websocket.send_json({"type": "error", "message": str(e)})
-
-    except Exception as e:
-        logger.warning(f"WebSocket error: {e}")
-
-    finally:
-        await app_state.approval_queue.disconnect(websocket)
 
 
 # === Collaborators Endpoint ===
