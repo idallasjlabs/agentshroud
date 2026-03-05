@@ -125,6 +125,11 @@ LABEL org.opencontainers.image.vendor="AgentShroud"
 LABEL org.opencontainers.image.version="0.8.0"
 LABEL org.opencontainers.image.source="https://github.com/idallasj/agentshroud"
 
+# SECURITY (M2): Remove unnecessary interpreters — reduce attack surface
+# perl is inherited from base image; not needed by the bot
+RUN apt-get purge -y --auto-remove perl-base perl-modules-5.36 2>/dev/null || true && \
+    rm -f /usr/bin/perl /usr/bin/perl5* 2>/dev/null || true
+
 # Strip setuid/setgid bits — CIS Docker Benchmark 4.8 (R2-H2 fix)
 RUN find / -perm /6000 -type f -exec chmod a-s {} + 2>/dev/null || true
 

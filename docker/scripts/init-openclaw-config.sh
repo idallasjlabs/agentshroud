@@ -137,13 +137,22 @@ fi
 # To add a new host: update docker/config/ssh/config in the repo, rebuild image.
 
 SSH_CONFIG_SRC="/app/config-defaults/ssh/config"
-SSH_CONFIG_DST="/home/node/.ssh/config"
+SSH_TMP="/home/node/.ssh-tmp"
+
+# SECURITY (H1): SSH volume is mounted read-only.
+# - SSH key stays in the RO volume (/home/node/.ssh/id_ed25519)
+# - Config and known_hosts go to tmpfs (/home/node/.ssh-tmp/)
+# - OpenClaw SSH commands will use the tmpfs config
 
 if [ -f "${SSH_CONFIG_SRC}" ]; then
-  mkdir -p "/home/node/.ssh"
-  cp "${SSH_CONFIG_SRC}" "${SSH_CONFIG_DST}"
-  chmod 600 "${SSH_CONFIG_DST}"
-  echo "[init] ✓ Refreshed SSH config (approved host allowlist)"
+  mkdir -p "${SSH_TMP}"
+  cp "${SSH_CONFIG_SRC}" "${SSH_TMP}/config"
+  chmod 600 "${SSH_TMP}/config"
+  # Ensure IdentityFile points to RO volume key (absolute path)
+  sed -i 's|~/.ssh/id_ed25519|/home/node/.ssh/id_ed25519|g' "${SSH_TMP}/config"
+  # known_hosts in tmpfs (ephemeral, resets on restart)
+  printf '\n# H1 fix: known_hosts in tmpfs\nHost *\n    UserKnownHostsFile /home/node/.ssh-tmp/known_hosts\n' >> "${SSH_TMP}/config"
+  echo "[init] ✓ SSH config in tmpfs (key volume is read-only)"
 else
   echo "[init] ⚠ SSH config defaults not found — skipping"
 fi
