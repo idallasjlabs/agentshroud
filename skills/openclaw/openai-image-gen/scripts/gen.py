@@ -84,7 +84,8 @@ def request_images(
     output_format: str = "",
     style: str = "",
 ) -> dict:
-    url = "https://api.openai.com/v1/images/generations"
+    # Route through gateway proxy if configured, otherwise direct (for local dev)
+    url = os.environ.get("OPENAI_BASE_URL", "https://api.openai.com") + "/v1/images/generations"
     args = {
         "model": model,
         "prompt": prompt,
