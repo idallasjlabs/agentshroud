@@ -99,6 +99,19 @@ def _is_op_reference_allowed(reference: str) -> bool:
     return False
 
 
+# iMessage MCP server constants (P5: channel ownership)
+_IMESSAGE_SERVER = "mac-messages"
+_IMESSAGE_SEND_TOOL = "tool_send_message"
+
+
+def _is_imessage_recipient_allowed(recipient: str, allowed: list[str]) -> bool:
+    """Return True if the recipient is in the allowlist."""
+    if not allowed:
+        return False
+    import fnmatch
+    return any(fnmatch.fnmatch(recipient, pattern) for pattern in allowed)
+
+
 class OpProxyRequest(BaseModel):
     """Request body for POST /credentials/op-proxy."""
 
@@ -123,6 +136,9 @@ app = FastAPI(
     version="0.5.0",
     lifespan=lifespan,
 )
+
+# Make app_state available via request.app.state for extracted route files
+app.state.app_state = app_state
 
 # === Dependency: Authentication ===
 

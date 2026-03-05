@@ -17,6 +17,7 @@ import pytest
 from fastapi.testclient import TestClient
 
 from gateway.ingest_api.main import app, auth_dep
+from gateway.ingest_api.routes.forward import auth_dep as forward_auth_dep
 
 
 # ============================================================
@@ -27,8 +28,10 @@ from gateway.ingest_api.main import app, auth_dep
 @pytest.fixture(autouse=True)
 def bypass_auth():
     app.dependency_overrides[auth_dep] = lambda: None
+    app.dependency_overrides[forward_auth_dep] = lambda: None
     yield
     app.dependency_overrides.pop(auth_dep, None)
+    app.dependency_overrides.pop(forward_auth_dep, None)
 
 
 @pytest.fixture
@@ -77,6 +80,7 @@ class TestTelegramWebhook:
     def test_requires_auth(self):
         """Endpoint returns 401 without auth override."""
         app.dependency_overrides.pop(auth_dep, None)
+        app.dependency_overrides.pop(forward_auth_dep, None)
         try:
             tc = TestClient(app, raise_server_exceptions=False)
             resp = tc.post(
@@ -118,6 +122,7 @@ class TestEmailSend:
     def test_requires_auth(self):
         """Endpoint returns 401 without auth override."""
         app.dependency_overrides.pop(auth_dep, None)
+        app.dependency_overrides.pop(forward_auth_dep, None)
         try:
             tc = TestClient(app, raise_server_exceptions=False)
             resp = tc.post(
@@ -131,7 +136,7 @@ class TestEmailSend:
     def test_allowed_recipient_returns_200(self, client):
         """Email to an allowed recipient returns 200 with status=approved."""
         with patch(
-            "gateway.ingest_api.main._is_email_recipient_allowed", return_value=True
+            "gateway.ingest_api.routes.forward._is_email_recipient_allowed", return_value=True
         ):
             resp = client.post(
                 "/email/send",
@@ -148,7 +153,7 @@ class TestEmailSend:
     def test_allowed_recipient_response_has_sanitized_body(self, client):
         """Approved response includes sanitized_body field."""
         with patch(
-            "gateway.ingest_api.main._is_email_recipient_allowed", return_value=True
+            "gateway.ingest_api.routes.forward._is_email_recipient_allowed", return_value=True
         ):
             resp = client.post(
                 "/email/send",
@@ -169,8 +174,8 @@ class TestEmailSend:
         mock_sanitizer.sanitize.return_value = mock_scan
 
         with patch(
-            "gateway.ingest_api.main._is_email_recipient_allowed", return_value=True
-        ), patch("gateway.ingest_api.main.app_state") as mock_state:
+            "gateway.ingest_api.routes.forward._is_email_recipient_allowed", return_value=True
+        ), patch("gateway.ingest_api.routes.forward.app_state") as mock_state:
             mock_state.sanitizer = mock_sanitizer
             mock_state.approval_queue = None
             resp = client.post(
@@ -194,8 +199,8 @@ class TestEmailSend:
         mock_queue.submit = AsyncMock(return_value=mock_item)
 
         with patch(
-            "gateway.ingest_api.main._is_email_recipient_allowed", return_value=False
-        ), patch("gateway.ingest_api.main.app_state") as mock_state:
+            "gateway.ingest_api.routes.forward._is_email_recipient_allowed", return_value=False
+        ), patch("gateway.ingest_api.routes.forward.app_state") as mock_state:
             mock_state.sanitizer = None
             mock_state.approval_queue = mock_queue
             resp = client.post(
@@ -214,8 +219,8 @@ class TestEmailSend:
     def test_unknown_recipient_no_queue_returns_403(self, client):
         """Unknown recipient with no approval queue configured returns 403."""
         with patch(
-            "gateway.ingest_api.main._is_email_recipient_allowed", return_value=False
-        ), patch("gateway.ingest_api.main.app_state") as mock_state:
+            "gateway.ingest_api.routes.forward._is_email_recipient_allowed", return_value=False
+        ), patch("gateway.ingest_api.routes.forward.app_state") as mock_state:
             mock_state.sanitizer = None
             mock_state.approval_queue = None
             resp = client.post(
@@ -231,7 +236,7 @@ class TestEmailSend:
     def test_response_has_timestamp(self, client):
         """All responses include an ISO 8601 timestamp."""
         with patch(
-            "gateway.ingest_api.main._is_email_recipient_allowed", return_value=True
+            "gateway.ingest_api.routes.forward._is_email_recipient_allowed", return_value=True
         ):
             resp = client.post(
                 "/email/send",

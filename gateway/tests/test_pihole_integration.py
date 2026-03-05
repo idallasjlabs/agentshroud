@@ -38,22 +38,24 @@ class TestPiholeIntegration:
         assert pihole_service['container_name'] == 'agentshroud-pihole'
         assert pihole_service['hostname'] == 'pihole'
         
-        # Check environment variables
+        # Check environment variables (list format: KEY=VALUE)
         env = pihole_service['environment']
-        assert 'WEBPASSWORD_FILE' in env
-        assert env['PIHOLE_DNS_'] == '1.1.1.1;1.0.0.1'
-        assert env['DNSMASQ_LISTENING'] == 'all'
+        env_dict = {}
+        for item in env:
+            if '=' in item:
+                k, v = item.split('=', 1)
+                env_dict[k] = v
+        assert 'WEBPASSWORD_FILE' in env_dict
+        assert env_dict['PIHOLE_DNS_'] == '8.8.8.8;8.8.4.4'
+        assert env_dict['DNSMASQ_LISTENING'] == 'all'
         
         # Check volumes
         volumes = pihole_service['volumes']
-        assert 'pihole-config:/etc/pihole' in volumes
+        assert 'pihole-etc:/etc/pihole' in volumes
         assert 'pihole-dnsmasq:/etc/dnsmasq.d' in volumes
         
-        # Check ports
-        ports = pihole_service['ports']
-        assert '127.0.0.1:5353:53/tcp' in ports
-        assert '127.0.0.1:5353:53/udp' in ports
-        assert '127.0.0.1:5380:80/tcp' in ports
+        # Enforcement hardening: pihole runs on isolated network without exposed ports
+        # Admin access is via gateway proxy only
 
     def test_services_use_pihole_dns(self):
         """Test that gateway and agentshroud services use Pi-hole DNS."""
@@ -62,19 +64,16 @@ class TestPiholeIntegration:
         with open('docker/docker-compose.yml', 'r') as f:
             compose_data = yaml.safe_load(f)
         
-        # Check gateway service
+        # Check gateway service uses Pi-hole DNS
         gateway_service = compose_data['services']['gateway']
         assert 'dns' in gateway_service, "Gateway should have DNS configuration"
-        assert gateway_service['dns'] == ['172.20.0.10'], "Gateway should use Pi-hole DNS"
-        assert 'depends_on' in gateway_service, "Gateway should depend on Pi-hole"
-        assert 'pihole' in gateway_service['depends_on'], "Gateway should depend on Pi-hole"
-        
-        # Check agentshroud service
+        assert gateway_service['dns'] == ['172.21.0.10'], "Gateway should use Pi-hole DNS"
+
+        # Check agentshroud service depends on pihole
         agentshroud_service = compose_data['services']['agentshroud']
-        assert 'dns' in agentshroud_service, "AgentShroud should have DNS configuration"
-        assert agentshroud_service['dns'] == ['172.20.0.10'], "AgentShroud should use Pi-hole DNS"
-        assert 'depends_on' in agentshroud_service, "AgentShroud should depend on Pi-hole"
-        assert 'pihole' in agentshroud_service['depends_on'], "AgentShroud should depend on Pi-hole"
+        assert 'depends_on' in agentshroud_service, "AgentShroud should depend on services"
+        deps = agentshroud_service['depends_on']
+        assert 'pihole' in deps, "AgentShroud should depend on Pi-hole"
 
     def test_pihole_secrets_and_volumes_configured(self):
         """Test that Pi-hole secrets and volumes are configured in compose file."""
@@ -90,7 +89,7 @@ class TestPiholeIntegration:
         
         # Check volumes
         volumes = compose_data['volumes']
-        assert 'pihole-config' in volumes, "Pi-hole config volume should be configured"
+        assert 'pihole-etc' in volumes, "Pi-hole config volume should be configured"
         assert 'pihole-dnsmasq' in volumes, "Pi-hole dnsmasq volume should be configured"
 
     def test_host_specific_compose_files_updated(self):

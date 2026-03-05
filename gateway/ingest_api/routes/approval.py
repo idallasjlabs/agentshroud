@@ -20,6 +20,7 @@ from ..models import (
     ApprovalRequest,
 )
 from ..auth import create_auth_dependency
+from ..state import app_state
 from ..event_bus import make_event
 
 # Create router
@@ -32,7 +33,6 @@ logger = logging.getLogger(__name__)
 # Authentication dependency
 async def auth_dep(request: Request):
     """Auth dependency that uses the app state config."""
-    app_state = request.app.state.app_state
     if not hasattr(app_state, "config"):
         raise HTTPException(
             status_code=401,
@@ -53,7 +53,6 @@ async def submit_approval_request(request: ApprovalRequest, req: Request, auth: 
     Called by agents when attempting sensitive actions.
     Authentication required.
     """
-    app_state = req.app.state.app_state
     item = await app_state.approval_queue.submit(request)
     await app_state.event_bus.emit(
         make_event(
@@ -73,7 +72,6 @@ async def decide_approval(
 
     Authentication required.
     """
-    app_state = req.app.state.app_state
     try:
         item = await app_state.approval_queue.decide(
             request_id=request_id, approved=decision.approved, reason=decision.reason
@@ -100,7 +98,6 @@ async def list_pending_approvals(req: Request, auth: AuthRequired):
 
     Authentication required.
     """
-    app_state = req.app.state.app_state
     return await app_state.approval_queue.get_pending()
 
 
