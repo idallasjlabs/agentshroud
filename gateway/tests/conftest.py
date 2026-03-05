@@ -58,6 +58,7 @@ def test_config() -> GatewayConfig:
             enabled=True,
             actions=["email_sending", "file_deletion"],
             timeout_seconds=3600,
+            db_path=str(Path(tempfile.mkdtemp()) / "test_approvals.db"),
         ),
         log_level="WARNING",  # Reduce test noise
     )

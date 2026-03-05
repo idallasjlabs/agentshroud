@@ -42,7 +42,8 @@ class WebhookReceiver:
                 # Only initialize if the base path exists or can be created
                 if base_workspace.exists() or self._can_create_directory(base_workspace):
                     # TODO: Load owner_user_id from config
-                    owner_user_id = "8096968754"  # Isaiah - owner
+                    from gateway.security.rbac_config import RBACConfig
+                    owner_user_id = RBACConfig().owner_user_id
                     self.session_manager = UserSessionManager(
                         base_workspace=base_workspace,
                         owner_user_id=owner_user_id

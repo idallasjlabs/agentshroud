@@ -42,6 +42,10 @@ fi
 
 node "${DEFAULTS_DIR}/apply-patches.js" "${OPENCLAW_DIR}/openclaw.json"
 
+# Security: harden config and state dir permissions
+chmod 700 "${OPENCLAW_DIR}" 2>/dev/null || true
+chmod 600 "${OPENCLAW_DIR}/openclaw.json" 2>/dev/null || true
+
 # ── 3. Workspace brand/identity files ────────────────────────────────────────
 # BRAND.md    — always refreshed from image (authoritative trademark & brand rules)
 # IDENTITY.md — seeded on first run only (bot evolves this over time)
@@ -73,6 +77,60 @@ else
   echo "[init] ✓ AGENTS.md already references BRAND.md — skipping"
 fi
 
+# ── 4. Memory persistence — backup/restore across fresh installs ─────────────
+# Memory files (MEMORY.md, memory/*.md) are the bot's continuity.
+# They live on the workspace volume, which survives rebuilds but not volume
+# deletion. A host-mounted backup directory provides durability across
+# fresh installs, volume resets, and machine migrations.
+
+MEMORY_BACKUP_DIR="/app/memory-backup"
+MEMORY_DIR="${WORKSPACE_DIR}/memory"
+MEMORY_FILE="${WORKSPACE_DIR}/MEMORY.md"
+
+# Restore: if workspace has no memory but backup exists, restore it
+if [ -d "${MEMORY_BACKUP_DIR}" ] && [ "$(ls -A ${MEMORY_BACKUP_DIR} 2>/dev/null)" ]; then
+  if [ ! -f "${MEMORY_FILE}" ] && [ ! -d "${MEMORY_DIR}" ]; then
+    echo "[init] Fresh workspace detected — restoring memory from backup"
+    # Restore MEMORY.md
+    if [ -f "${MEMORY_BACKUP_DIR}/MEMORY.md" ]; then
+      cp "${MEMORY_BACKUP_DIR}/MEMORY.md" "${MEMORY_FILE}"
+      echo "[init] ✓ Restored MEMORY.md"
+    fi
+    # Restore memory/ directory
+    if [ -d "${MEMORY_BACKUP_DIR}/memory" ]; then
+      mkdir -p "${MEMORY_DIR}"
+      cp -r "${MEMORY_BACKUP_DIR}/memory/"* "${MEMORY_DIR}/" 2>/dev/null || true
+      echo "[init] ✓ Restored memory/ directory ($(ls ${MEMORY_DIR} | wc -l) files)"
+    fi
+    # Restore USER.md, TOOLS.md if they exist in backup
+    for f in USER.md TOOLS.md HEARTBEAT.md; do
+      if [ -f "${MEMORY_BACKUP_DIR}/${f}" ]; then
+        cp "${MEMORY_BACKUP_DIR}/${f}" "${WORKSPACE_DIR}/${f}"
+        echo "[init] ✓ Restored ${f}"
+      fi
+    done
+  else
+    echo "[init] ✓ Memory already present — no restore needed"
+  fi
+else
+  echo "[init] ✓ No memory backup found (first-ever install or backup not mounted)"
+fi
+
+# Backup: save current memory to backup directory (runs every startup)
+if [ -d "${MEMORY_BACKUP_DIR}" ]; then
+  if [ -f "${MEMORY_FILE}" ] || [ -d "${MEMORY_DIR}" ]; then
+    [ -f "${MEMORY_FILE}" ] && cp "${MEMORY_FILE}" "${MEMORY_BACKUP_DIR}/MEMORY.md"
+    if [ -d "${MEMORY_DIR}" ]; then
+      mkdir -p "${MEMORY_BACKUP_DIR}/memory"
+      cp -r "${MEMORY_DIR}/"* "${MEMORY_BACKUP_DIR}/memory/" 2>/dev/null || true
+    fi
+    for f in USER.md TOOLS.md HEARTBEAT.md; do
+      [ -f "${WORKSPACE_DIR}/${f}" ] && cp "${WORKSPACE_DIR}/${f}" "${MEMORY_BACKUP_DIR}/${f}"
+    done
+    echo "[init] ✓ Memory backed up to ${MEMORY_BACKUP_DIR}"
+  fi
+fi
+
 # ── 4. SSH config — always refresh from image (approved host allowlist) ──────
 # Authoritative allowlist of approved SSH hosts.
 # Overwrites on every startup so repo changes take effect on next restart.
@@ -88,4 +146,49 @@ if [ -f "${SSH_CONFIG_SRC}" ]; then
   echo "[init] ✓ Refreshed SSH config (approved host allowlist)"
 else
   echo "[init] ⚠ SSH config defaults not found — skipping"
+fi
+
+# ── 5. Memory persistence — backup & restore ─────────────────────────────────
+# Memory files (MEMORY.md, memory/*.md) are the bot continuity across sessions.
+# They live on the workspace volume, but must survive:
+#   - docker compose down -v  (volume deletion)
+#   - Fresh installs on new machines
+#   - Container image rebuilds
+#
+# Strategy: host-mounted /app/memory-backup is a bind mount to the repo
+# memory-backup/ directory. On every startup, we:
+#   1. Restore from backup if workspace memory is empty (fresh volume)
+#   2. Backup current memory to the host mount (on every startup)
+
+MEMORY_BACKUP_DIR="/app/memory-backup"
+WORKSPACE_MEMORY="${WORKSPACE_DIR}/memory"
+WORKSPACE_MEMORY_FILE="${WORKSPACE_DIR}/MEMORY.md"
+
+if [ -d "${MEMORY_BACKUP_DIR}" ]; then
+  # Restore: if workspace has no memory but backup does, restore it
+  if [ ! -f "${WORKSPACE_MEMORY_FILE}" ] && [ -f "${MEMORY_BACKUP_DIR}/MEMORY.md" ]; then
+    echo "[init] Fresh volume detected — restoring memory from backup"
+    cp "${MEMORY_BACKUP_DIR}/MEMORY.md" "${WORKSPACE_MEMORY_FILE}"
+    echo "[init]   Restored MEMORY.md"
+  fi
+
+  if [ ! -d "${WORKSPACE_MEMORY}" ] || [ -z "$(ls -A "${WORKSPACE_MEMORY}" 2>/dev/null)" ]; then
+    if [ -d "${MEMORY_BACKUP_DIR}/memory" ] && [ -n "$(ls -A "${MEMORY_BACKUP_DIR}/memory" 2>/dev/null)" ]; then
+      mkdir -p "${WORKSPACE_MEMORY}"
+      cp -r "${MEMORY_BACKUP_DIR}/memory/"* "${WORKSPACE_MEMORY}/" 2>/dev/null || true
+      echo "[init]   Restored memory/ directory"
+    fi
+  fi
+
+  # Backup: snapshot current memory to host mount (runs every startup)
+  if [ -f "${WORKSPACE_MEMORY_FILE}" ]; then
+    mkdir -p "${MEMORY_BACKUP_DIR}/memory"
+    cp "${WORKSPACE_MEMORY_FILE}" "${MEMORY_BACKUP_DIR}/MEMORY.md"
+    if [ -d "${WORKSPACE_MEMORY}" ]; then
+      cp -r "${WORKSPACE_MEMORY}/"* "${MEMORY_BACKUP_DIR}/memory/" 2>/dev/null || true
+    fi
+    echo "[init] Memory backed up to host mount (survives volume resets)"
+  fi
+else
+  echo "[init] Memory backup mount not available — memory NOT persisted to host"
 fi

@@ -1,5 +1,6 @@
 # Copyright © 2026 Isaiah Dallas Jefferson, Jr. AgentShroud™. All rights reserved.
 from __future__ import annotations
+import os
 
 # AgentShroud™ is a trademark of Isaiah Dallas Jefferson, Jr., first used in February 2026.
 # Protected by common law trademark rights. Federal trademark registration pending.
@@ -51,7 +52,7 @@ class EnhancedApprovalQueue:
         """
         self.config = config
         self.tool_risk_config = tool_risk_config
-        self.store = store or ApprovalStore("/tmp/approvals.db")  # TODO: Use proper path
+        import tempfile as _tf; self.store = store or ApprovalStore(os.path.join(os.environ.get("AGENTSHROUD_DATA_DIR", _tf.gettempdir()), "approvals.db"))
         self.connected_clients: set[WebSocket] = set()
         self._lock = asyncio.Lock()
         self._pending_futures: dict[str, asyncio.Future] = {}

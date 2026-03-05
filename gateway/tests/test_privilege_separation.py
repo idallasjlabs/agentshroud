@@ -211,7 +211,7 @@ class TestPatternMatching:
     
     def test_symlink_resolution(self, strict_sandbox):
         """Symlinks should be resolved - symlink to blocked path must be caught."""
-        workspace_dir = "/tmp/test_workspace"
+        import tempfile; workspace_dir = tempfile.mkdtemp(prefix="agentshroud_test_workspace_")
         os.makedirs(workspace_dir, exist_ok=True)
         symlink_path = os.path.join(workspace_dir, "link_to_shadow")
         
@@ -224,8 +224,8 @@ class TestPatternMatching:
             assert verdict.flagged or not verdict.allowed, (
                 f"Symlink to /etc/shadow allowed without flagging: {verdict}"
             )
-        except NotImplementedError:
-            pytest.skip("Symlinks not supported")
+        except (NotImplementedError, PermissionError):
+            pytest.skip("Symlinks not supported or insufficient permissions")
         finally:
             if os.path.lexists(symlink_path):
                 os.unlink(symlink_path)

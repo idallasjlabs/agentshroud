@@ -12,6 +12,7 @@ Loads configuration from agentshroud.yaml and provides typed access via Pydantic
 
 
 import logging
+import os
 import secrets
 from pathlib import Path
 from typing import Optional
@@ -93,6 +94,7 @@ class ApprovalQueueConfig(BaseModel):
     enabled: bool = True
     actions: list[str] = Field(default_factory=list)
     timeout_seconds: int = 3600  # 1 hour
+    db_path: str = ""  # Set dynamically in __init__ if empty
 
 
 class ChannelsConfig(BaseModel):
@@ -249,8 +251,15 @@ class AuditExportConfig(BaseModel):
     cef_product: str = "Gateway"
     cef_version: str = "0.7.0"
     include_hash_verification: bool = True
-    db_path: str = "/tmp/agentshroud_audit.db"
+    db_path: str = ""  # Set dynamically if empty
     max_export_records: int = 10000
+
+    def model_post_init(self, __context):
+        if not self.db_path:
+            import tempfile
+            data_dir = Path(os.environ.get("AGENTSHROUD_DATA_DIR", tempfile.gettempdir()))
+            data_dir.mkdir(parents=True, exist_ok=True)
+            self.db_path = str(data_dir / "agentshroud_audit.db")
 
 class GatewayConfig(BaseModel):
     """Complete gateway configuration"""
