@@ -89,7 +89,7 @@ async def decide_approval(
         raise HTTPException(status_code=404, detail="Approval request not found")
 
     except ValueError as e:
-        raise HTTPException(status_code=409, detail=str(e))
+        raise HTTPException(status_code=409, detail="Conflict: approval state changed")
 
 
 @router.get("/approve/pending", response_model=list[ApprovalQueueItem])
@@ -163,7 +163,7 @@ async def approval_websocket(websocket: WebSocket, token: str | None = Query(Non
                     )
 
                 except (KeyError, ValueError) as e:
-                    await websocket.send_json({"type": "error", "message": str(e)})
+                    await websocket.send_json({"type": "error", "message": "Invalid request"})
 
     except Exception as e:
         logger.warning(f"WebSocket error: {e}")
