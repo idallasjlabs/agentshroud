@@ -253,10 +253,11 @@ async def global_exception_handler(request: Request, exc: Exception):
 
 
 @app.get("/", response_class=HTMLResponse)
-async def system_control():
+async def system_control(auth: AuthRequired):
     """System Control - Live Dashboard
 
     Shows real-time system status with links to controls.
+    Authentication required.
     """
     uptime = time.time() - app_state.start_time
     stats = await app_state.ledger.get_stats()
@@ -327,7 +328,7 @@ async def system_control():
             <h2>🔗 Access</h2>
             <div class="status">
                 <p>Local: <code>http://localhost:8080</code></p>
-                <p>Tailscale: <code>http://100.90.175.83:8080</code></p>
+                <p>Tailscale: <code>[redacted]</code></p>
             </div>
         </div>
     </div>
@@ -1796,7 +1797,7 @@ async def verify_killswitch(auth: AuthRequired, dry_run: bool = True):
     except Exception as e:
         logger.error(f"Kill switch verification failed: {e}")
         return {
-            "error": f"Verification failed: {str(e)}",
+            "error": "Killswitch verification failed",
             "timestamp": __import__("datetime").datetime.now(
                 __import__("datetime").timezone.utc
             ).isoformat()
@@ -1818,7 +1819,7 @@ async def killswitch_status(auth: AuthRequired):
     except Exception as e:
         logger.error(f"Failed to get kill switch status: {e}")
         return {
-            "error": f"Status check failed: {str(e)}",
+            "error": "Killswitch status check failed",
             "timestamp": __import__("datetime").datetime.now(
                 __import__("datetime").timezone.utc
             ).isoformat()
@@ -1863,7 +1864,7 @@ async def list_users_and_roles(request: Request):
         
     except Exception as e:
         logger.error(f"Error listing users: {e}")
-        raise HTTPException(status_code=500, detail=f"Error listing users: {str(e)}")
+        raise HTTPException(status_code=500, detail="Internal error listing users")
 
 
 @app.put("/manage/rbac/users/{target_user_id}")
@@ -1924,7 +1925,7 @@ async def get_user_permissions(user_id: str, request: Request):
         
     except Exception as e:
         logger.error(f"Error getting user permissions: {e}")
-        raise HTTPException(status_code=500, detail=f"Error getting permissions: {str(e)}")
+        raise HTTPException(status_code=500, detail="Internal error getting permissions")
 
 
 @app.get("/manage/rbac/my-permissions")
@@ -1946,7 +1947,7 @@ async def get_my_permissions(request: Request):
         
     except Exception as e:
         logger.error(f"Error getting user permissions: {e}")
-        raise HTTPException(status_code=500, detail=f"Error getting permissions: {str(e)}")
+        raise HTTPException(status_code=500, detail="Internal error getting permissions")
 
 
 
@@ -1988,7 +1989,7 @@ async def get_dns_stats(auth: AuthRequired):
                 
     except Exception as e:
         logger.error(f"Error querying Pi-hole stats: {e}")
-        raise HTTPException(status_code=500, detail=f"Error getting DNS stats: {str(e)}")
+        raise HTTPException(status_code=500, detail="Internal error querying DNS stats")
 
 
 @app.post("/manage/dns/blocklist")
@@ -2062,7 +2063,7 @@ async def manage_blocklist(
                     
     except Exception as e:
         logger.error(f"Error managing Pi-hole blocklist: {e}")
-        raise HTTPException(status_code=500, detail=f"Error managing blocklist: {str(e)}")
+        raise HTTPException(status_code=500, detail="Internal error managing blocklist")
 
 
 

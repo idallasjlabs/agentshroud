@@ -252,7 +252,7 @@ networks:
       - subnet: 172.20.0.0/16
   agentshroud-isolated:
     driver: bridge
-    internal: false
+    internal: true
     ipam:
       config:
       - subnet: 172.21.0.0/16
