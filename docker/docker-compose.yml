@@ -170,7 +170,6 @@ services:
     - host.docker.internal:host-gateway
     networks:
     - agentshroud-isolated
-    - agentshroud-internal
     depends_on:
       gateway:
         condition: service_healthy
