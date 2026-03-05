@@ -474,9 +474,9 @@ class MiddlewareManager:
                     logger.error(f"GitGuard processing error: {e}")
             
             # 5. File Sandbox - Validate file operations (now session-aware)
-            if self.file_sandbox and self.user_session_manager and self._is_owner(user_id):
-                logger.info(f"FileSandbox bypassed for owner user {user_id}")
-            elif self.file_sandbox and self.user_session_manager and not self._is_owner(user_id):
+            if self._is_owner(user_id):
+                logger.debug(f"FileSandbox bypassed for owner user {user_id}")
+            elif self.file_sandbox and not self._is_owner(user_id):
                 try:
                     # Check if request contains file operations
                     message_content = request_data.get('message', '')
