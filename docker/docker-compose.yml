@@ -163,6 +163,8 @@ services:
         condition: service_healthy
       pihole:
         condition: service_started
+    dns:
+    - 172.21.0.10
 
   # ── Tailscale mesh VPN sidecar (D4 / Fix-10 mTLS) ─────────────────────────
   # Provides encrypted mesh networking between gateway and bot containers.

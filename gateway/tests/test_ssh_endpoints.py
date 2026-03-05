@@ -94,7 +94,7 @@ async def client(test_config_with_ssh):
 
     # Patch load_config to return our test config so lifespan doesn't override
     with patch(
-        "gateway.ingest_api.main.load_config", return_value=test_config_with_ssh
+        "gateway.ingest_api.lifespan.load_config", return_value=test_config_with_ssh
     ):
         with TestClient(app) as c:
             yield c
@@ -240,7 +240,7 @@ class TestSSHDisabledEndpoint:
         app_state.ssh_proxy = None  # SSH disabled
         app_state.start_time = time.time()
 
-        with patch("gateway.ingest_api.main.load_config", return_value=disabled_config):
+        with patch("gateway.ingest_api.lifespan.load_config", return_value=disabled_config):
             with TestClient(app) as c:
                 yield c
 
@@ -305,7 +305,7 @@ class TestSSHRequireApprovalFalse:
         app_state.ssh_proxy = SSHProxy(cfg.ssh)
         app_state.start_time = time.time()
 
-        with patch("gateway.ingest_api.main.load_config", return_value=cfg):
+        with patch("gateway.ingest_api.lifespan.load_config", return_value=cfg):
             with TestClient(app) as c:
                 yield c
 
