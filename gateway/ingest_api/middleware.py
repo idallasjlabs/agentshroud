@@ -91,7 +91,8 @@ class MiddlewareManager:
         try:
             base_workspace = Path("/tmp/agentshroud/workspace")
             base_workspace.mkdir(parents=True, exist_ok=True)
-            owner_user_id = "8096968754"
+            from gateway.security.rbac_config import RBACConfig as _RBACConfig
+            owner_user_id = _RBACConfig().owner_user_id
             self.user_session_manager = UserSessionManager(
                 base_workspace=base_workspace,
                 owner_user_id=owner_user_id
