@@ -42,25 +42,24 @@ class TestForwardEndpoint:
             client = TestClient(app)
             
             # Mock auth dependency
-            if True:  # keep indentation
-                mock_auth_dep.return_value = AsyncMock()
-                
-                response = client.post(
-                    "/forward",
-                    json={
-                        "content": "test message",
-                        "content_type": "text/plain",
-                        "source": "api"
-                    },
-                    headers={"Authorization": "Bearer fake-token"}
-                )
-                
-                # Should return 403 when middleware blocks
-                assert response.status_code == 403
-                assert "Request blocked by middleware" in response.json()["detail"]
-                
-                # Verify middleware was called
-                mock_middleware.process_request.assert_called_once()
+            mock_auth_dep.return_value = AsyncMock()
+            
+            response = client.post(
+                "/forward",
+                json={
+                    "content": "test message",
+                    "content_type": "text/plain",
+                    "source": "api"
+                },
+                headers={"Authorization": "Bearer fake-token"}
+            )
+            
+            # Should return 403 when middleware blocks
+            assert response.status_code == 403
+            assert "Request blocked by middleware" in response.json()["detail"]
+            
+            # Verify middleware was called
+            mock_middleware.process_request.assert_called_once()
     
     def test_forward_middleware_allowed(self):
         """Test that middleware allows requests when they pass checks."""
@@ -83,22 +82,21 @@ class TestForwardEndpoint:
             client = TestClient(app)
             
             # Mock auth dependency
-            if True:  # keep indentation
-                mock_auth_dep.return_value = AsyncMock()
-                
-                response = client.post(
-                    "/forward",
-                    json={
-                        "content": "test message",
-                        "content_type": "text/plain",
-                        "source": "api"
-                    },
-                    headers={"Authorization": "Bearer fake-token"}
-                )
-                
-                # Should return 500 when middleware fails
-                assert response.status_code == 500
-                assert "Middleware processing failed" in response.json()["detail"]
+            mock_auth_dep.return_value = AsyncMock()
+            
+            response = client.post(
+                "/forward",
+                json={
+                    "content": "test message",
+                    "content_type": "text/plain",
+                    "source": "api"
+                },
+                headers={"Authorization": "Bearer fake-token"}
+            )
+            
+            # Should return 500 when middleware fails
+            assert response.status_code == 500
+            assert "Middleware processing failed" in response.json()["detail"]
 
 
 class TestStatusEndpoint:
