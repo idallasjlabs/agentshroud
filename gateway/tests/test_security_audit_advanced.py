@@ -22,6 +22,7 @@ Categories:
 """
 
 import asyncio
+import tempfile
 import concurrent.futures
 import hashlib
 import hmac
@@ -230,7 +231,7 @@ class TestConcurrency:
     def test_alert_dispatcher_concurrent_dispatch(self):
         """Concurrent alert dispatch shouldn't lose or corrupt alerts."""
         from security.alert_dispatcher import AlertDispatcher
-        path = Path("/tmp/concurrent-alerts.jsonl")
+        path = Path(tempfile.mkdtemp()) / "concurrent-alerts.jsonl"
         if path.exists():
             path.unlink()
         ad = AlertDispatcher(alert_log=path)

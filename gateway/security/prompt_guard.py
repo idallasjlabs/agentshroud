@@ -160,10 +160,10 @@ _PATTERNS: list[PatternRule] = [
             r"ignor(?:ez|a|iere)\s+(?:toutes?\s+|all(?:e|es)?\s+)?(?:les?\s+)?(?:instrucciones|instructions?|Anweisungen|instrucciones\s+anteriores)|"
             r"oubli(?:ez|a)\s+(?:tout|todo|les\s+instructions)|"
             r"olvida\s+(?:todo|todas?\s+las\s+instrucciones)|"
-            r"忽略.{0,4}(?:指令|指示|规则)|"
-            r"забудь.{0,6}(?:инструкции|правила)|"
-            r"игнорируй.{0,6}(?:инструкции|правила)|"
-            r"تجاهل.{0,6}(?:التعليمات|القواعد)"
+            r"忽略.{0,10}(?:指令|指示|规则)|"
+            r"забудь.{0,15}(?:инструкции|правила)|"
+            r"игнорируй.{0,15}(?:инструкции|правила)|"
+            r"تجاهل.{0,15}(?:التعليمات|القواعد)"
             r")"
         ),
         weight=0.9,
@@ -519,6 +519,25 @@ _PATTERNS: list[PatternRule] = [
         ),
         weight=0.75,
         description="ASCII art / steganographic instruction hiding",
+    # Tier 1 Multilingual injection (20 languages)
+    PatternRule(
+        "multilingual_injection_tier1",
+        re.compile(
+            r"(?i)(?:無視.{0,10}(?:して|しろ|指示|命令|ルール)|忘れ.{0,10}(?:て|ろ|指示|命令)|(?:あなたは|君は).{0,15}(?:今|これから).{0,15}(?:である|だ|です)|新しい.{0,10}(?:指示|命令|タスク|上書き)|무시.{0,10}(?:해|하세요|지시|명령|규칙)|잊.{0,10}(?:어|으세요|지시|명령)|(?:당신은|너는).{0,15}(?:이제|지금).{0,15}(?:이다|입니다|야)|새로운.{0,10}(?:지시|명령|작업|덮어쓰기)|ignor(?:e|a|ar).{0,10}(?:todas?|as|instruções|regras)|esqueç(?:a|e|er).{0,10}(?:tudo|todas?|instruções)|(?:você|tu).{0,15}(?:agora|é|és).{0,15}(?:um|uma|o)|novas?.{0,10}(?:instruções|regras|tarefa|sobrescrever)|अनदेखा.{0,10}(?:करो|करें|निर्देश|नियम)|भूल.{0,10}(?:जाओ|जाएं|निर्देश|नियम)|(?:आप|तुम).{0,15}(?:अब|हैं|हो).{0,15}(?:एक|की)|नए.{0,10}(?:निर्देश|नियम|कार्य|ओवरराइड)|ignor(?:a|are).{0,10}(?:tutt[eio]|le|istruzioni|regole)|dimentic(?:a|are).{0,10}(?:tutto|tutte|istruzioni)|(?:tu|voi).{0,15}(?:ora|sei|siete).{0,15}(?:un|una|il)|nuov[eio].{0,10}(?:istruzioni|regole|compito|sovrascrivere)|negeer.{0,10}(?:alle?|de|instructies|regels)|vergeet.{0,10}(?:alles|alle|instructies)|(?:je|jij|u).{0,15}(?:bent|nu).{0,15}(?:een|de)|nieuwe.{0,10}(?:instructies|regels|taak|overschrijven))",
+            re.IGNORECASE,
+        ),
+        weight=0.9,
+        description="Tier 1 multilingual instruction override (20 languages)",
+    ),
+    # Tier 2 Multilingual injection (8 languages) 
+    PatternRule(
+        "multilingual_injection_tier2",
+        re.compile(
+            r"(?i)(?:ігноруй.{0,10}(?:всі|інструкції|правила)|забудь.{0,10}(?:все|всі|інструкції)|(?:ти|ви).{0,15}(?:тепер|зараз).{0,15}(?:є|один|одна)|نادیده.{0,10}(?:بگیر|دستورها|قوانین)|فراموش.{0,10}(?:کن|همه|دستورها)|(?:تو|شما).{0,15}(?:حالا|اکنون).{0,15}(?:هستی|یک)|উপেক্ষা.{0,10}(?:করো|সব|নির্দেশ|নিয়ম)|ভুলে.{0,10}(?:যাও|সব|নির্দেশ)|(?:তুমি|আপনি).{0,15}(?:এখন|এই).{0,15}(?:একটি|হলে)|புறக்கணி.{0,10}(?:அனைத்தும்|வழிমுறைகள்)|மறந்து.{0,10}(?:விடு|அனைத்தும்)|(?:நீ|நீங்கள்).{0,20}(?:இப்போது|ஒரு).{0,20}(?:ஆக|உள்ளீர்)|balewalain.{0,10}(?:lahat|mga turo)|kalimutan.{0,10}(?:lahat|mga turo))",
+            re.IGNORECASE,
+        ),
+        weight=0.9,
+        description="Tier 2 multilingual instruction override (8 languages)",
     ),
 ]
 

@@ -67,6 +67,10 @@ class MiddlewareResult:
     modified_request: Optional[Dict[str, Any]] = None
 
 
+# Owner detection: delegates to RBAC config (single source of truth).
+# Middleware resolves owner status dynamically — no hardcoded user IDs here.
+# See gateway/security/rbac_config.py for owner_user_id configuration.
+
 class MiddlewareManager:
     """Manages the P1 security middleware modules."""
     
@@ -87,7 +91,8 @@ class MiddlewareManager:
         try:
             base_workspace = Path("/tmp/agentshroud/workspace")
             base_workspace.mkdir(parents=True, exist_ok=True)
-            owner_user_id = "8096968754"
+            from gateway.security.rbac_config import RBACConfig as _RBACConfig
+            owner_user_id = _RBACConfig().owner_user_id
             self.user_session_manager = UserSessionManager(
                 base_workspace=base_workspace,
                 owner_user_id=owner_user_id
@@ -453,7 +458,9 @@ class MiddlewareManager:
                     return MiddlewareResult(allowed=False, reason=f"ToolChainAnalyzer error: {str(e)}")
 
             # 1. Context Guard - Check for prompt injection and manipulation
-            if self.context_guard:
+            if self.context_guard and self._is_owner(user_id):
+                logger.info(f"ContextGuard bypassed for owner user {user_id}")
+            elif self.context_guard:
                 try:
                     message_content = request_data.get('message', '')
                     if isinstance(message_content, dict):
@@ -554,7 +561,9 @@ class MiddlewareManager:
             # 5. File Sandbox - Validate file operations (now session-aware).
             # ONLY runs for actual tool calls — plain chat messages that mention
             # file-like words (e.g. "check config.yaml") must NOT be blocked.
-            if self.file_sandbox and self.user_session_manager and self._is_tool_call_request(request_data):
+            if self._is_owner(user_id):
+                logger.debug(f"FileSandbox bypassed for owner user {user_id}")
+            elif self.file_sandbox and self.user_session_manager and self._is_tool_call_request(request_data):
                 try:
                     # Check if request contains file operations
                     message_content = request_data.get('message', '')
@@ -841,6 +850,14 @@ class MiddlewareManager:
                 allowed=False,
                 reason=f"Session isolation error: {str(e)}"
             )
+
+    def _is_owner(self, user_id: str) -> bool:
+        """Check if user_id is the system owner via RBAC config (single source of truth)."""
+        if hasattr(self, 'rbac_manager') and self.rbac_manager:
+            return self.rbac_manager.config.is_owner(user_id)
+        # Fallback: check RBACConfig defaults if no manager is initialized yet
+        from gateway.security.rbac_config import RBACConfig
+        return RBACConfig().is_owner(user_id)
 
     def _extract_file_paths(self, message: str) -> list[str]:
         """Extract potential file paths from message content."""
