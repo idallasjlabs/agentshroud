@@ -1,0 +1,5 @@
+
+# R3-L5: Exclude pre-hardening backup files from build context
+*.backup
+*.backup.*
+gateway/ingest_api/main.py.backup*
