@@ -147,7 +147,7 @@ async def test_lifespan_initialization(test_config):
     from gateway.ingest_api.main import lifespan, app, app_state
 
     # Temporarily override config loading
-    with patch("gateway.ingest_api.main.load_config", return_value=test_config):
+    with patch("gateway.ingest_api.lifespan.load_config", return_value=test_config):
         async with lifespan(app):
             # Verify app_state was initialized
             assert app_state.config == test_config

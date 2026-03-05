@@ -17,7 +17,7 @@ from gateway.web.dashboard_endpoints import alert_store, log_buffer, AlertStore,
 
 @pytest_asyncio.fixture
 async def client(test_config):
-    with patch("gateway.ingest_api.main.load_config", return_value=test_config),          patch("gateway.web.api.load_config", return_value=test_config):
+    with patch("gateway.ingest_api.lifespan.load_config", return_value=test_config),          patch("gateway.web.api.load_config", return_value=test_config):
         async with lifespan(app):
             transport = ASGITransport(app=app)
             async with AsyncClient(transport=transport, base_url="http://test") as ac:

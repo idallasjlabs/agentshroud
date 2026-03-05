@@ -25,7 +25,7 @@ from gateway.ingest_api.main import app, app_state, lifespan
 
 @pytest_asyncio.fixture
 async def client(test_config):
-    with patch("gateway.ingest_api.main.load_config", return_value=test_config):
+    with patch("gateway.ingest_api.lifespan.load_config", return_value=test_config):
         async with lifespan(app):
             transport = ASGITransport(app=app)
             async with AsyncClient(transport=transport, base_url="http://test") as ac:
@@ -35,7 +35,7 @@ async def client(test_config):
 @pytest.fixture
 def sync_client(test_config):
     """Sync TestClient for WebSocket tests"""
-    with patch("gateway.ingest_api.main.load_config", return_value=test_config):
+    with patch("gateway.ingest_api.lifespan.load_config", return_value=test_config):
         with TestClient(app) as c:
             yield c
 

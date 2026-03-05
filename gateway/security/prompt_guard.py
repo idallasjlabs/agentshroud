@@ -519,6 +519,7 @@ _PATTERNS: list[PatternRule] = [
         ),
         weight=0.75,
         description="ASCII art / steganographic instruction hiding",
+    ),
     # Tier 1 Multilingual injection (20 languages)
     PatternRule(
         "multilingual_injection_tier1",

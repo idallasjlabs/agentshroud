@@ -35,13 +35,14 @@ class TestForwardEndpoint:
         # Mock auth
         mock_auth = MagicMock()
         
-        with patch('gateway.ingest_api.main.app_state') as mock_app_state:
+        with patch('gateway.ingest_api.routes.forward.app_state') as mock_app_state, \
+             patch('gateway.ingest_api.routes.forward.create_auth_dependency') as mock_auth_dep:
             mock_app_state.middleware_manager = mock_middleware
             
             client = TestClient(app)
             
             # Mock auth dependency
-            with patch('gateway.ingest_api.main.create_auth_dependency') as mock_auth_dep:
+            if True:  # keep indentation
                 mock_auth_dep.return_value = AsyncMock()
                 
                 response = client.post(
@@ -75,13 +76,14 @@ class TestForwardEndpoint:
         
         mock_auth = MagicMock()
         
-        with patch('gateway.ingest_api.main.app_state') as mock_app_state:
+        with patch('gateway.ingest_api.routes.forward.app_state') as mock_app_state, \
+             patch('gateway.ingest_api.routes.forward.create_auth_dependency') as mock_auth_dep:
             mock_app_state.middleware_manager = mock_middleware
             
             client = TestClient(app)
             
             # Mock auth dependency
-            with patch('gateway.ingest_api.main.create_auth_dependency') as mock_auth_dep:
+            if True:  # keep indentation
                 mock_auth_dep.return_value = AsyncMock()
                 
                 response = client.post(
@@ -105,7 +107,7 @@ class TestStatusEndpoint:
     def test_status_endpoint(self):
         """Test basic status endpoint functionality."""
         
-        with patch('gateway.ingest_api.main.app_state') as mock_app_state:
+        with patch('gateway.ingest_api.routes.health.app_state') as mock_app_state:
             import time as _time
             mock_app_state.start_time = _time.time()
             mock_app_state.ledger = MagicMock()
@@ -133,13 +135,13 @@ class TestApprovalEndpoints:
         mock_approval_queue = MagicMock()
         mock_approval_queue.get_pending = AsyncMock(return_value=[])
         
-        with patch('gateway.ingest_api.main.app_state') as mock_app_state:
+        with patch('gateway.ingest_api.routes.approval.app_state') as mock_app_state:
             mock_app_state.approval_queue = mock_approval_queue
             
             client = TestClient(app)
             
             # Mock auth dependency
-            with patch('gateway.ingest_api.main.create_auth_dependency') as mock_auth_dep:
+            with patch('gateway.ingest_api.routes.approval.create_auth_dependency') as mock_auth_dep:
                 mock_auth_dep.return_value = AsyncMock()
                 
                 response = client.get(
@@ -156,13 +158,13 @@ class TestApprovalEndpoints:
         mock_approval_queue = MagicMock()
         mock_approval_queue.decide = AsyncMock(side_effect=KeyError("not found"))
         
-        with patch('gateway.ingest_api.main.app_state') as mock_app_state:
+        with patch('gateway.ingest_api.routes.approval.app_state') as mock_app_state:
             mock_app_state.approval_queue = mock_approval_queue
             
             client = TestClient(app)
             
             # Mock auth dependency
-            with patch('gateway.ingest_api.main.create_auth_dependency') as mock_auth_dep:
+            with patch('gateway.ingest_api.routes.approval.create_auth_dependency') as mock_auth_dep:
                 mock_auth_dep.return_value = AsyncMock()
                 
                 response = client.post(
