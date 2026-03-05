@@ -64,6 +64,7 @@ from ..proxy.http_proxy import ALLOWED_DOMAINS, HTTPConnectProxy
 from ..proxy.mcp_proxy import MCPProxy, MCPToolCall, MCPToolResult
 from ..proxy.mcp_config import MCPProxyConfig
 from ..proxy.web_config import WebProxyConfig
+from ..proxy.telegram_proxy import TelegramAPIProxy
 from ..proxy.web_proxy import WebProxy
 from ..proxy.webhook_receiver import WebhookReceiver
 from ..proxy.pipeline import SecurityPipeline
@@ -3217,3 +3218,43 @@ async def manage_blocklist(
     except Exception as e:
         logger.error(f"Error managing Pi-hole blocklist: {e}")
         raise HTTPException(status_code=500, detail=f"Error managing blocklist: {str(e)}")
+
+
+# === Telegram API Reverse Proxy (v0.8.0) ===
+# All bot Telegram traffic routes through this endpoint for security scanning.
+# Bot uses TELEGRAM_API_BASE_URL=http://gateway:8080/telegram-api
+
+_telegram_proxy = TelegramAPIProxy(
+    pipeline=None,  # Will be set during lifespan
+    middleware_manager=None,
+    sanitizer=None,
+)
+
+@app.api_route('/telegram-api/{path:path}', methods=['GET', 'POST', 'PUT', 'DELETE'])
+async def telegram_api_proxy(path: str, request: Request):
+    """Proxy Telegram Bot API calls through security pipeline."""
+    # Extract bot token and method from path: bot<token>/<method>
+    import re as _re
+    match = _re.match(r'^bot([^/]+)/(.+)$', path)
+    if not match:
+        raise HTTPException(status_code=400, detail='Invalid Telegram API path')
+    
+    bot_token = match.group(1)
+    method = match.group(2)
+    
+    # Read request body
+    body = await request.body() if request.method in ('POST', 'PUT') else None
+    content_type = request.headers.get('content-type')
+    
+    # Update proxy references if available
+    if hasattr(app_state, 'middleware_manager'):
+        _telegram_proxy.middleware_manager = app_state.middleware_manager
+    if hasattr(app_state, 'sanitizer'):
+        _telegram_proxy.sanitizer = app_state.sanitizer
+    
+    # Proxy the request
+    from fastapi.responses import JSONResponse
+    result = await _telegram_proxy.proxy_request(bot_token, method, body, content_type)
+    
+    status_code = 200 if result.get('ok', False) else result.get('error_code', 500)
+    return JSONResponse(content=result, status_code=status_code)
