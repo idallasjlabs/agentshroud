@@ -1951,6 +1951,15 @@ async def get_my_permissions(request: Request):
 
 
 
+def _get_pihole_auth_token() -> str:
+    """Read Pi-hole auth token from Docker secret."""
+    try:
+        with open("/run/secrets/pihole_password", "r") as f:
+            return f.read().strip()
+    except FileNotFoundError:
+        return ""
+
+
 # === Pi-hole DNS Management API (v0.8.0 Feature 1c) ===
 
 @app.get("/manage/dns")
@@ -1970,7 +1979,11 @@ async def get_dns_stats(auth: AuthRequired):
         
         # Query Pi-hole API for statistics
         async with aiohttp.ClientSession() as session:
-            async with session.get("http://pihole:80/admin/api.php?summary") as response:
+            async with session.get(
+                "http://pihole:80/admin/api.php",
+                params={"summary": ""},
+                headers={"X-Pi-hole-Auth": _get_pihole_auth_token()},
+            ) as response:
                 if response.status != 200:
                     raise HTTPException(status_code=503, detail="Pi-hole not available")
                 
@@ -2022,17 +2035,18 @@ async def manage_blocklist(
         except FileNotFoundError:
             auth_token = ""
         
-        # Build API URL
-        if action == "add":
-            api_url = f"http://pihole:80/admin/api.php?list=add&address={url}"
-        else:  # remove
-            api_url = f"http://pihole:80/admin/api.php?list=remove&address={url}"
-        
+        # Build API URL — auth sent via header, not query string (M4 fix)
+        api_params = {"list": action, "address": url}
+        api_headers = {}
         if auth_token:
-            api_url += f"&auth={auth_token}"
+            api_headers["X-Pi-hole-Auth"] = auth_token
         
         async with aiohttp.ClientSession() as session:
-            async with session.get(api_url) as response:
+            async with session.get(
+                "http://pihole:80/admin/api.php",
+                params=api_params,
+                headers=api_headers,
+            ) as response:
                 if response.status != 200:
                     raise HTTPException(status_code=503, detail="Pi-hole API not available")
                 
@@ -2040,11 +2054,11 @@ async def manage_blocklist(
                 
                 if "success" in str(result).lower():
                     # Update gravity to reload blocklists
-                    gravity_url = f"http://pihole:80/admin/api.php?updateGravity"
-                    if auth_token:
-                        gravity_url += f"&auth={auth_token}"
-                    
-                    async with session.get(gravity_url) as gravity_response:
+                    async with session.get(
+                        "http://pihole:80/admin/api.php",
+                        params={"updateGravity": ""},
+                        headers={"X-Pi-hole-Auth": auth_token} if auth_token else {},
+                    ) as gravity_response:
                         pass  # Fire and forget gravity update
                     
                     return {
@@ -2079,6 +2093,24 @@ async def manage_blocklist(
 )
 async def llm_api_proxy(request: Request, path: str):
     """Proxy Anthropic API calls through security pipeline."""
+    # M5: IP allowlist — only accept requests from the isolated Docker network
+    import ipaddress as _ipaddress
+    _ALLOWED_NETWORKS = [
+        _ipaddress.ip_network("172.21.0.0/16"),  # agentshroud-isolated
+        _ipaddress.ip_network("127.0.0.0/8"),     # loopback
+    ]
+    client_ip = request.client.host if request.client else None
+    if client_ip:
+        try:
+            addr = _ipaddress.ip_address(client_ip)
+            if not any(addr in net for net in _ALLOWED_NETWORKS):
+                logger.warning(f"LLM proxy request denied from {client_ip}")
+                raise HTTPException(status_code=403, detail="Forbidden")
+        except ValueError:
+            raise HTTPException(status_code=403, detail="Forbidden")
+    else:
+        raise HTTPException(status_code=403, detail="Forbidden")
+
     llm_proxy = getattr(app_state, "llm_proxy", None)
     if not llm_proxy:
         raise HTTPException(status_code=503, detail="LLM proxy not available")
@@ -2138,6 +2170,17 @@ async def telegram_api_proxy(path: str, request: Request):
     
     bot_token = match.group(1)
     method = match.group(2)
+    
+    # M6: Validate bot token matches the configured token
+    configured_token = None
+    try:
+        with open("/run/secrets/telegram_bot_token", "r") as f:
+            configured_token = f.read().strip()
+    except FileNotFoundError:
+        pass
+    if configured_token and not hmac.compare_digest(bot_token, configured_token):
+        logger.warning("Telegram proxy: bot token mismatch — rejecting request")
+        raise HTTPException(status_code=403, detail="Invalid bot token")
     
     # Read request body
     body = await request.body() if request.method in ('POST', 'PUT') else None
