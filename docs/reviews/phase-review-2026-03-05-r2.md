@@ -169,7 +169,7 @@ The Tailscale sidecar cannot function on an internal-only network. This is a dep
 
 ## 6. Verdict
 
-**CONDITIONAL PASS.** The blue team hardening is thorough and well-executed. The critical security fixes (scoped WS tokens, CSP nonces, IP allowlists, image pinning, error sanitization, session path traversal) are all properly implemented.
+**PASS.** The blue team hardening is thorough and well-executed. The critical security fixes (scoped WS tokens, CSP nonces, IP allowlists, image pinning, error sanitization, session path traversal) are all properly implemented.
 
 The one error (E1: Tailscale on internal network) must be fixed — though it only affects the optional Tailscale mesh feature. Warnings are code hygiene items that should be cleaned up.
 
@@ -177,4 +177,19 @@ The one error (E1: Tailscale on internal network) must be fixed — though it on
 
 ## 7. Fix Log
 
-*(To be updated after fixes are applied)*
+| ID | Fix | Commit |
+|----|-----|--------|
+| E1 | Added agentshroud-internal network to Tailscale sidecar | 1e5ed79 |
+| W1 | Removed duplicate import time in dashboard.py | fd32825 |
+| W2 | Removed redundant import threading in lifespan.py | 1e5ed79 |
+| W3 | Removed redundant import fnmatch in main.py | fd32825 |
+| W4 | Pinned Tailscale to v1.78.3 | 1e5ed79 |
+| W5 | Replaced hardcoded owner ID with RBACConfig | 1e5ed79 |
+| I1 | Added trailing newlines to route files | fd32825 |
+| I3 | Used _get_pihole_auth_token() consistently | fd32825 |
+| Bonus | CSP nonce + security headers for root control endpoint | 0b2ca46 |
+| Bonus | GPG verification for 1Password CLI install | 1e5ed79 |
+| Bonus | Strip setuid/setgid bits (CIS 4.8) | 1e5ed79 |
+
+**Test run:** 2225 passed, 0 failed, 1 warning (39.70s)
+**Pushed:** feat/v0.8.0-enforcement-hardening (0b2ca46)
