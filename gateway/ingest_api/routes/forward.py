@@ -22,6 +22,7 @@ from ..models import (
     ForwardResponse,
 )
 from ..auth import create_auth_dependency
+from ..state import app_state
 from ..router import ForwardError
 from ..event_bus import make_event
 from ...proxy.webhook_receiver import WebhookReceiver
@@ -45,7 +46,6 @@ _IMESSAGE_SEND_TOOL = "tool_send_message"
 # Authentication dependency
 async def auth_dep(request: Request):
     """Auth dependency that uses the app state config."""
-    app_state = request.app.state.app_state
     if not hasattr(app_state, "config"):
         raise HTTPException(
             status_code=status.HTTP_401_UNAUTHORIZED,
@@ -84,7 +84,6 @@ async def telegram_webhook(request: Request, auth: AuthRequired):
         payload = {}
 
     # Access app_state via request.app.state.app_state
-    app_state = request.app.state.app_state
 
     # Build receiver using available app_state components
     pipeline = getattr(app_state, "pipeline", None)
@@ -109,7 +108,6 @@ async def email_send(request: EmailSendRequest, req: Request, auth: AuthRequired
 
     Authentication required.
     """
-    app_state = req.app.state.app_state
     now = datetime.now(timezone.utc).isoformat().replace("+00:00", "Z")
 
     # PII scan on body
@@ -185,7 +183,6 @@ async def forward_content(request: ForwardRequest, req: Request, auth: AuthRequi
 
     Authentication required.
     """
-    app_state = req.app.state.app_state
     logger.info(
         f"Ingest request: source={request.source}, "
         f"type={request.content_type}, size={len(request.content)}"

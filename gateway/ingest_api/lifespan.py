@@ -2,6 +2,7 @@
 """Application lifespan management for the AgentShroud Gateway"""
 
 import logging
+import time
 import os
 import subprocess
 import threading
@@ -25,6 +26,14 @@ from .middleware import MiddlewareManager
 from .event_bus import EventBus
 from ..proxy.pipeline import SecurityPipeline
 from gateway.security.session_manager import UserSessionManager
+from ..proxy.mcp_proxy import MCPProxy
+from ..proxy.mcp_config import MCPProxyConfig
+from ..proxy.web_config import WebProxyConfig
+from ..proxy.web_proxy import WebProxy
+from ..proxy.http_proxy import ALLOWED_DOMAINS, HTTPConnectProxy
+from ..ssh_proxy.proxy import SSHProxy
+from ..security.killswitch_monitor import KillSwitchMonitor
+from ..web.dashboard_endpoints import install_log_handler
 
 if TYPE_CHECKING:
     pass
@@ -37,6 +46,8 @@ async def lifespan(app: FastAPI):
     """FastAPI lifespan - startup and shutdown"""
 
     # === STARTUP ===
+    # Make app_state accessible via request.app.state for route files
+    app.state.app_state = app_state
     logger.info("=" * 80)
     logger.info("AgentShroud Gateway starting up...")
 
