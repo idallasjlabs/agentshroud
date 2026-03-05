@@ -16,6 +16,7 @@ services:
     - gateway-data:/app/data
     - ../web:/app/web:ro
     - ../gateway:/app/gateway:ro
+    - ../gateway:/app/gateway:ro
     - agentshroud-workspace:/data/bot-workspace:ro
     secrets:
     - gateway_password
@@ -24,6 +25,7 @@ services:
     - PYTHONUNBUFFERED=1
     - LOG_LEVEL=INFO
     - PYTHONDONTWRITEBYTECODE=1
+    - PYTHONPYCACHEPREFIX=/tmp/pycache
     - PYTHONPYCACHEPREFIX=/tmp/pycache
     - GATEWAY_AUTH_TOKEN_FILE=/run/secrets/gateway_password
     - OP_SERVICE_ACCOUNT_TOKEN_FILE=/run/secrets/1password_service_account
@@ -53,8 +55,7 @@ services:
 
     # Route gateway DNS through Pi-hole sinkhole
     dns:
-      - 8.8.8.8
-      - 8.8.4.4
+      - 172.21.0.10
 
     # Network - Gateway on BOTH networks to act as proxy
     networks:
@@ -68,6 +69,9 @@ services:
     image: pihole/pihole@sha256:ee348529cea9601df86ad94d62a39cad26117e1eac9e82d8876aa0ec7fe1ba27
     container_name: agentshroud-pihole
     hostname: pihole
+    dns:
+    - 8.8.8.8
+    - 8.8.4.4
     restart: unless-stopped
 
     environment:
@@ -94,6 +98,7 @@ services:
     networks:
       agentshroud-isolated:
         ipv4_address: 172.21.0.10
+      agentshroud-internal: {}
 
   # AgentShroud Bot (Real AgentShroud Platform) - agentshroud.ai
   # SECURITY: Fully isolated - NO host filesystem access, NO LAN access
@@ -122,6 +127,7 @@ services:
     environment:
     - NODE_ENV=production
     - OPENCLAW_GATEWAY_BIND=lan
+    - OP_SERVICE_ACCOUNT_TOKEN_FILE=/run/secrets/1password_service_account
     - OP_SERVICE_ACCOUNT_TOKEN_FILE=/run/secrets/1password_service_account
     - OPENCLAW_GATEWAY_PASSWORD_FILE=/run/secrets/gateway_password
     - TELEGRAM_BOT_TOKEN_FILE=/run/secrets/telegram_bot_token
@@ -171,8 +177,7 @@ services:
       pihole:
         condition: service_started
     dns:
-    - 8.8.8.8
-    - 8.8.4.4
+    - 172.21.0.10
 
   # ── Tailscale mesh VPN sidecar (D4 / Fix-10 mTLS) ─────────────────────────
   # Provides encrypted mesh networking between gateway and bot containers.
