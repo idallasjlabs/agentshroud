@@ -1,98 +1,218 @@
-# Blue Team Security Assessment — AgentShroud v0.8.0 (Round 2)
+# Blue Team Security Assessment — AgentShroud v0.8.0 Round 2
 
-**Date:** 2026-03-05
-**Branch:** `feat/v0.8.0-enforcement-hardening`
-**Assessor:** agentshroud-bot (automated blue team)
-**Scope:** Re-assessment after all Round 1 and Round 1-Final findings were fixed
-
----
-
-## Prior Findings Verification
-
-All findings from `blue-team-assessment-v0.8.0.md` and `blue-team-assessment-v0.8.0-final.md` were spot-checked and confirmed fixed:
-
-| ID | Finding | Status |
-|----|---------|--------|
-| C1/C2 | Hardcoded owner IDs | ✅ Fixed — removed from code |
-| M1 | Root endpoint info leak / no auth | ✅ Fixed — auth required, Tailscale IP redacted |
-| M2 | `python-jose` CVEs | ✅ Fixed — removed from requirements.txt |
-| M3 | CSP `unsafe-inline` on dashboard | ✅ Fixed — nonce-based CSP with security headers |
-| M4 | Pi-hole auth token in query string | ✅ Fixed — moved to `X-Pi-hole-Auth` header |
-| M5 | LLM proxy missing IP allowlist | ✅ Fixed — `172.21.0.0/16` + loopback only |
-| M6 | Telegram proxy missing token validation | ✅ Fixed — `hmac.compare_digest` with Docker secret |
-| M7 | Trivy installed without checksum | ⚠️ Partially — version pinned but no checksum verification (see R2-M1) |
-| M8 | Base images not SHA-pinned | ✅ Fixed — both Dockerfiles use `@sha256:` digests |
-| L1-L8 | Various low findings | ✅ Fixed |
+**Date:** 2026-03-05  
+**Branch:** `feat/v0.8.0-enforcement-hardening`  
+**Assessor:** AgentShroud Bot (automated blue team)  
+**Scope:** Fresh clean-slate assessment after Round 1 remediation  
 
 ---
 
-## New Findings (Round 2)
+## Executive Summary
 
-### R2-M1: Trivy .deb Download Without Checksum Verification (MEDIUM)
+Round 2 assessment finds the codebase significantly improved after Round 1 fixes.
+The major issues from Round 1 (hardcoded owner IDs, python-jose CVEs, Pi-hole auth
+token in query strings, missing IP allowlists, missing CSP) are all properly
+remediated. However, this fresh assessment uncovered **1 CRITICAL**, **2 HIGH**,
+**3 MEDIUM**, and **3 LOW** new findings.
 
-**Location:** `gateway/Dockerfile` line 25, `docker/Dockerfile.agentshroud` line 27
-**Description:** The M7 fix from Round 1 pinned Trivy to version 0.58.2 but the `RUN` command downloads the .deb without verifying a SHA256 checksum. A compromised CDN or MITM during build could inject a malicious binary. The round 1 assessment comment says "checksum verification" but no checksum is actually checked.
-
-**Risk:** Supply chain compromise during container build.
-**Remediation:** Download the `trivy_0.58.2_Linux-*.deb` checksums file, verify with `sha256sum -c`, then install.
-
-### R2-M2: Telegram Proxy Token Validation Bypass When Secret Missing (MEDIUM)
-
-**Location:** `gateway/ingest_api/main.py` lines 2175-2183
-**Description:** The Telegram API proxy validates the bot token using `hmac.compare_digest`, but if the Docker secret file `/run/secrets/telegram_bot_token` does not exist, `configured_token` remains `None` and the guard `if configured_token and ...` is skipped. This means **any** bot token in the URL path will be accepted and proxied to `api.telegram.org` — allowing an attacker with network access to use the proxy as an open relay to the Telegram API with arbitrary tokens.
-
-**Risk:** Open relay when secret file is missing (misconfiguration or development). Combined with the missing IP allowlist (R2-M3), this is exploitable from broader networks.
-**Remediation:** When `configured_token` is `None`, reject all requests with 503 ("Telegram proxy not configured") rather than silently allowing any token.
-
-### R2-M3: Telegram Proxy Missing IP Allowlist (MEDIUM)
-
-**Location:** `gateway/ingest_api/main.py` lines 2162-2201
-**Description:** The LLM proxy endpoint (`/v1/{path}`) was hardened with an IP allowlist restricting access to `172.21.0.0/16` (isolated Docker network) and loopback. The Telegram proxy endpoint (`/telegram-api/{path}`) has no equivalent IP restriction. On the `internal: true` Docker network this is partially mitigated, but defense-in-depth requires parity. If the gateway is ever exposed beyond the isolated network (e.g., Tailscale, misconfigured reverse proxy), the Telegram proxy would be accessible.
-
-**Risk:** Unauthorized use of Telegram proxy from non-isolated networks.
-**Remediation:** Add the same IP allowlist to the Telegram proxy endpoint.
-
-### R2-M4: Root Endpoint Missing CSP and Security Headers (MEDIUM)
-
-**Location:** `gateway/ingest_api/main.py` lines 255-342
-**Description:** The `/` (system control) endpoint returns HTML with inline `<script>` (auto-refresh) and `<style>` tags but has no `Content-Security-Policy` header. The dashboard endpoint was correctly fixed with nonce-based CSP and security headers (`X-Content-Type-Options`, `X-Frame-Options`, `Referrer-Policy`), but the root endpoint was missed. This is inconsistent and leaves the main dashboard HTML page without XSS protections.
-
-**Risk:** XSS if any user-controlled content is ever reflected in the root page.
-**Remediation:** Add nonce-based CSP and security headers to the root endpoint response, matching the dashboard pattern.
-
-### R2-L1: Auth Token Logged in Plaintext on Generation (LOW)
-
-**Location:** `gateway/ingest_api/config.py` lines 429-435
-**Description:** When no auth token is configured and one is auto-generated, the full token value is logged at WARNING level via `logger.warning()`. This token appears in container logs (`docker logs`), CI/CD output, and any log aggregation system. While necessary for initial setup, the token should be written to a file or shown via a secure channel rather than logged.
-
-**Risk:** Token exposure in log files.
-**Remediation:** Write the generated token to a file (e.g., `/tmp/agentshroud-auth-token`) and log only the file path, not the token value.
-
-### R2-L2: Telegram Proxy Returns Internal Exception Details (LOW)
-
-**Location:** `gateway/proxy/telegram_proxy.py` line 75
-**Description:** When the Telegram API forward fails, the proxy returns `"description": str(e)` in the error response. Internal exception messages may reveal server internals (hostnames, connection details, stack info). The LLM proxy has the same pattern but is IP-restricted.
-
-**Risk:** Information disclosure to callers.
-**Remediation:** Return a generic error message; log the full exception server-side.
-
-### R2-L3: LLM Proxy `_ALLOWED_NETWORKS` Parsed on Every Request (LOW)
-
-**Location:** `gateway/ingest_api/main.py` lines 2092-2095
-**Description:** The IP allowlist networks are constructed inside the endpoint function, meaning `ip_network()` is called on every request. This is a minor performance concern and also means the import happens inside the function body. Should be module-level constants.
-
-**Risk:** Performance; no direct security impact.
-**Remediation:** Move `_ALLOWED_NETWORKS` and the `ipaddress` import to module level.
+| Severity | Count | Status |
+|----------|-------|--------|
+| CRITICAL | 1     | ⚠️ Must Fix |
+| HIGH     | 2     | ⚠️ Should Fix |
+| MEDIUM   | 3     | ℹ️ Fix Soon |
+| LOW      | 3     | ℹ️ Informational |
 
 ---
 
-## Summary
+## CRITICAL Findings
 
-| Severity | Count | IDs |
-|----------|-------|-----|
-| CRITICAL | 0 | — |
-| HIGH | 0 | — |
-| MEDIUM | 4 | R2-M1, R2-M2, R2-M3, R2-M4 |
-| LOW | 3 | R2-L1, R2-L2, R2-L3 |
+### R2-C1: RBAC Management Endpoints Missing Authentication
 
-All prior Round 1 and Round 1-Final findings are confirmed fixed. No critical or high severity issues found in Round 2. The four medium findings are defense-in-depth improvements addressing gaps in the recent fixes.
+**Severity:** CRITICAL  
+**Location:** `gateway/ingest_api/main.py` lines 1833–1950  
+**Endpoints affected:**
+- `GET /manage/rbac/users` (line 1833)
+- `PUT /manage/rbac/users/{target_user_id}/role` (line 1871)
+- `GET /manage/rbac/users/{user_id}/permissions` (line 1904)
+- `GET /manage/rbac/me` (line 1932)
+
+**Issue:** All four RBAC management endpoints lack the `auth: AuthRequired` dependency
+that protects every other management endpoint. They rely solely on a client-supplied
+`X-User-ID` header for identity — trivially spoofable.
+
+**Impact:** An unauthenticated attacker with network access to the gateway can:
+1. Enumerate all users and their roles (`GET /manage/rbac/users`)
+2. Escalate any user to OWNER by setting `X-User-ID` to the owner's ID and calling
+   `PUT /manage/rbac/users/{target}/role?role=owner`
+3. Read permissions of any user
+
+**Proof of concept:**
+```bash
+curl -H "X-User-ID: 8096968754" \
+  http://127.0.0.1:8080/manage/rbac/users
+```
+
+**Fix:** Add `auth: AuthRequired` to all four endpoint signatures.
+
+---
+
+## HIGH Findings
+
+### R2-H1: 1Password CLI Download Without Checksum Verification (Bot Dockerfile)
+
+**Severity:** HIGH  
+**Location:** `docker/Dockerfile.agentshroud` lines ~34-39
+
+**Issue:** The 1Password CLI binary is downloaded via `curl` and installed without
+any GPG signature or SHA256 checksum verification. Unlike the gateway Dockerfile
+which installs 1Password via the signed apt repository, the bot Dockerfile
+downloads a raw zip file:
+
+```dockerfile
+RUN ARCH=$(dpkg --print-architecture) && \
+    curl -L -o /tmp/op.zip "https://cache.agilebits.com/dist/1P/op2/pkg/v2.32.0/op_linux_${ARCH}_v2.32.0.zip" && \
+    unzip -q /tmp/op.zip -d /tmp/ && \
+    mv /tmp/op /usr/local/bin/op && ...
+```
+
+**Impact:** A supply chain attacker who compromises the CDN or performs MITM
+could inject a malicious binary that has access to all 1Password secrets.
+
+**Fix:** Verify the GPG signature (`op.sig`) against AgileBits' public key, or
+add SHA256 checksum verification for both architectures.
+
+### R2-H2: Bot Dockerfile Missing setuid/setgid Bit Stripping (CIS 4.8)
+
+**Severity:** HIGH  
+**Location:** `docker/Dockerfile.agentshroud`
+
+**Issue:** The gateway Dockerfile correctly strips setuid/setgid bits before
+switching to non-root user:
+```dockerfile
+RUN find / -perm /6000 -type f -exec chmod a-s {} + 2>/dev/null || true
+```
+
+The bot Dockerfile does NOT have this step. Any setuid binary in the base image
+or installed packages (e.g., `gosu`, `su`, `mount`) could be exploited for
+privilege escalation within the container.
+
+**Fix:** Add the same `find / -perm /6000 ...` step before `USER node`.
+
+---
+
+## MEDIUM Findings
+
+### R2-M1: Missing `aiohttp` in `requirements.txt`
+
+**Severity:** MEDIUM  
+**Location:** `gateway/requirements.txt`, `gateway/ingest_api/main.py` lines 1978, 2029
+
+**Issue:** The Pi-hole DNS management endpoints (`/manage/dns`, `/manage/dns/blocklist`)
+use `import aiohttp` at runtime, but `aiohttp` is not listed in `requirements.txt`.
+This means:
+1. Fresh installs will fail at runtime when these endpoints are called
+2. The dependency is implicitly satisfied in Docker by another package pulling it in,
+   but this is fragile
+
+**Fix:** Add `aiohttp>=3.9.0,<4.0.0` to `requirements.txt`.
+
+### R2-M2: WebSocket Endpoints in `web/api.py` Use Full Auth Token (Not Scoped)
+
+**Severity:** MEDIUM  
+**Location:** `gateway/web/api.py` lines 771-825 (`ws_logs`, `ws_updates`)
+
+**Issue:** The `/api/ws/logs` and `/api/ws/updates` WebSocket endpoints accept the
+full gateway auth token as a query parameter. Unlike the dashboard's `/ws/activity`
+endpoint which uses scoped single-use WS tokens (`ws_*` prefix), these endpoints
+directly compare against the master `config.auth_token`.
+
+WebSocket tokens in query parameters appear in server logs, browser history, and
+referrer headers. Using the full auth token here means token exposure from WS
+connection logs could compromise all API authentication.
+
+The dashboard correctly implemented scoped WS tokens (per Round 1 fix), but the
+management API WebSocket endpoints were not updated to match.
+
+**Fix:** Migrate `/api/ws/logs` and `/api/ws/updates` to use the same scoped
+WS token pattern as `/ws/activity`.
+
+### R2-M3: Trivy Downloads Without Checksum Verification (Both Dockerfiles)
+
+**Severity:** MEDIUM  
+**Location:** `gateway/Dockerfile` line 50, `docker/Dockerfile.agentshroud` line 27
+
+**Issue:** Both Dockerfiles download the Trivy `.deb` package via curl without
+SHA256 checksum verification:
+```dockerfile
+curl -sSfL -o /tmp/trivy.deb "https://github.com/.../trivy_${TRIVY_VERSION}_Linux-${ARCH}.deb"
+dpkg -i /tmp/trivy.deb
+```
+
+While the version is pinned (good), there's no integrity check on the downloaded
+binary. A GitHub CDN compromise or MITM could inject a malicious scanner binary.
+
+**Fix:** Add SHA256 checksum verification for both architectures.
+
+---
+
+## LOW Findings
+
+### R2-L1: No Global Security Headers Middleware for API Responses
+
+**Severity:** LOW  
+**Location:** `gateway/ingest_api/main.py`
+
+**Issue:** Security headers (`X-Content-Type-Options`, `X-Frame-Options`,
+`Cache-Control: no-store`) are only set on the dashboard HTML response. API
+responses lack these headers. While the gateway binds to localhost only, adding
+basic security headers to all responses is defense-in-depth best practice.
+
+### R2-L2: WebSocket Connection Leak in `web/api.py`
+
+**Severity:** LOW  
+**Location:** `gateway/web/api.py` lines 767-799
+
+**Issue:** The `active_websockets` list in `ws_logs` only cleans up on
+`WebSocketDisconnect`. If the connection fails with a different exception
+(e.g., `ConnectionResetError`), the stale WebSocket reference remains in the
+list indefinitely, causing a memory leak and potential errors when iterating.
+
+**Fix:** Use a `finally` block for cleanup.
+
+### R2-L3: OCI Image Version Labels Outdated
+
+**Severity:** LOW  
+**Location:** `gateway/Dockerfile` (label says 0.7.0), `docker/Dockerfile.agentshroud` (label says 0.2.0)
+
+**Issue:** The `org.opencontainers.image.version` labels are outdated —
+gateway says "0.7.0" and bot says "0.2.0" while the actual version is 0.8.0.
+This causes confusion when inspecting running containers.
+
+---
+
+## Verification of Round 1 Fixes
+
+All Round 1 critical/high/medium/low findings were verified as properly fixed:
+
+| R1 ID | Finding | Status |
+|-------|---------|--------|
+| C1 | Hardcoded owner Telegram ID in middleware | ✅ Fixed — resolved dynamically via RBACConfig |
+| C2 | Hardcoded owner ID in session_manager | ✅ Fixed — loaded from RBACConfig |
+| H1 | python-jose CVE dependency | ✅ Fixed — removed from requirements.txt |
+| H2 | Pi-hole auth token in URL query string | ✅ Fixed — uses X-Pi-hole-Auth header |
+| H3 | No IP allowlist on LLM proxy | ✅ Fixed — 172.21.0.0/16 + 127.0.0.0/8 only |
+| H4 | No bot token validation on Telegram proxy | ✅ Fixed — hmac.compare_digest check |
+| M1 | No CSP on dashboard | ✅ Fixed — nonce-based CSP implemented |
+| M2 | WebSocket full token exposure (dashboard) | ✅ Fixed — scoped single-use ws_ tokens |
+| M3 | Trivy version not pinned | ✅ Fixed — pinned to 0.58.2 |
+| M4 | Docker base images not pinned | ✅ Fixed — SHA256 digests used |
+| L1-L4 | Various low severity | ✅ All fixed |
+
+---
+
+## Recommendations
+
+1. **Immediate (CRITICAL):** Add `auth: AuthRequired` to all RBAC endpoints
+2. **Before release (HIGH):** Add checksum verification for 1Password CLI download; add setuid stripping to bot Dockerfile
+3. **Soon (MEDIUM):** Add aiohttp to requirements.txt; migrate management WS endpoints to scoped tokens; add Trivy checksums
+4. **Backlog (LOW):** Add global security headers middleware; fix WS cleanup; update OCI labels
