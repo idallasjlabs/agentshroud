@@ -2,20 +2,41 @@
 """Health check endpoint for the AgentShroud Gateway"""
 
 import time
+from typing import Annotated
 
-from fastapi import APIRouter
+from fastapi import APIRouter, Depends, HTTPException, Request
 
+from ..auth import create_auth_dependency
 from ..models import StatusResponse
 from ..state import app_state
 
 router = APIRouter()
 
 
-@router.get("/status", response_model=StatusResponse)
-async def health_check():
-    """Health check endpoint
+async def auth_dep(request: Request):
+    """Auth dependency that uses the app state config."""
+    if not hasattr(app_state, "config"):
+        raise HTTPException(status_code=401, detail="Service not initialized")
+    dep = create_auth_dependency(app_state.config)
+    await dep(request)
 
-    No authentication required.
+AuthRequired = Annotated[None, Depends(auth_dep)]
+
+
+@router.get("/status")
+async def health_check():
+    """Minimal health check endpoint — no authentication required.
+
+    Returns only basic liveness info. Detailed status requires auth via /status/detail.
+    """
+    return {"status": "healthy", "version": "0.8.0"}
+
+
+@router.get("/status/detail", response_model=StatusResponse)
+async def health_check_detail(auth: AuthRequired):
+    """Detailed health check endpoint — authentication required.
+
+    Returns full system status including security posture.
     """
     uptime = time.time() - app_state.start_time
     stats = await app_state.ledger.get_stats()
