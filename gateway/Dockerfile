@@ -47,7 +47,15 @@ RUN apt-get update && apt-get install -y --no-install-recommends curl ca-certifi
 
 # Trivy vulnerability scanner — pinned version (M7 fix)
 ARG TRIVY_VERSION=0.58.2
-RUN ARCH=$(dpkg --print-architecture) &&     curl -sSfL -o /tmp/trivy.deb "https://github.com/aquasecurity/trivy/releases/download/v${TRIVY_VERSION}/trivy_${TRIVY_VERSION}_Linux-${ARCH}.deb" &&     dpkg -i /tmp/trivy.deb &&     rm /tmp/trivy.deb
+# R2-M1: Download Trivy with checksum verification for supply chain integrity
+RUN ARCH=$(dpkg --print-architecture) && \
+    curl -sSfL -o /tmp/trivy.deb \
+        "https://github.com/aquasecurity/trivy/releases/download/v${TRIVY_VERSION}/trivy_${TRIVY_VERSION}_Linux-${ARCH}.deb" && \
+    curl -sSfL -o /tmp/trivy_checksums.txt \
+        "https://github.com/aquasecurity/trivy/releases/download/v${TRIVY_VERSION}/trivy_${TRIVY_VERSION}_checksums.txt" && \
+    cd /tmp && grep "trivy_${TRIVY_VERSION}_Linux-${ARCH}.deb" trivy_checksums.txt | sha256sum -c - && \
+    dpkg -i /tmp/trivy.deb && \
+    rm /tmp/trivy.deb /tmp/trivy_checksums.txt
 
 # Create non-root user
 RUN useradd --create-home --shell /bin/bash --uid 1000 agentshroud
