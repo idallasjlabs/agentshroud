@@ -1,16 +1,20 @@
-# Marvin Production Instance
+# Marvin Production Instance (Colima / agentshroud-bot user)
 # Usage: docker compose -f docker/docker-compose.yml -f docker/docker-compose.marvin-prod.yml -p agentshroud up -d
 # Bot: @agentshroud_bot (production)
-# Ports: gateway 8080, bot 18789
+# Ports: gateway 9080 (offset +1000), bot 19789 (offset +1000)
+# These ports avoid conflict with the primary bot instance on 8080/18789
 services:
   gateway:
     ports: !override
-      - "127.0.0.1:8080:8080"
+      - "127.0.0.1:9080:8080"
+    environment:
+      - AGENTSHROUD_PORT_OFFSET=0
+      - AGENTSHROUD_INSTANCE=marvin-prod
 
   agentshroud:
     hostname: agentshroud
     ports: !override
-      - "127.0.0.1:18789:18789"
+      - "127.0.0.1:19789:18789"
     environment:
       - NODE_ENV=production
       - OPENCLAW_GATEWAY_BIND=lan
@@ -21,6 +25,15 @@ services:
       - OPENCLAW_DISABLE_HOST_FILESYSTEM=true
       - OPENCLAW_SANDBOX_MODE=strict
       - OPENCLAW_DISABLE_BONJOUR=1
+      # Route ALL Telegram API calls through AgentShroud gateway
+      - TELEGRAM_API_BASE_URL=http://gateway:8080/telegram-api
+      # Route ALL LLM API calls through gateway for message scanning
+      - ANTHROPIC_BASE_URL=http://gateway:8080
+      # Route ALL outbound HTTP through gateway CONNECT proxy
+      - HTTP_PROXY=http://gateway:8181
+      - HTTPS_PROXY=http://gateway:8181
+      # Exclude internal gateway from proxy
+      - NO_PROXY=gateway,localhost,127.0.0.1
       - TELEGRAM_BOT_TOKEN_FILE=/run/secrets/telegram_bot_token
     secrets:
       - gateway_password
@@ -28,7 +41,15 @@ services:
     extra_hosts:
       - "host.docker.internal:host-gateway"
       - "marvin.tail240ea8.ts.net:host-gateway"
+      # DNS redirect: Anthropic API -> gateway for message-level security
+      - "api.anthropic.com:host-gateway"
+
+  pihole:
+    ports: !override
+      - "127.0.0.1:6353:53/tcp"
+      - "127.0.0.1:6353:53/udp"
+      - "127.0.0.1:6380:80/tcp"
 
 secrets:
   telegram_bot_token:
-    file: ./secrets/telegram_bot_token_production.txt
+    file: ./secrets/telegram_bot_token_marvin.txt
