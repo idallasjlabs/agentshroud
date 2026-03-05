@@ -44,12 +44,12 @@ services:
       # DNS redirect: Anthropic API -> gateway for message-level security
       - "api.anthropic.com:host-gateway"
 
-secrets:
-  telegram_bot_token:
-    file: ./secrets/telegram_bot_token_production.txt
-
   pihole:
     ports: !override
       - "127.0.0.1:6353:53/tcp"
       - "127.0.0.1:6353:53/udp"
       - "127.0.0.1:6380:80/tcp"
+
+secrets:
+  telegram_bot_token:
+    file: ./secrets/telegram_bot_token_marvin.txt
