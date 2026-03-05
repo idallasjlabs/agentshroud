@@ -114,7 +114,12 @@ async def approval_websocket(websocket: WebSocket, token: str | None = Query(Non
     # Access app_state from websocket state
     app_state = websocket.scope["app"].state.app_state
     
-    if not token or not hmac.compare_digest(token, app_state.config.auth_token):
+    # L5: Accept scoped WS tokens (short-lived, single-use) alongside master token
+    from .dashboard import _validate_ws_token
+    if not token or (
+        not _validate_ws_token(token)
+        and not hmac.compare_digest(token, app_state.config.auth_token)
+    ):
         await websocket.close(code=4003, reason="Authentication failed")
         await app_state.event_bus.emit(
             make_event("auth_failed", "WebSocket authentication failed", {}, "warning")
