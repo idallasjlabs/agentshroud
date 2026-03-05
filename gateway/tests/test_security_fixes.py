@@ -19,6 +19,7 @@ from unittest.mock import patch, AsyncMock
 from httpx import AsyncClient, ASGITransport
 from starlette.testclient import TestClient
 from starlette.websockets import WebSocketDisconnect
+from gateway.ingest_api.routes.dashboard import _create_ws_token
 
 from gateway.ingest_api.main import app, app_state, lifespan
 
@@ -137,8 +138,9 @@ class TestWebSocketHandshakeAuth:
                 ws.receive_json()
 
     def test_ws_activity_accepts_valid_token(self, sync_client):
-        """WS /ws/activity accepts valid token in query param"""
-        with sync_client.websocket_connect("/ws/activity?token=test-token-12345") as ws:
+        """WS /ws/activity accepts valid scoped WS token"""
+        ws_token = _create_ws_token()
+        with sync_client.websocket_connect(f"/ws/activity?token={ws_token}") as ws:
             msg = ws.receive_json()
             assert msg["type"] == "authenticated"
 
@@ -302,3 +304,79 @@ class TestDashboardSecureCookie:
         cookie_header = resp.headers.get("set-cookie", "")
         # On HTTP, secure flag should NOT be present
         assert "; secure" not in cookie_header.lower()
+
+
+# === R3: Management WS Token Scoping (R3-M2) ===
+
+
+class TestManagementWSTokenScoping:
+    """Management WebSocket endpoints should use scoped tokens, not master auth."""
+
+    def test_ws_activity_rejects_master_token(self, sync_client):
+        """WS /ws/activity should reject master auth token (R3-L4)"""
+        with pytest.raises((WebSocketDisconnect, Exception)):
+            with sync_client.websocket_connect("/ws/activity?token=test-token-12345") as ws:
+                ws.receive_json()
+
+    def test_ws_activity_rejects_empty_token(self, sync_client):
+        """WS /ws/activity should reject empty token"""
+        with pytest.raises((WebSocketDisconnect, Exception)):
+            with sync_client.websocket_connect("/ws/activity?token=") as ws:
+                ws.receive_json()
+
+    def test_ws_activity_accepts_scoped_token(self, sync_client):
+        """WS /ws/activity should accept scoped ws_ token"""
+        ws_token = _create_ws_token()
+        assert ws_token.startswith("ws_")
+        with sync_client.websocket_connect(f"/ws/activity?token={ws_token}") as ws:
+            msg = ws.receive_json()
+            assert msg["type"] == "authenticated"
+
+    def test_scoped_ws_token_is_single_use(self, sync_client):
+        """Scoped WS token should be consumed after first use (single-use)"""
+        ws_token = _create_ws_token()
+        # First use should succeed
+        with sync_client.websocket_connect(f"/ws/activity?token={ws_token}") as ws:
+            msg = ws.receive_json()
+            assert msg["type"] == "authenticated"
+        # Second use of same token should fail
+        with pytest.raises((WebSocketDisconnect, Exception)):
+            with sync_client.websocket_connect(f"/ws/activity?token={ws_token}") as ws:
+                ws.receive_json()
+
+
+# === R3: Global Security Headers (R3-L1) ===
+
+
+class TestGlobalSecurityHeaders:
+    """All API responses should include basic security headers."""
+
+    @pytest.mark.asyncio
+    async def test_status_has_security_headers(self, client):
+        """GET /status should include security headers"""
+        resp = await client.get("/status")
+        assert resp.status_code == 200
+        assert resp.headers.get("X-Content-Type-Options") == "nosniff"
+        assert resp.headers.get("X-Frame-Options") == "DENY"
+
+    @pytest.mark.asyncio
+    async def test_json_api_has_cache_control(self, client):
+        """JSON API responses should have Cache-Control: no-store"""
+        resp = await client.get("/status")
+        assert resp.status_code == 200
+        assert "no-store" in resp.headers.get("Cache-Control", "")
+
+
+# === R3: Version Consistency (R3-M3) ===
+
+
+class TestVersionConsistency:
+    """Version strings should be consistent across the codebase."""
+
+    @pytest.mark.asyncio
+    async def test_status_returns_current_version(self, client):
+        """GET /status should return version 0.8.0"""
+        resp = await client.get("/status")
+        assert resp.status_code == 200
+        data = resp.json()
+        assert data["version"] == "0.8.0"
