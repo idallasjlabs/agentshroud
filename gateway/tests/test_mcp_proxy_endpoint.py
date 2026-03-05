@@ -16,7 +16,7 @@ from gateway.ingest_api.main import app, lifespan
 
 @pytest_asyncio.fixture
 async def client(test_config, auth_headers):
-    with patch("gateway.ingest_api.main.load_config", return_value=test_config), patch(
+    with patch("gateway.ingest_api.lifespan.load_config", return_value=test_config), patch(
         "gateway.ingest_api.router.MultiAgentRouter.forward_to_agent",
         new_callable=AsyncMock,
     ) as mock_forward:

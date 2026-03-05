@@ -21,6 +21,7 @@ from fastapi.responses import JSONResponse, HTMLResponse
 from starlette.responses import RedirectResponse
 
 from ..auth import create_auth_dependency
+from ..state import app_state
 from ..event_bus import make_event
 
 # Create router
@@ -33,7 +34,6 @@ logger = logging.getLogger(__name__)
 # Authentication dependency
 async def auth_dep(request: Request):
     """Auth dependency that uses the app state config."""
-    app_state = request.app.state.app_state
     if not hasattr(app_state, "config"):
         raise HTTPException(
             status_code=401,
@@ -82,7 +82,6 @@ async def serve_dashboard(request: Request, token: str | None = Query(None)):
     On first auth via query param, sets an httpOnly cookie and redirects
     to a clean URL (token removed from query string / browser history).
     """
-    app_state = request.app.state.app_state
 
     # Check cookie first
     cookie_token = request.cookies.get("dashboard_token")
@@ -126,7 +125,6 @@ async def serve_dashboard(request: Request, token: str | None = Query(None)):
 @router.get("/dashboard/stats")
 async def dashboard_stats(req: Request, auth: AuthRequired):
     """JSON stats for dashboard"""
-    app_state = req.app.state.app_state
     uptime = time.time() - app_state.start_time
     ledger_stats = await app_state.ledger.get_stats()
     pending = await app_state.approval_queue.get_pending()
@@ -156,7 +154,6 @@ async def dashboard_ws_token(request: Request):
     The dashboard JS calls this to get the token for WebSocket connections,
     avoiding direct token injection into HTML (XSS mitigation).
     """
-    app_state = request.app.state.app_state
     cookie_token = request.cookies.get("dashboard_token")
     if not cookie_token or not hmac.compare_digest(
         cookie_token, app_state.config.auth_token
