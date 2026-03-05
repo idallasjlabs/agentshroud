@@ -2157,6 +2157,24 @@ _telegram_proxy = TelegramAPIProxy(
 @app.api_route('/telegram-api/{path:path}', methods=['GET', 'POST', 'PUT', 'DELETE'])
 async def telegram_api_proxy(path: str, request: Request):
     """Proxy Telegram Bot API calls through security pipeline."""
+    # R2-M3: IP allowlist — mirror LLM proxy restrictions for defense-in-depth
+    import ipaddress as _ipaddress
+    _TG_ALLOWED_NETWORKS = [
+        _ipaddress.ip_network("172.21.0.0/16"),  # agentshroud-isolated
+        _ipaddress.ip_network("127.0.0.0/8"),     # loopback
+    ]
+    client_ip = request.client.host if request.client else None
+    if client_ip:
+        try:
+            addr = _ipaddress.ip_address(client_ip)
+            if not any(addr in net for net in _TG_ALLOWED_NETWORKS):
+                logger.warning(f"Telegram proxy request denied from {client_ip}")
+                raise HTTPException(status_code=403, detail="Forbidden")
+        except ValueError:
+            raise HTTPException(status_code=403, detail="Forbidden")
+    else:
+        raise HTTPException(status_code=403, detail="Forbidden")
+
     # Extract bot token and method from path: bot<token>/<method>
     import re as _re
     match = _re.match(r'^bot([^/]+)/(.+)$', path)
@@ -2173,7 +2191,10 @@ async def telegram_api_proxy(path: str, request: Request):
             configured_token = f.read().strip()
     except FileNotFoundError:
         pass
-    if configured_token and not hmac.compare_digest(bot_token, configured_token):
+    if not configured_token:
+        logger.error("Telegram proxy: no bot token configured — rejecting request (fail-closed)")
+        raise HTTPException(status_code=503, detail="Telegram proxy not configured")
+    if not hmac.compare_digest(bot_token, configured_token):
         logger.warning("Telegram proxy: bot token mismatch — rejecting request")
         raise HTTPException(status_code=403, detail="Invalid bot token")
     
