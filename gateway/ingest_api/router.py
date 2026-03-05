@@ -225,7 +225,7 @@ class MultiAgentRouter:
 
                 results[t.name] = {
                     "healthy": False,
-                    "error": str(e),
+                    "error": type(e).__name__,
                     "last_check": t.last_health_check,
                 }
 
