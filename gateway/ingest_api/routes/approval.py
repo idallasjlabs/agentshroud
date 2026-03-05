@@ -112,7 +112,6 @@ async def approval_websocket(websocket: WebSocket, token: str | None = Query(Non
     4. Client can send decisions: {"type": "decide", "request_id": "...", "approved": true}
     """
     # Access app_state from websocket state
-    app_state = websocket.scope["app"].state.app_state
     
     # L5: Accept scoped WS tokens (short-lived, single-use) alongside master token
     from .dashboard import _validate_ws_token

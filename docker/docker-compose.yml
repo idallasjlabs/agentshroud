@@ -179,7 +179,7 @@ services:
   # To get an auth key: https://login.tailscale.com/admin/settings/authkeys
   # (use ephemeral + reusable for containers)
   tailscale:
-    image: tailscale/tailscale:latest
+    image: tailscale/tailscale:v1.78.3
     container_name: agentshroud-tailscale
     hostname: agentshroud-ts
     restart: unless-stopped
@@ -211,6 +211,7 @@ services:
     pids_limit: 64
 
     networks:
+      - agentshroud-internal
       - agentshroud-isolated
 
     healthcheck:
