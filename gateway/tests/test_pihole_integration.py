@@ -34,7 +34,7 @@ class TestPiholeIntegration:
         assert 'pihole' in compose_data['services'], "Pi-hole service should be in compose file"
         
         pihole_service = compose_data['services']['pihole']
-        assert pihole_service['image'] == 'pihole/pihole:latest'
+        assert pihole_service['image'].startswith('pihole/pihole'), 'Pi-hole image should be pihole/pihole (pinned or tagged)'
         assert pihole_service['container_name'] == 'agentshroud-pihole'
         assert pihole_service['hostname'] == 'pihole'
         

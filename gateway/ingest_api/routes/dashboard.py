@@ -139,12 +139,26 @@ async def serve_dashboard(request: Request, token: str | None = Query(None)):
     dashboard_path = Path(__file__).parent.parent.parent / "dashboard" / "index.html"
     if dashboard_path.exists():
         html = dashboard_path.read_text()
+        # L4: Generate nonce for inline scripts/styles
+        import secrets as _secrets
+        nonce = _secrets.token_urlsafe(24)
+        # Inject nonce into script/style tags
+        html = html.replace("<script", f'<script nonce="{nonce}"')
+        html = html.replace("<style", f'<style nonce="{nonce}"')
         response = HTMLResponse(html)
         response.headers["Content-Security-Policy"] = (
-            "default-src 'none'; script-src 'unsafe-inline'; "
-            "style-src 'unsafe-inline'; connect-src 'self'; "
-            "img-src 'self'; font-src 'self'"
+            f"default-src 'none'; "
+            f"script-src 'nonce-{nonce}'; "
+            f"style-src 'nonce-{nonce}'; "
+            f"connect-src 'self'; "
+            f"img-src 'self'; "
+            f"font-src 'self'; "
+            f"frame-ancestors 'none'; "
+            f"base-uri 'self'"
         )
+        response.headers["X-Content-Type-Options"] = "nosniff"
+        response.headers["X-Frame-Options"] = "DENY"
+        response.headers["Referrer-Policy"] = "strict-origin-when-cross-origin"
         return response
     return HTMLResponse("<h1>Dashboard not found</h1>", status_code=404)
 

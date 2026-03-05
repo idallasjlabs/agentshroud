@@ -3,7 +3,8 @@
 # Stage 2: Runtime - Non-root user, minimal image
 
 # === Builder Stage ===
-FROM python:3.13-slim AS builder
+# M8: Base image pinned to SHA256 digest for supply chain integrity
+FROM python:3.13-slim@sha256:3de9a8d7aedbb7984dc18f2dff178a7850f16c1ae7c34ba9d7ecc23d0755e35f AS builder
 
 WORKDIR /build
 
@@ -18,7 +19,7 @@ COPY gateway/requirements.txt .
 RUN pip install --no-cache-dir --prefix=/install -r requirements.txt
 
 # === Runtime Stage ===
-FROM python:3.13-slim
+FROM python:3.13-slim@sha256:3de9a8d7aedbb7984dc18f2dff178a7850f16c1ae7c34ba9d7ecc23d0755e35f
 
 WORKDIR /app
 
@@ -44,8 +45,9 @@ RUN apt-get update && apt-get install -y --no-install-recommends curl ca-certifi
     && apt-get update && apt-get install -y --no-install-recommends 1password-cli \
     && rm -rf /var/lib/apt/lists/*
 
-# Trivy vulnerability scanner (ARM64 compatible)
-RUN curl -sfL https://raw.githubusercontent.com/aquasecurity/trivy/main/contrib/install.sh | sh -s -- -b /usr/local/bin
+# Trivy vulnerability scanner — pinned version (M7 fix)
+ARG TRIVY_VERSION=0.58.2
+RUN ARCH=$(dpkg --print-architecture) &&     curl -sSfL -o /tmp/trivy.deb "https://github.com/aquasecurity/trivy/releases/download/v${TRIVY_VERSION}/trivy_${TRIVY_VERSION}_Linux-${ARCH}.deb" &&     dpkg -i /tmp/trivy.deb &&     rm /tmp/trivy.deb
 
 # Create non-root user
 RUN useradd --create-home --shell /bin/bash --uid 1000 agentshroud
