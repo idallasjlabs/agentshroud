@@ -11,6 +11,8 @@ Dashboard and activity monitoring endpoints:
 
 import asyncio
 import hmac
+import secrets
+import time
 import logging
 import time
 from pathlib import Path
@@ -25,6 +27,31 @@ from ..state import app_state
 from ..event_bus import make_event
 
 # Create router
+# Short-lived WS tokens (token -> expiry timestamp)
+# These are scoped tokens that cannot be used for API auth
+_ws_tokens: dict[str, float] = {}
+_WS_TOKEN_TTL = 300  # 5 minutes
+
+def _create_ws_token() -> str:
+    """Create a short-lived WebSocket-only token."""
+    token = f"ws_{secrets.token_urlsafe(32)}"
+    _ws_tokens[token] = time.time() + _WS_TOKEN_TTL
+    # Clean expired tokens
+    now = time.time()
+    expired = [t for t, exp in _ws_tokens.items() if exp < now]
+    for t in expired:
+        del _ws_tokens[t]
+    return token
+
+def _validate_ws_token(token: str) -> bool:
+    """Validate a WebSocket token (single-use, time-limited)."""
+    if not token or not token.startswith("ws_"):
+        return False
+    expiry = _ws_tokens.pop(token, None)  # Single-use: remove on validation
+    if expiry is None:
+        return False
+    return time.time() < expiry
+
 router = APIRouter()
 
 # Set up logger
@@ -149,17 +176,18 @@ async def dashboard_stats(req: Request, auth: AuthRequired):
 
 @router.get("/dashboard/ws-token")
 async def dashboard_ws_token(request: Request):
-    """Return a WS auth token for cookie-authenticated dashboard sessions.
+    """Return a short-lived WS-only auth token for cookie-authenticated sessions.
 
-    The dashboard JS calls this to get the token for WebSocket connections,
-    avoiding direct token injection into HTML (XSS mitigation).
+    Returns a scoped, single-use token valid for 5 minutes.
+    This token can ONLY be used for WebSocket connections, not API auth.
     """
     cookie_token = request.cookies.get("dashboard_token")
     if not cookie_token or not hmac.compare_digest(
         cookie_token, app_state.config.auth_token
     ):
         return JSONResponse(status_code=403, content={"detail": "Forbidden"})
-    return JSONResponse(content={"token": app_state.config.auth_token})
+    ws_token = _create_ws_token()
+    return JSONResponse(content={"token": ws_token})
 
 
 @router.websocket("/ws/activity")
@@ -168,7 +196,8 @@ async def activity_websocket(websocket: WebSocket, token: str | None = Query(Non
     # Access app_state from websocket state
     app_state = websocket.scope["app"].state.app_state
     
-    if not token or not hmac.compare_digest(token, app_state.config.auth_token):
+    # Accept either master auth token or scoped WS token
+    if not token or (not _validate_ws_token(token) and not hmac.compare_digest(token, app_state.config.auth_token)):
         await websocket.close(code=4003, reason="Authentication failed")
         await app_state.event_bus.emit(
             make_event(
