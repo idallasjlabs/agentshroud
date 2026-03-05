@@ -74,13 +74,6 @@ class WebhookReceiver:
             return True
         except Exception:
             return False
-            
-        self._stats = {
-            "webhooks_received": 0,
-            "webhooks_forwarded": 0,
-            "webhooks_blocked": 0,
-            "last_webhook_time": 0.0,
-        }
 
     async def process_webhook(
         self,
