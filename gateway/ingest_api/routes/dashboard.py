@@ -209,7 +209,8 @@ async def activity_websocket(websocket: WebSocket, token: str | None = Query(Non
     # Access app_state from websocket state
     
     # Accept either master auth token or scoped WS token
-    if not token or (not _validate_ws_token(token) and not hmac.compare_digest(token, app_state.config.auth_token)):
+    # R3-L4: Only accept scoped WS tokens (no master token fallback)
+    if not token or not _validate_ws_token(token):
         await websocket.close(code=4003, reason="Authentication failed")
         await app_state.event_bus.emit(
             make_event(
