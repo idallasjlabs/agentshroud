@@ -15,6 +15,7 @@ services:
     - agentshroud-ssh:/var/agentshroud-ssh:ro
     - gateway-data:/app/data
     - ../web:/app/web:ro
+    - ../gateway:/app/gateway:ro
     - agentshroud-workspace:/data/bot-workspace:ro
     secrets:
     - gateway_password
@@ -23,6 +24,7 @@ services:
     - PYTHONUNBUFFERED=1
     - LOG_LEVEL=INFO
     - PYTHONDONTWRITEBYTECODE=1
+    - PYTHONPYCACHEPREFIX=/tmp/pycache
     - GATEWAY_AUTH_TOKEN_FILE=/run/secrets/gateway_password
     - OP_SERVICE_ACCOUNT_TOKEN_FILE=/run/secrets/1password_service_account
     security_opt:
@@ -51,7 +53,8 @@ services:
 
     # Route gateway DNS through Pi-hole sinkhole
     dns:
-      - 172.21.0.10
+      - 8.8.8.8
+      - 8.8.4.4
 
     # Network - Gateway on BOTH networks to act as proxy
     networks:
@@ -115,9 +118,11 @@ services:
     secrets:
     - gateway_password
     - telegram_bot_token
+    - 1password_service_account
     environment:
     - NODE_ENV=production
     - OPENCLAW_GATEWAY_BIND=lan
+    - OP_SERVICE_ACCOUNT_TOKEN_FILE=/run/secrets/1password_service_account
     - OPENCLAW_GATEWAY_PASSWORD_FILE=/run/secrets/gateway_password
     - TELEGRAM_BOT_TOKEN_FILE=/run/secrets/telegram_bot_token
     - HTTP_PROXY=http://gateway:8181
@@ -159,13 +164,15 @@ services:
     - host.docker.internal:host-gateway
     networks:
     - agentshroud-isolated
+    - agentshroud-internal
     depends_on:
       gateway:
         condition: service_healthy
       pihole:
         condition: service_started
     dns:
-    - 172.21.0.10
+    - 8.8.8.8
+    - 8.8.4.4
 
   # ── Tailscale mesh VPN sidecar (D4 / Fix-10 mTLS) ─────────────────────────
   # Provides encrypted mesh networking between gateway and bot containers.
