@@ -68,6 +68,14 @@ proxy:
     - "*.githubusercontent.com"
     - imap.mail.me.com
     - smtp.mail.me.com
+    - "*.1password.com"
+    - "*.1password.ca"
+    - "*.b5project.com"
+    - "*.agilebits.com"
+    - smtp.gmail.com
+    - "*.google.com"
+    - "*.brave.com"
+    - "*.search.brave.com"
 
 container:
   # Container runtime
