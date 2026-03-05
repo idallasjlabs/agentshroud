@@ -153,9 +153,11 @@ if (gwPassword) {
     console.log('[init-patch] Set gateway.auth.token from OPENCLAW_GATEWAY_PASSWORD');
     changed = true;
   }
-  if (config.gateway.auth.password !== gwPassword) {
-    config.gateway.auth.password = gwPassword;
-    console.log('[init-patch] Set gateway.auth.password from OPENCLAW_GATEWAY_PASSWORD');
+  // Security: Do NOT store password in config file (audit warning).
+  // auth.token and remote.password are sufficient for OpenClaw auth.
+  if (config.gateway.auth.password) {
+    delete config.gateway.auth.password;
+    console.log('[init-patch] Removed gateway.auth.password from config (use env var)');
     changed = true;
   }
   config.gateway.remote = config.gateway.remote || {};
@@ -175,9 +177,11 @@ if (gwPassword) {
 config.gateway = config.gateway || {};
 config.gateway.controlUi = config.gateway.controlUi || {};
 
-if (!config.gateway.controlUi.dangerouslyAllowHostHeaderOriginFallback) {
+// Security: Only enable host-header fallback on first run (seed).
+// Once running, keep whatever the operator/audit has set.
+if (isNew && !config.gateway.controlUi.dangerouslyAllowHostHeaderOriginFallback) {
   config.gateway.controlUi.dangerouslyAllowHostHeaderOriginFallback = true;
-  console.log('[init-patch] Set gateway.controlUi.dangerouslyAllowHostHeaderOriginFallback = true');
+  console.log('[init-patch] Set gateway.controlUi.dangerouslyAllowHostHeaderOriginFallback = true (seed only)');
   changed = true;
 }
 
@@ -249,6 +253,27 @@ if (sendersChanged) {
 if (config.channels.telegram.groupPolicy !== 'allowlist') {
   config.channels.telegram.groupPolicy = 'allowlist';
   console.log('[init-patch] Set channels.telegram.groupPolicy = allowlist');
+  changed = true;
+}
+
+
+// ── Patch 12: Security hardening (from openclaw security audit) ──────────────
+// Enforce workspaceOnly=true so filesystem tools are scoped to workspace.
+config.tools = config.tools || {};
+config.tools.fs = config.tools.fs || {};
+if (!config.tools.fs.workspaceOnly) {
+  config.tools.fs.workspaceOnly = true;
+  console.log('[init-patch] Set tools.fs.workspaceOnly = true (security hardening)');
+  changed = true;
+}
+
+// ── Patch 13: Group sender allowlist (groupAllowFrom) ────────────────────────
+// Restricts who can invoke bot commands in group chats.
+config.channels = config.channels || {};
+config.channels.telegram = config.channels.telegram || {};
+if (!config.channels.telegram.groupAllowFrom || config.channels.telegram.groupAllowFrom.length === 0) {
+  config.channels.telegram.groupAllowFrom = AUTHORIZED_SENDERS.slice();
+  console.log('[init-patch] Set channels.telegram.groupAllowFrom (group command allowlist)');
   changed = true;
 }
 
