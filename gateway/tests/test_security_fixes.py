@@ -267,7 +267,10 @@ class TestDashboardWSToken:
         assert resp.status_code == 200
         data = resp.json()
         assert "token" in data
-        assert data["token"] == "test-token-12345"
+        # H5 fix: ws-token now returns a scoped, short-lived WS token
+        # instead of the master auth token
+        assert data["token"].startswith("ws_")
+        assert data["token"] != "test-token-12345"
 
     @pytest.mark.asyncio
     async def test_ws_token_without_cookie_returns_403(self, client):
