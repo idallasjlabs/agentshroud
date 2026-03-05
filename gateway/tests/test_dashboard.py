@@ -14,6 +14,7 @@ from httpx import AsyncClient, ASGITransport
 
 from gateway.ingest_api.main import app, app_state, lifespan
 from gateway.ingest_api.event_bus import make_event
+from gateway.ingest_api.routes.dashboard import _create_ws_token
 
 
 @pytest_asyncio.fixture
@@ -76,15 +77,17 @@ async def test_dashboard_stats_requires_auth(client):
 
 
 def test_ws_activity_connects(sync_client):
-    """WebSocket /ws/activity connects and authenticates via query param"""
-    with sync_client.websocket_connect("/ws/activity?token=test-token-12345") as ws:
+    """WebSocket /ws/activity connects and authenticates via scoped WS token"""
+    ws_token = _create_ws_token()
+    with sync_client.websocket_connect(f"/ws/activity?token={ws_token}") as ws:
         msg = ws.receive_json()
         assert msg["type"] == "authenticated"
 
 
 def test_ws_activity_receives_events(sync_client):
     """WebSocket /ws/activity receives emitted events"""
-    with sync_client.websocket_connect("/ws/activity?token=test-token-12345") as ws:
+    ws_token = _create_ws_token()
+    with sync_client.websocket_connect(f"/ws/activity?token={ws_token}") as ws:
         auth_msg = ws.receive_json()
         assert auth_msg["type"] == "authenticated"
 
