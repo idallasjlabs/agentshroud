@@ -108,7 +108,6 @@ def _is_imessage_recipient_allowed(recipient: str, allowed: list[str]) -> bool:
     """Return True if the recipient is in the allowlist."""
     if not allowed:
         return False
-    import fnmatch
     return any(fnmatch.fnmatch(recipient, pattern) for pattern in allowed)
 
 
@@ -133,7 +132,7 @@ logger = logging.getLogger("agentshroud.gateway.main")
 app = FastAPI(
     title="AgentShroud Gateway",
     description="Ingest API for the AgentShroud proxy layer framework",
-    version="0.5.0",
+    version="0.8.0",
     lifespan=lifespan,
 )
 
@@ -1830,7 +1829,7 @@ async def killswitch_status(auth: AuthRequired):
 # ═══════════════════════════════════════════════════
 
 @app.get("/manage/rbac/users")
-async def list_users_and_roles(request: Request):
+async def list_users_and_roles(request: Request, auth: AuthRequired):
     """List all users and their roles (admin+ only)."""
     # Extract user ID from request (this would need proper implementation)
     user_id = request.headers.get("X-User-ID") or "unknown"
@@ -1868,7 +1867,7 @@ async def list_users_and_roles(request: Request):
 
 
 @app.put("/manage/rbac/users/{target_user_id}")
-async def set_user_role(target_user_id: str, request: Request, role: str):
+async def set_user_role(target_user_id: str, request: Request, role: str, auth: AuthRequired):
     """Set a user's role (owner only)."""
     # Extract requesting user ID from request
     requesting_user_id = request.headers.get("X-User-ID") or "unknown"
@@ -1901,7 +1900,7 @@ async def set_user_role(target_user_id: str, request: Request, role: str):
 
 
 @app.get("/manage/rbac/users/{user_id}/permissions")
-async def get_user_permissions(user_id: str, request: Request):
+async def get_user_permissions(user_id: str, request: Request, auth: AuthRequired):
     """Get permissions summary for a user (admin+ only)."""
     # Extract requesting user ID from request
     requesting_user_id = request.headers.get("X-User-ID") or "unknown"
@@ -1929,7 +1928,7 @@ async def get_user_permissions(user_id: str, request: Request):
 
 
 @app.get("/manage/rbac/my-permissions")
-async def get_my_permissions(request: Request):
+async def get_my_permissions(request: Request, auth: AuthRequired):
     """Get permissions summary for the current user."""
     # Extract user ID from request
     user_id = request.headers.get("X-User-ID") or "unknown"
@@ -2029,11 +2028,7 @@ async def manage_blocklist(
         import aiohttp
         
         # Get Pi-hole password for API authentication
-        try:
-            with open("/run/secrets/pihole_password", "r") as f:
-                auth_token = f.read().strip()
-        except FileNotFoundError:
-            auth_token = ""
+        auth_token = _get_pihole_auth_token()
         
         # Build API URL — auth sent via header, not query string (M4 fix)
         api_params = {"list": action, "address": url}

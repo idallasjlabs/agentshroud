@@ -63,7 +63,6 @@ async def lifespan(app: FastAPI):
 
     # Pre-warm 1Password CLI (cold start takes >60s, subsequent calls <2s)
     if os.getenv("OP_SERVICE_ACCOUNT_TOKEN"):
-        import threading
 
         def _prewarm_op():
             try:
@@ -235,8 +234,8 @@ async def lifespan(app: FastAPI):
     # Initialize per-user session manager for session isolation
     try:
         base_workspace = Path("/home/node/.openclaw/workspace")
-        # TODO: Load owner_user_id from config - for now use a default
-        owner_user_id = getattr(app_state.config, 'owner_user_id', '1234567890') if app_state.config else '1234567890'
+        from gateway.security.rbac_config import RBACConfig as _RBACConfig
+        owner_user_id = _RBACConfig().owner_user_id
         app_state.session_manager = UserSessionManager(
             base_workspace=base_workspace,
             owner_user_id=owner_user_id
