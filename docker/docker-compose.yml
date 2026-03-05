@@ -89,6 +89,11 @@ services:
     - OPENCLAW_DISABLE_HOST_FILESYSTEM=true
     - OPENCLAW_SANDBOX_MODE=strict
     - OPENCLAW_DISABLE_BONJOUR=1
+    # Route ALL outbound internet through gateway HTTP CONNECT proxy
+    - HTTP_PROXY=http://gateway:8181
+    - HTTPS_PROXY=http://gateway:8181
+    # Bypass proxy for internal container-to-container traffic
+    - NO_PROXY=gateway,localhost,127.0.0.1,pihole
     security_opt:
     - no-new-privileges:true
     - seccomp=./seccomp/agentshroud-seccomp.json
