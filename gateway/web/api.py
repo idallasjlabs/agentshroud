@@ -40,6 +40,31 @@ from ..runtime.security import get_security_comparison, warn_missing_features
 
 logger = logging.getLogger("agentshroud.web.api")
 
+# Scoped WebSocket tokens for management API (R3-M2)
+import secrets as _secrets
+_mgmt_ws_tokens: dict[str, float] = {}
+_MGMT_WS_TOKEN_TTL = 300  # 5 minutes
+
+def _create_mgmt_ws_token() -> str:
+    """Create a short-lived WebSocket-only token for management endpoints."""
+    token = f"mgmt_ws_{_secrets.token_urlsafe(32)}"
+    _mgmt_ws_tokens[token] = time.time() + _MGMT_WS_TOKEN_TTL
+    # Clean expired tokens
+    now = time.time()
+    expired = [t for t, exp in _mgmt_ws_tokens.items() if exp < now]
+    for t in expired:
+        del _mgmt_ws_tokens[t]
+    return token
+
+def _validate_mgmt_ws_token(token: str) -> bool:
+    """Validate a management WebSocket token (single-use, time-limited)."""
+    if not token or not token.startswith("mgmt_ws_"):
+        return False
+    expiry = _mgmt_ws_tokens.pop(token, None)  # Single-use: remove on validation
+    if expiry is None:
+        return False
+    return time.time() < expiry
+
 router = APIRouter(prefix="/api", tags=["management"])
 
 # --- Auth dependency -------------------------------------------------------
@@ -769,12 +794,12 @@ active_websockets: list[WebSocket] = []
 
 @router.websocket("/ws/logs")
 async def ws_logs(websocket: WebSocket, token: str = Query(default="")):
-    """WebSocket endpoint for real-time log streaming. Requires auth token."""
+    """WebSocket endpoint for real-time log streaming. Requires scoped WS token."""
     if not token:
         await websocket.close(code=4001, reason="Authentication required")
         return
-    config = load_config()
-    if not verify_token(token, config.auth_token):
+    # R3-M2: Accept only scoped management WS tokens (not the master auth token)
+    if not _validate_mgmt_ws_token(token):
         await websocket.close(code=4003, reason="Invalid credentials")
         return
     await websocket.accept()
@@ -796,17 +821,21 @@ async def ws_logs(websocket: WebSocket, token: str = Query(default="")):
             except Exception:
                 pass
     except WebSocketDisconnect:
-        active_websockets.remove(websocket)
+        pass
+    finally:
+        # R3-L2: Ensure cleanup on any exception, not just WebSocketDisconnect
+        if websocket in active_websockets:
+            active_websockets.remove(websocket)
 
 
 @router.websocket("/ws/updates")
 async def ws_updates(websocket: WebSocket, token: str = Query(default="")):
-    """WebSocket for real-time update progress. Requires auth token."""
+    """WebSocket for real-time update progress. Requires scoped WS token."""
     if not token:
         await websocket.close(code=4001, reason="Authentication required")
         return
-    config = load_config()
-    if not verify_token(token, config.auth_token):
+    # R3-M2: Accept only scoped management WS tokens (not the master auth token)
+    if not _validate_mgmt_ws_token(token):
         await websocket.close(code=4003, reason="Invalid credentials")
         return
     await websocket.accept()

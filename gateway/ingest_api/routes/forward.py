@@ -61,10 +61,6 @@ def _is_email_recipient_allowed(address: str) -> bool:
     return address.lower().strip() in {r.lower() for r in _EMAIL_ALLOWED_RECIPIENTS}
 
 
-def _is_imessage_recipient_allowed(recipient: str, allowed: list[str]) -> bool:
-    """Return True if the iMessage recipient is on the pre-approved list."""
-    return recipient.strip() in {r.strip() for r in allowed}
-
 
 # Route endpoints
 @router.post("/webhook/telegram")
@@ -307,7 +303,7 @@ async def forward_content(request: ForwardRequest, req: Request, auth: AuthRequi
             },
         )
         logger.info(f"Content forwarded to {target.name}")
-        logger.info(f"DEBUG: agent_response = {agent_response}")
+        logger.debug(f"agent_response type={type(agent_response).__name__}")
 
     except ForwardError as e:
         # Agent offline - log but continue (graceful degradation)

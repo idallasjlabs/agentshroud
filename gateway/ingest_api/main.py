@@ -236,6 +236,25 @@ async def log_requests(request: Request, call_next):
     return response
 
 
+# === Global Security Headers Middleware (R3-L1) ===
+
+
+@app.middleware("http")
+async def security_headers_middleware(request: Request, call_next):
+    """Add security headers to all responses (defense-in-depth)."""
+    response = await call_next(request)
+    # Only add if not already set (allow per-route overrides like CSP)
+    if "X-Content-Type-Options" not in response.headers:
+        response.headers["X-Content-Type-Options"] = "nosniff"
+    if "X-Frame-Options" not in response.headers:
+        response.headers["X-Frame-Options"] = "DENY"
+    if "Cache-Control" not in response.headers:
+        response.headers["Cache-Control"] = "no-store"
+    if "Referrer-Policy" not in response.headers:
+        response.headers["Referrer-Policy"] = "strict-origin-when-cross-origin"
+    return response
+
+
 # === Global Exception Handler ===
 
 
@@ -299,7 +318,7 @@ async def system_control(auth: AuthRequired):
 
         <div class="status">
             <h2 class="healthy">● System Status: HEALTHY</h2>
-            <div class="metric">Version: 0.5.0</div>
+            <div class="metric">Version: 0.8.0</div>
             <div class="metric">Uptime: {int(uptime)}s</div>
             <div class="metric">PII Engine: {app_state.sanitizer.get_mode()}</div>
         </div>
