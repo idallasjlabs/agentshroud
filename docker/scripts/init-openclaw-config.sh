@@ -42,6 +42,10 @@ fi
 
 node "${DEFAULTS_DIR}/apply-patches.js" "${OPENCLAW_DIR}/openclaw.json"
 
+# Security: harden config and state dir permissions
+chmod 700 "${OPENCLAW_DIR}" 2>/dev/null || true
+chmod 600 "${OPENCLAW_DIR}/openclaw.json" 2>/dev/null || true
+
 # ── 3. Workspace brand/identity files ────────────────────────────────────────
 # BRAND.md    — always refreshed from image (authoritative trademark & brand rules)
 # IDENTITY.md — seeded on first run only (bot evolves this over time)
