@@ -262,12 +262,16 @@ async def system_control(auth: AuthRequired):
     stats = await app_state.ledger.get_stats()
     pending = await app_state.approval_queue.get_pending()
 
+    # R2-M4: Generate nonce for inline script/style CSP
+    import secrets as _secrets
+    nonce = _secrets.token_urlsafe(16)
+
     html = f"""<!DOCTYPE html>
 <html>
 <head>
     <title>AgentShroud Control</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style>
+    <style nonce="{nonce}">
         body {{ font-family: monospace; background: #1a1a1a; color: #e0e0e0; padding: 2rem; }}
         .container {{ max-width: 1200px; margin: 0 auto; }}
         h1 {{ color: #4ade80; }}
@@ -332,13 +336,23 @@ async def system_control(auth: AuthRequired):
         </div>
     </div>
 
-    <script>
+    <script nonce="{nonce}">
         // Auto-refresh every 30 seconds
         setTimeout(() => location.reload(), 30000);
     </script>
 </body>
 </html>"""
-    return HTMLResponse(html)
+    # R2-M4: Add CSP and security headers to root endpoint (matching dashboard)
+    response = HTMLResponse(html)
+    response.headers["Content-Security-Policy"] = (
+        f"default-src 'none'; script-src 'nonce-{nonce}'; "
+        f"style-src 'nonce-{nonce}'; connect-src 'self'; "
+        "frame-ancestors 'none'; base-uri 'none'; form-action 'self'"
+    )
+    response.headers["X-Content-Type-Options"] = "nosniff"
+    response.headers["X-Frame-Options"] = "DENY"
+    response.headers["Referrer-Policy"] = "strict-origin-when-cross-origin"
+    return response
 
 
 @app.get("/proxy/status")
