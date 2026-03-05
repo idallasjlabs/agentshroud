@@ -116,7 +116,7 @@ services:
     volumes:
     - agentshroud-config:/home/node/.agentshroud
     - agentshroud-workspace:/home/node/agentshroud/workspace
-    - agentshroud-ssh:/home/node/.ssh
+    - agentshroud-ssh:/home/node/.ssh:ro
     - agentshroud-browsers:/home/node/.cache/ms-playwright
     - ../branding:/app/branding:ro
     - ../memory-backup:/app/memory-backup
@@ -154,6 +154,7 @@ services:
     - /home/node/.npm:noexec,nosuid,size=200m
     - /home/node/.local:noexec,nosuid,size=100m
     - /home/node/.config:noexec,nosuid,size=100m,uid=1000,gid=1000
+    - /home/node/.ssh-tmp:nosuid,size=10m,uid=1000,gid=1000
     mem_limit: 4g
     memswap_limit: 4g
     cpus: 2.0
@@ -166,8 +167,6 @@ services:
       timeout: 10s
       retries: 3
       start_period: 60s
-    extra_hosts:
-    - host.docker.internal:host-gateway
     networks:
     - agentshroud-isolated
     depends_on:
