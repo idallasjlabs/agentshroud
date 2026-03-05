@@ -116,7 +116,7 @@ services:
     volumes:
     - agentshroud-config:/home/node/.agentshroud
     - agentshroud-workspace:/home/node/agentshroud/workspace
-    - agentshroud-ssh:/home/node/.ssh:ro
+    - agentshroud-ssh:/home/node/.ssh
     - agentshroud-browsers:/home/node/.cache/ms-playwright
     - ../branding:/app/branding:ro
     - ../memory-backup:/app/memory-backup
