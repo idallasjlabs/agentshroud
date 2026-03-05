@@ -14,7 +14,6 @@ import hmac
 import secrets
 import time
 import logging
-import time
 from pathlib import Path
 from typing import Annotated
 
@@ -208,7 +207,6 @@ async def dashboard_ws_token(request: Request):
 async def activity_websocket(websocket: WebSocket, token: str | None = Query(None)):
     """WebSocket for real-time activity feed"""
     # Access app_state from websocket state
-    app_state = websocket.scope["app"].state.app_state
     
     # Accept either master auth token or scoped WS token
     if not token or (not _validate_ws_token(token) and not hmac.compare_digest(token, app_state.config.auth_token)):
