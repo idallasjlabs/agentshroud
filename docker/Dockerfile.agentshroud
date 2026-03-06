@@ -23,9 +23,15 @@ RUN apt-get update && \
     rm -rf /var/lib/apt/lists/* /var/cache/apt/archives/*
 
 # Trivy vulnerability scanner — pinned version with checksum verification (M7 fix)
-ARG TRIVY_VERSION=0.58.2
+ARG TRIVY_VERSION=0.69.3
 # R2-M1: Download Trivy with checksum verification for supply chain integrity
-RUN ARCH=$(dpkg --print-architecture) &&     curl -sSfL -o /tmp/trivy.deb         "https://github.com/aquasecurity/trivy/releases/download/v${TRIVY_VERSION}/trivy_${TRIVY_VERSION}_Linux-${ARCH}.deb" &&     curl -sSfL -o /tmp/trivy_checksums.txt         "https://github.com/aquasecurity/trivy/releases/download/v${TRIVY_VERSION}/trivy_${TRIVY_VERSION}_checksums.txt" &&     cd /tmp && grep "trivy_${TRIVY_VERSION}_Linux-${ARCH}.deb" trivy_checksums.txt | sha256sum -c - &&     dpkg -i /tmp/trivy.deb &&     rm /tmp/trivy.deb /tmp/trivy_checksums.txt
+RUN DPKG_ARCH=$(dpkg --print-architecture) && \
+    case "$DPKG_ARCH" in \
+      arm64) TRIVY_ARCH="ARM64" ;; \
+      amd64) TRIVY_ARCH="64bit" ;; \
+      armhf) TRIVY_ARCH="ARM" ;; \
+      *) TRIVY_ARCH="$DPKG_ARCH" ;; \
+    esac &&     curl -sSfL -o "/tmp/trivy_${TRIVY_VERSION}_Linux-${TRIVY_ARCH}.deb"         "https://github.com/aquasecurity/trivy/releases/download/v${TRIVY_VERSION}/trivy_${TRIVY_VERSION}_Linux-${TRIVY_ARCH}.deb" &&     curl -sSfL -o /tmp/trivy_checksums.txt         "https://github.com/aquasecurity/trivy/releases/download/v${TRIVY_VERSION}/trivy_${TRIVY_VERSION}_checksums.txt" &&     cd /tmp && grep "trivy_${TRIVY_VERSION}_Linux-${TRIVY_ARCH}.deb" trivy_checksums.txt | sha256sum -c - &&     dpkg -i "/tmp/trivy_${TRIVY_VERSION}_Linux-${TRIVY_ARCH}.deb" &&     rm "/tmp/trivy_${TRIVY_VERSION}_Linux-${TRIVY_ARCH}.deb" /tmp/trivy_checksums.txt
 
 # ClamAV DB directory
 RUN mkdir -p /var/lib/clamav
@@ -57,7 +63,13 @@ RUN sh /tmp/patch-telegram-sdk.sh && rm /tmp/patch-telegram-sdk.sh
 
 # Install 1Password CLI for secure secret management (multi-arch)
 # R2-H1: GPG signature verification for supply chain integrity
-RUN ARCH=$(dpkg --print-architecture) && \
+RUN DPKG_ARCH=$(dpkg --print-architecture) && \
+    case "$DPKG_ARCH" in \
+      arm64) TRIVY_ARCH="ARM64" ;; \
+      amd64) TRIVY_ARCH="64bit" ;; \
+      armhf) TRIVY_ARCH="ARM" ;; \
+      *) TRIVY_ARCH="$DPKG_ARCH" ;; \
+    esac && \
     curl -L -o /tmp/op.zip "https://cache.agilebits.com/dist/1P/op2/pkg/v2.32.0/op_linux_${ARCH}_v2.32.0.zip" && \
     curl -L -o /tmp/op.sig "https://cache.agilebits.com/dist/1P/op2/pkg/v2.32.0/op_linux_${ARCH}_v2.32.0.zip.sig" && \
     curl -sS https://downloads.1password.com/linux/keys/1password.asc | gpg --dearmor --output /tmp/1password.gpg && \
