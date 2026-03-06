@@ -79,11 +79,15 @@ from ..web.dashboard_endpoints import router as dashboard_api_router, install_lo
 from .version_routes import router as version_router
 import ipaddress as _ipaddress
 
-# Module-level IP allowlists for proxy endpoints (parsed once, not per-request)
+# Module-level IP allowlists for proxy endpoints (parsed once, not per-request).
+# Defaults to the prod isolated subnet. Override via PROXY_ALLOWED_NETWORKS env var
+# (comma-separated CIDRs) to support alternate deployments (e.g. dev on 172.21.0.0/16).
+# Loopback (127.0.0.0/8) is always included regardless of the env var.
 _PROXY_ALLOWED_NETWORKS = [
-    _ipaddress.ip_network("172.21.0.0/16"),  # agentshroud-isolated
-    _ipaddress.ip_network("127.0.0.0/8"),     # loopback
-]
+    _ipaddress.ip_network(cidr.strip())
+    for cidr in os.environ.get("PROXY_ALLOWED_NETWORKS", "172.11.0.0/16").split(",")
+    if cidr.strip()
+] + [_ipaddress.ip_network("127.0.0.0/8")]
 
 # Allowed op:// reference patterns for the gateway op-proxy.
 # Uses fnmatch glob syntax: * matches any characters within a path segment.

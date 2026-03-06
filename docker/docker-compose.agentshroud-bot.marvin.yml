@@ -1,22 +1,26 @@
-# Marvin Production Instance (Colima / agentshroud-bot user)
-# Usage: docker compose -f docker/docker-compose.yml -f docker/docker-compose.marvin-prod.yml -p agentshroud up -d
-# Bot: @agentshroud_bot (production)
-# Ports: gateway 9080 (offset +1000), bot 19789 (offset +1000)
-# These ports avoid conflict with the primary bot instance on 8080/18789
+# AgentShroud Dev/Test Instance — Marvin host, agentshroud-bot user
+# Same host as prod (ijefferson.admin). Ports and subnets offset to avoid conflicts.
+#
+# Usage: docker compose -f docker/docker-compose.yml -f docker/docker-compose.agentshroud-bot.marvin.yml -p agentshroud-dev up -d
+#
+# Prod (ijefferson.admin):  gateway 8080,  bot 18790,  nets 172.10/172.11
+# Dev  (agentshroud-bot):   gateway 9080,  bot 19789,  nets 172.20/172.21
 services:
   gateway:
+    container_name: agentshroud-dev-gateway
     ports: !override
       - "127.0.0.1:9080:8080"
     environment:
-      - AGENTSHROUD_PORT_OFFSET=0
-      - AGENTSHROUD_INSTANCE=marvin-prod
+      - AGENTSHROUD_INSTANCE=marvin-dev
+      - PROXY_ALLOWED_NETWORKS=172.21.0.0/16
 
-  agentshroud:
-    hostname: agentshroud
+  bot:
+    container_name: agentshroud-dev-bot
+    hostname: agentshroud-dev
     ports: !override
       - "127.0.0.1:19789:18789"
     environment:
-      - NODE_ENV=production
+      - NODE_ENV=development
       - OPENCLAW_GATEWAY_BIND=lan
       - OPENCLAW_GATEWAY_PASSWORD_FILE=/run/secrets/gateway_password
       - GATEWAY_OP_PROXY_URL=http://gateway:8080
@@ -44,12 +48,17 @@ services:
       # DNS redirect: Anthropic API -> gateway for message-level security
       - "api.anthropic.com:host-gateway"
 
-  pihole:
-    ports: !override
-      - "127.0.0.1:6353:53/tcp"
-      - "127.0.0.1:6353:53/udp"
-      - "127.0.0.1:6380:80/tcp"
-
 secrets:
   telegram_bot_token:
     file: ./secrets/telegram_bot_token_marvin.txt
+
+# Subnets offset from prod (172.10/172.11) to prevent pool overlap on the same host.
+networks:
+  agentshroud-internal:
+    ipam:
+      config: !override
+        - subnet: 172.20.0.0/16
+  agentshroud-isolated:
+    ipam:
+      config: !override
+        - subnet: 172.21.0.0/16
