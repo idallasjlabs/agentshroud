@@ -92,6 +92,7 @@ COPY docker/scripts/1password-skill.sh /usr/local/bin/1password-skill
 COPY docker/scripts/entrypoint-agentshroud.sh /usr/local/bin/entrypoint-agentshroud.sh
 COPY docker/scripts/init-openclaw-config.sh /usr/local/bin/init-openclaw-config.sh
 COPY docker/scripts/mcp-proxy-wrapper.js /usr/local/bin/mcp-proxy-wrapper.js
+COPY docker/scripts/container-net-diag.sh /app/scripts/container-net-diag.sh
 
 # Bake in OpenClaw config defaults (cron jobs, agent patches)
 # Applied to the volume on every startup by init-openclaw-config.sh
