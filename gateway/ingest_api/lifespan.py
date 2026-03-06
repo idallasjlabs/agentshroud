@@ -32,6 +32,7 @@ from ..proxy.web_config import WebProxyConfig
 from ..proxy.web_proxy import WebProxy
 from ..proxy.http_proxy import ALLOWED_DOMAINS, HTTPConnectProxy
 from ..proxy.dns_forwarder import start_dns_forwarder
+from ..proxy.dns_blocklist import DNSBlocklist
 from ..ssh_proxy.proxy import SSHProxy
 from ..security.killswitch_monitor import KillSwitchMonitor
 from ..web.dashboard_endpoints import install_log_handler
@@ -455,11 +456,21 @@ async def lifespan(app: FastAPI):
         logger.warning(f"HTTP CONNECT proxy failed to start: {e} (continuing)")
         app_state.http_proxy = None
 
-    # Start DNS forwarder (pihole upstream → gateway → 8.8.8.8)
-    # All DNS queries from pihole are logged in the gateway audit trail.
+    # Start DNS forwarder with Pi-hole-style blocklist filtering
+    # Replaces the separate Pi-hole container — all DNS filtering in gateway.
     try:
-        app_state.dns_transport = await start_dns_forwarder(host="0.0.0.0", port=5353)
-        logger.info("DNS forwarder started on port 5353 (pihole upstream)")
+        # Initialize blocklist (downloads adlists on first run)
+        app_state.dns_blocklist = DNSBlocklist()
+        await app_state.dns_blocklist.update()
+        await app_state.dns_blocklist.start_periodic_updates()
+        logger.info(
+            f"DNS blocklist loaded: {len(app_state.dns_blocklist.blocked_domains)} blocked domains"
+        )
+
+        app_state.dns_transport = await start_dns_forwarder(
+            host="0.0.0.0", port=5353, blocklist=app_state.dns_blocklist
+        )
+        logger.info("DNS forwarder started on port 5353 (with blocklist filtering)")
     except Exception as e:
         logger.warning(f"DNS forwarder failed to start: {e} (continuing)")
         app_state.dns_transport = None
