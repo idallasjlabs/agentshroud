@@ -1,4 +1,13 @@
+# AgentShroud Docker Compose — 2-container architecture
+# Gateway: security proxy, DNS forwarder, API gateway, all security tools
+# Bot: OpenClaw agent, minimal footprint
+#
+# Copyright © 2026 Isaiah Dallas Jefferson, Jr. AgentShroud™. All rights reserved.
+
 services:
+  # ── Gateway ──────────────────────────────────────────────────────────────────
+  # Security proxy, HTTP CONNECT proxy, DNS forwarder, API gateway.
+  # SOLE egress point for all container traffic. All outbound logged.
   gateway:
     build:
       context: ..
@@ -9,103 +18,62 @@ services:
     restart: unless-stopped
     stop_grace_period: 15s
     ports:
-    - 127.0.0.1:8080:8080
+      - 127.0.0.1:8080:8080
     volumes:
-    - ../agentshroud.yaml:/app/agentshroud.yaml:ro
-    - agentshroud-ssh:/var/agentshroud-ssh:ro
-    - gateway-data:/app/data
-    - ../web:/app/web:ro
-    - ../gateway:/app/gateway:ro
-    - ../gateway:/app/gateway:ro
-    - agentshroud-workspace:/data/bot-workspace:ro
+      - ../agentshroud.yaml:/app/agentshroud.yaml:ro
+      - agentshroud-ssh:/var/agentshroud-ssh:ro
+      - gateway-data:/app/data
+      - ../web:/app/web:ro
+      - ../gateway:/app/gateway:ro
+      - agentshroud-workspace:/data/bot-workspace:ro
     secrets:
-    - gateway_password
-    - 1password_service_account
+      - gateway_password
+      - 1password_service_account
     environment:
-    - PYTHONUNBUFFERED=1
-    - LOG_LEVEL=INFO
-    - PYTHONDONTWRITEBYTECODE=1
-    - PYTHONPYCACHEPREFIX=/tmp/pycache
-    - PYTHONPYCACHEPREFIX=/tmp/pycache
-    - GATEWAY_AUTH_TOKEN_FILE=/run/secrets/gateway_password
-    - OP_SERVICE_ACCOUNT_TOKEN_FILE=/run/secrets/1password_service_account
+      - PYTHONUNBUFFERED=1
+      - LOG_LEVEL=INFO
+      - PYTHONDONTWRITEBYTECODE=1
+      - PYTHONPYCACHEPREFIX=/tmp/pycache
+      - GATEWAY_AUTH_TOKEN_FILE=/run/secrets/gateway_password
+      - OP_SERVICE_ACCOUNT_TOKEN_FILE=/run/secrets/1password_service_account
     security_opt:
-    - no-new-privileges:true
-    - seccomp=./seccomp/gateway-seccomp.json
+      - no-new-privileges:true
+      - seccomp=./seccomp/gateway-seccomp.json
     cap_drop:
-    - ALL
+      - ALL
     read_only: true
     tmpfs:
-    - /tmp:noexec,nosuid,size=100m
-    - /var/tmp:noexec,nosuid,size=50m
+      - /tmp:noexec,nosuid,size=100m
+      - /var/tmp:noexec,nosuid,size=50m
     mem_limit: 1280m
     memswap_limit: 1280m
     cpus: 1.0
     pids_limit: 100
     healthcheck:
       test:
-      - CMD
-      - python
-      - -c
-      - import urllib.request; urllib.request.urlopen('http://127.0.0.1:8080/status').read()
+        - CMD
+        - python
+        - -c
+        - import urllib.request; urllib.request.urlopen('http://127.0.0.1:8080/status').read()
       interval: 30s
       timeout: 10s
       retries: 3
       start_period: 10s
 
-    # Route gateway DNS through Pi-hole sinkhole
+    # Gateway resolves DNS directly (sole egress point)
     dns:
-      - 172.21.0.10
+      - 8.8.8.8
+      - 8.8.4.4
 
-    # Network - Gateway on BOTH networks to act as proxy
+    # Gateway on BOTH networks: internal (internet) + isolated (to bot)
     networks:
-      - agentshroud-internal  # External (localhost access)
-      - agentshroud-isolated  # Internal (to AgentShroud)
+      - agentshroud-internal
+      - agentshroud-isolated
 
-  # Pi-hole DNS Sinkhole — blocks malicious/exfil domains at DNS layer
-  # Sits on agentshroud-isolated network; bot and gateway resolve DNS through it.
-  pihole:
-    # M8: Pinned to SHA256 digest for supply chain integrity
-    image: pihole/pihole@sha256:ee348529cea9601df86ad94d62a39cad26117e1eac9e82d8876aa0ec7fe1ba27
-    container_name: agentshroud-pihole
-    hostname: pihole
-    # SECURITY: No direct DNS — all upstream queries route through gateway
-    # DNS forwarder on gateway:5353 → 8.8.8.8 (logged in audit trail)
-    restart: unless-stopped
-
-    environment:
-      - WEBPASSWORD_FILE=/run/secrets/pihole_password
-      - DNSMASQ_LISTENING=all
-      # Upstream DNS points to gateway DNS forwarder (not direct internet)
-      - PIHOLE_DNS_=172.21.0.2#5353
-      # Pihole v6 env var format (FTLCONF_ prefix for pihole.toml values)
-      - FTLCONF_dns_upstreams=172.21.0.2#5353
-      - DNS_BOGUS_PRIV=true
-      - DNS_FQDN_REQUIRED=true
-
-    secrets:
-      - pihole_password
-
-    volumes:
-      - pihole-etc:/etc/pihole
-      - pihole-dnsmasq:/etc/dnsmasq.d
-
-    cap_add:
-      - NET_ADMIN  # Required for dnsmasq
-
-    mem_limit: 256m
-    memswap_limit: 256m
-    pids_limit: 64
-
-    # SECURITY: Pihole on isolated network ONLY — no direct internet access
-    # All upstream DNS goes through gateway DNS forwarder on isolated network
-    networks:
-      agentshroud-isolated:
-        ipv4_address: 172.21.0.10
-
-  # AgentShroud Bot (Real AgentShroud Platform) - agentshroud.ai
-  # SECURITY: Fully isolated - NO host filesystem access, NO LAN access
-  agentshroud:
+  # ── Bot ──────────────────────────────────────────────────────────────────────
+  # OpenClaw agent. Fully isolated — no direct internet, no host access.
+  # All egress through gateway proxy. DNS: Docker internal only.
+  bot:
     build:
       context: ..
       dockerfile: docker/Dockerfile.agentshroud
@@ -115,162 +83,95 @@ services:
     restart: unless-stopped
     stop_grace_period: 15s
     ports:
-    - 127.0.0.1:18790:18789
+      - 127.0.0.1:18790:18789
     volumes:
-    - agentshroud-config:/home/node/.agentshroud
-    - agentshroud-workspace:/home/node/agentshroud/workspace
-    - agentshroud-ssh:/home/node/.ssh
-    - agentshroud-browsers:/home/node/.cache/ms-playwright
-    - ../branding:/app/branding:ro
-    - ../memory-backup:/app/memory-backup
+      - agentshroud-config:/home/node/.agentshroud
+      - agentshroud-workspace:/home/node/agentshroud/workspace
+      - agentshroud-ssh:/home/node/.ssh
+      - agentshroud-browsers:/home/node/.cache/ms-playwright
+      - ../branding:/app/branding:ro
+      - ../memory-backup:/app/memory-backup
     secrets:
-    - gateway_password
-    - telegram_bot_token
-    - 1password_service_account
+      - gateway_password
+      - telegram_bot_token
+      - 1password_service_account
     environment:
-    - NODE_ENV=production
-    - OPENCLAW_GATEWAY_BIND=lan
-    - OP_SERVICE_ACCOUNT_TOKEN_FILE=/run/secrets/1password_service_account
-    - OP_SERVICE_ACCOUNT_TOKEN_FILE=/run/secrets/1password_service_account
-    - OPENCLAW_GATEWAY_PASSWORD_FILE=/run/secrets/gateway_password
-    - TELEGRAM_BOT_TOKEN_FILE=/run/secrets/telegram_bot_token
-    - HTTP_PROXY=http://gateway:8181
-    - HTTPS_PROXY=http://gateway:8181
-    - NO_PROXY=gateway,pihole,localhost,127.0.0.1
-    - GATEWAY_OP_PROXY_URL=http://gateway:8080
-    - ANTHROPIC_BASE_URL=http://gateway:8080
-    - TELEGRAM_API_BASE_URL=http://gateway:8080/telegram-api
-    - OPENCLAW_BOT_NAME=agentshroud_bot
-    - OPENCLAW_BOT_EMAIL=agentshroud.ai@icloud.com
-    - OPENCLAW_DISABLE_HOST_FILESYSTEM=true
-    - OPENCLAW_SANDBOX_MODE=strict
-    - OPENCLAW_DISABLE_BONJOUR=1
+      - NODE_ENV=production
+      - OPENCLAW_GATEWAY_BIND=lan
+      - OP_SERVICE_ACCOUNT_TOKEN_FILE=/run/secrets/1password_service_account
+      - OPENCLAW_GATEWAY_PASSWORD_FILE=/run/secrets/gateway_password
+      - TELEGRAM_BOT_TOKEN_FILE=/run/secrets/telegram_bot_token
+      - HTTP_PROXY=http://gateway:8181
+      - HTTPS_PROXY=http://gateway:8181
+      - NO_PROXY=gateway,localhost,127.0.0.1
+      - GATEWAY_OP_PROXY_URL=http://gateway:8080
+      - ANTHROPIC_BASE_URL=http://gateway:8080
+      - TELEGRAM_API_BASE_URL=http://gateway:8080/telegram-api
+      - OPENCLAW_BOT_NAME=agentshroud_bot
+      - OPENCLAW_BOT_EMAIL=agentshroud.ai@icloud.com
+      - OPENCLAW_DISABLE_HOST_FILESYSTEM=true
+      - OPENCLAW_SANDBOX_MODE=strict
+      - OPENCLAW_DISABLE_BONJOUR=1
     security_opt:
-    - no-new-privileges:true
-    - seccomp=./seccomp/agentshroud-seccomp.json
+      - no-new-privileges:true
+      - seccomp=./seccomp/agentshroud-seccomp.json
     cap_drop:
-    - ALL
+      - ALL
     read_only: true
     tmpfs:
-    - /tmp:noexec,nosuid,size=500m
-    - /var/tmp:noexec,nosuid,size=100m
-    - /home/node/.npm:noexec,nosuid,size=200m
-    - /home/node/.local:noexec,nosuid,size=100m
-    - /home/node/.config:noexec,nosuid,size=100m,uid=1000,gid=1000
-    - /home/node/.ssh-tmp:nosuid,size=10m,uid=1000,gid=1000
+      - /tmp:noexec,nosuid,size=500m
+      - /var/tmp:noexec,nosuid,size=100m
+      - /home/node/.npm:noexec,nosuid,size=200m
+      - /home/node/.local:noexec,nosuid,size=100m
+      - /home/node/.config:noexec,nosuid,size=100m,uid=1000,gid=1000
+      - /home/node/.ssh-tmp:nosuid,size=10m,uid=1000,gid=1000
     mem_limit: 4g
     memswap_limit: 4g
     cpus: 2.0
     pids_limit: 512
     healthcheck:
       test:
-      - CMD-SHELL
-      - curl -sf http://localhost:18789/ -o /dev/null || exit 1
+        - CMD-SHELL
+        - curl -sf http://localhost:18789/ -o /dev/null || exit 1
       interval: 30s
       timeout: 10s
       retries: 3
       start_period: 60s
     networks:
-    - agentshroud-isolated
+      - agentshroud-isolated
     depends_on:
       gateway:
         condition: service_healthy
-      pihole:
-        condition: service_started
 
-  # ── Tailscale mesh VPN sidecar (D4 / Fix-10 mTLS) ─────────────────────────
-  # Provides encrypted mesh networking between gateway and bot containers.
-  # Bot and gateway can communicate over Tailscale's encrypted WireGuard layer
-  # instead of the plain Docker bridge — preventing lateral-movement attacks
-  # from a compromised container on the same bridge network.
-  #
-  # Activation: set TS_AUTHKEY in docker/secrets/tailscale_authkey.txt
-  # and uncomment the `tailscale` network entry in each service above.
-  #
-  # To get an auth key: https://login.tailscale.com/admin/settings/authkeys
-  # (use ephemeral + reusable for containers)
-  tailscale:
-    image: tailscale/tailscale:v1.78.3
-    container_name: agentshroud-tailscale
-    hostname: agentshroud-ts
-    restart: unless-stopped
-
-    volumes:
-      - tailscale-state:/var/lib/tailscale
-      - /dev/net/tun:/dev/net/tun
-
-    cap_add:
-      - NET_ADMIN
-      - NET_RAW
-
-    secrets:
-      - tailscale_authkey
-
-    environment:
-      - TS_AUTHKEY_FILE=/run/secrets/tailscale_authkey
-      # Advertise the isolated Docker subnet so gateway/bot routes to peers
-      # via Tailscale rather than the plain bridge.
-      - TS_EXTRA_ARGS=--advertise-routes=172.21.0.0/16 --accept-routes
-      - TS_STATE_DIR=/var/lib/tailscale
-      - TS_USERSPACE=false  # Use kernel WireGuard for performance
-
-    security_opt:
-      - no-new-privileges:true
-
-    mem_limit: 128m
-    memswap_limit: 128m
-    pids_limit: 64
-
-    networks:
-      - agentshroud-internal
-      - agentshroud-isolated
-
-    healthcheck:
-      test: ["CMD", "tailscale", "status"]
-      interval: 60s
-      timeout: 10s
-      retries: 3
-      start_period: 30s
-
-# Docker secrets (API keys and 1Password)
+# ── Secrets ────────────────────────────────────────────────────────────────────
 secrets:
-  openai_api_key:
-    file: ./secrets/openai_api_key.txt
-  anthropic_oauth_token:
-    file: ./secrets/anthropic_oauth_token.txt
   gateway_password:
     file: ./secrets/gateway_password.txt
-  1password_bot_email:
-    file: ./secrets/1password_bot_email.txt
-  1password_bot_master_password:
-    file: ./secrets/1password_bot_master_password.txt
-  1password_bot_secret_key:
-    file: ./secrets/1password_bot_secret_key.txt
   1password_service_account:
     file: ./secrets/1password_service_account
   telegram_bot_token:
     file: ./secrets/telegram_bot_token_production.txt
-  pihole_password:
-    file: ./secrets/pihole_password.txt
-  tailscale_authkey:
-    file: ./secrets/tailscale_authkey.txt
 
-# Network architecture for AgentShroud isolation
+# ── Networks ───────────────────────────────────────────────────────────────────
+# Two networks: internal (internet access) and isolated (no internet)
+# Only the gateway is on both. Bot is isolated only.
 networks:
   agentshroud-internal:
     driver: bridge
     internal: false
     ipam:
       config:
-      - subnet: 172.20.0.0/16
+        - subnet: 172.20.0.0/16
   agentshroud-isolated:
     driver: bridge
     internal: true
     ipam:
       config:
-      - subnet: 172.21.0.0/16
+        - subnet: 172.21.0.0/16
     driver_opts:
-      com.docker.network.bridge.enable_icc: 'true'
+      com.docker.network.bridge.enable_icc: "true"
+
+# ── Volumes ────────────────────────────────────────────────────────────────────
 volumes:
   gateway-data:
     driver: local
@@ -281,10 +182,4 @@ volumes:
   agentshroud-ssh:
     driver: local
   agentshroud-browsers:
-    driver: local
-  pihole-etc:
-    driver: local
-  pihole-dnsmasq:
-    driver: local
-  tailscale-state:
     driver: local
