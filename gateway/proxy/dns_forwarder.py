@@ -25,6 +25,11 @@ import struct
 import time
 from typing import Optional, Tuple
 
+try:
+    from .dns_blocklist import DNSBlocklist
+except ImportError:
+    DNSBlocklist = None
+
 logger = logging.getLogger("agentshroud.dns_forwarder")
 
 # ── Configuration ────────────────────────────────────────────────────────────
@@ -138,12 +143,14 @@ async def forward_query(data: bytes) -> Optional[bytes]:
 
 
 class DNSForwarderProtocol(asyncio.DatagramProtocol):
-    """UDP protocol handler for DNS forwarding."""
+    """UDP protocol handler for DNS forwarding with optional blocklist."""
 
-    def __init__(self):
+    def __init__(self, blocklist=None):
         self.transport = None
         self.query_count = 0
         self.start_time = time.time()
+        self.blocked_count = 0
+        self.blocklist = blocklist
 
     def connection_made(self, transport):
         self.transport = transport
@@ -173,6 +180,47 @@ class DNSForwarderProtocol(asyncio.DatagramProtocol):
                 f"DNS query #{self.query_count} from {source_ip}:{source_port} "
                 f"— could not parse query"
             )
+
+        # Check blocklist before forwarding
+        if self.blocklist and parsed and self.blocklist.is_blocked(domain):
+            self.blocked_count += 1
+            logger.info(
+                f"DNS BLOCKED #{self.query_count} {domain} {qtype_name} "
+                f"from {source_ip} (blocklist)"
+            )
+            # Return 0.0.0.0 for A queries, :: for AAAA, NXDOMAIN for others
+            if len(data) >= 12:
+                blocked_resp = bytearray(data)
+                # Set QR=1 (response), AA=1 (authoritative), RD=1
+                blocked_resp[2] = 0x85
+                blocked_resp[3] = 0x80  # RA=1, RCODE=0 (NOERROR)
+                # Set ANCOUNT=1
+                blocked_resp[6] = 0x00
+                blocked_resp[7] = 0x01
+                # Append answer: pointer to question name + A record 0.0.0.0
+                if qtype == 1:  # A record
+                    answer = b'\xc0\x0c'  # Name pointer to offset 12
+                    answer += b'\x00\x01'  # Type A
+                    answer += b'\x00\x01'  # Class IN
+                    answer += b'\x00\x00\x00\x3c'  # TTL 60s
+                    answer += b'\x00\x04'  # RDLENGTH 4
+                    answer += b'\x00\x00\x00\x00'  # 0.0.0.0
+                    self.transport.sendto(bytes(blocked_resp) + answer, addr)
+                elif qtype == 28:  # AAAA record
+                    answer = b'\xc0\x0c'
+                    answer += b'\x00\x1c'  # Type AAAA
+                    answer += b'\x00\x01'  # Class IN
+                    answer += b'\x00\x00\x00\x3c'  # TTL 60s
+                    answer += b'\x00\x10'  # RDLENGTH 16
+                    answer += b'\x00' * 16  # ::
+                    self.transport.sendto(bytes(blocked_resp) + answer, addr)
+                else:
+                    # NXDOMAIN for other types
+                    blocked_resp[3] = 0x83  # RCODE=3 (NXDOMAIN)
+                    blocked_resp[6] = 0x00
+                    blocked_resp[7] = 0x00  # ANCOUNT=0
+                    self.transport.sendto(bytes(blocked_resp), addr)
+            return
 
         # Forward to upstream
         start = time.monotonic()
@@ -216,14 +264,15 @@ class DNSForwarderProtocol(asyncio.DatagramProtocol):
 async def start_dns_forwarder(
     host: str = LISTEN_HOST,
     port: int = LISTEN_PORT,
+    blocklist: object = None,
 ) -> asyncio.DatagramTransport:
-    """Start the DNS forwarding server.
+    """Start the DNS forwarding server with optional blocklist.
 
     Returns the transport for lifecycle management.
     """
     loop = asyncio.get_event_loop()
     transport, protocol = await loop.create_datagram_endpoint(
-        DNSForwarderProtocol,
+        lambda: DNSForwarderProtocol(blocklist=blocklist),
         local_addr=(host, port),
     )
 
