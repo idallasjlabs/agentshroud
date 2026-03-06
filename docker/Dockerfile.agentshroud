@@ -18,6 +18,7 @@ RUN apt-get update && \
         libopenscap25 \
         openscap-scanner \
         gosu \
+        gnupg \
         clamav clamav-daemon clamav-freshclam \
     && apt-get clean && \
     rm -rf /var/lib/apt/lists/* /var/cache/apt/archives/*
@@ -47,7 +48,7 @@ RUN corepack enable
 WORKDIR /app
 
 # Install OpenClaw from npm registry (pinned version for reproducible builds)
-RUN npm install -g openclaw@0.11.4
+RUN npm install -g openclaw@2026.3.2
 # SECURITY: Route LLM API through AgentShroud gateway
 COPY docker/scripts/patch-anthropic-sdk.sh /tmp/patch-anthropic-sdk.sh
 RUN sh /tmp/patch-anthropic-sdk.sh && rm /tmp/patch-anthropic-sdk.sh
@@ -60,25 +61,15 @@ RUN npm install -g playwright@1.50.1 && \
 # NOTE: placed after Playwright to preserve the expensive Playwright cache layer
 COPY docker/scripts/patch-telegram-sdk.sh /tmp/patch-telegram-sdk.sh
 RUN sh /tmp/patch-telegram-sdk.sh && rm /tmp/patch-telegram-sdk.sh
-
 # Install 1Password CLI for secure secret management (multi-arch)
 # R2-H1: GPG signature verification for supply chain integrity
-RUN DPKG_ARCH=$(dpkg --print-architecture) && \
-    case "$DPKG_ARCH" in \
-      arm64) TRIVY_ARCH="ARM64" ;; \
-      amd64) TRIVY_ARCH="64bit" ;; \
-      armhf) TRIVY_ARCH="ARM" ;; \
-      *) TRIVY_ARCH="$DPKG_ARCH" ;; \
-    esac && \
-    curl -L -o /tmp/op.zip "https://cache.agilebits.com/dist/1P/op2/pkg/v2.32.0/op_linux_${ARCH}_v2.32.0.zip" && \
-    curl -L -o /tmp/op.sig "https://cache.agilebits.com/dist/1P/op2/pkg/v2.32.0/op_linux_${ARCH}_v2.32.0.zip.sig" && \
-    curl -sS https://downloads.1password.com/linux/keys/1password.asc | gpg --dearmor --output /tmp/1password.gpg && \
-    gpg --no-default-keyring --keyring /tmp/1password.gpg --verify /tmp/op.sig /tmp/op.zip && \
-    unzip -q /tmp/op.zip -d /tmp/ && \
-    mv /tmp/op /usr/local/bin/op && \
-    chmod +x /usr/local/bin/op && \
-    rm -f /tmp/op.zip /tmp/op.sig /tmp/1password.gpg
-
+RUN curl -sS https://downloads.1password.com/linux/keys/1password.asc | \
+    gpg --dearmor --output /usr/share/keyrings/1password-archive-keyring.gpg && \
+    echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/1password-archive-keyring.gpg] https://downloads.1password.com/linux/debian/$(dpkg --print-architecture) stable main" | \
+    tee /etc/apt/sources.list.d/1password.list && \
+    apt-get update && apt-get install -y --no-install-recommends 1password-cli \
+    && rm -rf /var/lib/apt/lists/*
+# Create directories for AgentShroud configuration and workspace
 # Create directories for AgentShroud configuration and workspace
 # Note: OpenClaw CLI expects ~/.openclaw, so we symlink it to ~/.agentshroud
 RUN mkdir -p /home/node/.agentshroud && \
