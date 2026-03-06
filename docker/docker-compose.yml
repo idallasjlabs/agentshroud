@@ -1,6 +1,8 @@
-# AgentShroud Docker Compose — 2-container architecture
+# AgentShroud Docker Compose — Production (marvin / ijefferson.admin)
 # Gateway: security proxy, DNS forwarder, API gateway, all security tools
 # Bot: OpenClaw agent, minimal footprint
+#
+# Usage: docker compose -f docker/docker-compose.yml -p agentshroud up -d
 #
 # Copyright © 2026 Isaiah Dallas Jefferson, Jr. AgentShroud™. All rights reserved.
 
@@ -28,8 +30,8 @@ services:
       - agentshroud-workspace:/data/bot-workspace:ro
     secrets:
       - gateway_password
-      - 1password_service_account
       - telegram_bot_token
+      - 1password_service_account
     environment:
       - PYTHONUNBUFFERED=1
       - LOG_LEVEL=INFO
@@ -162,13 +164,13 @@ networks:
     internal: false
     ipam:
       config:
-        - subnet: 172.20.0.0/16
+        - subnet: 172.10.0.0/16
   agentshroud-isolated:
     driver: bridge
     internal: true
     ipam:
       config:
-        - subnet: 172.21.0.0/16
+        - subnet: 172.11.0.0/16
     driver_opts:
       com.docker.network.bridge.enable_icc: "true"
 

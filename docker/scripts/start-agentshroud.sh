@@ -121,15 +121,15 @@ export ICLOUD_APP_PASSWORD="$ICLOUD_APP_PASSWORD"
 # ── SECURITY (C3/H2): Write secrets to tmpfs files, then unset env vars ──
 # Prevents secrets from appearing in /proc/*/environ of child processes.
 # OpenClaw reads these at startup; after that, file-based access only.
-SECRETS_DIR="${SECRETS_DIR:-/tmp/secrets}"
-mkdir -p "${SECRETS_DIR}"
-chmod 700 "${SECRETS_DIR}"
+SECRETS_DIR="\${SECRETS_DIR:-/tmp/secrets}"
+mkdir -p "\${SECRETS_DIR}"
+chmod 700 "\${SECRETS_DIR}"
 
 for _var in ANTHROPIC_OAUTH_TOKEN BRAVE_API_KEY ICLOUD_APP_PASSWORD; do
-  _val=$(eval echo "\$$_var")
-  if [ -n "$_val" ]; then
-    printf '%s' "$_val" > "$SECRETS_DIR/$_var"
-    chmod 600 "$SECRETS_DIR/$_var"
+  _val=\$(eval echo "\$\$_var")
+  if [ -n "\$_val" ]; then
+    printf '%s' "\$_val" > "\$SECRETS_DIR/\$_var"
+    chmod 600 "\$SECRETS_DIR/\$_var"
   fi
 done
 echo "[security] ✓ Secrets written to tmpfs files, env vars preserved for OpenClaw startup"

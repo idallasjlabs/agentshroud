@@ -1,7 +1,7 @@
-# Trillian Instance (Intel Mac Mini 2018)
-# Usage: docker compose -f docker/docker-compose.yml -f docker/docker-compose.trillian.yml -p agentshroud-trillian up -d
+# AgentShroud Dev/Test Instance — Trillian host (Intel Mac Mini 2018), agentshroud-bot user
+# Usage: docker compose -f docker/docker-compose.yml -f docker/docker-compose.agentshroud-bot.trillian.yml -p agentshroud up -d
 # Bot: @agentshroud_trillian_bot
-# Ports: gateway 8080, bot 18789
+# Ports: gateway 8080, bot 18789 (no conflict — separate host)
 # Note: Trillian has limited resources (2 CPUs, ~2GB RAM) — reduced limits
 services:
   gateway:
@@ -11,7 +11,7 @@ services:
     memswap_limit: 512m
     cpus: 0.5
 
-  agentshroud:
+  bot:
     hostname: trillian
     ports: !override
       - "127.0.0.1:18789:18789"
