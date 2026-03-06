@@ -487,6 +487,239 @@ else
 fi
 
 # ══════════════════════════════════════════════════════════════════════════════
+# 9. TCP TRACEROUTE (Port 443)
+# ══════════════════════════════════════════════════════════════════════════════
+header "9. TCP Traceroute (Port 443)"
+
+# TCP traceroute bypasses ICMP-blocking environments and traces the actual
+# path HTTPS traffic takes — useful for identifying where TLS is being dropped.
+
+if has tcptraceroute; then
+  info "TCP traceroute to $PING_TARGET_IP:443..."
+  TRACE=$(tcptraceroute -m "$TRACEROUTE_HOPS" -w 2 "$PING_TARGET_IP" 443 2>/dev/null | head -20)
+  echo "$TRACE" | while IFS= read -r line; do info "$line"; done
+  if echo "$TRACE" | grep -q "\[open\]"; then
+    pass "TCP traceroute" "Reached $PING_TARGET_IP:443 — port open"
+  else
+    HOP_COUNT=$(echo "$TRACE" | grep -c "^ " 2>/dev/null || echo 0)
+    if [ "$HOP_COUNT" -le 1 ]; then
+      fail "TCP traceroute" "Stuck at hop 1 — TCP egress blocked at container boundary"
+    else
+      warn "TCP traceroute" "Reached hop $HOP_COUNT but port 443 not open at destination"
+    fi
+  fi
+elif has traceroute; then
+  # Some traceroute implementations support -T for TCP mode
+  if traceroute --help 2>&1 | grep -q "\-T"; then
+    info "TCP traceroute (traceroute -T) to $PING_TARGET_IP:443..."
+    TRACE=$(traceroute -T -m "$TRACEROUTE_HOPS" -w 2 -p 443 "$PING_TARGET_IP" 2>/dev/null | head -20)
+    if [ -n "$TRACE" ]; then
+      echo "$TRACE" | while IFS= read -r line; do info "$line"; done
+      if echo "$TRACE" | grep -q "$PING_TARGET_IP"; then
+        pass "TCP traceroute" "Reached $PING_TARGET_IP:443"
+      else
+        warn "TCP traceroute" "Did not reach destination"
+      fi
+    else
+      warn "TCP traceroute" "traceroute -T failed (may need root)"
+    fi
+  else
+    warn "TCP traceroute" "traceroute does not support -T flag"
+  fi
+elif has node; then
+  # Node.js TCP hop estimation: connect and measure latency tiers
+  info "TCP traceroute not available — testing TCP reachability via Node.js..."
+  RESULT=$(timeout "$TCP_TIMEOUT" node -e "
+    const start = Date.now();
+    const s = new (require('net').Socket)();
+    s.setTimeout(${TCP_TIMEOUT}000);
+    s.connect(443, '$PING_TARGET_IP', () => {
+      console.log('OPEN ' + (Date.now()-start) + 'ms');
+      s.destroy();
+    });
+    s.on('error', (e) => console.log('FAIL ' + e.code + ' ' + (Date.now()-start) + 'ms'));
+    s.on('timeout', () => { console.log('TIMEOUT ' + (Date.now()-start) + 'ms'); s.destroy(); });
+  " 2>/dev/null)
+  if echo "$RESULT" | grep -q "^OPEN"; then
+    pass "TCP 443 reachability" "$PING_TARGET_IP:443 $RESULT"
+  elif echo "$RESULT" | grep -q "^FAIL"; then
+    fail "TCP 443 reachability" "$PING_TARGET_IP:443 $RESULT"
+  else
+    fail "TCP 443 reachability" "$PING_TARGET_IP:443 timeout"
+  fi
+else
+  warn "TCP traceroute" "No TCP traceroute tools available"
+fi
+
+# ══════════════════════════════════════════════════════════════════════════════
+# 10. MTU / FRAGMENTATION CHECK
+# ══════════════════════════════════════════════════════════════════════════════
+header "10. MTU / Fragmentation Check"
+
+# MTU mismatches are a silent but common failure mode in containerized environments
+# using overlay networks (Docker Swarm, K8s Flannel/Calico, WireGuard, VPNs).
+# Large packets get silently dropped while small ones succeed, making connections
+# appear intermittent or broken only for certain traffic types.
+
+# Read interface MTU
+IFACE_MTU=""
+if has ip && [ -n "${DEFAULT_IF:-}" ]; then
+  IFACE_MTU=$(ip link show "$DEFAULT_IF" 2>/dev/null | grep -oP 'mtu \K[0-9]+')
+elif [ -f /sys/class/net/eth0/mtu ]; then
+  IFACE_MTU=$(cat /sys/class/net/eth0/mtu 2>/dev/null)
+  DEFAULT_IF="${DEFAULT_IF:-eth0}"
+fi
+
+if [ -n "$IFACE_MTU" ]; then
+  info "Interface ${DEFAULT_IF:-unknown} MTU: $IFACE_MTU"
+
+  if [ "$IFACE_MTU" -lt 1280 ]; then
+    fail "MTU" "MTU $IFACE_MTU is below IPv6 minimum (1280) — will cause failures"
+  elif [ "$IFACE_MTU" -lt 1400 ]; then
+    warn "MTU" "MTU $IFACE_MTU is low — may cause fragmentation with VPN/overlay"
+  else
+    pass "MTU value" "MTU $IFACE_MTU is standard"
+  fi
+
+  # Fragmentation test: send large packet with DF (don't fragment) flag
+  if has ping && [ -n "${DEFAULT_GW:-}" ]; then
+    # Payload size = MTU - IP header (20) - ICMP header (8)
+    PAYLOAD_SIZE=$((IFACE_MTU - 28))
+    if [ "$PAYLOAD_SIZE" -gt 0 ]; then
+      # -M do = don't fragment (Linux), -D = don't fragment (BSD/macOS)
+      if ping -c 1 -W "$PING_TIMEOUT" -s "$PAYLOAD_SIZE" -M do "$DEFAULT_GW" >/dev/null 2>&1 ||
+         ping -c 1 -W "$PING_TIMEOUT" -s "$PAYLOAD_SIZE" -D "$DEFAULT_GW" >/dev/null 2>&1; then
+        pass "MTU path" "Full MTU packet ($PAYLOAD_SIZE + 28 = $IFACE_MTU) delivered to gateway"
+      else
+        fail "MTU path" "Full MTU packet dropped at gateway — MTU mismatch in path"
+      fi
+    fi
+
+    # Also test a typical HTTPS-sized payload (1400 bytes)
+    if [ "$IFACE_MTU" -gt 1400 ]; then
+      if ping -c 1 -W "$PING_TIMEOUT" -s 1372 -M do "$DEFAULT_GW" >/dev/null 2>&1 ||
+         ping -c 1 -W "$PING_TIMEOUT" -s 1372 -D "$DEFAULT_GW" >/dev/null 2>&1; then
+        pass "MTU HTTPS" "1400-byte packet delivered (typical HTTPS payload size)"
+      else
+        warn "MTU HTTPS" "1400-byte packet dropped — HTTPS traffic may fail intermittently"
+      fi
+    fi
+  elif has node && [ -n "${DEFAULT_GW:-}" ]; then
+    info "ping not available — MTU path test requires ping with DF flag"
+  else
+    info "Cannot test MTU path (no ping or no gateway)"
+  fi
+else
+  warn "MTU" "Could not determine interface MTU"
+  # Try /proc fallback
+  if [ -d /sys/class/net ]; then
+    for iface in /sys/class/net/*/mtu; do
+      IFNAME=$(echo "$iface" | cut -d/ -f5)
+      [ "$IFNAME" = "lo" ] && continue
+      MTU_VAL=$(cat "$iface" 2>/dev/null)
+      if [ -n "$MTU_VAL" ]; then
+        info "$IFNAME MTU: $MTU_VAL"
+      fi
+    done
+  fi
+fi
+
+# ══════════════════════════════════════════════════════════════════════════════
+# 11. FIREWALL RULES
+# ══════════════════════════════════════════════════════════════════════════════
+header "11. Firewall Rules (iptables)"
+
+# Docker relies on iptables NAT and FORWARD rules to route container traffic.
+# If these are misconfigured or flushed, containers lose outbound connectivity
+# even though their internal configuration looks correct.
+
+if has iptables; then
+  # Try reading rules (usually needs root)
+  RULES=$(iptables -L -n 2>/dev/null)
+  if [ -n "$RULES" ]; then
+    info "iptables FORWARD chain:"
+    iptables -L FORWARD -n -v 2>/dev/null | head -10 | while IFS= read -r line; do
+      info "  $line"
+    done
+    info ""
+    info "iptables NAT POSTROUTING:"
+    iptables -t nat -L POSTROUTING -n -v 2>/dev/null | head -10 | while IFS= read -r line; do
+      info "  $line"
+    done
+
+    # Check for DROP-all in FORWARD
+    if iptables -L FORWARD -n 2>/dev/null | grep -q "DROP.*0.0.0.0/0.*0.0.0.0/0"; then
+      warn "Firewall" "FORWARD chain has blanket DROP rule — may block container traffic"
+    else
+      pass "Firewall" "No blanket DROP in FORWARD chain"
+    fi
+
+    # Check DOCKER-USER chain exists
+    if iptables -L DOCKER-USER -n >/dev/null 2>&1; then
+      DOCKER_USER_RULES=$(iptables -L DOCKER-USER -n 2>/dev/null | grep -c "DROP\|REJECT")
+      info "DOCKER-USER chain: $DOCKER_USER_RULES blocking rules"
+      pass "DOCKER-USER" "Chain exists ($DOCKER_USER_RULES blocking rules)"
+    fi
+  else
+    info "iptables requires root — run from host:"
+    info "  docker exec --user root <container> iptables -L -n"
+    info "  iptables -L FORWARD -n -v  (on host)"
+    info "  iptables -t nat -L POSTROUTING -n -v  (on host)"
+    warn "Firewall" "Cannot read iptables (not root)"
+  fi
+elif has nft; then
+  NFT_RULES=$(nft list ruleset 2>/dev/null | head -20)
+  if [ -n "$NFT_RULES" ]; then
+    info "nftables rules (first 20 lines):"
+    echo "$NFT_RULES" | while IFS= read -r line; do info "  $line"; done
+    pass "Firewall" "nftables rules readable"
+  else
+    warn "Firewall" "Cannot read nftables (not root)"
+  fi
+else
+  info "No firewall tools in container (expected in minimal images)"
+  info "Run on HOST to check Docker firewall:"
+  info "  sudo iptables -L FORWARD -n -v"
+  info "  sudo iptables -L DOCKER-USER -n -v"
+  info "  sudo iptables -t nat -L POSTROUTING -n -v"
+  warn "Firewall" "No iptables/nft — check host-side rules manually"
+fi
+
+# ══════════════════════════════════════════════════════════════════════════════
+# 12. QUICK DIAGNOSIS GUIDE
+# ══════════════════════════════════════════════════════════════════════════════
+header "12. Diagnosis Decision Table"
+
+if ! $JSON_MODE; then
+  echo ""
+  echo "  ┌─────────────────────────┬────────────────────────────────────────────┐"
+  echo "  │ Failure Pattern          │ Likely Cause                               │"
+  echo "  ├─────────────────────────┼────────────────────────────────────────────┤"
+  echo "  │ No interface / DOWN      │ Docker network detached or misconfigured   │"
+  echo "  │ No default route         │ Docker routing broken (restart Colima)     │"
+  echo "  │ Gateway ping fails       │ Docker bridge issue (check host iptables)  │"
+  echo "  │ DNS port blocked         │ Firewall blocking UDP/TCP 53               │"
+  echo "  │ DNS resolves, ping fails │ NAT/routing broken upstream of container   │"
+  echo "  │ IP ping ok, host fails   │ DNS resolver misconfigured                 │"
+  echo "  │ ICMP ok, TCP blocked     │ Firewall rules blocking specific ports     │"
+  echo "  │ TCP ok, HTTP fails       │ Proxy misconfiguration or TLS issue        │"
+  echo "  │ Small packets ok, large  │ MTU mismatch (overlay/VPN/WireGuard)       │"
+  echo "  │   packets fail           │                                            │"
+  echo "  │ Traceroute stuck hop 1   │ Traffic not leaving container namespace    │"
+  echo "  │ Traceroute stuck hop N   │ Upstream firewall or ISP issue             │"
+  echo "  │ Works via proxy only     │ Correct! Container is isolated by design   │"
+  echo "  └─────────────────────────┴────────────────────────────────────────────┘"
+  echo ""
+  echo "  Host-side commands for parallel diagnosis:"
+  echo "    sudo iptables -L FORWARD -n -v"
+  echo "    sudo iptables -L DOCKER-USER -n -v"
+  echo "    sudo iptables -t nat -L POSTROUTING -n -v"
+  echo "    docker network inspect <network_name>"
+  echo "    docker inspect <container> --format '{{json .NetworkSettings}}'"
+  echo "    ip route show  (inside Colima VM: colima ssh -- ip route show)"
+fi
+
+# ══════════════════════════════════════════════════════════════════════════════
 # SUMMARY
 # ══════════════════════════════════════════════════════════════════════════════
 
@@ -523,13 +756,7 @@ else
     echo -e "  ${RED}${BOLD}$FAIL test(s) failed — review above for the failing layer.${NC}"
     echo ""
     echo "  Diagnostic guide:"
-    echo "    Interface down    → Docker network issue (recreate container)"
-    echo "    No default route  → Docker routing broken (restart Docker/Colima)"
-    echo "    Gateway ping fail → Docker bridge issue (check host iptables)"
-    echo "    DNS fail only     → DNS misconfiguration (check resolv.conf)"
-    echo "    IP ping ok, host fail → DNS resolver broken"
-    echo "    TCP fail          → Firewall/iptables blocking specific ports"
-    echo "    HTTP fail         → Proxy misconfiguration or upstream issue"
+    echo "    See section 12 above for the full diagnosis decision table."
   fi
 fi
 
