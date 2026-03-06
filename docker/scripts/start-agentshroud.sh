@@ -13,7 +13,14 @@ if [ -f "/run/secrets/gateway_password" ]; then
     export OPENCLAW_GATEWAY_PASSWORD="$(cat /run/secrets/gateway_password)"
     # FINAL: also set GATEWAY_AUTH_TOKEN so op-wrapper.sh routes through gateway
     export GATEWAY_AUTH_TOKEN="$OPENCLAW_GATEWAY_PASSWORD"
-    echo "[startup] Loaded Gateway password"
+    # SECURITY (H3): Strip DNS architecture info from resolv.conf comments
+# Docker adds internal network details that leak infrastructure topology
+sed -i /^#.*ExtServers/d /etc/resolv.conf 2>/dev/null || true
+sed -i /^#.*Overrides/d /etc/resolv.conf 2>/dev/null || true
+sed -i /^#.*Based on host/d /etc/resolv.conf 2>/dev/null || true
+sed -i /^#.*Option ndots/d /etc/resolv.conf 2>/dev/null || true
+
+echo "[startup] Loaded Gateway password"
 else
     echo "[startup] Warning: Gateway password file not found"
 fi
