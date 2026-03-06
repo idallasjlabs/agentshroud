@@ -69,15 +69,17 @@ services:
     image: pihole/pihole@sha256:ee348529cea9601df86ad94d62a39cad26117e1eac9e82d8876aa0ec7fe1ba27
     container_name: agentshroud-pihole
     hostname: pihole
-    dns:
-    - 8.8.8.8
-    - 8.8.4.4
+    # SECURITY: No direct DNS — all upstream queries route through gateway
+    # DNS forwarder on gateway:5353 → 8.8.8.8 (logged in audit trail)
     restart: unless-stopped
 
     environment:
       - WEBPASSWORD_FILE=/run/secrets/pihole_password
       - DNSMASQ_LISTENING=all
-      - PIHOLE_DNS_=8.8.8.8;8.8.4.4
+      # Upstream DNS points to gateway DNS forwarder (not direct internet)
+      - PIHOLE_DNS_=172.21.0.2#5353
+      # Pihole v6 env var format (FTLCONF_ prefix for pihole.toml values)
+      - FTLCONF_dns_upstreams=172.21.0.2#5353
       - DNS_BOGUS_PRIV=true
       - DNS_FQDN_REQUIRED=true
 
@@ -95,10 +97,11 @@ services:
     memswap_limit: 256m
     pids_limit: 64
 
+    # SECURITY: Pihole on isolated network ONLY — no direct internet access
+    # All upstream DNS goes through gateway DNS forwarder on isolated network
     networks:
       agentshroud-isolated:
         ipv4_address: 172.21.0.10
-      agentshroud-internal: {}
 
   # AgentShroud Bot (Real AgentShroud Platform) - agentshroud.ai
   # SECURITY: Fully isolated - NO host filesystem access, NO LAN access

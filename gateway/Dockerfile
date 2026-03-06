@@ -46,16 +46,22 @@ RUN apt-get update && apt-get install -y --no-install-recommends curl ca-certifi
     && rm -rf /var/lib/apt/lists/*
 
 # Trivy vulnerability scanner — pinned version (M7 fix)
-ARG TRIVY_VERSION=0.58.2
+ARG TRIVY_VERSION=0.69.3
 # R2-M1: Download Trivy with checksum verification for supply chain integrity
-RUN ARCH=$(dpkg --print-architecture) && \
-    curl -sSfL -o /tmp/trivy.deb \
-        "https://github.com/aquasecurity/trivy/releases/download/v${TRIVY_VERSION}/trivy_${TRIVY_VERSION}_Linux-${ARCH}.deb" && \
+RUN DPKG_ARCH=$(dpkg --print-architecture) && \
+    case "$DPKG_ARCH" in \
+      arm64) TRIVY_ARCH="ARM64" ;; \
+      amd64) TRIVY_ARCH="64bit" ;; \
+      armhf) TRIVY_ARCH="ARM" ;; \
+      *) TRIVY_ARCH="$DPKG_ARCH" ;; \
+    esac && \
+    curl -sSfL -o "/tmp/trivy_${TRIVY_VERSION}_Linux-${TRIVY_ARCH}.deb" \
+        "https://github.com/aquasecurity/trivy/releases/download/v${TRIVY_VERSION}/trivy_${TRIVY_VERSION}_Linux-${TRIVY_ARCH}.deb" && \
     curl -sSfL -o /tmp/trivy_checksums.txt \
         "https://github.com/aquasecurity/trivy/releases/download/v${TRIVY_VERSION}/trivy_${TRIVY_VERSION}_checksums.txt" && \
-    cd /tmp && grep "trivy_${TRIVY_VERSION}_Linux-${ARCH}.deb" trivy_checksums.txt | sha256sum -c - && \
-    dpkg -i /tmp/trivy.deb && \
-    rm /tmp/trivy.deb /tmp/trivy_checksums.txt
+    cd /tmp && grep "trivy_${TRIVY_VERSION}_Linux-${TRIVY_ARCH}.deb" trivy_checksums.txt | sha256sum -c - && \
+    dpkg -i "/tmp/trivy_${TRIVY_VERSION}_Linux-${TRIVY_ARCH}.deb" && \
+    rm "/tmp/trivy_${TRIVY_VERSION}_Linux-${TRIVY_ARCH}.deb" /tmp/trivy_checksums.txt
 
 # Create non-root user
 RUN useradd --create-home --shell /bin/bash --uid 1000 agentshroud
