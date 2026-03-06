@@ -109,6 +109,7 @@ if [ -n "${GATEWAY_AUTH_TOKEN:-}" ] && [ -n "${GATEWAY_OP_PROXY_URL:-}" ]; then
 
     # iCloud email credentials — loaded in background to avoid blocking startup
     # (non-critical: email features degrade gracefully without iCloud creds)
+    SECRETS_DIR="${SECRETS_DIR:-/tmp/secrets}"
     _ICLOUD_ENV_FILE="/tmp/.icloud-env"
     (
         ICLOUD_APP_PASSWORD="$(op_proxy_read_with_retry "iCloud app password" \
@@ -120,9 +121,9 @@ export ICLOUD_APP_PASSWORD="$ICLOUD_APP_PASSWORD"
 # ── SECURITY (C3/H2): Write secrets to tmpfs files, then unset env vars ──
 # Prevents secrets from appearing in /proc/*/environ of child processes.
 # OpenClaw reads these at startup; after that, file-based access only.
-SECRETS_DIR="/tmp/secrets"
-mkdir -p "$SECRETS_DIR"
-chmod 700 "$SECRETS_DIR"
+SECRETS_DIR="${SECRETS_DIR:-/tmp/secrets}"
+mkdir -p "${SECRETS_DIR}"
+chmod 700 "${SECRETS_DIR}"
 
 for _var in ANTHROPIC_OAUTH_TOKEN BRAVE_API_KEY ICLOUD_APP_PASSWORD; do
   _val=$(eval echo "\$$_var")
@@ -154,7 +155,7 @@ if [ -n "${_ICLOUD_BG_PID:-}" ]; then
     # Give it 3 seconds — if it's not done, gateway starts without iCloud
     for _i in 1 2 3; do
         if [ -f "${_ICLOUD_ENV_FILE:-/tmp/.icloud-env}" ]; then
-            . "$_ICLOUD_ENV_FILE"
+            . "$_ICLOUD_ENV_FILE" || true; set -u
             break
         fi
         sleep 1
