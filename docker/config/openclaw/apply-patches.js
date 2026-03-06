@@ -96,6 +96,28 @@ if (!hasBinding) {
 }
 
 // ── Patch 3: mcpServers cleanup — remove legacy key rejected by OpenClaw ────
+
+// ── Patch 2b: binding for Isaiah collaborator account (@idallasj) ────────────
+
+const ISAIAH_COLLAB_ID = '7614658040';
+const hasCollabBinding = config.bindings.some(
+  b => b.agentId === 'main' &&
+       b.match &&
+       b.match.peer &&
+       b.match.peer.id === ISAIAH_COLLAB_ID
+);
+
+if (!hasCollabBinding) {
+  config.bindings.push({
+    agentId: 'main',
+    match: {
+      channel: 'telegram',
+      peer: { kind: 'direct', id: ISAIAH_COLLAB_ID }
+    }
+  });
+  console.log(`[init-patch] Added Telegram binding: peer ${ISAIAH_COLLAB_ID} → main`);
+  changed = true;
+}
 // openclaw@latest rejects 'mcpServers' as an unrecognised top-level key and
 // exits with code 1, putting the container into a crash loop.
 // MCP proxy wrapping will be re-implemented via the correct OpenClaw API.
@@ -229,6 +251,7 @@ const AUTHORIZED_SENDERS = [
   '8545356403',   // Chris
   '8279589982',   // Steve
   '8526379012',   // TJ
+  '7614658040',   // Isaiah (collaborator account @idallasj)
   // Bots (inter-bot group chat)
   '8481143014',   // @agentshroud_bot (production)
   '8736289266',   // @agentshroud_marvin_bot
