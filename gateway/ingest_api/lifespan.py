@@ -31,6 +31,7 @@ from ..proxy.mcp_config import MCPProxyConfig
 from ..proxy.web_config import WebProxyConfig
 from ..proxy.web_proxy import WebProxy
 from ..proxy.http_proxy import ALLOWED_DOMAINS, HTTPConnectProxy
+from ..proxy.dns_forwarder import start_dns_forwarder
 from ..ssh_proxy.proxy import SSHProxy
 from ..security.killswitch_monitor import KillSwitchMonitor
 from ..web.dashboard_endpoints import install_log_handler
@@ -453,6 +454,15 @@ async def lifespan(app: FastAPI):
     except Exception as e:
         logger.warning(f"HTTP CONNECT proxy failed to start: {e} (continuing)")
         app_state.http_proxy = None
+
+    # Start DNS forwarder (pihole upstream → gateway → 8.8.8.8)
+    # All DNS queries from pihole are logged in the gateway audit trail.
+    try:
+        app_state.dns_transport = await start_dns_forwarder(host="0.0.0.0", port=5353)
+        logger.info("DNS forwarder started on port 5353 (pihole upstream)")
+    except Exception as e:
+        logger.warning(f"DNS forwarder failed to start: {e} (continuing)")
+        app_state.dns_transport = None
 
     # Record start time
     app_state.start_time = time.time()
