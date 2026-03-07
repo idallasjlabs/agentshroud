@@ -100,14 +100,16 @@ class EgressPolicy:
 class EgressFilter:
     """Filter outbound connections based on allowlists with enforce/monitor modes."""
 
-    def __init__(self, 
+    def __init__(self,
                  config: Optional[EgressFilterConfig] = None,
-                 default_policy: Optional[EgressPolicy] = None):
+                 default_policy: Optional[EgressPolicy] = None,
+                 audit_store=None):
         self.config = config or get_egress_config()
         self.default_policy = default_policy or EgressPolicy()
         self._agent_policies: dict[str, EgressPolicy] = {}
         self._log: list[EgressAttempt] = []
         self._max_log_size = 10000
+        self._audit_store = audit_store  # Optional AuditStore for persistence
 
     def set_agent_policy(self, agent_id: str, policy: EgressPolicy) -> None:
         """Set a per-agent egress policy."""
@@ -343,6 +345,28 @@ class EgressFilter:
         self._log.append(attempt)
         if len(self._log) > self._max_log_size:
             self._log = self._log[-self._max_log_size // 2 :]
+
+        # Persist to SQLite audit store if configured (fire-and-forget)
+        if self._audit_store is not None:
+            import asyncio
+            try:
+                loop = asyncio.get_running_loop()
+                loop.create_task(
+                    self._audit_store.log_event(
+                        event_type="egress_filter",
+                        severity="HIGH" if action == EgressAction.DENY else "INFO",
+                        details={
+                            "agent_id": agent_id,
+                            "destination": dest,
+                            "port": port,
+                            "action": action.value,
+                            "rule": rule,
+                        },
+                        source_module="egress_filter",
+                    )
+                )
+            except RuntimeError:
+                pass  # No running event loop
 
         if action == EgressAction.DENY:
             logger.warning(

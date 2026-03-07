@@ -163,11 +163,23 @@ _PATTERNS: list[PatternRule] = [
             r"忽略.{0,10}(?:指令|指示|规则)|"
             r"забудь.{0,15}(?:инструкции|правила)|"
             r"игнорируй.{0,15}(?:инструкции|правила)|"
-            r"تجاهل.{0,15}(?:التعليمات|القواعد)"
+            r"تجاهل.{0,15}(?:التعليمات|القواعد)|"
+            # Thai
+            r"ละเว้น.{0,15}(?:คำสั่ง|กฎ)|"
+            r"ลืม.{0,15}(?:คำสั่ง|กฎทั้งหมด)|"
+            # Vietnamese
+            r"b(?:ỏ qua|ỏ qua tất cả)\s+(?:hướng dẫn|quy tắc)|"
+            r"quên\s+(?:tất cả\s+)?(?:hướng dẫn|quy tắc)|"
+            # Swahili
+            r"puuza\s+(?:maagizo|sheria)\s+(?:yote|zote)|"
+            r"sahau\s+(?:maagizo|sheria)\s+(?:yote|zote)|"
+            # Amharic
+            r"መመሪያዎቹን.{0,10}ችላ\s+ለ|"
+            r"ሁሉንም\s+መመሪያ.{0,10}ርሳ"
             r")"
         ),
         weight=0.9,
-        description="Multilingual instruction override attempt",
+        description="Multilingual instruction override attempt (20+ languages)",
     ),
     # Chat/model format injection
     PatternRule(

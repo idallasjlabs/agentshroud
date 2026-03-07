@@ -48,7 +48,7 @@ class TestForwardEndpoint:
                 "/forward",
                 json={
                     "content": "test message",
-                    "content_type": "text/plain",
+                    "content_type": "text",
                     "source": "api"
                 },
                 headers={"Authorization": "Bearer fake-token"}
@@ -88,7 +88,7 @@ class TestForwardEndpoint:
                 "/forward",
                 json={
                     "content": "test message",
-                    "content_type": "text/plain",
+                    "content_type": "text",
                     "source": "api"
                 },
                 headers={"Authorization": "Bearer fake-token"}

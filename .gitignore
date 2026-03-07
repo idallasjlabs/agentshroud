@@ -187,6 +187,13 @@ memory-backup/
 *.sqlite
 *.sqlite3
 
+# History files that may contain credentials
+history.env
+
+# Large data files (adjust as needed for your data lakehouse work)
+*.csv.gz
+*.parquet.gz
+
 # Data directory (raw/processed data)
 data/raw/
 data/processed/
