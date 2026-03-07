@@ -1088,6 +1088,110 @@ async def full_security_report(auth: AuthRequired):
     return report
 
 
+@app.get("/manage/falco/alerts")
+async def falco_alerts(auth: AuthRequired, limit: int = 100):
+    """Return recent Falco runtime security alerts with summary."""
+    from gateway.security import falco_monitor
+    from pathlib import Path as _Path
+
+    # Try primary alert dir, then fallback inside container
+    alert_dir = falco_monitor.DEFAULT_ALERT_DIR
+    if not alert_dir.exists():
+        alert_dir = _Path("/tmp/security/falco")
+
+    alerts = falco_monitor.read_alerts(alert_dir=alert_dir)
+    summary = falco_monitor.generate_summary(alerts)
+
+    return {
+        "alert_dir": str(alert_dir),
+        "dir_exists": alert_dir.exists(),
+        "summary": summary,
+        "alerts": alerts[-limit:],
+    }
+
+
+@app.get("/manage/wazuh/alerts")
+async def wazuh_alerts(auth: AuthRequired, limit: int = 100):
+    """Return recent Wazuh HIDS alerts with FIM and rootkit summary."""
+    from gateway.security import wazuh_client
+    from pathlib import Path as _Path
+
+    alert_dir = wazuh_client.DEFAULT_ALERT_DIR
+    if not alert_dir.exists():
+        alert_dir = _Path("/tmp/security/wazuh")
+
+    alerts = wazuh_client.read_alerts(alert_dir=alert_dir)
+    summary = wazuh_client.generate_summary(alerts)
+    fim = wazuh_client.get_fim_events(alerts)
+    rootkit = wazuh_client.get_rootkit_events(alerts)
+
+    return {
+        "alert_dir": str(alert_dir),
+        "dir_exists": alert_dir.exists(),
+        "summary": summary,
+        "fim_events": fim[-50:],
+        "rootkit_events": rootkit[-50:],
+        "alerts": alerts[-limit:],
+    }
+
+
+@app.post("/manage/scan/openscap")
+async def run_openscap_scan(auth: AuthRequired, profile: str = "xccdf_org.ssgproject.content_profile_standard"):
+    """Run OpenSCAP XCCDF evaluation against the running container."""
+    import subprocess as _sp, shutil as _sh, os as _os, glob as _gl
+    from datetime import datetime as _dt, timezone as _tz
+
+    if not _sh.which("oscap"):
+        return {"error": "OpenSCAP (oscap) binary not found"}
+
+    # Locate a SCAP datastream file
+    ds_file = None
+    for pattern in [
+        "/usr/share/xml/scap/ssg/content/ssg-debian*-ds.xml",
+        "/usr/share/xml/scap/ssg/content/ssg-ubuntu*-ds.xml",
+        "/usr/share/xml/scap/ssg/content/ssg-rhel*-ds.xml",
+        "/usr/share/openscap/*.xml",
+    ]:
+        matches = _gl.glob(pattern)
+        if matches:
+            ds_file = matches[0]
+            break
+
+    if not ds_file:
+        return {
+            "status": "no_content",
+            "message": "oscap binary present but no SCAP content datastream found — install scap-security-guide.",
+            "binary": _sh.which("oscap"),
+        }
+
+    results_xml = "/tmp/openscap-results.xml"
+    report_html = "/tmp/openscap-report.html"
+    try:
+        r = _sp.run(
+            ["oscap", "xccdf", "eval",
+             "--profile", profile,
+             "--results", results_xml,
+             "--report", report_html,
+             ds_file],
+            capture_output=True, text=True, timeout=120,
+        )
+        return {
+            "status": "completed",
+            "return_code": r.returncode,
+            "profile": profile,
+            "datastream": ds_file,
+            "results_xml": results_xml if _os.path.exists(results_xml) else None,
+            "report_html": report_html if _os.path.exists(report_html) else None,
+            "stdout_tail": r.stdout[-2000:] if r.stdout else "",
+            "stderr_tail": r.stderr[-500:] if r.stderr else "",
+            "timestamp": _dt.now(_tz.utc).isoformat(),
+        }
+    except _sp.TimeoutExpired:
+        return {"status": "timeout", "profile": profile}
+    except Exception as e:
+        return {"status": "error", "detail": str(e)}
+
+
 @app.get('/manage/container-security')
 async def container_security_profile(auth: AuthRequired):
     """Comprehensive container security profile — runs all applicable checks."""
