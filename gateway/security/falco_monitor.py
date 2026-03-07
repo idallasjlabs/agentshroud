@@ -36,7 +36,6 @@ PRIORITY_MAP = {
 # AgentShroud-specific rule prefixes
 AGENTSHROUD_RULES = [
     "AgentShroud",
-    "OpenClaw",
     "Container Shell",
     "Unexpected Outbound",
     "Privilege Escalation",
@@ -44,6 +43,23 @@ AGENTSHROUD_RULES = [
     "Crypto Mining",
     "File Access Outside Workspace",
 ]
+
+
+def configure_rules(bot_names: list[str]) -> None:
+    """Extend AGENTSHROUD_RULES with bot-specific name prefixes.
+
+    Called at gateway startup after bots are loaded from config so that
+    Falco alerts prefixed with the registered bot name (e.g. "OpenClaw")
+    are captured by is_agentshroud_rule() without hardcoding them here.
+
+    Args:
+        bot_names: List of BotConfig.name values to add as rule prefixes.
+    """
+    global AGENTSHROUD_RULES
+    for name in bot_names:
+        if name and name not in AGENTSHROUD_RULES:
+            AGENTSHROUD_RULES.append(name)
+            logger.info("Falco rule prefix registered: %s", name)
 
 
 def read_alerts(
