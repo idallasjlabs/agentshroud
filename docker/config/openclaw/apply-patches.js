@@ -190,20 +190,36 @@ if (gwPassword) {
   }
 }
 
-// ── Patch 7: gateway.controlUi — allow Host-header origin fallback ───────────
+// ── Patch 7: gateway.controlUi — explicit CORS origins, fallback disabled ─────
 // When gateway binds non-loopback (OPENCLAW_GATEWAY_BIND=lan), OpenClaw 2026.2.24+
-// requires explicit CORS origins for the Control UI. Since we bind lan for internal
-// Docker networking but only expose via localhost port mapping, the Host-header
-// fallback is safe and avoids the crash loop.
+// requires explicit CORS origins. We declare the localhost origins that match the
+// 127.0.0.1:8080 port mapping and hard-disable the Host-header fallback.
+// All Control UI traffic must originate from a declared origin — no exceptions.
 
 config.gateway = config.gateway || {};
 config.gateway.controlUi = config.gateway.controlUi || {};
 
-// Security: Only enable host-header fallback on first run (seed).
-// Once running, keep whatever the operator/audit has set.
-if (isNew && !config.gateway.controlUi.dangerouslyAllowHostHeaderOriginFallback) {
-  config.gateway.controlUi.dangerouslyAllowHostHeaderOriginFallback = true;
-  console.log('[init-patch] Set gateway.controlUi.dangerouslyAllowHostHeaderOriginFallback = true (seed only)');
+// Enforce explicit allowed origins. The gateway is exposed only via the
+// 127.0.0.1:8080 port mapping, so only localhost origins are permitted.
+const REQUIRED_ORIGINS = [
+  'http://localhost:8080',   // gateway port mapping (host → container)
+  'http://127.0.0.1:8080',
+  'http://localhost:18790',  // OpenClaw Control UI native port
+  'http://127.0.0.1:18790',
+];
+const currentOrigins = config.gateway.controlUi.allowedOrigins || [];
+const missingOrigins = REQUIRED_ORIGINS.filter(o => !currentOrigins.includes(o));
+if (missingOrigins.length > 0) {
+  config.gateway.controlUi.allowedOrigins = [...currentOrigins, ...missingOrigins];
+  console.log(`[init-patch] Set gateway.controlUi.allowedOrigins: ${missingOrigins.join(', ')}`);
+  changed = true;
+}
+
+// Hard-disable the Host-header fallback. Explicit origins are always required;
+// the fallback is never acceptable regardless of what openclaw.json contains.
+if (config.gateway.controlUi.dangerouslyAllowHostHeaderOriginFallback !== false) {
+  config.gateway.controlUi.dangerouslyAllowHostHeaderOriginFallback = false;
+  console.log('[init-patch] Set gateway.controlUi.dangerouslyAllowHostHeaderOriginFallback = false');
   changed = true;
 }
 
