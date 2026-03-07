@@ -27,6 +27,23 @@ logger = logging.getLogger("agentshroud.proxy.telegram_api")
 
 TELEGRAM_API_BASE = "https://api.telegram.org"
 
+# Slash-commands that are forbidden for collaborators (owner-only capabilities)
+_COLLABORATOR_BLOCKED_COMMANDS = {
+    "/skill", "/1password", "/op", "/exec", "/run", "/cron",
+    "/ssh", "/admin", "/config", "/secret", "/key", "/token",
+    "/memory", "/reset", "/kill", "/restart", "/update",
+}
+
+_DISCLOSURE_MESSAGE = (
+    "\U0001f6e1\ufe0f *AgentShroud Notice*\n\n"
+    "This conversation is logged and may be reviewed as part of the AgentShroud\u2122 "
+    "project\\. By continuing, you acknowledge this\\. Questions? Reach out to Isaiah directly\\.\n\n"
+    "_Bot commands like /skill aren't available in collaborator mode\\. "
+    "I'm the collaborator\\-facing assistant with read\\-only access \u2014 I can discuss "
+    "AgentShroud's features, security concepts, and provide technical advice, but I don't "
+    "have access to the full command set\\._"
+)
+
 
 class TelegramAPIProxy:
     """Proxies Telegram Bot API calls through the security pipeline."""
@@ -44,6 +61,17 @@ class TelegramAPIProxy:
         }
         self._bot_token = os.environ.get("TELEGRAM_BOT_TOKEN", "")
         self._ssl_context = ssl.create_default_context()
+
+        # Track which collaborator user IDs have already received the disclosure notice
+        # this session. Persisted in-memory only — resets on gateway restart (acceptable).
+        self._disclosure_sent: set[str] = set()
+
+        # Cache RBAC config to avoid re-instantiating on every message
+        try:
+            from gateway.security.rbac_config import RBACConfig
+            self._rbac = RBACConfig()
+        except Exception:
+            self._rbac = None
 
     def get_stats(self) -> dict:
         return dict(self._stats)
@@ -124,6 +152,7 @@ class TelegramAPIProxy:
 
             text = message.get("text", "") or message.get("caption", "")
             user_id = str(message.get("from", {}).get("id", "unknown"))
+            chat_id = message.get("chat", {}).get("id")
 
             if not text:
                 filtered_updates.append(update)
@@ -131,7 +160,58 @@ class TelegramAPIProxy:
 
             self._stats["messages_scanned"] += 1
 
-            # Run through middleware (RBAC, context guard, multi-turn tracking, etc.)
+            # ── Role resolution ───────────────────────────────────────────────
+            is_owner = self._rbac.is_owner(user_id) if self._rbac else False
+            is_collaborator = (
+                self._rbac and
+                not is_owner and
+                user_id in {str(uid) for uid in (self._rbac.collaborator_user_ids or [])}
+            )
+
+            # ── Gateway-level collaborator activity tracking ──────────────────
+            # This is the authoritative tracking point — all messages (including
+            # long-polling) flow through here. webhook_receiver only handles
+            # push-mode webhooks which are not used in this deployment.
+            if is_collaborator:
+                try:
+                    from gateway.ingest_api.state import app_state as _app_state
+                    _tracker = getattr(_app_state, "collaborator_tracker", None)
+                    if _tracker:
+                        sender = message.get("from", {})
+                        _username = sender.get("first_name") or (
+                            f"@{sender['username']}" if sender.get("username") else "unknown"
+                        )
+                        _tracker.record_activity(
+                            user_id=user_id,
+                            username=_username,
+                            message_preview=text[:80],
+                            source="telegram",
+                        )
+                except Exception as _te:
+                    logger.debug("Collaborator tracker error (non-fatal): %s", _te)
+
+            # ── Disclosure notice — send once per session per collaborator ─────
+            if is_collaborator and chat_id and user_id not in self._disclosure_sent:
+                await self._send_disclosure(chat_id)
+                self._disclosure_sent.add(user_id)
+
+            # ── Collaborator command blocking ─────────────────────────────────
+            # Block owner-only slash commands before they reach the bot.
+            if is_collaborator and chat_id:
+                cmd = text.strip().split()[0].lower() if text.strip() else ""
+                # Strip bot @mention suffix (e.g. /skill@agentshroud_bot → /skill)
+                cmd_base = cmd.split("@")[0]
+                if cmd_base in _COLLABORATOR_BLOCKED_COMMANDS:
+                    self._stats["messages_blocked"] += 1
+                    logger.info(
+                        "Collaborator %s attempted blocked command %r — rejecting",
+                        user_id, cmd_base,
+                    )
+                    await self._notify_collaborator_command_blocked(chat_id, cmd_base)
+                    # Drop the update — do not forward to bot
+                    continue
+
+            # ── Middleware pipeline (RBAC, context guard, multi-turn, etc.) ───
             if self.middleware_manager:
                 try:
                     request_data = {
@@ -145,41 +225,45 @@ class TelegramAPIProxy:
                         request_data, f"telegram_{user_id}"
                     )
                     if not result.allowed:
-                        logger.warning(
-                            f"Telegram message from {user_id} blocked by middleware: {result.reason}"
-                        )
-                        self._stats["messages_blocked"] += 1
-                        # Notify the user their message was blocked
-                        chat_id = message.get("chat", {}).get("id")
-                        if chat_id:
-                            await self._notify_user_blocked(chat_id, result.reason)
-                        # Replace message text with block notice
-                        if "message" in update:
-                            update["message"]["text"] = f"[BLOCKED BY AGENTSHROUD: {result.reason}]"
-                        elif "edited_message" in update:
-                            update["edited_message"]["text"] = f"[BLOCKED BY AGENTSHROUD: {result.reason}]"
-                        filtered_updates.append(update)
-                        continue
+                        if is_owner:
+                            # Owner messages are logged but never blocked by middleware
+                            logger.info(
+                                "Middleware would block owner message (%s) — allowing: %s",
+                                user_id, result.reason,
+                            )
+                        else:
+                            logger.warning(
+                                "Telegram message from %s blocked by middleware: %s",
+                                user_id, result.reason,
+                            )
+                            self._stats["messages_blocked"] += 1
+                            if chat_id:
+                                await self._notify_user_blocked(chat_id, result.reason)
+                            if "message" in update:
+                                update["message"]["text"] = f"[BLOCKED BY AGENTSHROUD: {result.reason}]"
+                            elif "edited_message" in update:
+                                update["edited_message"]["text"] = f"[BLOCKED BY AGENTSHROUD: {result.reason}]"
+                            filtered_updates.append(update)
+                            continue
                 except Exception as e:
                     logger.error(f"Middleware error for telegram message: {e}")
 
-            # PII sanitization on inbound messages
+            # ── PII sanitization ──────────────────────────────────────────────
             if self.sanitizer and text:
                 try:
-                    result = await self.sanitizer.sanitize(text)
-                    if result.entity_types_found:
+                    sanitize_result = await self.sanitizer.sanitize(text)
+                    if sanitize_result.entity_types_found:
                         self._stats["messages_sanitized"] += 1
                         logger.info(
-                            f"Telegram message from {user_id}: PII detected and redacted: "
-                            f"{result.entity_types_found}"
+                            "Telegram message from %s: PII redacted: %s",
+                            user_id, sanitize_result.entity_types_found,
                         )
-                        # Replace text with sanitized version
                         if "message" in update:
-                            update["message"]["text"] = result.sanitized_content
+                            update["message"]["text"] = sanitize_result.sanitized_content
                             update["message"]["_agentshroud_pii_redacted"] = True
-                            update["message"]["_agentshroud_redactions"] = list(result.entity_types_found)
+                            update["message"]["_agentshroud_redactions"] = list(sanitize_result.entity_types_found)
                         elif "edited_message" in update:
-                            update["edited_message"]["text"] = result.sanitized_content
+                            update["edited_message"]["text"] = sanitize_result.sanitized_content
                             update["edited_message"]["_agentshroud_pii_redacted"] = True
                 except Exception as e:
                     logger.error(f"PII sanitization error for telegram message: {e}")
@@ -188,6 +272,54 @@ class TelegramAPIProxy:
 
         response_data["result"] = filtered_updates
         return response_data
+
+    async def _send_disclosure(self, chat_id: int) -> None:
+        """Send the one-time collaborator disclosure notice."""
+        try:
+            if self._bot_token:
+                url = f"{TELEGRAM_API_BASE}/bot{self._bot_token}/sendMessage"
+                payload = {
+                    "chat_id": chat_id,
+                    "text": _DISCLOSURE_MESSAGE,
+                    "parse_mode": "MarkdownV2",
+                }
+                req = urllib.request.Request(
+                    url,
+                    data=json.dumps(payload).encode(),
+                    headers={"Content-Type": "application/json"},
+                )
+                loop = asyncio.get_event_loop()
+                await loop.run_in_executor(
+                    None,
+                    lambda: urllib.request.urlopen(req, timeout=5, context=self._ssl_context),
+                )
+                logger.info("Sent collaborator disclosure to chat %s", chat_id)
+        except Exception as e:
+            logger.warning("Failed to send disclosure to chat %s: %s", chat_id, e)
+
+    async def _notify_collaborator_command_blocked(self, chat_id: int, command: str) -> None:
+        """Notify a collaborator that a privileged command is not available."""
+        try:
+            if self._bot_token:
+                msg = (
+                    f"\U0001f512 `{command}` is not available in collaborator mode\\.\n\n"
+                    "Privileged commands \\(1Password, exec, SSH, skills\\) are restricted "
+                    "to the workspace owner\\. I can still help you with questions about "
+                    "AgentShroud, security concepts, and technical advice\\."
+                )
+                url = f"{TELEGRAM_API_BASE}/bot{self._bot_token}/sendMessage"
+                req = urllib.request.Request(
+                    url,
+                    data=json.dumps({"chat_id": chat_id, "text": msg, "parse_mode": "MarkdownV2"}).encode(),
+                    headers={"Content-Type": "application/json"},
+                )
+                loop = asyncio.get_event_loop()
+                await loop.run_in_executor(
+                    None,
+                    lambda: urllib.request.urlopen(req, timeout=5, context=self._ssl_context),
+                )
+        except Exception as e:
+            logger.warning("Failed to send command-blocked notice to chat %s: %s", chat_id, e)
 
 
     async def _notify_user_blocked(self, chat_id: int, reason: str):
