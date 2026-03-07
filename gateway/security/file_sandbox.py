@@ -143,7 +143,7 @@ class FileSandboxConfig:
             
             # Cross-session memory protection - prevent users from accessing each other's memory
             "**/memory/*/",  # Block access to other users' memory directories
-            "**/.openclaw/workspace/memory/*/",  # Block specific OpenClaw memory paths
+            "**/workspace/memory/*/",  # Block cross-session memory access in any bot workspace
             "**/MEMORY.md",  # Block access to other users' MEMORY.md files (except own session)
             "**/workspace/*/memory/**",  # Block cross-workspace memory access
             "**/session_*/memory/**",  # Block cross-session memory access
@@ -181,11 +181,13 @@ class FileSandboxConfig:
             "**/gateway/**",
         ]
     )
-    # Allowed write paths - agent can only write to its own workspace
+    # Allowed write paths - agent can only write to its own workspace.
+    # Use the generic /home/** pattern so any bot's home directory is permitted;
+    # fine-grained workspace scoping is enforced via WorkspaceIsolation at runtime.
     allowed_write_default: list[str] = field(
         default_factory=lambda: [
             "/tmp/**",
-            "/home/node/.openclaw/workspace/**",
+            "/home/**",
             "/app/data/**",  # Gateway can write to its data directory
             "/app/logs/**",  # Gateway can write logs
         ]
