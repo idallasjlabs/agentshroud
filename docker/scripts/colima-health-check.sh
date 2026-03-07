@@ -16,6 +16,23 @@
 
 set -uo pipefail
 
+# Ensure Homebrew and Docker (Colima shim) are in PATH regardless of how this script is invoked
+# (cron, LaunchAgent, and SSH sessions all have minimal PATH by default on macOS)
+export PATH="/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:$PATH"
+
+# Point Docker CLI at Colima's socket explicitly — avoids relying on docker context state
+# which is user-session-specific and may not be set in non-interactive environments.
+_COLIMA_SOCK_OWNER="${SUDO_USER:-${USER:-$(id -un)}}"
+for _candidate in \
+    "/Users/${_COLIMA_SOCK_OWNER}/.colima/default/docker.sock" \
+    "/Users/agentshroud-bot/.colima/default/docker.sock" \
+    "/Users/ijefferson.admin/.colima/default/docker.sock"; do
+    if [ -S "$_candidate" ]; then
+        export DOCKER_HOST="unix://$_candidate"
+        break
+    fi
+done
+
 # ── Configuration ────────────────────────────────────────────────────────────
 SCRIPT_DIR="$(cd "$(dirname "$0")" && pwd)"
 REPO_DIR="$(cd "$SCRIPT_DIR/../.." && pwd)"
