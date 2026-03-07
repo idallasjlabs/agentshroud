@@ -297,10 +297,15 @@ class SecurityPipeline:
             timestamp=start,
         )
 
+        # Resolve owner status early — used by both ContextGuard and PromptGuard.
+        user_id = (metadata or {}).get("user_id", "")
+        is_owner = bool(self._owner_user_id and str(user_id) == str(self._owner_user_id))
+
         # Step 0: ContextGuard — cross-turn injection and repetition detection.
         # Runs before PromptGuard to catch session-level attacks.  Repetition
         # attacks are logged but not blocked (they fire on legitimate structured
         # output).  Only critical/high instruction-injection findings block.
+        # Owner messages are logged but never blocked.
         if self.context_guard:
             try:
                 attacks = self.context_guard.analyze_message(agent_id, message)
@@ -309,6 +314,12 @@ class SecurityPipeline:
                         logger.info("ContextGuard: repetition noted (not blocking): %s", attack.description)
                         continue
                     if attack.severity in ("critical", "high"):
+                        if is_owner:
+                            logger.info(
+                                "ContextGuard: owner message would be blocked (%s — %s) — allowing",
+                                attack.attack_type, attack.description,
+                            )
+                            continue
                         result.action = PipelineAction.BLOCK
                         result.blocked = True
                         result.block_reason = f"ContextGuard: {attack.attack_type} — {attack.description}"
@@ -320,16 +331,18 @@ class SecurityPipeline:
                         return result
             except Exception as exc:
                 logger.error("ContextGuard error in pipeline: %s", exc)
-                # Fail closed — block on error to maintain security posture
-                result.action = PipelineAction.BLOCK
-                result.blocked = True
-                result.block_reason = f"ContextGuard error: {exc}"
-                result.processing_time_ms = (time.time() - start) * 1000
-                return result
+                if is_owner:
+                    logger.warning("ContextGuard error on owner message — allowing through")
+                else:
+                    # Fail closed — block non-owner on error to maintain security posture
+                    result.action = PipelineAction.BLOCK
+                    result.blocked = True
+                    result.block_reason = f"ContextGuard error: {exc}"
+                    result.processing_time_ms = (time.time() - start) * 1000
+                    return result
 
         # Step 1: Prompt injection scan
-        user_id = (metadata or {}).get("user_id", "")
-        is_owner = self._owner_user_id and str(user_id) == str(self._owner_user_id)
+        # user_id / is_owner already resolved above
         if self.prompt_guard:
             scan = self.prompt_guard.scan(message)
             result.prompt_score = scan.score
