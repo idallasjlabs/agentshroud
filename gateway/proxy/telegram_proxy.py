@@ -145,6 +145,26 @@ class TelegramAPIProxy:
         filtered_updates = []
 
         for update in updates:
+            # Handle inline button callbacks for egress approve/deny
+            callback_query = update.get("callback_query")
+            if callback_query:
+                cb_data = callback_query.get("data", "")
+                if cb_data.startswith("egress_"):
+                    try:
+                        from gateway.ingest_api.state import app_state as _app_state
+                        _notifier = getattr(_app_state, "egress_notifier", None)
+                        if _notifier:
+                            result = await _notifier.handle_callback(cb_data)
+                            await _notifier.answer_callback(
+                                callback_query.get("id", ""),
+                                f"Egress {result.get('action', 'processed')}",
+                            )
+                            logger.info("Egress callback handled: %s", result)
+                    except Exception as _ce:
+                        logger.error("Egress callback error (non-fatal): %s", _ce)
+                # Drop callback_query updates — they are not bot messages
+                continue
+
             message = update.get("message", {}) or update.get("edited_message", {})
             if not message:
                 filtered_updates.append(update)

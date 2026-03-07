@@ -2181,129 +2181,209 @@ async def get_my_permissions(request: Request, auth: AuthRequired):
 
 
 
-def _get_pihole_auth_token() -> str:
-    """Read Pi-hole auth token from Docker secret."""
-    try:
-        with open("/run/secrets/pihole_password", "r") as f:
-            return f.read().strip()
-    except FileNotFoundError:
-        return ""
-
-
-# === Pi-hole DNS Management API (v0.8.0 Feature 1c) ===
+# === DNS Management API — in-process DNSBlocklist (replaces Pi-hole proxy) ===
 
 @app.get("/manage/dns")
 async def get_dns_stats(auth: AuthRequired):
-    """Get Pi-hole DNS statistics.
-    
-    Returns current DNS filtering statistics including:
-    - Queries today
-    - Blocked today  
-    - Number of blocklists
-    - Pi-hole status
-    
+    """Get DNS blocklist statistics.
+
+    Returns current DNS filtering statistics from the in-process blocklist.
     Authentication required.
     """
-    try:
-        import aiohttp
-        
-        # Query Pi-hole API for statistics
-        async with aiohttp.ClientSession() as session:
-            async with session.get(
-                "http://pihole:80/admin/api.php",
-                params={"summary": ""},
-                headers={"X-Pi-hole-Auth": _get_pihole_auth_token()},
-            ) as response:
-                if response.status != 200:
-                    raise HTTPException(status_code=503, detail="Pi-hole not available")
-                
-                data = await response.json()
-                
-                return {
-                    "status": data.get("status", "unknown"),
-                    "queries_today": data.get("dns_queries_today", 0),
-                    "blocked_today": data.get("ads_blocked_today", 0),
-                    "percent_blocked": data.get("ads_percentage_today", 0.0),
-                    "domains_being_blocked": data.get("domains_being_blocked", 0),
-                    "blocklist_count": data.get("domains_being_blocked", 0),
-                    "gravity_last_updated": data.get("gravity_last_updated", {}),
-                    "privacy_level": data.get("privacy_level", 0)
-                }
-                
-    except Exception as e:
-        logger.error(f"Error querying Pi-hole stats: {e}")
-        raise HTTPException(status_code=500, detail="Internal error querying DNS stats")
+    bl = getattr(app_state, "dns_blocklist", None)
+    if not bl:
+        raise HTTPException(status_code=503, detail="DNS blocklist not initialized")
+    return bl.stats()
 
 
-@app.post("/manage/dns/blocklist")
-async def manage_blocklist(
-    action: str,  # "add" or "remove"  
-    url: str,
-    auth: AuthRequired
+@app.get("/manage/dns/blocked")
+async def list_blocked_domains(
+    auth: AuthRequired,
+    page: int = 1,
+    page_size: int = 100,
 ):
-    """Add or remove a blocklist URL from Pi-hole.
-    
-    Parameters:
-    - action: "add" to add blocklist, "remove" to remove
-    - url: Blocklist URL to add/remove
-    
+    """Return a paginated list of blocked domains.
+
     Authentication required.
     """
-    if action not in ["add", "remove"]:
-        raise HTTPException(status_code=400, detail="Action must be 'add' or 'remove'")
-    
-    if not url or not url.startswith(("http://", "https://")):
-        raise HTTPException(status_code=400, detail="Invalid URL format")
-    
-    try:
-        import aiohttp
-        
-        # Get Pi-hole password for API authentication
-        auth_token = _get_pihole_auth_token()
-        
-        # Build API URL — auth sent via header, not query string (M4 fix)
-        api_params = {"list": action, "address": url}
-        api_headers = {}
-        if auth_token:
-            api_headers["X-Pi-hole-Auth"] = auth_token
-        
-        async with aiohttp.ClientSession() as session:
-            async with session.get(
-                "http://pihole:80/admin/api.php",
-                params=api_params,
-                headers=api_headers,
-            ) as response:
-                if response.status != 200:
-                    raise HTTPException(status_code=503, detail="Pi-hole API not available")
-                
-                result = await response.json()
-                
-                if "success" in str(result).lower():
-                    # Update gravity to reload blocklists
-                    async with session.get(
-                        "http://pihole:80/admin/api.php",
-                        params={"updateGravity": ""},
-                        headers={"X-Pi-hole-Auth": auth_token} if auth_token else {},
-                    ) as gravity_response:
-                        pass  # Fire and forget gravity update
-                    
-                    return {
-                        "success": True,
-                        "message": f"Successfully {action}ed blocklist: {url}",
-                        "url": url,
-                        "action": action
-                    }
-                else:
-                    return {
-                        "success": False,
-                        "message": f"Failed to {action} blocklist: {result}",
-                        "url": url,
-                        "action": action
-                    }
-                    
-    except Exception as e:
-        logger.error(f"Error managing Pi-hole blocklist: {e}")
-        raise HTTPException(status_code=500, detail="Internal error managing blocklist")
+    bl = getattr(app_state, "dns_blocklist", None)
+    if not bl:
+        raise HTTPException(status_code=503, detail="DNS blocklist not initialized")
+    domains = sorted(bl.blocked_domains)
+    start = (page - 1) * page_size
+    return {
+        "total": len(domains),
+        "page": page,
+        "page_size": page_size,
+        "domains": domains[start: start + page_size],
+    }
+
+
+@app.post("/manage/dns/blocked")
+async def add_blocked_domain(domain: str, auth: AuthRequired):
+    """Add a domain to the local denylist.
+
+    Authentication required.
+    """
+    bl = getattr(app_state, "dns_blocklist", None)
+    if not bl:
+        raise HTTPException(status_code=503, detail="DNS blocklist not initialized")
+    bl.denylist.add(domain.lower().strip("."))
+    bl.blocked_domains.add(domain.lower().strip("."))
+    return {"success": True, "domain": domain, "action": "add"}
+
+
+@app.delete("/manage/dns/blocked")
+async def remove_blocked_domain(domain: str, auth: AuthRequired):
+    """Remove a domain from the local denylist.
+
+    Authentication required.
+    """
+    bl = getattr(app_state, "dns_blocklist", None)
+    if not bl:
+        raise HTTPException(status_code=503, detail="DNS blocklist not initialized")
+    bl.denylist.discard(domain.lower().strip("."))
+    bl.blocked_domains.discard(domain.lower().strip("."))
+    return {"success": True, "domain": domain, "action": "remove"}
+
+
+@app.post("/manage/dns/refresh")
+async def refresh_dns_blocklist(auth: AuthRequired):
+    """Trigger an immediate blocklist refresh from upstream adlists.
+
+    Authentication required.
+    """
+    bl = getattr(app_state, "dns_blocklist", None)
+    if not bl:
+        raise HTTPException(status_code=503, detail="DNS blocklist not initialized")
+    await bl.update()
+    return bl.stats()
+
+
+# === SOC 2 Compliance Report (v0.8.0 Feature 1d) ===
+
+@app.get("/manage/compliance/soc2")
+async def get_soc2_compliance_report(auth: AuthRequired):
+    """SOC 2 Trust Service Criteria compliance coverage report.
+
+    Maps active AgentShroud modules to SOC 2 TSC categories (CC6, CC7, CC8, CC9,
+    A1, PI1). Returns per-criteria coverage status, module mapping, and gap
+    analysis. Authentication required.
+    """
+    def _active(attr: str) -> bool:
+        return bool(getattr(app_state, attr, None))
+
+    criteria = [
+        {
+            "id": "CC6.1",
+            "name": "Logical and Physical Access Controls",
+            "modules": ["trust_manager", "session_manager", "approval_queue"],
+            "covered": all(_active(m) for m in ["trust_manager", "session_manager", "approval_queue"]),
+            "details": "TrustManager enforces least-privilege agent trust levels. "
+                       "UserSessionManager isolates per-user workspaces. "
+                       "EnhancedApprovalQueue gates high-risk tool calls.",
+        },
+        {
+            "id": "CC6.2",
+            "name": "New User / Credential Registration",
+            "modules": ["trust_manager", "key_vault"],
+            "covered": all(_active(m) for m in ["trust_manager", "key_vault"]),
+            "details": "TrustManager registers and scores agent identities. "
+                       "KeyVault stores credentials with audit trail.",
+        },
+        {
+            "id": "CC6.6",
+            "name": "Logical Access Security Measures",
+            "modules": ["egress_filter", "prompt_guard", "sanitizer"],
+            "covered": all(_active(m) for m in ["egress_filter", "prompt_guard", "sanitizer"]),
+            "details": "EgressFilter enforces domain allowlist for outbound traffic. "
+                       "PromptGuard blocks prompt injection. "
+                       "PIISanitizer redacts sensitive data in transit.",
+        },
+        {
+            "id": "CC6.8",
+            "name": "Unauthorized / Malicious Software Prevention",
+            "modules": ["clamav_scanner", "trivy_scanner", "dns_blocklist"],
+            "covered": any(_active(m) for m in ["clamav_scanner", "trivy_scanner", "dns_blocklist"]),
+            "details": "ClamAV scans uploaded files. Trivy scans container images. "
+                       "DNSBlocklist blocks known malicious domains.",
+        },
+        {
+            "id": "CC7.1",
+            "name": "System Vulnerability Detection",
+            "modules": ["drift_detector", "network_validator", "killswitch_monitor"],
+            "covered": any(_active(m) for m in ["drift_detector", "network_validator", "killswitch_monitor"]),
+            "details": "DriftDetector detects config changes from baseline. "
+                       "NetworkValidator audits container network isolation. "
+                       "KillSwitchMonitor verifies kill switch integrity.",
+        },
+        {
+            "id": "CC7.2",
+            "name": "Monitoring of System Components",
+            "modules": ["falco_monitor", "wazuh_client", "alert_dispatcher"],
+            "covered": any(_active(m) for m in ["falco_monitor", "wazuh_client", "alert_dispatcher"]),
+            "details": "Falco monitors runtime syscall anomalies. "
+                       "Wazuh provides host intrusion detection. "
+                       "AlertDispatcher routes findings to operators.",
+        },
+        {
+            "id": "CC7.3",
+            "name": "Incident Evaluation and Response",
+            "modules": ["audit_store", "alert_dispatcher", "approval_queue"],
+            "covered": all(_active(m) for m in ["audit_store", "alert_dispatcher", "approval_queue"]),
+            "details": "AuditStore maintains tamper-evident event log. "
+                       "AlertDispatcher notifies on anomalies. "
+                       "EnhancedApprovalQueue enables operator response.",
+        },
+        {
+            "id": "CC8.1",
+            "name": "Change Management",
+            "modules": ["drift_detector", "ledger"],
+            "covered": all(_active(m) for m in ["drift_detector", "ledger"]),
+            "details": "DriftDetector flags configuration deviations. "
+                       "DataLedger records all data processing events.",
+        },
+        {
+            "id": "CC9.1",
+            "name": "Risk Assessment",
+            "modules": ["prompt_guard", "egress_filter", "approval_queue"],
+            "covered": all(_active(m) for m in ["prompt_guard", "egress_filter", "approval_queue"]),
+            "details": "PromptGuard performs per-request injection risk scoring. "
+                       "EgressFilter applies domain risk policy. "
+                       "ApprovalQueue enforces tool risk tiers.",
+        },
+        {
+            "id": "A1.2",
+            "name": "Availability — Environmental Protections",
+            "modules": ["killswitch_monitor", "event_bus"],
+            "covered": all(_active(m) for m in ["killswitch_monitor", "event_bus"]),
+            "details": "KillSwitchMonitor provides automated failsafe. "
+                       "EventBus enables decoupled health propagation.",
+        },
+        {
+            "id": "PI1.1",
+            "name": "Processing Integrity",
+            "modules": ["pipeline", "audit_store", "ledger"],
+            "covered": all(_active(m) for m in ["pipeline", "audit_store", "ledger"]),
+            "details": "SecurityPipeline applies deterministic multi-stage validation. "
+                       "AuditStore provides tamper-evident processing log. "
+                       "DataLedger tracks all processing outcomes.",
+        },
+    ]
+
+    covered = [c for c in criteria if c["covered"]]
+    gaps = [c for c in criteria if not c["covered"]]
+
+    return {
+        "standard": "SOC 2 Type II — Trust Service Criteria",
+        "version": "v0.8.0-watchtower",
+        "criteria_total": len(criteria),
+        "criteria_covered": len(covered),
+        "criteria_gaps": len(gaps),
+        "coverage_percent": round(len(covered) / len(criteria) * 100, 1),
+        "criteria": criteria,
+        "gaps": [{"id": c["id"], "name": c["name"], "missing_modules": [m for m in c["modules"] if not _active(m)]} for c in gaps],
+    }
 
 
 
@@ -2428,6 +2508,9 @@ async def telegram_api_proxy(path: str, request: Request):
         _telegram_proxy.middleware_manager = app_state.middleware_manager
     if hasattr(app_state, 'sanitizer'):
         _telegram_proxy.sanitizer = app_state.sanitizer
+    # GAP-3: Wire SecurityPipeline so Telegram proxy scans all messages
+    if hasattr(app_state, 'pipeline') and app_state.pipeline is not None:
+        _telegram_proxy.pipeline = app_state.pipeline
     
     # Proxy the request
     from fastapi.responses import JSONResponse
