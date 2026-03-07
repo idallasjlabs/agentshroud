@@ -53,9 +53,10 @@ class NetworkValidator:
         self.docker_client = None
         self.findings: List[NetworkSecurityFinding] = []
         self.expected_networks = {
-            "openclaw_internal",  # Internal network for AgentShroud components
-            "openclaw_external",  # External network for internet access
-            "default",  # Docker default network
+            "agentshroud-internal",  # Internet-accessible network (gateway only)
+            "agentshroud-isolated",  # Isolated network (gateway ↔ bot, no internet)
+            "agentshroud-console",   # Console access network
+            "default",               # Docker default network
         }
         self.gateway_service = "gateway"  # Service that should bridge networks
 
@@ -175,15 +176,15 @@ class NetworkValidator:
         findings = []
 
         # Check for required networks
-        if "openclaw_internal" not in networks:
+        if "agentshroud-isolated" not in networks:
             findings.append(
                 NetworkSecurityFinding(
                     category="missing_network",
                     severity="high",
                     service_name="infrastructure",
-                    description="Missing internal network definition",
-                    details={"missing_network": "openclaw_internal"},
-                    remediation="Add openclaw_internal network for internal communication",
+                    description="Missing isolated network definition",
+                    details={"missing_network": "agentshroud-isolated"},
+                    remediation="Add agentshroud-isolated network for gateway-to-bot communication",
                 )
             )
 
@@ -228,58 +229,55 @@ class NetworkValidator:
         findings = []
 
         for service_name, config in service_configs.items():
-            # Check if OpenClaw container is on internal network only
-            if (
-                service_name.startswith("openclaw")
-                and service_name != self.gateway_service
-            ):
-                if "openclaw_external" in config.networks:
+            # Check if bot container is isolated (no internet-accessible network)
+            if service_name == "bot" and service_name != self.gateway_service:
+                if "agentshroud-internal" in config.networks:
                     findings.append(
                         NetworkSecurityFinding(
                             category="network_isolation_breach",
                             severity="critical",
                             service_name=service_name,
-                            description="Internal service has external network access",
+                            description="Bot service has internet-accessible network access",
                             details={"networks": config.networks},
-                            remediation=f"Remove {service_name} from openclaw_external network",
+                            remediation=f"Remove {service_name} from agentshroud-internal network",
                         )
                     )
 
-                if "openclaw_internal" not in config.networks:
+                if "agentshroud-isolated" not in config.networks:
                     findings.append(
                         NetworkSecurityFinding(
                             category="missing_internal_network",
                             severity="high",
                             service_name=service_name,
-                            description="Service missing from internal network",
+                            description="Bot service missing from isolated network",
                             details={"networks": config.networks},
-                            remediation=f"Add {service_name} to openclaw_internal network",
+                            remediation=f"Add {service_name} to agentshroud-isolated network",
                         )
                     )
 
-            # Check if gateway bridges internal and external
+            # Check if gateway bridges isolated and internet networks
             elif service_name == self.gateway_service:
-                if "openclaw_internal" not in config.networks:
+                if "agentshroud-isolated" not in config.networks:
                     findings.append(
                         NetworkSecurityFinding(
                             category="gateway_misconfiguration",
                             severity="critical",
                             service_name=service_name,
-                            description="Gateway missing from internal network",
+                            description="Gateway missing from isolated network",
                             details={"networks": config.networks},
-                            remediation="Add gateway to openclaw_internal network",
+                            remediation="Add gateway to agentshroud-isolated network",
                         )
                     )
 
-                if "openclaw_external" not in config.networks:
+                if "agentshroud-internal" not in config.networks:
                     findings.append(
                         NetworkSecurityFinding(
                             category="gateway_misconfiguration",
                             severity="high",
                             service_name=service_name,
-                            description="Gateway missing from external network",
+                            description="Gateway missing from internet-accessible network",
                             details={"networks": config.networks},
-                            remediation="Add gateway to openclaw_external network",
+                            remediation="Add gateway to agentshroud-internal network",
                         )
                     )
 
@@ -333,7 +331,7 @@ class NetworkValidator:
 
             # Check for services that shouldn't expose ports
             if (
-                service_name.startswith("openclaw")
+                service_name == "bot"
                 and service_name != self.gateway_service
             ):
                 if config.published_ports:
@@ -453,15 +451,15 @@ class NetworkValidator:
             networks = self.docker_client.networks.list()
             network_names = {network.name for network in networks}
 
-            if "openclaw_internal" not in network_names:
+            if "agentshroud-isolated" not in network_names:
                 findings.append(
                     NetworkSecurityFinding(
                         category="missing_runtime_network",
                         severity="high",
                         service_name="infrastructure",
-                        description="Internal network not found in runtime",
+                        description="Isolated network not found in runtime",
                         details={"available_networks": list(network_names)},
-                        remediation="Create openclaw_internal network",
+                        remediation="Create agentshroud-isolated network (docker compose up)",
                     )
                 )
 
@@ -520,8 +518,7 @@ class NetworkValidator:
 
             if (
                 exposed_ports
-                and container_name.startswith("openclaw")
-                and "gateway" not in container_name
+                and container_name == "agentshroud-bot"
             ):
                 findings.append(
                     NetworkSecurityFinding(
