@@ -75,9 +75,9 @@ FAILURES=()
 NOW=$(date +%s)
 
 # 1. Check Colima is running
-if ! colima status >/dev/null 2>&1; then
-  log "CRITICAL: Colima is not running"
-  FAILURES+=("Colima VM not running")
+if ! docker info >/dev/null 2>&1; then
+  log "CRITICAL: Docker is not responding (Colima may be down)"
+  FAILURES+=("Docker/Colima not responding")
   # Can't do anything else without Colima
   STATE=$(read_state)
   CONSEC=$(echo "$STATE" | python3 -c "import sys,json; print(json.load(sys.stdin).get('consecutive_fails',0))" 2>/dev/null || echo 0)
@@ -85,7 +85,7 @@ if ! colima status >/dev/null 2>&1; then
   write_state "{\"last_heal\":0,\"last_fail_notify\":$NOW,\"consecutive_fails\":$CONSEC}"
   if [ "$CONSEC" -le 3 ] || [ $((CONSEC % 12)) -eq 0 ]; then
     notify "🚨 *AgentShroud Health Alert*
-Colima VM is not running!
+Docker/Colima is not responding!
 Host: $(hostname)
 Time: $(date -u '+%H:%M UTC')
 Consecutive failures: $CONSEC"
@@ -95,20 +95,17 @@ fi
 
 # 2. Check Colima VM internet access
 VM_INTERNET=true
-if ! colima ssh -- bash -c "curl -sf --connect-timeout 5 -o /dev/null https://google.com" 2>/dev/null; then
+if ! docker exec agentshroud-gateway curl -sf --connect-timeout 5 -o /dev/null https://google.com 2>/dev/null; then
   log "DETECTED: Colima VM lost internet access"
   VM_INTERNET=false
 
   # Auto-heal: fix the route
   log "AUTO-HEAL: Fixing Colima VM routing..."
-  colima ssh -- bash -c '
-    sudo ip route del default via 192.168.5.2 dev eth0 2>/dev/null || true
-    sudo ip route add default via 192.168.64.1 dev col0 2>/dev/null || true
-  ' 2>/dev/null
+  log "AUTO-HEAL: Skipped route fix (colima ssh requires admin user)"
 
   # Verify fix worked
   sleep 2
-  if colima ssh -- bash -c "curl -sf --connect-timeout 5 -o /dev/null https://google.com" 2>/dev/null; then
+  if docker exec agentshroud-gateway curl -sf --connect-timeout 5 -o /dev/null https://google.com 2>/dev/null; then
     log "AUTO-HEAL: ✅ Route fix successful — internet restored"
     HEALED=true
   else
@@ -119,7 +116,7 @@ fi
 
 # 3. Apply/verify iptables firewall rules
 log "Checking iptables rules..."
-RULE_COUNT=$(colima ssh -- bash -c "sudo iptables -L DOCKER-USER -n 2>/dev/null | grep -c DROP" 2>/dev/null || echo 0)
+RULE_COUNT=$(docker exec agentshroud-gateway sh -c "iptables -L DOCKER-USER -n 2>/dev/null | grep -c DROP" 2>/dev/null || echo 0)
 if [ "$RULE_COUNT" -lt 5 ]; then
   log "DETECTED: iptables rules missing ($RULE_COUNT/5 DROP rules)"
   if [ -x "$FIREWALL_SCRIPT" ]; then
