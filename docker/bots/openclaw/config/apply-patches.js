@@ -95,27 +95,96 @@ if (!hasBinding) {
   changed = true;
 }
 
+
+// ── Patch 2c: collaborator agent — restricted advisor mode ───────────────────
+// Collaborators get an isolated agent with Sonnet model, no dangerous tools,
+// and a mandatory disclosure notice. This prevents collaborators from accessing
+// owner tools (1Password, exec, SSH, etc.)
+
+const COLLABORATOR_IDS = {
+  '8506022825': 'Brett Galura',
+  '8545356403': 'Chris Shelton',
+  '8279589982': 'Steve Hay',
+  '8526379012': 'TJ Winter',
+  '7614658040': 'Isaiah (collaborator test)',
+};
+
+const hasCollaborator = config.agents.list.some(a => a.id === 'collaborator');
+if (!hasCollaborator) {
+  config.agents.list.push({
+    id: 'collaborator',
+    name: 'AgentShroud Collaborator',
+    model: 'anthropic/claude-sonnet-4-20250514',
+    tools: {
+      profile: 'minimal',
+      deny: [
+        'exec', 'process', 'gateway', 'cron', 'message',
+        'sessions_spawn', 'sessions_send', 'subagents',
+        'memory_search', 'memory_get', 'tts', 'pdf',
+        'nodes', 'browser', 'canvas', 'agents_list',
+        'sessions_list', 'sessions_history', 'session_status',
+        'image'
+      ]
+    },
+    skills: [],
+    workspace: 'collaborator-workspace',
+    memorySearch: false,
+    heartbeat: { enabled: false }
+  });
+  console.log('[init-patch] Added collaborator agent (Sonnet, restricted tools)');
+  changed = true;
+}
+
+// Ensure all collaborator IDs are bound to the collaborator agent
+for (const [collabId, collabName] of Object.entries(COLLABORATOR_IDS)) {
+  const hasBind = config.bindings.some(
+    b => b.agentId === 'collaborator' &&
+         b.match &&
+         b.match.peer &&
+         b.match.peer.id === collabId
+  );
+  if (!hasBind) {
+    // Remove any stale binding that routes this ID to 'main'
+    config.bindings = config.bindings.filter(
+      b => !(b.match && b.match.peer && b.match.peer.id === collabId)
+    );
+    config.bindings.push({
+      agentId: 'collaborator',
+      match: {
+        channel: 'telegram',
+        peer: { kind: 'direct', id: collabId }
+      }
+    });
+    console.log(`[init-patch] Added Telegram binding: peer ${collabId} (${collabName}) → collaborator`);
+    changed = true;
+  }
+}
+
 // ── Patch 3: mcpServers cleanup — remove legacy key rejected by OpenClaw ────
 
 // ── Patch 2b: binding for Isaiah collaborator account (@idallasj) ────────────
 
 const ISAIAH_COLLAB_ID = '7614658040';
 const hasCollabBinding = config.bindings.some(
-  b => b.agentId === 'main' &&
+  b => b.agentId === 'collaborator' &&
        b.match &&
        b.match.peer &&
        b.match.peer.id === ISAIAH_COLLAB_ID
 );
 
 if (!hasCollabBinding) {
+  // Remove any stale binding that routes this ID to 'main'
+  config.bindings = config.bindings.filter(
+    b => !(b.match && b.match.peer && b.match.peer.id === ISAIAH_COLLAB_ID)
+  );
   config.bindings.push({
-    agentId: 'main',
+    agentId: 'collaborator',
     match: {
       channel: 'telegram',
       peer: { kind: 'direct', id: ISAIAH_COLLAB_ID }
     }
   });
-  console.log(`[init-patch] Added Telegram binding: peer ${ISAIAH_COLLAB_ID} → main`);
+  console.log(`[init-patch] Added Telegram binding: peer ${ISAIAH_COLLAB_ID} → collaborator`);
   changed = true;
 }
 // openclaw@latest rejects 'mcpServers' as an unrecognised top-level key and
