@@ -190,7 +190,7 @@ class OutboundInfoFilter:
             # Operational patterns
             {
                 "name": "source_file_path",
-                "pattern": r"(?:/app/agentshroud|/home/node/\.openclaw)/[\w/._-]+\.(?:py|js|ts|yaml|yml|json|md)",
+                "pattern": r"(?:/app/agentshroud|/home/[^/]+/\.[^/]+)/[\w/._-]+\.(?:py|js|ts|yaml|yml|json|md)",
                 "category": InfoCategory.OPERATIONAL,
                 "replacement": "[INTERNAL_PATH]",
             },

@@ -21,6 +21,7 @@ services:
       - "127.0.0.1:19789:18789"
     environment:
       - NODE_ENV=development
+      - GATEWAY_HOST_PORT=9080
       - OPENCLAW_GATEWAY_BIND=lan
       - OPENCLAW_GATEWAY_PASSWORD_FILE=/run/secrets/gateway_password
       - GATEWAY_OP_PROXY_URL=http://gateway:8080

@@ -184,7 +184,7 @@ class RedactionResult(BaseModel):
 
 
 class AgentTarget(BaseModel):
-    """Downstream OpenClaw agent target"""
+    """Downstream agent target"""
 
     name: str
     url: str
@@ -192,6 +192,8 @@ class AgentTarget(BaseModel):
     last_health_check: Optional[str] = None
     content_types: list[str] = Field(default_factory=list)
     tags: list[str] = Field(default_factory=list)
+    chat_path: str = "/chat"
+    health_path: str = "/health"
 
 
 # === SSH Models ===

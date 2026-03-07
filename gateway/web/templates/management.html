@@ -152,7 +152,7 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; b
       <select id="log-service">
         <option value="">All Services</option>
         <option value="agentshroud-gateway">Gateway</option>
-        <option value="agentshroud-openclaw">OpenClaw</option>
+        <option value="agentshroud-bot">Bot</option>
       </select>
       <input type="number" id="log-tail" value="100" min="10" max="1000" style="width:80px;" placeholder="Lines">
       <button class="btn btn-sm btn-primary" onclick="loadLogs()">Refresh</button>
@@ -164,9 +164,9 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; b
   <!-- UPDATES -->
   <div class="panel" id="panel-updates">
     <div class="update-split">
-      <!-- OpenClaw -->
+      <!-- Bot -->
       <div class="card">
-        <h3>OpenClaw</h3>
+        <h3>Bot</h3>
         <div class="version-box">
           <div class="label">Current Version</div>
           <div class="current" id="oc-current">…</div>
@@ -246,7 +246,7 @@ async function loadStatus() {
     // Services grid
     const grid = document.getElementById('service-grid');
     grid.innerHTML = '';
-    const icons = {'agentshroud-gateway':'🛡️','agentshroud-openclaw':'🤖','falco':'🦅','wazuh-agent':'👁️','clamav':'🦠'};
+    const icons = {'agentshroud-gateway':'🛡️','agentshroud-bot':'🤖','falco':'🦅','wazuh-agent':'👁️','clamav':'🦠'};
     for (const [name, info] of Object.entries(data.services)) {
       const running = info.status === 'running';
       grid.innerHTML += `<div class="card">
@@ -400,7 +400,7 @@ async function loadSecurity() {
 // --- Updates ---
 async function checkOCUpdates() {
   try {
-    const res = await fetch('/api/updates/openclaw');
+    const res = await fetch('/api/updates/bot/openclaw');
     const data = await res.json();
     document.getElementById('oc-current').textContent = data.current || '?';
     document.getElementById('oc-latest').textContent = data.latest || '?';
@@ -412,22 +412,22 @@ async function checkOCUpdates() {
 }
 
 async function upgradeOC() {
-  if (!confirm('Upgrade OpenClaw? This will restart the AI agent.')) return;
+  if (!confirm('Upgrade bot? This will restart the AI agent.')) return;
   const prog = document.getElementById('oc-progress');
   prog.style.display = 'block';
   prog.querySelector('.fill').style.width = '30%';
   try {
-    const res = await fetch('/api/updates/openclaw/upgrade', {method:'POST',headers:{'Content-Type':'application/json'},body:'{}'});
+    const res = await fetch('/api/updates/bot/openclaw/upgrade', {method:'POST',headers:{'Content-Type':'application/json'},body:'{}'});
     prog.querySelector('.fill').style.width = '100%';
     const data = await res.json();
-    alert(data.status === 'upgraded' ? 'OpenClaw upgraded!' : 'Error: ' + data.error);
+    alert(data.status === 'upgraded' ? 'Bot upgraded!' : 'Error: ' + data.error);
     checkOCUpdates();
   } catch(e) { alert('Error: ' + e.message); }
 }
 
 async function rollbackOC() {
-  if (!confirm('Rollback OpenClaw to previous version?')) return;
-  await fetch('/api/updates/openclaw/rollback', {method:'POST'});
+  if (!confirm('Rollback bot to previous version?')) return;
+  await fetch('/api/updates/bot/openclaw/rollback', {method:'POST'});
   checkOCUpdates();
 }
 
