@@ -21,6 +21,11 @@ from typing import Any, Optional
 
 logger = logging.getLogger("agentshroud.proxy.pipeline")
 
+try:
+    from gateway.security.rbac_config import RBACConfig
+except ImportError:
+    RBACConfig = None
+
 
 class PipelineAction(str, Enum):
     FORWARD = "forward"
@@ -194,6 +199,13 @@ class SecurityPipeline:
         self.output_canary = output_canary
         self.enhanced_tool_sanitizer = enhanced_tool_sanitizer
         self.prompt_block_threshold = prompt_block_threshold
+        # Owner exemption: owner messages are logged but never blocked
+        self._owner_user_id = None
+        if RBACConfig:
+            try:
+                self._owner_user_id = RBACConfig().owner_user_id
+            except Exception:
+                pass
         self.approval_actions = approval_actions or [
             "execute_command",
             "delete_file",
@@ -291,21 +303,30 @@ class SecurityPipeline:
                 return result
 
         # Step 1: Prompt injection scan
+        user_id = (metadata or {}).get("user_id", "")
+        is_owner = self._owner_user_id and str(user_id) == str(self._owner_user_id)
         if self.prompt_guard:
             scan = self.prompt_guard.scan(message)
             result.prompt_score = scan.score
             result.prompt_patterns = scan.patterns
             if scan.blocked or scan.score >= self.prompt_block_threshold:
-                result.action = PipelineAction.BLOCK
-                result.blocked = True
-                result.block_reason = f"Prompt injection detected (score={scan.score}, patterns={scan.patterns})"
-                self._stats["inbound_blocked"] += 1
-                # Still audit blocked messages
-                entry = self.audit_chain.append(message, "inbound_blocked", metadata)
-                result.audit_entry_id = entry.id
-                result.audit_hash = entry.chain_hash
-                result.processing_time_ms = (time.time() - start) * 1000
-                return result
+                if is_owner:
+                    logger.info(
+                        f"PromptGuard: owner message would be blocked "
+                        f"(score={scan.score}, patterns={scan.patterns}) — allowing"
+                    )
+                    # Owner messages continue through the pipeline
+                else:
+                    result.action = PipelineAction.BLOCK
+                    result.blocked = True
+                    result.block_reason = f"Prompt injection detected (score={scan.score}, patterns={scan.patterns})"
+                    self._stats["inbound_blocked"] += 1
+                    # Still audit blocked messages
+                    entry = self.audit_chain.append(message, "inbound_blocked", metadata)
+                    result.audit_entry_id = entry.id
+                    result.audit_hash = entry.chain_hash
+                    result.processing_time_ms = (time.time() - start) * 1000
+                    return result
 
         # Step 2: PII sanitization
         if self.pii_sanitizer:
