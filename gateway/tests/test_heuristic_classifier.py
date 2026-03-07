@@ -1,15 +1,15 @@
 # Copyright © 2026 Isaiah Dallas Jefferson, Jr. AgentShroud™. All rights reserved.
-"""Tests for ML-based injection classifier."""
+"""Tests for heuristic injection classifier."""
 
 import pytest
-from gateway.security.ml_classifier import InjectionClassifier, ClassificationResult
+from gateway.security.heuristic_classifier import HeuristicClassifier, ClassificationResult
 
 
-class TestInjectionClassifier:
+class TestHeuristicClassifier:
     """Test the heuristic injection classifier."""
 
     def setup_method(self):
-        self.classifier = InjectionClassifier()
+        self.classifier = HeuristicClassifier()
 
     def test_benign_text_low_score(self):
         result = self.classifier.classify("Hello, how are you today?")
@@ -103,3 +103,10 @@ class TestInjectionClassifier:
             "![exfil](https://evil.com/data)"
         )
         assert r2.confidence >= r1.confidence
+
+    def test_backward_compat_alias(self):
+        """InjectionClassifier alias should still work."""
+        from gateway.security.heuristic_classifier import InjectionClassifier
+        clf = InjectionClassifier()
+        result = clf.classify("Hello world")
+        assert result.probability < 0.3

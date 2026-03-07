@@ -13,11 +13,13 @@ Now includes per-user session isolation.
 """
 
 
+import hashlib
+import hmac
 import json
 import logging
 import time
 from pathlib import Path
-from typing import Any
+from typing import Any, Optional
 
 from gateway.security.session_manager import UserSessionManager
 
@@ -32,9 +34,12 @@ class WebhookReceiver:
     """
 
     def __init__(self, pipeline=None, forwarder=None, session_manager=None,
-                 workspace_path: str = "/app/workspace"):
+                 workspace_path: str = "/app/workspace",
+                 webhook_secret: Optional[str] = None,
+                 owner_user_id: Optional[str] = None):
         self.pipeline = pipeline
         self.forwarder = forwarder
+        self.webhook_secret = webhook_secret
 
         # Initialize session manager if not provided and in production environment
         if session_manager is None:
@@ -42,9 +47,10 @@ class WebhookReceiver:
                 base_workspace = Path(workspace_path)
                 # Only initialize if the base path exists or can be created
                 if base_workspace.exists() or self._can_create_directory(base_workspace):
-                    # TODO: Load owner_user_id from config
-                    from gateway.security.rbac_config import RBACConfig
-                    owner_user_id = RBACConfig().owner_user_id
+                    # Use config-driven owner_user_id; fall back to RBACConfig default
+                    if owner_user_id is None:
+                        from gateway.security.rbac_config import RBACConfig
+                        owner_user_id = RBACConfig().owner_user_id
                     self.session_manager = UserSessionManager(
                         base_workspace=base_workspace,
                         owner_user_id=owner_user_id
@@ -57,6 +63,13 @@ class WebhookReceiver:
                 self.session_manager = None
         else:
             self.session_manager = session_manager
+
+        if not webhook_secret:
+            logger.warning(
+                "WebhookReceiver initialized without webhook_secret — "
+                "X-Telegram-Bot-Api-Secret-Token validation is disabled. "
+                "Set webhook_secret in config to enable signature verification."
+            )
             
         self._stats = {
             "webhooks_received": 0,
@@ -75,6 +88,27 @@ class WebhookReceiver:
             return True
         except Exception:
             return False
+
+    def validate_signature(self, raw_body: bytes, header_value: str) -> bool:
+        """Validate the X-Telegram-Bot-Api-Secret-Token header.
+
+        Uses constant-time comparison to prevent timing attacks.
+        If no webhook_secret is configured, always returns True (backward-compat).
+
+        Args:
+            raw_body: Raw request body bytes (unused for Telegram token auth,
+                      included for future HMAC-body schemes)
+            header_value: Value of X-Telegram-Bot-Api-Secret-Token header
+
+        Returns:
+            True if signature is valid (or no secret configured)
+        """
+        if not self.webhook_secret:
+            return True
+        if not header_value:
+            logger.warning("Webhook request missing X-Telegram-Bot-Api-Secret-Token header")
+            return False
+        return hmac.compare_digest(self.webhook_secret, header_value)
 
     async def process_webhook(
         self,
