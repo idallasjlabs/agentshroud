@@ -16,6 +16,7 @@ import asyncio
 import json
 import logging
 import re
+import os
 import time
 import urllib.request
 import urllib.error
@@ -41,6 +42,7 @@ class TelegramAPIProxy:
             "messages_blocked": 0,
             "outbound_filtered": 0,
         }
+        self._bot_token = os.environ.get("TELEGRAM_BOT_TOKEN", "")
         self._ssl_context = ssl.create_default_context()
 
     def get_stats(self) -> dict:
@@ -147,6 +149,10 @@ class TelegramAPIProxy:
                             f"Telegram message from {user_id} blocked by middleware: {result.reason}"
                         )
                         self._stats["messages_blocked"] += 1
+                        # Notify the user their message was blocked
+                        chat_id = message.get("chat", {}).get("id")
+                        if chat_id:
+                            await self._notify_user_blocked(chat_id, result.reason)
                         # Replace message text with block notice
                         if "message" in update:
                             update["message"]["text"] = f"[BLOCKED BY AGENTSHROUD: {result.reason}]"
@@ -182,6 +188,48 @@ class TelegramAPIProxy:
 
         response_data["result"] = filtered_updates
         return response_data
+
+
+    async def _notify_user_blocked(self, chat_id: int, reason: str):
+        """Send a user-friendly notification when a message is blocked."""
+        try:
+            friendly_reasons = {
+                "gitguard": "Your message contained patterns resembling code or script injection.",
+                "promptguard": "Your message was flagged as a potential prompt injection attempt.",
+                "prompt injection": "Your message was flagged as a potential prompt injection attempt.",
+                "browsersecurity": "Your message contained a potentially unsafe browser payload.",
+                "rbac": "You don\'t have permission to perform this action.",
+                "contextguard": "Your message was flagged for context manipulation.",
+                "filesandbox": "Your message referenced a restricted file path.",
+            }
+            user_msg = "Your message was blocked by a security filter."
+            reason_lower = reason.lower()
+            for key, friendly in friendly_reasons.items():
+                if key in reason_lower:
+                    user_msg = friendly
+                    break
+
+            notice = (
+                "\u26a0\ufe0f *Message Blocked*\n\n"
+                f"{user_msg}\n\n"
+                f"_Reason: {reason}_\n\n"
+                "If this is an error, contact the system owner."
+            )
+            if self._bot_token:
+                url = f"https://api.telegram.org/bot{self._bot_token}/sendMessage"
+                req = urllib.request.Request(
+                    url,
+                    data=json.dumps({"chat_id": chat_id, "text": notice, "parse_mode": "Markdown"}).encode(),
+                    headers={"Content-Type": "application/json"},
+                )
+                loop = asyncio.get_event_loop()
+                await loop.run_in_executor(
+                    None,
+                    lambda: urllib.request.urlopen(req, timeout=5, context=self._ssl_context),
+                )
+                logger.info(f"Sent block notification to chat {chat_id}")
+        except Exception as e:
+            logger.error(f"Failed to send block notification to {chat_id}: {e}")
 
     async def _forward_to_telegram(
         self, url: str, body: Optional[bytes], content_type: Optional[str]
