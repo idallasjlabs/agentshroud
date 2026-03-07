@@ -550,7 +550,9 @@ class MiddlewareManager:
                     return MiddlewareResult(allowed=False, reason=f"BrowserSecurityGuard error: {str(e)}")
 
             # 4. Git Guard - Scan message content for malicious git/supply-chain patterns
-            if self.git_guard:
+            if self.git_guard and self._is_owner(user_id):
+                logger.info(f"GitGuard bypassed for owner user {user_id}")
+            elif self.git_guard:
                 try:
                     message_content = request_data.get('message', '')
                     if isinstance(message_content, dict):
