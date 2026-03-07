@@ -26,9 +26,9 @@ services:
       dockerfile: Dockerfile.gateway
     container_name: agentshroud-gateway
     ports:
-      - "8080:8080"
-      - "5353:53/udp"    # DNS filter endpoint
-      - "5353:53/tcp"
+      - "127.0.0.1:8080:8080"
+      - "127.0.0.1:5353:53/udp"    # DNS filter endpoint
+      - "127.0.0.1:5353:53/tcp"
     networks:
       - external
       - internal

@@ -28,7 +28,7 @@ import hmac
 from typing import Annotated, Optional
 
 from fastapi import Depends, FastAPI, HTTPException, Query, Request, WebSocket, status
-from pydantic import BaseModel
+from pydantic import BaseModel, Field
 from fastapi.responses import JSONResponse, HTMLResponse
 from starlette.responses import RedirectResponse
 from pathlib import Path
@@ -125,7 +125,7 @@ def _is_imessage_recipient_allowed(recipient: str, allowed: list[str]) -> bool:
 class OpProxyRequest(BaseModel):
     """Request body for POST /credentials/op-proxy."""
 
-    reference: str  # e.g. "op://AgentShroud Bot Credentials/API Keys/openai"
+    reference: str = Field(..., max_length=500)  # e.g. "op://AgentShroud Bot Credentials/API Keys/openai"
 
 
 # Configure logging
@@ -216,6 +216,25 @@ async def cors_middleware(request: Request, call_next):
         response.headers["Access-Control-Allow-Credentials"] = "true"
 
     return response
+
+
+# === Request Body Size Middleware ===
+# Declared after CORS so it executes before CORS in the Starlette LIFO chain.
+# Rejects bodies >1MB before Pydantic ever parses them, preventing OOM attacks.
+
+_MAX_BODY_SIZE = 1_048_576  # 1 MB
+
+
+@app.middleware("http")
+async def limit_request_body(request: Request, call_next):
+    """Reject request bodies larger than 1MB before parsing."""
+    content_length = request.headers.get("content-length")
+    if content_length and int(content_length) > _MAX_BODY_SIZE:
+        return JSONResponse(
+            status_code=413,
+            content={"detail": "Request body too large (max 1MB)"},
+        )
+    return await call_next(request)
 
 
 # === Request Logging Middleware ===

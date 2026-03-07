@@ -16,6 +16,8 @@ import uuid
 from datetime import datetime, timedelta, timezone
 from typing import Any, Optional
 
+import httpx
+
 from fastapi import WebSocket
 
 from gateway.ingest_api.config import ApprovalQueueConfig, ToolRiskConfig, ToolRiskPolicy
@@ -38,10 +40,12 @@ class EnhancedApprovalQueue:
     """
 
     def __init__(
-        self, 
-        config: ApprovalQueueConfig, 
+        self,
+        config: ApprovalQueueConfig,
         tool_risk_config: ToolRiskConfig,
-        store: Optional[ApprovalStore] = None
+        store: Optional[ApprovalStore] = None,
+        bot_token: Optional[str] = None,
+        admin_chat_id: Optional[str] = None,
     ):
         """Initialize enhanced approval queue.
 
@@ -49,10 +53,14 @@ class EnhancedApprovalQueue:
             config: Basic approval queue configuration
             tool_risk_config: Tool risk tier configuration
             store: Optional ApprovalStore instance (auto-created if None)
+            bot_token: Telegram bot token for operator notifications
+            admin_chat_id: Telegram chat ID to send approval notifications to
         """
         self.config = config
         self.tool_risk_config = tool_risk_config
         import tempfile as _tf; self.store = store or ApprovalStore(os.path.join(os.environ.get("AGENTSHROUD_DATA_DIR", _tf.gettempdir()), "approvals.db"))
+        self.bot_token = bot_token
+        self.admin_chat_id = admin_chat_id
         self.connected_clients: set[WebSocket] = set()
         self._lock = asyncio.Lock()
         self._pending_futures: dict[str, asyncio.Future] = {}
@@ -322,13 +330,38 @@ class EnhancedApprovalQueue:
         return None
 
     async def _notify_telegram(self, item: ApprovalQueueItem, risk_tier: str):
-        """Send Telegram notification for approval requests."""
-        # TODO: Implement Telegram notification
-        # For now, just log that we would send a notification
-        logger.info(
-            f"Would send Telegram notification for {risk_tier} approval: "
-            f"{item.request_id} - {item.description}"
+        """Send Telegram notification for approval requests.
+
+        Sends a formatted message to the configured admin chat. If no bot_token
+        is configured, logs a warning and skips (graceful degradation).
+        """
+        if not self.bot_token or not self.admin_chat_id:
+            logger.warning(
+                "Telegram approval notification skipped — bot_token or admin_chat_id not configured. "
+                "Set bot_token and admin_chat_id in EnhancedApprovalQueue to enable notifications."
+            )
+            return
+
+        message = (
+            f"[APPROVAL REQUIRED] Risk: {risk_tier.upper()}\n"
+            f"Action: {item.action_type}\n"
+            f"Description: {item.description}\n"
+            f"Request ID: {item.request_id}\n"
+            f"Expires: {item.expires_at}"
         )
+
+        try:
+            async with httpx.AsyncClient(timeout=10.0) as client:
+                resp = await client.post(
+                    f"https://api.telegram.org/bot{self.bot_token}/sendMessage",
+                    json={"chat_id": self.admin_chat_id, "text": message},
+                )
+                resp.raise_for_status()
+                logger.info(
+                    f"Telegram notification sent for {risk_tier} approval: {item.request_id}"
+                )
+        except Exception as e:
+            logger.error(f"Failed to send Telegram approval notification: {e}")
 
     # === WebSocket Management ===
 
