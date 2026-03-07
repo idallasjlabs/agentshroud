@@ -77,6 +77,8 @@ class MiddlewareManager:
     def __init__(self):
         """Initialize all security modules."""
         self.original_request_data = None  # Track original request
+        # Resolved from the default BotConfig in set_config(); kept as fallback here.
+        self.bot_workspace_path: str = "/home/node/.openclaw/workspace"
         
 
         # Initialize RBAC system
@@ -931,7 +933,7 @@ class MiddlewareManager:
                 return True
             
             # Allow access to shared resources (read-only)
-            shared_path = str(Path("/home/node/.openclaw/workspace/shared").resolve())
+            shared_path = str(Path(self.bot_workspace_path + "/shared").resolve())
             if file_path_abs.startswith(shared_path):
                 return True
             
@@ -949,7 +951,8 @@ class MiddlewareManager:
                     continue
             
             # Explicitly check and deny access to other users' workspaces
-            users_base = str(Path("/home/node/.openclaw/workspace/users").resolve()) if Path("/home/node/.openclaw/workspace/users").exists() else "/workspace/users"
+            _users_dir = self.bot_workspace_path + "/users"
+            users_base = str(Path(_users_dir).resolve()) if Path(_users_dir).exists() else "/workspace/users"
             if file_path_abs.startswith(users_base) and not file_path_abs.startswith(user_workspace_abs):
                 logger.warning(f"User {user_id} attempted cross-session access to: {file_path}")
                 return False
@@ -1113,6 +1116,18 @@ class MiddlewareManager:
         return self.log_sanitizer
     def set_config(self, config):
         """Set configuration and initialize tool result sanitizer"""
+        # Resolve workspace path from the default bot config.
+        try:
+            bots = getattr(config, "bots", {})
+            default_bot = next(
+                (b for b in bots.values() if b.default),
+                next(iter(bots.values()), None),
+            )
+            if default_bot:
+                self.bot_workspace_path = default_bot.workspace_path
+        except Exception:
+            pass  # Keep fallback value set in __init__
+
         try:
             from .config import PIIConfig
             

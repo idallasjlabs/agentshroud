@@ -87,7 +87,7 @@ async def require_auth(
 VALID_SERVICES = frozenset(
     {
         "agentshroud-gateway",
-        "agentshroud-openclaw",
+        "agentshroud-bot",
         "falco",
         "wazuh-agent",
         "clamav",
@@ -227,7 +227,7 @@ async def get_status(user: str = Depends(require_auth)) -> dict:
     services = {}
     service_names = [
         "agentshroud-gateway",
-        "agentshroud-openclaw",
+        "agentshroud-bot",
         "falco",
         "wazuh-agent",
         "clamav",
@@ -339,7 +339,7 @@ async def killswitch(
     engine = _get_engine()
 
     if mode == "freeze":
-        for name in ["agentshroud-openclaw"]:
+        for name in ["agentshroud-bot"]:
             try:
                 engine.pause(name)
             except Exception:
@@ -354,7 +354,7 @@ async def killswitch(
         return {"status": "shutdown", "mode": mode}
 
     elif mode == "disconnect":
-        for name in ["agentshroud-openclaw"]:
+        for name in ["agentshroud-bot"]:
             try:
                 engine.stop(name)
                 engine.rm(name, force=True)
@@ -444,7 +444,7 @@ async def rebuild(user: str = Depends(require_auth)) -> dict:
         engine.compose_down(config.compose_file)
         # Rebuild images
         engine.build("gateway/Dockerfile", "agentshroud-gateway:latest", ".")
-        engine.build("docker/Dockerfile.openclaw", "agentshroud-openclaw:latest", ".")
+        engine.build("docker/bots/openclaw/Dockerfile", "agentshroud-bot:latest", ".")
         engine.compose_up(config.compose_file)
         return {"status": "rebuilt"}
     except Exception as e:
@@ -473,7 +473,7 @@ async def check_openclaw_updates(user: str = Depends(require_auth)) -> dict:
     # Try to get current version from container
     engine = _get_engine()
     try:
-        current = engine.exec("agentshroud-openclaw", ["openclaw", "--version"]).strip()
+        current = engine.exec("agentshroud-bot", ["openclaw", "--version"]).strip()
     except Exception:
         current = "unknown"
 
@@ -500,14 +500,14 @@ async def upgrade_openclaw(
         # 1. Pull new image / update npm package
         steps.append({"step": "pull", "status": "running"})
         engine.exec(
-            "agentshroud-openclaw", ["npm", "install", "-g", f"openclaw@{version}"]
+            "agentshroud-bot", ["npm", "install", "-g", f"openclaw@{version}"]
         )
         steps[-1]["status"] = "done"
 
         # 2. Restart
         steps.append({"step": "restart", "status": "running"})
-        engine.stop("agentshroud-openclaw")
-        engine.rm("agentshroud-openclaw", force=True)
+        engine.stop("agentshroud-bot")
+        engine.rm("agentshroud-bot", force=True)
         engine.compose_up(RuntimeConfig.from_env().compose_file)
         steps[-1]["status"] = "done"
 
@@ -667,7 +667,7 @@ async def upgrade_agentshroud(
         engine = _get_engine()
         config = RuntimeConfig.from_env()
         engine.build("gateway/Dockerfile", "agentshroud-gateway:latest", ".")
-        engine.build("docker/Dockerfile.openclaw", "agentshroud-openclaw:latest", ".")
+        engine.build("docker/bots/openclaw/Dockerfile", "agentshroud-bot:latest", ".")
         steps[-1]["status"] = "done"
 
         # 5. Restart services
@@ -779,7 +779,7 @@ async def get_logs(
     else:
         # Combined logs from all services
         all_logs = {}
-        for svc in ["agentshroud-gateway", "agentshroud-openclaw"]:
+        for svc in ["agentshroud-gateway", "agentshroud-bot"]:
             try:
                 all_logs[svc] = engine.logs(svc, tail=tail).splitlines()
             except Exception:
@@ -810,7 +810,7 @@ async def ws_logs(websocket: WebSocket, token: str = Query(default="")):
             await asyncio.sleep(5)
             try:
                 engine = _get_engine()
-                for svc in ["agentshroud-gateway", "agentshroud-openclaw"]:
+                for svc in ["agentshroud-gateway", "agentshroud-bot"]:
                     try:
                         logs = engine.logs(svc, tail=5)
                         await websocket.send_json(
