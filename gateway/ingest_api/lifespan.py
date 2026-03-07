@@ -263,7 +263,17 @@ async def lifespan(app: FastAPI):
         logger.critical(f"Failed to initialize outbound information filter: {e}")
         raise
 
-    # Initialize security pipeline
+    # Initialize security pipeline — wire all available guards
+    try:
+        from ..security.canary_tripwire import CanaryTripwire
+        from ..security.encoding_detector import EncodingDetector
+        _canary_tripwire = CanaryTripwire()
+        _encoding_detector = EncodingDetector()
+    except Exception as e:
+        logger.warning(f"Optional pipeline guards failed to load: {e}")
+        _canary_tripwire = None
+        _encoding_detector = None
+
     app_state.pipeline = SecurityPipeline(
         prompt_guard=app_state.prompt_guard,
         pii_sanitizer=app_state.sanitizer,
@@ -271,6 +281,9 @@ async def lifespan(app: FastAPI):
         egress_filter=app_state.egress_filter,
         approval_queue=app_state.approval_queue,
         outbound_filter=app_state.outbound_filter,
+        context_guard=app_state.middleware_manager.context_guard if app_state.middleware_manager else None,
+        canary_tripwire=_canary_tripwire,
+        encoding_detector=_encoding_detector,
     )
     logger.info("Security pipeline initialized")
 
@@ -285,17 +298,34 @@ async def lifespan(app: FastAPI):
         _workspace_path = (
             _default_bot.workspace_path if _default_bot else "/app/workspace"
         )
-        base_workspace = Path(_workspace_path)
+        base_workspace = Path("/app/data/sessions")
         from gateway.security.rbac_config import RBACConfig as _RBACConfig
-        owner_user_id = _RBACConfig().owner_user_id
+        _rbac = _RBACConfig()
+        owner_user_id = _rbac.owner_user_id
         app_state.session_manager = UserSessionManager(
             base_workspace=base_workspace,
             owner_user_id=owner_user_id
         )
-        logger.info(f"UserSessionManager initialized (workspace: {_workspace_path})")
+        logger.info("UserSessionManager initialized (workspace: /app/data/sessions)")
     except Exception as e:
         logger.error(f"Failed to initialize UserSessionManager: {e}")
         app_state.session_manager = None
+        _rbac = None
+
+    # Initialize gateway-level collaborator activity tracker
+    try:
+        from ..security.collaborator_tracker import CollaboratorActivityTracker
+        from gateway.security.rbac_config import RBACConfig as _RBACCfg
+        _rbac_cfg = _RBACCfg()
+        app_state.collaborator_tracker = CollaboratorActivityTracker(
+            log_path=Path("/app/data/collaborator_activity.jsonl"),
+            owner_user_id=_rbac_cfg.owner_user_id,
+            collaborator_ids=_rbac_cfg.collaborator_user_ids,
+        )
+        logger.info("CollaboratorActivityTracker initialized")
+    except Exception as e:
+        logger.error(f"Failed to initialize CollaboratorActivityTracker: {e}")
+        app_state.collaborator_tracker = None
 
     # ══════════════════════════════════════════════════════════════════
     # P3 — Background & Infrastructure Security Modules

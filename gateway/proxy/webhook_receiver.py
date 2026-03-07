@@ -25,6 +25,8 @@ from gateway.security.session_manager import UserSessionManager
 
 logger = logging.getLogger("agentshroud.proxy.webhook_receiver")
 
+_PREVIEW_MAX = 80
+
 
 class WebhookReceiver:
     """Receives webhooks and routes them through the security pipeline.
@@ -142,6 +144,21 @@ class WebhookReceiver:
                 metadata={"source": source, "timestamp": time.time()}
             )
 
+        # Record collaborator activity at gateway level (before pipeline processing)
+        try:
+            from gateway.ingest_api.state import app_state as _app_state
+            _tracker = getattr(_app_state, "collaborator_tracker", None)
+            if _tracker and user_id:
+                _username = self._extract_username(payload, source)
+                _tracker.record_activity(
+                    user_id=user_id,
+                    username=_username,
+                    message_preview=message_text[:_PREVIEW_MAX],
+                    source=source,
+                )
+        except Exception:
+            pass  # Tracker is non-blocking — never fail a webhook on its behalf
+
         if self.pipeline:
             result = await self.pipeline.process_inbound(
                 message=message_text,
@@ -258,6 +275,19 @@ class WebhookReceiver:
         })
         
         return session_payload
+
+    @staticmethod
+    def _extract_username(payload: dict[str, Any], source: str) -> str:
+        """Extract display name from webhook payload."""
+        if source == "telegram":
+            msg = payload.get("message", {})
+            if isinstance(msg, dict):
+                sender = msg.get("from", {})
+                if isinstance(sender, dict):
+                    first = sender.get("first_name", "")
+                    uname = sender.get("username", "")
+                    return first or f"@{uname}" if uname else "unknown"
+        return "unknown"
 
     @staticmethod
     def _extract_user_id(payload: dict[str, Any], source: str) -> str | None:

@@ -98,6 +98,15 @@ async def get_collaborators(req: Request, auth: AuthRequired):
                     pass
         result["contributor_logs"] = logs
 
+    # Append gateway-level activity tracker data (authoritative source)
+    tracker = getattr(app_state, "collaborator_tracker", None)
+    if tracker:
+        result["activity"] = tracker.get_activity(limit=50)
+        result["summary"] = tracker.get_activity_summary()
+    else:
+        result["activity"] = []
+        result["summary"] = {"total_messages": 0, "unique_users": 0, "last_activity": None, "by_user": {}}
+
     return result
 
 
