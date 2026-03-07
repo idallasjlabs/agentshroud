@@ -59,10 +59,10 @@ _PATTERNS: list[PatternRule] = [
     PatternRule(
         "role_reassignment",
         re.compile(
-            r"(you\s+are\s+now|act\s+as\s+(if\s+you\s+are\s+)?|pretend\s+(to\s+be|you\s+are)|from\s+now\s+on\s+you\s+are|roleplay\s+as)",
+            r"(you\s+are\s+now|act\s+as\s+(?:if\s+you\s+(?:are|were)\s+)?(?!(?:a\s+)?(?:helpful|friendly|knowledgeable|professional|technical|general|project|team))|pretend\s+(to\s+be|you\s+are)|from\s+now\s+on\s+you\s+are|roleplay\s+as)",
             re.IGNORECASE,
         ),
-        weight=0.8,
+        weight=0.5,
         description="Role reassignment attempt",
     ),
     PatternRule(
