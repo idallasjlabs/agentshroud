@@ -42,6 +42,43 @@ fi
 
 node "${DEFAULTS_DIR}/apply-patches.js" "${OPENCLAW_DIR}/openclaw.json"
 
+# ── 2b. auth-profiles.json — inject Anthropic credentials if available ───────
+# OpenClaw validates credentials from its per-agent auth store before making
+# API calls. The startup script loads ANTHROPIC_OAUTH_TOKEN via 1Password
+# op-proxy, but nothing writes it to auth-profiles.json. We do that here.
+AUTH_PROFILES_DIR="${OPENCLAW_DIR}/agents/main/agent"
+AUTH_PROFILES="${AUTH_PROFILES_DIR}/auth-profiles.json"
+
+mkdir -p "${AUTH_PROFILES_DIR}"
+
+# Prefer OAuth token (loaded via 1Password op-proxy), fall back to static API key
+_ANTHROPIC_KEY="${ANTHROPIC_OAUTH_TOKEN:-${ANTHROPIC_API_KEY:-}}"
+
+if [ -n "${_ANTHROPIC_KEY}" ]; then
+  if [ -f "${AUTH_PROFILES}" ]; then
+    # Merge: update anthropic key, preserve other providers
+    node -e "
+      const fs = require('fs');
+      const p = '${AUTH_PROFILES}';
+      let auth = {};
+      try { auth = JSON.parse(fs.readFileSync(p, 'utf8')); } catch(e) {}
+      auth.anthropic = auth.anthropic || {};
+      auth.anthropic.apiKey = process.env.ANTHROPIC_OAUTH_TOKEN || process.env.ANTHROPIC_API_KEY;
+      fs.writeFileSync(p, JSON.stringify(auth, null, 2), 'utf8');
+    "
+  else
+    node -e "
+      const fs = require('fs');
+      const auth = { anthropic: { apiKey: process.env.ANTHROPIC_OAUTH_TOKEN || process.env.ANTHROPIC_API_KEY } };
+      fs.writeFileSync('${AUTH_PROFILES}', JSON.stringify(auth, null, 2), 'utf8');
+    "
+  fi
+  chmod 600 "${AUTH_PROFILES}"
+  echo "[init] ✓ Seeded auth-profiles.json with Anthropic credential"
+else
+  echo "[init] ⚠ No ANTHROPIC_OAUTH_TOKEN or ANTHROPIC_API_KEY — auth-profiles.json not seeded"
+fi
+
 # Security: harden config and state dir permissions
 chmod 700 "${OPENCLAW_DIR}" 2>/dev/null || true
 chmod 600 "${OPENCLAW_DIR}/openclaw.json" 2>/dev/null || true
