@@ -111,7 +111,14 @@ class PIISanitizer:
                     "models": [{"lang_code": "en", "model_name": "en_core_web_sm"}],
                 }
                 nlp_engine = NlpEngineProvider(nlp_configuration=nlp_config).create_engine()
-                self.analyzer = AnalyzerEngine(nlp_engine=nlp_engine, supported_languages=["en"])
+                from presidio_analyzer import RecognizerRegistry
+                registry = RecognizerRegistry(supported_languages=["en"])
+                registry.load_predefined_recognizers(languages=["en"])
+                self.analyzer = AnalyzerEngine(
+                    nlp_engine=nlp_engine,
+                    supported_languages=["en"],
+                    registry=registry,
+                )
                 self.anonymizer = AnonymizerEngine()
                 self.mode = "presidio"
                 logger.info("Presidio PII detection engine initialized")

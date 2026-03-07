@@ -30,8 +30,8 @@ logger = logging.getLogger("agentshroud.dns_blocklist")
 DEFAULT_BLOCKLISTS = [
     # StevenBlack's unified hosts (ads + malware)
     "https://raw.githubusercontent.com/StevenBlack/hosts/master/hosts",
-    # Pi-hole default blocklist
-    "https://raw.githubusercontent.com/pi-hole/static/master/adlists.default",
+    # Hagezi light blocklist (maintained, hosts format)
+    "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/hosts/light.txt",
 ]
 
 # Domains that should NEVER be blocked (critical infrastructure)
