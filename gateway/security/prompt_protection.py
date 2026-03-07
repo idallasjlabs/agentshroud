@@ -102,7 +102,7 @@ class PromptProtection:
             re.compile(r'\b([a-zA-Z0-9-]+\.([a-zA-Z0-9-]+\.)*[a-zA-Z]{2,})\b'),  # hostnames
             re.compile(r'\b((\d{1,3}\.){3}\d{1,3})\b'),  # IP addresses
             re.compile(r'\b([a-zA-Z0-9-]+\.tailscale\.net)\b', re.IGNORECASE),
-            re.compile(r'\b(marvin|agentshroud-bot|openclaw)\b', re.IGNORECASE),
+            re.compile(r'\b(marvin|agentshroud-bot)\b', re.IGNORECASE),
         ]
         
         # User ID patterns
@@ -271,6 +271,24 @@ class PromptProtection:
         confidence = int(similarity * 100)
         return f"[PROTECTED_CONTENT_DETECTED_SIMILARITY_{confidence}%]".strip()
         
+    def register_bot_hostnames(self, hostnames: list[str]) -> None:
+        """Add bot container hostnames to the infrastructure detection patterns.
+
+        Called at gateway startup after bots are loaded from config so that
+        bot-specific hostnames (e.g. "openclaw", "nanobot") are dynamically
+        redacted from responses without hardcoding them here.
+
+        Args:
+            hostnames: List of BotConfig.hostname values to protect.
+        """
+        if not hostnames:
+            return
+        pattern_str = r'\b(' + '|'.join(re.escape(h) for h in hostnames) + r')\b'
+        self.infrastructure_patterns.append(
+            re.compile(pattern_str, re.IGNORECASE)
+        )
+        logger.info("PromptProtection: registered bot hostnames: %s", hostnames)
+
     def get_protection_stats(self) -> Dict[str, Any]:
         """Get statistics about the protection system."""
         total_patterns = sum(len(pc.patterns) for pc in self.protected_content)

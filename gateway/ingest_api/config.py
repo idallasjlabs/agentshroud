@@ -277,14 +277,7 @@ class GatewayConfig(BaseModel):
     port: int = 8080
     auth_method: str = "shared_secret"
     auth_token: str = ""
-    cors_origins: list[str] = Field(
-        default_factory=lambda: [
-            "http://localhost:8080",
-            "http://localhost:18790",
-            "http://127.0.0.1:8080",
-            "http://127.0.0.1:18790",
-        ]
-    )
+    cors_origins: list[str] = Field(default_factory=list)
     ledger: LedgerConfig = Field(default_factory=LedgerConfig)
     router: RouterConfig = Field(default_factory=RouterConfig)
     pii: PIIConfig = Field(default_factory=PIIConfig)
@@ -530,11 +523,20 @@ def load_config(config_path: Optional[Path] = None) -> GatewayConfig:
 
     tool_risk_config = ToolRiskConfig(**tool_risk_section) if tool_risk_section else ToolRiskConfig()
 
+    _port = gateway.get("port", 8080)
+    _cors_origins = [
+        f"http://localhost:{_port}",
+        f"http://127.0.0.1:{_port}",
+        "http://localhost:18790",
+        "http://127.0.0.1:18790",
+    ]
+
     config = GatewayConfig(
         bind=gateway.get("bind", "127.0.0.1"),
-        port=gateway.get("port", 8080),
+        port=_port,
         auth_method=gateway.get("auth_method", "shared_secret"),
         auth_token=auth_token,
+        cors_origins=_cors_origins,
         ledger=ledger_config,
         router=router_config,
         pii=pii_config,

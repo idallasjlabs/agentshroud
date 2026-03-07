@@ -121,6 +121,7 @@ services:
       - GATEWAY_OP_PROXY_URL=http://gateway:8080
       - ANTHROPIC_BASE_URL=http://gateway:8080
       - TELEGRAM_API_BASE_URL=http://gateway:8080/telegram-api
+      - GATEWAY_HOST_PORT=8080
       - OPENCLAW_BOT_NAME=agentshroud_bot
       - OPENCLAW_BOT_EMAIL=agentshroud.ai@icloud.com
       - OPENCLAW_DISABLE_HOST_FILESYSTEM=true

@@ -6,7 +6,7 @@ from __future__ import annotations
 # Unauthorized reproduction, distribution, or use of the AgentShroud name or brand is strictly prohibited.
 """Multi-Agent Router for AgentShroud Gateway
 
-Routes sanitized content to appropriate OpenClaw agent containers.
+Routes sanitized content to registered bot containers.
 Handles graceful degradation when agents are offline.
 """
 
@@ -54,8 +54,7 @@ class MultiAgentRouter:
         self.config = config
         self.targets: dict[str, AgentTarget] = {}
 
-        # Create default target
-        # In Phase 3, points to openclaw container via Docker network
+        # Create default target from RouterConfig (URL computed from default BotConfig)
         self.targets[config.default_target] = AgentTarget(
             name=config.default_target,
             url=config.default_url,
@@ -71,6 +70,32 @@ class MultiAgentRouter:
                 )
 
         logger.info(f"Router initialized with {len(self.targets)} target(s)")
+
+    def register_bots(self, bots: dict) -> None:
+        """Populate routing targets from the bots registry.
+
+        Iterates all BotConfig entries and registers each as a named
+        AgentTarget so they can be addressed by bot_id in forward requests.
+        The default bot's target is already registered in __init__; this
+        method adds the remaining bots and updates the default target URL
+        to match the BotConfig-computed base_url.
+
+        Args:
+            bots: Mapping of bot_id → BotConfig from GatewayConfig.bots.
+        """
+        for bot_id, bot in bots.items():
+            target = AgentTarget(
+                name=bot_id,
+                url=bot.base_url,
+                content_types=["text", "url", "photo", "file"],
+                tags=[],
+                chat_path=bot.chat_path,
+                health_path=bot.health_path,
+            )
+            self.targets[bot_id] = target
+            logger.info("Router: registered bot target '%s' → %s", bot_id, bot.base_url)
+
+        logger.info("Router: %d bot target(s) registered", len(self.targets))
 
     async def resolve_target(self, request: ForwardRequest) -> AgentTarget:
         """Determine which agent should receive this content
@@ -147,7 +172,7 @@ class MultiAgentRouter:
         try:
             async with httpx.AsyncClient(timeout=30.0) as client:
                 response = await client.post(
-                    f"{target.url}/chat",  # Chat service endpoint
+                    f"{target.url}{target.chat_path}",
                     json=payload,
                 )
                 response.raise_for_status()
@@ -203,7 +228,7 @@ class MultiAgentRouter:
                 async with httpx.AsyncClient(timeout=5.0) as client:
                     from datetime import timezone
 
-                    response = await client.get(f"{t.url}/health")
+                    response = await client.get(f"{t.url}{t.health_path}")
                     t.healthy = response.status_code == 200
                     t.last_health_check = (
                         datetime.now(timezone.utc).isoformat().replace("+00:00", "Z")
