@@ -71,7 +71,7 @@ class ApprovalRequest(BaseModel):
         default_factory=dict, description="Action-specific payload"
     )
     agent_id: str = Field(
-        default="openclaw-main", description="Agent requesting approval"
+        default="", description="Agent requesting approval (set by gateway from active bot config)"
     )
 
 
@@ -235,7 +235,7 @@ class EmailSendRequest(BaseModel):
     to: str = Field(..., description="Recipient email address")
     subject: str = Field(..., description="Email subject")
     body: str = Field(..., description="Email body text")
-    agent_id: str = Field(default="openclaw-main", description="Requesting agent")
+    agent_id: str = Field(default="", description="Requesting agent (set by gateway from active bot config)")
 
     @field_validator("subject")
     @classmethod

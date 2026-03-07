@@ -31,14 +31,15 @@ class WebhookReceiver:
     process_webhook method can be called directly.
     """
 
-    def __init__(self, pipeline=None, forwarder=None, session_manager=None):
+    def __init__(self, pipeline=None, forwarder=None, session_manager=None,
+                 workspace_path: str = "/home/node/.openclaw/workspace"):
         self.pipeline = pipeline
         self.forwarder = forwarder
-        
+
         # Initialize session manager if not provided and in production environment
         if session_manager is None:
             try:
-                base_workspace = Path("/home/node/.openclaw/workspace")
+                base_workspace = Path(workspace_path)
                 # Only initialize if the base path exists or can be created
                 if base_workspace.exists() or self._can_create_directory(base_workspace):
                     # TODO: Load owner_user_id from config

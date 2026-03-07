@@ -582,7 +582,7 @@ class TestComposeGenerator:
         result = generate_compose(runtime="docker")
         assert "services:" in result
         assert "gateway:" in result
-        assert "openclaw:" in result
+        assert "bot:" in result
         assert "networks:" in result
         assert "volumes:" in result
 
