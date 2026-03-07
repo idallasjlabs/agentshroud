@@ -20,6 +20,7 @@ from urllib.parse import urlparse
 
 import yaml
 from pydantic import BaseModel, Field, field_validator
+from .bot_config import BotConfig
 from .ssh_config import SSHConfig
 
 logger = logging.getLogger("agentshroud.gateway.config")
@@ -47,22 +48,30 @@ class RouterConfig(BaseModel):
 
     enabled: bool = True
     default_target: str = "general"
-    default_url: str = "http://openclaw:18789"
+    # Computed from the default BotConfig in load_config(); localhost fallback for direct model construction.
+    default_url: str = "http://localhost:18789"
     targets: dict[str, str] = Field(default_factory=dict)
 
     @field_validator("default_url")
     @classmethod
     def validate_default_url(cls, v: str) -> str:
-        """Validate that default_url uses http/https and points to localhost or openclaw"""
+        """Validate that default_url uses http/https and targets an internal Docker host.
+
+        Accepts: localhost, IPv4 loopback, and single-label Docker service names (no dots).
+        Rejects: external hostnames (containing dots) and non-http(s) schemes.
+        """
         if not v.startswith(("http://", "https://")):
             raise ValueError("default_url must start with http:// or https://")
 
         parsed = urlparse(v)
-        allowed_hosts = ["localhost", "127.0.0.1", "openclaw"]
+        hostname = parsed.hostname or ""
 
-        if parsed.hostname not in allowed_hosts:
+        # Allow localhost, IPv4 loopback, or single-label Docker service names (no dots).
+        # External hostnames (attacker.com, evil.example.org) always contain dots.
+        if hostname not in ("localhost", "127.0.0.1") and "." in hostname:
             raise ValueError(
-                f"default_url host must be one of {allowed_hosts}, got: {parsed.hostname}"
+                f"default_url host must be localhost, 127.0.0.1, or a Docker service name "
+                f"(single-label, no dots); got: {hostname}"
             )
 
         return v
@@ -70,9 +79,7 @@ class RouterConfig(BaseModel):
     @field_validator("targets")
     @classmethod
     def validate_targets(cls, v: dict[str, str]) -> dict[str, str]:
-        """Validate that each target URL uses http/https and points to localhost or openclaw"""
-        allowed_hosts = ["localhost", "127.0.0.1", "openclaw"]
-
+        """Validate that each target URL uses http/https and targets an internal Docker host."""
         for name, url in v.items():
             if not url.startswith(("http://", "https://")):
                 raise ValueError(
@@ -80,9 +87,11 @@ class RouterConfig(BaseModel):
                 )
 
             parsed = urlparse(url)
-            if parsed.hostname not in allowed_hosts:
+            hostname = parsed.hostname or ""
+            if hostname not in ("localhost", "127.0.0.1") and "." in hostname:
                 raise ValueError(
-                    f"Target '{name}' URL host must be one of {allowed_hosts}, got: {parsed.hostname}"
+                    f"Target '{name}' URL host must be localhost, 127.0.0.1, or a Docker service name "
+                    f"(single-label, no dots); got: {hostname}"
                 )
 
         return v
@@ -295,6 +304,9 @@ class GatewayConfig(BaseModel):
     tool_risk: ToolRiskConfig = Field(default_factory=ToolRiskConfig)
     # Compliance audit export configuration
     audit_export: AuditExportConfig = Field(default_factory=AuditExportConfig)
+    # Per-bot declarations — keyed by bot ID. Populated from agentshroud.yaml bots: section.
+    # When bots: is absent, load_config() auto-generates a default OpenClaw entry.
+    bots: dict[str, BotConfig] = Field(default_factory=dict)
 
 
 
@@ -397,11 +409,43 @@ def load_config(config_path: Optional[Path] = None) -> GatewayConfig:
         retention_days=gateway.get("retention_days", 90),
     )
 
+    # Parse bots configuration — must happen before router_config so we can compute default_url.
+    bots_raw = raw_config.get("bots", {})
+    bot_configs: dict[str, BotConfig] = {}
+    if bots_raw and isinstance(bots_raw, dict):
+        for bot_id, bot_data in bots_raw.items():
+            if isinstance(bot_data, dict):
+                bot_configs[bot_id] = BotConfig(id=bot_id, **bot_data)
+    else:
+        # Backward compat: auto-generate default OpenClaw entry when bots: is absent.
+        bot_configs["openclaw"] = BotConfig(
+            id="openclaw",
+            name="OpenClaw",
+            runtime="node",
+            hostname="agentshroud",
+            port=18789,
+            workspace_path="/home/node/.openclaw/workspace",
+            config_dir="/home/node/.openclaw",
+            dockerfile="docker/bots/openclaw/Dockerfile",
+            env_prefix="OPENCLAW_",
+            default=True,
+        )
+
+    # Determine the default bot and compute router default_url from it.
+    _default_bot = next(
+        (b for b in bot_configs.values() if b.default),
+        next(iter(bot_configs.values()), None),
+    )
+    _default_url = (
+        _default_bot.base_url if _default_bot else "http://localhost:18789"
+    )
+
     # Map router configuration
     router_config = RouterConfig(
         enabled=gateway.get("router_enabled", True),
         default_target=gateway.get("default_agent", "general"),
-        targets={},  # Future: parse from config if needed
+        default_url=_default_url,
+        targets={},  # Future: populate from bot_configs for multi-bot routing
     )
 
     # Map approval queue configuration
@@ -501,9 +545,9 @@ def load_config(config_path: Optional[Path] = None) -> GatewayConfig:
         security=security_config,
         proxy_allowed_domains=proxy_allowed_domains,
         audit_export=audit_export_config,
-
         mcp_proxy_data=mcp_proxy_data,
         tool_risk=tool_risk_config,
+        bots=bot_configs,
     )
 
     logger.info(
