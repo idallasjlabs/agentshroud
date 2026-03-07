@@ -235,14 +235,23 @@ async def lifespan(app: FastAPI):
 
     # Initialize per-user session manager for session isolation
     try:
-        base_workspace = Path("/home/node/.openclaw/workspace")
+        # Resolve workspace path from the default bot config.
+        _bots = getattr(app_state.config, "bots", {})
+        _default_bot = next(
+            (b for b in _bots.values() if b.default),
+            next(iter(_bots.values()), None),
+        )
+        _workspace_path = (
+            _default_bot.workspace_path if _default_bot else "/home/node/.openclaw/workspace"
+        )
+        base_workspace = Path(_workspace_path)
         from gateway.security.rbac_config import RBACConfig as _RBACConfig
         owner_user_id = _RBACConfig().owner_user_id
         app_state.session_manager = UserSessionManager(
             base_workspace=base_workspace,
             owner_user_id=owner_user_id
         )
-        logger.info("UserSessionManager initialized")
+        logger.info(f"UserSessionManager initialized (workspace: {_workspace_path})")
     except Exception as e:
         logger.error(f"Failed to initialize UserSessionManager: {e}")
         app_state.session_manager = None
@@ -320,7 +329,11 @@ async def lifespan(app: FastAPI):
     # -- EncryptedStore: AES-256-GCM encryption for ledger entries --
     try:
         from ..security.encrypted_store import EncryptedStore
-        _master = os.getenv("OPENCLAW_GATEWAY_PASSWORD", "") or os.getenv("GATEWAY_AUTH_TOKEN", "")
+        _master = (
+            os.getenv("AGENTSHROUD_GATEWAY_PASSWORD", "")
+            or os.getenv("OPENCLAW_GATEWAY_PASSWORD", "")
+            or os.getenv("GATEWAY_AUTH_TOKEN", "")
+        )
         if not _master:
             try:
                 _master = open("/run/secrets/gateway_password").read().strip()

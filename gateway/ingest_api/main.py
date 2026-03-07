@@ -1101,7 +1101,10 @@ async def container_security_profile(auth: AuthRequired):
     secret_patterns = ['PASSWORD', 'SECRET', 'API_KEY', 'TOKEN', 'PRIVATE_KEY']
     leaked_vars = [k for k in os.environ if any(p in k.upper() for p in secret_patterns)]
     # Filter out known safe ones
-    safe_vars = {'OPENCLAW_GATEWAY_PASSWORD_FILE', 'GATEWAY_AUTH_TOKEN_FILE', 'OP_SERVICE_ACCOUNT_TOKEN_FILE', 'OP_SERVICE_ACCOUNT_TOKEN'}  # OP token loaded from file at runtime
+    safe_vars = {
+        'AGENTSHROUD_GATEWAY_PASSWORD_FILE', 'OPENCLAW_GATEWAY_PASSWORD_FILE',  # bot gateway password (file refs)
+        'GATEWAY_AUTH_TOKEN_FILE', 'OP_SERVICE_ACCOUNT_TOKEN_FILE', 'OP_SERVICE_ACCOUNT_TOKEN',
+    }  # OP token loaded from file at runtime
     leaked_vars = [v for v in leaked_vars if v not in safe_vars and not v.endswith('_FILE')]
     if not leaked_vars:
         results['checks']['no_env_secrets'] = {'passed': True, 'detail': 'No secret-like environment variables exposed'}
@@ -1197,7 +1200,7 @@ async def container_security_profile(auth: AuthRequired):
 
     # 10. Security modules all active
     total += 1
-    gw_pass = os.environ.get('OPENCLAW_GATEWAY_PASSWORD', '')
+    gw_pass = os.environ.get('AGENTSHROUD_GATEWAY_PASSWORD', '') or os.environ.get('OPENCLAW_GATEWAY_PASSWORD', '')
     if not gw_pass:
         try:
             gw_pass = open('/run/secrets/gateway_password').read().strip()

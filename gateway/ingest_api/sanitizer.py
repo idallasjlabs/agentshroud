@@ -441,7 +441,7 @@ class PIISanitizer:
                 blocked_message = (
                     "🔒 [REDACTED: Credentials cannot be displayed via Telegram]\n\n"
                     "For security, passwords and secrets are only accessible via:\n"
-                    "• Console: docker exec openclaw-bot get-credential <name>\n"
+                    "• Console: docker exec agentshroud-bot get-credential <name>\n"
                     "• Control UI: http://localhost:18790\n\n"
                     "If you need to configure a service, ask me to do it. "
                     "I can use credentials internally without displaying them."
