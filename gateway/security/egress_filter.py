@@ -110,6 +110,11 @@ class EgressFilter:
         self._log: list[EgressAttempt] = []
         self._max_log_size = 10000
         self._audit_store = audit_store  # Optional AuditStore for persistence
+        self._notifier = None  # Optional EgressTelegramNotifier
+
+    def set_notifier(self, notifier) -> None:
+        """Set the Telegram notifier for egress approval requests."""
+        self._notifier = notifier
 
     def set_agent_policy(self, agent_id: str, policy: EgressPolicy) -> None:
         """Set a per-agent egress policy."""
