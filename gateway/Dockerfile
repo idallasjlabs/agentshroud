@@ -29,6 +29,11 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     openscap-scanner \
     && rm -rf /var/lib/apt/lists/*
 
+# SSH client for SSHProxy remote command execution
+RUN apt-get update && apt-get install -y --no-install-recommends \
+    openssh-client \
+    && rm -rf /var/lib/apt/lists/*
+
 # ClamAV for malware scanning
 RUN apt-get update && apt-get install -y --no-install-recommends \
     clamav clamav-daemon clamav-freshclam clamdscan \
