@@ -263,7 +263,7 @@ security_modules:
 
   # Prompt Injection Defense - blocks malicious prompt manipulation
   prompt_guard:
-    mode: enforce      # enforce (default) or monitor
+    mode: observatory      # enforce (default) or monitor
 
   # Egress Filter - controls outbound network traffic  
   egress_filter:
