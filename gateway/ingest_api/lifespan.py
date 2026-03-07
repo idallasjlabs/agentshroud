@@ -157,10 +157,13 @@ async def lifespan(app: FastAPI):
         _data_dir = os.environ.get("AGENTSHROUD_DATA_DIR", tempfile.gettempdir())
         _approval_db = os.path.join(_data_dir, "agentshroud_approvals.db")
         store = ApprovalStore(_approval_db)
+        _tg_token = os.environ.get("TELEGRAM_BOT_TOKEN", "")
         app_state.approval_queue = EnhancedApprovalQueue(
-            app_state.config.approval_queue, 
+            app_state.config.approval_queue,
             app_state.config.tool_risk,
-            store
+            store,
+            bot_token=_tg_token or None,
+            admin_chat_id="8096968754" if _tg_token else None,
         )
         await app_state.approval_queue.initialize()
         logger.info(f"Enhanced approval queue initialized (enforce_mode={app_state.config.tool_risk.enforce_mode})")
@@ -227,6 +230,25 @@ async def lifespan(app: FastAPI):
     except Exception as e:
         logger.critical(f"Failed to initialize EgressFilter: {e}")
         raise
+
+    # Wire EgressTelegramNotifier into EgressFilter
+    try:
+        from ..proxy.telegram_egress_notify import EgressTelegramNotifier
+        _tg_token_egress = os.environ.get("TELEGRAM_BOT_TOKEN", "")
+        if _tg_token_egress:
+            app_state.egress_notifier = EgressTelegramNotifier(
+                bot_token=_tg_token_egress,
+                owner_chat_id="8096968754",
+            )
+            app_state.egress_filter.set_notifier(app_state.egress_notifier)
+            logger.info("EgressTelegramNotifier wired")
+        else:
+            app_state.egress_notifier = None
+            logger.warning("EgressTelegramNotifier skipped — TELEGRAM_BOT_TOKEN not set")
+    except Exception as e:
+        logger.error(f"EgressTelegramNotifier failed: {e}")
+        app_state.egress_notifier = None
+
     # Initialize P1 middleware manager
     try:
         app_state.middleware_manager = MiddlewareManager()
@@ -263,6 +285,24 @@ async def lifespan(app: FastAPI):
         logger.critical(f"Failed to initialize outbound information filter: {e}")
         raise
 
+    # Initialize AuditStore (prerequisite for Pipeline, EgressFilter, AuditExporter)
+    try:
+        from ..security.audit_store import AuditStore
+        _audit_db = os.path.join(
+            os.environ.get("AGENTSHROUD_DATA_DIR", "/app/data"), "audit.db"
+        )
+        app_state.audit_store = AuditStore(db_path=_audit_db)
+        await app_state.audit_store.initialize()
+        logger.info("AuditStore initialized (%s)", _audit_db)
+    except Exception as e:
+        logger.error("AuditStore failed: %s", e)
+        app_state.audit_store = None
+
+    # GAP-1: Wire audit_store into EgressFilter now that AuditStore is initialized
+    if getattr(app_state, "egress_filter", None) and app_state.audit_store:
+        app_state.egress_filter._audit_store = app_state.audit_store
+        logger.info("EgressFilter: audit_store wired (egress events will persist)")
+
     # Initialize security pipeline — wire all available guards
     try:
         from ..security.canary_tripwire import CanaryTripwire
@@ -284,6 +324,9 @@ async def lifespan(app: FastAPI):
         context_guard=app_state.middleware_manager.context_guard if app_state.middleware_manager else None,
         canary_tripwire=_canary_tripwire,
         encoding_detector=_encoding_detector,
+        output_canary=app_state.middleware_manager.get_output_canary() if app_state.middleware_manager else None,
+        enhanced_tool_sanitizer=app_state.middleware_manager.get_enhanced_tool_sanitizer() if app_state.middleware_manager else None,
+        audit_store=app_state.audit_store,
     )
     logger.info("Security pipeline initialized")
 
@@ -586,6 +629,17 @@ async def lifespan(app: FastAPI):
     if hasattr(app_state, "approval_queue") and app_state.approval_queue:
         await app_state.approval_queue.close()
         logger.info("Approval queue closed")
+
+    # GAP-2: Close AuditStore to flush WAL before exit
+    if getattr(app_state, "audit_store", None):
+        await app_state.audit_store.close()
+        logger.info("AuditStore closed")
+
+    # GAP-6: Cancel DNSBlocklist periodic update task
+    if getattr(app_state, "dns_blocklist", None):
+        app_state.dns_blocklist.stop()
+        logger.info("DNSBlocklist periodic updates stopped")
+
     await app_state.ledger.close()
 
     logger.info("Shutdown complete")
