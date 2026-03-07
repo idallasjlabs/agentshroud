@@ -76,6 +76,11 @@ proxy:
     - "*.google.com"
     - "*.brave.com"
     - "*.search.brave.com"
+    # SSH relay targets (CONNECT proxy tunnels SSH for the bot)
+    - host.docker.internal
+    - marvin
+    - trillian
+    - raspberrypi
 
 container:
   # Container runtime
@@ -233,21 +238,21 @@ ssh:
     - "dd if="
   hosts:
     pi:
-      host: "raspberrypi.tail240ea8.ts.net"
+      host: "raspberrypi"
       port: 22
       username: "agentshroud-bot"
       key_path: "/var/agentshroud-ssh/id_ed25519"
       known_hosts_file: "/tmp/ssh_known_hosts"
       max_session_seconds: 300
     marvin:
-      host: "marvin.tail240ea8.ts.net"
+      host: "marvin"
       port: 22
       username: "agentshroud-bot"
       key_path: "/var/agentshroud-ssh/id_ed25519"
       known_hosts_file: "/tmp/ssh_known_hosts"
       max_session_seconds: 300
     trillian:
-      host: "trillian.tail240ea8.ts.net"
+      host: "trillian"
       port: 22
       username: "agentshroud-bot"
       key_path: "/var/agentshroud-ssh/id_ed25519"
