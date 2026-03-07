@@ -115,10 +115,24 @@ class TestPromptProtection:
             "The IP address is 192.168.1.100",
             "SSH to marvin.tailscale.net",
             "Hostname is agentshroud-bot",
-            "Using openclaw system"
+            "Using agentshroud-bot system"
         ]
-        
+
         for test_text in test_cases:
+            result = prompt_protection.scan_response(test_text)
+            assert "[INFRASTRUCTURE_REDACTED]" in result.redacted_text
+            assert len(result.redactions_made) > 0
+            assert result.risk_score > 0
+
+    def test_dynamic_bot_hostname_redaction(self, prompt_protection):
+        """Test that dynamically registered bot hostnames are redacted."""
+        prompt_protection.register_bot_hostnames(["openclaw", "nanobot"])
+
+        cases = [
+            ("Using openclaw system", "openclaw"),
+            ("Running nanobot agent", "nanobot"),
+        ]
+        for test_text, _ in cases:
             result = prompt_protection.scan_response(test_text)
             assert "[INFRASTRUCTURE_REDACTED]" in result.redacted_text
             assert len(result.redactions_made) > 0
