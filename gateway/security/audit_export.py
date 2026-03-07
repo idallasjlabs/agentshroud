@@ -191,6 +191,34 @@ class AuditExporter:
         
         return output.getvalue()
 
+    def _parse_cef_for_verification(self, cef_content: str) -> list[dict]:
+        """Parse CEF lines and extract entryHash/previousHash for chain verification.
+
+        Returns a list of dicts with keys: entry_hash, prev_hash.
+        Lines that cannot be parsed are skipped.
+        """
+        records = []
+        for line in cef_content.splitlines():
+            line = line.strip()
+            if not line or not line.startswith("CEF:"):
+                continue
+            # Extension fields are everything after the 7th pipe-delimited field
+            # CEF:Version|Vendor|Product|Version|EventClassID|Name|Severity|Extensions
+            parts = line.split("|", 7)
+            if len(parts) < 8:
+                continue
+            extensions = parts[7]
+            entry_hash = None
+            prev_hash = None
+            for field in extensions.split(" "):
+                if field.startswith("entryHash="):
+                    entry_hash = field[len("entryHash="):]
+                elif field.startswith("previousHash="):
+                    prev_hash = field[len("previousHash="):]
+            if entry_hash:
+                records.append({"entry_hash": entry_hash, "prev_hash": prev_hash})
+        return records
+
     def _export_jsonld(self, events: list[AuditEvent]) -> str:
         """Export events in JSON-LD format with security ontology."""
         export_data = {
@@ -253,24 +281,35 @@ class AuditExporter:
                 data = json.loads(export_content)
                 events = data.get("events", [])
             else:  # CEF format
-                # For CEF, we'd need to parse each line - simplified for now
-                return {"verified": False, "message": "CEF verification not implemented yet"}
+                events = self._parse_cef_for_verification(export_content)
 
             if not events:
                 return {"verified": True, "message": "No events to verify"}
             
-            # Sort events by timestamp for hash chain verification
-            events.sort(key=lambda e: e.get("timestamp", "") if isinstance(e, dict) else getattr(e, "timestamp", ""))
+            # Sort events by timestamp for hash chain verification (JSON/JSON-LD only)
+            if format_type.lower() != "cef":
+                events.sort(key=lambda e: e.get("timestamp", "") if isinstance(e, dict) else getattr(e, "timestamp", ""))
 
             # Verify hash chain in the export
             expected_prev_hash = None
             for i, event_data in enumerate(events):
-                if format_type.lower() == "json":
+                if format_type.lower() == "cef":
+                    # CEF records have entry_hash and prev_hash extracted from extensions
+                    entry_hash = event_data.get("entry_hash")
+                    prev_hash = event_data.get("prev_hash")
+                    if prev_hash != expected_prev_hash:
+                        return {
+                            "verified": False,
+                            "message": f"CEF hash chain broken at record {i+1}: "
+                                       f"expected prev_hash={expected_prev_hash}, got={prev_hash}",
+                        }
+                    expected_prev_hash = entry_hash
+                else:
+                    # JSON / JSON-LD: full event recomputation
                     event_id = event_data.get("event_id")
                     entry_hash = event_data.get("entry_hash")
                     prev_hash = event_data.get("prev_hash")
-                    
-                    # Create AuditEvent to compute hash
+
                     event = AuditEvent(
                         event_id=event_id,
                         event_type=event_data.get("event_type"),
@@ -279,20 +318,20 @@ class AuditExporter:
                         details=event_data.get("details", {}),
                         timestamp=event_data.get("timestamp"),
                     )
-                    
+
                     if prev_hash != expected_prev_hash:
                         return {
                             "verified": False,
                             "message": f"Hash chain broken at event {i+1} ({event_id}): expected prev_hash {expected_prev_hash}, got {prev_hash}"
                         }
-                    
+
                     computed_hash = event.compute_entry_hash(prev_hash)
                     if computed_hash != entry_hash:
                         return {
                             "verified": False,
                             "message": f"Entry hash mismatch at event {i+1} ({event_id}): expected {computed_hash}, got {entry_hash}"
                         }
-                    
+
                     expected_prev_hash = entry_hash
 
             return {"verified": True, "message": f"Verified {len(events)} events in export"}

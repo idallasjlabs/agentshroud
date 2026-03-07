@@ -1,9 +1,10 @@
 # Copyright © 2026 Isaiah Dallas Jefferson, Jr. AgentShroud™. All rights reserved.
 """
-ML-Based Injection Classifier — Heuristic fallback with DistilBERT upgrade path.
+Heuristic Injection Classifier — multi-signal scoring for injection detection.
 
-Currently uses multi-signal heuristic scoring. Designed to be upgraded to a
-fine-tuned DistilBERT model when training data and compute are available.
+Uses six independent heuristic signal detectors weighted into a final probability
+score. Designed as an upgrade path: replace classify() internals with a fine-tuned
+DistilBERT model when training data and compute are available.
 
 Called by middleware only when PromptGuard regex score is in the uncertain
 zone (0.3–0.8), avoiding unnecessary compute on clear pass/block cases.
@@ -14,7 +15,7 @@ import re
 from dataclasses import dataclass
 from typing import Optional
 
-logger = logging.getLogger("agentshroud.security.ml_classifier")
+logger = logging.getLogger("agentshroud.security.heuristic_classifier")
 
 
 @dataclass
@@ -76,22 +77,22 @@ EXFIL_PATTERNS = re.compile(
 )
 
 
-class InjectionClassifier:
-    """ML-based injection classifier with heuristic fallback.
-    
+class HeuristicClassifier:
+    """Heuristic injection classifier using multi-signal analysis.
+
     Scoring approach:
     - 6 independent signal detectors, each scoring 0.0–1.0
     - Weighted combination produces final probability
     - Confidence based on signal agreement
-    
-    Upgrade path: replace classify() internals with DistilBERT inference
-    when model is trained and available (<60MB, <100ms inference).
+
+    [EXPERIMENTAL] Upgrade path: replace classify() internals with DistilBERT
+    inference when model is trained and available (<60MB, <100ms inference).
     """
 
     def __init__(self, model_path: Optional[str] = None):
         self.model_loaded = False
         self.model_path = model_path
-        
+
         if model_path:
             self._try_load_model(model_path)
 
@@ -106,9 +107,13 @@ class InjectionClassifier:
         }
 
     def _try_load_model(self, path: str) -> bool:
-        """Attempt to load DistilBERT model. Returns True on success."""
+        """[EXPERIMENTAL] Attempt to load a fine-tuned ML model. Returns True on success.
+
+        Currently not implemented. When a trained DistilBERT model is available,
+        uncomment the transformers pipeline call below and remove this notice.
+        """
         try:
-            # Placeholder for future ML model loading
+            # Future ML model loading:
             # from transformers import pipeline
             # self.model = pipeline("text-classification", model=path)
             # self.model_loaded = True
@@ -123,7 +128,7 @@ class InjectionClassifier:
         matches = pattern.findall(text)
         if not matches:
             return 0.0
-        
+
         count = len(matches)
         if normalize_by_length:
             # Normalize by text length (per 100 chars)
@@ -136,33 +141,33 @@ class InjectionClassifier:
     def _compute_unicode_anomaly(self, text: str) -> float:
         """Detect unusual Unicode patterns that suggest evasion."""
         anomalies = 0
-        
+
         # Zero-width characters
         zw_chars = ['\u200b', '\u200c', '\u200d', '\ufeff', '\u00ad', '\u200e', '\u200f']
         for c in zw_chars:
             if c in text:
                 anomalies += text.count(c)
-        
+
         # Homoglyph detection (Cyrillic/Greek lookalikes in Latin context)
         latin_count = sum(1 for c in text if 'a' <= c.lower() <= 'z')
         cyrillic_count = sum(1 for c in text if '\u0400' <= c <= '\u04ff')
         if latin_count > 10 and cyrillic_count > 0:
             anomalies += cyrillic_count * 2
-        
+
         return min(anomalies / 10.0, 1.0)
 
     def classify(self, text: str) -> ClassificationResult:
         """Classify text for injection probability.
-        
+
         Args:
             text: Input text to classify
-            
+
         Returns:
             ClassificationResult with probability, confidence, and signal breakdown
         """
         if self.model_loaded:
             return self._classify_ml(text)
-        
+
         return self._classify_heuristic(text)
 
     def _classify_heuristic(self, text: str) -> ClassificationResult:
@@ -176,14 +181,14 @@ class InjectionClassifier:
             "exfiltration": self._score_signal(text, EXFIL_PATTERNS, normalize_by_length=False),
             "unicode_anomaly": self._compute_unicode_anomaly(text),
         }
-        
+
         # Weighted probability
         probability = sum(
             signals.get(k, 0) * w for k, w in self.weights.items()
         )
         # Add unicode anomaly as bonus
         probability = min(probability + signals["unicode_anomaly"] * 0.1, 1.0)
-        
+
         # Confidence: based on how many signals agree
         active_signals = sum(1 for v in signals.values() if v > 0.1)
         if active_signals >= 4:
@@ -196,7 +201,7 @@ class InjectionClassifier:
             confidence = 0.3
         else:
             confidence = 0.1
-        
+
         return ClassificationResult(
             probability=round(probability, 3),
             confidence=round(confidence, 2),
@@ -205,9 +210,12 @@ class InjectionClassifier:
         )
 
     def _classify_ml(self, text: str) -> ClassificationResult:
-        """ML model classification (placeholder for DistilBERT)."""
+        """[EXPERIMENTAL] ML model classification placeholder."""
         # Future: self.model(text[:512])
-        # For now, fall back to heuristic
         result = self._classify_heuristic(text)
         result.method = "ml_fallback"
         return result
+
+
+# Backward-compatible alias so any future callers can import either name
+InjectionClassifier = HeuristicClassifier

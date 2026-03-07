@@ -109,13 +109,15 @@ class AuditChain:
 
     GENESIS_HASH = "0" * 64
 
-    def __init__(self):
+    def __init__(self, audit_store=None):
         self._entries: list[AuditChainEntry] = []
         self._last_hash: str = self.GENESIS_HASH
+        self._audit_store = audit_store  # Optional AuditStore for persistence
 
     def append(
         self, content: str, direction: str, metadata: dict[str, Any] | None = None
     ) -> AuditChainEntry:
+        import asyncio
         import uuid
 
         now = time.time()
@@ -133,6 +135,28 @@ class AuditChain:
         )
         self._entries.append(entry)
         self._last_hash = chain_hash
+
+        # Persist to SQLite audit store if configured (fire-and-forget)
+        if self._audit_store is not None:
+            try:
+                loop = asyncio.get_running_loop()
+                loop.create_task(
+                    self._audit_store.log_event(
+                        event_type=f"audit_chain.{direction}",
+                        severity="INFO",
+                        details={
+                            "chain_hash": chain_hash,
+                            "content_hash": content_hash,
+                            "previous_hash": self._last_hash,
+                            **(metadata or {}),
+                        },
+                        source_module="pipeline.audit_chain",
+                        event_id=entry.id,
+                    )
+                )
+            except RuntimeError:
+                pass  # No running event loop (e.g. sync test context)
+
         return entry
 
     def verify_chain(self) -> tuple[bool, str]:
@@ -186,6 +210,7 @@ class SecurityPipeline:
         enhanced_tool_sanitizer=None,
         prompt_block_threshold: float = 0.8,
         approval_actions: list[str] | None = None,
+        audit_store=None,
     ):
         self.prompt_guard = prompt_guard
         self.pii_sanitizer = pii_sanitizer
@@ -212,7 +237,7 @@ class SecurityPipeline:
             "admin_action",
             "install_package",
         ]
-        self.audit_chain = AuditChain()
+        self.audit_chain = AuditChain(audit_store=audit_store)
         self._stats = {
             "inbound_total": 0,
             "inbound_blocked": 0,

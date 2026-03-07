@@ -24,7 +24,7 @@ websockets>=14.0,<15.0
 pyyaml>=6.0.0,<7.0.0
 
 # Utilities
-python-multipart>=0.0.18
+python-multipart>=0.0.18,<1.0.0
 httpx>=0.28.0,<1.0.0
 
 # Testing
@@ -34,4 +34,4 @@ eval-type-backport>=0.2.0; python_version < "3.10"
 
 # System monitoring
 psutil>=6.0.0,<7.0.0
-docker
+docker>=7.0.0,<8.0.0

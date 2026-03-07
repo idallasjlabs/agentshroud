@@ -266,16 +266,24 @@ class KeyRotationManager:
         credential_type: str,
         metadata: Dict[str, Any]
     ) -> Optional[str]:
-        """Generate a new credential value.
-        
-        This is a placeholder that should be extended with specific
-        credential generation logic for each type.
+        """[EXPERIMENTAL] Generate a new credential value.
+
+        WARNING: This method generates UUID-based tokens only and is NOT suitable
+        for production use. Real credential generation requires provider-specific
+        integration (1Password SDK, AWS IAM CreateAccessKey, etc.).
+
+        To implement production credential generation:
+        - For API keys: integrate with the target service's key management API
+        - For AWS credentials: use boto3.client('iam').create_access_key()
+        - For 1Password: use the 1Password SDK to create and store credentials
         """
-        # For demonstration, generate a UUID-based token
-        # In production, this would integrate with specific services
-        # to generate proper credentials (API keys, tokens, etc.)
+        logger.warning(
+            f"[EXPERIMENTAL] _generate_new_credential called for type={credential_type!r}. "
+            "UUID-based token generated — NOT suitable for production use. "
+            "Implement provider-specific credential generation before v1.0."
+        )
         new_value = f"agentshroud-{credential_type}-{uuid4().hex[:16]}"
-        logger.info(f"Generated new {credential_type} credential")
+        logger.info(f"Generated new {credential_type} credential (experimental UUID token)")
         return new_value
 
     async def _store_credential_in_1password(
