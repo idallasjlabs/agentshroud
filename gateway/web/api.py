@@ -435,6 +435,21 @@ async def export_config(user: str = Depends(require_auth)) -> dict:
 # --- Rebuild ----------------------------------------------------------------
 
 
+def _get_default_bot_dockerfile() -> str:
+    """Resolve the Dockerfile for the default bot from gateway config."""
+    try:
+        cfg = load_config()
+        default_bot = next(
+            (b for b in cfg.bots.values() if b.default),
+            next(iter(cfg.bots.values()), None),
+        )
+        if default_bot and default_bot.dockerfile:
+            return default_bot.dockerfile
+    except Exception:
+        pass
+    return "docker/bots/openclaw/Dockerfile"
+
+
 @router.post("/rebuild")
 async def rebuild(user: str = Depends(require_auth)) -> dict:
     """Rebuild containers with latest images."""
@@ -444,40 +459,50 @@ async def rebuild(user: str = Depends(require_auth)) -> dict:
         engine.compose_down(config.compose_file)
         # Rebuild images
         engine.build("gateway/Dockerfile", "agentshroud-gateway:latest", ".")
-        engine.build("docker/bots/openclaw/Dockerfile", "agentshroud-bot:latest", ".")
+        engine.build(_get_default_bot_dockerfile(), "agentshroud-bot:latest", ".")
         engine.compose_up(config.compose_file)
         return {"status": "rebuilt"}
     except Exception as e:
         raise HTTPException(status_code=500, detail=str(e))
 
 
-# --- Updates (OpenClaw + AgentShroud) ----------------------------------------
+# --- Updates (bot-agnostic) ---------------------------------------------------
 
 
-@router.get("/updates/openclaw")
-async def check_openclaw_updates(user: str = Depends(require_auth)) -> dict:
-    """Check for OpenClaw updates from GitHub."""
+def _resolve_bot_container(bot_id: str) -> str:
+    """Resolve the Docker container name for a given bot_id."""
+    return f"agentshroud-{bot_id}"
+
+
+@router.get("/updates/bot/{bot_id}")
+async def check_bot_updates(bot_id: str, user: str = Depends(require_auth)) -> dict:
+    """Check for updates for the named bot container."""
     import subprocess
 
+    engine = _get_engine()
+    container = _resolve_bot_container(bot_id)
+
+    # For node-based bots, check npm registry
+    latest = "unknown"
     try:
         result = subprocess.run(
-            ["npm", "view", "openclaw", "version"],
+            ["npm", "view", bot_id, "version"],
             capture_output=True,
             text=True,
             timeout=30,
         )
         latest = result.stdout.strip() if result.returncode == 0 else "unknown"
     except Exception:
-        latest = "unknown"
+        pass
 
-    # Try to get current version from container
-    engine = _get_engine()
+    current = "unknown"
     try:
-        current = engine.exec("agentshroud-bot", ["openclaw", "--version"]).strip()
+        current = engine.exec(container, [bot_id, "--version"]).strip()
     except Exception:
-        current = "unknown"
+        pass
 
     return {
+        "bot_id": bot_id,
         "current": current,
         "latest": latest,
         "update_available": current != latest
@@ -486,45 +511,64 @@ async def check_openclaw_updates(user: str = Depends(require_auth)) -> dict:
     }
 
 
+@router.post("/updates/bot/{bot_id}/upgrade")
+async def upgrade_bot(
+    bot_id: str, req: UpdateRequest, user: str = Depends(require_auth)
+) -> dict:
+    """Upgrade a named bot container."""
+    engine = _get_engine()
+    container = _resolve_bot_container(bot_id)
+    version = req.version or "latest"
+
+    steps: list[dict] = []
+    try:
+        steps.append({"step": "pull", "status": "running"})
+        engine.exec(container, ["npm", "install", "-g", f"{bot_id}@{version}"])
+        steps[-1]["status"] = "done"
+
+        steps.append({"step": "restart", "status": "running"})
+        engine.stop(container)
+        engine.rm(container, force=True)
+        engine.compose_up(RuntimeConfig.from_env().compose_file)
+        steps[-1]["status"] = "done"
+
+        return {"status": "upgraded", "bot_id": bot_id, "version": version, "steps": steps}
+    except Exception as e:
+        steps.append({"step": "error", "detail": str(e)})
+        return {"status": "failed", "bot_id": bot_id, "steps": steps, "error": str(e)}
+
+
+@router.post("/updates/bot/{bot_id}/rollback")
+async def rollback_bot(bot_id: str, user: str = Depends(require_auth)) -> dict:
+    """Rollback a named bot container to the previous image tag."""
+    return {
+        "status": "rollback_initiated",
+        "bot_id": bot_id,
+        "note": "Restoring previous container image",
+    }
+
+
+# --- Backward-compat aliases (openclaw → bot/openclaw) -----------------------
+
+
+@router.get("/updates/openclaw")
+async def check_openclaw_updates(user: str = Depends(require_auth)) -> dict:
+    """Check for OpenClaw updates (backward-compat alias for /updates/bot/openclaw)."""
+    return await check_bot_updates("openclaw", user)
+
+
 @router.post("/updates/openclaw/upgrade")
 async def upgrade_openclaw(
     req: UpdateRequest, user: str = Depends(require_auth)
 ) -> dict:
-    """Upgrade OpenClaw with security review."""
-    # Safety: check kill switch state
-    engine = _get_engine()
-    version = req.version or "latest"
-
-    steps = []
-    try:
-        # 1. Pull new image / update npm package
-        steps.append({"step": "pull", "status": "running"})
-        engine.exec(
-            "agentshroud-bot", ["npm", "install", "-g", f"openclaw@{version}"]
-        )
-        steps[-1]["status"] = "done"
-
-        # 2. Restart
-        steps.append({"step": "restart", "status": "running"})
-        engine.stop("agentshroud-bot")
-        engine.rm("agentshroud-bot", force=True)
-        engine.compose_up(RuntimeConfig.from_env().compose_file)
-        steps[-1]["status"] = "done"
-
-        return {"status": "upgraded", "version": version, "steps": steps}
-    except Exception as e:
-        steps.append({"step": "error", "detail": str(e)})
-        return {"status": "failed", "steps": steps, "error": str(e)}
+    """Upgrade OpenClaw (backward-compat alias for /updates/bot/openclaw/upgrade)."""
+    return await upgrade_bot("openclaw", req, user)
 
 
 @router.post("/updates/openclaw/rollback")
 async def rollback_openclaw(user: str = Depends(require_auth)) -> dict:
-    """Rollback OpenClaw to previous version."""
-    # This would restore from a backup image tag
-    return {
-        "status": "rollback_initiated",
-        "note": "Restoring previous container image",
-    }
+    """Rollback OpenClaw (backward-compat alias for /updates/bot/openclaw/rollback)."""
+    return await rollback_bot("openclaw", user)
 
 
 @router.get("/updates/agentshroud")
@@ -667,7 +711,7 @@ async def upgrade_agentshroud(
         engine = _get_engine()
         config = RuntimeConfig.from_env()
         engine.build("gateway/Dockerfile", "agentshroud-gateway:latest", ".")
-        engine.build("docker/bots/openclaw/Dockerfile", "agentshroud-bot:latest", ".")
+        engine.build(_get_default_bot_dockerfile(), "agentshroud-bot:latest", ".")
         steps[-1]["status"] = "done"
 
         # 5. Restart services

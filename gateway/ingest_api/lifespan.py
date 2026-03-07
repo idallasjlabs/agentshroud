@@ -13,6 +13,7 @@ from typing import TYPE_CHECKING
 from fastapi import FastAPI
 
 from .config import load_config, get_module_mode, check_monitor_mode_warnings
+from ..security.agent_isolation import AgentRegistry, ContainerConfig, IsolationVerifier
 from .state import app_state
 from .sanitizer import PIISanitizer
 from .ledger import DataLedger
@@ -117,10 +118,37 @@ async def lifespan(app: FastAPI):
     # Initialize router
     try:
         app_state.router = MultiAgentRouter(app_state.config.router)
+        app_state.router.register_bots(app_state.config.bots)
         logger.info("Multi-agent router initialized")
     except Exception as e:
         logger.critical(f"Failed to initialize router: {e}")
         raise
+
+    # Initialize AgentRegistry — wire all bots from config
+    try:
+        app_state.agent_registry = AgentRegistry()
+        for bot_id, bot in app_state.config.bots.items():
+            container_cfg = ContainerConfig(
+                agent_id=bot_id,
+                container_name=f"agentshroud-{bot_id}",
+                network=f"agentshroud-{bot_id}-net",
+                volume=f"agentshroud-{bot_id}-workspace",
+                image=f"agentshroud/{bot_id}:latest",
+            )
+            app_state.agent_registry.register(container_cfg)
+            logger.info("AgentRegistry: registered bot '%s'", bot_id)
+        # Verify shared-nothing isolation across all registered bots
+        verifier = IsolationVerifier(app_state.agent_registry)
+        checks = verifier.verify_shared_nothing()
+        violations = [c for c in checks if c.issues]
+        if violations:
+            for v in violations:
+                logger.warning("Isolation check violation for '%s': %s", v.agent_id, v.issues)
+        else:
+            logger.info("AgentRegistry: shared-nothing isolation verified (%d bot(s))", len(checks))
+    except Exception as e:
+        logger.error(f"Failed to initialize AgentRegistry: {e}")
+        app_state.agent_registry = None
 
     # Initialize approval queue
     try:
@@ -183,6 +211,19 @@ async def lifespan(app: FastAPI):
         )
         app_state.egress_filter = EgressFilter(default_policy=default_policy)
         logger.info(f"EgressFilter initialized (mode: {egress_mode}, deny_all: {default_policy.deny_all})")
+
+        # Wire per-bot egress policies from BotConfig.egress_domains
+        for bot_id, bot in app_state.config.bots.items():
+            if bot.egress_domains:
+                bot_policy = EgressPolicy(
+                    allowed_domains=list(default_policy.allowed_domains) + bot.egress_domains,
+                    deny_all=default_policy.deny_all,
+                )
+                app_state.egress_filter.set_agent_policy(bot_id, bot_policy)
+                logger.info(
+                    "EgressFilter: bot '%s' policy set (%d extra domains)",
+                    bot_id, len(bot.egress_domains),
+                )
     except Exception as e:
         logger.critical(f"Failed to initialize EgressFilter: {e}")
         raise
@@ -242,7 +283,7 @@ async def lifespan(app: FastAPI):
             next(iter(_bots.values()), None),
         )
         _workspace_path = (
-            _default_bot.workspace_path if _default_bot else "/home/node/.openclaw/workspace"
+            _default_bot.workspace_path if _default_bot else "/app/workspace"
         )
         base_workspace = Path(_workspace_path)
         from gateway.security.rbac_config import RBACConfig as _RBACConfig
@@ -403,7 +444,10 @@ async def lifespan(app: FastAPI):
     try:
         from ..security import falco_monitor as _falco_mod
         app_state.falco_monitor = _falco_mod
-        logger.info("✓ Falco monitor (alerts: /tmp/security/falco)")
+        # Register bot names as Falco rule prefixes so bot-specific rules are captured
+        _bot_names = [b.name for b in app_state.config.bots.values() if b.name]
+        _falco_mod.configure_rules(_bot_names)
+        logger.info("✓ Falco monitor (alerts: /tmp/security/falco, bots: %s)", _bot_names)
     except Exception as e:
         logger.error(f"✗ Falco monitor: {e}")
         app_state.falco_monitor = None

@@ -7,7 +7,7 @@ from __future__ import annotations
 """
 Webhook Receiver — receives Telegram/channel webhooks, routes through pipeline.
 
-Provides FastAPI routes that sit in front of OpenClaw, ensuring all
+Provides FastAPI routes that sit in front of the configured bot, ensuring all
 inbound webhooks pass through the SecurityPipeline before forwarding.
 Now includes per-user session isolation.
 """
@@ -32,7 +32,7 @@ class WebhookReceiver:
     """
 
     def __init__(self, pipeline=None, forwarder=None, session_manager=None,
-                 workspace_path: str = "/home/node/.openclaw/workspace"):
+                 workspace_path: str = "/app/workspace"):
         self.pipeline = pipeline
         self.forwarder = forwarder
 

@@ -199,12 +199,13 @@ if (gwPassword) {
 config.gateway = config.gateway || {};
 config.gateway.controlUi = config.gateway.controlUi || {};
 
-// Enforce explicit allowed origins. The gateway is exposed only via the
-// 127.0.0.1:8080 port mapping, so only localhost origins are permitted.
+// Enforce explicit allowed origins. The gateway port is configurable via
+// GATEWAY_HOST_PORT (default: 8080) to support multi-instance deployments.
+const gatewayPort = process.env.GATEWAY_HOST_PORT || '8080';
 const REQUIRED_ORIGINS = [
-  'http://localhost:8080',   // gateway port mapping (host → container)
-  'http://127.0.0.1:8080',
-  'http://localhost:18790',  // OpenClaw Control UI native port
+  `http://localhost:${gatewayPort}`,   // gateway port mapping (host → container)
+  `http://127.0.0.1:${gatewayPort}`,
+  'http://localhost:18790',  // bot Control UI native port
   'http://127.0.0.1:18790',
 ];
 const currentOrigins = config.gateway.controlUi.allowedOrigins || [];
