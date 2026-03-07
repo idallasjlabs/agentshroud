@@ -417,20 +417,30 @@ class MiddlewareManager:
             # 0.8. Multi-Turn Tracker — cumulative cross-turn disclosure risk
             if self.multi_turn_tracker:
                 try:
+                    # Owner exemption: track but never block the owner
+                    from gateway.security.rbac_config import RBACConfig
+                    _is_owner = RBACConfig().is_owner(user_id)
+                    
                     message_content_mt = request_data.get('message', '')
                     if isinstance(message_content_mt, dict):
                         message_content_mt = str(message_content_mt)
                     mt_session_id = session_id or user_id or 'unknown'
                     mt_ctx = self.multi_turn_tracker.track_message(mt_session_id, message_content_mt)
                     if mt_ctx.blocked:
-                        logger.warning(
-                            f"MultiTurnTracker blocked session {mt_session_id}: "
-                            f"score={mt_ctx.total_score:.2f}, events={len(mt_ctx.events)}"
-                        )
-                        return MiddlewareResult(
-                            allowed=False,
-                            reason=f"Multi-turn disclosure risk exceeded threshold (score={mt_ctx.total_score:.2f})",
-                        )
+                        if _is_owner:
+                            logger.info(
+                                f"MultiTurnTracker: owner session {mt_session_id} would be blocked "
+                                f"(score={mt_ctx.total_score:.2f}) - EXEMPTED"
+                            )
+                        else:
+                            logger.warning(
+                                f"MultiTurnTracker blocked session {mt_session_id}: "
+                                f"score={mt_ctx.total_score:.2f}, events={len(mt_ctx.events)}"
+                            )
+                            return MiddlewareResult(
+                                allowed=False,
+                                reason=f"Multi-turn disclosure risk exceeded threshold (score={mt_ctx.total_score:.2f})",
+                            )
                 except Exception as e:
                     logger.error(f"MultiTurnTracker error: {e}")
                     return MiddlewareResult(allowed=False, reason=f"MultiTurnTracker error: {str(e)}")
