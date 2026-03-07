@@ -40,7 +40,7 @@ if [ -f "/run/secrets/openai_api_key" ]; then
     export OPENAI_API_KEY="$(cat /run/secrets/openai_api_key)"
     echo "[startup] Loaded OpenAI API key"
 else
-    echo "[startup] OpenAI API key not configured (optional)"
+    echo "[startup] Warning: OpenAI API key file not found"
 fi
 
 # FINAL: Load secrets via gateway op-proxy (bot has no direct 1Password access).
