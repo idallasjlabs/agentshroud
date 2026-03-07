@@ -201,7 +201,12 @@ config.gateway.controlUi = config.gateway.controlUi || {};
 
 // Enforce explicit allowed origins. The gateway is exposed only via the
 // 127.0.0.1:8080 port mapping, so only localhost origins are permitted.
-const REQUIRED_ORIGINS = ['http://localhost:8080', 'http://127.0.0.1:8080'];
+const REQUIRED_ORIGINS = [
+  'http://localhost:8080',   // gateway port mapping (host → container)
+  'http://127.0.0.1:8080',
+  'http://localhost:18790',  // OpenClaw Control UI native port
+  'http://127.0.0.1:18790',
+];
 const currentOrigins = config.gateway.controlUi.allowedOrigins || [];
 const missingOrigins = REQUIRED_ORIGINS.filter(o => !currentOrigins.includes(o));
 if (missingOrigins.length > 0) {
