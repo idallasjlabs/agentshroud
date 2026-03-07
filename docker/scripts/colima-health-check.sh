@@ -164,8 +164,16 @@ done
 # 5. Run container network diagnostic (if bot is running)
 if docker ps --filter name="$BOT_CONTAINER" --format '{{.Status}}' 2>/dev/null | grep -q "Up"; then
   log "Running network diagnostic in bot container..."
-  DIAG_OUTPUT=$(docker exec "$BOT_CONTAINER" bash /app/scripts/container-net-diag.sh --json 2>/dev/null || echo '{"fail":99}')
-  DIAG_FAILS=$(echo "$DIAG_OUTPUT" | python3 -c "import sys,json; print(json.load(sys.stdin).get('fail',99))" 2>/dev/null || echo 99)
+  # Capture output and exit code separately — the script exits non-zero when any test
+  # fails, which would cause the '|| echo' fallback to fire and corrupt the JSON output.
+  DIAG_OUTPUT=$(docker exec "$BOT_CONTAINER" bash /app/scripts/container-net-diag.sh --json 2>/dev/null)
+  DIAG_RC=$?
+  if [ $DIAG_RC -ne 0 ] && [ -z "$DIAG_OUTPUT" ]; then
+    # docker exec itself failed (container stopped, script not found, etc.)
+    DIAG_FAILS=99
+  else
+    DIAG_FAILS=$(echo "$DIAG_OUTPUT" | python3 -c "import sys,json; print(json.load(sys.stdin).get('fail',0))" 2>/dev/null || echo 0)
+  fi
 
   if [ "$DIAG_FAILS" -eq 0 ]; then
     log "✅ Container network diagnostic: all tests passed"
