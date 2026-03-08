@@ -35,12 +35,18 @@ elif [ -n "${TELEGRAM_BOT_TOKEN_FILE:-}" ] && [ -f "$TELEGRAM_BOT_TOKEN_FILE" ];
     echo "[startup] Loaded Telegram bot token from $TELEGRAM_BOT_TOKEN_FILE"
 fi
 
-# Export OpenAI API key from secret file
-if [ -f "/run/secrets/openai_api_key" ]; then
+# Export OpenAI API key from secret file (optional)
+if [ -f "/run/secrets/openai_api_key" ] && [ -s "/run/secrets/openai_api_key" ]; then
     export OPENAI_API_KEY="$(cat /run/secrets/openai_api_key)"
     echo "[startup] Loaded OpenAI API key"
 else
-    echo "[startup] Warning: OpenAI API key file not found"
+    echo "[startup] OpenAI API key not configured (optional)"
+fi
+
+# Load Claude OAuth token directly from secret file (preferred over 1Password op-proxy)
+if [ -f "/run/secrets/anthropic_oauth_token" ] && [ -s "/run/secrets/anthropic_oauth_token" ]; then
+    export ANTHROPIC_OAUTH_TOKEN="$(cat /run/secrets/anthropic_oauth_token)"
+    echo "[startup] Loaded Claude OAuth token (from secret file)"
 fi
 
 # FINAL: Load secrets via gateway op-proxy (bot has no direct 1Password access).
@@ -85,15 +91,18 @@ op_proxy_read_with_retry() {
 if [ -n "${GATEWAY_AUTH_TOKEN:-}" ] && [ -n "${GATEWAY_OP_PROXY_URL:-}" ]; then
     echo "[startup] Loading secrets via gateway op-proxy (${GATEWAY_OP_PROXY_URL})"
 
-    # Load Claude OAuth token (replaces static ANTHROPIC_API_KEY)
-    # Item: AgentShroud - Anthropic Claude OAuth Token (Agent Shroud Bot Credentials vault)
-    ANTHROPIC_OAUTH_TOKEN="$(op_proxy_read_with_retry "Claude OAuth token" \
-        "op://Agent Shroud Bot Credentials/AgentShroud - Anthropic Claude OAuth Token/claude oath token")" || true
-    if [ -n "$ANTHROPIC_OAUTH_TOKEN" ]; then
-        export ANTHROPIC_OAUTH_TOKEN
-        echo "[startup] ✓ Loaded Claude OAuth token"
+    # Load Claude OAuth token via op-proxy only if not already loaded from secret file
+    if [ -z "${ANTHROPIC_OAUTH_TOKEN:-}" ]; then
+        ANTHROPIC_OAUTH_TOKEN="$(op_proxy_read_with_retry "Claude OAuth token" \
+            "op://Agent Shroud Bot Credentials/AgentShroud - Anthropic Claude OAuth Token/claude oath token")" || true
+        if [ -n "$ANTHROPIC_OAUTH_TOKEN" ]; then
+            export ANTHROPIC_OAUTH_TOKEN
+            echo "[startup] ✓ Loaded Claude OAuth token (via op-proxy)"
+        else
+            echo "[startup] ⚠ Could not load Claude OAuth token after retries"
+        fi
     else
-        echo "[startup] ⚠ Could not load Claude OAuth token after retries"
+        echo "[startup] ✓ Claude OAuth token already loaded (from secret file)"
     fi
 
     # Load Brave Search API key

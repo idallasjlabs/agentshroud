@@ -36,6 +36,7 @@ services:
     secrets:
       - gateway_password
       - telegram_bot_token
+      - anthropic_oauth_token
       - 1password_service_account
     environment:
       - PYTHONUNBUFFERED=1
@@ -108,6 +109,7 @@ services:
     secrets:
       - gateway_password
       - telegram_bot_token
+      - anthropic_oauth_token
       - 1password_service_account
     environment:
       - NODE_ENV=production
@@ -163,6 +165,8 @@ services:
 secrets:
   gateway_password:
     file: ./secrets/gateway_password.txt
+  anthropic_oauth_token:
+    file: ./secrets/anthropic_oauth_token.txt
   1password_service_account:
     file: ./secrets/1password_service_account
   telegram_bot_token:
