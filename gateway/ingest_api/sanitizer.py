@@ -67,6 +67,10 @@ class PIISanitizer:
             re.compile(r"<thinking>(?:(?!</thinking>).)*$", re.DOTALL),
             re.compile(r"<system-reminder>(?:(?!</system-reminder>).)*$", re.DOTALL),
             re.compile(r"<invoke[^>]*>(?:(?!</invoke>).)*$", re.DOTALL),
+
+            # invoke_result blocks (hallucinated tool results)
+            re.compile(r"<invoke_result>.*?</invoke_result>", re.DOTALL),
+            re.compile(r"<invoke_result>(?:(?!</invoke_result>).)*\$", re.DOTALL),
         ]
         # Whitespace cleanup pattern
         self._excessive_newlines_pattern = re.compile(r"\n{3,}")
