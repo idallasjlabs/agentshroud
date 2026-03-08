@@ -189,7 +189,8 @@ class EnvironmentGuard:
 
         except Exception as e:
             logger.error(f"Error parsing command '{command}': {e}")
-            # Allow execution if parsing fails to avoid breaking legitimate commands
+            # Fail-closed: deny on parse error
+            return False
 
         return True
 

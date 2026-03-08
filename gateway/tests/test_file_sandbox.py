@@ -40,8 +40,8 @@ def strict_sandbox(strict_config):
 
 
 class TestFileSandboxConfig:
-    def test_default_mode_is_monitor(self, default_config):
-        assert default_config.mode == "monitor"
+    def test_default_mode_is_enforce(self, default_config):
+        assert default_config.mode == "enforce"
 
     def test_default_has_reasonable_allowed_paths(self, default_config):
         assert (
@@ -60,7 +60,7 @@ class TestNormalFileOperations:
 
     def test_workspace_write_allowed(self, sandbox):
         v = sandbox.check_write(
-            "/workspace/output.txt", agent_id="agent1", content="hello"
+            "/home/user/output.txt", agent_id="agent1", content="hello"
         )
         assert v.allowed is True
 
@@ -76,9 +76,10 @@ class TestNormalFileOperations:
         v = sandbox.check_read("/workspace/src/app.py", agent_id="agent1")
         assert v.allowed is True
 
-    def test_monitor_mode_allows_everything(self, sandbox):
+    def test_monitor_mode_allows_everything(self):
         """Even blocked paths are allowed in monitor mode (just flagged)."""
-        v = sandbox.check_read("/etc/shadow", agent_id="agent1")
+        monitor_sandbox = FileSandbox(config=FileSandboxConfig(mode="monitor"))
+        v = monitor_sandbox.check_read("/etc/shadow", agent_id="agent1")
         assert v.allowed is True
         assert v.flagged is True
 

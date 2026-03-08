@@ -2452,42 +2452,19 @@ async def llm_api_proxy(request: Request, path: str):
     else:
         raise HTTPException(status_code=403, detail="Forbidden")
 
-    llm_proxy = getattr(app_state, "llm_proxy", None)
-    if not llm_proxy:
-        raise HTTPException(status_code=503, detail="LLM proxy not available")
-
-    body = await request.body() if request.method == "POST" else None
-    headers = dict(request.headers)
-
-    status_code, resp_headers, resp_body = await llm_proxy.proxy_messages(
-        f"/v1/{path}", body, headers
-    )
-
-    # Check if streaming response
-    content_type = resp_headers.get("content-type", "")
-    if "text/event-stream" in content_type:
-        from starlette.responses import StreamingResponse
-        import io
-        return StreamingResponse(
-            io.BytesIO(resp_body),
-            status_code=status_code,
-            media_type="text/event-stream",
-            headers={k: v for k, v in resp_headers.items() if k.lower() not in ("transfer-encoding", "content-length")},
-        )
-
     return JSONResponse(
-        content=json.loads(resp_body) if resp_body else {},
-        status_code=status_code,
+        content={"error": "LLM proxy feature is not enabled"},
+        status_code=501,
     )
 
 
 @app.get("/llm-proxy/stats")
 async def llm_proxy_stats(auth: AuthRequired):
     """Return LLM proxy statistics."""
-    llm_proxy = getattr(app_state, "llm_proxy", None)
-    if not llm_proxy:
-        return {"status": "not_initialized"}
-    return llm_proxy.get_stats()
+    return JSONResponse(
+        content={"error": "LLM proxy feature is not enabled"},
+        status_code=501,
+    )
 
 
 # === Telegram API Reverse Proxy (v0.8.0) ===
