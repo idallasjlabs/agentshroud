@@ -88,7 +88,14 @@ op_proxy_read_with_retry() {
     return 1
 }
 
-if [ -n "${GATEWAY_AUTH_TOKEN:-}" ] && [ -n "${GATEWAY_OP_PROXY_URL:-}" ]; then
+# Only attempt op-proxy reads if 1Password service account token is actually present and non-empty
+_OP_TOKEN_FILE="${OP_SERVICE_ACCOUNT_TOKEN_FILE:-/run/secrets/1password_service_account}"
+_OP_AVAILABLE=false
+if [ -f "$_OP_TOKEN_FILE" ] && [ -s "$_OP_TOKEN_FILE" ]; then
+    _OP_AVAILABLE=true
+fi
+
+if [ -n "${GATEWAY_AUTH_TOKEN:-}" ] && [ -n "${GATEWAY_OP_PROXY_URL:-}" ] && $_OP_AVAILABLE; then
     echo "[startup] Loading secrets via gateway op-proxy (${GATEWAY_OP_PROXY_URL})"
 
     # Load Claude OAuth token via op-proxy only if not already loaded from secret file
