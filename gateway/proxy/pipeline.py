@@ -547,7 +547,26 @@ class SecurityPipeline:
                     result.sanitized_message = sanitized
             except Exception as exc:
                 logger.error("EnhancedToolResultSanitizer error: %s", exc)
-                # Non-fatal — continue pipeline but log
+                # Fail-closed for non-owner: block if security module crashes
+                is_owner_outbound = bool(
+                    self._owner_user_id
+                    and metadata
+                    and str(metadata.get("user_id", "")) == str(self._owner_user_id)
+                )
+                if not is_owner_outbound:
+                    result.action = PipelineAction.BLOCK
+                    result.blocked = True
+                    result.block_reason = f"Security module error (EnhancedToolResultSanitizer): {exc}"
+                    self._stats["outbound_blocked"] += 1
+                    entry = self.audit_chain.append(
+                        f"MODULE_ERROR: EnhancedToolResultSanitizer: {exc}",
+                        "outbound_module_error",
+                        metadata,
+                    )
+                    result.audit_entry_id = entry.id
+                    result.audit_hash = entry.chain_hash
+                    result.processing_time_ms = (time.time() - start) * 1000
+                    return result
 
         # Step 1.8: OutputCanary — check for leaked canary tokens in responses
         if self.output_canary:
@@ -579,6 +598,26 @@ class SecurityPipeline:
                         return result
             except Exception as exc:
                 logger.error("OutputCanary error: %s", exc)
+                # Fail-closed for non-owner: block if security module crashes
+                is_owner_outbound = bool(
+                    self._owner_user_id
+                    and metadata
+                    and str(metadata.get("user_id", "")) == str(self._owner_user_id)
+                )
+                if not is_owner_outbound:
+                    result.action = PipelineAction.BLOCK
+                    result.blocked = True
+                    result.block_reason = f"Security module error (OutputCanary): {exc}"
+                    self._stats["outbound_blocked"] += 1
+                    entry = self.audit_chain.append(
+                        f"MODULE_ERROR: OutputCanary: {exc}",
+                        "outbound_module_error",
+                        metadata,
+                    )
+                    result.audit_entry_id = entry.id
+                    result.audit_hash = entry.chain_hash
+                    result.processing_time_ms = (time.time() - start) * 1000
+                    return result
 
         # Step 2: Egress filter
         if self.egress_filter and destination_urls:

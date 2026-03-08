@@ -111,6 +111,7 @@ class EgressFilter:
         self._max_log_size = 10000
         self._audit_store = audit_store  # Optional AuditStore for persistence
         self._notifier = None  # Optional EgressTelegramNotifier
+        self._pending_notifications: list[dict] = []
 
     def set_notifier(self, notifier) -> None:
         """Set the Telegram notifier for egress approval requests."""
@@ -378,6 +379,14 @@ class EgressFilter:
                 f"EGRESS DENIED: agent={agent_id} dest={dest} port={port} "
                 f"mode={self.config.mode} rule={rule}"
             )
+            # Queue notification for async delivery
+            if self._notifier:
+                self._pending_notifications.append({
+                    "domain": dest,
+                    "agent_id": agent_id,
+                    "port": port,
+                    "timestamp": time.time(),
+                })
         else:
             logger.info(
                 f"EGRESS ALLOWED: agent={agent_id} dest={dest} port={port} "
@@ -385,6 +394,25 @@ class EgressFilter:
             )
 
         return attempt
+
+    async def flush_notifications(self) -> int:
+        """Send pending egress notifications via Telegram. Called from request handler.
+
+        Returns:
+            Number of notifications successfully sent.
+        """
+        sent = 0
+        while self._pending_notifications:
+            notif = self._pending_notifications.pop(0)
+            try:
+                await self._notifier.notify_pending(
+                    domain=notif["domain"],
+                    agent_id=notif["agent_id"],
+                )
+                sent += 1
+            except Exception as e:
+                logger.error("Egress notification failed: %s", e)
+        return sent
 
     def get_log(
         self, agent_id: Optional[str] = None, limit: int = 100
