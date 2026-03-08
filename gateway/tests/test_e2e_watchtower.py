@@ -356,3 +356,71 @@ class TestE2E10FailClosed:
                 prompt_guard=PromptGuard(),
                 pii_sanitizer=None,
             )
+
+
+# ─── C-2: Pipeline fails closed on security module crash ──────────────────────
+
+
+class _BrokenSanitizer:
+    """Sanitizer that always crashes — simulates module failure."""
+    def sanitize(self, text):
+        raise RuntimeError("Intentional crash for fail-closed test")
+
+
+class _BrokenOutputCanary:
+    """OutputCanary that always crashes."""
+    def check_response(self, agent_id, text):
+        raise RuntimeError("Intentional OutputCanary crash")
+
+
+@pytest.mark.asyncio
+async def test_pipeline_fails_closed_on_enhanced_sanitizer_error(sanitizer):
+    """Pipeline must BLOCK (not pass through) when EnhancedToolResultSanitizer crashes for non-owner."""
+    pipeline = SecurityPipeline(
+        pii_sanitizer=sanitizer,
+        enhanced_tool_sanitizer=_BrokenSanitizer(),
+    )
+    # Force owner to a known ID so non-owner path is exercised
+    pipeline._owner_user_id = "OWNER_12345"
+    result = await pipeline.process_outbound(
+        "test response with secrets",
+        agent_id="default",
+        metadata={"user_id": "NOT_THE_OWNER"},
+    )
+    assert result.blocked, "Pipeline must block when EnhancedToolResultSanitizer crashes"
+    assert "error" in result.block_reason.lower()
+    assert "EnhancedToolResultSanitizer" in result.block_reason
+
+
+@pytest.mark.asyncio
+async def test_pipeline_fails_closed_on_output_canary_error(sanitizer):
+    """Pipeline must BLOCK (not pass through) when OutputCanary crashes for non-owner."""
+    pipeline = SecurityPipeline(
+        pii_sanitizer=sanitizer,
+        output_canary=_BrokenOutputCanary(),
+    )
+    pipeline._owner_user_id = "OWNER_12345"
+    result = await pipeline.process_outbound(
+        "test response",
+        agent_id="default",
+        metadata={"user_id": "NOT_THE_OWNER"},
+    )
+    assert result.blocked, "Pipeline must block when OutputCanary crashes"
+    assert "error" in result.block_reason.lower()
+    assert "OutputCanary" in result.block_reason
+
+
+@pytest.mark.asyncio
+async def test_pipeline_owner_exempt_from_fail_closed(sanitizer):
+    """Owner messages should NOT be blocked when security module crashes (owner exemption)."""
+    pipeline = SecurityPipeline(
+        pii_sanitizer=sanitizer,
+        enhanced_tool_sanitizer=_BrokenSanitizer(),
+    )
+    pipeline._owner_user_id = "OWNER_12345"
+    result = await pipeline.process_outbound(
+        "test response",
+        agent_id="default",
+        metadata={"user_id": "OWNER_12345"},
+    )
+    assert not result.blocked, "Owner should be exempt from fail-closed blocking"

@@ -298,3 +298,65 @@ class TestEgressPolicy:
     def test_matches_ip_invalid(self):
         p = EgressPolicy(allowed_ips=["10.0.0.0/8"])
         assert p.matches_ip("not-an-ip") is False
+
+
+# ─── C-3: EgressFilter notifies on deny ──────────────────────────────────────
+
+
+@pytest.mark.asyncio
+async def test_egress_filter_notifies_on_deny():
+    """EgressFilter must call notifier when blocking an unknown domain."""
+    notifications = []
+
+    class MockNotifier:
+        async def notify_pending(self, domain, agent_id):
+            notifications.append({"domain": domain, "agent_id": agent_id})
+
+    from gateway.security.egress_config import EgressFilterConfig
+    policy = EgressPolicy(allowed_domains=["api.anthropic.com"], deny_all=True)
+    config = EgressFilterConfig(mode="enforce")
+    ef = EgressFilter(config=config, default_policy=policy)
+    ef.set_notifier(MockNotifier())
+
+    result = ef.check("default", "evil.com")
+    assert result.action.value == "deny"
+
+    await ef.flush_notifications()
+    assert len(notifications) == 1
+    assert notifications[0]["domain"] == "evil.com"
+    assert notifications[0]["agent_id"] == "default"
+
+
+@pytest.mark.asyncio
+async def test_egress_filter_no_notification_on_allow():
+    """EgressFilter must NOT notify when domain is allowed."""
+    notifications = []
+
+    class MockNotifier:
+        async def notify_pending(self, domain, agent_id):
+            notifications.append({"domain": domain, "agent_id": agent_id})
+
+    from gateway.security.egress_config import EgressFilterConfig
+    policy = EgressPolicy(allowed_domains=["api.anthropic.com"], deny_all=True)
+    config = EgressFilterConfig(mode="enforce")
+    ef = EgressFilter(config=config, default_policy=policy)
+    ef.set_notifier(MockNotifier())
+
+    result = ef.check("default", "api.anthropic.com")
+    assert result.action.value == "allow"
+
+    await ef.flush_notifications()
+    assert len(notifications) == 0
+
+
+@pytest.mark.asyncio
+async def test_egress_filter_flush_without_notifier():
+    """flush_notifications with no notifier set should not crash."""
+    from gateway.security.egress_config import EgressFilterConfig
+    policy = EgressPolicy(allowed_domains=[], deny_all=True)
+    config = EgressFilterConfig(mode="enforce")
+    ef = EgressFilter(config=config, default_policy=policy)
+    # No notifier set — deny should still work, just no notifications queued
+    result = ef.check("default", "evil.com")
+    assert result.action.value == "deny"
+    assert len(ef._pending_notifications) == 0
