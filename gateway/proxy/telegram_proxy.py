@@ -23,6 +23,39 @@ import urllib.error
 import ssl
 from typing import Any, Optional
 
+# ── Per-user message rate limiting ────────────────────────────────────────────
+from collections import defaultdict
+import time as _time
+
+class PerUserRateLimiter:
+    """Simple sliding-window rate limiter per user ID."""
+    
+    def __init__(self, max_messages: int = 20, window_seconds: int = 3600):
+        self.max_messages = max_messages
+        self.window_seconds = window_seconds
+        self._timestamps: dict[str, list[float]] = defaultdict(list)
+    
+    def check(self, user_id: str) -> bool:
+        """Return True if allowed, False if rate limited."""
+        now = _time.time()
+        cutoff = now - self.window_seconds
+        # Prune old timestamps
+        self._timestamps[user_id] = [
+            t for t in self._timestamps[user_id] if t > cutoff
+        ]
+        if len(self._timestamps[user_id]) >= self.max_messages:
+            return False
+        self._timestamps[user_id].append(now)
+        return True
+    
+    def remaining(self, user_id: str) -> int:
+        now = _time.time()
+        cutoff = now - self.window_seconds
+        active = [t for t in self._timestamps.get(user_id, []) if t > cutoff]
+        return max(0, self.max_messages - len(active))
+
+
+
 logger = logging.getLogger("agentshroud.proxy.telegram_api")
 
 TELEGRAM_API_BASE = "https://api.telegram.org"
@@ -65,6 +98,8 @@ class TelegramAPIProxy:
         # Track which collaborator user IDs have already received the disclosure notice
         # this session. Persisted in-memory only — resets on gateway restart (acceptable).
         self._disclosure_sent: set[str] = set()
+        # Per-user rate limiter: 20 messages/hour for non-owner users
+        self._user_rate_limiter = PerUserRateLimiter(max_messages=20, window_seconds=3600)
 
         # Cache RBAC config to avoid re-instantiating on every message
         try:
@@ -272,6 +307,20 @@ class TelegramAPIProxy:
             if is_collaborator and chat_id and user_id not in self._disclosure_sent:
                 await self._send_disclosure(chat_id)
                 self._disclosure_sent.add(user_id)
+
+            # ── Per-user rate limiting (non-owner only) ───────────────────────
+            if not is_owner and not self._user_rate_limiter.check(user_id):
+                remaining = self._user_rate_limiter.remaining(user_id)
+                logger.warning(
+                    "Rate limited user %s (0 remaining in window)", user_id
+                )
+                await self._notify_user_blocked(
+                    chat_id,
+                    "You have reached the message limit (20/hour). "
+                    "Please try again later.",
+                    reason="rate_limit",
+                )
+                continue
 
             # ── Collaborator command blocking ─────────────────────────────────
             # Block owner-only slash commands before they reach the bot.
