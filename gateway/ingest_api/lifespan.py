@@ -44,6 +44,20 @@ if TYPE_CHECKING:
 logger = logging.getLogger(__name__)
 
 
+def _read_secret(env_key: str) -> str:
+    """Read secret from env var or _FILE variant (Docker secrets)."""
+    value = os.environ.get(env_key, "")
+    if not value:
+        file_path = os.environ.get(f"{env_key}_FILE", "")
+        if file_path:
+            try:
+                with open(file_path, "r") as f:
+                    value = f.read().strip()
+            except Exception as e:
+                logger.warning("Failed to read %s from %s: %s", env_key, file_path, e)
+    return value
+
+
 @asynccontextmanager
 async def lifespan(app: FastAPI):
     """FastAPI lifespan - startup and shutdown"""
@@ -188,7 +202,7 @@ async def lifespan(app: FastAPI):
         _data_dir = os.environ.get("AGENTSHROUD_DATA_DIR", tempfile.gettempdir())
         _approval_db = os.path.join(_data_dir, "agentshroud_approvals.db")
         store = ApprovalStore(_approval_db)
-        _tg_token = os.environ.get("TELEGRAM_BOT_TOKEN", "")
+        _tg_token = _read_secret("TELEGRAM_BOT_TOKEN")
         app_state.approval_queue = EnhancedApprovalQueue(
             app_state.config.approval_queue,
             app_state.config.tool_risk,
@@ -265,7 +279,7 @@ async def lifespan(app: FastAPI):
     # Wire EgressTelegramNotifier into EgressFilter
     try:
         from ..proxy.telegram_egress_notify import EgressTelegramNotifier
-        _tg_token_egress = os.environ.get("TELEGRAM_BOT_TOKEN", "")
+        _tg_token_egress = _read_secret("TELEGRAM_BOT_TOKEN")
         if _tg_token_egress:
             app_state.egress_notifier = EgressTelegramNotifier(
                 bot_token=_tg_token_egress,
