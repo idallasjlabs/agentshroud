@@ -167,3 +167,17 @@ async def test_blocked_domain_is_tracked_in_recent():
     assert len(recent) == 1
     assert recent[0]["host"] == "attacker.com"
     assert recent[0]["allowed"] is False
+
+
+def test_telegram_api_blocked_in_connect_proxy():
+    """CONNECT tunnel must NOT allow api.telegram.org — forces traffic through reverse proxy for RBAC."""
+    from gateway.proxy.http_proxy import ALLOWED_DOMAINS
+    assert "api.telegram.org" not in ALLOWED_DOMAINS, "api.telegram.org must not be in CONNECT allowlist"
+
+    # Also verify via WebProxy check
+    from gateway.proxy.web_config import WebProxyConfig
+    from gateway.proxy.web_proxy import WebProxy
+    config = WebProxyConfig(mode="allowlist", allowed_domains=ALLOWED_DOMAINS)
+    proxy = WebProxy(config=config)
+    result = proxy.check_request("https://api.telegram.org/bot123/sendMessage")
+    assert result.blocked, "api.telegram.org must be blocked in CONNECT proxy"

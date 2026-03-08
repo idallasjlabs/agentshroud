@@ -29,7 +29,6 @@ logger = logging.getLogger("agentshroud.proxy.http_proxy")
 ALLOWED_DOMAINS: list[str] = [
     "api.openai.com",
     "api.anthropic.com",
-    "api.telegram.org",
     "oauth2.googleapis.com",
     "www.googleapis.com",
     "gmail.googleapis.com",
