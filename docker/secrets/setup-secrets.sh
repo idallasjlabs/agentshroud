@@ -28,10 +28,43 @@ read_secret() {
     echo "  ✅ $file"
 }
 
+# Like read_secret but masks input with asterisks as you type
+read_secret_masked() {
+    local prompt="$1" file="$2" optional="${3:-}"
+    local value="" char
+    if [[ "$optional" == "optional" ]]; then
+        printf "%s (press Enter to skip): " "$prompt"
+    else
+        printf "%s: " "$prompt"
+    fi
+    while IFS= read -r -s -n1 char; do
+        if [[ "$char" == $'\0' || "$char" == $'\n' ]]; then
+            break
+        elif [[ "$char" == $'\177' || "$char" == $'\b' ]]; then
+            if [[ ${#value} -gt 0 ]]; then
+                value="${value%?}"
+                printf '\b \b'
+            fi
+        else
+            value+="$char"
+            printf '*'
+        fi
+    done
+    printf '\n'
+    if [[ -z "$value" ]]; then
+        [[ "$optional" == "optional" ]] && return
+        echo "Error: value required." >&2
+        exit 1
+    fi
+    printf %s "$value" > "$file"
+    chmod 600 "$file"
+    echo "  ✅ $file"
+}
+
 # Required secrets
 echo "── Required secrets ──"
-read_secret "OpenAI API key" "openai_api_key.txt"
-read_secret "Anthropic API key" "anthropic_api_key.txt"
+read_secret_masked "Claude OAuth token (sk-ant-oat01-...)" "anthropic_oauth_token.txt"
+read_secret "OpenAI API key" "openai_api_key.txt" optional
 
 # Auto-generate gateway password
 python3 -c "import secrets; print(secrets.token_hex(32), end='')" > gateway_password.txt
@@ -49,7 +82,7 @@ read_secret "1Password bot secret key" "1password_bot_secret_key.txt" optional
 echo ""
 echo "── Validation ──"
 ok=true
-for f in openai_api_key.txt anthropic_api_key.txt gateway_password.txt; do
+for f in anthropic_oauth_token.txt gateway_password.txt; do
     if [[ -f "$f" && -s "$f" ]]; then
         echo "  ✅ $f exists"
     else
