@@ -88,10 +88,9 @@ op_proxy_read_with_retry() {
     return 1
 }
 
-# Only attempt op-proxy reads if 1Password service account token is actually present and non-empty
-_OP_TOKEN_FILE="${OP_SERVICE_ACCOUNT_TOKEN_FILE:-/run/secrets/1password_service_account}"
+# Only attempt op-proxy reads if 1Password credentials are present and non-empty
 _OP_AVAILABLE=false
-if [ -f "$_OP_TOKEN_FILE" ] && [ -s "$_OP_TOKEN_FILE" ]; then
+if [ -f "/run/secrets/1password_bot_email" ] && [ -s "/run/secrets/1password_bot_email" ]; then
     _OP_AVAILABLE=true
 fi
 
