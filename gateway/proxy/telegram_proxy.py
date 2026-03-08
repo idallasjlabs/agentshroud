@@ -112,20 +112,23 @@ class TelegramAPIProxy:
         return response_data
 
     async def _filter_outbound(self, body: bytes, content_type: Optional[str]) -> bytes:
-        """Filter outbound bot messages (sendMessage, etc.)."""
+        """Filter outbound bot messages through the full security pipeline.
+        
+        Order: XML blocks -> Credentials -> PII sanitizer -> Outbound pipeline
+        """
         try:
             if content_type and "json" in content_type:
                 data = json.loads(body)
                 text = data.get("text", "")
                 if text and self.sanitizer:
-                    # XML leak filter
+                    # Step 1: XML leak filter
                     filtered, was_filtered = self.sanitizer.filter_xml_blocks(text)
                     if was_filtered:
                         data["text"] = filtered
                         self._stats["outbound_filtered"] += 1
                         logger.info("Outbound message: XML blocks stripped")
 
-                    # Credential blocking
+                    # Step 2: Credential blocking
                     blocked, was_blocked = await self.sanitizer.block_credentials(
                         data["text"], "telegram"
                     )
@@ -134,10 +137,65 @@ class TelegramAPIProxy:
                         self._stats["outbound_filtered"] += 1
                         logger.warning("Outbound message: credentials blocked")
 
-                    return json.dumps(data).encode()
+                    # Step 3: PII sanitization (PHONE_NUMBER, SSN, CREDIT_CARD, EMAIL)
+                    sanitize_result = await self.sanitizer.sanitize(data["text"])
+                    if sanitize_result.redactions:
+                        data["text"] = sanitize_result.sanitized_content
+                        self._stats["outbound_filtered"] += 1
+                        logger.warning(
+                            "Outbound message: PII redacted (%d entities: %s)",
+                            len(sanitize_result.redactions),
+                            sanitize_result.entity_types_found,
+                        )
+
+                # Step 4: Full outbound pipeline (OutboundInfoFilter, OutputCanary, etc.)
+                if text and self.pipeline:
+                    try:
+                        chat_id = str(data.get("chat_id", ""))
+                        pipeline_result = await self.pipeline.process_outbound(
+                            data.get("text", text),
+                            agent_id="telegram",
+                            source="telegram_outbound",
+                            user_trust_level=self._get_trust_level(chat_id),
+                        )
+                        if pipeline_result.blocked:
+                            logger.warning(
+                                "Outbound message BLOCKED by pipeline: %s",
+                                pipeline_result.block_reason,
+                            )
+                            data["text"] = (
+                                "🛡️ This response was blocked by the "
+                                "security pipeline. Please contact the administrator."
+                            )
+                            self._stats["messages_blocked"] += 1
+                        elif pipeline_result.sanitized_message != data.get("text", text):
+                            data["text"] = pipeline_result.sanitized_message
+                            self._stats["outbound_filtered"] += 1
+                            logger.info("Outbound message: pipeline filtered")
+                    except Exception as e:
+                        logger.error("Outbound pipeline error: %s", e)
+                        # Fail-closed for non-owner
+                        owner_id = self._rbac.owner_user_id if self._rbac else None
+                        chat_id = str(data.get("chat_id", ""))
+                        if chat_id != owner_id:
+                            data["text"] = (
+                                "🛡️ Response held — security pipeline "
+                                "error. Please try again."
+                            )
+                            self._stats["messages_blocked"] += 1
+
+                return json.dumps(data).encode()
         except Exception as e:
             logger.error(f"Outbound filter error: {e}")
         return body
+
+    def _get_trust_level(self, chat_id: str) -> str:
+        """Determine trust level for a chat ID."""
+        if not self._rbac:
+            return "UNTRUSTED"
+        if chat_id == self._rbac.owner_user_id:
+            return "FULL"
+        return "UNTRUSTED"
 
     async def _filter_inbound_updates(self, response_data: dict) -> dict:
         """Scan inbound messages from getUpdates for security threats."""
