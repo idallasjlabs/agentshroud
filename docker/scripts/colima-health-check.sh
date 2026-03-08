@@ -111,19 +111,22 @@ NOW=$(date +%s)
 # 1. Check Colima is running
 if ! docker info >/dev/null 2>&1; then
   log "CRITICAL: Docker is not responding (Colima may be down)"
-  FAILURES+=("Docker/Colima not responding")
-  # Can't do anything else without Colima
   STATE=$(read_state)
   CONSEC=$(echo "$STATE" | python3 -c "import sys,json; print(json.load(sys.stdin).get('consecutive_fails',0))" 2>/dev/null || echo 0)
+  LAST_NOTIFY=$(echo "$STATE" | python3 -c "import sys,json; print(json.load(sys.stdin).get('last_fail_notify',0))" 2>/dev/null || echo 0)
   CONSEC=$((CONSEC + 1))
-  write_state "{\"last_heal\":0,\"last_fail_notify\":$NOW,\"consecutive_fails\":$CONSEC}"
-  if [ "$CONSEC" -le 3 ] || [ $((CONSEC % 12)) -eq 0 ]; then
+  # Notify on first failure only, then at most once per hour.
+  # Do NOT update last_fail_notify unless a notification is actually sent.
+  NOTIFY_GAP=$((NOW - LAST_NOTIFY))
+  if [ "$CONSEC" -eq 1 ] || [ "$NOTIFY_GAP" -gt 3600 ]; then
     notify "🚨 *AgentShroud Health Alert*
 Docker/Colima is not responding!
 Host: $(hostname)
 Time: $(date -u '+%H:%M UTC')
 Consecutive failures: $CONSEC"
+    LAST_NOTIFY=$NOW
   fi
+  write_state "{\"last_heal\":0,\"last_fail_notify\":$LAST_NOTIFY,\"consecutive_fails\":$CONSEC}"
   exit 1
 fi
 
