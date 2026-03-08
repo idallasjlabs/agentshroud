@@ -450,14 +450,54 @@ async def op_proxy(request: OpProxyRequest, auth: AuthRequired):
             detail="op:// reference not in allowed paths",
         )
 
-    # Call op read on the gateway (requires OP_SERVICE_ACCOUNT_TOKEN env var)
-    try:
-        result = subprocess.run(
-            ["op", "read", reference],
-            capture_output=True,
-            text=True,
-            timeout=90,  # 1Password cold start can take >60s
+    # Call op read using the personal-credential session token.
+    # On session expiry, re-authenticate once and retry.
+    def _do_op_read(session: str):
+        return subprocess.run(
+            ["op", "read", "--session", session, reference],
+            capture_output=True, text=True, timeout=90,
         )
+
+    def _refresh_session() -> "str | None":
+        """Re-run the same sign-in logic used at startup."""
+        secrets = "/run/secrets"
+        try:
+            email    = Path(f"{secrets}/1password_bot_email").read_text().strip()
+            password = Path(f"{secrets}/1password_bot_master_password").read_text().strip()
+            key_path = Path(f"{secrets}/1password_bot_secret_key")
+            key      = key_path.read_text().strip() if key_path.exists() else ""
+        except OSError:
+            return None
+        if key:
+            r = subprocess.run(
+                ["op", "account", "add", "--address", "my.1password.com",
+                 "--email", email, "--secret-key", key, "--signin", "--raw"],
+                input=password, capture_output=True, text=True, timeout=120,
+            )
+            if r.returncode == 0 and r.stdout.strip():
+                return r.stdout.strip()
+        r = subprocess.run(
+            ["op", "signin", "--raw"],
+            input=password, capture_output=True, text=True, timeout=60,
+        )
+        return r.stdout.strip() if r.returncode == 0 else None
+
+    session = os.environ.get("OP_SESSION", "")
+    if not session:
+        logger.error("op-proxy: 1Password session not available")
+        raise HTTPException(
+            status_code=status.HTTP_503_SERVICE_UNAVAILABLE,
+            detail="1Password not authenticated",
+        )
+
+    try:
+        result = _do_op_read(session)
+        if result.returncode != 0:
+            # Session may have expired — re-authenticate once and retry
+            new_session = _refresh_session()
+            if new_session:
+                os.environ["OP_SESSION"] = new_session
+                result = _do_op_read(new_session)
     except subprocess.TimeoutExpired:
         logger.error("op-proxy: 1Password read timed out")
         raise HTTPException(

@@ -54,31 +54,61 @@ async def lifespan(app: FastAPI):
     logger.info("=" * 80)
     logger.info("AgentShroud Gateway starting up...")
 
-    # Load 1Password service account token first — bot op-proxy calls depend on it
-    # being available as early as possible to minimize startup race window.
-    _op_token_file = os.getenv("OP_SERVICE_ACCOUNT_TOKEN_FILE")
-    if _op_token_file and not os.getenv("OP_SERVICE_ACCOUNT_TOKEN"):
+    # Authenticate with 1Password using personal credentials.
+    # Service accounts require a Teams/Enterprise plan; personal/family accounts
+    # use email + master password + secret key instead.
+    _OP_SECRETS = "/run/secrets"
+    _op_email_file = os.path.join(_OP_SECRETS, "1password_bot_email")
+    _op_pass_file  = os.path.join(_OP_SECRETS, "1password_bot_master_password")
+    _op_key_file   = os.path.join(_OP_SECRETS, "1password_bot_secret_key")
+
+    def _op_authenticate() -> "str | None":
+        """Sign in to 1Password with personal credentials; return session token or None."""
         try:
-            os.environ["OP_SERVICE_ACCOUNT_TOKEN"] = Path(_op_token_file).read_text().strip()
-            logger.info("1Password service account token loaded")
+            email    = Path(_op_email_file).read_text().strip()
+            password = Path(_op_pass_file).read_text().strip()
+            key      = Path(_op_key_file).read_text().strip() if Path(_op_key_file).exists() else ""
         except OSError as e:
-            logger.warning(f"Could not load 1Password service account token: {e}")
+            logger.warning(f"1Password credentials not found: {e}")
+            return None
+        if not email or not password:
+            return None
 
-    # Pre-warm 1Password CLI (cold start takes >60s, subsequent calls <2s)
-    if os.getenv("OP_SERVICE_ACCOUNT_TOKEN"):
+        # Tier 1: op account add --signin --raw (first boot / account not yet registered)
+        if key:
+            r = subprocess.run(
+                ["op", "account", "add",
+                 "--address", "my.1password.com",
+                 "--email", email,
+                 "--secret-key", key,
+                 "--signin", "--raw"],
+                input=password, capture_output=True, text=True, timeout=120,
+            )
+            if r.returncode == 0 and r.stdout.strip():
+                return r.stdout.strip()
 
+        # Tier 2: op signin --raw (account already registered on this host)
+        r = subprocess.run(
+            ["op", "signin", "--raw"],
+            input=password, capture_output=True, text=True, timeout=60,
+        )
+        if r.returncode == 0 and r.stdout.strip():
+            return r.stdout.strip()
+
+        logger.warning(f"1Password sign-in failed: {r.stderr.strip()[:200]}")
+        return None
+
+    if Path(_op_email_file).exists() and Path(_op_email_file).stat().st_size > 0:
         def _prewarm_op():
-            try:
-                subprocess.run(
-                    ["op", "whoami"],
-                    capture_output=True, text=True, timeout=120,
-                )
-                logger.info("1Password CLI pre-warmed successfully")
-            except Exception as e:
-                logger.warning(f"1Password CLI pre-warm failed (non-fatal): {e}")
+            session = _op_authenticate()
+            if session:
+                os.environ["OP_SESSION"] = session
+                logger.info("1Password authenticated (personal credentials)")
+            else:
+                logger.warning("1Password authentication failed — op-proxy will be unavailable")
 
         threading.Thread(target=_prewarm_op, daemon=True).start()
-        logger.info("1Password CLI pre-warm started (background)")
+        logger.info("1Password sign-in started (background)")
 
     # Load configuration
     try:
