@@ -115,6 +115,7 @@ if (!hasCollaborator) {
     id: 'collaborator',
     name: 'AgentShroud Collaborator',
     model: 'anthropic/claude-sonnet-4-20250514',
+    params: { maxTokens: 2048 },
     tools: {
       profile: 'minimal',
       deny: [
