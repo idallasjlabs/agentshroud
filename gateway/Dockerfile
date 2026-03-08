@@ -38,7 +38,8 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 RUN apt-get update && apt-get install -y --no-install-recommends \
     clamav clamav-daemon clamav-freshclam clamdscan \
     && rm -rf /var/lib/apt/lists/* \
-    && mkdir -p /var/lib/clamav \n    && freshclam --quiet 2>/dev/null || echo "freshclam: virus DB download deferred to runtime"
+    && mkdir -p /var/lib/clamav \
+    && freshclam --quiet 2>/dev/null || echo "freshclam: virus DB download deferred to runtime"
 
 # Install 1Password CLI for op-proxy credential broker
 RUN apt-get update && apt-get install -y --no-install-recommends curl ca-certificates gpg \
@@ -89,7 +90,7 @@ COPY docker/scap-content/ssg-debian12-ds.xml /usr/share/xml/scap/ssg/content/
 LABEL org.opencontainers.image.title="AgentShroud Gateway"
 LABEL org.opencontainers.image.description="PII sanitization proxy for AgentShroud"
 LABEL org.opencontainers.image.vendor="AgentShroud"
-LABEL org.opencontainers.image.version="0.7.0"
+LABEL org.opencontainers.image.version="0.8.0"
 LABEL org.opencontainers.image.source="https://github.com/idallasj/agentshroud"
 
 # Prevent Python bytecode generation (read-only filesystem compatibility)

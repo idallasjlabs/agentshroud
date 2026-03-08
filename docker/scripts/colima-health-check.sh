@@ -43,6 +43,23 @@ DIAG_SCRIPT="$SCRIPT_DIR/container-net-diag.sh"
 BOT_CONTAINER="agentshroud-bot"
 GATEWAY_CONTAINER="agentshroud-gateway"
 
+# ── Prevent overlapping runs ─────────────────────────────────────────────────
+# container-net-diag can take >5 min; skip if a previous run is still active.
+LOCK_DIR="/tmp/agentshroud-health-check.lock"
+if ! mkdir "$LOCK_DIR" 2>/dev/null; then
+  # stat -f %m is macOS; stat -c %Y is Linux — try both
+  LOCK_AGE=$(( $(date +%s) - $(stat -f %m "$LOCK_DIR" 2>/dev/null || stat -c %Y "$LOCK_DIR" 2>/dev/null || echo 0) ))
+  if [ "$LOCK_AGE" -gt 900 ]; then
+    # Stale lock (>15 min) — previous run must have crashed; clear and proceed
+    rm -rf "$LOCK_DIR"
+    mkdir "$LOCK_DIR" 2>/dev/null || exit 0
+  else
+    echo "[$(date -u '+%Y-%m-%d %H:%M:%S UTC')] SKIPPED: previous health check still running (${LOCK_AGE}s)" >> "$LOG_FILE"
+    exit 0
+  fi
+fi
+trap 'rm -rf "$LOCK_DIR"' EXIT
+
 # Telegram notification (reads bot token from secrets)
 TELEGRAM_TOKEN_FILE="$REPO_DIR/docker/secrets/telegram_bot_token_production.txt"
 TELEGRAM_CHAT_ID="8096968754"  # Isaiah
@@ -110,30 +127,21 @@ Consecutive failures: $CONSEC"
   exit 1
 fi
 
-# 2. Check Colima VM internet access
+# 2. Check Colima VM internet access (informational only — VPN commonly blocks this)
+# Route auto-heal requires colima ssh as admin user; not available in cron context.
+# Do NOT add to FAILURES — false-positives behind VPN would generate hourly alerts.
 VM_INTERNET=true
 if ! docker exec agentshroud-gateway curl -sf --connect-timeout 5 -o /dev/null https://google.com 2>/dev/null; then
-  log "DETECTED: Colima VM lost internet access"
+  log "INFO: Colima VM internet check failed (expected behind VPN — route fix not available in this context)"
   VM_INTERNET=false
-
-  # Auto-heal: fix the route
-  log "AUTO-HEAL: Fixing Colima VM routing..."
-  log "AUTO-HEAL: Skipped route fix (colima ssh requires admin user)"
-
-  # Verify fix worked
-  sleep 2
-  if docker exec agentshroud-gateway curl -sf --connect-timeout 5 -o /dev/null https://google.com 2>/dev/null; then
-    log "AUTO-HEAL: ✅ Route fix successful — internet restored"
-    HEALED=true
-  else
-    log "AUTO-HEAL: ❌ Route fix failed — internet still broken"
-    FAILURES+=("Colima VM internet unreachable (auto-heal failed)")
-  fi
 fi
 
 # 3. Apply/verify iptables firewall rules
 log "Checking iptables rules..."
-RULE_COUNT=$(docker exec agentshroud-gateway sh -c "iptables -L DOCKER-USER -n 2>/dev/null | grep -c DROP" 2>/dev/null || echo 0)
+# grep -c exits 1 on zero matches; || true inside the sh -c keeps it clean.
+# Fall back to 0 if docker exec itself fails (container down, iptables absent).
+RULE_COUNT=$(docker exec agentshroud-gateway sh -c "iptables -L DOCKER-USER -n 2>/dev/null | grep -c DROP || true" 2>/dev/null)
+RULE_COUNT=${RULE_COUNT:-0}
 if [ "$RULE_COUNT" -lt 5 ]; then
   log "DETECTED: iptables rules missing ($RULE_COUNT/5 DROP rules)"
   if [ -x "$FIREWALL_SCRIPT" ]; then
@@ -192,13 +200,18 @@ LAST_NOTIFY=$(echo "$STATE" | python3 -c "import sys,json; print(json.load(sys.s
 CONSEC=$(echo "$STATE" | python3 -c "import sys,json; print(json.load(sys.stdin).get('consecutive_fails',0))" 2>/dev/null || echo 0)
 
 if $HEALED; then
-  notify "🔧 *AgentShroud Self-Healed*
+  # Throttle self-healed notifications to once per hour (mirrors FAILURES throttle)
+  LAST_HEAL=$(echo "$STATE" | python3 -c "import sys,json; print(json.load(sys.stdin).get('last_heal',0))" 2>/dev/null || echo 0)
+  HEAL_GAP=$((NOW - LAST_HEAL))
+  if [ "$HEAL_GAP" -gt 3600 ]; then
+    notify "🔧 *AgentShroud Self-Healed*
 Host: $(hostname)
 Time: $(date -u '+%H:%M UTC')
 Actions taken:
 $([ "$VM_INTERNET" = false ] && echo "• Fixed Colima VM routing")
 $([ "$RULE_COUNT" -lt 5 ] && echo "• Reapplied iptables firewall rules")
 All services operational."
+  fi
   write_state "{\"last_heal\":$NOW,\"last_fail_notify\":0,\"consecutive_fails\":0}"
 fi
 

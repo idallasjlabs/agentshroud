@@ -34,7 +34,7 @@ read_secret "OpenAI API key" "openai_api_key.txt"
 read_secret "Anthropic API key" "anthropic_api_key.txt"
 
 # Auto-generate gateway password
-python3 -c "import secrets; print(secrets.token_hex(32), end=)" > gateway_password.txt
+python3 -c "import secrets; print(secrets.token_hex(32), end='')" > gateway_password.txt
 chmod 600 gateway_password.txt
 echo "  ✅ gateway_password.txt (auto-generated)"
 
