@@ -71,12 +71,12 @@ python3 -c "import secrets; print(secrets.token_hex(32), end='')" > gateway_pass
 chmod 600 gateway_password.txt
 echo "  ✅ gateway_password.txt (auto-generated)"
 
-# Optional 1Password secrets
+# 1Password personal account credentials (used by op-proxy for secret retrieval)
 echo ""
-echo "── 1Password secrets (optional) ──"
-read_secret "1Password bot email" "1password_bot_email.txt" optional
-read_secret "1Password bot master password" "1password_bot_master_password.txt" optional
-read_secret "1Password bot secret key" "1password_bot_secret_key.txt" optional
+echo "── 1Password credentials ──"
+read_secret "1Password account email" "1password_bot_email.txt"
+read_secret_masked "1Password master password" "1password_bot_master_password.txt"
+read_secret_masked "1Password secret key (A3-...)" "1password_bot_secret_key.txt"
 
 # Validate
 echo ""
