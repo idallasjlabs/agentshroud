@@ -128,7 +128,7 @@ if (!hasCollaborator) {
       ]
     },
     skills: [],
-    workspace: 'collaborator-workspace',
+    workspace: '/home/node/.openclaw/workspace/collaborator-workspace',
     memorySearch: { enabled: false }
   });
   console.log('[init-patch] Added collaborator agent (Sonnet, restricted tools)');
