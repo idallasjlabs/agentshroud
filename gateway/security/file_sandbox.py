@@ -93,7 +93,7 @@ class StagingPattern:
 
 @dataclass
 class FileSandboxConfig:
-    mode: str = "monitor"  # "monitor" or "enforce"
+    mode: str = "enforce"  # "monitor" or "enforce"
     allowed_read_paths: Optional[list[str]] = None  # None = allow all (monitor)
     allowed_write_paths: Optional[list[str]] = None
     blocked_paths: list[str] = field(
