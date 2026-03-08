@@ -1,7 +1,7 @@
-# AgentShroud™ — Public Information
+# AgentShroud™ — Project Knowledge Base
 
-_This document contains publicly shareable information about the AgentShroud project.
-Collaborators may reference this content freely. Nothing in this file is confidential._
+_This document is the collaborator reference for the AgentShroud project.
+Share freely. Nothing here is confidential._
 
 ---
 
@@ -9,104 +9,186 @@ Collaborators may reference this content freely. Nothing in this file is confide
 
 AgentShroud™ is an **enterprise-grade transparent security proxy framework** for safe, auditable, and governed deployment of autonomous AI agents.
 
-Think of it as a security gateway that sits between an AI agent (like Claude, GPT, etc.) and the outside world — inspecting, filtering, and governing every interaction.
+It sits between an AI agent and the outside world — inspecting, filtering, and governing every interaction in real time. The agent doesn't know it's there (transparent proxy), and the operator sees everything (full audit trail).
 
-## The Problem AgentShroud Solves
+## Why AgentShroud Exists
 
-Autonomous AI agents are powerful but dangerous without oversight:
-- They can leak sensitive data (PII, credentials, API keys)
-- They can be manipulated via prompt injection attacks
-- They can access systems and APIs without proper authorization
-- Their actions are often invisible to operators until something goes wrong
+### The Problem
+AI agents are getting autonomous — they can read email, send messages, browse the web, run code, and manage infrastructure. But autonomy without oversight is dangerous:
 
-AgentShroud provides **transparent, real-time security enforcement** — the agent operates normally while every inbound and outbound message passes through a security pipeline.
+- **Data exfiltration:** An agent can leak PII, credentials, or proprietary data in its responses
+- **Prompt injection:** Users (or other AI systems) can manipulate an agent into doing things it shouldn't
+- **Unauthorized access:** Agents can reach APIs, databases, and services without proper authorization
+- **Invisible actions:** Without logging, you don't know what your agent did until something breaks
+- **Token abuse:** Multi-user systems need cost controls to prevent one user from burning all the tokens
 
-## Architecture Overview
+### The Solution
+AgentShroud provides **defense in depth** — multiple independent security layers, each enforcing a different aspect of safety. If one layer fails, the others still protect you. Every layer defaults to **fail-closed** (block by default, allow explicitly).
 
-AgentShroud operates as a **proxy layer** with multiple security modules:
+## Architecture
 
-### Inbound Pipeline (User → Agent)
-- **Prompt Injection Defense** — Detects and blocks injection attempts
-- **PII Sanitization** — Redacts sensitive data before it reaches the agent
-- **Role-Based Access Control (RBAC)** — Enforces per-user permissions
-- **Rate Limiting** — Prevents abuse and token exhaustion
+### Design Philosophy
 
-### Outbound Pipeline (Agent → User)
-- **PII Redaction** — Catches leaked phone numbers, SSNs, credit cards, emails
-- **Credential Blocking** — Prevents API keys, tokens, and secrets from leaking
-- **Information Disclosure Filter** — Blocks internal infrastructure details
-- **Encoding Bypass Detection** — Catches base64/URL-encoded exfiltration attempts
-- **Output Canary (Tripwire)** — Detects if planted markers leak, proving data theft
-- **XML Injection Filter** — Strips hallucinated tool calls from output
+1. **Transparent proxy** — Works with any AI agent framework without modifying the agent itself. The agent talks to its normal APIs; AgentShroud intercepts and inspects the traffic.
 
-### Governance Layer
-- **Egress Firewall** — Controls which external domains/APIs the agent can access
-- **Approval Queue** — Requires human approval for sensitive outbound actions
-- **MCP Tool Proxy** — Inspects and governs Model Context Protocol tool calls
-- **Audit Trail** — Every action logged for compliance and forensics
+2. **Defense in depth** — No single point of failure. Each security module operates independently. Compromising one doesn't compromise the others.
 
-## Key Differentiators
+3. **Fail-closed** — Every module defaults to blocking. New features, new domains, new tools — all denied until explicitly approved.
 
-1. **Transparent Proxy** — Works with any AI agent framework (OpenClaw, LangChain, etc.) without modifying the agent
-2. **Defense in Depth** — Multiple independent security layers, each fail-closed
-3. **Multi-Platform** — Supports Telegram, email, iMessage, Slack, Discord
-4. **Self-Hosted** — Runs on your infrastructure (Docker), no cloud dependency
-5. **Open Architecture** — Modular security modules, each independently testable
+4. **Observable** — Every action is logged. Every block is logged. Every redaction is logged. The audit trail is the source of truth.
+
+5. **Role-based** — Different users get different access levels. The owner has full access. Collaborators have restricted access. Unknown users are blocked entirely.
+
+### The Security Pipeline
+
+Messages flow through a pipeline of security modules. Each module can:
+- **Pass** the message through unchanged
+- **Sanitize** the message (redact sensitive content)
+- **Block** the message entirely
+
+#### Inbound Pipeline (User → Agent)
+When a message arrives from a user:
+1. Rate limiting check
+2. Role resolution (who is this user?)
+3. Prompt injection detection
+4. PII sanitization
+5. Trust level enforcement
+6. Delivery to the agent
+
+#### Outbound Pipeline (Agent → User)
+When the agent responds:
+1. XML/structured data stripping (prevents hallucinated tool calls)
+2. Credential detection and blocking
+3. PII redaction (phone numbers, SSNs, credit cards, emails)
+4. Information disclosure filtering (infrastructure details, internal paths)
+5. Encoding bypass detection (catches base64/URL-encoded exfiltration)
+6. Output canary scanning (detects planted marker leakage)
+7. Delivery to the user
+
+#### Egress Pipeline (Agent → Internet)
+When the agent tries to reach external services:
+1. Domain allowlist check
+2. Approval queue (if domain not pre-approved)
+3. Connection proxying with full logging
+
+### Security Modules
+
+| Module | Purpose | Default Mode |
+|--------|---------|-------------|
+| PII Sanitizer | Detects and redacts personal data | Enforce |
+| Credential Blocker | Catches API keys, tokens, passwords | Enforce |
+| Information Filter | Blocks infrastructure detail leaks | Enforce |
+| Encoding Detector | Catches base64/URL-encoded bypass attempts | Enforce |
+| Output Canary | Planted tripwire markers detect data theft | Enforce |
+| Egress Firewall | Controls outbound network access | Enforce (deny-all) |
+| Approval Queue | Human-in-the-loop for sensitive actions | Enforce |
+| RBAC | Role-based access control per user | Enforce |
+| Rate Limiter | Per-user message throttling | Enforce |
+| XML Filter | Strips hallucinated tool call XML | Enforce |
+| Tool Governance | Per-role tool access control | Enforce |
+
+### Multi-Platform Support
+
+AgentShroud supports multiple communication channels:
+- **Telegram** (primary, fully integrated)
+- **Email** (Gmail, outbound via SMTP)
+- **iMessage** (macOS integration)
+- Planned: Slack, Discord
+
+### Infrastructure
+
+- **Containerized** — Docker Compose with multi-service architecture
+- **Multi-host** — Tested across Mac (ARM64), Raspberry Pi (ARM64), and x86_64
+- **Self-hosted** — No cloud dependency, runs on your own hardware
+- **Secrets management** — 1Password integration for credential storage
 
 ## Current Status
 
 - **Version:** 0.8.0 (enforcement hardening phase)
-- **Stage:** Private beta / Active development
-- **Test Suite:** 2,391 automated tests, all passing
-- **Platforms Supported:** Telegram (primary), email (Gmail), iMessage
-- **Infrastructure:** Runs on Docker across ARM64 (Raspberry Pi, Mac) and x86_64
+- **Stage:** Private beta, active development
+- **Test Suite:** 2,391+ automated tests, all passing
+- **Security Posture:** All modules in enforce mode, fail-closed defaults
+
+### Development Phases
+
+| Phase | Status | Focus |
+|-------|--------|-------|
+| 0.1–0.5 | ✅ Complete | Core proxy, PII detection, basic filtering |
+| 0.6 | ✅ Complete | Egress firewall, approval queue, RBAC |
+| 0.7 | ✅ Complete | Output canary, encoding detection, audit trail |
+| 0.8 | 🔄 In Progress | Enforcement hardening, peer review, red teaming |
+| 0.9 | 📋 Planned | Production hardening, performance optimization |
+| 1.0 | 📋 Planned | Public release, documentation, onboarding |
+
+### v0.8.0 Focus Areas
+- Ensuring all security modules default to enforce mode
+- Closing bypass paths in the outbound pipeline
+- Red team testing with collaborators
+- Collaborator isolation and tool governance
+- Rate limiting and cost controls
 
 ## Technology Stack
 
-- **Gateway:** Python (FastAPI) — security proxy, PII detection, pipeline orchestration
-- **Agent Runtime:** Node.js (OpenClaw) — AI agent hosting and tool management
-- **Deployment:** Docker Compose with multi-host support
-- **AI Models:** Anthropic Claude (Opus, Sonnet) via API
-- **Identity:** 1Password for secrets management
+| Component | Technology |
+|-----------|-----------|
+| Security Gateway | Python 3.14, FastAPI |
+| Agent Runtime | Node.js 22, OpenClaw |
+| AI Models | Anthropic Claude (Sonnet for collaborators, Opus for owner) |
+| PII Detection | Regex patterns + Microsoft Presidio (when available) |
+| Deployment | Docker Compose |
+| Secrets | 1Password CLI + Docker secrets |
+| Version Control | Git, GitHub |
+| Testing | pytest (Python), automated CI |
 
 ## How to Contribute
 
-AgentShroud welcomes collaborator input in these areas:
+### Red Team Testing (Most Valuable!)
+Your mission: **try to break the security.** Specifically:
 
-### Red Team Testing
-- Test the security pipeline by attempting to extract sensitive data
-- Try prompt injection attacks and report findings
-- Attempt to bypass rate limits, tool restrictions, or isolation
+- **Extract sensitive data** — Can you get the bot to reveal phone numbers, API keys, or credentials?
+- **Bypass tool restrictions** — Can you convince the bot to execute commands it shouldn't?
+- **Prompt injection** — Can you override the bot's instructions?
+- **Data exfiltration** — Can you get data out through encoding tricks, steganography, or creative formatting?
+- **Privilege escalation** — Can you gain access to tools or sessions you shouldn't have?
+- **Social engineering** — Can you convince the bot you're the owner or a more trusted user?
+
+**Rules of engagement:**
+- You're testing YOUR access level, not exploiting bugs in Telegram itself
+- Report what you find — we want to fix real vulnerabilities
+- Creative approaches are encouraged — think like an attacker
+- Don't worry about breaking things — that's what the security pipeline is for
 
 ### Architecture Review
 - Review the security module design for gaps
-- Suggest improvements to the pipeline ordering
-- Identify edge cases in PII detection or encoding bypass
+- Suggest improvements to pipeline ordering
+- Identify edge cases in PII detection
+- Propose new security modules
 
-### Documentation
-- Help improve public-facing documentation
-- Write guides for deployment or configuration
-- Create threat models and attack trees
+### Documentation & Ideas
+- Suggest features or improvements
+- Help with threat modeling
+- Share knowledge about AI security best practices
+- Provide feedback on the collaborator experience
 
-### Code Review
-- Review Python gateway code for security issues
-- Suggest test coverage improvements
-- Identify performance bottlenecks
+## Frequently Asked Questions
 
-## What Collaborators Cannot Access
+**Q: Can I see the source code?**
+A: Not through this bot. Source access is managed separately by Isaiah.
 
-For security reasons, collaborators do not have access to:
-- Internal files, source code, or configuration
-- Shell commands or system tools
-- Other users' session data or message history
-- Credentials, API keys, or secrets
-- Infrastructure details (hostnames, IPs, ports)
+**Q: What model am I talking to?**
+A: You're talking to Claude Sonnet, running through the AgentShroud security proxy.
 
-## Contact
+**Q: Why can't I run commands?**
+A: Collaborator accounts have tool access restricted. This is intentional — it's part of the security model you're helping test.
 
-- **Project Owner:** Isaiah Jefferson
-- **Project Email:** agentshroud.ai@gmail.com
-- **Communication:** Via this Telegram bot
+**Q: Is my conversation private?**
+A: Your conversations are logged for security auditing purposes. They may be reviewed by Isaiah as part of the security assessment. Don't share anything you wouldn't want logged.
+
+**Q: How do I report a vulnerability?**
+A: Describe what you found directly in this chat. If it's critical, mention that explicitly so it gets prioritized.
+
+**Q: Can I use this bot for general questions?**
+A: Yes! When you're not actively red teaming, the bot can help with coding, writing, and general technical questions.
 
 ---
 
