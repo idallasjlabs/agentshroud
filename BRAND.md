@@ -3,7 +3,8 @@
 ## Brand Identity
 
 - **Name**: AgentShroud™
-- **Tagline**: Enterprise Governance Proxy for Autonomous AI Agents
+- **Tagline**: "Your agent can do anything— except get away with it."
+- **Subtitle**: Enterprise Governance Proxy for Autonomous AI Agents
 - **Domain**: [agentshroud.ai](https://agentshroud.ai)
 - **Email**: agentshroud.ai@gmail.com
 - **GitHub**: [github.com/idallasj/agentshroud](https://github.com/idallasj/agentshroud)
