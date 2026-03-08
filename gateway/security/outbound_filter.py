@@ -166,13 +166,6 @@ class OutboundInfoFilter:
                 "replacement": "[SECURITY_MODULE]",
                 "flags": re.IGNORECASE,
             },
-            {
-                "name": "agentshroud_reference",
-                "pattern": r"\bAgentShroud\b",
-                "category": InfoCategory.SECURITY_ARCH,
-                "replacement": "[SECURITY_SYSTEM]",
-            },
-
             # Credential patterns
             {
                 "name": "secret_path",
