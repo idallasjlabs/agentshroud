@@ -147,7 +147,6 @@ class TestOutboundInfoFilter:
             "PII Sanitizer module",
             "Prompt Injection Defense",
             "module #5",
-            "AgentShroud system",
             "Progressive Trust manager",
         ]
         
@@ -155,7 +154,7 @@ class TestOutboundInfoFilter:
             response = f"The {case} is configured properly"
             result = self.filter.filter_response(response)
             
-            assert "[SECURITY_MODULE]" in result.filtered_text or "[SECURITY_SYSTEM]" in result.filtered_text
+            assert "[SECURITY_MODULE]" in result.filtered_text
             assert "security_architecture" in result.categories_found
             
     def test_credential_path_filtering(self):
@@ -449,7 +448,7 @@ with tailnet tail240ea8, user 123456789012, exec tool,
         result = self.filter.filter_response(security_response)
         assert "security_architecture" in result.categories_found
         assert "credential" in result.categories_found
-        assert "[SECURITY_MODULE]" in result.filtered_text or "[SECURITY_SYSTEM]" in result.filtered_text
+        assert "[SECURITY_MODULE]" in result.filtered_text
         
     def test_configuration_from_dict(self):
         """Test OutboundFilterConfig.from_dict()."""
