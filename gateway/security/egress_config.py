@@ -121,12 +121,12 @@ class EgressFilterConfig:
     @classmethod
     def from_environment(cls) -> "EgressFilterConfig":
         """Create config from environment variables and AGENTSHROUD_MODE."""
-        mode = "monitor"  # Default to monitor
+        mode = "enforce"  # Default to enforce (fail-closed)
         
         # Check AGENTSHROUD_MODE environment variable
         agentshroud_mode = os.getenv("AGENTSHROUD_MODE", "").lower()
-        if agentshroud_mode == "enforce":
-            mode = "enforce"
+        if agentshroud_mode in ("enforce", "monitor"):
+            mode = agentshroud_mode
         
         # Allow override via specific egress mode env var
         egress_mode = os.getenv("AGENTSHROUD_EGRESS_MODE", "").lower()

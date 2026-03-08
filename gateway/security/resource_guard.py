@@ -241,7 +241,7 @@ class ResourceGuard:
             return True
         except Exception as e:
             logger.error(f"CPU check failed for agent {agent_id}: {e}")
-            return True  # Allow by default on error
+            return False  # Fail-closed: deny on error
 
     def check_memory_limit(self, agent_id: str) -> bool:
         """Check if agent has exceeded memory limit."""
@@ -260,7 +260,7 @@ class ResourceGuard:
             return True
         except Exception as e:
             logger.error(f"Memory check failed for agent {agent_id}: {e}")
-            return True
+            return False  # Fail-closed: deny on error
 
     def check_disk_write_limit(self, agent_id: str) -> bool:
         """Check if agent has exceeded disk write limit."""
@@ -283,7 +283,7 @@ class ResourceGuard:
             return True
         except Exception as e:
             logger.error(f"Disk write check failed for agent {agent_id}: {e}")
-            return True
+            return False  # Fail-closed: deny on error
 
     def register_temp_file(self, agent_id: str, file_path: str) -> bool:
         """Register a temporary file for tracking."""

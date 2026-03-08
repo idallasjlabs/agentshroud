@@ -50,7 +50,7 @@ class SecurityFinding:
 class GitGuard:
     """Monitor and analyze git hooks and package installation scripts."""
 
-    def __init__(self, mode: str = "monitor"):
+    def __init__(self, mode: str = "enforce"):
         """
         Args:
             mode: 'monitor' (log findings) or 'enforce' (quarantine suspicious files)
@@ -495,7 +495,7 @@ class GitGuard:
         logger.info(f"Git guard report exported to {output_path}")
 
 
-def scan_repository(repo_path: str, mode: str = "monitor") -> GitGuard:
+def scan_repository(repo_path: str, mode: str = "enforce") -> GitGuard:
     """Convenience function to scan a repository."""
     guard = GitGuard(mode=mode)
     guard.scan_git_repository(repo_path)
