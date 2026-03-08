@@ -487,8 +487,10 @@ class TestEgressFilter:
         assert stats["allowed"] == 1
 
     def test_deny_all_false(self):
+        from gateway.security.egress_config import EgressFilterConfig
         policy = EgressPolicy(deny_all=False)
-        ef = EgressFilter(default_policy=policy)
+        config = EgressFilterConfig(mode="monitor")
+        ef = EgressFilter(default_policy=policy, config=config)
         result = ef.check("a", "anything.com", 443)
         assert result.action == EgressAction.ALLOW
 
