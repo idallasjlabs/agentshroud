@@ -93,7 +93,7 @@ read_state() {
   if [ -f "$STATE_FILE" ]; then
     cat "$STATE_FILE"
   else
-    echo '{"last_heal":0,"last_fail_notify":0,"consecutive_fails":0}'
+    echo '{"consecutive_fails":0,"heal_count":0,"fail_count":0,"docker_down_count":0,"last_daily_summary":0}'
   fi
 }
 
@@ -113,20 +113,27 @@ if ! docker info >/dev/null 2>&1; then
   log "CRITICAL: Docker is not responding (Colima may be down)"
   STATE=$(read_state)
   CONSEC=$(echo "$STATE" | python3 -c "import sys,json; print(json.load(sys.stdin).get('consecutive_fails',0))" 2>/dev/null || echo 0)
-  LAST_NOTIFY=$(echo "$STATE" | python3 -c "import sys,json; print(json.load(sys.stdin).get('last_fail_notify',0))" 2>/dev/null || echo 0)
+  HEAL_COUNT=$(echo "$STATE" | python3 -c "import sys,json; print(json.load(sys.stdin).get('heal_count',0))" 2>/dev/null || echo 0)
+  FAIL_COUNT=$(echo "$STATE" | python3 -c "import sys,json; print(json.load(sys.stdin).get('fail_count',0))" 2>/dev/null || echo 0)
+  DOCKER_DOWN_COUNT=$(echo "$STATE" | python3 -c "import sys,json; print(json.load(sys.stdin).get('docker_down_count',0))" 2>/dev/null || echo 0)
+  LAST_DAILY=$(echo "$STATE" | python3 -c "import sys,json; print(json.load(sys.stdin).get('last_daily_summary',0))" 2>/dev/null || echo 0)
   CONSEC=$((CONSEC + 1))
-  # Notify on first failure only, then at most once per hour.
-  # Do NOT update last_fail_notify unless a notification is actually sent.
-  NOTIFY_GAP=$((NOW - LAST_NOTIFY))
-  if [ "$CONSEC" -eq 1 ] || [ "$NOTIFY_GAP" -gt 3600 ]; then
-    notify "🚨 *AgentShroud Health Alert*
-Docker/Colima is not responding!
+  DOCKER_DOWN_COUNT=$((DOCKER_DOWN_COUNT + 1))
+  # Send daily summary if >24h since last one
+  DAILY_GAP=$((NOW - LAST_DAILY))
+  if [ "$DAILY_GAP" -gt 86400 ]; then
+    CURRENT_STATUS="Docker/Colima down"
+    notify "📊 *AgentShroud Daily Summary*
 Host: $(hostname)
 Time: $(date -u '+%H:%M UTC')
-Consecutive failures: $CONSEC"
-    LAST_NOTIFY=$NOW
+• Auto-heals: $HEAL_COUNT
+• Failure events: $FAIL_COUNT
+• Docker-down events: $DOCKER_DOWN_COUNT
+• Status: $CURRENT_STATUS"
+    LAST_DAILY=$NOW
+    HEAL_COUNT=0; FAIL_COUNT=0; DOCKER_DOWN_COUNT=0
   fi
-  write_state "{\"last_heal\":0,\"last_fail_notify\":$LAST_NOTIFY,\"consecutive_fails\":$CONSEC}"
+  write_state "{\"consecutive_fails\":$CONSEC,\"heal_count\":$HEAL_COUNT,\"fail_count\":$FAIL_COUNT,\"docker_down_count\":$DOCKER_DOWN_COUNT,\"last_daily_summary\":$LAST_DAILY}"
   exit 1
 fi
 
@@ -200,57 +207,46 @@ if docker ps --filter name="$BOT_CONTAINER" --format '{{.Status}}' 2>/dev/null |
   fi
 fi
 
-# ── Notification logic ───────────────────────────────────────────────────────
+# ── Daily summary notification logic ─────────────────────────────────────────
 STATE=$(read_state)
-LAST_NOTIFY=$(echo "$STATE" | python3 -c "import sys,json; print(json.load(sys.stdin).get('last_fail_notify',0))" 2>/dev/null || echo 0)
 CONSEC=$(echo "$STATE" | python3 -c "import sys,json; print(json.load(sys.stdin).get('consecutive_fails',0))" 2>/dev/null || echo 0)
+HEAL_COUNT=$(echo "$STATE" | python3 -c "import sys,json; print(json.load(sys.stdin).get('heal_count',0))" 2>/dev/null || echo 0)
+FAIL_COUNT=$(echo "$STATE" | python3 -c "import sys,json; print(json.load(sys.stdin).get('fail_count',0))" 2>/dev/null || echo 0)
+DOCKER_DOWN_COUNT=$(echo "$STATE" | python3 -c "import sys,json; print(json.load(sys.stdin).get('docker_down_count',0))" 2>/dev/null || echo 0)
+LAST_DAILY=$(echo "$STATE" | python3 -c "import sys,json; print(json.load(sys.stdin).get('last_daily_summary',0))" 2>/dev/null || echo 0)
 
-LAST_HEAL_WRITE=0  # Tracks the last_heal value to write; preserved across HEALED + FAILURES paths
-
+# Accumulate event counts — no per-event alerts
 if $HEALED; then
-  # Throttle self-healed notifications to once per hour (mirrors FAILURES throttle)
-  LAST_HEAL=$(echo "$STATE" | python3 -c "import sys,json; print(json.load(sys.stdin).get('last_heal',0))" 2>/dev/null || echo 0)
-  HEAL_GAP=$((NOW - LAST_HEAL))
-  if [ "$HEAL_GAP" -gt 3600 ]; then
-    notify "🔧 *AgentShroud Self-Healed*
-Host: $(hostname)
-Time: $(date -u '+%H:%M UTC')
-Actions taken:
-• Reapplied iptables firewall rules on Colima VM
-All services operational."
-  fi
-  LAST_HEAL_WRITE=$NOW
+  HEAL_COUNT=$((HEAL_COUNT + 1))
 fi
 
 if [ ${#FAILURES[@]} -gt 0 ]; then
   CONSEC=$((CONSEC + 1))
-  # Notify on first failure, then every hour (12 × 5min intervals)
-  NOTIFY_GAP=$((NOW - LAST_NOTIFY))
-  if [ "$CONSEC" -le 1 ] || [ "$NOTIFY_GAP" -gt 3600 ]; then
-    FAIL_LIST=""
-    for F in "${FAILURES[@]}"; do
-      FAIL_LIST="$FAIL_LIST
-• $F"
-    done
-    notify "🚨 *AgentShroud Health Alert*
-Host: $(hostname)
-Time: $(date -u '+%H:%M UTC')
-Issues:$FAIL_LIST
-Consecutive checks failed: $CONSEC"
-    LAST_NOTIFY=$NOW
-  fi
-  # Preserve last_heal from the HEALED block so the 1-hour throttle isn't reset
-  write_state "{\"last_heal\":$LAST_HEAL_WRITE,\"last_fail_notify\":$LAST_NOTIFY,\"consecutive_fails\":$CONSEC}"
-elif ! $HEALED; then
-  # All clear
-  if [ "$CONSEC" -gt 0 ]; then
-    notify "✅ *AgentShroud Recovered*
-Host: $(hostname)
-Time: $(date -u '+%H:%M UTC')
-All systems healthy after $CONSEC consecutive failures."
-  fi
-  write_state "{\"last_heal\":0,\"last_fail_notify\":0,\"consecutive_fails\":0}"
+  FAIL_COUNT=$((FAIL_COUNT + 1))
+else
+  CONSEC=0
 fi
+
+# Send at most one summary per 24 hours
+DAILY_GAP=$((NOW - LAST_DAILY))
+if [ "$DAILY_GAP" -gt 86400 ]; then
+  if [ ${#FAILURES[@]} -gt 0 ]; then
+    CURRENT_STATUS="degraded (${#FAILURES[@]} issue(s))"
+  else
+    CURRENT_STATUS="healthy"
+  fi
+  notify "📊 *AgentShroud Daily Summary*
+Host: $(hostname)
+Time: $(date -u '+%H:%M UTC')
+• Auto-heals: $HEAL_COUNT
+• Failure events: $FAIL_COUNT
+• Docker-down events: $DOCKER_DOWN_COUNT
+• Status: $CURRENT_STATUS"
+  LAST_DAILY=$NOW
+  HEAL_COUNT=0; FAIL_COUNT=0; DOCKER_DOWN_COUNT=0
+fi
+
+write_state "{\"consecutive_fails\":$CONSEC,\"heal_count\":$HEAL_COUNT,\"fail_count\":$FAIL_COUNT,\"docker_down_count\":$DOCKER_DOWN_COUNT,\"last_daily_summary\":$LAST_DAILY}"
 
 log "── Health check complete (${#FAILURES[@]} failures) ──"
 exit $(( ${#FAILURES[@]} > 0 ? 1 : 0 ))
