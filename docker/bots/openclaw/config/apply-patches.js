@@ -128,11 +128,19 @@ if (!hasCollaborator) {
       ]
     },
     skills: [],
-    workspace: 'collaborator-workspace',
+    workspace: '.agentshroud/collaborator-workspace',
     memorySearch: false,
     heartbeat: { enabled: false }
   });
   console.log('[init-patch] Added collaborator agent (Sonnet, restricted tools)');
+  changed = true;
+}
+
+// Migrate collaborator workspace to writable volume path if stale
+const collaboratorAgent = config.agents.list.find(a => a.id === 'collaborator');
+if (collaboratorAgent && collaboratorAgent.workspace !== '.agentshroud/collaborator-workspace') {
+  collaboratorAgent.workspace = '.agentshroud/collaborator-workspace';
+  console.log('[init-patch] Migrated collaborator workspace to writable volume path');
   changed = true;
 }
 
