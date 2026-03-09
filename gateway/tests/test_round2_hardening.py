@@ -75,15 +75,24 @@ class TestEgressConfigDefaultEnforce:
         assert cfg.mode == "enforce", f"Expected enforce, got {cfg.mode}"
 
 
-# ── Fix 5: env_guard fail-closed on parse exceptions ────────────────────
+# ── Fix 5: env_guard fail-open on parse exceptions ───────────────────────
+# Text that fails shlex.split() cannot be a shell command; allow it through.
+# Natural language with unmatched quotes (e.g. "What is AgentShroud?") must
+# not be blocked by env_guard.
 
-class TestEnvGuardFailClosed:
-    def test_unparseable_command_returns_false(self):
+class TestEnvGuardFailOpen:
+    def test_unparseable_text_is_allowed(self):
         from gateway.security.env_guard import EnvironmentGuard
         guard = EnvironmentGuard()
-        # shlex.split raises on unterminated quotes
+        # shlex.split raises on unterminated quotes — natural language, not a command
         result = guard.check_command_execution('echo "unterminated', "test-agent")
-        assert result is False, "Must deny on parse exception"
+        assert result is True, "Unparseable text is not a shell command — must allow"
+
+    def test_natural_language_question_is_allowed(self):
+        from gateway.security.env_guard import EnvironmentGuard
+        guard = EnvironmentGuard()
+        result = guard.check_command_execution('What is AgentShroud?" — get an overview...', "test-agent")
+        assert result is True, "Natural language questions must pass env_guard"
 
 
 # ── Fix 6: DRY owner chat ID ────────────────────────────────────────────
