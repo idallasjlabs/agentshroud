@@ -190,6 +190,7 @@ async def lifespan(app: FastAPI):
 
     # Initialize approval queue
     try:
+        from ..security.rbac_config import RBACConfig
         from ..approval_queue.store import ApprovalStore
         import tempfile
         _data_dir = os.environ.get("AGENTSHROUD_DATA_DIR", tempfile.gettempdir())
