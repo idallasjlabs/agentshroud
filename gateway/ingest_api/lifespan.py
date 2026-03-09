@@ -196,12 +196,13 @@ async def lifespan(app: FastAPI):
         _approval_db = os.path.join(_data_dir, "agentshroud_approvals.db")
         store = ApprovalStore(_approval_db)
         _tg_token = os.environ.get("TELEGRAM_BOT_TOKEN", "") or _read_secret("telegram_bot_token")
+        _rbac_owner_id = RBACConfig().owner_user_id if _tg_token else None
         app_state.approval_queue = EnhancedApprovalQueue(
             app_state.config.approval_queue,
             app_state.config.tool_risk,
             store,
             bot_token=_tg_token or None,
-            admin_chat_id="8096968754" if _tg_token else None,
+            admin_chat_id=_rbac_owner_id,
         )
         await app_state.approval_queue.initialize()
         logger.info(f"Enhanced approval queue initialized (enforce_mode={app_state.config.tool_risk.enforce_mode})")
@@ -284,7 +285,7 @@ async def lifespan(app: FastAPI):
         if _tg_token_egress:
             app_state.egress_notifier = EgressTelegramNotifier(
                 bot_token=_tg_token_egress,
-                owner_chat_id="8096968754",
+                owner_chat_id=RBACConfig().owner_user_id,
             )
             app_state.egress_filter.set_notifier(app_state.egress_notifier)
             logger.info("EgressTelegramNotifier wired")
@@ -571,15 +572,8 @@ async def lifespan(app: FastAPI):
         logger.error(f"✗ EncryptedStore: {e}")
         app_state.encrypted_store = None
 
-    # -- KeyVault: secure credential storage with audit trail --
-    try:
-        from ..security.key_vault import KeyVault, KeyVaultConfig
-        app_state.key_vault = KeyVault(KeyVaultConfig())
-
-        logger.info("✓ KeyVault initialized")
-    except Exception as e:
-        logger.error(f"✗ KeyVault: {e}")
-        app_state.key_vault = None
+    # KeyVault removed — was instantiated but never wired to any consumer.
+    # Re-add when a consumer (e.g. credential injector) needs it.
 
     # -- Canary: integrity checks on critical files --
     try:

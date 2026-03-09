@@ -65,14 +65,14 @@ class TestOutboundPipelineIntegration:
         pipeline_called = False
 
         class MockPipeline:
-            async def process_outbound(self, text, **kwargs):
+            async def process_outbound(self, response, **kwargs):
                 nonlocal pipeline_called
                 pipeline_called = True
                 from dataclasses import dataclass
                 @dataclass
                 class Result:
                     blocked = False
-                    sanitized_message = text
+                    sanitized_message = response
                     block_reason = ""
                 return Result()
 
@@ -91,7 +91,7 @@ class TestOutboundPipelineIntegration:
     async def test_outbound_fails_closed_for_non_owner(self):
         """If pipeline crashes, non-owner messages must be blocked."""
         class CrashingPipeline:
-            async def process_outbound(self, text, **kwargs):
+            async def process_outbound(self, response, **kwargs):
                 raise RuntimeError("Intentional crash")
 
         sanitizer = _make_sanitizer()
@@ -116,7 +116,7 @@ class TestOutboundPipelineIntegration:
     async def test_outbound_owner_exempt_from_fail_closed(self):
         """If pipeline crashes, owner messages should still go through."""
         class CrashingPipeline:
-            async def process_outbound(self, text, **kwargs):
+            async def process_outbound(self, response, **kwargs):
                 raise RuntimeError("Intentional crash")
 
         sanitizer = _make_sanitizer()

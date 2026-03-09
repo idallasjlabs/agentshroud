@@ -99,21 +99,22 @@ class TestDRYOwnerChatID:
         assert len(hardcoded) == 0, f"Found hardcoded owner ID: {hardcoded}"
 
 
-# ── Fix 7: LLM proxy dead endpoints ─────────────────────────────────────
+# ── Fix 7: LLM proxy endpoints (v0.9.0: proxy enabled, not 501) ──────────
 
 class TestLLMProxyEndpoints:
-    def test_v1_endpoint_returns_501(self):
-        """The /v1/{path} endpoint should return 501 (not enabled)."""
+    def test_v1_endpoint_is_defined(self):
+        """The /v1/{path} endpoint must exist (enabled in v0.9.0)."""
         import gateway.ingest_api.main as mod
         source = open(mod.__file__).read()
-        # Verify the endpoint returns 501
-        assert "501" in source, "Expected 501 status code for LLM proxy endpoint"
-        assert "LLM proxy feature is not enabled" in source
+        # v0.9.0 enables the LLM proxy — endpoint delegates to llm_proxy.proxy_messages
+        assert "/v1/{path:path}" in source, "LLM proxy endpoint must be defined"
+        assert "proxy_messages" in source, "LLM proxy must call proxy_messages"
 
-    def test_llm_stats_endpoint_returns_501(self):
+    def test_llm_stats_endpoint_is_defined(self):
+        """The /llm-proxy/stats endpoint must exist."""
         import gateway.ingest_api.main as mod
         source = open(mod.__file__).read()
-        assert "LLM proxy feature is not enabled" in source
+        assert "llm_proxy_stats" in source, "LLM proxy stats endpoint must be defined"
 
 
 # ── Fix 8: KeyVault dead code removed ───────────────────────────────────
