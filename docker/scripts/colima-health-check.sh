@@ -139,14 +139,17 @@ if ! docker exec agentshroud-gateway curl -sf --connect-timeout 5 -o /dev/null h
   VM_INTERNET=false
 fi
 
-# 3. Apply/verify iptables firewall rules
-log "Checking iptables rules..."
-# grep -c exits 1 on zero matches; || true inside the sh -c keeps it clean.
-# Fall back to 0 if docker exec itself fails (container down, iptables absent).
-RULE_COUNT=$(docker exec agentshroud-gateway sh -c "iptables -L DOCKER-USER -n 2>/dev/null | grep -c DROP || true" 2>/dev/null)
+# 3. Apply/verify iptables firewall rules (check on Colima VM host, not inside container)
+# The DOCKER-USER chain lives on the VM, not inside the hardened gateway container
+# (which has cap_drop: ALL and no iptables binary).
+log "Checking iptables rules (Colima VM)..."
+RULE_COUNT=$(colima ssh -- sh -c "iptables -L DOCKER-USER -n 2>/dev/null | grep -c DROP || echo 0" 2>/dev/null | tail -1)
+RULE_COUNT=${RULE_COUNT:-0}
+# Strip any non-numeric characters (colima ssh can prepend version lines)
+RULE_COUNT=$(echo "$RULE_COUNT" | tr -dc '0-9')
 RULE_COUNT=${RULE_COUNT:-0}
 if [ "$RULE_COUNT" -lt 5 ]; then
-  log "DETECTED: iptables rules missing ($RULE_COUNT/5 DROP rules)"
+  log "DETECTED: iptables rules missing on Colima VM ($RULE_COUNT/5 DROP rules)"
   if [ -x "$FIREWALL_SCRIPT" ]; then
     log "AUTO-HEAL: Reapplying firewall rules..."
     "$FIREWALL_SCRIPT" >> "$LOG_FILE" 2>&1
@@ -202,6 +205,8 @@ STATE=$(read_state)
 LAST_NOTIFY=$(echo "$STATE" | python3 -c "import sys,json; print(json.load(sys.stdin).get('last_fail_notify',0))" 2>/dev/null || echo 0)
 CONSEC=$(echo "$STATE" | python3 -c "import sys,json; print(json.load(sys.stdin).get('consecutive_fails',0))" 2>/dev/null || echo 0)
 
+LAST_HEAL_WRITE=0  # Tracks the last_heal value to write; preserved across HEALED + FAILURES paths
+
 if $HEALED; then
   # Throttle self-healed notifications to once per hour (mirrors FAILURES throttle)
   LAST_HEAL=$(echo "$STATE" | python3 -c "import sys,json; print(json.load(sys.stdin).get('last_heal',0))" 2>/dev/null || echo 0)
@@ -211,11 +216,10 @@ if $HEALED; then
 Host: $(hostname)
 Time: $(date -u '+%H:%M UTC')
 Actions taken:
-$([ "$VM_INTERNET" = false ] && echo "• Fixed Colima VM routing")
-$([ "$RULE_COUNT" -lt 5 ] && echo "• Reapplied iptables firewall rules")
+• Reapplied iptables firewall rules on Colima VM
 All services operational."
   fi
-  write_state "{\"last_heal\":$NOW,\"last_fail_notify\":0,\"consecutive_fails\":0}"
+  LAST_HEAL_WRITE=$NOW
 fi
 
 if [ ${#FAILURES[@]} -gt 0 ]; then
@@ -235,7 +239,8 @@ Issues:$FAIL_LIST
 Consecutive checks failed: $CONSEC"
     LAST_NOTIFY=$NOW
   fi
-  write_state "{\"last_heal\":0,\"last_fail_notify\":$LAST_NOTIFY,\"consecutive_fails\":$CONSEC}"
+  # Preserve last_heal from the HEALED block so the 1-hour throttle isn't reset
+  write_state "{\"last_heal\":$LAST_HEAL_WRITE,\"last_fail_notify\":$LAST_NOTIFY,\"consecutive_fails\":$CONSEC}"
 elif ! $HEALED; then
   # All clear
   if [ "$CONSEC" -gt 0 ]; then

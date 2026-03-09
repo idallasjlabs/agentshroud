@@ -115,7 +115,7 @@ if (!hasCollaborator) {
     id: 'collaborator',
     name: 'AgentShroud Collaborator',
     model: 'anthropic/claude-sonnet-4-20250514',
-    params: { maxTokens: 2048 },
+    maxTokens: 2048,
     tools: {
       profile: 'minimal',
       deny: [
@@ -124,62 +124,16 @@ if (!hasCollaborator) {
         'memory_search', 'memory_get', 'tts', 'pdf',
         'nodes', 'browser', 'canvas', 'agents_list',
         'sessions_list', 'sessions_history', 'session_status',
-        'image', 'read', 'write', 'edit', 'apply_patch',
-        'ls', 'find', 'grep', 'web_search', 'web_fetch'
+        'image', 'write', 'edit', 'web_search', 'web_fetch'
       ]
     },
     skills: [],
-    workspace: '/home/node/.openclaw/workspace/collaborator-workspace',
-    memorySearch: { enabled: false }
+    workspace: 'collaborator-workspace',
+    memorySearch: false,
+    heartbeat: { enabled: false }
   });
   console.log('[init-patch] Added collaborator agent (Sonnet, restricted tools)');
   changed = true;
-}
-
-// ── Patch 2d: harden existing collaborator agent config ──────────────────────
-// Ensures deny list includes all filesystem/web tools and fixes schema issues.
-const existingCollab = config.agents.list.find(a => a.id === 'collaborator');
-if (existingCollab) {
-  const requiredDeny = [
-    'exec', 'process', 'gateway', 'cron', 'message',
-    'sessions_spawn', 'sessions_send', 'subagents',
-    'memory_search', 'memory_get', 'tts', 'pdf',
-    'nodes', 'browser', 'canvas', 'agents_list',
-    'sessions_list', 'sessions_history', 'session_status',
-    'image', 'read', 'write', 'edit', 'apply_patch',
-    'ls', 'find', 'grep', 'web_search', 'web_fetch'
-  ];
-  if (!existingCollab.tools) existingCollab.tools = {};
-  if (!existingCollab.tools.deny) existingCollab.tools.deny = [];
-  const deny = existingCollab.tools.deny;
-  for (const tool of requiredDeny) {
-    if (!deny.includes(tool)) {
-      deny.push(tool);
-      changed = true;
-      console.log('[init-patch] Added ' + tool + ' to collaborator deny list');
-    }
-  }
-  // Fix memorySearch: boolean -> object
-  if (typeof existingCollab.memorySearch === 'boolean') {
-    existingCollab.memorySearch = { enabled: existingCollab.memorySearch };
-    changed = true;
-    console.log('[init-patch] Fixed collaborator memorySearch schema');
-  }
-  // Remove invalid heartbeat.enabled key
-  if (existingCollab.heartbeat && 'enabled' in existingCollab.heartbeat) {
-    delete existingCollab.heartbeat;
-    changed = true;
-    console.log('[init-patch] Removed invalid heartbeat config from collaborator');
-  }
-}
-
-// ── Patch 2e: set ownerDisplay to hash ───────────────────────────────────────
-// Prevents phone numbers from leaking to collaborator agents via system prompt.
-if (!config.commands) config.commands = {};
-if (config.commands.ownerDisplay !== 'hash') {
-  config.commands.ownerDisplay = 'hash';
-  changed = true;
-  console.log('[init-patch] Set ownerDisplay to hash (phone number protection)');
 }
 
 // Ensure all collaborator IDs are bound to the collaborator agent
