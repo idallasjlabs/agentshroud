@@ -337,7 +337,11 @@ async def lifespan(app: FastAPI):
     try:
         from ..security.prompt_protection import PromptProtection
         app_state.prompt_protection = PromptProtection()
-        _bot_hostnames = [b.hostname for b in app_state.config.bots.values() if b.hostname]
+        # Filter out the product name — "agentshroud" is public branding, not infrastructure
+        _bot_hostnames = [
+            b.hostname for b in app_state.config.bots.values()
+            if b.hostname and b.hostname.lower() != "agentshroud"
+        ]
         if _bot_hostnames:
             app_state.prompt_protection.register_bot_hostnames(_bot_hostnames)
         logger.info("PromptProtection initialized (%d bot hostname(s))", len(_bot_hostnames))
