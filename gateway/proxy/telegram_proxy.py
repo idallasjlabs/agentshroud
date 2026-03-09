@@ -73,9 +73,9 @@ class TelegramAPIProxy:
         except Exception:
             self._rbac = None
 
-        # Per-user collaborator rate limiter: 20 messages per hour
+        # Per-user collaborator rate limiter: 200 messages per hour
         from gateway.ingest_api.auth import RateLimiter
-        self._collaborator_rate_limiter = RateLimiter(max_requests=20, window_seconds=3600)
+        self._collaborator_rate_limiter = RateLimiter(max_requests=200, window_seconds=3600)
 
     def get_stats(self) -> dict:
         return dict(self._stats)
@@ -265,11 +265,11 @@ class TelegramAPIProxy:
                 await self._send_disclosure(chat_id)
                 self._disclosure_sent.add(user_id)
 
-            # ── Collaborator rate limiting (20 msgs/hour) ─────────────────────
+            # ── Collaborator rate limiting (200 msgs/hour) ────────────────────
             if is_collaborator and not self._collaborator_rate_limiter.check(user_id):
                 self._stats["messages_blocked"] += 1
                 logger.warning(
-                    "Collaborator %s exceeded rate limit (20/hr) — dropping message",
+                    "Collaborator %s exceeded rate limit (200/hr) — dropping message",
                     user_id,
                 )
                 if chat_id:
