@@ -80,6 +80,15 @@ class TelegramAPIProxy:
     def get_stats(self) -> dict:
         return dict(self._stats)
 
+    @staticmethod
+    def _sanitize_reason(reason: str) -> str:
+        """Strip internal paths and module names from block reasons before user display."""
+        # Remove Python module paths (gateway.security.module_name patterns)
+        sanitized = re.sub(r'gateway\.[a-z_.]+', '[internal]', reason)
+        # Remove absolute file paths (/app/..., /home/..., /usr/...)
+        sanitized = re.sub(r'/[a-z][a-zA-Z0-9/_.-]+\.py(?:\s+line\s+\d+)?', '', sanitized)
+        return sanitized.strip()
+
     async def proxy_request(
         self,
         bot_token: str,
@@ -144,11 +153,19 @@ class TelegramAPIProxy:
                     return json.dumps(data).encode()
                 elif text and self.sanitizer:
                     # Fallback: direct sanitizer calls when pipeline is unavailable
-                    filtered, was_filtered = self.sanitizer.filter_xml_blocks(text)
+                    # 1. PII sanitization (phone numbers, SSNs, emails, etc.)
+                    pii_result = await self.sanitizer.sanitize(data["text"])
+                    if pii_result.entity_types_found:
+                        data["text"] = pii_result.sanitized_content
+                        self._stats["outbound_filtered"] += 1
+                        logger.info("Outbound message: PII redacted: %s", pii_result.entity_types_found)
+                    # 2. XML leak filter
+                    filtered, was_filtered = self.sanitizer.filter_xml_blocks(data["text"])
                     if was_filtered:
                         data["text"] = filtered
                         self._stats["outbound_filtered"] += 1
                         logger.info("Outbound message: XML blocks stripped")
+                    # 3. Credential blocking
                     blocked, was_blocked = await self.sanitizer.block_credentials(
                         data["text"], "telegram"
                     )
@@ -159,6 +176,17 @@ class TelegramAPIProxy:
                     return json.dumps(data).encode()
         except Exception as e:
             logger.error(f"Outbound filter error: {e}")
+            # Fail-closed: if pipeline crashes, block non-owner outbound messages.
+            # Determine if the destination is the owner by inspecting chat_id.
+            try:
+                data = json.loads(body)
+                chat_id = str(data.get("chat_id", ""))
+                owner_id = str(self._rbac.owner_user_id) if self._rbac else ""
+                if owner_id and chat_id != owner_id:
+                    data["text"] = "[AgentShroud: security pipeline error — response blocked]"
+                    return json.dumps(data).encode()
+            except Exception:
+                pass
         return body
 
     async def _filter_inbound_updates(self, response_data: dict) -> dict:
@@ -325,6 +353,12 @@ class TelegramAPIProxy:
                             )
                             if chat_id:
                                 await self._notify_user_blocked(chat_id, pipeline_result.block_reason)
+                            blocked_text = f"[BLOCKED BY AGENTSHROUD: {pipeline_result.block_reason}]"
+                            if "message" in update:
+                                update["message"]["text"] = blocked_text
+                            elif "edited_message" in update:
+                                update["edited_message"]["text"] = blocked_text
+                            filtered_updates.append(update)
                             continue
                     # Apply sanitized text from pipeline (PII redactions, etc.)
                     sanitized_text = pipeline_result.sanitized_message
@@ -340,10 +374,16 @@ class TelegramAPIProxy:
                 except Exception as exc:
                     logger.error("Pipeline error for Telegram message from %s: %s", user_id, exc)
                     if not is_owner:
-                        # Fail-closed: drop non-owner message on pipeline error
+                        # Fail-closed: replace message text with block notice, keep in updates list
                         self._stats["messages_blocked"] += 1
                         if chat_id:
                             await self._notify_user_blocked(chat_id, "Security pipeline error")
+                        blocked_text = "[BLOCKED BY AGENTSHROUD: Security pipeline error]"
+                        if "message" in update:
+                            update["message"]["text"] = blocked_text
+                        elif "edited_message" in update:
+                            update["edited_message"]["text"] = blocked_text
+                        filtered_updates.append(update)
                         continue
                     logger.warning("Pipeline error on owner message — allowing through")
             elif self.sanitizer and text:
