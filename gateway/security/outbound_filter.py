@@ -188,13 +188,21 @@ class OutboundInfoFilter:
                 "replacement": "[INTERNAL_PATH]",
             },
             
-            # Fabricated security notice — bot roleplaying as the gateway/pipeline
+            # Fabricated security notice — bot roleplaying as the gateway/pipeline.
+            # escalate=True: pipeline escalates this from REDACT to BLOCK and returns
+            # a clean replacement message instead of passing the redacted text through.
             {
                 "name": "fabricated_security_notice",
-                "pattern": r"AGENTSHROUD\s+blocked\b[^!\n]*[!]?|blocked\s+unauthorized\s+command\s+execution[^!\n]*[!]?",
+                "pattern": (
+                    r"AGENTSHROUD'?s?\s+(?:\w+\s+){0,3}"
+                    r"(?:blocked|blocks|blocking|prevents?|prevented|flagging?|flagged|detecting|detected|intercepted?)\b"
+                    r"[^!\n]*[!]?"
+                    r"|(?:blocked|blocking)\s+(?:unauthorized|suspicious)\s+(?:command|code)\s+execution[^!\n]*[!]?"
+                ),
                 "category": InfoCategory.OPERATIONAL,
                 "replacement": "[RESPONSE_FILTERED]",
                 "flags": re.IGNORECASE,
+                "escalate": True,
             },
 
             # Code block patterns - function_calls XML, tool invocations
@@ -224,6 +232,7 @@ class OutboundInfoFilter:
                     "regex": re.compile(p["pattern"], flags),
                     "category": p["category"],
                     "replacement": p["replacement"],
+                    "escalate": p.get("escalate", False),
                 })
             except re.error as e:
                 logger.error(f"Failed to compile pattern {p['name']}: {e}")

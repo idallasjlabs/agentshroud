@@ -560,6 +560,33 @@ class SecurityPipeline:
                         f"trust={user_trust_level}, source={source}"
                     )
 
+        # Escalate fabricated security notices: REDACT → BLOCK.
+        # If the bot hallucinated a fake "AGENTSHROUD blocked X" message, redacting
+        # the substring is insufficient — the surrounding context is still deceptive.
+        # Replace the entire response with a clean fallback and block delivery.
+        if self.outbound_filter and filter_result.matches:
+            fabricated = [m for m in filter_result.matches if m.pattern_name == "fabricated_security_notice"]
+            if fabricated:
+                result.action = PipelineAction.BLOCK
+                result.blocked = True
+                result.block_reason = "Fabricated security notice detected in agent response"
+                result.sanitized_message = (
+                    "I'm sorry, I wasn't able to process that request. "
+                    "Could you rephrase your question?"
+                )
+                self._stats["outbound_blocked"] += 1
+                entry = await self.audit_chain.append_block(
+                    response, "outbound_fabricated_blocked", metadata
+                )
+                result.audit_entry_id = entry.id
+                result.audit_hash = entry.chain_hash
+                result.processing_time_ms = (time.time() - start) * 1000
+                logger.warning(
+                    "Fabricated security notice blocked from %s: %d match(es)",
+                    source, len(fabricated),
+                )
+                return result
+
         # Step 1.55: PromptProtection — system prompt / architecture disclosure prevention.
         # Applied after OutboundInfoFilter. Redacts additional sensitive content;
         # blocks response if risk_score is critically high (>100) for non-owners.

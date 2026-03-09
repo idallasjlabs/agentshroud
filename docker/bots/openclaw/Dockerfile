@@ -102,6 +102,10 @@ COPY docker/scripts/container-net-diag.sh /app/scripts/container-net-diag.sh
 # Applied to the volume on every startup by init-openclaw-config.sh
 COPY docker/config/openclaw/ /app/config-defaults/openclaw/
 
+# Bake in collaborator workspace defaults (anti-hallucination rules, public info)
+# Applied to the collaborator workspace on every startup by init-openclaw-config.sh
+COPY docker/bots/openclaw/workspace/collaborator-workspace/ /app/config-defaults/openclaw/collaborator-workspace/
+
 # Bake in SSH allowlist config (approved hosts, key-only auth)
 # Applied to /home/node/.ssh/config on every startup by init-openclaw-config.sh
 COPY docker/config/ssh/ /app/config-defaults/ssh/
