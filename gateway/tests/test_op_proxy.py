@@ -80,11 +80,12 @@ class TestOpProxyEndpoint:
         mock_result.returncode = 0
         mock_result.stdout = "sk-secret-key-abc123\n"
 
-        with patch("gateway.ingest_api.main.subprocess.run", return_value=mock_result):
-            resp = client.post(
-                "/credentials/op-proxy",
-                json={"reference": "op://Agent Shroud Bot Credentials/API Keys/openai"},
-            )
+        with patch.dict("os.environ", {"OP_SESSION": "test-session-token"}):
+            with patch("gateway.ingest_api.main.subprocess.run", return_value=mock_result):
+                resp = client.post(
+                    "/credentials/op-proxy",
+                    json={"reference": "op://Agent Shroud Bot Credentials/API Keys/openai"},
+                )
 
         assert resp.status_code == 200
         data = resp.json()
@@ -95,11 +96,12 @@ class TestOpProxyEndpoint:
         mock_result.returncode = 1
         mock_result.stderr = "no such item"
 
-        with patch("gateway.ingest_api.main.subprocess.run", return_value=mock_result):
-            resp = client.post(
-                "/credentials/op-proxy",
-                json={"reference": "op://Agent Shroud Bot Credentials/API Keys/openai"},
-            )
+        with patch.dict("os.environ", {"OP_SESSION": "test-session-token"}):
+            with patch("gateway.ingest_api.main.subprocess.run", return_value=mock_result):
+                resp = client.post(
+                    "/credentials/op-proxy",
+                    json={"reference": "op://Agent Shroud Bot Credentials/API Keys/openai"},
+                )
 
         assert resp.status_code == 502
 

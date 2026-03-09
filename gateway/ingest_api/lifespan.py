@@ -21,7 +21,7 @@ from .router import MultiAgentRouter
 from ..approval_queue.enhanced_queue import EnhancedApprovalQueue
 from ..security.prompt_guard import PromptGuard
 from ..security.trust_manager import TrustManager, TrustLevel
-from ..security.egress_filter import EgressFilter, EgressPolicy
+from ..security.egress_filter import EgressFilter
 from ..security.outbound_filter import OutboundInfoFilter
 from .middleware import MiddlewareManager
 from .event_bus import EventBus
@@ -44,18 +44,12 @@ if TYPE_CHECKING:
 logger = logging.getLogger(__name__)
 
 
-def _read_secret(env_key: str) -> str:
-    """Read secret from env var or _FILE variant (Docker secrets)."""
-    value = os.environ.get(env_key, "")
-    if not value:
-        file_path = os.environ.get(f"{env_key}_FILE", "")
-        if file_path:
-            try:
-                with open(file_path, "r") as f:
-                    value = f.read().strip()
-            except Exception as e:
-                logger.warning("Failed to read %s from %s: %s", env_key, file_path, e)
-    return value
+def _read_secret(name: str, default: str = "") -> str:
+    """Read a Docker secret from /run/secrets/<name>."""
+    try:
+        return Path(f"/run/secrets/{name}").read_text().strip()
+    except (FileNotFoundError, OSError):
+        return default
 
 
 @asynccontextmanager
@@ -196,19 +190,18 @@ async def lifespan(app: FastAPI):
 
     # Initialize approval queue
     try:
-        from ..security.rbac_config import RBACConfig
         from ..approval_queue.store import ApprovalStore
         import tempfile
         _data_dir = os.environ.get("AGENTSHROUD_DATA_DIR", tempfile.gettempdir())
         _approval_db = os.path.join(_data_dir, "agentshroud_approvals.db")
         store = ApprovalStore(_approval_db)
-        _tg_token = _read_secret("TELEGRAM_BOT_TOKEN")
+        _tg_token = os.environ.get("TELEGRAM_BOT_TOKEN", "") or _read_secret("telegram_bot_token")
         app_state.approval_queue = EnhancedApprovalQueue(
             app_state.config.approval_queue,
             app_state.config.tool_risk,
             store,
             bot_token=_tg_token or None,
-            admin_chat_id=RBACConfig().owner_user_id if _tg_token else None,
+            admin_chat_id="8096968754" if _tg_token else None,
         )
         await app_state.approval_queue.initialize()
         logger.info(f"Enhanced approval queue initialized (enforce_mode={app_state.config.tool_risk.enforce_mode})")
@@ -227,6 +220,14 @@ async def lifespan(app: FastAPI):
     except Exception as e:
         logger.critical(f"Failed to initialize PromptGuard: {e}")
         raise
+
+    try:
+        from ..security.heuristic_classifier import HeuristicClassifier
+        app_state.heuristic_classifier = HeuristicClassifier()
+        logger.info("HeuristicClassifier initialized")
+    except Exception as e:
+        logger.error(f"Failed to initialize HeuristicClassifier: {e}")
+        app_state.heuristic_classifier = None
 
     try:
         app_state.trust_manager = TrustManager()
@@ -279,11 +280,11 @@ async def lifespan(app: FastAPI):
     # Wire EgressTelegramNotifier into EgressFilter
     try:
         from ..proxy.telegram_egress_notify import EgressTelegramNotifier
-        _tg_token_egress = _read_secret("TELEGRAM_BOT_TOKEN")
+        _tg_token_egress = os.environ.get("TELEGRAM_BOT_TOKEN", "") or _read_secret("telegram_bot_token")
         if _tg_token_egress:
             app_state.egress_notifier = EgressTelegramNotifier(
                 bot_token=_tg_token_egress,
-                owner_chat_id=RBACConfig().owner_user_id,
+                owner_chat_id="8096968754",
             )
             app_state.egress_filter.set_notifier(app_state.egress_notifier)
             logger.info("EgressTelegramNotifier wired")
@@ -330,6 +331,18 @@ async def lifespan(app: FastAPI):
         logger.critical(f"Failed to initialize outbound information filter: {e}")
         raise
 
+    # Initialize PromptProtection — prevents system prompt / architecture disclosure
+    try:
+        from ..security.prompt_protection import PromptProtection
+        app_state.prompt_protection = PromptProtection()
+        _bot_hostnames = [b.hostname for b in app_state.config.bots.values() if b.hostname]
+        if _bot_hostnames:
+            app_state.prompt_protection.register_bot_hostnames(_bot_hostnames)
+        logger.info("PromptProtection initialized (%d bot hostname(s))", len(_bot_hostnames))
+    except Exception as e:
+        logger.error(f"Failed to initialize PromptProtection: {e}")
+        app_state.prompt_protection = None
+
     # Initialize AuditStore (prerequisite for Pipeline, EgressFilter, AuditExporter)
     try:
         from ..security.audit_store import AuditStore
@@ -372,8 +385,23 @@ async def lifespan(app: FastAPI):
         output_canary=app_state.middleware_manager.get_output_canary() if app_state.middleware_manager else None,
         enhanced_tool_sanitizer=app_state.middleware_manager.get_enhanced_tool_sanitizer() if app_state.middleware_manager else None,
         audit_store=app_state.audit_store,
+        prompt_protection=app_state.prompt_protection,
+        heuristic_classifier=app_state.heuristic_classifier,
     )
     logger.info("Security pipeline initialized")
+
+    # Initialize LLM proxy — wires pipeline into Anthropic API path
+    try:
+        from ..proxy.llm_proxy import LLMProxy
+        app_state.llm_proxy = LLMProxy(
+            pipeline=app_state.pipeline,
+            middleware_manager=app_state.middleware_manager,
+            sanitizer=app_state.sanitizer,
+        )
+        logger.info("LLM proxy initialized")
+    except Exception as e:
+        logger.error(f"Failed to initialize LLM proxy: {e}")
+        app_state.llm_proxy = None
 
     # Initialize per-user session manager for session isolation
     try:
@@ -476,6 +504,44 @@ async def lifespan(app: FastAPI):
         logger.error(f"✗ DriftDetector: {e}")
         app_state.drift_detector = None
 
+    # -- MemoryIntegrityMonitor: SHA-256 baseline + unauthorized-modification alerts --
+    # Monitor gateway-side config files under the writable data directory.
+    # The bot's workspace_path (/home/node etc.) lives in the bot container, not here.
+    _mem_base = _data_dir / "memory-monitor"
+    try:
+        _mem_base.mkdir(parents=True, exist_ok=True)
+    except OSError:
+        _mem_base = _Path("/tmp/agentshroud-memory-monitor")
+        _mem_base.mkdir(parents=True, exist_ok=True)
+
+    try:
+        from ..security.memory_integrity import MemoryIntegrityMonitor
+        from ..security.memory_config import MemoryIntegrityConfig
+        _mem_integrity_cfg = MemoryIntegrityConfig()
+        app_state.memory_integrity = MemoryIntegrityMonitor(_mem_integrity_cfg, _mem_base)
+        app_state.memory_integrity.scan_all_monitored_files()  # Establish hash baseline
+        logger.info(
+            "✓ MemoryIntegrityMonitor → baseline established (%s, %d file(s))",
+            _mem_base,
+            len(app_state.memory_integrity.file_records),
+        )
+    except Exception as e:
+        logger.error(f"✗ MemoryIntegrityMonitor: {e}")
+        app_state.memory_integrity = None
+
+    # -- MemoryLifecycleManager: PII + injection scanning on memory writes --
+    try:
+        from ..security.memory_lifecycle import MemoryLifecycleManager
+        from ..security.memory_config import MemoryLifecycleConfig
+        _mem_lifecycle_cfg = MemoryLifecycleConfig()
+        app_state.memory_lifecycle = MemoryLifecycleManager(_mem_lifecycle_cfg, _mem_base)
+        logger.info(
+            "✓ MemoryLifecycleManager → PII+injection scanning enabled (%s)", _mem_base
+        )
+    except Exception as e:
+        logger.error(f"✗ MemoryLifecycleManager: {e}")
+        app_state.memory_lifecycle = None
+
     # -- HealthReport: aggregates security posture from all modules --
     try:
         from ..security import health_report as _health_mod
@@ -494,10 +560,7 @@ async def lifespan(app: FastAPI):
             or os.getenv("GATEWAY_AUTH_TOKEN", "")
         )
         if not _master:
-            try:
-                _master = open("/run/secrets/gateway_password").read().strip()
-            except OSError:
-                pass
+            _master = _read_secret("gateway_password")
         if _master:
             app_state.encrypted_store = EncryptedStore(master_secret=_master)
             logger.info("✓ EncryptedStore (AES-256-GCM)")
@@ -508,8 +571,15 @@ async def lifespan(app: FastAPI):
         logger.error(f"✗ EncryptedStore: {e}")
         app_state.encrypted_store = None
 
-    # KeyVault removed — was instantiated but never wired to any consumer.
-    # Re-add when a consumer (e.g. credential injector) needs it.
+    # -- KeyVault: secure credential storage with audit trail --
+    try:
+        from ..security.key_vault import KeyVault, KeyVaultConfig
+        app_state.key_vault = KeyVault(KeyVaultConfig())
+
+        logger.info("✓ KeyVault initialized")
+    except Exception as e:
+        logger.error(f"✗ KeyVault: {e}")
+        app_state.key_vault = None
 
     # -- Canary: integrity checks on critical files --
     try:
@@ -577,7 +647,7 @@ async def lifespan(app: FastAPI):
         from ..security.network_validator import NetworkValidator
         app_state.network_validator = NetworkValidator()
         logger.info("✓ NetworkValidator")
-    except Exception as e:
+    except Exception:
         logger.info("✓ NetworkValidator (static mode — Docker socket not available)")
         app_state.network_validator = None
 
@@ -642,6 +712,27 @@ async def lifespan(app: FastAPI):
     except Exception as e:
         logger.warning(f"DNS forwarder failed to start: {e} (continuing)")
         app_state.dns_transport = None
+
+    # Audit chain verification heartbeat — verifies hash-chain integrity every 60s.
+    # Logs CRITICAL if the chain has been tampered with since last check.
+    import asyncio as _asyncio
+
+    async def _audit_chain_heartbeat():
+        while True:
+            await _asyncio.sleep(60)
+            try:
+                pipeline = getattr(app_state, "pipeline", None)
+                if pipeline is not None:
+                    valid, msg = pipeline.verify_audit_chain()
+                    if valid:
+                        logger.debug("AuditChain heartbeat: %s", msg)
+                    else:
+                        logger.critical("AuditChain integrity failure detected: %s", msg)
+            except Exception as exc:
+                logger.error("AuditChain heartbeat error: %s", exc)
+
+    _asyncio.create_task(_audit_chain_heartbeat())
+    logger.info("✓ AuditChain verification heartbeat started (60s interval)")
 
     # Record start time
     app_state.start_time = time.time()
