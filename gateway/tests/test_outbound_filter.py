@@ -143,19 +143,27 @@ class TestOutboundInfoFilter:
             
     def test_security_architecture_filtering(self):
         """Test that security module references are filtered."""
+        # AgentShroud brand name is no longer redacted (Fix C: removed agentshroud_reference
+        # pattern so the product name is not hidden from collaborators).
         test_cases = [
             "PII Sanitizer module",
             "Prompt Injection Defense",
             "module #5",
             "Progressive Trust manager",
         ]
-        
+
         for case in test_cases:
             response = f"The {case} is configured properly"
             result = self.filter.filter_response(response)
-            
+
             assert "[SECURITY_MODULE]" in result.filtered_text
             assert "security_architecture" in result.categories_found
+
+    def test_agentshroud_name_not_redacted(self):
+        """AgentShroud brand name must pass through unredacted (Fix C)."""
+        result = self.filter.filter_response("The AgentShroud system is configured properly")
+        assert "AgentShroud" in result.filtered_text
+        assert "[SECURITY_SYSTEM]" not in result.filtered_text
             
     def test_credential_path_filtering(self):
         """Test that credential paths are filtered."""
@@ -448,7 +456,7 @@ with tailnet tail240ea8, user 123456789012, exec tool,
         result = self.filter.filter_response(security_response)
         assert "security_architecture" in result.categories_found
         assert "credential" in result.categories_found
-        assert "[SECURITY_MODULE]" in result.filtered_text
+        assert "[SECURITY_MODULE]" in result.filtered_text or "[SECURITY_SYSTEM]" in result.filtered_text
         
     def test_configuration_from_dict(self):
         """Test OutboundFilterConfig.from_dict()."""

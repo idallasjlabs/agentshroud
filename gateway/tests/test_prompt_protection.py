@@ -109,9 +109,13 @@ class TestPromptProtection:
             assert result.risk_score > 0
             
     def test_infrastructure_redaction(self, prompt_protection):
-        """Test redaction of infrastructure details."""
+        """Test redaction of targeted infrastructure details.
+
+        Generic hostnames (e.g. server.example.com) are NOT redacted to avoid
+        false positives on filenames like 'file.py' or 'test.md'. Only IPs,
+        Tailscale FQDNs, and known bot hostnames are redacted.
+        """
         test_cases = [
-            "Connect to server.example.com",
             "The IP address is 192.168.1.100",
             "SSH to marvin.tailscale.net",
             "Hostname is agentshroud-bot",

@@ -40,6 +40,9 @@ class LLMProxy:
             "pii_redacted": 0,
             "injections_blocked": 0,
             "responses_filtered": 0,
+            "streaming_responses_scanned": 0,
+            "streaming_responses_blocked": 0,
+            "streaming_responses_redacted": 0,
         }
 
     def get_stats(self) -> dict:
@@ -50,6 +53,7 @@ class LLMProxy:
         path: str,
         body: bytes,
         headers: dict[str, str],
+        user_id: str = "unknown",
     ) -> tuple[int, dict, bytes]:
         """Proxy a /v1/messages (or any /v1/*) request to Anthropic.
         
@@ -80,9 +84,9 @@ class LLMProxy:
                     # Multi-part content (text + images)
                     for part in content:
                         if isinstance(part, dict) and part.get("type") == "text":
-                            part["text"] = await self._scan_inbound(part["text"])
+                            part["text"] = await self._scan_inbound(part["text"], user_id=user_id)
                 elif isinstance(content, str):
-                    messages[i]["content"] = await self._scan_inbound(content)
+                    messages[i]["content"] = await self._scan_inbound(content, user_id=user_id)
 
             request_data["messages"] = messages
             body = json.dumps(request_data).encode()
@@ -105,13 +109,17 @@ class LLMProxy:
             }).encode()
             return 502, {"content-type": "application/json"}, error_resp
 
-        # === OUTBOUND FILTERING (non-streaming only) ===
+        # === OUTBOUND FILTERING ===
         if not is_streaming and status == 200 and resp_body:
             resp_body = await self._filter_outbound(resp_body)
+        elif is_streaming and status == 200 and resp_body:
+            # Streaming responses are fully buffered by urllib before delivery,
+            # so we CAN inspect the complete SSE stream here.
+            resp_body = await self._filter_outbound_streaming(resp_body, user_id=user_id)
 
         return status, resp_headers, resp_body
 
-    async def _scan_inbound(self, text: str) -> str:
+    async def _scan_inbound(self, text: str, user_id: str = "unknown") -> str:
         """Scan inbound user message text for PII and injection."""
         if not text:
             return text
@@ -137,7 +145,7 @@ class LLMProxy:
                     "content_type": "text",
                     "source": "llm_proxy",
                     "headers": {},
-                    "user_id": "unknown",  # We don't have user context at this level
+                    "user_id": user_id,
                 }
                 result = await self.middleware_manager.process_request(request_data, "llm_proxy")
                 if not result.allowed:
@@ -189,6 +197,127 @@ class LLMProxy:
             logger.error(f"LLM proxy outbound filter error: {e}")
 
         return resp_body
+
+    async def _filter_outbound_streaming(
+        self, resp_body: bytes, user_id: str = "unknown"
+    ) -> bytes:
+        """Inspect a fully-buffered Anthropic SSE stream through the security pipeline.
+
+        urllib.request reads the complete SSE body before we return it, so we can
+        scan the accumulated text and either block or sanitize it before delivery.
+
+        BLOCK: the entire resp_body is replaced with a synthetic SSE error stream.
+        REDACT: text deltas are consolidated into a single sanitized delta event.
+        """
+        self._stats["streaming_responses_scanned"] += 1
+
+        accumulated = self._extract_sse_text(resp_body)
+        if not accumulated:
+            return resp_body
+
+        try:
+            if self.pipeline:
+                result = await self.pipeline.process_outbound(
+                    response=accumulated,
+                    agent_id="default",
+                    metadata={"user_id": user_id, "source": "llm_proxy_stream"},
+                )
+                if result.blocked:
+                    self._stats["streaming_responses_blocked"] += 1
+                    logger.critical(
+                        "LLM proxy: streaming response BLOCKED (user=%s, reason=%s)",
+                        user_id,
+                        result.block_reason,
+                    )
+                    return self._build_blocked_sse(result.block_reason)
+
+                if result.sanitized_message != accumulated:
+                    self._stats["streaming_responses_redacted"] += 1
+                    logger.info(
+                        "LLM proxy: streaming response sanitized (pii=%d, info=%d, encodings=%s)",
+                        result.pii_redaction_count,
+                        result.info_filter_redaction_count,
+                        result.encoding_detections,
+                    )
+                    return self._rebuild_sse(resp_body, result.sanitized_message)
+            elif self.sanitizer:
+                # Fallback when no full pipeline: basic XML + credential filter
+                resp_body = await self._filter_outbound(resp_body)
+        except Exception as exc:
+            logger.error("LLM proxy streaming filter error: %s", exc)
+
+        return resp_body
+
+    def _extract_sse_text(self, resp_body: bytes) -> str:
+        """Accumulate all text_delta content from an Anthropic SSE stream."""
+        parts: list[str] = []
+        for line in resp_body.decode("utf-8", errors="replace").splitlines():
+            if not line.startswith("data: "):
+                continue
+            try:
+                data = json.loads(line[6:])
+                if data.get("type") == "content_block_delta":
+                    delta = data.get("delta", {})
+                    if delta.get("type") == "text_delta":
+                        parts.append(delta.get("text", ""))
+            except (json.JSONDecodeError, KeyError):
+                continue
+        return "".join(parts)
+
+    def _build_blocked_sse(self, reason: str) -> bytes:
+        """Synthesize a minimal SSE stream that delivers a block notification."""
+        blocked_text = f"[AGENTSHROUD SECURITY: Response blocked — {reason}]"
+        events = [
+            'event: message_start\n'
+            'data: {"type":"message_start","message":{"id":"blocked","type":"message",'
+            '"role":"assistant","content":[],"stop_reason":null,"stop_sequence":null,'
+            '"usage":{"input_tokens":0,"output_tokens":0}}}\n',
+            'event: content_block_start\n'
+            'data: {"type":"content_block_start","index":0,'
+            '"content_block":{"type":"text","text":""}}\n',
+            f'event: content_block_delta\n'
+            f'data: {json.dumps({"type":"content_block_delta","index":0,"delta":{"type":"text_delta","text":blocked_text}})}\n',
+            'event: content_block_stop\n'
+            'data: {"type":"content_block_stop","index":0}\n',
+            'event: message_delta\n'
+            'data: {"type":"message_delta","delta":{"stop_reason":"end_turn","stop_sequence":null},'
+            '"usage":{"output_tokens":1}}\n',
+            'event: message_stop\n'
+            'data: {"type":"message_stop"}\n',
+        ]
+        return ("\n".join(events) + "\n").encode("utf-8")
+
+    def _rebuild_sse(self, original: bytes, sanitized_text: str) -> bytes:
+        """Rebuild SSE stream replacing all text deltas with a single sanitized delta.
+
+        Keeps all non-text-delta events intact (message_start, content_block_start/stop,
+        message_delta, message_stop) so the bot's streaming client gets valid SSE.
+        The sanitized text is injected as the first text_delta; subsequent ones are dropped.
+        """
+        lines = original.decode("utf-8", errors="replace").splitlines()
+        output: list[str] = []
+        text_injected = False
+
+        for line in lines:
+            if not line.startswith("data: "):
+                output.append(line)
+                continue
+            try:
+                data = json.loads(line[6:])
+                if data.get("type") == "content_block_delta":
+                    delta = data.get("delta", {})
+                    if delta.get("type") == "text_delta":
+                        if not text_injected:
+                            data["delta"]["text"] = sanitized_text
+                            output.append(f"data: {json.dumps(data)}")
+                            text_injected = True
+                        # Subsequent text_deltas consumed into the single replacement
+                        continue
+            except (json.JSONDecodeError, KeyError):
+                pass
+            output.append(line)
+
+        return "\n".join(output).encode("utf-8")
 
     async def _forward_to_anthropic(
         self, url: str, body: bytes, headers: dict[str, str]
