@@ -18,3 +18,32 @@ console.log('grammY SDK patched successfully');
 else
     echo "WARNING: grammY SDK not found at $SDK_PATH"
 fi
+
+# Patch OpenClaw dist: file download URL must also route through gateway
+# OpenClaw's downloadAndSaveTelegramFile() has a hardcoded api.telegram.org URL
+# that is separate from grammY's apiRoot. Node.js native fetch() does not
+# respect HTTPS_PROXY, so on the isolated network this causes a timeout.
+OPENCLAW_DIST="$(npm root -g)/openclaw/dist"
+if [ -d "$OPENCLAW_DIST" ]; then
+    node -e "
+const fs = require('fs');
+const path = require('path');
+const dir = process.argv[1];
+const old = 'https://api.telegram.org/file/bot\${params.token}/\${params.filePath}';
+const rep = '\${process.env.TELEGRAM_API_BASE_URL || \"https://api.telegram.org\"}/file/bot\${params.token}/\${params.filePath}';
+let count = 0;
+for (const f of fs.readdirSync(dir)) {
+    if (!f.endsWith('.js')) continue;
+    const fp = path.join(dir, f);
+    const c = fs.readFileSync(fp, 'utf8');
+    if (c.includes(old)) {
+        fs.writeFileSync(fp, c.replaceAll(old, rep));
+        count++;
+        console.log('Patched file download URL in', f);
+    }
+}
+console.log('OpenClaw dist: patched ' + count + ' file(s)');
+" "$OPENCLAW_DIST"
+else
+    echo "WARNING: OpenClaw dist not found at $OPENCLAW_DIST"
+fi
