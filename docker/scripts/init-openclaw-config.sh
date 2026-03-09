@@ -114,6 +114,37 @@ else
   echo "[init] ✓ AGENTS.md already references BRAND.md — skipping"
 fi
 
+# ── 3b. Collaborator workspace files ─────────────────────────────────────────
+# SOUL.md    — always refresh (authoritative anti-hallucination rules)
+# PUBLIC-INFO.md — seed only if missing (collaborator can't overwrite project info)
+#
+# The collaborator agent runs in a separate workspace at .agentshroud/collaborator-workspace/.
+# Without these files the agent has no anti-hallucination rules and fabricates
+# fake security block messages instead of answering questions normally.
+
+COLLAB_WORKSPACE_DIR="${OPENCLAW_DIR}/collaborator-workspace"
+COLLAB_DEFAULTS="${DEFAULTS_DIR}/collaborator-workspace"
+
+if [ -d "${COLLAB_DEFAULTS}" ]; then
+  mkdir -p "${COLLAB_WORKSPACE_DIR}"
+
+  # SOUL.md: always overwrite — authoritative, must match repo on every restart
+  if [ -f "${COLLAB_DEFAULTS}/SOUL.md" ]; then
+    cp "${COLLAB_DEFAULTS}/SOUL.md" "${COLLAB_WORKSPACE_DIR}/SOUL.md"
+    echo "[init] ✓ Refreshed collaborator SOUL.md (anti-hallucination rules)"
+  fi
+
+  # PUBLIC-INFO.md: seed only if missing
+  if [ ! -f "${COLLAB_WORKSPACE_DIR}/PUBLIC-INFO.md" ] && [ -f "${COLLAB_DEFAULTS}/PUBLIC-INFO.md" ]; then
+    cp "${COLLAB_DEFAULTS}/PUBLIC-INFO.md" "${COLLAB_WORKSPACE_DIR}/PUBLIC-INFO.md"
+    echo "[init] ✓ Seeded collaborator PUBLIC-INFO.md"
+  else
+    echo "[init] ✓ Collaborator PUBLIC-INFO.md already present — skipping"
+  fi
+else
+  echo "[init] ⚠ Collaborator workspace defaults not found at ${COLLAB_DEFAULTS} — skipping"
+fi
+
 # ── 4. Memory persistence — backup/restore across fresh installs ─────────────
 # Memory files (MEMORY.md, memory/*.md) are the bot's continuity.
 # They live on the workspace volume, which survives rebuilds but not volume

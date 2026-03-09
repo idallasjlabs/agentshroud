@@ -56,14 +56,13 @@ class TestPIIDetection:
 
     @pytest.mark.asyncio
     async def test_ssn_no_dashes(self, sanitizer):
-        """SSN without dashes: 123456789 — Presidio only (regex needs dashes)."""
+        """SSN without dashes: 123456789 — Presidio+spaCy only (regex needs dashes)."""
         result = await sanitizer.sanitize("SSN: 123456789")
-        # Regex fallback only catches XXX-XX-XXXX format
-        try:
-            import presidio_analyzer
+        # Only detectable when the full Presidio+spaCy stack is active.
+        # When en_core_web_sm is absent the sanitizer falls back to regex,
+        # which only matches XXX-XX-XXXX / XXX XX XXXX formats.
+        if sanitizer.mode == "presidio":
             assert "123456789" not in result.sanitized_content
-        except ImportError:
-            pass  # Regex fallback doesn't catch dashless SSN
 
     @pytest.mark.asyncio
     async def test_ssn_space_separated(self, sanitizer):
