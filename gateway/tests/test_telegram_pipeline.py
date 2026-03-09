@@ -111,8 +111,10 @@ class TestInboundPipelineBlockedNonOwner:
         response = _getUpdates_response([_make_update("inject this", user_id="42")])
         result = await proxy._filter_inbound_updates(response)
 
-        # Update must be dropped from the bot's view
-        assert result["result"] == []
+        # Update must be kept but text replaced with blocked notice
+        assert len(result["result"]) == 1
+        blocked_text = result["result"][0]["message"]["text"]
+        assert "BLOCKED BY AGENTSHROUD" in blocked_text
         assert proxy._stats["messages_blocked"] == 1
         proxy._notify_user_blocked.assert_called_once()
 
@@ -153,8 +155,10 @@ class TestInboundPipelineExceptionNonOwner:
         response = _getUpdates_response([_make_update("hello", user_id="42")])
         result = await proxy._filter_inbound_updates(response)
 
-        # Must be dropped
-        assert result["result"] == []
+        # Must be kept with text replaced (fail-closed: bot sees block notice, not original)
+        assert len(result["result"]) == 1
+        blocked_text = result["result"][0]["message"]["text"]
+        assert "BLOCKED BY AGENTSHROUD" in blocked_text
         assert proxy._stats["messages_blocked"] == 1
         proxy._notify_user_blocked.assert_called_once()
 
