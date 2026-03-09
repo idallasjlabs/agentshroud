@@ -188,6 +188,15 @@ class OutboundInfoFilter:
                 "replacement": "[INTERNAL_PATH]",
             },
             
+            # Fabricated security notice — bot roleplaying as the gateway/pipeline
+            {
+                "name": "fabricated_security_notice",
+                "pattern": r"AGENTSHROUD\s+blocked\b[^!\n]*[!]?|blocked\s+unauthorized\s+command\s+execution[^!\n]*[!]?",
+                "category": InfoCategory.OPERATIONAL,
+                "replacement": "[RESPONSE_FILTERED]",
+                "flags": re.IGNORECASE,
+            },
+
             # Code block patterns - function_calls XML, tool invocations
             {
                 "name": "function_calls_xml",
