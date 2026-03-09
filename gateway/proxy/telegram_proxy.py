@@ -96,6 +96,7 @@ class TelegramAPIProxy:
         body: Optional[bytes] = None,
         content_type: Optional[str] = None,
         is_system: bool = False,
+        path_prefix: str = "",
     ) -> dict:
         """Proxy a single Telegram API request.
 
@@ -103,9 +104,11 @@ class TelegramAPIProxy:
         For sendMessage requests: scan outbound content.
         is_system=True skips outbound filtering for system/admin notifications
         (startup, shutdown) that are not LLM-generated output.
+        path_prefix: set to "file/" for Telegram file download requests so the
+        upstream URL is constructed as https://api.telegram.org/file/bot<token>/<path>.
         """
         self._stats["total_requests"] += 1
-        url = f"{TELEGRAM_API_BASE}/bot{bot_token}/{method}"
+        url = f"{TELEGRAM_API_BASE}/{path_prefix}bot{bot_token}/{method}"
 
         # === OUTBOUND FILTERING (bot → Telegram) ===
         # For sendMessage, editMessageText, etc. — scan the bot's outgoing text.
@@ -132,7 +135,20 @@ class TelegramAPIProxy:
     async def _filter_outbound(self, body: bytes, content_type: Optional[str]) -> bytes:
         """Filter outbound bot messages (sendMessage, etc.)."""
         try:
-            if content_type and "json" in content_type:
+            if content_type and "multipart" in content_type:
+                # For multipart/form-data (sendPhoto, sendDocument with caption):
+                # apply XML leak filter using latin-1 for lossless binary round-trip.
+                # latin-1 is bijective over 0x00-0xFF so binary image parts are
+                # preserved byte-for-byte while XML patterns in text fields are stripped.
+                if self.sanitizer:
+                    body_str = body.decode("latin-1")
+                    filtered, was_filtered = self.sanitizer.filter_xml_blocks(body_str)
+                    if was_filtered:
+                        body = filtered.encode("latin-1")
+                        self._stats["outbound_filtered"] += 1
+                        logger.info("Outbound multipart: XML blocks stripped")
+                return body
+            elif content_type and "json" in content_type:
                 data = json.loads(body)
                 text = data.get("text", "")
                 if text and self.pipeline:
