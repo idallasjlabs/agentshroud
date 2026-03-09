@@ -35,6 +35,11 @@ class AppState:
     start_time: float
     event_bus: EventBus
     http_proxy: Optional[HTTPConnectProxy]
+    llm_proxy: Optional[object]
+    prompt_protection: Optional[object]
+    heuristic_classifier: Optional[object]
+    memory_integrity: Optional[object]
+    memory_lifecycle: Optional[object]
 
 
 # Global application state instance

@@ -203,10 +203,13 @@ _telegram_send() {
         echo "[startup] ⚠ No Telegram bot token available — cannot send notification" >&2
         return 1
     fi
-    # Route through AgentShroud gateway Telegram proxy (never direct to api.telegram.org)
+    # Route through AgentShroud gateway Telegram proxy (never direct to api.telegram.org).
+    # X-AgentShroud-System marks this as a system notification (not LLM output) so the
+    # gateway skips outbound content filtering for these admin messages.
     curl -sf --max-time 10 -X POST "${_GATEWAY_TELEGRAM_BASE}/bot${token}/sendMessage" \
         -H "Content-Type: application/json" \
         -H "Authorization: Bearer ${GATEWAY_AUTH_TOKEN:-}" \
+        -H "X-AgentShroud-System: 1" \
         -d "{\"chat_id\":\"${_OWNER_CHAT_ID}\",\"text\":\"${text}\"}" \
         >/dev/null 2>&1
 }
