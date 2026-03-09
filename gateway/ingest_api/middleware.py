@@ -511,19 +511,27 @@ class MiddlewareManager:
                     logger.error(f"MetadataGuard processing error: {e}")
             
             # 3. Environment Guard - Check for environment variable access
+            # Only run env_guard if content looks like a shell command.
+            # Raw Telegram chat messages (natural language questions) should
+            # never be treated as command execution attempts.
+            _COMMAND_INDICATORS = (
+                "/proc/", "printenv", "$ENV{", "${", "$(", "`",
+                "| grep", "| awk", "| sed", ">/dev/",
+            )
+
             if self.env_guard:
                 try:
                     message_content = request_data.get('message', '')
                     if isinstance(message_content, dict):
                         message_content = str(message_content)
-                    
-                    # Check if this is a command execution attempt
-                    if not self.env_guard.check_command_execution(message_content, session_id or 'unknown'):
-                        logger.warning("Unauthorized command execution detected")
-                        return MiddlewareResult(
-                            allowed=False,
-                            reason="Unauthorized command execution detected"
-                        )
+
+                    if any(indicator in message_content for indicator in _COMMAND_INDICATORS):
+                        if not self.env_guard.check_command_execution(message_content, session_id or 'unknown'):
+                            logger.warning("Unauthorized command execution detected")
+                            return MiddlewareResult(
+                                allowed=False,
+                                reason="Unauthorized command execution detected"
+                            )
                 except Exception as e:
                     logger.error(f"EnvGuard processing error: {e}")
                     return MiddlewareResult(allowed=False, reason=f"EnvGuard error: {str(e)}")

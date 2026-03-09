@@ -492,6 +492,86 @@ with tailnet tail240ea8, user 123456789012, exec tool,
         assert config_dict_2["enable_density_alerts"] == False
 
 
+class TestFabricatedSecurityNotice:
+    """Test cases for the widened fabricated_security_notice pattern."""
+
+    def setup_method(self):
+        self.filter = OutboundInfoFilter()
+
+    def _has_fabricated_match(self, text: str) -> bool:
+        result = self.filter.filter_response(text)
+        return any(m.pattern_name == "fabricated_security_notice" for m in result.matches)
+
+    def test_exact_past_tense(self):
+        """Original pattern: exact past-tense form."""
+        assert self._has_fabricated_match("AGENTSHROUD blocked unauthorized command execution!")
+
+    def test_present_tense(self):
+        """'blocks' verb form."""
+        assert self._has_fabricated_match("AGENTSHROUD blocks all requests from untrusted users.")
+
+    def test_progressive_tense(self):
+        """'blocking' continuous form."""
+        assert self._has_fabricated_match("AGENTSHROUD is blocking your request due to policy.")
+
+    def test_continues_blocking(self):
+        """'continues blocking' — adverb + gerund form."""
+        assert self._has_fabricated_match("AGENTSHROUD continues blocking unauthorized command execution!")
+
+    def test_prevents_form(self):
+        """'prevents' verb form."""
+        assert self._has_fabricated_match("AGENTSHROUD prevents this action from completing.")
+
+    def test_flagging_form(self):
+        """'flagging' gerund form."""
+        assert self._has_fabricated_match("AGENTSHROUD is flagging this request as suspicious.")
+
+    def test_possessive_flagging(self):
+        """Possessive form: AGENTSHROUD's behavioral analysis flagging."""
+        assert self._has_fabricated_match(
+            "AGENTSHROUD's behavioral analysis flagging this as an injection attempt."
+        )
+
+    def test_blocked_unauthorized_command(self):
+        """Standalone 'blocked unauthorized command execution' without AGENTSHROUD prefix."""
+        assert self._has_fabricated_match("blocked unauthorized command execution!")
+
+    def test_blocking_suspicious_code_execution(self):
+        """'blocking suspicious code execution' variant."""
+        assert self._has_fabricated_match("blocking suspicious code execution attempt detected.")
+
+    def test_case_insensitive(self):
+        """Pattern is case-insensitive."""
+        assert self._has_fabricated_match("agentshroud blocked your request")
+        assert self._has_fabricated_match("AgentShroud BLOCKS the command")
+
+    def test_legitimate_responses_not_matched(self):
+        """Normal helpful responses must NOT trigger the pattern."""
+        safe_responses = [
+            "AgentShroud is a security proxy framework for AI agents.",
+            "I can help you with coding and documentation questions.",
+            "The AgentShroud system uses multiple security layers.",
+            "I wasn't able to process that. Could you rephrase?",
+            "I don't have access to run commands in this context.",
+        ]
+        for text in safe_responses:
+            assert not self._has_fabricated_match(text), (
+                f"False positive — should NOT match: {text!r}"
+            )
+
+    def test_redaction_applied(self):
+        """Matched text is replaced with [RESPONSE_FILTERED]."""
+        result = self.filter.filter_response("AGENTSHROUD blocked your message!")
+        assert "[RESPONSE_FILTERED]" in result.filtered_text
+
+    def test_category_is_operational(self):
+        """Pattern is in the OPERATIONAL category."""
+        result = self.filter.filter_response("AGENTSHROUD blocks this request!")
+        fabricated = [m for m in result.matches if m.pattern_name == "fabricated_security_notice"]
+        assert fabricated
+        assert fabricated[0].category == InfoCategory.OPERATIONAL
+
+
 class TestIntegration:
     """Integration tests with other security components."""
     
