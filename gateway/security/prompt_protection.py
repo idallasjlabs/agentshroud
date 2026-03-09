@@ -102,7 +102,8 @@ class PromptProtection:
         self.infrastructure_patterns = [
             re.compile(r'\b((\d{1,3}\.){3}\d{1,3})\b'),  # IP addresses
             re.compile(r'\b([a-zA-Z0-9-]+\.tailscale\.net)\b', re.IGNORECASE),
-            re.compile(r'\b(marvin)\b', re.IGNORECASE),
+            # Deployment hostnames are registered dynamically via register_bot_hostnames().
+            # No hardcoded host patterns here — they cause false positives on common words.
         ]
         
         # User ID patterns

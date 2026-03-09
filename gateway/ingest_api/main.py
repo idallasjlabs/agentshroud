@@ -2520,13 +2520,15 @@ async def telegram_api_proxy(path: str, request: Request):
         raise HTTPException(status_code=403, detail="Forbidden")
 
     # Extract bot token and method from path: bot<token>/<method>
+    # Also supports file download paths: file/bot<token>/<file_path>
     import re as _re
-    match = _re.match(r'^bot([^/]+)/(.+)$', path)
+    match = _re.match(r'^(file/)?bot([^/]+)/(.+)$', path)
     if not match:
         raise HTTPException(status_code=400, detail='Invalid Telegram API path')
-    
-    bot_token = match.group(1)
-    method = match.group(2)
+
+    file_prefix = match.group(1) or ""
+    bot_token = match.group(2)
+    method = match.group(3)
     
     # M6: Validate bot token matches the configured token
     configured_token = None
@@ -2556,7 +2558,7 @@ async def telegram_api_proxy(path: str, request: Request):
     # so the proxy skips outbound content filtering — these are not LLM-generated output.
     is_system = request.headers.get("x-agentshroud-system") == "1"
     from fastapi.responses import JSONResponse
-    result = await _telegram_proxy.proxy_request(bot_token, method, body, content_type, is_system=is_system)
+    result = await _telegram_proxy.proxy_request(bot_token, method, body, content_type, is_system=is_system, path_prefix=file_prefix)
     
     status_code = 200 if result.get('ok', False) else result.get('error_code', 500)
     return JSONResponse(content=result, status_code=status_code)
