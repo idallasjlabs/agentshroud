@@ -97,9 +97,9 @@ class PromptProtection:
             re.compile(r'parameters.*required.*type.*string', re.IGNORECASE),
         ]
         
-        # Infrastructure patterns
+        # Infrastructure patterns — targeted only; no generic hostname pattern to avoid
+        # false positives on filenames like "file.py" or "test.md".
         self.infrastructure_patterns = [
-            re.compile(r'\b([a-zA-Z0-9-]+\.([a-zA-Z0-9-]+\.)*[a-zA-Z]{2,})\b'),  # hostnames
             re.compile(r'\b((\d{1,3}\.){3}\d{1,3})\b'),  # IP addresses
             re.compile(r'\b([a-zA-Z0-9-]+\.tailscale\.net)\b', re.IGNORECASE),
             re.compile(r'\b(marvin|agentshroud-bot)\b', re.IGNORECASE),

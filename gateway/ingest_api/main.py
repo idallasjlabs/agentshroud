@@ -35,7 +35,7 @@ from pathlib import Path
 
 from .auth import create_auth_dependency
 from .config import GatewayConfig, load_config, get_module_mode, check_monitor_mode_warnings
-from .lifespan import lifespan
+from .lifespan import lifespan, _read_secret
 from .state import app_state
 from .models import (
     ApprovalDecision,
@@ -932,6 +932,8 @@ async def list_security_modules(auth: AuthRequired):
     modules["prompt_guard"] = {"tier": "P0", "status": "active" if app_state.prompt_guard else "unavailable"}
     modules["trust_manager"] = {"tier": "P0", "status": "active" if app_state.trust_manager else "unavailable"}
     modules["egress_filter"] = {"tier": "P0", "status": "active" if app_state.egress_filter else "unavailable"}
+    modules["prompt_protection"] = {"tier": "P0", "status": "active" if getattr(app_state, "prompt_protection", None) else "unavailable"}
+    modules["heuristic_classifier"] = {"tier": "P0", "status": "active" if getattr(app_state, "heuristic_classifier", None) else "unavailable"}
 
     # P1 — Middleware
     mm = app_state.middleware_manager
@@ -1426,10 +1428,7 @@ async def container_security_profile(auth: AuthRequired):
     total += 1
     gw_pass = os.environ.get('AGENTSHROUD_GATEWAY_PASSWORD', '') or os.environ.get('OPENCLAW_GATEWAY_PASSWORD', '')
     if not gw_pass:
-        try:
-            gw_pass = open('/run/secrets/gateway_password').read().strip()
-        except OSError:
-            pass
+        gw_pass = _read_secret('gateway_password')
     # Just check our own app_state
     unavail_count = 0
     for attr in ['pipeline', 'alert_dispatcher', 'killswitch_monitor', 'drift_detector', 'encrypted_store',
@@ -2018,7 +2017,7 @@ async def deep_security_test(auth: AuthRequired):
     # ═══════════════════════════════════════════════════
     def t_op():
         import urllib.request
-        gw = open("/run/secrets/gateway_password").read().strip()
+        gw = _read_secret("gateway_password")
         req = urllib.request.Request(
             "http://127.0.0.1:8080/credentials/op-proxy",
             data=json.dumps({"reference": "op://Agent Shroud Bot Credentials/25ghxryyvup5wpufgfldgc2vjm/agentshroud app-specific password"}).encode(),
@@ -2452,19 +2451,46 @@ async def llm_api_proxy(request: Request, path: str):
     else:
         raise HTTPException(status_code=403, detail="Forbidden")
 
+    llm_proxy = getattr(app_state, "llm_proxy", None)
+    if not llm_proxy:
+        raise HTTPException(status_code=503, detail="LLM proxy not available")
+
+    body = await request.body() if request.method == "POST" else None
+    headers = dict(request.headers)
+
+    # Extract user identity from bot-injected header for RBAC and audit propagation.
+    # The bot sets X-AgentShroud-User-Id on every request (owner or collaborator Telegram ID).
+    user_id = headers.get("x-agentshroud-user-id", "unknown")
+
+    status_code, resp_headers, resp_body = await llm_proxy.proxy_messages(
+        f"/v1/{path}", body, headers, user_id=user_id
+    )
+
+    # Check if streaming response
+    content_type = resp_headers.get("content-type", "")
+    if "text/event-stream" in content_type:
+        from starlette.responses import StreamingResponse
+        import io
+        return StreamingResponse(
+            io.BytesIO(resp_body),
+            status_code=status_code,
+            media_type="text/event-stream",
+            headers={k: v for k, v in resp_headers.items() if k.lower() not in ("transfer-encoding", "content-length")},
+        )
+
     return JSONResponse(
-        content={"error": "LLM proxy feature is not enabled"},
-        status_code=501,
+        content=json.loads(resp_body) if resp_body else {},
+        status_code=status_code,
     )
 
 
 @app.get("/llm-proxy/stats")
 async def llm_proxy_stats(auth: AuthRequired):
     """Return LLM proxy statistics."""
-    return JSONResponse(
-        content={"error": "LLM proxy feature is not enabled"},
-        status_code=501,
-    )
+    llm_proxy = getattr(app_state, "llm_proxy", None)
+    if not llm_proxy:
+        return {"status": "not_initialized"}
+    return llm_proxy.get_stats()
 
 
 # === Telegram API Reverse Proxy (v0.8.0) ===
@@ -2504,11 +2530,7 @@ async def telegram_api_proxy(path: str, request: Request):
     
     # M6: Validate bot token matches the configured token
     configured_token = None
-    try:
-        with open("/run/secrets/telegram_bot_token", "r") as f:
-            configured_token = f.read().strip()
-    except FileNotFoundError:
-        pass
+    configured_token = _read_secret("telegram_bot_token") or None
     if not configured_token:
         logger.error("Telegram proxy: no bot token configured — rejecting request (fail-closed)")
         raise HTTPException(status_code=503, detail="Telegram proxy not configured")
@@ -2529,9 +2551,12 @@ async def telegram_api_proxy(path: str, request: Request):
     if hasattr(app_state, 'pipeline') and app_state.pipeline is not None:
         _telegram_proxy.pipeline = app_state.pipeline
     
-    # Proxy the request
+    # Proxy the request.
+    # System notifications (startup/shutdown from start.sh) carry X-AgentShroud-System: 1
+    # so the proxy skips outbound content filtering — these are not LLM-generated output.
+    is_system = request.headers.get("x-agentshroud-system") == "1"
     from fastapi.responses import JSONResponse
-    result = await _telegram_proxy.proxy_request(bot_token, method, body, content_type)
+    result = await _telegram_proxy.proxy_request(bot_token, method, body, content_type, is_system=is_system)
     
     status_code = 200 if result.get('ok', False) else result.get('error_code', 500)
     return JSONResponse(content=result, status_code=status_code)

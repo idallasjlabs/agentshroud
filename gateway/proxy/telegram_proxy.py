@@ -23,39 +23,6 @@ import urllib.error
 import ssl
 from typing import Any, Optional
 
-# ── Per-user message rate limiting ────────────────────────────────────────────
-from collections import defaultdict
-import time as _time
-
-class PerUserRateLimiter:
-    """Simple sliding-window rate limiter per user ID."""
-    
-    def __init__(self, max_messages: int = 20, window_seconds: int = 3600):
-        self.max_messages = max_messages
-        self.window_seconds = window_seconds
-        self._timestamps: dict[str, list[float]] = defaultdict(list)
-    
-    def check(self, user_id: str) -> bool:
-        """Return True if allowed, False if rate limited."""
-        now = _time.time()
-        cutoff = now - self.window_seconds
-        # Prune old timestamps
-        self._timestamps[user_id] = [
-            t for t in self._timestamps[user_id] if t > cutoff
-        ]
-        if len(self._timestamps[user_id]) >= self.max_messages:
-            return False
-        self._timestamps[user_id].append(now)
-        return True
-    
-    def remaining(self, user_id: str) -> int:
-        now = _time.time()
-        cutoff = now - self.window_seconds
-        active = [t for t in self._timestamps.get(user_id, []) if t > cutoff]
-        return max(0, self.max_messages - len(active))
-
-
-
 logger = logging.getLogger("agentshroud.proxy.telegram_api")
 
 TELEGRAM_API_BASE = "https://api.telegram.org"
@@ -98,8 +65,6 @@ class TelegramAPIProxy:
         # Track which collaborator user IDs have already received the disclosure notice
         # this session. Persisted in-memory only — resets on gateway restart (acceptable).
         self._disclosure_sent: set[str] = set()
-        # Per-user rate limiter: 20 messages/hour for non-owner users
-        self._user_rate_limiter = PerUserRateLimiter(max_messages=20, window_seconds=3600)
 
         # Cache RBAC config to avoid re-instantiating on every message
         try:
@@ -107,6 +72,10 @@ class TelegramAPIProxy:
             self._rbac = RBACConfig()
         except Exception:
             self._rbac = None
+
+        # Per-user collaborator rate limiter: 20 messages per hour
+        from gateway.ingest_api.auth import RateLimiter
+        self._collaborator_rate_limiter = RateLimiter(max_requests=20, window_seconds=3600)
 
     def get_stats(self) -> dict:
         return dict(self._stats)
@@ -117,18 +86,23 @@ class TelegramAPIProxy:
         method: str,
         body: Optional[bytes] = None,
         content_type: Optional[str] = None,
+        is_system: bool = False,
     ) -> dict:
         """Proxy a single Telegram API request.
-        
+
         For getUpdates responses: scan each message through security pipeline.
         For sendMessage requests: scan outbound content.
+        is_system=True skips outbound filtering for system/admin notifications
+        (startup, shutdown) that are not LLM-generated output.
         """
         self._stats["total_requests"] += 1
         url = f"{TELEGRAM_API_BASE}/bot{bot_token}/{method}"
 
         # === OUTBOUND FILTERING (bot → Telegram) ===
-        # For sendMessage, editMessageText, etc. — scan the bot's outgoing text
-        if method in ("sendMessage", "editMessageText", "sendPhoto", "sendDocument",
+        # For sendMessage, editMessageText, etc. — scan the bot's outgoing text.
+        # Skip for system notifications (X-AgentShroud-System: 1) — these are
+        # shell-script admin messages, not LLM output, so content filtering is not needed.
+        if not is_system and method in ("sendMessage", "editMessageText", "sendPhoto", "sendDocument",
                        "copyMessage", "forwardMessage") and body:
             body = await self._filter_outbound(body, content_type)
 
@@ -147,23 +121,34 @@ class TelegramAPIProxy:
         return response_data
 
     async def _filter_outbound(self, body: bytes, content_type: Optional[str]) -> bytes:
-        """Filter outbound bot messages through the full security pipeline.
-        
-        Order: XML blocks -> Credentials -> PII sanitizer -> Outbound pipeline
-        """
+        """Filter outbound bot messages (sendMessage, etc.)."""
         try:
             if content_type and "json" in content_type:
                 data = json.loads(body)
                 text = data.get("text", "")
-                if text and self.sanitizer:
-                    # Step 1: XML leak filter
+                if text and self.pipeline:
+                    pipeline_result = await self.pipeline.process_outbound(
+                        response=text,
+                        source="telegram",
+                        metadata={},
+                    )
+                    if pipeline_result.blocked:
+                        data["text"] = "[AgentShroud: outbound content blocked by security policy]"
+                        self._stats["outbound_filtered"] += 1
+                        logger.warning(
+                            "Outbound message blocked by pipeline: %s", pipeline_result.block_reason
+                        )
+                    elif pipeline_result.sanitized_message != text:
+                        data["text"] = pipeline_result.sanitized_message
+                        self._stats["outbound_filtered"] += 1
+                    return json.dumps(data).encode()
+                elif text and self.sanitizer:
+                    # Fallback: direct sanitizer calls when pipeline is unavailable
                     filtered, was_filtered = self.sanitizer.filter_xml_blocks(text)
                     if was_filtered:
                         data["text"] = filtered
                         self._stats["outbound_filtered"] += 1
                         logger.info("Outbound message: XML blocks stripped")
-
-                    # Step 2: Credential blocking
                     blocked, was_blocked = await self.sanitizer.block_credentials(
                         data["text"], "telegram"
                     )
@@ -171,66 +156,10 @@ class TelegramAPIProxy:
                         data["text"] = blocked
                         self._stats["outbound_filtered"] += 1
                         logger.warning("Outbound message: credentials blocked")
-
-                    # Step 3: PII sanitization (PHONE_NUMBER, SSN, CREDIT_CARD, EMAIL)
-                    sanitize_result = await self.sanitizer.sanitize(data["text"])
-                    if sanitize_result.redactions:
-                        data["text"] = sanitize_result.sanitized_content
-                        self._stats["outbound_filtered"] += 1
-                        logger.warning(
-                            "Outbound message: PII redacted (%d entities: %s)",
-                            len(sanitize_result.redactions),
-                            sanitize_result.entity_types_found,
-                        )
-
-                # Step 4: Full outbound pipeline (OutboundInfoFilter, OutputCanary, etc.)
-                if text and self.pipeline:
-                    try:
-                        chat_id = str(data.get("chat_id", ""))
-                        pipeline_result = await self.pipeline.process_outbound(
-                            data.get("text", text),
-                            agent_id="telegram",
-                            source="telegram_outbound",
-                            user_trust_level=self._get_trust_level(chat_id),
-                        )
-                        if pipeline_result.blocked:
-                            logger.warning(
-                                "Outbound message BLOCKED by pipeline: %s",
-                                pipeline_result.block_reason,
-                            )
-                            data["text"] = (
-                                "🛡️ This response was blocked by the "
-                                "security pipeline. Please contact the administrator."
-                            )
-                            self._stats["messages_blocked"] += 1
-                        elif pipeline_result.sanitized_message != data.get("text", text):
-                            data["text"] = pipeline_result.sanitized_message
-                            self._stats["outbound_filtered"] += 1
-                            logger.info("Outbound message: pipeline filtered")
-                    except Exception as e:
-                        logger.error("Outbound pipeline error: %s", e)
-                        # Fail-closed for non-owner
-                        owner_id = self._rbac.owner_user_id if self._rbac else None
-                        chat_id = str(data.get("chat_id", ""))
-                        if chat_id != owner_id:
-                            data["text"] = (
-                                "🛡️ Response held — security pipeline "
-                                "error. Please try again."
-                            )
-                            self._stats["messages_blocked"] += 1
-
-                return json.dumps(data).encode()
+                    return json.dumps(data).encode()
         except Exception as e:
             logger.error(f"Outbound filter error: {e}")
         return body
-
-    def _get_trust_level(self, chat_id: str) -> str:
-        """Determine trust level for a chat ID."""
-        if not self._rbac:
-            return "UNTRUSTED"
-        if chat_id == self._rbac.owner_user_id:
-            return "FULL"
-        return "UNTRUSTED"
 
     async def _filter_inbound_updates(self, response_data: dict) -> dict:
         """Scan inbound messages from getUpdates for security threats."""
@@ -308,18 +237,15 @@ class TelegramAPIProxy:
                 await self._send_disclosure(chat_id)
                 self._disclosure_sent.add(user_id)
 
-            # ── Per-user rate limiting (non-owner only) ───────────────────────
-            if not is_owner and not self._user_rate_limiter.check(user_id):
-                remaining = self._user_rate_limiter.remaining(user_id)
+            # ── Collaborator rate limiting (20 msgs/hour) ─────────────────────
+            if is_collaborator and not self._collaborator_rate_limiter.check(user_id):
+                self._stats["messages_blocked"] += 1
                 logger.warning(
-                    "Rate limited user %s (0 remaining in window)", user_id
+                    "Collaborator %s exceeded rate limit (20/hr) — dropping message",
+                    user_id,
                 )
-                await self._notify_user_blocked(
-                    chat_id,
-                    "You have reached the message limit (20/hour). "
-                    "Please try again later.",
-                    reason="rate_limit",
-                )
+                if chat_id:
+                    await self._send_rate_limit_notice(chat_id)
                 continue
 
             # ── Collaborator command blocking ─────────────────────────────────
@@ -375,61 +301,53 @@ class TelegramAPIProxy:
                 except Exception as e:
                     logger.error(f"Middleware error for telegram message: {e}")
 
-            # ── Inbound security pipeline (PromptGuard, EncodingDetector, TrustManager) ──
+            # ── Security pipeline (prompt injection, PII, heuristic, audit) ──
+            # ContextGuard already ran via middleware_manager; skip_context_guard=True avoids double-check.
             if self.pipeline and text:
                 try:
                     pipeline_result = await self.pipeline.process_inbound(
                         message=text,
-                        agent_id="telegram",
                         source="telegram",
-                        metadata={
-                            "webhook_source": "telegram",
-                            "user_id": user_id,
-                        },
+                        metadata={"user_id": user_id, "chat_id": chat_id},
+                        skip_context_guard=True,
                     )
                     if pipeline_result.blocked:
                         if is_owner:
                             logger.info(
-                                "Pipeline would block owner message (%s) — allowing: %s",
+                                "Pipeline would block owner message (%s) — allowing; reason: %s",
                                 user_id, pipeline_result.block_reason,
                             )
                         else:
+                            self._stats["messages_blocked"] += 1
                             logger.warning(
-                                "Telegram message from %s blocked by pipeline: %s",
+                                "Pipeline blocked Telegram message from %s: %s",
                                 user_id, pipeline_result.block_reason,
                             )
-                            self._stats["messages_blocked"] += 1
                             if chat_id:
                                 await self._notify_user_blocked(chat_id, pipeline_result.block_reason)
-                            if "message" in update:
-                                update["message"]["text"] = f"[BLOCKED BY AGENTSHROUD: {pipeline_result.block_reason}]"
-                            elif "edited_message" in update:
-                                update["edited_message"]["text"] = f"[BLOCKED BY AGENTSHROUD: {pipeline_result.block_reason}]"
-                            filtered_updates.append(update)
                             continue
-                    # Use the sanitized version from the pipeline going forward
-                    if pipeline_result.sanitized_message != text:
+                    # Apply sanitized text from pipeline (PII redactions, etc.)
+                    sanitized_text = pipeline_result.sanitized_message
+                    if sanitized_text != text:
+                        self._stats["messages_sanitized"] += 1
                         if "message" in update:
-                            update["message"]["text"] = pipeline_result.sanitized_message
+                            update["message"]["text"] = sanitized_text
+                            update["message"]["_agentshroud_pii_redacted"] = True
+                            update["message"]["_agentshroud_redactions"] = pipeline_result.pii_redactions
                         elif "edited_message" in update:
-                            update["edited_message"]["text"] = pipeline_result.sanitized_message
-                        text = pipeline_result.sanitized_message
-                except Exception as e:
-                    logger.error("Inbound pipeline error for telegram message: %s", e)
+                            update["edited_message"]["text"] = sanitized_text
+                            update["edited_message"]["_agentshroud_pii_redacted"] = True
+                except Exception as exc:
+                    logger.error("Pipeline error for Telegram message from %s: %s", user_id, exc)
                     if not is_owner:
-                        # Fail closed for non-owner messages
+                        # Fail-closed: drop non-owner message on pipeline error
                         self._stats["messages_blocked"] += 1
                         if chat_id:
                             await self._notify_user_blocked(chat_id, "Security pipeline error")
-                        if "message" in update:
-                            update["message"]["text"] = "[BLOCKED BY AGENTSHROUD: pipeline error]"
-                        elif "edited_message" in update:
-                            update["edited_message"]["text"] = "[BLOCKED BY AGENTSHROUD: pipeline error]"
-                        filtered_updates.append(update)
                         continue
-
-            # ── PII sanitization ──────────────────────────────────────────────
-            if self.sanitizer and text:
+                    logger.warning("Pipeline error on owner message — allowing through")
+            elif self.sanitizer and text:
+                # Fallback: direct PII sanitization when pipeline is unavailable
                 try:
                     sanitize_result = await self.sanitizer.sanitize(text)
                     if sanitize_result.entity_types_found:
@@ -452,6 +370,28 @@ class TelegramAPIProxy:
 
         response_data["result"] = filtered_updates
         return response_data
+
+    async def _send_rate_limit_notice(self, chat_id: int) -> None:
+        """Notify a collaborator they have exceeded the hourly rate limit."""
+        try:
+            if self._bot_token:
+                msg = (
+                    "\U0001f6ab You have reached the collaborator message limit "
+                    "\\(20 messages/hour\\)\\. Please try again later\\."
+                )
+                url = f"{TELEGRAM_API_BASE}/bot{self._bot_token}/sendMessage"
+                req = urllib.request.Request(
+                    url,
+                    data=json.dumps({"chat_id": chat_id, "text": msg, "parse_mode": "MarkdownV2"}).encode(),
+                    headers={"Content-Type": "application/json"},
+                )
+                loop = asyncio.get_event_loop()
+                await loop.run_in_executor(
+                    None,
+                    lambda: urllib.request.urlopen(req, timeout=5, context=self._ssl_context),
+                )
+        except Exception as e:
+            logger.warning("Failed to send rate limit notice to chat %s: %s", chat_id, e)
 
     async def _send_disclosure(self, chat_id: int) -> None:
         """Send the one-time collaborator disclosure notice."""
@@ -502,22 +442,6 @@ class TelegramAPIProxy:
             logger.warning("Failed to send command-blocked notice to chat %s: %s", chat_id, e)
 
 
-    @staticmethod
-    def _sanitize_reason(reason: str) -> str:
-        """Strip internal module names, file paths, and class references from reason text."""
-        sanitized = reason
-        # Remove Python module paths (e.g. gateway.security.foo_bar)
-        sanitized = re.sub(r'[a-zA-Z_][a-zA-Z0-9_]*(?:\.[a-zA-Z_][a-zA-Z0-9_]*){2,}', '[internal]', sanitized)
-        # Remove file paths (e.g. /app/gateway/... or /home/...)
-        sanitized = re.sub(r'/[a-zA-Z0-9_./-]{3,}\.(?:py|yaml|yml|json|toml|cfg)', '[path]', sanitized)
-        # Remove class::method references
-        sanitized = re.sub(r'[A-Z][a-zA-Z0-9]+::[a-zA-Z_]\w+', '[internal]', sanitized)
-        # Remove traceback-style references  
-        sanitized = re.sub(r'File "[^"]+",\s*line \d+', '[internal]', sanitized)
-        # Collapse multiple [internal] markers
-        sanitized = re.sub(r'(\[internal\]\s*)+', '[internal] ', sanitized).strip()
-        return sanitized
-
     async def _notify_user_blocked(self, chat_id: int, reason: str):
         """Send a user-friendly notification when a message is blocked."""
         try:
@@ -540,7 +464,7 @@ class TelegramAPIProxy:
             notice = (
                 "\u26a0\ufe0f *Message Blocked*\n\n"
                 f"{user_msg}\n\n"
-                f"_Reason: {self._sanitize_reason(reason)}_\n\n"
+                f"_Reason: {reason}_\n\n"
                 "If this is an error, contact the system owner."
             )
             if self._bot_token:

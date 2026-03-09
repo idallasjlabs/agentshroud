@@ -28,19 +28,28 @@ class TestEncodingDetector:
     def test_zero_width_stripped(self):
         r = self.det.analyze("pass\u200bword")
         assert r.detected
-        assert "password" in r.cleaned_text
+        assert r.cleaned_text == "password"
 
     def test_homoglyph_replaced(self):
         r = self.det.analyze("p\u0430ssword")
         assert r.detected
-        assert "password" in r.cleaned_text
+        assert r.cleaned_text == "password"
 
     def test_nested_encoding(self):
-        inner = base64.b64encode(b"secret password value for testing").decode()
+        # Use ≥18-byte payload so both inner and outer are ≥24 chars (new threshold).
+        inner = base64.b64encode(b"this is a nested secret payload").decode()
         outer = base64.b64encode(inner.encode()).decode()
         r = self.det.analyze(outer)
         assert r.detected
-        assert "secret" in r.cleaned_text
+        assert "nested" in r.cleaned_text or "secret" in r.cleaned_text
+
+    def test_short_base64_not_flagged(self):
+        # Strings < 24 base64 chars should not trigger after threshold increase.
+        short = base64.b64encode(b"secret").decode()  # 8 chars
+        assert len(short) < 24
+        r = self.det.analyze(f"Value: {short}")
+        # base64 detection should not fire on sub-threshold length
+        assert not any(l.encoding == "base64" for l in r.layers)
 
     def test_empty_input(self):
         assert not self.det.analyze("").detected
