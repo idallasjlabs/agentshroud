@@ -87,6 +87,7 @@ class EgressApprovalQueue:
         "api.discord.com",
         "api.twitter.com",
         "api.x.com",
+        "1password.com",
         "pypi.org",
         "files.pythonhosted.org",
         "registry.npmjs.org",
@@ -102,7 +103,11 @@ class EgressApprovalQueue:
         ".stream", ".science", ".work", ".party", ".webcam", ".win"
     }
     
-    def __init__(self, rules_file: str = "/app/data/egress_rules.json", default_timeout: int = 30):
+    def __init__(
+        self,
+        rules_file: str = "/tmp/agentshroud/egress_rules.json",
+        default_timeout: int = 30,
+    ):
         """
         Initialize the approval queue.
         
@@ -119,12 +124,24 @@ class EgressApprovalQueue:
         self._once_approved: set = set()  # Track one-time approved request IDs
         self._permanent_rules: Dict[str, EgressRule] = {}
         self._session_rules: Dict[str, EgressRule] = {}
+        self._emergency_block_all: bool = False
+        self._emergency_reason: str = ""
+        self._event_bus = None
         
         # Ensure rules file directory exists
-        self.rules_file.parent.mkdir(parents=True, exist_ok=True)
+        try:
+            self.rules_file.parent.mkdir(parents=True, exist_ok=True)
+        except Exception:
+            # Fallback for restricted environments/tests where /app is unwritable
+            self.rules_file = Path("/tmp/agentshroud/egress_rules.json")
+            self.rules_file.parent.mkdir(parents=True, exist_ok=True)
         
         # Load existing rules
         self._load_rules()
+
+    def set_event_bus(self, event_bus) -> None:
+        """Set optional event bus for approval telemetry."""
+        self._event_bus = event_bus
     
     def _assess_risk(self, domain: str, port: int) -> RiskLevel:
         """
@@ -160,6 +177,10 @@ class EgressApprovalQueue:
         
         # Default to yellow for unknown domains on standard ports
         return RiskLevel.YELLOW
+
+    def assess_risk(self, domain: str, port: int) -> str:
+        """Public risk assessment helper for management/API surfaces."""
+        return self._assess_risk(domain, port).value
     
     def _load_rules(self):
         """Load rules from persistent storage."""
@@ -249,6 +270,23 @@ class EgressApprovalQueue:
             ApprovalResult indicating if request was approved, denied, or timed out
         """
         async with self._lock:
+            if self._emergency_block_all:
+                logger.warning(
+                    "Egress denied by emergency block-all: %s:%s (%s)",
+                    domain, port, self._emergency_reason or "no reason",
+                )
+                if self._event_bus is not None:
+                    from gateway.ingest_api.event_bus import make_event
+                    await self._event_bus.emit(
+                        make_event(
+                            "egress_approval_denied",
+                            f"Egress denied by emergency block-all: {domain}:{port}",
+                            {"domain": domain, "port": port, "agent_id": agent_id},
+                            "critical",
+                        )
+                    )
+                return ApprovalResult.DENIED
+
             # Check existing rules first
             existing_rule = self._check_existing_rule(domain)
             if existing_rule:
@@ -281,6 +319,23 @@ class EgressApprovalQueue:
                 f"Egress approval requested: {domain}:{port} "
                 f"(risk={risk_level.value}, agent={agent_id}, tool={tool_name})"
             )
+            if self._event_bus is not None:
+                from gateway.ingest_api.event_bus import make_event
+                await self._event_bus.emit(
+                    make_event(
+                        "egress_approval_requested",
+                        f"Egress approval requested: {domain}:{port}",
+                        {
+                            "request_id": request_id,
+                            "domain": domain,
+                            "port": port,
+                            "agent_id": agent_id,
+                            "tool_name": tool_name,
+                            "risk_level": risk_level.value,
+                        },
+                        "warning",
+                    )
+                )
         
         # Wait for approval or timeout
         try:
@@ -351,6 +406,22 @@ class EgressApprovalQueue:
                 self._pending_requests.pop(request_id)
             
             logger.info(f"Egress approved: {request.domain}:{request.port} (mode={mode.value})")
+            if self._event_bus is not None:
+                from gateway.ingest_api.event_bus import make_event
+                await self._event_bus.emit(
+                    make_event(
+                        "egress_approval_decision",
+                        f"Egress approved: {request.domain}:{request.port}",
+                        {
+                            "request_id": request_id,
+                            "domain": request.domain,
+                            "port": request.port,
+                            "mode": mode.value,
+                            "decision": "approved",
+                        },
+                        "info",
+                    )
+                )
             return True
     
     async def deny(self, request_id: str, mode: ApprovalMode = ApprovalMode.ONCE) -> bool:
@@ -391,6 +462,22 @@ class EgressApprovalQueue:
                 self._pending_requests.pop(request_id)
             
             logger.info(f"Egress denied: {request.domain}:{request.port} (mode={mode.value})")
+            if self._event_bus is not None:
+                from gateway.ingest_api.event_bus import make_event
+                await self._event_bus.emit(
+                    make_event(
+                        "egress_approval_decision",
+                        f"Egress denied: {request.domain}:{request.port}",
+                        {
+                            "request_id": request_id,
+                            "domain": request.domain,
+                            "port": request.port,
+                            "mode": mode.value,
+                            "decision": "denied",
+                        },
+                        "warning",
+                    )
+                )
             return True
     
     async def get_pending_requests(self) -> List[Dict]:
@@ -494,6 +581,20 @@ class EgressApprovalQueue:
                 logger.info(f"Egress rule removed: {domain}")
             
             return removed
+
+    async def set_emergency_block_all(self, enabled: bool, reason: str = "") -> None:
+        """Enable/disable emergency global egress deny."""
+        async with self._lock:
+            self._emergency_block_all = enabled
+            self._emergency_reason = reason or ""
+
+    async def get_emergency_status(self) -> Dict[str, str | bool]:
+        """Get emergency block-all state."""
+        async with self._lock:
+            return {
+                "enabled": self._emergency_block_all,
+                "reason": self._emergency_reason,
+            }
     
     async def cleanup_expired(self):
         """Remove expired session rules and timed-out requests."""

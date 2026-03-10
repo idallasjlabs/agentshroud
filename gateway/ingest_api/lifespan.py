@@ -2,6 +2,7 @@
 """Application lifespan management for the AgentShroud Gateway"""
 
 import logging
+import asyncio
 import time
 import os
 import subprocess
@@ -44,6 +45,23 @@ if TYPE_CHECKING:
 logger = logging.getLogger(__name__)
 
 
+class _DropInvalidHTTPRequestFilter(logging.Filter):
+    """Suppress noisy uvicorn warning spam for malformed probe traffic."""
+
+    def filter(self, record: logging.LogRecord) -> bool:
+        msg = record.getMessage()
+        return "Invalid HTTP request received." not in msg
+
+
+def _install_uvicorn_warning_filter() -> None:
+    """Install warning filter once for uvicorn logger."""
+    uvicorn_logger = logging.getLogger("uvicorn.error")
+    for existing in uvicorn_logger.filters:
+        if isinstance(existing, _DropInvalidHTTPRequestFilter):
+            return
+    uvicorn_logger.addFilter(_DropInvalidHTTPRequestFilter())
+
+
 def _read_secret(name: str, default: str = "") -> str:
     """Read a Docker secret from /run/secrets/<name>."""
     try:
@@ -59,6 +77,9 @@ async def lifespan(app: FastAPI):
     # === STARTUP ===
     # Make app_state accessible via request.app.state for route files
     app.state.app_state = app_state
+    # Suppress known benign Presidio registry-language warnings (es/it/pl recognizers on en registry).
+    logging.getLogger("presidio-analyzer").setLevel(logging.ERROR)
+    _install_uvicorn_warning_filter()
     logger.info("=" * 80)
     logger.info("AgentShroud Gateway starting up...")
 
@@ -262,6 +283,12 @@ async def lifespan(app: FastAPI):
         )
         app_state.egress_filter = EgressFilter(default_policy=default_policy)
         logger.info(f"EgressFilter initialized (mode: {egress_mode}, deny_all: {default_policy.deny_all})")
+        from ..security.egress_approval import EgressApprovalQueue
+        app_state.egress_approval_queue = EgressApprovalQueue(
+            default_timeout=int(os.environ.get("AGENTSHROUD_EGRESS_TIMEOUT", "30"))
+        )
+        app_state.egress_filter.set_approval_queue(app_state.egress_approval_queue)
+        logger.info("EgressApprovalQueue initialized and wired")
 
         # Wire per-bot egress policies from BotConfig.egress_domains
         for bot_id, bot in app_state.config.bots.items():
@@ -620,6 +647,13 @@ async def lifespan(app: FastAPI):
         logger.error(f"✗ Trivy: {e}")
         app_state.trivy_scanner = None
 
+    # -- OpenSCAP: compliance scanning --
+    app_state.openscap_available = bool(shutil.which("oscap"))
+    if app_state.openscap_available:
+        logger.info("✓ OpenSCAP scanner (oscap)")
+    else:
+        logger.warning("⚠ OpenSCAP scanner not found (oscap)")
+
     # -- Falco: runtime security monitoring (reads JSON alert files) --
     try:
         from ..security import falco_monitor as _falco_mod
@@ -677,6 +711,15 @@ async def lifespan(app: FastAPI):
     # Initialize event bus
     app_state.event_bus = EventBus()
     logger.info("Event bus initialized")
+    try:
+        if getattr(app_state, "egress_filter", None):
+            app_state.egress_filter.set_event_bus(app_state.event_bus)
+        if getattr(app_state, "egress_approval_queue", None):
+            app_state.egress_approval_queue.set_event_bus(app_state.event_bus)
+        if getattr(app_state, "mcp_proxy", None) and hasattr(app_state.mcp_proxy, "set_event_bus"):
+            app_state.mcp_proxy.set_event_bus(app_state.event_bus)
+    except Exception as e:
+        logger.warning("Failed to wire egress event telemetry: %s", e)
 
     # Initialize HTTP CONNECT proxy (port 8181)
     # Activated in the FINAL PR by setting HTTP_PROXY on the bot container.
@@ -730,7 +773,7 @@ async def lifespan(app: FastAPI):
             except Exception as exc:
                 logger.error("AuditChain heartbeat error: %s", exc)
 
-    _asyncio.create_task(_audit_chain_heartbeat())
+    app_state._audit_chain_heartbeat_task = _asyncio.create_task(_audit_chain_heartbeat())
     logger.info("✓ AuditChain verification heartbeat started (60s interval)")
 
     # Record start time
@@ -750,6 +793,19 @@ async def lifespan(app: FastAPI):
     # Stop HTTP CONNECT proxy
     if getattr(app_state, "http_proxy", None):
         await app_state.http_proxy.stop()
+
+    # Stop middleware background tasks
+    if getattr(app_state, "middleware_manager", None):
+        await app_state.middleware_manager.close()
+
+    # Stop audit-chain heartbeat task
+    heartbeat_task = getattr(app_state, "_audit_chain_heartbeat_task", None)
+    if heartbeat_task and not heartbeat_task.done():
+        heartbeat_task.cancel()
+        try:
+            await heartbeat_task
+        except asyncio.CancelledError:
+            pass
 
     # Close ledger
 
@@ -771,5 +827,3 @@ async def lifespan(app: FastAPI):
     await app_state.ledger.close()
 
     logger.info("Shutdown complete")
-
-

@@ -43,10 +43,31 @@ else
     echo "[startup] OpenAI API key not configured (optional)"
 fi
 
-# Load Claude OAuth token directly from secret file (preferred over 1Password op-proxy)
-if [ -f "/run/secrets/anthropic_oauth_token" ] && [ -s "/run/secrets/anthropic_oauth_token" ]; then
-    export ANTHROPIC_OAUTH_TOKEN="$(cat /run/secrets/anthropic_oauth_token)"
-    echo "[startup] Loaded Claude OAuth token (from secret file)"
+# Export Google Gemini API key from secret file (optional)
+if [ -f "/run/secrets/google_api_key" ] && [ -s "/run/secrets/google_api_key" ]; then
+    export GOOGLE_API_KEY="$(cat /run/secrets/google_api_key)"
+    echo "[startup] Loaded Google API key"
+else
+    echo "[startup] Google API key not configured (optional)"
+fi
+
+_LOCAL_ONLY_MODEL=false
+_MODEL_MODE="$(echo "${AGENTSHROUD_MODEL_MODE:-local}" | tr '[:upper:]' '[:lower:]')"
+if [[ "${_MODEL_MODE}" != "cloud" ]]; then
+    _LOCAL_ONLY_MODEL=true
+fi
+if [[ "${OPENCLAW_MAIN_MODEL:-}" == ollama/* ]]; then
+    _LOCAL_ONLY_MODEL=true
+fi
+
+# Load Claude OAuth token only when running non-local model backends.
+if ! $_LOCAL_ONLY_MODEL; then
+    if [ -f "/run/secrets/anthropic_oauth_token" ] && [ -s "/run/secrets/anthropic_oauth_token" ]; then
+        export ANTHROPIC_OAUTH_TOKEN="$(cat /run/secrets/anthropic_oauth_token)"
+        echo "[startup] Loaded Claude OAuth token (from secret file)"
+    fi
+else
+    echo "[startup] Local Ollama model selected — skipping Claude token load"
 fi
 
 # FINAL: Load secrets via gateway op-proxy (bot has no direct 1Password access).
@@ -91,18 +112,22 @@ op_proxy_read_with_retry() {
 if [ -n "${GATEWAY_AUTH_TOKEN:-}" ] && [ -n "${GATEWAY_OP_PROXY_URL:-}" ]; then
     echo "[startup] Loading secrets via gateway op-proxy (${GATEWAY_OP_PROXY_URL})"
 
-    # Load Claude OAuth token via op-proxy only if not already loaded from secret file
-    if [ -z "${ANTHROPIC_OAUTH_TOKEN:-}" ]; then
-        ANTHROPIC_OAUTH_TOKEN="$(op_proxy_read_with_retry "Claude OAuth token" \
-            "op://Agent Shroud Bot Credentials/AgentShroud - Anthropic Claude OAuth Token/claude oath token")" || true
-        if [ -n "$ANTHROPIC_OAUTH_TOKEN" ]; then
-            export ANTHROPIC_OAUTH_TOKEN
-            echo "[startup] ✓ Loaded Claude OAuth token (via op-proxy)"
+    # Load Claude OAuth token via op-proxy only when not pinned to local Ollama models.
+    if ! $_LOCAL_ONLY_MODEL; then
+        if [ -z "${ANTHROPIC_OAUTH_TOKEN:-}" ]; then
+            ANTHROPIC_OAUTH_TOKEN="$(op_proxy_read_with_retry "Claude OAuth token" \
+                "op://Agent Shroud Bot Credentials/AgentShroud - Anthropic Claude OAuth Token/claude oath token")" || true
+            if [ -n "$ANTHROPIC_OAUTH_TOKEN" ]; then
+                export ANTHROPIC_OAUTH_TOKEN
+                echo "[startup] ✓ Loaded Claude OAuth token (via op-proxy)"
+            else
+                echo "[startup] ⚠ Could not load Claude OAuth token after retries"
+            fi
         else
-            echo "[startup] ⚠ Could not load Claude OAuth token after retries"
+            echo "[startup] ✓ Claude OAuth token already loaded (from secret file)"
         fi
     else
-        echo "[startup] ✓ Claude OAuth token already loaded (from secret file)"
+        echo "[startup] Local Ollama model selected — skipping Claude op-proxy fetch"
     fi
 
     # Load Brave Search API key
@@ -176,7 +201,8 @@ fi
 
 # Start AgentShroud gateway (powered by OpenClaw CLI)
 echo "[startup] Starting AgentShroud gateway..."
-openclaw gateway --allow-unconfigured --bind lan &
+OPENCLAW_BIND_MODE="${OPENCLAW_GATEWAY_BIND:-loopback}"
+openclaw gateway --allow-unconfigured --bind "${OPENCLAW_BIND_MODE}" &
 OPENCLAW_PID=$!
 
 # Telegram notification helpers — ALL traffic routes through AgentShroud gateway
@@ -216,7 +242,7 @@ _telegram_send() {
 
 # Instance identity for notifications
 _INSTANCE_LABEL="${INSTANCE_NAME:-$(hostname -s)}"
-_BOT_NAME="${OPENCLAW_BOT_NAME:-agentshroud_bot}"
+_BOT_NAME="${OPENCLAW_BOT_NAME:-agentshroud-bot}"
 
 # Forward TERM/INT to openclaw, backup memory, send shutdown notification
 trap '
@@ -235,7 +261,7 @@ trap '
         echo "[startup] ✓ Memory backed up before shutdown"
     fi
     echo "[startup] Sending Telegram notification..."
-    _telegram_send "🔴 AgentShroud shutting down — ${_BOT_NAME} on ${_INSTANCE_LABEL}" \
+    _telegram_send "🔴 AgentShroud shutting down" \
         && echo "[startup] ✓ Sent Telegram shutdown notification" \
         || echo "[startup] ⚠ Could not send Telegram shutdown notification"
     kill $OPENCLAW_PID 2>/dev/null
@@ -254,7 +280,7 @@ trap '
     # Give Telegram provider time to connect after gateway is ready
     sleep 5
 
-    _telegram_send "🛡️ AgentShroud online — ${_BOT_NAME} on ${_INSTANCE_LABEL}" \
+    _telegram_send "🛡️ AgentShroud online" \
         && echo "[startup] ✓ Sent Telegram startup notification" \
         || echo "[startup] ⚠ Could not send Telegram startup notification"
 ) &

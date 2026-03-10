@@ -76,6 +76,7 @@ proxy:
     - "*.google.com"
     - "*.brave.com"
     - "*.search.brave.com"
+    - "host.docker.internal"
     # SSH relay targets (CONNECT proxy tunnels SSH for the bot)
     - host.docker.internal
     - marvin
@@ -102,7 +103,7 @@ container:
 agentshroud:
   # AgentShroud-specific settings
   version: "main"
-  default_model: "openai/gpt-4o"  # Updated from gpt-4
+  default_model: "ollama/phi4:14b"
   gateway_bind: "loopback"
   gateway_port: 18789
   ui_port: 18790
