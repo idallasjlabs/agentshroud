@@ -21,6 +21,8 @@ from gateway.ingest_api.routes.dashboard import (
     _create_ws_token,
     _parse_collaborator_log_dirs,
     _load_contributor_logs,
+    _build_activity_entries_from_contributor_logs,
+    _build_activity_summary_from_contributor_logs,
     _build_egress_live_snapshot,
 )
 
@@ -90,9 +92,15 @@ async def test_collaborators_endpoint_reads_configured_contributor_sources(clien
     dir_b = tmp_path / "contributors-b"
     dir_a.mkdir()
     dir_b.mkdir()
-    (dir_a / "2026-03-09-111.md").write_text("older")
-    (dir_a / "2026-03-10-111.md").write_text("newer")
-    (dir_b / "2026-03-10-222.md").write_text("peer")
+    (dir_a / "2026-03-09-111.md").write_text(
+        "- 2026-03-09T12:00:00+00:00 | alice (111) | telegram | older\n"
+    )
+    (dir_a / "2026-03-10-111.md").write_text(
+        "- 2026-03-10T12:00:00+00:00 | alice (111) | telegram | newer\n"
+    )
+    (dir_b / "2026-03-10-222.md").write_text(
+        "- 2026-03-10T12:10:00+00:00 | bob (222) | telegram | peer\n"
+    )
     monkeypatch.setenv("AGENTSHROUD_CONTRIBUTOR_LOG_DIRS", f"{dir_a},{dir_b}")
 
     old_tracker = getattr(app_state, "collaborator_tracker", None)
@@ -125,6 +133,11 @@ async def test_collaborators_endpoint_reads_configured_contributor_sources(clien
         ]
         assert data["contributor_logs"][0]["source_dir"] == str(dir_a)
         assert data["contributor_logs"][-1]["source_dir"] == str(dir_b)
+        assert data["activity_source"] == "contributor_logs_fallback"
+        assert len(data["activity"]) == 3
+        assert data["activity"][0]["username"] == "bob"
+        assert data["summary"]["total_messages"] == 3
+        assert data["summary"]["unique_users"] == 2
     finally:
         app_state.collaborator_tracker = old_tracker
 
@@ -268,6 +281,69 @@ def test_load_contributor_logs_reads_multiple_dirs_and_dedupes(tmp_path):
     assert logs[0]["content"] == "alice"
     assert logs[0]["source_dir"] == str(dir_a)
     assert logs[1]["source_dir"] == str(dir_b)
+
+
+def test_build_activity_summary_from_contributor_logs():
+    logs = [
+        {
+            "filename": "2026-03-10-111.md",
+            "content": (
+                "- 2026-03-10T16:33:22+00:00 | alice (111) | telegram | hello\n"
+                "- 2026-03-10T16:34:22+00:00 | bob (222) | telegram | hi\n"
+            ),
+        },
+        {
+            "filename": "2026-03-10-222.md",
+            "content": "- 2026-03-10T16:35:22+00:00 | alice (111) | telegram | follow-up\n",
+        },
+    ]
+    summary = _build_activity_summary_from_contributor_logs(logs)
+    assert summary["total_messages"] == 3
+    assert summary["unique_users"] == 2
+    assert summary["last_activity"] is not None
+
+
+def test_build_activity_entries_from_contributor_logs():
+    logs = [
+        {
+            "filename": "2026-03-10-111.md",
+            "content": (
+                "- 2026-03-10T16:33:22+00:00 | alice (111) | telegram | hello there\n"
+                "- 2026-03-10T16:34:22+00:00 | bob (222) | telegram | hi\n"
+            ),
+        }
+    ]
+    entries = _build_activity_entries_from_contributor_logs(logs, limit=10)
+    assert len(entries) == 2
+    assert entries[0]["username"] == "bob"
+    assert entries[0]["user_id"] == "222"
+    assert entries[1]["message_preview"] == "hello there"
+
+
+def test_build_activity_entries_from_contributor_logs_accepts_non_bullet_and_zulu_time():
+    logs = [
+        {
+            "filename": "2026-03-10-raw.md",
+            "content": "2026-03-10T16:35:22Z | carol (333) | telegram | weather | details",
+        }
+    ]
+    entries = _build_activity_entries_from_contributor_logs(logs, limit=10)
+    assert len(entries) == 1
+    assert entries[0]["username"] == "carol"
+    assert entries[0]["user_id"] == "333"
+    assert entries[0]["message_preview"] == "weather | details"
+
+
+def test_build_activity_summary_from_contributor_logs_accepts_non_bullet_lines():
+    logs = [
+        {
+            "filename": "2026-03-10-raw.md",
+            "content": "2026-03-10T16:35:22Z | carol (333) | telegram | hello",
+        }
+    ]
+    summary = _build_activity_summary_from_contributor_logs(logs)
+    assert summary["total_messages"] == 1
+    assert summary["unique_users"] == 1
 
 
 @pytest.mark.asyncio
