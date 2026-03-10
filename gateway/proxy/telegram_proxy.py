@@ -124,7 +124,7 @@ class TelegramAPIProxy:
     @staticmethod
     def _strip_json_fence(text: str) -> str:
         """Strip optional markdown json fences around model output."""
-        candidate = (text or "").strip()
+        candidate = normalize_input(text or "").strip()
         if candidate.startswith("```"):
             candidate = re.sub(r"^```(?:json)?\s*", "", candidate, flags=re.IGNORECASE)
             candidate = re.sub(r"\s*```$", "", candidate)
