@@ -178,6 +178,9 @@ class TelegramAPIProxy:
         """Extract first outbound web target (URL or bare domain) for egress preflight."""
         if not text:
             return None
+        scheme_match = re.search(r"\b([a-z][a-z0-9+.\-]{1,20})://", text, flags=re.IGNORECASE)
+        if scheme_match and scheme_match.group(1).lower() not in {"http", "https"}:
+            return None
         url_match = re.search(r"https?://[^\s<>()\"']+", text, flags=re.IGNORECASE)
         if url_match:
             url = url_match.group(0).rstrip(".,;:!?)]}>'\"")
@@ -655,6 +658,9 @@ class TelegramAPIProxy:
         if not url:
             return False
         parsed = urlparse(url if "://" in url else f"https://{url}")
+        scheme = (parsed.scheme or "https").lower()
+        if scheme not in {"http", "https"}:
+            return False
         raw_domain = (parsed.hostname or "").strip().lower()
         if ".." in raw_domain:
             return False
@@ -696,7 +702,7 @@ class TelegramAPIProxy:
             asyncio.create_task(
                 _egress_filter.check_async(
                     agent_id=_agent_id,
-                    destination=f"{parsed.scheme or 'https'}://{domain}",
+                    destination=f"{scheme}://{domain}",
                     port=_port,
                     tool_name="web_fetch",
                 )
