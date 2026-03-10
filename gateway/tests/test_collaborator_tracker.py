@@ -46,6 +46,12 @@ def test_records_known_collaborator(tracker, log_file):
     assert "timestamp" in entry
 
 
+def test_username_is_normalized_for_log_safety(tracker, log_file):
+    tracker.record_activity("7614658040", "Ali|ce (ops)", "Hello", "telegram")
+    entry = json.loads(log_file.read_text().strip())
+    assert entry["username"] == "Ali/ce [ops]"
+
+
 def test_owner_is_never_recorded(tracker, log_file):
     tracker.record_activity("1111111", "Owner", "secret command", "telegram")
     assert not log_file.exists() or log_file.read_text().strip() == ""
@@ -184,3 +190,11 @@ def test_record_activity_mirror_is_single_line_for_multiline_message(tracker, lo
     assert "Need weather update" in content
     # one markdown log line + trailing newline
     assert content.count("\n") == 1
+
+
+def test_record_activity_mirror_handles_delimiter_chars_in_username(tracker, log_file):
+    tracker.record_activity("7614658040", "Ali|ce (ops)", "Need update", "telegram")
+    contributor_dir = log_file.parent / "contributors"
+    file_path = next(iter(contributor_dir.glob("*-7614658040.md")))
+    content = file_path.read_text()
+    assert "Ali/ce [ops] (7614658040)" in content

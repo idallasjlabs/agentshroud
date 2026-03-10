@@ -120,7 +120,7 @@ class CollaboratorActivityTracker:
         entry = {
             "timestamp": time.time(),
             "user_id": uid,
-            "username": username or "unknown",
+            "username": self._normalize_username(username),
             "message_preview": normalized_preview[:_PREVIEW_MAX],
             "source": source,
         }
@@ -168,6 +168,16 @@ class CollaboratorActivityTracker:
         # Collapse multiline/control characters to prevent malformed contributor logs.
         value = value.replace("\r", " ").replace("\n", " ").replace("\t", " ")
         value = " ".join(value.split())
+        return value
+
+    @staticmethod
+    def _normalize_username(username: str) -> str:
+        """Normalize username for safe contributor-log tokenization."""
+        value = str(username or "unknown")
+        value = value.replace("\r", " ").replace("\n", " ").replace("\t", " ")
+        value = " ".join(value.split()) or "unknown"
+        # Contributor logs use pipe + "(uid)" delimiters; keep username token stable.
+        value = value.replace("|", "/").replace("(", "[").replace(")", "]")
         return value
 
     def get_activity(self, since: float = 0, limit: int = 100) -> list[dict]:
