@@ -1943,6 +1943,7 @@ async def soc_report(auth: AuthRequired, limit: int = 200):
             pass
 
     collaborator_activity = {
+        "source": "tracker",
         "summary": {"total_messages": 0, "unique_users": 0, "last_activity": None, "by_user": {}},
         "recent": [],
     }
@@ -1950,8 +1951,50 @@ async def soc_report(auth: AuthRequired, limit: int = 200):
     if tracker:
         try:
             collaborator_activity = {
+                "source": "tracker",
                 "summary": tracker.get_activity_summary(),
                 "recent": tracker.get_activity(limit=min(limit, 100)),
+            }
+        except Exception:
+            pass
+        if (
+            int(collaborator_activity.get("summary", {}).get("total_messages", 0) or 0) == 0
+            and not collaborator_activity.get("recent")
+        ):
+            try:
+                from gateway.ingest_api.routes.dashboard import (
+                    _parse_collaborator_log_dirs,
+                    _load_contributor_logs,
+                    _build_activity_summary_from_contributor_logs,
+                    _build_activity_entries_from_contributor_logs,
+                )
+
+                logs = _load_contributor_logs(_parse_collaborator_log_dirs())
+                collaborator_activity = {
+                    "source": "contributor_logs_fallback",
+                    "summary": _build_activity_summary_from_contributor_logs(logs),
+                    "recent": _build_activity_entries_from_contributor_logs(
+                        logs, limit=min(limit, 100)
+                    ),
+                }
+            except Exception:
+                pass
+    else:
+        try:
+            from gateway.ingest_api.routes.dashboard import (
+                _parse_collaborator_log_dirs,
+                _load_contributor_logs,
+                _build_activity_summary_from_contributor_logs,
+                _build_activity_entries_from_contributor_logs,
+            )
+
+            logs = _load_contributor_logs(_parse_collaborator_log_dirs())
+            collaborator_activity = {
+                "source": "contributor_logs_fallback",
+                "summary": _build_activity_summary_from_contributor_logs(logs),
+                "recent": _build_activity_entries_from_contributor_logs(
+                    logs, limit=min(limit, 100)
+                ),
             }
         except Exception:
             pass

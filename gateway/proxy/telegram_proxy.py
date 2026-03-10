@@ -211,7 +211,7 @@ class TelegramAPIProxy:
         # Telegram clients before final message sanitization.
         if not is_system and method in ("sendMessageDraft", "editMessageDraft"):
             return {"ok": True, "result": {"suppressed": True, "method": method}}
-        if is_system and method in ("sendMessage", "editMessageText") and body:
+        if method in ("sendMessage", "editMessageText") and body:
             if self._suppress_duplicate_system_notice(body, content_type):
                 return {"ok": True, "result": {"suppressed": True, "method": method}}
 
