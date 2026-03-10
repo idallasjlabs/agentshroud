@@ -178,13 +178,19 @@ class TelegramAPIProxy:
         """Extract first outbound web target (URL or bare domain) for egress preflight."""
         if not text:
             return None
-        scheme_match = re.search(r"\b([a-z][a-z0-9+.\-]{1,20})://", text, flags=re.IGNORECASE)
-        if scheme_match and scheme_match.group(1).lower() not in {"http", "https"}:
-            return None
         url_match = re.search(r"https?://[^\s<>()\"']+", text, flags=re.IGNORECASE)
         if url_match:
             url = url_match.group(0).rstrip(".,;:!?)]}>'\"")
             return url or None
+        # If an explicit URL scheme is present but not HTTP(S), do not attempt
+        # bare-domain fallback extraction from that text.
+        generic_url_match = re.search(
+            r"\b([a-z][a-z0-9+.\-]{1,20})://[^\s<>()\"']+",
+            text,
+            flags=re.IGNORECASE,
+        )
+        if generic_url_match:
+            return None
 
         # Support bare domains like "weather.com/today" so collaborator requests
         # still trigger interactive egress approval before model/tool execution.
