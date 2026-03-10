@@ -13,6 +13,8 @@ WebSocket broadcast for real-time notifications.
 
 import asyncio
 import logging
+import os
+import json
 import uuid
 from datetime import datetime, timedelta
 from typing import Any
@@ -45,6 +47,10 @@ class ApprovalQueue:
         self.pending: dict[str, ApprovalQueueItem] = {}
         self.connected_clients: set[WebSocket] = set()
         self._lock = asyncio.Lock()
+        self._audit_path = os.environ.get(
+            "AGENTSHROUD_APPROVAL_AUDIT_PATH",
+            "/app/data/approval_queue_history.jsonl",
+        )
 
         logger.info(
             f"Approval queue initialized (timeout={config.timeout_seconds}s, "
@@ -92,6 +98,17 @@ class ApprovalQueue:
                 f"Approval request submitted: {request_id} "
                 f"({request.action_type} from {request.agent_id})"
             )
+            self._append_audit_event(
+                {
+                    "event": "submitted",
+                    "request_id": request_id,
+                    "action_type": request.action_type,
+                    "agent_id": request.agent_id,
+                    "submitted_at": submitted_at,
+                    "expires_at": expires_at,
+                    "status": item.status,
+                }
+            )
 
             # Broadcast to WebSocket clients
             await self.broadcast({"type": "new_request", "data": item.model_dump()})
@@ -137,6 +154,16 @@ class ApprovalQueue:
             logger.info(
                 f"Approval request {request_id} {item.status} "
                 f"(reason: {reason or 'none'})"
+            )
+            self._append_audit_event(
+                {
+                    "event": "decided",
+                    "request_id": request_id,
+                    "action_type": item.action_type,
+                    "agent_id": item.agent_id,
+                    "status": item.status,
+                    "reason": reason,
+                }
             )
 
             # Broadcast decision
@@ -206,6 +233,15 @@ class ApprovalQueue:
                 expired_ids.append(request_id)
 
                 logger.info(f"Approval request {request_id} expired")
+                self._append_audit_event(
+                    {
+                        "event": "expired",
+                        "request_id": request_id,
+                        "action_type": item.action_type,
+                        "agent_id": item.agent_id,
+                        "status": item.status,
+                    }
+                )
 
                 # Broadcast expiry (don't await - already in lock)
                 asyncio.create_task(
@@ -264,3 +300,20 @@ class ApprovalQueue:
         # Remove disconnected clients
         for client in disconnected:
             self.connected_clients.discard(client)
+
+    def _append_audit_event(self, event: dict[str, Any]) -> None:
+        """Best-effort JSONL persistence for queue lifecycle events."""
+        try:
+            from datetime import timezone
+
+            payload = {
+                "timestamp": datetime.now(timezone.utc).isoformat().replace("+00:00", "Z"),
+                **event,
+            }
+            directory = os.path.dirname(self._audit_path)
+            if directory:
+                os.makedirs(directory, exist_ok=True)
+            with open(self._audit_path, "a", encoding="utf-8") as f:
+                f.write(json.dumps(payload, separators=(",", ":")) + "\n")
+        except Exception as exc:
+            logger.warning("Approval queue audit write failed: %s", exc)
