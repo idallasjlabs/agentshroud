@@ -18,10 +18,14 @@ import logging
 import re
 import os
 import time
+import uuid
 import urllib.request
 import urllib.error
+import urllib.parse
 import ssl
 from typing import Any, Optional
+
+from gateway.security.input_normalizer import normalize_input, strip_markdown_exfil
 
 logger = logging.getLogger("agentshroud.proxy.telegram_api")
 
@@ -61,6 +65,9 @@ class TelegramAPIProxy:
         }
         self._bot_token = os.environ.get("TELEGRAM_BOT_TOKEN", "")
         self._ssl_context = ssl.create_default_context()
+        self._max_outbound_chars = int(os.environ.get("AGENTSHROUD_MAX_OUTBOUND_CHARS", "3800"))
+        self._block_cascade_seconds = float(os.environ.get("AGENTSHROUD_BLOCK_CASCADE_SECONDS", "4.0"))
+        self._recent_outbound_blocks_until: dict[str, float] = {}
 
         # Track which collaborator user IDs have already received the disclosure notice
         # this session. Persisted in-memory only — resets on gateway restart (acceptable).
@@ -77,6 +84,17 @@ class TelegramAPIProxy:
         from gateway.ingest_api.auth import RateLimiter
         self._collaborator_rate_limiter = RateLimiter(max_requests=200, window_seconds=3600)
 
+    def _is_owner_chat(self, chat_id: str) -> bool:
+        """Return True when chat_id belongs to the configured owner."""
+        if not self._rbac:
+            return False
+        return str(chat_id) == str(getattr(self._rbac, "owner_user_id", ""))
+
+    def _set_outbound_block_cascade(self, chat_id: str) -> None:
+        """Set short per-chat block window to prevent fragment leak-through."""
+        if chat_id:
+            self._recent_outbound_blocks_until[chat_id] = time.time() + self._block_cascade_seconds
+
     def get_stats(self) -> dict:
         return dict(self._stats)
 
@@ -88,6 +106,42 @@ class TelegramAPIProxy:
         # Remove absolute file paths (/app/..., /home/..., /usr/...)
         sanitized = re.sub(r'/[a-z][a-zA-Z0-9/_.-]+\.py(?:\s+line\s+\d+)?', '', sanitized)
         return sanitized.strip()
+
+    @staticmethod
+    def _strip_json_fence(text: str) -> str:
+        """Strip optional markdown json fences around model output."""
+        candidate = (text or "").strip()
+        if candidate.startswith("```"):
+            candidate = re.sub(r"^```(?:json)?\s*", "", candidate, flags=re.IGNORECASE)
+            candidate = re.sub(r"\s*```$", "", candidate)
+        return candidate.strip()
+
+    @classmethod
+    def _parse_tool_call_json(cls, text: str) -> Optional[dict[str, Any]]:
+        """Parse leaked model tool-call JSON blobs (e.g. {'name': 'NO_REPLY', ...})."""
+        candidate = cls._strip_json_fence(text)
+        if not candidate.startswith("{") or not candidate.endswith("}"):
+            return None
+        try:
+            parsed = json.loads(candidate)
+        except Exception:
+            return None
+        if not isinstance(parsed, dict):
+            return None
+        name = parsed.get("name")
+        arguments = parsed.get("arguments")
+        if isinstance(name, str) and isinstance(arguments, (dict, list, str, int, float, bool, type(None))):
+            return parsed
+        return None
+
+    @staticmethod
+    def _resolve_text_field(data: dict[str, Any]) -> tuple[str, str]:
+        """Return (field_name, text_value) for Telegram-style outbound payloads."""
+        for key in ("text", "draft", "message", "content", "caption"):
+            value = data.get(key)
+            if isinstance(value, str):
+                return key, value
+        return "text", ""
 
     async def proxy_request(
         self,
@@ -114,8 +168,20 @@ class TelegramAPIProxy:
         # For sendMessage, editMessageText, etc. — scan the bot's outgoing text.
         # Skip for system notifications (X-AgentShroud-System: 1) — these are
         # shell-script admin messages, not LLM output, so content filtering is not needed.
-        if not is_system and method in ("sendMessage", "editMessageText", "sendPhoto", "sendDocument",
-                       "copyMessage", "forwardMessage") and body:
+        #
+        # Draft methods are suppressed to prevent transient raw tool-call JSON flicker in
+        # Telegram clients before final message sanitization.
+        if not is_system and method in ("sendMessageDraft", "editMessageDraft"):
+            return {"ok": True, "result": {"suppressed": True, "method": method}}
+
+        if not is_system and method in (
+            "sendMessage",
+            "editMessageText",
+            "sendPhoto",
+            "sendDocument",
+            "copyMessage",
+            "forwardMessage",
+        ) and body:
             body = await self._filter_outbound(body, content_type)
 
         # Forward to real Telegram API
@@ -135,7 +201,8 @@ class TelegramAPIProxy:
     async def _filter_outbound(self, body: bytes, content_type: Optional[str]) -> bytes:
         """Filter outbound bot messages (sendMessage, etc.)."""
         try:
-            if content_type and "multipart" in content_type:
+            ct = (content_type or "").lower()
+            if "multipart" in ct:
                 # For multipart/form-data (sendPhoto, sendDocument with caption):
                 # apply XML leak filter using latin-1 for lossless binary round-trip.
                 # latin-1 is bijective over 0x00-0xFF so binary image parts are
@@ -148,20 +215,124 @@ class TelegramAPIProxy:
                         self._stats["outbound_filtered"] += 1
                         logger.info("Outbound multipart: XML blocks stripped")
                 return body
-            elif content_type and "json" in content_type:
+            elif "json" in ct or (not ct and body.lstrip().startswith(b"{")):
                 data = json.loads(body)
-                text = data.get("text", "")
+                text_key, text = self._resolve_text_field(data)
+                chat_id = str(data.get("chat_id", ""))
+                is_owner_chat = self._is_owner_chat(chat_id)
+
+                # Guardrail: never leak raw tool-call JSON blobs to Telegram users.
+                parsed_tool_call = self._parse_tool_call_json(text) if isinstance(text, str) else None
+                if parsed_tool_call is not None:
+                    tool_name = str(parsed_tool_call.get("name", "")).strip()
+                    tool_args = parsed_tool_call.get("arguments") if isinstance(parsed_tool_call.get("arguments"), dict) else {}
+                    self._stats["outbound_filtered"] += 1
+                    if tool_name.upper() == "NO_REPLY":
+                        data[text_key] = "🛡️ AgentShroud online"
+                    elif tool_name == "sessions_spawn" and str(tool_args.get("agentId", "")) == "acp.healthcheck":
+                        data[text_key] = "✅ Healthcheck started. I’ll reply with status once complete."
+                    elif tool_name in {"sessions_spawn", "sessions_send", "subagents"}:
+                        data[text_key] = "✅ Request accepted and queued."
+                    else:
+                        self._quarantine_outbound_block(
+                            chat_id=chat_id,
+                            text=text or "",
+                            reason=f"Raw tool-call JSON leaked to outbound text (tool={tool_name or 'unknown'})",
+                            source="telegram_outbound_toolcall_json",
+                        )
+                        data[text_key] = "[AgentShroud: internal tool-call output suppressed]"
+                    return json.dumps(data).encode()
+
+                if isinstance(text, str) and "session file locked" in text.lower():
+                    self._stats["outbound_filtered"] += 1
+                    data[text_key] = "⏳ Agent is still processing a previous request. Please wait 10–20 seconds and retry."
+                    return json.dumps(data).encode()
+
+                if text:
+                    normalized_text = normalize_input(text)
+                    scrubbed_text = strip_markdown_exfil(normalized_text)
+                    if scrubbed_text != text:
+                        data["text"] = scrubbed_text
+                        text = scrubbed_text
+                        self._stats["outbound_filtered"] += 1
+
+                if chat_id:
+                    blocked_until = self._recent_outbound_blocks_until.get(chat_id, 0.0)
+                    if blocked_until > time.time() and not is_owner_chat:
+                        self._quarantine_outbound_block(
+                            chat_id=chat_id,
+                            text=text or "",
+                            reason="Outbound block cascade active",
+                            source="telegram_outbound_cascade",
+                        )
+                        data["text"] = "[AgentShroud: outbound content blocked by security policy]"
+                        self._stats["outbound_filtered"] += 1
+                        return json.dumps(data).encode()
+
+                if (
+                    text
+                    and chat_id
+                    and not is_owner_chat
+                    and len(text) > self._max_outbound_chars
+                ):
+                    self._quarantine_outbound_block(
+                        chat_id=chat_id,
+                        text=text or "",
+                        reason=f"Outbound text exceeds max length ({len(text)} chars)",
+                        source="telegram_outbound_overlength",
+                    )
+                    data["text"] = "[AgentShroud: outbound content blocked by security policy]"
+                    self._stats["outbound_filtered"] += 1
+                    self._set_outbound_block_cascade(chat_id)
+                    logger.warning(
+                        "Outbound over-length message blocked for chat %s (%d chars)",
+                        chat_id,
+                        len(text),
+                    )
+                    return json.dumps(data).encode()
+
                 if text and self.pipeline:
                     pipeline_result = await self.pipeline.process_outbound(
                         response=text,
                         source="telegram",
-                        metadata={},
+                        user_trust_level="FULL" if is_owner_chat else "UNTRUSTED",
+                        metadata={"chat_id": chat_id},
                     )
                     if pipeline_result.blocked:
+                        self._quarantine_outbound_block(
+                            chat_id=chat_id,
+                            text=text or "",
+                            reason=pipeline_result.block_reason or "Pipeline blocked outbound response",
+                            source="telegram_outbound_pipeline_block",
+                        )
                         data["text"] = "[AgentShroud: outbound content blocked by security policy]"
                         self._stats["outbound_filtered"] += 1
+                        self._set_outbound_block_cascade(chat_id)
                         logger.warning(
                             "Outbound message blocked by pipeline: %s", pipeline_result.block_reason
+                        )
+                    elif (
+                        chat_id
+                        and not is_owner_chat
+                        and getattr(pipeline_result, "info_filter_redaction_count", 0) > 0
+                    ):
+                        self._quarantine_outbound_block(
+                            chat_id=chat_id,
+                            text=text or "",
+                            reason=(
+                                "Outbound info filter redacted protected content "
+                                f"({getattr(pipeline_result, 'info_filter_redaction_count', 0)} redactions)"
+                            ),
+                            source="telegram_outbound_info_filter_block",
+                        )
+                        data["text"] = "[AgentShroud: outbound content blocked by security policy]"
+                        self._stats["outbound_filtered"] += 1
+                        self._set_outbound_block_cascade(chat_id)
+                        logger.warning(
+                            "Outbound message blocked after info-filter redactions "
+                            "(chat=%s redactions=%s)",
+                            chat_id,
+                            getattr(pipeline_result, "info_filter_redaction_count", 0),
                         )
                     elif pipeline_result.sanitized_message != text:
                         data["text"] = pipeline_result.sanitized_message
@@ -186,10 +357,46 @@ class TelegramAPIProxy:
                         data["text"], "telegram"
                     )
                     if was_blocked:
+                        self._quarantine_outbound_block(
+                            chat_id=chat_id,
+                            text=text or "",
+                            reason="Credential blocking triggered",
+                            source="telegram_outbound_credential_block",
+                        )
                         data["text"] = blocked
                         self._stats["outbound_filtered"] += 1
                         logger.warning("Outbound message: credentials blocked")
                     return json.dumps(data).encode()
+            elif "x-www-form-urlencoded" in ct or (not ct and b"chat_id=" in body and b"text=" in body):
+                # Telegram draft/edit calls may arrive as urlencoded form payloads.
+                # Filter these the same way as JSON payloads to prevent transient leaks.
+                parsed = urllib.parse.parse_qsl(
+                    body.decode("utf-8", errors="replace"),
+                    keep_blank_values=True,
+                )
+                data = dict(parsed)
+                text_key, text = self._resolve_text_field(data)
+                chat_id = str(data.get("chat_id", ""))
+
+                parsed_tool_call = self._parse_tool_call_json(text) if isinstance(text, str) else None
+                if parsed_tool_call is not None:
+                    tool_name = str(parsed_tool_call.get("name", "")).strip()
+                    tool_args = parsed_tool_call.get("arguments") if isinstance(parsed_tool_call.get("arguments"), dict) else {}
+                    self._stats["outbound_filtered"] += 1
+                    if tool_name.upper() == "NO_REPLY":
+                        data[text_key] = "🛡️ AgentShroud online"
+                    elif tool_name == "sessions_spawn" and str(tool_args.get("agentId", "")) == "acp.healthcheck":
+                        data[text_key] = "✅ Healthcheck started. I’ll reply with status once complete."
+                    elif tool_name in {"sessions_spawn", "sessions_send", "subagents"}:
+                        data[text_key] = "✅ Request accepted and queued."
+                    else:
+                        data[text_key] = "[AgentShroud: internal tool-call output suppressed]"
+                    return urllib.parse.urlencode(data).encode()
+
+                if isinstance(text, str) and "session file locked" in text.lower():
+                    self._stats["outbound_filtered"] += 1
+                    data[text_key] = "⏳ Agent is still processing a previous request. Please wait 10–20 seconds and retry."
+                    return urllib.parse.urlencode(data).encode()
         except Exception as e:
             logger.error(f"Outbound filter error: {e}")
             # Fail-closed: if pipeline crashes, block non-owner outbound messages.
@@ -199,6 +406,12 @@ class TelegramAPIProxy:
                 chat_id = str(data.get("chat_id", ""))
                 owner_id = str(self._rbac.owner_user_id) if self._rbac else ""
                 if owner_id and chat_id != owner_id:
+                    self._quarantine_outbound_block(
+                        chat_id=chat_id,
+                        text=str(data.get("text", "")),
+                        reason="Security pipeline error (fail-closed)",
+                        source="telegram_outbound_fail_closed",
+                    )
                     data["text"] = "[AgentShroud: security pipeline error — response blocked]"
                     return json.dumps(data).encode()
             except Exception:
@@ -221,6 +434,17 @@ class TelegramAPIProxy:
                         _notifier = getattr(_app_state, "egress_notifier", None)
                         if _notifier:
                             result = await _notifier.handle_callback(cb_data)
+                            _queue = getattr(_app_state, "egress_approval_queue", None)
+                            if _queue and result.get("status") == "ok":
+                                from gateway.security.egress_approval import ApprovalMode
+                                rid = result.get("request_id", "")
+                                action = result.get("action", "")
+                                if action == "allow_always":
+                                    await _queue.approve(rid, ApprovalMode.PERMANENT)
+                                elif action == "allow_once":
+                                    await _queue.approve(rid, ApprovalMode.ONCE)
+                                elif action == "deny":
+                                    await _queue.deny(rid, ApprovalMode.ONCE)
                             await _notifier.answer_callback(
                                 callback_query.get("id", ""),
                                 f"Egress {result.get('action', 'processed')}",
@@ -243,6 +467,16 @@ class TelegramAPIProxy:
             if not text:
                 filtered_updates.append(update)
                 continue
+
+            # Normalize transport text before any guard checks so downstream
+            # detectors see de-obfuscated content (zero-width, encoded entities, etc.).
+            normalized_text = normalize_input(text)
+            if normalized_text != text:
+                if "message" in update:
+                    update["message"]["text"] = normalized_text
+                elif "edited_message" in update:
+                    update["edited_message"]["text"] = normalized_text
+                text = normalized_text
 
             self._stats["messages_scanned"] += 1
 
@@ -281,12 +515,29 @@ class TelegramAPIProxy:
                 await self._send_disclosure(chat_id)
                 self._disclosure_sent.add(user_id)
 
+            # ── Session unlock for blocked disclosure tracker on /start ───────
+            if is_collaborator and text.strip().lower().startswith("/start"):
+                try:
+                    from gateway.ingest_api.state import app_state as _app_state
+                    _tracker = getattr(_app_state, "multi_turn_tracker", None)
+                    if _tracker and _tracker.reset_session(user_id, owner_override=True):
+                        logger.info("Reset MultiTurnTracker session for collaborator %s via /start", user_id)
+                except Exception as _re:
+                    logger.debug("MultiTurnTracker reset error (non-fatal): %s", _re)
+
             # ── Collaborator rate limiting (200 msgs/hour) ────────────────────
             if is_collaborator and not self._collaborator_rate_limiter.check(user_id):
                 self._stats["messages_blocked"] += 1
                 logger.warning(
                     "Collaborator %s exceeded rate limit (200/hr) — dropping message",
                     user_id,
+                )
+                self._quarantine_blocked_message(
+                    user_id=user_id,
+                    chat_id=chat_id,
+                    text=text,
+                    reason="Rate limit exceeded",
+                    source="telegram_rate_limit",
                 )
                 if chat_id:
                     await self._send_rate_limit_notice(chat_id)
@@ -300,6 +551,13 @@ class TelegramAPIProxy:
                 cmd_base = cmd.split("@")[0]
                 if cmd_base in _COLLABORATOR_BLOCKED_COMMANDS:
                     self._stats["messages_blocked"] += 1
+                    self._quarantine_blocked_message(
+                        user_id=user_id,
+                        chat_id=chat_id,
+                        text=text,
+                        reason=f"Blocked command: {cmd_base}",
+                        source="telegram_command_block",
+                    )
                     logger.info(
                         "Collaborator %s attempted blocked command %r — rejecting",
                         user_id, cmd_base,
@@ -334,6 +592,13 @@ class TelegramAPIProxy:
                                 user_id, result.reason,
                             )
                             self._stats["messages_blocked"] += 1
+                            self._quarantine_blocked_message(
+                                user_id=user_id,
+                                chat_id=chat_id,
+                                text=text,
+                                reason=result.reason or "Middleware blocked message",
+                                source="telegram_middleware_block",
+                            )
                             if chat_id:
                                 await self._notify_user_blocked(chat_id, result.reason)
                             if "message" in update:
@@ -366,6 +631,13 @@ class TelegramAPIProxy:
                             logger.warning(
                                 "Pipeline blocked Telegram message from %s: %s",
                                 user_id, pipeline_result.block_reason,
+                            )
+                            self._quarantine_blocked_message(
+                                user_id=user_id,
+                                chat_id=chat_id,
+                                text=text,
+                                reason=pipeline_result.block_reason or "Pipeline blocked message",
+                                source="telegram_pipeline_block",
                             )
                             if chat_id:
                                 await self._notify_user_blocked(chat_id, pipeline_result.block_reason)
@@ -427,13 +699,123 @@ class TelegramAPIProxy:
         response_data["result"] = filtered_updates
         return response_data
 
+    def _quarantine_blocked_message(
+        self,
+        user_id: str,
+        chat_id: Optional[int],
+        text: str,
+        reason: str,
+        source: str,
+    ) -> None:
+        """Persist blocked inbound messages for admin review."""
+        try:
+            from gateway.ingest_api.state import app_state as _app_state
+            store = getattr(_app_state, "blocked_message_quarantine", None)
+            if store is None:
+                store = []
+                setattr(_app_state, "blocked_message_quarantine", store)
+            store.append(
+                {
+                    "message_id": str(uuid.uuid4()),
+                    "timestamp": time.time(),
+                    "user_id": str(user_id),
+                    "chat_id": str(chat_id) if chat_id is not None else "",
+                    "text": text,
+                    "reason": reason,
+                    "source": source,
+                    "status": "pending",
+                    "released_at": None,
+                    "released_by": None,
+                    "review_note": "",
+                }
+            )
+            if len(store) > 5000:
+                del store[: len(store) - 5000]
+            self._emit_quarantine_event(
+                event_type="quarantine_inbound_blocked",
+                summary="Inbound message quarantined",
+                details={
+                    "user_id": str(user_id),
+                    "chat_id": str(chat_id) if chat_id is not None else "",
+                    "reason": reason,
+                    "source": source,
+                },
+            )
+        except Exception as exc:
+            logger.debug("Failed to quarantine blocked message: %s", exc)
+
+    def _quarantine_outbound_block(
+        self,
+        chat_id: str,
+        text: str,
+        reason: str,
+        source: str,
+    ) -> None:
+        """Persist blocked outbound messages for admin review."""
+        try:
+            from gateway.ingest_api.state import app_state as _app_state
+            store = getattr(_app_state, "blocked_outbound_quarantine", None)
+            if store is None:
+                store = []
+                setattr(_app_state, "blocked_outbound_quarantine", store)
+            store.append(
+                {
+                    "message_id": str(uuid.uuid4()),
+                    "timestamp": time.time(),
+                    "chat_id": str(chat_id),
+                    "text": text,
+                    "reason": reason,
+                    "source": source,
+                    "status": "pending",
+                    "released_at": None,
+                    "released_by": None,
+                    "review_note": "",
+                }
+            )
+            if len(store) > 5000:
+                del store[: len(store) - 5000]
+            self._emit_quarantine_event(
+                event_type="quarantine_outbound_blocked",
+                summary="Outbound message quarantined",
+                details={
+                    "chat_id": str(chat_id),
+                    "reason": reason,
+                    "source": source,
+                },
+            )
+        except Exception as exc:
+            logger.debug("Failed to quarantine blocked outbound message: %s", exc)
+
+    def _emit_quarantine_event(self, event_type: str, summary: str, details: dict) -> None:
+        """Best-effort async event emission for quarantine actions."""
+        try:
+            from gateway.ingest_api.state import app_state as _app_state
+            bus = getattr(_app_state, "event_bus", None)
+            if not bus:
+                return
+            from gateway.ingest_api.event_bus import make_event
+            loop = asyncio.get_running_loop()
+            loop.create_task(
+                bus.emit(
+                    make_event(
+                        event_type,
+                        summary,
+                        details,
+                        severity="warning",
+                    )
+                )
+            )
+        except Exception:
+            # No running loop or unavailable event bus: skip quietly.
+            return
+
     async def _send_rate_limit_notice(self, chat_id: int) -> None:
         """Notify a collaborator they have exceeded the hourly rate limit."""
         try:
             if self._bot_token:
                 msg = (
                     "\U0001f6ab You have reached the collaborator message limit "
-                    "\\(20 messages/hour\\)\\. Please try again later\\."
+                    "\\(200 messages/hour\\)\\. Please try again later\\."
                 )
                 url = f"{TELEGRAM_API_BASE}/bot{self._bot_token}/sendMessage"
                 req = urllib.request.Request(
@@ -518,16 +900,16 @@ class TelegramAPIProxy:
                     break
 
             notice = (
-                "\u26a0\ufe0f *Message Blocked*\n\n"
+                "\u26a0\ufe0f Message Blocked\n\n"
                 f"{user_msg}\n\n"
-                f"_Reason: {reason}_\n\n"
+                f"Reason: {self._sanitize_reason(reason)}\n\n"
                 "If this is an error, contact the system owner."
             )
             if self._bot_token:
                 url = f"https://api.telegram.org/bot{self._bot_token}/sendMessage"
                 req = urllib.request.Request(
                     url,
-                    data=json.dumps({"chat_id": chat_id, "text": notice, "parse_mode": "Markdown"}).encode(),
+                    data=json.dumps({"chat_id": chat_id, "text": notice}).encode(),
                     headers={"Content-Type": "application/json"},
                 )
                 loop = asyncio.get_event_loop()
@@ -550,9 +932,43 @@ class TelegramAPIProxy:
         req = urllib.request.Request(url, data=body, headers=headers)
 
         loop = asyncio.get_event_loop()
-        response = await loop.run_in_executor(
-            None,
-            lambda: urllib.request.urlopen(req, timeout=60, context=self._ssl_context),
-        )
-        response_body = response.read()
-        return json.loads(response_body)
+        try:
+            response = await loop.run_in_executor(
+                None,
+                lambda: urllib.request.urlopen(req, timeout=60, context=self._ssl_context),
+            )
+            response_body = response.read()
+            return json.loads(response_body)
+        except urllib.error.HTTPError as exc:
+            # Telegram uses HTTP 4xx/5xx with JSON bodies for expected API failures
+            # (e.g., malformed Markdown, invalid chat ID). Treat as handled response.
+            raw = b""
+            try:
+                raw = exc.read() if hasattr(exc, "read") else b""
+            except Exception:
+                raw = b""
+
+            parsed: dict[str, Any]
+            if raw:
+                try:
+                    loaded = json.loads(raw.decode("utf-8", errors="replace"))
+                    if isinstance(loaded, dict):
+                        parsed = loaded
+                    else:
+                        parsed = {}
+                except Exception:
+                    parsed = {}
+            else:
+                parsed = {}
+
+            if "ok" not in parsed:
+                parsed["ok"] = False
+            parsed.setdefault("error_code", getattr(exc, "code", 502))
+            parsed.setdefault("description", getattr(exc, "reason", str(exc)))
+
+            logger.info(
+                "Telegram API returned HTTP %s (%s)",
+                parsed.get("error_code"),
+                parsed.get("description"),
+            )
+            return parsed

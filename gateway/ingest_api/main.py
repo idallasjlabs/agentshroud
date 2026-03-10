@@ -85,7 +85,10 @@ import ipaddress as _ipaddress
 # Loopback (127.0.0.0/8) is always included regardless of the env var.
 _PROXY_ALLOWED_NETWORKS = [
     _ipaddress.ip_network(cidr.strip())
-    for cidr in os.environ.get("PROXY_ALLOWED_NETWORKS", "172.11.0.0/16").split(",")
+    for cidr in os.environ.get(
+        "PROXY_ALLOWED_NETWORKS",
+        "10.254.111.0/24,10.254.112.0/24,172.11.0.0/16",
+    ).split(",")
     if cidr.strip()
 ] + [_ipaddress.ip_network("127.0.0.0/8")]
 
@@ -94,6 +97,7 @@ _PROXY_ALLOWED_NETWORKS = [
 # Add entries here when the bot legitimately needs access to a new secret.
 _ALLOWED_OP_PATHS: list[str] = [
     "op://Agent Shroud Bot Credentials/*/*",
+    "op://AgentShroud Bot Credentials/*/*",
 ]
 
 
@@ -438,7 +442,7 @@ async def op_proxy(request: OpProxyRequest, auth: AuthRequired):
     # Validate op:// format
     if not reference.startswith("op://"):
         raise HTTPException(
-            status_code=status.HTTP_422_UNPROCESSABLE_ENTITY,
+            status_code=status.HTTP_422_UNPROCESSABLE_CONTENT,
             detail="reference must start with op://",
         )
 
@@ -966,6 +970,7 @@ async def list_security_modules(auth: AuthRequired):
         "canary": {"check": "canary_runner"},
         "clamav_scanner": {"check": "clamav_scanner", "binary": "clamscan"},
         "trivy_scanner": {"check": "trivy_scanner", "binary": "trivy"},
+        "openscap_scanner": {"check": "openscap_available", "binary": "oscap"},
         "falco_monitor": {"check": "falco_monitor"},
         "wazuh_client": {"check": "wazuh_client"},
         "network_validator": {"check": "network_validator"},
@@ -996,6 +1001,110 @@ async def list_security_modules(auth: AuthRequired):
     }
 
 
+def _scanner_summary(scanner: str, result: dict, target: str = "") -> dict:
+    """Build normalized scanner summary for SOC/dashboard telemetry."""
+    summary = {
+        "scanner": scanner,
+        "target": target,
+        "status": "unknown",
+        "findings": 0,
+        "critical": 0,
+        "high": 0,
+        "medium": 0,
+        "low": 0,
+    }
+    if not isinstance(result, dict):
+        summary["status"] = "error"
+        return summary
+
+    if result.get("error"):
+        summary["status"] = "error"
+        return summary
+
+    if scanner == "clamav":
+        infected = int(result.get("infected_count", 0))
+        summary["findings"] = infected
+        summary["critical"] = infected
+        summary["status"] = "critical" if infected > 0 else "clean"
+        return summary
+
+    if scanner == "trivy":
+        by_sev = result.get("by_severity", {}) or {}
+        summary["critical"] = int(by_sev.get("CRITICAL", 0))
+        summary["high"] = int(by_sev.get("HIGH", 0))
+        summary["medium"] = int(by_sev.get("MEDIUM", 0))
+        summary["low"] = int(by_sev.get("LOW", 0))
+        summary["findings"] = int(result.get("total_vulnerabilities", 0))
+        if summary["critical"] > 0:
+            summary["status"] = "critical"
+        elif summary["high"] > 0:
+            summary["status"] = "warning"
+        else:
+            summary["status"] = "clean"
+        return summary
+
+    if scanner == "openscap":
+        status = str(result.get("status", "unknown")).lower()
+        rc = int(result.get("return_code", 0) or 0)
+        summary["findings"] = 0 if rc == 0 else 1
+        summary["high"] = 1 if rc != 0 else 0
+        if status in {"timeout", "error"}:
+            summary["status"] = "error"
+        elif rc != 0:
+            summary["status"] = "warning"
+        else:
+            summary["status"] = "clean"
+        return summary
+
+    summary["status"] = "info"
+    return summary
+
+
+async def _record_scanner_result(scanner: str, result: dict, target: str = "") -> None:
+    """Persist last scanner result and emit live event-bus telemetry."""
+    store = getattr(app_state, "scanner_results", None)
+    if not isinstance(store, dict):
+        store = {}
+    history = getattr(app_state, "scanner_result_history", None)
+    if not isinstance(history, list):
+        history = []
+
+    summary = _scanner_summary(scanner, result, target=target)
+    entry = {
+        "timestamp": datetime.now(timezone.utc).isoformat(),
+        "scanner": scanner,
+        "target": target,
+        "summary": summary,
+        "result": result,
+    }
+    store[scanner] = entry
+    app_state.scanner_results = store
+    history.append(entry)
+    if len(history) > 5000:
+        del history[: len(history) - 5000]
+    app_state.scanner_result_history = history
+
+    severity = "info"
+    if summary["status"] in {"critical", "error"}:
+        severity = "critical"
+    elif summary["status"] in {"warning"}:
+        severity = "warning"
+
+    if getattr(app_state, "event_bus", None):
+        await app_state.event_bus.emit(
+            make_event(
+                "scanner_result",
+                f"{scanner} scan completed ({summary['status']})",
+                {
+                    "scanner": scanner,
+                    "target": target,
+                    "summary": summary,
+                },
+                severity=severity,
+            )
+        )
+
+
 @app.post("/manage/scan/clamav")
 async def run_clamav_scan(auth: AuthRequired, target: str = "/app"):
     """Run ClamAV antivirus scan. Tries clamdscan (daemon) first, falls back to clamscan."""
@@ -1006,6 +1115,7 @@ async def run_clamav_scan(auth: AuthRequired, target: str = "/app"):
     import os as _os
     _bin = "clamdscan" if (_sh.which("clamdscan") and _os.path.exists("/var/run/clamav/clamd.ctl")) else "clamscan"
     result = app_state.clamav_scanner.run_clamscan(target=target, timeout=120, clamscan_bin=_bin)
+    await _record_scanner_result("clamav", result, target=target)
     if app_state.alert_dispatcher and result.get("infected_count", 0) > 0:
         app_state.alert_dispatcher.dispatch(
             severity="CRITICAL",
@@ -1022,6 +1132,25 @@ async def run_trivy_scan(auth: AuthRequired, target: str = "fs"):
     if not app_state.trivy_scanner:
         return {"error": "Trivy scanner not available"}
     result = app_state.trivy_scanner.run_trivy_scan(scan_type=target, timeout=300)
+    await _record_scanner_result("trivy", result, target=target)
+    if app_state.alert_dispatcher and not result.get("error"):
+        by_sev = result.get("by_severity", {})
+        critical = int(by_sev.get("CRITICAL", 0))
+        high = int(by_sev.get("HIGH", 0))
+        if critical > 0:
+            app_state.alert_dispatcher.dispatch(
+                severity="CRITICAL",
+                module="trivy",
+                message=f"Trivy found {critical} critical vulnerabilities",
+                details=result,
+            )
+        elif high > 0:
+            app_state.alert_dispatcher.dispatch(
+                severity="HIGH",
+                module="trivy",
+                message=f"Trivy found {high} high vulnerabilities",
+                details=result,
+            )
     return result
 
 
@@ -1051,6 +1180,8 @@ async def security_health_report(auth: AuthRequired):
         report["modules"]["clamav"] = {"status": "ready", "binary": bool(__import__("shutil").which("clamscan"))}
     if app_state.trivy_scanner:
         report["modules"]["trivy"] = {"status": "ready", "binary": bool(__import__("shutil").which("trivy"))}
+    if getattr(app_state, "openscap_available", False):
+        report["modules"]["openscap"] = {"status": "ready", "binary": bool(__import__("shutil").which("oscap"))}
     if app_state.drift_detector:
         report["modules"]["drift_detector"] = {"status": "active"}
     if app_state.encrypted_store:
@@ -1087,6 +1218,11 @@ async def full_security_report(auth: AuthRequired):
     if app_state.trivy_scanner:
         summaries["trivy"] = {
             "status": "ready" if _sh.which("trivy") else "degraded",
+            "findings": 0, "critical": 0, "high": 0, "medium": 0, "low": 0,
+        }
+    if getattr(app_state, "openscap_available", False):
+        summaries["openscap"] = {
+            "status": "ready" if _sh.which("oscap") else "degraded",
             "findings": 0, "critical": 0, "high": 0, "medium": 0, "low": 0,
         }
 
@@ -1128,6 +1264,47 @@ async def full_security_report(auth: AuthRequired):
 
     report = app_state.health_report.generate_report(summaries=summaries, save_history=False)
     return report
+
+
+@app.get("/manage/scanners/summary")
+async def scanner_summary(auth: AuthRequired):
+    """Return normalized scanner state + latest results for SOC/dashboard views."""
+    availability = {
+        "clamav": bool(getattr(app_state, "clamav_scanner", None)),
+        "trivy": bool(getattr(app_state, "trivy_scanner", None)),
+        "openscap": bool(getattr(app_state, "openscap_available", False)),
+        "wazuh": bool(getattr(app_state, "wazuh_client", None)),
+        "falco": bool(getattr(app_state, "falco_monitor", None)),
+    }
+    results = getattr(app_state, "scanner_results", {}) or {}
+    summaries = {
+        k: v.get("summary", {})
+        for k, v in results.items()
+        if isinstance(v, dict)
+    }
+    totals = {
+        "critical": sum(int(s.get("critical", 0) or 0) for s in summaries.values()),
+        "high": sum(int(s.get("high", 0) or 0) for s in summaries.values()),
+        "findings": sum(int(s.get("findings", 0) or 0) for s in summaries.values()),
+    }
+    return {
+        "availability": availability,
+        "last_results": results,
+        "summaries": summaries,
+        "totals": totals,
+    }
+
+
+@app.get("/manage/scanners/history")
+async def scanner_history(auth: AuthRequired, limit: int = 200, status: str = "all"):
+    """Return scanner result history for SOC timeline views."""
+    history = list(getattr(app_state, "scanner_result_history", []) or [])
+    if status and status.lower() != "all":
+        history = [
+            h for h in history
+            if str((h.get("summary") or {}).get("status", "")).lower() == status.lower()
+        ]
+    return {"count": len(history), "items": history[-limit:]}
 
 
 @app.get("/manage/falco/alerts")
@@ -1177,6 +1354,562 @@ async def wazuh_alerts(auth: AuthRequired, limit: int = 100):
     }
 
 
+@app.get("/manage/egress/pending")
+async def egress_pending(auth: AuthRequired):
+    """List pending interactive egress approval requests."""
+    queue = getattr(app_state, "egress_approval_queue", None)
+    if not queue:
+        return {"error": "Egress approval queue not available"}
+    return {"pending": await queue.get_pending_requests()}
+
+
+@app.get("/manage/egress/log")
+async def egress_log(
+    auth: AuthRequired,
+    limit: int = 200,
+    agent_id: str = "",
+):
+    """List recent egress attempts for dashboard/SOC triage."""
+    egress = getattr(app_state, "egress_filter", None)
+    if not egress:
+        return {"error": "Egress filter not available"}
+    attempts = egress.get_log(agent_id=agent_id or None, limit=limit)
+    return {
+        "count": len(attempts),
+        "items": [
+            {
+                "timestamp": a.timestamp,
+                "agent_id": a.agent_id,
+                "destination": a.destination,
+                "port": a.port,
+                "action": a.action.value,
+                "rule": a.rule,
+                "details": a.details,
+            }
+            for a in attempts
+        ],
+    }
+
+
+@app.post("/manage/egress/{request_id}/approve")
+async def egress_approve(auth: AuthRequired, request_id: str, mode: str = "once"):
+    """Approve an egress request (once/session/permanent)."""
+    queue = getattr(app_state, "egress_approval_queue", None)
+    if not queue:
+        return {"error": "Egress approval queue not available"}
+    from gateway.security.egress_approval import ApprovalMode
+
+    mode_map = {
+        "once": ApprovalMode.ONCE,
+        "session": ApprovalMode.SESSION,
+        "always": ApprovalMode.PERMANENT,
+        "permanent": ApprovalMode.PERMANENT,
+    }
+    success = await queue.approve(request_id, mode_map.get(mode.lower(), ApprovalMode.ONCE))
+    return {"ok": success, "request_id": request_id, "mode": mode}
+
+
+@app.post("/manage/egress/{request_id}/deny")
+async def egress_deny(auth: AuthRequired, request_id: str, mode: str = "once"):
+    """Deny an egress request (once/session/permanent)."""
+    queue = getattr(app_state, "egress_approval_queue", None)
+    if not queue:
+        return {"error": "Egress approval queue not available"}
+    from gateway.security.egress_approval import ApprovalMode
+
+    mode_map = {
+        "once": ApprovalMode.ONCE,
+        "session": ApprovalMode.SESSION,
+        "always": ApprovalMode.PERMANENT,
+        "permanent": ApprovalMode.PERMANENT,
+    }
+    success = await queue.deny(request_id, mode_map.get(mode.lower(), ApprovalMode.ONCE))
+    return {"ok": success, "request_id": request_id, "mode": mode}
+
+
+@app.get("/manage/egress/rules")
+async def egress_rules(auth: AuthRequired):
+    """Return egress rules and emergency-block status."""
+    queue = getattr(app_state, "egress_approval_queue", None)
+    if not queue:
+        return {"error": "Egress approval queue not available"}
+    return {
+        "rules": await queue.get_all_rules(),
+        "emergency": await queue.get_emergency_status(),
+    }
+
+
+@app.post("/manage/egress/rules")
+async def egress_add_rule(
+    auth: AuthRequired,
+    domain: str,
+    action: str = "allow",
+    mode: str = "permanent",
+):
+    """Add an egress allow/deny rule."""
+    queue = getattr(app_state, "egress_approval_queue", None)
+    if not queue:
+        return {"error": "Egress approval queue not available"}
+    from gateway.security.egress_approval import ApprovalMode
+
+    mode_map = {
+        "session": ApprovalMode.SESSION,
+        "always": ApprovalMode.PERMANENT,
+        "permanent": ApprovalMode.PERMANENT,
+    }
+    selected_mode = mode_map.get(mode.lower(), ApprovalMode.PERMANENT)
+    ok = await queue.add_rule(domain=domain, action=action.lower(), mode=selected_mode)
+    if ok and getattr(app_state, "event_bus", None):
+        await app_state.event_bus.emit(
+            make_event(
+                "egress_rule_updated",
+                "Egress rule added",
+                {"domain": domain, "action": action.lower(), "mode": selected_mode.value},
+                severity="warning" if action.lower() == "allow" else "info",
+            )
+        )
+    return {"ok": ok, "domain": domain, "action": action.lower(), "mode": selected_mode.value}
+
+
+@app.delete("/manage/egress/rules")
+async def egress_remove_rule(auth: AuthRequired, domain: str):
+    """Remove an egress rule by domain."""
+    queue = getattr(app_state, "egress_approval_queue", None)
+    if not queue:
+        return {"error": "Egress approval queue not available"}
+    ok = await queue.remove_rule(domain=domain)
+    if ok and getattr(app_state, "event_bus", None):
+        await app_state.event_bus.emit(
+            make_event(
+                "egress_rule_updated",
+                "Egress rule removed",
+                {"domain": domain},
+                severity="info",
+            )
+        )
+    return {"ok": ok, "domain": domain}
+
+
+@app.get("/manage/egress/risk")
+async def egress_risk_preview(auth: AuthRequired, domain: str, port: int = 443):
+    """Preview egress risk heuristic for domain/port combos."""
+    queue = getattr(app_state, "egress_approval_queue", None)
+    if not queue:
+        return {"error": "Egress approval queue not available"}
+    risk = queue.assess_risk(domain=domain, port=port)
+    return {"domain": domain, "port": port, "risk_level": risk}
+
+
+@app.post("/manage/egress/emergency-block")
+async def egress_emergency_block(auth: AuthRequired, enabled: bool, reason: str = ""):
+    """Enable/disable emergency block-all for outbound egress."""
+    queue = getattr(app_state, "egress_approval_queue", None)
+    if not queue:
+        return {"error": "Egress approval queue not available"}
+    await queue.set_emergency_block_all(enabled, reason=reason)
+    return {"ok": True, "status": await queue.get_emergency_status()}
+
+
+@app.get("/manage/quarantine/blocked-messages")
+async def list_blocked_message_quarantine(
+    auth: AuthRequired,
+    limit: int = 200,
+    status: str = "all",
+):
+    """List quarantined blocked inbound messages for admin review."""
+    store = getattr(app_state, "blocked_message_quarantine", [])
+    items = list(store)
+    normalized = []
+    for item in items:
+        if "message_id" not in item:
+            item["message_id"] = hashlib.sha256(
+                f"{item.get('timestamp','')}:{item.get('user_id','')}:{item.get('text','')}".encode("utf-8")
+            ).hexdigest()[:16]
+        if "status" not in item:
+            item["status"] = "pending"
+        normalized.append(item)
+    if status and status.lower() != "all":
+        normalized = [x for x in normalized if str(x.get("status", "pending")).lower() == status.lower()]
+    return {"count": len(normalized), "items": normalized[-limit:]}
+
+
+@app.post("/manage/quarantine/blocked-messages/{message_id}/release")
+async def release_blocked_message(
+    auth: AuthRequired,
+    message_id: str,
+    note: str = "",
+):
+    """Release a quarantined message for admin workflow follow-up."""
+    store = getattr(app_state, "blocked_message_quarantine", [])
+    for item in store:
+        item_id = str(item.get("message_id") or "")
+        if not item_id:
+            item_id = hashlib.sha256(
+                f"{item.get('timestamp','')}:{item.get('user_id','')}:{item.get('text','')}".encode("utf-8")
+            ).hexdigest()[:16]
+            item["message_id"] = item_id
+        if item_id == message_id:
+            item["status"] = "released"
+            item["released_at"] = time.time()
+            item["released_by"] = "admin"
+            item["review_note"] = note
+            if getattr(app_state, "event_bus", None):
+                await app_state.event_bus.emit(
+                    make_event(
+                        "quarantine_released",
+                        "Quarantined blocked message released",
+                        {
+                            "message_id": message_id,
+                            "user_id": item.get("user_id"),
+                            "source": item.get("source"),
+                            "reason": item.get("reason"),
+                        },
+                        severity="warning",
+                    )
+                )
+            return {"ok": True, "item": item}
+    return {"ok": False, "error": "message_not_found", "message_id": message_id}
+
+
+@app.post("/manage/quarantine/blocked-messages/{message_id}/discard")
+async def discard_blocked_message(
+    auth: AuthRequired,
+    message_id: str,
+    note: str = "",
+):
+    """Discard (keep quarantined) a blocked message after admin review."""
+    store = getattr(app_state, "blocked_message_quarantine", [])
+    for item in store:
+        item_id = str(item.get("message_id") or "")
+        if not item_id:
+            item_id = hashlib.sha256(
+                f"{item.get('timestamp','')}:{item.get('user_id','')}:{item.get('text','')}".encode("utf-8")
+            ).hexdigest()[:16]
+            item["message_id"] = item_id
+        if item_id == message_id:
+            item["status"] = "discarded"
+            item["released_at"] = time.time()
+            item["released_by"] = "admin"
+            item["review_note"] = note
+            if getattr(app_state, "event_bus", None):
+                await app_state.event_bus.emit(
+                    make_event(
+                        "quarantine_discarded",
+                        "Quarantined blocked message discarded",
+                        {
+                            "message_id": message_id,
+                            "user_id": item.get("user_id"),
+                            "source": item.get("source"),
+                            "reason": item.get("reason"),
+                        },
+                        severity="info",
+                    )
+                )
+            return {"ok": True, "item": item}
+    return {"ok": False, "error": "message_not_found", "message_id": message_id}
+
+
+@app.get("/manage/quarantine/blocked-outbound")
+async def list_blocked_outbound_quarantine(
+    auth: AuthRequired,
+    limit: int = 200,
+    status: str = "all",
+):
+    """List quarantined blocked outbound messages for admin review."""
+    store = getattr(app_state, "blocked_outbound_quarantine", [])
+    items = list(store)
+    normalized = []
+    for item in items:
+        if "message_id" not in item:
+            item["message_id"] = hashlib.sha256(
+                f"{item.get('timestamp','')}:{item.get('chat_id','')}:{item.get('text','')}".encode("utf-8")
+            ).hexdigest()[:16]
+        if "status" not in item:
+            item["status"] = "pending"
+        normalized.append(item)
+    if status and status.lower() != "all":
+        normalized = [x for x in normalized if str(x.get("status", "pending")).lower() == status.lower()]
+    return {"count": len(normalized), "items": normalized[-limit:]}
+
+
+@app.get("/manage/quarantine/summary")
+async def quarantine_summary(auth: AuthRequired):
+    """Summarize inbound/outbound quarantine state for SOC/dashboard use."""
+    inbound = getattr(app_state, "blocked_message_quarantine", []) or []
+    outbound = getattr(app_state, "blocked_outbound_quarantine", []) or []
+
+    def _count_by_status(items: list[dict]) -> dict[str, int]:
+        counts = {"pending": 0, "released": 0, "discarded": 0, "other": 0}
+        for item in items:
+            status = str(item.get("status", "pending")).lower()
+            if status in counts:
+                counts[status] += 1
+            else:
+                counts["other"] += 1
+        counts["total"] = len(items)
+        return counts
+
+    return {
+        "inbound": _count_by_status(inbound),
+        "outbound": _count_by_status(outbound),
+    }
+
+
+@app.post("/manage/quarantine/blocked-outbound/{message_id}/release")
+async def release_blocked_outbound(
+    auth: AuthRequired,
+    message_id: str,
+    note: str = "",
+):
+    """Release a blocked outbound message for admin/manual resend flow."""
+    store = getattr(app_state, "blocked_outbound_quarantine", [])
+    for item in store:
+        item_id = str(item.get("message_id") or "")
+        if not item_id:
+            item_id = hashlib.sha256(
+                f"{item.get('timestamp','')}:{item.get('chat_id','')}:{item.get('text','')}".encode("utf-8")
+            ).hexdigest()[:16]
+            item["message_id"] = item_id
+        if item_id == message_id:
+            item["status"] = "released"
+            item["released_at"] = time.time()
+            item["released_by"] = "admin"
+            item["review_note"] = note
+            if getattr(app_state, "event_bus", None):
+                await app_state.event_bus.emit(
+                    make_event(
+                        "quarantine_outbound_released",
+                        "Quarantined outbound message released",
+                        {
+                            "message_id": message_id,
+                            "chat_id": item.get("chat_id"),
+                            "source": item.get("source"),
+                            "reason": item.get("reason"),
+                        },
+                        severity="warning",
+                    )
+                )
+            return {"ok": True, "item": item}
+    return {"ok": False, "error": "message_not_found", "message_id": message_id}
+
+
+@app.post("/manage/quarantine/blocked-outbound/{message_id}/discard")
+async def discard_blocked_outbound(
+    auth: AuthRequired,
+    message_id: str,
+    note: str = "",
+):
+    """Discard a blocked outbound message after admin review."""
+    store = getattr(app_state, "blocked_outbound_quarantine", [])
+    for item in store:
+        item_id = str(item.get("message_id") or "")
+        if not item_id:
+            item_id = hashlib.sha256(
+                f"{item.get('timestamp','')}:{item.get('chat_id','')}:{item.get('text','')}".encode("utf-8")
+            ).hexdigest()[:16]
+            item["message_id"] = item_id
+        if item_id == message_id:
+            item["status"] = "discarded"
+            item["released_at"] = time.time()
+            item["released_by"] = "admin"
+            item["review_note"] = note
+            if getattr(app_state, "event_bus", None):
+                await app_state.event_bus.emit(
+                    make_event(
+                        "quarantine_outbound_discarded",
+                        "Quarantined outbound message discarded",
+                        {
+                            "message_id": message_id,
+                            "chat_id": item.get("chat_id"),
+                            "source": item.get("source"),
+                            "reason": item.get("reason"),
+                        },
+                        severity="info",
+                    )
+                )
+            return {"ok": True, "item": item}
+    return {"ok": False, "error": "message_not_found", "message_id": message_id}
+
+
+@app.get("/manage/soc/correlation")
+async def soc_correlation(auth: AuthRequired, limit: int = 200):
+    """Cross-signal SOC correlation summary."""
+    from gateway.security.soc_correlation import build_correlation_summary
+
+    summary = build_correlation_summary(app_state, limit=limit)
+    return summary.to_dict()
+
+
+@app.get("/manage/soc/events")
+async def soc_events(
+    auth: AuthRequired,
+    limit: int = 200,
+    event_type_prefix: str = "",
+    severity: str = "",
+):
+    """Return recent security telemetry events with optional filters."""
+    bus = getattr(app_state, "event_bus", None)
+    if bus is None:
+        return {"count": 0, "items": []}
+    items = await bus.get_recent(limit=max(1, min(limit, 1000)))
+    if event_type_prefix:
+        pfx = event_type_prefix.lower()
+        items = [e for e in items if str(e.get("type", "")).lower().startswith(pfx)]
+    if severity:
+        sev = severity.lower()
+        items = [e for e in items if str(e.get("severity", "")).lower() == sev]
+    return {"count": len(items), "items": items}
+
+
+@app.get("/manage/soc/report")
+async def soc_report(auth: AuthRequired, limit: int = 200):
+    """Consolidated SOC report for dashboard/SIEM pull workflows."""
+    from gateway.security.soc_correlation import build_correlation_summary
+
+    correlation = build_correlation_summary(app_state, limit=limit).to_dict()
+
+    bus = getattr(app_state, "event_bus", None)
+    events = await bus.get_recent(limit=max(1, min(limit, 1000))) if bus else []
+    events = [
+        e
+        for e in events
+        if str(e.get("type", "")).startswith(
+            ("egress_", "privacy_", "quarantine_", "scanner_", "auth_")
+        )
+    ]
+
+    inbound_q = getattr(app_state, "blocked_message_quarantine", []) or []
+    outbound_q = getattr(app_state, "blocked_outbound_quarantine", []) or []
+    scanner_summary = (
+        {
+            k: v.get("summary", {})
+            for k, v in (getattr(app_state, "scanner_results", {}) or {}).items()
+            if isinstance(v, dict)
+        }
+    )
+    return {
+        "generated_at": datetime.now(timezone.utc).isoformat(),
+        "correlation": correlation,
+        "event_count": len(events),
+        "events": events[-limit:],
+        "quarantine": {
+            "inbound_total": len(inbound_q),
+            "outbound_total": len(outbound_q),
+            "inbound_pending": sum(
+                1 for q in inbound_q if str(q.get("status", "pending")).lower() == "pending"
+            ),
+            "outbound_pending": sum(
+                1 for q in outbound_q if str(q.get("status", "pending")).lower() == "pending"
+            ),
+        },
+        "scanner_summary": scanner_summary,
+    }
+
+
+@app.get("/manage/soc/export")
+async def soc_export(
+    auth: AuthRequired,
+    format_type: str = "json",
+    limit: int = 5000,
+    event_type: str = "",
+    severity_min: str = "",
+):
+    """Export tamper-evident audit events in SOC/SIEM formats."""
+    normalized = format_type.lower().strip()
+    if normalized == "jsonld":
+        normalized = "json-ld"
+    if normalized not in {"json", "cef", "json-ld"}:
+        return {
+            "error": "invalid_format",
+            "supported_formats": ["json", "cef", "json-ld"],
+        }
+
+    store = getattr(app_state, "audit_store", None)
+    if store is None:
+        return {
+            "format": normalized,
+            "record_count": 0,
+            "hash_verification": {"verified": False, "message": "Audit store not available"},
+            "export_content": "",
+            "export_timestamp": datetime.now(timezone.utc).isoformat(),
+        }
+
+    from gateway.security.audit_export import AuditExporter, AuditExportConfig
+
+    exporter = AuditExporter(AuditExportConfig(default_format=normalized), store)
+    result = await exporter.export_events(
+        format_type=normalized,
+        event_type=event_type or None,
+        severity_min=severity_min or None,
+        limit=max(1, min(limit, 10000)),
+    )
+    return result
+
+
+@app.get("/manage/privacy/policy")
+async def privacy_policy_status(auth: AuthRequired):
+    """Return current private-data policy configuration and enforcement state."""
+    mcp = getattr(app_state, "mcp_proxy", None)
+    if not mcp:
+        return {"error": "MCP proxy not available"}
+    perms = getattr(mcp, "permissions", None)
+    if not perms:
+        return {"error": "MCP permissions not available"}
+    status = (
+        perms.get_privacy_policy_status()
+        if hasattr(perms, "get_privacy_policy_status")
+        else {"path": "", "loaded": False, "loaded_at": None, "error": ""}
+    )
+    return {
+        "owner_user_id": str(getattr(perms, "_owner_user_id", "")),
+        "admin_private_tool_patterns": list(getattr(perms, "_private_tool_patterns", [])),
+        "admin_private_data_patterns": perms.get_private_data_patterns()
+        if hasattr(perms, "get_private_data_patterns")
+        else [],
+        "policy_file": status,
+    }
+
+
+@app.get("/manage/privacy/audit")
+async def privacy_audit(auth: AuthRequired, limit: int = 200):
+    """Audit feed for private-data access policy violations."""
+    mcp = getattr(app_state, "mcp_proxy", None)
+    if not mcp:
+        return {"error": "MCP proxy not available"}
+    perms = getattr(mcp, "permissions", None)
+    if not perms:
+        return {"error": "MCP permissions not available"}
+
+    events = (
+        perms.get_private_access_events(limit=limit)
+        if hasattr(perms, "get_private_access_events")
+        else []
+    )
+    redaction_events = (
+        perms.get_private_redaction_events(limit=limit)
+        if hasattr(perms, "get_private_redaction_events")
+        else []
+    )
+    summary = (
+        perms.get_private_access_summary(limit=limit)
+        if hasattr(perms, "get_private_access_summary")
+        else {"total": 0, "by_agent": {}, "by_tool": {}}
+    )
+    redaction_summary = (
+        perms.get_private_redaction_summary(limit=limit)
+        if hasattr(perms, "get_private_redaction_summary")
+        else {"events": 0, "total_redactions": 0, "by_agent": {}, "by_tool": {}}
+    )
+    return {
+        "count": len(events),
+        "summary": summary,
+        "events": events,
+        "redaction_count": len(redaction_events),
+        "redaction_summary": redaction_summary,
+        "redaction_events": redaction_events,
+    }
+
+
 @app.post("/manage/scan/openscap")
 async def run_openscap_scan(auth: AuthRequired, profile: str = "xccdf_org.ssgproject.content_profile_standard"):
     """Run OpenSCAP XCCDF evaluation against the running container."""
@@ -1184,7 +1917,9 @@ async def run_openscap_scan(auth: AuthRequired, profile: str = "xccdf_org.ssgpro
     from datetime import datetime as _dt, timezone as _tz
 
     if not _sh.which("oscap"):
-        return {"error": "OpenSCAP (oscap) binary not found"}
+        result = {"error": "OpenSCAP (oscap) binary not found"}
+        await _record_scanner_result("openscap", result, target=profile)
+        return result
 
     # Locate a SCAP datastream file
     ds_file = None
@@ -1200,11 +1935,13 @@ async def run_openscap_scan(auth: AuthRequired, profile: str = "xccdf_org.ssgpro
             break
 
     if not ds_file:
-        return {
+        result = {
             "status": "no_content",
             "message": "oscap binary present but no SCAP content datastream found — install scap-security-guide.",
             "binary": _sh.which("oscap"),
         }
+        await _record_scanner_result("openscap", result, target=profile)
+        return result
 
     results_xml = "/tmp/openscap-results.xml"
     report_html = "/tmp/openscap-report.html"
@@ -1217,7 +1954,7 @@ async def run_openscap_scan(auth: AuthRequired, profile: str = "xccdf_org.ssgpro
              ds_file],
             capture_output=True, text=True, timeout=120,
         )
-        return {
+        result = {
             "status": "completed",
             "return_code": r.returncode,
             "profile": profile,
@@ -1228,10 +1965,69 @@ async def run_openscap_scan(auth: AuthRequired, profile: str = "xccdf_org.ssgpro
             "stderr_tail": r.stderr[-500:] if r.stderr else "",
             "timestamp": _dt.now(_tz.utc).isoformat(),
         }
+        await _record_scanner_result("openscap", result, target=profile)
+        if app_state.alert_dispatcher and r.returncode != 0:
+            app_state.alert_dispatcher.dispatch(
+                severity="HIGH",
+                module="openscap",
+                message=f"OpenSCAP profile '{profile}' reported compliance failures",
+                details=result,
+            )
+        return result
     except _sp.TimeoutExpired:
-        return {"status": "timeout", "profile": profile}
+        result = {"status": "timeout", "profile": profile}
+        await _record_scanner_result("openscap", result, target=profile)
+        return result
     except Exception as e:
-        return {"status": "error", "detail": str(e)}
+        result = {"status": "error", "detail": str(e)}
+        await _record_scanner_result("openscap", result, target=profile)
+        return result
+
+
+@app.post("/manage/scan/all")
+async def run_all_scanners(auth: AuthRequired):
+    """Run all locally available security scanners and return consolidated results."""
+    results: dict[str, dict] = {}
+
+    # ClamAV
+    if getattr(app_state, "clamav_scanner", None):
+        import shutil as _sh
+        import os as _os
+
+        _bin = "clamdscan" if (_sh.which("clamdscan") and _os.path.exists("/var/run/clamav/clamd.ctl")) else "clamscan"
+        clam = app_state.clamav_scanner.run_clamscan(target="/app", timeout=120, clamscan_bin=_bin)
+        await _record_scanner_result("clamav", clam, target="/app")
+        results["clamav"] = clam
+    else:
+        results["clamav"] = {"error": "ClamAV scanner not available"}
+
+    # Trivy
+    if getattr(app_state, "trivy_scanner", None):
+        trivy = app_state.trivy_scanner.run_trivy_scan(scan_type="fs", timeout=300)
+        await _record_scanner_result("trivy", trivy, target="fs")
+        results["trivy"] = trivy
+    else:
+        results["trivy"] = {"error": "Trivy scanner not available"}
+
+    # OpenSCAP
+    if getattr(app_state, "openscap_available", False):
+        # Minimal status marker; full run remains on /manage/scan/openscap endpoint
+        openscap = {"status": "available", "message": "Use /manage/scan/openscap for full profile scan"}
+        await _record_scanner_result("openscap", openscap, target="availability")
+        results["openscap"] = openscap
+    else:
+        openscap = {"error": "OpenSCAP (oscap) binary not found"}
+        await _record_scanner_result("openscap", openscap, target="availability")
+        results["openscap"] = openscap
+
+    return {
+        "timestamp": datetime.now(timezone.utc).isoformat(),
+        "results": results,
+        "summaries": {
+            scanner: _scanner_summary(scanner, data, target="all")
+            for scanner, data in results.items()
+        },
+    }
 
 
 @app.get('/manage/container-security')
@@ -2478,10 +3274,100 @@ async def llm_api_proxy(request: Request, path: str):
             headers={k: v for k, v in resp_headers.items() if k.lower() not in ("transfer-encoding", "content-length")},
         )
 
+    if not resp_body:
+        return JSONResponse(content={}, status_code=status_code)
+
+    try:
+        return JSONResponse(
+            content=json.loads(resp_body),
+            status_code=status_code,
+        )
+    except Exception:
+        # Upstream occasionally returns plain-text/empty bodies on failures.
+        # Do not crash the proxy endpoint trying to decode non-JSON payloads.
+        return HTMLResponse(
+            content=resp_body.decode("utf-8", errors="ignore"),
+            status_code=status_code,
+        )
+
+
+@app.api_route(
+    "/v1beta/{path:path}",
+    methods=["GET", "POST"],
+    include_in_schema=False,
+)
+async def google_api_proxy(request: Request, path: str):
+    """Proxy Google Gemini API calls through security pipeline."""
+    # Mirror IP allowlist from llm_api_proxy
+    client_ip = request.client.host if request.client else None
+    if client_ip:
+        try:
+            addr = _ipaddress.ip_address(client_ip)
+            if not any(addr in net for net in _PROXY_ALLOWED_NETWORKS):
+                logger.warning(f"Google proxy request denied from {client_ip}")
+                raise HTTPException(status_code=403, detail="Forbidden")
+        except ValueError:
+            raise HTTPException(status_code=403, detail="Forbidden")
+    else:
+        raise HTTPException(status_code=403, detail="Forbidden")
+
+    llm_proxy = getattr(app_state, "llm_proxy", None)
+    if not llm_proxy:
+        raise HTTPException(status_code=503, detail="LLM proxy not available")
+
+    body = await request.body() if request.method == "POST" else None
+    headers = dict(request.headers)
+    user_id = headers.get("x-agentshroud-user-id", "unknown")
+
+    status_code, resp_headers, resp_body = await llm_proxy.proxy_messages(
+        f"/v1beta/{path}", body, headers, user_id=user_id
+    )
+
     return JSONResponse(
         content=json.loads(resp_body) if resp_body else {},
         status_code=status_code,
     )
+
+
+@app.api_route(
+    "/api/{path:path}",
+    methods=["GET", "POST"],
+    include_in_schema=False,
+)
+async def ollama_api_proxy(request: Request, path: str):
+    """Proxy native Ollama API calls through security pipeline."""
+    # Mirror IP allowlist
+    client_ip = request.client.host if request.client else None
+    if client_ip:
+        try:
+            addr = _ipaddress.ip_address(client_ip)
+            if not any(addr in net for net in _PROXY_ALLOWED_NETWORKS):
+                raise HTTPException(status_code=403, detail="Forbidden")
+        except ValueError:
+            raise HTTPException(status_code=403, detail="Forbidden")
+    else:
+        raise HTTPException(status_code=403, detail="Forbidden")
+
+    llm_proxy = getattr(app_state, "llm_proxy", None)
+    if not llm_proxy:
+        raise HTTPException(status_code=503, detail="LLM proxy not available")
+
+    body = await request.body() if request.method == "POST" else None
+    headers = dict(request.headers)
+    user_id = headers.get("x-agentshroud-user-id", "unknown")
+
+    status_code, resp_headers, resp_body = await llm_proxy.proxy_messages(
+        f"/api/{path}", body, headers, user_id=user_id
+    )
+
+    # Ollama native API might return raw text or JSON
+    try:
+        return JSONResponse(
+            content=json.loads(resp_body) if resp_body else {},
+            status_code=status_code,
+        )
+    except Exception:
+        return HTMLResponse(content=resp_body, status_code=status_code)
 
 
 @app.get("/llm-proxy/stats")

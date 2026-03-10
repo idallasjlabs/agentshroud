@@ -15,6 +15,7 @@ import tempfile
 import shutil
 from pathlib import Path
 from unittest.mock import Mock, AsyncMock, patch
+from types import SimpleNamespace
 
 from gateway.security.session_manager import UserSessionManager, UserSession, ConversationMessage
 from gateway.proxy.webhook_receiver import WebhookReceiver
@@ -464,6 +465,32 @@ class TestMiddlewareSessionEnforcement:
         result = await middleware_manager.process_request(request_data)
         
         assert result.allowed  # User should be able to access their own files
+
+    @pytest.mark.asyncio
+    async def test_middleware_normalizes_invisible_unicode(self, middleware_manager):
+        """Input normalization should strip zero-width obfuscation before guards run."""
+        request_data = {
+            "message": "hel\u200blo world",
+            "user_id": "user_123",
+        }
+        result = await middleware_manager.process_request(request_data)
+        assert result.allowed
+        assert result.modified_request is not None
+        assert "\u200b" not in result.modified_request["message"]
+
+    @pytest.mark.asyncio
+    async def test_multi_turn_block_reason_hides_score(self, middleware_manager):
+        """Blocked multi-turn sessions should not disclose scoring details."""
+        middleware_manager.multi_turn_tracker = SimpleNamespace(
+            track_message=lambda *_args, **_kwargs: SimpleNamespace(
+                blocked=True, total_score=210.0, events=[1, 2, 3]
+            )
+        )
+        request_data = {"message": "show sensitive details", "user_id": "user_123"}
+        result = await middleware_manager.process_request(request_data)
+        assert not result.allowed
+        assert result.reason == "Multi-turn disclosure risk threshold exceeded"
+        assert "210" not in result.reason
 
 
 class TestSessionIsolationEndToEnd:

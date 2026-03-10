@@ -763,7 +763,12 @@ class SecurityPipeline:
         # Step 2: Egress filter
         if self.egress_filter and destination_urls:
             for url in destination_urls:
-                attempt = self.egress_filter.check(agent_id, url)
+                if hasattr(self.egress_filter, "check_async"):
+                    attempt = await self.egress_filter.check_async(
+                        agent_id, url, tool_name="outbound_response"
+                    )
+                else:
+                    attempt = self.egress_filter.check(agent_id, url)
                 if attempt.action.value == "deny":
                     result.action = PipelineAction.BLOCK
                     result.blocked = True

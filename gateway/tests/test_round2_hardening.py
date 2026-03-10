@@ -125,6 +125,14 @@ class TestLLMProxyEndpoints:
         source = open(mod.__file__).read()
         assert "llm_proxy_stats" in source, "LLM proxy stats endpoint must be defined"
 
+    def test_v1_endpoint_handles_non_json_upstream_bodies(self):
+        """Proxy endpoint must not crash if upstream returns non-JSON body."""
+        import gateway.ingest_api.main as mod
+        source = open(mod.__file__).read()
+        assert "json.loads(resp_body)" in source
+        assert "except Exception" in source
+        assert "return HTMLResponse(" in source
+
 
 # ── Fix 8: KeyVault dead code removed ───────────────────────────────────
 

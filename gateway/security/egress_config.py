@@ -38,6 +38,10 @@ class EgressFilterConfig:
         
         # Search and web services
         "api.brave.com",
+
+        # 1Password / op-proxy dependencies
+        "1password.com",
+        "*.1password.com",
         
         # Development and package registries
         "*.github.com",

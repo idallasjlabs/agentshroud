@@ -190,6 +190,150 @@ class TestConfigValidation:
         req = ForwardRequest(content="hello", source="api")
         assert req.source == "api"
 
+    def test_openclaw_patch_script_recovers_corrupt_json(self):
+        """openclaw init patch script must quarantine malformed JSON instead of exiting."""
+        script = (REPO_ROOT / "docker" / "config" / "openclaw" / "apply-patches.js").read_text()
+        assert "process.exit(1)" not in script
+        assert "corrupt-" in script
+        assert "moved to" in script
+
+    def test_openclaw_patch_script_removes_legacy_gateway_model_key(self):
+        """openclaw init patch script must remove unsupported gateway.model key."""
+        script = (REPO_ROOT / "docker" / "config" / "openclaw" / "apply-patches.js").read_text()
+        assert "Removed unsupported key gateway.model" in script
+        assert "Set internal gateway model" not in script
+
+    def test_openclaw_patch_script_sets_control_ui_allowed_origins(self):
+        """openclaw init patch script must seed control UI origins for non-loopback bind."""
+        script = (REPO_ROOT / "docker" / "config" / "openclaw" / "apply-patches.js").read_text()
+        assert "gateway.controlUi.allowedOrigins" in script
+        assert "dangerouslyAllowHostHeaderOriginFallback" in script
+
+    def test_openclaw_patch_script_seeds_group_allowlist(self):
+        """openclaw init patch script must seed Telegram group allowlist when policy is allowlist."""
+        script = (REPO_ROOT / "docker" / "config" / "openclaw" / "apply-patches.js").read_text()
+        assert "groupPolicy" in script
+        assert "groupAllowFrom" in script
+        assert "allowlist" in script
+
+    def test_lifespan_uvicorn_warning_filter_drops_invalid_http_noise(self):
+        """Lifespan filter should suppress repeated malformed HTTP warning noise."""
+        import logging
+        from gateway.ingest_api.lifespan import _DropInvalidHTTPRequestFilter
+
+        filt = _DropInvalidHTTPRequestFilter()
+        noisy = logging.LogRecord(
+            name="uvicorn.error",
+            level=logging.WARNING,
+            pathname=__file__,
+            lineno=1,
+            msg="Invalid HTTP request received.",
+            args=(),
+            exc_info=None,
+        )
+        legit = logging.LogRecord(
+            name="uvicorn.error",
+            level=logging.WARNING,
+            pathname=__file__,
+            lineno=1,
+            msg="Something else happened.",
+            args=(),
+            exc_info=None,
+        )
+        assert filt.filter(noisy) is False
+        assert filt.filter(legit) is True
+
+    def test_proxy_allowed_network_default_includes_current_subnets(self):
+        """Proxy CIDR fallback should include current 10.254 ranges plus legacy compatibility."""
+        source = (REPO_ROOT / "gateway" / "ingest_api" / "main.py").read_text()
+        assert "10.254.111.0/24" in source
+        assert "10.254.112.0/24" in source
+
+    def test_startup_wrapper_defaults_openclaw_bind_to_loopback(self):
+        """Startup wrapper should default OpenClaw bind to loopback unless explicitly overridden."""
+        script = (REPO_ROOT / "docker" / "scripts" / "start-agentshroud.sh").read_text()
+        assert 'OPENCLAW_BIND_MODE="${OPENCLAW_GATEWAY_BIND:-loopback}"' in script
+        assert 'openclaw gateway --allow-unconfigured --bind "${OPENCLAW_BIND_MODE}"' in script
+
+    def test_main_compose_sets_openclaw_bind_lan_default(self):
+        """Primary compose stack should bind OpenClaw gateway to lan by default for host Control UI access."""
+        compose = (REPO_ROOT / "docker" / "docker-compose.yml").read_text()
+        assert "OPENCLAW_GATEWAY_BIND=${OPENCLAW_GATEWAY_BIND:-lan}" in compose
+
+    def test_startup_notifications_use_minimal_message_format(self):
+        """Startup/shutdown notifications should use minimal, non-identifying text."""
+        script = (REPO_ROOT / "docker" / "scripts" / "start-agentshroud.sh").read_text()
+        assert '🛡️ AgentShroud online' in script
+        assert '🔴 AgentShroud shutting down' in script
+
+    def test_start_control_center_script_uses_repo_relative_exec(self):
+        """Control center launcher should be robust to current working directory."""
+        script = (REPO_ROOT / "scripts" / "start-control-center").read_text()
+        assert "set -euo pipefail" in script
+        assert "REPO_ROOT" in script
+        assert "exec python3 src/interfaces/text_control_center.py" in script
+
+    def test_chat_console_script_uses_repo_relative_exec(self):
+        """Chat console launcher should be robust to current working directory."""
+        script = (REPO_ROOT / "scripts" / "chat-console").read_text()
+        assert "set -euo pipefail" in script
+        assert "REPO_ROOT" in script
+        assert "exec python3 src/interfaces/chat_console.py" in script
+
+    def test_switch_model_script_exists_with_supported_targets(self):
+        """Model switch helper should support local and major cloud providers."""
+        script = (REPO_ROOT / "scripts" / "switch_model.sh").read_text()
+        assert "switch_model.sh <target>" in script
+        assert "local" in script
+        assert "gemini" in script
+        assert "anthropic" in script
+        assert "openai" in script
+        assert "docker compose" in script
+
+    def test_openclaw_patch_defaults_to_qwen_local_model(self):
+        """OpenClaw patch script should default to Ollama qwen2.5-coder model."""
+        script = (REPO_ROOT / "docker" / "config" / "openclaw" / "apply-patches.js").read_text()
+        assert "AGENTSHROUD_MODEL_MODE" in script
+        assert "AGENTSHROUD_LOCAL_MODEL_REF" in script
+        assert "AGENTSHROUD_CLOUD_MODEL_REF" in script
+        assert "ollama/qwen2.5-coder:7b" in script
+        assert "config.models.providers.ollama" in script
+        assert "openai-completions" in script
+        assert "anthropic/claude-opus-4-6" in script
+        assert "agents.defaults.model" in script or "config.agents.defaults.model" in script
+
+    def test_compose_sets_qwen_local_model_overrides(self):
+        """Main compose stack should expose a single model-mode switch with local/cloud refs."""
+        compose = (REPO_ROOT / "docker" / "docker-compose.yml").read_text()
+        assert "AGENTSHROUD_MODEL_MODE=${AGENTSHROUD_MODEL_MODE:-local}" in compose
+        assert "AGENTSHROUD_LOCAL_MODEL_REF=${AGENTSHROUD_LOCAL_MODEL_REF:-ollama/qwen2.5-coder:7b}" in compose
+        assert "AGENTSHROUD_CLOUD_MODEL_REF=${AGENTSHROUD_CLOUD_MODEL_REF:-anthropic/claude-opus-4-6}" in compose
+        assert "OLLAMA_BASE_URL=${OLLAMA_BASE_URL:-http://gateway:8080/v1}" in compose
+        assert "OLLAMA_API_KEY=${OLLAMA_API_KEY:-ollama-local}" in compose
+
+    def test_startup_script_skips_anthropic_when_local_model_selected(self):
+        """Bot startup should not load Anthropic secrets when Ollama local model is configured."""
+        script = (REPO_ROOT / "docker" / "scripts" / "start-agentshroud.sh").read_text()
+        assert '[[ "${OPENCLAW_MAIN_MODEL:-}" == ollama/* ]]' in script
+        assert "skipping Claude token load" in script
+        assert "skipping Claude op-proxy fetch" in script
+        assert "Loaded Google API key" in script
+
+    def test_init_config_skips_anthropic_auth_seed_for_local_model(self):
+        """Init config should seed auth profiles for cloud providers and Ollama in local mode."""
+        script = (REPO_ROOT / "docker" / "scripts" / "init-openclaw-config.sh").read_text()
+        assert "AGENTSHROUD_MODEL_MODE" in script
+        assert "provider + ':default'" in script
+        assert "version: Number(store.version || 1)" in script
+        assert "setApiKey('google'" in script
+        assert "setApiKey('openai'" in script
+        assert "setApiKey('ollama'" in script
+        assert "MODELS_JSON" in script
+        assert "rawBaseUrl" in script
+        assert "ROOT_AUTH_PROFILES" in script
+        assert "ROOT_MODELS_JSON" in script
+        assert "Registered Ollama provider/models in models.json" in script
+
 
 class TestAllExampleConfigsExist:
     """Verify all referenced example configs exist."""

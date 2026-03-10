@@ -57,6 +57,122 @@ router = APIRouter()
 logger = logging.getLogger(__name__)
 
 
+async def _build_egress_live_snapshot() -> dict:
+    """Build compact egress dashboard snapshot for websocket/API clients."""
+    egress_filter = getattr(app_state, "egress_filter", None)
+    approval_queue = getattr(app_state, "egress_approval_queue", None)
+    stats = egress_filter.get_stats() if egress_filter else {}
+    recent_log = []
+    if egress_filter:
+        recent = egress_filter.get_log(limit=20)
+        recent_log = [
+            {
+                "timestamp": a.timestamp,
+                "agent_id": a.agent_id,
+                "destination": a.destination,
+                "port": a.port,
+                "action": a.action.value,
+                "rule": a.rule,
+            }
+            for a in recent
+        ]
+    pending_items = []
+    emergency = {"enabled": False, "reason": ""}
+    if approval_queue:
+        pending = await approval_queue.get_pending_requests()
+        pending_items = pending[-20:]
+        emergency = await approval_queue.get_emergency_status()
+    recent_security_events = []
+    event_bus = getattr(app_state, "event_bus", None)
+    if event_bus is not None:
+        events = await event_bus.get_recent(limit=200)
+        for evt in events:
+            evt_type = str(evt.get("type", ""))
+            if evt_type.startswith(("egress_", "privacy_", "quarantine_", "scanner_", "auth_")):
+                recent_security_events.append(evt)
+        recent_security_events = recent_security_events[-20:]
+    soc_risk = {"risk_score": 0, "severity": "low"}
+    soc_summary: dict = {}
+    try:
+        from ..main import app_state as _app_state
+        from ...security.soc_correlation import build_correlation_summary
+
+        corr = build_correlation_summary(_app_state, limit=200)
+        soc_risk = {"risk_score": corr.risk_score, "severity": corr.severity}
+        soc_summary = corr.to_dict()
+    except Exception:
+        pass
+    quarantine = getattr(app_state, "blocked_message_quarantine", []) or []
+    quarantine_pending = sum(1 for q in quarantine if str(q.get("status", "pending")) == "pending")
+    outbound_quarantine = getattr(app_state, "blocked_outbound_quarantine", []) or []
+    outbound_quarantine_pending = sum(
+        1 for q in outbound_quarantine if str(q.get("status", "pending")) == "pending"
+    )
+    quarantine_summary = {
+        "inbound": {
+            "total": len(quarantine),
+            "pending": quarantine_pending,
+            "released": sum(1 for q in quarantine if str(q.get("status", "")).lower() == "released"),
+            "discarded": sum(1 for q in quarantine if str(q.get("status", "")).lower() == "discarded"),
+        },
+        "outbound": {
+            "total": len(outbound_quarantine),
+            "pending": outbound_quarantine_pending,
+            "released": sum(1 for q in outbound_quarantine if str(q.get("status", "")).lower() == "released"),
+            "discarded": sum(1 for q in outbound_quarantine if str(q.get("status", "")).lower() == "discarded"),
+        },
+    }
+    privacy_policy_summary = {
+        "violations": 0,
+        "redaction_events": 0,
+        "total_redactions": 0,
+        "top_violating_agents": {},
+        "top_violating_tools": {},
+    }
+    try:
+        mcp = getattr(app_state, "mcp_proxy", None)
+        perms = getattr(mcp, "permissions", None) if mcp else None
+        if perms and hasattr(perms, "get_private_access_summary"):
+            access_summary = perms.get_private_access_summary(limit=200)
+            redaction_summary = (
+                perms.get_private_redaction_summary(limit=200)
+                if hasattr(perms, "get_private_redaction_summary")
+                else {"events": 0, "total_redactions": 0, "by_agent": {}, "by_tool": {}}
+            )
+            privacy_policy_summary = {
+                "violations": int(access_summary.get("total", 0) or 0),
+                "redaction_events": int(redaction_summary.get("events", 0) or 0),
+                "total_redactions": int(redaction_summary.get("total_redactions", 0) or 0),
+                "top_violating_agents": access_summary.get("by_agent", {}),
+                "top_violating_tools": access_summary.get("by_tool", {}),
+            }
+    except Exception:
+        pass
+
+    return {
+        "egress_stats": stats,
+        "egress_recent_log": recent_log,
+        "pending_requests": len(pending_items),
+        "pending_items": pending_items,
+        "emergency": emergency,
+        "quarantined_blocked_messages": len(quarantine),
+        "quarantined_blocked_messages_pending": quarantine_pending,
+        "quarantined_blocked_outbound": len(outbound_quarantine),
+        "quarantined_blocked_outbound_pending": outbound_quarantine_pending,
+        "quarantine_summary": quarantine_summary,
+        "recent_security_events": recent_security_events,
+        "soc_risk": soc_risk,
+        "soc_summary": soc_summary,
+        "privacy_policy_summary": privacy_policy_summary,
+        "scanner_summaries": {
+            k: v.get("summary", {})
+            for k, v in (getattr(app_state, "scanner_results", {}) or {}).items()
+            if isinstance(v, dict)
+        },
+        "scanner_recent_events": (getattr(app_state, "scanner_result_history", []) or [])[-20:],
+    }
+
+
 # Authentication dependency
 async def auth_dep(request: Request):
     """Auth dependency that uses the app state config."""
@@ -187,11 +303,19 @@ async def dashboard_stats(req: Request, auth: AuthRequired):
         }
         for p in pending
     ]
+    quarantine = getattr(app_state, "blocked_message_quarantine", []) or []
+    egress_stats = {}
+    if getattr(app_state, "egress_filter", None):
+        egress_stats = app_state.egress_filter.get_stats()
+    live = await _build_egress_live_snapshot()
     return {
         "uptime_seconds": uptime,
         "ledger_entries": ledger_stats.get("total_entries", 0),
         "pending_approvals": len(pending),
         "pending_approval_items": pending_items,
+        "egress_stats": egress_stats,
+        "quarantined_blocked_messages": len(quarantine),
+        "egress_live": live,
         **bus_stats,
     }
 
@@ -232,6 +356,7 @@ async def activity_websocket(websocket: WebSocket, token: str | None = Query(Non
 
     try:
         await websocket.send_json({"type": "authenticated"})
+        await websocket.send_json({"type": "egress_snapshot", "details": await _build_egress_live_snapshot()})
 
         # Subscribe to events
         queue: asyncio.Queue = asyncio.Queue()
@@ -254,3 +379,47 @@ async def activity_websocket(websocket: WebSocket, token: str | None = Query(Non
 
     except Exception as e:
         logger.warning(f"Activity WebSocket error: {e}")
+
+
+@router.websocket("/ws/egress")
+async def egress_websocket(websocket: WebSocket, token: str | None = Query(None)):
+    """WebSocket stream specialized for egress/security dashboard updates."""
+    if not token or not _validate_ws_token(token):
+        await websocket.close(code=4003, reason="Authentication failed")
+        await app_state.event_bus.emit(
+            make_event(
+                "auth_failed", "Egress WebSocket authentication failed", {}, "warning"
+            )
+        )
+        return
+
+    await websocket.accept()
+    await websocket.send_json({"type": "authenticated"})
+    await websocket.send_json({"type": "egress_snapshot", "details": await _build_egress_live_snapshot()})
+
+    queue: asyncio.Queue = asyncio.Queue()
+
+    async def on_event(event):
+        if (
+            event.type.startswith("egress_")
+            or event.type.startswith("quarantine_")
+            or event.type.startswith("privacy_")
+            or event.type.startswith("scanner_")
+            or event.type.startswith("auth_")
+        ):
+            await queue.put(event)
+
+    await app_state.event_bus.subscribe(on_event)
+    try:
+        while True:
+            try:
+                event = await asyncio.wait_for(queue.get(), timeout=20)
+                await websocket.send_json(event.to_dict())
+            except asyncio.TimeoutError:
+                await websocket.send_json(
+                    {"type": "egress_snapshot", "details": await _build_egress_live_snapshot()}
+                )
+    except Exception as e:
+        logger.warning(f"Egress WebSocket error: {e}")
+    finally:
+        await app_state.event_bus.unsubscribe(on_event)
