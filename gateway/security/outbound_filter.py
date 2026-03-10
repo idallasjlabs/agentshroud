@@ -140,6 +140,13 @@ class OutboundInfoFilter:
                 "category": InfoCategory.INFRASTRUCTURE,
                 "replacement": ":[PORT]",
             },
+            {
+                "name": "sensitive_port_reference",
+                "pattern": r"\bport\s+(?:8080|8443|3000|5000|9090|6379|5432|3306|27017)\b",
+                "category": InfoCategory.INFRASTRUCTURE,
+                "replacement": "port [PORT]",
+                "flags": re.IGNORECASE,
+            },
 
             # Tool inventory patterns - only security-sensitive tools
             {
@@ -155,6 +162,13 @@ class OutboundInfoFilter:
                 "pattern": r"(?:user|owner|admin|authorized|telegram)\s+(?:ID\s+)?\d{9,12}\b",
                 "category": InfoCategory.USER_IDENTITY,
                 "replacement": r"\g<1>[USER_ID]",
+                "flags": re.IGNORECASE,
+            },
+            {
+                "name": "collaborator_identity_name",
+                "pattern": r"\b(?:Isaiah Jefferson|Steve Hay|Marvin)\b|\b(?:Trillian|raspberrypi)\b(?!\.tail[a-f0-9]+\.ts\.net)",
+                "category": InfoCategory.USER_IDENTITY,
+                "replacement": "[COLLABORATOR]",
                 "flags": re.IGNORECASE,
             },
 
@@ -186,6 +200,19 @@ class OutboundInfoFilter:
                 "pattern": r"(?:/app/agentshroud|/home/[^/]+/\.[^/]+)/[\w/._-]+\.(?:py|js|ts|yaml|yml|json|md)",
                 "category": InfoCategory.OPERATIONAL,
                 "replacement": "[INTERNAL_PATH]",
+            },
+            {
+                "name": "workspace_internal_path",
+                "pattern": r"/home/node/\.agentshroud(?:/[\w/._-]+)?",
+                "category": InfoCategory.OPERATIONAL,
+                "replacement": "[INTERNAL_PATH]",
+            },
+            {
+                "name": "admin_private_service_data",
+                "pattern": r"\b(?:gmail|iCloud|home assistant|homeassistant|bank account|routing number|account number|financial data|admin-private)\b",
+                "category": InfoCategory.OPERATIONAL,
+                "replacement": "[PRIVATE_DATA]",
+                "flags": re.IGNORECASE,
             },
             
             # Fabricated security notice — bot roleplaying as the gateway/pipeline.
@@ -219,6 +246,13 @@ class OutboundInfoFilter:
                 "category": InfoCategory.CODE_BLOCKS,
                 "replacement": "[REDACTED_TOOL_CALL]",
                 "flags": re.DOTALL,
+            },
+            {
+                "name": "xml_tool_tag_fragment",
+                "pattern": r"</?(?:function_calls|function_results|invoke|invoke_result|parameter|thinking|system-reminder)\b[^>]*>",
+                "category": InfoCategory.CODE_BLOCKS,
+                "replacement": "[REDACTED_TOOL_CALL]",
+                "flags": re.IGNORECASE,
             },
         ]
         
@@ -315,7 +349,7 @@ class OutboundInfoFilter:
         # Log results
         if matches:
             if self.mode == "enforce":
-                logger.warning(
+                logger.info(
                     f"Outbound filter: {len(matches)} redactions applied "
                     f"(trust={user_trust_level}, risk={risk_level}, source={source})"
                 )

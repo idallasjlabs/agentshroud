@@ -17,6 +17,7 @@ Supports stdio and HTTP/SSE transports with connection pooling.
 import asyncio
 import json
 import logging
+import re
 import time
 import uuid
 from dataclasses import dataclass
@@ -26,7 +27,6 @@ from .mcp_audit import MCPAuditTrail
 from .mcp_config import MCPProxyConfig, MCPServerConfig, MCPTransport
 from .mcp_inspector import MCPInspector
 from .mcp_permissions import MCPPermissionManager
-from ..approval_queue.enhanced_queue import EnhancedApprovalQueue
 from ..approval_queue.enhanced_queue import EnhancedApprovalQueue
 
 logger = logging.getLogger("agentshroud.proxy.mcp_proxy")
@@ -249,6 +249,63 @@ class MCPProxy:
             "errors": 0,
             "total_duration_ms": 0.0,
         }
+        self._private_redaction_token = "<ADMIN_PRIVATE_DATA>"
+        self._event_bus = None
+
+    def set_event_bus(self, event_bus) -> None:
+        """Wire optional event bus for privacy/security telemetry."""
+        self._event_bus = event_bus
+
+    async def _emit_privacy_event(self, event_type: str, summary: str, details: dict, severity: str = "warning") -> None:
+        """Best-effort privacy event emission."""
+        if self._event_bus is None:
+            return
+        try:
+            from gateway.ingest_api.event_bus import make_event
+
+            await self._event_bus.emit(
+                make_event(
+                    event_type,
+                    summary,
+                    details,
+                    severity=severity,
+                )
+            )
+        except Exception:
+            return
+
+    def _sanitize_admin_private_data(self, value: Any, agent_id: str) -> tuple[Any, bool, int]:
+        """Redact admin-private data from tool results for non-owner agents."""
+        if str(agent_id) == str(self.permissions._owner_user_id):
+            return value, False, 0
+        patterns = self.permissions.get_private_data_patterns()
+        if not patterns:
+            return value, False, 0
+        compiled = [re.compile(p, re.IGNORECASE) for p in patterns]
+
+        redacted = False
+        redaction_count = 0
+
+        def _scrub(v: Any) -> Any:
+            nonlocal redacted, redaction_count
+            if isinstance(v, str):
+                out = v
+                for cre in compiled:
+                    matches = list(cre.finditer(out))
+                    if matches:
+                        redacted = True
+                        redaction_count += len(matches)
+                        out = cre.sub(self._private_redaction_token, out)
+                return out
+            if isinstance(v, dict):
+                return {k: _scrub(val) for k, val in v.items()}
+            if isinstance(v, list):
+                return [_scrub(item) for item in v]
+            if isinstance(v, tuple):
+                return tuple(_scrub(item) for item in v)
+            return v
+
+        return _scrub(value), redacted, redaction_count
 
     async def process_tool_call(
         self,
@@ -340,6 +397,18 @@ class MCPProxy:
                 block_reason=perm_result.reason,
                 call_id=tool_call.id,
             )
+            if "admin-private" in str(perm_result.reason).lower():
+                await self._emit_privacy_event(
+                    "privacy_policy_violation",
+                    "Blocked admin-private MCP tool access",
+                    {
+                        "agent_id": tool_call.agent_id,
+                        "server_name": tool_call.server_name,
+                        "tool_name": tool_call.tool_name,
+                        "reason": perm_result.reason,
+                    },
+                    severity="warning",
+                )
             return ProxyResult(
                 allowed=False,
                 blocked=True,
@@ -424,13 +493,38 @@ class MCPProxy:
                     tool_result.content,
                     check_pii=self.config.pii_scan_enabled,
                 )
-                result.sanitized_result = result_inspection.sanitized_result
+                sanitized_result = result_inspection.sanitized_result
+                sanitized_result, private_redacted, private_redaction_count = self._sanitize_admin_private_data(
+                    sanitized_result,
+                    tool_call.agent_id,
+                )
+                if private_redacted:
+                    self.permissions.record_private_data_redaction(
+                        agent_id=tool_call.agent_id,
+                        server_name=tool_call.server_name,
+                        tool_name=tool_call.tool_name,
+                        redaction_count=private_redaction_count,
+                    )
+                    await self._emit_privacy_event(
+                        "privacy_data_redacted",
+                        "Admin-private content redacted from MCP tool result",
+                        {
+                            "agent_id": tool_call.agent_id,
+                            "server_name": tool_call.server_name,
+                            "tool_name": tool_call.tool_name,
+                            "redaction_count": private_redaction_count,
+                        },
+                        severity="info",
+                    )
+                result.sanitized_result = sanitized_result
                 result_pii = any(
                     f.finding_type.value == "pii_leak"
                     for f in result_inspection.findings
                 )
             else:
                 result_pii = False
+                private_redacted = False
+                private_redaction_count = 0
 
             self.audit.log_tool_result(
                 call_id=tool_call.id,
@@ -452,7 +546,7 @@ class MCPProxy:
                     if tool_result.content is not None
                     else "none"
                 ),
-                pii_redacted=result_pii,
+                pii_redacted=(result_pii or private_redacted),
             )
 
         result.processing_time_ms = (time.time() - start) * 1000
@@ -558,6 +652,29 @@ class MCPProxy:
             check_pii=self.config.pii_scan_enabled,
         )
 
+        sanitized_result, private_redacted, private_redaction_count = self._sanitize_admin_private_data(
+            inspection.sanitized_result,
+            agent_id,
+        )
+        if private_redacted:
+            self.permissions.record_private_data_redaction(
+                agent_id=agent_id,
+                server_name=tool_result.server_name,
+                tool_name=tool_result.tool_name,
+                redaction_count=private_redaction_count,
+            )
+            await self._emit_privacy_event(
+                "privacy_data_redacted",
+                "Admin-private content redacted from MCP tool result",
+                {
+                    "agent_id": agent_id,
+                    "server_name": tool_result.server_name,
+                    "tool_name": tool_result.tool_name,
+                    "redaction_count": private_redaction_count,
+                },
+                severity="info",
+            )
+
         pii_redacted = any(
             f.finding_type.value == "pii_leak" for f in inspection.findings
         )
@@ -574,13 +691,13 @@ class MCPProxy:
             ),
             findings_count=len(inspection.findings),
             threat_level=inspection.threat_level.value,
-            pii_redacted=pii_redacted,
+            pii_redacted=(pii_redacted or private_redacted),
         )
 
         return ProxyResult(
             allowed=True,  # Never block responses, just redact
             call_id=tool_result.call_id,
-            sanitized_result=inspection.sanitized_result,
+            sanitized_result=sanitized_result,
             findings_count=len(inspection.findings),
             threat_level=inspection.threat_level.value,
             processing_time_ms=(time.time() - start) * 1000,
@@ -605,27 +722,6 @@ class MCPProxy:
         """Clean shutdown — close all connections."""
         await self.pool.stop_all()
 
-    async def check_approval_required(
-        self, 
-        tool_call: MCPToolCall
-    ) -> tuple[bool, Optional[str]]:
-        """Check if a tool call requires approval and wait for it if needed.
-        
-        Returns:
-            (approved, reason) - If approved is False, reason contains the error message
-        """
-        if not self.approval_queue:
-            return True, None  # No approval queue configured, allow by default
-            
-        # Check if tool requires approval
-        request_id, requires_wait = await self.approval_queue.submit_tool_request(
-            tool_call.tool_name,
-            tool_call.parameters,
-            tool_call.agent_id
-        )
-        
-        if not requires_wait:
-            return True, None  # Tool doesnt require approval
     async def check_approval_required(self, tool_call):
         """Check if a tool call requires approval and wait for it if needed."""
         if not self.approval_queue:

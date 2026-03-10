@@ -214,6 +214,37 @@ The command has been executed."""
         assert "<function_calls>" not in result.filtered_text
         assert "rm -rf" not in result.filtered_text
         assert "code_blocks" in result.categories_found
+
+    def test_partial_xml_tool_tag_is_filtered(self):
+        """Split-fragment XML tags must still be redacted."""
+        response = "partial fragment </function_calls> and trailing text"
+        result = self.filter.filter_response(response)
+        assert "</function_calls>" not in result.filtered_text
+        assert "[REDACTED_TOOL_CALL]" in result.filtered_text
+
+    def test_collaborator_name_filtering(self):
+        """Known collaborator names should be redacted."""
+        response = "Isaiah Jefferson worked with Marvin and Trillian on this."
+        result = self.filter.filter_response(response)
+        assert "Isaiah Jefferson" not in result.filtered_text
+        assert "Marvin" not in result.filtered_text
+        assert "Trillian" not in result.filtered_text
+        assert result.filtered_text.count("[COLLABORATOR]") >= 2
+
+    def test_workspace_internal_path_filtering(self):
+        """Workspace runtime paths should be redacted."""
+        response = "Path: /home/node/.agentshroud/workspace/collaborator-workspace"
+        result = self.filter.filter_response(response)
+        assert "/home/node/.agentshroud" not in result.filtered_text
+        assert "[INTERNAL_PATH]" in result.filtered_text
+
+    def test_admin_private_service_data_redacted(self):
+        """Admin-private service references should be redacted."""
+        response = "The gmail account contains bank account and routing number data."
+        result = self.filter.filter_response(response)
+        assert "gmail" not in result.filtered_text.lower()
+        assert "bank account" not in result.filtered_text.lower()
+        assert "[PRIVATE_DATA]" in result.filtered_text
         
     def test_multiple_categories(self):
         """Test filtering with multiple information categories."""

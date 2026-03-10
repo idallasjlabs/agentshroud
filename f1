@@ -1,0 +1,106 @@
+# AgentShroud™ Consolidated Issues Report
+**Generated:** 2026-03-09
+**Status:** Compilation of all issues reported across the repository.
+
+---
+
+## 🔴 CRITICAL: Operational Blockers
+
+### 3. Unpinned Base Image in Dockerfile
+- **Source:** `reviews/gemini-review-full.md`
+- **Impact:** Using `node:22-bookworm-slim` instead of a specific digest prevents reproducible builds and risks breaking changes from upstream.
+- **Location:** `docker/Dockerfile.openclaw:4`
+
+---
+
+## 🟠 HIGH: Security & Core Logic Issues
+
+### 4. Function Call Exposure (XML Leak)
+- **Source:** `RECOVERY_PLAN.md`
+- **Impact:** Agent responses via Telegram/iMessage include raw XML blocks (`<function_calls>`, `<invoke>`), exposing internal system commands, file paths, and infrastructure details.
+- **Status:** Mitigation plan (Option A: Response Filter) identified in Phase 1 of Recovery Plan.
+
+### 5. `main.py` Async Bug in Email Module
+- **Source:** `docs/vault/02 - Modules/Gateway Core/main.py.md`
+- **Impact:** `email/send` calls `sanitizer.sanitize()` without `await`. Since `sanitize` is async, this raises a coroutine warning and fails to actually sanitize the content.
+- **Location:** `main.py:1144`
+
+### 6. SSH Bypass in `is_auto_approved`
+- **Source:** `reviews/phase4-gemini-review-2026-02-17.md`
+- **Impact:** The `ssh_exec` endpoint does not check the global `require_approval` flag before calling `is_auto_approved`.
+- **Location:** `main.py`
+
+### 7. CI Safety Issue: Pytest Exit Codes Swallowed
+- **Source:** `reviews/codex-review-full.md`
+- **Impact:** CI hooks use `pytest ... || true`, which swallows non-zero exit codes. Hooks pass even if tests fail, undermining the CI safety gate.
+
+### 8. ForwardResponse Type Mismatch
+- **Source:** `reviews/CODE_REVIEW_REPORT.md`
+- **Impact:** Type mismatch bug in `ForwardResponse.agent_response`.
+- **Status:** Requires bug fix in the Pydantic models.
+
+---
+
+## 🟡 MEDIUM: Technical Debt & Bugs
+
+### 9. Streaming Responses Bypass Outbound Filtering
+- **Source:** `docs/vault/02 - Modules/Gateway Core/main.py.md`
+- **Impact:** Outbound filtering/sanitization is not applied to streaming responses from the LLM proxy.
+- **Status:** Marked as TODO in code.
+
+### 10. Colima VM Internet Connectivity Loss
+- **Source:** `docs/security/container-security-audit-v0.8.0.md`
+- **Impact:** On macOS, the Colima VM periodically loses NAT connectivity, breaking outbound internet routing for containers.
+
+### 11. Missing Test Coverage for Core Modules
+- **Source:** `reviews/v0.2.0-final-review.md`
+- **Impact:**
+    - `event_bus.py`: No tests for subscribe/unsubscribe, error handling, or escalation logic.
+    - `main.py`: Many error paths (config loading, ledger init, auth failures) remain untested.
+
+### 12. PII Redaction Issues
+- **Source:** `SYSTEM_STATUS.md`, `gateway/tests/test_integration.py`
+- **Impact:** PII Redaction was disabled because it caused message delivery issues. Mention of "spaCy/Presidio issue" in integration tests.
+
+### 13. Duplicate Imports & Verbose Pydantic Init
+- **Source:** `reviews/phase4-gemini-review-2026-02-17.md`
+- **Impact:** `SSHConfig` is imported both globally and locally inside `load_config`. Pydantic models are manually parsed instead of using `model_validate`.
+
+---
+
+## 🔵 LOW: Improvements & Formatting
+
+### 14. Hardcoded Database Paths
+- **Source:** `docs/vault/02 - Modules/Gateway Core/main.py.md`, `docs/vault/02 - Modules/Other/approval_queue.py.md`
+- **Impact:** Approval store path `/tmp/agentshroud_approvals.db` is hardcoded instead of using the configuration path.
+
+### 15. Debug Artifacts in Production Code
+- **Source:** `docs/vault/02 - Modules/Gateway Core/main.py.md`
+- **Impact:** `DEBUG: agent_response = {agent_response}` log at line 1435 should be gated or removed.
+
+### 16. Missing Newlines
+- **Source:** `reviews/gemini-review-full.md`
+- **Location:** `docker/seccomp/gateway-seccomp.json:366`
+
+### 17. Hardcoded JWT Metadata
+- **Source:** `docs/vault/02 - Modules/Gateway Core/middleware.py.md`
+- **Impact:** `TokenValidator` uses hardcoded audience/issuer (`agentshroud-gateway`, `agentshroud`).
+
+---
+
+## 📁 Infrastructure Limitations
+
+| Issue | Source | Context |
+|-------|--------|---------|
+| **WidgetKit Refresh Limit** | `docs/ROADMAP-POST-v1.0.md` | iOS limitation: widget timeline only refreshes every 15-30 mins. |
+| **spaCy/Presidio Failures** | `gateway/tests/test_integration.py` | Potential model corruption or dependency conflict in container. |
+| **Unauthorized File Access Bug** | `gateway/tests/test_file_sandbox_message_gate.py` | Logic bug in FileSandbox path validation. |
+
+---
+
+## 📝 General TODOs & Wishlist
+
+- [ ] Persist approved/rejected items in `approval_queue/queue.py`.
+- [ ] Aggregate isolation checks into a unified `verify_shared_nothing()` report (`agent_isolation.py`).
+- [ ] Implement secure session rotation in `session_security.py`.
+- [ ] Add regex fallback for `en_core_web_sm` limitations in PII sanitization.

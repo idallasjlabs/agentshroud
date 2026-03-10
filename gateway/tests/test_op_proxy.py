@@ -27,6 +27,9 @@ class TestIsOpReferenceAllowed:
     def test_allowed_path_different_item(self):
         assert _is_op_reference_allowed("op://Agent Shroud Bot Credentials/Email/password") is True
 
+    def test_allowed_path_without_space_variant(self):
+        assert _is_op_reference_allowed("op://AgentShroud Bot Credentials/API Keys/openai") is True
+
     def test_disallowed_vault_blocked(self):
         assert _is_op_reference_allowed("op://Personal/Logins/bank") is False
 
