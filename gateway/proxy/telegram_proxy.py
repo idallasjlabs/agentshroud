@@ -198,6 +198,21 @@ class TelegramAPIProxy:
         return f"https://{candidate}"
 
     @staticmethod
+    def _is_valid_domain_name(domain: str) -> bool:
+        """Validate normalized domain labels to avoid malformed allowlist entries."""
+        labels = [p for p in (domain or "").split(".") if p]
+        if len(labels) < 2:
+            return False
+        for label in labels:
+            if len(label) > 63:
+                return False
+            if label.startswith("-") or label.endswith("-"):
+                return False
+            if not re.fullmatch(r"[a-z0-9-]+", label):
+                return False
+        return True
+
+    @staticmethod
     def _resolve_text_field(data: dict[str, Any]) -> tuple[str, str]:
         """Return (field_name, text_value) for Telegram-style outbound payloads."""
         for key in ("text", "draft", "message", "content", "caption"):
@@ -641,6 +656,8 @@ class TelegramAPIProxy:
         if not domain:
             return False
         if "." not in domain:
+            return False
+        if not self._is_valid_domain_name(domain):
             return False
         if domain in {"localhost", "local", "localdomain"}:
             return False
