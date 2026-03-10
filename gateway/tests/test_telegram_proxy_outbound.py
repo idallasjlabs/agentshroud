@@ -272,6 +272,20 @@ class TestOutboundPipelineIntegration:
         assert "healthcheck started" in result["text"].lower()
 
     @pytest.mark.asyncio
+    async def test_raw_tool_call_json_with_zero_width_chars_is_suppressed(self):
+        """Obfuscated tool-call JSON should still be normalized and suppressed."""
+        proxy = TelegramAPIProxy(sanitizer=_make_sanitizer())
+        body = json.dumps(
+            {
+                "chat_id": "7614658040",
+                "text": "{\"\u200bname\": \"sessions_spawn\", \"arguments\": {\"agentId\": \"acp.healthcheck\"}}",
+            }
+        ).encode()
+        result = json.loads(await proxy._filter_outbound(body, "application/json"))
+        assert "sessions_spawn" not in result["text"]
+        assert "healthcheck started" in result["text"].lower()
+
+    @pytest.mark.asyncio
     async def test_no_reply_tool_token_is_rewritten_to_wait_message(self):
         """NO_REPLY tool JSON should be converted into a user-safe wait message."""
         proxy = TelegramAPIProxy(sanitizer=_make_sanitizer())
