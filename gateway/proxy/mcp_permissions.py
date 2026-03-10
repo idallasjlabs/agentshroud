@@ -114,6 +114,8 @@ PRIVATE_DATA_PATTERNS: list[str] = [
     r"#\s*Session\s+Memory\s+for\s+User\b",
     r"/home/node/\.openclaw/workspace/(?:memory|MEMORY\.md)\b",
     r"/home/node/\.openclaw/workspace/memory/",
+    r"/home/node/\.agentshroud/workspace/(?:memory|MEMORY\.md)\b",
+    r"/home/node/\.agentshroud/workspace/memory/",
     r"/app/data/sessions/",
     r"/home/node/agentshroud/gateway-data/sessions/",
     r"/app/data/contributors/",
