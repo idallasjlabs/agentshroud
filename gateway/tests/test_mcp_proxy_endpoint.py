@@ -12,6 +12,8 @@ from httpx import AsyncClient, ASGITransport
 from unittest.mock import patch, AsyncMock
 
 from gateway.ingest_api.main import app, lifespan
+from gateway.ingest_api.state import app_state
+from gateway.proxy.mcp_proxy import ProxyResult
 
 
 @pytest_asyncio.fixture
@@ -119,3 +121,94 @@ class TestMCPProxyEndpoint:
         )
         assert resp.status_code == 200
         assert "processing_time_ms" in resp.json()
+
+    @pytest.mark.asyncio
+    async def test_header_user_id_overrides_body_agent_id(self, client, auth_headers, monkeypatch):
+        """x-agentshroud-user-id header must override spoofable body agent_id."""
+        captured = {}
+
+        async def _capture(tool_call, execute=False):
+            captured["agent_id"] = tool_call.agent_id
+            return ProxyResult(
+                allowed=True,
+                call_id=tool_call.id,
+                sanitized_params=tool_call.parameters,
+                audit_entry_id="audit-1",
+            )
+
+        monkeypatch.setattr(app_state.mcp_proxy, "process_tool_call", _capture)
+
+        headers = dict(auth_headers)
+        headers["x-agentshroud-user-id"] = "7614658040"
+        resp = await client.post(
+            "/mcp/proxy",
+            json={
+                "server_name": "home-assistant",
+                "tool_name": "get_states",
+                "parameters": {"entity_id": "light.living_room"},
+                "agent_id": "8096968754",
+            },
+            headers=headers,
+        )
+        assert resp.status_code == 200
+        assert captured["agent_id"] == "7614658040"
+
+    @pytest.mark.asyncio
+    async def test_body_agent_id_used_when_header_missing(self, client, auth_headers, monkeypatch):
+        """Body agent_id is used only when trusted header is absent."""
+        captured = {}
+
+        async def _capture(tool_call, execute=False):
+            captured["agent_id"] = tool_call.agent_id
+            return ProxyResult(
+                allowed=True,
+                call_id=tool_call.id,
+                sanitized_params=tool_call.parameters,
+                audit_entry_id="audit-2",
+            )
+
+        monkeypatch.setattr(app_state.mcp_proxy, "process_tool_call", _capture)
+
+        resp = await client.post(
+            "/mcp/proxy",
+            json={
+                "server_name": "home-assistant",
+                "tool_name": "get_states",
+                "parameters": {"entity_id": "light.kitchen"},
+                "agent_id": "default-body-agent",
+            },
+            headers=auth_headers,
+        )
+        assert resp.status_code == 200
+        assert captured["agent_id"] == "default-body-agent"
+
+    @pytest.mark.asyncio
+    async def test_invalid_header_identity_rejected(self, client, auth_headers):
+        headers = dict(auth_headers)
+        headers["x-agentshroud-user-id"] = "bad identity !"
+        resp = await client.post(
+            "/mcp/proxy",
+            json={
+                "server_name": "home-assistant",
+                "tool_name": "get_states",
+                "parameters": {},
+                "agent_id": "default",
+            },
+            headers=headers,
+        )
+        assert resp.status_code == 400
+
+    @pytest.mark.asyncio
+    async def test_owner_body_identity_rejected_without_header(self, client, auth_headers):
+        """Body-only owner identity must be rejected to prevent impersonation."""
+        resp = await client.post(
+            "/mcp/proxy",
+            json={
+                "server_name": "home-assistant",
+                "tool_name": "get_states",
+                "parameters": {},
+                "agent_id": "8096968754",
+            },
+            headers=auth_headers,
+        )
+        assert resp.status_code == 400

@@ -54,14 +54,20 @@ let changed = false;
 
 config.agents = config.agents || {};
 config.agents.list = config.agents.list || [];
+config.commands = config.commands || {};
+if (config.commands.ownerDisplay !== 'hash') {
+  config.commands.ownerDisplay = 'hash';
+  changed = true;
+}
 
 const MODEL_MODE = String(process.env.AGENTSHROUD_MODEL_MODE || 'local').toLowerCase();
-const LOCAL_MODEL_REF = process.env.AGENTSHROUD_LOCAL_MODEL_REF || 'ollama/qwen2.5-coder:7b';
+const LOCAL_MODEL_REF = process.env.AGENTSHROUD_LOCAL_MODEL_REF || 'ollama/qwen3:14b';
 const CLOUD_MODEL_REF = process.env.AGENTSHROUD_CLOUD_MODEL_REF || 'anthropic/claude-opus-4-6';
 const inferredMainModel = MODEL_MODE === 'cloud' ? CLOUD_MODEL_REF : LOCAL_MODEL_REF;
 const MAIN_MODEL = process.env.OPENCLAW_MAIN_MODEL || inferredMainModel;
-const LOCAL_MODEL_NAME = process.env.AGENTSHROUD_LOCAL_MODEL || LOCAL_MODEL_REF.split('/').slice(-1)[0] || 'qwen2.5-coder:7b';
+const LOCAL_MODEL_NAME = process.env.AGENTSHROUD_LOCAL_MODEL || LOCAL_MODEL_REF.split('/').slice(-1)[0] || 'qwen3:14b';
 const OLLAMA_BASE_URL_RAW = process.env.OLLAMA_BASE_URL || 'http://gateway:8080/v1';
+const OLLAMA_PROVIDER_API = process.env.OPENCLAW_OLLAMA_API || 'ollama';
 const OLLAMA_BASE_URL = /\/v1\/?$/i.test(OLLAMA_BASE_URL_RAW)
   ? OLLAMA_BASE_URL_RAW.replace(/\/+$/, '')
   : `${OLLAMA_BASE_URL_RAW.replace(/\/+$/, '')}/v1`;
@@ -88,7 +94,7 @@ config.models = config.models || {};
 config.models.providers = config.models.providers || {};
 const desiredOllama = {
   baseUrl: OLLAMA_BASE_URL,
-  api: 'openai-completions',
+  api: OLLAMA_PROVIDER_API,
   models: [{
     id: LOCAL_MODEL_NAME,
     name: LOCAL_MODEL_NAME,

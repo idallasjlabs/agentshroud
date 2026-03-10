@@ -6,6 +6,7 @@
 # M8: Base image pinned to SHA256 digest for supply chain integrity
 # Update with: docker pull node:22-bookworm-slim && docker inspect --format='{{index .RepoDigests 0}}' node:22-bookworm-slim
 FROM node:22-bookworm-slim@sha256:5373f1906319b3a1f291da5d102f4ce5c77ccbe29eb637f072b6c7b70443fc36
+ENV DEBIAN_FRONTEND=noninteractive
 
 # Install system dependencies
 RUN apt-get update && \
@@ -134,10 +135,9 @@ LABEL org.opencontainers.image.vendor="AgentShroud"
 LABEL org.opencontainers.image.version="0.8.0"
 LABEL org.opencontainers.image.source="https://github.com/idallasj/agentshroud"
 
-# SECURITY (M2): Remove unnecessary interpreters — reduce attack surface
-# perl is inherited from base image; not needed by the bot
-RUN apt-get purge -y --auto-remove perl-base perl-modules-5.36 2>/dev/null || true && \
-    rm -f /usr/bin/perl /usr/bin/perl5* 2>/dev/null || true
+# SECURITY (M2): Remove unnecessary interpreter entrypoints from PATH.
+# Avoid purging essential base packages to keep image builds warning-free.
+RUN rm -f /usr/bin/perl /usr/bin/perl5* 2>/dev/null || true
 
 # Strip setuid/setgid bits — CIS Docker Benchmark 4.8 (R2-H2 fix)
 RUN find / -perm /6000 -type f -exec chmod a-s {} + 2>/dev/null || true

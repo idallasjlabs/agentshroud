@@ -34,7 +34,8 @@ const readline = require('readline');
 
 const GATEWAY_URL = process.env.GATEWAY_URL || 'http://gateway:8080';
 const AUTH_TOKEN = process.env.GATEWAY_AUTH_TOKEN || '';
-const AGENT_ID = 'openclaw-bot';
+const AGENT_ID = process.env.AGENTSHROUD_AGENT_ID || 'openclaw-bot';
+const AGENT_USER_ID_HEADER = process.env.AGENTSHROUD_USER_ID || AGENT_ID;
 
 // ── Arg parsing ───────────────────────────────────────────────────────────────
 
@@ -93,6 +94,7 @@ function gatewayPost(path, body) {
           'Content-Type': 'application/json',
           'Content-Length': Buffer.byteLength(data),
           Authorization: `Bearer ${AUTH_TOKEN}`,
+          'X-AgentShroud-User-Id': AGENT_USER_ID_HEADER,
         },
         timeout: 10000,
       },
