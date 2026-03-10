@@ -791,6 +791,70 @@ class TestOutboundPipelineIntegration:
         assert called["kwargs"]["destination"] == "https://waether.com"
         assert "approval request queued" in result["text"].lower()
 
+    @pytest.mark.asyncio
+    async def test_raw_web_fetch_json_approval_strips_trailing_punctuation(self, monkeypatch):
+        """Trailing punctuation in leaked URL should be normalized before approval check."""
+        called = {"value": False}
+
+        class FakeEgress:
+            async def check_async(self, **kwargs):
+                called["value"] = True
+                called["kwargs"] = kwargs
+                return SimpleNamespace(action="deny")
+
+        from gateway.ingest_api import state as state_module
+
+        monkeypatch.setattr(
+            state_module,
+            "app_state",
+            SimpleNamespace(egress_filter=FakeEgress()),
+        )
+        proxy = TelegramAPIProxy(sanitizer=_make_sanitizer())
+        body = json.dumps(
+            {
+                "chat_id": "8096968754",
+                "text": "{\"name\":\"web_fetch\",\"arguments\":{\"url\":\"https://accuweather.com)\"}}",
+            }
+        ).encode()
+
+        result = json.loads(await proxy._filter_outbound(body, "application/json"))
+        await asyncio.sleep(0)
+
+        assert called["value"] is True
+        assert called["kwargs"]["destination"] == "https://accuweather.com"
+        assert "approval request queued" in result["text"].lower()
+
+    @pytest.mark.asyncio
+    async def test_raw_web_fetch_json_invalid_host_does_not_queue_approval(self, monkeypatch):
+        """Non-domain hosts should not queue egress approval requests."""
+        calls = {"count": 0}
+
+        class FakeEgress:
+            async def check_async(self, **_kwargs):
+                calls["count"] += 1
+                return SimpleNamespace(action="deny")
+
+        from gateway.ingest_api import state as state_module
+
+        monkeypatch.setattr(
+            state_module,
+            "app_state",
+            SimpleNamespace(egress_filter=FakeEgress()),
+        )
+        proxy = TelegramAPIProxy(sanitizer=_make_sanitizer())
+        body = json.dumps(
+            {
+                "chat_id": "8096968754",
+                "text": "{\"name\":\"web_fetch\",\"arguments\":{\"url\":\"https://localhost\"}}",
+            }
+        ).encode()
+
+        result = json.loads(await proxy._filter_outbound(body, "application/json"))
+        await asyncio.sleep(0)
+
+        assert calls["count"] == 0
+        assert "approval request queued" not in result["text"].lower()
+
     def test_sanitize_reason_hides_internal_paths(self):
         """User-facing block reasons should not expose modules or file paths."""
         reason = (
