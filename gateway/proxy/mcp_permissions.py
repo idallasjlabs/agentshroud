@@ -16,6 +16,7 @@ import logging
 import os
 import json
 import time
+import re
 from dataclasses import dataclass
 from typing import Optional
 
@@ -79,11 +80,26 @@ PRIVATE_TOOL_PATTERNS: list[str] = [
     "*smtp*",
     "*imap*",
     "*memory_search*",
+    "*memory.search*",
+    "*memory-search*",
     "*memory_get*",
+    "*memory.get*",
+    "*memory-get*",
     "*memory_write*",
+    "*memory.write*",
+    "*memory-write*",
     "*memory_update*",
+    "*memory.update*",
+    "*memory-update*",
     "*memory_delete*",
+    "*memory.delete*",
+    "*memory-delete*",
     "*memory_list*",
+    "*memory.list*",
+    "*memory-list*",
+    "memory_*",
+    "memory.*",
+    "memory-*",
 ]
 
 # Redaction patterns for admin-private content that must never leak to
@@ -94,6 +110,18 @@ PRIVATE_DATA_PATTERNS: list[str] = [
     r"\b(?:home\s*assistant|homeassistant)\b",
     r"\b(?:bank\s*account|routing\s*number|account\s*number)\b",
     r"\b(?:financial\s*data|wallet|credit\s*limit)\b",
+    r"\bMEMORY\.md\b",
+    r"#\s*Session\s+Memory\s+for\s+User\b",
+    r"/home/node/\.openclaw/workspace/(?:memory|MEMORY\.md)\b",
+    r"/home/node/\.openclaw/workspace/memory/",
+    r"/app/data/sessions/",
+    r"/home/node/agentshroud/gateway-data/sessions/",
+    r"/app/data/contributors/",
+    r"/data/bot-workspace/memory/contributors/",
+    r"/home/node/\.openclaw/workspace/memory/contributors/",
+    r"/home/node/agentshroud/gateway-data/contributors/",
+    r"/home/node/agentshroud/gateway-data/collaborator_activity\.jsonl\b",
+    r"/app/data/collaborator_activity\.jsonl\b",
 ]
 
 
@@ -443,6 +471,80 @@ class MCPPermissionManager:
             agent_trust_level=trust_level,
         )
 
+    def check_tool_parameters(
+        self,
+        agent_id: str,
+        server_name: str,
+        tool_name: str,
+        parameters: object | None,
+    ) -> PermissionCheck:
+        """Block non-owner tool calls that reference admin-private data paths/content."""
+        if str(agent_id) == str(self._owner_user_id):
+            return PermissionCheck(allowed=True, agent_trust_level=self.get_trust_level(agent_id))
+        if parameters is None:
+            return PermissionCheck(allowed=True, agent_trust_level=self.get_trust_level(agent_id))
+
+        compiled_patterns: list[tuple[str, re.Pattern[str]]] = []
+        for pattern in self._private_data_patterns:
+            try:
+                compiled_patterns.append((pattern, re.compile(pattern, re.IGNORECASE)))
+            except re.error:
+                continue
+        if not compiled_patterns:
+            return PermissionCheck(allowed=True, agent_trust_level=self.get_trust_level(agent_id))
+
+        matched_pattern: str | None = None
+        matched_value: str | None = None
+
+        def _walk(value: object) -> None:
+            nonlocal matched_pattern, matched_value
+            if matched_pattern is not None:
+                return
+            if isinstance(value, dict):
+                for v in value.values():
+                    _walk(v)
+                return
+            if isinstance(value, (list, tuple, set)):
+                for item in value:
+                    _walk(item)
+                return
+            if not isinstance(value, str):
+                return
+            for pattern, cre in compiled_patterns:
+                if cre.search(value):
+                    matched_pattern = pattern
+                    matched_value = value
+                    return
+
+        _walk(parameters)
+        if matched_pattern is None:
+            return PermissionCheck(allowed=True, agent_trust_level=self.get_trust_level(agent_id))
+
+        reason = (
+            f"Tool {tool_name} parameters reference admin-private data and are "
+            f"unavailable to non-owner agent {agent_id}"
+        )
+        self._record_private_access_attempt(
+            agent_id=agent_id,
+            server_name=server_name,
+            tool_name=tool_name,
+            matched_pattern=matched_pattern,
+            reason=reason,
+        )
+        logger.warning(
+            "Blocked admin-private parameter access: agent=%s server=%s tool=%s pattern=%s sample=%s",
+            agent_id,
+            server_name,
+            tool_name,
+            matched_pattern,
+            (matched_value or "")[:120],
+        )
+        return PermissionCheck(
+            allowed=False,
+            reason=reason,
+            agent_trust_level=self.get_trust_level(agent_id),
+        )
+
     def check_rate_limit(
         self,
         agent_id: str,
@@ -505,6 +607,7 @@ class MCPPermissionManager:
         agent_id: str,
         server_name: str,
         tool_name: str,
+        parameters: object | None = None,
     ) -> PermissionCheck:
         """Run all permission checks in order. Returns first failure or final success."""
         # 1. Server access
@@ -517,6 +620,11 @@ class MCPPermissionManager:
         if not result.allowed:
             return result
 
-        # 3. Rate limit
+        # 3. Tool parameters
+        result = self.check_tool_parameters(agent_id, server_name, tool_name, parameters)
+        if not result.allowed:
+            return result
+
+        # 4. Rate limit
         result = self.check_rate_limit(agent_id, server_name, tool_name)
         return result

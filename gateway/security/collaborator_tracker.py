@@ -13,6 +13,7 @@ import logging
 import os
 import time
 from pathlib import Path
+from datetime import datetime, timezone
 from typing import Optional
 
 logger = logging.getLogger("agentshroud.security.collaborator_tracker")
@@ -37,6 +38,7 @@ class CollaboratorActivityTracker:
         log_path: Path,
         owner_user_id: str,
         collaborator_ids: list[str],
+        contributor_log_dir: Optional[Path] = None,
     ) -> None:
         self.log_path = log_path
         self.owner_user_id = str(owner_user_id)
@@ -45,12 +47,49 @@ class CollaboratorActivityTracker:
             str(os.environ.get("AGENTSHROUD_TRACK_ALL_NON_OWNER_ACTIVITY", "true")).strip().lower()
             not in ("0", "false", "no", "off")
         )
+        self.contributor_log_dir = contributor_log_dir or Path(
+            os.environ.get(
+                "AGENTSHROUD_CONTRIBUTOR_LOG_DIR",
+                "/data/bot-workspace/memory/contributors",
+            )
+        )
+        configured_dirs = str(
+            os.environ.get(
+                "AGENTSHROUD_CONTRIBUTOR_LOG_DIRS",
+                "/app/data/contributors",
+            )
+        )
+        self.contributor_log_dirs: list[Path] = []
+        for raw_dir in configured_dirs.split(","):
+            candidate = Path(raw_dir.strip())
+            if not raw_dir.strip():
+                continue
+            if candidate not in self.contributor_log_dirs:
+                self.contributor_log_dirs.append(candidate)
+        if self.contributor_log_dir not in self.contributor_log_dirs:
+            self.contributor_log_dirs.append(self.contributor_log_dir)
+        self._active_contributor_log_dirs: list[Path] = []
 
         # Ensure parent directory exists
         try:
             self.log_path.parent.mkdir(parents=True, exist_ok=True)
         except OSError as exc:
             logger.warning("CollaboratorActivityTracker: cannot create log dir: %s", exc)
+        for log_dir in self.contributor_log_dirs:
+            try:
+                log_dir.mkdir(parents=True, exist_ok=True)
+                self._active_contributor_log_dirs.append(log_dir)
+            except OSError as exc:
+                logger.info(
+                    "CollaboratorActivityTracker: contributor dir unavailable (%s): %s",
+                    log_dir,
+                    exc,
+                )
+        if not self._active_contributor_log_dirs:
+            logger.warning(
+                "CollaboratorActivityTracker: no contributor log dirs writable; configured=%s",
+                [str(p) for p in self.contributor_log_dirs],
+            )
 
     def record_activity(
         self,
@@ -89,6 +128,37 @@ class CollaboratorActivityTracker:
                 fh.write(json.dumps(entry) + "\n")
         except OSError as exc:
             logger.warning("CollaboratorActivityTracker: write failed: %s", exc)
+        self._append_contributor_log(entry)
+
+    def _append_contributor_log(self, entry: dict) -> None:
+        """Mirror activity into workspace contributor logs used by daily digests."""
+        try:
+            ts = float(entry.get("timestamp", time.time()))
+            dt = datetime.fromtimestamp(ts, tz=timezone.utc)
+            date_str = dt.strftime("%Y-%m-%d")
+            uid = str(entry.get("user_id", "unknown"))
+            safe_uid = "".join(ch for ch in uid if ch.isalnum() or ch in ("-", "_")) or "unknown"
+            line = (
+                f"- {dt.isoformat()} | {entry.get('username', 'unknown')} ({uid}) "
+                f"| {entry.get('source', 'unknown')} | {entry.get('message_preview', '')}\n"
+            )
+            wrote = False
+            for log_dir in self._active_contributor_log_dirs:
+                try:
+                    file_path = log_dir / f"{date_str}-{safe_uid}.md"
+                    with file_path.open("a", encoding="utf-8") as fh:
+                        fh.write(line)
+                    wrote = True
+                except OSError as exc:
+                    logger.info(
+                        "CollaboratorActivityTracker: contributor log write skipped (%s): %s",
+                        log_dir,
+                        exc,
+                    )
+            if not wrote:
+                logger.warning("CollaboratorActivityTracker: contributor log write failed for all dirs")
+        except OSError as exc:
+            logger.warning("CollaboratorActivityTracker: contributor log write failed: %s", exc)
 
     def get_activity(self, since: float = 0, limit: int = 100) -> list[dict]:
         """Return recent activity entries in chronological order.

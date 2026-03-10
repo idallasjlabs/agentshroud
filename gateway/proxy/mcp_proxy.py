@@ -20,6 +20,7 @@ import logging
 import re
 import time
 import uuid
+from urllib.parse import urlparse
 from dataclasses import dataclass
 from typing import Any, Optional
 
@@ -234,6 +235,7 @@ class MCPProxy:
         audit_trail: Optional[MCPAuditTrail] = None,
         passthrough: bool = False,
         approval_queue: Optional[EnhancedApprovalQueue] = None,
+        egress_filter=None,
     ):
         self.config = config or MCPProxyConfig()
         self.permissions = permission_manager or MCPPermissionManager(self.config)
@@ -242,6 +244,7 @@ class MCPProxy:
         self.pool = ConnectionPool()
         self.passthrough = passthrough  # Bypass mode for debugging
         self.approval_queue = approval_queue
+        self.egress_filter = egress_filter
         self._stats = {
             "total_calls": 0,
             "allowed": 0,
@@ -251,6 +254,48 @@ class MCPProxy:
         }
         self._private_redaction_token = "<ADMIN_PRIVATE_DATA>"
         self._event_bus = None
+
+    @staticmethod
+    def _extract_egress_targets(params: Any) -> list[str]:
+        """Extract outbound URL-like targets from nested MCP tool parameters."""
+        urls: list[str] = []
+        seen: set[str] = set()
+
+        def _add(candidate: str) -> None:
+            if not candidate:
+                return
+            value = candidate.strip()
+            if value and value not in seen:
+                seen.add(value)
+                urls.append(value)
+
+        def _walk(value: Any, parent_key: str = "") -> None:
+            if isinstance(value, dict):
+                for k, v in value.items():
+                    _walk(v, str(k).lower())
+                return
+            if isinstance(value, list):
+                for item in value:
+                    _walk(item, parent_key)
+                return
+            if not isinstance(value, str):
+                return
+
+            # Direct URL strings.
+            text = value.strip()
+            if text.startswith("http://") or text.startswith("https://"):
+                parsed = urlparse(text)
+                if parsed.scheme in ("http", "https") and parsed.netloc:
+                    _add(text)
+                return
+
+            # Bare host/domain in destination-like fields.
+            if parent_key in {"url", "uri", "endpoint", "host", "domain", "destination"}:
+                if re.match(r"^[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}(?::\d+)?$", text):
+                    _add(f"https://{text}/")
+
+        _walk(params)
+        return urls
 
     def set_event_bus(self, event_bus) -> None:
         """Wire optional event bus for privacy/security telemetry."""
@@ -384,7 +429,10 @@ class MCPProxy:
 
         # 1. Permission check
         perm_result = self.permissions.check_all(
-            tool_call.agent_id, tool_call.server_name, tool_call.tool_name
+            tool_call.agent_id,
+            tool_call.server_name,
+            tool_call.tool_name,
+            tool_call.parameters,
         )
         if not perm_result.allowed:
             self._stats["blocked"] += 1
@@ -453,6 +501,48 @@ class MCPProxy:
                 audit_entry_id=entry.id,
                 processing_time_ms=(time.time() - start) * 1000,
             )
+
+        # 2.5. Egress policy check for URL-bearing tool parameters.
+        if self.egress_filter:
+            for target in self._extract_egress_targets(inspection.sanitized_params or tool_call.parameters):
+                if hasattr(self.egress_filter, "check_async"):
+                    attempt = await self.egress_filter.check_async(
+                        agent_id=tool_call.agent_id,
+                        destination=target,
+                        tool_name=tool_call.tool_name,
+                    )
+                else:
+                    attempt = self.egress_filter.check(
+                        tool_call.agent_id,
+                        target,
+                    )
+                action = getattr(getattr(attempt, "action", None), "value", getattr(attempt, "action", ""))
+                if str(action).lower() == "deny":
+                    reason = getattr(attempt, "details", "") or getattr(attempt, "rule", "") or "egress policy denied"
+                    block_reason = f"Egress blocked: {target} — {reason}"
+                    self._stats["blocked"] += 1
+                    entry = self.audit.log_tool_call(
+                        agent_id=tool_call.agent_id,
+                        server_name=tool_call.server_name,
+                        tool_name=tool_call.tool_name,
+                        parameters=inspection.sanitized_params or tool_call.parameters,
+                        findings_count=len(inspection.findings),
+                        threat_level=inspection.threat_level.value,
+                        blocked=True,
+                        block_reason=block_reason,
+                        call_id=tool_call.id,
+                    )
+                    return ProxyResult(
+                        allowed=False,
+                        blocked=True,
+                        block_reason=block_reason,
+                        call_id=tool_call.id,
+                        sanitized_params=inspection.sanitized_params,
+                        findings_count=len(inspection.findings),
+                        threat_level=inspection.threat_level.value,
+                        audit_entry_id=entry.id,
+                        processing_time_ms=(time.time() - start) * 1000,
+                    )
 
         # 3. Log allowed call
         self._stats["allowed"] += 1

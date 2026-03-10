@@ -9,12 +9,20 @@ from __future__ import annotations
 import asyncio
 import pytest
 import pytest_asyncio
+import time
 from unittest.mock import patch
 from httpx import AsyncClient, ASGITransport
+from pathlib import Path
+from types import SimpleNamespace
 
 from gateway.ingest_api.main import app, app_state, lifespan
 from gateway.ingest_api.event_bus import make_event
-from gateway.ingest_api.routes.dashboard import _create_ws_token
+from gateway.ingest_api.routes.dashboard import (
+    _create_ws_token,
+    _parse_collaborator_log_dirs,
+    _load_contributor_logs,
+    _build_egress_live_snapshot,
+)
 
 
 @pytest_asyncio.fixture
@@ -76,6 +84,51 @@ async def test_dashboard_stats_requires_auth(client):
     assert resp.status_code == 401
 
 
+@pytest.mark.asyncio
+async def test_collaborators_endpoint_reads_configured_contributor_sources(client, monkeypatch, tmp_path):
+    dir_a = tmp_path / "contributors-a"
+    dir_b = tmp_path / "contributors-b"
+    dir_a.mkdir()
+    dir_b.mkdir()
+    (dir_a / "2026-03-09-111.md").write_text("older")
+    (dir_a / "2026-03-10-111.md").write_text("newer")
+    (dir_b / "2026-03-10-222.md").write_text("peer")
+    monkeypatch.setenv("AGENTSHROUD_CONTRIBUTOR_LOG_DIRS", f"{dir_a},{dir_b}")
+
+    old_tracker = getattr(app_state, "collaborator_tracker", None)
+    app_state.collaborator_tracker = SimpleNamespace(
+        get_activity=lambda limit=50: [],
+        get_activity_summary=lambda: {
+            "total_messages": 0,
+            "unique_users": 0,
+            "last_activity": None,
+            "by_user": {},
+        },
+    )
+    try:
+        resp = await client.get(
+            "/collaborators",
+            headers={"Authorization": "Bearer test-token-12345"},
+        )
+        assert resp.status_code == 200
+        data = resp.json()
+        assert str(dir_a) in data["contributor_log_sources"]
+        assert str(dir_b) in data["contributor_log_sources"]
+        assert any(
+            source.endswith("/data/bot-workspace/memory/contributors")
+            for source in data["contributor_log_sources"]
+        )
+        assert [log["filename"] for log in data["contributor_logs"]] == [
+            "2026-03-10-111.md",
+            "2026-03-09-111.md",
+            "2026-03-10-222.md",
+        ]
+        assert data["contributor_logs"][0]["source_dir"] == str(dir_a)
+        assert data["contributor_logs"][-1]["source_dir"] == str(dir_b)
+    finally:
+        app_state.collaborator_tracker = old_tracker
+
+
 def test_ws_activity_connects(sync_client):
     """WebSocket /ws/activity connects and authenticates via scoped WS token"""
     ws_token = _create_ws_token()
@@ -123,6 +176,15 @@ def test_ws_egress_connects_and_snapshot(sync_client):
         assert "soc_risk" in snap["details"]
         assert "soc_summary" in snap["details"]
         assert "privacy_policy_summary" in snap["details"]
+        assert "privacy_access_summary" in snap["details"]
+        assert "privacy_redaction_summary" in snap["details"]
+        assert "pending_by_risk" in snap["details"]
+        assert "pending_domain_top" in snap["details"]
+        assert "pending_agent_top" in snap["details"]
+        assert "pending_tool_top" in snap["details"]
+        assert "pending_average_age_seconds" in snap["details"]
+        assert "pending_oldest_age_seconds" in snap["details"]
+        assert "pending_expiring_soon_count" in snap["details"]
 
 
 def test_ws_egress_receives_scanner_event(sync_client):
@@ -178,6 +240,106 @@ def test_ws_activity_requires_auth(sync_client):
     with pytest.raises(Exception):
         with sync_client.websocket_connect("/ws/activity?token=wrong-token") as ws:
             ws.receive_json()
+
+
+def test_parse_collaborator_log_dirs_dedupes_and_preserves_order(monkeypatch):
+    monkeypatch.setenv(
+        "AGENTSHROUD_CONTRIBUTOR_LOG_DIRS",
+        "/tmp/a,/tmp/b,/tmp/a,,/tmp/c",
+    )
+    dirs = _parse_collaborator_log_dirs()
+    assert dirs == [Path("/tmp/a"), Path("/tmp/b"), Path("/tmp/c")]
+
+
+def test_load_contributor_logs_reads_multiple_dirs_and_dedupes(tmp_path):
+    dir_a = tmp_path / "a"
+    dir_b = tmp_path / "b"
+    dir_a.mkdir()
+    dir_b.mkdir()
+
+    (dir_a / "2026-03-10-111.md").write_text("alice")
+    (dir_b / "2026-03-10-222.md").write_text("bob")
+    # duplicate filename in second dir should be skipped
+    (dir_b / "2026-03-10-111.md").write_text("duplicate")
+
+    logs = _load_contributor_logs([dir_a, dir_b])
+    names = [item["filename"] for item in logs]
+    assert names == ["2026-03-10-111.md", "2026-03-10-222.md"]
+    assert logs[0]["content"] == "alice"
+    assert logs[0]["source_dir"] == str(dir_a)
+    assert logs[1]["source_dir"] == str(dir_b)
+
+
+@pytest.mark.asyncio
+async def test_build_egress_live_snapshot_enriches_pending_metrics(monkeypatch):
+    now = time.time()
+
+    class _ApprovalQueue:
+        async def get_pending_requests(self):
+            return [
+                {
+                    "request_id": "r1",
+                    "domain": "weather.com",
+                    "port": 443,
+                    "agent_id": "a1",
+                    "tool_name": "web_fetch",
+                    "timestamp": now - 10,
+                    "risk_level": "yellow",
+                    "timeout_at": now + 5,
+                }
+            ]
+
+        async def get_emergency_status(self):
+            return {"enabled": False, "reason": ""}
+
+    class _EgressFilter:
+        def get_stats(self):
+            return {"total": 1}
+
+        def get_log(self, limit=20):
+            return []
+
+    async def _get_recent(limit=200):
+        return []
+
+    old_approval = getattr(app_state, "egress_approval_queue", None)
+    old_filter = getattr(app_state, "egress_filter", None)
+    old_bus = getattr(app_state, "event_bus", None)
+    old_quarantine = getattr(app_state, "blocked_message_quarantine", None)
+    old_outbound_quarantine = getattr(app_state, "blocked_outbound_quarantine", None)
+    old_scanner_results = getattr(app_state, "scanner_results", None)
+    old_scanner_history = getattr(app_state, "scanner_result_history", None)
+    old_mcp_proxy = getattr(app_state, "mcp_proxy", None)
+    try:
+        app_state.egress_approval_queue = _ApprovalQueue()
+        app_state.egress_filter = _EgressFilter()
+        app_state.event_bus = SimpleNamespace(get_recent=_get_recent)
+        app_state.blocked_message_quarantine = []
+        app_state.blocked_outbound_quarantine = []
+        app_state.scanner_results = {}
+        app_state.scanner_result_history = []
+        app_state.mcp_proxy = None
+
+        snapshot = await _build_egress_live_snapshot()
+        assert snapshot["pending_requests"] == 1
+        assert snapshot["pending_oldest_age_seconds"] >= 9.0
+        assert snapshot["pending_average_age_seconds"] >= 9.0
+        assert snapshot["pending_expiring_soon_count"] == 1
+        assert snapshot["pending_agent_top"] == [{"agent_id": "a1", "count": 1}]
+        assert snapshot["pending_tool_top"] == [{"tool_name": "web_fetch", "count": 1}]
+        assert len(snapshot["pending_items"]) == 1
+        item = snapshot["pending_items"][0]
+        assert item["age_seconds"] >= 9.0
+        assert item["remaining_seconds"] <= 6.0
+    finally:
+        app_state.egress_approval_queue = old_approval
+        app_state.egress_filter = old_filter
+        app_state.event_bus = old_bus
+        app_state.blocked_message_quarantine = old_quarantine
+        app_state.blocked_outbound_quarantine = old_outbound_quarantine
+        app_state.scanner_results = old_scanner_results
+        app_state.scanner_result_history = old_scanner_history
+        app_state.mcp_proxy = old_mcp_proxy
 
 
 @pytest.mark.asyncio

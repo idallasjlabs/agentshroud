@@ -15,6 +15,7 @@ from fastapi.testclient import TestClient
 from fastapi import HTTPException
 
 from gateway.ingest_api.main import app
+from gateway.ingest_api.main import auth_dep
 from gateway.ingest_api.models import ForwardRequest
 from gateway.ingest_api.middleware import MiddlewareResult
 
@@ -235,3 +236,76 @@ class TestErrorHandling:
         response = client.get("/forward")
         
         assert response.status_code == 405
+
+
+class TestQuarantineEndpoints:
+    """Test quarantine management endpoints in main.py."""
+
+    def test_quarantine_summary_counts_inbound_and_outbound(self):
+        from gateway.ingest_api import main as main_module
+
+        app.dependency_overrides[auth_dep] = lambda: None
+        try:
+            main_module.app_state.blocked_message_quarantine = [
+                {"status": "pending"},
+                {"status": "released"},
+                {"status": "discarded"},
+            ]
+            main_module.app_state.blocked_outbound_quarantine = [
+                {"status": "pending"},
+                {"status": "pending"},
+                {"status": "released"},
+            ]
+
+            client = TestClient(app)
+            response = client.get("/manage/quarantine/summary")
+            assert response.status_code == 200
+            data = response.json()
+            assert data["inbound"]["total"] == 3
+            assert data["inbound"]["pending"] == 1
+            assert data["outbound"]["total"] == 3
+            assert data["outbound"]["pending"] == 2
+        finally:
+            app.dependency_overrides.pop(auth_dep, None)
+
+    def test_release_blocked_outbound_marks_item_released(self):
+        from gateway.ingest_api import main as main_module
+
+        app.dependency_overrides[auth_dep] = lambda: None
+        try:
+            main_module.app_state.blocked_outbound_quarantine = [
+                {
+                    "message_id": "msg-1",
+                    "chat_id": "123",
+                    "text": "blocked text",
+                    "status": "pending",
+                }
+            ]
+            main_module.app_state.event_bus = None
+
+            client = TestClient(app)
+            response = client.post("/manage/quarantine/blocked-outbound/msg-1/release")
+            assert response.status_code == 200
+            payload = response.json()
+            assert payload["ok"] is True
+            assert payload["item"]["status"] == "released"
+            assert payload["item"]["released_by"] == "admin"
+        finally:
+            app.dependency_overrides.pop(auth_dep, None)
+
+    def test_discard_blocked_message_not_found_returns_error(self):
+        from gateway.ingest_api import main as main_module
+
+        app.dependency_overrides[auth_dep] = lambda: None
+        try:
+            main_module.app_state.blocked_message_quarantine = []
+            main_module.app_state.event_bus = None
+
+            client = TestClient(app)
+            response = client.post("/manage/quarantine/blocked-messages/missing/discard")
+            assert response.status_code == 200
+            payload = response.json()
+            assert payload["ok"] is False
+            assert payload["error"] == "message_not_found"
+        finally:
+            app.dependency_overrides.pop(auth_dep, None)

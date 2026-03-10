@@ -24,12 +24,14 @@ import urllib.error
 import urllib.parse
 import ssl
 from typing import Any, Optional
+from urllib.parse import urlparse
 
 from gateway.security.input_normalizer import normalize_input, strip_markdown_exfil
 
 logger = logging.getLogger("agentshroud.proxy.telegram_api")
 
 TELEGRAM_API_BASE = "https://api.telegram.org"
+_SUPPRESS_OUTBOUND_TOKEN = "__AGENTSHROUD_SUPPRESS_OUTBOUND__"
 
 # Slash-commands that are forbidden for collaborators (owner-only capabilities)
 _COLLABORATOR_BLOCKED_COMMANDS = {
@@ -68,6 +70,18 @@ class TelegramAPIProxy:
         self._max_outbound_chars = int(os.environ.get("AGENTSHROUD_MAX_OUTBOUND_CHARS", "3800"))
         self._block_cascade_seconds = float(os.environ.get("AGENTSHROUD_BLOCK_CASCADE_SECONDS", "4.0"))
         self._recent_outbound_blocks_until: dict[str, float] = {}
+        self._system_notice_cooldown_seconds = float(
+            os.environ.get("AGENTSHROUD_SYSTEM_NOTICE_COOLDOWN_SECONDS", "120.0")
+        )
+        self._recent_system_notice_until: dict[tuple[str, str], float] = {}
+        self._web_fetch_approval_cooldown_seconds = float(
+            os.environ.get("AGENTSHROUD_WEB_FETCH_APPROVAL_COOLDOWN_SECONDS", "20.0")
+        )
+        self._recent_web_fetch_approval_until: dict[tuple[str, str], float] = {}
+        self._no_reply_notice_cooldown_seconds = float(
+            os.environ.get("AGENTSHROUD_NO_REPLY_NOTICE_COOLDOWN_SECONDS", "15.0")
+        )
+        self._recent_no_reply_notice_until: dict[str, float] = {}
 
         # Track which collaborator user IDs have already received the disclosure notice
         # this session. Persisted in-memory only — resets on gateway restart (acceptable).
@@ -134,6 +148,30 @@ class TelegramAPIProxy:
             return parsed
         return None
 
+    @classmethod
+    def _extract_embedded_tool_call_json(
+        cls, text: str
+    ) -> Optional[tuple[dict[str, Any], int, int]]:
+        """Find first embedded tool-call JSON object inside arbitrary text."""
+        source = text or ""
+        decoder = json.JSONDecoder()
+        i = 0
+        while i < len(source):
+            start = source.find("{", i)
+            if start < 0:
+                return None
+            try:
+                parsed, end = decoder.raw_decode(source, start)
+            except Exception:
+                i = start + 1
+                continue
+            if isinstance(parsed, dict):
+                name = parsed.get("name")
+                if isinstance(name, str) and "arguments" in parsed:
+                    return parsed, start, end
+            i = end if end > start else start + 1
+        return None
+
     @staticmethod
     def _resolve_text_field(data: dict[str, Any]) -> tuple[str, str]:
         """Return (field_name, text_value) for Telegram-style outbound payloads."""
@@ -173,6 +211,9 @@ class TelegramAPIProxy:
         # Telegram clients before final message sanitization.
         if not is_system and method in ("sendMessageDraft", "editMessageDraft"):
             return {"ok": True, "result": {"suppressed": True, "method": method}}
+        if is_system and method in ("sendMessage", "editMessageText") and body:
+            if self._suppress_duplicate_system_notice(body, content_type):
+                return {"ok": True, "result": {"suppressed": True, "method": method}}
 
         if not is_system and method in (
             "sendMessage",
@@ -183,6 +224,8 @@ class TelegramAPIProxy:
             "forwardMessage",
         ) and body:
             body = await self._filter_outbound(body, content_type)
+            if self._is_suppressed_outbound_payload(body, content_type):
+                return {"ok": True, "result": {"suppressed": True, "method": method}}
 
         # Forward to real Telegram API
         try:
@@ -223,14 +266,56 @@ class TelegramAPIProxy:
 
                 # Guardrail: never leak raw tool-call JSON blobs to Telegram users.
                 parsed_tool_call = self._parse_tool_call_json(text) if isinstance(text, str) else None
+                embedded_tool_call = (
+                    self._extract_embedded_tool_call_json(text) if isinstance(text, str) else None
+                )
+                if parsed_tool_call is None and embedded_tool_call is not None:
+                    parsed_tool_call, emb_start, emb_end = embedded_tool_call
+                    leading = text[:emb_start].strip()
+                    trailing = text[emb_end:].strip()
+                    cleaned = " ".join(part for part in (leading, trailing) if part).strip()
+                    if cleaned:
+                        tool_name = str(parsed_tool_call.get("name", "")).strip()
+                        tool_args = parsed_tool_call.get("arguments") if isinstance(parsed_tool_call.get("arguments"), dict) else {}
+                        if tool_name == "web_fetch":
+                            approval_queued = await self._trigger_web_fetch_approval(chat_id, tool_args)
+                            if approval_queued:
+                                cleaned = (
+                                    f"{cleaned}\n\n"
+                                    "🌐 Web access request detected. Approval request queued for this destination."
+                                ).strip()
+                        data[text_key] = cleaned
+                        self._stats["outbound_filtered"] += 1
+                        return json.dumps(data).encode()
                 if parsed_tool_call is not None:
                     tool_name = str(parsed_tool_call.get("name", "")).strip()
                     tool_args = parsed_tool_call.get("arguments") if isinstance(parsed_tool_call.get("arguments"), dict) else {}
                     self._stats["outbound_filtered"] += 1
                     if tool_name.upper() == "NO_REPLY":
-                        data[text_key] = "🛡️ AgentShroud online"
+                        now = time.time()
+                        blocked_until = self._recent_no_reply_notice_until.get(chat_id, 0.0) if chat_id else 0.0
+                        if chat_id and blocked_until > now:
+                            data[text_key] = _SUPPRESS_OUTBOUND_TOKEN
+                        else:
+                            data[text_key] = "⏳ Agent is still processing a previous request. Please wait 10–20 seconds and retry."
+                            if chat_id:
+                                self._recent_no_reply_notice_until[chat_id] = (
+                                    now + self._no_reply_notice_cooldown_seconds
+                                )
                     elif tool_name == "sessions_spawn" and str(tool_args.get("agentId", "")) == "acp.healthcheck":
                         data[text_key] = "✅ Healthcheck started. I’ll reply with status once complete."
+                    elif tool_name == "web_fetch":
+                        approval_queued = await self._trigger_web_fetch_approval(chat_id, tool_args)
+                        approval_note = (
+                            " Approval request queued for this destination."
+                            if approval_queued else
+                            ""
+                        )
+                        data[text_key] = (
+                            "🌐 Web fetch requested, but this model returned raw tool JSON instead of executing it. "
+                            "Switch to a tool-capable model (e.g., scripts/switch_model.sh gemini or local qwen3:14b once pulled)."
+                            + approval_note
+                        )
                     elif tool_name in {"sessions_spawn", "sessions_send", "subagents"}:
                         data[text_key] = "✅ Request accepted and queued."
                     else:
@@ -247,6 +332,24 @@ class TelegramAPIProxy:
                     self._stats["outbound_filtered"] += 1
                     data[text_key] = "⏳ Agent is still processing a previous request. Please wait 10–20 seconds and retry."
                     return json.dumps(data).encode()
+                if isinstance(text, str) and "does not support tools" in text.lower():
+                    self._stats["outbound_filtered"] += 1
+                    data[text_key] = "⚠️ Current local model does not support tool calls. Use scripts/switch_model.sh local qwen3:14b (or a tools-capable model)."
+                    return json.dumps(data).encode()
+                if isinstance(text, str) and "ollama requires authentication" in text.lower():
+                    self._stats["outbound_filtered"] += 1
+                    data[text_key] = (
+                        "⚠️ Ollama provider is not configured in this session. Set OLLAMA_API_KEY=ollama-local and restart, "
+                        "or run scripts/switch_model.sh cloud gemini."
+                    )
+                    return json.dumps(data).encode()
+                if isinstance(text, str) and "unknown model:" in text.lower():
+                    self._stats["outbound_filtered"] += 1
+                    data[text_key] = (
+                        "⚠️ Selected model is not registered. Use scripts/switch_model.sh to pick a configured model "
+                        "(local qwen3:14b or cloud gemini/openai)."
+                    )
+                    return json.dumps(data).encode()
 
                 if text:
                     normalized_text = normalize_input(text)
@@ -254,6 +357,14 @@ class TelegramAPIProxy:
                     if scrubbed_text != text:
                         data["text"] = scrubbed_text
                         text = scrubbed_text
+                        self._stats["outbound_filtered"] += 1
+
+                # Prevent Telegram HTML parse errors caused by redaction placeholders
+                # like <EMAIL_ADDRESS> / <PHONE_NUMBER> in sanitized output.
+                parse_mode = str(data.get("parse_mode", "")).upper()
+                if parse_mode == "HTML" and isinstance(data.get(text_key), str):
+                    if re.search(r"<[A-Z][A-Z0-9_]{1,64}>", data[text_key]):
+                        data.pop("parse_mode", None)
                         self._stats["outbound_filtered"] += 1
 
                 if chat_id:
@@ -367,7 +478,20 @@ class TelegramAPIProxy:
                         self._stats["outbound_filtered"] += 1
                         logger.warning("Outbound message: credentials blocked")
                     return json.dumps(data).encode()
-            elif "x-www-form-urlencoded" in ct or (not ct and b"chat_id=" in body and b"text=" in body):
+            elif "x-www-form-urlencoded" in ct or (
+                not ct
+                and b"chat_id=" in body
+                and any(
+                    marker in body
+                    for marker in (
+                        b"text=",
+                        b"draft=",
+                        b"message=",
+                        b"content=",
+                        b"caption=",
+                    )
+                )
+            ):
                 # Telegram draft/edit calls may arrive as urlencoded form payloads.
                 # Filter these the same way as JSON payloads to prevent transient leaks.
                 parsed = urllib.parse.parse_qsl(
@@ -379,14 +503,56 @@ class TelegramAPIProxy:
                 chat_id = str(data.get("chat_id", ""))
 
                 parsed_tool_call = self._parse_tool_call_json(text) if isinstance(text, str) else None
+                embedded_tool_call = (
+                    self._extract_embedded_tool_call_json(text) if isinstance(text, str) else None
+                )
+                if parsed_tool_call is None and embedded_tool_call is not None:
+                    parsed_tool_call, emb_start, emb_end = embedded_tool_call
+                    leading = text[:emb_start].strip()
+                    trailing = text[emb_end:].strip()
+                    cleaned = " ".join(part for part in (leading, trailing) if part).strip()
+                    if cleaned:
+                        tool_name = str(parsed_tool_call.get("name", "")).strip()
+                        tool_args = parsed_tool_call.get("arguments") if isinstance(parsed_tool_call.get("arguments"), dict) else {}
+                        if tool_name == "web_fetch":
+                            approval_queued = await self._trigger_web_fetch_approval(chat_id, tool_args)
+                            if approval_queued:
+                                cleaned = (
+                                    f"{cleaned}\n\n"
+                                    "🌐 Web access request detected. Approval request queued for this destination."
+                                ).strip()
+                        data[text_key] = cleaned
+                        self._stats["outbound_filtered"] += 1
+                        return urllib.parse.urlencode(data).encode()
                 if parsed_tool_call is not None:
                     tool_name = str(parsed_tool_call.get("name", "")).strip()
                     tool_args = parsed_tool_call.get("arguments") if isinstance(parsed_tool_call.get("arguments"), dict) else {}
                     self._stats["outbound_filtered"] += 1
                     if tool_name.upper() == "NO_REPLY":
-                        data[text_key] = "🛡️ AgentShroud online"
+                        now = time.time()
+                        blocked_until = self._recent_no_reply_notice_until.get(chat_id, 0.0) if chat_id else 0.0
+                        if chat_id and blocked_until > now:
+                            data[text_key] = _SUPPRESS_OUTBOUND_TOKEN
+                        else:
+                            data[text_key] = "⏳ Agent is still processing a previous request. Please wait 10–20 seconds and retry."
+                            if chat_id:
+                                self._recent_no_reply_notice_until[chat_id] = (
+                                    now + self._no_reply_notice_cooldown_seconds
+                                )
                     elif tool_name == "sessions_spawn" and str(tool_args.get("agentId", "")) == "acp.healthcheck":
                         data[text_key] = "✅ Healthcheck started. I’ll reply with status once complete."
+                    elif tool_name == "web_fetch":
+                        approval_queued = await self._trigger_web_fetch_approval(chat_id, tool_args)
+                        approval_note = (
+                            " Approval request queued for this destination."
+                            if approval_queued else
+                            ""
+                        )
+                        data[text_key] = (
+                            "🌐 Web fetch requested, but this model returned raw tool JSON instead of executing it. "
+                            "Switch to a tool-capable model (e.g., scripts/switch_model.sh gemini or local qwen3:14b once pulled)."
+                            + approval_note
+                        )
                     elif tool_name in {"sessions_spawn", "sessions_send", "subagents"}:
                         data[text_key] = "✅ Request accepted and queued."
                     else:
@@ -396,6 +562,24 @@ class TelegramAPIProxy:
                 if isinstance(text, str) and "session file locked" in text.lower():
                     self._stats["outbound_filtered"] += 1
                     data[text_key] = "⏳ Agent is still processing a previous request. Please wait 10–20 seconds and retry."
+                    return urllib.parse.urlencode(data).encode()
+                if isinstance(text, str) and "does not support tools" in text.lower():
+                    self._stats["outbound_filtered"] += 1
+                    data[text_key] = "⚠️ Current local model does not support tool calls. Use scripts/switch_model.sh local qwen3:14b (or a tools-capable model)."
+                    return urllib.parse.urlencode(data).encode()
+                if isinstance(text, str) and "ollama requires authentication" in text.lower():
+                    self._stats["outbound_filtered"] += 1
+                    data[text_key] = (
+                        "⚠️ Ollama provider is not configured in this session. Set OLLAMA_API_KEY=ollama-local and restart, "
+                        "or run scripts/switch_model.sh cloud gemini."
+                    )
+                    return urllib.parse.urlencode(data).encode()
+                if isinstance(text, str) and "unknown model:" in text.lower():
+                    self._stats["outbound_filtered"] += 1
+                    data[text_key] = (
+                        "⚠️ Selected model is not registered. Use scripts/switch_model.sh to pick a configured model "
+                        "(local qwen3:14b or cloud gemini/openai)."
+                    )
                     return urllib.parse.urlencode(data).encode()
         except Exception as e:
             logger.error(f"Outbound filter error: {e}")
@@ -418,6 +602,97 @@ class TelegramAPIProxy:
                 pass
         return body
 
+    async def _trigger_web_fetch_approval(self, chat_id: str, tool_args: dict[str, Any]) -> bool:
+        """Queue an interactive egress approval when raw web_fetch JSON leaks."""
+        url = str((tool_args or {}).get("url", "")).strip()
+        if not url:
+            return False
+        parsed = urlparse(url if "://" in url else f"https://{url}")
+        domain = (parsed.hostname or "").strip().lower().strip(".")
+        if not domain:
+            return False
+        approval_key = ((chat_id or "unknown"), domain)
+        now = time.time()
+        blocked_until = self._recent_web_fetch_approval_until.get(approval_key, 0.0)
+        if blocked_until > now:
+            return False
+        try:
+            from gateway.ingest_api.state import app_state as _app_state
+            _egress_filter = getattr(_app_state, "egress_filter", None)
+            if _egress_filter is None or not hasattr(_egress_filter, "check_async"):
+                return False
+            _port = parsed.port or (443 if parsed.scheme != "http" else 80)
+            _agent_id = f"telegram_web_fetch:{chat_id}" if chat_id else "telegram_web_fetch"
+            asyncio.create_task(
+                _egress_filter.check_async(
+                    agent_id=_agent_id,
+                    destination=f"{parsed.scheme or 'https'}://{domain}",
+                    port=_port,
+                    tool_name="web_fetch",
+                )
+            )
+            self._recent_web_fetch_approval_until[approval_key] = (
+                now + self._web_fetch_approval_cooldown_seconds
+            )
+            return True
+        except Exception:
+            return False
+
+    def _suppress_duplicate_system_notice(self, body: bytes, content_type: Optional[str]) -> bool:
+        """Suppress repeated startup/shutdown system notices in short windows."""
+        try:
+            ct = (content_type or "").lower()
+            payload: dict[str, Any] = {}
+            if "json" in ct or (not ct and body.lstrip().startswith(b"{")):
+                payload = json.loads(body)
+            elif "x-www-form-urlencoded" in ct or (not ct and b"=" in body):
+                payload = dict(
+                    urllib.parse.parse_qsl(
+                        body.decode("utf-8", errors="replace"), keep_blank_values=True
+                    )
+                )
+            chat_id = str(payload.get("chat_id", "")).strip()
+            _, text = self._resolve_text_field(payload)
+            notice = (text or "").strip()
+            if not chat_id or notice not in {"🛡️ AgentShroud online", "🔴 AgentShroud shutting down"}:
+                return False
+            key = (chat_id, notice)
+            now = time.time()
+            blocked_until = self._recent_system_notice_until.get(key, 0.0)
+            if blocked_until > now:
+                logger.info("Suppressing duplicate system notice for chat %s: %s", chat_id, notice)
+                return True
+            self._recent_system_notice_until[key] = now + self._system_notice_cooldown_seconds
+        except Exception:
+            return False
+        return False
+
+    @staticmethod
+    def _is_suppressed_outbound_payload(body: bytes, content_type: Optional[str]) -> bool:
+        """True when filtered payload should be dropped instead of forwarded."""
+        try:
+            ct = (content_type or "").lower()
+            if "json" in ct or (not ct and body.lstrip().startswith(b"{")):
+                data = json.loads(body)
+                for key in ("text", "draft", "message", "content", "caption"):
+                    value = data.get(key)
+                    if isinstance(value, str) and value.strip() == _SUPPRESS_OUTBOUND_TOKEN:
+                        return True
+                return False
+            if "x-www-form-urlencoded" in ct or (not ct and b"=" in body):
+                data = dict(
+                    urllib.parse.parse_qsl(
+                        body.decode("utf-8", errors="replace"), keep_blank_values=True
+                    )
+                )
+                for key in ("text", "draft", "message", "content", "caption"):
+                    value = data.get(key)
+                    if isinstance(value, str) and value.strip() == _SUPPRESS_OUTBOUND_TOKEN:
+                        return True
+        except Exception:
+            return False
+        return False
+
     async def _filter_inbound_updates(self, response_data: dict) -> dict:
         """Scan inbound messages from getUpdates for security threats."""
         updates = response_data.get("result", [])
@@ -434,6 +709,12 @@ class TelegramAPIProxy:
                         _notifier = getattr(_app_state, "egress_notifier", None)
                         if _notifier:
                             result = await _notifier.handle_callback(cb_data)
+                            if not isinstance(result, dict):
+                                result = {
+                                    "status": "error",
+                                    "reason": str(result),
+                                    "action": "ignored",
+                                }
                             _queue = getattr(_app_state, "egress_approval_queue", None)
                             if _queue and result.get("status") == "ok":
                                 from gateway.security.egress_approval import ApprovalMode
@@ -449,7 +730,10 @@ class TelegramAPIProxy:
                                 callback_query.get("id", ""),
                                 f"Egress {result.get('action', 'processed')}",
                             )
-                            logger.info("Egress callback handled: %s", result)
+                            logger.info(
+                                "Egress callback handled: %s",
+                                json.dumps(result, sort_keys=True),
+                            )
                     except Exception as _ce:
                         logger.error("Egress callback error (non-fatal): %s", _ce)
                 # Drop callback_query updates — they are not bot messages
@@ -488,11 +772,13 @@ class TelegramAPIProxy:
                 user_id in {str(uid) for uid in (self._rbac.collaborator_user_ids or [])}
             )
 
-            # ── Gateway-level collaborator activity tracking ──────────────────
+            # ── Gateway-level collaborator/non-owner activity tracking ────────
             # This is the authoritative tracking point — all messages (including
             # long-polling) flow through here. webhook_receiver only handles
             # push-mode webhooks which are not used in this deployment.
-            if is_collaborator:
+            # Track all non-owner users; tracker policy decides whether unknown
+            # users are auto-enrolled (track_unknown_non_owner).
+            if not is_owner:
                 try:
                     from gateway.ingest_api.state import app_state as _app_state
                     _tracker = getattr(_app_state, "collaborator_tracker", None)
