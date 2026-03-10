@@ -173,6 +173,17 @@ class TelegramAPIProxy:
         return None
 
     @staticmethod
+    def _extract_first_http_url(text: str) -> Optional[str]:
+        """Extract first HTTP(S) URL from free-form text for egress preflight."""
+        if not text:
+            return None
+        match = re.search(r"https?://[^\s<>()\"']+", text, flags=re.IGNORECASE)
+        if not match:
+            return None
+        url = match.group(0).rstrip(".,;:!?)]}")
+        return url or None
+
+    @staticmethod
     def _resolve_text_field(data: dict[str, Any]) -> tuple[str, str]:
         """Return (field_name, text_value) for Telegram-style outbound payloads."""
         for key in ("text", "draft", "message", "content", "caption"):
@@ -771,6 +782,21 @@ class TelegramAPIProxy:
                 not is_owner and
                 user_id in {str(uid) for uid in (self._rbac.collaborator_user_ids or [])}
             )
+
+            # ── Egress preflight from user intent ────────────────────────────
+            # If a non-owner message includes an explicit URL, proactively queue
+            # interactive egress approval for that destination. This preserves
+            # "little snitch" UX even when the model fails before tool execution.
+            if not is_owner:
+                try:
+                    requested_url = self._extract_first_http_url(text)
+                    if requested_url:
+                        await self._trigger_web_fetch_approval(
+                            str(chat_id or ""),
+                            {"url": requested_url},
+                        )
+                except Exception as _pf:
+                    logger.debug("Egress preflight approval error (non-fatal): %s", _pf)
 
             # ── Gateway-level collaborator/non-owner activity tracking ────────
             # This is the authoritative tracking point — all messages (including
