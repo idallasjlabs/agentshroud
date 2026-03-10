@@ -614,6 +614,41 @@ class TestOutboundPipelineIntegration:
         assert calls["count"] == 2
 
     @pytest.mark.asyncio
+    async def test_proxy_request_suppresses_startup_notice_emoji_variants(self, monkeypatch):
+        """Startup notice dedupe should tolerate emoji variation drift."""
+        proxy = TelegramAPIProxy(sanitizer=_make_sanitizer())
+        calls = {"count": 0}
+
+        async def _mock_forward(*_args, **_kwargs):
+            calls["count"] += 1
+            return {"ok": True, "result": {"message_id": calls["count"]}}
+
+        monkeypatch.setattr(proxy, "_forward_to_telegram", _mock_forward)
+
+        first_body = json.dumps({"chat_id": "8096968754", "text": "🛡️ AgentShroud online"}).encode()
+        second_body = json.dumps({"chat_id": "8096968754", "text": "🛡 AgentShroud online"}).encode()
+
+        first = await proxy.proxy_request(
+            bot_token="dummy",
+            method="sendMessage",
+            body=first_body,
+            content_type="application/json",
+            is_system=True,
+        )
+        second = await proxy.proxy_request(
+            bot_token="dummy",
+            method="sendMessage",
+            body=second_body,
+            content_type="application/json",
+            is_system=True,
+        )
+
+        assert first.get("ok") is True
+        assert second.get("ok") is True
+        assert second.get("result", {}).get("suppressed") is True
+        assert calls["count"] == 1
+
+    @pytest.mark.asyncio
     async def test_form_payload_with_draft_field_is_filtered(self):
         """Form payload using draft field should still suppress tool-call JSON."""
         proxy = TelegramAPIProxy(sanitizer=_make_sanitizer())
