@@ -15,6 +15,8 @@ import secrets
 import time
 import logging
 import os
+import re
+from datetime import datetime
 from pathlib import Path
 from typing import Annotated
 
@@ -101,6 +103,86 @@ def _load_contributor_logs(log_dirs: list[Path]) -> list[dict]:
             except Exception:
                 continue
     return logs
+
+
+def _build_activity_summary_from_contributor_logs(logs: list[dict]) -> dict:
+    """Fallback activity summary when tracker data is unavailable/empty."""
+    total_messages = 0
+    unique_users: set[str] = set()
+    last_activity: float | None = None
+
+    for item in logs:
+        content = str(item.get("content", "") or "")
+        for line in content.splitlines():
+            line = line.strip()
+            if not line:
+                continue
+            if line.startswith("- "):
+                line = line[2:].strip()
+            if "|" not in line:
+                continue
+            total_messages += 1
+            # Expected format:
+            # - 2026-03-10T16:33:22+00:00 | username (12345) | source | preview
+            match_uid = re.search(r"\(([^)]+)\)", line)
+            if match_uid:
+                unique_users.add(match_uid.group(1).strip())
+            ts_token = line.split("|", 1)[0].strip()
+            if ts_token.endswith("Z"):
+                ts_token = ts_token[:-1] + "+00:00"
+            try:
+                ts = datetime.fromisoformat(ts_token).timestamp()
+                if last_activity is None or ts > last_activity:
+                    last_activity = ts
+            except Exception:
+                continue
+
+    return {
+        "total_messages": total_messages,
+        "unique_users": len(unique_users),
+        "last_activity": last_activity,
+        "by_user": {},
+    }
+
+
+def _build_activity_entries_from_contributor_logs(logs: list[dict], limit: int = 50) -> list[dict]:
+    """Fallback activity entries when tracker data is unavailable/empty."""
+    entries: list[dict] = []
+    for item in logs:
+        content = str(item.get("content", "") or "")
+        for line in content.splitlines():
+            line = line.strip()
+            if not line:
+                continue
+            if line.startswith("- "):
+                line = line[2:].strip()
+            if "|" not in line:
+                continue
+            payload = line
+            parts = [p.strip() for p in payload.split("|")]
+            if len(parts) < 4:
+                continue
+            ts_token, user_token, source_token, preview = parts[0], parts[1], parts[2], " | ".join(parts[3:])
+            if ts_token.endswith("Z"):
+                ts_token = ts_token[:-1] + "+00:00"
+            try:
+                ts = datetime.fromisoformat(ts_token).timestamp()
+            except Exception:
+                continue
+            match_uid = re.search(r"\(([^)]+)\)", user_token)
+            uid = match_uid.group(1).strip() if match_uid else "unknown"
+            username = re.sub(r"\s*\([^)]+\)\s*$", "", user_token).strip() or "unknown"
+            entries.append(
+                {
+                    "timestamp": ts,
+                    "user_id": uid,
+                    "username": username,
+                    "message_preview": preview[:80],
+                    "source": source_token or "unknown",
+                }
+            )
+    entries.sort(key=lambda e: float(e.get("timestamp", 0) or 0), reverse=True)
+    return entries[: max(1, int(limit or 50))]
 
 
 async def _build_egress_live_snapshot() -> dict:
@@ -324,9 +406,26 @@ async def get_collaborators(req: Request, auth: AuthRequired):
     if tracker:
         result["activity"] = tracker.get_activity(limit=50)
         result["summary"] = tracker.get_activity_summary()
+        if (
+            isinstance(result.get("summary"), dict)
+            and int(result["summary"].get("total_messages", 0) or 0) == 0
+            and result.get("contributor_logs")
+        ):
+            result["activity"] = _build_activity_entries_from_contributor_logs(
+                result["contributor_logs"], limit=50
+            )
+            result["summary"] = _build_activity_summary_from_contributor_logs(
+                result["contributor_logs"]
+            )
+            result["activity_source"] = "contributor_logs_fallback"
+        else:
+            result["activity_source"] = "tracker"
     else:
-        result["activity"] = []
-        result["summary"] = {"total_messages": 0, "unique_users": 0, "last_activity": None, "by_user": {}}
+        result["activity"] = _build_activity_entries_from_contributor_logs(
+            result["contributor_logs"], limit=50
+        )
+        result["summary"] = _build_activity_summary_from_contributor_logs(result["contributor_logs"])
+        result["activity_source"] = "contributor_logs_fallback"
 
     return result
 
