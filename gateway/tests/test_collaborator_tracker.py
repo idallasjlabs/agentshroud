@@ -138,6 +138,36 @@ def test_get_activity_respects_limit(tracker, log_file):
     assert len(results) == 3
 
 
+def test_get_activity_ignores_non_numeric_timestamps(tracker, log_file):
+    log_file.write_text(
+        "\n".join(
+            [
+                json.dumps(
+                    {
+                        "timestamp": "not-a-number",
+                        "user_id": "7614658040",
+                        "username": "Alice",
+                        "message_preview": "bad-ts",
+                        "source": "telegram",
+                    }
+                ),
+                json.dumps(
+                    {
+                        "timestamp": time.time(),
+                        "user_id": "7614658040",
+                        "username": "Alice",
+                        "message_preview": "good-ts",
+                        "source": "telegram",
+                    }
+                ),
+            ]
+        )
+    )
+    results = tracker.get_activity(since=time.time() - 60)
+    assert len(results) == 1
+    assert results[0]["message_preview"] == "good-ts"
+
+
 # ── get_activity_summary ──────────────────────────────────────────────────────
 
 def test_summary_empty_when_no_file(tracker):
@@ -167,6 +197,25 @@ def test_summary_last_activity_is_latest_timestamp(tracker, log_file):
     s = tracker.get_activity_summary()
     assert s["by_user"]["9999999"]["last_active"] > s["by_user"]["7614658040"]["last_active"]
     assert s["last_activity"] == pytest.approx(s["by_user"]["9999999"]["last_active"], abs=1)
+
+
+def test_summary_handles_non_numeric_timestamps(tracker, log_file):
+    log_file.write_text(
+        json.dumps(
+            {
+                "timestamp": "not-a-number",
+                "user_id": "7614658040",
+                "username": "Alice",
+                "message_preview": "bad-ts",
+                "source": "telegram",
+            }
+        )
+        + "\n"
+    )
+    s = tracker.get_activity_summary()
+    assert s["total_messages"] == 1
+    assert s["last_activity"] == 0.0
+    assert s["by_user"]["7614658040"]["last_active"] == 0.0
 
 
 def test_record_activity_mirrors_to_contributor_daily_log(tracker, log_file):
