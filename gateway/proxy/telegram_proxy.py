@@ -651,7 +651,7 @@ class TelegramAPIProxy:
 
     async def _trigger_web_fetch_approval(self, chat_id: str, tool_args: dict[str, Any]) -> bool:
         """Queue an interactive egress approval when raw web_fetch JSON leaks."""
-        url = str((tool_args or {}).get("url", "")).strip().strip("'\"<>[]{}()")
+        url = normalize_input(str((tool_args or {}).get("url", ""))).strip().strip("'\"<>[]{}()")
         if not url:
             return False
         parsed = urlparse(url if "://" in url else f"https://{url}")
