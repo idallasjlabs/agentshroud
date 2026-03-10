@@ -559,6 +559,42 @@ class TestInboundPipelineOnGetUpdates:
         assert called["count"] == 0
 
     @pytest.mark.asyncio
+    async def test_non_owner_bare_domain_triggers_egress_preflight_approval(self, monkeypatch):
+        """Bare domains without scheme should still queue preflight egress approval."""
+        from gateway.ingest_api import state as state_module
+
+        called: dict[str, Any] = {}
+
+        class FakeEgress:
+            async def check_async(self, **kwargs):
+                called.update(kwargs)
+                return True
+
+        monkeypatch.setattr(
+            state_module,
+            "app_state",
+            SimpleNamespace(egress_filter=FakeEgress()),
+        )
+
+        proxy = TelegramAPIProxy(pipeline=PassthroughPipeline())
+        proxy._rbac = FakeRBAC(owner_id="8096968754", collaborators=["7614658040"])
+        proxy._bot_token = ""
+
+        response = _wrap_response(
+            _make_update(
+                "please check the weather on accuweather.com",
+                user_id="7614658040",
+                chat_id=7614658040,
+            )
+        )
+        await proxy._filter_inbound_updates(response)
+        await asyncio.sleep(0)
+
+        assert called["tool_name"] == "web_fetch"
+        assert called["destination"] == "https://accuweather.com"
+        assert called["port"] == 443
+
+    @pytest.mark.asyncio
     async def test_rate_limit_notice_mentions_200_per_hour(self, monkeypatch):
         """Rate-limit notice must match configured 200/hour policy."""
         captured: dict[str, Any] = {}
