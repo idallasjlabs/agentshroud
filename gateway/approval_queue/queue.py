@@ -51,6 +51,11 @@ class ApprovalQueue:
             "AGENTSHROUD_APPROVAL_AUDIT_PATH",
             "/app/data/approval_queue_history.jsonl",
         )
+        self._store_path = os.environ.get(
+            "AGENTSHROUD_APPROVAL_STORE_PATH",
+            "/app/data/approval_queue_store.json",
+        )
+        self._load_pending_store()
 
         logger.info(
             f"Approval queue initialized (timeout={config.timeout_seconds}s, "
@@ -93,6 +98,7 @@ class ApprovalQueue:
 
             # Add to pending
             self.pending[request_id] = item
+            self._persist_pending_store()
 
             logger.info(
                 f"Approval request submitted: {request_id} "
@@ -150,6 +156,7 @@ class ApprovalQueue:
 
             # Update status
             item.status = "approved" if approved else "rejected"
+            self._persist_pending_store()
 
             logger.info(
                 f"Approval request {request_id} {item.status} "
@@ -231,6 +238,7 @@ class ApprovalQueue:
             if now > expires_dt:
                 item.status = "expired"
                 expired_ids.append(request_id)
+                self._persist_pending_store()
 
                 logger.info(f"Approval request {request_id} expired")
                 self._append_audit_event(
@@ -317,3 +325,39 @@ class ApprovalQueue:
                 f.write(json.dumps(payload, separators=(",", ":")) + "\n")
         except Exception as exc:
             logger.warning("Approval queue audit write failed: %s", exc)
+
+    def _persist_pending_store(self) -> None:
+        """Persist queue items to disk for restart durability (best effort)."""
+        try:
+            directory = os.path.dirname(self._store_path)
+            if directory:
+                os.makedirs(directory, exist_ok=True)
+            payload = {
+                "version": 1,
+                "items": [item.model_dump() for item in self.pending.values()],
+            }
+            with open(self._store_path, "w", encoding="utf-8") as f:
+                json.dump(payload, f, ensure_ascii=False, separators=(",", ":"))
+        except Exception as exc:
+            logger.warning("Approval queue store write failed: %s", exc)
+
+    def _load_pending_store(self) -> None:
+        """Load queue items from store file when present."""
+        try:
+            if not os.path.exists(self._store_path):
+                return
+            with open(self._store_path, "r", encoding="utf-8") as f:
+                data = json.load(f)
+            items = data.get("items", []) if isinstance(data, dict) else []
+            loaded = 0
+            for raw in items:
+                try:
+                    item = ApprovalQueueItem.model_validate(raw)
+                    self.pending[item.request_id] = item
+                    loaded += 1
+                except Exception:
+                    continue
+            if loaded:
+                logger.info("Approval queue restored %d item(s) from store", loaded)
+        except Exception as exc:
+            logger.warning("Approval queue store load failed: %s", exc)
