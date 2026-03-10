@@ -10,6 +10,7 @@ Created: 2026-03-08 — Fixes G-1 (getUpdates inbound pipeline bypass)
 """
 from __future__ import annotations
 
+import asyncio
 import base64
 import json
 import urllib.request
@@ -484,6 +485,78 @@ class TestInboundPipelineOnGetUpdates:
         }
         result = await proxy._filter_inbound_updates({"ok": True, "result": [cb_update]})
         assert result["result"] == []
+
+    @pytest.mark.asyncio
+    async def test_non_owner_url_triggers_egress_preflight_approval(self, monkeypatch):
+        """Non-owner messages containing URLs should queue egress preflight approval."""
+        from gateway.ingest_api import state as state_module
+
+        called: dict[str, Any] = {}
+
+        class FakeEgress:
+            async def check_async(self, **kwargs):
+                called.update(kwargs)
+                return True
+
+        monkeypatch.setattr(
+            state_module,
+            "app_state",
+            SimpleNamespace(egress_filter=FakeEgress()),
+        )
+
+        proxy = TelegramAPIProxy(pipeline=PassthroughPipeline())
+        proxy._rbac = FakeRBAC(owner_id="8096968754", collaborators=["7614658040"])
+        proxy._bot_token = ""
+
+        response = _wrap_response(
+            _make_update(
+                "please check weather at https://weather.com/weather/today/l/Pittsburgh,PA",
+                user_id="7614658040",
+                chat_id=7614658040,
+            )
+        )
+        await proxy._filter_inbound_updates(response)
+        await asyncio.sleep(0)
+
+        assert called["tool_name"] == "web_fetch"
+        assert called["agent_id"] == "telegram_web_fetch:7614658040"
+        assert called["destination"] == "https://weather.com"
+        assert called["port"] == 443
+
+    @pytest.mark.asyncio
+    async def test_owner_url_does_not_trigger_egress_preflight_approval(self, monkeypatch):
+        """Owner messages should not trigger collaborator-style preflight approval."""
+        from gateway.ingest_api import state as state_module
+
+        called = {"count": 0}
+
+        class FakeEgress:
+            async def check_async(self, **kwargs):
+                called["count"] += 1
+                called["kwargs"] = kwargs
+                return True
+
+        monkeypatch.setattr(
+            state_module,
+            "app_state",
+            SimpleNamespace(egress_filter=FakeEgress()),
+        )
+
+        owner_id = "8096968754"
+        proxy = TelegramAPIProxy(pipeline=PassthroughPipeline())
+        proxy._rbac = FakeRBAC(owner_id=owner_id, collaborators=["7614658040"])
+        proxy._bot_token = ""
+
+        response = _wrap_response(
+            _make_update(
+                "owner check https://weather.com",
+                user_id=owner_id,
+                chat_id=int(owner_id),
+            )
+        )
+        await proxy._filter_inbound_updates(response)
+
+        assert called["count"] == 0
 
     @pytest.mark.asyncio
     async def test_rate_limit_notice_mentions_200_per_hour(self, monkeypatch):
