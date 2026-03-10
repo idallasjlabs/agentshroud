@@ -173,15 +173,28 @@ class TelegramAPIProxy:
         return None
 
     @staticmethod
-    def _extract_first_http_url(text: str) -> Optional[str]:
-        """Extract first HTTP(S) URL from free-form text for egress preflight."""
+    def _extract_first_egress_target(text: str) -> Optional[str]:
+        """Extract first outbound web target (URL or bare domain) for egress preflight."""
         if not text:
             return None
-        match = re.search(r"https?://[^\s<>()\"']+", text, flags=re.IGNORECASE)
-        if not match:
+        url_match = re.search(r"https?://[^\s<>()\"']+", text, flags=re.IGNORECASE)
+        if url_match:
+            url = url_match.group(0).rstrip(".,;:!?)]}")
+            return url or None
+
+        # Support bare domains like "weather.com/today" so collaborator requests
+        # still trigger interactive egress approval before model/tool execution.
+        domain_match = re.search(
+            r"\b(?:[a-z0-9](?:[a-z0-9-]{0,61}[a-z0-9])?\.)+[a-z]{2,63}(?:/[^\s<>()\"']*)?",
+            text,
+            flags=re.IGNORECASE,
+        )
+        if not domain_match:
             return None
-        url = match.group(0).rstrip(".,;:!?)]}")
-        return url or None
+        candidate = domain_match.group(0).rstrip(".,;:!?)]}")
+        if not candidate:
+            return None
+        return f"https://{candidate}"
 
     @staticmethod
     def _resolve_text_field(data: dict[str, Any]) -> tuple[str, str]:
@@ -789,7 +802,7 @@ class TelegramAPIProxy:
             # "little snitch" UX even when the model fails before tool execution.
             if not is_owner:
                 try:
-                    requested_url = self._extract_first_http_url(text)
+                    requested_url = self._extract_first_egress_target(text)
                     if requested_url:
                         await self._trigger_web_fetch_approval(
                             str(chat_id or ""),
