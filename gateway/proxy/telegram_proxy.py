@@ -659,10 +659,12 @@ class TelegramAPIProxy:
         if ".." in raw_domain:
             return False
         domain = raw_domain.strip(".")
-        domain = re.sub(r"[^a-z0-9.-]", "", domain)
-        domain = domain.strip(".")
-        if ".." in domain:
-            domain = domain.replace("..", ".")
+        if not domain:
+            return False
+        # Reject malformed hosts instead of silently rewriting them into a
+        # potentially different allowlist destination.
+        if re.search(r"[^a-z0-9.-]", domain):
+            return False
         if not domain:
             return False
         if "." not in domain:
