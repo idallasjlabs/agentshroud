@@ -271,11 +271,18 @@ class EgressFilter:
     ) -> EgressAttempt:
         """Async egress check with interactive approval for unknown domains."""
         attempt = self.check(agent_id, destination, port)
-        if (
-            attempt.action == EgressAction.DENY
+        needs_interactive_approval = (
+            self._approval_queue is not None
             and self.config.mode == "enforce"
-            and self._approval_queue is not None
-        ):
+            and (
+                attempt.action == EgressAction.DENY
+                or (
+                    getattr(self.config, "approval_required_for_all", False)
+                    and attempt.action == EgressAction.ALLOW
+                )
+            )
+        )
+        if needs_interactive_approval:
             parsed = urlparse(destination) if "://" in destination else None
             domain = (parsed.hostname if parsed else destination).split(":")[0]
             resolved_port = port
