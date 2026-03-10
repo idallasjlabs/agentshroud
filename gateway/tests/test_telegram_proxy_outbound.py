@@ -6,6 +6,7 @@ Proves that _filter_outbound() runs the full security pipeline
 Created: 2026-03-08 — Fixes C-0 (outbound pipeline bypass)
 """
 import json
+import asyncio
 import io
 import urllib.parse
 import urllib.error
@@ -271,8 +272,8 @@ class TestOutboundPipelineIntegration:
         assert "healthcheck started" in result["text"].lower()
 
     @pytest.mark.asyncio
-    async def test_no_reply_tool_token_is_rewritten_to_safe_text(self):
-        """NO_REPLY tool JSON should be rewritten to user-safe status text."""
+    async def test_no_reply_tool_token_is_rewritten_to_wait_message(self):
+        """NO_REPLY tool JSON should be converted into a user-safe wait message."""
         proxy = TelegramAPIProxy(sanitizer=_make_sanitizer())
         body = json.dumps(
             {
@@ -281,7 +282,7 @@ class TestOutboundPipelineIntegration:
             }
         ).encode()
         result = json.loads(await proxy._filter_outbound(body, "application/json"))
-        assert result["text"] == "🛡️ AgentShroud online"
+        assert "still processing" in result["text"].lower()
 
     @pytest.mark.asyncio
     async def test_healthcheck_sessions_spawn_json_is_rewritten(self):
@@ -325,6 +326,52 @@ class TestOutboundPipelineIntegration:
         assert "previous request" in result["text"].lower()
 
     @pytest.mark.asyncio
+    async def test_ollama_tools_unsupported_error_is_sanitized(self):
+        """Raw model capability errors should be rewritten to actionable guidance."""
+        proxy = TelegramAPIProxy(sanitizer=_make_sanitizer())
+        body = json.dumps(
+            {
+                "chat_id": "8096968754",
+                "text": "Ollama API error 400: {\"error\":\"model does not support tools\"}",
+            }
+        ).encode()
+        result = json.loads(await proxy._filter_outbound(body, "application/json"))
+        assert "does not support tool" in result["text"].lower()
+        assert "switch_model.sh" in result["text"]
+        assert "ollama api error" not in result["text"].lower()
+
+    @pytest.mark.asyncio
+    async def test_unknown_model_error_is_sanitized(self):
+        """Unknown model errors should be rewritten without leaking raw stack text."""
+        proxy = TelegramAPIProxy(sanitizer=_make_sanitizer())
+        body = json.dumps(
+            {
+                "chat_id": "8096968754",
+                "text": "⚠️ Agent failed before reply: Unknown model: ollama/qwen2.5-coder:7b",
+            }
+        ).encode()
+        result = json.loads(await proxy._filter_outbound(body, "application/json"))
+        assert "unknown model:" not in result["text"].lower()
+        assert "switch_model.sh" in result["text"]
+
+    @pytest.mark.asyncio
+    async def test_ollama_auth_required_error_is_sanitized(self):
+        """Ollama auth errors should map to concise operator guidance."""
+        proxy = TelegramAPIProxy(sanitizer=_make_sanitizer())
+        body = json.dumps(
+            {
+                "chat_id": "8096968754",
+                "text": (
+                    "Unknown model: ollama/qwen2.5-coder:7b. "
+                    "Ollama requires authentication to be registered as a provider."
+                ),
+            }
+        ).encode()
+        result = json.loads(await proxy._filter_outbound(body, "application/json"))
+        assert "requires authentication" not in result["text"].lower()
+        assert "ollama-local" in result["text"]
+
+    @pytest.mark.asyncio
     async def test_urlencoded_draft_payload_tool_json_is_rewritten(self):
         """Form-encoded draft payloads must not leak raw tool-call JSON."""
         proxy = TelegramAPIProxy(sanitizer=_make_sanitizer())
@@ -346,7 +393,192 @@ class TestOutboundPipelineIntegration:
             }
         ).encode()
         result = json.loads(await proxy._filter_outbound(body, None))
-        assert result["text"] == "🛡️ AgentShroud online"
+        assert "still processing" in result["text"].lower()
+
+    @pytest.mark.asyncio
+    async def test_urlencoded_without_content_type_draft_is_still_filtered(self):
+        """Missing content-type must not bypass form draft leak filtering."""
+        proxy = TelegramAPIProxy(sanitizer=_make_sanitizer())
+        body = urllib.parse.urlencode(
+            {
+                "chat_id": "8096968754",
+                "draft": "{\"name\":\"NO_REPLY\",\"arguments\":{}}",
+            }
+        ).encode()
+        result = await proxy._filter_outbound(body, None)
+        parsed = dict(urllib.parse.parse_qsl(result.decode(), keep_blank_values=True))
+        assert "still processing" in parsed.get("draft", "").lower()
+
+    @pytest.mark.asyncio
+    async def test_urlencoded_without_content_type_caption_is_still_filtered(self):
+        """Missing content-type must not bypass form caption leak filtering."""
+        proxy = TelegramAPIProxy(sanitizer=_make_sanitizer())
+        body = urllib.parse.urlencode(
+            {
+                "chat_id": "8096968754",
+                "caption": "{\"name\":\"sessions_spawn\",\"arguments\":{\"agentId\":\"acp.healthcheck\"}}",
+            }
+        ).encode()
+        result = await proxy._filter_outbound(body, None)
+        parsed = dict(urllib.parse.parse_qsl(result.decode(), keep_blank_values=True))
+        assert "healthcheck started" in parsed.get("caption", "").lower()
+        assert "sessions_spawn" not in parsed.get("caption", "")
+
+    @pytest.mark.asyncio
+    async def test_html_parse_mode_removed_for_redaction_placeholders(self):
+        """HTML parse mode should be dropped for redaction placeholder tokens."""
+        proxy = TelegramAPIProxy(sanitizer=_make_sanitizer())
+        body = json.dumps(
+            {
+                "chat_id": "7614658040",
+                "text": "Contact: <EMAIL_ADDRESS>",
+                "parse_mode": "HTML",
+            }
+        ).encode()
+        result = json.loads(await proxy._filter_outbound(body, "application/json"))
+        assert "parse_mode" not in result
+        assert "<EMAIL_ADDRESS>" in result["text"]
+
+    @pytest.mark.asyncio
+    async def test_html_parse_mode_preserved_without_redaction_placeholders(self):
+        """Normal HTML formatting should preserve parse_mode."""
+        proxy = TelegramAPIProxy(sanitizer=_make_sanitizer())
+        body = json.dumps(
+            {
+                "chat_id": "7614658040",
+                "text": "<b>Status</b>: OK",
+                "parse_mode": "HTML",
+            }
+        ).encode()
+        result = json.loads(await proxy._filter_outbound(body, "application/json"))
+        assert result.get("parse_mode") == "HTML"
+
+    @pytest.mark.asyncio
+    async def test_proxy_request_sends_no_reply_wait_message_once(self, monkeypatch):
+        """First NO_REPLY payload should send safe wait guidance to Telegram."""
+        proxy = TelegramAPIProxy(sanitizer=_make_sanitizer())
+        calls = {"count": 0, "last_body": b""}
+
+        async def _mock_forward(_url, body, _content_type):
+            calls["count"] += 1
+            calls["last_body"] = body
+            return {"ok": True, "result": {"message_id": calls["count"]}}
+
+        monkeypatch.setattr(proxy, "_forward_to_telegram", _mock_forward)
+
+        body = json.dumps(
+            {"chat_id": "8096968754", "text": "{\"name\":\"NO_REPLY\",\"arguments\":{}}"}
+        ).encode()
+        result = await proxy.proxy_request(
+            bot_token="dummy",
+            method="sendMessage",
+            body=body,
+            content_type="application/json",
+        )
+        assert result["ok"] is True
+        assert calls["count"] == 1
+        forwarded = json.loads(calls["last_body"])
+        assert "still processing" in forwarded.get("text", "").lower()
+
+    @pytest.mark.asyncio
+    async def test_proxy_request_suppresses_duplicate_no_reply_messages(self, monkeypatch):
+        """Repeated NO_REPLY payloads in cooldown window should be suppressed."""
+        proxy = TelegramAPIProxy(sanitizer=_make_sanitizer())
+        calls = {"count": 0}
+
+        async def _mock_forward(*_args, **_kwargs):
+            calls["count"] += 1
+            return {"ok": True, "result": {"message_id": calls["count"]}}
+
+        monkeypatch.setattr(proxy, "_forward_to_telegram", _mock_forward)
+
+        body = json.dumps(
+            {"chat_id": "8096968754", "text": "{\"name\":\"NO_REPLY\",\"arguments\":{}}"}
+        ).encode()
+        first = await proxy.proxy_request(
+            bot_token="dummy",
+            method="sendMessage",
+            body=body,
+            content_type="application/json",
+        )
+        second = await proxy.proxy_request(
+            bot_token="dummy",
+            method="sendMessage",
+            body=body,
+            content_type="application/json",
+        )
+        assert first.get("ok") is True
+        assert second.get("ok") is True
+        assert second.get("result", {}).get("suppressed") is True
+        assert calls["count"] == 1
+
+    @pytest.mark.asyncio
+    async def test_proxy_request_suppresses_duplicate_system_startup_notice(self, monkeypatch):
+        """System startup notice should be deduplicated in a short cooldown window."""
+        proxy = TelegramAPIProxy(sanitizer=_make_sanitizer())
+        calls = {"count": 0}
+
+        async def _mock_forward(*_args, **_kwargs):
+            calls["count"] += 1
+            return {"ok": True, "result": {"message_id": calls["count"]}}
+
+        monkeypatch.setattr(proxy, "_forward_to_telegram", _mock_forward)
+
+        body = json.dumps({"chat_id": "8096968754", "text": "🛡️ AgentShroud online"}).encode()
+        first = await proxy.proxy_request(
+            bot_token="dummy",
+            method="sendMessage",
+            body=body,
+            content_type="application/json",
+            is_system=True,
+        )
+        second = await proxy.proxy_request(
+            bot_token="dummy",
+            method="sendMessage",
+            body=body,
+            content_type="application/json",
+            is_system=True,
+        )
+
+        assert first.get("ok") is True
+        assert second.get("ok") is True
+        assert second.get("result", {}).get("suppressed") is True
+        assert calls["count"] == 1
+
+    @pytest.mark.asyncio
+    async def test_proxy_request_allows_distinct_system_notices(self, monkeypatch):
+        """Different system notices should both be forwarded."""
+        proxy = TelegramAPIProxy(sanitizer=_make_sanitizer())
+        calls = {"count": 0}
+
+        async def _mock_forward(*_args, **_kwargs):
+            calls["count"] += 1
+            return {"ok": True, "result": {"message_id": calls["count"]}}
+
+        monkeypatch.setattr(proxy, "_forward_to_telegram", _mock_forward)
+
+        online = json.dumps({"chat_id": "8096968754", "text": "🛡️ AgentShroud online"}).encode()
+        shutdown = json.dumps({"chat_id": "8096968754", "text": "🔴 AgentShroud shutting down"}).encode()
+
+        first = await proxy.proxy_request(
+            bot_token="dummy",
+            method="sendMessage",
+            body=online,
+            content_type="application/json",
+            is_system=True,
+        )
+        second = await proxy.proxy_request(
+            bot_token="dummy",
+            method="sendMessage",
+            body=shutdown,
+            content_type="application/json",
+            is_system=True,
+        )
+
+        assert first.get("ok") is True
+        assert second.get("ok") is True
+        assert second.get("result", {}).get("suppressed") is not True
+        assert calls["count"] == 2
 
     @pytest.mark.asyncio
     async def test_form_payload_with_draft_field_is_filtered(self):
@@ -358,6 +590,173 @@ class TestOutboundPipelineIntegration:
         parsed = dict(urllib.parse.parse_qsl(result.decode(), keep_blank_values=True))
         assert "sessions_spawn" not in parsed.get("draft", "")
         assert "healthcheck started" in parsed.get("draft", "").lower()
+
+    @pytest.mark.asyncio
+    async def test_embedded_tool_call_json_is_removed_from_text(self):
+        """If tool-call JSON is embedded in prose, strip JSON block before delivery."""
+        proxy = TelegramAPIProxy(sanitizer=_make_sanitizer())
+        body = json.dumps(
+            {
+                "chat_id": "8096968754",
+                "text": (
+                    "please check weather for pittsburgh\n\n"
+                    '{"name": "web_fetch", "arguments": {"url": "https://weather.com"}}'
+                ),
+            }
+        ).encode()
+        result = json.loads(await proxy._filter_outbound(body, "application/json"))
+        assert "web_fetch" not in result["text"]
+        assert "arguments" not in result["text"]
+        assert "please check weather" in result["text"].lower()
+
+    @pytest.mark.asyncio
+    async def test_embedded_web_fetch_json_queues_approval_when_available(self, monkeypatch):
+        """Embedded web_fetch JSON should still queue interactive egress approval."""
+        called = {"value": False}
+
+        class FakeEgress:
+            async def check_async(self, **kwargs):
+                called["value"] = True
+                called["kwargs"] = kwargs
+                return SimpleNamespace(action="deny")
+
+        from gateway.ingest_api import state as state_module
+
+        monkeypatch.setattr(
+            state_module,
+            "app_state",
+            SimpleNamespace(egress_filter=FakeEgress()),
+        )
+        proxy = TelegramAPIProxy(sanitizer=_make_sanitizer())
+        body = json.dumps(
+            {
+                "chat_id": "8096968754",
+                "text": (
+                    "please check weather for pittsburgh\n\n"
+                    '{"name":"web_fetch","arguments":{"url":"https://weather.com/weather/today"}}'
+                ),
+            }
+        ).encode()
+        result = json.loads(await proxy._filter_outbound(body, "application/json"))
+        await asyncio.sleep(0)
+        assert called["value"] is True
+        assert called["kwargs"]["tool_name"] == "web_fetch"
+        assert "approval request queued" in result["text"].lower()
+        assert "web_fetch" not in result["text"]
+
+    @pytest.mark.asyncio
+    async def test_raw_web_fetch_json_is_rewritten_to_actionable_guidance(self):
+        """Pure web_fetch tool-call JSON should be rewritten to user guidance."""
+        proxy = TelegramAPIProxy(sanitizer=_make_sanitizer())
+        body = json.dumps(
+            {
+                "chat_id": "8096968754",
+                "text": "{\"name\":\"web_fetch\",\"arguments\":{\"url\":\"https://weather.com\"}}",
+            }
+        ).encode()
+        result = json.loads(await proxy._filter_outbound(body, "application/json"))
+        assert "raw tool json" in result["text"].lower()
+        assert "switch_model.sh" in result["text"]
+
+    @pytest.mark.asyncio
+    async def test_raw_web_fetch_json_queues_egress_approval_when_available(self, monkeypatch):
+        """Raw web_fetch JSON should queue interactive egress approval for the destination."""
+        called = {"value": False}
+
+        class FakeEgress:
+            async def check_async(self, **kwargs):
+                called["value"] = True
+                called["kwargs"] = kwargs
+                return SimpleNamespace(action="deny")
+
+        from gateway.ingest_api import state as state_module
+
+        monkeypatch.setattr(
+            state_module,
+            "app_state",
+            SimpleNamespace(egress_filter=FakeEgress()),
+        )
+        proxy = TelegramAPIProxy(sanitizer=_make_sanitizer())
+        body = json.dumps(
+            {
+                "chat_id": "8096968754",
+                "text": "{\"name\":\"web_fetch\",\"arguments\":{\"url\":\"https://weather.com/weather/today\"}}",
+            }
+        ).encode()
+        result = json.loads(await proxy._filter_outbound(body, "application/json"))
+        await asyncio.sleep(0)
+        assert called["value"] is True
+        assert called["kwargs"]["tool_name"] == "web_fetch"
+        assert called["kwargs"]["agent_id"] == "telegram_web_fetch:8096968754"
+        assert "approval request queued" in result["text"].lower()
+
+    @pytest.mark.asyncio
+    async def test_raw_web_fetch_json_approval_queue_is_cooldown_deduped(self, monkeypatch):
+        """Repeated identical web_fetch leaks should not spam approval queue."""
+        calls = {"count": 0}
+
+        class FakeEgress:
+            async def check_async(self, **_kwargs):
+                calls["count"] += 1
+                return SimpleNamespace(action="deny")
+
+        from gateway.ingest_api import state as state_module
+
+        monkeypatch.setattr(
+            state_module,
+            "app_state",
+            SimpleNamespace(egress_filter=FakeEgress()),
+        )
+
+        proxy = TelegramAPIProxy(sanitizer=_make_sanitizer())
+        proxy._web_fetch_approval_cooldown_seconds = 600.0
+        body = json.dumps(
+            {
+                "chat_id": "8096968754",
+                "text": "{\"name\":\"web_fetch\",\"arguments\":{\"url\":\"https://weather.com/weather/today\"}}",
+            }
+        ).encode()
+
+        first = json.loads(await proxy._filter_outbound(body, "application/json"))
+        second = json.loads(await proxy._filter_outbound(body, "application/json"))
+        await asyncio.sleep(0)
+
+        assert calls["count"] == 1
+        assert "approval request queued" in first["text"].lower()
+        assert "approval request queued" not in second["text"].lower()
+
+    @pytest.mark.asyncio
+    async def test_raw_web_fetch_json_approval_normalizes_leading_dot_domain(self, monkeypatch):
+        """Malformed host with leading dot should still queue approval for normalized domain."""
+        called = {"value": False}
+
+        class FakeEgress:
+            async def check_async(self, **kwargs):
+                called["value"] = True
+                called["kwargs"] = kwargs
+                return SimpleNamespace(action="deny")
+
+        from gateway.ingest_api import state as state_module
+
+        monkeypatch.setattr(
+            state_module,
+            "app_state",
+            SimpleNamespace(egress_filter=FakeEgress()),
+        )
+        proxy = TelegramAPIProxy(sanitizer=_make_sanitizer())
+        body = json.dumps(
+            {
+                "chat_id": "8096968754",
+                "text": "{\"name\":\"web_fetch\",\"arguments\":{\"url\":\"https://.waether.com/weather/today\"}}",
+            }
+        ).encode()
+
+        result = json.loads(await proxy._filter_outbound(body, "application/json"))
+        await asyncio.sleep(0)
+
+        assert called["value"] is True
+        assert called["kwargs"]["destination"] == "https://waether.com"
+        assert "approval request queued" in result["text"].lower()
 
     def test_sanitize_reason_hides_internal_paths(self):
         """User-facing block reasons should not expose modules or file paths."""

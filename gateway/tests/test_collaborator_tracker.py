@@ -18,10 +18,17 @@ def log_file(tmp_path):
 @pytest.fixture
 def tracker(log_file, monkeypatch):
     monkeypatch.setenv("AGENTSHROUD_TRACK_ALL_NON_OWNER_ACTIVITY", "false")
+    contributor_dir = log_file.parent / "contributors"
+    mirror_dir = log_file.parent / "contributors-mirror"
+    monkeypatch.setenv(
+        "AGENTSHROUD_CONTRIBUTOR_LOG_DIRS",
+        f"{contributor_dir},{mirror_dir}",
+    )
     return CollaboratorActivityTracker(
         log_path=log_file,
         owner_user_id="1111111",
         collaborator_ids=["7614658040", "9999999"],
+        contributor_log_dir=contributor_dir,
     )
 
 
@@ -51,10 +58,17 @@ def test_unknown_user_is_skipped(tracker, log_file):
 
 def test_unknown_user_recorded_when_dynamic_tracking_enabled(log_file, monkeypatch):
     monkeypatch.setenv("AGENTSHROUD_TRACK_ALL_NON_OWNER_ACTIVITY", "true")
+    contributor_dir = log_file.parent / "contributors"
+    mirror_dir = log_file.parent / "contributors-mirror"
+    monkeypatch.setenv(
+        "AGENTSHROUD_CONTRIBUTOR_LOG_DIRS",
+        f"{contributor_dir},{mirror_dir}",
+    )
     tracker = CollaboratorActivityTracker(
         log_path=log_file,
         owner_user_id="1111111",
         collaborator_ids=[],
+        contributor_log_dir=contributor_dir,
     )
     tracker.record_activity("0000000", "Stranger", "who am i", "telegram")
     assert log_file.exists()
@@ -140,3 +154,16 @@ def test_summary_last_activity_is_latest_timestamp(tracker, log_file):
     s = tracker.get_activity_summary()
     assert s["by_user"]["9999999"]["last_active"] > s["by_user"]["7614658040"]["last_active"]
     assert s["last_activity"] == pytest.approx(s["by_user"]["9999999"]["last_active"], abs=1)
+
+
+def test_record_activity_mirrors_to_contributor_daily_log(tracker, log_file):
+    tracker.record_activity("7614658040", "Alice", "Need weather update", "telegram")
+    contributor_dir = log_file.parent / "contributors"
+    mirror_dir = log_file.parent / "contributors-mirror"
+    primary_files = list(contributor_dir.glob("*-7614658040.md"))
+    mirror_files = list(mirror_dir.glob("*-7614658040.md"))
+    assert len(primary_files) == 1
+    assert len(mirror_files) == 1
+    for content in (primary_files[0].read_text(), mirror_files[0].read_text()):
+        assert "Alice (7614658040)" in content
+        assert "Need weather update" in content

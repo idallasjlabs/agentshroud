@@ -59,6 +59,10 @@ fi
 if [[ "${OPENCLAW_MAIN_MODEL:-}" == ollama/* ]]; then
     _LOCAL_ONLY_MODEL=true
 fi
+if $_LOCAL_ONLY_MODEL && [ -z "${OLLAMA_API_KEY:-}" ]; then
+    export OLLAMA_API_KEY="ollama-local"
+    echo "[startup] Set default OLLAMA_API_KEY for local provider registration"
+fi
 
 # Load Claude OAuth token only when running non-local model backends.
 if ! $_LOCAL_ONLY_MODEL; then
@@ -136,15 +140,17 @@ if [ -n "${GATEWAY_AUTH_TOKEN:-}" ] && [ -n "${GATEWAY_OP_PROXY_URL:-}" ] && $_O
         echo "[startup] Local Ollama model selected — skipping Claude op-proxy fetch"
     fi
 
-    # Load Brave Search API key
+    # Load Brave Search API key (non-blocking single attempt).
+    # This key is optional; do not delay bot startup for retry backoff loops.
     # Item ID: 6j6ij5tzld6kobvit5tk6ufrhq (Brave Search API - agentshroud.ai@gmail.com)
-    BRAVE_API_KEY="$(op_proxy_read_with_retry "Brave Search API key" \
-        "op://Agent Shroud Bot Credentials/6j6ij5tzld6kobvit5tk6ufrhq/brave search api key")" || true
+    BRAVE_API_KEY="${BRAVE_API_KEY:-$(/usr/local/bin/op-wrapper.sh read \
+        "op://Agent Shroud Bot Credentials/6j6ij5tzld6kobvit5tk6ufrhq/brave search api key" \
+        2>/dev/null || true)}"
     if [ -n "$BRAVE_API_KEY" ]; then
         export BRAVE_API_KEY
         echo "[startup] ✓ Loaded Brave Search API key"
     else
-        echo "[startup] ⚠ Could not load Brave Search API key after retries"
+        echo "[startup] ⚠ Brave Search API key unavailable (continuing without web search key)"
     fi
 
     # iCloud email credentials — loaded in background to avoid blocking startup
@@ -246,6 +252,8 @@ _telegram_send() {
 # Instance identity for notifications
 _INSTANCE_LABEL="${INSTANCE_NAME:-$(hostname -s)}"
 _BOT_NAME="${OPENCLAW_BOT_NAME:-agentshroud-bot}"
+_STARTUP_NOTICE_STAMP="${OPENCLAW_STARTUP_NOTICE_STAMP:-/home/node/.openclaw/workspace/.startup_notice_at}"
+_STARTUP_NOTICE_COOLDOWN_SECONDS="${OPENCLAW_STARTUP_NOTICE_COOLDOWN_SECONDS:-300}"
 
 # Forward TERM/INT to openclaw, backup memory, send shutdown notification
 trap '
@@ -283,9 +291,27 @@ trap '
     # Give Telegram provider time to connect after gateway is ready
     sleep 5
 
-    _telegram_send "🛡️ AgentShroud online" \
-        && echo "[startup] ✓ Sent Telegram startup notification" \
-        || echo "[startup] ⚠ Could not send Telegram startup notification"
+    now_epoch="$(date +%s)"
+    last_notice_epoch=""
+    if [ -f "${_STARTUP_NOTICE_STAMP}" ]; then
+        last_notice_epoch="$(cat "${_STARTUP_NOTICE_STAMP}" 2>/dev/null || true)"
+    fi
+    should_notify="yes"
+    if [ -n "${last_notice_epoch}" ] && [ "${last_notice_epoch}" -eq "${last_notice_epoch}" ] 2>/dev/null; then
+        age="$(( now_epoch - last_notice_epoch ))"
+        if [ "${age}" -lt "${_STARTUP_NOTICE_COOLDOWN_SECONDS}" ]; then
+            should_notify="no"
+        fi
+    fi
+    if [ "${should_notify}" = "yes" ]; then
+        mkdir -p "$(dirname "${_STARTUP_NOTICE_STAMP}")" 2>/dev/null || true
+        printf '%s\n' "${now_epoch}" > "${_STARTUP_NOTICE_STAMP}" 2>/dev/null || true
+        _telegram_send "🛡️ AgentShroud online" \
+            && echo "[startup] ✓ Sent Telegram startup notification" \
+            || echo "[startup] ⚠ Could not send Telegram startup notification"
+    else
+        echo "[startup] Startup notification suppressed (cooldown active)"
+    fi
 ) &
 
 wait $OPENCLAW_PID
