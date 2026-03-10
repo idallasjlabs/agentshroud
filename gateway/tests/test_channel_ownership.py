@@ -171,7 +171,7 @@ class TestEmailSend:
         mock_scan.redactions = [MagicMock()]  # non-empty = redaction happened
 
         mock_sanitizer = MagicMock()
-        mock_sanitizer.sanitize.return_value = mock_scan
+        mock_sanitizer.sanitize = AsyncMock(return_value=mock_scan)
 
         with patch(
             "gateway.ingest_api.routes.forward._is_email_recipient_allowed", return_value=True
@@ -190,6 +190,7 @@ class TestEmailSend:
         data = resp.json()
         assert data["pii_redacted"] is True
         assert "123-45-6789" not in data["sanitized_body"]
+        mock_sanitizer.sanitize.assert_awaited_once()
 
     def test_unknown_recipient_queued_for_approval(self, client):
         """Unknown recipient triggers approval queue and returns 202."""

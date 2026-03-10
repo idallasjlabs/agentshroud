@@ -6,6 +6,8 @@
 #
 # Copyright © 2026 Isaiah Dallas Jefferson, Jr. AgentShroud™. All rights reserved.
 
+name: agentshroud
+
 services:
   # ── Gateway ──────────────────────────────────────────────────────────────────
   # Security proxy, HTTP CONNECT proxy, DNS forwarder, API gateway.
@@ -37,6 +39,8 @@ services:
       - gateway_password
       - telegram_bot_token
       - anthropic_oauth_token
+      - openai_api_key
+      - google_api_key
       - 1password_bot_email
       - 1password_bot_master_password
       - 1password_bot_secret_key
@@ -47,7 +51,7 @@ services:
       - PYTHONPYCACHEPREFIX=/tmp/pycache
       - GATEWAY_AUTH_TOKEN_FILE=/run/secrets/gateway_password
       - OP_SERVICE_ACCOUNT_TOKEN_FILE=/run/secrets/1password_service_account
-      - PROXY_ALLOWED_NETWORKS=172.11.0.0/16,172.12.0.0/16
+      - PROXY_ALLOWED_NETWORKS=10.254.111.0/24,10.254.112.0/24
     security_opt:
       - no-new-privileges:true
       - seccomp=./seccomp/gateway-seccomp.json
@@ -112,20 +116,31 @@ services:
       - gateway_password
       - telegram_bot_token
       - anthropic_oauth_token
+      - openai_api_key
+      - google_api_key
       - 1password_bot_email
       - 1password_bot_master_password
       - 1password_bot_secret_key
     environment:
       - NODE_ENV=production
-      - OPENCLAW_GATEWAY_BIND=lan
+      - OPENCLAW_GATEWAY_BIND=${OPENCLAW_GATEWAY_BIND:-lan}
       - OP_SERVICE_ACCOUNT_TOKEN_FILE=/run/secrets/1password_service_account
       - OPENCLAW_GATEWAY_PASSWORD_FILE=/run/secrets/gateway_password
       - TELEGRAM_BOT_TOKEN_FILE=/run/secrets/telegram_bot_token
       - HTTP_PROXY=http://gateway:8181
       - HTTPS_PROXY=http://gateway:8181
-      - NO_PROXY=gateway,localhost,127.0.0.1
+      - NO_PROXY=gateway,localhost,127.0.0.1,api.anthropic.com,api.openai.com,generativelanguage.googleapis.com
       - GATEWAY_OP_PROXY_URL=http://gateway:8080
       - ANTHROPIC_BASE_URL=http://gateway:8080
+      - OPENAI_BASE_URL=http://gateway:8080
+      - GEMINI_BASE_URL=http://gateway:8080
+      - OLLAMA_BASE_URL=${OLLAMA_BASE_URL:-http://gateway:8080/v1}
+      - OLLAMA_API_KEY=${OLLAMA_API_KEY:-ollama-local}
+      - AGENTSHROUD_MODEL_MODE=${AGENTSHROUD_MODEL_MODE:-local}
+      - AGENTSHROUD_LOCAL_MODEL_REF=${AGENTSHROUD_LOCAL_MODEL_REF:-ollama/qwen2.5-coder:7b}
+      - AGENTSHROUD_CLOUD_MODEL_REF=${AGENTSHROUD_CLOUD_MODEL_REF:-anthropic/claude-opus-4-6}
+      - OPENCLAW_MAIN_MODEL=${OPENCLAW_MAIN_MODEL:-}
+      - AGENTSHROUD_LOCAL_MODEL=${AGENTSHROUD_LOCAL_MODEL:-qwen2.5-coder:7b}
       - TELEGRAM_API_BASE_URL=http://gateway:8080/telegram-api
       - GATEWAY_HOST_PORT=8080
       - OPENCLAW_BOT_NAME=agentshroud_bot
@@ -171,6 +186,10 @@ secrets:
     file: ./secrets/gateway_password.txt
   anthropic_oauth_token:
     file: ./secrets/anthropic_oauth_token.txt
+  openai_api_key:
+    file: ./secrets/openai_api_key.txt
+  google_api_key:
+    file: ./secrets/google_api_key.txt
   1password_bot_email:
     file: ./secrets/1password_bot_email.txt
   1password_bot_master_password:
@@ -189,13 +208,13 @@ networks:
     internal: false
     ipam:
       config:
-        - subnet: 172.10.0.0/16
+        - subnet: 10.254.110.0/24
   agentshroud-isolated:
     driver: bridge
     internal: true
     ipam:
       config:
-        - subnet: 172.11.0.0/16
+        - subnet: 10.254.111.0/24
     driver_opts:
       com.docker.network.bridge.enable_icc: "true"
   agentshroud-console:
@@ -205,7 +224,7 @@ networks:
       com.docker.network.bridge.enable_ip_masquerade: "false"
     ipam:
       config:
-        - subnet: 172.12.0.0/16
+        - subnet: 10.254.112.0/24
 
 # ── Volumes ────────────────────────────────────────────────────────────────────
 volumes:

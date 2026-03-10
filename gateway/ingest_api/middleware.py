@@ -35,7 +35,6 @@ from gateway.security.memory_integrity import MemoryIntegrityMonitor
 from gateway.security.memory_lifecycle import MemoryLifecycleManager
 from gateway.security.tool_result_injection import ToolResultInjectionScanner
 from gateway.security.xml_leak_filter import XMLLeakFilter
-from gateway.security.input_normalizer import strip_markdown_exfil
 
 from gateway.security.alert_dispatcher import AlertDispatcher
 from gateway.security.approval_hardening import ApprovalHardening, ApprovalHardeningConfig
@@ -45,7 +44,7 @@ from gateway.security.credential_injector import CredentialInjector, CredentialI
 from gateway.security.dns_filter import DNSFilter, DNSFilterConfig
 from gateway.security.drift_detector import DriftDetector
 from gateway.security.egress_monitor import EgressMonitor, EgressMonitorConfig
-from gateway.security.input_normalizer import strip_markdown_exfil, normalize_input
+from gateway.security.input_normalizer import normalize_input
 from gateway.security.key_rotation import KeyRotationManager
 from gateway.security.killswitch_monitor import KillSwitchMonitor
 from gateway.security.multi_turn_tracker import MultiTurnTracker
@@ -401,6 +400,9 @@ class MiddlewareManager:
             message = request_data.get('message', '')
             if isinstance(message, dict):
                 message = str(message)
+            message = normalize_input(message)
+            if message != request_data.get('message', ''):
+                request_data['message'] = message
             
             # Register expected writes to memory files to prevent false integrity alerts
             if self.memory_integrity_monitor and ('write' in message.lower() or 'edit' in message.lower()):
@@ -441,7 +443,7 @@ class MiddlewareManager:
                             )
                             return MiddlewareResult(
                                 allowed=False,
-                                reason=f"Multi-turn disclosure risk exceeded threshold (score={mt_ctx.total_score:.2f})",
+                                reason="Multi-turn disclosure risk threshold exceeded",
                             )
                 except Exception as e:
                     logger.error(f"MultiTurnTracker error: {e}")
@@ -1205,3 +1207,11 @@ class MiddlewareManager:
             # But for now, log and allow through to avoid breaking functionality
             logger.warning(f"Allowing unsanitized tool result through due to sanitization error")
             return tool_result, False
+
+    async def close(self) -> None:
+        """Shutdown middleware background tasks cleanly."""
+        try:
+            if self.resource_guard:
+                await self.resource_guard.stop()
+        except Exception as exc:
+            logger.warning("MiddlewareManager.close(): ResourceGuard stop failed: %s", exc)

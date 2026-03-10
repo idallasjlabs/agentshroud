@@ -109,7 +109,7 @@ async def email_send(request: EmailSendRequest, req: Request, auth: AuthRequired
     sanitized_body = request.body
     if sanitizer:
         try:
-            scan = sanitizer.sanitize(request.body)
+            scan = await sanitizer.sanitize(request.body)
             sanitized_body = scan.sanitized_content
             pii_redacted = len(scan.redactions) > 0
             if pii_redacted:
@@ -381,7 +381,6 @@ async def forward_content(request: ForwardRequest, req: Request, auth: AuthRequi
             if pipeline.trust_manager:
                 trust_info = pipeline.trust_manager.get_trust("default")
                 if trust_info:
-                    trust_levels = ["UNTRUSTED", "BASIC", "STANDARD", "ELEVATED", "FULL"]
                     trust_score = trust_info[0]
                     if trust_score >= 400:
                         user_trust_level = "FULL"

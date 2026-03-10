@@ -28,6 +28,8 @@ class TestEgressFilterConfig:
         assert config.mode == "enforce"
         assert "api.anthropic.com" in config.default_allowlist
         assert "api.openai.com" in config.default_allowlist
+        assert "1password.com" in config.default_allowlist
+        assert "*.1password.com" in config.default_allowlist
         assert "*.github.com" in config.default_allowlist
         assert "pastebin.com" in config.default_denylist
         assert "*.pastebin.com" in config.default_denylist

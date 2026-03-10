@@ -23,6 +23,12 @@ class TestResourceGuard:
         )
         self.guard = ResourceGuard(limits)
 
+    def teardown_method(self):
+        self.guard.monitoring_active = False
+        task = getattr(self.guard, "_monitor_task", None)
+        if task and not task.done():
+            task.cancel()
+
     def test_check_resource_under_limit_passes(self):
         """Test that resource usage under limits passes."""
         agent_id = "test_agent"
@@ -144,3 +150,12 @@ class TestResourceGuard:
         )
         assert custom_config.max_disk_writes_mb_per_minute == 50
         assert custom_config.max_temp_files == 500
+
+    @pytest.mark.asyncio
+    async def test_stop_cancels_monitor_task(self):
+        """stop() should cancel background monitor cleanly."""
+        guard = ResourceGuard(ResourceLimits())
+        await guard.stop()
+        task = getattr(guard, "_monitor_task", None)
+        if task:
+            assert task.cancelled() or task.done()

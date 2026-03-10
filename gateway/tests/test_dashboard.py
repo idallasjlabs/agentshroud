@@ -82,6 +82,8 @@ def test_ws_activity_connects(sync_client):
     with sync_client.websocket_connect(f"/ws/activity?token={ws_token}") as ws:
         msg = ws.receive_json()
         assert msg["type"] == "authenticated"
+        snap = ws.receive_json()
+        assert snap["type"] == "egress_snapshot"
 
 
 def test_ws_activity_receives_events(sync_client):
@@ -90,6 +92,8 @@ def test_ws_activity_receives_events(sync_client):
     with sync_client.websocket_connect(f"/ws/activity?token={ws_token}") as ws:
         auth_msg = ws.receive_json()
         assert auth_msg["type"] == "authenticated"
+        snap = ws.receive_json()
+        assert snap["type"] == "egress_snapshot"
 
         # Emit an event through the bus
         loop = asyncio.new_event_loop()
@@ -100,6 +104,73 @@ def test_ws_activity_receives_events(sync_client):
         msg = ws.receive_json()
         assert msg["type"] == "forward"
         assert msg["summary"] == "Test forward event"
+
+
+def test_ws_egress_connects_and_snapshot(sync_client):
+    """WebSocket /ws/egress connects and emits egress snapshot."""
+    ws_token = _create_ws_token()
+    with sync_client.websocket_connect(f"/ws/egress?token={ws_token}") as ws:
+        msg = ws.receive_json()
+        assert msg["type"] == "authenticated"
+        snap = ws.receive_json()
+        assert snap["type"] == "egress_snapshot"
+        assert "details" in snap
+        assert "egress_recent_log" in snap["details"]
+        assert "quarantined_blocked_outbound" in snap["details"]
+        assert "quarantine_summary" in snap["details"]
+        assert "scanner_recent_events" in snap["details"]
+        assert "recent_security_events" in snap["details"]
+        assert "soc_risk" in snap["details"]
+        assert "soc_summary" in snap["details"]
+        assert "privacy_policy_summary" in snap["details"]
+
+
+def test_ws_egress_receives_scanner_event(sync_client):
+    """WebSocket /ws/egress should forward scanner_result events."""
+    ws_token = _create_ws_token()
+    with sync_client.websocket_connect(f"/ws/egress?token={ws_token}") as ws:
+        _ = ws.receive_json()  # authenticated
+        _ = ws.receive_json()  # snapshot
+
+        loop = asyncio.new_event_loop()
+        event = make_event("scanner_result", "scan done", {"scanner": "trivy"})
+        loop.run_until_complete(app_state.event_bus.emit(event))
+        loop.close()
+
+        msg = ws.receive_json()
+        assert msg["type"] == "scanner_result"
+
+
+def test_ws_egress_receives_privacy_event(sync_client):
+    """WebSocket /ws/egress should forward privacy_* events."""
+    ws_token = _create_ws_token()
+    with sync_client.websocket_connect(f"/ws/egress?token={ws_token}") as ws:
+        _ = ws.receive_json()  # authenticated
+        _ = ws.receive_json()  # snapshot
+
+        loop = asyncio.new_event_loop()
+        event = make_event("privacy_policy_violation", "blocked private tool", {"tool": "gmail_send"})
+        loop.run_until_complete(app_state.event_bus.emit(event))
+        loop.close()
+
+        msg = ws.receive_json()
+        assert msg["type"] == "privacy_policy_violation"
+
+
+def test_ws_egress_receives_auth_event(sync_client):
+    """WebSocket /ws/egress should forward auth_* events for SOC visibility."""
+    ws_token = _create_ws_token()
+    with sync_client.websocket_connect(f"/ws/egress?token={ws_token}") as ws:
+        _ = ws.receive_json()  # authenticated
+        _ = ws.receive_json()  # snapshot
+
+        loop = asyncio.new_event_loop()
+        event = make_event("auth_failed", "bad token attempt", {"path": "/ws/egress"}, "warning")
+        loop.run_until_complete(app_state.event_bus.emit(event))
+        loop.close()
+
+        msg = ws.receive_json()
+        assert msg["type"] == "auth_failed"
 
 
 def test_ws_activity_requires_auth(sync_client):

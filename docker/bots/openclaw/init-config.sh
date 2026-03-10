@@ -42,7 +42,7 @@ fi
 
 node "${DEFAULTS_DIR}/apply-patches.js" "${OPENCLAW_DIR}/openclaw.json"
 
-# ── 2b. auth-profiles.json — inject Anthropic credentials if available ───────
+# ── 2b. auth-profiles.json — inject Anthropic credentials when needed ─────────
 # OpenClaw validates credentials from its per-agent auth store before making
 # API calls. The startup script loads ANTHROPIC_OAUTH_TOKEN via 1Password
 # op-proxy, but nothing writes it to auth-profiles.json. We do that here.
@@ -53,31 +53,123 @@ mkdir -p "${AUTH_PROFILES_DIR}"
 
 # Prefer OAuth token (loaded via 1Password op-proxy), fall back to static API key
 _ANTHROPIC_KEY="${ANTHROPIC_OAUTH_TOKEN:-${ANTHROPIC_API_KEY:-}}"
-
-if [ -n "${_ANTHROPIC_KEY}" ]; then
-  if [ -f "${AUTH_PROFILES}" ]; then
-    # Merge: update anthropic key, preserve other providers
-    node -e "
-      const fs = require('fs');
-      const p = '${AUTH_PROFILES}';
-      let auth = {};
-      try { auth = JSON.parse(fs.readFileSync(p, 'utf8')); } catch(e) {}
-      auth.anthropic = auth.anthropic || {};
-      auth.anthropic.apiKey = process.env.ANTHROPIC_OAUTH_TOKEN || process.env.ANTHROPIC_API_KEY;
-      fs.writeFileSync(p, JSON.stringify(auth, null, 2), 'utf8');
-    "
-  else
-    node -e "
-      const fs = require('fs');
-      const auth = { anthropic: { apiKey: process.env.ANTHROPIC_OAUTH_TOKEN || process.env.ANTHROPIC_API_KEY } };
-      fs.writeFileSync('${AUTH_PROFILES}', JSON.stringify(auth, null, 2), 'utf8');
-    "
-  fi
-  chmod 600 "${AUTH_PROFILES}"
-  echo "[init] ✓ Seeded auth-profiles.json with Anthropic credential"
-else
-  echo "[init] ⚠ No ANTHROPIC_OAUTH_TOKEN or ANTHROPIC_API_KEY — auth-profiles.json not seeded"
+_LOCAL_ONLY_MODEL=false
+_MODEL_MODE="$(echo "${AGENTSHROUD_MODEL_MODE:-local}" | tr '[:upper:]' '[:lower:]')"
+if [[ "${_MODEL_MODE}" != "cloud" ]]; then
+  _LOCAL_ONLY_MODEL=true
 fi
+if [[ "${OPENCLAW_MAIN_MODEL:-}" == ollama/* ]]; then
+  _LOCAL_ONLY_MODEL=true
+fi
+
+node -e "
+  const fs = require('fs');
+  const p = '${AUTH_PROFILES}';
+  let raw = {};
+  try { raw = JSON.parse(fs.readFileSync(p, 'utf8')); } catch (e) {}
+
+  const store = (raw && typeof raw === 'object' && raw.profiles && typeof raw.profiles === 'object')
+    ? raw
+    : { version: 1, profiles: {} };
+
+  let changed = !raw.profiles;
+
+  if (!raw.profiles && raw && typeof raw === 'object') {
+    for (const [provider, value] of Object.entries(raw)) {
+      const apiKey = value && typeof value === 'object' ? String(value.apiKey || value.key || '').trim() : '';
+      if (!apiKey) continue;
+      const profileId = provider + ':default';
+      store.profiles[profileId] = { type: 'api_key', provider, key: apiKey };
+      changed = true;
+    }
+  }
+
+  const setApiKey = (provider, key) => {
+    const normalized = String(key || '').trim();
+    if (!normalized) return;
+    const profileId = provider + ':default';
+    const next = { type: 'api_key', provider, key: normalized };
+    const prev = store.profiles[profileId];
+    if (!prev || prev.type !== next.type || prev.provider !== next.provider || prev.key !== next.key) {
+      store.profiles[profileId] = next;
+      changed = true;
+    }
+  };
+
+  setApiKey('anthropic', process.env.ANTHROPIC_OAUTH_TOKEN || process.env.ANTHROPIC_API_KEY || '');
+  setApiKey('google', process.env.GOOGLE_API_KEY || '');
+  setApiKey('openai', process.env.OPENAI_API_KEY || '');
+
+  const modelMode = String(process.env.AGENTSHROUD_MODEL_MODE || 'local').toLowerCase();
+  const localOnly = modelMode !== 'cloud' || String(process.env.OPENCLAW_MAIN_MODEL || '').startsWith('ollama/');
+  if (localOnly) {
+    setApiKey('ollama', process.env.OLLAMA_API_KEY || 'ollama-local');
+  }
+
+  if (changed) {
+    fs.writeFileSync(p, JSON.stringify({
+      version: Number(store.version || 1),
+      profiles: store.profiles || {}
+    }, null, 2), 'utf8');
+    console.log('[init] ✓ Seeded auth-profiles.json for available providers (anthropic/google/openai/ollama)');
+  } else {
+    console.log('[init] ✓ auth-profiles.json already up-to-date');
+  }
+"
+chmod 600 "${AUTH_PROFILES}" 2>/dev/null || true
+
+# Mirror provider auth at OpenClaw root for channel/runtime resolvers.
+ROOT_AUTH_PROFILES="${OPENCLAW_DIR}/auth-profiles.json"
+cp "${AUTH_PROFILES}" "${ROOT_AUTH_PROFILES}"
+chmod 600 "${ROOT_AUTH_PROFILES}" 2>/dev/null || true
+
+# ── 2c. models.json — ensure Ollama provider/model registration for local mode ─
+MODELS_JSON="${AUTH_PROFILES_DIR}/models.json"
+
+node -e "
+  const fs = require('fs');
+  const p = '${MODELS_JSON}';
+  let cfg = {};
+  try { cfg = JSON.parse(fs.readFileSync(p, 'utf8')); } catch (e) {}
+  cfg.providers = cfg.providers || {};
+  cfg.providers.ollama = cfg.providers.ollama || {};
+
+  const modelRef = String(process.env.AGENTSHROUD_LOCAL_MODEL_REF || 'ollama/qwen2.5-coder:7b');
+  const modelName = String(process.env.AGENTSHROUD_LOCAL_MODEL || modelRef.split('/').slice(-1)[0] || 'qwen2.5-coder:7b');
+  const rawBaseUrl = String(process.env.OLLAMA_BASE_URL || 'http://gateway:8080/v1').replace(/\/+$/, '');
+  const baseUrl = /\/v1$/i.test(rawBaseUrl) ? rawBaseUrl : rawBaseUrl + '/v1';
+
+  let changed = false;
+  const setIfChanged = (k, v) => {
+    if (cfg.providers.ollama[k] !== v) {
+      cfg.providers.ollama[k] = v;
+      changed = true;
+    }
+  };
+
+  setIfChanged('baseUrl', baseUrl);
+  setIfChanged('api', 'ollama');
+  setIfChanged('apiKey', 'OLLAMA_API_KEY');
+
+  const existingModels = Array.isArray(cfg.providers.ollama.models) ? cfg.providers.ollama.models : [];
+  if (!existingModels.includes(modelName)) {
+    cfg.providers.ollama.models = [...existingModels, modelName];
+    changed = true;
+  }
+
+  if (changed) {
+    fs.writeFileSync(p, JSON.stringify(cfg, null, 2), 'utf8');
+    console.log('[init] ✓ Registered Ollama provider/models in models.json');
+  } else {
+    console.log('[init] ✓ models.json already up-to-date');
+  }
+"
+chmod 600 "${MODELS_JSON}" 2>/dev/null || true
+
+# Mirror provider catalog at OpenClaw root for channel/runtime resolvers.
+ROOT_MODELS_JSON="${OPENCLAW_DIR}/models.json"
+cp "${MODELS_JSON}" "${ROOT_MODELS_JSON}"
+chmod 600 "${ROOT_MODELS_JSON}" 2>/dev/null || true
 
 # Security: harden config and state dir permissions
 chmod 700 "${OPENCLAW_DIR}" 2>/dev/null || true
