@@ -966,6 +966,37 @@ class TestOutboundPipelineIntegration:
         assert calls["count"] == 0
         assert "approval request queued" not in result["text"].lower()
 
+    @pytest.mark.asyncio
+    async def test_raw_web_fetch_json_consecutive_dot_domain_does_not_queue_approval(self, monkeypatch):
+        """Consecutive-dot domains should be rejected before approval queueing."""
+        calls = {"count": 0}
+
+        class FakeEgress:
+            async def check_async(self, **_kwargs):
+                calls["count"] += 1
+                return SimpleNamespace(action="deny")
+
+        from gateway.ingest_api import state as state_module
+
+        monkeypatch.setattr(
+            state_module,
+            "app_state",
+            SimpleNamespace(egress_filter=FakeEgress()),
+        )
+        proxy = TelegramAPIProxy(sanitizer=_make_sanitizer())
+        body = json.dumps(
+            {
+                "chat_id": "8096968754",
+                "text": "{\"name\":\"web_fetch\",\"arguments\":{\"url\":\"https://good..example.com\"}}",
+            }
+        ).encode()
+
+        result = json.loads(await proxy._filter_outbound(body, "application/json"))
+        await asyncio.sleep(0)
+
+        assert calls["count"] == 0
+        assert "approval request queued" not in result["text"].lower()
+
     def test_sanitize_reason_hides_internal_paths(self):
         """User-facing block reasons should not expose modules or file paths."""
         reason = (
