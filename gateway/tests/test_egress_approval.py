@@ -40,6 +40,7 @@ class TestEgressApprovalQueue:
         assert approval_queue._assess_risk("api.openai.com", 443) == RiskLevel.GREEN
         assert approval_queue._assess_risk("api.anthropic.com", 80) == RiskLevel.GREEN
         assert approval_queue._assess_risk("github.com", 443) == RiskLevel.GREEN
+        assert approval_queue._assess_risk("my.1password.com", 443) == RiskLevel.GREEN
         
         # Subdomains of safe domains should be green
         assert approval_queue._assess_risk("api.github.com", 443) == RiskLevel.GREEN
@@ -317,6 +318,19 @@ class TestEgressApprovalQueue:
         # Check that expired request was removed
         pending = await approval_queue.get_pending_requests()
         assert len(pending) == 0
+
+    @pytest.mark.asyncio
+    async def test_emergency_block_all_denies_requests(self, approval_queue):
+        """Emergency block-all should deny all new approval requests."""
+        await approval_queue.set_emergency_block_all(True, reason="incident")
+        status = await approval_queue.get_emergency_status()
+        assert status["enabled"] is True
+        assert status["reason"] == "incident"
+
+        result = await approval_queue.request_approval(
+            "example.com", 443, "agent1", "web_fetch"
+        )
+        assert result == ApprovalResult.DENIED
 
 
 class TestEgressApprovalAPI:

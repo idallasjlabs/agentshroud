@@ -27,7 +27,7 @@
 const fs = require('fs');
 const path = require('path');
 
-const configPath = process.argv[2] || '/home/node/.openclaw/openclaw.json';
+const configPath = process.argv[2] || '/home/node/.agentshroud/openclaw.json';
 
 // ── Load or seed ─────────────────────────────────────────────────────────────
 
@@ -55,10 +55,63 @@ let changed = false;
 config.agents = config.agents || {};
 config.agents.list = config.agents.list || [];
 
+const MODEL_MODE = String(process.env.AGENTSHROUD_MODEL_MODE || 'local').toLowerCase();
+const LOCAL_MODEL_REF = process.env.AGENTSHROUD_LOCAL_MODEL_REF || 'ollama/qwen2.5-coder:7b';
+const CLOUD_MODEL_REF = process.env.AGENTSHROUD_CLOUD_MODEL_REF || 'anthropic/claude-opus-4-6';
+const inferredMainModel = MODEL_MODE === 'cloud' ? CLOUD_MODEL_REF : LOCAL_MODEL_REF;
+const MAIN_MODEL = process.env.OPENCLAW_MAIN_MODEL || inferredMainModel;
+const LOCAL_MODEL_NAME = process.env.AGENTSHROUD_LOCAL_MODEL || LOCAL_MODEL_REF.split('/').slice(-1)[0] || 'qwen2.5-coder:7b';
+const OLLAMA_BASE_URL_RAW = process.env.OLLAMA_BASE_URL || 'http://gateway:8080/v1';
+const OLLAMA_BASE_URL = /\/v1\/?$/i.test(OLLAMA_BASE_URL_RAW)
+  ? OLLAMA_BASE_URL_RAW.replace(/\/+$/, '')
+  : `${OLLAMA_BASE_URL_RAW.replace(/\/+$/, '')}/v1`;
+
+// Ensure startup/default model resolver uses local model.
+config.agents.defaults = config.agents.defaults || {};
+const currentDefaultsModel =
+  typeof config.agents.defaults.model === 'string'
+    ? config.agents.defaults.model
+    : (config.agents.defaults.model && config.agents.defaults.model.primary) || '';
+if (currentDefaultsModel !== MAIN_MODEL) {
+  config.agents.defaults.model = { primary: MAIN_MODEL };
+  changed = true;
+}
+config.agents.defaults.models = config.agents.defaults.models || {};
+if (!config.agents.defaults.models[MAIN_MODEL]) {
+  config.agents.defaults.models[MAIN_MODEL] = { alias: 'local-qwen' };
+  changed = true;
+}
+
+// Explicit Ollama provider fallback in config for startup/runtime model
+// selection when discovery endpoints are temporarily unavailable.
+config.models = config.models || {};
+config.models.providers = config.models.providers || {};
+const desiredOllama = {
+  baseUrl: OLLAMA_BASE_URL,
+  api: 'openai-completions',
+  models: [{
+    id: LOCAL_MODEL_NAME,
+    name: LOCAL_MODEL_NAME,
+    reasoning: false,
+    input: ['text'],
+    contextWindow: 128000,
+    maxTokens: 8192,
+  }],
+};
+if (JSON.stringify(config.models.providers.ollama || {}) !== JSON.stringify(desiredOllama)) {
+  config.models.providers.ollama = desiredOllama;
+  console.log(`[init-patch] Set models.providers.ollama fallback for ${LOCAL_MODEL_NAME}`);
+  changed = true;
+}
+
 const hasMain = config.agents.list.some(a => a.id === 'main');
 if (!hasMain) {
-  config.agents.list.unshift({ id: 'main', name: 'AgentShroud Main Agent' });
-  console.log('[init-patch] Added main agent to agents.list (now default)');
+  config.agents.list.unshift({ 
+    id: 'main', 
+    name: 'AgentShroud Main Agent',
+    model: MAIN_MODEL 
+  });
+  console.log(`[init-patch] Added main agent to agents.list (now default with ${MAIN_MODEL})`);
   changed = true;
 } else {
   // Ensure main is first so it is the default
@@ -67,6 +120,12 @@ if (!hasMain) {
     const [mainEntry] = config.agents.list.splice(idx, 1);
     config.agents.list.unshift(mainEntry);
     console.log('[init-patch] Moved main agent to front of agents.list');
+    changed = true;
+  }
+  // FORCED UPDATE: ensure the model matches what we want
+  if (config.agents.list[0].model !== MAIN_MODEL) {
+    config.agents.list[0].model = MAIN_MODEL;
+    console.log(`[init-patch] Forced main agent model update to ${MAIN_MODEL}`);
     changed = true;
   }
 }
@@ -97,7 +156,7 @@ if (!hasBinding) {
 
 
 // ── Patch 2c: collaborator agent — restricted advisor mode ───────────────────
-// Collaborators get an isolated agent with Sonnet model, no dangerous tools,
+// Collaborators get an isolated agent with local model, no dangerous tools,
 // and a mandatory disclosure notice. This prevents collaborators from accessing
 // owner tools (1Password, exec, SSH, etc.)
 
@@ -114,8 +173,7 @@ if (!hasCollaborator) {
   config.agents.list.push({
     id: 'collaborator',
     name: 'AgentShroud Collaborator',
-    model: 'anthropic/claude-sonnet-4-20250514',
-    maxTokens: 2048,
+    model: MAIN_MODEL,
     tools: {
       profile: 'minimal',
       deny: [
@@ -124,24 +182,24 @@ if (!hasCollaborator) {
         'memory_search', 'memory_get', 'tts', 'pdf',
         'nodes', 'browser', 'canvas', 'agents_list',
         'sessions_list', 'sessions_history', 'session_status',
-        'image', 'write', 'edit', 'web_search', 'web_fetch'
+        'image'
       ]
     },
     skills: [],
-    workspace: '.agentshroud/collaborator-workspace',
+    workspace: 'collaborator-workspace',
     memorySearch: false,
     heartbeat: { enabled: false }
   });
-  console.log('[init-patch] Added collaborator agent (Sonnet, restricted tools)');
+  console.log(`[init-patch] Added collaborator agent (${MAIN_MODEL}, restricted tools)`);
   changed = true;
-}
-
-// Migrate collaborator workspace to writable volume path if stale
-const collaboratorAgent = config.agents.list.find(a => a.id === 'collaborator');
-if (collaboratorAgent && collaboratorAgent.workspace !== '.agentshroud/collaborator-workspace') {
-  collaboratorAgent.workspace = '.agentshroud/collaborator-workspace';
-  console.log('[init-patch] Migrated collaborator workspace to writable volume path');
-  changed = true;
+} else {
+  // FORCED UPDATE for collaborator too
+  const cIdx = config.agents.list.findIndex(a => a.id === 'collaborator');
+  if (cIdx >= 0 && config.agents.list[cIdx].model !== MAIN_MODEL) {
+    config.agents.list[cIdx].model = MAIN_MODEL;
+    console.log(`[init-patch] Forced collaborator model update to ${MAIN_MODEL}`);
+    changed = true;
+  }
 }
 
 // Ensure all collaborator IDs are bound to the collaborator agent

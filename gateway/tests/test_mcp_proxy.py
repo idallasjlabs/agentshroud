@@ -646,6 +646,74 @@ class TestProxyResultProcessing:
         entries = proxy.audit.get_failed_entries()
         assert len(entries) == 1
 
+    @pytest.mark.asyncio
+    async def test_admin_private_data_redacted_for_non_owner(self, proxy):
+        tool_result = MCPToolResult(
+            call_id="r5",
+            server_name="home-assistant",
+            tool_name="get_states",
+            content={"notes": "gmail sync complete for iCloud account"},
+        )
+        result = await proxy.process_tool_result(tool_result, agent_id="main-agent")
+        assert "<ADMIN_PRIVATE_DATA>" in str(result.sanitized_result)
+        assert "gmail" not in str(result.sanitized_result).lower()
+        redaction_summary = proxy.permissions.get_private_redaction_summary(limit=10)
+        assert redaction_summary["events"] >= 1
+        assert redaction_summary["total_redactions"] >= 1
+
+    @pytest.mark.asyncio
+    async def test_admin_private_data_not_redacted_for_owner(self, proxy):
+        owner = proxy.permissions._owner_user_id
+        proxy.permissions.set_trust_level(owner, 3)
+        tool_result = MCPToolResult(
+            call_id="r6",
+            server_name="home-assistant",
+            tool_name="get_states",
+            content={"notes": "gmail sync complete for iCloud account"},
+        )
+        result = await proxy.process_tool_result(tool_result, agent_id=owner)
+        assert "gmail" in str(result.sanitized_result).lower()
+
+    @pytest.mark.asyncio
+    async def test_private_redaction_emits_privacy_event(self, proxy):
+        events = []
+
+        class FakeBus:
+            async def emit(self, event):
+                events.append(event)
+
+        proxy.set_event_bus(FakeBus())
+        tool_result = MCPToolResult(
+            call_id="r7",
+            server_name="home-assistant",
+            tool_name="get_states",
+            content={"notes": "gmail sync complete for iCloud account"},
+        )
+        _ = await proxy.process_tool_result(tool_result, agent_id="main-agent")
+        assert any(getattr(evt, "type", "") == "privacy_data_redacted" for evt in events)
+
+
+class TestPrivacyPolicyEvents:
+    @pytest.mark.asyncio
+    async def test_private_tool_violation_emits_event(self, proxy):
+        events = []
+
+        class FakeBus:
+            async def emit(self, event):
+                events.append(event)
+
+        proxy.set_event_bus(FakeBus())
+        call = MCPToolCall(
+            id="pv-1",
+            server_name="home-assistant",
+            tool_name="gmail_send",
+            parameters={"to": "x@example.com"},
+            agent_id="main-agent",
+        )
+        result = await proxy.process_tool_call(call)
+        assert result.blocked
+        assert any(getattr(evt, "type", "") == "privacy_policy_violation" for evt in events)
+
 
 # ============================================================
 # MCPProxy -- Hash Chain Integration

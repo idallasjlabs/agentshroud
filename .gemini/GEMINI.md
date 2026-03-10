@@ -371,6 +371,12 @@ All automation must be:
 3. **Security-first** — validate inputs, parameterize queries, no secrets in code
 4. **Production-ready** — error handling, logging, rollback procedures
 
+### Security & Credentials (CRITICAL)
+5. **NEVER** output the contents of any file in `docker/secrets/`.
+6. **NEVER** output the contents of `.env` files.
+7. **NEVER** run commands (`cat`, `grep`, etc.) on credential files if the output will be printed to the chat.
+8. If verification is needed, use `ls -l` or `wc -c` to check for existence/size without exposing content.
+
 ### Data Engineering
 
 1. **No schema drift** in Parquet outputs

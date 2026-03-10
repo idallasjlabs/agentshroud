@@ -199,6 +199,35 @@ class TestOutboundPipelineWired:
         assert call_kwargs.get("source") == "telegram"
         assert call_kwargs.get("response") == "bot reply"
 
+    @pytest.mark.asyncio
+    async def test_send_message_draft_also_runs_outbound_filtering(self):
+        """sendMessageDraft must be suppressed to prevent draft flicker leaks."""
+        pipeline = MagicMock()
+        pipeline.process_outbound = AsyncMock(
+            return_value=_make_pipeline_result(sanitized_message="clean draft")
+        )
+        proxy = _make_proxy(pipeline=pipeline)
+
+        captured = {}
+
+        async def fake_forward(url, body, content_type):
+            captured["body"] = json.loads(body.decode())
+            return {"ok": True, "result": {"message_id": 1}}
+
+        proxy._forward_to_telegram = fake_forward
+        body = json.dumps({"chat_id": 100, "text": "draft text"}).encode()
+        result = await proxy.proxy_request(
+            bot_token="dummy",
+            method="sendMessageDraft",
+            body=body,
+            content_type="application/json",
+        )
+
+        pipeline.process_outbound.assert_not_called()
+        assert captured == {}
+        assert result.get("ok") is True
+        assert result.get("result", {}).get("suppressed") is True
+
 
 # ── Test 7: outbound blocked → replacement text set ──
 

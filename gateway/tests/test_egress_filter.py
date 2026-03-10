@@ -218,6 +218,9 @@ class TestLogging:
         assert stats["total"] == 2
         assert stats["allowed"] == 1
         assert stats["denied"] == 1
+        assert "pending" in stats
+        assert "emergency" in stats
+        assert "top_denied_destinations" in stats
 
     def test_log_filters_by_agent(self):
         ef = _make_filter(mode="enforce", allowed_domains=["ok.com"])
@@ -255,6 +258,57 @@ class TestEgressAttempt:
         result = ef.check("bot", "https://blocked.example.com")
         assert result.action == EgressAction.DENY
         assert result.details  # Should have a helpful error message
+
+
+class TestInteractiveApproval:
+    """Interactive egress approval flow (allow once / deny)."""
+
+    @pytest.mark.asyncio
+    async def test_unknown_domain_allowed_when_approved(self):
+        class FakeApprovalQueue:
+            async def request_approval(self, **_kwargs):
+                from gateway.security.egress_approval import ApprovalResult
+                return ApprovalResult.APPROVED
+
+            async def get_pending_requests(self):
+                return []
+
+        ef = _make_filter(mode="enforce", allowed_domains=["api.anthropic.com"])
+        ef.set_approval_queue(FakeApprovalQueue())
+        result = await ef.check_async("bot", "https://unknown.example.com", tool_name="web_fetch")
+        assert result.action == EgressAction.ALLOW
+
+    @pytest.mark.asyncio
+    async def test_unknown_domain_denied_when_denied(self):
+        class FakeApprovalQueue:
+            async def request_approval(self, **_kwargs):
+                from gateway.security.egress_approval import ApprovalResult
+                return ApprovalResult.DENIED
+
+            async def get_pending_requests(self):
+                return []
+
+        ef = _make_filter(mode="enforce", allowed_domains=["api.anthropic.com"])
+        ef.set_approval_queue(FakeApprovalQueue())
+        result = await ef.check_async("bot", "https://unknown.example.com", tool_name="web_fetch")
+        assert result.action == EgressAction.DENY
+
+    @pytest.mark.asyncio
+    async def test_emits_egress_event_to_event_bus(self):
+        class EventBusStub:
+            def __init__(self):
+                self.events = []
+
+            async def emit(self, event):
+                self.events.append(event)
+
+        ef = _make_filter(mode="enforce", allowed_domains=["api.anthropic.com"])
+        bus = EventBusStub()
+        ef.set_event_bus(bus)
+        ef.check("bot", "https://api.anthropic.com/v1/messages")
+        import asyncio
+        await asyncio.sleep(0)
+        assert any(e.type == "egress_attempt" for e in bus.events)
 
 
 # ---------------------------------------------------------------------------
