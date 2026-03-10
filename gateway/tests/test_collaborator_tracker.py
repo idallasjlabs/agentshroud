@@ -16,7 +16,8 @@ def log_file(tmp_path):
 
 
 @pytest.fixture
-def tracker(log_file):
+def tracker(log_file, monkeypatch):
+    monkeypatch.setenv("AGENTSHROUD_TRACK_ALL_NON_OWNER_ACTIVITY", "false")
     return CollaboratorActivityTracker(
         log_path=log_file,
         owner_user_id="1111111",
@@ -46,6 +47,21 @@ def test_owner_is_never_recorded(tracker, log_file):
 def test_unknown_user_is_skipped(tracker, log_file):
     tracker.record_activity("0000000", "Stranger", "who am i", "telegram")
     assert not log_file.exists() or log_file.read_text().strip() == ""
+
+
+def test_unknown_user_recorded_when_dynamic_tracking_enabled(log_file, monkeypatch):
+    monkeypatch.setenv("AGENTSHROUD_TRACK_ALL_NON_OWNER_ACTIVITY", "true")
+    tracker = CollaboratorActivityTracker(
+        log_path=log_file,
+        owner_user_id="1111111",
+        collaborator_ids=[],
+    )
+    tracker.record_activity("0000000", "Stranger", "who am i", "telegram")
+    assert log_file.exists()
+    lines = log_file.read_text().strip().split("\n")
+    assert len(lines) == 1
+    entry = json.loads(lines[0])
+    assert entry["user_id"] == "0000000"
 
 
 def test_message_preview_truncated(tracker, log_file):
