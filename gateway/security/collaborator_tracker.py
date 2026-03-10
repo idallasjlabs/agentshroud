@@ -180,6 +180,14 @@ class CollaboratorActivityTracker:
         value = value.replace("|", "/").replace("(", "[").replace(")", "]")
         return value
 
+    @staticmethod
+    def _coerce_timestamp(value: object) -> float:
+        """Best-effort float timestamp coercion for resilient log reads."""
+        try:
+            return float(value)
+        except (TypeError, ValueError):
+            return 0.0
+
     def get_activity(self, since: float = 0, limit: int = 100) -> list[dict]:
         """Return recent activity entries in chronological order.
 
@@ -202,7 +210,7 @@ class CollaboratorActivityTracker:
                         continue
                     try:
                         entry = json.loads(line)
-                        if entry.get("timestamp", 0) > since:
+                        if self._coerce_timestamp(entry.get("timestamp", 0)) > since:
                             entries.append(entry)
                     except json.JSONDecodeError:
                         continue
@@ -211,7 +219,7 @@ class CollaboratorActivityTracker:
             return []
 
         # Newest first, capped to limit
-        entries.sort(key=lambda e: e.get("timestamp", 0), reverse=True)
+        entries.sort(key=lambda e: self._coerce_timestamp(e.get("timestamp", 0)), reverse=True)
         return entries[:limit]
 
     def get_activity_summary(self) -> dict:
@@ -245,7 +253,7 @@ class CollaboratorActivityTracker:
 
                     total += 1
                     uid = entry.get("user_id", "unknown")
-                    ts = entry.get("timestamp", 0)
+                    ts = self._coerce_timestamp(entry.get("timestamp", 0))
 
                     if last_ts is None or ts > last_ts:
                         last_ts = ts
