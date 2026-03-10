@@ -116,11 +116,12 @@ class CollaboratorActivityTracker:
         if uid not in self.collaborator_ids:
             return
 
+        normalized_preview = self._normalize_preview(message_preview)
         entry = {
             "timestamp": time.time(),
             "user_id": uid,
             "username": username or "unknown",
-            "message_preview": (message_preview or "")[:_PREVIEW_MAX],
+            "message_preview": normalized_preview[:_PREVIEW_MAX],
             "source": source,
         }
         try:
@@ -159,6 +160,15 @@ class CollaboratorActivityTracker:
                 logger.warning("CollaboratorActivityTracker: contributor log write failed for all dirs")
         except OSError as exc:
             logger.warning("CollaboratorActivityTracker: contributor log write failed: %s", exc)
+
+    @staticmethod
+    def _normalize_preview(text: str) -> str:
+        """Normalize previews to single-line safe text for JSONL + markdown mirrors."""
+        value = str(text or "")
+        # Collapse multiline/control characters to prevent malformed contributor logs.
+        value = value.replace("\r", " ").replace("\n", " ").replace("\t", " ")
+        value = " ".join(value.split())
+        return value
 
     def get_activity(self, since: float = 0, limit: int = 100) -> list[dict]:
         """Return recent activity entries in chronological order.
