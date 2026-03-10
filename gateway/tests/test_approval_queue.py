@@ -26,8 +26,12 @@ def queue_config():
 
 
 @pytest.fixture
-def approval_queue(queue_config):
+def approval_queue(queue_config, tmp_path, monkeypatch):
     """Create approval queue instance for testing"""
+    monkeypatch.setenv(
+        "AGENTSHROUD_APPROVAL_AUDIT_PATH",
+        str(tmp_path / "approval_queue_history.jsonl"),
+    )
     return ApprovalQueue(queue_config)
 
 
@@ -65,6 +69,12 @@ async def test_decide_approval_approve(approval_queue):
 
     assert updated.status == "approved"
     assert updated.request_id == item.request_id
+
+    audit_path = approval_queue._audit_path
+    with open(audit_path, "r", encoding="utf-8") as f:
+        lines = [line.strip() for line in f if line.strip()]
+    assert any('"event":"submitted"' in line for line in lines)
+    assert any('"event":"decided"' in line and '"status":"approved"' in line for line in lines)
 
 
 @pytest.mark.asyncio
@@ -178,6 +188,9 @@ async def test_request_expiration(approval_queue):
     pending = await approval_queue.get_pending()
 
     assert len(pending) == 0
+    with open(approval_queue._audit_path, "r", encoding="utf-8") as f:
+        content = f.read()
+    assert '"event":"expired"' in content
 
 
 @pytest.mark.asyncio
