@@ -1062,6 +1062,37 @@ class TestOutboundPipelineIntegration:
         assert "approval request queued" in result["text"].lower()
 
     @pytest.mark.asyncio
+    async def test_raw_web_fetch_json_non_http_scheme_does_not_queue_approval(self, monkeypatch):
+        """Non-http schemes should never queue web-fetch approvals."""
+        calls = {"count": 0}
+
+        class FakeEgress:
+            async def check_async(self, **_kwargs):
+                calls["count"] += 1
+                return SimpleNamespace(action="deny")
+
+        from gateway.ingest_api import state as state_module
+
+        monkeypatch.setattr(
+            state_module,
+            "app_state",
+            SimpleNamespace(egress_filter=FakeEgress()),
+        )
+        proxy = TelegramAPIProxy(sanitizer=_make_sanitizer())
+        body = json.dumps(
+            {
+                "chat_id": "8096968754",
+                "text": "{\"name\":\"web_fetch\",\"arguments\":{\"url\":\"ftp://weather.com/archive.txt\"}}",
+            }
+        ).encode()
+
+        result = json.loads(await proxy._filter_outbound(body, "application/json"))
+        await asyncio.sleep(0)
+
+        assert calls["count"] == 0
+        assert "approval request queued" not in result["text"].lower()
+
+    @pytest.mark.asyncio
     async def test_raw_web_fetch_json_url_with_html_entity_domain_still_queues_approval(self, monkeypatch):
         """HTML-entity encoded domains in leaked JSON should normalize before approval."""
         called = {"value": False}
