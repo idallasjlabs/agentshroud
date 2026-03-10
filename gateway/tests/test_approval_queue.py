@@ -32,6 +32,10 @@ def approval_queue(queue_config, tmp_path, monkeypatch):
         "AGENTSHROUD_APPROVAL_AUDIT_PATH",
         str(tmp_path / "approval_queue_history.jsonl"),
     )
+    monkeypatch.setenv(
+        "AGENTSHROUD_APPROVAL_STORE_PATH",
+        str(tmp_path / "approval_queue_store.json"),
+    )
     return ApprovalQueue(queue_config)
 
 
@@ -329,3 +333,44 @@ async def test_broadcast_with_failed_client(approval_queue):
     # ws2 should fail and be removed
     assert ws2 not in approval_queue.connected_clients
     assert ws1 in approval_queue.connected_clients
+
+
+@pytest.mark.asyncio
+async def test_store_persists_submit_and_decision(queue_config, tmp_path, monkeypatch):
+    """Queue store file should persist items and status transitions."""
+    monkeypatch.setenv("AGENTSHROUD_APPROVAL_AUDIT_PATH", str(tmp_path / "audit.jsonl"))
+    store_path = tmp_path / "store.json"
+    monkeypatch.setenv("AGENTSHROUD_APPROVAL_STORE_PATH", str(store_path))
+    queue = ApprovalQueue(queue_config)
+
+    item = await queue.submit(
+        ApprovalRequest(
+            action_type="email_sending",
+            description="persist me",
+            details={},
+        )
+    )
+    assert store_path.exists()
+    with open(store_path, "r", encoding="utf-8") as f:
+        content = f.read()
+    assert '"status":"pending"' in content
+
+    await queue.decide(item.request_id, approved=True)
+    with open(store_path, "r", encoding="utf-8") as f:
+        content = f.read()
+    assert '"status":"approved"' in content
+
+
+def test_store_restores_items_on_init(queue_config, tmp_path, monkeypatch):
+    """Queue should restore persisted items from store file on startup."""
+    monkeypatch.setenv("AGENTSHROUD_APPROVAL_AUDIT_PATH", str(tmp_path / "audit.jsonl"))
+    store_path = tmp_path / "store.json"
+    monkeypatch.setenv("AGENTSHROUD_APPROVAL_STORE_PATH", str(store_path))
+    store_path.write_text(
+        '{"version":1,"items":[{"request_id":"r1","action_type":"email_sending","description":"d","details":{},"agent_id":"a","submitted_at":"2026-03-10T00:00:00Z","expires_at":"2099-03-10T00:00:00Z","status":"pending"}]}',
+        encoding="utf-8",
+    )
+
+    queue = ApprovalQueue(queue_config)
+    assert "r1" in queue.pending
+    assert queue.pending["r1"].status == "pending"
