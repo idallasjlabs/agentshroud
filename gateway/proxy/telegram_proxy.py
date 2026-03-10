@@ -186,7 +186,7 @@ class TelegramAPIProxy:
         # Support bare domains like "weather.com/today" so collaborator requests
         # still trigger interactive egress approval before model/tool execution.
         domain_match = re.search(
-            r"(?<!@)\b(?:[a-z0-9](?:[a-z0-9-]{0,61}[a-z0-9])?\.)+[a-z]{2,63}(?:/[^\s<>()\"']*)?",
+            r"(?<!@)\b(?:[a-z0-9](?:[a-z0-9-]{0,61}[a-z0-9])?\.)+[a-z]{2,63}(?![a-z0-9_-])(?:/[^\s<>()\"']*)?",
             text,
             flags=re.IGNORECASE,
         )
