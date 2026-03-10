@@ -223,10 +223,28 @@ async def test_manage_soc_report_endpoint(client, auth_headers):
     assert "private_access_summary" in data["privacy"]
     assert "private_redaction_summary" in data["privacy"]
     assert "collaborator_activity" in data
+    assert data["collaborator_activity"]["source"] == "tracker"
     assert data["collaborator_activity"]["summary"]["total_messages"] == 2
     assert data["collaborator_activity"]["recent"][0]["username"] == "steve"
     assert "egress_live" in data
     assert "pending_by_risk" in data["egress_live"]
+
+
+@pytest.mark.asyncio
+async def test_manage_soc_report_falls_back_to_contributor_logs(client, auth_headers, monkeypatch, tmp_path):
+    contrib = tmp_path / "contributors"
+    contrib.mkdir()
+    (contrib / "2026-03-10-111.md").write_text(
+        "- 2026-03-10T12:00:00+00:00 | alice (111) | telegram | hello\n"
+    )
+    monkeypatch.setenv("AGENTSHROUD_CONTRIBUTOR_LOG_DIRS", str(contrib))
+    app_state.collaborator_tracker = None
+    resp = await client.get("/manage/soc/report", headers=auth_headers)
+    assert resp.status_code == 200
+    data = resp.json()
+    assert data["collaborator_activity"]["source"] == "contributor_logs_fallback"
+    assert data["collaborator_activity"]["summary"]["total_messages"] == 1
+    assert data["collaborator_activity"]["recent"][0]["username"] == "alice"
 
 
 @pytest.mark.asyncio

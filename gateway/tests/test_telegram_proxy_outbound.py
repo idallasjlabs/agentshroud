@@ -546,6 +546,39 @@ class TestOutboundPipelineIntegration:
         assert calls["count"] == 1
 
     @pytest.mark.asyncio
+    async def test_proxy_request_suppresses_duplicate_startup_notice_without_system_flag(self, monkeypatch):
+        """Startup notice dedupe should still apply when sender forgets system header."""
+        proxy = TelegramAPIProxy(sanitizer=_make_sanitizer())
+        calls = {"count": 0}
+
+        async def _mock_forward(*_args, **_kwargs):
+            calls["count"] += 1
+            return {"ok": True, "result": {"message_id": calls["count"]}}
+
+        monkeypatch.setattr(proxy, "_forward_to_telegram", _mock_forward)
+
+        body = json.dumps({"chat_id": "8096968754", "text": "🛡️ AgentShroud online"}).encode()
+        first = await proxy.proxy_request(
+            bot_token="dummy",
+            method="sendMessage",
+            body=body,
+            content_type="application/json",
+            is_system=False,
+        )
+        second = await proxy.proxy_request(
+            bot_token="dummy",
+            method="sendMessage",
+            body=body,
+            content_type="application/json",
+            is_system=False,
+        )
+
+        assert first.get("ok") is True
+        assert second.get("ok") is True
+        assert second.get("result", {}).get("suppressed") is True
+        assert calls["count"] == 1
+
+    @pytest.mark.asyncio
     async def test_proxy_request_allows_distinct_system_notices(self, monkeypatch):
         """Different system notices should both be forwarded."""
         proxy = TelegramAPIProxy(sanitizer=_make_sanitizer())
