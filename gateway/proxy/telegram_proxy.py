@@ -200,10 +200,17 @@ class TelegramAPIProxy:
     @staticmethod
     def _is_valid_domain_name(domain: str) -> bool:
         """Validate normalized domain labels to avoid malformed allowlist entries."""
-        labels = [p for p in (domain or "").split(".") if p]
+        raw = (domain or "").strip().lower()
+        if not raw:
+            return False
+        if ".." in raw:
+            return False
+        labels = raw.split(".")
         if len(labels) < 2:
             return False
         for label in labels:
+            if not label:
+                return False
             if len(label) > 63:
                 return False
             if label.startswith("-") or label.endswith("-"):
@@ -648,7 +655,10 @@ class TelegramAPIProxy:
         if not url:
             return False
         parsed = urlparse(url if "://" in url else f"https://{url}")
-        domain = (parsed.hostname or "").strip().lower().strip(".")
+        raw_domain = (parsed.hostname or "").strip().lower()
+        if ".." in raw_domain:
+            return False
+        domain = raw_domain.strip(".")
         domain = re.sub(r"[^a-z0-9.-]", "", domain)
         domain = domain.strip(".")
         if ".." in domain:
