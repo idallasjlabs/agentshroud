@@ -287,6 +287,17 @@ class TestToolPermission:
         assert not result.allowed
         assert "admin-private data" in result.reason
 
+    def test_private_data_parameter_denied_for_agentshroud_memory_subpath(self, mgr):
+        params = {"path": "/home/node/.agentshroud/workspace/memory/conversations/2026-03-10.md"}
+        result = mgr.check_tool_parameters(
+            "agent-a",
+            "test-server",
+            "read_file",
+            params,
+        )
+        assert not result.allowed
+        assert "admin-private data" in result.reason
+
     def test_private_data_parameter_denied_for_session_store_path(self, mgr):
         params = {"path": "/app/data/sessions/8096968754/session.json"}
         result = mgr.check_tool_parameters(
