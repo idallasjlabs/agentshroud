@@ -85,6 +85,13 @@ def test_message_preview_truncated(tracker, log_file):
     assert len(entry["message_preview"]) == 80
 
 
+def test_message_preview_newlines_normalized(tracker, log_file):
+    msg = "line1\nline2\tline3\rline4"
+    tracker.record_activity("7614658040", "Alice", msg, "telegram")
+    entry = json.loads(log_file.read_text().strip())
+    assert entry["message_preview"] == "line1 line2 line3 line4"
+
+
 def test_multiple_entries_appended(tracker, log_file):
     tracker.record_activity("7614658040", "Alice", "msg1", "telegram")
     tracker.record_activity("9999999", "Bob", "msg2", "telegram")
@@ -167,3 +174,13 @@ def test_record_activity_mirrors_to_contributor_daily_log(tracker, log_file):
     for content in (primary_files[0].read_text(), mirror_files[0].read_text()):
         assert "Alice (7614658040)" in content
         assert "Need weather update" in content
+
+
+def test_record_activity_mirror_is_single_line_for_multiline_message(tracker, log_file):
+    tracker.record_activity("7614658040", "Alice", "Need\nweather\tupdate", "telegram")
+    contributor_dir = log_file.parent / "contributors"
+    file_path = next(iter(contributor_dir.glob("*-7614658040.md")))
+    content = file_path.read_text()
+    assert "Need weather update" in content
+    # one markdown log line + trailing newline
+    assert content.count("\n") == 1
