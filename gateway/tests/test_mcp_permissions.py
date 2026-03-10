@@ -208,6 +208,11 @@ class TestToolPermission:
         assert summary["total"] == 1
         assert summary["by_agent"]["agent-a"] == 1
 
+    def test_memory_get_denied_for_non_owner(self, mgr):
+        result = mgr.check_tool_permission("agent-a", "test-server", "memory_get")
+        assert not result.allowed
+        assert "admin-private" in result.reason
+
     def test_admin_private_tool_allowed_for_owner(self, mgr):
         owner = mgr._owner_user_id
         mgr.set_trust_level(owner, 3)

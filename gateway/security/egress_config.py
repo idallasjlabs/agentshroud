@@ -122,6 +122,10 @@ class EgressFilterConfig:
     # Whether to enable strict mode (denylist overrides allowlist)
     strict_mode: bool = True
 
+    # Interactive firewall mode: require approval for all outbound connections,
+    # even when destination is allowlisted.
+    approval_required_for_all: bool = True
+
     @classmethod
     def from_environment(cls) -> "EgressFilterConfig":
         """Create config from environment variables and AGENTSHROUD_MODE."""
@@ -137,7 +141,9 @@ class EgressFilterConfig:
         if egress_mode in ("enforce", "monitor"):
             mode = egress_mode
             
-        return cls(mode=mode)
+        approval_all_env = os.getenv("AGENTSHROUD_EGRESS_APPROVAL_ALL", "true").strip().lower()
+        approval_required_for_all = approval_all_env not in ("0", "false", "no", "off")
+        return cls(mode=mode, approval_required_for_all=approval_required_for_all)
 
     def get_effective_allowlist(self, agent_id: str) -> Set[str]:
         """Get the effective allowlist for a specific agent."""

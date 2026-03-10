@@ -10,6 +10,7 @@ from __future__ import annotations
 
 import json
 import logging
+import os
 import time
 from pathlib import Path
 from typing import Optional
@@ -40,6 +41,10 @@ class CollaboratorActivityTracker:
         self.log_path = log_path
         self.owner_user_id = str(owner_user_id)
         self.collaborator_ids: set[str] = {str(uid) for uid in (collaborator_ids or [])}
+        self.track_unknown_non_owner = (
+            str(os.environ.get("AGENTSHROUD_TRACK_ALL_NON_OWNER_ACTIVITY", "true")).strip().lower()
+            not in ("0", "false", "no", "off")
+        )
 
         # Ensure parent directory exists
         try:
@@ -67,6 +72,8 @@ class CollaboratorActivityTracker:
         uid = str(user_id)
         if uid == self.owner_user_id:
             return
+        if uid not in self.collaborator_ids and self.track_unknown_non_owner:
+            self.collaborator_ids.add(uid)
         if uid not in self.collaborator_ids:
             return
 

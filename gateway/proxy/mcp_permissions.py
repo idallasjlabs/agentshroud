@@ -79,6 +79,11 @@ PRIVATE_TOOL_PATTERNS: list[str] = [
     "*smtp*",
     "*imap*",
     "*memory_search*",
+    "*memory_get*",
+    "*memory_write*",
+    "*memory_update*",
+    "*memory_delete*",
+    "*memory_list*",
 ]
 
 # Redaction patterns for admin-private content that must never leak to
