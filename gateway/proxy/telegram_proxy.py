@@ -13,6 +13,7 @@ instead of https://api.telegram.org/bot<token>/<method>.
 from __future__ import annotations
 
 import asyncio
+import ipaddress
 import json
 import logging
 import re
@@ -641,6 +642,16 @@ class TelegramAPIProxy:
             return False
         if "." not in domain:
             return False
+        if domain in {"localhost", "local", "localdomain"}:
+            return False
+        try:
+            # Never queue collaborator egress approvals for literal IP targets.
+            # IP-based egress (esp. private/link-local) should remain blocked by
+            # network policy rather than entering allowlist workflows.
+            ipaddress.ip_address(domain)
+            return False
+        except ValueError:
+            pass
         approval_key = ((chat_id or "unknown"), domain)
         now = time.time()
         blocked_until = self._recent_web_fetch_approval_until.get(approval_key, 0.0)
