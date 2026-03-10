@@ -140,7 +140,7 @@
       "wakeMode": "now",
       "payload": {
         "kind": "agentTurn",
-        "message": "Generate a collaborator activity report. Read all files in /home/node/.openclaw/workspace/memory/contributors/ for today's date. Summarize: who messaged the bot, what they asked, what recommendations they made, any action items for Isaiah. If no collaborator activity today, say No collaborator activity since last report. Keep it concise."
+        "message": "Generate a collaborator activity report. Read all files for today's date from BOTH paths: /home/node/agentshroud/gateway-data/contributors/ (primary) and /home/node/.openclaw/workspace/memory/contributors/ (fallback). Merge duplicates by filename/content. Summarize: who messaged the bot, what they asked, what recommendations they made, any action items for Isaiah. If no collaborator activity today, say No collaborator activity since last report. Keep it concise."
       },
       "state": {
         "nextRunAtMs": 1771858800000,
@@ -169,7 +169,7 @@
       "wakeMode": "now",
       "payload": {
         "kind": "agentTurn",
-        "message": "Generate a collaborator activity report. Read all files in /home/node/.openclaw/workspace/memory/contributors/ for today's date. Summarize: who messaged the bot, what they asked, what recommendations they made, any action items for Isaiah. If no collaborator activity today, say No collaborator activity since last report. Keep it concise."
+        "message": "Generate a collaborator activity report. Read all files for today's date from BOTH paths: /home/node/agentshroud/gateway-data/contributors/ (primary) and /home/node/.openclaw/workspace/memory/contributors/ (fallback). Merge duplicates by filename/content. Summarize: who messaged the bot, what they asked, what recommendations they made, any action items for Isaiah. If no collaborator activity today, say No collaborator activity since last report. Keep it concise."
       },
       "state": {
         "nextRunAtMs": 1771861500000,
@@ -198,7 +198,7 @@
       "wakeMode": "now",
       "payload": {
         "kind": "agentTurn",
-        "message": "Generate the daily collaborator digest. Read ALL files in /home/node/.openclaw/workspace/memory/contributors/ for today's date. Create a comprehensive summary: 1) Total interactions per collaborator 2) Key questions asked 3) Recommendations and suggestions made 4) Action items requiring Isaiah's attention 5) Any concerns or notable patterns. If no collaborator activity today, say No collaborator activity today."
+        "message": "Generate the daily collaborator digest. Read ALL files for today's date from BOTH paths: /home/node/agentshroud/gateway-data/contributors/ (primary) and /home/node/.openclaw/workspace/memory/contributors/ (fallback). Merge duplicates by filename/content. Create a comprehensive summary: 1) Total interactions per collaborator 2) Key questions asked 3) Recommendations and suggestions made 4) Action items requiring Isaiah's attention 5) Any concerns or notable patterns. If no collaborator activity today, say No collaborator activity today."
       },
       "state": {
         "nextRunAtMs": 1771826400000,

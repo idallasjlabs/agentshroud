@@ -484,6 +484,71 @@ class TestProxyInterception:
         assert result.audit_entry_id
         assert len(proxy.audit) == 1
 
+    @pytest.mark.asyncio
+    async def test_egress_denied_blocks_url_tool_call(self, config):
+        class _DenyEgress:
+            async def check_async(self, agent_id, destination, tool_name):
+                class _Attempt:
+                    action = "deny"
+                    details = "interactive approval denied"
+                    rule = "deny"
+                return _Attempt()
+
+        perm = MCPPermissionManager(config)
+        perm.set_trust_level("main-agent", 2)
+        proxy = MCPProxy(
+            config=config,
+            permission_manager=perm,
+            inspector=MCPInspector(),
+            audit_trail=MCPAuditTrail(),
+            egress_filter=_DenyEgress(),
+        )
+        call = MCPToolCall(
+            id="c-egress-1",
+            server_name="home-assistant",
+            tool_name="web_fetch",
+            parameters={"url": "https://weather.com/weather/today/l/Pittsburgh,PA"},
+            agent_id="main-agent",
+        )
+        result = await proxy.process_tool_call(call)
+        assert result.blocked
+        assert "Egress blocked:" in result.block_reason
+
+    @pytest.mark.asyncio
+    async def test_egress_allows_non_url_tool_call(self, config):
+        class _CountingEgress:
+            def __init__(self):
+                self.calls = 0
+
+            async def check_async(self, agent_id, destination, tool_name):
+                self.calls += 1
+                class _Attempt:
+                    action = "allow"
+                    details = ""
+                    rule = "allow"
+                return _Attempt()
+
+        egress = _CountingEgress()
+        perm = MCPPermissionManager(config)
+        perm.set_trust_level("main-agent", 2)
+        proxy = MCPProxy(
+            config=config,
+            permission_manager=perm,
+            inspector=MCPInspector(),
+            audit_trail=MCPAuditTrail(),
+            egress_filter=egress,
+        )
+        call = MCPToolCall(
+            id="c-egress-2",
+            server_name="home-assistant",
+            tool_name="get_states",
+            parameters={"entity_id": "light.kitchen"},
+            agent_id="main-agent",
+        )
+        result = await proxy.process_tool_call(call)
+        assert result.allowed
+        assert egress.calls == 0
+
 
 # ============================================================
 # MCPProxy -- Permission Enforcement
@@ -675,6 +740,40 @@ class TestProxyResultProcessing:
         assert "gmail" in str(result.sanitized_result).lower()
 
     @pytest.mark.asyncio
+    async def test_memory_markers_redacted_for_non_owner(self, proxy):
+        tool_result = MCPToolResult(
+            call_id="r6b",
+            server_name="memory",
+            tool_name="memory.search",
+            content={
+                "file": "/home/node/.openclaw/workspace/MEMORY.md",
+                "snippet": "# Session Memory for User 7614658040",
+            },
+        )
+        result = await proxy.process_tool_result(tool_result, agent_id="main-agent")
+        rendered = str(result.sanitized_result)
+        assert "<ADMIN_PRIVATE_DATA>" in rendered
+        assert "MEMORY.md" not in rendered
+        assert "Session Memory for User" not in rendered
+
+    @pytest.mark.asyncio
+    async def test_gateway_contributor_paths_redacted_for_non_owner(self, proxy):
+        tool_result = MCPToolResult(
+            call_id="r6c",
+            server_name="filesystem",
+            tool_name="read_file",
+            content={
+                "path": "/home/node/agentshroud/gateway-data/contributors/2026-03-10-7614658040.md",
+                "alt_path": "/app/data/collaborator_activity.jsonl",
+            },
+        )
+        result = await proxy.process_tool_result(tool_result, agent_id="main-agent")
+        rendered = str(result.sanitized_result)
+        assert "<ADMIN_PRIVATE_DATA>" in rendered
+        assert "gateway-data/contributors" not in rendered
+        assert "collaborator_activity.jsonl" not in rendered
+
+    @pytest.mark.asyncio
     async def test_private_redaction_emits_privacy_event(self, proxy):
         events = []
 
@@ -712,6 +811,90 @@ class TestPrivacyPolicyEvents:
         )
         result = await proxy.process_tool_call(call)
         assert result.blocked
+        assert any(getattr(evt, "type", "") == "privacy_policy_violation" for evt in events)
+
+    @pytest.mark.asyncio
+    async def test_private_parameter_violation_blocks_non_owner(self, proxy):
+        events = []
+
+        class FakeBus:
+            async def emit(self, event):
+                events.append(event)
+
+        proxy.set_event_bus(FakeBus())
+        call = MCPToolCall(
+            id="pv-2",
+            server_name="home-assistant",
+            tool_name="read_file",
+            parameters={"path": "/home/node/.openclaw/workspace/memory/MEMORY.md"},
+            agent_id="main-agent",
+        )
+        result = await proxy.process_tool_call(call)
+        assert result.blocked
+        assert "admin-private data" in (result.block_reason or "")
+        assert any(getattr(evt, "type", "") == "privacy_policy_violation" for evt in events)
+
+    @pytest.mark.asyncio
+    async def test_gateway_data_parameter_violation_blocks_non_owner(self, proxy):
+        events = []
+
+        class FakeBus:
+            async def emit(self, event):
+                events.append(event)
+
+        proxy.set_event_bus(FakeBus())
+        call = MCPToolCall(
+            id="pv-3",
+            server_name="filesystem",
+            tool_name="read_file",
+            parameters={"path": "/home/node/agentshroud/gateway-data/contributors/2026-03-10-7614658040.md"},
+            agent_id="main-agent",
+        )
+        result = await proxy.process_tool_call(call)
+        assert result.blocked
+        assert "admin-private data" in (result.block_reason or "")
+        assert any(getattr(evt, "type", "") == "privacy_policy_violation" for evt in events)
+
+    @pytest.mark.asyncio
+    async def test_workspace_contributor_parameter_violation_blocks_non_owner(self, proxy):
+        events = []
+
+        class FakeBus:
+            async def emit(self, event):
+                events.append(event)
+
+        proxy.set_event_bus(FakeBus())
+        call = MCPToolCall(
+            id="pv-3b",
+            server_name="filesystem",
+            tool_name="read_file",
+            parameters={"path": "/data/bot-workspace/memory/contributors/2026-03-10-7614658040.md"},
+            agent_id="main-agent",
+        )
+        result = await proxy.process_tool_call(call)
+        assert result.blocked
+        assert "admin-private data" in (result.block_reason or "")
+        assert any(getattr(evt, "type", "") == "privacy_policy_violation" for evt in events)
+
+    @pytest.mark.asyncio
+    async def test_session_store_parameter_violation_blocks_non_owner(self, proxy):
+        events = []
+
+        class FakeBus:
+            async def emit(self, event):
+                events.append(event)
+
+        proxy.set_event_bus(FakeBus())
+        call = MCPToolCall(
+            id="pv-4",
+            server_name="filesystem",
+            tool_name="read_file",
+            parameters={"path": "/app/data/sessions/7614658040/session.json"},
+            agent_id="main-agent",
+        )
+        result = await proxy.process_tool_call(call)
+        assert result.blocked
+        assert "admin-private data" in (result.block_reason or "")
         assert any(getattr(evt, "type", "") == "privacy_policy_violation" for evt in events)
 
 

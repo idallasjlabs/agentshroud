@@ -3,6 +3,7 @@ from __future__ import annotations
 
 import pytest
 import pytest_asyncio
+from types import SimpleNamespace
 from unittest.mock import patch
 from httpx import AsyncClient, ASGITransport
 
@@ -63,8 +64,61 @@ async def test_manage_egress_log_endpoint(client, auth_headers):
     resp = await client.get("/manage/egress/log", headers=auth_headers)
     assert resp.status_code == 200
     data = resp.json()
+    assert "summary" in data
+    assert "allowed" in data["summary"]
+    assert "denied" in data["summary"]
     assert "count" in data
     assert "items" in data
+
+
+@pytest.mark.asyncio
+async def test_manage_egress_pending_endpoint_includes_summary(client, auth_headers):
+    class FakeQueue:
+        async def cleanup_expired(self):
+            return None
+
+        async def get_pending_requests(self):
+            return [
+                {
+                    "request_id": "r1",
+                    "domain": "example.com",
+                    "agent_id": "telegram_web_fetch:100",
+                    "tool_name": "web_fetch",
+                    "risk_level": "yellow",
+                    "timestamp": 1.0,
+                    "timeout_at": 9999999999.0,
+                },
+                {
+                    "request_id": "r2",
+                    "domain": "1.2.3.4",
+                    "agent_id": "telegram_web_fetch:100",
+                    "tool_name": "browser",
+                    "risk_level": "red",
+                    "timestamp": 2.0,
+                    "timeout_at": 9999999999.0,
+                },
+            ]
+
+    original = app_state.egress_approval_queue
+    app_state.egress_approval_queue = FakeQueue()
+    try:
+        resp = await client.get("/manage/egress/pending", headers=auth_headers)
+        assert resp.status_code == 200
+        data = resp.json()
+        assert data["count"] == 2
+        assert data["pending_by_risk"]["yellow"] == 1
+        assert data["pending_by_risk"]["red"] == 1
+        assert data["pending_domain_top"][0]["count"] >= 1
+        assert data["pending_agent_top"][0]["agent_id"] == "telegram_web_fetch:100"
+        assert data["pending_agent_top"][0]["count"] == 2
+        assert data["pending_tool_top"][0]["count"] >= 1
+        assert data["oldest_age_seconds"] >= 0
+        assert data["average_age_seconds"] >= 0
+        assert data["expiring_soon_count"] >= 0
+        assert data["pending"][0]["age_seconds"] >= 0
+        assert data["pending"][0]["remaining_seconds"] >= 0
+    finally:
+        app_state.egress_approval_queue = original
 
 
 @pytest.mark.asyncio
@@ -138,6 +192,23 @@ async def test_manage_soc_report_endpoint(client, auth_headers):
     await app_state.event_bus.emit(
         make_event("scanner_result", "scan complete", {"scanner": "trivy"}, "warning")
     )
+    app_state.collaborator_tracker = SimpleNamespace(
+        get_activity_summary=lambda: {
+            "total_messages": 2,
+            "unique_users": 1,
+            "last_activity": 1700000000.0,
+            "by_user": {"1234": {"username": "steve", "message_count": 2, "last_active": 1700000000.0}},
+        },
+        get_activity=lambda limit=100: [
+            {
+                "timestamp": 1700000000.0,
+                "user_id": "1234",
+                "username": "steve",
+                "message_preview": "hello",
+                "source": "telegram",
+            }
+        ],
+    )
     resp = await client.get("/manage/soc/report", headers=auth_headers)
     assert resp.status_code == 200
     data = resp.json()
@@ -147,6 +218,15 @@ async def test_manage_soc_report_endpoint(client, auth_headers):
     assert data["quarantine"]["inbound_total"] >= 1
     assert data["quarantine"]["outbound_total"] >= 1
     assert "scanner_summary" in data
+    assert "privacy" in data
+    assert "policy_loaded" in data["privacy"]
+    assert "private_access_summary" in data["privacy"]
+    assert "private_redaction_summary" in data["privacy"]
+    assert "collaborator_activity" in data
+    assert data["collaborator_activity"]["summary"]["total_messages"] == 2
+    assert data["collaborator_activity"]["recent"][0]["username"] == "steve"
+    assert "egress_live" in data
+    assert "pending_by_risk" in data["egress_live"]
 
 
 @pytest.mark.asyncio
@@ -257,12 +337,12 @@ async def test_outbound_quarantine_endpoints(client, auth_headers):
 @pytest.mark.asyncio
 async def test_quarantine_summary_endpoint(client, auth_headers):
     app_state.blocked_message_quarantine = [
-        {"message_id": "i-1", "status": "pending"},
-        {"message_id": "i-2", "status": "released"},
+        {"message_id": "i-1", "status": "pending", "reason": "policy_a"},
+        {"message_id": "i-2", "status": "released", "reason": "policy_a"},
     ]
     app_state.blocked_outbound_quarantine = [
-        {"message_id": "o-1", "status": "pending"},
-        {"message_id": "o-2", "status": "discarded"},
+        {"message_id": "o-1", "status": "pending", "reason": "sensitive_leak"},
+        {"message_id": "o-2", "status": "discarded", "reason": "sensitive_leak"},
     ]
     resp = await client.get("/manage/quarantine/summary", headers=auth_headers)
     assert resp.status_code == 200
@@ -271,6 +351,10 @@ async def test_quarantine_summary_endpoint(client, auth_headers):
     assert data["inbound"]["pending"] == 1
     assert data["outbound"]["total"] == 2
     assert data["outbound"]["discarded"] == 1
+    assert data["inbound_top_reasons"][0]["reason"] == "policy_a"
+    assert data["inbound_top_reasons"][0]["count"] == 2
+    assert data["outbound_top_reasons"][0]["reason"] == "sensitive_leak"
+    assert data["outbound_top_reasons"][0]["count"] == 2
 
 
 @pytest.mark.asyncio

@@ -134,8 +134,8 @@ node -e "
   cfg.providers = cfg.providers || {};
   cfg.providers.ollama = cfg.providers.ollama || {};
 
-  const modelRef = String(process.env.AGENTSHROUD_LOCAL_MODEL_REF || 'ollama/qwen2.5-coder:7b');
-  const modelName = String(process.env.AGENTSHROUD_LOCAL_MODEL || modelRef.split('/').slice(-1)[0] || 'qwen2.5-coder:7b');
+  const modelRef = String(process.env.AGENTSHROUD_LOCAL_MODEL_REF || 'ollama/qwen3:14b');
+  const modelName = String(process.env.AGENTSHROUD_LOCAL_MODEL || modelRef.split('/').slice(-1)[0] || 'qwen3:14b');
   const rawBaseUrl = String(process.env.OLLAMA_BASE_URL || 'http://gateway:8080/v1').replace(/\/+$/, '');
   const baseUrl = /\/v1$/i.test(rawBaseUrl) ? rawBaseUrl : rawBaseUrl + '/v1';
 

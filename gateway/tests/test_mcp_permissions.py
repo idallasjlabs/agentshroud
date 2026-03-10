@@ -213,10 +213,101 @@ class TestToolPermission:
         assert not result.allowed
         assert "admin-private" in result.reason
 
+    def test_memory_dot_search_denied_for_non_owner(self, mgr):
+        result = mgr.check_tool_permission("agent-a", "test-server", "memory.search")
+        assert not result.allowed
+        assert "admin-private" in result.reason
+
     def test_admin_private_tool_allowed_for_owner(self, mgr):
         owner = mgr._owner_user_id
         mgr.set_trust_level(owner, 3)
         result = mgr.check_tool_permission(owner, "test-server", "gmail_send")
+        assert result.allowed
+
+    def test_private_data_parameter_denied_for_non_owner(self, mgr):
+        params = {"path": "/home/node/.openclaw/workspace/memory/MEMORY.md"}
+        result = mgr.check_tool_parameters(
+            "agent-a",
+            "test-server",
+            "read_file",
+            params,
+        )
+        assert not result.allowed
+        assert "admin-private data" in result.reason
+
+    def test_private_data_parameter_denied_for_gateway_contributor_logs(self, mgr):
+        params = {"path": "/home/node/agentshroud/gateway-data/contributors/2026-03-10-7614658040.md"}
+        result = mgr.check_tool_parameters(
+            "agent-a",
+            "test-server",
+            "read_file",
+            params,
+        )
+        assert not result.allowed
+        assert "admin-private data" in result.reason
+
+    def test_private_data_parameter_denied_for_workspace_contributor_logs(self, mgr):
+        params = {"path": "/data/bot-workspace/memory/contributors/2026-03-10-7614658040.md"}
+        result = mgr.check_tool_parameters(
+            "agent-a",
+            "test-server",
+            "read_file",
+            params,
+        )
+        assert not result.allowed
+        assert "admin-private data" in result.reason
+
+    def test_private_data_parameter_denied_for_nested_private_reference(self, mgr):
+        params = {
+            "query": "search logs",
+            "options": {
+                "targets": [
+                    "/tmp/ok.txt",
+                    "/app/data/collaborator_activity.jsonl",
+                ]
+            },
+        }
+        result = mgr.check_tool_parameters(
+            "agent-a",
+            "test-server",
+            "search_file",
+            params,
+        )
+        assert not result.allowed
+        assert "admin-private data" in result.reason
+
+    def test_private_data_parameter_denied_for_memory_subpath(self, mgr):
+        params = {"path": "/home/node/.openclaw/workspace/memory/conversations/2026-03-10.md"}
+        result = mgr.check_tool_parameters(
+            "agent-a",
+            "test-server",
+            "read_file",
+            params,
+        )
+        assert not result.allowed
+        assert "admin-private data" in result.reason
+
+    def test_private_data_parameter_denied_for_session_store_path(self, mgr):
+        params = {"path": "/app/data/sessions/8096968754/session.json"}
+        result = mgr.check_tool_parameters(
+            "agent-a",
+            "test-server",
+            "read_file",
+            params,
+        )
+        assert not result.allowed
+        assert "admin-private data" in result.reason
+
+    def test_private_data_parameter_allowed_for_owner(self, mgr):
+        owner = mgr._owner_user_id
+        mgr.set_trust_level(owner, 3)
+        params = {"path": "/home/node/.openclaw/workspace/memory/MEMORY.md"}
+        result = mgr.check_tool_parameters(
+            owner,
+            "test-server",
+            "read_file",
+            params,
+        )
         assert result.allowed
 
     def test_privacy_policy_overrides_patterns(self, config, tmp_path, monkeypatch):
@@ -331,3 +422,13 @@ class TestCheckAll:
     def test_full_access(self, mgr):
         result = mgr.check_all("agent-b", "test-server", "admin_op")
         assert result.allowed
+
+    def test_combined_blocks_private_data_parameter(self, mgr):
+        result = mgr.check_all(
+            "agent-a",
+            "test-server",
+            "read_data",
+            {"query": "read # Session Memory for User Isaiah"},
+        )
+        assert not result.allowed
+        assert "admin-private data" in result.reason

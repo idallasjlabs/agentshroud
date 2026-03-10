@@ -21,6 +21,7 @@ import hashlib
 import json
 import logging
 import os
+import re
 import subprocess
 import time
 from datetime import datetime, timezone
@@ -74,6 +75,7 @@ from ..proxy.pipeline import SecurityPipeline
 from gateway.security.session_manager import UserSessionManager
 from ..web.api import router as management_api_router
 from ..security.killswitch_monitor import KillSwitchMonitor
+from ..security.rbac_config import RBACConfig
 from ..web.management import router as management_dashboard_router
 from ..web.dashboard_endpoints import router as dashboard_api_router, install_log_handler
 from .version_routes import router as version_router
@@ -539,8 +541,34 @@ class MCPProxyRequest(BaseModel):
     agent_id: str = "default"
 
 
+def _normalize_agent_identity(candidate: str) -> str:
+    """Validate and normalize agent/user identity used for policy checks."""
+    value = (candidate or "").strip()
+    if not value:
+        return "default"
+    if len(value) > 64:
+        raise HTTPException(status_code=400, detail="Invalid agent identity")
+    if not re.match(r"^[a-zA-Z0-9_-]+$", value):
+        raise HTTPException(status_code=400, detail="Invalid agent identity")
+    return value
+
+
+def _resolve_effective_agent_id(header_user_id: str, body_agent_id: str) -> str:
+    """Resolve trusted effective identity and prevent owner spoofing via body."""
+    header_user_id = (header_user_id or "").strip()
+    body_agent_id = (body_agent_id or "").strip()
+    owner_id = str(RBACConfig().owner_user_id)
+
+    if not header_user_id and body_agent_id == owner_id:
+        raise HTTPException(
+            status_code=400,
+            detail="Body agent_id cannot impersonate owner without trusted user header",
+        )
+    return _normalize_agent_identity(header_user_id or body_agent_id)
+
+
 @app.post("/mcp/proxy", status_code=status.HTTP_200_OK)
-async def mcp_proxy_endpoint(request: MCPProxyRequest, auth: AuthRequired):
+async def mcp_proxy_endpoint(payload: MCPProxyRequest, http_request: Request, auth: AuthRequired):
     """MCP tool call interception endpoint.
 
     Receives an MCP tool call, runs it through the security inspector
@@ -559,8 +587,8 @@ async def mcp_proxy_endpoint(request: MCPProxyRequest, auth: AuthRequired):
 
     # iMessage recipient allowlist (P5: iMessage channel ownership).
     # Checked before security inspection so unknown recipients never reach the tool.
-    if request.server_name == _IMESSAGE_SERVER and request.tool_name == _IMESSAGE_SEND_TOOL:
-        recipient = request.parameters.get("to", "")
+    if payload.server_name == _IMESSAGE_SERVER and payload.tool_name == _IMESSAGE_SEND_TOOL:
+        recipient = payload.parameters.get("to", "")
         config = getattr(app_state, "config", None)
         allowed = config.channels.imessage_allowed_recipients if config else []
         if not _is_imessage_recipient_allowed(recipient, allowed):
@@ -571,9 +599,9 @@ async def mcp_proxy_endpoint(request: MCPProxyRequest, auth: AuthRequired):
                     description=f"Send iMessage to {recipient}",
                     details={
                         "to": recipient,
-                        "body": str(request.parameters.get("body", ""))[:200],
+                        "body": str(payload.parameters.get("body", ""))[:200],
                     },
-                    agent_id=request.agent_id,
+                    agent_id=payload.agent_id,
                 )
                 item = await approval_queue.submit(approval_req)
                 logger.info(f"imessage-send: queued for approval (id={item.request_id})")
@@ -586,20 +614,32 @@ async def mcp_proxy_endpoint(request: MCPProxyRequest, auth: AuthRequired):
                 detail="iMessage recipient not in allowlist and no approval queue available",
             )
 
+    # Enforce agent identity from trusted proxy header when present.
+    # Prevents body-level spoofing of owner/admin identities.
+    header_user_id = (http_request.headers.get("x-agentshroud-user-id") or "").strip()
+    if header_user_id and header_user_id != payload.agent_id:
+        logger.warning(
+            "MCP proxy identity override: header user id differs from body agent_id "
+            "(header=%s body=%s)",
+            header_user_id,
+            payload.agent_id,
+        )
+    effective_agent_id = _resolve_effective_agent_id(header_user_id, payload.agent_id)
+
     tool_call = MCPToolCall(
         id="",  # auto-generated in __post_init__
-        server_name=request.server_name,
-        tool_name=request.tool_name,
-        parameters=request.parameters,
-        agent_id=request.agent_id,
+        server_name=payload.server_name,
+        tool_name=payload.tool_name,
+        parameters=payload.parameters,
+        agent_id=effective_agent_id,
     )
 
     result = await proxy.process_tool_call(tool_call, execute=False)
 
     if result.blocked:
         logger.warning(
-            f"MCP proxy blocked tool call: server={request.server_name} "
-            f"tool={request.tool_name} agent={request.agent_id} "
+            f"MCP proxy blocked tool call: server={payload.server_name} "
+            f"tool={payload.tool_name} agent={effective_agent_id} "
             f"reason={result.block_reason}"
         )
         raise HTTPException(
@@ -629,7 +669,7 @@ class MCPResultRequest(BaseModel):
 
 
 @app.post("/mcp/result", status_code=status.HTTP_200_OK)
-async def mcp_result_endpoint(request: MCPResultRequest, auth: AuthRequired):
+async def mcp_result_endpoint(payload: MCPResultRequest, http_request: Request, auth: AuthRequired):
     """MCP tool result outbound audit endpoint.
 
     Receives a tool result from the bot's mcp-proxy-wrapper.js after the actual
@@ -647,13 +687,22 @@ async def mcp_result_endpoint(request: MCPResultRequest, auth: AuthRequired):
         )
 
     tool_result = MCPToolResult(
-        call_id=request.call_id,
-        server_name=request.server_name,
-        tool_name=request.tool_name,
-        content=request.content,
+        call_id=payload.call_id,
+        server_name=payload.server_name,
+        tool_name=payload.tool_name,
+        content=payload.content,
     )
 
-    result = await proxy.process_tool_result(tool_result, agent_id=request.agent_id)
+    header_user_id = (http_request.headers.get("x-agentshroud-user-id") or "").strip()
+    if header_user_id and header_user_id != payload.agent_id:
+        logger.warning(
+            "MCP result identity override: header user id differs from body agent_id "
+            "(header=%s body=%s)",
+            header_user_id,
+            payload.agent_id,
+        )
+    effective_agent_id = _resolve_effective_agent_id(header_user_id, payload.agent_id)
+    result = await proxy.process_tool_result(tool_result, agent_id=effective_agent_id)
 
     return {
         "audit_entry_id": result.audit_entry_id,
@@ -1360,7 +1409,65 @@ async def egress_pending(auth: AuthRequired):
     queue = getattr(app_state, "egress_approval_queue", None)
     if not queue:
         return {"error": "Egress approval queue not available"}
-    return {"pending": await queue.get_pending_requests()}
+    await queue.cleanup_expired()
+    pending_raw = await queue.get_pending_requests()
+    now_ts = time.time()
+    by_risk = {"green": 0, "yellow": 0, "red": 0, "unknown": 0}
+    by_domain: dict[str, int] = {}
+    by_agent: dict[str, int] = {}
+    by_tool: dict[str, int] = {}
+    oldest_age_seconds = 0.0
+    total_age_seconds = 0.0
+    expiring_soon_count = 0
+    pending = []
+    for item in pending_raw:
+        risk = str(item.get("risk_level", "unknown")).lower()
+        by_risk[risk if risk in by_risk else "unknown"] += 1
+        domain = str(item.get("domain", "")).strip().lower()
+        if domain:
+            by_domain[domain] = by_domain.get(domain, 0) + 1
+        agent_id = str(item.get("agent_id", "")).strip()
+        if agent_id:
+            by_agent[agent_id] = by_agent.get(agent_id, 0) + 1
+        tool_name = str(item.get("tool_name", "")).strip().lower()
+        if tool_name:
+            by_tool[tool_name] = by_tool.get(tool_name, 0) + 1
+        ts = float(item.get("timestamp", now_ts) or now_ts)
+        age = max(0.0, now_ts - ts)
+        total_age_seconds += age
+        if age > oldest_age_seconds:
+            oldest_age_seconds = age
+        timeout_at = float(item.get("timeout_at", now_ts) or now_ts)
+        remaining = max(0.0, timeout_at - now_ts)
+        if remaining <= 30.0:
+            expiring_soon_count += 1
+        enriched = dict(item)
+        enriched["age_seconds"] = age
+        enriched["remaining_seconds"] = remaining
+        pending.append(enriched)
+    top_domains = [
+        {"domain": domain, "count": count}
+        for domain, count in sorted(by_domain.items(), key=lambda kv: kv[1], reverse=True)[:10]
+    ]
+    top_agents = [
+        {"agent_id": agent_id, "count": count}
+        for agent_id, count in sorted(by_agent.items(), key=lambda kv: kv[1], reverse=True)[:10]
+    ]
+    top_tools = [
+        {"tool_name": tool_name, "count": count}
+        for tool_name, count in sorted(by_tool.items(), key=lambda kv: kv[1], reverse=True)[:10]
+    ]
+    return {
+        "count": len(pending),
+        "pending_by_risk": by_risk,
+        "pending_domain_top": top_domains,
+        "pending_agent_top": top_agents,
+        "pending_tool_top": top_tools,
+        "oldest_age_seconds": oldest_age_seconds,
+        "average_age_seconds": (total_age_seconds / len(pending)) if pending else 0.0,
+        "expiring_soon_count": expiring_soon_count,
+        "pending": pending,
+    }
 
 
 @app.get("/manage/egress/log")
@@ -1374,7 +1481,9 @@ async def egress_log(
     if not egress:
         return {"error": "Egress filter not available"}
     attempts = egress.get_log(agent_id=agent_id or None, limit=limit)
+    summary = egress.get_stats(agent_id=agent_id or None)
     return {
+        "summary": summary,
         "count": len(attempts),
         "items": [
             {
@@ -1649,9 +1758,23 @@ async def quarantine_summary(auth: AuthRequired):
         counts["total"] = len(items)
         return counts
 
+    def _top_reasons(items: list[dict], limit: int = 10) -> list[dict]:
+        reason_counts: dict[str, int] = {}
+        for item in items:
+            reason = str(item.get("reason", "")).strip()
+            if not reason:
+                continue
+            reason_counts[reason] = reason_counts.get(reason, 0) + 1
+        return [
+            {"reason": reason, "count": count}
+            for reason, count in sorted(reason_counts.items(), key=lambda kv: kv[1], reverse=True)[: max(1, limit)]
+        ]
+
     return {
         "inbound": _count_by_status(inbound),
         "outbound": _count_by_status(outbound),
+        "inbound_top_reasons": _top_reasons(inbound),
+        "outbound_top_reasons": _top_reasons(outbound),
     }
 
 
@@ -1787,6 +1910,59 @@ async def soc_report(auth: AuthRequired, limit: int = 200):
             if isinstance(v, dict)
         }
     )
+    privacy = {
+        "policy_loaded": False,
+        "policy_path": "",
+        "private_access_summary": {"total": 0, "by_agent": {}, "by_tool": {}},
+        "private_redaction_summary": {"events": 0, "total_redactions": 0, "by_agent": {}, "by_tool": {}},
+    }
+    mcp = getattr(app_state, "mcp_proxy", None)
+    perms = getattr(mcp, "permissions", None) if mcp else None
+    if perms:
+        try:
+            status = (
+                perms.get_privacy_policy_status()
+                if hasattr(perms, "get_privacy_policy_status")
+                else {"loaded": False, "path": "", "error": ""}
+            )
+            privacy = {
+                "policy_loaded": bool(status.get("loaded", False)),
+                "policy_path": str(status.get("path", "")),
+                "private_access_summary": (
+                    perms.get_private_access_summary(limit=limit)
+                    if hasattr(perms, "get_private_access_summary")
+                    else {"total": 0, "by_agent": {}, "by_tool": {}}
+                ),
+                "private_redaction_summary": (
+                    perms.get_private_redaction_summary(limit=limit)
+                    if hasattr(perms, "get_private_redaction_summary")
+                    else {"events": 0, "total_redactions": 0, "by_agent": {}, "by_tool": {}}
+                ),
+            }
+        except Exception:
+            pass
+
+    collaborator_activity = {
+        "summary": {"total_messages": 0, "unique_users": 0, "last_activity": None, "by_user": {}},
+        "recent": [],
+    }
+    tracker = getattr(app_state, "collaborator_tracker", None)
+    if tracker:
+        try:
+            collaborator_activity = {
+                "summary": tracker.get_activity_summary(),
+                "recent": tracker.get_activity(limit=min(limit, 100)),
+            }
+        except Exception:
+            pass
+
+    egress_live = {}
+    try:
+        from gateway.ingest_api.routes.dashboard import _build_egress_live_snapshot
+
+        egress_live = await _build_egress_live_snapshot()
+    except Exception:
+        egress_live = {}
     return {
         "generated_at": datetime.now(timezone.utc).isoformat(),
         "correlation": correlation,
@@ -1803,6 +1979,9 @@ async def soc_report(auth: AuthRequired, limit: int = 200):
             ),
         },
         "scanner_summary": scanner_summary,
+        "privacy": privacy,
+        "collaborator_activity": collaborator_activity,
+        "egress_live": egress_live,
     }
 
 

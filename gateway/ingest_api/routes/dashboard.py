@@ -14,6 +14,7 @@ import hmac
 import secrets
 import time
 import logging
+import os
 from pathlib import Path
 from typing import Annotated
 
@@ -57,6 +58,51 @@ router = APIRouter()
 logger = logging.getLogger(__name__)
 
 
+def _parse_collaborator_log_dirs() -> list[Path]:
+    """Resolve contributor log directories (ordered, de-duplicated)."""
+    configured = str(
+        os.environ.get(
+            "AGENTSHROUD_CONTRIBUTOR_LOG_DIRS",
+            "/app/data/contributors",
+        )
+    )
+    resolved: list[Path] = []
+    for raw in configured.split(","):
+        value = raw.strip()
+        if not value:
+            continue
+        path = Path(value)
+        if path not in resolved:
+            resolved.append(path)
+    return resolved
+
+
+def _load_contributor_logs(log_dirs: list[Path]) -> list[dict]:
+    """Load contributor logs from multiple directories with de-dup by filename."""
+    logs: list[dict] = []
+    seen_filenames: set[str] = set()
+    for log_dir in log_dirs:
+        if not log_dir.is_dir():
+            continue
+        for f in sorted(log_dir.iterdir(), reverse=True):
+            if not f.is_file():
+                continue
+            if f.name in seen_filenames:
+                continue
+            try:
+                logs.append(
+                    {
+                        "filename": f.name,
+                        "content": f.read_text(),
+                        "source_dir": str(log_dir),
+                    }
+                )
+                seen_filenames.add(f.name)
+            except Exception:
+                continue
+    return logs
+
+
 async def _build_egress_live_snapshot() -> dict:
     """Build compact egress dashboard snapshot for websocket/API clients."""
     egress_filter = getattr(app_state, "egress_filter", None)
@@ -82,6 +128,56 @@ async def _build_egress_live_snapshot() -> dict:
         pending = await approval_queue.get_pending_requests()
         pending_items = pending[-20:]
         emergency = await approval_queue.get_emergency_status()
+    now_ts = time.time()
+    enriched_pending: list[dict] = []
+    for item in pending_items:
+        enriched = dict(item)
+        ts = float(item.get("timestamp", now_ts) or now_ts)
+        timeout_at = float(item.get("timeout_at", now_ts) or now_ts)
+        enriched["age_seconds"] = max(0.0, now_ts - ts)
+        enriched["remaining_seconds"] = max(0.0, timeout_at - now_ts)
+        enriched_pending.append(enriched)
+    pending_items = enriched_pending
+    pending_by_risk = {"green": 0, "yellow": 0, "red": 0, "unknown": 0}
+    pending_domains: dict[str, int] = {}
+    pending_agents: dict[str, int] = {}
+    pending_tools: dict[str, int] = {}
+    for item in pending_items:
+        risk = str(item.get("risk_level", "unknown")).lower()
+        pending_by_risk[risk if risk in pending_by_risk else "unknown"] += 1
+        domain = str(item.get("domain", "")).strip().lower()
+        if domain:
+            pending_domains[domain] = pending_domains.get(domain, 0) + 1
+        agent_id = str(item.get("agent_id", "")).strip()
+        if agent_id:
+            pending_agents[agent_id] = pending_agents.get(agent_id, 0) + 1
+        tool_name = str(item.get("tool_name", "")).strip().lower()
+        if tool_name:
+            pending_tools[tool_name] = pending_tools.get(tool_name, 0) + 1
+    pending_domain_top = [
+        {"domain": d, "count": c}
+        for d, c in sorted(pending_domains.items(), key=lambda kv: kv[1], reverse=True)[:10]
+    ]
+    pending_agent_top = [
+        {"agent_id": a, "count": c}
+        for a, c in sorted(pending_agents.items(), key=lambda kv: kv[1], reverse=True)[:10]
+    ]
+    pending_tool_top = [
+        {"tool_name": t, "count": c}
+        for t, c in sorted(pending_tools.items(), key=lambda kv: kv[1], reverse=True)[:10]
+    ]
+    pending_average_age_seconds = (
+        sum(float(item.get("age_seconds", 0.0) or 0.0) for item in pending_items) / len(pending_items)
+        if pending_items
+        else 0.0
+    )
+    pending_oldest_age_seconds = max(
+        (float(item.get("age_seconds", 0.0) or 0.0) for item in pending_items),
+        default=0.0,
+    )
+    pending_expiring_soon_count = sum(
+        1 for item in pending_items if float(item.get("remaining_seconds", 0.0) or 0.0) <= 30.0
+    )
     recent_security_events = []
     event_bus = getattr(app_state, "event_bus", None)
     if event_bus is not None:
@@ -129,6 +225,8 @@ async def _build_egress_live_snapshot() -> dict:
         "top_violating_agents": {},
         "top_violating_tools": {},
     }
+    privacy_access_summary = {"total": 0, "by_agent": {}, "by_tool": {}}
+    privacy_redaction_summary = {"events": 0, "total_redactions": 0, "by_agent": {}, "by_tool": {}}
     try:
         mcp = getattr(app_state, "mcp_proxy", None)
         perms = getattr(mcp, "permissions", None) if mcp else None
@@ -139,6 +237,8 @@ async def _build_egress_live_snapshot() -> dict:
                 if hasattr(perms, "get_private_redaction_summary")
                 else {"events": 0, "total_redactions": 0, "by_agent": {}, "by_tool": {}}
             )
+            privacy_access_summary = access_summary
+            privacy_redaction_summary = redaction_summary
             privacy_policy_summary = {
                 "violations": int(access_summary.get("total", 0) or 0),
                 "redaction_events": int(redaction_summary.get("events", 0) or 0),
@@ -154,6 +254,13 @@ async def _build_egress_live_snapshot() -> dict:
         "egress_recent_log": recent_log,
         "pending_requests": len(pending_items),
         "pending_items": pending_items,
+        "pending_by_risk": pending_by_risk,
+        "pending_domain_top": pending_domain_top,
+        "pending_agent_top": pending_agent_top,
+        "pending_tool_top": pending_tool_top,
+        "pending_average_age_seconds": pending_average_age_seconds,
+        "pending_oldest_age_seconds": pending_oldest_age_seconds,
+        "pending_expiring_soon_count": pending_expiring_soon_count,
         "emergency": emergency,
         "quarantined_blocked_messages": len(quarantine),
         "quarantined_blocked_messages_pending": quarantine_pending,
@@ -164,6 +271,8 @@ async def _build_egress_live_snapshot() -> dict:
         "soc_risk": soc_risk,
         "soc_summary": soc_summary,
         "privacy_policy_summary": privacy_policy_summary,
+        "privacy_access_summary": privacy_access_summary,
+        "privacy_redaction_summary": privacy_redaction_summary,
         "scanner_summaries": {
             k: v.get("summary", {})
             for k, v in (getattr(app_state, "scanner_results", {}) or {}).items()
@@ -203,16 +312,12 @@ async def get_collaborators(req: Request, auth: AuthRequired):
     if collab_file.exists():
         result["collaborators_md"] = collab_file.read_text()
 
-    contrib_dir = workspace / "memory" / "contributors"
-    if contrib_dir.is_dir():
-        logs = []
-        for f in sorted(contrib_dir.iterdir()):
-            if f.is_file():
-                try:
-                    logs.append({"filename": f.name, "content": f.read_text()})
-                except Exception:
-                    pass
-        result["contributor_logs"] = logs
+    configured_dirs = _parse_collaborator_log_dirs()
+    workspace_default = workspace / "memory" / "contributors"
+    if workspace_default not in configured_dirs:
+        configured_dirs.append(workspace_default)
+    result["contributor_logs"] = _load_contributor_logs(configured_dirs)
+    result["contributor_log_sources"] = [str(p) for p in configured_dirs]
 
     # Append gateway-level activity tracker data (authoritative source)
     tracker = getattr(app_state, "collaborator_tracker", None)

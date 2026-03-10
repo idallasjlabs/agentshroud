@@ -22,6 +22,7 @@ from typing import Optional
 
 from .web_config import WebProxyConfig
 from .web_proxy import WebProxy
+from ..security.egress_filter import EgressAction, EgressFilter
 
 logger = logging.getLogger("agentshroud.proxy.http_proxy")
 
@@ -35,6 +36,13 @@ ALLOWED_DOMAINS: list[str] = [
     "*.github.com",
     "*.githubusercontent.com",
 ]
+
+# Internal control-plane destinations required for channel transport.
+# These are bypassed from interactive egress approval to avoid deadlocking
+# the approval channel itself.
+SYSTEM_BYPASS_DOMAINS: set[str] = {
+    "api.telegram.org",
+}
 
 
 class HTTPConnectProxy:
@@ -54,6 +62,7 @@ class HTTPConnectProxy:
     def __init__(
         self,
         web_proxy: Optional[WebProxy] = None,
+        egress_filter: Optional[EgressFilter] = None,
         host: str = "0.0.0.0",
         port: int = 8181,
     ):
@@ -64,6 +73,7 @@ class HTTPConnectProxy:
             )
             web_proxy = WebProxy(config=config)
         self.web_proxy = web_proxy
+        self.egress_filter = egress_filter
         self.host = host
         self.port = port
         self._server: Optional[asyncio.Server] = None
@@ -175,9 +185,51 @@ class HTTPConnectProxy:
             host = target
             port = 443
 
-        # Check domain against allowlist (via WebProxy)
+        bypass_system_domain = host.lower().rstrip(".") in SYSTEM_BYPASS_DOMAINS
+
         url = f"https://{host}:{port}/"
-        result = self.web_proxy.check_request(url)
+        result_blocked = False
+        block_reason = "allowed"
+
+        if bypass_system_domain:
+            block_reason = "system egress bypass domain"
+        elif self.egress_filter is not None:
+            # Primary policy path: interactive egress approval + policy engine.
+            # This is required so unknown domains can raise approval prompts
+            # instead of being hard-blocked by static CONNECT allowlists.
+            egress_attempt = await self.egress_filter.check_async(
+                agent_id="http_connect_proxy",
+                destination=url,
+                port=port,
+                tool_name="http_connect_tunnel",
+            )
+            if egress_attempt.action != EgressAction.ALLOW:
+                result_blocked = True
+                block_reason = (
+                    egress_attempt.details
+                    or egress_attempt.rule
+                    or "egress denied"
+                )
+            else:
+                # Keep static allowlist as observability signal when interactive
+                # approval/policy allows an otherwise unknown domain.
+                web_result = self.web_proxy.check_request(url)
+                if web_result.blocked:
+                    logger.info(
+                        "CONNECT allowed by egress policy despite static allowlist miss: %s:%s",
+                        host,
+                        port,
+                    )
+                block_reason = (
+                    egress_attempt.details
+                    or egress_attempt.rule
+                    or "egress allowed"
+                )
+        else:
+            # Fallback path when egress filter is unavailable.
+            result = self.web_proxy.check_request(url)
+            result_blocked = result.blocked
+            block_reason = result.block_reason
 
         # Track stats
         self._stats["total"] += 1
@@ -185,16 +237,16 @@ class HTTPConnectProxy:
             "timestamp": time.time(),
             "host": host,
             "port": port,
-            "allowed": not result.blocked,
-            "block_reason": result.block_reason,
+            "allowed": not result_blocked,
+            "block_reason": block_reason,
         }
         self._stats["recent"].insert(0, entry)
         if len(self._stats["recent"]) > 100:
             self._stats["recent"] = self._stats["recent"][:100]
 
-        if result.blocked:
+        if result_blocked:
             self._stats["blocked"] += 1
-            logger.warning(f"CONNECT blocked: {host}:{port} — {result.block_reason}")
+            logger.warning(f"CONNECT blocked: {host}:{port} — {block_reason}")
             writer.write(b"HTTP/1.1 403 Forbidden\r\nContent-Length: 0\r\n\r\n")
             await writer.drain()
             return
