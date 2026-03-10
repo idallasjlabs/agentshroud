@@ -310,6 +310,33 @@ class TestInteractiveApproval:
         await asyncio.sleep(0)
         assert any(e.type == "egress_attempt" for e in bus.events)
 
+    @pytest.mark.asyncio
+    async def test_allowlisted_domain_still_prompts_when_approval_all_enabled(self):
+        class FakeApprovalQueue:
+            def __init__(self):
+                self.calls = 0
+
+            async def request_approval(self, **_kwargs):
+                self.calls += 1
+                from gateway.security.egress_approval import ApprovalResult
+                return ApprovalResult.APPROVED
+
+            async def get_pending_requests(self):
+                return []
+
+        cfg = EgressFilterConfig(
+            mode="enforce",
+            default_allowlist=["api.anthropic.com"],
+            default_denylist=[],
+            approval_required_for_all=True,
+        )
+        ef = EgressFilter(config=cfg)
+        q = FakeApprovalQueue()
+        ef.set_approval_queue(q)
+        result = await ef.check_async("bot", "https://api.anthropic.com/v1/messages", tool_name="web_fetch")
+        assert result.action == EgressAction.ALLOW
+        assert q.calls == 1
+
 
 # ---------------------------------------------------------------------------
 # EgressPolicy standalone tests
