@@ -180,7 +180,7 @@ class TelegramAPIProxy:
             return None
         url_match = re.search(r"https?://[^\s<>()\"']+", text, flags=re.IGNORECASE)
         if url_match:
-            url = url_match.group(0).rstrip(".,;:!?)]}")
+            url = url_match.group(0).rstrip(".,;:!?)]}>'\"")
             return url or None
 
         # Support bare domains like "weather.com/today" so collaborator requests
@@ -192,7 +192,7 @@ class TelegramAPIProxy:
         )
         if not domain_match:
             return None
-        candidate = domain_match.group(0).rstrip(".,;:!?)]}")
+        candidate = domain_match.group(0).rstrip(".,;:!?)]}>'\"")
         if not candidate:
             return None
         return f"https://{candidate}"
