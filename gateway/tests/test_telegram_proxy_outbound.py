@@ -1061,6 +1061,39 @@ class TestOutboundPipelineIntegration:
         assert called["kwargs"]["destination"] == "https://weather.com"
         assert "approval request queued" in result["text"].lower()
 
+    @pytest.mark.asyncio
+    async def test_raw_web_fetch_json_url_with_html_entity_domain_still_queues_approval(self, monkeypatch):
+        """HTML-entity encoded domains in leaked JSON should normalize before approval."""
+        called = {"value": False}
+
+        class FakeEgress:
+            async def check_async(self, **kwargs):
+                called["value"] = True
+                called["kwargs"] = kwargs
+                return SimpleNamespace(action="deny")
+
+        from gateway.ingest_api import state as state_module
+
+        monkeypatch.setattr(
+            state_module,
+            "app_state",
+            SimpleNamespace(egress_filter=FakeEgress()),
+        )
+        proxy = TelegramAPIProxy(sanitizer=_make_sanitizer())
+        body = json.dumps(
+            {
+                "chat_id": "8096968754",
+                "text": "{\"name\":\"web_fetch\",\"arguments\":{\"url\":\"https://weather&#46;com/weather/today\"}}",
+            }
+        ).encode()
+
+        result = json.loads(await proxy._filter_outbound(body, "application/json"))
+        await asyncio.sleep(0)
+
+        assert called["value"] is True
+        assert called["kwargs"]["destination"] == "https://weather.com"
+        assert "approval request queued" in result["text"].lower()
+
     def test_sanitize_reason_hides_internal_paths(self):
         """User-facing block reasons should not expose modules or file paths."""
         reason = (
