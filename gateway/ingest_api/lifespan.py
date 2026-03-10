@@ -470,6 +470,7 @@ async def lifespan(app: FastAPI):
             log_path=Path("/app/data/collaborator_activity.jsonl"),
             owner_user_id=_rbac_cfg.owner_user_id,
             collaborator_ids=_rbac_cfg.collaborator_user_ids,
+            contributor_log_dir=Path("/app/data/contributors"),
         )
         logger.info("CollaboratorActivityTracker initialized")
     except Exception as e:
@@ -696,7 +697,11 @@ async def lifespan(app: FastAPI):
         mcp_proxy_config.pii_scan_enabled = True
         mcp_proxy_config.injection_scan_enabled = True
         mcp_proxy_config.audit_enabled = True
-    app_state.mcp_proxy = MCPProxy(config=mcp_proxy_config, approval_queue=app_state.approval_queue)
+    app_state.mcp_proxy = MCPProxy(
+        config=mcp_proxy_config,
+        approval_queue=app_state.approval_queue,
+        egress_filter=getattr(app_state, "egress_filter", None),
+    )
     logger.info(
         f"MCP proxy initialized (mode: {mcp_mode}): {len(mcp_proxy_config.servers)} server(s) registered"
     )
@@ -728,8 +733,13 @@ async def lifespan(app: FastAPI):
         # Use allowed_domains from agentshroud.yaml (proxy.allowed_domains),
         # falling back to the hardcoded default if the YAML section is absent.
         _proxy_domains = app_state.config.proxy_allowed_domains or ALLOWED_DOMAINS
-        _web_proxy = WebProxy(config=WebProxyConfig(mode="allowlist", allowed_domains=_proxy_domains))
-        app_state.http_proxy = HTTPConnectProxy(web_proxy=_web_proxy)
+        # CONNECT proxy domain policy runs in monitor mode so interactive egress
+        # approvals can decide unknown outbound destinations at runtime.
+        _web_proxy = WebProxy(config=WebProxyConfig(mode="monitor", allowed_domains=_proxy_domains))
+        app_state.http_proxy = HTTPConnectProxy(
+            web_proxy=_web_proxy,
+            egress_filter=getattr(app_state, "egress_filter", None),
+        )
         await app_state.http_proxy.start()
         logger.info("HTTP CONNECT proxy started on port 8181")
     except Exception as e:

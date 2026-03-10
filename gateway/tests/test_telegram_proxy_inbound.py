@@ -340,6 +340,67 @@ class TestInboundPipelineOnGetUpdates:
         assert "message_id" in quarantine[0]
 
     @pytest.mark.asyncio
+    async def test_non_owner_activity_is_tracked_for_unknown_user(self, monkeypatch):
+        """Unknown non-owner users should still be tracked at gateway level."""
+        from gateway.ingest_api import state as state_module
+
+        class FakeTracker:
+            def __init__(self):
+                self.calls = []
+
+            def record_activity(self, user_id, username, message_preview, source):
+                self.calls.append((user_id, username, message_preview, source))
+
+        tracker = FakeTracker()
+        monkeypatch.setattr(
+            state_module,
+            "app_state",
+            SimpleNamespace(collaborator_tracker=tracker),
+        )
+
+        proxy = TelegramAPIProxy(pipeline=PassthroughPipeline())
+        proxy._rbac = FakeRBAC(collaborators=[])
+        proxy._bot_token = ""
+
+        response = _wrap_response(_make_update("hello", user_id="424242", chat_id=424242))
+        await proxy._filter_inbound_updates(response)
+
+        assert len(tracker.calls) == 1
+        user_id, _username, preview, source = tracker.calls[0]
+        assert user_id == "424242"
+        assert preview == "hello"
+        assert source == "telegram"
+
+    @pytest.mark.asyncio
+    async def test_owner_activity_not_tracked(self, monkeypatch):
+        """Owner messages must never be recorded in collaborator tracker."""
+        from gateway.ingest_api import state as state_module
+
+        class FakeTracker:
+            def __init__(self):
+                self.calls = 0
+
+            def record_activity(self, **_kwargs):
+                self.calls += 1
+
+        tracker = FakeTracker()
+        owner_id = "8096968754"
+        monkeypatch.setattr(
+            state_module,
+            "app_state",
+            SimpleNamespace(collaborator_tracker=tracker),
+        )
+
+        proxy = TelegramAPIProxy(pipeline=PassthroughPipeline())
+        proxy._rbac = FakeRBAC(owner_id=owner_id, collaborators=[])
+        proxy._bot_token = ""
+
+        response = _wrap_response(_make_update("owner msg", user_id=owner_id, chat_id=int(owner_id)))
+        await proxy._filter_inbound_updates(response)
+
+        assert tracker.calls == 0
+
+    @pytest.mark.asyncio
     async def test_egress_callback_applies_queue_decision(self, monkeypatch):
         """Telegram egress inline callback should update egress approval queue."""
         from gateway.ingest_api import state as state_module
@@ -383,6 +444,46 @@ class TestInboundPipelineOnGetUpdates:
         result = await proxy._filter_inbound_updates({"ok": True, "result": [cb_update]})
         assert result["result"] == []
         assert actions == [("approve", "req-1", "once")]
+
+    @pytest.mark.asyncio
+    async def test_egress_callback_non_dict_result_is_handled(self, monkeypatch):
+        """Malformed callback payloads should not crash inbound processing."""
+        from gateway.ingest_api import state as state_module
+
+        class FakeNotifier:
+            async def handle_callback(self, _data):
+                return ("status", "reason")
+
+            async def answer_callback(self, *_args, **_kwargs):
+                return True
+
+        class FakeQueue:
+            async def approve(self, request_id, mode):  # pragma: no cover - should not be called
+                raise AssertionError("approve should not be called for malformed callback result")
+
+            async def deny(self, request_id, mode):  # pragma: no cover - should not be called
+                raise AssertionError("deny should not be called for malformed callback result")
+
+        monkeypatch.setattr(
+            state_module,
+            "app_state",
+            SimpleNamespace(
+                egress_notifier=FakeNotifier(),
+                egress_approval_queue=FakeQueue(),
+            ),
+        )
+
+        proxy = TelegramAPIProxy()
+        proxy._rbac = FakeRBAC()
+        cb_update = {
+            "update_id": 2,
+            "callback_query": {
+                "id": "cb-2",
+                "data": "egress_allow_once_req-2",
+            },
+        }
+        result = await proxy._filter_inbound_updates({"ok": True, "result": [cb_update]})
+        assert result["result"] == []
 
     @pytest.mark.asyncio
     async def test_rate_limit_notice_mentions_200_per_hour(self, monkeypatch):

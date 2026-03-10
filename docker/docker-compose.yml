@@ -108,6 +108,7 @@ services:
     volumes:
       - agentshroud-config:/home/node/.agentshroud
       - agentshroud-workspace:/home/node/agentshroud/workspace
+      - gateway-data:/home/node/agentshroud/gateway-data:ro
       - agentshroud-ssh:/home/node/.ssh
       - agentshroud-browsers:/home/node/.cache/ms-playwright
       - ../branding:/app/branding:ro
@@ -137,10 +138,10 @@ services:
       - OLLAMA_BASE_URL=${OLLAMA_BASE_URL:-http://gateway:8080/v1}
       - OLLAMA_API_KEY=${OLLAMA_API_KEY:-ollama-local}
       - AGENTSHROUD_MODEL_MODE=${AGENTSHROUD_MODEL_MODE:-local}
-      - AGENTSHROUD_LOCAL_MODEL_REF=${AGENTSHROUD_LOCAL_MODEL_REF:-ollama/qwen2.5-coder:7b}
+      - AGENTSHROUD_LOCAL_MODEL_REF=${AGENTSHROUD_LOCAL_MODEL_REF:-ollama/qwen3:14b}
       - AGENTSHROUD_CLOUD_MODEL_REF=${AGENTSHROUD_CLOUD_MODEL_REF:-anthropic/claude-opus-4-6}
       - OPENCLAW_MAIN_MODEL=${OPENCLAW_MAIN_MODEL:-}
-      - AGENTSHROUD_LOCAL_MODEL=${AGENTSHROUD_LOCAL_MODEL:-qwen2.5-coder:7b}
+      - AGENTSHROUD_LOCAL_MODEL=${AGENTSHROUD_LOCAL_MODEL:-qwen3:14b}
       - TELEGRAM_API_BASE_URL=http://gateway:8080/telegram-api
       - GATEWAY_HOST_PORT=8080
       - OPENCLAW_BOT_NAME=agentshroud_bot

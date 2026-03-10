@@ -284,21 +284,28 @@ class TestConfigValidation:
         """Model switch helper should support local and major cloud providers."""
         script = (REPO_ROOT / "scripts" / "switch_model.sh").read_text()
         assert "switch_model.sh <target>" in script
+        assert "[model_ref]" in script
+        assert "--wait" in script
         assert "local" in script
         assert "gemini" in script
         assert "anthropic" in script
         assert "openai" in script
+        assert "CUSTOM_MODEL_REF" in script
+        assert "ensure_local_model_available" in script
         assert "docker compose" in script
 
     def test_openclaw_patch_defaults_to_qwen_local_model(self):
-        """OpenClaw patch script should default to Ollama qwen2.5-coder model."""
+        """OpenClaw patch script should default to local Ollama but keep API adapter configurable."""
         script = (REPO_ROOT / "docker" / "config" / "openclaw" / "apply-patches.js").read_text()
         assert "AGENTSHROUD_MODEL_MODE" in script
         assert "AGENTSHROUD_LOCAL_MODEL_REF" in script
         assert "AGENTSHROUD_CLOUD_MODEL_REF" in script
-        assert "ollama/qwen2.5-coder:7b" in script
+        assert "ollama/qwen3:14b" in script
         assert "config.models.providers.ollama" in script
-        assert "openai-completions" in script
+        assert "OPENCLAW_OLLAMA_API" in script
+        assert "api: OLLAMA_PROVIDER_API" in script
+        assert "commands.ownerDisplay" in script
+        assert "'hash'" in script
         assert "anthropic/claude-opus-4-6" in script
         assert "agents.defaults.model" in script or "config.agents.defaults.model" in script
 
@@ -306,7 +313,7 @@ class TestConfigValidation:
         """Main compose stack should expose a single model-mode switch with local/cloud refs."""
         compose = (REPO_ROOT / "docker" / "docker-compose.yml").read_text()
         assert "AGENTSHROUD_MODEL_MODE=${AGENTSHROUD_MODEL_MODE:-local}" in compose
-        assert "AGENTSHROUD_LOCAL_MODEL_REF=${AGENTSHROUD_LOCAL_MODEL_REF:-ollama/qwen2.5-coder:7b}" in compose
+        assert "AGENTSHROUD_LOCAL_MODEL_REF=${AGENTSHROUD_LOCAL_MODEL_REF:-ollama/qwen3:14b}" in compose
         assert "AGENTSHROUD_CLOUD_MODEL_REF=${AGENTSHROUD_CLOUD_MODEL_REF:-anthropic/claude-opus-4-6}" in compose
         assert "OLLAMA_BASE_URL=${OLLAMA_BASE_URL:-http://gateway:8080/v1}" in compose
         assert "OLLAMA_API_KEY=${OLLAMA_API_KEY:-ollama-local}" in compose
