@@ -670,6 +670,18 @@ class TelegramAPIProxy:
 
     def _suppress_duplicate_system_notice(self, body: bytes, content_type: Optional[str]) -> bool:
         """Suppress repeated startup/shutdown system notices in short windows."""
+        def _canonical_notice(raw: str) -> str:
+            text = (raw or "").strip()
+            # Normalize emoji-variation and punctuation drift so duplicate startup
+            # notices are suppressed even when renderers alter glyph variants.
+            lowered = re.sub(r"[\ufe0f\u200d]", "", text).lower()
+            lowered = re.sub(r"\s+", " ", lowered).strip()
+            if "agentshroud" in lowered and "online" in lowered:
+                return "agentshroud_online"
+            if "agentshroud" in lowered and "shutting down" in lowered:
+                return "agentshroud_shutting_down"
+            return ""
+
         try:
             ct = (content_type or "").lower()
             payload: dict[str, Any] = {}
@@ -683,14 +695,18 @@ class TelegramAPIProxy:
                 )
             chat_id = str(payload.get("chat_id", "")).strip()
             _, text = self._resolve_text_field(payload)
-            notice = (text or "").strip()
-            if not chat_id or notice not in {"🛡️ AgentShroud online", "🔴 AgentShroud shutting down"}:
+            canonical_notice = _canonical_notice(text or "")
+            if not chat_id or not canonical_notice:
                 return False
-            key = (chat_id, notice)
+            key = (chat_id, canonical_notice)
             now = time.time()
             blocked_until = self._recent_system_notice_until.get(key, 0.0)
             if blocked_until > now:
-                logger.info("Suppressing duplicate system notice for chat %s: %s", chat_id, notice)
+                logger.info(
+                    "Suppressing duplicate system notice for chat %s: %s",
+                    chat_id,
+                    canonical_notice,
+                )
                 return True
             self._recent_system_notice_until[key] = now + self._system_notice_cooldown_seconds
         except Exception:
