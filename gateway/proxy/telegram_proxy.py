@@ -679,6 +679,8 @@ class TelegramAPIProxy:
         url = normalize_input(str((tool_args or {}).get("url", ""))).strip().strip("'\"`<>[]{}()")
         if not url:
             return False
+        if any(ch.isspace() for ch in url):
+            return False
         if re.search(r"%(?:0[0-9a-fA-F]|1[0-9a-fA-F]|7[fF])", url):
             return False
         if "\\" in url:
