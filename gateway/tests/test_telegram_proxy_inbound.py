@@ -2655,3 +2655,7 @@ class TestCommandTokenNormalization:
     def test_normalize_command_token_preserves_hyphen_and_underscore(self):
         token = TelegramAPIProxy._normalize_command_token("/self-diagnostic_test")
         assert token == "/self-diagnostic_test"
+
+    def test_normalize_command_token_normalizes_fullwidth_mention_punctuation(self):
+        token = TelegramAPIProxy._normalize_command_token("／ｈｅａｌｔｈｃｈｅｃｋ@agentshroud_bot？")
+        assert token == "/healthcheck"
