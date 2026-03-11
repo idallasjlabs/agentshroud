@@ -2375,3 +2375,10 @@ class TestDomainValidationHelper:
 
     def test_is_valid_domain_name_rejects_underscore_label(self):
         assert TelegramAPIProxy._is_valid_domain_name("bad_name.example.com") is False
+
+    def test_is_valid_domain_name_accepts_numeric_inner_labels(self):
+        assert TelegramAPIProxy._is_valid_domain_name("api2.v1.weather.com") is True
+
+    def test_is_valid_domain_name_rejects_leading_or_trailing_dot(self):
+        assert TelegramAPIProxy._is_valid_domain_name(".weather.com") is False
+        assert TelegramAPIProxy._is_valid_domain_name("weather.com.") is False
