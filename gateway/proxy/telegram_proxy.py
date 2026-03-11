@@ -137,7 +137,11 @@ class TelegramAPIProxy:
         if not isinstance(text, str):
             return None
         lowered = text.lower()
-        if "memory search is currently unavailable due to an embedding/provider error" in lowered:
+        if (
+            ("memory search" in lowered and ("unavailable" in lowered or "disabled" in lowered))
+            and re.search(r"embedding(?:\s*[/_-]?\s*)provider", lowered)
+            and "error" in lowered
+        ):
             return (
                 "⚠️ Memory search is unavailable in this runtime profile. "
                 "Switch to a configured embedding-capable profile (for example: "
@@ -145,9 +149,10 @@ class TelegramAPIProxy:
                 "agents.defaults.memorySearch.provider, then retry."
             )
         if (
-            "unable to access the healthcheck skill" in lowered
+            "healthcheck" in lowered
             and "skill.md" in lowered
             and "sandbox" in lowered
+            and re.search(r"(?:unable|cannot)\s+to\s+access|can't\s+access", lowered)
         ):
             return (
                 "✅ Healthcheck is handled directly by the AgentShroud gateway. "
