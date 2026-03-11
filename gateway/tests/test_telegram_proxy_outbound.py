@@ -2351,6 +2351,16 @@ class TestEgressTargetExtraction:
         target = TelegramAPIProxy._extract_first_egress_target(text)
         assert target == "https://weather.com/weather/today/l/Pittsburgh,PA"
 
+    def test_extract_first_egress_target_skips_protocol_relative_host_without_tld(self):
+        text = "open //localhost/path and report"
+        target = TelegramAPIProxy._extract_first_egress_target(text)
+        assert target is None
+
+    def test_extract_first_egress_target_rejects_ip_literal_bare_target(self):
+        text = "visit 127.0.0.1/admin for diagnostics"
+        target = TelegramAPIProxy._extract_first_egress_target(text)
+        assert target is None
+
 
 class TestDomainValidationHelper:
     """Unit tests for domain validator used by egress approval flow."""
