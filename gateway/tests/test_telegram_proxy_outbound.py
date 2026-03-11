@@ -678,6 +678,15 @@ class TestOutboundPipelineIntegration:
         assert result.get("message", "") == original
 
     @pytest.mark.asyncio
+    async def test_healthcheck_skill_message_without_sandbox_is_not_rewritten_for_message_field(self):
+        """JSON message field should keep healthcheck SKILL.md text unchanged when sandbox hint is absent."""
+        proxy = TelegramAPIProxy(sanitizer=_make_sanitizer())
+        original = "Cannot access healthcheck skill.md from this environment."
+        body = json.dumps({"chat_id": "8096968754", "message": original}).encode()
+        result = json.loads(await proxy._filter_outbound(body, "application/json"))
+        assert result.get("message", "") == original
+
+    @pytest.mark.asyncio
     async def test_healthcheck_sandbox_message_without_skill_md_is_not_rewritten_for_content_field(self):
         """JSON content field should keep healthcheck sandbox text unchanged when SKILL.md marker is absent."""
         proxy = TelegramAPIProxy(sanitizer=_make_sanitizer())
@@ -735,6 +744,17 @@ class TestOutboundPipelineIntegration:
         """Form message should keep non-healthcheck SKILL.md sandbox text unchanged."""
         proxy = TelegramAPIProxy(sanitizer=_make_sanitizer())
         original = "Cannot access profile skill.md due to sandbox restrictions."
+        form_body = urllib.parse.urlencode({"chat_id": "8096968754", "message": original}).encode()
+        result = urllib.parse.parse_qs(
+            (await proxy._filter_outbound(form_body, "application/x-www-form-urlencoded")).decode()
+        )
+        assert result.get("message", [""])[0] == original
+
+    @pytest.mark.asyncio
+    async def test_healthcheck_skill_message_without_sandbox_is_not_rewritten_for_form_message(self):
+        """Form message should keep healthcheck SKILL.md text unchanged when sandbox hint is absent."""
+        proxy = TelegramAPIProxy(sanitizer=_make_sanitizer())
+        original = "Cannot access healthcheck skill.md from this environment."
         form_body = urllib.parse.urlencode({"chat_id": "8096968754", "message": original}).encode()
         result = urllib.parse.parse_qs(
             (await proxy._filter_outbound(form_body, "application/x-www-form-urlencoded")).decode()
