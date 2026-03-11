@@ -661,6 +661,40 @@ class TestOutboundPipelineIntegration:
         assert "/healthcheck" in text.lower()
 
     @pytest.mark.asyncio
+    async def test_memory_provider_error_is_rewritten_for_form_caption_field(self):
+        """Memory provider runtime errors should rewrite when form payload uses caption field."""
+        proxy = TelegramAPIProxy(sanitizer=_make_sanitizer())
+        form_body = urllib.parse.urlencode(
+            {
+                "chat_id": "8096968754",
+                "caption": "Memory search unavailable: embedding/provider error while refreshing index.",
+            }
+        ).encode()
+        result = urllib.parse.parse_qs(
+            (await proxy._filter_outbound(form_body, "application/x-www-form-urlencoded")).decode()
+        )
+        text = result.get("caption", [""])[0]
+        assert "embedding/provider error" not in text.lower()
+        assert "memory search is unavailable" in text.lower()
+
+    @pytest.mark.asyncio
+    async def test_healthcheck_skill_error_is_rewritten_for_form_content_field(self):
+        """Healthcheck sandbox SKILL.md errors should rewrite when form payload uses content field."""
+        proxy = TelegramAPIProxy(sanitizer=_make_sanitizer())
+        form_body = urllib.parse.urlencode(
+            {
+                "chat_id": "8096968754",
+                "content": "Cannot access healthcheck skill.md due to sandbox restrictions.",
+            }
+        ).encode()
+        result = urllib.parse.parse_qs(
+            (await proxy._filter_outbound(form_body, "application/x-www-form-urlencoded")).decode()
+        )
+        text = result.get("content", [""])[0]
+        assert "skill.md" not in text.lower()
+        assert "/healthcheck" in text.lower()
+
+    @pytest.mark.asyncio
     async def test_ollama_auth_required_error_is_sanitized(self):
         """Ollama auth errors should map to concise operator guidance."""
         proxy = TelegramAPIProxy(sanitizer=_make_sanitizer())
