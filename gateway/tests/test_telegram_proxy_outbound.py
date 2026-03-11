@@ -808,6 +808,47 @@ class TestOutboundPipelineIntegration:
         assert "approval request queued" not in second["text"].lower()
 
     @pytest.mark.asyncio
+    async def test_raw_web_fetch_json_approval_cooldown_is_scheme_port_scoped(self, monkeypatch):
+        """Cooldown dedupe must not suppress approvals when scheme/port risk changes."""
+        calls = {"count": 0}
+
+        class FakeEgress:
+            async def check_async(self, **_kwargs):
+                calls["count"] += 1
+                return SimpleNamespace(action="deny")
+
+        from gateway.ingest_api import state as state_module
+
+        monkeypatch.setattr(
+            state_module,
+            "app_state",
+            SimpleNamespace(egress_filter=FakeEgress()),
+        )
+
+        proxy = TelegramAPIProxy(sanitizer=_make_sanitizer())
+        proxy._web_fetch_approval_cooldown_seconds = 600.0
+        https_body = json.dumps(
+            {
+                "chat_id": "8096968754",
+                "text": "{\"name\":\"web_fetch\",\"arguments\":{\"url\":\"https://weather.com/weather/today\"}}",
+            }
+        ).encode()
+        http_body = json.dumps(
+            {
+                "chat_id": "8096968754",
+                "text": "{\"name\":\"web_fetch\",\"arguments\":{\"url\":\"http://weather.com/weather/today\"}}",
+            }
+        ).encode()
+
+        first = json.loads(await proxy._filter_outbound(https_body, "application/json"))
+        second = json.loads(await proxy._filter_outbound(http_body, "application/json"))
+        await asyncio.sleep(0)
+
+        assert calls["count"] == 2
+        assert "approval request queued" in first["text"].lower()
+        assert "approval request queued" in second["text"].lower()
+
+    @pytest.mark.asyncio
     async def test_raw_web_fetch_json_approval_normalizes_leading_dot_domain(self, monkeypatch):
         """Malformed host with leading dot should still queue approval for normalized domain."""
         called = {"value": False}
