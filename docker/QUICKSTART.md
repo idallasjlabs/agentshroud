@@ -21,7 +21,7 @@
 cd /Users/ijefferson.admin/Development/agentshroud/docker
 
 # Create API key file
-echo "sk-ant-api03-YOUR_KEY_HERE" > secrets/anthropic_api_key.txt
+echo "YOUR_ANTHROPIC_API_KEY" > secrets/anthropic_api_key.txt
 
 # Set secure permissions
 chmod 600 secrets/anthropic_api_key.txt

@@ -55,7 +55,7 @@ nano .env
 
 Add or update:
 ```bash
-GITHUB_PERSONAL_ACCESS_TOKEN=ghp_your_token_here
+GITHUB_PERSONAL_ACCESS_TOKEN=YOUR_GITHUB_PERSONAL_ACCESS_TOKEN
 ```
 
 Save and exit (Ctrl+O, Enter, Ctrl+X)

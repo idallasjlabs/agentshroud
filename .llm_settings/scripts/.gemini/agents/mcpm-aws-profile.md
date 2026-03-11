@@ -88,15 +88,15 @@ You'll be prompted for:
 ```ini
 [default]
 aws_access_key_id = AKIAIOSFODNN7EXAMPLE
-aws_secret_access_key = wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY
+aws_secret_access_key = YOUR_AWS_SECRET_ACCESS_KEY
 
 [production]
-aws_access_key_id = AKIAI44QH8DHBEXAMPLE
-aws_secret_access_key = je7MtGbClwBF/2Zp9Utk/h3yCo8nvbEXAMPLEKEY
+aws_access_key_id = YOUR_AWS_ACCESS_KEY_ID
+aws_secret_access_key = YOUR_AWS_SECRET_ACCESS_KEY
 
 [development]
-aws_access_key_id = AKIAI44QH8DHBEXAMPLE
-aws_secret_access_key = je7MtGbClwBF/2Zp9Utk/h3yCo8nvbEXAMPLEKEY
+aws_access_key_id = YOUR_AWS_ACCESS_KEY_ID
+aws_secret_access_key = YOUR_AWS_SECRET_ACCESS_KEY
 ```
 
 **Edit `~/.aws/config`:**
