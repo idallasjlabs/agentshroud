@@ -242,6 +242,34 @@ _telegram_send() {
         >/dev/null 2>&1
 }
 
+_telegram_get_me_ready() {
+    local token
+    token="$(_telegram_bot_token)"
+    if [ -z "$token" ]; then
+        return 1
+    fi
+    curl -sf --max-time 8 -X POST "${_GATEWAY_TELEGRAM_BASE}/bot${token}/getMe" \
+        -H "Content-Type: application/json" \
+        -H "Authorization: Bearer ${GATEWAY_AUTH_TOKEN:-}" \
+        -H "X-AgentShroud-System: 1" \
+        >/dev/null 2>&1
+}
+
+_model_runtime_ready() {
+    if [ "${AGENTSHROUD_MODEL_MODE:-cloud}" != "local" ]; then
+        return 0
+    fi
+    local model_name="${AGENTSHROUD_LOCAL_MODEL:-}"
+    if [ -z "${model_name}" ]; then
+        model_name="${AGENTSHROUD_LOCAL_MODEL_REF#ollama/}"
+    fi
+    if [ -z "${model_name}" ]; then
+        return 1
+    fi
+    curl -sf --max-time 8 "${OLLAMA_BASE_URL:-http://gateway:8080/v1}/../api/tags" \
+        | grep -F "\"name\":\"${model_name}\"" >/dev/null 2>&1
+}
+
 # Instance identity for notifications
 _INSTANCE_LABEL="${INSTANCE_NAME:-$(hostname -s)}"
 _BOT_NAME="${OPENCLAW_BOT_NAME:-agentshroud-bot}"
@@ -271,19 +299,8 @@ trap '
     kill $OPENCLAW_PID 2>/dev/null
 ' TERM INT
 
-# Wait for gateway to be ready, then send Telegram startup notification
+# Wait for gateway/model/telegram readiness, then send startup notifications
 (
-    # Poll health endpoint — up to 60s
-    for i in $(seq 1 30); do
-        if curl -sf http://localhost:18789/api/health >/dev/null 2>&1; then
-            break
-        fi
-        sleep 2
-    done
-
-    # Give Telegram provider time to connect after gateway is ready
-    sleep 5
-
     now_epoch="$(date +%s)"
     last_notice_epoch=""
     if [ -f "${_STARTUP_NOTICE_STAMP}" ]; then
@@ -296,14 +313,37 @@ trap '
             should_notify="no"
         fi
     fi
-    if [ "${should_notify}" = "yes" ]; then
-        mkdir -p "$(dirname "${_STARTUP_NOTICE_STAMP}")" 2>/dev/null || true
-        printf '%s\n' "${now_epoch}" > "${_STARTUP_NOTICE_STAMP}" 2>/dev/null || true
+    if [ "${should_notify}" != "yes" ]; then
+        echo "[startup] Startup notification suppressed (cooldown active)"
+        exit 0
+    fi
+
+    mkdir -p "$(dirname "${_STARTUP_NOTICE_STAMP}")" 2>/dev/null || true
+    printf '%s\n' "${now_epoch}" > "${_STARTUP_NOTICE_STAMP}" 2>/dev/null || true
+    _telegram_send "🟡 AgentShroud starting" \
+        && echo "[startup] ✓ Sent Telegram starting notification" \
+        || echo "[startup] ⚠ Could not send Telegram starting notification"
+
+    # Poll OpenClaw HTTP endpoint and Telegram/model readiness — up to 120s
+    ready="no"
+    for _i in $(seq 1 60); do
+        if curl -sf http://localhost:18789/ >/dev/null 2>&1 \
+            && _telegram_get_me_ready \
+            && _model_runtime_ready; then
+            ready="yes"
+            break
+        fi
+        sleep 2
+    done
+
+    if [ "${ready}" = "yes" ]; then
         _telegram_send "🛡️ AgentShroud online" \
             && echo "[startup] ✓ Sent Telegram startup notification" \
             || echo "[startup] ⚠ Could not send Telegram startup notification"
     else
-        echo "[startup] Startup notification suppressed (cooldown active)"
+        _telegram_send "🟠 AgentShroud starting (readiness delayed)" \
+            && echo "[startup] ⚠ Sent delayed startup notification" \
+            || echo "[startup] ⚠ Could not send delayed startup notification"
     fi
 ) &
 

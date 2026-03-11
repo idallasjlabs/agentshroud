@@ -91,6 +91,10 @@ class TelegramAPIProxy:
             os.environ.get("AGENTSHROUD_NO_REPLY_NOTICE_COOLDOWN_SECONDS", "15.0")
         )
         self._recent_no_reply_notice_until: dict[str, float] = {}
+        self._handled_local_command_update_ids: dict[str, float] = {}
+        self._local_command_dedupe_ttl_seconds = float(
+            os.environ.get("AGENTSHROUD_LOCAL_COMMAND_DEDUPE_TTL_SECONDS", "600.0")
+        )
 
         # Track which collaborator user IDs have already received the disclosure notice
         # this session. Persisted in-memory only — resets on gateway restart (acceptable).
@@ -1012,8 +1016,25 @@ class TelegramAPIProxy:
                 cmd = text.strip().split()[0].lower() if text.strip() else ""
                 cmd_base = cmd.split("@")[0]
                 if cmd_base in _LOCAL_HEALTHCHECK_COMMANDS:
-                    await self._send_local_healthcheck_notice(chat_id)
-                    logger.info("Handled local healthcheck command for user %s", user_id)
+                    update_id = update.get("update_id")
+                    dedupe_key = f"{chat_id}:{update_id}:{cmd_base}"
+                    now = time.time()
+                    if len(self._handled_local_command_update_ids) > 4096:
+                        self._handled_local_command_update_ids = {
+                            k: v
+                            for k, v in self._handled_local_command_update_ids.items()
+                            if v > now
+                        }
+                    if self._handled_local_command_update_ids.get(dedupe_key, 0.0) <= now:
+                        await self._send_local_healthcheck_notice(chat_id)
+                        self._handled_local_command_update_ids[dedupe_key] = (
+                            now + self._local_command_dedupe_ttl_seconds
+                        )
+                        logger.info(
+                            "Handled local healthcheck command for user %s (update_id=%s)",
+                            user_id,
+                            update_id,
+                        )
                     # Drop update so bot runtime never sees this command.
                     continue
 
