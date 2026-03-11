@@ -2312,6 +2312,10 @@ class TestRuntimeRewriteHelpers:
         assert rewritten is not None
         assert "/healthcheck" in rewritten.lower()
 
+    def test_rewrite_known_runtime_errors_handles_non_string_input(self):
+        assert TelegramAPIProxy._rewrite_known_runtime_errors(None) is None
+        assert TelegramAPIProxy._rewrite_known_runtime_errors({"text": "x"}) is None
+
 
 class TestEgressTargetExtraction:
     """Unit tests for outbound target extraction helper used by egress preflight."""
