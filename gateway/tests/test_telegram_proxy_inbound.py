@@ -768,6 +768,40 @@ class TestInboundPipelineOnGetUpdates:
         assert calls["count"] == 0
 
     @pytest.mark.asyncio
+    async def test_non_owner_non_standard_web_port_does_not_queue_egress_preflight(self, monkeypatch):
+        """web_fetch preflight approvals should only allow standard web ports."""
+        from gateway.ingest_api import state as state_module
+
+        calls = {"count": 0}
+
+        class FakeEgress:
+            async def check_async(self, **_kwargs):
+                calls["count"] += 1
+                return True
+
+        monkeypatch.setattr(
+            state_module,
+            "app_state",
+            SimpleNamespace(egress_filter=FakeEgress()),
+        )
+
+        proxy = TelegramAPIProxy(pipeline=PassthroughPipeline())
+        proxy._rbac = FakeRBAC(owner_id="8096968754", collaborators=["7614658040"])
+        proxy._bot_token = ""
+
+        response = _wrap_response(
+            _make_update(
+                "check https://weather.com:8443/status",
+                user_id="7614658040",
+                chat_id=7614658040,
+            )
+        )
+        await proxy._filter_inbound_updates(response)
+        await asyncio.sleep(0)
+
+        assert calls["count"] == 0
+
+    @pytest.mark.asyncio
     async def test_non_owner_email_only_text_does_not_queue_egress_preflight(self, monkeypatch):
         """Email domains should not be mistaken for outbound web targets."""
         from gateway.ingest_api import state as state_module
