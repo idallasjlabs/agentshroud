@@ -236,6 +236,8 @@ class TelegramAPIProxy:
                 return False
             if len(label) > 63:
                 return False
+            if label.startswith("xn--"):
+                return False
             if label.startswith("-") or label.endswith("-"):
                 return False
             if not re.fullmatch(r"[a-z0-9-]+", label):
