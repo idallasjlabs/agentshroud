@@ -180,7 +180,7 @@ class TelegramAPIProxy:
             return None
         url_match = re.search(r"https?://[^\s<>()\"']+", text, flags=re.IGNORECASE)
         if url_match:
-            url = url_match.group(0).rstrip(".,;:!?)]}>'\"")
+            url = url_match.group(0).rstrip(".,;:!?)]}>'\"`")
             return url or None
         relative_match = re.search(
             r"\b//(?:[a-z0-9](?:[a-z0-9-]{0,61}[a-z0-9])?\.)+[a-z]{2,63}(?:/[^\s<>()\"']*)?",
@@ -188,7 +188,7 @@ class TelegramAPIProxy:
             flags=re.IGNORECASE,
         )
         if relative_match:
-            candidate = relative_match.group(0).rstrip(".,;:!?)]}>'\"")
+            candidate = relative_match.group(0).rstrip(".,;:!?)]}>'\"`")
             if candidate:
                 return f"https:{candidate}"
         # If an explicit URL scheme is present but not HTTP(S), do not attempt
@@ -210,7 +210,7 @@ class TelegramAPIProxy:
         )
         if not domain_match:
             return None
-        candidate = domain_match.group(0).rstrip(".,;:!?)]}>'\"")
+        candidate = domain_match.group(0).rstrip(".,;:!?)]}>'\"`")
         if not candidate:
             return None
         return f"https://{candidate}"
@@ -676,7 +676,7 @@ class TelegramAPIProxy:
 
     async def _trigger_web_fetch_approval(self, chat_id: str, tool_args: dict[str, Any]) -> bool:
         """Queue an interactive egress approval when raw web_fetch JSON leaks."""
-        url = normalize_input(str((tool_args or {}).get("url", ""))).strip().strip("'\"<>[]{}()")
+        url = normalize_input(str((tool_args or {}).get("url", ""))).strip().strip("'\"`<>[]{}()")
         if not url:
             return False
         if len(url) > 2048:
