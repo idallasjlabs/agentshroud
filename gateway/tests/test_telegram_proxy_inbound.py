@@ -763,6 +763,74 @@ class TestInboundPipelineOnGetUpdates:
         assert "healthcheck" in captured["payload"]["text"].lower()
 
     @pytest.mark.asyncio
+    async def test_self_diagnostic_command_is_handled_locally_for_owner(self, monkeypatch):
+        """Owner /self-diagnostic should be handled locally by gateway."""
+        from gateway.ingest_api import state as state_module
+
+        captured: dict[str, Any] = {}
+
+        class DummyResponse:
+            pass
+
+        def fake_urlopen(req, timeout=None, context=None):
+            captured["payload"] = json.loads(req.data.decode())
+            return DummyResponse()
+
+        monkeypatch.setattr(urllib.request, "urlopen", fake_urlopen)
+        monkeypatch.setattr(
+            state_module,
+            "app_state",
+            SimpleNamespace(collaborator_tracker=None),
+        )
+
+        owner_id = "8096968754"
+        proxy = TelegramAPIProxy(pipeline=PassthroughPipeline())
+        proxy._rbac = FakeRBAC(owner_id=owner_id, collaborators=["7614658040"])
+        proxy._bot_token = "test-token"
+
+        response = _wrap_response(
+            _make_update("/self-diagnostic", user_id=owner_id, chat_id=int(owner_id))
+        )
+        result = await proxy._filter_inbound_updates(response)
+
+        assert result["result"] == []
+        assert "healthcheck" in captured["payload"]["text"].lower()
+
+    @pytest.mark.asyncio
+    async def test_self_diagnostic_with_punctuation_is_handled_locally_for_collaborator(self, monkeypatch):
+        """Collaborator self-diagnostic punctuation variant should still be local-handled."""
+        from gateway.ingest_api import state as state_module
+
+        captured: dict[str, Any] = {}
+
+        class DummyResponse:
+            pass
+
+        def fake_urlopen(req, timeout=None, context=None):
+            captured["payload"] = json.loads(req.data.decode())
+            return DummyResponse()
+
+        monkeypatch.setattr(urllib.request, "urlopen", fake_urlopen)
+        monkeypatch.setattr(
+            state_module,
+            "app_state",
+            SimpleNamespace(collaborator_tracker=None),
+        )
+
+        collaborator_id = "7614658040"
+        proxy = TelegramAPIProxy(pipeline=PassthroughPipeline())
+        proxy._rbac = FakeRBAC(owner_id="8096968754", collaborators=[collaborator_id])
+        proxy._bot_token = "test-token"
+
+        response = _wrap_response(
+            _make_update("self-diagnostic?", user_id=collaborator_id, chat_id=int(collaborator_id))
+        )
+        result = await proxy._filter_inbound_updates(response)
+
+        assert result["result"] == []
+        assert "healthcheck" in captured["payload"]["text"].lower()
+
+    @pytest.mark.asyncio
     async def test_healthcheck_local_notice_is_deduped_per_update(self, monkeypatch):
         """Same Telegram update_id should not trigger repeated local notices."""
         from gateway.ingest_api import state as state_module
