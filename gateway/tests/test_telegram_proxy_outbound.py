@@ -700,6 +700,28 @@ class TestOutboundPipelineIntegration:
         assert result.get("text", [""])[0] == original
 
     @pytest.mark.asyncio
+    async def test_skill_sandbox_message_without_healthcheck_is_not_rewritten_for_form_caption(self):
+        """Form caption should keep non-healthcheck SKILL.md sandbox text unchanged."""
+        proxy = TelegramAPIProxy(sanitizer=_make_sanitizer())
+        original = "Cannot access profile skill.md due to sandbox restrictions."
+        form_body = urllib.parse.urlencode({"chat_id": "8096968754", "caption": original}).encode()
+        result = urllib.parse.parse_qs(
+            (await proxy._filter_outbound(form_body, "application/x-www-form-urlencoded")).decode()
+        )
+        assert result.get("caption", [""])[0] == original
+
+    @pytest.mark.asyncio
+    async def test_healthcheck_sandbox_message_without_skill_md_is_not_rewritten_for_form_content(self):
+        """Form content should keep healthcheck sandbox text unchanged when SKILL.md marker is absent."""
+        proxy = TelegramAPIProxy(sanitizer=_make_sanitizer())
+        original = "Cannot access healthcheck diagnostics due to sandbox restrictions."
+        form_body = urllib.parse.urlencode({"chat_id": "8096968754", "content": original}).encode()
+        result = urllib.parse.parse_qs(
+            (await proxy._filter_outbound(form_body, "application/x-www-form-urlencoded")).decode()
+        )
+        assert result.get("content", [""])[0] == original
+
+    @pytest.mark.asyncio
     async def test_healthcheck_skill_sandbox_error_is_rewritten_for_form_payload(self):
         """Healthcheck SKILL.md sandbox errors should be rewritten for urlencoded payloads."""
         proxy = TelegramAPIProxy(sanitizer=_make_sanitizer())
