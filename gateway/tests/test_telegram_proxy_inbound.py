@@ -2647,3 +2647,11 @@ class TestCommandTokenNormalization:
     def test_normalize_command_token_strips_leading_noise_before_symbol_filter(self):
         token = TelegramAPIProxy._normalize_command_token("  \n\t/skill???")
         assert token == "/skill"
+
+    def test_normalize_command_token_keeps_allowed_chars_only(self):
+        token = TelegramAPIProxy._normalize_command_token("/skill$%^&*()")
+        assert token == "/skill"
+
+    def test_normalize_command_token_preserves_hyphen_and_underscore(self):
+        token = TelegramAPIProxy._normalize_command_token("/self-diagnostic_test")
+        assert token == "/self-diagnostic_test"
