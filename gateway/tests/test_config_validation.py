@@ -278,6 +278,16 @@ class TestConfigValidation:
         assert "ready=\"no\"" in script
         assert "for _i in $(seq 1 60)" in script
 
+    def test_openclaw_start_script_uses_two_phase_startup_notifications(self):
+        """OpenClaw start script should send starting first, then online after readiness checks."""
+        script = (REPO_ROOT / "docker" / "bots" / "openclaw" / "start.sh").read_text()
+        assert '🟡 AgentShroud starting' in script
+        assert '🛡️ AgentShroud online' in script
+        assert '🟠 AgentShroud starting (readiness delayed)' in script
+        assert "_telegram_get_me_ready" in script
+        assert "_model_runtime_ready" in script
+        assert "for _i in $(seq 1 60)" in script
+
     def test_start_control_center_script_uses_repo_relative_exec(self):
         """Control center launcher should be robust to current working directory."""
         script = (REPO_ROOT / "scripts" / "start-control-center").read_text()
