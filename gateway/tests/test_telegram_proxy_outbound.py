@@ -2412,3 +2412,10 @@ class TestDomainValidationHelper:
     def test_is_valid_domain_name_rejects_leading_or_trailing_dot(self):
         assert TelegramAPIProxy._is_valid_domain_name(".weather.com") is False
         assert TelegramAPIProxy._is_valid_domain_name("weather.com.") is False
+
+    def test_is_valid_domain_name_accepts_uppercase_input_via_normalization(self):
+        assert TelegramAPIProxy._is_valid_domain_name("WEATHER.COM") is True
+
+    def test_is_valid_domain_name_rejects_empty_or_whitespace(self):
+        assert TelegramAPIProxy._is_valid_domain_name("") is False
+        assert TelegramAPIProxy._is_valid_domain_name("   ") is False
