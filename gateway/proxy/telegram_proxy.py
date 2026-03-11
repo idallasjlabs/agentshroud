@@ -226,6 +226,9 @@ class TelegramAPIProxy:
         labels = raw.split(".")
         if len(labels) < 2:
             return False
+        tld = labels[-1]
+        if len(tld) < 2 or len(tld) > 63 or not re.fullmatch(r"[a-z]+", tld):
+            return False
         for label in labels:
             if not label:
                 return False
