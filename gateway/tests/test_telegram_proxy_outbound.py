@@ -1186,6 +1186,40 @@ class TestOutboundPipelineIntegration:
         assert "approval request queued" not in result["text"].lower()
 
     @pytest.mark.asyncio
+    async def test_raw_web_fetch_json_overlong_url_does_not_queue_approval(self, monkeypatch):
+        """Overly long URLs should be rejected before approval queueing."""
+        calls = {"count": 0}
+
+        class FakeEgress:
+            async def check_async(self, **_kwargs):
+                calls["count"] += 1
+                return SimpleNamespace(action="deny")
+
+        from gateway.ingest_api import state as state_module
+
+        monkeypatch.setattr(
+            state_module,
+            "app_state",
+            SimpleNamespace(egress_filter=FakeEgress()),
+        )
+        proxy = TelegramAPIProxy(sanitizer=_make_sanitizer())
+        long_path = "a" * 2100
+        body = json.dumps(
+            {
+                "chat_id": "8096968754",
+                "text": json.dumps(
+                    {"name": "web_fetch", "arguments": {"url": f"https://weather.com/{long_path}"}}
+                ),
+            }
+        ).encode()
+
+        result = json.loads(await proxy._filter_outbound(body, "application/json"))
+        await asyncio.sleep(0)
+
+        assert calls["count"] == 0
+        assert "approval request queued" not in result["text"].lower()
+
+    @pytest.mark.asyncio
     async def test_raw_web_fetch_json_uppercase_http_scheme_queues_port_80_approval(self, monkeypatch):
         """Uppercase HTTP schemes should normalize and queue on port 80."""
         called = {"value": False}
