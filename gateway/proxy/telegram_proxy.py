@@ -725,11 +725,6 @@ class TelegramAPIProxy:
             return False
         except ValueError:
             pass
-        approval_key = ((chat_id or "unknown"), domain)
-        now = time.time()
-        blocked_until = self._recent_web_fetch_approval_until.get(approval_key, 0.0)
-        if blocked_until > now:
-            return False
         try:
             from gateway.ingest_api.state import app_state as _app_state
             _egress_filter = getattr(_app_state, "egress_filter", None)
@@ -737,6 +732,11 @@ class TelegramAPIProxy:
                 return False
             _port = parsed.port or (80 if scheme == "http" else 443)
             if _port not in {80, 443}:
+                return False
+            approval_key = ((chat_id or "unknown"), scheme, domain, _port)
+            now = time.time()
+            blocked_until = self._recent_web_fetch_approval_until.get(approval_key, 0.0)
+            if blocked_until > now:
                 return False
             _agent_id = f"telegram_web_fetch:{chat_id}" if chat_id else "telegram_web_fetch"
             asyncio.create_task(
