@@ -2368,3 +2368,10 @@ class TestDomainValidationHelper:
         overlong = ".".join([label, label, label, label, "com"])
         assert len(overlong) > 253
         assert TelegramAPIProxy._is_valid_domain_name(overlong) is False
+
+    def test_is_valid_domain_name_rejects_overlong_label(self):
+        bad_label = "a" * 64
+        assert TelegramAPIProxy._is_valid_domain_name(f"{bad_label}.com") is False
+
+    def test_is_valid_domain_name_rejects_underscore_label(self):
+        assert TelegramAPIProxy._is_valid_domain_name("bad_name.example.com") is False
