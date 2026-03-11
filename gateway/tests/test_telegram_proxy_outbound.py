@@ -509,6 +509,36 @@ class TestOutboundPipelineIntegration:
         assert "/healthcheck" in text.lower()
 
     @pytest.mark.asyncio
+    async def test_memory_provider_error_is_rewritten_for_json_message_field(self):
+        """Memory provider runtime errors should rewrite when payload uses message field."""
+        proxy = TelegramAPIProxy(sanitizer=_make_sanitizer())
+        body = json.dumps(
+            {
+                "chat_id": "8096968754",
+                "message": "Memory search unavailable: embedding/provider error while refreshing index.",
+            }
+        ).encode()
+        result = json.loads(await proxy._filter_outbound(body, "application/json"))
+        text = result.get("message", "")
+        assert "embedding/provider error" not in text.lower()
+        assert "memory search is unavailable" in text.lower()
+
+    @pytest.mark.asyncio
+    async def test_healthcheck_skill_error_is_rewritten_for_json_content_field(self):
+        """Healthcheck sandbox SKILL.md errors should rewrite when payload uses content field."""
+        proxy = TelegramAPIProxy(sanitizer=_make_sanitizer())
+        body = json.dumps(
+            {
+                "chat_id": "8096968754",
+                "content": "Cannot access healthcheck skill.md due to sandbox restrictions.",
+            }
+        ).encode()
+        result = json.loads(await proxy._filter_outbound(body, "application/json"))
+        text = result.get("content", "")
+        assert "skill.md" not in text.lower()
+        assert "/healthcheck" in text.lower()
+
+    @pytest.mark.asyncio
     async def test_memory_provider_error_is_rewritten_for_form_payload(self):
         """Embedding/provider memory errors should also be rewritten for urlencoded payloads."""
         proxy = TelegramAPIProxy(sanitizer=_make_sanitizer())
