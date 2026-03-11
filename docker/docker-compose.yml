@@ -113,7 +113,7 @@ services:
       - agentshroud-ssh:/home/node/.ssh
       - agentshroud-browsers:/home/node/.cache/ms-playwright
       - ../branding:/app/branding:ro
-      - ../memory-backup:/app/memory-backup
+      - ../memory-backups:/app/memory-backups
     secrets:
       - gateway_password
       - telegram_bot_token

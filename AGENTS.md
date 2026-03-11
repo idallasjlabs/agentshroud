@@ -186,7 +186,7 @@ Codex CLI uses TOML configuration with context loading and MCP servers.
 - Provides workflow guidance
 
 **Agent Library:** `.codex/agents/`
-- 38 agent `.md` files (one per skill in the Claude Code skill catalog)
+- 54 skill `.md` files (one per skill in the Claude Code skill catalog) + 52 agent `.md` files
 - These are **reference files**, not natively loaded by Codex CLI
 - To use: paste the contents of the relevant `.codex/agents/<name>.md` into your prompt, or reference the skill by name and ask Codex to follow those instructions
 
@@ -225,4 +225,4 @@ When configured, you have access to MCP servers for external services:
 **Note:** MCP servers are configured in `.codex/config.toml` under `[mcp_servers]`.
 Use these for read-only queries during validation.
 
-See `llm_settings/docs/MCP_README.md` for setup instructions.
+See `.llm_settings/docs/MCP_README.md` for setup instructions.

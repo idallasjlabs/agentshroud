@@ -2,12 +2,21 @@
 # AgentShroud .gitignore
 # =============================================================================
 
+# Note:
+# - Keep `docker/secrets/*.example` tracked so collaborators have secret templates
+# - Keep `memory-backups/backup.log` tracked while ignoring backup tarball artifacts
+
 # =============================================================================
 # SECRETS & CREDENTIALS (CRITICAL)
 # =============================================================================
 
-# Docker secrets directory (contains all runtime secrets)
+# Docker secrets directory (contains runtime secrets)
 docker/secrets/
+!docker/secrets/
+docker/secrets/*
+!docker/secrets/README.md
+!docker/secrets/setup-secrets.sh
+!docker/secrets/*.example
 
 # Environment variables
 .env
@@ -17,6 +26,7 @@ docker/secrets/
 .llm_env.*
 llm_settings/env/.llm_env
 llm_settings/mcp-servers/**/.env
+blueteam_assesment/.blueteam_env
 
 # SSH & GPG keys
 .ssh/
@@ -179,9 +189,6 @@ temp/
 # PROJECT SPECIFIC
 # =============================================================================
 
-# Bot memory backups (synced separately)
-memory-backup/
-
 # Database files
 *.db
 *.sqlite
@@ -189,8 +196,12 @@ memory-backup/
 
 # History files that may contain credentials
 history.env
+/secrets/
 
-# Large data files (adjust as needed for your data lakehouse work)
+# Memory backup archives (keep directory/logs, ignore tarballs)
+memory-backups/*.tar.gz
+
+# Large data files (adjust as needed)
 *.csv.gz
 *.parquet.gz
 
@@ -201,6 +212,7 @@ data/processed/
 # Logs
 *.log
 logs/
+!memory-backups/backup.log
 
 # Lock files
 *.lock

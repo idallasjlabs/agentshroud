@@ -99,4 +99,4 @@ Open a [Discussion](https://github.com/idallasj/agentshroud/discussions) or file
 
 AgentShroud™ is a trademark of Isaiah Dallas Jefferson, Jr., first used in February 2026. Protected by common law trademark rights. Federal trademark registration pending. Unauthorized reproduction, distribution, or use of the AgentShroud name or brand is strictly prohibited.
 © 2026 Isaiah Dallas Jefferson, Jr.. All rights reserved.
-See [TRADEMARK.md](TRADEMARK.md).
+See [docs/project/legal/TRADEMARK.md](docs/project/legal/TRADEMARK.md).

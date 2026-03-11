@@ -11,7 +11,7 @@
 
 | Change | Files | Impact |
 |--------|-------|--------|
-| **IEEE-format paper added** | `agentshroud-ieee-paper.md` (371 lines) | Comprehensive academic paper documenting architecture, STPA-Sec analysis, and v0.8.0 remediation |
+| **IEEE-format paper added** | `docs/papers/agentshroud-ieee-paper.md` (371 lines) | Comprehensive academic paper documenting architecture, STPA-Sec analysis, and v0.8.0 remediation |
 | **Owner bypass for false positives** | `gateway/ingest_api/middleware.py` | ContextGuard and FileSandbox skip scanning for `OWNER_USER_IDS` |
 | **Telegram SDK patch removed** | `Dockerfile.agentshroud`, `docker-compose.yml`, `patch-telegram-sdk.sh` (deleted) | Telegram API no longer routed through gateway proxy |
 | **Credential references fixed** | `1password-skill.sh`, `get-credential.sh`, `cron/jobs.json`, `main.py` | Vault name "Agent Shroud Bot Credentials" → "AgentShroud Bot Credentials", corrected item IDs and field names |
