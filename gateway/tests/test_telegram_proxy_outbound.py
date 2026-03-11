@@ -8,6 +8,7 @@ Created: 2026-03-08 — Fixes C-0 (outbound pipeline bypass)
 import json
 import asyncio
 import io
+import time
 import urllib.parse
 import urllib.error
 import urllib.request
@@ -847,6 +848,45 @@ class TestOutboundPipelineIntegration:
         assert calls["count"] == 2
         assert "approval request queued" in first["text"].lower()
         assert "approval request queued" in second["text"].lower()
+
+    @pytest.mark.asyncio
+    async def test_raw_web_fetch_json_approval_prunes_expired_cooldown_entries(self, monkeypatch):
+        """Cooldown cache should prune expired entries when size exceeds threshold."""
+        calls = {"count": 0}
+
+        class FakeEgress:
+            async def check_async(self, **_kwargs):
+                calls["count"] += 1
+                return SimpleNamespace(action="deny")
+
+        from gateway.ingest_api import state as state_module
+
+        monkeypatch.setattr(
+            state_module,
+            "app_state",
+            SimpleNamespace(egress_filter=FakeEgress()),
+        )
+
+        proxy = TelegramAPIProxy(sanitizer=_make_sanitizer())
+        now = time.time()
+        proxy._recent_web_fetch_approval_until = {
+            (f"chat-{i}", "https", f"example{i}.com", 443): now - 10 for i in range(1025)
+        }
+        proxy._recent_web_fetch_approval_until[("live", "https", "live.example.com", 443)] = now + 600
+        body = json.dumps(
+            {
+                "chat_id": "8096968754",
+                "text": "{\"name\":\"web_fetch\",\"arguments\":{\"url\":\"https://weather.com/weather/today\"}}",
+            }
+        ).encode()
+
+        result = json.loads(await proxy._filter_outbound(body, "application/json"))
+        await asyncio.sleep(0)
+
+        assert calls["count"] == 1
+        assert "approval request queued" in result["text"].lower()
+        assert ("live", "https", "live.example.com", 443) in proxy._recent_web_fetch_approval_until
+        assert len(proxy._recent_web_fetch_approval_until) == 2
 
     @pytest.mark.asyncio
     async def test_raw_web_fetch_json_approval_normalizes_leading_dot_domain(self, monkeypatch):
