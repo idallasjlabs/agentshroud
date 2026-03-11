@@ -49,6 +49,7 @@ services:
       - LOG_LEVEL=INFO
       - PYTHONDONTWRITEBYTECODE=1
       - PYTHONPYCACHEPREFIX=/tmp/pycache
+      - AGENTSHROUD_EGRESS_APPROVAL_ALL=false
       - GATEWAY_AUTH_TOKEN_FILE=/run/secrets/gateway_password
       - OP_SERVICE_ACCOUNT_TOKEN_FILE=/run/secrets/1password_service_account
       - PROXY_ALLOWED_NETWORKS=10.254.111.0/24,10.254.112.0/24
@@ -130,7 +131,7 @@ services:
       - TELEGRAM_BOT_TOKEN_FILE=/run/secrets/telegram_bot_token
       - HTTP_PROXY=http://gateway:8181
       - HTTPS_PROXY=http://gateway:8181
-      - NO_PROXY=gateway,localhost,127.0.0.1,api.anthropic.com,api.openai.com,generativelanguage.googleapis.com
+      - NO_PROXY=gateway,localhost,127.0.0.1
       - GATEWAY_OP_PROXY_URL=http://gateway:8080
       - ANTHROPIC_BASE_URL=http://gateway:8080
       - OPENAI_BASE_URL=http://gateway:8080

@@ -39,6 +39,8 @@ class TestEgressApprovalQueue:
         # Known safe domains should be green
         assert approval_queue._assess_risk("api.openai.com", 443) == RiskLevel.GREEN
         assert approval_queue._assess_risk("api.anthropic.com", 80) == RiskLevel.GREEN
+        assert approval_queue._assess_risk("generativelanguage.googleapis.com", 443) == RiskLevel.GREEN
+        assert approval_queue._assess_risk("oauth2.googleapis.com", 443) == RiskLevel.GREEN
         assert approval_queue._assess_risk("github.com", 443) == RiskLevel.GREEN
         assert approval_queue._assess_risk("my.1password.com", 443) == RiskLevel.GREEN
         

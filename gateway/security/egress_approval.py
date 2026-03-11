@@ -80,6 +80,8 @@ class EgressApprovalQueue:
         "icloud.com",
         "api.icloud.com",
         "googleapis.com",
+        "generativelanguage.googleapis.com",
+        "oauth2.googleapis.com",
         "api.google.com",
         "api.slack.com",
         "api.telegram.org",
