@@ -47,7 +47,7 @@ docker/secrets/README.md
 
 ### Test 2: Check README Content
 ```bash
-$ grep "sk-ant" docker/secrets/README.md
+$ grep "YOUR_ANTHROPIC" docker/secrets/README.md
 echo "oauth-token-placeholder" > docker/secrets/anthropic_oauth_token.txt
 ```
 ✅ PASS: Only placeholder examples (not real keys)

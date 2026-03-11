@@ -15,7 +15,7 @@
 **TL;DR**:
 ```bash
 # 1. Add your Anthropic API key
-echo "sk-ant-api03-YOUR_KEY" > secrets/anthropic_api_key.txt
+echo "YOUR_ANTHROPIC_API_KEY" > secrets/anthropic_api_key.txt
 chmod 600 secrets/anthropic_api_key.txt
 
 # 2. Start the stack
