@@ -660,6 +660,15 @@ class TestOutboundPipelineIntegration:
         assert result["text"] == original
 
     @pytest.mark.asyncio
+    async def test_memory_error_without_error_keyword_is_not_rewritten_for_json_message_field(self):
+        """JSON message field with embedding/provider hints but no error keyword should remain unchanged."""
+        proxy = TelegramAPIProxy(sanitizer=_make_sanitizer())
+        original = "Memory search unavailable: embedding-provider unavailable during index bootstrap."
+        body = json.dumps({"chat_id": "8096968754", "message": original}).encode()
+        result = json.loads(await proxy._filter_outbound(body, "application/json"))
+        assert result.get("message", "") == original
+
+    @pytest.mark.asyncio
     async def test_healthcheck_skill_error_without_sandbox_hint_is_not_rewritten(self):
         """Healthcheck SKILL messages without sandbox context should not trigger sandbox rewrite."""
         proxy = TelegramAPIProxy(sanitizer=_make_sanitizer())
@@ -734,6 +743,17 @@ class TestOutboundPipelineIntegration:
             (await proxy._filter_outbound(form_body, "application/x-www-form-urlencoded")).decode()
         )
         assert result.get("text", [""])[0] == original
+
+    @pytest.mark.asyncio
+    async def test_memory_error_without_error_keyword_is_not_rewritten_for_form_message_field(self):
+        """Form message field with embedding/provider hints but no error keyword should remain unchanged."""
+        proxy = TelegramAPIProxy(sanitizer=_make_sanitizer())
+        original = "Memory search unavailable: embedding/provider unavailable during index bootstrap."
+        form_body = urllib.parse.urlencode({"chat_id": "8096968754", "message": original}).encode()
+        result = urllib.parse.parse_qs(
+            (await proxy._filter_outbound(form_body, "application/x-www-form-urlencoded")).decode()
+        )
+        assert result.get("message", [""])[0] == original
 
     @pytest.mark.asyncio
     async def test_healthcheck_skill_error_without_sandbox_hint_is_not_rewritten_for_form_payload(self):
