@@ -2659,3 +2659,10 @@ class TestCommandTokenNormalization:
     def test_normalize_command_token_normalizes_fullwidth_mention_punctuation(self):
         token = TelegramAPIProxy._normalize_command_token("／ｈｅａｌｔｈｃｈｅｃｋ@agentshroud_bot？")
         assert token == "/healthcheck"
+
+    def test_normalize_command_token_handles_numeric_input_as_non_command(self):
+        assert TelegramAPIProxy._normalize_command_token(12345) == ""
+
+    def test_normalize_command_token_handles_uppercase_bot_mention(self):
+        token = TelegramAPIProxy._normalize_command_token("/HEALTHCHECK@AGENTSHROUD_BOT")
+        assert token == "/healthcheck"
