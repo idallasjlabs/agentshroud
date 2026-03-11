@@ -524,8 +524,8 @@ class TestInboundPipelineOnGetUpdates:
         assert called["port"] == 443
 
     @pytest.mark.asyncio
-    async def test_owner_url_does_not_trigger_egress_preflight_approval(self, monkeypatch):
-        """Owner messages should not trigger collaborator-style preflight approval."""
+    async def test_owner_url_triggers_egress_preflight_approval(self, monkeypatch):
+        """Owner URL messages should queue interactive preflight approval."""
         from gateway.ingest_api import state as state_module
 
         called = {"count": 0}
@@ -555,8 +555,12 @@ class TestInboundPipelineOnGetUpdates:
             )
         )
         await proxy._filter_inbound_updates(response)
+        await asyncio.sleep(0)
 
-        assert called["count"] == 0
+        assert called["count"] == 1
+        assert called["kwargs"]["tool_name"] == "web_fetch"
+        assert called["kwargs"]["agent_id"] == f"telegram_web_fetch:{owner_id}"
+        assert called["kwargs"]["destination"] == "https://weather.com"
 
     @pytest.mark.asyncio
     async def test_non_owner_bare_domain_triggers_egress_preflight_approval(self, monkeypatch):
