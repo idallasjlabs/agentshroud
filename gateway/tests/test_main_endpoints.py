@@ -11,6 +11,7 @@ from __future__ import annotations
 
 import pytest
 from unittest.mock import AsyncMock, MagicMock, patch
+import ipaddress
 from fastapi.testclient import TestClient
 from fastapi import HTTPException
 
@@ -236,6 +237,42 @@ class TestErrorHandling:
         response = client.get("/forward")
         
         assert response.status_code == 405
+
+
+class TestGoogleAPIProxy:
+    """Regression tests for /v1beta proxy response handling."""
+
+    def test_google_proxy_non_json_body_passthrough(self):
+        """Plain-text upstream errors must not turn into gateway 500s."""
+        with patch("gateway.ingest_api.main.app_state") as mock_app_state, \
+             patch("gateway.ingest_api.main._PROXY_ALLOWED_NETWORKS", [ipaddress.ip_network("10.254.111.0/24")]), \
+             patch("gateway.ingest_api.main._ipaddress.ip_address", return_value=ipaddress.ip_address("10.254.111.10")):
+            mock_app_state.llm_proxy = MagicMock()
+            mock_app_state.llm_proxy.proxy_messages = AsyncMock(
+                return_value=(502, {"content-type": "text/plain"}, b"upstream timeout")
+            )
+
+            client = TestClient(app)
+            response = client.get("/v1beta/models")
+
+            assert response.status_code == 502
+            assert "upstream timeout" in response.text
+
+    def test_google_proxy_json_body_passthrough(self):
+        """JSON upstream responses must stay JSON."""
+        with patch("gateway.ingest_api.main.app_state") as mock_app_state, \
+             patch("gateway.ingest_api.main._PROXY_ALLOWED_NETWORKS", [ipaddress.ip_network("10.254.111.0/24")]), \
+             patch("gateway.ingest_api.main._ipaddress.ip_address", return_value=ipaddress.ip_address("10.254.111.10")):
+            mock_app_state.llm_proxy = MagicMock()
+            mock_app_state.llm_proxy.proxy_messages = AsyncMock(
+                return_value=(200, {"content-type": "application/json"}, b'{"ok": true}')
+            )
+
+            client = TestClient(app)
+            response = client.get("/v1beta/models")
+
+            assert response.status_code == 200
+            assert response.json() == {"ok": True}
 
 
 class TestQuarantineEndpoints:
