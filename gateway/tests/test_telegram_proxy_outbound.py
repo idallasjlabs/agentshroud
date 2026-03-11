@@ -2464,3 +2464,9 @@ class TestDomainValidationHelper:
 
     def test_is_valid_domain_name_rejects_whitespace_inside_label(self):
         assert TelegramAPIProxy._is_valid_domain_name("weather .com") is False
+
+    def test_is_valid_domain_name_accepts_hyphenated_inner_label(self):
+        assert TelegramAPIProxy._is_valid_domain_name("api-gw.weather.com") is True
+
+    def test_is_valid_domain_name_rejects_single_label_host(self):
+        assert TelegramAPIProxy._is_valid_domain_name("weather") is False
