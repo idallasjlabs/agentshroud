@@ -2299,3 +2299,15 @@ class TestRuntimeRewriteHelpers:
     def test_rewrite_known_runtime_errors_requires_skill_marker_for_healthcheck_branch(self):
         text = "Cannot access healthcheck diagnostics due to sandbox restrictions."
         assert TelegramAPIProxy._rewrite_known_runtime_errors(text) is None
+
+    def test_rewrite_known_runtime_errors_accepts_underscore_delimiter(self):
+        text = "Memory search disabled: embedding_provider error during index bootstrap."
+        rewritten = TelegramAPIProxy._rewrite_known_runtime_errors(text)
+        assert rewritten is not None
+        assert "memory search is unavailable" in rewritten.lower()
+
+    def test_rewrite_known_runtime_errors_matches_cannot_to_access_variant(self):
+        text = "I cannot to access healthcheck skill.md due to sandbox restrictions."
+        rewritten = TelegramAPIProxy._rewrite_known_runtime_errors(text)
+        assert rewritten is not None
+        assert "/healthcheck" in rewritten.lower()
