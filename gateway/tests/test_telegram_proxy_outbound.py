@@ -660,6 +660,24 @@ class TestOutboundPipelineIntegration:
         assert result["text"] == original
 
     @pytest.mark.asyncio
+    async def test_skill_sandbox_message_without_healthcheck_is_not_rewritten_for_message_field(self):
+        """JSON message field should keep non-healthcheck SKILL.md sandbox text unchanged."""
+        proxy = TelegramAPIProxy(sanitizer=_make_sanitizer())
+        original = "Cannot access profile skill.md due to sandbox restrictions."
+        body = json.dumps({"chat_id": "8096968754", "message": original}).encode()
+        result = json.loads(await proxy._filter_outbound(body, "application/json"))
+        assert result.get("message", "") == original
+
+    @pytest.mark.asyncio
+    async def test_healthcheck_sandbox_message_without_skill_md_is_not_rewritten_for_content_field(self):
+        """JSON content field should keep healthcheck sandbox text unchanged when SKILL.md marker is absent."""
+        proxy = TelegramAPIProxy(sanitizer=_make_sanitizer())
+        original = "Cannot access healthcheck diagnostics due to sandbox restrictions."
+        body = json.dumps({"chat_id": "8096968754", "content": original}).encode()
+        result = json.loads(await proxy._filter_outbound(body, "application/json"))
+        assert result.get("content", "") == original
+
+    @pytest.mark.asyncio
     async def test_memory_error_without_embedding_provider_hint_is_not_rewritten_for_form_payload(self):
         """Form payload non-embedding memory errors should keep original text."""
         proxy = TelegramAPIProxy(sanitizer=_make_sanitizer())
