@@ -152,7 +152,7 @@ class TelegramAPIProxy:
             "healthcheck" in lowered
             and "skill.md" in lowered
             and "sandbox" in lowered
-            and re.search(r"(?:unable|cannot)\s+to\s+access|can't\s+access", lowered)
+            and re.search(r"(?:unable|cannot)\s+(?:to\s+)?access|can't\s+access", lowered)
         ):
             return (
                 "✅ Healthcheck is handled directly by the AgentShroud gateway. "
