@@ -920,25 +920,26 @@ class TelegramAPIProxy:
             )
 
             # ── Egress preflight from user intent ────────────────────────────
-            # If a non-owner message includes an explicit URL, proactively queue
+            # If a message includes an explicit URL/domain, proactively queue
             # interactive egress approval for that destination. This preserves
             # "little snitch" UX even when the model fails before tool execution.
-            if not is_owner:
-                try:
-                    if isinstance(original_transport_text, str) and re.search(
-                        r"%(?:0[0-9a-fA-F]|1[0-9a-fA-F]|7[fF])",
-                        original_transport_text,
-                    ):
-                        requested_url = None
-                    else:
-                        requested_url = self._extract_first_egress_target(text)
-                    if requested_url:
-                        await self._trigger_web_fetch_approval(
-                            str(chat_id or ""),
-                            {"url": requested_url},
-                        )
-                except Exception as _pf:
-                    logger.debug("Egress preflight approval error (non-fatal): %s", _pf)
+            # Applies to owner + collaborators so domain approvals are visible
+            # before outbound attempts regardless of user role.
+            try:
+                if isinstance(original_transport_text, str) and re.search(
+                    r"%(?:0[0-9a-fA-F]|1[0-9a-fA-F]|7[fF])",
+                    original_transport_text,
+                ):
+                    requested_url = None
+                else:
+                    requested_url = self._extract_first_egress_target(text)
+                if requested_url:
+                    await self._trigger_web_fetch_approval(
+                        str(chat_id or ""),
+                        {"url": requested_url},
+                    )
+            except Exception as _pf:
+                logger.debug("Egress preflight approval error (non-fatal): %s", _pf)
 
             # ── Gateway-level collaborator/non-owner activity tracking ────────
             # This is the authoritative tracking point — all messages (including
