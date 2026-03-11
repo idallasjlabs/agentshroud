@@ -2311,3 +2311,22 @@ class TestRuntimeRewriteHelpers:
         rewritten = TelegramAPIProxy._rewrite_known_runtime_errors(text)
         assert rewritten is not None
         assert "/healthcheck" in rewritten.lower()
+
+
+class TestEgressTargetExtraction:
+    """Unit tests for outbound target extraction helper used by egress preflight."""
+
+    def test_extract_first_egress_target_strips_trailing_punctuation(self):
+        text = "please check https://weather.com/weather/today/l/Pittsburgh,PA)."
+        target = TelegramAPIProxy._extract_first_egress_target(text)
+        assert target == "https://weather.com/weather/today/l/Pittsburgh,PA"
+
+    def test_extract_first_egress_target_supports_protocol_relative_urls(self):
+        text = "fetch from //accuweather.com/en/us/pittsburgh-pa/weather-forecast/1310"
+        target = TelegramAPIProxy._extract_first_egress_target(text)
+        assert target == "https://accuweather.com/en/us/pittsburgh-pa/weather-forecast/1310"
+
+    def test_extract_first_egress_target_ignores_non_http_scheme_and_uses_bare_domain(self):
+        text = "open ftp://malicious.test and then weather.com/today"
+        target = TelegramAPIProxy._extract_first_egress_target(text)
+        assert target == "https://weather.com/today"
