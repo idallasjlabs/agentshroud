@@ -552,6 +552,40 @@ class TestInboundPipelineOnGetUpdates:
         assert "healthcheck" in captured["payload"]["text"].lower()
 
     @pytest.mark.asyncio
+    async def test_healthcheck_with_zero_width_char_is_handled_locally(self, monkeypatch):
+        """Zero-width obfuscation should not bypass local healthcheck handling."""
+        from gateway.ingest_api import state as state_module
+
+        captured: dict[str, Any] = {}
+
+        class DummyResponse:
+            pass
+
+        def fake_urlopen(req, timeout=None, context=None):
+            captured["payload"] = json.loads(req.data.decode())
+            return DummyResponse()
+
+        monkeypatch.setattr(urllib.request, "urlopen", fake_urlopen)
+        monkeypatch.setattr(
+            state_module,
+            "app_state",
+            SimpleNamespace(collaborator_tracker=None),
+        )
+
+        owner_id = "8096968754"
+        proxy = TelegramAPIProxy(pipeline=PassthroughPipeline())
+        proxy._rbac = FakeRBAC(owner_id=owner_id, collaborators=["7614658040"])
+        proxy._bot_token = "test-token"
+
+        response = _wrap_response(
+            _make_update("/hea\u200blthcheck", user_id=owner_id, chat_id=int(owner_id))
+        )
+        result = await proxy._filter_inbound_updates(response)
+
+        assert result["result"] == []
+        assert "healthcheck" in captured["payload"]["text"].lower()
+
+    @pytest.mark.asyncio
     async def test_healthcheck_local_notice_is_deduped_per_update(self, monkeypatch):
         """Same Telegram update_id should not trigger repeated local notices."""
         from gateway.ingest_api import state as state_module
