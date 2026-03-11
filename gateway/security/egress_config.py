@@ -26,6 +26,8 @@ class EgressFilterConfig:
         # AI API endpoints
         "api.anthropic.com",
         "api.openai.com",
+        "generativelanguage.googleapis.com",
+        "oauth2.googleapis.com",
         
         # Email services
         "imap.gmail.com", 
