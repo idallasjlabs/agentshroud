@@ -1,3 +1,8 @@
+---
+name: "cr"
+description: "Code Review specialist for the GSDE&G team. Provides constructive, high-standard feedback with special attention to production safety. Use when reviewing pull requests or code changes before merging."
+---
+
 # Skill: Code Review (CR)
 
 ## Role

@@ -1,3 +1,8 @@
+---
+name: "mcpm"
+description: "MCP Tools Usage guide for the GSDE&G team. Covers GitHub, Atlassian, and AWS MCP server usage patterns, authentication, and best practices."
+---
+
 # Skill: MCP Tools Usage (MCP-TOOLS)
 
 ## Role

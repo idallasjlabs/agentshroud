@@ -1,3 +1,8 @@
+---
+name: "mc"
+description: "GSDE&G Development Master Checklist. Combined quick-reference for the complete development lifecycle. Use before every PR and deployment to verify all quality gates are met."
+---
+
 # GSDE&G Development Master Checklist
 
 > Combined quick-reference for the complete development lifecycle.

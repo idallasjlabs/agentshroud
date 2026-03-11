@@ -1,5 +1,5 @@
 ---
-name: socrates
+name: "socrates"
 description: "Dialogue Architect for podcast pipeline. Transforms curriculum into natural two-person dialogue. Use when writing podcast scripts from curriculum."
 ---
 
@@ -108,27 +108,6 @@ Rules:
 7. Include at least one moment where HOST gets something wrong and EXPERT corrects
 8. End with a clear takeaway and teaser for the next episode
 9. Make it sound like a REAL conversation, not a lecture with questions
-
-## User Prompt Template
-
-```
-Using the following curriculum, write a two-person podcast dialogue.
-
-CURRICULUM:
-{curriculum_content}
-
-SERIES CONTEXT:
-- Topic: {topic}
-- Episode: {episode_number} of {total_episodes}
-- Previous episodes covered: {previous_summaries}
-
-EXPERT PERSONA:
-{expert_persona}
-
-Write the complete script.md with [HOST]: and [EXPERT]: tags on every line.
-Include [laughs], [pauses], and other v3 audio tags for natural feel.
-Target 2500-3500 words.
-```
 
 ## OKE Channel — CPA Exam Prep Dialogue Guidelines
 

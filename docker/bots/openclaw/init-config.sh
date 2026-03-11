@@ -212,7 +212,7 @@ fi
 # deletion. A host-mounted backup directory provides durability across
 # fresh installs, volume resets, and machine migrations.
 
-MEMORY_BACKUP_DIR="/app/memory-backup"
+MEMORY_BACKUP_DIR="/app/memory-backups"
 MEMORY_DIR="${WORKSPACE_DIR}/memory"
 MEMORY_FILE="${WORKSPACE_DIR}/MEMORY.md"
 
@@ -293,12 +293,12 @@ fi
 #   - Fresh installs on new machines
 #   - Container image rebuilds
 #
-# Strategy: host-mounted /app/memory-backup is a bind mount to the repo
-# memory-backup/ directory. On every startup, we:
+# Strategy: host-mounted /app/memory-backups is a bind mount to the repo
+# memory-backups/ directory. On every startup, we:
 #   1. Restore from backup if workspace memory is empty (fresh volume)
 #   2. Backup current memory to the host mount (on every startup)
 
-MEMORY_BACKUP_DIR="/app/memory-backup"
+MEMORY_BACKUP_DIR="/app/memory-backups"
 WORKSPACE_MEMORY="${WORKSPACE_DIR}/memory"
 WORKSPACE_MEMORY_FILE="${WORKSPACE_DIR}/MEMORY.md"
 

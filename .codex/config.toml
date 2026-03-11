@@ -104,12 +104,12 @@ apply_patch_freeform = false
 # Configure MCP servers here as needed
 
 [mcp_servers.github]
-command = "llm_settings/mcp-servers/github/github-mcp-wrapper.sh"
+command = ".llm_settings/mcp-servers/github/github-mcp-wrapper.sh"
 args = []
 startup_timeout_sec = 30
 
 [mcp_servers.atlassian]
-command = "llm_settings/mcp-servers/atlassian/mcp-atlassian.sh"
+command = ".llm_settings/mcp-servers/atlassian/mcp-atlassian.sh"
 args = []
 startup_timeout_sec = 30
 
@@ -118,6 +118,17 @@ command = "/opt/homebrew/bin/uvx"
 args = ["awslabs.aws-api-mcp-server@latest", "--readonly"]
 startup_timeout_sec = 30
 env = { AWS_PROFILE = "default", AWS_REGION = "us-east-1", FASTMCP_LOG_LEVEL = "CRITICAL", FASTMCP_NO_BANNER = "1" }
+
+[mcp_servers.xmind-generator]
+command = "/opt/homebrew/bin/npx"
+args = ["-y", "xmind-generator-mcp"]
+startup_timeout_sec = 60
+env = { outputPath = "./mindmaps", autoOpenFile = "true" }
+
+[mcp_servers.xmind-generator-mcp]
+command = "/opt/homebrew/bin/npx"
+args = ["-y", "xmind-generator-mcp"]
+startup_timeout_sec = 60
 
 # ============================================================================
 # TUI CUSTOMIZATION

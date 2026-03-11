@@ -1,3 +1,8 @@
+---
+name: "tw"
+description: "Technical Writer for the GSDE&G team. Produces clear, accurate, maintainable documentation alongside code. Use when writing READMEs, runbooks, ADRs, API references, or changelogs."
+---
+
 # Skill: Technical Writer (TW)
 
 ## Role
@@ -20,7 +25,7 @@ maintainable documentation that lives alongside code — not in a wiki that rots
 - **Every procedure must be testable.**  If you can't follow it and get the stated result, rewrite it.
 - **Audience first.**  Operator runbook ≠ developer README ≠ executive summary.
 - **Own the file.**  Docs live in the repo, versioned with the code they describe.
-- **Outdated docs must be flagged or deleted.**  A `⚠️ NEEDS UPDATE` callout beats silent rot.
+- **Outdated docs must be flagged or deleted.**  A `NEEDS UPDATE` callout beats silent rot.
 
 ## Document Structure
 
@@ -54,23 +59,19 @@ maintainable documentation that lives alongside code — not in a wiki that rots
 ## Prerequisites
 - Python 3.11+
 - AWS credentials with `s3:GetObject` on `my-bucket`
-- `pip install -r requirements.txt`
 
 ## Quick Start
-```bash
+bash
 python main.py --site site1 --date 2024-01-01
 # Expected output:
 # [INFO] Extracted 1,204 records → s3://my-bucket/landing/...
-```
+
 
 ## Configuration
 | Variable | Required | Default | Description |
 |---|---|---|---|
 | `SITE_ID` | Yes | — | Identifier for the target site |
 | `DRY_RUN` | No | `false` | Skip writes, log only |
-
-## Architecture
-See [architecture diagram](../diagrams/01_architecture.svg).
 ```
 
 ### Runbook — Operational Decision Tree
@@ -87,35 +88,11 @@ See [architecture diagram](../diagrams/01_architecture.svg).
 ## Diagnosis
 
 ### Step 1 — Check job status
-```bash
-# Query the control DB
-psql $DB_DSN -c "SELECT site, status, updated_at
-                 FROM extraction_controller
-                 WHERE status = 'in_progress'
-                 ORDER BY updated_at;"
-```
+bash
+psql $DB_DSN -c "SELECT site, status, updated_at FROM extraction_controller WHERE status = 'in_progress';"
+
 **If rows older than 2 hours → go to Step 2**
 **If no rows → go to Step 3**
-
-### Step 2 — Restart stalled jobs
-```bash
-python DAS_daily_maintenance.py --force-rerun --site <site_id>
-# Expected: [INFO] Re-queued 3 jobs
-```
-
-### Step 3 — Check upstream availability
-```bash
-curl -sk https://<central-server>:9443/health | jq .status
-# Expected: "ok"
-# If not → escalate to field team via #ops-alerts
-```
-
-## Escalation
-| Condition | Action |
-|---|---|
-| Upstream unreachable > 1 hour | Page field team |
-| DB connection failed | Page DBA on-call |
-| Unknown error | Open P1 incident, notify @isaiah |
 ```
 
 ### Architecture Decision Record (ADR)
@@ -124,53 +101,17 @@ curl -sk https://<central-server>:9443/health | jq .status
 
 **Status:** Accepted
 **Date:** 2025-02-01
-**Author:** GSDE team
 
 ## Context
-Integration tests were committing data to the shared dev database,
-causing flaky failures when tests ran in parallel.
+Integration tests were committing data to the shared dev database.
 
 ## Decision
-Use `SAVEPOINT` + `ROLLBACK` within each test fixture instead of
-truncating tables or using a separate test database.
+Use `SAVEPOINT` + `ROLLBACK` within each test fixture.
 
 ## Consequences
-- ✅ Tests are isolated with zero cleanup overhead
-- ✅ Works against real schema without mocking the DB layer
-- ⚠️  Requires all test connections to have `autocommit = False`
-- ❌  Does not work for DDL statements (ALTER TABLE, CREATE INDEX)
-      — use a separate migration test database for those cases
-
-## Alternatives Considered
-- **Separate test DB:** Rejected — schema drift risk, extra infra
-- **Table truncation:** Rejected — not safe for parallel runs
-```
-
-### API / Function Reference
-```markdown
-## `validate_sf_input(payload: dict) → dict`
-
-Validates and normalises a Step Function trigger payload.
-
-**Parameters**
-
-| Name | Type | Required | Description |
-|---|---|---|---|
-| `payload` | `dict` | Yes | Raw trigger event |
-| `payload.site` | `str` | Yes | Site identifier |
-| `payload.test_mode` | `bool` | No | Routes output to `_test/` prefix |
-
-**Returns**
-Normalised payload dict with `output_prefix` populated.
-
-**Raises**
-- `ValueError` — if `site` is missing or empty
-
-**Example**
-```python
-validate_sf_input({"site": "site1", "test_mode": True})
-# → {"site": "site1", "test_mode": True, "output_prefix": "_test/site1/"}
-```
+- Tests are isolated with zero cleanup overhead
+- Works against real schema without mocking the DB layer
+- Does not work for DDL statements
 ```
 
 ### Changelog Entry
@@ -179,15 +120,9 @@ validate_sf_input({"site": "site1", "test_mode": True})
 
 ### Fixed
 - `json_to_parquet_smallfiles.py` no longer crashes on empty response payloads
-  — adds guard clause before schema inference (issue GSDL-412)
 
 ### Changed
-- Worker count for small files reduced from 46 → 32 to stay within
-  RDS connection pool limit under high concurrency
-
-### Added
-- `missing_xid_granular_tracking` table in `dataload_control` schema
-  — tracks XID-level empty response patterns for retry scheduling
+- Worker count reduced from 46 to 32 to stay within RDS connection pool limit
 ```
 
 ---
@@ -204,11 +139,6 @@ validate_sf_input({"site": "site1", "test_mode": True})
 - **Code blocks for every command** — even one-liners
 - **Expected output** after every command in a procedure
 - **Tables** for configuration, parameters, comparison
-- **Callout blocks** for warnings and critical notes:
-  ```
-  > ⚠️  WARNING: This deletes all records in the staging layer.
-  > Run in dry-run mode first: `--dry-run`
-  ```
 - **No screenshots** for CLI workflows — use code blocks with sample output
 
 ### What Belongs Where
@@ -220,7 +150,6 @@ validate_sf_input({"site": "site1", "test_mode": True})
 | What a function does | Docstring + Reference doc |
 | What changed and when | CHANGELOG |
 | How data moves | Data flow diagram (not prose) |
-| Org structure | Team diagram (not prose) |
 
 ---
 
@@ -236,14 +165,3 @@ Before marking any doc complete:
 - [ ] Document lives in the repo alongside the code it describes
 - [ ] Related diagrams are linked, not duplicated in prose
 - [ ] No `TODO`, `TBD`, or placeholder text remains
-
----
-
-## Dependencies
-
-- **Markdown** — all docs in `.md`, version-controlled in the repo
-- **Mermaid** — diagrams referenced by link, not embedded as prose
-  (see `technical-illustrator` skill for diagram generation)
-- **ADR tools** (optional): `adr-tools` via `brew install adr-tools`
-- **Spell check**: `brew install vale` — linter for prose style
-

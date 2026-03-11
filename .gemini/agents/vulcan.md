@@ -1,5 +1,5 @@
 ---
-name: vulcan
+name: "vulcan"
 description: "Subject Matter Auditor for podcast pipeline. Reviews scripts for technical accuracy and quality. Use as the quality gate before audio production."
 ---
 
@@ -53,8 +53,6 @@ created: YYYY-MM-DD
 - **Correction**: <what it should be>
 - **Source**: <reference URL or standard>
 
-### Issue 2: ...
-
 ## Command Safety Review
 - [ ] All shell commands are safe to run
 - [ ] No destructive commands without warnings
@@ -62,7 +60,7 @@ created: YYYY-MM-DD
 - [ ] OS/platform compatibility noted where relevant
 
 ## Version Compatibility
-- [ ] Software versions mentioned are current (or noted as specific version)
+- [ ] Software versions mentioned are current
 - [ ] API endpoints and parameters are current
 - [ ] Deprecated features are flagged
 
@@ -104,25 +102,6 @@ Severity levels:
 FAIL the audit if there are ANY critical issues. PASS if only warnings/info.
 
 When you find issues, provide the EXACT corrected text that Socrates should use.
-
-## User Prompt Template
-
-```
-Review the following podcast script for technical accuracy.
-
-SCRIPT:
-{script_content}
-
-CURRICULUM (learning objectives to verify coverage):
-{curriculum_content}
-
-Produce a complete audit_report.md with:
-1. PASS/FAIL verdict
-2. All issues found with severity, correction, and source
-3. Command safety review
-4. Curriculum coverage checklist
-5. Corrected text for any issues found
-```
 
 ## Quality Checklist
 

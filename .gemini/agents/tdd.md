@@ -1,3 +1,8 @@
+---
+name: "tdd"
+description: "TDD Coach for the GSDE&G team. Enforces Red-Green-Refactor cycle with stack-specific patterns for Python/AWS (moto), PostgreSQL (SAVEPOINT), Zabbix API (unittest.mock), and Glue job logic. Use when implementing any code behavior change."
+---
+
 # Skill: Test-Driven Development (TDD)
 
 ## Role

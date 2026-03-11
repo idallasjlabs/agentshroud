@@ -1,3 +1,8 @@
+---
+name: "mcpm-auth-reset"
+description: "MCP Authentication Reset specialist. Guides through re-authenticating GitHub, Atlassian, and AWS MCP connections. Use when encountering token expiration, authentication failures, or credential rotation needs."
+---
+
 # Skill: MCP Auth Reset (MCPM-AUTH-RESET)
 
 ## Role
@@ -42,7 +47,7 @@ Use this skill when:
 #### Step 2: Update .env File
 ```bash
 # Navigate to GitHub MCP directory
-cd llm_settings/mcp-servers/github
+cd .llm_settings/mcp-servers/github
 
 # Edit .env file (create if doesn't exist)
 nano .env
@@ -58,7 +63,7 @@ Save and exit (Ctrl+O, Enter, Ctrl+X)
 #### Step 3: Verify Authentication
 ```bash
 # Test the MCP connection
-./llm_settings/mcp-servers/github/test-mcp.sh
+./.llm_settings/mcp-servers/github/test-mcp.sh
 
 # Expected output: "✓ GitHub MCP server is working"
 ```
@@ -221,7 +226,7 @@ aws sso login --profile your-sso-profile
 
 ## Verification Checklist
 After re-authentication:
-- [ ] Test connection: `./llm_settings/mcp-servers/github/test-mcp.sh` (GitHub)
+- [ ] Test connection: `./.llm_settings/mcp-servers/github/test-mcp.sh` (GitHub)
 - [ ] Verify credentials: `aws sts get-caller-identity` (AWS)
 - [ ] Restart Claude Code session
 - [ ] Confirm MCP operations work (search code, query Jira, etc.)

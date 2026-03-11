@@ -1,3 +1,8 @@
+---
+name: "gg"
+description: "Git Workflow Guardian (GIT-GUARD) for the GSDE&G team. Enforces branch naming, mandatory PR workflow, commit message standards, and production-safe Git practices. Use when branching, committing, or reviewing Git workflow compliance."
+---
+
 # Skill: Git Workflow Guardian (GIT-GUARD)
 
 ## Role

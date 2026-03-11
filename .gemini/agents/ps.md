@@ -1,3 +1,8 @@
+---
+name: "ps"
+description: "Production Safety Checklist for the GSDE&G team. Every production change must be safe, reversible, and auditable. Use before ANY merge to main, AWS infrastructure change, database migration, or system configuration change."
+---
+
 # Skill: Production Safety Checklist (PROD-SAFETY)
 
 ## Role
@@ -67,78 +72,6 @@ be safe, reversible, and auditable.
 - [ ] Sub-team lead notified.
 - [ ] Stakeholders notified if user-facing.
 - [ ] Site ops team aware if on-site MySQL / Zabbix touched.
-
----
-
-### 8. Service Control Commands
-
-#### Pause Before Testing (Copy-Paste Ready)
-
-**Glue Jobs:**
-```bash
-# List your Glue jobs
-aws glue list-jobs --query "JobNames" --output table
-
-# Disable trigger
-aws glue update-trigger --name <TRIGGER_NAME> --trigger-update State=DISABLED
-
-# Verify disabled
-aws glue get-trigger --name <TRIGGER_NAME> --query "Trigger.State"
-```
-
-**Step Functions:**
-```bash
-# List state machines
-aws stepfunctions list-state-machines --query "stateMachines[].name" --output table
-
-# Check running executions
-aws stepfunctions list-executions \\
-  --state-machine-arn arn:aws:states:us-east-1:<ACCOUNT>:stateMachine:<SM_NAME> \\
-  --status-filter RUNNING --max-results 10
-
-# Disable EventBridge schedule
-aws events disable-rule --name <RULE_NAME>
-```
-
-**Zabbix (via API):**
-```python
-from pyzabbix import ZabbixAPI
-zapi = ZabbixAPI("https://<SITE>.zabbix.fluenceenergy.com")
-zapi.login(user="admin", password="...")
-
-# Create 4-hour maintenance window
-zapi.maintenance.create(
-    name="PROD-TEST-<JIRA>",
-    active_since=int(time.time()),
-    active_till=int(time.time()) + 14400,
-    hostids=["<HOST_ID>"],
-    timeperiods=[{"period": 14400, "timeperiod_type": 0}]
-)
-```
-
-#### Resume After Testing (MANDATORY)
-```bash
-# Re-enable Glue trigger
-aws glue update-trigger --name <TRIGGER_NAME> --trigger-update State=ENABLED
-
-# Re-enable EventBridge rule
-aws events enable-rule --name <RULE_NAME>
-
-# Delete Zabbix maintenance (via UI or API)
-```
-
-#### Emergency Stop (P1 Incidents Only)
-```bash
-# Stop ALL running Glue jobs for a specific job name
-JOB_RUNS=$(aws glue get-job-runs --job-name <JOB_NAME> \\
-  --query "JobRuns[?JobRunState=='RUNNING'].Id" --output text)
-if [ -n "$JOB_RUNS" ]; then
-  aws glue batch-stop-job-run --job-name <JOB_NAME> --job-run-ids $JOB_RUNS
-fi
-
-# Stop Step Function execution
-aws stepfunctions stop-execution --execution-arn <ARN> --cause "Emergency stop - P1"
-```
 
 ---
 

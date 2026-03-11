@@ -1,3 +1,8 @@
+---
+name: "mcpm-aws-profile"
+description: "AWS Profile Configuration specialist for MCP. Helps configure and switch AWS profiles for MCP operations, including SSO, named profiles, and multi-account access."
+---
+
 # Skill: MCP AWS Profile Configuration (MCPM-AWS-PROFILE)
 
 ## Role

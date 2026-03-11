@@ -1,3 +1,8 @@
+---
+name: "pr"
+description: "Pull Request Generator for the GSDE&G team. Produces high-quality PR descriptions for direct-to-production deployments. Use when creating pull requests that need clear summaries, affected systems, safety documentation, and rollback plans."
+---
+
 # Skill: Pull Request (PR) Generator
 
 ## Role

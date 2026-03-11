@@ -1,3 +1,8 @@
+---
+name: "env"
+description: "Environment Manager for the SecureClaw project running on Raspberry Pi 4. Manages Python conda environments, Docker containers, CI/CD, and Pi health. Use when managing dev infrastructure, Docker services, or dependency issues."
+---
+
 # Skill: Environment Management (ENV)
 
 ## Role
@@ -44,14 +49,6 @@ source ~/miniforge3/bin/activate oneclaw
 
 ## Docker Management
 
-### Configuration Files
-- `docker/docker-compose.yml` — container orchestration
-- `docker/Dockerfile.openclaw` — OpenClaw container
-- `gateway/Dockerfile` — Gateway container
-- `docker/seccomp/*.json` — syscall profiles (ARM64-aware)
-- `docker/secrets/` — mounted secrets (gateway password, API keys)
-- `docker/scripts/` — management scripts
-
 ### Security Hardening Checklist
 Every container must have:
 - [ ] `user:` non-root
@@ -62,12 +59,6 @@ Every container must have:
 - [ ] `pids_limit:` set
 - [ ] `healthcheck:` configured
 - [ ] Seccomp profile loaded from `docker/seccomp/`
-
-### ARM64 Considerations
-- Use `node:22-slim` not `node:22` (smaller, ARM64 native)
-- Some npm packages need `node-gyp` — ensure `build-essential` available
-- Playwright browsers: 929MB, store in persistent volume
-- Multi-arch builds: `linux/amd64,linux/arm64` in CI
 
 ### Common Commands
 ```bash
@@ -89,71 +80,7 @@ docker logs openclaw-bot --tail 50
 ./docker/scripts/killswitch.sh freeze
 ```
 
-## CI/CD (GitHub Actions)
-
-### Workflow Files
-- `.github/workflows/ci.yml` — test on PR
-- `.github/workflows/deploy.yml` — build + push Docker image
-
-### Quality Gates
-1. Lint: `ruff check gateway/`
-2. Tests: `pytest gateway/tests/ -v`
-3. Coverage: >= 80% on changed files
-4. Docker build: must succeed for ARM64
-5. Security: no secrets in code
-
-## Dependency Management
-
-### Adding Python Packages
-```bash
-# Install in conda env
-~/miniforge3/envs/oneclaw/bin/pip install <package>
-
-# Verify ARM64 compatibility
-~/miniforge3/envs/oneclaw/bin/python -c "import <package>; print(<package>.__version__)"
-
-# Update requirements if they exist
-~/miniforge3/envs/oneclaw/bin/pip freeze > requirements.txt
-```
-
-### System Tools (require sudo — ask user)
-- `jq`, `rg`, `tmux`, `htop` — already installed
-- `1password-cli` (`op`) — NOT installed for secureclaw-bot
-- `vcgencmd` — not available (needs /dev/vcio device)
-
-## Pi Health Monitoring
-
-```bash
-# Disk space
-df -h /
-
-# Memory
-free -h
-
-# Temperature (if vcgencmd available)
-vcgencmd measure_temp
-
-# Docker disk usage
-docker system df
-
-# Cleanup
-docker system prune -f          # Remove dangling images/containers
-docker builder prune -f         # Remove build cache
-```
-
-### Known Issues
-- Swap is only 99MB — OOM risk under heavy load
-- No vcgencmd (device file missing) — can't monitor temperature
-- No sudo for secureclaw-bot — system changes need user
-- `.venv311` is a broken Python 3.11 source build (no SSL) — safe to delete
-
 ## Secrets Management
-
-### Current Setup
-- Docker secrets in `docker/secrets/` (bind-mounted)
-- 1Password references via `op://` paths
-- Gateway password: `docker/secrets/gateway_password.txt`
-- API keys: `docker/secrets/openai_api_key.txt`, `docker/secrets/anthropic_api_key.txt`
 
 ### Rules
 - NEVER display credentials in output
