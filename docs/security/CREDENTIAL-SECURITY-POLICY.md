@@ -158,7 +158,7 @@ Bot via Telegram: "6nE7YN77Ahs4zG!A2ZUTN*@m"  ← NEVER DO THIS
 
 ```
 You via Telegram: "Get my AWS API key"
-Bot via Telegram: "AKIAIOSFODNN7EXAMPLE"  ← NEVER DO THIS
+Bot via Telegram: "YOUR_AWS_ACCESS_KEY_ID"  ← NEVER DO THIS
 ```
 
 ### ✅ What SHOULD Happen
