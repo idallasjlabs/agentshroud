@@ -221,6 +221,8 @@ class TelegramAPIProxy:
         raw = (domain or "").strip().lower()
         if not raw:
             return False
+        if len(raw) > 253:
+            return False
         if ".." in raw:
             return False
         labels = raw.split(".")
