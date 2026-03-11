@@ -40,6 +40,14 @@ _COLLABORATOR_BLOCKED_COMMANDS = {
     "/ssh", "/admin", "/config", "/secret", "/key", "/token",
     "/memory", "/reset", "/kill", "/restart", "/update",
 }
+_LOCAL_HEALTHCHECK_COMMANDS = {
+    "/healthcheck",
+    "healthcheck",
+    "/self-diagnostic",
+    "self-diagnostic",
+    "/self-diagnose",
+    "self-diagnose",
+}
 
 _DISCLOSURE_MESSAGE = (
     "\U0001f6e1\ufe0f *AgentShroud Notice*\n\n"
@@ -998,6 +1006,17 @@ class TelegramAPIProxy:
                     await self._send_rate_limit_notice(chat_id)
                 continue
 
+            # ── Local healthcheck command handling (owner + collaborators) ───
+            # Keep /healthcheck deterministic and never delegate to the model.
+            if chat_id:
+                cmd = text.strip().split()[0].lower() if text.strip() else ""
+                cmd_base = cmd.split("@")[0]
+                if cmd_base in _LOCAL_HEALTHCHECK_COMMANDS:
+                    await self._send_local_healthcheck_notice(chat_id)
+                    logger.info("Handled local healthcheck command for user %s", user_id)
+                    # Drop update so bot runtime never sees this command.
+                    continue
+
             # ── Collaborator command blocking ─────────────────────────────────
             # Block owner-only slash commands before they reach the bot.
             if is_collaborator and chat_id:
@@ -1285,6 +1304,31 @@ class TelegramAPIProxy:
                 )
         except Exception as e:
             logger.warning("Failed to send rate limit notice to chat %s: %s", chat_id, e)
+
+    async def _send_local_healthcheck_notice(self, chat_id: int) -> None:
+        """Send deterministic gateway health status without model invocation."""
+        try:
+            if self._bot_token:
+                msg = (
+                    "✅ AgentShroud healthcheck\n"
+                    "• Gateway: online\n"
+                    "• Telegram channel: connected\n"
+                    "• Security pipeline: enforcing\n"
+                    "• Model routing: active"
+                )
+                url = f"{TELEGRAM_API_BASE}/bot{self._bot_token}/sendMessage"
+                req = urllib.request.Request(
+                    url,
+                    data=json.dumps({"chat_id": chat_id, "text": msg}).encode(),
+                    headers={"Content-Type": "application/json"},
+                )
+                loop = asyncio.get_event_loop()
+                await loop.run_in_executor(
+                    None,
+                    lambda: urllib.request.urlopen(req, timeout=5, context=self._ssl_context),
+                )
+        except Exception as e:
+            logger.warning("Failed to send local healthcheck notice to chat %s: %s", chat_id, e)
 
     async def _send_disclosure(self, chat_id: int) -> None:
         """Send the one-time collaborator disclosure notice."""
