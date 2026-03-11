@@ -2622,3 +2622,20 @@ class TestInboundPipelineOnGetUpdates:
         payload = captured["payload"]
         assert "parse_mode" not in payload
         assert payload["text"].startswith("⚠️ Message Blocked")
+
+
+class TestCommandTokenNormalization:
+    """Unit tests for command token normalization used by local inbound handlers."""
+
+    def test_normalize_command_token_strips_mention_and_punctuation(self):
+        token = TelegramAPIProxy._normalize_command_token("/healthcheck@agentshroud_bot?")
+        assert token == "/healthcheck"
+
+    def test_normalize_command_token_normalizes_fullwidth_and_zero_width(self):
+        token = TelegramAPIProxy._normalize_command_token("／ｓｋ\u200bill")
+        assert token == "/skill"
+
+    def test_normalize_command_token_handles_empty_or_non_string(self):
+        assert TelegramAPIProxy._normalize_command_token("") == ""
+        assert TelegramAPIProxy._normalize_command_token("   ") == ""
+        assert TelegramAPIProxy._normalize_command_token(None) == ""
