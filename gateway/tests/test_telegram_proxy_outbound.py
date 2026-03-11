@@ -2458,3 +2458,9 @@ class TestDomainValidationHelper:
 
     def test_is_valid_domain_name_handles_none_input(self):
         assert TelegramAPIProxy._is_valid_domain_name(None) is False
+
+    def test_is_valid_domain_name_accepts_mixed_case_domain(self):
+        assert TelegramAPIProxy._is_valid_domain_name("WeAtHeR.CoM") is True
+
+    def test_is_valid_domain_name_rejects_whitespace_inside_label(self):
+        assert TelegramAPIProxy._is_valid_domain_name("weather .com") is False
