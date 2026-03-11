@@ -642,6 +642,28 @@ class TestOutboundPipelineIntegration:
         assert result["text"] == original
 
     @pytest.mark.asyncio
+    async def test_memory_error_without_embedding_provider_hint_is_not_rewritten_for_form_payload(self):
+        """Form payload non-embedding memory errors should keep original text."""
+        proxy = TelegramAPIProxy(sanitizer=_make_sanitizer())
+        original = "Memory search unavailable: disk read error while opening index."
+        form_body = urllib.parse.urlencode({"chat_id": "8096968754", "text": original}).encode()
+        result = urllib.parse.parse_qs(
+            (await proxy._filter_outbound(form_body, "application/x-www-form-urlencoded")).decode()
+        )
+        assert result.get("text", [""])[0] == original
+
+    @pytest.mark.asyncio
+    async def test_healthcheck_skill_error_without_sandbox_hint_is_not_rewritten_for_form_payload(self):
+        """Form payload healthcheck SKILL text without sandbox context should keep original text."""
+        proxy = TelegramAPIProxy(sanitizer=_make_sanitizer())
+        original = "Cannot access healthcheck skill.md from this environment."
+        form_body = urllib.parse.urlencode({"chat_id": "8096968754", "text": original}).encode()
+        result = urllib.parse.parse_qs(
+            (await proxy._filter_outbound(form_body, "application/x-www-form-urlencoded")).decode()
+        )
+        assert result.get("text", [""])[0] == original
+
+    @pytest.mark.asyncio
     async def test_healthcheck_skill_sandbox_error_is_rewritten_for_form_payload(self):
         """Healthcheck SKILL.md sandbox errors should be rewritten for urlencoded payloads."""
         proxy = TelegramAPIProxy(sanitizer=_make_sanitizer())
