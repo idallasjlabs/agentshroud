@@ -288,6 +288,15 @@ class TestConfigValidation:
         assert "_model_runtime_ready" in script
         assert "for _i in $(seq 1 60)" in script
 
+    def test_startup_telegram_calls_use_system_header(self):
+        """Startup notification Telegram calls should be marked as system-originated."""
+        script = (REPO_ROOT / "docker" / "scripts" / "start-agentshroud.sh").read_text()
+        bot_script = (REPO_ROOT / "docker" / "bots" / "openclaw" / "start.sh").read_text()
+        assert "X-AgentShroud-System: 1" in script
+        assert "X-AgentShroud-System: 1" in bot_script
+        assert "/getMe" in script
+        assert "/getMe" in bot_script
+
     def test_start_control_center_script_uses_repo_relative_exec(self):
         """Control center launcher should be robust to current working directory."""
         script = (REPO_ROOT / "scripts" / "start-control-center").read_text()
