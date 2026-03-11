@@ -263,8 +263,20 @@ class TestConfigValidation:
     def test_startup_notifications_use_minimal_message_format(self):
         """Startup/shutdown notifications should use minimal, non-identifying text."""
         script = (REPO_ROOT / "docker" / "scripts" / "start-agentshroud.sh").read_text()
+        assert '🟡 AgentShroud starting' in script
         assert '🛡️ AgentShroud online' in script
+        assert '🟠 AgentShroud starting (readiness delayed)' in script
         assert '🔴 AgentShroud shutting down' in script
+
+    def test_startup_notifications_wait_for_runtime_readiness(self):
+        """Startup script should verify Telegram/model readiness before sending online notice."""
+        script = (REPO_ROOT / "docker" / "scripts" / "start-agentshroud.sh").read_text()
+        assert "_telegram_get_me_ready" in script
+        assert "_model_runtime_ready" in script
+        assert "/getMe" in script
+        assert "/api/tags" in script
+        assert "ready=\"no\"" in script
+        assert "for _i in $(seq 1 60)" in script
 
     def test_start_control_center_script_uses_repo_relative_exec(self):
         """Control center launcher should be robust to current working directory."""
