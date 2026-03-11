@@ -191,21 +191,21 @@ class TelegramAPIProxy:
             candidate = relative_match.group(0).rstrip(".,;:!?)]}>'\"`")
             if candidate:
                 return f"https:{candidate}"
-        # If an explicit URL scheme is present but not HTTP(S), do not attempt
-        # bare-domain fallback extraction from that text.
-        generic_url_match = re.search(
-            r"\b([a-z][a-z0-9+.\-]{1,20})://[^\s<>()\"']+",
+        # Strip non-HTTP URL tokens (ftp://, file://, etc.) before bare-domain
+        # fallback matching so unrelated domains elsewhere in the same message
+        # can still trigger collaborator egress preflight approvals.
+        search_text = re.sub(
+            r"\b(?!https?:)[a-z][a-z0-9+.\-]{1,20}://[^\s<>()\"']+",
+            " ",
             text,
             flags=re.IGNORECASE,
         )
-        if generic_url_match:
-            return None
 
         # Support bare domains like "weather.com/today" so collaborator requests
         # still trigger interactive egress approval before model/tool execution.
         domain_match = re.search(
             r"(?<!@)\b(?:[a-z0-9](?:[a-z0-9-]{0,61}[a-z0-9])?\.)+[a-z]{2,63}(?![a-z0-9_-])(?:/[^\s<>()\"']*)?",
-            text,
+            search_text,
             flags=re.IGNORECASE,
         )
         if not domain_match:
