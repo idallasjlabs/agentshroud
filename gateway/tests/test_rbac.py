@@ -91,6 +91,24 @@ class TestRBACConfig:
         for user_id in expected_collaborators:
             assert user_id in collaborators
 
+    def test_owner_and_collaborators_can_be_overridden_from_env(self):
+        """Env overrides should drive runtime owner/collaborator identity."""
+        with patch.dict(
+            os.environ,
+            {
+                "AGENTSHROUD_OWNER_USER_ID": "7614658040",
+                "AGENTSHROUD_COLLABORATOR_USER_IDS": "8506022825, 8545356403,7614658040",
+            },
+            clear=False,
+        ):
+            config = RBACConfig()
+
+        assert config.owner_user_id == "7614658040"
+        assert config.get_user_role("7614658040") == Role.OWNER
+        # Owner should be excluded from collaborator list even if included in env.
+        assert "7614658040" not in config.collaborator_user_ids
+        assert config.get_user_role("8506022825") == Role.COLLABORATOR
+
 
 class TestRBACManager:
     """Test RBAC manager functionality."""
