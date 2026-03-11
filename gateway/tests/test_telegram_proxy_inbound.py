@@ -391,6 +391,31 @@ class TestInboundPipelineOnGetUpdates:
         assert "blocked command" in quarantine[0]["reason"].lower()
 
     @pytest.mark.asyncio
+    async def test_blocked_command_with_mention_and_punctuation_is_quarantined(self, monkeypatch):
+        """Mention + punctuation variants should still be blocked for collaborators."""
+        from gateway.ingest_api import state as state_module
+
+        quarantine = []
+        monkeypatch.setattr(
+            state_module,
+            "app_state",
+            SimpleNamespace(blocked_message_quarantine=quarantine),
+        )
+
+        collaborator_id = "7614658040"
+        proxy = TelegramAPIProxy(pipeline=PassthroughPipeline())
+        proxy._rbac = FakeRBAC(collaborators=[collaborator_id])
+        proxy._bot_token = ""
+
+        response = _wrap_response(
+            _make_update("/skill@agentshroud_bot?", user_id=collaborator_id, chat_id=int(collaborator_id))
+        )
+        result = await proxy._filter_inbound_updates(response)
+        assert result["result"] == []
+        assert len(quarantine) == 1
+        assert "blocked command" in quarantine[0]["reason"].lower()
+
+    @pytest.mark.asyncio
     async def test_collaborator_healthcheck_is_handled_locally(self, monkeypatch):
         """Collaborator /healthcheck should be handled by gateway, not model."""
         from gateway.ingest_api import state as state_module
@@ -486,6 +511,40 @@ class TestInboundPipelineOnGetUpdates:
 
         response = _wrap_response(
             _make_update("/healthcheck?", user_id=owner_id, chat_id=int(owner_id))
+        )
+        result = await proxy._filter_inbound_updates(response)
+
+        assert result["result"] == []
+        assert "healthcheck" in captured["payload"]["text"].lower()
+
+    @pytest.mark.asyncio
+    async def test_healthcheck_with_mention_and_punctuation_is_handled_locally(self, monkeypatch):
+        """Bot mention + punctuation should still route to local healthcheck handler."""
+        from gateway.ingest_api import state as state_module
+
+        captured: dict[str, Any] = {}
+
+        class DummyResponse:
+            pass
+
+        def fake_urlopen(req, timeout=None, context=None):
+            captured["payload"] = json.loads(req.data.decode())
+            return DummyResponse()
+
+        monkeypatch.setattr(urllib.request, "urlopen", fake_urlopen)
+        monkeypatch.setattr(
+            state_module,
+            "app_state",
+            SimpleNamespace(collaborator_tracker=None),
+        )
+
+        owner_id = "8096968754"
+        proxy = TelegramAPIProxy(pipeline=PassthroughPipeline())
+        proxy._rbac = FakeRBAC(owner_id=owner_id, collaborators=["7614658040"])
+        proxy._bot_token = "test-token"
+
+        response = _wrap_response(
+            _make_update("/healthcheck@agentshroud_bot?", user_id=owner_id, chat_id=int(owner_id))
         )
         result = await proxy._filter_inbound_updates(response)
 
