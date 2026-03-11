@@ -405,6 +405,46 @@ class TestOutboundPipelineIntegration:
         assert "/healthcheck" in result["text"].lower()
 
     @pytest.mark.asyncio
+    async def test_memory_provider_error_is_rewritten_for_form_payload(self):
+        """Embedding/provider memory errors should also be rewritten for urlencoded payloads."""
+        proxy = TelegramAPIProxy(sanitizer=_make_sanitizer())
+        form_body = urllib.parse.urlencode(
+            {
+                "chat_id": "8096968754",
+                "text": (
+                    "Memory search is currently unavailable due to an embedding/provider error. "
+                    "Please check the embedding provider configuration and retry."
+                ),
+            }
+        ).encode()
+        result = urllib.parse.parse_qs(
+            (await proxy._filter_outbound(form_body, "application/x-www-form-urlencoded")).decode()
+        )
+        text = result.get("text", [""])[0]
+        assert "embedding/provider error" not in text.lower()
+        assert "memory search is unavailable" in text.lower()
+
+    @pytest.mark.asyncio
+    async def test_healthcheck_skill_sandbox_error_is_rewritten_for_form_payload(self):
+        """Healthcheck SKILL.md sandbox errors should be rewritten for urlencoded payloads."""
+        proxy = TelegramAPIProxy(sanitizer=_make_sanitizer())
+        form_body = urllib.parse.urlencode(
+            {
+                "chat_id": "8096968754",
+                "text": (
+                    "I apologize, but I am unable to access the healthcheck skill's SKILL.md file "
+                    "due to sandbox security restrictions."
+                ),
+            }
+        ).encode()
+        result = urllib.parse.parse_qs(
+            (await proxy._filter_outbound(form_body, "application/x-www-form-urlencoded")).decode()
+        )
+        text = result.get("text", [""])[0]
+        assert "skill.md" not in text.lower()
+        assert "/healthcheck" in text.lower()
+
+    @pytest.mark.asyncio
     async def test_ollama_auth_required_error_is_sanitized(self):
         """Ollama auth errors should map to concise operator guidance."""
         proxy = TelegramAPIProxy(sanitizer=_make_sanitizer())
