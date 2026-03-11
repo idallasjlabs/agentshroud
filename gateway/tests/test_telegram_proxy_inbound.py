@@ -1303,6 +1303,42 @@ class TestInboundPipelineOnGetUpdates:
         assert sent["count"] == 2
 
     @pytest.mark.asyncio
+    async def test_self_diagnose_local_notice_is_deduped_per_update(self, monkeypatch):
+        """Self-diagnose local handler should dedupe repeated delivery of same update_id."""
+        from gateway.ingest_api import state as state_module
+
+        sent = {"count": 0}
+
+        class DummyResponse:
+            pass
+
+        def fake_urlopen(req, timeout=None, context=None):
+            sent["count"] += 1
+            return DummyResponse()
+
+        monkeypatch.setattr(urllib.request, "urlopen", fake_urlopen)
+        monkeypatch.setattr(
+            state_module,
+            "app_state",
+            SimpleNamespace(collaborator_tracker=None),
+        )
+
+        owner_id = "8096968754"
+        proxy = TelegramAPIProxy(pipeline=PassthroughPipeline())
+        proxy._rbac = FakeRBAC(owner_id=owner_id, collaborators=["7614658040"])
+        proxy._bot_token = "test-token"
+
+        update = _make_update("/self-diagnose", user_id=owner_id, chat_id=int(owner_id), update_id=8888)
+        response = _wrap_response(update)
+
+        first = await proxy._filter_inbound_updates(response)
+        second = await proxy._filter_inbound_updates(response)
+
+        assert first["result"] == []
+        assert second["result"] == []
+        assert sent["count"] == 1
+
+    @pytest.mark.asyncio
     async def test_non_owner_activity_is_tracked_for_unknown_user(self, monkeypatch):
         """Unknown non-owner users should still be tracked at gateway level."""
         from gateway.ingest_api import state as state_module
