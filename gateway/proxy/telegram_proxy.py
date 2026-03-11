@@ -182,6 +182,15 @@ class TelegramAPIProxy:
         if url_match:
             url = url_match.group(0).rstrip(".,;:!?)]}>'\"")
             return url or None
+        relative_match = re.search(
+            r"\b//(?:[a-z0-9](?:[a-z0-9-]{0,61}[a-z0-9])?\.)+[a-z]{2,63}(?:/[^\s<>()\"']*)?",
+            text,
+            flags=re.IGNORECASE,
+        )
+        if relative_match:
+            candidate = relative_match.group(0).rstrip(".,;:!?)]}>'\"")
+            if candidate:
+                return f"https:{candidate}"
         # If an explicit URL scheme is present but not HTTP(S), do not attempt
         # bare-domain fallback extraction from that text.
         generic_url_match = re.search(
@@ -663,6 +672,8 @@ class TelegramAPIProxy:
         url = normalize_input(str((tool_args or {}).get("url", ""))).strip().strip("'\"<>[]{}()")
         if not url:
             return False
+        if url.startswith("//"):
+            url = f"https:{url}"
         parsed = urlparse(url if "://" in url else f"https://{url}")
         scheme = (parsed.scheme or "https").lower()
         if scheme not in {"http", "https"}:
