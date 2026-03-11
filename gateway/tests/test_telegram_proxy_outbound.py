@@ -2394,6 +2394,16 @@ class TestEgressTargetExtraction:
         assert TelegramAPIProxy._extract_first_egress_target("") is None
         assert TelegramAPIProxy._extract_first_egress_target(None) is None
 
+    def test_extract_first_egress_target_ignores_version_like_tokens(self):
+        text = "use release v1.2.3 and continue without browsing"
+        target = TelegramAPIProxy._extract_first_egress_target(text)
+        assert target is None
+
+    def test_extract_first_egress_target_skips_email_then_finds_http_url(self):
+        text = "contact steve@weather.com then open https://weather.com/today"
+        target = TelegramAPIProxy._extract_first_egress_target(text)
+        assert target == "https://weather.com/today"
+
 
 class TestDomainValidationHelper:
     """Unit tests for domain validator used by egress approval flow."""
