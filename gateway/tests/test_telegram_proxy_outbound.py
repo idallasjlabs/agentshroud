@@ -2348,3 +2348,13 @@ class TestDomainValidationHelper:
     def test_is_valid_domain_name_rejects_punycode_and_non_ascii_labels(self):
         assert TelegramAPIProxy._is_valid_domain_name("xn--example.com") is False
         assert TelegramAPIProxy._is_valid_domain_name("météo.com") is False
+
+    def test_is_valid_domain_name_enforces_tld_rules(self):
+        assert TelegramAPIProxy._is_valid_domain_name("example.c") is False
+        assert TelegramAPIProxy._is_valid_domain_name("example.123") is False
+
+    def test_is_valid_domain_name_rejects_overlong_domain(self):
+        label = "a" * 63
+        overlong = ".".join([label, label, label, label, "com"])
+        assert len(overlong) > 253
+        assert TelegramAPIProxy._is_valid_domain_name(overlong) is False
