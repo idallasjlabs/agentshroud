@@ -404,6 +404,20 @@ class TestOutboundPipelineIntegration:
         assert "memory search is unavailable" in result["text"].lower()
 
     @pytest.mark.asyncio
+    async def test_memory_provider_error_case_variant_is_rewritten(self):
+        """Mixed-case wording variants should still trigger memory rewrite guidance."""
+        proxy = TelegramAPIProxy(sanitizer=_make_sanitizer())
+        body = json.dumps(
+            {
+                "chat_id": "8096968754",
+                "text": "MEMORY SEARCH DISABLED: EMBEDDING_PROVIDER ERROR DURING INDEX BOOT",
+            }
+        ).encode()
+        result = json.loads(await proxy._filter_outbound(body, "application/json"))
+        assert "embedding_provider error" not in result["text"].lower()
+        assert "memory search is unavailable" in result["text"].lower()
+
+    @pytest.mark.asyncio
     async def test_healthcheck_skill_sandbox_error_is_rewritten(self):
         """Healthcheck SKILL.md sandbox errors should be rewritten to local-healthcheck guidance."""
         proxy = TelegramAPIProxy(sanitizer=_make_sanitizer())
@@ -430,6 +444,20 @@ class TestOutboundPipelineIntegration:
                 "text": (
                     "I can't access healthcheck SKILL.md because of sandbox security restrictions."
                 ),
+            }
+        ).encode()
+        result = json.loads(await proxy._filter_outbound(body, "application/json"))
+        assert "skill.md" not in result["text"].lower()
+        assert "/healthcheck" in result["text"].lower()
+
+    @pytest.mark.asyncio
+    async def test_healthcheck_skill_sandbox_error_with_cannot_is_rewritten(self):
+        """'Cannot access' phrasing should be rewritten for healthcheck SKILL.md sandbox messages."""
+        proxy = TelegramAPIProxy(sanitizer=_make_sanitizer())
+        body = json.dumps(
+            {
+                "chat_id": "8096968754",
+                "text": "Cannot access healthcheck skill.md due to sandbox restrictions.",
             }
         ).encode()
         result = json.loads(await proxy._filter_outbound(body, "application/json"))
