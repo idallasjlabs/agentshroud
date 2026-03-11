@@ -633,6 +633,15 @@ class TestOutboundPipelineIntegration:
         assert result["text"] == original
 
     @pytest.mark.asyncio
+    async def test_memory_error_without_error_keyword_is_not_rewritten(self):
+        """Embedding/provider hints without explicit error marker should not trigger rewrite."""
+        proxy = TelegramAPIProxy(sanitizer=_make_sanitizer())
+        original = "Memory search unavailable: embedding/provider unavailable during index bootstrap."
+        body = json.dumps({"chat_id": "8096968754", "text": original}).encode()
+        result = json.loads(await proxy._filter_outbound(body, "application/json"))
+        assert result["text"] == original
+
+    @pytest.mark.asyncio
     async def test_healthcheck_skill_error_without_sandbox_hint_is_not_rewritten(self):
         """Healthcheck SKILL messages without sandbox context should not trigger sandbox rewrite."""
         proxy = TelegramAPIProxy(sanitizer=_make_sanitizer())
@@ -682,6 +691,17 @@ class TestOutboundPipelineIntegration:
         """Form payload non-embedding memory errors should keep original text."""
         proxy = TelegramAPIProxy(sanitizer=_make_sanitizer())
         original = "Memory search unavailable: disk read error while opening index."
+        form_body = urllib.parse.urlencode({"chat_id": "8096968754", "text": original}).encode()
+        result = urllib.parse.parse_qs(
+            (await proxy._filter_outbound(form_body, "application/x-www-form-urlencoded")).decode()
+        )
+        assert result.get("text", [""])[0] == original
+
+    @pytest.mark.asyncio
+    async def test_memory_error_without_error_keyword_is_not_rewritten_for_form_payload(self):
+        """Form payload embedding/provider hints without 'error' should keep original text."""
+        proxy = TelegramAPIProxy(sanitizer=_make_sanitizer())
+        original = "Memory search unavailable: embedding-provider unavailable during index bootstrap."
         form_body = urllib.parse.urlencode({"chat_id": "8096968754", "text": original}).encode()
         result = urllib.parse.parse_qs(
             (await proxy._filter_outbound(form_body, "application/x-www-form-urlencoded")).decode()
