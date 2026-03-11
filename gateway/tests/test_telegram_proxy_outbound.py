@@ -2330,3 +2330,21 @@ class TestEgressTargetExtraction:
         text = "open ftp://malicious.test and then weather.com/today"
         target = TelegramAPIProxy._extract_first_egress_target(text)
         assert target == "https://weather.com/today"
+
+
+class TestDomainValidationHelper:
+    """Unit tests for domain validator used by egress approval flow."""
+
+    def test_is_valid_domain_name_accepts_standard_host(self):
+        assert TelegramAPIProxy._is_valid_domain_name("weather.com") is True
+        assert TelegramAPIProxy._is_valid_domain_name("sub.api.weather.com") is True
+
+    def test_is_valid_domain_name_rejects_malformed_hosts(self):
+        assert TelegramAPIProxy._is_valid_domain_name("localhost") is False
+        assert TelegramAPIProxy._is_valid_domain_name("bad..domain.com") is False
+        assert TelegramAPIProxy._is_valid_domain_name("-bad.com") is False
+        assert TelegramAPIProxy._is_valid_domain_name("bad-.com") is False
+
+    def test_is_valid_domain_name_rejects_punycode_and_non_ascii_labels(self):
+        assert TelegramAPIProxy._is_valid_domain_name("xn--example.com") is False
+        assert TelegramAPIProxy._is_valid_domain_name("météo.com") is False
