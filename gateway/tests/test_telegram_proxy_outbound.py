@@ -2386,6 +2386,10 @@ class TestEgressTargetExtraction:
         target = TelegramAPIProxy._extract_first_egress_target(text)
         assert target is None
 
+    def test_extract_first_egress_target_handles_empty_inputs(self):
+        assert TelegramAPIProxy._extract_first_egress_target("") is None
+        assert TelegramAPIProxy._extract_first_egress_target(None) is None
+
 
 class TestDomainValidationHelper:
     """Unit tests for domain validator used by egress approval flow."""
@@ -2437,3 +2441,6 @@ class TestDomainValidationHelper:
 
     def test_is_valid_domain_name_strips_surrounding_whitespace(self):
         assert TelegramAPIProxy._is_valid_domain_name("  weather.com  ") is True
+
+    def test_is_valid_domain_name_handles_none_input(self):
+        assert TelegramAPIProxy._is_valid_domain_name(None) is False
