@@ -737,6 +737,10 @@ class TelegramAPIProxy:
                 return False
             approval_key = ((chat_id or "unknown"), scheme, domain, _port)
             now = time.time()
+            if len(self._recent_web_fetch_approval_until) > 1024:
+                self._recent_web_fetch_approval_until = {
+                    k: v for k, v in self._recent_web_fetch_approval_until.items() if v > now
+                }
             blocked_until = self._recent_web_fetch_approval_until.get(approval_key, 0.0)
             if blocked_until > now:
                 return False
