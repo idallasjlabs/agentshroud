@@ -3545,10 +3545,21 @@ async def google_api_proxy(request: Request, path: str):
         f"/v1beta/{path}", body, headers, user_id=user_id
     )
 
-    return JSONResponse(
-        content=json.loads(resp_body) if resp_body else {},
-        status_code=status_code,
-    )
+    if not resp_body:
+        return JSONResponse(content={}, status_code=status_code)
+
+    try:
+        return JSONResponse(
+            content=json.loads(resp_body),
+            status_code=status_code,
+        )
+    except Exception:
+        # Mirror /v1 proxy behavior: do not convert upstream plain-text failures
+        # into gateway 500s when the provider returns non-JSON bodies.
+        return HTMLResponse(
+            content=resp_body.decode("utf-8", errors="ignore"),
+            status_code=status_code,
+        )
 
 
 @app.api_route(
