@@ -523,6 +523,15 @@ class TestOutboundPipelineIntegration:
         assert "/healthcheck" in text.lower()
 
     @pytest.mark.asyncio
+    async def test_healthcheck_skill_message_without_sandbox_is_not_rewritten_for_json_caption_field(self):
+        """JSON caption field should keep healthcheck SKILL.md text unchanged when sandbox hint is absent."""
+        proxy = TelegramAPIProxy(sanitizer=_make_sanitizer())
+        original = "Cannot access healthcheck skill.md from this environment."
+        body = json.dumps({"chat_id": "8096968754", "caption": original}).encode()
+        result = json.loads(await proxy._filter_outbound(body, "application/json"))
+        assert result.get("caption", "") == original
+
+    @pytest.mark.asyncio
     async def test_memory_provider_error_is_rewritten_for_json_message_field(self):
         """Memory provider runtime errors should rewrite when payload uses message field."""
         proxy = TelegramAPIProxy(sanitizer=_make_sanitizer())
@@ -551,6 +560,15 @@ class TestOutboundPipelineIntegration:
         text = result.get("content", "")
         assert "skill.md" not in text.lower()
         assert "/healthcheck" in text.lower()
+
+    @pytest.mark.asyncio
+    async def test_healthcheck_skill_message_without_sandbox_is_not_rewritten_for_json_content_field(self):
+        """JSON content field should keep healthcheck SKILL.md text unchanged when sandbox hint is absent."""
+        proxy = TelegramAPIProxy(sanitizer=_make_sanitizer())
+        original = "Cannot access healthcheck skill.md from this environment."
+        body = json.dumps({"chat_id": "8096968754", "content": original}).encode()
+        result = json.loads(await proxy._filter_outbound(body, "application/json"))
+        assert result.get("content", "") == original
 
     @pytest.mark.asyncio
     async def test_memory_provider_error_is_rewritten_for_form_payload(self):
