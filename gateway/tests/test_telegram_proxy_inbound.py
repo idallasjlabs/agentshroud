@@ -1080,6 +1080,43 @@ class TestInboundPipelineOnGetUpdates:
         assert sent["count"] == 1
 
     @pytest.mark.asyncio
+    async def test_self_diagnostic_dedupe_handles_missing_update_id_different_messages(self, monkeypatch):
+        """When update_id is missing, different message_id values should not dedupe together."""
+        from gateway.ingest_api import state as state_module
+
+        sent = {"count": 0}
+
+        class DummyResponse:
+            pass
+
+        def fake_urlopen(req, timeout=None, context=None):
+            sent["count"] += 1
+            return DummyResponse()
+
+        monkeypatch.setattr(urllib.request, "urlopen", fake_urlopen)
+        monkeypatch.setattr(
+            state_module,
+            "app_state",
+            SimpleNamespace(collaborator_tracker=None),
+        )
+
+        owner_id = "8096968754"
+        proxy = TelegramAPIProxy(pipeline=PassthroughPipeline())
+        proxy._rbac = FakeRBAC(owner_id=owner_id, collaborators=["7614658040"])
+        proxy._bot_token = "test-token"
+
+        first_update = _make_update("/self-diagnostic", user_id=owner_id, chat_id=int(owner_id), update_id=None)
+        second_update = _make_update("/self-diagnostic", user_id=owner_id, chat_id=int(owner_id), update_id=None)
+        second_update["message"]["message_id"] = 2
+
+        first = await proxy._filter_inbound_updates(_wrap_response(first_update))
+        second = await proxy._filter_inbound_updates(_wrap_response(second_update))
+
+        assert first["result"] == []
+        assert second["result"] == []
+        assert sent["count"] == 2
+
+    @pytest.mark.asyncio
     async def test_non_owner_activity_is_tracked_for_unknown_user(self, monkeypatch):
         """Unknown non-owner users should still be tracked at gateway level."""
         from gateway.ingest_api import state as state_module
