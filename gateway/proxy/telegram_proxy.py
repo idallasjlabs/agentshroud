@@ -696,6 +696,18 @@ class TelegramAPIProxy:
             return False
         if not self._is_valid_domain_name(domain):
             return False
+        blocked_suffixes = (
+            ".local",
+            ".localhost",
+            ".localdomain",
+            ".internal",
+            ".lan",
+            ".home",
+            ".test",
+            ".invalid",
+        )
+        if domain.endswith(blocked_suffixes):
+            return False
         if domain in {"localhost", "local", "localdomain"}:
             return False
         try:
