@@ -679,6 +679,8 @@ class TelegramAPIProxy:
         url = normalize_input(str((tool_args or {}).get("url", ""))).strip().strip("'\"`<>[]{}()")
         if not url:
             return False
+        if re.search(r"%(?:0[0-9a-fA-F]|1[0-9a-fA-F]|7[fF])", url):
+            return False
         if "\\" in url:
             return False
         if any(ord(ch) < 32 or ord(ch) == 127 for ch in url):
@@ -887,6 +889,7 @@ class TelegramAPIProxy:
                 continue
 
             text = message.get("text", "") or message.get("caption", "")
+            original_transport_text = text
             user_id = str(message.get("from", {}).get("id", "unknown"))
             chat_id = message.get("chat", {}).get("id")
 
@@ -920,7 +923,13 @@ class TelegramAPIProxy:
             # "little snitch" UX even when the model fails before tool execution.
             if not is_owner:
                 try:
-                    requested_url = self._extract_first_egress_target(text)
+                    if isinstance(original_transport_text, str) and re.search(
+                        r"%(?:0[0-9a-fA-F]|1[0-9a-fA-F]|7[fF])",
+                        original_transport_text,
+                    ):
+                        requested_url = None
+                    else:
+                        requested_url = self._extract_first_egress_target(text)
                     if requested_url:
                         await self._trigger_web_fetch_approval(
                             str(chat_id or ""),
