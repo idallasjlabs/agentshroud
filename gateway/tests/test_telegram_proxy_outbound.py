@@ -2289,3 +2289,13 @@ class TestRuntimeRewriteHelpers:
     def test_rewrite_known_runtime_errors_returns_none_for_unrelated_text(self):
         text = "Memory search unavailable: disk read issue (no embedding provider context)."
         assert TelegramAPIProxy._rewrite_known_runtime_errors(text) is None
+
+    def test_rewrite_known_runtime_errors_accepts_hyphen_delimiter(self):
+        text = "Memory search disabled: embedding-provider error during index bootstrap."
+        rewritten = TelegramAPIProxy._rewrite_known_runtime_errors(text)
+        assert rewritten is not None
+        assert "memory search is unavailable" in rewritten.lower()
+
+    def test_rewrite_known_runtime_errors_requires_skill_marker_for_healthcheck_branch(self):
+        text = "Cannot access healthcheck diagnostics due to sandbox restrictions."
+        assert TelegramAPIProxy._rewrite_known_runtime_errors(text) is None
