@@ -122,6 +122,39 @@ class TelegramAPIProxy:
         if chat_id:
             self._recent_outbound_blocks_until[chat_id] = time.time() + self._block_cascade_seconds
 
+    @staticmethod
+    def _normalize_command_token(text: str) -> str:
+        """Normalize first command token so small obfuscations don't bypass local handlers."""
+        if not isinstance(text, str) or not text.strip():
+            return ""
+        first = normalize_input(text).strip().split()[0].lower()
+        first = first.split("@")[0]
+        return re.sub(r"[^a-z0-9_/\-]", "", first)
+
+    @staticmethod
+    def _rewrite_known_runtime_errors(text: str) -> Optional[str]:
+        """Map recurring runtime/provider failures to deterministic operator guidance."""
+        if not isinstance(text, str):
+            return None
+        lowered = text.lower()
+        if "memory search is currently unavailable due to an embedding/provider error" in lowered:
+            return (
+                "⚠️ Memory search is unavailable in this runtime profile. "
+                "Switch to a configured embedding-capable profile (for example: "
+                "scripts/switch_model.sh cloud gemini), or configure "
+                "agents.defaults.memorySearch.provider, then retry."
+            )
+        if (
+            "unable to access the healthcheck skill" in lowered
+            and "skill.md" in lowered
+            and "sandbox" in lowered
+        ):
+            return (
+                "✅ Healthcheck is handled directly by the AgentShroud gateway. "
+                "Use /healthcheck and status will be returned directly."
+            )
+        return None
+
     def get_stats(self) -> dict:
         return dict(self._stats)
 
@@ -434,6 +467,11 @@ class TelegramAPIProxy:
                         "(local qwen3:14b or cloud gemini/openai)."
                     )
                     return json.dumps(data).encode()
+                rewritten_runtime_error = self._rewrite_known_runtime_errors(text) if isinstance(text, str) else None
+                if rewritten_runtime_error:
+                    self._stats["outbound_filtered"] += 1
+                    data[text_key] = rewritten_runtime_error
+                    return json.dumps(data).encode()
 
                 if text:
                     normalized_text = normalize_input(text)
@@ -664,6 +702,11 @@ class TelegramAPIProxy:
                         "⚠️ Selected model is not registered. Use scripts/switch_model.sh to pick a configured model "
                         "(local qwen3:14b or cloud gemini/openai)."
                     )
+                    return urllib.parse.urlencode(data).encode()
+                rewritten_runtime_error = self._rewrite_known_runtime_errors(text) if isinstance(text, str) else None
+                if rewritten_runtime_error:
+                    self._stats["outbound_filtered"] += 1
+                    data[text_key] = rewritten_runtime_error
                     return urllib.parse.urlencode(data).encode()
         except Exception as e:
             logger.error(f"Outbound filter error: {e}")
@@ -1013,8 +1056,7 @@ class TelegramAPIProxy:
             # ── Local healthcheck command handling (owner + collaborators) ───
             # Keep /healthcheck deterministic and never delegate to the model.
             if chat_id:
-                cmd = text.strip().split()[0].lower() if text.strip() else ""
-                cmd_base = cmd.split("@")[0]
+                cmd_base = self._normalize_command_token(text)
                 if cmd_base in _LOCAL_HEALTHCHECK_COMMANDS:
                     update_id = update.get("update_id")
                     dedupe_key = f"{chat_id}:{update_id}:{cmd_base}"
@@ -1041,9 +1083,7 @@ class TelegramAPIProxy:
             # ── Collaborator command blocking ─────────────────────────────────
             # Block owner-only slash commands before they reach the bot.
             if is_collaborator and chat_id:
-                cmd = text.strip().split()[0].lower() if text.strip() else ""
-                # Strip bot @mention suffix (e.g. /skill@agentshroud_bot → /skill)
-                cmd_base = cmd.split("@")[0]
+                cmd_base = self._normalize_command_token(text)
                 if cmd_base in _COLLABORATOR_BLOCKED_COMMANDS:
                     self._stats["messages_blocked"] += 1
                     self._quarantine_blocked_message(
