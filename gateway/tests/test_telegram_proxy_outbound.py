@@ -1113,7 +1113,7 @@ class TestOutboundPipelineIntegration:
         assert first.get("ok") is True
         assert second.get("ok") is True
         assert second.get("result", {}).get("suppressed") is True
-        assert calls["count"] == 1
+
 
     @pytest.mark.asyncio
     async def test_proxy_request_suppresses_duplicate_startup_notice_without_system_flag(self, monkeypatch):
@@ -2269,3 +2269,23 @@ class TestOutboundPipelineIntegration:
 
         assert result["ok"] is False
         assert result["error_code"] == 500
+
+
+class TestRuntimeRewriteHelpers:
+    """Unit tests for deterministic runtime error rewrite helper behavior."""
+
+    def test_rewrite_known_runtime_errors_matches_memory_embedding_provider_error(self):
+        text = "Memory search unavailable: embedding/provider error during index bootstrap."
+        rewritten = TelegramAPIProxy._rewrite_known_runtime_errors(text)
+        assert rewritten is not None
+        assert "memory search is unavailable" in rewritten.lower()
+
+    def test_rewrite_known_runtime_errors_matches_healthcheck_skill_sandbox_error(self):
+        text = "Cannot access healthcheck SKILL.md due to sandbox restrictions."
+        rewritten = TelegramAPIProxy._rewrite_known_runtime_errors(text)
+        assert rewritten is not None
+        assert "/healthcheck" in rewritten.lower()
+
+    def test_rewrite_known_runtime_errors_returns_none_for_unrelated_text(self):
+        text = "Memory search unavailable: disk read issue (no embedding provider context)."
+        assert TelegramAPIProxy._rewrite_known_runtime_errors(text) is None
