@@ -1,3 +1,8 @@
+---
+name: "data"
+description: "Data Validation engineer for the GSDE&G team. Ensures data integrity in the fluenceenergy-ops-data-lakehouse S3 data lake. Use when validating schemas, checking partition coverage, detecting data quality issues, or running post-pipeline verification queries."
+---
+
 # Skill: Data Validation (DATA-VAL)
 
 ## Role
@@ -105,14 +110,6 @@ WHERE das_date = DATE '2024-06-01'
   AND das_server = '<SITE>'
 GROUP BY das_date, das_server, das_key
 HAVING COUNT(*) > 1
-LIMIT 100;
-
--- Outlier detection (values outside expected range)
-SELECT das_date, das_server, das_key, value
-FROM ops_datalake.das_datasources
-WHERE das_date = DATE '2024-06-01'
-  AND das_server = '<SITE>'
-  AND (value < 0 OR value > 1000000)  -- adjust thresholds
 LIMIT 100;
 ```
 

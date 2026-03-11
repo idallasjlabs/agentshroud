@@ -1,0 +1,10 @@
+# .gitallowed - False positives for git-secrets
+# These are documentation examples, not real secrets
+
+# Test commands in documentation
+password=secret123
+password=test
+
+# Documentation patterns - echo statements showing users how to test
+echo "password=
+echo 'password=

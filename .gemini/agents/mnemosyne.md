@@ -1,5 +1,5 @@
 ---
-name: mnemosyne
+name: "mnemosyne"
 description: "Retention Engineer for podcast pipeline. Optimizes content for long-term knowledge retention via spaced repetition. Use when creating study materials from podcast episodes."
 ---
 

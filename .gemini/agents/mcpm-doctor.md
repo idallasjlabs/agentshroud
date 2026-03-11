@@ -1,3 +1,8 @@
+---
+name: "mcpm-doctor"
+description: "MCP Diagnostics specialist. Diagnoses and troubleshoots MCP server connectivity and configuration issues for GitHub, Atlassian, and AWS MCP servers. Use when MCP servers fail to connect, authentication errors occur, or configuration issues are suspected."
+---
+
 # Skill: MCP Doctor (MCPM-DOCTOR)
 
 ## Role
@@ -35,13 +40,13 @@ docker ps
 docker images | grep github-mcp-server
 
 # Test GitHub MCP wrapper script
-./llm_settings/mcp-servers/github/test-mcp.sh
+./.llm_settings/mcp-servers/github/test-mcp.sh
 
 # Verify .env file exists
-ls -la llm_settings/mcp-servers/github/.env
+ls -la .llm_settings/mcp-servers/github/.env
 
 # Check PAT is set (without showing value)
-grep -q "GITHUB_PERSONAL_ACCESS_TOKEN=" llm_settings/mcp-servers/github/.env && echo "✓ PAT configured" || echo "✗ PAT missing"
+grep -q "GITHUB_PERSONAL_ACCESS_TOKEN=" .llm_settings/mcp-servers/github/.env && echo "✓ PAT configured" || echo "✗ PAT missing"
 ```
 
 ### 3. Test Atlassian MCP Server
@@ -139,7 +144,7 @@ uvx --version
    ```
 
 3. **Test Each Server**
-   - GitHub: `./llm_settings/mcp-servers/github/test-mcp.sh`
+   - GitHub: `./.llm_settings/mcp-servers/github/test-mcp.sh`
    - Atlassian: Manual test with `mcp-remote`
    - AWS: `aws sts get-caller-identity`
 

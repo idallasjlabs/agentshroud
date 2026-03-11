@@ -1,0 +1,18 @@
+# Telegram API Credentials (get from https://my.telegram.org)
+API_ID=your_api_id
+API_HASH=your_api_hash
+
+# Owner Account
+OWNER_PHONE=+1234567890
+OWNER_SESSION=owner_session
+
+# Collaborator Account
+COLLABORATOR_PHONE=+1987654321
+COLLABORATOR_SESSION=collaborator_session
+
+# Bot Username
+BOT_USERNAME=@agentshroud_bot
+
+# Report Settings
+# Leave REPORT_FILE unset to use the default timestamped report under reports/
+INPUT_FILE=blueteam_inputs.txt

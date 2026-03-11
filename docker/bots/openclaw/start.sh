@@ -251,7 +251,7 @@ _STARTUP_NOTICE_COOLDOWN_SECONDS="${OPENCLAW_STARTUP_NOTICE_COOLDOWN_SECONDS:-30
 # Forward TERM/INT to openclaw, backup memory, send shutdown notification
 trap '
     echo "[startup] Shutdown signal received — backing up memory..."
-    MEMORY_BACKUP_DIR="/app/memory-backup"
+    MEMORY_BACKUP_DIR="/app/memory-backups"
     WORKSPACE_DIR="/home/node/.openclaw/workspace"
     if [ -d "${MEMORY_BACKUP_DIR}" ]; then
         [ -f "${WORKSPACE_DIR}/MEMORY.md" ] && cp "${WORKSPACE_DIR}/MEMORY.md" "${MEMORY_BACKUP_DIR}/MEMORY.md"

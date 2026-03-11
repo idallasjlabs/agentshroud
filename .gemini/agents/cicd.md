@@ -1,3 +1,8 @@
+---
+name: "cicd"
+description: "CI/CD Pipeline Advisor for the GSDE&G team. Designs and reviews GitHub Actions workflows, quality gates, and deployment pipelines for direct-to-production deployments. Use when setting up CI pipelines, reviewing workflow files, or planning deployment strategies."
+---
+
 # Skill: CI/CD Pipeline Advisor (CICD)
 
 ## Role

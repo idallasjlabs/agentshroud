@@ -1,0 +1,102 @@
+{
+  "_comment": "GitHub Copilot CLI Configuration Example",
+  "_note": "Copy this to ~/.copilot/config.json for user-level settings",
+  "_location": "~/.copilot/config.json (user) or documented here for team reference",
+  "_docs": "https://docs.github.com/en/copilot/how-tos/use-copilot-agents/use-copilot-cli",
+
+  "banner": "always",
+  "_banner_options": ["always", "never", "auto"],
+
+  "trusted_folders": [
+    "/Users/username/Development/LLM_Settings",
+    "/path/to/other/trusted/project"
+  ],
+
+  "allowed_urls": [
+    "https://api.github.com/*",
+    "https://docs.github.com/*",
+    "https://*.githubusercontent.com/*"
+  ],
+
+  "denied_urls": [
+    "http://*",
+    "https://malicious-site.com/*"
+  ],
+
+  "_security_note": "URL patterns apply to both fetch operations and shell commands (curl, wget, etc.)",
+
+  "_custom_agents_info": {
+    "comment": "Custom agents are defined in .github/agents/ directory",
+    "locations": [
+      "~/.copilot/agents (user-level)",
+      ".github/agents (repository-level)",
+      "{org}/.github-private/agents (organization-level)"
+    ],
+    "available_agents": [
+      "test-augmenter - Add test coverage and edge cases",
+      "validation-runner - Execute validation scripts and report results",
+      "safe-refactor - Perform safe, local refactorings after tests pass"
+    ],
+    "usage": [
+      "Interactive: copilot, then /agent",
+      "Direct: copilot --agent=test-augmenter --prompt 'Add tests for module X'",
+      "Reference: 'Use the test-augmenter agent to add test coverage'"
+    ]
+  },
+
+  "_mcp_servers_note": "MCP servers are configured in ~/.copilot/mcp-config.json",
+
+  "_role_definition": {
+    "comment": "GitHub Copilot CLI in this repo is a SECONDARY/TERTIARY agent",
+    "primary_developer": "Claude Code",
+    "copilot_role": "Test augmentation, validation, and safe refactors",
+    "restrictions": [
+      "Cannot make architectural decisions",
+      "Cannot implement new features",
+      "Cannot perform large refactors",
+      "Cannot create documentation unless requested"
+    ]
+  },
+
+  "_context_management": {
+    "auto_compact": "Automatically compresses history at 95% token limit",
+    "commands": [
+      "/usage - View session statistics",
+      "/context - Visual token usage overview",
+      "/compact - Manually compress history"
+    ]
+  },
+
+  "_model_selection": {
+    "default": "claude-sonnet-4-5",
+    "available": ["claude-sonnet-4-5", "claude-sonnet-4", "gpt-5"],
+    "command": "/model - Select model interactively"
+  },
+
+  "_installation": {
+    "windows": "winget install GitHub.Copilot",
+    "macos_linux": "brew install copilot-cli",
+    "npm": "npm install -g @github/copilot",
+    "script": "curl -fsSL https://cli.github.com/copilot/install.sh | sh"
+  },
+
+  "_authentication": {
+    "method": "GitHub login or Personal Access Token",
+    "pat_permission": "Copilot Requests",
+    "env_var": "GITHUB_ASKPASS - Point to executable returning token"
+  },
+
+  "_tool_approval": {
+    "example": "copilot --allow-tool 'write' - Allow file edits without approval",
+    "note": "Use with caution - reduces safety guardrails"
+  },
+
+  "_path_permissions": {
+    "default_access": [
+      "Current working directory",
+      "Subdirectories",
+      "System temp directory"
+    ],
+    "bypass_verification": "copilot --allow-all-paths (use with caution)"
+  }
+}
