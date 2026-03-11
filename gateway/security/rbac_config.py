@@ -11,6 +11,7 @@ from __future__ import annotations
 from dataclasses import dataclass, field
 from typing import Dict, Set, List, Optional
 from enum import Enum
+import os
 
 
 class Role(str, Enum):
@@ -53,6 +54,26 @@ class RBACConfig:
     
     def __post_init__(self):
         """Initialize user roles based on configuration."""
+        owner_override = str(os.environ.get("AGENTSHROUD_OWNER_USER_ID", "")).strip()
+        if owner_override:
+            self.owner_user_id = owner_override
+
+        collaborators_override = str(
+            os.environ.get("AGENTSHROUD_COLLABORATOR_USER_IDS", "")
+        ).strip()
+        if collaborators_override:
+            parsed = [
+                token.strip()
+                for token in collaborators_override.split(",")
+                if token.strip()
+            ]
+            self.collaborator_user_ids = parsed
+
+        # Ensure owner never appears as collaborator.
+        self.collaborator_user_ids = [
+            uid for uid in self.collaborator_user_ids if str(uid) != str(self.owner_user_id)
+        ]
+
         # Set owner role
         if self.owner_user_id:
             self.user_roles[self.owner_user_id] = Role.OWNER
