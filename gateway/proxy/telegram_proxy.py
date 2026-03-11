@@ -679,6 +679,8 @@ class TelegramAPIProxy:
         url = normalize_input(str((tool_args or {}).get("url", ""))).strip().strip("'\"`<>[]{}()")
         if not url:
             return False
+        if "\\" in url:
+            return False
         if any(ord(ch) < 32 or ord(ch) == 127 for ch in url):
             return False
         if len(url) > 2048:
