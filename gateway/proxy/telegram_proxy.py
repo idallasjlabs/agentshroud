@@ -667,6 +667,8 @@ class TelegramAPIProxy:
         scheme = (parsed.scheme or "https").lower()
         if scheme not in {"http", "https"}:
             return False
+        if parsed.username is not None or parsed.password is not None:
+            return False
         raw_domain = (parsed.hostname or "").strip().lower()
         if ".." in raw_domain:
             return False
