@@ -418,6 +418,20 @@ class TestOutboundPipelineIntegration:
         assert "memory search is unavailable" in result["text"].lower()
 
     @pytest.mark.asyncio
+    async def test_memory_provider_error_hyphen_variant_is_rewritten(self):
+        """Hyphenated embedding-provider wording should still trigger rewrite."""
+        proxy = TelegramAPIProxy(sanitizer=_make_sanitizer())
+        body = json.dumps(
+            {
+                "chat_id": "8096968754",
+                "text": "Memory search disabled: embedding-provider error while indexing.",
+            }
+        ).encode()
+        result = json.loads(await proxy._filter_outbound(body, "application/json"))
+        assert "embedding-provider error" not in result["text"].lower()
+        assert "memory search is unavailable" in result["text"].lower()
+
+    @pytest.mark.asyncio
     async def test_healthcheck_skill_sandbox_error_is_rewritten(self):
         """Healthcheck SKILL.md sandbox errors should be rewritten to local-healthcheck guidance."""
         proxy = TelegramAPIProxy(sanitizer=_make_sanitizer())
@@ -529,6 +543,23 @@ class TestOutboundPipelineIntegration:
         )
         text = result.get("text", [""])[0]
         assert "embedding_provider error" not in text.lower()
+        assert "memory search is unavailable" in text.lower()
+
+    @pytest.mark.asyncio
+    async def test_memory_provider_error_slash_variant_is_rewritten_for_form_payload(self):
+        """Slash-separated embedding/provider wording should rewrite for form payloads."""
+        proxy = TelegramAPIProxy(sanitizer=_make_sanitizer())
+        form_body = urllib.parse.urlencode(
+            {
+                "chat_id": "8096968754",
+                "text": "Memory search unavailable: embedding/provider error from index bootstrap.",
+            }
+        ).encode()
+        result = urllib.parse.parse_qs(
+            (await proxy._filter_outbound(form_body, "application/x-www-form-urlencoded")).decode()
+        )
+        text = result.get("text", [""])[0]
+        assert "embedding/provider error" not in text.lower()
         assert "memory search is unavailable" in text.lower()
 
     @pytest.mark.asyncio
