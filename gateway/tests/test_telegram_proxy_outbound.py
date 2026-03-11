@@ -2341,6 +2341,16 @@ class TestEgressTargetExtraction:
         target = TelegramAPIProxy._extract_first_egress_target(text)
         assert target == "https://example.com/path"
 
+    def test_extract_first_egress_target_handles_bare_domain_with_query(self):
+        text = "please open weather.com/today?unit=f and summarize"
+        target = TelegramAPIProxy._extract_first_egress_target(text)
+        assert target == "https://weather.com/today?unit=f"
+
+    def test_extract_first_egress_target_strips_markdown_wrapper_punctuation(self):
+        text = "fetch [weather](https://weather.com/weather/today/l/Pittsburgh,PA)."
+        target = TelegramAPIProxy._extract_first_egress_target(text)
+        assert target == "https://weather.com/weather/today/l/Pittsburgh,PA"
+
 
 class TestDomainValidationHelper:
     """Unit tests for domain validator used by egress approval flow."""
