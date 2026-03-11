@@ -40,7 +40,7 @@ The AI agent container. Runs OpenClaw (a Claude-powered autonomous agent with Te
 | `agentshroud-ssh` | `/home/node/.ssh` | RW | SSH keys for SSH targets |
 | `agentshroud-browsers` | `/home/node/.cache/ms-playwright` | RW | Playwright browser cache |
 | `../branding` | `/app/branding` | RO | Bot branding files |
-| `../memory-backup` | `/app/memory-backup` | RW | Memory backup for persistence |
+| `../memory-backups` | `/app/memory-backups` | RW | Memory backup for persistence |
 
 ## tmpfs Mounts (Ephemeral)
 
