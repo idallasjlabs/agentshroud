@@ -1059,7 +1059,12 @@ class TelegramAPIProxy:
                 cmd_base = self._normalize_command_token(text)
                 if cmd_base in _LOCAL_HEALTHCHECK_COMMANDS:
                     update_id = update.get("update_id")
-                    dedupe_key = f"{chat_id}:{update_id}:{cmd_base}"
+                    message_id = message.get("message_id")
+                    if update_id is None:
+                        dedupe_identity = f"msg:{message_id}"
+                    else:
+                        dedupe_identity = f"upd:{update_id}"
+                    dedupe_key = f"{chat_id}:{dedupe_identity}:{cmd_base}"
                     now = time.time()
                     if len(self._handled_local_command_update_ids) > 4096:
                         self._handled_local_command_update_ids = {
