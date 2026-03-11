@@ -341,6 +341,74 @@ class TestInboundPipelineOnGetUpdates:
         assert "message_id" in quarantine[0]
 
     @pytest.mark.asyncio
+    async def test_collaborator_healthcheck_is_handled_locally(self, monkeypatch):
+        """Collaborator /healthcheck should be handled by gateway, not model."""
+        from gateway.ingest_api import state as state_module
+
+        captured: dict[str, Any] = {}
+
+        class DummyResponse:
+            pass
+
+        def fake_urlopen(req, timeout=None, context=None):
+            captured["payload"] = json.loads(req.data.decode())
+            return DummyResponse()
+
+        monkeypatch.setattr(urllib.request, "urlopen", fake_urlopen)
+        monkeypatch.setattr(
+            state_module,
+            "app_state",
+            SimpleNamespace(collaborator_tracker=None),
+        )
+
+        collaborator_id = "7614658040"
+        proxy = TelegramAPIProxy(pipeline=PassthroughPipeline())
+        proxy._rbac = FakeRBAC(owner_id="8096968754", collaborators=[collaborator_id])
+        proxy._bot_token = "test-token"
+
+        response = _wrap_response(
+            _make_update("/healthcheck", user_id=collaborator_id, chat_id=int(collaborator_id))
+        )
+        result = await proxy._filter_inbound_updates(response)
+
+        assert result["result"] == []
+        assert "healthcheck" in captured["payload"]["text"].lower()
+
+    @pytest.mark.asyncio
+    async def test_owner_healthcheck_is_handled_locally(self, monkeypatch):
+        """Owner /healthcheck should be handled by gateway, not model."""
+        from gateway.ingest_api import state as state_module
+
+        captured: dict[str, Any] = {}
+
+        class DummyResponse:
+            pass
+
+        def fake_urlopen(req, timeout=None, context=None):
+            captured["payload"] = json.loads(req.data.decode())
+            return DummyResponse()
+
+        monkeypatch.setattr(urllib.request, "urlopen", fake_urlopen)
+        monkeypatch.setattr(
+            state_module,
+            "app_state",
+            SimpleNamespace(collaborator_tracker=None),
+        )
+
+        owner_id = "8096968754"
+        proxy = TelegramAPIProxy(pipeline=PassthroughPipeline())
+        proxy._rbac = FakeRBAC(owner_id=owner_id, collaborators=["7614658040"])
+        proxy._bot_token = "test-token"
+
+        response = _wrap_response(
+            _make_update("/healthcheck", user_id=owner_id, chat_id=int(owner_id))
+        )
+        result = await proxy._filter_inbound_updates(response)
+
+        assert result["result"] == []
+        assert "healthcheck" in captured["payload"]["text"].lower()
+
+    @pytest.mark.asyncio
     async def test_non_owner_activity_is_tracked_for_unknown_user(self, monkeypatch):
         """Unknown non-owner users should still be tracked at gateway level."""
         from gateway.ingest_api import state as state_module
