@@ -705,7 +705,7 @@ class TelegramAPIProxy:
             _egress_filter = getattr(_app_state, "egress_filter", None)
             if _egress_filter is None or not hasattr(_egress_filter, "check_async"):
                 return False
-            _port = parsed.port or (443 if parsed.scheme != "http" else 80)
+            _port = parsed.port or (80 if scheme == "http" else 443)
             if _port not in {80, 443}:
                 return False
             _agent_id = f"telegram_web_fetch:{chat_id}" if chat_id else "telegram_web_fetch"
