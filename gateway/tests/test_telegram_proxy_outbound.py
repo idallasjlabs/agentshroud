@@ -624,6 +624,24 @@ class TestOutboundPipelineIntegration:
         assert "memory search is unavailable" in text.lower()
 
     @pytest.mark.asyncio
+    async def test_memory_error_without_embedding_provider_hint_is_not_rewritten(self):
+        """Non-embedding memory errors should not be forced into embedding guidance text."""
+        proxy = TelegramAPIProxy(sanitizer=_make_sanitizer())
+        original = "Memory search unavailable: disk read error while opening index."
+        body = json.dumps({"chat_id": "8096968754", "text": original}).encode()
+        result = json.loads(await proxy._filter_outbound(body, "application/json"))
+        assert result["text"] == original
+
+    @pytest.mark.asyncio
+    async def test_healthcheck_skill_error_without_sandbox_hint_is_not_rewritten(self):
+        """Healthcheck SKILL messages without sandbox context should not trigger sandbox rewrite."""
+        proxy = TelegramAPIProxy(sanitizer=_make_sanitizer())
+        original = "Cannot access healthcheck skill.md from this environment."
+        body = json.dumps({"chat_id": "8096968754", "text": original}).encode()
+        result = json.loads(await proxy._filter_outbound(body, "application/json"))
+        assert result["text"] == original
+
+    @pytest.mark.asyncio
     async def test_healthcheck_skill_sandbox_error_is_rewritten_for_form_payload(self):
         """Healthcheck SKILL.md sandbox errors should be rewritten for urlencoded payloads."""
         proxy = TelegramAPIProxy(sanitizer=_make_sanitizer())
