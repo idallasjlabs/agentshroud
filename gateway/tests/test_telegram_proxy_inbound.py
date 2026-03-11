@@ -905,6 +905,41 @@ class TestInboundPipelineOnGetUpdates:
         assert calls["count"] == 0
 
     @pytest.mark.asyncio
+    async def test_non_owner_overlong_fqdn_does_not_queue_egress_preflight(self, monkeypatch):
+        """Domains over 253 chars should be rejected from preflight approval."""
+        from gateway.ingest_api import state as state_module
+
+        calls = {"count": 0}
+
+        class FakeEgress:
+            async def check_async(self, **_kwargs):
+                calls["count"] += 1
+                return True
+
+        monkeypatch.setattr(
+            state_module,
+            "app_state",
+            SimpleNamespace(egress_filter=FakeEgress()),
+        )
+
+        proxy = TelegramAPIProxy(pipeline=PassthroughPipeline())
+        proxy._rbac = FakeRBAC(owner_id="8096968754", collaborators=["7614658040"])
+        proxy._bot_token = ""
+
+        host = ".".join(["a" * 63, "b" * 63, "c" * 63, "d" * 62])  # 254 chars
+        response = _wrap_response(
+            _make_update(
+                f"check https://{host}/today",
+                user_id="7614658040",
+                chat_id=7614658040,
+            )
+        )
+        await proxy._filter_inbound_updates(response)
+        await asyncio.sleep(0)
+
+        assert calls["count"] == 0
+
+    @pytest.mark.asyncio
     async def test_non_owner_uppercase_http_scheme_queues_port_80_preflight(self, monkeypatch):
         """Uppercase HTTP scheme should still infer port 80 for preflight checks."""
         from gateway.ingest_api import state as state_module
