@@ -388,6 +388,22 @@ class TestOutboundPipelineIntegration:
         assert "switch_model.sh" in result["text"]
 
     @pytest.mark.asyncio
+    async def test_memory_provider_error_variant_is_rewritten(self):
+        """Variant wording for embedding provider errors should still be rewritten."""
+        proxy = TelegramAPIProxy(sanitizer=_make_sanitizer())
+        body = json.dumps(
+            {
+                "chat_id": "8096968754",
+                "text": (
+                    "Memory search unavailable: embedding provider error while refreshing index."
+                ),
+            }
+        ).encode()
+        result = json.loads(await proxy._filter_outbound(body, "application/json"))
+        assert "embedding provider error" not in result["text"].lower()
+        assert "memory search is unavailable" in result["text"].lower()
+
+    @pytest.mark.asyncio
     async def test_healthcheck_skill_sandbox_error_is_rewritten(self):
         """Healthcheck SKILL.md sandbox errors should be rewritten to local-healthcheck guidance."""
         proxy = TelegramAPIProxy(sanitizer=_make_sanitizer())
@@ -397,6 +413,22 @@ class TestOutboundPipelineIntegration:
                 "text": (
                     "I apologize, but I am unable to access the healthcheck skill's SKILL.md file "
                     "due to sandbox security restrictions."
+                ),
+            }
+        ).encode()
+        result = json.loads(await proxy._filter_outbound(body, "application/json"))
+        assert "skill.md" not in result["text"].lower()
+        assert "/healthcheck" in result["text"].lower()
+
+    @pytest.mark.asyncio
+    async def test_healthcheck_skill_sandbox_error_variant_is_rewritten(self):
+        """Wording variants for healthcheck SKILL.md sandbox errors should be rewritten."""
+        proxy = TelegramAPIProxy(sanitizer=_make_sanitizer())
+        body = json.dumps(
+            {
+                "chat_id": "8096968754",
+                "text": (
+                    "I can't access healthcheck SKILL.md because of sandbox security restrictions."
                 ),
             }
         ).encode()
