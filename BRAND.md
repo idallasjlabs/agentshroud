@@ -24,8 +24,8 @@ AgentShroud™ is a trademark of Isaiah Dallas Jefferson, Jr., first used in com
 
 - Always use the ™ symbol on first reference in any document
 - Subsequent references may omit the ™
-- Federal trademark registration pending (see [USPTO-APPLICATION.md](USPTO-APPLICATION.md))
-- See [TRADEMARK.md](TRADEMARK.md) and [PRIOR-USE.md](PRIOR-USE.md) for full trademark documentation
+- Federal trademark registration pending (see [docs/project/legal/USPTO-APPLICATION.md](docs/project/legal/USPTO-APPLICATION.md))
+- See [docs/project/legal/TRADEMARK.md](docs/project/legal/TRADEMARK.md) and [docs/project/legal/PRIOR-USE.md](docs/project/legal/PRIOR-USE.md) for full trademark documentation
 
 ## Logo Usage
 
@@ -72,7 +72,7 @@ Logo assets are located in [`branding/logos/`](branding/logos/):
 
 ## Communication Templates
 
-See [COMMUNICATION-TEMPLATES.md](COMMUNICATION-TEMPLATES.md) for pre-approved outreach templates.
+See [docs/project/legal/COMMUNICATION-TEMPLATES.md](docs/project/legal/COMMUNICATION-TEMPLATES.md) for pre-approved outreach templates.
 
 ## License
 
