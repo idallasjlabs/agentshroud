@@ -547,6 +547,21 @@ class TestOutboundPipelineIntegration:
         assert "memory search is unavailable" in text.lower()
 
     @pytest.mark.asyncio
+    async def test_healthcheck_skill_error_is_rewritten_for_json_message_field(self):
+        """Healthcheck SKILL.md sandbox errors should rewrite when payload uses message field."""
+        proxy = TelegramAPIProxy(sanitizer=_make_sanitizer())
+        body = json.dumps(
+            {
+                "chat_id": "8096968754",
+                "message": "Cannot access healthcheck skill.md due to sandbox restrictions.",
+            }
+        ).encode()
+        result = json.loads(await proxy._filter_outbound(body, "application/json"))
+        text = result.get("message", "")
+        assert "skill.md" not in text.lower()
+        assert "/healthcheck" in text.lower()
+
+    @pytest.mark.asyncio
     async def test_healthcheck_skill_error_is_rewritten_for_json_content_field(self):
         """Healthcheck sandbox SKILL.md errors should rewrite when payload uses content field."""
         proxy = TelegramAPIProxy(sanitizer=_make_sanitizer())
@@ -889,6 +904,23 @@ class TestOutboundPipelineIntegration:
             (await proxy._filter_outbound(form_body, "application/x-www-form-urlencoded")).decode()
         )
         text = result.get("content", [""])[0]
+        assert "skill.md" not in text.lower()
+        assert "/healthcheck" in text.lower()
+
+    @pytest.mark.asyncio
+    async def test_healthcheck_skill_error_is_rewritten_for_form_message_field(self):
+        """Healthcheck SKILL.md sandbox errors should rewrite when form payload uses message field."""
+        proxy = TelegramAPIProxy(sanitizer=_make_sanitizer())
+        form_body = urllib.parse.urlencode(
+            {
+                "chat_id": "8096968754",
+                "message": "Cannot access healthcheck skill.md due to sandbox restrictions.",
+            }
+        ).encode()
+        result = urllib.parse.parse_qs(
+            (await proxy._filter_outbound(form_body, "application/x-www-form-urlencoded")).decode()
+        )
+        text = result.get("message", [""])[0]
         assert "skill.md" not in text.lower()
         assert "/healthcheck" in text.lower()
 
