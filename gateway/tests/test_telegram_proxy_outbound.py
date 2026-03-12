@@ -116,7 +116,7 @@ class TestOutboundPipelineIntegration:
         result = await proxy._filter_outbound(body, "application/json")
         result_data = json.loads(result)
 
-        assert "security pipeline" in result_data["text"].lower(),             "Non-owner messages must be blocked when pipeline crashes"
+        assert "protected by agentshroud" in result_data["text"].lower(),             "Non-owner messages must be blocked when pipeline crashes"
         assert "Some response with secrets" not in result_data["text"],             "Original content must not leak through on pipeline crash"
 
     @pytest.mark.asyncio
@@ -157,7 +157,7 @@ class TestOutboundPipelineIntegration:
 
         result = await proxy._filter_outbound(body, "application/json")
         result_data = json.loads(result)
-        assert "blocked by security policy" in result_data["text"].lower()
+        assert "protected by agentshroud" in result_data["text"].lower()
 
     @pytest.mark.asyncio
     async def test_long_outbound_message_quarantined(self, monkeypatch):
@@ -202,7 +202,7 @@ class TestOutboundPipelineIntegration:
 
         result = await proxy._filter_outbound(body, "application/json")
         result_data = json.loads(result)
-        assert "blocked by security policy" in result_data["text"].lower()
+        assert "protected by agentshroud" in result_data["text"].lower()
 
     @pytest.mark.asyncio
     async def test_block_cascade_blocks_followup_fragment(self):
@@ -215,12 +215,12 @@ class TestOutboundPipelineIntegration:
         # First chunk triggers over-length block and starts cascade window.
         first = json.dumps({"chat_id": chat_id, "text": "X" * 20}).encode()
         first_result = json.loads(await proxy._filter_outbound(first, "application/json"))
-        assert "blocked by security policy" in first_result["text"].lower()
+        assert "protected by agentshroud" in first_result["text"].lower()
 
         # Second small chunk should still be blocked during cascade window.
         second = json.dumps({"chat_id": chat_id, "text": "ok"}).encode()
         second_result = json.loads(await proxy._filter_outbound(second, "application/json"))
-        assert "blocked by security policy" in second_result["text"].lower()
+        assert "protected by agentshroud" in second_result["text"].lower()
 
     @pytest.mark.asyncio
     async def test_markdown_exfil_link_scrubbed(self):
@@ -270,7 +270,7 @@ class TestOutboundPipelineIntegration:
         ).encode()
         result = json.loads(await proxy._filter_outbound(body, "application/json"))
         assert "sessions_spawn" not in result["text"]
-        assert "healthcheck started" in result["text"].lower()
+        assert "protected by agentshroud" in result["text"].lower()
 
     @pytest.mark.asyncio
     async def test_raw_tool_call_json_with_zero_width_chars_is_suppressed(self):
@@ -284,7 +284,7 @@ class TestOutboundPipelineIntegration:
         ).encode()
         result = json.loads(await proxy._filter_outbound(body, "application/json"))
         assert "sessions_spawn" not in result["text"]
-        assert "healthcheck started" in result["text"].lower()
+        assert "protected by agentshroud" in result["text"].lower()
 
     @pytest.mark.asyncio
     async def test_no_reply_tool_token_is_rewritten_to_wait_message(self):
@@ -370,8 +370,71 @@ class TestOutboundPipelineIntegration:
         assert "switch_model.sh" in result["text"]
 
     @pytest.mark.asyncio
-    async def test_memory_provider_error_is_rewritten(self):
-        """Embedding/provider memory errors should be rewritten to actionable guidance."""
+    async def test_llm_timeout_error_is_sanitized(self):
+        """Raw timeout errors should be rewritten to deterministic retry guidance."""
+        proxy = TelegramAPIProxy(sanitizer=_make_sanitizer())
+        body = json.dumps(
+            {
+                "chat_id": "8096968754",
+                "text": "LLM request timed out.",
+            }
+        ).encode()
+        result = json.loads(await proxy._filter_outbound(body, "application/json"))
+        assert "llm request timed out" not in result["text"].lower()
+        assert "model response timed out" in result["text"].lower()
+        assert "switch_model.sh" in result["text"]
+
+    @pytest.mark.asyncio
+    async def test_agent_failed_timeout_error_is_sanitized(self):
+        """Agent timeout prefix variants should also map to retry guidance."""
+        proxy = TelegramAPIProxy(sanitizer=_make_sanitizer())
+        body = json.dumps(
+            {
+                "chat_id": "8096968754",
+                "text": "⚠️ Agent failed before reply: request timed out after 120000ms",
+            }
+        ).encode()
+        result = json.loads(await proxy._filter_outbound(body, "application/json"))
+        assert "agent failed before reply" not in result["text"].lower()
+        assert "timed out after" not in result["text"].lower()
+        assert "model response timed out" in result["text"].lower()
+
+    @pytest.mark.asyncio
+    async def test_timeout_error_is_sanitized_for_form_payload(self):
+        """Timeout rewrites should apply to urlencoded Telegram payloads too."""
+        proxy = TelegramAPIProxy(sanitizer=_make_sanitizer())
+        form_body = urllib.parse.urlencode(
+            {
+                "chat_id": "8096968754",
+                "text": "LLM request timed out.",
+            }
+        ).encode()
+        result = urllib.parse.parse_qs(
+            (await proxy._filter_outbound(form_body, "application/x-www-form-urlencoded")).decode()
+        )
+        text = result.get("text", [""])[0]
+        assert "llm request timed out" not in text.lower()
+        assert "model response timed out" in text.lower()
+        assert "switch_model.sh" in text
+
+    @pytest.mark.asyncio
+    async def test_timeout_error_is_sanitized_for_json_message_field(self):
+        """Timeout rewrites should apply when JSON payload uses message field."""
+        proxy = TelegramAPIProxy(sanitizer=_make_sanitizer())
+        body = json.dumps(
+            {
+                "chat_id": "8096968754",
+                "message": "LLM request timed out.",
+            }
+        ).encode()
+        result = json.loads(await proxy._filter_outbound(body, "application/json"))
+        text = result.get("message", "")
+        assert "llm request timed out" not in text.lower()
+        assert "model response timed out" in text.lower()
+
+    @pytest.mark.asyncio
+    async def test_memory_provider_error_is_rewritten_to_generic_runtime_guidance(self):
+        """Embedding/provider errors without explicit memory command context should be generic."""
         proxy = TelegramAPIProxy(sanitizer=_make_sanitizer())
         body = json.dumps(
             {
@@ -384,12 +447,13 @@ class TestOutboundPipelineIntegration:
         ).encode()
         result = json.loads(await proxy._filter_outbound(body, "application/json"))
         assert "embedding/provider error" not in result["text"].lower()
-        assert "memory search is unavailable" in result["text"].lower()
+        assert "memory search is unavailable" not in result["text"].lower()
+        assert "runtime dependency error" in result["text"].lower()
         assert "switch_model.sh" in result["text"]
 
     @pytest.mark.asyncio
-    async def test_memory_provider_error_variant_is_rewritten(self):
-        """Variant wording for embedding provider errors should still be rewritten."""
+    async def test_memory_provider_error_variant_is_rewritten_generic(self):
+        """Variant wording should still map to generic runtime guidance by default."""
         proxy = TelegramAPIProxy(sanitizer=_make_sanitizer())
         body = json.dumps(
             {
@@ -401,11 +465,11 @@ class TestOutboundPipelineIntegration:
         ).encode()
         result = json.loads(await proxy._filter_outbound(body, "application/json"))
         assert "embedding provider error" not in result["text"].lower()
-        assert "memory search is unavailable" in result["text"].lower()
+        assert "runtime dependency error" in result["text"].lower()
 
     @pytest.mark.asyncio
-    async def test_memory_provider_error_case_variant_is_rewritten(self):
-        """Mixed-case wording variants should still trigger memory rewrite guidance."""
+    async def test_memory_provider_error_case_variant_is_rewritten_generic(self):
+        """Mixed-case wording variants should still trigger generic runtime guidance."""
         proxy = TelegramAPIProxy(sanitizer=_make_sanitizer())
         body = json.dumps(
             {
@@ -415,7 +479,76 @@ class TestOutboundPipelineIntegration:
         ).encode()
         result = json.loads(await proxy._filter_outbound(body, "application/json"))
         assert "embedding_provider error" not in result["text"].lower()
+        assert "runtime dependency error" in result["text"].lower()
+
+    @pytest.mark.asyncio
+    async def test_runtime_profile_memory_error_text_is_rewritten_generic(self):
+        """Previously emitted runtime-profile memory text should be normalized to generic guidance."""
+        proxy = TelegramAPIProxy(sanitizer=_make_sanitizer())
+        body = json.dumps(
+            {
+                "chat_id": "8096968754",
+                "text": (
+                    "⚠️ Memory search is unavailable in this runtime profile. "
+                    "Switch to a configured embedding-capable profile (for example: scripts/switch_model.sh gemini), "
+                    "or configure agents.defaults.memorySearch.provider, then retry."
+                ),
+            }
+        ).encode()
+        result = json.loads(await proxy._filter_outbound(body, "application/json"))
+        assert "memory search is unavailable in this runtime profile" not in result["text"].lower()
+        assert "runtime dependency error" in result["text"].lower()
+
+    @pytest.mark.asyncio
+    async def test_memory_provider_guidance_phrase_is_rewritten_generic(self):
+        """Memory guidance mentioning agents.defaults.memorySearch.provider should normalize to generic guidance."""
+        proxy = TelegramAPIProxy(sanitizer=_make_sanitizer())
+        body = json.dumps(
+            {
+                "chat_id": "8096968754",
+                "text": (
+                    "Memory search is unavailable in this runtime profile. "
+                    "Switch to a configured embedding-capable profile (for example: scripts/switch_model.sh gemini), "
+                    "or configure agents.defaults.memorySearch.provider, then retry."
+                ),
+            }
+        ).encode()
+        result = json.loads(await proxy._filter_outbound(body, "application/json"))
+        assert "agents.defaults.memorysearch.provider" not in result["text"].lower()
+        assert "runtime dependency error" in result["text"].lower()
+
+    @pytest.mark.asyncio
+    async def test_truncated_model_sentence_is_rewritten_to_active_model_hint(self):
+        """Truncated 'current model' replies should be rewritten to deterministic model hint."""
+        proxy = TelegramAPIProxy(sanitizer=_make_sanitizer())
+        body = json.dumps(
+            {
+                "chat_id": "8096968754",
+                "text": "We are currently using the model",
+            }
+        ).encode()
+        result = json.loads(await proxy._filter_outbound(body, "application/json"))
+        assert "we are currently using the model" not in result["text"].lower()
+        assert "current model:" in result["text"].lower()
+
+    @pytest.mark.asyncio
+    async def test_memory_provider_error_with_explicit_memory_command_keeps_memory_guidance(self):
+        """Explicit memory-search command context should keep memory-specific remediation text."""
+        proxy = TelegramAPIProxy(sanitizer=_make_sanitizer())
+        body = json.dumps(
+            {
+                "chat_id": "8096968754",
+                "text": (
+                    "Memory search is currently unavailable due to an embedding/provider error. "
+                    "Please retry the memory search command."
+                ),
+            }
+        ).encode()
+        result = json.loads(await proxy._filter_outbound(body, "application/json"))
         assert "memory search is unavailable" in result["text"].lower()
+        assert "switch_model.sh" in result["text"]
+        assert "switch_model.sh gemini" in result["text"]
+        assert "cloud gemini" not in result["text"].lower()
 
     @pytest.mark.asyncio
     async def test_memory_provider_error_hyphen_variant_is_rewritten(self):
@@ -429,7 +562,7 @@ class TestOutboundPipelineIntegration:
         ).encode()
         result = json.loads(await proxy._filter_outbound(body, "application/json"))
         assert "embedding-provider error" not in result["text"].lower()
-        assert "memory search is unavailable" in result["text"].lower()
+        assert "runtime dependency error" in result["text"].lower()
 
     @pytest.mark.asyncio
     async def test_memory_provider_error_underscore_variant_is_rewritten(self):
@@ -443,7 +576,24 @@ class TestOutboundPipelineIntegration:
         ).encode()
         result = json.loads(await proxy._filter_outbound(body, "application/json"))
         assert "embedding_provider error" not in result["text"].lower()
-        assert "memory search is unavailable" in result["text"].lower()
+        assert "runtime dependency error" in result["text"].lower()
+
+    @pytest.mark.asyncio
+    async def test_collaborator_multiturn_block_text_is_normalized_to_protected_notice(self):
+        """Collaborator multi-turn disclosure block prose should be normalized."""
+        proxy = TelegramAPIProxy(sanitizer=_make_sanitizer())
+        body = json.dumps(
+            {
+                "chat_id": "7614658040",
+                "text": (
+                    "It seems that your request has been blocked due to security protocols "
+                    "regarding multi-turn disclosure risks."
+                ),
+            }
+        ).encode()
+        result = json.loads(await proxy._filter_outbound(body, "application/json"))
+        assert "multi-turn disclosure" not in result["text"].lower()
+        assert "protected by agentshroud" in result["text"].lower()
 
     @pytest.mark.asyncio
     async def test_healthcheck_skill_sandbox_error_is_rewritten(self):
@@ -505,7 +655,7 @@ class TestOutboundPipelineIntegration:
         result = json.loads(await proxy._filter_outbound(body, "application/json"))
         text = result.get("draft", "")
         assert "embedding provider error" not in text.lower()
-        assert "memory search is unavailable" in text.lower()
+        assert "runtime dependency error" in text.lower()
 
     @pytest.mark.asyncio
     async def test_healthcheck_skill_error_is_rewritten_for_json_caption_field(self):
@@ -544,7 +694,7 @@ class TestOutboundPipelineIntegration:
         result = json.loads(await proxy._filter_outbound(body, "application/json"))
         text = result.get("message", "")
         assert "embedding/provider error" not in text.lower()
-        assert "memory search is unavailable" in text.lower()
+        assert "runtime dependency error" in text.lower()
 
     @pytest.mark.asyncio
     async def test_healthcheck_skill_error_is_rewritten_for_json_message_field(self):
@@ -603,7 +753,7 @@ class TestOutboundPipelineIntegration:
         )
         text = result.get("text", [""])[0]
         assert "embedding/provider error" not in text.lower()
-        assert "memory search is unavailable" in text.lower()
+        assert "runtime dependency error" in text.lower()
 
     @pytest.mark.asyncio
     async def test_memory_provider_error_variant_is_rewritten_for_form_payload(self):
@@ -620,7 +770,7 @@ class TestOutboundPipelineIntegration:
         )
         text = result.get("text", [""])[0]
         assert "embedding_provider error" not in text.lower()
-        assert "memory search is unavailable" in text.lower()
+        assert "runtime dependency error" in text.lower()
 
     @pytest.mark.asyncio
     async def test_memory_provider_error_slash_variant_is_rewritten_for_form_payload(self):
@@ -637,7 +787,7 @@ class TestOutboundPipelineIntegration:
         )
         text = result.get("text", [""])[0]
         assert "embedding/provider error" not in text.lower()
-        assert "memory search is unavailable" in text.lower()
+        assert "runtime dependency error" in text.lower()
 
     @pytest.mark.asyncio
     async def test_memory_provider_error_hyphen_variant_is_rewritten_for_form_payload(self):
@@ -654,7 +804,7 @@ class TestOutboundPipelineIntegration:
         )
         text = result.get("text", [""])[0]
         assert "embedding-provider error" not in text.lower()
-        assert "memory search is unavailable" in text.lower()
+        assert "runtime dependency error" in text.lower()
 
     @pytest.mark.asyncio
     async def test_memory_error_without_embedding_provider_hint_is_not_rewritten(self):
@@ -888,7 +1038,7 @@ class TestOutboundPipelineIntegration:
         )
         text = result.get("caption", [""])[0]
         assert "embedding/provider error" not in text.lower()
-        assert "memory search is unavailable" in text.lower()
+        assert "runtime dependency error" in text.lower()
 
     @pytest.mark.asyncio
     async def test_healthcheck_skill_error_is_rewritten_for_form_content_field(self):
@@ -940,6 +1090,8 @@ class TestOutboundPipelineIntegration:
         result = json.loads(await proxy._filter_outbound(body, "application/json"))
         assert "requires authentication" not in result["text"].lower()
         assert "ollama-local" in result["text"]
+        assert "switch_model.sh gemini" in result["text"]
+        assert "cloud gemini" not in result["text"].lower()
 
     @pytest.mark.asyncio
     async def test_urlencoded_draft_payload_tool_json_is_rewritten(self):
@@ -1051,8 +1203,8 @@ class TestOutboundPipelineIntegration:
         assert "still processing" in forwarded.get("text", "").lower()
 
     @pytest.mark.asyncio
-    async def test_proxy_request_suppresses_duplicate_no_reply_messages(self, monkeypatch):
-        """Repeated NO_REPLY payloads in cooldown window should be suppressed."""
+    async def test_proxy_request_duplicate_no_reply_messages_return_deterministic_reply(self, monkeypatch):
+        """Repeated NO_REPLY payloads should still return deterministic non-empty replies."""
         proxy = TelegramAPIProxy(sanitizer=_make_sanitizer())
         calls = {"count": 0}
 
@@ -1079,8 +1231,8 @@ class TestOutboundPipelineIntegration:
         )
         assert first.get("ok") is True
         assert second.get("ok") is True
-        assert second.get("result", {}).get("suppressed") is True
-        assert calls["count"] == 1
+        assert second.get("result", {}).get("suppressed") is not True
+        assert calls["count"] == 2
 
     @pytest.mark.asyncio
     async def test_proxy_request_suppresses_duplicate_system_startup_notice(self, monkeypatch):
@@ -1174,6 +1326,220 @@ class TestOutboundPipelineIntegration:
             bot_token="dummy",
             method="sendMessage",
             body=shutdown,
+            content_type="application/json",
+            is_system=True,
+        )
+
+        assert first.get("ok") is True
+        assert second.get("ok") is True
+        assert second.get("result", {}).get("suppressed") is not True
+        assert calls["count"] == 2
+
+    @pytest.mark.asyncio
+    async def test_proxy_request_suppresses_duplicate_starting_notice(self, monkeypatch):
+        """Starting notices should be deduplicated in cooldown window."""
+        proxy = TelegramAPIProxy(sanitizer=_make_sanitizer())
+        calls = {"count": 0}
+
+        async def _mock_forward(*_args, **_kwargs):
+            calls["count"] += 1
+            return {"ok": True, "result": {"message_id": calls["count"]}}
+
+        monkeypatch.setattr(proxy, "_forward_to_telegram", _mock_forward)
+
+        body = json.dumps({"chat_id": "8096968754", "text": "🟡 AgentShroud starting"}).encode()
+        first = await proxy.proxy_request(
+            bot_token="dummy",
+            method="sendMessage",
+            body=body,
+            content_type="application/json",
+            is_system=True,
+        )
+        second = await proxy.proxy_request(
+            bot_token="dummy",
+            method="sendMessage",
+            body=body,
+            content_type="application/json",
+            is_system=True,
+        )
+
+        assert first.get("ok") is True
+        assert second.get("ok") is True
+        assert second.get("result", {}).get("suppressed") is True
+        assert calls["count"] == 1
+
+    @pytest.mark.asyncio
+    async def test_proxy_request_suppresses_starting_notice_emoji_variants(self, monkeypatch):
+        """Starting notice dedupe should tolerate emoji variation drift."""
+        proxy = TelegramAPIProxy(sanitizer=_make_sanitizer())
+        calls = {"count": 0}
+
+        async def _mock_forward(*_args, **_kwargs):
+            calls["count"] += 1
+            return {"ok": True, "result": {"message_id": calls["count"]}}
+
+        monkeypatch.setattr(proxy, "_forward_to_telegram", _mock_forward)
+
+        first_body = json.dumps({"chat_id": "8096968754", "text": "🟡 AgentShroud starting"}).encode()
+        second_body = json.dumps({"chat_id": "8096968754", "text": "🟡️ AgentShroud starting"}).encode()
+
+        first = await proxy.proxy_request(
+            bot_token="dummy",
+            method="sendMessage",
+            body=first_body,
+            content_type="application/json",
+            is_system=True,
+        )
+        second = await proxy.proxy_request(
+            bot_token="dummy",
+            method="sendMessage",
+            body=second_body,
+            content_type="application/json",
+            is_system=True,
+        )
+
+        assert first.get("ok") is True
+        assert second.get("ok") is True
+        assert second.get("result", {}).get("suppressed") is True
+        assert calls["count"] == 1
+
+    @pytest.mark.asyncio
+    async def test_proxy_request_allows_starting_then_online_sequence(self, monkeypatch):
+        """Starting and online notices are distinct and should both forward."""
+        proxy = TelegramAPIProxy(sanitizer=_make_sanitizer())
+        calls = {"count": 0}
+
+        async def _mock_forward(*_args, **_kwargs):
+            calls["count"] += 1
+            return {"ok": True, "result": {"message_id": calls["count"]}}
+
+        monkeypatch.setattr(proxy, "_forward_to_telegram", _mock_forward)
+
+        starting = json.dumps({"chat_id": "8096968754", "text": "🟡 AgentShroud starting"}).encode()
+        online = json.dumps({"chat_id": "8096968754", "text": "🛡️ AgentShroud online"}).encode()
+
+        first = await proxy.proxy_request(
+            bot_token="dummy",
+            method="sendMessage",
+            body=starting,
+            content_type="application/json",
+            is_system=True,
+        )
+        second = await proxy.proxy_request(
+            bot_token="dummy",
+            method="sendMessage",
+            body=online,
+            content_type="application/json",
+            is_system=True,
+        )
+
+        assert first.get("ok") is True
+        assert second.get("ok") is True
+        assert second.get("result", {}).get("suppressed") is not True
+        assert calls["count"] == 2
+
+    @pytest.mark.asyncio
+    async def test_proxy_request_suppresses_duplicate_delayed_starting_notice(self, monkeypatch):
+        """Delayed-starting notices should also be deduplicated in cooldown window."""
+        proxy = TelegramAPIProxy(sanitizer=_make_sanitizer())
+        calls = {"count": 0}
+
+        async def _mock_forward(*_args, **_kwargs):
+            calls["count"] += 1
+            return {"ok": True, "result": {"message_id": calls["count"]}}
+
+        monkeypatch.setattr(proxy, "_forward_to_telegram", _mock_forward)
+
+        body = json.dumps(
+            {"chat_id": "8096968754", "text": "🟠 AgentShroud starting (readiness delayed)"}
+        ).encode()
+        first = await proxy.proxy_request(
+            bot_token="dummy",
+            method="sendMessage",
+            body=body,
+            content_type="application/json",
+            is_system=True,
+        )
+        second = await proxy.proxy_request(
+            bot_token="dummy",
+            method="sendMessage",
+            body=body,
+            content_type="application/json",
+            is_system=True,
+        )
+
+        assert first.get("ok") is True
+        assert second.get("ok") is True
+        assert second.get("result", {}).get("suppressed") is True
+        assert calls["count"] == 1
+
+    @pytest.mark.asyncio
+    async def test_proxy_request_suppresses_delayed_starting_notice_emoji_variants(self, monkeypatch):
+        """Delayed-starting dedupe should tolerate emoji variation drift."""
+        proxy = TelegramAPIProxy(sanitizer=_make_sanitizer())
+        calls = {"count": 0}
+
+        async def _mock_forward(*_args, **_kwargs):
+            calls["count"] += 1
+            return {"ok": True, "result": {"message_id": calls["count"]}}
+
+        monkeypatch.setattr(proxy, "_forward_to_telegram", _mock_forward)
+
+        first_body = json.dumps(
+            {"chat_id": "8096968754", "text": "🟠 AgentShroud starting (readiness delayed)"}
+        ).encode()
+        second_body = json.dumps(
+            {"chat_id": "8096968754", "text": "🟠️ AgentShroud starting (readiness delayed)"}
+        ).encode()
+
+        first = await proxy.proxy_request(
+            bot_token="dummy",
+            method="sendMessage",
+            body=first_body,
+            content_type="application/json",
+            is_system=True,
+        )
+        second = await proxy.proxy_request(
+            bot_token="dummy",
+            method="sendMessage",
+            body=second_body,
+            content_type="application/json",
+            is_system=True,
+        )
+
+        assert first.get("ok") is True
+        assert second.get("ok") is True
+        assert second.get("result", {}).get("suppressed") is True
+        assert calls["count"] == 1
+
+    @pytest.mark.asyncio
+    async def test_proxy_request_allows_delayed_starting_then_online_sequence(self, monkeypatch):
+        """Delayed-starting and online notices are distinct and should both forward."""
+        proxy = TelegramAPIProxy(sanitizer=_make_sanitizer())
+        calls = {"count": 0}
+
+        async def _mock_forward(*_args, **_kwargs):
+            calls["count"] += 1
+            return {"ok": True, "result": {"message_id": calls["count"]}}
+
+        monkeypatch.setattr(proxy, "_forward_to_telegram", _mock_forward)
+
+        delayed = json.dumps(
+            {"chat_id": "8096968754", "text": "🟠 AgentShroud starting (readiness delayed)"}
+        ).encode()
+        online = json.dumps({"chat_id": "8096968754", "text": "🛡️ AgentShroud online"}).encode()
+
+        first = await proxy.proxy_request(
+            bot_token="dummy",
+            method="sendMessage",
+            body=delayed,
+            content_type="application/json",
+            is_system=True,
+        )
+        second = await proxy.proxy_request(
+            bot_token="dummy",
+            method="sendMessage",
+            body=online,
             content_type="application/json",
             is_system=True,
         )
@@ -1824,8 +2190,8 @@ class TestOutboundPipelineIntegration:
         assert "approval request queued" not in result["text"].lower()
 
     @pytest.mark.asyncio
-    async def test_raw_web_fetch_json_url_with_whitespace_does_not_queue_approval(self, monkeypatch):
-        """Whitespace in leaked URL should be rejected before approval queueing."""
+    async def test_raw_web_fetch_json_url_with_whitespace_queues_approval_using_first_token(self, monkeypatch):
+        """Whitespace in leaked URL should queue approval using first URL token."""
         calls = {"count": 0}
 
         class FakeEgress:
@@ -1851,8 +2217,8 @@ class TestOutboundPipelineIntegration:
         result = json.loads(await proxy._filter_outbound(body, "application/json"))
         await asyncio.sleep(0)
 
-        assert calls["count"] == 0
-        assert "approval request queued" not in result["text"].lower()
+        assert calls["count"] == 1
+        assert "approval request queued" in result["text"].lower()
 
     @pytest.mark.asyncio
     async def test_raw_web_fetch_json_non_http_scheme_does_not_queue_approval(self, monkeypatch):
@@ -2278,7 +2644,7 @@ class TestRuntimeRewriteHelpers:
         text = "Memory search unavailable: embedding/provider error during index bootstrap."
         rewritten = TelegramAPIProxy._rewrite_known_runtime_errors(text)
         assert rewritten is not None
-        assert "memory search is unavailable" in rewritten.lower()
+        assert "runtime dependency error" in rewritten.lower()
 
     def test_rewrite_known_runtime_errors_matches_healthcheck_skill_sandbox_error(self):
         text = "Cannot access healthcheck SKILL.md due to sandbox restrictions."
@@ -2294,7 +2660,7 @@ class TestRuntimeRewriteHelpers:
         text = "Memory search disabled: embedding-provider error during index bootstrap."
         rewritten = TelegramAPIProxy._rewrite_known_runtime_errors(text)
         assert rewritten is not None
-        assert "memory search is unavailable" in rewritten.lower()
+        assert "runtime dependency error" in rewritten.lower()
 
     def test_rewrite_known_runtime_errors_requires_skill_marker_for_healthcheck_branch(self):
         text = "Cannot access healthcheck diagnostics due to sandbox restrictions."
@@ -2304,7 +2670,7 @@ class TestRuntimeRewriteHelpers:
         text = "Memory search disabled: embedding_provider error during index bootstrap."
         rewritten = TelegramAPIProxy._rewrite_known_runtime_errors(text)
         assert rewritten is not None
-        assert "memory search is unavailable" in rewritten.lower()
+        assert "runtime dependency error" in rewritten.lower()
 
     def test_rewrite_known_runtime_errors_matches_cannot_to_access_variant(self):
         text = "I cannot to access healthcheck skill.md due to sandbox restrictions."
@@ -2387,6 +2753,16 @@ class TestEgressTargetExtraction:
 
     def test_extract_first_egress_target_returns_none_when_no_url_or_domain(self):
         text = "just summarize the current status without browsing"
+        target = TelegramAPIProxy._extract_first_egress_target(text)
+        assert target is None
+
+    def test_extract_first_egress_target_ignores_markdown_filename_token(self):
+        text = "show BOOTSTRAP.md from workspace"
+        target = TelegramAPIProxy._extract_first_egress_target(text)
+        assert target is None
+
+    def test_extract_first_egress_target_ignores_text_filename_token(self):
+        text = "create test.txt with sample content"
         target = TelegramAPIProxy._extract_first_egress_target(text)
         assert target is None
 

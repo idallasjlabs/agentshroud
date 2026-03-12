@@ -13,6 +13,9 @@ COLLABORATOR_SESSION=collaborator_session
 # Bot Username
 BOT_USERNAME=@agentshroud_bot
 
-# Report Settings
-# Leave REPORT_FILE unset to use the default timestamped report under reports/
-INPUT_FILE=blueteam_inputs.txt
+# Optional input overrides
+# Leave unset to use:
+#   security_assessment/inputs/blue_team_inputs.txt
+#   security_assessment/inputs/red_team_inputs.txt
+# BLUE_INPUT_FILE=inputs/blue_team_inputs.txt
+# RED_INPUT_FILE=inputs/red_team_inputs.txt

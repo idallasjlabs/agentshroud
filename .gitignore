@@ -26,7 +26,7 @@ docker/secrets/*
 .llm_env.*
 llm_settings/env/.llm_env
 llm_settings/mcp-servers/**/.env
-blueteam_assesment/.blueteam_env
+security_assessment/.assessment_env
 
 # SSH & GPG keys
 .ssh/
