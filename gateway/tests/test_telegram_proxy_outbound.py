@@ -116,7 +116,7 @@ class TestOutboundPipelineIntegration:
         result = await proxy._filter_outbound(body, "application/json")
         result_data = json.loads(result)
 
-        assert "protected by agentshroud" in result_data["text"].lower(),             "Non-owner messages must be blocked when pipeline crashes"
+        assert "protect by agentshroud" in result_data["text"].lower(),             "Non-owner messages must be blocked when pipeline crashes"
         assert "Some response with secrets" not in result_data["text"],             "Original content must not leak through on pipeline crash"
 
     @pytest.mark.asyncio
@@ -157,7 +157,7 @@ class TestOutboundPipelineIntegration:
 
         result = await proxy._filter_outbound(body, "application/json")
         result_data = json.loads(result)
-        assert "protected by agentshroud" in result_data["text"].lower()
+        assert "protect by agentshroud" in result_data["text"].lower()
 
     @pytest.mark.asyncio
     async def test_long_outbound_message_quarantined(self, monkeypatch):
@@ -202,7 +202,7 @@ class TestOutboundPipelineIntegration:
 
         result = await proxy._filter_outbound(body, "application/json")
         result_data = json.loads(result)
-        assert "protected by agentshroud" in result_data["text"].lower()
+        assert "protect by agentshroud" in result_data["text"].lower()
 
     @pytest.mark.asyncio
     async def test_block_cascade_blocks_followup_fragment(self):
@@ -215,12 +215,12 @@ class TestOutboundPipelineIntegration:
         # First chunk triggers over-length block and starts cascade window.
         first = json.dumps({"chat_id": chat_id, "text": "X" * 20}).encode()
         first_result = json.loads(await proxy._filter_outbound(first, "application/json"))
-        assert "protected by agentshroud" in first_result["text"].lower()
+        assert "protect by agentshroud" in first_result["text"].lower()
 
         # Second small chunk should still be blocked during cascade window.
         second = json.dumps({"chat_id": chat_id, "text": "ok"}).encode()
         second_result = json.loads(await proxy._filter_outbound(second, "application/json"))
-        assert "protected by agentshroud" in second_result["text"].lower()
+        assert "protect by agentshroud" in second_result["text"].lower()
 
     @pytest.mark.asyncio
     async def test_markdown_exfil_link_scrubbed(self):
@@ -270,7 +270,7 @@ class TestOutboundPipelineIntegration:
         ).encode()
         result = json.loads(await proxy._filter_outbound(body, "application/json"))
         assert "sessions_spawn" not in result["text"]
-        assert "protected by agentshroud" in result["text"].lower()
+        assert "protect by agentshroud" in result["text"].lower()
 
     @pytest.mark.asyncio
     async def test_raw_tool_call_json_with_zero_width_chars_is_suppressed(self):
@@ -284,7 +284,7 @@ class TestOutboundPipelineIntegration:
         ).encode()
         result = json.loads(await proxy._filter_outbound(body, "application/json"))
         assert "sessions_spawn" not in result["text"]
-        assert "protected by agentshroud" in result["text"].lower()
+        assert "protect by agentshroud" in result["text"].lower()
 
     @pytest.mark.asyncio
     async def test_no_reply_tool_token_is_rewritten_to_wait_message(self):
@@ -294,6 +294,72 @@ class TestOutboundPipelineIntegration:
             {
                 "chat_id": "8096968754",
                 "text": "{\"name\": \"NO_REPLY\", \"arguments\": {}}",
+            }
+        ).encode()
+        result = json.loads(await proxy._filter_outbound(body, "application/json"))
+        assert "still processing" in result["text"].lower()
+
+    @pytest.mark.asyncio
+    async def test_plain_no_reply_token_is_rewritten_to_wait_message(self):
+        """Plain NO_REPLY text should still be normalized to deterministic wait guidance."""
+        proxy = TelegramAPIProxy(sanitizer=_make_sanitizer())
+        body = json.dumps(
+            {
+                "chat_id": "8096968754",
+                "text": "NO_REPLY",
+            }
+        ).encode()
+        result = json.loads(await proxy._filter_outbound(body, "application/json"))
+        assert "still processing" in result["text"].lower()
+
+    @pytest.mark.asyncio
+    async def test_plain_no_reply_token_for_collaborator_gets_protected_notice(self):
+        """Collaborator plain NO_REPLY should become protected unavailable notice."""
+        proxy = TelegramAPIProxy(sanitizer=_make_sanitizer())
+        body = json.dumps(
+            {
+                "chat_id": "7614658040",
+                "text": "NO_REPLY",
+            }
+        ).encode()
+        result = json.loads(await proxy._filter_outbound(body, "application/json"))
+        assert "protect by agentshroud" in result["text"].lower()
+        assert "can't do that right now" in result["text"].lower()
+
+    @pytest.mark.asyncio
+    async def test_plain_no_reply_token_with_punctuation_is_rewritten(self):
+        """NO_REPLY wrapped with punctuation should still be normalized."""
+        proxy = TelegramAPIProxy(sanitizer=_make_sanitizer())
+        body = json.dumps(
+            {
+                "chat_id": "8096968754",
+                "text": "`NO_REPLY.`",
+            }
+        ).encode()
+        result = json.loads(await proxy._filter_outbound(body, "application/json"))
+        assert "still processing" in result["text"].lower()
+
+    @pytest.mark.asyncio
+    async def test_plain_no_reply_token_in_markdown_fence_is_rewritten(self):
+        """NO_REPLY wrapped in markdown fence should still normalize."""
+        proxy = TelegramAPIProxy(sanitizer=_make_sanitizer())
+        body = json.dumps(
+            {
+                "chat_id": "8096968754",
+                "text": "```NO_REPLY```",
+            }
+        ).encode()
+        result = json.loads(await proxy._filter_outbound(body, "application/json"))
+        assert "still processing" in result["text"].lower()
+
+    @pytest.mark.asyncio
+    async def test_plain_no_reply_token_in_multiline_markdown_fence_is_rewritten(self):
+        """Multiline fenced NO_REPLY token should still normalize."""
+        proxy = TelegramAPIProxy(sanitizer=_make_sanitizer())
+        body = json.dumps(
+            {
+                "chat_id": "8096968754",
+                "text": "```text\nNO_REPLY\n```",
             }
         ).encode()
         result = json.loads(await proxy._filter_outbound(body, "application/json"))
@@ -341,6 +407,185 @@ class TestOutboundPipelineIntegration:
         assert "previous request" in result["text"].lower()
 
     @pytest.mark.asyncio
+    async def test_collaborator_not_authorized_command_text_is_normalized_json(self):
+        """Collaborator auth-denial command text should map to protected scope notice."""
+        proxy = TelegramAPIProxy(sanitizer=_make_sanitizer())
+        body = json.dumps(
+            {
+                "chat_id": "7614658040",
+                "text": "You are not authorized to use this command.",
+            }
+        ).encode()
+        result = json.loads(await proxy._filter_outbound(body, "application/json"))
+        assert "protect by agentshroud" in result["text"].lower()
+        assert "command/tool execution details are restricted" in result["text"].lower()
+        assert "not authorized to use this command" not in result["text"].lower()
+
+    @pytest.mark.asyncio
+    async def test_collaborator_not_authorized_command_text_is_normalized_form(self):
+        """Form payload auth-denial command text should map to protected scope notice."""
+        proxy = TelegramAPIProxy(sanitizer=_make_sanitizer())
+        body = urllib.parse.urlencode(
+            {
+                "chat_id": "7614658040",
+                "text": "You are not authorized to use this command.",
+            }
+        ).encode()
+        result = await proxy._filter_outbound(body, "application/x-www-form-urlencoded")
+        parsed = dict(urllib.parse.parse_qsl(result.decode(), keep_blank_values=True))
+        assert "protect by agentshroud" in parsed.get("text", "").lower()
+        assert "not authorized to use this command" not in parsed.get("text", "").lower()
+
+    @pytest.mark.asyncio
+    async def test_collaborator_agent_failed_prefix_is_normalized_json(self):
+        """Collaborator agent-failed prefix should normalize to protected unavailable notice."""
+        proxy = TelegramAPIProxy(sanitizer=_make_sanitizer())
+        body = json.dumps(
+            {
+                "chat_id": "7614658040",
+                "text": "⚠️ Agent failed before reply: internal adapter fault stacktrace=...",
+            }
+        ).encode()
+        result = json.loads(await proxy._filter_outbound(body, "application/json"))
+        assert "protect by agentshroud" in result["text"].lower()
+        assert "can't do that right now" in result["text"].lower()
+        assert "internal adapter fault" not in result["text"].lower()
+
+    @pytest.mark.asyncio
+    async def test_collaborator_agent_failed_prefix_is_normalized_form(self):
+        """Form payload agent-failed prefix should normalize to protected unavailable notice."""
+        proxy = TelegramAPIProxy(sanitizer=_make_sanitizer())
+        body = urllib.parse.urlencode(
+            {
+                "chat_id": "7614658040",
+                "text": "⚠️ Agent failed before reply: internal adapter fault stacktrace=...",
+            }
+        ).encode()
+        result = await proxy._filter_outbound(body, "application/x-www-form-urlencoded")
+        parsed = dict(urllib.parse.parse_qsl(result.decode(), keep_blank_values=True))
+        assert "protect by agentshroud" in parsed.get("text", "").lower()
+        assert "can't do that right now" in parsed.get("text", "").lower()
+        assert "internal adapter fault" not in parsed.get("text", "").lower()
+
+    @pytest.mark.asyncio
+    async def test_collaborator_legacy_block_notice_is_normalized_json(self):
+        """Legacy bracket-style block notices should normalize to Protect wording."""
+        proxy = TelegramAPIProxy(sanitizer=_make_sanitizer())
+        body = json.dumps(
+            {
+                "chat_id": "7614658040",
+                "text": "[AgentShroud: outbound content blocked by security policy]",
+            }
+        ).encode()
+        result = json.loads(await proxy._filter_outbound(body, "application/json"))
+        assert "protect by agentshroud" in result["text"].lower()
+        assert "[agentshroud:" not in result["text"].lower()
+
+    @pytest.mark.asyncio
+    async def test_collaborator_legacy_block_notice_is_normalized_form(self):
+        """Form payload legacy notices should normalize to Protect wording."""
+        proxy = TelegramAPIProxy(sanitizer=_make_sanitizer())
+        body = urllib.parse.urlencode(
+            {
+                "chat_id": "7614658040",
+                "text": "[BLOCKED BY AGENTSHROUD: File system access denied]",
+            }
+        ).encode()
+        result = await proxy._filter_outbound(body, "application/x-www-form-urlencoded")
+        parsed = dict(urllib.parse.parse_qsl(result.decode(), keep_blank_values=True))
+        assert "protect by agentshroud" in parsed.get("text", "").lower()
+        assert "[blocked by agentshroud:" not in parsed.get("text", "").lower()
+
+    @pytest.mark.asyncio
+    async def test_collaborator_legacy_protected_prefix_is_normalized_json(self):
+        """Legacy 'Protected by AgentShroud' wording should normalize to 'Protect'."""
+        proxy = TelegramAPIProxy(sanitizer=_make_sanitizer())
+        body = json.dumps(
+            {
+                "chat_id": "7614658040",
+                "text": "🛡️ Protected by AgentShroud — this action is not allowed.",
+            }
+        ).encode()
+        result = json.loads(await proxy._filter_outbound(body, "application/json"))
+        assert "protect by agentshroud" in result["text"].lower()
+        assert "protected by agentshroud" not in result["text"].lower()
+
+    @pytest.mark.asyncio
+    async def test_collaborator_legacy_protected_prefix_is_normalized_form(self):
+        """Form payload legacy 'Protected' wording should normalize to 'Protect'."""
+        proxy = TelegramAPIProxy(sanitizer=_make_sanitizer())
+        body = urllib.parse.urlencode(
+            {
+                "chat_id": "7614658040",
+                "text": "Protected by AgentShroud — response blocked by security policy.",
+            }
+        ).encode()
+        result = await proxy._filter_outbound(body, "application/x-www-form-urlencoded")
+        parsed = dict(urllib.parse.parse_qsl(result.decode(), keep_blank_values=True))
+        assert "protect by agentshroud" in parsed.get("text", "").lower()
+        assert "protected by agentshroud" not in parsed.get("text", "").lower()
+
+    @pytest.mark.asyncio
+    async def test_collaborator_internal_tool_output_suppressed_notice_is_normalized_json(self):
+        """Legacy internal tool-output suppression string should normalize to Protect wording."""
+        proxy = TelegramAPIProxy(sanitizer=_make_sanitizer())
+        body = json.dumps(
+            {
+                "chat_id": "7614658040",
+                "text": "[AgentShroud: internal tool-call output suppressed]",
+            }
+        ).encode()
+        result = json.loads(await proxy._filter_outbound(body, "application/json"))
+        assert "protect by agentshroud" in result["text"].lower()
+        assert "internal tool-call output suppressed" not in result["text"].lower()
+
+    @pytest.mark.asyncio
+    async def test_collaborator_internal_tool_output_suppressed_notice_is_normalized_form(self):
+        """Form payload internal tool-output suppression string should normalize."""
+        proxy = TelegramAPIProxy(sanitizer=_make_sanitizer())
+        body = urllib.parse.urlencode(
+            {
+                "chat_id": "7614658040",
+                "text": "[AgentShroud: internal tool-call output suppressed]",
+            }
+        ).encode()
+        result = await proxy._filter_outbound(body, "application/x-www-form-urlencoded")
+        parsed = dict(urllib.parse.parse_qsl(result.decode(), keep_blank_values=True))
+        assert "protect by agentshroud" in parsed.get("text", "").lower()
+        assert "internal tool-call output suppressed" not in parsed.get("text", "").lower()
+
+    @pytest.mark.asyncio
+    async def test_collaborator_security_monitoring_threshold_notice_is_normalized_json(self):
+        """Threshold status disclosures should normalize to collaborator policy-block notice."""
+        proxy = TelegramAPIProxy(sanitizer=_make_sanitizer())
+        body = json.dumps(
+            {
+                "chat_id": "7614658040",
+                "text": "Security monitoring active at 210.00 threshold.",
+            }
+        ).encode()
+        result = json.loads(await proxy._filter_outbound(body, "application/json"))
+        assert "protect by agentshroud" in result["text"].lower()
+        assert "210.00" not in result["text"]
+        assert "threshold" not in result["text"].lower()
+
+    @pytest.mark.asyncio
+    async def test_collaborator_security_monitoring_threshold_notice_is_normalized_form(self):
+        """Form payload threshold disclosures should normalize to policy-block notice."""
+        proxy = TelegramAPIProxy(sanitizer=_make_sanitizer())
+        body = urllib.parse.urlencode(
+            {
+                "chat_id": "7614658040",
+                "text": "Security monitoring active at 210.00 threshold",
+            }
+        ).encode()
+        result = await proxy._filter_outbound(body, "application/x-www-form-urlencoded")
+        parsed = dict(urllib.parse.parse_qsl(result.decode(), keep_blank_values=True))
+        assert "protect by agentshroud" in parsed.get("text", "").lower()
+        assert "210.00" not in parsed.get("text", "")
+        assert "threshold" not in parsed.get("text", "").lower()
+
+    @pytest.mark.asyncio
     async def test_ollama_tools_unsupported_error_is_sanitized(self):
         """Raw model capability errors should be rewritten to actionable guidance."""
         proxy = TelegramAPIProxy(sanitizer=_make_sanitizer())
@@ -383,6 +628,39 @@ class TestOutboundPipelineIntegration:
         assert "llm request timed out" not in result["text"].lower()
         assert "model response timed out" in result["text"].lower()
         assert "switch_model.sh" in result["text"]
+
+    @pytest.mark.asyncio
+    async def test_collaborator_llm_timeout_error_is_normalized_to_protected_unavailable_json(self):
+        """Collaborators should receive protected unavailable notice for timeout rewrite variants."""
+        proxy = TelegramAPIProxy(sanitizer=_make_sanitizer())
+        body = json.dumps(
+            {
+                "chat_id": "7614658040",
+                "text": "LLM request timed out.",
+            }
+        ).encode()
+        result = json.loads(await proxy._filter_outbound(body, "application/json"))
+        text = result["text"].lower()
+        assert "protect by agentshroud" in text
+        assert "can't do that right now" in text
+        assert "switch_model.sh" not in text
+
+    @pytest.mark.asyncio
+    async def test_collaborator_llm_timeout_error_is_normalized_to_protected_unavailable_form(self):
+        """Form payload timeout rewrites should also map to protected unavailable notice for collaborators."""
+        proxy = TelegramAPIProxy(sanitizer=_make_sanitizer())
+        body = urllib.parse.urlencode(
+            {
+                "chat_id": "7614658040",
+                "text": "LLM request timed out.",
+            }
+        ).encode()
+        result = await proxy._filter_outbound(body, "application/x-www-form-urlencoded")
+        parsed = dict(urllib.parse.parse_qsl(result.decode(), keep_blank_values=True))
+        text = parsed.get("text", "").lower()
+        assert "protect by agentshroud" in text
+        assert "can't do that right now" in text
+        assert "switch_model.sh" not in text
 
     @pytest.mark.asyncio
     async def test_agent_failed_timeout_error_is_sanitized(self):
@@ -532,6 +810,20 @@ class TestOutboundPipelineIntegration:
         assert "current model:" in result["text"].lower()
 
     @pytest.mark.asyncio
+    async def test_prefixed_model_sentence_is_rewritten_to_active_model_hint(self):
+        """Partial model sentence variants should still be rewritten deterministically."""
+        proxy = TelegramAPIProxy(sanitizer=_make_sanitizer())
+        body = json.dumps(
+            {
+                "chat_id": "8096968754",
+                "text": "We are currently using the model in this runtime profile",
+            }
+        ).encode()
+        result = json.loads(await proxy._filter_outbound(body, "application/json"))
+        assert "we are currently using the model" not in result["text"].lower()
+        assert "current model:" in result["text"].lower()
+
+    @pytest.mark.asyncio
     async def test_memory_provider_error_with_explicit_memory_command_keeps_memory_guidance(self):
         """Explicit memory-search command context should keep memory-specific remediation text."""
         proxy = TelegramAPIProxy(sanitizer=_make_sanitizer())
@@ -593,7 +885,286 @@ class TestOutboundPipelineIntegration:
         ).encode()
         result = json.loads(await proxy._filter_outbound(body, "application/json"))
         assert "multi-turn disclosure" not in result["text"].lower()
-        assert "protected by agentshroud" in result["text"].lower()
+        assert "protect by agentshroud" in result["text"].lower()
+
+    @pytest.mark.asyncio
+    async def test_collaborator_high_risk_leakage_text_is_normalized(self):
+        """Collaborator outbound text with raw file/trace leakage markers should be blocked."""
+        proxy = TelegramAPIProxy(sanitizer=_make_sanitizer())
+        body = json.dumps(
+            {
+                "chat_id": "7614658040",
+                "text": "Traceback: failed to read /etc/hosts after parsing BOOTSTRAP.md",
+            }
+        ).encode()
+        result = json.loads(await proxy._filter_outbound(body, "application/json"))
+        assert "protect by agentshroud" in result["text"].lower()
+        assert "/etc/hosts" not in result["text"].lower()
+
+    @pytest.mark.asyncio
+    async def test_collaborator_form_high_risk_leakage_text_is_normalized(self):
+        """Collaborator form payload with raw tool/file leakage markers should be blocked."""
+        proxy = TelegramAPIProxy(sanitizer=_make_sanitizer())
+        body = urllib.parse.urlencode(
+            {
+                "chat_id": "7614658040",
+                "text": "<function_calls>{\"name\":\"web_fetch\",\"arguments\":{}}</function_calls>",
+            }
+        ).encode()
+        result = await proxy._filter_outbound(body, "application/x-www-form-urlencoded")
+        parsed = dict(urllib.parse.parse_qsl(result.decode(), keep_blank_values=True))
+        assert "protect by agentshroud" in parsed.get("text", "").lower()
+        assert "function_calls" not in parsed.get("text", "").lower()
+
+    @pytest.mark.asyncio
+    async def test_collaborator_caption_tool_payload_is_normalized_json(self):
+        """Caption-only payloads should not bypass collaborator leak normalization."""
+        proxy = TelegramAPIProxy(sanitizer=_make_sanitizer())
+        body = json.dumps(
+            {
+                "chat_id": "7614658040",
+                "caption": '{"name":"sessions_spawn","arguments":{"agentId":"acp.healthcheck"}}',
+            }
+        ).encode()
+        result = json.loads(await proxy._filter_outbound(body, "application/json"))
+        assert "protect by agentshroud" in result["caption"].lower()
+        assert "sessions_spawn" not in result["caption"].lower()
+
+    @pytest.mark.asyncio
+    async def test_collaborator_form_caption_tool_payload_is_normalized(self):
+        """Form caption field should be filtered the same as text/draft/message fields."""
+        proxy = TelegramAPIProxy(sanitizer=_make_sanitizer())
+        body = urllib.parse.urlencode(
+            {
+                "chat_id": "7614658040",
+                "caption": "<function_calls>{\"name\":\"web_fetch\",\"arguments\":{}}</function_calls>",
+            }
+        ).encode()
+        result = await proxy._filter_outbound(body, "application/x-www-form-urlencoded")
+        parsed = dict(urllib.parse.parse_qsl(result.decode(), keep_blank_values=True))
+        assert "protect by agentshroud" in parsed.get("caption", "").lower()
+        assert "function_calls" not in parsed.get("caption", "").lower()
+
+    @pytest.mark.asyncio
+    async def test_collaborator_empty_text_with_caption_payload_is_normalized_json(self):
+        """Empty text field must not bypass filtering when caption contains tool payload."""
+        proxy = TelegramAPIProxy(sanitizer=_make_sanitizer())
+        body = json.dumps(
+            {
+                "chat_id": "7614658040",
+                "text": "   ",
+                "caption": '{"name":"sessions_spawn","arguments":{"agentId":"acp.healthcheck"}}',
+            }
+        ).encode()
+        result = json.loads(await proxy._filter_outbound(body, "application/json"))
+        assert "protect by agentshroud" in result["caption"].lower()
+        assert "sessions_spawn" not in result["caption"].lower()
+
+    @pytest.mark.asyncio
+    async def test_collaborator_form_empty_text_with_caption_payload_is_normalized(self):
+        """Form payload empty text should not shadow caption filtering."""
+        proxy = TelegramAPIProxy(sanitizer=_make_sanitizer())
+        body = urllib.parse.urlencode(
+            {
+                "chat_id": "7614658040",
+                "text": "",
+                "caption": '{"name":"web_fetch","arguments":{"url":"https://weather.com"}}',
+            }
+        ).encode()
+        result = await proxy._filter_outbound(body, "application/x-www-form-urlencoded")
+        parsed = dict(urllib.parse.parse_qsl(result.decode(), keep_blank_values=True))
+        assert "protect by agentshroud" in parsed.get("caption", "").lower()
+        assert "web_fetch" not in parsed.get("caption", "").lower()
+
+    @pytest.mark.asyncio
+    async def test_collaborator_empty_text_with_message_payload_is_normalized_json(self):
+        """Empty text field must not bypass filtering when message contains tool payload."""
+        proxy = TelegramAPIProxy(sanitizer=_make_sanitizer())
+        body = json.dumps(
+            {
+                "chat_id": "7614658040",
+                "text": "",
+                "message": '{"name":"sessions_spawn","arguments":{"agentId":"acp.healthcheck"}}',
+            }
+        ).encode()
+        result = json.loads(await proxy._filter_outbound(body, "application/json"))
+        assert "protect by agentshroud" in result["message"].lower()
+        assert "sessions_spawn" not in result["message"].lower()
+
+    @pytest.mark.asyncio
+    async def test_collaborator_form_empty_text_with_message_payload_is_normalized(self):
+        """Form payload empty text should not shadow message filtering."""
+        proxy = TelegramAPIProxy(sanitizer=_make_sanitizer())
+        body = urllib.parse.urlencode(
+            {
+                "chat_id": "7614658040",
+                "text": " ",
+                "message": "<function_calls>{\"name\":\"web_fetch\",\"arguments\":{}}</function_calls>",
+            }
+        ).encode()
+        result = await proxy._filter_outbound(body, "application/x-www-form-urlencoded")
+        parsed = dict(urllib.parse.parse_qsl(result.decode(), keep_blank_values=True))
+        assert "protect by agentshroud" in parsed.get("message", "").lower()
+        assert "function_calls" not in parsed.get("message", "").lower()
+
+    @pytest.mark.asyncio
+    async def test_collaborator_empty_text_with_content_payload_is_normalized_json(self):
+        """Empty text field must not bypass filtering when content contains tool payload."""
+        proxy = TelegramAPIProxy(sanitizer=_make_sanitizer())
+        body = json.dumps(
+            {
+                "chat_id": "7614658040",
+                "text": "",
+                "content": '{"name":"sessions_spawn","arguments":{"agentId":"acp.healthcheck"}}',
+            }
+        ).encode()
+        result = json.loads(await proxy._filter_outbound(body, "application/json"))
+        assert "protect by agentshroud" in result["content"].lower()
+        assert "sessions_spawn" not in result["content"].lower()
+
+    @pytest.mark.asyncio
+    async def test_collaborator_form_empty_text_with_content_payload_is_normalized(self):
+        """Form payload empty text should not shadow content filtering."""
+        proxy = TelegramAPIProxy(sanitizer=_make_sanitizer())
+        body = urllib.parse.urlencode(
+            {
+                "chat_id": "7614658040",
+                "text": " ",
+                "content": "<function_calls>{\"name\":\"web_fetch\",\"arguments\":{}}</function_calls>",
+            }
+        ).encode()
+        result = await proxy._filter_outbound(body, "application/x-www-form-urlencoded")
+        parsed = dict(urllib.parse.parse_qsl(result.decode(), keep_blank_values=True))
+        assert "protect by agentshroud" in parsed.get("content", "").lower()
+        assert "function_calls" not in parsed.get("content", "").lower()
+
+    @pytest.mark.asyncio
+    async def test_collaborator_empty_text_with_draft_payload_is_normalized_json(self):
+        """Empty text field must not bypass filtering when draft contains tool payload."""
+        proxy = TelegramAPIProxy(sanitizer=_make_sanitizer())
+        body = json.dumps(
+            {
+                "chat_id": "7614658040",
+                "text": " ",
+                "draft": '{"name":"sessions_spawn","arguments":{"agentId":"acp.healthcheck"}}',
+            }
+        ).encode()
+        result = json.loads(await proxy._filter_outbound(body, "application/json"))
+        assert "protect by agentshroud" in result["draft"].lower()
+        assert "sessions_spawn" not in result["draft"].lower()
+
+    @pytest.mark.asyncio
+    async def test_collaborator_form_empty_text_with_draft_payload_is_normalized(self):
+        """Form payload empty text should not shadow draft filtering."""
+        proxy = TelegramAPIProxy(sanitizer=_make_sanitizer())
+        body = urllib.parse.urlencode(
+            {
+                "chat_id": "7614658040",
+                "text": "",
+                "draft": "<function_calls>{\"name\":\"web_fetch\",\"arguments\":{}}</function_calls>",
+            }
+        ).encode()
+        result = await proxy._filter_outbound(body, "application/x-www-form-urlencoded")
+        parsed = dict(urllib.parse.parse_qsl(result.decode(), keep_blank_values=True))
+        assert "protect by agentshroud" in parsed.get("draft", "").lower()
+        assert "function_calls" not in parsed.get("draft", "").lower()
+
+    @pytest.mark.asyncio
+    async def test_collaborator_egress_approval_banner_is_redacted_json(self):
+        """Collaborators should not receive internal egress approval banners."""
+        proxy = TelegramAPIProxy(sanitizer=_make_sanitizer())
+        body = json.dumps(
+            {
+                "chat_id": "7614658040",
+                "text": "🌐 Egress Request\nDomain: weather.com:443\nRisk: Yellow\nTool: web_fetch\nID: abc123",
+            }
+        ).encode()
+        result = json.loads(await proxy._filter_outbound(body, "application/json"))
+        assert "protect by agentshroud" in result["text"].lower()
+        assert "egress request" not in result["text"].lower()
+
+    @pytest.mark.asyncio
+    async def test_collaborator_egress_approval_banner_is_redacted_form(self):
+        """Form payload approval banners must be redacted for collaborators."""
+        proxy = TelegramAPIProxy(sanitizer=_make_sanitizer())
+        body = urllib.parse.urlencode(
+            {
+                "chat_id": "7614658040",
+                "text": "🌐 Egress Request Domain: weather.com:443 Risk: Yellow Tool: web_fetch ID: abc123",
+            }
+        ).encode()
+        result = await proxy._filter_outbound(body, "application/x-www-form-urlencoded")
+        parsed = dict(urllib.parse.parse_qsl(result.decode(), keep_blank_values=True))
+        assert "protect by agentshroud" in parsed.get("text", "").lower()
+        assert "egress request" not in parsed.get("text", "").lower()
+
+    @pytest.mark.asyncio
+    async def test_collaborator_pairing_code_leakage_is_redacted_json(self):
+        """Collaborators should never receive pairing codes or pairing approval commands."""
+        proxy = TelegramAPIProxy(sanitizer=_make_sanitizer())
+        body = json.dumps(
+            {
+                "chat_id": "7614658040",
+                "text": (
+                    "OpenClaw: access not configured.\n\n"
+                    "Pairing code: ABC12345\n"
+                    "Ask owner to run: openclaw pairing approve telegram ABC12345"
+                ),
+            }
+        ).encode()
+        result = json.loads(await proxy._filter_outbound(body, "application/json"))
+        assert "protect by agentshroud" in result["text"].lower()
+        assert "pairing code" not in result["text"].lower()
+        assert "openclaw pairing approve telegram" not in result["text"].lower()
+
+    @pytest.mark.asyncio
+    async def test_collaborator_pairing_code_leakage_is_redacted_form(self):
+        """Form payloads containing pairing secrets must be blocked for collaborators."""
+        proxy = TelegramAPIProxy(sanitizer=_make_sanitizer())
+        body = urllib.parse.urlencode(
+            {
+                "chat_id": "7614658040",
+                "text": "Pairing code: ZYXW9876. openclaw pairing approve telegram ZYXW9876",
+            }
+        ).encode()
+        result = await proxy._filter_outbound(body, "application/x-www-form-urlencoded")
+        parsed = dict(urllib.parse.parse_qsl(result.decode(), keep_blank_values=True))
+        assert "protect by agentshroud" in parsed.get("text", "").lower()
+        assert "pairing code" not in parsed.get("text", "").lower()
+
+    @pytest.mark.asyncio
+    async def test_collaborator_access_not_configured_user_id_leakage_is_redacted_json(self):
+        """Collaborators should not receive telegram user-id enrollment leakage text."""
+        proxy = TelegramAPIProxy(sanitizer=_make_sanitizer())
+        body = json.dumps(
+            {
+                "chat_id": "7614658040",
+                "text": (
+                    "OpenClaw: access not configured.\n"
+                    "Your Telegram user id: 123456789\n"
+                    "Ask owner to approve pairing."
+                ),
+            }
+        ).encode()
+        result = json.loads(await proxy._filter_outbound(body, "application/json"))
+        assert "protect by agentshroud" in result["text"].lower()
+        assert "your telegram user id" not in result["text"].lower()
+        assert "access not configured" not in result["text"].lower()
+
+    @pytest.mark.asyncio
+    async def test_collaborator_access_not_configured_user_id_leakage_is_redacted_form(self):
+        """Form payload user-id enrollment leakage should also be blocked."""
+        proxy = TelegramAPIProxy(sanitizer=_make_sanitizer())
+        body = urllib.parse.urlencode(
+            {
+                "chat_id": "7614658040",
+                "text": "OpenClaw: access not configured. Your Telegram user id: 123456789",
+            }
+        ).encode()
+        result = await proxy._filter_outbound(body, "application/x-www-form-urlencoded")
+        parsed = dict(urllib.parse.parse_qsl(result.decode(), keep_blank_values=True))
+        assert "protect by agentshroud" in parsed.get("text", "").lower()
+        assert "your telegram user id" not in parsed.get("text", "").lower()
 
     @pytest.mark.asyncio
     async def test_healthcheck_skill_sandbox_error_is_rewritten(self):
@@ -1132,6 +1703,34 @@ class TestOutboundPipelineIntegration:
         assert "still processing" in parsed.get("draft", "").lower()
 
     @pytest.mark.asyncio
+    async def test_urlencoded_plain_no_reply_is_still_filtered(self):
+        """Form payload plain NO_REPLY should map to deterministic wait guidance."""
+        proxy = TelegramAPIProxy(sanitizer=_make_sanitizer())
+        body = urllib.parse.urlencode(
+            {
+                "chat_id": "8096968754",
+                "text": "NO_REPLY",
+            }
+        ).encode()
+        result = await proxy._filter_outbound(body, "application/x-www-form-urlencoded")
+        parsed = dict(urllib.parse.parse_qsl(result.decode(), keep_blank_values=True))
+        assert "still processing" in parsed.get("text", "").lower()
+
+    @pytest.mark.asyncio
+    async def test_urlencoded_plain_no_reply_with_punctuation_is_still_filtered(self):
+        """Form payload NO_REPLY punctuation variant should still normalize."""
+        proxy = TelegramAPIProxy(sanitizer=_make_sanitizer())
+        body = urllib.parse.urlencode(
+            {
+                "chat_id": "8096968754",
+                "text": "(NO_REPLY!)",
+            }
+        ).encode()
+        result = await proxy._filter_outbound(body, "application/x-www-form-urlencoded")
+        parsed = dict(urllib.parse.parse_qsl(result.decode(), keep_blank_values=True))
+        assert "still processing" in parsed.get("text", "").lower()
+
+    @pytest.mark.asyncio
     async def test_urlencoded_without_content_type_caption_is_still_filtered(self):
         """Missing content-type must not bypass form caption leak filtering."""
         proxy = TelegramAPIProxy(sanitizer=_make_sanitizer())
@@ -1145,6 +1744,145 @@ class TestOutboundPipelineIntegration:
         parsed = dict(urllib.parse.parse_qsl(result.decode(), keep_blank_values=True))
         assert "healthcheck started" in parsed.get("caption", "").lower()
         assert "sessions_spawn" not in parsed.get("caption", "")
+
+    @pytest.mark.asyncio
+    async def test_urlencoded_without_content_type_empty_text_with_caption_is_still_filtered(self):
+        """Missing content-type + empty text must not bypass caption filtering for collaborators."""
+        proxy = TelegramAPIProxy(sanitizer=_make_sanitizer())
+        body = urllib.parse.urlencode(
+            {
+                "chat_id": "7614658040",
+                "text": " ",
+                "caption": "{\"name\":\"sessions_spawn\",\"arguments\":{\"agentId\":\"acp.healthcheck\"}}",
+            }
+        ).encode()
+        result = await proxy._filter_outbound(body, None)
+        parsed = dict(urllib.parse.parse_qsl(result.decode(), keep_blank_values=True))
+        assert "protect by agentshroud" in parsed.get("caption", "").lower()
+        assert "sessions_spawn" not in parsed.get("caption", "").lower()
+
+    @pytest.mark.asyncio
+    async def test_json_without_content_type_empty_text_with_caption_is_still_filtered(self):
+        """Missing content-type + empty text must not bypass caption filtering (json path)."""
+        proxy = TelegramAPIProxy(sanitizer=_make_sanitizer())
+        body = json.dumps(
+            {
+                "chat_id": "7614658040",
+                "text": "",
+                "caption": "{\"name\":\"sessions_spawn\",\"arguments\":{\"agentId\":\"acp.healthcheck\"}}",
+            }
+        ).encode()
+        result = json.loads(await proxy._filter_outbound(body, None))
+        assert "protect by agentshroud" in result.get("caption", "").lower()
+        assert "sessions_spawn" not in result.get("caption", "").lower()
+
+    @pytest.mark.asyncio
+    async def test_urlencoded_without_content_type_empty_text_with_message_is_still_filtered(self):
+        """Missing content-type + empty text must not bypass message filtering for collaborators."""
+        proxy = TelegramAPIProxy(sanitizer=_make_sanitizer())
+        body = urllib.parse.urlencode(
+            {
+                "chat_id": "7614658040",
+                "text": "",
+                "message": "{\"name\":\"sessions_spawn\",\"arguments\":{\"agentId\":\"acp.healthcheck\"}}",
+            }
+        ).encode()
+        result = await proxy._filter_outbound(body, None)
+        parsed = dict(urllib.parse.parse_qsl(result.decode(), keep_blank_values=True))
+        assert "protect by agentshroud" in parsed.get("message", "").lower()
+        assert "sessions_spawn" not in parsed.get("message", "").lower()
+
+    @pytest.mark.asyncio
+    async def test_json_without_content_type_empty_text_with_message_is_still_filtered(self):
+        """Missing content-type + empty text must not bypass message filtering (json path)."""
+        proxy = TelegramAPIProxy(sanitizer=_make_sanitizer())
+        body = json.dumps(
+            {
+                "chat_id": "7614658040",
+                "text": " ",
+                "message": "{\"name\":\"sessions_spawn\",\"arguments\":{\"agentId\":\"acp.healthcheck\"}}",
+            }
+        ).encode()
+        result = json.loads(await proxy._filter_outbound(body, None))
+        assert "protect by agentshroud" in result.get("message", "").lower()
+        assert "sessions_spawn" not in result.get("message", "").lower()
+
+    @pytest.mark.asyncio
+    async def test_urlencoded_without_content_type_empty_text_with_content_is_still_filtered(self):
+        """Missing content-type + empty text must not bypass content filtering for collaborators."""
+        proxy = TelegramAPIProxy(sanitizer=_make_sanitizer())
+        body = urllib.parse.urlencode(
+            {
+                "chat_id": "7614658040",
+                "text": "",
+                "content": "{\"name\":\"sessions_spawn\",\"arguments\":{\"agentId\":\"acp.healthcheck\"}}",
+            }
+        ).encode()
+        result = await proxy._filter_outbound(body, None)
+        parsed = dict(urllib.parse.parse_qsl(result.decode(), keep_blank_values=True))
+        assert "protect by agentshroud" in parsed.get("content", "").lower()
+        assert "sessions_spawn" not in parsed.get("content", "").lower()
+
+    @pytest.mark.asyncio
+    async def test_json_without_content_type_empty_text_with_content_is_still_filtered(self):
+        """Missing content-type + empty text must not bypass content filtering (json path)."""
+        proxy = TelegramAPIProxy(sanitizer=_make_sanitizer())
+        body = json.dumps(
+            {
+                "chat_id": "7614658040",
+                "text": " ",
+                "content": "{\"name\":\"sessions_spawn\",\"arguments\":{\"agentId\":\"acp.healthcheck\"}}",
+            }
+        ).encode()
+        result = json.loads(await proxy._filter_outbound(body, None))
+        assert "protect by agentshroud" in result.get("content", "").lower()
+        assert "sessions_spawn" not in result.get("content", "").lower()
+
+    @pytest.mark.asyncio
+    async def test_urlencoded_without_content_type_empty_text_with_draft_is_still_filtered(self):
+        """Missing content-type + empty text must not bypass draft filtering for collaborators."""
+        proxy = TelegramAPIProxy(sanitizer=_make_sanitizer())
+        body = urllib.parse.urlencode(
+            {
+                "chat_id": "7614658040",
+                "text": "",
+                "draft": "{\"name\":\"sessions_spawn\",\"arguments\":{\"agentId\":\"acp.healthcheck\"}}",
+            }
+        ).encode()
+        result = await proxy._filter_outbound(body, None)
+        parsed = dict(urllib.parse.parse_qsl(result.decode(), keep_blank_values=True))
+        assert "protect by agentshroud" in parsed.get("draft", "").lower()
+        assert "sessions_spawn" not in parsed.get("draft", "").lower()
+
+    @pytest.mark.asyncio
+    async def test_json_without_content_type_empty_text_with_draft_is_still_filtered(self):
+        """Missing content-type + empty text must not bypass draft filtering (json path)."""
+        proxy = TelegramAPIProxy(sanitizer=_make_sanitizer())
+        body = json.dumps(
+            {
+                "chat_id": "7614658040",
+                "text": " ",
+                "draft": "{\"name\":\"sessions_spawn\",\"arguments\":{\"agentId\":\"acp.healthcheck\"}}",
+            }
+        ).encode()
+        result = json.loads(await proxy._filter_outbound(body, None))
+        assert "protect by agentshroud" in result.get("draft", "").lower()
+        assert "sessions_spawn" not in result.get("draft", "").lower()
+
+    @pytest.mark.asyncio
+    async def test_urlencoded_collaborator_no_reply_gets_protected_notice(self):
+        """Collaborator form payloads should get protected notice, not suppression."""
+        proxy = TelegramAPIProxy(sanitizer=_make_sanitizer())
+        body = urllib.parse.urlencode(
+            {
+                "chat_id": "7614658040",
+                "text": "{\"name\":\"NO_REPLY\",\"arguments\":{}}",
+            }
+        ).encode()
+        result = await proxy._filter_outbound(body, "application/x-www-form-urlencoded")
+        parsed = dict(urllib.parse.parse_qsl(result.decode(), keep_blank_values=True))
+        assert "protect by agentshroud" in parsed.get("text", "").lower()
+        assert "__AGENTSHROUD_SUPPRESS_OUTBOUND__".lower() not in parsed.get("text", "").lower()
 
     @pytest.mark.asyncio
     async def test_html_parse_mode_removed_for_redaction_placeholders(self):
@@ -1907,6 +2645,70 @@ class TestOutboundPipelineIntegration:
         assert "approval request queued" not in result["text"].lower()
 
     @pytest.mark.asyncio
+    async def test_raw_web_fetch_json_filename_reference_does_not_queue_approval(self, monkeypatch):
+        """Filename-like references must not be interpreted as egress domains."""
+        calls = {"count": 0}
+
+        class FakeEgress:
+            async def check_async(self, **_kwargs):
+                calls["count"] += 1
+                return SimpleNamespace(action="deny")
+
+        from gateway.ingest_api import state as state_module
+
+        monkeypatch.setattr(
+            state_module,
+            "app_state",
+            SimpleNamespace(egress_filter=FakeEgress()),
+        )
+        proxy = TelegramAPIProxy(sanitizer=_make_sanitizer())
+        body = json.dumps(
+            {
+                "chat_id": "8096968754",
+                "text": "{\"name\":\"web_fetch\",\"arguments\":{\"url\":\"BOOTSTRAP.md\"}}",
+            }
+        ).encode()
+
+        result = json.loads(await proxy._filter_outbound(body, "application/json"))
+        await asyncio.sleep(0)
+
+        assert calls["count"] == 0
+        assert "approval request queued" not in result["text"].lower()
+
+    @pytest.mark.asyncio
+    async def test_raw_web_fetch_json_explicit_md_tld_domain_still_queues_approval(self, monkeypatch):
+        """Explicitly schemed domains should still queue approvals even for .md ccTLD."""
+        called = {"value": False}
+
+        class FakeEgress:
+            async def check_async(self, **kwargs):
+                called["value"] = True
+                called["kwargs"] = kwargs
+                return SimpleNamespace(action="deny")
+
+        from gateway.ingest_api import state as state_module
+
+        monkeypatch.setattr(
+            state_module,
+            "app_state",
+            SimpleNamespace(egress_filter=FakeEgress()),
+        )
+        proxy = TelegramAPIProxy(sanitizer=_make_sanitizer())
+        body = json.dumps(
+            {
+                "chat_id": "8096968754",
+                "text": "{\"name\":\"web_fetch\",\"arguments\":{\"url\":\"https://example.md/status\"}}",
+            }
+        ).encode()
+
+        result = json.loads(await proxy._filter_outbound(body, "application/json"))
+        await asyncio.sleep(0)
+
+        assert called["value"] is True
+        assert called["kwargs"]["destination"] == "https://example.md"
+        assert "approval request queued" in result["text"].lower()
+
+    @pytest.mark.asyncio
     async def test_raw_web_fetch_json_ip_host_does_not_queue_approval(self, monkeypatch):
         """Literal IP targets should not enter interactive domain approval flow."""
         calls = {"count": 0}
@@ -2444,7 +3246,6 @@ class TestOutboundPipelineIntegration:
         assert "approval request queued" not in result["text"].lower()
 
     @pytest.mark.asyncio
-    @pytest.mark.asyncio
     async def test_raw_web_fetch_json_punycode_domain_does_not_queue_approval(self, monkeypatch):
         """Punycode/IDN domains should be rejected from approval queue."""
         calls = {"count": 0}
@@ -2682,6 +3483,17 @@ class TestRuntimeRewriteHelpers:
         assert TelegramAPIProxy._rewrite_known_runtime_errors(None) is None
         assert TelegramAPIProxy._rewrite_known_runtime_errors({"text": "x"}) is None
 
+    def test_rewrite_known_runtime_errors_matches_http_status_without_body(self):
+        rewritten = TelegramAPIProxy._rewrite_known_runtime_errors("404 status code (no body)")
+        assert rewritten is not None
+        assert "runtime transport error" in rewritten.lower()
+        assert "/healthcheck" in rewritten.lower()
+
+    def test_rewrite_known_runtime_errors_matches_no_response_generated_phrase(self):
+        rewritten = TelegramAPIProxy._rewrite_known_runtime_errors("No response generated. Please try again.")
+        assert rewritten is not None
+        assert "response generation failed" in rewritten.lower()
+
 
 class TestEgressTargetExtraction:
     """Unit tests for outbound target extraction helper used by egress preflight."""
@@ -2846,3 +3658,53 @@ class TestDomainValidationHelper:
 
     def test_is_valid_domain_name_rejects_single_label_host(self):
         assert TelegramAPIProxy._is_valid_domain_name("weather") is False
+
+
+class TestOutboundTextFieldResolution:
+    """Unit tests for outbound text field resolution helper behavior."""
+
+    def test_resolve_text_field_prefers_first_non_empty_field(self):
+        data = {
+            "text": "   ",
+            "message": "",
+            "caption": "real payload",
+        }
+        key, value = TelegramAPIProxy._resolve_text_field(data)
+        assert key == "caption"
+        assert value == "real payload"
+
+    def test_resolve_text_field_falls_back_to_first_string_when_all_empty(self):
+        data = {
+            "text": " ",
+            "message": "",
+            "caption": "   ",
+        }
+        key, value = TelegramAPIProxy._resolve_text_field(data)
+        assert key == "text"
+        assert value == " "
+
+
+class TestOutboundClassifierHelpers:
+    """Unit tests for outbound helper classifiers used by collaborator filtering."""
+
+    def test_contains_internal_approval_banner_detects_standard_banner(self):
+        text = "🌐 Egress Request\nDomain: weather.com:443\nRisk: Yellow\nTool: web_fetch\nID: 123"
+        assert TelegramAPIProxy._contains_internal_approval_banner(text) is True
+
+    def test_contains_internal_approval_banner_ignores_normal_text(self):
+        assert TelegramAPIProxy._contains_internal_approval_banner("normal status update") is False
+
+    def test_contains_legacy_block_notice_detects_legacy_bracket_text(self):
+        text = "[AgentShroud: outbound content blocked by security policy]"
+        assert TelegramAPIProxy._contains_legacy_block_notice(text) is True
+
+    def test_contains_legacy_block_notice_detects_legacy_protected_phrase(self):
+        text = "🛡️ Protected by AgentShroud — this action is not allowed."
+        assert TelegramAPIProxy._contains_legacy_block_notice(text) is True
+
+    def test_is_no_reply_token_accepts_fenced_and_punctuated_variants(self):
+        assert TelegramAPIProxy._is_no_reply_token("```NO_REPLY```") is True
+        assert TelegramAPIProxy._is_no_reply_token("(NO_REPLY!)") is True
+
+    def test_is_no_reply_token_rejects_non_token_text(self):
+        assert TelegramAPIProxy._is_no_reply_token("NO_REPLY please continue") is False
