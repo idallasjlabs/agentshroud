@@ -13,6 +13,7 @@ import asyncio
 import json
 import logging
 import os
+import time
 import ssl
 import urllib.request
 import urllib.error
@@ -120,6 +121,15 @@ class LLMProxy:
             status, resp_headers, resp_body = await self._forward_request(
                 url, body, headers
             )
+        except TimeoutError as e:
+            logger.error(f"LLM proxy timeout: {e}")
+            fallback_body = self._build_timeout_fallback_response(
+                is_openai=is_openai,
+                is_google=is_google,
+                is_ollama=is_ollama,
+                model_name=model_name or (request_data or {}).get("model", ""),
+            )
+            return 200, {"content-type": "application/json"}, fallback_body
         except Exception as e:
             logger.error(f"LLM proxy error: {e}")
             error_resp = json.dumps({
@@ -238,6 +248,67 @@ class LLMProxy:
             logger.error(f"LLM proxy outbound filter error: {e}")
 
         return resp_body
+
+    @staticmethod
+    def _build_timeout_fallback_response(
+        *,
+        is_openai: bool,
+        is_google: bool,
+        is_ollama: bool,
+        model_name: str,
+    ) -> bytes:
+        """Build provider-compatible timeout fallback message to avoid silent Telegram failures."""
+        fallback_text = (
+            "⏳ Model response timed out before completion. "
+            "Please retry in 10–20 seconds. "
+            "If this repeats, switch model profile with scripts/switch_model.sh "
+            "(for example: openai or local llama3.1:8b)."
+        )
+        now = int(time.time())
+
+        if is_google:
+            return json.dumps(
+                {
+                    "candidates": [
+                        {
+                            "content": {"parts": [{"text": fallback_text}], "role": "model"},
+                            "finishReason": "STOP",
+                            "index": 0,
+                        }
+                    ]
+                }
+            ).encode()
+
+        if is_openai or is_ollama:
+            return json.dumps(
+                {
+                    "id": f"chatcmpl-agentshroud-timeout-{now}",
+                    "object": "chat.completion",
+                    "created": now,
+                    "model": model_name or "agentshroud-timeout-fallback",
+                    "choices": [
+                        {
+                            "index": 0,
+                            "message": {"role": "assistant", "content": fallback_text},
+                            "finish_reason": "stop",
+                        }
+                    ],
+                }
+            ).encode()
+
+        # Anthropic-compatible fallback
+        return json.dumps(
+            {
+                "id": f"msg_agentshroud_timeout_{now}",
+                "type": "message",
+                "role": "assistant",
+                "model": model_name or "agentshroud-timeout-fallback",
+                "content": [{"type": "text", "text": fallback_text}],
+                "stop_reason": "end_turn",
+                "stop_sequence": None,
+                "usage": {"input_tokens": 0, "output_tokens": 0},
+            }
+        ).encode()
 
     async def _apply_filters(self, text: str) -> tuple[str, bool]:
         """Apply XML and credential filters to text."""
