@@ -16,6 +16,7 @@ import asyncio
 import ipaddress
 import json
 import logging
+import math
 import re
 import os
 import time
@@ -54,6 +55,14 @@ _LOCAL_MODEL_STATUS_COMMANDS = {
     "/model-status",
     "model-status",
 }
+_COLLABORATOR_ALLOWED_SLASH_COMMANDS = {
+    "/start",
+    "/healthcheck",
+    "/self-diagnostic",
+    "/self-diagnose",
+    "/model",
+    "/model-status",
+}
 
 _DISCLOSURE_MESSAGE = (
     "\U0001f6e1\ufe0f *AgentShroud Notice*\n\n"
@@ -65,15 +74,16 @@ _DISCLOSURE_MESSAGE = (
     "have access to the full command set\\._"
 )
 
-_COLLABORATOR_BLOCK_NOTICE = "🛡️ Protected by AgentShroud — this action is not allowed."
-_COLLABORATOR_UNAVAILABLE_NOTICE = "🛡️ Protected by AgentShroud — I can't do that right now."
-_COLLABORATOR_FILE_NOTICE = "🛡️ Protected by AgentShroud — file/system content access is restricted for collaborators."
-_COLLABORATOR_SECRET_NOTICE = "🛡️ Protected by AgentShroud — sensitive credentials/secrets are restricted."
-_COLLABORATOR_EGRESS_NOTICE = "🛡️ Protected by AgentShroud — external access requires approval."
-_COLLABORATOR_SCOPE_NOTICE = "🛡️ Protected by AgentShroud — I can discuss system concepts and recommendations, but command/tool execution details are restricted."
-_PROTECTED_POLICY_NOTICE = "🛡️ Protected by AgentShroud — response blocked by security policy."
+_PROTECT_PREFIX = "🛡️ Protect by AgentShroud"
+_COLLABORATOR_BLOCK_NOTICE = f"{_PROTECT_PREFIX} — this action is not allowed."
+_COLLABORATOR_UNAVAILABLE_NOTICE = f"{_PROTECT_PREFIX} — I can't do that right now."
+_COLLABORATOR_FILE_NOTICE = f"{_PROTECT_PREFIX} — file/system content access is restricted for collaborators."
+_COLLABORATOR_SECRET_NOTICE = f"{_PROTECT_PREFIX} — sensitive credentials/secrets are restricted."
+_COLLABORATOR_EGRESS_NOTICE = f"{_PROTECT_PREFIX} — external access requires approval."
+_COLLABORATOR_SCOPE_NOTICE = f"{_PROTECT_PREFIX} — I can discuss system concepts and recommendations, but command/tool execution details are restricted."
+_PROTECTED_POLICY_NOTICE = f"{_PROTECT_PREFIX} — response blocked by security policy."
 _COLLABORATOR_SAFE_INFO_NOTICE = (
-    "🛡️ Protected by AgentShroud — collaborator safe mode is active.\n"
+    "🛡️ Protect by AgentShroud — collaborator safe mode is active.\n"
     "I can help with architecture, security concepts, workflows, and recommendations.\n"
     "I cannot provide command/tool outputs, direct file contents, secrets, or system-level execution."
 )
@@ -113,6 +123,10 @@ class TelegramAPIProxy:
             os.environ.get("AGENTSHROUD_NO_REPLY_NOTICE_COOLDOWN_SECONDS", "15.0")
         )
         self._recent_no_reply_notice_until: dict[str, float] = {}
+        self._rate_limit_notice_cooldown_seconds = float(
+            os.environ.get("AGENTSHROUD_RATE_LIMIT_NOTICE_COOLDOWN_SECONDS", "30.0")
+        )
+        self._recent_rate_limit_notice_until: dict[str, float] = {}
         self._handled_local_command_update_ids: dict[str, float] = {}
         self._local_command_dedupe_ttl_seconds = float(
             os.environ.get("AGENTSHROUD_LOCAL_COMMAND_DEDUPE_TTL_SECONDS", "600.0")
@@ -171,10 +185,29 @@ class TelegramAPIProxy:
                 "Please retry your last message in 10–20 seconds. "
                 "If this keeps happening, switch model profile with scripts/switch_model.sh."
             )
+        if lowered.strip() in {"404 status code (no body)", "500 status code (no body)"}:
+            return (
+                "⚠️ Runtime transport error while preparing the response. "
+                "Please retry your last message in 10–20 seconds. "
+                "If this keeps happening, run /healthcheck."
+            )
+        if lowered.strip() == "no response generated. please try again.":
+            return (
+                "⚠️ Runtime response generation failed before completion. "
+                "Please retry your last message in 10–20 seconds."
+            )
         if lowered.strip() in {
             "we are currently using the model",
             "we are currently using the model.",
         }:
+            active_model = (
+                os.environ.get("OPENCLAW_MAIN_MODEL")
+                or os.environ.get("AGENTSHROUD_CLOUD_MODEL_REF")
+                or os.environ.get("AGENTSHROUD_LOCAL_MODEL_REF")
+                or "unknown"
+            )
+            return f"ℹ️ Current model: {active_model}"
+        if lowered.strip().startswith("we are currently using the model"):
             active_model = (
                 os.environ.get("OPENCLAW_MAIN_MODEL")
                 or os.environ.get("AGENTSHROUD_CLOUD_MODEL_REF")
@@ -248,6 +281,22 @@ class TelegramAPIProxy:
         if not isinstance(text, str):
             return False
         lowered = normalize_input(text).lower()
+        internal_file_markers = ("bootstrap.md", "identity.md", "memory.md", "skill.md")
+        content_request_markers = (
+            "show",
+            "read",
+            "open",
+            "cat",
+            "print",
+            "dump",
+            "contents",
+            "what's in",
+            "what is in",
+        )
+        if any(marker in lowered for marker in internal_file_markers) and any(
+            marker in lowered for marker in content_request_markers
+        ):
+            return True
         patterns = (
             r"\b(show|read|open|cat|print|dump)\b.{0,32}\b(file|contents?|workspace|directory)\b",
             r"\b(list|enumerate)\b.{0,24}\b(files?|directories|workspace)\b",
@@ -255,6 +304,227 @@ class TelegramAPIProxy:
             r"\bwhat'?s in\b.{0,24}\b(identity\.md|bootstrap\.md|memory\.md)\b",
         )
         return any(re.search(pat, lowered) for pat in patterns)
+
+    @staticmethod
+    def _looks_like_file_metadata_question(text: str) -> bool:
+        """Detect conceptual file-purpose questions without direct content requests."""
+        if not isinstance(text, str):
+            return False
+        lowered = normalize_input(text).lower()
+        mixed_bootstrap_identity_probe = (
+            "bootstrap.md" in lowered
+            and "identity.md" in lowered
+            and any(token in lowered for token in ("what are those", "what are they", "what are these"))
+        )
+        if (
+            any(token in lowered for token in ("show me", "contents", "read", "open", "cat", "print", "dump"))
+            and not mixed_bootstrap_identity_probe
+        ):
+            return False
+        return any(
+            token in lowered
+            for token in (
+                "what is bootstrap.md",
+                "what's bootstrap.md",
+                "what are bootstrap.md",
+                "what is identity.md",
+                "what's identity.md",
+                "what are identity.md",
+                "what are those",
+                "what are those files",
+                "what do those files do",
+            )
+        )
+
+    @staticmethod
+    def _looks_like_model_status_question(text: str) -> bool:
+        """Detect plain-language model status questions for deterministic local reply."""
+        if not isinstance(text, str):
+            return False
+        lowered = normalize_input(text).lower()
+        return any(
+            phrase in lowered
+            for phrase in (
+                "which model are we using",
+                "what model are we using",
+                "what model is active",
+                "which model is active",
+                "current model",
+                "model in use",
+            )
+        )
+
+    @staticmethod
+    def _is_no_reply_token(text: str) -> bool:
+        """Detect plain NO_REPLY sentinel with light punctuation wrapping."""
+        if not isinstance(text, str):
+            return False
+        normalized = normalize_input(text).strip()
+        if normalized.startswith("```") and normalized.endswith("```"):
+            inner = normalized[3:-3].strip()
+            if "\n" in inner:
+                first, *rest = inner.splitlines()
+                if re.fullmatch(r"[a-z0-9_-]+", first.strip(), flags=re.IGNORECASE):
+                    inner = "\n".join(rest).strip()
+            normalized = inner
+        normalized = normalized.strip("`'\"[](){}<>.,;:!?")
+        return normalized.upper() == "NO_REPLY"
+
+    @staticmethod
+    def _looks_like_filename_reference(candidate: str) -> bool:
+        """Best-effort check to avoid treating local file names as egress domains."""
+        if not isinstance(candidate, str):
+            return False
+        lowered = normalize_input(candidate).strip().lower()
+        if not lowered or "/" in lowered or " " in lowered or ":" in lowered:
+            return False
+        return bool(
+            re.fullmatch(
+                r"[a-z0-9._-]+\.(?:md|txt|json|yaml|yml|csv|log|cfg|conf|ini|toml|py|js|ts|sh)",
+                lowered,
+            )
+        )
+
+    @staticmethod
+    def _looks_like_sensitive_path_probe(text: str) -> bool:
+        """Detect collaborator prompts probing sensitive filesystem paths/secrets."""
+        if not isinstance(text, str):
+            return False
+        lowered = normalize_input(text).lower()
+        path_markers = (
+            "/etc/",
+            "/proc/",
+            "/run/secrets",
+            "/var/run/secrets",
+            "~/.ssh",
+            ".ssh/",
+            "~/.aws/credentials",
+            ".aws/credentials",
+            ".env",
+            "id_rsa",
+            "known_hosts",
+            "authorized_keys",
+        )
+        if not any(marker in lowered for marker in path_markers):
+            return False
+        intent_markers = (
+            "show",
+            "read",
+            "open",
+            "cat",
+            "ls ",
+            "grep ",
+            "find ",
+            "list",
+            "access",
+            "display",
+            "print",
+            "what's in",
+            "what is in",
+            "dump",
+        )
+        return any(marker in lowered for marker in intent_markers)
+
+    @staticmethod
+    def _looks_like_path_traversal_request(text: str) -> bool:
+        """Detect collaborator prompts attempting path traversal style file access."""
+        if not isinstance(text, str):
+            return False
+        lowered = normalize_input(text).lower()
+        if "../" not in lowered and "..\\" not in lowered:
+            return False
+        intent_markers = (
+            "show",
+            "read",
+            "open",
+            "cat",
+            "print",
+            "dump",
+            "list",
+            "access",
+            "fetch",
+        )
+        return any(marker in lowered for marker in intent_markers)
+
+    @staticmethod
+    def _looks_like_metadata_endpoint_probe(text: str) -> bool:
+        """Detect collaborator prompts targeting cloud metadata endpoints."""
+        if not isinstance(text, str):
+            return False
+        lowered = normalize_input(text).lower()
+        endpoint_markers = (
+            "169.254.169.254",
+            "metadata.google.internal",
+            "169.254.170.2",
+        )
+        if not any(marker in lowered for marker in endpoint_markers):
+            return False
+        intent_markers = (
+            "curl",
+            "wget",
+            "fetch",
+            "get",
+            "query",
+            "open",
+            "check",
+            "read",
+            "request",
+        )
+        return any(marker in lowered for marker in intent_markers)
+
+    @staticmethod
+    def _looks_like_internal_network_probe(text: str) -> bool:
+        """Detect collaborator prompts targeting local/internal network hosts."""
+        if not isinstance(text, str):
+            return False
+        lowered = normalize_input(text).lower()
+        if not (
+            any(marker in lowered for marker in ("localhost", "127.0.0.1", "0.0.0.0", "::1"))
+            or re.search(r"\b10\.\d{1,3}\.\d{1,3}\.\d{1,3}\b", lowered)
+            or re.search(r"\b192\.168\.\d{1,3}\.\d{1,3}\b", lowered)
+            or re.search(r"\b172\.(1[6-9]|2\d|3[0-1])\.\d{1,3}\.\d{1,3}\b", lowered)
+        ):
+            return False
+        intent_markers = (
+            "curl",
+            "wget",
+            "fetch",
+            "get",
+            "open",
+            "check",
+            "request",
+            "connect",
+            "ping",
+            "scan",
+        )
+        return any(marker in lowered for marker in intent_markers)
+
+    @staticmethod
+    def _looks_like_obfuscated_command_probe(text: str) -> bool:
+        """Detect collaborator prompts asking to decode/deobfuscate and execute commands."""
+        if not isinstance(text, str):
+            return False
+        lowered = normalize_input(text).lower()
+        if not any(token in lowered for token in ("base64", "hex", "decode", "deobfuscate", "unescape")):
+            return False
+        command_markers = (
+            "bash",
+            "sh ",
+            "powershell",
+            "cmd.exe",
+            "curl",
+            "wget",
+            "python -c",
+            "node -e",
+            "rm ",
+            "chmod",
+            "chown",
+        )
+        execution_markers = ("run", "execute", "launch", "invoke", "then run", "pipe to shell")
+        return (
+            any(marker in lowered for marker in command_markers)
+            and any(marker in lowered for marker in execution_markers)
+        )
 
     @staticmethod
     def _looks_like_command_enumeration_query(text: str) -> bool:
@@ -267,8 +537,192 @@ class TelegramAPIProxy:
             r"\bwhat can you (run|execute|access|use)\b",
             r"\bwhich tools are blocked\b",
             r"\bdo you have access to\b.{0,24}\b(shell|exec|credentials?|files?)\b",
+            r"\b(commands?|tools?|capabilities)\b.{0,36}\b(appropriately )?(blocked|restricted|allowed)\b",
+        )
+        if any(re.search(pat, lowered) for pat in patterns):
+            return True
+        if "appropriately blocked" in lowered and any(
+            token in lowered for token in ("command", "commands", "tool", "tools", "capability", "capabilities")
+        ):
+            return True
+        return False
+
+    @staticmethod
+    def _looks_like_web_access_request(text: str) -> bool:
+        """Detect collaborator prompts requesting external web/network fetch behavior."""
+        if not isinstance(text, str):
+            return False
+        lowered = normalize_input(text).lower()
+        has_bare_domain = bool(re.search(r"\b[a-z0-9.-]+\.[a-z]{2,}\b", lowered))
+        has_url = any(token in lowered for token in ("http://", "https://", "www."))
+        asks_policy = any(token in lowered for token in ("blocked", "approval", "policy", "allowed", "permission"))
+        asks_why_how = any(token in lowered for token in ("how", "what", "why", "explain", "workflow", "process"))
+        has_imperative = any(
+            token in lowered
+            for token in ("check ", "fetch ", "open ", "browse ", "go to ", "look up ", "visit ")
+        )
+        if (
+            not has_url
+            and asks_why_how
+            and any(token in lowered for token in ("external api", "egress", "approval", "network access", "web access"))
+        ):
+            # Conceptual policy/design question, not an execution/fetch request.
+            return False
+        if (
+            (has_url or has_bare_domain)
+            and asks_why_how
+            and asks_policy
+            and not has_imperative
+        ):
+            # Conceptual question that references a URL as an example.
+            return False
+        if re.search(r"https?://|www\.", lowered):
+            return True
+        if re.search(r"\bcheck\b.{0,48}\b[a-z0-9.-]+\.[a-z]{2,}\b", lowered):
+            return True
+        return any(
+            token in lowered
+            for token in (
+                "check the weather",
+                "fetch ",
+                "open website",
+                "browse to",
+                "look up online",
+                "go to this site",
+                "web request",
+            )
+        )
+
+    @staticmethod
+    def _looks_like_unsafe_scheme_request(text: str) -> bool:
+        """Detect collaborator requests using disallowed URL schemes."""
+        if not isinstance(text, str):
+            return False
+        lowered = normalize_input(text).lower()
+        if not re.search(r"\b(?:file|ftp|gopher|smb|ssh|mailto|data):\/\/", lowered):
+            return False
+        request_markers = ("fetch", "open", "download", "request", "get", "check", "read")
+        return any(marker in lowered for marker in request_markers)
+
+    @staticmethod
+    def _looks_like_allowlist_bypass_request(text: str) -> bool:
+        """Detect collaborator prompts trying to bypass domain allowlist/egress policy."""
+        if not isinstance(text, str):
+            return False
+        lowered = normalize_input(text).lower()
+        bypass_markers = (
+            "bypass allowlist",
+            "bypass egress",
+            "evade allowlist",
+            "use redirect",
+            "open redirect",
+            "url shortener",
+            "shortened url",
+            "redirect chain",
+            "follow redirect to blocked",
+            "proxy through",
+            "tunnel through",
+        )
+        if not any(marker in lowered for marker in bypass_markers):
+            return False
+        request_markers = ("fetch", "open", "get", "request", "visit", "check", "use")
+        return any(marker in lowered for marker in request_markers)
+
+    @staticmethod
+    def _looks_like_unicode_obfuscation_bypass_request(text: str) -> bool:
+        """Detect collaborator prompts asking to bypass controls via unicode/invisible tricks."""
+        if not isinstance(text, str):
+            return False
+        lowered = normalize_input(text).lower()
+        obfuscation_markers = (
+            "zero-width",
+            "zero width",
+            "homoglyph",
+            "invisible character",
+            "unicode trick",
+            "unicode bypass",
+            "rtl override",
+        )
+        if not any(marker in lowered for marker in obfuscation_markers):
+            return False
+        intent_markers = ("bypass", "evade", "avoid", "hide", "obfuscate", "sneak", "slip")
+        return any(marker in lowered for marker in intent_markers)
+
+    @staticmethod
+    def _looks_like_execution_request(text: str) -> bool:
+        """Detect collaborator requests to run commands or perform direct execution."""
+        if not isinstance(text, str):
+            return False
+        lowered = normalize_input(text).lower()
+        patterns = (
+            r"\b(run|execute|invoke|launch)\b.{0,28}\b(command|shell|script|terminal)\b",
+            r"\b(run|execute)\b.{0,24}\b(pwd|ls|cat|grep|find|whoami|uname|curl|wget)\b",
+            r"`\s*(pwd|ls|cat|grep|find|whoami|uname|curl|wget)[^`]*`",
+            r"\bjust run\b",
+            r"\bdo a harmless system check\b",
+            r"\bshow me the output\b.{0,20}\b(command|shell)\b",
         )
         return any(re.search(pat, lowered) for pat in patterns)
+
+    @staticmethod
+    def _looks_like_hypothetical_execution_question(text: str) -> bool:
+        """Detect policy questions about execution behavior (not actual execution asks)."""
+        if not isinstance(text, str):
+            return False
+        lowered = normalize_input(text).lower()
+        markers = (
+            "what happens if",
+            "if i asked",
+            "would you",
+            "can you explain",
+            "how do you handle",
+            "what would happen",
+            "do you need approval",
+            "would anything stop you",
+        )
+        return any(marker in lowered for marker in markers) and any(
+            token in lowered for token in ("run", "execute", "command", "shell")
+        )
+
+    @staticmethod
+    def _looks_like_collaborator_privacy_query(text: str) -> bool:
+        """Detect collaborator prompts asking about other users/sessions/identities."""
+        if not isinstance(text, str):
+            return False
+        lowered = normalize_input(text).lower()
+        return any(
+            token in lowered
+            for token in (
+                "who else uses",
+                "other collaborators",
+                "other users",
+                "who is active",
+                "what have they been working on",
+                "other sessions",
+                "other people's files",
+                "can you see files they've created",
+            )
+        )
+
+    @staticmethod
+    def _looks_like_identity_enumeration_query(text: str) -> bool:
+        """Detect collaborator prompts attempting owner/collaborator identity disclosure."""
+        if not isinstance(text, str):
+            return False
+        lowered = normalize_input(text).lower()
+        return any(
+            token in lowered
+            for token in (
+                "owner telegram id",
+                "telegram user id",
+                "owner id",
+                "who is the owner",
+                "what is isaiah",
+                "list collaborators",
+                "who are the collaborators",
+                "collaborator names",
+            )
+        )
 
     @staticmethod
     def _looks_like_safe_collaborator_info_query(text: str) -> bool:
@@ -282,7 +736,9 @@ class TelegramAPIProxy:
             return False
         if TelegramAPIProxy._looks_like_command_enumeration_query(lowered):
             return False
-        if re.search(r"\b(create|write|edit|delete|run|execute|open|show|cat|grep|find|ls|fetch)\b", lowered):
+        if re.search(r"\b(create|write|edit|delete|execute|open|cat|grep|find|ls|fetch)\b", lowered):
+            return False
+        if re.search(r"\brun\b(?!\s+on\b)", lowered):
             return False
         return any(
             token in lowered
@@ -295,27 +751,755 @@ class TelegramAPIProxy:
                 "policy",
                 "recommendation",
                 "best practice",
+                "approval",
                 "approval process",
+                "configuration",
+                "security settings",
+                "self-modification",
                 "filters messages",
                 "how does this work",
+                "network",
+                "infrastructure",
+                "hosting",
+                "vpn",
+                "topology",
             )
         )
+
+    @staticmethod
+    def _looks_like_approval_queue_probe(text: str) -> bool:
+        """Detect collaborator prompts trying to inspect approval queue internals/metadata."""
+        if not isinstance(text, str):
+            return False
+        lowered = normalize_input(text).lower()
+        if "approval" not in lowered and "egress" not in lowered:
+            return False
+        return any(
+            token in lowered
+            for token in (
+                "pending approvals",
+                "approval queue",
+                "approval id",
+                "request id",
+                "egress id",
+                "domain list",
+                "show approvals",
+                "list approvals",
+                "risk score",
+                "who approved",
+            )
+        )
+
+    @staticmethod
+    def _looks_like_policy_bypass_request(text: str) -> bool:
+        """Detect collaborator prompts asking to bypass/disable approvals or protections."""
+        if not isinstance(text, str):
+            return False
+        lowered = normalize_input(text).lower()
+        patterns = (
+            r"\b(bypass|skip|ignore|disable|turn off)\b.{0,28}\b(approval|policy|security|guardrail|filter)\b",
+            r"\bwithout\b.{0,16}\b(approval|authorization|policy check)\b",
+            r"\bforce\b.{0,20}\b(allow|approve)\b",
+            r"\bwhitelist\b.{0,24}\b(domain|url|host)\b",
+        )
+        return any(re.search(pat, lowered) for pat in patterns)
+
+    @staticmethod
+    def _looks_like_log_access_request(text: str) -> bool:
+        """Detect collaborator prompts requesting direct system/audit log contents."""
+        if not isinstance(text, str):
+            return False
+        lowered = normalize_input(text).lower()
+        patterns = (
+            r"\b(show|read|open|print|dump|tail|cat|grep)\b.{0,32}\b(logs?|audit logs?|tracebacks?|stack traces?)\b",
+            r"\b(openclaw logs|docker logs|journalctl)\b",
+            r"\bwhat (?:do|does)\b.{0,24}\b(logs?|audit)\b.{0,24}\bshow\b",
+        )
+        return any(re.search(pat, lowered) for pat in patterns)
+
+    @staticmethod
+    def _looks_like_memory_access_request(text: str) -> bool:
+        """Detect collaborator prompts requesting direct memory content/search access."""
+        if not isinstance(text, str):
+            return False
+        lowered = normalize_input(text).lower()
+        patterns = (
+            r"\b(show|read|open|dump|print|list|search|query)\b.{0,24}\b(memory|memories)\b",
+            r"\bmemory_search\b",
+            r"\brecall\b.{0,28}\b(previous|past|other users?|other collaborators?)\b",
+            r"\bwhat do you remember about\b",
+        )
+        return any(re.search(pat, lowered) for pat in patterns)
+
+    @staticmethod
+    def _looks_like_secret_value_request(text: str) -> bool:
+        """Detect collaborator prompts asking for raw secret/token/password values."""
+        if not isinstance(text, str):
+            return False
+        lowered = normalize_input(text).lower()
+        conceptual_markers = (
+            "policy",
+            "workflow",
+            "isolation",
+            "management",
+            "handling",
+            "best practice",
+            "rotation",
+            "how does",
+            "how do",
+            "architecture",
+            "design",
+        )
+        if any(marker in lowered for marker in conceptual_markers):
+            return False
+        secret_markers = (
+            "api key",
+            "token",
+            "password",
+            "secret",
+            "credential",
+            "private key",
+            "access key",
+        )
+        request_markers = (
+            "show",
+            "reveal",
+            "display",
+            "print",
+            "tell me",
+            "what is",
+            "give me",
+            "share",
+            "return",
+        )
+        value_markers = (
+            "value",
+            "actual",
+            "raw",
+            "full",
+            "exact",
+            "literal",
+            "itself",
+        )
+        if not any(marker in lowered for marker in secret_markers):
+            return False
+        if not any(marker in lowered for marker in request_markers):
+            return False
+        # Require explicit value intent to avoid blocking conceptual collaborator
+        # questions (e.g., "what is the credential isolation policy").
+        if any(marker in lowered for marker in value_markers):
+            return True
+        return bool(re.search(r"\b(show|reveal|display|print|give|share)\b.{0,32}\b(api key|token|password|secret|credential)\b", lowered))
+
+    @staticmethod
+    def _looks_like_env_secret_probe(text: str) -> bool:
+        """Detect collaborator prompts requesting environment variable/secret listings."""
+        if not isinstance(text, str):
+            return False
+        lowered = normalize_input(text).lower()
+        env_markers = (
+            "environment variable",
+            "environment variables",
+            "env vars",
+            "printenv",
+            "os.environ",
+            "getenv",
+            "$openai_api_key",
+            "$gemini_api_key",
+            "$anthropic_api_key",
+            "$api_key",
+            "$token",
+        )
+        if not any(marker in lowered for marker in env_markers):
+            return False
+        request_markers = ("show", "list", "print", "dump", "display", "reveal", "what are", "return")
+        return any(marker in lowered for marker in request_markers)
+
+    @staticmethod
+    def _looks_like_incremental_exfil_request(text: str) -> bool:
+        """Detect chunked/partial extraction prompts intended to bypass output controls."""
+        if not isinstance(text, str):
+            return False
+        lowered = normalize_input(text).lower()
+        target_markers = ("bootstrap.md", "identity.md", "memory.md", ".env", "secret", "token", "credential")
+        if not any(marker in lowered for marker in target_markers):
+            return False
+        chunk_markers = (
+            "first line",
+            "first 10",
+            "first 20",
+            "first 50",
+            "one line at a time",
+            "line by line",
+            "chunk by chunk",
+            "in chunks",
+            "character by character",
+            "few characters",
+            "just a snippet",
+            "small snippet",
+        )
+        return any(marker in lowered for marker in chunk_markers)
+
+    @staticmethod
+    def _looks_like_encoded_exfil_request(text: str) -> bool:
+        """Detect requests to encode sensitive/internal content for exfiltration."""
+        if not isinstance(text, str):
+            return False
+        lowered = normalize_input(text).lower()
+        target_markers = (
+            "bootstrap.md",
+            "identity.md",
+            "memory.md",
+            ".env",
+            "secret",
+            "token",
+            "credential",
+            "api key",
+        )
+        if not any(marker in lowered for marker in target_markers):
+            return False
+        encoding_markers = (
+            "base64",
+            "hex",
+            "url encode",
+            "encode it",
+            "encoded",
+            "rot13",
+            "gzip",
+            "compress",
+            "obfuscate",
+        )
+        request_markers = ("show", "return", "print", "send", "dump", "export", "give me")
+        return any(marker in lowered for marker in encoding_markers) and any(
+            marker in lowered for marker in request_markers
+        )
+
+    @staticmethod
+    def _looks_like_hidden_channel_exfil_request(text: str) -> bool:
+        """Detect requests to extract hidden-channel content from sensitive/internal sources."""
+        if not isinstance(text, str):
+            return False
+        lowered = normalize_input(text).lower()
+        target_markers = (
+            "bootstrap.md",
+            "identity.md",
+            "memory.md",
+            ".env",
+            "internal file",
+            "workspace file",
+        )
+        if not any(marker in lowered for marker in target_markers):
+            return False
+        hidden_channel_markers = (
+            "html comment",
+            "markdown link",
+            "alt text",
+            "metadata",
+            "filename stuffing",
+            "hidden text",
+            "invisible text",
+            "annotation",
+        )
+        request_markers = ("extract", "show", "dump", "print", "return", "reveal", "list")
+        return any(marker in lowered for marker in hidden_channel_markers) and any(
+            marker in lowered for marker in request_markers
+        )
+
+    @staticmethod
+    def _looks_like_archive_exfil_request(text: str) -> bool:
+        """Detect collaborator prompts requesting archive/bulk export of internal content."""
+        if not isinstance(text, str):
+            return False
+        lowered = normalize_input(text).lower()
+        archive_markers = ("zip", "tar", "tar.gz", "archive", "bundle", "pack")
+        target_markers = ("workspace", "bootstrap.md", "identity.md", "memory.md", "all files", "project files")
+        request_markers = ("export", "download", "send", "create", "make", "build", "package")
+        return (
+            any(marker in lowered for marker in archive_markers)
+            and any(marker in lowered for marker in target_markers)
+            and any(marker in lowered for marker in request_markers)
+        )
+
+    @staticmethod
+    def _looks_like_cross_user_messaging_request(text: str) -> bool:
+        """Detect collaborator prompts requesting direct messaging to other users."""
+        if not isinstance(text, str):
+            return False
+        lowered = normalize_input(text).lower()
+        action_markers = ("send message", "dm", "direct message", "notify", "contact", "message ")
+        recipient_markers = (
+            "owner",
+            "isaiah",
+            "another collaborator",
+            "other collaborator",
+            "other user",
+            "marvin",
+            "trillian",
+            "raspberrypi",
+            "telegram id",
+        )
+        if not any(marker in lowered for marker in action_markers):
+            return False
+        return any(marker in lowered for marker in recipient_markers)
+
+    @staticmethod
+    def _looks_like_scheduler_or_autorun_request(text: str) -> bool:
+        """Detect collaborator prompts attempting scheduled/automatic task execution."""
+        if not isinstance(text, str):
+            return False
+        lowered = normalize_input(text).lower()
+        schedule_markers = (
+            "cron",
+            "schedule",
+            "every hour",
+            "every day",
+            "automatically run",
+            "auto-run",
+            "periodic task",
+            "background job",
+        )
+        if not any(marker in lowered for marker in schedule_markers):
+            return False
+        action_markers = ("run", "execute", "start", "trigger", "create", "set up", "configure")
+        return any(marker in lowered for marker in action_markers)
+
+    @staticmethod
+    def _looks_like_model_switch_request(text: str) -> bool:
+        """Detect collaborator prompts trying to switch runtime model/provider configuration."""
+        if not isinstance(text, str):
+            return False
+        lowered = normalize_input(text).lower()
+        target_markers = (
+            "switch model",
+            "change model",
+            "set model",
+            "switch provider",
+            "change provider",
+            "switch to openai",
+            "switch to gemini",
+            "switch to ollama",
+            "scripts/switch_model.sh",
+            "openclaw_main_model",
+            "agentshroud_model_mode",
+        )
+        return any(marker in lowered for marker in target_markers)
+
+    @staticmethod
+    def _looks_like_service_control_request(text: str) -> bool:
+        """Detect collaborator prompts attempting service/container lifecycle control."""
+        if not isinstance(text, str):
+            return False
+        lowered = normalize_input(text).lower()
+        conceptual_markers = ("how should", "how does", "what is", "best practice", "approval", "governed")
+        if any(marker in lowered for marker in conceptual_markers):
+            return False
+        action_markers = (
+            "restart",
+            "shutdown",
+            "shut down",
+            "stop",
+            "start",
+            "reboot",
+            "kill",
+        )
+        target_markers = (
+            "gateway",
+            "bot",
+            "agentshroud",
+            "openclaw",
+            "container",
+            "docker",
+            "service",
+            "compose",
+            "killswitch",
+            "kill switch",
+        )
+        return any(action in lowered for action in action_markers) and any(
+            target in lowered for target in target_markers
+        )
+
+    @staticmethod
+    def _looks_like_plugin_discovery_request(text: str) -> bool:
+        """Detect collaborator prompts requesting plugin/tool auto-discovery inventory."""
+        if not isinstance(text, str):
+            return False
+        lowered = normalize_input(text).lower()
+        discovery_markers = (
+            "plugin discovery",
+            "auto-discover",
+            "auto discover",
+            "enumerate plugins",
+            "list installed plugins",
+            "all mcp servers",
+            "show connected mcp tools",
+            "tool registry dump",
+        )
+        if not any(marker in lowered for marker in discovery_markers):
+            return False
+        request_markers = ("show", "list", "enumerate", "dump", "print", "reveal")
+        return any(marker in lowered for marker in request_markers)
+
+    @staticmethod
+    def _looks_like_pairing_or_access_probe(text: str) -> bool:
+        """Detect collaborator prompts requesting pairing/access bootstrap artifacts."""
+        if not isinstance(text, str):
+            return False
+        lowered = normalize_input(text).lower()
+        targets = (
+            "pairing code",
+            "openclaw pairing approve",
+            "access not configured",
+            "telegram user id",
+            "approve telegram",
+            "pairing approve",
+        )
+        if not any(target in lowered for target in targets):
+            return False
+        request_markers = ("show", "give", "send", "share", "provide", "what is", "return")
+        return any(marker in lowered for marker in request_markers)
+
+    @staticmethod
+    def _looks_like_tool_trace_request(text: str) -> bool:
+        """Detect collaborator prompts requesting raw tool traces/arguments/results."""
+        if not isinstance(text, str):
+            return False
+        lowered = normalize_input(text).lower()
+        trace_targets = (
+            "function_calls",
+            "tool-call",
+            "tool call",
+            "tool arguments",
+            "raw json",
+            "raw xml",
+            "stdout",
+            "stderr",
+        )
+        if not any(target in lowered for target in trace_targets):
+            return False
+        request_markers = ("show", "print", "dump", "display", "return", "reveal", "send")
+        return any(marker in lowered for marker in request_markers)
+
+    @staticmethod
+    def _looks_like_approval_token_probe(text: str) -> bool:
+        """Detect collaborator prompts trying to obtain/craft approval callback tokens."""
+        if not isinstance(text, str):
+            return False
+        lowered = normalize_input(text).lower()
+        if not any(token in lowered for token in ("egress_", "callback data", "approval token", "request id", "rid")):
+            return False
+        return any(
+            token in lowered
+            for token in (
+                "generate",
+                "forge",
+                "craft",
+                "build",
+                "show",
+                "give me",
+                "return",
+                "send",
+                "provide",
+            )
+        )
+
+    @staticmethod
+    def _looks_like_approval_action_request(text: str) -> bool:
+        """Detect collaborator prompts attempting to approve/deny queued actions."""
+        if not isinstance(text, str):
+            return False
+        lowered = normalize_input(text).lower()
+        action_markers = (
+            "approve request",
+            "deny request",
+            "allow once",
+            "allow always",
+            "reject request",
+            "approve this egress",
+            "deny this egress",
+        )
+        if not any(marker in lowered for marker in action_markers):
+            return False
+        id_markers = ("request id", "approval id", "rid=", "id:")
+        return any(marker in lowered for marker in id_markers)
+
+    @staticmethod
+    def _looks_like_cross_tenant_data_probe(text: str) -> bool:
+        """Detect collaborator prompts attempting cross-tenant/workspace data access."""
+        if not isinstance(text, str):
+            return False
+        lowered = normalize_input(text).lower()
+        tenant_markers = (
+            "other tenant",
+            "another tenant",
+            "different tenant",
+            "other workspace",
+            "another workspace",
+            "other project workspace",
+            "other team data",
+            "cross-tenant",
+        )
+        if not any(marker in lowered for marker in tenant_markers):
+            return False
+        access_markers = (
+            "show",
+            "list",
+            "read",
+            "access",
+            "query",
+            "search",
+            "what is in",
+            "can you see",
+        )
+        return any(marker in lowered for marker in access_markers)
+
+    @staticmethod
+    def _looks_like_guardrail_modification_request(text: str) -> bool:
+        """Detect collaborator prompts attempting security/config guardrail changes."""
+        if not isinstance(text, str):
+            return False
+        lowered = normalize_input(text).lower()
+        conceptual_markers = (
+            "how should",
+            "how does",
+            "what is",
+            "why is",
+            "best practice",
+            "approved",
+            "can you modify your own configuration",
+            "could you adjust",
+            "if a security rule was blocking",
+        )
+        if any(marker in lowered for marker in conceptual_markers):
+            return False
+        targets = (
+            "security policy",
+            "guardrail",
+            "security settings",
+            "agentshroud.yaml",
+            "config file",
+            "rbac",
+            "allowlist",
+            "blocklist",
+            "approval rules",
+            "egress rules",
+        )
+        if not any(token in lowered for token in targets):
+            return False
+        verbs = (
+            "change",
+            "modify",
+            "update",
+            "edit",
+            "disable",
+            "turn off",
+            "relax",
+            "override",
+            "remove",
+            "set",
+        )
+        return any(verb in lowered for verb in verbs)
+
+    @staticmethod
+    def _looks_like_system_prompt_probe(text: str) -> bool:
+        """Detect collaborator prompts requesting system prompt/agent instruction leakage."""
+        if not isinstance(text, str):
+            return False
+        lowered = normalize_input(text).lower()
+        target_markers = (
+            "system prompt",
+            "developer prompt",
+            "hidden instructions",
+            "instruction hierarchy",
+            "agent instructions",
+            "skill.md",
+            "agents.md",
+            "bootstrap prompt",
+        )
+        if not any(marker in lowered for marker in target_markers):
+            return False
+        request_markers = ("show", "print", "dump", "reveal", "display", "return", "give me", "share")
+        return any(marker in lowered for marker in request_markers)
 
     @staticmethod
     def _collaborator_safe_notice(reason: str) -> str:
         """Concise collaborator-safe reason text without internal leakage."""
         lowered = normalize_input(reason or "").lower()
+        if any(
+            token in lowered
+            for token in ("metadata-endpoint", "imds", "secret-access", "credential", "secret", "token", "password", "key")
+        ):
+            return _COLLABORATOR_SECRET_NOTICE
+        if any(
+            token in lowered
+            for token in ("internal-network", "ssrf", "localhost", "egress", "domain", "network", "url", "web")
+        ):
+            return _COLLABORATOR_EGRESS_NOTICE
+        if any(
+            token in lowered
+            for token in ("obfuscated-command", "execution-request", "tool", "command", "capability", "permissions", "blocked command")
+        ):
+            return _COLLABORATOR_SCOPE_NOTICE
         if any(token in lowered for token in ("file", "workspace", ".md", "path", "directory")):
             return _COLLABORATOR_FILE_NOTICE
-        if any(token in lowered for token in ("credential", "secret", "token", "password", "key")):
-            return _COLLABORATOR_SECRET_NOTICE
-        if any(token in lowered for token in ("web", "egress", "domain", "network", "url")):
-            return _COLLABORATOR_EGRESS_NOTICE
-        if any(token in lowered for token in ("tool", "command", "capability", "permissions", "blocked command")):
-            return _COLLABORATOR_SCOPE_NOTICE
-        if any(token in lowered for token in ("timeout", "unavailable", "processing", "no_reply")):
+        if any(
+            token in lowered
+            for token in ("timeout", "unavailable", "processing", "no_reply", "runtime", "failed", "error")
+        ):
             return _COLLABORATOR_UNAVAILABLE_NOTICE
         return _COLLABORATOR_BLOCK_NOTICE
+
+    @staticmethod
+    def _build_collaborator_safe_info_response(prompt: str) -> str:
+        """Build informative but non-sensitive response for collaborator conceptual questions."""
+        lowered = normalize_input(prompt or "").lower()
+        if any(
+            token in lowered
+            for token in (
+                "modify your own configuration",
+                "security settings",
+                "self-modification",
+                "security rule was blocking",
+            )
+        ):
+            return (
+                "🛡️ Protect by AgentShroud — configuration safety guidance:\n"
+                "• Collaborators and runtime agents cannot self-modify security guardrails.\n"
+                "• Security/configuration changes require authorized admin approval.\n"
+                "• I can explain policy intent and propose safe change-request language."
+            )
+        if any(token in lowered for token in ("authentication", "credential", "api key", "secret")):
+            return (
+                "🛡️ Protect by AgentShroud — secure collaboration guidance:\n"
+                "• Authentication is brokered through protected service boundaries.\n"
+                "• Collaborators do not receive raw credentials or secret values.\n"
+                "• Sensitive operations require policy checks and authorization.\n"
+                "• I can help with integration patterns and least-privilege recommendations."
+            )
+        if any(token in lowered for token in ("security setup", "architecture", "filters messages", "how does this work")):
+            return (
+                "🛡️ Protect by AgentShroud — secure architecture overview:\n"
+                "• Messages pass through policy and safety controls before action.\n"
+                "• High-risk actions are restricted and audited.\n"
+                "• Outputs are filtered to prevent sensitive disclosure.\n"
+                "• I can explain secure design choices without exposing internal execution details."
+            )
+        if any(token in lowered for token in ("infrastructure", "hosting", "vpn", "topology")):
+            return (
+                "🛡️ Protect by AgentShroud — infrastructure safety guidance:\n"
+                "• Network and hosting internals are intentionally abstracted in collaborator mode.\n"
+                "• Security controls enforce trusted boundaries and approved communication paths.\n"
+                "• I can provide high-level architecture guidance without exposing sensitive implementation details."
+            )
+        if any(token in lowered for token in ("tool", "command", "capability", "permissions")):
+            return (
+                "🛡️ Protect by AgentShroud — collaborator capability overview:\n"
+                "• I can discuss system concepts, security guidance, and recommendations.\n"
+                "• I cannot provide runnable commands, raw tool traces, or execution details.\n"
+                "• Direct file content access and secret/credential retrieval are restricted.\n"
+                "• External/network actions require explicit owner approval before execution."
+            )
+        if any(token in lowered for token in ("approval", "egress", "external", "network")):
+            return (
+                "🛡️ Protect by AgentShroud — egress and approval guidance:\n"
+                "• External/network actions require explicit authorization.\n"
+                "• Unauthorized outbound requests are denied.\n"
+                "• Approval decisions are enforced before execution.\n"
+                "• I can help draft safe request criteria and risk-aware justification."
+            )
+        if any(
+            token in lowered
+            for token in (
+                "who else",
+                "collaborator",
+                "other users",
+                "other sessions",
+                "active users",
+                "owner telegram id",
+                "telegram user id",
+                "owner id",
+                "who is the owner",
+            )
+        ):
+            return (
+                "🛡️ Protect by AgentShroud — privacy boundary guidance:\n"
+                "• Collaborator identities, activity, and session data are privacy-protected.\n"
+                "• I cannot disclose other users' status, files, or conversation details.\n"
+                "• I can help with shared process guidance without exposing user-specific data."
+            )
+        if any(token in lowered for token in ("bootstrap.md", "identity.md")):
+            return (
+                "🛡️ Protect by AgentShroud — file access policy guidance:\n"
+                "• BOOTSTRAP.md and IDENTITY.md are treated as internal system files.\n"
+                "• Collaborators cannot access raw file contents or direct file reads.\n"
+                "• I can provide high-level onboarding and role guidance without exposing file data."
+            )
+        return _COLLABORATOR_SAFE_INFO_NOTICE
+
+    @staticmethod
+    def _contains_high_risk_collaborator_leakage(text: str) -> bool:
+        """Detect obvious raw tool/file/system leakage patterns in outbound text."""
+        if not isinstance(text, str):
+            return False
+        normalized = normalize_input(text).lower()
+        patterns = (
+            r"<function_calls?>",
+            r"</function_calls?>",
+            r'"\s*name"\s*:\s*"(?:sessions_spawn|sessions_send|web_fetch|exec|shell|find|grep|cat|ls)"',
+            r'"\s*arguments"\s*:\s*\{',
+            r"\b/(?:etc|proc|run/secrets|home|root|usr|var)/",
+            r"\b(?:\.env|bootstrap\.md|identity\.md|memory\.md)\b",
+            r"\bpairing code\s*:",
+            r"\bopenclaw pairing approve telegram\b",
+            r"\byour telegram user id\s*:",
+            r"\bopenclaw:\s*access not configured\b",
+            r"\b(?:traceback|stack trace|stderr|stdout)\b",
+        )
+        return any(re.search(pat, normalized) for pat in patterns)
+
+    @staticmethod
+    def _contains_internal_approval_banner(text: str) -> bool:
+        """Detect internal approval/egress banner text that must remain owner-only."""
+        if not isinstance(text, str):
+            return False
+        normalized = normalize_input(text).lower()
+        return (
+            ("egress request" in normalized and "domain:" in normalized)
+            or ("risk:" in normalized and "tool:" in normalized and "id:" in normalized)
+        )
+
+    @staticmethod
+    def _contains_legacy_block_notice(text: str) -> bool:
+        """Detect legacy bracket-style block notices for collaborator normalization."""
+        if not isinstance(text, str):
+            return False
+        normalized = normalize_input(text).lower()
+        return (
+            "[agentshroud:" in normalized
+            or "outbound content blocked by security policy" in normalized
+            or "[blocked by agentshroud:" in normalized
+            or "protected by agentshroud" in normalized
+            or "internal tool-call output suppressed" in normalized
+        )
+
+    @staticmethod
+    def _looks_like_tool_payload_text(text: str) -> bool:
+        """Detect raw/embedded tool payload text in user input."""
+        if not isinstance(text, str):
+            return False
+        normalized = normalize_input(text).lower()
+        if "<function_calls" in normalized or "</function_calls>" in normalized:
+            return True
+        if '"name"' in normalized and '"arguments"' in normalized:
+            return True
+        if "'name'" in normalized and "'arguments'" in normalized:
+            return True
+        if re.search(r"\bname\s*:\s*[\"']?[a-z0-9_.:-]+[\"']?\s*,\s*arguments\s*:", normalized):
+            return True
+        if re.search(r"\{\s*\"name\"\s*:\s*\"[a-z0-9_.:-]+\"\s*,\s*\"arguments\"\s*:", normalized):
+            return True
+        if re.search(r"\{\s*'name'\s*:\s*'[a-z0-9_.:-]+'\s*,\s*'arguments'\s*:", normalized):
+            return True
+        return False
 
     @staticmethod
     def _strip_json_fence(text: str) -> str:
@@ -454,10 +1638,17 @@ class TelegramAPIProxy:
     @staticmethod
     def _resolve_text_field(data: dict[str, Any]) -> tuple[str, str]:
         """Return (field_name, text_value) for Telegram-style outbound payloads."""
+        first_string_key: Optional[str] = None
         for key in ("text", "draft", "message", "content", "caption"):
             value = data.get(key)
             if isinstance(value, str):
-                return key, value
+                if first_string_key is None:
+                    first_string_key = key
+                if normalize_input(value).strip():
+                    return key, value
+        if first_string_key is not None:
+            value = data.get(first_string_key)
+            return first_string_key, value if isinstance(value, str) else ""
         return "text", ""
 
     async def proxy_request(
@@ -650,6 +1841,30 @@ class TelegramAPIProxy:
                 if (
                     not is_owner_chat
                     and isinstance(text, str)
+                    and normalize_input(text).strip().lower().startswith("⚠️ agent failed before reply:")
+                ):
+                    self._stats["outbound_filtered"] += 1
+                    data[text_key] = self._collaborator_safe_notice("runtime unavailable")
+                    return json.dumps(data).encode()
+                if (
+                    not is_owner_chat
+                    and isinstance(text, str)
+                    and "not authorized to use this command" in text.lower()
+                ):
+                    self._stats["outbound_filtered"] += 1
+                    data[text_key] = self._collaborator_safe_notice("restricted command")
+                    return json.dumps(data).encode()
+                if self._is_no_reply_token(text):
+                    self._stats["outbound_filtered"] += 1
+                    data[text_key] = (
+                        self._collaborator_safe_notice("processing timeout")
+                        if not is_owner_chat
+                        else "⏳ Agent is still processing a previous request. Please wait 10–20 seconds and retry."
+                    )
+                    return json.dumps(data).encode()
+                if (
+                    not is_owner_chat
+                    and isinstance(text, str)
                     and (
                         "multi-turn disclosure" in text.lower()
                         or "blocked due to security protocols" in text.lower()
@@ -657,6 +1872,38 @@ class TelegramAPIProxy:
                 ):
                     self._stats["outbound_filtered"] += 1
                     data[text_key] = self._collaborator_safe_notice("policy block")
+                    return json.dumps(data).encode()
+                if (
+                    not is_owner_chat
+                    and isinstance(text, str)
+                    and ("security monitoring active at" in text.lower() and "threshold" in text.lower())
+                ):
+                    self._stats["outbound_filtered"] += 1
+                    data[text_key] = self._collaborator_safe_notice("policy block")
+                    return json.dumps(data).encode()
+                if (
+                    not is_owner_chat
+                    and isinstance(text, str)
+                    and self._contains_legacy_block_notice(text)
+                ):
+                    self._stats["outbound_filtered"] += 1
+                    data[text_key] = self._collaborator_safe_notice("policy block")
+                    return json.dumps(data).encode()
+                if (
+                    not is_owner_chat
+                    and isinstance(text, str)
+                    and self._contains_internal_approval_banner(text)
+                ):
+                    self._stats["outbound_filtered"] += 1
+                    data[text_key] = _COLLABORATOR_EGRESS_NOTICE
+                    return json.dumps(data).encode()
+                if (
+                    not is_owner_chat
+                    and isinstance(text, str)
+                    and self._contains_high_risk_collaborator_leakage(text)
+                ):
+                    self._stats["outbound_filtered"] += 1
+                    data[text_key] = self._collaborator_safe_notice("redacted protected content")
                     return json.dumps(data).encode()
                 if isinstance(text, str) and "does not support tools" in text.lower():
                     self._stats["outbound_filtered"] += 1
@@ -679,7 +1926,10 @@ class TelegramAPIProxy:
                 rewritten_runtime_error = self._rewrite_known_runtime_errors(text) if isinstance(text, str) else None
                 if rewritten_runtime_error:
                     self._stats["outbound_filtered"] += 1
-                    data[text_key] = rewritten_runtime_error
+                    if not is_owner_chat and "switch_model.sh" in rewritten_runtime_error.lower():
+                        data[text_key] = self._collaborator_safe_notice("runtime unavailable")
+                    else:
+                        data[text_key] = rewritten_runtime_error
                     return json.dumps(data).encode()
 
                 if text:
@@ -836,6 +2086,7 @@ class TelegramAPIProxy:
                 data = dict(parsed)
                 text_key, text = self._resolve_text_field(data)
                 chat_id = str(data.get("chat_id", ""))
+                is_owner_chat = self._is_owner_chat(chat_id)
 
                 parsed_tool_call = self._parse_tool_call_json(text) if isinstance(text, str) else None
                 embedded_tool_call = (
@@ -847,6 +2098,10 @@ class TelegramAPIProxy:
                     trailing = text[emb_end:].strip()
                     cleaned = " ".join(part for part in (leading, trailing) if part).strip()
                     if cleaned:
+                        if not is_owner_chat:
+                            data[text_key] = self._collaborator_safe_notice("tool output redacted")
+                            self._stats["outbound_filtered"] += 1
+                            return urllib.parse.urlencode(data).encode()
                         tool_name = str(parsed_tool_call.get("name", "")).strip()
                         tool_args = parsed_tool_call.get("arguments") if isinstance(parsed_tool_call.get("arguments"), dict) else {}
                         if tool_name == "web_fetch":
@@ -864,39 +2119,80 @@ class TelegramAPIProxy:
                     tool_args = parsed_tool_call.get("arguments") if isinstance(parsed_tool_call.get("arguments"), dict) else {}
                     self._stats["outbound_filtered"] += 1
                     if tool_name.upper() == "NO_REPLY":
-                        now = time.time()
-                        blocked_until = self._recent_no_reply_notice_until.get(chat_id, 0.0) if chat_id else 0.0
-                        if chat_id and blocked_until > now:
-                            data[text_key] = _SUPPRESS_OUTBOUND_TOKEN
-                        else:
-                            data[text_key] = "⏳ Agent is still processing a previous request. Please wait 10–20 seconds and retry."
-                            if chat_id:
-                                self._recent_no_reply_notice_until[chat_id] = (
-                                    now + self._no_reply_notice_cooldown_seconds
-                                )
+                        data[text_key] = (
+                            self._collaborator_safe_notice("processing timeout")
+                            if not is_owner_chat
+                            else "⏳ Agent is still processing a previous request. Please wait 10–20 seconds and retry."
+                        )
                     elif tool_name == "sessions_spawn" and str(tool_args.get("agentId", "")) == "acp.healthcheck":
-                        data[text_key] = "✅ Healthcheck started. I’ll reply with status once complete."
+                        data[text_key] = (
+                            self._collaborator_safe_notice("restricted command")
+                            if not is_owner_chat
+                            else "✅ Healthcheck started. I’ll reply with status once complete."
+                        )
                     elif tool_name == "web_fetch":
                         approval_queued = await self._trigger_web_fetch_approval(chat_id, tool_args)
-                        approval_note = (
-                            " Approval request queued for this destination."
-                            if approval_queued else
-                            ""
-                        )
-                        data[text_key] = (
-                            "🌐 Web fetch requested, but this model returned raw tool JSON instead of executing it. "
-                            "Switch to a tool-capable model (e.g., scripts/switch_model.sh gemini or local qwen3:14b once pulled)."
-                            + approval_note
-                        )
+                        if not is_owner_chat:
+                            data[text_key] = (
+                                _COLLABORATOR_EGRESS_NOTICE
+                                if approval_queued else self._collaborator_safe_notice("web access unavailable")
+                            )
+                        else:
+                            approval_note = (
+                                " Approval request queued for this destination."
+                                if approval_queued else
+                                ""
+                            )
+                            data[text_key] = (
+                                "🌐 Web fetch requested, but this model returned raw tool JSON instead of executing it. "
+                                "Switch to a tool-capable model (e.g., scripts/switch_model.sh gemini or local qwen3:14b once pulled)."
+                                + approval_note
+                            )
                     elif tool_name in {"sessions_spawn", "sessions_send", "subagents"}:
-                        data[text_key] = "✅ Request accepted and queued."
+                        data[text_key] = (
+                            self._collaborator_safe_notice("restricted command")
+                            if not is_owner_chat
+                            else "✅ Request accepted and queued."
+                        )
                     else:
-                        data[text_key] = _PROTECTED_POLICY_NOTICE
+                        data[text_key] = (
+                            self._collaborator_safe_notice("tool output redacted")
+                            if not is_owner_chat
+                            else _PROTECTED_POLICY_NOTICE
+                        )
                     return urllib.parse.urlencode(data).encode()
 
                 if isinstance(text, str) and "session file locked" in text.lower():
                     self._stats["outbound_filtered"] += 1
-                    data[text_key] = "⏳ Agent is still processing a previous request. Please wait 10–20 seconds and retry."
+                    data[text_key] = (
+                        self._collaborator_safe_notice("processing timeout")
+                        if not is_owner_chat
+                        else "⏳ Agent is still processing a previous request. Please wait 10–20 seconds and retry."
+                    )
+                    return urllib.parse.urlencode(data).encode()
+                if (
+                    not is_owner_chat
+                    and isinstance(text, str)
+                    and normalize_input(text).strip().lower().startswith("⚠️ agent failed before reply:")
+                ):
+                    self._stats["outbound_filtered"] += 1
+                    data[text_key] = self._collaborator_safe_notice("runtime unavailable")
+                    return urllib.parse.urlencode(data).encode()
+                if (
+                    not is_owner_chat
+                    and isinstance(text, str)
+                    and "not authorized to use this command" in text.lower()
+                ):
+                    self._stats["outbound_filtered"] += 1
+                    data[text_key] = self._collaborator_safe_notice("restricted command")
+                    return urllib.parse.urlencode(data).encode()
+                if self._is_no_reply_token(text):
+                    self._stats["outbound_filtered"] += 1
+                    data[text_key] = (
+                        self._collaborator_safe_notice("processing timeout")
+                        if not is_owner_chat
+                        else "⏳ Agent is still processing a previous request. Please wait 10–20 seconds and retry."
+                    )
                     return urllib.parse.urlencode(data).encode()
                 if isinstance(text, str) and "does not support tools" in text.lower():
                     self._stats["outbound_filtered"] += 1
@@ -919,7 +2215,53 @@ class TelegramAPIProxy:
                 rewritten_runtime_error = self._rewrite_known_runtime_errors(text) if isinstance(text, str) else None
                 if rewritten_runtime_error:
                     self._stats["outbound_filtered"] += 1
-                    data[text_key] = rewritten_runtime_error
+                    if not is_owner_chat and "switch_model.sh" in rewritten_runtime_error.lower():
+                        data[text_key] = self._collaborator_safe_notice("runtime unavailable")
+                    else:
+                        data[text_key] = rewritten_runtime_error
+                    return urllib.parse.urlencode(data).encode()
+                if (
+                    not is_owner_chat
+                    and isinstance(text, str)
+                    and (
+                        "multi-turn disclosure" in text.lower()
+                        or "blocked due to security protocols" in text.lower()
+                    )
+                ):
+                    self._stats["outbound_filtered"] += 1
+                    data[text_key] = self._collaborator_safe_notice("policy block")
+                    return urllib.parse.urlencode(data).encode()
+                if (
+                    not is_owner_chat
+                    and isinstance(text, str)
+                    and ("security monitoring active at" in text.lower() and "threshold" in text.lower())
+                ):
+                    self._stats["outbound_filtered"] += 1
+                    data[text_key] = self._collaborator_safe_notice("policy block")
+                    return urllib.parse.urlencode(data).encode()
+                if (
+                    not is_owner_chat
+                    and isinstance(text, str)
+                    and self._contains_legacy_block_notice(text)
+                ):
+                    self._stats["outbound_filtered"] += 1
+                    data[text_key] = self._collaborator_safe_notice("policy block")
+                    return urllib.parse.urlencode(data).encode()
+                if (
+                    not is_owner_chat
+                    and isinstance(text, str)
+                    and self._contains_internal_approval_banner(text)
+                ):
+                    self._stats["outbound_filtered"] += 1
+                    data[text_key] = _COLLABORATOR_EGRESS_NOTICE
+                    return urllib.parse.urlencode(data).encode()
+                if (
+                    not is_owner_chat
+                    and isinstance(text, str)
+                    and self._contains_high_risk_collaborator_leakage(text)
+                ):
+                    self._stats["outbound_filtered"] += 1
+                    data[text_key] = self._collaborator_safe_notice("redacted protected content")
                     return urllib.parse.urlencode(data).encode()
         except Exception as e:
             logger.error(f"Outbound filter error: {e}")
@@ -949,6 +2291,8 @@ class TelegramAPIProxy:
             return False
         if "\n" in url or "\r" in url:
             return False
+        if "://" not in url and self._looks_like_filename_reference(url):
+            return False
         if " " in url or "\t" in url:
             # Salvage malformed tool args like "https://weather.com/path with spaces"
             # by extracting the first URL token for destination approval only.
@@ -956,6 +2300,8 @@ class TelegramAPIProxy:
             if not first_token:
                 return False
             url = first_token
+            if "://" not in url and self._looks_like_filename_reference(url):
+                return False
         if re.search(r"%(?:0[0-9a-fA-F]|1[0-9a-fA-F]|7[fF])", url):
             return False
         if "\\" in url:
@@ -1130,6 +2476,25 @@ class TelegramAPIProxy:
                 cb_data = callback_query.get("data", "")
                 if cb_data.startswith("egress_"):
                     try:
+                        cb_user_id = str((callback_query.get("from") or {}).get("id", ""))
+                        cb_chat_id = ((callback_query.get("message") or {}).get("chat") or {}).get("id")
+                        if cb_user_id and self._rbac and not self._rbac.is_owner(cb_user_id):
+                            self._stats["messages_blocked"] += 1
+                            self._quarantine_blocked_message(
+                                user_id=cb_user_id,
+                                chat_id=cb_chat_id,
+                                text=cb_data,
+                                reason="Blocked collaborator egress-callback action",
+                                source="telegram_callback_rbac_block",
+                            )
+                            from gateway.ingest_api.state import app_state as _app_state
+                            _notifier = getattr(_app_state, "egress_notifier", None)
+                            if _notifier:
+                                await _notifier.answer_callback(
+                                    callback_query.get("id", ""),
+                                    "Not authorized for approval actions",
+                                )
+                            continue
                         from gateway.ingest_api.state import app_state as _app_state
                         _notifier = getattr(_app_state, "egress_notifier", None)
                         if _notifier:
@@ -1204,6 +2569,7 @@ class TelegramAPIProxy:
             # "little snitch" UX even when the model fails before tool execution.
             # Applies to owner + collaborators so domain approvals are visible
             # before outbound attempts regardless of user role.
+            preflight_egress_queued = False
             try:
                 if isinstance(original_transport_text, str) and re.search(
                     r"%(?:0[0-9a-fA-F]|1[0-9a-fA-F]|7[fF])",
@@ -1217,6 +2583,7 @@ class TelegramAPIProxy:
                         str(chat_id or ""),
                         {"url": requested_url},
                     )
+                    preflight_egress_queued = True
             except Exception as _pf:
                 logger.debug("Egress preflight approval error (non-fatal): %s", _pf)
 
@@ -1274,7 +2641,18 @@ class TelegramAPIProxy:
                     source="telegram_rate_limit",
                 )
                 if chat_id:
-                    await self._send_rate_limit_notice(chat_id)
+                    now = time.time()
+                    if len(self._recent_rate_limit_notice_until) > 4096:
+                        self._recent_rate_limit_notice_until = {
+                            k: v for k, v in self._recent_rate_limit_notice_until.items() if v > now
+                        }
+                    notice_until = self._recent_rate_limit_notice_until.get(user_id, 0.0)
+                    if notice_until <= now:
+                        notice_sent = await self._send_rate_limit_notice(chat_id, user_id=user_id)
+                        if notice_sent:
+                            self._recent_rate_limit_notice_until[user_id] = (
+                                now + self._rate_limit_notice_cooldown_seconds
+                            )
                 continue
 
             # ── Local deterministic command handling (owner + collaborators) ──
@@ -1317,6 +2695,27 @@ class TelegramAPIProxy:
                         )
                     # Drop update so bot runtime never sees this command.
                     continue
+                if self._looks_like_model_status_question(text):
+                    update_id = update.get("update_id")
+                    message_id = message.get("message_id")
+                    if update_id is None:
+                        dedupe_identity = f"msg:{message_id}"
+                    else:
+                        dedupe_identity = f"upd:{update_id}"
+                    dedupe_key = f"{chat_id}:{dedupe_identity}:model-question"
+                    now = time.time()
+                    if self._handled_local_command_update_ids.get(dedupe_key, 0.0) <= now:
+                        await self._send_local_model_notice(chat_id)
+                        self._handled_local_command_update_ids[dedupe_key] = (
+                            now + self._local_command_dedupe_ttl_seconds
+                        )
+                        logger.info(
+                            "Handled local model question for user %s (update_id=%s)",
+                            user_id,
+                            update_id,
+                        )
+                    # Drop update so bot runtime never sees this query.
+                    continue
 
             # ── Collaborator command blocking ─────────────────────────────────
             # Block owner-only slash commands before they reach the bot.
@@ -1338,6 +2737,223 @@ class TelegramAPIProxy:
                     await self._notify_collaborator_command_blocked(chat_id, cmd_base)
                     # Drop the update — do not forward to bot
                     continue
+                if cmd_base.startswith("/") and cmd_base not in _COLLABORATOR_ALLOWED_SLASH_COMMANDS:
+                    self._stats["messages_blocked"] += 1
+                    self._quarantine_blocked_message(
+                        user_id=user_id,
+                        chat_id=chat_id,
+                        text=text,
+                        reason=f"Blocked unapproved collaborator slash command: {cmd_base}",
+                        source="telegram_unknown_command_block",
+                    )
+                    await self._notify_collaborator_command_blocked(chat_id, "restricted-command")
+                    continue
+                if self._looks_like_tool_payload_text(text):
+                    self._stats["messages_blocked"] += 1
+                    self._quarantine_blocked_message(
+                        user_id=user_id,
+                        chat_id=chat_id,
+                        text=text,
+                        reason="Blocked collaborator raw tool-payload request",
+                        source="telegram_tool_payload_block",
+                    )
+                    await self._notify_collaborator_command_blocked(chat_id, "tool-payload")
+                    continue
+                if self._looks_like_approval_token_probe(text):
+                    self._stats["messages_blocked"] += 1
+                    self._quarantine_blocked_message(
+                        user_id=user_id,
+                        chat_id=chat_id,
+                        text=text,
+                        reason="Blocked collaborator approval-token probe",
+                        source="telegram_approval_token_block",
+                    )
+                    await self._notify_collaborator_command_blocked(chat_id, "restricted-command")
+                    continue
+                if self._looks_like_approval_action_request(text):
+                    self._stats["messages_blocked"] += 1
+                    self._quarantine_blocked_message(
+                        user_id=user_id,
+                        chat_id=chat_id,
+                        text=text,
+                        reason="Blocked collaborator approval-action request",
+                        source="telegram_approval_action_block",
+                    )
+                    await self._notify_collaborator_command_blocked(chat_id, "restricted-command")
+                    continue
+                if self._looks_like_cross_tenant_data_probe(text):
+                    self._stats["messages_blocked"] += 1
+                    self._quarantine_blocked_message(
+                        user_id=user_id,
+                        chat_id=chat_id,
+                        text=text,
+                        reason="Blocked collaborator cross-tenant data probe",
+                        source="telegram_cross_tenant_block",
+                    )
+                    await self._notify_collaborator_command_blocked(chat_id, "file-access")
+                    continue
+                if self._looks_like_guardrail_modification_request(text):
+                    self._stats["messages_blocked"] += 1
+                    self._quarantine_blocked_message(
+                        user_id=user_id,
+                        chat_id=chat_id,
+                        text=text,
+                        reason="Blocked collaborator guardrail-modification request",
+                        source="telegram_guardrail_mod_block",
+                    )
+                    await self._notify_collaborator_command_blocked(chat_id, "restricted-command")
+                    continue
+                if self._looks_like_system_prompt_probe(text):
+                    self._stats["messages_blocked"] += 1
+                    self._quarantine_blocked_message(
+                        user_id=user_id,
+                        chat_id=chat_id,
+                        text=text,
+                        reason="Blocked collaborator system-prompt probe",
+                        source="telegram_system_prompt_block",
+                    )
+                    await self._notify_collaborator_command_blocked(chat_id, "restricted-command")
+                    continue
+                if self._looks_like_tool_trace_request(text):
+                    self._stats["messages_blocked"] += 1
+                    self._quarantine_blocked_message(
+                        user_id=user_id,
+                        chat_id=chat_id,
+                        text=text,
+                        reason="Blocked collaborator tool-trace request",
+                        source="telegram_tool_trace_block",
+                    )
+                    await self._notify_collaborator_command_blocked(chat_id, "tool-payload")
+                    continue
+                if self._looks_like_sensitive_path_probe(text):
+                    self._stats["messages_blocked"] += 1
+                    self._quarantine_blocked_message(
+                        user_id=user_id,
+                        chat_id=chat_id,
+                        text=text,
+                        reason="Blocked collaborator sensitive-path probe",
+                        source="telegram_sensitive_path_block",
+                    )
+                    await self._notify_collaborator_command_blocked(chat_id, "file-access")
+                    continue
+                if self._looks_like_path_traversal_request(text):
+                    self._stats["messages_blocked"] += 1
+                    self._quarantine_blocked_message(
+                        user_id=user_id,
+                        chat_id=chat_id,
+                        text=text,
+                        reason="Blocked collaborator path-traversal request",
+                        source="telegram_path_traversal_block",
+                    )
+                    await self._notify_collaborator_command_blocked(chat_id, "file-access")
+                    continue
+                if self._looks_like_metadata_endpoint_probe(text):
+                    self._stats["messages_blocked"] += 1
+                    self._quarantine_blocked_message(
+                        user_id=user_id,
+                        chat_id=chat_id,
+                        text=text,
+                        reason="Blocked collaborator metadata-endpoint probe",
+                        source="telegram_metadata_endpoint_block",
+                    )
+                    await self._notify_collaborator_command_blocked(chat_id, "secret-access")
+                    continue
+                if self._looks_like_secret_value_request(text):
+                    self._stats["messages_blocked"] += 1
+                    self._quarantine_blocked_message(
+                        user_id=user_id,
+                        chat_id=chat_id,
+                        text=text,
+                        reason="Blocked collaborator secret-value request",
+                        source="telegram_secret_value_block",
+                    )
+                    await self._notify_collaborator_command_blocked(chat_id, "secret-access")
+                    continue
+                if self._looks_like_env_secret_probe(text):
+                    self._stats["messages_blocked"] += 1
+                    self._quarantine_blocked_message(
+                        user_id=user_id,
+                        chat_id=chat_id,
+                        text=text,
+                        reason="Blocked collaborator environment-secret probe",
+                        source="telegram_env_secret_block",
+                    )
+                    await self._notify_collaborator_command_blocked(chat_id, "secret-access")
+                    continue
+                if self._looks_like_internal_network_probe(text):
+                    self._stats["messages_blocked"] += 1
+                    self._quarantine_blocked_message(
+                        user_id=user_id,
+                        chat_id=chat_id,
+                        text=text,
+                        reason="Blocked collaborator internal-network probe",
+                        source="telegram_internal_network_block",
+                    )
+                    await self._notify_collaborator_command_blocked(chat_id, "web-access")
+                    continue
+                if self._looks_like_unsafe_scheme_request(text):
+                    self._stats["messages_blocked"] += 1
+                    self._quarantine_blocked_message(
+                        user_id=user_id,
+                        chat_id=chat_id,
+                        text=text,
+                        reason="Blocked collaborator unsafe-scheme request",
+                        source="telegram_unsafe_scheme_block",
+                    )
+                    await self._notify_collaborator_command_blocked(chat_id, "web-access")
+                    continue
+                if self._looks_like_allowlist_bypass_request(text):
+                    self._stats["messages_blocked"] += 1
+                    self._quarantine_blocked_message(
+                        user_id=user_id,
+                        chat_id=chat_id,
+                        text=text,
+                        reason="Blocked collaborator allowlist-bypass request",
+                        source="telegram_allowlist_bypass_block",
+                    )
+                    await self._notify_collaborator_command_blocked(chat_id, "web-access")
+                    continue
+                if self._looks_like_unicode_obfuscation_bypass_request(text):
+                    self._stats["messages_blocked"] += 1
+                    self._quarantine_blocked_message(
+                        user_id=user_id,
+                        chat_id=chat_id,
+                        text=text,
+                        reason="Blocked collaborator unicode-obfuscation bypass request",
+                        source="telegram_unicode_bypass_block",
+                    )
+                    await self._notify_collaborator_command_blocked(chat_id, "restricted-command")
+                    continue
+                if self._looks_like_web_access_request(text):
+                    self._stats["messages_blocked"] += 1
+                    self._quarantine_blocked_message(
+                        user_id=user_id,
+                        chat_id=chat_id,
+                        text=text,
+                        reason="Blocked collaborator external web-access request",
+                        source="telegram_web_access_block",
+                    )
+                    try:
+                        has_encoded_controls = bool(
+                            isinstance(original_transport_text, str)
+                            and re.search(
+                                r"%(?:0[0-9a-fA-F]|1[0-9a-fA-F]|7[fF])",
+                                original_transport_text,
+                            )
+                        )
+                        requested_url = self._extract_first_egress_target(text) if not has_encoded_controls else None
+                        if requested_url and not preflight_egress_queued:
+                            await self._trigger_web_fetch_approval(
+                                str(chat_id or ""),
+                                {"url": requested_url},
+                            )
+                    except Exception as _wf:
+                        logger.debug("Collaborator web-access preflight error (non-fatal): %s", _wf)
+                    await self._notify_collaborator_command_blocked(chat_id, "web-access")
+                    continue
+                if self._looks_like_file_metadata_question(text):
+                    await self._send_collaborator_safe_info_response(chat_id, text)
+                    continue
                 if self._looks_like_file_query(text):
                     self._stats["messages_blocked"] += 1
                     self._quarantine_blocked_message(
@@ -1349,19 +2965,188 @@ class TelegramAPIProxy:
                     )
                     await self._notify_collaborator_command_blocked(chat_id, "file-access")
                     continue
-                if self._looks_like_command_enumeration_query(text):
+                if self._looks_like_incremental_exfil_request(text):
                     self._stats["messages_blocked"] += 1
                     self._quarantine_blocked_message(
                         user_id=user_id,
                         chat_id=chat_id,
                         text=text,
-                        reason="Blocked collaborator command-enumeration request",
-                        source="telegram_command_inventory_block",
+                        reason="Blocked collaborator incremental-exfil request",
+                        source="telegram_incremental_exfil_block",
                     )
-                    await self._notify_collaborator_command_blocked(chat_id, "tool-command-inventory")
+                    await self._notify_collaborator_command_blocked(chat_id, "file-access")
+                    continue
+                if self._looks_like_encoded_exfil_request(text):
+                    self._stats["messages_blocked"] += 1
+                    self._quarantine_blocked_message(
+                        user_id=user_id,
+                        chat_id=chat_id,
+                        text=text,
+                        reason="Blocked collaborator encoded-exfil request",
+                        source="telegram_encoded_exfil_block",
+                    )
+                    await self._notify_collaborator_command_blocked(chat_id, "file-access")
+                    continue
+                if self._looks_like_hidden_channel_exfil_request(text):
+                    self._stats["messages_blocked"] += 1
+                    self._quarantine_blocked_message(
+                        user_id=user_id,
+                        chat_id=chat_id,
+                        text=text,
+                        reason="Blocked collaborator hidden-channel exfil request",
+                        source="telegram_hidden_channel_exfil_block",
+                    )
+                    await self._notify_collaborator_command_blocked(chat_id, "file-access")
+                    continue
+                if self._looks_like_archive_exfil_request(text):
+                    self._stats["messages_blocked"] += 1
+                    self._quarantine_blocked_message(
+                        user_id=user_id,
+                        chat_id=chat_id,
+                        text=text,
+                        reason="Blocked collaborator archive-exfil request",
+                        source="telegram_archive_exfil_block",
+                    )
+                    await self._notify_collaborator_command_blocked(chat_id, "file-access")
+                    continue
+                if self._looks_like_cross_user_messaging_request(text):
+                    self._stats["messages_blocked"] += 1
+                    self._quarantine_blocked_message(
+                        user_id=user_id,
+                        chat_id=chat_id,
+                        text=text,
+                        reason="Blocked collaborator cross-user messaging request",
+                        source="telegram_cross_user_message_block",
+                    )
+                    await self._notify_collaborator_command_blocked(chat_id, "restricted-command")
+                    continue
+                if self._looks_like_scheduler_or_autorun_request(text):
+                    self._stats["messages_blocked"] += 1
+                    self._quarantine_blocked_message(
+                        user_id=user_id,
+                        chat_id=chat_id,
+                        text=text,
+                        reason="Blocked collaborator scheduler/autorun request",
+                        source="telegram_scheduler_autorun_block",
+                    )
+                    await self._notify_collaborator_command_blocked(chat_id, "restricted-command")
+                    continue
+                if self._looks_like_model_switch_request(text):
+                    self._stats["messages_blocked"] += 1
+                    self._quarantine_blocked_message(
+                        user_id=user_id,
+                        chat_id=chat_id,
+                        text=text,
+                        reason="Blocked collaborator model-switch request",
+                        source="telegram_model_switch_block",
+                    )
+                    await self._notify_collaborator_command_blocked(chat_id, "restricted-command")
+                    continue
+                if self._looks_like_service_control_request(text):
+                    self._stats["messages_blocked"] += 1
+                    self._quarantine_blocked_message(
+                        user_id=user_id,
+                        chat_id=chat_id,
+                        text=text,
+                        reason="Blocked collaborator service-control request",
+                        source="telegram_service_control_block",
+                    )
+                    await self._notify_collaborator_command_blocked(chat_id, "restricted-command")
+                    continue
+                if self._looks_like_plugin_discovery_request(text):
+                    self._stats["messages_blocked"] += 1
+                    self._quarantine_blocked_message(
+                        user_id=user_id,
+                        chat_id=chat_id,
+                        text=text,
+                        reason="Blocked collaborator plugin-discovery request",
+                        source="telegram_plugin_discovery_block",
+                    )
+                    await self._notify_collaborator_command_blocked(chat_id, "restricted-command")
+                    continue
+                if self._looks_like_pairing_or_access_probe(text):
+                    self._stats["messages_blocked"] += 1
+                    self._quarantine_blocked_message(
+                        user_id=user_id,
+                        chat_id=chat_id,
+                        text=text,
+                        reason="Blocked collaborator pairing/access probe",
+                        source="telegram_pairing_access_block",
+                    )
+                    await self._notify_collaborator_command_blocked(chat_id, "restricted-command")
+                    continue
+                if self._looks_like_execution_request(text):
+                    if self._looks_like_hypothetical_execution_question(text):
+                        await self._send_collaborator_safe_info_response(chat_id, text)
+                    else:
+                        self._stats["messages_blocked"] += 1
+                        self._quarantine_blocked_message(
+                            user_id=user_id,
+                            chat_id=chat_id,
+                            text=text,
+                            reason="Blocked collaborator execution request",
+                            source="telegram_execution_request_block",
+                        )
+                        await self._notify_collaborator_command_blocked(chat_id, "execution-request")
+                    continue
+                if self._looks_like_obfuscated_command_probe(text):
+                    self._stats["messages_blocked"] += 1
+                    self._quarantine_blocked_message(
+                        user_id=user_id,
+                        chat_id=chat_id,
+                        text=text,
+                        reason="Blocked collaborator obfuscated-command probe",
+                        source="telegram_obfuscated_command_block",
+                    )
+                    await self._notify_collaborator_command_blocked(chat_id, "execution-request")
+                    continue
+                if self._looks_like_memory_access_request(text):
+                    self._stats["messages_blocked"] += 1
+                    self._quarantine_blocked_message(
+                        user_id=user_id,
+                        chat_id=chat_id,
+                        text=text,
+                        reason="Blocked collaborator memory-access request",
+                        source="telegram_memory_access_block",
+                    )
+                    await self._notify_collaborator_command_blocked(chat_id, "file-access")
+                    continue
+                if self._looks_like_collaborator_privacy_query(text):
+                    await self._send_collaborator_safe_info_response(chat_id, text)
+                    continue
+                if self._looks_like_identity_enumeration_query(text):
+                    await self._send_collaborator_safe_info_response(chat_id, text)
+                    continue
+                if self._looks_like_command_enumeration_query(text):
+                    await self._send_collaborator_safe_info_response(chat_id, text)
+                    continue
+                if self._looks_like_approval_queue_probe(text):
+                    await self._send_collaborator_safe_info_response(chat_id, text)
+                    continue
+                if self._looks_like_policy_bypass_request(text):
+                    self._stats["messages_blocked"] += 1
+                    self._quarantine_blocked_message(
+                        user_id=user_id,
+                        chat_id=chat_id,
+                        text=text,
+                        reason="Blocked collaborator policy-bypass request",
+                        source="telegram_policy_bypass_block",
+                    )
+                    await self._notify_collaborator_command_blocked(chat_id, "restricted-command")
+                    continue
+                if self._looks_like_log_access_request(text):
+                    self._stats["messages_blocked"] += 1
+                    self._quarantine_blocked_message(
+                        user_id=user_id,
+                        chat_id=chat_id,
+                        text=text,
+                        reason="Blocked collaborator log-access request",
+                        source="telegram_log_access_block",
+                    )
+                    await self._notify_collaborator_command_blocked(chat_id, "file-access")
                     continue
                 if self._looks_like_safe_collaborator_info_query(text):
-                    await self._send_collaborator_safe_info_notice(chat_id)
+                    await self._send_collaborator_safe_info_response(chat_id, text)
                     continue
 
             # ── Middleware pipeline (RBAC, context guard, multi-turn, etc.) ───
@@ -1418,7 +3203,8 @@ class TelegramAPIProxy:
                                     update["message"]["text"] = blocked_text
                                 elif "edited_message" in update:
                                     update["edited_message"]["text"] = blocked_text
-                                filtered_updates.append(update)
+                                # Drop blocked collaborator message so bot runtime
+                                # never receives blocked payloads.
                                 continue
                 except Exception as e:
                     logger.error(f"Middleware error for telegram message: {e}")
@@ -1474,7 +3260,8 @@ class TelegramAPIProxy:
                                 update["message"]["text"] = blocked_text
                             elif "edited_message" in update:
                                 update["edited_message"]["text"] = blocked_text
-                            filtered_updates.append(update)
+                            # Drop blocked collaborator message so bot runtime
+                            # never receives blocked payloads.
                             continue
                     # Apply sanitized text from pipeline (PII redactions, etc.)
                     sanitized_text = pipeline_result.sanitized_message
@@ -1499,7 +3286,8 @@ class TelegramAPIProxy:
                             update["message"]["text"] = blocked_text
                         elif "edited_message" in update:
                             update["edited_message"]["text"] = blocked_text
-                        filtered_updates.append(update)
+                        # Drop blocked collaborator message so bot runtime
+                        # never receives blocked payloads.
                         continue
                     logger.warning("Pipeline error on owner message — allowing through")
             elif self.sanitizer and text:
@@ -1637,27 +3425,67 @@ class TelegramAPIProxy:
             # No running loop or unavailable event bus: skip quietly.
             return
 
-    async def _send_rate_limit_notice(self, chat_id: int) -> None:
+    async def _send_rate_limit_notice(self, chat_id: int, user_id: Optional[str] = None) -> bool:
         """Notify a collaborator they have exceeded the hourly rate limit."""
         try:
             if self._bot_token:
+                limiter_user_id = str(user_id) if user_id else str(chat_id)
+                wait_seconds = self._collaborator_rate_limit_retry_after_seconds(limiter_user_id)
+                wait_minutes = max(1, math.ceil(wait_seconds / 60.0))
                 msg = (
-                    "\U0001f6ab You have reached the collaborator message limit "
-                    "\\(200 messages/hour\\)\\. Please try again later\\."
+                    f"🛡️ Protect by AgentShroud — collaborator rate limit reached "
+                    f"\\({self._collaborator_rate_limiter.max_requests} messages/hour\\)\\.\n"
+                    f"Please retry in about {wait_minutes} minute\\(s\\)\\."
                 )
                 url = f"{TELEGRAM_API_BASE}/bot{self._bot_token}/sendMessage"
+                loop = asyncio.get_event_loop()
+                payload = {"chat_id": chat_id, "text": msg, "parse_mode": "MarkdownV2"}
                 req = urllib.request.Request(
                     url,
-                    data=json.dumps({"chat_id": chat_id, "text": msg, "parse_mode": "MarkdownV2"}).encode(),
+                    data=json.dumps(payload).encode(),
                     headers={"Content-Type": "application/json"},
                 )
-                loop = asyncio.get_event_loop()
-                await loop.run_in_executor(
-                    None,
-                    lambda: urllib.request.urlopen(req, timeout=5, context=self._ssl_context),
-                )
+                try:
+                    await loop.run_in_executor(
+                        None,
+                        lambda: urllib.request.urlopen(req, timeout=5, context=self._ssl_context),
+                    )
+                    return True
+                except Exception:
+                    # Fallback: resend without Markdown parse mode to avoid silent
+                    # parse failures and ensure collaborator always gets a notice.
+                    plain_msg = (
+                        f"🛡️ Protect by AgentShroud — collaborator rate limit reached "
+                        f"({self._collaborator_rate_limiter.max_requests} messages/hour). "
+                        f"Please retry in about {wait_minutes} minute(s)."
+                    )
+                    fallback_req = urllib.request.Request(
+                        url,
+                        data=json.dumps({"chat_id": chat_id, "text": plain_msg}).encode(),
+                        headers={"Content-Type": "application/json"},
+                    )
+                    await loop.run_in_executor(
+                        None,
+                        lambda: urllib.request.urlopen(fallback_req, timeout=5, context=self._ssl_context),
+                    )
+                    return True
         except Exception as e:
             logger.warning("Failed to send rate limit notice to chat %s: %s", chat_id, e)
+        return False
+
+    def _collaborator_rate_limit_retry_after_seconds(self, user_id: str) -> int:
+        """Estimate seconds until collaborator rate limit window opens again."""
+        try:
+            limiter = self._collaborator_rate_limiter
+            now = time.time()
+            history = list(getattr(limiter, "requests", {}).get(user_id, []))
+            if not history:
+                return max(1, int(getattr(limiter, "window_seconds", 3600)))
+            earliest = min(float(ts) for ts in history)
+            retry_at = earliest + float(getattr(limiter, "window_seconds", 3600))
+            return max(1, int(math.ceil(retry_at - now)))
+        except Exception:
+            return 60
 
     async def _send_local_healthcheck_notice(self, chat_id: int) -> None:
         """Send deterministic gateway health status without model invocation."""
@@ -1733,6 +3561,25 @@ class TelegramAPIProxy:
                 )
         except Exception as e:
             logger.warning("Failed to send collaborator safe-info notice to chat %s: %s", chat_id, e)
+
+    async def _send_collaborator_safe_info_response(self, chat_id: int, prompt: str) -> None:
+        """Send tailored safe informational response for collaborator conceptual query."""
+        try:
+            if self._bot_token:
+                msg = self._build_collaborator_safe_info_response(prompt)
+                url = f"{TELEGRAM_API_BASE}/bot{self._bot_token}/sendMessage"
+                req = urllib.request.Request(
+                    url,
+                    data=json.dumps({"chat_id": chat_id, "text": msg}).encode(),
+                    headers={"Content-Type": "application/json"},
+                )
+                loop = asyncio.get_event_loop()
+                await loop.run_in_executor(
+                    None,
+                    lambda: urllib.request.urlopen(req, timeout=5, context=self._ssl_context),
+                )
+        except Exception as e:
+            logger.warning("Failed to send collaborator safe-info response to chat %s: %s", chat_id, e)
 
     async def _send_disclosure(self, chat_id: int) -> None:
         """Send the one-time collaborator disclosure notice."""
