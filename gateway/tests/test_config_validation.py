@@ -203,6 +203,22 @@ class TestConfigValidation:
         assert "Removed unsupported key gateway.model" in script
         assert "Set internal gateway model" not in script
 
+
+
+    def test_openclaw_version_pin_is_consistent_across_bot_images(self):
+        """Both bot Dockerfiles must pin the same OpenClaw version."""
+        import re
+
+        primary = (REPO_ROOT / "docker" / "Dockerfile.agentshroud").read_text()
+        openclaw = (REPO_ROOT / "docker" / "bots" / "openclaw" / "Dockerfile").read_text()
+
+        primary_match = re.search(r"openclaw@([0-9]{4}\.[0-9]+\.[0-9]+)", primary)
+        openclaw_match = re.search(r"openclaw@([0-9]{4}\.[0-9]+\.[0-9]+)", openclaw)
+
+        assert primary_match, "Primary bot Dockerfile must pin openclaw@<version>"
+        assert openclaw_match, "OpenClaw bot Dockerfile must pin openclaw@<version>"
+        assert primary_match.group(1) == openclaw_match.group(1)
+        assert primary_match.group(1) == "2026.3.8"
     def test_openclaw_patch_script_sets_control_ui_allowed_origins(self):
         """openclaw init patch script must seed control UI origins for non-loopback bind."""
         script = (REPO_ROOT / "docker" / "config" / "openclaw" / "apply-patches.js").read_text()
@@ -288,6 +304,23 @@ class TestConfigValidation:
         assert "_model_runtime_ready" in script
         assert "for _i in $(seq 1 60)" in script
 
+
+
+    def test_startup_online_notice_sent_only_after_readiness_gate(self):
+        """Online notice must appear after readiness probes to avoid premature status signals."""
+        script = (REPO_ROOT / "docker" / "scripts" / "start-agentshroud.sh").read_text()
+        assert script.index('ready="no"') < script.index('if [ "${ready}" = "yes" ]; then')
+        assert script.index('_telegram_get_me_ready') < script.index('if [ "${ready}" = "yes" ]; then')
+        assert script.index('_model_runtime_ready') < script.index('if [ "${ready}" = "yes" ]; then')
+        assert script.index('🟡 AgentShroud starting') < script.index('🛡️ AgentShroud online')
+
+    def test_openclaw_bot_start_script_online_notice_after_readiness_gate(self):
+        """OpenClaw bot wrapper should send online notice only after readiness checks pass."""
+        script = (REPO_ROOT / "docker" / "bots" / "openclaw" / "start.sh").read_text()
+        assert script.index('ready="no"') < script.index('if [ "${ready}" = "yes" ]; then')
+        assert script.index('_telegram_get_me_ready') < script.index('if [ "${ready}" = "yes" ]; then')
+        assert script.index('_model_runtime_ready') < script.index('if [ "${ready}" = "yes" ]; then')
+        assert script.index('🟡 AgentShroud starting') < script.index('🛡️ AgentShroud online')
     def test_startup_telegram_calls_use_system_header(self):
         """Startup notification Telegram calls should be marked as system-originated."""
         script = (REPO_ROOT / "docker" / "scripts" / "start-agentshroud.sh").read_text()
@@ -324,6 +357,12 @@ class TestConfigValidation:
         assert "CUSTOM_MODEL_REF" in script
         assert "ensure_local_model_available" in script
         assert "docker compose" in script
+
+    def test_switch_model_script_uses_current_target_syntax(self):
+        """Operator guidance should use valid switch_model target syntax (no legacy cloud prefix)."""
+        script = (REPO_ROOT / "scripts" / "switch_model.sh").read_text()
+        assert "scripts/switch_model.sh gemini" in script
+        assert "scripts/switch_model.sh cloud gemini" not in script
 
     def test_openclaw_patch_defaults_to_qwen_local_model(self):
         """OpenClaw patch script should default to local Ollama but keep API adapter configurable."""

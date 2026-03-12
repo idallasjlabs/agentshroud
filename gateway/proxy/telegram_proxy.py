@@ -48,6 +48,12 @@ _LOCAL_HEALTHCHECK_COMMANDS = {
     "/self-diagnose",
     "self-diagnose",
 }
+_LOCAL_MODEL_STATUS_COMMANDS = {
+    "/model",
+    "model",
+    "/model-status",
+    "model-status",
+}
 
 _DISCLOSURE_MESSAGE = (
     "\U0001f6e1\ufe0f *AgentShroud Notice*\n\n"
@@ -57,6 +63,19 @@ _DISCLOSURE_MESSAGE = (
     "I'm the collaborator\\-facing assistant with read\\-only access \u2014 I can discuss "
     "AgentShroud's features, security concepts, and provide technical advice, but I don't "
     "have access to the full command set\\._"
+)
+
+_COLLABORATOR_BLOCK_NOTICE = "🛡️ Protected by AgentShroud — this action is not allowed."
+_COLLABORATOR_UNAVAILABLE_NOTICE = "🛡️ Protected by AgentShroud — I can't do that right now."
+_COLLABORATOR_FILE_NOTICE = "🛡️ Protected by AgentShroud — file/system content access is restricted for collaborators."
+_COLLABORATOR_SECRET_NOTICE = "🛡️ Protected by AgentShroud — sensitive credentials/secrets are restricted."
+_COLLABORATOR_EGRESS_NOTICE = "🛡️ Protected by AgentShroud — external access requires approval."
+_COLLABORATOR_SCOPE_NOTICE = "🛡️ Protected by AgentShroud — I can discuss system concepts and recommendations, but command/tool execution details are restricted."
+_PROTECTED_POLICY_NOTICE = "🛡️ Protected by AgentShroud — response blocked by security policy."
+_COLLABORATOR_SAFE_INFO_NOTICE = (
+    "🛡️ Protected by AgentShroud — collaborator safe mode is active.\n"
+    "I can help with architecture, security concepts, workflows, and recommendations.\n"
+    "I cannot provide command/tool outputs, direct file contents, secrets, or system-level execution."
 )
 
 
@@ -73,6 +92,9 @@ class TelegramAPIProxy:
             "messages_sanitized": 0,
             "messages_blocked": 0,
             "outbound_filtered": 0,
+            "inbound_updates_total": 0,
+            "inbound_updates_forwarded": 0,
+            "inbound_updates_dropped": 0,
         }
         self._bot_token = os.environ.get("TELEGRAM_BOT_TOKEN", "")
         self._ssl_context = ssl.create_default_context()
@@ -137,15 +159,63 @@ class TelegramAPIProxy:
         if not isinstance(text, str):
             return None
         lowered = text.lower()
+        if "agents.defaults.memorysearch.provider" in lowered and "memory search" in lowered:
+            return (
+                "⚠️ Runtime dependency error while preparing the response. "
+                "Please retry your last message in 10–20 seconds. "
+                "If this keeps happening, switch model profile with scripts/switch_model.sh."
+            )
+        if "memory search is unavailable in this runtime profile" in lowered:
+            return (
+                "⚠️ Runtime dependency error while preparing the response. "
+                "Please retry your last message in 10–20 seconds. "
+                "If this keeps happening, switch model profile with scripts/switch_model.sh."
+            )
+        if lowered.strip() in {
+            "we are currently using the model",
+            "we are currently using the model.",
+        }:
+            active_model = (
+                os.environ.get("OPENCLAW_MAIN_MODEL")
+                or os.environ.get("AGENTSHROUD_CLOUD_MODEL_REF")
+                or os.environ.get("AGENTSHROUD_LOCAL_MODEL_REF")
+                or "unknown"
+            )
+            return f"ℹ️ Current model: {active_model}"
+        if "llm request timed out" in lowered or (
+            "timed out" in lowered and "agent failed before reply" in lowered
+        ):
+            return (
+                "⏳ Model response timed out before completion. "
+                "Please retry in 10–20 seconds. "
+                "If this repeats, switch model profile with scripts/switch_model.sh "
+                "(for example: gemini or local qwen3:14b)."
+            )
         if (
             ("memory search" in lowered and ("unavailable" in lowered or "disabled" in lowered))
             and re.search(r"embedding(?:\s*[/_-]?\s*)provider", lowered)
             and "error" in lowered
         ):
+            explicit_memory_command = any(
+                marker in lowered
+                for marker in (
+                    "memory search command",
+                    "run memory search",
+                    "execute memory search",
+                    "/memory",
+                    "memory_search",
+                )
+            )
+            if not explicit_memory_command:
+                return (
+                    "⚠️ Runtime dependency error while preparing the response. "
+                    "Please retry your last message in 10–20 seconds. "
+                    "If this keeps happening, switch model profile with scripts/switch_model.sh."
+                )
             return (
                 "⚠️ Memory search is unavailable in this runtime profile. "
                 "Switch to a configured embedding-capable profile (for example: "
-                "scripts/switch_model.sh cloud gemini), or configure "
+                "scripts/switch_model.sh gemini), or configure "
                 "agents.defaults.memorySearch.provider, then retry."
             )
         if (
@@ -171,6 +241,81 @@ class TelegramAPIProxy:
         # Remove absolute file paths (/app/..., /home/..., /usr/...)
         sanitized = re.sub(r'/[a-z][a-zA-Z0-9/_.-]+\.py(?:\s+line\s+\d+)?', '', sanitized)
         return sanitized.strip()
+
+    @staticmethod
+    def _looks_like_file_query(text: str) -> bool:
+        """Best-effort guardrail: collaborator prompts requesting direct file access."""
+        if not isinstance(text, str):
+            return False
+        lowered = normalize_input(text).lower()
+        patterns = (
+            r"\b(show|read|open|cat|print|dump)\b.{0,32}\b(file|contents?|workspace|directory)\b",
+            r"\b(list|enumerate)\b.{0,24}\b(files?|directories|workspace)\b",
+            r"\b(ls|find|grep|cat)\b.{0,64}\b(workspace|\.md|\.env|identity\.md|bootstrap\.md)\b",
+            r"\bwhat'?s in\b.{0,24}\b(identity\.md|bootstrap\.md|memory\.md)\b",
+        )
+        return any(re.search(pat, lowered) for pat in patterns)
+
+    @staticmethod
+    def _looks_like_command_enumeration_query(text: str) -> bool:
+        """Detect collaborator probes asking for direct command/tool inventories."""
+        if not isinstance(text, str):
+            return False
+        lowered = normalize_input(text).lower()
+        patterns = (
+            r"\b(what|which|list|show)\b.{0,30}\b(commands?|tools?|capabilities)\b",
+            r"\bwhat can you (run|execute|access|use)\b",
+            r"\bwhich tools are blocked\b",
+            r"\bdo you have access to\b.{0,24}\b(shell|exec|credentials?|files?)\b",
+        )
+        return any(re.search(pat, lowered) for pat in patterns)
+
+    @staticmethod
+    def _looks_like_safe_collaborator_info_query(text: str) -> bool:
+        """Allow conceptual security/process questions that don't request execution/data access."""
+        if not isinstance(text, str):
+            return False
+        lowered = normalize_input(text).lower()
+        if not any(ch in lowered for ch in ("?", "how", "what", "why", "can you explain", "walk me through")):
+            return False
+        if TelegramAPIProxy._looks_like_file_query(lowered):
+            return False
+        if TelegramAPIProxy._looks_like_command_enumeration_query(lowered):
+            return False
+        if re.search(r"\b(create|write|edit|delete|run|execute|open|show|cat|grep|find|ls|fetch)\b", lowered):
+            return False
+        return any(
+            token in lowered
+            for token in (
+                "authentication",
+                "credential system",
+                "security setup",
+                "architecture",
+                "workflow",
+                "policy",
+                "recommendation",
+                "best practice",
+                "approval process",
+                "filters messages",
+                "how does this work",
+            )
+        )
+
+    @staticmethod
+    def _collaborator_safe_notice(reason: str) -> str:
+        """Concise collaborator-safe reason text without internal leakage."""
+        lowered = normalize_input(reason or "").lower()
+        if any(token in lowered for token in ("file", "workspace", ".md", "path", "directory")):
+            return _COLLABORATOR_FILE_NOTICE
+        if any(token in lowered for token in ("credential", "secret", "token", "password", "key")):
+            return _COLLABORATOR_SECRET_NOTICE
+        if any(token in lowered for token in ("web", "egress", "domain", "network", "url")):
+            return _COLLABORATOR_EGRESS_NOTICE
+        if any(token in lowered for token in ("tool", "command", "capability", "permissions", "blocked command")):
+            return _COLLABORATOR_SCOPE_NOTICE
+        if any(token in lowered for token in ("timeout", "unavailable", "processing", "no_reply")):
+            return _COLLABORATOR_UNAVAILABLE_NOTICE
+        return _COLLABORATOR_BLOCK_NOTICE
 
     @staticmethod
     def _strip_json_fence(text: str) -> str:
@@ -263,6 +408,18 @@ class TelegramAPIProxy:
         candidate = domain_match.group(0).rstrip(".,;:!?)]}>'\"`")
         if not candidate:
             return None
+        # Avoid false positives where file names (e.g., BOOTSTRAP.md, test.txt)
+        # are misinterpreted as outbound domains.
+        head = candidate.split("/", 1)[0]
+        if "." in head:
+            tld = head.rsplit(".", 1)[-1].lower()
+            if tld in {
+                "md", "txt", "json", "yaml", "yml", "toml", "ini",
+                "py", "js", "ts", "tsx", "jsx", "sh", "bash", "zsh",
+                "csv", "log", "pdf", "png", "jpg", "jpeg", "gif", "svg",
+                "sql", "db", "sqlite", "env", "conf", "cfg", "lock",
+            }:
+                return None
         return f"https://{candidate}"
 
     @staticmethod
@@ -359,7 +516,22 @@ class TelegramAPIProxy:
         # === INBOUND FILTERING (Telegram → bot) ===
         # For getUpdates: scan each message in the response
         if method == "getUpdates" and response_data.get("ok"):
+            inbound_updates = response_data.get("result", [])
+            inbound_total = len(inbound_updates) if isinstance(inbound_updates, list) else 0
             response_data = await self._filter_inbound_updates(response_data)
+            filtered_updates = response_data.get("result", [])
+            inbound_forwarded = len(filtered_updates) if isinstance(filtered_updates, list) else 0
+            inbound_dropped = max(0, inbound_total - inbound_forwarded)
+            self._stats["inbound_updates_total"] += inbound_total
+            self._stats["inbound_updates_forwarded"] += inbound_forwarded
+            self._stats["inbound_updates_dropped"] += inbound_dropped
+            if inbound_total > 0:
+                logger.info(
+                    "Telegram getUpdates filtered: total=%d forwarded=%d dropped=%d",
+                    inbound_total,
+                    inbound_forwarded,
+                    inbound_dropped,
+                )
 
         return response_data
 
@@ -397,6 +569,10 @@ class TelegramAPIProxy:
                     trailing = text[emb_end:].strip()
                     cleaned = " ".join(part for part in (leading, trailing) if part).strip()
                     if cleaned:
+                        if not is_owner_chat:
+                            data[text_key] = self._collaborator_safe_notice("tool output redacted")
+                            self._stats["outbound_filtered"] += 1
+                            return json.dumps(data).encode()
                         tool_name = str(parsed_tool_call.get("name", "")).strip()
                         tool_args = parsed_tool_call.get("arguments") if isinstance(parsed_tool_call.get("arguments"), dict) else {}
                         if tool_name == "web_fetch":
@@ -414,32 +590,41 @@ class TelegramAPIProxy:
                     tool_args = parsed_tool_call.get("arguments") if isinstance(parsed_tool_call.get("arguments"), dict) else {}
                     self._stats["outbound_filtered"] += 1
                     if tool_name.upper() == "NO_REPLY":
-                        now = time.time()
-                        blocked_until = self._recent_no_reply_notice_until.get(chat_id, 0.0) if chat_id else 0.0
-                        if chat_id and blocked_until > now:
-                            data[text_key] = _SUPPRESS_OUTBOUND_TOKEN
-                        else:
-                            data[text_key] = "⏳ Agent is still processing a previous request. Please wait 10–20 seconds and retry."
-                            if chat_id:
-                                self._recent_no_reply_notice_until[chat_id] = (
-                                    now + self._no_reply_notice_cooldown_seconds
-                                )
+                        data[text_key] = (
+                            self._collaborator_safe_notice("processing timeout")
+                            if not is_owner_chat
+                            else "⏳ Agent is still processing a previous request. Please wait 10–20 seconds and retry."
+                        )
                     elif tool_name == "sessions_spawn" and str(tool_args.get("agentId", "")) == "acp.healthcheck":
-                        data[text_key] = "✅ Healthcheck started. I’ll reply with status once complete."
+                        data[text_key] = (
+                            self._collaborator_safe_notice("restricted command")
+                            if not is_owner_chat
+                            else "✅ Healthcheck started. I’ll reply with status once complete."
+                        )
                     elif tool_name == "web_fetch":
                         approval_queued = await self._trigger_web_fetch_approval(chat_id, tool_args)
-                        approval_note = (
-                            " Approval request queued for this destination."
-                            if approval_queued else
-                            ""
-                        )
-                        data[text_key] = (
-                            "🌐 Web fetch requested, but this model returned raw tool JSON instead of executing it. "
-                            "Switch to a tool-capable model (e.g., scripts/switch_model.sh gemini or local qwen3:14b once pulled)."
-                            + approval_note
-                        )
+                        if not is_owner_chat:
+                            data[text_key] = (
+                                _COLLABORATOR_EGRESS_NOTICE
+                                if approval_queued else self._collaborator_safe_notice("web access unavailable")
+                            )
+                        else:
+                            approval_note = (
+                                " Approval request queued for this destination."
+                                if approval_queued else
+                                ""
+                            )
+                            data[text_key] = (
+                                "🌐 Web fetch requested, but this model returned raw tool JSON instead of executing it. "
+                                "Switch to a tool-capable model (e.g., scripts/switch_model.sh gemini or local qwen3:14b once pulled)."
+                                + approval_note
+                            )
                     elif tool_name in {"sessions_spawn", "sessions_send", "subagents"}:
-                        data[text_key] = "✅ Request accepted and queued."
+                        data[text_key] = (
+                            self._collaborator_safe_notice("restricted command")
+                            if not is_owner_chat
+                            else "✅ Request accepted and queued."
+                        )
                     else:
                         self._quarantine_outbound_block(
                             chat_id=chat_id,
@@ -447,12 +632,31 @@ class TelegramAPIProxy:
                             reason=f"Raw tool-call JSON leaked to outbound text (tool={tool_name or 'unknown'})",
                             source="telegram_outbound_toolcall_json",
                         )
-                        data[text_key] = "[AgentShroud: internal tool-call output suppressed]"
+                        data[text_key] = (
+                            self._collaborator_safe_notice("tool output redacted")
+                            if not is_owner_chat
+                            else _PROTECTED_POLICY_NOTICE
+                        )
                     return json.dumps(data).encode()
 
                 if isinstance(text, str) and "session file locked" in text.lower():
                     self._stats["outbound_filtered"] += 1
-                    data[text_key] = "⏳ Agent is still processing a previous request. Please wait 10–20 seconds and retry."
+                    data[text_key] = (
+                        self._collaborator_safe_notice("processing timeout")
+                        if not is_owner_chat
+                        else "⏳ Agent is still processing a previous request. Please wait 10–20 seconds and retry."
+                    )
+                    return json.dumps(data).encode()
+                if (
+                    not is_owner_chat
+                    and isinstance(text, str)
+                    and (
+                        "multi-turn disclosure" in text.lower()
+                        or "blocked due to security protocols" in text.lower()
+                    )
+                ):
+                    self._stats["outbound_filtered"] += 1
+                    data[text_key] = self._collaborator_safe_notice("policy block")
                     return json.dumps(data).encode()
                 if isinstance(text, str) and "does not support tools" in text.lower():
                     self._stats["outbound_filtered"] += 1
@@ -462,7 +666,7 @@ class TelegramAPIProxy:
                     self._stats["outbound_filtered"] += 1
                     data[text_key] = (
                         "⚠️ Ollama provider is not configured in this session. Set OLLAMA_API_KEY=ollama-local and restart, "
-                        "or run scripts/switch_model.sh cloud gemini."
+                        "or run scripts/switch_model.sh gemini."
                     )
                     return json.dumps(data).encode()
                 if isinstance(text, str) and "unknown model:" in text.lower():
@@ -503,7 +707,7 @@ class TelegramAPIProxy:
                             reason="Outbound block cascade active",
                             source="telegram_outbound_cascade",
                         )
-                        data["text"] = "[AgentShroud: outbound content blocked by security policy]"
+                        data["text"] = self._collaborator_safe_notice("outbound policy block")
                         self._stats["outbound_filtered"] += 1
                         return json.dumps(data).encode()
 
@@ -519,7 +723,7 @@ class TelegramAPIProxy:
                         reason=f"Outbound text exceeds max length ({len(text)} chars)",
                         source="telegram_outbound_overlength",
                     )
-                    data["text"] = "[AgentShroud: outbound content blocked by security policy]"
+                    data["text"] = self._collaborator_safe_notice("outbound policy block")
                     self._stats["outbound_filtered"] += 1
                     self._set_outbound_block_cascade(chat_id)
                     logger.warning(
@@ -543,7 +747,11 @@ class TelegramAPIProxy:
                             reason=pipeline_result.block_reason or "Pipeline blocked outbound response",
                             source="telegram_outbound_pipeline_block",
                         )
-                        data["text"] = "[AgentShroud: outbound content blocked by security policy]"
+                        data["text"] = (
+                            self._collaborator_safe_notice(pipeline_result.block_reason or "outbound policy block")
+                            if not is_owner_chat
+                            else _PROTECTED_POLICY_NOTICE
+                        )
                         self._stats["outbound_filtered"] += 1
                         self._set_outbound_block_cascade(chat_id)
                         logger.warning(
@@ -563,7 +771,7 @@ class TelegramAPIProxy:
                             ),
                             source="telegram_outbound_info_filter_block",
                         )
-                        data["text"] = "[AgentShroud: outbound content blocked by security policy]"
+                        data["text"] = self._collaborator_safe_notice("redacted protected content")
                         self._stats["outbound_filtered"] += 1
                         self._set_outbound_block_cascade(chat_id)
                         logger.warning(
@@ -683,7 +891,7 @@ class TelegramAPIProxy:
                     elif tool_name in {"sessions_spawn", "sessions_send", "subagents"}:
                         data[text_key] = "✅ Request accepted and queued."
                     else:
-                        data[text_key] = "[AgentShroud: internal tool-call output suppressed]"
+                        data[text_key] = _PROTECTED_POLICY_NOTICE
                     return urllib.parse.urlencode(data).encode()
 
                 if isinstance(text, str) and "session file locked" in text.lower():
@@ -698,7 +906,7 @@ class TelegramAPIProxy:
                     self._stats["outbound_filtered"] += 1
                     data[text_key] = (
                         "⚠️ Ollama provider is not configured in this session. Set OLLAMA_API_KEY=ollama-local and restart, "
-                        "or run scripts/switch_model.sh cloud gemini."
+                        "or run scripts/switch_model.sh gemini."
                     )
                     return urllib.parse.urlencode(data).encode()
                 if isinstance(text, str) and "unknown model:" in text.lower():
@@ -728,7 +936,7 @@ class TelegramAPIProxy:
                         reason="Security pipeline error (fail-closed)",
                         source="telegram_outbound_fail_closed",
                     )
-                    data["text"] = "[AgentShroud: security pipeline error — response blocked]"
+                    data["text"] = self._collaborator_safe_notice("security pipeline error")
                     return json.dumps(data).encode()
             except Exception:
                 pass
@@ -739,8 +947,15 @@ class TelegramAPIProxy:
         url = normalize_input(str((tool_args or {}).get("url", ""))).strip().strip("'\"`<>[]{}()")
         if not url:
             return False
-        if any(ch.isspace() for ch in url):
+        if "\n" in url or "\r" in url:
             return False
+        if " " in url or "\t" in url:
+            # Salvage malformed tool args like "https://weather.com/path with spaces"
+            # by extracting the first URL token for destination approval only.
+            first_token = re.split(r"[ \t]+", url, maxsplit=1)[0].strip()
+            if not first_token:
+                return False
+            url = first_token
         if re.search(r"%(?:0[0-9a-fA-F]|1[0-9a-fA-F]|7[fF])", url):
             return False
         if "\\" in url:
@@ -838,6 +1053,10 @@ class TelegramAPIProxy:
             lowered = re.sub(r"\s+", " ", lowered).strip()
             if "agentshroud" in lowered and "online" in lowered:
                 return "agentshroud_online"
+            if "agentshroud" in lowered and "starting" in lowered and "readiness delayed" in lowered:
+                return "agentshroud_starting_delayed"
+            if "agentshroud" in lowered and "starting" in lowered:
+                return "agentshroud_starting"
             if "agentshroud" in lowered and "shutting down" in lowered:
                 return "agentshroud_shutting_down"
             return ""
@@ -1058,11 +1277,19 @@ class TelegramAPIProxy:
                     await self._send_rate_limit_notice(chat_id)
                 continue
 
-            # ── Local healthcheck command handling (owner + collaborators) ───
-            # Keep /healthcheck deterministic and never delegate to the model.
+            # ── Local deterministic command handling (owner + collaborators) ──
+            # Keep core operator commands deterministic and never delegate to model.
             if chat_id:
                 cmd_base = self._normalize_command_token(text)
+                local_handler = None
+                local_label = ""
                 if cmd_base in _LOCAL_HEALTHCHECK_COMMANDS:
+                    local_handler = self._send_local_healthcheck_notice
+                    local_label = "healthcheck"
+                elif cmd_base in _LOCAL_MODEL_STATUS_COMMANDS:
+                    local_handler = self._send_local_model_notice
+                    local_label = "model-status"
+                if local_handler is not None:
                     update_id = update.get("update_id")
                     message_id = message.get("message_id")
                     if update_id is None:
@@ -1078,12 +1305,13 @@ class TelegramAPIProxy:
                             if v > now
                         }
                     if self._handled_local_command_update_ids.get(dedupe_key, 0.0) <= now:
-                        await self._send_local_healthcheck_notice(chat_id)
+                        await local_handler(chat_id)
                         self._handled_local_command_update_ids[dedupe_key] = (
                             now + self._local_command_dedupe_ttl_seconds
                         )
                         logger.info(
-                            "Handled local healthcheck command for user %s (update_id=%s)",
+                            "Handled local %s command for user %s (update_id=%s)",
+                            local_label,
                             user_id,
                             update_id,
                         )
@@ -1110,6 +1338,31 @@ class TelegramAPIProxy:
                     await self._notify_collaborator_command_blocked(chat_id, cmd_base)
                     # Drop the update — do not forward to bot
                     continue
+                if self._looks_like_file_query(text):
+                    self._stats["messages_blocked"] += 1
+                    self._quarantine_blocked_message(
+                        user_id=user_id,
+                        chat_id=chat_id,
+                        text=text,
+                        reason="Blocked collaborator file-query request",
+                        source="telegram_file_query_block",
+                    )
+                    await self._notify_collaborator_command_blocked(chat_id, "file-access")
+                    continue
+                if self._looks_like_command_enumeration_query(text):
+                    self._stats["messages_blocked"] += 1
+                    self._quarantine_blocked_message(
+                        user_id=user_id,
+                        chat_id=chat_id,
+                        text=text,
+                        reason="Blocked collaborator command-enumeration request",
+                        source="telegram_command_inventory_block",
+                    )
+                    await self._notify_collaborator_command_blocked(chat_id, "tool-command-inventory")
+                    continue
+                if self._looks_like_safe_collaborator_info_query(text):
+                    await self._send_collaborator_safe_info_notice(chat_id)
+                    continue
 
             # ── Middleware pipeline (RBAC, context guard, multi-turn, etc.) ───
             if self.middleware_manager:
@@ -1132,26 +1385,41 @@ class TelegramAPIProxy:
                                 user_id, result.reason,
                             )
                         else:
-                            logger.warning(
-                                "Telegram message from %s blocked by middleware: %s",
-                                user_id, result.reason,
-                            )
-                            self._stats["messages_blocked"] += 1
-                            self._quarantine_blocked_message(
-                                user_id=user_id,
-                                chat_id=chat_id,
-                                text=text,
-                                reason=result.reason or "Middleware blocked message",
-                                source="telegram_middleware_block",
-                            )
-                            if chat_id:
-                                await self._notify_user_blocked(chat_id, result.reason)
-                            if "message" in update:
-                                update["message"]["text"] = f"[BLOCKED BY AGENTSHROUD: {result.reason}]"
-                            elif "edited_message" in update:
-                                update["edited_message"]["text"] = f"[BLOCKED BY AGENTSHROUD: {result.reason}]"
-                            filtered_updates.append(update)
-                            continue
+                            reason_text = result.reason or ""
+                            if (
+                                "multi-turn" in reason_text.lower()
+                                and self._looks_like_safe_collaborator_info_query(text)
+                            ):
+                                logger.info(
+                                    "Allowing collaborator conceptual query despite multi-turn middleware block (%s)",
+                                    user_id,
+                                )
+                            else:
+                                logger.warning(
+                                    "Telegram message from %s blocked by middleware: %s",
+                                    user_id, result.reason,
+                                )
+                                self._stats["messages_blocked"] += 1
+                                self._quarantine_blocked_message(
+                                    user_id=user_id,
+                                    chat_id=chat_id,
+                                    text=text,
+                                    reason=result.reason or "Middleware blocked message",
+                                    source="telegram_middleware_block",
+                                )
+                                if chat_id:
+                                    await self._notify_user_blocked(chat_id, result.reason)
+                                blocked_text = (
+                                    self._collaborator_safe_notice(result.reason or "blocked action")
+                                    if not is_owner
+                                    else f"[BLOCKED BY AGENTSHROUD: {result.reason}]"
+                                )
+                                if "message" in update:
+                                    update["message"]["text"] = blocked_text
+                                elif "edited_message" in update:
+                                    update["edited_message"]["text"] = blocked_text
+                                filtered_updates.append(update)
+                                continue
                 except Exception as e:
                     logger.error(f"Middleware error for telegram message: {e}")
 
@@ -1172,6 +1440,17 @@ class TelegramAPIProxy:
                                 user_id, pipeline_result.block_reason,
                             )
                         else:
+                            block_reason = pipeline_result.block_reason or ""
+                            if (
+                                "multi-turn" in block_reason.lower()
+                                and self._looks_like_safe_collaborator_info_query(text)
+                            ):
+                                logger.info(
+                                    "Allowing collaborator conceptual query despite multi-turn pipeline block (%s)",
+                                    user_id,
+                                )
+                                filtered_updates.append(update)
+                                continue
                             self._stats["messages_blocked"] += 1
                             logger.warning(
                                 "Pipeline blocked Telegram message from %s: %s",
@@ -1186,7 +1465,11 @@ class TelegramAPIProxy:
                             )
                             if chat_id:
                                 await self._notify_user_blocked(chat_id, pipeline_result.block_reason)
-                            blocked_text = f"[BLOCKED BY AGENTSHROUD: {pipeline_result.block_reason}]"
+                            blocked_text = (
+                                self._collaborator_safe_notice(pipeline_result.block_reason or "blocked action")
+                                if not is_owner
+                                else f"[BLOCKED BY AGENTSHROUD: {pipeline_result.block_reason}]"
+                            )
                             if "message" in update:
                                 update["message"]["text"] = blocked_text
                             elif "edited_message" in update:
@@ -1211,7 +1494,7 @@ class TelegramAPIProxy:
                         self._stats["messages_blocked"] += 1
                         if chat_id:
                             await self._notify_user_blocked(chat_id, "Security pipeline error")
-                        blocked_text = "[BLOCKED BY AGENTSHROUD: Security pipeline error]"
+                        blocked_text = self._collaborator_safe_notice("security pipeline error")
                         if "message" in update:
                             update["message"]["text"] = blocked_text
                         elif "edited_message" in update:
@@ -1401,6 +1684,56 @@ class TelegramAPIProxy:
         except Exception as e:
             logger.warning("Failed to send local healthcheck notice to chat %s: %s", chat_id, e)
 
+    async def _send_local_model_notice(self, chat_id: int) -> None:
+        """Send deterministic model status without model invocation."""
+        try:
+            if self._bot_token:
+                model_ref = (
+                    os.environ.get("OPENCLAW_MAIN_MODEL")
+                    or os.environ.get("AGENTSHROUD_CLOUD_MODEL_REF")
+                    or os.environ.get("AGENTSHROUD_LOCAL_MODEL_REF")
+                    or "unknown"
+                )
+                mode = os.environ.get("AGENTSHROUD_MODEL_MODE", "unknown")
+                profile = os.environ.get("AGENTSHROUD_ACTIVE_PROFILE", "unknown")
+                msg = (
+                    "ℹ️ AgentShroud model status\n"
+                    f"• Mode: {mode}\n"
+                    f"• Profile: {profile}\n"
+                    f"• Model: {model_ref}"
+                )
+                url = f"{TELEGRAM_API_BASE}/bot{self._bot_token}/sendMessage"
+                req = urllib.request.Request(
+                    url,
+                    data=json.dumps({"chat_id": chat_id, "text": msg}).encode(),
+                    headers={"Content-Type": "application/json"},
+                )
+                loop = asyncio.get_event_loop()
+                await loop.run_in_executor(
+                    None,
+                    lambda: urllib.request.urlopen(req, timeout=5, context=self._ssl_context),
+                )
+        except Exception as e:
+            logger.warning("Failed to send local model notice to chat %s: %s", chat_id, e)
+
+    async def _send_collaborator_safe_info_notice(self, chat_id: int) -> None:
+        """Send concise informative collaborator-safe guidance."""
+        try:
+            if self._bot_token:
+                url = f"{TELEGRAM_API_BASE}/bot{self._bot_token}/sendMessage"
+                req = urllib.request.Request(
+                    url,
+                    data=json.dumps({"chat_id": chat_id, "text": _COLLABORATOR_SAFE_INFO_NOTICE}).encode(),
+                    headers={"Content-Type": "application/json"},
+                )
+                loop = asyncio.get_event_loop()
+                await loop.run_in_executor(
+                    None,
+                    lambda: urllib.request.urlopen(req, timeout=5, context=self._ssl_context),
+                )
+        except Exception as e:
+            logger.warning("Failed to send collaborator safe-info notice to chat %s: %s", chat_id, e)
+
     async def _send_disclosure(self, chat_id: int) -> None:
         """Send the one-time collaborator disclosure notice."""
         try:
@@ -1429,16 +1762,11 @@ class TelegramAPIProxy:
         """Notify a collaborator that a privileged command is not available."""
         try:
             if self._bot_token:
-                msg = (
-                    f"\U0001f512 `{command}` is not available in collaborator mode\\.\n\n"
-                    "Privileged commands \\(1Password, exec, SSH, skills\\) are restricted "
-                    "to the workspace owner\\. I can still help you with questions about "
-                    "AgentShroud, security concepts, and technical advice\\."
-                )
+                msg = self._collaborator_safe_notice(command)
                 url = f"{TELEGRAM_API_BASE}/bot{self._bot_token}/sendMessage"
                 req = urllib.request.Request(
                     url,
-                    data=json.dumps({"chat_id": chat_id, "text": msg, "parse_mode": "MarkdownV2"}).encode(),
+                    data=json.dumps({"chat_id": chat_id, "text": msg}).encode(),
                     headers={"Content-Type": "application/json"},
                 )
                 loop = asyncio.get_event_loop()
@@ -1453,28 +1781,32 @@ class TelegramAPIProxy:
     async def _notify_user_blocked(self, chat_id: int, reason: str):
         """Send a user-friendly notification when a message is blocked."""
         try:
-            friendly_reasons = {
-                "gitguard": "Your message contained patterns resembling code or script injection.",
-                "promptguard": "Your message was flagged as a potential prompt injection attempt.",
-                "prompt injection": "Your message was flagged as a potential prompt injection attempt.",
-                "browsersecurity": "Your message contained a potentially unsafe browser payload.",
-                "rbac": "You don\'t have permission to perform this action.",
-                "contextguard": "Your message was flagged for context manipulation.",
-                "filesandbox": "Your message referenced a restricted file path.",
-            }
-            user_msg = "Your message was blocked by a security filter."
-            reason_lower = reason.lower()
-            for key, friendly in friendly_reasons.items():
-                if key in reason_lower:
-                    user_msg = friendly
-                    break
+            is_owner = self._is_owner_chat(str(chat_id))
+            if not is_owner:
+                notice = self._collaborator_safe_notice(reason)
+            else:
+                friendly_reasons = {
+                    "gitguard": "Your message contained patterns resembling code or script injection.",
+                    "promptguard": "Your message was flagged as a potential prompt injection attempt.",
+                    "prompt injection": "Your message was flagged as a potential prompt injection attempt.",
+                    "browsersecurity": "Your message contained a potentially unsafe browser payload.",
+                    "rbac": "You don\'t have permission to perform this action.",
+                    "contextguard": "Your message was flagged for context manipulation.",
+                    "filesandbox": "Your message referenced a restricted file path.",
+                }
+                user_msg = "Your message was blocked by a security filter."
+                reason_lower = reason.lower()
+                for key, friendly in friendly_reasons.items():
+                    if key in reason_lower:
+                        user_msg = friendly
+                        break
 
-            notice = (
-                "\u26a0\ufe0f Message Blocked\n\n"
-                f"{user_msg}\n\n"
-                f"Reason: {self._sanitize_reason(reason)}\n\n"
-                "If this is an error, contact the system owner."
-            )
+                notice = (
+                    "\u26a0\ufe0f Message Blocked\n\n"
+                    f"{user_msg}\n\n"
+                    f"Reason: {self._sanitize_reason(reason)}\n\n"
+                    "If this is an error, contact the system owner."
+                )
             if self._bot_token:
                 url = f"https://api.telegram.org/bot{self._bot_token}/sendMessage"
                 req = urllib.request.Request(

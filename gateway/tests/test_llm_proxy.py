@@ -183,3 +183,64 @@ async def test_proxy_messages_strips_ollama_prefix_for_openai_compat(monkeypatch
     assert status == 200
     assert captured["body"]["model"] == "qwen2.5-coder:7b"
     assert captured["url"].startswith("http://host.docker.internal:11434")
+
+
+@pytest.mark.asyncio
+async def test_proxy_messages_timeout_returns_openai_compatible_fallback():
+    sanitizer = _FakeSanitizer()
+    proxy = LLMProxy(sanitizer=sanitizer)
+
+    async def _fake_forward(*_args, **_kwargs):
+        raise TimeoutError("timed out")
+
+    proxy._forward_request = _fake_forward  # type: ignore[method-assign]
+
+    payload = {
+        "model": "ollama/llama3.1:8b",
+        "messages": [{"role": "user", "content": "hello"}],
+    }
+
+    status, headers, body = await proxy.proxy_messages(
+        "/v1/chat/completions",
+        json.dumps(payload).encode("utf-8"),
+        {"content-type": "application/json"},
+        user_id="u1",
+    )
+
+    assert status == 200
+    assert headers.get("content-type") == "application/json"
+    parsed = json.loads(body.decode("utf-8"))
+    assert parsed["object"] == "chat.completion"
+    assert "choices" in parsed
+    assert "timed out before completion" in parsed["choices"][0]["message"]["content"].lower()
+
+
+@pytest.mark.asyncio
+async def test_proxy_messages_timeout_returns_anthropic_compatible_fallback(monkeypatch):
+    sanitizer = _FakeSanitizer()
+    proxy = LLMProxy(sanitizer=sanitizer)
+    monkeypatch.setattr(llm_proxy_module, "MODEL_MODE", "cloud")
+
+    async def _fake_forward(*_args, **_kwargs):
+        raise TimeoutError("timed out")
+
+    proxy._forward_request = _fake_forward  # type: ignore[method-assign]
+
+    payload = {
+        "model": "claude-opus-4-6",
+        "messages": [{"role": "user", "content": "hello"}],
+    }
+
+    status, headers, body = await proxy.proxy_messages(
+        "/v1/messages",
+        json.dumps(payload).encode("utf-8"),
+        {"content-type": "application/json"},
+        user_id="u1",
+    )
+
+    assert status == 200
+    assert headers.get("content-type") == "application/json"
+    parsed = json.loads(body.decode("utf-8"))
+    assert parsed["type"] == "message"
+    assert parsed["role"] == "assistant"
+    assert "timed out before completion" in parsed["content"][0]["text"].lower()

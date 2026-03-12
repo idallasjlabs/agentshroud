@@ -92,10 +92,10 @@ This document lists the local secret-bearing files collaborators may need after 
     - `llm_settings/mcp-servers/github/call-tool.sh`
     - `llm_settings/mcp-servers/github/test-mcp.sh`
     - `llm_settings/mcp-servers/github/test-github.sh`
-- [ ] `blueteam_assesment/.blueteam_env`
-  - Example: `blueteam_assesment/.blueteam_env.example`
+- [ ] `security_assessment/.assessment_env`
+  - Example: `security_assessment/.assessment_env.example`
   - Used by:
-    - `blueteam_assesment/blueteam_test.py`
+    - `security_assessment/run_assessment.py`
   - Notes: only needed for Blueteam Telegram testing
 
 ## Files intentionally not for collaborators
@@ -108,4 +108,4 @@ These are local/operator-only or legacy-sensitive files and should not be commit
 1. Restore `docker/secrets/*`
 2. Restore `docker/.env` if using `scripts/switch_model.sh`
 3. Restore `llm_settings/mcp-servers/github/.env` only if using GitHub MCP tooling
-4. Restore `blueteam_assesment/.blueteam_env` only if running Blueteam tests
+4. Restore `security_assessment/.assessment_env` only if running the security assessment

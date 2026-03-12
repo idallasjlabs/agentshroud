@@ -69,7 +69,7 @@
 - `.codex/`
 - `.gemini/`
 - `archive/`
-- `blueteam_assesment/`
+- `security_assessment/`
 - `branding/`
 - `browser-extension/`
 - `chatbot/`
