@@ -271,6 +271,20 @@ class TelegramAPIProxy:
             window_seconds=self._collaborator_rate_limit_window_seconds,
         )
 
+        # Stranger rate limiter: unknown/unapproved users get much stricter limits
+        # to prevent access-request queue flooding (default: 5 requests per hour).
+        self._stranger_rate_limit_max_requests = int(
+            os.environ.get("AGENTSHROUD_STRANGER_RATE_LIMIT_MAX_REQUESTS", "5")
+        )
+        self._stranger_rate_limit_window_seconds = int(
+            os.environ.get("AGENTSHROUD_STRANGER_RATE_LIMIT_WINDOW_SECONDS", "3600")
+        )
+        self._stranger_rate_limiter = RateLimiter(
+            max_requests=self._stranger_rate_limit_max_requests,
+            window_seconds=self._stranger_rate_limit_window_seconds,
+        )
+        self._recent_stranger_rate_limit_until: dict[str, float] = {}
+
     def _is_owner_chat(self, chat_id: str) -> bool:
         """Return True when chat_id belongs to the configured owner."""
         if not self._rbac:
@@ -2912,6 +2926,16 @@ class TelegramAPIProxy:
                     or sender.get("last_name")
                     or "unknown"
                 )
+                # Stranger rate limit: throttle unknown users before queuing access
+                # requests. Prevents queue flooding from unapproved accounts.
+                if not self._stranger_rate_limiter.check(user_id):
+                    now = time.time()
+                    if self._recent_stranger_rate_limit_until.get(user_id, 0) <= now:
+                        await self._send_stranger_rate_limit_notice(chat_id, user_id=user_id)
+                        self._recent_stranger_rate_limit_until[user_id] = (
+                            now + self._rate_limit_notice_cooldown_seconds
+                        )
+                    continue
                 await self._queue_collaborator_access_request(
                     user_id=user_id,
                     chat_id=chat_id,
@@ -4003,11 +4027,12 @@ class TelegramAPIProxy:
                 limiter_user_id = str(user_id) if user_id else str(chat_id)
                 wait_seconds = self._collaborator_rate_limit_retry_after_seconds(limiter_user_id)
                 wait_minutes = max(1, math.ceil(wait_seconds / 60.0))
+                reset_time_str = time.strftime("%H:%M UTC", time.gmtime(time.time() + wait_seconds))
                 msg = (
                     f"{_PROTECT_HEADER}"
                     "Collaborator rate limit reached "
                     f"\\({self._collaborator_rate_limiter.max_requests} messages/hour\\)\\.\n"
-                    f"Please retry in about {wait_minutes} minute\\(s\\)\\."
+                    f"Rate limit resets at {reset_time_str} \\(~{wait_minutes} min\\)\\."
                 )
                 url = f"{TELEGRAM_API_BASE}/bot{self._bot_token}/sendMessage"
                 loop = asyncio.get_event_loop()
@@ -4030,7 +4055,7 @@ class TelegramAPIProxy:
                         f"{_PROTECT_HEADER}"
                         "Collaborator rate limit reached "
                         f"({self._collaborator_rate_limiter.max_requests} messages/hour). "
-                        f"Please retry in about {wait_minutes} minute(s)."
+                        f"Rate limit resets at {reset_time_str} (~{wait_minutes} min)."
                     )
                     fallback_req = urllib.request.Request(
                         url,
@@ -4059,6 +4084,45 @@ class TelegramAPIProxy:
             return max(1, int(math.ceil(retry_at - now)))
         except Exception:
             return 60
+
+    async def _send_stranger_rate_limit_notice(self, chat_id: int, user_id: Optional[str] = None) -> bool:
+        """Notify an unknown/unapproved user they have exceeded the access request rate limit."""
+        try:
+            if not self._bot_token:
+                return False
+            limiter_user_id = str(user_id) if user_id else str(chat_id)
+            limiter = self._stranger_rate_limiter
+            now = time.time()
+            history = list(getattr(limiter, "requests", {}).get(limiter_user_id, []))
+            if history:
+                earliest = min(float(ts) for ts in history)
+                retry_at_ts = earliest + float(getattr(limiter, "window_seconds", 3600))
+            else:
+                retry_at_ts = now + float(getattr(limiter, "window_seconds", 3600))
+            wait_seconds = max(1, retry_at_ts - now)
+            wait_minutes = max(1, math.ceil(wait_seconds / 60.0))
+            reset_time_str = time.strftime("%H:%M UTC", time.gmtime(retry_at_ts))
+            msg = (
+                f"{_PROTECT_HEADER}"
+                "Access request rate limit reached.\n"
+                f"You may send another access request at {reset_time_str} (~{wait_minutes} min).\n"
+                "To request access sooner, contact the system owner directly."
+            )
+            url = f"{TELEGRAM_API_BASE}/bot{self._bot_token}/sendMessage"
+            loop = asyncio.get_event_loop()
+            req = urllib.request.Request(
+                url,
+                data=json.dumps({"chat_id": chat_id, "text": msg}).encode(),
+                headers={"Content-Type": "application/json"},
+            )
+            await loop.run_in_executor(
+                None,
+                lambda: urllib.request.urlopen(req, timeout=5, context=self._ssl_context),
+            )
+            return True
+        except Exception as e:
+            logger.warning("Failed to send stranger rate limit notice to chat %s: %s", chat_id, e)
+        return False
 
     async def _send_telegram_text(
         self,
