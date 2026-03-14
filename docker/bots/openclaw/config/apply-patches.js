@@ -169,6 +169,7 @@ if (!hasBinding) {
 const COLLABORATOR_IDS = {
   '8506022825': 'Brett Galura',
   '8545356403': 'Chris Shelton',
+  '15712621992': 'Gabriel Fuentes',
   '8279589982': 'Steve Hay',
   '8526379012': 'TJ Winter',
   '7614658040': 'Isaiah (collaborator test)',
@@ -192,7 +193,7 @@ if (!hasCollaborator) {
       ]
     },
     skills: [],
-    workspace: 'collaborator-workspace',
+    workspace: '.agentshroud/collaborator-workspace',
     memorySearch: false,
     heartbeat: { enabled: false }
   });
