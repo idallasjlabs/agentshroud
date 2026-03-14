@@ -12,6 +12,7 @@ from __future__ import annotations
 
 import asyncio
 import base64
+import io
 import json
 import time
 import urllib.error
@@ -135,7 +136,7 @@ class TestInboundPipelineOnGetUpdates:
     async def test_prompt_injection_blocked_on_getUpdates(self):
         """Prompt injection via getUpdates must be blocked by the pipeline."""
         proxy = TelegramAPIProxy(pipeline=BlockingPipeline())
-        proxy._rbac = FakeRBAC()
+        proxy._rbac = FakeRBAC(collaborators=["999"])
         proxy._bot_token = ""  # disable notification sends
 
         response = _wrap_response(
@@ -168,7 +169,7 @@ class TestInboundPipelineOnGetUpdates:
     async def test_clean_message_passes_through(self):
         """Normal messages must pass through the pipeline unmodified."""
         proxy = TelegramAPIProxy(pipeline=BlockingPipeline())
-        proxy._rbac = FakeRBAC()
+        proxy._rbac = FakeRBAC(collaborators=["999"])
         proxy._bot_token = ""
 
         clean_text = "Hello, how are you today?"
@@ -263,7 +264,7 @@ class TestInboundPipelineOnGetUpdates:
     async def test_proxy_request_tracks_getupdates_stats_for_forwarded_message(self, monkeypatch):
         """proxy_request should increment inbound getUpdates stats when messages pass through."""
         proxy = TelegramAPIProxy(pipeline=PassthroughPipeline())
-        proxy._rbac = FakeRBAC()
+        proxy._rbac = FakeRBAC(collaborators=["999"])
 
         async def fake_forward(url, body, content_type):
             return _wrap_response(_make_update("hello", user_id="999"))
@@ -275,6 +276,32 @@ class TestInboundPipelineOnGetUpdates:
         assert proxy._stats["inbound_updates_total"] == 1
         assert proxy._stats["inbound_updates_forwarded"] == 1
         assert proxy._stats["inbound_updates_dropped"] == 0
+
+    @pytest.mark.asyncio
+    async def test_proxy_request_returns_ack_only_updates_when_all_dropped(self, monkeypatch):
+        """When all getUpdates items are locally handled/dropped, return ack-only update_ids."""
+        owner_id = "8096968754"
+        proxy = TelegramAPIProxy(pipeline=PassthroughPipeline())
+        proxy._rbac = FakeRBAC(owner_id=owner_id, collaborators=[])
+        proxy._bot_token = "test-token"
+
+        async def fake_start_notice(chat_id: int, *, is_owner: bool):
+            return None
+
+        async def fake_forward(url, body, content_type):
+            return _wrap_response(
+                _make_update("/start", user_id=owner_id, chat_id=int(owner_id), update_id=777)
+            )
+
+        monkeypatch.setattr(proxy, "_send_local_start_notice", fake_start_notice)
+        monkeypatch.setattr(proxy, "_forward_to_telegram", fake_forward)
+
+        result = await proxy.proxy_request(bot_token="token", method="getUpdates")
+        assert result["ok"] is True
+        assert result["result"] == [{"update_id": 777}]
+        assert proxy._stats["inbound_updates_total"] == 1
+        assert proxy._stats["inbound_updates_forwarded"] == 0
+        assert proxy._stats["inbound_updates_dropped"] == 1
 
     @pytest.mark.asyncio
     async def test_proxy_request_tracks_getupdates_stats_for_dropped_message(self, monkeypatch):
@@ -293,7 +320,7 @@ class TestInboundPipelineOnGetUpdates:
 
         result = await proxy.proxy_request(bot_token="token", method="getUpdates")
         assert result["ok"] is True
-        assert result["result"] == []
+        assert result["result"] == [{"update_id": 1}]
         assert proxy._stats["inbound_updates_total"] == 1
         assert proxy._stats["inbound_updates_forwarded"] == 0
         assert proxy._stats["inbound_updates_dropped"] == 1
@@ -341,6 +368,926 @@ class TestInboundPipelineOnGetUpdates:
         await proxy._filter_inbound_updates(response)
 
         assert calls == [(collaborator_id, True)]
+
+    @pytest.mark.asyncio
+    async def test_collaborator_start_uses_local_notice_and_does_not_forward(self, monkeypatch):
+        """Collaborator /start should be answered locally and never forwarded to model runtime."""
+        captured: dict[str, Any] = {}
+
+        class DummyResponse:
+            pass
+
+        def fake_urlopen(req, timeout=None, context=None):
+            captured["payload"] = json.loads(req.data.decode())
+            return DummyResponse()
+
+        monkeypatch.setattr(urllib.request, "urlopen", fake_urlopen)
+
+        collaborator_id = "7614658040"
+        proxy = TelegramAPIProxy(pipeline=PassthroughPipeline())
+        proxy._rbac = FakeRBAC(collaborators=[collaborator_id])
+        proxy._bot_token = "test-token"
+
+        response = _wrap_response(
+            _make_update("/start", user_id=collaborator_id, chat_id=int(collaborator_id))
+        )
+        result = await proxy._filter_inbound_updates(response)
+
+        assert result["result"] == []
+        text = captured["payload"]["text"]
+        assert text.startswith("🛡️ Protected by AgentShroud\n\n")
+        assert "collaborator session is ready" in text.lower()
+
+    @pytest.mark.asyncio
+    async def test_owner_start_uses_local_notice_and_does_not_forward(self, monkeypatch):
+        """Owner /start should be handled locally with deterministic status message."""
+        captured: dict[str, Any] = {}
+
+        class DummyResponse:
+            pass
+
+        def fake_urlopen(req, timeout=None, context=None):
+            captured["payload"] = json.loads(req.data.decode())
+            return DummyResponse()
+
+        monkeypatch.setattr(urllib.request, "urlopen", fake_urlopen)
+
+        owner_id = "8096968754"
+        proxy = TelegramAPIProxy(pipeline=PassthroughPipeline())
+        proxy._rbac = FakeRBAC(owner_id=owner_id, collaborators=[])
+        proxy._bot_token = "test-token"
+
+        response = _wrap_response(
+            _make_update("/start", user_id=owner_id, chat_id=int(owner_id))
+        )
+        result = await proxy._filter_inbound_updates(response)
+
+        assert result["result"] == []
+        text = captured["payload"]["text"].lower()
+        assert "agentshroud online" in text
+        assert "/healthcheck" in text
+
+    @pytest.mark.asyncio
+    async def test_owner_help_uses_local_notice_and_includes_revoke(self, monkeypatch):
+        """Owner /help should be handled locally and include admin approval commands."""
+        captured: dict[str, Any] = {}
+
+        class DummyResponse:
+            pass
+
+        def fake_urlopen(req, timeout=None, context=None):
+            captured["payload"] = json.loads(req.data.decode())
+            return DummyResponse()
+
+        monkeypatch.setattr(urllib.request, "urlopen", fake_urlopen)
+
+        owner_id = "8096968754"
+        proxy = TelegramAPIProxy(pipeline=PassthroughPipeline())
+        proxy._rbac = FakeRBAC(owner_id=owner_id, collaborators=[])
+        proxy._bot_token = "test-token"
+
+        response = _wrap_response(
+            _make_update("/help", user_id=owner_id, chat_id=int(owner_id))
+        )
+        result = await proxy._filter_inbound_updates(response)
+
+        assert result["result"] == []
+        text = captured["payload"]["text"].lower()
+        assert "owner commands" in text
+        assert "/revoke" in text
+        assert "/approve" in text
+        assert "/pending" in text
+        assert "/collabs" in text
+
+    @pytest.mark.asyncio
+    async def test_owner_collabs_command_shows_named_roster(self, monkeypatch):
+        """Owner /collabs should show known collaborator labels and IDs."""
+        captured: dict[str, Any] = {}
+
+        class DummyResponse:
+            pass
+
+        def fake_urlopen(req, timeout=None, context=None):
+            captured["payload"] = json.loads(req.data.decode())
+            return DummyResponse()
+
+        monkeypatch.setattr(urllib.request, "urlopen", fake_urlopen)
+
+        owner_id = "8096968754"
+        proxy = TelegramAPIProxy(pipeline=PassthroughPipeline())
+        proxy._rbac = FakeRBAC(owner_id=owner_id, collaborators=["8279589982", "8506022825"])
+        proxy._bot_token = "test-token"
+
+        response = _wrap_response(
+            _make_update("/collabs", user_id=owner_id, chat_id=int(owner_id))
+        )
+        result = await proxy._filter_inbound_updates(response)
+
+        assert result["result"] == []
+        text = captured["payload"]["text"]
+        assert "collaborator roster" in text.lower()
+        assert "Steve Hay (8279589982)" in text
+        assert "Brett Galura (8506022825)" in text
+
+    @pytest.mark.asyncio
+    async def test_collaborator_help_uses_local_notice(self, monkeypatch):
+        """Collaborator /help should be handled locally with safe scoped commands."""
+        captured: dict[str, Any] = {}
+
+        class DummyResponse:
+            pass
+
+        def fake_urlopen(req, timeout=None, context=None):
+            captured["payload"] = json.loads(req.data.decode())
+            return DummyResponse()
+
+        monkeypatch.setattr(urllib.request, "urlopen", fake_urlopen)
+
+        collaborator_id = "7614658040"
+        proxy = TelegramAPIProxy(pipeline=PassthroughPipeline())
+        proxy._rbac = FakeRBAC(collaborators=[collaborator_id])
+        proxy._bot_token = "test-token"
+
+        response = _wrap_response(
+            _make_update("/help", user_id=collaborator_id, chat_id=int(collaborator_id))
+        )
+        result = await proxy._filter_inbound_updates(response)
+
+        assert result["result"] == []
+        text = captured["payload"]["text"]
+        assert text.startswith("🛡️ Protected by AgentShroud\n\n")
+        assert "collaborator commands" in text.lower()
+        assert "/status" in text
+
+    @pytest.mark.asyncio
+    async def test_owner_whoami_uses_local_notice(self, monkeypatch):
+        """Owner /whoami should be handled locally and include owner role + user id."""
+        captured: dict[str, Any] = {}
+
+        class DummyResponse:
+            pass
+
+        def fake_urlopen(req, timeout=None, context=None):
+            captured["payload"] = json.loads(req.data.decode())
+            return DummyResponse()
+
+        monkeypatch.setattr(urllib.request, "urlopen", fake_urlopen)
+
+        owner_id = "8096968754"
+        proxy = TelegramAPIProxy(pipeline=PassthroughPipeline())
+        proxy._rbac = FakeRBAC(owner_id=owner_id, collaborators=[])
+        proxy._bot_token = "test-token"
+
+        response = _wrap_response(
+            _make_update("/whoami", user_id=owner_id, chat_id=int(owner_id))
+        )
+        result = await proxy._filter_inbound_updates(response)
+
+        assert result["result"] == []
+        text = captured["payload"]["text"].lower()
+        assert "agentshroud identity" in text
+        assert "role: owner" in text
+        assert f"telegram user id: {owner_id}" in text
+
+    @pytest.mark.asyncio
+    async def test_collaborator_whoami_uses_local_notice(self, monkeypatch):
+        """Collaborator /whoami should be handled locally with protected collaborator response."""
+        captured: dict[str, Any] = {}
+
+        class DummyResponse:
+            pass
+
+        def fake_urlopen(req, timeout=None, context=None):
+            captured["payload"] = json.loads(req.data.decode())
+            return DummyResponse()
+
+        monkeypatch.setattr(urllib.request, "urlopen", fake_urlopen)
+
+        collaborator_id = "7614658040"
+        proxy = TelegramAPIProxy(pipeline=PassthroughPipeline())
+        proxy._rbac = FakeRBAC(collaborators=[collaborator_id])
+        proxy._bot_token = "test-token"
+
+        response = _wrap_response(
+            _make_update("/whoami", user_id=collaborator_id, chat_id=int(collaborator_id))
+        )
+        result = await proxy._filter_inbound_updates(response)
+
+        assert result["result"] == []
+        text = captured["payload"]["text"]
+        assert text.startswith("🛡️ Protected by AgentShroud\n\n")
+        assert "collaborator identity" in text.lower()
+        assert f"telegram user id: {collaborator_id}" in text.lower()
+
+    @pytest.mark.asyncio
+    async def test_owner_whoami_with_bot_mention_uses_local_notice(self, monkeypatch):
+        """Owner /whoami@bot should be normalized and handled locally."""
+        captured: dict[str, Any] = {}
+
+        class DummyResponse:
+            pass
+
+        def fake_urlopen(req, timeout=None, context=None):
+            captured["payload"] = json.loads(req.data.decode())
+            return DummyResponse()
+
+        monkeypatch.setattr(urllib.request, "urlopen", fake_urlopen)
+
+        owner_id = "8096968754"
+        proxy = TelegramAPIProxy(pipeline=PassthroughPipeline())
+        proxy._rbac = FakeRBAC(owner_id=owner_id, collaborators=[])
+        proxy._bot_token = "test-token"
+
+        response = _wrap_response(
+            _make_update("/whoami@agentshroud_bot", user_id=owner_id, chat_id=int(owner_id))
+        )
+        result = await proxy._filter_inbound_updates(response)
+
+        assert result["result"] == []
+        text = captured["payload"]["text"].lower()
+        assert "agentshroud identity" in text
+        assert "role: owner" in text
+        assert f"telegram user id: {owner_id}" in text
+
+    @pytest.mark.asyncio
+    async def test_collaborator_whoami_without_slash_uses_local_notice(self, monkeypatch):
+        """Collaborator plain 'whoami' should be treated as local command."""
+        captured: dict[str, Any] = {}
+
+        class DummyResponse:
+            pass
+
+        def fake_urlopen(req, timeout=None, context=None):
+            captured["payload"] = json.loads(req.data.decode())
+            return DummyResponse()
+
+        monkeypatch.setattr(urllib.request, "urlopen", fake_urlopen)
+
+        collaborator_id = "7614658040"
+        proxy = TelegramAPIProxy(pipeline=PassthroughPipeline())
+        proxy._rbac = FakeRBAC(collaborators=[collaborator_id])
+        proxy._bot_token = "test-token"
+
+        response = _wrap_response(
+            _make_update("whoami", user_id=collaborator_id, chat_id=int(collaborator_id))
+        )
+        result = await proxy._filter_inbound_updates(response)
+
+        assert result["result"] == []
+        text = captured["payload"]["text"]
+        assert text.startswith("🛡️ Protected by AgentShroud\n\n")
+        assert "collaborator identity" in text.lower()
+        assert f"telegram user id: {collaborator_id}" in text.lower()
+
+    @pytest.mark.asyncio
+    async def test_owner_revoke_command_revokes_target_user(self, monkeypatch):
+        """Owner /revoke should locally revoke collaborator access for the target user id."""
+        captured: dict[str, Any] = {}
+
+        class DummyResponse:
+            pass
+
+        def fake_urlopen(req, timeout=None, context=None):
+            captured["payload"] = json.loads(req.data.decode())
+            return DummyResponse()
+
+        monkeypatch.setattr(urllib.request, "urlopen", fake_urlopen)
+
+        owner_id = "8096968754"
+        target_id = "7614658040"
+        proxy = TelegramAPIProxy(pipeline=PassthroughPipeline())
+        proxy._rbac = FakeRBAC(owner_id=owner_id, collaborators=[target_id])
+        proxy._bot_token = "test-token"
+
+        response = _wrap_response(
+            _make_update(f"/revoke {target_id}", user_id=owner_id, chat_id=int(owner_id))
+        )
+        result = await proxy._filter_inbound_updates(response)
+
+        assert result["result"] == []
+        assert target_id in proxy._runtime_revoked_collaborators
+        assert "collaborator access revoked" in captured["payload"]["text"].lower()
+
+    @pytest.mark.asyncio
+    async def test_owner_revoke_command_requires_target_user_id(self, monkeypatch):
+        """Owner /revoke without target should return usage guidance."""
+        captured: dict[str, Any] = {}
+
+        class DummyResponse:
+            pass
+
+        def fake_urlopen(req, timeout=None, context=None):
+            captured["payload"] = json.loads(req.data.decode())
+            return DummyResponse()
+
+        monkeypatch.setattr(urllib.request, "urlopen", fake_urlopen)
+
+        owner_id = "8096968754"
+        proxy = TelegramAPIProxy(pipeline=PassthroughPipeline())
+        proxy._rbac = FakeRBAC(owner_id=owner_id, collaborators=["7614658040"])
+        proxy._bot_token = "test-token"
+
+        response = _wrap_response(
+            _make_update("/revoke", user_id=owner_id, chat_id=int(owner_id))
+        )
+        result = await proxy._filter_inbound_updates(response)
+
+        assert result["result"] == []
+        assert "usage: /revoke <telegram_user_id|name>" in captured["payload"]["text"].lower()
+
+    @pytest.mark.asyncio
+    async def test_owner_revoke_command_cannot_revoke_owner(self, monkeypatch):
+        """Owner /revoke must fail safely when target is owner id."""
+        captured: dict[str, Any] = {}
+
+        class DummyResponse:
+            pass
+
+        def fake_urlopen(req, timeout=None, context=None):
+            captured["payload"] = json.loads(req.data.decode())
+            return DummyResponse()
+
+        monkeypatch.setattr(urllib.request, "urlopen", fake_urlopen)
+
+        owner_id = "8096968754"
+        proxy = TelegramAPIProxy(pipeline=PassthroughPipeline())
+        proxy._rbac = FakeRBAC(owner_id=owner_id, collaborators=["7614658040"])
+        proxy._bot_token = "test-token"
+
+        response = _wrap_response(
+            _make_update(f"/revoke {owner_id}", user_id=owner_id, chat_id=int(owner_id))
+        )
+        result = await proxy._filter_inbound_updates(response)
+
+        assert result["result"] == []
+        assert captured["payload"]["text"].startswith("🛡️ Protected by AgentShroud\n\n")
+        assert "cannot revoke owner access" in captured["payload"]["text"].lower()
+
+    @pytest.mark.asyncio
+    async def test_owner_approve_command_grants_pending_user(self, monkeypatch):
+        """Owner /approve should grant pending collaborator and notify both parties."""
+        notices: list[tuple[int, str]] = []
+        owner_id = "8096968754"
+        target_id = "1234567890"
+        proxy = TelegramAPIProxy(pipeline=PassthroughPipeline())
+        proxy._rbac = FakeRBAC(owner_id=owner_id, collaborators=[])
+        proxy._bot_token = "test-token"
+        proxy._pending_collaborator_requests[target_id] = {
+            "user_id": target_id,
+            "chat_id": target_id,
+            "username": "target",
+            "requested_at": time.time(),
+            "expires_at": time.time() + 90,
+        }
+
+        async def fake_owner_notice(chat_id: int, message: str):
+            notices.append((chat_id, message))
+            return None
+
+        monkeypatch.setattr(proxy, "_send_owner_admin_notice", fake_owner_notice)
+
+        response = _wrap_response(
+            _make_update(f"/approve {target_id}", user_id=owner_id, chat_id=int(owner_id))
+        )
+        result = await proxy._filter_inbound_updates(response)
+        assert result["result"] == []
+        assert target_id in {str(uid) for uid in (proxy._rbac.collaborator_user_ids or [])}
+        assert target_id not in proxy._pending_collaborator_requests
+        assert len(notices) == 2
+        assert notices[0][0] == int(owner_id)
+        assert "access approved" in notices[0][1].lower()
+        assert notices[1][0] == int(target_id)
+        assert "access approved" in notices[1][1].lower()
+
+    @pytest.mark.asyncio
+    async def test_owner_approve_command_resolves_pending_username_alias(self, monkeypatch):
+        """Owner /approve <username> should resolve pending username and grant access."""
+        notices: list[tuple[int, str]] = []
+        owner_id = "8096968754"
+        target_id = "1234567890"
+        proxy = TelegramAPIProxy(pipeline=PassthroughPipeline())
+        proxy._rbac = FakeRBAC(owner_id=owner_id, collaborators=[])
+        proxy._bot_token = "test-token"
+        proxy._pending_collaborator_requests[target_id] = {
+            "user_id": target_id,
+            "chat_id": target_id,
+            "username": "ana_smith",
+            "requested_at": time.time(),
+            "expires_at": time.time() + 90,
+        }
+
+        async def fake_owner_notice(chat_id: int, message: str):
+            notices.append((chat_id, message))
+            return None
+
+        monkeypatch.setattr(proxy, "_send_owner_admin_notice", fake_owner_notice)
+
+        response = _wrap_response(
+            _make_update("/approve ana", user_id=owner_id, chat_id=int(owner_id))
+        )
+        result = await proxy._filter_inbound_updates(response)
+
+        assert result["result"] == []
+        assert target_id in {str(uid) for uid in (proxy._rbac.collaborator_user_ids or [])}
+        assert target_id not in proxy._pending_collaborator_requests
+        assert any("access approved" in msg.lower() for _, msg in notices)
+
+    @pytest.mark.asyncio
+    async def test_owner_deny_command_denies_pending_user(self, monkeypatch):
+        """Owner /deny should deny pending collaborator and notify both parties."""
+        notices: list[tuple[int, str]] = []
+        owner_id = "8096968754"
+        target_id = "1234567890"
+        proxy = TelegramAPIProxy(pipeline=PassthroughPipeline())
+        proxy._rbac = FakeRBAC(owner_id=owner_id, collaborators=[])
+        proxy._bot_token = "test-token"
+        proxy._pending_collaborator_requests[target_id] = {
+            "user_id": target_id,
+            "chat_id": target_id,
+            "username": "target",
+            "requested_at": time.time(),
+            "expires_at": time.time() + 90,
+        }
+
+        async def fake_owner_notice(chat_id: int, message: str):
+            notices.append((chat_id, message))
+            return None
+
+        monkeypatch.setattr(proxy, "_send_owner_admin_notice", fake_owner_notice)
+
+        response = _wrap_response(
+            _make_update(f"/deny {target_id}", user_id=owner_id, chat_id=int(owner_id))
+        )
+        result = await proxy._filter_inbound_updates(response)
+        assert result["result"] == []
+        assert target_id not in proxy._pending_collaborator_requests
+        assert target_id in proxy._runtime_revoked_collaborators
+        assert len(notices) == 2
+        assert notices[0][0] == int(owner_id)
+        assert "access denied" in notices[0][1].lower()
+        assert notices[1][0] == int(target_id)
+        assert "access denied" in notices[1][1].lower()
+
+    @pytest.mark.asyncio
+    async def test_owner_deny_command_resolves_pending_username_alias(self, monkeypatch):
+        """Owner /deny <username> should resolve pending username and deny access."""
+        notices: list[tuple[int, str]] = []
+        owner_id = "8096968754"
+        target_id = "1234567890"
+        proxy = TelegramAPIProxy(pipeline=PassthroughPipeline())
+        proxy._rbac = FakeRBAC(owner_id=owner_id, collaborators=[])
+        proxy._bot_token = "test-token"
+        proxy._pending_collaborator_requests[target_id] = {
+            "user_id": target_id,
+            "chat_id": target_id,
+            "username": "ana_smith",
+            "requested_at": time.time(),
+            "expires_at": time.time() + 90,
+        }
+
+        async def fake_owner_notice(chat_id: int, message: str):
+            notices.append((chat_id, message))
+            return None
+
+        monkeypatch.setattr(proxy, "_send_owner_admin_notice", fake_owner_notice)
+
+        response = _wrap_response(
+            _make_update("/deny ana", user_id=owner_id, chat_id=int(owner_id))
+        )
+        result = await proxy._filter_inbound_updates(response)
+
+        assert result["result"] == []
+        assert target_id not in proxy._pending_collaborator_requests
+        assert target_id in proxy._runtime_revoked_collaborators
+        assert any("access denied" in msg.lower() for _, msg in notices)
+
+    @pytest.mark.asyncio
+    async def test_owner_approve_command_requires_target_user_id(self, monkeypatch):
+        """Owner /approve without target should return usage guidance."""
+        notices: list[tuple[int, str]] = []
+        owner_id = "8096968754"
+        proxy = TelegramAPIProxy(pipeline=PassthroughPipeline())
+        proxy._rbac = FakeRBAC(owner_id=owner_id, collaborators=[])
+        proxy._bot_token = "test-token"
+
+        async def fake_owner_notice(chat_id: int, message: str):
+            notices.append((chat_id, message))
+            return None
+
+        monkeypatch.setattr(proxy, "_send_owner_admin_notice", fake_owner_notice)
+
+        response = _wrap_response(
+            _make_update("/approve", user_id=owner_id, chat_id=int(owner_id))
+        )
+        result = await proxy._filter_inbound_updates(response)
+        assert result["result"] == []
+        assert len(notices) == 1
+        assert notices[0][0] == int(owner_id)
+        assert "usage: /approve <telegram_user_id|name>" in notices[0][1].lower()
+
+    @pytest.mark.asyncio
+    async def test_owner_approve_without_target_auto_selects_single_pending(self, monkeypatch):
+        """Owner /approve with one pending request should approve that request."""
+        notices: list[tuple[int, str]] = []
+        owner_id = "8096968754"
+        target_id = "1234567890"
+        proxy = TelegramAPIProxy(pipeline=PassthroughPipeline())
+        proxy._rbac = FakeRBAC(owner_id=owner_id, collaborators=[])
+        proxy._bot_token = "test-token"
+        proxy._pending_collaborator_requests[target_id] = {
+            "user_id": target_id,
+            "chat_id": target_id,
+            "username": "target",
+            "requested_at": time.time(),
+            "expires_at": time.time() + 90,
+        }
+
+        async def fake_owner_notice(chat_id: int, message: str):
+            notices.append((chat_id, message))
+            return None
+
+        monkeypatch.setattr(proxy, "_send_owner_admin_notice", fake_owner_notice)
+
+        response = _wrap_response(
+            _make_update("/approve", user_id=owner_id, chat_id=int(owner_id))
+        )
+        result = await proxy._filter_inbound_updates(response)
+        assert result["result"] == []
+        assert target_id in {str(uid) for uid in (proxy._rbac.collaborator_user_ids or [])}
+        assert target_id not in proxy._pending_collaborator_requests
+        assert any("access approved" in msg.lower() for _, msg in notices)
+
+    @pytest.mark.asyncio
+    async def test_owner_approve_command_requires_pending_request(self, monkeypatch):
+        """Owner /approve should fail closed when target has no pending request."""
+        notices: list[tuple[int, str]] = []
+        owner_id = "8096968754"
+        target_id = "1234567890"
+        proxy = TelegramAPIProxy(pipeline=PassthroughPipeline())
+        proxy._rbac = FakeRBAC(owner_id=owner_id, collaborators=[])
+        proxy._bot_token = "test-token"
+
+        async def fake_owner_notice(chat_id: int, message: str):
+            notices.append((chat_id, message))
+            return None
+
+        monkeypatch.setattr(proxy, "_send_owner_admin_notice", fake_owner_notice)
+
+        response = _wrap_response(
+            _make_update(f"/approve {target_id}", user_id=owner_id, chat_id=int(owner_id))
+        )
+        result = await proxy._filter_inbound_updates(response)
+        assert result["result"] == []
+        assert len(notices) == 1
+        assert notices[0][0] == int(owner_id)
+        assert "no pending request found" in notices[0][1].lower()
+
+    @pytest.mark.asyncio
+    async def test_owner_deny_command_requires_target_user_id(self, monkeypatch):
+        """Owner /deny without target should return usage guidance."""
+        notices: list[tuple[int, str]] = []
+        owner_id = "8096968754"
+        proxy = TelegramAPIProxy(pipeline=PassthroughPipeline())
+        proxy._rbac = FakeRBAC(owner_id=owner_id, collaborators=[])
+        proxy._bot_token = "test-token"
+
+        async def fake_owner_notice(chat_id: int, message: str):
+            notices.append((chat_id, message))
+            return None
+
+        monkeypatch.setattr(proxy, "_send_owner_admin_notice", fake_owner_notice)
+
+        response = _wrap_response(
+            _make_update("/deny", user_id=owner_id, chat_id=int(owner_id))
+        )
+        result = await proxy._filter_inbound_updates(response)
+        assert result["result"] == []
+        assert len(notices) == 1
+        assert notices[0][0] == int(owner_id)
+        assert "usage: /deny <telegram_user_id|name>" in notices[0][1].lower()
+
+    @pytest.mark.asyncio
+    async def test_owner_deny_without_target_auto_selects_single_pending(self, monkeypatch):
+        """Owner /deny with one pending request should deny that request."""
+        notices: list[tuple[int, str]] = []
+        owner_id = "8096968754"
+        target_id = "1234567890"
+        proxy = TelegramAPIProxy(pipeline=PassthroughPipeline())
+        proxy._rbac = FakeRBAC(owner_id=owner_id, collaborators=[])
+        proxy._bot_token = "test-token"
+        proxy._pending_collaborator_requests[target_id] = {
+            "user_id": target_id,
+            "chat_id": target_id,
+            "username": "target",
+            "requested_at": time.time(),
+            "expires_at": time.time() + 90,
+        }
+
+        async def fake_owner_notice(chat_id: int, message: str):
+            notices.append((chat_id, message))
+            return None
+
+        monkeypatch.setattr(proxy, "_send_owner_admin_notice", fake_owner_notice)
+
+        response = _wrap_response(
+            _make_update("/deny", user_id=owner_id, chat_id=int(owner_id))
+        )
+        result = await proxy._filter_inbound_updates(response)
+        assert result["result"] == []
+        assert target_id not in proxy._pending_collaborator_requests
+        assert target_id in proxy._runtime_revoked_collaborators
+        assert any("access denied" in msg.lower() for _, msg in notices)
+
+    @pytest.mark.asyncio
+    async def test_owner_pending_command_shows_pending_active_and_revoked(self, monkeypatch):
+        """Owner /pending should return deterministic snapshot of pending/collaborator/revoked IDs."""
+        captured: dict[str, Any] = {}
+
+        class DummyResponse:
+            pass
+
+        def fake_urlopen(req, timeout=None, context=None):
+            captured["payload"] = json.loads(req.data.decode())
+            return DummyResponse()
+
+        monkeypatch.setattr(urllib.request, "urlopen", fake_urlopen)
+
+        owner_id = "8096968754"
+        target_pending = "1234567890"
+        target_revoked = "2222222222"
+        proxy = TelegramAPIProxy(pipeline=PassthroughPipeline())
+        proxy._rbac = FakeRBAC(owner_id=owner_id, collaborators=["7614658040"])
+        proxy._bot_token = "test-token"
+        proxy._pending_collaborator_requests[target_pending] = {
+            "user_id": target_pending,
+            "chat_id": target_pending,
+            "username": "target",
+            "requested_at": time.time(),
+            "expires_at": time.time() + 90,
+        }
+        proxy._runtime_revoked_collaborators.add(target_revoked)
+
+        response = _wrap_response(
+            _make_update("/pending", user_id=owner_id, chat_id=int(owner_id))
+        )
+        result = await proxy._filter_inbound_updates(response)
+        assert result["result"] == []
+        text = captured["payload"]["text"]
+        assert "pending approvals" in text.lower()
+        assert target_pending in text
+        assert "7614658040" in text
+        assert target_revoked in text
+
+    @pytest.mark.asyncio
+    async def test_owner_addcollab_adds_target_and_notifies(self, monkeypatch):
+        """Owner /addcollab should add collaborator and clear revoked state."""
+        notices: list[tuple[int, str]] = []
+        owner_id = "8096968754"
+        target_id = "3333333333"
+        proxy = TelegramAPIProxy(pipeline=PassthroughPipeline())
+        proxy._rbac = FakeRBAC(owner_id=owner_id, collaborators=["7614658040"])
+        proxy._bot_token = "test-token"
+        proxy._runtime_revoked_collaborators.add(target_id)
+
+        async def fake_owner_notice(chat_id: int, message: str):
+            notices.append((chat_id, message))
+            return None
+
+        monkeypatch.setattr(proxy, "_send_owner_admin_notice", fake_owner_notice)
+
+        response = _wrap_response(
+            _make_update(f"/addcollab {target_id}", user_id=owner_id, chat_id=int(owner_id))
+        )
+        result = await proxy._filter_inbound_updates(response)
+        assert result["result"] == []
+        assert target_id in {str(uid) for uid in (proxy._rbac.collaborator_user_ids or [])}
+        assert target_id not in proxy._runtime_revoked_collaborators
+        assert any("collaborator added" in msg.lower() for _, msg in notices)
+
+    @pytest.mark.asyncio
+    async def test_owner_addcollab_requires_target(self, monkeypatch):
+        """Owner /addcollab without target should return usage guidance."""
+        notices: list[tuple[int, str]] = []
+        owner_id = "8096968754"
+        proxy = TelegramAPIProxy(pipeline=PassthroughPipeline())
+        proxy._rbac = FakeRBAC(owner_id=owner_id, collaborators=[])
+        proxy._bot_token = "test-token"
+
+        async def fake_owner_notice(chat_id: int, message: str):
+            notices.append((chat_id, message))
+            return None
+
+        monkeypatch.setattr(proxy, "_send_owner_admin_notice", fake_owner_notice)
+
+        response = _wrap_response(
+            _make_update("/addcollab", user_id=owner_id, chat_id=int(owner_id))
+        )
+        result = await proxy._filter_inbound_updates(response)
+        assert result["result"] == []
+        assert any("usage: /addcollab <telegram_user_id|name>" in msg.lower() for _, msg in notices)
+
+    @pytest.mark.asyncio
+    async def test_owner_addcollab_accepts_known_name_alias(self, monkeypatch):
+        """Owner /addcollab should accept known collaborator short-name aliases."""
+        notices: list[str] = []
+        owner_id = "8096968754"
+        proxy = TelegramAPIProxy(pipeline=PassthroughPipeline())
+        proxy._rbac = FakeRBAC(owner_id=owner_id, collaborators=[])
+        proxy._bot_token = "test-token"
+
+        async def fake_owner_notice(chat_id: int, message: str):
+            notices.append(message)
+            return None
+
+        monkeypatch.setattr(proxy, "_send_owner_admin_notice", fake_owner_notice)
+
+        response = _wrap_response(
+            _make_update("/addcollab steve", user_id=owner_id, chat_id=int(owner_id))
+        )
+        result = await proxy._filter_inbound_updates(response)
+        assert result["result"] == []
+        assert "8279589982" in {str(uid) for uid in (proxy._rbac.collaborator_user_ids or [])}
+        assert any("collaborator added" in n.lower() for n in notices)
+
+    @pytest.mark.asyncio
+    async def test_owner_restorecollabs_restores_defaults(self, monkeypatch):
+        """Owner /restorecollabs should restore baseline collaborator IDs."""
+        notices: list[tuple[int, str]] = []
+        owner_id = "8096968754"
+        proxy = TelegramAPIProxy(pipeline=PassthroughPipeline())
+        proxy._rbac = FakeRBAC(owner_id=owner_id, collaborators=["7614658040"])
+        proxy._bot_token = "test-token"
+        proxy._runtime_revoked_collaborators.add("8506022825")
+
+        async def fake_owner_notice(chat_id: int, message: str):
+            notices.append((chat_id, message))
+            return None
+
+        monkeypatch.setattr(proxy, "_send_owner_admin_notice", fake_owner_notice)
+
+        response = _wrap_response(
+            _make_update("/restorecollabs", user_id=owner_id, chat_id=int(owner_id))
+        )
+        result = await proxy._filter_inbound_updates(response)
+        assert result["result"] == []
+        assert "8506022825" in {str(uid) for uid in (proxy._rbac.collaborator_user_ids or [])}
+        assert "8506022825" not in proxy._runtime_revoked_collaborators
+        assert any("restored collaborators" in msg.lower() for _, msg in notices)
+
+    @pytest.mark.asyncio
+    async def test_owner_deny_command_requires_pending_request(self, monkeypatch):
+        """Owner /deny should fail closed when target has no pending request."""
+        notices: list[tuple[int, str]] = []
+        owner_id = "8096968754"
+        target_id = "1234567890"
+        proxy = TelegramAPIProxy(pipeline=PassthroughPipeline())
+        proxy._rbac = FakeRBAC(owner_id=owner_id, collaborators=[])
+        proxy._bot_token = "test-token"
+
+        async def fake_owner_notice(chat_id: int, message: str):
+            notices.append((chat_id, message))
+            return None
+
+        monkeypatch.setattr(proxy, "_send_owner_admin_notice", fake_owner_notice)
+
+        response = _wrap_response(
+            _make_update(f"/deny {target_id}", user_id=owner_id, chat_id=int(owner_id))
+        )
+        result = await proxy._filter_inbound_updates(response)
+        assert result["result"] == []
+        assert len(notices) == 1
+        assert notices[0][0] == int(owner_id)
+        assert "no pending request found" in notices[0][1].lower()
+
+    @pytest.mark.asyncio
+    async def test_collaborator_revoke_command_is_blocked(self, monkeypatch):
+        """Collaborator /revoke command must be blocked and quarantined."""
+        from gateway.ingest_api import state as state_module
+
+        quarantine = []
+        called = {"count": 0}
+
+        async def fake_notify(chat_id: int, command: str):
+            called["count"] += 1
+            assert chat_id == 7614658040
+            assert command in {"restricted-command", "/revoke"}
+
+        monkeypatch.setattr(
+            state_module,
+            "app_state",
+            SimpleNamespace(blocked_message_quarantine=quarantine),
+        )
+
+        proxy = TelegramAPIProxy(pipeline=PassthroughPipeline())
+        proxy._rbac = FakeRBAC(owner_id="8096968754", collaborators=["7614658040"])
+        proxy._bot_token = "test-token"
+        monkeypatch.setattr(proxy, "_notify_collaborator_command_blocked", fake_notify)
+
+        response = _wrap_response(
+            _make_update("/revoke 8096968754", user_id="7614658040", chat_id=7614658040)
+        )
+        result = await proxy._filter_inbound_updates(response)
+
+        assert result["result"] == []
+        assert called["count"] == 1
+        assert len(quarantine) == 1
+        assert "blocked unapproved collaborator slash command" in quarantine[0]["reason"].lower()
+
+    @pytest.mark.asyncio
+    async def test_unknown_user_message_triggers_owner_approval_workflow(self, monkeypatch):
+        """Unknown non-owner user should trigger pending approval workflow and not forward."""
+        payloads: list[tuple[int, str]] = []
+        proxy = TelegramAPIProxy(pipeline=PassthroughPipeline())
+        proxy._rbac = FakeRBAC(owner_id="8096968754", collaborators=["7614658040"])
+        proxy._bot_token = "test-token"
+
+        async def fake_owner_notice(chat_id: int, message: str):
+            payloads.append((chat_id, message))
+            return None
+
+        async def fake_pending_notice(chat_id: int):
+            payloads.append((chat_id, "🛡️ Protected by AgentShroud\n\nAccess pending owner approval. Please wait."))
+            return None
+
+        monkeypatch.setattr(proxy, "_send_owner_admin_notice", fake_owner_notice)
+        monkeypatch.setattr(proxy, "_send_collaborator_pending_notice", fake_pending_notice)
+
+        response = _wrap_response(
+            _make_update("hello", user_id="1234567890", chat_id=1234567890)
+        )
+        result = await proxy._filter_inbound_updates(response)
+
+        assert result["result"] == []
+        assert len(payloads) == 2
+        assert payloads[0][0] == 8096968754
+        assert "collaborator access request pending" in payloads[0][1].lower()
+        assert payloads[1][0] == 1234567890
+        assert "access pending owner approval" in payloads[1][1].lower()
+
+    @pytest.mark.asyncio
+    async def test_unknown_user_repeated_start_still_gets_pending_notice(self, monkeypatch):
+        """Unknown users should still receive pending notice on repeated /start during cooldown."""
+        payloads: list[tuple[int, str]] = []
+        proxy = TelegramAPIProxy(pipeline=PassthroughPipeline())
+        proxy._rbac = FakeRBAC(owner_id="8096968754", collaborators=["7614658040"])
+        proxy._bot_token = "test-token"
+
+        async def fake_owner_notice(chat_id: int, message: str):
+            payloads.append((chat_id, message))
+            return None
+
+        async def fake_pending_notice(chat_id: int):
+            payloads.append((chat_id, "🛡️ Protected by AgentShroud\n\nAccess pending owner approval. Please wait."))
+            return None
+
+        monkeypatch.setattr(proxy, "_send_owner_admin_notice", fake_owner_notice)
+        monkeypatch.setattr(proxy, "_send_collaborator_pending_notice", fake_pending_notice)
+
+        first = _wrap_response(_make_update("/start", user_id="1234567890", chat_id=1234567890, update_id=9001))
+        second = _wrap_response(_make_update("/start", user_id="1234567890", chat_id=1234567890, update_id=9002))
+        result_first = await proxy._filter_inbound_updates(first)
+        result_second = await proxy._filter_inbound_updates(second)
+
+        assert result_first["result"] == []
+        assert result_second["result"] == []
+        # First call: owner + requester. Second call within cooldown: requester notice.
+        assert len(payloads) == 3
+        assert payloads[0][0] == 8096968754
+        assert payloads[1][0] == 1234567890
+        assert payloads[2][0] == 1234567890
+        assert "access pending owner approval" in payloads[2][1].lower()
+
+    @pytest.mark.asyncio
+    async def test_revoked_user_messages_require_owner_reapproval(self, monkeypatch):
+        """Revoked users should be routed into owner re-approval workflow."""
+        payloads: list[tuple[int, str]] = []
+        proxy = TelegramAPIProxy(pipeline=PassthroughPipeline())
+        proxy._rbac = FakeRBAC(owner_id="8096968754", collaborators=["7614658040"])
+        proxy._bot_token = "test-token"
+        proxy._runtime_revoked_collaborators.add("7614658040")
+
+        async def fake_owner_notice(chat_id: int, message: str):
+            payloads.append((chat_id, message))
+            return None
+
+        async def fake_pending_notice(chat_id: int):
+            payloads.append((chat_id, "🛡️ Protected by AgentShroud\n\nAccess pending owner approval. Please wait."))
+            return None
+
+        monkeypatch.setattr(proxy, "_send_owner_admin_notice", fake_owner_notice)
+        monkeypatch.setattr(proxy, "_send_collaborator_pending_notice", fake_pending_notice)
+
+        response = _wrap_response(
+            _make_update("hello", user_id="7614658040", chat_id=7614658040)
+        )
+        result = await proxy._filter_inbound_updates(response)
+
+        assert result["result"] == []
+        assert len(payloads) == 2
+        assert payloads[0][0] == 8096968754
+        assert "collaborator access request pending" in payloads[0][1].lower()
+        assert payloads[1][0] == 7614658040
+        assert "access pending owner approval" in payloads[1][1].lower()
 
     @pytest.mark.asyncio
     async def test_blocked_command_is_quarantined(self, monkeypatch):
@@ -586,7 +1533,7 @@ class TestInboundPipelineOnGetUpdates:
         proxy._bot_token = "test-token"
 
         response = _wrap_response(
-            _make_update("/status", user_id=collaborator_id, chat_id=int(collaborator_id))
+            _make_update("/unknown", user_id=collaborator_id, chat_id=int(collaborator_id))
         )
         result = await proxy._filter_inbound_updates(response)
         assert result["result"] == []
@@ -614,7 +1561,7 @@ class TestInboundPipelineOnGetUpdates:
 
         response = _wrap_response(
             _make_update(
-                "/status@agentshroud_bot?",
+                "/unknown@agentshroud_bot?",
                 user_id=collaborator_id,
                 chat_id=int(collaborator_id),
             )
@@ -781,8 +1728,8 @@ class TestInboundPipelineOnGetUpdates:
         assert "tool-payload request" in quarantine[0]["reason"].lower()
 
     @pytest.mark.asyncio
-    async def test_collaborator_web_access_request_is_blocked_and_queues_approval(self, monkeypatch):
-        """Collaborator URL web-access prompts should be blocked and preflight approval queued."""
+    async def test_collaborator_web_access_request_queues_owner_approval_and_pending_notice(self, monkeypatch):
+        """Collaborator URL web-access prompts should queue owner approval and return pending notice."""
         from gateway.ingest_api import state as state_module
 
         quarantine = []
@@ -797,10 +1744,11 @@ class TestInboundPipelineOnGetUpdates:
         proxy._rbac = FakeRBAC(collaborators=[collaborator_id])
         proxy._bot_token = "test-token"
 
-        called = {"approval": 0, "notify": 0}
+        called = {"approval": 0, "notify": 0, "pending_notice": 0}
 
         async def _fake_approval(_chat_id, tool_args):
             called["approval"] += 1
+            called["chat_id"] = _chat_id
             called["url"] = tool_args.get("url")
             return True
 
@@ -808,8 +1756,14 @@ class TestInboundPipelineOnGetUpdates:
             called["notify"] += 1
             return None
 
+        async def _fake_send(chat_id, text, *, parse_mode=None, retries=3):
+            if "owner-gated" in (text or "").lower():
+                called["pending_notice"] += 1
+            return True
+
         monkeypatch.setattr(proxy, "_trigger_web_fetch_approval", _fake_approval)
         monkeypatch.setattr(proxy, "_notify_collaborator_command_blocked", _fake_notify)
+        monkeypatch.setattr(proxy, "_send_telegram_text", _fake_send)
 
         response = _wrap_response(
             _make_update(
@@ -821,14 +1775,15 @@ class TestInboundPipelineOnGetUpdates:
         result = await proxy._filter_inbound_updates(response)
         assert result["result"] == []
         assert called["approval"] == 1
+        assert str(called.get("chat_id")) == "8096968754"
         assert "weather.com" in (called.get("url") or "")
-        assert called["notify"] == 1
-        assert len(quarantine) == 1
-        assert "external web-access request" in quarantine[0]["reason"].lower()
+        assert called["notify"] == 0
+        assert called["pending_notice"] == 1
+        assert len(quarantine) == 0
 
     @pytest.mark.asyncio
-    async def test_collaborator_web_access_request_without_url_is_blocked_without_approval(self, monkeypatch):
-        """Web access intent without explicit URL should still be blocked and not queue approval."""
+    async def test_collaborator_web_access_request_without_url_is_restricted_without_approval(self, monkeypatch):
+        """Web access intent without explicit URL should remain restricted and not queue approval."""
         from gateway.ingest_api import state as state_module
 
         quarantine = []
@@ -867,12 +1822,11 @@ class TestInboundPipelineOnGetUpdates:
         assert result["result"] == []
         assert called["approval"] == 0
         assert called["notify"] == 1
-        assert len(quarantine) == 1
-        assert "external web-access request" in quarantine[0]["reason"].lower()
+        assert len(quarantine) == 0
 
     @pytest.mark.asyncio
-    async def test_collaborator_web_access_request_with_bare_domain_is_blocked(self, monkeypatch):
-        """Domain-only web intent should still be treated as external web-access request."""
+    async def test_collaborator_web_access_request_with_bare_domain_queues_owner_approval(self, monkeypatch):
+        """Domain-only web intent should queue owner approval and pending notice."""
         from gateway.ingest_api import state as state_module
 
         quarantine = []
@@ -887,7 +1841,7 @@ class TestInboundPipelineOnGetUpdates:
         proxy._rbac = FakeRBAC(collaborators=[collaborator_id])
         proxy._bot_token = "test-token"
 
-        called = {"approval": 0, "notify": 0}
+        called = {"approval": 0, "notify": 0, "pending_notice": 0}
 
         async def _fake_approval(_chat_id, _tool_args):
             called["approval"] += 1
@@ -897,8 +1851,14 @@ class TestInboundPipelineOnGetUpdates:
             called["notify"] += 1
             return None
 
+        async def _fake_send(chat_id, text, *, parse_mode=None, retries=3):
+            if "owner-gated" in (text or "").lower():
+                called["pending_notice"] += 1
+            return True
+
         monkeypatch.setattr(proxy, "_trigger_web_fetch_approval", _fake_approval)
         monkeypatch.setattr(proxy, "_notify_collaborator_command_blocked", _fake_notify)
+        monkeypatch.setattr(proxy, "_send_telegram_text", _fake_send)
 
         response = _wrap_response(
             _make_update(
@@ -910,9 +1870,9 @@ class TestInboundPipelineOnGetUpdates:
         result = await proxy._filter_inbound_updates(response)
         assert result["result"] == []
         assert called["approval"] == 1
-        assert called["notify"] == 1
-        assert len(quarantine) == 1
-        assert "external web-access request" in quarantine[0]["reason"].lower()
+        assert called["notify"] == 0
+        assert called["pending_notice"] == 1
+        assert len(quarantine) == 0
 
     @pytest.mark.asyncio
     async def test_collaborator_web_access_policy_question_gets_safe_info_not_blocked(self, monkeypatch):
@@ -961,7 +1921,7 @@ class TestInboundPipelineOnGetUpdates:
         assert called["approval"] == 0
         assert len(quarantine) == 0
         text = captured["payload"]["text"].lower()
-        assert "protect by agentshroud" in text
+        assert "protected by agentshroud" in text
         assert "guidance" in text or "approval" in text
 
     @pytest.mark.asyncio
@@ -1008,10 +1968,10 @@ class TestInboundPipelineOnGetUpdates:
         )
         result = await proxy._filter_inbound_updates(response)
         assert result["result"] == []
-        assert called["approval"] == 1
+        assert called["approval"] == 0
         assert len(quarantine) == 0
         text = captured["payload"]["text"].lower()
-        assert "protect by agentshroud" in text
+        assert "protected by agentshroud" in text
         assert "approval" in text
 
     @pytest.mark.asyncio
@@ -1060,10 +2020,10 @@ class TestInboundPipelineOnGetUpdates:
         )
         result = await proxy._filter_inbound_updates(response)
         assert result["result"] == []
-        assert called["approval"] == 1
+        assert called["approval"] == 0
         assert len(quarantine) == 0
         text = captured["payload"]["text"].lower()
-        assert "protect by agentshroud" in text
+        assert "protected by agentshroud" in text
         assert "approval" in text
 
     @pytest.mark.asyncio
@@ -1110,10 +2070,10 @@ class TestInboundPipelineOnGetUpdates:
         )
         result = await proxy._filter_inbound_updates(response)
         assert result["result"] == []
-        assert called["approval"] == 1
+        assert called["approval"] == 0
         assert len(quarantine) == 0
         text = captured["payload"]["text"].lower()
-        assert "protect by agentshroud" in text
+        assert "protected by agentshroud" in text
         assert "approval" in text
 
     @pytest.mark.asyncio
@@ -1154,7 +2114,7 @@ class TestInboundPipelineOnGetUpdates:
         assert result["result"] == []
         assert len(quarantine) == 0
         text = captured["payload"]["text"].lower()
-        assert "protect by agentshroud" in text
+        assert "protected by agentshroud" in text
         assert "privacy" in text
 
     @pytest.mark.asyncio
@@ -1195,13 +2155,13 @@ class TestInboundPipelineOnGetUpdates:
         assert result["result"] == []
         assert len(quarantine) == 0
         text = captured["payload"]["text"].lower()
-        assert "protect by agentshroud" in text
+        assert "protected by agentshroud" in text
         assert "privacy" in text
         assert "this action is not allowed" not in text
 
     @pytest.mark.asyncio
-    async def test_collaborator_web_access_imperative_with_url_stays_blocked(self, monkeypatch):
-        """Imperative URL requests should remain blocked even when phrased as a question."""
+    async def test_collaborator_web_access_imperative_with_url_queues_owner_approval(self, monkeypatch):
+        """Imperative URL requests should queue owner approval and not expose command execution."""
         from gateway.ingest_api import state as state_module
 
         quarantine = []
@@ -1216,7 +2176,7 @@ class TestInboundPipelineOnGetUpdates:
         proxy._rbac = FakeRBAC(collaborators=[collaborator_id])
         proxy._bot_token = "test-token"
 
-        called = {"approval": 0}
+        called = {"approval": 0, "pending_notice": 0}
 
         async def _fake_approval(_chat_id, _tool_args):
             called["approval"] += 1
@@ -1225,8 +2185,14 @@ class TestInboundPipelineOnGetUpdates:
         async def _fake_notify(_chat_id, _command):
             return None
 
+        async def _fake_send(_chat_id, text, *, parse_mode=None, retries=3):
+            if "owner-gated" in (text or "").lower():
+                called["pending_notice"] += 1
+            return True
+
         monkeypatch.setattr(proxy, "_trigger_web_fetch_approval", _fake_approval)
         monkeypatch.setattr(proxy, "_notify_collaborator_command_blocked", _fake_notify)
+        monkeypatch.setattr(proxy, "_send_telegram_text", _fake_send)
 
         response = _wrap_response(
             _make_update(
@@ -1238,12 +2204,12 @@ class TestInboundPipelineOnGetUpdates:
         result = await proxy._filter_inbound_updates(response)
         assert result["result"] == []
         assert called["approval"] == 1
-        assert len(quarantine) == 1
-        assert "external web-access request" in quarantine[0]["reason"].lower()
+        assert called["pending_notice"] == 1
+        assert len(quarantine) == 0
 
     @pytest.mark.asyncio
-    async def test_collaborator_web_access_block_returns_protect_egress_notice(self, monkeypatch):
-        """Blocked collaborator web requests should return deterministic Protect egress wording."""
+    async def test_collaborator_web_access_request_returns_pending_egress_notice(self, monkeypatch):
+        """Collaborator web requests should return deterministic pending-approval wording."""
         from gateway.ingest_api import state as state_module
 
         quarantine = []
@@ -1284,11 +2250,11 @@ class TestInboundPipelineOnGetUpdates:
         result = await proxy._filter_inbound_updates(response)
         assert result["result"] == []
         assert called["approval"] == 1
-        assert len(quarantine) == 1
+        assert len(quarantine) == 0
         assert len(calls) >= 1
         text = calls[-1]["text"].lower()
-        assert "protect by agentshroud" in text
-        assert "external access requires approval" in text
+        assert "protected by agentshroud" in text
+        assert "owner-gated" in text
         assert "outbound content blocked by security policy" not in text
         assert "function_calls" not in text
 
@@ -1360,7 +2326,7 @@ class TestInboundPipelineOnGetUpdates:
         assert len(quarantine) == 1
         assert len(calls) >= 1
         text = calls[-1]["text"].lower()
-        assert "protect by agentshroud" in text
+        assert "protected by agentshroud" in text
         assert "file/system content access is restricted for collaborators" in text
         assert "outbound content blocked by security policy" not in text
         assert "function_calls" not in text
@@ -1614,7 +2580,7 @@ class TestInboundPipelineOnGetUpdates:
         assert len(quarantine) == 1
         assert len(calls) >= 1
         text = calls[-1]["text"].lower()
-        assert "protect by agentshroud" in text
+        assert "protected by agentshroud" in text
         assert "sensitive credentials/secrets are restricted" in text
         assert "outbound content blocked by security policy" not in text
         assert "function_calls" not in text
@@ -1687,7 +2653,7 @@ class TestInboundPipelineOnGetUpdates:
         assert len(quarantine) == 1
         assert len(calls) >= 1
         text = calls[-1]["text"].lower()
-        assert "protect by agentshroud" in text
+        assert "protected by agentshroud" in text
         assert "sensitive credentials/secrets are restricted" in text
         assert "outbound content blocked by security policy" not in text
 
@@ -1788,7 +2754,7 @@ class TestInboundPipelineOnGetUpdates:
         assert len(quarantine) == 1
         assert len(calls) >= 1
         text = calls[-1]["text"].lower()
-        assert "protect by agentshroud" in text
+        assert "protected by agentshroud" in text
         assert "external access requires approval" in text
         assert "outbound content blocked by security policy" not in text
 
@@ -1830,7 +2796,7 @@ class TestInboundPipelineOnGetUpdates:
         assert result["result"] == []
         assert len(quarantine) == 0
         text = captured["payload"]["text"].lower()
-        assert "protect by agentshroud" in text
+        assert "protected by agentshroud" in text
         assert "internal system files" in text
 
     @pytest.mark.asyncio
@@ -1872,7 +2838,7 @@ class TestInboundPipelineOnGetUpdates:
         assert result["result"] == []
         assert len(quarantine) == 0
         text = captured["payload"]["text"].lower()
-        assert "protect by agentshroud" in text
+        assert "protected by agentshroud" in text
         assert "file access policy guidance" in text
         assert "this action is not allowed" not in text
 
@@ -1943,7 +2909,7 @@ class TestInboundPipelineOnGetUpdates:
         assert result["result"] == []
         assert len(quarantine) == 0
         text = captured["payload"]["text"].lower()
-        assert "protect by agentshroud" in text
+        assert "protected by agentshroud" in text
         assert "capability overview" in text or "guidance" in text
 
     @pytest.mark.asyncio
@@ -1984,7 +2950,7 @@ class TestInboundPipelineOnGetUpdates:
         assert result["result"] == []
         assert len(quarantine) == 0
         text = captured["payload"]["text"].lower()
-        assert "protect by agentshroud" in text
+        assert "protected by agentshroud" in text
         assert "capability overview" in text
 
     @pytest.mark.asyncio
@@ -2025,7 +2991,7 @@ class TestInboundPipelineOnGetUpdates:
         assert result["result"] == []
         assert len(quarantine) == 0
         text = captured["payload"]["text"].lower()
-        assert "protect by agentshroud" in text
+        assert "protected by agentshroud" in text
         assert ("capability overview" in text) or ("secure collaboration guidance" in text)
         assert "this action is not allowed" not in text
 
@@ -2068,7 +3034,7 @@ class TestInboundPipelineOnGetUpdates:
         assert result["result"] == []
         assert len(quarantine) == 0
         text = captured["payload"]["text"].lower()
-        assert "protect by agentshroud" in text
+        assert "protected by agentshroud" in text
         assert ("capability overview" in text) or ("secure collaboration guidance" in text)
         assert "this action is not allowed" not in text
 
@@ -2108,7 +3074,7 @@ class TestInboundPipelineOnGetUpdates:
         result = await proxy._filter_inbound_updates(response)
         assert result["result"] == []
         text = captured["payload"]["text"].lower()
-        assert "protect by agentshroud" in text
+        assert "protected by agentshroud" in text
         assert ("architecture" in text) or ("authentication" in text)
 
     @pytest.mark.asyncio
@@ -2151,7 +3117,7 @@ class TestInboundPipelineOnGetUpdates:
         assert result["result"] == []
         assert len(quarantine) == 0
         text = captured["payload"]["text"].lower()
-        assert "protect by agentshroud" in text
+        assert "protected by agentshroud" in text
         assert "authentication" in text
         assert "credential" in text
         assert "this action is not allowed" not in text
@@ -2195,7 +3161,7 @@ class TestInboundPipelineOnGetUpdates:
         assert result["result"] == []
         assert len(quarantine) == 0
         text = captured["payload"]["text"].lower()
-        assert "protect by agentshroud" in text
+        assert "protected by agentshroud" in text
         assert "architecture" in text
         assert "this action is not allowed" not in text
 
@@ -2237,7 +3203,7 @@ class TestInboundPipelineOnGetUpdates:
         assert result["result"] == []
         assert len(quarantine) == 0
         text = captured["payload"]["text"].lower()
-        assert "protect by agentshroud" in text
+        assert "protected by agentshroud" in text
         assert ("infrastructure safety guidance" in text) or ("egress and approval guidance" in text)
         assert "this action is not allowed" not in text
 
@@ -2279,7 +3245,7 @@ class TestInboundPipelineOnGetUpdates:
         assert result["result"] == []
         assert len(quarantine) == 0
         text = captured["payload"]["text"].lower()
-        assert "protect by agentshroud" in text
+        assert "protected by agentshroud" in text
         assert ("approval guidance" in text) or ("architecture overview" in text)
         assert "this action is not allowed" not in text
 
@@ -2322,7 +3288,7 @@ class TestInboundPipelineOnGetUpdates:
         assert result["result"] == []
         assert len(quarantine) == 0
         text = captured["payload"]["text"].lower()
-        assert "protect by agentshroud" in text
+        assert "protected by agentshroud" in text
         assert "configuration safety guidance" in text
         assert "this action is not allowed" not in text
 
@@ -2365,7 +3331,7 @@ class TestInboundPipelineOnGetUpdates:
         assert result["result"] == []
         assert len(quarantine) == 0
         text = captured["payload"]["text"].lower()
-        assert "protect by agentshroud" in text
+        assert "protected by agentshroud" in text
         assert ("egress and approval guidance" in text) or ("capability overview" in text)
         assert "this action is not allowed" not in text
 
@@ -2405,7 +3371,7 @@ class TestInboundPipelineOnGetUpdates:
         result = await proxy._filter_inbound_updates(response)
         assert result["result"] == []
         text = captured["payload"]["text"].lower()
-        assert "protect by agentshroud" in text
+        assert "protected by agentshroud" in text
         assert "approval" in text
 
     @pytest.mark.asyncio
@@ -2567,7 +3533,7 @@ class TestInboundPipelineOnGetUpdates:
         result = await proxy._filter_inbound_updates(response)
         assert result["result"] == []
         text = captured["payload"]["text"].lower()
-        assert "protect by agentshroud" in text
+        assert "protected by agentshroud" in text
         assert "rate limit reached" in text
         assert "retry in about" in text
 
@@ -2609,8 +3575,8 @@ class TestInboundPipelineOnGetUpdates:
         assert called["user_id"] == collaborator_id
 
     @pytest.mark.asyncio
-    async def test_collaborator_rate_limit_notice_is_cooldown_deduped(self, monkeypatch):
-        """Repeated rate-limited messages in cooldown window should send one notice."""
+    async def test_collaborator_rate_limit_notice_is_sent_for_each_limited_message(self, monkeypatch):
+        """Repeated rate-limited messages should each receive a deterministic notice."""
         from gateway.ingest_api.auth import RateLimiter
         from gateway.ingest_api import state as state_module
 
@@ -2648,8 +3614,9 @@ class TestInboundPipelineOnGetUpdates:
         result = await proxy._filter_inbound_updates(response)
         assert result["result"] == []
         assert len(quarantine) == 2
-        assert len(calls) == 1
+        assert len(calls) == 2
         assert calls[0] == (chat_id, collaborator_id)
+        assert calls[1] == (chat_id, collaborator_id)
 
     @pytest.mark.asyncio
     async def test_collaborator_rate_limit_notice_retries_next_message_when_send_fails(self, monkeypatch):
@@ -2741,6 +3708,45 @@ class TestInboundPipelineOnGetUpdates:
 
         sent = await proxy._send_rate_limit_notice(7614658040, user_id="7614658040")
         assert sent is False
+
+    @pytest.mark.asyncio
+    async def test_send_telegram_text_honors_retry_after_on_http_429(self, monkeypatch):
+        """_send_telegram_text should honor Telegram retry_after when rate limited."""
+        proxy = TelegramAPIProxy(pipeline=PassthroughPipeline())
+        proxy._bot_token = "test-token"
+
+        class DummyResponse:
+            pass
+
+        calls = {"count": 0}
+        slept: list[float] = []
+
+        async def fake_sleep(seconds):
+            slept.append(seconds)
+            return None
+
+        def fake_urlopen(req, timeout=None, context=None):
+            calls["count"] += 1
+            if calls["count"] == 1:
+                body = io.BytesIO(
+                    b'{"ok":false,"error_code":429,"description":"Too Many Requests","parameters":{"retry_after":2}}'
+                )
+                raise urllib.error.HTTPError(
+                    req.full_url,
+                    429,
+                    "Too Many Requests",
+                    hdrs=None,
+                    fp=body,
+                )
+            return DummyResponse()
+
+        monkeypatch.setattr(asyncio, "sleep", fake_sleep)
+        monkeypatch.setattr(urllib.request, "urlopen", fake_urlopen)
+
+        sent = await proxy._send_telegram_text(7614658040, "hello", retries=2)
+        assert sent is True
+        assert calls["count"] == 2
+        assert slept and slept[0] >= 2
 
     @pytest.mark.asyncio
     async def test_collaborator_tool_trace_request_is_blocked_and_quarantined(self, monkeypatch):
@@ -3360,6 +4366,88 @@ class TestInboundPipelineOnGetUpdates:
 
         assert result["result"] == []
         assert "healthcheck" in captured["payload"]["text"].lower()
+
+    @pytest.mark.asyncio
+    async def test_collaborator_status_is_handled_locally(self, monkeypatch):
+        """Collaborator /status should be handled by gateway with protected status response."""
+        from gateway.ingest_api import state as state_module
+
+        captured: dict[str, Any] = {}
+
+        class DummyResponse:
+            pass
+
+        def fake_urlopen(req, timeout=None, context=None):
+            captured["payload"] = json.loads(req.data.decode())
+            return DummyResponse()
+
+        monkeypatch.setattr(urllib.request, "urlopen", fake_urlopen)
+        monkeypatch.setattr(
+            state_module,
+            "app_state",
+            SimpleNamespace(collaborator_tracker=None),
+        )
+
+        collaborator_id = "7614658040"
+        proxy = TelegramAPIProxy(pipeline=PassthroughPipeline())
+        proxy._rbac = FakeRBAC(owner_id="8096968754", collaborators=[collaborator_id])
+        proxy._bot_token = "test-token"
+
+        response = _wrap_response(
+            _make_update("/status", user_id=collaborator_id, chat_id=int(collaborator_id))
+        )
+        result = await proxy._filter_inbound_updates(response)
+
+        assert result["result"] == []
+        text = captured["payload"]["text"]
+        assert text.startswith("🛡️ Protected by AgentShroud\n\n")
+        assert "collaborator session status" in text.lower()
+
+    @pytest.mark.asyncio
+    async def test_owner_status_is_handled_locally(self, monkeypatch):
+        """Owner /status should be handled by gateway with operational summary."""
+        from gateway.ingest_api import state as state_module
+
+        captured: dict[str, Any] = {}
+
+        class DummyResponse:
+            pass
+
+        def fake_urlopen(req, timeout=None, context=None):
+            captured["payload"] = json.loads(req.data.decode())
+            return DummyResponse()
+
+        monkeypatch.setattr(urllib.request, "urlopen", fake_urlopen)
+        monkeypatch.setattr(
+            state_module,
+            "app_state",
+            SimpleNamespace(collaborator_tracker=None),
+        )
+
+        owner_id = "8096968754"
+        proxy = TelegramAPIProxy(pipeline=PassthroughPipeline())
+        proxy._rbac = FakeRBAC(owner_id=owner_id, collaborators=["7614658040"])
+        proxy._bot_token = "test-token"
+        proxy._pending_collaborator_requests["3333333333"] = {
+            "user_id": "3333333333",
+            "chat_id": "3333333333",
+            "username": "new",
+            "requested_at": time.time(),
+            "expires_at": time.time() + 120,
+        }
+        proxy._runtime_revoked_collaborators.add("4444444444")
+
+        response = _wrap_response(
+            _make_update("/status", user_id=owner_id, chat_id=int(owner_id))
+        )
+        result = await proxy._filter_inbound_updates(response)
+
+        assert result["result"] == []
+        text = captured["payload"]["text"].lower()
+        assert "agentshroud status" in text
+        assert "active collaborators: 1" in text
+        assert "pending approvals: 1" in text
+        assert "revoked users: 1" in text
 
     @pytest.mark.asyncio
     async def test_model_status_command_is_handled_locally(self, monkeypatch):
@@ -4449,7 +5537,7 @@ class TestInboundPipelineOnGetUpdates:
 
     @pytest.mark.asyncio
     async def test_non_owner_url_triggers_egress_preflight_approval(self, monkeypatch):
-        """Non-owner messages containing URLs should queue egress preflight approval."""
+        """Collaborator URL requests should queue owner-scoped approval checks."""
         from gateway.ingest_api import state as state_module
 
         called: dict[str, Any] = {}
@@ -4480,7 +5568,7 @@ class TestInboundPipelineOnGetUpdates:
         await asyncio.sleep(0)
 
         assert called["tool_name"] == "web_fetch"
-        assert called["agent_id"] == "telegram_web_fetch:7614658040"
+        assert called["agent_id"] == "telegram_web_fetch:8096968754"
         assert called["destination"] == "https://weather.com"
         assert called["port"] == 443
 
@@ -4708,7 +5796,7 @@ class TestInboundPipelineOnGetUpdates:
 
     @pytest.mark.asyncio
     async def test_non_owner_mixed_scheme_prefers_http_url_for_egress_preflight(self, monkeypatch):
-        """If both ftp and https URLs exist, https target should still queue approval."""
+        """Collaborator messages must not queue preflight approval even with valid https targets."""
         from gateway.ingest_api import state as state_module
 
         called: dict[str, Any] = {}
@@ -4738,12 +5826,11 @@ class TestInboundPipelineOnGetUpdates:
         await proxy._filter_inbound_updates(response)
         await asyncio.sleep(0)
 
-        assert called["destination"] == "https://weather.com"
-        assert called["tool_name"] == "web_fetch"
+        assert called == {}
 
     @pytest.mark.asyncio
     async def test_non_owner_non_http_url_does_not_suppress_separate_bare_domain_preflight(self, monkeypatch):
-        """ftp/file URL tokens should not block bare-domain preflight extraction."""
+        """Collaborator messages with ftp/file+domain tokens must not queue preflight approvals."""
         from gateway.ingest_api import state as state_module
 
         called: dict[str, Any] = {}
@@ -4773,8 +5860,7 @@ class TestInboundPipelineOnGetUpdates:
         await proxy._filter_inbound_updates(response)
         await asyncio.sleep(0)
 
-        assert called["destination"] == "https://weather.com"
-        assert called["tool_name"] == "web_fetch"
+        assert called == {}
 
     @pytest.mark.asyncio
     async def test_non_owner_userinfo_url_does_not_queue_egress_preflight(self, monkeypatch):
@@ -5466,8 +6552,8 @@ class TestInboundPipelineOnGetUpdates:
         assert called["tool_name"] == "web_fetch"
 
     @pytest.mark.asyncio
-    async def test_rate_limit_notice_mentions_200_per_hour(self, monkeypatch):
-        """Rate-limit notice must match configured 200/hour policy."""
+    async def test_rate_limit_notice_mentions_configured_limit(self, monkeypatch):
+        """Rate-limit notice must reflect configured collaborator limit."""
         captured: dict[str, Any] = {}
 
         class DummyResponse:
@@ -5484,8 +6570,18 @@ class TestInboundPipelineOnGetUpdates:
         await proxy._send_rate_limit_notice(chat_id=12345)
 
         text = captured["payload"]["text"]
-        assert "200 messages/hour" in text
-        assert "20 messages/hour" not in text
+        assert f"{proxy._collaborator_rate_limiter.max_requests} messages/hour" in text
+        assert "protected by agentshroud" in text.lower()
+        assert text.startswith("🛡️ Protected by AgentShroud\n\n")
+        assert "protected by agentshroud" in text.lower()
+
+    def test_collaborator_rate_limiter_defaults_to_5000_per_hour(self, monkeypatch):
+        """Default collaborator limiter should use 5000 msgs/hour unless overridden."""
+        monkeypatch.delenv("AGENTSHROUD_COLLAB_RATE_LIMIT_MAX_REQUESTS", raising=False)
+        monkeypatch.delenv("AGENTSHROUD_COLLAB_RATE_LIMIT_WINDOW_SECONDS", raising=False)
+        proxy = TelegramAPIProxy()
+        assert proxy._collaborator_rate_limiter.max_requests == 5000
+        assert proxy._collaborator_rate_limiter.window_seconds == 3600
 
     @pytest.mark.asyncio
     async def test_block_notice_sent_without_markdown_parse_mode(self, monkeypatch):
@@ -5510,7 +6606,50 @@ class TestInboundPipelineOnGetUpdates:
 
         payload = captured["payload"]
         assert "parse_mode" not in payload
-        assert payload["text"].startswith("🛡️ Protect by AgentShroud")
+        assert payload["text"].startswith("🛡️ Protected by AgentShroud")
+
+    @pytest.mark.asyncio
+    async def test_notify_user_blocked_uses_collaborator_fallback_when_send_fails(self, monkeypatch):
+        """Collaborator block notice should retry with deterministic unavailable fallback on send failure."""
+        sent_messages: list[str] = []
+
+        async def fake_send(chat_id: int, text: str, **kwargs):
+            sent_messages.append(text)
+            # First attempt fails, fallback succeeds.
+            return len(sent_messages) > 1
+
+        proxy = TelegramAPIProxy()
+        proxy._bot_token = "test-token"
+        monkeypatch.setattr(proxy, "_send_telegram_text", fake_send)
+
+        await proxy._notify_user_blocked(chat_id=12345, reason="PromptGuard: blocked")
+
+        assert len(sent_messages) == 2
+        assert sent_messages[0].startswith("🛡️ Protected by AgentShroud")
+        assert sent_messages[1].startswith("🛡️ Protected by AgentShroud")
+        assert "i can't do that right now" in sent_messages[1].lower()
+
+    @pytest.mark.asyncio
+    async def test_notify_user_blocked_uses_owner_fallback_when_send_fails(self, monkeypatch):
+        """Owner block notice should retry with owner-specific fallback when first send fails."""
+        sent_messages: list[str] = []
+
+        async def fake_send(chat_id: int, text: str, **kwargs):
+            sent_messages.append(text)
+            # First attempt fails, fallback succeeds.
+            return len(sent_messages) > 1
+
+        owner_id = "8096968754"
+        proxy = TelegramAPIProxy()
+        proxy._rbac = FakeRBAC(owner_id=owner_id, collaborators=["7614658040"])
+        proxy._bot_token = "test-token"
+        monkeypatch.setattr(proxy, "_send_telegram_text", fake_send)
+
+        await proxy._notify_user_blocked(chat_id=int(owner_id), reason="PromptGuard: blocked")
+
+        assert len(sent_messages) == 2
+        assert sent_messages[0].startswith("⚠️ Message Blocked")
+        assert sent_messages[1].startswith("⚠️ AgentShroud notice unavailable.")
 
 
 class TestCommandTokenNormalization:
@@ -6104,26 +7243,110 @@ class TestCollaboratorPromptClassifiers:
         retry_after = proxy._collaborator_rate_limit_retry_after_seconds(user_id)
         assert 1 <= retry_after <= 3600
 
+    @pytest.mark.asyncio
+    async def test_collaborator_safe_info_response_retries_with_unavailable_notice_on_send_failure(self):
+        proxy = TelegramAPIProxy(pipeline=PassthroughPipeline())
+        proxy._bot_token = "test-token"
+        calls: list[str] = []
+
+        async def fake_send(chat_id, text, *, parse_mode=None, retries=3):
+            calls.append(text)
+            return len(calls) > 1
+
+        proxy._send_telegram_text = fake_send  # type: ignore[assignment]
+        await proxy._send_collaborator_safe_info_response(12345, "How does authentication work?")
+
+        assert len(calls) == 2
+        assert "secure collaboration guidance" in calls[0].lower()
+        assert "i can't do that right now" in calls[1].lower()
+
+    @pytest.mark.asyncio
+    async def test_notify_collaborator_command_blocked_retries_with_unavailable_notice_on_send_failure(self):
+        proxy = TelegramAPIProxy(pipeline=PassthroughPipeline())
+        proxy._bot_token = "test-token"
+        calls: list[str] = []
+
+        async def fake_send(chat_id, text, *, parse_mode=None, retries=3):
+            calls.append(text)
+            return len(calls) > 1
+
+        proxy._send_telegram_text = fake_send  # type: ignore[assignment]
+        await proxy._notify_collaborator_command_blocked(12345, "restricted-command")
+
+        assert len(calls) == 2
+        assert "protected by agentshroud" in calls[0].lower()
+        assert "i can't do that right now" in calls[1].lower()
+
+    @pytest.mark.asyncio
+    async def test_local_whoami_collaborator_uses_unavailable_fallback_on_send_failure(self):
+        proxy = TelegramAPIProxy(pipeline=PassthroughPipeline())
+        proxy._bot_token = "test-token"
+        calls: list[str] = []
+
+        async def fake_send(chat_id, text, *, parse_mode=None, retries=3):
+            calls.append(text)
+            return len(calls) > 1
+
+        proxy._send_telegram_text = fake_send  # type: ignore[assignment]
+        await proxy._send_local_whoami_notice(
+            12345,
+            user_id="7614658040",
+            is_owner=False,
+            username="tester",
+        )
+
+        assert len(calls) == 2
+        assert "collaborator identity" in calls[0].lower()
+        assert "i can't do that right now" in calls[1].lower()
+
+    @pytest.mark.asyncio
+    async def test_local_whoami_owner_uses_owner_fallback_on_send_failure(self):
+        proxy = TelegramAPIProxy(pipeline=PassthroughPipeline())
+        proxy._bot_token = "test-token"
+        calls: list[str] = []
+
+        async def fake_send(chat_id, text, *, parse_mode=None, retries=3):
+            calls.append(text)
+            return len(calls) > 1
+
+        proxy._send_telegram_text = fake_send  # type: ignore[assignment]
+        await proxy._send_local_whoami_notice(
+            12345,
+            user_id="8096968754",
+            is_owner=True,
+            username="owner",
+        )
+
+        assert len(calls) == 2
+        assert "agentshroud identity" in calls[0].lower()
+        assert "local command notice unavailable" in calls[1].lower()
+
     def test_collaborator_safe_notice_maps_metadata_probe_to_secret_notice(self):
         notice = TelegramAPIProxy._collaborator_safe_notice(
             "Blocked collaborator metadata-endpoint probe"
         ).lower()
-        assert "protect by agentshroud" in notice
+        assert "protected by agentshroud" in notice
         assert "sensitive credentials/secrets" in notice
 
     def test_collaborator_safe_notice_maps_internal_network_probe_to_egress_notice(self):
         notice = TelegramAPIProxy._collaborator_safe_notice(
             "Blocked collaborator internal-network probe"
         ).lower()
-        assert "protect by agentshroud" in notice
+        assert "protected by agentshroud" in notice
         assert "external access requires approval" in notice
 
     def test_collaborator_safe_notice_maps_obfuscated_probe_to_scope_notice(self):
         notice = TelegramAPIProxy._collaborator_safe_notice(
             "Blocked collaborator obfuscated-command probe"
         ).lower()
-        assert "protect by agentshroud" in notice
+        assert "protected by agentshroud" in notice
         assert "system concepts and recommendations" in notice
+
+    def test_collaborator_safe_notice_uses_canonical_header_with_blank_line(self):
+        """Collaborator-safe notices must use the canonical protected header format."""
+        notice = TelegramAPIProxy._collaborator_safe_notice("blocked command")
+        assert notice.startswith("🛡️ Protected by AgentShroud\n\n")
+        assert "Protect by AgentShroud" not in notice
 
     def test_looks_like_identity_enumeration_query_detects_owner_id_probe(self):
         assert (

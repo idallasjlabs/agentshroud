@@ -1,8 +1,36 @@
 # 🛡️ AgentShroud Release Plan
 
 **Created:** 2026-03-04
-**Last Updated:** 2026-03-04 12:16 UTC
+**Last Updated:** 2026-03-14
 **Related:** docs/planning/MASTER-FEATURE-LIST.md (232 items total)
+
+---
+
+## Current Execution Tracker (2026-03-14)
+
+This section tracks the **active execution state** for v0.8.0 closure and v0.9.0 code-only rollout.
+
+### Live tracker files
+- v0.8.0 draft execution summary:
+  - `docs/planning/v0.8.0-execution-summary-draft.md`
+- Remaining tranche checklist + per-tranche verification:
+  - `remaining-code-only-tranches.md`
+
+### Current status snapshot
+
+| Track | Status | Verification Basis |
+|---|---|---|
+| v0.8.0 baseline delivery | Documented complete baseline | `docs/v0.8.0-feature-list-final.md`, phase-review artifacts |
+| v0.8.0 stabilization hardening | In progress | Telegram proxy inbound/outbound test suites + security assessment passes |
+| v0.9.0 code-only plan | In progress | Remaining tranches tracked in `remaining-code-only-tranches.md` |
+| External infra/ops actions | Deferred | Explicitly excluded from current code-only tranche execution |
+
+### Current hard gate
+Every tranche must satisfy all of:
+1. Targeted tests for touched behaviors pass.
+2. Full Telegram gateway suites pass with no failures/skips.
+3. Manual Telegram role-behavior checks pass (owner vs collaborator).
+4. Security assessment report shows deterministic response behavior (no silent collaborator drops for tested prompts).
 
 ---
 
