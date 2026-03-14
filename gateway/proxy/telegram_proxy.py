@@ -185,6 +185,15 @@ _KNOWN_COLLABORATOR_ALIASES: dict[str, str] = {
 }
 
 
+def _read_secret_static(name: str, default: str = "") -> str:
+    """Read a Docker secret from /run/secrets/<name> (module-level helper, no deps)."""
+    try:
+        with open(f"/run/secrets/{name}", "r") as _f:
+            return _f.read().strip()
+    except (FileNotFoundError, OSError):
+        return default
+
+
 class TelegramAPIProxy:
     """Proxies Telegram Bot API calls through the security pipeline."""
 
@@ -202,7 +211,12 @@ class TelegramAPIProxy:
             "inbound_updates_forwarded": 0,
             "inbound_updates_dropped": 0,
         }
-        self._bot_token = os.environ.get("TELEGRAM_BOT_TOKEN", "")
+        # Read token from env var; fall back to Docker secret so gateway container
+        # can send local command responses even without TELEGRAM_BOT_TOKEN in env.
+        self._bot_token = (
+            os.environ.get("TELEGRAM_BOT_TOKEN", "")
+            or _read_secret_static("telegram_bot_token")
+        )
         self._ssl_context = ssl.create_default_context()
         self._max_outbound_chars = int(os.environ.get("AGENTSHROUD_MAX_OUTBOUND_CHARS", "3800"))
         self._block_cascade_seconds = float(os.environ.get("AGENTSHROUD_BLOCK_CASCADE_SECONDS", "4.0"))
@@ -367,7 +381,7 @@ class TelegramAPIProxy:
             return
         now = time.time()
         owner_id = str(getattr(self._rbac, "owner_user_id", "")).strip()
-        if not owner_id:
+        if not owner_id or not owner_id.isdigit():
             return
         pending = self._pending_collaborator_requests.get(str(user_id))
         if pending and float(pending.get("expires_at", 0.0)) > now:
