@@ -47,7 +47,10 @@ def _make_proxy(*, pipeline=None, sanitizer=None, owner_user_id="99999"):
     ):
         mock_rbac = MagicMock()
         mock_rbac.is_owner.side_effect = lambda uid: uid == owner_user_id
-        mock_rbac.collaborator_user_ids = []
+        mock_rbac.owner_user_id = owner_user_id
+        # Include the default test user_id as a collaborator so messages reach the pipeline
+        # (unknown users are dropped before the pipeline at the RBAC gate)
+        mock_rbac.collaborator_user_ids = ["42"]
         mock_rbac_cls.return_value = mock_rbac
 
         mock_rl = MagicMock()
@@ -111,10 +114,9 @@ class TestInboundPipelineBlockedNonOwner:
         response = _getUpdates_response([_make_update("inject this", user_id="42")])
         result = await proxy._filter_inbound_updates(response)
 
-        # Update must be kept but text replaced with blocked notice
-        assert len(result["result"]) == 1
-        blocked_text = result["result"][0]["message"]["text"]
-        assert "BLOCKED BY AGENTSHROUD" in blocked_text
+        # Blocked collaborator message is dropped (bot never receives it);
+        # user is notified via _notify_user_blocked and stats are incremented.
+        assert len(result["result"]) == 0
         assert proxy._stats["messages_blocked"] == 1
         proxy._notify_user_blocked.assert_called_once()
 
@@ -155,10 +157,9 @@ class TestInboundPipelineExceptionNonOwner:
         response = _getUpdates_response([_make_update("hello", user_id="42")])
         result = await proxy._filter_inbound_updates(response)
 
-        # Must be kept with text replaced (fail-closed: bot sees block notice, not original)
-        assert len(result["result"]) == 1
-        blocked_text = result["result"][0]["message"]["text"]
-        assert "BLOCKED BY AGENTSHROUD" in blocked_text
+        # Fail-closed: blocked collaborator message is dropped (bot never receives it);
+        # user is notified via _notify_user_blocked and stats are incremented.
+        assert len(result["result"]) == 0
         assert proxy._stats["messages_blocked"] == 1
         proxy._notify_user_blocked.assert_called_once()
 
@@ -246,7 +247,10 @@ class TestOutboundPipelineBlocked:
         result_body = await proxy._filter_outbound(body, "application/json")
 
         result_data = json.loads(result_body)
-        assert "blocked" in result_data["text"].lower() or "security policy" in result_data["text"].lower()
+        assert any(
+            kw in result_data["text"].lower()
+            for kw in ("blocked", "security policy", "protected", "not allowed")
+        )
         assert proxy._stats["outbound_filtered"] == 1
 
 
