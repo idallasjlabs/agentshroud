@@ -7355,3 +7355,132 @@ class TestCollaboratorPromptClassifiers:
             )
             is True
         )
+
+
+# ── Stranger rate limit tests ─────────────────────────────────────────────────
+
+class TestStrangerRateLimit:
+    """Unknown/unapproved users have stricter rate limits than collaborators.
+
+    After exhausting their access-request quota the stranger must receive a
+    rate-limit notice (with reset time) instead of a new pending-approval
+    notice, and no owner notification must be sent.
+    """
+
+    @pytest.mark.asyncio
+    async def test_stranger_within_limit_triggers_approval_workflow(self, monkeypatch):
+        """First message from unknown user (within limit) queues approval flow."""
+        payloads: list[tuple[int, str]] = []
+        proxy = TelegramAPIProxy(pipeline=PassthroughPipeline())
+        proxy._rbac = FakeRBAC(owner_id="8096968754", collaborators=[])
+        proxy._bot_token = "test-token"
+        # Generous limit so first message always passes
+        proxy._stranger_rate_limiter.max_requests = 10
+
+        async def fake_owner_notice(chat_id: int, message: str):
+            payloads.append(("owner", chat_id, message))
+
+        async def fake_pending_notice(chat_id: int):
+            payloads.append(("pending", chat_id, "pending"))
+
+        monkeypatch.setattr(proxy, "_send_owner_admin_notice", fake_owner_notice)
+        monkeypatch.setattr(proxy, "_send_collaborator_pending_notice", fake_pending_notice)
+
+        response = _wrap_response(_make_update("hello", user_id="5555555555", chat_id=5555555555))
+        result = await proxy._filter_inbound_updates(response)
+
+        assert result["result"] == []
+        # Both owner and requester notified
+        kinds = [p[0] for p in payloads]
+        assert "owner" in kinds
+        assert "pending" in kinds
+
+    @pytest.mark.asyncio
+    async def test_stranger_exceeding_limit_gets_rate_limit_notice_not_owner_notice(self, monkeypatch):
+        """Once stranger exhausts rate limit, they get a rate-limit notice; owner is NOT notified."""
+        owner_notices: list = []
+        rl_notices: list = []
+        proxy = TelegramAPIProxy(pipeline=PassthroughPipeline())
+        proxy._rbac = FakeRBAC(owner_id="8096968754", collaborators=[])
+        proxy._bot_token = "test-token"
+        # Exhaust limit immediately
+        proxy._stranger_rate_limiter.max_requests = 0
+
+        async def fake_owner_notice(chat_id: int, message: str):
+            owner_notices.append((chat_id, message))
+
+        async def fake_rl_notice(chat_id: int, user_id=None):
+            rl_notices.append(chat_id)
+            return True
+
+        monkeypatch.setattr(proxy, "_send_owner_admin_notice", fake_owner_notice)
+        monkeypatch.setattr(proxy, "_send_stranger_rate_limit_notice", fake_rl_notice)
+
+        response = _wrap_response(_make_update("hello", user_id="5555555555", chat_id=5555555555))
+        result = await proxy._filter_inbound_updates(response)
+
+        assert result["result"] == []
+        assert owner_notices == [], "Owner must NOT be notified when stranger is rate-limited"
+        assert rl_notices == [5555555555], "Stranger must receive a rate-limit notice"
+
+    @pytest.mark.asyncio
+    async def test_stranger_rate_limit_cooldown_suppresses_repeated_notices(self, monkeypatch):
+        """Repeated rate-limited messages within the cooldown window send at most one notice."""
+        rl_notices: list = []
+        proxy = TelegramAPIProxy(pipeline=PassthroughPipeline())
+        proxy._rbac = FakeRBAC(owner_id="8096968754", collaborators=[])
+        proxy._bot_token = "test-token"
+        proxy._stranger_rate_limiter.max_requests = 0
+        # Set a very long cooldown so the second message is still within it
+        proxy._rate_limit_notice_cooldown_seconds = 9999.0
+
+        async def fake_rl_notice(chat_id: int, user_id=None):
+            rl_notices.append(chat_id)
+            return True
+
+        monkeypatch.setattr(proxy, "_send_owner_admin_notice", lambda *a, **kw: None)
+        monkeypatch.setattr(proxy, "_send_stranger_rate_limit_notice", fake_rl_notice)
+
+        resp1 = _wrap_response(_make_update("msg1", user_id="5555555555", chat_id=5555555555, update_id=1))
+        resp2 = _wrap_response(_make_update("msg2", user_id="5555555555", chat_id=5555555555, update_id=2))
+        await proxy._filter_inbound_updates(resp1)
+        await proxy._filter_inbound_updates(resp2)
+
+        assert len(rl_notices) == 1, "Rate-limit notice must be sent at most once per cooldown window"
+
+    @pytest.mark.asyncio
+    async def test_stranger_rate_limit_notice_includes_reset_time(self):
+        """_send_stranger_rate_limit_notice must include a reset time in HH:MM UTC format."""
+        import re
+        import json as _json
+        import unittest.mock as _mock
+
+        sent: list[str] = []
+
+        def fake_urlopen(req, *a, **kw):
+            body = req.data.decode() if hasattr(req, "data") and req.data else ""
+            try:
+                sent.append(_json.loads(body).get("text", ""))
+            except Exception:
+                sent.append(body)
+
+            class FakeResp:
+                def read(self):
+                    return b'{"ok":true}'
+                def __enter__(self):
+                    return self
+                def __exit__(self, *a):
+                    pass
+
+            return FakeResp()
+
+        proxy = TelegramAPIProxy(pipeline=PassthroughPipeline())
+        proxy._rbac = FakeRBAC(owner_id="8096968754", collaborators=[])
+        proxy._bot_token = "test-token"
+
+        with _mock.patch("urllib.request.urlopen", side_effect=fake_urlopen):
+            await proxy._send_stranger_rate_limit_notice(5555555555, user_id="5555555555")
+
+        assert len(sent) == 1, f"Expected 1 message sent, got {len(sent)}"
+        assert re.search(r"\d{2}:\d{2} UTC", sent[0]), f"Reset time not found in: {sent[0]}"
+        assert "rate limit" in sent[0].lower() or "access request" in sent[0].lower()
