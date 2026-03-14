@@ -116,7 +116,7 @@ class TestOutboundPipelineIntegration:
         result = await proxy._filter_outbound(body, "application/json")
         result_data = json.loads(result)
 
-        assert "protect by agentshroud" in result_data["text"].lower(),             "Non-owner messages must be blocked when pipeline crashes"
+        assert "protected by agentshroud" in result_data["text"].lower(),             "Non-owner messages must be blocked when pipeline crashes"
         assert "Some response with secrets" not in result_data["text"],             "Original content must not leak through on pipeline crash"
 
     @pytest.mark.asyncio
@@ -157,7 +157,7 @@ class TestOutboundPipelineIntegration:
 
         result = await proxy._filter_outbound(body, "application/json")
         result_data = json.loads(result)
-        assert "protect by agentshroud" in result_data["text"].lower()
+        assert "protected by agentshroud" in result_data["text"].lower()
 
     @pytest.mark.asyncio
     async def test_long_outbound_message_quarantined(self, monkeypatch):
@@ -202,7 +202,7 @@ class TestOutboundPipelineIntegration:
 
         result = await proxy._filter_outbound(body, "application/json")
         result_data = json.loads(result)
-        assert "protect by agentshroud" in result_data["text"].lower()
+        assert "protected by agentshroud" in result_data["text"].lower()
 
     @pytest.mark.asyncio
     async def test_block_cascade_blocks_followup_fragment(self):
@@ -215,12 +215,12 @@ class TestOutboundPipelineIntegration:
         # First chunk triggers over-length block and starts cascade window.
         first = json.dumps({"chat_id": chat_id, "text": "X" * 20}).encode()
         first_result = json.loads(await proxy._filter_outbound(first, "application/json"))
-        assert "protect by agentshroud" in first_result["text"].lower()
+        assert "protected by agentshroud" in first_result["text"].lower()
 
         # Second small chunk should still be blocked during cascade window.
         second = json.dumps({"chat_id": chat_id, "text": "ok"}).encode()
         second_result = json.loads(await proxy._filter_outbound(second, "application/json"))
-        assert "protect by agentshroud" in second_result["text"].lower()
+        assert "protected by agentshroud" in second_result["text"].lower()
 
     @pytest.mark.asyncio
     async def test_markdown_exfil_link_scrubbed(self):
@@ -270,7 +270,7 @@ class TestOutboundPipelineIntegration:
         ).encode()
         result = json.loads(await proxy._filter_outbound(body, "application/json"))
         assert "sessions_spawn" not in result["text"]
-        assert "protect by agentshroud" in result["text"].lower()
+        assert "protected by agentshroud" in result["text"].lower()
 
     @pytest.mark.asyncio
     async def test_raw_tool_call_json_with_zero_width_chars_is_suppressed(self):
@@ -284,7 +284,7 @@ class TestOutboundPipelineIntegration:
         ).encode()
         result = json.loads(await proxy._filter_outbound(body, "application/json"))
         assert "sessions_spawn" not in result["text"]
-        assert "protect by agentshroud" in result["text"].lower()
+        assert "protected by agentshroud" in result["text"].lower()
 
     @pytest.mark.asyncio
     async def test_no_reply_tool_token_is_rewritten_to_wait_message(self):
@@ -323,7 +323,7 @@ class TestOutboundPipelineIntegration:
             }
         ).encode()
         result = json.loads(await proxy._filter_outbound(body, "application/json"))
-        assert "protect by agentshroud" in result["text"].lower()
+        assert "protected by agentshroud" in result["text"].lower()
         assert "can't do that right now" in result["text"].lower()
 
     @pytest.mark.asyncio
@@ -417,7 +417,7 @@ class TestOutboundPipelineIntegration:
             }
         ).encode()
         result = json.loads(await proxy._filter_outbound(body, "application/json"))
-        assert "protect by agentshroud" in result["text"].lower()
+        assert "protected by agentshroud" in result["text"].lower()
         assert "command/tool execution details are restricted" in result["text"].lower()
         assert "not authorized to use this command" not in result["text"].lower()
 
@@ -433,7 +433,7 @@ class TestOutboundPipelineIntegration:
         ).encode()
         result = await proxy._filter_outbound(body, "application/x-www-form-urlencoded")
         parsed = dict(urllib.parse.parse_qsl(result.decode(), keep_blank_values=True))
-        assert "protect by agentshroud" in parsed.get("text", "").lower()
+        assert "protected by agentshroud" in parsed.get("text", "").lower()
         assert "not authorized to use this command" not in parsed.get("text", "").lower()
 
     @pytest.mark.asyncio
@@ -447,7 +447,7 @@ class TestOutboundPipelineIntegration:
             }
         ).encode()
         result = json.loads(await proxy._filter_outbound(body, "application/json"))
-        assert "protect by agentshroud" in result["text"].lower()
+        assert "protected by agentshroud" in result["text"].lower()
         assert "can't do that right now" in result["text"].lower()
         assert "internal adapter fault" not in result["text"].lower()
 
@@ -463,7 +463,7 @@ class TestOutboundPipelineIntegration:
         ).encode()
         result = await proxy._filter_outbound(body, "application/x-www-form-urlencoded")
         parsed = dict(urllib.parse.parse_qsl(result.decode(), keep_blank_values=True))
-        assert "protect by agentshroud" in parsed.get("text", "").lower()
+        assert "protected by agentshroud" in parsed.get("text", "").lower()
         assert "can't do that right now" in parsed.get("text", "").lower()
         assert "internal adapter fault" not in parsed.get("text", "").lower()
 
@@ -478,7 +478,7 @@ class TestOutboundPipelineIntegration:
             }
         ).encode()
         result = json.loads(await proxy._filter_outbound(body, "application/json"))
-        assert "protect by agentshroud" in result["text"].lower()
+        assert "protected by agentshroud" in result["text"].lower()
         assert "[agentshroud:" not in result["text"].lower()
 
     @pytest.mark.asyncio
@@ -493,12 +493,12 @@ class TestOutboundPipelineIntegration:
         ).encode()
         result = await proxy._filter_outbound(body, "application/x-www-form-urlencoded")
         parsed = dict(urllib.parse.parse_qsl(result.decode(), keep_blank_values=True))
-        assert "protect by agentshroud" in parsed.get("text", "").lower()
+        assert "protected by agentshroud" in parsed.get("text", "").lower()
         assert "[blocked by agentshroud:" not in parsed.get("text", "").lower()
 
     @pytest.mark.asyncio
     async def test_collaborator_legacy_protected_prefix_is_normalized_json(self):
-        """Legacy 'Protected by AgentShroud' wording should normalize to 'Protect'."""
+        """Legacy 'Protected by AgentShroud' wording should normalize to canonical protected header."""
         proxy = TelegramAPIProxy(sanitizer=_make_sanitizer())
         body = json.dumps(
             {
@@ -507,12 +507,12 @@ class TestOutboundPipelineIntegration:
             }
         ).encode()
         result = json.loads(await proxy._filter_outbound(body, "application/json"))
-        assert "protect by agentshroud" in result["text"].lower()
-        assert "protected by agentshroud" not in result["text"].lower()
+        assert "protected by agentshroud" in result["text"].lower()
+        assert result["text"].startswith("🛡️ Protected by AgentShroud\n\n")
 
     @pytest.mark.asyncio
     async def test_collaborator_legacy_protected_prefix_is_normalized_form(self):
-        """Form payload legacy 'Protected' wording should normalize to 'Protect'."""
+        """Form payload legacy 'Protected' wording should normalize to canonical protected header."""
         proxy = TelegramAPIProxy(sanitizer=_make_sanitizer())
         body = urllib.parse.urlencode(
             {
@@ -522,8 +522,8 @@ class TestOutboundPipelineIntegration:
         ).encode()
         result = await proxy._filter_outbound(body, "application/x-www-form-urlencoded")
         parsed = dict(urllib.parse.parse_qsl(result.decode(), keep_blank_values=True))
-        assert "protect by agentshroud" in parsed.get("text", "").lower()
-        assert "protected by agentshroud" not in parsed.get("text", "").lower()
+        assert "protected by agentshroud" in parsed.get("text", "").lower()
+        assert parsed.get("text", "").startswith("🛡️ Protected by AgentShroud\n\n")
 
     @pytest.mark.asyncio
     async def test_collaborator_internal_tool_output_suppressed_notice_is_normalized_json(self):
@@ -536,7 +536,7 @@ class TestOutboundPipelineIntegration:
             }
         ).encode()
         result = json.loads(await proxy._filter_outbound(body, "application/json"))
-        assert "protect by agentshroud" in result["text"].lower()
+        assert "protected by agentshroud" in result["text"].lower()
         assert "internal tool-call output suppressed" not in result["text"].lower()
 
     @pytest.mark.asyncio
@@ -551,7 +551,7 @@ class TestOutboundPipelineIntegration:
         ).encode()
         result = await proxy._filter_outbound(body, "application/x-www-form-urlencoded")
         parsed = dict(urllib.parse.parse_qsl(result.decode(), keep_blank_values=True))
-        assert "protect by agentshroud" in parsed.get("text", "").lower()
+        assert "protected by agentshroud" in parsed.get("text", "").lower()
         assert "internal tool-call output suppressed" not in parsed.get("text", "").lower()
 
     @pytest.mark.asyncio
@@ -565,7 +565,7 @@ class TestOutboundPipelineIntegration:
             }
         ).encode()
         result = json.loads(await proxy._filter_outbound(body, "application/json"))
-        assert "protect by agentshroud" in result["text"].lower()
+        assert "protected by agentshroud" in result["text"].lower()
         assert "210.00" not in result["text"]
         assert "threshold" not in result["text"].lower()
 
@@ -581,7 +581,7 @@ class TestOutboundPipelineIntegration:
         ).encode()
         result = await proxy._filter_outbound(body, "application/x-www-form-urlencoded")
         parsed = dict(urllib.parse.parse_qsl(result.decode(), keep_blank_values=True))
-        assert "protect by agentshroud" in parsed.get("text", "").lower()
+        assert "protected by agentshroud" in parsed.get("text", "").lower()
         assert "210.00" not in parsed.get("text", "")
         assert "threshold" not in parsed.get("text", "").lower()
 
@@ -641,7 +641,7 @@ class TestOutboundPipelineIntegration:
         ).encode()
         result = json.loads(await proxy._filter_outbound(body, "application/json"))
         text = result["text"].lower()
-        assert "protect by agentshroud" in text
+        assert "protected by agentshroud" in text
         assert "can't do that right now" in text
         assert "switch_model.sh" not in text
 
@@ -658,7 +658,7 @@ class TestOutboundPipelineIntegration:
         result = await proxy._filter_outbound(body, "application/x-www-form-urlencoded")
         parsed = dict(urllib.parse.parse_qsl(result.decode(), keep_blank_values=True))
         text = parsed.get("text", "").lower()
-        assert "protect by agentshroud" in text
+        assert "protected by agentshroud" in text
         assert "can't do that right now" in text
         assert "switch_model.sh" not in text
 
@@ -885,7 +885,7 @@ class TestOutboundPipelineIntegration:
         ).encode()
         result = json.loads(await proxy._filter_outbound(body, "application/json"))
         assert "multi-turn disclosure" not in result["text"].lower()
-        assert "protect by agentshroud" in result["text"].lower()
+        assert "protected by agentshroud" in result["text"].lower()
 
     @pytest.mark.asyncio
     async def test_collaborator_high_risk_leakage_text_is_normalized(self):
@@ -898,7 +898,7 @@ class TestOutboundPipelineIntegration:
             }
         ).encode()
         result = json.loads(await proxy._filter_outbound(body, "application/json"))
-        assert "protect by agentshroud" in result["text"].lower()
+        assert "protected by agentshroud" in result["text"].lower()
         assert "/etc/hosts" not in result["text"].lower()
 
     @pytest.mark.asyncio
@@ -913,7 +913,7 @@ class TestOutboundPipelineIntegration:
         ).encode()
         result = await proxy._filter_outbound(body, "application/x-www-form-urlencoded")
         parsed = dict(urllib.parse.parse_qsl(result.decode(), keep_blank_values=True))
-        assert "protect by agentshroud" in parsed.get("text", "").lower()
+        assert "protected by agentshroud" in parsed.get("text", "").lower()
         assert "function_calls" not in parsed.get("text", "").lower()
 
     @pytest.mark.asyncio
@@ -927,7 +927,7 @@ class TestOutboundPipelineIntegration:
             }
         ).encode()
         result = json.loads(await proxy._filter_outbound(body, "application/json"))
-        assert "protect by agentshroud" in result["caption"].lower()
+        assert "protected by agentshroud" in result["caption"].lower()
         assert "sessions_spawn" not in result["caption"].lower()
 
     @pytest.mark.asyncio
@@ -942,7 +942,7 @@ class TestOutboundPipelineIntegration:
         ).encode()
         result = await proxy._filter_outbound(body, "application/x-www-form-urlencoded")
         parsed = dict(urllib.parse.parse_qsl(result.decode(), keep_blank_values=True))
-        assert "protect by agentshroud" in parsed.get("caption", "").lower()
+        assert "protected by agentshroud" in parsed.get("caption", "").lower()
         assert "function_calls" not in parsed.get("caption", "").lower()
 
     @pytest.mark.asyncio
@@ -957,7 +957,7 @@ class TestOutboundPipelineIntegration:
             }
         ).encode()
         result = json.loads(await proxy._filter_outbound(body, "application/json"))
-        assert "protect by agentshroud" in result["caption"].lower()
+        assert "protected by agentshroud" in result["caption"].lower()
         assert "sessions_spawn" not in result["caption"].lower()
 
     @pytest.mark.asyncio
@@ -973,7 +973,7 @@ class TestOutboundPipelineIntegration:
         ).encode()
         result = await proxy._filter_outbound(body, "application/x-www-form-urlencoded")
         parsed = dict(urllib.parse.parse_qsl(result.decode(), keep_blank_values=True))
-        assert "protect by agentshroud" in parsed.get("caption", "").lower()
+        assert "protected by agentshroud" in parsed.get("caption", "").lower()
         assert "web_fetch" not in parsed.get("caption", "").lower()
 
     @pytest.mark.asyncio
@@ -988,7 +988,7 @@ class TestOutboundPipelineIntegration:
             }
         ).encode()
         result = json.loads(await proxy._filter_outbound(body, "application/json"))
-        assert "protect by agentshroud" in result["message"].lower()
+        assert "protected by agentshroud" in result["message"].lower()
         assert "sessions_spawn" not in result["message"].lower()
 
     @pytest.mark.asyncio
@@ -1004,7 +1004,7 @@ class TestOutboundPipelineIntegration:
         ).encode()
         result = await proxy._filter_outbound(body, "application/x-www-form-urlencoded")
         parsed = dict(urllib.parse.parse_qsl(result.decode(), keep_blank_values=True))
-        assert "protect by agentshroud" in parsed.get("message", "").lower()
+        assert "protected by agentshroud" in parsed.get("message", "").lower()
         assert "function_calls" not in parsed.get("message", "").lower()
 
     @pytest.mark.asyncio
@@ -1019,7 +1019,7 @@ class TestOutboundPipelineIntegration:
             }
         ).encode()
         result = json.loads(await proxy._filter_outbound(body, "application/json"))
-        assert "protect by agentshroud" in result["content"].lower()
+        assert "protected by agentshroud" in result["content"].lower()
         assert "sessions_spawn" not in result["content"].lower()
 
     @pytest.mark.asyncio
@@ -1035,7 +1035,7 @@ class TestOutboundPipelineIntegration:
         ).encode()
         result = await proxy._filter_outbound(body, "application/x-www-form-urlencoded")
         parsed = dict(urllib.parse.parse_qsl(result.decode(), keep_blank_values=True))
-        assert "protect by agentshroud" in parsed.get("content", "").lower()
+        assert "protected by agentshroud" in parsed.get("content", "").lower()
         assert "function_calls" not in parsed.get("content", "").lower()
 
     @pytest.mark.asyncio
@@ -1050,7 +1050,7 @@ class TestOutboundPipelineIntegration:
             }
         ).encode()
         result = json.loads(await proxy._filter_outbound(body, "application/json"))
-        assert "protect by agentshroud" in result["draft"].lower()
+        assert "protected by agentshroud" in result["draft"].lower()
         assert "sessions_spawn" not in result["draft"].lower()
 
     @pytest.mark.asyncio
@@ -1066,7 +1066,7 @@ class TestOutboundPipelineIntegration:
         ).encode()
         result = await proxy._filter_outbound(body, "application/x-www-form-urlencoded")
         parsed = dict(urllib.parse.parse_qsl(result.decode(), keep_blank_values=True))
-        assert "protect by agentshroud" in parsed.get("draft", "").lower()
+        assert "protected by agentshroud" in parsed.get("draft", "").lower()
         assert "function_calls" not in parsed.get("draft", "").lower()
 
     @pytest.mark.asyncio
@@ -1080,8 +1080,9 @@ class TestOutboundPipelineIntegration:
             }
         ).encode()
         result = json.loads(await proxy._filter_outbound(body, "application/json"))
-        assert "protect by agentshroud" in result["text"].lower()
+        assert "protected by agentshroud" in result["text"].lower()
         assert "egress request" not in result["text"].lower()
+        assert "owner-gated" in result["text"].lower()
 
     @pytest.mark.asyncio
     async def test_collaborator_egress_approval_banner_is_redacted_form(self):
@@ -1095,8 +1096,9 @@ class TestOutboundPipelineIntegration:
         ).encode()
         result = await proxy._filter_outbound(body, "application/x-www-form-urlencoded")
         parsed = dict(urllib.parse.parse_qsl(result.decode(), keep_blank_values=True))
-        assert "protect by agentshroud" in parsed.get("text", "").lower()
+        assert "protected by agentshroud" in parsed.get("text", "").lower()
         assert "egress request" not in parsed.get("text", "").lower()
+        assert "owner-gated" in parsed.get("text", "").lower()
 
     @pytest.mark.asyncio
     async def test_collaborator_pairing_code_leakage_is_redacted_json(self):
@@ -1113,7 +1115,7 @@ class TestOutboundPipelineIntegration:
             }
         ).encode()
         result = json.loads(await proxy._filter_outbound(body, "application/json"))
-        assert "protect by agentshroud" in result["text"].lower()
+        assert "protected by agentshroud" in result["text"].lower()
         assert "pairing code" not in result["text"].lower()
         assert "openclaw pairing approve telegram" not in result["text"].lower()
 
@@ -1129,7 +1131,7 @@ class TestOutboundPipelineIntegration:
         ).encode()
         result = await proxy._filter_outbound(body, "application/x-www-form-urlencoded")
         parsed = dict(urllib.parse.parse_qsl(result.decode(), keep_blank_values=True))
-        assert "protect by agentshroud" in parsed.get("text", "").lower()
+        assert "protected by agentshroud" in parsed.get("text", "").lower()
         assert "pairing code" not in parsed.get("text", "").lower()
 
     @pytest.mark.asyncio
@@ -1147,7 +1149,7 @@ class TestOutboundPipelineIntegration:
             }
         ).encode()
         result = json.loads(await proxy._filter_outbound(body, "application/json"))
-        assert "protect by agentshroud" in result["text"].lower()
+        assert "protected by agentshroud" in result["text"].lower()
         assert "your telegram user id" not in result["text"].lower()
         assert "access not configured" not in result["text"].lower()
 
@@ -1163,7 +1165,7 @@ class TestOutboundPipelineIntegration:
         ).encode()
         result = await proxy._filter_outbound(body, "application/x-www-form-urlencoded")
         parsed = dict(urllib.parse.parse_qsl(result.decode(), keep_blank_values=True))
-        assert "protect by agentshroud" in parsed.get("text", "").lower()
+        assert "protected by agentshroud" in parsed.get("text", "").lower()
         assert "your telegram user id" not in parsed.get("text", "").lower()
 
     @pytest.mark.asyncio
@@ -1758,7 +1760,7 @@ class TestOutboundPipelineIntegration:
         ).encode()
         result = await proxy._filter_outbound(body, None)
         parsed = dict(urllib.parse.parse_qsl(result.decode(), keep_blank_values=True))
-        assert "protect by agentshroud" in parsed.get("caption", "").lower()
+        assert "protected by agentshroud" in parsed.get("caption", "").lower()
         assert "sessions_spawn" not in parsed.get("caption", "").lower()
 
     @pytest.mark.asyncio
@@ -1773,7 +1775,7 @@ class TestOutboundPipelineIntegration:
             }
         ).encode()
         result = json.loads(await proxy._filter_outbound(body, None))
-        assert "protect by agentshroud" in result.get("caption", "").lower()
+        assert "protected by agentshroud" in result.get("caption", "").lower()
         assert "sessions_spawn" not in result.get("caption", "").lower()
 
     @pytest.mark.asyncio
@@ -1789,7 +1791,7 @@ class TestOutboundPipelineIntegration:
         ).encode()
         result = await proxy._filter_outbound(body, None)
         parsed = dict(urllib.parse.parse_qsl(result.decode(), keep_blank_values=True))
-        assert "protect by agentshroud" in parsed.get("message", "").lower()
+        assert "protected by agentshroud" in parsed.get("message", "").lower()
         assert "sessions_spawn" not in parsed.get("message", "").lower()
 
     @pytest.mark.asyncio
@@ -1804,7 +1806,7 @@ class TestOutboundPipelineIntegration:
             }
         ).encode()
         result = json.loads(await proxy._filter_outbound(body, None))
-        assert "protect by agentshroud" in result.get("message", "").lower()
+        assert "protected by agentshroud" in result.get("message", "").lower()
         assert "sessions_spawn" not in result.get("message", "").lower()
 
     @pytest.mark.asyncio
@@ -1820,7 +1822,7 @@ class TestOutboundPipelineIntegration:
         ).encode()
         result = await proxy._filter_outbound(body, None)
         parsed = dict(urllib.parse.parse_qsl(result.decode(), keep_blank_values=True))
-        assert "protect by agentshroud" in parsed.get("content", "").lower()
+        assert "protected by agentshroud" in parsed.get("content", "").lower()
         assert "sessions_spawn" not in parsed.get("content", "").lower()
 
     @pytest.mark.asyncio
@@ -1835,7 +1837,7 @@ class TestOutboundPipelineIntegration:
             }
         ).encode()
         result = json.loads(await proxy._filter_outbound(body, None))
-        assert "protect by agentshroud" in result.get("content", "").lower()
+        assert "protected by agentshroud" in result.get("content", "").lower()
         assert "sessions_spawn" not in result.get("content", "").lower()
 
     @pytest.mark.asyncio
@@ -1851,7 +1853,7 @@ class TestOutboundPipelineIntegration:
         ).encode()
         result = await proxy._filter_outbound(body, None)
         parsed = dict(urllib.parse.parse_qsl(result.decode(), keep_blank_values=True))
-        assert "protect by agentshroud" in parsed.get("draft", "").lower()
+        assert "protected by agentshroud" in parsed.get("draft", "").lower()
         assert "sessions_spawn" not in parsed.get("draft", "").lower()
 
     @pytest.mark.asyncio
@@ -1866,7 +1868,7 @@ class TestOutboundPipelineIntegration:
             }
         ).encode()
         result = json.loads(await proxy._filter_outbound(body, None))
-        assert "protect by agentshroud" in result.get("draft", "").lower()
+        assert "protected by agentshroud" in result.get("draft", "").lower()
         assert "sessions_spawn" not in result.get("draft", "").lower()
 
     @pytest.mark.asyncio
@@ -1881,7 +1883,7 @@ class TestOutboundPipelineIntegration:
         ).encode()
         result = await proxy._filter_outbound(body, "application/x-www-form-urlencoded")
         parsed = dict(urllib.parse.parse_qsl(result.decode(), keep_blank_values=True))
-        assert "protect by agentshroud" in parsed.get("text", "").lower()
+        assert "protected by agentshroud" in parsed.get("text", "").lower()
         assert "__AGENTSHROUD_SUPPRESS_OUTBOUND__".lower() not in parsed.get("text", "").lower()
 
     @pytest.mark.asyncio
@@ -1901,17 +1903,34 @@ class TestOutboundPipelineIntegration:
 
     @pytest.mark.asyncio
     async def test_html_parse_mode_preserved_without_redaction_placeholders(self):
-        """Normal HTML formatting should preserve parse_mode."""
+        """Owner HTML formatting should preserve parse_mode."""
         proxy = TelegramAPIProxy(sanitizer=_make_sanitizer())
         body = json.dumps(
             {
-                "chat_id": "7614658040",
+                "chat_id": "8096968754",
                 "text": "<b>Status</b>: OK",
                 "parse_mode": "HTML",
             }
         ).encode()
         result = json.loads(await proxy._filter_outbound(body, "application/json"))
         assert result.get("parse_mode") == "HTML"
+
+    @pytest.mark.asyncio
+    async def test_collaborator_html_code_markup_is_stripped_and_parse_mode_removed(self):
+        """Collaborator outbound HTML code/pre markup should be stripped to plain text."""
+        proxy = TelegramAPIProxy(sanitizer=_make_sanitizer())
+        body = json.dumps(
+            {
+                "chat_id": "7614658040",
+                "text": "Use <code>tg://user?id=123</code> now.",
+                "parse_mode": "HTML",
+            }
+        ).encode()
+        result = json.loads(await proxy._filter_outbound(body, "application/json"))
+        assert "parse_mode" not in result
+        assert "<code>" not in result["text"].lower()
+        assert "</code>" not in result["text"].lower()
+        assert "tg://user?id=123" in result["text"]
 
     @pytest.mark.asyncio
     async def test_proxy_request_sends_no_reply_wait_message_once(self, monkeypatch):

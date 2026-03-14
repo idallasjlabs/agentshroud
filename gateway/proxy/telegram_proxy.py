@@ -29,6 +29,7 @@ from typing import Any, Optional
 from urllib.parse import urlparse
 
 from gateway.security.input_normalizer import normalize_input, strip_markdown_exfil
+from gateway.security.rbac_config import RBACConfig
 
 logger = logging.getLogger("agentshroud.proxy.telegram_api")
 
@@ -49,19 +50,77 @@ _LOCAL_HEALTHCHECK_COMMANDS = {
     "/self-diagnose",
     "self-diagnose",
 }
+_LOCAL_STATUS_COMMANDS = {
+    "/status",
+    "status",
+}
 _LOCAL_MODEL_STATUS_COMMANDS = {
     "/model",
     "model",
     "/model-status",
     "model-status",
 }
+_LOCAL_WHOAMI_COMMANDS = {
+    "/whoami",
+    "whoami",
+    "/id",
+    "id",
+}
+_LOCAL_START_COMMANDS = {
+    "/start",
+    "start",
+}
+_LOCAL_HELP_COMMANDS = {
+    "/help",
+    "help",
+}
+_LOCAL_REVOKE_COMMANDS = {
+    "/revoke",
+    "revoke",
+}
+_LOCAL_APPROVE_COMMANDS = {
+    "/approve",
+    "approve",
+}
+_LOCAL_DENY_COMMANDS = {
+    "/deny",
+    "deny",
+}
+_LOCAL_ADD_COLLAB_COMMANDS = {
+    "/addcollab",
+    "addcollab",
+    "/allow",
+    "allow",
+}
+_LOCAL_RESTORE_COLLABS_COMMANDS = {
+    "/restorecollabs",
+    "restorecollabs",
+    "/restore-collaborators",
+    "restore-collaborators",
+}
+_LOCAL_PENDING_COMMANDS = {
+    "/pending",
+    "pending",
+    "/approvals",
+    "approvals",
+}
+_LOCAL_COLLABS_COMMANDS = {
+    "/collabs",
+    "collabs",
+    "/listcollabs",
+    "listcollabs",
+}
 _COLLABORATOR_ALLOWED_SLASH_COMMANDS = {
     "/start",
+    "/help",
+    "/status",
     "/healthcheck",
     "/self-diagnostic",
     "/self-diagnose",
     "/model",
     "/model-status",
+    "/whoami",
+    "/id",
 }
 
 _DISCLOSURE_MESSAGE = (
@@ -69,24 +128,61 @@ _DISCLOSURE_MESSAGE = (
     "This conversation is logged and may be reviewed as part of the AgentShroud\u2122 "
     "project\\. By continuing, you acknowledge this\\. Questions? Reach out to Isaiah directly\\.\n\n"
     "_Bot commands like /skill aren't available in collaborator mode\\. "
-    "I'm the collaborator\\-facing assistant with read\\-only access \u2014 I can discuss "
+    "I'm the collaborator\\-facing assistant with read\\-only access \u2014 if authorized, I can discuss "
     "AgentShroud's features, security concepts, and provide technical advice, but I don't "
     "have access to the full command set\\._"
 )
 
-_PROTECT_PREFIX = "🛡️ Protect by AgentShroud"
-_COLLABORATOR_BLOCK_NOTICE = f"{_PROTECT_PREFIX} — this action is not allowed."
-_COLLABORATOR_UNAVAILABLE_NOTICE = f"{_PROTECT_PREFIX} — I can't do that right now."
-_COLLABORATOR_FILE_NOTICE = f"{_PROTECT_PREFIX} — file/system content access is restricted for collaborators."
-_COLLABORATOR_SECRET_NOTICE = f"{_PROTECT_PREFIX} — sensitive credentials/secrets are restricted."
-_COLLABORATOR_EGRESS_NOTICE = f"{_PROTECT_PREFIX} — external access requires approval."
-_COLLABORATOR_SCOPE_NOTICE = f"{_PROTECT_PREFIX} — I can discuss system concepts and recommendations, but command/tool execution details are restricted."
-_PROTECTED_POLICY_NOTICE = f"{_PROTECT_PREFIX} — response blocked by security policy."
+_PROTECT_PREFIX = "🛡️ Protected by AgentShroud"
+_PROTECT_HEADER = f"{_PROTECT_PREFIX}\n\n"
+_COLLABORATOR_BLOCK_NOTICE = f"{_PROTECT_HEADER}This action is not allowed."
+_COLLABORATOR_UNAVAILABLE_NOTICE = f"{_PROTECT_HEADER}I can't do that right now."
+_COLLABORATOR_FILE_NOTICE = f"{_PROTECT_HEADER}File/system content access is restricted for collaborators."
+_COLLABORATOR_SECRET_NOTICE = f"{_PROTECT_HEADER}Sensitive credentials/secrets are restricted."
+_COLLABORATOR_EGRESS_NOTICE = (
+    f"{_PROTECT_HEADER}"
+    "External access requires approval.\n"
+    "This request is owner-gated and available when permitted by the owner."
+)
+_COLLABORATOR_EGRESS_PENDING_NOTICE = (
+    f"{_PROTECT_HEADER}"
+    "This request is owner-gated and available when permitted by the owner."
+)
+_COLLABORATOR_SCOPE_NOTICE = (
+    f"{_PROTECT_HEADER}"
+    "If authorized, I can discuss system concepts and recommendations, but command/tool execution details are restricted."
+)
+_PROTECTED_POLICY_NOTICE = f"{_PROTECT_HEADER}Response blocked by security policy."
 _COLLABORATOR_SAFE_INFO_NOTICE = (
-    "🛡️ Protect by AgentShroud — collaborator safe mode is active.\n"
-    "I can help with architecture, security concepts, workflows, and recommendations.\n"
+    f"{_PROTECT_HEADER}"
+    "Collaborator safe mode is active.\n"
+    "If authorized, I can assist with architecture, security concepts, workflows, and recommendations.\n"
+    "Many capabilities are discoverable but owner-gated.\n"
     "I cannot provide command/tool outputs, direct file contents, secrets, or system-level execution."
 )
+
+# Owner-friendly labels for known collaborator IDs.
+_KNOWN_COLLABORATOR_LABELS: dict[str, str] = {
+    "8506022825": "Brett Galura",
+    "8545356403": "Chris Shelton",
+    "15712621992": "Gabriel Fuentes",
+    "8279589982": "Steve Hay",
+    "8526379012": "TJ Winter",
+    "7614658040": "Isaiah (collaborator test)",
+}
+_KNOWN_COLLABORATOR_ALIASES: dict[str, str] = {
+    "brett": "8506022825",
+    "brettgalura": "8506022825",
+    "chris": "8545356403",
+    "chrisshelton": "8545356403",
+    "gabriel": "15712621992",
+    "gabrielfuentes": "15712621992",
+    "steve": "8279589982",
+    "stevehay": "8279589982",
+    "tj": "8526379012",
+    "tjwinter": "8526379012",
+    "isaiahcollab": "7614658040",
+}
 
 
 class TelegramAPIProxy:
@@ -135,6 +231,11 @@ class TelegramAPIProxy:
         # Track which collaborator user IDs have already received the disclosure notice
         # this session. Persisted in-memory only — resets on gateway restart (acceptable).
         self._disclosure_sent: set[str] = set()
+        self._runtime_revoked_collaborators: set[str] = set()
+        self._pending_collaborator_requests: dict[str, dict[str, Any]] = {}
+        self._pending_collaborator_request_cooldown_seconds = float(
+            os.environ.get("AGENTSHROUD_COLLAB_REQUEST_COOLDOWN_SECONDS", "90.0")
+        )
 
         # Cache RBAC config to avoid re-instantiating on every message
         try:
@@ -143,9 +244,18 @@ class TelegramAPIProxy:
         except Exception:
             self._rbac = None
 
-        # Per-user collaborator rate limiter: 200 messages per hour
+        # Per-user collaborator rate limiter: configurable (default 1000/hour)
         from gateway.ingest_api.auth import RateLimiter
-        self._collaborator_rate_limiter = RateLimiter(max_requests=200, window_seconds=3600)
+        self._collaborator_rate_limit_max_requests = int(
+            os.environ.get("AGENTSHROUD_COLLAB_RATE_LIMIT_MAX_REQUESTS", "5000")
+        )
+        self._collaborator_rate_limit_window_seconds = int(
+            os.environ.get("AGENTSHROUD_COLLAB_RATE_LIMIT_WINDOW_SECONDS", "3600")
+        )
+        self._collaborator_rate_limiter = RateLimiter(
+            max_requests=self._collaborator_rate_limit_max_requests,
+            window_seconds=self._collaborator_rate_limit_window_seconds,
+        )
 
     def _is_owner_chat(self, chat_id: str) -> bool:
         """Return True when chat_id belongs to the configured owner."""
@@ -166,6 +276,123 @@ class TelegramAPIProxy:
         first = normalize_input(text).strip().split()[0].lower()
         first = first.split("@")[0]
         return re.sub(r"[^a-z0-9_/\-]", "", first)
+
+    @staticmethod
+    def _extract_owner_revoke_target(text: str) -> Optional[str]:
+        """Parse /revoke <telegram_user_id> and return normalized target id."""
+        if not isinstance(text, str):
+            return None
+        tokens = normalize_input(text).strip().split()
+        if len(tokens) < 2:
+            return None
+        candidate = re.sub(r"[^0-9]", "", tokens[1])
+        if not candidate:
+            return None
+        return candidate
+
+    @staticmethod
+    def _extract_owner_target(text: str) -> Optional[str]:
+        """Parse owner command target as numeric id or known collaborator alias."""
+        if not isinstance(text, str):
+            return None
+        tokens = normalize_input(text).strip().lower().split()
+        if len(tokens) < 2:
+            return None
+        raw = re.sub(r"[^a-z0-9_]", "", tokens[1])
+        if not raw:
+            return None
+        if raw.isdigit():
+            return raw
+        return _KNOWN_COLLABORATOR_ALIASES.get(raw)
+
+    def _resolve_pending_username_target(self, text: str) -> Optional[str]:
+        """Resolve owner target from pending-request username aliases (e.g., /approve ana)."""
+        if not isinstance(text, str):
+            return None
+        tokens = normalize_input(text).strip().lower().split()
+        if len(tokens) < 2:
+            return None
+        raw = re.sub(r"[^a-z0-9_@]", "", tokens[1]).lstrip("@")
+        if not raw:
+            return None
+        for user_id, pending in (self._pending_collaborator_requests or {}).items():
+            username = str((pending or {}).get("username", "")).strip().lower()
+            if not username:
+                continue
+            username = username.lstrip("@")
+            if raw == username:
+                return str(user_id)
+            # Allow "ana" to match "ana_smith" prefix style for operator ergonomics.
+            if username.startswith(raw) and len(raw) >= 3:
+                return str(user_id)
+        return None
+
+    def _extract_owner_target_resolved(self, text: str) -> Optional[str]:
+        """Resolve target by id, static alias, or pending username alias."""
+        target = self._extract_owner_target(text)
+        if target:
+            return target
+        return self._resolve_pending_username_target(text)
+
+    def _resolve_display_name(self, user_id: str) -> str:
+        """Resolve a readable label for user id when available."""
+        user_id = str(user_id or "").strip()
+        if not user_id:
+            return "unknown"
+        # Optional override via env: "id:name,id:name"
+        env_labels = os.environ.get("AGENTSHROUD_COLLABORATOR_LABELS", "")
+        if env_labels:
+            try:
+                for pair in env_labels.split(","):
+                    if ":" not in pair:
+                        continue
+                    k, v = pair.split(":", 1)
+                    if k.strip() == user_id and v.strip():
+                        return f"{v.strip()} ({user_id})"
+            except Exception:
+                pass
+        if user_id in _KNOWN_COLLABORATOR_LABELS:
+            return f"{_KNOWN_COLLABORATOR_LABELS[user_id]} ({user_id})"
+        return user_id
+
+    async def _queue_collaborator_access_request(
+        self,
+        *,
+        user_id: str,
+        chat_id: Optional[int],
+        username: str,
+    ) -> None:
+        """Queue owner approval request for unknown/revoked users."""
+        if not self._rbac:
+            return
+        now = time.time()
+        owner_id = str(getattr(self._rbac, "owner_user_id", "")).strip()
+        if not owner_id:
+            return
+        pending = self._pending_collaborator_requests.get(str(user_id))
+        if pending and float(pending.get("expires_at", 0.0)) > now:
+            if chat_id:
+                await self._send_collaborator_pending_notice(chat_id)
+            return
+
+        self._pending_collaborator_requests[str(user_id)] = {
+            "user_id": str(user_id),
+            "chat_id": str(chat_id or ""),
+            "username": username or "unknown",
+            "requested_at": now,
+            "expires_at": now + self._pending_collaborator_request_cooldown_seconds,
+        }
+        await self._send_owner_admin_notice(
+            int(owner_id),
+            (
+                f"{_PROTECT_HEADER}"
+                "Collaborator access request pending.\n"
+                f"User: {username or 'unknown'} ({user_id})\n"
+                "Owner action: /approve <user_id> or /deny <user_id>"
+            ),
+        )
+        if chat_id:
+            await self._send_collaborator_pending_notice(chat_id)
 
     @staticmethod
     def _rewrite_known_runtime_errors(text: str) -> Optional[str]:
@@ -1362,22 +1589,25 @@ class TelegramAPIProxy:
             )
         ):
             return (
-                "🛡️ Protect by AgentShroud — configuration safety guidance:\n"
+                f"{_PROTECT_HEADER}"
+                "Configuration safety guidance:\n"
                 "• Collaborators and runtime agents cannot self-modify security guardrails.\n"
                 "• Security/configuration changes require authorized admin approval.\n"
                 "• I can explain policy intent and propose safe change-request language."
             )
         if any(token in lowered for token in ("authentication", "credential", "api key", "secret")):
             return (
-                "🛡️ Protect by AgentShroud — secure collaboration guidance:\n"
+                f"{_PROTECT_HEADER}"
+                "Secure collaboration guidance:\n"
                 "• Authentication is brokered through protected service boundaries.\n"
                 "• Collaborators do not receive raw credentials or secret values.\n"
                 "• Sensitive operations require policy checks and authorization.\n"
-                "• I can help with integration patterns and least-privilege recommendations."
+                "• If authorized, I can help with integration patterns and least-privilege recommendations."
             )
         if any(token in lowered for token in ("security setup", "architecture", "filters messages", "how does this work")):
             return (
-                "🛡️ Protect by AgentShroud — secure architecture overview:\n"
+                f"{_PROTECT_HEADER}"
+                "Secure architecture overview:\n"
                 "• Messages pass through policy and safety controls before action.\n"
                 "• High-risk actions are restricted and audited.\n"
                 "• Outputs are filtered to prevent sensitive disclosure.\n"
@@ -1385,22 +1615,25 @@ class TelegramAPIProxy:
             )
         if any(token in lowered for token in ("infrastructure", "hosting", "vpn", "topology")):
             return (
-                "🛡️ Protect by AgentShroud — infrastructure safety guidance:\n"
+                f"{_PROTECT_HEADER}"
+                "Infrastructure safety guidance:\n"
                 "• Network and hosting internals are intentionally abstracted in collaborator mode.\n"
                 "• Security controls enforce trusted boundaries and approved communication paths.\n"
                 "• I can provide high-level architecture guidance without exposing sensitive implementation details."
             )
         if any(token in lowered for token in ("tool", "command", "capability", "permissions")):
             return (
-                "🛡️ Protect by AgentShroud — collaborator capability overview:\n"
-                "• I can discuss system concepts, security guidance, and recommendations.\n"
+                f"{_PROTECT_HEADER}"
+                "Collaborator capability overview:\n"
+                "• If authorized, I can discuss system concepts, security guidance, and recommendations.\n"
                 "• I cannot provide runnable commands, raw tool traces, or execution details.\n"
                 "• Direct file content access and secret/credential retrieval are restricted.\n"
                 "• External/network actions require explicit owner approval before execution."
             )
         if any(token in lowered for token in ("approval", "egress", "external", "network")):
             return (
-                "🛡️ Protect by AgentShroud — egress and approval guidance:\n"
+                f"{_PROTECT_HEADER}"
+                "Egress and approval guidance:\n"
                 "• External/network actions require explicit authorization.\n"
                 "• Unauthorized outbound requests are denied.\n"
                 "• Approval decisions are enforced before execution.\n"
@@ -1421,14 +1654,16 @@ class TelegramAPIProxy:
             )
         ):
             return (
-                "🛡️ Protect by AgentShroud — privacy boundary guidance:\n"
+                f"{_PROTECT_HEADER}"
+                "Privacy boundary guidance:\n"
                 "• Collaborator identities, activity, and session data are privacy-protected.\n"
                 "• I cannot disclose other users' status, files, or conversation details.\n"
-                "• I can help with shared process guidance without exposing user-specific data."
+                "• If authorized, I can help with shared process guidance without exposing user-specific data."
             )
         if any(token in lowered for token in ("bootstrap.md", "identity.md")):
             return (
-                "🛡️ Protect by AgentShroud — file access policy guidance:\n"
+                f"{_PROTECT_HEADER}"
+                "File access policy guidance:\n"
                 "• BOOTSTRAP.md and IDENTITY.md are treated as internal system files.\n"
                 "• Collaborators cannot access raw file contents or direct file reads.\n"
                 "• I can provide high-level onboarding and role guidance without exposing file data."
@@ -1713,6 +1948,14 @@ class TelegramAPIProxy:
             filtered_updates = response_data.get("result", [])
             inbound_forwarded = len(filtered_updates) if isinstance(filtered_updates, list) else 0
             inbound_dropped = max(0, inbound_total - inbound_forwarded)
+            if inbound_total > 0 and inbound_forwarded == 0:
+                # Important: if we locally handle and drop every update, the bot runtime
+                # never advances Telegram offset and can get stuck replaying the same
+                # updates forever. Return ack-only update_ids so offset can advance
+                # without forwarding message payloads to the runtime.
+                ack_updates = self._build_ack_only_updates(inbound_updates)
+                if ack_updates:
+                    response_data["result"] = ack_updates
             self._stats["inbound_updates_total"] += inbound_total
             self._stats["inbound_updates_forwarded"] += inbound_forwarded
             self._stats["inbound_updates_dropped"] += inbound_dropped
@@ -1725,6 +1968,30 @@ class TelegramAPIProxy:
                 )
 
         return response_data
+
+    @staticmethod
+    def _strip_collaborator_html_markup(text: str) -> str:
+        """Remove Telegram HTML formatting tags from collaborator outbound text."""
+        if not isinstance(text, str) or "<" not in text or ">" not in text:
+            return text
+        return re.sub(
+            r"</?(?:code|pre|a|b|i|u|s|strong|em|blockquote|tg-spoiler)\b[^>]*>",
+            "",
+            text,
+            flags=re.IGNORECASE,
+        )
+
+    @staticmethod
+    def _build_ack_only_updates(inbound_updates: list[Any]) -> list[dict[str, Any]]:
+        """Return minimal getUpdates payload entries containing only update_id."""
+        ack_only: list[dict[str, Any]] = []
+        for update in inbound_updates:
+            if not isinstance(update, dict):
+                continue
+            update_id = update.get("update_id")
+            if isinstance(update_id, int):
+                ack_only.append({"update_id": update_id})
+        return ack_only
 
     async def _filter_outbound(self, body: bytes, content_type: Optional[str]) -> bytes:
         """Filter outbound bot messages (sendMessage, etc.)."""
@@ -1943,6 +2210,15 @@ class TelegramAPIProxy:
                 # Prevent Telegram HTML parse errors caused by redaction placeholders
                 # like <EMAIL_ADDRESS> / <PHONE_NUMBER> in sanitized output.
                 parse_mode = str(data.get("parse_mode", "")).upper()
+                if parse_mode == "HTML" and not is_owner_chat and isinstance(data.get(text_key), str):
+                    # Collaborator UX/safety: never render model-provided HTML markup
+                    # (e.g., <code> blocks) that can expose code-like snippets.
+                    cleaned = self._strip_collaborator_html_markup(data[text_key])
+                    data[text_key] = cleaned
+                    data.pop("parse_mode", None)
+                    self._stats["outbound_filtered"] += 1
+                    text = cleaned
+                    parse_mode = ""
                 if parse_mode == "HTML" and isinstance(data.get(text_key), str):
                     if re.search(r"<[A-Z][A-Z0-9_]{1,64}>", data[text_key]):
                         data.pop("parse_mode", None)
@@ -2557,9 +2833,11 @@ class TelegramAPIProxy:
 
             # ── Role resolution ───────────────────────────────────────────────
             is_owner = self._rbac.is_owner(user_id) if self._rbac else False
+            is_revoked = user_id in self._runtime_revoked_collaborators
             is_collaborator = (
                 self._rbac and
                 not is_owner and
+                not is_revoked and
                 user_id in {str(uid) for uid in (self._rbac.collaborator_user_ids or [])}
             )
 
@@ -2567,8 +2845,8 @@ class TelegramAPIProxy:
             # If a message includes an explicit URL/domain, proactively queue
             # interactive egress approval for that destination. This preserves
             # "little snitch" UX even when the model fails before tool execution.
-            # Applies to owner + collaborators so domain approvals are visible
-            # before outbound attempts regardless of user role.
+            # Owner-only: collaborators must not receive or trigger interactive
+            # egress approval prompts.
             preflight_egress_queued = False
             try:
                 if isinstance(original_transport_text, str) and re.search(
@@ -2578,7 +2856,7 @@ class TelegramAPIProxy:
                     requested_url = None
                 else:
                     requested_url = self._extract_first_egress_target(text)
-                if requested_url:
+                if requested_url and is_owner:
                     await self._trigger_web_fetch_approval(
                         str(chat_id or ""),
                         {"url": requested_url},
@@ -2611,6 +2889,22 @@ class TelegramAPIProxy:
                 except Exception as _te:
                     logger.debug("Collaborator tracker error (non-fatal): %s", _te)
 
+            # Unknown or revoked users must be re-approved by owner.
+            if not is_owner and not is_collaborator and chat_id:
+                sender = message.get("from", {}) or {}
+                username = (
+                    sender.get("username")
+                    or sender.get("first_name")
+                    or sender.get("last_name")
+                    or "unknown"
+                )
+                await self._queue_collaborator_access_request(
+                    user_id=user_id,
+                    chat_id=chat_id,
+                    username=str(username),
+                )
+                continue
+
             # ── Disclosure notice — send once per session per collaborator ─────
             if is_collaborator and chat_id and user_id not in self._disclosure_sent:
                 await self._send_disclosure(chat_id)
@@ -2626,12 +2920,13 @@ class TelegramAPIProxy:
                 except Exception as _re:
                     logger.debug("MultiTurnTracker reset error (non-fatal): %s", _re)
 
-            # ── Collaborator rate limiting (200 msgs/hour) ────────────────────
+            # ── Collaborator rate limiting (configured msgs/hour) ─────────────
             if is_collaborator and not self._collaborator_rate_limiter.check(user_id):
                 self._stats["messages_blocked"] += 1
                 logger.warning(
-                    "Collaborator %s exceeded rate limit (200/hr) — dropping message",
+                    "Collaborator %s exceeded rate limit (%s/hr) — dropping message",
                     user_id,
+                    self._collaborator_rate_limiter.max_requests,
                 )
                 self._quarantine_blocked_message(
                     user_id=user_id,
@@ -2646,27 +2941,282 @@ class TelegramAPIProxy:
                         self._recent_rate_limit_notice_until = {
                             k: v for k, v in self._recent_rate_limit_notice_until.items() if v > now
                         }
-                    notice_until = self._recent_rate_limit_notice_until.get(user_id, 0.0)
-                    if notice_until <= now:
-                        notice_sent = await self._send_rate_limit_notice(chat_id, user_id=user_id)
-                        if notice_sent:
-                            self._recent_rate_limit_notice_until[user_id] = (
-                                now + self._rate_limit_notice_cooldown_seconds
-                            )
+                    notice_sent = await self._send_rate_limit_notice(chat_id, user_id=user_id)
+                    if notice_sent:
+                        self._recent_rate_limit_notice_until[user_id] = (
+                            now + self._rate_limit_notice_cooldown_seconds
+                        )
                 continue
 
             # ── Local deterministic command handling (owner + collaborators) ──
             # Keep core operator commands deterministic and never delegate to model.
             if chat_id:
                 cmd_base = self._normalize_command_token(text)
+                normalized_text = normalize_input(text or "").strip().lower()
+                if re.match(r"^/?(?:whoami|id)(?:@\w+)?$", normalized_text):
+                    # Fallback for Telegram command formatting variants that may
+                    # bypass first-token normalization (e.g., @bot suffix).
+                    cmd_base = "/whoami"
+                sender_info = message.get("from", {}) or {}
+                sender_username = (
+                    sender_info.get("username")
+                    or sender_info.get("first_name")
+                    or sender_info.get("last_name")
+                    or "unknown"
+                )
+                if cmd_base in {"/whoami", "/id", "/status", "/help", "/start"}:
+                    logger.info(
+                        "Inbound local-command candidate user=%s owner=%s collaborator=%s cmd=%r text=%r",
+                        user_id,
+                        is_owner,
+                        is_collaborator,
+                        cmd_base,
+                        (text or "")[:120],
+                    )
                 local_handler = None
                 local_label = ""
-                if cmd_base in _LOCAL_HEALTHCHECK_COMMANDS:
+                if cmd_base in _LOCAL_START_COMMANDS:
+                    local_label = "start"
+                    is_owner_snapshot = is_owner
+
+                    async def _local_start_handler(target_chat_id: int) -> None:
+                        await self._send_local_start_notice(
+                            target_chat_id,
+                            is_owner=is_owner_snapshot,
+                        )
+
+                    local_handler = _local_start_handler
+                elif cmd_base in _LOCAL_HELP_COMMANDS:
+                    local_label = "help"
+                    is_owner_snapshot = is_owner
+
+                    async def _local_help_handler(target_chat_id: int) -> None:
+                        await self._send_local_help_notice(
+                            target_chat_id,
+                            is_owner=is_owner_snapshot,
+                        )
+
+                    local_handler = _local_help_handler
+                elif cmd_base in _LOCAL_HEALTHCHECK_COMMANDS:
                     local_handler = self._send_local_healthcheck_notice
                     local_label = "healthcheck"
+                elif cmd_base in _LOCAL_STATUS_COMMANDS:
+                    local_label = "status"
+                    is_owner_snapshot = is_owner
+
+                    async def _local_status_handler(target_chat_id: int) -> None:
+                        await self._send_local_status_notice(
+                            target_chat_id,
+                            is_owner=is_owner_snapshot,
+                        )
+
+                    local_handler = _local_status_handler
                 elif cmd_base in _LOCAL_MODEL_STATUS_COMMANDS:
                     local_handler = self._send_local_model_notice
                     local_label = "model-status"
+                elif cmd_base in _LOCAL_WHOAMI_COMMANDS:
+                    local_label = "whoami"
+                    is_owner_snapshot = is_owner
+                    user_id_snapshot = user_id
+                    username_snapshot = str(sender_username)
+
+                    async def _local_whoami_handler(target_chat_id: int) -> None:
+                        await self._send_local_whoami_notice(
+                            target_chat_id,
+                            user_id=user_id_snapshot,
+                            is_owner=is_owner_snapshot,
+                            username=username_snapshot,
+                        )
+
+                    local_handler = _local_whoami_handler
+                elif is_owner and cmd_base in _LOCAL_PENDING_COMMANDS:
+                    local_handler = self._send_owner_pending_notice
+                    local_label = "pending"
+                elif is_owner and cmd_base in _LOCAL_COLLABS_COMMANDS:
+                    local_handler = self._send_owner_collabs_notice
+                    local_label = "collabs"
+                elif is_owner and cmd_base in _LOCAL_REVOKE_COMMANDS:
+                    target_id = self._extract_owner_target_resolved(text)
+                    if not target_id:
+                        await self._send_owner_admin_notice(
+                            chat_id,
+                            f"{_PROTECT_HEADER}Usage: /revoke <telegram_user_id|name>",
+                        )
+                        continue
+                    if target_id == user_id:
+                        await self._send_owner_admin_notice(
+                            chat_id,
+                            f"{_PROTECT_HEADER}Cannot revoke owner access.",
+                        )
+                        continue
+                    self._runtime_revoked_collaborators.add(target_id)
+                    self._disclosure_sent.discard(target_id)
+                    try:
+                        self._collaborator_rate_limiter.requests.pop(target_id, None)
+                    except Exception:
+                        pass
+                    await self._send_owner_admin_notice(
+                        chat_id,
+                        (
+                            f"{_PROTECT_HEADER}"
+                            "Collaborator access revoked.\n"
+                            f"User ID: {target_id}\n"
+                            "This user now requires owner re-approval workflow."
+                        ),
+                    )
+                    continue
+                elif is_owner and cmd_base in _LOCAL_APPROVE_COMMANDS:
+                    target_id = self._extract_owner_target_resolved(text)
+                    if not target_id:
+                        pending_ids = list(self._pending_collaborator_requests.keys())
+                        if len(pending_ids) == 1:
+                            target_id = pending_ids[0]
+                        else:
+                            pending_hint = (
+                                f"\nPending: {', '.join(pending_ids[:5])}"
+                                if pending_ids
+                                else "\nPending: none"
+                            )
+                            await self._send_owner_admin_notice(
+                                chat_id,
+                                f"{_PROTECT_HEADER}Usage: /approve <telegram_user_id|name>{pending_hint}",
+                            )
+                            continue
+                    if target_id == user_id:
+                        await self._send_owner_admin_notice(
+                            chat_id,
+                            f"{_PROTECT_HEADER}Owner access is already active.",
+                        )
+                        continue
+                    pending = self._pending_collaborator_requests.get(target_id)
+                    if not pending:
+                        await self._send_owner_admin_notice(
+                            chat_id,
+                            f"{_PROTECT_HEADER}No pending request found for user {target_id}.",
+                        )
+                        continue
+                    self._runtime_revoked_collaborators.discard(target_id)
+                    pending = self._pending_collaborator_requests.pop(target_id, None)
+                    if self._rbac and target_id not in {str(uid) for uid in (self._rbac.collaborator_user_ids or [])}:
+                        self._rbac.collaborator_user_ids = list(self._rbac.collaborator_user_ids or []) + [target_id]
+                    await self._send_owner_admin_notice(
+                        chat_id,
+                        f"{_PROTECT_HEADER}Collaborator access approved for user {target_id}.",
+                    )
+                    if pending and pending.get("chat_id"):
+                        try:
+                            target_chat = int(str(pending.get("chat_id")))
+                            await self._send_owner_admin_notice(
+                                target_chat,
+                                f"{_PROTECT_HEADER}Access approved. You can continue in collaborator mode.",
+                            )
+                        except Exception:
+                            pass
+                    continue
+                elif is_owner and cmd_base in _LOCAL_DENY_COMMANDS:
+                    target_id = self._extract_owner_target_resolved(text)
+                    if not target_id:
+                        pending_ids = list(self._pending_collaborator_requests.keys())
+                        if len(pending_ids) == 1:
+                            target_id = pending_ids[0]
+                        else:
+                            pending_hint = (
+                                f"\nPending: {', '.join(pending_ids[:5])}"
+                                if pending_ids
+                                else "\nPending: none"
+                            )
+                            await self._send_owner_admin_notice(
+                                chat_id,
+                                f"{_PROTECT_HEADER}Usage: /deny <telegram_user_id|name>{pending_hint}",
+                            )
+                            continue
+                    pending = self._pending_collaborator_requests.get(target_id)
+                    if not pending:
+                        await self._send_owner_admin_notice(
+                            chat_id,
+                            f"{_PROTECT_HEADER}No pending request found for user {target_id}.",
+                        )
+                        continue
+                    pending = self._pending_collaborator_requests.pop(target_id, None)
+                    self._runtime_revoked_collaborators.add(target_id)
+                    await self._send_owner_admin_notice(
+                        chat_id,
+                        f"{_PROTECT_HEADER}Collaborator access denied for user {target_id}.",
+                    )
+                    if pending and pending.get("chat_id"):
+                        try:
+                            target_chat = int(str(pending.get("chat_id")))
+                            await self._send_owner_admin_notice(
+                                target_chat,
+                                f"{_PROTECT_HEADER}Access denied. Contact owner if needed.",
+                            )
+                        except Exception:
+                            pass
+                    continue
+                elif is_owner and cmd_base in _LOCAL_ADD_COLLAB_COMMANDS:
+                    target_id = self._extract_owner_target_resolved(text)
+                    if not target_id:
+                        await self._send_owner_admin_notice(
+                            chat_id,
+                            f"{_PROTECT_HEADER}Usage: /addcollab <telegram_user_id|name>",
+                        )
+                        continue
+                    if target_id == user_id:
+                        await self._send_owner_admin_notice(
+                            chat_id,
+                            f"{_PROTECT_HEADER}Owner access is already active.",
+                        )
+                        continue
+                    pending = self._pending_collaborator_requests.pop(target_id, None)
+                    self._runtime_revoked_collaborators.discard(target_id)
+                    if self._rbac and target_id not in {str(uid) for uid in (self._rbac.collaborator_user_ids or [])}:
+                        self._rbac.collaborator_user_ids = list(self._rbac.collaborator_user_ids or []) + [target_id]
+                    await self._send_owner_admin_notice(
+                        chat_id,
+                        f"{_PROTECT_HEADER}Collaborator added: {target_id}",
+                    )
+                    if pending and pending.get("chat_id"):
+                        try:
+                            target_chat = int(str(pending.get("chat_id")))
+                            await self._send_owner_admin_notice(
+                                target_chat,
+                                f"{_PROTECT_HEADER}Access approved. You can continue in collaborator mode.",
+                            )
+                        except Exception:
+                            pass
+                    continue
+                elif is_owner and cmd_base in _LOCAL_RESTORE_COLLABS_COMMANDS:
+                    if not self._rbac:
+                        await self._send_owner_admin_notice(
+                            chat_id,
+                            f"{_PROTECT_HEADER}RBAC unavailable.",
+                        )
+                        continue
+                    defaults = [
+                        uid
+                        for uid in RBACConfig().collaborator_user_ids
+                        if str(uid) != str(user_id)
+                    ]
+                    merged: list[str] = []
+                    seen: set[str] = set()
+                    for uid in list(self._rbac.collaborator_user_ids or []) + defaults:
+                        s = str(uid).strip()
+                        if not s or s in seen or s == str(user_id):
+                            continue
+                        seen.add(s)
+                        merged.append(s)
+                    self._rbac.collaborator_user_ids = merged
+                    for uid in defaults:
+                        self._runtime_revoked_collaborators.discard(str(uid))
+                    await self._send_owner_admin_notice(
+                        chat_id,
+                        (
+                            f"{_PROTECT_HEADER}"
+                            f"Restored collaborators: {len(defaults)} default IDs active.\n"
+                            f"Current list: {', '.join(self._rbac.collaborator_user_ids)}"
+                        ),
+                    )
+                    continue
                 if local_handler is not None:
                     update_id = update.get("update_id")
                     message_id = message.get("message_id")
@@ -2925,14 +3475,6 @@ class TelegramAPIProxy:
                     await self._notify_collaborator_command_blocked(chat_id, "restricted-command")
                     continue
                 if self._looks_like_web_access_request(text):
-                    self._stats["messages_blocked"] += 1
-                    self._quarantine_blocked_message(
-                        user_id=user_id,
-                        chat_id=chat_id,
-                        text=text,
-                        reason="Blocked collaborator external web-access request",
-                        source="telegram_web_access_block",
-                    )
                     try:
                         has_encoded_controls = bool(
                             isinstance(original_transport_text, str)
@@ -2943,13 +3485,21 @@ class TelegramAPIProxy:
                         )
                         requested_url = self._extract_first_egress_target(text) if not has_encoded_controls else None
                         if requested_url and not preflight_egress_queued:
+                            owner_chat = (
+                                str(getattr(self._rbac, "owner_user_id", "")).strip()
+                                if self._rbac
+                                else ""
+                            )
                             await self._trigger_web_fetch_approval(
-                                str(chat_id or ""),
+                                owner_chat or str(chat_id or ""),
                                 {"url": requested_url},
                             )
+                            await self._send_telegram_text(chat_id, _COLLABORATOR_EGRESS_PENDING_NOTICE)
+                        else:
+                            await self._notify_collaborator_command_blocked(chat_id, "web-access")
                     except Exception as _wf:
                         logger.debug("Collaborator web-access preflight error (non-fatal): %s", _wf)
-                    await self._notify_collaborator_command_blocked(chat_id, "web-access")
+                        await self._notify_collaborator_command_blocked(chat_id, "web-access")
                     continue
                 if self._looks_like_file_metadata_question(text):
                     await self._send_collaborator_safe_info_response(chat_id, text)
@@ -3146,6 +3696,13 @@ class TelegramAPIProxy:
                     await self._notify_collaborator_command_blocked(chat_id, "file-access")
                     continue
                 if self._looks_like_safe_collaborator_info_query(text):
+                    await self._send_collaborator_safe_info_response(chat_id, text)
+                    continue
+                # Deterministic collaborator handling: serve informational
+                # responses locally to avoid model/runtime stalls that can
+                # cause apparent "no response" behavior.
+                local_only = os.getenv("AGENTSHROUD_COLLAB_LOCAL_INFO_ONLY", "1").strip().lower()
+                if self._bot_token and local_only not in {"0", "false", "no"}:
                     await self._send_collaborator_safe_info_response(chat_id, text)
                     continue
 
@@ -3433,7 +3990,8 @@ class TelegramAPIProxy:
                 wait_seconds = self._collaborator_rate_limit_retry_after_seconds(limiter_user_id)
                 wait_minutes = max(1, math.ceil(wait_seconds / 60.0))
                 msg = (
-                    f"🛡️ Protect by AgentShroud — collaborator rate limit reached "
+                    f"{_PROTECT_HEADER}"
+                    "Collaborator rate limit reached "
                     f"\\({self._collaborator_rate_limiter.max_requests} messages/hour\\)\\.\n"
                     f"Please retry in about {wait_minutes} minute\\(s\\)\\."
                 )
@@ -3455,7 +4013,8 @@ class TelegramAPIProxy:
                     # Fallback: resend without Markdown parse mode to avoid silent
                     # parse failures and ensure collaborator always gets a notice.
                     plain_msg = (
-                        f"🛡️ Protect by AgentShroud — collaborator rate limit reached "
+                        f"{_PROTECT_HEADER}"
+                        "Collaborator rate limit reached "
                         f"({self._collaborator_rate_limiter.max_requests} messages/hour). "
                         f"Please retry in about {wait_minutes} minute(s)."
                     )
@@ -3487,6 +4046,84 @@ class TelegramAPIProxy:
         except Exception:
             return 60
 
+    async def _send_telegram_text(
+        self,
+        chat_id: int,
+        text: str,
+        *,
+        parse_mode: Optional[str] = None,
+        retries: int = 3,
+    ) -> bool:
+        """Best-effort Telegram sender with bounded retries."""
+        if not self._bot_token:
+            return False
+        url = f"{TELEGRAM_API_BASE}/bot{self._bot_token}/sendMessage"
+        payload: dict[str, Any] = {"chat_id": chat_id, "text": text}
+        if parse_mode:
+            payload["parse_mode"] = parse_mode
+        req = urllib.request.Request(
+            url,
+            data=json.dumps(payload).encode(),
+            headers={"Content-Type": "application/json"},
+        )
+        loop = asyncio.get_event_loop()
+        attempts = max(1, retries)
+        for attempt in range(attempts):
+            try:
+                await loop.run_in_executor(
+                    None,
+                    lambda: urllib.request.urlopen(req, timeout=5, context=self._ssl_context),
+                )
+                return True
+            except Exception as exc:
+                retry_after_seconds = 0.0
+                if isinstance(exc, urllib.error.HTTPError):
+                    try:
+                        code = int(getattr(exc, "code", 0) or 0)
+                    except Exception:
+                        code = 0
+                    if code == 429:
+                        try:
+                            body = exc.read()
+                            parsed = json.loads(body.decode("utf-8", errors="ignore")) if body else {}
+                            retry_after_val = (
+                                parsed.get("parameters", {}).get("retry_after", 0)
+                                if isinstance(parsed, dict)
+                                else 0
+                            )
+                            retry_after_seconds = max(0.0, float(retry_after_val))
+                        except Exception:
+                            retry_after_seconds = 0.0
+                        if retry_after_seconds <= 0.0:
+                            retry_after_seconds = 1.0
+                if attempt == attempts - 1:
+                    logger.warning(
+                        "Telegram sendMessage failed after retries (chat=%s): %s",
+                        chat_id,
+                        exc,
+                    )
+                    return False
+                await asyncio.sleep(max(0.35 * (attempt + 1), retry_after_seconds))
+        return False
+
+    async def _send_local_notice_with_fallback(
+        self,
+        chat_id: int,
+        primary_text: str,
+        *,
+        collaborator_safe: bool,
+    ) -> None:
+        """Send local command response with deterministic fallback text."""
+        sent = await self._send_telegram_text(chat_id, primary_text, retries=2)
+        if sent:
+            return
+        fallback = (
+            _COLLABORATOR_UNAVAILABLE_NOTICE
+            if collaborator_safe
+            else "⚠️ AgentShroud local command notice unavailable. Please retry /status."
+        )
+        await self._send_telegram_text(chat_id, fallback, retries=5)
+
     async def _send_local_healthcheck_notice(self, chat_id: int) -> None:
         """Send deterministic gateway health status without model invocation."""
         try:
@@ -3498,16 +4135,10 @@ class TelegramAPIProxy:
                     "• Security pipeline: enforcing\n"
                     "• Model routing: active"
                 )
-                url = f"{TELEGRAM_API_BASE}/bot{self._bot_token}/sendMessage"
-                req = urllib.request.Request(
-                    url,
-                    data=json.dumps({"chat_id": chat_id, "text": msg}).encode(),
-                    headers={"Content-Type": "application/json"},
-                )
-                loop = asyncio.get_event_loop()
-                await loop.run_in_executor(
-                    None,
-                    lambda: urllib.request.urlopen(req, timeout=5, context=self._ssl_context),
+                await self._send_local_notice_with_fallback(
+                    chat_id,
+                    msg,
+                    collaborator_safe=False,
                 )
         except Exception as e:
             logger.warning("Failed to send local healthcheck notice to chat %s: %s", chat_id, e)
@@ -3530,35 +4161,258 @@ class TelegramAPIProxy:
                     f"• Profile: {profile}\n"
                     f"• Model: {model_ref}"
                 )
-                url = f"{TELEGRAM_API_BASE}/bot{self._bot_token}/sendMessage"
-                req = urllib.request.Request(
-                    url,
-                    data=json.dumps({"chat_id": chat_id, "text": msg}).encode(),
-                    headers={"Content-Type": "application/json"},
-                )
-                loop = asyncio.get_event_loop()
-                await loop.run_in_executor(
-                    None,
-                    lambda: urllib.request.urlopen(req, timeout=5, context=self._ssl_context),
+                await self._send_local_notice_with_fallback(
+                    chat_id,
+                    msg,
+                    collaborator_safe=False,
                 )
         except Exception as e:
             logger.warning("Failed to send local model notice to chat %s: %s", chat_id, e)
+
+    async def _send_local_help_notice(self, chat_id: int, *, is_owner: bool) -> None:
+        """Send deterministic /help command list without model invocation."""
+        try:
+            if self._bot_token:
+                if is_owner:
+                    msg = (
+                        "🛡️ AgentShroud owner commands\n"
+                        "• /start\n"
+                        "• /help\n"
+                        "• /status (alias: /healthcheck)\n"
+                        "• /whoami\n"
+                        "• /model\n"
+                        "• /pending\n"
+                        "• /collabs\n"
+                        "• /addcollab <telegram_user_id>\n"
+                        "• /restorecollabs\n"
+                        "• /approve <telegram_user_id>\n"
+                        "• /deny <telegram_user_id>\n"
+                        "• /revoke <telegram_user_id>"
+                    )
+                else:
+                    msg = (
+                        f"{_PROTECT_HEADER}"
+                        "Collaborator commands:\n"
+                        "• /start\n"
+                        "• /help\n"
+                        "• /status (alias: /healthcheck)\n"
+                        "• /whoami\n"
+                        "• /model\n\n"
+                        "If authorized, I can discuss architecture, security concepts, workflows, and recommendations.\n"
+                        "Command execution, direct file access, and secrets remain restricted."
+                    )
+                await self._send_local_notice_with_fallback(
+                    chat_id,
+                    msg,
+                    collaborator_safe=not is_owner,
+                )
+        except Exception as e:
+            logger.warning("Failed to send local help notice to chat %s: %s", chat_id, e)
+
+    async def _send_local_whoami_notice(
+        self,
+        chat_id: int,
+        *,
+        user_id: str,
+        is_owner: bool,
+        username: str,
+    ) -> None:
+        """Send deterministic identity/role notice to simplify approval workflows."""
+        try:
+            if not self._bot_token:
+                return
+            role = "owner" if is_owner else "collaborator"
+            cleaned_username = (username or "unknown").strip()
+            if is_owner:
+                msg = (
+                    "🛡️ AgentShroud identity\n"
+                    f"• Role: {role}\n"
+                    f"• Telegram user id: {user_id}\n"
+                    f"• Username: {cleaned_username}\n"
+                    "• Use /pending, /approve, /deny, /revoke to manage collaborator access."
+                )
+            else:
+                msg = (
+                    f"{_PROTECT_HEADER}"
+                    "Collaborator identity:\n"
+                    f"• Role: {role}\n"
+                    f"• Telegram user id: {user_id}\n"
+                    f"• Username: {cleaned_username}\n"
+                    "• Share this user id with owner for approval commands if needed."
+                )
+            await self._send_local_notice_with_fallback(
+                chat_id,
+                msg,
+                collaborator_safe=not is_owner,
+            )
+        except Exception as e:
+            logger.warning("Failed to send local whoami notice to chat %s: %s", chat_id, e)
+
+    async def _send_owner_pending_notice(self, chat_id: int) -> None:
+        """Send deterministic owner pending-approval snapshot."""
+        try:
+            if not self._bot_token:
+                return
+            pending_ids = sorted(self._pending_collaborator_requests.keys())
+            configured_ids: list[str] = []
+            if self._rbac:
+                configured_ids = sorted(
+                    str(uid) for uid in (self._rbac.collaborator_user_ids or [])
+                )
+            revoked_ids = sorted(self._runtime_revoked_collaborators)
+            msg = (
+                "🛡️ AgentShroud pending approvals\n"
+                f"• Pending requests: {', '.join(pending_ids) if pending_ids else 'none'}\n"
+                f"• Active collaborators: {', '.join(configured_ids) if configured_ids else 'none'}\n"
+                f"• Revoked users: {', '.join(revoked_ids) if revoked_ids else 'none'}"
+            )
+            await self._send_local_notice_with_fallback(
+                chat_id,
+                msg,
+                collaborator_safe=False,
+            )
+        except Exception as e:
+            logger.warning("Failed to send owner pending notice to chat %s: %s", chat_id, e)
+
+    async def _send_owner_collabs_notice(self, chat_id: int) -> None:
+        """Send owner-friendly collaborator roster with known labels."""
+        try:
+            if not self._bot_token:
+                return
+            configured_ids: list[str] = []
+            if self._rbac:
+                configured_ids = sorted(str(uid) for uid in (self._rbac.collaborator_user_ids or []))
+            pending_ids = sorted(self._pending_collaborator_requests.keys())
+            revoked_ids = sorted(self._runtime_revoked_collaborators)
+
+            active_display = [self._resolve_display_name(uid) for uid in configured_ids]
+            pending_display: list[str] = []
+            for uid in pending_ids:
+                pending = self._pending_collaborator_requests.get(uid, {}) or {}
+                username = str(pending.get("username", "")).strip()
+                if username and username != "unknown":
+                    pending_display.append(f"{username} ({uid})")
+                else:
+                    pending_display.append(self._resolve_display_name(uid))
+            revoked_display = [self._resolve_display_name(uid) for uid in revoked_ids]
+
+            msg = (
+                "🛡️ AgentShroud collaborator roster\n"
+                f"• Active: {', '.join(active_display) if active_display else 'none'}\n"
+                f"• Pending: {', '.join(pending_display) if pending_display else 'none'}\n"
+                f"• Revoked: {', '.join(revoked_display) if revoked_display else 'none'}"
+            )
+            await self._send_local_notice_with_fallback(
+                chat_id,
+                msg,
+                collaborator_safe=False,
+            )
+        except Exception as e:
+            logger.warning("Failed to send owner collaborator roster to chat %s: %s", chat_id, e)
+
+    async def _send_local_status_notice(self, chat_id: int, *, is_owner: bool) -> None:
+        """Send deterministic /status summary without model invocation."""
+        try:
+            if not self._bot_token:
+                return
+            if is_owner:
+                pending_count = len(self._pending_collaborator_requests)
+                collaborator_count = len(getattr(self._rbac, "collaborator_user_ids", []) or [])
+                revoked_count = len(self._runtime_revoked_collaborators)
+                msg = (
+                    "🛡️ AgentShroud status\n"
+                    "• Gateway: online\n"
+                    "• Security pipeline: enforcing\n"
+                    f"• Active collaborators: {collaborator_count}\n"
+                    f"• Pending approvals: {pending_count}\n"
+                    f"• Revoked users: {revoked_count}\n"
+                    "• Commands: /pending, /approve, /deny, /revoke, /addcollab, /restorecollabs"
+                )
+            else:
+                msg = (
+                    f"{_PROTECT_HEADER}"
+                    "Collaborator session status:\n"
+                    "• Gateway: online\n"
+                    "• Security mode: enforcing\n"
+                    "• If authorized, I can provide security concepts and recommendations.\n"
+                    "• Direct command execution, file contents, and secrets remain restricted."
+                )
+            await self._send_local_notice_with_fallback(
+                chat_id,
+                msg,
+                collaborator_safe=not is_owner,
+            )
+        except Exception as e:
+            logger.warning("Failed to send local status notice to chat %s: %s", chat_id, e)
+
+    async def _send_local_start_notice(self, chat_id: int, *, is_owner: bool) -> None:
+        """Send deterministic /start notice without model invocation."""
+        try:
+            if self._bot_token:
+                if is_owner:
+                    msg = (
+                        "🛡️ AgentShroud online\n"
+                        "• Security pipeline: enforcing\n"
+                        "• Use /healthcheck for runtime status\n"
+                        "• Use /model for active model status"
+                    )
+                else:
+                    msg = (
+                        f"{_PROTECT_HEADER}"
+                        "Collaborator session is ready.\n"
+                        "If authorized, you can ask about architecture, security concepts, and recommendations.\n"
+                        "Command execution, direct file access, and secrets remain restricted."
+                    )
+                await self._send_local_notice_with_fallback(
+                    chat_id,
+                    msg,
+                    collaborator_safe=not is_owner,
+                )
+        except Exception as e:
+            logger.warning("Failed to send local start notice to chat %s: %s", chat_id, e)
+
+    async def _send_owner_admin_notice(self, chat_id: int, message: str) -> None:
+        """Send deterministic owner admin notice without model invocation."""
+        try:
+            if self._bot_token:
+                sent = await self._send_telegram_text(chat_id, message, retries=2)
+                if not sent:
+                    await self._send_telegram_text(
+                        chat_id,
+                        "⚠️ AgentShroud admin notice delivery retry. Please run /status and /pending.",
+                        retries=5,
+                    )
+        except Exception as e:
+            logger.warning("Failed to send owner admin notice to chat %s: %s", chat_id, e)
+
+    async def _send_collaborator_pending_notice(self, chat_id: int) -> None:
+        """Send deterministic pending-approval notice to unknown/revoked users."""
+        try:
+            if not self._bot_token:
+                return
+            await self._send_local_notice_with_fallback(
+                chat_id,
+                f"{_PROTECT_HEADER}Access pending owner approval. Please wait.",
+                collaborator_safe=True,
+            )
+        except Exception as e:
+            logger.warning("Failed to send collaborator pending notice to chat %s: %s", chat_id, e)
 
     async def _send_collaborator_safe_info_notice(self, chat_id: int) -> None:
         """Send concise informative collaborator-safe guidance."""
         try:
             if self._bot_token:
-                url = f"{TELEGRAM_API_BASE}/bot{self._bot_token}/sendMessage"
-                req = urllib.request.Request(
-                    url,
-                    data=json.dumps({"chat_id": chat_id, "text": _COLLABORATOR_SAFE_INFO_NOTICE}).encode(),
-                    headers={"Content-Type": "application/json"},
+                sent = await self._send_telegram_text(
+                    chat_id,
+                    _COLLABORATOR_SAFE_INFO_NOTICE,
+                    retries=2,
                 )
-                loop = asyncio.get_event_loop()
-                await loop.run_in_executor(
-                    None,
-                    lambda: urllib.request.urlopen(req, timeout=5, context=self._ssl_context),
-                )
+                if not sent:
+                    await self._send_telegram_text(
+                        chat_id,
+                        _COLLABORATOR_UNAVAILABLE_NOTICE,
+                        retries=5,
+                    )
         except Exception as e:
             logger.warning("Failed to send collaborator safe-info notice to chat %s: %s", chat_id, e)
 
@@ -3567,17 +4421,13 @@ class TelegramAPIProxy:
         try:
             if self._bot_token:
                 msg = self._build_collaborator_safe_info_response(prompt)
-                url = f"{TELEGRAM_API_BASE}/bot{self._bot_token}/sendMessage"
-                req = urllib.request.Request(
-                    url,
-                    data=json.dumps({"chat_id": chat_id, "text": msg}).encode(),
-                    headers={"Content-Type": "application/json"},
-                )
-                loop = asyncio.get_event_loop()
-                await loop.run_in_executor(
-                    None,
-                    lambda: urllib.request.urlopen(req, timeout=5, context=self._ssl_context),
-                )
+                sent = await self._send_telegram_text(chat_id, msg, retries=2)
+                if not sent:
+                    await self._send_telegram_text(
+                        chat_id,
+                        _COLLABORATOR_UNAVAILABLE_NOTICE,
+                        retries=5,
+                    )
         except Exception as e:
             logger.warning("Failed to send collaborator safe-info response to chat %s: %s", chat_id, e)
 
@@ -3585,23 +4435,16 @@ class TelegramAPIProxy:
         """Send the one-time collaborator disclosure notice."""
         try:
             if self._bot_token:
-                url = f"{TELEGRAM_API_BASE}/bot{self._bot_token}/sendMessage"
-                payload = {
-                    "chat_id": chat_id,
-                    "text": _DISCLOSURE_MESSAGE,
-                    "parse_mode": "MarkdownV2",
-                }
-                req = urllib.request.Request(
-                    url,
-                    data=json.dumps(payload).encode(),
-                    headers={"Content-Type": "application/json"},
+                sent = await self._send_telegram_text(
+                    chat_id,
+                    _DISCLOSURE_MESSAGE,
+                    parse_mode="MarkdownV2",
                 )
-                loop = asyncio.get_event_loop()
-                await loop.run_in_executor(
-                    None,
-                    lambda: urllib.request.urlopen(req, timeout=5, context=self._ssl_context),
-                )
-                logger.info("Sent collaborator disclosure to chat %s", chat_id)
+                if not sent:
+                    # Markdown formatting can fail in edge cases; retry plain text.
+                    sent = await self._send_telegram_text(chat_id, _DISCLOSURE_MESSAGE)
+                if sent:
+                    logger.info("Sent collaborator disclosure to chat %s", chat_id)
         except Exception as e:
             logger.warning("Failed to send disclosure to chat %s: %s", chat_id, e)
 
@@ -3610,17 +4453,13 @@ class TelegramAPIProxy:
         try:
             if self._bot_token:
                 msg = self._collaborator_safe_notice(command)
-                url = f"{TELEGRAM_API_BASE}/bot{self._bot_token}/sendMessage"
-                req = urllib.request.Request(
-                    url,
-                    data=json.dumps({"chat_id": chat_id, "text": msg}).encode(),
-                    headers={"Content-Type": "application/json"},
-                )
-                loop = asyncio.get_event_loop()
-                await loop.run_in_executor(
-                    None,
-                    lambda: urllib.request.urlopen(req, timeout=5, context=self._ssl_context),
-                )
+                sent = await self._send_telegram_text(chat_id, msg, retries=2)
+                if not sent:
+                    await self._send_telegram_text(
+                        chat_id,
+                        _COLLABORATOR_UNAVAILABLE_NOTICE,
+                        retries=5,
+                    )
         except Exception as e:
             logger.warning("Failed to send command-blocked notice to chat %s: %s", chat_id, e)
 
@@ -3655,18 +4494,16 @@ class TelegramAPIProxy:
                     "If this is an error, contact the system owner."
                 )
             if self._bot_token:
-                url = f"https://api.telegram.org/bot{self._bot_token}/sendMessage"
-                req = urllib.request.Request(
-                    url,
-                    data=json.dumps({"chat_id": chat_id, "text": notice}).encode(),
-                    headers={"Content-Type": "application/json"},
-                )
-                loop = asyncio.get_event_loop()
-                await loop.run_in_executor(
-                    None,
-                    lambda: urllib.request.urlopen(req, timeout=5, context=self._ssl_context),
-                )
-                logger.info(f"Sent block notification to chat {chat_id}")
+                sent = await self._send_telegram_text(chat_id, notice, retries=2)
+                if not sent:
+                    fallback = (
+                        _COLLABORATOR_UNAVAILABLE_NOTICE
+                        if not is_owner
+                        else "⚠️ AgentShroud notice unavailable. Please retry /status."
+                    )
+                    sent = await self._send_telegram_text(chat_id, fallback, retries=5)
+                if sent:
+                    logger.info(f"Sent block notification to chat {chat_id}")
         except Exception as e:
             logger.error(f"Failed to send block notification to {chat_id}: {e}")
 

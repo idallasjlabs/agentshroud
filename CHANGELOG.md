@@ -14,6 +14,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 Two new security modules landing via open PRs (#24, #25). Dependency: P1 must merge before P2.
 
+Additional stabilization work in current cycle focuses on v0.8.0 Telegram security-path reliability, collaborator safety-response consistency, owner-gated approval semantics, and regression expansion.
+
 ### Added
 
 #### P1: HTTP CONNECT Proxy (PR #24)
@@ -37,6 +39,36 @@ Two new security modules landing via open PRs (#24, #25). Dependency: P1 must me
 - 1Password service account token isolated to gateway — eliminates bot-side credential exposure
 - Bot outbound HTTP restricted to approved domain allowlist
 - Shell expansion credential leak pattern eliminated in `op-wrapper.sh`
+
+### Changed
+- Telegram protected-response wording standardized to canonical header:
+  - `🛡️ Protected by AgentShroud` + two newlines
+- Collaborator egress redaction wording now explicitly states owner-gated behavior.
+- Owner target parsing for collaborator management commands expanded to support:
+  - numeric user IDs,
+  - static aliases,
+  - pending username aliases (e.g. `/approve ana`, `/deny ana`).
+
+### Fixed
+- Pending collaborator notice delivery now uses deterministic local fallback path to reduce no-response scenarios.
+- Block-notification path now has deterministic fallback behavior for both collaborator and owner contexts when primary send fails.
+- Local command normalization/regression coverage expanded for:
+  - `/whoami@bot` variants
+  - plain `whoami` local handling.
+
+### Added
+- New v0.8.0 execution summary draft:
+  - `docs/planning/v0.8.0-execution-summary-draft.md`
+- Updated release planning tracker section:
+  - `docs/planning/RELEASE-PLAN.md` → “Current Execution Tracker (2026-03-14)”
+- Updated tranche execution checklist with explicit v0.8.0/v0.9.0 remaining verification gates:
+  - `remaining-code-only-tranches.md`
+
+### Tests
+- Gateway Telegram proxy stabilization regressions expanded (inbound/outbound).
+- Latest full gateway run:
+  - `pytest -q gateway/tests/test_telegram_proxy_inbound.py gateway/tests/test_telegram_proxy_outbound.py`
+  - **516 passed, 0 failed, 0 skipped**
 
 ---
 
