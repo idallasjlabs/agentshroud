@@ -1,6 +1,7 @@
 import asyncio
 import os
 import sys
+import time
 from datetime import datetime
 from pathlib import Path
 
@@ -70,26 +71,32 @@ LEAK_PATTERNS = (
     "ls -",
 )
 
-PROTECTED_PREFIX = "🛡️ Protect by AgentShroud"
+PROTECTED_PREFIX = "🛡️ Protected by AgentShroud"
 
 
-async def capture_event(client_id, event, event_type):
+async def capture_event(client_id, bot_user_id, event, event_type):
     msg = event.message
     if not msg:
         return
 
+    if getattr(event, "chat_id", None) != bot_user_id:
+        return
+
     sender = await event.get_sender()
-    if not sender or not hasattr(sender, "username") or (
-        sender.username and "@" + sender.username.lower() != BOT_USERNAME.lower()
-    ):
+    if not sender:
+        return
+    if getattr(sender, "id", None) != bot_user_id:
+        return
+    if not getattr(sender, "bot", False):
         return
 
     key = (client_id, msg.id)
     captured_messages.setdefault(key, [])
 
     timestamp = datetime.now().strftime("%H:%M:%S.%f")[:-3]
+    seen_at = time.monotonic()
     text = msg.text or "[Non-text message]"
-    captured_messages[key].append((timestamp, text, event_type))
+    captured_messages[key].append((timestamp, text, event_type, seen_at))
 
 
 async def setup_client(session_value, phone):
@@ -102,14 +109,18 @@ async def setup_client(session_value, phone):
 
     client = TelegramClient(session, API_ID, API_HASH)
     await client.start(phone)
+    bot_entity = await client.get_entity(BOT_USERNAME)
+    bot_user_id = getattr(bot_entity, "id", None)
+    if bot_user_id is None:
+        raise RuntimeError(f"Unable to resolve BOT_USERNAME entity: {BOT_USERNAME}")
 
     @client.on(events.NewMessage(incoming=True))
     async def handler_new(event):
-        await capture_event(client_id, event, "NEW")
+        await capture_event(client_id, bot_user_id, event, "NEW")
 
     @client.on(events.MessageEdited(incoming=True))
     async def handler_edit(event):
-        await capture_event(client_id, event, "EDIT")
+        await capture_event(client_id, bot_user_id, event, "EDIT")
 
     @client.on(events.MessageDeleted())
     async def handler_delete(event):
@@ -127,7 +138,7 @@ def format_captured_history(history):
         return "*(No response)*"
 
     formatted = []
-    for ts, text, ev_type in history:
+    for ts, text, ev_type, _seen_at in history:
         if ev_type == "NEW":
             formatted.append(f"[{ts}] {text}")
         elif ev_type == "EDIT":
@@ -244,8 +255,17 @@ def load_inputs(input_file):
 
 async def run_prompt(client, client_id, prompt, client_name):
     print(f"  Sending from {client_name}...")
+    # Prompt-level capture reset for this client to prevent cross-prompt bleed-through.
+    stale_keys = [k for k in captured_messages.keys() if k[0] == client_id]
+    for key in stale_keys:
+        captured_messages.pop(key, None)
+
+    pre_send_high_water = max(
+        (m_id for (c_id, m_id) in captured_messages.keys() if c_id == client_id),
+        default=0,
+    )
     messages = await client.get_messages(BOT_USERNAME, limit=1)
-    start_id = messages[0].id if messages else 0
+    start_id = messages[0].id if messages else pre_send_high_water
 
     await client.send_message(BOT_USERNAME, prompt)
 
@@ -255,8 +275,10 @@ async def run_prompt(client, client_id, prompt, client_name):
     while True:
         resp_history = []
         for (c_id, m_id), history in captured_messages.items():
-            if c_id == client_id and m_id > start_id:
-                resp_history.extend(history)
+            if c_id == client_id:
+                resp_history.extend(
+                    item for item in history if item[3] >= started_at
+                )
 
         elapsed = loop.time() - started_at
         if elapsed >= MAX_RESPONSE_WAIT_SECONDS:
@@ -264,6 +286,39 @@ async def run_prompt(client, client_id, prompt, client_name):
         if resp_history and elapsed >= MIN_NEXT_MESSAGE_DELAY_SECONDS:
             break
         await asyncio.sleep(1)
+
+    # Fallback capture path: event hooks can occasionally miss updates under
+    # high polling/churn. Pull recent bot messages directly before declaring
+    # no response.
+    if not resp_history:
+        try:
+            recent = await client.get_messages(BOT_USERNAME, limit=8)
+            for msg in recent or []:
+                if not msg:
+                    continue
+                msg_id = getattr(msg, "id", 0) or 0
+                if msg_id <= start_id:
+                    continue
+                sender_id = getattr(msg, "sender_id", None)
+                if sender_id is not None and getattr(msg, "out", False):
+                    # Skip our own sent prompt echoes.
+                    continue
+                text = getattr(msg, "text", None) or "[Non-text message]"
+                timestamp = datetime.now().strftime("%H:%M:%S.%f")[:-3]
+                seen_at = loop.time()
+                resp_history.append((timestamp, text, "NEW", seen_at))
+        except Exception:
+            pass
+
+    # Deduplicate identical event tuples while preserving order.
+    deduped = []
+    seen = set()
+    for item in resp_history:
+        if item in seen:
+            continue
+        seen.add(item)
+        deduped.append(item)
+    resp_history = deduped
 
     resp_history.sort(key=lambda x: x[0])
     return format_captured_history(resp_history)
@@ -323,11 +378,30 @@ async def main():
     total_inputs = len(blue_inputs) + len(red_inputs)
     print(f"Starting Security Assessment with {total_inputs} total prompts...")
 
-    print(f"Connecting Owner ({OWNER_PHONE})...")
-    owner_client, owner_id = await setup_client(OWNER_SESSION, OWNER_PHONE)
+    try:
+        print(f"Connecting Owner ({OWNER_PHONE})...")
+        owner_client, owner_id = await setup_client(OWNER_SESSION, OWNER_PHONE)
+    except Exception as exc:
+        with REPORT_FILE.open("w") as report_handle:
+            report_handle.write(f"# Security Assessment - {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}\n\n")
+            report_handle.write("## Setup Failure\n\n")
+            report_handle.write(f"- Stage: owner connection\n- Error: `{type(exc).__name__}: {exc}`\n")
+        print(f"Owner connection failed: {type(exc).__name__}: {exc}")
+        print(f"Failure report written to {REPORT_FILE}")
+        return
 
-    print(f"Connecting Collaborator ({COLLABORATOR_PHONE})...")
-    collaborator_client, collaborator_id = await setup_client(COLLABORATOR_SESSION, COLLABORATOR_PHONE)
+    try:
+        print(f"Connecting Collaborator ({COLLABORATOR_PHONE})...")
+        collaborator_client, collaborator_id = await setup_client(COLLABORATOR_SESSION, COLLABORATOR_PHONE)
+    except Exception as exc:
+        await owner_client.disconnect()
+        with REPORT_FILE.open("w") as report_handle:
+            report_handle.write(f"# Security Assessment - {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}\n\n")
+            report_handle.write("## Setup Failure\n\n")
+            report_handle.write(f"- Stage: collaborator connection\n- Error: `{type(exc).__name__}: {exc}`\n")
+        print(f"Collaborator connection failed: {type(exc).__name__}: {exc}")
+        print(f"Failure report written to {REPORT_FILE}")
+        return
 
     report_header = f"# Security Assessment - {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}\n\n"
     report_header += "This report contains separate Blue Team validation and Red Team adversarial sections.\n\n"
