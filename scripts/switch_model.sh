@@ -25,6 +25,20 @@ Examples:
 EOF
 }
 
+normalize_cloud_ref() {
+  local provider="$1"
+  local ref="$2"
+  if [[ -z "${ref}" ]]; then
+    echo ""
+    return 0
+  fi
+  if [[ "${ref}" == */* ]]; then
+    echo "${ref}"
+    return 0
+  fi
+  echo "${provider}/${ref}"
+}
+
 if [[ $# -lt 1 || $# -gt 3 ]]; then
   usage
   exit 2
@@ -68,8 +82,8 @@ case "$TARGET" in
     CLOUD_REF="google/gemini-2.5-flash"
     OPENCLAW_MAIN_MODEL="google/gemini-2.5-flash"
     if [[ -n "${CUSTOM_MODEL_REF}" ]]; then
-      CLOUD_REF="${CUSTOM_MODEL_REF}"
-      OPENCLAW_MAIN_MODEL="${CUSTOM_MODEL_REF}"
+      CLOUD_REF="$(normalize_cloud_ref "google" "${CUSTOM_MODEL_REF}")"
+      OPENCLAW_MAIN_MODEL="${CLOUD_REF}"
     fi
     ;;
   anthropic)
@@ -77,8 +91,8 @@ case "$TARGET" in
     CLOUD_REF="anthropic/claude-opus-4-6"
     OPENCLAW_MAIN_MODEL="anthropic/claude-opus-4-6"
     if [[ -n "${CUSTOM_MODEL_REF}" ]]; then
-      CLOUD_REF="${CUSTOM_MODEL_REF}"
-      OPENCLAW_MAIN_MODEL="${CUSTOM_MODEL_REF}"
+      CLOUD_REF="$(normalize_cloud_ref "anthropic" "${CUSTOM_MODEL_REF}")"
+      OPENCLAW_MAIN_MODEL="${CLOUD_REF}"
     fi
     ;;
   openai)
@@ -86,8 +100,8 @@ case "$TARGET" in
     CLOUD_REF="openai/gpt-4o-mini"
     OPENCLAW_MAIN_MODEL="openai/gpt-4o-mini"
     if [[ -n "${CUSTOM_MODEL_REF}" ]]; then
-      CLOUD_REF="${CUSTOM_MODEL_REF}"
-      OPENCLAW_MAIN_MODEL="${CUSTOM_MODEL_REF}"
+      CLOUD_REF="$(normalize_cloud_ref "openai" "${CUSTOM_MODEL_REF}")"
+      OPENCLAW_MAIN_MODEL="${CLOUD_REF}"
     fi
     ;;
   -h|--help|help)
