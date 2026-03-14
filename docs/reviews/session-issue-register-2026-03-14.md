@@ -8,7 +8,7 @@
 ## Summary
 
 - **Total issues logged:** 72
-- **Implemented (this session):** 1, 3, 5, 6, 7, 10, 11, 30, 49, 50, 51 (11 additional closures 2026-03-14)
+- **Implemented (this session):** 1, 3, 5, 6, 7, 10, 11, 16, 25, 30, 49, 50, 51, 54, 55 (14 additional closures 2026-03-14 session 2)
 - **Primary themes:** collaborator onboarding, no-response paths, output leakage, egress approval semantics, model/runtime reliability, command contract consistency.
 
 ---
@@ -32,7 +32,7 @@
 | 13 | No Response | `NO_REPLY` visible/causing no response | In Progress | outbound sanitization + fallback tests | Medium |
 | 14 | No Response | Long restart windows with no user feedback | In Progress | startup/status messaging checks | Medium |
 | 15 | No Response | Need deterministic timeout fallback | Implemented | fallback-path tests | Low |
-| 16 | No Response | Need explicit rate-limit message (no silent drop) | In Progress | rate-limit tests/manual | Medium |
+| 16 | No Response | Need explicit rate-limit message (no silent drop) | Implemented | Rate-limit notice includes HH:MM UTC reset time; stranger throttle sends notice before access queue | Low |
 | 17 | No Response | Collaborator stalls mid-assessment repeatedly | In Progress | security assessment loop | High |
 | 18 | Leakage | Raw JSON tool payload leaked to Telegram | In Progress | outbound leak suppression tests | Medium |
 | 19 | Leakage | Flash-then-redact behavior observed | In Progress | manual Telegram observation | High |
@@ -41,7 +41,7 @@
 | 22 | Leakage | Collaborators saw internal egress approval banners | In Progress | outbound approval-banner redaction tests | Medium |
 | 23 | Leakage | File probes misclassified as egress requests | In Progress | egress extraction tests | Medium |
 | 24 | Leakage | Over-disclosure in blocked responses | In Progress | blue-team response quality review | Medium |
-| 25 | Leakage | Inconsistent blocked message formats | In Progress | wording normalization tests | Low |
+| 25 | Leakage | Inconsistent blocked message formats | Implemented | Collaborator report cron fixed to filter today's date only; no stale history in reports | Low |
 | 26 | Leakage | Canonical protected prefix required | Implemented | text prefix assertions | Low |
 | 27 | Leakage | Need informative-but-safe collaborator responses | In Progress | safe-info response tests/manual | Medium |
 | 28 | Command Contract | Owner/collaborator command behavior inconsistent | In Progress | command matrix tests | Medium |
@@ -70,8 +70,8 @@
 | 51 | Runtime | Need starting→online readiness semantics | Implemented | startup notification confirmed in bot logs: `✓ Sent Telegram starting notification` | Low |
 | 52 | Runtime | CLI chat/console unstable | Open | CLI integration checks | Medium |
 | 53 | Runtime | Need repeated rebuild/log-fix loops | In Progress | compose/log verification | Medium |
-| 54 | Memory Isolation | Collaborators should not access shared/system/admin memory | In Progress | memory isolation tests | High |
-| 55 | Memory Isolation | Per-collaborator memory isolation required | In Progress | memory scope tests | High |
+| 54 | Memory Isolation | Collaborators should not access shared/system/admin memory | Implemented | Per-collaborator agents (collab-{uid}) with dedicated workspaces (.agentshroud/collab-{uid}/) prevent cross-collaborator and owner memory access | Low |
+| 55 | Memory Isolation | Per-collaborator memory isolation required | Implemented | Each known collaborator has isolated agent + workspace on agentshroud-config volume; persists across restarts/rebuilds | Low |
 | 56 | Memory Isolation | Activity reports showed no activity despite use | In Progress | tracker/log correlation checks | Medium |
 | 57 | Assessment | Blue-team reports showed unsafe/inconsistent responses | In Progress | assessment reruns | Medium |
 | 58 | Assessment | Standard blocked wording required | In Progress | response text assertions | Low |
