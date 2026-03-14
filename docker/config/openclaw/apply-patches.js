@@ -118,14 +118,88 @@ if (!hasMain) {
   }
 }
 
+const COLLABORATOR_IDS = {
+  '8506022825': 'Brett Galura',
+  '8545356403': 'Chris Shelton',
+  '15712621992': 'Gabriel Fuentes',
+  '8279589982': 'Steve Hay',
+  '8526379012': 'TJ Winter',
+  '7614658040': 'Isaiah (collaborator test)',
+};
+const OWNER_TELEGRAM_ID = '8096968754';
+
 const cIdx = config.agents.list.findIndex((a) => a.id === 'collaborator');
-if (cIdx >= 0) {
+if (cIdx < 0) {
+  config.agents.list.push({
+    id: 'collaborator',
+    name: 'AgentShroud Collaborator',
+    model: MAIN_MODEL,
+    tools: {
+      profile: 'minimal',
+      deny: [
+        'exec', 'process', 'gateway', 'cron', 'message',
+        'sessions_spawn', 'sessions_send', 'subagents',
+        'memory_search', 'memory_get', 'tts', 'pdf',
+        'nodes', 'browser', 'canvas', 'agents_list',
+        'sessions_list', 'sessions_history', 'session_status',
+        'image',
+      ],
+    },
+    skills: [],
+    workspace: '.agentshroud/collaborator-workspace',
+    memorySearch: { enabled: false },
+    heartbeat: { enabled: false },
+  });
+  console.log(`[init-patch] Added collaborator agent (${MAIN_MODEL}, restricted tools)`);
+  changed = true;
+} else {
   if (config.agents.list[cIdx].model !== MAIN_MODEL) {
     config.agents.list[cIdx].model = MAIN_MODEL;
     changed = true;
   }
   if (config.agents.list[cIdx].memorySearch === false) {
     config.agents.list[cIdx].memorySearch = { enabled: false };
+    changed = true;
+  }
+  // Migrate stale workspace path from read-only rootfs to writable volume path
+  if (config.agents.list[cIdx].workspace === 'collaborator-workspace') {
+    config.agents.list[cIdx].workspace = '.agentshroud/collaborator-workspace';
+    console.log('[init-patch] Migrated collaborator workspace to .agentshroud/collaborator-workspace');
+    changed = true;
+  }
+}
+
+// Patch 1b: bindings — owner + all collaborator IDs
+config.bindings = Array.isArray(config.bindings) ? config.bindings : [];
+
+const hasOwnerBinding = config.bindings.some(
+  (b) => b.agentId === 'main' && b.match && b.match.peer && b.match.peer.id === OWNER_TELEGRAM_ID
+);
+if (!hasOwnerBinding) {
+  config.bindings = config.bindings.filter(
+    (b) => !(b.match && b.match.peer && b.match.peer.id === OWNER_TELEGRAM_ID)
+  );
+  config.bindings.unshift({
+    agentId: 'main',
+    match: { channel: 'telegram', peer: { kind: 'direct', id: OWNER_TELEGRAM_ID } },
+  });
+  console.log(`[init-patch] Added Telegram binding: ${OWNER_TELEGRAM_ID} → main`);
+  changed = true;
+}
+
+for (const [collabId, collabName] of Object.entries(COLLABORATOR_IDS)) {
+  const hasBind = config.bindings.some(
+    (b) => b.agentId === 'collaborator' && b.match && b.match.peer && b.match.peer.id === collabId
+  );
+  if (!hasBind) {
+    config.bindings = config.bindings.filter(
+      (b) => !(b.match && b.match.peer && b.match.peer.id === collabId)
+    );
+    config.bindings.push({
+      agentId: 'collaborator',
+      match: { channel: 'telegram', peer: { kind: 'direct', id: collabId } },
+    });
+    console.log(`[init-patch] Added Telegram binding: ${collabId} (${collabName}) → collaborator`);
     changed = true;
   }
 }
@@ -190,7 +264,7 @@ if (telegramToken) {
   }
 
   // Prevent doctor warning/crash-loop noise for allowlist policy.
-  const defaultAllowlist = ['8096968754', '7614658040', '8279589982', '8506022825', '8526379012', '8545356403'];
+  const defaultAllowlist = ['8096968754', '7614658040', '8279589982', '8506022825', '8526379012', '8545356403', '15712621992'];
   const envAllow = String(process.env.AGENTSHROUD_TELEGRAM_ALLOWLIST || '')
     .split(',')
     .map((v) => v.trim())
