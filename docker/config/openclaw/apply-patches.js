@@ -186,19 +186,53 @@ if (!hasOwnerBinding) {
   changed = true;
 }
 
+// Per-collaborator isolated agents: each known collaborator gets their own agent
+// with a dedicated workspace so memory never bleeds between collaborators or the owner.
+const _COLLAB_TOOL_DENY = [
+  'exec', 'process', 'gateway', 'cron', 'message',
+  'sessions_spawn', 'sessions_send', 'subagents',
+  'memory_search', 'memory_get', 'tts', 'pdf',
+  'nodes', 'browser', 'canvas', 'agents_list',
+  'sessions_list', 'sessions_history', 'session_status',
+  'image',
+];
+
 for (const [collabId, collabName] of Object.entries(COLLABORATOR_IDS)) {
-  const hasBind = config.bindings.some(
-    (b) => b.agentId === 'collaborator' && b.match && b.match.peer && b.match.peer.id === collabId
+  const agentId = `collab-${collabId}`;
+  const agentIdx = config.agents.list.findIndex((a) => a.id === agentId);
+  if (agentIdx < 0) {
+    config.agents.list.push({
+      id: agentId,
+      name: `${collabName} (Collaborator)`,
+      model: MAIN_MODEL,
+      tools: { profile: 'minimal', deny: _COLLAB_TOOL_DENY },
+      skills: [],
+      workspace: `.agentshroud/collab-${collabId}`,
+      memorySearch: { enabled: false },
+    });
+    console.log(`[init-patch] Added per-collaborator agent: ${agentId} (${collabName})`);
+    changed = true;
+  } else {
+    if (config.agents.list[agentIdx].model !== MAIN_MODEL) {
+      config.agents.list[agentIdx].model = MAIN_MODEL;
+      changed = true;
+    }
+  }
+
+  // Bind this collaborator's Telegram ID to their dedicated per-user agent.
+  // Migrate any existing generic 'collaborator' binding to the per-user agent.
+  const hasPerUserBind = config.bindings.some(
+    (b) => b.agentId === agentId && b.match && b.match.peer && b.match.peer.id === collabId
   );
-  if (!hasBind) {
+  if (!hasPerUserBind) {
     config.bindings = config.bindings.filter(
       (b) => !(b.match && b.match.peer && b.match.peer.id === collabId)
     );
     config.bindings.push({
-      agentId: 'collaborator',
+      agentId: agentId,
       match: { channel: 'telegram', peer: { kind: 'direct', id: collabId } },
     });
-    console.log(`[init-patch] Added Telegram binding: ${collabId} (${collabName}) → collaborator`);
+    console.log(`[init-patch] Bound ${collabId} (${collabName}) → ${agentId}`);
     changed = true;
   }
 }
