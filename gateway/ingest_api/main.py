@@ -444,7 +444,7 @@ async def op_proxy(request: OpProxyRequest, auth: AuthRequired):
     # Validate op:// format
     if not reference.startswith("op://"):
         raise HTTPException(
-            status_code=status.HTTP_422_UNPROCESSABLE_CONTENT,
+            status_code=status.HTTP_422_UNPROCESSABLE_ENTITY,
             detail="reference must start with op://",
         )
 

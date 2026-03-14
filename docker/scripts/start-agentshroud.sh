@@ -223,13 +223,24 @@ _OWNER_CHAT_ID="8096968754"
 _GATEWAY_TELEGRAM_BASE="${GATEWAY_OP_PROXY_URL:-http://gateway:8080}/telegram-api"
 
 _telegram_bot_token() {
+    # Try env var first (exported from Docker secret at line ~31)
+    if [ -n "${TELEGRAM_BOT_TOKEN:-}" ]; then
+        printf '%s' "$TELEGRAM_BOT_TOKEN"
+        return 0
+    fi
+    # Fall back to reading from OpenClaw config file (try both known paths)
     node -e "
-        try {
-            const c = JSON.parse(require('fs').readFileSync(
-                '/home/node/.openclaw/openclaw.json', 'utf8'));
-            process.stdout.write(
-                (c.channels && c.channels.telegram && c.channels.telegram.botToken) || '');
-        } catch(e) {}
+        const paths = [
+            '/home/node/.agentshroud/openclaw.json',
+            '/home/node/.openclaw/openclaw.json',
+        ];
+        for (const p of paths) {
+            try {
+                const c = JSON.parse(require('fs').readFileSync(p, 'utf8'));
+                const t = c.channels && c.channels.telegram && c.channels.telegram.botToken;
+                if (t) { process.stdout.write(t); process.exit(0); }
+            } catch(e) {}
+        }
     " 2>/dev/null
 }
 
