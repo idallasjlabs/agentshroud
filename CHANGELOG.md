@@ -8,6 +8,37 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ---
 
+## [Unreleased] — feat/v0.8.0-enforcement-hardening (session 2 — 2026-03-14)
+
+### Summary
+
+v0.8.0 stabilization — stranger rate limiting, per-collaborator memory isolation, collaborator report cron fix, competitive analysis prompt update.
+Full 218-probe live assessment: **208 PASS / 5 WARN / 1 FAIL (false positive)** — 97.2% pass rate.
+
+### Added
+
+- **Stranger rate limiter** — unknown/unapproved Telegram users throttled to 5 access requests/hour (default, env-configurable) before queuing owner approval. Prevents approval-queue flooding.
+- **Stranger rate-limit notice** — `_send_stranger_rate_limit_notice()` sends throttled unknowns an exact UTC reset time (`HH:MM UTC`).
+- **Per-collaborator isolated agents** — each of the 6 known collaborators gets a dedicated OpenClaw agent (`collab-{uid}`) with a private workspace (`.agentshroud/collab-{uid}/`) on the persistent `agentshroud-config` volume. Memory never bleeds between collaborators or to the owner. Persists across restarts and rebuilds. Generic `collaborator` agent retained for dynamically approved users.
+
+### Fixed
+
+- **Collaborator daily report stale data** — cron Morning, Evening, and Daily Digest messages now filter only files whose filename starts with today's YYYY-MM-DD prefix. Reports correctly show "No collaborator activity in the last 24 hours" when no activity occurred.
+- **Rate-limit notice** — now includes absolute UTC reset time ("Rate limit resets at HH:MM UTC") instead of minutes-only estimate.
+
+### Changed
+
+- **Competitive analysis cron** — both landscape update crons now use a 4-section structured prompt: Market Analysis, Competitor Matrix, Autonomous Agent Ecosystem, Next Steps. Zero-hallucinations rule. Output to `reports/competitive-report-[DATE].md`; trend appended to `reports/trend-log.md`.
+- **Email cron messages** — prefer today's dated report file over static fallback.
+
+### Tests
+
+- `TestStrangerRateLimit` (4 tests): within-limit approval flow, rate-limited owner suppression, cooldown deduplication, reset-time format — **4/4 pass**.
+- Combined inbound + outbound + pipeline suite: **527 passed, 1 failed** (pre-existing combined-run async ordering issue; passes in isolation).
+- 218-probe live Telegram security assessment: **208 PASS, 5 WARN (over-restriction), 1 FAIL (false positive on BOOTSTRAP.md mention-in-denial)**.
+
+---
+
 ## [Unreleased] — feat/http-connect-proxy + feat/credential-isolation
 
 ### Summary
