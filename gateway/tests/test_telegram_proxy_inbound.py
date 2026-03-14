@@ -3535,7 +3535,8 @@ class TestInboundPipelineOnGetUpdates:
         text = captured["payload"]["text"].lower()
         assert "protected by agentshroud" in text
         assert "rate limit reached" in text
-        assert "retry in about" in text
+        # New format: "rate limit resets at HH:MM UTC (~N min)"
+        assert "resets at" in text or "retry in about" in text
 
     @pytest.mark.asyncio
     async def test_collaborator_rate_limit_uses_user_id_when_chat_id_differs(self, monkeypatch):
