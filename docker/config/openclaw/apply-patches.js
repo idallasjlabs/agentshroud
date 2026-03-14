@@ -148,7 +148,6 @@ if (cIdx < 0) {
     skills: [],
     workspace: '.agentshroud/collaborator-workspace',
     memorySearch: { enabled: false },
-    heartbeat: { enabled: false },
   });
   console.log(`[init-patch] Added collaborator agent (${MAIN_MODEL}, restricted tools)`);
   changed = true;
