@@ -202,10 +202,18 @@ if (!hasCollaborator) {
 } else {
   // FORCED UPDATE for collaborator too
   const cIdx = config.agents.list.findIndex(a => a.id === 'collaborator');
-  if (cIdx >= 0 && config.agents.list[cIdx].model !== MAIN_MODEL) {
-    config.agents.list[cIdx].model = MAIN_MODEL;
-    console.log(`[init-patch] Forced collaborator model update to ${MAIN_MODEL}`);
-    changed = true;
+  if (cIdx >= 0) {
+    if (config.agents.list[cIdx].model !== MAIN_MODEL) {
+      config.agents.list[cIdx].model = MAIN_MODEL;
+      console.log(`[init-patch] Forced collaborator model update to ${MAIN_MODEL}`);
+      changed = true;
+    }
+    // Migrate stale workspace path from read-only rootfs to writable volume path
+    if (config.agents.list[cIdx].workspace === 'collaborator-workspace') {
+      config.agents.list[cIdx].workspace = '.agentshroud/collaborator-workspace';
+      console.log('[init-patch] Migrated collaborator workspace to .agentshroud/collaborator-workspace');
+      changed = true;
+    }
   }
 }
 
