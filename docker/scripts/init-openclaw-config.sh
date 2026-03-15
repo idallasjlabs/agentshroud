@@ -42,11 +42,6 @@ fi
 
 node "${DEFAULTS_DIR}/apply-patches.js" "${OPENCLAW_DIR}/openclaw.json"
 
-# ── 2a. setup-https-proxy.js — HTTPS global agent for proxy-unaware SDK clients ─
-# Loaded via NODE_OPTIONS=--require so @slack/bolt and other clients that don't
-# natively read HTTPS_PROXY route through the CONNECT proxy at gateway:8181.
-cp "${DEFAULTS_DIR}/setup-https-proxy.js" "${OPENCLAW_DIR}/setup-https-proxy.js" 2>/dev/null || true
-
 # ── 2b. auth-profiles.json — inject provider credentials (cloud + local) ─────
 # OpenClaw validates credentials from its per-agent auth store before making
 # API calls. We seed provider keys here so model-mode switching is one env var.
