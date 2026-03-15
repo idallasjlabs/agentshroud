@@ -35,6 +35,11 @@ ALLOWED_DOMAINS: list[str] = [
     "gmail.googleapis.com",
     "*.github.com",
     "*.githubusercontent.com",
+    # Slack Socket Mode WebSocket endpoint (OpenClaw native Slack channel)
+    "wss-primary.slack.com",
+    "wss-backup.slack.com",
+    "slack.com",
+    "*.slack.com",
 ]
 
 # Internal control-plane destinations required for channel transport.

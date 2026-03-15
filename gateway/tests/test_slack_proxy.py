@@ -1,275 +1,23 @@
 # Copyright © 2026 Isaiah Dallas Jefferson, Jr. AgentShroud™. All rights reserved.
-"""Tests for SlackAPIProxy — inbound event handling and outbound API proxying."""
+"""Tests for SlackAPIProxy — outbound Slack API proxying through SecurityPipeline."""
 from __future__ import annotations
 
-import hashlib
-import hmac
 import json
-import time
 from unittest.mock import AsyncMock, MagicMock, patch
 
 import pytest
 
-from gateway.proxy.slack_proxy import SlackAPIProxy, _SLACK_SIG_VERSION
+from gateway.proxy.slack_proxy import SlackAPIProxy
 
 
 # ─── Helpers ─────────────────────────────────────────────────────────────────
 
-_TEST_SIGNING_SECRET = "test_slack_signing_secret_abc123"
-_OWNER_SLACK_ID = "U_OWNER_001"
-_COLLAB_SLACK_ID = "U_COLLAB_001"
-_STRANGER_SLACK_ID = "U_STRANGER_999"
-
-
-def _make_slack_signature(secret: str, timestamp: str, body: bytes) -> str:
-    sig_base = f"{_SLACK_SIG_VERSION}:{timestamp}:".encode() + body
-    digest = hmac.new(secret.encode(), sig_base, hashlib.sha256).hexdigest()
-    return f"{_SLACK_SIG_VERSION}={digest}"
-
-
-def _make_event_payload(
-    user_id: str = _STRANGER_SLACK_ID,
-    text: str = "Hello",
-    channel: str = "C_GENERAL",
-    event_id: str = "Ev_test_001",
-    bot_id: str | None = None,
-    subtype: str | None = None,
-) -> dict:
-    event: dict = {
-        "type": "message",
-        "user": user_id,
-        "text": text,
-        "channel": channel,
-        "ts": "1700000000.000001",
-    }
-    if bot_id:
-        event["bot_id"] = bot_id
-    if subtype:
-        event["subtype"] = subtype
-    return {
-        "type": "event_callback",
-        "event_id": event_id,
-        "event": event,
-    }
-
-
-def _make_proxy(
-    owner_id: str = _OWNER_SLACK_ID,
-    collab_ids: list[str] | None = None,
-    pipeline=None,
-) -> SlackAPIProxy:
+def _make_proxy(pipeline=None) -> SlackAPIProxy:
     """Create a SlackAPIProxy with test credentials and no real I/O."""
-    with (
-        patch("gateway.proxy.slack_proxy._read_secret_static", return_value=""),
-        patch.dict("os.environ", {
-            "AGENTSHROUD_SLACK_OWNER_USER_ID": owner_id,
-            "AGENTSHROUD_COLLABORATOR_USER_IDS": ",".join(collab_ids or [_COLLAB_SLACK_ID]),
-        }),
-    ):
+    with patch("gateway.proxy.slack_proxy._read_secret_static", return_value=""):
         proxy = SlackAPIProxy(pipeline=pipeline)
     proxy._bot_token = "xoxb-test-token"
-    proxy._signing_secret = _TEST_SIGNING_SECRET
     return proxy
-
-
-# ─── Signature Verification ───────────────────────────────────────────────────
-
-class TestVerifySignature:
-    def test_valid_signature_passes(self):
-        proxy = _make_proxy()
-        ts = str(int(time.time()))
-        body = b'{"type": "event_callback"}'
-        sig = _make_slack_signature(_TEST_SIGNING_SECRET, ts, body)
-        assert proxy.verify_signature(ts, body, sig) is True
-
-    def test_invalid_signature_fails(self):
-        proxy = _make_proxy()
-        ts = str(int(time.time()))
-        body = b'{"type": "event_callback"}'
-        assert proxy.verify_signature(ts, body, "v0=deadbeef") is False
-
-    def test_timestamp_too_old_fails(self):
-        proxy = _make_proxy()
-        old_ts = str(int(time.time()) - 400)  # > 5 minutes old
-        body = b'{"type": "event_callback"}'
-        sig = _make_slack_signature(_TEST_SIGNING_SECRET, old_ts, body)
-        assert proxy.verify_signature(old_ts, body, sig) is False
-
-    def test_invalid_timestamp_format_fails(self):
-        proxy = _make_proxy()
-        sig = _make_slack_signature(_TEST_SIGNING_SECRET, "not_a_number", b"body")
-        assert proxy.verify_signature("not_a_number", b"body", sig) is False
-
-    def test_no_signing_secret_allows_all(self):
-        proxy = _make_proxy()
-        proxy._signing_secret = ""
-        assert proxy.verify_signature("12345", b"body", "v0=garbage") is True
-
-
-# ─── URL Verification ─────────────────────────────────────────────────────────
-
-class TestHandleEvent:
-    @pytest.mark.asyncio
-    async def test_non_message_event_skipped(self):
-        proxy = _make_proxy()
-        payload = {"type": "event_callback", "event_id": "Ev1", "event": {"type": "reaction_added"}}
-        result = await proxy.handle_event(payload)
-        assert result["status"] == "skipped"
-
-    @pytest.mark.asyncio
-    async def test_bot_message_skipped(self):
-        proxy = _make_proxy()
-        payload = _make_event_payload(bot_id="BSOMEBOT")
-        result = await proxy.handle_event(payload)
-        assert result["status"] == "skipped"
-
-    @pytest.mark.asyncio
-    async def test_message_subtype_skipped(self):
-        proxy = _make_proxy()
-        payload = _make_event_payload(subtype="message_changed")
-        result = await proxy.handle_event(payload)
-        assert result["status"] == "skipped"
-
-    @pytest.mark.asyncio
-    async def test_duplicate_event_id_skipped(self):
-        proxy = _make_proxy()
-        proxy._send_slack_message = AsyncMock()
-        proxy._forward_to_bot = AsyncMock()
-        proxy._rbac.collaborator_user_ids = [_OWNER_SLACK_ID]  # force owner
-        payload = _make_event_payload(user_id=_OWNER_SLACK_ID, event_id="Ev_dup")
-        # Seed the dedup cache
-        proxy._event_dedup["Ev_dup"] = time.time()
-        result = await proxy.handle_event(payload)
-        assert result["status"] == "skipped"
-        assert "duplicate" in result["reason"]
-
-
-# ─── RBAC Enforcement ─────────────────────────────────────────────────────────
-
-class TestRBACEnforcement:
-    @pytest.mark.asyncio
-    async def test_stranger_queues_access_request(self):
-        proxy = _make_proxy()
-        proxy._send_slack_message = AsyncMock()
-        proxy._notify_owner = AsyncMock()
-        proxy._forward_to_bot = AsyncMock()
-
-        payload = _make_event_payload(user_id=_STRANGER_SLACK_ID)
-        result = await proxy.handle_event(payload)
-
-        assert result["status"] == "blocked"
-        assert _STRANGER_SLACK_ID in proxy._pending_access_requests
-        proxy._notify_owner.assert_called_once()
-
-    @pytest.mark.asyncio
-    async def test_stranger_rate_limited(self):
-        proxy = _make_proxy()
-        proxy._send_slack_message = AsyncMock()
-        proxy._notify_owner = AsyncMock()
-        # Exhaust the rate limit
-        for _ in range(10):
-            proxy._stranger_rate_limiter.check(_STRANGER_SLACK_ID)
-
-        payload = _make_event_payload(user_id=_STRANGER_SLACK_ID)
-        result = await proxy.handle_event(payload)
-
-        assert result["status"] == "blocked"
-        assert result["reason"] == "stranger rate limit"
-
-    @pytest.mark.asyncio
-    async def test_collaborator_receives_disclosure_on_first_message(self):
-        proxy = _make_proxy(collab_ids=[_COLLAB_SLACK_ID])
-        proxy._send_slack_message = AsyncMock()
-        proxy._forward_to_bot = AsyncMock()
-
-        payload = _make_event_payload(user_id=_COLLAB_SLACK_ID)
-        await proxy.handle_event(payload)
-
-        # First call should be the disclosure notice
-        first_call_text = proxy._send_slack_message.call_args_list[0][0][1]
-        assert "AgentShroud Notice" in first_call_text
-        assert _COLLAB_SLACK_ID in proxy._disclosure_sent
-
-    @pytest.mark.asyncio
-    async def test_collaborator_no_duplicate_disclosure(self):
-        proxy = _make_proxy(collab_ids=[_COLLAB_SLACK_ID])
-        proxy._send_slack_message = AsyncMock()
-        proxy._forward_to_bot = AsyncMock()
-        proxy._disclosure_sent.add(_COLLAB_SLACK_ID)  # already sent
-
-        payload = _make_event_payload(user_id=_COLLAB_SLACK_ID)
-        await proxy.handle_event(payload)
-
-        # No disclosure call on second message
-        texts = [c[0][1] for c in proxy._send_slack_message.call_args_list]
-        assert not any("AgentShroud Notice" in t for t in texts)
-
-    @pytest.mark.asyncio
-    async def test_owner_message_forwarded_without_rate_limit(self):
-        proxy = _make_proxy(owner_id=_OWNER_SLACK_ID)
-        proxy._send_slack_message = AsyncMock()
-        proxy._forward_to_bot = AsyncMock()
-
-        payload = _make_event_payload(user_id=_OWNER_SLACK_ID)
-        result = await proxy.handle_event(payload)
-
-        assert result["status"] in ("forwarded", "handled_locally")
-        proxy._forward_to_bot.assert_called_once()
-
-    @pytest.mark.asyncio
-    async def test_collaborator_blocked_command_denied(self):
-        proxy = _make_proxy(collab_ids=[_COLLAB_SLACK_ID])
-        proxy._send_slack_message = AsyncMock()
-        proxy._forward_to_bot = AsyncMock()
-        proxy._disclosure_sent.add(_COLLAB_SLACK_ID)
-
-        payload = _make_event_payload(user_id=_COLLAB_SLACK_ID, text="/approve someuser")
-        result = await proxy.handle_event(payload)
-
-        assert result["status"] == "blocked"
-        proxy._forward_to_bot.assert_not_called()
-
-
-# ─── Pipeline Integration ─────────────────────────────────────────────────────
-
-class TestPipelineIntegration:
-    @pytest.mark.asyncio
-    async def test_pipeline_blocked_message_not_forwarded(self):
-        pipeline = MagicMock()
-        pipeline_result = MagicMock()
-        pipeline_result.blocked = True
-        pipeline_result.block_reason = "injection_detected"
-        pipeline_result.sanitized_message = None
-        pipeline.process_inbound = AsyncMock(return_value=pipeline_result)
-
-        proxy = _make_proxy(owner_id=_OWNER_SLACK_ID, pipeline=pipeline)
-        proxy._send_slack_message = AsyncMock()
-        proxy._forward_to_bot = AsyncMock()
-
-        payload = _make_event_payload(user_id=_OWNER_SLACK_ID)
-        result = await proxy.handle_event(payload)
-
-        assert result["status"] == "blocked"
-        proxy._forward_to_bot.assert_not_called()
-
-    @pytest.mark.asyncio
-    async def test_pipeline_pass_message_forwarded_with_sanitized_text(self):
-        pipeline = MagicMock()
-        pipeline_result = MagicMock()
-        pipeline_result.blocked = False
-        pipeline_result.sanitized_message = "clean text"
-        pipeline.process_inbound = AsyncMock(return_value=pipeline_result)
-
-        proxy = _make_proxy(owner_id=_OWNER_SLACK_ID, pipeline=pipeline)
-        proxy._send_slack_message = AsyncMock()
-        proxy._forward_to_bot = AsyncMock()
-
-        payload = _make_event_payload(user_id=_OWNER_SLACK_ID, text="raw text")
-        await proxy.handle_event(payload)
-
-        call_payload = proxy._forward_to_bot.call_args[0][0]
-        assert call_payload["text"] == "clean text"
-        assert call_payload["source"] == "slack"
 
 
 # ─── Outbound Proxy ───────────────────────────────────────────────────────────
@@ -350,76 +98,66 @@ class TestProxyOutbound:
         assert result["ok"] is False
         assert result["error"] == "not_configured"
 
-
-# ─── Local Commands ───────────────────────────────────────────────────────────
-
-class TestLocalCommands:
     @pytest.mark.asyncio
-    async def test_status_command(self):
-        proxy = _make_proxy(owner_id=_OWNER_SLACK_ID)
-        proxy._send_slack_message = AsyncMock()
+    async def test_chat_update_content_scanned(self):
+        pipeline = MagicMock()
+        pipeline_result = MagicMock()
+        pipeline_result.blocked = False
+        pipeline_result.sanitized_message = None
+        pipeline.process_outbound = AsyncMock(return_value=pipeline_result)
 
-        handled = await proxy._handle_local_command("/status", _OWNER_SLACK_ID, "C123", "", True)
-        assert handled is True
-        sent_text = proxy._send_slack_message.call_args[0][1]
-        assert "AgentShroud Status" in sent_text
+        proxy = _make_proxy(pipeline=pipeline)
+        proxy._call_slack_api = AsyncMock(return_value={"ok": True})
 
-    @pytest.mark.asyncio
-    async def test_whoami_command(self):
-        proxy = _make_proxy(owner_id=_OWNER_SLACK_ID)
-        proxy._send_slack_message = AsyncMock()
+        body = json.dumps({"channel": "C123", "ts": "123.456", "text": "updated"}).encode()
+        await proxy.proxy_outbound("chat.update", body, "application/json")
 
-        handled = await proxy._handle_local_command("/whoami", _OWNER_SLACK_ID, "C123", "", True)
-        assert handled is True
-        sent_text = proxy._send_slack_message.call_args[0][1]
-        assert "owner" in sent_text
+        pipeline.process_outbound.assert_called_once()
 
     @pytest.mark.asyncio
-    async def test_approve_command_grants_collaborator(self):
-        proxy = _make_proxy(owner_id=_OWNER_SLACK_ID)
-        proxy._send_slack_message = AsyncMock()
-        proxy._pending_access_requests[_STRANGER_SLACK_ID] = time.time()
+    async def test_sanitized_text_replaces_original(self):
+        pipeline = MagicMock()
+        pipeline_result = MagicMock()
+        pipeline_result.blocked = False
+        pipeline_result.sanitized_message = "sanitized output"
+        pipeline.process_outbound = AsyncMock(return_value=pipeline_result)
 
-        handled = await proxy._handle_local_command(
-            f"/approve {_STRANGER_SLACK_ID}", _OWNER_SLACK_ID, "C123", "", True
-        )
-        assert handled is True
-        assert _STRANGER_SLACK_ID not in proxy._pending_access_requests
-        assert _STRANGER_SLACK_ID in proxy._runtime_collaborators
+        proxy = _make_proxy(pipeline=pipeline)
+        proxy._call_slack_api = AsyncMock(return_value={"ok": True})
 
-    @pytest.mark.asyncio
-    async def test_deny_command_rejects_requester(self):
-        proxy = _make_proxy(owner_id=_OWNER_SLACK_ID)
-        proxy._send_slack_message = AsyncMock()
-        proxy._pending_access_requests[_STRANGER_SLACK_ID] = time.time()
+        body = json.dumps({"channel": "C123", "text": "raw output"}).encode()
+        await proxy.proxy_outbound("chat.postMessage", body, "application/json")
 
-        handled = await proxy._handle_local_command(
-            f"/deny {_STRANGER_SLACK_ID}", _OWNER_SLACK_ID, "C123", "", True
-        )
-        assert handled is True
-        assert _STRANGER_SLACK_ID not in proxy._pending_access_requests
-        assert _STRANGER_SLACK_ID in proxy._runtime_revoked
+        call_body = proxy._call_slack_api.call_args[0][1]
+        assert call_body["text"] == "sanitized output"
 
     @pytest.mark.asyncio
-    async def test_revoke_command_revokes_collaborator(self):
-        proxy = _make_proxy(owner_id=_OWNER_SLACK_ID, collab_ids=[_COLLAB_SLACK_ID])
-        proxy._send_slack_message = AsyncMock()
+    async def test_urlencoded_body_parsed(self):
+        pipeline = MagicMock()
+        pipeline_result = MagicMock()
+        pipeline_result.blocked = False
+        pipeline_result.sanitized_message = None
+        pipeline.process_outbound = AsyncMock(return_value=pipeline_result)
 
-        handled = await proxy._handle_local_command(
-            f"/revoke {_COLLAB_SLACK_ID}", _OWNER_SLACK_ID, "C123", "", True
-        )
-        assert handled is True
-        assert _COLLAB_SLACK_ID in proxy._runtime_revoked
+        proxy = _make_proxy(pipeline=pipeline)
+        proxy._call_slack_api = AsyncMock(return_value={"ok": True})
+
+        body = b"channel=C123&text=hello+world"
+        await proxy.proxy_outbound("chat.postMessage", body, "application/x-www-form-urlencoded")
+
+        pipeline.process_outbound.assert_called_once()
 
     @pytest.mark.asyncio
-    async def test_owner_only_command_rejected_for_collaborator(self):
+    async def test_get_stats_returns_counters(self):
         proxy = _make_proxy()
-        proxy._send_slack_message = AsyncMock()
+        proxy._call_slack_api = AsyncMock(return_value={"ok": True})
 
-        handled = await proxy._handle_local_command(
-            f"/approve {_STRANGER_SLACK_ID}", _COLLAB_SLACK_ID, "C123", "", False
-        )
-        assert handled is False  # Caller blocks the command, not this method
+        body = json.dumps({"channel": "C123", "text": "hi"}).encode()
+        await proxy.proxy_outbound("chat.postMessage", body, "application/json")
+
+        stats = proxy.get_stats()
+        assert stats["outbound_forwarded"] == 1
+        assert stats["outbound_blocked"] == 0
 
 
 # ─── WebhookReceiver Slack extraction ────────────────────────────────────────
