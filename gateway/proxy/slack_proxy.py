@@ -49,10 +49,12 @@ class SlackAPIProxy:
         pipeline=None,
         middleware_manager=None,
         sanitizer=None,
+        tracker=None,
     ):
         self.pipeline = pipeline
         self.middleware_manager = middleware_manager
         self.sanitizer = sanitizer
+        self.tracker = tracker  # CollaboratorActivityTracker for outbound message logging
 
         # Bot token: gateway holds it; bot never sees the raw token
         self._bot_token = (
@@ -118,6 +120,29 @@ class SlackAPIProxy:
         # Forward to Slack API
         response = await self._call_slack_api(method, payload)
         self._stats["outbound_forwarded"] += 1
+
+        # Log bot responses to collaborator activity tracker for /collabs reports.
+        # Only track chat.postMessage (actual message sends, not edits or reactions).
+        # The Slack channel field is used as the user_id key; for DMs this is the
+        # user's member ID (U...), for channels it's the channel ID (C...).
+        if method == "chat.postMessage" and not is_system and self.tracker:
+            try:
+                _channel = payload.get("channel", "")
+                _text = payload.get("text", "")
+                if isinstance(_text, (list, dict)):
+                    import json as _json
+                    _text = _json.dumps(_text)
+                if _channel and _text:
+                    self.tracker.record_activity(
+                        user_id=str(_channel),
+                        username="bot",
+                        message_preview=str(_text)[:80],
+                        source="slack",
+                        direction="outbound",
+                    )
+            except Exception as _se:
+                logger.debug("Slack outbound tracker error (non-fatal): %s", _se)
+
         return response
 
     async def _call_slack_api(self, method: str, body: dict) -> dict:
