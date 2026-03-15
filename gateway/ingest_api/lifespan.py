@@ -812,12 +812,28 @@ async def lifespan(app: FastAPI):
         if _slack_app_token and _slack_enabled:
             from ..proxy.slack_proxy import SlackAPIProxy
             from ..proxy.slack_socket_client import SlackSocketClient
+            from ..proxy.slack_channel_bridge import SlackChannelBridge
+
+            # Bridge translates Slack events → synthetic Telegram updates.
+            # Pass owner IDs from RBAC so the bridge can use the real Telegram
+            # owner ID as chat_id (required for OpenClaw binding match).
+            from gateway.security.rbac_config import RBACConfig as _RBACForBridge
+            _rbac_for_bridge = _RBACForBridge()
+            _bridge = SlackChannelBridge(
+                telegram_owner_id=int(_rbac_for_bridge.owner_user_id) if _rbac_for_bridge.owner_user_id.isdigit() else None,
+                slack_owner_id=str(os.environ.get("AGENTSHROUD_SLACK_OWNER_USER_ID", "")).strip(),
+            )
+            app_state.slack_bridge = _bridge
+
             _socket_proxy = SlackAPIProxy(
                 pipeline=app_state.pipeline,
                 middleware_manager=getattr(app_state, "middleware_manager", None),
                 sanitizer=getattr(app_state, "sanitizer", None),
+                bridge=_bridge,
             )
             app_state.slack_socket_proxy = _socket_proxy
+
+            # Bridge is stored on app_state; Telegram proxy route wires it lazily on first request
             _socket_client = SlackSocketClient(_socket_proxy, _slack_app_token)
             app_state.slack_socket_task = _asyncio.create_task(_socket_client.run())
             app_state.slack_socket_client = _socket_client
