@@ -261,6 +261,40 @@ _telegram_send() {
         >/dev/null 2>&1
 }
 
+# Slack notification helpers — token injected by gateway proxy, same security model as Telegram.
+# SLACK_API_BASE_URL is set by docker-compose.yml to http://gateway:8080/slack-api so all
+# outbound Slack API calls are intercepted by the gateway for content scanning.
+_GATEWAY_SLACK_BASE="${SLACK_API_BASE_URL:-http://gateway:8080/slack-api}"
+
+_slack_channel_id() {
+    # Prefer env override, then Docker secret, then empty (disabled)
+    if [ -n "${AGENTSHROUD_SLACK_CHANNEL_ID:-}" ]; then
+        printf '%s' "$AGENTSHROUD_SLACK_CHANNEL_ID"
+        return 0
+    fi
+    if [ -f "/run/secrets/slack_bot_token" ]; then
+        # Channel ID must be configured via env — no way to derive it from the token
+        return 1
+    fi
+    return 1
+}
+
+_slack_send() {
+    local text="$1"
+    local channel
+    channel="${AGENTSHROUD_SLACK_CHANNEL_ID:-}"
+    if [ -z "$channel" ]; then
+        return 0  # Slack notifications not configured — skip silently
+    fi
+    # Route through AgentShroud gateway Slack proxy (never direct to slack.com)
+    curl -sf --max-time 10 -X POST "${_GATEWAY_SLACK_BASE}/chat.postMessage" \
+        -H "Content-Type: application/json" \
+        -H "Authorization: Bearer ${GATEWAY_AUTH_TOKEN:-}" \
+        -H "X-AgentShroud-System: 1" \
+        -d "{\"channel\":\"${channel}\",\"text\":\"${text}\"}" \
+        >/dev/null 2>&1
+}
+
 _telegram_get_me_ready() {
     local token
     token="$(_telegram_bot_token)"
@@ -311,10 +345,13 @@ trap '
         done
         echo "[startup] ✓ Memory backed up before shutdown"
     fi
-    echo "[startup] Sending Telegram notification..."
+    echo "[startup] Sending shutdown notifications..."
     _telegram_send "🔴 AgentShroud shutting down" \
         && echo "[startup] ✓ Sent Telegram shutdown notification" \
         || echo "[startup] ⚠ Could not send Telegram shutdown notification"
+    _slack_send "AgentShroud shutting down" \
+        && echo "[startup] ✓ Sent Slack shutdown notification" \
+        || true
     kill $OPENCLAW_PID 2>/dev/null
 ' TERM INT
 
@@ -343,6 +380,7 @@ trap '
     _telegram_send "🟡 AgentShroud starting" \
         && echo "[startup] ✓ Sent Telegram starting notification" \
         || echo "[startup] ⚠ Could not send Telegram starting notification"
+    _slack_send "AgentShroud starting" || true
 
     # Poll OpenClaw HTTP endpoint and Telegram/model readiness — up to 120s
     ready="no"
@@ -360,10 +398,14 @@ trap '
         _telegram_send "🛡️ AgentShroud online" \
             && echo "[startup] ✓ Sent Telegram startup notification" \
             || echo "[startup] ⚠ Could not send Telegram startup notification"
+        _slack_send "AgentShroud online" \
+            && echo "[startup] ✓ Sent Slack startup notification" \
+            || true
     else
         _telegram_send "🟠 AgentShroud starting (readiness delayed)" \
             && echo "[startup] ⚠ Sent delayed startup notification" \
             || echo "[startup] ⚠ Could not send delayed startup notification"
+        _slack_send "AgentShroud starting (readiness delayed)" || true
     fi
 ) &
 
