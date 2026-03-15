@@ -97,16 +97,18 @@ class CollaboratorActivityTracker:
         username: str,
         message_preview: str,
         source: str,
+        direction: str = "inbound",
     ) -> None:
         """Append one activity entry if user_id is a tracked collaborator.
 
         The owner is never logged. Unknown users are silently skipped.
 
         Args:
-            user_id: Telegram user ID string.
-            username: Display name (first_name or @username).
-            message_preview: Raw message text, truncated to 80 chars for privacy.
-            source: Ingress channel (e.g. "telegram").
+            user_id: Telegram/Slack user ID string.
+            username: Display name (first_name, @username, or "bot" for outbound).
+            message_preview: Message text, truncated to 80 chars for privacy.
+            source: Channel (e.g. "telegram", "slack").
+            direction: "inbound" (collaborator→bot) or "outbound" (bot→collaborator).
         """
         uid = str(user_id)
         if uid == self.owner_user_id:
@@ -123,6 +125,7 @@ class CollaboratorActivityTracker:
             "username": self._normalize_username(username),
             "message_preview": normalized_preview[:_PREVIEW_MAX],
             "source": source,
+            "direction": direction,
         }
         try:
             with self.log_path.open("a", encoding="utf-8") as fh:

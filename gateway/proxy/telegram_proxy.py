@@ -251,6 +251,9 @@ class TelegramAPIProxy:
         self._disclosure_sent: set[str] = set()
         self._runtime_revoked_collaborators: set[str] = set()
         self._pending_collaborator_requests: dict[str, dict[str, Any]] = {}
+        # Map str(chat_id) → user_id for known collaborators. Used to attribute
+        # outbound bot sendMessage calls to the correct collaborator in activity logs.
+        self._collaborator_chat_ids: dict[str, str] = {}
         self._pending_collaborator_request_cooldown_seconds = float(
             os.environ.get("AGENTSHROUD_COLLAB_REQUEST_COOLDOWN_SECONDS", "90.0")
         )
@@ -2010,6 +2013,28 @@ class TelegramAPIProxy:
             if self._is_suppressed_outbound_payload(body, content_type):
                 return {"ok": True, "result": {"suppressed": True, "method": method}}
 
+        # Log bot responses to collaborators for activity reports (/collabs)
+        if not is_system and method == "sendMessage" and body and self._collaborator_chat_ids:
+            try:
+                import json as _json
+                _outbound_data = _json.loads(body.decode("utf-8", errors="replace"))
+                _out_chat_id = str(_outbound_data.get("chat_id", ""))
+                _collab_uid = self._collaborator_chat_ids.get(_out_chat_id)
+                if _collab_uid:
+                    _response_text = _outbound_data.get("text", "")
+                    from gateway.ingest_api.state import app_state as _app_state
+                    _tracker = getattr(_app_state, "collaborator_tracker", None)
+                    if _tracker:
+                        _tracker.record_activity(
+                            user_id=_collab_uid,
+                            username="bot",
+                            message_preview=_response_text[:80],
+                            source="telegram",
+                            direction="outbound",
+                        )
+            except Exception as _ote:
+                logger.debug("Outbound collab response tracking error (non-fatal): %s", _ote)
+
         # Forward to real Telegram API
         try:
             response_data = await self._forward_to_telegram(url, body, content_type)
@@ -3087,9 +3112,14 @@ class TelegramAPIProxy:
                             username=_username,
                             message_preview=text[:80],
                             source="telegram",
+                            direction="inbound",
                         )
                 except Exception as _te:
                     logger.debug("Collaborator tracker error (non-fatal): %s", _te)
+
+            # Register collaborator chat_id → user_id for outbound response attribution
+            if is_collaborator and chat_id:
+                self._collaborator_chat_ids[str(chat_id)] = user_id
 
             # Unknown or revoked users must be re-approved by owner.
             if not is_owner and not is_collaborator and chat_id:
@@ -4746,6 +4776,55 @@ class TelegramAPIProxy:
                 f"• Pending: {', '.join(pending_display) if pending_display else 'none'}\n"
                 f"• Revoked: {', '.join(revoked_display) if revoked_display else 'none'}"
             )
+
+            # Append recent activity section from tracker (queries + bot responses)
+            try:
+                from gateway.ingest_api.state import app_state as _app_state
+                import time as _time
+                from datetime import datetime as _datetime, timezone as _tz
+                _tracker = getattr(_app_state, "collaborator_tracker", None)
+                if _tracker and configured_ids:
+                    # Pull last 24h of activity, max 60 entries
+                    _recent = _tracker.get_activity(
+                        since=_time.time() - 86400, limit=60
+                    )
+                    if _recent:
+                        # Group by (user_id, source), newest-first already
+                        _by_user: dict[str, list[dict]] = {}
+                        for _e in _recent:
+                            _k = str(_e.get("user_id", ""))
+                            _by_user.setdefault(_k, []).append(_e)
+
+                        _activity_lines: list[str] = []
+                        for _uid in configured_ids:
+                            _entries = _by_user.get(_uid, [])
+                            if not _entries:
+                                continue
+                            _name = self._resolve_display_name(_uid)
+                            _last_ts = _entries[0].get("timestamp", 0)
+                            _last_dt = _datetime.fromtimestamp(_last_ts, tz=_tz.utc)
+                            _last_str = _last_dt.strftime("%H:%M UTC")
+                            _inbound = [e for e in _entries if e.get("direction", "inbound") == "inbound"]
+                            _outbound = [e for e in _entries if e.get("direction") == "outbound"]
+                            _activity_lines.append(
+                                f"\n{_name} — {len(_inbound)}q/{len(_outbound)}r, last {_last_str}"
+                            )
+                            # Show last 3 Q+A pairs interleaved (most recent 6 entries)
+                            for _e in list(reversed(_entries))[-6:]:
+                                _d = _e.get("direction", "inbound")
+                                _src = _e.get("source", "telegram")
+                                _t = _datetime.fromtimestamp(_e.get("timestamp", 0), tz=_tz.utc)
+                                _ts = _t.strftime("%H:%M")
+                                _prefix = "  <-" if _d == "inbound" else "  ->"
+                                _src_tag = "" if _src == "telegram" else f"[{_src}]"
+                                _preview = str(_e.get("message_preview", ""))[:60]
+                                _activity_lines.append(f'{_prefix}{_src_tag} {_ts} "{_preview}"')
+
+                        if _activity_lines:
+                            msg += "\n\nRecent activity (24h):" + "".join(_activity_lines)
+            except Exception as _ae:
+                logger.debug("Collabs activity append error (non-fatal): %s", _ae)
+
             await self._send_local_notice_with_fallback(
                 chat_id,
                 msg,
