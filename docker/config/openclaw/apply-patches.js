@@ -379,11 +379,6 @@ if (slackBotToken && slackAppToken) {
       changed = true;
     }
   }
-  // SLACK_API_BASE_URL: bot routes outbound Slack API calls through gateway proxy
-  if (config.channels.slack.apiUrl !== process.env.SLACK_API_BASE_URL && process.env.SLACK_API_BASE_URL) {
-    config.channels.slack.apiUrl = process.env.SLACK_API_BASE_URL;
-    changed = true;
-  }
   console.log('[init-patch] Patched channels.slack (Socket Mode, owner allowlist)');
 } else {
   console.log('[init-patch] Slack tokens not found — skipping channels.slack patch');
