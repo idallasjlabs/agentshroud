@@ -51,7 +51,15 @@ ALLOWED_DOMAINS: list[str] = [
 # gateway's /telegram-api/ proxy (where the Slack bridge intercept lives).
 # Allowing direct CONNECT tunnels to api.telegram.org bypasses the bridge
 # and causes sendMessage responses to disappear silently.
-SYSTEM_BYPASS_DOMAINS: set[str] = set()
+SYSTEM_BYPASS_DOMAINS: set[str] = {
+    # Slack: required for OpenClaw's native Slack channel (Socket Mode WebSocket +
+    # Web API REST calls).  Must bypass interactive egress approval to avoid the
+    # approval channel itself depending on Slack being reachable.
+    "slack.com",
+    "wss-primary.slack.com",
+    "wss-backup.slack.com",
+    "edgeapi.slack.com",
+}
 
 # Domains that are unconditionally BLOCKED from direct CONNECT tunnels,
 # even if the egress filter policy would otherwise allow them.
