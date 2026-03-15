@@ -287,6 +287,11 @@ class WebhookReceiver:
                     first = sender.get("first_name", "")
                     uname = sender.get("username", "")
                     return first or f"@{uname}" if uname else "unknown"
+        elif source == "slack":
+            event = payload.get("event", {})
+            if isinstance(event, dict):
+                username = event.get("username", "") or event.get("user", "")
+                return username if username else "unknown"
         return "unknown"
 
     @staticmethod
@@ -301,18 +306,28 @@ class WebhookReceiver:
                     user_id = message["from"].get("id")
                     if user_id:
                         return str(user_id)
-                
+
                 # Fallback: check for chat id (in group chats)
                 if "chat" in message and isinstance(message["chat"], dict):
                     chat_id = message["chat"].get("id")
                     if chat_id:
                         return str(chat_id)
-            
+
             # Direct user_id field (for testing)
             if "user_id" in payload:
                 return str(payload["user_id"])
-                
-        # For other platforms, add extraction logic here
+
+        elif source == "slack":
+            # Slack Events API payload: outer envelope + event object
+            event = payload.get("event", {})
+            if isinstance(event, dict):
+                user_id = event.get("user", "")
+                if user_id:
+                    return str(user_id)
+            # Direct user_id field (for testing)
+            if "user_id" in payload:
+                return str(payload["user_id"])
+
         logger.warning(f"Could not extract user_id from {source} payload")
         return None
 
