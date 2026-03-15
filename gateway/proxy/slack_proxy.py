@@ -20,21 +20,14 @@ import json
 import logging
 import os
 
+from gateway.utils.secrets import read_secret as _read_secret_static
+
 logger = logging.getLogger("agentshroud.proxy.slack")
 
 SLACK_API_BASE = "https://slack.com/api"
 
 # Message methods whose text content must be scanned before forwarding to Slack
 _CONTENT_METHODS = frozenset({"chat.postMessage", "chat.update", "chat.meMessage"})
-
-
-def _read_secret_static(name: str, default: str = "") -> str:
-    """Read a Docker secret from /run/secrets/<name>."""
-    try:
-        with open(f"/run/secrets/{name}", "r") as fh:
-            return fh.read().strip()
-    except (FileNotFoundError, OSError):
-        return default
 
 
 class SlackAPIProxy:

@@ -30,6 +30,7 @@ from urllib.parse import urlparse
 
 from gateway.security.input_normalizer import normalize_input, strip_markdown_exfil
 from gateway.security.rbac_config import RBACConfig
+from gateway.utils.secrets import read_secret as _read_secret_static
 
 logger = logging.getLogger("agentshroud.proxy.telegram_api")
 
@@ -187,15 +188,6 @@ _KNOWN_COLLABORATOR_ALIASES: dict[str, str] = {
     "tjwinter": "8526379012",
     "isaiahcollab": "7614658040",
 }
-
-
-def _read_secret_static(name: str, default: str = "") -> str:
-    """Read a Docker secret from /run/secrets/<name> (module-level helper, no deps)."""
-    try:
-        with open(f"/run/secrets/{name}", "r") as _f:
-            return _f.read().strip()
-    except (FileNotFoundError, OSError):
-        return default
 
 
 class TelegramAPIProxy:
@@ -1758,13 +1750,19 @@ class TelegramAPIProxy:
         # Filename patterns are only high-risk when content is being revealed,
         # not when the filename appears in a denial/blocked context.
         sensitive_filenames = r"\b(?:\.env|bootstrap\.md|identity\.md|memory\.md)\b"
-        if re.search(sensitive_filenames, normalized):
+        fn_match = re.search(sensitive_filenames, normalized)
+        if fn_match:
             denial_markers = (
                 "cannot", "can't", "not allowed", "restricted", "blocked", "denied",
                 "do not", "won't", "unable", "not able", "not permitted", "access denied",
                 "i'm not", "i am not", "not authorized",
             )
-            if not any(marker in normalized for marker in denial_markers):
+            fn_start = fn_match.start()
+            # Only consider denial safe if a denial marker appears within 120 chars of the filename
+            window_start = max(0, fn_start - 120)
+            window_end = min(len(normalized), fn_match.end() + 120)
+            proximity_text = normalized[window_start:window_end]
+            if not any(marker in proximity_text for marker in denial_markers):
                 return True
         return False
 
@@ -2016,8 +2014,7 @@ class TelegramAPIProxy:
         # Log bot responses to collaborators for activity reports (/collabs)
         if not is_system and method == "sendMessage" and body and self._collaborator_chat_ids:
             try:
-                import json as _json
-                _outbound_data = _json.loads(body.decode("utf-8", errors="replace"))
+                _outbound_data = json.loads(body.decode("utf-8", errors="replace"))
                 _out_chat_id = str(_outbound_data.get("chat_id", ""))
                 _collab_uid = self._collaborator_chat_ids.get(_out_chat_id)
                 if _collab_uid:
@@ -2993,6 +2990,9 @@ class TelegramAPIProxy:
                                 self._runtime_revoked_collaborators.discard(_target_id)
                                 self._pending_collaborator_requests.pop(_target_id, None)
                                 if self._rbac and _target_id not in {str(uid) for uid in (self._rbac.collaborator_user_ids or [])}:
+                                    # NOTE: This in-memory approval is session-scoped and lost on gateway restart.
+                                    # The approved user will need to re-request access after restart.
+                                    # To persist approvals across restarts, write to agentshroud.yaml and reload config.
                                     self._rbac.collaborator_user_ids = list(self._rbac.collaborator_user_ids or []) + [_target_id]
                                 _decision_text = f"✅ *Access Approved*\n\nUser: {_cb_display}\nID: `{_target_id}`"
                                 _toast = f"✅ Approved: {_cb_display}"
@@ -3134,6 +3134,11 @@ class TelegramAPIProxy:
                 # requests. Prevents queue flooding from unapproved accounts.
                 if not self._stranger_rate_limiter.check(user_id):
                     now = time.time()
+                    # Prune expired rate-limit entries to prevent unbounded growth
+                    _now_prune = time.time()
+                    expired_keys = [k for k, v in self._recent_stranger_rate_limit_until.items() if v < _now_prune]
+                    for k in expired_keys:
+                        del self._recent_stranger_rate_limit_until[k]
                     if self._recent_stranger_rate_limit_until.get(user_id, 0) <= now:
                         await self._send_stranger_rate_limit_notice(chat_id, user_id=user_id)
                         self._recent_stranger_rate_limit_until[user_id] = (

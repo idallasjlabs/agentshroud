@@ -15,6 +15,7 @@ from fastapi import FastAPI
 
 from .config import load_config, get_module_mode, check_monitor_mode_warnings
 from ..security.agent_isolation import AgentRegistry, ContainerConfig, IsolationVerifier
+from ..utils.secrets import read_secret as _read_secret
 from .state import app_state
 from .sanitizer import PIISanitizer
 from .ledger import DataLedger
@@ -60,14 +61,6 @@ def _install_uvicorn_warning_filter() -> None:
         if isinstance(existing, _DropInvalidHTTPRequestFilter):
             return
     uvicorn_logger.addFilter(_DropInvalidHTTPRequestFilter())
-
-
-def _read_secret(name: str, default: str = "") -> str:
-    """Read a Docker secret from /run/secrets/<name>."""
-    try:
-        return Path(f"/run/secrets/{name}").read_text().strip()
-    except (FileNotFoundError, OSError):
-        return default
 
 
 @asynccontextmanager

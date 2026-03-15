@@ -194,7 +194,7 @@ const _COLLAB_TOOL_DENY = [
   'memory_search', 'memory_get', 'tts', 'pdf',
   'nodes', 'browser', 'canvas', 'agents_list',
   'sessions_list', 'sessions_history', 'session_status',
-  'image',
+  'image', 'web_fetch', 'web_search',
 ];
 
 for (const [collabId, collabName] of Object.entries(COLLABORATOR_IDS)) {
@@ -297,11 +297,18 @@ if (telegramToken) {
     changed = true;
   }
 
-  // Force dmPolicy to "open" so the owner/binding peers can message without
-  // a prior pairing handshake.  "pairing" silently drops messages from peers
-  // that haven't run /start — including Slack bridge synthetic updates where
-  // the session state is never persisted to disk.
-  // dmPolicy="open" requires allowFrom to include "*".
+  // SECURITY NOTE: dmPolicy="open" + allowFrom=["*"] is required because OpenClaw's
+  // "pairing" mode (default) drops messages without a prior /start handshake, which
+  // prevents the gateway from delivering local command responses (/status, /approve, etc.)
+  // and collaborator-approval notices.
+  //
+  // The security tradeoff: any Telegram user can initiate a conversation with the bot.
+  // This is MITIGATED by the gateway's RBAC layer which enforces owner/collaborator/
+  // stranger classification on every message before forwarding to the bot. Unknown users
+  // receive only a pending-approval notice; the bot never processes their messages.
+  //
+  // If OpenClaw adds a dmPolicy="allowlist" mode that accepts explicit peer IDs without
+  // a prior /start handshake, migrate to that model and remove the "*" wildcard.
   if (config.channels.telegram.dmPolicy !== 'open') {
     config.channels.telegram.dmPolicy = 'open';
     console.log('[init-patch] Set channels.telegram.dmPolicy = open');
