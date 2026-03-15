@@ -205,6 +205,9 @@ class TelegramAPIProxy:
         self.pipeline = pipeline
         self.middleware_manager = middleware_manager
         self.sanitizer = sanitizer
+        # Slack channel bridge: injects synthetic updates + routes outbound to Slack
+        self._slack_bridge = None  # SlackChannelBridge, wired in lifespan
+        self._slack_proxy = None   # SlackAPIProxy, wired in lifespan (for outbound routing)
         self._stats = {
             "total_requests": 0,
             "messages_scanned": 0,
@@ -290,10 +293,23 @@ class TelegramAPIProxy:
         self._recent_stranger_rate_limit_until: dict[str, float] = {}
 
     def _is_owner_chat(self, chat_id: str) -> bool:
-        """Return True when chat_id belongs to the configured owner."""
+        """Return True when chat_id belongs to the configured owner.
+
+        Handles both real Telegram owner chat_ids and Slack bridge fake chat_ids.
+        Bridge chat_ids are positive integers in the _BRIDGE_BASE range; the bridge
+        tracks which Slack user originated each session so we can delegate to rbac.is_owner().
+        """
         if not self._rbac:
             return False
-        return str(chat_id) == str(getattr(self._rbac, "owner_user_id", ""))
+        if str(chat_id) == str(getattr(self._rbac, "owner_user_id", "")):
+            return True
+        # Slack bridge: check if the fake chat_id resolves to an owner Slack session
+        if self._slack_bridge is not None:
+            try:
+                return self._slack_bridge.is_owner_bridge_chat(int(chat_id), self._rbac)
+            except (ValueError, TypeError):
+                pass
+        return False
 
     def _set_outbound_block_cascade(self, chat_id: str) -> None:
         """Set short per-chat block window to prevent fragment leak-through."""
@@ -2003,6 +2019,58 @@ class TelegramAPIProxy:
             if self._is_suppressed_outbound_payload(body, content_type):
                 return {"ok": True, "result": {"suppressed": True, "method": method}}
 
+        # ── Slack bridge: intercept getChat/getChatMember for bridge chat_ids ──
+        # OpenClaw calls getChat before processing a new conversation.  Forwarding
+        # a fake chat_id to Telegram returns 400 "chat not found" and aborts the
+        # bot's message handler.  Return a synthetic success response instead.
+        if method in ("getChat", "getChatMember") and self._slack_bridge is not None and body:
+            try:
+                import json as _json
+                _parsed = _json.loads(body) if isinstance(body, (bytes, str)) else body
+                _chat_id = int(_parsed.get("chat_id", 0))
+                if self._slack_bridge.is_bridge_chat_id(_chat_id):
+                    _session = self._slack_bridge.resolve_chat_id(_chat_id)
+                    _slack_uid = _session.slack_user_id if _session else "slack_user"
+                    if method == "getChat":
+                        return {
+                            "ok": True,
+                            "result": {
+                                "id": _chat_id,
+                                "type": "private",
+                                "first_name": "Slack",
+                                "username": _slack_uid.lower().replace("_", ""),
+                            },
+                        }
+                    # getChatMember — return the bot as admin and the user as member
+                    return {
+                        "ok": True,
+                        "result": {
+                            "status": "member",
+                            "user": {"id": _chat_id, "is_bot": False, "first_name": "Slack"},
+                        },
+                    }
+            except Exception as _exc:
+                logger.debug("Slack bridge: getChat intercept error (non-fatal): %s", _exc)
+
+        # ── Slack bridge: intercept sendMessage destined for a Slack channel ──
+        if method == "sendMessage" and self._slack_bridge is not None and body:
+            try:
+                import json as _json
+                _parsed = _json.loads(body) if isinstance(body, (bytes, str)) else body
+                _chat_id = int(_parsed.get("chat_id", 0))
+                if self._slack_bridge.is_bridge_chat_id(_chat_id):
+                    _session = self._slack_bridge.resolve_chat_id(_chat_id)
+                    _text = _parsed.get("text", "")
+                    if _session and _text and self._slack_proxy:
+                        await self._slack_proxy._send_slack_message(
+                            _session.slack_channel,
+                            _text,
+                            thread_ts=_session.thread_ts or None,
+                        )
+                    return {"ok": True, "result": {"message_id": 0, "routed_to": "slack"}}
+            except Exception as _exc:
+                logger.warning("Slack bridge: sendMessage intercept error: %s", _exc)
+
         # Forward to real Telegram API
         try:
             response_data = await self._forward_to_telegram(url, body, content_type)
@@ -2037,6 +2105,15 @@ class TelegramAPIProxy:
                     inbound_forwarded,
                     inbound_dropped,
                 )
+
+            # ── Slack bridge: inject synthetic updates from Slack ─────────
+            if self._slack_bridge is not None:
+                slack_updates = self._slack_bridge.drain_pending()
+                if slack_updates:
+                    current = response_data.get("result", [])
+                    if not isinstance(current, list):
+                        current = []
+                    response_data["result"] = current + slack_updates
 
         return response_data
 
@@ -3035,6 +3112,16 @@ class TelegramAPIProxy:
                 not is_revoked and
                 user_id in {str(uid) for uid in (self._rbac.collaborator_user_ids or [])}
             )
+
+            # ── Slack bridge: clear Slack-active flag on real Telegram messages ─
+            # When the owner sends a real Telegram message, any pending Slack bridge
+            # session for their chat_id is deactivated so outbound sendMessage calls
+            # go back to Telegram instead of being routed to Slack.
+            if is_owner and self._slack_bridge is not None and chat_id is not None:
+                try:
+                    self._slack_bridge.on_telegram_message(int(str(chat_id)))
+                except (ValueError, TypeError):
+                    pass
 
             # ── Egress preflight from user intent ────────────────────────────
             # If a message includes an explicit URL/domain, proactively queue

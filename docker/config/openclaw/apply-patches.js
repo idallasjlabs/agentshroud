@@ -291,8 +291,27 @@ const telegramToken = process.env.TELEGRAM_BOT_TOKEN;
 if (telegramToken) {
   config.channels = config.channels || {};
   config.channels.telegram = config.channels.telegram || {};
+
   if (config.channels.telegram.botToken !== telegramToken) {
     config.channels.telegram.botToken = telegramToken;
+    changed = true;
+  }
+
+  // Force dmPolicy to "open" so the owner/binding peers can message without
+  // a prior pairing handshake.  "pairing" silently drops messages from peers
+  // that haven't run /start — including Slack bridge synthetic updates where
+  // the session state is never persisted to disk.
+  // dmPolicy="open" requires allowFrom to include "*".
+  if (config.channels.telegram.dmPolicy !== 'open') {
+    config.channels.telegram.dmPolicy = 'open';
+    console.log('[init-patch] Set channels.telegram.dmPolicy = open');
+    changed = true;
+  }
+  const allowFrom = config.channels.telegram.allowFrom || [];
+  if (allowFrom.indexOf('*') === -1) {
+    allowFrom.push('*');
+    config.channels.telegram.allowFrom = allowFrom;
+    console.log('[init-patch] Added * to channels.telegram.allowFrom (required by dmPolicy=open)');
     changed = true;
   }
 
