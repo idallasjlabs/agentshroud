@@ -58,6 +58,12 @@ class RBACConfig:
         if owner_override:
             self.owner_user_id = owner_override
 
+        # Slack owner: same person on a different platform. Slack IDs are alphanumeric
+        # (e.g. U0ABC123DEF) — naturally disjoint from Telegram numeric IDs, no collision risk.
+        slack_owner = str(os.environ.get("AGENTSHROUD_SLACK_OWNER_USER_ID", "")).strip()
+        if slack_owner:
+            self.user_roles[slack_owner] = Role.OWNER
+
         collaborators_override = str(
             os.environ.get("AGENTSHROUD_COLLABORATOR_USER_IDS", "")
         ).strip()
@@ -96,8 +102,8 @@ class RBACConfig:
         return [user_id for user_id, user_role in self.user_roles.items() if user_role == role]
     
     def is_owner(self, user_id: str) -> bool:
-        """Check if user is the owner."""
-        return user_id == self.owner_user_id
+        """Check if user is the owner (any platform)."""
+        return user_id == self.owner_user_id or self.user_roles.get(user_id) == Role.OWNER
     
     def is_admin_or_higher(self, user_id: str) -> bool:
         """Check if user has admin privileges or higher."""

@@ -69,6 +69,7 @@ from ..proxy.mcp_proxy import MCPProxy, MCPToolCall, MCPToolResult
 from ..proxy.mcp_config import MCPProxyConfig
 from ..proxy.web_config import WebProxyConfig
 from ..proxy.telegram_proxy import TelegramAPIProxy
+from ..proxy.slack_proxy import SlackAPIProxy
 from ..proxy.web_proxy import WebProxy
 from ..proxy.webhook_receiver import WebhookReceiver
 from ..proxy.pipeline import SecurityPipeline
@@ -3681,3 +3682,100 @@ async def telegram_api_proxy(path: str, request: Request):
     
     status_code = 200 if result.get('ok', False) else result.get('error_code', 500)
     return JSONResponse(content=result, status_code=status_code)
+
+
+# === Slack API Reverse Proxy + Events API endpoint ===
+# Inbound:  POST /slack-events  — receives Slack Events API pushes
+# Outbound: /slack-api/{method} — proxies bot Slack API calls through SecurityPipeline
+# Bot sets SLACK_API_BASE_URL=http://gateway:8080/slack-api (docker-compose.yml)
+
+_slack_proxy = SlackAPIProxy(
+    pipeline=None,       # Lazily wired from app_state on each request
+    middleware_manager=None,
+    sanitizer=None,
+)
+
+
+@app.post('/slack-events')
+async def slack_events(request: Request):
+    """Receive Slack Events API push, verify signing secret, and route through pipeline.
+
+    Returns HTTP 200 immediately (Slack requires response within 3 seconds).
+    url_verification challenge is handled synchronously before returning.
+    All other event processing runs in a background task.
+    """
+    raw_body = await request.body()
+    timestamp = request.headers.get("x-slack-request-timestamp", "")
+    signature = request.headers.get("x-slack-signature", "")
+
+    # Lazily wire pipeline from app_state
+    if hasattr(app_state, 'pipeline') and app_state.pipeline is not None:
+        _slack_proxy.pipeline = app_state.pipeline
+    if hasattr(app_state, 'middleware_manager'):
+        _slack_proxy.middleware_manager = app_state.middleware_manager
+    if hasattr(app_state, 'sanitizer'):
+        _slack_proxy.sanitizer = app_state.sanitizer
+
+    # Verify Slack signing secret before doing anything else
+    if not _slack_proxy.verify_signature(timestamp, raw_body, signature):
+        logger.warning("Slack events: signature verification failed — rejecting request")
+        raise HTTPException(status_code=403, detail="Invalid Slack signature")
+
+    # Check if Slack is enabled in config
+    config = getattr(app_state, 'config', None)
+    if config and not config.channels.slack_enabled:
+        # Still return 200 for url_verification challenges during setup
+        pass
+
+    try:
+        payload = json.loads(raw_body.decode("utf-8", errors="replace"))
+    except Exception:
+        raise HTTPException(status_code=400, detail="Invalid JSON payload")
+
+    # Synchronous url_verification handshake (required for Slack App setup)
+    if payload.get("type") == "url_verification":
+        challenge = payload.get("challenge", "")
+        return JSONResponse(content={"challenge": challenge})
+
+    # For all other events: acknowledge immediately, process async
+    asyncio.create_task(_slack_proxy.handle_event(payload))
+    return JSONResponse(content={"ok": True})
+
+
+@app.api_route('/slack-api/{path:path}', methods=['GET', 'POST'])
+async def slack_api_proxy(path: str, request: Request):
+    """Proxy bot Slack Web API calls through SecurityPipeline.
+
+    Restricted to the internal Docker subnet (same allowlist as Telegram proxy).
+    The bot's Slack bot token is injected here — the bot container never holds it.
+    """
+    # IP allowlist: only bot container subnet may call this
+    client_ip = request.client.host if request.client else None
+    if client_ip:
+        try:
+            addr = _ipaddress.ip_address(client_ip)
+            if not any(addr in net for net in _PROXY_ALLOWED_NETWORKS):
+                logger.warning(f"Slack API proxy request denied from {client_ip}")
+                raise HTTPException(status_code=403, detail="Forbidden")
+        except ValueError:
+            raise HTTPException(status_code=403, detail="Forbidden")
+    else:
+        raise HTTPException(status_code=403, detail="Forbidden")
+
+    # Lazily wire pipeline from app_state
+    if hasattr(app_state, 'pipeline') and app_state.pipeline is not None:
+        _slack_proxy.pipeline = app_state.pipeline
+    if hasattr(app_state, 'middleware_manager'):
+        _slack_proxy.middleware_manager = app_state.middleware_manager
+    if hasattr(app_state, 'sanitizer'):
+        _slack_proxy.sanitizer = app_state.sanitizer
+
+    body = await request.body() if request.method == 'POST' else b""
+    content_type = request.headers.get('content-type', '')
+
+    # System notifications (startup/shutdown from start.sh) bypass content filtering
+    is_system = request.headers.get("x-agentshroud-system") == "1"
+
+    from fastapi.responses import JSONResponse
+    result = await _slack_proxy.proxy_outbound(path, body, content_type, is_system=is_system)
+    return JSONResponse(content=result)
