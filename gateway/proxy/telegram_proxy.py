@@ -104,6 +104,10 @@ _LOCAL_PENDING_COMMANDS = {
     "/approvals",
     "approvals",
 }
+_LOCAL_EGRESS_COMMANDS = {
+    "/egress",
+    "egress",
+}
 _LOCAL_COLLABS_COMMANDS = {
     "/collabs",
     "collabs",
@@ -2832,20 +2836,83 @@ class TelegramAPIProxy:
                                     "action": "ignored",
                                 }
                             _queue = getattr(_app_state, "egress_approval_queue", None)
+                            from gateway.security.egress_approval import ApprovalMode
+                            action = result.get("action", "")
+                            domain = result.get("domain", "")
+                            rid = result.get("request_id", "")
+
+                            # If request_not_found (e.g. gateway restarted), fall back
+                            # to the persisted request_domain_map so old buttons still work.
+                            if (
+                                result.get("status") == "error"
+                                and result.get("reason") == "request_not_found"
+                                and _queue
+                                and rid
+                            ):
+                                domain = _queue._request_domain_map.get(rid, "")
+                                if domain:
+                                    action = (
+                                        "allow_always" if "allow_always" in cb_data
+                                        else "allow_once" if "allow_once" in cb_data
+                                        else "deny" if "deny" in cb_data
+                                        else ""
+                                    )
+                                    result = {
+                                        "status": "ok",
+                                        "action": action,
+                                        "request_id": rid,
+                                        "domain": domain,
+                                    }
+
                             if _queue and result.get("status") == "ok":
-                                from gateway.security.egress_approval import ApprovalMode
-                                rid = result.get("request_id", "")
-                                action = result.get("action", "")
                                 if action == "allow_always":
-                                    await _queue.approve(rid, ApprovalMode.PERMANENT)
+                                    # Use add_rule directly — more reliable than approve(rid)
+                                    # because it works even when the in-flight request is gone.
+                                    await _queue.add_rule(domain, "allow", ApprovalMode.PERMANENT)
                                 elif action == "allow_once":
                                     await _queue.approve(rid, ApprovalMode.ONCE)
                                 elif action == "deny":
                                     await _queue.deny(rid, ApprovalMode.ONCE)
+
+                            # Build a human-readable decision label.
+                            if result.get("status") == "ok":
+                                _domain_label = domain or "unknown"
+                                if action == "allow_always":
+                                    _toast = f"✅ Always allowed: {_domain_label}"
+                                    _edit_text = (
+                                        f"✅ *Egress Always Allowed*\n\n"
+                                        f"Domain: `{_domain_label}`\n"
+                                        f"Rule: permanent\n"
+                                        f"ID: `{rid[:8]}`"
+                                    )
+                                elif action == "allow_once":
+                                    _toast = f"✅ Allowed once: {_domain_label}"
+                                    _edit_text = (
+                                        f"✅ *Egress Allowed Once*\n\n"
+                                        f"Domain: `{_domain_label}`\n"
+                                        f"ID: `{rid[:8]}`"
+                                    )
+                                else:
+                                    _toast = f"❌ Denied: {_domain_label}"
+                                    _edit_text = (
+                                        f"❌ *Egress Denied*\n\n"
+                                        f"Domain: `{_domain_label}`\n"
+                                        f"ID: `{rid[:8]}`"
+                                    )
+                            else:
+                                _toast = "⚠️ Approval error — request not found"
+                                _edit_text = "⚠️ *Egress Approval Error*\n\nRequest not found (may have expired)."
+
                             await _notifier.answer_callback(
                                 callback_query.get("id", ""),
-                                f"Egress {result.get('action', 'processed')}",
+                                _toast,
                             )
+                            # Edit the original approval message to show the decision.
+                            _cb_msg_id = ((callback_query.get("message") or {}).get("message_id"))
+                            if _cb_msg_id and cb_chat_id:
+                                await _notifier.edit_decision_message(
+                                    cb_chat_id, _cb_msg_id, _edit_text
+                                )
                             logger.info(
                                 "Egress callback handled: %s",
                                 json.dumps(result, sort_keys=True),
@@ -3276,6 +3343,77 @@ class TelegramAPIProxy:
                             f"Current list: {', '.join(self._rbac.collaborator_user_ids)}"
                         ),
                     )
+                    continue
+                elif is_owner and cmd_base in _LOCAL_EGRESS_COMMANDS:
+                    from gateway.ingest_api.state import app_state as _eq_state
+                    _eq = getattr(_eq_state, "egress_approval_queue", None)
+                    tokens = normalize_input(text).strip().split(None, 2)
+                    # tokens[0] = "/egress", tokens[1] = subcommand, tokens[2] = arg
+                    subcmd = tokens[1].lower() if len(tokens) > 1 else "list"
+                    if subcmd == "list":
+                        if _eq:
+                            rules = await _eq.get_all_rules()
+                            perm = rules.get("permanent_rules", [])
+                            sess = rules.get("session_rules", [])
+                            lines = [f"{_PROTECT_HEADER}*Egress Rules*\n"]
+                            if perm:
+                                lines.append("*Permanent:*")
+                                for r in perm:
+                                    lines.append(f"  {r['action'].upper()}  `{r['domain']}`")
+                            else:
+                                lines.append("*Permanent:* none")
+                            if sess:
+                                lines.append("\n*Session:*")
+                                for r in sess:
+                                    lines.append(f"  {r['action'].upper()}  `{r['domain']}`")
+                            else:
+                                lines.append("\n*Session:* none")
+                            lines.append(
+                                "\nUse `/egress revoke <domain>` to remove a rule."
+                            )
+                            await self._send_owner_admin_notice(
+                                chat_id, "\n".join(lines)
+                            )
+                        else:
+                            await self._send_owner_admin_notice(
+                                chat_id,
+                                f"{_PROTECT_HEADER}Egress approval queue not available.",
+                            )
+                    elif subcmd == "revoke" and len(tokens) > 2:
+                        target_domain = tokens[2].strip()
+                        if _eq:
+                            removed = await _eq.remove_rule(target_domain)
+                            if removed:
+                                await self._send_owner_admin_notice(
+                                    chat_id,
+                                    (
+                                        f"{_PROTECT_HEADER}Egress rule removed.\n"
+                                        f"Domain: `{target_domain}`\n"
+                                        "Future requests for this domain will require re-approval."
+                                    ),
+                                )
+                            else:
+                                await self._send_owner_admin_notice(
+                                    chat_id,
+                                    (
+                                        f"{_PROTECT_HEADER}No rule found for `{target_domain}`.\n"
+                                        "Use `/egress list` to see active rules."
+                                    ),
+                                )
+                        else:
+                            await self._send_owner_admin_notice(
+                                chat_id,
+                                f"{_PROTECT_HEADER}Egress approval queue not available.",
+                            )
+                    else:
+                        await self._send_owner_admin_notice(
+                            chat_id,
+                            (
+                                f"{_PROTECT_HEADER}*Egress Firewall Commands*\n\n"
+                                "`/egress list` — show all allow/deny rules\n"
+                                "`/egress revoke <domain>` — remove a rule\n"
+                            ),
+                        )
                     continue
                 if local_handler is not None:
                     update_id = update.get("update_id")

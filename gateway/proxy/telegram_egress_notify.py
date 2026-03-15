@@ -136,10 +136,30 @@ class EgressTelegramNotifier:
             result = await self._async_send("answerCallbackQuery", {
                 "callback_query_id": callback_query_id,
                 "text": text,
+                "show_alert": False,
             })
             return result.get("ok", False)
         except Exception as e:
             logger.error(f"Failed to answer callback: {e}")
+            return False
+
+    async def edit_decision_message(
+        self, chat_id, message_id: int, decision_text: str
+    ) -> bool:
+        """Replace the inline keyboard approval message with a decision record.
+
+        Removes the buttons and shows the outcome so it's visible in chat history.
+        """
+        try:
+            result = await self._async_send("editMessageText", {
+                "chat_id": chat_id,
+                "message_id": message_id,
+                "text": decision_text,
+                "parse_mode": "Markdown",
+            })
+            return result.get("ok", False)
+        except Exception as e:
+            logger.error(f"Failed to edit egress decision message: {e}")
             return False
 
     def cleanup_expired(self, max_age_seconds: int = 300) -> int:

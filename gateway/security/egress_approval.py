@@ -126,6 +126,9 @@ class EgressApprovalQueue:
         self._once_approved: set = set()  # Track one-time approved request IDs
         self._permanent_rules: Dict[str, EgressRule] = {}
         self._session_rules: Dict[str, EgressRule] = {}
+        # Maps request_id -> domain; persisted so old inline keyboard buttons
+        # still resolve their domain after a gateway restart.
+        self._request_domain_map: Dict[str, str] = {}
         self._emergency_block_all: bool = False
         self._emergency_reason: str = ""
         self._event_bus = None
@@ -205,7 +208,11 @@ class EgressApprovalQueue:
                     expires_at=rule_data.get("expires_at")
                 )
                 self._permanent_rules[rule.domain] = rule
-                
+
+            # Restore request_domain_map so old inline keyboard buttons still work
+            # after a gateway restart (buttons carry request_id but not domain).
+            self._request_domain_map = dict(data.get("request_domain_map", {}))
+
         except Exception as e:
             logger.error(f"Failed to load egress rules: {e}")
     
@@ -222,7 +229,12 @@ class EgressApprovalQueue:
                         "expires_at": rule.expires_at
                     }
                     for rule in self._permanent_rules.values()
-                ]
+                ],
+                # Persist so old inline keyboard buttons resolve domain after restart.
+                # Capped at 500 entries to avoid unbounded growth.
+                "request_domain_map": dict(
+                    list(self._request_domain_map.items())[-500:]
+                ),
             }
             
             with open(self.rules_file, 'w') as f:
@@ -316,7 +328,8 @@ class EgressApprovalQueue:
             )
             
             self._pending_requests[request_id] = request
-            
+            self._request_domain_map[request_id] = domain
+
             logger.info(
                 f"Egress approval requested: {domain}:{port} "
                 f"(risk={risk_level.value}, agent={agent_id}, tool={tool_name})"
