@@ -268,6 +268,50 @@ else
   echo "[init] ⚠ Claude config defaults not found at ${CLAUDE_DEFAULTS} — skipping"
 fi
 
+# ── 3d. Gemini CLI config — agents, GEMINI.md, settings.json ─────────────────
+# Always refresh on every startup so repo changes take effect after rebuild.
+
+GEMINI_DEFAULTS="/app/config-defaults/gemini"
+GEMINI_CONFIG_DIR="${WORKSPACE_DIR}/.gemini"
+
+if [ -d "${GEMINI_DEFAULTS}" ]; then
+  mkdir -p "${GEMINI_CONFIG_DIR}"
+
+  [ -f "${GEMINI_DEFAULTS}/GEMINI.md" ] && cp "${GEMINI_DEFAULTS}/GEMINI.md" "${GEMINI_CONFIG_DIR}/GEMINI.md"
+  [ -f "${GEMINI_DEFAULTS}/settings.json" ] && cp "${GEMINI_DEFAULTS}/settings.json" "${GEMINI_CONFIG_DIR}/settings.json"
+
+  if [ -d "${GEMINI_DEFAULTS}/agents" ]; then
+    mkdir -p "${GEMINI_CONFIG_DIR}/agents"
+    cp -r "${GEMINI_DEFAULTS}/agents/"* "${GEMINI_CONFIG_DIR}/agents/" 2>/dev/null || true
+  fi
+
+  echo "[init] ✓ Refreshed .gemini config ($(ls "${GEMINI_CONFIG_DIR}/agents" 2>/dev/null | wc -l | tr -d ' ') agents)"
+else
+  echo "[init] ⚠ Gemini config defaults not found at ${GEMINI_DEFAULTS} — skipping"
+fi
+
+# ── 3e. Codex config — agents, AGENTS.md, config.toml ────────────────────────
+# Always refresh on every startup so repo changes take effect after rebuild.
+
+CODEX_DEFAULTS="/app/config-defaults/codex"
+CODEX_CONFIG_DIR="${WORKSPACE_DIR}/.codex"
+
+if [ -d "${CODEX_DEFAULTS}" ]; then
+  mkdir -p "${CODEX_CONFIG_DIR}"
+
+  [ -f "${CODEX_DEFAULTS}/AGENTS.md" ] && cp "${CODEX_DEFAULTS}/AGENTS.md" "${CODEX_CONFIG_DIR}/AGENTS.md"
+  [ -f "${CODEX_DEFAULTS}/config.toml" ] && cp "${CODEX_DEFAULTS}/config.toml" "${CODEX_CONFIG_DIR}/config.toml"
+
+  if [ -d "${CODEX_DEFAULTS}/agents" ]; then
+    mkdir -p "${CODEX_CONFIG_DIR}/agents"
+    cp -r "${CODEX_DEFAULTS}/agents/"* "${CODEX_CONFIG_DIR}/agents/" 2>/dev/null || true
+  fi
+
+  echo "[init] ✓ Refreshed .codex config ($(ls "${CODEX_CONFIG_DIR}/agents" 2>/dev/null | wc -l | tr -d ' ') agents)"
+else
+  echo "[init] ⚠ Codex config defaults not found at ${CODEX_DEFAULTS} — skipping"
+fi
+
 # ── 4. Memory persistence — backup/restore across fresh installs ─────────────
 # Memory files (MEMORY.md, memory/*.md) are the bot's continuity.
 # They live on the workspace volume, which survives rebuilds but not volume
