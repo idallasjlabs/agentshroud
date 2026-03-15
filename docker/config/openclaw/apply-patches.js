@@ -326,10 +326,10 @@ if (telegramToken) {
   const groupAllowFrom = Array.isArray(config.channels.telegram.groupAllowFrom)
     ? config.channels.telegram.groupAllowFrom
     : [];
-  const allowFrom = Array.isArray(config.channels.telegram.allowFrom)
+  const currentAllowFrom = Array.isArray(config.channels.telegram.allowFrom)
     ? config.channels.telegram.allowFrom
     : [];
-  if (groupPolicy === 'allowlist' && groupAllowFrom.length === 0 && allowFrom.length === 0) {
+  if (groupPolicy === 'allowlist' && groupAllowFrom.length === 0 && currentAllowFrom.length === 0) {
     config.channels.telegram.groupAllowFrom = mergedAllowlist;
     console.log('[init-patch] Seeded channels.telegram.groupAllowFrom to satisfy allowlist policy');
     changed = true;
