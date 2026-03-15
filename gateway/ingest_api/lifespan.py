@@ -302,6 +302,24 @@ async def lifespan(app: FastAPI):
                     "EgressFilter: bot '%s' policy set (%d extra domains)",
                     bot_id, len(bot.egress_domains),
                 )
+
+        # HTTP CONNECT proxy needs port 22 allowed for SSH relay targets.
+        # These hosts are declared under ssh.hosts in agentshroud.yaml and are
+        # also present in proxy_allowed_domains, but the default EgressPolicy
+        # only permits ports 80 and 443.
+        # Use the actual hostnames (SSHHostConfig.host), not dict keys,
+        # so "pi" -> "raspberrypi" is resolved correctly for egress matching.
+        ssh_relay_hosts = [h.host for h in app_state.config.ssh.hosts.values()]
+        http_proxy_policy = EgressPolicy(
+            allowed_domains=list(default_policy.allowed_domains) + ssh_relay_hosts,
+            allowed_ports=[80, 443, 22],
+            deny_all=default_policy.deny_all,
+        )
+        app_state.egress_filter.set_agent_policy("http_connect_proxy", http_proxy_policy)
+        logger.info(
+            "EgressFilter: http_connect_proxy policy set (ports 80/443/22, ssh_relay_hosts=%s)",
+            ssh_relay_hosts,
+        )
     except Exception as e:
         logger.critical(f"Failed to initialize EgressFilter: {e}")
         raise
