@@ -230,6 +230,44 @@ else
   echo "[init] ⚠ Collaborator workspace defaults not found at ${COLLAB_DEFAULTS} — skipping"
 fi
 
+# ── 3c. Claude Code config — agents, skills, hooks, ORCHESTRATOR.md ──────────
+# Always refresh on every startup so repo changes take effect after rebuild.
+# Hooks fail gracefully (check for tools before running) so safe in container.
+
+CLAUDE_DEFAULTS="/app/config-defaults/claude"
+CLAUDE_CONFIG_DIR="${WORKSPACE_DIR}/.claude"
+
+if [ -d "${CLAUDE_DEFAULTS}" ]; then
+  mkdir -p "${CLAUDE_CONFIG_DIR}"
+
+  # settings.json and ORCHESTRATOR.md — always overwrite (authoritative from image)
+  [ -f "${CLAUDE_DEFAULTS}/settings.json" ] && cp "${CLAUDE_DEFAULTS}/settings.json" "${CLAUDE_CONFIG_DIR}/settings.json"
+  [ -f "${CLAUDE_DEFAULTS}/ORCHESTRATOR.md" ] && cp "${CLAUDE_DEFAULTS}/ORCHESTRATOR.md" "${CLAUDE_CONFIG_DIR}/ORCHESTRATOR.md"
+
+  # agents/ — always overwrite (authoritative from image)
+  if [ -d "${CLAUDE_DEFAULTS}/agents" ]; then
+    mkdir -p "${CLAUDE_CONFIG_DIR}/agents"
+    cp -r "${CLAUDE_DEFAULTS}/agents/"* "${CLAUDE_CONFIG_DIR}/agents/" 2>/dev/null || true
+  fi
+
+  # skills/ — always overwrite (authoritative from image)
+  if [ -d "${CLAUDE_DEFAULTS}/skills" ]; then
+    mkdir -p "${CLAUDE_CONFIG_DIR}/skills"
+    cp -r "${CLAUDE_DEFAULTS}/skills/"* "${CLAUDE_CONFIG_DIR}/skills/" 2>/dev/null || true
+  fi
+
+  # scripts/ (hook scripts) — always overwrite, ensure executable
+  if [ -d "${CLAUDE_DEFAULTS}/scripts" ]; then
+    mkdir -p "${CLAUDE_CONFIG_DIR}/scripts"
+    cp -r "${CLAUDE_DEFAULTS}/scripts/"* "${CLAUDE_CONFIG_DIR}/scripts/" 2>/dev/null || true
+    find "${CLAUDE_CONFIG_DIR}/scripts" -type f -name "*.sh" -exec chmod +x {} + 2>/dev/null || true
+  fi
+
+  echo "[init] ✓ Refreshed .claude config ($(ls "${CLAUDE_CONFIG_DIR}/agents" 2>/dev/null | wc -l | tr -d ' ') agents, $(ls "${CLAUDE_CONFIG_DIR}/skills" 2>/dev/null | wc -l | tr -d ' ') skills, hooks)"
+else
+  echo "[init] ⚠ Claude config defaults not found at ${CLAUDE_DEFAULTS} — skipping"
+fi
+
 # ── 4. Memory persistence — backup/restore across fresh installs ─────────────
 # Memory files (MEMORY.md, memory/*.md) are the bot's continuity.
 # They live on the workspace volume, which survives rebuilds but not volume

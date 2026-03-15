@@ -804,6 +804,32 @@ async def lifespan(app: FastAPI):
     app_state._audit_chain_heartbeat_task = _asyncio.create_task(_audit_chain_heartbeat())
     logger.info("✓ AuditChain verification heartbeat started (60s interval)")
 
+    # -- Slack Socket Mode client: outbound WSS to Slack, no inbound port needed --
+    app_state.slack_socket_task = None
+    try:
+        _slack_app_token = _read_secret("slack_app_token")
+        _slack_enabled = getattr(app_state.config.channels, "slack_enabled", False)
+        if _slack_app_token and _slack_enabled:
+            from ..proxy.slack_proxy import SlackAPIProxy
+            from ..proxy.slack_socket_client import SlackSocketClient
+            _socket_proxy = SlackAPIProxy(
+                pipeline=app_state.pipeline,
+                middleware_manager=getattr(app_state, "middleware_manager", None),
+                sanitizer=getattr(app_state, "sanitizer", None),
+            )
+            app_state.slack_socket_proxy = _socket_proxy
+            _socket_client = SlackSocketClient(_socket_proxy, _slack_app_token)
+            app_state.slack_socket_task = _asyncio.create_task(_socket_client.run())
+            app_state.slack_socket_client = _socket_client
+            logger.info("✓ Slack Socket Mode client started (no inbound port required)")
+        elif _slack_app_token and not _slack_enabled:
+            logger.info("Slack app token present but slack_enabled=false — Socket Mode not started")
+        else:
+            logger.info("Slack Socket Mode not configured (no slack_app_token secret)")
+    except Exception as _e:
+        logger.error("✗ Slack Socket Mode: %s", _e)
+        app_state.slack_socket_task = None
+
     # Record start time
     app_state.start_time = time.time()
 
@@ -825,6 +851,18 @@ async def lifespan(app: FastAPI):
     # Stop middleware background tasks
     if getattr(app_state, "middleware_manager", None):
         await app_state.middleware_manager.close()
+
+    # Stop Slack Socket Mode client
+    slack_socket_client = getattr(app_state, "slack_socket_client", None)
+    if slack_socket_client:
+        slack_socket_client.stop()
+    slack_socket_task = getattr(app_state, "slack_socket_task", None)
+    if slack_socket_task and not slack_socket_task.done():
+        slack_socket_task.cancel()
+        try:
+            await slack_socket_task
+        except asyncio.CancelledError:
+            pass
 
     # Stop audit-chain heartbeat task
     heartbeat_task = getattr(app_state, "_audit_chain_heartbeat_task", None)

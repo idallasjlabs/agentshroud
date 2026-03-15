@@ -40,6 +40,7 @@ services:
       - telegram_bot_token
       - slack_bot_token
       - slack_signing_secret
+      - slack_app_token
       - anthropic_oauth_token
       - openai_api_key
       - google_api_key
@@ -148,6 +149,7 @@ services:
       - AGENTSHROUD_LOCAL_MODEL=${AGENTSHROUD_LOCAL_MODEL:-qwen3:14b}
       - TELEGRAM_API_BASE_URL=http://gateway:8080/telegram-api
       - SLACK_API_BASE_URL=http://gateway:8080/slack-api
+      - AGENTSHROUD_SLACK_OWNER_USER_ID=U01J37F6YT0
       - GATEWAY_HOST_PORT=8080
       - OPENCLAW_BOT_NAME=agentshroud_bot
       - OPENCLAW_BOT_EMAIL=agentshroud.ai@icloud.com
@@ -208,6 +210,8 @@ secrets:
     file: ./secrets/slack_bot_token.txt
   slack_signing_secret:
     file: ./secrets/slack_signing_secret.txt
+  slack_app_token:
+    file: ./secrets/slack_app_token.txt
 
 # ── Networks ───────────────────────────────────────────────────────────────────
 # Two networks: internal (internet access) and isolated (no internet)

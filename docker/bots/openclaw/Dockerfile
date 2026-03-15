@@ -111,6 +111,10 @@ COPY docker/bots/openclaw/workspace/collaborator-workspace/ /app/config-defaults
 # Applied to /home/node/.ssh/config on every startup by init-openclaw-config.sh
 COPY docker/config/ssh/ /app/config-defaults/ssh/
 
+# Bake in Claude Code config (agents, skills, hooks, ORCHESTRATOR.md)
+# Applied to workspace/.claude/ on every startup by init-openclaw-config.sh
+COPY .claude/ /app/config-defaults/claude/
+
 RUN chmod +x /usr/local/bin/security-entrypoint.sh \
     /usr/local/bin/security-scheduler.sh \
     /usr/local/bin/security-scan.sh \
