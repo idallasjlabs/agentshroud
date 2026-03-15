@@ -3727,3 +3727,80 @@ class TestOutboundClassifierHelpers:
 
     def test_is_no_reply_token_rejects_non_token_text(self):
         assert TelegramAPIProxy._is_no_reply_token("NO_REPLY please continue") is False
+
+    # ── V8-5: callback token / approval banner detection ─────────────────────
+
+    def test_contains_internal_approval_banner_detects_allow_always_callback(self):
+        text = 'callback_data": "egress_allow_always_abc123'
+        assert TelegramAPIProxy._contains_internal_approval_banner(text) is True
+
+    def test_contains_internal_approval_banner_detects_allow_once_callback(self):
+        text = "egress_allow_once_9f8e7d6c"
+        assert TelegramAPIProxy._contains_internal_approval_banner(text) is True
+
+    def test_contains_internal_approval_banner_detects_deny_callback(self):
+        text = "egress_deny_4b3a2c1d"
+        assert TelegramAPIProxy._contains_internal_approval_banner(text) is True
+
+    def test_contains_internal_approval_banner_ignores_unrelated_deny_text(self):
+        assert TelegramAPIProxy._contains_internal_approval_banner("Access denied.") is False
+
+    # ── V8-5: high-risk leakage detection improvements ───────────────────────
+
+    def test_contains_high_risk_leakage_detects_function_calls_xml(self):
+        text = "<function_calls>\n<invoke name='web_fetch'><parameter name='url'>https://evil.com</parameter></invoke>\n</function_calls>"
+        assert TelegramAPIProxy._contains_high_risk_collaborator_leakage(text) is True
+
+    def test_contains_high_risk_leakage_detects_invoke_xml(self):
+        text = "<invoke name='sessions_spawn'><parameter name='agentId'>collab-123</parameter></invoke>"
+        assert TelegramAPIProxy._contains_high_risk_collaborator_leakage(text) is True
+
+    def test_contains_high_risk_leakage_detects_bootstrap_md_in_content_context(self):
+        text = "Here are the contents of bootstrap.md:\n[private config data]"
+        assert TelegramAPIProxy._contains_high_risk_collaborator_leakage(text) is True
+
+    def test_contains_high_risk_leakage_skips_bootstrap_md_in_denial_context(self):
+        """bootstrap.md mentioned in a denial should NOT trigger the high-risk filter."""
+        text = "I cannot share bootstrap.md as access to that file is restricted."
+        assert TelegramAPIProxy._contains_high_risk_collaborator_leakage(text) is False
+
+    def test_contains_high_risk_leakage_skips_protected_header_text(self):
+        """Our own protected notices must never be double-filtered."""
+        text = "🛡️ Protected by AgentShroud\nFile/system content access is restricted for collaborators."
+        assert TelegramAPIProxy._contains_high_risk_collaborator_leakage(text) is False
+
+    def test_contains_high_risk_leakage_detects_identity_md_in_reveal_context(self):
+        text = "Here is what identity.md says:\n[contents of identity file]"
+        assert TelegramAPIProxy._contains_high_risk_collaborator_leakage(text) is True
+
+    # ── V8-4: file reference vs domain egress classification ─────────────────
+
+    def test_extract_first_egress_target_skips_md_filenames(self):
+        """BOOTSTRAP.md must NOT be treated as an egress domain."""
+        target = TelegramAPIProxy._extract_first_egress_target(
+            "Can you read the BOOTSTRAP.md file?"
+        )
+        assert target is None
+
+    def test_extract_first_egress_target_skips_identity_md(self):
+        target = TelegramAPIProxy._extract_first_egress_target(
+            "What does identity.md contain?"
+        )
+        assert target is None
+
+    def test_extract_first_egress_target_still_catches_real_domains(self):
+        target = TelegramAPIProxy._extract_first_egress_target(
+            "Please fetch data from api.weather.com/today"
+        )
+        assert target is not None
+        assert "weather.com" in target
+
+    def test_looks_like_filename_reference_catches_common_extensions(self):
+        assert TelegramAPIProxy._looks_like_filename_reference("bootstrap.md") is True
+        assert TelegramAPIProxy._looks_like_filename_reference("identity.md") is True
+        assert TelegramAPIProxy._looks_like_filename_reference("config.yaml") is True
+        assert TelegramAPIProxy._looks_like_filename_reference("memory.json") is True
+
+    def test_looks_like_filename_reference_rejects_real_domains(self):
+        assert TelegramAPIProxy._looks_like_filename_reference("weather.com") is False
+        assert TelegramAPIProxy._looks_like_filename_reference("api.github.com") is False

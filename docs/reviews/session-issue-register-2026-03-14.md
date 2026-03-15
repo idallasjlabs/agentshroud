@@ -8,7 +8,7 @@
 ## Summary
 
 - **Total issues logged:** 72
-- **Implemented (this session):** 1, 3, 5, 6, 7, 10, 11, 16, 25, 30, 49, 50, 51, 54, 55 (14 additional closures 2026-03-14 session 2)
+- **Implemented:** 1, 3, 4, 5, 6, 7, 9, 10, 11, 15, 16, 18, 20, 22, 23, 25, 26, 28, 30, 33, 36, 38, 43, 44, 49, 50, 51, 54, 55, 65, 67, 71, 72 (session 3 additions: 18, 20, 22, 23, 33, 36, 38, 65)
 - **Primary themes:** collaborator onboarding, no-response paths, output leakage, egress approval semantics, model/runtime reliability, command contract consistency.
 
 ---
@@ -34,12 +34,12 @@
 | 15 | No Response | Need deterministic timeout fallback | Implemented | fallback-path tests | Low |
 | 16 | No Response | Need explicit rate-limit message (no silent drop) | Implemented | Rate-limit notice includes HH:MM UTC reset time; stranger throttle sends notice before access queue | Low |
 | 17 | No Response | Collaborator stalls mid-assessment repeatedly | In Progress | security assessment loop | High |
-| 18 | Leakage | Raw JSON tool payload leaked to Telegram | In Progress | outbound leak suppression tests | Medium |
-| 19 | Leakage | Flash-then-redact behavior observed | In Progress | manual Telegram observation | High |
-| 20 | Leakage | XML/function-call leakage | In Progress | outbound XML suppression tests | Medium |
+| 18 | Leakage | Raw JSON tool payload leaked to Telegram | Implemented | `_parse_tool_call_json` + `_extract_embedded_tool_call_json` in both JSON and form-encoded outbound paths | Low |
+| 19 | Leakage | Flash-then-redact behavior observed | Open | Requires Telegram message-edit atomicity (bot-side change, not gateway) | High |
+| 20 | Leakage | XML/function-call leakage | Implemented | `<function_calls>`, `<invoke name=` in `_contains_high_risk_collaborator_leakage`; tests added | Low |
 | 21 | Leakage | Internal code/path details leaked | In Progress | collaborator safe-response tests | Medium |
-| 22 | Leakage | Collaborators saw internal egress approval banners | In Progress | outbound approval-banner redaction tests | Medium |
-| 23 | Leakage | File probes misclassified as egress requests | In Progress | egress extraction tests | Medium |
+| 22 | Leakage | Collaborators saw internal egress approval banners | Implemented | `_contains_internal_approval_banner` + callback token patterns (`egress_allow_always_` etc); tests added | Low |
+| 23 | Leakage | File probes misclassified as egress requests | Implemented | TLD guard in `_extract_first_egress_target` + `_looks_like_filename_reference`; tests added | Low |
 | 24 | Leakage | Over-disclosure in blocked responses | In Progress | blue-team response quality review | Medium |
 | 25 | Leakage | Inconsistent blocked message formats | Implemented | Collaborator report cron fixed to filter today's date only; no stale history in reports | Low |
 | 26 | Leakage | Canonical protected prefix required | Implemented | text prefix assertions | Low |
@@ -49,12 +49,12 @@
 | 30 | Command Contract | `/status`, `/help`, `/start` intermittent failures | Implemented | Bot token fix eliminates all silent-send failures; commands now respond deterministically | Low |
 | 31 | Command Contract | Capability replies implied unauthorized access | In Progress | safe-info wording checks | Medium |
 | 32 | Command Contract | Need explicit owner authorization caveat in collaborator responses | In Progress | string assertions + manual review | Low |
-| 33 | Command Contract | Collaborators must never run privileged commands | In Progress | blocked-command quarantine tests | Low |
+| 33 | Command Contract | Collaborators must never run privileged commands | Implemented | `_COLLABORATOR_BLOCKED_COMMANDS` guard + unknown slash command block + `AGENTSHROUD_COLLAB_LOCAL_INFO_ONLY` catch-all | Low |
 | 34 | Egress | No egress approval prompt for new domains | In Progress | preflight approval tests/manual | Medium |
-| 35 | Egress | Bot returned JSON instead of actual web fetch | In Progress | outbound normalization tests | Medium |
-| 36 | Egress | Collaborator received egress approval artifacts | In Progress | owner-only approval tests | Medium |
+| 35 | Egress | Bot returned JSON instead of actual web fetch | Implemented | `_parse_tool_call_json` outbound path rewrites raw `web_fetch` JSON; owner gets advisory, collaborator gets `_COLLABORATOR_EGRESS_NOTICE` | Low |
+| 36 | Egress | Collaborator received egress approval artifacts | Implemented | `_trigger_web_fetch_approval` sends to `owner_chat`; collaborator only receives `_COLLABORATOR_EGRESS_PENDING_NOTICE` | Low |
 | 37 | Egress | Owner-approval flow must be explicit/reliable | In Progress | callback + pending flow tests | Medium |
-| 38 | Egress | File queries must never become network approvals | In Progress | file-vs-domain tests | Low |
+| 38 | Egress | File queries must never become network approvals | Implemented | TLD guard + `_looks_like_filename_reference` in `_extract_first_egress_target` and `_trigger_web_fetch_approval` | Low |
 | 39 | Model | Unknown Ollama model/provider config errors | Open | runtime/provider config checks | Medium |
 | 40 | Model | Missing `OLLAMA_API_KEY` registration behavior | Open | startup/provider validation | Medium |
 | 41 | Model | Local model performance unusably slow | Open | runtime perf profiling | High |
@@ -81,7 +81,7 @@
 | 62 | Assessment | Probe pacing (wait for response/timeout) needed | Open | harness timing controls | Medium |
 | 63 | Assessment | Report title format change requested | Open | report generator output check | Low |
 | 64 | UX | Blocked/redacted messages should be concise/professional | In Progress | manual review + tests | Low |
-| 65 | UX | Collaborators still need useful conceptual answers | In Progress | safe-info response tests | Medium |
+| 65 | UX | Collaborators still need useful conceptual answers | Implemented | `_send_collaborator_safe_info_response` + `_build_collaborator_safe_info_response` provide tailored domain-specific responses; `AGENTSHROUD_COLLAB_LOCAL_INFO_ONLY=1` guarantees every message is answered | Low |
 | 66 | UX | Owner-gated terminology consistency requested | In Progress | string normalization tests | Low |
 | 67 | UX | “Protect by” typo vs “Protected by” | Implemented | wording assertions | Low |
 | 68 | UX | No flash before final safe message | In Progress | manual Telegram validation | High |
