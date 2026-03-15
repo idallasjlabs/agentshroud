@@ -186,6 +186,7 @@ class MCPPermissionManager:
         self._owner_user_id = RBACConfig().owner_user_id
         self._private_tool_patterns = list(PRIVATE_TOOL_PATTERNS)
         self._private_data_patterns = list(PRIVATE_DATA_PATTERNS)
+        self._compiled_private_data_patterns: list[tuple[str, re.Pattern[str]]] = []
         self._private_access_attempts: list[PrivateAccessAttempt] = []
         self._private_redaction_events: list[PrivateRedactionEvent] = []
         self._max_private_access_attempts = 2000
@@ -196,6 +197,17 @@ class MCPPermissionManager:
             "error": "",
         }
         self._load_privacy_policy()
+        self._recompile_private_data_patterns()
+
+    def _recompile_private_data_patterns(self) -> None:
+        """Compile private data patterns once for efficient repeated use."""
+        compiled: list[tuple[str, re.Pattern[str]]] = []
+        for pattern in self._private_data_patterns:
+            try:
+                compiled.append((pattern, re.compile(pattern, re.IGNORECASE)))
+            except re.error:
+                pass
+        self._compiled_private_data_patterns = compiled
 
     def _load_privacy_policy(self) -> None:
         """Load optional admin-private tool patterns from policy file."""
@@ -222,6 +234,7 @@ class MCPPermissionManager:
                     "Loaded %d admin-private data patterns from privacy policy",
                     len(self._private_data_patterns),
                 )
+                self._recompile_private_data_patterns()
             self._privacy_policy_status.update(
                 {"loaded": True, "loaded_at": time.time(), "error": ""}
             )
@@ -486,12 +499,7 @@ class MCPPermissionManager:
         if parameters is None:
             return PermissionCheck(allowed=True, agent_trust_level=self.get_trust_level(agent_id))
 
-        compiled_patterns: list[tuple[str, re.Pattern[str]]] = []
-        for pattern in self._private_data_patterns:
-            try:
-                compiled_patterns.append((pattern, re.compile(pattern, re.IGNORECASE)))
-            except re.error:
-                continue
+        compiled_patterns = self._compiled_private_data_patterns
         if not compiled_patterns:
             return PermissionCheck(allowed=True, agent_trust_level=self.get_trust_level(agent_id))
 

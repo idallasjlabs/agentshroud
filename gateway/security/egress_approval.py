@@ -239,7 +239,13 @@ class EgressApprovalQueue:
             
             with open(self.rules_file, 'w') as f:
                 json.dump(data, f, indent=2)
-                
+
+            # Cap in-memory map to match the on-disk cap
+            if len(self._request_domain_map) > 500:
+                self._request_domain_map = dict(
+                    list(self._request_domain_map.items())[-500:]
+                )
+
         except Exception as e:
             logger.error(f"Failed to save egress rules: {e}")
     
