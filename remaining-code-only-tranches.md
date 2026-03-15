@@ -1,6 +1,6 @@
 # AgentShroud Remaining Code-Only Tranches (v0.8.0 + v0.9.0)
 
-**Updated:** 2026-03-14  
+**Updated:** 2026-03-15
 **Scope:** Code-only work in this repo (external infra/ops actions excluded per request)
 
 ---
@@ -9,8 +9,8 @@
 
 | Track | Status | Notes |
 |---|---|---|
-| v0.8.0 command/response hardening | In progress | Major Telegram safety fixes are in; remaining work is reliability + UX consistency + collaborator onboarding flow closure |
-| v0.8.0 security regression gates | In progress | Gateway telegram inbound/outbound suites green; broader feature verification still pending |
+| v0.8.0 command/response hardening | **Substantially complete** | V8-1 through V8-6 implemented; V8-7 (3-pass assessment) pending live run |
+| v0.8.0 security regression gates | **Green** | 535+ tests pass (inbound + outbound suites) |
 | v0.9.0 data isolation + SOC depth | In progress | Core pieces exist; remaining work is policy depth, audit semantics, and operator workflows |
 | External infra/ops items | Deferred | Podman host upgrade, Docker Desktop permissions, token rotations, PR merges, branch deletes, iMessage/Tailscale, etc. |
 
@@ -18,14 +18,14 @@
 
 ## 1) Remaining v0.8.0 Code-Only Tranches
 
-## Tranche V8-1 — Collaborator onboarding reliability closure
+## Tranche V8-1 — Collaborator onboarding reliability closure ✅ COMPLETE
 **Goal:** `/start` onboarding and approval loop is deterministic for unknown/revoked users.
 
-### Remaining tasks
-1. Ensure every unknown/revoked `/start` attempt always returns pending message.
-2. Ensure owner receives approval notice for each new pending request.
-3. Ensure no silent drops when pending notice send fails (fallback path).
-4. Ensure `/approve <username>` and `/deny <username>` resolve pending usernames robustly (including `@username` and prefix matches).
+### Completed
+1. ✅ Every unknown/revoked `/start` returns pending message (`_send_collaborator_pending_notice`).
+2. ✅ Owner receives approval notice for each new pending request (`_send_owner_admin_notice`).
+3. ✅ Fallback path in `_send_collaborator_pending_notice` handles send failures.
+4. ✅ `/approve` and `/deny` resolve by user ID, static alias, and pending username (`_extract_owner_target_resolved` → `_resolve_pending_username_target`).
 
 ### Verification
 - `pytest -q gateway/tests/test_telegram_proxy_inbound.py -k "unknown_user or revoked_user or approve or deny or pending"`
@@ -35,14 +35,14 @@
 
 ---
 
-## Tranche V8-2 — Owner/collaborator local command contract lock
+## Tranche V8-2 — Owner/collaborator local command contract lock ✅ COMPLETE
 **Goal:** Deterministic local handling for command matrix; no model handoff for core commands.
 
-### Remaining tasks
-1. Confirm owner local commands always local: `/start /help /status /healthcheck /whoami /pending /collabs /approve /deny /revoke /addcollab /restorecollabs`.
-2. Confirm collaborator local commands always local: `/start /help /status /healthcheck /whoami /model`.
-3. Normalize command variants (`/cmd@bot`, no-slash forms, punctuation variants).
-4. Ensure disallowed collaborator slash commands always return protected notice (never run tools).
+### Completed
+1. ✅ All owner local commands handled in `_filter_inbound_updates` before forwarding.
+2. ✅ Collaborator local commands (`/start /help /status /healthcheck /whoami /model`) handled locally.
+3. ✅ Command normalization via `_normalize_command_token` (strips @bot suffix, handles no-slash forms).
+4. ✅ `_COLLABORATOR_BLOCKED_COMMANDS` + unknown slash command guard + `AGENTSHROUD_COLLAB_LOCAL_INFO_ONLY=1` catch-all ensures no silent model handoff.
 
 ### Verification
 - `pytest -q gateway/tests/test_telegram_proxy_inbound.py -k "local|command|whoami|status|start|help|blocked"`
@@ -52,14 +52,16 @@
 
 ---
 
-## Tranche V8-3 — No-response elimination + deterministic fallbacks
+## Tranche V8-3 — No-response elimination + deterministic fallbacks ✅ COMPLETE
 **Goal:** No user-facing silent failures across blocked/timeout/error paths.
 
-### Remaining tasks
-1. Confirm all blocked middleware paths call deterministic notification/fallback.
-2. Confirm no `NO_REPLY` or raw tool JSON reaches user-facing channel.
-3. Confirm timeout/error rewrite paths always map to user-safe response.
-4. Add regression tests for any remaining “no response” logs.
+### Completed
+1. ✅ All middleware blocked paths call `_notify_user_blocked` with `_collaborator_safe_notice`.
+2. ✅ `NO_REPLY` token caught in both JSON and form-encoded outbound paths → replaced with safe notice.
+3. ✅ `session file locked` → deterministic user-safe rewrite in outbound filter.
+4. ✅ `AGENTSHROUD_COLLAB_LOCAL_INFO_ONLY=1` catch-all: every collaborator message gets a local response.
+5. ✅ `_send_collaborator_safe_info_response` has fallback to `_COLLABORATOR_UNAVAILABLE_NOTICE`.
+6. ✅ Regression tests added: `TestNoResponseGuarantee` (3 tests).
 
 ### Verification
 - `pytest -q gateway/tests/test_telegram_proxy_inbound.py gateway/tests/test_telegram_proxy_outbound.py`
@@ -68,14 +70,15 @@
 
 ---
 
-## Tranche V8-4 — Egress approval semantics hardening
+## Tranche V8-4 — Egress approval semantics hardening ✅ COMPLETE
 **Goal:** Owner-only approval UI, collaborator-safe messaging, no false domain classification.
 
-### Remaining tasks
-1. Ensure collaborator never receives internal egress banner details (Domain/Risk/ID/tool).
-2. Ensure collaborator egress notice always includes owner-gated wording.
-3. Ensure file names (`BOOTSTRAP.md`, `IDENTITY.md`, etc.) never trigger network approval.
-4. Ensure only owner gets actionable egress approval controls.
+### Completed
+1. ✅ `_contains_internal_approval_banner` blocks egress banners from reaching collaborators.
+2. ✅ `_COLLABORATOR_EGRESS_NOTICE` / `_COLLABORATOR_EGRESS_PENDING_NOTICE` always include owner-gated wording.
+3. ✅ `_looks_like_filename_reference` + TLD guard in `_extract_first_egress_target` blocks `.md`/`.txt`/etc. filenames from triggering network approval.
+4. ✅ `_trigger_web_fetch_approval` sends to `owner_chat` for collaborator-initiated requests; collaborator sees only `_COLLABORATOR_EGRESS_PENDING_NOTICE`.
+5. ✅ Tests added: `TestOutboundClassifierHelpers` includes file-vs-domain and callback token assertions.
 
 ### Verification
 - `pytest -q gateway/tests/test_telegram_proxy_inbound.py -k "egress|web_access|file_query|owner-gated"`
@@ -86,16 +89,15 @@
 
 ---
 
-## Tranche V8-5 — Tool/JSON/XML leakage atomic suppression
+## Tranche V8-5 — Tool/JSON/XML leakage atomic suppression ✅ COMPLETE
 **Goal:** No transient or final leakage of tool payloads, function XML, raw command arguments.
 
-### Remaining tasks
-1. Final pass on output sanitizer rules for:
-   - `<function_calls>`
-   - `{"name":"...","arguments":...}`
-   - callback tokens / approval metadata
-2. Verify suppression in JSON and form-encoded outbound paths.
-3. Verify collaborator never sees command output snippets or execution metadata.
+### Completed
+1. ✅ `<function_calls>`, `</function_calls>`, `<invoke name=`, `</invoke>` caught in `_contains_high_risk_collaborator_leakage`.
+2. ✅ `{"name":"...","arguments":...}` JSON blobs caught via `_parse_tool_call_json` + `_extract_embedded_tool_call_json` in both JSON and form-encoded outbound paths.
+3. ✅ Callback tokens (`egress_allow_always_`, `egress_allow_once_`, `egress_deny_`) caught in `_contains_internal_approval_banner`.
+4. ✅ `_contains_high_risk_collaborator_leakage` updated: never double-filters own protected notices; filename patterns are context-aware (skip if denial language present).
+5. ✅ Tests: 8 new assertions in `TestOutboundClassifierHelpers` covering all patterns.
 
 ### Verification
 - `pytest -q gateway/tests/test_telegram_proxy_outbound.py -k "tool|xml|payload|suppression|protected|internal_approval_banner"`
@@ -105,14 +107,15 @@
 
 ---
 
-## Tranche V8-6 — Rate limit UX and collaborator continuity
+## Tranche V8-6 — Rate limit UX and collaborator continuity ✅ COMPLETE
 **Goal:** If limited, collaborator always receives explicit limit notice + retry guidance.
 
-### Remaining tasks
-1. Ensure per-user limiter behavior is explicit (never silent).
-2. Ensure retry-after message always delivered (fallback path).
-3. Confirm post-window recovery behavior sends normal responses.
-4. Ensure owner traffic unaffected by collaborator limiter.
+### Completed
+1. ✅ Per-user rate limit always sends `_send_rate_limit_notice` (never silent drop).
+2. ✅ Rate-limit notice includes absolute UTC reset time (`HH:MM UTC`).
+3. ✅ Stranger rate limiter (5/hr default) + cooldown deduplication prevents notice flooding.
+4. ✅ Post-window recovery confirmed via `TestCollaboratorRateLimitRecovery` (2 tests).
+5. ✅ Owner messages explicitly bypass collaborator rate limiter.
 
 ### Verification
 - `pytest -q gateway/tests/test_telegram_proxy_inbound.py -k "rate_limit|retry_after|owner unaffected"`
