@@ -3623,6 +3623,13 @@ _telegram_proxy = TelegramAPIProxy(
     sanitizer=None,
 )
 
+_slack_proxy = SlackAPIProxy(
+    pipeline=None,  # Will be set during lifespan
+    middleware_manager=None,
+    sanitizer=None,
+    tracker=None,   # Will be wired to app_state.collaborator_tracker at request time
+)
+
 @app.api_route('/telegram-api/{path:path}', methods=['GET', 'POST', 'PUT', 'DELETE'])
 async def telegram_api_proxy(path: str, request: Request):
     """Proxy Telegram Bot API calls through security pipeline."""
@@ -3703,13 +3710,15 @@ async def slack_api_proxy(path: str, request: Request):
     else:
         raise HTTPException(status_code=403, detail="Forbidden")
 
-    # Lazily wire pipeline from app_state
+    # Lazily wire pipeline and tracker from app_state
     if hasattr(app_state, 'pipeline') and app_state.pipeline is not None:
         _slack_proxy.pipeline = app_state.pipeline
     if hasattr(app_state, 'middleware_manager'):
         _slack_proxy.middleware_manager = app_state.middleware_manager
     if hasattr(app_state, 'sanitizer'):
         _slack_proxy.sanitizer = app_state.sanitizer
+    if hasattr(app_state, 'collaborator_tracker') and app_state.collaborator_tracker is not None:
+        _slack_proxy.tracker = app_state.collaborator_tracker
 
     body = await request.body() if request.method == 'POST' else b""
     content_type = request.headers.get('content-type', '')
