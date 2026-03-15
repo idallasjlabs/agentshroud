@@ -1704,20 +1704,38 @@ class TelegramAPIProxy:
         if not isinstance(text, str):
             return False
         normalized = normalize_input(text).lower()
-        patterns = (
+        # Never double-filter our own protected/blocked notices.
+        if normalized.lstrip().startswith("🛡") or "protected by agentshroud" in normalized:
+            return False
+        # Patterns that are always high-risk regardless of context.
+        unconditional_patterns = (
             r"<function_calls?>",
             r"</function_calls?>",
+            r"<invoke\s+name=",
+            r"</invoke>",
             r'"\s*name"\s*:\s*"(?:sessions_spawn|sessions_send|web_fetch|exec|shell|find|grep|cat|ls)"',
             r'"\s*arguments"\s*:\s*\{',
             r"\b/(?:etc|proc|run/secrets|home|root|usr|var)/",
-            r"\b(?:\.env|bootstrap\.md|identity\.md|memory\.md)\b",
             r"\bpairing code\s*:",
             r"\bopenclaw pairing approve telegram\b",
             r"\byour telegram user id\s*:",
             r"\bopenclaw:\s*access not configured\b",
             r"\b(?:traceback|stack trace|stderr|stdout)\b",
         )
-        return any(re.search(pat, normalized) for pat in patterns)
+        if any(re.search(pat, normalized) for pat in unconditional_patterns):
+            return True
+        # Filename patterns are only high-risk when content is being revealed,
+        # not when the filename appears in a denial/blocked context.
+        sensitive_filenames = r"\b(?:\.env|bootstrap\.md|identity\.md|memory\.md)\b"
+        if re.search(sensitive_filenames, normalized):
+            denial_markers = (
+                "cannot", "can't", "not allowed", "restricted", "blocked", "denied",
+                "do not", "won't", "unable", "not able", "not permitted", "access denied",
+                "i'm not", "i am not", "not authorized",
+            )
+            if not any(marker in normalized for marker in denial_markers):
+                return True
+        return False
 
     @staticmethod
     def _contains_internal_approval_banner(text: str) -> bool:
@@ -1728,6 +1746,10 @@ class TelegramAPIProxy:
         return (
             ("egress request" in normalized and "domain:" in normalized)
             or ("risk:" in normalized and "tool:" in normalized and "id:" in normalized)
+            # Callback data tokens from inline keyboard (egress approval buttons)
+            or "egress_allow_always_" in normalized
+            or "egress_allow_once_" in normalized
+            or "egress_deny_" in normalized
         )
 
     @staticmethod

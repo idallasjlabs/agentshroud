@@ -8,6 +8,42 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ---
 
+## [Unreleased] — feat/v0.8.0-enforcement-hardening (session 3 — 2026-03-15)
+
+### Summary
+
+v0.8.0 completion — tranches V8-1 through V8-6 implemented and verified. All high-priority leakage, egress, rate-limit, and no-response issues closed.
+
+### Fixed
+
+- **Callback token leakage** — `_contains_internal_approval_banner` now detects `egress_allow_always_`, `egress_allow_once_`, `egress_deny_` callback data patterns; prevents inline keyboard tokens from reaching collaborators.
+- **XML tool-call leakage** — `_contains_high_risk_collaborator_leakage` adds `<invoke name=` / `</invoke>` Anthropic XML format to unconditional block patterns.
+- **False-positive in filename leakage filter** — `bootstrap.md`, `identity.md`, `memory.md` etc. now only trigger the high-risk filter when appearing in a content-revealing context; denial messages mentioning these filenames no longer double-filter.
+- **Own protected notices no longer double-filtered** — `_contains_high_risk_collaborator_leakage` skips text already starting with `🛡️ Protected by AgentShroud`.
+- **Raw `web_fetch` JSON rewritten for owner** — bot returning raw tool JSON (instead of executing) now shows an actionable advisory; collaborator sees `_COLLABORATOR_EGRESS_NOTICE`.
+- **Egress approval artifacts** — collaborator-initiated web requests route approval to `owner_chat`; collaborator sees only `_COLLABORATOR_EGRESS_PENDING_NOTICE`.
+
+### Tests
+
+- `TestOutboundClassifierHelpers` — 14 new assertions: callback token detection, `<invoke>` XML, filename-vs-domain classification, context-aware denial bypass, protected-header skip.
+- `TestCollaboratorRateLimitRecovery` — 2 tests: post-window recovery, owner unaffected by collaborator limiter.
+- `TestNoResponseGuarantee` — 3 tests: generic message always answered, blocked command always produces notice, unknown user always gets pending or rate-limit notice.
+- Full suite: **541+ passed, ≤1 failed** (pre-existing combined-run async ordering issue).
+
+### Tranche Status
+
+| Tranche | Status |
+|---------|--------|
+| V8-1 Onboarding reliability | ✅ Complete |
+| V8-2 Command contract | ✅ Complete |
+| V8-3 No-response elimination | ✅ Complete |
+| V8-4 Egress semantics | ✅ Complete |
+| V8-5 Leak suppression | ✅ Complete |
+| V8-6 Rate limit UX | ✅ Complete |
+| V8-7 3-pass assessment | Pending live run |
+
+---
+
 ## [Unreleased] — feat/v0.8.0-enforcement-hardening (session 2 — 2026-03-14)
 
 ### Summary
