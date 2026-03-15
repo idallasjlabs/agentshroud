@@ -79,10 +79,14 @@ class SlackAPIProxy:
         middleware_manager=None,
         sanitizer=None,
         bot_webhook_url: Optional[str] = None,
+        bridge=None,
     ):
         self.pipeline = pipeline
         self.middleware_manager = middleware_manager
         self.sanitizer = sanitizer
+
+        # Channel bridge: translates Slack events to synthetic Telegram updates
+        self._bridge = bridge  # SlackChannelBridge, wired in lifespan
 
         # Bot token: gateway holds it; bot never sees the raw token
         self._bot_token = (
@@ -338,15 +342,32 @@ class SlackAPIProxy:
         else:
             sanitized_text = text
 
-        # ── Forward sanitized message to bot ───────────────────────────────
-        bot_payload = {
-            "source": "slack",
-            "channel": channel,
-            "thread_ts": thread_ts,
-            "user_id": user_id,
-            "text": sanitized_text,
-        }
-        await self._forward_to_bot(bot_payload)
+        # ── Collaborator local-only mode ─────────────────────────────────────
+        # When AGENTSHROUD_COLLAB_LOCAL_INFO_ONLY=1 (default), collaborator
+        # messages are answered by the gateway locally — the bot agent is never
+        # invoked. This matches the behaviour enforced in _filter_inbound_updates
+        # for Telegram collaborators and prevents collaborators from reaching
+        # the main agent (which has full tool access).
+        if is_collaborator:
+            local_only = os.environ.get("AGENTSHROUD_COLLAB_LOCAL_INFO_ONLY", "1").strip().lower()
+            if local_only not in {"0", "false", "no"}:
+                await self._send_slack_message(
+                    channel,
+                    (
+                        ":shield: *Collaborator safe mode is active.*\n"
+                        "I can discuss architecture, security concepts, and workflows. "
+                        "Command execution, file access, and system tools are restricted."
+                    ),
+                    thread_ts=thread_ts,
+                )
+                self._stats["events_forwarded"] += 1
+                return {"status": "handled_locally_collab"}
+
+        # ── Forward sanitized message to bot via channel bridge ────────────
+        if self._bridge is not None:
+            self._bridge.enqueue_update(user_id, channel, thread_ts, sanitized_text)
+        else:
+            logger.warning("Slack proxy: no bridge configured — message dropped")
         self._stats["events_forwarded"] += 1
         return {"status": "forwarded"}
 

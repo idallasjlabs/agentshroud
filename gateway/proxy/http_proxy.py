@@ -40,7 +40,19 @@ ALLOWED_DOMAINS: list[str] = [
 # Internal control-plane destinations required for channel transport.
 # These are bypassed from interactive egress approval to avoid deadlocking
 # the approval channel itself.
-SYSTEM_BYPASS_DOMAINS: set[str] = {
+# NOTE: api.telegram.org is intentionally NOT listed here.  The bot is
+# configured with TELEGRAM_API_BASE_URL=http://gateway:8080/telegram-api
+# and NO_PROXY=gateway, so all Telegram API calls must go through the
+# gateway's /telegram-api/ proxy (where the Slack bridge intercept lives).
+# Allowing direct CONNECT tunnels to api.telegram.org bypasses the bridge
+# and causes sendMessage responses to disappear silently.
+SYSTEM_BYPASS_DOMAINS: set[str] = set()
+
+# Domains that are unconditionally BLOCKED from direct CONNECT tunnels,
+# even if the egress filter policy would otherwise allow them.
+# The bot MUST use its configured base URL (e.g. TELEGRAM_API_BASE_URL)
+# to reach these hosts through the gateway proxy, not via a raw tunnel.
+CONNECT_FORCE_BLOCK_DOMAINS: set[str] = {
     "api.telegram.org",
 }
 
@@ -186,12 +198,19 @@ class HTTPConnectProxy:
             port = 443
 
         bypass_system_domain = host.lower().rstrip(".") in SYSTEM_BYPASS_DOMAINS
+        force_blocked_domain = host.lower().rstrip(".") in CONNECT_FORCE_BLOCK_DOMAINS
 
         url = f"https://{host}:{port}/"
         result_blocked = False
         block_reason = "allowed"
 
-        if bypass_system_domain:
+        if force_blocked_domain:
+            # Hard block — takes priority over egress filter and system bypass.
+            # Bot must use its configured gateway base URL (e.g. TELEGRAM_API_BASE_URL)
+            # rather than a direct CONNECT tunnel.
+            result_blocked = True
+            block_reason = f"direct CONNECT tunnel to {host} is blocked; use gateway proxy"
+        elif bypass_system_domain:
             block_reason = "system egress bypass domain"
         elif self.egress_filter is not None:
             # Primary policy path: interactive egress approval + policy engine.
