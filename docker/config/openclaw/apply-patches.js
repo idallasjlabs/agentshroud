@@ -336,6 +336,59 @@ if (telegramToken) {
   }
 }
 
+// Patch 4: Slack (native Socket Mode — OpenClaw handles inbound directly)
+const slackBotToken = process.env.SLACK_BOT_TOKEN || (() => {
+  try { return fs.readFileSync('/run/secrets/slack_bot_token', 'utf8').trim(); } catch (e) { return ''; }
+})();
+const slackAppToken = process.env.SLACK_APP_TOKEN || (() => {
+  try { return fs.readFileSync('/run/secrets/slack_app_token', 'utf8').trim(); } catch (e) { return ''; }
+})();
+
+if (slackBotToken && slackAppToken) {
+  config.channels = config.channels || {};
+  config.channels.slack = config.channels.slack || {};
+
+  if (config.channels.slack.enabled !== true) {
+    config.channels.slack.enabled = true;
+    changed = true;
+  }
+  if (config.channels.slack.mode !== 'socket') {
+    config.channels.slack.mode = 'socket';
+    changed = true;
+  }
+  if (config.channels.slack.botToken !== slackBotToken) {
+    config.channels.slack.botToken = slackBotToken;
+    changed = true;
+  }
+  if (config.channels.slack.appToken !== slackAppToken) {
+    config.channels.slack.appToken = slackAppToken;
+    changed = true;
+  }
+  // dmPolicy: allowlist restricts DMs to the owner only.
+  // Owner's Slack user ID is provided via AGENTSHROUD_SLACK_OWNER_USER_ID.
+  const slackOwnerUserId = process.env.AGENTSHROUD_SLACK_OWNER_USER_ID || '';
+  if (config.channels.slack.dmPolicy !== 'allowlist') {
+    config.channels.slack.dmPolicy = 'allowlist';
+    changed = true;
+  }
+  if (slackOwnerUserId) {
+    const allowFrom = Array.isArray(config.channels.slack.allowFrom) ? config.channels.slack.allowFrom : [];
+    if (!allowFrom.includes(slackOwnerUserId)) {
+      allowFrom.push(slackOwnerUserId);
+      config.channels.slack.allowFrom = allowFrom;
+      changed = true;
+    }
+  }
+  // SLACK_API_BASE_URL: bot routes outbound Slack API calls through gateway proxy
+  if (config.channels.slack.apiUrl !== process.env.SLACK_API_BASE_URL && process.env.SLACK_API_BASE_URL) {
+    config.channels.slack.apiUrl = process.env.SLACK_API_BASE_URL;
+    changed = true;
+  }
+  console.log('[init-patch] Patched channels.slack (Socket Mode, owner allowlist)');
+} else {
+  console.log('[init-patch] Slack tokens not found — skipping channels.slack patch');
+}
+
 if (changed || isNew) {
   fs.writeFileSync(configPath, JSON.stringify(config, null, 2), 'utf8');
   console.log(`[init-patch] ✓ Patched ${configPath}`);

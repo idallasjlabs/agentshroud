@@ -3672,12 +3672,6 @@ async def telegram_api_proxy(path: str, request: Request):
     # GAP-3: Wire SecurityPipeline so Telegram proxy scans all messages
     if hasattr(app_state, 'pipeline') and app_state.pipeline is not None:
         _telegram_proxy.pipeline = app_state.pipeline
-    # Wire Slack bridge for bidirectional Slack↔Telegram routing (lazy, once)
-    if _telegram_proxy._slack_bridge is None and hasattr(app_state, 'slack_bridge'):
-        _telegram_proxy._slack_bridge = app_state.slack_bridge
-    if _telegram_proxy._slack_proxy is None and hasattr(app_state, 'slack_socket_proxy'):
-        _telegram_proxy._slack_proxy = app_state.slack_socket_proxy
-    
     # Proxy the request.
     # System notifications (startup/shutdown from start.sh) carry X-AgentShroud-System: 1
     # so the proxy skips outbound content filtering — these are not LLM-generated output.
@@ -3687,64 +3681,6 @@ async def telegram_api_proxy(path: str, request: Request):
     
     status_code = 200 if result.get('ok', False) else result.get('error_code', 500)
     return JSONResponse(content=result, status_code=status_code)
-
-
-# === Slack API Reverse Proxy + Events API endpoint ===
-# Inbound:  POST /slack-events  — receives Slack Events API pushes
-# Outbound: /slack-api/{method} — proxies bot Slack API calls through SecurityPipeline
-# Bot sets SLACK_API_BASE_URL=http://gateway:8080/slack-api (docker-compose.yml)
-
-_slack_proxy = SlackAPIProxy(
-    pipeline=None,       # Lazily wired from app_state on each request
-    middleware_manager=None,
-    sanitizer=None,
-)
-
-
-@app.post('/slack-events')
-async def slack_events(request: Request):
-    """Receive Slack Events API push, verify signing secret, and route through pipeline.
-
-    Returns HTTP 200 immediately (Slack requires response within 3 seconds).
-    url_verification challenge is handled synchronously before returning.
-    All other event processing runs in a background task.
-    """
-    raw_body = await request.body()
-    timestamp = request.headers.get("x-slack-request-timestamp", "")
-    signature = request.headers.get("x-slack-signature", "")
-
-    # Lazily wire pipeline from app_state
-    if hasattr(app_state, 'pipeline') and app_state.pipeline is not None:
-        _slack_proxy.pipeline = app_state.pipeline
-    if hasattr(app_state, 'middleware_manager'):
-        _slack_proxy.middleware_manager = app_state.middleware_manager
-    if hasattr(app_state, 'sanitizer'):
-        _slack_proxy.sanitizer = app_state.sanitizer
-
-    # Verify Slack signing secret before doing anything else
-    if not _slack_proxy.verify_signature(timestamp, raw_body, signature):
-        logger.warning("Slack events: signature verification failed — rejecting request")
-        raise HTTPException(status_code=403, detail="Invalid Slack signature")
-
-    # Check if Slack is enabled in config
-    config = getattr(app_state, 'config', None)
-    if config and not config.channels.slack_enabled:
-        # Still return 200 for url_verification challenges during setup
-        pass
-
-    try:
-        payload = json.loads(raw_body.decode("utf-8", errors="replace"))
-    except Exception:
-        raise HTTPException(status_code=400, detail="Invalid JSON payload")
-
-    # Synchronous url_verification handshake (required for Slack App setup)
-    if payload.get("type") == "url_verification":
-        challenge = payload.get("challenge", "")
-        return JSONResponse(content={"challenge": challenge})
-
-    # For all other events: acknowledge immediately, process async
-    asyncio.create_task(_slack_proxy.handle_event(payload))
-    return JSONResponse(content={"ok": True})
 
 
 @app.api_route('/slack-api/{path:path}', methods=['GET', 'POST'])
