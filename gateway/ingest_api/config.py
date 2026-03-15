@@ -118,6 +118,8 @@ class ChannelsConfig(BaseModel):
     imessage_allowed_recipients: list[str] = Field(default_factory=list)
     imessage_rate_limit_per_hour: int = 30
     imessage_require_approval_for_new: bool = True
+    slack_enabled: bool = False
+    slack_channel_id: str = ""  # Primary Slack channel for gateway-originated notifications
 
 
 
@@ -476,6 +478,7 @@ def load_config(config_path: Optional[Path] = None) -> GatewayConfig:
     email_raw = channels_raw.get("email", {}) if isinstance(channels_raw, dict) else {}
     telegram_raw = channels_raw.get("telegram", {}) if isinstance(channels_raw, dict) else {}
     imessage_raw = channels_raw.get("imessage", {}) if isinstance(channels_raw, dict) else {}
+    slack_raw = channels_raw.get("slack", {}) if isinstance(channels_raw, dict) else {}
     channels_config = ChannelsConfig(
         email_enabled=email_raw.get("enabled", True),
         email_allowed_recipients=email_raw.get("allowed_recipients", []),
@@ -486,6 +489,8 @@ def load_config(config_path: Optional[Path] = None) -> GatewayConfig:
         imessage_allowed_recipients=imessage_raw.get("allowed_recipients", []),
         imessage_rate_limit_per_hour=imessage_raw.get("rate_limit_per_hour", 30),
         imessage_require_approval_for_new=imessage_raw.get("require_approval_for_new", True),
+        slack_enabled=slack_raw.get("enabled", False),
+        slack_channel_id=slack_raw.get("channel_id", ""),
     )
 
     # Build final config

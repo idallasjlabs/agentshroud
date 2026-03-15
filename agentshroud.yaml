@@ -61,6 +61,8 @@ proxy:
     - api.openai.com
     - api.anthropic.com
     - api.telegram.org
+    - slack.com
+    - "*.slack.com"
     - oauth2.googleapis.com
     - www.googleapis.com
     - gmail.googleapis.com
@@ -198,9 +200,12 @@ logging:
   destination: "/app/logs"
 
 channels:
-  # Channel ownership (P3) — Telegram + email oversight
-  # All bot messages and emails route through the gateway for PII scanning,
+  # Channel ownership (P3) — Telegram + email oversight + Slack
+  # All bot messages route through the gateway for PII scanning,
   # recipient allowlisting, and approval queue integration.
+  slack:
+    enabled: false       # Opt-in: flip to true after placing secrets in docker/secrets/
+    channel_id: ""       # Primary Slack channel for bot notifications (e.g. C0ABC123DEF)
   email:
     enabled: true
     provider: icloud

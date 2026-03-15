@@ -414,15 +414,32 @@ class TelegramAPIProxy:
             "requested_at": now,
             "expires_at": now + self._pending_collaborator_request_cooldown_seconds,
         }
-        await self._send_owner_admin_notice(
-            int(owner_id),
-            (
-                f"{_PROTECT_HEADER}"
-                "Collaborator access request pending.\n"
-                f"User: {username or 'unknown'} ({user_id})\n"
-                "Owner action: /approve <user_id> or /deny <user_id>"
-            ),
+        _display_name = f"@{username}" if username and username != "unknown" else f"ID {user_id}"
+        _notif_text = (
+            f"{_PROTECT_HEADER}"
+            f"*Access Request*\n\n"
+            f"User: {_display_name}\n"
+            f"ID: `{user_id}`\n"
+            f"Action required: approve or deny below."
         )
+        _keyboard = {
+            "inline_keyboard": [[
+                {"text": "✅ Approve", "callback_data": f"collab_approve_{user_id}"},
+                {"text": "❌ Deny", "callback_data": f"collab_deny_{user_id}"},
+            ]]
+        }
+        sent = await self._send_telegram_with_keyboard(int(owner_id), _notif_text, _keyboard)
+        if not sent:
+            # Fall back to plain text if keyboard send fails
+            await self._send_owner_admin_notice(
+                int(owner_id),
+                (
+                    f"{_PROTECT_HEADER}"
+                    "Collaborator access request pending.\n"
+                    f"User: {_display_name} ({user_id})\n"
+                    "Owner action: /approve <user_id> or /deny <user_id>"
+                ),
+            )
         if chat_id:
             await self._send_collaborator_pending_notice(chat_id)
 
@@ -2919,6 +2936,67 @@ class TelegramAPIProxy:
                             )
                     except Exception as _ce:
                         logger.error("Egress callback error (non-fatal): %s", _ce)
+                elif cb_data.startswith("collab_approve_") or cb_data.startswith("collab_deny_"):
+                    # Inline button tap from the access request notification.
+                    try:
+                        _cb_action = "approve" if cb_data.startswith("collab_approve_") else "deny"
+                        _target_id = (
+                            cb_data[len("collab_approve_"):]
+                            if _cb_action == "approve"
+                            else cb_data[len("collab_deny_"):]
+                        ).strip()
+                        # RBAC guard — only owner can act
+                        if cb_user_id and self._rbac and not self._rbac.is_owner(cb_user_id):
+                            await self._answer_callback_query(
+                                callback_query.get("id", ""),
+                                "Not authorized for approval actions",
+                            )
+                        elif _target_id:
+                            _pending_info = self._pending_collaborator_requests.get(_target_id, {}) or {}
+                            _cb_username = str(_pending_info.get("username", "")).strip()
+                            _cb_display = f"@{_cb_username}" if _cb_username and _cb_username != "unknown" else f"ID {_target_id}"
+                            _cb_msg_id = ((callback_query.get("message") or {}).get("message_id"))
+
+                            if _cb_action == "approve":
+                                self._runtime_revoked_collaborators.discard(_target_id)
+                                self._pending_collaborator_requests.pop(_target_id, None)
+                                if self._rbac and _target_id not in {str(uid) for uid in (self._rbac.collaborator_user_ids or [])}:
+                                    self._rbac.collaborator_user_ids = list(self._rbac.collaborator_user_ids or []) + [_target_id]
+                                _decision_text = f"✅ *Access Approved*\n\nUser: {_cb_display}\nID: `{_target_id}`"
+                                _toast = f"✅ Approved: {_cb_display}"
+                                # Notify the collaborator
+                                _collab_chat = _pending_info.get("chat_id")
+                                if _collab_chat:
+                                    try:
+                                        await self._send_owner_admin_notice(
+                                            int(str(_collab_chat)),
+                                            f"{_PROTECT_HEADER}Access approved. You can continue in collaborator mode.",
+                                        )
+                                    except Exception:
+                                        pass
+                            else:
+                                self._pending_collaborator_requests.pop(_target_id, None)
+                                self._runtime_revoked_collaborators.add(_target_id)
+                                _decision_text = f"❌ *Access Denied*\n\nUser: {_cb_display}\nID: `{_target_id}`"
+                                _toast = f"❌ Denied: {_cb_display}"
+                                _collab_chat = _pending_info.get("chat_id")
+                                if _collab_chat:
+                                    try:
+                                        await self._send_owner_admin_notice(
+                                            int(str(_collab_chat)),
+                                            f"{_PROTECT_HEADER}Access denied. Contact owner if needed.",
+                                        )
+                                    except Exception:
+                                        pass
+
+                            await self._answer_callback_query(callback_query.get("id", ""), _toast)
+                            if _cb_msg_id and cb_chat_id:
+                                await self._edit_telegram_message(cb_chat_id, _cb_msg_id, _decision_text)
+                            logger.info(
+                                "Collab callback handled: action=%s target=%s", _cb_action, _target_id
+                            )
+                    except Exception as _ce:
+                        logger.error("Collab callback error (non-fatal): %s", _ce)
                 # Drop callback_query updates — they are not bot messages
                 continue
 
@@ -3199,14 +3277,19 @@ class TelegramAPIProxy:
                         if len(pending_ids) == 1:
                             target_id = pending_ids[0]
                         else:
-                            pending_hint = (
-                                f"\nPending: {', '.join(pending_ids[:5])}"
-                                if pending_ids
-                                else "\nPending: none"
-                            )
+                            if pending_ids:
+                                _pending_lines = []
+                                for _pid in pending_ids[:5]:
+                                    _pi = self._pending_collaborator_requests.get(_pid, {}) or {}
+                                    _pu = str(_pi.get("username", "")).strip()
+                                    _pu_label = f"@{_pu}" if _pu and _pu != "unknown" else "no username"
+                                    _pending_lines.append(f"  {_pu_label} ({_pid})")
+                                pending_hint = "\nPending:\n" + "\n".join(_pending_lines)
+                            else:
+                                pending_hint = "\nPending: none"
                             await self._send_owner_admin_notice(
                                 chat_id,
-                                f"{_PROTECT_HEADER}Usage: /approve <telegram_user_id|name>{pending_hint}",
+                                f"{_PROTECT_HEADER}Usage: /approve <user_id|@username>{pending_hint}",
                             )
                             continue
                     if target_id == user_id:
@@ -4344,6 +4427,104 @@ class TelegramAPIProxy:
                 await asyncio.sleep(max(0.35 * (attempt + 1), retry_after_seconds))
         return False
 
+    async def _send_telegram_with_keyboard(
+        self,
+        chat_id: int,
+        text: str,
+        keyboard: dict,
+        *,
+        parse_mode: str = "Markdown",
+    ) -> bool:
+        """Send a Telegram message with an inline keyboard."""
+        if not self._bot_token:
+            return False
+        url = f"{TELEGRAM_API_BASE}/bot{self._bot_token}/sendMessage"
+        payload: dict[str, Any] = {
+            "chat_id": chat_id,
+            "text": text,
+            "parse_mode": parse_mode,
+            "reply_markup": keyboard,
+        }
+        req = urllib.request.Request(
+            url,
+            data=json.dumps(payload).encode(),
+            headers={"Content-Type": "application/json"},
+        )
+        loop = asyncio.get_event_loop()
+        try:
+            await loop.run_in_executor(
+                None,
+                lambda: urllib.request.urlopen(req, timeout=5, context=self._ssl_context),
+            )
+            return True
+        except Exception as exc:
+            logger.warning("Telegram sendMessage+keyboard failed (chat=%s): %s", chat_id, exc)
+            return False
+
+    async def _edit_telegram_message(
+        self,
+        chat_id,
+        message_id: int,
+        text: str,
+        *,
+        parse_mode: str = "Markdown",
+    ) -> bool:
+        """Edit an existing Telegram message in-place (removes inline keyboard too)."""
+        if not self._bot_token:
+            return False
+        url = f"{TELEGRAM_API_BASE}/bot{self._bot_token}/editMessageText"
+        payload: dict[str, Any] = {
+            "chat_id": chat_id,
+            "message_id": message_id,
+            "text": text,
+            "parse_mode": parse_mode,
+        }
+        req = urllib.request.Request(
+            url,
+            data=json.dumps(payload).encode(),
+            headers={"Content-Type": "application/json"},
+        )
+        loop = asyncio.get_event_loop()
+        try:
+            await loop.run_in_executor(
+                None,
+                lambda: urllib.request.urlopen(req, timeout=5, context=self._ssl_context),
+            )
+            return True
+        except Exception as exc:
+            logger.warning("Telegram editMessageText failed (chat=%s, msg=%s): %s", chat_id, message_id, exc)
+            return False
+
+    async def _answer_callback_query(
+        self,
+        callback_query_id: str,
+        text: str,
+    ) -> bool:
+        """Dismiss the Telegram inline button spinner with a brief toast."""
+        if not self._bot_token:
+            return False
+        url = f"{TELEGRAM_API_BASE}/bot{self._bot_token}/answerCallbackQuery"
+        payload: dict[str, Any] = {
+            "callback_query_id": callback_query_id,
+            "text": text,
+            "show_alert": False,
+        }
+        req = urllib.request.Request(
+            url,
+            data=json.dumps(payload).encode(),
+            headers={"Content-Type": "application/json"},
+        )
+        loop = asyncio.get_event_loop()
+        try:
+            await loop.run_in_executor(
+                None,
+                lambda: urllib.request.urlopen(req, timeout=5, context=self._ssl_context),
+            )
+            return True
+        except Exception as exc:
+            logger.warning("Telegram answerCallbackQuery failed: %s", exc)
+            return False
+
     async def _send_local_notice_with_fallback(
         self,
         chat_id: int,
@@ -4491,6 +4672,7 @@ class TelegramAPIProxy:
         try:
             if not self._bot_token:
                 return
+            now = time.time()
             pending_ids = sorted(self._pending_collaborator_requests.keys())
             configured_ids: list[str] = []
             if self._rbac:
@@ -4498,12 +4680,29 @@ class TelegramAPIProxy:
                     str(uid) for uid in (self._rbac.collaborator_user_ids or [])
                 )
             revoked_ids = sorted(self._runtime_revoked_collaborators)
-            msg = (
-                "🛡️ AgentShroud pending approvals\n"
-                f"• Pending requests: {', '.join(pending_ids) if pending_ids else 'none'}\n"
-                f"• Active collaborators: {', '.join(configured_ids) if configured_ids else 'none'}\n"
-                f"• Revoked users: {', '.join(revoked_ids) if revoked_ids else 'none'}"
-            )
+            lines = ["🛡️ Protected by AgentShroud\n*Pending Access Requests*\n"]
+            if pending_ids:
+                for uid in pending_ids:
+                    p = self._pending_collaborator_requests.get(uid, {}) or {}
+                    uname = str(p.get("username", "")).strip()
+                    uname_label = f"@{uname}" if uname and uname != "unknown" else "no username"
+                    elapsed = int(now - float(p.get("requested_at", now)))
+                    if elapsed < 60:
+                        age = f"{elapsed}s ago"
+                    elif elapsed < 3600:
+                        age = f"{elapsed // 60}m ago"
+                    else:
+                        age = f"{elapsed // 3600}h ago"
+                    lines.append(f"• {uname_label}  `{uid}`  ({age})")
+                    lines.append(f"  `/approve {uid}`  •  `/deny {uid}`")
+            else:
+                lines.append("• No pending requests")
+            if configured_ids:
+                active_display = [self._resolve_display_name(uid) for uid in configured_ids]
+                lines.append(f"\n*Active:* {', '.join(active_display)}")
+            if revoked_ids:
+                lines.append(f"*Revoked:* {', '.join(revoked_ids)}")
+            msg = "\n".join(lines)
             await self._send_local_notice_with_fallback(
                 chat_id,
                 msg,

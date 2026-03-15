@@ -883,7 +883,7 @@ class TestInboundPipelineOnGetUpdates:
         assert result["result"] == []
         assert len(notices) == 1
         assert notices[0][0] == int(owner_id)
-        assert "usage: /approve <telegram_user_id|name>" in notices[0][1].lower()
+        assert "usage: /approve <user_id|@username>" in notices[0][1].lower()
 
     @pytest.mark.asyncio
     async def test_owner_approve_without_target_auto_selects_single_pending(self, monkeypatch):
@@ -1033,8 +1033,10 @@ class TestInboundPipelineOnGetUpdates:
         result = await proxy._filter_inbound_updates(response)
         assert result["result"] == []
         text = captured["payload"]["text"]
-        assert "pending approvals" in text.lower()
+        assert "pending access requests" in text.lower()
         assert target_pending in text
+        assert "@target" in text           # username shown
+        assert "/approve" in text          # approve instruction shown
         assert "7614658040" in text
         assert target_revoked in text
 
