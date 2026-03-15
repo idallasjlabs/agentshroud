@@ -105,6 +105,7 @@ class SlackSocketClient:
                     continue
 
                 msg_type = envelope.get("type")
+                logger.debug("Slack Socket Mode: received message type=%r", msg_type)
 
                 if msg_type == "hello":
                     conns = envelope.get("num_connections", "?")

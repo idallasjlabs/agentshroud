@@ -3672,6 +3672,11 @@ async def telegram_api_proxy(path: str, request: Request):
     # GAP-3: Wire SecurityPipeline so Telegram proxy scans all messages
     if hasattr(app_state, 'pipeline') and app_state.pipeline is not None:
         _telegram_proxy.pipeline = app_state.pipeline
+    # Wire Slack bridge for bidirectional Slack↔Telegram routing (lazy, once)
+    if _telegram_proxy._slack_bridge is None and hasattr(app_state, 'slack_bridge'):
+        _telegram_proxy._slack_bridge = app_state.slack_bridge
+    if _telegram_proxy._slack_proxy is None and hasattr(app_state, 'slack_socket_proxy'):
+        _telegram_proxy._slack_proxy = app_state.slack_socket_proxy
     
     # Proxy the request.
     # System notifications (startup/shutdown from start.sh) carry X-AgentShroud-System: 1
