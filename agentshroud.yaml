@@ -204,8 +204,8 @@ channels:
   # All bot messages route through the gateway for PII scanning,
   # recipient allowlisting, and approval queue integration.
   slack:
-    enabled: false       # Opt-in: flip to true after placing secrets in docker/secrets/
-    channel_id: ""       # Primary Slack channel for bot notifications (e.g. C0ABC123DEF)
+    enabled: true       # Opt-in: flip to true after placing secrets in docker/secrets/
+    channel_id: "C0AM1GP930R"       # Primary Slack channel for bot notifications (e.g. C0ABC123DEF)
   email:
     enabled: true
     provider: icloud
