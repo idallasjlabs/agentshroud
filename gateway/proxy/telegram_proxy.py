@@ -1786,6 +1786,9 @@ class TelegramAPIProxy:
             # Callback data tokens from inline keyboard (egress approval buttons)
             or "egress_allow_always_" in normalized
             or "egress_allow_once_" in normalized
+            or "egress_allow_1h_" in normalized
+            or "egress_allow_4h_" in normalized
+            or "egress_allow_24h_" in normalized
             or "egress_deny_" in normalized
         )
 
@@ -2270,6 +2273,12 @@ class TelegramAPIProxy:
                     and self._contains_internal_approval_banner(text)
                 ):
                     self._stats["outbound_filtered"] += 1
+                    _owner_id_str = str(getattr(self._rbac, "owner_user_id", "")).strip()
+                    if _owner_id_str:
+                        asyncio.create_task(self._send_owner_admin_notice(
+                            int(_owner_id_str),
+                            "🔔 *Egress Approval Triggered*\n\nA collaborator interaction generated an egress approval request. Check /pending to review.",
+                        ))
                     data[text_key] = _COLLABORATOR_EGRESS_NOTICE
                     return json.dumps(data).encode()
                 if (
@@ -2280,6 +2289,14 @@ class TelegramAPIProxy:
                     self._stats["outbound_filtered"] += 1
                     data[text_key] = self._collaborator_safe_notice("redacted protected content")
                     return json.dumps(data).encode()
+                # Block owner's Telegram user ID from appearing in collaborator responses.
+                # Prevents IDENTITY.md content from leaking if the bot reads and paraphrases it.
+                if not is_owner_chat and isinstance(text, str) and self._rbac:
+                    _oid = str(getattr(self._rbac, "owner_user_id", "")).strip()
+                    if len(_oid) >= 7 and _oid in text:
+                        self._stats["outbound_filtered"] += 1
+                        data[text_key] = self._collaborator_safe_notice("redacted protected content")
+                        return json.dumps(data).encode()
                 if isinstance(text, str) and "does not support tools" in text.lower():
                     self._stats["outbound_filtered"] += 1
                     data[text_key] = "⚠️ Current local model does not support tool calls. Use scripts/switch_model.sh local qwen3:14b (or a tools-capable model)."
@@ -2637,6 +2654,12 @@ class TelegramAPIProxy:
                     and self._contains_internal_approval_banner(text)
                 ):
                     self._stats["outbound_filtered"] += 1
+                    _owner_id_str = str(getattr(self._rbac, "owner_user_id", "")).strip()
+                    if _owner_id_str:
+                        asyncio.create_task(self._send_owner_admin_notice(
+                            int(_owner_id_str),
+                            "🔔 *Egress Approval Triggered*\n\nA collaborator interaction generated an egress approval request. Check /pending to review.",
+                        ))
                     data[text_key] = _COLLABORATOR_EGRESS_NOTICE
                     return urllib.parse.urlencode(data).encode()
                 if (
@@ -2647,6 +2670,13 @@ class TelegramAPIProxy:
                     self._stats["outbound_filtered"] += 1
                     data[text_key] = self._collaborator_safe_notice("redacted protected content")
                     return urllib.parse.urlencode(data).encode()
+                # Block owner's Telegram user ID from appearing in collaborator responses.
+                if not is_owner_chat and isinstance(text, str) and self._rbac:
+                    _oid = str(getattr(self._rbac, "owner_user_id", "")).strip()
+                    if len(_oid) >= 7 and _oid in text:
+                        self._stats["outbound_filtered"] += 1
+                        data[text_key] = self._collaborator_safe_notice("redacted protected content")
+                        return urllib.parse.urlencode(data).encode()
         except Exception as e:
             logger.error(f"Outbound filter error: {e}")
             # Fail-closed: if pipeline crashes, block non-owner outbound messages.
@@ -2923,6 +2953,16 @@ class TelegramAPIProxy:
                                     # Use add_rule directly — more reliable than approve(rid)
                                     # because it works even when the in-flight request is gone.
                                     await _queue.add_rule(domain, "allow", ApprovalMode.PERMANENT)
+                                elif action in ("allow_1h", "allow_4h", "allow_24h"):
+                                    # Time-limited: unblock the waiting future (once) and
+                                    # record the TTL in EgressFilter for subsequent requests.
+                                    await _queue.approve(rid, ApprovalMode.ONCE)
+                                    _expires_at = result.get("expires_at")
+                                    if _expires_at and domain:
+                                        from gateway.ingest_api.state import app_state as _state
+                                        _ef = getattr(_state, "egress_filter", None)
+                                        if _ef is not None and hasattr(_ef, "grant_timed_approval"):
+                                            _ef.grant_timed_approval(domain, _expires_at)
                                 elif action == "allow_once":
                                     await _queue.approve(rid, ApprovalMode.ONCE)
                                 elif action == "deny":
@@ -2931,12 +2971,22 @@ class TelegramAPIProxy:
                             # Build a human-readable decision label.
                             if result.get("status") == "ok":
                                 _domain_label = domain or "unknown"
+                                _expires_label = result.get("expires_at", "")
                                 if action == "allow_always":
                                     _toast = f"✅ Always allowed: {_domain_label}"
                                     _edit_text = (
                                         f"✅ *Egress Always Allowed*\n\n"
                                         f"Domain: `{_domain_label}`\n"
                                         f"Rule: permanent\n"
+                                        f"ID: `{rid[:8]}`"
+                                    )
+                                elif action in ("allow_1h", "allow_4h", "allow_24h"):
+                                    _dur = action.replace("allow_", "")
+                                    _toast = f"✅ Allowed {_dur}: {_domain_label}"
+                                    _edit_text = (
+                                        f"✅ *Egress Allowed ({_dur})*\n\n"
+                                        f"Domain: `{_domain_label}`\n"
+                                        f"Expires: `{_expires_label or 'soon'}`\n"
                                         f"ID: `{rid[:8]}`"
                                     )
                                 elif action == "allow_once":
