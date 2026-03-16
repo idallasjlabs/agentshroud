@@ -180,6 +180,14 @@ mkdir -p "${WORKSPACE_DIR}"
 cp "${DEFAULTS_DIR}/workspace/BRAND.md" "${WORKSPACE_DIR}/BRAND.md"
 echo "[init] ✓ Refreshed BRAND.md (trademark & brand rules)"
 
+# SOUL.md: always overwrite — anti-hallucination rules for the main agent.
+# Without this, after long sessions the bot generates fake security block messages
+# instead of answering questions plainly (B1.14b regression).
+if [ -f "${DEFAULTS_DIR}/workspace/SOUL.md" ]; then
+  cp "${DEFAULTS_DIR}/workspace/SOUL.md" "${WORKSPACE_DIR}/SOUL.md"
+  echo "[init] ✓ Refreshed SOUL.md (anti-hallucination rules for main agent)"
+fi
+
 # IDENTITY.md: seed only if missing or still the unfilled OpenClaw default.
 IDENTITY_FILE="${WORKSPACE_DIR}/IDENTITY.md"
 if [ ! -f "${IDENTITY_FILE}" ] || grep -q "_Fill this in during your first conversation_" "${IDENTITY_FILE}" 2>/dev/null; then
