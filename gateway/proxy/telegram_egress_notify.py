@@ -182,6 +182,7 @@ class EgressTelegramNotifier:
             "domain": request_info["domain"],
             "port": request_info["port"],
             "expires_at": expires_at,
+            "agent_id": request_info.get("agent_id", ""),
         }
 
     async def answer_callback(self, callback_query_id: str, text: str) -> bool:

@@ -3804,3 +3804,143 @@ class TestOutboundClassifierHelpers:
     def test_looks_like_filename_reference_rejects_real_domains(self):
         assert TelegramAPIProxy._looks_like_filename_reference("weather.com") is False
         assert TelegramAPIProxy._looks_like_filename_reference("api.github.com") is False
+
+
+# ── _looks_like_safe_collaborator_info_query ─────────────────────────────────
+
+class TestLooksLikeSafeCollaboratorInfoQuery:
+    """Classifier for conceptual collaborator questions."""
+
+    def test_greeting_hello_is_safe(self):
+        assert TelegramAPIProxy._looks_like_safe_collaborator_info_query("Hello") is True
+
+    def test_greeting_hi_is_safe(self):
+        assert TelegramAPIProxy._looks_like_safe_collaborator_info_query("hi there") is True
+
+    def test_greeting_hey_is_safe(self):
+        assert TelegramAPIProxy._looks_like_safe_collaborator_info_query("Hey!") is True
+
+    def test_greeting_good_morning_is_safe(self):
+        assert TelegramAPIProxy._looks_like_safe_collaborator_info_query("Good morning") is True
+
+    def test_greeting_bypasses_interrogative_requirement(self):
+        # "Hello" has no '?', 'how', 'what', etc. — should still return True
+        assert TelegramAPIProxy._looks_like_safe_collaborator_info_query("Hello!") is True
+
+    def test_security_model_question(self):
+        assert TelegramAPIProxy._looks_like_safe_collaborator_info_query("What is the security model here?") is True
+
+    def test_protection_question(self):
+        assert TelegramAPIProxy._looks_like_safe_collaborator_info_query("How does protection work?") is True
+
+    def test_refuse_question(self):
+        assert TelegramAPIProxy._looks_like_safe_collaborator_info_query("What requests do you refuse?") is True
+
+    def test_restrict_question(self):
+        assert TelegramAPIProxy._looks_like_safe_collaborator_info_query("What is restricted for collaborators?") is True
+
+    def test_pii_question(self):
+        assert TelegramAPIProxy._looks_like_safe_collaborator_info_query("What happens to pii in my messages?") is True
+
+    def test_sanitiz_question(self):
+        assert TelegramAPIProxy._looks_like_safe_collaborator_info_query("How does sanitization work?") is True
+
+    def test_formatting_trick_question(self):
+        assert TelegramAPIProxy._looks_like_safe_collaborator_info_query("Can a formatting trick bypass the policy?") is True
+
+    def test_what_can_you_question(self):
+        assert TelegramAPIProxy._looks_like_safe_collaborator_info_query("What can you help with?") is True
+
+    def test_collaboration_question(self):
+        assert TelegramAPIProxy._looks_like_safe_collaborator_info_query("How does collaboration work here?") is True
+
+    def test_password_question(self):
+        assert TelegramAPIProxy._looks_like_safe_collaborator_info_query("How are passwords handled?") is True
+
+    def test_no_match_without_tokens(self):
+        assert TelegramAPIProxy._looks_like_safe_collaborator_info_query("Tell me something random") is False
+
+    def test_file_query_is_blocked(self):
+        assert TelegramAPIProxy._looks_like_safe_collaborator_info_query("What is in config.yaml?") is False
+
+    def test_execute_verb_is_blocked(self):
+        assert TelegramAPIProxy._looks_like_safe_collaborator_info_query("How do I execute a command?") is False
+
+
+# ── _build_collaborator_safe_info_response ────────────────────────────────────
+
+class TestBuildCollaboratorSafeInfoResponse:
+    """Static response builder for collaborator conceptual queries."""
+
+    def _resp(self, prompt: str) -> str:
+        return TelegramAPIProxy._build_collaborator_safe_info_response(prompt)
+
+    def test_greeting_hello(self):
+        r = self._resp("Hello")
+        assert "collaborator mode" in r.lower()
+        assert "AgentShroud" in r
+
+    def test_greeting_hi(self):
+        r = self._resp("hi")
+        assert "collaborator mode" in r.lower()
+
+    def test_greeting_good_morning(self):
+        r = self._resp("Good morning")
+        assert "collaborator mode" in r.lower()
+
+    def test_greeting_contains_capability_hint(self):
+        r = self._resp("Hello")
+        assert "security" in r.lower() or "architecture" in r.lower() or "authorization" in r.lower()
+
+    def test_restriction_refuse(self):
+        r = self._resp("What do you refuse to do?")
+        assert "collaborator" in r.lower()
+        assert "restricted" in r.lower() or "owner" in r.lower()
+
+    def test_restriction_not_allowed(self):
+        r = self._resp("What is not allowed in collaborator mode?")
+        assert "restricted" in r.lower() or "owner" in r.lower()
+
+    def test_pii_sanitization(self):
+        r = self._resp("What happens to pii in my message?")
+        assert "sanitiz" in r.lower() or "redact" in r.lower() or "privacy" in r.lower()
+
+    def test_credit_card_privacy(self):
+        r = self._resp("What if I send a credit card number?")
+        assert "sanitiz" in r.lower() or "proxy" in r.lower() or "privacy" in r.lower()
+
+    def test_input_consistency_formatting_trick(self):
+        r = self._resp("Can a formatting trick bypass sanitization?")
+        assert "normaliz" in r.lower() or "policy" in r.lower()
+
+    def test_input_consistency_spaces_or_dashes(self):
+        r = self._resp("What about spaces or dashes in inputs?")
+        assert "normaliz" in r.lower() or "policy" in r.lower()
+
+    def test_security_model(self):
+        r = self._resp("What is the security model?")
+        assert "policy" in r.lower() or "security" in r.lower()
+
+    def test_security_approach(self):
+        r = self._resp("How does the security approach work?")
+        assert "policy" in r.lower() or "security" in r.lower()
+
+    def test_password_credential_branch(self):
+        r = self._resp("How are passwords stored?")
+        assert "credential" in r.lower() or "secret" in r.lower() or "authorization" in r.lower()
+
+    def test_what_can_you_capability(self):
+        r = self._resp("What can you help with?")
+        assert "collaborator" in r.lower() or "capability" in r.lower() or "authorized" in r.lower()
+
+    def test_collaboration_capability(self):
+        r = self._resp("How does collaboration work with this system?")
+        assert "collaborator" in r.lower() or "capability" in r.lower() or "authorized" in r.lower()
+
+    def test_architecture_existing_branch(self):
+        r = self._resp("Can you explain the architecture?")
+        assert "policy" in r.lower() or "security" in r.lower()
+
+    def test_fallback_for_unmatched(self):
+        r = self._resp("something completely unrelated")
+        assert "collaborator" in r.lower()
