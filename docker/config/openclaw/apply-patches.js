@@ -379,15 +379,21 @@ if (slackBotToken && slackAppToken) {
     config.channels.slack.dmPolicy = 'open';
     changed = true;
   }
-  if (slackOwnerUserId) {
+  // dmPolicy=open requires '*' in allowFrom (OpenClaw validation requirement)
+  {
     const allowFrom = Array.isArray(config.channels.slack.allowFrom) ? config.channels.slack.allowFrom : [];
-    if (!allowFrom.includes(slackOwnerUserId)) {
+    let af_changed = false;
+    if (!allowFrom.includes('*')) { allowFrom.push('*'); af_changed = true; }
+    if (slackOwnerUserId && !allowFrom.includes(slackOwnerUserId)) {
       allowFrom.push(slackOwnerUserId);
+      af_changed = true;
+    }
+    if (af_changed) {
       config.channels.slack.allowFrom = allowFrom;
       changed = true;
     }
   }
-  console.log('[init-patch] Patched channels.slack (Socket Mode, owner allowlist)');
+  console.log('[init-patch] Patched channels.slack (Socket Mode, dmPolicy=open)');
 } else {
   console.log('[init-patch] Slack tokens not found — skipping channels.slack patch');
 }
