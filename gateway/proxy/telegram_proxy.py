@@ -29,7 +29,7 @@ from typing import Any, Optional
 from urllib.parse import urlparse
 
 from gateway.security.input_normalizer import normalize_input, strip_markdown_exfil
-from gateway.security.rbac_config import RBACConfig
+from gateway.security.rbac_config import RBACConfig, persist_approved_collaborator
 from gateway.utils.secrets import read_secret as _read_secret_static
 
 logger = logging.getLogger("agentshroud.proxy.telegram_api")
@@ -2990,10 +2990,8 @@ class TelegramAPIProxy:
                                 self._runtime_revoked_collaborators.discard(_target_id)
                                 self._pending_collaborator_requests.pop(_target_id, None)
                                 if self._rbac and _target_id not in {str(uid) for uid in (self._rbac.collaborator_user_ids or [])}:
-                                    # NOTE: This in-memory approval is session-scoped and lost on gateway restart.
-                                    # The approved user will need to re-request access after restart.
-                                    # To persist approvals across restarts, write to agentshroud.yaml and reload config.
                                     self._rbac.collaborator_user_ids = list(self._rbac.collaborator_user_ids or []) + [_target_id]
+                                persist_approved_collaborator(_target_id)
                                 _decision_text = f"✅ *Access Approved*\n\nUser: {_cb_display}\nID: `{_target_id}`"
                                 _toast = f"✅ Approved: {_cb_display}"
                                 # Notify the collaborator
@@ -3351,6 +3349,7 @@ class TelegramAPIProxy:
                     pending = self._pending_collaborator_requests.pop(target_id, None)
                     if self._rbac and target_id not in {str(uid) for uid in (self._rbac.collaborator_user_ids or [])}:
                         self._rbac.collaborator_user_ids = list(self._rbac.collaborator_user_ids or []) + [target_id]
+                    persist_approved_collaborator(target_id)
                     await self._send_owner_admin_notice(
                         chat_id,
                         f"{_PROTECT_HEADER}Collaborator access approved for user {target_id}.",
@@ -3423,6 +3422,7 @@ class TelegramAPIProxy:
                     self._runtime_revoked_collaborators.discard(target_id)
                     if self._rbac and target_id not in {str(uid) for uid in (self._rbac.collaborator_user_ids or [])}:
                         self._rbac.collaborator_user_ids = list(self._rbac.collaborator_user_ids or []) + [target_id]
+                    persist_approved_collaborator(target_id)
                     await self._send_owner_admin_notice(
                         chat_id,
                         f"{_PROTECT_HEADER}Collaborator added: {target_id}",
