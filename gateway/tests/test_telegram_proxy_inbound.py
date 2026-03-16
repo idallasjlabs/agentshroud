@@ -172,7 +172,7 @@ class TestInboundPipelineOnGetUpdates:
         proxy._rbac = FakeRBAC(collaborators=["999"])
         proxy._bot_token = ""
 
-        clean_text = "Hello, how are you today?"
+        clean_text = "prepare the quarterly budget summary"
         response = _wrap_response(
             _make_update(clean_text, user_id="999")
         )
@@ -263,11 +263,12 @@ class TestInboundPipelineOnGetUpdates:
     @pytest.mark.asyncio
     async def test_proxy_request_tracks_getupdates_stats_for_forwarded_message(self, monkeypatch):
         """proxy_request should increment inbound getUpdates stats when messages pass through."""
+        monkeypatch.setenv("AGENTSHROUD_COLLAB_LOCAL_INFO_ONLY", "0")
         proxy = TelegramAPIProxy(pipeline=PassthroughPipeline())
         proxy._rbac = FakeRBAC(collaborators=["999"])
 
         async def fake_forward(url, body, content_type):
-            return _wrap_response(_make_update("hello", user_id="999"))
+            return _wrap_response(_make_update("prepare the quarterly budget summary", user_id="999"))
 
         monkeypatch.setattr(proxy, "_forward_to_telegram", fake_forward)
 
@@ -7260,7 +7261,7 @@ class TestCollaboratorPromptClassifiers:
         await proxy._send_collaborator_safe_info_response(12345, "How does authentication work?")
 
         assert len(calls) == 2
-        assert "secure collaboration guidance" in calls[0].lower()
+        assert "agentshroud" in calls[0].lower()
         assert "i can't do that right now" in calls[1].lower()
 
     @pytest.mark.asyncio
