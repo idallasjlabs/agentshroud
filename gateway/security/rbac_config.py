@@ -49,7 +49,8 @@ class RBACConfig:
         "15712621992",
         "8279589982",
         "8526379012",
-        "7614658040"
+        "7614658040",
+        "8633775668"
     ])
     
     def __post_init__(self):
@@ -79,6 +80,11 @@ class RBACConfig:
         self.collaborator_user_ids = [
             uid for uid in self.collaborator_user_ids if str(uid) != str(self.owner_user_id)
         ]
+
+        # Merge dynamically approved collaborators from persistent store (inline Approve button).
+        for _uid in load_persisted_collaborators():
+            if _uid not in self.collaborator_user_ids and str(_uid) != str(self.owner_user_id):
+                self.collaborator_user_ids.append(_uid)
 
         # Set owner role
         if self.owner_user_id:
@@ -114,3 +120,45 @@ class RBACConfig:
         """Check if user has collaborator privileges or higher."""
         role = self.get_user_role(user_id)
         return role in [Role.OWNER, Role.ADMIN, Role.COLLABORATOR]
+
+
+# ---------------------------------------------------------------------------
+# Collaborator persistence — approvals made via inline buttons persist across
+# gateway restarts. Written to /app/data/approved_collaborators.json on the
+# shared data volume.
+# ---------------------------------------------------------------------------
+import json
+import logging
+from pathlib import Path
+
+_collab_persist_logger = logging.getLogger("agentshroud.security.rbac_config")
+_APPROVED_COLLABORATORS_FILE = Path(
+    os.environ.get("AGENTSHROUD_DATA_DIR", "/app/data")
+) / "approved_collaborators.json"
+
+
+def load_persisted_collaborators() -> list[str]:
+    """Read dynamically approved collaborator IDs from disk."""
+    try:
+        if _APPROVED_COLLABORATORS_FILE.exists():
+            data = json.loads(_APPROVED_COLLABORATORS_FILE.read_text(encoding="utf-8"))
+            return [str(uid) for uid in data.get("collaborators", [])]
+    except Exception as exc:
+        _collab_persist_logger.warning("Could not read approved_collaborators.json: %s", exc)
+    return []
+
+
+def persist_approved_collaborator(uid: str) -> None:
+    """Append a collaborator UID to the persistent store (idempotent)."""
+    try:
+        existing = load_persisted_collaborators()
+        if uid in existing:
+            return
+        existing.append(uid)
+        _APPROVED_COLLABORATORS_FILE.parent.mkdir(parents=True, exist_ok=True)
+        _APPROVED_COLLABORATORS_FILE.write_text(
+            json.dumps({"collaborators": existing}, indent=2), encoding="utf-8"
+        )
+        _collab_persist_logger.info("Persisted approved collaborator: %s", uid)
+    except Exception as exc:
+        _collab_persist_logger.warning("Could not persist approved collaborator %s: %s", uid, exc)
