@@ -1654,7 +1654,25 @@ class TelegramAPIProxy:
                 "• Security/configuration changes require authorized admin approval.\n"
                 "• I can explain policy intent and propose safe change-request language."
             )
+        if any(token in lowered for token in ("get processed", "message processed", "processed before", "how are messages", "message pipeline", "message flow", "before you answer", "before answering")):
+            return (
+                f"{_PROTECT_HEADER}"
+                "Message processing overview:\n"
+                "• Messages are verified for sender identity and trust level before routing.\n"
+                "• Policy controls determine what actions are permitted based on your access level.\n"
+                "• Outputs are safety-checked before delivery to prevent unintended disclosure.\n"
+                "• I can discuss the general flow without exposing internal implementation details."
+            )
         if any(token in lowered for token in ("authentication", "credential", "api key", "secret")):
+            if any(token in lowered for token in ("flow", "how", "intermediary", "handles", "brokered", "integrate", "integration", "work")):
+                return (
+                    f"{_PROTECT_HEADER}"
+                    "Authentication flow overview:\n"
+                    "• External credentials are stored in a secured secrets manager — not in my active context.\n"
+                    "• When external access is needed, the security gateway brokers the request on my behalf.\n"
+                    "• I never receive raw API keys or tokens — only confirmation that a request was authorized.\n"
+                    "• For integration guidance, I can help with OAuth patterns, least-privilege design, and safe request flows."
+                )
             return (
                 f"{_PROTECT_HEADER}"
                 "Secure collaboration guidance:\n"
@@ -1697,6 +1715,19 @@ class TelegramAPIProxy:
                 "• Unauthorized outbound requests are denied.\n"
                 "• Approval decisions are enforced before execution.\n"
                 "• I can help draft safe request criteria and risk-aware justification."
+            )
+        if any(token in lowered for token in (
+            "owner versus", "owner vs", "came from the owner", "came from owner",
+            "tell whether", "tell if", "owner or collaborator", "collaborator or owner",
+            "how does that affect", "how does it affect",
+        )):
+            return (
+                f"{_PROTECT_HEADER}"
+                "Access level guidance:\n"
+                "• The security proxy identifies all message senders and applies the appropriate trust level.\n"
+                "• Owner messages have full operational access; collaborator messages are policy-gated.\n"
+                "• This distinction determines what actions I can take and what information I can share.\n"
+                "• These boundaries are enforced by the gateway — I cannot override them."
             )
         if any(
             token in lowered
