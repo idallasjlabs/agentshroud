@@ -87,14 +87,14 @@ class TestInboundPipelineWired:
         )
         proxy = _make_proxy(pipeline=pipeline)
 
-        response = _getUpdates_response([_make_update("hello world", user_id="42")])
+        response = _getUpdates_response([_make_update("process the quarterly update", user_id="42")])
         await proxy._filter_inbound_updates(response)
 
         pipeline.process_inbound.assert_called_once()
         call_kwargs = pipeline.process_inbound.call_args.kwargs
         assert call_kwargs.get("skip_context_guard") is True
         assert call_kwargs.get("source") == "telegram"
-        assert call_kwargs.get("message") == "hello world"
+        assert call_kwargs.get("message") == "process the quarterly update"
 
 
 # ── Test 2: blocked non-owner message → dropped, stats incremented ──
@@ -154,7 +154,7 @@ class TestInboundPipelineExceptionNonOwner:
         proxy = _make_proxy(pipeline=pipeline, owner_user_id="99999")
         proxy._notify_user_blocked = AsyncMock()
 
-        response = _getUpdates_response([_make_update("hello", user_id="42")])
+        response = _getUpdates_response([_make_update("process the quarterly update", user_id="42")])
         result = await proxy._filter_inbound_updates(response)
 
         # Fail-closed: blocked collaborator message is dropped (bot never receives it);
