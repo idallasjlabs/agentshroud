@@ -1016,6 +1016,9 @@ class TelegramAPIProxy:
         if not isinstance(text, str):
             return False
         lowered = normalize_input(text).lower()
+        # Greetings are always safe — no interrogative required.
+        if re.match(r"^\s*(hello|hi|hey|good\s+morning|good\s+afternoon|good\s+evening|howdy)\b", lowered):
+            return True
         if not any(ch in lowered for ch in ("?", "how", "what", "why", "can you explain", "walk me through")):
             return False
         if TelegramAPIProxy._looks_like_file_query(lowered):
@@ -1049,6 +1052,26 @@ class TelegramAPIProxy:
                 "hosting",
                 "vpn",
                 "topology",
+                "collaboration",
+                "help with",
+                "what can you",
+                "security model",
+                "security approach",
+                "protection",
+                "refuse",
+                "restrict",
+                "decline",
+                "not allowed",
+                "credit card",
+                "pii",
+                "personal info",
+                "sanitiz",
+                "formatting trick",
+                "spaces or dashes",
+                "bypass sanitiz",
+                "password",
+                "raw values",
+                "placeholders",
             )
         )
 
@@ -1638,6 +1661,15 @@ class TelegramAPIProxy:
     def _build_collaborator_safe_info_response(prompt: str) -> str:
         """Build informative but non-sensitive response for collaborator conceptual questions."""
         lowered = normalize_input(prompt or "").lower()
+        if re.match(r"^\s*(hello|hi|hey|good\s+morning|good\s+afternoon|good\s+evening|howdy)\b", lowered):
+            return (
+                f"{_PROTECT_HEADER}"
+                "Hello! I'm the AgentShroud assistant operating in collaborator mode.\n"
+                "• I can answer conceptual questions about how this system works.\n"
+                "• I can discuss authentication patterns, egress approval flows, and security design.\n"
+                "• File access, raw credentials, and sensitive operations require owner authorization.\n"
+                "• Feel free to ask about security policies, architecture, or how the system handles requests."
+            )
         if any(
             token in lowered
             for token in (
@@ -1663,7 +1695,7 @@ class TelegramAPIProxy:
                 "• Outputs are safety-checked before delivery to prevent unintended disclosure.\n"
                 "• I can discuss the general flow without exposing internal implementation details."
             )
-        if any(token in lowered for token in ("authentication", "credential", "api key", "secret")):
+        if any(token in lowered for token in ("authentication", "credential", "api key", "secret", "password", "raw values", "placeholders")):
             if any(token in lowered for token in ("flow", "how", "intermediary", "handles", "brokered", "integrate", "integration", "work")):
                 return (
                     f"{_PROTECT_HEADER}"
@@ -1681,7 +1713,7 @@ class TelegramAPIProxy:
                 "• Sensitive operations require policy checks and authorization.\n"
                 "• If authorized, I can help with integration patterns and least-privilege recommendations."
             )
-        if any(token in lowered for token in ("security setup", "architecture", "filters messages", "how does this work")):
+        if any(token in lowered for token in ("security setup", "architecture", "filters messages", "how does this work", "security model", "security approach", "protection")):
             return (
                 f"{_PROTECT_HEADER}"
                 "Secure architecture overview:\n"
@@ -1698,7 +1730,7 @@ class TelegramAPIProxy:
                 "• Security controls enforce trusted boundaries and approved communication paths.\n"
                 "• I can provide high-level architecture guidance without exposing sensitive implementation details."
             )
-        if any(token in lowered for token in ("tool", "command", "capability", "permissions")):
+        if any(token in lowered for token in ("tool", "command", "capability", "permissions", "what can you", "help with", "collaboration")):
             return (
                 f"{_PROTECT_HEADER}"
                 "Collaborator capability overview:\n"
@@ -1728,6 +1760,32 @@ class TelegramAPIProxy:
                 "• Owner messages have full operational access; collaborator messages are policy-gated.\n"
                 "• This distinction determines what actions I can take and what information I can share.\n"
                 "• These boundaries are enforced by the gateway — I cannot override them."
+            )
+        if any(token in lowered for token in ("refuse", "restrict", "decline", "not allowed")):
+            return (
+                f"{_PROTECT_HEADER}"
+                "Restriction overview:\n"
+                "• Collaborators cannot access raw file contents, system paths, or live tool outputs.\n"
+                "• Commands that execute system actions require owner authorization.\n"
+                "• Credential and secret retrieval is fully restricted in collaborator mode.\n"
+                "• I can explain what types of requests are gated and why, without exposing policy internals."
+            )
+        if any(token in lowered for token in ("credit card", "pii", "personal info", "sanitiz", "what would you see")):
+            return (
+                f"{_PROTECT_HEADER}"
+                "Input privacy notice:\n"
+                "• Messages you send pass through a security proxy before reaching the assistant.\n"
+                "• The proxy inspects and sanitizes inputs for policy compliance.\n"
+                "• Sensitive values such as credentials or personal data are redacted or flagged before forwarding.\n"
+                "• I receive sanitized content — I do not see raw credential values or un-sanitized personal data."
+            )
+        if any(token in lowered for token in ("formatting trick", "spaces or dashes", "bypass sanitiz")):
+            return (
+                f"{_PROTECT_HEADER}"
+                "Input handling notice:\n"
+                "• The security proxy applies consistent normalization before policy checks.\n"
+                "• Formatting variations (extra spaces, dashes, encoding) are normalized before evaluation.\n"
+                "• Policy checks are applied to normalized content — formatting tricks do not bypass them."
             )
         if any(
             token in lowered
@@ -3048,6 +3106,21 @@ class TelegramAPIProxy:
                                 await _notifier.edit_decision_message(
                                     cb_chat_id, _cb_msg_id, _edit_text
                                 )
+                            # Notify originating collaborator of decision (plain text, no buttons).
+                            # agent_id format: "telegram_web_fetch:{user_id}"
+                            _result_agent_id = result.get("agent_id", "")
+                            _owner_uid = str(getattr(self._rbac, "owner_user_id", "")).strip()
+                            if _result_agent_id and ":" in _result_agent_id:
+                                _origin_uid = _result_agent_id.split(":", 1)[1]
+                                if _origin_uid and _origin_uid != _owner_uid:
+                                    _collab_notice = (
+                                        f"{_PROTECT_HEADER}"
+                                        f"*Egress Decision*\n\n"
+                                        f"{_edit_text}"
+                                    )
+                                    asyncio.create_task(
+                                        self._send_owner_admin_notice(int(_origin_uid), _collab_notice)
+                                    )
                             logger.info(
                                 "Egress callback handled: %s",
                                 json.dumps(result, sort_keys=True),
