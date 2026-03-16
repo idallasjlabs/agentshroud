@@ -99,6 +99,10 @@ _LOCAL_RESTORE_COLLABS_COMMANDS = {
     "/restore-collaborators",
     "restore-collaborators",
 }
+_LOCAL_UNLOCK_COMMANDS = {
+    "/unlock",
+    "unlock",
+}
 _LOCAL_PENDING_COMMANDS = {
     "/pending",
     "pending",
@@ -3580,6 +3584,33 @@ class TelegramAPIProxy:
                         except Exception:
                             pass
                     continue
+                elif is_owner and cmd_base in _LOCAL_UNLOCK_COMMANDS:
+                    target_id = self._extract_owner_target_resolved(text)
+                    if not target_id:
+                        await self._send_owner_admin_notice(
+                            chat_id,
+                            f"{_PROTECT_HEADER}Usage: /unlock <telegram_user_id>",
+                        )
+                        continue
+                    if self._lockdown is None:
+                        await self._send_owner_admin_notice(
+                            chat_id,
+                            f"{_PROTECT_HEADER}Progressive lockdown module unavailable.",
+                        )
+                        continue
+                    unlocked = self._lockdown.unlock_user(target_id)
+                    if unlocked:
+                        self._runtime_revoked_collaborators.discard(target_id)
+                        await self._send_owner_admin_notice(
+                            chat_id,
+                            f"{_PROTECT_HEADER}Session unlocked for user {target_id}. Lockdown state cleared.",
+                        )
+                    else:
+                        await self._send_owner_admin_notice(
+                            chat_id,
+                            f"{_PROTECT_HEADER}User {target_id} had no active lockdown state.",
+                        )
+                    continue
                 elif is_owner and cmd_base in _LOCAL_ADD_COLLAB_COMMANDS:
                     target_id = self._extract_owner_target_resolved(text)
                     if not target_id:
@@ -4848,7 +4879,8 @@ class TelegramAPIProxy:
                         "• /restorecollabs\n"
                         "• /approve <telegram_user_id>\n"
                         "• /deny <telegram_user_id>\n"
-                        "• /revoke <telegram_user_id>"
+                        "• /revoke <telegram_user_id>\n"
+                        "• /unlock <telegram_user_id>"
                     )
                 else:
                     msg = (
@@ -4890,7 +4922,7 @@ class TelegramAPIProxy:
                     f"• Role: {role}\n"
                     f"• Telegram user id: {user_id}\n"
                     f"• Username: {cleaned_username}\n"
-                    "• Use /pending, /approve, /deny, /revoke to manage collaborator access."
+                    "• Use /pending, /approve, /deny, /revoke, /unlock to manage collaborator access."
                 )
             else:
                 msg = (
@@ -5054,7 +5086,7 @@ class TelegramAPIProxy:
                     f"• Active collaborators: {collaborator_count}\n"
                     f"• Pending approvals: {pending_count}\n"
                     f"• Revoked users: {revoked_count}\n"
-                    "• Commands: /pending, /approve, /deny, /revoke, /addcollab, /restorecollabs"
+                    "• Commands: /pending, /approve, /deny, /revoke, /unlock, /addcollab, /restorecollabs"
                 )
             else:
                 msg = (

@@ -74,7 +74,7 @@ class TestPromptProtection:
         
         for test_text in test_cases:
             result = prompt_protection.scan_response(test_text)
-            assert "[FILE_REFERENCE_REDACTED]" in result.redacted_text
+            assert "[CONTENT]" in result.redacted_text
             assert len(result.redactions_made) > 0
             assert result.risk_score > 0
             

@@ -197,9 +197,9 @@ class OutboundInfoFilter:
             },
             {
                 "name": "runtime_version_generic",
-                "pattern": r"\bv\d{1,3}\.\d{1,3}\.\d{1,3}\b(?=\s*[\,\)\s])",
+                "pattern": r"\b(?:Python|Ruby|Go|Rust|Java|PHP|Perl|bash)\s+v?\d+\.\d+\.?\d*\b",
                 "category": InfoCategory.INFRASTRUCTURE,
-                "replacement": "[VERSION]",
+                "replacement": "[RUNTIME_VERSION]",
             },
             {
                 "name": "container_user_path",

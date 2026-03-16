@@ -48,7 +48,7 @@ def latest_report() -> Path:
 _REDACTION_RULES: list[tuple[str, str, str]] = [
     # (label, pattern, replacement)
     ("bot_token",      r"\d{8,12}:[A-Za-z0-9_-]{30,}",       "[BOT_TOKEN]"),
-    ("telegram_id",    r"\b[0-9]{8,12}\b",                     "[TELEGRAM_ID]"),
+    ("telegram_id",    r"(?<![/\-\.:])\b[0-9]{8,12}\b(?![/\-\.:])",  "[TELEGRAM_ID]"),
     ("secret_path",    r"/run/secrets/[^\s<\\\]\)\"]+",        "[SECRET_PATH]"),
     ("openclaw_env",   r"OPENCLAW_[A-Z0-9_]+",                 "[ENV_VAR]"),
     ("agentshroud_env",r"AGENTSHROUD_[A-Z0-9_]+",              "[ENV_VAR]"),

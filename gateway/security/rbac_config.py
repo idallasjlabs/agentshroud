@@ -127,6 +127,7 @@ class RBACConfig:
 # gateway restarts. Written to /app/data/approved_collaborators.json on the
 # shared data volume.
 # ---------------------------------------------------------------------------
+import fcntl
 import json
 import logging
 from pathlib import Path
@@ -149,16 +150,22 @@ def load_persisted_collaborators() -> list[str]:
 
 
 def persist_approved_collaborator(uid: str) -> None:
-    """Append a collaborator UID to the persistent store (idempotent)."""
+    """Append a collaborator UID to the persistent store (idempotent, file-locked)."""
+    _APPROVED_COLLABORATORS_FILE.parent.mkdir(parents=True, exist_ok=True)
+    lock_path = _APPROVED_COLLABORATORS_FILE.with_suffix(".lock")
     try:
-        existing = load_persisted_collaborators()
-        if uid in existing:
-            return
-        existing.append(uid)
-        _APPROVED_COLLABORATORS_FILE.parent.mkdir(parents=True, exist_ok=True)
-        _APPROVED_COLLABORATORS_FILE.write_text(
-            json.dumps({"collaborators": existing}, indent=2), encoding="utf-8"
-        )
-        _collab_persist_logger.info("Persisted approved collaborator: %s", uid)
+        with open(lock_path, "w") as lock_fh:
+            fcntl.flock(lock_fh, fcntl.LOCK_EX)
+            try:
+                existing = load_persisted_collaborators()
+                if uid in existing:
+                    return
+                existing.append(uid)
+                _APPROVED_COLLABORATORS_FILE.write_text(
+                    json.dumps({"collaborators": existing}, indent=2), encoding="utf-8"
+                )
+                _collab_persist_logger.info("Persisted approved collaborator: %s", uid)
+            finally:
+                fcntl.flock(lock_fh, fcntl.LOCK_UN)
     except Exception as exc:
         _collab_persist_logger.warning("Could not persist approved collaborator %s: %s", uid, exc)
