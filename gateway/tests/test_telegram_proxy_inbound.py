@@ -5346,7 +5346,7 @@ class TestInboundPipelineOnGetUpdates:
             def __init__(self):
                 self.calls = []
 
-            def record_activity(self, user_id, username, message_preview, source):
+            def record_activity(self, user_id, username, message_preview, source, **kwargs):
                 self.calls.append((user_id, username, message_preview, source))
 
         tracker = FakeTracker()

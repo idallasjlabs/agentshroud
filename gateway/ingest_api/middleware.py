@@ -739,12 +739,13 @@ class MiddlewareManager:
         resource = None
         tool_tier = None
         
-        # Check for file operations
+        # Check for file operations — use word boundaries to avoid substring false positives
+        # (e.g. "rm" inside "terms", "perform", "information")
         file_patterns = [
-            r'(?:read|cat|view|open|ls|dir)',
-            r'(?:write|edit|create|save|modify)',
-            r'(?:delete|remove|rm|trash)',
-            r'(?:execute|run|exec)'
+            r'\b(?:read|cat|view|open|ls|dir)\b',
+            r'\b(?:write|edit|create|save|modify)\b',
+            r'\b(?:delete|remove|rm|trash)\b',
+            r'\b(?:execute|run|exec)\b',
         ]
         
         if any(re.search(pattern, message_lower) for pattern in file_patterns[:1]):

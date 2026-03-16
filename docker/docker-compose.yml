@@ -35,6 +35,7 @@ services:
       - ../web:/app/web:ro
       - ../gateway:/app/gateway:ro
       - agentshroud-workspace:/data/bot-workspace:ro
+      - agentshroud-config:/data/bot-config:ro
     secrets:
       - gateway_password
       - telegram_bot_token
