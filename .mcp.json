@@ -26,14 +26,6 @@
       "timeout": 600000,
       "trust": false
     },
-        "xmind": {
-      "command": "npx",
-      "args": [
-        "-y",
-        "@41px/mcp-xmind",
-        "./mindmaps"
-      ]
-    },
     "xmind-generator": {
       "command": "npx",
       "args": [
