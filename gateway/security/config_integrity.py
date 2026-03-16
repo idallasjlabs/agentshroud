@@ -122,10 +122,11 @@ class ConfigIntegrityMonitor:
                 (curr or "MISSING")[:12] + "..." if curr else "MISSING",
             )
 
-        # Always update baseline so the next check compares against current state.
-        # (If tampering happened, the alert fires once; subsequent restarts are quiet
-        # unless the file changes again — owner should investigate after first alert.)
-        self._save_baseline(current)
+        # Only advance the baseline when no changes are detected.  If tampering is
+        # found, preserve the prior baseline so the alert re-fires on the next restart
+        # until the owner explicitly acknowledges the deviation.
+        if not changes:
+            self._save_baseline(current)
 
         return changes
 
