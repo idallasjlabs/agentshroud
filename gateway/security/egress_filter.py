@@ -116,6 +116,9 @@ class EgressFilter:
         self._approval_queue = None  # Optional EgressApprovalQueue
         self._event_bus = None
         self._pending_notifications: list[dict] = []
+        # Time-limited interactive approvals: domain → expiry unix timestamp.
+        # Populated by grant_timed_approval() when owner selects 1h/4h/24h.
+        self._timed_approvals: dict[str, float] = {}
 
     def set_notifier(self, notifier) -> None:
         """Set the Telegram notifier for egress approval requests."""
@@ -128,6 +131,23 @@ class EgressFilter:
     def set_event_bus(self, event_bus) -> None:
         """Set optional event bus for real-time egress telemetry."""
         self._event_bus = event_bus
+
+    def grant_timed_approval(self, domain: str, expires_at_iso: str) -> None:
+        """Record a time-limited interactive approval for a domain.
+
+        Called by the Telegram callback handler when the owner selects 1h/4h/24h.
+        Cleans up stale entries to prevent unbounded growth.
+        """
+        from datetime import datetime, timezone
+        try:
+            expiry = datetime.fromisoformat(expires_at_iso.replace("Z", "+00:00")).timestamp()
+        except (ValueError, AttributeError):
+            return
+        self._timed_approvals[domain.lower().strip()] = expiry
+        # Purge expired entries
+        now = time.time()
+        self._timed_approvals = {d: e for d, e in self._timed_approvals.items() if e > now}
+        logger.info("Timed egress approval granted: %s expires %s", domain, expires_at_iso)
 
     def set_agent_policy(self, agent_id: str, policy: EgressPolicy) -> None:
         """Set a per-agent egress policy."""
@@ -204,6 +224,21 @@ class EgressFilter:
                 action,
                 f"domain '{parsed_dest}' in denylist ({'blocked' if action == EgressAction.DENY else 'monitored'})",
             )
+
+        # Check time-limited interactive approvals (owner-granted 1h/4h/24h)
+        _now = time.time()
+        _timed_expiry = self._timed_approvals.get(parsed_dest.lower() if parsed_dest else "")
+        if _timed_expiry is not None:
+            if _timed_expiry > _now:
+                return self._record(
+                    agent_id,
+                    destination,
+                    port,
+                    EgressAction.ALLOW,
+                    f"domain '{parsed_dest}' has active timed approval",
+                )
+            else:
+                self._timed_approvals.pop(parsed_dest.lower(), None)
 
         # Check config-based allowlist
         effective_allowlist = self.config.get_effective_allowlist(agent_id)
