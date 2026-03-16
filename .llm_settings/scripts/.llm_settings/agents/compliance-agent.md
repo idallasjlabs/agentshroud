@@ -1,6 +1,0 @@
-# compliance-agent
-
-Purpose: compliance agent agent.
-
-Responsibilities:
-- Execute specialized tasks within the AI engineering OS.
