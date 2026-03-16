@@ -230,8 +230,9 @@ async def test_connect_system_bypass_domain_skips_policy_checks(monkeypatch):
 
     monkeypatch.setattr(asyncio, "open_connection", _open_conn)
 
-    # Even when WebProxy policy would block api.telegram.org in allowlist mode,
-    # CONNECT must pass for system bypass domains.
+    # api.telegram.org is force-blocked (CONNECT_FORCE_BLOCK_DOMAINS) to prevent
+    # the bot from bypassing the /telegram-api/ proxy path. Verify the CONNECT
+    # is rejected even when the system would normally skip egress policy for bypasses.
     config = WebProxyConfig(mode="allowlist", allowed_domains=["api.openai.com"])
     egress = _DenyEgress()
     p = HTTPConnectProxy(web_proxy=WebProxy(config=config), egress_filter=egress)
@@ -241,8 +242,8 @@ async def test_connect_system_bypass_domain_skips_policy_checks(monkeypatch):
 
     await p._process_connect(reader, writer)
 
-    assert b"200 Connection Established" in writer.written
-    assert egress.called is False
+    assert b"403" in writer.written
+    assert egress.called is False  # blocked before egress policy is consulted
 
 
 @pytest.mark.asyncio
@@ -293,5 +294,13 @@ def test_telegram_api_blocked_in_connect_proxy():
     assert result.blocked, "api.telegram.org must be blocked in CONNECT proxy"
 
 
-def test_telegram_is_system_bypass_domain():
-    assert "api.telegram.org" in SYSTEM_BYPASS_DOMAINS
+def test_telegram_is_force_blocked_not_bypass():
+    """api.telegram.org must NOT be a system bypass domain.
+
+    Direct CONNECT tunnels to Telegram are blocked so all bot traffic is
+    routed through the /telegram-api/ proxy path.  See CONNECT_FORCE_BLOCK_DOMAINS
+    in http_proxy.py.
+    """
+    from gateway.proxy.http_proxy import CONNECT_FORCE_BLOCK_DOMAINS
+    assert "api.telegram.org" not in SYSTEM_BYPASS_DOMAINS
+    assert "api.telegram.org" in CONNECT_FORCE_BLOCK_DOMAINS
