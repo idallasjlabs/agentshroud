@@ -190,7 +190,7 @@ class PromptProtection:
             for match in pattern.finditer(redacted_text):
                 redactions.append(("file_reference", match.start(), match.end()))
                 risk_score += 15.0
-            redacted_text = pattern.sub("[FILE_REFERENCE_REDACTED]", redacted_text)
+            redacted_text = pattern.sub("[CONTENT]", redacted_text)
 
         # Scan for structural patterns
         for pattern in self.structure_patterns:

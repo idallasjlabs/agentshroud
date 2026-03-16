@@ -106,12 +106,26 @@ https.globalAgent = new ConnectProxyAgent({ keepAlive: true });
 // Fix: wrap the WebSocket class so every new instance gets a proxy-aware
 // createConnection injected before initAsClient can install tlsConnect.
 (function patchWsForProxy() {
-  const WS_PATH = '/usr/local/lib/node_modules/openclaw/node_modules/ws';
+  // Resolve 'ws' dynamically: check openclaw's own node_modules first, then
+  // fall back to global paths.  Avoids hard-coding a version-specific path.
+  let WS_PATH;
+  const _WS_SEARCH = [
+    '/usr/local/lib/node_modules/openclaw/node_modules',
+    '/usr/local/lib/node_modules/openclaw',
+  ].concat((require.resolve.paths && require.resolve.paths('ws')) || []);
+  for (const searchDir of _WS_SEARCH) {
+    try {
+      WS_PATH = require.resolve('ws', { paths: [searchDir] });
+      break;
+    } catch (_) { /* try next */ }
+  }
+  if (!WS_PATH) return; // ws not found — skip
+
   let wsExports;
   try {
     wsExports = require(WS_PATH);
   } catch (e) {
-    return; // ws not present — skip
+    return; // ws not loadable — skip
   }
 
   const OrigWebSocket = wsExports.WebSocket || wsExports;
