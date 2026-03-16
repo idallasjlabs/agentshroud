@@ -441,3 +441,70 @@ async def test_egress_filter_flush_without_notifier():
     result = ef.check("default", "evil.com")
     assert result.action.value == "deny"
     assert len(ef._pending_notifications) == 0
+
+
+# ---------------------------------------------------------------------------
+# Timed approval TTL enforcement
+# ---------------------------------------------------------------------------
+
+
+def _make_deny_all_filter() -> EgressFilter:
+    from gateway.security.egress_config import EgressFilterConfig
+    policy = EgressPolicy(allowed_domains=[], deny_all=True)
+    config = EgressFilterConfig(mode="enforce")
+    return EgressFilter(config=config, default_policy=policy)
+
+
+def test_grant_timed_approval_allows_domain():
+    """A domain with an active timed approval should be allowed."""
+    from datetime import datetime, timezone, timedelta
+    ef = _make_deny_all_filter()
+    expires = (datetime.now(timezone.utc) + timedelta(hours=1)).isoformat()
+    ef.grant_timed_approval("weather.com", expires)
+    result = ef.check("agent1", "weather.com")
+    assert result.action == EgressAction.ALLOW
+    assert "timed approval" in result.rule.lower()
+
+
+def test_grant_timed_approval_does_not_affect_other_domains():
+    """Timed approval for one domain must not allow other domains."""
+    from datetime import datetime, timezone, timedelta
+    ef = _make_deny_all_filter()
+    expires = (datetime.now(timezone.utc) + timedelta(hours=1)).isoformat()
+    ef.grant_timed_approval("weather.com", expires)
+    result = ef.check("agent1", "evil.com")
+    assert result.action == EgressAction.DENY
+
+
+def test_grant_timed_approval_expired_falls_back_to_deny():
+    """An expired timed approval should be evicted and the domain denied."""
+    import time
+    from datetime import datetime, timezone, timedelta
+    ef = _make_deny_all_filter()
+    # Grant an approval that already expired
+    expired = (datetime.now(timezone.utc) - timedelta(seconds=1)).isoformat()
+    ef._timed_approvals["weather.com"] = datetime.now(timezone.utc).timestamp() - 1
+    result = ef.check("agent1", "weather.com")
+    assert result.action == EgressAction.DENY
+    # Expired entry must have been evicted
+    assert "weather.com" not in ef._timed_approvals
+
+
+def test_grant_timed_approval_invalid_iso_is_ignored():
+    """grant_timed_approval with a malformed date should not raise or store anything."""
+    ef = _make_deny_all_filter()
+    ef.grant_timed_approval("weather.com", "not-a-date")
+    assert "weather.com" not in ef._timed_approvals
+
+
+def test_grant_timed_approval_cleans_stale_entries():
+    """grant_timed_approval should purge expired entries on each call."""
+    from datetime import datetime, timezone, timedelta
+    ef = _make_deny_all_filter()
+    # Insert a stale entry manually
+    ef._timed_approvals["old.com"] = datetime.now(timezone.utc).timestamp() - 100
+    # Grant a valid new approval — triggers purge
+    future = (datetime.now(timezone.utc) + timedelta(hours=1)).isoformat()
+    ef.grant_timed_approval("new.com", future)
+    assert "old.com" not in ef._timed_approvals
+    assert "new.com" in ef._timed_approvals
