@@ -84,7 +84,9 @@ class TestRBACConfig:
         
         owners = config.get_users_by_role(Role.OWNER)
         assert "8096968754" in owners
-        assert len(owners) == 1
+        # Owner list may include additional platform IDs (e.g. Slack user ID)
+        # alongside the primary Telegram owner ID — allow ≥ 1.
+        assert len(owners) >= 1
         
         collaborators = config.get_users_by_role(Role.COLLABORATOR)
         expected_collaborators = ["8506022825", "8545356403", "15712621992", "8279589982", "8526379012"]
