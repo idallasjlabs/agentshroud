@@ -129,28 +129,23 @@ const COLLABORATOR_IDS = {
 };
 const OWNER_TELEGRAM_ID = '8096968754';
 
+// Collaborator tool allowlist: deny-all by default (profile: 'none'), only explicit
+// tools are permitted. Adding a new tool to OpenClaw does NOT grant access to
+// collaborators — it must be explicitly added here.
+const _COLLAB_TOOL_ALLOW = ['read', 'write', 'edit'];
+
 const cIdx = config.agents.list.findIndex((a) => a.id === 'collaborator');
 if (cIdx < 0) {
   config.agents.list.push({
     id: 'collaborator',
     name: 'AgentShroud Collaborator',
     model: MAIN_MODEL,
-    tools: {
-      profile: 'minimal',
-      deny: [
-        'exec', 'process', 'gateway', 'cron', 'message',
-        'sessions_spawn', 'sessions_send', 'subagents',
-        'memory_search', 'memory_get', 'tts', 'pdf',
-        'nodes', 'browser', 'canvas', 'agents_list',
-        'sessions_list', 'sessions_history', 'session_status',
-        'image',
-      ],
-    },
+    tools: { profile: 'none', allow: _COLLAB_TOOL_ALLOW },
     skills: [],
     workspace: '.agentshroud/collaborator-workspace',
     memorySearch: { enabled: false },
   });
-  console.log(`[init-patch] Added collaborator agent (${MAIN_MODEL}, restricted tools)`);
+  console.log(`[init-patch] Added collaborator agent (${MAIN_MODEL}, allowlist tools)`);
   changed = true;
 } else {
   if (config.agents.list[cIdx].model !== MAIN_MODEL) {
@@ -165,6 +160,13 @@ if (cIdx < 0) {
   if (config.agents.list[cIdx].workspace === 'collaborator-workspace') {
     config.agents.list[cIdx].workspace = '.agentshroud/collaborator-workspace';
     console.log('[init-patch] Migrated collaborator workspace to .agentshroud/collaborator-workspace');
+    changed = true;
+  }
+  // Migrate from denylist (profile: 'minimal') to allowlist (profile: 'none')
+  const existingTools = config.agents.list[cIdx].tools || {};
+  if (existingTools.profile !== 'none' || existingTools.deny) {
+    config.agents.list[cIdx].tools = { profile: 'none', allow: _COLLAB_TOOL_ALLOW };
+    console.log('[init-patch] Migrated collaborator agent tools: denylist → allowlist');
     changed = true;
   }
 }
@@ -189,15 +191,8 @@ if (!hasOwnerBinding) {
 
 // Per-collaborator isolated agents: each known collaborator gets their own agent
 // with a dedicated workspace so memory never bleeds between collaborators or the owner.
-const _COLLAB_TOOL_DENY = [
-  'exec', 'process', 'gateway', 'cron', 'message',
-  'sessions_spawn', 'sessions_send', 'subagents',
-  'memory_search', 'memory_get', 'tts', 'pdf',
-  'nodes', 'browser', 'canvas', 'agents_list',
-  'sessions_list', 'sessions_history', 'session_status',
-  'image', 'web_fetch', 'web_search',
-];
-
+// Tool config: allowlist (profile: 'none') — deny all by default; only explicitly
+// listed tools are available. New OpenClaw tools are blocked unless added here.
 for (const [collabId, collabName] of Object.entries(COLLABORATOR_IDS)) {
   const agentId = `collab-${collabId}`;
   const agentIdx = config.agents.list.findIndex((a) => a.id === agentId);
@@ -206,7 +201,7 @@ for (const [collabId, collabName] of Object.entries(COLLABORATOR_IDS)) {
       id: agentId,
       name: `${collabName} (Collaborator)`,
       model: MAIN_MODEL,
-      tools: { profile: 'minimal', deny: _COLLAB_TOOL_DENY },
+      tools: { profile: 'none', allow: _COLLAB_TOOL_ALLOW },
       skills: [],
       workspace: `.agentshroud/collab-${collabId}`,
       memorySearch: { enabled: false },
@@ -216,6 +211,13 @@ for (const [collabId, collabName] of Object.entries(COLLABORATOR_IDS)) {
   } else {
     if (config.agents.list[agentIdx].model !== MAIN_MODEL) {
       config.agents.list[agentIdx].model = MAIN_MODEL;
+      changed = true;
+    }
+    // Migrate from denylist to allowlist
+    const existingTools = config.agents.list[agentIdx].tools || {};
+    if (existingTools.profile !== 'none' || existingTools.deny) {
+      config.agents.list[agentIdx].tools = { profile: 'none', allow: _COLLAB_TOOL_ALLOW };
+      console.log(`[init-patch] Migrated ${agentId} tools: denylist → allowlist`);
       changed = true;
     }
   }

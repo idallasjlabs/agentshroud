@@ -55,7 +55,7 @@ class TestEgressTelegramNotify:
 
     @pytest.mark.asyncio
     async def test_handle_callback_approve_permanent(self, notifier):
-        """Test handling permanent approval callback."""
+        """Test handling permanent (allow_always) approval callback."""
         notifier.pending_requests["req1"] = {
             "domain": "api.example.com", "port": 443,
             "risk_level": "low", "agent_id": "bot",
@@ -65,21 +65,40 @@ class TestEgressTelegramNotify:
         result = await notifier.handle_callback("egress_allow_always_req1")
         assert result["status"] == "ok"
         assert result["action"] == "allow_always"
+        assert result["duration"] == "always"
+        assert result["expires_at"] is None
         assert result["domain"] == "api.example.com"
         assert "req1" not in notifier.pending_requests
 
     @pytest.mark.asyncio
-    async def test_handle_callback_approve_once(self, notifier):
-        """Test handling one-time approval callback."""
+    async def test_handle_callback_approve_1h(self, notifier):
+        """Test handling 1-hour time-limited approval callback."""
         notifier.pending_requests["req2"] = {
             "domain": "cdn.example.com", "port": 443,
             "risk_level": "medium", "agent_id": "bot",
             "tool_name": "web_search",
             "timestamp": datetime.now(timezone.utc).isoformat(),
         }
-        result = await notifier.handle_callback("egress_allow_once_req2")
+        result = await notifier.handle_callback("egress_allow_1h_req2")
         assert result["status"] == "ok"
-        assert result["action"] == "allow_once"
+        assert result["action"] == "allow_1h"
+        assert result["duration"] == "1h"
+        assert result["expires_at"] is not None  # should be ~1h from now
+
+    @pytest.mark.asyncio
+    async def test_handle_callback_approve_4h(self, notifier):
+        """Test handling 4-hour time-limited approval callback."""
+        notifier.pending_requests["req4h"] = {
+            "domain": "cdn.example.com", "port": 443,
+            "risk_level": "low", "agent_id": "bot",
+            "tool_name": "web_fetch",
+            "timestamp": datetime.now(timezone.utc).isoformat(),
+        }
+        result = await notifier.handle_callback("egress_allow_4h_req4h")
+        assert result["status"] == "ok"
+        assert result["action"] == "allow_4h"
+        assert result["duration"] == "4h"
+        assert result["expires_at"] is not None
 
     @pytest.mark.asyncio
     async def test_handle_callback_deny(self, notifier):
@@ -138,6 +157,7 @@ class TestEgressTelegramNotify:
             mock_send.assert_called_once_with("answerCallbackQuery", {
                 "callback_query_id": "cb123",
                 "text": "Approved!",
+                "show_alert": False,
             })
 
     @pytest.mark.asyncio
