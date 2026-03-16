@@ -388,15 +388,18 @@ if (slackBotToken && slackAppToken) {
     config.channels.slack.dmPolicy = 'open';
     changed = true;
   }
-  // dmPolicy=open requires '*' in allowFrom (OpenClaw validation requirement)
+  // dmPolicy=open requires '*' in allowFrom (OpenClaw validation requirement).
+  // IMPORTANT: Do NOT add explicit user IDs alongside '*'.  OpenClaw's resolveSlackUserAllowlist()
+  // calls users.info for every non-'*' entry on every Slack provider start, which requires the
+  // users:read scope.  Without it, every connect logs "user resolve failed; missing_scope".
+  // Since '*' already grants all-user access, explicit entries are redundant and harmful.
   {
-    const allowFrom = Array.isArray(config.channels.slack.allowFrom) ? config.channels.slack.allowFrom : [];
+    let allowFrom = Array.isArray(config.channels.slack.allowFrom) ? config.channels.slack.allowFrom.slice() : [];
     let af_changed = false;
     if (!allowFrom.includes('*')) { allowFrom.push('*'); af_changed = true; }
-    if (slackOwnerUserId && !allowFrom.includes(slackOwnerUserId)) {
-      allowFrom.push(slackOwnerUserId);
-      af_changed = true;
-    }
+    // Remove any explicit user IDs — they're redundant when '*' is present and cause API errors.
+    const stripped = allowFrom.filter(e => e === '*');
+    if (stripped.length !== allowFrom.length) { allowFrom = stripped; af_changed = true; }
     if (af_changed) {
       config.channels.slack.allowFrom = allowFrom;
       changed = true;
