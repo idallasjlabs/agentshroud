@@ -1,11 +1,13 @@
 # Copyright © 2026 Isaiah Dallas Jefferson, Jr. AgentShroud™. All rights reserved.
 """Application lifespan management for the AgentShroud Gateway"""
 
+import json
 import logging
 import asyncio
 import time
 import os
 import subprocess
+import urllib.request
 import threading
 from contextlib import asynccontextmanager
 from pathlib import Path
@@ -573,6 +575,47 @@ async def lifespan(app: FastAPI):
     except Exception as e:
         logger.error(f"✗ MemoryIntegrityMonitor: {e}")
         app_state.memory_integrity = None
+
+    # -- ConfigIntegrityMonitor: detect bot config tampering between restarts --
+    try:
+        from ..security.config_integrity import ConfigIntegrityMonitor
+        _bot_config_dir = _Path("/data/bot-config")
+        _config_baseline = _data_dir / "config-integrity-baseline.json"
+        _cfg_monitor = ConfigIntegrityMonitor(_bot_config_dir, _config_baseline)
+        _cfg_changes = _cfg_monitor.check()
+        if _cfg_changes:
+            logger.warning(
+                "✗ ConfigIntegrityMonitor: %d file(s) changed since last start: %s",
+                len(_cfg_changes),
+                [c["file"] for c in _cfg_changes],
+            )
+            # Attempt Telegram alert to owner
+            try:
+                _cfg_token = os.environ.get("TELEGRAM_BOT_TOKEN", "") or _read_secret("telegram_bot_token")
+                _cfg_owner = str(getattr(getattr(app_state, "config", None), "owner_user_id", ""))
+                if _cfg_token and _cfg_owner:
+                    _alert_text = _cfg_monitor.format_alert_text(_cfg_changes)
+                    _tg_payload = json.dumps({
+                        "chat_id": _cfg_owner,
+                        "text": _alert_text,
+                        "parse_mode": "Markdown",
+                    }).encode()
+                    _tg_req = urllib.request.Request(
+                        f"https://api.telegram.org/bot{_cfg_token}/sendMessage",
+                        data=_tg_payload,
+                        headers={"Content-Type": "application/json"},
+                        method="POST",
+                    )
+                    urllib.request.urlopen(_tg_req, timeout=5)
+                    logger.warning("ConfigIntegrityMonitor: owner Telegram alert sent")
+            except Exception as _tg_exc:
+                logger.warning("ConfigIntegrityMonitor: could not send Telegram alert: %s", _tg_exc)
+        else:
+            logger.info("✓ ConfigIntegrityMonitor → bot config unchanged")
+        app_state.config_integrity = _cfg_monitor
+    except Exception as e:
+        logger.error(f"✗ ConfigIntegrityMonitor: {e}")
+        app_state.config_integrity = None
 
     # -- MemoryLifecycleManager: PII + injection scanning on memory writes --
     try:
