@@ -238,6 +238,14 @@ class TelegramAPIProxy:
             os.environ.get("AGENTSHROUD_LOCAL_COMMAND_DEDUPE_TTL_SECONDS", "600.0")
         )
 
+        # Progressive lockdown: per-user cumulative block counter with escalating responses.
+        # 3 blocks → owner alert; 5 blocks → double rate limit window; 10 → session suspended.
+        try:
+            from gateway.security.progressive_lockdown import ProgressiveLockdown
+            self._lockdown = ProgressiveLockdown()
+        except Exception:
+            self._lockdown = None
+
         # Track which collaborator user IDs have already received the disclosure notice
         # this session. Persisted in-memory only — resets on gateway restart (acceptable).
         self._disclosure_sent: set[str] = set()
@@ -3066,6 +3074,20 @@ class TelegramAPIProxy:
                 user_id in {str(uid) for uid in (self._rbac.collaborator_user_ids or [])}
             )
 
+            # ── Progressive lockdown: early suspend check ─────────────────────
+            # If the user's session has been suspended by cumulative block count,
+            # silently drop the message without forwarding or responding.
+            if (
+                not is_owner
+                and self._lockdown is not None
+                and self._lockdown.is_suspended(user_id)
+            ):
+                logger.warning(
+                    "ProgressiveLockdown: dropping message from suspended user %s", user_id
+                )
+                filtered_updates.append({"update_id": update.get("update_id", 0)})
+                continue
+
             # ── Egress preflight from user intent ────────────────────────────
             # If a message includes an explicit URL/domain, proactively queue
             # interactive egress approval for that destination. This preserves
@@ -4203,7 +4225,31 @@ class TelegramAPIProxy:
         reason: str,
         source: str,
     ) -> None:
-        """Persist blocked inbound messages for admin review."""
+        """Persist blocked inbound messages for admin review.
+
+        Also records the block in the progressive lockdown counter for this user.
+        If the lockdown module raises an escalation alert (owner notification needed),
+        it is sent asynchronously without blocking this synchronous call.
+        """
+        # Progressive lockdown: record this block and check for escalation.
+        if self._lockdown is not None:
+            try:
+                action = self._lockdown.record_block(user_id=str(user_id), reason=reason)
+                if action.notify_owner and action.notify_text:
+                    owner_chat = str(getattr(self._rbac, "owner_user_id", "")).strip()
+                    if owner_chat:
+                        import asyncio as _asyncio
+                        try:
+                            loop = _asyncio.get_event_loop()
+                            if loop.is_running():
+                                loop.create_task(
+                                    self._send_telegram_text(owner_chat, action.notify_text)
+                                )
+                        except Exception as _le:
+                            logger.debug("Lockdown owner notify error: %s", _le)
+            except Exception as _exc:
+                logger.debug("ProgressiveLockdown.record_block error: %s", _exc)
+
         try:
             from gateway.ingest_api.state import app_state as _app_state
             store = getattr(_app_state, "blocked_message_quarantine", None)
