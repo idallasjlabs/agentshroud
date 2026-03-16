@@ -129,10 +129,19 @@ const COLLABORATOR_IDS = {
 };
 const OWNER_TELEGRAM_ID = '8096968754';
 
-// Collaborator tool allowlist: deny-all by default (profile: 'none'), only explicit
-// tools are permitted. Adding a new tool to OpenClaw does NOT grant access to
-// collaborators — it must be explicitly added here.
-const _COLLAB_TOOL_ALLOW = ['read', 'write', 'edit'];
+// Collaborator tool restriction: use the most restrictive built-in profile ('minimal')
+// plus an explicit deny list for the highest-risk capabilities.
+// NOTE: OpenClaw does not support profile:'none'. 'minimal' is the most restricted
+// available profile. The deny list covers capabilities that minimal may still expose.
+const _COLLAB_TOOL_ALLOW = null; // unused; kept for reference
+const _COLLAB_TOOL_DENY = [
+  'exec', 'process', 'gateway', 'cron', 'message',
+  'sessions_spawn', 'sessions_send', 'subagents',
+  'memory_search', 'memory_get', 'tts', 'pdf',
+  'nodes', 'browser', 'canvas', 'agents_list',
+  'sessions_list', 'sessions_history', 'session_status',
+  'image', 'web_fetch', 'web_search',
+];
 
 const cIdx = config.agents.list.findIndex((a) => a.id === 'collaborator');
 if (cIdx < 0) {
@@ -140,12 +149,12 @@ if (cIdx < 0) {
     id: 'collaborator',
     name: 'AgentShroud Collaborator',
     model: MAIN_MODEL,
-    tools: { profile: 'none', allow: _COLLAB_TOOL_ALLOW },
+    tools: { profile: 'minimal', deny: _COLLAB_TOOL_DENY },
     skills: [],
     workspace: '.agentshroud/collaborator-workspace',
     memorySearch: { enabled: false },
   });
-  console.log(`[init-patch] Added collaborator agent (${MAIN_MODEL}, allowlist tools)`);
+  console.log(`[init-patch] Added collaborator agent (${MAIN_MODEL}, restricted tools)`);
   changed = true;
 } else {
   if (config.agents.list[cIdx].model !== MAIN_MODEL) {
@@ -162,11 +171,11 @@ if (cIdx < 0) {
     console.log('[init-patch] Migrated collaborator workspace to .agentshroud/collaborator-workspace');
     changed = true;
   }
-  // Migrate from denylist (profile: 'minimal') to allowlist (profile: 'none')
+  // Ensure tools config is current (profile:minimal + deny list)
   const existingTools = config.agents.list[cIdx].tools || {};
-  if (existingTools.profile !== 'none' || existingTools.deny) {
-    config.agents.list[cIdx].tools = { profile: 'none', allow: _COLLAB_TOOL_ALLOW };
-    console.log('[init-patch] Migrated collaborator agent tools: denylist → allowlist');
+  if (existingTools.profile !== 'minimal' || existingTools.allow) {
+    config.agents.list[cIdx].tools = { profile: 'minimal', deny: _COLLAB_TOOL_DENY };
+    console.log('[init-patch] Updated collaborator agent tools to profile:minimal + deny list');
     changed = true;
   }
 }
@@ -191,8 +200,6 @@ if (!hasOwnerBinding) {
 
 // Per-collaborator isolated agents: each known collaborator gets their own agent
 // with a dedicated workspace so memory never bleeds between collaborators or the owner.
-// Tool config: allowlist (profile: 'none') — deny all by default; only explicitly
-// listed tools are available. New OpenClaw tools are blocked unless added here.
 for (const [collabId, collabName] of Object.entries(COLLABORATOR_IDS)) {
   const agentId = `collab-${collabId}`;
   const agentIdx = config.agents.list.findIndex((a) => a.id === agentId);
@@ -201,7 +208,7 @@ for (const [collabId, collabName] of Object.entries(COLLABORATOR_IDS)) {
       id: agentId,
       name: `${collabName} (Collaborator)`,
       model: MAIN_MODEL,
-      tools: { profile: 'none', allow: _COLLAB_TOOL_ALLOW },
+      tools: { profile: 'minimal', deny: _COLLAB_TOOL_DENY },
       skills: [],
       workspace: `.agentshroud/collab-${collabId}`,
       memorySearch: { enabled: false },
@@ -213,11 +220,11 @@ for (const [collabId, collabName] of Object.entries(COLLABORATOR_IDS)) {
       config.agents.list[agentIdx].model = MAIN_MODEL;
       changed = true;
     }
-    // Migrate from denylist to allowlist
+    // Fix any agent that has an invalid profile (e.g. 'none' from a previous failed migration)
     const existingTools = config.agents.list[agentIdx].tools || {};
-    if (existingTools.profile !== 'none' || existingTools.deny) {
-      config.agents.list[agentIdx].tools = { profile: 'none', allow: _COLLAB_TOOL_ALLOW };
-      console.log(`[init-patch] Migrated ${agentId} tools: denylist → allowlist`);
+    if (existingTools.profile === 'none' || existingTools.allow) {
+      config.agents.list[agentIdx].tools = { profile: 'minimal', deny: _COLLAB_TOOL_DENY };
+      console.log(`[init-patch] Fixed ${agentId} tools: restored profile:minimal + deny list`);
       changed = true;
     }
   }
