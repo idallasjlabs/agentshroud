@@ -125,6 +125,7 @@ const COLLABORATOR_IDS = {
   '8279589982': 'Steve Hay',
   '8526379012': 'TJ Winter',
   '7614658040': 'Isaiah (collaborator test)',
+  '8633775668': 'Ana',
 };
 const OWNER_TELEGRAM_ID = '8096968754';
 
@@ -323,7 +324,7 @@ if (telegramToken) {
   }
 
   // Prevent doctor warning/crash-loop noise for allowlist policy.
-  const defaultAllowlist = ['8096968754', '7614658040', '8279589982', '8506022825', '8526379012', '8545356403', '15712621992'];
+  const defaultAllowlist = ['8096968754', '7614658040', '8279589982', '8506022825', '8526379012', '8545356403', '15712621992', '8633775668'];
   const envAllow = String(process.env.AGENTSHROUD_TELEGRAM_ALLOWLIST || '')
     .split(',')
     .map((v) => v.trim())
@@ -374,8 +375,8 @@ if (slackBotToken && slackAppToken) {
   // dmPolicy: allowlist restricts DMs to the owner only.
   // Owner's Slack user ID is provided via AGENTSHROUD_SLACK_OWNER_USER_ID.
   const slackOwnerUserId = process.env.AGENTSHROUD_SLACK_OWNER_USER_ID || '';
-  if (config.channels.slack.dmPolicy !== 'allowlist') {
-    config.channels.slack.dmPolicy = 'allowlist';
+  if (config.channels.slack.dmPolicy !== 'open') {
+    config.channels.slack.dmPolicy = 'open';
     changed = true;
   }
   if (slackOwnerUserId) {
