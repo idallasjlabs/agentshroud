@@ -122,6 +122,7 @@ class FakeRBAC:
     def __init__(self, owner_id: str = "8096968754", collaborators: list | None = None):
         self.owner_user_id = owner_id
         self.collaborator_user_ids = collaborators or []
+        self.group_admin_ids: dict = {}
 
     def is_owner(self, user_id: str) -> bool:
         return str(user_id) == self.owner_user_id
