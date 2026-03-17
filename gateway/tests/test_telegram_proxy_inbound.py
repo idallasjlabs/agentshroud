@@ -7631,3 +7631,519 @@ class TestNoResponseGuarantee:
         # a rate-limit notice (via _send_stranger_rate_limit_notice).
         # _send_collaborator_pending_notice calls _send_telegram_text.
         assert sent or True  # pending notice path uses a separate method; just verify no crash
+
+
+# ── Progressive lockdown UX tests ────────────────────────────────────────────
+
+class TestProgressiveLockdownUX:
+    """Tests for lockdown UX: /unlock fix, collaborator notifications, /locked, immunity."""
+
+    _OWNER = "8096968754"
+    _COLLAB = "7614658040"
+
+    def _make_proxy(self, monkeypatch=None):
+        from gateway.ingest_api import state as state_module
+        proxy = TelegramAPIProxy(pipeline=PassthroughPipeline())
+        proxy._rbac = FakeRBAC(owner_id=self._OWNER, collaborators=[self._COLLAB])
+        proxy._bot_token = "test-token"
+        return proxy
+
+    # ── Fix 1: /unlock calls reset() not unlock_user() ───────────────────────
+
+    @pytest.mark.asyncio
+    async def test_unlock_calls_reset_on_lockdown(self, monkeypatch):
+        """/unlock <uid> must call reset() on the lockdown module and confirm to owner."""
+        proxy = self._make_proxy()
+        notices = []
+
+        async def fake_notice(chat_id, message):
+            notices.append(message)
+
+        monkeypatch.setattr(proxy, "_send_owner_admin_notice", fake_notice)
+
+        # Pre-suspend the collab
+        for _ in range(10):
+            proxy._lockdown.record_block(user_id=self._COLLAB, reason="test")
+        assert proxy._lockdown.is_suspended(self._COLLAB)
+
+        # Owner sends /unlock
+        r = _wrap_response(_make_update(f"/unlock {self._COLLAB}", user_id=self._OWNER, chat_id=int(self._OWNER)))
+        await proxy._filter_inbound_updates(r)
+
+        assert not proxy._lockdown.is_suspended(self._COLLAB), "User must no longer be suspended after /unlock"
+        assert any("unlocked" in n.lower() for n in notices)
+
+    @pytest.mark.asyncio
+    async def test_unlock_clears_suspended_drop_cooldown(self, monkeypatch):
+        """/unlock must clear the suspended-drop notice cooldown so user gets fresh notice if re-suspended."""
+        proxy = self._make_proxy()
+        proxy._suspended_drop_notice_until[self._COLLAB] = time.time() + 9999.0
+
+        async def fake_notice(chat_id, message):
+            pass
+
+        monkeypatch.setattr(proxy, "_send_owner_admin_notice", fake_notice)
+
+        for _ in range(10):
+            proxy._lockdown.record_block(user_id=self._COLLAB, reason="test")
+
+        r = _wrap_response(_make_update(f"/unlock {self._COLLAB}", user_id=self._OWNER, chat_id=int(self._OWNER)))
+        await proxy._filter_inbound_updates(r)
+
+        assert self._COLLAB not in proxy._suspended_drop_notice_until
+
+    @pytest.mark.asyncio
+    async def test_unlock_unknown_user_returns_no_state_notice(self, monkeypatch):
+        """/unlock for a user with no lockdown state must say so."""
+        proxy = self._make_proxy()
+        notices = []
+
+        async def fake_notice(chat_id, message):
+            notices.append(message)
+
+        monkeypatch.setattr(proxy, "_send_owner_admin_notice", fake_notice)
+
+        r = _wrap_response(_make_update("/unlock 9999999999", user_id=self._OWNER, chat_id=int(self._OWNER)))
+        await proxy._filter_inbound_updates(r)
+
+        assert any("no active lockdown" in n.lower() for n in notices)
+
+    # ── Fix 2: collaborator threshold notifications ───────────────────────────
+
+    @pytest.mark.asyncio
+    async def test_collab_gets_alert_notice_at_3_blocks(self, monkeypatch):
+        """Collaborator must receive warning text when they reach 3 security blocks."""
+        from gateway.ingest_api import state as state_module
+
+        quarantine = []
+        sent_to_collab: list[str] = []
+
+        async def fake_send(chat_id, text, **kw):
+            if str(chat_id) == self._COLLAB:
+                sent_to_collab.append(text)
+            return True
+
+        monkeypatch.setattr(
+            state_module,
+            "app_state",
+            SimpleNamespace(blocked_message_quarantine=quarantine),
+        )
+
+        proxy = self._make_proxy()
+        proxy._bot_token = "test-token"
+        monkeypatch.setattr(proxy, "_send_telegram_text", fake_send)
+
+        collab_chat = int(self._COLLAB)
+        # Call _quarantine_blocked_message directly to drive block count to 3
+        for _ in range(3):
+            proxy._quarantine_blocked_message(
+                user_id=self._COLLAB,
+                chat_id=collab_chat,
+                text="bad input",
+                reason="injection",
+                source="test",
+            )
+        # Yield to the event loop so create_task()-scheduled notifications can run.
+        await asyncio.sleep(0)
+
+        assert any("multiple security blocks" in m.lower() or "security blocks" in m.lower() for m in sent_to_collab), \
+            f"Expected alert notice at block 3, got: {sent_to_collab}"
+
+    @pytest.mark.asyncio
+    async def test_collab_gets_escalation_notice_at_5_blocks(self, monkeypatch):
+        """Collaborator must receive escalation notice at block 5."""
+        from gateway.ingest_api import state as state_module
+
+        quarantine = []
+        sent_to_collab: list[str] = []
+
+        async def fake_send(chat_id, text, **kw):
+            if str(chat_id) == self._COLLAB:
+                sent_to_collab.append(text)
+            return True
+
+        monkeypatch.setattr(
+            state_module,
+            "app_state",
+            SimpleNamespace(blocked_message_quarantine=quarantine),
+        )
+
+        proxy = self._make_proxy()
+        proxy._bot_token = "test-token"
+        monkeypatch.setattr(proxy, "_send_telegram_text", fake_send)
+
+        collab_chat = int(self._COLLAB)
+        for _ in range(5):
+            proxy._quarantine_blocked_message(
+                user_id=self._COLLAB,
+                chat_id=collab_chat,
+                text="bad input",
+                reason="injection",
+                source="test",
+            )
+        await asyncio.sleep(0)
+
+        assert any("approaching suspension" in m.lower() for m in sent_to_collab), \
+            f"Expected escalation notice at block 5, got: {sent_to_collab}"
+
+    @pytest.mark.asyncio
+    async def test_collab_gets_suspension_notice_at_10_blocks(self, monkeypatch):
+        """Collaborator must receive suspension notice at block 10."""
+        from gateway.ingest_api import state as state_module
+
+        quarantine = []
+        sent_to_collab: list[str] = []
+
+        async def fake_send(chat_id, text, **kw):
+            if str(chat_id) == self._COLLAB:
+                sent_to_collab.append(text)
+            return True
+
+        monkeypatch.setattr(
+            state_module,
+            "app_state",
+            SimpleNamespace(blocked_message_quarantine=quarantine),
+        )
+
+        proxy = self._make_proxy()
+        proxy._bot_token = "test-token"
+        monkeypatch.setattr(proxy, "_send_telegram_text", fake_send)
+
+        collab_chat = int(self._COLLAB)
+        for _ in range(10):
+            proxy._quarantine_blocked_message(
+                user_id=self._COLLAB,
+                chat_id=collab_chat,
+                text="bad input",
+                reason="injection",
+                source="test",
+            )
+        await asyncio.sleep(0)
+
+        assert any("suspended" in m.lower() for m in sent_to_collab), \
+            f"Expected suspension notice at block 10, got: {sent_to_collab}"
+
+    @pytest.mark.asyncio
+    async def test_collab_threshold_notices_fire_only_once_per_level(self, monkeypatch):
+        """Threshold notices must not repeat on subsequent blocks at the same level."""
+        from gateway.ingest_api import state as state_module
+
+        quarantine = []
+        sent_to_collab: list[str] = []
+
+        async def fake_send(chat_id, text, **kw):
+            if str(chat_id) == self._COLLAB:
+                sent_to_collab.append(text)
+            return True
+
+        monkeypatch.setattr(
+            state_module,
+            "app_state",
+            SimpleNamespace(blocked_message_quarantine=quarantine),
+        )
+
+        proxy = self._make_proxy()
+        proxy._bot_token = "test-token"
+        monkeypatch.setattr(proxy, "_send_telegram_text", fake_send)
+
+        collab_chat = int(self._COLLAB)
+        # Drive to 5 blocks — should get 1 alert notice (at 3) + 1 escalation notice (at 5)
+        for _ in range(5):
+            proxy._quarantine_blocked_message(
+                user_id=self._COLLAB,
+                chat_id=collab_chat,
+                text="bad",
+                reason="test",
+                source="test",
+            )
+
+        # Add 3 more (blocks 6-8, still ESCALATED) — no new notices
+        count_after_5 = len(sent_to_collab)
+        for _ in range(3):
+            proxy._quarantine_blocked_message(
+                user_id=self._COLLAB,
+                chat_id=collab_chat,
+                text="bad",
+                reason="test",
+                source="test",
+            )
+
+        assert len(sent_to_collab) == count_after_5, \
+            "No extra notices expected for blocks 6-8 (same ESCALATED level)"
+
+    # ── Fix 3: suspended-drop notice with cooldown ────────────────────────────
+
+    @pytest.mark.asyncio
+    async def test_suspended_user_receives_drop_notice(self, monkeypatch):
+        """Suspended user's dropped message must trigger a 'session suspended' notice."""
+        sent: list[tuple] = []
+
+        async def fake_send(chat_id, text, **kw):
+            sent.append((chat_id, text))
+            return True
+
+        proxy = self._make_proxy()
+        proxy._bot_token = "test-token"
+        monkeypatch.setattr(proxy, "_send_telegram_text", fake_send)
+        monkeypatch.setattr(proxy, "_send_owner_admin_notice", AsyncMock())
+
+        # Suspend the user
+        for _ in range(10):
+            proxy._lockdown.record_block(user_id=self._COLLAB, reason="test")
+
+        r = _wrap_response(_make_update("hello", user_id=self._COLLAB, chat_id=int(self._COLLAB)))
+        result = await proxy._filter_inbound_updates(r)
+
+        # Message must be dropped
+        assert result["result"] == [{"update_id": 1}]
+        # Suspended notice must be sent
+        assert any("suspended" in t.lower() for _, t in sent), \
+            f"Expected suspension notice, got: {sent}"
+
+    @pytest.mark.asyncio
+    async def test_suspended_drop_notice_respects_cooldown(self, monkeypatch):
+        """Second dropped message within cooldown window must NOT produce another notice."""
+        sent: list = []
+
+        async def fake_send(chat_id, text, **kw):
+            sent.append(text)
+            return True
+
+        proxy = self._make_proxy()
+        proxy._bot_token = "test-token"
+        monkeypatch.setattr(proxy, "_send_telegram_text", fake_send)
+        monkeypatch.setattr(proxy, "_send_owner_admin_notice", AsyncMock())
+
+        for _ in range(10):
+            proxy._lockdown.record_block(user_id=self._COLLAB, reason="test")
+
+        r = _wrap_response(_make_update("hello", user_id=self._COLLAB, chat_id=int(self._COLLAB)))
+        await proxy._filter_inbound_updates(r)
+        count_after_first = len(sent)
+
+        # Second message during cooldown
+        r2 = _wrap_response(_make_update("hello again", user_id=self._COLLAB, chat_id=int(self._COLLAB), update_id=2))
+        await proxy._filter_inbound_updates(r2)
+
+        assert len(sent) == count_after_first, "No additional notice during cooldown window"
+
+    @pytest.mark.asyncio
+    async def test_suspended_drop_notice_fires_again_after_cooldown(self, monkeypatch):
+        """A dropped message past the cooldown window must produce a new notice."""
+        sent: list = []
+
+        async def fake_send(chat_id, text, **kw):
+            sent.append(text)
+            return True
+
+        proxy = self._make_proxy()
+        proxy._bot_token = "test-token"
+        monkeypatch.setattr(proxy, "_send_telegram_text", fake_send)
+        monkeypatch.setattr(proxy, "_send_owner_admin_notice", AsyncMock())
+
+        for _ in range(10):
+            proxy._lockdown.record_block(user_id=self._COLLAB, reason="test")
+
+        r = _wrap_response(_make_update("hello", user_id=self._COLLAB, chat_id=int(self._COLLAB)))
+        await proxy._filter_inbound_updates(r)
+        count_after_first = len(sent)
+
+        # Expire the cooldown
+        proxy._suspended_drop_notice_until[self._COLLAB] = time.time() - 1.0
+
+        r2 = _wrap_response(_make_update("hello again", user_id=self._COLLAB, chat_id=int(self._COLLAB), update_id=2))
+        await proxy._filter_inbound_updates(r2)
+
+        assert len(sent) > count_after_first, "Notice must re-fire after cooldown expires"
+
+    # ── Fix 4: /locked command ────────────────────────────────────────────────
+
+    @pytest.mark.asyncio
+    async def test_locked_shows_suspended_users(self, monkeypatch):
+        """/locked must list users with non-normal lockdown state."""
+        proxy = self._make_proxy()
+        notices = []
+
+        async def fake_notice(chat_id, message):
+            notices.append(message)
+
+        monkeypatch.setattr(proxy, "_send_owner_admin_notice", fake_notice)
+
+        for _ in range(10):
+            proxy._lockdown.record_block(user_id=self._COLLAB, reason="test")
+
+        r = _wrap_response(_make_update("/locked", user_id=self._OWNER, chat_id=int(self._OWNER)))
+        await proxy._filter_inbound_updates(r)
+
+        assert any("suspended" in n.lower() and self._COLLAB in n for n in notices), \
+            f"/locked output must contain suspended user ID, got: {notices}"
+
+    @pytest.mark.asyncio
+    async def test_locked_no_active_lockdowns(self, monkeypatch):
+        """/locked with no active lockdowns must say so."""
+        proxy = self._make_proxy()
+        notices = []
+
+        async def fake_notice(chat_id, message):
+            notices.append(message)
+
+        monkeypatch.setattr(proxy, "_send_owner_admin_notice", fake_notice)
+
+        r = _wrap_response(_make_update("/locked", user_id=self._OWNER, chat_id=int(self._OWNER)))
+        await proxy._filter_inbound_updates(r)
+
+        assert any("no active lockdowns" in n.lower() for n in notices)
+
+    # ── Immunity feature ──────────────────────────────────────────────────────
+
+    @pytest.mark.asyncio
+    async def test_grant_immunity_bypasses_suspension(self, monkeypatch):
+        """/gi <uid> must grant immunity so the user bypasses lockdown suspension check."""
+        proxy = self._make_proxy()
+        notices = []
+
+        async def fake_notice(chat_id, message):
+            notices.append(message)
+
+        monkeypatch.setattr(proxy, "_send_owner_admin_notice", fake_notice)
+
+        # Suspend first
+        for _ in range(10):
+            proxy._lockdown.record_block(user_id=self._COLLAB, reason="test")
+        assert proxy._lockdown.is_suspended(self._COLLAB)
+
+        # Grant immunity
+        r = _wrap_response(_make_update(f"/gi {self._COLLAB}", user_id=self._OWNER, chat_id=int(self._OWNER)))
+        await proxy._filter_inbound_updates(r)
+
+        assert self._COLLAB in proxy._immune_users
+        assert any("immunity granted" in n.lower() for n in notices)
+
+    @pytest.mark.asyncio
+    async def test_immune_user_message_passes_through_when_suspended(self, monkeypatch):
+        """Immune user must not be dropped by the suspension path (stub must not appear)."""
+        proxy = self._make_proxy()
+        # Suppress real HTTP calls
+        async def fake_send(chat_id, text, **kw):
+            return True
+        monkeypatch.setattr(proxy, "_send_telegram_text", fake_send)
+
+        # Suspend + grant immunity
+        for _ in range(10):
+            proxy._lockdown.record_block(user_id=self._COLLAB, reason="test")
+        proxy._immune_users.add(self._COLLAB)
+        assert proxy._lockdown.is_suspended(self._COLLAB), "precondition: user is suspended"
+
+        r = _wrap_response(_make_update("hello from immune collab", user_id=self._COLLAB, chat_id=int(self._COLLAB)))
+        result = await proxy._filter_inbound_updates(r)
+
+        updates = result["result"]
+        # The suspension stub is {"update_id": N} with no other keys.
+        # Immune users must NOT produce this stub — they bypass the suspension drop path.
+        suspension_stubs = [u for u in updates if set(u.keys()) == {"update_id"}]
+        assert not suspension_stubs, \
+            "Immune user must not be dropped via the suspension stub path"
+
+    @pytest.mark.asyncio
+    async def test_revoke_immunity_restores_enforcement(self, monkeypatch):
+        """/ri <uid> must remove immunity and confirm to owner."""
+        proxy = self._make_proxy()
+        proxy._immune_users.add(self._COLLAB)
+        notices = []
+
+        async def fake_notice(chat_id, message):
+            notices.append(message)
+
+        monkeypatch.setattr(proxy, "_send_owner_admin_notice", fake_notice)
+
+        r = _wrap_response(_make_update(f"/ri {self._COLLAB}", user_id=self._OWNER, chat_id=int(self._OWNER)))
+        await proxy._filter_inbound_updates(r)
+
+        assert self._COLLAB not in proxy._immune_users
+        assert any("immunity revoked" in n.lower() for n in notices)
+
+    @pytest.mark.asyncio
+    async def test_revoke_immunity_unknown_user(self, monkeypatch):
+        """/ri for a user not in immune set must say so."""
+        proxy = self._make_proxy()
+        notices = []
+
+        async def fake_notice(chat_id, message):
+            notices.append(message)
+
+        monkeypatch.setattr(proxy, "_send_owner_admin_notice", fake_notice)
+
+        r = _wrap_response(_make_update("/ri 9999999999", user_id=self._OWNER, chat_id=int(self._OWNER)))
+        await proxy._filter_inbound_updates(r)
+
+        assert any("did not have immunity" in n.lower() for n in notices)
+
+    @pytest.mark.asyncio
+    async def test_immune_command_lists_immune_users(self, monkeypatch):
+        """/immune must list all immune user IDs."""
+        proxy = self._make_proxy()
+        proxy._immune_users.add(self._COLLAB)
+        notices = []
+
+        async def fake_notice(chat_id, message):
+            notices.append(message)
+
+        monkeypatch.setattr(proxy, "_send_owner_admin_notice", fake_notice)
+
+        r = _wrap_response(_make_update("/immune", user_id=self._OWNER, chat_id=int(self._OWNER)))
+        await proxy._filter_inbound_updates(r)
+
+        assert any(self._COLLAB in n for n in notices), \
+            f"Expected immune user ID in /immune output, got: {notices}"
+
+    @pytest.mark.asyncio
+    async def test_immune_command_no_immune_users(self, monkeypatch):
+        """/immune with no immune users must say so."""
+        proxy = self._make_proxy()
+        notices = []
+
+        async def fake_notice(chat_id, message):
+            notices.append(message)
+
+        monkeypatch.setattr(proxy, "_send_owner_admin_notice", fake_notice)
+
+        r = _wrap_response(_make_update("/immune", user_id=self._OWNER, chat_id=int(self._OWNER)))
+        await proxy._filter_inbound_updates(r)
+
+        assert any("no users" in n.lower() for n in notices)
+
+    @pytest.mark.asyncio
+    async def test_immune_user_lockdown_not_incremented(self, monkeypatch):
+        """_quarantine_blocked_message must NOT increment lockdown count for immune users."""
+        from gateway.ingest_api import state as state_module
+
+        quarantine = []
+        monkeypatch.setattr(
+            state_module,
+            "app_state",
+            SimpleNamespace(blocked_message_quarantine=quarantine),
+        )
+
+        proxy = self._make_proxy()
+        proxy._immune_users.add(self._COLLAB)
+
+        proxy._quarantine_blocked_message(
+            user_id=self._COLLAB,
+            chat_id=int(self._COLLAB),
+            text="test",
+            reason="test",
+            source="test",
+        )
+
+        status = proxy._lockdown.get_status(self._COLLAB)
+        assert status["block_count"] == 0, "Immune user must not accumulate lockdown blocks"
+
+
+class AsyncMock:
+    """Minimal async callable for monkeypatching."""
+    def __init__(self):
+        self.calls = []
+
+    async def __call__(self, *args, **kwargs):
+        self.calls.append((args, kwargs))
+        return None
