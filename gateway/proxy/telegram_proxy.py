@@ -5608,7 +5608,7 @@ class TelegramAPIProxy:
         if self._rbac and target_uid not in {str(u) for u in (self._rbac.collaborator_user_ids or [])}:
             self._rbac.collaborator_user_ids = list(self._rbac.collaborator_user_ids or []) + [target_uid]
         await self._send_owner_admin_notice(
-            chat_id, format_addtogroup_success(target_uid, group_id, group.name)
+            chat_id, format_addtogroup_success(target_uid, group_id)
         )
 
     async def _handle_rmfromgroup_command(
@@ -5631,7 +5631,7 @@ class TelegramAPIProxy:
         group.members = [m for m in group.members if m != target_uid]
         persist_group_member_remove(group_id, target_uid)
         await self._send_owner_admin_notice(
-            chat_id, format_rmfromgroup_success(target_uid, group_id, group.name)
+            chat_id, format_rmfromgroup_success(target_uid, group_id)
         )
 
     async def _handle_setmode_command(
