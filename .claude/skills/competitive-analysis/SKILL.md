@@ -143,6 +143,32 @@ KNOWN AGENTS TO TRACK:
 6. memU — https://github.com/NevaMind-AI/memU / https://memu.bot
    Track: PyPI downloads, new features
 
+7. IronClaw — NEAR AI's Rust/WASM sandboxed rewrite of OpenClaw
+   Search: https://github.com/near/ and https://www.taskade.com/blog/best-openclaw-alternatives
+   Note: Modular, production-grade, sandboxed. HIGH PRIORITY for integration assessment.
+
+8. TrustClaw — cloud-hosted agent with OAuth sandboxing
+   Search: https://www.taskade.com/blog/best-openclaw-alternatives
+   Note: Cloud-hosted with built-in auth controls. Verify GitHub/product URL before including.
+
+9. Agent S3 — GUI-level computer control agent
+   Search: https://o-mega.ai/articles/top-10-openclaw-alternatives-2026
+   Note: New GUI automation attack surface category.
+
+10. Knolli — enterprise safety-first autonomous agent
+    Search: https://o-mega.ai/articles/top-10-openclaw-alternatives-2026
+    Note: "Safety-first" framing — check for narrative overlap with AgentShroud messaging.
+
+SUPPLY CHAIN WATCH — ClawHavoc attack:
+341 malicious skills, 9,000+ compromised OpenClaw installations.
+Source: https://www.taskade.com/blog/best-openclaw-alternatives
+Include in Section 1 market context and Section 4 strategic opportunities every report.
+
+ECOSYSTEM SOURCES TO RE-VERIFY EACH REPORT:
+- https://o-mega.ai/articles/top-10-openclaw-alternatives-2026
+- https://www.kdnuggets.com/5-lightweight-and-secure-openclaw-alternatives-to-try-right-now
+- https://www.taskade.com/blog/best-openclaw-alternatives
+
 Search for any NEW autonomous agent frameworks that have crossed 1,000 GitHub stars
 since the last report. If found and verified, add them to the table.
 
