@@ -103,6 +103,28 @@ _LOCAL_UNLOCK_COMMANDS = {
     "/unlock",
     "unlock",
 }
+_LOCAL_LOCKED_COMMANDS = {
+    "/locked",
+    "locked",
+    "/lockstatus",
+    "lockstatus",
+}
+_LOCAL_GRANT_IMMUNITY_COMMANDS = {
+    "/grant-immunity",
+    "grant-immunity",
+    "/gi",
+    "gi",
+}
+_LOCAL_REVOKE_IMMUNITY_COMMANDS = {
+    "/revoke-immunity",
+    "revoke-immunity",
+    "/ri",
+    "ri",
+}
+_LOCAL_IMMUNE_COMMANDS = {
+    "/immune",
+    "immune",
+}
 _LOCAL_PENDING_COMMANDS = {
     "/pending",
     "pending",
@@ -295,6 +317,15 @@ class TelegramAPIProxy:
             window_seconds=self._stranger_rate_limit_window_seconds,
         )
         self._recent_stranger_rate_limit_until: dict[str, float] = {}
+        # Cooldown for "session suspended" drop notices sent to collaborators.
+        # Prevents spamming the user on every dropped message; default 5 min.
+        self._suspended_drop_notice_cooldown_seconds = float(
+            os.environ.get("AGENTSHROUD_SUSPENDED_DROP_NOTICE_COOLDOWN_SECONDS", "300.0")
+        )
+        self._suspended_drop_notice_until: dict[str, float] = {}
+        # Immunity set: users in this set bypass progressive lockdown and rate limiting.
+        # Owner-only; intended for testing collaborator accounts. In-memory only.
+        self._immune_users: set[str] = set()
 
     def _is_owner_chat(self, chat_id: str) -> bool:
         """Return True when chat_id belongs to the configured owner.
@@ -3249,15 +3280,28 @@ class TelegramAPIProxy:
 
             # ── Progressive lockdown: early suspend check ─────────────────────
             # If the user's session has been suspended by cumulative block count,
-            # silently drop the message without forwarding or responding.
+            # drop the message and send a one-time notice to the user (rate-limited
+            # to avoid flooding; default cooldown 5 min).
+            # Immune users bypass this check entirely (owner-granted, testing only).
             if (
                 not is_owner
+                and user_id not in self._immune_users
                 and self._lockdown is not None
                 and self._lockdown.is_suspended(user_id)
             ):
                 logger.warning(
                     "ProgressiveLockdown: dropping message from suspended user %s", user_id
                 )
+                _now = time.time()
+                if chat_id is not None and _now > self._suspended_drop_notice_until.get(user_id, 0.0):
+                    self._suspended_drop_notice_until[user_id] = _now + self._suspended_drop_notice_cooldown_seconds
+                    try:
+                        await self._send_telegram_text(
+                            int(chat_id),
+                            "\U0001f534 Your session is suspended. Contact the system owner to restore access.",
+                        )
+                    except Exception as _sde:
+                        logger.debug("Suspended-drop notice error: %s", _sde)
                 filtered_updates.append({"update_id": update.get("update_id", 0)})
                 continue
 
@@ -3361,7 +3405,7 @@ class TelegramAPIProxy:
                     logger.debug("MultiTurnTracker reset error (non-fatal): %s", _re)
 
             # ── Collaborator rate limiting (configured msgs/hour) ─────────────
-            if is_collaborator and not self._collaborator_rate_limiter.check(user_id):
+            if is_collaborator and user_id not in self._immune_users and not self._collaborator_rate_limiter.check(user_id):
                 self._stats["messages_blocked"] += 1
                 logger.warning(
                     "Collaborator %s exceeded rate limit (%s/hr) — dropping message",
@@ -3613,9 +3657,10 @@ class TelegramAPIProxy:
                             f"{_PROTECT_HEADER}Progressive lockdown module unavailable.",
                         )
                         continue
-                    unlocked = self._lockdown.unlock_user(target_id)
+                    unlocked = self._lockdown.reset(target_id)
                     if unlocked:
                         self._runtime_revoked_collaborators.discard(target_id)
+                        self._suspended_drop_notice_until.pop(target_id, None)
                         await self._send_owner_admin_notice(
                             chat_id,
                             f"{_PROTECT_HEADER}Session unlocked for user {target_id}. Lockdown state cleared.",
@@ -3625,6 +3670,90 @@ class TelegramAPIProxy:
                             chat_id,
                             f"{_PROTECT_HEADER}User {target_id} had no active lockdown state.",
                         )
+                    continue
+                elif is_owner and cmd_base in _LOCAL_LOCKED_COMMANDS:
+                    if self._lockdown is None:
+                        await self._send_owner_admin_notice(
+                            chat_id,
+                            f"{_PROTECT_HEADER}Progressive lockdown module unavailable.",
+                        )
+                        continue
+                    statuses = self._lockdown.all_statuses()
+                    active = [s for s in statuses if s["level"] != "normal"]
+                    if not active:
+                        await self._send_owner_admin_notice(
+                            chat_id,
+                            f"{_PROTECT_HEADER}No active lockdowns.",
+                        )
+                        continue
+                    import datetime as _dt
+                    lines = [f"{_PROTECT_HEADER}\U0001f512 Lockdown Status\n"]
+                    for s in active:
+                        uid = s["user_id"]
+                        level = s["level"].upper()
+                        n = s["block_count"]
+                        since_ts = s.get("suspended_at") or s.get("last_block_ts") or 0.0
+                        since_str = (
+                            _dt.datetime.fromtimestamp(since_ts, tz=_dt.timezone.utc).strftime("%H:%M UTC")
+                            if since_ts else "unknown"
+                        )
+                        label = _KNOWN_COLLABORATOR_LABELS.get(uid, uid)
+                        lines.append(f"User {uid} ({label}) — {level} ({n} blocks, since {since_str})")
+                    lines.append("\nUse /unlock <user_id> to restore access.")
+                    await self._send_owner_admin_notice(chat_id, "\n".join(lines))
+                    continue
+                elif is_owner and cmd_base in _LOCAL_GRANT_IMMUNITY_COMMANDS:
+                    target_id = self._extract_owner_target_resolved(text)
+                    if not target_id:
+                        await self._send_owner_admin_notice(
+                            chat_id,
+                            f"{_PROTECT_HEADER}Usage: /gi <telegram_user_id|name>",
+                        )
+                        continue
+                    self._immune_users.add(target_id)
+                    label = _KNOWN_COLLABORATOR_LABELS.get(target_id, target_id)
+                    await self._send_owner_admin_notice(
+                        chat_id,
+                        f"{_PROTECT_HEADER}\U0001f6e1\ufe0f Immunity granted to {label} ({target_id}). "
+                        "Security blocks and rate limiting disabled for this account.",
+                    )
+                    continue
+                elif is_owner and cmd_base in _LOCAL_REVOKE_IMMUNITY_COMMANDS:
+                    target_id = self._extract_owner_target_resolved(text)
+                    if not target_id:
+                        await self._send_owner_admin_notice(
+                            chat_id,
+                            f"{_PROTECT_HEADER}Usage: /ri <telegram_user_id|name>",
+                        )
+                        continue
+                    removed = target_id in self._immune_users
+                    self._immune_users.discard(target_id)
+                    label = _KNOWN_COLLABORATOR_LABELS.get(target_id, target_id)
+                    if removed:
+                        await self._send_owner_admin_notice(
+                            chat_id,
+                            f"{_PROTECT_HEADER}Immunity revoked for {label} ({target_id}). "
+                            "Normal security enforcement restored.",
+                        )
+                    else:
+                        await self._send_owner_admin_notice(
+                            chat_id,
+                            f"{_PROTECT_HEADER}{label} ({target_id}) did not have immunity.",
+                        )
+                    continue
+                elif is_owner and cmd_base in _LOCAL_IMMUNE_COMMANDS:
+                    if not self._immune_users:
+                        await self._send_owner_admin_notice(
+                            chat_id,
+                            f"{_PROTECT_HEADER}No users currently have immunity.",
+                        )
+                        continue
+                    lines = [f"{_PROTECT_HEADER}\U0001f6e1\ufe0f Immune Users\n"]
+                    for uid in sorted(self._immune_users):
+                        label = _KNOWN_COLLABORATOR_LABELS.get(uid, uid)
+                        lines.append(f"  {uid} ({label})")
+                    lines.append("\nUse /ri <user_id> to revoke immunity.")
+                    await self._send_owner_admin_notice(chat_id, "\n".join(lines))
                     continue
                 elif is_owner and cmd_base in _LOCAL_ADD_COLLAB_COMMANDS:
                     target_id = self._extract_owner_target_resolved(text)
@@ -4432,7 +4561,8 @@ class TelegramAPIProxy:
         it is sent asynchronously without blocking this synchronous call.
         """
         # Progressive lockdown: record this block and check for escalation.
-        if self._lockdown is not None:
+        # Immune users are exempt from lockdown recording (owner-granted, testing only).
+        if self._lockdown is not None and str(user_id) not in self._immune_users:
             try:
                 action = self._lockdown.record_block(user_id=str(user_id), reason=reason)
                 if action.notify_owner and action.notify_text:
@@ -4447,6 +4577,38 @@ class TelegramAPIProxy:
                                 )
                         except Exception as _le:
                             logger.debug("Lockdown owner notify error: %s", _le)
+                # Notify the collaborator at each lockdown threshold transition.
+                # Only fires once per level (action.notify_owner gates each transition).
+                if action.notify_owner and chat_id is not None:
+                    _block_count = self._lockdown.get_status(str(user_id)).get("block_count", 0)
+                    _level = action.level.value
+                    if _level == "suspended":
+                        _collab_msg = (
+                            f"\U0001f534 Your session has been suspended after {_block_count} security blocks. "
+                            "Contact the system owner to restore access."
+                        )
+                    elif _level == "escalated":
+                        _collab_msg = (
+                            f"\u26a0\ufe0f Your session is approaching suspension ({_block_count} security blocks). "
+                            "Please adjust your approach or contact the system owner."
+                        )
+                    elif _level == "alert":
+                        _collab_msg = (
+                            "\u26a0\ufe0f Your session has triggered multiple security blocks. "
+                            "Continued attempts may result in a temporary session suspension."
+                        )
+                    else:
+                        _collab_msg = ""
+                    if _collab_msg:
+                        import asyncio as _asyncio2
+                        try:
+                            loop = _asyncio2.get_event_loop()
+                            if loop.is_running():
+                                loop.create_task(
+                                    self._send_telegram_text(int(chat_id), _collab_msg)
+                                )
+                        except Exception as _ce:
+                            logger.debug("Lockdown collab notify error: %s", _ce)
             except Exception as _exc:
                 logger.debug("ProgressiveLockdown.record_block error: %s", _exc)
 
