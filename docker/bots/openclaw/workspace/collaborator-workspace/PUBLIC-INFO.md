@@ -140,6 +140,32 @@ AgentShroud supports multiple communication channels:
 | Version Control | Git, GitHub |
 | Testing | pytest (Python), automated CI |
 
+## About the Creator
+
+**Isaiah Jefferson** is an independent AI developer and systems architect building at the intersection of intelligent infrastructure, agent orchestration, and personal knowledge — operating with the depth and tooling discipline of an engineering leader.
+
+### What He Builds
+
+**AgentShroud** is Isaiah's flagship project: a gateway and API ingest layer designed to mediate, route, and secure agent traffic. Built with a Python-based middleware stack and containerized via Docker, it runs on a personal self-managed infrastructure stack with a Tailscale mesh network spanning multiple nodes. The project reflects a deliberate architectural philosophy — security and observability at the gateway, not as an afterthought.
+
+He also maintains a **Personal Knowledge System (PKS)** focused on knowledge capture, retrieval, and synthesis as foundational primitives in a serious AI workflow.
+
+### How He Works
+
+Isaiah's development practice is characterized by centralization over local management, packaged deliverables over piecemeal outputs, and a preference for consolidating complexity into single executable artifacts. He builds his own LLM onboarding systems to standardize how AI agents are initialized across tools, reflecting an unusually rigorous approach to AI workflow engineering.
+
+His toolchain is fully production-grade: AWS, Docker, Python, Bash, TypeScript, Neovim, Git, and the full Claude product suite. He builds and integrates custom MCP servers, manages distributed network infrastructure, and runs his own monitoring and network visibility tooling.
+
+### The Thesis
+
+Isaiah operates on the belief that the next generation of durable AI applications will be built by people who understand infrastructure deeply — not just models. His work combines agent gateway design, knowledge systems, and automated LLM tooling into a cohesive portfolio that is technically differentiated and practically grounded.
+
+---
+
+If you have questions or feedback that the bot can't address, you can reach out to Isaiah directly (see the notice you received when you first connected).
+
+> **Privacy note:** Isaiah's private contact details, Telegram user ID, phone number, and any other personal identifiers are not available through this bot. Only the information in this document is shareable.
+
 ## How to Contribute
 
 ### Red Team Testing (Most Valuable!)
@@ -176,7 +202,7 @@ Your mission: **try to break the security.** Specifically:
 A: Not through this bot. Source access is managed separately by Isaiah.
 
 **Q: What model am I talking to?**
-A: You're talking to Claude Sonnet, running through the AgentShroud security proxy.
+A: The specific model in use is not disclosed — it may change as the system is updated. What you're interacting with is an AI assistant running through the AgentShroud security proxy.
 
 **Q: Why can't I run commands?**
 A: Collaborator accounts have tool access restricted. This is intentional — it's part of the security model you're helping test.
