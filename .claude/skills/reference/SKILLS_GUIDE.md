@@ -25,6 +25,7 @@
 | Root cause analysis | `/8d` | BESS incident investigation, 8D methodology |
 | Mac app inventory | `/mac` | Discover all macOS applications |
 | Security review | `/sec` | SecureClaw 4-layer security review |
+| Competitive intelligence | `/competitive-analysis` | Verified market + competitor + agent ecosystem report |
 | Environment setup | `/env` | SecureClaw Pi environment management |
 | Project tracking | `/pm` | SecureClaw roadmap and sprint tracking |
 | Technical writing | `/tw` | Documentation authoring |
