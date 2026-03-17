@@ -13,6 +13,7 @@ instead of https://api.telegram.org/bot<token>/<method>.
 from __future__ import annotations
 
 import asyncio
+import datetime as _dt
 import ipaddress
 import json
 import logging
@@ -325,9 +326,24 @@ class TelegramAPIProxy:
             os.environ.get("AGENTSHROUD_SUSPENDED_DROP_NOTICE_COOLDOWN_SECONDS", "300.0")
         )
         self._suspended_drop_notice_until: dict[str, float] = {}
-        # Immunity set: users in this set bypass progressive lockdown and rate limiting.
+        # Immunity map: user_id → expiry timestamp (0.0 = no expiry).
         # Owner-only; intended for testing collaborator accounts. In-memory only.
-        self._immune_users: set[str] = set()
+        # Default TTL if owner does not specify a duration: 8 hours.
+        self._immune_users: dict[str, float] = {}
+        self._immunity_default_ttl_seconds: float = float(
+            os.environ.get("AGENTSHROUD_IMMUNITY_DEFAULT_TTL_SECONDS", str(8 * 3600))
+        )
+
+    def _is_immune(self, user_id: str) -> bool:
+        """Return True if user_id has active (non-expired) immunity."""
+        expiry = self._immune_users.get(user_id)
+        if expiry is None:
+            return False
+        if expiry != 0.0 and time.time() >= expiry:
+            del self._immune_users[user_id]
+            logger.info("Immunity expired for user %s", user_id)
+            return False
+        return True
 
     def _is_owner_chat(self, chat_id: str) -> bool:
         """Return True when chat_id belongs to the configured owner.
@@ -2434,9 +2450,15 @@ class TelegramAPIProxy:
                     _oid = str(getattr(self._rbac, "owner_user_id", "")).strip()
                     if len(_oid) >= 7 and _oid in text:
                         self._stats["outbound_filtered"] += 1
-                        # Remove "Telegram ID XXXXX" / "Telegram ID: XXXXX" and bare ID occurrences.
+                        # Remove the owner ID and common preceding label fragments that
+                        # would otherwise leave dangling phrases like "his ID is" or
+                        # "Telegram ID:" after the numeric value is stripped.
                         redacted = re.sub(
-                            r"(?:Telegram\s+(?:user\s+)?ID\s*:?\s*)?" + re.escape(_oid),
+                            r"(?:"
+                            r"(?:his|her|their|the\s+owner'?s?|my)\s+(?:Telegram\s+)?(?:user\s+)?ID\s+is\s*:?\s*|"
+                            r"Telegram\s+(?:user\s+)?ID\s*:?\s*|"
+                            r"(?:user\s+)?ID\s*:?\s*"
+                            r")?" + re.escape(_oid),
                             "",
                             text,
                             flags=re.IGNORECASE,
@@ -3298,7 +3320,7 @@ class TelegramAPIProxy:
             # Immune users bypass this check entirely (owner-granted, testing only).
             if (
                 not is_owner
-                and user_id not in self._immune_users
+                and not self._is_immune(user_id)
                 and self._lockdown is not None
                 and self._lockdown.is_suspended(user_id)
             ):
@@ -3418,7 +3440,7 @@ class TelegramAPIProxy:
                     logger.debug("MultiTurnTracker reset error (non-fatal): %s", _re)
 
             # ── Collaborator rate limiting (configured msgs/hour) ─────────────
-            if is_collaborator and user_id not in self._immune_users and not self._collaborator_rate_limiter.check(user_id):
+            if is_collaborator and not self._is_immune(user_id) and not self._collaborator_rate_limiter.check(user_id):
                 self._stats["messages_blocked"] += 1
                 logger.warning(
                     "Collaborator %s exceeded rate limit (%s/hr) — dropping message",
@@ -3699,7 +3721,6 @@ class TelegramAPIProxy:
                             f"{_PROTECT_HEADER}No active lockdowns.",
                         )
                         continue
-                    import datetime as _dt
                     lines = [f"{_PROTECT_HEADER}\U0001f512 Lockdown Status\n"]
                     for s in active:
                         uid = s["user_id"]
@@ -3720,15 +3741,36 @@ class TelegramAPIProxy:
                     if not target_id:
                         await self._send_owner_admin_notice(
                             chat_id,
-                            f"{_PROTECT_HEADER}Usage: /gi <telegram_user_id|name>",
+                            f"{_PROTECT_HEADER}Usage: /gi <telegram_user_id|name> [duration]\n"
+                            "Duration examples: 1h, 30m, 2h30m. Omit for default "
+                            f"({int(self._immunity_default_ttl_seconds // 3600)}h).",
                         )
                         continue
-                    self._immune_users.add(target_id)
+                    # Parse optional duration from trailing token (e.g. "1h", "30m", "2h30m")
+                    _ttl = self._immunity_default_ttl_seconds
+                    _parts = text.strip().split()
+                    if len(_parts) >= 3:
+                        _dur_str = _parts[-1].lower()
+                        _dur_match = re.fullmatch(r"(?:(\d+)h)?(?:(\d+)m)?", _dur_str)
+                        if _dur_match and (_dur_match.group(1) or _dur_match.group(2)):
+                            _h = int(_dur_match.group(1) or 0)
+                            _m = int(_dur_match.group(2) or 0)
+                            _ttl = float(_h * 3600 + _m * 60)
+                    _expiry = time.time() + _ttl if _ttl > 0 else 0.0
+                    self._immune_users[target_id] = _expiry
                     label = _KNOWN_COLLABORATOR_LABELS.get(target_id, target_id)
+                    _expiry_str = (
+                        _dt.datetime.fromtimestamp(_expiry, tz=_dt.timezone.utc).strftime("%H:%M UTC")
+                        if _expiry else "no expiry"
+                    )
+                    logger.info(
+                        "IMMUNITY GRANTED: owner=%s target=%s (%s) ttl=%.0fs expires=%s",
+                        user_id, target_id, label, _ttl, _expiry_str,
+                    )
                     await self._send_owner_admin_notice(
                         chat_id,
                         f"{_PROTECT_HEADER}\U0001f6e1\ufe0f Immunity granted to {label} ({target_id}). "
-                        "Security blocks and rate limiting disabled for this account.",
+                        f"Security blocks and rate limiting disabled. Expires: {_expiry_str}.",
                     )
                     continue
                 elif is_owner and cmd_base in _LOCAL_REVOKE_IMMUNITY_COMMANDS:
@@ -3740,9 +3782,13 @@ class TelegramAPIProxy:
                         )
                         continue
                     removed = target_id in self._immune_users
-                    self._immune_users.discard(target_id)
+                    self._immune_users.pop(target_id, None)
                     label = _KNOWN_COLLABORATOR_LABELS.get(target_id, target_id)
                     if removed:
+                        logger.info(
+                            "IMMUNITY REVOKED: owner=%s target=%s (%s)",
+                            user_id, target_id, label,
+                        )
                         await self._send_owner_admin_notice(
                             chat_id,
                             f"{_PROTECT_HEADER}Immunity revoked for {label} ({target_id}). "
@@ -3755,6 +3801,12 @@ class TelegramAPIProxy:
                         )
                     continue
                 elif is_owner and cmd_base in _LOCAL_IMMUNE_COMMANDS:
+                    # Purge expired entries before listing
+                    _now_ts = time.time()
+                    self._immune_users = {
+                        uid: exp for uid, exp in self._immune_users.items()
+                        if exp == 0.0 or _now_ts < exp
+                    }
                     if not self._immune_users:
                         await self._send_owner_admin_notice(
                             chat_id,
@@ -3762,9 +3814,13 @@ class TelegramAPIProxy:
                         )
                         continue
                     lines = [f"{_PROTECT_HEADER}\U0001f6e1\ufe0f Immune Users\n"]
-                    for uid in sorted(self._immune_users):
+                    for uid, exp in sorted(self._immune_users.items()):
                         label = _KNOWN_COLLABORATOR_LABELS.get(uid, uid)
-                        lines.append(f"  {uid} ({label})")
+                        exp_str = (
+                            _dt.datetime.fromtimestamp(exp, tz=_dt.timezone.utc).strftime("%H:%M UTC")
+                            if exp else "no expiry"
+                        )
+                        lines.append(f"  {uid} ({label}) — expires {exp_str}")
                     lines.append("\nUse /ri <user_id> to revoke immunity.")
                     await self._send_owner_admin_notice(chat_id, "\n".join(lines))
                     continue
@@ -4575,15 +4631,14 @@ class TelegramAPIProxy:
         """
         # Progressive lockdown: record this block and check for escalation.
         # Immune users are exempt from lockdown recording (owner-granted, testing only).
-        if self._lockdown is not None and str(user_id) not in self._immune_users:
+        if self._lockdown is not None and not self._is_immune(str(user_id)):
             try:
                 action = self._lockdown.record_block(user_id=str(user_id), reason=reason)
                 if action.notify_owner and action.notify_text:
                     owner_chat = str(getattr(self._rbac, "owner_user_id", "")).strip()
                     if owner_chat:
-                        import asyncio as _asyncio
                         try:
-                            loop = _asyncio.get_event_loop()
+                            loop = asyncio.get_event_loop()
                             if loop.is_running():
                                 loop.create_task(
                                     self._send_telegram_text(owner_chat, action.notify_text)
@@ -4613,9 +4668,8 @@ class TelegramAPIProxy:
                     else:
                         _collab_msg = ""
                     if _collab_msg:
-                        import asyncio as _asyncio2
                         try:
-                            loop = _asyncio2.get_event_loop()
+                            loop = asyncio.get_event_loop()
                             if loop.is_running():
                                 loop.create_task(
                                     self._send_telegram_text(int(chat_id), _collab_msg)
