@@ -840,6 +840,52 @@ async def lifespan(app: FastAPI):
     app_state._audit_chain_heartbeat_task = _asyncio.create_task(_audit_chain_heartbeat())
     logger.info("✓ AuditChain verification heartbeat started (60s interval)")
 
+    # Register Telegram bot commands so the "/" menu shows in the client
+    _tg_token_cmds = os.environ.get("TELEGRAM_BOT_TOKEN", "") or _read_secret("telegram_bot_token")
+    if _tg_token_cmds:
+        try:
+            from gateway.security.rbac_config import RBACConfig as _RBACCmdCfg
+            _owner_cmd_id = str(_RBACCmdCfg().owner_user_id).strip()
+            _tg_api_cmds = f"https://api.telegram.org/bot{_tg_token_cmds}/setMyCommands"
+            _collab_cmds = [
+                {"command": "start",  "description": "Start or restart the session"},
+                {"command": "help",   "description": "List available commands"},
+                {"command": "status", "description": "Gateway and bot health"},
+                {"command": "whoami", "description": "Your role and user ID"},
+                {"command": "model",  "description": "Show active AI model"},
+            ]
+            _owner_cmds = _collab_cmds + [
+                {"command": "pending",        "description": "Review pending approval requests"},
+                {"command": "collabs",        "description": "List collaborators"},
+                {"command": "addcollab",      "description": "Add a collaborator by Telegram user ID"},
+                {"command": "restorecollabs", "description": "Restore persisted collaborators from disk"},
+                {"command": "approve",        "description": "Approve a pending request"},
+                {"command": "deny",           "description": "Deny a pending request"},
+                {"command": "revoke",         "description": "Revoke collaborator access"},
+                {"command": "unlock",         "description": "Unlock a suspended user"},
+                {"command": "locked",         "description": "Show lockdown status for all users"},
+                {"command": "gi",             "description": "Grant security immunity to a user"},
+                {"command": "ri",             "description": "Revoke security immunity from a user"},
+                {"command": "immune",         "description": "List users with active security immunity"},
+            ]
+            for _scope, _cmds in [
+                ({"type": "default"}, _collab_cmds),
+                ({"type": "chat", "chat_id": int(_owner_cmd_id)}, _owner_cmds),
+            ]:
+                _payload = json.dumps({"commands": _cmds, "scope": _scope}).encode()
+                _req = urllib.request.Request(
+                    _tg_api_cmds,
+                    data=_payload,
+                    headers={"Content-Type": "application/json"},
+                    method="POST",
+                )
+                urllib.request.urlopen(_req, timeout=5)
+            logger.info("✓ Telegram bot commands registered (%d collab, %d owner)", len(_collab_cmds), len(_owner_cmds))
+        except Exception as _cmd_exc:
+            logger.warning("⚠ Telegram command registration failed: %s", _cmd_exc)
+    else:
+        logger.info("Telegram command registration skipped — no bot token")
+
     # Record start time
     app_state.start_time = time.time()
 
