@@ -31,6 +31,7 @@ from typing import Annotated, Optional
 from fastapi import Depends, FastAPI, HTTPException, Query, Request, WebSocket, status
 from pydantic import BaseModel, Field
 from fastapi.responses import JSONResponse, HTMLResponse
+from fastapi.staticfiles import StaticFiles
 from starlette.responses import RedirectResponse
 from pathlib import Path
 
@@ -56,6 +57,7 @@ from .routes.health import router as health_router
 from .routes.forward import router as forward_router
 from .routes.approval import router as approval_router
 from .routes.dashboard import router as dashboard_router
+from ..soc.router import router as soc_router
 from ..ssh_proxy.proxy import SSHProxy
 from .router import ForwardError, MultiAgentRouter
 from ..security.prompt_guard import PromptGuard
@@ -188,6 +190,14 @@ app.include_router(management_dashboard_router)
 
 # Mount version management routes (gateway Bearer auth)
 app.include_router(version_router, dependencies=[Depends(auth_dep)])
+
+# Mount Shared Command Layer (SCL) — unified /soc/v1/ API + /soc/ dashboard
+app.include_router(soc_router)
+
+# Serve SOC static assets at /soc/static/
+_soc_static = Path(__file__).parent.parent / "soc" / "static"
+if _soc_static.exists():
+    app.mount("/soc/static", StaticFiles(directory=str(_soc_static)), name="soc-static")
 
 
 # === CORS Middleware ===
