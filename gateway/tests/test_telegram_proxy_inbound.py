@@ -8031,7 +8031,7 @@ class TestProgressiveLockdownUX:
         # Suspend + grant immunity
         for _ in range(10):
             proxy._lockdown.record_block(user_id=self._COLLAB, reason="test")
-        proxy._immune_users.add(self._COLLAB)
+        proxy._immune_users[self._COLLAB] = 0.0  # no-expiry immunity
         assert proxy._lockdown.is_suspended(self._COLLAB), "precondition: user is suspended"
 
         r = _wrap_response(_make_update("hello from immune collab", user_id=self._COLLAB, chat_id=int(self._COLLAB)))
@@ -8048,7 +8048,7 @@ class TestProgressiveLockdownUX:
     async def test_revoke_immunity_restores_enforcement(self, monkeypatch):
         """/ri <uid> must remove immunity and confirm to owner."""
         proxy = self._make_proxy()
-        proxy._immune_users.add(self._COLLAB)
+        proxy._immune_users[self._COLLAB] = 0.0  # no-expiry immunity
         notices = []
 
         async def fake_notice(chat_id, message):
@@ -8082,7 +8082,7 @@ class TestProgressiveLockdownUX:
     async def test_immune_command_lists_immune_users(self, monkeypatch):
         """/immune must list all immune user IDs."""
         proxy = self._make_proxy()
-        proxy._immune_users.add(self._COLLAB)
+        proxy._immune_users[self._COLLAB] = 0.0  # no-expiry immunity
         notices = []
 
         async def fake_notice(chat_id, message):
@@ -8125,7 +8125,7 @@ class TestProgressiveLockdownUX:
         )
 
         proxy = self._make_proxy()
-        proxy._immune_users.add(self._COLLAB)
+        proxy._immune_users[self._COLLAB] = 0.0  # no-expiry immunity
 
         proxy._quarantine_blocked_message(
             user_id=self._COLLAB,
