@@ -200,6 +200,7 @@ _KNOWN_COLLABORATOR_LABELS: dict[str, str] = {
     "8279589982": "Steve Hay",
     "8526379012": "TJ Winter",
     "7614658040": "Isaiah (collaborator test)",
+    "8633775668": "Ana",
 }
 _KNOWN_COLLABORATOR_ALIASES: dict[str, str] = {
     "brett": "8506022825",
@@ -213,6 +214,7 @@ _KNOWN_COLLABORATOR_ALIASES: dict[str, str] = {
     "tj": "8526379012",
     "tjwinter": "8526379012",
     "isaiahcollab": "7614658040",
+    "ana": "8633775668",
 }
 
 
