@@ -2382,13 +2382,22 @@ class TelegramAPIProxy:
                     self._stats["outbound_filtered"] += 1
                     data[text_key] = self._collaborator_safe_notice("redacted protected content")
                     return json.dumps(data).encode()
-                # Block owner's Telegram user ID from appearing in collaborator responses.
-                # Prevents IDENTITY.md content from leaking if the bot reads and paraphrases it.
+                # Redact owner's Telegram user ID from collaborator responses.
+                # Strips the ID (and surrounding "Telegram ID …" label if present) so the
+                # rest of the response — e.g. the owner's name or role — still reaches the
+                # collaborator rather than blanket-blocking the whole message.
                 if not is_owner_chat and isinstance(text, str) and self._rbac:
                     _oid = str(getattr(self._rbac, "owner_user_id", "")).strip()
                     if len(_oid) >= 7 and _oid in text:
                         self._stats["outbound_filtered"] += 1
-                        data[text_key] = self._collaborator_safe_notice("redacted protected content")
+                        # Remove "Telegram ID XXXXX" / "Telegram ID: XXXXX" and bare ID occurrences.
+                        redacted = re.sub(
+                            r"(?:Telegram\s+(?:user\s+)?ID\s*:?\s*)?" + re.escape(_oid),
+                            "",
+                            text,
+                            flags=re.IGNORECASE,
+                        ).strip()
+                        data[text_key] = redacted if redacted else self._collaborator_safe_notice("redacted protected content")
                         return json.dumps(data).encode()
                 if isinstance(text, str) and "does not support tools" in text.lower():
                     self._stats["outbound_filtered"] += 1
@@ -2763,12 +2772,18 @@ class TelegramAPIProxy:
                     self._stats["outbound_filtered"] += 1
                     data[text_key] = self._collaborator_safe_notice("redacted protected content")
                     return urllib.parse.urlencode(data).encode()
-                # Block owner's Telegram user ID from appearing in collaborator responses.
+                # Redact owner's Telegram user ID from collaborator responses (form-encoded path).
                 if not is_owner_chat and isinstance(text, str) and self._rbac:
                     _oid = str(getattr(self._rbac, "owner_user_id", "")).strip()
                     if len(_oid) >= 7 and _oid in text:
                         self._stats["outbound_filtered"] += 1
-                        data[text_key] = self._collaborator_safe_notice("redacted protected content")
+                        redacted = re.sub(
+                            r"(?:Telegram\s+(?:user\s+)?ID\s*:?\s*)?" + re.escape(_oid),
+                            "",
+                            text,
+                            flags=re.IGNORECASE,
+                        ).strip()
+                        data[text_key] = redacted if redacted else self._collaborator_safe_notice("redacted protected content")
                         return urllib.parse.urlencode(data).encode()
         except Exception as e:
             logger.error(f"Outbound filter error: {e}")
