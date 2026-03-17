@@ -142,6 +142,14 @@ _LOCAL_COLLABS_COMMANDS = {
     "/listcollabs",
     "listcollabs",
 }
+# V9-4F — Group + project commands
+_LOCAL_GROUPS_COMMANDS = {"/groups", "groups"}
+_LOCAL_GROUPINFO_COMMANDS = {"/groupinfo", "groupinfo"}
+_LOCAL_PROJECTS_COMMANDS = {"/projects", "projects"}
+_LOCAL_ADDTOGROUP_COMMANDS = {"/addtogroup", "addtogroup"}
+_LOCAL_RMFROMGROUP_COMMANDS = {"/rmfromgroup", "rmfromgroup"}
+_LOCAL_SETMODE_COMMANDS = {"/setmode", "setmode"}
+
 _COLLABORATOR_ALLOWED_SLASH_COMMANDS = {
     "/start",
     "/help",
@@ -153,6 +161,9 @@ _COLLABORATOR_ALLOWED_SLASH_COMMANDS = {
     "/model-status",
     "/whoami",
     "/id",
+    "/groups",
+    "/groupinfo",
+    "/projects",
 }
 
 _DISCLOSURE_MESSAGE = (
@@ -3889,6 +3900,37 @@ class TelegramAPIProxy:
                         ),
                     )
                     continue
+                elif cmd_base in _LOCAL_GROUPS_COMMANDS and (is_owner or is_collaborator):
+                    await self._handle_groups_command(chat_id, user_id)
+                    continue
+                elif cmd_base in _LOCAL_GROUPINFO_COMMANDS and (is_owner or is_collaborator):
+                    tokens = normalize_input(text).strip().split(None, 1)
+                    group_id = tokens[1].strip() if len(tokens) > 1 else ""
+                    await self._handle_groupinfo_command(chat_id, user_id, group_id)
+                    continue
+                elif cmd_base in _LOCAL_PROJECTS_COMMANDS and (is_owner or is_collaborator):
+                    await self._handle_projects_command(chat_id, user_id)
+                    continue
+                elif is_owner and cmd_base in _LOCAL_ADDTOGROUP_COMMANDS:
+                    tokens = normalize_input(text).strip().split(None, 2)
+                    uid_arg = tokens[1].strip() if len(tokens) > 1 else ""
+                    gid_arg = tokens[2].strip() if len(tokens) > 2 else ""
+                    await self._handle_addtogroup_command(chat_id, user_id, uid_arg, gid_arg)
+                    continue
+                elif (is_owner or (is_collaborator and self._rbac and self._rbac.group_admin_ids.get(
+                        next((g for g in (self._teams_config.groups if self._teams_config else {})), "")
+                    ) == user_id)) and cmd_base in _LOCAL_RMFROMGROUP_COMMANDS:
+                    tokens = normalize_input(text).strip().split(None, 2)
+                    uid_arg = tokens[1].strip() if len(tokens) > 1 else ""
+                    gid_arg = tokens[2].strip() if len(tokens) > 2 else ""
+                    await self._handle_rmfromgroup_command(chat_id, user_id, uid_arg, gid_arg)
+                    continue
+                elif is_owner and cmd_base in _LOCAL_SETMODE_COMMANDS:
+                    tokens = normalize_input(text).strip().split(None, 2)
+                    target_arg = tokens[1].strip() if len(tokens) > 1 else ""
+                    mode_arg = tokens[2].strip() if len(tokens) > 2 else ""
+                    await self._handle_setmode_command(chat_id, user_id, target_arg, mode_arg)
+                    continue
                 elif is_owner and cmd_base in _LOCAL_EGRESS_COMMANDS:
                     from gateway.ingest_api.state import app_state as _eq_state
                     _eq = getattr(_eq_state, "egress_approval_queue", None)
@@ -4441,13 +4483,25 @@ class TelegramAPIProxy:
                 if self._looks_like_safe_collaborator_info_query(text):
                     await self._send_collaborator_safe_info_response(chat_id, text)
                     continue
-                # Deterministic collaborator handling: serve informational
-                # responses locally to avoid model/runtime stalls that can
-                # cause apparent "no response" behavior.
-                local_only = os.getenv("AGENTSHROUD_COLLAB_LOCAL_INFO_ONLY", "1").strip().lower()
-                if self._bot_token and local_only not in {"0", "false", "no"}:
+                # Deterministic collaborator handling — resolve per-user collab mode.
+                _collab_mode = self._resolve_collaborator_mode(user_id)
+                if _collab_mode == "local_only":
+                    # Always handle locally (original default behavior).
                     await self._send_collaborator_safe_info_response(chat_id, text)
                     continue
+                if _collab_mode == "project_scoped":
+                    # Gateway pre-filter: block clearly off-topic messages locally.
+                    _user_projects = self._get_user_projects(user_id)
+                    if _user_projects and not self._is_within_project_scope(text, _user_projects):
+                        await self._send_owner_admin_notice(
+                            chat_id,
+                            f"{_PROTECT_HEADER}This message is outside your current project scope.\n"
+                            "Please keep questions focused on your assigned projects.",
+                        )
+                        continue
+                    # Matching/ambiguous → fall through to bot with project context injection
+                    # (handled in middleware pipeline below)
+                # _collab_mode == "full_access": forward without restriction
 
             # ── Middleware pipeline (RBAC, context guard, multi-turn, etc.) ───
             if self.middleware_manager:
@@ -5419,6 +5473,193 @@ class TelegramAPIProxy:
                     )
         except Exception as e:
             logger.warning("Failed to send collaborator safe-info notice to chat %s: %s", chat_id, e)
+
+    # ------------------------------------------------------------------
+    # V9-4D — Collab mode resolution + project scope
+    # ------------------------------------------------------------------
+
+    @property
+    def _teams_config(self):
+        """Return TeamsConfig from app_state if available."""
+        try:
+            from gateway.ingest_api.state import app_state as _as
+            cfg = getattr(_as, "config", None)
+            return getattr(cfg, "teams", None) if cfg else None
+        except Exception:
+            return None
+
+    def _resolve_collaborator_mode(self, user_id: str) -> str:
+        """Resolve effective collaboration mode for a user.
+
+        Resolution order:
+          1. user-level override via TeamsConfig
+          2. group collab_mode (first group the user belongs to)
+          3. AGENTSHROUD_COLLAB_LOCAL_INFO_ONLY env var fallback
+          4. "local_only" (safe default)
+        """
+        teams = self._teams_config
+        if teams is not None:
+            mode = teams.get_user_collab_mode(user_id)
+            if mode:
+                return mode
+        # Env var backward-compat
+        local_only = os.getenv("AGENTSHROUD_COLLAB_LOCAL_INFO_ONLY", "1").strip().lower()
+        if local_only in {"0", "false", "no"}:
+            return "full_access"
+        return "local_only"
+
+    def _get_user_projects(self, user_id: str):
+        """Return list of ProjectConfig objects for this user, or empty list."""
+        teams = self._teams_config
+        if teams is None:
+            return []
+        return teams.get_user_projects(user_id)
+
+    def _is_within_project_scope(self, text: str, projects) -> bool:
+        """Return True if text has any keyword overlap with the user's project focus_topics.
+
+        A zero-keyword match is treated as clearly off-topic → return False.
+        Any overlap (even one keyword) is treated as ambiguous → return True (pass through).
+        """
+        if not projects:
+            return True  # No scope defined → allow everything
+        text_lower = (text or "").lower()
+        for project in projects:
+            for topic in (project.focus_topics or []):
+                if topic.lower() in text_lower:
+                    return True
+        return False
+
+    # ------------------------------------------------------------------
+    # V9-4F — Group command handlers
+    # ------------------------------------------------------------------
+
+    async def _handle_groups_command(self, chat_id: int, user_id: str) -> None:
+        """Handle /groups — list groups this user belongs to."""
+        from .collaborator_responses import format_groups_list
+        teams = self._teams_config
+        if teams is None:
+            await self._send_owner_admin_notice(
+                chat_id,
+                f"{_PROTECT_HEADER}No team groups configured.",
+            )
+            return
+        user_groups = teams.get_user_groups(user_id)
+        await self._send_owner_admin_notice(
+            chat_id, format_groups_list(user_id, user_groups, teams)
+        )
+
+    async def _handle_groupinfo_command(self, chat_id: int, user_id: str, group_id: str) -> None:
+        """Handle /groupinfo <group_id>."""
+        from .collaborator_responses import format_group_info, format_unknown_group, format_not_member
+        teams = self._teams_config
+        if teams is None or not group_id:
+            await self._send_owner_admin_notice(
+                chat_id,
+                f"{_PROTECT_HEADER}Usage: /groupinfo <group_id>",
+            )
+            return
+        group = teams.groups.get(group_id)
+        if group is None:
+            await self._send_owner_admin_notice(chat_id, format_unknown_group(group_id))
+            return
+        is_owner = self._rbac and self._rbac.is_owner(user_id) if self._rbac else False
+        if not is_owner and user_id not in group.members:
+            await self._send_owner_admin_notice(chat_id, format_not_member(group_id))
+            return
+        await self._send_owner_admin_notice(chat_id, format_group_info(group_id, group, teams))
+
+    async def _handle_projects_command(self, chat_id: int, user_id: str) -> None:
+        """Handle /projects — list accessible projects."""
+        from .collaborator_responses import format_projects_list
+        teams = self._teams_config
+        if teams is None:
+            await self._send_owner_admin_notice(
+                chat_id,
+                f"{_PROTECT_HEADER}No projects configured.",
+            )
+            return
+        user_projects = teams.get_user_projects(user_id)
+        await self._send_owner_admin_notice(
+            chat_id, format_projects_list(user_id, user_projects)
+        )
+
+    async def _handle_addtogroup_command(
+        self, chat_id: int, user_id: str, target_uid: str, group_id: str
+    ) -> None:
+        """Handle /addtogroup <user_id> <group_id> (owner only)."""
+        from .collaborator_responses import format_addtogroup_success, format_unknown_group
+        from ..security.group_config import persist_group_member_add
+        if not target_uid or not group_id:
+            await self._send_owner_admin_notice(
+                chat_id,
+                f"{_PROTECT_HEADER}Usage: /addtogroup <user_id> <group_id>",
+            )
+            return
+        teams = self._teams_config
+        if teams is None or group_id not in teams.groups:
+            await self._send_owner_admin_notice(chat_id, format_unknown_group(group_id))
+            return
+        group = teams.groups[group_id]
+        if target_uid not in group.members:
+            group.members.append(target_uid)
+        persist_group_member_add(group_id, target_uid)
+        # Also ensure the user is a recognized collaborator
+        if self._rbac and target_uid not in {str(u) for u in (self._rbac.collaborator_user_ids or [])}:
+            self._rbac.collaborator_user_ids = list(self._rbac.collaborator_user_ids or []) + [target_uid]
+        await self._send_owner_admin_notice(
+            chat_id, format_addtogroup_success(target_uid, group_id, group.name)
+        )
+
+    async def _handle_rmfromgroup_command(
+        self, chat_id: int, user_id: str, target_uid: str, group_id: str
+    ) -> None:
+        """Handle /rmfromgroup <user_id> <group_id> (owner or group admin)."""
+        from .collaborator_responses import format_rmfromgroup_success, format_unknown_group
+        from ..security.group_config import persist_group_member_remove
+        if not target_uid or not group_id:
+            await self._send_owner_admin_notice(
+                chat_id,
+                f"{_PROTECT_HEADER}Usage: /rmfromgroup <user_id> <group_id>",
+            )
+            return
+        teams = self._teams_config
+        if teams is None or group_id not in teams.groups:
+            await self._send_owner_admin_notice(chat_id, format_unknown_group(group_id))
+            return
+        group = teams.groups[group_id]
+        group.members = [m for m in group.members if m != target_uid]
+        persist_group_member_remove(group_id, target_uid)
+        await self._send_owner_admin_notice(
+            chat_id, format_rmfromgroup_success(target_uid, group_id, group.name)
+        )
+
+    async def _handle_setmode_command(
+        self, chat_id: int, user_id: str, target: str, mode: str
+    ) -> None:
+        """Handle /setmode <group_id|user_id> <local_only|project_scoped|full_access> (owner only)."""
+        from .collaborator_responses import format_setmode_success
+        from ..security.group_config import persist_group_collab_mode
+        valid_modes = {"local_only", "project_scoped", "full_access"}
+        if not target or mode not in valid_modes:
+            await self._send_owner_admin_notice(
+                chat_id,
+                f"{_PROTECT_HEADER}Usage: /setmode <group_id|user_id> <local_only|project_scoped|full_access>",
+            )
+            return
+        teams = self._teams_config
+        if teams and target in teams.groups:
+            teams.groups[target].collab_mode = mode
+            persist_group_collab_mode(target, mode)
+            await self._send_owner_admin_notice(
+                chat_id, format_setmode_success(target, mode, "group")
+            )
+        else:
+            # Treat as user-level override (stored in group_overrides.json)
+            persist_group_collab_mode(f"user:{target}", mode)
+            await self._send_owner_admin_notice(
+                chat_id, format_setmode_success(target, mode, "user")
+            )
 
     async def _send_collaborator_safe_info_response(self, chat_id: int, prompt: str) -> None:
         """Send tailored safe informational response for collaborator conceptual query."""

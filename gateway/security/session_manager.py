@@ -91,6 +91,16 @@ class UserSession:
         )
 
 
+@dataclass
+class GroupSession:
+    """Represents a shared workspace + memory for a group."""
+    group_id: str
+    workspace_dir: Path
+    memory_file: Path
+    created_at: Optional[str] = None
+    last_active: Optional[str] = None
+
+
 class UserSessionManager:
     """Manages per-user session isolation."""
     
@@ -335,3 +345,80 @@ USER SESSION TRUST LEVEL: {session.trust_level}
             
         if sessions_to_remove:
             self._save_sessions()
+
+    # ------------------------------------------------------------------
+    # Group session management (V9-4C)
+    # ------------------------------------------------------------------
+
+    def get_or_create_group_session(self, group_id: str) -> GroupSession:
+        """Get or create a shared workspace + MEMORY.md for a group."""
+        group_id = self._validate_user_id(group_id)  # same validation rules apply
+        group_dir = self.base_workspace / "groups" / group_id
+        resolved = group_dir.resolve()
+        base_resolved = self.base_workspace.resolve()
+        if not str(resolved).startswith(str(base_resolved)):
+            raise ValueError(f"Path traversal detected for group_id: {group_id!r}")
+        group_dir.mkdir(parents=True, exist_ok=True)
+
+        workspace_dir = group_dir / "workspace"
+        memory_file = group_dir / "MEMORY.md"
+        workspace_dir.mkdir(exist_ok=True)
+        (group_dir / "logs").mkdir(exist_ok=True)
+
+        if not memory_file.exists():
+            memory_file.write_text(
+                f"# Shared Memory — Group {group_id}\n\n"
+                f"Created: {datetime.now(timezone.utc).isoformat()}\n\n"
+                "## Notes\n- All group members can read and append to this file.\n"
+            )
+
+        return GroupSession(
+            group_id=group_id,
+            workspace_dir=workspace_dir,
+            memory_file=memory_file,
+            created_at=datetime.now(timezone.utc).isoformat(),
+        )
+
+    def can_user_access_group(self, user_id: str, group_id: str, rbac_config=None) -> bool:
+        """Return True if user_id is a member of group_id.
+
+        Checks rbac_config.get_user_groups_by_id() when available;
+        falls back to False (deny-by-default).
+        """
+        if rbac_config is None:
+            return False
+        members = rbac_config.get_user_groups_by_id(group_id)
+        return user_id in members or (
+            hasattr(rbac_config, "owner_user_id") and user_id == rbac_config.owner_user_id
+        )
+
+    def get_merged_context(self, user_id: str, rbac_config=None) -> str:
+        """Return user MEMORY.md + all accessible group MEMORY.md contents for prompt injection.
+
+        Cross-group access is denied; only groups the user belongs to are included.
+        """
+        parts: List[str] = []
+
+        # User's own memory
+        try:
+            session = self.get_or_create_session(user_id)
+            if session.memory_file.exists():
+                parts.append(
+                    f"[YOUR MEMORY]\n{session.memory_file.read_text(encoding='utf-8', errors='replace')}"
+                )
+        except Exception as exc:
+            logger.warning("Could not read user memory for %s: %s", user_id, exc)
+
+        # Group memories — only groups this user belongs to
+        if rbac_config is not None and hasattr(rbac_config, "teams_config") and rbac_config.teams_config:
+            for group_id, group in rbac_config.teams_config.groups.items():
+                if user_id in group.members or user_id == getattr(rbac_config, "owner_user_id", None):
+                    try:
+                        gs = self.get_or_create_group_session(group_id)
+                        if gs.memory_file.exists():
+                            content = gs.memory_file.read_text(encoding="utf-8", errors="replace")
+                            parts.append(f"[GROUP MEMORY — {group.name}]\n{content}")
+                    except Exception as exc:
+                        logger.warning("Could not read group memory for %s: %s", group_id, exc)
+
+        return "\n\n---\n\n".join(parts) if parts else ""

@@ -9,9 +9,12 @@ Defines user roles and access control policies for AgentShroud.
 
 from __future__ import annotations
 from dataclasses import dataclass, field
-from typing import Dict, Set, List, Optional
+from typing import TYPE_CHECKING, Dict, Set, List, Optional
 from enum import Enum
 import os
+
+if TYPE_CHECKING:
+    from .group_config import TeamsConfig
 
 
 class Role(str, Enum):
@@ -35,13 +38,13 @@ class RBACConfig:
     """Configuration for Role-Based Access Control."""
     # User to role mapping
     user_roles: Dict[str, Role] = field(default_factory=dict)
-    
+
     # Default role for unknown users
     default_role: Role = Role.VIEWER
-    
+
     # Owner user ID (has full access)
     owner_user_id: str = "8096968754"
-    
+
     # Pre-configured collaborators
     collaborator_user_ids: List[str] = field(default_factory=lambda: [
         "8506022825",
@@ -52,6 +55,12 @@ class RBACConfig:
         "7614658040",
         "8633775668"
     ])
+
+    # Group admin mapping — {group_id: admin_user_id}. Populated from TeamsConfig.
+    group_admin_ids: Dict[str, str] = field(default_factory=dict)
+
+    # TeamsConfig reference (set by lifespan after config load, not in __post_init__)
+    teams_config: Optional["TeamsConfig"] = field(default=None, repr=False)
     
     def __post_init__(self):
         """Initialize user roles based on configuration."""
@@ -89,12 +98,37 @@ class RBACConfig:
         # Set owner role
         if self.owner_user_id:
             self.user_roles[self.owner_user_id] = Role.OWNER
-        
+
         # Set collaborator roles
         for user_id in self.collaborator_user_ids:
             if user_id not in self.user_roles:  # Don't override owner
                 self.user_roles[user_id] = Role.COLLABORATOR
     
+    def wire_teams_config(self, teams: "TeamsConfig") -> None:
+        """Merge group membership and admin IDs from TeamsConfig into RBAC.
+
+        Called from lifespan.py after both configs are loaded.
+        Idempotent — safe to call multiple times.
+        """
+        self.teams_config = teams
+        # Build group_admin_ids map
+        for group_id, group in teams.groups.items():
+            if group.admin:
+                self.group_admin_ids[group_id] = group.admin
+        # Auto-merge all group member IDs as collaborators
+        for uid in teams.get_all_member_ids():
+            if uid not in self.collaborator_user_ids and str(uid) != str(self.owner_user_id):
+                self.collaborator_user_ids.append(uid)
+            if uid not in self.user_roles and str(uid) != str(self.owner_user_id):
+                self.user_roles[uid] = Role.COLLABORATOR
+
+    def get_user_groups_by_id(self, group_id: str) -> List[str]:
+        """Return member IDs of a group, or empty list if no teams config."""
+        if self.teams_config is None:
+            return []
+        group = self.teams_config.groups.get(group_id)
+        return list(group.members) if group else []
+
     def get_user_role(self, user_id: str) -> Role:
         """Get role for a user ID."""
         return self.user_roles.get(user_id, self.default_role)
