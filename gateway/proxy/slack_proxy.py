@@ -21,6 +21,7 @@ import logging
 import os
 
 from gateway.utils.secrets import read_secret as _read_secret_static
+from .collaborator_responses import COLLAB_OUTSIDE_SCOPE  # noqa: F401 — re-exported for Slack use
 
 logger = logging.getLogger("agentshroud.proxy.slack")
 

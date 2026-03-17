@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.backends.legacy:build"
+
+[project]
+name = "agentshroud-gateway"
+version = "0.9.0"
+description = "AgentShroud Gateway — security proxy for autonomous AI agents"
+requires-python = ">=3.10"
+
+[project.scripts]
+agentshroud-soc = "gateway.cli.main:main"
+
+[tool.setuptools.packages.find]
+where = [".."]
+include = ["gateway*"]
