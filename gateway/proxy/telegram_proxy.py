@@ -602,7 +602,8 @@ class TelegramAPIProxy:
         if not isinstance(text, str):
             return False
         lowered = normalize_input(text).lower()
-        internal_file_markers = ("bootstrap.md", "identity.md", "memory.md", "skill.md")
+        internal_file_markers = ("bootstrap.md", "identity.md", "memory.md", "skill.md",
+                               "soul.md", "heartbeat.md", "agents.md")
         content_request_markers = (
             "show",
             "read",
@@ -1265,7 +1266,8 @@ class TelegramAPIProxy:
         if not isinstance(text, str):
             return False
         lowered = normalize_input(text).lower()
-        target_markers = ("bootstrap.md", "identity.md", "memory.md", ".env", "secret", "token", "credential")
+        target_markers = ("bootstrap.md", "identity.md", "memory.md", "soul.md",
+                          "heartbeat.md", "agents.md", ".env", "secret", "token", "credential")
         if not any(marker in lowered for marker in target_markers):
             return False
         chunk_markers = (
@@ -1294,6 +1296,9 @@ class TelegramAPIProxy:
             "bootstrap.md",
             "identity.md",
             "memory.md",
+            "soul.md",
+            "heartbeat.md",
+            "agents.md",
             ".env",
             "secret",
             "token",
@@ -1328,6 +1333,9 @@ class TelegramAPIProxy:
             "bootstrap.md",
             "identity.md",
             "memory.md",
+            "soul.md",
+            "heartbeat.md",
+            "agents.md",
             ".env",
             "internal file",
             "workspace file",
@@ -1356,7 +1364,8 @@ class TelegramAPIProxy:
             return False
         lowered = normalize_input(text).lower()
         archive_markers = ("zip", "tar", "tar.gz", "archive", "bundle", "pack")
-        target_markers = ("workspace", "bootstrap.md", "identity.md", "memory.md", "all files", "project files")
+        target_markers = ("workspace", "bootstrap.md", "identity.md", "memory.md",
+                          "soul.md", "heartbeat.md", "agents.md", "all files", "project files")
         request_markers = ("export", "download", "send", "create", "make", "build", "package")
         return (
             any(marker in lowered for marker in archive_markers)
@@ -1843,11 +1852,13 @@ class TelegramAPIProxy:
                 "• I cannot disclose other users' status, files, or conversation details.\n"
                 "• If authorized, I can help with shared process guidance without exposing user-specific data."
             )
-        if any(token in lowered for token in ("bootstrap.md", "identity.md")):
+        if any(token in lowered for token in ("bootstrap.md", "identity.md", "soul.md",
+                                              "heartbeat.md", "agents.md")):
             return (
                 f"{_PROTECT_HEADER}"
                 "File access policy guidance:\n"
-                "• BOOTSTRAP.md and IDENTITY.md are treated as internal system files.\n"
+                "• System config files (SOUL.md, IDENTITY.md, BOOTSTRAP.md, HEARTBEAT.md, AGENTS.md) "
+                "are treated as internal system files.\n"
                 "• Collaborators cannot access raw file contents or direct file reads.\n"
                 "• I can provide high-level onboarding and role guidance without exposing file data."
             )
