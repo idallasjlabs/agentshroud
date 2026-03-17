@@ -247,6 +247,42 @@ for (const [collabId, collabName] of Object.entries(COLLABORATOR_IDS)) {
   }
 }
 
+// Patch 1c: group workspaces (V9-4E)
+// Read AGENTSHROUD_TEAMS_JSON from env to discover groups and create shared workspace dirs.
+// The sharedWorkspace field is set on each per-collaborator agent so the bot knows where
+// the group's shared memory and workspace live on the config volume.
+const TEAMS_JSON_RAW = process.env.AGENTSHROUD_TEAMS_JSON || '';
+if (TEAMS_JSON_RAW) {
+  try {
+    const teams = JSON.parse(TEAMS_JSON_RAW);
+    const groups = teams.groups || {};
+    for (const [groupId, group] of Object.entries(groups)) {
+      const groupDir = `.agentshroud/groups/${groupId}`;
+      const groupWorkspaceDir = `${groupDir}/workspace`;
+      // Create group dirs on the config volume if they don't already exist
+      if (!fs.existsSync(groupDir)) {
+        fs.mkdirSync(groupDir, { recursive: true });
+        console.log(`[init-patch] Created group workspace dir: ${groupDir}`);
+      }
+      if (!fs.existsSync(groupWorkspaceDir)) {
+        fs.mkdirSync(groupWorkspaceDir, { recursive: true });
+      }
+      // Attach sharedWorkspace to each group member's per-collaborator agent
+      const members = group.members || [];
+      for (const memberId of members) {
+        const agentId = `collab-${memberId}`;
+        const agentIdx = config.agents.list.findIndex((a) => a.id === agentId);
+        if (agentIdx >= 0 && config.agents.list[agentIdx].sharedWorkspace !== groupWorkspaceDir) {
+          config.agents.list[agentIdx].sharedWorkspace = groupWorkspaceDir;
+          changed = true;
+        }
+      }
+    }
+  } catch (e) {
+    console.warn(`[init-patch] Could not parse AGENTSHROUD_TEAMS_JSON: ${e.message}`);
+  }
+}
+
 // Patch 2: gateway auth and cleanup
 config.gateway = config.gateway || {};
 if (Object.prototype.hasOwnProperty.call(config.gateway, 'model')) {
