@@ -172,7 +172,7 @@ The technology won. Every time. Autonomous agents are simply too useful to stop.
 
 We are in the "early internet commerce" moment for agentic AI right now: the concerns are real, the standards are immature, and the outcome is already written.
 
-The agents are here.
+The agents are here. The agents are staying. The security is coming. The only question is — are you ready to use them safely, or will you be left behind?
 
 ---
 
