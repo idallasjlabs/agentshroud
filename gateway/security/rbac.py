@@ -38,6 +38,7 @@ class Action(str, Enum):
     TOOL_USE = "tool_use"
     APPROVE = "approve"
     SET_ROLE = "set_role"
+    INVITE = "invite"
 
 
 class Resource(str, Enum):
@@ -49,6 +50,7 @@ class Resource(str, Enum):
     SESSIONS = "sessions"
     APPROVALS = "approvals"
     CONFIGURATION = "configuration"
+    GROUPS = "groups"
 
 
 class RBACManager:
@@ -77,7 +79,7 @@ class RBACManager:
         
         # COLLABORATOR role - can interact and use limited tools
         matrix[Role.COLLABORATOR] = {
-            Action.READ: {Resource.FILES, Resource.SESSIONS, Resource.TOOLS, Resource.SYSTEM},
+            Action.READ: {Resource.FILES, Resource.SESSIONS, Resource.TOOLS, Resource.SYSTEM, Resource.GROUPS},
             Action.WRITE: {Resource.FILES},
             Action.EXECUTE: {Resource.TOOLS},
             Action.TOOL_USE: {Resource.TOOLS},
@@ -85,27 +87,29 @@ class RBACManager:
         
         # ADMIN role - can manage and configure, use all except critical tools
         matrix[Role.ADMIN] = {
-            Action.READ: {Resource.FILES, Resource.SESSIONS, Resource.TOOLS, Resource.USERS, Resource.SYSTEM},
+            Action.READ: {Resource.FILES, Resource.SESSIONS, Resource.TOOLS, Resource.USERS, Resource.SYSTEM, Resource.GROUPS},
             Action.WRITE: {Resource.FILES, Resource.SYSTEM},
             Action.EXECUTE: {Resource.TOOLS, Resource.SYSTEM},
-            Action.MANAGE: {Resource.USERS, Resource.SESSIONS, Resource.TOOLS},
+            Action.MANAGE: {Resource.USERS, Resource.SESSIONS, Resource.TOOLS, Resource.GROUPS},
             Action.CONFIGURE: {Resource.SYSTEM, Resource.TOOLS},
             Action.DELETE: {Resource.FILES},
             Action.TOOL_USE: {Resource.TOOLS},
             Action.APPROVE: {Resource.APPROVALS},
+            Action.INVITE: {Resource.GROUPS},
         }
-        
+
         # OWNER role - full access to everything
         matrix[Role.OWNER] = {
-            Action.READ: {Resource.FILES, Resource.SESSIONS, Resource.TOOLS, Resource.USERS, Resource.SYSTEM, Resource.CONFIGURATION, Resource.APPROVALS},
-            Action.WRITE: {Resource.FILES, Resource.SYSTEM, Resource.CONFIGURATION},
+            Action.READ: {Resource.FILES, Resource.SESSIONS, Resource.TOOLS, Resource.USERS, Resource.SYSTEM, Resource.CONFIGURATION, Resource.APPROVALS, Resource.GROUPS},
+            Action.WRITE: {Resource.FILES, Resource.SYSTEM, Resource.CONFIGURATION, Resource.GROUPS},
             Action.EXECUTE: {Resource.TOOLS, Resource.SYSTEM},
-            Action.MANAGE: {Resource.USERS, Resource.SESSIONS, Resource.TOOLS, Resource.SYSTEM},
+            Action.MANAGE: {Resource.USERS, Resource.SESSIONS, Resource.TOOLS, Resource.SYSTEM, Resource.GROUPS},
             Action.CONFIGURE: {Resource.SYSTEM, Resource.TOOLS, Resource.CONFIGURATION},
             Action.DELETE: {Resource.FILES, Resource.USERS, Resource.SESSIONS},
             Action.TOOL_USE: {Resource.TOOLS},
             Action.APPROVE: {Resource.APPROVALS},
             Action.SET_ROLE: {Resource.USERS},
+            Action.INVITE: {Resource.GROUPS},
         }
         
         return matrix
@@ -300,5 +304,48 @@ class RBACManager:
         # Admin can manage collaborators and viewers
         if manager_role == Role.ADMIN and target_role in [Role.COLLABORATOR, Role.VIEWER]:
             return True
-        
+
         return False
+
+    def check_group_permission(
+        self, user_id: str, group_id: str, action: Action
+    ) -> PermissionResult:
+        """Check if a user can perform an action on a group.
+
+        Permission matrix:
+          OWNER    — full MANAGE + INVITE on all groups
+          ADMIN    — MANAGE + INVITE on all groups
+          group admin — MANAGE + INVITE on their own group
+          group member — READ on their own group
+          other   — denied
+        """
+        try:
+            role = self.get_user_role(user_id)
+            # Owner and admin can do anything to any group
+            if role in (Role.OWNER, Role.ADMIN):
+                return PermissionResult(allowed=True)
+
+            # For collaborators, check group membership / admin status via TeamsConfig
+            teams = getattr(self.config, "teams_config", None)
+            if teams is None:
+                return PermissionResult(
+                    allowed=False,
+                    reason="No teams config available",
+                )
+
+            is_member = user_id in teams.get_user_groups_by_id(group_id)
+            is_admin = teams.is_group_admin(user_id, group_id)
+
+            if action == Action.READ and is_member:
+                return PermissionResult(allowed=True)
+            if action in (Action.MANAGE, Action.INVITE) and is_admin:
+                return PermissionResult(allowed=True)
+
+            return PermissionResult(
+                allowed=False,
+                reason=f"User {user_id} lacks {action.value} permission on group {group_id}",
+                denied_action=action.value,
+            )
+        except Exception as exc:
+            logger.error("Error checking group permission for %s on %s: %s", user_id, group_id, exc)
+            return PermissionResult(allowed=False, reason=str(exc))

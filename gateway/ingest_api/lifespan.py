@@ -469,6 +469,21 @@ async def lifespan(app: FastAPI):
             owner_user_id=owner_user_id
         )
         logger.info("UserSessionManager initialized (workspace: /app/data/sessions)")
+
+        # Wire TeamsConfig → RBACConfig + create group session dirs
+        if app_state.config and app_state.config.teams:
+            _rbac.wire_teams_config(app_state.config.teams)
+            for _gid in app_state.config.teams.groups:
+                try:
+                    app_state.session_manager.get_or_create_group_session(_gid)
+                    logger.info("Group session dir created: %s", _gid)
+                except Exception as _ge:
+                    logger.warning("Could not create group session dir for %s: %s", _gid, _ge)
+            logger.info(
+                "TeamsConfig wired: %d groups, %d projects",
+                len(app_state.config.teams.groups),
+                len(app_state.config.teams.projects),
+            )
     except Exception as e:
         logger.error(f"Failed to initialize UserSessionManager: {e}")
         app_state.session_manager = None
