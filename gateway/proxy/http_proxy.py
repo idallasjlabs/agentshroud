@@ -17,6 +17,7 @@ from __future__ import annotations
 
 import asyncio
 import logging
+import socket
 import time
 from typing import Optional
 
@@ -299,6 +300,25 @@ class HTTPConnectProxy:
         logger.info(f"CONNECT tunnel established: {host}:{port}")
         writer.write(b"HTTP/1.1 200 Connection Established\r\n\r\n")
         await writer.drain()
+
+        # Enable TCP keepalive on both ends of the tunnel so the OS sends
+        # keepalive probes on idle connections. Without this, Cisco AnyConnect
+        # (and similar VPNs) silently drop idle TCP sessions after ~10 minutes,
+        # causing WebSocket ping/pong timeouts (e.g. Slack Socket Mode).
+        for _transport in (writer.transport, target_writer.transport):
+            try:
+                _sock = _transport.get_extra_info("socket")
+                if _sock is not None:
+                    _sock.setsockopt(socket.SOL_SOCKET, socket.SO_KEEPALIVE, 1)
+                    # Start probes after 60s idle, then every 15s, drop after 6 missed.
+                    if hasattr(socket, "TCP_KEEPIDLE"):
+                        _sock.setsockopt(socket.IPPROTO_TCP, socket.TCP_KEEPIDLE, 60)
+                    if hasattr(socket, "TCP_KEEPINTVL"):
+                        _sock.setsockopt(socket.IPPROTO_TCP, socket.TCP_KEEPINTVL, 15)
+                    if hasattr(socket, "TCP_KEEPCNT"):
+                        _sock.setsockopt(socket.IPPROTO_TCP, socket.TCP_KEEPCNT, 6)
+            except Exception:
+                pass
 
         # Relay bytes in both directions until one side closes
         await asyncio.gather(
