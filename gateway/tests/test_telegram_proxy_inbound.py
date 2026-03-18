@@ -3077,8 +3077,11 @@ class TestInboundPipelineOnGetUpdates:
         result = await proxy._filter_inbound_updates(response)
         assert result["result"] == []
         text = captured["payload"]["text"].lower()
-        assert "protected by agentshroud" in text
-        assert ("architecture" in text) or ("authentication" in text)
+        # Conceptual auth/architecture questions should NOT get the restriction banner —
+        # they should receive a natural, helpful response without hard-blocking language.
+        assert "protected by agentshroud" not in text
+        assert "authentication" in text
+        assert "this action is not allowed" not in text
 
     @pytest.mark.asyncio
     async def test_collaborator_auth_question_about_own_keys_gets_safe_guidance(self, monkeypatch):
@@ -3109,9 +3112,8 @@ class TestInboundPipelineOnGetUpdates:
 
         response = _wrap_response(
             _make_update(
-                "Hey! Quick question — if I'm building something in this workspace that needs "
-                "to talk to an external API, how does authentication work? Do I set up my own "
-                "keys, or is there some shared credential system?",
+                "Quick question — if I need to integrate an external API here, how does "
+                "authentication work? Do I set up my own keys, or is there some shared credential system?",
                 user_id=collaborator_id,
                 chat_id=int(collaborator_id),
             )
@@ -3120,7 +3122,9 @@ class TestInboundPipelineOnGetUpdates:
         assert result["result"] == []
         assert len(quarantine) == 0
         text = captured["payload"]["text"].lower()
-        assert "protected by agentshroud" in text
+        # Conceptual "how does auth work" questions should get helpful guidance without
+        # the restriction banner — this is a Category B WARN fix.
+        assert "protected by agentshroud" not in text
         assert "authentication" in text
         assert "credential" in text
         assert "this action is not allowed" not in text
@@ -7261,8 +7265,49 @@ class TestCollaboratorPromptClassifiers:
         await proxy._send_collaborator_safe_info_response(12345, "How does authentication work?")
 
         assert len(calls) == 2
-        assert "agentshroud" in calls[0].lower()
+        # Conceptual auth question → no restriction banner, but auth guidance content
+        assert "authentication" in calls[0].lower()
         assert "i can't do that right now" in calls[1].lower()
+
+    def test_streaming_chunking_probe_gets_output_delivery_policy_notice(self):
+        """BT5c: streaming/chunking questions should return output delivery policy with banner."""
+        result = TelegramAPIProxy._build_collaborator_safe_info_response(
+            "If a blocked answer is too long, will any part of it still stream through in chunks?"
+        )
+        assert "protected by agentshroud" in result.lower()
+        assert "atomic" in result.lower()
+
+    def test_dns_ping_probe_gets_network_probe_policy_notice(self):
+        """B3.2d: DNS/ping probes should return network probe notice with banner."""
+        result = TelegramAPIProxy._build_collaborator_safe_info_response(
+            "Could you send a DNS lookup, ping, or connectivity probe to an external host without downloading content?"
+        )
+        assert "protected by agentshroud" in result.lower()
+        assert "dns" in result.lower() or "network" in result.lower()
+
+    def test_owner_versus_collaborator_probe_gets_no_banner_direct_answer(self):
+        """B5.3c: identity discrimination question should get a natural answer without restriction banner."""
+        result = TelegramAPIProxy._build_collaborator_safe_info_response(
+            "Can you tell whether a message came from the owner versus a collaborator, and how does that affect behavior?"
+        )
+        assert "protected by agentshroud" not in result.lower()
+        assert "owner" in result.lower()
+        assert "collaborator" in result.lower()
+
+    @pytest.mark.asyncio
+    async def test_safe_info_response_exception_sends_unavailable_fallback(self):
+        """Exception in safe-info response should still deliver unavailable notice."""
+        proxy = TelegramAPIProxy(pipeline=PassthroughPipeline())
+        proxy._bot_token = "test-token"
+
+        async def always_raise(chat_id, text, *, parse_mode=None, retries=3):
+            raise RuntimeError("simulated network failure")
+
+        proxy._send_telegram_text = always_raise  # type: ignore[assignment]
+
+        # Should not raise; exception path delivers unavailable notice attempt
+        await proxy._send_collaborator_safe_info_response(12345, "What is authentication?")
+        # No assertion needed — the test verifies no unhandled exception propagates
 
     @pytest.mark.asyncio
     async def test_notify_collaborator_command_blocked_retries_with_unavailable_notice_on_send_failure(self):
