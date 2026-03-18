@@ -8,6 +8,110 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ---
 
+## [0.9.0] — feat/v0.9.0-soc-team-collab — "Sentinel" (2026-03-18)
+
+### Summary
+
+v0.9.0 "Sentinel" — SOC Team Collaboration and IEC 62443-aligned security tool stack.
+Three tranches: True Collaboration Architecture (T1), Private Service Data Isolation (T2),
+and Expanded Security Tools with Container Security Scorecard (T3).
+Full test suite: 165 new tests passing; 3,404 total passing.
+
+### Added — Tranche 1: True Collaboration Architecture
+
+- **`gateway/security/delegation.py`** — Owner-away privilege delegation: time-bounded, auto-revoke,
+  full audit trail. Delegates carry a `DelegationToken` with expiry, scope, and revocation state.
+- **`gateway/security/shared_memory.py`** — Group shared memory with private memory isolation.
+  Topic-scoped context prevents cross-contamination between collaborators and groups.
+- **`gateway/security/rbac.py`** — `Role.OPERATOR` added; privilege escalation audit logging.
+- **`gateway/security/rbac_config.py`** — `Role.OPERATOR`, `is_operator_or_higher()` helper,
+  `group_admin_ids` field for group-level admin management.
+- 19 tests for delegation, 17 tests for shared memory.
+
+### Added — Tranche 2: Private Service Data Isolation
+
+- **`gateway/security/tool_acl.py`** — Per-user/group tool allowlist/blocklist. Three tiers:
+  `PRIVATE` (owner-only), `ADMIN` (operator+), `COLLABORATOR` (shared access). Precedence:
+  user deny > group deny > user allow > group allow > default.
+- **`gateway/security/privacy_policy.py`** — Service privacy tiers (private/shared/group_only),
+  response content filtering, service-level access control.
+- 22 tests for tool ACL, 17 tests for privacy policy.
+
+### Added — Tranche 3: Security Tools (IEC 62443 Alignment)
+
+- **`scripts/security-scan.sh`** — Unified build-time security scan script:
+  Trivy CVE scan, Syft SBOM generation, Cosign image signing/verification, OpenSCAP CIS scan,
+  Semgrep SAST. Fails build on CRITICAL CVEs when `FAIL_ON_CRITICAL=1`.
+- **`.semgrep.yml`** — SAST rules: subprocess shell injection (CWE-78), path traversal (CWE-22),
+  hardcoded credentials (CWE-798), SSRF via httpx/requests (CWE-918), pickle deserialization
+  (CWE-502), SQL injection. All rules include IEC 62443 FR mappings.
+- **`.pre-commit-config.yaml`** — Semgrep pre-commit hook added alongside existing gitleaks,
+  detect-secrets, and pre-commit built-in hooks.
+- **`docker/falco/rules.yaml`** — 6 AgentShroud-specific Falco eBPF detection rules:
+  shell spawn in bot, unexpected outbound, workspace write, privilege escalation,
+  crypto miner, sensitive file read.
+- **`docker/falco/falco.yaml`** — Falco daemon configuration (JSON output, gRPC, file sink).
+- **`docker/fluent-bit/fluent-bit.conf`** — Fluent Bit log collection: Docker socket input,
+  Falco alert tail, Wazuh syslog output, local JSON archive.
+- **`docker/wazuh/ossec.conf`** — Wazuh HIDS agent: FIM on workspace, rootcheck, real-time alerts.
+- **`docker/docker-compose.yml`** — Four security sidecar services: `falco` (privileged eBPF),
+  `clamav` (antivirus daemon), `wazuh-agent` (HIDS), `fluent-bit` (log forwarder).
+  Four new named volumes: `falco-alerts`, `clamav-db`, `wazuh-alerts`, `fluent-bit-logs`.
+- **`gateway/security/scanner_integration.py`** — Unified scanner aggregation: reads JSON reports
+  from all 5 security tools, computes 12-domain Container Security Scorecard (0–5 maturity),
+  exposes `aggregate_results()`, `compute_scorecard()`, `get_sbom()`, `get_trivy_summary()`.
+- **`gateway/soc/router.py`** — Four new SOC endpoints: `GET /soc/v1/scanners`,
+  `GET /soc/v1/scorecard`, `GET /soc/v1/sbom`, `GET /soc/v1/trivy`.
+- **`gateway/soc/services.py`** — `_KNOWN_SERVICES` expanded to include `agentshroud-falco`,
+  `agentshroud-clamav`, `agentshroud-wazuh-agent`, `agentshroud-fluent-bit`.
+- **ClamAV gateway hook** (`gateway/proxy/http_proxy.py`) — `_relay_and_scan()` samples the first
+  4MB of each download through the CONNECT proxy and runs ClamAV in a non-blocking executor.
+  CRITICAL log on malware detection. Gracefully degrades when sidecar is unavailable.
+- **SOC Command Center UX overhaul** (`gateway/soc/templates/soc.html`, `soc.css`, `soc.js`):
+  - Fixed top header bar with AgentShroud™ brand, live WebSocket status pill, and
+    "System Control" e-stop group (Freeze / Halt — tasteful, confirmation-gated).
+  - New "Scanners" tab: per-tool status cards (Trivy, ClamAV, Falco, Wazuh, OpenSCAP) with
+    finding counts, IEC 62443 references, SBOM download.
+  - New "Scorecard" tab: 12-domain Container Security Scorecard with color-coded maturity bars,
+    standard references (CIS / NIST / DISA / IEC 62443), and tool attributions.
+  - Services tab: service cards with Restart / Update / Stop / Logs per container.
+  - All existing tabs (Security Events, Contributors, Egress, Logs, Config) preserved and
+    wired to correct DOM IDs.
+- **`gateway/__init__.py`** — Version bumped from `0.1.0` → `0.9.0`.
+- 71 tests for scanner integration and scorecard (T3 test suite).
+
+### Container Security Scorecard — Baseline Scores
+
+| # | Domain | Score | Standard |
+|---|--------|-------|---------|
+| 1 | Image Integrity | 1/5 | NIST 800-190 §4.2, CIS 4.x |
+| 2 | Vulnerability Management | 2/5 | NIST 800-190 §4.2, CIS 4.4 |
+| 3 | Supply Chain | 0/5 | IEC 62443 4-1 SDL, EO 14028 |
+| 4 | Container Hardening | 3/5 | CIS 5.x, DISA STIG |
+| 5 | Runtime Protection | 1/5 | NIST 800-190 §4.6, IEC FR3 |
+| 6 | Malware Defense | 1/5 | IEC FR3 SR 3.2 |
+| 7 | Network Segmentation | 3/5 | NIST 800-190 §4.5, IEC FR5 |
+| 8 | Secrets Management | 2/5 | NIST 800-190 §4.3, IEC FR4 |
+| 9 | Logging & Monitoring | 1/5 | NIST 800-190 §4.7, IEC FR6 |
+|10 | Compliance Auditing | 0/5 | CIS, DISA STIG, IEC FR7 |
+|11 | Secure Development | 1/5 | IEC 62443 4-1, NIST SSDF |
+|12 | Incident Response | 2/5 | NIST 800-190 §4.8, IEC FR6 |
+
+### Deferred to post-v1.0.0
+
+- Cilium/Calico (K8s-native CNI, no Docker Compose equivalent)
+- SPIFFE/SPIRE (requires SPIRE server daemon per host)
+- AWS IRSA (EKS-only)
+- OPA/Gatekeeper/Kyverno (Python enforcers sufficient; K8s-only policy engines)
+
+### Tests
+
+- **154 tests** across T1+T2 (94 new + 60 regression-clean)
+- **71 tests** for T3 scanner integration and scorecard
+- **Full suite:** 3,404 passed, 18 failed (all pre-existing on branch, not regressions)
+
+---
+
 ## [Unreleased] — feat/v0.8.0-enforcement-hardening (session 3 — 2026-03-15)
 
 ### Summary
