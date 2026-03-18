@@ -85,6 +85,18 @@ class RBACManager:
             Action.TOOL_USE: {Resource.TOOLS},
         }
         
+        # OPERATOR role - trusted collaborator with group management + delegated approval
+        # Sits between admin and collaborator. Cannot configure system-wide settings.
+        # Egress approval only available when explicitly delegated by owner.
+        matrix[Role.OPERATOR] = {
+            Action.READ: {Resource.FILES, Resource.SESSIONS, Resource.TOOLS, Resource.SYSTEM, Resource.GROUPS},
+            Action.WRITE: {Resource.FILES},
+            Action.EXECUTE: {Resource.TOOLS},
+            Action.MANAGE: {Resource.GROUPS},      # Can manage their own groups
+            Action.TOOL_USE: {Resource.TOOLS},
+            Action.INVITE: {Resource.GROUPS},
+        }
+
         # ADMIN role - can manage and configure, use all except critical tools
         matrix[Role.ADMIN] = {
             Action.READ: {Resource.FILES, Resource.SESSIONS, Resource.TOOLS, Resource.USERS, Resource.SYSTEM, Resource.GROUPS},
@@ -119,6 +131,7 @@ class RBACManager:
         return {
             Role.VIEWER: set(),  # No tool usage
             Role.COLLABORATOR: {ToolTier.LOW, ToolTier.MEDIUM},
+            Role.OPERATOR: {ToolTier.LOW, ToolTier.MEDIUM, ToolTier.HIGH},  # Same as admin tier
             Role.ADMIN: {ToolTier.LOW, ToolTier.MEDIUM, ToolTier.HIGH},  # Critical requires approval
             Role.OWNER: {ToolTier.LOW, ToolTier.MEDIUM, ToolTier.HIGH, ToolTier.CRITICAL},
         }
@@ -220,8 +233,7 @@ class RBACManager:
             
             old_role = self.config.get_user_role(target_user_id)
             self.config.set_user_role(target_user_id, role)
-            
-            logger.info(f"User {admin_user_id} changed role for user {target_user_id}: {old_role.value} -> {role.value}")
+            self.audit_privilege_change(admin_user_id, target_user_id, old_role, role)
             
             return PermissionResult(allowed=True)
             
@@ -286,9 +298,26 @@ class RBACManager:
         return {
             Role.VIEWER.value: 1,
             Role.COLLABORATOR.value: 2,
-            Role.ADMIN.value: 3,
-            Role.OWNER.value: 4
+            Role.OPERATOR.value: 3,
+            Role.ADMIN.value: 4,
+            Role.OWNER.value: 5,
         }
+
+    def is_privilege_escalation(self, from_role: Role, to_role: Role) -> bool:
+        """Return True if changing from_role → to_role represents an escalation."""
+        hierarchy = self.get_role_hierarchy()
+        return hierarchy.get(to_role.value, 0) > hierarchy.get(from_role.value, 0)
+
+    def audit_privilege_change(
+        self, admin_user_id: str, target_user_id: str, old_role: Role, new_role: Role
+    ) -> None:
+        """Log privilege changes; emit WARNING for escalations (unusual patterns)."""
+        escalation = self.is_privilege_escalation(old_role, new_role)
+        log_fn = logger.warning if escalation else logger.info
+        log_fn(
+            "RBAC privilege change: actor=%s target=%s %s→%s escalation=%s",
+            admin_user_id, target_user_id, old_role.value, new_role.value, escalation,
+        )
     
     def can_user_manage_user(self, manager_user_id: str, target_user_id: str) -> bool:
         """Check if one user can manage another user."""
