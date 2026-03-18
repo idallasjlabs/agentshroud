@@ -489,6 +489,40 @@ async def lifespan(app: FastAPI):
         app_state.session_manager = None
         _rbac = None
 
+    # Initialize v0.9.0 collaboration security modules
+    try:
+        from ..security.delegation import DelegationManager
+        from ..security.rbac_config import RBACConfig as _RBACCfgDel
+        app_state.delegation_manager = DelegationManager(
+            owner_user_id=_RBACCfgDel().owner_user_id,
+            persist=False,
+        )
+        logger.info("DelegationManager initialized")
+    except Exception as e:
+        logger.error(f"Failed to initialize DelegationManager: {e}")
+        app_state.delegation_manager = None
+
+    try:
+        from ..security.tool_acl import ToolACLEnforcer
+        from ..security.rbac_config import RBACConfig as _RBACCfgACL
+        app_state.tool_acl_enforcer = ToolACLEnforcer(rbac_config=_RBACCfgACL())
+        logger.info("ToolACLEnforcer initialized")
+    except Exception as e:
+        logger.error(f"Failed to initialize ToolACLEnforcer: {e}")
+        app_state.tool_acl_enforcer = None
+
+    try:
+        from ..security.privacy_policy import PrivacyPolicyEnforcer, PrivacyPolicy
+        from ..security.rbac_config import RBACConfig as _RBACCfgPriv
+        app_state.privacy_enforcer = PrivacyPolicyEnforcer(
+            policy=PrivacyPolicy.default(),
+            rbac_config=_RBACCfgPriv(),
+        )
+        logger.info("PrivacyPolicyEnforcer initialized")
+    except Exception as e:
+        logger.error(f"Failed to initialize PrivacyPolicyEnforcer: {e}")
+        app_state.privacy_enforcer = None
+
     # Initialize gateway-level collaborator activity tracker
     try:
         from ..security.collaborator_tracker import CollaboratorActivityTracker
@@ -879,9 +913,12 @@ async def lifespan(app: FastAPI):
                 {"command": "revoke",         "description": "Revoke collaborator access"},
                 {"command": "unlock",         "description": "Unlock a suspended user"},
                 {"command": "locked",         "description": "Show lockdown status for all users"},
-                {"command": "gi",             "description": "Grant security immunity to a user"},
-                {"command": "ri",             "description": "Revoke security immunity from a user"},
-                {"command": "immune",         "description": "List users with active security immunity"},
+                {"command": "gi",                "description": "Grant security immunity to a user"},
+                {"command": "ri",                "description": "Revoke security immunity from a user"},
+                {"command": "immune",            "description": "List users with active security immunity"},
+                {"command": "delegate",          "description": "Delegate a privilege to a collaborator (e.g. /delegate brett egress_approval 8h)"},
+                {"command": "delegations",       "description": "List active privilege delegations"},
+                {"command": "revoke-delegation", "description": "Revoke a privilege delegation (e.g. /revoke-delegation brett egress_approval)"},
             ]
             for _scope, _cmds in [
                 ({"type": "default"}, _collab_cmds),
