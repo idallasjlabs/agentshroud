@@ -17,7 +17,9 @@ from __future__ import annotations
 
 import asyncio
 import logging
+import os
 import socket
+import tempfile
 import time
 from typing import Optional
 
@@ -320,10 +322,14 @@ class HTTPConnectProxy:
             except Exception:
                 pass
 
-        # Relay bytes in both directions until one side closes
+        # Relay bytes in both directions until one side closes.
+        # Inbound (client→target): plain relay — client data is already
+        # validated by ingest_api before reaching the proxy.
+        # Outbound (target→client): relay with ClamAV sampling so that
+        # downloaded file data is scanned for malware signatures.
         await asyncio.gather(
             self._relay(reader, target_writer),
-            self._relay(target_reader, writer),
+            self._relay_and_scan(target_reader, writer, host),
             return_exceptions=True,
         )
         try:
@@ -351,3 +357,82 @@ class HTTPConnectProxy:
                 writer.close()
             except Exception:
                 pass
+
+    async def _relay_and_scan(
+        self,
+        reader: asyncio.StreamReader,
+        writer: asyncio.StreamWriter,
+        host: str,
+        scan_limit: int = 4 * 1024 * 1024,
+    ) -> None:
+        """Copy bytes from reader to writer, sampling the first scan_limit bytes
+        for ClamAV malware scanning (non-blocking, fire-and-forget).
+
+        Primarily catches malware in non-TLS (port 80) downloads.  For TLS
+        tunnels the scanner sees encrypted bytes and will return clean — no
+        false positives.
+        """
+        buf = bytearray()
+        scanned = False
+        try:
+            while True:
+                data = await reader.read(65536)
+                if not data:
+                    break
+                writer.write(data)
+                await writer.drain()
+                if not scanned and len(buf) < scan_limit:
+                    buf.extend(data)
+                    if len(buf) >= scan_limit:
+                        asyncio.create_task(self._clamav_scan_bytes(bytes(buf), host))
+                        scanned = True
+        except Exception:
+            pass
+        finally:
+            if not scanned and buf:
+                asyncio.create_task(self._clamav_scan_bytes(bytes(buf), host))
+            try:
+                writer.close()
+            except Exception:
+                pass
+
+    async def _clamav_scan_bytes(self, data: bytes, host: str) -> None:
+        """Write data to a temp file and scan with ClamAV.
+
+        Runs in a thread executor so it does not block the event loop.
+        Logs CRITICAL if malware signatures are detected; logs DEBUG otherwise.
+        Silently degrades if clamscan binary is unavailable (sidecar not running).
+        """
+        tmp_path: Optional[str] = None
+        try:
+            with tempfile.NamedTemporaryFile(delete=False, suffix=".tmp") as f:
+                f.write(data)
+                tmp_path = f.name
+
+            from ..security.clamav_scanner import run_clamscan
+
+            result = await asyncio.get_event_loop().run_in_executor(
+                None,
+                lambda: run_clamscan(tmp_path, recursive=False),
+            )
+            infected = result.get("infected_count", 0)
+            if infected > 0:
+                sigs = [f.get("signature", "?") for f in result.get("infected_files", [])]
+                logger.critical(
+                    "ClamAV MALWARE DETECTED in download from %s: %s",
+                    host,
+                    sigs,
+                )
+                self._stats.setdefault("clamav_infections", []).append(
+                    {"host": host, "signatures": sigs, "timestamp": time.time()}
+                )
+            else:
+                logger.debug("ClamAV scan clean for download from %s", host)
+        except Exception as exc:
+            logger.debug("ClamAV scan unavailable (sidecar may not be running): %s", exc)
+        finally:
+            if tmp_path:
+                try:
+                    os.unlink(tmp_path)
+                except Exception:
+                    pass
