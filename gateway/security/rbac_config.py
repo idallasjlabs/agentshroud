@@ -199,9 +199,9 @@ def load_persisted_collaborators() -> list[str]:
 
 def persist_approved_collaborator(uid: str) -> None:
     """Append a collaborator UID to the persistent store (idempotent, file-locked)."""
-    _APPROVED_COLLABORATORS_FILE.parent.mkdir(parents=True, exist_ok=True)
     lock_path = _APPROVED_COLLABORATORS_FILE.with_suffix(".lock")
     try:
+        _APPROVED_COLLABORATORS_FILE.parent.mkdir(parents=True, exist_ok=True)
         with open(lock_path, "w") as lock_fh:
             fcntl.flock(lock_fh, fcntl.LOCK_EX)
             try:

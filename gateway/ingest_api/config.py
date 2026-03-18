@@ -31,7 +31,9 @@ class PIIConfig(BaseModel):
     """PII detection and redaction configuration"""
 
     engine: str = "presidio"
-    entities: list[str] = Field(default_factory=list)
+    entities: list[str] = Field(
+        default_factory=lambda: ["US_SSN", "CREDIT_CARD", "PHONE_NUMBER", "EMAIL_ADDRESS"]
+    )
     enabled: bool = True
     min_confidence: float = 0.8
 
