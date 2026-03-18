@@ -36,6 +36,8 @@ services:
       - ../gateway:/app/gateway:ro
       - agentshroud-workspace:/data/bot-workspace:ro
       - agentshroud-config:/data/bot-config:ro
+      - falco-alerts:/var/log/falco:ro
+      - wazuh-alerts:/var/ossec/logs/alerts:ro
     secrets:
       - gateway_password
       - telegram_bot_token
@@ -199,6 +201,90 @@ services:
       gateway:
         condition: service_healthy
 
+  # ── Falco ─────────────────────────────────────────────────────────────────────
+  # Runtime syscall detection via eBPF. Monitors all containers for:
+  # shell spawns, unexpected outbound connections, privilege escalation,
+  # file access outside workspace, crypto mining. (IEC 62443 FR3, FR6)
+  falco:
+    image: falcosecurity/falco:latest
+    container_name: agentshroud-falco
+    hostname: falco
+    restart: unless-stopped
+    privileged: true
+    volumes:
+      - /var/run/docker.sock:/host/var/run/docker.sock:ro
+      - /dev:/host/dev:ro
+      - /proc:/host/proc:ro
+      - /etc:/host/etc:ro
+      - ./falco/falco.yaml:/etc/falco/falco.yaml:ro
+      - ./falco/rules.yaml:/etc/falco/rules.d/agentshroud.yaml:ro
+      - falco-alerts:/var/log/falco
+    environment:
+      - HOST_ROOT=/host
+    networks:
+      - agentshroud-internal
+
+  # ── ClamAV ────────────────────────────────────────────────────────────────────
+  # Antivirus scanning for files passing through the gateway workspace.
+  # Virus DB is auto-updated daily. (IEC 62443 FR3 SR 3.2)
+  clamav:
+    image: clamav/clamav:stable
+    container_name: agentshroud-clamav
+    hostname: clamav
+    restart: unless-stopped
+    volumes:
+      - clamav-db:/var/lib/clamav
+      - agentshroud-workspace:/scan/workspace:ro
+    environment:
+      - CLAMAV_NO_FRESHCLAMD=false
+      - CLAMAV_NO_MILTERD=true
+    healthcheck:
+      test:
+        - CMD
+        - clamdcheck.sh
+      interval: 60s
+      timeout: 15s
+      retries: 3
+      start_period: 120s
+    networks:
+      - agentshroud-isolated
+
+  # ── Wazuh Agent ───────────────────────────────────────────────────────────────
+  # Host-based intrusion detection: file integrity monitoring (FIM) on the
+  # bot workspace and config volumes, rootkit detection. (IEC 62443 FR3, FR6)
+  wazuh-agent:
+    image: wazuh/wazuh-agent:4.7.0
+    container_name: agentshroud-wazuh-agent
+    hostname: wazuh-agent
+    restart: unless-stopped
+    volumes:
+      - ./wazuh/ossec.conf:/var/ossec/etc/ossec.conf:ro
+      - agentshroud-workspace:/host/workspace:ro
+      - wazuh-alerts:/var/ossec/logs/alerts
+    environment:
+      - WAZUH_MANAGER=wazuh-manager
+      - WAZUH_AGENT_NAME=agentshroud-agent
+    networks:
+      - agentshroud-internal
+
+  # ── Fluent Bit ────────────────────────────────────────────────────────────────
+  # Lightweight log processor: collects all container logs, structures them,
+  # forwards to Wazuh and local archive. (IEC 62443 FR6 SR 6.1)
+  fluent-bit:
+    image: fluent/fluent-bit:3
+    container_name: agentshroud-fluent-bit
+    hostname: fluent-bit
+    restart: unless-stopped
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock:ro
+      - ./fluent-bit/fluent-bit.conf:/fluent-bit/etc/fluent-bit.conf:ro
+      - falco-alerts:/var/log/falco:ro
+      - fluent-bit-logs:/var/log/fluent-bit
+    networks:
+      - agentshroud-internal
+    depends_on:
+      - gateway
+
 # ── Secrets ────────────────────────────────────────────────────────────────────
 secrets:
   gateway_password:
@@ -262,4 +348,13 @@ volumes:
   agentshroud-ssh:
     driver: local
   agentshroud-browsers:
+    driver: local
+  # Security sidecar volumes
+  falco-alerts:
+    driver: local
+  clamav-db:
+    driver: local
+  wazuh-alerts:
+    driver: local
+  fluent-bit-logs:
     driver: local
