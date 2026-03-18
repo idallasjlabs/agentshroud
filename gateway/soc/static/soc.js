@@ -552,7 +552,7 @@ window._showContribTab = function(name, el) {
 window._showAddCollabForm = function() { _toast('Use /addcollab command in Telegram to add a collaborator', 'info'); };
 window._removeCollab = function(uid) {
   _confirm('Remove collaborator', `Remove user "${uid}" from all collaborator lists?`, async () => {
-    const { data } = await _delete(`/users/${encodeURIComponent(uid)}`);
+    const { data } = await _delete(`/users/${encodeURIComponent(uid)}/collaborator`);
     _toast(data?.ok ? 'User removed' : `Error: ${data?.message}`, data?.ok ? 'success' : 'danger');
     _loadContributors();
   });
@@ -650,11 +650,11 @@ async function _loadConfig() {
 
   const { data: modules } = await _get('/security/modules').catch(() => ({ data: null }));
   const mEl = document.getElementById('modules-view');
-  if (mEl && modules) {
-    mEl.innerHTML = Object.entries(modules).map(([k, v]) =>
+  if (mEl && Array.isArray(modules)) {
+    mEl.innerHTML = modules.map(m =>
       `<div style="display:flex;justify-content:space-between;margin-bottom:.4rem;font-size:12px">
-        <span>${_esc(k)}</span>
-        <span class="badge badge-${v.enabled ? 'success' : 'muted'}">${v.enabled ? 'enabled' : 'disabled'}</span>
+        <span>${_esc(m.name)}</span>
+        <span class="badge badge-${m.available ? 'success' : 'muted'}">${m.available ? 'loaded' : 'unavailable'}</span>
       </div>`
     ).join('');
   }

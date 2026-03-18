@@ -418,6 +418,23 @@ async def restart_service(
     return JSONResponse(content={"ok": ok, "service": name, "action": "restart"})
 
 
+@router.post("/services/{name}/update")
+async def update_service(
+    name: str,
+    body: ServiceActionRequest = ServiceActionRequest(),
+    caller: SCLCaller = Depends(get_caller),
+) -> JSONResponse:
+    """Pull the latest image for a container and restart it."""
+    caller.require(Action.MANAGE, Resource.SYSTEM)
+    if not body.confirm:
+        return _confirmation_required("update service", name, f"This will pull the latest image for '{name}' and restart it. Resend with confirm: true.")
+    from .services import ServiceManager
+    mgr = ServiceManager()
+    ok = await mgr.update_service(name)
+    _log_audit(caller, "update service", target=name, result=AuditResult.SUCCESS if ok else AuditResult.FAILED)
+    return JSONResponse(content={"ok": ok, "service": name, "action": "update"})
+
+
 @router.post("/services/rebuild")
 async def rebuild_all_services(
     body: ServiceActionRequest = ServiceActionRequest(),
@@ -769,6 +786,7 @@ async def get_health(caller: SCLCaller = Depends(get_caller)) -> Dict:
     }
 
 
+@router.get("/security/modules")
 @router.get("/modules")
 async def get_modules(caller: SCLCaller = Depends(get_caller)) -> List[Dict]:
     caller.require(Action.READ, Resource.SYSTEM)
