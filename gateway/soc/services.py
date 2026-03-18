@@ -10,8 +10,15 @@ from .models import HealthStatus, ResourceUsage, ServiceDescriptor, ServiceStatu
 
 logger = logging.getLogger("agentshroud.soc.services")
 
-# Services the SOC knows about. This list can be extended.
-_KNOWN_SERVICES = ["agentshroud-bot", "agentshroud-gateway"]
+# Services the SOC knows about — core + security sidecar containers.
+_KNOWN_SERVICES = [
+    "agentshroud-bot",
+    "agentshroud-gateway",
+    "agentshroud-falco",
+    "agentshroud-clamav",
+    "agentshroud-wazuh-agent",
+    "agentshroud-fluent-bit",
+]
 
 
 def _engine_status_to_service_status(raw: str) -> ServiceStatus:
