@@ -1101,6 +1101,7 @@ class TelegramAPIProxy:
                 "self-modification",
                 "filters messages",
                 "how does this work",
+                "how does",
                 "network",
                 "infrastructure",
                 "hosting",
@@ -1750,12 +1751,11 @@ class TelegramAPIProxy:
             )
         if any(token in lowered for token in ("get processed", "message processed", "processed before", "how are messages", "message pipeline", "message flow", "before you answer", "before answering")):
             return (
-                f"{_PROTECT_HEADER}"
                 "Message processing overview:\n"
-                "• Messages are verified for sender identity and trust level before routing.\n"
-                "• Policy controls determine what actions are permitted based on your access level.\n"
+                "• Your message passes through identity and policy checks before routing.\n"
+                "• Collaborator sessions are isolated from owner sessions — different context and permissions.\n"
                 "• Outputs are safety-checked before delivery to prevent unintended disclosure.\n"
-                "• I can discuss the general flow without exposing internal implementation details."
+                "• I respond based on scoped context — no owner-private files or operational details."
             )
         if any(token in lowered for token in ("authentication", "credential", "api key", "secret", "password", "raw values", "placeholders")):
             if any(token in lowered for token in ("flow", "how", "intermediary", "handles", "brokered", "integrate", "integration", "work")):
@@ -1815,6 +1815,14 @@ class TelegramAPIProxy:
                 "• Unauthorized outbound requests are denied.\n"
                 "• Approval decisions are enforced before execution.\n"
                 "• I can help draft safe request criteria and risk-aware justification."
+            )
+        if any(token in lowered for token in ("too risky", "risky for me", "system react", "how does the system", "considered risky", "considered dangerous", "action risk", "risky action")):
+            return (
+                "Action risk guidance:\n"
+                "• Actions requiring confirmation: external network requests, file writes, destructive operations.\n"
+                "• Actions always declined: credential retrieval, system reconnaissance, policy bypass attempts.\n"
+                "• The system explains what it can't do and why — there are no silent failures.\n"
+                "• The gateway enforces hard limits regardless of how a request is phrased."
             )
         if any(token in lowered for token in (
             "owner versus", "owner vs", "came from the owner", "came from owner",
@@ -2614,17 +2622,6 @@ class TelegramAPIProxy:
                     elif pipeline_result.sanitized_message != text:
                         data["text"] = pipeline_result.sanitized_message
                         self._stats["outbound_filtered"] += 1
-                    # Safety net: inject protected notice for collaborator responses that
-                    # passed all pipeline processing without a banner.  Fires only when
-                    # COLLAB_LOCAL_INFO_ONLY=0 (local handler bypasses this code path).
-                    _cur_text = data.get(text_key, "")
-                    if (
-                        not is_owner_chat
-                        and isinstance(_cur_text, str)
-                        and _cur_text.strip()
-                        and not _cur_text.lstrip().startswith(_PROTECT_PREFIX)
-                    ):
-                        data[text_key] = f"{_PROTECT_HEADER}{_cur_text}"
                     return json.dumps(data).encode()
                 elif text and self.sanitizer:
                     # Fallback: direct sanitizer calls when pipeline is unavailable
@@ -2654,16 +2651,6 @@ class TelegramAPIProxy:
                         data["text"] = blocked
                         self._stats["outbound_filtered"] += 1
                         logger.warning("Outbound message: credentials blocked")
-                    # Safety net: same as pipeline path — inject banner for undecorated
-                    # collaborator responses that passed all sanitizer processing.
-                    _cur_text = data.get(text_key, "")
-                    if (
-                        not is_owner_chat
-                        and isinstance(_cur_text, str)
-                        and _cur_text.strip()
-                        and not _cur_text.lstrip().startswith(_PROTECT_PREFIX)
-                    ):
-                        data[text_key] = f"{_PROTECT_HEADER}{_cur_text}"
                     return json.dumps(data).encode()
             elif "x-www-form-urlencoded" in ct or (
                 not ct
