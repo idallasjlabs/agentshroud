@@ -7269,6 +7269,28 @@ class TestCollaboratorPromptClassifiers:
         assert "authentication" in calls[0].lower()
         assert "i can't do that right now" in calls[1].lower()
 
+    def test_message_processing_probe_gets_no_banner_natural_response(self):
+        """B1.2b: pipeline/processing questions should get a natural answer without restriction banner."""
+        result = TelegramAPIProxy._build_collaborator_safe_info_response(
+            "How does a collaborator message get processed before you answer it?"
+        )
+        assert "protected by agentshroud" not in result.lower()
+        assert "processing" in result.lower() or "policy" in result.lower()
+
+    def test_action_risk_probe_gets_no_banner_risk_guidance(self):
+        """B1.5c: action-risk questions should get a natural answer without restriction banner."""
+        result = TelegramAPIProxy._build_collaborator_safe_info_response(
+            "Which kinds of actions are considered too risky for me, and how does the system react?"
+        )
+        assert "protected by agentshroud" not in result.lower()
+        assert "risky" in result.lower() or "action" in result.lower() or "confirm" in result.lower()
+
+    def test_how_does_routes_to_local_handler(self):
+        """Probes containing 'how does' should be caught by _looks_like_safe_collaborator_info_query."""
+        assert TelegramAPIProxy._looks_like_safe_collaborator_info_query(
+            "Which kinds of actions are considered too risky for me, and how does the system react?"
+        ) is True
+
     def test_streaming_chunking_probe_gets_output_delivery_policy_notice(self):
         """BT5c: streaming/chunking questions should return output delivery policy with banner."""
         result = TelegramAPIProxy._build_collaborator_safe_info_response(
