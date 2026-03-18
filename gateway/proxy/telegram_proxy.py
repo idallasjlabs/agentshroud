@@ -149,6 +149,9 @@ _LOCAL_PROJECTS_COMMANDS = {"/projects", "projects"}
 _LOCAL_ADDTOGROUP_COMMANDS = {"/addtogroup", "addtogroup"}
 _LOCAL_RMFROMGROUP_COMMANDS = {"/rmfromgroup", "rmfromgroup"}
 _LOCAL_SETMODE_COMMANDS = {"/setmode", "setmode"}
+_LOCAL_DELEGATE_COMMANDS = {"/delegate", "delegate"}
+_LOCAL_DELEGATIONS_COMMANDS = {"/delegations", "delegations"}
+_LOCAL_REVOKE_DELEGATION_COMMANDS = {"/revoke-delegation", "revoke-delegation", "/revokedelegation", "revokedelegation"}
 
 _COLLABORATOR_ALLOWED_SLASH_COMMANDS = {
     "/start",
@@ -434,9 +437,29 @@ class TelegramAPIProxy:
         return None
 
     def _extract_owner_target_resolved(self, text: str) -> Optional[str]:
-        """Resolve target by id, static alias, or pending username alias."""
+        """Resolve target by id, static alias, or pending username alias.
+
+        Resolution order:
+        1. Numeric ID → return immediately.
+        2. Static known-collaborator alias → return only if that ID has a pending
+           request, otherwise fall through to pending username resolution so that
+           e.g. ``/approve ana`` matches a pending user named "ana_smith" even when
+           "ana" is a static alias for a different user.
+        3. Pending username prefix match (e.g., "ana" matches "ana_smith").
+        """
         target = self._extract_owner_target(text)
         if target:
+            # If the static alias resolves to a numeric ID that has a pending
+            # collaborator request, prefer it.  Otherwise fall through to the
+            # pending username resolver so operator shorthands like /approve ana
+            # still work when "ana" is mapped to a different static collaborator ID.
+            if target.isdigit() and target in self._pending_collaborator_requests:
+                return target
+            if target.isdigit() and target not in self._pending_collaborator_requests:
+                # Try pending username first; fall back to static alias if no match.
+                pending_match = self._resolve_pending_username_target(text)
+                if pending_match:
+                    return pending_match
             return target
         return self._resolve_pending_username_target(text)
 
@@ -2475,7 +2498,7 @@ class TelegramAPIProxy:
                             flags=re.IGNORECASE,
                         ).strip()
                         data[text_key] = redacted if redacted else self._collaborator_safe_notice("redacted protected content")
-                        return json.dumps(data).encode()
+                        text = data[text_key]  # update local ref so sanitizer sees the redacted text
                 if isinstance(text, str) and "does not support tools" in text.lower():
                     self._stats["outbound_filtered"] += 1
                     data[text_key] = "⚠️ Current local model does not support tool calls. Use scripts/switch_model.sh local qwen3:14b (or a tools-capable model)."
@@ -4002,6 +4025,156 @@ class TelegramAPIProxy:
                             ),
                         )
                     continue
+                elif is_owner and cmd_base in _LOCAL_DELEGATE_COMMANDS:
+                    # /delegate <uid|alias> <privilege> <duration>
+                    # e.g. /delegate brett egress_approval 8h
+                    from gateway.ingest_api.state import app_state as _del_state
+                    _del_mgr = getattr(_del_state, "delegation_manager", None)
+                    _parts = normalize_input(text).strip().split()
+                    # _parts: ["/delegate", uid, privilege, duration]
+                    if len(_parts) < 4:
+                        await self._send_owner_admin_notice(
+                            chat_id,
+                            f"{_PROTECT_HEADER}Usage: /delegate <user_id|name> <privilege> <duration>\n"
+                            "Privileges: egress_approval, user_management\n"
+                            "Duration examples: 1h, 8h, 24h (max 72h)\n"
+                            "Example: /delegate brett egress_approval 8h",
+                        )
+                        continue
+                    _del_target_raw = _parts[1]
+                    _del_priv_raw = _parts[2].lower()
+                    _del_dur_raw = _parts[3].lower()
+                    # Resolve target
+                    _del_target = self._extract_owner_target_resolved(
+                        f"/delegate {_del_target_raw} {_del_priv_raw} {_del_dur_raw}"
+                    ) or _del_target_raw
+                    # Parse duration
+                    _dur_match = re.fullmatch(r"(?:(\d+)h)?(?:(\d+)m)?", _del_dur_raw)
+                    if not _dur_match or not (_dur_match.group(1) or _dur_match.group(2)):
+                        await self._send_owner_admin_notice(
+                            chat_id,
+                            f"{_PROTECT_HEADER}Invalid duration: `{_del_dur_raw}`. Use e.g. 8h, 30m, 2h30m (max 72h).",
+                        )
+                        continue
+                    _dur_h = float(_dur_match.group(1) or 0)
+                    _dur_m = float(_dur_match.group(2) or 0)
+                    _dur_hours = _dur_h + _dur_m / 60.0
+                    if _del_mgr is None:
+                        await self._send_owner_admin_notice(
+                            chat_id,
+                            f"{_PROTECT_HEADER}DelegationManager unavailable.",
+                        )
+                        continue
+                    try:
+                        from gateway.security.delegation import DelegationPrivilege
+                        _priv = DelegationPrivilege(_del_priv_raw)
+                        _delegation = _del_mgr.delegate(
+                            owner_id=user_id,
+                            to_user_id=_del_target,
+                            privilege=_priv,
+                            duration_hours=_dur_hours,
+                        )
+                        _label = _KNOWN_COLLABORATOR_LABELS.get(_del_target, _del_target)
+                        _exp_str = _dt.datetime.fromtimestamp(
+                            _delegation.expires_at, tz=_dt.timezone.utc
+                        ).strftime("%Y-%m-%d %H:%M UTC")
+                        logger.info(
+                            "DELEGATION CREATED: owner=%s target=%s priv=%s expires=%s",
+                            user_id, _del_target, _del_priv_raw, _exp_str,
+                        )
+                        await self._send_owner_admin_notice(
+                            chat_id,
+                            f"{_PROTECT_HEADER}\U0001f511 Delegation granted.\n"
+                            f"User: {_label} ({_del_target})\n"
+                            f"Privilege: {_del_priv_raw}\n"
+                            f"Expires: {_exp_str}",
+                        )
+                    except Exception as _del_exc:
+                        await self._send_owner_admin_notice(
+                            chat_id,
+                            f"{_PROTECT_HEADER}Delegation failed: {_del_exc}",
+                        )
+                    continue
+                elif is_owner and cmd_base in _LOCAL_DELEGATIONS_COMMANDS:
+                    from gateway.ingest_api.state import app_state as _del_state
+                    _del_mgr = getattr(_del_state, "delegation_manager", None)
+                    if not _del_mgr:
+                        await self._send_owner_admin_notice(
+                            chat_id,
+                            f"{_PROTECT_HEADER}DelegationManager unavailable.",
+                        )
+                        continue
+                    _del_mgr.cleanup_expired()
+                    _active = _del_mgr.get_active_delegations()
+                    if not _active:
+                        await self._send_owner_admin_notice(
+                            chat_id,
+                            f"{_PROTECT_HEADER}No active privilege delegations.",
+                        )
+                        continue
+                    lines = [f"{_PROTECT_HEADER}\U0001f511 Active Delegations\n"]
+                    for _d in _active:
+                        _label = _KNOWN_COLLABORATOR_LABELS.get(_d.delegated_to, _d.delegated_to)
+                        _exp_str = _dt.datetime.fromtimestamp(
+                            _d.expires_at, tz=_dt.timezone.utc
+                        ).strftime("%H:%M UTC")
+                        lines.append(f"  {_label} ({_d.delegated_to}) — {_d.privilege} until {_exp_str}")
+                    lines.append("\nUse /revoke-delegation <user_id> <privilege> to revoke.")
+                    await self._send_owner_admin_notice(chat_id, "\n".join(lines))
+                    continue
+                elif is_owner and cmd_base in _LOCAL_REVOKE_DELEGATION_COMMANDS:
+                    from gateway.ingest_api.state import app_state as _del_state
+                    _del_mgr = getattr(_del_state, "delegation_manager", None)
+                    _parts = normalize_input(text).strip().split()
+                    # _parts: ["/revoke-delegation", uid, privilege(optional)]
+                    if len(_parts) < 2:
+                        await self._send_owner_admin_notice(
+                            chat_id,
+                            f"{_PROTECT_HEADER}Usage: /revoke-delegation <user_id|name> [privilege]\n"
+                            "Privileges: egress_approval, user_management\n"
+                            "Omit privilege to revoke all delegations for the user.",
+                        )
+                        continue
+                    _rd_target_raw = _parts[1]
+                    _rd_priv_raw = _parts[2].lower() if len(_parts) > 2 else None
+                    _rd_target = self._extract_owner_target_resolved(
+                        f"/revoke-delegation {_rd_target_raw}"
+                    ) or _rd_target_raw
+                    if not _del_mgr:
+                        await self._send_owner_admin_notice(
+                            chat_id,
+                            f"{_PROTECT_HEADER}DelegationManager unavailable.",
+                        )
+                        continue
+                    try:
+                        if _rd_priv_raw:
+                            from gateway.security.delegation import DelegationPrivilege
+                            _priv = DelegationPrivilege(_rd_priv_raw)
+                            _revoked = _del_mgr.revoke(user_id, _rd_target, _priv)
+                            _count = 1 if _revoked else 0
+                        else:
+                            _count = _del_mgr.revoke_all_for_user(user_id, _rd_target)
+                        _label = _KNOWN_COLLABORATOR_LABELS.get(_rd_target, _rd_target)
+                        if _count:
+                            logger.info(
+                                "DELEGATION REVOKED: owner=%s target=%s priv=%s count=%d",
+                                user_id, _rd_target, _rd_priv_raw or "all", _count,
+                            )
+                            await self._send_owner_admin_notice(
+                                chat_id,
+                                f"{_PROTECT_HEADER}\U0001f511 Revoked {_count} delegation(s) for {_label} ({_rd_target}).",
+                            )
+                        else:
+                            await self._send_owner_admin_notice(
+                                chat_id,
+                                f"{_PROTECT_HEADER}No active delegations found for {_label} ({_rd_target}).",
+                            )
+                    except Exception as _rd_exc:
+                        await self._send_owner_admin_notice(
+                            chat_id,
+                            f"{_PROTECT_HEADER}Revocation failed: {_rd_exc}",
+                        )
+                    continue
                 if local_handler is not None:
                     update_id = update.get("update_id")
                     message_id = message.get("message_id")
@@ -4482,6 +4655,72 @@ class TelegramAPIProxy:
                     continue
                 if self._looks_like_safe_collaborator_info_query(text):
                     await self._send_collaborator_safe_info_response(chat_id, text)
+                    continue
+                # ── Security pipeline / sanitizer (collaborator path) ────────────
+                # When a pipeline or sanitizer is configured, run it as the
+                # authoritative security gatekeeper BEFORE collab_mode routing.
+                # Clean messages are forwarded to the bot; blocked messages are
+                # dropped. This ensures getUpdates inbound messages receive the
+                # same pipeline treatment as webhook messages.
+                if self.pipeline and text:
+                    try:
+                        _pipe_result = await self.pipeline.process_inbound(
+                            message=text,
+                            source="telegram",
+                            metadata={"user_id": user_id, "chat_id": chat_id},
+                            skip_context_guard=True,
+                        )
+                        if _pipe_result.blocked:
+                            self._stats["messages_blocked"] += 1
+                            logger.warning(
+                                "Pipeline blocked Telegram message from collaborator %s: %s",
+                                user_id, _pipe_result.block_reason,
+                            )
+                            self._quarantine_blocked_message(
+                                user_id=user_id,
+                                chat_id=chat_id,
+                                text=text,
+                                reason=_pipe_result.block_reason or "Pipeline blocked message",
+                                source="telegram_pipeline_block",
+                            )
+                            if chat_id:
+                                await self._notify_user_blocked(chat_id, _pipe_result.block_reason)
+                            continue
+                        # Pipeline passed — apply any PII-sanitized text
+                        _pipe_sanitized = _pipe_result.sanitized_message
+                        if _pipe_sanitized and _pipe_sanitized != text:
+                            self._stats["messages_sanitized"] += 1
+                            if "message" in update:
+                                update["message"]["text"] = _pipe_sanitized
+                            elif "edited_message" in update:
+                                update["edited_message"]["text"] = _pipe_sanitized
+                    except Exception as _pipe_exc:
+                        logger.error(
+                            "Pipeline error for collaborator Telegram message from %s: %s",
+                            user_id, _pipe_exc,
+                        )
+                        self._stats["messages_blocked"] += 1
+                        if chat_id:
+                            await self._notify_user_blocked(chat_id, "Security pipeline error")
+                        continue
+                    # Pipeline cleared — forward to bot, skip collab_mode local routing
+                    filtered_updates.append(update)
+                    continue
+                elif self.sanitizer and text:
+                    try:
+                        _san_result = await self.sanitizer.sanitize(text)
+                        if _san_result.entity_types_found:
+                            self._stats["messages_sanitized"] += 1
+                            if "message" in update:
+                                update["message"]["text"] = _san_result.sanitized_content
+                            elif "edited_message" in update:
+                                update["edited_message"]["text"] = _san_result.sanitized_content
+                    except Exception as _san_exc:
+                        logger.error(
+                            "PII sanitization error for collaborator Telegram message: %s", _san_exc
+                        )
+                    # Sanitizer done — forward to bot, skip collab_mode local routing
+                    filtered_updates.append(update)
                     continue
                 # Deterministic collaborator handling — resolve per-user collab mode.
                 _collab_mode = self._resolve_collaborator_mode(user_id)

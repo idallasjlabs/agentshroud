@@ -708,6 +708,167 @@ async def set_group_mode(
 
 
 # ---------------------------------------------------------------------------
+# Delegation management endpoints (v0.9.0)
+# ---------------------------------------------------------------------------
+
+@router.get("/delegation")
+async def list_delegations(caller: SCLCaller = Depends(get_caller)) -> List[Dict]:
+    """List all active privilege delegations."""
+    caller.require(Action.READ, Resource.USERS)
+    app = _app_state()
+    mgr = getattr(app, "delegation_manager", None)
+    if not mgr:
+        return []
+    mgr.cleanup_expired()
+    return [d.to_dict() for d in mgr.get_active_delegations()]
+
+
+class CreateDelegationRequest(BaseModel):
+    delegatee_id: str
+    privilege: str = "egress_approval"
+    duration_hours: float = 8.0
+
+
+@router.post("/delegation")
+async def create_delegation(
+    body: CreateDelegationRequest,
+    caller: SCLCaller = Depends(get_caller),
+) -> Dict:
+    """Create a time-bounded privilege delegation (owner only)."""
+    caller.require(Action.MANAGE, Resource.USERS)
+    if not caller.is_owner():
+        raise HTTPException(status_code=403, detail={"error": True, "code": "PERMISSION_DENIED", "message": "Owner required"})
+    app = _app_state()
+    mgr = getattr(app, "delegation_manager", None)
+    if not mgr:
+        raise HTTPException(status_code=503, detail={"error": True, "code": "UNAVAILABLE", "message": "DelegationManager not initialized"})
+    try:
+        from ..security.delegation import DelegationPrivilege
+        priv = DelegationPrivilege(body.privilege)
+    except ValueError:
+        raise HTTPException(status_code=400, detail={"error": True, "code": "VALIDATION_ERROR", "message": f"Invalid privilege: {body.privilege}. Valid: egress_approval, user_management"})
+    delegation = mgr.delegate(
+        owner_id=caller.user_id,
+        to_user_id=body.delegatee_id,
+        privilege=priv,
+        duration_hours=body.duration_hours,
+    )
+    _log_audit(caller, "create delegation", target=body.delegatee_id, details={"privilege": body.privilege, "duration_hours": body.duration_hours})
+    return delegation.to_dict()
+
+
+@router.delete("/delegation/{delegatee_id}")
+async def revoke_delegation(
+    delegatee_id: str,
+    privilege: Optional[str] = Query(default=None),
+    caller: SCLCaller = Depends(get_caller),
+) -> Dict:
+    """Revoke a privilege delegation. Omit privilege to revoke all for the user."""
+    caller.require(Action.MANAGE, Resource.USERS)
+    if not caller.is_owner():
+        raise HTTPException(status_code=403, detail={"error": True, "code": "PERMISSION_DENIED", "message": "Owner required"})
+    app = _app_state()
+    mgr = getattr(app, "delegation_manager", None)
+    if not mgr:
+        raise HTTPException(status_code=503, detail={"error": True, "code": "UNAVAILABLE", "message": "DelegationManager not initialized"})
+    if privilege:
+        try:
+            from ..security.delegation import DelegationPrivilege
+            priv = DelegationPrivilege(privilege)
+        except ValueError:
+            raise HTTPException(status_code=400, detail={"error": True, "code": "VALIDATION_ERROR", "message": f"Invalid privilege: {privilege}"})
+        revoked = mgr.revoke(caller.user_id, delegatee_id, priv)
+        count = 1 if revoked else 0
+    else:
+        count = mgr.revoke_all_for_user(caller.user_id, delegatee_id)
+    _log_audit(caller, "revoke delegation", target=delegatee_id, details={"privilege": privilege or "all", "count": count})
+    return {"ok": count > 0, "delegatee_id": delegatee_id, "revoked_count": count}
+
+
+# ---------------------------------------------------------------------------
+# Tool ACL endpoints (v0.9.0) — read-only visibility
+# ---------------------------------------------------------------------------
+
+@router.get("/tool-acl/{entity_id}")
+async def get_tool_acl(entity_id: str, caller: SCLCaller = Depends(get_caller)) -> Dict:
+    """Get tool allow/deny lists for a user or group entity."""
+    caller.require(Action.READ, Resource.USERS)
+    app = _app_state()
+    enforcer = getattr(app, "tool_acl_enforcer", None)
+    if not enforcer:
+        return {"entity_id": entity_id, "allowed": [], "denied": [], "note": "ToolACLEnforcer not initialized"}
+    return {
+        "entity_id": entity_id,
+        "allowed": enforcer.get_allowed_tools(entity_id),
+        "denied": enforcer.get_denied_tools(entity_id),
+    }
+
+
+# ---------------------------------------------------------------------------
+# Shared memory endpoints (v0.9.0) — group memory visibility + clear
+# ---------------------------------------------------------------------------
+
+@router.get("/shared-memory/groups/{group_id}")
+async def get_group_memory(group_id: str, caller: SCLCaller = Depends(get_caller)) -> Dict:
+    """Read raw shared memory for a group workspace."""
+    caller.require(Action.READ, Resource.USERS)
+    app = _app_state()
+    sm = getattr(app, "session_manager", None)
+    if not sm:
+        return {"group_id": group_id, "memory": "", "note": "SessionManager not initialized"}
+    from ..security.shared_memory import SharedMemoryManager
+    memory_text = SharedMemoryManager(sm).get_group_memory(group_id)
+    return {"group_id": group_id, "memory": memory_text, "length": len(memory_text)}
+
+
+@router.delete("/shared-memory/groups/{group_id}")
+async def clear_group_memory(group_id: str, caller: SCLCaller = Depends(get_caller)) -> Dict:
+    """Clear shared memory for a group workspace (owner only)."""
+    caller.require(Action.MANAGE, Resource.USERS)
+    if not caller.is_owner():
+        raise HTTPException(status_code=403, detail={"error": True, "code": "PERMISSION_DENIED", "message": "Owner required"})
+    app = _app_state()
+    sm = getattr(app, "session_manager", None)
+    if not sm:
+        return {"ok": False, "group_id": group_id, "note": "SessionManager not initialized"}
+    try:
+        gs = sm.get_or_create_group_session(group_id)
+        if gs.memory_file.exists():
+            gs.memory_file.write_text("", encoding="utf-8")
+        _log_audit(caller, "clear group-memory", target=group_id)
+        return {"ok": True, "group_id": group_id}
+    except Exception as exc:
+        raise HTTPException(status_code=500, detail={"error": True, "code": "INTERNAL_ERROR", "message": str(exc)})
+
+
+# ---------------------------------------------------------------------------
+# Privacy policy endpoints (v0.9.0) — service policy visibility
+# ---------------------------------------------------------------------------
+
+@router.get("/privacy")
+async def get_privacy_policies(caller: SCLCaller = Depends(get_caller)) -> Dict:
+    """List service privacy policies (read-only view)."""
+    caller.require(Action.READ, Resource.USERS)
+    app = _app_state()
+    enforcer = getattr(app, "privacy_enforcer", None)
+    if not enforcer or not getattr(enforcer, "_policy", None):
+        return {"services": {}, "note": "PrivacyPolicyEnforcer not initialized"}
+    policy = enforcer._policy
+    return {
+        "audit_access_attempts": policy.audit_access_attempts,
+        "alert_on_private_access": policy.alert_on_private_access,
+        "services": {
+            name: {
+                "privacy": svc.privacy.value,
+                "allowed_groups": list(svc.allowed_groups),
+                "description": svc.description,
+            }
+            for name, svc in policy.services.items()
+        },
+    }
+
+
+# ---------------------------------------------------------------------------
 # Approval endpoints
 # ---------------------------------------------------------------------------
 
