@@ -153,6 +153,24 @@ class ServiceManager:
             logger.error("restart_service(%s): %s", name, exc)
             return False
 
+    async def update_service(self, name: str) -> bool:
+        """Pull the latest image then restart the container."""
+        engine = self._get_engine()
+        if engine is None:
+            return False
+        try:
+            # Pull latest image if engine supports it; fall through on failure.
+            if hasattr(engine, "pull"):
+                try:
+                    engine.pull(name)
+                except Exception as pull_exc:
+                    logger.warning("update_service(%s): pull failed (%s), restarting anyway", name, pull_exc)
+            engine.restart(name)
+            return True
+        except Exception as exc:
+            logger.error("update_service(%s): %s", name, exc)
+            return False
+
     async def get_logs(self, name: str, tail: int = 50) -> List[str]:
         engine = self._get_engine()
         if engine is None:
