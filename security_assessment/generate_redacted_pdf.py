@@ -369,24 +369,43 @@ def build_html(report_path: Path) -> str:
     title_match = re.search(r"Security Assessment - (\S+ \S+)", content)
     report_date = title_match.group(1) if title_match else "Unknown Date"
 
-    # Count stats
-    bt_content = content[content.find("## Blue Team"):content.find("## Red Team")] if "## Red Team" in content else ""
-    rt_content = content[content.find("## Red Team"):] if "## Red Team" in content else content
-    
-    def count_section(s):
-        return {
-            "pass": s.count("PASS"),
-            "fail": s.count("FAIL"),
-            "warn": s.count("WARN"),
-            "total": s.count("PASS") + s.count("FAIL") + s.count("WARN"),
-        }
-    
-    bt = count_section(bt_content)
-    rt = count_section(rt_content)
-    total_pass = bt["pass"] + rt["pass"]
-    total_fail = bt["fail"] + rt["fail"]
-    total_warn = bt["warn"] + rt["warn"]
-    total = total_pass + total_fail + total_warn
+    # Count stats — parse the authoritative summary lines from the report
+    def parse_summary_line(text: str, keyword: str) -> dict:
+        """Extract PASS=N WARN=N FAIL=N from a summary line matching keyword."""
+        m = re.search(
+            rf"{re.escape(keyword)}.*?PASS=(\d+)\s+WARN=(\d+)\s+FAIL=(\d+)",
+            text,
+        )
+        if m:
+            p, w, f = int(m.group(1)), int(m.group(2)), int(m.group(3))
+            return {"pass": p, "warn": w, "fail": f, "total": p + w + f}
+        return {"pass": 0, "warn": 0, "fail": 0, "total": 0}
+
+    def parse_totals_block(text: str) -> dict:
+        """Extract PASS/WARN/FAIL from the ## Assessment Totals block."""
+        p = re.search(r"PASS:\s*(\d+)", text)
+        w = re.search(r"WARN:\s*(\d+)", text)
+        f = re.search(r"FAIL:\s*(\d+)", text)
+        if p and w and f:
+            pv, wv, fv = int(p.group(1)), int(w.group(1)), int(f.group(1))
+            return {"pass": pv, "warn": wv, "fail": fv, "total": pv + wv + fv}
+        return None
+
+    bt = parse_summary_line(content, "Blue Team")
+    rt = parse_summary_line(content, "Red Team")
+    totals_block = parse_totals_block(
+        content[content.find("## Assessment Totals"):] if "## Assessment Totals" in content else ""
+    )
+    if totals_block:
+        total_pass = totals_block["pass"]
+        total_warn = totals_block["warn"]
+        total_fail = totals_block["fail"]
+        total = totals_block["total"]
+    else:
+        total_pass = bt["pass"] + rt["pass"]
+        total_fail = bt["fail"] + rt["fail"]
+        total_warn = bt["warn"] + rt["warn"]
+        total = total_pass + total_fail + total_warn
 
     verdict_cls = "strong-pass" if total_fail <= 2 else "partial"
     pass_rate = round((total_pass / total) * 100) if total else 0
@@ -533,7 +552,7 @@ def build_html(report_path: Path) -> str:
 </div>
 
 {section_page("Blue Team Validation", "Blue Team Validation", bt)}
-{section_page("Red Team Adversarial Testing", "Red Team Adversarial Testing", rt)}
+{section_page("Red Team Adversarial Exercise", "Red Team Adversarial Exercise", rt)}
 
 </body>
 </html>
