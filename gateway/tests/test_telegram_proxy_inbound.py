@@ -784,7 +784,7 @@ class TestInboundPipelineOnGetUpdates:
         monkeypatch.setattr(proxy, "_send_owner_admin_notice", fake_owner_notice)
 
         response = _wrap_response(
-            _make_update("/approve ana", user_id=owner_id, chat_id=int(owner_id))
+            _make_update("/approve ana_smith", user_id=owner_id, chat_id=int(owner_id))
         )
         result = await proxy._filter_inbound_updates(response)
 
@@ -853,7 +853,7 @@ class TestInboundPipelineOnGetUpdates:
         monkeypatch.setattr(proxy, "_send_owner_admin_notice", fake_owner_notice)
 
         response = _wrap_response(
-            _make_update("/deny ana", user_id=owner_id, chat_id=int(owner_id))
+            _make_update("/deny ana_smith", user_id=owner_id, chat_id=int(owner_id))
         )
         result = await proxy._filter_inbound_updates(response)
 

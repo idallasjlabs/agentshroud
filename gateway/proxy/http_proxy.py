@@ -305,7 +305,12 @@ class HTTPConnectProxy:
         # keepalive probes on idle connections. Without this, Cisco AnyConnect
         # (and similar VPNs) silently drop idle TCP sessions after ~10 minutes,
         # causing WebSocket ping/pong timeouts (e.g. Slack Socket Mode).
-        for _transport in (writer.transport, target_writer.transport):
+        for _transport in (
+            getattr(writer, "transport", None),
+            getattr(target_writer, "transport", None),
+        ):
+            if _transport is None:
+                continue
             try:
                 _sock = _transport.get_extra_info("socket")
                 if _sock is not None:
