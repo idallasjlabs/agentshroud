@@ -1760,12 +1760,10 @@ class TelegramAPIProxy:
         if any(token in lowered for token in ("authentication", "credential", "api key", "secret", "password", "raw values", "placeholders")):
             if any(token in lowered for token in ("flow", "how", "intermediary", "handles", "brokered", "integrate", "integration", "work")):
                 return (
-                    f"{_PROTECT_HEADER}"
-                    "Authentication flow overview:\n"
-                    "• External credentials are stored in a secured secrets manager — not in my active context.\n"
-                    "• When external access is needed, the security gateway brokers the request on my behalf.\n"
-                    "• I never receive raw API keys or tokens — only confirmation that a request was authorized.\n"
-                    "• For integration guidance, I can help with OAuth patterns, least-privilege design, and safe request flows."
+                    "Authentication in this workspace:\n"
+                    "• Credentials are managed server-side — I don't hold raw API keys or tokens in active context.\n"
+                    "• When external access is needed, the gateway brokers the request on my behalf.\n"
+                    "• I can help with OAuth patterns, least-privilege design, and safe API patterns for integrations."
                 )
             return (
                 f"{_PROTECT_HEADER}"
@@ -1801,6 +1799,14 @@ class TelegramAPIProxy:
                 "• Direct file content access and secret/credential retrieval are restricted.\n"
                 "• External/network actions require explicit owner approval before execution."
             )
+        if any(token in lowered for token in ("dns lookup", "dns query", "dns resolve", "dns check", "ping", "icmp", "connectivity probe", "connectivity check", "udp probe", "network probe")):
+            return (
+                f"{_PROTECT_HEADER}"
+                "Network probe policy:\n"
+                "• Outbound network access — including DNS probes, pings, and connectivity checks — requires owner authorization.\n"
+                "• This applies regardless of protocol (HTTP, DNS, ICMP, UDP).\n"
+                "• All external network actions go through the owner approval workflow."
+            )
         if any(token in lowered for token in ("approval", "egress", "external", "network")):
             return (
                 f"{_PROTECT_HEADER}"
@@ -1816,12 +1822,10 @@ class TelegramAPIProxy:
             "how does that affect", "how does it affect",
         )):
             return (
-                f"{_PROTECT_HEADER}"
-                "Access level guidance:\n"
-                "• The security proxy identifies all message senders and applies the appropriate trust level.\n"
-                "• Owner messages have full operational access; collaborator messages are policy-gated.\n"
-                "• This distinction determines what actions I can take and what information I can share.\n"
-                "• These boundaries are enforced by the gateway — I cannot override them."
+                "Yes — all messages are identified by sender and assigned a trust level.\n"
+                "• Owner messages have full operational access to tools, files, and external services.\n"
+                "• Collaborator messages are policy-gated: conversation is the primary available capability.\n"
+                "• These boundaries are enforced by the gateway and cannot be overridden in chat."
             )
         if any(token in lowered for token in ("refuse", "restrict", "decline", "not allowed")):
             return (
@@ -1879,6 +1883,14 @@ class TelegramAPIProxy:
                 "are treated as internal system files.\n"
                 "• Collaborators cannot access raw file contents or direct file reads.\n"
                 "• I can provide high-level onboarding and role guidance without exposing file data."
+            )
+        if any(token in lowered for token in ("stream through", "still stream", "chunks", "chunked", "partial leak", "partial content", "partial response", "blocked answer", "too long to")):
+            return (
+                f"{_PROTECT_HEADER}"
+                "Output delivery policy:\n"
+                "• Responses are evaluated atomically before delivery — no partial content streams through a block.\n"
+                "• If a full response would be blocked, the entire message is replaced, not truncated.\n"
+                "• This applies regardless of response length."
             )
         return _COLLABORATOR_SAFE_INFO_NOTICE
 
@@ -2602,6 +2614,17 @@ class TelegramAPIProxy:
                     elif pipeline_result.sanitized_message != text:
                         data["text"] = pipeline_result.sanitized_message
                         self._stats["outbound_filtered"] += 1
+                    # Safety net: inject protected notice for collaborator responses that
+                    # passed all pipeline processing without a banner.  Fires only when
+                    # COLLAB_LOCAL_INFO_ONLY=0 (local handler bypasses this code path).
+                    _cur_text = data.get(text_key, "")
+                    if (
+                        not is_owner_chat
+                        and isinstance(_cur_text, str)
+                        and _cur_text.strip()
+                        and not _cur_text.lstrip().startswith(_PROTECT_PREFIX)
+                    ):
+                        data[text_key] = f"{_PROTECT_HEADER}{_cur_text}"
                     return json.dumps(data).encode()
                 elif text and self.sanitizer:
                     # Fallback: direct sanitizer calls when pipeline is unavailable
@@ -2631,6 +2654,16 @@ class TelegramAPIProxy:
                         data["text"] = blocked
                         self._stats["outbound_filtered"] += 1
                         logger.warning("Outbound message: credentials blocked")
+                    # Safety net: same as pipeline path — inject banner for undecorated
+                    # collaborator responses that passed all sanitizer processing.
+                    _cur_text = data.get(text_key, "")
+                    if (
+                        not is_owner_chat
+                        and isinstance(_cur_text, str)
+                        and _cur_text.strip()
+                        and not _cur_text.lstrip().startswith(_PROTECT_PREFIX)
+                    ):
+                        data[text_key] = f"{_PROTECT_HEADER}{_cur_text}"
                     return json.dumps(data).encode()
             elif "x-www-form-urlencoded" in ct or (
                 not ct
@@ -5434,6 +5467,10 @@ class TelegramAPIProxy:
                     )
         except Exception as e:
             logger.warning("Failed to send collaborator safe-info response to chat %s: %s", chat_id, e)
+            try:
+                await self._send_telegram_text(chat_id, _COLLABORATOR_UNAVAILABLE_NOTICE, retries=3)
+            except Exception:
+                pass
 
     async def _send_disclosure(self, chat_id: int) -> None:
         """Send the one-time collaborator disclosure notice."""
