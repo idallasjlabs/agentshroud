@@ -24,24 +24,9 @@ from typing import Optional
 from .web_config import WebProxyConfig
 from .web_proxy import WebProxy
 from ..security.egress_filter import EgressAction, EgressFilter
+from ..security.egress_config import PERMANENT_EGRESS_DOMAINS
 
 logger = logging.getLogger("agentshroud.proxy.http_proxy")
-
-# Default allowlist: only the domains the bot legitimately needs
-ALLOWED_DOMAINS: list[str] = [
-    "api.openai.com",
-    "api.anthropic.com",
-    "oauth2.googleapis.com",
-    "www.googleapis.com",
-    "gmail.googleapis.com",
-    "*.github.com",
-    "*.githubusercontent.com",
-    # Slack Socket Mode WebSocket endpoint (OpenClaw native Slack channel)
-    "wss-primary.slack.com",
-    "wss-backup.slack.com",
-    "slack.com",
-    "*.slack.com",
-]
 
 # Internal control-plane destinations required for channel transport.
 # These are bypassed from interactive egress approval to avoid deadlocking
@@ -69,6 +54,18 @@ SYSTEM_BYPASS_DOMAINS: set[str] = {
 CONNECT_FORCE_BLOCK_DOMAINS: set[str] = {
     "api.telegram.org",
 }
+
+# Default internet allowlist — derived from the canonical PERMANENT_EGRESS_DOMAINS registry.
+# Internal Docker/SSH targets (host.docker.internal, marvin, trillian, raspberrypi) are
+# declared in agentshroud.yaml proxy.allowed_domains and merged at startup in lifespan.py.
+#
+# CONNECT_FORCE_BLOCK_DOMAINS entries are excluded (defense-in-depth): api.telegram.org
+# must not appear here so the bot is always routed through the gateway's /telegram-api/
+# reverse proxy (where the Slack bridge intercept lives).
+ALLOWED_DOMAINS: list[str] = [
+    d for d in PERMANENT_EGRESS_DOMAINS
+    if d not in CONNECT_FORCE_BLOCK_DOMAINS
+]
 
 
 class HTTPConnectProxy:
