@@ -366,7 +366,7 @@ window._reloadScanners = _loadScanners;
 
 window._runScan = async function(scanner, btn) {
   if (btn) { btn.disabled = true; btn.textContent = '⏳ Launching…'; }
-  const { ok, data } = await _post(`/scan/${encodeURIComponent(scanner)}`);
+  const { ok, data } = await _post(`/scan/${encodeURIComponent(scanner)}`, {});
   if (btn) { btn.disabled = false; btn.textContent = '▶ Run Scan'; }
   if (ok) {
     _toast(`${scanner} scan launched — results will appear when complete`, 'success');
@@ -426,21 +426,21 @@ function _renderScorecard(data) {
   if (!grid) return;
   grid.innerHTML = data.domains.map((d, i) => {
     const sc    = d.score ?? 0;
-    const refs  = (d.standard_refs || []).join(' · ');
+    const refs  = d.standard_ref || '';
     const tools = (d.tools || []);
     return `
       <div class="domain-card">
         <div class="domain-card-header">
           <div>
             <div class="domain-num">DOMAIN ${String(i+1).padStart(2,'0')}</div>
-            <div class="domain-name">${_esc(d.name)}</div>
+            <div class="domain-name">${_esc(d.domain)}</div>
           </div>
           <div class="domain-score-num score-${sc}">${sc}<span style="font-size:12px;opacity:.6">/5</span></div>
         </div>
         <div class="score-bar-track"><div class="score-bar-fill fill-${sc}"></div></div>
+        ${d.description ? `<div style="font-size:11px;color:var(--text-muted);margin-top:.4rem;line-height:1.5">${_esc(d.description)}</div>` : ''}
         <div class="domain-refs">${_esc(refs)}</div>
         <div class="domain-tools">${tools.map(t => `<span class="tool-tag">${_esc(t)}</span>`).join('')}</div>
-        ${d.details ? `<div style="font-size:11px;color:var(--text-muted);margin-top:.4rem">${_esc(d.details)}</div>` : ''}
       </div>`;
   }).join('');
 }
