@@ -55,6 +55,10 @@ telegram_history.jsonl.tgz
 tg_export_session.session
 *.session
 
+# Early development session notes — purged from git history via filter-repo,
+# kept local-only. Contains tokens, passwords, and config dumps.
+archive/
+
 # =============================================================================
 # GITLEAKS & SECURITY SCAN REPORTS
 # =============================================================================
