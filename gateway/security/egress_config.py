@@ -14,51 +14,44 @@ from dataclasses import dataclass, field
 from typing import Dict, List, Set
 
 
-# Canonical registry of all known service domains that should be pre-approved at startup.
-# This is the single source of truth used by EgressFilterConfig.default_allowlist,
-# EgressApprovalQueue.SAFE_DOMAINS, and HTTPConnectProxy.ALLOWED_DOMAINS.
-#
-# SOC retains full runtime control: denying a pre-approved domain via the SOC API
-# or Telegram buttons persists a PERMANENT deny rule that overrides this list on
-# the next restart (preload_permanent_rules skips domains with existing rules).
-PERMANENT_EGRESS_DOMAINS: list[str] = [
-    # ── Core Messaging ──
-    "api.telegram.org",
-    "slack.com", "*.slack.com",
-    "wss-primary.slack.com", "wss-backup.slack.com", "edgeapi.slack.com",
-    # ── LLM Backends ──
-    "api.anthropic.com", "api.openai.com",
-    "generativelanguage.googleapis.com",
-    # ── Google Services ──
-    "oauth2.googleapis.com", "www.googleapis.com", "gmail.googleapis.com",
-    # ── Email ──
-    "imap.gmail.com", "smtp.gmail.com",
-    "imap.mail.me.com", "smtp.mail.me.com",
-    "p154-caldav.icloud.com", "*.icloud.com",
-    # ── Credential Management ──
-    "1password.com", "*.1password.com", "*.1password.ca",
-    "*.b5project.com", "*.agilebits.com",
-    # ── Search ──
-    "api.brave.com", "*.brave.com", "*.search.brave.com",
-    # ── Development & Package Registries ──
-    "*.github.com", "*.githubusercontent.com",
-    "pypi.org", "files.pythonhosted.org",
-    "registry.npmjs.org",
-    "cdnjs.cloudflare.com", "unpkg.com", "cdn.jsdelivr.net",
-    # ── Security Sidecars ──
-    "database.clamav.net",
-]
-
-
-@dataclass
+@dataclass 
 class EgressFilterConfig:
     """Configuration for egress filtering enforcement."""
-
+    
     # Operating mode: "enforce" (block non-allowlisted) or "monitor" (log only)
     mode: str = "enforce"
+    
+    # Default domain allowlist - essential domains for agent operation
+    default_allowlist: List[str] = field(default_factory=lambda: [
+        # AI API endpoints
+        "api.anthropic.com",
+        "api.openai.com",
+        "generativelanguage.googleapis.com",
+        "oauth2.googleapis.com",
+        
+        # Email services
+        "imap.gmail.com", 
+        "smtp.gmail.com",
+        "p154-caldav.icloud.com",
+        "*.icloud.com",
+        
+        # Communication
+        "api.telegram.org",
+        
+        # Search and web services
+        "api.brave.com",
 
-    # Default domain allowlist - uses canonical PERMANENT_EGRESS_DOMAINS registry
-    default_allowlist: List[str] = field(default_factory=lambda: list(PERMANENT_EGRESS_DOMAINS))
+        # 1Password / op-proxy dependencies
+        "1password.com",
+        "*.1password.com",
+        
+        # Development and package registries
+        "*.github.com",
+        "*.githubusercontent.com", 
+        "registry.npmjs.org",
+        "pypi.org",
+        "files.pythonhosted.org",
+    ])
     
     # Denylist - known problematic domains that should always be blocked
     default_denylist: List[str] = field(default_factory=lambda: [
