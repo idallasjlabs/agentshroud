@@ -3,8 +3,8 @@
 #
 # Usage: docker compose -f docker/docker-compose.yml -f docker/docker-compose.agentshroud-bot.marvin.yml -p agentshroud-dev up -d
 #
-# Prod (ijefferson.admin):  gateway 8080,  bot 18790,  nets 172.10/172.11
-# Dev  (agentshroud-bot):   gateway 9080,  bot 19789,  nets 172.20/172.21
+# Prod (ijefferson.admin):  gateway 8080,  bot 18790,  nets 10.254.110/111/112.0/24
+# Dev  (agentshroud-bot):   gateway 9080,  bot 19789,  nets 172.20/172.21/172.22.0.0/16
 services:
   gateway:
     container_name: agentshroud-dev-gateway
@@ -56,7 +56,7 @@ secrets:
   telegram_bot_token:
     file: ./secrets/telegram_bot_token_marvin.txt
 
-# Subnets offset from prod (172.10/172.11) to prevent pool overlap on the same host.
+# All three networks offset from prod (10.254.110-112.0/24) to prevent pool overlap on the same host.
 networks:
   agentshroud-internal:
     ipam:
@@ -66,3 +66,7 @@ networks:
     ipam:
       config: !override
         - subnet: 172.21.0.0/16
+  agentshroud-console:
+    ipam:
+      config: !override
+        - subnet: 172.22.0.0/16
