@@ -292,7 +292,21 @@
             content: '●';
             font-size: 6px;
         }
+        /* ── Light mode ── */
+        [data-theme="light"] {
+            --bg: #f6f8fa; --surface: #ffffff; --surface-2: #f0f4f8;
+            --border: #d0d7de; --brand: #0969da; --brand-dim: rgba(9,105,218,0.10);
+            --text: #1f2328; --text-2: #656d76; --text-3: #8c959f;
+            --green: #1a7f37; --red: #cf222e; --red-dim: rgba(207,34,46,0.12);
+        }
+        [data-theme="light"] body { background: var(--bg); color: var(--text); }
+        .theme-toggle { background:none; border:1px solid var(--border); color:var(--text-2);
+            border-radius:6px; width:28px; height:28px; cursor:pointer; font-size:14px;
+            display:flex; align-items:center; justify-content:center; flex-shrink:0;
+            transition:background 0.15s,border-color 0.15s; margin-left:auto; }
+        .theme-toggle:hover { background:var(--brand-dim); border-color:var(--brand); }
     </style>
+    <script>(function(){var t=localStorage.getItem('as_theme')||(window.matchMedia&&window.matchMedia('(prefers-color-scheme: light)').matches?'light':'dark');document.documentElement.dataset.theme=t;}());</script>
 </head>
 <body>
     <header>
@@ -306,6 +320,7 @@
         <div class="header-divider"></div>
         <span class="header-agent">Secure Chat · PII Protected</span>
         <div id="status">Initializing…</div>
+        <button id="theme-toggle" class="theme-toggle" aria-label="Toggle light/dark mode">🌙</button>
     </header>
 
     <div id="messages"></div>
@@ -472,6 +487,9 @@
 
         // Initialize on load
         initialize();
+
+        // Theme toggle
+        (function(){var b=document.getElementById('theme-toggle');if(!b)return;b.textContent=document.documentElement.dataset.theme==='light'?'☀':'🌙';b.addEventListener('click',function(){var n=document.documentElement.dataset.theme==='light'?'dark':'light';document.documentElement.dataset.theme=n;localStorage.setItem('as_theme',n);b.textContent=n==='light'?'☀':'🌙';});})();
     </script>
 </body>
 </html>

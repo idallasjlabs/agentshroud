@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>AgentShroud™ Command Center</title>
   <link rel="stylesheet" href="/soc/static/soc.css">
+  <script>(function(){var t=localStorage.getItem('as_theme')||(window.matchMedia&&window.matchMedia('(prefers-color-scheme: light)').matches?'light':'dark');document.documentElement.dataset.theme=t;}());</script>
 </head>
 <body>
 
@@ -31,6 +32,7 @@
   </div>
 
   <div class="topbar-controls">
+    <button id="theme-toggle" class="theme-toggle" aria-label="Toggle light/dark mode">🌙</button>
     <div class="estop-group" title="System control — requires confirmation">
       <span class="estop-label">System&nbsp;Control</span>
       <button class="btn-estop-freeze" onclick="window._ksFreeze()">⏸ Freeze</button>
