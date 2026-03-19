@@ -144,7 +144,7 @@ COPY docker/SYSTEM-INSTRUCTIONS-SECURITY.md /app/SYSTEM-INSTRUCTIONS-SECURITY.md
 LABEL org.opencontainers.image.title="AgentShroud Bot"
 LABEL org.opencontainers.image.description="AgentShroud platform for agentshroud bot"
 LABEL org.opencontainers.image.vendor="AgentShroud"
-LABEL org.opencontainers.image.version="0.8.0"
+LABEL org.opencontainers.image.version="0.9.0"
 LABEL org.opencontainers.image.source="https://github.com/idallasj/agentshroud"
 
 # SECURITY (M2): Remove unnecessary interpreter entrypoints from PATH.

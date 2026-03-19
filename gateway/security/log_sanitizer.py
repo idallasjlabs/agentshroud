@@ -32,6 +32,7 @@ class LogSanitizer(logging.Filter):
             "openai_key": re.compile(r"\bsk-[A-Za-z0-9]{48}\b"),
             "aws_access_key": re.compile(r"\bAKIA[0-9A-Z]{16}\b"),
             "github_token": re.compile(r"\bghp_[A-Za-z0-9]{36}\b"),
+            "telegram_bot_token": re.compile(r"/bot\d{8,12}:[A-Za-z0-9_-]{30,}/"),
             "jwt_token": re.compile(
                 r"\beyJ[A-Za-z0-9_-]+\.eyJ[A-Za-z0-9_-]+\.[A-Za-z0-9_-]+"
             ),
@@ -108,6 +109,8 @@ class LogSanitizer(logging.Filter):
                 sanitized = pattern.sub("[REDACTED-CC]", sanitized)
             elif pattern_name == "email":
                 sanitized = pattern.sub("[REDACTED-EMAIL]", sanitized)
+            elif pattern_name == "telegram_bot_token":
+                sanitized = pattern.sub("/bot***/", sanitized)
             elif "key" in pattern_name or "token" in pattern_name:
                 sanitized = pattern.sub("[REDACTED-CREDENTIAL]", sanitized)
             elif pattern_name in ["password_assignment", "secret_assignment"]:

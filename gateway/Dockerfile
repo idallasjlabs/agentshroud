@@ -29,26 +29,15 @@ ENV PIP_ROOT_USER_ACTION=ignore
 ENV PIP_DISABLE_PIP_VERSION_CHECK=1
 ENV DEBIAN_FRONTEND=noninteractive
 
-# Install OpenSCAP for compliance scanning (Debian Trixie = libopenscap33)
+# Install system dependencies: OpenSCAP (compliance), SSH client, ClamAV (malware scanning), 1Password CLI
 RUN apt-get update && apt-get install -y --no-install-recommends \
     libopenscap33 \
     openscap-scanner \
-    && rm -rf /var/lib/apt/lists/*
-
-# SSH client for SSHProxy remote command execution
-RUN apt-get update && apt-get install -y --no-install-recommends \
     openssh-client \
-    && rm -rf /var/lib/apt/lists/*
-
-# ClamAV for malware scanning
-RUN apt-get update && apt-get install -y --no-install-recommends \
     clamav clamav-daemon clamav-freshclam clamdscan \
-    && rm -rf /var/lib/apt/lists/* \
+    curl ca-certificates gpg \
     && mkdir -p /var/lib/clamav \
-    && freshclam --quiet 2>/dev/null || echo "freshclam: virus DB download deferred to runtime"
-
-# Install 1Password CLI for op-proxy credential broker
-RUN apt-get update && apt-get install -y --no-install-recommends curl ca-certificates gpg \
+    && (freshclam --quiet 2>/dev/null || echo "freshclam: virus DB download deferred to runtime") \
     && curl -sS https://downloads.1password.com/linux/keys/1password.asc \
         | gpg --dearmor --output /usr/share/keyrings/1password-archive-keyring.gpg \
     && arch=$(dpkg --print-architecture) \
@@ -96,7 +85,7 @@ COPY docker/scap-content/ssg-debian12-ds.xml /usr/share/xml/scap/ssg/content/
 LABEL org.opencontainers.image.title="AgentShroud Gateway"
 LABEL org.opencontainers.image.description="PII sanitization proxy for AgentShroud"
 LABEL org.opencontainers.image.vendor="AgentShroud"
-LABEL org.opencontainers.image.version="0.8.0"
+LABEL org.opencontainers.image.version="0.9.0"
 LABEL org.opencontainers.image.source="https://github.com/idallasj/agentshroud"
 
 # Prevent Python bytecode generation (read-only filesystem compatibility)
