@@ -694,7 +694,25 @@ window._ksHalt = function() {
 // Init
 // ---------------------------------------------------------------------------
 
+// ---------------------------------------------------------------------------
+// Theme toggle
+// ---------------------------------------------------------------------------
+
+function _initTheme() {
+  const btn = document.getElementById('theme-toggle');
+  if (!btn) return;
+  btn.textContent = document.documentElement.dataset.theme === 'light' ? '☀' : '🌙';
+  btn.addEventListener('click', () => {
+    const next = document.documentElement.dataset.theme === 'light' ? 'dark' : 'light';
+    document.documentElement.dataset.theme = next;
+    localStorage.setItem('as_theme', next);
+    btn.textContent = next === 'light' ? '☀' : '🌙';
+  });
+}
+
 document.addEventListener('DOMContentLoaded', () => {
+  _initTheme();
+
   // Token prompt
   if (!_token) {
     _token = prompt('AgentShroud™ SOC — Enter gateway token:') || '';

@@ -587,3 +587,59 @@ label.live-label {
 ::-webkit-scrollbar-track { background: var(--bg); }
 ::-webkit-scrollbar-thumb { background: var(--border); border-radius: 3px; }
 ::-webkit-scrollbar-thumb:hover { background: #484f58; }
+
+/* ── Light theme overrides ────────────────────────────────── */
+
+[data-theme="light"] {
+  --bg:          #f6f8fa;
+  --surface:     #ffffff;
+  --surface-alt: #f0f4f8;
+  --border:      #d0d7de;
+  --text:        #1f2328;
+  --text-muted:  #656d76;
+  --accent:      #0969da;
+  --accent-dim:  rgba(9, 105, 218, 0.10);
+  --success:     #1a7f37;
+  --warning:     #9a6700;
+  --danger:      #d1242f;
+  --critical:    #b91c1c;
+  --amber:       #92400e;
+}
+
+[data-theme="light"] body { background: var(--bg); color: var(--text); }
+
+[data-theme="light"] .log-viewer {
+  background: #f0f4f8;
+  color: var(--text);
+  border-color: var(--border);
+}
+
+[data-theme="light"] select.filter-select {
+  background: var(--surface);
+  color: var(--text);
+}
+
+[data-theme="light"] .scorecard-bar-fill { background: var(--accent); }
+
+/* ── Theme toggle button ──────────────────────────────────── */
+
+.theme-toggle {
+  background: none;
+  border: 1px solid var(--border);
+  color: var(--text-muted);
+  border-radius: 6px;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  font-size: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  transition: background 0.15s, border-color 0.15s, color 0.15s;
+}
+.theme-toggle:hover {
+  background: var(--accent-dim);
+  border-color: var(--accent);
+  color: var(--accent);
+}
