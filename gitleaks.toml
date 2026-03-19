@@ -1,5 +1,35 @@
+# gitleaks.toml — AgentShroud secret scan configuration
+
 [allowlist]
-  description = "Ignore OpenSCAP 'REDACTED' placeholders"
-  # This stops Gitleaks from flagging the actual string "REDACTED" 
-  # regardless of which file it's in.
-  regexes = ['REDACTED']
+  description = "Test fixtures, example templates, and known safe placeholders"
+
+  # ── Path-based suppression ────────────────────────────────────────────────
+  # Test files use synthetic sk-test-* / sk-proj-* / fake-*-key patterns
+  # as attack-payload fixtures. None contain real credentials.
+  paths = [
+    "gateway/tests/.*\\.py",
+    "docker/secrets/.*\\.example$",
+    "docker/secrets/README\\.md",
+    "docker/secrets/setup-secrets\\.sh",
+    "docker/\\.env\\.example",
+    "\\.llm_settings/.*\\.example$",
+    "\\.llm_settings/git-hooks/gitleaks\\.toml",
+  ]
+
+  # ── Regex-based suppression ───────────────────────────────────────────────
+  # Fake key patterns used in test fixtures and documentation placeholders.
+  regexes = [
+    # OpenAI / Anthropic test key patterns used in test fixtures
+    'sk-test-[a-zA-Z0-9]{20,}',
+    'sk-proj-abc[a-zA-Z0-9_\-]{10,}',
+    'sk-ant-test[a-zA-Z0-9_\-]{10,}',
+
+    # Generic fake-key placeholder pattern
+    'fake-[a-zA-Z0-9_\-]+-key',
+
+    # OpenSCAP / documentation placeholder
+    'REDACTED',
+
+    # Ollama local-only key (not a real secret)
+    'ollama-local',
+  ]
