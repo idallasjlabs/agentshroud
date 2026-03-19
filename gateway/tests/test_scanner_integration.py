@@ -474,7 +474,8 @@ class TestScoreLoggingMonitoring:
         assert score >= 1
 
     def test_two_when_wazuh_running(self):
-        with patch.object(Path, "exists", return_value=False):
+        with patch.object(Path, "exists", return_value=False), \
+             patch("gateway.security.scanner_integration._app_state_has", return_value=False):
             score = _score_logging_monitoring(_wazuh_clean())
         assert score == 2
 
