@@ -46,16 +46,37 @@ def _verify_bearer(token: str, config_token: str) -> bool:
 
 
 def _get_config_token() -> str:
-    """Read the gateway auth token from env/secret."""
+    """Read the gateway auth token from env/secret.
+
+    Resolution order (matches ingest_api/config.py):
+      1. AGENTSHROUD_GATEWAY_PASSWORD env var (explicit)
+      2. OPENCLAW_GATEWAY_PASSWORD env var (legacy)
+      3. GATEWAY_AUTH_TOKEN_FILE env var → read that file
+      4. OPENCLAW_GATEWAY_PASSWORD_FILE env var → read that file
+      5. /run/secrets/gateway_password (Docker secrets mount)
+    """
     token = os.environ.get("AGENTSHROUD_GATEWAY_PASSWORD", "")
     if not token:
         token = os.environ.get("OPENCLAW_GATEWAY_PASSWORD", "")
     if not token:
-        secret_file = os.environ.get("GATEWAY_AUTH_TOKEN_FILE", "")
-        if secret_file:
+        for file_env in ("GATEWAY_AUTH_TOKEN_FILE", "OPENCLAW_GATEWAY_PASSWORD_FILE"):
+            secret_file = os.environ.get(file_env, "")
+            if secret_file:
+                try:
+                    with open(secret_file) as f:
+                        token = f.read().strip()
+                    if token:
+                        break
+                except OSError:
+                    pass
+    if not token:
+        # Docker secrets default mount (matches lifespan.py _read_secret("gateway_password"))
+        for path in ("/run/secrets/gateway_password", "/run/secrets/agentshroud_gateway_password"):
             try:
-                with open(secret_file) as f:
+                with open(path) as f:
                     token = f.read().strip()
+                if token:
+                    break
             except OSError:
                 pass
     return token
