@@ -152,7 +152,7 @@ logger = logging.getLogger("agentshroud.gateway.main")
 app = FastAPI(
     title="AgentShroud Gateway",
     description="Ingest API for the AgentShroud proxy layer framework",
-    version="0.8.0",
+    version="0.9.0",
     lifespan=lifespan,
 )
 
@@ -1180,7 +1180,9 @@ async def run_clamav_scan(auth: AuthRequired, target: str = "/app"):
     # Prefer clamdscan (daemon, shared memory) if clamd is running, else clamscan
     import os as _os
     _bin = "clamdscan" if (_sh.which("clamdscan") and _os.path.exists("/var/run/clamav/clamd.ctl")) else "clamscan"
-    result = app_state.clamav_scanner.run_clamscan(target=target, timeout=120, clamscan_bin=_bin)
+    result = await asyncio.get_running_loop().run_in_executor(
+        None, lambda: app_state.clamav_scanner.run_clamscan(target=target, timeout=120, clamscan_bin=_bin)
+    )
     await _record_scanner_result("clamav", result, target=target)
     if app_state.alert_dispatcher and result.get("infected_count", 0) > 0:
         app_state.alert_dispatcher.dispatch(
@@ -2234,7 +2236,9 @@ async def run_all_scanners(auth: AuthRequired):
         import os as _os
 
         _bin = "clamdscan" if (_sh.which("clamdscan") and _os.path.exists("/var/run/clamav/clamd.ctl")) else "clamscan"
-        clam = app_state.clamav_scanner.run_clamscan(target="/app", timeout=120, clamscan_bin=_bin)
+        clam = await asyncio.get_running_loop().run_in_executor(
+            None, lambda: app_state.clamav_scanner.run_clamscan(target="/app", timeout=120, clamscan_bin=_bin)
+        )
         await _record_scanner_result("clamav", clam, target="/app")
         results["clamav"] = clam
     else:
@@ -2951,13 +2955,15 @@ async def deep_security_test(auth: AuthRequired):
     # ═══════════════════════════════════════════════════
     # 28. CLAMAV — live scan
     # ═══════════════════════════════════════════════════
-    def t_clamav():
+    async def t_clamav():
         scanner = getattr(app_state, "clamav_scanner", None)
         if not scanner or not shutil.which("clamscan"):
             return False, "ClamAV not available"
-        r = scanner.run_clamscan(target="/app/agentshroud.yaml", timeout=60, clamscan_bin="clamscan")
+        r = await asyncio.get_running_loop().run_in_executor(
+            None, lambda: scanner.run_clamscan(target="/app/agentshroud.yaml", timeout=60, clamscan_bin="clamscan")
+        )
         return r.get("returncode") == 0, f"rc={r.get('returncode')}, infected={r.get('infected_count')}"
-    test("ClamAV: live scan", "antivirus", t_clamav)
+    await atest("ClamAV: live scan", "antivirus", t_clamav)
 
     # ═══════════════════════════════════════════════════
     # 29. TRIVY — misconfig scan
@@ -3450,7 +3456,7 @@ async def get_soc2_compliance_report(auth: AuthRequired):
 
     return {
         "standard": "SOC 2 Type II — Trust Service Criteria",
-        "version": "v0.8.0-watchtower",
+        "version": "v0.9.0",
         "criteria_total": len(criteria),
         "criteria_covered": len(covered),
         "criteria_gaps": len(gaps),
