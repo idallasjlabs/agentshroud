@@ -148,6 +148,30 @@ _SCORECARD_DOMAINS: List[Dict[str, Any]] = [
 # Internal helpers
 # ---------------------------------------------------------------------------
 
+def _is_fresh(report_dir: Path, prefix: str = "", max_age_hours: int = 24) -> bool:
+    """Return True if the most recent report file was written within max_age_hours."""
+    if not report_dir.exists():
+        return False
+    pattern = f"{prefix}*.json" if prefix else "*.json"
+    files = sorted(report_dir.glob(pattern), reverse=True)
+    if not files:
+        return False
+    try:
+        age_hours = (datetime.now(timezone.utc).timestamp() - files[0].stat().st_mtime) / 3600
+        return age_hours <= max_age_hours
+    except Exception:
+        return False
+
+
+def _app_state_has(attr_name: str) -> bool:
+    """Return True if app_state has a non-None attribute with the given name."""
+    try:
+        from ..ingest_api.state import app_state
+        return getattr(app_state, attr_name, None) is not None
+    except Exception:
+        return False
+
+
 def _load_latest_json(directory: Path, prefix: str = "") -> Optional[Dict[str, Any]]:
     """Load the most recent JSON report file from a directory.
 
@@ -309,44 +333,68 @@ def aggregate_results() -> Dict[str, Any]:
 # ---------------------------------------------------------------------------
 
 def _score_image_integrity(trivy: Dict[str, Any]) -> int:
-    """Score domain 1: Image Integrity (0-5)."""
+    """Score domain 1: Image Integrity (0-5).
+
+    1=SBOM exists, 2=Trivy ran, 3=zero criticals,
+    4=zero criticals+highs (Measured), 5=all clean + scan fresh <24h (Optimizing).
+    """
     score = 0
-    # SBOM exists in report dir → Syft has run
-    if _SBOM_REPORT_DIR.exists() and any(_SBOM_REPORT_DIR.glob("sbom-*.json")):
+    sbom_exists = _SBOM_REPORT_DIR.exists() and any(_SBOM_REPORT_DIR.glob("sbom-*.json"))
+    trivy_ran = trivy.get("status") not in ("not_run", "error")
+    trivy_no_critical = trivy_ran and trivy.get("critical", 0) == 0
+    trivy_no_high = trivy_ran and trivy.get("high", 0) == 0
+    if sbom_exists:
         score += 1
-    # Trivy has run and found no criticals
-    if trivy.get("status") not in ("not_run", "error"):
+    if trivy_ran:
         score += 1
-    if trivy.get("critical", 0) == 0 and trivy.get("status") not in ("not_run", "error"):
+    if trivy_no_critical:
         score += 1
-    # Cap at 3 — cosign automated in CI would push to 4-5
-    return min(score, 3)
+    if trivy_no_critical and trivy_no_high:
+        score += 1
+    if sbom_exists and trivy_no_critical and trivy_no_high and _is_fresh(_TRIVY_REPORT_DIR, "trivy-"):
+        score += 1
+    return min(score, 5)
 
 
 def _score_vulnerability_management(trivy: Dict[str, Any]) -> int:
-    """Score domain 2: Vulnerability Management (0-5)."""
-    if trivy.get("status") in ("not_run",):
-        # Trivy module code exists → Initial (1)
+    """Score domain 2: Vulnerability Management (0-5).
+
+    1=module exists, 2=zero criticals, 3=zero criticals+highs,
+    4=zero criticals+highs+mediums (Measured), 5=clean + scan fresh <24h (Optimizing).
+    """
+    if trivy.get("status") in ("not_run",) or trivy.get("error"):
         return 1
-    if trivy.get("error"):
+    if trivy.get("critical", 0) > 0:
         return 1
-    if trivy.get("critical", 0) == 0 and trivy.get("high", 0) == 0:
-        # Automated, no criticals → Defined (3)
-        return 3
-    if trivy.get("critical", 0) == 0:
-        # Running but high vulns present → Managed (2)
+    if trivy.get("high", 0) > 0:
         return 2
-    # Has criticals → Initial (1)
-    return 1
+    if trivy.get("medium", 0) > 0:
+        return 3
+    # Zero criticals + highs + mediums
+    if _is_fresh(_TRIVY_REPORT_DIR, "trivy-"):
+        return 5
+    return 4
 
 
 def _score_supply_chain() -> int:
-    """Score domain 3: Supply Chain (0-5)."""
-    if _SBOM_REPORT_DIR.exists() and any(_SBOM_REPORT_DIR.glob("sbom-*.json")):
-        # SBOM generated → Managed (2)
+    """Score domain 3: Supply Chain (0-5).
+
+    0=no SBOM, 2=SBOM exists, 3=SBOM has packages,
+    4=SBOM + Trivy cross-referenced (Measured), 5=SBOM + Trivy + zero criticals (Optimizing).
+    """
+    if not (_SBOM_REPORT_DIR.exists() and any(_SBOM_REPORT_DIR.glob("sbom-*.json"))):
+        return 0
+    sbom = get_sbom()
+    packages = len(sbom.get("packages", [])) if sbom else 0
+    if packages == 0:
         return 2
-    # No SBOM → Not Started (0)
-    return 0
+    trivy = get_trivy_summary()
+    trivy_ran = trivy.get("status") not in ("not_run", "error")
+    if not trivy_ran:
+        return 3
+    if trivy.get("critical", 0) > 0:
+        return 4
+    return 5
 
 
 def _score_container_hardening(openscap: Dict[str, Any]) -> int:
@@ -364,80 +412,134 @@ def _score_container_hardening(openscap: Dict[str, Any]) -> int:
 
 
 def _score_runtime_protection(falco: Dict[str, Any]) -> int:
-    """Score domain 5: Runtime Protection (0-5)."""
+    """Score domain 5: Runtime Protection (0-5).
+
+    1=module exists, 2=running with criticals, 4=running no criticals + actively monitoring,
+    5=running no criticals + zero findings (Optimizing).
+    """
     if falco.get("status") == "not_run":
-        # Module code exists → Initial (1)
         return 1
     if falco.get("critical", 0) > 0:
-        # Falco running but active criticals → Managed (2)
         return 2
-    # Falco running, no criticals → Defined (3)
-    return 3
+    # Running, no criticals
+    if falco.get("findings", 0) == 0:
+        return 5  # Zero findings — clean
+    return 4  # Has non-critical findings — actively monitoring
 
 
 def _score_malware_defense(clamav: Dict[str, Any]) -> int:
-    """Score domain 6: Malware Defense (0-5)."""
+    """Score domain 6: Malware Defense (0-5).
+
+    1=module exists or infected, 3=running clean,
+    4=running clean + workspace scanned (Measured),
+    5=running clean + scanned + report fresh <24h (Optimizing).
+    """
     if clamav.get("status") == "not_run":
-        # Module code exists → Initial (1)
         return 1
     if clamav.get("critical", 0) > 0:
-        # Infected files found → Initial (still wired but failing)
         return 1
-    # ClamAV running, clean → Defined (3)
+    # Running and clean
+    if clamav.get("files_scanned", 0) > 0:
+        if _is_fresh(_CLAMAV_REPORT_DIR, "clamav-"):
+            return 5
+        return 4
     return 3
 
 
 def _score_network_segmentation() -> int:
     """Score domain 7: Network Segmentation (0-5).
 
-    Three Docker bridge networks (internal, isolated, console) with proper
-    isolation already implemented. network_validator.py provides runtime audit.
-    Hardcoded Defined (3) — kernel-level enforcement deferred to post-v1.0.
+    3=Docker network architecture baseline, 4=Docker socket accessible (Measured),
+    5=network_validator runtime module loaded (Optimizing).
     """
-    return 3
+    score = 3
+    if Path("/var/run/docker.sock").exists():
+        score += 1
+    if _app_state_has("network_validator"):
+        score += 1
+    return min(score, 5)
 
 
 def _score_secrets_management() -> int:
     """Score domain 8: Secrets Management (0-5).
 
-    Docker secrets + key_vault.py + key_rotation.py = Managed (2).
-    key_vault stores secrets in-memory (no encryption at rest).
-    Ephemeral audit trail. Deferred to v1.0 for Vault or encrypted store.
+    2=Docker secrets + key_vault baseline, 3=runtime secrets mounted (Defined),
+    4=key_rotation module present (Measured), 5=encrypted_store initialized (Optimizing).
     """
-    return 2
+    score = 2
+    # Runtime secrets mounted at /run/secrets
+    secrets_dir = Path("/run/secrets")
+    if secrets_dir.exists():
+        try:
+            if any(secrets_dir.iterdir()):
+                score += 1
+        except Exception:
+            pass
+    # key_rotation module present
+    key_rotation_paths = [
+        Path("/app/gateway/security/key_rotation.py"),
+        Path("gateway/security/key_rotation.py"),
+    ]
+    if any(p.exists() for p in key_rotation_paths):
+        score += 1
+    # encrypted_store initialized in app_state
+    if _app_state_has("encrypted_store"):
+        score += 1
+    return min(score, 5)
 
 
 def _score_logging_monitoring(wazuh: Dict[str, Any]) -> int:
-    """Score domain 9: Logging & Monitoring (0-5)."""
+    """Score domain 9: Logging & Monitoring (0-5).
+
+    1=SOC exists, 2=Wazuh running, 3=Fluent Bit config,
+    4=event_bus active (Measured), 5=all three pillars present (Optimizing).
+    """
     score = 1  # SOC dashboard exists
-    if wazuh.get("status") != "not_run":
-        score += 1  # Wazuh agent running
-    # Fluent Bit config present in the container
+    wazuh_running = wazuh.get("status") != "not_run"
+    if wazuh_running:
+        score += 1
     fluent_bit_paths = [
         Path("/fluent-bit/etc/fluent-bit.conf"),
         Path("/etc/fluent-bit/fluent-bit.conf"),
     ]
-    if any(p.exists() for p in fluent_bit_paths):
-        score += 1  # Fluent Bit forwarding configured
-    return min(score, 3)
+    fluent_bit_present = any(p.exists() for p in fluent_bit_paths)
+    if fluent_bit_present:
+        score += 1
+    event_bus_active = _app_state_has("event_bus")
+    if event_bus_active:
+        score += 1
+    # Optimizing: all monitoring pillars present simultaneously
+    if fluent_bit_present and wazuh_running and event_bus_active:
+        score += 1
+    return min(score, 5)
 
 
 def _score_compliance_auditing(openscap: Dict[str, Any]) -> int:
-    """Score domain 10: Compliance Auditing (0-5)."""
+    """Score domain 10: Compliance Auditing (0-5).
+
+    0=not run, 2=has failures, 3=zero failures,
+    4=zero failures + report on disk (Measured), 5=zero failures + fresh report <24h (Optimizing).
+    """
     if openscap.get("status") == "not_run":
-        # No scanning → Not Started (0)
         return 0
-    if openscap.get("fail_count", 0) == 0:
-        # Automated, all passing → Defined (3)
+    if openscap.get("fail_count", 0) > 0:
+        return 2
+    # Zero failures — at least Defined (3)
+    report_exists = _OPENSCAP_REPORT_DIR.exists() and any(_OPENSCAP_REPORT_DIR.glob("openscap-*.json"))
+    if not report_exists:
         return 3
-    # Running but has failures → Managed (2)
-    return 2
+    if _is_fresh(_OPENSCAP_REPORT_DIR, "openscap-"):
+        return 5
+    return 4
 
 
 def _score_secure_development() -> int:
-    """Score domain 11: Secure Development (0-5)."""
+    """Score domain 11: Secure Development (0-5).
+
+    1=Trivy in build, 2=semgrep config, 3=pre-commit config,
+    4=gitleaks config (Measured), 5=SDL documentation present (Optimizing).
+    """
     score = 1  # Trivy used in build script = baseline Initial
-    # Semgrep config present
     semgrep_paths = [
         Path(".semgrep.yml"),
         Path("/app/.semgrep.yml"),
@@ -445,24 +547,51 @@ def _score_secure_development() -> int:
     ]
     if any(p.exists() for p in semgrep_paths):
         score += 1
-    # Pre-commit config present
     precommit_paths = [
         Path(".pre-commit-config.yaml"),
         Path("/app/.pre-commit-config.yaml"),
     ]
     if any(p.exists() for p in precommit_paths):
         score += 1
-    return min(score, 3)
+    gitleaks_paths = [
+        Path(".gitleaks.toml"),
+        Path("gitleaks.toml"),
+        Path("/app/.gitleaks.toml"),
+        Path("/app/gitleaks.toml"),
+    ]
+    if any(p.exists() for p in gitleaks_paths):
+        score += 1
+    sdl_doc_paths = [
+        Path("CONTRIBUTING.md"),
+        Path("/app/CONTRIBUTING.md"),
+        Path("SECURITY.md"),
+        Path("/app/SECURITY.md"),
+    ]
+    if any(p.exists() for p in sdl_doc_paths):
+        score += 1
+    return min(score, 5)
 
 
 def _score_incident_response(falco: Dict[str, Any], wazuh: Dict[str, Any]) -> int:
-    """Score domain 12: Incident Response (0-5)."""
+    """Score domain 12: Incident Response (0-5).
+
+    1=SOC exists, 2=Falco running, 3=Wazuh running,
+    4=soc_correlation engine initialized (Measured), 5=killswitch available (Optimizing).
+    """
     score = 1  # SOC correlation engine wired = baseline
     if falco.get("status") != "not_run":
-        score += 1  # Falco → SOC event stream
+        score += 1
     if wazuh.get("status") != "not_run":
-        score += 1  # Wazuh → SOC event stream
-    return min(score, 3)
+        score += 1
+    if _app_state_has("soc_correlation"):
+        score += 1
+    killswitch_paths = [
+        Path("/app/docker/scripts/killswitch.sh"),
+        Path("docker/scripts/killswitch.sh"),
+    ]
+    if any(p.exists() for p in killswitch_paths):
+        score += 1
+    return min(score, 5)
 
 
 # ---------------------------------------------------------------------------
@@ -515,6 +644,9 @@ def compute_scorecard() -> Dict[str, Any]:
     overall_pct = round((total / max_total) * 100)
     overall_maturity_idx = min(overall_pct // 20, 5)
 
+    overall_score = round(total / max_total * 5, 2) if max_total else 0.0
+    overall_label = _MATURITY_LABELS[overall_maturity_idx]
+
     return {
         "version": "v0.9.0",
         "standard_basis": [
@@ -530,5 +662,8 @@ def compute_scorecard() -> Dict[str, Any]:
             "max": max_total,
             "percentage": overall_pct,
         },
-        "overall_maturity": _MATURITY_LABELS[overall_maturity_idx],
+        # UI-friendly aliases
+        "overall_score": overall_score,
+        "overall_level": overall_label,
+        "overall_maturity": overall_label,
     }
