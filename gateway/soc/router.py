@@ -23,7 +23,7 @@ from typing import Any, Dict, List, Optional
 
 from fastapi import APIRouter, Depends, HTTPException, Query, Request, WebSocket, status
 from fastapi.responses import HTMLResponse, JSONResponse, StreamingResponse
-from pydantic import BaseModel
+from pydantic import BaseModel, Field
 
 from .auth import SCLCaller, get_caller, issue_session_token, issue_ws_token
 from .models import (
@@ -116,7 +116,7 @@ async def auth_login(body: LoginRequest) -> JSONResponse:
 
 
 @router.post("/auth/ws-token")
-async def auth_ws_token(caller: SCLCaller = Depends(get_caller)) -> Dict[str, str]:
+async def auth_ws_token(caller: SCLCaller = Depends(get_caller)) -> Dict[str, Any]:
     """Issue a short-lived WebSocket token for /ws/soc."""
     ws_token = issue_ws_token(caller.user_id)
     return {"token": ws_token, "ttl_seconds": 300}
@@ -164,12 +164,13 @@ async def get_soc_correlation(caller: SCLCaller = Depends(get_caller)) -> Dict:
     caller.require(Action.READ, Resource.SYSTEM)
     app = _app_state()
     try:
-        from ..security.soc_correlation import SOCCorrelationEngine
         engine = getattr(app, "soc_correlation", None)
         if engine and hasattr(engine, "get_summary"):
             return engine.get_summary()
-    except Exception:
-        pass
+        from ..security.soc_correlation import build_correlation_summary
+        return build_correlation_summary(app).to_dict()
+    except Exception as exc:
+        logger.debug("get_soc_correlation: %s", exc)
     return {"status": "unavailable", "risk_score": 0, "signals": []}
 
 
@@ -182,8 +183,11 @@ async def get_risk_score(caller: SCLCaller = Depends(get_caller)) -> Dict:
         if engine and hasattr(engine, "get_risk_score"):
             score = engine.get_risk_score()
             return {"risk_score": score, "level": _risk_level_label(score)}
-    except Exception:
-        pass
+        from ..security.soc_correlation import build_correlation_summary
+        score = build_correlation_summary(app).risk_score
+        return {"risk_score": score, "level": _risk_level_label(score)}
+    except Exception as exc:
+        logger.debug("get_risk_score: %s", exc)
     return {"risk_score": 0, "level": "low"}
 
 
@@ -247,9 +251,9 @@ async def get_egress_pending(caller: SCLCaller = Depends(get_caller)) -> List[Di
     app = _app_state()
     try:
         eq = getattr(app, "egress_approval_queue", None)
-        if eq and hasattr(eq, "get_pending"):
-            pending = eq.get_pending()
-            return [p if isinstance(p, dict) else vars(p) for p in pending]
+        if eq and hasattr(eq, "get_pending_requests"):
+            pending = await eq.get_pending_requests()
+            return pending if isinstance(pending, list) else []
     except Exception as exc:
         logger.debug("get_egress_pending: %s", exc)
     return []
@@ -643,6 +647,63 @@ async def get_group(group_id: str, caller: SCLCaller = Depends(get_caller)) -> D
     return {"id": group_id, **g.model_dump()}
 
 
+class CreateGroupRequest(BaseModel):
+    group_id: str
+    name: str
+    collab_mode: str = "local_only"
+    members: List[str] = Field(default_factory=list)
+    admin: Optional[str] = None
+
+
+@router.post("/groups")
+async def create_group(
+    body: CreateGroupRequest,
+    caller: SCLCaller = Depends(get_caller),
+) -> Dict:
+    """Create a new group at runtime (owner only)."""
+    caller.require(Action.WRITE, Resource.GROUPS)
+    if not caller.is_owner():
+        raise HTTPException(status_code=403, detail={"error": True, "code": "PERMISSION_DENIED", "message": "Owner required"})
+    app = _app_state()
+    teams = getattr(getattr(app, "config", None), "teams", None)
+    if teams is None:
+        raise HTTPException(status_code=503, detail={"error": True, "code": "CONFIG_UNAVAILABLE", "message": "Teams config not available"})
+    if body.group_id in teams.groups:
+        raise HTTPException(status_code=409, detail={"error": True, "code": "CONFLICT", "message": f"Group '{body.group_id}' already exists"})
+    from ..security.group_config import GroupConfig, persist_group_create
+    new_group = GroupConfig(
+        id=body.group_id,
+        name=body.name,
+        members=body.members,
+        admin=body.admin,
+        collab_mode=body.collab_mode,
+    )
+    teams.groups[body.group_id] = new_group
+    persist_group_create(body.group_id, body.name, body.collab_mode, body.members, body.admin)
+    _log_audit(caller, "create group", target=body.group_id, details={"name": body.name, "collab_mode": body.collab_mode})
+    return {"ok": True, "id": body.group_id, "name": body.name, "collab_mode": body.collab_mode, "members": body.members}
+
+
+@router.delete("/groups/{group_id}")
+async def delete_group(
+    group_id: str,
+    caller: SCLCaller = Depends(get_caller),
+) -> Dict:
+    """Delete a group at runtime (owner only)."""
+    caller.require(Action.WRITE, Resource.GROUPS)
+    if not caller.is_owner():
+        raise HTTPException(status_code=403, detail={"error": True, "code": "PERMISSION_DENIED", "message": "Owner required"})
+    app = _app_state()
+    teams = getattr(getattr(app, "config", None), "teams", None)
+    if not teams or group_id not in teams.groups:
+        raise HTTPException(status_code=404, detail={"error": True, "code": "NOT_FOUND", "message": f"Group {group_id} not found"})
+    del teams.groups[group_id]
+    from ..security.group_config import persist_group_delete
+    persist_group_delete(group_id)
+    _log_audit(caller, "delete group", target=group_id)
+    return {"ok": True, "group_id": group_id, "action": "deleted"}
+
+
 class AddGroupMemberRequest(BaseModel):
     user_id: str
 
@@ -998,6 +1059,7 @@ _SCANNER_FLAG_MAP = {
     "trivy": "--trivy",
     "clamav": "--clamav",
     "openscap": "--oscap",
+    "sbom": "--sbom",
     "all": "--all",
 }
 

@@ -25,6 +25,7 @@ log() {
 LAST_TRIVY_DATE=""
 LAST_CLAMAV_DATE=""
 LAST_OSCAP_DATE=""
+LAST_SBOM_DATE=""
 LAST_REPORT_DATE=""
 LAST_FALCO_CHECK=0
 
@@ -40,6 +41,14 @@ while true; do
         log "Running scheduled Trivy scan"
         "$SCAN_SCRIPT" --trivy 2>&1 >> "$LOG_DIR/scheduler.log" || log "Trivy scan failed"
         LAST_TRIVY_DATE="$CURRENT_DATE"
+    fi
+
+    # SBOM generation at 3:15 AM UTC (after Trivy)
+    CURRENT_MIN=$(date -u +%M)
+    if [ "$CURRENT_HOUR" = "03" ] && [ "$CURRENT_MIN" -ge 15 ] && [ "$LAST_SBOM_DATE" != "$CURRENT_DATE" ]; then
+        log "Running scheduled SBOM generation"
+        "$SCAN_SCRIPT" --sbom 2>&1 >> "$LOG_DIR/scheduler.log" || log "SBOM generation failed"
+        LAST_SBOM_DATE="$CURRENT_DATE"
     fi
 
     # ClamAV scan at 4 AM UTC

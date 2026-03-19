@@ -165,6 +165,23 @@ def _apply_persisted_overrides(teams: TeamsConfig) -> None:
             return
         data = json.loads(_GROUP_OVERRIDES_FILE.read_text(encoding="utf-8"))
         for group_id, ops in data.items():
+            # Runtime deletions take priority
+            if ops.get("_deleted"):
+                teams.groups.pop(group_id, None)
+                continue
+            # Runtime group creations (groups not in static yaml)
+            if ops.get("_created") and group_id not in teams.groups:
+                try:
+                    new_group = GroupConfig(
+                        id=group_id,
+                        name=ops.get("name", group_id),
+                        members=ops.get("members", []),
+                        admin=ops.get("admin") or None,
+                        collab_mode=ops.get("collab_mode", "local_only"),
+                    )
+                    teams.groups[group_id] = new_group
+                except Exception as e:
+                    logger.warning("Could not recreate group '%s' from overrides: %s", group_id, e)
             group = teams.groups.get(group_id)
             if group is None:
                 logger.info("group_overrides: unknown group '%s' skipped", group_id)
@@ -240,3 +257,33 @@ def persist_group_collab_mode(group_id: str, mode: str) -> None:
     data.setdefault(group_id, {})["collab_mode"] = mode
     _save_overrides(data)
     logger.info("Persisted group collab_mode: %s → %s", group_id, mode)
+
+
+def persist_group_create(
+    group_id: str,
+    name: str,
+    collab_mode: str,
+    members: List[str],
+    admin: Optional[str],
+) -> None:
+    """Persist a runtime group creation so it survives container restarts."""
+    data = _load_overrides()
+    data[group_id] = {
+        "_created": True,
+        "name": name,
+        "collab_mode": collab_mode,
+        "members": members or [],
+        "admin": admin,
+        "add_members": [],
+        "remove_members": [],
+    }
+    _save_overrides(data)
+    logger.info("Persisted group create: %s (%s)", group_id, name)
+
+
+def persist_group_delete(group_id: str) -> None:
+    """Persist a runtime group deletion so it survives container restarts."""
+    data = _load_overrides()
+    data[group_id] = {"_deleted": True}
+    _save_overrides(data)
+    logger.info("Persisted group delete: %s", group_id)
