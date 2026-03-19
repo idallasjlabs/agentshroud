@@ -12,6 +12,8 @@ from pathlib import Path
 from typing import Dict, List, Optional, Set
 from urllib.parse import urlparse
 
+from .egress_config import PERMANENT_EGRESS_DOMAINS
+
 logger = logging.getLogger(__name__)
 
 
@@ -70,33 +72,22 @@ class EgressApprovalQueue:
     - Session vs permanent rules
     """
     
-    # Known-safe domains (green risk level)
-    SAFE_DOMAINS = {
-        "api.openai.com",
-        "api.anthropic.com", 
+    # Known-safe domains (green risk level) — derived from canonical PERMANENT_EGRESS_DOMAINS.
+    # Wildcards (*.foo.com) are stored as their base domain (foo.com) so the subdomain
+    # walk in _assess_risk can match them via domain.endswith(".foo.com").
+    SAFE_DOMAINS: set[str] = {
+        d[2:] if d.startswith("*.") else d
+        for d in PERMANENT_EGRESS_DOMAINS
+    } | {
+        # Additional known-safe domains not in the egress allowlist
         "github.com",
         "api.github.com",
         "raw.githubusercontent.com",
-        "icloud.com",
-        "api.icloud.com",
-        "googleapis.com",
-        "generativelanguage.googleapis.com",
-        "oauth2.googleapis.com",
-        "api.google.com",
-        "api.slack.com",
-        "api.telegram.org",
         "discord.com",
         "api.discord.com",
         "api.twitter.com",
         "api.x.com",
-        "1password.com",
-        "pypi.org",
-        "files.pythonhosted.org",
-        "registry.npmjs.org",
         "registry.npmjs.com",
-        "cdnjs.cloudflare.com",
-        "unpkg.com",
-        "cdn.jsdelivr.net"
     }
     
     # Suspicious TLDs (contribute to red risk level)
@@ -147,7 +138,39 @@ class EgressApprovalQueue:
     def set_event_bus(self, event_bus) -> None:
         """Set optional event bus for approval telemetry."""
         self._event_bus = event_bus
-    
+
+    async def preload_permanent_rules(self, domains: List[str]) -> int:
+        """Pre-approve known service domains at startup without interactive prompts.
+
+        Creates in-memory PERMANENT allow rules for each domain that has no
+        existing rule. Domains with persisted deny rules (SOC overrides) are
+        intentionally skipped, preserving SOC control across restarts.
+
+        Rules are NOT written to disk — they are re-injected on every startup
+        from the canonical PERMANENT_EGRESS_DOMAINS list, while persisted deny
+        overrides always win because _check_existing_rule is consulted first.
+
+        Returns:
+            Number of domains newly pre-approved.
+        """
+        added = 0
+        async with self._lock:
+            for raw_domain in domains:
+                # Normalize wildcards: *.foo.com → foo.com for rule storage
+                domain = raw_domain[2:] if raw_domain.startswith("*.") else raw_domain
+                if self._check_existing_rule(domain):
+                    continue  # Existing rule (allow or deny) takes precedence
+                self._permanent_rules[domain] = EgressRule(
+                    domain=domain,
+                    action="allow",
+                    mode=ApprovalMode.PERMANENT,
+                    created_at=time.time(),
+                )
+                added += 1
+        if added:
+            logger.info("EgressApprovalQueue: pre-approved %d known service domain(s)", added)
+        return added
+
     def _assess_risk(self, domain: str, port: int) -> RiskLevel:
         """
         Assess risk level for a domain/port combination.

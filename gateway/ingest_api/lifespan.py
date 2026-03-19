@@ -36,6 +36,7 @@ from ..proxy.mcp_config import MCPProxyConfig
 from ..proxy.web_config import WebProxyConfig
 from ..proxy.web_proxy import WebProxy
 from ..proxy.http_proxy import ALLOWED_DOMAINS, HTTPConnectProxy
+from ..security.egress_config import PERMANENT_EGRESS_DOMAINS
 from ..proxy.dns_forwarder import start_dns_forwarder
 from ..proxy.dns_blocklist import DNSBlocklist
 from ..ssh_proxy.proxy import SSHProxy
@@ -284,6 +285,18 @@ async def lifespan(app: FastAPI):
         )
         app_state.egress_filter.set_approval_queue(app_state.egress_approval_queue)
         logger.info("EgressApprovalQueue initialized and wired")
+
+        # Pre-approve all known service domains so startup doesn't trigger
+        # an avalanche of interactive approval popups.  SOC deny overrides
+        # (persisted across restarts) are respected — preload skips any domain
+        # that already has an existing rule.
+        _preloaded = await app_state.egress_approval_queue.preload_permanent_rules(
+            PERMANENT_EGRESS_DOMAINS
+        )
+        logger.info(
+            "EgressApprovalQueue: %d known service domain(s) pre-approved at startup",
+            _preloaded,
+        )
 
         # Wire per-bot egress policies from BotConfig.egress_domains
         for bot_id, bot in app_state.config.bots.items():
