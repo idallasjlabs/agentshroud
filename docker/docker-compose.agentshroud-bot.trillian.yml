@@ -42,6 +42,28 @@ services:
     memswap_limit: 2g
     cpus: 1.0
 
+  # ── Security sidecars — Trillian resource limits ─────────────────────────────
+  # Trillian: Intel Mac Mini 2018, ~2GB RAM, 2 CPUs. Constrain sidecars tightly.
+  falco:
+    mem_limit: 256m
+    memswap_limit: 256m
+    cpus: 0.25
+
+  clamav:
+    mem_limit: 256m
+    memswap_limit: 256m
+    cpus: 0.25
+
+  wazuh-agent:
+    mem_limit: 128m
+    memswap_limit: 128m
+    cpus: 0.1
+
+  fluent-bit:
+    mem_limit: 64m
+    memswap_limit: 64m
+    cpus: 0.1
+
 secrets:
   telegram_bot_token:
     file: ./secrets/telegram_bot_token_trillian.txt
