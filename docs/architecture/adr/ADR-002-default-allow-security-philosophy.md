@@ -1,7 +1,9 @@
 # ADR-002: Default-Allow Security Philosophy
 
 ## Status
-**Accepted** - December 2025
+**Superseded** — see [ADR-009: Enforce-by-Default Security Philosophy](ADR-009-enforce-by-default.md)
+
+*Original status: Accepted — December 2025. Superseded by ADR-009 — March 2026.*
 
 ## Context
 

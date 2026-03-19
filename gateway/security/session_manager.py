@@ -142,10 +142,30 @@ class UserSessionManager:
         except Exception as e:
             logger.error(f"Failed to save sessions: {e}")
 
+    @staticmethod
+    def _validate_user_id(user_id: str) -> str:
+        """Validate and sanitize user_id to prevent path traversal.
+        
+        Only allows alphanumeric characters, underscores, and hyphens.
+        Raises ValueError for invalid user IDs.
+        """
+        import re
+        if not user_id or not re.match(r'^[a-zA-Z0-9_-]+$', user_id):
+            raise ValueError(f"Invalid user_id: must be alphanumeric, got {user_id!r}")
+        if len(user_id) > 64:
+            raise ValueError(f"Invalid user_id: too long ({len(user_id)} chars)")
+        return user_id
+
     def get_or_create_session(self, user_id: str) -> UserSession:
         """Get existing session or create a new one for the user."""
+        user_id = self._validate_user_id(user_id)
         if user_id not in self.sessions:
             session_dir = self.base_workspace / "users" / user_id
+            # Verify resolved path is within base_workspace (defense in depth)
+            resolved = session_dir.resolve()
+            base_resolved = self.base_workspace.resolve()
+            if not str(resolved).startswith(str(base_resolved)):
+                raise ValueError(f"Path traversal detected for user_id: {user_id!r}")
             session_dir.mkdir(parents=True, exist_ok=True)
             
             workspace_dir = session_dir / "workspace"

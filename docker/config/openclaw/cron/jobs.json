@@ -79,7 +79,7 @@
       "wakeMode": "now",
       "payload": {
         "kind": "agentTurn",
-        "message": "Check for new releases and changes in the AI personal assistant landscape. Fetch latest from: 1) github.com/openclaw/openclaw/releases 2) github.com/drposter/nanobot 3) github.com/moshehbenavraham/crocbot 4) github.com/jimtin/zetherion-ai 5) github.com/qwibitai/nanoclaw 6) github.com/NevaMind-AI/memU 7) github.com/sipeed/picoclaw. Compare with current /home/node/.openclaw/workspace/competitive-analysis.md. If anything significant changed (new release, new security feature, major update, star count milestones), update competitive-analysis.md with new info and updated date. If nothing changed, do nothing."
+        "message": "Competitive intelligence update. ZERO HALLUCINATIONS RULE: only include facts directly verifiable from fetched pages — omit or mark [unverified] anything you cannot confirm. Steps: 1) Fetch current state from: github.com/openclaw/openclaw/releases, github.com/drposter/nanobot, github.com/moshehbenavraham/crocbot, github.com/jimtin/zetherion-ai, github.com/qwibitai/nanoclaw, github.com/NevaMind-AI/memU, github.com/sipeed/picoclaw. Also search for recent news on 'AI personal assistant bot 2026', 'autonomous agent Telegram security', 'Claude MCP agent framework'. 2) Compare with /home/node/.openclaw/workspace/competitive-analysis.md. 3) If significant changes found (new release, security feature, major update, pricing change, star milestone), create /home/node/.openclaw/workspace/reports/competitive-report-[YYYY-MM-DD].md with four sections: ## Market Analysis (trends, key movements, positioning threats/opportunities for AgentShroud), ## Competitor Matrix (table: Competitor | Version | Key Features | Security Posture | Pricing | Notable Changes), ## Autonomous Agent Ecosystem (tool integrations, agent frameworks, MCP adoption, orchestration trends), ## Next Steps (specific recommended responses to competitive changes). 4) Update /home/node/.openclaw/workspace/competitive-analysis.md with verified latest state. 5) Append to /home/node/.openclaw/workspace/reports/trend-log.md: [DATE] | [top verified change] | [recommended action]. 6) If nothing significant changed, append to trend-log.md: [DATE] | No significant changes detected | No action needed. Do not update competitive-analysis.md if nothing changed."
       },
       "state": {
         "nextRunAtMs": 1771847100000,
@@ -109,7 +109,7 @@
       "wakeMode": "now",
       "payload": {
         "kind": "agentTurn",
-        "message": "Send the daily competitive analysis email. Steps: 1) Read /home/node/.openclaw/workspace/competitive-analysis.md. 2) Get Gmail app password via: export OP_SERVICE_ACCOUNT_TOKEN=$(cat /run/secrets/1password_service_account) && op item get tdx3r77qoplljrv45luh7zkngi --vault Agent\\ Shroud\\ Bot\\ Credentials --fields label=password --reveal. 3) Send email to idallasj@gmail.com from agentshroud.ai@gmail.com using nodemailer (smtp.gmail.com:465 SSL). Subject: AgentShroud Daily Competitive Analysis AM - [today date]. Body: full competitive analysis as plain text. 4) Report success or failure."
+        "message": "Send the morning competitive analysis email. Steps: 1) Determine today's date in YYYY-MM-DD format. 2) Check if a competitive-report-[today's date].md exists in /home/node/.openclaw/workspace/reports/ — if yes, read that file; otherwise read /home/node/.openclaw/workspace/competitive-analysis.md as fallback. 3) Get Gmail app password via: export OP_SERVICE_ACCOUNT_TOKEN=$(cat /run/secrets/1password_service_account) && op item get tdx3r77qoplljrv45luh7zkngi --vault 'Agent Shroud Bot Credentials' --fields label=password --reveal. 4) Send email to idallasj@gmail.com from agentshroud.ai@gmail.com using nodemailer (smtp.gmail.com:465 SSL). Subject: AgentShroud Competitive Intelligence (AM) - [today date]. Body: full report content as plain text. 5) Report success or failure to Isaiah."
       },
       "state": {
         "nextRunAtMs": 1771848000000,
@@ -140,7 +140,7 @@
       "wakeMode": "now",
       "payload": {
         "kind": "agentTurn",
-        "message": "Generate a collaborator activity report. Read all files in /home/node/.openclaw/workspace/memory/contributors/ for today's date. Summarize: who messaged the bot, what they asked, what recommendations they made, any action items for Isaiah. If no collaborator activity today, say No collaborator activity since last report. Keep it concise."
+        "message": "Generate a collaborator activity report for the last 24 hours. Step 1: determine today's date in YYYY-MM-DD format. Step 2: look for contributor log files whose filenames START WITH today's date in BOTH paths: /home/node/agentshroud/gateway-data/contributors/ (primary) and /home/node/.openclaw/workspace/memory/contributors/ (fallback). Only read files matching today's date prefix — do NOT read files from previous days. Step 3: merge any duplicate entries across both paths. Step 4: summarize who messaged the bot today, what they asked, what recommendations they made, and any action items for Isaiah. If no files are found for today's date, report exactly: No collaborator activity in the last 24 hours. Keep it concise. Note: Isaiah can request a full history report by asking the agent directly (e.g., 'show Brett's full activity this week')."
       },
       "state": {
         "nextRunAtMs": 1771858800000,
@@ -169,7 +169,7 @@
       "wakeMode": "now",
       "payload": {
         "kind": "agentTurn",
-        "message": "Generate a collaborator activity report. Read all files in /home/node/.openclaw/workspace/memory/contributors/ for today's date. Summarize: who messaged the bot, what they asked, what recommendations they made, any action items for Isaiah. If no collaborator activity today, say No collaborator activity since last report. Keep it concise."
+        "message": "Generate a collaborator activity report for the last 24 hours. Step 1: determine today's date in YYYY-MM-DD format. Step 2: look for contributor log files whose filenames START WITH today's date in BOTH paths: /home/node/agentshroud/gateway-data/contributors/ (primary) and /home/node/.openclaw/workspace/memory/contributors/ (fallback). Only read files matching today's date prefix — do NOT read files from previous days. Step 3: merge any duplicate entries across both paths. Step 4: summarize who messaged the bot today, what they asked, what recommendations they made, and any action items for Isaiah. If no files are found for today's date, report exactly: No collaborator activity in the last 24 hours. Keep it concise. Note: Isaiah can request a full history report by asking the agent directly (e.g., 'show Brett's full activity this week')."
       },
       "state": {
         "nextRunAtMs": 1771861500000,
@@ -198,7 +198,7 @@
       "wakeMode": "now",
       "payload": {
         "kind": "agentTurn",
-        "message": "Generate the daily collaborator digest. Read ALL files in /home/node/.openclaw/workspace/memory/contributors/ for today's date. Create a comprehensive summary: 1) Total interactions per collaborator 2) Key questions asked 3) Recommendations and suggestions made 4) Action items requiring Isaiah's attention 5) Any concerns or notable patterns. If no collaborator activity today, say No collaborator activity today."
+        "message": "Generate the daily collaborator digest for the last 24 hours. Step 1: determine today's date in YYYY-MM-DD format. Step 2: read only contributor log files whose filenames START WITH today's date from BOTH paths: /home/node/agentshroud/gateway-data/contributors/ (primary) and /home/node/.openclaw/workspace/memory/contributors/ (fallback). Do NOT read files from previous days. Step 3: merge duplicates. Step 4: produce a structured summary — 1) Total interactions per collaborator today 2) Key questions asked 3) Recommendations and suggestions made 4) Action items requiring Isaiah's attention 5) Any concerns or notable patterns. If no files are found for today's date, report exactly: No collaborator activity in the last 24 hours. Isaiah can request a full history report by asking the agent directly (e.g., 'show all Steve's messages from last week' or 'full collaborator report for the past 7 days')."
       },
       "state": {
         "nextRunAtMs": 1771826400000,
@@ -227,7 +227,7 @@
       "wakeMode": "now",
       "payload": {
         "kind": "agentTurn",
-        "message": "Check for new releases and changes in the AI personal assistant landscape. Fetch latest from: 1) github.com/openclaw/openclaw/releases 2) github.com/drposter/nanobot 3) github.com/moshehbenavraham/crocbot 4) github.com/jimtin/zetherion-ai 5) github.com/qwibitai/nanoclaw 6) github.com/NevaMind-AI/memU 7) github.com/sipeed/picoclaw. Compare with current /home/node/.openclaw/workspace/competitive-analysis.md. If anything significant changed (new release, new security feature, major update, star count milestones), update competitive-analysis.md with new info and updated date. If nothing changed, do nothing."
+        "message": "Competitive intelligence update. ZERO HALLUCINATIONS RULE: only include facts directly verifiable from fetched pages — omit or mark [unverified] anything you cannot confirm. Steps: 1) Fetch current state from: github.com/openclaw/openclaw/releases, github.com/drposter/nanobot, github.com/moshehbenavraham/crocbot, github.com/jimtin/zetherion-ai, github.com/qwibitai/nanoclaw, github.com/NevaMind-AI/memU, github.com/sipeed/picoclaw. Also search for recent news on 'AI personal assistant bot 2026', 'autonomous agent Telegram security', 'Claude MCP agent framework'. 2) Compare with /home/node/.openclaw/workspace/competitive-analysis.md. 3) If significant changes found (new release, security feature, major update, pricing change, star milestone), create /home/node/.openclaw/workspace/reports/competitive-report-[YYYY-MM-DD].md with four sections: ## Market Analysis (trends, key movements, positioning threats/opportunities for AgentShroud), ## Competitor Matrix (table: Competitor | Version | Key Features | Security Posture | Pricing | Notable Changes), ## Autonomous Agent Ecosystem (tool integrations, agent frameworks, MCP adoption, orchestration trends), ## Next Steps (specific recommended responses to competitive changes). 4) Update /home/node/.openclaw/workspace/competitive-analysis.md with verified latest state. 5) Append to /home/node/.openclaw/workspace/reports/trend-log.md: [DATE] | [top verified change] | [recommended action]. 6) If nothing significant changed, append to trend-log.md: [DATE] | No significant changes detected | No action needed. Do not update competitive-analysis.md if nothing changed."
       },
       "state": {
         "nextRunAtMs": 1771793100000,
@@ -256,7 +256,7 @@
       "wakeMode": "now",
       "payload": {
         "kind": "agentTurn",
-        "message": "Send the afternoon competitive analysis email. Steps: 1) Read /home/node/.openclaw/workspace/competitive-analysis.md. 2) Get Gmail app password: export OP_SERVICE_ACCOUNT_TOKEN=$(cat /run/secrets/1password_service_account) && op item get tdx3r77qoplljrv45luh7zkngi --vault 'Agent Shroud Bot Credentials' --fields label='password' --reveal. 3) Send email to idallasj@gmail.com from agentshroud.ai@gmail.com using nodemailer (smtp.gmail.com:465 SSL). Subject: 'AgentShroud Daily Competitive Analysis (PM) - [today date]'. Body: the full competitive analysis as plain text. 4) Report success or failure."
+        "message": "Send the afternoon competitive analysis email. Steps: 1) Determine today's date in YYYY-MM-DD format. 2) Check if a competitive-report-[today's date].md exists in /home/node/.openclaw/workspace/reports/ — if yes, read that file; otherwise read /home/node/.openclaw/workspace/competitive-analysis.md as fallback. 3) Get Gmail app password: export OP_SERVICE_ACCOUNT_TOKEN=$(cat /run/secrets/1password_service_account) && op item get tdx3r77qoplljrv45luh7zkngi --vault 'Agent Shroud Bot Credentials' --fields label='password' --reveal. 4) Send email to idallasj@gmail.com from agentshroud.ai@gmail.com using nodemailer (smtp.gmail.com:465 SSL). Subject: 'AgentShroud Competitive Intelligence (PM) - [today date]'. Body: full report content as plain text. 5) Report success or failure to Isaiah."
       },
       "state": {
         "nextRunAtMs": 1771794000000,

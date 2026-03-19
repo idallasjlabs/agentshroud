@@ -58,6 +58,7 @@ class ResourceGuard:
         self.temp_files_by_agent: Dict[str, List[str]] = defaultdict(list)
         self.alert_callbacks: List[callable] = []
         self.monitoring_active = True
+        self._monitor_task: Optional[asyncio.Task] = None
         self._start_monitoring_task()
 
     def add_alert_callback(self, callback: callable):
@@ -68,10 +69,31 @@ class ResourceGuard:
         """Start background monitoring task."""
         try:
             loop = asyncio.get_running_loop()
-            loop.create_task(self._monitor_resources())
+            self._monitor_task = loop.create_task(self._monitor_resources())
         except RuntimeError:
             # No event loop running, monitoring will be manual
             pass
+
+    async def stop(self):
+        """Stop background monitoring task cleanly."""
+        self.monitoring_active = False
+        if self._monitor_task and not self._monitor_task.done():
+            self._monitor_task.cancel()
+            try:
+                await self._monitor_task
+            except asyncio.CancelledError:
+                pass
+
+    def __del__(self):
+        """Best-effort cleanup for test contexts that don't call stop()."""
+        self.monitoring_active = False
+        task = getattr(self, "_monitor_task", None)
+        if task and not task.done():
+            try:
+                task.cancel()
+            except RuntimeError:
+                # Event loop already closed during interpreter/test teardown
+                pass
 
     async def _monitor_resources(self):
         """Background task to monitor resource usage and trigger alerts."""
@@ -241,7 +263,7 @@ class ResourceGuard:
             return True
         except Exception as e:
             logger.error(f"CPU check failed for agent {agent_id}: {e}")
-            return True  # Allow by default on error
+            return False  # Fail-closed: deny on error
 
     def check_memory_limit(self, agent_id: str) -> bool:
         """Check if agent has exceeded memory limit."""
@@ -260,7 +282,7 @@ class ResourceGuard:
             return True
         except Exception as e:
             logger.error(f"Memory check failed for agent {agent_id}: {e}")
-            return True
+            return False  # Fail-closed: deny on error
 
     def check_disk_write_limit(self, agent_id: str) -> bool:
         """Check if agent has exceeded disk write limit."""
@@ -283,7 +305,7 @@ class ResourceGuard:
             return True
         except Exception as e:
             logger.error(f"Disk write check failed for agent {agent_id}: {e}")
-            return True
+            return False  # Fail-closed: deny on error
 
     def register_temp_file(self, agent_id: str, file_path: str) -> bool:
         """Register a temporary file for tracking."""

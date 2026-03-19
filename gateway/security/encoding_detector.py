@@ -25,7 +25,7 @@ class EncodingConfig:
     check_url: bool = True
     check_homoglyphs: bool = True
     check_zero_width: bool = True
-    min_base64_len: int = 8
+    min_base64_len: int = 24
     max_decode_depth: int = 3
 
 @dataclass

@@ -188,8 +188,12 @@ class EnvironmentGuard:
                 return False
 
         except Exception as e:
-            logger.error(f"Error parsing command '{command}': {e}")
-            # Allow execution if parsing fails to avoid breaking legitimate commands
+            # Text that doesn't parse as shell syntax is not a shell command.
+            # Natural language with quotes/punctuation triggers shlex errors.
+            # Genuine dangerous commands (env, printenv, cat /proc/...) always
+            # parse cleanly, so allowing on parse failure is safe.
+            logger.debug("env_guard: shlex parse error (not a command): %s", e)
+            return True
 
         return True
 

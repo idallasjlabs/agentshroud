@@ -43,6 +43,7 @@ class WebProxyConfig:
             "malware-payload.net",
             "phishing-site.org",
             "prompt-inject.attacker.com",
+            "api.telegram.org",  # Force through /telegram-api/ reverse proxy for RBAC
         ]
     )
 
