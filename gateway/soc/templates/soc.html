@@ -167,7 +167,7 @@
         <div class="scorecard-meta">
           <h3 id="scorecard-level">Loading...</h3>
           <p id="scorecard-desc" style="color:var(--text-muted)">
-            12-domain assessment · CIS Docker Benchmark v1.6.0 · NIST SP 800-190 · DISA STIG · IEC 62443
+            33-domain assessment · Infrastructure (D1–D21) + Agentic AI (D22–D33) · 11 standards
           </p>
         </div>
         <button class="btn btn-sm" onclick="window._reloadScorecard()">Refresh</button>
@@ -175,6 +175,46 @@
       <div id="scorecard-grid" class="scorecard-grid">
         <div style="color:var(--text-muted);font-size:12px">loading scorecard...</div>
       </div>
+
+      <!-- Standards Reference -->
+      <section id="scorecard-standards" style="margin-top:2rem;border-top:1px solid var(--border-color);padding-top:1.5rem">
+        <h3 style="font-size:13px;font-weight:600;margin-bottom:1rem;color:var(--text-muted);text-transform:uppercase;letter-spacing:.05em">Standards &amp; Frameworks Reference</h3>
+        <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:1.25rem;font-size:12px">
+
+          <!-- Infrastructure -->
+          <div>
+            <div style="font-weight:600;margin-bottom:0.5rem;color:var(--text-primary)">Infrastructure Security (D1–D21)</div>
+            <ul style="list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:0.35rem;color:var(--text-muted)">
+              <li><a href="https://www.cisecurity.org/benchmark/docker" target="_blank" rel="noopener" style="color:var(--accent)">CIS Docker Benchmark v1.6.0</a> — Container host &amp; daemon hardening (Sections 1–6)</li>
+              <li><a href="https://csrc.nist.gov/publications/detail/sp/800-190/final" target="_blank" rel="noopener" style="color:var(--accent)">NIST SP 800-190</a> — Application Container Security Guide (5 risk areas)</li>
+              <li><a href="https://public.cyber.mil/stigs/downloads/" target="_blank" rel="noopener" style="color:var(--accent)">DISA Docker Enterprise STIG</a> — U.S. DoD STIG for container platforms</li>
+              <li><a href="https://www.iec.ch/homepage" target="_blank" rel="noopener" style="color:var(--accent)">IEC 62443</a> — Industrial cybersecurity (FR1–FR7, Security Levels SL 0–4)</li>
+            </ul>
+          </div>
+
+          <!-- Agentic AI -->
+          <div>
+            <div style="font-weight:600;margin-bottom:0.5rem;color:var(--text-primary)">Agentic AI Security (D22–D33)</div>
+            <ul style="list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:0.35rem;color:var(--text-muted)">
+              <li><a href="https://owasp.org/www-project-top-10-for-agentic-ai/" target="_blank" rel="noopener" style="color:var(--accent)">OWASP Top 10 for Agentic AI 2026</a> — ASI-01 through ASI-10 agent-specific risks</li>
+              <li><a href="https://atlas.mitre.org" target="_blank" rel="noopener" style="color:var(--accent)">MITRE ATLAS (Oct 2025)</a> — Adversarial Threat Landscape for AI Systems (15 tactics, 80+ techniques)</li>
+              <li><a href="https://cloudsecurityalliance.org/research/topics/ai-security" target="_blank" rel="noopener" style="color:var(--accent)">CSA MAESTRO (Feb 2025)</a> — Multi-Agent Extensible Security Threat &amp; Risk Ontology</li>
+              <li><a href="https://owasp.org/www-project-top-10-for-large-language-model-applications/" target="_blank" rel="noopener" style="color:var(--accent)">OWASP LLM Top 10</a> — Top 10 security risks for large language model applications</li>
+            </ul>
+          </div>
+
+          <!-- AI Governance -->
+          <div>
+            <div style="font-weight:600;margin-bottom:0.5rem;color:var(--text-primary)">AI Governance &amp; Risk Management</div>
+            <ul style="list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:0.35rem;color:var(--text-muted)">
+              <li><a href="https://airc.nist.gov/Home" target="_blank" rel="noopener" style="color:var(--accent)">NIST AI RMF 1.0</a> — AI Risk Management Framework (Govern / Map / Measure / Manage)</li>
+              <li><a href="https://www.nist.gov/artificial-intelligence" target="_blank" rel="noopener" style="color:var(--accent)">NIST AI Agent Standards Initiative 2026</a> — Agent identity, authorization &amp; audit requirements</li>
+              <li><a href="https://www.iso.org/standard/81230.html" target="_blank" rel="noopener" style="color:var(--accent)">ISO/IEC 42001:2023</a> — AI Management System Standard (§8.4 human oversight, §9 monitoring)</li>
+            </ul>
+          </div>
+
+        </div>
+      </section>
     </div>
 
     <!-- ── Services ─────────────────────────────────────────── -->
