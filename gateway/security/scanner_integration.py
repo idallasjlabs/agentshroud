@@ -48,6 +48,7 @@ _SCORECARD_DOMAINS: List[Dict[str, Any]] = [
     {
         "id": 1,
         "domain": "Image Integrity",
+        "description": "Ensures container images are signed and tamper-proof before deployment. Prevents supply-chain attacks by verifying cryptographic signatures on every image pull.",
         "standard_ref": "NIST 800-190 §4.2, CIS 4.x",
         "tools": ["cosign", "trivy"],
         "iec_fr": "FR3",
@@ -55,6 +56,7 @@ _SCORECARD_DOMAINS: List[Dict[str, Any]] = [
     {
         "id": 2,
         "domain": "Vulnerability Management",
+        "description": "Continuously scans container images and OS packages for known CVEs. Tracks severity trends and enforces remediation SLAs to reduce exploitable attack surface.",
         "standard_ref": "NIST 800-190 §4.2, CIS 4.4",
         "tools": ["trivy"],
         "iec_fr": "FR3",
@@ -62,6 +64,7 @@ _SCORECARD_DOMAINS: List[Dict[str, Any]] = [
     {
         "id": 3,
         "domain": "Supply Chain",
+        "description": "Generates and validates a Software Bill of Materials (SBOM) for every build artifact. Verifies provenance and detects unauthorized or unexpected third-party dependencies.",
         "standard_ref": "IEC 62443 4-1 SDL, EO 14028",
         "tools": ["syft", "cosign"],
         "iec_fr": "FR3, SDL 4-1",
@@ -69,6 +72,7 @@ _SCORECARD_DOMAINS: List[Dict[str, Any]] = [
     {
         "id": 4,
         "domain": "Container Hardening",
+        "description": "Benchmarks container configuration against CIS Docker and DISA STIG baselines. Checks for root-user processes, unnecessary capabilities, writable filesystems, and unsafe mounts.",
         "standard_ref": "CIS 5.x, DISA STIG",
         "tools": ["openscap"],
         "iec_fr": "FR3",
@@ -76,6 +80,7 @@ _SCORECARD_DOMAINS: List[Dict[str, Any]] = [
     {
         "id": 5,
         "domain": "Runtime Protection",
+        "description": "Monitors live container behavior for anomalous syscalls, privilege escalation attempts, and policy violations. Triggers real-time alerts on suspicious activity at the kernel level.",
         "standard_ref": "NIST 800-190 §4.6, IEC FR3",
         "tools": ["falco"],
         "iec_fr": "FR3, FR6",
@@ -83,6 +88,7 @@ _SCORECARD_DOMAINS: List[Dict[str, Any]] = [
     {
         "id": 6,
         "domain": "Malware Defense",
+        "description": "Scans container filesystems and mounted volumes for known malware signatures, trojans, and rootkits using ClamAV. Detects malicious payloads that may enter through third-party packages.",
         "standard_ref": "IEC FR3 SR 3.2",
         "tools": ["clamav"],
         "iec_fr": "FR3",
@@ -90,6 +96,7 @@ _SCORECARD_DOMAINS: List[Dict[str, Any]] = [
     {
         "id": 7,
         "domain": "Network Segmentation",
+        "description": "Validates that Docker networks enforce least-privilege connectivity between containers. Ensures sensitive services are isolated from internet-facing components and bot workloads.",
         "standard_ref": "NIST 800-190 §4.5, IEC FR5",
         "tools": ["docker_networks"],
         "iec_fr": "FR5",
@@ -97,6 +104,7 @@ _SCORECARD_DOMAINS: List[Dict[str, Any]] = [
     {
         "id": 8,
         "domain": "Secrets Management",
+        "description": "Audits how credentials, API keys, and tokens are stored and rotated. Checks for hardcoded secrets in images, unencrypted env vars, and compliance with vault-based secret injection.",
         "standard_ref": "NIST 800-190 §4.3, IEC FR4",
         "tools": ["key_vault", "key_rotation"],
         "iec_fr": "FR4",
@@ -104,6 +112,7 @@ _SCORECARD_DOMAINS: List[Dict[str, Any]] = [
     {
         "id": 9,
         "domain": "Logging & Monitoring",
+        "description": "Verifies that all containers emit structured logs to a central aggregator and that alerting pipelines are active. Ensures audit trails are complete and tamper-evident.",
         "standard_ref": "NIST 800-190 §4.7, IEC FR6",
         "tools": ["fluent_bit", "wazuh"],
         "iec_fr": "FR6",
@@ -111,6 +120,7 @@ _SCORECARD_DOMAINS: List[Dict[str, Any]] = [
     {
         "id": 10,
         "domain": "Compliance Auditing",
+        "description": "Runs automated compliance checks against CIS, DISA STIG, and IEC 62443 control baselines. Produces audit-ready evidence of control implementation and identifies gaps requiring remediation.",
         "standard_ref": "CIS, DISA STIG, IEC FR7",
         "tools": ["openscap"],
         "iec_fr": "FR7",
@@ -118,6 +128,7 @@ _SCORECARD_DOMAINS: List[Dict[str, Any]] = [
     {
         "id": 11,
         "domain": "Secure Development",
+        "description": "Enforces secure coding practices through static analysis of application source code and Dockerfiles. Detects injection flaws, insecure defaults, and misconfigurations before they reach production.",
         "standard_ref": "IEC 62443 4-1, NIST SSDF",
         "tools": ["semgrep", "trivy"],
         "iec_fr": "SDL 4-1",
@@ -125,6 +136,7 @@ _SCORECARD_DOMAINS: List[Dict[str, Any]] = [
     {
         "id": 12,
         "domain": "Incident Response",
+        "description": "Measures readiness to detect, contain, and recover from security incidents. Validates that runbooks exist, alert-to-response pipelines are tested, and forensic evidence is preserved.",
         "standard_ref": "NIST 800-190 §4.8, IEC FR6",
         "tools": ["falco", "wazuh", "soc"],
         "iec_fr": "FR6",
