@@ -46,6 +46,28 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     && apt-get update && apt-get install -y --no-install-recommends 1password-cli \
     && rm -rf /var/lib/apt/lists/*
 
+# Syft SBOM generator — pinned version
+ARG SYFT_VERSION=1.18.1
+RUN DPKG_ARCH=$(dpkg --print-architecture) && \
+    case "$DPKG_ARCH" in \
+      arm64) SYFT_ARCH="arm64" ;; \
+      amd64) SYFT_ARCH="amd64" ;; \
+      armhf) SYFT_ARCH="arm" ;; \
+      *) SYFT_ARCH="$DPKG_ARCH" ;; \
+    esac && \
+    curl -sSfL -o "/tmp/syft_${SYFT_VERSION}_linux_${SYFT_ARCH}.deb" \
+        "https://github.com/anchore/syft/releases/download/v${SYFT_VERSION}/syft_${SYFT_VERSION}_linux_${SYFT_ARCH}.deb" && \
+    dpkg -i "/tmp/syft_${SYFT_VERSION}_linux_${SYFT_ARCH}.deb" && \
+    rm "/tmp/syft_${SYFT_VERSION}_linux_${SYFT_ARCH}.deb"
+
+# Docker CLI — for container scanning via mounted Docker socket (no daemon)
+ARG DOCKER_CLI_VERSION=27.3.1
+RUN DPKG_ARCH=$(dpkg --print-architecture) && \
+    curl -sSfL -o "/tmp/docker-${DOCKER_CLI_VERSION}.tgz" \
+        "https://download.docker.com/linux/static/stable/${DPKG_ARCH}/docker-${DOCKER_CLI_VERSION}.tgz" && \
+    tar xzf "/tmp/docker-${DOCKER_CLI_VERSION}.tgz" --strip-components=1 -C /usr/local/bin/ docker/docker && \
+    rm "/tmp/docker-${DOCKER_CLI_VERSION}.tgz"
+
 # Trivy vulnerability scanner — pinned version (M7 fix)
 ARG TRIVY_VERSION=0.69.3
 # R2-M1: Download Trivy with checksum verification for supply chain integrity
@@ -111,6 +133,10 @@ RUN python3 -m spacy download en_core_web_sm >/tmp/spacy-download.log 2>&1 \
 COPY README.md /app/README.md
 COPY SECURITY.md /app/SECURITY.md
 COPY CONTRIBUTING.md /app/CONTRIBUTING.md
+# SDL config files for Secure Development scorer (Domain 11)
+COPY .semgrep.yml /app/.semgrep.yml
+COPY .pre-commit-config.yaml /app/.pre-commit-config.yaml
+COPY gitleaks.toml /app/gitleaks.toml
 COPY examples/ /app/examples/
 COPY docker/docker-compose.yml /app/docker/docker-compose.yml
 COPY pytest.ini /app/pytest.ini
