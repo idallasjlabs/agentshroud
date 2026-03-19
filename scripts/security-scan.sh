@@ -79,11 +79,13 @@ else
         report="${REPORTS_DIR}/trivy/trivy-${safe_name}-${TS}.json"
         info "Scanning: ${image}"
 
+        # ghcr.io is the primary DB source — mirror.gcr.io is blocked by Cisco AnyConnect VPN.
         trivy image \
             --format json \
             --severity "${TRIVY_SEVERITY}" \
             --no-progress \
             --timeout 600s \
+            --db-repository ghcr.io/aquasecurity/trivy-db \
             --output "${report}" \
             "${image}" 2>/dev/null || true
 
