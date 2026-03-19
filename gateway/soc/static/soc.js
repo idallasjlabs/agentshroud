@@ -31,6 +31,7 @@ async function _api(method, path, body) {
 
 const _get    = p       => _api('GET',    p);
 const _post   = (p, b) => _api('POST',   p, b);
+const _put    = (p, b) => _api('PUT',    p, b);
 const _delete = p       => _api('DELETE', p);
 
 // ---------------------------------------------------------------------------
@@ -187,7 +188,7 @@ async function _loadOverview() {
   const health  = healthRes.data  || {};
   const risk    = riskRes.data    || {};
   const users   = usersRes.data   || [];
-  const pending = egressRes.data  || [];
+  const pending = Array.isArray(egressRes.data) ? egressRes.data : [];
 
   const running = (health.services || []).filter(s => s.status === 'running').length;
   const total   = (health.services || []).length;
@@ -549,7 +550,7 @@ function _renderGroups(groups) {
   const tbody = document.getElementById('groups-tbody');
   if (!tbody) return;
   if (!Array.isArray(groups) || !groups.length) {
-    tbody.innerHTML = '<tr><td colspan="5" style="color:var(--text-muted);text-align:center;padding:1rem">No groups configured</td></tr>';
+    tbody.innerHTML = '<tr><td colspan="5" style="color:var(--text-muted);text-align:center;padding:1rem">No groups configured — click "+ Create Group" to add one</td></tr>';
     return;
   }
   tbody.innerHTML = groups.map(g =>
@@ -558,7 +559,7 @@ function _renderGroups(groups) {
       <td><strong>${_esc(g.name)}</strong></td>
       <td>${g.members?.length ?? 0}</td>
       <td><span class="badge badge-info">${_esc(g.collab_mode || '—')}</span></td>
-      <td><button class="btn btn-sm" onclick="window._editGroup('${_esc(g.id)}')">Edit</button></td>
+      <td><button class="btn btn-sm" onclick="window._openGroupPanel(${JSON.stringify(g)})">Manage</button></td>
     </tr>`
   ).join('');
 }
@@ -578,7 +579,131 @@ window._removeCollab = function(uid) {
     _loadContributors();
   });
 };
-window._editGroup = function(id) { _toast(`Group editing for "${id}" — use Telegram /addtogroup command`, 'info'); };
+
+// ── Group management panel ──────────────────────────────────────────────────
+let _gpCurrentId = null; // null = create mode, string = edit mode
+
+window._openGroupPanel = function(group) {
+  _gpCurrentId = group ? group.id : null;
+  const isCreate = _gpCurrentId === null;
+
+  _setText('group-panel-title', isCreate ? 'Create New Group' : `Manage: ${group.name}`);
+
+  const idInput   = document.getElementById('gp-id');
+  const nameInput = document.getElementById('gp-name');
+  const modeEl    = document.getElementById('gp-mode');
+  const adminInput = document.getElementById('gp-admin');
+
+  if (idInput)    { idInput.value   = isCreate ? '' : group.id;           idInput.disabled = !isCreate; }
+  if (nameInput)  { nameInput.value = isCreate ? '' : group.name;         nameInput.disabled = !isCreate; }
+  if (modeEl)     { modeEl.value    = (group?.collab_mode) || 'local_only'; }
+  if (adminInput) { adminInput.value = (group?.admin) || ''; }
+
+  const createRow   = document.getElementById('gp-create-row');
+  const membersSection = document.getElementById('gp-members-section');
+  if (createRow)      createRow.style.display      = isCreate ? '' : 'none';
+  if (membersSection) membersSection.style.display = isCreate ? 'none' : '';
+
+  if (!isCreate) _renderGroupMembers(group.members || []);
+
+  const panel = document.getElementById('group-panel');
+  if (panel) { panel.style.display = ''; panel.scrollIntoView({ behavior: 'smooth', block: 'nearest' }); }
+};
+
+window._closeGroupPanel = function() {
+  const panel = document.getElementById('group-panel');
+  if (panel) panel.style.display = 'none';
+  _gpCurrentId = null;
+};
+
+function _renderGroupMembers(members) {
+  const el = document.getElementById('gp-members-list');
+  if (!el) return;
+  if (!members.length) {
+    el.innerHTML = '<div style="color:var(--text-muted);font-size:12px">No members</div>';
+    return;
+  }
+  el.innerHTML = members.map(uid =>
+    `<div style="display:flex;align-items:center;gap:.5rem;padding:.25rem 0;border-bottom:1px solid var(--border)">
+      <code style="flex:1;font-size:12px">${_esc(uid)}</code>
+      <button class="btn btn-sm btn-danger" onclick="window._submitRemoveMember('${_esc(uid)}')">Remove</button>
+    </div>`
+  ).join('');
+}
+
+window._submitCreateGroup = async function() {
+  const group_id    = (document.getElementById('gp-id')?.value    || '').trim();
+  const name        = (document.getElementById('gp-name')?.value  || '').trim();
+  const collab_mode = document.getElementById('gp-mode')?.value   || 'local_only';
+  const admin       = (document.getElementById('gp-admin')?.value || '').trim() || null;
+
+  if (!group_id || !name) { _toast('Group ID and Name are required', 'danger'); return; }
+
+  const { ok, data } = await _post('/groups', { group_id, name, collab_mode, members: [], admin });
+  if (ok) {
+    _toast(`Group "${name}" created`, 'success');
+    _closeGroupPanel();
+    _loadContributors();
+  } else {
+    _toast(`Failed: ${data?.message || data?.detail || 'unknown error'}`, 'danger');
+  }
+};
+
+window._submitSaveMode = async function() {
+  if (!_gpCurrentId) return;
+  const collab_mode = document.getElementById('gp-mode')?.value || 'local_only';
+  const { ok, data } = await _put(`/groups/${encodeURIComponent(_gpCurrentId)}/mode`, { collab_mode });
+  if (ok) {
+    _toast('Collab mode updated', 'success');
+    _loadContributors();
+  } else {
+    _toast(`Failed: ${data?.message || 'unknown error'}`, 'danger');
+  }
+};
+
+window._submitAddMember = async function() {
+  if (!_gpCurrentId) return;
+  const uid = (document.getElementById('gp-add-uid')?.value || '').trim();
+  if (!uid) { _toast('Enter a user ID', 'danger'); return; }
+  const { ok, data } = await _post(`/groups/${encodeURIComponent(_gpCurrentId)}/members`, { user_id: uid });
+  if (ok) {
+    _toast(`User ${uid} added to group`, 'success');
+    document.getElementById('gp-add-uid').value = '';
+    // Refresh members list from server
+    const { data: g } = await _get(`/groups/${encodeURIComponent(_gpCurrentId)}`);
+    if (g) _renderGroupMembers(g.members || []);
+    _loadContributors();
+  } else {
+    _toast(`Failed: ${data?.message || 'unknown error'}`, 'danger');
+  }
+};
+
+window._submitRemoveMember = async function(uid) {
+  if (!_gpCurrentId) return;
+  const { ok, data } = await _delete(`/groups/${encodeURIComponent(_gpCurrentId)}/members/${encodeURIComponent(uid)}`);
+  if (ok) {
+    _toast(`User ${uid} removed`, 'success');
+    const { data: g } = await _get(`/groups/${encodeURIComponent(_gpCurrentId)}`);
+    if (g) _renderGroupMembers(g.members || []);
+    _loadContributors();
+  } else {
+    _toast(`Failed: ${data?.message || 'unknown error'}`, 'danger');
+  }
+};
+
+window._submitDeleteGroup = function() {
+  if (!_gpCurrentId) return;
+  _confirm('Delete Group', `Permanently delete group "${_gpCurrentId}"? Members will be removed from the group.`, async () => {
+    const { ok, data } = await _delete(`/groups/${encodeURIComponent(_gpCurrentId)}`);
+    if (ok) {
+      _toast(`Group "${_gpCurrentId}" deleted`, 'success');
+      _closeGroupPanel();
+      _loadContributors();
+    } else {
+      _toast(`Failed: ${data?.message || 'unknown error'}`, 'danger');
+    }
+  });
+};
 
 // ---------------------------------------------------------------------------
 // Egress tab
@@ -653,6 +778,22 @@ function _appendLogLine(ev) {
   if (el.textContent === 'Waiting for events...') el.textContent = '';
   el.textContent += line;
   if (el.scrollTop + el.clientHeight >= el.scrollHeight - 40) el.scrollTop = el.scrollHeight;
+}
+
+function _replayLogsTab() {
+  const el = document.getElementById('log-viewer');
+  if (!el) return;
+  if (!_eventFeed.length) {
+    el.textContent = 'Waiting for events...';
+    return;
+  }
+  const svc = document.getElementById('log-service-filter')?.value || '';
+  const lines = _eventFeed
+    .filter(ev => !svc || ev.service === svc)
+    .map(ev => `[${_ts(ev.timestamp)}] [${(ev.severity || 'info').toUpperCase().padEnd(8)}] ${ev.summary || ev.type}`)
+    .join('\n');
+  el.textContent = lines || 'Waiting for events...';
+  el.scrollTop = el.scrollHeight;
 }
 
 window._clearLogs = function() {
@@ -751,7 +892,7 @@ document.addEventListener('DOMContentLoaded', () => {
   _registerTab('services',     _loadServices);
   _registerTab('contributors', _loadContributors);
   _registerTab('egress',       _loadEgress);
-  _registerTab('logs',         () => {});
+  _registerTab('logs',         _replayLogsTab);
   _registerTab('config',       _loadConfig);
 
   // Wire nav items
