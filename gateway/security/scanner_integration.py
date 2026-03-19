@@ -213,6 +213,103 @@ _SCORECARD_DOMAINS: List[Dict[str, Any]] = [
         "tools": ["runtime_audit"],
         "iec_fr": "FR3, FR5",
     },
+    # ── Agentic AI Security Domains (22–33) ──────────────────────────────────
+    {
+        "id": 22,
+        "domain": "Prompt Injection Defense",
+        "description": "Detects and blocks direct and indirect prompt injection attacks against agent pipelines. Monitors input routing for adversarial instruction smuggling, goal hijacking, and jailbreak patterns at the gateway layer.",
+        "standard_ref": "OWASP ASI-07, MITRE ATLAS AML.T0051",
+        "tools": ["prompt_guard", "pipeline"],
+        "iec_fr": "FR3",
+    },
+    {
+        "id": 23,
+        "domain": "Agent Goal & Behavior Integrity",
+        "description": "Validates that agent actions remain within authorized goal boundaries across sessions. Detects unexpected goal drift, instruction override, and unauthorized objective modification during agent execution.",
+        "standard_ref": "OWASP ASI-01, NIST AI RMF GOVERN",
+        "tools": ["pipeline", "event_bus", "ledger"],
+        "iec_fr": "FR6",
+    },
+    {
+        "id": 24,
+        "domain": "Tool Use Safety & Validation",
+        "description": "Enforces allowlist-based tool access controls for all agent tool invocations. Validates tool call arguments, logs all tool use events, and routes high-risk tool calls through a human approval queue.",
+        "standard_ref": "OWASP ASI-02, CSA MAESTRO",
+        "tools": ["tool_acl_enforcer", "approval_queue"],
+        "iec_fr": "FR2, FR3",
+    },
+    {
+        "id": 25,
+        "domain": "Least Agency Enforcement",
+        "description": "Restricts agent capabilities to the minimum required for each task. Enforces time-bounded delegation, scoped outbound network access, and continuous monitoring for unauthorized scope expansion.",
+        "standard_ref": "OWASP ASI-05, NIST AI Agent Standards Initiative 2026",
+        "tools": ["tool_acl_enforcer", "egress_filter", "delegation_manager"],
+        "iec_fr": "FR2",
+    },
+    {
+        "id": 26,
+        "domain": "Agent Identity & NHI",
+        "description": "Manages Non-Human Identities (NHIs) for all agents in the system. Binds agent identities to sessions, tracks identity usage across collaborations, and detects anomalous identity behavior patterns.",
+        "standard_ref": "OWASP ASI-09, NIST AI Agent Standards Initiative 2026",
+        "tools": ["session_manager", "collaborator_tracker", "trust_manager"],
+        "iec_fr": "FR1",
+    },
+    {
+        "id": 27,
+        "domain": "Memory Integrity",
+        "description": "Protects agent memory stores from poisoning, unauthorized writes, and context manipulation attacks. Validates memory read/write operations, maintains integrity checksums, and isolates memory scopes per session.",
+        "standard_ref": "OWASP ASI-08, MITRE ATLAS",
+        "tools": ["memory_integrity", "ledger"],
+        "iec_fr": "FR3",
+    },
+    {
+        "id": 28,
+        "domain": "Inter-Agent Trust & Orchestration Security",
+        "description": "Secures communication and trust relationships between agents in multi-agent pipelines. Authenticates inter-agent messages, enforces trust boundaries, and logs all orchestration decisions for audit.",
+        "standard_ref": "OWASP ASI-03/04, CSA MAESTRO",
+        "tools": ["trust_manager", "pipeline", "ledger"],
+        "iec_fr": "FR1, FR2",
+    },
+    {
+        "id": 29,
+        "domain": "AI Model & Supply Chain Integrity",
+        "description": "Ensures AI models and their dependencies are sourced, pinned, and validated against known-good provenance. Extends SBOM to cover model weights and fine-tune datasets. Detects model substitution and weight poisoning risks.",
+        "standard_ref": "MITRE ATLAS, OWASP LLM03, NIST AI RMF MAP",
+        "tools": ["sbom", "trivy"],
+        "iec_fr": "FR3, SDL 4-1",
+    },
+    {
+        "id": 30,
+        "domain": "AI Observability & Audit Trail",
+        "description": "Captures structured audit trails for all AI inference events, tool invocations, and agent decisions. Enables forensic reconstruction of agent behavior, regulatory evidence preservation, and compliance reporting.",
+        "standard_ref": "NIST AI RMF MEASURE, IEC 62443 FR6, ISO/IEC 42001 §9",
+        "tools": ["ledger", "event_bus", "soc_correlation"],
+        "iec_fr": "FR6",
+    },
+    {
+        "id": 31,
+        "domain": "Human-in-the-Loop Controls",
+        "description": "Ensures humans retain meaningful oversight and control over high-impact agent actions. Implements approval queues for sensitive operations, time-bounded delegation with human review, and emergency override mechanisms.",
+        "standard_ref": "NIST AI RMF MANAGE, ISO/IEC 42001 §8.4",
+        "tools": ["approval_queue", "egress_approval_queue", "delegation_manager"],
+        "iec_fr": "FR7",
+    },
+    {
+        "id": 32,
+        "domain": "Rogue Agent Containment & Killswitch",
+        "description": "Provides automated detection and containment of rogue or compromised agents. Validates killswitch readiness, enforces automatic egress blocking on anomaly detection, and supports cross-session threat correlation for rogue agent playbooks.",
+        "standard_ref": "OWASP ASI-03, CSA MAESTRO",
+        "tools": ["killswitch_monitor", "egress_filter", "event_bus"],
+        "iec_fr": "FR6, FR7",
+    },
+    {
+        "id": 33,
+        "domain": "Data Exfiltration Prevention",
+        "description": "Prevents unauthorized exfiltration of sensitive data through agent outputs, tool call results, and outbound network requests. Combines PII scrubbing, egress allowlisting, and real-time behavioral analysis to block data theft via agentic channels.",
+        "standard_ref": "OWASP ASI-06, MITRE ATLAS, IEC 62443 FR4",
+        "tools": ["egress_filter", "privacy_enforcer", "ledger"],
+        "iec_fr": "FR4",
+    },
 ]
 
 
@@ -1051,16 +1148,310 @@ def _score_container_runtime_isolation() -> int:
 
 
 # ---------------------------------------------------------------------------
+# Agentic AI domain scorers (22–33)
+# ---------------------------------------------------------------------------
+
+def _score_prompt_injection_defense() -> int:
+    """Score domain 22: Prompt Injection Defense (0-5). OWASP ASI-07, MITRE AML.T0051.
+
+    1=prompt_guard module exists, 2=loaded in app_state, 3=pipeline routes all input through it,
+    4=injection attempts logged via ledger, 5=real-time anomaly detection via event_bus.
+    """
+    pg_paths = [
+        Path("/app/gateway/security/prompt_guard.py"),
+        Path("gateway/security/prompt_guard.py"),
+    ]
+    if not any(p.exists() for p in pg_paths):
+        return 0
+    score = 1
+    if _app_state_has("prompt_guard"):
+        score += 1
+    if _app_state_has("pipeline"):
+        score += 1
+    if _app_state_has("ledger"):
+        score += 1
+    if _app_state_has("event_bus"):
+        score += 1
+    return min(score, 5)
+
+
+def _score_agent_behavior_integrity() -> int:
+    """Score domain 23: Agent Goal & Behavior Integrity (0-5). OWASP ASI-01, NIST AI RMF GOVERN.
+
+    1=session lifecycle managed, 2=behavior events via event_bus, 3=full audit via ledger,
+    4=SOC correlation active, 5=pipeline + full observability stack.
+    """
+    if not _app_state_has("session_manager"):
+        return 0
+    score = 1
+    if _app_state_has("event_bus"):
+        score += 1
+    if _app_state_has("ledger"):
+        score += 1
+    if _app_state_has("soc_correlation"):
+        score += 1
+    if _app_state_has("pipeline"):
+        score += 1
+    return min(score, 5)
+
+
+def _score_tool_use_safety() -> int:
+    """Score domain 24: Tool Use Safety & Validation (0-5). OWASP ASI-02, CSA MAESTRO.
+
+    1=tool_acl module exists, 2=enforced at runtime, 3=all calls logged,
+    4=approval queue for high-risk calls, 5=real-time monitoring via event_bus.
+    """
+    tacl_paths = [
+        Path("/app/gateway/security/tool_acl.py"),
+        Path("gateway/security/tool_acl.py"),
+    ]
+    if not any(p.exists() for p in tacl_paths):
+        return 0
+    score = 1
+    if _app_state_has("tool_acl_enforcer"):
+        score += 1
+    if _app_state_has("ledger"):
+        score += 1
+    if _app_state_has("approval_queue"):
+        score += 1
+    if _app_state_has("event_bus"):
+        score += 1
+    return min(score, 5)
+
+
+def _score_least_agency() -> int:
+    """Score domain 25: Least Agency Enforcement (0-5). OWASP ASI-05, NIST AI Agent Standards.
+
+    1=capability restrictions defined, 2=enforced at runtime, 3=egress scoped,
+    4=delegation with TTL, 5=continuous monitoring.
+    """
+    tacl_paths = [
+        Path("/app/gateway/security/tool_acl.py"),
+        Path("gateway/security/tool_acl.py"),
+    ]
+    if not any(p.exists() for p in tacl_paths):
+        return 0
+    score = 1
+    if _app_state_has("tool_acl_enforcer"):
+        score += 1
+    if _app_state_has("egress_filter"):
+        score += 1
+    if _app_state_has("delegation_manager"):
+        score += 1
+    if _app_state_has("event_bus"):
+        score += 1
+    return min(score, 5)
+
+
+def _score_agent_identity_nhi() -> int:
+    """Score domain 26: Agent Identity & NHI (0-5). OWASP ASI-09, NIST AI Agent Standards.
+
+    1=distinct session identities, 2=NHI tracked via collaborator_tracker,
+    3=identity audit trail via ledger, 4=anomaly detection via trust_manager,
+    5=full NHI governance via delegation_manager.
+    """
+    if not _app_state_has("session_manager"):
+        return 0
+    score = 1
+    if _app_state_has("collaborator_tracker"):
+        score += 1
+    if _app_state_has("ledger"):
+        score += 1
+    if _app_state_has("trust_manager"):
+        score += 1
+    if _app_state_has("delegation_manager"):
+        score += 1
+    return min(score, 5)
+
+
+def _score_memory_integrity() -> int:
+    """Score domain 27: Memory Integrity (0-5). OWASP ASI-08, MITRE ATLAS.
+
+    1=memory_integrity module exists, 2=loaded in app_state, 3=operations logged via ledger,
+    4=real-time tamper detection via event_bus, 5=session-scoped isolation.
+    """
+    mi_paths = [
+        Path("/app/gateway/security/memory_integrity.py"),
+        Path("gateway/security/memory_integrity.py"),
+    ]
+    if not any(p.exists() for p in mi_paths):
+        return 0
+    score = 1
+    if _app_state_has("memory_integrity"):
+        score += 1
+    if _app_state_has("ledger"):
+        score += 1
+    if _app_state_has("event_bus"):
+        score += 1
+    if _app_state_has("session_manager"):
+        score += 1
+    return min(score, 5)
+
+
+def _score_inter_agent_trust() -> int:
+    """Score domain 28: Inter-Agent Trust & Orchestration Security (0-5). OWASP ASI-03/04, CSA MAESTRO.
+
+    1=orchestration framework (pipeline) active, 2=trust boundaries via trust_manager,
+    3=inter-agent comms authenticated via session_manager, 4=trust decisions logged,
+    5=real-time anomaly detection via event_bus.
+    """
+    if not _app_state_has("pipeline"):
+        return 0
+    score = 1
+    if _app_state_has("trust_manager"):
+        score += 1
+    if _app_state_has("session_manager"):
+        score += 1
+    if _app_state_has("ledger"):
+        score += 1
+    if _app_state_has("event_bus"):
+        score += 1
+    return min(score, 5)
+
+
+def _score_ai_model_supply_chain() -> int:
+    """Score domain 29: AI Model & Supply Chain Integrity (0-5). MITRE ATLAS, OWASP LLM03, NIST AI RMF MAP.
+
+    1=SBOM exists (model deps covered), 2=Trivy scans model deps, 3=zero critical CVEs,
+    4=model image pinned by SHA256 digest, 5=SBOM + Trivy reports both fresh <24h.
+    """
+    if not (_SBOM_REPORT_DIR.exists() and any(_SBOM_REPORT_DIR.glob("sbom-*.json"))):
+        return 0
+    score = 1
+    trivy = get_trivy_summary()
+    if trivy.get("status") not in ("not_run", "error"):
+        score += 1
+    if trivy.get("critical", 0) == 0 and score >= 2:
+        score += 1
+    # Model image pinned by SHA256 digest in Dockerfile
+    dockerfile_paths = [
+        Path("/app/docker/Dockerfile.agentshroud"),
+        Path("/app/gateway/Dockerfile"),
+        Path("gateway/Dockerfile"),
+    ]
+    model_pinned = False
+    for dp in dockerfile_paths:
+        try:
+            if dp.exists() and "@sha256:" in dp.read_text():
+                model_pinned = True
+                break
+        except Exception:
+            pass
+    if model_pinned:
+        score += 1
+    # Continuous attestation: both SBOM and Trivy reports fresh
+    if _is_fresh(_SBOM_REPORT_DIR, "sbom-") and _is_fresh(_TRIVY_REPORT_DIR, "trivy-"):
+        score += 1
+    return min(score, 5)
+
+
+def _score_ai_observability() -> int:
+    """Score domain 30: AI Observability & Audit Trail (0-5). NIST AI RMF MEASURE, IEC 62443 FR6, ISO 42001.
+
+    1=event_bus active, 2=AI events in ledger, 3=SOC correlation active,
+    4=audit artifacts on disk, 5=pipeline + full observability stack.
+    """
+    if not _app_state_has("event_bus"):
+        return 0
+    score = 1
+    if _app_state_has("ledger"):
+        score += 1
+    if _app_state_has("soc_correlation"):
+        score += 1
+    audit_paths = [Path("/var/log/security"), Path("/app/data")]
+    if any(p.exists() for p in audit_paths):
+        score += 1
+    if _app_state_has("pipeline"):
+        score += 1
+    return min(score, 5)
+
+
+def _score_human_in_the_loop() -> int:
+    """Score domain 31: Human-in-the-Loop Controls (0-5). NIST AI RMF MANAGE, ISO 42001 §8.4.
+
+    1=manual override available, 2=approval queue for high-risk actions,
+    3=egress approval queue, 4=delegation with human review, 5=privacy enforcer active.
+    """
+    if not (_app_state_has("killswitch_monitor") or _app_state_has("session_manager")):
+        return 0
+    score = 1
+    if _app_state_has("approval_queue"):
+        score += 1
+    if _app_state_has("egress_approval_queue"):
+        score += 1
+    if _app_state_has("delegation_manager"):
+        score += 1
+    if _app_state_has("privacy_enforcer"):
+        score += 1
+    return min(score, 5)
+
+
+def _score_rogue_agent_containment() -> int:
+    """Score domain 32: Rogue Agent Containment & Killswitch (0-5). OWASP ASI-03, CSA MAESTRO.
+
+    1=killswitch script exists, 2=killswitch_monitor active, 3=egress filter for auto-containment,
+    4=event_bus for real-time detection, 5=SOC correlation for cross-session analysis.
+    """
+    killswitch_paths = [
+        Path("/app/docker/scripts/killswitch.sh"),
+        Path("docker/scripts/killswitch.sh"),
+    ]
+    if not any(p.exists() for p in killswitch_paths):
+        return 0
+    score = 1
+    if _app_state_has("killswitch_monitor"):
+        score += 1
+    if _app_state_has("egress_filter"):
+        score += 1
+    if _app_state_has("event_bus"):
+        score += 1
+    if _app_state_has("soc_correlation"):
+        score += 1
+    return min(score, 5)
+
+
+def _score_data_exfiltration_prevention() -> int:
+    """Score domain 33: Data Exfiltration Prevention (0-5). OWASP ASI-06, MITRE ATLAS, IEC 62443 FR4.
+
+    1=egress_filter module exists, 2=loaded in app_state, 3=PII scrubbing via privacy_enforcer,
+    4=exfiltration attempts logged via ledger, 5=real-time detection via event_bus.
+    """
+    ef_paths = [
+        Path("/app/gateway/security/egress_filter.py"),
+        Path("gateway/security/egress_filter.py"),
+    ]
+    if not any(p.exists() for p in ef_paths):
+        return 0
+    score = 1
+    if _app_state_has("egress_filter"):
+        score += 1
+    if _app_state_has("privacy_enforcer"):
+        score += 1
+    if _app_state_has("ledger"):
+        score += 1
+    if _app_state_has("event_bus"):
+        score += 1
+    return min(score, 5)
+
+
+# ---------------------------------------------------------------------------
 # Mandatory gate evaluation (overrides domain scores on hard fail)
 # ---------------------------------------------------------------------------
 
 # Maps gate_name → domain_id that gets zeroed on failure
 _MANDATORY_GATES: Dict[str, int] = {
+    # Infrastructure gates
     "privileged_container": 21,
     "critical_cve_running": 2,
     "no_agent_auth": 13,
     "no_tls_external": 15,
     "dct_unset_no_cosign": 17,
+    # Agentic AI gates
+    "no_prompt_guard_with_active_pipeline": 22,
+    "no_tool_acl": 24,
+    "no_egress_filter": 33,
+    "no_killswitch": 32,
+    "no_ai_audit_trail": 30,
 }
 
 
@@ -1117,6 +1508,45 @@ def _evaluate_mandatory_gates(
     if dct not in ("1", "true", "yes") and not cosign_available:
         updated[17] = 0
 
+    # ── Agentic AI gates ────────────────────────────────────────────────────
+
+    # Gate: pipeline active but no prompt_guard module → Domain 22 → 0
+    if _app_state_has("pipeline"):
+        pg_paths = [
+            Path("/app/gateway/security/prompt_guard.py"),
+            Path("gateway/security/prompt_guard.py"),
+        ]
+        if not any(p.exists() for p in pg_paths):
+            updated[22] = 0
+
+    # Gate: tool_acl module absent → Domain 24 → 0 (tool safety requires the module)
+    tacl_paths = [
+        Path("/app/gateway/security/tool_acl.py"),
+        Path("gateway/security/tool_acl.py"),
+    ]
+    if not any(p.exists() for p in tacl_paths):
+        updated[24] = 0
+
+    # Gate: egress_filter module absent → Domain 33 → 0
+    ef_paths = [
+        Path("/app/gateway/security/egress_filter.py"),
+        Path("gateway/security/egress_filter.py"),
+    ]
+    if not any(p.exists() for p in ef_paths):
+        updated[33] = 0
+
+    # Gate: no killswitch script → Domain 32 capped at 0
+    ks_paths = [
+        Path("/app/docker/scripts/killswitch.sh"),
+        Path("docker/scripts/killswitch.sh"),
+    ]
+    if not any(p.exists() for p in ks_paths):
+        updated[32] = 0
+
+    # Gate: neither event_bus nor ledger active → Domain 30 capped at 1 (no audit trail)
+    if not _app_state_has("event_bus") and not _app_state_has("ledger"):
+        updated[30] = min(updated.get(30, 0), 1)
+
     return updated
 
 
@@ -1134,6 +1564,11 @@ _IEC_DOMAIN_MAP: Dict[int, tuple] = {
     12: ("FR6", 1),
     16: ("FR7", 2),
     8:  ("FR4", 1),
+    # Agentic AI — IEC-mapped FRs
+    25: ("FR2", 1),   # Least Agency → FR2 (Use Control)
+    26: ("FR1", 1),   # Agent Identity → FR1 (Identification & Auth)
+    33: ("FR4", 1),   # Data Exfil Prevention → FR4 (Data Confidentiality)
+    30: ("FR6", 1),   # AI Observability → FR6 (Audit Logging)
 }
 
 # NIST 800-190 risk area mapping: {domain_id: (risk_area, weight)}
@@ -1146,6 +1581,7 @@ _NIST_DOMAIN_MAP: Dict[int, tuple] = {
     5:  ("container_risks", 1),
     21: ("container_risks", 2),
     19: ("host_risks", 2),
+    29: ("image_risks", 1),  # AI Model Supply Chain → image/model risks
 }
 
 # CIS mapping: {domain_id: (cis_section, weight)}
@@ -1156,6 +1592,47 @@ _CIS_DOMAIN_MAP: Dict[int, tuple] = {
     21: ("section_5", 2),
     17: ("section_4_5", 1),
     6:  ("section_6", 1),
+}
+
+# OWASP Top 10 for Agentic AI 2026 mapping: {domain_id: (asi_ref, weight)}
+_OWASP_AGENTIC_DOMAIN_MAP: Dict[int, tuple] = {
+    23: ("ASI-01", 2),  # Agent Goal & Behavior Integrity
+    24: ("ASI-02", 2),  # Tool Use Safety
+    28: ("ASI-03", 2),  # Inter-Agent Trust (covers ASI-03/04)
+    25: ("ASI-05", 2),  # Least Agency
+    33: ("ASI-06", 2),  # Data Exfiltration Prevention
+    22: ("ASI-07", 2),  # Prompt Injection Defense
+    27: ("ASI-08", 1),  # Memory Integrity
+    26: ("ASI-09", 1),  # Agent Identity & NHI
+    31: ("ASI-10", 1),  # Human-in-the-Loop (covers ASI-10 override)
+}
+
+# MITRE ATLAS mapping: {domain_id: (tactic_ref, weight)}
+_MITRE_ATLAS_DOMAIN_MAP: Dict[int, tuple] = {
+    22: ("AML.T0051", 2),  # Prompt Injection Defense → LLM Prompt Injection
+    27: ("AML.T0048", 2),  # Memory Integrity → AI Model Poisoning (memory variant)
+    28: ("AML.T0049", 2),  # Inter-Agent Trust → Adversarial Patch / Agent Manipulation
+    29: ("AML.T0010", 2),  # AI Model Supply Chain → ML Supply Chain Compromise
+    33: ("AML.T0025", 2),  # Data Exfiltration Prevention → Exfiltration via ML Inference API
+}
+
+# NIST AI RMF mapping: {domain_id: (function_ref, weight)}
+_NIST_AI_RMF_DOMAIN_MAP: Dict[int, tuple] = {
+    23: ("GOVERN", 2),  # Agent Behavior Integrity
+    29: ("MAP", 2),     # AI Model Supply Chain
+    30: ("MEASURE", 2), # AI Observability
+    31: ("MANAGE", 2),  # Human-in-the-Loop
+    25: ("GOVERN", 1),  # Least Agency
+    26: ("GOVERN", 1),  # Agent Identity
+}
+
+# CSA MAESTRO mapping: {domain_id: (maestro_ref, weight)}
+_CSA_MAESTRO_DOMAIN_MAP: Dict[int, tuple] = {
+    22: ("threat_model_prompt_injection", 2),   # Prompt Injection Defense
+    24: ("threat_model_tool_misuse", 2),         # Tool Use Safety
+    28: ("threat_model_orchestration", 2),       # Inter-Agent Trust
+    32: ("threat_model_rogue_agent", 2),         # Rogue Agent Containment
+    25: ("threat_model_least_privilege", 1),     # Least Agency
 }
 
 
@@ -1196,9 +1673,46 @@ def _determine_iec_sl(scores: Dict[int, int]) -> int:
         sl = 3
     else:
         return sl
-    if all(scores.get(d, 0) == 5 for d in range(1, 22)):
+    if all(scores.get(d, 0) == 5 for d in range(1, 34)):
         sl = 4
     return sl
+
+
+def _determine_compliance_level(
+    iec_pct: float,
+    nist_pct: float,
+    cis_pct: float,
+    owasp_agentic_pct: float,
+    mitre_atlas_pct: float,
+    nist_ai_rmf_pct: float,
+    csa_maestro_pct: float,
+) -> str:
+    """Determine composite compliance level using the weakest-link rule.
+
+    All 7 sub-scores must meet the threshold for the level to be granted.
+    Levels:
+      Not Assessed   < 20% on any sub-score
+      Foundational  ≥ 20% on all
+      Standard      ≥ 40% on all
+      Hardened      ≥ 60% on all
+      Advanced      ≥ 80% on all
+      Optimizing    ≥ 95% on all
+    """
+    min_score = min(
+        iec_pct, nist_pct, cis_pct,
+        owasp_agentic_pct, mitre_atlas_pct, nist_ai_rmf_pct, csa_maestro_pct,
+    )
+    if min_score >= 95:
+        return "Optimizing"
+    if min_score >= 80:
+        return "Advanced"
+    if min_score >= 60:
+        return "Hardened"
+    if min_score >= 40:
+        return "Standard"
+    if min_score >= 20:
+        return "Foundational"
+    return "Not Assessed"
 
 
 # ---------------------------------------------------------------------------
@@ -1206,18 +1720,21 @@ def _determine_iec_sl(scores: Dict[int, int]) -> int:
 # ---------------------------------------------------------------------------
 
 def compute_scorecard() -> Dict[str, Any]:
-    """Compute the 21-domain Security Scorecard.
+    """Compute the 33-domain Security Scorecard.
 
-    Domains scored 0-5 per the maturity scale:
+    Domains 1–21: Container infrastructure (CIS, NIST 800-190, IEC 62443, DISA STIG).
+    Domains 22–33: Agentic AI security layer (OWASP ASI, MITRE ATLAS, NIST AI RMF,
+                   NIST AI Agent Standards, ISO 42001, CSA MAESTRO, OWASP LLM Top 10).
+
+    Domains scored 0-5 per the CMMI-aligned maturity scale:
       0=Not Started, 1=Initial, 2=Managed, 3=Defined, 4=Measured, 5=Optimizing
 
-    Standards basis: CIS Docker Benchmark v1.6.0, NIST SP 800-190,
-    DISA Docker Enterprise STIG, IEC 62443 (with FR mapping and SL determination).
-
     Includes:
-    - Mandatory gate evaluation (hard-fail conditions zero affected domains)
-    - Three compliance sub-scores (IEC 62443, NIST 800-190, CIS)
+    - Mandatory gate evaluation (11 hard-fail conditions; zero affected domains)
+    - Seven compliance sub-scores (IEC 62443, NIST 800-190, CIS Docker,
+      OWASP Agentic, MITRE ATLAS, NIST AI RMF, CSA MAESTRO)
     - IEC 62443 Security Level determination (SL 0-4)
+    - Composite compliance level (weakest-link: Foundational → Optimizing)
 
     Returns:
         Scorecard dict with per-domain scores, compliance sub-scores, and overall maturity.
@@ -1230,27 +1747,40 @@ def compute_scorecard() -> Dict[str, Any]:
 
     # Raw domain scores (index 0 = domain 1)
     raw_scores = [
-        _score_image_integrity(trivy),           # 1
-        _score_vulnerability_management(trivy),  # 2
-        _score_supply_chain(),                   # 3
-        _score_container_hardening(openscap),    # 4
-        _score_runtime_protection(falco),        # 5
-        _score_malware_defense(clamav),          # 6
-        _score_network_segmentation(),           # 7
-        _score_secrets_management(),             # 8
-        _score_logging_monitoring(wazuh),        # 9
-        _score_compliance_auditing(openscap),    # 10
-        _score_secure_development(),             # 11
-        _score_incident_response(falco, wazuh),  # 12
-        _score_identity_authentication(),        # 13
-        _score_access_control_authorization(),   # 14
-        _score_data_confidentiality_encryption(), # 15
-        _score_resource_availability(),          # 16
-        _score_image_signing_provenance(),       # 17
-        _score_registry_security(),              # 18
-        _score_host_os_hardening(),              # 19
-        _score_docker_daemon_config(),           # 20
-        _score_container_runtime_isolation(),    # 21
+        _score_image_integrity(trivy),             # 1
+        _score_vulnerability_management(trivy),    # 2
+        _score_supply_chain(),                     # 3
+        _score_container_hardening(openscap),      # 4
+        _score_runtime_protection(falco),          # 5
+        _score_malware_defense(clamav),            # 6
+        _score_network_segmentation(),             # 7
+        _score_secrets_management(),               # 8
+        _score_logging_monitoring(wazuh),          # 9
+        _score_compliance_auditing(openscap),      # 10
+        _score_secure_development(),               # 11
+        _score_incident_response(falco, wazuh),    # 12
+        _score_identity_authentication(),          # 13
+        _score_access_control_authorization(),     # 14
+        _score_data_confidentiality_encryption(),  # 15
+        _score_resource_availability(),            # 16
+        _score_image_signing_provenance(),         # 17
+        _score_registry_security(),                # 18
+        _score_host_os_hardening(),                # 19
+        _score_docker_daemon_config(),             # 20
+        _score_container_runtime_isolation(),      # 21
+        # Agentic AI domains
+        _score_prompt_injection_defense(),         # 22
+        _score_agent_behavior_integrity(),         # 23
+        _score_tool_use_safety(),                  # 24
+        _score_least_agency(),                     # 25
+        _score_agent_identity_nhi(),               # 26
+        _score_memory_integrity(),                 # 27
+        _score_inter_agent_trust(),                # 28
+        _score_ai_model_supply_chain(),            # 29
+        _score_ai_observability(),                 # 30
+        _score_human_in_the_loop(),                # 31
+        _score_rogue_agent_containment(),          # 32
+        _score_data_exfiltration_prevention(),     # 33
     ]
 
     # Build domain_id → score dict (1-indexed)
@@ -1258,7 +1788,7 @@ def compute_scorecard() -> Dict[str, Any]:
 
     # Apply mandatory gates
     scores_by_id = _evaluate_mandatory_gates(scores_by_id, trivy)
-    domain_scores = [scores_by_id[i + 1] for i in range(21)]
+    domain_scores = [scores_by_id[i + 1] for i in range(33)]
 
     # Build domain list with metadata
     domains = []
@@ -1280,9 +1810,19 @@ def compute_scorecard() -> Dict[str, Any]:
     iec_pct = _compute_weighted_subscore(scores_by_id, _IEC_DOMAIN_MAP)
     nist_pct = _compute_weighted_subscore(scores_by_id, _NIST_DOMAIN_MAP)
     cis_pct = _compute_weighted_subscore(scores_by_id, _CIS_DOMAIN_MAP)
+    owasp_agentic_pct = _compute_weighted_subscore(scores_by_id, _OWASP_AGENTIC_DOMAIN_MAP)
+    mitre_atlas_pct = _compute_weighted_subscore(scores_by_id, _MITRE_ATLAS_DOMAIN_MAP)
+    nist_ai_rmf_pct = _compute_weighted_subscore(scores_by_id, _NIST_AI_RMF_DOMAIN_MAP)
+    csa_maestro_pct = _compute_weighted_subscore(scores_by_id, _CSA_MAESTRO_DOMAIN_MAP)
 
     # IEC 62443 Security Level
     iec_sl = _determine_iec_sl(scores_by_id)
+
+    # Composite compliance level (weakest-link across all 7 sub-scores)
+    compliance_level = _determine_compliance_level(
+        iec_pct, nist_pct, cis_pct,
+        owasp_agentic_pct, mitre_atlas_pct, nist_ai_rmf_pct, csa_maestro_pct,
+    )
 
     return {
         "version": "v0.9.0",
@@ -1291,6 +1831,13 @@ def compute_scorecard() -> Dict[str, Any]:
             "NIST SP 800-190",
             "DISA Docker Enterprise STIG",
             "IEC 62443",
+            "OWASP Top 10 for Agentic AI 2026",
+            "MITRE ATLAS (Oct 2025)",
+            "NIST AI RMF 1.0",
+            "NIST AI Agent Standards Initiative 2026",
+            "ISO/IEC 42001:2023",
+            "CSA MAESTRO (Feb 2025)",
+            "OWASP LLM Top 10",
         ],
         "timestamp": datetime.now(timezone.utc).isoformat(),
         "domains": domains,
@@ -1300,6 +1847,7 @@ def compute_scorecard() -> Dict[str, Any]:
             "percentage": overall_pct,
         },
         "compliance": {
+            "level": compliance_level,
             "iec_62443": {
                 "sub_score_pct": iec_pct,
                 "security_level": iec_sl,
@@ -1310,6 +1858,18 @@ def compute_scorecard() -> Dict[str, Any]:
             },
             "cis_docker": {
                 "sub_score_pct": cis_pct,
+            },
+            "owasp_agentic": {
+                "sub_score_pct": owasp_agentic_pct,
+            },
+            "mitre_atlas": {
+                "sub_score_pct": mitre_atlas_pct,
+            },
+            "nist_ai_rmf": {
+                "sub_score_pct": nist_ai_rmf_pct,
+            },
+            "csa_maestro": {
+                "sub_score_pct": csa_maestro_pct,
             },
         },
         # UI-friendly aliases

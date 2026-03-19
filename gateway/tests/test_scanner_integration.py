@@ -554,10 +554,10 @@ class TestComputeScorecard:
             "get_openscap_summary": MagicMock(return_value=_openscap_not_run()),
         }
 
-    def test_returns_twenty_one_domains(self):
+    def test_returns_thirty_three_domains(self):
         with patch.multiple("gateway.security.scanner_integration", **self._all_not_run_patches()):
             result = compute_scorecard()
-        assert len(result["domains"]) == 21
+        assert len(result["domains"]) == 33
 
     def test_all_domains_have_required_fields(self):
         with patch.multiple("gateway.security.scanner_integration", **self._all_not_run_patches()):
@@ -582,7 +582,7 @@ class TestComputeScorecard:
         with patch.multiple("gateway.security.scanner_integration", **self._all_not_run_patches()):
             result = compute_scorecard()
         assert "totals" in result
-        assert result["totals"]["max"] == 105  # 21 domains × 5
+        assert result["totals"]["max"] == 165  # 33 domains × 5
         assert 0 <= result["totals"]["percentage"] <= 100
 
     def test_standard_basis_present(self):
@@ -591,6 +591,10 @@ class TestComputeScorecard:
         assert "CIS Docker Benchmark v1.6.0" in result["standard_basis"]
         assert "NIST SP 800-190" in result["standard_basis"]
         assert "IEC 62443" in result["standard_basis"]
+        assert "OWASP Top 10 for Agentic AI 2026" in result["standard_basis"]
+        assert "MITRE ATLAS (Oct 2025)" in result["standard_basis"]
+        assert "NIST AI RMF 1.0" in result["standard_basis"]
+        assert "CSA MAESTRO (Feb 2025)" in result["standard_basis"]
 
     def test_overall_maturity_present(self):
         with patch.multiple("gateway.security.scanner_integration", **self._all_not_run_patches()):
@@ -627,11 +631,11 @@ class TestComputeScorecard:
         assert "timestamp" in result
 
     def test_scorecard_domain_ids_are_sequential(self):
-        # Scorecard now covers 21 domains (expanded from 12)
+        # Scorecard now covers 33 domains (21 infrastructure + 12 agentic AI)
         with patch.multiple("gateway.security.scanner_integration", **self._all_not_run_patches()):
             result = compute_scorecard()
         ids = [d["id"] for d in result["domains"]]
-        assert ids == list(range(1, 22))
+        assert ids == list(range(1, 34))
 
     def test_network_segmentation_baseline_three(self):
         # Score >= 3 (Docker network baseline); may be higher if icc=false configured
