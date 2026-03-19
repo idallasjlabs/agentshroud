@@ -36,13 +36,13 @@ jobs:
           sarif_file: trivy-gateway.sarif
           category: trivy-gateway
 
-      - name: Build OpenClaw Image
-        run: docker build -t agentshroud-openclaw:scan -f docker/Dockerfile.openclaw .
+      - name: Build Bot Image
+        run: docker build -t agentshroud-bot:scan -f docker/bots/openclaw/Dockerfile .
 
-      - name: Run Trivy on OpenClaw Image
+      - name: Run Trivy on Bot Image
         uses: aquasecurity/trivy-action@master
         with:
-          image-ref: agentshroud-openclaw:scan
+          image-ref: agentshroud-bot:scan
           format: sarif
           output: trivy-openclaw.sarif
           severity: CRITICAL,HIGH

@@ -1247,7 +1247,7 @@ GITHUB_TOKEN=your-github-pat-here
 GITHUB_REPO=username/agentshroud
 
 # Anthropic API
-ANTHROPIC_API_KEY=sk-ant-api03-...
+ANTHROPIC_API_KEY=YOUR_ANTHROPIC_API_KEY
 
 # Telegram Bot
 TELEGRAM_BOT_TOKEN=1234567890:ABCdefGHI...

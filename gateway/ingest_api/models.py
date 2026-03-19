@@ -10,7 +10,7 @@ Defines request and response schemas for all endpoints.
 """
 
 
-from typing import Any, Optional
+from typing import Any, Literal, Optional
 
 from pydantic import BaseModel, Field, field_validator
 
@@ -23,22 +23,23 @@ class ForwardRequest(BaseModel):
     Received from iOS Shortcuts, browser extension, scripts, or direct API calls.
     """
 
-    content: str = Field(..., description="The text/data being forwarded")
+    content: str = Field(..., max_length=100_000, description="The text/data being forwarded")
     source: str = Field(
         ...,
+        max_length=50,
         description="Source of the content: shortcut, browser_extension, script, api",
     )
-    content_type: str = Field(
+    content_type: Literal["text", "url", "photo", "file"] = Field(
         default="text", description="Type: text, url, photo, file"
     )
     metadata: dict[str, Any] = Field(
         default_factory=dict, description="Optional routing hints and context"
     )
     route_to: Optional[str] = Field(
-        default=None, description="Optional explicit target agent name"
+        default=None, max_length=100, description="Optional explicit target agent name"
     )
     user_id: Optional[str] = Field(
-        default=None, description="Telegram/platform user ID for RBAC. Set by gateway for webhook requests."
+        default=None, max_length=100, description="Telegram/platform user ID for RBAC. Set by gateway for webhook requests."
     )
 
     @field_validator("content")
@@ -63,24 +64,24 @@ class ApprovalRequest(BaseModel):
     Submitted by an agent when attempting actions like email_sending, file_deletion, etc.
     """
 
-    action_type: str = Field(..., description="Type of action requiring approval")
+    action_type: str = Field(..., max_length=100, description="Type of action requiring approval")
     description: str = Field(
-        ..., description="Human-readable description of the action"
+        ..., max_length=2_000, description="Human-readable description of the action"
     )
     details: dict[str, Any] = Field(
         default_factory=dict, description="Action-specific payload"
     )
     agent_id: str = Field(
-        default="openclaw-main", description="Agent requesting approval"
+        default="", max_length=100, description="Agent requesting approval (set by gateway from active bot config)"
     )
 
 
 class ApprovalDecision(BaseModel):
     """User's decision on a pending approval request"""
 
-    request_id: str = Field(..., description="ID of the approval request")
+    request_id: str = Field(..., max_length=100, description="ID of the approval request")
     approved: bool = Field(..., description="Whether to approve or reject")
-    reason: str = Field(default="", description="Optional reason for decision")
+    reason: str = Field(default="", max_length=2_000, description="Optional reason for decision")
 
 
 # === Response Models ===
@@ -184,7 +185,7 @@ class RedactionResult(BaseModel):
 
 
 class AgentTarget(BaseModel):
-    """Downstream OpenClaw agent target"""
+    """Downstream agent target"""
 
     name: str
     url: str
@@ -192,6 +193,8 @@ class AgentTarget(BaseModel):
     last_health_check: Optional[str] = None
     content_types: list[str] = Field(default_factory=list)
     tags: list[str] = Field(default_factory=list)
+    chat_path: str = "/chat"
+    health_path: str = "/health"
 
 
 # === SSH Models ===
@@ -200,10 +203,10 @@ class AgentTarget(BaseModel):
 class SSHExecRequest(BaseModel):
     """Request to execute an SSH command"""
 
-    host: str = Field(..., description="SSH host name from config")
-    command: str = Field(..., description="Command to execute")
+    host: str = Field(..., max_length=253, description="SSH host name from config")
+    command: str = Field(..., max_length=10_000, description="Command to execute")
     timeout: Optional[int] = Field(default=None, description="Timeout in seconds")
-    reason: str = Field(default="", description="Reason for execution")
+    reason: str = Field(default="", max_length=2_000, description="Reason for execution")
 
 
 class SSHExecResponse(BaseModel):
@@ -232,10 +235,10 @@ class EmailSendRequest(BaseModel):
     queues the send for human approval.
     """
 
-    to: str = Field(..., description="Recipient email address")
-    subject: str = Field(..., description="Email subject")
-    body: str = Field(..., description="Email body text")
-    agent_id: str = Field(default="openclaw-main", description="Requesting agent")
+    to: str = Field(..., max_length=254, description="Recipient email address")
+    subject: str = Field(..., max_length=998, description="Email subject")
+    body: str = Field(..., max_length=100_000, description="Email body text")
+    agent_id: str = Field(default="", max_length=100, description="Requesting agent (set by gateway from active bot config)")
 
     @field_validator("subject")
     @classmethod

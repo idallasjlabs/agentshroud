@@ -13,8 +13,10 @@ with logging of all egress attempts. Supports enforce and monitor modes.
 
 
 import ipaddress
+import asyncio
 import logging
 import time
+from collections import Counter
 from dataclasses import dataclass, field
 from enum import Enum
 from typing import Optional
@@ -100,14 +102,52 @@ class EgressPolicy:
 class EgressFilter:
     """Filter outbound connections based on allowlists with enforce/monitor modes."""
 
-    def __init__(self, 
+    def __init__(self,
                  config: Optional[EgressFilterConfig] = None,
-                 default_policy: Optional[EgressPolicy] = None):
+                 default_policy: Optional[EgressPolicy] = None,
+                 audit_store=None):
         self.config = config or get_egress_config()
         self.default_policy = default_policy or EgressPolicy()
         self._agent_policies: dict[str, EgressPolicy] = {}
         self._log: list[EgressAttempt] = []
         self._max_log_size = 10000
+        self._audit_store = audit_store  # Optional AuditStore for persistence
+        self._notifier = None  # Optional EgressTelegramNotifier
+        self._approval_queue = None  # Optional EgressApprovalQueue
+        self._event_bus = None
+        self._pending_notifications: list[dict] = []
+        # Time-limited interactive approvals: domain → expiry unix timestamp.
+        # Populated by grant_timed_approval() when owner selects 1h/4h/24h.
+        self._timed_approvals: dict[str, float] = {}
+
+    def set_notifier(self, notifier) -> None:
+        """Set the Telegram notifier for egress approval requests."""
+        self._notifier = notifier
+
+    def set_approval_queue(self, approval_queue) -> None:
+        """Set interactive egress approval queue."""
+        self._approval_queue = approval_queue
+
+    def set_event_bus(self, event_bus) -> None:
+        """Set optional event bus for real-time egress telemetry."""
+        self._event_bus = event_bus
+
+    def grant_timed_approval(self, domain: str, expires_at_iso: str) -> None:
+        """Record a time-limited interactive approval for a domain.
+
+        Called by the Telegram callback handler when the owner selects 1h/4h/24h.
+        Cleans up stale entries to prevent unbounded growth.
+        """
+        from datetime import datetime, timezone
+        try:
+            expiry = datetime.fromisoformat(expires_at_iso.replace("Z", "+00:00")).timestamp()
+        except (ValueError, AttributeError):
+            return
+        self._timed_approvals[domain.lower().strip()] = expiry
+        # Purge expired entries
+        now = time.time()
+        self._timed_approvals = {d: e for d, e in self._timed_approvals.items() if e > now}
+        logger.info("Timed egress approval granted: %s expires %s", domain, expires_at_iso)
 
     def set_agent_policy(self, agent_id: str, policy: EgressPolicy) -> None:
         """Set a per-agent egress policy."""
@@ -185,6 +225,21 @@ class EgressFilter:
                 f"domain '{parsed_dest}' in denylist ({'blocked' if action == EgressAction.DENY else 'monitored'})",
             )
 
+        # Check time-limited interactive approvals (owner-granted 1h/4h/24h)
+        _now = time.time()
+        _timed_expiry = self._timed_approvals.get(parsed_dest.lower() if parsed_dest else "")
+        if _timed_expiry is not None:
+            if _timed_expiry > _now:
+                return self._record(
+                    agent_id,
+                    destination,
+                    port,
+                    EgressAction.ALLOW,
+                    f"domain '{parsed_dest}' has active timed approval",
+                )
+            else:
+                self._timed_approvals.pop(parsed_dest.lower(), None)
+
         # Check config-based allowlist
         effective_allowlist = self.config.get_effective_allowlist(agent_id)
         if self._matches_allowlist_domain(parsed_dest, effective_allowlist):
@@ -245,6 +300,100 @@ class EgressFilter:
                 EgressAction.ALLOW,
                 f"monitor mode: '{parsed_dest}' not in allowlist - logged only",
             )
+
+    async def check_async(
+        self, agent_id: str, destination: str, port: Optional[int] = None, tool_name: str = "egress"
+    ) -> EgressAttempt:
+        """Async egress check with interactive approval for unknown domains."""
+        attempt = self.check(agent_id, destination, port)
+        needs_interactive_approval = (
+            self._approval_queue is not None
+            and self.config.mode == "enforce"
+            and (
+                attempt.action == EgressAction.DENY
+                or (
+                    getattr(self.config, "approval_required_for_all", False)
+                    and attempt.action == EgressAction.ALLOW
+                )
+            )
+        )
+        if needs_interactive_approval:
+            parsed = urlparse(destination) if "://" in destination else None
+            domain = (parsed.hostname if parsed else destination).split(":")[0]
+            resolved_port = port
+            if parsed and resolved_port is None:
+                resolved_port = parsed.port or (443 if parsed.scheme == "https" else 80)
+            if resolved_port is None:
+                resolved_port = 443
+
+            wait_task = asyncio.create_task(
+                self._approval_queue.request_approval(
+                    domain=domain,
+                    port=resolved_port,
+                    agent_id=agent_id,
+                    tool_name=tool_name,
+                )
+            )
+            await asyncio.sleep(0)
+            if self._notifier:
+                try:
+                    pending = await self._approval_queue.get_pending_requests()
+                    match = next(
+                        (
+                            p
+                            for p in pending
+                            if p["domain"] == domain
+                            and p["agent_id"] == agent_id
+                            and p["tool_name"] == tool_name
+                        ),
+                        None,
+                    )
+                    if match:
+                        await self._notifier.notify_pending(
+                            request_id=match["request_id"],
+                            domain=match["domain"],
+                            port=match["port"],
+                            risk_level=match["risk_level"],
+                            agent_id=match["agent_id"],
+                            tool_name=match["tool_name"],
+                        )
+                        if self._event_bus is not None:
+                            from gateway.ingest_api.event_bus import make_event
+                            await self._event_bus.emit(
+                                make_event(
+                                    "egress_approval_pending",
+                                    f"Egress approval pending: {match['domain']}:{match['port']}",
+                                    {
+                                        "request_id": match["request_id"],
+                                        "domain": match["domain"],
+                                        "port": match["port"],
+                                        "agent_id": match["agent_id"],
+                                        "tool_name": match["tool_name"],
+                                        "risk_level": match["risk_level"],
+                                    },
+                                    "warning",
+                                )
+                            )
+                except Exception as exc:
+                    logger.error("Egress approval notification error: %s", exc)
+
+            approval_result = await wait_task
+            if approval_result.value == "approved":
+                return self._record(
+                    agent_id,
+                    destination,
+                    port,
+                    EgressAction.ALLOW,
+                    f"interactive egress approval granted for '{domain}'",
+                )
+            return self._record(
+                agent_id,
+                destination,
+                port,
+                EgressAction.DENY,
+                f"interactive egress approval denied/timeout for '{domain}'",
+            )
+        return attempt
 
     def _matches_allowlist_domain(self, domain: str, allowlist: set[str]) -> bool:
         """Check if domain matches any domain in the allowlist (supports wildcards)."""
@@ -344,18 +493,103 @@ class EgressFilter:
         if len(self._log) > self._max_log_size:
             self._log = self._log[-self._max_log_size // 2 :]
 
+        # Persist to SQLite audit store if configured (fire-and-forget)
+        if self._audit_store is not None:
+            import asyncio
+            try:
+                loop = asyncio.get_running_loop()
+                loop.create_task(
+                    self._audit_store.log_event(
+                        event_type="egress_filter",
+                        severity="HIGH" if action == EgressAction.DENY else "INFO",
+                        details={
+                            "agent_id": agent_id,
+                            "destination": dest,
+                            "port": port,
+                            "action": action.value,
+                            "rule": rule,
+                        },
+                        source_module="egress_filter",
+                    )
+                )
+            except RuntimeError:
+                pass  # No running event loop
+
         if action == EgressAction.DENY:
             logger.warning(
                 f"EGRESS DENIED: agent={agent_id} dest={dest} port={port} "
                 f"mode={self.config.mode} rule={rule}"
             )
+            # Queue notification for async delivery
+            if self._notifier:
+                self._pending_notifications.append({
+                    "domain": dest,
+                    "agent_id": agent_id,
+                    "port": port,
+                    "timestamp": time.time(),
+                })
         else:
             logger.info(
                 f"EGRESS ALLOWED: agent={agent_id} dest={dest} port={port} "
                 f"mode={self.config.mode}"
             )
 
+        if self._event_bus is not None:
+            try:
+                from gateway.ingest_api.event_bus import make_event
+                import asyncio
+
+                loop = asyncio.get_running_loop()
+                loop.create_task(
+                    self._event_bus.emit(
+                        make_event(
+                            "egress_attempt",
+                            f"Egress {action.value}: {dest}",
+                            {
+                                "agent_id": agent_id,
+                                "destination": dest,
+                                "port": port,
+                                "rule": rule,
+                                "mode": self.config.mode,
+                            },
+                            "warning" if action == EgressAction.DENY else "info",
+                        )
+                    )
+                )
+            except RuntimeError:
+                pass
+
         return attempt
+
+    async def flush_notifications(self) -> int:
+        """Send pending egress notifications via Telegram. Called from request handler.
+
+        Returns:
+            Number of notifications successfully sent.
+        """
+        sent = 0
+        while self._pending_notifications:
+            notif = self._pending_notifications.pop(0)
+            try:
+                try:
+                    await self._notifier.notify_pending(
+                        request_id=notif.get("request_id", f"legacy-{int(time.time())}"),
+                        domain=notif["domain"],
+                        port=notif.get("port", 443),
+                        risk_level=notif.get("risk_level", "unknown"),
+                        agent_id=notif["agent_id"],
+                        tool_name=notif.get("tool_name", "egress"),
+                    )
+                except TypeError:
+                    # Backward-compatible notifier contract
+                    await self._notifier.notify_pending(
+                        notif["domain"],
+                        notif["agent_id"],
+                    )
+                sent += 1
+            except Exception as e:
+                logger.error("Egress notification failed: %s", e)
+        return sent
 
     def get_log(
         self, agent_id: Optional[str] = None, limit: int = 100
@@ -372,4 +606,33 @@ class EgressFilter:
         log = self.get_log(agent_id, limit=self._max_log_size)
         allowed = sum(1 for a in log if a.action == EgressAction.ALLOW)
         denied = sum(1 for a in log if a.action == EgressAction.DENY)
-        return {"total": len(log), "allowed": allowed, "denied": denied}
+        pending = 0
+        emergency = {"enabled": False, "reason": ""}
+        if self._approval_queue is not None:
+            pending = len(getattr(self._approval_queue, "_pending_requests", {}))
+            emergency = {
+                "enabled": bool(getattr(self._approval_queue, "_emergency_block_all", False)),
+                "reason": str(getattr(self._approval_queue, "_emergency_reason", "")),
+            }
+        return {
+            "total": len(log),
+            "allowed": allowed,
+            "denied": denied,
+            "pending": pending,
+            "emergency": emergency,
+            "top_denied_destinations": self.get_top_destinations(limit=5, denied_only=True),
+        }
+
+    def get_top_destinations(self, limit: int = 5, denied_only: bool = False) -> list[dict]:
+        """Return top destination domains by volume."""
+        attempts = self._log
+        if denied_only:
+            attempts = [a for a in attempts if a.action == EgressAction.DENY]
+        counter: Counter[str] = Counter()
+        for a in attempts:
+            destination = a.destination
+            if "://" in destination:
+                parsed = urlparse(destination)
+                destination = parsed.hostname or destination
+            counter[destination] += 1
+        return [{"destination": dest, "count": count} for dest, count in counter.most_common(max(1, limit))]

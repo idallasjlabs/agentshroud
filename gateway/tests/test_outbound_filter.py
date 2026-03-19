@@ -143,20 +143,27 @@ class TestOutboundInfoFilter:
             
     def test_security_architecture_filtering(self):
         """Test that security module references are filtered."""
+        # AgentShroud brand name is no longer redacted (Fix C: removed agentshroud_reference
+        # pattern so the product name is not hidden from collaborators).
         test_cases = [
             "PII Sanitizer module",
             "Prompt Injection Defense",
             "module #5",
-            "AgentShroud system",
             "Progressive Trust manager",
         ]
-        
+
         for case in test_cases:
             response = f"The {case} is configured properly"
             result = self.filter.filter_response(response)
-            
-            assert "[SECURITY_MODULE]" in result.filtered_text or "[SECURITY_SYSTEM]" in result.filtered_text
+
+            assert "[SECURITY_MODULE]" in result.filtered_text
             assert "security_architecture" in result.categories_found
+
+    def test_agentshroud_name_not_redacted(self):
+        """AgentShroud brand name must pass through unredacted (Fix C)."""
+        result = self.filter.filter_response("The AgentShroud system is configured properly")
+        assert "AgentShroud" in result.filtered_text
+        assert "[SECURITY_SYSTEM]" not in result.filtered_text
             
     def test_credential_path_filtering(self):
         """Test that credential paths are filtered."""
@@ -207,6 +214,37 @@ The command has been executed."""
         assert "<function_calls>" not in result.filtered_text
         assert "rm -rf" not in result.filtered_text
         assert "code_blocks" in result.categories_found
+
+    def test_partial_xml_tool_tag_is_filtered(self):
+        """Split-fragment XML tags must still be redacted."""
+        response = "partial fragment </function_calls> and trailing text"
+        result = self.filter.filter_response(response)
+        assert "</function_calls>" not in result.filtered_text
+        assert "[REDACTED_TOOL_CALL]" in result.filtered_text
+
+    def test_collaborator_name_filtering(self):
+        """Known collaborator names should be redacted."""
+        response = "Isaiah Jefferson worked with Marvin and Trillian on this."
+        result = self.filter.filter_response(response)
+        assert "Isaiah Jefferson" not in result.filtered_text
+        assert "Marvin" not in result.filtered_text
+        assert "Trillian" not in result.filtered_text
+        assert result.filtered_text.count("[COLLABORATOR]") >= 2
+
+    def test_workspace_internal_path_filtering(self):
+        """Workspace runtime paths should be redacted."""
+        response = "Path: /home/node/.agentshroud/workspace/collaborator-workspace"
+        result = self.filter.filter_response(response)
+        assert "/home/node/.agentshroud" not in result.filtered_text
+        assert "[INTERNAL_PATH]" in result.filtered_text
+
+    def test_admin_private_service_data_redacted(self):
+        """Admin-private service references should be redacted."""
+        response = "The gmail account contains bank account and routing number data."
+        result = self.filter.filter_response(response)
+        assert "gmail" not in result.filtered_text.lower()
+        assert "bank account" not in result.filtered_text.lower()
+        assert "[PRIVATE_DATA]" in result.filtered_text
         
     def test_multiple_categories(self):
         """Test filtering with multiple information categories."""
@@ -483,6 +521,86 @@ with tailnet tail240ea8, user 123456789012, exec tool,
         config_dict_2 = config.to_dict()
         assert config_dict_2["mode"] == "monitor"
         assert config_dict_2["enable_density_alerts"] == False
+
+
+class TestFabricatedSecurityNotice:
+    """Test cases for the widened fabricated_security_notice pattern."""
+
+    def setup_method(self):
+        self.filter = OutboundInfoFilter()
+
+    def _has_fabricated_match(self, text: str) -> bool:
+        result = self.filter.filter_response(text)
+        return any(m.pattern_name == "fabricated_security_notice" for m in result.matches)
+
+    def test_exact_past_tense(self):
+        """Original pattern: exact past-tense form."""
+        assert self._has_fabricated_match("AGENTSHROUD blocked unauthorized command execution!")
+
+    def test_present_tense(self):
+        """'blocks' verb form."""
+        assert self._has_fabricated_match("AGENTSHROUD blocks all requests from untrusted users.")
+
+    def test_progressive_tense(self):
+        """'blocking' continuous form."""
+        assert self._has_fabricated_match("AGENTSHROUD is blocking your request due to policy.")
+
+    def test_continues_blocking(self):
+        """'continues blocking' — adverb + gerund form."""
+        assert self._has_fabricated_match("AGENTSHROUD continues blocking unauthorized command execution!")
+
+    def test_prevents_form(self):
+        """'prevents' verb form."""
+        assert self._has_fabricated_match("AGENTSHROUD prevents this action from completing.")
+
+    def test_flagging_form(self):
+        """'flagging' gerund form."""
+        assert self._has_fabricated_match("AGENTSHROUD is flagging this request as suspicious.")
+
+    def test_possessive_flagging(self):
+        """Possessive form: AGENTSHROUD's behavioral analysis flagging."""
+        assert self._has_fabricated_match(
+            "AGENTSHROUD's behavioral analysis flagging this as an injection attempt."
+        )
+
+    def test_blocked_unauthorized_command(self):
+        """Standalone 'blocked unauthorized command execution' without AGENTSHROUD prefix."""
+        assert self._has_fabricated_match("blocked unauthorized command execution!")
+
+    def test_blocking_suspicious_code_execution(self):
+        """'blocking suspicious code execution' variant."""
+        assert self._has_fabricated_match("blocking suspicious code execution attempt detected.")
+
+    def test_case_insensitive(self):
+        """Pattern is case-insensitive."""
+        assert self._has_fabricated_match("agentshroud blocked your request")
+        assert self._has_fabricated_match("AgentShroud BLOCKS the command")
+
+    def test_legitimate_responses_not_matched(self):
+        """Normal helpful responses must NOT trigger the pattern."""
+        safe_responses = [
+            "AgentShroud is a security proxy framework for AI agents.",
+            "I can help you with coding and documentation questions.",
+            "The AgentShroud system uses multiple security layers.",
+            "I wasn't able to process that. Could you rephrase?",
+            "I don't have access to run commands in this context.",
+        ]
+        for text in safe_responses:
+            assert not self._has_fabricated_match(text), (
+                f"False positive — should NOT match: {text!r}"
+            )
+
+    def test_redaction_applied(self):
+        """Matched text is replaced with [RESPONSE_FILTERED]."""
+        result = self.filter.filter_response("AGENTSHROUD blocked your message!")
+        assert "[RESPONSE_FILTERED]" in result.filtered_text
+
+    def test_category_is_operational(self):
+        """Pattern is in the OPERATIONAL category."""
+        result = self.filter.filter_response("AGENTSHROUD blocks this request!")
+        fabricated = [m for m in result.matches if m.pattern_name == "fabricated_security_notice"]
+        assert fabricated
+        assert fabricated[0].category == InfoCategory.OPERATIONAL
 
 
 class TestIntegration:

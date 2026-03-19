@@ -77,7 +77,35 @@ class OutboundInfoFilter:
         """
         self.config = config or {}
         self.mode = self.config.get("mode", "enforce")
-        self.trust_overrides = self.config.get("trust_overrides", {})
+        # Default trust overrides: owner (FULL) sees everything except raw credentials
+        # and tool-call XML fragments (which should never appear in chat responses).
+        # Collaborators get standard filtering on all categories.
+        _default_trust_overrides: Dict[str, Dict[str, bool]] = {
+            "FULL": {
+                # Owner configured the whole system — show all operational details
+                "security_architecture": True,
+                "operational": True,
+                "infrastructure": True,   # hostnames, IPs, ports — owner knows these
+                "user_identity": True,    # collaborator names, IDs — owner manages these
+                "tool_inventory": True,   # tool names — owner configured these
+                # Raw credentials and tool-call XML are never appropriate in chat output
+                "credential": False,
+                "code_blocks": False,
+            },
+            "ELEVATED": {
+                "operational": True,
+                "security_architecture": False,
+                "credential": False,
+                "user_identity": False,
+                "infrastructure": False,
+                "tool_inventory": False,
+                "code_blocks": False,
+            },
+        }
+        self.trust_overrides: Dict[str, Dict[str, bool]] = {
+            **_default_trust_overrides,
+            **self.config.get("trust_overrides", {}),
+        }
         
         # Compile all filter patterns
         self.patterns = self._compile_patterns()
@@ -140,6 +168,52 @@ class OutboundInfoFilter:
                 "category": InfoCategory.INFRASTRUCTURE,
                 "replacement": ":[PORT]",
             },
+            {
+                "name": "sensitive_port_reference",
+                "pattern": r"\bport\s+(?:8080|8443|3000|5000|9090|6379|5432|3306|27017)\b",
+                "category": InfoCategory.INFRASTRUCTURE,
+                "replacement": "port [PORT]",
+                "flags": re.IGNORECASE,
+            },
+
+            # Runtime environment patterns — bot container internals not for collaborators
+            {
+                "name": "os_kernel_version",
+                "pattern": r"\bLinux\s+\d+\.\d+[\d.\-a-zA-Z]+\b",
+                "category": InfoCategory.INFRASTRUCTURE,
+                "replacement": "[OS_VERSION]",
+            },
+            {
+                "name": "cpu_architecture",
+                "pattern": r"\b(?:arm64|aarch64|x86_64|armv\d+[a-z]*|i386|i686)\b",
+                "category": InfoCategory.INFRASTRUCTURE,
+                "replacement": "[ARCH]",
+            },
+            {
+                "name": "nodejs_version",
+                "pattern": r"\bNode(?:\.js)?\s+v\d+\.\d+\.\d+\b",
+                "category": InfoCategory.INFRASTRUCTURE,
+                "replacement": "[RUNTIME_VERSION]",
+            },
+            {
+                "name": "runtime_version_generic",
+                "pattern": r"\b(?:Python|Ruby|Go|Rust|Java|PHP|Perl|bash)\s+v?\d+\.\d+\.?\d*\b",
+                "category": InfoCategory.INFRASTRUCTURE,
+                "replacement": "[RUNTIME_VERSION]",
+            },
+            {
+                "name": "container_user_path",
+                "pattern": r"/home/node(?:/[^\s\)\"]*)?",
+                "category": InfoCategory.OPERATIONAL,
+                "replacement": "[CONTAINER_PATH]",
+            },
+            {
+                "name": "model_identity_reveal",
+                "pattern": r"(?:Model|LLM|AI model|running on)[:\s]+(?:Claude|GPT|Gemini|Llama|Qwen|Mistral)[^.\n]{0,40}",
+                "category": InfoCategory.SECURITY_ARCH,
+                "replacement": "[MODEL_INFO]",
+                "flags": re.IGNORECASE,
+            },
 
             # Tool inventory patterns - only security-sensitive tools
             {
@@ -157,6 +231,13 @@ class OutboundInfoFilter:
                 "replacement": r"\g<1>[USER_ID]",
                 "flags": re.IGNORECASE,
             },
+            {
+                "name": "collaborator_identity_name",
+                "pattern": r"\b(?:Isaiah Jefferson|Steve Hay|Marvin)\b|\b(?:Trillian|raspberrypi)\b(?!\.tail[a-f0-9]+\.ts\.net)",
+                "category": InfoCategory.USER_IDENTITY,
+                "replacement": "[COLLABORATOR]",
+                "flags": re.IGNORECASE,
+            },
 
             # Security architecture patterns
             {
@@ -166,13 +247,6 @@ class OutboundInfoFilter:
                 "replacement": "[SECURITY_MODULE]",
                 "flags": re.IGNORECASE,
             },
-            {
-                "name": "agentshroud_reference",
-                "pattern": r"\bAgentShroud\b",
-                "category": InfoCategory.SECURITY_ARCH,
-                "replacement": "[SECURITY_SYSTEM]",
-            },
-
             # Credential patterns
             {
                 "name": "secret_path",
@@ -190,11 +264,41 @@ class OutboundInfoFilter:
             # Operational patterns
             {
                 "name": "source_file_path",
-                "pattern": r"(?:/app/agentshroud|/home/node/\.openclaw)/[\w/._-]+\.(?:py|js|ts|yaml|yml|json|md)",
+                "pattern": r"(?:/app/agentshroud|/home/[^/]+/\.[^/]+)/[\w/._-]+\.(?:py|js|ts|yaml|yml|json|md)",
                 "category": InfoCategory.OPERATIONAL,
                 "replacement": "[INTERNAL_PATH]",
             },
+            {
+                "name": "workspace_internal_path",
+                "pattern": r"/home/node/\.agentshroud(?:/[\w/._-]+)?",
+                "category": InfoCategory.OPERATIONAL,
+                "replacement": "[INTERNAL_PATH]",
+            },
+            {
+                "name": "admin_private_service_data",
+                "pattern": r"\b(?:gmail|iCloud|home assistant|homeassistant|bank account|routing number|account number|financial data|admin-private)\b",
+                "category": InfoCategory.OPERATIONAL,
+                "replacement": "[PRIVATE_DATA]",
+                "flags": re.IGNORECASE,
+            },
             
+            # Fabricated security notice — bot roleplaying as the gateway/pipeline.
+            # escalate=True: pipeline escalates this from REDACT to BLOCK and returns
+            # a clean replacement message instead of passing the redacted text through.
+            {
+                "name": "fabricated_security_notice",
+                "pattern": (
+                    r"AGENTSHROUD'?s?\s+(?:\w+\s+){0,3}"
+                    r"(?:blocked|blocks|blocking|prevents?|prevented|flagging?|flagged|detecting|detected|intercepted?)\b"
+                    r"[^!\n]*[!]?"
+                    r"|(?:blocked|blocking)\s+(?:unauthorized|suspicious)\s+(?:command|code)\s+execution[^!\n]*[!]?"
+                ),
+                "category": InfoCategory.OPERATIONAL,
+                "replacement": "[RESPONSE_FILTERED]",
+                "flags": re.IGNORECASE,
+                "escalate": True,
+            },
+
             # Code block patterns - function_calls XML, tool invocations
             {
                 "name": "function_calls_xml",
@@ -210,6 +314,13 @@ class OutboundInfoFilter:
                 "replacement": "[REDACTED_TOOL_CALL]",
                 "flags": re.DOTALL,
             },
+            {
+                "name": "xml_tool_tag_fragment",
+                "pattern": r"</?(?:function_calls|function_results|invoke|invoke_result|parameter|thinking|system-reminder)\b[^>]*>",
+                "category": InfoCategory.CODE_BLOCKS,
+                "replacement": "[REDACTED_TOOL_CALL]",
+                "flags": re.IGNORECASE,
+            },
         ]
         
         # Compile all patterns
@@ -222,6 +333,7 @@ class OutboundInfoFilter:
                     "regex": re.compile(p["pattern"], flags),
                     "category": p["category"],
                     "replacement": p["replacement"],
+                    "escalate": p.get("escalate", False),
                 })
             except re.error as e:
                 logger.error(f"Failed to compile pattern {p['name']}: {e}")
@@ -304,7 +416,7 @@ class OutboundInfoFilter:
         # Log results
         if matches:
             if self.mode == "enforce":
-                logger.warning(
+                logger.info(
                     f"Outbound filter: {len(matches)} redactions applied "
                     f"(trust={user_trust_level}, risk={risk_level}, source={source})"
                 )

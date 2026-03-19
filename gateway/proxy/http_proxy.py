@@ -17,11 +17,13 @@ from __future__ import annotations
 
 import asyncio
 import logging
+import socket
 import time
 from typing import Optional
 
 from .web_config import WebProxyConfig
 from .web_proxy import WebProxy
+from ..security.egress_filter import EgressAction, EgressFilter
 
 logger = logging.getLogger("agentshroud.proxy.http_proxy")
 
@@ -29,13 +31,44 @@ logger = logging.getLogger("agentshroud.proxy.http_proxy")
 ALLOWED_DOMAINS: list[str] = [
     "api.openai.com",
     "api.anthropic.com",
-    "api.telegram.org",
     "oauth2.googleapis.com",
     "www.googleapis.com",
     "gmail.googleapis.com",
     "*.github.com",
     "*.githubusercontent.com",
+    # Slack Socket Mode WebSocket endpoint (OpenClaw native Slack channel)
+    "wss-primary.slack.com",
+    "wss-backup.slack.com",
+    "slack.com",
+    "*.slack.com",
 ]
+
+# Internal control-plane destinations required for channel transport.
+# These are bypassed from interactive egress approval to avoid deadlocking
+# the approval channel itself.
+# NOTE: api.telegram.org is intentionally NOT listed here.  The bot is
+# configured with TELEGRAM_API_BASE_URL=http://gateway:8080/telegram-api
+# and NO_PROXY=gateway, so all Telegram API calls must go through the
+# gateway's /telegram-api/ proxy (where the Slack bridge intercept lives).
+# Allowing direct CONNECT tunnels to api.telegram.org bypasses the bridge
+# and causes sendMessage responses to disappear silently.
+SYSTEM_BYPASS_DOMAINS: set[str] = {
+    # Slack: required for OpenClaw's native Slack channel (Socket Mode WebSocket +
+    # Web API REST calls).  Must bypass interactive egress approval to avoid the
+    # approval channel itself depending on Slack being reachable.
+    "slack.com",
+    "wss-primary.slack.com",
+    "wss-backup.slack.com",
+    "edgeapi.slack.com",
+}
+
+# Domains that are unconditionally BLOCKED from direct CONNECT tunnels,
+# even if the egress filter policy would otherwise allow them.
+# The bot MUST use its configured base URL (e.g. TELEGRAM_API_BASE_URL)
+# to reach these hosts through the gateway proxy, not via a raw tunnel.
+CONNECT_FORCE_BLOCK_DOMAINS: set[str] = {
+    "api.telegram.org",
+}
 
 
 class HTTPConnectProxy:
@@ -55,6 +88,7 @@ class HTTPConnectProxy:
     def __init__(
         self,
         web_proxy: Optional[WebProxy] = None,
+        egress_filter: Optional[EgressFilter] = None,
         host: str = "0.0.0.0",
         port: int = 8181,
     ):
@@ -65,6 +99,7 @@ class HTTPConnectProxy:
             )
             web_proxy = WebProxy(config=config)
         self.web_proxy = web_proxy
+        self.egress_filter = egress_filter
         self.host = host
         self.port = port
         self._server: Optional[asyncio.Server] = None
@@ -176,9 +211,58 @@ class HTTPConnectProxy:
             host = target
             port = 443
 
-        # Check domain against allowlist (via WebProxy)
+        bypass_system_domain = host.lower().rstrip(".") in SYSTEM_BYPASS_DOMAINS
+        force_blocked_domain = host.lower().rstrip(".") in CONNECT_FORCE_BLOCK_DOMAINS
+
         url = f"https://{host}:{port}/"
-        result = self.web_proxy.check_request(url)
+        result_blocked = False
+        block_reason = "allowed"
+
+        if force_blocked_domain:
+            # Hard block — takes priority over egress filter and system bypass.
+            # Bot must use its configured gateway base URL (e.g. TELEGRAM_API_BASE_URL)
+            # rather than a direct CONNECT tunnel.
+            result_blocked = True
+            block_reason = f"direct CONNECT tunnel to {host} is blocked; use gateway proxy"
+        elif bypass_system_domain:
+            block_reason = "system egress bypass domain"
+        elif self.egress_filter is not None:
+            # Primary policy path: interactive egress approval + policy engine.
+            # This is required so unknown domains can raise approval prompts
+            # instead of being hard-blocked by static CONNECT allowlists.
+            egress_attempt = await self.egress_filter.check_async(
+                agent_id="http_connect_proxy",
+                destination=url,
+                port=port,
+                tool_name="http_connect_tunnel",
+            )
+            if egress_attempt.action != EgressAction.ALLOW:
+                result_blocked = True
+                block_reason = (
+                    egress_attempt.details
+                    or egress_attempt.rule
+                    or "egress denied"
+                )
+            else:
+                # Keep static allowlist as observability signal when interactive
+                # approval/policy allows an otherwise unknown domain.
+                web_result = self.web_proxy.check_request(url)
+                if web_result.blocked:
+                    logger.info(
+                        "CONNECT allowed by egress policy despite static allowlist miss: %s:%s",
+                        host,
+                        port,
+                    )
+                block_reason = (
+                    egress_attempt.details
+                    or egress_attempt.rule
+                    or "egress allowed"
+                )
+        else:
+            # Fallback path when egress filter is unavailable.
+            result = self.web_proxy.check_request(url)
+            result_blocked = result.blocked
+            block_reason = result.block_reason
 
         # Track stats
         self._stats["total"] += 1
@@ -186,16 +270,16 @@ class HTTPConnectProxy:
             "timestamp": time.time(),
             "host": host,
             "port": port,
-            "allowed": not result.blocked,
-            "block_reason": result.block_reason,
+            "allowed": not result_blocked,
+            "block_reason": block_reason,
         }
         self._stats["recent"].insert(0, entry)
         if len(self._stats["recent"]) > 100:
             self._stats["recent"] = self._stats["recent"][:100]
 
-        if result.blocked:
+        if result_blocked:
             self._stats["blocked"] += 1
-            logger.warning(f"CONNECT blocked: {host}:{port} — {result.block_reason}")
+            logger.warning(f"CONNECT blocked: {host}:{port} — {block_reason}")
             writer.write(b"HTTP/1.1 403 Forbidden\r\nContent-Length: 0\r\n\r\n")
             await writer.drain()
             return
@@ -216,6 +300,30 @@ class HTTPConnectProxy:
         logger.info(f"CONNECT tunnel established: {host}:{port}")
         writer.write(b"HTTP/1.1 200 Connection Established\r\n\r\n")
         await writer.drain()
+
+        # Enable TCP keepalive on both ends of the tunnel so the OS sends
+        # keepalive probes on idle connections. Without this, Cisco AnyConnect
+        # (and similar VPNs) silently drop idle TCP sessions after ~10 minutes,
+        # causing WebSocket ping/pong timeouts (e.g. Slack Socket Mode).
+        for _transport in (
+            getattr(writer, "transport", None),
+            getattr(target_writer, "transport", None),
+        ):
+            if _transport is None:
+                continue
+            try:
+                _sock = _transport.get_extra_info("socket")
+                if _sock is not None:
+                    _sock.setsockopt(socket.SOL_SOCKET, socket.SO_KEEPALIVE, 1)
+                    # Start probes after 60s idle, then every 15s, drop after 6 missed.
+                    if hasattr(socket, "TCP_KEEPIDLE"):
+                        _sock.setsockopt(socket.IPPROTO_TCP, socket.TCP_KEEPIDLE, 60)
+                    if hasattr(socket, "TCP_KEEPINTVL"):
+                        _sock.setsockopt(socket.IPPROTO_TCP, socket.TCP_KEEPINTVL, 15)
+                    if hasattr(socket, "TCP_KEEPCNT"):
+                        _sock.setsockopt(socket.IPPROTO_TCP, socket.TCP_KEEPCNT, 6)
+            except Exception:
+                pass
 
         # Relay bytes in both directions until one side closes
         await asyncio.gather(

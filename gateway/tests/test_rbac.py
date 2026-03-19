@@ -84,12 +84,32 @@ class TestRBACConfig:
         
         owners = config.get_users_by_role(Role.OWNER)
         assert "8096968754" in owners
-        assert len(owners) == 1
+        # Owner list may include additional platform IDs (e.g. Slack user ID)
+        # alongside the primary Telegram owner ID — allow ≥ 1.
+        assert len(owners) >= 1
         
         collaborators = config.get_users_by_role(Role.COLLABORATOR)
         expected_collaborators = ["8506022825", "8545356403", "15712621992", "8279589982", "8526379012"]
         for user_id in expected_collaborators:
             assert user_id in collaborators
+
+    def test_owner_and_collaborators_can_be_overridden_from_env(self):
+        """Env overrides should drive runtime owner/collaborator identity."""
+        with patch.dict(
+            os.environ,
+            {
+                "AGENTSHROUD_OWNER_USER_ID": "7614658040",
+                "AGENTSHROUD_COLLABORATOR_USER_IDS": "8506022825, 8545356403,7614658040",
+            },
+            clear=False,
+        ):
+            config = RBACConfig()
+
+        assert config.owner_user_id == "7614658040"
+        assert config.get_user_role("7614658040") == Role.OWNER
+        # Owner should be excluded from collaborator list even if included in env.
+        assert "7614658040" not in config.collaborator_user_ids
+        assert config.get_user_role("8506022825") == Role.COLLABORATOR
 
 
 class TestRBACManager:

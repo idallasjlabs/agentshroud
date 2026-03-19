@@ -1,3 +1,7 @@
+# Copyright © 2026 Isaiah Dallas Jefferson, Jr. AgentShroud™. All rights reserved.
+# AgentShroud™ is a trademark of Isaiah Dallas Jefferson, Jr., first used in February 2026.
+# Protected by common law trademark rights. Federal trademark registration pending.
+# Unauthorized reproduction, distribution, or use of the AgentShroud name or brand is strictly prohibited.
 """Test enforce-by-default functionality for core security modules."""
 import os
 import pytest
@@ -75,14 +79,18 @@ class TestEnforceDefaults:
         
         check_monitor_mode_warnings(mock_config, mock_logger)
         
-        # Should warn for each core module
-        assert mock_logger.warning.call_count == 4
+        # Should warn for each of the 8 core modules (expanded in v0.8.0)
+        assert mock_logger.warning.call_count == 8
         warning_calls = [call[0][0] for call in mock_logger.warning.call_args_list]
-        
+
         assert any("pii_sanitizer" in call and "MONITOR mode" in call for call in warning_calls)
         assert any("prompt_guard" in call and "MONITOR mode" in call for call in warning_calls)
         assert any("egress_filter" in call and "MONITOR mode" in call for call in warning_calls)
         assert any("mcp_proxy" in call and "MONITOR mode" in call for call in warning_calls)
+        assert any("dns_filter" in call and "MONITOR mode" in call for call in warning_calls)
+        assert any("subagent_monitor" in call and "MONITOR mode" in call for call in warning_calls)
+        assert any("egress_monitor" in call and "MONITOR mode" in call for call in warning_calls)
+        assert any("killswitch" in call and "MONITOR mode" in call for call in warning_calls)
 
     def test_monitor_mode_warning_message_format(self):
         """Test that monitor mode warnings contain required information."""

@@ -58,7 +58,7 @@ class ToolCheckResult:
 
 @dataclass
 class SubagentMonitorConfig:
-    mode: str = "monitor"  # "monitor" or "enforce"
+    mode: str = "enforce"  # "monitor" or "enforce"
     max_concurrent_per_session: int = 20
     inherit_trust: bool = True
 

@@ -354,7 +354,7 @@ docker exec agentshroud_isaiah curl http://192.168.1.1
 **API Key Verification**:
 ```bash
 docker exec agentshroud_isaiah sh -c 'echo $OPENAI_API_KEY | cut -c1-20'
-# Result: sk-proj-Op8IhhIBP38F (key loaded)
+# Result: [REDACTED_EXAMPLE_KEY] (key loaded)
 ```
 
 ### 7. Current Issues

@@ -24,7 +24,7 @@ logger = logging.getLogger("agentshroud.proxy.forwarder")
 class ForwarderConfig:
     """Configuration for the HTTP forwarder."""
 
-    target_url: str = "http://openclaw:3000"
+    target_url: str = ""  # Set from BotConfig.base_url at runtime
     timeout_seconds: float = 30.0
     max_retries: int = 3
     retry_delay_seconds: float = 1.0

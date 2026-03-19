@@ -60,7 +60,7 @@ class LogSanitizer(logging.Filter):
                 r'"[^"]*":\s*"[^"]*"'
             ),  # JSON-like op output
             # Internal structure leakage
-            "internal_paths": re.compile(r"/opt/openclaw/[^\s]*"),
+            "internal_paths": re.compile(r"/opt/[a-zA-Z0-9_-]+/[^\s]*"),
             "docker_paths": re.compile(r"/var/lib/docker/[^\s]*"),
             "config_files": re.compile(r"\.env\.[^\s]*|config\.[^\s]*\.json"),
         }
