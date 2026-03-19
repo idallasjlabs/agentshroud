@@ -60,14 +60,6 @@ RUN DPKG_ARCH=$(dpkg --print-architecture) && \
     dpkg -i "/tmp/syft_${SYFT_VERSION}_linux_${SYFT_ARCH}.deb" && \
     rm "/tmp/syft_${SYFT_VERSION}_linux_${SYFT_ARCH}.deb"
 
-# Docker CLI — for container scanning via mounted Docker socket (no daemon)
-ARG DOCKER_CLI_VERSION=27.3.1
-RUN DPKG_ARCH=$(dpkg --print-architecture) && \
-    curl -sSfL -o "/tmp/docker-${DOCKER_CLI_VERSION}.tgz" \
-        "https://download.docker.com/linux/static/stable/${DPKG_ARCH}/docker-${DOCKER_CLI_VERSION}.tgz" && \
-    tar xzf "/tmp/docker-${DOCKER_CLI_VERSION}.tgz" --strip-components=1 -C /usr/local/bin/ docker/docker && \
-    rm "/tmp/docker-${DOCKER_CLI_VERSION}.tgz"
-
 # Trivy vulnerability scanner — pinned version (M7 fix)
 ARG TRIVY_VERSION=0.69.3
 # R2-M1: Download Trivy with checksum verification for supply chain integrity
@@ -114,6 +106,9 @@ LABEL org.opencontainers.image.source="https://github.com/idallasj/agentshroud"
 ENV PYTHONDONTWRITEBYTECODE=1
 # Redirect op CLI config to tmpfs mount (read-only root filesystem)
 ENV XDG_CONFIG_HOME=/tmp
+# tldextract (via presidio_analyzer) caches the Public Suffix List; point it
+# to the writable tmpfs so it doesn't warn every startup on read-only rootfs.
+ENV TLDEXTRACT_CACHE_PATH=/tmp/tldextract
 
 # Copy security scripts
 COPY docker/scripts/security-entrypoint.sh /usr/local/bin/security-entrypoint.sh
