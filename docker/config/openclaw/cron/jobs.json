@@ -12,7 +12,7 @@
       "schedule": {
         "kind": "cron",
         "expr": "0 14 * * *",
-        "tz": "America/Chicago"
+        "tz": "America/New_York"
       },
       "sessionTarget": "isolated",
       "wakeMode": "now",
@@ -43,7 +43,7 @@
       "schedule": {
         "kind": "cron",
         "expr": "0 18 * * 5",
-        "tz": "America/Chicago"
+        "tz": "America/New_York"
       },
       "sessionTarget": "isolated",
       "wakeMode": "now",
@@ -73,13 +73,13 @@
       "schedule": {
         "kind": "cron",
         "expr": "45 5 * * *",
-        "tz": "America/Chicago"
+        "tz": "America/New_York"
       },
       "sessionTarget": "isolated",
       "wakeMode": "now",
       "payload": {
         "kind": "agentTurn",
-        "message": "Competitive intelligence update. ZERO HALLUCINATIONS RULE: only include facts directly verifiable from fetched pages — omit or mark [unverified] anything you cannot confirm. Steps: 1) Fetch current state from: github.com/openclaw/openclaw/releases, github.com/drposter/nanobot, github.com/moshehbenavraham/crocbot, github.com/jimtin/zetherion-ai, github.com/qwibitai/nanoclaw, github.com/NevaMind-AI/memU, github.com/sipeed/picoclaw. Also search for recent news on 'AI personal assistant bot 2026', 'autonomous agent Telegram security', 'Claude MCP agent framework'. 2) Compare with /home/node/.openclaw/workspace/competitive-analysis.md. 3) If significant changes found (new release, security feature, major update, pricing change, star milestone), create /home/node/.openclaw/workspace/reports/competitive-report-[YYYY-MM-DD].md with four sections: ## Market Analysis (trends, key movements, positioning threats/opportunities for AgentShroud), ## Competitor Matrix (table: Competitor | Version | Key Features | Security Posture | Pricing | Notable Changes), ## Autonomous Agent Ecosystem (tool integrations, agent frameworks, MCP adoption, orchestration trends), ## Next Steps (specific recommended responses to competitive changes). 4) Update /home/node/.openclaw/workspace/competitive-analysis.md with verified latest state. 5) Append to /home/node/.openclaw/workspace/reports/trend-log.md: [DATE] | [top verified change] | [recommended action]. 6) If nothing significant changed, append to trend-log.md: [DATE] | No significant changes detected | No action needed. Do not update competitive-analysis.md if nothing changed."
+        "message": "Competitive intelligence update. ZERO HALLUCINATIONS RULE: only include facts directly verifiable from fetched pages — omit or mark [unverified] anything you cannot confirm. Steps: 1) Fetch current state from the GitHub API: https://api.github.com/repos/openclaw/openclaw/releases/latest, https://api.github.com/repos/drposter/nanobot/releases/latest, https://api.github.com/repos/moshehbenavraham/crocbot/releases/latest, https://api.github.com/repos/jimtin/zetherion-ai/releases/latest, https://api.github.com/repos/qwibitai/nanoclaw/releases/latest, https://api.github.com/repos/NevaMind-AI/memU/releases/latest, https://api.github.com/repos/sipeed/picoclaw/releases/latest. Also search for recent news on 'AI personal assistant bot 2026', 'autonomous agent Telegram security', 'Claude MCP agent framework'. 2) Compare with /home/node/.openclaw/workspace/competitive-analysis.md. 3) If significant changes found (new release, security feature, major update, pricing change, star milestone), create /home/node/.openclaw/workspace/reports/competitive-report-[YYYY-MM-DD].md with four sections: ## Market Analysis (trends, key movements, positioning threats/opportunities for AgentShroud), ## Competitor Matrix (table: Competitor | Version | Key Features | Security Posture | Pricing | Notable Changes), ## Autonomous Agent Ecosystem (tool integrations, agent frameworks, MCP adoption, orchestration trends), ## Next Steps (specific recommended responses to competitive changes). 4) Update /home/node/.openclaw/workspace/competitive-analysis.md with verified latest state. 5) Append to /home/node/.openclaw/workspace/reports/trend-log.md: [DATE] | [top verified change] | [recommended action]. 6) If nothing significant changed, append to trend-log.md: [DATE] | No significant changes detected | No action needed. Do not update competitive-analysis.md if nothing changed."
       },
       "state": {
         "nextRunAtMs": 1771847100000,
@@ -103,7 +103,7 @@
       "schedule": {
         "kind": "cron",
         "expr": "0 6 * * *",
-        "tz": "America/Chicago"
+        "tz": "America/New_York"
       },
       "sessionTarget": "isolated",
       "wakeMode": "now",
@@ -134,7 +134,7 @@
       "schedule": {
         "kind": "cron",
         "expr": "0 9 * * *",
-        "tz": "America/Chicago"
+        "tz": "America/New_York"
       },
       "sessionTarget": "isolated",
       "wakeMode": "now",
@@ -163,7 +163,8 @@
       "updatedAtMs": 1771777103031,
       "schedule": {
         "kind": "cron",
-        "expr": "45 15 * * *"
+        "expr": "45 15 * * *",
+        "tz": "America/New_York"
       },
       "sessionTarget": "isolated",
       "wakeMode": "now",
@@ -192,7 +193,8 @@
       "updatedAtMs": 1771777104355,
       "schedule": {
         "kind": "cron",
-        "expr": "0 6 * * *"
+        "expr": "0 6 * * *",
+        "tz": "America/New_York"
       },
       "sessionTarget": "isolated",
       "wakeMode": "now",
@@ -221,13 +223,13 @@
       "schedule": {
         "kind": "cron",
         "expr": "45 14 * * *",
-        "tz": "America/Chicago"
+        "tz": "America/New_York"
       },
       "sessionTarget": "isolated",
       "wakeMode": "now",
       "payload": {
         "kind": "agentTurn",
-        "message": "Competitive intelligence update. ZERO HALLUCINATIONS RULE: only include facts directly verifiable from fetched pages — omit or mark [unverified] anything you cannot confirm. Steps: 1) Fetch current state from: github.com/openclaw/openclaw/releases, github.com/drposter/nanobot, github.com/moshehbenavraham/crocbot, github.com/jimtin/zetherion-ai, github.com/qwibitai/nanoclaw, github.com/NevaMind-AI/memU, github.com/sipeed/picoclaw. Also search for recent news on 'AI personal assistant bot 2026', 'autonomous agent Telegram security', 'Claude MCP agent framework'. 2) Compare with /home/node/.openclaw/workspace/competitive-analysis.md. 3) If significant changes found (new release, security feature, major update, pricing change, star milestone), create /home/node/.openclaw/workspace/reports/competitive-report-[YYYY-MM-DD].md with four sections: ## Market Analysis (trends, key movements, positioning threats/opportunities for AgentShroud), ## Competitor Matrix (table: Competitor | Version | Key Features | Security Posture | Pricing | Notable Changes), ## Autonomous Agent Ecosystem (tool integrations, agent frameworks, MCP adoption, orchestration trends), ## Next Steps (specific recommended responses to competitive changes). 4) Update /home/node/.openclaw/workspace/competitive-analysis.md with verified latest state. 5) Append to /home/node/.openclaw/workspace/reports/trend-log.md: [DATE] | [top verified change] | [recommended action]. 6) If nothing significant changed, append to trend-log.md: [DATE] | No significant changes detected | No action needed. Do not update competitive-analysis.md if nothing changed."
+        "message": "Competitive intelligence update. ZERO HALLUCINATIONS RULE: only include facts directly verifiable from fetched pages — omit or mark [unverified] anything you cannot confirm. Steps: 1) Fetch current state from the GitHub API: https://api.github.com/repos/openclaw/openclaw/releases/latest, https://api.github.com/repos/drposter/nanobot/releases/latest, https://api.github.com/repos/moshehbenavraham/crocbot/releases/latest, https://api.github.com/repos/jimtin/zetherion-ai/releases/latest, https://api.github.com/repos/qwibitai/nanoclaw/releases/latest, https://api.github.com/repos/NevaMind-AI/memU/releases/latest, https://api.github.com/repos/sipeed/picoclaw/releases/latest. Also search for recent news on 'AI personal assistant bot 2026', 'autonomous agent Telegram security', 'Claude MCP agent framework'. 2) Compare with /home/node/.openclaw/workspace/competitive-analysis.md. 3) If significant changes found (new release, security feature, major update, pricing change, star milestone), create /home/node/.openclaw/workspace/reports/competitive-report-[YYYY-MM-DD].md with four sections: ## Market Analysis (trends, key movements, positioning threats/opportunities for AgentShroud), ## Competitor Matrix (table: Competitor | Version | Key Features | Security Posture | Pricing | Notable Changes), ## Autonomous Agent Ecosystem (tool integrations, agent frameworks, MCP adoption, orchestration trends), ## Next Steps (specific recommended responses to competitive changes). 4) Update /home/node/.openclaw/workspace/competitive-analysis.md with verified latest state. 5) Append to /home/node/.openclaw/workspace/reports/trend-log.md: [DATE] | [top verified change] | [recommended action]. 6) If nothing significant changed, append to trend-log.md: [DATE] | No significant changes detected | No action needed. Do not update competitive-analysis.md if nothing changed."
       },
       "state": {
         "nextRunAtMs": 1771793100000,
@@ -250,7 +252,7 @@
       "schedule": {
         "kind": "cron",
         "expr": "0 15 * * *",
-        "tz": "America/Chicago"
+        "tz": "America/New_York"
       },
       "sessionTarget": "isolated",
       "wakeMode": "now",
