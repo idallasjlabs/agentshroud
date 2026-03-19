@@ -126,6 +126,15 @@ COPY examples/ /app/examples/
 COPY docker/docker-compose.yml /app/docker/docker-compose.yml
 COPY pytest.ini /app/pytest.ini
 COPY docker/scripts/killswitch.sh /app/docker/scripts/killswitch.sh
+COPY docker/scripts/start-agentshroud.sh /app/docker/scripts/start-agentshroud.sh
+COPY docker/scripts/init-openclaw-config.sh /app/docker/scripts/init-openclaw-config.sh
+COPY docker/config/openclaw/apply-patches.js /app/docker/config/openclaw/apply-patches.js
+COPY docker/Dockerfile.agentshroud /app/docker/Dockerfile.agentshroud
+COPY docker/bots/openclaw/Dockerfile /app/docker/bots/openclaw/Dockerfile
+COPY docker/bots/openclaw/start.sh /app/docker/bots/openclaw/start.sh
+COPY scripts/start-control-center /app/scripts/start-control-center
+COPY scripts/chat-console /app/scripts/chat-console
+COPY scripts/switch_model.sh /app/scripts/switch_model.sh
 
 # Switch to non-root user
 # Strip setuid/setgid bits — CIS Docker Benchmark 4.8
