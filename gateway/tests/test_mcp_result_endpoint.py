@@ -20,6 +20,8 @@ from gateway.ingest_api.config import (
     RouterConfig,
 )
 from gateway.ingest_api.main import app, lifespan
+from gateway.ingest_api.state import app_state
+from gateway.proxy.mcp_proxy import ProxyResult
 
 
 # ── Fixtures ──────────────────────────────────────────────────────────────────
@@ -47,7 +49,7 @@ def auth_headers():
 
 @pytest_asyncio.fixture
 async def client(test_config, auth_headers):
-    with patch("gateway.ingest_api.main.load_config", return_value=test_config), patch(
+    with patch("gateway.ingest_api.lifespan.load_config", return_value=test_config), patch(
         "gateway.ingest_api.router.MultiAgentRouter.forward_to_agent",
         new_callable=AsyncMock,
     ) as mock_forward:
@@ -165,6 +167,99 @@ class TestMCPResultEndpoint:
         data = resp.json()
         assert "processing_time_ms" in data
         assert data["processing_time_ms"] >= 0
+
+    @pytest.mark.asyncio
+    async def test_header_user_id_overrides_body_agent_id(self, client, auth_headers, monkeypatch):
+        captured = {}
+
+        async def _capture(tool_result, agent_id):
+            captured["agent_id"] = agent_id
+            return ProxyResult(
+                allowed=True,
+                call_id=tool_result.call_id,
+                sanitized_result=tool_result.content,
+                audit_entry_id="audit-result-1",
+                processing_time_ms=1.0,
+            )
+
+        monkeypatch.setattr(app_state.mcp_proxy, "process_tool_result", _capture)
+        headers = dict(auth_headers)
+        headers["x-agentshroud-user-id"] = "7614658040"
+        resp = await client.post(
+            "/mcp/result",
+            json={
+                "server_name": "github",
+                "tool_name": "get_file_contents",
+                "call_id": "test-call-header",
+                "content": {"x": 1},
+                "agent_id": "spoofed-owner",
+            },
+            headers=headers,
+        )
+        assert resp.status_code == 200
+        assert captured["agent_id"] == "7614658040"
+
+    @pytest.mark.asyncio
+    async def test_body_agent_id_used_without_header(self, client, auth_headers, monkeypatch):
+        captured = {}
+
+        async def _capture(tool_result, agent_id):
+            captured["agent_id"] = agent_id
+            return ProxyResult(
+                allowed=True,
+                call_id=tool_result.call_id,
+                sanitized_result=tool_result.content,
+                audit_entry_id="audit-result-2",
+                processing_time_ms=1.0,
+            )
+
+        monkeypatch.setattr(app_state.mcp_proxy, "process_tool_result", _capture)
+        resp = await client.post(
+            "/mcp/result",
+            json={
+                "server_name": "github",
+                "tool_name": "get_file_contents",
+                "call_id": "test-call-body",
+                "content": {"x": 2},
+                "agent_id": "body-agent",
+            },
+            headers=auth_headers,
+        )
+        assert resp.status_code == 200
+        assert captured["agent_id"] == "body-agent"
+
+    @pytest.mark.asyncio
+    async def test_invalid_header_identity_rejected(self, client, auth_headers):
+        headers = dict(auth_headers)
+        headers["x-agentshroud-user-id"] = "bad identity !"
+        resp = await client.post(
+            "/mcp/result",
+            json={
+                "server_name": "github",
+                "tool_name": "get_file_contents",
+                "call_id": "invalid-id-test",
+                "content": {"x": 1},
+                "agent_id": "default",
+            },
+            headers=headers,
+        )
+        assert resp.status_code == 400
+
+    @pytest.mark.asyncio
+    async def test_owner_body_identity_rejected_without_header(self, client, auth_headers):
+        """Body-only owner identity must be rejected to prevent impersonation."""
+        resp = await client.post(
+            "/mcp/result",
+            json={
+                "server_name": "github",
+                "tool_name": "get_file_contents",
+                "call_id": "owner-spoof",
+                "content": {"x": 1},
+                "agent_id": "8096968754",
+            },
+            headers=auth_headers,
+        )
+        assert resp.status_code == 400
 
 
 # ── Config loading tests ───────────────────────────────────────────────────────

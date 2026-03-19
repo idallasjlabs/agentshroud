@@ -13,6 +13,7 @@ Requires gateway authentication.
 
 import asyncio
 import logging
+import os
 import platform
 import time
 from datetime import datetime, timezone
@@ -39,6 +40,31 @@ from ..runtime.security import get_security_comparison, warn_missing_features
 
 logger = logging.getLogger("agentshroud.web.api")
 
+# Scoped WebSocket tokens for management API (R3-M2)
+import secrets as _secrets
+_mgmt_ws_tokens: dict[str, float] = {}
+_MGMT_WS_TOKEN_TTL = 300  # 5 minutes
+
+def _create_mgmt_ws_token() -> str:
+    """Create a short-lived WebSocket-only token for management endpoints."""
+    token = f"mgmt_ws_{_secrets.token_urlsafe(32)}"
+    _mgmt_ws_tokens[token] = time.time() + _MGMT_WS_TOKEN_TTL
+    # Clean expired tokens
+    now = time.time()
+    expired = [t for t, exp in _mgmt_ws_tokens.items() if exp < now]
+    for t in expired:
+        del _mgmt_ws_tokens[t]
+    return token
+
+def _validate_mgmt_ws_token(token: str) -> bool:
+    """Validate a management WebSocket token (single-use, time-limited)."""
+    if not token or not token.startswith("mgmt_ws_"):
+        return False
+    expiry = _mgmt_ws_tokens.pop(token, None)  # Single-use: remove on validation
+    if expiry is None:
+        return False
+    return time.time() < expiry
+
 router = APIRouter(prefix="/api", tags=["management"])
 
 # --- Auth dependency -------------------------------------------------------
@@ -61,7 +87,7 @@ async def require_auth(
 VALID_SERVICES = frozenset(
     {
         "agentshroud-gateway",
-        "agentshroud-openclaw",
+        "agentshroud-bot",
         "falco",
         "wazuh-agent",
         "clamav",
@@ -102,6 +128,79 @@ class UpdateRequest(BaseModel):
     skip_tests: bool = False  # NOT recommended; safety gate
 
 
+class ModeRequest(BaseModel):
+    mode: str  # "enforce" | "monitor" | "observatory"
+    revert_after_minutes: int = 30  # auto-revert to "enforce" after this delay
+
+
+# --- Observatory Mode -------------------------------------------------------
+
+VALID_AGENTSHROUD_MODES = frozenset({"enforce", "monitor", "observatory"})
+
+# Tracks any pending auto-revert asyncio task so we can cancel it on re-call
+_revert_task: Optional[asyncio.Task] = None
+
+
+@router.get("/mode")
+async def get_mode(user: str = Depends(require_auth)) -> dict:
+    """Return the current AGENTSHROUD_MODE."""
+    current = os.environ.get("AGENTSHROUD_MODE", "enforce")
+    return {
+        "mode": current,
+        "timestamp": datetime.now(timezone.utc).isoformat(),
+    }
+
+
+@router.put("/mode")
+async def set_mode(req: ModeRequest, user: str = Depends(require_auth)) -> dict:
+    """Set AGENTSHROUD_MODE at runtime with automatic revert to 'enforce'."""
+    global _revert_task
+
+    if req.mode not in VALID_AGENTSHROUD_MODES:
+        raise HTTPException(
+            status_code=400,
+            detail=f"mode must be one of: {sorted(VALID_AGENTSHROUD_MODES)}",
+        )
+
+    revert_minutes = max(1, min(req.revert_after_minutes, 480))  # 1 min – 8 hrs
+
+    previous = os.environ.get("AGENTSHROUD_MODE", "enforce")
+    os.environ["AGENTSHROUD_MODE"] = req.mode
+
+    if req.mode != "enforce":
+        logger.critical(
+            "AGENTSHROUD_MODE changed from '%s' → '%s' — auto-revert in %d min",
+            previous,
+            req.mode,
+            revert_minutes,
+        )
+    else:
+        logger.info("AGENTSHROUD_MODE set to 'enforce'")
+
+    # Cancel any existing revert task before scheduling a new one
+    if _revert_task and not _revert_task.done():
+        _revert_task.cancel()
+
+    async def _auto_revert():
+        await asyncio.sleep(revert_minutes * 60)
+        if os.environ.get("AGENTSHROUD_MODE") != "enforce":
+            logger.critical(
+                "AGENTSHROUD_MODE auto-reverted '%s' → 'enforce' after %d min",
+                os.environ.get("AGENTSHROUD_MODE"),
+                revert_minutes,
+            )
+            os.environ["AGENTSHROUD_MODE"] = "enforce"
+
+    _revert_task = asyncio.create_task(_auto_revert())
+
+    return {
+        "mode": req.mode,
+        "previous_mode": previous,
+        "auto_revert_in_minutes": revert_minutes,
+        "timestamp": datetime.now(timezone.utc).isoformat(),
+    }
+
+
 # --- Status -----------------------------------------------------------------
 
 
@@ -128,7 +227,7 @@ async def get_status(user: str = Depends(require_auth)) -> dict:
     services = {}
     service_names = [
         "agentshroud-gateway",
-        "agentshroud-openclaw",
+        "agentshroud-bot",
         "falco",
         "wazuh-agent",
         "clamav",
@@ -240,7 +339,7 @@ async def killswitch(
     engine = _get_engine()
 
     if mode == "freeze":
-        for name in ["agentshroud-openclaw"]:
+        for name in ["agentshroud-bot"]:
             try:
                 engine.pause(name)
             except Exception:
@@ -255,7 +354,7 @@ async def killswitch(
         return {"status": "shutdown", "mode": mode}
 
     elif mode == "disconnect":
-        for name in ["agentshroud-openclaw"]:
+        for name in ["agentshroud-bot"]:
             try:
                 engine.stop(name)
                 engine.rm(name, force=True)
@@ -336,6 +435,21 @@ async def export_config(user: str = Depends(require_auth)) -> dict:
 # --- Rebuild ----------------------------------------------------------------
 
 
+def _get_default_bot_dockerfile() -> str:
+    """Resolve the Dockerfile for the default bot from gateway config."""
+    try:
+        cfg = load_config()
+        default_bot = next(
+            (b for b in cfg.bots.values() if b.default),
+            next(iter(cfg.bots.values()), None),
+        )
+        if default_bot and default_bot.dockerfile:
+            return default_bot.dockerfile
+    except Exception:
+        pass
+    return "docker/bots/openclaw/Dockerfile"
+
+
 @router.post("/rebuild")
 async def rebuild(user: str = Depends(require_auth)) -> dict:
     """Rebuild containers with latest images."""
@@ -345,40 +459,50 @@ async def rebuild(user: str = Depends(require_auth)) -> dict:
         engine.compose_down(config.compose_file)
         # Rebuild images
         engine.build("gateway/Dockerfile", "agentshroud-gateway:latest", ".")
-        engine.build("docker/Dockerfile.openclaw", "agentshroud-openclaw:latest", ".")
+        engine.build(_get_default_bot_dockerfile(), "agentshroud-bot:latest", ".")
         engine.compose_up(config.compose_file)
         return {"status": "rebuilt"}
     except Exception as e:
         raise HTTPException(status_code=500, detail=str(e))
 
 
-# --- Updates (OpenClaw + AgentShroud) ----------------------------------------
+# --- Updates (bot-agnostic) ---------------------------------------------------
 
 
-@router.get("/updates/openclaw")
-async def check_openclaw_updates(user: str = Depends(require_auth)) -> dict:
-    """Check for OpenClaw updates from GitHub."""
+def _resolve_bot_container(bot_id: str) -> str:
+    """Resolve the Docker container name for a given bot_id."""
+    return f"agentshroud-{bot_id}"
+
+
+@router.get("/updates/bot/{bot_id}")
+async def check_bot_updates(bot_id: str, user: str = Depends(require_auth)) -> dict:
+    """Check for updates for the named bot container."""
     import subprocess
 
+    engine = _get_engine()
+    container = _resolve_bot_container(bot_id)
+
+    # For node-based bots, check npm registry
+    latest = "unknown"
     try:
         result = subprocess.run(
-            ["npm", "view", "openclaw", "version"],
+            ["npm", "view", bot_id, "version"],
             capture_output=True,
             text=True,
             timeout=30,
         )
         latest = result.stdout.strip() if result.returncode == 0 else "unknown"
     except Exception:
-        latest = "unknown"
+        pass
 
-    # Try to get current version from container
-    engine = _get_engine()
+    current = "unknown"
     try:
-        current = engine.exec("agentshroud-openclaw", ["openclaw", "--version"]).strip()
+        current = engine.exec(container, [bot_id, "--version"]).strip()
     except Exception:
-        current = "unknown"
+        pass
 
     return {
+        "bot_id": bot_id,
         "current": current,
         "latest": latest,
         "update_available": current != latest
@@ -387,45 +511,64 @@ async def check_openclaw_updates(user: str = Depends(require_auth)) -> dict:
     }
 
 
+@router.post("/updates/bot/{bot_id}/upgrade")
+async def upgrade_bot(
+    bot_id: str, req: UpdateRequest, user: str = Depends(require_auth)
+) -> dict:
+    """Upgrade a named bot container."""
+    engine = _get_engine()
+    container = _resolve_bot_container(bot_id)
+    version = req.version or "latest"
+
+    steps: list[dict] = []
+    try:
+        steps.append({"step": "pull", "status": "running"})
+        engine.exec(container, ["npm", "install", "-g", f"{bot_id}@{version}"])
+        steps[-1]["status"] = "done"
+
+        steps.append({"step": "restart", "status": "running"})
+        engine.stop(container)
+        engine.rm(container, force=True)
+        engine.compose_up(RuntimeConfig.from_env().compose_file)
+        steps[-1]["status"] = "done"
+
+        return {"status": "upgraded", "bot_id": bot_id, "version": version, "steps": steps}
+    except Exception as e:
+        steps.append({"step": "error", "detail": str(e)})
+        return {"status": "failed", "bot_id": bot_id, "steps": steps, "error": str(e)}
+
+
+@router.post("/updates/bot/{bot_id}/rollback")
+async def rollback_bot(bot_id: str, user: str = Depends(require_auth)) -> dict:
+    """Rollback a named bot container to the previous image tag."""
+    return {
+        "status": "rollback_initiated",
+        "bot_id": bot_id,
+        "note": "Restoring previous container image",
+    }
+
+
+# --- Backward-compat aliases (openclaw → bot/openclaw) -----------------------
+
+
+@router.get("/updates/openclaw")
+async def check_openclaw_updates(user: str = Depends(require_auth)) -> dict:
+    """Check for OpenClaw updates (backward-compat alias for /updates/bot/openclaw)."""
+    return await check_bot_updates("openclaw", user)
+
+
 @router.post("/updates/openclaw/upgrade")
 async def upgrade_openclaw(
     req: UpdateRequest, user: str = Depends(require_auth)
 ) -> dict:
-    """Upgrade OpenClaw with security review."""
-    # Safety: check kill switch state
-    engine = _get_engine()
-    version = req.version or "latest"
-
-    steps = []
-    try:
-        # 1. Pull new image / update npm package
-        steps.append({"step": "pull", "status": "running"})
-        engine.exec(
-            "agentshroud-openclaw", ["npm", "install", "-g", f"openclaw@{version}"]
-        )
-        steps[-1]["status"] = "done"
-
-        # 2. Restart
-        steps.append({"step": "restart", "status": "running"})
-        engine.stop("agentshroud-openclaw")
-        engine.rm("agentshroud-openclaw", force=True)
-        engine.compose_up(RuntimeConfig.from_env().compose_file)
-        steps[-1]["status"] = "done"
-
-        return {"status": "upgraded", "version": version, "steps": steps}
-    except Exception as e:
-        steps.append({"step": "error", "detail": str(e)})
-        return {"status": "failed", "steps": steps, "error": str(e)}
+    """Upgrade OpenClaw (backward-compat alias for /updates/bot/openclaw/upgrade)."""
+    return await upgrade_bot("openclaw", req, user)
 
 
 @router.post("/updates/openclaw/rollback")
 async def rollback_openclaw(user: str = Depends(require_auth)) -> dict:
-    """Rollback OpenClaw to previous version."""
-    # This would restore from a backup image tag
-    return {
-        "status": "rollback_initiated",
-        "note": "Restoring previous container image",
-    }
+    """Rollback OpenClaw (backward-compat alias for /updates/bot/openclaw/rollback)."""
+    return await rollback_bot("openclaw", user)
 
 
 @router.get("/updates/agentshroud")
@@ -568,7 +711,7 @@ async def upgrade_agentshroud(
         engine = _get_engine()
         config = RuntimeConfig.from_env()
         engine.build("gateway/Dockerfile", "agentshroud-gateway:latest", ".")
-        engine.build("docker/Dockerfile.openclaw", "agentshroud-openclaw:latest", ".")
+        engine.build(_get_default_bot_dockerfile(), "agentshroud-bot:latest", ".")
         steps[-1]["status"] = "done"
 
         # 5. Restart services
@@ -680,7 +823,7 @@ async def get_logs(
     else:
         # Combined logs from all services
         all_logs = {}
-        for svc in ["agentshroud-gateway", "agentshroud-openclaw"]:
+        for svc in ["agentshroud-gateway", "agentshroud-bot"]:
             try:
                 all_logs[svc] = engine.logs(svc, tail=tail).splitlines()
             except Exception:
@@ -695,12 +838,12 @@ active_websockets: list[WebSocket] = []
 
 @router.websocket("/ws/logs")
 async def ws_logs(websocket: WebSocket, token: str = Query(default="")):
-    """WebSocket endpoint for real-time log streaming. Requires auth token."""
+    """WebSocket endpoint for real-time log streaming. Requires scoped WS token."""
     if not token:
         await websocket.close(code=4001, reason="Authentication required")
         return
-    config = load_config()
-    if not verify_token(token, config.auth_token):
+    # R3-M2: Accept only scoped management WS tokens (not the master auth token)
+    if not _validate_mgmt_ws_token(token):
         await websocket.close(code=4003, reason="Invalid credentials")
         return
     await websocket.accept()
@@ -711,7 +854,7 @@ async def ws_logs(websocket: WebSocket, token: str = Query(default="")):
             await asyncio.sleep(5)
             try:
                 engine = _get_engine()
-                for svc in ["agentshroud-gateway", "agentshroud-openclaw"]:
+                for svc in ["agentshroud-gateway", "agentshroud-bot"]:
                     try:
                         logs = engine.logs(svc, tail=5)
                         await websocket.send_json(
@@ -722,17 +865,21 @@ async def ws_logs(websocket: WebSocket, token: str = Query(default="")):
             except Exception:
                 pass
     except WebSocketDisconnect:
-        active_websockets.remove(websocket)
+        pass
+    finally:
+        # R3-L2: Ensure cleanup on any exception, not just WebSocketDisconnect
+        if websocket in active_websockets:
+            active_websockets.remove(websocket)
 
 
 @router.websocket("/ws/updates")
 async def ws_updates(websocket: WebSocket, token: str = Query(default="")):
-    """WebSocket for real-time update progress. Requires auth token."""
+    """WebSocket for real-time update progress. Requires scoped WS token."""
     if not token:
         await websocket.close(code=4001, reason="Authentication required")
         return
-    config = load_config()
-    if not verify_token(token, config.auth_token):
+    # R3-M2: Accept only scoped management WS tokens (not the master auth token)
+    if not _validate_mgmt_ws_token(token):
         await websocket.close(code=4003, reason="Invalid credentials")
         return
     await websocket.accept()

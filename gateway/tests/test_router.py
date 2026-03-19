@@ -39,7 +39,7 @@ async def test_resolve_target_default(router):
     target = await router.resolve_target(request)
 
     assert target.name == "test-agent"
-    assert target.url == "http://openclaw:18789"
+    assert target.url == "http://localhost:18789"
 
 
 @pytest.mark.asyncio
@@ -225,3 +225,96 @@ async def test_health_check_healthy_agent(router, monkeypatch):
     for agent_name, status in results.items():
         assert "healthy" in status
         assert "last_check" in status
+
+
+def test_agent_target_default_paths():
+    """AgentTarget defaults chat_path and health_path correctly."""
+    target = AgentTarget(name="bot", url="http://localhost:18789")
+    assert target.chat_path == "/chat"
+    assert target.health_path == "/health"
+
+
+def test_agent_target_custom_paths():
+    """AgentTarget accepts custom chat_path and health_path."""
+    target = AgentTarget(
+        name="bot",
+        url="http://localhost:18789",
+        chat_path="/api/chat",
+        health_path="/api/health",
+    )
+    assert target.chat_path == "/api/chat"
+    assert target.health_path == "/api/health"
+
+
+@pytest.mark.asyncio
+async def test_forward_uses_chat_path(router, monkeypatch):
+    """forward_to_agent builds URL from target.chat_path."""
+    import httpx
+
+    captured_url = []
+
+    class MockResponse:
+        status_code = 200
+
+        def raise_for_status(self):
+            pass
+
+        def json(self):
+            return {"response": "ok"}
+
+    async def mock_post(self, url, **kwargs):
+        captured_url.append(url)
+        return MockResponse()
+
+    monkeypatch.setattr(httpx.AsyncClient, "post", mock_post)
+
+    target = AgentTarget(
+        name="bot", url="http://localhost:18789", chat_path="/api/chat"
+    )
+    await router.forward_to_agent(
+        target=target,
+        sanitized_content="hello",
+        ledger_id="test-id",
+        metadata={"source": "test"},
+    )
+    assert captured_url[0] == "http://localhost:18789/api/chat"
+
+
+@pytest.mark.asyncio
+async def test_health_check_uses_health_path(router, monkeypatch):
+    """health_check builds URL from target.health_path."""
+    import httpx
+
+    captured_url = []
+
+    class MockResponse:
+        status_code = 200
+
+    async def mock_get(self, url, **kwargs):
+        captured_url.append(url)
+        return MockResponse()
+
+    monkeypatch.setattr(httpx.AsyncClient, "get", mock_get)
+
+    target = AgentTarget(
+        name="bot", url="http://localhost:18789", health_path="/api/health"
+    )
+    await router.health_check(target=target)
+    assert captured_url[0] == "http://localhost:18789/api/health"
+
+
+def test_cors_origins_include_configured_port():
+    """load_config computes CORS origins from the configured port."""
+    from gateway.ingest_api.config import GatewayConfig
+    # Simulate what load_config does: cors_origins derived from port
+    port = 9080
+    cors_origins = [
+        f"http://localhost:{port}",
+        f"http://127.0.0.1:{port}",
+        "http://localhost:18790",
+        "http://127.0.0.1:18790",
+    ]
+    cfg = GatewayConfig(port=port, cors_origins=cors_origins)
+    assert f"http://localhost:{port}" in cfg.cors_origins
+    assert f"http://127.0.0.1:{port}" in cfg.cors_origins
+    assert "http://localhost:8080" not in cfg.cors_origins

@@ -21,6 +21,11 @@ from typing import Any, Optional
 
 logger = logging.getLogger("agentshroud.proxy.pipeline")
 
+try:
+    from gateway.security.rbac_config import RBACConfig
+except ImportError:
+    RBACConfig = None
+
 
 class PipelineAction(str, Enum):
     FORWARD = "forward"
@@ -104,13 +109,19 @@ class AuditChain:
 
     GENESIS_HASH = "0" * 64
 
-    def __init__(self):
+    def __init__(self, audit_store=None):
         self._entries: list[AuditChainEntry] = []
         self._last_hash: str = self.GENESIS_HASH
+        self._audit_store = audit_store  # Optional AuditStore for persistence
 
     def append(
-        self, content: str, direction: str, metadata: dict[str, Any] | None = None
+        self,
+        content: str,
+        direction: str,
+        metadata: dict[str, Any] | None = None,
+        _skip_task: bool = False,
     ) -> AuditChainEntry:
+        import asyncio
         import uuid
 
         now = time.time()
@@ -128,6 +139,64 @@ class AuditChain:
         )
         self._entries.append(entry)
         self._last_hash = chain_hash
+
+        # Persist to SQLite audit store if configured (fire-and-forget).
+        # _skip_task=True suppresses this for block events, which are persisted
+        # synchronously via append_block() instead.
+        if self._audit_store is not None and not _skip_task:
+            try:
+                loop = asyncio.get_running_loop()
+                loop.create_task(
+                    self._audit_store.log_event(
+                        event_type=f"audit_chain.{direction}",
+                        severity="INFO",
+                        details={
+                            "chain_hash": chain_hash,
+                            "content_hash": content_hash,
+                            "previous_hash": self._last_hash,
+                            **(metadata or {}),
+                        },
+                        source_module="pipeline.audit_chain",
+                        event_id=entry.id,
+                    )
+                )
+            except RuntimeError:
+                pass  # No running event loop (e.g. sync test context)
+
+        return entry
+
+    async def append_block(
+        self,
+        content: str,
+        direction: str,
+        metadata: dict[str, Any] | None = None,
+    ) -> AuditChainEntry:
+        """Append to the chain with guaranteed SQLite persistence.
+
+        Used exclusively for BLOCK events.  Unlike append(), which uses
+        fire-and-forget create_task(), this method awaits the SQLite write
+        directly so that security-critical block events are never silently
+        lost under load.  The in-memory chain entry is created first (via
+        append() with _skip_task=True) so the hash chain stays consistent
+        even if the DB write fails.
+        """
+        entry = self.append(content, direction, metadata, _skip_task=True)
+        if self._audit_store is not None:
+            try:
+                await self._audit_store.log_event(
+                    event_type=f"audit_chain.{direction}",
+                    severity="CRITICAL",
+                    details={
+                        "chain_hash": entry.chain_hash,
+                        "content_hash": entry.content_hash,
+                        "previous_hash": entry.previous_hash,
+                        **(metadata or {}),
+                    },
+                    source_module="pipeline.audit_chain.block",
+                    event_id=entry.id,
+                )
+            except Exception as exc:
+                logger.error("Block event guaranteed audit persistence failed: %s", exc)
         return entry
 
     def verify_chain(self) -> tuple[bool, str]:
@@ -176,8 +245,14 @@ class SecurityPipeline:
         outbound_filter=None,
         canary_tripwire=None,
         encoding_detector=None,
+        context_guard=None,
+        output_canary=None,
+        enhanced_tool_sanitizer=None,
         prompt_block_threshold: float = 0.8,
         approval_actions: list[str] | None = None,
+        audit_store=None,
+        prompt_protection=None,
+        heuristic_classifier=None,
     ):
         self.prompt_guard = prompt_guard
         self.pii_sanitizer = pii_sanitizer
@@ -187,14 +262,26 @@ class SecurityPipeline:
         self.outbound_filter = outbound_filter
         self.canary_tripwire = canary_tripwire
         self.encoding_detector = encoding_detector
+        self.context_guard = context_guard
+        self.output_canary = output_canary
+        self.enhanced_tool_sanitizer = enhanced_tool_sanitizer
+        self.prompt_protection = prompt_protection
+        self.heuristic_classifier = heuristic_classifier
         self.prompt_block_threshold = prompt_block_threshold
+        # Owner exemption: owner messages are logged but never blocked
+        self._owner_user_id = None
+        if RBACConfig:
+            try:
+                self._owner_user_id = RBACConfig().owner_user_id
+            except Exception:
+                pass
         self.approval_actions = approval_actions or [
             "execute_command",
             "delete_file",
             "admin_action",
             "install_package",
         ]
-        self.audit_chain = AuditChain()
+        self.audit_chain = AuditChain(audit_store=audit_store)
         self._stats = {
             "inbound_total": 0,
             "inbound_blocked": 0,
@@ -226,7 +313,7 @@ class SecurityPipeline:
         # Warn loudly about recommended guards that are absent.
         # These don't block startup but produce CRITICAL logs so operators
         # notice the degraded security posture immediately.
-        _RECOMMENDED_GUARDS = ("prompt_guard", "egress_filter", "outbound_filter", "canary_tripwire", "encoding_detector")
+        _RECOMMENDED_GUARDS = ("context_guard", "prompt_guard", "egress_filter", "outbound_filter", "canary_tripwire", "encoding_detector")
         for guard_name in _RECOMMENDED_GUARDS:
             if getattr(self, guard_name) is None:
                 logger.critical(
@@ -243,6 +330,7 @@ class SecurityPipeline:
         action: str = "send_message",
         source: str = "api",
         metadata: dict[str, Any] | None = None,
+        skip_context_guard: bool = False,
     ) -> PipelineResult:
         """Process an inbound message through the full security pipeline."""
         start = time.time()
@@ -254,22 +342,109 @@ class SecurityPipeline:
             timestamp=start,
         )
 
+        # Resolve owner status early — used by both ContextGuard and PromptGuard.
+        user_id = (metadata or {}).get("user_id", "")
+        is_owner = bool(self._owner_user_id and str(user_id) == str(self._owner_user_id))
+
+        # Step 0: ContextGuard — cross-turn injection and repetition detection.
+        # Runs before PromptGuard to catch session-level attacks.  Repetition
+        # attacks are logged but not blocked (they fire on legitimate structured
+        # output).  Only critical/high instruction-injection findings block.
+        # Owner messages are logged but never blocked.
+        if self.context_guard and not skip_context_guard:
+            try:
+                attacks = self.context_guard.analyze_message(agent_id, message)
+                for attack in attacks:
+                    if attack.attack_type == "repetition_attack":
+                        logger.info("ContextGuard: repetition noted (not blocking): %s", attack.description)
+                        continue
+                    if attack.severity in ("critical", "high"):
+                        if is_owner:
+                            logger.info(
+                                "ContextGuard: owner message would be blocked (%s — %s) — allowing",
+                                attack.attack_type, attack.description,
+                            )
+                            continue
+                        result.action = PipelineAction.BLOCK
+                        result.blocked = True
+                        result.block_reason = f"ContextGuard: {attack.attack_type} — {attack.description}"
+                        self._stats["inbound_blocked"] += 1
+                        entry = await self.audit_chain.append_block(message, "inbound_context_blocked", metadata)
+                        result.audit_entry_id = entry.id
+                        result.audit_hash = entry.chain_hash
+                        result.processing_time_ms = (time.time() - start) * 1000
+                        return result
+            except Exception as exc:
+                logger.error("ContextGuard error in pipeline: %s", exc)
+                if is_owner:
+                    logger.warning("ContextGuard error on owner message — allowing through")
+                else:
+                    # Fail closed — block non-owner on error to maintain security posture
+                    result.action = PipelineAction.BLOCK
+                    result.blocked = True
+                    result.block_reason = f"ContextGuard error: {exc}"
+                    result.processing_time_ms = (time.time() - start) * 1000
+                    return result
+
         # Step 1: Prompt injection scan
+        # user_id / is_owner already resolved above
         if self.prompt_guard:
             scan = self.prompt_guard.scan(message)
             result.prompt_score = scan.score
             result.prompt_patterns = scan.patterns
             if scan.blocked or scan.score >= self.prompt_block_threshold:
-                result.action = PipelineAction.BLOCK
-                result.blocked = True
-                result.block_reason = f"Prompt injection detected (score={scan.score}, patterns={scan.patterns})"
-                self._stats["inbound_blocked"] += 1
-                # Still audit blocked messages
-                entry = self.audit_chain.append(message, "inbound_blocked", metadata)
-                result.audit_entry_id = entry.id
-                result.audit_hash = entry.chain_hash
-                result.processing_time_ms = (time.time() - start) * 1000
-                return result
+                if is_owner:
+                    logger.info(
+                        f"PromptGuard: owner message would be blocked "
+                        f"(score={scan.score}, patterns={scan.patterns}) — allowing"
+                    )
+                    # Owner messages continue through the pipeline
+                else:
+                    result.action = PipelineAction.BLOCK
+                    result.blocked = True
+                    result.block_reason = f"Prompt injection detected (score={scan.score}, patterns={scan.patterns})"
+                    self._stats["inbound_blocked"] += 1
+                    # Still audit blocked messages
+                    entry = await self.audit_chain.append_block(message, "inbound_blocked", metadata)
+                    result.audit_entry_id = entry.id
+                    result.audit_hash = entry.chain_hash
+                    result.processing_time_ms = (time.time() - start) * 1000
+                    return result
+
+        # Step 1.1: HeuristicClassifier — secondary signal in the uncertain zone (0.3–0.8).
+        # Only invoked when PromptGuard score is uncertain; never the sole blocking signal.
+        if self.heuristic_classifier and not result.blocked:
+            if 0.3 <= result.prompt_score <= 0.8:
+                try:
+                    hc_result = self.heuristic_classifier.classify(message)
+                    if hc_result.is_injection:
+                        if is_owner:
+                            logger.info(
+                                "HeuristicClassifier: owner injection (prob=%.2f) — allowing",
+                                hc_result.probability,
+                            )
+                        else:
+                            result.action = PipelineAction.BLOCK
+                            result.blocked = True
+                            result.block_reason = (
+                                f"HeuristicClassifier: injection detected "
+                                f"(prob={hc_result.probability:.2f})"
+                            )
+                            self._stats["inbound_blocked"] += 1
+                            entry = await self.audit_chain.append_block(
+                                message, "inbound_heuristic_blocked", metadata
+                            )
+                            result.audit_entry_id = entry.id
+                            result.audit_hash = entry.chain_hash
+                            result.processing_time_ms = (time.time() - start) * 1000
+                            return result
+                    elif hc_result.is_uncertain:
+                        logger.warning(
+                            "HeuristicClassifier: uncertain (prob=%.2f) from %s — allowing with log",
+                            hc_result.probability, source,
+                        )
+                except Exception as exc:
+                    logger.error("HeuristicClassifier error: %s", exc)
 
         # Step 2: PII sanitization
         if self.pii_sanitizer:
@@ -293,7 +468,7 @@ class SecurityPipeline:
                 result.blocked = True
                 result.block_reason = f"Trust level insufficient for action {action}"
                 self._stats["inbound_blocked"] += 1
-                entry = self.audit_chain.append(
+                entry = await self.audit_chain.append_block(
                     result.sanitized_message, "inbound_trust_denied", metadata
                 )
                 result.audit_entry_id = entry.id
@@ -385,25 +560,86 @@ class SecurityPipeline:
                         f"trust={user_trust_level}, source={source}"
                     )
 
+        # Escalate fabricated security notices: REDACT → BLOCK.
+        # If the bot hallucinated a fake "AGENTSHROUD blocked X" message, redacting
+        # the substring is insufficient — the surrounding context is still deceptive.
+        # Replace the entire response with a clean fallback and block delivery.
+        if self.outbound_filter and filter_result.matches:
+            fabricated = [m for m in filter_result.matches if m.pattern_name == "fabricated_security_notice"]
+            if fabricated:
+                result.action = PipelineAction.BLOCK
+                result.blocked = True
+                result.block_reason = "Fabricated security notice detected in agent response"
+                result.sanitized_message = (
+                    "I'm sorry, I wasn't able to process that request. "
+                    "Could you rephrase your question?"
+                )
+                self._stats["outbound_blocked"] += 1
+                entry = await self.audit_chain.append_block(
+                    response, "outbound_fabricated_blocked", metadata
+                )
+                result.audit_entry_id = entry.id
+                result.audit_hash = entry.chain_hash
+                result.processing_time_ms = (time.time() - start) * 1000
+                logger.warning(
+                    "Fabricated security notice blocked from %s: %d match(es)",
+                    source, len(fabricated),
+                )
+                return result
+
+        # Step 1.55: PromptProtection — system prompt / architecture disclosure prevention.
+        # Applied after OutboundInfoFilter. Redacts additional sensitive content;
+        # blocks response if risk_score is critically high (>100) for non-owners.
+        if self.prompt_protection:
+            user_id_pp = (metadata or {}).get("user_id", "")
+            is_owner_pp = bool(
+                self._owner_user_id and str(user_id_pp) == str(self._owner_user_id)
+            )
+            if not is_owner_pp:
+                try:
+                    pp_result = self.prompt_protection.scan_response(result.sanitized_message)
+                    if pp_result.redactions_made:
+                        result.sanitized_message = pp_result.redacted_text
+                        logger.info(
+                            "PromptProtection: %d redaction(s) applied, risk_score=%.1f (source=%s)",
+                            len(pp_result.redactions_made), pp_result.risk_score, source,
+                        )
+                    if pp_result.risk_score > 100:
+                        result.action = PipelineAction.BLOCK
+                        result.blocked = True
+                        result.block_reason = (
+                            f"PromptProtection: critical disclosure risk_score={pp_result.risk_score}"
+                        )
+                        self._stats["outbound_blocked"] += 1
+                        entry = await self.audit_chain.append_block(
+                            result.sanitized_message, "outbound_pp_blocked", metadata
+                        )
+                        result.audit_entry_id = entry.id
+                        result.audit_hash = entry.chain_hash
+                        result.processing_time_ms = (time.time() - start) * 1000
+                        return result
+                except Exception as exc:
+                    logger.error("PromptProtection error: %s", exc)
+
         # Step 1.6: Encoding Bypass Detection
         if self.encoding_detector:
-            encoding_result = self.encoding_detector.detect_and_decode(
+            encoding_result = self.encoding_detector.analyze(
                 text=result.sanitized_message,
-                source=source
             )
-            
+
             # Re-scan decoded content with previous filters if encoding was detected
-            if encoding_result.has_encoded_content:
-                result.encoding_detections = encoding_result.encodings_detected
-                result.encoding_decoded_segments = len(encoding_result.decoded_segments)
+            if encoding_result.detected:
+                encodings_found = [layer.encoding for layer in encoding_result.layers]
+                result.encoding_detections = encodings_found
+                result.encoding_decoded_segments = len(encoding_result.layers)
                 self._stats["encoding_detected"] += 1
-                
+
                 # Update the message to the fully decoded version for further processing
-                result.sanitized_message = encoding_result.fully_decoded_text
-                
+                result.sanitized_message = encoding_result.cleaned_text
+
                 logger.info(
-                    f"Encoding bypass detected: {len(encoding_result.encodings_detected)} methods, "
-                    f"{len(encoding_result.decoded_segments)} segments decoded from {source}"
+                    f"Encoding bypass detected: {len(encodings_found)} methods, "
+                    f"{len(encoding_result.layers)} segments decoded from {source}"
                 )
 
         # Step 1.7: Canary Tripwire (Final Defense)
@@ -419,14 +655,14 @@ class SecurityPipeline:
                 result.blocked = True
                 result.canary_blocked = True
                 result.block_reason = f"Canary tripwire triggered: {len(tripwire_result.detections)} detections"
-                result.canary_detections = [d.canary_value for d in tripwire_result.detections]
+                result.canary_detections = tripwire_result.detections
                 self._stats["canary_blocked"] += 1
                 
-                # Audit the block
-                entry = self.audit_chain.append(
-                    f"CANARY_BLOCKED: {len(tripwire_result.detections)} detections", 
-                    "outbound_canary_blocked", 
-                    {**(metadata or {}), "canary_methods": tripwire_result.scan_methods_used}
+                # Audit the block (guaranteed persistence — canary triggers are critical)
+                entry = await self.audit_chain.append_block(
+                    f"CANARY_BLOCKED: {len(tripwire_result.detections)} detections",
+                    "outbound_canary_blocked",
+                    {**(metadata or {}), "canary_methods": tripwire_result.scan_methods_used},
                 )
                 result.audit_entry_id = entry.id
                 result.audit_hash = entry.chain_hash
@@ -441,16 +677,104 @@ class SecurityPipeline:
                 
                 return result
 
+        # Step 1.75: Enhanced tool result sanitizer — strip exfil patterns from outbound content
+        if self.enhanced_tool_sanitizer:
+            try:
+                sanitized = self.enhanced_tool_sanitizer.sanitize(result.sanitized_message)
+                if sanitized != result.sanitized_message:
+                    logger.info(
+                        "EnhancedToolResultSanitizer: content modified (exfil/leak patterns stripped)"
+                    )
+                    result.sanitized_message = sanitized
+            except Exception as exc:
+                logger.error("EnhancedToolResultSanitizer error: %s", exc)
+                # Fail-closed for non-owner: block if security module crashes
+                is_owner_outbound = bool(
+                    self._owner_user_id
+                    and metadata
+                    and str(metadata.get("user_id", "")) == str(self._owner_user_id)
+                )
+                if not is_owner_outbound:
+                    result.action = PipelineAction.BLOCK
+                    result.blocked = True
+                    result.block_reason = f"Security module error (EnhancedToolResultSanitizer): {exc}"
+                    self._stats["outbound_blocked"] += 1
+                    entry = self.audit_chain.append(
+                        f"MODULE_ERROR: EnhancedToolResultSanitizer: {exc}",
+                        "outbound_module_error",
+                        metadata,
+                    )
+                    result.audit_entry_id = entry.id
+                    result.audit_hash = entry.chain_hash
+                    result.processing_time_ms = (time.time() - start) * 1000
+                    return result
+
+        # Step 1.8: OutputCanary — check for leaked canary tokens in responses
+        if self.output_canary:
+            try:
+                canary_result = self.output_canary.check_response(agent_id, result.sanitized_message)
+                if canary_result.canary_detected:
+                    logger.critical(
+                        "OutputCanary: canary token detected in response from %s — "
+                        "method=%s risk=%s incident=%s",
+                        source, canary_result.detection_method,
+                        canary_result.risk_level, canary_result.incident_id,
+                    )
+                    # High risk detections block; medium/low are logged only
+                    if canary_result.risk_level in ("high", "critical"):
+                        result.action = PipelineAction.BLOCK
+                        result.blocked = True
+                        result.block_reason = (
+                            f"OutputCanary: leaked canary token (risk={canary_result.risk_level})"
+                        )
+                        self._stats["canary_blocked"] += 1
+                        entry = await self.audit_chain.append_block(
+                            f"CANARY_DETECTED: {canary_result.incident_id}",
+                            "outbound_canary_leak",
+                            metadata,
+                        )
+                        result.audit_entry_id = entry.id
+                        result.audit_hash = entry.chain_hash
+                        result.processing_time_ms = (time.time() - start) * 1000
+                        return result
+            except Exception as exc:
+                logger.error("OutputCanary error: %s", exc)
+                # Fail-closed for non-owner: block if security module crashes
+                is_owner_outbound = bool(
+                    self._owner_user_id
+                    and metadata
+                    and str(metadata.get("user_id", "")) == str(self._owner_user_id)
+                )
+                if not is_owner_outbound:
+                    result.action = PipelineAction.BLOCK
+                    result.blocked = True
+                    result.block_reason = f"Security module error (OutputCanary): {exc}"
+                    self._stats["outbound_blocked"] += 1
+                    entry = self.audit_chain.append(
+                        f"MODULE_ERROR: OutputCanary: {exc}",
+                        "outbound_module_error",
+                        metadata,
+                    )
+                    result.audit_entry_id = entry.id
+                    result.audit_hash = entry.chain_hash
+                    result.processing_time_ms = (time.time() - start) * 1000
+                    return result
+
         # Step 2: Egress filter
         if self.egress_filter and destination_urls:
             for url in destination_urls:
-                attempt = self.egress_filter.check(agent_id, url)
+                if hasattr(self.egress_filter, "check_async"):
+                    attempt = await self.egress_filter.check_async(
+                        agent_id, url, tool_name="outbound_response"
+                    )
+                else:
+                    attempt = self.egress_filter.check(agent_id, url)
                 if attempt.action.value == "deny":
                     result.action = PipelineAction.BLOCK
                     result.blocked = True
                     result.block_reason = f"Egress blocked: {url} — {attempt.rule}"
                     self._stats["outbound_blocked"] += 1
-                    entry = self.audit_chain.append(
+                    entry = await self.audit_chain.append_block(
                         result.sanitized_message, "outbound_blocked", metadata
                     )
                     result.audit_entry_id = entry.id

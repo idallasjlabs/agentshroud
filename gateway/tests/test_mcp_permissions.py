@@ -7,6 +7,7 @@ from __future__ import annotations
 
 
 import pytest
+import json
 
 from gateway.proxy.mcp_config import (
     MCPProxyConfig,
@@ -196,6 +197,173 @@ class TestToolPermission:
         result = mgr.check_tool_permission("agent-mid", "test-server", "admin_op")
         assert not result.allowed
 
+    def test_admin_private_tool_denied_for_non_owner(self, mgr):
+        result = mgr.check_tool_permission("agent-a", "test-server", "gmail_send")
+        assert not result.allowed
+        assert "admin-private" in result.reason
+        events = mgr.get_private_access_events(limit=5)
+        assert len(events) == 1
+        assert events[0]["tool_name"] == "gmail_send"
+        summary = mgr.get_private_access_summary(limit=5)
+        assert summary["total"] == 1
+        assert summary["by_agent"]["agent-a"] == 1
+
+    def test_memory_get_denied_for_non_owner(self, mgr):
+        result = mgr.check_tool_permission("agent-a", "test-server", "memory_get")
+        assert not result.allowed
+        assert "admin-private" in result.reason
+
+    def test_memory_dot_search_denied_for_non_owner(self, mgr):
+        result = mgr.check_tool_permission("agent-a", "test-server", "memory.search")
+        assert not result.allowed
+        assert "admin-private" in result.reason
+
+    def test_admin_private_tool_allowed_for_owner(self, mgr):
+        owner = mgr._owner_user_id
+        mgr.set_trust_level(owner, 3)
+        result = mgr.check_tool_permission(owner, "test-server", "gmail_send")
+        assert result.allowed
+
+    def test_private_data_parameter_denied_for_non_owner(self, mgr):
+        params = {"path": "/home/node/.openclaw/workspace/memory/MEMORY.md"}
+        result = mgr.check_tool_parameters(
+            "agent-a",
+            "test-server",
+            "read_file",
+            params,
+        )
+        assert not result.allowed
+        assert "admin-private data" in result.reason
+
+    def test_private_data_parameter_denied_for_gateway_contributor_logs(self, mgr):
+        params = {"path": "/home/node/agentshroud/gateway-data/contributors/2026-03-10-7614658040.md"}
+        result = mgr.check_tool_parameters(
+            "agent-a",
+            "test-server",
+            "read_file",
+            params,
+        )
+        assert not result.allowed
+        assert "admin-private data" in result.reason
+
+    def test_private_data_parameter_denied_for_workspace_contributor_logs(self, mgr):
+        params = {"path": "/data/bot-workspace/memory/contributors/2026-03-10-7614658040.md"}
+        result = mgr.check_tool_parameters(
+            "agent-a",
+            "test-server",
+            "read_file",
+            params,
+        )
+        assert not result.allowed
+        assert "admin-private data" in result.reason
+
+    def test_private_data_parameter_denied_for_nested_private_reference(self, mgr):
+        params = {
+            "query": "search logs",
+            "options": {
+                "targets": [
+                    "/tmp/ok.txt",
+                    "/app/data/collaborator_activity.jsonl",
+                ]
+            },
+        }
+        result = mgr.check_tool_parameters(
+            "agent-a",
+            "test-server",
+            "search_file",
+            params,
+        )
+        assert not result.allowed
+        assert "admin-private data" in result.reason
+
+    def test_private_data_parameter_denied_for_memory_subpath(self, mgr):
+        params = {"path": "/home/node/.openclaw/workspace/memory/conversations/2026-03-10.md"}
+        result = mgr.check_tool_parameters(
+            "agent-a",
+            "test-server",
+            "read_file",
+            params,
+        )
+        assert not result.allowed
+        assert "admin-private data" in result.reason
+
+    def test_private_data_parameter_denied_for_agentshroud_memory_subpath(self, mgr):
+        params = {"path": "/home/node/.agentshroud/workspace/memory/conversations/2026-03-10.md"}
+        result = mgr.check_tool_parameters(
+            "agent-a",
+            "test-server",
+            "read_file",
+            params,
+        )
+        assert not result.allowed
+        assert "admin-private data" in result.reason
+
+    def test_private_data_parameter_denied_for_session_store_path(self, mgr):
+        params = {"path": "/app/data/sessions/8096968754/session.json"}
+        result = mgr.check_tool_parameters(
+            "agent-a",
+            "test-server",
+            "read_file",
+            params,
+        )
+        assert not result.allowed
+        assert "admin-private data" in result.reason
+
+    def test_private_data_parameter_allowed_for_owner(self, mgr):
+        owner = mgr._owner_user_id
+        mgr.set_trust_level(owner, 3)
+        params = {"path": "/home/node/.openclaw/workspace/memory/MEMORY.md"}
+        result = mgr.check_tool_parameters(
+            owner,
+            "test-server",
+            "read_file",
+            params,
+        )
+        assert result.allowed
+
+    def test_privacy_policy_overrides_patterns(self, config, tmp_path, monkeypatch):
+        policy = tmp_path / "privacy_policy.json"
+        policy.write_text(
+            json.dumps(
+                {
+                    "admin_private_tool_patterns": ["*vault*"],
+                    "admin_private_data_patterns": [r"vault_secret_[0-9]+"],
+                }
+            )
+        )
+        monkeypatch.setenv("AGENTSHROUD_PRIVACY_POLICY_FILE", str(policy))
+        manager = MCPPermissionManager(config)
+        result = manager.check_tool_permission("agent-a", "test-server", "vault_lookup")
+        assert not result.allowed
+        assert manager.get_private_data_patterns() == [r"vault_secret_[0-9]+"]
+        status = manager.get_privacy_policy_status()
+        assert status["loaded"] is True
+        assert str(status["path"]) == str(policy)
+        assert status["error"] == ""
+
+    def test_privacy_policy_status_when_missing_file(self, config, tmp_path, monkeypatch):
+        missing_policy = tmp_path / "does-not-exist.json"
+        monkeypatch.setenv("AGENTSHROUD_PRIVACY_POLICY_FILE", str(missing_policy))
+        manager = MCPPermissionManager(config)
+        status = manager.get_privacy_policy_status()
+        assert status["loaded"] is False
+        assert str(status["path"]) == str(missing_policy)
+        assert "not found" in str(status["error"]).lower()
+
+    def test_private_redaction_event_summary(self, mgr):
+        mgr.record_private_data_redaction(
+            agent_id="agent-a",
+            server_name="test-server",
+            tool_name="get_private_data",
+            redaction_count=3,
+        )
+        events = mgr.get_private_redaction_events(limit=10)
+        assert len(events) == 1
+        assert events[0]["redaction_count"] == 3
+        summary = mgr.get_private_redaction_summary(limit=10)
+        assert summary["events"] == 1
+        assert summary["total_redactions"] == 3
+
 
 class TestInferPermission:
     def test_explicit_config(self, mgr, config):
@@ -265,3 +433,13 @@ class TestCheckAll:
     def test_full_access(self, mgr):
         result = mgr.check_all("agent-b", "test-server", "admin_op")
         assert result.allowed
+
+    def test_combined_blocks_private_data_parameter(self, mgr):
+        result = mgr.check_all(
+            "agent-a",
+            "test-server",
+            "read_data",
+            {"query": "read # Session Memory for User Isaiah"},
+        )
+        assert not result.allowed
+        assert "admin-private data" in result.reason

@@ -32,8 +32,18 @@ def strict_config():
 
 
 @pytest.fixture
+def monitor_config():
+    return DNSFilterConfig(mode="monitor")
+
+
+@pytest.fixture
 def dns_filter(default_config):
     return DNSFilter(config=default_config)
+
+
+@pytest.fixture
+def monitor_filter(monitor_config):
+    return DNSFilter(config=monitor_config)
 
 
 @pytest.fixture
@@ -42,8 +52,9 @@ def strict_filter(strict_config):
 
 
 class TestDNSFilterConfig:
-    def test_default_mode_is_monitor(self, default_config):
-        assert default_config.mode == "monitor"
+    def test_default_mode_is_enforce(self, default_config):
+        """Default mode is enforce after v0.8.0 enforcement hardening."""
+        assert default_config.mode == "enforce"
 
     def test_default_allows_all_domains(self, default_config):
         assert default_config.allowed_domains is None  # None = allow all
@@ -86,10 +97,10 @@ class TestNormalDNSResolution:
         v = dns_filter.check(d, agent_id="agent1")
         assert v.allowed is True
 
-    def test_monitor_mode_never_blocks(self, dns_filter):
+    def test_monitor_mode_never_blocks(self, monitor_filter):
         """Even suspicious queries pass in monitor mode."""
         suspicious = "aGVsbG8gd29ybGQgdGhpcyBpcyBiYXNlNjQ.data.evil.com"
-        v = dns_filter.check(suspicious, agent_id="agent1")
+        v = monitor_filter.check(suspicious, agent_id="agent1")
         assert v.allowed is True
         assert v.flagged is True  # flagged but allowed
 

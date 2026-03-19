@@ -55,7 +55,7 @@ class TestEgressTelegramNotify:
 
     @pytest.mark.asyncio
     async def test_handle_callback_approve_permanent(self, notifier):
-        """Test handling permanent approval callback."""
+        """Test handling permanent (allow_always) approval callback."""
         notifier.pending_requests["req1"] = {
             "domain": "api.example.com", "port": 443,
             "risk_level": "low", "agent_id": "bot",
@@ -65,21 +65,40 @@ class TestEgressTelegramNotify:
         result = await notifier.handle_callback("egress_allow_always_req1")
         assert result["status"] == "ok"
         assert result["action"] == "allow_always"
+        assert result["duration"] == "always"
+        assert result["expires_at"] is None
         assert result["domain"] == "api.example.com"
         assert "req1" not in notifier.pending_requests
 
     @pytest.mark.asyncio
-    async def test_handle_callback_approve_once(self, notifier):
-        """Test handling one-time approval callback."""
+    async def test_handle_callback_approve_1h(self, notifier):
+        """Test handling 1-hour time-limited approval callback."""
         notifier.pending_requests["req2"] = {
             "domain": "cdn.example.com", "port": 443,
             "risk_level": "medium", "agent_id": "bot",
             "tool_name": "web_search",
             "timestamp": datetime.now(timezone.utc).isoformat(),
         }
-        result = await notifier.handle_callback("egress_allow_once_req2")
+        result = await notifier.handle_callback("egress_allow_1h_req2")
         assert result["status"] == "ok"
-        assert result["action"] == "allow_once"
+        assert result["action"] == "allow_1h"
+        assert result["duration"] == "1h"
+        assert result["expires_at"] is not None  # should be ~1h from now
+
+    @pytest.mark.asyncio
+    async def test_handle_callback_approve_4h(self, notifier):
+        """Test handling 4-hour time-limited approval callback."""
+        notifier.pending_requests["req4h"] = {
+            "domain": "cdn.example.com", "port": 443,
+            "risk_level": "low", "agent_id": "bot",
+            "tool_name": "web_fetch",
+            "timestamp": datetime.now(timezone.utc).isoformat(),
+        }
+        result = await notifier.handle_callback("egress_allow_4h_req4h")
+        assert result["status"] == "ok"
+        assert result["action"] == "allow_4h"
+        assert result["duration"] == "4h"
+        assert result["expires_at"] is not None
 
     @pytest.mark.asyncio
     async def test_handle_callback_deny(self, notifier):
@@ -138,6 +157,7 @@ class TestEgressTelegramNotify:
             mock_send.assert_called_once_with("answerCallbackQuery", {
                 "callback_query_id": "cb123",
                 "text": "Approved!",
+                "show_alert": False,
             })
 
     @pytest.mark.asyncio
@@ -160,3 +180,61 @@ class TestEgressTelegramNotify:
         assert RISK_EMOJI["medium"] == "🟡"
         assert RISK_EMOJI["high"] == "🔴"
         assert RISK_EMOJI["unknown"] == "⚪"
+
+    @pytest.mark.asyncio
+    async def test_handle_callback_returns_agent_id(self, notifier):
+        """handle_callback must include agent_id so the proxy can notify the originating collaborator."""
+        notifier.pending_requests["rid-collab"] = {
+            "domain": "example.com", "port": 443,
+            "risk_level": "yellow", "agent_id": "telegram_web_fetch:9876543210",
+            "tool_name": "web_fetch",
+            "timestamp": datetime.now(timezone.utc).isoformat(),
+        }
+        result = await notifier.handle_callback("egress_allow_always_rid-collab")
+        assert result["status"] == "ok"
+        assert result.get("agent_id") == "telegram_web_fetch:9876543210"
+
+    @pytest.mark.asyncio
+    async def test_handle_callback_allow_always_returns_agent_id(self, notifier):
+        """Permanent approval also includes agent_id in result."""
+        notifier.pending_requests["rid-perm"] = {
+            "domain": "api.safe.com", "port": 443,
+            "risk_level": "low", "agent_id": "telegram_web_fetch:1111111111",
+            "tool_name": "web_fetch",
+            "timestamp": datetime.now(timezone.utc).isoformat(),
+        }
+        result = await notifier.handle_callback("egress_allow_always_rid-perm")
+        assert result["status"] == "ok"
+        assert result.get("agent_id") == "telegram_web_fetch:1111111111"
+
+    @pytest.mark.asyncio
+    async def test_handle_callback_deny_returns_agent_id(self, notifier):
+        """Denial result also includes agent_id so collaborator can be notified."""
+        notifier.pending_requests["rid-deny"] = {
+            "domain": "evil.com", "port": 80,
+            "risk_level": "high", "agent_id": "telegram_web_fetch:2222222222",
+            "tool_name": "exec",
+            "timestamp": datetime.now(timezone.utc).isoformat(),
+        }
+        result = await notifier.handle_callback("egress_deny_rid-deny")
+        assert result["status"] == "ok"
+        assert result.get("agent_id") == "telegram_web_fetch:2222222222"
+
+    @pytest.mark.asyncio
+    async def test_handle_callback_missing_agent_id_safe(self, notifier):
+        """Missing agent_id in stored request returns empty string, not a crash."""
+        notifier.pending_requests["rid-noagent"] = {
+            "domain": "example.com", "port": 443,
+            "risk_level": "low",
+            "tool_name": "web_fetch",
+            "timestamp": datetime.now(timezone.utc).isoformat(),
+        }
+        result = await notifier.handle_callback("egress_allow_always_rid-noagent")
+        assert result["status"] == "ok"
+        assert result.get("agent_id", "") == ""
+
+    def test_notification_recipients_owner_only_by_default(self, notifier):
+        """Collaborators are never added to notification_recipients — only owner gets egress buttons."""
+        # Notifier is initialized with just owner_chat_id="123456789" (see fixture)
+        assert notifier.notification_recipients == ["123456789"]
+        assert len(notifier.notification_recipients) == 1

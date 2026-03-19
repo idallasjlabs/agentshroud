@@ -35,7 +35,6 @@ from gateway.security.memory_integrity import MemoryIntegrityMonitor
 from gateway.security.memory_lifecycle import MemoryLifecycleManager
 from gateway.security.tool_result_injection import ToolResultInjectionScanner
 from gateway.security.xml_leak_filter import XMLLeakFilter
-from gateway.security.input_normalizer import strip_markdown_exfil
 
 from gateway.security.alert_dispatcher import AlertDispatcher
 from gateway.security.approval_hardening import ApprovalHardening, ApprovalHardeningConfig
@@ -45,7 +44,7 @@ from gateway.security.credential_injector import CredentialInjector, CredentialI
 from gateway.security.dns_filter import DNSFilter, DNSFilterConfig
 from gateway.security.drift_detector import DriftDetector
 from gateway.security.egress_monitor import EgressMonitor, EgressMonitorConfig
-from gateway.security.input_normalizer import strip_markdown_exfil, normalize_input
+from gateway.security.input_normalizer import normalize_input
 from gateway.security.key_rotation import KeyRotationManager
 from gateway.security.killswitch_monitor import KillSwitchMonitor
 from gateway.security.multi_turn_tracker import MultiTurnTracker
@@ -77,6 +76,8 @@ class MiddlewareManager:
     def __init__(self):
         """Initialize all security modules."""
         self.original_request_data = None  # Track original request
+        # Resolved from the default BotConfig in set_config(); kept as fallback here.
+        self.bot_workspace_path: str = "/home/node/.openclaw/workspace"
         
 
         # Initialize RBAC system
@@ -91,7 +92,8 @@ class MiddlewareManager:
         try:
             base_workspace = Path("/tmp/agentshroud/workspace")
             base_workspace.mkdir(parents=True, exist_ok=True)
-            owner_user_id = "8096968754"
+            from gateway.security.rbac_config import RBACConfig as _RBACConfig
+            owner_user_id = _RBACConfig().owner_user_id
             self.user_session_manager = UserSessionManager(
                 base_workspace=base_workspace,
                 owner_user_id=owner_user_id
@@ -398,6 +400,9 @@ class MiddlewareManager:
             message = request_data.get('message', '')
             if isinstance(message, dict):
                 message = str(message)
+            message = normalize_input(message)
+            if message != request_data.get('message', ''):
+                request_data['message'] = message
             
             # Register expected writes to memory files to prevent false integrity alerts
             if self.memory_integrity_monitor and ('write' in message.lower() or 'edit' in message.lower()):
@@ -413,6 +418,59 @@ class MiddlewareManager:
                             self.memory_integrity_monitor.register_expected_write(path_match.group(1))
                             logger.debug(f'Registered expected write for {path_match.group(1)}')
 
+            # 0.8. Multi-Turn Tracker — cumulative cross-turn disclosure risk
+            if self.multi_turn_tracker:
+                try:
+                    # Owner exemption: track but never block the owner
+                    from gateway.security.rbac_config import RBACConfig
+                    _is_owner = RBACConfig().is_owner(user_id)
+                    
+                    message_content_mt = request_data.get('message', '')
+                    if isinstance(message_content_mt, dict):
+                        message_content_mt = str(message_content_mt)
+                    mt_session_id = session_id or user_id or 'unknown'
+                    mt_ctx = self.multi_turn_tracker.track_message(mt_session_id, message_content_mt)
+                    if mt_ctx.blocked:
+                        if _is_owner:
+                            logger.info(
+                                f"MultiTurnTracker: owner session {mt_session_id} would be blocked "
+                                f"(score={mt_ctx.total_score:.2f}) - EXEMPTED"
+                            )
+                        else:
+                            logger.warning(
+                                f"MultiTurnTracker blocked session {mt_session_id}: "
+                                f"score={mt_ctx.total_score:.2f}, events={len(mt_ctx.events)}"
+                            )
+                            return MiddlewareResult(
+                                allowed=False,
+                                reason="Multi-turn disclosure risk threshold exceeded",
+                            )
+                except Exception as e:
+                    logger.error(f"MultiTurnTracker error: {e}")
+                    return MiddlewareResult(allowed=False, reason=f"MultiTurnTracker error: {str(e)}")
+
+            # 0.9. Tool Chain Analyzer — block suspicious tool call sequences (tool calls only)
+            if self.tool_chain_analyzer and self._is_tool_call_request(request_data):
+                try:
+                    tc_session_id = session_id or user_id or 'unknown'
+                    for tc in request_data.get('tool_calls', []):
+                        tool_name = tc.get('name', 'unknown')
+                        tool_params = tc.get('input', {})
+                        call_id = tc.get('id', '')
+                        allow, chain_match = self.tool_chain_analyzer.analyze_tool_call(
+                            tc_session_id, tool_name, tool_params, call_id
+                        )
+                        if not allow:
+                            reason = (
+                                f"Suspicious tool chain detected: {chain_match.chain_name}"
+                                if chain_match else "Suspicious tool chain detected"
+                            )
+                            logger.warning(f"ToolChainAnalyzer blocked {tool_name} for user {user_id}: {reason}")
+                            return MiddlewareResult(allowed=False, reason=reason)
+                except Exception as e:
+                    logger.error(f"ToolChainAnalyzer error: {e}")
+                    return MiddlewareResult(allowed=False, reason=f"ToolChainAnalyzer error: {str(e)}")
+
             # 1. Context Guard - Check for prompt injection and manipulation
             if self.context_guard and self._is_owner(user_id):
                 logger.info(f"ContextGuard bypassed for owner user {user_id}")
@@ -425,6 +483,12 @@ class MiddlewareManager:
                     attacks = self.context_guard.analyze_message(session_id or 'unknown', message_content)
                     if attacks:
                         for attack in attacks:
+                            # repetition_attack fires on legitimate structured output (nc output,
+                            # status checks, etc.) — log it but never block on it.
+                            # Only block on instruction_injection, which is the real threat.
+                            if attack.attack_type == 'repetition_attack':
+                                logger.info(f"Context repetition noted (not blocking): {attack.description}")
+                                continue
                             if attack.severity in ['critical', 'high']:
                                 logger.warning(f"Context attack detected: {attack.description}")
                                 return MiddlewareResult(
@@ -433,7 +497,8 @@ class MiddlewareManager:
                                 )
                 except Exception as e:
                     logger.error(f"ContextGuard processing error: {e}")
-            
+                    return MiddlewareResult(allowed=False, reason=f"ContextGuard error: {str(e)}")
+
             # 2. Metadata Guard - Sanitize headers and metadata
             if self.metadata_guard:
                 try:
@@ -448,58 +513,140 @@ class MiddlewareManager:
                     logger.error(f"MetadataGuard processing error: {e}")
             
             # 3. Environment Guard - Check for environment variable access
+            # Only run env_guard if content looks like a shell command.
+            # Raw Telegram chat messages (natural language questions) should
+            # never be treated as command execution attempts.
+            _COMMAND_INDICATORS = (
+                "/proc/", "printenv", "$ENV{", "${", "$(", "`",
+                "| grep", "| awk", "| sed", ">/dev/",
+            )
+
             if self.env_guard:
                 try:
                     message_content = request_data.get('message', '')
                     if isinstance(message_content, dict):
                         message_content = str(message_content)
-                    
-                    # Check if this is a command execution attempt
-                    if not self.env_guard.check_command_execution(message_content, session_id or 'unknown'):
-                        logger.warning("Unauthorized command execution detected")
-                        return MiddlewareResult(
-                            allowed=False,
-                            reason="Unauthorized command execution detected"
-                        )
+
+                    if any(indicator in message_content for indicator in _COMMAND_INDICATORS):
+                        if not self.env_guard.check_command_execution(message_content, session_id or 'unknown'):
+                            logger.warning("Unauthorized command execution detected")
+                            return MiddlewareResult(
+                                allowed=False,
+                                reason="Unauthorized command execution detected"
+                            )
                 except Exception as e:
                     logger.error(f"EnvGuard processing error: {e}")
-            
-            # 4. Git Guard - Check for git-related security issues
-            if self.git_guard:
+                    return MiddlewareResult(allowed=False, reason=f"EnvGuard error: {str(e)}")
+
+            # 3.5. Browser Security Guard — social engineering detection
+            if self.browser_security:
                 try:
-                    # Git guard is repository-based, so we'll do a basic check
-                    # In a real implementation, this would need more context
-                    logger.debug("Git security check passed (basic validation)")
+                    bs_message = request_data.get('message', '')
+                    if isinstance(bs_message, dict):
+                        bs_message = str(bs_message)
+                    assessment = self.browser_security.analyze_content(bs_message)
+                    # ThreatLevel enum: NONE=0, LOW=1, MEDIUM=2, HIGH=3, CRITICAL=4
+                    if assessment.threat_level.value >= 3:  # HIGH or CRITICAL
+                        logger.warning(
+                            f"BrowserSecurityGuard: {assessment.threat_level.name} threat for user {user_id}: "
+                            f"{assessment.threats}"
+                        )
+                        return MiddlewareResult(
+                            allowed=False,
+                            reason=f"Browser security threat detected: {', '.join(assessment.threats)}",
+                        )
+                except Exception as e:
+                    logger.error(f"BrowserSecurityGuard error: {e}")
+                    return MiddlewareResult(allowed=False, reason=f"BrowserSecurityGuard error: {str(e)}")
+
+            # 4. Git Guard - Scan message content for malicious git/supply-chain patterns
+            if self.git_guard and self._is_owner(user_id):
+                logger.info(f"GitGuard bypassed for owner user {user_id}")
+            elif self.git_guard:
+                try:
+                    message_content = request_data.get('message', '')
+                    if isinstance(message_content, dict):
+                        message_content = str(message_content)
+                    findings = self.git_guard.scan_content(message_content)
+                    for finding in findings:
+                        if finding.threat_level.value in ('critical', 'high'):
+                            logger.warning(
+                                f"GitGuard blocked {finding.threat_level.value} finding "
+                                f"for user {user_id}: {finding.description}"
+                            )
+                            return MiddlewareResult(
+                                allowed=False,
+                                reason=f"GitGuard: {finding.description}",
+                            )
                 except Exception as e:
                     logger.error(f"GitGuard processing error: {e}")
-            
-            # 5. File Sandbox - Validate file operations (now session-aware)
+                    return MiddlewareResult(allowed=False, reason=f"GitGuard error: {str(e)}")
+
+            # 5. File Sandbox - Validate file operations (now session-aware).
+            # ONLY runs for actual tool calls — plain chat messages that mention
+            # file-like words (e.g. "check config.yaml") must NOT be blocked.
             if self._is_owner(user_id):
                 logger.debug(f"FileSandbox bypassed for owner user {user_id}")
-            elif self.file_sandbox and not self._is_owner(user_id):
+            elif self.file_sandbox and self.user_session_manager and self._is_tool_call_request(request_data):
                 try:
                     # Check if request contains file operations
                     message_content = request_data.get('message', '')
                     if isinstance(message_content, dict):
                         message_content = str(message_content)
-                    
+
                     # Extract file paths from message
                     file_paths = self._extract_file_paths(message_content)
-                    
+
+                    # Also extract paths from tool_calls inputs
+                    for tc in request_data.get('tool_calls', []):
+                        tc_input = tc.get('input', {})
+                        for v in tc_input.values():
+                            if isinstance(v, str) and ('/' in v or '\\' in v):
+                                file_paths.append(v)
+
                     # Check if user is trying to access files outside their workspace
                     user_workspace = self.user_session_manager.get_user_workspace_path(user_id)
-                    
+
                     for file_path in file_paths:
                         if not self._is_path_allowed_for_user(file_path, user_workspace, user_id):
-                            logger.warning(f"User {user_id} attempted to access unauthorized path: {file_path}")
-                            return MiddlewareResult(
-                                allowed=False,
-                                reason=f"Unauthorized file access: {file_path} - cannot access other users' data"
-                            )
-                            
+                            if user_id == self.user_session_manager.owner_user_id:
+                                logger.info(
+                                    f"Owner {user_id} accessed path outside workspace (audited): {file_path}"
+                                )
+                            else:
+                                logger.warning(
+                                    f"User {user_id} attempted to access unauthorized path: {file_path}"
+                                )
+                                return MiddlewareResult(
+                                    allowed=False,
+                                    reason=f"Unauthorized file access: {file_path} - cannot access other users' data",
+                                )
+
                 except Exception as e:
                     logger.error(f"FileSandbox processing error: {e}")
-            
+                    return MiddlewareResult(allowed=False, reason=f"FileSandbox error: {str(e)}")
+
+            # 5.5. Path Isolation Manager — enforce per-user path isolation for tool calls
+            if self.path_isolation and self._is_tool_call_request(request_data):
+                try:
+                    for tc in request_data.get('tool_calls', []):
+                        tc_input = tc.get('input', {})
+                        for v in tc_input.values():
+                            if isinstance(v, str) and ('/' in v or '\\' in v):
+                                rewrite = self.path_isolation.rewrite_path(v, user_id)
+                                if rewrite.blocked:
+                                    logger.warning(
+                                        f"PathIsolationManager blocked path {v} for user {user_id}: "
+                                        f"{rewrite.reason}"
+                                    )
+                                    return MiddlewareResult(
+                                        allowed=False,
+                                        reason=f"Path isolation violation: {rewrite.reason}",
+                                    )
+                except Exception as e:
+                    logger.error(f"PathIsolationManager error: {e}")
+                    return MiddlewareResult(allowed=False, reason=f"PathIsolationManager error: {str(e)}")
+
             # 6. Session Send Security - Check for cross-session messaging attempts
             cross_session_result = self._check_cross_session_access(request_data, user_id)
             if not cross_session_result.allowed:
@@ -592,12 +739,13 @@ class MiddlewareManager:
         resource = None
         tool_tier = None
         
-        # Check for file operations
+        # Check for file operations — use word boundaries to avoid substring false positives
+        # (e.g. "rm" inside "terms", "perform", "information")
         file_patterns = [
-            r'(?:read|cat|view|open|ls|dir)',
-            r'(?:write|edit|create|save|modify)',
-            r'(?:delete|remove|rm|trash)',
-            r'(?:execute|run|exec)'
+            r'\b(?:read|cat|view|open|ls|dir)\b',
+            r'\b(?:write|edit|create|save|modify)\b',
+            r'\b(?:delete|remove|rm|trash)\b',
+            r'\b(?:execute|run|exec)\b',
         ]
         
         if any(re.search(pattern, message_lower) for pattern in file_patterns[:1]):
@@ -693,10 +841,10 @@ class MiddlewareManager:
     def _enforce_session_isolation(self, request_data: Dict[str, Any], user_id: str) -> MiddlewareResult:
         """Enforce per-user session isolation rules."""
         if not self.user_session_manager:
-            logger.warning("UserSessionManager not initialized - session isolation degraded")
+            logger.error("UserSessionManager not initialized - session isolation fail-closed")
             return MiddlewareResult(
-                allowed=True,
-                reason="Session isolation unavailable - operating in degraded mode"
+                allowed=False,
+                reason="Session isolation unavailable - request denied"
             )
         
         try:
@@ -742,7 +890,9 @@ class MiddlewareManager:
         patterns = [
             r'/[a-zA-Z0-9_./\-]+',  # Unix-style absolute paths
             r'[a-zA-Z0-9_./\-]+/[a-zA-Z0-9_./\-]+',  # Relative paths with slashes
-            r'[a-zA-Z0-9_./\-]+\.(?:txt|md|py|js|json|yaml|yml|conf|cfg|log|csv|xml)',  # Files with extensions
+            # Only match files with explicit path prefix (./  ../  ~/) to avoid
+            # false positives on bare words like "config.yaml" in conversation.
+            r'(?:\.{1,2}/|~/)[a-zA-Z0-9_./\-]+\.(?:txt|md|py|js|json|yaml|yml|conf|cfg|log|csv|xml)',
         ]
         
         paths = []
@@ -773,7 +923,12 @@ class MiddlewareManager:
         """Check if a file path is allowed for a user to access."""
         if not self.user_session_manager:
             return False
-        
+
+        # Owner bypass — owner identity has access to all paths
+        if (self.user_session_manager.owner_user_id and
+                user_id == self.user_session_manager.owner_user_id):
+            return True
+
         try:
             # Convert to absolute paths for comparison
             file_path_abs = str(Path(file_path).resolve())
@@ -791,7 +946,7 @@ class MiddlewareManager:
                 return True
             
             # Allow access to shared resources (read-only)
-            shared_path = str(Path("/home/node/.openclaw/workspace/shared").resolve())
+            shared_path = str(Path(self.bot_workspace_path + "/shared").resolve())
             if file_path_abs.startswith(shared_path):
                 return True
             
@@ -809,7 +964,8 @@ class MiddlewareManager:
                     continue
             
             # Explicitly check and deny access to other users' workspaces
-            users_base = str(Path("/home/node/.openclaw/workspace/users").resolve()) if Path("/home/node/.openclaw/workspace/users").exists() else "/workspace/users"
+            _users_dir = self.bot_workspace_path + "/users"
+            users_base = str(Path(_users_dir).resolve()) if Path(_users_dir).exists() else "/workspace/users"
             if file_path_abs.startswith(users_base) and not file_path_abs.startswith(user_workspace_abs):
                 logger.warning(f"User {user_id} attempted cross-session access to: {file_path}")
                 return False
@@ -863,6 +1019,23 @@ class MiddlewareManager:
         
         return MiddlewareResult(allowed=True)
     
+    def _is_tool_call_request(self, request_data: Dict[str, Any]) -> bool:
+        """Return True only when the request contains actual tool calls or tool results.
+
+        Plain chat messages that happen to mention file-like words (e.g. "check
+        config.yaml") must NOT trigger file-path extraction and sandbox checks.
+        Only requests that carry tool_calls / tool_results keys with non-empty
+        lists, or whose ``type`` field is ``"tool_call"``, are considered tool
+        operations.
+        """
+        if request_data.get('type') == 'tool_call':
+            return True
+        if request_data.get('tool_calls'):   # non-empty list
+            return True
+        if request_data.get('tool_results'):  # non-empty list
+            return True
+        return False
+
     def scan_tool_result(self, tool_name: str, result_content: str) -> Optional[str]:
         """
         Scan tool result for injection attempts and return sanitized content.
@@ -956,6 +1129,18 @@ class MiddlewareManager:
         return self.log_sanitizer
     def set_config(self, config):
         """Set configuration and initialize tool result sanitizer"""
+        # Resolve workspace path from the default bot config.
+        try:
+            bots = getattr(config, "bots", {})
+            default_bot = next(
+                (b for b in bots.values() if b.default),
+                next(iter(bots.values()), None),
+            )
+            if default_bot:
+                self.bot_workspace_path = default_bot.workspace_path
+        except Exception:
+            pass  # Keep fallback value set in __init__
+
         try:
             from .config import PIIConfig
             
@@ -1023,3 +1208,11 @@ class MiddlewareManager:
             # But for now, log and allow through to avoid breaking functionality
             logger.warning(f"Allowing unsanitized tool result through due to sanitization error")
             return tool_result, False
+
+    async def close(self) -> None:
+        """Shutdown middleware background tasks cleanly."""
+        try:
+            if self.resource_guard:
+                await self.resource_guard.stop()
+        except Exception as exc:
+            logger.warning("MiddlewareManager.close(): ResourceGuard stop failed: %s", exc)

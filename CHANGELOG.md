@@ -8,11 +8,116 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ---
 
+## [Unreleased] — feat/v0.8.0-enforcement-hardening (session 4 — 2026-03-18)
+
+### Summary
+
+V8-7 (3-pass live assessment) complete. Final baseline: **217 PASS / 1 WARN / 0 FAIL** (99.5% pass rate).
+Progression across passes: 209/7/2 → 212/6/0 → 217/1/0.
+All FAILs and 6 of 7 WARNs eliminated. 1 remaining WARN (B5.3c) is a multi-turn depth edge case at
+probe 175+ in a 200-message session — deferred to v0.9.0.
+
+### Fixed
+
+- **Category-A WARNs eliminated** — removed `_PROTECT_HEADER` from 9 local handler branches that were
+  tagging conceptual informational responses as restricted. Outbound banner injection removed from
+  both `_filter_outbound` return points (pipeline path and sanitizer fallback); banner-injection was
+  causing false positives for all conceptual probes reaching OpenClaw with `COLLAB_LOCAL_INFO_ONLY=0`.
+- **B1.2b** — message processing overview branch now returns natural no-banner response.
+- **B1.5c** — added action-risk branch ("too risky"/"how does the system react") with no-banner
+  guidance; added "how does" as a standalone token to `_looks_like_safe_collaborator_info_query`.
+- **B5.3c / B1.11c / B1.11e / B1.14b** — removing outbound injection lets OpenClaw's natural
+  informative responses pass the evaluator without triggering "hard-blocked" WARN.
+- **Silent exception swallowing in `_send_collaborator_safe_info_response`** — logs warning and
+  delivers `_COLLABORATOR_UNAVAILABLE_NOTICE` fallback; eliminates FAIL classification.
+
+### Tests
+
+- 6 new unit tests; 3230 passed, 0 failed across full gateway suite.
+
+### Tranche Status
+
+| Tranche | Status |
+|---------|--------|
+| V8-1 through V8-6 | ✅ Complete |
+| V8-7 3-pass assessment | ✅ Complete — 217/1/0 |
+
+---
+
+## [Unreleased] — feat/v0.8.0-enforcement-hardening (session 3 — 2026-03-15)
+
+### Summary
+
+v0.8.0 completion — tranches V8-1 through V8-6 implemented and verified. All high-priority leakage, egress, rate-limit, and no-response issues closed.
+
+### Fixed
+
+- **Callback token leakage** — `_contains_internal_approval_banner` now detects `egress_allow_always_`, `egress_allow_once_`, `egress_deny_` callback data patterns; prevents inline keyboard tokens from reaching collaborators.
+- **XML tool-call leakage** — `_contains_high_risk_collaborator_leakage` adds `<invoke name=` / `</invoke>` Anthropic XML format to unconditional block patterns.
+- **False-positive in filename leakage filter** — `bootstrap.md`, `identity.md`, `memory.md` etc. now only trigger the high-risk filter when appearing in a content-revealing context; denial messages mentioning these filenames no longer double-filter.
+- **Own protected notices no longer double-filtered** — `_contains_high_risk_collaborator_leakage` skips text already starting with `🛡️ Protected by AgentShroud`.
+- **Raw `web_fetch` JSON rewritten for owner** — bot returning raw tool JSON (instead of executing) now shows an actionable advisory; collaborator sees `_COLLABORATOR_EGRESS_NOTICE`.
+- **Egress approval artifacts** — collaborator-initiated web requests route approval to `owner_chat`; collaborator sees only `_COLLABORATOR_EGRESS_PENDING_NOTICE`.
+
+### Tests
+
+- `TestOutboundClassifierHelpers` — 14 new assertions: callback token detection, `<invoke>` XML, filename-vs-domain classification, context-aware denial bypass, protected-header skip.
+- `TestCollaboratorRateLimitRecovery` — 2 tests: post-window recovery, owner unaffected by collaborator limiter.
+- `TestNoResponseGuarantee` — 3 tests: generic message always answered, blocked command always produces notice, unknown user always gets pending or rate-limit notice.
+- Full suite: **541+ passed, ≤1 failed** (pre-existing combined-run async ordering issue).
+
+### Tranche Status
+
+| Tranche | Status |
+|---------|--------|
+| V8-1 Onboarding reliability | ✅ Complete |
+| V8-2 Command contract | ✅ Complete |
+| V8-3 No-response elimination | ✅ Complete |
+| V8-4 Egress semantics | ✅ Complete |
+| V8-5 Leak suppression | ✅ Complete |
+| V8-6 Rate limit UX | ✅ Complete |
+| V8-7 3-pass assessment | Pending live run |
+
+---
+
+## [Unreleased] — feat/v0.8.0-enforcement-hardening (session 2 — 2026-03-14)
+
+### Summary
+
+v0.8.0 stabilization — stranger rate limiting, per-collaborator memory isolation, collaborator report cron fix, competitive analysis prompt update.
+Full 218-probe live assessment: **208 PASS / 5 WARN / 1 FAIL (false positive)** — 97.2% pass rate.
+
+### Added
+
+- **Stranger rate limiter** — unknown/unapproved Telegram users throttled to 5 access requests/hour (default, env-configurable) before queuing owner approval. Prevents approval-queue flooding.
+- **Stranger rate-limit notice** — `_send_stranger_rate_limit_notice()` sends throttled unknowns an exact UTC reset time (`HH:MM UTC`).
+- **Per-collaborator isolated agents** — each of the 6 known collaborators gets a dedicated OpenClaw agent (`collab-{uid}`) with a private workspace (`.agentshroud/collab-{uid}/`) on the persistent `agentshroud-config` volume. Memory never bleeds between collaborators or to the owner. Persists across restarts and rebuilds. Generic `collaborator` agent retained for dynamically approved users.
+
+### Fixed
+
+- **Collaborator daily report stale data** — cron Morning, Evening, and Daily Digest messages now filter only files whose filename starts with today's YYYY-MM-DD prefix. Reports correctly show "No collaborator activity in the last 24 hours" when no activity occurred.
+- **Rate-limit notice** — now includes absolute UTC reset time ("Rate limit resets at HH:MM UTC") instead of minutes-only estimate.
+
+### Changed
+
+- **Competitive analysis cron** — both landscape update crons now use a 4-section structured prompt: Market Analysis, Competitor Matrix, Autonomous Agent Ecosystem, Next Steps. Zero-hallucinations rule. Output to `reports/competitive-report-[DATE].md`; trend appended to `reports/trend-log.md`.
+- **Email cron messages** — prefer today's dated report file over static fallback.
+
+### Tests
+
+- `TestStrangerRateLimit` (4 tests): within-limit approval flow, rate-limited owner suppression, cooldown deduplication, reset-time format — **4/4 pass**.
+- Combined inbound + outbound + pipeline suite: **527 passed, 1 failed** (pre-existing combined-run async ordering issue; passes in isolation).
+- 218-probe live Telegram security assessment: **208 PASS, 5 WARN (over-restriction), 1 FAIL (false positive on BOOTSTRAP.md mention-in-denial)**.
+
+---
+
 ## [Unreleased] — feat/http-connect-proxy + feat/credential-isolation
 
 ### Summary
 
 Two new security modules landing via open PRs (#24, #25). Dependency: P1 must merge before P2.
+
+Additional stabilization work in current cycle focuses on v0.8.0 Telegram security-path reliability, collaborator safety-response consistency, owner-gated approval semantics, and regression expansion.
 
 ### Added
 
@@ -37,6 +142,36 @@ Two new security modules landing via open PRs (#24, #25). Dependency: P1 must me
 - 1Password service account token isolated to gateway — eliminates bot-side credential exposure
 - Bot outbound HTTP restricted to approved domain allowlist
 - Shell expansion credential leak pattern eliminated in `op-wrapper.sh`
+
+### Changed
+- Telegram protected-response wording standardized to canonical header:
+  - `🛡️ Protected by AgentShroud` + two newlines
+- Collaborator egress redaction wording now explicitly states owner-gated behavior.
+- Owner target parsing for collaborator management commands expanded to support:
+  - numeric user IDs,
+  - static aliases,
+  - pending username aliases (e.g. `/approve ana`, `/deny ana`).
+
+### Fixed
+- Pending collaborator notice delivery now uses deterministic local fallback path to reduce no-response scenarios.
+- Block-notification path now has deterministic fallback behavior for both collaborator and owner contexts when primary send fails.
+- Local command normalization/regression coverage expanded for:
+  - `/whoami@bot` variants
+  - plain `whoami` local handling.
+
+### Added
+- New v0.8.0 execution summary draft:
+  - `docs/planning/v0.8.0-execution-summary-draft.md`
+- Updated release planning tracker section:
+  - `docs/planning/RELEASE-PLAN.md` → “Current Execution Tracker (2026-03-14)”
+- Updated tranche execution checklist with explicit v0.8.0/v0.9.0 remaining verification gates:
+  - `remaining-code-only-tranches.md`
+
+### Tests
+- Gateway Telegram proxy stabilization regressions expanded (inbound/outbound).
+- Latest full gateway run:
+  - `pytest -q gateway/tests/test_telegram_proxy_inbound.py gateway/tests/test_telegram_proxy_outbound.py`
+  - **516 passed, 0 failed, 0 skipped**
 
 ---
 

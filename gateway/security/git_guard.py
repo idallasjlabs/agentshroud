@@ -50,7 +50,7 @@ class SecurityFinding:
 class GitGuard:
     """Monitor and analyze git hooks and package installation scripts."""
 
-    def __init__(self, mode: str = "monitor"):
+    def __init__(self, mode: str = "enforce"):
         """
         Args:
             mode: 'monitor' (log findings) or 'enforce' (quarantine suspicious files)
@@ -161,6 +161,23 @@ class GitGuard:
                 ],
             ),
         }
+
+    def scan_content(self, content: str, label: str = "message") -> List[SecurityFinding]:
+        """Scan arbitrary text content for malicious git/supply-chain patterns.
+
+        This is the primary entry point for middleware use.  Unlike
+        ``scan_git_repository`` (which walks files on disk) this method checks
+        in-memory content — e.g. a user message or tool result — against the
+        same pattern library.
+
+        Args:
+            content: The text to scan.
+            label: A human-readable label used in finding metadata (default: "message").
+
+        Returns:
+            List of SecurityFinding objects; empty list if clean.
+        """
+        return self._analyze_script_content(f"<{label}>", content, label)
 
     def scan_git_repository(self, repo_path: str) -> List[SecurityFinding]:
         """
@@ -478,7 +495,7 @@ class GitGuard:
         logger.info(f"Git guard report exported to {output_path}")
 
 
-def scan_repository(repo_path: str, mode: str = "monitor") -> GitGuard:
+def scan_repository(repo_path: str, mode: str = "enforce") -> GitGuard:
     """Convenience function to scan a repository."""
     guard = GitGuard(mode=mode)
     guard.scan_git_repository(repo_path)

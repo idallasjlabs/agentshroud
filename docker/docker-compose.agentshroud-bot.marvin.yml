@@ -1,0 +1,72 @@
+# AgentShroud Dev/Test Instance — Marvin host, agentshroud-bot user
+# Same host as prod (ijefferson.admin). Ports and subnets offset to avoid conflicts.
+#
+# Usage: docker compose -f docker/docker-compose.yml -f docker/docker-compose.agentshroud-bot.marvin.yml -p agentshroud-dev up -d
+#
+# Prod (ijefferson.admin):  gateway 8080,  bot 18790,  nets 10.254.110/111/112.0/24
+# Dev  (agentshroud-bot):   gateway 9080,  bot 19789,  nets 172.20/172.21/172.22.0.0/16
+services:
+  gateway:
+    container_name: agentshroud-dev-gateway
+    ports: !override
+      - "127.0.0.1:9080:8080"
+    environment:
+      - AGENTSHROUD_INSTANCE=marvin-dev
+      - PROXY_ALLOWED_NETWORKS=172.21.0.0/16
+      - TELEGRAM_BOT_TOKEN_FILE=/run/secrets/telegram_bot_token
+    secrets:
+      - telegram_bot_token
+
+  bot:
+    container_name: agentshroud-dev-bot
+    hostname: agentshroud-dev
+    ports: !override
+      - "127.0.0.1:19789:18789"
+    environment:
+      - NODE_ENV=development
+      - GATEWAY_HOST_PORT=9080
+      - OPENCLAW_GATEWAY_BIND=lan
+      - OPENCLAW_GATEWAY_PASSWORD_FILE=/run/secrets/gateway_password
+      - GATEWAY_OP_PROXY_URL=http://gateway:8080
+      - OPENCLAW_BOT_NAME=agentshroud_bot
+      - OPENCLAW_BOT_EMAIL=agentshroud.ai@icloud.com
+      - OPENCLAW_DISABLE_HOST_FILESYSTEM=true
+      - OPENCLAW_SANDBOX_MODE=strict
+      - OPENCLAW_DISABLE_BONJOUR=1
+      # Route ALL Telegram API calls through AgentShroud gateway
+      - TELEGRAM_API_BASE_URL=http://gateway:8080/telegram-api
+      # Route ALL LLM API calls through gateway for message scanning
+      - ANTHROPIC_BASE_URL=http://gateway:8080
+      # Route ALL outbound HTTP through gateway CONNECT proxy
+      - HTTP_PROXY=http://gateway:8181
+      - HTTPS_PROXY=http://gateway:8181
+      # Exclude internal gateway from proxy
+      - NO_PROXY=gateway,localhost,127.0.0.1
+      - TELEGRAM_BOT_TOKEN_FILE=/run/secrets/telegram_bot_token
+    secrets:
+      - gateway_password
+      - telegram_bot_token
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+      - "marvin.tail240ea8.ts.net:host-gateway"
+      # DNS redirect: Anthropic API -> gateway for message-level security
+      - "api.anthropic.com:host-gateway"
+
+secrets:
+  telegram_bot_token:
+    file: ./secrets/telegram_bot_token_marvin.txt
+
+# All three networks offset from prod (10.254.110-112.0/24) to prevent pool overlap on the same host.
+networks:
+  agentshroud-internal:
+    ipam:
+      config: !override
+        - subnet: 172.20.0.0/16
+  agentshroud-isolated:
+    ipam:
+      config: !override
+        - subnet: 172.21.0.0/16
+  agentshroud-console:
+    ipam:
+      config: !override
+        - subnet: 172.22.0.0/16
