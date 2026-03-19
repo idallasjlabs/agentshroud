@@ -49,19 +49,29 @@ class SOCWebSocketHandler:
         """Subscribe to EventBus and forward matching events to the client."""
         if event_bus is None:
             return
-        async for raw in event_bus.subscribe():
-            if raw is None:
-                continue
-            try:
-                ev = _coerce_to_ws_event(raw)
-                if not ev:
+        queue: asyncio.Queue = asyncio.Queue()
+
+        async def _on_event(event) -> None:
+            await queue.put(event)
+
+        await event_bus.subscribe(_on_event)
+        try:
+            while True:
+                raw = await queue.get()
+                if raw is None:
                     continue
-                # Apply subscription filter
-                if self.subscriptions and ev.type.value not in self.subscriptions:
-                    continue
-                await self._send_event(ev)
-            except Exception as exc:
-                logger.debug("ws_soc fan-out error: %s", exc)
+                try:
+                    ev = _coerce_to_ws_event(raw)
+                    if not ev:
+                        continue
+                    # Apply subscription filter
+                    if self.subscriptions and ev.type.value not in self.subscriptions:
+                        continue
+                    await self._send_event(ev)
+                except Exception as exc:
+                    logger.debug("ws_soc fan-out error: %s", exc)
+        finally:
+            await event_bus.unsubscribe(_on_event)
 
     async def run(self, event_bus) -> None:
         """Main connection loop."""

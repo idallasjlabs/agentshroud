@@ -38,6 +38,8 @@ services:
       - agentshroud-config:/data/bot-config:ro
       - falco-alerts:/var/log/falco:ro
       - wazuh-alerts:/var/ossec/logs/alerts:ro
+      - security-reports:/var/log/security
+      - /var/run/docker.sock:/var/run/docker.sock:ro
     secrets:
       - gateway_password
       - telegram_bot_token
@@ -66,6 +68,8 @@ services:
       - AGENTSHROUD_CLOUD_MODEL_REF=${AGENTSHROUD_CLOUD_MODEL_REF:-anthropic/claude-opus-4-6}
       - AGENTSHROUD_LOCAL_MODEL_REF=${AGENTSHROUD_LOCAL_MODEL_REF:-ollama/qwen3:14b}
       - OPENCLAW_MAIN_MODEL=${OPENCLAW_MAIN_MODEL:-}
+    group_add:
+      - "991"   # docker socket GID — read-only service introspection for SOC
     security_opt:
       - no-new-privileges:true
       - seccomp=./seccomp/gateway-seccomp.json
@@ -357,4 +361,6 @@ volumes:
   wazuh-alerts:
     driver: local
   fluent-bit-logs:
+    driver: local
+  security-reports:
     driver: local
