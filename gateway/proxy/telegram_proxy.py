@@ -151,7 +151,7 @@ _LOCAL_RMFROMGROUP_COMMANDS = {"/rmfromgroup", "rmfromgroup"}
 _LOCAL_SETMODE_COMMANDS = {"/setmode", "setmode"}
 _LOCAL_DELEGATE_COMMANDS = {"/delegate", "delegate"}
 _LOCAL_DELEGATIONS_COMMANDS = {"/delegations", "delegations"}
-_LOCAL_REVOKE_DELEGATION_COMMANDS = {"/revoke-delegation", "revoke-delegation", "/revokedelegation", "revokedelegation"}
+_LOCAL_REVOKE_DELEGATION_COMMANDS = {"/revoke_delegation", "revoke_delegation", "/revoke-delegation", "revoke-delegation", "/revokedelegation", "revokedelegation"}
 
 _COLLABORATOR_ALLOWED_SLASH_COMMANDS = {
     "/start",
@@ -4119,7 +4119,7 @@ class TelegramAPIProxy:
                             _d.expires_at, tz=_dt.timezone.utc
                         ).strftime("%H:%M UTC")
                         lines.append(f"  {_label} ({_d.delegated_to}) — {_d.privilege} until {_exp_str}")
-                    lines.append("\nUse /revoke-delegation <user_id> <privilege> to revoke.")
+                    lines.append("\nUse /revoke_delegation <user_id> <privilege> to revoke.")
                     await self._send_owner_admin_notice(chat_id, "\n".join(lines))
                     continue
                 elif is_owner and cmd_base in _LOCAL_REVOKE_DELEGATION_COMMANDS:
@@ -4130,7 +4130,7 @@ class TelegramAPIProxy:
                     if len(_parts) < 2:
                         await self._send_owner_admin_notice(
                             chat_id,
-                            f"{_PROTECT_HEADER}Usage: /revoke-delegation <user_id|name> [privilege]\n"
+                            f"{_PROTECT_HEADER}Usage: /revoke_delegation <user_id|name> [privilege]\n"
                             "Privileges: egress_approval, user_management\n"
                             "Omit privilege to revoke all delegations for the user.",
                         )
@@ -4138,7 +4138,7 @@ class TelegramAPIProxy:
                     _rd_target_raw = _parts[1]
                     _rd_priv_raw = _parts[2].lower() if len(_parts) > 2 else None
                     _rd_target = self._extract_owner_target_resolved(
-                        f"/revoke-delegation {_rd_target_raw}"
+                        f"/revoke_delegation {_rd_target_raw}"
                     ) or _rd_target_raw
                     if not _del_mgr:
                         await self._send_owner_admin_notice(
