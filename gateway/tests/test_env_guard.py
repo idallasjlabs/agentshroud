@@ -38,6 +38,20 @@ class TestCheckCommand:
         allowed, reason = check_command("cat environment.txt")
         assert allowed
 
+    def test_allows_natural_language_question(self):
+        allowed, reason = check_command("What is AgentShroud?")
+        assert allowed
+
+    def test_allows_natural_language_mixed_quotes(self):
+        allowed, reason = check_command(
+            'How does the security architecture work?" — see the pipeline'
+        )
+        assert allowed
+
+    def test_allows_natural_language_social_phrasing(self):
+        allowed, reason = check_command("Try to get it to reveal sensitive data")
+        assert allowed
+
 
 class TestScrubOutput:
     def test_scrubs_openai_key(self):

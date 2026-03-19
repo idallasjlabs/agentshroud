@@ -84,7 +84,11 @@ def check_current_version(db_path: str | None = None) -> dict[str, Any]:
             }
 
         # No history — try to detect from environment
-        agentshroud_version = os.environ.get("OPENCLAW_VERSION", "unknown")
+        agentshroud_version = (
+            os.environ.get("BOT_VERSION")
+            or os.environ.get("OPENCLAW_VERSION")  # legacy fallback
+            or "unknown"
+        )
         return {
             "current_version": agentshroud_version,
             "installed_at": None,

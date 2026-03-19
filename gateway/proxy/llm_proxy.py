@@ -1,33 +1,36 @@
 # Copyright © 2026 Isaiah Dallas Jefferson, Jr. AgentShroud™. All rights reserved.
 """
-LLM API Reverse Proxy — intercepts all OpenClaw ↔ Anthropic traffic.
+LLM API Reverse Proxy — intercepts all OpenClaw ↔ (Anthropic/OpenAI/Google) traffic.
 
-Sits between OpenClaw and the Anthropic API, enabling:
+Sits between OpenClaw and the LLM APIs, enabling:
 - Inbound: User messages in the prompt are scanned (PII redaction, injection defense)
 - Outbound: LLM responses are filtered (credential blocking, XML stripping, canary detection)
 - Audit: Every API call is logged to the security ledger
-
-OpenClaw connects to http://gateway:8080/v1/messages instead of https://api.anthropic.com/v1/messages
-via ANTHROPIC_BASE_URL env var.
 """
 from __future__ import annotations
 
 import asyncio
 import json
 import logging
-import ssl
+import os
 import time
+import ssl
 import urllib.request
 import urllib.error
-from typing import Any, Optional
+from typing import Any
 
 logger = logging.getLogger("agentshroud.proxy.llm_api")
 
 ANTHROPIC_API_BASE = "https://api.anthropic.com"
+OPENAI_API_BASE = "https://api.openai.com"
+GOOGLE_API_BASE = "https://generativelanguage.googleapis.com"
+OLLAMA_API_BASE = "http://host.docker.internal:11434"
+MAIN_MODEL = os.environ.get("AGENTSHROUD_LOCAL_MODEL", "qwen2.5-coder:7b")
+MODEL_MODE = os.environ.get("AGENTSHROUD_MODEL_MODE", "local").lower()
 
 
 class LLMProxy:
-    """Proxies Anthropic API calls through the security pipeline."""
+    """Proxies LLM API calls (Anthropic, OpenAI, Google) through the security pipeline."""
 
     def __init__(self, pipeline=None, middleware_manager=None, sanitizer=None):
         self.pipeline = pipeline
@@ -40,6 +43,9 @@ class LLMProxy:
             "pii_redacted": 0,
             "injections_blocked": 0,
             "responses_filtered": 0,
+            "streaming_responses_scanned": 0,
+            "streaming_responses_blocked": 0,
+            "streaming_responses_redacted": 0,
         }
 
     def get_stats(self) -> dict:
@@ -50,53 +56,80 @@ class LLMProxy:
         path: str,
         body: bytes,
         headers: dict[str, str],
+        user_id: str = "unknown",
     ) -> tuple[int, dict, bytes]:
-        """Proxy a /v1/messages (or any /v1/*) request to Anthropic.
+        """Proxy an LLM API request.
         
         Returns (status_code, response_headers, response_body).
-        For /v1/messages: scans user messages for PII and injection.
-        For streaming: passes through (content filtering on non-stream responses).
+        Automatically detects provider (Anthropic, OpenAI, Google) based on path or headers.
         """
         self._stats["total_requests"] += 1
 
-        # Parse the request body for /v1/messages
-        is_messages = "/messages" in path
+        # Determine provider
+        is_openai = "/v1/chat/completions" in path or "/v1/completions" in path
+        is_google = "/v1beta" in path or "google" in path.lower()
+        is_ollama_native = "/api/" in path
+        
         request_data = None
-        if is_messages and body:
+        if body:
             try:
                 request_data = json.loads(body)
             except (json.JSONDecodeError, UnicodeDecodeError):
                 pass
 
-        # === INBOUND SCANNING: Scan user messages ===
-        if request_data and "messages" in request_data:
-            messages = request_data["messages"]
-            for i, msg in enumerate(messages):
-                if msg.get("role") != "user":
-                    continue
-                
-                content = msg.get("content", "")
-                if isinstance(content, list):
-                    # Multi-part content (text + images)
-                    for part in content:
-                        if isinstance(part, dict) and part.get("type") == "text":
-                            part["text"] = await self._scan_inbound(part["text"])
-                elif isinstance(content, str):
-                    messages[i]["content"] = await self._scan_inbound(content)
+        # Detect Ollama (local model)
+        model_name = request_data.get("model", "") if request_data else ""
+        local_keywords = ["qwen", "llama", "mistral", "deepseek", "phi", "ollama"]
+        
+        # INTERCEPT: If the system tries to use Claude Opus, force it to use Ollama Phi4
+        if MODEL_MODE != "cloud" and "claude-opus" in model_name.lower():
+            logger.info(f"LLMProxy: Intercepted internal Claude Opus request, forcing {MAIN_MODEL}")
+            if request_data:
+                request_data["model"] = MAIN_MODEL
+                body = json.dumps(request_data).encode()
+            model_name = MAIN_MODEL
 
-            request_data["messages"] = messages
+        is_ollama = is_ollama_native or any(k in model_name.lower() for k in local_keywords) or model_name.startswith("ollama/")
+
+        # Normalize Ollama model references for OpenAI-compatible endpoints.
+        # OpenClaw may emit model IDs like "ollama/qwen2.5-coder:7b", but
+        # Ollama's OpenAI-compatible API expects bare model names.
+        if is_ollama and request_data and isinstance(model_name, str) and model_name.startswith("ollama/"):
+            request_data["model"] = model_name.split("/", 1)[1]
+            model_name = request_data["model"]
+
+        # === INBOUND SCANNING: Scan user messages ===
+        if request_data:
+            await self._scan_request_data(request_data, user_id)
             body = json.dumps(request_data).encode()
 
-        # === FORWARD TO ANTHROPIC ===
-        url = f"{ANTHROPIC_API_BASE}{path}"
+        # Determine provider base URL
+        base_url = ANTHROPIC_API_BASE
+        if is_ollama:
+            base_url = OLLAMA_API_BASE
+        elif is_openai:
+            base_url = OPENAI_API_BASE
+        elif is_google:
+            base_url = GOOGLE_API_BASE
+
+        url = f"{base_url}{path}"
         
         # Check if streaming
         is_streaming = request_data and request_data.get("stream", False)
         
         try:
-            status, resp_headers, resp_body = await self._forward_to_anthropic(
+            status, resp_headers, resp_body = await self._forward_request(
                 url, body, headers
             )
+        except TimeoutError as e:
+            logger.error(f"LLM proxy timeout: {e}")
+            fallback_body = self._build_timeout_fallback_response(
+                is_openai=is_openai,
+                is_google=is_google,
+                is_ollama=is_ollama,
+                model_name=model_name or (request_data or {}).get("model", ""),
+            )
+            return 200, {"content-type": "application/json"}, fallback_body
         except Exception as e:
             logger.error(f"LLM proxy error: {e}")
             error_resp = json.dumps({
@@ -105,13 +138,43 @@ class LLMProxy:
             }).encode()
             return 502, {"content-type": "application/json"}, error_resp
 
-        # === OUTBOUND FILTERING (non-streaming only) ===
+        # === OUTBOUND FILTERING ===
         if not is_streaming and status == 200 and resp_body:
             resp_body = await self._filter_outbound(resp_body)
+        elif is_streaming and status == 200 and resp_body:
+            # Streaming responses are fully buffered by urllib before delivery
+            resp_body = await self._filter_outbound_streaming(resp_body, user_id=user_id)
 
         return status, resp_headers, resp_body
 
-    async def _scan_inbound(self, text: str) -> str:
+    async def _scan_request_data(self, request_data: dict, user_id: str):
+        """Scan request data for PII and injection across different provider formats."""
+        # Anthropic/OpenAI format
+        if "messages" in request_data:
+            messages = request_data["messages"]
+            for i, msg in enumerate(messages):
+                if msg.get("role") == "user":
+                    content = msg.get("content", "")
+                    if isinstance(content, str):
+                        messages[i]["content"] = await self._scan_inbound(content, user_id=user_id)
+                    elif isinstance(content, list):
+                        for part in content:
+                            if isinstance(part, dict) and part.get("type") == "text":
+                                part["text"] = await self._scan_inbound(part["text"], user_id=user_id)
+        
+        # Google Gemini format
+        if "contents" in request_data:
+            for content in request_data["contents"]:
+                if content.get("role") == "user":
+                    for part in content.get("parts", []):
+                        if "text" in part:
+                            part["text"] = await self._scan_inbound(part["text"], user_id=user_id)
+
+        # Ollama Native Chat/Generate format
+        if "prompt" in request_data and isinstance(request_data["prompt"], str):
+            request_data["prompt"] = await self._scan_inbound(request_data["prompt"], user_id=user_id)
+
+    async def _scan_inbound(self, text: str, user_id: str = "unknown") -> str:
         """Scan inbound user message text for PII and injection."""
         if not text:
             return text
@@ -129,15 +192,17 @@ class LLMProxy:
             except Exception as e:
                 logger.error(f"LLM proxy PII scan error: {e}")
 
-        # Middleware checks (injection detection, context guard, etc.)
-        if self.middleware_manager:
+        # Middleware checks (injection detection, context guard, etc.).
+        # Some model-provider calls do not carry end-user identity headers.
+        # Avoid enforcing RBAC/context middleware on "unknown" synthetic IDs.
+        if self.middleware_manager and user_id != "unknown":
             try:
                 request_data = {
                     "message": text,
                     "content_type": "text",
                     "source": "llm_proxy",
                     "headers": {},
-                    "user_id": "unknown",  # We don't have user context at this level
+                    "user_id": user_id,
                 }
                 result = await self.middleware_manager.process_request(request_data, "llm_proxy")
                 if not result.allowed:
@@ -153,55 +218,232 @@ class LLMProxy:
         """Filter outbound LLM response for credential leaks and XML."""
         try:
             data = json.loads(resp_body)
-            content = data.get("content", [])
+            
+            # Anthropic/OpenAI response formats differ
             modified = False
+            
+            # Anthropic
+            if "content" in data and isinstance(data["content"], list):
+                for i, block in enumerate(data["content"]):
+                    if block.get("type") == "text":
+                        text = block.get("text", "")
+                        filtered, was_f = await self._apply_filters(text)
+                        if was_f:
+                            data["content"][i]["text"] = filtered
+                            modified = True
 
-            for i, block in enumerate(content):
-                if block.get("type") != "text":
-                    continue
-                text = block.get("text", "")
-                if not text:
-                    continue
-
-                # XML leak filter
-                if self.sanitizer:
-                    filtered, was_filtered = self.sanitizer.filter_xml_blocks(text)
-                    if was_filtered:
-                        content[i]["text"] = filtered
-                        modified = True
-                        self._stats["responses_filtered"] += 1
-                        logger.info("LLM proxy: XML blocks stripped from response")
-
-                    # Credential blocking
-                    blocked, was_blocked = await self.sanitizer.block_credentials(
-                        content[i]["text"], "telegram"
-                    )
-                    if was_blocked:
-                        content[i]["text"] = blocked
-                        modified = True
-                        self._stats["responses_filtered"] += 1
-                        logger.warning("LLM proxy: credentials blocked in response")
+            # OpenAI
+            if "choices" in data and isinstance(data["choices"], list):
+                for i, choice in enumerate(data["choices"]):
+                    if "message" in choice and "content" in choice["message"]:
+                        text = choice["message"]["content"]
+                        filtered, was_f = await self._apply_filters(text)
+                        if was_f:
+                            data["choices"][i]["message"]["content"] = filtered
+                            modified = True
 
             if modified:
-                data["content"] = content
                 return json.dumps(data).encode()
         except Exception as e:
             logger.error(f"LLM proxy outbound filter error: {e}")
 
         return resp_body
 
-    async def _forward_to_anthropic(
+    @staticmethod
+    def _build_timeout_fallback_response(
+        *,
+        is_openai: bool,
+        is_google: bool,
+        is_ollama: bool,
+        model_name: str,
+    ) -> bytes:
+        """Build provider-compatible timeout fallback message to avoid silent Telegram failures."""
+        fallback_text = (
+            "⏳ Model response timed out before completion. "
+            "Please retry in 10–20 seconds. "
+            "If this repeats, switch model profile with scripts/switch_model.sh "
+            "(for example: openai or local llama3.1:8b)."
+        )
+        now = int(time.time())
+
+        if is_google:
+            return json.dumps(
+                {
+                    "candidates": [
+                        {
+                            "content": {"parts": [{"text": fallback_text}], "role": "model"},
+                            "finishReason": "STOP",
+                            "index": 0,
+                        }
+                    ]
+                }
+            ).encode()
+
+        if is_openai or is_ollama:
+            return json.dumps(
+                {
+                    "id": f"chatcmpl-agentshroud-timeout-{now}",
+                    "object": "chat.completion",
+                    "created": now,
+                    "model": model_name or "agentshroud-timeout-fallback",
+                    "choices": [
+                        {
+                            "index": 0,
+                            "message": {"role": "assistant", "content": fallback_text},
+                            "finish_reason": "stop",
+                        }
+                    ],
+                }
+            ).encode()
+
+        # Anthropic-compatible fallback
+        return json.dumps(
+            {
+                "id": f"msg_agentshroud_timeout_{now}",
+                "type": "message",
+                "role": "assistant",
+                "model": model_name or "agentshroud-timeout-fallback",
+                "content": [{"type": "text", "text": fallback_text}],
+                "stop_reason": "end_turn",
+                "stop_sequence": None,
+                "usage": {"input_tokens": 0, "output_tokens": 0},
+            }
+        ).encode()
+
+    async def _apply_filters(self, text: str) -> tuple[str, bool]:
+        """Apply XML and credential filters to text."""
+        if not text or not self.sanitizer:
+            return text, False
+            
+        modified = False
+        # XML leak filter
+        filtered, was_filtered = self.sanitizer.filter_xml_blocks(text)
+        if was_filtered:
+            text = filtered
+            modified = True
+            self._stats["responses_filtered"] += 1
+
+        # Credential blocking
+        blocked, was_blocked = await self.sanitizer.block_credentials(text, "telegram")
+        if was_blocked:
+            text = blocked
+            modified = True
+            self._stats["responses_filtered"] += 1
+            
+        return text, modified
+
+    async def _filter_outbound_streaming(self, resp_body: bytes, user_id: str = "unknown") -> bytes:
+        """Filter buffered SSE-like streaming responses for XML/credential leaks."""
+        del user_id  # reserved for per-user telemetry in future revisions
+
+        try:
+            text = resp_body.decode("utf-8")
+        except UnicodeDecodeError:
+            return resp_body
+
+        if "data:" not in text:
+            return resp_body
+
+        modified_any = False
+        out_lines: list[str] = []
+
+        for line in text.splitlines(keepends=False):
+            if not line.startswith("data:"):
+                out_lines.append(line)
+                continue
+
+            payload = line[5:].lstrip()
+            if payload == "[DONE]":
+                out_lines.append(line)
+                continue
+
+            try:
+                event = json.loads(payload)
+            except json.JSONDecodeError:
+                out_lines.append(line)
+                continue
+
+            modified_event = await self._filter_streaming_event(event)
+            if modified_event is not event:
+                modified_any = True
+            out_lines.append(f"data: {json.dumps(modified_event, separators=(',', ':'))}")
+
+        if not modified_any:
+            return resp_body
+
+        self._stats["streaming_responses_scanned"] += 1
+        return ("\n".join(out_lines) + "\n").encode("utf-8")
+
+    async def _filter_streaming_event(self, event: dict[str, Any]) -> dict[str, Any]:
+        """Apply outbound text filters to known streaming response formats."""
+        modified = False
+        event_copy = dict(event)
+
+        # OpenAI-style: choices[].delta.content / choices[].message.content
+        choices = event_copy.get("choices")
+        if isinstance(choices, list):
+            new_choices = []
+            for choice in choices:
+                if not isinstance(choice, dict):
+                    new_choices.append(choice)
+                    continue
+
+                new_choice = dict(choice)
+                delta = new_choice.get("delta")
+                if isinstance(delta, dict) and isinstance(delta.get("content"), str):
+                    filtered, changed = await self._apply_filters(delta["content"])
+                    if changed:
+                        delta = dict(delta)
+                        delta["content"] = filtered
+                        new_choice["delta"] = delta
+                        modified = True
+
+                message = new_choice.get("message")
+                if isinstance(message, dict) and isinstance(message.get("content"), str):
+                    filtered, changed = await self._apply_filters(message["content"])
+                    if changed:
+                        message = dict(message)
+                        message["content"] = filtered
+                        new_choice["message"] = message
+                        modified = True
+
+                new_choices.append(new_choice)
+            event_copy["choices"] = new_choices
+
+        # Anthropic-like event chunks: content[].text
+        content_blocks = event_copy.get("content")
+        if isinstance(content_blocks, list):
+            new_blocks = []
+            for block in content_blocks:
+                if not isinstance(block, dict):
+                    new_blocks.append(block)
+                    continue
+                new_block = dict(block)
+                if new_block.get("type") == "text" and isinstance(new_block.get("text"), str):
+                    filtered, changed = await self._apply_filters(new_block["text"])
+                    if changed:
+                        new_block["text"] = filtered
+                        modified = True
+                new_blocks.append(new_block)
+            event_copy["content"] = new_blocks
+
+        if modified:
+            self._stats["streaming_responses_redacted"] += 1
+            return event_copy
+        return event
+
+    async def _forward_request(
         self, url: str, body: bytes, headers: dict[str, str]
     ) -> tuple[int, dict, bytes]:
-        """Forward request to real Anthropic API."""
-        # Filter headers — pass through auth and content type
+        """Forward request to the real LLM API provider."""
         forward_headers = {}
+        allowed_headers = (
+            "authorization", "x-api-key", "anthropic-version", "anthropic-beta",
+            "content-type", "accept", "user-agent", "x-goog-api-key"
+        )
+        
         for key, value in headers.items():
-            lower = key.lower()
-            if lower in (
-                "authorization", "x-api-key", "anthropic-version",
-                "anthropic-beta", "content-type", "accept",
-            ):
+            if key.lower() in allowed_headers:
                 forward_headers[key] = value
 
         req = urllib.request.Request(url, data=body, headers=forward_headers)

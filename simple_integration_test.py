@@ -3,13 +3,11 @@
 Simple integration test to verify security modules are wired correctly.
 """
 
-import sys
 import os
+import sys
 
-# Simple test to verify the modules are properly integrated
 def test_integration():
-    print("Testing security module integration...")
-    
+    """Verify key security modules are wired into the proxy."""
     try:
         # Import the web proxy module
         sys.path.append(os.path.join(os.path.dirname(__file__)))
@@ -32,11 +30,7 @@ def test_integration():
         ]
         
         for imp in required_imports:
-            if imp in content:
-                print(f"✓ Import found: {imp}")
-            else:
-                print(f"✗ Import missing: {imp}")
-                return False
+            assert imp in content, f"Import missing: {imp}"
         
         # Check security module instantiation
         security_inits = [
@@ -47,11 +41,7 @@ def test_integration():
         ]
         
         for init in security_inits:
-            if init in content:
-                print(f"✓ Module instantiation found: {init}")
-            else:
-                print(f"✗ Module instantiation missing: {init}")
-                return False
+            assert init in content, f"Module instantiation missing: {init}"
         
         # Check security checks are wired
         security_checks = [
@@ -62,11 +52,7 @@ def test_integration():
         ]
         
         for check in security_checks:
-            if check in content:
-                print(f"✓ Security check found: {check}")
-            else:
-                print(f"✗ Security check missing: {check}")
-                return False
+            assert check in content, f"Security check missing: {check}"
         
         # Check error handling
         error_patterns = [
@@ -76,23 +62,13 @@ def test_integration():
         ]
         
         for pattern in error_patterns:
-            if pattern in content:
-                print(f"✓ Error handling pattern found: {pattern}")
-            else:
-                print(f"✗ Error handling pattern missing: {pattern}")
-                return False
-        
-        print("\n✓ All integration checks passed!")
-        return True
-        
+            assert pattern in content, f"Error handling pattern missing: {pattern}"
+
     except Exception as e:
-        print(f"✗ Integration test failed: {e}")
-        return False
+        raise AssertionError(f"Integration test failed: {e}") from e
 
 def test_security_flow():
     """Test the security flow with mock data."""
-    print("\nTesting security flow...")
-    
     try:
         # Check that DNS filter check happens before SSRF check
         with open('gateway/proxy/web_proxy.py', 'r') as f:
@@ -101,47 +77,33 @@ def test_security_flow():
         dns_pos = content.find('DNS Security Check')
         ssrf_pos = content.find('Hard block: SSRF')
         
-        if dns_pos != -1 and ssrf_pos != -1 and dns_pos < ssrf_pos:
-            print("✓ DNS check occurs before SSRF check")
-        else:
-            print("✗ DNS check positioning incorrect")
-            return False
+        assert dns_pos != -1 and ssrf_pos != -1 and dns_pos < ssrf_pos, (
+            "DNS check positioning incorrect"
+        )
             
         # Check that browser security check is conditional on user agent
-        if 'user_agent' in content and 'User-Agent' in content:
-            print("✓ Browser security check is user-agent conditional")
-        else:
-            print("✗ Browser security check not properly conditional")
-            return False
+        assert 'user_agent' in content and 'User-Agent' in content, (
+            "Browser security check not properly conditional"
+        )
             
         # Check that OAuth check looks for auth headers
-        if 'Authorization' in content and 'auth' in content.lower():
-            print("✓ OAuth security check looks for auth headers")
-        else:
-            print("✗ OAuth security check not properly implemented")
-            return False
+        assert 'Authorization' in content and 'auth' in content.lower(), (
+            "OAuth security check not properly implemented"
+        )
             
         # Check that egress monitoring is in scan_response
         egress_in_scan = 'scan_response' in content and content.find('Egress Monitoring') > content.find('def scan_response')
-        if egress_in_scan:
-            print("✓ Egress monitoring is in scan_response method")
-        else:
-            print("✗ Egress monitoring not in scan_response method")
-            return False
-            
-        print("✓ All security flow checks passed!")
-        return True
-        
+        assert egress_in_scan, "Egress monitoring not in scan_response method"
+
     except Exception as e:
-        print(f"✗ Security flow test failed: {e}")
-        return False
+        raise AssertionError(f"Security flow test failed: {e}") from e
 
 if __name__ == '__main__':
-    success = test_integration() and test_security_flow()
-    
-    if success:
+    try:
+        test_integration()
+        test_security_flow()
         print("\n🎉 All tests passed! Security modules are properly integrated.")
         sys.exit(0)
-    else:
+    except AssertionError:
         print("\n❌ Some tests failed. Check the output above.")
         sys.exit(1)

@@ -97,12 +97,13 @@ class PromptProtection:
             re.compile(r'parameters.*required.*type.*string', re.IGNORECASE),
         ]
         
-        # Infrastructure patterns
+        # Infrastructure patterns — targeted only; no generic hostname pattern to avoid
+        # false positives on filenames like "file.py" or "test.md".
         self.infrastructure_patterns = [
-            re.compile(r'\b([a-zA-Z0-9-]+\.([a-zA-Z0-9-]+\.)*[a-zA-Z]{2,})\b'),  # hostnames
             re.compile(r'\b((\d{1,3}\.){3}\d{1,3})\b'),  # IP addresses
             re.compile(r'\b([a-zA-Z0-9-]+\.tailscale\.net)\b', re.IGNORECASE),
-            re.compile(r'\b(marvin|agentshroud-bot|openclaw)\b', re.IGNORECASE),
+            # Deployment hostnames are registered dynamically via register_bot_hostnames().
+            # No hardcoded host patterns here — they cause false positives on common words.
         ]
         
         # User ID patterns
@@ -187,44 +188,44 @@ class PromptProtection:
         # Scan for file references
         for pattern in self.file_patterns:
             for match in pattern.finditer(redacted_text):
-                redacted_text = self._redact_match(redacted_text, match, "[FILE_REFERENCE_REDACTED]")
                 redactions.append(("file_reference", match.start(), match.end()))
                 risk_score += 15.0
-                
+            redacted_text = pattern.sub("[CONTENT]", redacted_text)
+
         # Scan for structural patterns
         for pattern in self.structure_patterns:
             for match in pattern.finditer(redacted_text):
-                redacted_text = self._redact_match(redacted_text, match, "[STRUCTURE_REDACTED]")
                 redactions.append(("structural_pattern", match.start(), match.end()))
                 risk_score += 20.0
-                
+            redacted_text = pattern.sub("[STRUCTURE_REDACTED]", redacted_text)
+
         # Scan for tool inventory disclosure
         for pattern in self.tool_patterns:
             for match in pattern.finditer(redacted_text):
-                redacted_text = self._redact_match(redacted_text, match, "[TOOL_INFO_REDACTED]")
                 redactions.append(("tool_inventory", match.start(), match.end()))
                 risk_score += 10.0
-                
+            redacted_text = pattern.sub("[TOOL_INFO_REDACTED]", redacted_text)
+
         # Scan for infrastructure details
         for pattern in self.infrastructure_patterns:
             for match in pattern.finditer(redacted_text):
-                redacted_text = self._redact_match(redacted_text, match, "[INFRASTRUCTURE_REDACTED]")
                 redactions.append(("infrastructure", match.start(), match.end()))
                 risk_score += 25.0
-                
+            redacted_text = pattern.sub("[INFRASTRUCTURE_REDACTED]", redacted_text)
+
         # Scan for user ID patterns
         for pattern in self.user_id_patterns:
             for match in pattern.finditer(redacted_text):
-                redacted_text = self._redact_match(redacted_text, match, "[USER_ID_REDACTED]")
                 redactions.append(("user_id", match.start(), match.end()))
                 risk_score += 30.0
-                
+            redacted_text = pattern.sub("[USER_ID_REDACTED]", redacted_text)
+
         # Scan for credential patterns
         for pattern in self.credential_patterns:
             for match in pattern.finditer(redacted_text):
-                redacted_text = self._redact_match(redacted_text, match, "[CREDENTIAL_REDACTED]")
                 redactions.append(("credential", match.start(), match.end()))
                 risk_score += 40.0
+            redacted_text = pattern.sub("[CREDENTIAL_REDACTED]", redacted_text)
                 
         # Fuzzy matching against protected content
         for protected in self.protected_content:
@@ -271,6 +272,24 @@ class PromptProtection:
         confidence = int(similarity * 100)
         return f"[PROTECTED_CONTENT_DETECTED_SIMILARITY_{confidence}%]".strip()
         
+    def register_bot_hostnames(self, hostnames: list[str]) -> None:
+        """Add bot container hostnames to the infrastructure detection patterns.
+
+        Called at gateway startup after bots are loaded from config so that
+        bot-specific hostnames (e.g. "openclaw", "nanobot") are dynamically
+        redacted from responses without hardcoding them here.
+
+        Args:
+            hostnames: List of BotConfig.hostname values to protect.
+        """
+        if not hostnames:
+            return
+        pattern_str = r'\b(' + '|'.join(re.escape(h) for h in hostnames) + r')\b'
+        self.infrastructure_patterns.append(
+            re.compile(pattern_str, re.IGNORECASE)
+        )
+        logger.info("PromptProtection: registered bot hostnames: %s", hostnames)
+
     def get_protection_stats(self) -> Dict[str, Any]:
         """Get statistics about the protection system."""
         total_patterns = sum(len(pc.patterns) for pc in self.protected_content)

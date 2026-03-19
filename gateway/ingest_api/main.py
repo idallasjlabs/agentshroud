@@ -18,25 +18,26 @@ Entry point for the gateway API. Wires together all components:
 
 import fnmatch
 import hashlib
+import json
 import logging
 import os
+import re
 import subprocess
 import time
-from contextlib import asynccontextmanager
 from datetime import datetime, timezone
 import hmac
 from typing import Annotated, Optional
 
 from fastapi import Depends, FastAPI, HTTPException, Query, Request, WebSocket, status
-from pydantic import BaseModel
+from pydantic import BaseModel, Field
 from fastapi.responses import JSONResponse, HTMLResponse
 from starlette.responses import RedirectResponse
 from pathlib import Path
 
-from ..approval_queue.enhanced_queue import EnhancedApprovalQueue
 from .auth import create_auth_dependency
 from .config import GatewayConfig, load_config, get_module_mode, check_monitor_mode_warnings
-from .ledger import DataLedger
+from .lifespan import lifespan, _read_secret
+from .state import app_state
 from .models import (
     ApprovalDecision,
     ApprovalQueueItem,
@@ -51,9 +52,12 @@ from .models import (
     SSHExecResponse,
     StatusResponse,
 )
+from .routes.health import router as health_router
+from .routes.forward import router as forward_router
+from .routes.approval import router as approval_router
+from .routes.dashboard import router as dashboard_router
 from ..ssh_proxy.proxy import SSHProxy
 from .router import ForwardError, MultiAgentRouter
-from .sanitizer import PIISanitizer
 from ..security.prompt_guard import PromptGuard
 from ..security.trust_manager import TrustManager, TrustLevel
 from ..security.egress_filter import EgressFilter
@@ -65,23 +69,38 @@ from ..proxy.mcp_proxy import MCPProxy, MCPToolCall, MCPToolResult
 from ..proxy.mcp_config import MCPProxyConfig
 from ..proxy.web_config import WebProxyConfig
 from ..proxy.telegram_proxy import TelegramAPIProxy
+from ..proxy.slack_proxy import SlackAPIProxy
 from ..proxy.web_proxy import WebProxy
 from ..proxy.webhook_receiver import WebhookReceiver
 from ..proxy.pipeline import SecurityPipeline
 from gateway.security.session_manager import UserSessionManager
 from ..web.api import router as management_api_router
 from ..security.killswitch_monitor import KillSwitchMonitor
+from ..security.rbac_config import RBACConfig
 from ..web.management import router as management_dashboard_router
 from ..web.dashboard_endpoints import router as dashboard_api_router, install_log_handler
 from .version_routes import router as version_router
+import ipaddress as _ipaddress
 
-# === Credential Isolation (P2) ===
+# Module-level IP allowlists for proxy endpoints (parsed once, not per-request).
+# Defaults to the prod isolated subnet. Override via PROXY_ALLOWED_NETWORKS env var
+# (comma-separated CIDRs) to support alternate deployments (e.g. dev on 172.21.0.0/16).
+# Loopback (127.0.0.0/8) is always included regardless of the env var.
+_PROXY_ALLOWED_NETWORKS = [
+    _ipaddress.ip_network(cidr.strip())
+    for cidr in os.environ.get(
+        "PROXY_ALLOWED_NETWORKS",
+        "10.254.111.0/24,10.254.112.0/24,172.11.0.0/16",
+    ).split(",")
+    if cidr.strip()
+] + [_ipaddress.ip_network("127.0.0.0/8")]
 
 # Allowed op:// reference patterns for the gateway op-proxy.
 # Uses fnmatch glob syntax: * matches any characters within a path segment.
 # Add entries here when the bot legitimately needs access to a new secret.
 _ALLOWED_OP_PATHS: list[str] = [
     "op://Agent Shroud Bot Credentials/*/*",
+    "op://AgentShroud Bot Credentials/*/*",
 ]
 
 
@@ -98,10 +117,22 @@ def _is_op_reference_allowed(reference: str) -> bool:
     return False
 
 
+# iMessage MCP server constants (P5: channel ownership)
+_IMESSAGE_SERVER = "mac-messages"
+_IMESSAGE_SEND_TOOL = "tool_send_message"
+
+
+def _is_imessage_recipient_allowed(recipient: str, allowed: list[str]) -> bool:
+    """Return True if the recipient is in the allowlist."""
+    if not allowed:
+        return False
+    return any(fnmatch.fnmatch(recipient, pattern) for pattern in allowed)
+
+
 class OpProxyRequest(BaseModel):
     """Request body for POST /credentials/op-proxy."""
 
-    reference: str  # e.g. "op://AgentShroud Bot Credentials/API Keys/openai"
+    reference: str = Field(..., max_length=500)  # e.g. "op://AgentShroud Bot Credentials/API Keys/openai"
 
 
 # Configure logging
@@ -116,480 +147,15 @@ logger = logging.getLogger("agentshroud.gateway.main")
 # === Application State ===
 
 
-class AppState:
-    """Container for application-wide state"""
-
-    config: GatewayConfig
-    sanitizer: PIISanitizer
-    ledger: DataLedger
-    router: MultiAgentRouter
-    approval_queue: ApprovalQueue
-    prompt_guard: PromptGuard
-    trust_manager: TrustManager
-    egress_filter: EgressFilter
-    mcp_proxy: Optional[MCPProxy]
-    pipeline: Optional[SecurityPipeline]
-    session_manager: Optional[UserSessionManager]
-    start_time: float
-    event_bus: EventBus
-    http_proxy: Optional[HTTPConnectProxy]
-
-
-app_state = AppState()
-
-
-# === Lifespan Management ===
-
-
-@asynccontextmanager
-async def lifespan(app: FastAPI):
-    """FastAPI lifespan - startup and shutdown"""
-
-    # === STARTUP ===
-    logger.info("=" * 80)
-    logger.info("AgentShroud Gateway starting up...")
-
-    # Load 1Password service account token first — bot op-proxy calls depend on it
-    # being available as early as possible to minimize startup race window.
-    _op_token_file = os.getenv("OP_SERVICE_ACCOUNT_TOKEN_FILE")
-    if _op_token_file and not os.getenv("OP_SERVICE_ACCOUNT_TOKEN"):
-        try:
-            os.environ["OP_SERVICE_ACCOUNT_TOKEN"] = Path(_op_token_file).read_text().strip()
-            logger.info("1Password service account token loaded")
-        except OSError as e:
-            logger.warning(f"Could not load 1Password service account token: {e}")
-
-    # Pre-warm 1Password CLI (cold start takes >60s, subsequent calls <2s)
-    if os.getenv("OP_SERVICE_ACCOUNT_TOKEN"):
-        import threading
-
-        def _prewarm_op():
-            try:
-                subprocess.run(
-                    ["op", "whoami"],
-                    capture_output=True, text=True, timeout=120,
-                )
-                logger.info("1Password CLI pre-warmed successfully")
-            except Exception as e:
-                logger.warning(f"1Password CLI pre-warm failed (non-fatal): {e}")
-
-        threading.Thread(target=_prewarm_op, daemon=True).start()
-        logger.info("1Password CLI pre-warm started (background)")
-
-    # Load configuration
-    try:
-        app_state.config = load_config()
-        logger.info("Configuration loaded successfully")
-        # Check for monitor mode warnings
-        check_monitor_mode_warnings(app_state.config, logger)
-    except Exception as e:
-        logger.critical(f"Failed to load configuration: {e}")
-        raise
-
-    # Set log level from config
-    logging.getLogger().setLevel(app_state.config.log_level)
-    logger.info(f"CORS configured with origins: {app_state.config.cors_origins}")
-
-    # Initialize PII sanitizer
-    try:
-        sanitizer_mode = get_module_mode(app_state.config, "pii_sanitizer")
-        sanitizer_action = app_state.config.security.pii_sanitizer.action or "redact"
-        app_state.sanitizer = PIISanitizer(app_state.config.pii, mode=sanitizer_mode, action=sanitizer_action)
-        logger.info(
-            f"PII sanitizer initialized (mode: {app_state.sanitizer.get_mode()}, action: {sanitizer_action})"
-        )
-    except Exception as e:
-        logger.critical(f"Failed to initialize PII sanitizer: {e}")
-        raise
-
-    # Initialize data ledger
-    try:
-        app_state.ledger = DataLedger(app_state.config.ledger)
-        await app_state.ledger.initialize()
-        logger.info("Data ledger initialized")
-    except Exception as e:
-        logger.critical(f"Failed to initialize data ledger: {e}")
-        raise
-
-    # Initialize router
-    try:
-        app_state.router = MultiAgentRouter(app_state.config.router)
-        logger.info("Multi-agent router initialized")
-    except Exception as e:
-        logger.critical(f"Failed to initialize router: {e}")
-        raise
-
-    # Initialize approval queue
-    try:
-        from ..approval_queue.store import ApprovalStore
-        import tempfile
-        _data_dir = os.environ.get("AGENTSHROUD_DATA_DIR", tempfile.gettempdir())
-        _approval_db = os.path.join(_data_dir, "agentshroud_approvals.db")
-        store = ApprovalStore(_approval_db)
-        app_state.approval_queue = EnhancedApprovalQueue(
-            app_state.config.approval_queue, 
-            app_state.config.tool_risk,
-            store
-        )
-        await app_state.approval_queue.initialize()
-        logger.info(f"Enhanced approval queue initialized (enforce_mode={app_state.config.tool_risk.enforce_mode})")
-    except Exception as e:
-        logger.critical(f"Failed to initialize approval queue: {e}")
-        raise
-
-    # Initialize security components
-    try:
-        prompt_guard_mode = get_module_mode(app_state.config, "prompt_guard")
-        # Set thresholds based on mode - in monitor mode, set very high threshold so nothing blocks
-        block_threshold = 999.0 if prompt_guard_mode == "monitor" else 0.8
-        warn_threshold = 999.0 if prompt_guard_mode == "monitor" else 0.4
-        app_state.prompt_guard = PromptGuard(block_threshold=block_threshold, warn_threshold=warn_threshold)
-        logger.info("PromptGuard initialized")
-    except Exception as e:
-        logger.critical(f"Failed to initialize PromptGuard: {e}")
-        raise
-
-    try:
-        app_state.trust_manager = TrustManager()
-        app_state.trust_manager.register_agent("default")
-        # Elevate default agent to STANDARD so internal API calls work
-        app_state.trust_manager._conn.execute(
-            "UPDATE trust_scores SET score = 200, level = ? WHERE agent_id = ?",
-            (int(TrustLevel.STANDARD), "default")
-        )
-        app_state.trust_manager._conn.commit()
-        logger.info("TrustManager initialized")
-    except Exception as e:
-        logger.critical(f"Failed to initialize TrustManager: {e}")
-        raise
-
-    try:
-        egress_mode = get_module_mode(app_state.config, "egress_filter")
-        # Create default policy with required domains for AgentShroud operation
-        from ..security.egress_filter import EgressPolicy
-        default_policy = EgressPolicy(
-            allowed_domains=[
-                "api.anthropic.com",
-                "api.openai.com",
-                "imap.gmail.com",
-                "smtp.gmail.com",
-                "*.googleapis.com",
-                "api.telegram.org"
-            ] + app_state.config.proxy_allowed_domains,
-            deny_all=(egress_mode == "enforce")
-        )
-        app_state.egress_filter = EgressFilter(default_policy=default_policy)
-        logger.info(f"EgressFilter initialized (mode: {egress_mode}, deny_all: {default_policy.deny_all})")
-    except Exception as e:
-        logger.critical(f"Failed to initialize EgressFilter: {e}")
-        raise
-    # Initialize P1 middleware manager
-    try:
-        app_state.middleware_manager = MiddlewareManager()
-        logger.info("P1 MiddlewareManager initialized")
-    except Exception as e:
-        logger.critical(f"Failed to initialize MiddlewareManager: {e}")
-        raise
-
-    # Configure middleware with tool result PII scanning
-    try:
-        app_state.middleware_manager.set_config(app_state.config)
-        logger.info("Middleware configured with tool result PII scanning")
-    except Exception as e:
-        logger.error(f"Failed to configure middleware: {e}")
-    # Wire log sanitizer into Python logging
-    try:
-        log_sanitizer = app_state.middleware_manager.get_log_sanitizer()
-        if log_sanitizer:
-            # Add the log sanitizer filter to all handlers
-            for handler in logging.getLogger().handlers:
-                handler.addFilter(log_sanitizer)
-            logger.info("Log sanitizer wired into logging system")
-        else:
-            logger.warning("Log sanitizer not available - logging may contain sensitive data")
-    except Exception as e:
-        logger.warning(f"Failed to wire log sanitizer: {e}")
-
-
-    # Initialize outbound information filter
-    try:
-        app_state.outbound_filter = OutboundInfoFilter(getattr(app_state.config, "outbound_filter", None))
-        logger.info(f"Outbound information filter initialized (mode: {app_state.outbound_filter.mode})")
-    except Exception as e:
-        logger.critical(f"Failed to initialize outbound information filter: {e}")
-        raise
-
-    # Initialize security pipeline
-    app_state.pipeline = SecurityPipeline(
-        prompt_guard=app_state.prompt_guard,
-        pii_sanitizer=app_state.sanitizer,
-        trust_manager=app_state.trust_manager,
-        egress_filter=app_state.egress_filter,
-        approval_queue=app_state.approval_queue,
-        outbound_filter=app_state.outbound_filter,
-    )
-    logger.info("Security pipeline initialized")
-
-    # Initialize per-user session manager for session isolation
-    try:
-        base_workspace = Path("/home/node/.openclaw/workspace")
-        # TODO: Load owner_user_id from config - for now use a default
-        owner_user_id = getattr(app_state.config, 'owner_user_id', '1234567890') if app_state.config else '1234567890'
-        app_state.session_manager = UserSessionManager(
-            base_workspace=base_workspace,
-            owner_user_id=owner_user_id
-        )
-        logger.info("UserSessionManager initialized")
-    except Exception as e:
-        logger.error(f"Failed to initialize UserSessionManager: {e}")
-        app_state.session_manager = None
-
-    # ══════════════════════════════════════════════════════════════════
-    # P3 — Background & Infrastructure Security Modules
-    # All modules fully configured with real binaries and data paths.
-    # ══════════════════════════════════════════════════════════════════
-    import shutil
-    from pathlib import Path as _Path
-
-    # Create required directories (tmpfs in containers, /tmp fallback in tests)
-    _security_dirs = [
-        "/tmp/security/alerts", "/tmp/security/clamav",
-        "/tmp/security/trivy", "/tmp/security/falco",
-        "/tmp/security/wazuh", "/tmp/security/canary",
-        "/tmp/security/drift",
-    ]
-    for _d in _security_dirs:
-        try:
-            _Path(_d).mkdir(parents=True, exist_ok=True)
-        except OSError:
-            pass
-
-    # Data directories — /app/data in container, /tmp/agentshroud-data in tests
-    _data_dir = _Path("/app/data")
-    try:
-        _data_dir.mkdir(parents=True, exist_ok=True)
-    except OSError:
-        _data_dir = _Path("/tmp/agentshroud-data")
-        _data_dir.mkdir(parents=True, exist_ok=True)
-    (_data_dir / "baselines").mkdir(parents=True, exist_ok=True)
-
-    # -- AlertDispatcher: routes security findings to logging --
-    try:
-        from ..security.alert_dispatcher import AlertDispatcher
-        app_state.alert_dispatcher = AlertDispatcher(
-            alert_log=_Path("/tmp/security/alerts/alerts.jsonl")
-        )
-        logger.info("✓ AlertDispatcher → /tmp/security/alerts/alerts.jsonl")
-    except Exception as e:
-        logger.error(f"✗ AlertDispatcher: {e}")
-        app_state.alert_dispatcher = None
-
-    # -- KillSwitchMonitor: automated kill switch verification and heartbeat monitoring --
-    try:
-        app_state.killswitch_monitor = KillSwitchMonitor(
-            alert_dispatcher=app_state.alert_dispatcher
-        )
-        logger.info("✓ KillSwitchMonitor → kill switch verification and anomaly detection enabled")
-    except Exception as e:
-        logger.error(f"✗ KillSwitchMonitor: {e}")
-        app_state.killswitch_monitor = None
-
-    # -- DriftDetector: detects config changes from baseline --
-    try:
-        from ..security.drift_detector import DriftDetector
-        app_state.drift_detector = DriftDetector(
-            db_path=str(_data_dir / "drift.db"),
-        )
-        logger.info("✓ DriftDetector → %s/drift.db", _data_dir)
-    except Exception as e:
-        logger.error(f"✗ DriftDetector: {e}")
-        app_state.drift_detector = None
-
-    # -- HealthReport: aggregates security posture from all modules --
-    try:
-        from ..security import health_report as _health_mod
-        app_state.health_report = _health_mod
-        logger.info("✓ HealthReport module loaded")
-    except Exception as e:
-        logger.error(f"✗ HealthReport: {e}")
-        app_state.health_report = None
-
-    # -- EncryptedStore: AES-256-GCM encryption for ledger entries --
-    try:
-        from ..security.encrypted_store import EncryptedStore
-        _master = os.getenv("OPENCLAW_GATEWAY_PASSWORD", "") or os.getenv("GATEWAY_AUTH_TOKEN", "")
-        if not _master:
-            try:
-                _master = open("/run/secrets/gateway_password").read().strip()
-            except OSError:
-                pass
-        if _master:
-            app_state.encrypted_store = EncryptedStore(master_secret=_master)
-            logger.info("✓ EncryptedStore (AES-256-GCM)")
-        else:
-            app_state.encrypted_store = None
-            logger.warning("✗ EncryptedStore: no master secret")
-    except Exception as e:
-        logger.error(f"✗ EncryptedStore: {e}")
-        app_state.encrypted_store = None
-
-    # -- KeyVault: secure credential storage with audit trail --
-    try:
-        from ..security.key_vault import KeyVault, KeyVaultConfig
-        app_state.key_vault = KeyVault(KeyVaultConfig())
-
-        logger.info("✓ KeyVault initialized")
-    except Exception as e:
-        logger.error(f"✗ KeyVault: {e}")
-        app_state.key_vault = None
-
-    # -- Canary: integrity checks on critical files --
-    try:
-        from ..security.canary import run_canary
-        app_state.canary_runner = run_canary
-        app_state.canary_targets = [
-            "/app/agentshroud.yaml",
-            "/usr/local/bin/trivy",
-            "/run/secrets/gateway_password",
-        ]
-        logger.info("✓ Canary (3 integrity targets registered)")
-    except Exception as e:
-        logger.error(f"✗ Canary: {e}")
-        app_state.canary_runner = None
-
-    # -- ClamAV: antivirus file scanning --
-    try:
-        from ..security import clamav_scanner as _clamav_mod
-        _clam_bin = shutil.which("clamscan")
-        app_state.clamav_scanner = _clamav_mod
-        if _clam_bin:
-            logger.info("✓ ClamAV scanner (%s)", _clam_bin)
-        else:
-            logger.warning("⚠ ClamAV module loaded but clamscan not in PATH")
-    except Exception as e:
-        logger.error(f"✗ ClamAV: {e}")
-        app_state.clamav_scanner = None
-
-    # -- Trivy: container/image vulnerability scanning --
-    try:
-        from ..security import trivy_report as _trivy_mod
-        _trivy_bin = shutil.which("trivy")
-        app_state.trivy_scanner = _trivy_mod
-        if _trivy_bin:
-            logger.info("✓ Trivy scanner (%s)", _trivy_bin)
-        else:
-            logger.warning("⚠ Trivy module loaded but trivy not in PATH")
-    except Exception as e:
-        logger.error(f"✗ Trivy: {e}")
-        app_state.trivy_scanner = None
-
-    # -- Falco: runtime security monitoring (reads JSON alert files) --
-    try:
-        from ..security import falco_monitor as _falco_mod
-        app_state.falco_monitor = _falco_mod
-        logger.info("✓ Falco monitor (alerts: /tmp/security/falco)")
-    except Exception as e:
-        logger.error(f"✗ Falco monitor: {e}")
-        app_state.falco_monitor = None
-
-    # -- Wazuh: host intrusion detection (reads alert files) --
-    try:
-        from ..security import wazuh_client as _wazuh_mod
-        app_state.wazuh_client = _wazuh_mod
-        logger.info("✓ Wazuh client (alerts: /tmp/security/wazuh)")
-    except Exception as e:
-        logger.error(f"✗ Wazuh client: {e}")
-        app_state.wazuh_client = None
-
-    # -- NetworkValidator: Docker/container network security --
-    try:
-        from ..security.network_validator import NetworkValidator
-        app_state.network_validator = NetworkValidator()
-        logger.info("✓ NetworkValidator")
-    except Exception as e:
-        logger.info("✓ NetworkValidator (static mode — Docker socket not available)")
-        app_state.network_validator = None
-
-    # Initialize MCP proxy — load server registry from agentshroud.yaml mcp_proxy section
-    mcp_mode = get_module_mode(app_state.config, "mcp_proxy")
-    mcp_proxy_config = (
-        MCPProxyConfig.from_dict(app_state.config.mcp_proxy_data)
-        if app_state.config.mcp_proxy_data
-        else MCPProxyConfig()
-    )
-    # In enforce mode, enable all security scanning
-    if mcp_mode == "enforce":
-        mcp_proxy_config.pii_scan_enabled = True
-        mcp_proxy_config.injection_scan_enabled = True
-        mcp_proxy_config.audit_enabled = True
-    app_state.mcp_proxy = MCPProxy(config=mcp_proxy_config, approval_queue=app_state.approval_queue)
-    logger.info(
-        f"MCP proxy initialized (mode: {mcp_mode}): {len(mcp_proxy_config.servers)} server(s) registered"
-    )
-
-    # Initialize SSH proxy
-    if app_state.config.ssh.enabled:
-        app_state.ssh_proxy = SSHProxy(app_state.config.ssh)
-        logger.info("SSH proxy initialized")
-    else:
-        app_state.ssh_proxy = None
-
-    # Initialize event bus
-    app_state.event_bus = EventBus()
-    logger.info("Event bus initialized")
-
-    # Initialize HTTP CONNECT proxy (port 8181)
-    # Activated in the FINAL PR by setting HTTP_PROXY on the bot container.
-    # Running it now adds zero risk — the bot doesn't use it until then.
-    try:
-        # Use allowed_domains from agentshroud.yaml (proxy.allowed_domains),
-        # falling back to the hardcoded default if the YAML section is absent.
-        _proxy_domains = app_state.config.proxy_allowed_domains or ALLOWED_DOMAINS
-        _web_proxy = WebProxy(config=WebProxyConfig(mode="allowlist", allowed_domains=_proxy_domains))
-        app_state.http_proxy = HTTPConnectProxy(web_proxy=_web_proxy)
-        await app_state.http_proxy.start()
-        logger.info("HTTP CONNECT proxy started on port 8181")
-    except Exception as e:
-        logger.warning(f"HTTP CONNECT proxy failed to start: {e} (continuing)")
-        app_state.http_proxy = None
-
-    # Record start time
-    app_state.start_time = time.time()
-
-    install_log_handler()
-    logger.info(
-        f"AgentShroud Gateway ready at {app_state.config.bind}:{app_state.config.port}"
-    )
-    logger.info("=" * 80)
-
-    yield
-
-    # === SHUTDOWN ===
-    logger.info("AgentShroud Gateway shutting down...")
-
-    # Stop HTTP CONNECT proxy
-    if getattr(app_state, "http_proxy", None):
-        await app_state.http_proxy.stop()
-
-    # Close ledger
-
-    # Close approval queue
-    if hasattr(app_state, "approval_queue") and app_state.approval_queue:
-        await app_state.approval_queue.close()
-        logger.info("Approval queue closed")
-    await app_state.ledger.close()
-
-    logger.info("Shutdown complete")
-
-
-# === Application ===
-
 app = FastAPI(
     title="AgentShroud Gateway",
     description="Ingest API for the AgentShroud proxy layer framework",
-    version="0.5.0",
+    version="0.8.0",
     lifespan=lifespan,
 )
+
+# Make app_state available via request.app.state for extracted route files
+app.state.app_state = app_state
 
 # === Dependency: Authentication ===
 
@@ -609,6 +175,10 @@ AuthRequired = Annotated[None, Depends(auth_dep)]
 
 
 
+app.include_router(health_router)
+app.include_router(forward_router)
+app.include_router(approval_router)
+app.include_router(dashboard_router)
 # Mount management API (has its own Bearer auth on each endpoint)
 app.include_router(management_api_router)
 app.include_router(dashboard_api_router)
@@ -655,6 +225,25 @@ async def cors_middleware(request: Request, call_next):
     return response
 
 
+# === Request Body Size Middleware ===
+# Declared after CORS so it executes before CORS in the Starlette LIFO chain.
+# Rejects bodies >1MB before Pydantic ever parses them, preventing OOM attacks.
+
+_MAX_BODY_SIZE = 1_048_576  # 1 MB
+
+
+@app.middleware("http")
+async def limit_request_body(request: Request, call_next):
+    """Reject request bodies larger than 1MB before parsing."""
+    content_length = request.headers.get("content-length")
+    if content_length and int(content_length) > _MAX_BODY_SIZE:
+        return JSONResponse(
+            status_code=413,
+            content={"detail": "Request body too large (max 1MB)"},
+        )
+    return await call_next(request)
+
+
 # === Request Logging Middleware ===
 
 
@@ -674,6 +263,25 @@ async def log_requests(request: Request, call_next):
         f"({duration:.3f}s)"
     )
 
+    return response
+
+
+# === Global Security Headers Middleware (R3-L1) ===
+
+
+@app.middleware("http")
+async def security_headers_middleware(request: Request, call_next):
+    """Add security headers to all responses (defense-in-depth)."""
+    response = await call_next(request)
+    # Only add if not already set (allow per-route overrides like CSP)
+    if "X-Content-Type-Options" not in response.headers:
+        response.headers["X-Content-Type-Options"] = "nosniff"
+    if "X-Frame-Options" not in response.headers:
+        response.headers["X-Frame-Options"] = "DENY"
+    if "Cache-Control" not in response.headers:
+        response.headers["Cache-Control"] = "no-store"
+    if "Referrer-Policy" not in response.headers:
+        response.headers["Referrer-Policy"] = "strict-origin-when-cross-origin"
     return response
 
 
@@ -700,21 +308,26 @@ async def global_exception_handler(request: Request, exc: Exception):
 
 
 @app.get("/", response_class=HTMLResponse)
-async def system_control():
+async def system_control(auth: AuthRequired):
     """System Control - Live Dashboard
 
     Shows real-time system status with links to controls.
+    Authentication required.
     """
     uptime = time.time() - app_state.start_time
     stats = await app_state.ledger.get_stats()
     pending = await app_state.approval_queue.get_pending()
+
+    # R2-M4: Generate nonce for inline script/style CSP
+    import secrets as _secrets
+    nonce = _secrets.token_urlsafe(16)
 
     html = f"""<!DOCTYPE html>
 <html>
 <head>
     <title>AgentShroud Control</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style>
+    <style nonce="{nonce}">
         body {{ font-family: monospace; background: #1a1a1a; color: #e0e0e0; padding: 2rem; }}
         .container {{ max-width: 1200px; margin: 0 auto; }}
         h1 {{ color: #4ade80; }}
@@ -735,7 +348,7 @@ async def system_control():
 
         <div class="status">
             <h2 class="healthy">● System Status: HEALTHY</h2>
-            <div class="metric">Version: 0.5.0</div>
+            <div class="metric">Version: 0.8.0</div>
             <div class="metric">Uptime: {int(uptime)}s</div>
             <div class="metric">PII Engine: {app_state.sanitizer.get_mode()}</div>
         </div>
@@ -774,73 +387,28 @@ async def system_control():
             <h2>🔗 Access</h2>
             <div class="status">
                 <p>Local: <code>http://localhost:8080</code></p>
-                <p>Tailscale: <code>http://100.90.175.83:8080</code></p>
+                <p>Tailscale: <code>[redacted]</code></p>
             </div>
         </div>
     </div>
 
-    <script>
+    <script nonce="{nonce}">
         // Auto-refresh every 30 seconds
         setTimeout(() => location.reload(), 30000);
     </script>
 </body>
 </html>"""
-    return HTMLResponse(html)
-
-
-@app.get("/status", response_model=StatusResponse)
-async def health_check():
-    """Health check endpoint
-
-    No authentication required.
-    """
-    uptime = time.time() - app_state.start_time
-    stats = await app_state.ledger.get_stats()
-    pending = await app_state.approval_queue.get_pending()
-
-    # Observatory mode state
-    obs_mode = getattr(app_state, 'observatory_mode', {
-        'global_mode': 'enforce', 'effective_since': None, 'auto_revert_at': None
-    })
-
-    # Egress stats
-    egress_queue = getattr(app_state, 'egress_approval_queue', None)
-    egress_pending = 0
-    egress_rules = 0
-    if egress_queue:
-        try:
-            egress_pending = len(egress_queue._pending_requests)
-            egress_rules = len(egress_queue._rules.get('allow', [])) + len(egress_queue._rules.get('deny', []))
-        except Exception:
-            pass
-
-    return StatusResponse(
-        status="healthy",
-        version="0.8.0",
-        uptime_seconds=uptime,
-        ledger_entries=stats.get("total_entries", 0),
-        pending_approvals=len(pending),
-        pii_engine=app_state.sanitizer.get_mode(),
-        config_loaded=True,
-        observatory_mode={
-            "global_mode": obs_mode.get("global_mode", "enforce"),
-            "effective_since": obs_mode.get("effective_since"),
-            "auto_revert_at": obs_mode.get("auto_revert_at"),
-        },
-        security_summary={
-            "modules_active": 33,
-            "modules_enforcing": 33 if obs_mode.get("global_mode") == "enforce" else 0,
-            "modules_monitoring": 0 if obs_mode.get("global_mode") == "enforce" else 33,
-            "blocked_today": stats.get("blocked_today", 0),
-            "canary_status": "green",
-        },
-        egress={
-            "pending_approvals": egress_pending,
-            "rules_count": egress_rules,
-            "blocked_today": 0,
-            "allowed_today": 0,
-        },
+    # R2-M4: Add CSP and security headers to root endpoint (matching dashboard)
+    response = HTMLResponse(html)
+    response.headers["Content-Security-Policy"] = (
+        f"default-src 'none'; script-src 'nonce-{nonce}'; "
+        f"style-src 'nonce-{nonce}'; connect-src 'self'; "
+        "frame-ancestors 'none'; base-uri 'none'; form-action 'self'"
     )
+    response.headers["X-Content-Type-Options"] = "nosniff"
+    response.headers["X-Frame-Options"] = "DENY"
+    response.headers["Referrer-Policy"] = "strict-origin-when-cross-origin"
+    return response
 
 
 @app.get("/proxy/status")
@@ -877,7 +445,7 @@ async def op_proxy(request: OpProxyRequest, auth: AuthRequired):
     # Validate op:// format
     if not reference.startswith("op://"):
         raise HTTPException(
-            status_code=status.HTTP_422_UNPROCESSABLE_CONTENT,
+            status_code=status.HTTP_422_UNPROCESSABLE_ENTITY,
             detail="reference must start with op://",
         )
 
@@ -889,14 +457,54 @@ async def op_proxy(request: OpProxyRequest, auth: AuthRequired):
             detail="op:// reference not in allowed paths",
         )
 
-    # Call op read on the gateway (requires OP_SERVICE_ACCOUNT_TOKEN env var)
-    try:
-        result = subprocess.run(
-            ["op", "read", reference],
-            capture_output=True,
-            text=True,
-            timeout=90,  # 1Password cold start can take >60s
+    # Call op read using the personal-credential session token.
+    # On session expiry, re-authenticate once and retry.
+    def _do_op_read(session: str):
+        return subprocess.run(
+            ["op", "read", "--session", session, reference],
+            capture_output=True, text=True, timeout=90,
         )
+
+    def _refresh_session() -> "str | None":
+        """Re-run the same sign-in logic used at startup."""
+        secrets = "/run/secrets"
+        try:
+            email    = Path(f"{secrets}/1password_bot_email").read_text().strip()
+            password = Path(f"{secrets}/1password_bot_master_password").read_text().strip()
+            key_path = Path(f"{secrets}/1password_bot_secret_key")
+            key      = key_path.read_text().strip() if key_path.exists() else ""
+        except OSError:
+            return None
+        if key:
+            r = subprocess.run(
+                ["op", "account", "add", "--address", "my.1password.com",
+                 "--email", email, "--secret-key", key, "--signin", "--raw"],
+                input=password, capture_output=True, text=True, timeout=120,
+            )
+            if r.returncode == 0 and r.stdout.strip():
+                return r.stdout.strip()
+        r = subprocess.run(
+            ["op", "signin", "--raw"],
+            input=password, capture_output=True, text=True, timeout=60,
+        )
+        return r.stdout.strip() if r.returncode == 0 else None
+
+    session = os.environ.get("OP_SESSION", "")
+    if not session:
+        logger.error("op-proxy: 1Password session not available")
+        raise HTTPException(
+            status_code=status.HTTP_503_SERVICE_UNAVAILABLE,
+            detail="1Password not authenticated",
+        )
+
+    try:
+        result = _do_op_read(session)
+        if result.returncode != 0:
+            # Session may have expired — re-authenticate once and retry
+            new_session = _refresh_session()
+            if new_session:
+                os.environ["OP_SESSION"] = new_session
+                result = _do_op_read(new_session)
     except subprocess.TimeoutExpired:
         logger.error("op-proxy: 1Password read timed out")
         raise HTTPException(
@@ -934,8 +542,34 @@ class MCPProxyRequest(BaseModel):
     agent_id: str = "default"
 
 
+def _normalize_agent_identity(candidate: str) -> str:
+    """Validate and normalize agent/user identity used for policy checks."""
+    value = (candidate or "").strip()
+    if not value:
+        return "default"
+    if len(value) > 64:
+        raise HTTPException(status_code=400, detail="Invalid agent identity")
+    if not re.match(r"^[a-zA-Z0-9_-]+$", value):
+        raise HTTPException(status_code=400, detail="Invalid agent identity")
+    return value
+
+
+def _resolve_effective_agent_id(header_user_id: str, body_agent_id: str) -> str:
+    """Resolve trusted effective identity and prevent owner spoofing via body."""
+    header_user_id = (header_user_id or "").strip()
+    body_agent_id = (body_agent_id or "").strip()
+    owner_id = str(RBACConfig().owner_user_id)
+
+    if not header_user_id and body_agent_id == owner_id:
+        raise HTTPException(
+            status_code=400,
+            detail="Body agent_id cannot impersonate owner without trusted user header",
+        )
+    return _normalize_agent_identity(header_user_id or body_agent_id)
+
+
 @app.post("/mcp/proxy", status_code=status.HTTP_200_OK)
-async def mcp_proxy_endpoint(request: MCPProxyRequest, auth: AuthRequired):
+async def mcp_proxy_endpoint(payload: MCPProxyRequest, http_request: Request, auth: AuthRequired):
     """MCP tool call interception endpoint.
 
     Receives an MCP tool call, runs it through the security inspector
@@ -954,8 +588,8 @@ async def mcp_proxy_endpoint(request: MCPProxyRequest, auth: AuthRequired):
 
     # iMessage recipient allowlist (P5: iMessage channel ownership).
     # Checked before security inspection so unknown recipients never reach the tool.
-    if request.server_name == _IMESSAGE_SERVER and request.tool_name == _IMESSAGE_SEND_TOOL:
-        recipient = request.parameters.get("to", "")
+    if payload.server_name == _IMESSAGE_SERVER and payload.tool_name == _IMESSAGE_SEND_TOOL:
+        recipient = payload.parameters.get("to", "")
         config = getattr(app_state, "config", None)
         allowed = config.channels.imessage_allowed_recipients if config else []
         if not _is_imessage_recipient_allowed(recipient, allowed):
@@ -966,9 +600,9 @@ async def mcp_proxy_endpoint(request: MCPProxyRequest, auth: AuthRequired):
                     description=f"Send iMessage to {recipient}",
                     details={
                         "to": recipient,
-                        "body": str(request.parameters.get("body", ""))[:200],
+                        "body": str(payload.parameters.get("body", ""))[:200],
                     },
-                    agent_id=request.agent_id,
+                    agent_id=payload.agent_id,
                 )
                 item = await approval_queue.submit(approval_req)
                 logger.info(f"imessage-send: queued for approval (id={item.request_id})")
@@ -981,20 +615,32 @@ async def mcp_proxy_endpoint(request: MCPProxyRequest, auth: AuthRequired):
                 detail="iMessage recipient not in allowlist and no approval queue available",
             )
 
+    # Enforce agent identity from trusted proxy header when present.
+    # Prevents body-level spoofing of owner/admin identities.
+    header_user_id = (http_request.headers.get("x-agentshroud-user-id") or "").strip()
+    if header_user_id and header_user_id != payload.agent_id:
+        logger.warning(
+            "MCP proxy identity override: header user id differs from body agent_id "
+            "(header=%s body=%s)",
+            header_user_id,
+            payload.agent_id,
+        )
+    effective_agent_id = _resolve_effective_agent_id(header_user_id, payload.agent_id)
+
     tool_call = MCPToolCall(
         id="",  # auto-generated in __post_init__
-        server_name=request.server_name,
-        tool_name=request.tool_name,
-        parameters=request.parameters,
-        agent_id=request.agent_id,
+        server_name=payload.server_name,
+        tool_name=payload.tool_name,
+        parameters=payload.parameters,
+        agent_id=effective_agent_id,
     )
 
     result = await proxy.process_tool_call(tool_call, execute=False)
 
     if result.blocked:
         logger.warning(
-            f"MCP proxy blocked tool call: server={request.server_name} "
-            f"tool={request.tool_name} agent={request.agent_id} "
+            f"MCP proxy blocked tool call: server={payload.server_name} "
+            f"tool={payload.tool_name} agent={effective_agent_id} "
             f"reason={result.block_reason}"
         )
         raise HTTPException(
@@ -1024,7 +670,7 @@ class MCPResultRequest(BaseModel):
 
 
 @app.post("/mcp/result", status_code=status.HTTP_200_OK)
-async def mcp_result_endpoint(request: MCPResultRequest, auth: AuthRequired):
+async def mcp_result_endpoint(payload: MCPResultRequest, http_request: Request, auth: AuthRequired):
     """MCP tool result outbound audit endpoint.
 
     Receives a tool result from the bot's mcp-proxy-wrapper.js after the actual
@@ -1042,13 +688,22 @@ async def mcp_result_endpoint(request: MCPResultRequest, auth: AuthRequired):
         )
 
     tool_result = MCPToolResult(
-        call_id=request.call_id,
-        server_name=request.server_name,
-        tool_name=request.tool_name,
-        content=request.content,
+        call_id=payload.call_id,
+        server_name=payload.server_name,
+        tool_name=payload.tool_name,
+        content=payload.content,
     )
 
-    result = await proxy.process_tool_result(tool_result, agent_id=request.agent_id)
+    header_user_id = (http_request.headers.get("x-agentshroud-user-id") or "").strip()
+    if header_user_id and header_user_id != payload.agent_id:
+        logger.warning(
+            "MCP result identity override: header user id differs from body agent_id "
+            "(header=%s body=%s)",
+            header_user_id,
+            payload.agent_id,
+        )
+    effective_agent_id = _resolve_effective_agent_id(header_user_id, payload.agent_id)
+    result = await proxy.process_tool_result(tool_result, agent_id=effective_agent_id)
 
     return {
         "audit_entry_id": result.audit_entry_id,
@@ -1070,26 +725,6 @@ async def mcp_result_endpoint(request: MCPResultRequest, auth: AuthRequired):
 
 # Allowed recipient list for email_send — add addresses as needed.
 # Empty list = all recipients require approval queue.
-_EMAIL_ALLOWED_RECIPIENTS: list[str] = [
-    # Fill in trusted addresses; unknown recipients always go to approval queue.
-]
-
-
-def _is_email_recipient_allowed(address: str) -> bool:
-    """Return True if the email address is on the pre-approved recipient list."""
-    return address.lower().strip() in {r.lower() for r in _EMAIL_ALLOWED_RECIPIENTS}
-
-
-# iMessage channel ownership (P5)
-_IMESSAGE_SERVER = "mac-messages"
-_IMESSAGE_SEND_TOOL = "tool_send_message"
-
-
-def _is_imessage_recipient_allowed(recipient: str, allowed: list[str]) -> bool:
-    """Return True if the iMessage recipient is on the pre-approved list."""
-    return recipient.strip() in {r.strip() for r in allowed}
-
-
 @app.post("/webhook/telegram")
 async def telegram_webhook(request: Request, auth: AuthRequired):
     """Telegram inbound webhook (P3: channel ownership).
@@ -1114,351 +749,6 @@ async def telegram_webhook(request: Request, auth: AuthRequired):
     return result
 
 
-@app.post("/email/send", status_code=status.HTTP_200_OK)
-async def email_send(request: EmailSendRequest, auth: AuthRequired):
-    """Email send gateway (P3: channel ownership).
-
-    The bot submits email send requests here instead of calling Gmail directly.
-    Controls:
-    - PII scan on body (redacts before logging)
-    - Recipient allowlist: known addresses return 200 (approved)
-    - Unknown recipients: submitted to approval queue → 202 (queued)
-
-    Authentication required.
-    """
-    now = datetime.now(timezone.utc).isoformat().replace("+00:00", "Z")
-
-    # PII scan on body
-    sanitizer = getattr(app_state, "sanitizer", None)
-    pii_redacted = False
-    sanitized_body = request.body
-    if sanitizer:
-        try:
-            scan = sanitizer.sanitize(request.body)
-            sanitized_body = scan.sanitized_content
-            pii_redacted = len(scan.redactions) > 0
-            if pii_redacted:
-                logger.warning(
-                    f"email-send: PII redacted from body ({len(scan.redactions)} items)"
-                )
-        except Exception as e:
-            logger.warning(f"email-send: PII scan failed ({e}), proceeding with original body")
-
-    # Recipient allowlist check
-    if _is_email_recipient_allowed(request.to):
-        logger.info("email-send: approved for allowed recipient")
-        return EmailSendResponse(
-            status="approved",
-            sanitized_body=sanitized_body,
-            pii_redacted=pii_redacted,
-            timestamp=now,
-        )
-
-    # Unknown recipient → queue for approval
-    approval_queue = getattr(app_state, "approval_queue", None)
-    if approval_queue:
-        approval_req = ApprovalRequest(
-            action_type="email_sending",
-            description=f"Send email to {request.to}: {request.subject}",
-            details={
-                "to": request.to,
-                "subject": request.subject,
-                "body": sanitized_body,
-                "pii_redacted": pii_redacted,
-            },
-            agent_id=request.agent_id,
-        )
-        item = await approval_queue.submit(approval_req)
-        logger.info(f"email-send: queued for approval (id={item.request_id})")
-        from fastapi.responses import JSONResponse as _JSONResponse
-        return _JSONResponse(
-            status_code=status.HTTP_202_ACCEPTED,
-            content=EmailSendResponse(
-                status="queued",
-                sanitized_body=sanitized_body,
-                pii_redacted=pii_redacted,
-                approval_id=item.request_id,
-                timestamp=now,
-            ).model_dump(),
-        )
-
-    # No approval queue available (e.g. during startup or tests) — block send
-    logger.warning("email-send: unknown recipient blocked (no approval queue available)")
-    raise HTTPException(
-        status_code=status.HTTP_403_FORBIDDEN,
-        detail="Recipient not in allowlist and no approval queue available",
-    )
-
-
-@app.post(
-    "/forward", response_model=ForwardResponse, status_code=status.HTTP_201_CREATED
-)
-async def forward_content(request: ForwardRequest, auth: AuthRequired):
-    """Main ingest endpoint
-
-    Receives data from iOS Shortcuts, browser extension, or API.
-    Sanitizes PII, logs to ledger, and forwards to agent.
-
-    Authentication required.
-    """
-    logger.info(
-        f"Ingest request: source={request.source}, "
-        f"type={request.content_type}, size={len(request.content)}"
-    )
-
-    # Step 0: P1 Middleware Security Processing
-    middleware_manager = getattr(app_state, "middleware_manager", None)
-    if middleware_manager:
-        try:
-            # Prepare request data for middleware processing
-            request_data = {
-                "message": request.content,
-                "content_type": request.content_type,
-                "source": request.source,
-                "headers": {},  # Add headers if available in request
-                "user_id": getattr(request, "user_id", None) or getattr(request, "source", "anonymous")
-            }
-
-            # Process through middleware
-            middleware_result = await middleware_manager.process_request(request_data, "unknown")
-
-            if not middleware_result.allowed:
-                logger.warning(f"Middleware blocked request: {middleware_result.reason}")
-                raise HTTPException(
-                    status_code=status.HTTP_403_FORBIDDEN,
-                    detail=f"Request blocked by middleware: {middleware_result.reason}"
-                )
-
-            # If middleware modified the request, update it
-            if middleware_result.modified_request:
-                if "message" in middleware_result.modified_request:
-                    request.content = middleware_result.modified_request["message"]
-                logger.info("Request modified by middleware")
-
-        except HTTPException:
-            # Re-raise HTTP exceptions (these are intentional blocks)
-            raise
-        except Exception as e:
-            logger.error(f"Middleware processing error: {e}")
-            # Fail closed - block request on middleware error
-            raise HTTPException(
-                status_code=status.HTTP_500_INTERNAL_SERVER_ERROR,
-                detail="Middleware processing failed. Request blocked for safety."
-            )
-    else:
-        logger.warning("MiddlewareManager not available - middleware security checks skipped")
-
-    # Step 1: Run through security pipeline (injection scan + PII sanitization + audit)
-    pipeline = getattr(app_state, "pipeline", None)
-    audit_entry_id: str = ""
-    audit_hash: str = ""
-    prompt_score: float = 0.0
-    if pipeline:
-        try:
-            pipeline_result = await pipeline.process_inbound(
-                message=request.content,
-                agent_id="default",
-                action="send_message",
-                source=request.source,
-            )
-        except Exception as e:
-            logger.error(f"Security pipeline failed: {e}")
-            raise HTTPException(
-                status_code=status.HTTP_500_INTERNAL_SERVER_ERROR,
-                detail="Content security check failed. Request blocked for safety.",
-            )
-        if pipeline_result.blocked:
-            logger.warning(
-                f"Pipeline blocked request: {pipeline_result.block_reason} "
-                f"(source={request.source})"
-            )
-            raise HTTPException(
-                status_code=status.HTTP_400_BAD_REQUEST,
-                detail=f"Request blocked: {pipeline_result.block_reason}",
-            )
-        if pipeline_result.queued_for_approval:
-            return JSONResponse(
-                status_code=status.HTTP_202_ACCEPTED,
-                content={"status": "queued", "approval_id": pipeline_result.approval_id},
-            )
-        sanitized_content = pipeline_result.sanitized_message
-        sanitized = pipeline_result.pii_redaction_count > 0
-        entity_types_found = pipeline_result.pii_redactions
-        redaction_count = pipeline_result.pii_redaction_count
-        audit_entry_id = pipeline_result.audit_entry_id
-        audit_hash = pipeline_result.audit_hash
-        prompt_score = pipeline_result.prompt_score
-    else:
-        # Fallback: inline PII sanitization (no pipeline available)
-        try:
-            sanitization_result = await app_state.sanitizer.sanitize(request.content)
-        except Exception as e:
-            logger.error(f"PII sanitization failed: {e}")
-            raise HTTPException(
-                status_code=status.HTTP_500_INTERNAL_SERVER_ERROR,
-                detail="Content sanitization failed. Request blocked for safety.",
-            )
-        sanitized_content = sanitization_result.sanitized_content
-        sanitized = len(sanitization_result.redactions) > 0
-        entity_types_found = sanitization_result.entity_types_found
-        redaction_count = len(sanitization_result.redactions)
-
-    # Step 2: Resolve routing target
-    try:
-        target = await app_state.router.resolve_target(request)
-    except Exception as e:
-        logger.error(f"Routing failed: {e}")
-        raise HTTPException(
-            status_code=status.HTTP_500_INTERNAL_SERVER_ERROR,
-            detail="Failed to resolve routing target",
-        )
-
-    # Step 3: Forward to agent
-    forwarded_to = target.name
-    agent_response = None
-    try:
-        agent_response = await app_state.router.forward_to_agent(
-            target=target,
-            sanitized_content=sanitized_content,
-            ledger_id="pending",  # Will be updated with actual ID
-            metadata={
-                "source": request.source,
-                "content_type": request.content_type,
-                **request.metadata,
-            },
-        )
-        logger.info(f"Content forwarded to {target.name}")
-        logger.info(f"DEBUG: agent_response = {agent_response}")
-
-    except ForwardError as e:
-        # Agent offline - log but continue (graceful degradation)
-        logger.warning(f"Forward failed: {e}. Content logged but not delivered.")
-        forwarded_to = f"{target.name} (offline)"
-
-    # Step 4: Record in ledger
-    try:
-        ledger_entry = await app_state.ledger.record(
-            source=request.source,
-            content=sanitized_content,
-            original_content=request.content,
-            sanitized=sanitized,
-            redaction_count=redaction_count,
-            redaction_types=entity_types_found,
-            forwarded_to=forwarded_to,
-            content_type=request.content_type,
-            metadata=request.metadata,
-        )
-    except Exception as e:
-        logger.error(f"Ledger recording failed: {e}")
-        # Non-critical - content was already forwarded
-        # But we should still notify
-        raise HTTPException(
-            status_code=status.HTTP_500_INTERNAL_SERVER_ERROR,
-            detail="Failed to record in ledger",
-        )
-
-    # Emit forward event
-    await app_state.event_bus.emit(
-        make_event(
-            "forward",
-            f"Content forwarded from {request.source} to {forwarded_to}",
-            {
-                "source": request.source,
-                "content_type": request.content_type,
-                "forwarded_to": forwarded_to,
-            },
-            "warning" if sanitized else "info",
-        )
-    )
-    if sanitized:
-        await app_state.event_bus.emit(
-            make_event(
-                "pii_detected",
-                f"{redaction_count} PII entities redacted",
-                {
-                    "types": entity_types_found,
-                    "count": redaction_count,
-                },
-                "warning",
-            )
-        )
-
-    # Step 5: Return response
-    response_data = {
-        "id": ledger_entry.id,
-        "sanitized": sanitized,
-        "redactions": entity_types_found,
-        "redaction_count": redaction_count,
-        "content_hash": ledger_entry.content_hash,
-        "forwarded_to": forwarded_to,
-        "timestamp": ledger_entry.timestamp,
-        "audit_entry_id": audit_entry_id or None,
-        "audit_hash": audit_hash or None,
-        "prompt_score": prompt_score if prompt_score > 0.0 else None,
-    }
-
-    # Include agent response if available
-    if agent_response:
-        # Step 5.0: Filter out Claude XML internal blocks and run outbound PII scan
-        if pipeline:
-            # Get user trust level for outbound filtering
-            user_trust_level = "UNTRUSTED"
-            if pipeline.trust_manager:
-                trust_info = pipeline.trust_manager.get_trust("default")
-                if trust_info:
-                    trust_levels = ["UNTRUSTED", "BASIC", "STANDARD", "ELEVATED", "FULL"]
-                    trust_score = trust_info[0]
-                    if trust_score >= 400:
-                        user_trust_level = "FULL"
-                    elif trust_score >= 300:
-                        user_trust_level = "ELEVATED"
-                    elif trust_score >= 200:
-                        user_trust_level = "STANDARD"
-                    elif trust_score >= 100:
-                        user_trust_level = "BASIC"
-            
-            out_result = await pipeline.process_outbound(
-                response=agent_response, 
-                agent_id="default",
-                user_trust_level=user_trust_level,
-                source=request.source
-            )
-            filtered_response = out_result.sanitized_message
-        else:
-            filtered_response, xml_was_filtered = app_state.sanitizer.filter_xml_blocks(
-                agent_response
-            )
-            if xml_was_filtered:
-                logger.info(
-                    f"Filtered XML blocks from agent response for source={request.source}"
-                )
-
-        # Step 5.1: Block credentials from being displayed via untrusted sources
-        blocked_response, was_blocked = await app_state.sanitizer.block_credentials(
-            content=filtered_response, source=request.source
-        )
-
-        if was_blocked:
-            logger.warning(
-                f"Blocked credential display from source={request.source}, "
-                f"ledger_id={ledger_entry.id}"
-            )
-            # Log the blocking event in ledger
-            await app_state.ledger.record(
-                source="gateway_security",
-                content=f"Blocked credential display to {request.source}",
-                original_content=agent_response[:100],  # First 100 chars for audit
-                sanitized=True,
-                redaction_count=1,
-                redaction_types=["CREDENTIALS"],
-                forwarded_to="blocked",
-                content_type="security_event",
-                metadata={"original_ledger_id": ledger_entry.id},
-            )
-
-        response_data["agent_response"] = blocked_response
-
-    return response_data
 
 
 @app.get("/ledger", response_model=LedgerQueryResponse)
@@ -1521,294 +811,6 @@ async def list_agents(auth: AuthRequired):
     targets = app_state.router.list_targets()
     return {"agents": [t.model_dump() for t in targets]}
 
-
-@app.post("/approve", response_model=ApprovalQueueItem)
-async def submit_approval_request(request: ApprovalRequest, auth: AuthRequired):
-    """Submit an action for human approval
-
-    Called by agents when attempting sensitive actions.
-    Authentication required.
-    """
-    item = await app_state.approval_queue.submit(request)
-    await app_state.event_bus.emit(
-        make_event(
-            "approval_submitted",
-            f"Approval requested: {request.action_type} - {request.description}",
-            {"request_id": item.request_id, "action_type": request.action_type},
-        )
-    )
-    return item
-
-
-@app.post("/approve/{request_id}/decide", response_model=ApprovalQueueItem)
-async def decide_approval(
-    request_id: str, decision: ApprovalDecision, auth: AuthRequired
-):
-    """Approve or reject a pending action
-
-    Authentication required.
-    """
-    try:
-        item = await app_state.approval_queue.decide(
-            request_id=request_id, approved=decision.approved, reason=decision.reason
-        )
-        await app_state.event_bus.emit(
-            make_event(
-                "approval_decided",
-                f"Approval {'approved' if decision.approved else 'rejected'}: {request_id}",
-                {"request_id": request_id, "approved": decision.approved},
-            )
-        )
-        return item
-
-    except KeyError:
-        raise HTTPException(status_code=404, detail="Approval request not found")
-
-    except ValueError as e:
-        raise HTTPException(status_code=409, detail=str(e))
-
-
-@app.get("/approve/pending", response_model=list[ApprovalQueueItem])
-async def list_pending_approvals(auth: AuthRequired):
-    """List all pending approval requests
-
-    Authentication required.
-    """
-    return await app_state.approval_queue.get_pending()
-
-
-@app.websocket("/ws/approvals")
-async def approval_websocket(websocket: WebSocket, token: str | None = Query(None)):
-    """WebSocket endpoint for real-time approval notifications
-
-    Protocol:
-    1. Client connects with token as query param: /ws/approvals?token=<token>
-    2. Server validates token during handshake - rejects before accepting
-    3. Server pushes new approval requests and decisions
-    4. Client can send decisions: {"type": "decide", "request_id": "...", "approved": true}
-    """
-    if not token or not hmac.compare_digest(token, app_state.config.auth_token):
-        await websocket.close(code=4003, reason="Authentication failed")
-        await app_state.event_bus.emit(
-            make_event("auth_failed", "WebSocket authentication failed", {}, "warning")
-        )
-        return
-
-    await app_state.approval_queue.connect(websocket)
-
-    try:
-        await websocket.send_json({"type": "authenticated"})
-
-        # Keep connection open and handle messages
-        while True:
-            message = await websocket.receive_json()
-
-            # Handle decision messages
-            if message.get("type") == "decide":
-                request_id = message.get("request_id")
-                approved = message.get("approved")
-
-                if not request_id or approved is None:
-                    await websocket.send_json(
-                        {"type": "error", "message": "Invalid decision message"}
-                    )
-                    continue
-
-                try:
-                    item = await app_state.approval_queue.decide(
-                        request_id=request_id,
-                        approved=approved,
-                        reason=message.get("reason", ""),
-                    )
-
-                    await websocket.send_json(
-                        {
-                            "type": "decision_ack",
-                            "data": {
-                                "request_id": request_id,
-                                "status": item.status,
-                            },
-                        }
-                    )
-
-                except (KeyError, ValueError) as e:
-                    await websocket.send_json({"type": "error", "message": str(e)})
-
-    except Exception as e:
-        logger.warning(f"WebSocket error: {e}")
-
-    finally:
-        await app_state.approval_queue.disconnect(websocket)
-
-
-# === Collaborators Endpoint ===
-
-
-@app.get("/collaborators")
-async def get_collaborators(auth: AuthRequired):
-    """Return collaborator data from the shared bot workspace volume.
-
-    Reads COLLABORATORS.md and contributor logs from /data/bot-workspace.
-    Authentication required.
-    """
-    workspace = Path("/data/bot-workspace")
-    result: dict = {"collaborators_md": None, "contributor_logs": []}
-
-    collab_file = workspace / "COLLABORATORS.md"
-    if collab_file.exists():
-        result["collaborators_md"] = collab_file.read_text()
-
-    contrib_dir = workspace / "memory" / "contributors"
-    if contrib_dir.is_dir():
-        logs = []
-        for f in sorted(contrib_dir.iterdir()):
-            if f.is_file():
-                try:
-                    logs.append({"filename": f.name, "content": f.read_text()})
-                except Exception:
-                    pass
-        result["contributor_logs"] = logs
-
-    return result
-
-
-# === Entry Point for Testing ===
-
-if __name__ == "__main__":
-    import uvicorn
-
-    uvicorn.run(app, host="127.0.0.1", port=8080)
-
-
-# === Dashboard Endpoints ===
-
-
-@app.get("/dashboard")
-async def serve_dashboard(request: Request, token: str | None = Query(None)):
-    """Serve the dashboard HTML (requires auth via query param or cookie)
-
-    On first auth via query param, sets an httpOnly cookie and redirects
-    to a clean URL (token removed from query string / browser history).
-    """
-
-    # Check cookie first
-    cookie_token = request.cookies.get("dashboard_token")
-    authenticated = False
-
-    if cookie_token and hmac.compare_digest(cookie_token, app_state.config.auth_token):
-        authenticated = True
-    elif token and hmac.compare_digest(token, app_state.config.auth_token):
-        # Valid token in query param - set cookie and redirect to clean URL
-        redirect = RedirectResponse(url="/dashboard", status_code=302)
-        is_secure = (
-            request.url.scheme == "https"
-            or request.headers.get("x-forwarded-proto") == "https"
-        )
-        redirect.set_cookie(
-            key="dashboard_token",
-            value=token,
-            httponly=True,
-            samesite="strict",
-            secure=is_secure,
-            max_age=86400,  # 24 hours
-        )
-        return redirect
-
-    if not authenticated:
-        return JSONResponse(status_code=403, content={"detail": "Forbidden"})
-    dashboard_path = Path(__file__).parent.parent / "dashboard" / "index.html"
-    if dashboard_path.exists():
-        html = dashboard_path.read_text()
-        response = HTMLResponse(html)
-        response.headers["Content-Security-Policy"] = (
-            "default-src 'none'; script-src 'unsafe-inline'; "
-            "style-src 'unsafe-inline'; connect-src 'self'; "
-            "img-src 'self'; font-src 'self'"
-        )
-        return response
-    return HTMLResponse("<h1>Dashboard not found</h1>", status_code=404)
-
-
-@app.get("/dashboard/stats")
-async def dashboard_stats(auth: AuthRequired):
-    """JSON stats for dashboard"""
-    uptime = time.time() - app_state.start_time
-    ledger_stats = await app_state.ledger.get_stats()
-    pending = await app_state.approval_queue.get_pending()
-    bus_stats = await app_state.event_bus.get_stats()
-    pending_items = [
-        {
-            "request_id": p.request_id,
-            "action_type": p.action_type,
-            "description": p.description,
-            "submitted_at": p.submitted_at,
-        }
-        for p in pending
-    ]
-    return {
-        "uptime_seconds": uptime,
-        "ledger_entries": ledger_stats.get("total_entries", 0),
-        "pending_approvals": len(pending),
-        "pending_approval_items": pending_items,
-        **bus_stats,
-    }
-
-
-@app.get("/dashboard/ws-token")
-async def dashboard_ws_token(request: Request):
-    """Return a WS auth token for cookie-authenticated dashboard sessions.
-
-    The dashboard JS calls this to get the token for WebSocket connections,
-    avoiding direct token injection into HTML (XSS mitigation).
-    """
-    cookie_token = request.cookies.get("dashboard_token")
-    if not cookie_token or not hmac.compare_digest(
-        cookie_token, app_state.config.auth_token
-    ):
-        return JSONResponse(status_code=403, content={"detail": "Forbidden"})
-    return JSONResponse(content={"token": app_state.config.auth_token})
-
-
-@app.websocket("/ws/activity")
-async def activity_websocket(websocket: WebSocket, token: str | None = Query(None)):
-    """WebSocket for real-time activity feed"""
-    if not token or not hmac.compare_digest(token, app_state.config.auth_token):
-        await websocket.close(code=4003, reason="Authentication failed")
-        await app_state.event_bus.emit(
-            make_event(
-                "auth_failed", "Activity WebSocket authentication failed", {}, "warning"
-            )
-        )
-        return
-
-    await websocket.accept()
-
-    try:
-        await websocket.send_json({"type": "authenticated"})
-
-        # Subscribe to events
-        import asyncio
-
-        queue: asyncio.Queue = asyncio.Queue()
-
-        async def on_event(event):
-            await queue.put(event)
-
-        await app_state.event_bus.subscribe(on_event)
-
-        try:
-            while True:
-                try:
-                    event = await asyncio.wait_for(queue.get(), timeout=30)
-                    await websocket.send_json(event.to_dict())
-                except asyncio.TimeoutError:
-                    # Send ping to keep alive
-                    await websocket.send_json({"type": "ping"})
-        finally:
-            await app_state.event_bus.unsubscribe(on_event)
-
-    except Exception as e:
-        logger.warning(f"Activity WebSocket error: {e}")
 
 
 # === SSH Endpoints ===
@@ -1984,6 +986,8 @@ async def list_security_modules(auth: AuthRequired):
     modules["prompt_guard"] = {"tier": "P0", "status": "active" if app_state.prompt_guard else "unavailable"}
     modules["trust_manager"] = {"tier": "P0", "status": "active" if app_state.trust_manager else "unavailable"}
     modules["egress_filter"] = {"tier": "P0", "status": "active" if app_state.egress_filter else "unavailable"}
+    modules["prompt_protection"] = {"tier": "P0", "status": "active" if getattr(app_state, "prompt_protection", None) else "unavailable"}
+    modules["heuristic_classifier"] = {"tier": "P0", "status": "active" if getattr(app_state, "heuristic_classifier", None) else "unavailable"}
 
     # P1 — Middleware
     mm = app_state.middleware_manager
@@ -2016,6 +1020,7 @@ async def list_security_modules(auth: AuthRequired):
         "canary": {"check": "canary_runner"},
         "clamav_scanner": {"check": "clamav_scanner", "binary": "clamscan"},
         "trivy_scanner": {"check": "trivy_scanner", "binary": "trivy"},
+        "openscap_scanner": {"check": "openscap_available", "binary": "oscap"},
         "falco_monitor": {"check": "falco_monitor"},
         "wazuh_client": {"check": "wazuh_client"},
         "network_validator": {"check": "network_validator"},
@@ -2046,6 +1051,110 @@ async def list_security_modules(auth: AuthRequired):
     }
 
 
+def _scanner_summary(scanner: str, result: dict, target: str = "") -> dict:
+    """Build normalized scanner summary for SOC/dashboard telemetry."""
+    summary = {
+        "scanner": scanner,
+        "target": target,
+        "status": "unknown",
+        "findings": 0,
+        "critical": 0,
+        "high": 0,
+        "medium": 0,
+        "low": 0,
+    }
+    if not isinstance(result, dict):
+        summary["status"] = "error"
+        return summary
+
+    if result.get("error"):
+        summary["status"] = "error"
+        return summary
+
+    if scanner == "clamav":
+        infected = int(result.get("infected_count", 0))
+        summary["findings"] = infected
+        summary["critical"] = infected
+        summary["status"] = "critical" if infected > 0 else "clean"
+        return summary
+
+    if scanner == "trivy":
+        by_sev = result.get("by_severity", {}) or {}
+        summary["critical"] = int(by_sev.get("CRITICAL", 0))
+        summary["high"] = int(by_sev.get("HIGH", 0))
+        summary["medium"] = int(by_sev.get("MEDIUM", 0))
+        summary["low"] = int(by_sev.get("LOW", 0))
+        summary["findings"] = int(result.get("total_vulnerabilities", 0))
+        if summary["critical"] > 0:
+            summary["status"] = "critical"
+        elif summary["high"] > 0:
+            summary["status"] = "warning"
+        else:
+            summary["status"] = "clean"
+        return summary
+
+    if scanner == "openscap":
+        status = str(result.get("status", "unknown")).lower()
+        rc = int(result.get("return_code", 0) or 0)
+        summary["findings"] = 0 if rc == 0 else 1
+        summary["high"] = 1 if rc != 0 else 0
+        if status in {"timeout", "error"}:
+            summary["status"] = "error"
+        elif rc != 0:
+            summary["status"] = "warning"
+        else:
+            summary["status"] = "clean"
+        return summary
+
+    summary["status"] = "info"
+    return summary
+
+
+async def _record_scanner_result(scanner: str, result: dict, target: str = "") -> None:
+    """Persist last scanner result and emit live event-bus telemetry."""
+    store = getattr(app_state, "scanner_results", None)
+    if not isinstance(store, dict):
+        store = {}
+    history = getattr(app_state, "scanner_result_history", None)
+    if not isinstance(history, list):
+        history = []
+
+    summary = _scanner_summary(scanner, result, target=target)
+    entry = {
+        "timestamp": datetime.now(timezone.utc).isoformat(),
+        "scanner": scanner,
+        "target": target,
+        "summary": summary,
+        "result": result,
+    }
+    store[scanner] = entry
+    app_state.scanner_results = store
+    history.append(entry)
+    if len(history) > 5000:
+        del history[: len(history) - 5000]
+    app_state.scanner_result_history = history
+
+    severity = "info"
+    if summary["status"] in {"critical", "error"}:
+        severity = "critical"
+    elif summary["status"] in {"warning"}:
+        severity = "warning"
+
+    if getattr(app_state, "event_bus", None):
+        await app_state.event_bus.emit(
+            make_event(
+                "scanner_result",
+                f"{scanner} scan completed ({summary['status']})",
+                {
+                    "scanner": scanner,
+                    "target": target,
+                    "summary": summary,
+                },
+                severity=severity,
+            )
+        )
+
+
 @app.post("/manage/scan/clamav")
 async def run_clamav_scan(auth: AuthRequired, target: str = "/app"):
     """Run ClamAV antivirus scan. Tries clamdscan (daemon) first, falls back to clamscan."""
@@ -2056,6 +1165,7 @@ async def run_clamav_scan(auth: AuthRequired, target: str = "/app"):
     import os as _os
     _bin = "clamdscan" if (_sh.which("clamdscan") and _os.path.exists("/var/run/clamav/clamd.ctl")) else "clamscan"
     result = app_state.clamav_scanner.run_clamscan(target=target, timeout=120, clamscan_bin=_bin)
+    await _record_scanner_result("clamav", result, target=target)
     if app_state.alert_dispatcher and result.get("infected_count", 0) > 0:
         app_state.alert_dispatcher.dispatch(
             severity="CRITICAL",
@@ -2072,6 +1182,25 @@ async def run_trivy_scan(auth: AuthRequired, target: str = "fs"):
     if not app_state.trivy_scanner:
         return {"error": "Trivy scanner not available"}
     result = app_state.trivy_scanner.run_trivy_scan(scan_type=target, timeout=300)
+    await _record_scanner_result("trivy", result, target=target)
+    if app_state.alert_dispatcher and not result.get("error"):
+        by_sev = result.get("by_severity", {})
+        critical = int(by_sev.get("CRITICAL", 0))
+        high = int(by_sev.get("HIGH", 0))
+        if critical > 0:
+            app_state.alert_dispatcher.dispatch(
+                severity="CRITICAL",
+                module="trivy",
+                message=f"Trivy found {critical} critical vulnerabilities",
+                details=result,
+            )
+        elif high > 0:
+            app_state.alert_dispatcher.dispatch(
+                severity="HIGH",
+                module="trivy",
+                message=f"Trivy found {high} high vulnerabilities",
+                details=result,
+            )
     return result
 
 
@@ -2101,6 +1230,8 @@ async def security_health_report(auth: AuthRequired):
         report["modules"]["clamav"] = {"status": "ready", "binary": bool(__import__("shutil").which("clamscan"))}
     if app_state.trivy_scanner:
         report["modules"]["trivy"] = {"status": "ready", "binary": bool(__import__("shutil").which("trivy"))}
+    if getattr(app_state, "openscap_available", False):
+        report["modules"]["openscap"] = {"status": "ready", "binary": bool(__import__("shutil").which("oscap"))}
     if app_state.drift_detector:
         report["modules"]["drift_detector"] = {"status": "active"}
     if app_state.encrypted_store:
@@ -2117,6 +1248,1009 @@ async def security_health_report(auth: AuthRequired):
         report["modules"]["wazuh_client"] = {"status": "listening"}
 
     return report
+
+
+@app.get("/manage/security-report")
+async def full_security_report(auth: AuthRequired):
+    """Scored security health report — grade, per-tool scores, recommendations.
+
+    Collects lightweight summaries from all available P3 security modules and
+    runs them through the weighted health_report scoring model. Does NOT trigger
+    scans; reflects current module availability and last known scan findings.
+    """
+    if not app_state.health_report:
+        return {"error": "Health report module not available"}
+
+    import shutil as _sh
+    summaries: dict = {}
+
+    # Trivy — vulnerability scanner
+    if app_state.trivy_scanner:
+        summaries["trivy"] = {
+            "status": "ready" if _sh.which("trivy") else "degraded",
+            "findings": 0, "critical": 0, "high": 0, "medium": 0, "low": 0,
+        }
+    if getattr(app_state, "openscap_available", False):
+        summaries["openscap"] = {
+            "status": "ready" if _sh.which("oscap") else "degraded",
+            "findings": 0, "critical": 0, "high": 0, "medium": 0, "low": 0,
+        }
+
+    # ClamAV — antivirus scanner
+    if app_state.clamav_scanner:
+        summaries["clamav"] = {
+            "status": "ready" if _sh.which("clamscan") else "degraded",
+            "findings": 0, "critical": 0, "high": 0, "medium": 0, "low": 0,
+        }
+
+    # Falco — runtime security monitor
+    if app_state.falco_monitor:
+        summaries["falco"] = {
+            "status": "listening",
+            "findings": 0, "critical": 0, "high": 0,
+        }
+
+    # Wazuh — host intrusion detection
+    if app_state.wazuh_client:
+        summaries["wazuh"] = {
+            "status": "listening",
+            "findings": 0, "critical": 0, "high": 0,
+        }
+
+    # Gateway core health (P0/P1 modules)
+    _core_ok = all([
+        getattr(app_state, "pipeline", None),
+        getattr(app_state, "prompt_guard", None),
+        getattr(app_state, "trust_manager", None),
+        getattr(app_state, "egress_filter", None),
+    ])
+    summaries["gateway"] = {
+        "status": "active" if _core_ok else "degraded",
+        "findings": 0 if _core_ok else 1,
+        "critical": 0,
+        "high": 0 if _core_ok else 1,
+        "medium": 0, "low": 0,
+    }
+
+    report = app_state.health_report.generate_report(summaries=summaries, save_history=False)
+    return report
+
+
+@app.get("/manage/scanners/summary")
+async def scanner_summary(auth: AuthRequired):
+    """Return normalized scanner state + latest results for SOC/dashboard views."""
+    availability = {
+        "clamav": bool(getattr(app_state, "clamav_scanner", None)),
+        "trivy": bool(getattr(app_state, "trivy_scanner", None)),
+        "openscap": bool(getattr(app_state, "openscap_available", False)),
+        "wazuh": bool(getattr(app_state, "wazuh_client", None)),
+        "falco": bool(getattr(app_state, "falco_monitor", None)),
+    }
+    results = getattr(app_state, "scanner_results", {}) or {}
+    summaries = {
+        k: v.get("summary", {})
+        for k, v in results.items()
+        if isinstance(v, dict)
+    }
+    totals = {
+        "critical": sum(int(s.get("critical", 0) or 0) for s in summaries.values()),
+        "high": sum(int(s.get("high", 0) or 0) for s in summaries.values()),
+        "findings": sum(int(s.get("findings", 0) or 0) for s in summaries.values()),
+    }
+    return {
+        "availability": availability,
+        "last_results": results,
+        "summaries": summaries,
+        "totals": totals,
+    }
+
+
+@app.get("/manage/scanners/history")
+async def scanner_history(auth: AuthRequired, limit: int = 200, status: str = "all"):
+    """Return scanner result history for SOC timeline views."""
+    history = list(getattr(app_state, "scanner_result_history", []) or [])
+    if status and status.lower() != "all":
+        history = [
+            h for h in history
+            if str((h.get("summary") or {}).get("status", "")).lower() == status.lower()
+        ]
+    return {"count": len(history), "items": history[-limit:]}
+
+
+@app.get("/manage/falco/alerts")
+async def falco_alerts(auth: AuthRequired, limit: int = 100):
+    """Return recent Falco runtime security alerts with summary."""
+    from gateway.security import falco_monitor
+    from pathlib import Path as _Path
+
+    # Try primary alert dir, then fallback inside container
+    alert_dir = falco_monitor.DEFAULT_ALERT_DIR
+    if not alert_dir.exists():
+        alert_dir = _Path("/tmp/security/falco")
+
+    alerts = falco_monitor.read_alerts(alert_dir=alert_dir)
+    summary = falco_monitor.generate_summary(alerts)
+
+    return {
+        "alert_dir": str(alert_dir),
+        "dir_exists": alert_dir.exists(),
+        "summary": summary,
+        "alerts": alerts[-limit:],
+    }
+
+
+@app.get("/manage/wazuh/alerts")
+async def wazuh_alerts(auth: AuthRequired, limit: int = 100):
+    """Return recent Wazuh HIDS alerts with FIM and rootkit summary."""
+    from gateway.security import wazuh_client
+    from pathlib import Path as _Path
+
+    alert_dir = wazuh_client.DEFAULT_ALERT_DIR
+    if not alert_dir.exists():
+        alert_dir = _Path("/tmp/security/wazuh")
+
+    alerts = wazuh_client.read_alerts(alert_dir=alert_dir)
+    summary = wazuh_client.generate_summary(alerts)
+    fim = wazuh_client.get_fim_events(alerts)
+    rootkit = wazuh_client.get_rootkit_events(alerts)
+
+    return {
+        "alert_dir": str(alert_dir),
+        "dir_exists": alert_dir.exists(),
+        "summary": summary,
+        "fim_events": fim[-50:],
+        "rootkit_events": rootkit[-50:],
+        "alerts": alerts[-limit:],
+    }
+
+
+@app.get("/manage/egress/pending")
+async def egress_pending(auth: AuthRequired):
+    """List pending interactive egress approval requests."""
+    queue = getattr(app_state, "egress_approval_queue", None)
+    if not queue:
+        return {"error": "Egress approval queue not available"}
+    await queue.cleanup_expired()
+    pending_raw = await queue.get_pending_requests()
+    now_ts = time.time()
+    by_risk = {"green": 0, "yellow": 0, "red": 0, "unknown": 0}
+    by_domain: dict[str, int] = {}
+    by_agent: dict[str, int] = {}
+    by_tool: dict[str, int] = {}
+    oldest_age_seconds = 0.0
+    total_age_seconds = 0.0
+    expiring_soon_count = 0
+    pending = []
+    for item in pending_raw:
+        risk = str(item.get("risk_level", "unknown")).lower()
+        by_risk[risk if risk in by_risk else "unknown"] += 1
+        domain = str(item.get("domain", "")).strip().lower()
+        if domain:
+            by_domain[domain] = by_domain.get(domain, 0) + 1
+        agent_id = str(item.get("agent_id", "")).strip()
+        if agent_id:
+            by_agent[agent_id] = by_agent.get(agent_id, 0) + 1
+        tool_name = str(item.get("tool_name", "")).strip().lower()
+        if tool_name:
+            by_tool[tool_name] = by_tool.get(tool_name, 0) + 1
+        ts = float(item.get("timestamp", now_ts) or now_ts)
+        age = max(0.0, now_ts - ts)
+        total_age_seconds += age
+        if age > oldest_age_seconds:
+            oldest_age_seconds = age
+        timeout_at = float(item.get("timeout_at", now_ts) or now_ts)
+        remaining = max(0.0, timeout_at - now_ts)
+        if remaining <= 30.0:
+            expiring_soon_count += 1
+        enriched = dict(item)
+        enriched["age_seconds"] = age
+        enriched["remaining_seconds"] = remaining
+        pending.append(enriched)
+    top_domains = [
+        {"domain": domain, "count": count}
+        for domain, count in sorted(by_domain.items(), key=lambda kv: kv[1], reverse=True)[:10]
+    ]
+    top_agents = [
+        {"agent_id": agent_id, "count": count}
+        for agent_id, count in sorted(by_agent.items(), key=lambda kv: kv[1], reverse=True)[:10]
+    ]
+    top_tools = [
+        {"tool_name": tool_name, "count": count}
+        for tool_name, count in sorted(by_tool.items(), key=lambda kv: kv[1], reverse=True)[:10]
+    ]
+    return {
+        "count": len(pending),
+        "pending_by_risk": by_risk,
+        "pending_domain_top": top_domains,
+        "pending_agent_top": top_agents,
+        "pending_tool_top": top_tools,
+        "oldest_age_seconds": oldest_age_seconds,
+        "average_age_seconds": (total_age_seconds / len(pending)) if pending else 0.0,
+        "expiring_soon_count": expiring_soon_count,
+        "pending": pending,
+    }
+
+
+@app.get("/manage/egress/log")
+async def egress_log(
+    auth: AuthRequired,
+    limit: int = 200,
+    agent_id: str = "",
+):
+    """List recent egress attempts for dashboard/SOC triage."""
+    egress = getattr(app_state, "egress_filter", None)
+    if not egress:
+        return {"error": "Egress filter not available"}
+    attempts = egress.get_log(agent_id=agent_id or None, limit=limit)
+    summary = egress.get_stats(agent_id=agent_id or None)
+    return {
+        "summary": summary,
+        "count": len(attempts),
+        "items": [
+            {
+                "timestamp": a.timestamp,
+                "agent_id": a.agent_id,
+                "destination": a.destination,
+                "port": a.port,
+                "action": a.action.value,
+                "rule": a.rule,
+                "details": a.details,
+            }
+            for a in attempts
+        ],
+    }
+
+
+@app.post("/manage/egress/{request_id}/approve")
+async def egress_approve(auth: AuthRequired, request_id: str, mode: str = "once"):
+    """Approve an egress request (once/session/permanent)."""
+    queue = getattr(app_state, "egress_approval_queue", None)
+    if not queue:
+        return {"error": "Egress approval queue not available"}
+    from gateway.security.egress_approval import ApprovalMode
+
+    mode_map = {
+        "once": ApprovalMode.ONCE,
+        "session": ApprovalMode.SESSION,
+        "always": ApprovalMode.PERMANENT,
+        "permanent": ApprovalMode.PERMANENT,
+    }
+    success = await queue.approve(request_id, mode_map.get(mode.lower(), ApprovalMode.ONCE))
+    return {"ok": success, "request_id": request_id, "mode": mode}
+
+
+@app.post("/manage/egress/{request_id}/deny")
+async def egress_deny(auth: AuthRequired, request_id: str, mode: str = "once"):
+    """Deny an egress request (once/session/permanent)."""
+    queue = getattr(app_state, "egress_approval_queue", None)
+    if not queue:
+        return {"error": "Egress approval queue not available"}
+    from gateway.security.egress_approval import ApprovalMode
+
+    mode_map = {
+        "once": ApprovalMode.ONCE,
+        "session": ApprovalMode.SESSION,
+        "always": ApprovalMode.PERMANENT,
+        "permanent": ApprovalMode.PERMANENT,
+    }
+    success = await queue.deny(request_id, mode_map.get(mode.lower(), ApprovalMode.ONCE))
+    return {"ok": success, "request_id": request_id, "mode": mode}
+
+
+@app.get("/manage/egress/rules")
+async def egress_rules(auth: AuthRequired):
+    """Return egress rules and emergency-block status."""
+    queue = getattr(app_state, "egress_approval_queue", None)
+    if not queue:
+        return {"error": "Egress approval queue not available"}
+    return {
+        "rules": await queue.get_all_rules(),
+        "emergency": await queue.get_emergency_status(),
+    }
+
+
+@app.post("/manage/egress/rules")
+async def egress_add_rule(
+    auth: AuthRequired,
+    domain: str,
+    action: str = "allow",
+    mode: str = "permanent",
+):
+    """Add an egress allow/deny rule."""
+    queue = getattr(app_state, "egress_approval_queue", None)
+    if not queue:
+        return {"error": "Egress approval queue not available"}
+    from gateway.security.egress_approval import ApprovalMode
+
+    mode_map = {
+        "session": ApprovalMode.SESSION,
+        "always": ApprovalMode.PERMANENT,
+        "permanent": ApprovalMode.PERMANENT,
+    }
+    selected_mode = mode_map.get(mode.lower(), ApprovalMode.PERMANENT)
+    ok = await queue.add_rule(domain=domain, action=action.lower(), mode=selected_mode)
+    if ok and getattr(app_state, "event_bus", None):
+        await app_state.event_bus.emit(
+            make_event(
+                "egress_rule_updated",
+                "Egress rule added",
+                {"domain": domain, "action": action.lower(), "mode": selected_mode.value},
+                severity="warning" if action.lower() == "allow" else "info",
+            )
+        )
+    return {"ok": ok, "domain": domain, "action": action.lower(), "mode": selected_mode.value}
+
+
+@app.delete("/manage/egress/rules")
+async def egress_remove_rule(auth: AuthRequired, domain: str):
+    """Remove an egress rule by domain."""
+    queue = getattr(app_state, "egress_approval_queue", None)
+    if not queue:
+        return {"error": "Egress approval queue not available"}
+    ok = await queue.remove_rule(domain=domain)
+    if ok and getattr(app_state, "event_bus", None):
+        await app_state.event_bus.emit(
+            make_event(
+                "egress_rule_updated",
+                "Egress rule removed",
+                {"domain": domain},
+                severity="info",
+            )
+        )
+    return {"ok": ok, "domain": domain}
+
+
+@app.get("/manage/egress/risk")
+async def egress_risk_preview(auth: AuthRequired, domain: str, port: int = 443):
+    """Preview egress risk heuristic for domain/port combos."""
+    queue = getattr(app_state, "egress_approval_queue", None)
+    if not queue:
+        return {"error": "Egress approval queue not available"}
+    risk = queue.assess_risk(domain=domain, port=port)
+    return {"domain": domain, "port": port, "risk_level": risk}
+
+
+@app.post("/manage/egress/emergency-block")
+async def egress_emergency_block(auth: AuthRequired, enabled: bool, reason: str = ""):
+    """Enable/disable emergency block-all for outbound egress."""
+    queue = getattr(app_state, "egress_approval_queue", None)
+    if not queue:
+        return {"error": "Egress approval queue not available"}
+    await queue.set_emergency_block_all(enabled, reason=reason)
+    return {"ok": True, "status": await queue.get_emergency_status()}
+
+
+@app.get("/manage/quarantine/blocked-messages")
+async def list_blocked_message_quarantine(
+    auth: AuthRequired,
+    limit: int = 200,
+    status: str = "all",
+):
+    """List quarantined blocked inbound messages for admin review."""
+    store = getattr(app_state, "blocked_message_quarantine", [])
+    items = list(store)
+    normalized = []
+    for item in items:
+        if "message_id" not in item:
+            item["message_id"] = hashlib.sha256(
+                f"{item.get('timestamp','')}:{item.get('user_id','')}:{item.get('text','')}".encode("utf-8")
+            ).hexdigest()[:16]
+        if "status" not in item:
+            item["status"] = "pending"
+        normalized.append(item)
+    if status and status.lower() != "all":
+        normalized = [x for x in normalized if str(x.get("status", "pending")).lower() == status.lower()]
+    return {"count": len(normalized), "items": normalized[-limit:]}
+
+
+@app.post("/manage/quarantine/blocked-messages/{message_id}/release")
+async def release_blocked_message(
+    auth: AuthRequired,
+    message_id: str,
+    note: str = "",
+):
+    """Release a quarantined message for admin workflow follow-up."""
+    store = getattr(app_state, "blocked_message_quarantine", [])
+    for item in store:
+        item_id = str(item.get("message_id") or "")
+        if not item_id:
+            item_id = hashlib.sha256(
+                f"{item.get('timestamp','')}:{item.get('user_id','')}:{item.get('text','')}".encode("utf-8")
+            ).hexdigest()[:16]
+            item["message_id"] = item_id
+        if item_id == message_id:
+            item["status"] = "released"
+            item["released_at"] = time.time()
+            item["released_by"] = "admin"
+            item["review_note"] = note
+            if getattr(app_state, "event_bus", None):
+                await app_state.event_bus.emit(
+                    make_event(
+                        "quarantine_released",
+                        "Quarantined blocked message released",
+                        {
+                            "message_id": message_id,
+                            "user_id": item.get("user_id"),
+                            "source": item.get("source"),
+                            "reason": item.get("reason"),
+                        },
+                        severity="warning",
+                    )
+                )
+            return {"ok": True, "item": item}
+    return {"ok": False, "error": "message_not_found", "message_id": message_id}
+
+
+@app.post("/manage/quarantine/blocked-messages/{message_id}/discard")
+async def discard_blocked_message(
+    auth: AuthRequired,
+    message_id: str,
+    note: str = "",
+):
+    """Discard (keep quarantined) a blocked message after admin review."""
+    store = getattr(app_state, "blocked_message_quarantine", [])
+    for item in store:
+        item_id = str(item.get("message_id") or "")
+        if not item_id:
+            item_id = hashlib.sha256(
+                f"{item.get('timestamp','')}:{item.get('user_id','')}:{item.get('text','')}".encode("utf-8")
+            ).hexdigest()[:16]
+            item["message_id"] = item_id
+        if item_id == message_id:
+            item["status"] = "discarded"
+            item["released_at"] = time.time()
+            item["released_by"] = "admin"
+            item["review_note"] = note
+            if getattr(app_state, "event_bus", None):
+                await app_state.event_bus.emit(
+                    make_event(
+                        "quarantine_discarded",
+                        "Quarantined blocked message discarded",
+                        {
+                            "message_id": message_id,
+                            "user_id": item.get("user_id"),
+                            "source": item.get("source"),
+                            "reason": item.get("reason"),
+                        },
+                        severity="info",
+                    )
+                )
+            return {"ok": True, "item": item}
+    return {"ok": False, "error": "message_not_found", "message_id": message_id}
+
+
+@app.get("/manage/quarantine/blocked-outbound")
+async def list_blocked_outbound_quarantine(
+    auth: AuthRequired,
+    limit: int = 200,
+    status: str = "all",
+):
+    """List quarantined blocked outbound messages for admin review."""
+    store = getattr(app_state, "blocked_outbound_quarantine", [])
+    items = list(store)
+    normalized = []
+    for item in items:
+        if "message_id" not in item:
+            item["message_id"] = hashlib.sha256(
+                f"{item.get('timestamp','')}:{item.get('chat_id','')}:{item.get('text','')}".encode("utf-8")
+            ).hexdigest()[:16]
+        if "status" not in item:
+            item["status"] = "pending"
+        normalized.append(item)
+    if status and status.lower() != "all":
+        normalized = [x for x in normalized if str(x.get("status", "pending")).lower() == status.lower()]
+    return {"count": len(normalized), "items": normalized[-limit:]}
+
+
+@app.get("/manage/quarantine/summary")
+async def quarantine_summary(auth: AuthRequired):
+    """Summarize inbound/outbound quarantine state for SOC/dashboard use."""
+    inbound = getattr(app_state, "blocked_message_quarantine", []) or []
+    outbound = getattr(app_state, "blocked_outbound_quarantine", []) or []
+
+    def _count_by_status(items: list[dict]) -> dict[str, int]:
+        counts = {"pending": 0, "released": 0, "discarded": 0, "other": 0}
+        for item in items:
+            status = str(item.get("status", "pending")).lower()
+            if status in counts:
+                counts[status] += 1
+            else:
+                counts["other"] += 1
+        counts["total"] = len(items)
+        return counts
+
+    def _top_reasons(items: list[dict], limit: int = 10) -> list[dict]:
+        reason_counts: dict[str, int] = {}
+        for item in items:
+            reason = str(item.get("reason", "")).strip()
+            if not reason:
+                continue
+            reason_counts[reason] = reason_counts.get(reason, 0) + 1
+        return [
+            {"reason": reason, "count": count}
+            for reason, count in sorted(reason_counts.items(), key=lambda kv: kv[1], reverse=True)[: max(1, limit)]
+        ]
+
+    return {
+        "inbound": _count_by_status(inbound),
+        "outbound": _count_by_status(outbound),
+        "inbound_top_reasons": _top_reasons(inbound),
+        "outbound_top_reasons": _top_reasons(outbound),
+    }
+
+
+@app.post("/manage/quarantine/blocked-outbound/{message_id}/release")
+async def release_blocked_outbound(
+    auth: AuthRequired,
+    message_id: str,
+    note: str = "",
+):
+    """Release a blocked outbound message for admin/manual resend flow."""
+    store = getattr(app_state, "blocked_outbound_quarantine", [])
+    for item in store:
+        item_id = str(item.get("message_id") or "")
+        if not item_id:
+            item_id = hashlib.sha256(
+                f"{item.get('timestamp','')}:{item.get('chat_id','')}:{item.get('text','')}".encode("utf-8")
+            ).hexdigest()[:16]
+            item["message_id"] = item_id
+        if item_id == message_id:
+            item["status"] = "released"
+            item["released_at"] = time.time()
+            item["released_by"] = "admin"
+            item["review_note"] = note
+            if getattr(app_state, "event_bus", None):
+                await app_state.event_bus.emit(
+                    make_event(
+                        "quarantine_outbound_released",
+                        "Quarantined outbound message released",
+                        {
+                            "message_id": message_id,
+                            "chat_id": item.get("chat_id"),
+                            "source": item.get("source"),
+                            "reason": item.get("reason"),
+                        },
+                        severity="warning",
+                    )
+                )
+            return {"ok": True, "item": item}
+    return {"ok": False, "error": "message_not_found", "message_id": message_id}
+
+
+@app.post("/manage/quarantine/blocked-outbound/{message_id}/discard")
+async def discard_blocked_outbound(
+    auth: AuthRequired,
+    message_id: str,
+    note: str = "",
+):
+    """Discard a blocked outbound message after admin review."""
+    store = getattr(app_state, "blocked_outbound_quarantine", [])
+    for item in store:
+        item_id = str(item.get("message_id") or "")
+        if not item_id:
+            item_id = hashlib.sha256(
+                f"{item.get('timestamp','')}:{item.get('chat_id','')}:{item.get('text','')}".encode("utf-8")
+            ).hexdigest()[:16]
+            item["message_id"] = item_id
+        if item_id == message_id:
+            item["status"] = "discarded"
+            item["released_at"] = time.time()
+            item["released_by"] = "admin"
+            item["review_note"] = note
+            if getattr(app_state, "event_bus", None):
+                await app_state.event_bus.emit(
+                    make_event(
+                        "quarantine_outbound_discarded",
+                        "Quarantined outbound message discarded",
+                        {
+                            "message_id": message_id,
+                            "chat_id": item.get("chat_id"),
+                            "source": item.get("source"),
+                            "reason": item.get("reason"),
+                        },
+                        severity="info",
+                    )
+                )
+            return {"ok": True, "item": item}
+    return {"ok": False, "error": "message_not_found", "message_id": message_id}
+
+
+@app.get("/manage/soc/correlation")
+async def soc_correlation(auth: AuthRequired, limit: int = 200):
+    """Cross-signal SOC correlation summary."""
+    from gateway.security.soc_correlation import build_correlation_summary
+
+    summary = build_correlation_summary(app_state, limit=limit)
+    return summary.to_dict()
+
+
+@app.get("/manage/soc/events")
+async def soc_events(
+    auth: AuthRequired,
+    limit: int = 200,
+    event_type_prefix: str = "",
+    severity: str = "",
+):
+    """Return recent security telemetry events with optional filters."""
+    bus = getattr(app_state, "event_bus", None)
+    if bus is None:
+        return {"count": 0, "items": []}
+    items = await bus.get_recent(limit=max(1, min(limit, 1000)))
+    if event_type_prefix:
+        pfx = event_type_prefix.lower()
+        items = [e for e in items if str(e.get("type", "")).lower().startswith(pfx)]
+    if severity:
+        sev = severity.lower()
+        items = [e for e in items if str(e.get("severity", "")).lower() == sev]
+    return {"count": len(items), "items": items}
+
+
+@app.get("/manage/soc/report")
+async def soc_report(auth: AuthRequired, limit: int = 200):
+    """Consolidated SOC report for dashboard/SIEM pull workflows."""
+    from gateway.security.soc_correlation import build_correlation_summary
+
+    correlation = build_correlation_summary(app_state, limit=limit).to_dict()
+
+    bus = getattr(app_state, "event_bus", None)
+    events = await bus.get_recent(limit=max(1, min(limit, 1000))) if bus else []
+    events = [
+        e
+        for e in events
+        if str(e.get("type", "")).startswith(
+            ("egress_", "privacy_", "quarantine_", "scanner_", "auth_")
+        )
+    ]
+
+    inbound_q = getattr(app_state, "blocked_message_quarantine", []) or []
+    outbound_q = getattr(app_state, "blocked_outbound_quarantine", []) or []
+    scanner_summary = (
+        {
+            k: v.get("summary", {})
+            for k, v in (getattr(app_state, "scanner_results", {}) or {}).items()
+            if isinstance(v, dict)
+        }
+    )
+    privacy = {
+        "policy_loaded": False,
+        "policy_path": "",
+        "private_access_summary": {"total": 0, "by_agent": {}, "by_tool": {}},
+        "private_redaction_summary": {"events": 0, "total_redactions": 0, "by_agent": {}, "by_tool": {}},
+    }
+    mcp = getattr(app_state, "mcp_proxy", None)
+    perms = getattr(mcp, "permissions", None) if mcp else None
+    if perms:
+        try:
+            status = (
+                perms.get_privacy_policy_status()
+                if hasattr(perms, "get_privacy_policy_status")
+                else {"loaded": False, "path": "", "error": ""}
+            )
+            privacy = {
+                "policy_loaded": bool(status.get("loaded", False)),
+                "policy_path": str(status.get("path", "")),
+                "private_access_summary": (
+                    perms.get_private_access_summary(limit=limit)
+                    if hasattr(perms, "get_private_access_summary")
+                    else {"total": 0, "by_agent": {}, "by_tool": {}}
+                ),
+                "private_redaction_summary": (
+                    perms.get_private_redaction_summary(limit=limit)
+                    if hasattr(perms, "get_private_redaction_summary")
+                    else {"events": 0, "total_redactions": 0, "by_agent": {}, "by_tool": {}}
+                ),
+            }
+        except Exception:
+            pass
+
+    collaborator_activity = {
+        "source": "tracker",
+        "summary": {"total_messages": 0, "unique_users": 0, "last_activity": None, "by_user": {}},
+        "recent": [],
+    }
+    tracker = getattr(app_state, "collaborator_tracker", None)
+    if tracker:
+        try:
+            collaborator_activity = {
+                "source": "tracker",
+                "summary": tracker.get_activity_summary(),
+                "recent": tracker.get_activity(limit=min(limit, 100)),
+            }
+        except Exception:
+            pass
+        if (
+            int(collaborator_activity.get("summary", {}).get("total_messages", 0) or 0) == 0
+            and not collaborator_activity.get("recent")
+        ):
+            try:
+                from gateway.ingest_api.routes.dashboard import (
+                    _parse_collaborator_log_dirs,
+                    _load_contributor_logs,
+                    _build_activity_summary_from_contributor_logs,
+                    _build_activity_entries_from_contributor_logs,
+                )
+
+                logs = _load_contributor_logs(_parse_collaborator_log_dirs())
+                collaborator_activity = {
+                    "source": "contributor_logs_fallback",
+                    "summary": _build_activity_summary_from_contributor_logs(logs),
+                    "recent": _build_activity_entries_from_contributor_logs(
+                        logs, limit=min(limit, 100)
+                    ),
+                }
+            except Exception:
+                pass
+    else:
+        try:
+            from gateway.ingest_api.routes.dashboard import (
+                _parse_collaborator_log_dirs,
+                _load_contributor_logs,
+                _build_activity_summary_from_contributor_logs,
+                _build_activity_entries_from_contributor_logs,
+            )
+
+            logs = _load_contributor_logs(_parse_collaborator_log_dirs())
+            collaborator_activity = {
+                "source": "contributor_logs_fallback",
+                "summary": _build_activity_summary_from_contributor_logs(logs),
+                "recent": _build_activity_entries_from_contributor_logs(
+                    logs, limit=min(limit, 100)
+                ),
+            }
+        except Exception:
+            pass
+
+    egress_live = {}
+    try:
+        from gateway.ingest_api.routes.dashboard import _build_egress_live_snapshot
+
+        egress_live = await _build_egress_live_snapshot()
+    except Exception:
+        egress_live = {}
+    return {
+        "generated_at": datetime.now(timezone.utc).isoformat(),
+        "correlation": correlation,
+        "event_count": len(events),
+        "events": events[-limit:],
+        "quarantine": {
+            "inbound_total": len(inbound_q),
+            "outbound_total": len(outbound_q),
+            "inbound_pending": sum(
+                1 for q in inbound_q if str(q.get("status", "pending")).lower() == "pending"
+            ),
+            "outbound_pending": sum(
+                1 for q in outbound_q if str(q.get("status", "pending")).lower() == "pending"
+            ),
+        },
+        "scanner_summary": scanner_summary,
+        "privacy": privacy,
+        "collaborator_activity": collaborator_activity,
+        "egress_live": egress_live,
+    }
+
+
+@app.get("/manage/soc/export")
+async def soc_export(
+    auth: AuthRequired,
+    format_type: str = "json",
+    limit: int = 5000,
+    event_type: str = "",
+    severity_min: str = "",
+):
+    """Export tamper-evident audit events in SOC/SIEM formats."""
+    normalized = format_type.lower().strip()
+    if normalized == "jsonld":
+        normalized = "json-ld"
+    if normalized not in {"json", "cef", "json-ld"}:
+        return {
+            "error": "invalid_format",
+            "supported_formats": ["json", "cef", "json-ld"],
+        }
+
+    store = getattr(app_state, "audit_store", None)
+    if store is None:
+        return {
+            "format": normalized,
+            "record_count": 0,
+            "hash_verification": {"verified": False, "message": "Audit store not available"},
+            "export_content": "",
+            "export_timestamp": datetime.now(timezone.utc).isoformat(),
+        }
+
+    from gateway.security.audit_export import AuditExporter, AuditExportConfig
+
+    exporter = AuditExporter(AuditExportConfig(default_format=normalized), store)
+    result = await exporter.export_events(
+        format_type=normalized,
+        event_type=event_type or None,
+        severity_min=severity_min or None,
+        limit=max(1, min(limit, 10000)),
+    )
+    return result
+
+
+@app.get("/manage/privacy/policy")
+async def privacy_policy_status(auth: AuthRequired):
+    """Return current private-data policy configuration and enforcement state."""
+    mcp = getattr(app_state, "mcp_proxy", None)
+    if not mcp:
+        return {"error": "MCP proxy not available"}
+    perms = getattr(mcp, "permissions", None)
+    if not perms:
+        return {"error": "MCP permissions not available"}
+    status = (
+        perms.get_privacy_policy_status()
+        if hasattr(perms, "get_privacy_policy_status")
+        else {"path": "", "loaded": False, "loaded_at": None, "error": ""}
+    )
+    return {
+        "owner_user_id": str(getattr(perms, "_owner_user_id", "")),
+        "admin_private_tool_patterns": list(getattr(perms, "_private_tool_patterns", [])),
+        "admin_private_data_patterns": perms.get_private_data_patterns()
+        if hasattr(perms, "get_private_data_patterns")
+        else [],
+        "policy_file": status,
+    }
+
+
+@app.get("/manage/privacy/audit")
+async def privacy_audit(auth: AuthRequired, limit: int = 200):
+    """Audit feed for private-data access policy violations."""
+    mcp = getattr(app_state, "mcp_proxy", None)
+    if not mcp:
+        return {"error": "MCP proxy not available"}
+    perms = getattr(mcp, "permissions", None)
+    if not perms:
+        return {"error": "MCP permissions not available"}
+
+    events = (
+        perms.get_private_access_events(limit=limit)
+        if hasattr(perms, "get_private_access_events")
+        else []
+    )
+    redaction_events = (
+        perms.get_private_redaction_events(limit=limit)
+        if hasattr(perms, "get_private_redaction_events")
+        else []
+    )
+    summary = (
+        perms.get_private_access_summary(limit=limit)
+        if hasattr(perms, "get_private_access_summary")
+        else {"total": 0, "by_agent": {}, "by_tool": {}}
+    )
+    redaction_summary = (
+        perms.get_private_redaction_summary(limit=limit)
+        if hasattr(perms, "get_private_redaction_summary")
+        else {"events": 0, "total_redactions": 0, "by_agent": {}, "by_tool": {}}
+    )
+    return {
+        "count": len(events),
+        "summary": summary,
+        "events": events,
+        "redaction_count": len(redaction_events),
+        "redaction_summary": redaction_summary,
+        "redaction_events": redaction_events,
+    }
+
+
+@app.post("/manage/scan/openscap")
+async def run_openscap_scan(auth: AuthRequired, profile: str = "xccdf_org.ssgproject.content_profile_standard"):
+    """Run OpenSCAP XCCDF evaluation against the running container."""
+    import subprocess as _sp, shutil as _sh, os as _os, glob as _gl
+    from datetime import datetime as _dt, timezone as _tz
+
+    if not _sh.which("oscap"):
+        result = {"error": "OpenSCAP (oscap) binary not found"}
+        await _record_scanner_result("openscap", result, target=profile)
+        return result
+
+    # Locate a SCAP datastream file
+    ds_file = None
+    for pattern in [
+        "/usr/share/xml/scap/ssg/content/ssg-debian*-ds.xml",
+        "/usr/share/xml/scap/ssg/content/ssg-ubuntu*-ds.xml",
+        "/usr/share/xml/scap/ssg/content/ssg-rhel*-ds.xml",
+        "/usr/share/openscap/*.xml",
+    ]:
+        matches = _gl.glob(pattern)
+        if matches:
+            ds_file = matches[0]
+            break
+
+    if not ds_file:
+        result = {
+            "status": "no_content",
+            "message": "oscap binary present but no SCAP content datastream found — install scap-security-guide.",
+            "binary": _sh.which("oscap"),
+        }
+        await _record_scanner_result("openscap", result, target=profile)
+        return result
+
+    results_xml = "/tmp/openscap-results.xml"
+    report_html = "/tmp/openscap-report.html"
+    try:
+        r = _sp.run(
+            ["oscap", "xccdf", "eval",
+             "--profile", profile,
+             "--results", results_xml,
+             "--report", report_html,
+             ds_file],
+            capture_output=True, text=True, timeout=120,
+        )
+        result = {
+            "status": "completed",
+            "return_code": r.returncode,
+            "profile": profile,
+            "datastream": ds_file,
+            "results_xml": results_xml if _os.path.exists(results_xml) else None,
+            "report_html": report_html if _os.path.exists(report_html) else None,
+            "stdout_tail": r.stdout[-2000:] if r.stdout else "",
+            "stderr_tail": r.stderr[-500:] if r.stderr else "",
+            "timestamp": _dt.now(_tz.utc).isoformat(),
+        }
+        await _record_scanner_result("openscap", result, target=profile)
+        if app_state.alert_dispatcher and r.returncode != 0:
+            app_state.alert_dispatcher.dispatch(
+                severity="HIGH",
+                module="openscap",
+                message=f"OpenSCAP profile '{profile}' reported compliance failures",
+                details=result,
+            )
+        return result
+    except _sp.TimeoutExpired:
+        result = {"status": "timeout", "profile": profile}
+        await _record_scanner_result("openscap", result, target=profile)
+        return result
+    except Exception as e:
+        result = {"status": "error", "detail": str(e)}
+        await _record_scanner_result("openscap", result, target=profile)
+        return result
+
+
+@app.post("/manage/scan/all")
+async def run_all_scanners(auth: AuthRequired):
+    """Run all locally available security scanners and return consolidated results."""
+    results: dict[str, dict] = {}
+
+    # ClamAV
+    if getattr(app_state, "clamav_scanner", None):
+        import shutil as _sh
+        import os as _os
+
+        _bin = "clamdscan" if (_sh.which("clamdscan") and _os.path.exists("/var/run/clamav/clamd.ctl")) else "clamscan"
+        clam = app_state.clamav_scanner.run_clamscan(target="/app", timeout=120, clamscan_bin=_bin)
+        await _record_scanner_result("clamav", clam, target="/app")
+        results["clamav"] = clam
+    else:
+        results["clamav"] = {"error": "ClamAV scanner not available"}
+
+    # Trivy
+    if getattr(app_state, "trivy_scanner", None):
+        trivy = app_state.trivy_scanner.run_trivy_scan(scan_type="fs", timeout=300)
+        await _record_scanner_result("trivy", trivy, target="fs")
+        results["trivy"] = trivy
+    else:
+        results["trivy"] = {"error": "Trivy scanner not available"}
+
+    # OpenSCAP
+    if getattr(app_state, "openscap_available", False):
+        # Minimal status marker; full run remains on /manage/scan/openscap endpoint
+        openscap = {"status": "available", "message": "Use /manage/scan/openscap for full profile scan"}
+        await _record_scanner_result("openscap", openscap, target="availability")
+        results["openscap"] = openscap
+    else:
+        openscap = {"error": "OpenSCAP (oscap) binary not found"}
+        await _record_scanner_result("openscap", openscap, target="availability")
+        results["openscap"] = openscap
+
+    return {
+        "timestamp": datetime.now(timezone.utc).isoformat(),
+        "results": results,
+        "summaries": {
+            scanner: _scanner_summary(scanner, data, target="all")
+            for scanner, data in results.items()
+        },
+    }
 
 
 @app.get('/manage/container-security')
@@ -2212,7 +2346,10 @@ async def container_security_profile(auth: AuthRequired):
     secret_patterns = ['PASSWORD', 'SECRET', 'API_KEY', 'TOKEN', 'PRIVATE_KEY']
     leaked_vars = [k for k in os.environ if any(p in k.upper() for p in secret_patterns)]
     # Filter out known safe ones
-    safe_vars = {'OPENCLAW_GATEWAY_PASSWORD_FILE', 'GATEWAY_AUTH_TOKEN_FILE', 'OP_SERVICE_ACCOUNT_TOKEN_FILE', 'OP_SERVICE_ACCOUNT_TOKEN'}  # OP token loaded from file at runtime
+    safe_vars = {
+        'AGENTSHROUD_GATEWAY_PASSWORD_FILE', 'OPENCLAW_GATEWAY_PASSWORD_FILE',  # bot gateway password (file refs)
+        'GATEWAY_AUTH_TOKEN_FILE', 'OP_SERVICE_ACCOUNT_TOKEN_FILE', 'OP_SERVICE_ACCOUNT_TOKEN',
+    }  # OP token loaded from file at runtime
     leaked_vars = [v for v in leaked_vars if v not in safe_vars and not v.endswith('_FILE')]
     if not leaked_vars:
         results['checks']['no_env_secrets'] = {'passed': True, 'detail': 'No secret-like environment variables exposed'}
@@ -2308,12 +2445,9 @@ async def container_security_profile(auth: AuthRequired):
 
     # 10. Security modules all active
     total += 1
-    gw_pass = os.environ.get('OPENCLAW_GATEWAY_PASSWORD', '')
+    gw_pass = os.environ.get('AGENTSHROUD_GATEWAY_PASSWORD', '') or os.environ.get('OPENCLAW_GATEWAY_PASSWORD', '')
     if not gw_pass:
-        try:
-            gw_pass = open('/run/secrets/gateway_password').read().strip()
-        except OSError:
-            pass
+        gw_pass = _read_secret('gateway_password')
     # Just check our own app_state
     unavail_count = 0
     for attr in ['pipeline', 'alert_dispatcher', 'killswitch_monitor', 'drift_detector', 'encrypted_store',
@@ -2902,7 +3036,7 @@ async def deep_security_test(auth: AuthRequired):
     # ═══════════════════════════════════════════════════
     def t_op():
         import urllib.request
-        gw = open("/run/secrets/gateway_password").read().strip()
+        gw = _read_secret("gateway_password")
         req = urllib.request.Request(
             "http://127.0.0.1:8080/credentials/op-proxy",
             data=json.dumps({"reference": "op://Agent Shroud Bot Credentials/25ghxryyvup5wpufgfldgc2vjm/agentshroud app-specific password"}).encode(),
@@ -2951,7 +3085,7 @@ async def verify_killswitch(auth: AuthRequired, dry_run: bool = True):
     except Exception as e:
         logger.error(f"Kill switch verification failed: {e}")
         return {
-            "error": f"Verification failed: {str(e)}",
+            "error": "Killswitch verification failed",
             "timestamp": __import__("datetime").datetime.now(
                 __import__("datetime").timezone.utc
             ).isoformat()
@@ -2973,7 +3107,7 @@ async def killswitch_status(auth: AuthRequired):
     except Exception as e:
         logger.error(f"Failed to get kill switch status: {e}")
         return {
-            "error": f"Status check failed: {str(e)}",
+            "error": "Killswitch status check failed",
             "timestamp": __import__("datetime").datetime.now(
                 __import__("datetime").timezone.utc
             ).isoformat()
@@ -2984,7 +3118,7 @@ async def killswitch_status(auth: AuthRequired):
 # ═══════════════════════════════════════════════════
 
 @app.get("/manage/rbac/users")
-async def list_users_and_roles(request: Request):
+async def list_users_and_roles(request: Request, auth: AuthRequired):
     """List all users and their roles (admin+ only)."""
     # Extract user ID from request (this would need proper implementation)
     user_id = request.headers.get("X-User-ID") or "unknown"
@@ -3018,11 +3152,11 @@ async def list_users_and_roles(request: Request):
         
     except Exception as e:
         logger.error(f"Error listing users: {e}")
-        raise HTTPException(status_code=500, detail=f"Error listing users: {str(e)}")
+        raise HTTPException(status_code=500, detail="Internal error listing users")
 
 
 @app.put("/manage/rbac/users/{target_user_id}")
-async def set_user_role(target_user_id: str, request: Request, role: str):
+async def set_user_role(target_user_id: str, request: Request, role: str, auth: AuthRequired):
     """Set a user's role (owner only)."""
     # Extract requesting user ID from request
     requesting_user_id = request.headers.get("X-User-ID") or "unknown"
@@ -3055,7 +3189,7 @@ async def set_user_role(target_user_id: str, request: Request, role: str):
 
 
 @app.get("/manage/rbac/users/{user_id}/permissions")
-async def get_user_permissions(user_id: str, request: Request):
+async def get_user_permissions(user_id: str, request: Request, auth: AuthRequired):
     """Get permissions summary for a user (admin+ only)."""
     # Extract requesting user ID from request
     requesting_user_id = request.headers.get("X-User-ID") or "unknown"
@@ -3079,11 +3213,11 @@ async def get_user_permissions(user_id: str, request: Request):
         
     except Exception as e:
         logger.error(f"Error getting user permissions: {e}")
-        raise HTTPException(status_code=500, detail=f"Error getting permissions: {str(e)}")
+        raise HTTPException(status_code=500, detail="Internal error getting permissions")
 
 
 @app.get("/manage/rbac/my-permissions")
-async def get_my_permissions(request: Request):
+async def get_my_permissions(request: Request, auth: AuthRequired):
     """Get permissions summary for the current user."""
     # Extract user ID from request
     user_id = request.headers.get("X-User-ID") or "unknown"
@@ -3101,123 +3235,382 @@ async def get_my_permissions(request: Request):
         
     except Exception as e:
         logger.error(f"Error getting user permissions: {e}")
-        raise HTTPException(status_code=500, detail=f"Error getting permissions: {str(e)}")
+        raise HTTPException(status_code=500, detail="Internal error getting permissions")
 
 
 
-# === Pi-hole DNS Management API (v0.8.0 Feature 1c) ===
+# === DNS Management API — in-process DNSBlocklist (replaces Pi-hole proxy) ===
 
 @app.get("/manage/dns")
 async def get_dns_stats(auth: AuthRequired):
-    """Get Pi-hole DNS statistics.
-    
-    Returns current DNS filtering statistics including:
-    - Queries today
-    - Blocked today  
-    - Number of blocklists
-    - Pi-hole status
-    
+    """Get DNS blocklist statistics.
+
+    Returns current DNS filtering statistics from the in-process blocklist.
     Authentication required.
     """
-    try:
-        import aiohttp
-        
-        # Query Pi-hole API for statistics
-        async with aiohttp.ClientSession() as session:
-            async with session.get("http://pihole:80/admin/api.php?summary") as response:
-                if response.status != 200:
-                    raise HTTPException(status_code=503, detail="Pi-hole not available")
-                
-                data = await response.json()
-                
-                return {
-                    "status": data.get("status", "unknown"),
-                    "queries_today": data.get("dns_queries_today", 0),
-                    "blocked_today": data.get("ads_blocked_today", 0),
-                    "percent_blocked": data.get("ads_percentage_today", 0.0),
-                    "domains_being_blocked": data.get("domains_being_blocked", 0),
-                    "blocklist_count": data.get("domains_being_blocked", 0),
-                    "gravity_last_updated": data.get("gravity_last_updated", {}),
-                    "privacy_level": data.get("privacy_level", 0)
-                }
-                
-    except Exception as e:
-        logger.error(f"Error querying Pi-hole stats: {e}")
-        raise HTTPException(status_code=500, detail=f"Error getting DNS stats: {str(e)}")
+    bl = getattr(app_state, "dns_blocklist", None)
+    if not bl:
+        raise HTTPException(status_code=503, detail="DNS blocklist not initialized")
+    return bl.stats()
 
 
-@app.post("/manage/dns/blocklist")
-async def manage_blocklist(
-    action: str,  # "add" or "remove"  
-    url: str,
-    auth: AuthRequired
+@app.get("/manage/dns/blocked")
+async def list_blocked_domains(
+    auth: AuthRequired,
+    page: int = 1,
+    page_size: int = 100,
 ):
-    """Add or remove a blocklist URL from Pi-hole.
-    
-    Parameters:
-    - action: "add" to add blocklist, "remove" to remove
-    - url: Blocklist URL to add/remove
-    
+    """Return a paginated list of blocked domains.
+
     Authentication required.
     """
-    if action not in ["add", "remove"]:
-        raise HTTPException(status_code=400, detail="Action must be 'add' or 'remove'")
-    
-    if not url or not url.startswith(("http://", "https://")):
-        raise HTTPException(status_code=400, detail="Invalid URL format")
-    
-    try:
-        import aiohttp
-        
-        # Get Pi-hole password for API authentication
+    bl = getattr(app_state, "dns_blocklist", None)
+    if not bl:
+        raise HTTPException(status_code=503, detail="DNS blocklist not initialized")
+    domains = sorted(bl.blocked_domains)
+    start = (page - 1) * page_size
+    return {
+        "total": len(domains),
+        "page": page,
+        "page_size": page_size,
+        "domains": domains[start: start + page_size],
+    }
+
+
+@app.post("/manage/dns/blocked")
+async def add_blocked_domain(domain: str, auth: AuthRequired):
+    """Add a domain to the local denylist.
+
+    Authentication required.
+    """
+    bl = getattr(app_state, "dns_blocklist", None)
+    if not bl:
+        raise HTTPException(status_code=503, detail="DNS blocklist not initialized")
+    bl.denylist.add(domain.lower().strip("."))
+    bl.blocked_domains.add(domain.lower().strip("."))
+    return {"success": True, "domain": domain, "action": "add"}
+
+
+@app.delete("/manage/dns/blocked")
+async def remove_blocked_domain(domain: str, auth: AuthRequired):
+    """Remove a domain from the local denylist.
+
+    Authentication required.
+    """
+    bl = getattr(app_state, "dns_blocklist", None)
+    if not bl:
+        raise HTTPException(status_code=503, detail="DNS blocklist not initialized")
+    bl.denylist.discard(domain.lower().strip("."))
+    bl.blocked_domains.discard(domain.lower().strip("."))
+    return {"success": True, "domain": domain, "action": "remove"}
+
+
+@app.post("/manage/dns/refresh")
+async def refresh_dns_blocklist(auth: AuthRequired):
+    """Trigger an immediate blocklist refresh from upstream adlists.
+
+    Authentication required.
+    """
+    bl = getattr(app_state, "dns_blocklist", None)
+    if not bl:
+        raise HTTPException(status_code=503, detail="DNS blocklist not initialized")
+    await bl.update()
+    return bl.stats()
+
+
+# === SOC 2 Compliance Report (v0.8.0 Feature 1d) ===
+
+@app.get("/manage/compliance/soc2")
+async def get_soc2_compliance_report(auth: AuthRequired):
+    """SOC 2 Trust Service Criteria compliance coverage report.
+
+    Maps active AgentShroud modules to SOC 2 TSC categories (CC6, CC7, CC8, CC9,
+    A1, PI1). Returns per-criteria coverage status, module mapping, and gap
+    analysis. Authentication required.
+    """
+    def _active(attr: str) -> bool:
+        return bool(getattr(app_state, attr, None))
+
+    criteria = [
+        {
+            "id": "CC6.1",
+            "name": "Logical and Physical Access Controls",
+            "modules": ["trust_manager", "session_manager", "approval_queue"],
+            "covered": all(_active(m) for m in ["trust_manager", "session_manager", "approval_queue"]),
+            "details": "TrustManager enforces least-privilege agent trust levels. "
+                       "UserSessionManager isolates per-user workspaces. "
+                       "EnhancedApprovalQueue gates high-risk tool calls.",
+        },
+        {
+            "id": "CC6.2",
+            "name": "New User / Credential Registration",
+            "modules": ["trust_manager", "key_vault"],
+            "covered": all(_active(m) for m in ["trust_manager", "key_vault"]),
+            "details": "TrustManager registers and scores agent identities. "
+                       "KeyVault stores credentials with audit trail.",
+        },
+        {
+            "id": "CC6.6",
+            "name": "Logical Access Security Measures",
+            "modules": ["egress_filter", "prompt_guard", "sanitizer"],
+            "covered": all(_active(m) for m in ["egress_filter", "prompt_guard", "sanitizer"]),
+            "details": "EgressFilter enforces domain allowlist for outbound traffic. "
+                       "PromptGuard blocks prompt injection. "
+                       "PIISanitizer redacts sensitive data in transit.",
+        },
+        {
+            "id": "CC6.8",
+            "name": "Unauthorized / Malicious Software Prevention",
+            "modules": ["clamav_scanner", "trivy_scanner", "dns_blocklist"],
+            "covered": any(_active(m) for m in ["clamav_scanner", "trivy_scanner", "dns_blocklist"]),
+            "details": "ClamAV scans uploaded files. Trivy scans container images. "
+                       "DNSBlocklist blocks known malicious domains.",
+        },
+        {
+            "id": "CC7.1",
+            "name": "System Vulnerability Detection",
+            "modules": ["drift_detector", "network_validator", "killswitch_monitor"],
+            "covered": any(_active(m) for m in ["drift_detector", "network_validator", "killswitch_monitor"]),
+            "details": "DriftDetector detects config changes from baseline. "
+                       "NetworkValidator audits container network isolation. "
+                       "KillSwitchMonitor verifies kill switch integrity.",
+        },
+        {
+            "id": "CC7.2",
+            "name": "Monitoring of System Components",
+            "modules": ["falco_monitor", "wazuh_client", "alert_dispatcher"],
+            "covered": any(_active(m) for m in ["falco_monitor", "wazuh_client", "alert_dispatcher"]),
+            "details": "Falco monitors runtime syscall anomalies. "
+                       "Wazuh provides host intrusion detection. "
+                       "AlertDispatcher routes findings to operators.",
+        },
+        {
+            "id": "CC7.3",
+            "name": "Incident Evaluation and Response",
+            "modules": ["audit_store", "alert_dispatcher", "approval_queue"],
+            "covered": all(_active(m) for m in ["audit_store", "alert_dispatcher", "approval_queue"]),
+            "details": "AuditStore maintains tamper-evident event log. "
+                       "AlertDispatcher notifies on anomalies. "
+                       "EnhancedApprovalQueue enables operator response.",
+        },
+        {
+            "id": "CC8.1",
+            "name": "Change Management",
+            "modules": ["drift_detector", "ledger"],
+            "covered": all(_active(m) for m in ["drift_detector", "ledger"]),
+            "details": "DriftDetector flags configuration deviations. "
+                       "DataLedger records all data processing events.",
+        },
+        {
+            "id": "CC9.1",
+            "name": "Risk Assessment",
+            "modules": ["prompt_guard", "egress_filter", "approval_queue"],
+            "covered": all(_active(m) for m in ["prompt_guard", "egress_filter", "approval_queue"]),
+            "details": "PromptGuard performs per-request injection risk scoring. "
+                       "EgressFilter applies domain risk policy. "
+                       "ApprovalQueue enforces tool risk tiers.",
+        },
+        {
+            "id": "A1.2",
+            "name": "Availability — Environmental Protections",
+            "modules": ["killswitch_monitor", "event_bus"],
+            "covered": all(_active(m) for m in ["killswitch_monitor", "event_bus"]),
+            "details": "KillSwitchMonitor provides automated failsafe. "
+                       "EventBus enables decoupled health propagation.",
+        },
+        {
+            "id": "PI1.1",
+            "name": "Processing Integrity",
+            "modules": ["pipeline", "audit_store", "ledger"],
+            "covered": all(_active(m) for m in ["pipeline", "audit_store", "ledger"]),
+            "details": "SecurityPipeline applies deterministic multi-stage validation. "
+                       "AuditStore provides tamper-evident processing log. "
+                       "DataLedger tracks all processing outcomes.",
+        },
+    ]
+
+    covered = [c for c in criteria if c["covered"]]
+    gaps = [c for c in criteria if not c["covered"]]
+
+    return {
+        "standard": "SOC 2 Type II — Trust Service Criteria",
+        "version": "v0.8.0-watchtower",
+        "criteria_total": len(criteria),
+        "criteria_covered": len(covered),
+        "criteria_gaps": len(gaps),
+        "coverage_percent": round(len(covered) / len(criteria) * 100, 1),
+        "criteria": criteria,
+        "gaps": [{"id": c["id"], "name": c["name"], "missing_modules": [m for m in c["modules"] if not _active(m)]} for c in gaps],
+    }
+
+
+
+# === LLM API Reverse Proxy ===
+# All OpenClaw ↔ Anthropic traffic routes through this endpoint.
+# User messages are scanned (PII, injection). Responses are filtered (credentials, XML).
+# Activated by setting ANTHROPIC_BASE_URL=http://gateway:8080 on the bot container.
+
+@app.api_route(
+    "/v1/{path:path}",
+    methods=["GET", "POST"],
+    include_in_schema=False,
+)
+async def llm_api_proxy(request: Request, path: str):
+    """Proxy Anthropic API calls through security pipeline."""
+    # M5: IP allowlist — only accept requests from the isolated Docker network
+    client_ip = request.client.host if request.client else None
+    if client_ip:
         try:
-            with open("/run/secrets/pihole_password", "r") as f:
-                auth_token = f.read().strip()
-        except FileNotFoundError:
-            auth_token = ""
-        
-        # Build API URL
-        if action == "add":
-            api_url = f"http://pihole:80/admin/api.php?list=add&address={url}"
-        else:  # remove
-            api_url = f"http://pihole:80/admin/api.php?list=remove&address={url}"
-        
-        if auth_token:
-            api_url += f"&auth={auth_token}"
-        
-        async with aiohttp.ClientSession() as session:
-            async with session.get(api_url) as response:
-                if response.status != 200:
-                    raise HTTPException(status_code=503, detail="Pi-hole API not available")
-                
-                result = await response.json()
-                
-                if "success" in str(result).lower():
-                    # Update gravity to reload blocklists
-                    gravity_url = f"http://pihole:80/admin/api.php?updateGravity"
-                    if auth_token:
-                        gravity_url += f"&auth={auth_token}"
-                    
-                    async with session.get(gravity_url) as gravity_response:
-                        pass  # Fire and forget gravity update
-                    
-                    return {
-                        "success": True,
-                        "message": f"Successfully {action}ed blocklist: {url}",
-                        "url": url,
-                        "action": action
-                    }
-                else:
-                    return {
-                        "success": False,
-                        "message": f"Failed to {action} blocklist: {result}",
-                        "url": url,
-                        "action": action
-                    }
-                    
-    except Exception as e:
-        logger.error(f"Error managing Pi-hole blocklist: {e}")
-        raise HTTPException(status_code=500, detail=f"Error managing blocklist: {str(e)}")
+            addr = _ipaddress.ip_address(client_ip)
+            if not any(addr in net for net in _PROXY_ALLOWED_NETWORKS):
+                logger.warning(f"LLM proxy request denied from {client_ip}")
+                raise HTTPException(status_code=403, detail="Forbidden")
+        except ValueError:
+            raise HTTPException(status_code=403, detail="Forbidden")
+    else:
+        raise HTTPException(status_code=403, detail="Forbidden")
+
+    llm_proxy = getattr(app_state, "llm_proxy", None)
+    if not llm_proxy:
+        raise HTTPException(status_code=503, detail="LLM proxy not available")
+
+    body = await request.body() if request.method == "POST" else None
+    headers = dict(request.headers)
+
+    # Extract user identity from bot-injected header for RBAC and audit propagation.
+    # The bot sets X-AgentShroud-User-Id on every request (owner or collaborator Telegram ID).
+    user_id = headers.get("x-agentshroud-user-id", "unknown")
+
+    status_code, resp_headers, resp_body = await llm_proxy.proxy_messages(
+        f"/v1/{path}", body, headers, user_id=user_id
+    )
+
+    # Check if streaming response
+    content_type = resp_headers.get("content-type", "")
+    if "text/event-stream" in content_type:
+        from starlette.responses import StreamingResponse
+        import io
+        return StreamingResponse(
+            io.BytesIO(resp_body),
+            status_code=status_code,
+            media_type="text/event-stream",
+            headers={k: v for k, v in resp_headers.items() if k.lower() not in ("transfer-encoding", "content-length")},
+        )
+
+    if not resp_body:
+        return JSONResponse(content={}, status_code=status_code)
+
+    try:
+        return JSONResponse(
+            content=json.loads(resp_body),
+            status_code=status_code,
+        )
+    except Exception:
+        # Upstream occasionally returns plain-text/empty bodies on failures.
+        # Do not crash the proxy endpoint trying to decode non-JSON payloads.
+        return HTMLResponse(
+            content=resp_body.decode("utf-8", errors="ignore"),
+            status_code=status_code,
+        )
+
+
+@app.api_route(
+    "/v1beta/{path:path}",
+    methods=["GET", "POST"],
+    include_in_schema=False,
+)
+async def google_api_proxy(request: Request, path: str):
+    """Proxy Google Gemini API calls through security pipeline."""
+    # Mirror IP allowlist from llm_api_proxy
+    client_ip = request.client.host if request.client else None
+    if client_ip:
+        try:
+            addr = _ipaddress.ip_address(client_ip)
+            if not any(addr in net for net in _PROXY_ALLOWED_NETWORKS):
+                logger.warning(f"Google proxy request denied from {client_ip}")
+                raise HTTPException(status_code=403, detail="Forbidden")
+        except ValueError:
+            raise HTTPException(status_code=403, detail="Forbidden")
+    else:
+        raise HTTPException(status_code=403, detail="Forbidden")
+
+    llm_proxy = getattr(app_state, "llm_proxy", None)
+    if not llm_proxy:
+        raise HTTPException(status_code=503, detail="LLM proxy not available")
+
+    body = await request.body() if request.method == "POST" else None
+    headers = dict(request.headers)
+    user_id = headers.get("x-agentshroud-user-id", "unknown")
+
+    status_code, resp_headers, resp_body = await llm_proxy.proxy_messages(
+        f"/v1beta/{path}", body, headers, user_id=user_id
+    )
+
+    if not resp_body:
+        return JSONResponse(content={}, status_code=status_code)
+
+    try:
+        return JSONResponse(
+            content=json.loads(resp_body),
+            status_code=status_code,
+        )
+    except Exception:
+        # Mirror /v1 proxy behavior: do not convert upstream plain-text failures
+        # into gateway 500s when the provider returns non-JSON bodies.
+        return HTMLResponse(
+            content=resp_body.decode("utf-8", errors="ignore"),
+            status_code=status_code,
+        )
+
+
+@app.api_route(
+    "/api/{path:path}",
+    methods=["GET", "POST"],
+    include_in_schema=False,
+)
+async def ollama_api_proxy(request: Request, path: str):
+    """Proxy native Ollama API calls through security pipeline."""
+    # Mirror IP allowlist
+    client_ip = request.client.host if request.client else None
+    if client_ip:
+        try:
+            addr = _ipaddress.ip_address(client_ip)
+            if not any(addr in net for net in _PROXY_ALLOWED_NETWORKS):
+                raise HTTPException(status_code=403, detail="Forbidden")
+        except ValueError:
+            raise HTTPException(status_code=403, detail="Forbidden")
+    else:
+        raise HTTPException(status_code=403, detail="Forbidden")
+
+    llm_proxy = getattr(app_state, "llm_proxy", None)
+    if not llm_proxy:
+        raise HTTPException(status_code=503, detail="LLM proxy not available")
+
+    body = await request.body() if request.method == "POST" else None
+    headers = dict(request.headers)
+    user_id = headers.get("x-agentshroud-user-id", "unknown")
+
+    status_code, resp_headers, resp_body = await llm_proxy.proxy_messages(
+        f"/api/{path}", body, headers, user_id=user_id
+    )
+
+    # Ollama native API might return raw text or JSON
+    try:
+        return JSONResponse(
+            content=json.loads(resp_body) if resp_body else {},
+            status_code=status_code,
+        )
+    except Exception:
+        return HTMLResponse(content=resp_body, status_code=status_code)
+
+
+@app.get("/llm-proxy/stats")
+async def llm_proxy_stats(auth: AuthRequired):
+    """Return LLM proxy statistics."""
+    llm_proxy = getattr(app_state, "llm_proxy", None)
+    if not llm_proxy:
+        return {"status": "not_initialized"}
+    return llm_proxy.get_stats()
 
 
 # === Telegram API Reverse Proxy (v0.8.0) ===
@@ -3230,17 +3623,49 @@ _telegram_proxy = TelegramAPIProxy(
     sanitizer=None,
 )
 
+_slack_proxy = SlackAPIProxy(
+    pipeline=None,  # Will be set during lifespan
+    middleware_manager=None,
+    sanitizer=None,
+    tracker=None,   # Will be wired to app_state.collaborator_tracker at request time
+)
+
 @app.api_route('/telegram-api/{path:path}', methods=['GET', 'POST', 'PUT', 'DELETE'])
 async def telegram_api_proxy(path: str, request: Request):
     """Proxy Telegram Bot API calls through security pipeline."""
+    # R2-M3: IP allowlist — mirror LLM proxy restrictions for defense-in-depth
+    client_ip = request.client.host if request.client else None
+    if client_ip:
+        try:
+            addr = _ipaddress.ip_address(client_ip)
+            if not any(addr in net for net in _PROXY_ALLOWED_NETWORKS):
+                logger.warning(f"Telegram proxy request denied from {client_ip}")
+                raise HTTPException(status_code=403, detail="Forbidden")
+        except ValueError:
+            raise HTTPException(status_code=403, detail="Forbidden")
+    else:
+        raise HTTPException(status_code=403, detail="Forbidden")
+
     # Extract bot token and method from path: bot<token>/<method>
+    # Also supports file download paths: file/bot<token>/<file_path>
     import re as _re
-    match = _re.match(r'^bot([^/]+)/(.+)$', path)
+    match = _re.match(r'^(file/)?bot([^/]+)/(.+)$', path)
     if not match:
         raise HTTPException(status_code=400, detail='Invalid Telegram API path')
+
+    file_prefix = match.group(1) or ""
+    bot_token = match.group(2)
+    method = match.group(3)
     
-    bot_token = match.group(1)
-    method = match.group(2)
+    # M6: Validate bot token matches the configured token
+    configured_token = None
+    configured_token = _read_secret("telegram_bot_token") or None
+    if not configured_token:
+        logger.error("Telegram proxy: no bot token configured — rejecting request (fail-closed)")
+        raise HTTPException(status_code=503, detail="Telegram proxy not configured")
+    if not hmac.compare_digest(bot_token, configured_token):
+        logger.warning("Telegram proxy: bot token mismatch — rejecting request")
+        raise HTTPException(status_code=403, detail="Invalid bot token")
     
     # Read request body
     body = await request.body() if request.method in ('POST', 'PUT') else None
@@ -3251,10 +3676,56 @@ async def telegram_api_proxy(path: str, request: Request):
         _telegram_proxy.middleware_manager = app_state.middleware_manager
     if hasattr(app_state, 'sanitizer'):
         _telegram_proxy.sanitizer = app_state.sanitizer
-    
-    # Proxy the request
+    # GAP-3: Wire SecurityPipeline so Telegram proxy scans all messages
+    if hasattr(app_state, 'pipeline') and app_state.pipeline is not None:
+        _telegram_proxy.pipeline = app_state.pipeline
+    # Proxy the request.
+    # System notifications (startup/shutdown from start.sh) carry X-AgentShroud-System: 1
+    # so the proxy skips outbound content filtering — these are not LLM-generated output.
+    is_system = request.headers.get("x-agentshroud-system") == "1"
     from fastapi.responses import JSONResponse
-    result = await _telegram_proxy.proxy_request(bot_token, method, body, content_type)
+    result = await _telegram_proxy.proxy_request(bot_token, method, body, content_type, is_system=is_system, path_prefix=file_prefix)
     
     status_code = 200 if result.get('ok', False) else result.get('error_code', 500)
     return JSONResponse(content=result, status_code=status_code)
+
+
+@app.api_route('/slack-api/{path:path}', methods=['GET', 'POST'])
+async def slack_api_proxy(path: str, request: Request):
+    """Proxy bot Slack Web API calls through SecurityPipeline.
+
+    Restricted to the internal Docker subnet (same allowlist as Telegram proxy).
+    The bot's Slack bot token is injected here — the bot container never holds it.
+    """
+    # IP allowlist: only bot container subnet may call this
+    client_ip = request.client.host if request.client else None
+    if client_ip:
+        try:
+            addr = _ipaddress.ip_address(client_ip)
+            if not any(addr in net for net in _PROXY_ALLOWED_NETWORKS):
+                logger.warning(f"Slack API proxy request denied from {client_ip}")
+                raise HTTPException(status_code=403, detail="Forbidden")
+        except ValueError:
+            raise HTTPException(status_code=403, detail="Forbidden")
+    else:
+        raise HTTPException(status_code=403, detail="Forbidden")
+
+    # Lazily wire pipeline and tracker from app_state
+    if hasattr(app_state, 'pipeline') and app_state.pipeline is not None:
+        _slack_proxy.pipeline = app_state.pipeline
+    if hasattr(app_state, 'middleware_manager'):
+        _slack_proxy.middleware_manager = app_state.middleware_manager
+    if hasattr(app_state, 'sanitizer'):
+        _slack_proxy.sanitizer = app_state.sanitizer
+    if hasattr(app_state, 'collaborator_tracker') and app_state.collaborator_tracker is not None:
+        _slack_proxy.tracker = app_state.collaborator_tracker
+
+    body = await request.body() if request.method == 'POST' else b""
+    content_type = request.headers.get('content-type', '')
+
+    # System notifications (startup/shutdown from start.sh) bypass content filtering
+    is_system = request.headers.get("x-agentshroud-system") == "1"
+
+    from fastapi.responses import JSONResponse
+    result = await _slack_proxy.proxy_outbound(path, body, content_type, is_system=is_system)
+    return JSONResponse(content=result)

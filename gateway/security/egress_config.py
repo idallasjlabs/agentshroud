@@ -26,6 +26,8 @@ class EgressFilterConfig:
         # AI API endpoints
         "api.anthropic.com",
         "api.openai.com",
+        "generativelanguage.googleapis.com",
+        "oauth2.googleapis.com",
         
         # Email services
         "imap.gmail.com", 
@@ -38,6 +40,10 @@ class EgressFilterConfig:
         
         # Search and web services
         "api.brave.com",
+
+        # 1Password / op-proxy dependencies
+        "1password.com",
+        "*.1password.com",
         
         # Development and package registries
         "*.github.com",
@@ -118,22 +124,28 @@ class EgressFilterConfig:
     # Whether to enable strict mode (denylist overrides allowlist)
     strict_mode: bool = True
 
+    # Interactive firewall mode: require approval for all outbound connections,
+    # even when destination is allowlisted.
+    approval_required_for_all: bool = True
+
     @classmethod
     def from_environment(cls) -> "EgressFilterConfig":
         """Create config from environment variables and AGENTSHROUD_MODE."""
-        mode = "monitor"  # Default to monitor
+        mode = "enforce"  # Default to enforce (fail-closed)
         
         # Check AGENTSHROUD_MODE environment variable
         agentshroud_mode = os.getenv("AGENTSHROUD_MODE", "").lower()
-        if agentshroud_mode == "enforce":
-            mode = "enforce"
+        if agentshroud_mode in ("enforce", "monitor"):
+            mode = agentshroud_mode
         
         # Allow override via specific egress mode env var
         egress_mode = os.getenv("AGENTSHROUD_EGRESS_MODE", "").lower()
         if egress_mode in ("enforce", "monitor"):
             mode = egress_mode
             
-        return cls(mode=mode)
+        approval_all_env = os.getenv("AGENTSHROUD_EGRESS_APPROVAL_ALL", "true").strip().lower()
+        approval_required_for_all = approval_all_env not in ("0", "false", "no", "off")
+        return cls(mode=mode, approval_required_for_all=approval_required_for_all)
 
     def get_effective_allowlist(self, agent_id: str) -> Set[str]:
         """Get the effective allowlist for a specific agent."""

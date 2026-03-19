@@ -67,6 +67,9 @@ class PIISanitizer:
             re.compile(r"<thinking>(?:(?!</thinking>).)*$", re.DOTALL),
             re.compile(r"<system-reminder>(?:(?!</system-reminder>).)*$", re.DOTALL),
             re.compile(r"<invoke[^>]*>(?:(?!</invoke>).)*$", re.DOTALL),
+            # invoke_result blocks (closed and truncated)
+            re.compile(r"<invoke_result[^>]*>.*?</invoke_result>", re.DOTALL),
+            re.compile(r"<invoke_result[^>]*>(?:(?!</invoke_result>).)*$", re.DOTALL),
         ]
         # Whitespace cleanup pattern
         self._excessive_newlines_pattern = re.compile(r"\n{3,}")
@@ -111,7 +114,14 @@ class PIISanitizer:
                     "models": [{"lang_code": "en", "model_name": "en_core_web_sm"}],
                 }
                 nlp_engine = NlpEngineProvider(nlp_configuration=nlp_config).create_engine()
-                self.analyzer = AnalyzerEngine(nlp_engine=nlp_engine, supported_languages=["en"])
+                from presidio_analyzer import RecognizerRegistry
+                registry = RecognizerRegistry(supported_languages=["en"])
+                registry.load_predefined_recognizers(languages=["en"])
+                self.analyzer = AnalyzerEngine(
+                    nlp_engine=nlp_engine,
+                    supported_languages=["en"],
+                    registry=registry,
+                )
                 self.anonymizer = AnonymizerEngine()
                 self.mode = "presidio"
                 logger.info("Presidio PII detection engine initialized")
@@ -441,7 +451,7 @@ class PIISanitizer:
                 blocked_message = (
                     "🔒 [REDACTED: Credentials cannot be displayed via Telegram]\n\n"
                     "For security, passwords and secrets are only accessible via:\n"
-                    "• Console: docker exec openclaw-bot get-credential <name>\n"
+                    "• Console: docker exec agentshroud-bot get-credential <name>\n"
                     "• Control UI: http://localhost:18790\n\n"
                     "If you need to configure a service, ask me to do it. "
                     "I can use credentials internally without displaying them."

@@ -50,11 +50,13 @@ def normalize_input(text: str) -> str:
     #    e.g., '&lt;system&gt;' → '<system>'
     text = html.unescape(text)
     
-    # 4. URL decode (single pass — don't double-decode to avoid other issues)
+    # 4. URL decode — iterative up to 5 passes to catch double/triple encoding.
+    #    Stops as soon as the text stabilises to avoid infinite loops.
     try:
-        decoded = unquote(text)
-        # Only use decoded version if it changed meaningfully
-        if decoded != text and any(c.isalpha() for c in decoded):
+        for _ in range(5):
+            decoded = unquote(text)
+            if decoded == text:
+                break
             text = decoded
     except Exception:
         pass

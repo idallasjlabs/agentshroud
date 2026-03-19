@@ -167,26 +167,38 @@ class MemoryIntegrityMonitor:
         return False
     
     def _detect_modification_source(self, file_path: Path) -> ModificationSource:
-        """Attempt to detect the source of a file modification."""
-        # Check if in expected write window (likely agent)
+        """Attempt to detect the source of a file modification.
+
+        Detection strategy (in priority order):
+        1. Explicit write windows registered by the agent — highest confidence.
+        2. Inode change time (ctime) vs modification time (mtime): if ctime is
+           very recent but mtime is older, a metadata-only change (e.g. chmod)
+           was made externally — classify as HUMAN.
+        3. mtime within the last 5 seconds — likely in-flight agent write.
+        4. Fallback to UNKNOWN.
+        """
+        # Priority 1: Explicit write window registered by agent
         if self._is_in_write_window(str(file_path)):
             return ModificationSource.AGENT
-        
-        # Simple heuristics for source detection
+
         try:
             stat = file_path.stat()
-            
-            # Very recent modifications might be from agent
-            if time.time() - stat.st_mtime < 5:  # 5 seconds
+            now = time.time()
+
+            # Priority 2: ctime much newer than mtime → external metadata change
+            if hasattr(stat, "st_ctime"):
+                ctime_age = now - stat.st_ctime
+                mtime_age = now - stat.st_mtime
+                if ctime_age < 5 and mtime_age > 60:
+                    # Metadata changed recently but content is old → human/system action
+                    return ModificationSource.HUMAN
+
+            # Priority 3: Very recent mtime — likely in-flight agent write
+            if now - stat.st_mtime < 5:
                 return ModificationSource.AGENT
-                
-            # TODO: More sophisticated detection could check:
-            # - Process that modified the file
-            # - File locking patterns
-            # - Recent API activity
-            
+
             return ModificationSource.UNKNOWN
-            
+
         except Exception:
             return ModificationSource.UNKNOWN
     

@@ -12,8 +12,10 @@ spacy>=3.8.0,<4.0.0
 # Database
 aiosqlite>=0.20.0,<1.0.0
 
-# Authentication
-python-jose[cryptography]>=3.3.0,<4.0.0
+# python-jose removed: CVE-2024-33663, CVE-2024-33664 (unused in codebase)
+
+# HTTP client (Pi-hole DNS management)
+aiohttp>=3.9.0,<4.0.0
 
 # WebSocket
 websockets>=14.0,<15.0
@@ -22,7 +24,7 @@ websockets>=14.0,<15.0
 pyyaml>=6.0.0,<7.0.0
 
 # Utilities
-python-multipart>=0.0.18
+python-multipart>=0.0.18,<1.0.0
 httpx>=0.28.0,<1.0.0
 
 # Testing
@@ -32,4 +34,4 @@ eval-type-backport>=0.2.0; python_version < "3.10"
 
 # System monitoring
 psutil>=6.0.0,<7.0.0
-docker
+docker>=7.0.0,<8.0.0

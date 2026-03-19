@@ -7,3 +7,14 @@ password=test
 # Documentation patterns - echo statements showing users how to test
 echo "password=
 echo 'password=
+
+# git-secrets false positives for tests and docs
+AKIAIOSFODNN7EXAMPLE
+AKIAEXAMPLEKEY123456
+ghp_ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefgh
+ghp_ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghij
+sk-proj-abc123
+sk-proj-abcdefghij1234567890
+123456789012
+AKIA1234567890ABCDEF
+AKIAI44QH8DHBEXAMPLE
