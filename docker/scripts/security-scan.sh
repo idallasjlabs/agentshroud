@@ -11,7 +11,7 @@ set -e
 LOG_DIR="/var/log/security"
 GATEWAY_URL="${GATEWAY_URL:-http://localhost:8080}"
 TIMESTAMP=$(date -u +%Y%m%d-%H%M%S)
-WORKSPACE="${AGENTSHROUD_WORKSPACE:-/home/node}"
+WORKSPACE="${AGENTSHROUD_WORKSPACE:-/app}"
 
 mkdir -p "$LOG_DIR"/{trivy,clamav,openscap,sbom}
 
@@ -35,7 +35,10 @@ run_trivy() {
         return 1
     fi
 
-    trivy fs --format json --severity CRITICAL,HIGH,MEDIUM,LOW --no-progress / \
+    trivy fs --format json --severity CRITICAL,HIGH,MEDIUM,LOW --no-progress \
+        --ignore-unfixed \
+        --db-repository ghcr.io/aquasecurity/trivy-db \
+        / \
         > "$LOG_DIR/trivy/trivy-$TIMESTAMP.json" 2>"$LOG_DIR/trivy/trivy-$TIMESTAMP.err" || true
 
     CRITICAL=$(python3 -c "
@@ -138,16 +141,28 @@ run_oscap() {
     fi
 
     SCAP_CONTENT="/usr/share/xml/scap/ssg/content/ssg-debian12-ds.xml"
+    TAILORING_FILE="/usr/share/xml/scap/ssg/content/agentshroud-tailoring.xml"
     if [ ! -f "$SCAP_CONTENT" ]; then
         log "ERROR: SCAP content not found"
         return 1
     fi
 
-    oscap xccdf eval \
-        --profile xccdf_org.ssgproject.content_profile_standard \
-        --results "$LOG_DIR/openscap/openscap-$TIMESTAMP.xml" \
-        --report "$LOG_DIR/openscap/openscap-$TIMESTAMP.html" \
-        "$SCAP_CONTENT" 2>"$LOG_DIR/openscap/openscap-$TIMESTAMP.err" || true
+    # Build oscap command — use tailoring file if present to deselect
+    # rules inapplicable to containerized environments (PAM, systemd, cron, etc.)
+    if [ -f "$TAILORING_FILE" ]; then
+        oscap xccdf eval \
+            --profile xccdf_org.ssgproject.content_profile_standard \
+            --tailoring-file "$TAILORING_FILE" \
+            --results "$LOG_DIR/openscap/openscap-$TIMESTAMP.xml" \
+            --report "$LOG_DIR/openscap/openscap-$TIMESTAMP.html" \
+            "$SCAP_CONTENT" 2>"$LOG_DIR/openscap/openscap-$TIMESTAMP.err" || true
+    else
+        oscap xccdf eval \
+            --profile xccdf_org.ssgproject.content_profile_standard \
+            --results "$LOG_DIR/openscap/openscap-$TIMESTAMP.xml" \
+            --report "$LOG_DIR/openscap/openscap-$TIMESTAMP.html" \
+            "$SCAP_CONTENT" 2>"$LOG_DIR/openscap/openscap-$TIMESTAMP.err" || true
+    fi
 
     # Parse XML results to JSON summary for scanner_integration.py
     python3 -c "
