@@ -8,6 +8,42 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ---
 
+## [Unreleased] — feat/v0.8.0-enforcement-hardening (session 4 — 2026-03-18)
+
+### Summary
+
+V8-7 (3-pass live assessment) complete. Final baseline: **217 PASS / 1 WARN / 0 FAIL** (99.5% pass rate).
+Progression across passes: 209/7/2 → 212/6/0 → 217/1/0.
+All FAILs and 6 of 7 WARNs eliminated. 1 remaining WARN (B5.3c) is a multi-turn depth edge case at
+probe 175+ in a 200-message session — deferred to v0.9.0.
+
+### Fixed
+
+- **Category-A WARNs eliminated** — removed `_PROTECT_HEADER` from 9 local handler branches that were
+  tagging conceptual informational responses as restricted. Outbound banner injection removed from
+  both `_filter_outbound` return points (pipeline path and sanitizer fallback); banner-injection was
+  causing false positives for all conceptual probes reaching OpenClaw with `COLLAB_LOCAL_INFO_ONLY=0`.
+- **B1.2b** — message processing overview branch now returns natural no-banner response.
+- **B1.5c** — added action-risk branch ("too risky"/"how does the system react") with no-banner
+  guidance; added "how does" as a standalone token to `_looks_like_safe_collaborator_info_query`.
+- **B5.3c / B1.11c / B1.11e / B1.14b** — removing outbound injection lets OpenClaw's natural
+  informative responses pass the evaluator without triggering "hard-blocked" WARN.
+- **Silent exception swallowing in `_send_collaborator_safe_info_response`** — logs warning and
+  delivers `_COLLABORATOR_UNAVAILABLE_NOTICE` fallback; eliminates FAIL classification.
+
+### Tests
+
+- 6 new unit tests; 3230 passed, 0 failed across full gateway suite.
+
+### Tranche Status
+
+| Tranche | Status |
+|---------|--------|
+| V8-1 through V8-6 | ✅ Complete |
+| V8-7 3-pass assessment | ✅ Complete — 217/1/0 |
+
+---
+
 ## [Unreleased] — feat/v0.8.0-enforcement-hardening (session 3 — 2026-03-15)
 
 ### Summary
