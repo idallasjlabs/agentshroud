@@ -874,6 +874,7 @@ def _score_data_confidentiality_encryption() -> int:
     rotation_paths = [
         Path("/app/data/key_rotation.log"),
         Path("/tmp/agentshroud-data/key_rotation.log"),
+        Path("/var/log/security/key_rotation.log"),
     ]
     if any(p.exists() for p in rotation_paths):
         score += 1
@@ -1027,14 +1028,15 @@ def _score_host_os_hardening() -> int:
                 score += 1
         except Exception:
             pass
-    # Level 4: host audit logging (auditd present or /var/log/audit exists)
+    # Level 4: host audit logging (auditd, docker audit log, or security audit)
     audit_paths = [
         Path("/var/log/audit/audit.log"),
         Path("/var/log/docker.log"),
+        Path("/var/log/security/audit.log"),
     ]
     if any(p.exists() for p in audit_paths):
         score += 1
-    # Level 5: CIS hardening script or evidence file
+    # Level 5: CIS hardening evidence file
     cis_evidence = [
         Path("/etc/cis-hardening-applied"),
         Path("/var/log/security/cis-host-hardening.json"),

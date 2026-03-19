@@ -68,6 +68,7 @@ services:
       - AGENTSHROUD_CLOUD_MODEL_REF=${AGENTSHROUD_CLOUD_MODEL_REF:-anthropic/claude-opus-4-6}
       - AGENTSHROUD_LOCAL_MODEL_REF=${AGENTSHROUD_LOCAL_MODEL_REF:-ollama/qwen3:14b}
       - OPENCLAW_MAIN_MODEL=${OPENCLAW_MAIN_MODEL:-}
+      - DOCKER_CONTENT_TRUST=1
     group_add:
       - "991"   # docker socket GID — read-only service introspection for SOC
     security_opt:
