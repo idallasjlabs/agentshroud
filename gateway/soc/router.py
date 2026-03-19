@@ -12,9 +12,12 @@ Every handler:
 """
 from __future__ import annotations
 
+import asyncio
 import json
 import logging
 import os
+import urllib.error
+import urllib.request
 from pathlib import Path
 from typing import Any, Dict, List, Optional
 
@@ -22,7 +25,7 @@ from fastapi import APIRouter, Depends, HTTPException, Query, Request, WebSocket
 from fastapi.responses import HTMLResponse, JSONResponse, StreamingResponse
 from pydantic import BaseModel
 
-from .auth import SCLCaller, get_caller, issue_ws_token
+from .auth import SCLCaller, get_caller, issue_session_token, issue_ws_token
 from .models import (
     AuditLogEntry,
     AuditResult,
@@ -102,8 +105,13 @@ async def auth_login(body: LoginRequest) -> JSONResponse:
         )
     from ..security.rbac_config import RBACConfig
     owner_id = RBACConfig().owner_user_id
+    session_token = issue_session_token(cfg_token, owner_id)
     response = JSONResponse(content={"ok": True, "user_id": owner_id})
-    response.set_cookie("soc_session", body.token, httponly=True, samesite="strict")
+    _dev_mode = os.environ.get("AGENTSHROUD_DEV_MODE", "0").lower() in ("1", "true", "yes")
+    response.set_cookie(
+        "soc_session", session_token,
+        httponly=True, samesite="strict", secure=not _dev_mode,
+    )
     return response
 
 
@@ -981,6 +989,34 @@ async def get_config(caller: SCLCaller = Depends(get_caller)) -> Dict:
     }
 
 
+# ---------------------------------------------------------------------------
+# Scan implementation helpers
+# ---------------------------------------------------------------------------
+
+_SECURITY_SCAN_SCRIPT = "/usr/local/bin/security-scan.sh"
+_SCANNER_FLAG_MAP = {
+    "trivy": "--trivy",
+    "clamav": "--clamav",
+    "openscap": "--oscap",
+    "all": "--all",
+}
+
+
+async def _launch_scan_background(scanner: str) -> None:
+    """Launch security-scan.sh for the given scanner and discard the handle (fire-and-forget)."""
+    flag = _SCANNER_FLAG_MAP[scanner]
+    try:
+        proc = await asyncio.create_subprocess_exec(
+            _SECURITY_SCAN_SCRIPT, flag,
+            stdout=asyncio.subprocess.DEVNULL,
+            stderr=asyncio.subprocess.DEVNULL,
+        )
+        # Do not await — results are written to /var/log/security/* shared volume
+        asyncio.ensure_future(proc.wait())
+    except Exception as exc:
+        logger.warning("launch_scan_background(%s): %s", scanner, exc)
+
+
 class ScanRequest(BaseModel):
     confirm: bool = False
 
@@ -992,11 +1028,20 @@ async def run_scanner(
     caller: SCLCaller = Depends(get_caller),
 ) -> Dict:
     caller.require(Action.EXECUTE, Resource.SYSTEM)
-    valid_scanners = {"trivy", "clamav", "openscap", "all"}
+    valid_scanners = set(_SCANNER_FLAG_MAP)
     if scanner not in valid_scanners:
-        raise HTTPException(status_code=400, detail={"error": True, "code": "VALIDATION_ERROR", "message": f"Unknown scanner: {scanner}"})
+        raise HTTPException(
+            status_code=400,
+            detail={"error": True, "code": "VALIDATION_ERROR", "message": f"Unknown scanner: {scanner}. Valid: {sorted(valid_scanners)}"},
+        )
     _log_audit(caller, f"scan {scanner}", target="system")
-    return {"ok": True, "scanner": scanner, "status": "initiated", "note": "Results will appear in /soc/v1/scan/results"}
+    await _launch_scan_background(scanner)
+    return {
+        "ok": True,
+        "scanner": scanner,
+        "status": "initiated",
+        "note": "Scan running in background. Results will appear in /soc/v1/scan/results within minutes.",
+    }
 
 
 @router.get("/scan/results")
@@ -1114,10 +1159,65 @@ async def get_trivy_results(caller: SCLCaller = Depends(get_caller)) -> Dict:
 # Updates / upgrade endpoints
 # ---------------------------------------------------------------------------
 
+_GH_RELEASES_API = "https://api.github.com/repos/idallasj/agentshroud/releases/latest"
+_CURRENT_VERSION = "0.9.0"
+
+
+def _fetch_latest_release() -> Dict:
+    """Query GitHub releases API. Returns {"tag_name": ..., "html_url": ...} or {"error": ...}."""
+    try:
+        req = urllib.request.Request(
+            _GH_RELEASES_API,
+            headers={"User-Agent": f"agentshroud-gateway/{_CURRENT_VERSION}", "Accept": "application/vnd.github+json"},
+        )
+        with urllib.request.urlopen(req, timeout=10) as resp:
+            data = json.loads(resp.read())
+        return {"tag_name": data.get("tag_name", ""), "html_url": data.get("html_url", ""), "body": data.get("body", "")}
+    except Exception as exc:
+        return {"error": str(exc)}
+
+
 @router.get("/updates")
 async def get_updates(caller: SCLCaller = Depends(get_caller)) -> Dict:
     caller.require(Action.READ, Resource.SYSTEM)
-    return {"available": [], "note": "Update check not implemented in this release"}
+    release = await asyncio.get_event_loop().run_in_executor(None, _fetch_latest_release)
+    if "error" in release:
+        return {"current_version": _CURRENT_VERSION, "available": [], "check_error": release["error"]}
+    latest = release.get("tag_name", "").lstrip("v")
+    available = []
+    if latest and latest != _CURRENT_VERSION:
+        available.append({"version": latest, "url": release.get("html_url", ""), "notes": release.get("body", "")})
+    return {"current_version": _CURRENT_VERSION, "latest_version": latest, "available": available}
+
+
+async def _ssh_compose(command: str, timeout: int = 120) -> tuple[int, str, str]:
+    """Run a shell command on the Docker Compose host via SSH.
+
+    Requires AGENTSHROUD_COMPOSE_HOST (SSH target, e.g. user@host) and
+    optionally AGENTSHROUD_COMPOSE_DIR (project directory, default /opt/agentshroud).
+    Returns (returncode, stdout, stderr).
+    """
+    host = os.environ.get("AGENTSHROUD_COMPOSE_HOST", "")
+    compose_dir = os.environ.get("AGENTSHROUD_COMPOSE_DIR", "/opt/agentshroud")
+    if not host:
+        return 1, "", "AGENTSHROUD_COMPOSE_HOST is not configured — cannot perform remote compose operations"
+    full_cmd = f"cd {compose_dir} && {command}"
+    try:
+        proc = await asyncio.create_subprocess_exec(
+            "ssh",
+            "-o", "BatchMode=yes",
+            "-o", "ConnectTimeout=10",
+            "-o", "StrictHostKeyChecking=accept-new",
+            host, full_cmd,
+            stdout=asyncio.subprocess.PIPE,
+            stderr=asyncio.subprocess.PIPE,
+        )
+        stdout, stderr = await asyncio.wait_for(proc.communicate(), timeout=timeout)
+        return proc.returncode or 0, stdout.decode(errors="replace"), stderr.decode(errors="replace")
+    except asyncio.TimeoutError:
+        return 1, "", f"SSH command timed out after {timeout}s"
+    except Exception as exc:
+        return 1, "", str(exc)
 
 
 @router.post("/updates/gateway/upgrade")
@@ -1129,9 +1229,22 @@ async def upgrade_gateway(
     if not caller.is_owner():
         raise HTTPException(status_code=403, detail={"error": True, "code": "PERMISSION_DENIED", "message": "Owner required"})
     if not body.confirm:
-        return _confirmation_required("upgrade gateway", "agentshroud-gateway", "This will git pull + rebuild gateway. Resend with confirm: true.")
+        return _confirmation_required(
+            "upgrade gateway", "agentshroud-gateway",
+            "Runs: git pull origin main && docker compose up -d --build --no-deps agentshroud-gateway "
+            "on AGENTSHROUD_COMPOSE_HOST. Resend with confirm: true.",
+        )
     _log_audit(caller, "upgrade gateway", target="agentshroud-gateway")
-    return JSONResponse(content={"ok": True, "action": "upgrade", "target": "gateway"})
+    rc, stdout, stderr = await _ssh_compose(
+        "git pull origin main && docker compose up -d --build --no-deps agentshroud-gateway",
+        timeout=300,
+    )
+    if rc != 0:
+        return JSONResponse(
+            status_code=status.HTTP_500_INTERNAL_SERVER_ERROR,
+            content={"ok": False, "action": "upgrade", "target": "gateway", "exit_code": rc, "stderr": stderr[:2000]},
+        )
+    return JSONResponse(content={"ok": True, "action": "upgrade", "target": "gateway", "stdout": stdout[:2000]})
 
 
 @router.post("/updates/gateway/rollback")
@@ -1143,9 +1256,23 @@ async def rollback_gateway(
     if not caller.is_owner():
         raise HTTPException(status_code=403, detail={"error": True, "code": "PERMISSION_DENIED", "message": "Owner required"})
     if not body.confirm:
-        return _confirmation_required("rollback gateway", "agentshroud-gateway", "This will revert to the previous gateway version. Resend with confirm: true.")
+        return _confirmation_required(
+            "rollback gateway", "agentshroud-gateway",
+            "Runs: git checkout HEAD~1 -- gateway/ && docker compose up -d --build --no-deps agentshroud-gateway "
+            "on AGENTSHROUD_COMPOSE_HOST. Resend with confirm: true.",
+        )
     _log_audit(caller, "rollback gateway", target="agentshroud-gateway")
-    return JSONResponse(content={"ok": True, "action": "rollback", "target": "gateway"})
+    rollback_tag = os.environ.get("AGENTSHROUD_ROLLBACK_TAG", "HEAD~1")
+    rc, stdout, stderr = await _ssh_compose(
+        f"git checkout {rollback_tag} -- gateway/ && docker compose up -d --build --no-deps agentshroud-gateway",
+        timeout=300,
+    )
+    if rc != 0:
+        return JSONResponse(
+            status_code=status.HTTP_500_INTERNAL_SERVER_ERROR,
+            content={"ok": False, "action": "rollback", "target": "gateway", "exit_code": rc, "stderr": stderr[:2000]},
+        )
+    return JSONResponse(content={"ok": True, "action": "rollback", "target": "gateway", "stdout": stdout[:2000]})
 
 
 # ---------------------------------------------------------------------------

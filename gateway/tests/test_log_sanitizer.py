@@ -67,5 +67,16 @@ class TestLogSanitizer:
         rec = logging.LogRecord("test", logging.INFO, "", 0, "test", (), None)
         assert self.sanitizer.filter(rec) is True
 
+    def test_telegram_bot_token_in_url_redacted(self):
+        # Simulate a URL path logged by the Telegram proxy containing a bot token
+        result = self._filter_msg("GET /telegram-api/bot1234567890:ABCDefghijklmnopqrstuvwxyz01234567/sendMessage")
+        assert "1234567890:ABCDefghijklmnopqrstuvwxyz01234567" not in result
+        assert "/bot***/" in result
+
+    def test_telegram_bot_token_shorter_id_redacted(self):
+        # Minimum-length bot ID (8 digits)
+        result = self._filter_msg("POST /bot12345678:ABCDefghijklmnopqrstuvwxyz01234567/getUpdates")
+        assert "12345678:ABCDefghijklmnopqrstuvwxyz01234567" not in result
+
     def test_install_log_sanitizer_no_error(self):
         install_log_sanitizer()  # Should not raise

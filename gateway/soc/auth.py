@@ -29,6 +29,10 @@ logger = logging.getLogger("agentshroud.soc.auth")
 _WS_TOKEN_TTL = 300  # seconds
 _ws_tokens: dict[str, tuple[str, float]] = {}  # token → (user_id, issued_at)
 
+# Session tokens: HMAC-derived, 8-hour TTL (not the raw gateway password)
+_SESSION_TTL = 28800  # seconds (8 hours)
+_session_tokens: dict[str, tuple[str, float]] = {}  # token → (user_id, issued_at)
+
 
 def _get_rbac_manager() -> RBACManager:
     return RBACManager(RBACConfig())
@@ -55,6 +59,33 @@ def _get_config_token() -> str:
             except OSError:
                 pass
     return token
+
+
+def issue_session_token(cfg_token: str, owner_id: str) -> str:
+    """Derive an HMAC session token and register it in the session store."""
+    ts = int(time.time())
+    token = hmac.new(
+        cfg_token.encode(), f"{owner_id}:{ts}".encode(), "sha256"
+    ).hexdigest()
+    _session_tokens[token] = (owner_id, float(ts))
+    # Prune expired session tokens
+    cutoff = time.time() - _SESSION_TTL
+    expired = [t for t, (_, ts_) in _session_tokens.items() if ts_ < cutoff]
+    for t in expired:
+        _session_tokens.pop(t, None)
+    return token
+
+
+def _verify_session_token(token: str) -> Optional[str]:
+    """Return user_id if token is a valid unexpired session token, else None."""
+    entry = _session_tokens.get(token)
+    if entry is None:
+        return None
+    user_id, issued_at = entry
+    if time.time() - issued_at > _SESSION_TTL:
+        _session_tokens.pop(token, None)
+        return None
+    return user_id
 
 
 def issue_ws_token(user_id: str) -> str:
@@ -127,6 +158,11 @@ def _resolve_caller(
     elif x_soc_token:
         token = x_soc_token.strip()
     elif soc_session:
+        # Cookie path: check HMAC session store first, then fall back to raw bearer
+        session_user = _verify_session_token(soc_session.strip())
+        if session_user:
+            rbac = _get_rbac_manager()
+            return SCLCaller(user_id=session_user, role=Role.OWNER, rbac=rbac)
         token = soc_session.strip()
 
     if token and _verify_bearer(token, config_token):
