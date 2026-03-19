@@ -2,7 +2,10 @@
 """SOC Service Manager — wraps container runtime engine to produce ServiceDescriptors."""
 from __future__ import annotations
 
+import http.client
+import json as _json
 import logging
+import socket
 import time
 from typing import Any, Dict, List, Optional
 
@@ -11,6 +14,32 @@ from .models import HealthStatus, ResourceUsage, ServiceDescriptor, ServiceStatu
 logger = logging.getLogger("agentshroud.soc.services")
 
 # Services the SOC knows about — core + security sidecar containers.
+_DOCKER_SOCK = "/var/run/docker.sock"
+
+
+def _inspect_via_socket(name: str) -> Optional[Dict[str, Any]]:
+    """Query Docker daemon directly via Unix socket — no CLI needed."""
+    try:
+        class _UnixHTTP(http.client.HTTPConnection):
+            def connect(self) -> None:
+                self.sock = socket.socket(socket.AF_UNIX, socket.SOCK_STREAM)
+                self.sock.settimeout(3)
+                self.sock.connect(_DOCKER_SOCK)
+
+        conn = _UnixHTTP("localhost")
+        conn.request("GET", f"/containers/{name}/json")
+        resp = conn.getresponse()
+        body = resp.read()
+        if resp.status == 404:
+            return {}  # container not found / stopped
+        if resp.status != 200:
+            return None
+        return _json.loads(body)
+    except Exception as exc:
+        logger.debug("_inspect_via_socket(%s): %s", name, exc)
+        return None
+
+
 _KNOWN_SERVICES = [
     "agentshroud-bot",
     "agentshroud-gateway",
@@ -76,11 +105,18 @@ class ServiceManager:
         return self._describe_service(name, engine)
 
     def _describe_service(self, name: str, engine: Optional[Any]) -> ServiceDescriptor:
-        if engine is None:
-            return ServiceDescriptor(name=name, status=ServiceStatus.UNKNOWN)
+        info: Optional[Dict[str, Any]] = None
+        if engine is not None:
+            try:
+                info = engine.inspect(name)
+            except Exception as exc:
+                logger.debug("_describe_service(%s): engine.inspect failed: %s", name, exc)
+        if info is None:
+            info = _inspect_via_socket(name)
         try:
-            info = engine.inspect(name)
-            if not info:
+            if info is None:
+                return ServiceDescriptor(name=name, status=ServiceStatus.UNKNOWN)
+            if not info:  # empty dict → container not found
                 return ServiceDescriptor(name=name, status=ServiceStatus.STOPPED)
             state = info.get("State", {})
             status_raw = state.get("Status", "")

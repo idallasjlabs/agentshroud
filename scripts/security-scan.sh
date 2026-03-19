@@ -302,3 +302,25 @@ if [[ "${SCAN_FAILURES}" -gt 0 ]]; then
 fi
 
 success "All security scans passed"
+
+# ---------------------------------------------------------------------------
+# Push reports to gateway SOC volume (security-reports:/var/log/security)
+# ---------------------------------------------------------------------------
+# Reports written locally are not visible to the gateway until copied into the
+# Docker volume that backs /var/log/security inside the gateway container.
+# This step is a no-op if the gateway is not running.
+
+if command -v docker &>/dev/null && docker inspect agentshroud-gateway &>/dev/null 2>&1; then
+    info "Pushing reports to gateway SOC volume..."
+    for subdir in trivy sbom openscap semgrep; do
+        src="${REPORTS_DIR}/${subdir}"
+        if [[ -d "${src}" ]] && [[ -n "$(ls -A "${src}" 2>/dev/null)" ]]; then
+            docker exec agentshroud-gateway mkdir -p "/var/log/security/${subdir}" 2>/dev/null || true
+            docker cp "${src}/." "agentshroud-gateway:/var/log/security/${subdir}/" 2>/dev/null \
+                && success "Pushed ${subdir} reports to SOC" \
+                || warn "Could not push ${subdir} reports (volume may be read-only)"
+        fi
+    done
+else
+    info "Gateway not running — skipping SOC volume push"
+fi
