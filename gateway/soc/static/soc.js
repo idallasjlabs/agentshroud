@@ -103,11 +103,17 @@ window._closeModal = function() {
 // WebSocket
 // ---------------------------------------------------------------------------
 
-function _connectWS() {
+async function _connectWS() {
   if (_ws && _ws.readyState <= 1) return;
   _setWSStatus('connecting');
+  // Exchange bearer token for a short-lived one-time WS token
+  let wsToken = _token;
+  try {
+    const r = await _post('/auth/ws-token');
+    if (r.ok && r.data.token) wsToken = r.data.token;
+  } catch (_) {}
   const wsBase = location.origin.replace(/^http/, 'ws');
-  _ws = new WebSocket(`${wsBase}${SOC_BASE}/ws?token=${encodeURIComponent(_token)}`);
+  _ws = new WebSocket(`${wsBase}${SOC_BASE}/ws?token=${encodeURIComponent(wsToken)}`);
   _ws.addEventListener('open', () => {
     _setWSStatus('connected');
     _ws.send(JSON.stringify({ subscribe: ['security_event', 'egress_event', 'service_event', 'log_event'] }));
@@ -332,6 +338,9 @@ function _renderScanners(data) {
             ${!crit && !high && !med && !low ? `<span style="font-size:11px;color:var(--text-muted)">No findings</span>` : ''}
           </div>
           ${s.error ? `<div style="margin-top:.5rem;font-size:11px;color:var(--danger)">${_esc(s.error)}</div>` : ''}
+          <div style="margin-top:.75rem">
+            <button class="btn btn-sm" onclick="window._runScan('${_esc(key)}', this)">▶ Run Scan</button>
+          </div>
         </div>
       </div>`;
   }).join('');
@@ -354,6 +363,18 @@ function _renderSbom(sbom, status) {
 }
 
 window._reloadScanners = _loadScanners;
+
+window._runScan = async function(scanner, btn) {
+  if (btn) { btn.disabled = true; btn.textContent = '⏳ Launching…'; }
+  const { ok, data } = await _post(`/scan/${encodeURIComponent(scanner)}`);
+  if (btn) { btn.disabled = false; btn.textContent = '▶ Run Scan'; }
+  if (ok) {
+    _toast(`${scanner} scan launched — results will appear when complete`, 'success');
+    setTimeout(_loadScanners, 3000);
+  } else {
+    _toast(`Failed to launch ${scanner} scan: ${data?.message || data?.detail || 'unknown error'}`, 'danger');
+  }
+};
 
 window._downloadSbom = async function() {
   const { data, status } = await _get('/sbom');
@@ -652,9 +673,12 @@ async function _loadConfig() {
   const mEl = document.getElementById('modules-view');
   if (mEl && Array.isArray(modules)) {
     mEl.innerHTML = modules.map(m =>
-      `<div style="display:flex;justify-content:space-between;margin-bottom:.4rem;font-size:12px">
-        <span>${_esc(m.name)}</span>
-        <span class="badge badge-${m.available ? 'success' : 'muted'}">${m.available ? 'loaded' : 'unavailable'}</span>
+      `<div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:.5rem;font-size:12px;padding:.35rem .5rem;border-radius:4px;background:var(--surface-alt, rgba(255,255,255,0.03))">
+        <code style="color:var(--text)">${_esc(m.name)}</code>
+        <div style="display:flex;gap:.5rem;align-items:center">
+          <span class="badge badge-${m.available ? 'success' : 'muted'}">${m.available ? 'loaded' : 'unavailable'}</span>
+          ${m.available ? `<span style="color:var(--text-muted);font-size:11px">${_esc(m.mode || 'enforce')}</span>` : ''}
+        </div>
       </div>`
     ).join('');
   }

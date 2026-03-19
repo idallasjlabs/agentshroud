@@ -15,7 +15,7 @@ from typing import Optional, Set
 
 from fastapi import WebSocket, WebSocketDisconnect
 
-from .auth import redeem_ws_token
+from .auth import redeem_ws_token, _get_config_token
 from .models import WSEvent, WSEventType
 
 logger = logging.getLogger("agentshroud.soc.websocket")
@@ -170,9 +170,9 @@ async def ws_soc_endpoint(websocket: WebSocket) -> None:
             user_id = redeem_ws_token(candidate)
 
     if not user_id:
-        # For compatibility in dev: accept gateway password as token
-        import hmac, os
-        gateway_token = os.environ.get("AGENTSHROUD_GATEWAY_PASSWORD", "") or os.environ.get("OPENCLAW_GATEWAY_PASSWORD", "")
+        # Compatibility fallback: accept raw gateway password directly as token
+        import hmac
+        gateway_token = _get_config_token()
         if gateway_token and token and hmac.compare_digest(token.encode(), gateway_token.encode()):
             from ..security.rbac_config import RBACConfig
             user_id = RBACConfig().owner_user_id
