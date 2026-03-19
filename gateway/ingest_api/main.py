@@ -194,6 +194,12 @@ app.include_router(version_router, dependencies=[Depends(auth_dep)])
 # Mount Shared Command Layer (SCL) — unified /soc/v1/ API + /soc/ dashboard
 app.include_router(soc_router)
 
+# Redirect bare /soc and /soc/ to canonical /soc/v1/ prefix
+@app.get("/soc", include_in_schema=False)
+@app.get("/soc/", include_in_schema=False)
+async def soc_redirect():
+    return RedirectResponse(url="/soc/v1/", status_code=307)
+
 # Serve SOC static assets at /soc/static/
 _soc_static = Path(__file__).parent.parent / "soc" / "static"
 if _soc_static.exists():

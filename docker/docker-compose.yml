@@ -196,7 +196,6 @@ services:
       start_period: 60s
     networks:
       - agentshroud-isolated
-      - agentshroud-console
     depends_on:
       gateway:
         condition: service_healthy
@@ -271,7 +270,7 @@ services:
   # Lightweight log processor: collects all container logs, structures them,
   # forwards to Wazuh and local archive. (IEC 62443 FR6 SR 6.1)
   fluent-bit:
-    image: fluent/fluent-bit:3
+    image: fluent/fluent-bit:3.2
     container_name: agentshroud-fluent-bit
     hostname: fluent-bit
     restart: unless-stopped
