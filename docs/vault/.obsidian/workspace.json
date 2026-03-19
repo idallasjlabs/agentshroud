@@ -1,0 +1,203 @@
+{
+  "main": {
+    "id": "588793b41fbccdee",
+    "type": "split",
+    "children": [
+      {
+        "id": "424e41b5c69e2fee",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "8f06ec6da960d15f",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "09 - Diagrams/Startup Flow Diagram.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Startup Flow Diagram"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "1d2d1931e238821e",
+    "type": "split",
+    "children": [
+      {
+        "id": "165416ad543b9694",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "2881182f05cca5a7",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "c729ff6950b0caac",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "0f7046f72c60df36",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "e1979053f3a5d2a5",
+    "type": "split",
+    "children": [
+      {
+        "id": "dc911c7572762e13",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "e317d7136d1611bb",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "09 - Diagrams/Startup Flow Diagram.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for Startup Flow Diagram"
+            }
+          },
+          {
+            "id": "d370b4c4de65f878",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "09 - Diagrams/Startup Flow Diagram.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from Startup Flow Diagram"
+            }
+          },
+          {
+            "id": "be0f49e0e7b3ad91",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "1d5aaf03cbe7a83f",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "All properties"
+            }
+          },
+          {
+            "id": "f2f3761e3a4380a0",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "09 - Diagrams/Startup Flow Diagram.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Outline of Startup Flow Diagram"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "bases:Create new base": false
+    }
+  },
+  "active": "8f06ec6da960d15f",
+  "lastOpenFiles": [
+    "09 - Diagrams/Security Pipeline Flow.md",
+    "09 - Diagrams/Network Topology.md",
+    "09 - Diagrams/Full System Flowchart.md",
+    "09 - Diagrams/Dependency Graph.md",
+    "08 - Runbooks/Restart Procedure.md",
+    "08 - Runbooks/Kill Switch Procedure.md",
+    "08 - Runbooks/Health Checks.md",
+    "08 - Runbooks/First Time Setup.md",
+    "08 - Runbooks/Crash Recovery.md",
+    "01 - Architecture/Data Flow.md",
+    "02 - Modules/Gateway Core/sanitizer.py.md",
+    "01 - Architecture/Architecture Overview.md",
+    "00 - START HERE/System Overview.md",
+    "00 - START HERE/Home.md"
+  ]
+}

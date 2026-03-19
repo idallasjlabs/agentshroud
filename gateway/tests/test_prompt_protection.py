@@ -74,7 +74,7 @@ class TestPromptProtection:
         
         for test_text in test_cases:
             result = prompt_protection.scan_response(test_text)
-            assert "[FILE_REFERENCE_REDACTED]" in result.redacted_text
+            assert "[CONTENT]" in result.redacted_text
             assert len(result.redactions_made) > 0
             assert result.risk_score > 0
             
@@ -109,16 +109,39 @@ class TestPromptProtection:
             assert result.risk_score > 0
             
     def test_infrastructure_redaction(self, prompt_protection):
-        """Test redaction of infrastructure details."""
+        """Test redaction of targeted infrastructure details.
+
+        Generic hostnames (e.g. server.example.com) are NOT redacted to avoid
+        false positives on filenames like 'file.py' or 'test.md'. Only IPs,
+        Tailscale FQDNs, and known internal bot names (e.g. 'marvin') are redacted.
+        'agentshroud' and 'agentshroud-bot' are public branding and NOT redacted.
+        """
         test_cases = [
-            "Connect to server.example.com",
             "The IP address is 192.168.1.100",
             "SSH to marvin.tailscale.net",
-            "Hostname is agentshroud-bot",
-            "Using openclaw system"
         ]
-        
+
         for test_text in test_cases:
+            result = prompt_protection.scan_response(test_text)
+            assert "[INFRASTRUCTURE_REDACTED]" in result.redacted_text
+            assert len(result.redactions_made) > 0
+            assert result.risk_score > 0
+
+    def test_product_name_not_redacted(self, prompt_protection):
+        """Product name 'agentshroud' and 'agentshroud-bot' are public branding — must not be redacted."""
+        for text in ["Using AgentShroud gateway", "agentshroud-bot is the container name"]:
+            result = prompt_protection.scan_response(text)
+            assert "[INFRASTRUCTURE_REDACTED]" not in result.redacted_text
+
+    def test_dynamic_bot_hostname_redaction(self, prompt_protection):
+        """Test that dynamically registered bot hostnames are redacted."""
+        prompt_protection.register_bot_hostnames(["openclaw", "nanobot"])
+
+        cases = [
+            ("Using openclaw system", "openclaw"),
+            ("Running nanobot agent", "nanobot"),
+        ]
+        for test_text, _ in cases:
             result = prompt_protection.scan_response(test_text)
             assert "[INFRASTRUCTURE_REDACTED]" in result.redacted_text
             assert len(result.redactions_made) > 0

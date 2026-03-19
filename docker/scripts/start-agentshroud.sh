@@ -13,7 +13,14 @@ if [ -f "/run/secrets/gateway_password" ]; then
     export OPENCLAW_GATEWAY_PASSWORD="$(cat /run/secrets/gateway_password)"
     # FINAL: also set GATEWAY_AUTH_TOKEN so op-wrapper.sh routes through gateway
     export GATEWAY_AUTH_TOKEN="$OPENCLAW_GATEWAY_PASSWORD"
-    echo "[startup] Loaded Gateway password"
+    # SECURITY (H3): Strip DNS architecture info from resolv.conf comments
+# Docker adds internal network details that leak infrastructure topology
+sed -i /^#.*ExtServers/d /etc/resolv.conf 2>/dev/null || true
+sed -i /^#.*Overrides/d /etc/resolv.conf 2>/dev/null || true
+sed -i /^#.*Based on host/d /etc/resolv.conf 2>/dev/null || true
+sed -i /^#.*Option ndots/d /etc/resolv.conf 2>/dev/null || true
+
+echo "[startup] Loaded Gateway password"
 else
     echo "[startup] Warning: Gateway password file not found"
 fi
@@ -28,12 +35,43 @@ elif [ -n "${TELEGRAM_BOT_TOKEN_FILE:-}" ] && [ -f "$TELEGRAM_BOT_TOKEN_FILE" ];
     echo "[startup] Loaded Telegram bot token from $TELEGRAM_BOT_TOKEN_FILE"
 fi
 
-# Export OpenAI API key from secret file
-if [ -f "/run/secrets/openai_api_key" ]; then
+# Export OpenAI API key from secret file (optional)
+if [ -f "/run/secrets/openai_api_key" ] && [ -s "/run/secrets/openai_api_key" ]; then
     export OPENAI_API_KEY="$(cat /run/secrets/openai_api_key)"
     echo "[startup] Loaded OpenAI API key"
 else
-    echo "[startup] Warning: OpenAI API key file not found"
+    echo "[startup] OpenAI API key not configured (optional)"
+fi
+
+# Export Google Gemini API key from secret file (optional)
+if [ -f "/run/secrets/google_api_key" ] && [ -s "/run/secrets/google_api_key" ]; then
+    export GOOGLE_API_KEY="$(cat /run/secrets/google_api_key)"
+    echo "[startup] Loaded Google API key"
+else
+    echo "[startup] Google API key not configured (optional)"
+fi
+
+_LOCAL_ONLY_MODEL=false
+_MODEL_MODE="$(echo "${AGENTSHROUD_MODEL_MODE:-local}" | tr '[:upper:]' '[:lower:]')"
+if [[ "${_MODEL_MODE}" != "cloud" ]]; then
+    _LOCAL_ONLY_MODEL=true
+fi
+if [[ "${OPENCLAW_MAIN_MODEL:-}" == ollama/* ]]; then
+    _LOCAL_ONLY_MODEL=true
+fi
+if $_LOCAL_ONLY_MODEL && [ -z "${OLLAMA_API_KEY:-}" ]; then
+    export OLLAMA_API_KEY="ollama-local"
+    echo "[startup] Set default OLLAMA_API_KEY for local provider registration"
+fi
+
+# Load Claude OAuth token only when running non-local model backends.
+if ! $_LOCAL_ONLY_MODEL; then
+    if [ -f "/run/secrets/anthropic_oauth_token" ] && [ -s "/run/secrets/anthropic_oauth_token" ]; then
+        export ANTHROPIC_OAUTH_TOKEN="$(cat /run/secrets/anthropic_oauth_token)"
+        echo "[startup] Loaded Claude OAuth token (from secret file)"
+    fi
+else
+    echo "[startup] Local Ollama model selected — skipping Claude token load"
 fi
 
 # FINAL: Load secrets via gateway op-proxy (bot has no direct 1Password access).
@@ -75,33 +113,49 @@ op_proxy_read_with_retry() {
     return 1
 }
 
-if [ -n "${GATEWAY_AUTH_TOKEN:-}" ] && [ -n "${GATEWAY_OP_PROXY_URL:-}" ]; then
+# Only attempt op-proxy reads if 1Password credentials are present and non-empty
+_OP_AVAILABLE=false
+if [ -f "/run/secrets/1password_bot_email" ] && [ -s "/run/secrets/1password_bot_email" ]; then
+    _OP_AVAILABLE=true
+fi
+
+if [ -n "${GATEWAY_AUTH_TOKEN:-}" ] && [ -n "${GATEWAY_OP_PROXY_URL:-}" ] && $_OP_AVAILABLE; then
     echo "[startup] Loading secrets via gateway op-proxy (${GATEWAY_OP_PROXY_URL})"
 
-    # Load Claude OAuth token (replaces static ANTHROPIC_API_KEY)
-    # Item: AgentShroud - Anthropic Claude OAuth Token (Agent Shroud Bot Credentials vault)
-    ANTHROPIC_OAUTH_TOKEN="$(op_proxy_read_with_retry "Claude OAuth token" \
-        "op://Agent Shroud Bot Credentials/AgentShroud - Anthropic Claude OAuth Token/claude oath token")" || true
-    if [ -n "$ANTHROPIC_OAUTH_TOKEN" ]; then
-        export ANTHROPIC_OAUTH_TOKEN
-        echo "[startup] ✓ Loaded Claude OAuth token"
+    # Load Claude OAuth token via op-proxy only when not pinned to local Ollama models.
+    if ! $_LOCAL_ONLY_MODEL; then
+        if [ -z "${ANTHROPIC_OAUTH_TOKEN:-}" ]; then
+            ANTHROPIC_OAUTH_TOKEN="$(op_proxy_read_with_retry "Claude OAuth token" \
+                "op://Agent Shroud Bot Credentials/AgentShroud - Anthropic Claude OAuth Token/claude oath token")" || true
+            if [ -n "$ANTHROPIC_OAUTH_TOKEN" ]; then
+                export ANTHROPIC_OAUTH_TOKEN
+                echo "[startup] ✓ Loaded Claude OAuth token (via op-proxy)"
+            else
+                echo "[startup] ⚠ Could not load Claude OAuth token after retries"
+            fi
+        else
+            echo "[startup] ✓ Claude OAuth token already loaded (from secret file)"
+        fi
     else
-        echo "[startup] ⚠ Could not load Claude OAuth token after retries"
+        echo "[startup] Local Ollama model selected — skipping Claude op-proxy fetch"
     fi
 
-    # Load Brave Search API key
+    # Load Brave Search API key (non-blocking single attempt).
+    # This key is optional; do not delay bot startup for retry backoff loops.
     # Item ID: 6j6ij5tzld6kobvit5tk6ufrhq (Brave Search API - agentshroud.ai@gmail.com)
-    BRAVE_API_KEY="$(op_proxy_read_with_retry "Brave Search API key" \
-        "op://Agent Shroud Bot Credentials/6j6ij5tzld6kobvit5tk6ufrhq/brave search api key")" || true
+    BRAVE_API_KEY="${BRAVE_API_KEY:-$(/usr/local/bin/op-wrapper.sh read \
+        "op://Agent Shroud Bot Credentials/6j6ij5tzld6kobvit5tk6ufrhq/brave search api key" \
+        2>/dev/null || true)}"
     if [ -n "$BRAVE_API_KEY" ]; then
         export BRAVE_API_KEY
         echo "[startup] ✓ Loaded Brave Search API key"
     else
-        echo "[startup] ⚠ Could not load Brave Search API key after retries"
+        echo "[startup] ⚠ Brave Search API key unavailable (continuing without web search key)"
     fi
 
     # iCloud email credentials — loaded in background to avoid blocking startup
     # (non-critical: email features degrade gracefully without iCloud creds)
+    SECRETS_DIR="${SECRETS_DIR:-/tmp/secrets}"
     _ICLOUD_ENV_FILE="/tmp/.icloud-env"
     (
         ICLOUD_APP_PASSWORD="$(op_proxy_read_with_retry "iCloud app password" \
@@ -109,6 +163,22 @@ if [ -n "${GATEWAY_AUTH_TOKEN:-}" ] && [ -n "${GATEWAY_OP_PROXY_URL:-}" ]; then
         if [ -n "$ICLOUD_APP_PASSWORD" ]; then
             cat > "$_ICLOUD_ENV_FILE" << EOF
 export ICLOUD_APP_PASSWORD="$ICLOUD_APP_PASSWORD"
+
+# ── SECURITY (C3/H2): Write secrets to tmpfs files, then unset env vars ──
+# Prevents secrets from appearing in /proc/*/environ of child processes.
+# OpenClaw reads these at startup; after that, file-based access only.
+SECRETS_DIR="\${SECRETS_DIR:-/tmp/secrets}"
+mkdir -p "\${SECRETS_DIR}"
+chmod 700 "\${SECRETS_DIR}"
+
+for _var in ANTHROPIC_OAUTH_TOKEN BRAVE_API_KEY ICLOUD_APP_PASSWORD; do
+  _val=\$(eval echo "\$\$_var")
+  if [ -n "\$_val" ]; then
+    printf '%s' "\$_val" > "\$SECRETS_DIR/\$_var"
+    chmod 600 "\$SECRETS_DIR/\$_var"
+  fi
+done
+echo "[security] ✓ Secrets written to tmpfs files, env vars preserved for OpenClaw startup"
 export ICLOUD_USERNAME="agentshroud.ai@gmail.com"
 export ICLOUD_EMAIL="agentshroud.ai@icloud.com"
 EOF
@@ -131,7 +201,7 @@ if [ -n "${_ICLOUD_BG_PID:-}" ]; then
     # Give it 3 seconds — if it's not done, gateway starts without iCloud
     for _i in 1 2 3; do
         if [ -f "${_ICLOUD_ENV_FILE:-/tmp/.icloud-env}" ]; then
-            . "$_ICLOUD_ENV_FILE"
+            . "$_ICLOUD_ENV_FILE" || true; set -u
             break
         fi
         sleep 1
@@ -143,7 +213,8 @@ fi
 
 # Start AgentShroud gateway (powered by OpenClaw CLI)
 echo "[startup] Starting AgentShroud gateway..."
-openclaw gateway --allow-unconfigured --bind lan &
+OPENCLAW_BIND_MODE="${OPENCLAW_GATEWAY_BIND:-loopback}"
+openclaw gateway --allow-unconfigured --bind "${OPENCLAW_BIND_MODE}" &
 OPENCLAW_PID=$!
 
 # Telegram notification helpers — ALL traffic routes through AgentShroud gateway
@@ -152,13 +223,24 @@ _OWNER_CHAT_ID="8096968754"
 _GATEWAY_TELEGRAM_BASE="${GATEWAY_OP_PROXY_URL:-http://gateway:8080}/telegram-api"
 
 _telegram_bot_token() {
+    # Try env var first (exported from Docker secret at line ~31)
+    if [ -n "${TELEGRAM_BOT_TOKEN:-}" ]; then
+        printf '%s' "$TELEGRAM_BOT_TOKEN"
+        return 0
+    fi
+    # Fall back to reading from OpenClaw config file (try both known paths)
     node -e "
-        try {
-            const c = JSON.parse(require('fs').readFileSync(
-                '/home/node/.openclaw/openclaw.json', 'utf8'));
-            process.stdout.write(
-                (c.channels && c.channels.telegram && c.channels.telegram.botToken) || '');
-        } catch(e) {}
+        const paths = [
+            '/home/node/.agentshroud/openclaw.json',
+            '/home/node/.openclaw/openclaw.json',
+        ];
+        for (const p of paths) {
+            try {
+                const c = JSON.parse(require('fs').readFileSync(p, 'utf8'));
+                const t = c.channels && c.channels.telegram && c.channels.telegram.botToken;
+                if (t) { process.stdout.write(t); process.exit(0); }
+            } catch(e) {}
+        }
     " 2>/dev/null
 }
 
@@ -174,18 +256,83 @@ _telegram_send() {
     curl -sf --max-time 10 -X POST "${_GATEWAY_TELEGRAM_BASE}/bot${token}/sendMessage" \
         -H "Content-Type: application/json" \
         -H "Authorization: Bearer ${GATEWAY_AUTH_TOKEN:-}" \
+        -H "X-AgentShroud-System: 1" \
         -d "{\"chat_id\":\"${_OWNER_CHAT_ID}\",\"text\":\"${text}\"}" \
         >/dev/null 2>&1
 }
 
+# Slack notification helpers — token injected by gateway proxy, same security model as Telegram.
+# SLACK_API_BASE_URL is set by docker-compose.yml to http://gateway:8080/slack-api so all
+# outbound Slack API calls are intercepted by the gateway for content scanning.
+_GATEWAY_SLACK_BASE="${SLACK_API_BASE_URL:-http://gateway:8080/slack-api}"
+
+_slack_channel_id() {
+    # Prefer env override, then Docker secret, then empty (disabled)
+    if [ -n "${AGENTSHROUD_SLACK_CHANNEL_ID:-}" ]; then
+        printf '%s' "$AGENTSHROUD_SLACK_CHANNEL_ID"
+        return 0
+    fi
+    if [ -f "/run/secrets/slack_bot_token" ]; then
+        # Channel ID must be configured via env — no way to derive it from the token
+        return 1
+    fi
+    return 1
+}
+
+_slack_send() {
+    local text="$1"
+    local channel
+    channel="${AGENTSHROUD_SLACK_CHANNEL_ID:-}"
+    if [ -z "$channel" ]; then
+        return 0  # Slack notifications not configured — skip silently
+    fi
+    # Route through AgentShroud gateway Slack proxy (never direct to slack.com)
+    curl -sf --max-time 10 -X POST "${_GATEWAY_SLACK_BASE}/chat.postMessage" \
+        -H "Content-Type: application/json" \
+        -H "Authorization: Bearer ${GATEWAY_AUTH_TOKEN:-}" \
+        -H "X-AgentShroud-System: 1" \
+        -d "{\"channel\":\"${channel}\",\"text\":\"${text}\"}" \
+        >/dev/null 2>&1
+}
+
+_telegram_get_me_ready() {
+    local token
+    token="$(_telegram_bot_token)"
+    if [ -z "$token" ]; then
+        return 1
+    fi
+    curl -sf --max-time 8 -X POST "${_GATEWAY_TELEGRAM_BASE}/bot${token}/getMe" \
+        -H "Content-Type: application/json" \
+        -H "Authorization: Bearer ${GATEWAY_AUTH_TOKEN:-}" \
+        -H "X-AgentShroud-System: 1" \
+        >/dev/null 2>&1
+}
+
+_model_runtime_ready() {
+    if [ "${AGENTSHROUD_MODEL_MODE:-cloud}" != "local" ]; then
+        return 0
+    fi
+    local model_name="${AGENTSHROUD_LOCAL_MODEL:-}"
+    if [ -z "${model_name}" ]; then
+        model_name="${AGENTSHROUD_LOCAL_MODEL_REF#ollama/}"
+    fi
+    if [ -z "${model_name}" ]; then
+        return 1
+    fi
+    curl -sf --max-time 8 "${OLLAMA_BASE_URL:-http://gateway:8080/v1}/../api/tags" \
+        | grep -F "\"name\":\"${model_name}\"" >/dev/null 2>&1
+}
+
 # Instance identity for notifications
 _INSTANCE_LABEL="${INSTANCE_NAME:-$(hostname -s)}"
-_BOT_NAME="${OPENCLAW_BOT_NAME:-agentshroud_bot}"
+_BOT_NAME="${OPENCLAW_BOT_NAME:-agentshroud-bot}"
+_STARTUP_NOTICE_STAMP="${OPENCLAW_STARTUP_NOTICE_STAMP:-/home/node/.openclaw/workspace/.startup_notice_at}"
+_STARTUP_NOTICE_COOLDOWN_SECONDS="${OPENCLAW_STARTUP_NOTICE_COOLDOWN_SECONDS:-300}"
 
 # Forward TERM/INT to openclaw, backup memory, send shutdown notification
 trap '
     echo "[startup] Shutdown signal received — backing up memory..."
-    MEMORY_BACKUP_DIR="/app/memory-backup"
+    MEMORY_BACKUP_DIR="/app/memory-backups"
     WORKSPACE_DIR="/home/node/.openclaw/workspace"
     if [ -d "${MEMORY_BACKUP_DIR}" ]; then
         [ -f "${WORKSPACE_DIR}/MEMORY.md" ] && cp "${WORKSPACE_DIR}/MEMORY.md" "${MEMORY_BACKUP_DIR}/MEMORY.md"
@@ -198,29 +345,68 @@ trap '
         done
         echo "[startup] ✓ Memory backed up before shutdown"
     fi
-    echo "[startup] Sending Telegram notification..."
-    _telegram_send "🔴 AgentShroud shutting down — ${_BOT_NAME} on ${_INSTANCE_LABEL}" \
+    echo "[startup] Sending shutdown notifications..."
+    _telegram_send "🔴 AgentShroud shutting down" \
         && echo "[startup] ✓ Sent Telegram shutdown notification" \
         || echo "[startup] ⚠ Could not send Telegram shutdown notification"
+    _slack_send "AgentShroud shutting down" \
+        && echo "[startup] ✓ Sent Slack shutdown notification" \
+        || true
     kill $OPENCLAW_PID 2>/dev/null
 ' TERM INT
 
-# Wait for gateway to be ready, then send Telegram startup notification
+# Wait for gateway/model/telegram readiness, then send startup notifications
 (
-    # Poll health endpoint — up to 60s
-    for i in $(seq 1 30); do
-        if curl -sf http://localhost:18789/api/health >/dev/null 2>&1; then
+    now_epoch="$(date +%s)"
+    last_notice_epoch=""
+    if [ -f "${_STARTUP_NOTICE_STAMP}" ]; then
+        last_notice_epoch="$(cat "${_STARTUP_NOTICE_STAMP}" 2>/dev/null || true)"
+    fi
+    should_notify="yes"
+    if [ -n "${last_notice_epoch}" ] && [ "${last_notice_epoch}" -eq "${last_notice_epoch}" ] 2>/dev/null; then
+        age="$(( now_epoch - last_notice_epoch ))"
+        if [ "${age}" -lt "${_STARTUP_NOTICE_COOLDOWN_SECONDS}" ]; then
+            should_notify="no"
+        fi
+    fi
+
+    if [ "${should_notify}" != "yes" ]; then
+        echo "[startup] Startup notification suppressed (cooldown active)"
+        exit 0
+    fi
+
+    mkdir -p "$(dirname "${_STARTUP_NOTICE_STAMP}")" 2>/dev/null || true
+    printf '%s\n' "${now_epoch}" > "${_STARTUP_NOTICE_STAMP}" 2>/dev/null || true
+    _telegram_send "🟡 AgentShroud starting" \
+        && echo "[startup] ✓ Sent Telegram starting notification" \
+        || echo "[startup] ⚠ Could not send Telegram starting notification"
+    _slack_send "AgentShroud starting" || true
+
+    # Poll OpenClaw HTTP endpoint and Telegram/model readiness — up to 120s
+    ready="no"
+    for _i in $(seq 1 60); do
+        if curl -sf http://localhost:18789/ >/dev/null 2>&1 \
+            && _telegram_get_me_ready \
+            && _model_runtime_ready; then
+            ready="yes"
             break
         fi
         sleep 2
     done
 
-    # Give Telegram provider time to connect after gateway is ready
-    sleep 5
-
-    _telegram_send "🛡️ AgentShroud online — ${_BOT_NAME} on ${_INSTANCE_LABEL}" \
-        && echo "[startup] ✓ Sent Telegram startup notification" \
-        || echo "[startup] ⚠ Could not send Telegram startup notification"
+    if [ "${ready}" = "yes" ]; then
+        _telegram_send "🛡️ AgentShroud online" \
+            && echo "[startup] ✓ Sent Telegram startup notification" \
+            || echo "[startup] ⚠ Could not send Telegram startup notification"
+        _slack_send "AgentShroud online" \
+            && echo "[startup] ✓ Sent Slack startup notification" \
+            || true
+    else
+        _telegram_send "🟠 AgentShroud starting (readiness delayed)" \
+            && echo "[startup] ⚠ Sent delayed startup notification" \
+            || echo "[startup] ⚠ Could not send delayed startup notification"
+        _slack_send "AgentShroud starting (readiness delayed)" || true
+    fi
 ) &
 
 wait $OPENCLAW_PID

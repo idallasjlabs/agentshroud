@@ -11,6 +11,7 @@ from __future__ import annotations
 from dataclasses import dataclass, field
 from typing import Dict, Set, List, Optional
 from enum import Enum
+import os
 
 
 class Role(str, Enum):
@@ -47,11 +48,44 @@ class RBACConfig:
         "8545356403",
         "15712621992",
         "8279589982",
-        "8526379012"
+        "8526379012",
+        "7614658040",
+        "8633775668"
     ])
     
     def __post_init__(self):
         """Initialize user roles based on configuration."""
+        owner_override = str(os.environ.get("AGENTSHROUD_OWNER_USER_ID", "")).strip()
+        if owner_override:
+            self.owner_user_id = owner_override
+
+        # Slack owner: same person on a different platform. Slack IDs are alphanumeric
+        # (e.g. U0ABC123DEF) — naturally disjoint from Telegram numeric IDs, no collision risk.
+        slack_owner = str(os.environ.get("AGENTSHROUD_SLACK_OWNER_USER_ID", "")).strip()
+        if slack_owner:
+            self.user_roles[slack_owner] = Role.OWNER
+
+        collaborators_override = str(
+            os.environ.get("AGENTSHROUD_COLLABORATOR_USER_IDS", "")
+        ).strip()
+        if collaborators_override:
+            parsed = [
+                token.strip()
+                for token in collaborators_override.split(",")
+                if token.strip()
+            ]
+            self.collaborator_user_ids = parsed
+
+        # Ensure owner never appears as collaborator.
+        self.collaborator_user_ids = [
+            uid for uid in self.collaborator_user_ids if str(uid) != str(self.owner_user_id)
+        ]
+
+        # Merge dynamically approved collaborators from persistent store (inline Approve button).
+        for _uid in load_persisted_collaborators():
+            if _uid not in self.collaborator_user_ids and str(_uid) != str(self.owner_user_id):
+                self.collaborator_user_ids.append(_uid)
+
         # Set owner role
         if self.owner_user_id:
             self.user_roles[self.owner_user_id] = Role.OWNER
@@ -74,8 +108,8 @@ class RBACConfig:
         return [user_id for user_id, user_role in self.user_roles.items() if user_role == role]
     
     def is_owner(self, user_id: str) -> bool:
-        """Check if user is the owner."""
-        return user_id == self.owner_user_id
+        """Check if user is the owner (any platform)."""
+        return user_id == self.owner_user_id or self.user_roles.get(user_id) == Role.OWNER
     
     def is_admin_or_higher(self, user_id: str) -> bool:
         """Check if user has admin privileges or higher."""
@@ -86,3 +120,52 @@ class RBACConfig:
         """Check if user has collaborator privileges or higher."""
         role = self.get_user_role(user_id)
         return role in [Role.OWNER, Role.ADMIN, Role.COLLABORATOR]
+
+
+# ---------------------------------------------------------------------------
+# Collaborator persistence — approvals made via inline buttons persist across
+# gateway restarts. Written to /app/data/approved_collaborators.json on the
+# shared data volume.
+# ---------------------------------------------------------------------------
+import fcntl
+import json
+import logging
+from pathlib import Path
+
+_collab_persist_logger = logging.getLogger("agentshroud.security.rbac_config")
+_APPROVED_COLLABORATORS_FILE = Path(
+    os.environ.get("AGENTSHROUD_DATA_DIR", "/app/data")
+) / "approved_collaborators.json"
+
+
+def load_persisted_collaborators() -> list[str]:
+    """Read dynamically approved collaborator IDs from disk."""
+    try:
+        if _APPROVED_COLLABORATORS_FILE.exists():
+            data = json.loads(_APPROVED_COLLABORATORS_FILE.read_text(encoding="utf-8"))
+            return [str(uid) for uid in data.get("collaborators", [])]
+    except Exception as exc:
+        _collab_persist_logger.warning("Could not read approved_collaborators.json: %s", exc)
+    return []
+
+
+def persist_approved_collaborator(uid: str) -> None:
+    """Append a collaborator UID to the persistent store (idempotent, file-locked)."""
+    _APPROVED_COLLABORATORS_FILE.parent.mkdir(parents=True, exist_ok=True)
+    lock_path = _APPROVED_COLLABORATORS_FILE.with_suffix(".lock")
+    try:
+        with open(lock_path, "w") as lock_fh:
+            fcntl.flock(lock_fh, fcntl.LOCK_EX)
+            try:
+                existing = load_persisted_collaborators()
+                if uid in existing:
+                    return
+                existing.append(uid)
+                _APPROVED_COLLABORATORS_FILE.write_text(
+                    json.dumps({"collaborators": existing}, indent=2), encoding="utf-8"
+                )
+                _collab_persist_logger.info("Persisted approved collaborator: %s", uid)
+            finally:
+                fcntl.flock(lock_fh, fcntl.LOCK_UN)
+    except Exception as exc:
+        _collab_persist_logger.warning("Could not persist approved collaborator %s: %s", uid, exc)

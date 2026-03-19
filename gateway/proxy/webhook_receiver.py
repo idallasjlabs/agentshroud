@@ -7,21 +7,25 @@ from __future__ import annotations
 """
 Webhook Receiver — receives Telegram/channel webhooks, routes through pipeline.
 
-Provides FastAPI routes that sit in front of OpenClaw, ensuring all
+Provides FastAPI routes that sit in front of the configured bot, ensuring all
 inbound webhooks pass through the SecurityPipeline before forwarding.
 Now includes per-user session isolation.
 """
 
 
+import hashlib
+import hmac
 import json
 import logging
 import time
 from pathlib import Path
-from typing import Any
+from typing import Any, Optional
 
 from gateway.security.session_manager import UserSessionManager
 
 logger = logging.getLogger("agentshroud.proxy.webhook_receiver")
+
+_PREVIEW_MAX = 80
 
 
 class WebhookReceiver:
@@ -31,18 +35,24 @@ class WebhookReceiver:
     process_webhook method can be called directly.
     """
 
-    def __init__(self, pipeline=None, forwarder=None, session_manager=None):
+    def __init__(self, pipeline=None, forwarder=None, session_manager=None,
+                 workspace_path: str = "/app/workspace",
+                 webhook_secret: Optional[str] = None,
+                 owner_user_id: Optional[str] = None):
         self.pipeline = pipeline
         self.forwarder = forwarder
-        
+        self.webhook_secret = webhook_secret
+
         # Initialize session manager if not provided and in production environment
         if session_manager is None:
             try:
-                base_workspace = Path("/home/node/.openclaw/workspace")
+                base_workspace = Path(workspace_path)
                 # Only initialize if the base path exists or can be created
                 if base_workspace.exists() or self._can_create_directory(base_workspace):
-                    # TODO: Load owner_user_id from config
-                    owner_user_id = "8096968754"  # Isaiah - owner
+                    # Use config-driven owner_user_id; fall back to RBACConfig default
+                    if owner_user_id is None:
+                        from gateway.security.rbac_config import RBACConfig
+                        owner_user_id = RBACConfig().owner_user_id
                     self.session_manager = UserSessionManager(
                         base_workspace=base_workspace,
                         owner_user_id=owner_user_id
@@ -55,6 +65,13 @@ class WebhookReceiver:
                 self.session_manager = None
         else:
             self.session_manager = session_manager
+
+        if not webhook_secret:
+            logger.warning(
+                "WebhookReceiver initialized without webhook_secret — "
+                "X-Telegram-Bot-Api-Secret-Token validation is disabled. "
+                "Set webhook_secret in config to enable signature verification."
+            )
             
         self._stats = {
             "webhooks_received": 0,
@@ -73,13 +90,27 @@ class WebhookReceiver:
             return True
         except Exception:
             return False
-            
-        self._stats = {
-            "webhooks_received": 0,
-            "webhooks_forwarded": 0,
-            "webhooks_blocked": 0,
-            "last_webhook_time": 0.0,
-        }
+
+    def validate_signature(self, raw_body: bytes, header_value: str) -> bool:
+        """Validate the X-Telegram-Bot-Api-Secret-Token header.
+
+        Uses constant-time comparison to prevent timing attacks.
+        If no webhook_secret is configured, always returns True (backward-compat).
+
+        Args:
+            raw_body: Raw request body bytes (unused for Telegram token auth,
+                      included for future HMAC-body schemes)
+            header_value: Value of X-Telegram-Bot-Api-Secret-Token header
+
+        Returns:
+            True if signature is valid (or no secret configured)
+        """
+        if not self.webhook_secret:
+            return True
+        if not header_value:
+            logger.warning("Webhook request missing X-Telegram-Bot-Api-Secret-Token header")
+            return False
+        return hmac.compare_digest(self.webhook_secret, header_value)
 
     async def process_webhook(
         self,
@@ -112,6 +143,21 @@ class WebhookReceiver:
                 content=message_text,
                 metadata={"source": source, "timestamp": time.time()}
             )
+
+        # Record collaborator activity at gateway level (before pipeline processing)
+        try:
+            from gateway.ingest_api.state import app_state as _app_state
+            _tracker = getattr(_app_state, "collaborator_tracker", None)
+            if _tracker and user_id:
+                _username = self._extract_username(payload, source)
+                _tracker.record_activity(
+                    user_id=user_id,
+                    username=_username,
+                    message_preview=message_text[:_PREVIEW_MAX],
+                    source=source,
+                )
+        except Exception:
+            pass  # Tracker is non-blocking — never fail a webhook on its behalf
 
         if self.pipeline:
             result = await self.pipeline.process_inbound(
@@ -231,6 +277,24 @@ class WebhookReceiver:
         return session_payload
 
     @staticmethod
+    def _extract_username(payload: dict[str, Any], source: str) -> str:
+        """Extract display name from webhook payload."""
+        if source == "telegram":
+            msg = payload.get("message", {})
+            if isinstance(msg, dict):
+                sender = msg.get("from", {})
+                if isinstance(sender, dict):
+                    first = sender.get("first_name", "")
+                    uname = sender.get("username", "")
+                    return first or f"@{uname}" if uname else "unknown"
+        elif source == "slack":
+            event = payload.get("event", {})
+            if isinstance(event, dict):
+                username = event.get("username", "") or event.get("user", "")
+                return username if username else "unknown"
+        return "unknown"
+
+    @staticmethod
     def _extract_user_id(payload: dict[str, Any], source: str) -> str | None:
         """Extract user ID from webhook payload based on source platform."""
         if source == "telegram":
@@ -242,18 +306,28 @@ class WebhookReceiver:
                     user_id = message["from"].get("id")
                     if user_id:
                         return str(user_id)
-                
+
                 # Fallback: check for chat id (in group chats)
                 if "chat" in message and isinstance(message["chat"], dict):
                     chat_id = message["chat"].get("id")
                     if chat_id:
                         return str(chat_id)
-            
+
             # Direct user_id field (for testing)
             if "user_id" in payload:
                 return str(payload["user_id"])
-                
-        # For other platforms, add extraction logic here
+
+        elif source == "slack":
+            # Slack Events API payload: outer envelope + event object
+            event = payload.get("event", {})
+            if isinstance(event, dict):
+                user_id = event.get("user", "")
+                if user_id:
+                    return str(user_id)
+            # Direct user_id field (for testing)
+            if "user_id" in payload:
+                return str(payload["user_id"])
+
         logger.warning(f"Could not extract user_id from {source} payload")
         return None
 

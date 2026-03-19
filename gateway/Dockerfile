@@ -3,9 +3,13 @@
 # Stage 2: Runtime - Non-root user, minimal image
 
 # === Builder Stage ===
-FROM python:3.13-slim AS builder
+# M8: Base image pinned to SHA256 digest for supply chain integrity
+FROM python:3.13-slim@sha256:3de9a8d7aedbb7984dc18f2dff178a7850f16c1ae7c34ba9d7ecc23d0755e35f AS builder
 
 WORKDIR /build
+ENV PIP_ROOT_USER_ACTION=ignore
+ENV PIP_DISABLE_PIP_VERSION_CHECK=1
+ENV DEBIAN_FRONTEND=noninteractive
 
 # Install system dependencies for building Python packages
 RUN apt-get update && apt-get install -y --no-install-recommends \
@@ -18,9 +22,12 @@ COPY gateway/requirements.txt .
 RUN pip install --no-cache-dir --prefix=/install -r requirements.txt
 
 # === Runtime Stage ===
-FROM python:3.13-slim
+FROM python:3.13-slim@sha256:3de9a8d7aedbb7984dc18f2dff178a7850f16c1ae7c34ba9d7ecc23d0755e35f
 
 WORKDIR /app
+ENV PIP_ROOT_USER_ACTION=ignore
+ENV PIP_DISABLE_PIP_VERSION_CHECK=1
+ENV DEBIAN_FRONTEND=noninteractive
 
 # Install OpenSCAP for compliance scanning (Debian Trixie = libopenscap33)
 RUN apt-get update && apt-get install -y --no-install-recommends \
@@ -28,11 +35,17 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     openscap-scanner \
     && rm -rf /var/lib/apt/lists/*
 
+# SSH client for SSHProxy remote command execution
+RUN apt-get update && apt-get install -y --no-install-recommends \
+    openssh-client \
+    && rm -rf /var/lib/apt/lists/*
+
 # ClamAV for malware scanning
 RUN apt-get update && apt-get install -y --no-install-recommends \
     clamav clamav-daemon clamav-freshclam clamdscan \
     && rm -rf /var/lib/apt/lists/* \
-    && mkdir -p /var/lib/clamav \n    && freshclam --quiet 2>/dev/null || echo "freshclam: virus DB download deferred to runtime"
+    && mkdir -p /var/lib/clamav \
+    && freshclam --quiet 2>/dev/null || echo "freshclam: virus DB download deferred to runtime"
 
 # Install 1Password CLI for op-proxy credential broker
 RUN apt-get update && apt-get install -y --no-install-recommends curl ca-certificates gpg \
@@ -44,8 +57,23 @@ RUN apt-get update && apt-get install -y --no-install-recommends curl ca-certifi
     && apt-get update && apt-get install -y --no-install-recommends 1password-cli \
     && rm -rf /var/lib/apt/lists/*
 
-# Trivy vulnerability scanner (ARM64 compatible)
-RUN curl -sfL https://raw.githubusercontent.com/aquasecurity/trivy/main/contrib/install.sh | sh -s -- -b /usr/local/bin
+# Trivy vulnerability scanner — pinned version (M7 fix)
+ARG TRIVY_VERSION=0.69.3
+# R2-M1: Download Trivy with checksum verification for supply chain integrity
+RUN DPKG_ARCH=$(dpkg --print-architecture) && \
+    case "$DPKG_ARCH" in \
+      arm64) TRIVY_ARCH="ARM64" ;; \
+      amd64) TRIVY_ARCH="64bit" ;; \
+      armhf) TRIVY_ARCH="ARM" ;; \
+      *) TRIVY_ARCH="$DPKG_ARCH" ;; \
+    esac && \
+    curl -sSfL -o "/tmp/trivy_${TRIVY_VERSION}_Linux-${TRIVY_ARCH}.deb" \
+        "https://github.com/aquasecurity/trivy/releases/download/v${TRIVY_VERSION}/trivy_${TRIVY_VERSION}_Linux-${TRIVY_ARCH}.deb" && \
+    curl -sSfL -o /tmp/trivy_checksums.txt \
+        "https://github.com/aquasecurity/trivy/releases/download/v${TRIVY_VERSION}/trivy_${TRIVY_VERSION}_checksums.txt" && \
+    cd /tmp && grep "trivy_${TRIVY_VERSION}_Linux-${TRIVY_ARCH}.deb" trivy_checksums.txt | sha256sum -c - && \
+    dpkg -i "/tmp/trivy_${TRIVY_VERSION}_Linux-${TRIVY_ARCH}.deb" && \
+    rm "/tmp/trivy_${TRIVY_VERSION}_Linux-${TRIVY_ARCH}.deb" /tmp/trivy_checksums.txt
 
 # Create non-root user
 RUN useradd --create-home --shell /bin/bash --uid 1000 agentshroud
@@ -68,7 +96,7 @@ COPY docker/scap-content/ssg-debian12-ds.xml /usr/share/xml/scap/ssg/content/
 LABEL org.opencontainers.image.title="AgentShroud Gateway"
 LABEL org.opencontainers.image.description="PII sanitization proxy for AgentShroud"
 LABEL org.opencontainers.image.vendor="AgentShroud"
-LABEL org.opencontainers.image.version="0.7.0"
+LABEL org.opencontainers.image.version="0.8.0"
 LABEL org.opencontainers.image.source="https://github.com/idallasj/agentshroud"
 
 # Prevent Python bytecode generation (read-only filesystem compatibility)
@@ -87,7 +115,8 @@ RUN chmod +x /usr/local/bin/security-*.sh
 RUN mkdir -p /var/log/security && chown agentshroud:agentshroud /var/log/security
 
 # Download spaCy NLP model for PII detection (560MB, cached in Docker layer)
-RUN python3 -m spacy download en_core_web_sm || echo "spaCy model download failed — will use regex fallback"
+RUN python3 -m spacy download en_core_web_sm >/tmp/spacy-download.log 2>&1 \
+    || echo "spaCy model download skipped (offline) — regex fallback enabled"
 
 # Copy repo root files needed by tests
 COPY README.md /app/README.md

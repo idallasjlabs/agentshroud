@@ -98,6 +98,11 @@ class CredentialInjector:
                 header_prefix="Bearer ",
             ),
             CredentialMapping(
+                domain="generativelanguage.googleapis.com",
+                header_name="x-goog-api-key",
+                secret_file="google_api_key.txt",
+            ),
+            CredentialMapping(
                 domain="oauth2.googleapis.com",
                 header_name="Authorization",
                 secret_file="gmail_oauth_tokens.json",

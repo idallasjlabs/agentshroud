@@ -24,12 +24,27 @@ class CanaryResult:
     encoding: Optional[str] = None
     context: Optional[str] = None
 
+
+@dataclass
+class TripwireResponse:
+    """Bridge result returned by scan_response() for pipeline compatibility."""
+    is_blocked: bool
+    detections: List[str]
+    scan_methods_used: List[str]
+
 class CanaryTripwire:
     def __init__(self, config: Optional[CanaryConfig] = None):
         self.config = config or CanaryConfig()
         self._lock = threading.Lock()
         self._detections = 0
         self._alerts: list = []
+
+    def register_canary(self, value: str, target: str = "") -> None:
+        """Register a new canary value at runtime for dynamic tripwire testing."""
+        with self._lock:
+            if value not in self.config.values:
+                self.config.values.append(value)
+        logger.debug("Canary registered: %r (target=%r)", value, target)
 
     @property
     def detection_count(self) -> int:
@@ -87,6 +102,15 @@ class CanaryTripwire:
             except Exception:
                 pass
         return None
+
+    def scan_response(self, response_text: str, source: str) -> TripwireResponse:
+        """Pipeline-compatible bridge: scan response text and return TripwireResponse."""
+        result = self.scan(response_text)
+        return TripwireResponse(
+            is_blocked=result.detected and self.config.block_on_detect,
+            detections=[result.canary_value] if result.canary_value else [],
+            scan_methods_used=[result.encoding] if result.encoding else [],
+        )
 
     def scan(self, text: str) -> CanaryResult:
         if not text or not self.config.values:

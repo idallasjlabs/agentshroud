@@ -70,7 +70,7 @@ class EgressSummary:
 
 @dataclass
 class EgressMonitorConfig:
-    mode: str = "monitor"  # "monitor" or "enforce"
+    mode: str = "enforce"  # "monitor" or "enforce"
     http_requests_per_hour: int = 500
     dns_queries_per_hour: int = 1000
     file_writes_per_hour: int = 200

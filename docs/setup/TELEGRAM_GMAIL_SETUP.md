@@ -378,7 +378,7 @@ docker compose -f docker/docker-compose.yml exec openclaw \
 
 - `DEVICE_PAIRING.md` - Device pairing explained
 - `TELEGRAM_GMAIL_SETUP.md` - This file
-- `SYSTEM_STATUS.md` - Complete system status
+- `docs/project/SYSTEM_STATUS.md` - Complete system status
 - `ACCESS_INFO.md` - Access information
 - `docker/scripts/devices.sh` - Device management script
 

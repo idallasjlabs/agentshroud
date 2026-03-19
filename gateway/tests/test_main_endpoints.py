@@ -11,10 +11,12 @@ from __future__ import annotations
 
 import pytest
 from unittest.mock import AsyncMock, MagicMock, patch
+import ipaddress
 from fastapi.testclient import TestClient
 from fastapi import HTTPException
 
 from gateway.ingest_api.main import app
+from gateway.ingest_api.main import auth_dep
 from gateway.ingest_api.models import ForwardRequest
 from gateway.ingest_api.middleware import MiddlewareResult
 
@@ -35,31 +37,31 @@ class TestForwardEndpoint:
         # Mock auth
         mock_auth = MagicMock()
         
-        with patch('gateway.ingest_api.main.app_state') as mock_app_state:
+        with patch('gateway.ingest_api.routes.forward.app_state') as mock_app_state, \
+             patch('gateway.ingest_api.routes.forward.create_auth_dependency') as mock_auth_dep:
             mock_app_state.middleware_manager = mock_middleware
             
             client = TestClient(app)
             
             # Mock auth dependency
-            with patch('gateway.ingest_api.main.create_auth_dependency') as mock_auth_dep:
-                mock_auth_dep.return_value = AsyncMock()
-                
-                response = client.post(
-                    "/forward",
-                    json={
-                        "content": "test message",
-                        "content_type": "text/plain",
-                        "source": "api"
-                    },
-                    headers={"Authorization": "Bearer fake-token"}
-                )
-                
-                # Should return 403 when middleware blocks
-                assert response.status_code == 403
-                assert "Request blocked by middleware" in response.json()["detail"]
-                
-                # Verify middleware was called
-                mock_middleware.process_request.assert_called_once()
+            mock_auth_dep.return_value = AsyncMock()
+            
+            response = client.post(
+                "/forward",
+                json={
+                    "content": "test message",
+                    "content_type": "text",
+                    "source": "api"
+                },
+                headers={"Authorization": "Bearer fake-token"}
+            )
+            
+            # Should return 403 when middleware blocks
+            assert response.status_code == 403
+            assert "Request blocked by middleware" in response.json()["detail"]
+            
+            # Verify middleware was called
+            mock_middleware.process_request.assert_called_once()
     
     def test_forward_middleware_allowed(self):
         """Test that middleware allows requests when they pass checks."""
@@ -75,28 +77,28 @@ class TestForwardEndpoint:
         
         mock_auth = MagicMock()
         
-        with patch('gateway.ingest_api.main.app_state') as mock_app_state:
+        with patch('gateway.ingest_api.routes.forward.app_state') as mock_app_state, \
+             patch('gateway.ingest_api.routes.forward.create_auth_dependency') as mock_auth_dep:
             mock_app_state.middleware_manager = mock_middleware
             
             client = TestClient(app)
             
             # Mock auth dependency
-            with patch('gateway.ingest_api.main.create_auth_dependency') as mock_auth_dep:
-                mock_auth_dep.return_value = AsyncMock()
-                
-                response = client.post(
-                    "/forward",
-                    json={
-                        "content": "test message",
-                        "content_type": "text/plain",
-                        "source": "api"
-                    },
-                    headers={"Authorization": "Bearer fake-token"}
-                )
-                
-                # Should return 500 when middleware fails
-                assert response.status_code == 500
-                assert "Middleware processing failed" in response.json()["detail"]
+            mock_auth_dep.return_value = AsyncMock()
+            
+            response = client.post(
+                "/forward",
+                json={
+                    "content": "test message",
+                    "content_type": "text",
+                    "source": "api"
+                },
+                headers={"Authorization": "Bearer fake-token"}
+            )
+            
+            # Should return 500 when middleware fails
+            assert response.status_code == 500
+            assert "Middleware processing failed" in response.json()["detail"]
 
 
 class TestStatusEndpoint:
@@ -105,7 +107,7 @@ class TestStatusEndpoint:
     def test_status_endpoint(self):
         """Test basic status endpoint functionality."""
         
-        with patch('gateway.ingest_api.main.app_state') as mock_app_state:
+        with patch('gateway.ingest_api.routes.health.app_state') as mock_app_state:
             import time as _time
             mock_app_state.start_time = _time.time()
             mock_app_state.ledger = MagicMock()
@@ -133,13 +135,13 @@ class TestApprovalEndpoints:
         mock_approval_queue = MagicMock()
         mock_approval_queue.get_pending = AsyncMock(return_value=[])
         
-        with patch('gateway.ingest_api.main.app_state') as mock_app_state:
+        with patch('gateway.ingest_api.routes.approval.app_state') as mock_app_state:
             mock_app_state.approval_queue = mock_approval_queue
             
             client = TestClient(app)
             
             # Mock auth dependency
-            with patch('gateway.ingest_api.main.create_auth_dependency') as mock_auth_dep:
+            with patch('gateway.ingest_api.routes.approval.create_auth_dependency') as mock_auth_dep:
                 mock_auth_dep.return_value = AsyncMock()
                 
                 response = client.get(
@@ -156,13 +158,13 @@ class TestApprovalEndpoints:
         mock_approval_queue = MagicMock()
         mock_approval_queue.decide = AsyncMock(side_effect=KeyError("not found"))
         
-        with patch('gateway.ingest_api.main.app_state') as mock_app_state:
+        with patch('gateway.ingest_api.routes.approval.app_state') as mock_app_state:
             mock_app_state.approval_queue = mock_approval_queue
             
             client = TestClient(app)
             
             # Mock auth dependency
-            with patch('gateway.ingest_api.main.create_auth_dependency') as mock_auth_dep:
+            with patch('gateway.ingest_api.routes.approval.create_auth_dependency') as mock_auth_dep:
                 mock_auth_dep.return_value = AsyncMock()
                 
                 response = client.post(
@@ -235,3 +237,112 @@ class TestErrorHandling:
         response = client.get("/forward")
         
         assert response.status_code == 405
+
+
+class TestGoogleAPIProxy:
+    """Regression tests for /v1beta proxy response handling."""
+
+    def test_google_proxy_non_json_body_passthrough(self):
+        """Plain-text upstream errors must not turn into gateway 500s."""
+        with patch("gateway.ingest_api.main.app_state") as mock_app_state, \
+             patch("gateway.ingest_api.main._PROXY_ALLOWED_NETWORKS", [ipaddress.ip_network("10.254.111.0/24")]), \
+             patch("gateway.ingest_api.main._ipaddress.ip_address", return_value=ipaddress.ip_address("10.254.111.10")):
+            mock_app_state.llm_proxy = MagicMock()
+            mock_app_state.llm_proxy.proxy_messages = AsyncMock(
+                return_value=(502, {"content-type": "text/plain"}, b"upstream timeout")
+            )
+
+            client = TestClient(app)
+            response = client.get("/v1beta/models")
+
+            assert response.status_code == 502
+            assert "upstream timeout" in response.text
+
+    def test_google_proxy_json_body_passthrough(self):
+        """JSON upstream responses must stay JSON."""
+        with patch("gateway.ingest_api.main.app_state") as mock_app_state, \
+             patch("gateway.ingest_api.main._PROXY_ALLOWED_NETWORKS", [ipaddress.ip_network("10.254.111.0/24")]), \
+             patch("gateway.ingest_api.main._ipaddress.ip_address", return_value=ipaddress.ip_address("10.254.111.10")):
+            mock_app_state.llm_proxy = MagicMock()
+            mock_app_state.llm_proxy.proxy_messages = AsyncMock(
+                return_value=(200, {"content-type": "application/json"}, b'{"ok": true}')
+            )
+
+            client = TestClient(app)
+            response = client.get("/v1beta/models")
+
+            assert response.status_code == 200
+            assert response.json() == {"ok": True}
+
+
+class TestQuarantineEndpoints:
+    """Test quarantine management endpoints in main.py."""
+
+    def test_quarantine_summary_counts_inbound_and_outbound(self):
+        from gateway.ingest_api import main as main_module
+
+        app.dependency_overrides[auth_dep] = lambda: None
+        try:
+            main_module.app_state.blocked_message_quarantine = [
+                {"status": "pending"},
+                {"status": "released"},
+                {"status": "discarded"},
+            ]
+            main_module.app_state.blocked_outbound_quarantine = [
+                {"status": "pending"},
+                {"status": "pending"},
+                {"status": "released"},
+            ]
+
+            client = TestClient(app)
+            response = client.get("/manage/quarantine/summary")
+            assert response.status_code == 200
+            data = response.json()
+            assert data["inbound"]["total"] == 3
+            assert data["inbound"]["pending"] == 1
+            assert data["outbound"]["total"] == 3
+            assert data["outbound"]["pending"] == 2
+        finally:
+            app.dependency_overrides.pop(auth_dep, None)
+
+    def test_release_blocked_outbound_marks_item_released(self):
+        from gateway.ingest_api import main as main_module
+
+        app.dependency_overrides[auth_dep] = lambda: None
+        try:
+            main_module.app_state.blocked_outbound_quarantine = [
+                {
+                    "message_id": "msg-1",
+                    "chat_id": "123",
+                    "text": "blocked text",
+                    "status": "pending",
+                }
+            ]
+            main_module.app_state.event_bus = None
+
+            client = TestClient(app)
+            response = client.post("/manage/quarantine/blocked-outbound/msg-1/release")
+            assert response.status_code == 200
+            payload = response.json()
+            assert payload["ok"] is True
+            assert payload["item"]["status"] == "released"
+            assert payload["item"]["released_by"] == "admin"
+        finally:
+            app.dependency_overrides.pop(auth_dep, None)
+
+    def test_discard_blocked_message_not_found_returns_error(self):
+        from gateway.ingest_api import main as main_module
+
+        app.dependency_overrides[auth_dep] = lambda: None
+        try:
+            main_module.app_state.blocked_message_quarantine = []
+            main_module.app_state.event_bus = None
+
+            client = TestClient(app)
+            response = client.post("/manage/quarantine/blocked-messages/missing/discard")
+            assert response.status_code == 200
+            payload = response.json()
+            assert payload["ok"] is False
+            assert payload["error"] == "message_not_found"
+        finally:
+            app.dependency_overrides.pop(auth_dep, None)

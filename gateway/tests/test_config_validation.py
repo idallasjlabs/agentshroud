@@ -190,6 +190,285 @@ class TestConfigValidation:
         req = ForwardRequest(content="hello", source="api")
         assert req.source == "api"
 
+    def test_openclaw_patch_script_recovers_corrupt_json(self):
+        """openclaw init patch script must quarantine malformed JSON instead of exiting."""
+        path = REPO_ROOT / "docker" / "config" / "openclaw" / "apply-patches.js"
+        if not path.exists():
+            pytest.skip("apply-patches.js not available in this environment")
+        script = path.read_text()
+        assert "process.exit(1)" not in script
+        assert "corrupt-" in script
+        assert "moved to" in script
+
+    def test_openclaw_patch_script_removes_legacy_gateway_model_key(self):
+        """openclaw init patch script must remove unsupported gateway.model key."""
+        path = REPO_ROOT / "docker" / "config" / "openclaw" / "apply-patches.js"
+        if not path.exists():
+            pytest.skip("apply-patches.js not available in this environment")
+        script = path.read_text()
+        assert "Removed unsupported key gateway.model" in script
+        assert "Set internal gateway model" not in script
+
+
+
+    def test_openclaw_version_pin_is_consistent_across_bot_images(self):
+        """Both bot Dockerfiles must pin the same OpenClaw version."""
+        import re
+
+        primary_path = REPO_ROOT / "docker" / "Dockerfile.agentshroud"
+        openclaw_path = REPO_ROOT / "docker" / "bots" / "openclaw" / "Dockerfile"
+        if not primary_path.exists() or not openclaw_path.exists():
+            pytest.skip("Bot Dockerfiles not available in this environment")
+        primary = primary_path.read_text()
+        openclaw = openclaw_path.read_text()
+
+        primary_match = re.search(r"openclaw@([0-9]{4}\.[0-9]+\.[0-9]+)", primary)
+        openclaw_match = re.search(r"openclaw@([0-9]{4}\.[0-9]+\.[0-9]+)", openclaw)
+
+        assert primary_match, "Primary bot Dockerfile must pin openclaw@<version>"
+        assert openclaw_match, "OpenClaw bot Dockerfile must pin openclaw@<version>"
+        assert primary_match.group(1) == openclaw_match.group(1)
+        assert primary_match.group(1) == "2026.3.8"
+    def test_openclaw_patch_script_sets_control_ui_allowed_origins(self):
+        """openclaw init patch script must seed control UI origins for non-loopback bind."""
+        path = REPO_ROOT / "docker" / "config" / "openclaw" / "apply-patches.js"
+        if not path.exists():
+            pytest.skip("apply-patches.js not available in this environment")
+        script = path.read_text()
+        assert "gateway.controlUi.allowedOrigins" in script
+        assert "dangerouslyAllowHostHeaderOriginFallback" in script
+
+    def test_openclaw_patch_script_seeds_group_allowlist(self):
+        """openclaw init patch script must seed Telegram group allowlist when policy is allowlist."""
+        path = REPO_ROOT / "docker" / "config" / "openclaw" / "apply-patches.js"
+        if not path.exists():
+            pytest.skip("apply-patches.js not available in this environment")
+        script = path.read_text()
+        assert "groupPolicy" in script
+        assert "groupAllowFrom" in script
+        assert "allowlist" in script
+
+    def test_lifespan_uvicorn_warning_filter_drops_invalid_http_noise(self):
+        """Lifespan filter should suppress repeated malformed HTTP warning noise."""
+        import logging
+        from gateway.ingest_api.lifespan import _DropInvalidHTTPRequestFilter
+
+        filt = _DropInvalidHTTPRequestFilter()
+        noisy = logging.LogRecord(
+            name="uvicorn.error",
+            level=logging.WARNING,
+            pathname=__file__,
+            lineno=1,
+            msg="Invalid HTTP request received.",
+            args=(),
+            exc_info=None,
+        )
+        legit = logging.LogRecord(
+            name="uvicorn.error",
+            level=logging.WARNING,
+            pathname=__file__,
+            lineno=1,
+            msg="Something else happened.",
+            args=(),
+            exc_info=None,
+        )
+        assert filt.filter(noisy) is False
+        assert filt.filter(legit) is True
+
+    def test_proxy_allowed_network_default_includes_current_subnets(self):
+        """Proxy CIDR fallback should include current 10.254 ranges plus legacy compatibility."""
+        source = (REPO_ROOT / "gateway" / "ingest_api" / "main.py").read_text()
+        assert "10.254.111.0/24" in source
+        assert "10.254.112.0/24" in source
+
+    def test_startup_wrapper_defaults_openclaw_bind_to_loopback(self):
+        """Startup wrapper should default OpenClaw bind to loopback unless explicitly overridden."""
+        path = REPO_ROOT / "docker" / "scripts" / "start-agentshroud.sh"
+        if not path.exists():
+            pytest.skip("start-agentshroud.sh not available in this environment")
+        script = path.read_text()
+        assert 'OPENCLAW_BIND_MODE="${OPENCLAW_GATEWAY_BIND:-loopback}"' in script
+        assert 'openclaw gateway --allow-unconfigured --bind "${OPENCLAW_BIND_MODE}"' in script
+
+    def test_main_compose_sets_openclaw_bind_lan_default(self):
+        """Primary compose stack should bind OpenClaw gateway to lan by default for host Control UI access."""
+        compose = (REPO_ROOT / "docker" / "docker-compose.yml").read_text()
+        assert "OPENCLAW_GATEWAY_BIND=${OPENCLAW_GATEWAY_BIND:-lan}" in compose
+
+    def test_startup_notifications_use_minimal_message_format(self):
+        """Startup/shutdown notifications should use minimal, non-identifying text."""
+        path = REPO_ROOT / "docker" / "scripts" / "start-agentshroud.sh"
+        if not path.exists():
+            pytest.skip("start-agentshroud.sh not available in this environment")
+        script = path.read_text()
+        assert '🟡 AgentShroud starting' in script
+        assert '🛡️ AgentShroud online' in script
+        assert '🟠 AgentShroud starting (readiness delayed)' in script
+        assert '🔴 AgentShroud shutting down' in script
+
+    def test_startup_notifications_wait_for_runtime_readiness(self):
+        """Startup script should verify Telegram/model readiness before sending online notice."""
+        path = REPO_ROOT / "docker" / "scripts" / "start-agentshroud.sh"
+        if not path.exists():
+            pytest.skip("start-agentshroud.sh not available in this environment")
+        script = path.read_text()
+        assert "_telegram_get_me_ready" in script
+        assert "_model_runtime_ready" in script
+        assert "/getMe" in script
+        assert "/api/tags" in script
+        assert "ready=\"no\"" in script
+        assert "for _i in $(seq 1 60)" in script
+
+    def test_openclaw_start_script_uses_two_phase_startup_notifications(self):
+        """OpenClaw start script should send starting first, then online after readiness checks."""
+        path = REPO_ROOT / "docker" / "bots" / "openclaw" / "start.sh"
+        if not path.exists():
+            pytest.skip("openclaw/start.sh not available in this environment")
+        script = path.read_text()
+        assert '🟡 AgentShroud starting' in script
+        assert '🛡️ AgentShroud online' in script
+        assert '🟠 AgentShroud starting (readiness delayed)' in script
+        assert "_telegram_get_me_ready" in script
+        assert "_model_runtime_ready" in script
+        assert "for _i in $(seq 1 60)" in script
+
+
+
+    def test_startup_online_notice_sent_only_after_readiness_gate(self):
+        """Online notice must appear after readiness probes to avoid premature status signals."""
+        path = REPO_ROOT / "docker" / "scripts" / "start-agentshroud.sh"
+        if not path.exists():
+            pytest.skip("start-agentshroud.sh not available in this environment")
+        script = path.read_text()
+        assert script.index('ready="no"') < script.index('if [ "${ready}" = "yes" ]; then')
+        assert script.index('_telegram_get_me_ready') < script.index('if [ "${ready}" = "yes" ]; then')
+        assert script.index('_model_runtime_ready') < script.index('if [ "${ready}" = "yes" ]; then')
+        assert script.index('🟡 AgentShroud starting') < script.index('🛡️ AgentShroud online')
+
+    def test_openclaw_bot_start_script_online_notice_after_readiness_gate(self):
+        """OpenClaw bot wrapper should send online notice only after readiness checks pass."""
+        path = REPO_ROOT / "docker" / "bots" / "openclaw" / "start.sh"
+        if not path.exists():
+            pytest.skip("openclaw/start.sh not available in this environment")
+        script = path.read_text()
+        assert script.index('ready="no"') < script.index('if [ "${ready}" = "yes" ]; then')
+        assert script.index('_telegram_get_me_ready') < script.index('if [ "${ready}" = "yes" ]; then')
+        assert script.index('_model_runtime_ready') < script.index('if [ "${ready}" = "yes" ]; then')
+        assert script.index('🟡 AgentShroud starting') < script.index('🛡️ AgentShroud online')
+    def test_startup_telegram_calls_use_system_header(self):
+        """Startup notification Telegram calls should be marked as system-originated."""
+        script_path = REPO_ROOT / "docker" / "scripts" / "start-agentshroud.sh"
+        bot_path = REPO_ROOT / "docker" / "bots" / "openclaw" / "start.sh"
+        if not script_path.exists() or not bot_path.exists():
+            pytest.skip("startup scripts not available in this environment")
+        script = script_path.read_text()
+        bot_script = bot_path.read_text()
+        assert "X-AgentShroud-System: 1" in script
+        assert "X-AgentShroud-System: 1" in bot_script
+        assert "/getMe" in script
+        assert "/getMe" in bot_script
+
+    def test_start_control_center_script_uses_repo_relative_exec(self):
+        """Control center launcher should be robust to current working directory."""
+        path = REPO_ROOT / "scripts" / "start-control-center"
+        if not path.exists():
+            pytest.skip("start-control-center not available in this environment")
+        script = path.read_text()
+        assert "set -euo pipefail" in script
+        assert "REPO_ROOT" in script
+        assert "exec python3 src/interfaces/text_control_center.py" in script
+
+    def test_chat_console_script_uses_repo_relative_exec(self):
+        """Chat console launcher should be robust to current working directory."""
+        path = REPO_ROOT / "scripts" / "chat-console"
+        if not path.exists():
+            pytest.skip("chat-console not available in this environment")
+        script = path.read_text()
+        assert "set -euo pipefail" in script
+        assert "REPO_ROOT" in script
+        assert "exec python3 src/interfaces/chat_console.py" in script
+
+    def test_switch_model_script_exists_with_supported_targets(self):
+        """Model switch helper should support local and major cloud providers."""
+        path = REPO_ROOT / "scripts" / "switch_model.sh"
+        if not path.exists():
+            pytest.skip("switch_model.sh not available in this environment")
+        script = path.read_text()
+        assert "switch_model.sh <target>" in script
+        assert "[model_ref]" in script
+        assert "--wait" in script
+        assert "local" in script
+        assert "gemini" in script
+        assert "anthropic" in script
+        assert "openai" in script
+        assert "CUSTOM_MODEL_REF" in script
+        assert "ensure_local_model_available" in script
+        assert "docker compose" in script
+
+    def test_switch_model_script_uses_current_target_syntax(self):
+        """Operator guidance should use valid switch_model target syntax (no legacy cloud prefix)."""
+        path = REPO_ROOT / "scripts" / "switch_model.sh"
+        if not path.exists():
+            pytest.skip("switch_model.sh not available in this environment")
+        script = path.read_text()
+        assert "scripts/switch_model.sh gemini" in script
+        assert "scripts/switch_model.sh cloud gemini" not in script
+
+    def test_openclaw_patch_defaults_to_qwen_local_model(self):
+        """OpenClaw patch script should default to local Ollama but keep API adapter configurable."""
+        path = REPO_ROOT / "docker" / "config" / "openclaw" / "apply-patches.js"
+        if not path.exists():
+            pytest.skip("apply-patches.js not available in this environment")
+        script = path.read_text()
+        assert "AGENTSHROUD_MODEL_MODE" in script
+        assert "AGENTSHROUD_LOCAL_MODEL_REF" in script
+        assert "AGENTSHROUD_CLOUD_MODEL_REF" in script
+        assert "ollama/qwen3:14b" in script
+        assert "config.models.providers.ollama" in script
+        assert "OPENCLAW_OLLAMA_API" in script
+        assert "api: OLLAMA_PROVIDER_API" in script
+        assert "commands.ownerDisplay" in script
+        assert "'hash'" in script
+        assert "anthropic/claude-opus-4-6" in script
+        assert "agents.defaults.model" in script or "config.agents.defaults.model" in script
+
+    def test_compose_sets_qwen_local_model_overrides(self):
+        """Main compose stack should expose a single model-mode switch with local/cloud refs."""
+        compose = (REPO_ROOT / "docker" / "docker-compose.yml").read_text()
+        assert "AGENTSHROUD_MODEL_MODE=${AGENTSHROUD_MODEL_MODE:-local}" in compose
+        assert "AGENTSHROUD_LOCAL_MODEL_REF=${AGENTSHROUD_LOCAL_MODEL_REF:-ollama/qwen3:14b}" in compose
+        assert "AGENTSHROUD_CLOUD_MODEL_REF=${AGENTSHROUD_CLOUD_MODEL_REF:-anthropic/claude-opus-4-6}" in compose
+        assert "OLLAMA_BASE_URL=${OLLAMA_BASE_URL:-http://gateway:8080/v1}" in compose
+        assert "OLLAMA_API_KEY=${OLLAMA_API_KEY:-ollama-local}" in compose
+
+    def test_startup_script_skips_anthropic_when_local_model_selected(self):
+        """Bot startup should not load Anthropic secrets when Ollama local model is configured."""
+        path = REPO_ROOT / "docker" / "scripts" / "start-agentshroud.sh"
+        if not path.exists():
+            pytest.skip("start-agentshroud.sh not available in this environment")
+        script = path.read_text()
+        assert '[[ "${OPENCLAW_MAIN_MODEL:-}" == ollama/* ]]' in script
+        assert "skipping Claude token load" in script
+        assert "skipping Claude op-proxy fetch" in script
+        assert "Loaded Google API key" in script
+
+    def test_init_config_skips_anthropic_auth_seed_for_local_model(self):
+        """Init config should seed auth profiles for cloud providers and Ollama in local mode."""
+        path = REPO_ROOT / "docker" / "scripts" / "init-openclaw-config.sh"
+        if not path.exists():
+            pytest.skip("init-openclaw-config.sh not available in this environment")
+        script = path.read_text()
+        assert "provider + ':default'" in script
+        assert "version: Number(store.version || 1)" in script
+        assert "setApiKey('google'" in script
+        assert "setApiKey('openai'" in script
+        assert "setApiKey('ollama'" in script
+        assert "MODELS_JSON" in script
+        assert "rawBaseUrl" in script
+        assert "ROOT_AUTH_PROFILES" in script
+        assert "ROOT_MODELS_JSON" in script
+        assert "Registered Ollama provider/models in models.json" in script
+
 
 class TestAllExampleConfigsExist:
     """Verify all referenced example configs exist."""

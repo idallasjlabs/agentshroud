@@ -61,6 +61,8 @@ proxy:
     - api.openai.com
     - api.anthropic.com
     - api.telegram.org
+    - slack.com
+    - "*.slack.com"
     - oauth2.googleapis.com
     - www.googleapis.com
     - gmail.googleapis.com
@@ -68,6 +70,20 @@ proxy:
     - "*.githubusercontent.com"
     - imap.mail.me.com
     - smtp.mail.me.com
+    - "*.1password.com"
+    - "*.1password.ca"
+    - "*.b5project.com"
+    - "*.agilebits.com"
+    - smtp.gmail.com
+    - "*.google.com"
+    - "*.brave.com"
+    - "*.search.brave.com"
+    - "host.docker.internal"
+    # SSH relay targets (CONNECT proxy tunnels SSH for the bot)
+    - host.docker.internal
+    - marvin
+    - trillian
+    - raspberrypi
 
 container:
   # Container runtime
@@ -89,11 +105,51 @@ container:
 agentshroud:
   # AgentShroud-specific settings
   version: "main"
-  default_model: "openai/gpt-4o"  # Updated from gpt-4
+  default_model: "ollama/phi4:14b"
   gateway_bind: "loopback"
   gateway_port: 18789
   ui_port: 18790
   workspace: "/app/workspace"
+
+bots:
+  # Bot declarations — define every bot encapsulated by this AgentShroud instance.
+  # The gateway resolves hostnames, ports, and workspace paths from this section
+  # instead of hardcoded OpenClaw-specific values.
+  #
+  # Required bot HTTP endpoints:
+  #   GET  {health_path}   — liveness probe; returns 200 {"status": "ok"}
+  #   POST {chat_path}     — receive forwarded messages
+  #   POST {webhook_path}  — receive sanitized Telegram/channel webhooks
+  #
+  # Required env vars the gateway sets on the bot container:
+  #   ANTHROPIC_BASE_URL           http://gateway:8080
+  #   HTTP_PROXY / HTTPS_PROXY     http://gateway:8181
+  #   AGENTSHROUD_GATEWAY_PASSWORD gateway auth token
+  #   AGENTSHROUD_BOT_ID           bot identifier (matches key below)
+  #   AGENTSHROUD_WORKSPACE        workspace_path value below
+  openclaw:
+    name: "OpenClaw"
+    runtime: node
+    hostname: agentshroud          # Docker service hostname (matches docker-compose.yml)
+    port: 18789
+    health_path: /health
+    chat_path: /chat
+    webhook_path: /webhook
+    workspace_path: /home/node/.openclaw/workspace
+    config_dir: /home/node/.openclaw
+    dockerfile: docker/bots/openclaw/Dockerfile
+    env_prefix: OPENCLAW_
+    default: true
+  # nanobot:
+  #   name: "NanoBot"
+  #   runtime: python
+  #   hostname: nanobot
+  #   port: 8000
+  #   workspace_path: /app/workspace
+  #   config_dir: /app/config
+  #   dockerfile: docker/bots/nanobot/Dockerfile
+  #   env_prefix: NANOBOT_
+  #   default: false
 
 shortcuts:
   # iOS/macOS Shortcuts configuration
@@ -144,9 +200,12 @@ logging:
   destination: "/app/logs"
 
 channels:
-  # Channel ownership (P3) — Telegram + email oversight
-  # All bot messages and emails route through the gateway for PII scanning,
+  # Channel ownership (P3) — Telegram + email oversight + Slack
+  # All bot messages route through the gateway for PII scanning,
   # recipient allowlisting, and approval queue integration.
+  slack:
+    enabled: true       # Opt-in: flip to true after placing secrets in docker/secrets/
+    channel_id: "C0AM1GP930R"       # Primary Slack channel for bot notifications (e.g. C0ABC123DEF)
   email:
     enabled: true
     provider: icloud
@@ -225,21 +284,21 @@ ssh:
     - "dd if="
   hosts:
     pi:
-      host: "raspberrypi.tail240ea8.ts.net"
+      host: "raspberrypi"
       port: 22
       username: "agentshroud-bot"
       key_path: "/var/agentshroud-ssh/id_ed25519"
       known_hosts_file: "/tmp/ssh_known_hosts"
       max_session_seconds: 300
     marvin:
-      host: "marvin.tail240ea8.ts.net"
+      host: "marvin"
       port: 22
       username: "agentshroud-bot"
       key_path: "/var/agentshroud-ssh/id_ed25519"
       known_hosts_file: "/tmp/ssh_known_hosts"
       max_session_seconds: 300
     trillian:
-      host: "trillian.tail240ea8.ts.net"
+      host: "trillian"
       port: 22
       username: "agentshroud-bot"
       key_path: "/var/agentshroud-ssh/id_ed25519"
@@ -263,5 +322,21 @@ security_modules:
 
   # MCP Proxy - enforces per-tool permissions
   mcp_proxy:
+    mode: enforce      # enforce (default) or monitor
+
+  # DNS Exfiltration Filter - blocks DNS tunneling and enforces domain allowlist
+  dns_filter:
+    mode: enforce      # enforce (default) or monitor
+
+  # Sub-agent Oversight - enforces concurrency limits and trust-gated tool access
+  subagent_monitor:
+    mode: enforce      # enforce (default) or monitor
+
+  # Unified Egress Monitor - anomaly detection across all egress channels
+  egress_monitor:
+    mode: enforce      # enforce (default) or monitor
+
+  # Kill Switch - live enforcement (dry_run disabled)
+  killswitch:
     mode: enforce      # enforce (default) or monitor
 

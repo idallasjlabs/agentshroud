@@ -1,0 +1,273 @@
+{
+  "version": 1,
+  "jobs": [
+    {
+      "id": "a16ccca0-e953-48f3-9ebe-430e1085dea3",
+      "agentId": "main",
+      "name": "AgentShroud Daily Check-in",
+      "enabled": true,
+      "notify": true,
+      "createdAtMs": 1771284219648,
+      "updatedAtMs": 1771777048160,
+      "schedule": {
+        "kind": "cron",
+        "expr": "0 14 * * *",
+        "tz": "America/Chicago"
+      },
+      "sessionTarget": "isolated",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "agentTurn",
+        "message": "Daily AgentShroud check-in. SSH to Pi (agentshroud-bot@raspberrypi.tail240ea8.ts.net), project at ~/Development/agentshroud. Quick check: git log --oneline -5 main, count tests with ~/miniforge3/envs/agentshroud/bin/python -m pytest gateway/tests/ --co -q 2>&1 | tail -3. Report to Isaiah: what is on main, test count, any issues. Keep it under 200 words."
+      },
+      "state": {
+        "nextRunAtMs": 1771790400000,
+        "lastRunAtMs": 1771777019837,
+        "lastStatus": "ok",
+        "lastDurationMs": 28323,
+        "consecutiveErrors": 0
+      },
+      "sessionKey": "agent:main:main",
+      "delivery": {
+        "mode": "announce"
+      }
+    },
+    {
+      "id": "bf2cb8d3-cd7e-426a-9638-907579a79183",
+      "agentId": "main",
+      "name": "AgentShroud Weekly Summary",
+      "enabled": true,
+      "notify": true,
+      "createdAtMs": 1771284224231,
+      "updatedAtMs": 1771777097499,
+      "schedule": {
+        "kind": "cron",
+        "expr": "0 18 * * 5",
+        "tz": "America/Chicago"
+      },
+      "sessionTarget": "isolated",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "agentTurn",
+        "message": "Weekly AgentShroud project summary. Read /home/node/.openclaw/workspace/memory/agentshroud-roadmap.md and recent daily notes in /home/node/.openclaw/workspace/memory/. Compile a brief weekly status: phases completed, current phase progress percentage, blockers, and what is planned for next week. Send to Isaiah."
+      },
+      "state": {
+        "nextRunAtMs": 1772236800000,
+        "lastRunAtMs": 1771774850907,
+        "lastStatus": "ok",
+        "lastDurationMs": 10230,
+        "consecutiveErrors": 0
+      },
+      "sessionKey": "agent:main:main",
+      "delivery": {
+        "mode": "announce"
+      }
+    },
+    {
+      "id": "2fb1563b-0721-4226-8641-fc9def93a1bb",
+      "agentId": "main",
+      "name": "Daily Competitive Landscape Update",
+      "enabled": true,
+      "createdAtMs": 1771331204186,
+      "updatedAtMs": 1771777099064,
+      "schedule": {
+        "kind": "cron",
+        "expr": "45 5 * * *",
+        "tz": "America/Chicago"
+      },
+      "sessionTarget": "isolated",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "agentTurn",
+        "message": "Check for new releases and changes in the AI personal assistant landscape. Fetch latest from: 1) github.com/openclaw/openclaw/releases 2) github.com/drposter/nanobot 3) github.com/moshehbenavraham/crocbot 4) github.com/jimtin/zetherion-ai 5) github.com/qwibitai/nanoclaw 6) github.com/NevaMind-AI/memU 7) github.com/sipeed/picoclaw. Compare with current /home/node/.openclaw/workspace/competitive-analysis.md. If anything significant changed (new release, new security feature, major update, star count milestones), update competitive-analysis.md with new info and updated date. If nothing changed, do nothing."
+      },
+      "state": {
+        "nextRunAtMs": 1771847100000,
+        "lastRunAtMs": 1771774862433,
+        "lastStatus": "ok",
+        "lastDurationMs": 9635,
+        "consecutiveErrors": 0
+      },
+      "sessionKey": "agent:main:main",
+      "delivery": {
+        "mode": "announce"
+      }
+    },
+    {
+      "id": "62123d4f-ffcd-4798-94db-f9afb2b84711",
+      "agentId": "main",
+      "name": "Daily Competitive Analysis Email",
+      "enabled": true,
+      "createdAtMs": 1771331609254,
+      "updatedAtMs": 1771777100346,
+      "schedule": {
+        "kind": "cron",
+        "expr": "0 6 * * *",
+        "tz": "America/Chicago"
+      },
+      "sessionTarget": "isolated",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "agentTurn",
+        "message": "Send the daily competitive analysis email. Steps: 1) Read /home/node/.openclaw/workspace/competitive-analysis.md. 2) Get Gmail app password via: export OP_SERVICE_ACCOUNT_TOKEN=$(cat /run/secrets/1password_service_account) && op item get tdx3r77qoplljrv45luh7zkngi --vault Agent\\ Shroud\\ Bot\\ Credentials --fields label=password --reveal. 3) Send email to idallasj@gmail.com from agentshroud.ai@gmail.com using nodemailer (smtp.gmail.com:465 SSL). Subject: AgentShroud Daily Competitive Analysis AM - [today date]. Body: full competitive analysis as plain text. 4) Report success or failure."
+      },
+      "state": {
+        "nextRunAtMs": 1771848000000,
+        "lastRunAtMs": 1771774873646,
+        "lastStatus": "ok",
+        "lastDurationMs": 10443,
+        "consecutiveErrors": 0
+      },
+      "sessionKey": "agent:main:main",
+      "delivery": {
+        "mode": "announce"
+      }
+    },
+    {
+      "id": "83d64446-26bf-4122-810d-cf3625a3d933",
+      "agentId": "main",
+      "sessionKey": "agent:main:main",
+      "name": "Collaborator Report - Morning",
+      "enabled": true,
+      "createdAtMs": 1771549253362,
+      "updatedAtMs": 1771777101701,
+      "schedule": {
+        "kind": "cron",
+        "expr": "0 9 * * *",
+        "tz": "America/Chicago"
+      },
+      "sessionTarget": "isolated",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "agentTurn",
+        "message": "Generate a collaborator activity report. Read all files for today's date from BOTH paths: /home/node/agentshroud/gateway-data/contributors/ (primary) and /home/node/.openclaw/workspace/memory/contributors/ (fallback). Merge duplicates by filename/content. Summarize: who messaged the bot, what they asked, what recommendations they made, any action items for Isaiah. If no collaborator activity today, say No collaborator activity since last report. Keep it concise."
+      },
+      "state": {
+        "nextRunAtMs": 1771858800000,
+        "lastRunAtMs": 1771774898302,
+        "lastStatus": "ok",
+        "lastDurationMs": 9763,
+        "consecutiveErrors": 0
+      },
+      "delivery": {
+        "mode": "announce"
+      }
+    },
+    {
+      "id": "0f5f9018-4594-4b67-a0e7-e851f2465b23",
+      "agentId": "main",
+      "sessionKey": "agent:main:main",
+      "name": "Collaborator Report - Evening",
+      "enabled": true,
+      "createdAtMs": 1771549253400,
+      "updatedAtMs": 1771777103031,
+      "schedule": {
+        "kind": "cron",
+        "expr": "45 15 * * *"
+      },
+      "sessionTarget": "isolated",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "agentTurn",
+        "message": "Generate a collaborator activity report. Read all files for today's date from BOTH paths: /home/node/agentshroud/gateway-data/contributors/ (primary) and /home/node/.openclaw/workspace/memory/contributors/ (fallback). Merge duplicates by filename/content. Summarize: who messaged the bot, what they asked, what recommendations they made, any action items for Isaiah. If no collaborator activity today, say No collaborator activity since last report. Keep it concise."
+      },
+      "state": {
+        "nextRunAtMs": 1771861500000,
+        "lastRunAtMs": 1771774909578,
+        "lastStatus": "ok",
+        "lastDurationMs": 10957,
+        "consecutiveErrors": 0
+      },
+      "delivery": {
+        "mode": "announce"
+      }
+    },
+    {
+      "id": "02afd7b0-515b-4ad2-917c-53d42de73a4a",
+      "agentId": "main",
+      "sessionKey": "agent:main:main",
+      "name": "Collaborator Daily Digest",
+      "enabled": true,
+      "createdAtMs": 1771549253412,
+      "updatedAtMs": 1771777104355,
+      "schedule": {
+        "kind": "cron",
+        "expr": "0 6 * * *"
+      },
+      "sessionTarget": "isolated",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "agentTurn",
+        "message": "Generate the daily collaborator digest. Read ALL files for today's date from BOTH paths: /home/node/agentshroud/gateway-data/contributors/ (primary) and /home/node/.openclaw/workspace/memory/contributors/ (fallback). Merge duplicates by filename/content. Create a comprehensive summary: 1) Total interactions per collaborator 2) Key questions asked 3) Recommendations and suggestions made 4) Action items requiring Isaiah's attention 5) Any concerns or notable patterns. If no collaborator activity today, say No collaborator activity today."
+      },
+      "state": {
+        "nextRunAtMs": 1771826400000,
+        "lastRunAtMs": 1771774921971,
+        "lastStatus": "ok",
+        "lastDurationMs": 13199,
+        "consecutiveErrors": 0
+      },
+      "delivery": {
+        "mode": "announce"
+      }
+    },
+    {
+      "id": "0e07987f-fd30-4e88-91b6-15c61317b858",
+      "agentId": "main",
+      "name": "Competitive Landscape Update (Afternoon)",
+      "enabled": true,
+      "createdAtMs": 1771773360653,
+      "updatedAtMs": 1771777105721,
+      "schedule": {
+        "kind": "cron",
+        "expr": "45 14 * * *",
+        "tz": "America/Chicago"
+      },
+      "sessionTarget": "isolated",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "agentTurn",
+        "message": "Check for new releases and changes in the AI personal assistant landscape. Fetch latest from: 1) github.com/openclaw/openclaw/releases 2) github.com/drposter/nanobot 3) github.com/moshehbenavraham/crocbot 4) github.com/jimtin/zetherion-ai 5) github.com/qwibitai/nanoclaw 6) github.com/NevaMind-AI/memU 7) github.com/sipeed/picoclaw. Compare with current /home/node/.openclaw/workspace/competitive-analysis.md. If anything significant changed (new release, new security feature, major update, star count milestones), update competitive-analysis.md with new info and updated date. If nothing changed, do nothing."
+      },
+      "state": {
+        "nextRunAtMs": 1771793100000,
+        "lastRunAtMs": 1771774936541,
+        "lastStatus": "ok",
+        "lastDurationMs": 11135,
+        "consecutiveErrors": 0
+      },
+      "delivery": {
+        "mode": "announce"
+      }
+    },
+    {
+      "id": "1ab276e7-b6ba-47a4-af59-1765e13666e9",
+      "agentId": "main",
+      "name": "Competitive Analysis Email (Afternoon)",
+      "enabled": true,
+      "createdAtMs": 1771773392349,
+      "updatedAtMs": 1771777107015,
+      "schedule": {
+        "kind": "cron",
+        "expr": "0 15 * * *",
+        "tz": "America/Chicago"
+      },
+      "sessionTarget": "isolated",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "agentTurn",
+        "message": "Send the afternoon competitive analysis email. Steps: 1) Read /home/node/.openclaw/workspace/competitive-analysis.md. 2) Get Gmail app password: export OP_SERVICE_ACCOUNT_TOKEN=$(cat /run/secrets/1password_service_account) && op item get tdx3r77qoplljrv45luh7zkngi --vault 'Agent Shroud Bot Credentials' --fields label='password' --reveal. 3) Send email to idallasj@gmail.com from agentshroud.ai@gmail.com using nodemailer (smtp.gmail.com:465 SSL). Subject: 'AgentShroud Daily Competitive Analysis (PM) - [today date]'. Body: the full competitive analysis as plain text. 4) Report success or failure."
+      },
+      "state": {
+        "nextRunAtMs": 1771794000000,
+        "lastRunAtMs": 1771774948964,
+        "lastStatus": "ok",
+        "lastDurationMs": 12034,
+        "consecutiveErrors": 0
+      },
+      "delivery": {
+        "mode": "announce"
+      }
+    }
+  ]
+}
