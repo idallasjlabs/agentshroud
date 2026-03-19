@@ -1024,7 +1024,7 @@ class ScanRequest(BaseModel):
 @router.post("/scan/{scanner}")
 async def run_scanner(
     scanner: str,
-    body: ScanRequest,
+    body: Optional[ScanRequest] = None,
     caller: SCLCaller = Depends(get_caller),
 ) -> Dict:
     caller.require(Action.EXECUTE, Resource.SYSTEM)
