@@ -104,6 +104,34 @@ window._closeModal = function() {
 // WebSocket
 // ---------------------------------------------------------------------------
 
+// ---------------------------------------------------------------------------
+// Login modal
+// ---------------------------------------------------------------------------
+
+function _showLoginModal(msg) {
+  return new Promise(resolve => {
+    const overlay = document.getElementById('login-modal');
+    const input   = document.getElementById('login-token');
+    const msgEl   = document.getElementById('login-msg');
+    if (msgEl && msg) msgEl.textContent = msg;
+    if (input) { input.value = ''; }
+    if (overlay) overlay.classList.add('open');
+    window._loginSubmit = () => {
+      const val = (input ? input.value : '').trim();
+      if (!val) return;
+      _token = val;
+      localStorage.setItem('soc_token', _token);
+      if (overlay) overlay.classList.remove('open');
+      resolve();
+    };
+    // Allow Enter key to submit
+    if (input) {
+      input.onkeydown = e => { if (e.key === 'Enter') window._loginSubmit(); };
+      setTimeout(() => input.focus(), 50);
+    }
+  });
+}
+
 async function _connectWS() {
   if (_ws && _ws.readyState <= 1) return;
   _setWSStatus('connecting');
@@ -114,8 +142,12 @@ async function _connectWS() {
     if (r.ok && r.data.token) {
       wsToken = r.data.token;
     } else if (r.status === 401) {
-      // Token rejected — already cleared and re-prompted by _ensureValidToken at startup
+      // Token rejected — clear and show login modal, then retry WS
+      localStorage.removeItem('soc_token');
+      _token = '';
+      await _showLoginModal('Session expired — re-enter gateway token.');
       _setWSStatus('disconnected');
+      setTimeout(_connectWS, 200);
       return;
     }
   } catch (_) {}
@@ -884,24 +916,17 @@ function _initTheme() {
 document.addEventListener('DOMContentLoaded', async () => {
   _initTheme();
 
-  // Token prompt — prompt immediately if no stored token
-  if (!_token) {
-    _token = (prompt('AgentShroud™ SOC — Enter gateway token:') || '').trim();
-    if (_token) localStorage.setItem('soc_token', _token);
-  }
-
-  // Verify stored token is still valid; if not, clear and re-prompt once
-  if (_token) {
+  // If no stored token, or stored token is invalid → show login modal and wait
+  const _needsAuth = async () => {
+    if (!_token) return true;
     try {
-      const chk = await fetch(`${SOC_BASE}/health`, {
-        headers: { 'Authorization': `Bearer ${_token}` }
-      });
-      if (chk.status === 401) {
-        localStorage.removeItem('soc_token');
-        _token = (prompt('Session expired — re-enter gateway token:') || '').trim();
-        if (_token) localStorage.setItem('soc_token', _token);
-      }
+      const chk = await fetch(`${SOC_BASE}/health`, { headers: { Authorization: `Bearer ${_token}` } });
+      if (chk.status === 401) { localStorage.removeItem('soc_token'); _token = ''; return true; }
     } catch (_) {}
+    return false;
+  };
+  if (await _needsAuth()) {
+    await _showLoginModal();
   }
 
   // Register tab loaders
