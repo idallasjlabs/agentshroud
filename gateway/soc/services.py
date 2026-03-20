@@ -5,6 +5,7 @@ from __future__ import annotations
 import http.client
 import json as _json
 import logging
+import os
 import socket
 import time
 from typing import Any, Dict, List, Optional
@@ -43,22 +44,74 @@ def _inspect_via_socket(name: str) -> Optional[Dict[str, Any]]:
 _KNOWN_SERVICES = [
     "agentshroud-bot",
     "agentshroud-gateway",
-    "agentshroud-clamav",
-    "agentshroud-fluent-bit",
     "agentshroud-falco",
-    "agentshroud-wazuh-agent",
 ]
 
+
+def _check_clamd() -> bool:
+    """Return True if clamd Unix socket /tmp/clamd.ctl is connectable."""
+    try:
+        s = socket.socket(socket.AF_UNIX, socket.SOCK_STREAM)
+        s.settimeout(1)
+        s.connect("/tmp/clamd.ctl")
+        s.close()
+        return True
+    except Exception:
+        return False
+
+
+def _check_fluent_bit() -> bool:
+    """Return True if fluent-bit pidfile /tmp/fluent-bit.pid exists with a live PID."""
+    import os as _os
+    try:
+        pid = int(open("/tmp/fluent-bit.pid").read().strip())
+        _os.kill(pid, 0)
+        return True
+    except Exception:
+        return False
+
+
+def _check_wazuh_agent() -> bool:
+    """Return True if wazuh-agentd is running (pidfile + signal 0).
+
+    Uses errno.EPERM to detect process owned by a different user — that still
+    means the process exists and is running.
+    """
+    import errno as _errno
+    import os as _os
+    try:
+        pid = int(open("/var/ossec/var/run/wazuh-agentd.pid").read().strip())
+        _os.kill(pid, 0)
+        return True
+    except OSError as exc:
+        return exc.errno == _errno.EPERM  # process exists, different owner
+    except Exception:
+        return False
+
+
+def _check_openscap() -> bool:
+    """Return True if oscap binary and Debian 12 SCAP content are present."""
+    import shutil
+    return bool(
+        shutil.which("oscap")
+        and os.path.exists("/usr/share/xml/scap/ssg/content/ssg-debian12-ds.xml")
+    )
+
+
 # Internal gateway services — processes running inside the gateway container.
-# Status is derived from app_state rather than Docker inspection.
-# (svc_name, app_state_attr, label, port)
+# (svc_name, app_state_attr, label, port, check_fn)
+# check_fn: callable() -> bool overrides app_state attr lookup when not None.
 _INTERNAL_SERVICE_ATTRS = [
-    ("agentshroud-http-proxy",    "http_proxy",    "HTTP CONNECT Proxy",  8181),
-    ("agentshroud-dns-forwarder", "dns_transport", "DNS Forwarder",       5353),
-    ("agentshroud-mcp-proxy",     "mcp_proxy",     "MCP Proxy",           None),
-    ("agentshroud-ssh-proxy",     "ssh_proxy",     "SSH Proxy",           None),
-    ("agentshroud-egress-filter", "egress_filter", "Egress Filter",       None),
-    ("agentshroud-pii-sanitizer", "sanitizer",     "PII Sanitizer",       None),
+    ("agentshroud-http-proxy",    "http_proxy",    "HTTP CONNECT Proxy",  8181, None),
+    ("agentshroud-dns-forwarder", "dns_transport", "DNS Forwarder",       5353, None),
+    ("agentshroud-mcp-proxy",     "mcp_proxy",     "MCP Proxy",           None, None),
+    ("agentshroud-ssh-proxy",     "ssh_proxy",     "SSH Proxy",           None, None),
+    ("agentshroud-egress-filter", "egress_filter", "Egress Filter",       None, None),
+    ("agentshroud-pii-sanitizer", "sanitizer",     "PII Sanitizer",       None, None),
+    ("agentshroud-clamav",        None,             "ClamAV",              None, _check_clamd),
+    ("agentshroud-fluent-bit",    None,             "Fluent Bit",          2020, _check_fluent_bit),
+    ("agentshroud-wazuh",         None,             "Wazuh Agent",         None, _check_wazuh_agent),
+    ("agentshroud-openscap",      None,             "OpenSCAP",            None, _check_openscap),
 ]
 
 
@@ -113,9 +166,12 @@ class ServiceManager:
         # Internal gateway services (running inside the gateway process)
         try:
             from ..ingest_api.state import app_state
-            for svc_name, attr, label, port in _INTERNAL_SERVICE_ATTRS:
-                obj = getattr(app_state, attr, None)
-                running = obj is not None
+            for svc_name, attr, label, port, check_fn in _INTERNAL_SERVICE_ATTRS:
+                if check_fn is not None:
+                    running = check_fn()
+                else:
+                    obj = getattr(app_state, attr, None)
+                    running = obj is not None
                 ports = [f"{port}/tcp"] if port and running else []
                 descriptors.append(ServiceDescriptor(
                     name=svc_name,
