@@ -28,4 +28,4 @@ if [ -x /var/ossec/bin/wazuh-agentd ]; then
     echo "[gateway-start] wazuh-agentd launched (pid=$!)"
 fi
 
-exec uvicorn gateway.ingest_api.main:app --host 0.0.0.0 --port 8080
+exec uvicorn gateway.ingest_api.main:app --host 0.0.0.0 --port 8080 --no-access-log

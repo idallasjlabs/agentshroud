@@ -99,7 +99,7 @@ services:
       interval: 30s
       timeout: 10s
       retries: 3
-      start_period: 10s
+      start_period: 30s
 
     # Gateway resolves DNS directly (sole egress point)
     dns:
@@ -219,7 +219,8 @@ services:
 
   # ── Falco ─────────────────────────────────────────────────────────────────────
   # Runtime security — syscall monitoring via modern eBPF CO-RE probe (ARM64-safe).
-  # Uses falco-no-driver image; kernel module not required. modern-bpf auto-loads BTF.
+  # Uses falco-no-driver image; kernel module not required. engine.kind=modern_ebpf auto-loads BTF.
+  # Note: --modern-bpf flag was removed in Falco 0.39+; use -o engine.kind=modern_ebpf instead.
   falco:
     image: falcosecurity/falco-no-driver:latest
     container_name: agentshroud-falco
@@ -229,7 +230,8 @@ services:
     pid: host
     command:
       - falco
-      - --modern-bpf
+      - -o
+      - engine.kind=modern_ebpf
       - -o
       - file_output.enabled=true
       - -o

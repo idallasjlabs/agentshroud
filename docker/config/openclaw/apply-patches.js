@@ -441,6 +441,19 @@ if (slackBotToken && slackAppToken) {
       changed = true;
     }
   }
+  // Increase stale-socket detection window to prevent false restarts on VPN-killed
+  // idle TCP sessions. Default channelConnectGrace (~150s) fires before keepalive recovers;
+  // 300s grace + 600s stall interval doubles the tolerance window.
+  {
+    const hm = config.channels.slack.healthMonitor || {};
+    let hm_changed = false;
+    if (hm.channelConnectGrace !== 300) { hm.channelConnectGrace = 300; hm_changed = true; }
+    if (hm.stallDetectionInterval !== 600) { hm.stallDetectionInterval = 600; hm_changed = true; }
+    if (hm_changed) {
+      config.channels.slack.healthMonitor = hm;
+      changed = true;
+    }
+  }
   console.log('[init-patch] Patched channels.slack (Socket Mode, dmPolicy=open)');
 } else {
   console.log('[init-patch] Slack tokens not found — skipping channels.slack patch');
