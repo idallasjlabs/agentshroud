@@ -324,8 +324,8 @@ window._reloadSecurity = _loadSecurity;
 const SCANNER_INFO = {
   trivy:        { label: 'Trivy',      desc: 'CVE / image vulnerability scanning',      iec: 'FR3 SR 3.4' },
   clamav:       { label: 'ClamAV',    desc: 'Malware / antivirus scanning',             iec: 'FR3 SR 3.2' },
-  falco:        { label: 'Falco',     desc: 'Runtime eBPF syscall detection',           iec: 'FR3 SR 3.5 / FR6' },
-  wazuh:        { label: 'Wazuh',     desc: 'HIDS / file integrity monitoring',         iec: 'FR3 SR 3.2 / FR6 SR 6.2' },
+  falco:        { label: 'Falco',     desc: 'Runtime eBPF syscall detection',           iec: 'FR3 SR 3.5 / FR6',        noScan: true },
+  wazuh:        { label: 'Wazuh',     desc: 'HIDS / file integrity monitoring',         iec: 'FR3 SR 3.2 / FR6 SR 6.2', noScan: true },
   openscap:     { label: 'OpenSCAP',  desc: 'CIS Benchmark / DISA STIG compliance',    iec: 'FR3 SR 3.3' },
   'fluent-bit': { label: 'Fluent Bit',desc: 'Centralized log collection & forwarding', iec: 'FR6 SR 6.2', noScan: true },
 };
@@ -335,7 +335,7 @@ async function _loadScanners() {
     _get('/scanners'),
     _get('/sbom'),
   ]);
-  _renderScanners(scannersRes.data);
+  _renderScanners(scannersRes.data?.scanners ?? scannersRes.data);
   _renderSbom(sbomRes.data, sbomRes.status);
   _setText('scanners-updated', `Updated ${new Date().toLocaleTimeString()}`);
 }

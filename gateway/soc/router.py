@@ -1373,7 +1373,7 @@ async def soc_websocket(websocket: WebSocket):
 async def soc_dashboard(request: Request):
     """Serve the unified SOC web dashboard."""
     template_path = Path(__file__).parent / "templates" / "soc.html"
-    _v = _CURRENT_VERSION.replace(".", "")
+    _v = _CURRENT_VERSION.replace(".", "") + "b"
     if template_path.exists():
         html = template_path.read_text()
         # Inject version query param for cache-busting on each release
