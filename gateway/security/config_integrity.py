@@ -130,6 +130,17 @@ class ConfigIntegrityMonitor:
 
         return changes
 
+    def reset_baseline(self) -> None:
+        """Accept current file hashes as the new baseline (owner-acknowledged rebuild)."""
+        current: Dict[str, Optional[str]] = {}
+        for rel_path in _MONITORED_FILES:
+            abs_path = self.bot_config_dir / rel_path
+            current[rel_path] = self._hash_file(abs_path)
+        self._save_baseline(current)
+        logger.info(
+            "ConfigIntegrityMonitor: baseline reset by owner (%d file(s))", len(current)
+        )
+
     def format_alert_text(self, changes: list[dict]) -> str:
         """Format Telegram alert text for detected config changes."""
         lines = ["⚠️ *Config Integrity Alert*\n"]
