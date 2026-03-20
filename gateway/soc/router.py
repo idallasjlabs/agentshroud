@@ -1373,8 +1373,16 @@ async def soc_websocket(websocket: WebSocket):
 async def soc_dashboard(request: Request):
     """Serve the unified SOC web dashboard."""
     template_path = Path(__file__).parent / "templates" / "soc.html"
+    _v = _CURRENT_VERSION.replace(".", "")
     if template_path.exists():
-        return HTMLResponse(content=template_path.read_text())
+        html = template_path.read_text()
+        # Inject version query param for cache-busting on each release
+        html = html.replace('/soc/static/soc.js"', f'/soc/static/soc.js?v={_v}"')
+        html = html.replace('/soc/static/soc.css"', f'/soc/static/soc.css?v={_v}"')
+        return HTMLResponse(
+            content=html,
+            headers={"Cache-Control": "no-cache, no-store, must-revalidate"},
+        )
     return HTMLResponse(content=_minimal_dashboard_html())
 
 
