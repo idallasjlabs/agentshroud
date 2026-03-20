@@ -7,6 +7,28 @@
 
 set -euo pipefail
 
+# ---------------------------------------------------------------------------
+# Security agents — start before main process (non-fatal, background)
+# ---------------------------------------------------------------------------
+
+# ClamAV daemon — malware scanning for bot workspace
+# Bot has ClamAV installed; clamd.conf uses /tmp for socket (read_only rootfs safe).
+if command -v clamd >/dev/null 2>&1 && [ -f /var/lib/clamav/main.cvd -o -f /var/lib/clamav/main.cld ]; then
+    clamd --config-file=/etc/clamav/clamd.conf 2>/tmp/clamd-start.log &
+    echo "[startup] clamd launched (pid=$!)"
+else
+    echo "[startup] clamd: skipping (binary or virus DB not ready)"
+fi
+
+# Wazuh agent — FIM on /home/node/agentshroud/workspace
+# /var/ossec is owned by node (chowned at build time); runs without root.
+if [ -x /var/ossec/bin/wazuh-agentd ]; then
+    mkdir -p /var/ossec/var/run /var/ossec/queue/sockets /var/ossec/tmp 2>/dev/null || true
+    /var/ossec/bin/wazuh-agentd 2>/tmp/wazuh-start.log &
+    echo "[startup] wazuh-agentd launched (pid=$!)"
+fi
+
+# ---------------------------------------------------------------------------
 # Export Gateway password from secret file
 # Note: OpenClaw CLI expects OPENCLAW_GATEWAY_PASSWORD env var
 if [ -f "/run/secrets/gateway_password" ]; then
