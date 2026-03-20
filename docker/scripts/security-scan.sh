@@ -35,10 +35,22 @@ run_trivy() {
         return 1
     fi
 
-    trivy fs --format json --severity CRITICAL,HIGH,MEDIUM,LOW --no-progress --offline-scan \
+    # Try with DB update first; fall back to cached DB if download fails (e.g. VPN blocks ghcr.io)
+    TRIVY_CACHE="${TRIVY_CACHE_DIR:-/var/log/security/.trivy-cache}"
+    mkdir -p "$TRIVY_CACHE"
+    if ! trivy fs --format json --severity CRITICAL,HIGH,MEDIUM,LOW --no-progress \
         --ignore-unfixed \
+        --cache-dir "$TRIVY_CACHE" \
         / \
-        > "$LOG_DIR/trivy/trivy-$TIMESTAMP.json" 2>"$LOG_DIR/trivy/trivy-$TIMESTAMP.err" || true
+        > "$LOG_DIR/trivy/trivy-$TIMESTAMP.json" 2>"$LOG_DIR/trivy/trivy-$TIMESTAMP.err"; then
+        log "WARNING: Trivy with DB update failed, retrying with --skip-db-update"
+        trivy fs --format json --severity CRITICAL,HIGH,MEDIUM,LOW --no-progress \
+            --ignore-unfixed \
+            --skip-db-update \
+            --cache-dir "$TRIVY_CACHE" \
+            / \
+            > "$LOG_DIR/trivy/trivy-$TIMESTAMP.json" 2>"$LOG_DIR/trivy/trivy-$TIMESTAMP.err" || true
+    fi
 
     CRITICAL=$(python3 -c "
 import json, sys
