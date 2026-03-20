@@ -1,5 +1,6 @@
 # Falco configuration for AgentShroud
-# JSON output for programmatic parsing
+# Pinned to Falco 0.38.2 — stable schema, built-in container support
+# JSON output for programmatic parsing by scanner_integration.py
 
 json_output: true
 json_include_output_property: true
@@ -9,29 +10,16 @@ log_stderr: true
 log_syslog: false
 log_level: warning
 
-# File output
+# Custom rules only — macros defined inline in agentshroud.yaml
+rules_files:
+  - /etc/falco/rules.d/agentshroud.yaml
+
+# File output — gateway reads /var/log/falco/falco-events.json
 file_output:
   enabled: true
   keep_alive: true
   filename: /var/log/falco/falco-events.json
 
-# gRPC server
-grpc:
-  enabled: true
-  bind_address: "unix:///var/run/falco/falco.sock"
-  threadiness: 2
-
-grpc_output:
-  enabled: true
-
 # Stdout output (for docker logs)
 stdout_output:
   enabled: true
-
-# Rate limiting
-outputs:
-  rate: 1
-  max_burst: 10
-
-# Buffered outputs
-buffered_outputs: true

@@ -608,7 +608,7 @@ def _score_malware_defense(clamav: Dict[str, Any]) -> int:
     if clamav.get("critical", 0) > 0:
         return 1
     # Running and clean
-    if clamav.get("files_scanned", 0) > 0:
+    if clamav.get("scanned_files", clamav.get("files_scanned", 0)) > 0:
         if _is_fresh(_CLAMAV_REPORT_DIR, "clamav-"):
             return 5
         return 4
@@ -1102,15 +1102,19 @@ def _score_container_runtime_isolation() -> int:
     if is_root:
         return 0  # Running as root with all capabilities = privileged
     score = 1  # Not fully privileged
-    # Level 2: check for host namespace sharing via /proc/1/ns vs /proc/self/ns
+    # Level 2: inside a Docker container, PID 1 and self share the same container-level
+    # mount namespace (correct and expected). Positive signal: /.dockerenv exists,
+    # which Docker injects to mark managed containers with host-isolated namespaces.
     try:
-        pid1_mnt = Path("/proc/1/ns/mnt").resolve()
-        self_mnt = Path("/proc/self/ns/mnt").resolve()
-        if str(pid1_mnt) != str(self_mnt):
-            score += 1  # Isolated mount namespace
+        if Path("/.dockerenv").exists():
+            score += 1  # Docker-managed container = mount ns isolated from host
         else:
-            # If same namespace as PID 1, we share host namespaces
-            return 1
+            pid1_mnt = Path("/proc/1/ns/mnt").resolve()
+            self_mnt = Path("/proc/self/ns/mnt").resolve()
+            if str(pid1_mnt) != str(self_mnt):
+                score += 1
+            else:
+                return 1
     except Exception:
         score += 1  # Can't check = assume isolated
     # Level 3: read-only root filesystem

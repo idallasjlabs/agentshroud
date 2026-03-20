@@ -211,7 +211,7 @@ services:
   # shell spawns, unexpected outbound connections, privilege escalation,
   # file access outside workspace, crypto mining. (IEC 62443 FR3, FR6)
   falco:
-    image: falcosecurity/falco:latest
+    image: falcosecurity/falco:0.38.2
     container_name: agentshroud-falco
     hostname: falco
     restart: unless-stopped
@@ -234,6 +234,7 @@ services:
   # Virus DB is auto-updated daily. (IEC 62443 FR3 SR 3.2)
   clamav:
     image: clamav/clamav:stable
+    platform: linux/amd64
     container_name: agentshroud-clamav
     hostname: clamav
     restart: unless-stopped
@@ -258,7 +259,7 @@ services:
   # Host-based intrusion detection: file integrity monitoring (FIM) on the
   # bot workspace and config volumes, rootkit detection. (IEC 62443 FR3, FR6)
   wazuh-agent:
-    image: wazuh/wazuh-agent:4.7.0
+    image: wazuh/wazuh-agent:4.14.4
     container_name: agentshroud-wazuh-agent
     hostname: wazuh-agent
     restart: unless-stopped
