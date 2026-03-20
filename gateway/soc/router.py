@@ -1050,6 +1050,23 @@ async def get_config(caller: SCLCaller = Depends(get_caller)) -> Dict:
     }
 
 
+@router.post("/config-integrity/acknowledge")
+async def acknowledge_config_integrity(caller: SCLCaller = Depends(get_caller)) -> Dict:
+    """Reset the config integrity baseline to the current file state.
+
+    Use after a legitimate rebuild to silence the stale-hash warning on the
+    next restart. Owner access required.
+    """
+    if not caller.is_owner():
+        raise HTTPException(status_code=403, detail="Owner access required")
+    app = _app_state()
+    monitor = getattr(app, "config_integrity", None)
+    if monitor is None:
+        return {"status": "skipped", "reason": "ConfigIntegrityMonitor not initialized"}
+    monitor.reset_baseline()
+    return {"status": "ok", "message": "Config integrity baseline reset to current state"}
+
+
 # ---------------------------------------------------------------------------
 # Scan implementation helpers
 # ---------------------------------------------------------------------------
