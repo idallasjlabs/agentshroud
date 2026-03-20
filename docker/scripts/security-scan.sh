@@ -13,7 +13,7 @@ GATEWAY_URL="${GATEWAY_URL:-http://localhost:8080}"
 TIMESTAMP=$(date -u +%Y%m%d-%H%M%S)
 WORKSPACE="${AGENTSHROUD_WORKSPACE:-/app}"
 
-mkdir -p "$LOG_DIR"/{trivy,clamav,openscap,sbom}
+mkdir -p "$LOG_DIR/trivy" "$LOG_DIR/clamav" "$LOG_DIR/openscap" "$LOG_DIR/sbom"
 
 log() {
     echo "[$(date -u +%Y-%m-%dT%H:%M:%SZ)] [scan] $*"
@@ -35,9 +35,8 @@ run_trivy() {
         return 1
     fi
 
-    trivy fs --format json --severity CRITICAL,HIGH,MEDIUM,LOW --no-progress \
+    trivy fs --format json --severity CRITICAL,HIGH,MEDIUM,LOW --no-progress --offline-scan \
         --ignore-unfixed \
-        --db-repository ghcr.io/aquasecurity/trivy-db \
         / \
         > "$LOG_DIR/trivy/trivy-$TIMESTAMP.json" 2>"$LOG_DIR/trivy/trivy-$TIMESTAMP.err" || true
 
