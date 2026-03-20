@@ -330,29 +330,33 @@ MEMORY_BACKUP_DIR="/app/memory-backups"
 MEMORY_DIR="${WORKSPACE_DIR}/memory"
 MEMORY_FILE="${WORKSPACE_DIR}/MEMORY.md"
 
-# Restore: if workspace has no memory but backup exists, restore it
+# Restore: independently restore each memory artifact if missing from workspace.
+# Each check is independent so a partial backup (e.g. memory/ present but MEMORY.md
+# missing) still restores whatever is available.
 if [ -d "${MEMORY_BACKUP_DIR}" ] && [ "$(ls -A ${MEMORY_BACKUP_DIR} 2>/dev/null)" ]; then
-  if [ ! -f "${MEMORY_FILE}" ] && [ ! -d "${MEMORY_DIR}" ]; then
-    echo "[init] Fresh workspace detected — restoring memory from backup"
-    # Restore MEMORY.md
-    if [ -f "${MEMORY_BACKUP_DIR}/MEMORY.md" ]; then
-      cp "${MEMORY_BACKUP_DIR}/MEMORY.md" "${MEMORY_FILE}"
-      echo "[init] ✓ Restored MEMORY.md"
+  _restored=0
+  # MEMORY.md — restore if missing from workspace and present in backup
+  if [ ! -f "${MEMORY_FILE}" ] && [ -f "${MEMORY_BACKUP_DIR}/MEMORY.md" ]; then
+    cp "${MEMORY_BACKUP_DIR}/MEMORY.md" "${MEMORY_FILE}"
+    echo "[init] ✓ Restored MEMORY.md"
+    _restored=$((_restored + 1))
+  fi
+  # memory/ directory — restore if missing or empty
+  if { [ ! -d "${MEMORY_DIR}" ] || [ -z "$(ls -A "${MEMORY_DIR}" 2>/dev/null)" ]; } && [ -d "${MEMORY_BACKUP_DIR}/memory" ]; then
+    mkdir -p "${MEMORY_DIR}"
+    cp -r "${MEMORY_BACKUP_DIR}/memory/"* "${MEMORY_DIR}/" 2>/dev/null || true
+    echo "[init] ✓ Restored memory/ directory ($(ls "${MEMORY_DIR}" 2>/dev/null | wc -l | tr -d ' ') files)"
+    _restored=$((_restored + 1))
+  fi
+  # Workspace files — restore each independently if missing
+  for f in USER.md TOOLS.md HEARTBEAT.md; do
+    if [ ! -f "${WORKSPACE_DIR}/${f}" ] && [ -f "${MEMORY_BACKUP_DIR}/${f}" ]; then
+      cp "${MEMORY_BACKUP_DIR}/${f}" "${WORKSPACE_DIR}/${f}"
+      echo "[init] ✓ Restored ${f}"
+      _restored=$((_restored + 1))
     fi
-    # Restore memory/ directory
-    if [ -d "${MEMORY_BACKUP_DIR}/memory" ]; then
-      mkdir -p "${MEMORY_DIR}"
-      cp -r "${MEMORY_BACKUP_DIR}/memory/"* "${MEMORY_DIR}/" 2>/dev/null || true
-      echo "[init] ✓ Restored memory/ directory ($(ls ${MEMORY_DIR} | wc -l) files)"
-    fi
-    # Restore USER.md, TOOLS.md if they exist in backup
-    for f in USER.md TOOLS.md HEARTBEAT.md; do
-      if [ -f "${MEMORY_BACKUP_DIR}/${f}" ]; then
-        cp "${MEMORY_BACKUP_DIR}/${f}" "${WORKSPACE_DIR}/${f}"
-        echo "[init] ✓ Restored ${f}"
-      fi
-    done
-  else
+  done
+  if [ "${_restored}" -eq 0 ]; then
     echo "[init] ✓ Memory already present — no restore needed"
   fi
 else
