@@ -14,19 +14,6 @@ const MAX_FEED = 300;
 // API helpers
 // ---------------------------------------------------------------------------
 
-let _authPromptActive = false;
-
-async function _reauth() {
-  if (_authPromptActive) return false;
-  _authPromptActive = true;
-  _token = '';
-  localStorage.removeItem('soc_token');
-  _token = (prompt('Session expired — re-enter gateway token:') || '').trim();
-  if (_token) localStorage.setItem('soc_token', _token);
-  _authPromptActive = false;
-  return !!_token;
-}
-
 async function _api(method, path, body) {
   const opts = {
     method,
@@ -35,17 +22,6 @@ async function _api(method, path, body) {
   if (body !== undefined) opts.body = JSON.stringify(body);
   try {
     const resp = await fetch(`${SOC_BASE}${path}`, opts);
-    if (resp.status === 401) {
-      const ok = await _reauth();
-      if (ok) {
-        // Retry once with the fresh token
-        opts.headers['Authorization'] = `Bearer ${_token}`;
-        const retry = await fetch(`${SOC_BASE}${path}`, opts);
-        const data = await retry.json().catch(() => ({}));
-        return { ok: retry.ok, status: retry.status, data };
-      }
-      return { ok: false, status: 401, data: {} };
-    }
     const data = await resp.json().catch(() => ({}));
     return { ok: resp.ok, status: resp.status, data };
   } catch (err) {
@@ -138,9 +114,9 @@ async function _connectWS() {
     if (r.ok && r.data.token) {
       wsToken = r.data.token;
     } else if (r.status === 401) {
-      // Stale or invalid session token — _api already triggered _reauth(); bail and let retry reconnect
-      if (!_token) { _setWSStatus('disconnected'); return; }
-      wsToken = _token;
+      // Token rejected — already cleared and re-prompted by _ensureValidToken at startup
+      _setWSStatus('disconnected');
+      return;
     }
   } catch (_) {}
   const wsBase = location.origin.replace(/^http/, 'ws');
@@ -905,13 +881,27 @@ function _initTheme() {
   });
 }
 
-document.addEventListener('DOMContentLoaded', () => {
+document.addEventListener('DOMContentLoaded', async () => {
   _initTheme();
 
-  // Token prompt
+  // Token prompt — prompt immediately if no stored token
   if (!_token) {
     _token = (prompt('AgentShroud™ SOC — Enter gateway token:') || '').trim();
     if (_token) localStorage.setItem('soc_token', _token);
+  }
+
+  // Verify stored token is still valid; if not, clear and re-prompt once
+  if (_token) {
+    try {
+      const chk = await fetch(`${SOC_BASE}/health`, {
+        headers: { 'Authorization': `Bearer ${_token}` }
+      });
+      if (chk.status === 401) {
+        localStorage.removeItem('soc_token');
+        _token = (prompt('Session expired — re-enter gateway token:') || '').trim();
+        if (_token) localStorage.setItem('soc_token', _token);
+      }
+    } catch (_) {}
   }
 
   // Register tab loaders
