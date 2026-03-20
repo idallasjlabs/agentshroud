@@ -1335,6 +1335,51 @@ async def full_security_report(auth: AuthRequired):
     return report
 
 
+@app.post("/api/alerts")
+async def receive_security_alert(request: Request):
+    """Receive structured security alerts from gateway-internal scripts.
+
+    Called by security-scan.sh, security-entrypoint.sh, and security-report.sh
+    running inside the gateway container. No auth required — only reachable from
+    localhost (127.0.0.1) within the container.
+
+    Payload schema:
+        type      — "security_alert" | "health_report"
+        severity  — "CRITICAL" | "HIGH" | "WARNING" | "INFO"
+        tool      — scanner name (e.g. "clamav", "trivy", "health_report")
+        message   — human-readable description
+        timestamp — ISO-8601 (optional)
+    """
+    try:
+        body = await request.json()
+    except Exception:
+        body = {}
+
+    severity = body.get("severity", "INFO").upper()
+    tool = body.get("tool", "unknown")
+    message = body.get("message", "")
+    alert_type = body.get("type", "security_alert")
+
+    log_fn = logger.warning if severity in ("CRITICAL", "HIGH", "WARNING") else logger.info
+    log_fn("[security-alert] type=%s severity=%s tool=%s message=%s", alert_type, severity, tool, message[:200])
+
+    if app_state.event_bus:
+        try:
+            await app_state.event_bus.publish({
+                "event_type": "security_alert",
+                "source": "security_script",
+                "alert_type": alert_type,
+                "severity": severity,
+                "tool": tool,
+                "message": message,
+                "timestamp": body.get("timestamp"),
+            })
+        except Exception:
+            pass
+
+    return {"ok": True, "received": True}
+
+
 @app.get("/manage/scanners/summary")
 async def scanner_summary(auth: AuthRequired):
     """Return normalized scanner state + latest results for SOC/dashboard views."""
