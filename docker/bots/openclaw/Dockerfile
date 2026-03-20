@@ -36,8 +36,33 @@ RUN DPKG_ARCH=$(dpkg --print-architecture) && \
       *) TRIVY_ARCH="$DPKG_ARCH" ;; \
     esac &&     curl -sSfL -o "/tmp/trivy_${TRIVY_VERSION}_Linux-${TRIVY_ARCH}.deb"         "https://github.com/aquasecurity/trivy/releases/download/v${TRIVY_VERSION}/trivy_${TRIVY_VERSION}_Linux-${TRIVY_ARCH}.deb" &&     curl -sSfL -o /tmp/trivy_checksums.txt         "https://github.com/aquasecurity/trivy/releases/download/v${TRIVY_VERSION}/trivy_${TRIVY_VERSION}_checksums.txt" &&     cd /tmp && grep "trivy_${TRIVY_VERSION}_Linux-${TRIVY_ARCH}.deb" trivy_checksums.txt | sha256sum -c - &&     dpkg -i "/tmp/trivy_${TRIVY_VERSION}_Linux-${TRIVY_ARCH}.deb" &&     rm "/tmp/trivy_${TRIVY_VERSION}_Linux-${TRIVY_ARCH}.deb" /tmp/trivy_checksums.txt
 
-# ClamAV DB directory
-RUN mkdir -p /var/lib/clamav
+# ClamAV DB directory — pre-download virus signatures at build time
+RUN mkdir -p /var/lib/clamav \
+    && (freshclam --quiet 2>/dev/null || echo "freshclam: virus DB download deferred to runtime")
+
+# clamd.conf for bot — socket and state in /tmp (compatible with read_only rootfs)
+RUN printf '%s\n' \
+    'LocalSocket /tmp/clamd.ctl' \
+    'LocalSocketMode 666' \
+    'PidFile /tmp/clamd.pid' \
+    'DatabaseDirectory /var/lib/clamav' \
+    'TemporaryDirectory /tmp' \
+    'LogFile /tmp/clamav.log' \
+    'LogFileMaxSize 10M' \
+    > /etc/clamav/clamd.conf
+
+# Wazuh agent — HIDS / FIM for bot workspace monitoring
+# ARM64-native since Wazuh 4.3; chown to node so it runs without root.
+ARG WAZUH_VERSION=4.9.2
+RUN curl -sSfL https://packages.wazuh.com/key/GPG-KEY-WAZUH \
+        | gpg --dearmor -o /usr/share/keyrings/wazuh.gpg \
+    && echo "deb [signed-by=/usr/share/keyrings/wazuh.gpg] https://packages.wazuh.com/4.x/apt/ stable main" \
+        > /etc/apt/sources.list.d/wazuh.list \
+    && apt-get update \
+    && WAZUH_MANAGER=127.0.0.1 apt-get install -y --no-install-recommends \
+        wazuh-agent=${WAZUH_VERSION}-1 \
+    && rm -rf /var/lib/apt/lists/* \
+    && chown -R node:node /var/ossec
 
 # Install bun via npm (avoids curl|bash supply chain risk)
 # M8: Pin bun to specific version for reproducible builds
@@ -63,6 +88,9 @@ RUN npm install -g playwright@1.50.1 && \
 # NOTE: placed after Playwright to preserve the expensive Playwright cache layer
 COPY docker/scripts/patch-telegram-sdk.sh /tmp/patch-telegram-sdk.sh
 RUN sh /tmp/patch-telegram-sdk.sh && rm /tmp/patch-telegram-sdk.sh
+# NOISE REDUCTION: Demote Slack pong timeout warnings to debug level
+COPY docker/scripts/patch-slack-sdk.sh /tmp/patch-slack-sdk.sh
+RUN sh /tmp/patch-slack-sdk.sh && rm /tmp/patch-slack-sdk.sh
 # Install 1Password CLI for secure secret management (multi-arch)
 # R2-H1: GPG signature verification for supply chain integrity
 RUN curl -sS https://downloads.1password.com/linux/keys/1password.asc | \
@@ -80,9 +108,32 @@ RUN mkdir -p /home/node/.agentshroud && \
     mkdir -p /home/node/.ssh && \
     chown -R node:node /home/node
 
-# Copy SCAP content for compliance scanning
+# Copy SCAP content for compliance scanning.
+# Gateway runs oscap-docker against this container — both the data stream and
+# tailoring file must be present inside the bot image so the gateway can find them.
 RUN mkdir -p /usr/share/xml/scap/ssg/content
 COPY docker/scap-content/ssg-debian12-ds.xml /usr/share/xml/scap/ssg/content/
+COPY docker/scap-content/agentshroud-tailoring.xml /usr/share/xml/scap/ssg/content/agentshroud-tailoring.xml
+
+# Wazuh ossec.conf for bot — FIM on workspace, rootcheck disabled (non-root)
+RUN printf '%s\n' \
+    '<!-- Wazuh agent — AgentShroud Bot container -->' \
+    '<ossec_config>' \
+    '  <client><server><address>127.0.0.1</address><port>1514</port><protocol>tcp</protocol></server><auto_restart>no</auto_restart></client>' \
+    '  <syscheck>' \
+    '    <disabled>no</disabled><frequency>900</frequency><scan_on_start>yes</scan_on_start>' \
+    '    <alert_new_files>yes</alert_new_files><auto_ignore>no</auto_ignore>' \
+    '    <directories check_all="yes" realtime="yes" report_changes="yes">/home/node/agentshroud/workspace</directories>' \
+    '    <ignore>/home/node/agentshroud/workspace/.git</ignore>' \
+    '    <ignore>/home/node/agentshroud/workspace/node_modules</ignore>' \
+    '    <ignore>/home/node/agentshroud/workspace/__pycache__</ignore>' \
+    '    <ignore type="sregex">.pyc$</ignore>' \
+    '  </syscheck>' \
+    '  <rootcheck><disabled>yes</disabled></rootcheck>' \
+    '  <alerts><log_alert_level>3</log_alert_level></alerts>' \
+    '  <active-response><disabled>yes</disabled></active-response>' \
+    '</ossec_config>' \
+    > /var/ossec/etc/ossec.conf
 
 # Copy startup and utility scripts
 COPY docker/scripts/security-entrypoint.sh /usr/local/bin/security-entrypoint.sh
