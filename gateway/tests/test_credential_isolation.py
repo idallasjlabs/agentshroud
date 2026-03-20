@@ -36,18 +36,19 @@ class TestCredentialInjector:
             CredentialInjector,
             CredentialInjectorConfig,
         )
-        # Create fake secrets
-        (tmp_path / "anthropic_api_key.txt").write_text("sk-ant-test-key-12345")
-        (tmp_path / "openai_api_key.txt").write_text("sk-test-openai-key-67890")
-        (tmp_path / "anthropic_oauth_token.txt").write_text("test-oauth-token-abc")
+        # Create fake secrets matching Docker secret mount names (no .txt suffix)
+        (tmp_path / "anthropic_oauth_token").write_text("test-oauth-token-abc")
+        (tmp_path / "openai_api_key").write_text("sk-test-openai-key-67890")
+        (tmp_path / "google_api_key").write_text("test-google-api-key-xyz")
         config = CredentialInjectorConfig(secrets_dir=str(tmp_path))
         return CredentialInjector(config)
 
     def test_inject_anthropic_key(self, injector_with_secrets):
         headers = {}
         injector_with_secrets.inject_headers("api.anthropic.com", headers)
-        # Should have injected the OAuth token (last mapping wins for same domain)
-        assert "Authorization" in headers or "x-api-key" in headers
+        # Should have injected the OAuth token via Authorization: Bearer
+        assert "Authorization" in headers
+        assert headers["Authorization"].startswith("Bearer ")
 
     def test_inject_openai_key(self, injector_with_secrets):
         headers = {}
@@ -65,7 +66,7 @@ class TestCredentialInjector:
             CredentialInjector,
             CredentialInjectorConfig,
         )
-        (tmp_path / "anthropic_api_key.txt").write_text("sk-ant-test")
+        (tmp_path / "anthropic_oauth_token").write_text("sk-ant-test")
         config = CredentialInjectorConfig(secrets_dir=str(tmp_path), enabled=False)
         injector = CredentialInjector(config)
         headers = {}
