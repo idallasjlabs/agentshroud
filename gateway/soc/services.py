@@ -43,10 +43,22 @@ def _inspect_via_socket(name: str) -> Optional[Dict[str, Any]]:
 _KNOWN_SERVICES = [
     "agentshroud-bot",
     "agentshroud-gateway",
-    "agentshroud-falco",
     "agentshroud-clamav",
-    "agentshroud-wazuh-agent",
     "agentshroud-fluent-bit",
+    "agentshroud-falco",
+    "agentshroud-wazuh-agent",
+]
+
+# Internal gateway services — processes running inside the gateway container.
+# Status is derived from app_state rather than Docker inspection.
+# (svc_name, app_state_attr, label, port)
+_INTERNAL_SERVICE_ATTRS = [
+    ("agentshroud-http-proxy",    "http_proxy",    "HTTP CONNECT Proxy",  8181),
+    ("agentshroud-dns-forwarder", "dns_transport", "DNS Forwarder",       5353),
+    ("agentshroud-mcp-proxy",     "mcp_proxy",     "MCP Proxy",           None),
+    ("agentshroud-ssh-proxy",     "ssh_proxy",     "SSH Proxy",           None),
+    ("agentshroud-egress-filter", "egress_filter", "Egress Filter",       None),
+    ("agentshroud-pii-sanitizer", "sanitizer",     "PII Sanitizer",       None),
 ]
 
 
@@ -93,11 +105,28 @@ class ServiceManager:
             return None
 
     def list_services(self) -> List[ServiceDescriptor]:
-        """Return ServiceDescriptor for each known container."""
+        """Return ServiceDescriptor for each known container plus internal gateway services."""
         engine = self._get_engine()
         descriptors: List[ServiceDescriptor] = []
         for name in _KNOWN_SERVICES:
             descriptors.append(self._describe_service(name, engine))
+        # Internal gateway services (running inside the gateway process)
+        try:
+            from ..ingest_api.state import app_state
+            for svc_name, attr, label, port in _INTERNAL_SERVICE_ATTRS:
+                obj = getattr(app_state, attr, None)
+                running = obj is not None
+                ports = [f"{port}/tcp"] if port and running else []
+                descriptors.append(ServiceDescriptor(
+                    name=svc_name,
+                    status=ServiceStatus.RUNNING if running else ServiceStatus.STOPPED,
+                    health=HealthStatus.HEALTHY if running else HealthStatus.UNKNOWN,
+                    ports=ports,
+                    networks=["agentshroud-internal"],
+                    version=None,
+                ))
+        except Exception as exc:
+            logger.debug("list_services: internal service probe failed: %s", exc)
         return descriptors
 
     def get_service(self, name: str) -> Optional[ServiceDescriptor]:

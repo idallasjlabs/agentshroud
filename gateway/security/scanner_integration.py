@@ -341,6 +341,32 @@ def _app_state_has(attr_name: str) -> bool:
         return False
 
 
+def _is_container_running(container_name: str) -> bool:
+    """Return True if the named Docker container is currently in 'running' state.
+
+    Uses the Docker Unix socket directly — no subprocess or SDK required.
+    Returns False on any error (socket missing, container not found, etc.).
+    """
+    import http.client
+    import socket as _socket
+    try:
+        class _UnixHTTP(http.client.HTTPConnection):
+            def connect(self) -> None:
+                self.sock = _socket.socket(_socket.AF_UNIX, _socket.SOCK_STREAM)
+                self.sock.settimeout(2)
+                self.sock.connect("/var/run/docker.sock")
+        conn = _UnixHTTP("localhost")
+        conn.request("GET", f"/containers/{container_name}/json")
+        resp = conn.getresponse()
+        body = resp.read()
+        if resp.status != 200:
+            return False
+        data = json.loads(body)
+        return data.get("State", {}).get("Status") == "running"
+    except Exception:
+        return False
+
+
 def _load_latest_json(directory: Path, prefix: str = "") -> Optional[Dict[str, Any]]:
     """Load the most recent JSON report file from a directory.
 
@@ -379,6 +405,8 @@ def get_trivy_summary() -> Dict[str, Any]:
 
 def get_clamav_summary() -> Dict[str, Any]:
     """Return latest ClamAV scan summary from saved reports."""
+    if not _is_container_running("agentshroud-clamav"):
+        return {"tool": "clamav", "status": "not_run", "findings": 0, "critical": 0, "high": 0}
     from .clamav_scanner import generate_summary
     report = _load_latest_json(_CLAMAV_REPORT_DIR, "clamav-")
     if report is None:
@@ -388,6 +416,8 @@ def get_clamav_summary() -> Dict[str, Any]:
 
 def get_falco_summary() -> Dict[str, Any]:
     """Return latest Falco alert summary from the shared alert volume."""
+    if not _is_container_running("agentshroud-falco"):
+        return {"tool": "falco", "status": "not_run", "findings": 0, "critical": 0, "high": 0}
     from .falco_monitor import read_alerts, generate_summary
     if not _FALCO_ALERT_DIR.exists():
         return {"tool": "falco", "status": "not_run", "findings": 0, "critical": 0, "high": 0}
@@ -397,6 +427,8 @@ def get_falco_summary() -> Dict[str, Any]:
 
 def get_wazuh_summary() -> Dict[str, Any]:
     """Return latest Wazuh alert summary from the shared alert volume."""
+    if not _is_container_running("agentshroud-wazuh-agent"):
+        return {"tool": "wazuh", "status": "not_run", "findings": 0, "critical": 0, "high": 0}
     from .wazuh_client import read_alerts, generate_summary
     if not _WAZUH_ALERT_DIR.exists():
         return {"tool": "wazuh", "status": "not_run", "findings": 0, "critical": 0, "high": 0}
@@ -439,6 +471,31 @@ def get_openscap_summary() -> Dict[str, Any]:
     }
 
 
+def get_fluent_bit_summary() -> Dict[str, Any]:
+    """Return Fluent Bit log collector status.
+
+    Fluent Bit is a log shipper, not a scanner — it produces no findings.
+    Status reflects whether the container is running and actively writing logs.
+    """
+    import time as _time
+    _FLUENT_BIT_LOG_DIR = Path("/var/log/fluent-bit")
+    if not _is_container_running("agentshroud-fluent-bit"):
+        return {"tool": "fluent-bit", "status": "not_run", "findings": 0, "critical": 0, "high": 0}
+    log_active = False
+    if _FLUENT_BIT_LOG_DIR.exists():
+        logs = sorted(_FLUENT_BIT_LOG_DIR.glob("agentshroud-*.log"), reverse=True)
+        if logs:
+            log_active = (_time.time() - logs[0].stat().st_mtime) < 300  # written in last 5 min
+    return {
+        "tool": "fluent-bit",
+        "status": "clean",
+        "findings": 0,
+        "critical": 0,
+        "high": 0,
+        "active": log_active,
+    }
+
+
 def get_sbom() -> Optional[Dict[str, Any]]:
     """Return the latest SBOM (Software Bill of Materials) as parsed JSON."""
     if not _SBOM_REPORT_DIR.exists():
@@ -469,6 +526,7 @@ def aggregate_results() -> Dict[str, Any]:
         get_falco_summary(),
         get_wazuh_summary(),
         get_openscap_summary(),
+        get_fluent_bit_summary(),
     ]
 
     any_critical = any(s.get("critical", 0) > 0 for s in summaries)

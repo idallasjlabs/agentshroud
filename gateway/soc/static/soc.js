@@ -322,11 +322,12 @@ window._reloadSecurity = _loadSecurity;
 // ---------------------------------------------------------------------------
 
 const SCANNER_INFO = {
-  trivy:   { label: 'Trivy',     desc: 'CVE / image vulnerability scanning', iec: 'FR3 SR 3.4' },
-  clamav:  { label: 'ClamAV',   desc: 'Malware / antivirus scanning',         iec: 'FR3 SR 3.2' },
-  falco:   { label: 'Falco',    desc: 'Runtime eBPF syscall detection',        iec: 'FR3 SR 3.5 / FR6' },
-  wazuh:   { label: 'Wazuh',    desc: 'HIDS / file integrity monitoring',      iec: 'FR3 SR 3.2 / FR6 SR 6.2' },
-  openscap:{ label: 'OpenSCAP', desc: 'CIS Benchmark / DISA STIG compliance',  iec: 'FR3 SR 3.3' },
+  trivy:        { label: 'Trivy',      desc: 'CVE / image vulnerability scanning',      iec: 'FR3 SR 3.4' },
+  clamav:       { label: 'ClamAV',    desc: 'Malware / antivirus scanning',             iec: 'FR3 SR 3.2' },
+  falco:        { label: 'Falco',     desc: 'Runtime eBPF syscall detection',           iec: 'FR3 SR 3.5 / FR6' },
+  wazuh:        { label: 'Wazuh',     desc: 'HIDS / file integrity monitoring',         iec: 'FR3 SR 3.2 / FR6 SR 6.2' },
+  openscap:     { label: 'OpenSCAP',  desc: 'CIS Benchmark / DISA STIG compliance',    iec: 'FR3 SR 3.3' },
+  'fluent-bit': { label: 'Fluent Bit',desc: 'Centralized log collection & forwarding', iec: 'FR6 SR 6.2', noScan: true },
 };
 
 async function _loadScanners() {
@@ -377,9 +378,9 @@ function _renderScanners(data) {
             ${!crit && !high && !med && !low ? `<span style="font-size:11px;color:var(--text-muted)">No findings</span>` : ''}
           </div>
           ${s.error ? `<div style="margin-top:.5rem;font-size:11px;color:var(--danger)">${_esc(s.error)}</div>` : ''}
-          <div style="margin-top:.75rem">
+          ${!info.noScan ? `<div style="margin-top:.75rem">
             <button class="btn btn-sm" onclick="window._runScan('${_esc(key)}', this)">▶ Run Scan</button>
-          </div>
+          </div>` : ''}
         </div>
       </div>`;
   }).join('');
