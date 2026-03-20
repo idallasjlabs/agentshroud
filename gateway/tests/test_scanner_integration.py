@@ -166,7 +166,8 @@ class TestGetClamavSummary:
     def test_infected_report(self, tmp_path):
         report = {"scanner": "clamav", "timestamp": "2026-01-01T00:00:00Z", "scanned_files": 10, "infected_files": [{"file": "/evil", "signature": "Eicar"}], "infected_count": 1, "errors": 0, "returncode": 1, "error": None}
         (tmp_path / "clamav-20260101.json").write_text(json.dumps(report))
-        with patch("gateway.security.scanner_integration._CLAMAV_REPORT_DIR", tmp_path):
+        with patch("gateway.security.scanner_integration._CLAMAV_REPORT_DIR", tmp_path), \
+             patch("gateway.security.scanner_integration._is_clamd_running", return_value=True):
             result = get_clamav_summary()
         assert result["tool"] == "clamav"
         assert result["critical"] == 1
@@ -331,7 +332,7 @@ class TestAggregateResults:
     def test_scanners_dict_has_all_tools(self):
         with patch.multiple("gateway.security.scanner_integration", **self._patch_all_not_run()):
             result = aggregate_results()
-        assert set(result["scanners"].keys()) == {"trivy", "clamav", "falco", "wazuh", "openscap"}
+        assert set(result["scanners"].keys()) == {"trivy", "clamav", "falco", "wazuh", "openscap", "fluent-bit"}
 
     def test_timestamp_present(self):
         with patch.multiple("gateway.security.scanner_integration", **self._patch_all_not_run()):

@@ -367,6 +367,30 @@ def _is_container_running(container_name: str) -> bool:
         return False
 
 
+def _is_clamd_running() -> bool:
+    """Return True if clamd Unix socket /tmp/clamd.ctl is connectable."""
+    import socket as _socket
+    try:
+        sock = _socket.socket(_socket.AF_UNIX, _socket.SOCK_STREAM)
+        sock.settimeout(1)
+        sock.connect("/tmp/clamd.ctl")
+        sock.close()
+        return True
+    except Exception:
+        return False
+
+
+def _is_fluent_bit_running() -> bool:
+    """Return True if fluent-bit pidfile /tmp/fluent-bit.pid exists with a live PID."""
+    import os as _os
+    try:
+        pid = int(Path("/tmp/fluent-bit.pid").read_text().strip())
+        _os.kill(pid, 0)
+        return True
+    except Exception:
+        return False
+
+
 def _load_latest_json(directory: Path, prefix: str = "") -> Optional[Dict[str, Any]]:
     """Load the most recent JSON report file from a directory.
 
@@ -405,7 +429,7 @@ def get_trivy_summary() -> Dict[str, Any]:
 
 def get_clamav_summary() -> Dict[str, Any]:
     """Return latest ClamAV scan summary from saved reports."""
-    if not _is_container_running("agentshroud-clamav"):
+    if not _is_clamd_running():
         return {"tool": "clamav", "status": "not_run", "findings": 0, "critical": 0, "high": 0}
     from .clamav_scanner import generate_summary
     report = _load_latest_json(_CLAMAV_REPORT_DIR, "clamav-")
@@ -479,7 +503,7 @@ def get_fluent_bit_summary() -> Dict[str, Any]:
     """
     import time as _time
     _FLUENT_BIT_LOG_DIR = Path("/var/log/fluent-bit")
-    if not _is_container_running("agentshroud-fluent-bit"):
+    if not _is_fluent_bit_running():
         return {"tool": "fluent-bit", "status": "not_run", "findings": 0, "critical": 0, "high": 0}
     log_active = False
     if _FLUENT_BIT_LOG_DIR.exists():
