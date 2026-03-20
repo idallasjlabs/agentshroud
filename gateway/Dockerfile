@@ -119,8 +119,48 @@ RUN DPKG_ARCH=$(dpkg --print-architecture) && \
       chmod +x /usr/local/bin/docker ) || \
     echo "docker CLI: download deferred to runtime"
 
+# Wazuh agent — HIDS / FIM, runs as agentshroud user inside the gateway container
+# ARM64-native since Wazuh 4.3. Pinned to same version as compose sidecar.
+ARG WAZUH_VERSION=4.9.2
+RUN curl -sSfL https://packages.wazuh.com/key/GPG-KEY-WAZUH \
+        | gpg --dearmor -o /usr/share/keyrings/wazuh.gpg \
+    && echo "deb [signed-by=/usr/share/keyrings/wazuh.gpg] https://packages.wazuh.com/4.x/apt/ stable main" \
+        > /etc/apt/sources.list.d/wazuh.list \
+    && apt-get update \
+    && WAZUH_MANAGER=127.0.0.1 apt-get install -y --no-install-recommends \
+        wazuh-agent=${WAZUH_VERSION}-1 \
+    && rm -rf /var/lib/apt/lists/*
+
+# Fluent Bit log processor — pinned version, arch-aware (same pattern as Trivy/Syft)
+ARG FLUENT_BIT_VERSION=3.2.7
+RUN DPKG_ARCH=$(dpkg --print-architecture) && \
+    ( curl -sSfL -o "/tmp/fluent-bit_${FLUENT_BIT_VERSION}_${DPKG_ARCH}.deb" \
+        "https://packages.fluentbit.io/debian/bookworm/pool/main/f/fluent-bit/fluent-bit_${FLUENT_BIT_VERSION}_${DPKG_ARCH}.deb" && \
+      dpkg -i "/tmp/fluent-bit_${FLUENT_BIT_VERSION}_${DPKG_ARCH}.deb" && \
+      rm "/tmp/fluent-bit_${FLUENT_BIT_VERSION}_${DPKG_ARCH}.deb" ) || \
+    echo "fluent-bit: download deferred to runtime"
+
+# clamd.conf — adapted for non-root execution in read-only rootfs
+# Socket, pidfile, temp, and log all land in tmpfs (/tmp).
+# DatabaseDirectory reads the virus DB baked in at build time (read-only OK).
+RUN printf '%s\n' \
+    'LocalSocket /tmp/clamd.ctl' \
+    'LocalSocketMode 666' \
+    'PidFile /tmp/clamd.pid' \
+    'DatabaseDirectory /var/lib/clamav' \
+    'TemporaryDirectory /tmp' \
+    'LogFile /tmp/clamav.log' \
+    'LogFileMaxSize 10M' \
+    > /etc/clamav/clamd.conf
+
 # Create non-root user
 RUN useradd --create-home --shell /bin/bash --uid 1000 agentshroud
+
+# Transfer Wazuh directory ownership to agentshroud so wazuh-agentd starts without root
+RUN chown -R agentshroud:agentshroud /var/ossec
+
+# Bake in gateway ossec.conf (FIM on /app/gateway + Falco alert ingestion)
+COPY docker/wazuh/ossec.conf /var/ossec/etc/ossec.conf
 
 # ── Security Evidence Files ─────────────────────────────────────────────────
 # These files are checked by the Container Security Scorecard scorer functions.
@@ -199,7 +239,8 @@ COPY docker/scripts/security-entrypoint.sh /usr/local/bin/security-entrypoint.sh
 COPY docker/scripts/security-scheduler.sh /usr/local/bin/security-scheduler.sh
 COPY docker/scripts/security-scan.sh /usr/local/bin/security-scan.sh
 COPY docker/scripts/security-report.sh /usr/local/bin/security-report.sh
-RUN chmod +x /usr/local/bin/security-*.sh
+COPY docker/scripts/gateway-start.sh /usr/local/bin/gateway-start.sh
+RUN chmod +x /usr/local/bin/security-*.sh /usr/local/bin/gateway-start.sh
 
 # Create security log directory
 RUN mkdir -p /var/log/security && chown agentshroud:agentshroud /var/log/security
@@ -248,4 +289,4 @@ ENV PYTHONPATH=/app
 
 # Run gateway (bind to 0.0.0.0 for Docker port mapping to work)
 # Security: docker-compose maps only to host 127.0.0.1
-CMD ["uvicorn", "gateway.ingest_api.main:app", "--host", "0.0.0.0", "--port", "8080"]
+CMD ["/usr/local/bin/gateway-start.sh"]
