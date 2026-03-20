@@ -82,37 +82,20 @@ class CredentialInjector:
         defaults = [
             CredentialMapping(
                 domain="api.anthropic.com",
-                header_name="x-api-key",
-                secret_file="anthropic_api_key.txt",
-            ),
-            CredentialMapping(
-                domain="api.anthropic.com",
                 header_name="Authorization",
-                secret_file="anthropic_oauth_token.txt",
+                secret_file="anthropic_oauth_token",
                 header_prefix="Bearer ",
             ),
             CredentialMapping(
                 domain="api.openai.com",
                 header_name="Authorization",
-                secret_file="openai_api_key.txt",
+                secret_file="openai_api_key",
                 header_prefix="Bearer ",
             ),
             CredentialMapping(
                 domain="generativelanguage.googleapis.com",
                 header_name="x-goog-api-key",
-                secret_file="google_api_key.txt",
-            ),
-            CredentialMapping(
-                domain="oauth2.googleapis.com",
-                header_name="Authorization",
-                secret_file="gmail_oauth_tokens.json",
-                header_prefix="Bearer ",
-            ),
-            CredentialMapping(
-                domain="gmail.googleapis.com",
-                header_name="Authorization",
-                secret_file="gmail_oauth_tokens.json",
-                header_prefix="Bearer ",
+                secret_file="google_api_key",
             ),
         ]
 

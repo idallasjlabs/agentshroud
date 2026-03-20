@@ -361,9 +361,12 @@ async def lifespan(app: FastAPI):
     try:
         log_sanitizer = app_state.middleware_manager.get_log_sanitizer()
         if log_sanitizer:
-            # Add the log sanitizer filter to all handlers
+            # Add the log sanitizer filter to all handlers on root and uvicorn.access
             for handler in logging.getLogger().handlers:
                 handler.addFilter(log_sanitizer)
+            for handler in logging.getLogger("uvicorn.access").handlers:
+                handler.addFilter(log_sanitizer)
+            logging.getLogger("uvicorn.access").addFilter(log_sanitizer)
             logger.info("Log sanitizer wired into logging system")
         else:
             logger.warning("Log sanitizer not available - logging may contain sensitive data")
