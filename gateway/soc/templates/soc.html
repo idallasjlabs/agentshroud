@@ -386,6 +386,21 @@
   </main>
 </div>
 
+<!-- ── Login modal ──────────────────────────────────────────────── -->
+<div class="modal-overlay" id="login-modal">
+  <div class="modal">
+    <h3 style="color:var(--accent)">AgentShroud&#8482; SOC</h3>
+    <p id="login-msg" style="color:var(--text-muted);margin-bottom:0.75rem">Enter gateway token to continue.</p>
+    <input id="login-token" type="password" placeholder="Gateway token"
+      style="width:100%;padding:0.5rem 0.75rem;background:var(--input-bg,#161b22);
+             border:1px solid var(--border);border-radius:5px;color:var(--text);
+             font-family:monospace;font-size:13px;box-sizing:border-box;outline:none;">
+    <div class="modal-actions">
+      <button class="btn btn-primary" id="login-submit-btn" onclick="window._loginSubmit()">Connect</button>
+    </div>
+  </div>
+</div>
+
 <!-- ── Confirm modal ─────────────────────────────────────────── -->
 <div class="modal-overlay" id="confirm-modal">
   <div class="modal">
