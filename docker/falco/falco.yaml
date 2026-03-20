@@ -1,5 +1,5 @@
 # Falco configuration for AgentShroud
-# Pinned to Falco 0.38.2 — stable schema, built-in container support
+# Pinned to Falco 0.39.2 — auto-detects driver via falcoctl (modern_ebpf on supported kernels)
 # JSON output for programmatic parsing by scanner_integration.py
 
 json_output: true

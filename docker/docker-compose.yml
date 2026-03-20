@@ -69,6 +69,7 @@ services:
       - AGENTSHROUD_LOCAL_MODEL_REF=${AGENTSHROUD_LOCAL_MODEL_REF:-ollama/qwen3:14b}
       - OPENCLAW_MAIN_MODEL=${OPENCLAW_MAIN_MODEL:-}
       - DOCKER_CONTENT_TRUST=1
+      - TRIVY_CACHE_DIR=/var/log/security/.trivy-cache
     group_add:
       - "991"   # docker socket GID — read-only service introspection for SOC
     security_opt:
@@ -211,7 +212,7 @@ services:
   # shell spawns, unexpected outbound connections, privilege escalation,
   # file access outside workspace, crypto mining. (IEC 62443 FR3, FR6)
   falco:
-    image: falcosecurity/falco:0.38.2
+    image: falcosecurity/falco:0.39.2
     container_name: agentshroud-falco
     hostname: falco
     restart: unless-stopped
