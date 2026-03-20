@@ -1,6 +1,6 @@
 # Troubleshooting Runbook — AgentShroud
 
-> Last updated: 2026-02-18
+> Last updated: 2026-03-20
 
 ## Common Issues
 
@@ -194,6 +194,53 @@ curl -s http://localhost:8080/health
 # Process check
 ps aux | grep -E '(python|docker|tailscale)'
 ```
+
+---
+
+## Known Log Messages
+
+This section documents log lines that appear during normal operation and are safe to
+ignore, along with messages that indicate real problems requiring action. Use this as
+a reference before escalating any log output.
+
+---
+
+### `[WARN] socket-mode:SlackWebSocket:N A pong wasn't received from the server before the timeout of 5000ms!`
+
+**Container:** `agentshroud-bot`
+**Severity:** Warning — no action required
+**Frequency:** Occasional bursts, especially after VPN reconnects
+
+**What it means:**
+
+Slack's Socket Mode connection uses WebSocket keep-alive frames. Every ~30 seconds Slack
+sends a `ping` frame and expects a `pong` back within 5 000 ms. When the network is briefly
+interrupted (e.g., VPN route flap, DNS hiccup, brief packet loss) the pong doesn't arrive
+in time and the `@slack/socket-mode` SDK logs this warning.
+
+The SDK automatically closes the stale connection and opens a new one. The connection
+number in the log (`SlackWebSocket:42`, `SlackWebSocket:43`, …) increments with each
+reconnect — this is expected. Consecutive warnings at ~1.6 s intervals on the same
+connection number indicate the SDK firing rapid-retry pings during the reconnect
+handshake; once the new WebSocket is established they stop.
+
+**How to confirm it's harmless:**
+- Look for `sendMessage ok` entries in the surrounding log context — if messages are
+  flowing then the integration is healthy.
+- Confirm the connection number eventually stabilizes or increments (reconnect succeeded).
+- Check `docker logs agentshroud-bot | grep "sendMessage ok"` — should have recent entries.
+
+**When it IS a problem:**
+- If the warnings never stop and the connection number keeps climbing rapidly without
+  stabilizing, the bot cannot reach Slack's WebSocket endpoint at all.
+- Check outbound internet access from the bot container:
+  ```bash
+  docker exec agentshroud-bot curl -s https://slack.com/api/api.test
+  ```
+- If that fails, check the `agentshroud-external` Docker network and the gateway's egress
+  allowlist — `slack.com` must be in the permanent egress allowlist.
+
+---
 
 ## Getting Help
 
