@@ -37,6 +37,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     clamav clamav-daemon clamav-freshclam clamdscan \
     openssl \
     curl ca-certificates gpg \
+    libpq5 \
     && mkdir -p /var/lib/clamav \
     && (freshclam --quiet 2>/dev/null || echo "freshclam: virus DB download deferred to runtime") \
     && curl -sS https://downloads.1password.com/linux/keys/1password.asc \
