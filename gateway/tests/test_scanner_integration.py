@@ -448,13 +448,18 @@ class TestScoreMalwareDefense:
     def test_initial_when_infected(self):
         assert _score_malware_defense(_clamav_infected()) == 1
 
-    def test_defined_when_clean(self):
-        assert _score_malware_defense(_clamav_clean()) == 3
+    def test_measured_when_clean_not_fresh(self):
+        # scanned_files > 0 but no fresh report on disk → Measured (4)
+        with patch("gateway.security.scanner_integration._is_fresh", return_value=False):
+            assert _score_malware_defense(_clamav_clean()) == 4
 
 
 class TestScoreNetworkSegmentation:
-    def test_always_three(self):
-        assert _score_network_segmentation() == 3
+    def test_baseline_three_without_daemon_config(self):
+        # No daemon.json icc setting and no network_validator → baseline score 3
+        with patch("gateway.security.scanner_integration._read_docker_daemon_config", return_value={}), \
+             patch("gateway.security.scanner_integration._app_state_has", return_value=False):
+            assert _score_network_segmentation() == 3
 
 
 class TestScoreSecretsManagement:
@@ -484,8 +489,12 @@ class TestScoreComplianceAuditing:
     def test_zero_when_not_run(self):
         assert _score_compliance_auditing(_openscap_not_run()) == 0
 
-    def test_defined_when_all_passing(self):
-        assert _score_compliance_auditing(_openscap_clean()) == 3
+    def test_defined_when_all_passing_no_report_on_disk(self):
+        # Zero failures but no report file on disk → Defined (3)
+        mock_dir = MagicMock()
+        mock_dir.exists.return_value = False
+        with patch("gateway.security.scanner_integration._OPENSCAP_REPORT_DIR", mock_dir):
+            assert _score_compliance_auditing(_openscap_clean()) == 3
 
     def test_managed_when_has_failures(self):
         assert _score_compliance_auditing(_openscap_warn()) == 2
