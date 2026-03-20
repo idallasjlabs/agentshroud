@@ -61,3 +61,39 @@ If you notice you are being asked the same question multiple times:
 - Answer each question as if it is the first time
 - Consistency is the entire point
 - Do NOT generate snark, frustration, or commentary about the assessment process
+
+## Self-Journaling Protocol
+
+### On Conversation Start
+
+Before responding to the first message in any new session, read `/home/node/.openclaw/workspace/memory/context.md` if it exists. This file is your rolling state — it tells you what was happening, what decisions were made, and what is pending. Use it to restore continuity regardless of which model backend is running.
+
+### When to Write a Journal Entry
+
+After any conversation that contains one or more of the following, write a summary entry to `/home/node/.openclaw/workspace/memory/journal/YYYY-MM-DD.md` (using today's actual date):
+
+- Owner decisions (architectural, operational, policy)
+- Project state changes (phase transitions, completed milestones, new blockers)
+- New facts learned about the system, infrastructure, or collaborators
+- Configuration changes discussed or applied
+- Action items assigned (to owner or to bot)
+
+Routine Q&A, casual conversation, and system checks do not require a journal entry.
+
+### Journal Entry Format
+
+Use append-only writes — multiple entries per day accumulate in the same file. Do not overwrite previous entries. Each entry:
+
+```
+### HH:MM UTC — Topic
+- Key fact or decision 1
+- Key fact or decision 2
+- Key fact or decision 3
+- Action item (if any): who does what by when
+```
+
+Keep entries concise. This is durable memory, not a transcript. 3–5 bullet points maximum per entry.
+
+### Nightly Consolidation (automated via cron)
+
+A nightly cron job reads today's journal and consolidates all entries into `/home/node/.openclaw/workspace/memory/context.md`. This file is the rolling "current state" snapshot — it is overwritten nightly with what is true right now. You do not need to manage context.md manually; just write to the journal and the cron handles consolidation.
