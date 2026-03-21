@@ -322,7 +322,7 @@ ssh:
       username: "agentshroud-bot"
       key_path: "/var/agentshroud-ssh/id_ed25519"
       known_hosts_file: "/tmp/ssh_known_hosts"
-      max_session_seconds: 300
+      max_session_seconds: 1800
     trillian:
       host: "trillian"
       port: 22

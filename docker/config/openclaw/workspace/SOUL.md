@@ -97,3 +97,42 @@ Keep entries concise. This is durable memory, not a transcript. 3–5 bullet poi
 ### Nightly Consolidation (automated via cron)
 
 A nightly cron job reads today's journal and consolidates all entries into `/home/node/.openclaw/workspace/memory/context.md`. This file is the rolling "current state" snapshot — it is overwritten nightly with what is true right now. You do not need to manage context.md manually; just write to the journal and the cron handles consolidation.
+
+## Operational Capabilities
+
+### SSH Access
+
+You have SSH access to the following hosts via the gateway SSH proxy. All connections route through `gateway:8181` (CONNECT proxy) using key-based auth (`~/.ssh/id_ed25519`).
+
+| Host | User | Purpose |
+|------|------|---------|
+| `marvin` | agentshroud-bot | Isaiah's macOS dev workstation (192.168.7.137). Primary dev/deploy target. Colima Docker runtime. Repo at `~/Development/agentshroud`. |
+| `raspberrypi` | agentshroud-bot | Home lab Pi (192.168.7.25). Daily check-in. Repo at `~/Development/agentshroud`. |
+| `trillian` | agentshroud-bot | Linux server (192.168.7.97). |
+
+The gateway SSH proxy blocks compound operators (`|`, `;`, `&&`, `$()`, backticks). Use single atomic commands or the `dev` helper on marvin.
+
+### Development Operations (marvin)
+
+The `dev` helper script (`/Users/agentshroud-bot/bin/dev`) wraps Docker Compose:
+
+| Command | Action |
+|---------|--------|
+| `ssh marvin dev build [service]` | Build containers (--no-cache) |
+| `ssh marvin dev rebuild [service]` | Build + restart |
+| `ssh marvin dev up [service]` | Start containers |
+| `ssh marvin dev down` | Stop all containers |
+| `ssh marvin dev pull` | Git pull --rebase |
+| `ssh marvin dev status` | Docker compose ps |
+| `ssh marvin dev logs [service]` | Tail 100 lines (default: gateway) |
+| `ssh marvin dev test` | Run gateway pytest suite |
+
+Repo on marvin: `/Users/agentshroud-bot/Development/agentshroud`
+Compose file: `docker/docker-compose.yml`
+
+### GitHub Access
+
+`gh` CLI is available on marvin:
+- `ssh marvin gh repo view --json name,description`
+- `ssh marvin gh pr list --state open`
+- `ssh marvin gh issue list`

@@ -75,7 +75,9 @@ RUN corepack enable
 WORKDIR /app
 
 # Install OpenClaw from npm registry (pinned version for reproducible builds)
-RUN npm install -g openclaw@2026.3.8
+RUN npm install -g openclaw@2026.3.13
+RUN echo "2026.3.13" > /app/.openclaw-image-version
+RUN npm cache clean --force
 # SECURITY: Route LLM API through AgentShroud gateway
 COPY docker/scripts/patch-anthropic-sdk.sh /tmp/patch-anthropic-sdk.sh
 RUN sh /tmp/patch-anthropic-sdk.sh && rm /tmp/patch-anthropic-sdk.sh
@@ -204,6 +206,11 @@ RUN rm -f /usr/bin/perl /usr/bin/perl5* 2>/dev/null || true
 
 # Strip setuid/setgid bits — CIS Docker Benchmark 4.8 (R2-H2 fix)
 RUN find / -perm /6000 -type f -exec chmod a-s {} + 2>/dev/null || true
+
+# NPM_CONFIG_PREFIX: writable volume path for runtime `npm install -g` (Update Now button)
+# PATH: prioritise runtime-volume bin over /usr/local/bin so updates take effect immediately
+ENV NPM_CONFIG_PREFIX=/home/node/.npm-global
+ENV PATH="/home/node/.npm-global/bin:${PATH}"
 
 # Switch to non-root user (node user has UID 1000)
 USER node

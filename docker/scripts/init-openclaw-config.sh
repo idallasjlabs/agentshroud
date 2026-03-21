@@ -197,6 +197,42 @@ else
   echo "[init] ✓ IDENTITY.md already set — skipping"
 fi
 
+# context.md: seed only if missing — nightly cron overwrites daily
+CONTEXT_FILE="${WORKSPACE_DIR}/memory/context.md"
+mkdir -p "${WORKSPACE_DIR}/memory/journal"
+if [ ! -f "${CONTEXT_FILE}" ]; then
+  if [ -f "${DEFAULTS_DIR}/workspace/memory/context.md" ]; then
+    cp "${DEFAULTS_DIR}/workspace/memory/context.md" "${CONTEXT_FILE}"
+    echo "[init] ✓ Seeded context.md (initial operational context)"
+  fi
+else
+  echo "[init] ✓ context.md already exists — skipping"
+fi
+
+# --- OpenClaw runtime version management ---
+# Seeds openclaw into the NPM_CONFIG_PREFIX volume (writable at runtime).
+# This enables the "Update now" button to install newer versions without
+# hitting the read-only rootfs (/usr/local/).
+IMAGE_VERSION_FILE="/app/.openclaw-image-version"
+RUNTIME_VERSION_FILE="${NPM_CONFIG_PREFIX:-/usr/local}/.openclaw-runtime-version"
+
+if [ -n "${NPM_CONFIG_PREFIX}" ] && [ -d "${NPM_CONFIG_PREFIX}" ]; then
+  IMAGE_VER="unknown"
+  [ -f "${IMAGE_VERSION_FILE}" ] && IMAGE_VER=$(cat "${IMAGE_VERSION_FILE}")
+
+  RUNTIME_VER="none"
+  [ -f "${RUNTIME_VERSION_FILE}" ] && RUNTIME_VER=$(cat "${RUNTIME_VERSION_FILE}")
+
+  if [ "${RUNTIME_VER}" != "${IMAGE_VER}" ]; then
+    echo "[init] Seeding openclaw ${IMAGE_VER} into NPM_CONFIG_PREFIX (was: ${RUNTIME_VER})..."
+    npm install -g "openclaw@${IMAGE_VER}" 2>&1 | tail -3
+    echo "${IMAGE_VER}" > "${RUNTIME_VERSION_FILE}"
+    echo "[init] ✓ openclaw ${IMAGE_VER} seeded to ${NPM_CONFIG_PREFIX}"
+  else
+    echo "[init] ✓ openclaw ${RUNTIME_VER} already in NPM_CONFIG_PREFIX"
+  fi
+fi
+
 # AGENTS.md: add "read BRAND.md" to the session startup checklist if absent.
 AGENTS_FILE="${WORKSPACE_DIR}/AGENTS.md"
 if [ -f "${AGENTS_FILE}" ] && ! grep -q "BRAND.md" "${AGENTS_FILE}" 2>/dev/null; then

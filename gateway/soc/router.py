@@ -1549,6 +1549,108 @@ async def upgrade_gateway(
     return JSONResponse(content={"ok": True, "action": "upgrade", "target": "gateway", "stdout": stdout[:2000]})
 
 
+async def _docker_exec_bot(command: list[str], timeout: int = 120) -> tuple[int, str]:
+    """Run a command inside the agentshroud-bot container via the Docker socket.
+
+    Uses Docker's exec API (create + start) so no external CLI is needed.
+    Returns (exit_code, combined_output).
+    """
+    import http.client
+    import json as _json
+    import socket as _socket
+
+    _SOCK = "/var/run/docker.sock"
+    _CONTAINER = "agentshroud-bot"
+
+    def _unix_call(method: str, path: str, body: bytes = b"") -> tuple[int, bytes]:
+        class _UH(http.client.HTTPConnection):
+            def connect(self) -> None:  # type: ignore[override]
+                self.sock = _socket.socket(_socket.AF_UNIX, _socket.SOCK_STREAM)
+                self.sock.settimeout(30)
+                self.sock.connect(_SOCK)
+
+        conn = _UH("localhost")
+        headers = {"Content-Type": "application/json", "Content-Length": str(len(body))}
+        conn.request(method, path, body=body, headers=headers)
+        resp = conn.getresponse()
+        return resp.status, resp.read()
+
+    try:
+        # Create exec instance
+        exec_body = _json.dumps({
+            "AttachStdout": True, "AttachStderr": True,
+            "Cmd": command,
+        }).encode()
+        status_code, data = await asyncio.get_event_loop().run_in_executor(
+            None, lambda: _unix_call("POST", f"/containers/{_CONTAINER}/exec", exec_body)
+        )
+        if status_code not in (200, 201):
+            return 1, f"Docker exec create failed ({status_code}): {data.decode(errors='replace')[:500]}"
+        exec_id = _json.loads(data).get("Id", "")
+        if not exec_id:
+            return 1, "Docker exec create returned no ID"
+
+        # Start exec instance (returns streamed output — read synchronously)
+        start_body = _json.dumps({"Detach": False, "Tty": False}).encode()
+        _, output = await asyncio.get_event_loop().run_in_executor(
+            None, lambda: _unix_call("POST", f"/exec/{exec_id}/start", start_body)
+        )
+
+        # Inspect exec for exit code
+        _, inspect_data = await asyncio.get_event_loop().run_in_executor(
+            None, lambda: _unix_call("GET", f"/exec/{exec_id}/json")
+        )
+        exit_code = _json.loads(inspect_data).get("ExitCode", 0)
+        # Strip Docker multiplexed stream header bytes (8-byte frame header per chunk)
+        raw = output
+        text = ""
+        offset = 0
+        while offset + 8 <= len(raw):
+            frame_size = int.from_bytes(raw[offset + 4:offset + 8], "big")
+            text += raw[offset + 8: offset + 8 + frame_size].decode(errors="replace")
+            offset += 8 + frame_size
+        return exit_code, text or output.decode(errors="replace")
+    except Exception as exc:
+        return 1, str(exc)
+
+
+@router.post("/updates/bot/upgrade")
+async def upgrade_bot(
+    body: ServiceActionRequest = ServiceActionRequest(),
+    caller: SCLCaller = Depends(get_caller),
+) -> JSONResponse:
+    """In-place openclaw upgrade: runs npm install -g inside the bot container.
+
+    No container rebuild needed — installs the latest openclaw into the
+    NPM_CONFIG_PREFIX volume (/home/node/.npm-global) which is writable at runtime.
+    Works for any single-instance deployment without SSH or compose access.
+    """
+    caller.require(Action.MANAGE, Resource.SYSTEM)
+    if not caller.is_owner():
+        raise HTTPException(
+            status_code=status.HTTP_403_FORBIDDEN,
+            detail={"error": True, "code": "PERMISSION_DENIED", "message": "Owner required"},
+        )
+    if not body.confirm:
+        return _confirmation_required(
+            "upgrade bot", "agentshroud-bot",
+            "Runs: npm install -g openclaw@latest inside the agentshroud-bot container "
+            "(writes to /home/node/.npm-global — no container rebuild needed). "
+            "Resend with confirm: true.",
+        )
+    _log_audit(caller, "upgrade bot", target="agentshroud-bot")
+    exit_code, output = await _docker_exec_bot(
+        ["npm", "install", "-g", "openclaw@latest"],
+        timeout=300,
+    )
+    if exit_code != 0:
+        return JSONResponse(
+            status_code=status.HTTP_500_INTERNAL_SERVER_ERROR,
+            content={"ok": False, "action": "upgrade", "target": "bot", "exit_code": exit_code, "output": output[:2000]},
+        )
+    return JSONResponse(content={"ok": True, "action": "upgrade", "target": "bot", "output": output[:2000]})
+
+
 @router.post("/updates/gateway/rollback")
 async def rollback_gateway(
     body: ServiceActionRequest = ServiceActionRequest(),
