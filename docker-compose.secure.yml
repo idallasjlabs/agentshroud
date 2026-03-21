@@ -48,7 +48,6 @@ services:
       - ./examples/egress-config.yml:/app/egress-config.yml:ro
       - gateway-data:/app/data
       - security-reports:/var/log/security
-      - falco-alerts:/var/log/falco:ro
     healthcheck:
       test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://localhost:8080/health').read()"]
       interval: 30s
@@ -92,20 +91,6 @@ services:
       start_period: 15s
     restart: unless-stopped
 
-  falco:
-    image: falcosecurity/falco:latest
-    privileged: true
-    volumes:
-      - /var/run/docker.sock:/var/run/docker.sock:ro
-      - /dev:/host/dev:ro
-      - /proc:/host/proc:ro
-      - ./docker/falco/falco.yaml:/etc/falco/falco.yaml:ro
-      - ./docker/falco/rules.yaml:/etc/falco/rules.d/agentshroud.yaml:ro
-      - falco-alerts:/var/log/falco
-    networks:
-      - internal
-    restart: unless-stopped
-
   wazuh:
     image: wazuh/wazuh-agent:latest
     volumes:
@@ -128,7 +113,6 @@ networks:
 volumes:
   gateway-data:
   security-reports:
-  falco-alerts:
   clamav-db:
   openclaw-workspace:
   openclaw-tmp:
