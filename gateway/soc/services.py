@@ -44,7 +44,6 @@ def _inspect_via_socket(name: str) -> Optional[Dict[str, Any]]:
 _KNOWN_SERVICES = [
     "agentshroud-bot",
     "agentshroud-gateway",
-    "agentshroud-falco",
 ]
 
 

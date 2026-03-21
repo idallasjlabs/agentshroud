@@ -56,23 +56,6 @@ services:
       # DNS redirect: Anthropic API -> gateway for message-level security
       - "api.anthropic.com:host-gateway"
 
-  # ── Security sidecars (marvin-specific) ─────────────────────────────────────
-  # Prod and dev share this host. Override container_name for each security sidecar
-  # so Docker doesn't refuse to start the dev stack alongside the prod stack.
-  # Note: Two Falco instances on the same host share kernel eBPF hooks — acceptable
-  # for dev/test; prod Falco provides host-wide syscall visibility regardless.
-  falco:
-    container_name: agentshroud-dev-falco
-
-  clamav:
-    container_name: agentshroud-dev-clamav
-
-  wazuh-agent:
-    container_name: agentshroud-dev-wazuh-agent
-
-  fluent-bit:
-    container_name: agentshroud-dev-fluent-bit
-
 secrets:
   telegram_bot_token:
     file: ./secrets/telegram_bot_token_marvin.txt

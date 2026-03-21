@@ -141,6 +141,26 @@ RUN DPKG_ARCH=$(dpkg --print-architecture) && \
       rm "/tmp/fluent-bit_${FLUENT_BIT_VERSION}_${DPKG_ARCH}.deb" ) || \
     echo "fluent-bit: download deferred to runtime"
 
+# Falco runtime security — embedded in gateway (no separate container)
+# Uses modern_ebpf engine for ARM64/AMD64 syscall monitoring.
+ARG FALCO_VERSION=0.39.2
+RUN DPKG_ARCH=$(dpkg --print-architecture) && \
+    case "$DPKG_ARCH" in \
+      arm64) FALCO_ARCH="aarch64" ;; \
+      amd64) FALCO_ARCH="x86_64" ;; \
+      *) FALCO_ARCH="$DPKG_ARCH" ;; \
+    esac && \
+    ( curl -sSfL -o /tmp/falco.tar.gz \
+        "https://download.falco.org/packages/bin/${FALCO_ARCH}/falco-${FALCO_VERSION}-${FALCO_ARCH}.tar.gz" && \
+      tar -xzf /tmp/falco.tar.gz -C /usr/local --strip-components=1 && \
+      rm /tmp/falco.tar.gz ) || \
+    echo "falco: download deferred to runtime"
+
+# Falco config and custom AgentShroud rules
+RUN mkdir -p /etc/falco/rules.d
+COPY docker/falco/falco.yaml /etc/falco/falco.yaml
+COPY docker/falco/rules.yaml /etc/falco/rules.d/agentshroud.yaml
+
 # clamd.conf — adapted for non-root execution in read-only rootfs
 # Socket, pidfile, temp, and log all land in tmpfs (/tmp).
 # DatabaseDirectory reads the virus DB baked in at build time (read-only OK).
@@ -159,6 +179,9 @@ RUN useradd --create-home --shell /bin/bash --uid 1000 agentshroud
 
 # Transfer Wazuh directory ownership to agentshroud so wazuh-agentd starts without root
 RUN chown -R agentshroud:agentshroud /var/ossec
+
+# Falco alert directory (tmpfs mount point at runtime)
+RUN mkdir -p /var/log/falco && chown agentshroud:agentshroud /var/log/falco
 
 # Bake in gateway ossec.conf (FIM on /app/gateway + Falco alert ingestion)
 COPY docker/wazuh/ossec.conf /var/ossec/etc/ossec.conf
