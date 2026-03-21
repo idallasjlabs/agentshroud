@@ -99,14 +99,14 @@ class EgressApprovalQueue:
     def __init__(
         self,
         rules_file: str = "/tmp/agentshroud/egress_rules.json",
-        default_timeout: int = 30,
+        default_timeout: int = 300,
     ):
         """
         Initialize the approval queue.
-        
+
         Args:
             rules_file: Path to persistent rules storage
-            default_timeout: Default timeout in seconds for pending requests
+            default_timeout: Default timeout in seconds for pending requests (default 5 min)
         """
         self.rules_file = Path(rules_file)
         self.default_timeout = default_timeout
@@ -123,6 +123,8 @@ class EgressApprovalQueue:
         self._emergency_block_all: bool = False
         self._emergency_reason: str = ""
         self._event_bus = None
+        # Decision audit log — capped at 500 entries (CC-40)
+        self._decision_log: List[Dict] = []
         
         # Ensure rules file directory exists
         try:
@@ -160,12 +162,14 @@ class EgressApprovalQueue:
                 domain = raw_domain[2:] if raw_domain.startswith("*.") else raw_domain
                 if self._check_existing_rule(domain):
                     continue  # Existing rule (allow or deny) takes precedence
-                self._permanent_rules[domain] = EgressRule(
+                rule = EgressRule(
                     domain=domain,
                     action="allow",
                     mode=ApprovalMode.PERMANENT,
                     created_at=time.time(),
                 )
+                rule.source = "preloaded"  # tag so UI can categorize (CC-09)
+                self._permanent_rules[domain] = rule
                 added += 1
         if added:
             logger.info("EgressApprovalQueue: pre-approved %d known service domain(s)", added)
@@ -449,6 +453,7 @@ class EgressApprovalQueue:
                 # Remove from pending
                 self._pending_requests.pop(request_id)
             
+            self._append_decision(request, "approved", mode.value, "")
             logger.info(f"Egress approved: {request.domain}:{request.port} (mode={mode.value})")
             if self._event_bus is not None:
                 from gateway.ingest_api.event_bus import make_event
@@ -505,6 +510,7 @@ class EgressApprovalQueue:
                 # Remove from pending
                 self._pending_requests.pop(request_id)
             
+            self._append_decision(request, "denied", mode.value, "")
             logger.info(f"Egress denied: {request.domain}:{request.port} (mode={mode.value})")
             if self._event_bus is not None:
                 from gateway.ingest_api.event_bus import make_event
@@ -567,6 +573,41 @@ class EgressApprovalQueue:
                 ]
             }
     
+    def _append_decision(self, request: "EgressRequest", decision: str, mode: str, decided_by: str) -> None:
+        """Append an entry to the capped decision audit log (CC-40)."""
+        entry = {
+            "id": str(uuid.uuid4())[:8],
+            "domain": request.domain,
+            "port": request.port,
+            "agent_id": request.agent_id,
+            "decision": decision,
+            "mode": mode,
+            "decided_by": decided_by,
+            "decided_at": time.time(),
+        }
+        self._decision_log.insert(0, entry)
+        if len(self._decision_log) > 500:
+            self._decision_log = self._decision_log[:500]
+
+    async def get_decision_log(self, limit: int = 100) -> List[Dict]:
+        """Return recent approval/denial decisions (CC-40)."""
+        async with self._lock:
+            return self._decision_log[:limit]
+
+    async def revoke_decision(self, entry_id: str) -> bool:
+        """Revoke an active rule associated with a decision log entry (CC-40)."""
+        async with self._lock:
+            for entry in self._decision_log:
+                if entry["id"] == entry_id:
+                    domain = entry["domain"]
+                    removed = domain in self._permanent_rules or domain in self._session_rules
+                    self._permanent_rules.pop(domain, None)
+                    self._session_rules.pop(domain, None)
+                    if removed:
+                        self._save_rules()
+                    return removed
+        return False
+
     async def add_rule(self, domain: str, action: str, mode: ApprovalMode) -> bool:
         """
         Add or modify an egress rule.
