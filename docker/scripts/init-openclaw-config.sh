@@ -228,6 +228,16 @@ if [ -n "${NPM_CONFIG_PREFIX}" ] && [ -d "${NPM_CONFIG_PREFIX}" ]; then
     if npm install -g "openclaw@${IMAGE_VER}" 2>&1 | tail -5; then
       echo "${IMAGE_VER}" > "${RUNTIME_VERSION_FILE}"
       echo "[init] ✓ openclaw ${IMAGE_VER} seeded to ${NPM_CONFIG_PREFIX}"
+      # Re-apply SDK patches to the volume-installed openclaw.
+      # The image build patches /usr/local/lib/node_modules/openclaw/, but the
+      # volume copy at NPM_CONFIG_PREFIX/lib/node_modules/ is unpatched.
+      # Without this, grammY and the Anthropic SDK bypass the gateway proxy.
+      for _patch in patch-anthropic-sdk.sh patch-telegram-sdk.sh patch-slack-sdk.sh; do
+        if [ -x "/usr/local/bin/${_patch}" ]; then
+          echo "[init] Re-applying ${_patch} to NPM_CONFIG_PREFIX install..."
+          sh "/usr/local/bin/${_patch}" 2>&1 || echo "[init] ⚠ ${_patch} failed (non-fatal)"
+        fi
+      done
     else
       echo "[init] ⚠ openclaw seed failed — bot will use image-bundled version (/usr/local/bin/openclaw)"
     fi
