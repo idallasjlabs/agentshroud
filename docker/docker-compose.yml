@@ -68,6 +68,8 @@ services:
       - AGENTSHROUD_LOCAL_MODEL_REF=${AGENTSHROUD_LOCAL_MODEL_REF:-ollama/qwen3:14b}
       - OPENCLAW_MAIN_MODEL=${OPENCLAW_MAIN_MODEL:-}
       - DOCKER_CONTENT_TRUST=1
+      - AGENTSHROUD_COMPOSE_HOST=marvin
+      - AGENTSHROUD_COMPOSE_DIR=/Users/agentshroud-bot/Development/agentshroud
       - TRIVY_CACHE_DIR=/var/log/security/.trivy-cache
     group_add:
       - "991"   # docker socket GID — read-only service introspection for SOC
@@ -139,6 +141,7 @@ services:
       - agentshroud-workspace:/home/node/agentshroud/workspace
       - gateway-data:/home/node/agentshroud/gateway-data:ro
       - agentshroud-ssh:/home/node/.ssh
+      - openclaw-runtime:/home/node/.npm-global
       - agentshroud-browsers:/home/node/.cache/ms-playwright
       - ../branding:/app/branding:ro
       - ../memory-backups:/app/memory-backups
@@ -185,6 +188,8 @@ services:
       - OPENCLAW_DISABLE_HOST_FILESYSTEM=true
       - OPENCLAW_SANDBOX_MODE=strict
       - OPENCLAW_DISABLE_BONJOUR=1
+      - NPM_CONFIG_PREFIX=/home/node/.npm-global
+      - PATH=/home/node/.npm-global/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
     security_opt:
       - no-new-privileges:true
       - seccomp=./seccomp/agentshroud-seccomp.json
@@ -286,6 +291,8 @@ volumes:
     driver: local
   agentshroud-browsers:
     driver: local
+  openclaw-runtime:
+    name: openclaw-runtime
   security-reports:
     driver: local
   wazuh-alerts:
