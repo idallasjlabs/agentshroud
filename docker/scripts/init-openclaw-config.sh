@@ -225,9 +225,12 @@ if [ -n "${NPM_CONFIG_PREFIX}" ] && [ -d "${NPM_CONFIG_PREFIX}" ]; then
 
   if [ "${RUNTIME_VER}" != "${IMAGE_VER}" ]; then
     echo "[init] Seeding openclaw ${IMAGE_VER} into NPM_CONFIG_PREFIX (was: ${RUNTIME_VER})..."
-    npm install -g "openclaw@${IMAGE_VER}" 2>&1 | tail -3
-    echo "${IMAGE_VER}" > "${RUNTIME_VERSION_FILE}"
-    echo "[init] ✓ openclaw ${IMAGE_VER} seeded to ${NPM_CONFIG_PREFIX}"
+    if npm install -g "openclaw@${IMAGE_VER}" 2>&1 | tail -5; then
+      echo "${IMAGE_VER}" > "${RUNTIME_VERSION_FILE}"
+      echo "[init] ✓ openclaw ${IMAGE_VER} seeded to ${NPM_CONFIG_PREFIX}"
+    else
+      echo "[init] ⚠ openclaw seed failed — bot will use image-bundled version (/usr/local/bin/openclaw)"
+    fi
   else
     echo "[init] ✓ openclaw ${RUNTIME_VER} already in NPM_CONFIG_PREFIX"
   fi
