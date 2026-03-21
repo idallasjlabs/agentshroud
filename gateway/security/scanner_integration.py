@@ -438,9 +438,23 @@ def get_clamav_summary() -> Dict[str, Any]:
     return generate_summary(report)
 
 
+def _is_falco_running() -> bool:
+    """Return True if a falco process is running inside this container."""
+    try:
+        for pid_dir in Path("/proc").iterdir():
+            if not pid_dir.name.isdigit():
+                continue
+            comm = (pid_dir / "comm").read_text().strip()
+            if comm == "falco":
+                return True
+    except Exception:
+        pass
+    return False
+
+
 def get_falco_summary() -> Dict[str, Any]:
-    """Return latest Falco alert summary from the shared alert volume."""
-    if not _is_container_running("agentshroud-falco"):
+    """Return latest Falco alert summary from the local alert directory."""
+    if not _is_falco_running():
         return {"tool": "falco", "status": "not_run", "findings": 0, "critical": 0, "high": 0}
     from .falco_monitor import read_alerts, generate_summary
     if not _FALCO_ALERT_DIR.exists():
