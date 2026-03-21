@@ -141,6 +141,9 @@ RUN DPKG_ARCH=$(dpkg --print-architecture) && \
       rm "/tmp/fluent-bit_${FLUENT_BIT_VERSION}_${DPKG_ARCH}.deb" ) || \
     echo "fluent-bit: download deferred to runtime"
 
+# libelf1 — runtime dependency for Falco binary
+RUN apt-get update && apt-get install -y --no-install-recommends libelf1 && rm -rf /var/lib/apt/lists/*
+
 # Falco runtime security — embedded in gateway (no separate container)
 # Uses modern_ebpf engine for ARM64/AMD64 syscall monitoring.
 ARG FALCO_VERSION=0.39.2
@@ -152,7 +155,7 @@ RUN DPKG_ARCH=$(dpkg --print-architecture) && \
     esac && \
     ( curl -sSfL -o /tmp/falco.tar.gz \
         "https://download.falco.org/packages/bin/${FALCO_ARCH}/falco-${FALCO_VERSION}-${FALCO_ARCH}.tar.gz" && \
-      tar -xzf /tmp/falco.tar.gz -C /usr/local --strip-components=1 && \
+      tar -xzf /tmp/falco.tar.gz -C / --strip-components=1 && \
       rm /tmp/falco.tar.gz ) || \
     echo "falco: download deferred to runtime"
 
