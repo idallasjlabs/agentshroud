@@ -28,4 +28,17 @@ if [ -x /var/ossec/bin/wazuh-agentd ]; then
     echo "[gateway-start] wazuh-agentd launched (pid=$!)"
 fi
 
+# Start Falco runtime monitor (non-fatal) — eBPF syscall detection
+if command -v falco >/dev/null 2>&1; then
+    falco \
+        -o engine.kind=modern_ebpf \
+        -o file_output.enabled=true \
+        -o file_output.keep_alive=true \
+        -o file_output.filename=/var/log/falco/falco_alerts.json \
+        -o json_output=true \
+        -o json_include_output_property=true \
+        2>/tmp/falco-start.log &
+    echo "[gateway-start] falco launched (pid=$!)"
+fi
+
 exec uvicorn gateway.ingest_api.main:app --host 0.0.0.0 --port 8080 --no-access-log

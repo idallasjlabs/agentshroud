@@ -38,7 +38,6 @@ services:
       - agentshroud-config:/data/bot-config:ro
       - security-reports:/var/log/security
       - /var/run/docker.sock:/var/run/docker.sock:ro
-      - falco-alerts:/var/log/falco:ro
       - wazuh-alerts:/var/ossec/logs/alerts
     secrets:
       - gateway_password
@@ -77,11 +76,17 @@ services:
       - seccomp=./seccomp/gateway-seccomp.json
     cap_drop:
       - ALL
+    cap_add:
+      - SYS_BPF
+      - SYS_PTRACE
+      - PERFMON
+    pid: host
     read_only: true
     tmpfs:
       - /tmp:noexec,nosuid,size=100m
       - /var/tmp:noexec,nosuid,size=50m
       - /var/log/fluent-bit:noexec,nosuid,size=50m
+      - /var/log/falco:noexec,nosuid,size=50m
       - /var/ossec/var:nosuid,size=10m,uid=1000,gid=1000
       - /var/ossec/queue:nosuid,size=50m,uid=1000,gid=1000
       - /var/ossec/tmp:noexec,nosuid,size=10m,uid=1000,gid=1000
@@ -101,10 +106,10 @@ services:
       retries: 3
       start_period: 30s
 
-    # Gateway resolves DNS directly (sole egress point)
+    # Gateway resolves DNS via corporate servers (reachable over VPN)
     dns:
-      - 8.8.8.8
-      - 8.8.4.4
+      - 192.168.7.45
+      - 192.168.7.1
 
     # Gateway on BOTH networks: internal (internet) + isolated (to bot)
     networks:
@@ -217,43 +222,6 @@ services:
       gateway:
         condition: service_healthy
 
-  # ── Falco ─────────────────────────────────────────────────────────────────────
-  # Runtime security — syscall monitoring via modern eBPF CO-RE probe (ARM64-safe).
-  # Uses falco-no-driver image; kernel module not required. engine.kind=modern_ebpf auto-loads BTF.
-  # Note: --modern-bpf flag was removed in Falco 0.39+; use -o engine.kind=modern_ebpf instead.
-  falco:
-    image: falcosecurity/falco-no-driver:latest
-    container_name: agentshroud-falco
-    hostname: falco
-    restart: unless-stopped
-    privileged: true
-    pid: host
-    command:
-      - falco
-      - -o
-      - engine.kind=modern_ebpf
-      - -o
-      - file_output.enabled=true
-      - -o
-      - file_output.keep_alive=true
-      - -o
-      - file_output.filename=/var/log/falco/falco_alerts.json
-      - -o
-      - json_output=true
-      - -o
-      - json_include_output_property=true
-    volumes:
-      - /dev:/host/dev
-      - /proc:/host/proc:ro
-      - /etc:/host/etc:ro
-      - /boot:/host/boot:ro
-      - /lib/modules:/host/lib/modules:ro
-      - /usr:/host/usr:ro
-      - /var/run/docker.sock:/host/var/run/docker.sock
-      - falco-alerts:/var/log/falco
-    networks:
-      - agentshroud-internal
-
 
 # ── Secrets ────────────────────────────────────────────────────────────────────
 secrets:
@@ -320,8 +288,6 @@ volumes:
   agentshroud-browsers:
     driver: local
   security-reports:
-    driver: local
-  falco-alerts:
     driver: local
   wazuh-alerts:
     driver: local
