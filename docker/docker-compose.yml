@@ -77,7 +77,6 @@ services:
     cap_drop:
       - ALL
     cap_add:
-      - SYS_BPF
       - SYS_PTRACE
       - PERFMON
     pid: host
