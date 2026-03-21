@@ -108,6 +108,7 @@ RUN mkdir -p /home/node/.agentshroud && \
     ln -s /home/node/.agentshroud /home/node/.openclaw && \
     mkdir -p /home/node/agentshroud/workspace && \
     mkdir -p /home/node/.ssh && \
+    mkdir -p /home/node/.npm-global/bin && \
     chown -R node:node /home/node
 
 # Copy SCAP content for compliance scanning.
