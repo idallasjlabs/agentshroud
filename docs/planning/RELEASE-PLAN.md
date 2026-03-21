@@ -1,7 +1,7 @@
 # 🛡️ AgentShroud Release Plan
 
 **Created:** 2026-03-04
-**Last Updated:** 2026-03-14
+**Last Updated:** 2026-03-20
 **Related:** docs/planning/MASTER-FEATURE-LIST.md (232 items total)
 
 ---
@@ -170,68 +170,164 @@ Every tranche must satisfy all of:
 
 ---
 
-## v1.0.0 "Fortress" — Polish + Public Release (38 items)
+## v1.0.0 "Fortress" — Ship-Ready Public Release (116 items)
 
 *Goal: Production-ready, installable, documented, red-team-tested.*
 
-### One-Click Install (5 items)
+### Phase 1: Security & Secrets (14 items)
 
-81. **curl installer** — `curl -sSL https://install.agentshroud.ai | bash`
-82. **Interactive setup wizard** — OS detection, runtime check, credential setup.
-83. **One-click OpenClaw updates** from command center.
-84. **`agentshroud update` CLI** — One-command upgrade with auto-rollback.
-85. **Auto-rollback** on failed health check (60s).
+1. 🔴 Secret scanner on full git history (trufflehog/gitleaks, all commits)
+2. 🔴 Rotate all credentials to production values (was #113)
+3. Verify .gitignore covers all secret patterns (verify-only)
+4. Verify pre-commit hooks enforce secret scanning (verify-only)
+5. Audit all example files use fake placeholders
+6. Verify .env.example committed for all secret-bearing dirs (verify-only)
+7. Codebase audit: no hardcoded IPs or hostnames
+8. Codebase audit: no debug/default credentials
+9. Review SECURITY.md — add assumed model compromise section, verify disclosure process
+10. Dependency vulnerability audit (pip audit, npm audit, Trivy)
+11. Pin base image to digest (`@sha256:...` not tag)
+12. 🔴 Verify non-root container user on ALL services
+13. Remove `privileged: true` from docker-compose (line 229)
+14. 🔴 Verify runtime secret injection (no secrets baked into image layers)
 
-### Command Center — Web (11 items)
+### Phase 2: Repo Hygiene (10 items)
 
-86. **Branded web dashboard** — Real API backing. Brand palette #1583f0 / #161c27.
-87. **Real-time activity feed** — WebSocket, filterable, searchable.
-88. **Approval queue UI** — One-click approve/deny.
-89. **Module control panel** — Enable/disable, mode toggle, config editor.
-90. **Security posture dashboard** — Risk scores, CVEs, compliance status.
-91. **Audit trail viewer** — Searchable, exportable, chain verification.
-92. **Agent management** — View, kill, restart, logs, cost.
-93. **Mobile-responsive PWA** — Works on iPhone/iPad.
-94. **Authentication** — Cookie + TOTP 2FA + Tailscale.
-95. **Text-browser compatible** — w3m, links2, lynx, elinks.
-96. **Progressive enhancement** — Core works without JS.
+15. Remove build artifacts from repo
+16. Remove IDE configs from repo; add to .gitignore
+17. 🔴 Resolve all TODO/FIXME on security-critical paths
+18. Dead code removal pass
+19. Add directory-level READMEs (gateway/, docker/, docs/, scripts/)
+20. Consistent naming convention audit
+21. Audit test fixtures for real PII — replace with synthetic data
+22. Verify git history clean after secret scanner (#1)
+23. Enable branch protection on main (require PR reviews, status checks, no force push)
+24. Delete stale remote branches
 
-### Command Center — CLI/TUI (4 items)
+### Phase 3: Container & Runtime Hardening (11 items)
 
-97. **`agentshroud` CLI** — status, logs, approve, deny, kill commands.
-98. **TUI dashboard** — rich/textual for SSH/tmux sessions.
-99. **TUI chat console** — Talk to OpenClaw from terminal.
-100. **Blink Shell (iPad) compatible**.
+25. Verify .dockerignore completeness (verify-only)
+26. Convert to multi-stage Dockerfile (separate build/runtime stages)
+27. Document image sizes for gateway and bot
+28. Verify graceful SIGTERM shutdown (all services)
+29. Audit for hardcoded container paths — replace with env vars
+30. 🔴 Verify logs go to stdout/stderr (no file-only logging)
+31. 🔴 Configure log rotation (Docker log driver or compose log options)
+32. Document writable volumes explicitly
+33. 🔴 Document resource limits and minimum requirements (RAM, CPU, disk)
+34. Resource pressure testing (verify behavior under memory/CPU/disk pressure)
+35. Verify timezone handling (UTC internally, configurable TZ for display)
 
-### SSH Chat Interface (3 items)
+### Phase 4: Dependencies (7 items)
 
-101. **SSH-accessible chat** — `ssh chat@agentshroud-gateway`.
-102. **tmux-friendly**, full OpenClaw capability.
-103. **Approval notifications inline**.
+36. Pin all dependency versions (requirements.txt uses `==`)
+37. Commit lockfiles
+38. Document vendored/patched tools (grammY SDK patch, etc.)
+39. Document dependency upgrade procedure
+40. Audit for abandoned/CVE-bearing dependencies
+41. Separate optional vs required deps (requirements.txt vs requirements-dev.txt)
+42. Verify SBOM generation in CI (syft); publish as release artifact
 
-### Documentation (8 items)
+### Phase 5: Networking (5 items)
 
-104. **Installation guide** — Every platform (macOS, Linux, Docker, Podman, Colima, Apple Containers).
-105. **Configuration reference** — Every setting, every module.
-106. **Architecture deep-dive** — Branded Mermaid diagrams.
-107. **Security model docs** — STPA-Sec, threat model, trust model.
-108. **API reference** — Gateway endpoints, WebSocket protocol.
-109. **Runbooks** — Incident response, key rotation, backup/restore.
-110. **User guide + FAQ** — First 30 minutes, common tasks.
-111. **Whitepaper update** with proxy verification results.
+43. Document all exposed ports (purpose, protocol, public/internal)
+44. Audit 0.0.0.0 bindings — verify intentional, document rationale
+45. Document TLS/HTTPS configuration path (certs, reverse proxy)
+46. Document firewall requirements (inbound/outbound)
+47. Document DNS dependencies (Telegram API, model APIs, etc.)
 
-### Final Hardening + Release (5 items)
+### Phase 6: Testing (7 items)
 
-112. **Red team remediation** — All Steve Hay findings from Phases 1-6.
-113. **Token rotation** — All tokens/secrets rotated to production values.
-114. **Final peer review** — Multi-model (Claude, Gemini, Codex).
-115. **Tag v1.0.0** — GitHub release with full changelog.
-116. **agentshroud.ai launch page** — Branded, functional.
+48. 🔴 Verify test suite passes on fresh clone
+49. 🔴 Audit skipped tests — every skip must have tracked reason
+50. Verify tests don't require internet (all external calls mocked)
+51. Coverage audit — verify no `# pragma: no cover` abuse
+52. Extend CI to target platforms (add macOS runner to matrix)
+53. 🔴 Smoke/acceptance test script (single script validates fresh deployment e2e)
+54. Failure mode testing (network loss, service crash, disk full, OOM)
 
-### Trademark / IP (2 items)
+### Phase 7: Documentation (12 items)
 
-117. **File USPTO application** — TEAS Plus ($250-500).
-118. **Prior use documentation** maintained.
+55. README: clear purpose statement + demo screenshot/GIF
+56. 🔴 Installation guide — every platform, exact version requirements (was #104)
+57. 🔴 Quick-start tested in clean environment (fresh macOS + Ubuntu VM)
+58. Architecture deep-dive — branded Mermaid diagrams (was #106)
+59. Configuration reference — every setting, module, env var (was #105)
+60. Security model docs — STPA-Sec, threat model, trust boundaries (was #107)
+61. API reference — gateway endpoints, WebSocket protocol (was #108)
+62. Runbooks — incident response, key rotation, backup/restore, troubleshooting (was #109)
+63. User guide + FAQ (was #110)
+64. Whitepaper update with proxy verification results (was #111)
+65. 🔴 Docs accuracy audit — remove aspirational/unimplemented features from all docs
+66. Prompt injection demo in README — show AgentShroud blocking a real attack
+
+### Phase 8: Operational Readiness (7 items)
+
+67. Observability hooks — structured metrics export (Prometheus-compatible or JSON)
+68. Parseable structured log format — JSON with severity, timestamp, component
+69. PII scrubbing in application logs (extend pipeline redaction to app logs)
+70. 🔴 Startup/shutdown structured events with timestamp and version
+71. Version visible at runtime (`/status` returns version from build metadata)
+72. Data migration strategy for config/data format changes between versions
+73. Backup/restore procedure documented (volume backup, config export, restore)
+
+### Phase 9: Legal & IP (7 items)
+
+74. Verify LICENSE file correct (verify-only)
+75. Dependency license compatibility audit (all transitive deps compatible with MIT)
+76. Copyright headers in all source files (.py, .js, .sh)
+77. NOTICE/ATTRIBUTIONS file for bundled dependencies
+78. Asset license audit (images, fonts, icons)
+79. USPTO TEAS Plus filing — $250-500 (was #117)
+80. Prior use documentation maintained (was #118)
+
+### Phase 10: Community & GitHub Setup (10 items)
+
+81. Issue templates (bug report, feature request, security vulnerability)
+82. PR template with contributor checklist
+83. CODEOWNERS file — auto-assign reviewers per directory
+84. Squash-and-merge policy + auto-delete branches (GitHub settings)
+85. Collaborator access: Write only, no Admin (GitHub settings)
+86. Maintainer contact in SECURITY.md and README
+87. Sustainability/bus-factor note
+88. CODE_OF_CONDUCT.md (Contributor Covenant)
+89. COLLABORATING.md — trust boundary docs for AgentShroud contributors
+90. Review CONTRIBUTING.md completeness (verify-only)
+
+### Phase 11: Command Center — Web (11 items)
+
+91. Branded web dashboard — real API backing, #1583f0/#161c27 palette (was #86)
+92. Real-time activity feed — WebSocket, filterable, searchable (was #87)
+93. Approval queue UI — one-click approve/deny (was #88)
+94. Module control panel — enable/disable, mode toggle, config editor (was #89)
+95. Security posture dashboard — risk scores, CVEs, compliance (was #90)
+96. Audit trail viewer — searchable, exportable, chain verification (was #91)
+97. Agent management — view, kill, restart, logs, cost (was #92)
+98. Mobile-responsive PWA (was #93)
+99. Authentication — Cookie + TOTP 2FA + Tailscale (was #94)
+100. Text-browser compatible — w3m, links2, lynx, elinks (was #95)
+101. Progressive enhancement — core works without JS (was #96)
+
+### Phase 12: One-Click Install (5 items)
+
+102. curl installer — `curl -sSL https://install.agentshroud.ai | bash` (was #81)
+103. Interactive setup wizard — OS detection, runtime, credentials (was #82)
+104. One-click OpenClaw updates from command center (was #83)
+105. `agentshroud update` CLI with auto-rollback (was #84)
+106. Auto-rollback on failed health check, 60s (was #85)
+
+### Phase 13: Final Hardening + Release (10 items)
+
+107. Red team remediation — all Steve Hay Phases 1-6 findings (was #112)
+108. Final peer review — multi-model cold-eye (Claude, Gemini, Codex) (was #114)
+109. Support matrix — documented OS/runtime/arch combinations
+110. Reproducible build artifacts — deterministic Docker builds
+111. Container image tagged + published to GHCR
+112. Tag v1.0.0 — GitHub release, full changelog, breaking changes, SHA256 checksums (was #115)
+113. agentshroud.ai launch page (was #116)
+114. CHANGELOG.md v1.0.0 entry
+115. Smoke test on release artifacts (download, install, verify e2e)
+116. Update RELEASE-PLAN.md — mark v1.0.0 complete
 
 ---
 
@@ -282,6 +378,17 @@ Every tranche must satisfy all of:
 ### Multi-Host Deployment
 - Coordinated deploy across Marvin/Trillian/Pi, health check dashboard, ARM32 support
 
+### Command Center — CLI/TUI (moved from v1.0.0 on 2026-03-20)
+- `agentshroud` CLI — status, logs, approve, deny, kill commands
+- TUI dashboard — rich/textual for SSH/tmux sessions
+- TUI chat console — Talk to OpenClaw from terminal
+- Blink Shell (iPad) compatible
+
+### SSH Chat Interface (moved from v1.0.0 on 2026-03-20)
+- SSH-accessible chat — `ssh chat@agentshroud-gateway`
+- tmux-friendly, full OpenClaw capability
+- Approval notifications inline
+
 ---
 
 ## Summary
@@ -289,11 +396,17 @@ Every tranche must satisfy all of:
 | Version | Codename | Items | Focus |
 |---------|----------|-------|-------|
 | v0.8.0 | Watchtower | 104 | Security fixes, module wiring, Steve prep |
-| v0.9.0 | Sentinel | 37 | **Data isolation, SOC**, remediation, iMessage, security tools |
-| v1.0.0 | Fortress | 38 | Polish, install, docs, release |
-| Post-v1 | — | 53 | Voice, integrations, advanced features |
+| v0.9.0 | Sentinel | 37 | Data isolation, SOC, remediation, iMessage, security tools |
+| v1.0.0 | Fortress | 116 | Ship-ready: security audit, repo hygiene, container hardening, docs, dashboard, installer, release |
+| Post-v1 | — | 60 | Voice, CLI/TUI, SSH chat, Apple integration, advanced features |
 
-**Total tracked: 232 items**
+**Total tracked: 317 items**
+
+### Key Changes (2026-03-20)
+- **Moved to post-v1.0.0:** CLI/TUI (4 items), SSH Chat Interface (3 items)
+- **Merged into v1.0.0:** 100-item public release readiness checklist (78 net new after dedup)
+- **Reorganized v1.0.0:** 13 execution phases ordered for implementation
+- **v1.0.0 item count:** 38 → 116
 
 ### Key Changes (2026-03-04 12:16 UTC)
 - **Added to v0.9.0:** Private service data isolation (6 items), Security Operations Center (6 items)
