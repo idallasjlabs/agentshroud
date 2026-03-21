@@ -218,7 +218,7 @@ class TestConfigValidation:
         assert primary_match, "Primary bot Dockerfile must pin openclaw@<version>"
         assert openclaw_match, "OpenClaw bot Dockerfile must pin openclaw@<version>"
         assert primary_match.group(1) == openclaw_match.group(1)
-        assert primary_match.group(1) == "2026.3.8"
+        assert primary_match.group(1) == "2026.3.13"
     def test_openclaw_patch_script_sets_control_ui_allowed_origins(self):
         """openclaw init patch script must seed control UI origins for non-loopback bind."""
         script = (REPO_ROOT / "docker" / "config" / "openclaw" / "apply-patches.js").read_text()
@@ -382,7 +382,7 @@ class TestConfigValidation:
     def test_compose_sets_qwen_local_model_overrides(self):
         """Main compose stack should expose a single model-mode switch with local/cloud refs."""
         compose = (REPO_ROOT / "docker" / "docker-compose.yml").read_text()
-        assert "AGENTSHROUD_MODEL_MODE=${AGENTSHROUD_MODEL_MODE:-local}" in compose
+        assert "AGENTSHROUD_MODEL_MODE=${AGENTSHROUD_MODEL_MODE:-cloud}" in compose
         assert "AGENTSHROUD_LOCAL_MODEL_REF=${AGENTSHROUD_LOCAL_MODEL_REF:-ollama/qwen3:14b}" in compose
         assert "AGENTSHROUD_CLOUD_MODEL_REF=${AGENTSHROUD_CLOUD_MODEL_REF:-anthropic/claude-opus-4-6}" in compose
         assert "OLLAMA_BASE_URL=${OLLAMA_BASE_URL:-http://gateway:8080/v1}" in compose
