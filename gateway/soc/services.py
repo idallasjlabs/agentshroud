@@ -10,6 +10,9 @@ import socket
 import time
 from typing import Any, Dict, List, Optional
 
+# Gateway process start time — used as uptime base for internal module services (CC-29)
+_GATEWAY_START_TIME: float = time.time()
+
 from .models import HealthStatus, ResourceUsage, ServiceDescriptor, ServiceStatus
 
 logger = logging.getLogger("agentshroud.soc.services")
@@ -47,54 +50,62 @@ _KNOWN_SERVICES = [
 ]
 
 
-def _check_clamd() -> bool:
-    """Return True if clamd Unix socket /tmp/clamd.ctl is connectable."""
+def _check_clamd() -> str:
+    """Return 'running', 'stopped', or 'not_installed' for clamd (CC-01)."""
+    import shutil
+    if not shutil.which("clamd") and not os.path.exists("/usr/sbin/clamd"):
+        return "not_installed"
     try:
         s = socket.socket(socket.AF_UNIX, socket.SOCK_STREAM)
         s.settimeout(1)
         s.connect("/tmp/clamd.ctl")
         s.close()
-        return True
+        return "running"
     except Exception:
-        return False
+        return "stopped"
 
 
-def _check_fluent_bit() -> bool:
-    """Return True if fluent-bit pidfile /tmp/fluent-bit.pid exists with a live PID."""
+def _check_fluent_bit() -> str:
+    """Return 'running', 'stopped', or 'not_installed' for fluent-bit (CC-01)."""
+    import shutil
     import os as _os
+    if not shutil.which("fluent-bit") and not shutil.which("td-agent-bit"):
+        return "not_installed"
     try:
         pid = int(open("/tmp/fluent-bit.pid").read().strip())
         _os.kill(pid, 0)
-        return True
+        return "running"
     except Exception:
-        return False
+        return "stopped"
 
 
-def _check_wazuh_agent() -> bool:
-    """Return True if wazuh-agentd is running (pidfile + signal 0).
-
-    Uses errno.EPERM to detect process owned by a different user — that still
-    means the process exists and is running.
-    """
+def _check_wazuh_agent() -> str:
+    """Return 'running', 'stopped', or 'not_installed' for wazuh-agentd (CC-01)."""
     import errno as _errno
     import os as _os
+    import shutil
+    if not shutil.which("wazuh-agentd") and not os.path.exists("/var/ossec/bin/wazuh-agentd"):
+        return "not_installed"
     try:
         pid = int(open("/var/ossec/var/run/wazuh-agentd.pid").read().strip())
         _os.kill(pid, 0)
-        return True
+        return "running"
     except OSError as exc:
-        return exc.errno == _errno.EPERM  # process exists, different owner
+        if exc.errno == _errno.EPERM:
+            return "running"  # process exists, owned by different user
+        return "stopped"
     except Exception:
-        return False
+        return "stopped"
 
 
-def _check_openscap() -> bool:
-    """Return True if oscap binary and Debian 12 SCAP content are present."""
+def _check_openscap() -> str:
+    """Return 'running', 'stopped', or 'not_installed' for openscap (CC-01)."""
     import shutil
-    return bool(
-        shutil.which("oscap")
-        and os.path.exists("/usr/share/xml/scap/ssg/content/ssg-debian12-ds.xml")
-    )
+    if not shutil.which("oscap"):
+        return "not_installed"
+    if os.path.exists("/usr/share/xml/scap/ssg/content/ssg-debian12-ds.xml"):
+        return "running"
+    return "stopped"
 
 
 # Internal gateway services — processes running inside the gateway container.
@@ -163,22 +174,33 @@ class ServiceManager:
         for name in _KNOWN_SERVICES:
             descriptors.append(self._describe_service(name, engine))
         # Internal gateway services (running inside the gateway process)
+        # CC-25: mark all as is_internal=True; CC-29: use gateway start time for uptime
+        gateway_uptime = time.time() - _GATEWAY_START_TIME
+        _status_map = {
+            "running": ServiceStatus.RUNNING,
+            "stopped": ServiceStatus.STOPPED,
+            "not_installed": ServiceStatus.NOT_INSTALLED,
+        }
         try:
             from ..ingest_api.state import app_state
             for svc_name, attr, label, port, check_fn in _INTERNAL_SERVICE_ATTRS:
                 if check_fn is not None:
-                    running = check_fn()
+                    status_str = check_fn()  # now returns "running"/"stopped"/"not_installed"
                 else:
                     obj = getattr(app_state, attr, None)
-                    running = obj is not None
+                    status_str = "running" if obj is not None else "stopped"
+                svc_status = _status_map.get(status_str, ServiceStatus.UNKNOWN)
+                running = svc_status == ServiceStatus.RUNNING
                 ports = [f"{port}/tcp"] if port and running else []
                 descriptors.append(ServiceDescriptor(
                     name=svc_name,
-                    status=ServiceStatus.RUNNING if running else ServiceStatus.STOPPED,
+                    status=svc_status,
                     health=HealthStatus.HEALTHY if running else HealthStatus.UNKNOWN,
+                    uptime_seconds=gateway_uptime if running else None,
                     ports=ports,
                     networks=["agentshroud-internal"],
                     version=None,
+                    is_internal=True,  # CC-25
                 ))
         except Exception as exc:
             logger.debug("list_services: internal service probe failed: %s", exc)

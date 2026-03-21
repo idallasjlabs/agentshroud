@@ -423,19 +423,31 @@ def get_trivy_summary() -> Dict[str, Any]:
     from .trivy_report import generate_summary
     report = _load_latest_json(_TRIVY_REPORT_DIR, "trivy-")
     if report is None:
-        return {"tool": "trivy", "status": "not_run", "findings": 0, "critical": 0, "high": 0}
-    return generate_summary(report)
+        return {"tool": "trivy", "status": "not_run", "findings": 0, "critical": 0, "high": 0, "timestamp": None}
+    summary = generate_summary(report)
+    # Ensure timestamp is set from file mtime if not in report (CC-18)
+    if not summary.get("timestamp"):
+        files = sorted(_TRIVY_REPORT_DIR.glob("trivy-*.json"), reverse=True)
+        if files:
+            summary["timestamp"] = datetime.fromtimestamp(files[0].stat().st_mtime, tz=timezone.utc).isoformat()
+    return summary
 
 
 def get_clamav_summary() -> Dict[str, Any]:
     """Return latest ClamAV scan summary from saved reports."""
     if not _is_clamd_running():
-        return {"tool": "clamav", "status": "not_run", "findings": 0, "critical": 0, "high": 0}
+        return {"tool": "clamav", "status": "not_run", "findings": 0, "critical": 0, "high": 0, "timestamp": None, "error": "clamd not running — start ClamAV daemon"}
     from .clamav_scanner import generate_summary
     report = _load_latest_json(_CLAMAV_REPORT_DIR, "clamav-")
     if report is None:
-        return {"tool": "clamav", "status": "not_run", "findings": 0, "critical": 0, "high": 0}
-    return generate_summary(report)
+        return {"tool": "clamav", "status": "not_run", "findings": 0, "critical": 0, "high": 0, "timestamp": None}
+    summary = generate_summary(report)
+    # Ensure timestamp is set (CC-18)
+    if not summary.get("timestamp"):
+        files = sorted(_CLAMAV_REPORT_DIR.glob("clamav-*.json"), reverse=True)
+        if files:
+            summary["timestamp"] = datetime.fromtimestamp(files[0].stat().st_mtime, tz=timezone.utc).isoformat()
+    return summary
 
 
 def _is_falco_running() -> bool:
@@ -453,14 +465,35 @@ def _is_falco_running() -> bool:
 
 
 def get_falco_summary() -> Dict[str, Any]:
-    """Return latest Falco alert summary from the local alert directory."""
-    if not _is_falco_running():
-        return {"tool": "falco", "status": "not_run", "findings": 0, "critical": 0, "high": 0}
+    """Return latest Falco alert summary from the local alert directory.
+
+    CC-20: If Falco binary exists but is not running (e.g. no eBPF support on
+    Colima/runc), return status='unavailable' rather than the misleading 'clean'.
+    """
+    import shutil
+    falco_installed = bool(shutil.which("falco") or Path("/usr/bin/falco").exists())
+    falco_running = _is_falco_running()
+    if falco_installed and not falco_running:
+        # Binary present but not running — likely eBPF unsupported
+        return {
+            "tool": "falco",
+            "status": "unavailable",
+            "findings": 0,
+            "critical": 0,
+            "high": 0,
+            "timestamp": None,
+            "error": "Falco not running — eBPF/kmod may be unsupported in this environment (Colima/runc)",
+        }
+    if not falco_running:
+        return {"tool": "falco", "status": "not_run", "findings": 0, "critical": 0, "high": 0, "timestamp": None}
     from .falco_monitor import read_alerts, generate_summary
     if not _FALCO_ALERT_DIR.exists():
-        return {"tool": "falco", "status": "not_run", "findings": 0, "critical": 0, "high": 0}
+        return {"tool": "falco", "status": "not_run", "findings": 0, "critical": 0, "high": 0, "timestamp": None}
     alerts = read_alerts(alert_dir=_FALCO_ALERT_DIR)
-    return generate_summary(alerts)
+    summary = generate_summary(alerts)
+    if not summary.get("timestamp"):
+        summary["timestamp"] = datetime.now(timezone.utc).isoformat()
+    return summary
 
 
 def get_wazuh_summary() -> Dict[str, Any]:
@@ -496,6 +529,29 @@ def get_openscap_summary() -> Dict[str, Any]:
         status = "warning"
     else:
         status = "clean"
+    # CC-17: normalize non-ISO timestamps (e.g. "20260321-095212") to ISO 8601
+    raw_ts = report.get("timestamp")
+    iso_ts: Optional[str] = None
+    if raw_ts:
+        try:
+            # Already ISO — validate by parsing
+            datetime.fromisoformat(str(raw_ts).replace("Z", "+00:00"))
+            iso_ts = str(raw_ts)
+        except ValueError:
+            # Try "YYYYMMDD-HHMMSS" format from OpenSCAP script
+            ts_str = str(raw_ts)
+            for fmt in ("%Y%m%d-%H%M%S", "%Y%m%dT%H%M%S"):
+                try:
+                    dt = datetime.strptime(ts_str, fmt).replace(tzinfo=timezone.utc)
+                    iso_ts = dt.isoformat()
+                    break
+                except ValueError:
+                    continue
+    # CC-18: fallback to file mtime
+    if not iso_ts:
+        files = sorted(_OPENSCAP_REPORT_DIR.glob("openscap-*.json"), reverse=True)
+        if files:
+            iso_ts = datetime.fromtimestamp(files[0].stat().st_mtime, tz=timezone.utc).isoformat()
     return {
         "tool": "openscap",
         "status": status,
@@ -505,7 +561,7 @@ def get_openscap_summary() -> Dict[str, Any]:
         "pass_count": pass_count,
         "fail_count": fail_count,
         "profile": report.get("profile", ""),
-        "timestamp": report.get("timestamp"),
+        "timestamp": iso_ts,
     }
 
 
@@ -1892,13 +1948,26 @@ def compute_scorecard() -> Dict[str, Any]:
     scores_by_id = _evaluate_mandatory_gates(scores_by_id, trivy)
     domain_scores = [scores_by_id[i + 1] for i in range(33)]
 
+    # CC-21: per-score next-action guidance and urgency tier
+    _next_action_by_score = {
+        0: ("Not yet implemented — review this domain and enable the relevant security module.", "critical"),
+        1: ("Initial capability exists. Run available scans or enable the relevant module.", "high"),
+        2: ("Basic controls in place. Automate, enforce policies, and close coverage gaps.", "medium"),
+        3: ("Controls defined and enforced. Focus on measuring effectiveness and fixing remaining findings.", "low"),
+        4: ("Measured and effective. Review trends and set remediation SLAs for any residual findings.", "info"),
+        5: ("Optimizing — no immediate action needed. Continue monitoring and scheduled reviews.", "info"),
+    }
+
     # Build domain list with metadata
     domains = []
     for meta, score in zip(_SCORECARD_DOMAINS, domain_scores):
+        next_action, urgency = _next_action_by_score.get(score, _next_action_by_score[0])
         domains.append({
             **meta,
             "score": score,
             "maturity": _MATURITY_LABELS[score],
+            "next_action": next_action,
+            "urgency": urgency,
         })
 
     total = sum(domain_scores)
