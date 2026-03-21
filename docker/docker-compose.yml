@@ -189,6 +189,7 @@ services:
       - OPENCLAW_SANDBOX_MODE=strict
       - OPENCLAW_DISABLE_BONJOUR=1
       - NPM_CONFIG_PREFIX=/home/node/.npm-global
+      - NPM_CONFIG_CACHE=/home/node/.npm-global/.cache
       - PATH=/home/node/.npm-global/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
     security_opt:
       - no-new-privileges:true
