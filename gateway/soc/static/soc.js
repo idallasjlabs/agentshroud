@@ -217,16 +217,23 @@ function _registerTab(name, loader) { _tabLoaders[name] = loader; }
 // ---------------------------------------------------------------------------
 
 async function _loadOverview() {
-  const [healthRes, riskRes, usersRes, egressRes] = await Promise.all([
+  const [healthRes, riskRes, usersRes, egressRes, eventsRes] = await Promise.all([
     _get('/health'),
     _get('/security/risk'),
     _get('/users'),
     _get('/egress/pending'),
+    _get('/security/events?limit=50'),  // CC-02: seed events KPI + feed on load
   ]);
   const health  = healthRes.data  || {};
   const risk    = riskRes.data    || {};
   const users   = usersRes.data   || [];
   const pending = Array.isArray(egressRes.data) ? egressRes.data : [];
+  const events  = Array.isArray(eventsRes.data) ? eventsRes.data : [];
+
+  // CC-04: seed _eventFeed from REST so feed is populated before WS connects
+  if (events.length && _eventFeed.length === 0) {
+    _eventFeed = events.slice(0, MAX_FEED);
+  }
 
   const running = (health.services || []).filter(s => s.status === 'running').length;
   const total   = (health.services || []).length;
@@ -239,6 +246,10 @@ async function _loadOverview() {
   _setText('kpi-services-sub', running === total ? 'All running' : 'Degraded');
   _setText('kpi-contribs',    Array.isArray(users) ? users.length : '--');
   _setText('kpi-egress',      Array.isArray(pending) ? pending.length : '--');
+  // CC-02: set events KPI from REST count
+  _setText('kpi-events', _eventFeed.length);
+  const cnt = document.getElementById('feed-count');
+  if (cnt) cnt.textContent = _eventFeed.length;
 
   _renderOverviewFeed();
 }
@@ -308,11 +319,49 @@ function _renderSecurityTable(events) {
 }
 
 function _renderCorrelation(corr) {
+  // CC-13: render structured panels instead of raw JSON dump
   const el = document.getElementById('correlation-panel');
   if (!el) return;
-  el.innerHTML = corr
-    ? `<pre style="font-size:11px;white-space:pre-wrap;color:var(--text)">${_esc(JSON.stringify(corr, null, 2))}</pre>`
-    : '<span>No correlation data</span>';
+  if (!corr || corr.status === 'unavailable') {
+    el.innerHTML = '<span style="color:var(--text-muted)">No correlation data available</span>';
+    return;
+  }
+  const signals = Array.isArray(corr.signals) ? corr.signals : [];
+  const denied  = Array.isArray(corr.top_denied_destinations) ? corr.top_denied_destinations : [];
+  const violators = Array.isArray(corr.top_policy_violators) ? corr.top_policy_violators : [];
+  const trend   = corr.egress_trend || {};
+  const scanners = corr.scanner_findings || {};
+
+  const sigRows = signals.length
+    ? signals.map(s => `<tr><td>${_esc(s.signal||s.name||'')}</td><td style="text-align:center">${s.count??0}</td><td style="text-align:center">${s.weight??1}</td><td style="text-align:right;color:var(--accent)">${(s.count??0)*(s.weight??1)}</td></tr>`).join('')
+    : '<tr><td colspan="4" style="color:var(--text-muted);text-align:center">No signals</td></tr>';
+
+  el.innerHTML = `
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:1rem">
+      <div>
+        <div style="font-size:11px;font-weight:600;text-transform:uppercase;letter-spacing:.05em;color:var(--text-muted);margin-bottom:.5rem">Signal Breakdown</div>
+        <table class="data-table" style="font-size:11px">
+          <thead><tr><th>Signal</th><th>Count</th><th>Weight</th><th>Score</th></tr></thead>
+          <tbody>${sigRows}</tbody>
+        </table>
+      </div>
+      <div>
+        <div style="font-size:11px;font-weight:600;text-transform:uppercase;letter-spacing:.05em;color:var(--text-muted);margin-bottom:.5rem">Egress Trend</div>
+        <div style="display:flex;flex-direction:column;gap:.3rem;font-size:12px">
+          <div><span style="color:var(--text-muted)">Denied:</span> <strong style="color:var(--danger)">${trend.denied??0}</strong></div>
+          <div><span style="color:var(--text-muted)">Allowed:</span> <strong style="color:var(--success)">${trend.allowed??0}</strong></div>
+          <div><span style="color:var(--text-muted)">Pending:</span> <strong style="color:var(--warning)">${trend.pending??0}</strong></div>
+        </div>
+        ${denied.length ? `
+        <div style="font-size:11px;font-weight:600;text-transform:uppercase;letter-spacing:.05em;color:var(--text-muted);margin:.75rem 0 .3rem">Top Denied Destinations</div>
+        ${denied.map(d => `<div style="font-size:11px;display:flex;justify-content:space-between"><code>${_esc(d.domain||d)}</code><span style="color:var(--danger)">${d.count??''}</span></div>`).join('')}
+        ` : ''}
+        ${violators.length ? `
+        <div style="font-size:11px;font-weight:600;text-transform:uppercase;letter-spacing:.05em;color:var(--text-muted);margin:.75rem 0 .3rem">Top Policy Violators</div>
+        ${violators.map(v => `<div style="font-size:11px;display:flex;justify-content:space-between"><code>${_esc(v.agent_id||v)}</code><span style="color:var(--warning)">${v.count??''}</span></div>`).join('')}
+        ` : ''}
+      </div>
+    </div>`;
 }
 
 window._reloadSecurity = _loadSecurity;
@@ -386,34 +435,91 @@ function _renderScanners(data) {
   }).join('');
 }
 
+let _sbomPackagesAll = [];
+
 function _renderSbom(sbom, status) {
   const el = document.getElementById('sbom-panel');
   if (!el) return;
   if (!sbom || status === 404) {
     el.innerHTML = '<span style="color:var(--text-muted)">No SBOM available — run <code>scripts/security-scan.sh</code> to generate.</span>';
+    const pkgEl = document.getElementById('sbom-packages');
+    if (pkgEl) pkgEl.style.display = 'none';
     return;
   }
-  const pkg_count = sbom.packages?.length ?? sbom.spdxVersion ? Object.keys(sbom).length : '?';
+  const packages = sbom.packages || [];
+  const pkg_count = packages.length || '?';
   el.innerHTML = `
     <div class="sbom-field">Format</div>       <div class="sbom-val">${_esc(sbom.spdxVersion || sbom.bomFormat || 'SPDX')}</div>
     <div class="sbom-field">Document name</div><div class="sbom-val">${_esc(sbom.name || '—')}</div>
     <div class="sbom-field">Created</div>      <div class="sbom-val">${_esc(sbom.creationInfo?.created || sbom.metadata?.timestamp || '—')}</div>
     <div class="sbom-field">Packages</div>     <div class="sbom-val">${pkg_count}</div>
   `;
+  // CC-19: render package table
+  if (packages.length) {
+    _sbomPackagesAll = packages.slice().sort((a, b) => (a.name || '').localeCompare(b.name || ''));
+    const pkgEl = document.getElementById('sbom-packages');
+    if (pkgEl) pkgEl.style.display = '';
+    _renderSbomPackageTable(_sbomPackagesAll);
+  }
 }
+
+function _renderSbomPackageTable(pkgs) {
+  const tbl = document.getElementById('sbom-pkg-table');
+  if (!tbl) return;
+  if (!pkgs.length) {
+    tbl.innerHTML = '<span style="color:var(--text-muted);font-size:12px">No packages</span>';
+    return;
+  }
+  tbl.innerHTML = `<table class="data-table" style="font-size:11px">
+    <thead><tr><th>Package</th><th>Version</th><th>Type</th><th>Location</th></tr></thead>
+    <tbody>${pkgs.slice(0, 500).map(p => {
+      const name    = p.name || p.packageName || '—';
+      const version = p.versionInfo || p.version || '—';
+      const type    = p.externalRefs?.[0]?.referenceCategory || p.type || '—';
+      const loc     = p.sourceInfo || p.packageFileName || '—';
+      return `<tr><td><strong>${_esc(name)}</strong></td><td>${_esc(version)}</td><td>${_esc(type)}</td><td style="font-size:10px;color:var(--text-muted)">${_esc(String(loc).slice(0,60))}</td></tr>`;
+    }).join('')}</tbody>
+  </table>`;
+}
+
+window._filterSbomPackages = function(query) {
+  const filtered = query
+    ? _sbomPackagesAll.filter(p => (p.name || '').toLowerCase().includes(query.toLowerCase()))
+    : _sbomPackagesAll;
+  _renderSbomPackageTable(filtered);
+};
 
 window._reloadScanners = _loadScanners;
 
 window._runScan = async function(scanner, btn) {
-  if (btn) { btn.disabled = true; btn.textContent = '⏳ Launching…'; }
+  // CC-15: poll for scan completion instead of fixed 3s timeout
+  if (btn) { btn.disabled = true; btn.textContent = '⏳ Running…'; }
   const { ok, data } = await _post(`/scan/${encodeURIComponent(scanner)}`, {});
-  if (btn) { btn.disabled = false; btn.textContent = '▶ Run Scan'; }
-  if (ok) {
-    _toast(`${scanner} scan launched — results will appear when complete`, 'success');
-    setTimeout(_loadScanners, 3000);
-  } else {
+  if (!ok) {
+    if (btn) { btn.disabled = false; btn.textContent = '▶ Run Scan'; }
     _toast(`Failed to launch ${scanner} scan: ${data?.message || data?.detail || 'unknown error'}`, 'danger');
+    return;
   }
+  _toast(`${scanner} scan launched — polling for results…`, 'info');
+  // Poll every 8s for up to 5 minutes
+  let attempts = 0;
+  const maxAttempts = 37;
+  const poll = setInterval(async () => {
+    attempts++;
+    const { data: scanners } = await _get('/scanners');
+    const s = (scanners?.scanners || {})[scanner];
+    if (s && s.status !== 'not_run' && s.timestamp) {
+      clearInterval(poll);
+      if (btn) { btn.disabled = false; btn.textContent = '▶ Run Scan'; }
+      _toast(`${scanner} scan complete`, 'success');
+      _loadScanners();
+    } else if (attempts >= maxAttempts) {
+      clearInterval(poll);
+      if (btn) { btn.disabled = false; btn.textContent = '▶ Run Scan'; }
+      _toast(`${scanner} scan timed out — check /var/log/security for errors`, 'warning');
+      _loadScanners();
+    }
+  }, 8000);
 };
 
 window._downloadSbom = async function() {
@@ -468,6 +574,8 @@ function _renderScorecard(data) {
     const sc    = d.score ?? 0;
     const refs  = d.standard_ref || '';
     const tools = (d.tools || []);
+    const nextAction = d.next_action || '';  // CC-21
+    const urgency = d.urgency || (sc <= 1 ? 'improvement' : sc <= 3 ? 'attention' : '');
     return `
       <div class="domain-card">
         <div class="domain-card-header">
@@ -479,6 +587,7 @@ function _renderScorecard(data) {
         </div>
         <div class="score-bar-track"><div class="score-bar-fill fill-${sc}"></div></div>
         ${d.description ? `<div style="font-size:11px;color:var(--text-muted);margin-top:.4rem;line-height:1.5">${_esc(d.description)}</div>` : ''}
+        ${nextAction ? `<div style="font-size:11px;margin-top:.4rem;padding:.3rem .5rem;border-radius:3px;background:var(--accent-dim);color:var(--accent)">→ ${_esc(nextAction)}</div>` : ''}
         <div class="domain-refs">${_esc(refs)}</div>
         <div class="domain-tools">${tools.map(t => `<span class="tool-tag">${_esc(t)}</span>`).join('')}</div>
       </div>`;
@@ -498,36 +607,57 @@ async function _loadServices() {
 }
 
 function _renderServices(services) {
+  // CC-25: split container services vs internal gateway modules
   const grid = document.getElementById('services-grid');
   if (!grid) return;
   if (!Array.isArray(services) || !services.length) {
     grid.innerHTML = '<div style="color:var(--text-muted);font-size:12px">No services found</div>';
     return;
   }
-  grid.innerHTML = services.map(s => {
-    const statusCls = s.status === 'running' ? 'running' : s.status === 'unhealthy' ? 'unhealthy' : 'stopped';
-    const statusBadge = s.status === 'running' ? 'success' : s.status === 'unhealthy' ? 'danger' : 'muted';
+  const containers = services.filter(s => !s.is_internal);
+  const internals  = services.filter(s => s.is_internal);
+
+  const renderCard = s => {
+    const statusCls   = s.status === 'running' ? 'running' : s.status === 'unhealthy' ? 'unhealthy' : 'stopped';
+    const statusBadge = s.status === 'running' ? 'success' : s.status === 'unhealthy' ? 'danger'
+                      : s.status === 'not_installed' ? 'muted' : 'warning';
     const healthBadge = s.health === 'healthy' ? 'success' : s.health === 'unhealthy' ? 'danger' : 'muted';
+    const statusLabel = s.status === 'not_installed' ? 'not installed' : s.status;
+    // CC-26: no Update button (local-only builds, no registry)
+    // CC-33: internal services show "Restart Gateway" instead of per-service controls
+    const actions = s.is_internal
+      ? `<button class="btn btn-sm" title="Restart gateway to restart this module" onclick="window._svcAction('restart','agentshroud-gateway')">Restart Gateway</button>
+         <button class="btn btn-sm" onclick="window._viewSvcLogs('agentshroud-gateway')">Logs</button>`
+      : `<button class="btn btn-sm" onclick="window._svcAction('restart','${_esc(s.name)}')">Restart</button>
+         <button class="btn btn-sm btn-danger" onclick="window._svcAction('stop','${_esc(s.name)}')">Stop</button>
+         <button class="btn btn-sm" onclick="window._viewSvcLogs('${_esc(s.name)}')">Logs</button>`;
     return `
       <div class="svc-card ${statusCls}">
         <div class="svc-header">
-          <span class="svc-name">${_esc(s.name)}</span>
-          <span class="badge badge-${statusBadge}">${_esc(s.status)}</span>
+          <span class="svc-name">${_esc(s.name.replace('agentshroud-', ''))}</span>
+          <span class="badge badge-${statusBadge}">${_esc(statusLabel)}</span>
         </div>
         <div class="svc-body">
-          <div class="svc-row"><span class="svc-label">Health</span>     <span class="badge badge-${healthBadge}">${_esc(s.health || '—')}</span></div>
-          <div class="svc-row"><span class="svc-label">Uptime</span>     <span>${s.uptime_seconds != null ? _uptime(s.uptime_seconds) : '—'}</span></div>
-          <div class="svc-row"><span class="svc-label">Restarts</span>   <span>${s.restart_count ?? '—'}</span></div>
+          <div class="svc-row"><span class="svc-label">Health</span><span class="badge badge-${healthBadge}">${_esc(s.health || '—')}</span></div>
+          <div class="svc-row"><span class="svc-label">Uptime</span><span>${s.uptime_seconds != null ? _uptime(Math.round(s.uptime_seconds)) : '—'}</span></div>
+          ${!s.is_internal ? `<div class="svc-row"><span class="svc-label">Restarts</span><span>${s.restart_count ?? '—'}</span></div>` : ''}
           ${s.image ? `<div class="svc-row"><span class="svc-label">Image</span><span style="font-size:11px">${_esc(s.image.slice(0,40))}</span></div>` : ''}
-          <div class="svc-actions">
-            <button class="btn btn-sm" onclick="window._svcAction('restart','${_esc(s.name)}')">Restart</button>
-            <button class="btn btn-sm" onclick="window._svcAction('update','${_esc(s.name)}')">Update</button>
-            <button class="btn btn-sm btn-danger" onclick="window._svcAction('stop','${_esc(s.name)}')">Stop</button>
-            <button class="btn btn-sm" onclick="window._viewSvcLogs('${_esc(s.name)}')">Logs</button>
-          </div>
+          ${s.version ? `<div class="svc-row"><span class="svc-label">Version</span><span>${_esc(s.version)}</span></div>` : ''}
+          <div class="svc-actions">${actions}</div>
         </div>
       </div>`;
-  }).join('');
+  };
+
+  let html = '';
+  if (containers.length) {
+    html += `<div style="grid-column:1/-1;font-size:11px;font-weight:600;text-transform:uppercase;letter-spacing:.06em;color:var(--text-muted);margin-bottom:-.25rem">Container Services</div>`;
+    html += containers.map(renderCard).join('');
+  }
+  if (internals.length) {
+    html += `<div style="grid-column:1/-1;font-size:11px;font-weight:600;text-transform:uppercase;letter-spacing:.06em;color:var(--text-muted);margin-top:.75rem;margin-bottom:-.25rem">Gateway Modules <span style="font-weight:400;opacity:.6">(restart gateway to restart any module)</span></div>`;
+    html += internals.map(renderCard).join('');
+  }
+  grid.innerHTML = html;
 }
 
 window._reloadServices = _loadServices;
@@ -546,18 +676,34 @@ window._svcAction = function(action, name) {
   );
 };
 
+// CC-27: show service logs in an inline modal, not by switching tabs
 window._viewSvcLogs = async function(name) {
+  const modal = document.getElementById('log-modal');
+  const titleEl = document.getElementById('log-modal-title');
+  const bodyEl  = document.getElementById('log-modal-body');
+  if (!modal || !bodyEl) { _showTab('logs'); return; }
+  if (titleEl) titleEl.textContent = `Logs: ${name}`;
+  bodyEl.textContent = 'Loading…';
+  modal.classList.add('open');
   const { data } = await _get(`/services/${encodeURIComponent(name)}/logs?tail=200`);
-  const el = document.getElementById('log-viewer');
-  if (el) { el.textContent = (data?.lines || []).join('\n'); _showTab('logs'); }
+  bodyEl.textContent = (data?.lines || []).join('\n') || '(no log output)';
+  bodyEl.scrollTop = bodyEl.scrollHeight;
+};
+
+window._closeLogModal = function() {
+  const modal = document.getElementById('log-modal');
+  if (modal) modal.classList.remove('open');
 };
 
 // ---------------------------------------------------------------------------
 // Contributors tab
 // ---------------------------------------------------------------------------
 
+let _allGroups = [];  // cached for group assignment UI
+
 async function _loadContributors() {
   const [usersRes, groupsRes] = await Promise.all([_get('/users'), _get('/groups')]);
+  _allGroups = Array.isArray(groupsRes.data) ? groupsRes.data : [];
   _renderUsers(usersRes.data);
   _renderGroups(groupsRes.data);
 }
@@ -570,20 +716,103 @@ function _renderUsers(users) {
     return;
   }
   const roleCls = { owner: 'info', operator: 'warning', admin: 'warning', collaborator: 'success', viewer: 'muted' };
+  const roles   = ['owner', 'operator', 'collaborator', 'viewer'];
   tbody.innerHTML = users.map(u =>
     `<tr>
-      <td><code>${_esc(u.user_id)}</code></td>
-      <td>${_esc(u.display_name || u.user_id)}</td>
-      <td><span class="badge badge-${roleCls[u.role] || 'muted'}">${_esc(u.role)}</span></td>
-      <td>${(u.groups || []).join(', ') || '—'}</td>
-      <td>${_esc(u.collab_mode || '—')}</td>
-      <td>${_esc(u.lockdown_level ?? '—')}</td>
+      <td><code style="font-size:11px">${_esc(u.user_id)}</code></td>
+      <td>
+        <span id="dn-display-${_esc(u.user_id)}" onclick="window._editDisplayName('${_esc(u.user_id)}')" title="Click to edit" style="cursor:pointer;border-bottom:1px dashed var(--text-muted)">${_esc(u.display_name || u.user_id)}</span>
+      </td>
+      <td>
+        <select style="font-size:11px;padding:2px 4px;background:var(--surface);color:var(--text);border:1px solid var(--border);border-radius:3px"
+          onchange="window._changeUserRole('${_esc(u.user_id)}',this.value,this)">
+          ${roles.map(r => `<option value="${r}"${u.role===r?' selected':''}>${r}</option>`).join('')}
+        </select>
+      </td>
+      <td style="font-size:11px">
+        ${(u.groups || []).map(g => `<span class="badge badge-info" style="margin-right:2px">${_esc(g)}</span>`).join('') || '—'}
+        <button class="btn btn-sm" style="margin-left:4px;padding:1px 5px" onclick="window._assignGroups('${_esc(u.user_id)}',${JSON.stringify(u.groups||[])})">+</button>
+      </td>
+      <td style="font-size:11px">${_esc(u.collab_mode || '—')}</td>
+      <td style="font-size:11px">${_esc(u.lockdown_level ?? '—')}</td>
       <td>
         <button class="btn btn-sm btn-danger" onclick="window._removeCollab('${_esc(u.user_id)}')">Remove</button>
       </td>
     </tr>`
   ).join('');
 }
+
+// CC-35: inline display name edit
+window._editDisplayName = function(uid) {
+  const span = document.getElementById(`dn-display-${uid}`);
+  if (!span) return;
+  const cur = span.textContent;
+  const input = document.createElement('input');
+  input.type = 'text'; input.value = cur;
+  input.style.cssText = 'font-size:11px;padding:2px 4px;background:var(--surface);color:var(--text);border:1px solid var(--accent);border-radius:3px;width:120px';
+  const save = async () => {
+    const val = input.value.trim();
+    if (val && val !== cur) {
+      const { ok, data } = await _put(`/users/${encodeURIComponent(uid)}/display-name`, { display_name: val });
+      _toast(ok ? 'Name updated' : `Error: ${data?.message}`, ok ? 'success' : 'danger');
+    }
+    span.textContent = input.value || cur;
+    input.replaceWith(span);
+  };
+  input.onblur = save;
+  input.onkeydown = e => { if (e.key === 'Enter') save(); if (e.key === 'Escape') { input.replaceWith(span); } };
+  span.replaceWith(input);
+  input.focus(); input.select();
+};
+
+// CC-36: role dropdown change
+window._changeUserRole = async function(uid, newRole, selectEl) {
+  const prev = Array.from(selectEl.options).find(o => o.selected && o.value !== newRole)?.value;
+  if (newRole === 'owner') {
+    if (!confirm(`Promote ${uid} to OWNER? This grants full administrative control.`)) {
+      selectEl.value = prev || 'collaborator'; return;
+    }
+  }
+  const { ok, data } = await _put(`/users/${encodeURIComponent(uid)}/role`, { role: newRole });
+  _toast(ok ? `Role changed to ${newRole}` : `Error: ${data?.message}`, ok ? 'success' : 'danger');
+  if (!ok) selectEl.value = prev || 'collaborator';
+};
+
+// CC-37: group assignment modal
+window._assignGroups = function(uid, currentGroups) {
+  if (!_allGroups.length) { _toast('No groups configured', 'info'); return; }
+  const opts = _allGroups.map(g => {
+    const checked = currentGroups.includes(g.id) ? 'checked' : '';
+    return `<label style="display:flex;align-items:center;gap:.5rem;padding:.25rem 0;font-size:12px">
+      <input type="checkbox" data-gid="${_esc(g.id)}" ${checked}> ${_esc(g.name)} <code style="font-size:10px;color:var(--text-muted)">${_esc(g.id)}</code>
+    </label>`;
+  }).join('');
+  _confirm(
+    `Assign groups for ${uid}`,
+    `__GROUP_ASSIGN_PLACEHOLDER__`,
+    async () => {
+      const checkboxes = document.querySelectorAll('#modal-body input[type=checkbox]');
+      const toAdd = [], toRemove = [];
+      checkboxes.forEach(cb => {
+        const gid = cb.dataset.gid;
+        if (cb.checked && !currentGroups.includes(gid)) toAdd.push(gid);
+        if (!cb.checked && currentGroups.includes(gid)) toRemove.push(gid);
+      });
+      await Promise.all([
+        ...toAdd.map(gid => _post(`/groups/${encodeURIComponent(gid)}/members`, { user_id: uid })),
+        ...toRemove.map(gid => _delete(`/groups/${encodeURIComponent(gid)}/members/${encodeURIComponent(uid)}`)),
+      ]);
+      _toast('Group memberships updated', 'success');
+      _loadContributors();
+    },
+    false,
+  );
+  // Replace modal body with interactive checkboxes
+  setTimeout(() => {
+    const bodyEl = document.getElementById('modal-body');
+    if (bodyEl) bodyEl.innerHTML = `<div style="max-height:200px;overflow-y:auto">${opts}</div>`;
+  }, 0);
+};
 
 function _renderGroups(groups) {
   const tbody = document.getElementById('groups-tbody');
@@ -610,7 +839,36 @@ window._showContribTab = function(name, el) {
   if (el) el.classList.add('active');
 };
 
-window._showAddCollabForm = function() { _toast('Use /addcollab command in Telegram to add a collaborator', 'info'); };
+// CC-38: real add-collaborator modal instead of Telegram toast
+window._showAddCollabForm = function() {
+  const modal = document.getElementById('add-collab-modal');
+  if (!modal) { _toast('Use /addcollab command in Telegram to add a collaborator', 'info'); return; }
+  // reset fields
+  ['ac-user-id', 'ac-display-name'].forEach(id => { const el = document.getElementById(id); if (el) el.value = ''; });
+  const platEl = document.getElementById('ac-platform');
+  if (platEl) platEl.value = 'telegram';
+  modal.classList.add('open');
+};
+
+window._closeAddCollabModal = function() {
+  const modal = document.getElementById('add-collab-modal');
+  if (modal) modal.classList.remove('open');
+};
+
+window._submitAddCollab = async function() {
+  const uid      = (document.getElementById('ac-user-id')?.value      || '').trim();
+  const name     = (document.getElementById('ac-display-name')?.value || '').trim();
+  const platform = document.getElementById('ac-platform')?.value      || 'telegram';
+  if (!uid) { _toast('User ID is required', 'danger'); return; }
+  const { ok, data } = await _post('/users/collaborator', { user_id: uid, display_name: name || uid, platform, role: 'collaborator' });
+  if (ok) {
+    _toast(`Collaborator ${name || uid} added`, 'success');
+    window._closeAddCollabModal();
+    _loadContributors();
+  } else {
+    _toast(`Failed: ${data?.message || data?.detail || 'unknown error'}`, 'danger');
+  }
+};
 window._removeCollab = function(uid) {
   _confirm('Remove collaborator', `Remove user "${uid}" from all collaborator lists?`, async () => {
     const { data } = await _delete(`/users/${encodeURIComponent(uid)}/collaborator`);
@@ -633,8 +891,8 @@ window._openGroupPanel = function(group) {
   const modeEl    = document.getElementById('gp-mode');
   const adminInput = document.getElementById('gp-admin');
 
-  if (idInput)    { idInput.value   = isCreate ? '' : group.id;           idInput.disabled = !isCreate; }
-  if (nameInput)  { nameInput.value = isCreate ? '' : group.name;         nameInput.disabled = !isCreate; }
+  if (idInput)    { idInput.value   = isCreate ? '' : group.id;    idInput.disabled = !isCreate; }
+  if (nameInput)  { nameInput.value = isCreate ? '' : group.name;  /* CC-34: name always editable */ }
   if (modeEl)     { modeEl.value    = (group?.collab_mode) || 'local_only'; }
   if (adminInput) { adminInput.value = (group?.admin) || ''; }
 
@@ -659,15 +917,24 @@ function _renderGroupMembers(members) {
   const el = document.getElementById('gp-members-list');
   if (!el) return;
   if (!members.length) {
-    el.innerHTML = '<div style="color:var(--text-muted);font-size:12px">No members</div>';
+    el.innerHTML = '<div style="color:var(--text-muted);font-size:12px">No members — use "Add Member" below</div>';
     return;
   }
-  el.innerHTML = members.map(uid =>
-    `<div style="display:flex;align-items:center;gap:.5rem;padding:.25rem 0;border-bottom:1px solid var(--border)">
-      <code style="flex:1;font-size:12px">${_esc(uid)}</code>
+  // CC-39: show display names if available from cached users list
+  const userMap = {};
+  document.querySelectorAll('#users-tbody tr').forEach(row => {
+    const code = row.querySelector('td:first-child code');
+    const name = row.querySelector('td:nth-child(2) span');
+    if (code && name) userMap[code.textContent] = name.textContent;
+  });
+  el.innerHTML = members.map(uid => {
+    const displayName = userMap[uid] || uid;
+    const showName = displayName !== uid ? ` <span style="color:var(--text-muted);font-size:10px">(${_esc(uid)})</span>` : '';
+    return `<div style="display:flex;align-items:center;gap:.5rem;padding:.25rem 0;border-bottom:1px solid var(--border)">
+      <span style="flex:1;font-size:12px">${_esc(displayName)}${showName}</span>
       <button class="btn btn-sm btn-danger" onclick="window._submitRemoveMember('${_esc(uid)}')">Remove</button>
-    </div>`
-  ).join('');
+    </div>`;
+  }).join('');
 }
 
 window._submitCreateGroup = async function() {
@@ -691,12 +958,20 @@ window._submitCreateGroup = async function() {
 window._submitSaveMode = async function() {
   if (!_gpCurrentId) return;
   const collab_mode = document.getElementById('gp-mode')?.value || 'local_only';
-  const { ok, data } = await _put(`/groups/${encodeURIComponent(_gpCurrentId)}/mode`, { collab_mode });
-  if (ok) {
-    _toast('Collab mode updated', 'success');
+  const newName     = (document.getElementById('gp-name')?.value || '').trim();
+
+  const calls = [_put(`/groups/${encodeURIComponent(_gpCurrentId)}/mode`, { collab_mode })];
+  // CC-34: save name if it changed
+  if (newName) calls.push(_put(`/groups/${encodeURIComponent(_gpCurrentId)}/name`, { name: newName }));
+
+  const results = await Promise.all(calls);
+  const allOk = results.every(r => r.ok);
+  if (allOk) {
+    _toast('Group settings saved', 'success');
     _loadContributors();
   } else {
-    _toast(`Failed: ${data?.message || 'unknown error'}`, 'danger');
+    const msg = results.find(r => !r.ok)?.data?.message || 'unknown error';
+    _toast(`Failed: ${msg}`, 'danger');
   }
 };
 
@@ -749,20 +1024,61 @@ window._submitDeleteGroup = function() {
 // ---------------------------------------------------------------------------
 
 async function _loadEgress() {
-  const [pendingRes, rulesRes] = await Promise.all([_get('/egress/pending'), _get('/egress/rules')]);
+  const [pendingRes, rulesRes, histRes] = await Promise.all([
+    _get('/egress/pending'),
+    _get('/egress/rules'),
+    _get('/egress/history?limit=50'),
+  ]);
   _renderPendingEgress(pendingRes.data);
   _renderEgressRules(rulesRes.data);
+  _renderEgressHistory(histRes.data);
   const cnt = document.getElementById('egress-count');
   if (cnt && Array.isArray(pendingRes.data)) cnt.textContent = pendingRes.data.length;
 }
+
+// CC-40: Decision history table
+function _renderEgressHistory(history) {
+  const tbody = document.getElementById('egress-history-tbody');
+  if (!tbody) return;
+  const list = Array.isArray(history) ? history : [];
+  if (!list.length) {
+    tbody.innerHTML = '<tr><td colspan="7" style="color:var(--text-muted);text-align:center;padding:1rem">No decision history yet</td></tr>';
+    return;
+  }
+  const decCls = { approved: 'success', denied: 'danger', timed_out: 'muted', revoked: 'warning' };
+  tbody.innerHTML = list.map(e =>
+    `<tr>
+      <td><code style="font-size:11px">${_esc(e.domain || '—')}</code></td>
+      <td style="font-size:11px">${_esc(e.agent_id || '—')}</td>
+      <td><span class="badge badge-${decCls[e.decision] || 'muted'}">${_esc(e.decision || '—')}</span></td>
+      <td style="font-size:11px">${_esc(e.mode || '—')}</td>
+      <td style="font-size:11px">${_esc(e.decided_by || 'system')}</td>
+      <td style="font-size:11px">${_ago(e.decided_at ? new Date(e.decided_at * 1000).toISOString() : null)}</td>
+      <td>
+        ${e.decision === 'approved' && e.mode !== 'once'
+          ? `<button class="btn btn-sm btn-danger" onclick="window._revokeEgressDecision('${_esc(e.id)}')">Revoke</button>`
+          : '—'}
+      </td>
+    </tr>`
+  ).join('');
+}
+
+window._revokeEgressDecision = async function(entryId) {
+  _confirm('Revoke Approval', 'This will remove the active rule created by this approval. Future requests to this domain will require a new approval.', async () => {
+    const { data } = await _post(`/egress/history/${encodeURIComponent(entryId)}/revoke`);
+    _toast(data?.ok ? 'Approval revoked' : `Error: ${data?.message}`, data?.ok ? 'success' : 'danger');
+    _loadEgress();
+  }, false);
+};
 
 function _renderPendingEgress(items) {
   const tbody = document.getElementById('egress-tbody');
   if (!tbody) return;
   if (!Array.isArray(items) || !items.length) {
-    tbody.innerHTML = '<tr><td colspan="8" style="color:var(--text-muted);text-align:center;padding:1rem">No pending requests</td></tr>';
+    tbody.innerHTML = '<tr><td colspan="9" style="color:var(--text-muted);text-align:center;padding:1rem">No pending requests</td></tr>';
     return;
   }
+  const now = Date.now();
   tbody.innerHTML = items.map(r =>
     `<tr>
       <td><code>${_esc((r.request_id || '').slice(0, 8))}</code></td>
@@ -771,20 +1087,107 @@ function _renderPendingEgress(items) {
       <td>${_esc(r.agent_id || '—')}</td>
       <td>${_esc(r.tool_name || '—')}</td>
       <td>${_sevBadge(r.risk_level || 'medium')}</td>
-      <td>${_ago(r.submitted_at)}</td>
+      <td>${_ago(r.timestamp)}</td>
+      <td id="egress-countdown-${_esc(r.request_id)}" style="font-size:11px;color:var(--warning)">—</td>
       <td>
-        <button class="btn btn-sm btn-success" onclick="window._egressDecide('approve','${_esc(r.request_id)}')">Allow</button>
-        <button class="btn btn-sm btn-danger"  onclick="window._egressDecide('deny','${_esc(r.request_id)}')">Deny</button>
+        <div style="display:flex;gap:.25rem;flex-wrap:wrap">
+          <select id="egress-mode-${_esc(r.request_id)}" style="font-size:11px;padding:2px 4px;background:var(--surface);color:var(--text);border:1px solid var(--border);border-radius:3px">
+            <option value="once">Allow Once</option>
+            <option value="session">Allow Session</option>
+            <option value="1h">Allow 1h</option>
+            <option value="4h">Allow 4h</option>
+            <option value="24h">Allow 24h</option>
+            <option value="permanent">Allow Always</option>
+          </select>
+          <button class="btn btn-sm btn-success" onclick="window._egressApproveWithMode('${_esc(r.request_id)}')">Allow</button>
+          <button class="btn btn-sm btn-danger"  onclick="window._egressDecide('deny','${_esc(r.request_id)}')">Deny</button>
+        </div>
       </td>
     </tr>`
   ).join('');
+
+  // CC-05: start countdown timers for each pending request
+  items.forEach(r => {
+    if (!r.timeout_at) return;
+    const cdEl = document.getElementById(`egress-countdown-${r.request_id}`);
+    if (!cdEl) return;
+    const tick = () => {
+      const remaining = Math.max(0, Math.round((new Date(r.timeout_at) - Date.now()) / 1000));
+      if (!document.getElementById(`egress-countdown-${r.request_id}`)) return; // removed from DOM
+      cdEl.textContent = remaining > 0 ? `${remaining}s` : 'expired';
+      cdEl.style.color = remaining <= 30 ? 'var(--danger)' : 'var(--warning)';
+      if (remaining > 0) setTimeout(tick, 1000);
+    };
+    tick();
+  });
 }
+
+/// CC-06: approve egress with selected mode
+window._egressApproveWithMode = async function(id) {
+  const sel = document.getElementById(`egress-mode-${id}`);
+  const mode = sel ? sel.value : 'once';
+  const { data } = await _post(`/egress/${encodeURIComponent(id)}/approve`, { mode });
+  _toast(data?.ok ? `Egress approved (${mode})` : `Error: ${data?.message}`, data?.ok ? 'success' : 'danger');
+  setTimeout(_loadEgress, 1000);
+};
 
 function _renderEgressRules(rules) {
   const el = document.getElementById('egress-rules');
-  if (!el || !rules) return;
-  el.innerHTML = `<pre style="font-size:11px;white-space:pre-wrap;color:var(--text)">${_esc(JSON.stringify(rules, null, 2))}</pre>`;
+  if (!el) return;
+  const list = Array.isArray(rules) ? rules : (rules?.rules || []);
+  if (!list.length) {
+    el.innerHTML = '<span style="color:var(--text-muted);font-size:12px">No active rules</span>';
+    return;
+  }
+  // Group by source for visual separation
+  const preloaded = list.filter(r => r.source === 'preloaded');
+  const user      = list.filter(r => r.source !== 'preloaded');
+
+  const renderRow = r => {
+    const expiry = r.expires_at ? _ago(r.expires_at) : (r.mode === 'permanent' ? 'permanent' : '—');
+    const badgeCls = r.action === 'deny' ? 'danger' : (r.mode === 'permanent' ? 'success' : 'info');
+    const canRevoke = r.source !== 'preloaded' || r.action === 'deny';
+    return `<tr>
+      <td><code style="font-size:11px">${_esc(r.domain)}</code></td>
+      <td><span class="badge badge-${badgeCls}">${_esc(r.action || 'allow')}</span></td>
+      <td style="font-size:11px">${_esc(r.mode || '—')}</td>
+      <td style="font-size:11px">${expiry}</td>
+      <td style="font-size:11px;color:var(--text-muted)">${r.source === 'preloaded' ? 'pre-approved' : 'user'}</td>
+      <td>
+        ${r.action !== 'deny'
+          ? `<button class="btn btn-sm btn-danger" title="Deny/pause this domain" onclick="window._egressOverride('${_esc(r.domain)}','deny')">Pause</button>`
+          : `<button class="btn btn-sm" title="Remove override and restore default" onclick="window._egressRemoveOverride('${_esc(r.domain)}')">Restore</button>`}
+      </td>
+    </tr>`;
+  };
+
+  const preHtml = preloaded.length ? `
+    <tr><td colspan="6" style="font-size:10px;font-weight:600;text-transform:uppercase;letter-spacing:.05em;color:var(--text-muted);padding:.5rem 0 .25rem;background:transparent">Pre-approved (${preloaded.length})</td></tr>
+    ${preloaded.map(renderRow).join('')}` : '';
+
+  const userHtml = user.length ? `
+    <tr><td colspan="6" style="font-size:10px;font-weight:600;text-transform:uppercase;letter-spacing:.05em;color:var(--text-muted);padding:.5rem 0 .25rem;background:transparent">User Rules (${user.length})</td></tr>
+    ${user.map(renderRow).join('')}` : '';
+
+  el.innerHTML = `
+    <table class="data-table" style="font-size:11px">
+      <thead><tr><th>Domain</th><th>Action</th><th>Mode</th><th>Expires</th><th>Source</th><th></th></tr></thead>
+      <tbody>${preHtml}${userHtml}</tbody>
+    </table>`;
 }
+
+// CC-10: pause/deny a permanent domain or restore it
+window._egressOverride = async function(domain, action) {
+  const { data } = await _post('/egress/rules/override', { domain, action });
+  _toast(data?.ok ? `Domain ${action === 'deny' ? 'paused' : 'allowed'}` : `Error: ${data?.message}`, data?.ok ? 'success' : 'danger');
+  _loadEgress();
+};
+
+window._egressRemoveOverride = async function(domain) {
+  const { data } = await _delete(`/egress/rules/${encodeURIComponent(domain)}`);
+  _toast(data?.ok ? 'Override removed' : `Error: ${data?.message}`, data?.ok ? 'success' : 'danger');
+  _loadEgress();
+};
 
 window._reloadEgress = _loadEgress;
 
@@ -805,6 +1208,24 @@ window._emergencyBlock = function() {
 // ---------------------------------------------------------------------------
 // Logs tab
 // ---------------------------------------------------------------------------
+
+// CC-30/41: fetch REST logs on Logs tab load so viewer is pre-populated
+async function _loadLogs() {
+  const svcFilter = document.getElementById('log-service-filter')?.value || 'agentshroud-gateway';
+  const el = document.getElementById('log-viewer');
+  if (!el) return;
+  el.textContent = 'Loading logs…';
+  const { data } = await _get(`/services/${encodeURIComponent(svcFilter || 'agentshroud-gateway')}/logs?tail=300`);
+  const lines = data?.lines || [];
+  if (lines.length) {
+    el.textContent = lines.join('\n');
+  } else if (_eventFeed.length) {
+    _replayLogsTab();
+  } else {
+    el.textContent = 'No log data available — waiting for events…';
+  }
+  el.scrollTop = el.scrollHeight;
+}
 
 function _appendLogLine(ev) {
   const liveEl = document.getElementById('log-live');
@@ -845,24 +1266,84 @@ window._clearLogs = function() {
 // ---------------------------------------------------------------------------
 
 async function _loadConfig() {
-  const { data } = await _get('/config');
+  // CC-44: structured config view instead of raw JSON dump
+  const { data: cfg } = await _get('/config');
   const el = document.getElementById('config-view');
-  if (el) el.textContent = JSON.stringify(data, null, 2);
+  if (el && cfg) {
+    const rows = [
+      { label: 'Bind Address', key: 'bind' },
+      { label: 'Port', key: 'port' },
+      { label: 'Teams Enabled', key: 'teams_enabled' },
+      { label: 'Active Bots', key: 'bots' },
+    ];
+    el.innerHTML = `
+      <table style="width:100%;border-collapse:collapse;font-size:12px">
+        ${rows.map(r => {
+          const val = cfg[r.key];
+          const display = Array.isArray(val) ? val.join(', ') : (val !== undefined ? String(val) : '—');
+          return `<tr>
+            <td style="padding:.3rem .5rem;color:var(--text-muted);white-space:nowrap;border-bottom:1px solid var(--border)">${_esc(r.label)}</td>
+            <td style="padding:.3rem .5rem;border-bottom:1px solid var(--border)">${_esc(display)}</td>
+          </tr>`;
+        }).join('')}
+        <tr>
+          <td style="padding:.3rem .5rem;color:var(--text-muted);border-bottom:1px solid var(--border)">Log Level</td>
+          <td style="padding:.3rem .5rem;border-bottom:1px solid var(--border)">
+            <select id="log-level-sel" style="font-size:11px;padding:2px 4px;background:var(--surface);color:var(--text);border:1px solid var(--border);border-radius:3px"
+              onchange="window._setLogLevel(this.value)">
+              ${['DEBUG','INFO','WARNING','ERROR'].map(lvl =>
+                `<option value="${lvl}"${(cfg.log_level||'INFO')===lvl?' selected':''}>${lvl}</option>`
+              ).join('')}
+            </select>
+          </td>
+        </tr>
+      </table>`;
+  }
 
+  // CC-42/43: module mode toggles + descriptions
   const { data: modules } = await _get('/security/modules').catch(() => ({ data: null }));
   const mEl = document.getElementById('modules-view');
   if (mEl && Array.isArray(modules)) {
+    const modes = ['enforce', 'monitor', 'disabled'];
+    const modeCls = { enforce: 'mode-enforce', monitor: 'mode-monitor', disabled: 'mode-disabled' };
     mEl.innerHTML = modules.map(m =>
-      `<div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:.5rem;font-size:12px;padding:.35rem .5rem;border-radius:4px;background:var(--surface-alt, rgba(255,255,255,0.03))">
-        <code style="color:var(--text)">${_esc(m.name)}</code>
-        <div style="display:flex;gap:.5rem;align-items:center">
-          <span class="badge badge-${m.available ? 'success' : 'muted'}">${m.available ? 'loaded' : 'unavailable'}</span>
-          ${m.available ? `<span style="color:var(--text-muted);font-size:11px">${_esc(m.mode || 'enforce')}</span>` : ''}
+      `<div style="margin-bottom:.75rem;padding:.5rem;border-radius:4px;background:var(--surface-alt, rgba(255,255,255,0.03));border:1px solid var(--border)">
+        <div style="display:flex;justify-content:space-between;align-items:center">
+          <div>
+            <code style="color:var(--text);font-size:12px">${_esc(m.name)}</code>
+            <span class="badge badge-${m.available ? 'success' : 'muted'}" style="margin-left:.5rem">${m.available ? 'loaded' : 'unavailable'}</span>
+          </div>
+          ${m.available
+            ? `<select class="${modeCls[m.mode] || 'mode-enforce'}"
+                style="font-size:11px;padding:2px 6px;border-radius:3px;border:1px solid var(--border)"
+                onchange="window._setModuleMode('${_esc(m.name)}',this.value,this)">
+                ${modes.map(md => `<option value="${md}"${m.mode===md?' selected':''}>${md}</option>`).join('')}
+              </select>`
+            : '<span style="font-size:11px;color:var(--text-muted)">unavailable</span>'}
         </div>
+        ${m.description ? `<div style="font-size:11px;color:var(--text-muted);margin-top:.25rem">${_esc(m.description)}</div>` : ''}
       </div>`
     ).join('');
   }
 }
+
+// CC-44: log level change
+window._setLogLevel = async function(level) {
+  const { ok, data } = await _put('/config/log-level', { level });
+  _toast(ok ? `Log level set to ${level}` : `Error: ${data?.message}`, ok ? 'success' : 'danger');
+};
+
+// CC-42: module mode toggle
+window._setModuleMode = async function(name, mode, selectEl) {
+  const { ok, data } = await _put(`/security/modules/${encodeURIComponent(name)}/mode`, { mode });
+  if (ok) {
+    const modeCls = { enforce: 'mode-enforce', monitor: 'mode-monitor', disabled: 'mode-disabled' };
+    selectEl.className = modeCls[mode] || 'mode-enforce';
+    _toast(`${name} → ${mode}`, 'success');
+  } else {
+    _toast(`Error: ${data?.message || 'failed'}`, 'danger');
+  }
+};
 
 window._reloadConfig = _loadConfig;
 
@@ -938,7 +1419,7 @@ document.addEventListener('DOMContentLoaded', async () => {
   _registerTab('services',     _loadServices);
   _registerTab('contributors', _loadContributors);
   _registerTab('egress',       _loadEgress);
-  _registerTab('logs',         _replayLogsTab);
+  _registerTab('logs',         _loadLogs);  // CC-30: fetch REST logs on tab open
   _registerTab('config',       _loadConfig);
 
   // Wire nav items
@@ -949,6 +1430,10 @@ document.addEventListener('DOMContentLoaded', async () => {
   // Severity filter change handler
   const sevFilter = document.getElementById('sev-filter');
   if (sevFilter) sevFilter.addEventListener('change', () => _renderSecurityTable());
+
+  // Log service filter — reload logs when changed
+  const logSvcFilter = document.getElementById('log-service-filter');
+  if (logSvcFilter) logSvcFilter.addEventListener('change', () => { if (_currentTab === 'logs') _loadLogs(); });
 
   // Show overview
   _showTab('overview');

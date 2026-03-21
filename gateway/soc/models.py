@@ -41,6 +41,7 @@ class ServiceStatus(str, Enum):
     RESTARTING = "restarting"
     UNHEALTHY = "unhealthy"
     UNKNOWN = "unknown"
+    NOT_INSTALLED = "not_installed"
 
 
 class HealthStatus(str, Enum):
@@ -157,6 +158,7 @@ class ServiceDescriptor(BaseModel):
     networks: List[str] = Field(default_factory=list)
     resource_usage: ResourceUsage = Field(default_factory=ResourceUsage)
     dependencies: List[str] = Field(default_factory=list)
+    is_internal: bool = False  # True = in-process gateway module, not a Docker container
 
 
 # ---------------------------------------------------------------------------

@@ -404,20 +404,45 @@ body {
   border: 1px solid rgba(88,166,255,0.2);
 }
 
-/* Score color classes */
+/* Score color classes — CC-22: 1/5 is orange (maturity gap), not red (emergency) */
 .score-0 { color: var(--text-muted); }
-.score-1 { color: var(--danger);  }
-.score-2 { color: var(--warning); }
-.score-3 { color: var(--amber);   }
-.score-4 { color: var(--success); }
-.score-5 { color: #2ea043;        }
+.score-1 { color: #e8862a;           }  /* orange — improvement needed */
+.score-2 { color: var(--warning);    }
+.score-3 { color: var(--amber);      }
+.score-4 { color: var(--success);    }
+.score-5 { color: #2ea043;           }
 
 .fill-0 { width:   0%; background: var(--border);   }
-.fill-1 { width:  20%; background: var(--danger);   }
-.fill-2 { width:  40%; background: var(--warning);  }
-.fill-3 { width:  60%; background: var(--amber);    }
-.fill-4 { width:  80%; background: var(--success);  }
-.fill-5 { width: 100%; background: #2ea043;          }
+.fill-1 { width:  20%; background: #e8862a;          }  /* orange */
+.fill-2 { width:  40%; background: var(--warning);   }
+.fill-3 { width:  60%; background: var(--amber);     }
+.fill-4 { width:  80%; background: var(--success);   }
+.fill-5 { width: 100%; background: #2ea043;           }
+
+/* Tooltip utility (CC-08) */
+.has-tooltip { position: relative; cursor: help; }
+.has-tooltip .tooltip-text {
+  display: none;
+  position: absolute;
+  bottom: calc(100% + 4px);
+  left: 50%;
+  transform: translateX(-50%);
+  background: var(--surface-alt);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  padding: .35rem .6rem;
+  font-size: 11px;
+  color: var(--text);
+  white-space: nowrap;
+  z-index: 100;
+  pointer-events: none;
+}
+.has-tooltip:hover .tooltip-text { display: block; }
+
+/* Module mode badge colors (CC-42) */
+.mode-enforce { color: var(--success); }
+.mode-monitor  { color: var(--warning); }
+.mode-disabled { color: var(--danger);  }
 
 /* ── Services grid ────────────────────────────────────── */
 

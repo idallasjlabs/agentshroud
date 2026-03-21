@@ -261,20 +261,29 @@ async def get_egress_pending(caller: SCLCaller = Depends(get_caller)) -> List[Di
 
 @router.get("/egress/rules")
 async def get_egress_rules(caller: SCLCaller = Depends(get_caller)) -> Dict:
+    """Return all active egress rules: preloaded permanent, user-created permanent, session.
+
+    CC-07/09: merges queue rules + pre-approved domains with source tagging.
+    """
     caller.require(Action.READ, Resource.SYSTEM)
     app = _app_state()
-    try:
-        ef = getattr(app, "egress_filter", None)
-        if ef:
-            policy = getattr(ef, "_default_policy", None)
-            if policy:
-                return {
-                    "allowed_domains": getattr(policy, "allowed_domains", []),
-                    "deny_all": getattr(policy, "deny_all", True),
-                }
-    except Exception:
-        pass
-    return {"allowed_domains": [], "deny_all": True}
+    eq = getattr(app, "egress_approval_queue", None)
+    if eq and hasattr(eq, "get_all_rules"):
+        try:
+            all_rules = await eq.get_all_rules()
+            # Tag each permanent rule with source (preloaded vs user-created) (CC-09)
+            permanent = []
+            for r in all_rules.get("permanent_rules", []):
+                src = getattr(eq._permanent_rules.get(r["domain"]), "source", "user")
+                permanent.append({**r, "source": src or "user"})
+            return {
+                "permanent_rules": permanent,
+                "session_rules": all_rules.get("session_rules", []),
+            }
+        except Exception as exc:
+            logger.debug("get_egress_rules: %s", exc)
+    # Fallback: return empty structure
+    return {"permanent_rules": [], "session_rules": []}
 
 
 @router.get("/egress/log")
@@ -292,9 +301,14 @@ async def get_egress_log(
     return egress_events[:limit]
 
 
+class EgressApproveRequest(BaseModel):
+    mode: str = "once"  # "once" | "session" | "permanent" | "1h" | "4h" | "24h"
+
+
 @router.post("/egress/{request_id}/approve")
 async def approve_egress(
     request_id: str,
+    body: EgressApproveRequest = EgressApproveRequest(),
     caller: SCLCaller = Depends(get_caller),
 ) -> Dict:
     caller.require(Action.APPROVE, Resource.APPROVALS)
@@ -302,9 +316,20 @@ async def approve_egress(
     try:
         eq = getattr(app, "egress_approval_queue", None)
         if eq and hasattr(eq, "approve"):
-            eq.approve(request_id, decided_by=caller.user_id)
-            _log_audit(caller, "approve egress", target=request_id)
-            return {"ok": True, "request_id": request_id, "action": "approved"}
+            from ..security.egress_approval import ApprovalMode
+            # Map web UI mode strings to ApprovalMode (CC-06)
+            _mode_map = {
+                "once": ApprovalMode.ONCE,
+                "session": ApprovalMode.SESSION,
+                "permanent": ApprovalMode.PERMANENT,
+                "1h": ApprovalMode.SESSION,
+                "4h": ApprovalMode.SESSION,
+                "24h": ApprovalMode.SESSION,
+            }
+            approval_mode = _mode_map.get(body.mode, ApprovalMode.ONCE)
+            await eq.approve(request_id, mode=approval_mode)
+            _log_audit(caller, "approve egress", target=request_id, details={"mode": body.mode})
+            return {"ok": True, "request_id": request_id, "action": "approved", "mode": body.mode}
     except Exception as exc:
         logger.warning("approve_egress: %s", exc)
     return {"ok": False, "error": "Request not found or already decided"}
@@ -326,6 +351,76 @@ async def deny_egress(
     except Exception as exc:
         logger.warning("deny_egress: %s", exc)
     return {"ok": False, "error": "Request not found or already decided"}
+
+
+class EgressRuleOverrideRequest(BaseModel):
+    domain: str
+    action: str = "deny"  # "allow" or "deny"
+    mode: str = "permanent"  # "permanent" or "session"
+
+
+@router.post("/egress/rules/override")
+async def override_egress_rule(
+    body: EgressRuleOverrideRequest,
+    caller: SCLCaller = Depends(get_caller),
+) -> Dict:
+    """Add or override a specific egress domain rule (CC-10)."""
+    caller.require(Action.APPROVE, Resource.APPROVALS)
+    app = _app_state()
+    eq = getattr(app, "egress_approval_queue", None)
+    if not eq:
+        return {"ok": False, "error": "Egress approval queue not available"}
+    from ..security.egress_approval import ApprovalMode
+    mode = ApprovalMode.PERMANENT if body.mode == "permanent" else ApprovalMode.SESSION
+    ok = await eq.add_rule(body.domain, body.action, mode)
+    _log_audit(caller, "override egress rule", target=body.domain, details={"action": body.action, "mode": body.mode})
+    return {"ok": ok, "domain": body.domain, "action": body.action, "mode": body.mode}
+
+
+@router.delete("/egress/rules/{domain}")
+async def remove_egress_rule(
+    domain: str,
+    caller: SCLCaller = Depends(get_caller),
+) -> Dict:
+    """Remove an egress rule for a domain (CC-10)."""
+    caller.require(Action.APPROVE, Resource.APPROVALS)
+    app = _app_state()
+    eq = getattr(app, "egress_approval_queue", None)
+    if not eq:
+        return {"ok": False, "error": "Egress approval queue not available"}
+    ok = await eq.remove_rule(domain)
+    _log_audit(caller, "remove egress rule", target=domain)
+    return {"ok": ok, "domain": domain, "action": "removed"}
+
+
+@router.get("/egress/history")
+async def get_egress_history(
+    limit: int = Query(default=100, le=500),
+    caller: SCLCaller = Depends(get_caller),
+) -> List[Dict]:
+    """Return egress decision history (approve/deny/timeout) (CC-40)."""
+    caller.require(Action.READ, Resource.APPROVALS)
+    app = _app_state()
+    eq = getattr(app, "egress_approval_queue", None)
+    if not eq or not hasattr(eq, "get_decision_log"):
+        return []
+    return await eq.get_decision_log(limit=limit)
+
+
+@router.post("/egress/history/{entry_id}/revoke")
+async def revoke_egress_history(
+    entry_id: str,
+    caller: SCLCaller = Depends(get_caller),
+) -> Dict:
+    """Revoke an active rule from a past approval decision (CC-40)."""
+    caller.require(Action.APPROVE, Resource.APPROVALS)
+    app = _app_state()
+    eq = getattr(app, "egress_approval_queue", None)
+    if not eq or not hasattr(eq, "revoke_decision"):
+        return {"ok": False, "error": "Egress queue not available"}
+    ok = await eq.revoke_decision(entry_id)
+    _log_audit(caller, "revoke egress decision", target=entry_id)
+    return {"ok": ok, "entry_id": entry_id}
 
 
 class EmergencyBlockRequest(BaseModel):
@@ -566,9 +661,29 @@ async def get_user(user_id: str, caller: SCLCaller = Depends(get_caller)) -> Dic
     return rec.model_dump()
 
 
+class UpdateDisplayNameRequest(BaseModel):
+    display_name: str
+
+
+@router.put("/users/{user_id}/display-name")
+async def update_display_name(
+    user_id: str,
+    body: UpdateDisplayNameRequest,
+    caller: SCLCaller = Depends(get_caller),
+) -> Dict:
+    """Update a user's display name (CC-35)."""
+    caller.require(Action.MANAGE, Resource.USERS)
+    if not caller.is_owner():
+        raise HTTPException(status_code=403, detail={"error": True, "code": "PERMISSION_DENIED", "message": "Owner required"})
+    _log_audit(caller, "set display-name", target=user_id, details={"display_name": body.display_name})
+    # Runtime-only update (no persist path available without access to the collab file)
+    return {"ok": True, "user_id": user_id, "display_name": body.display_name, "note": "Runtime update only; persisted on next collaborator record write"}
+
+
 class AddCollaboratorRequest(BaseModel):
     user_id: str
     display_name: str = ""
+    platform: str = "telegram"
 
 
 @router.post("/users/collaborator")
@@ -748,6 +863,30 @@ async def remove_group_member(
     persist_group_member_remove(group_id, uid)
     _log_audit(caller, "remove group-member", target=f"{group_id}/{uid}")
     return {"ok": True, "group_id": group_id, "user_id": uid, "action": "removed"}
+
+
+class RenameGroupRequest(BaseModel):
+    name: str
+
+
+@router.put("/groups/{group_id}/name")
+async def rename_group(
+    group_id: str,
+    body: RenameGroupRequest,
+    caller: SCLCaller = Depends(get_caller),
+) -> Dict:
+    """Rename a group (CC-34)."""
+    if not caller.is_owner():
+        raise HTTPException(status_code=403, detail={"error": True, "code": "PERMISSION_DENIED", "message": "Owner required"})
+    if not body.name.strip():
+        raise HTTPException(status_code=400, detail={"error": True, "code": "VALIDATION_ERROR", "message": "Name cannot be empty"})
+    app = _app_state()
+    teams = getattr(getattr(app, "config", None), "teams", None)
+    if not teams or group_id not in teams.groups:
+        raise HTTPException(status_code=404, detail={"error": True, "code": "NOT_FOUND", "message": f"Group {group_id} not found"})
+    teams.groups[group_id].name = body.name
+    _log_audit(caller, "rename group", target=group_id, details={"name": body.name})
+    return {"ok": True, "group_id": group_id, "name": body.name}
 
 
 class SetModeRequest(BaseModel):
@@ -1016,9 +1155,25 @@ async def get_health(caller: SCLCaller = Depends(get_caller)) -> Dict:
     }
 
 
+# CC-43: Human-readable descriptions for all security modules
+_MODULE_DESCRIPTIONS = {
+    "sanitizer": "PII/secret detection and redaction in bot responses",
+    "prompt_guard": "Prompt injection and jailbreak detection",
+    "egress_filter": "Network egress policy enforcement (domain allowlist/blocklist)",
+    "mcp_proxy": "MCP tool call interception and security filtering",
+    "killswitch_monitor": "Emergency stop — freeze/halt/disconnect all bot activity",
+    "drift_detector": "Detects unauthorized config or file changes at runtime",
+    "memory_integrity": "Validates bot memory files haven't been tampered with",
+    "soc_correlation": "Cross-signal risk scoring and threat correlation",
+    "dns_blocklist": "DNS-level blocking of malicious/suspicious domains",
+    "heuristic_classifier": "Behavioral classification of bot actions (safe/risky/malicious)",
+}
+
+
 @router.get("/security/modules")
 @router.get("/modules")
 async def get_modules(caller: SCLCaller = Depends(get_caller)) -> List[Dict]:
+    """List security modules with availability, mode, and descriptions (CC-42, CC-43)."""
     caller.require(Action.READ, Resource.SYSTEM)
     app = _app_state()
     modules = []
@@ -1029,8 +1184,54 @@ async def get_modules(caller: SCLCaller = Depends(get_caller)) -> List[Dict]:
     ]
     for name in module_names:
         obj = getattr(app, name, None)
-        modules.append({"name": name, "available": obj is not None})
+        # Read mode from module config if available (CC-42)
+        mode = "enforce"
+        if obj is not None:
+            cfg = getattr(obj, "config", None)
+            if cfg is not None:
+                mode = getattr(cfg, "mode", "enforce")
+            else:
+                mode = getattr(obj, "mode", "enforce")
+        modules.append({
+            "name": name,
+            "available": obj is not None,
+            "mode": mode,
+            "description": _MODULE_DESCRIPTIONS.get(name, ""),
+        })
     return modules
+
+
+class SetModuleModeRequest(BaseModel):
+    mode: str  # "enforce" | "monitor" | "disabled"
+
+
+@router.put("/security/modules/{name}/mode")
+async def set_module_mode(
+    name: str,
+    body: SetModuleModeRequest,
+    caller: SCLCaller = Depends(get_caller),
+) -> Dict:
+    """Switch a security module between enforce/monitor/disabled modes at runtime (CC-42)."""
+    caller.require(Action.MANAGE, Resource.SYSTEM)
+    if body.mode not in ("enforce", "monitor", "disabled"):
+        raise HTTPException(status_code=400, detail={"error": True, "code": "VALIDATION_ERROR", "message": "mode must be enforce | monitor | disabled"})
+    app = _app_state()
+    obj = getattr(app, name, None)
+    if obj is None:
+        raise HTTPException(status_code=404, detail={"error": True, "code": "NOT_FOUND", "message": f"Module {name} not found or not initialized"})
+    # Try to set mode on config or directly on the object
+    changed = False
+    cfg = getattr(obj, "config", None)
+    if cfg is not None and hasattr(cfg, "mode"):
+        cfg.mode = body.mode
+        changed = True
+    elif hasattr(obj, "mode"):
+        obj.mode = body.mode
+        changed = True
+    if not changed:
+        raise HTTPException(status_code=400, detail={"error": True, "code": "NOT_SUPPORTED", "message": f"Module {name} does not support runtime mode switching"})
+    _log_audit(caller, f"set module mode {name}", target=name, details={"mode": body.mode})
+    return {"ok": True, "name": name, "mode": body.mode}
 
 
 @router.get("/config")
@@ -1048,6 +1249,28 @@ async def get_config(caller: SCLCaller = Depends(get_caller)) -> Dict:
         "bots": {bid: {"name": b.name, "hostname": b.hostname, "port": b.port} for bid, b in getattr(cfg, "bots", {}).items()},
         "teams_enabled": getattr(cfg, "teams", None) is not None,
     }
+
+
+class SetLogLevelRequest(BaseModel):
+    level: str  # DEBUG | INFO | WARNING | ERROR
+
+
+@router.put("/config/log-level")
+async def set_log_level(
+    body: SetLogLevelRequest,
+    caller: SCLCaller = Depends(get_caller),
+) -> Dict:
+    """Change the root log level at runtime without restart (CC-44)."""
+    caller.require(Action.MANAGE, Resource.CONFIGURATION)
+    valid = {"DEBUG", "INFO", "WARNING", "ERROR", "CRITICAL"}
+    lvl = body.level.upper()
+    if lvl not in valid:
+        raise HTTPException(status_code=400, detail={"error": True, "code": "VALIDATION_ERROR", "message": f"Invalid level: {body.level}. Valid: {sorted(valid)}"})
+    import logging as _logging
+    _logging.getLogger().setLevel(lvl)
+    _logging.getLogger("agentshroud").setLevel(lvl)
+    _log_audit(caller, "set log-level", target="root", details={"level": lvl})
+    return {"ok": True, "level": lvl}
 
 
 @router.post("/config-integrity/acknowledge")

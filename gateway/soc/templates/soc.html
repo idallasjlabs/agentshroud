@@ -152,6 +152,10 @@
         </div>
         <div class="panel-body">
           <div id="sbom-panel" class="sbom-meta" style="color:var(--text-muted);font-size:12px">loading...</div>
+          <div id="sbom-packages" style="margin-top:1rem;display:none">
+            <input id="sbom-search" class="filter-select" placeholder="Search packages..." style="width:100%;margin-bottom:.5rem" oninput="window._filterSbomPackages(this.value)">
+            <div id="sbom-pkg-table"></div>
+          </div>
         </div>
       </div>
     </div>
@@ -188,7 +192,7 @@
               <li><a href="https://www.cisecurity.org/benchmark/docker" target="_blank" rel="noopener" style="color:var(--accent)">CIS Docker Benchmark v1.6.0</a> — Container host &amp; daemon hardening (Sections 1–6)</li>
               <li><a href="https://csrc.nist.gov/publications/detail/sp/800-190/final" target="_blank" rel="noopener" style="color:var(--accent)">NIST SP 800-190</a> — Application Container Security Guide (5 risk areas)</li>
               <li><a href="https://public.cyber.mil/stigs/downloads/" target="_blank" rel="noopener" style="color:var(--accent)">DISA Docker Enterprise STIG</a> — U.S. DoD STIG for container platforms</li>
-              <li><a href="https://www.iec.ch/homepage" target="_blank" rel="noopener" style="color:var(--accent)">IEC 62443</a> — Industrial cybersecurity (FR1–FR7, Security Levels SL 0–4)</li>
+              <li><a href="https://www.isa.org/standards-and-publications/isa-standards/isa-iec-62443-series-of-standards" target="_blank" rel="noopener" style="color:var(--accent)">IEC 62443</a> — Industrial cybersecurity (FR1–FR7, Security Levels SL 0–4)</li>
             </ul>
           </div>
 
@@ -336,17 +340,40 @@
         <div class="panel-body" style="padding:0">
           <table class="data-table">
             <thead>
-              <tr><th>ID</th><th>Domain</th><th>Port</th><th>Agent</th><th>Tool</th><th>Risk</th><th>Submitted</th><th>Actions</th></tr>
+              <tr><th>ID</th><th>Domain</th><th>Port</th><th>Agent</th><th>Tool</th><th>Risk</th><th>Submitted</th><th>Expires</th><th>Actions</th></tr>
             </thead>
             <tbody id="egress-tbody">
-              <tr><td colspan="8" style="color:var(--text-muted);text-align:center;padding:1rem">loading...</td></tr>
+              <tr><td colspan="9" style="color:var(--text-muted);text-align:center;padding:1rem">loading...</td></tr>
             </tbody>
           </table>
         </div>
       </div>
       <div class="panel">
-        <div class="panel-header">Egress Rules</div>
+        <div class="panel-header">
+          Egress Rules
+          <span style="font-size:11px;color:var(--text-muted);font-weight:400">
+            <span class="badge badge-success" style="margin-right:.25rem">GREEN</span>known-safe &nbsp;
+            <span class="badge badge-warning" style="margin-right:.25rem">YELLOW</span>unknown/standard-port &nbsp;
+            <span class="badge badge-danger" style="margin-right:.25rem">RED</span>IP/suspicious-TLD/non-standard-port
+          </span>
+        </div>
         <div class="panel-body" id="egress-rules" style="font-size:12px;color:var(--text-muted)">loading...</div>
+      </div>
+      <div class="panel">
+        <div class="panel-header">
+          Decision History
+          <button class="btn btn-sm" onclick="window._reloadEgress()">Refresh</button>
+        </div>
+        <div class="panel-body" style="padding:0">
+          <table class="data-table">
+            <thead>
+              <tr><th>Domain</th><th>Agent</th><th>Decision</th><th>Mode</th><th>Decided By</th><th>When</th><th>Actions</th></tr>
+            </thead>
+            <tbody id="egress-history-tbody">
+              <tr><td colspan="7" style="color:var(--text-muted);text-align:center;padding:1rem">loading...</td></tr>
+            </tbody>
+          </table>
+        </div>
       </div>
     </div>
 
@@ -355,6 +382,8 @@
       <h2>Logs</h2>
       <div class="toolbar">
         <select id="log-service-filter" class="filter-select">
+          <option value="agentshroud-gateway">Gateway</option>
+          <option value="agentshroud-bot">Bot</option>
           <option value="">All services</option>
         </select>
         <label class="live-label">
@@ -409,6 +438,45 @@
     <div class="modal-actions">
       <button class="btn" onclick="window._closeModal()">Cancel</button>
       <button class="btn btn-danger" id="modal-confirm-btn">Confirm</button>
+    </div>
+  </div>
+</div>
+
+<!-- ── Log viewer modal (CC-27) ──────────────────────────────── -->
+<div class="modal-overlay" id="log-modal" onclick="if(event.target===this)window._closeLogModal()">
+  <div class="modal" style="max-width:700px;width:90vw">
+    <h3 id="log-modal-title" style="color:var(--accent);margin-bottom:.5rem">Service Logs</h3>
+    <pre id="log-modal-body" style="background:var(--bg);border:1px solid var(--border);border-radius:4px;padding:.75rem;font-size:11px;max-height:60vh;overflow-y:auto;white-space:pre-wrap;word-break:break-all;color:var(--text-muted)">Loading...</pre>
+    <div class="modal-actions">
+      <button class="btn" onclick="window._closeLogModal()">Close</button>
+    </div>
+  </div>
+</div>
+
+<!-- ── Add Collaborator modal (CC-38) ─────────────────────────── -->
+<div class="modal-overlay" id="add-collab-modal" onclick="if(event.target===this)window._closeAddCollabModal()">
+  <div class="modal" style="max-width:460px">
+    <h3 style="color:var(--accent);margin-bottom:.75rem">Add Collaborator</h3>
+    <div style="display:flex;flex-direction:column;gap:.75rem">
+      <label style="display:flex;flex-direction:column;gap:.3rem;font-size:12px;color:var(--text-muted)">
+        Telegram / Slack User ID <span style="color:var(--danger)">*</span>
+        <input id="ac-user-id" class="filter-select" style="width:100%" placeholder="e.g. 123456789">
+      </label>
+      <label style="display:flex;flex-direction:column;gap:.3rem;font-size:12px;color:var(--text-muted)">
+        Display Name <span style="opacity:.5">(optional)</span>
+        <input id="ac-display-name" class="filter-select" style="width:100%" placeholder="e.g. Brett Galura">
+      </label>
+      <label style="display:flex;flex-direction:column;gap:.3rem;font-size:12px;color:var(--text-muted)">
+        Platform
+        <select id="ac-platform" class="filter-select" style="width:100%">
+          <option value="telegram">Telegram</option>
+          <option value="slack">Slack</option>
+        </select>
+      </label>
+    </div>
+    <div class="modal-actions">
+      <button class="btn" onclick="window._closeAddCollabModal()">Cancel</button>
+      <button class="btn btn-primary" onclick="window._submitAddCollab()">Add Collaborator</button>
     </div>
   </div>
 </div>
