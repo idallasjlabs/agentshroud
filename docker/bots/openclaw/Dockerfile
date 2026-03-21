@@ -79,8 +79,8 @@ RUN npm install -g openclaw@2026.3.13
 RUN echo "2026.3.13" > /app/.openclaw-image-version
 RUN npm cache clean --force
 # SECURITY: Route LLM API through AgentShroud gateway
-COPY docker/scripts/patch-anthropic-sdk.sh /tmp/patch-anthropic-sdk.sh
-RUN sh /tmp/patch-anthropic-sdk.sh && rm /tmp/patch-anthropic-sdk.sh
+COPY docker/scripts/patch-anthropic-sdk.sh /usr/local/bin/patch-anthropic-sdk.sh
+RUN sh /usr/local/bin/patch-anthropic-sdk.sh
 
 # Install Playwright for browser automation (browser-fetch skill)
 RUN npm install -g playwright@1.50.1 && \
@@ -88,11 +88,11 @@ RUN npm install -g playwright@1.50.1 && \
 
 # SECURITY: Route Telegram API through AgentShroud gateway
 # NOTE: placed after Playwright to preserve the expensive Playwright cache layer
-COPY docker/scripts/patch-telegram-sdk.sh /tmp/patch-telegram-sdk.sh
-RUN sh /tmp/patch-telegram-sdk.sh && rm /tmp/patch-telegram-sdk.sh
+COPY docker/scripts/patch-telegram-sdk.sh /usr/local/bin/patch-telegram-sdk.sh
+RUN sh /usr/local/bin/patch-telegram-sdk.sh
 # NOISE REDUCTION: Demote Slack pong timeout warnings to debug level
-COPY docker/scripts/patch-slack-sdk.sh /tmp/patch-slack-sdk.sh
-RUN sh /tmp/patch-slack-sdk.sh && rm /tmp/patch-slack-sdk.sh
+COPY docker/scripts/patch-slack-sdk.sh /usr/local/bin/patch-slack-sdk.sh
+RUN sh /usr/local/bin/patch-slack-sdk.sh
 # Install 1Password CLI for secure secret management (multi-arch)
 # R2-H1: GPG signature verification for supply chain integrity
 RUN curl -sS https://downloads.1password.com/linux/keys/1password.asc | \
@@ -188,7 +188,10 @@ RUN chmod +x /usr/local/bin/security-entrypoint.sh \
     /usr/local/bin/1password-skill \
     /usr/local/bin/entrypoint-agentshroud.sh \
     /usr/local/bin/init-openclaw-config.sh \
-    /usr/local/bin/mcp-proxy-wrapper.js
+    /usr/local/bin/mcp-proxy-wrapper.js \
+    /usr/local/bin/patch-anthropic-sdk.sh \
+    /usr/local/bin/patch-telegram-sdk.sh \
+    /usr/local/bin/patch-slack-sdk.sh
 
 # Copy documentation
 COPY docker/bot-capabilities.md /app/bot-capabilities.md
