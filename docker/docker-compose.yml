@@ -182,6 +182,7 @@ services:
       - TELEGRAM_API_BASE_URL=http://gateway:8080/telegram-api
       - SLACK_API_BASE_URL=http://gateway:8080/slack-api
       - AGENTSHROUD_SLACK_OWNER_USER_ID=U01J37F6YT0
+      - AGENTSHROUD_CONTROL_UI_ORIGINS=https://marvin.tail240ea8.ts.net:18790,http://marvin.tail240ea8.ts.net:18790
       - GATEWAY_HOST_PORT=8080
       - OPENCLAW_BOT_NAME=agentshroud_bot
       - OPENCLAW_BOT_EMAIL=agentshroud.ai@icloud.com
