@@ -313,7 +313,7 @@ async def lifespan(app: FastAPI):
         ssh_relay_hosts = [h.host for h in app_state.config.ssh.hosts.values()]
         http_proxy_policy = EgressPolicy(
             allowed_domains=list(default_policy.allowed_domains) + ssh_relay_hosts,
-            allowed_ports=[80, 443, 22],
+            allowed_ports=[80, 443, 22, 465, 587, 993],
             deny_all=default_policy.deny_all,
         )
         app_state.egress_filter.set_agent_policy("http_connect_proxy", http_proxy_policy)

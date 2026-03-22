@@ -126,7 +126,7 @@ class EgressFilterConfig:
     allowed_ips: List[str] = field(default_factory=list)
     
     # Allowed ports (empty list means all ports allowed)
-    allowed_ports: List[int] = field(default_factory=lambda: [80, 443])
+    allowed_ports: List[int] = field(default_factory=lambda: [80, 443, 465, 587, 993])
     
     # Whether to enable strict mode (denylist overrides allowlist)
     strict_mode: bool = True
