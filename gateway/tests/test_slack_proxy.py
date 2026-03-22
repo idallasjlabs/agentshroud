@@ -212,7 +212,9 @@ class TestOwnerChannelFiltering:
         assert proxy._is_owner_channel(_COLLAB_CHANNEL) is False
 
     def test_is_owner_channel_empty_owner_uid_always_false(self):
-        proxy = _make_proxy(owner_slack_user_id="")
+        # Patch env var to ensure no fallthrough when explicit empty string passed
+        with patch.dict("os.environ", {"AGENTSHROUD_SLACK_OWNER_USER_ID": ""}):
+            proxy = _make_proxy(owner_slack_user_id="")
         assert proxy._is_owner_channel(_OWNER_UID) is False
 
     @pytest.mark.asyncio
