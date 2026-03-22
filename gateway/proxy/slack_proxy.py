@@ -19,6 +19,7 @@ from __future__ import annotations
 import json
 import logging
 import os
+import secrets as _secrets
 
 from gateway.utils.secrets import read_secret as _read_secret_static
 from .collaborator_responses import COLLAB_OUTSIDE_SCOPE  # noqa: F401 — re-exported for Slack use
@@ -26,6 +27,10 @@ from .collaborator_responses import COLLAB_OUTSIDE_SCOPE  # noqa: F401 — re-ex
 logger = logging.getLogger("agentshroud.proxy.slack")
 
 SLACK_API_BASE = "https://slack.com/api"
+
+# Internal WebSocket relay host — bot connects here for Socket Mode relay.
+# Must match the gateway service hostname inside the Docker network.
+_GATEWAY_WS_HOST = os.environ.get("AGENTSHROUD_GATEWAY_WS_HOST", "gateway:8080")
 
 # Message methods whose text content must be scanned before forwarding to Slack
 _CONTENT_METHODS = frozenset({"chat.postMessage", "chat.update", "chat.meMessage"})
@@ -68,6 +73,11 @@ class SlackAPIProxy:
             or os.environ.get("AGENTSHROUD_SLACK_OWNER_USER_ID", "")
         )
 
+        # Relay tokens issued by _intercept_connections_open.
+        # Key: one-time token string; Value: real Slack WSS URL.
+        # Consumed (popped) by the /slack-ws-relay WebSocket endpoint.
+        self._relay_tokens: dict[str, str] = {}
+
         self._stats: dict[str, int] = {
             "outbound_forwarded": 0,
             "outbound_blocked": 0,
@@ -109,6 +119,11 @@ class SlackAPIProxy:
                     payload = {k: v[0] for k, v in qs.items()}
             except Exception as exc:
                 logger.warning(f"Slack proxy outbound: could not parse body for {method}: {exc}")
+
+        # Socket Mode relay: intercept apps.connections.open and rewrite the WSS URL
+        # so the bot's WebSocket connects through our relay instead of directly to Slack.
+        if method == "apps.connections.open":
+            return await self._intercept_connections_open(payload)
 
         # Content scan for message-sending methods (skipped for system notifications)
         if method in _CONTENT_METHODS and self.pipeline and not is_system:
@@ -218,6 +233,41 @@ class SlackAPIProxy:
         except Exception as exc:
             logger.error(f"Slack proxy: _call_slack_api {method} failed: {exc}")
             return {"ok": False, "error": str(exc)}
+
+    async def _intercept_connections_open(self, payload: dict) -> dict:
+        """Intercept apps.connections.open: rewrite the returned WSS URL to route
+        the bot's Socket Mode WebSocket through the gateway relay.
+
+        Flow:
+          1. Call Slack's real apps.connections.open with the app-level token.
+          2. Extract the WSS URL from the response.
+          3. Store it under a one-time relay token.
+          4. Replace the URL with ws://gateway:8080/slack-ws-relay?t=<token>.
+          5. Return the modified response to the bot.
+
+        On reconnect the bot calls apps.connections.open again, issuing a fresh token.
+        """
+        real_response = await self._call_slack_api("apps.connections.open", payload)
+        if not real_response.get("ok"):
+            return real_response
+        real_url = real_response.get("url", "")
+        if not real_url:
+            return real_response
+
+        token = _secrets.token_urlsafe(24)
+        self._relay_tokens[token] = real_url
+        logger.info("Slack relay: apps.connections.open intercepted — relay token issued")
+
+        relay_response = dict(real_response)
+        relay_response["url"] = f"ws://{_GATEWAY_WS_HOST}/slack-ws-relay?t={token}"
+        return relay_response
+
+    def consume_relay_token(self, token: str) -> str | None:
+        """Pop and return the real WSS URL for a relay token (one-time use).
+
+        Returns None if the token is unknown or already consumed.
+        """
+        return self._relay_tokens.pop(token, None)
 
     def get_stats(self) -> dict:
         return dict(self._stats)
