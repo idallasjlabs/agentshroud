@@ -254,6 +254,10 @@ class SecurityPipeline:
         prompt_protection=None,
         heuristic_classifier=None,
         clamav_scanner=None,
+        # C21 / C25 / C46 optional guards
+        context_integrity_scorer=None,
+        output_schema_enforcer=None,
+        envelope_signer=None,
     ):
         self.prompt_guard = prompt_guard
         self.pii_sanitizer = pii_sanitizer
@@ -269,6 +273,10 @@ class SecurityPipeline:
         self.prompt_protection = prompt_protection
         self.heuristic_classifier = heuristic_classifier
         self.clamav_scanner = clamav_scanner
+        # C21 / C25 / C46
+        self.context_integrity_scorer = context_integrity_scorer
+        self.output_schema_enforcer = output_schema_enforcer
+        self.envelope_signer = envelope_signer
         self.prompt_block_threshold = prompt_block_threshold
         # Owner exemption: owner messages are logged but never blocked
         self._owner_user_id = None
@@ -797,6 +805,19 @@ class SecurityPipeline:
                     result.audit_hash = entry.chain_hash
                     result.processing_time_ms = (time.time() - start) * 1000
                     return result
+
+        # Step 1.9: Output Schema Enforcement (C25)
+        if self.output_schema_enforcer and not result.blocked:
+            try:
+                schema_result = self.output_schema_enforcer.validate(result.sanitized_message)
+                if schema_result.violations:
+                    result.sanitized_message = schema_result.sanitized_output
+                    logger.info(
+                        "OutputSchemaEnforcer: %d violation(s) redacted from response",
+                        len(schema_result.violations),
+                    )
+            except Exception as exc:
+                logger.error("OutputSchemaEnforcer error: %s", exc)
 
         # Step 2: Egress filter
         if self.egress_filter and destination_urls:

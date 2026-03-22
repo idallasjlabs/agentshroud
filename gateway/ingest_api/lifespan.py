@@ -434,6 +434,33 @@ async def lifespan(app: FastAPI):
         _canary_tripwire = None
         _encoding_detector = None
 
+    # Initialize v0.9.0 prompt-injection hardening guards (C21, C25, C46)
+    try:
+        from ..security.context_integrity import ContextIntegrityScorer
+        _context_integrity_scorer = ContextIntegrityScorer(
+            audit_store=getattr(app_state, "audit_store", None)
+        )
+        logger.info("✓ ContextIntegrityScorer initialized")
+    except Exception as _ci_exc:
+        logger.error("✗ ContextIntegrityScorer: %s", _ci_exc)
+        _context_integrity_scorer = None
+
+    try:
+        from ..security.output_schema import OutputSchemaEnforcer
+        _output_schema_enforcer = OutputSchemaEnforcer()
+        logger.info("✓ OutputSchemaEnforcer initialized")
+    except Exception as _os_exc:
+        logger.error("✗ OutputSchemaEnforcer: %s", _os_exc)
+        _output_schema_enforcer = None
+
+    try:
+        from ..security.instruction_envelope import EnvelopeSigner
+        _envelope_signer = EnvelopeSigner()
+        logger.info("✓ EnvelopeSigner initialized")
+    except Exception as _es_exc:
+        logger.error("✗ EnvelopeSigner: %s", _es_exc)
+        _envelope_signer = None
+
     app_state.pipeline = SecurityPipeline(
         prompt_guard=app_state.prompt_guard,
         pii_sanitizer=app_state.sanitizer,
@@ -449,6 +476,9 @@ async def lifespan(app: FastAPI):
         audit_store=app_state.audit_store,
         prompt_protection=app_state.prompt_protection,
         heuristic_classifier=app_state.heuristic_classifier,
+        context_integrity_scorer=_context_integrity_scorer,
+        output_schema_enforcer=_output_schema_enforcer,
+        envelope_signer=_envelope_signer,
     )
     logger.info("Security pipeline initialized")
 

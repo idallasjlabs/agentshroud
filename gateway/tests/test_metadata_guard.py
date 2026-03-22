@@ -6,7 +6,9 @@
 from __future__ import annotations
 
 
-from gateway.security.metadata_guard import MetadataGuard
+import hashlib
+import pytest
+from gateway.security.metadata_guard import MetadataGuard, DocumentTag
 
 
 class TestMetadataGuard:
@@ -174,3 +176,47 @@ class TestMetadataGuard:
             sanitized = self.guard.sanitize_filename(filename)
             assert char not in sanitized
             assert sanitized == "testfile.txt"
+
+
+# ── C18: Document File Tagging tests ─────────────────────────────────────────
+
+class TestDocumentTagging:
+    @pytest.fixture
+    def guard(self):
+        return MetadataGuard()
+
+    def test_document_tag_creation(self, guard):
+        content = b"PDF content here"
+        tag = guard.tag_document("report.pdf", content, source="upload")
+        assert isinstance(tag, DocumentTag)
+        assert tag.filename == "report.pdf"
+        assert tag.source == "upload"
+        assert tag.trust_level == "UNTRUSTED"
+        assert tag.size_bytes == len(content)
+        assert len(tag.content_hash) == 64
+
+    def test_document_tag_lookup_by_hash(self, guard):
+        content = b"some binary data"
+        tag = guard.tag_document("file.bin", content, source="tool_fetch")
+        expected_hash = hashlib.sha256(content).hexdigest()
+        assert tag.content_hash == expected_hash
+        retrieved = guard.get_document_tag(expected_hash)
+        assert retrieved is not None
+        assert retrieved.filename == "file.bin"
+
+    def test_document_tag_untrusted_source(self, guard):
+        content = b"web fetched content"
+        tag = guard.tag_document("page.html", content, source="web_fetch", trust_level="UNTRUSTED")
+        assert tag.trust_level == "UNTRUSTED"
+        assert tag.source == "web_fetch"
+
+    def test_get_document_tag_unknown_hash_returns_none(self, guard):
+        result = guard.get_document_tag("0" * 64)
+        assert result is None
+
+    def test_tag_document_different_content_different_hash(self, guard):
+        content_a = b"document A"
+        content_b = b"document B"
+        tag_a = guard.tag_document("a.txt", content_a)
+        tag_b = guard.tag_document("b.txt", content_b)
+        assert tag_a.content_hash != tag_b.content_hash

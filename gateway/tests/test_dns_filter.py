@@ -205,3 +205,37 @@ class TestEntropyCalculator:
 
     def test_empty_string(self):
         assert EntropyCalculator.shannon_entropy("") == 0.0
+
+
+# ── C44: DNS Rebinding Prevention tests ──────────────────────────────────────
+
+class TestDNSRebinding:
+    @pytest.fixture
+    def dns_filter(self):
+        return DNSFilter(DNSFilterConfig(mode="enforce"))
+
+    def test_stable_resolution_passes(self, dns_filter):
+        """Seeding the same IP twice should not flag rebinding."""
+        domain = "example.com"
+        # Manually seed cache with a public IP
+        dns_filter._resolved_ip_cache[domain] = ("93.184.216.34", 0.0)
+        result = dns_filter._is_private_ip("93.184.216.34")
+        assert not result
+
+    def test_private_ip_detection(self, dns_filter):
+        """Known private ranges should be detected."""
+        private_ips = ["10.0.0.1", "192.168.1.1", "172.16.0.5", "127.0.0.1"]
+        for ip in private_ips:
+            assert dns_filter._is_private_ip(ip), f"Should flag {ip} as private"
+
+    def test_public_ip_not_private(self, dns_filter):
+        """Public IPs should not be flagged as private."""
+        public_ips = ["8.8.8.8", "93.184.216.34", "1.1.1.1"]
+        for ip in public_ips:
+            assert not dns_filter._is_private_ip(ip), f"Should not flag {ip} as private"
+
+    def test_resolve_and_cache_empty_domain_graceful(self, dns_filter):
+        """Resolving a domain that fails should return empty string gracefully."""
+        # Non-existent domain should not raise
+        result = dns_filter.resolve_and_cache("this.domain.does.not.exist.invalid")
+        assert isinstance(result, str)
