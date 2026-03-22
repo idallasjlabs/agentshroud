@@ -188,6 +188,14 @@ if [ -f "${DEFAULTS_DIR}/workspace/SOUL.md" ]; then
   echo "[init] ✓ Refreshed SOUL.md (anti-hallucination rules for main agent)"
 fi
 
+# DEVELOPER.md: always overwrite — development context (TDD, SDLC, skill/agent lookup).
+# Gives the bot the same development standards as Claude Code when working on the repo.
+# Must match repo on every restart so changes baked into the image take effect immediately.
+if [ -f "${DEFAULTS_DIR}/workspace/DEVELOPER.md" ]; then
+  cp "${DEFAULTS_DIR}/workspace/DEVELOPER.md" "${WORKSPACE_DIR}/DEVELOPER.md"
+  echo "[init] ✓ Refreshed DEVELOPER.md (development context)"
+fi
+
 # IDENTITY.md: seed only if missing or still the unfilled OpenClaw default.
 IDENTITY_FILE="${WORKSPACE_DIR}/IDENTITY.md"
 if [ ! -f "${IDENTITY_FILE}" ] || grep -q "_Fill this in during your first conversation_" "${IDENTITY_FILE}" 2>/dev/null; then

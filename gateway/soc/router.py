@@ -729,19 +729,21 @@ async def revoke_collaborator(
 @router.get("/collaborators/activity")
 async def get_collaborator_activity(
     since: float = Query(default=0.0),
-    limit: int = Query(default=500, le=1000),
+    limit: int = Query(default=0, le=10000),
+    offset: int = Query(default=0, ge=0),
     user_id: Optional[str] = Query(default=None),
     direction: Optional[str] = Query(default=None),
     search: Optional[str] = Query(default=None),
     caller: SCLCaller = Depends(get_caller),
 ) -> JSONResponse:
-    """Return collaborator activity log with timestamps, source, direction, and message previews."""
+    """Return full collaborator activity log. limit=0 returns all entries."""
     caller.require(Action.READ, Resource.USERS)
     app = _app_state()
     tracker = getattr(app, "collaborator_tracker", None)
     if not tracker:
-        return JSONResponse(content={"entries": [], "total": 0, "tracker_available": False})
-    entries = tracker.get_activity(since=since, limit=limit)
+        return JSONResponse(content={"entries": [], "total": 0, "total_unfiltered": 0, "tracker_available": False})
+    entries = tracker.get_activity(since=since, limit=0)  # fetch all, filter below
+    total_unfiltered = len(entries)
     if user_id:
         entries = [e for e in entries if e.get("user_id") == user_id]
     if direction in ("inbound", "outbound"):
@@ -755,7 +757,19 @@ async def get_collaborator_activity(
             or search_lower in (e.get("message_preview") or "").lower()
             or search_lower in (e.get("source") or "").lower()
         ]
-    return JSONResponse(content={"entries": entries, "total": len(entries), "tracker_available": True})
+    total_filtered = len(entries)
+    if offset:
+        entries = entries[offset:]
+    if limit:
+        entries = entries[:limit]
+    return JSONResponse(content={
+        "entries": entries,
+        "total": total_filtered,
+        "total_unfiltered": total_unfiltered,
+        "offset": offset,
+        "limit": limit,
+        "tracker_available": True,
+    })
 
 
 class SetRoleRequest(BaseModel):
