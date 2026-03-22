@@ -833,11 +833,56 @@ function _renderGroups(groups) {
 }
 
 window._showContribTab = function(name, el) {
-  document.getElementById('contribs-users').style.display  = name === 'users'  ? '' : 'none';
-  document.getElementById('contribs-groups').style.display = name === 'groups' ? '' : 'none';
+  document.getElementById('contribs-users').style.display    = name === 'users'    ? '' : 'none';
+  document.getElementById('contribs-groups').style.display   = name === 'groups'   ? '' : 'none';
+  document.getElementById('contribs-activity').style.display = name === 'activity' ? '' : 'none';
   document.querySelectorAll('.tab-bar .tab').forEach(t => t.classList.remove('active'));
   if (el) el.classList.add('active');
+  if (name === 'activity') window._loadActivityLog();
 };
+
+// ── Activity log ────────────────────────────────────────────────────────────
+
+window._loadActivityLog = async function() {
+  const filterEl = document.getElementById('activity-user-filter');
+  const userId = filterEl ? filterEl.value : '';
+  const url = '/collaborators/activity?limit=100' + (userId ? `&user_id=${encodeURIComponent(userId)}` : '');
+  const { ok, data } = await _get(url);
+  const tbody = document.getElementById('activity-tbody');
+  if (!tbody) return;
+  if (!ok || !Array.isArray(data?.entries) || data.entries.length === 0) {
+    tbody.innerHTML = '<tr><td colspan="6" style="color:var(--text-muted);text-align:center;padding:1rem">No activity recorded yet.</td></tr>';
+    return;
+  }
+  // Rebuild user filter options preserving current selection
+  if (filterEl) {
+    const currentVal = filterEl.value;
+    const userIds = [...new Set(data.entries.map(e => e.user_id).filter(Boolean))];
+    filterEl.innerHTML = '<option value="">All Users</option>' +
+      userIds.map(uid => `<option value="${_esc(uid)}"${uid === currentVal ? ' selected' : ''}>${_esc(uid)}</option>`).join('');
+  }
+  _renderActivityLog(data.entries);
+};
+
+function _renderActivityLog(entries) {
+  const tbody = document.getElementById('activity-tbody');
+  if (!tbody) return;
+  tbody.innerHTML = entries.map(e => {
+    const ts = e.timestamp ? new Date(e.timestamp * 1000).toLocaleString() : '—';
+    const dirBadge = e.direction === 'inbound'
+      ? '<span class="badge badge-info">in</span>'
+      : '<span class="badge badge-warning">out</span>';
+    const srcBadge = `<span class="badge badge-info">${_esc(e.source || '—')}</span>`;
+    return `<tr>
+      <td style="white-space:nowrap;font-size:11px">${_esc(ts)}</td>
+      <td style="font-size:11px;font-family:monospace">${_esc(e.user_id || '—')}</td>
+      <td>${_esc(e.username || '—')}</td>
+      <td>${dirBadge}</td>
+      <td>${srcBadge}</td>
+      <td style="font-size:11px;max-width:300px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap" title="${_esc(e.message_preview || '')}">${_esc(e.message_preview || '—')}</td>
+    </tr>`;
+  }).join('');
+}
 
 // CC-38: real add-collaborator modal instead of Telegram toast
 window._showAddCollabForm = function() {
