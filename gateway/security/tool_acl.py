@@ -22,6 +22,7 @@ Integrates with:
 from __future__ import annotations
 
 import logging
+import time
 from dataclasses import dataclass, field
 from typing import Dict, List, Optional, Tuple, TYPE_CHECKING
 
@@ -119,6 +120,29 @@ COLLABORATOR_ALLOWED_TOOLS: frozenset[str] = frozenset({
 
 
 # ---------------------------------------------------------------------------
+# C35: Per-Tool Rate Limits
+# ---------------------------------------------------------------------------
+
+@dataclass
+class ToolRateLimit:
+    """Per-tool call rate limit configuration."""
+    tool_name: str
+    max_calls_per_minute: int
+    max_calls_per_hour: int
+
+
+_DEFAULT_TOOL_RATE_LIMITS: Dict[str, ToolRateLimit] = {
+    "execute_command": ToolRateLimit("execute_command", 5, 30),
+    "exec":            ToolRateLimit("exec", 5, 30),
+    "bash":            ToolRateLimit("bash", 5, 30),
+    "delete_file":     ToolRateLimit("delete_file", 3, 15),
+    "delete":          ToolRateLimit("delete", 3, 15),
+    "write_file":      ToolRateLimit("write_file", 10, 60),
+    "write":           ToolRateLimit("write", 10, 60),
+}
+
+
+# ---------------------------------------------------------------------------
 # Config
 # ---------------------------------------------------------------------------
 
@@ -168,6 +192,8 @@ class ToolACLEnforcer:
     def __init__(self, acl_config: Optional[ToolACLConfig] = None, rbac_config: Optional["RBACConfig"] = None):
         self._acl = acl_config or ToolACLConfig()
         self._rbac = rbac_config
+        # C35: sliding window call-time store  { user_id: { tool_name: [timestamps] } }
+        self._tool_call_times: Dict[str, Dict[str, List[float]]] = {}
 
     def can_use_tool(self, user_id: str, tool_name: str) -> Tuple[bool, str]:
         """Check whether user_id may invoke the named tool.
@@ -249,6 +275,40 @@ class ToolACLEnforcer:
             return sorted(self._acl.effective_private)
 
         return sorted(self._acl.effective_private | self._acl.effective_admin)
+
+    # ── C35: Per-Tool Rate Limiting ───────────────────────────────────────────
+
+    def check_tool_rate_limit(self, user_id: str, tool_name: str) -> bool:
+        """Return True if the user is within rate limits for the given tool.
+
+        Side-effect: records the call timestamp on success (returns True).
+        """
+        limit = _DEFAULT_TOOL_RATE_LIMITS.get(tool_name.lower())
+        if limit is None:
+            return True  # No limit defined for this tool
+
+        now = time.time()
+        user_calls = self._tool_call_times.setdefault(user_id, {})
+        times = user_calls.get(tool_name.lower(), [])
+
+        # Drop calls older than 1 hour
+        times = [t for t in times if now - t < 3600]
+
+        per_minute = sum(1 for t in times if now - t < 60)
+        if per_minute >= limit.max_calls_per_minute or len(times) >= limit.max_calls_per_hour:
+            logger.warning(
+                "Tool rate limit hit: user=%s tool=%s per_min=%d/%d per_hr=%d/%d",
+                user_id, tool_name, per_minute, limit.max_calls_per_minute,
+                len(times), limit.max_calls_per_hour,
+            )
+            user_calls[tool_name.lower()] = times
+            return False
+
+        times.append(now)
+        user_calls[tool_name.lower()] = times
+        return True
+
+    # ─────────────────────────────────────────────────────────────────────────
 
     # ------------------------------------------------------------------
     # Helpers

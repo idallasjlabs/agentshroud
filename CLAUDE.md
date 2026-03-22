@@ -350,26 +350,6 @@ All automation must be:
 3. **Security-first** — validate inputs, parameterize queries, no secrets in code
 4. **Production-ready** — error handling, logging, rollback procedures
 
-### No Security Theater (NON-NEGOTIABLE)
-
-1. **NEVER write stub/fake/placeholder security scan results.** If a scanner hasn't
-   run, the dashboard must show "not_run" or "pending" — never fabricated clean results.
-2. **NEVER install a security binary just for scorecard points.** Every binary in the
-   image must be wired into either the runtime pipeline, a scheduled scan, or CI.
-   If it's not wired, don't install it.
-3. **NEVER seed evidence files to make compliance checks pass.** Empty `.touch()` files
-   that exist solely to satisfy `Path.exists()` checks in the scorecard are fraud.
-4. **Scorecard scores must reflect REAL scan results with valid timestamps (<48h).**
-   A missing or stale report = score 1 (tool installed but not producing results).
-5. **Every security tool must have one of these statuses, honestly reported:**
-   - ENFORCING: Actively blocking/allowing in the message pipeline or network path
-   - MONITORING: Producing real alerts/reports that feed the SOC dashboard
-   - SCHEDULED: Running on a cron/timer producing timestamped reports
-   - CI-ONLY: Runs in GitHub Actions (not runtime) — labeled as such
-   - NOT WIRED: Installed but not connected — this is a BUG to fix, not a feature
-6. **If a tool cannot be made operational, remove it from the image.** A dead binary
-   is worse than no binary — it creates a false sense of security.
-
 ### Data Engineering
 
 1. **No schema drift** in Parquet outputs

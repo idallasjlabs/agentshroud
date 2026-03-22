@@ -729,8 +729,10 @@ async def revoke_collaborator(
 @router.get("/collaborators/activity")
 async def get_collaborator_activity(
     since: float = Query(default=0.0),
-    limit: int = Query(default=100, le=500),
+    limit: int = Query(default=500, le=1000),
     user_id: Optional[str] = Query(default=None),
+    direction: Optional[str] = Query(default=None),
+    search: Optional[str] = Query(default=None),
     caller: SCLCaller = Depends(get_caller),
 ) -> JSONResponse:
     """Return collaborator activity log with timestamps, source, direction, and message previews."""
@@ -738,11 +740,22 @@ async def get_collaborator_activity(
     app = _app_state()
     tracker = getattr(app, "collaborator_tracker", None)
     if not tracker:
-        return JSONResponse(content={"entries": [], "total": 0})
+        return JSONResponse(content={"entries": [], "total": 0, "tracker_available": False})
     entries = tracker.get_activity(since=since, limit=limit)
     if user_id:
         entries = [e for e in entries if e.get("user_id") == user_id]
-    return JSONResponse(content={"entries": entries, "total": len(entries)})
+    if direction in ("inbound", "outbound"):
+        entries = [e for e in entries if e.get("direction") == direction]
+    if search:
+        search_lower = search.lower()
+        entries = [
+            e for e in entries
+            if search_lower in (e.get("user_id") or "").lower()
+            or search_lower in (e.get("username") or "").lower()
+            or search_lower in (e.get("message_preview") or "").lower()
+            or search_lower in (e.get("source") or "").lower()
+        ]
+    return JSONResponse(content={"entries": entries, "total": len(entries), "tracker_available": True})
 
 
 class SetRoleRequest(BaseModel):
