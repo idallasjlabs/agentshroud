@@ -36,6 +36,10 @@ class SlackAPIProxy:
 
     Outbound flow (bot-initiated Slack API call):
         Bot -> POST /slack-api/<method> -> pipeline.process_outbound -> slack.com/api/<method>
+
+    Trust model:
+        Owner channel (DM to owner's Slack User ID): pipeline with FULL trust.
+        All other channels: pre-check + pipeline with UNTRUSTED trust + fail-closed.
     """
 
     def __init__(
@@ -44,6 +48,7 @@ class SlackAPIProxy:
         middleware_manager=None,
         sanitizer=None,
         tracker=None,
+        owner_slack_user_id: str = "",
     ):
         self.pipeline = pipeline
         self.middleware_manager = middleware_manager
@@ -56,10 +61,27 @@ class SlackAPIProxy:
             or _read_secret_static("slack_bot_token")
         )
 
+        # Owner's Slack User ID (e.g. "U01J37F6YT0") — messages to this channel
+        # receive FULL trust; all other channels are treated as UNTRUSTED collaborators.
+        self._owner_slack_user_id = (
+            owner_slack_user_id
+            or os.environ.get("AGENTSHROUD_SLACK_OWNER_USER_ID", "")
+        )
+
         self._stats: dict[str, int] = {
             "outbound_forwarded": 0,
             "outbound_blocked": 0,
         }
+
+    def _is_owner_channel(self, channel: str) -> bool:
+        """Return True if channel is a DM with the configured owner.
+
+        In Slack, DM channels for a specific user are addressed by the user's
+        member ID (e.g. "U01J37F6YT0").  Owner messages use that ID directly.
+        """
+        if not self._owner_slack_user_id or not channel:
+            return False
+        return channel == self._owner_slack_user_id
 
     async def proxy_outbound(self, method: str, body: bytes, content_type: str, is_system: bool = False) -> dict:
         """Proxy a bot Slack Web API call through the security pipeline.
@@ -90,26 +112,65 @@ class SlackAPIProxy:
 
         # Content scan for message-sending methods (skipped for system notifications)
         if method in _CONTENT_METHODS and self.pipeline and not is_system:
+            channel = payload.get("channel", "")
+            is_owner = self._is_owner_channel(channel)
             text = payload.get("text", "") or payload.get("blocks", "")
             if isinstance(text, (list, dict)):
                 text = json.dumps(text)
             if text:
+                # Pre-pipeline fast-path: reject obvious infrastructure leakage to
+                # non-owner channels before running the full pipeline.
+                if not is_owner:
+                    from .telegram_proxy import TelegramAPIProxy as _TelegramAPIProxy
+                    if _TelegramAPIProxy._contains_high_risk_collaborator_leakage(str(text)):
+                        logger.warning(
+                            "Slack outbound BLOCKED: high-risk leakage detected for non-owner channel %s",
+                            channel,
+                        )
+                        self._stats["outbound_blocked"] += 1
+                        return {"ok": False, "error": "content_policy_violation"}
+
+                trust_level = "FULL" if is_owner else "UNTRUSTED"
                 try:
                     result = await self.pipeline.process_outbound(
                         response=str(text),
                         agent_id="default",
                         metadata={"source": "slack_outbound", "method": method},
+                        user_trust_level=trust_level,
                     )
                     if result.blocked:
                         self._stats["outbound_blocked"] += 1
                         logger.warning(
-                            f"Slack proxy: outbound {method} BLOCKED: {result.block_reason}"
+                            "Slack proxy: outbound %s BLOCKED: %s", method, result.block_reason
                         )
                         return {"ok": False, "error": "content_policy_violation"}
+                    # For non-owner channels: block if the info filter redacted anything.
+                    # Sending a sanitized (redacted) response to a collaborator confirms
+                    # that the original response contained infrastructure data.
+                    if not is_owner:
+                        try:
+                            rc = getattr(result, "info_filter_redaction_count", None)
+                            if isinstance(rc, int) and rc > 0:
+                                self._stats["outbound_blocked"] += 1
+                                logger.warning(
+                                    "Slack proxy: outbound %s BLOCKED: info redaction (count=%d) for non-owner",
+                                    method, rc,
+                                )
+                                return {"ok": False, "error": "content_policy_violation"}
+                        except Exception:
+                            pass
                     if result.sanitized_message and "text" in payload:
                         payload["text"] = result.sanitized_message
                 except Exception as exc:
-                    logger.error(f"Slack proxy: pipeline outbound error: {exc}")
+                    if not is_owner:
+                        # Fail-closed: block non-owner delivery on any pipeline error.
+                        self._stats["outbound_blocked"] += 1
+                        logger.error(
+                            "Slack proxy: pipeline error for non-owner channel %s — blocking: %s",
+                            channel, exc,
+                        )
+                        return {"ok": False, "error": "content_policy_violation"}
+                    logger.error("Slack proxy: pipeline outbound error (owner channel): %s", exc)
 
         # Forward to Slack API
         response = await self._call_slack_api(method, payload)
