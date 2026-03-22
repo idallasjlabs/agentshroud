@@ -7,6 +7,8 @@ services:
   gateway:
     ports: !override
       - "127.0.0.1:8080:8080"
+    environment:
+      - AGENTSHROUD_COMPOSE_HOST=trillian
     mem_limit: 512m
     memswap_limit: 512m
     cpus: 0.5
@@ -33,6 +35,7 @@ services:
       # Route Telegram API through gateway
       - TELEGRAM_API_BASE_URL=http://gateway:8080/telegram-api
       - TELEGRAM_BOT_TOKEN_FILE=/run/secrets/telegram_bot_token
+      - AGENTSHROUD_CONTROL_UI_ORIGINS=https://trillian.tail240ea8.ts.net:18789,http://trillian.tail240ea8.ts.net:18789
     secrets:
       - gateway_password
       - telegram_bot_token
