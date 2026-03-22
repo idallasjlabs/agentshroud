@@ -12,10 +12,10 @@ from gateway.proxy.slack_proxy import SlackAPIProxy
 
 # ─── Helpers ─────────────────────────────────────────────────────────────────
 
-def _make_proxy(pipeline=None) -> SlackAPIProxy:
+def _make_proxy(pipeline=None, owner_slack_user_id: str = "") -> SlackAPIProxy:
     """Create a SlackAPIProxy with test credentials and no real I/O."""
     with patch("gateway.proxy.slack_proxy._read_secret_static", return_value=""):
-        proxy = SlackAPIProxy(pipeline=pipeline)
+        proxy = SlackAPIProxy(pipeline=pipeline, owner_slack_user_id=owner_slack_user_id)
     proxy._bot_token = "xoxb-test-token"
     return proxy
 
@@ -192,3 +192,170 @@ class TestWebhookReceiverSlackExtraction:
         payload = {"message": {"from": {"id": 12345}, "text": "hello"}}
         uid = WebhookReceiver._extract_user_id(payload, "telegram")
         assert uid == "12345"
+
+
+# ─── Owner vs Collaborator Channel Filtering ─────────────────────────────────
+
+_OWNER_UID = "U01J37F6YT0"
+_COLLAB_CHANNEL = "C_OTHER_CHANNEL"
+
+
+class TestOwnerChannelFiltering:
+    """P0 security: Slack outbound must differentiate owner vs collaborator channels."""
+
+    def test_is_owner_channel_matches_owner_uid(self):
+        proxy = _make_proxy(owner_slack_user_id=_OWNER_UID)
+        assert proxy._is_owner_channel(_OWNER_UID) is True
+
+    def test_is_owner_channel_no_match_for_other(self):
+        proxy = _make_proxy(owner_slack_user_id=_OWNER_UID)
+        assert proxy._is_owner_channel(_COLLAB_CHANNEL) is False
+
+    def test_is_owner_channel_empty_owner_uid_always_false(self):
+        proxy = _make_proxy(owner_slack_user_id="")
+        assert proxy._is_owner_channel(_OWNER_UID) is False
+
+    @pytest.mark.asyncio
+    async def test_owner_channel_uses_full_trust(self):
+        """Owner channel: pipeline called with user_trust_level=FULL, message forwarded."""
+        pipeline = MagicMock()
+        result = MagicMock()
+        result.blocked = False
+        result.sanitized_message = None
+        pipeline.process_outbound = AsyncMock(return_value=result)
+
+        proxy = _make_proxy(pipeline=pipeline, owner_slack_user_id=_OWNER_UID)
+        proxy._call_slack_api = AsyncMock(return_value={"ok": True})
+
+        body = json.dumps({"channel": _OWNER_UID, "text": "owner reply"}).encode()
+        resp = await proxy.proxy_outbound("chat.postMessage", body, "application/json")
+
+        assert resp == {"ok": True}
+        call_kwargs = pipeline.process_outbound.call_args
+        assert call_kwargs.kwargs.get("user_trust_level") == "FULL" or \
+               (call_kwargs.args and False)  # kwargs form
+
+    @pytest.mark.asyncio
+    async def test_non_owner_high_risk_leakage_blocked_before_pipeline(self):
+        """Non-owner channel: high-risk leakage detected before pipeline → blocked."""
+        pipeline = MagicMock()
+        pipeline.process_outbound = AsyncMock()
+
+        proxy = _make_proxy(pipeline=pipeline, owner_slack_user_id=_OWNER_UID)
+        proxy._call_slack_api = AsyncMock(return_value={"ok": True})
+
+        with patch(
+            "gateway.proxy.telegram_proxy.TelegramAPIProxy._contains_high_risk_collaborator_leakage",
+            return_value=True,
+        ):
+            body = json.dumps({"channel": _COLLAB_CHANNEL, "text": "contains 192.168.7.25"}).encode()
+            resp = await proxy.proxy_outbound("chat.postMessage", body, "application/json")
+
+        assert resp["ok"] is False
+        assert resp["error"] == "content_policy_violation"
+        pipeline.process_outbound.assert_not_called()
+        proxy._call_slack_api.assert_not_called()
+        assert proxy.get_stats()["outbound_blocked"] == 1
+
+    @pytest.mark.asyncio
+    async def test_non_owner_tailscale_hostname_blocked(self):
+        """Non-owner channel: Tailscale hostname triggers leakage pre-check → blocked."""
+        pipeline = MagicMock()
+        pipeline.process_outbound = AsyncMock()
+
+        proxy = _make_proxy(pipeline=pipeline, owner_slack_user_id=_OWNER_UID)
+        proxy._call_slack_api = AsyncMock(return_value={"ok": True})
+
+        with patch(
+            "gateway.proxy.telegram_proxy.TelegramAPIProxy._contains_high_risk_collaborator_leakage",
+            return_value=True,
+        ):
+            body = json.dumps({"channel": _COLLAB_CHANNEL, "text": "raspberrypi.tail240ea8.ts.net"}).encode()
+            resp = await proxy.proxy_outbound("chat.postMessage", body, "application/json")
+
+        assert resp["ok"] is False
+        assert resp["error"] == "content_policy_violation"
+        pipeline.process_outbound.assert_not_called()
+
+    @pytest.mark.asyncio
+    async def test_non_owner_pipeline_exception_fail_closed(self):
+        """Non-owner channel: pipeline exception → blocked (fail-closed)."""
+        pipeline = MagicMock()
+        pipeline.process_outbound = AsyncMock(side_effect=RuntimeError("pipeline fault"))
+
+        proxy = _make_proxy(pipeline=pipeline, owner_slack_user_id=_OWNER_UID)
+        proxy._call_slack_api = AsyncMock(return_value={"ok": True})
+
+        with patch(
+            "gateway.proxy.telegram_proxy.TelegramAPIProxy._contains_high_risk_collaborator_leakage",
+            return_value=False,
+        ):
+            body = json.dumps({"channel": _COLLAB_CHANNEL, "text": "safe text"}).encode()
+            resp = await proxy.proxy_outbound("chat.postMessage", body, "application/json")
+
+        assert resp["ok"] is False
+        assert resp["error"] == "content_policy_violation"
+        proxy._call_slack_api.assert_not_called()
+
+    @pytest.mark.asyncio
+    async def test_owner_pipeline_exception_fail_open(self):
+        """Owner channel: pipeline exception → logged but message still forwarded."""
+        pipeline = MagicMock()
+        pipeline.process_outbound = AsyncMock(side_effect=RuntimeError("pipeline fault"))
+
+        proxy = _make_proxy(pipeline=pipeline, owner_slack_user_id=_OWNER_UID)
+        proxy._call_slack_api = AsyncMock(return_value={"ok": True})
+
+        body = json.dumps({"channel": _OWNER_UID, "text": "owner message"}).encode()
+        resp = await proxy.proxy_outbound("chat.postMessage", body, "application/json")
+
+        # Owner: exception is logged but message proceeds to Slack
+        assert resp == {"ok": True}
+        proxy._call_slack_api.assert_called_once()
+
+    @pytest.mark.asyncio
+    async def test_non_owner_info_filter_redaction_blocks(self):
+        """Non-owner channel: pipeline passes but info_filter_redaction_count > 0 → blocked."""
+        pipeline = MagicMock()
+        result = MagicMock()
+        result.blocked = False
+        result.sanitized_message = "[PRIVATE_IP]"
+        result.info_filter_redaction_count = 1
+        pipeline.process_outbound = AsyncMock(return_value=result)
+
+        proxy = _make_proxy(pipeline=pipeline, owner_slack_user_id=_OWNER_UID)
+        proxy._call_slack_api = AsyncMock(return_value={"ok": True})
+
+        with patch(
+            "gateway.proxy.telegram_proxy.TelegramAPIProxy._contains_high_risk_collaborator_leakage",
+            return_value=False,
+        ):
+            body = json.dumps({"channel": _COLLAB_CHANNEL, "text": "192.168.7.25"}).encode()
+            resp = await proxy.proxy_outbound("chat.postMessage", body, "application/json")
+
+        assert resp["ok"] is False
+        assert resp["error"] == "content_policy_violation"
+        proxy._call_slack_api.assert_not_called()
+
+    @pytest.mark.asyncio
+    async def test_non_owner_clean_message_passes(self):
+        """Non-owner channel: clean message with no leakage passes through."""
+        pipeline = MagicMock()
+        result = MagicMock()
+        result.blocked = False
+        result.sanitized_message = None
+        result.info_filter_redaction_count = 0
+        pipeline.process_outbound = AsyncMock(return_value=result)
+
+        proxy = _make_proxy(pipeline=pipeline, owner_slack_user_id=_OWNER_UID)
+        proxy._call_slack_api = AsyncMock(return_value={"ok": True})
+
+        with patch(
+            "gateway.proxy.telegram_proxy.TelegramAPIProxy._contains_high_risk_collaborator_leakage",
+            return_value=False,
+        ):
+            body = json.dumps({"channel": _COLLAB_CHANNEL, "text": "Hello, here is your answer."}).encode()
+            resp = await proxy.proxy_outbound("chat.postMessage", body, "application/json")
+
+        assert resp == {"ok": True}
+        proxy._call_slack_api.assert_called_once()

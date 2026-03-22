@@ -318,10 +318,14 @@ const allowedOrigins = [
   'http://localhost:18790',
   'http://127.0.0.1:18790',
 ];
+// Extra origins from AGENTSHROUD_CONTROL_UI_ORIGINS (comma-separated, e.g. Tailscale hostnames)
+const extraOrigins = (process.env.AGENTSHROUD_CONTROL_UI_ORIGINS || '')
+  .split(',').map(o => o.trim()).filter(o => o.length > 0);
+const allAllowedOrigins = [...allowedOrigins, ...extraOrigins];
 const currentOrigins = Array.isArray(config.gateway.controlUi.allowedOrigins)
   ? config.gateway.controlUi.allowedOrigins
   : [];
-const missingOrigins = allowedOrigins.filter((origin) => !currentOrigins.includes(origin));
+const missingOrigins = allAllowedOrigins.filter((origin) => !currentOrigins.includes(origin));
 if (missingOrigins.length > 0) {
   config.gateway.controlUi.allowedOrigins = [...currentOrigins, ...missingOrigins];
   console.log(`[init-patch] Added gateway.controlUi.allowedOrigins: ${missingOrigins.join(', ')}`);

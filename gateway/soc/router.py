@@ -712,6 +712,25 @@ async def revoke_collaborator(
     return {"ok": True, "user_id": user_id, "action": "revoked", "note": "Runtime revocation; restart gateway for full effect"}
 
 
+@router.get("/collaborators/activity")
+async def get_collaborator_activity(
+    since: float = Query(default=0.0),
+    limit: int = Query(default=100, le=500),
+    user_id: Optional[str] = Query(default=None),
+    caller: SCLCaller = Depends(get_caller),
+) -> JSONResponse:
+    """Return collaborator activity log with timestamps, source, direction, and message previews."""
+    caller.require(Action.READ, Resource.USERS)
+    app = _app_state()
+    tracker = getattr(app, "collaborator_tracker", None)
+    if not tracker:
+        return JSONResponse(content={"entries": [], "total": 0})
+    entries = tracker.get_activity(since=since, limit=limit)
+    if user_id:
+        entries = [e for e in entries if e.get("user_id") == user_id]
+    return JSONResponse(content={"entries": entries, "total": len(entries)})
+
+
 class SetRoleRequest(BaseModel):
     role: str
 
