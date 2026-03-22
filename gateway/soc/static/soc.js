@@ -1179,7 +1179,8 @@ window._egressApproveWithMode = async function(id) {
 function _renderEgressRules(rules) {
   const el = document.getElementById('egress-rules');
   if (!el) return;
-  const list = Array.isArray(rules) ? rules : (rules?.rules || []);
+  const list = Array.isArray(rules) ? rules
+    : [...(rules?.permanent_rules || []), ...(rules?.session_rules || [])];
   if (!list.length) {
     el.innerHTML = '<span style="color:var(--text-muted);font-size:12px">No active rules</span>';
     return;

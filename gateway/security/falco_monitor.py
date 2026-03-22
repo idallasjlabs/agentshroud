@@ -10,6 +10,8 @@ Reads Falco alerts from shared volume and parses JSON format.
 """
 
 
+import asyncio
+import hashlib
 import json
 import logging
 from datetime import datetime, timezone
@@ -175,6 +177,92 @@ def categorize_alerts(alerts: list[dict[str, Any]]) -> dict[str, list[dict[str, 
         else:
             categories["MEDIUM"].append(alert)
     return categories
+
+
+class FalcoAlertWatcher:
+    """Tail Falco alert files and trigger progressive lockdown on CRITICAL alerts.
+
+    Runs as an async background task.  Each alert is deduplicated by content
+    hash so a single event is only acted on once per gateway lifetime.
+
+    Fail mode: if Falco alert directory does not exist, the watcher no-ops
+    gracefully — Falco is unavailable in many dev environments (no eBPF).
+    """
+
+    _POLL_INTERVAL_SECS = 30
+
+    def __init__(
+        self,
+        alert_dir: Path = DEFAULT_ALERT_DIR,
+        progressive_lockdown=None,
+        audit_store=None,
+    ) -> None:
+        self.alert_dir = Path(alert_dir)
+        self.progressive_lockdown = progressive_lockdown
+        self.audit_store = audit_store
+        self._seen: set[str] = set()
+        self._running = False
+
+    async def run(self) -> None:
+        """Poll Falco alert files until stopped."""
+        self._running = True
+        logger.info("FalcoAlertWatcher started, monitoring: %s", self.alert_dir)
+        while self._running:
+            try:
+                await self._process_new_alerts()
+            except Exception as exc:
+                logger.error("FalcoAlertWatcher poll error: %s", exc)
+            await asyncio.sleep(self._POLL_INTERVAL_SECS)
+
+    def stop(self) -> None:
+        self._running = False
+
+    async def _process_new_alerts(self) -> None:
+        if not self.alert_dir.exists():
+            return
+        for alert_file in sorted(self.alert_dir.glob("*.json")):
+            try:
+                content = alert_file.read_text()
+            except OSError:
+                continue
+            for line in content.strip().splitlines():
+                if not line.strip():
+                    continue
+                alert_key = hashlib.sha256(line.encode()).hexdigest()[:16]
+                if alert_key in self._seen:
+                    continue
+                self._seen.add(alert_key)
+                try:
+                    raw = json.loads(line)
+                    alert = parse_alert(raw)
+                    if alert and alert.get("severity") == "CRITICAL":
+                        await self._handle_critical(alert)
+                except json.JSONDecodeError:
+                    continue
+
+    async def _handle_critical(self, alert: dict[str, Any]) -> None:
+        container_name = alert.get("container_name", "")
+        agent_id = container_name or "unknown"
+        rule = alert.get("rule", "unknown")
+        summary = f"Falco CRITICAL: {rule} in container={container_name or 'unknown'}"
+        logger.critical("FalcoAlertWatcher enforcement: %s", summary)
+
+        if self.progressive_lockdown is not None:
+            try:
+                self.progressive_lockdown.record_block(agent_id, reason=summary)
+            except Exception as exc:
+                logger.error("FalcoAlertWatcher lockdown record_block failed: %s", exc)
+
+        if self.audit_store is not None:
+            try:
+                await self.audit_store.log_event(
+                    event_type="falco_enforcement",
+                    severity="CRITICAL",
+                    details={"rule": rule, "container": container_name, "alert": alert},
+                    source_module="falco_monitor.watcher",
+                )
+            except Exception as exc:
+                logger.error("FalcoAlertWatcher audit log failed: %s", exc)
 
 
 def generate_summary(alerts: list[dict[str, Any]]) -> dict[str, Any]:

@@ -407,6 +407,13 @@ async def lifespan(app: FastAPI):
         app_state.audit_store = AuditStore(db_path=_audit_db)
         await app_state.audit_store.initialize()
         logger.info("AuditStore initialized (%s)", _audit_db)
+        # Log gateway startup event so Security Events page is never empty
+        await app_state.audit_store.log_event(
+            event_type="gateway_startup",
+            severity="INFO",
+            details={"version": "0.9.0", "db_path": _audit_db},
+            source_module="lifespan",
+        )
     except Exception as e:
         logger.error("AuditStore failed: %s", e)
         app_state.audit_store = None
@@ -607,72 +614,6 @@ async def lifespan(app: FastAPI):
         try:
             if not _sec_evidence.exists():
                 _sec_evidence.touch()
-        except OSError:
-            pass
-
-    # -- Scanner stub reports: seed Trivy/ClamAV/OpenSCAP report dirs so the
-    #    scorecard sees scans as "run" even when network/space prevents real scans.
-    #    Reports are skipped if a real report already exists (created by security-scan.sh).
-    import datetime as _dt
-    _scan_ts = _dt.datetime.now(_dt.timezone.utc)
-    _scan_ts_str = _scan_ts.strftime("%Y%m%d-%H%M%S")
-    _scan_iso = _scan_ts.isoformat()
-    _stub_specs = [
-        (
-            _Path("/var/log/security/trivy"),
-            f"trivy-{_scan_ts_str}.json",
-            {
-                "scanner": "trivy",
-                "timestamp": _scan_iso,
-                "total_vulnerabilities": 0,
-                "by_severity": {"CRITICAL": 0, "HIGH": 0, "MEDIUM": 0, "LOW": 0, "UNKNOWN": 0},
-                "top_cves": [],
-                "affected_packages": [],
-                "affected_package_count": 0,
-                "error": None,
-            },
-        ),
-        (
-            _Path("/var/log/security/clamav"),
-            f"clamav-{_scan_ts_str}.json",
-            {
-                "tool": "clamav",
-                "timestamp": _scan_iso,
-                "scanned_files": 1,
-                "infected_count": 0,
-                "infected_files": [],
-                "error": None,
-            },
-        ),
-        (
-            _Path("/var/log/security/openscap"),
-            f"openscap-{_scan_ts_str}.json",
-            {
-                "tool": "openscap",
-                "timestamp": _scan_iso,
-                "profile": "CIS Docker Benchmark (container-adapted)",
-                "pass_count": 42,
-                "fail_count": 0,
-                "critical": 0,
-                "high": 0,
-                "error": None,
-            },
-        ),
-        (
-            _Path("/var/log/security/sbom"),
-            f"sbom-{_scan_ts_str}.json",
-            None,  # Skip SBOM stub — syft generates real SBOM via security-scan.sh
-        ),
-    ]
-    for _stub_dir, _stub_file, _stub_data in _stub_specs:
-        if _stub_data is None:
-            continue
-        try:
-            _stub_dir.mkdir(parents=True, exist_ok=True)
-            # Only write stub if directory has no existing reports
-            if not any(_stub_dir.glob("*.json")):
-                (_stub_dir / _stub_file).write_text(json.dumps(_stub_data))
-                logger.info("✓ Scanner stub written: %s/%s", _stub_dir.name, _stub_file)
         except OSError:
             pass
 
@@ -1039,6 +980,96 @@ async def lifespan(app: FastAPI):
 
     app_state._security_scheduler_task = _asyncio.create_task(_run_security_scheduler())
     _asyncio.create_task(_run_initial_scan_if_needed())
+
+    # -- FalcoAlertWatcher: enforce progressive lockdown on CRITICAL Falco alerts --
+    try:
+        from ..security.falco_monitor import FalcoAlertWatcher as _FalcoAlertWatcher
+        _falco_watcher = _FalcoAlertWatcher(
+            progressive_lockdown=getattr(app_state, "progressive_lockdown", None),
+            audit_store=getattr(app_state, "audit_store", None),
+        )
+        app_state._falco_watcher_task = _asyncio.create_task(_falco_watcher.run())
+        logger.info("✓ FalcoAlertWatcher started → progressive lockdown on CRITICAL alerts")
+    except Exception as _fw_exc:
+        logger.warning("⚠ FalcoAlertWatcher failed to start: %s", _fw_exc)
+
+    # -- Trivy post-scan check: surface CRITICAL CVEs to logs + app_state 30s after boot --
+    async def _check_trivy_report():
+        await _asyncio.sleep(30)
+        try:
+            from ..security.scanner_integration import get_trivy_summary as _get_trivy
+            _trivy = _get_trivy()
+            _crit = _trivy.get("critical", 0)
+            _high = _trivy.get("high", 0)
+            app_state.trivy_critical_count = _crit
+            if _crit > 0:
+                logger.critical(
+                    "TRIVY: %d CRITICAL CVE(s) found — review /soc/v1/trivy. "
+                    "Patch or accept risk before production deployment.", _crit
+                )
+                if hasattr(app_state, "audit_store") and app_state.audit_store:
+                    await app_state.audit_store.log_event(
+                        event_type="trivy_critical_cves",
+                        severity="CRITICAL",
+                        details={"critical": _crit, "high": _high},
+                        source_module="lifespan.trivy_check",
+                    )
+            elif _trivy.get("status") not in ("not_run",):
+                logger.info("Trivy scan complete: critical=%d high=%d", _crit, _high)
+        except Exception as _tc_exc:
+            logger.warning("⚠ Trivy post-scan check failed: %s", _tc_exc)
+
+    _asyncio.create_task(_check_trivy_report())
+
+    # -- Image signature verification: verify bot container image via cosign --
+    async def _verify_bot_image():
+        await _asyncio.sleep(5)
+        try:
+            from ..security.image_verifier import verify_images as _verify_images
+            import os as _os
+            _images = [r for r in [
+                _os.environ.get("AGENTSHROUD_BOT_IMAGE_REF", ""),
+                _os.environ.get("AGENTSHROUD_GATEWAY_IMAGE_REF", ""),
+            ] if r]
+            if not _images:
+                logger.info("Image verification skipped — AGENTSHROUD_BOT_IMAGE_REF not set")
+                return
+            _results = await _verify_images(_images)
+            app_state.image_verification = _results
+            for _ref, _r in _results.items():
+                if _r["verified"]:
+                    logger.info("✓ Image signature verified: %s", _ref)
+                else:
+                    logger.warning(
+                        "⚠ Image signature NOT verified: %s — %s", _ref, _r.get("error", "unknown")
+                    )
+        except Exception as _iv_exc:
+            logger.warning("⚠ Image verification task failed: %s", _iv_exc)
+
+    _asyncio.create_task(_verify_bot_image())
+
+    # -- Wazuh periodic alert harvesting: feed FIM findings to AuditStore every 5 min --
+    async def _wazuh_periodic():
+        while True:
+            await _asyncio.sleep(300)
+            try:
+                from ..security.scanner_integration import get_wazuh_summary as _get_wazuh
+                _wazuh = _get_wazuh()
+                if _wazuh.get("status") == "not_run":
+                    continue
+                _crit = _wazuh.get("critical", 0)
+                if _crit > 0 and hasattr(app_state, "audit_store") and app_state.audit_store:
+                    await app_state.audit_store.log_event(
+                        event_type="wazuh_critical_alerts",
+                        severity="CRITICAL",
+                        details={"critical": _crit, "findings": _wazuh.get("findings", 0)},
+                        source_module="lifespan.wazuh_periodic",
+                    )
+                    logger.critical("Wazuh: %d CRITICAL alert(s) — check /soc/v1/wazuh", _crit)
+            except Exception as _wp_exc:
+                logger.debug("Wazuh periodic check error (non-fatal): %s", _wp_exc)
+
+    _asyncio.create_task(_wazuh_periodic())
 
     # Register Telegram bot commands so the "/" menu shows in the client
     _tg_token_cmds = os.environ.get("TELEGRAM_BOT_TOKEN", "") or _read_secret("telegram_bot_token")

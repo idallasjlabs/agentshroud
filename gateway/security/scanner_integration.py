@@ -680,10 +680,17 @@ def _score_image_integrity(trivy: Dict[str, Any]) -> int:
 def _score_vulnerability_management(trivy: Dict[str, Any]) -> int:
     """Score domain 2: Vulnerability Management (0-5).
 
-    1=module exists, 2=zero criticals, 3=zero criticals+highs,
-    4=zero criticals+highs+mediums (Measured), 5=clean + scan fresh <24h (Optimizing).
+    1=module installed but no recent scan, 2=zero criticals,
+    3=zero criticals+highs, 4=zero criticals+highs+mediums (Measured),
+    5=clean + scan fresh <48h (Optimizing).
+
+    A stale or missing report cannot score above 1.  Real scan results with a
+    valid timestamp are required to progress beyond Initial.
     """
-    if trivy.get("status") in ("not_run",) or trivy.get("error"):
+    if trivy.get("status") in ("not_run", "error") or trivy.get("error"):
+        return 1
+    # Require a fresh report — stale results cannot score above 1
+    if not _is_fresh(_TRIVY_REPORT_DIR, "trivy-", max_age_hours=48):
         return 1
     if trivy.get("critical", 0) > 0:
         return 1
@@ -691,7 +698,7 @@ def _score_vulnerability_management(trivy: Dict[str, Any]) -> int:
         return 2
     if trivy.get("medium", 0) > 0:
         return 3
-    # Zero criticals + highs + mediums
+    # Zero criticals + highs + mediums + fresh report
     if _is_fresh(_TRIVY_REPORT_DIR, "trivy-"):
         return 5
     return 4
@@ -751,15 +758,20 @@ def _score_runtime_protection(falco: Dict[str, Any]) -> int:
 def _score_malware_defense(clamav: Dict[str, Any]) -> int:
     """Score domain 6: Malware Defense (0-5).
 
-    1=module exists or infected, 3=running clean,
+    1=module installed or not_run, 3=clamd running clean,
     4=running clean + workspace scanned (Measured),
-    5=running clean + scanned + report fresh <24h (Optimizing).
+    5=running clean + scanned + report fresh <48h (Optimizing).
+
+    A stale or missing report cannot score above 1.
     """
-    if clamav.get("status") == "not_run":
+    if clamav.get("status") in ("not_run", "error", "unavailable"):
         return 1
     if clamav.get("critical", 0) > 0:
         return 1
-    # Running and clean
+    # Require a fresh report to score above 1
+    if not _is_fresh(_CLAMAV_REPORT_DIR, "clamav-", max_age_hours=48):
+        return 1
+    # Running and clean with a real recent scan
     if clamav.get("scanned_files", clamav.get("files_scanned", 0)) > 0:
         if _is_fresh(_CLAMAV_REPORT_DIR, "clamav-"):
             return 5
@@ -986,12 +998,13 @@ def _score_access_control_authorization() -> int:
         score += 1  # Least privilege: collaborator access audited
     if _app_state_has("ledger"):
         score += 1  # Authorization decisions logged
-    # Level 5: access review evidence on disk
+    # Level 5: access review evidence on disk — require non-empty content.
+    # An empty touch() file does not constitute access review evidence.
     review_paths = [
         Path("/app/data/collaborator_activity.jsonl"),
         Path("/tmp/agentshroud-data/collaborator_activity.jsonl"),
     ]
-    if any(p.exists() for p in review_paths):
+    if any(p.exists() and p.stat().st_size > 0 for p in review_paths):
         score += 1
     return min(score, 5)
 
@@ -1022,13 +1035,14 @@ def _score_data_confidentiality_encryption() -> int:
     # Level 4: cert monitoring active
     if tls_available:
         score += 1
-    # Level 5: key rotation evidence on disk
+    # Level 5: key rotation evidence on disk — require non-empty content.
+    # An empty touch() file does not constitute rotation evidence.
     rotation_paths = [
         Path("/app/data/key_rotation.log"),
         Path("/tmp/agentshroud-data/key_rotation.log"),
         Path("/var/log/security/key_rotation.log"),
     ]
-    if any(p.exists() for p in rotation_paths):
+    if any(p.exists() and p.stat().st_size > 0 for p in rotation_paths):
         score += 1
     return min(score, 5)
 
@@ -1073,19 +1087,20 @@ def _score_resource_availability() -> int:
 def _score_image_signing_provenance() -> int:
     """Score domain 17: Image Signing & Provenance (0-5). NIST 800-190 §3.1.
 
-    0=no signing, DCT unset, 1=DOCKER_CONTENT_TRUST=1 set,
-    2=cosign binary present, 3=signature verification enforced at pull time,
-    4=SLSA provenance attestation present, 5=full supply chain attestation.
+    0=no signing tools, 1=cosign binary present in image,
+    2=cosign used in CI workflows, 3=runtime signature verification ran and succeeded,
+    4=verification ran + cosign in CI, 5=all + SLSA provenance tooling wired.
+
+    Binary presence alone does NOT score >1.  Actual verification results stored
+    in app_state.image_verification are required to reach level 3+.
     """
-    import os
-    dct = os.environ.get("DOCKER_CONTENT_TRUST", "0")
-    if dct not in ("1", "true", "yes"):
-        return 0
-    score = 1  # DOCKER_CONTENT_TRUST=1
     import shutil
-    if shutil.which("cosign"):
-        score += 1
-    # Level 3: verify cosign is used in CI (check .github/workflows for cosign usage)
+    cosign_available = bool(shutil.which("cosign"))
+    if not cosign_available:
+        return 0
+    score = 1  # cosign binary present
+
+    # Level 2: cosign used in CI workflows
     cosign_ci_paths = [
         Path("/app/.github/workflows"),
         Path(".github/workflows"),
@@ -1102,12 +1117,24 @@ def _score_image_signing_provenance() -> int:
             pass
     if cosign_in_ci:
         score += 1
-    # Level 4: SLSA provenance (check for slsa-verifier or provenance attestation files)
-    if shutil.which("slsa-verifier"):
+
+    # Level 3: runtime verification ran and has at least one verified result
+    # Requires real verification result in app_state — not just binary existence
+    try:
+        from ..ingest_api.state import app_state
+        verification = getattr(app_state, "image_verification", None)
+        if verification and any(v.get("verified") for v in verification.values()):
+            score += 1
+            # Level 4: verification ran + cosign in CI
+            if cosign_in_ci:
+                score += 1
+    except Exception:
+        pass
+
+    # Level 5: SLSA provenance tooling wired AND actively verifying
+    if shutil.which("slsa-verifier") and score >= 4:
         score += 1
-    # Level 5: all above + policy enforcement
-    if score == 4 and cosign_in_ci:
-        score += 1
+
     return min(score, 5)
 
 
@@ -1181,12 +1208,13 @@ def _score_host_os_hardening() -> int:
         except Exception:
             pass
     # Level 4: host audit logging (auditd, docker audit log, or security audit)
+    # Require non-empty content — an empty touch() file is not evidence of auditing.
     audit_paths = [
         Path("/var/log/audit/audit.log"),
         Path("/var/log/docker.log"),
         Path("/var/log/security/audit.log"),
     ]
-    if any(p.exists() for p in audit_paths):
+    if any(p.exists() and p.stat().st_size > 0 for p in audit_paths):
         score += 1
     # Level 5: CIS hardening evidence file
     cis_evidence = [
