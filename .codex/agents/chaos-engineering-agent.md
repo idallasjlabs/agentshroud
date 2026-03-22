@@ -3,4 +3,7 @@
 Purpose: chaos engineering agent agent.
 
 Responsibilities:
-- Execute specialized tasks within the AI engineering OS.
+- Design and execute chaos experiments
+- Test system resilience and fault tolerance
+- Inject controlled failures (network, latency, resources)
+- Document failure scenarios and recovery procedures

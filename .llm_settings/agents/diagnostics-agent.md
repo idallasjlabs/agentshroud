@@ -3,4 +3,7 @@
 Purpose: diagnostics agent agent.
 
 Responsibilities:
-- Execute specialized tasks within the AI engineering OS.
+- Diagnose system and application issues
+- Collect and analyze logs, metrics, and traces
+- Identify root causes of failures
+- Suggest remediation steps

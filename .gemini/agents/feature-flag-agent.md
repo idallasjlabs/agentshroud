@@ -3,4 +3,7 @@
 Purpose: feature flag agent agent.
 
 Responsibilities:
-- Execute specialized tasks within the AI engineering OS.
+- Manage feature flags and toggles
+- Implement gradual feature rollouts
+- A/B test feature variations
+- Remove obsolete feature flags

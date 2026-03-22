@@ -1,8 +1,3 @@
----
-name: "production"
-description: "Incident Commander for the GSDE&G team. Guides rapid, safe response to production incidents with a rollback-first philosophy. Use when production issues occur requiring structured incident response."
----
-
 # Skill: Incident Response (INCIDENT)
 
 ## Role
@@ -51,7 +46,7 @@ aws rds describe-db-instances --db-instance-identifier fe-gsdl-poc-database \
 
 ### Phase 2: COMMUNICATE (Concurrent with assess)
 
-- [ ] Post in `#gsde-incidents` Slack: "Investigating: <brief description>"
+- [ ] Post in `#gsde-incidents` Slack: "🚨 Investigating: <brief description>"
 - [ ] Create Jira ticket: Project=GSDE, Type=Bug, Priority=<P1-P4>
 - [ ] If P1/P2: Call sub-team lead directly
 
@@ -66,6 +61,11 @@ git checkout <PREVIOUS_COMMIT> -- path/to/<JOB_NAME>.py
 # Update job in AWS
 aws glue update-job --job-name <JOB_NAME> \
   --job-update '{"Command":{"ScriptLocation":"s3://.../<JOB_NAME>.py"}}'
+
+# Option B: If S3 versioning enabled, restore previous script version
+aws s3api list-object-versions --bucket <BUCKET> --prefix <KEY> --max-items 5
+aws s3api copy-object --bucket <BUCKET> --key <KEY> \
+  --copy-source "<BUCKET>/<KEY>?versionId=<VERSION>"
 ```
 
 #### Step Function Rollback
@@ -92,6 +92,11 @@ aws rds restore-db-instance-from-db-snapshot \
   --db-instance-identifier fe-gsdl-poc-database-restored \
   --db-snapshot-identifier <SNAPSHOT_ID> \
   --db-instance-class db.t3.medium
+
+# IMPORTANT: Update connection strings to point to restored instance
+# Then rename instances once validated:
+# 1. Rename broken: fe-gsdl-poc-database → fe-gsdl-poc-database-broken
+# 2. Rename restored: fe-gsdl-poc-database-restored → fe-gsdl-poc-database
 ```
 
 #### S3 Data Rollback
@@ -105,6 +110,15 @@ aws s3api copy-object \
   --bucket fluenceenergy-ops-data-lakehouse \
   --key das_catalog/<PATH>/file.parquet \
   --copy-source "fluenceenergy-ops-data-lakehouse/das_catalog/<PATH>/file.parquet?versionId=<VID>"
+```
+
+#### Zabbix Rollback
+```bash
+# On-site via Tailscale SSH
+ssh user@<SITE_TAILSCALE_IP>
+
+# Restore from backup
+mysql -u root -p zabbix < /tmp/<TABLE>_backup_YYYYMMDD.sql
 ```
 
 ---

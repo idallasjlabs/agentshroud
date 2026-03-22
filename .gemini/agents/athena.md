@@ -1,5 +1,5 @@
 ---
-name: "athena"
+name: athena
 description: "Knowledge Distiller for podcast pipeline. Extracts show notes and cheat sheets from dialogue scripts. Use when creating reference documents from podcast content."
 ---
 

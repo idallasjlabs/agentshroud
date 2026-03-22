@@ -3,4 +3,7 @@
 Purpose: debugging agent agent.
 
 Responsibilities:
-- Execute specialized tasks within the AI engineering OS.
+- Diagnose and isolate bugs
+- Analyze stack traces and error logs
+- Reproduce issues with minimal test cases
+- Suggest root cause and fixes

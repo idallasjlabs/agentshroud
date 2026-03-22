@@ -434,3 +434,56 @@ class MultiTurnTracker:
     def add_alert_callback(self, callback: callable) -> None:
         """Add a callback function for alerts."""
         self.alert_callbacks.append(callback)
+
+    # ── C30: Response Consistency Scoring ─────────────────────────────────────
+
+    def score_response_consistency(
+        self, session_id: str, response: str, query: str
+    ) -> "ConsistencyScore":
+        """Compute a heuristic consistency score between query and response.
+
+        Returns ConsistencyScore with score 0.0–1.0 (higher = more consistent).
+        Anomalies below 0.4 trigger an audit warning.
+        """
+        from dataclasses import dataclass as _dc
+
+        factors: List[str] = []
+        anomalies: List[str] = []
+        score = 1.0
+
+        # Unsolicited tool call in response — likely injection artefact
+        if re.search(
+            r'<(?:function_calls?|tool_calls?|invoke)\b', response, re.IGNORECASE
+        ):
+            score -= 0.3
+            anomalies.append("unsolicited_tool_call")
+
+        # Length ratio anomaly — response vastly longer than query unprompted
+        if query and len(response) > len(query) * 25:
+            score -= 0.2
+            anomalies.append("length_ratio_anomaly")
+
+        # Topic scope: key content words in query absent from response
+        query_words = set(re.findall(r'\b\w{5,}\b', query.lower()))
+        resp_words = set(re.findall(r'\b\w{5,}\b', response.lower()))
+        if query_words and len(query_words & resp_words) / len(query_words) < 0.1:
+            score -= 0.2
+            anomalies.append("topic_scope_mismatch")
+
+        score = max(0.0, round(score, 2))
+
+        if score < 0.4 and self.enabled:
+            logger.warning(
+                "Low response consistency score %.2f for session %s: %s",
+                score, session_id, anomalies,
+            )
+
+        return ConsistencyScore(score=score, factors=factors, anomalies=anomalies)
+
+
+@dataclass
+class ConsistencyScore:
+    """Heuristic consistency score between a query and its response."""
+    score: float
+    factors: List[str]
+    anomalies: List[str]

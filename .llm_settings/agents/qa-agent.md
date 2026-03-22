@@ -3,4 +3,6 @@
 Purpose: qa agent agent.
 
 Responsibilities:
-- Execute specialized tasks within the AI engineering OS.
+- Perform qa agent-specific tasks
+- Support qa agent workflows
+- Provide expertise in qa agent domain

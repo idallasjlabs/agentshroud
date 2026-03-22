@@ -1,5 +1,5 @@
 ---
-name: "sec-defense"
+name: sec-defense
 description: "Defensive security auditor using STPA-Sec methodology. Use for blue team security assessments, module enforcement audits, heat map verification, integration gap analysis, and pre-red-team readiness checks. Triggers on: security audit, blue team, enforcement verification, heat map, readiness check, compliance audit, defense posture review."
 ---
 
@@ -55,7 +55,7 @@ For EVERY file in `gateway/security/*.py`:
 
 ### Phase 2: Heat Map Reconstruction
 
-Build the exact heat map Steve Hay uses. For each module x loss category:
+Build the exact heat map Steve Hay uses. For each module × loss category:
 
 ```
 | # | Module | L-1 Data | L-2 Actions | L-3 Integrity | L-4 Audit |
@@ -91,17 +91,23 @@ Check that ALL of these modules are wired into the live gateway:
 - TrustManager / Progressive Trust (`gateway/security/trust_manager.py`)
 
 **Red Team Hardening (check branches):**
-- CanaryTripwire, EncodingDetector, ToolResultInjectionScanner, XMLLeakFilter
-- PromptProtection, MultiTurnTracker, ToolChainAnalyzer
-- PathIsolationManager, ApprovalHardening
+- CanaryTripwire (`gateway/security/canary_tripwire.py`)
+- EncodingDetector (`gateway/security/encoding_detector.py`)
+- ToolResultInjectionScanner (`gateway/security/tool_result_injection.py`)
+- XMLLeakFilter (`gateway/security/xml_leak_filter.py`)
+- PromptProtection (`gateway/security/prompt_protection.py`)
+- MultiTurnTracker (`gateway/security/multi_turn_tracker.py`)
+- ToolChainAnalyzer (`gateway/security/tool_chain_analyzer.py`)
+- PathIsolationManager (`gateway/security/path_isolation.py`)
+- ApprovalHardening (`gateway/security/approval_hardening.py`)
 
 For each: Is it imported? Instantiated? Called in the request path? If NOT → mark as A (absent).
 
 ### Phase 4: Configuration Audit
 
 1. **Default config (no YAML, no env vars):** Start gateway with zero config. Is it secure?
-2. **AGENTSHROUD_MODE=enforce:** Does every module respect this?
-3. **Fail-closed verification:** What happens when a module crashes?
+2. **AGENTSHROUD_MODE=enforce:** Does every module respect this? Grep for the env var.
+3. **Fail-closed verification:** What happens when a module crashes? Does the request proceed?
 
 ### Phase 5: Steve Hay's Specific Probes
 
@@ -125,9 +131,9 @@ Verify defenses exist for each Phase 1 probe:
 Save as `docs/reviews/blue-team-audit-v0.7.0.md` with these sections:
 
 1. **Executive Summary** — GO / NO-GO / CONDITIONAL recommendation
-2. **Heat Map** — Full module x loss category table with E/M/A/C/?/— ratings
+2. **Heat Map** — Full module × loss category table with E/M/A/C/?/— ratings
 3. **Module Audit Table** — Every module: name, enforce mode (Y/N), default mode, wired into pipeline (Y/N), has enforcement tests (Y/N), verdict
-4. **Critical Findings** — Anything rated M, A, C, or ? (must be fixed before red team)
+4. **Critical Findings** — Anything rated M, A, C, or ? (these MUST be fixed before red team)
 5. **Integration Gaps** — Modules that exist but aren't in the request path
 6. **Fail-Open Patterns** — try/except blocks that swallow security errors
 7. **Recommendations** — Ranked by severity, with specific file:line references
@@ -145,6 +151,7 @@ Save as `docs/reviews/blue-team-audit-v0.7.0.md` with these sections:
 
 - Repository: `github.com/idallasj/agentshroud`
 - Main checkout: `~/Development/agentshroud` on Marvin (SSH alias `marvin`)
+- Worktrees: `~/Development/worktrees/<branch-name>/`
 - Key files: `gateway/ingest_api/main.py`, `gateway/ingest_api/middleware.py`, `gateway/security/*.py`
 - Tests: `gateway/tests/test_*.py`
 - Commit as: `agentshroud-bot <agentshroud-bot@agentshroud.ai>`

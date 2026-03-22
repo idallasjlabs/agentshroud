@@ -33,7 +33,10 @@ claude mcp add --transport http atlassian https://mcp.atlassian.com/v1/mcp --sco
 
 # AWS MCP (stdio via uvx)
 echo "3️⃣  Adding AWS API MCP (stdio)..."
-UVX_PATH="$(command -v uvx 2>/dev/null || echo '/opt/homebrew/bin/uvx')"
+UVX_PATH="$(command -v uvx 2>/dev/null \
+    || ([ -f "$HOME/.cargo/bin/uvx" ]  && echo "$HOME/.cargo/bin/uvx") \
+    || ([ -f "$HOME/.local/bin/uvx" ]  && echo "$HOME/.local/bin/uvx") \
+    || echo '/opt/homebrew/bin/uvx')"
 claude mcp add --transport stdio awslabs.aws-api-mcp-server "$UVX_PATH" \
   --args "awslabs.aws-api-mcp-server@latest" \
   --args "--readonly" \

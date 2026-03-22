@@ -15,10 +15,11 @@ Enforce mode: block tunneling patterns and enforce allowlist.
 import logging
 import math
 import re
+import socket
 import time
 from collections import defaultdict
 from dataclasses import dataclass
-from typing import Optional
+from typing import Optional, Tuple
 
 logger = logging.getLogger(__name__)
 
@@ -80,6 +81,8 @@ class DNSFilter:
         self.config = config
         self._audit: list[DNSQuery] = []
         self._query_times: dict[str, list[float]] = defaultdict(list)
+        # C44: IP resolution cache  { domain: (ip, timestamp) }
+        self._resolved_ip_cache: dict[str, Tuple[str, float]] = {}
         self._hex_re = re.compile(
             r"^[0-9a-f]{%d,}$" % config.hex_pattern_min_length, re.I
         )
@@ -185,6 +188,67 @@ class DNSFilter:
         if agent_id:
             return [q for q in self._audit if q.agent_id == agent_id]
         return list(self._audit)
+
+    # ── C44: DNS Rebinding Prevention ────────────────────────────────────────
+
+    def resolve_and_cache(self, domain: str) -> str:
+        """Resolve domain to an IP and cache it for 5 minutes."""
+        now = time.time()
+        cached = self._resolved_ip_cache.get(domain)
+        if cached and now - cached[1] < 300:
+            return cached[0]
+        try:
+            infos = socket.getaddrinfo(domain, None)
+            ip = infos[0][4][0] if infos else ""
+        except Exception:
+            ip = ""
+        self._resolved_ip_cache[domain] = (ip, now)
+        return ip
+
+    def check_rebinding(self, domain: str) -> bool:
+        """Return True if a DNS rebinding attack is detected.
+
+        Re-resolves the domain and compares to the cached IP.  Flags when
+        the new IP falls in a private/loopback range (RFC 1918 / ::1).
+        """
+        cached = self._resolved_ip_cache.get(domain)
+        if not cached or not cached[0]:
+            self.resolve_and_cache(domain)
+            return False
+
+        prev_ip = cached[0]
+        try:
+            infos = socket.getaddrinfo(domain, None)
+            new_ip = infos[0][4][0] if infos else ""
+        except Exception:
+            return False
+
+        if new_ip and new_ip != prev_ip and self._is_private_ip(new_ip):
+            logger.warning(
+                "DNS rebinding detected for %s: %s -> %s (private range)",
+                domain, prev_ip, new_ip,
+            )
+            return True
+
+        # Update cache with fresh resolution
+        self._resolved_ip_cache[domain] = (new_ip or prev_ip, time.time())
+        return False
+
+    def _is_private_ip(self, ip: str) -> bool:
+        """Return True if the IP address is in a private / loopback range."""
+        private_patterns = [
+            re.compile(r'^10\.'),
+            re.compile(r'^192\.168\.'),
+            re.compile(r'^172\.(1[6-9]|2[0-9]|3[01])\.'),
+            re.compile(r'^127\.'),
+            re.compile(r'^169\.254\.'),
+            re.compile(r'^::1$'),
+            re.compile(r'^fc[0-9a-f]{2}:'),
+            re.compile(r'^fe80:'),
+        ]
+        return any(p.match(ip) for p in private_patterns)
+
+    # ─────────────────────────────────────────────────────────────────────────
 
     def get_flagged_queries(self, agent_id: Optional[str] = None) -> list[DNSQuery]:
         logs = self.get_audit_log(agent_id)

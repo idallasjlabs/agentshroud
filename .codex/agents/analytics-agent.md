@@ -3,4 +3,7 @@
 Purpose: analytics agent agent.
 
 Responsibilities:
-- Execute specialized tasks within the AI engineering OS.
+- Analyze system metrics and operational data
+- Generate reports and visualizations
+- Identify trends and anomalies
+- Provide data-driven recommendations

@@ -3,4 +3,6 @@
 Purpose: supply chain security agent agent.
 
 Responsibilities:
-- Execute specialized tasks within the AI engineering OS.
+- Perform supply chain security agent-specific tasks
+- Support supply chain security agent workflows
+- Provide expertise in supply chain security agent domain

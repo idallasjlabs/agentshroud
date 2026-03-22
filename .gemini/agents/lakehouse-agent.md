@@ -3,4 +3,6 @@
 Purpose: lakehouse agent agent.
 
 Responsibilities:
-- Execute specialized tasks within the AI engineering OS.
+- Perform lakehouse agent-specific tasks
+- Support lakehouse agent workflows
+- Provide expertise in lakehouse agent domain

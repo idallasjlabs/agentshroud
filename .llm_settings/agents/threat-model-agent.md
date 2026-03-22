@@ -3,4 +3,6 @@
 Purpose: threat model agent agent.
 
 Responsibilities:
-- Execute specialized tasks within the AI engineering OS.
+- Perform threat model agent-specific tasks
+- Support threat model agent workflows
+- Provide expertise in threat model agent domain

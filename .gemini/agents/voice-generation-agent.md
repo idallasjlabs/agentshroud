@@ -3,4 +3,6 @@
 Purpose: voice generation agent agent.
 
 Responsibilities:
-- Execute specialized tasks within the AI engineering OS.
+- Perform voice generation agent-specific tasks
+- Support voice generation agent workflows
+- Provide expertise in voice generation agent domain
