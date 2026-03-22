@@ -49,7 +49,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     && rm -rf /var/lib/apt/lists/*
 
 # Syft SBOM generator — pinned version
-ARG SYFT_VERSION=1.18.1
+ARG SYFT_VERSION=1.42.3
 RUN DPKG_ARCH=$(dpkg --print-architecture) && \
     case "$DPKG_ARCH" in \
       arm64) SYFT_ARCH="arm64" ;; \
@@ -81,7 +81,7 @@ RUN DPKG_ARCH=$(dpkg --print-architecture) && \
     rm "/tmp/trivy_${TRIVY_VERSION}_Linux-${TRIVY_ARCH}.deb" /tmp/trivy_checksums.txt
 
 # cosign — image signing and verification (Domain 17)
-ARG COSIGN_VERSION=2.4.3
+ARG COSIGN_VERSION=3.0.5
 RUN DPKG_ARCH=$(dpkg --print-architecture) && \
     case "$DPKG_ARCH" in \
       arm64) COSIGN_ARCH="arm64" ;; \
@@ -94,7 +94,7 @@ RUN DPKG_ARCH=$(dpkg --print-architecture) && \
     echo "cosign: download deferred to runtime"
 
 # slsa-verifier — SLSA provenance attestation (Domain 17 Level 4)
-ARG SLSA_VERSION=2.7.0
+ARG SLSA_VERSION=2.7.1
 RUN DPKG_ARCH=$(dpkg --print-architecture) && \
     case "$DPKG_ARCH" in \
       arm64) SLSA_ARCH="linux-arm64" ;; \
@@ -107,7 +107,7 @@ RUN DPKG_ARCH=$(dpkg --print-architecture) && \
     echo "slsa-verifier: download deferred to runtime"
 
 # Docker CLI static binary — for docker info (Domain 19 Level 3)
-ARG DOCKER_CLI_VERSION=27.5.1
+ARG DOCKER_CLI_VERSION=29.3.0
 RUN DPKG_ARCH=$(dpkg --print-architecture) && \
     case "$DPKG_ARCH" in \
       arm64) DOCKER_ARCH="aarch64" ;; \

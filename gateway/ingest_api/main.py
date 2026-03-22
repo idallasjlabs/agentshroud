@@ -3696,6 +3696,7 @@ _slack_proxy = SlackAPIProxy(
     middleware_manager=None,
     sanitizer=None,
     tracker=None,   # Will be wired to app_state.collaborator_tracker at request time
+    # owner_slack_user_id read from AGENTSHROUD_SLACK_OWNER_USER_ID env var at init time
 )
 
 @app.api_route('/telegram-api/{path:path}', methods=['GET', 'POST', 'PUT', 'DELETE'])
