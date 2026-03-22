@@ -156,6 +156,49 @@ def save_report(report: dict[str, Any], log_dir: Path = DEFAULT_LOG_DIR) -> Path
     return path
 
 
+async def scan_bytes(data: bytes, timeout: int = 30) -> dict[str, Any]:
+    """Stream bytes to clamdscan for inline malware scanning.
+
+    Uses ``clamdscan --stream -`` which pipes stdin directly to the running
+    clamd daemon socket — no temp file required, safe for untrusted data.
+
+    Fail mode: if clamd is unavailable or times out, returns error with
+    infected_count=0 so the caller can choose fail-open (log + allow).
+
+    Args:
+        data: Raw bytes to scan (decoded base64, file content, etc.).
+        timeout: Maximum seconds to wait for clamdscan.
+
+    Returns:
+        Parsed scan result dict, always includes ``infected_count`` key.
+    """
+    import asyncio
+
+    if not data:
+        return {"scanner": "clamav", "infected_count": 0, "scanned_bytes": 0, "error": None}
+
+    try:
+        proc = await asyncio.create_subprocess_exec(
+            "clamdscan", "--stream", "--no-summary", "-",
+            stdin=asyncio.subprocess.PIPE,
+            stdout=asyncio.subprocess.PIPE,
+            stderr=asyncio.subprocess.PIPE,
+        )
+        stdout, _ = await asyncio.wait_for(proc.communicate(input=data), timeout=timeout)
+        output = stdout.decode("utf-8", errors="replace")
+        result = parse_clamscan_output(output, proc.returncode)
+        result["scanned_bytes"] = len(data)
+        return result
+    except asyncio.TimeoutError:
+        logger.warning("ClamAV scan_bytes timed out after %ds", timeout)
+        return {"scanner": "clamav", "infected_count": 0, "error": "timeout", "scanned_bytes": len(data)}
+    except FileNotFoundError:
+        return {"scanner": "clamav", "infected_count": 0, "error": "binary_not_found", "scanned_bytes": len(data)}
+    except Exception as exc:
+        logger.error("ClamAV scan_bytes error: %s", exc)
+        return {"scanner": "clamav", "infected_count": 0, "error": str(exc), "scanned_bytes": len(data)}
+
+
 def generate_summary(report: dict[str, Any]) -> dict[str, Any]:
     """Generate a summary dict suitable for the health report.
 

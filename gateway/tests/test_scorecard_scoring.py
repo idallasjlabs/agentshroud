@@ -161,15 +161,21 @@ class TestScoreVulnerabilityManagement:
 
     def test_two_with_highs_no_criticals(self):
         trivy = {"status": "clean", "critical": 0, "high": 3, "medium": 0}
-        assert si._score_vulnerability_management(trivy) == 2
+        # 48h freshness gate must pass; high>0 caps score at 2 before 24h check
+        with patch.object(si, "_is_fresh", return_value=True):
+            assert si._score_vulnerability_management(trivy) == 2
 
     def test_three_with_mediums_only(self):
         trivy = {"status": "clean", "critical": 0, "high": 0, "medium": 5}
-        assert si._score_vulnerability_management(trivy) == 3
+        # 48h freshness gate must pass; medium>0 caps score at 3 before 24h check
+        with patch.object(si, "_is_fresh", return_value=True):
+            assert si._score_vulnerability_management(trivy) == 3
 
     def test_four_clean_but_stale(self):
         trivy = {"status": "clean", "critical": 0, "high": 0, "medium": 0}
-        with patch.object(si, "_TRIVY_REPORT_DIR", _mock_dir_with_files("trivy-001.json")):
+        # Report is within 48h window (gate passes) but not fresh <24h → score 4
+        with patch.object(si, "_TRIVY_REPORT_DIR", _mock_dir_with_files("trivy-001.json")), \
+             patch.object(si, "_is_fresh", side_effect=lambda *a, **kw: kw.get("max_age_hours", 24) == 48):
             assert si._score_vulnerability_management(trivy) == 4
 
     def test_five_clean_and_fresh(self, clean_trivy):
@@ -266,11 +272,15 @@ class TestScoreMalwareDefense:
 
     def test_three_running_clean_no_files_count(self):
         clamav = {"status": "completed", "critical": 0, "files_scanned": 0}
-        assert si._score_malware_defense(clamav) == 3
+        # 48h freshness gate must pass; files_scanned=0 → score 3
+        with patch.object(si, "_is_fresh", return_value=True):
+            assert si._score_malware_defense(clamav) == 3
 
     def test_four_scanned_workspace_stale(self):
         clamav = {"status": "completed", "critical": 0, "files_scanned": 100}
-        with patch.object(si, "_CLAMAV_REPORT_DIR", _mock_dir_with_files("clamav-001.json")):
+        # Report is within 48h window (gate passes) but not fresh <24h → score 4
+        with patch.object(si, "_CLAMAV_REPORT_DIR", _mock_dir_with_files("clamav-001.json")), \
+             patch.object(si, "_is_fresh", side_effect=lambda *a, **kw: kw.get("max_age_hours", 24) == 48):
             assert si._score_malware_defense(clamav) == 4
 
     def test_five_scanned_and_fresh(self, clean_clamav):

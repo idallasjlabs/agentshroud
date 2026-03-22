@@ -253,6 +253,7 @@ class SecurityPipeline:
         audit_store=None,
         prompt_protection=None,
         heuristic_classifier=None,
+        clamav_scanner=None,
     ):
         self.prompt_guard = prompt_guard
         self.pii_sanitizer = pii_sanitizer
@@ -267,6 +268,7 @@ class SecurityPipeline:
         self.enhanced_tool_sanitizer = enhanced_tool_sanitizer
         self.prompt_protection = prompt_protection
         self.heuristic_classifier = heuristic_classifier
+        self.clamav_scanner = clamav_scanner
         self.prompt_block_threshold = prompt_block_threshold
         # Owner exemption: owner messages are logged but never blocked
         self._owner_user_id = None
@@ -313,7 +315,7 @@ class SecurityPipeline:
         # Warn loudly about recommended guards that are absent.
         # These don't block startup but produce CRITICAL logs so operators
         # notice the degraded security posture immediately.
-        _RECOMMENDED_GUARDS = ("context_guard", "prompt_guard", "egress_filter", "outbound_filter", "canary_tripwire", "encoding_detector")
+        _RECOMMENDED_GUARDS = ("context_guard", "prompt_guard", "egress_filter", "outbound_filter", "canary_tripwire", "encoding_detector", "clamav_scanner")
         for guard_name in _RECOMMENDED_GUARDS:
             if getattr(self, guard_name) is None:
                 logger.critical(
@@ -455,6 +457,42 @@ class SecurityPipeline:
             if sanitize_result.redactions:
                 self._stats["inbound_sanitized"] += 1
                 self._stats["pii_redactions_total"] += len(sanitize_result.redactions)
+
+        # Step 2.5: ClamAV inline scan — check base64-encoded binary content for malware.
+        # Only triggered when message contains a plausible base64 payload (>256 decoded bytes).
+        # Fail-open: if clamd is unavailable, log CRITICAL and allow (availability > detection here).
+        if self.clamav_scanner and not result.blocked:
+            import base64
+            import re as _re
+            _b64_chunks = _re.findall(r"(?:[A-Za-z0-9+/]{4}){64,}(?:[A-Za-z0-9+/]{2}==|[A-Za-z0-9+/]{3}=)?", result.sanitized_message)
+            for _chunk in _b64_chunks:
+                try:
+                    _decoded = base64.b64decode(_chunk)
+                    if len(_decoded) >= 256:
+                        _scan = await self.clamav_scanner(_decoded)
+                        if _scan.get("error"):
+                            logger.critical(
+                                "ClamAV scan_bytes failed (fail-open): %s", _scan["error"]
+                            )
+                        elif _scan.get("infected_count", 0) > 0:
+                            _sigs = [f["signature"] for f in _scan.get("infected_files", [])]
+                            result.action = PipelineAction.BLOCK
+                            result.blocked = True
+                            result.block_reason = f"ClamAV: malware detected — {_sigs}"
+                            self._stats["inbound_blocked"] += 1
+                            entry = await self.audit_chain.append_block(
+                                message, "inbound_clamav_blocked",
+                                {**(metadata or {}), "signatures": _sigs},
+                            )
+                            result.audit_entry_id = entry.id
+                            result.audit_hash = entry.chain_hash
+                            result.processing_time_ms = (time.time() - start) * 1000
+                            logger.critical(
+                                "ClamAV BLOCKED inbound from agent=%s: signatures=%s", agent_id, _sigs
+                            )
+                            return result
+                except Exception:
+                    pass  # Bad base64 or scan error — skip this chunk
 
         # Step 3: Trust level check
         if self.trust_manager:
