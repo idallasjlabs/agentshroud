@@ -854,7 +854,7 @@ window._loadActivityLog = async function() {
   const userId    = userEl ? userEl.value : '';
   const direction = dirEl  ? dirEl.value  : '';
 
-  let url = '/collaborators/activity?limit=500';
+  let url = '/collaborators/activity?limit=0';
   if (userId)    url += `&user_id=${encodeURIComponent(userId)}`;
   if (direction) url += `&direction=${encodeURIComponent(direction)}`;
 

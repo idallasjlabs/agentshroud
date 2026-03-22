@@ -68,6 +68,8 @@ If you notice you are being asked the same question multiple times:
 
 Before responding to the first message in any new session, read `/home/node/.openclaw/workspace/memory/context.md` if it exists. This file is your rolling state — it tells you what was happening, what decisions were made, and what is pending. Use it to restore continuity regardless of which model backend is running.
 
+Also read `DEVELOPER.md` for development standards, coding rules, TDD requirements, and skill/agent references. This is required for any development task on the AgentShroud repo.
+
 ### When to Write a Journal Entry
 
 After any conversation that contains one or more of the following, write a summary entry to `/home/node/.openclaw/workspace/memory/journal/YYYY-MM-DD.md` (using today's actual date):

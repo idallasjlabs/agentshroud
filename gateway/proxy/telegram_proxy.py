@@ -259,7 +259,10 @@ class TelegramAPIProxy:
         self._ssl_context = ssl.create_default_context()
         self._max_outbound_chars = int(os.environ.get("AGENTSHROUD_MAX_OUTBOUND_CHARS", "3800"))
         self._block_cascade_seconds = float(os.environ.get("AGENTSHROUD_BLOCK_CASCADE_SECONDS", "4.0"))
+        self._block_cascade_threshold = int(os.environ.get("AGENTSHROUD_BLOCK_CASCADE_THRESHOLD", "3"))
+        self._block_cascade_window_seconds = float(os.environ.get("AGENTSHROUD_BLOCK_CASCADE_WINDOW_SECONDS", "300.0"))
         self._recent_outbound_blocks_until: dict[str, float] = {}
+        self._outbound_block_timestamps: dict[str, list[float]] = {}
         self._system_notice_cooldown_seconds = float(
             os.environ.get("AGENTSHROUD_SYSTEM_NOTICE_COOLDOWN_SECONDS", "120.0")
         )
@@ -372,10 +375,29 @@ class TelegramAPIProxy:
             return True
         return False
 
-    def _set_outbound_block_cascade(self, chat_id: str) -> None:
-        """Set short per-chat block window to prevent fragment leak-through."""
-        if chat_id:
-            self._recent_outbound_blocks_until[chat_id] = time.time() + self._block_cascade_seconds
+    def _set_outbound_block_cascade(self, chat_id: str, *, force: bool = False) -> None:
+        """Activate per-chat cascade window to prevent streaming-fragment leak-through.
+
+        Args:
+            force: When True, activates the cascade window immediately (used for
+                   deterministic blocks like over-length). When False, activates only
+                   after _block_cascade_threshold blocks within _block_cascade_window_seconds
+                   (default: 3 in 5 min) — prevents one pipeline false-positive from
+                   cascade-locking the conversation.
+        """
+        if not chat_id:
+            return
+        now = time.time()
+        if force:
+            self._recent_outbound_blocks_until[chat_id] = now + self._block_cascade_seconds
+            return
+        timestamps = self._outbound_block_timestamps.get(chat_id, [])
+        # Prune timestamps outside the rolling window.
+        timestamps = [t for t in timestamps if now - t < self._block_cascade_window_seconds]
+        timestamps.append(now)
+        self._outbound_block_timestamps[chat_id] = timestamps
+        if len(timestamps) >= self._block_cascade_threshold:
+            self._recent_outbound_blocks_until[chat_id] = now + self._block_cascade_seconds
 
     @staticmethod
     def _normalize_command_token(text: str) -> str:
@@ -1107,6 +1129,9 @@ class TelegramAPIProxy:
         # Greetings are always safe — no interrogative required.
         if re.match(r"^\s*(hello|hi|hey|good\s+morning|good\s+afternoon|good\s+evening|howdy)\b", lowered):
             return True
+        # Common conversational identity/capability questions are always safe.
+        if re.search(r"\b(who are you|what do you do|what can you do|tell me about yourself|what does .{1,40} mean|owner.gated|owner gated)\b", lowered):
+            return True
         if not any(ch in lowered for ch in ("?", "how", "what", "why", "can you explain", "walk me through")):
             return False
         if TelegramAPIProxy._looks_like_file_query(lowered):
@@ -1135,6 +1160,8 @@ class TelegramAPIProxy:
                 "self-modification",
                 "filters messages",
                 "how does this work",
+                "how does it work",
+                "how do you work",
                 "network",
                 "infrastructure",
                 "hosting",
@@ -1143,6 +1170,9 @@ class TelegramAPIProxy:
                 "collaboration",
                 "help with",
                 "what can you",
+                "what do you",
+                "who are you",
+                "tell me about",
                 "security model",
                 "security approach",
                 "protection",
@@ -1150,6 +1180,8 @@ class TelegramAPIProxy:
                 "restrict",
                 "decline",
                 "not allowed",
+                "owner gated",
+                "gated",
                 "credit card",
                 "pii",
                 "personal info",
@@ -1453,6 +1485,10 @@ class TelegramAPIProxy:
         if not isinstance(text, str):
             return False
         lowered = normalize_input(text).lower()
+        # Conceptual/diagnostic questions about schedules are not execution requests.
+        conceptual_markers = ("how does", "what is", "do you have", "tell me about", "is there a", "are there any")
+        if any(marker in lowered for marker in conceptual_markers):
+            return False
         schedule_markers = (
             "cron",
             "schedule",
@@ -1465,8 +1501,9 @@ class TelegramAPIProxy:
         )
         if not any(marker in lowered for marker in schedule_markers):
             return False
-        action_markers = ("run", "execute", "start", "trigger", "create", "set up", "configure")
-        return any(marker in lowered for marker in action_markers)
+        # Use word-boundary matching for "run" so "running" doesn't trigger a false positive.
+        action_markers_re = (r"\brun\b", r"\bexecute\b", r"\bstart\b", r"\btrigger\b", r"\bcreate\b", r"\bset up\b", r"\bconfigure\b")
+        return any(re.search(pat, lowered) for pat in action_markers_re)
 
     @staticmethod
     def _looks_like_model_switch_request(text: str) -> bool:
@@ -1734,6 +1771,11 @@ class TelegramAPIProxy:
             for token in ("metadata-endpoint", "imds", "secret-access", "credential", "secret", "token", "password", "key")
         ):
             return _COLLABORATOR_SECRET_NOTICE
+        if any(
+            token in lowered
+            for token in ("outbound policy block", "outbound block", "blocked outbound", "blocked response", "pipeline blocked")
+        ):
+            return _COLLABORATOR_UNAVAILABLE_NOTICE
         if any(
             token in lowered
             for token in ("internal-network", "ssrf", "localhost", "egress", "domain", "network", "url", "web")
@@ -2578,7 +2620,7 @@ class TelegramAPIProxy:
                     )
                     data["text"] = self._collaborator_safe_notice("outbound policy block")
                     self._stats["outbound_filtered"] += 1
-                    self._set_outbound_block_cascade(chat_id)
+                    self._set_outbound_block_cascade(chat_id, force=True)
                     logger.warning(
                         "Outbound over-length message blocked for chat %s (%d chars)",
                         chat_id,
@@ -3322,6 +3364,20 @@ class TelegramAPIProxy:
             chat_id = message.get("chat", {}).get("id")
 
             if not text:
+                # In local_only mode, collaborators cannot send raw media (no caption).
+                # Forwarding it to the bot would bypass all inbound collaborator guards.
+                _is_known_collab = (
+                    self._rbac
+                    and not self._rbac.is_owner(user_id)
+                    and user_id in {str(uid) for uid in (self._rbac.collaborator_user_ids or [])}
+                )
+                if _is_known_collab and self._resolve_collaborator_mode(user_id) == "local_only":
+                    if chat_id:
+                        await self._send_owner_admin_notice(
+                            int(str(chat_id)),
+                            f"{_PROTECT_HEADER}Media without a caption cannot be processed in collaborator mode. Add a text caption to your image or file.",
+                        )
+                    continue
                 filtered_updates.append(update)
                 continue
 

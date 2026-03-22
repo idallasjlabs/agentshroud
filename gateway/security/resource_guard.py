@@ -365,17 +365,19 @@ class ResourceGuard:
         self.monitoring_active = False
 
 
-# Global instance for easy access
-global_resource_guard = ResourceGuard()
+_global_resource_guard: Optional[ResourceGuard] = None
 
 
 def get_resource_guard() -> ResourceGuard:
-    """Get the global resource guard instance."""
-    return global_resource_guard
+    """Get the global resource guard instance, creating it lazily on first call."""
+    global _global_resource_guard
+    if _global_resource_guard is None:
+        _global_resource_guard = ResourceGuard()
+    return _global_resource_guard
 
 
 def setup_resource_guard(limits: Optional[ResourceLimits] = None) -> ResourceGuard:
     """Setup resource guard with custom limits."""
-    global global_resource_guard
-    global_resource_guard = ResourceGuard(limits)
-    return global_resource_guard
+    global _global_resource_guard
+    _global_resource_guard = ResourceGuard(limits)
+    return _global_resource_guard
