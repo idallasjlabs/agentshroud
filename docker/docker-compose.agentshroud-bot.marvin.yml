@@ -16,7 +16,7 @@ services:
       - "127.0.0.1:9080:8080"
     environment:
       - AGENTSHROUD_INSTANCE=marvin-dev
-      - PROXY_ALLOWED_NETWORKS=172.21.0.0/16
+      - PROXY_ALLOWED_NETWORKS=172.20.0.0/16,172.21.0.0/16,172.22.0.0/16
       - TELEGRAM_BOT_TOKEN_FILE=/run/secrets/telegram_bot_token
     secrets:
       - telegram_bot_token

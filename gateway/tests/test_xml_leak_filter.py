@@ -92,3 +92,36 @@ File path: /home/user/secret.txt"""
         assert "<function_calls>" not in filtered
         # But paths should remain (this is the quick filter)
         assert "/home/user/secret.txt" in filtered
+
+
+# ── C32: Command Injection Scan tests ────────────────────────────────────────
+
+class TestCommandInjectionScan:
+    @pytest.fixture
+    def xml_filter(self):
+        return XMLLeakFilter()
+
+    def test_clean_text_passes(self, xml_filter):
+        result = xml_filter.scan_command_injection("The answer is 42.")
+        assert isinstance(result, FilterResult)
+        assert not result.filter_applied
+        assert result.removed_items == []
+
+    def test_shell_injection_detected(self, xml_filter):
+        result = xml_filter.scan_command_injection("Result: ; rm -rf /tmp/test")
+        assert result.filter_applied
+        assert any("command_injection" in item for item in result.removed_items)
+
+    def test_sql_injection_detected(self, xml_filter):
+        result = xml_filter.scan_command_injection("Input: ' OR '1'='1")
+        assert result.filter_applied
+        assert any("command_injection" in item for item in result.removed_items)
+
+    def test_python_eval_detected(self, xml_filter):
+        result = xml_filter.scan_command_injection("eval(compile('import os'))")
+        assert result.filter_applied
+
+    def test_empty_text_returns_clean(self, xml_filter):
+        result = xml_filter.scan_command_injection("")
+        assert not result.filter_applied
+        assert result.removed_items == []

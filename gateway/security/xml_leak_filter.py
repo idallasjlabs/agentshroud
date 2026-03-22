@@ -23,9 +23,22 @@ class FilterResult:
     filter_applied: bool
 
 
+# C32: Command / code injection patterns for outbound text scanning
+_COMMAND_INJECTION_PATTERNS: list[re.Pattern] = [
+    # Shell metacharacters in execution context
+    re.compile(r'(?:^|[^\\])[;&|`]\s*(?:rm|cp|mv|cat|chmod|wget|curl|bash|sh|python|node)\b', re.IGNORECASE | re.MULTILINE),
+    # SQL injection signatures
+    re.compile(r"(?:'\s*OR\s*'?1'?\s*=\s*'?1|UNION\s+(?:ALL\s+)?SELECT|DROP\s+TABLE\s+\w+|INSERT\s+INTO\s+\w+\s+VALUES)", re.IGNORECASE),
+    # Python eval/exec/import injection
+    re.compile(r'\b(?:eval|exec)\s*\(|__import__\s*\(', re.IGNORECASE),
+    # Node.js child_process / require injection
+    re.compile(r"""require\s*\(\s*['"]child_process['"]\s*\)|process\.exec\s*\("""),
+]
+
+
 class XMLLeakFilter:
     """Filter to remove sensitive XML and path information from outbound responses."""
-    
+
     def __init__(self):
         """Initialize the filter with predefined patterns."""
         # Function call XML patterns
@@ -124,6 +137,31 @@ class XMLLeakFilter:
             filter_applied=len(removed_items) > 0
         )
     
+    # ── C32: Command Injection Scan ───────────────────────────────────────────
+
+    def scan_command_injection(self, text: str) -> FilterResult:
+        """Scan outbound text for command / code injection patterns.
+
+        Does NOT modify the text — returns a FilterResult with removed_items
+        populated for each matched pattern.  Callers decide whether to block.
+        """
+        if not text:
+            return FilterResult(filtered_content=text or "", removed_items=[], filter_applied=False)
+
+        removed: List[str] = []
+        for pat in _COMMAND_INJECTION_PATTERNS:
+            matches = pat.findall(text)
+            if matches:
+                removed.append(f"command_injection:{pat.pattern[:60]}")
+
+        return FilterResult(
+            filtered_content=text,
+            removed_items=removed,
+            filter_applied=bool(removed),
+        )
+
+    # ─────────────────────────────────────────────────────────────────────────
+
     def filter_function_calls_only(self, response_content: str) -> str:
         """
         Quick filter that only removes function call XML (for performance).
