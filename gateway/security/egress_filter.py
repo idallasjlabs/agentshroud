@@ -49,7 +49,7 @@ class EgressPolicy:
 
     allowed_domains: list[str] = field(default_factory=list)
     allowed_ips: list[str] = field(default_factory=list)  # CIDR or single IP
-    allowed_ports: list[int] = field(default_factory=lambda: [80, 443])
+    allowed_ports: list[int] = field(default_factory=lambda: [80, 443, 465, 587, 993])
     deny_all: bool = True  # Default deny
 
     def matches_domain(self, domain: str) -> bool:
