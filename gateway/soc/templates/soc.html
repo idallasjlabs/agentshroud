@@ -239,6 +239,7 @@
       <div class="tab-bar">
         <div class="tab active" onclick="window._showContribTab('users',this)">Users</div>
         <div class="tab" onclick="window._showContribTab('groups',this)">Groups</div>
+        <div class="tab" onclick="window._showContribTab('activity',this)">Activity</div>
       </div>
       <div id="contribs-users">
         <div class="panel">
@@ -253,6 +254,36 @@
               </thead>
               <tbody id="users-tbody">
                 <tr><td colspan="7" style="color:var(--text-muted);text-align:center;padding:1rem">loading...</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+      <div id="contribs-activity" style="display:none">
+        <div class="panel">
+          <div class="panel-header">
+            Activity Log
+            <div style="display:flex;gap:.5rem;align-items:center">
+              <select id="activity-user-filter" class="filter-select" style="width:180px" onchange="window._loadActivityLog()">
+                <option value="">All Users</option>
+              </select>
+              <button class="btn btn-sm" onclick="window._loadActivityLog()">Refresh</button>
+            </div>
+          </div>
+          <div class="panel-body" style="padding:0">
+            <table class="data-table">
+              <thead>
+                <tr>
+                  <th>Timestamp</th>
+                  <th>User ID</th>
+                  <th>Username</th>
+                  <th>Direction</th>
+                  <th>Source</th>
+                  <th>Message Preview</th>
+                </tr>
+              </thead>
+              <tbody id="activity-tbody">
+                <tr><td colspan="6" style="color:var(--text-muted);text-align:center;padding:1rem">loading...</td></tr>
               </tbody>
             </table>
           </div>
