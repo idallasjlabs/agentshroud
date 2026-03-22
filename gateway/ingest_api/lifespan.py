@@ -318,7 +318,7 @@ async def lifespan(app: FastAPI):
         )
         app_state.egress_filter.set_agent_policy("http_connect_proxy", http_proxy_policy)
         logger.info(
-            "EgressFilter: http_connect_proxy policy set (ports 80/443/22, ssh_relay_hosts=%s)",
+            "EgressFilter: http_connect_proxy policy set (ports 80/443/22/465/587/993, ssh_relay_hosts=%s)",
             ssh_relay_hosts,
         )
     except Exception as e:
