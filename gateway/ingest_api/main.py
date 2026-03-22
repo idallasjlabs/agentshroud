@@ -3800,45 +3800,70 @@ async def slack_api_proxy(path: str, request: Request):
     return JSONResponse(content=result)
 
 
-@app.post("/slack/inbound-event")
-async def slack_inbound_event(request: Request, auth: AuthRequired):
-    """Receive inbound Slack messages from OpenClaw for activity tracking.
+@app.websocket("/slack-ws-relay")
+async def slack_ws_relay(websocket: WebSocket, t: str = Query(...)):
+    """WebSocket relay for Slack Socket Mode inbound traffic.
 
-    OpenClaw's apply-patches.js calls this endpoint on each received Slack DM
-    so that inbound collaborator messages appear in the SOC Activity log labeled
-    source='slack' / direction='inbound'.
+    Bot connects here (ws://) instead of directly to Slack (wss://).
+    The gateway bridges both sides and inspects Slack→Bot frames for
+    events_api message envelopes to record collaborator inbound activity.
 
-    Auth: same gateway_password as all other authenticated endpoints.
-    IP allowlist: same as Telegram proxy (bot container subnet only).
+    The relay token `t` is a one-time value issued by SlackAPIProxy when it
+    intercepts apps.connections.open. It maps to the real Slack WSS URL.
     """
-    # IP allowlist — only the bot container subnet
-    client_ip = request.client.host if request.client else None
-    if client_ip:
-        try:
-            addr = _ipaddress.ip_address(client_ip)
-            if not any(addr in net for net in _PROXY_ALLOWED_NETWORKS):
-                raise HTTPException(status_code=403, detail="Forbidden")
-        except ValueError:
-            raise HTTPException(status_code=403, detail="Forbidden")
-    else:
-        raise HTTPException(status_code=403, detail="Forbidden")
+    import websockets as _websockets
 
-    body = await request.json()
-    user_id = str(body.get("user_id", "unknown"))
-    username = str(body.get("username", "unknown"))
-    message_preview = str(body.get("message_preview", ""))[:80]
+    real_url = _slack_proxy.consume_relay_token(t)
+    if not real_url:
+        await websocket.close(code=4403)
+        return
 
-    tracker = getattr(app_state, "collaborator_tracker", None)
-    if tracker:
+    await websocket.accept()
+
+    async def _upstream_to_bot(upstream) -> None:
+        """Forward Slack→Bot frames; inspect for inbound message events."""
+        async for frame in upstream:
+            if isinstance(frame, str):
+                try:
+                    data = json.loads(frame)
+                    if data.get("type") == "events_api":
+                        event = data.get("payload", {}).get("event", {})
+                        if event.get("type") == "message" and event.get("user"):
+                            tracker = getattr(app_state, "collaborator_tracker", None)
+                            if tracker:
+                                tracker.record_activity(
+                                    user_id=event["user"],
+                                    username=event.get("user", "unknown"),
+                                    message_preview=str(event.get("text", ""))[:80],
+                                    source="slack",
+                                    direction="inbound",
+                                )
+                except (json.JSONDecodeError, KeyError):
+                    pass
+                await websocket.send_text(frame)
+            else:
+                await websocket.send_bytes(frame)
+
+    async def _bot_to_upstream(upstream) -> None:
+        """Forward Bot→Slack frames (acks, etc.)."""
         try:
-            tracker.record_activity(
-                user_id=user_id,
-                username=username,
-                message_preview=message_preview,
-                source="slack",
-                direction="inbound",
+            while True:
+                data = await websocket.receive_text()
+                await upstream.send(data)
+        except Exception:
+            pass
+
+    try:
+        async with _websockets.connect(real_url) as upstream:
+            await asyncio.gather(
+                _upstream_to_bot(upstream),
+                _bot_to_upstream(upstream),
+                return_exceptions=True,
             )
-        except Exception as exc:
-            logger.warning("slack_inbound_event: tracker error (non-fatal): %s", exc)
-
-    return {"ok": True}
+    except Exception as exc:
+        logger.warning("slack_ws_relay: connection error: %s", exc)
+    finally:
+        try:
+            await websocket.close()
+        except Exception:
+            pass

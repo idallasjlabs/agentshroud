@@ -359,3 +359,98 @@ class TestOwnerChannelFiltering:
 
         assert resp == {"ok": True}
         proxy._call_slack_api.assert_called_once()
+
+
+# ─── Socket Mode Relay (apps.connections.open interception) ───────────────────
+
+class TestSocketModeRelay:
+    @pytest.mark.asyncio
+    async def test_connections_open_rewrites_url(self):
+        """apps.connections.open: real WSS URL is stored and relay URL returned."""
+        proxy = _make_proxy()
+        real_wss = "wss://wss-primary.slack.com/link?ticket=abc123&app_id=A01"
+        proxy._call_slack_api = AsyncMock(
+            return_value={"ok": True, "url": real_wss}
+        )
+
+        body = json.dumps({"token": "xapp-test"}).encode()
+        resp = await proxy.proxy_outbound("apps.connections.open", body, "application/json")
+
+        assert resp["ok"] is True
+        relay_url = resp["url"]
+        assert relay_url.startswith("ws://")
+        assert "/slack-ws-relay?t=" in relay_url
+
+        # Token maps to the real URL
+        token = relay_url.split("t=")[1]
+        assert proxy._relay_tokens.get(token) == real_wss
+
+    @pytest.mark.asyncio
+    async def test_connections_open_slack_error_passthrough(self):
+        """apps.connections.open: Slack error response returned unchanged."""
+        proxy = _make_proxy()
+        proxy._call_slack_api = AsyncMock(
+            return_value={"ok": False, "error": "invalid_auth"}
+        )
+
+        body = json.dumps({"token": "xapp-bad"}).encode()
+        resp = await proxy.proxy_outbound("apps.connections.open", body, "application/json")
+
+        assert resp == {"ok": False, "error": "invalid_auth"}
+        assert not proxy._relay_tokens  # No token stored on error
+
+    @pytest.mark.asyncio
+    async def test_connections_open_missing_url_passthrough(self):
+        """apps.connections.open: response without url field returned unchanged."""
+        proxy = _make_proxy()
+        proxy._call_slack_api = AsyncMock(return_value={"ok": True})
+
+        body = json.dumps({"token": "xapp-test"}).encode()
+        resp = await proxy.proxy_outbound("apps.connections.open", body, "application/json")
+
+        assert resp == {"ok": True}
+        assert not proxy._relay_tokens
+
+    @pytest.mark.asyncio
+    async def test_connections_open_skips_content_pipeline(self):
+        """apps.connections.open: pipeline is NOT invoked (not a message method)."""
+        pipeline = MagicMock()
+        pipeline.process_outbound = AsyncMock()
+        proxy = _make_proxy(pipeline=pipeline)
+        proxy._call_slack_api = AsyncMock(
+            return_value={"ok": True, "url": "wss://slack.com/link?ticket=x"}
+        )
+
+        body = json.dumps({"token": "xapp-test"}).encode()
+        await proxy.proxy_outbound("apps.connections.open", body, "application/json")
+
+        pipeline.process_outbound.assert_not_called()
+
+    def test_consume_relay_token_one_time(self):
+        """consume_relay_token returns the URL once then None."""
+        proxy = _make_proxy()
+        proxy._relay_tokens["tok1"] = "wss://slack.com/link?ticket=x"
+
+        assert proxy.consume_relay_token("tok1") == "wss://slack.com/link?ticket=x"
+        assert proxy.consume_relay_token("tok1") is None  # consumed
+
+    def test_consume_relay_token_unknown(self):
+        """consume_relay_token returns None for unknown tokens."""
+        proxy = _make_proxy()
+        assert proxy.consume_relay_token("nonexistent") is None
+
+    @pytest.mark.asyncio
+    async def test_each_reconnect_issues_unique_token(self):
+        """Each call to apps.connections.open issues a distinct relay token."""
+        proxy = _make_proxy()
+        proxy._call_slack_api = AsyncMock(
+            return_value={"ok": True, "url": "wss://wss-primary.slack.com/link?ticket=t1"}
+        )
+
+        body = json.dumps({"token": "xapp-test"}).encode()
+        resp1 = await proxy.proxy_outbound("apps.connections.open", body, "application/json")
+        resp2 = await proxy.proxy_outbound("apps.connections.open", body, "application/json")
+
+        token1 = resp1["url"].split("t=")[1]
+        token2 = resp2["url"].split("t=")[1]
+        assert token1 != token2
