@@ -125,6 +125,10 @@ class EgressApprovalQueue:
         self._event_bus = None
         # Decision audit log — capped at 500 entries (CC-40)
         self._decision_log: List[Dict] = []
+        # Throttle for EgressFilter auto-decisions: domain → last-logged unix timestamp.
+        # Prevents the decision log being flooded with repetitive allow entries for
+        # pre-approved domains (only first occurrence per domain per hour is logged).
+        self._external_decision_throttle: Dict[str, float] = {}
         
         # Ensure rules file directory exists
         try:
@@ -584,6 +588,34 @@ class EgressApprovalQueue:
             "mode": mode,
             "decided_by": decided_by,
             "decided_at": time.time(),
+        }
+        self._decision_log.insert(0, entry)
+        if len(self._decision_log) > 500:
+            self._decision_log = self._decision_log[:500]
+
+    def log_external_decision(
+        self, domain: str, decision: str, agent_id: str, reason: str = ""
+    ) -> None:
+        """Log an automatic allow/deny from EgressFilter.check() (non-interactive).
+
+        Throttled to one entry per domain per hour so pre-approved permanent domains
+        do not flood the decision log on every request.
+        """
+        now = time.time()
+        last = self._external_decision_throttle.get(domain, 0.0)
+        if now - last < 3600:
+            return
+        self._external_decision_throttle[domain] = now
+        entry = {
+            "id": str(uuid.uuid4())[:8],
+            "domain": domain,
+            "port": None,
+            "agent_id": agent_id,
+            "decision": decision,
+            "mode": "auto",
+            "decided_by": "egress_filter",
+            "decided_at": now,
+            "reason": reason,
         }
         self._decision_log.insert(0, entry)
         if len(self._decision_log) > 500:

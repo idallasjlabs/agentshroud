@@ -515,6 +515,19 @@ class EgressFilter:
             except RuntimeError:
                 pass  # No running event loop
 
+        # Feed automatic decisions into the approval queue's decision log so the
+        # SOC egress history page shows both interactive and filter-driven decisions.
+        if self._approval_queue is not None and hasattr(self._approval_queue, "log_external_decision"):
+            try:
+                self._approval_queue.log_external_decision(
+                    domain=dest,
+                    decision=action.value,
+                    agent_id=agent_id,
+                    reason=rule,
+                )
+            except Exception:
+                pass
+
         if action == EgressAction.DENY:
             logger.warning(
                 f"EGRESS DENIED: agent={agent_id} dest={dest} port={port} "
