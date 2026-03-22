@@ -394,11 +394,15 @@ class TestScoreVulnerabilityManagement:
 
     def test_managed_when_no_criticals_but_high(self):
         result = {"tool": "trivy", "status": "warning", "critical": 0, "high": 3}
-        assert _score_vulnerability_management(result) == 2
+        # 48h freshness gate must pass; high>0 caps score at 2 before the 24h check
+        with patch("gateway.security.scanner_integration._is_fresh", return_value=True):
+            assert _score_vulnerability_management(result) == 2
 
     def test_measured_or_higher_when_fully_clean(self):
         # Zero criticals+highs+mediums → at least Measured (4); Optimizing (5) if fresh scan
-        assert _score_vulnerability_management(_trivy_clean()) >= 3
+        # 48h freshness gate must pass to score above Initial
+        with patch("gateway.security.scanner_integration._is_fresh", return_value=True):
+            assert _score_vulnerability_management(_trivy_clean()) >= 3
 
 
 class TestScoreSupplyChain:
@@ -450,8 +454,10 @@ class TestScoreMalwareDefense:
         assert _score_malware_defense(_clamav_infected()) == 1
 
     def test_measured_when_clean_not_fresh(self):
-        # scanned_files > 0 but no fresh report on disk → Measured (4)
-        with patch("gateway.security.scanner_integration._is_fresh", return_value=False):
+        # scanned_files > 0 but report is within 48h window yet not fresh <24h → Measured (4)
+        # 48h gate passes (True), 24h freshness check fails (False)
+        with patch("gateway.security.scanner_integration._is_fresh",
+                   side_effect=lambda *a, **kw: kw.get("max_age_hours", 24) == 48):
             assert _score_malware_defense(_clamav_clean()) == 4
 
 

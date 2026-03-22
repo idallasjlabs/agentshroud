@@ -6,7 +6,7 @@ import logging
 import re
 import time
 import uuid
-from dataclasses import dataclass
+from dataclasses import dataclass, field
 from enum import Enum
 from pathlib import Path
 from typing import Dict, List, Optional, Set
@@ -52,6 +52,41 @@ class EgressRequest:
 
 
 @dataclass
+class EgressScope:
+    """Defines who an egress rule applies to.
+
+    kind values:
+      "all"   — applies to every user/agent (default, backward-compatible)
+      "user"  — applies only to user_ids listed
+      "group" — applies only to members of group_ids listed
+    """
+    kind: str = "all"  # "all" | "user" | "group"
+    user_ids: List[str] = field(default_factory=list)
+    group_ids: List[str] = field(default_factory=list)
+
+    def matches(self, user_id: Optional[str], group_ids: Optional[List[str]], is_owner: bool = False) -> bool:
+        """Return True if this scope applies to the given user context."""
+        if is_owner or self.kind == "all":
+            return True
+        if self.kind == "user" and user_id and user_id in self.user_ids:
+            return True
+        if self.kind == "group" and group_ids:
+            return any(gid in self.group_ids for gid in group_ids)
+        return False
+
+    def to_dict(self) -> dict:
+        return {"kind": self.kind, "user_ids": self.user_ids, "group_ids": self.group_ids}
+
+    @classmethod
+    def from_dict(cls, d: dict) -> "EgressScope":
+        return cls(
+            kind=d.get("kind", "all"),
+            user_ids=d.get("user_ids", []),
+            group_ids=d.get("group_ids", []),
+        )
+
+
+@dataclass
 class EgressRule:
     """Represents an egress allow/deny rule."""
     domain: str
@@ -59,6 +94,7 @@ class EgressRule:
     mode: ApprovalMode
     created_at: float
     expires_at: Optional[float] = None
+    scope: EgressScope = field(default_factory=EgressScope)
 
 
 class EgressApprovalQueue:
@@ -236,7 +272,8 @@ class EgressApprovalQueue:
                     action=rule_data["action"],
                     mode=ApprovalMode(rule_data.get("mode", "permanent")),
                     created_at=rule_data["created_at"],
-                    expires_at=rule_data.get("expires_at")
+                    expires_at=rule_data.get("expires_at"),
+                    scope=EgressScope.from_dict(rule_data.get("scope", {})),
                 )
                 self._permanent_rules[rule.domain] = rule
 
@@ -257,7 +294,8 @@ class EgressApprovalQueue:
                         "action": rule.action,
                         "mode": rule.mode.value,
                         "created_at": rule.created_at,
-                        "expires_at": rule.expires_at
+                        "expires_at": rule.expires_at,
+                        "scope": getattr(rule, "scope", EgressScope()).to_dict(),
                     }
                     for rule in self._permanent_rules.values()
                 ],
@@ -551,31 +589,39 @@ class EgressApprovalQueue:
                 for req in self._pending_requests.values()
             ]
     
+    def _rule_to_dict(self, rule: "EgressRule") -> dict:
+        d = {
+            "domain": rule.domain,
+            "action": rule.action,
+            "mode": rule.mode.value,
+            "created_at": rule.created_at,
+            "expires_at": rule.expires_at,
+            "scope": getattr(rule, "scope", EgressScope()).to_dict(),
+        }
+        src = getattr(rule, "source", "user")
+        if src:
+            d["source"] = src
+        return d
+
     async def get_all_rules(self) -> Dict:
-        """Get all rules (permanent and session)."""
+        """Get all rules (permanent and session) with scope information."""
         async with self._lock:
             return {
-                "permanent_rules": [
-                    {
-                        "domain": rule.domain,
-                        "action": rule.action,
-                        "mode": rule.mode.value,
-                        "created_at": rule.created_at,
-                        "expires_at": rule.expires_at
-                    }
-                    for rule in self._permanent_rules.values()
-                ],
-                "session_rules": [
-                    {
-                        "domain": rule.domain,
-                        "action": rule.action,
-                        "mode": rule.mode.value,
-                        "created_at": rule.created_at,
-                        "expires_at": rule.expires_at
-                    }
-                    for rule in self._session_rules.values()
-                ]
+                "permanent_rules": [self._rule_to_dict(r) for r in self._permanent_rules.values()],
+                "session_rules": [self._rule_to_dict(r) for r in self._session_rules.values()],
             }
+
+    def get_rules_for_user(
+        self, user_id: Optional[str], group_ids: Optional[List[str]] = None, is_owner: bool = False
+    ) -> List["EgressRule"]:
+        """Return all rules whose scope matches the given user context (synchronous, lock-free read)."""
+        group_ids = group_ids or []
+        matching = []
+        for rule in list(self._permanent_rules.values()) + list(self._session_rules.values()):
+            scope = getattr(rule, "scope", EgressScope())
+            if scope.matches(user_id, group_ids, is_owner=is_owner):
+                matching.append(rule)
+        return matching
     
     def _append_decision(self, request: "EgressRequest", decision: str, mode: str, decided_by: str) -> None:
         """Append an entry to the capped decision audit log (CC-40)."""
@@ -640,27 +686,31 @@ class EgressApprovalQueue:
                     return removed
         return False
 
-    async def add_rule(self, domain: str, action: str, mode: ApprovalMode) -> bool:
+    async def add_rule(
+        self, domain: str, action: str, mode: ApprovalMode, scope: Optional["EgressScope"] = None
+    ) -> bool:
         """
         Add or modify an egress rule.
-        
+
         Args:
             domain: Target domain
             action: "allow" or "deny"
             mode: Rule mode (permanent or session)
-            
+            scope: Optional EgressScope (default: all users)
+
         Returns:
             True if rule was added successfully
         """
         if action not in ("allow", "deny"):
             return False
-        
+
         async with self._lock:
             rule = EgressRule(
                 domain=domain,
                 action=action,
                 mode=mode,
-                created_at=time.time()
+                created_at=time.time(),
+                scope=scope or EgressScope(),
             )
             
             if mode == ApprovalMode.PERMANENT:

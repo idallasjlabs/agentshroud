@@ -353,10 +353,17 @@ async def deny_egress(
     return {"ok": False, "error": "Request not found or already decided"}
 
 
+class EgressScopeRequest(BaseModel):
+    kind: str = "all"         # "all" | "user" | "group"
+    user_ids: List[str] = []
+    group_ids: List[str] = []
+
+
 class EgressRuleOverrideRequest(BaseModel):
     domain: str
-    action: str = "deny"  # "allow" or "deny"
-    mode: str = "permanent"  # "permanent" or "session"
+    action: str = "deny"      # "allow" or "deny"
+    mode: str = "permanent"   # "permanent" or "session"
+    scope: Optional[EgressScopeRequest] = None  # None means "all" (backward-compatible)
 
 
 @router.post("/egress/rules/override")
@@ -364,17 +371,24 @@ async def override_egress_rule(
     body: EgressRuleOverrideRequest,
     caller: SCLCaller = Depends(get_caller),
 ) -> Dict:
-    """Add or override a specific egress domain rule (CC-10)."""
+    """Add or override a specific egress domain rule (CC-10).
+
+    Supports optional scope to restrict rule to specific users or groups.
+    Owner always inherits all rules regardless of scope.
+    """
     caller.require(Action.APPROVE, Resource.APPROVALS)
     app = _app_state()
     eq = getattr(app, "egress_approval_queue", None)
     if not eq:
         return {"ok": False, "error": "Egress approval queue not available"}
-    from ..security.egress_approval import ApprovalMode
+    from ..security.egress_approval import ApprovalMode, EgressScope
     mode = ApprovalMode.PERMANENT if body.mode == "permanent" else ApprovalMode.SESSION
-    ok = await eq.add_rule(body.domain, body.action, mode)
-    _log_audit(caller, "override egress rule", target=body.domain, details={"action": body.action, "mode": body.mode})
-    return {"ok": ok, "domain": body.domain, "action": body.action, "mode": body.mode}
+    scope = EgressScope.from_dict(body.scope.model_dump()) if body.scope else EgressScope()
+    ok = await eq.add_rule(body.domain, body.action, mode, scope=scope)
+    _log_audit(caller, "override egress rule", target=body.domain,
+               details={"action": body.action, "mode": body.mode, "scope": scope.to_dict()})
+    return {"ok": ok, "domain": body.domain, "action": body.action, "mode": body.mode,
+            "scope": scope.to_dict()}
 
 
 @router.delete("/egress/rules/{domain}")

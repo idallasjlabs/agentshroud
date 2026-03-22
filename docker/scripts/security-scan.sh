@@ -129,7 +129,8 @@ run_sbom() {
         return 1
     fi
 
-    syft "$WORKSPACE" -o spdx-json \
+    syft / --exclude ./proc --exclude ./sys --exclude ./dev --exclude ./run/secrets \
+        -o spdx-json \
         > "$LOG_DIR/sbom/sbom-$TIMESTAMP.json" 2>"$LOG_DIR/sbom/sbom-$TIMESTAMP.err" || true
 
     PACKAGES=$(python3 -c "
