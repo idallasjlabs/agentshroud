@@ -336,6 +336,19 @@ if (config.gateway.controlUi.dangerouslyAllowHostHeaderOriginFallback !== false)
   changed = true;
 }
 
+// Patch 2c: trustedProxies — trust Tailscale gateway so Control UI pairing works
+// Without this, OpenClaw sees the Tailscale NAT address as an untrusted proxy and
+// requires a full pairing challenge for every browser session from non-loopback origins.
+const trustedProxies = (process.env.AGENTSHROUD_TRUSTED_PROXIES || '10.254.110.0/24')
+  .split(',').map(p => p.trim()).filter(p => p.length > 0);
+const currentProxies = Array.isArray(config.gateway.trustedProxies) ? config.gateway.trustedProxies : [];
+const missingProxies = trustedProxies.filter(p => !currentProxies.includes(p));
+if (missingProxies.length > 0) {
+  config.gateway.trustedProxies = [...currentProxies, ...missingProxies];
+  console.log(`[init-patch] Added gateway.trustedProxies: ${missingProxies.join(', ')}`);
+  changed = true;
+}
+
 // Patch 3: Telegram
 const telegramToken = process.env.TELEGRAM_BOT_TOKEN;
 if (telegramToken) {
