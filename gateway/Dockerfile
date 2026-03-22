@@ -139,7 +139,14 @@ RUN DPKG_ARCH=$(dpkg --print-architecture) && \
         "https://packages.fluentbit.io/debian/bookworm/pool/main/f/fluent-bit/fluent-bit_${FLUENT_BIT_VERSION}_${DPKG_ARCH}.deb" && \
       dpkg -i "/tmp/fluent-bit_${FLUENT_BIT_VERSION}_${DPKG_ARCH}.deb" && \
       rm "/tmp/fluent-bit_${FLUENT_BIT_VERSION}_${DPKG_ARCH}.deb" ) || \
-    echo "fluent-bit: download deferred to runtime"
+    ( curl -sSfL https://packages.fluentbit.io/fluentbit.key \
+          | gpg --dearmor -o /usr/share/keyrings/fluentbit.gpg && \
+      echo "deb [signed-by=/usr/share/keyrings/fluentbit.gpg] https://packages.fluentbit.io/debian/bookworm bookworm main" \
+          > /etc/apt/sources.list.d/fluentbit.list && \
+      apt-get update -qq && apt-get install -y --no-install-recommends \
+          "fluent-bit=${FLUENT_BIT_VERSION}" && \
+      rm -rf /var/lib/apt/lists/* ) || \
+    echo "fluent-bit: install failed, starting without log collector"
 
 # libelf1 — runtime dependency for Falco binary
 RUN apt-get update && apt-get install -y --no-install-recommends libelf1 && rm -rf /var/lib/apt/lists/*
@@ -188,6 +195,10 @@ RUN mkdir -p /var/log/falco && chown agentshroud:agentshroud /var/log/falco
 
 # Bake in gateway ossec.conf (FIM on /app/gateway + Falco alert ingestion)
 COPY docker/wazuh/ossec.conf /var/ossec/etc/ossec.conf
+# Pre-register agent key so wazuh-agentd starts without needing a live manager
+RUN echo "001 agentshroud-gateway any c0000000000000000000000000000001" \
+        > /var/ossec/etc/client.keys && \
+    chmod 640 /var/ossec/etc/client.keys
 
 # ── Security Evidence Files ─────────────────────────────────────────────────
 # These files are checked by the Container Security Scorecard scorer functions.
