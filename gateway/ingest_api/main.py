@@ -3798,3 +3798,47 @@ async def slack_api_proxy(path: str, request: Request):
     from fastapi.responses import JSONResponse
     result = await _slack_proxy.proxy_outbound(path, body, content_type, is_system=is_system)
     return JSONResponse(content=result)
+
+
+@app.post("/slack/inbound-event")
+async def slack_inbound_event(request: Request, auth: AuthRequired):
+    """Receive inbound Slack messages from OpenClaw for activity tracking.
+
+    OpenClaw's apply-patches.js calls this endpoint on each received Slack DM
+    so that inbound collaborator messages appear in the SOC Activity log labeled
+    source='slack' / direction='inbound'.
+
+    Auth: same gateway_password as all other authenticated endpoints.
+    IP allowlist: same as Telegram proxy (bot container subnet only).
+    """
+    # IP allowlist — only the bot container subnet
+    client_ip = request.client.host if request.client else None
+    if client_ip:
+        try:
+            addr = _ipaddress.ip_address(client_ip)
+            if not any(addr in net for net in _PROXY_ALLOWED_NETWORKS):
+                raise HTTPException(status_code=403, detail="Forbidden")
+        except ValueError:
+            raise HTTPException(status_code=403, detail="Forbidden")
+    else:
+        raise HTTPException(status_code=403, detail="Forbidden")
+
+    body = await request.json()
+    user_id = str(body.get("user_id", "unknown"))
+    username = str(body.get("username", "unknown"))
+    message_preview = str(body.get("message_preview", ""))[:80]
+
+    tracker = getattr(app_state, "collaborator_tracker", None)
+    if tracker:
+        try:
+            tracker.record_activity(
+                user_id=user_id,
+                username=username,
+                message_preview=message_preview,
+                source="slack",
+                direction="inbound",
+            )
+        except Exception as exc:
+            logger.warning("slack_inbound_event: tracker error (non-fatal): %s", exc)
+
+    return {"ok": True}

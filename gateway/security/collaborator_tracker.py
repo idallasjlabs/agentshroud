@@ -191,12 +191,13 @@ class CollaboratorActivityTracker:
         except (TypeError, ValueError):
             return 0.0
 
-    def get_activity(self, since: float = 0, limit: int = 100) -> list[dict]:
-        """Return recent activity entries in chronological order.
+    def get_activity(self, since: float = 0, limit: int = 100, offset: int = 0) -> list[dict]:
+        """Return activity entries sorted newest-first.
 
         Args:
             since: Unix timestamp — only return entries after this time.
-            limit: Maximum number of entries to return (most recent first).
+            limit: Maximum entries to return (0 = all).
+            offset: Skip this many entries after sorting (for pagination).
 
         Returns:
             List of activity dicts, newest first.
@@ -221,9 +222,11 @@ class CollaboratorActivityTracker:
             logger.warning("CollaboratorActivityTracker: read failed: %s", exc)
             return []
 
-        # Newest first, capped to limit
+        # Newest first
         entries.sort(key=lambda e: self._coerce_timestamp(e.get("timestamp", 0)), reverse=True)
-        return entries[:limit]
+        if offset:
+            entries = entries[offset:]
+        return entries[:limit] if limit else entries
 
     def get_activity_summary(self) -> dict:
         """Return aggregated statistics over all recorded activity.
