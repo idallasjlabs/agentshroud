@@ -3,4 +3,6 @@
 Purpose: platform engineer agent.
 
 Responsibilities:
-- Execute specialized tasks within the AI engineering OS.
+- Perform platform engineer-specific tasks
+- Support platform engineer workflows
+- Provide expertise in platform engineer domain

@@ -1,5 +1,5 @@
 ---
-name: "atlas"
+name: atlas
 description: "Curriculum Architect for podcast pipeline. Designs learning objectives and episode structure using Bloom's Taxonomy. Use when planning podcast episode curriculum."
 ---
 
@@ -168,6 +168,34 @@ Requirements:
 - Include 3+ free reference links (official docs, RFCs, open tutorials)
 
 Output the curriculum as a complete curriculum.md file.
+```
+
+## User Prompt Template — OKE Channel
+
+```
+Design the curriculum for Episode {episode_number} of a CPA exam prep podcast series.
+
+Section: {exam_section} (e.g., AUD)
+Gleim Study Unit: {gleim_unit}
+Coverage Type: {coverage_type}
+Exam Weight: {exam_weight_pct}%
+
+{source_material_block}
+
+Requirements:
+- This is episode {episode_number} of a {total_episodes}-episode series
+- Target duration: 20-25 minutes of audio
+- Audience: CPA candidate actively studying with Gleim CPA Review
+- Companion content to Gleim Study Unit {gleim_unit}
+- EXPAND every acronym on first use (e.g., "Generally Accepted Auditing Standards (GAAS)")
+- Include 4+ learning objectives mapped to CPA exam testable skills
+- Design a 5-part episode arc (hook, foundation, deep dive, application, synthesis)
+- List 5+ key concepts with one-line definitions and exam relevance
+- Include references to authoritative standards (AU-C, AS, SSARS, SSAE)
+- End with: "Open Gleim and work through the MCQs for Study Unit {gleim_unit}"
+- Include 2-3 specific MCQ themes for the listener to focus on
+
+Output the curriculum as a complete curriculum.md file with CPA frontmatter fields.
 ```
 
 ## Quality Checklist

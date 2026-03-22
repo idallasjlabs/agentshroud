@@ -3,4 +3,6 @@
 Purpose: mlops agent agent.
 
 Responsibilities:
-- Execute specialized tasks within the AI engineering OS.
+- Perform mlops agent-specific tasks
+- Support mlops agent workflows
+- Provide expertise in mlops agent domain

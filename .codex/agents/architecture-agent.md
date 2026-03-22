@@ -3,4 +3,7 @@
 Purpose: architecture agent agent.
 
 Responsibilities:
-- Execute specialized tasks within the AI engineering OS.
+- Design system architecture and component interactions
+- Evaluate architectural trade-offs
+- Document architectural decisions (ADRs)
+- Ensure scalability and maintainability

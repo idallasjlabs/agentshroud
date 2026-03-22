@@ -1,0 +1,153 @@
+# Codex CLI Configuration (TOML format)
+# Secondary/Tertiary Agent for Test Augmentation & Validation
+#
+# Documentation: https://developers.openai.com/codex/config-reference/
+#
+# IMPORTANT: This Codex instance is configured as a SECONDARY agent.
+# Claude Code is the PRIMARY developer.
+
+# ============================================================================
+# ROLE DEFINITION
+# ============================================================================
+# This configuration file enforces Codex as a secondary agent with restricted
+# responsibilities:
+#   - Test augmentation (add missing tests, edge cases)
+#   - Validation runs (execute commands, report results)
+#   - Safe refactors ONLY (after tests pass, local changes only)
+#
+# Codex CANNOT:
+#   - Make architectural decisions
+#   - Implement new features
+#   - Perform large refactors
+#   - Create documentation (unless explicitly requested)
+#
+# See AGENTS.md for complete role definition and instructions.
+
+# ============================================================================
+# MODEL CONFIGURATION
+# ============================================================================
+
+# Default model for Codex
+# model = "gpt-5-codex"
+
+# Reasoning effort for complex tasks
+# model_reasoning_effort = "medium"  # Options: low, medium, high
+
+# Context window management
+# model_context_window = 128000
+# model_auto_compact_token_limit = 100000
+
+# ============================================================================
+# PROJECT CONFIGURATION
+# ============================================================================
+
+# Project root identification
+project_root_markers = [".git", ".codex"]
+
+# Instructions file (context for Codex)
+# Codex will load AGENTS.md as its primary context file
+model_instructions_file = "AGENTS.md"
+
+# ============================================================================
+# SECURITY & SANDBOX
+# ============================================================================
+
+# Sandbox mode restricts file system access
+# Options: "read-only", "workspace-write", "danger-full-access"
+sandbox_mode = "workspace-write"
+
+# Approval policy controls when Codex pauses for user confirmation
+# Options: "always", "on-request", "never"
+approval_policy = "on-request"
+
+# Shell environment policy
+[shell_environment_policy]
+# Include specific environment variables
+include = [
+    "PATH",
+    "HOME",
+    "USER",
+    "CONDA_DEFAULT_ENV",
+    "VIRTUAL_ENV"
+]
+
+# Exclude sensitive variables
+exclude = [
+    "*TOKEN*",
+    "*SECRET*",
+    "*KEY*",
+    "*PASSWORD*"
+]
+
+# ============================================================================
+# FEATURE FLAGS
+# ============================================================================
+# Enable optional and experimental capabilities
+
+# Web search: "live", "cached", or "disabled"
+web_search = "disabled"
+
+[features]
+# PTY-backed command execution
+unified_exec = false
+
+# Cache shell environment between commands
+shell_snapshot = true
+
+# Unrestricted patch application
+apply_patch_freeform = false
+
+# ============================================================================
+# MCP SERVERS
+# ============================================================================
+# Model Context Protocol servers extend Codex capabilities
+# Configure MCP servers here as needed
+
+[mcp_servers.github]
+command = ".llm_settings/mcp-servers/github/github-mcp-wrapper.sh"
+args = []
+startup_timeout_sec = 30
+
+[mcp_servers.atlassian]
+command = ".llm_settings/mcp-servers/atlassian/mcp-atlassian.sh"
+args = []
+startup_timeout_sec = 30
+
+[mcp_servers.aws-api]
+command = "/opt/homebrew/bin/uvx"
+args = ["awslabs.aws-api-mcp-server@latest", "--readonly"]
+startup_timeout_sec = 30
+env = { AWS_PROFILE = "default", AWS_REGION = "us-east-1", FASTMCP_LOG_LEVEL = "CRITICAL", FASTMCP_NO_BANNER = "1" }
+
+[mcp_servers.xmind-generator]
+command = "/opt/homebrew/bin/npx"
+args = ["-y", "xmind-generator-mcp"]
+startup_timeout_sec = 60
+env = { outputPath = "./mindmaps", autoOpenFile = "true" }
+
+[mcp_servers.xmind-generator-mcp]
+command = "/opt/homebrew/bin/npx"
+args = ["-y", "xmind-generator-mcp"]
+startup_timeout_sec = 60
+
+# ============================================================================
+# TUI CUSTOMIZATION
+# ============================================================================
+
+[tui]
+# Scrolling sensitivity
+wheel_scroll_lines = 3
+trackpad_scroll_lines = 1
+
+# UI features
+animations_enabled = true
+use_alternate_screen = true
+
+# ============================================================================
+# NOTES
+# ============================================================================
+# - Agent definitions are in .codex/agents/ — paste content into prompt to activate
+# - Context and role definition is provided via AGENTS.md file
+# - For team-wide settings, this file should be committed to the repository
+# - For personal overrides, use ~/.codex/config.toml (user-level)
+# - See Claude Code's .claude/ directory for primary developer configuration

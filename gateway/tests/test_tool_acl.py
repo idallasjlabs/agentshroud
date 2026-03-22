@@ -246,3 +246,38 @@ class TestClassificationSets:
     def test_private_and_admin_do_not_overlap(self):
         overlap = PRIVATE_TOOLS & ADMIN_TOOLS
         assert not overlap, f"Private/admin tool sets overlap: {overlap}"
+
+
+# ── C35: Per-Tool Rate Limiting tests ────────────────────────────────────────
+
+class TestToolRateLimiting:
+    @pytest.fixture
+    def enforcer(self):
+        return ToolACLEnforcer()
+
+    def test_under_threshold_passes(self, enforcer):
+        """Calls within limits should pass."""
+        for _ in range(4):
+            assert enforcer.check_tool_rate_limit("user1", "execute_command")
+
+    def test_per_minute_limit_exceeded_blocks(self, enforcer):
+        """Exceeding per-minute limit should return False."""
+        # execute_command limit is 5/min
+        for _ in range(5):
+            enforcer.check_tool_rate_limit("user2", "execute_command")
+        # 6th call should be blocked
+        assert not enforcer.check_tool_rate_limit("user2", "execute_command")
+
+    def test_per_user_isolation(self, enforcer):
+        """Rate limits are tracked independently per user."""
+        # Exhaust user3's limit
+        for _ in range(5):
+            enforcer.check_tool_rate_limit("user3", "execute_command")
+        enforcer.check_tool_rate_limit("user3", "execute_command")  # blocked
+        # user4 should still be allowed
+        assert enforcer.check_tool_rate_limit("user4", "execute_command")
+
+    def test_unlisted_tool_always_passes(self, enforcer):
+        """Tools not in the rate-limit map should always pass."""
+        for _ in range(100):
+            assert enforcer.check_tool_rate_limit("user5", "web_search")

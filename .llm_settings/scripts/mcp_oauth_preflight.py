@@ -98,6 +98,7 @@ def _dns_lookup(host: str) -> List[str]:
 
 def _tls_probe(host: str, port: int = 443, timeout: float = 10.0) -> Tuple[str, str]:
     ctx = ssl.create_default_context()
+    ctx.minimum_version = ssl.TLSVersion.TLSv1_2
     with socket.create_connection((host, port), timeout=timeout) as sock:
         with ctx.wrap_socket(sock, server_hostname=host) as ssock:
             tlsver = ssock.version() or "unknown"
@@ -319,7 +320,7 @@ def _pkce_pair() -> Tuple[str, str]:
 def oauth_atlassian(timeout: float = 180.0) -> Tuple[bool, str]:
     client_id = getenv_required("ATLASSIAN_CLIENT_ID")
     client_secret = getenv_required("ATLASSIAN_CLIENT_SECRET")
-    scopes = os.getenv("ATLASSIAN_SCOPES", "").strip() or "read:jira-user read:jira-work read:confluence-content.summary"
+    scopes = os.getenv("ATLASSIAN_SCOPES", "").strip() or "read:jira-user read:jira-work write:jira-work read:confluence-content.summary write:confluence-content"
     redirect_uri = os.getenv("ATLASSIAN_REDIRECT_URI", "http://127.0.0.1:8000/callback").strip()
 
     verifier, challenge = _pkce_pair()

@@ -33,3 +33,7 @@
     # Ollama local-only key (not a real secret)
     'ollama-local',
   ]
+
+# Added by llm-init: extend with llm_settings defaults
+[extend]
+path = ".llm_settings/git-hooks/gitleaks.toml"

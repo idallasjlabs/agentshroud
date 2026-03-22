@@ -22,6 +22,27 @@ from typing import Any, Dict, List, Optional, Pattern, Tuple
 logger = logging.getLogger("agentshroud.security.tool_chain_analyzer")
 
 
+# C34: Parameter injection patterns (compiled once at module load)
+_PARAM_INJECTION_PATTERNS: list[tuple[re.Pattern, str]] = [
+    (re.compile(r'[;&|`$()]{1,}.*(?:rm\b|cat\b|wget\b|curl\b|chmod\b)|(?:^|\s)[;&|`]'), "shell_metacharacter"),
+    (re.compile(r"(?:'\s*OR\s*'?1'?\s*=\s*'?1|UNION\s+(?:ALL\s+)?SELECT|DROP\s+TABLE|INSERT\s+INTO\s+\w+\s+VALUES)", re.IGNORECASE), "sql_injection"),
+    (re.compile(r'(?:\.\.[\\/]){1,}'), "path_traversal"),
+    (re.compile(r'\{\{[^}]*\}\}|\$\{[^}]*\}'), "template_injection"),
+]
+
+# C37: Reversibility scores for known tool names (1.0 = fully reversible)
+_REVERSIBILITY_MAP: dict[str, float] = {
+    "read_file": 1.0, "read": 1.0, "glob": 1.0, "grep": 1.0, "search": 1.0,
+    "write_file": 0.7, "write": 0.7, "edit": 0.7, "create_file": 0.7,
+    "delete_file": 0.1, "delete": 0.1, "remove": 0.1,
+    "execute_command": 0.2, "exec": 0.2, "run": 0.2, "bash": 0.2,
+    "send_message": 0.3, "message": 0.3, "tts": 0.3,
+    "web_fetch": 0.9, "browser": 0.9, "web_search": 0.95,
+    "modify_config": 0.3, "config_write": 0.3, "gateway_config": 0.3,
+    "admin_action": 0.1, "kill_session": 0.1,
+}
+
+
 class RiskLevel(str, Enum):
     """Risk levels for tool call chains."""
     LOW = "low"
@@ -36,6 +57,25 @@ class ChainAction(str, Enum):
     WARN = "warn" 
     BLOCK = "block"
     REQUIRE_APPROVAL = "require_approval"
+
+
+# C34: Parameter scan result
+@dataclass
+class ParamScanResult:
+    """Result of scanning tool parameters for injection patterns."""
+    safe: bool
+    violations: List[str]
+    sanitized_params: Dict[str, Any]
+
+
+# C37: Reversibility score for a tool call
+@dataclass
+class ReversibilityScore:
+    """How reversible an action is (1.0 = fully reversible, 0.0 = irreversible)."""
+    score: float
+    tool_name: str
+    action: str
+    reasoning: str
 
 
 @dataclass
@@ -483,3 +523,43 @@ class ToolChainAnalyzer:
         """Add a new chain pattern at runtime."""
         self.patterns.append(pattern)
         logger.info(f"Added new pattern: {pattern.name}")
+
+    # ── C34: Parameter Sanitization ──────────────────────────────────────────
+
+    def sanitize_tool_params(self, tool_name: str, params: Dict[str, Any]) -> ParamScanResult:
+        """Scan tool parameters for injection payloads and return sanitized copy."""
+        violations: List[str] = []
+        sanitized: Dict[str, Any] = {}
+
+        for key, value in params.items():
+            val_str = str(value)
+            clean = val_str
+            for pattern, injection_type in _PARAM_INJECTION_PATTERNS:
+                if pattern.search(val_str):
+                    violations.append(f"{key}:{injection_type}")
+                    clean = pattern.sub("", clean)
+            sanitized[key] = clean
+
+        return ParamScanResult(
+            safe=len(violations) == 0,
+            violations=violations,
+            sanitized_params=sanitized,
+        )
+
+    # ── C37: Reversibility Scoring ───────────────────────────────────────────
+
+    def score_reversibility(self, tool_name: str, params: Dict[str, Any]) -> ReversibilityScore:
+        """Return a reversibility score for the given tool call (1.0 = safe, 0.1 = irreversible)."""
+        tool_lower = tool_name.lower().strip()
+        score = _REVERSIBILITY_MAP.get(tool_lower, 0.2)
+        reasoning = (
+            "mapped from built-in reversibility table"
+            if tool_lower in _REVERSIBILITY_MAP
+            else "unknown tool — defaulting to low reversibility (0.2)"
+        )
+        return ReversibilityScore(
+            score=score,
+            tool_name=tool_name,
+            action=tool_lower,
+            reasoning=reasoning,
+        )

@@ -3,4 +3,6 @@
 Purpose: retrospective agent agent.
 
 Responsibilities:
-- Execute specialized tasks within the AI engineering OS.
+- Perform retrospective agent-specific tasks
+- Support retrospective agent workflows
+- Provide expertise in retrospective agent domain

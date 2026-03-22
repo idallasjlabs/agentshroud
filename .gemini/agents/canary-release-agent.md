@@ -3,4 +3,7 @@
 Purpose: canary release agent agent.
 
 Responsibilities:
-- Execute specialized tasks within the AI engineering OS.
+- Implement canary deployment strategies
+- Monitor canary release metrics
+- Gradually increase traffic to new version
+- Execute automated rollback on failure

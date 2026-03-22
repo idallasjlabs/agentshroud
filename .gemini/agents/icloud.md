@@ -3,123 +3,149 @@ name: icloud
 description: Manage iCloud Calendar, Contacts, Mail, and Notes. Use when user needs to create/view/update calendar events, manage contacts, send emails, or work with notes. Credentials automatically retrieved from 1Password.
 ---
 
-# Agent: iCloud Services Manager
+# iCloud Services
 
-## Role
-You are an iCloud Services Manager that provides direct access to Apple iCloud Calendar,
-Contacts, Mail, and Notes via CalDAV, CardDAV, and IMAP protocols.
+Manage Apple iCloud Calendar, Contacts, Mail, and Notes with automatic credential handling.
 
-## Core Capabilities
+## Setup
 
-### Calendar Operations (CalDAV)
-- List calendar events by date range
-- Create new calendar events with location and description
-- Update existing events
-- Delete events
+**Prerequisites**: Apple ID with app-specific password stored in 1Password.
 
-### Contact Operations (CardDAV)
-- List all contacts
-- Search contacts by name or email
-- Add new contacts with name, email, phone
-- Update existing contact information
+**Credentials**: Automatically retrieved from 1Password item "Apple ID - therealidallasj", field "oenclaw bot password".
 
-### Mail Operations (IMAP)
-- List messages from mailboxes
-- Send emails
-- Search mail by criteria (from, subject, etc.)
+## Calendar Operations
 
-### Notes Operations (IMAP Notes folder)
-- List notes
-- Create new notes with title and content
-- Search notes by keyword
+### List Events
 
-## Authentication & Security
-
-**Credential Management:**
-- App-specific password automatically retrieved from 1Password
-- Stored in 1Password item: "Apple ID - therealidallasj", field "oenclaw bot password"
-- Credentials never displayed in output
-- Automatic cleanup after operations complete
-
-**Connection Security:**
-- All connections use TLS/SSL encryption
-- CalDAV: caldav.icloud.com
-- CardDAV: contacts.icloud.com/card
-- IMAP: imap.mail.me.com (port 993)
-
-**Security Controls:**
-- Credentials retrieved on-demand, not stored in agent memory
-- All network communication encrypted
-- No credential logging or display
-- Automatic credential cleanup after each operation
-
-## Common Tasks
-
-### List Upcoming Calendar Events
 ```bash
 scripts/calendar.js list --from "2026-02-16" --to "2026-02-20"
 ```
 
-### Create Calendar Event
+### Create Event
+
 ```bash
 scripts/calendar.js create \
   --summary "Team Meeting" \
   --start "2026-02-20T14:00:00" \
   --end "2026-02-20T15:00:00" \
-  --location "Conference Room A"
+  --location "Conference Room A" \
+  --description "Weekly team sync"
+```
+
+### Update Event
+
+```bash
+scripts/calendar.js update <event-id> \
+  --summary "Updated Meeting Title" \
+  --start "2026-02-20T15:00:00"
+```
+
+### Delete Event
+
+```bash
+scripts/calendar.js delete <event-id>
+```
+
+## Contact Operations
+
+### List Contacts
+
+```bash
+scripts/contacts.js list
 ```
 
 ### Search Contacts
+
 ```bash
 scripts/contacts.js search "john"
 scripts/contacts.js search --email "john@example.com"
 ```
 
+### Add Contact
+
+```bash
+scripts/contacts.js add \
+  --name "John Doe" \
+  --email "john@example.com" \
+  --phone "+1-555-0123"
+```
+
+### Update Contact
+
+```bash
+scripts/contacts.js update <contact-id> \
+  --email "newemail@example.com"
+```
+
+## Mail Operations
+
+### List Messages
+
+```bash
+scripts/mail.js list --folder INBOX --limit 10
+```
+
 ### Send Email
+
 ```bash
 scripts/mail.js send \
   --to "recipient@example.com" \
-  --subject "Subject" \
+  --subject "Hello" \
   --body "Message content"
 ```
 
-## Operational Constraints
+### Search Mail
 
-**Read Operations:**
-- Calendar: List and view events (no PII redaction)
-- Contacts: Full contact details including phone/email
-- Mail: Access to inbox and sent items
-- Notes: Read all user notes
+```bash
+scripts/mail.js search "from:john@example.com subject:meeting"
+```
 
-**Write Operations:**
-- Calendar: Create/update/delete events (no approval required)
-- Contacts: Add/update contacts (no approval required)
-- Mail: Send emails (no approval required)
-- Notes: Create notes (no approval required)
+## Notes Operations
 
-**Limitations:**
-- Cannot bulk export data
-- Cannot access shared calendars (only primary calendar)
-- Cannot manage calendar sharing/permissions
-- Cannot delete contacts (update only)
+### List Notes
+
+```bash
+scripts/notes.js list
+```
+
+### Create Note
+
+```bash
+scripts/notes.js create \
+  --title "Meeting Notes" \
+  --content "Discussion points..."
+```
+
+### Search Notes
+
+```bash
+scripts/notes.js search "project"
+```
+
+## Configuration
+
+iCloud services use:
+- **Calendar**: CalDAV at caldav.icloud.com
+- **Contacts**: CardDAV at contacts.icloud.com/card
+- **Mail**: IMAP at imap.mail.me.com (port 993)
+- **Notes**: IMAP folder "Notes"
+
+All operations use app-specific password for authentication.
+
+## Security
+
+- Credentials never displayed in output
+- Retrieved from 1Password on-demand
+- Automatic cleanup after operations
+- All connections use TLS/SSL
 
 ## Troubleshooting
 
-| Issue | Solution |
-|-------|----------|
-| 401 Unauthorized | Verify app-specific password in 1Password is current |
-| Connection timeout | Check network access to icloud.com domains |
-| Calendar/Contacts not found | Enable services at icloud.com settings |
-| IMAP errors | Verify IMAP access enabled for Apple ID |
+### "401 Unauthorized"
+Check app-specific password is correct in 1Password.
 
-## Security Posture
+### "Connection timeout"
+Verify network access to icloud.com.
 
-This agent provides **direct access** to iCloud services using the user's credentials.
-Unlike gateway-proxied models, there is:
-- No PII sanitization layer
-- No approval queue for operations
-- No centralized audit logging (rely on iCloud's own audit trail)
-- No rate limiting beyond iCloud's own limits
-
-**Appropriate for:** Personal productivity, trusted automation scenarios
-**Not appropriate for:** Multi-tenant systems, untrusted agent environments
+### "Calendar/Contacts not found"
+Ensure services are enabled at icloud.com.

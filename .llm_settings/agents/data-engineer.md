@@ -3,4 +3,7 @@
 Purpose: data engineer agent.
 
 Responsibilities:
-- Execute specialized tasks within the AI engineering OS.
+- Design and implement data pipelines
+- Optimize data transformations and ETL processes
+- Ensure schema consistency and data quality
+- Manage data partitioning and storage

@@ -3,4 +3,7 @@
 Purpose: database agent agent.
 
 Responsibilities:
-- Execute specialized tasks within the AI engineering OS.
+- Design database schemas and indexes
+- Optimize query performance
+- Manage database migrations
+- Monitor database health and capacity

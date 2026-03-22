@@ -3,4 +3,6 @@
 Purpose: outline agent agent.
 
 Responsibilities:
-- Execute specialized tasks within the AI engineering OS.
+- Perform outline agent-specific tasks
+- Support outline agent workflows
+- Provide expertise in outline agent domain

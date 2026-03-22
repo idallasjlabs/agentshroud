@@ -3,4 +3,6 @@
 Purpose: research agent agent.
 
 Responsibilities:
-- Execute specialized tasks within the AI engineering OS.
+- Perform research agent-specific tasks
+- Support research agent workflows
+- Provide expertise in research agent domain

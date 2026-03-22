@@ -14,6 +14,11 @@ from gateway.security.input_normalizer import normalize_input, detect_base64_pay
 
 
 import base64
+import hashlib
+import hmac
+import os
+import secrets
+import time
 import unicodedata
 import re
 from dataclasses import dataclass
@@ -42,6 +47,24 @@ class PatternRule:
     pattern: re.Pattern
     weight: float
     description: str = ""
+
+
+# C9: HMAC-based system prompt fingerprint
+@dataclass
+class SystemPromptFingerprint:
+    """HMAC-SHA256 fingerprint for a registered system prompt."""
+    hmac_hex: str
+    algorithm: str
+    created_at: float
+
+
+# C8: Patterns that represent fake delimiter/boundary injection to strip
+_FAKE_BOUNDARY_PATTERNS: list[re.Pattern] = [
+    re.compile(r'---+\s*(?:new|real|actual)\s+(?:instructions?|prompt|task)', re.IGNORECASE),
+    re.compile(r'={3,}\s*(?:SYSTEM|OVERRIDE|NEW)\s*={3,}', re.IGNORECASE),
+    re.compile(r'<\s*/?\s*(?:system|instruction|prompt)\s*>', re.IGNORECASE),
+    re.compile(r'```\s*(?:system|assistant|user)\s*\n', re.IGNORECASE),
+]
 
 
 # Precompiled pattern rules with weights
@@ -575,6 +598,56 @@ class PromptGuard:
         self.patterns = list(_PATTERNS)
         if custom_patterns:
             self.patterns.extend(custom_patterns)
+
+    # ── C9: HMAC System Prompt Fingerprinting ─────────────────────────────────
+
+    def _get_hmac_key(self) -> bytes:
+        """Return HMAC key: env var preferred, session-scoped random fallback."""
+        env_key = os.environ.get("AGENTSHROUD_SYSTEM_PROMPT_HMAC_KEY", "")
+        if env_key:
+            return env_key.encode()
+        if not hasattr(self, "_session_hmac_key"):
+            self._session_hmac_key: bytes = secrets.token_bytes(32)
+        return self._session_hmac_key
+
+    def register_system_prompt(
+        self, prompt_text: str, key: Optional[bytes] = None
+    ) -> SystemPromptFingerprint:
+        """Compute and return an HMAC-SHA256 fingerprint for the system prompt."""
+        k = key or self._get_hmac_key()
+        h = hmac.new(k, prompt_text.encode("utf-8"), hashlib.sha256)
+        return SystemPromptFingerprint(
+            hmac_hex=h.hexdigest(),
+            algorithm="hmac-sha256",
+            created_at=time.time(),
+        )
+
+    def verify_system_prompt(
+        self,
+        prompt_text: str,
+        fingerprint: SystemPromptFingerprint,
+        key: Optional[bytes] = None,
+    ) -> bool:
+        """Return True if prompt_text matches the stored HMAC fingerprint."""
+        k = key or self._get_hmac_key()
+        h = hmac.new(k, prompt_text.encode("utf-8"), hashlib.sha256)
+        return hmac.compare_digest(h.hexdigest(), fingerprint.hmac_hex)
+
+    # ── C8: Delimiter / Boundary Re-Anchoring ────────────────────────────────
+
+    def reanchor_delimiters(self, message: str, system_prompt_hash: str = "") -> str:
+        """Strip injected fake delimiters and return sanitized message.
+
+        Called when boundary_manipulation / delimiter_injection patterns are
+        detected below the block threshold — strips the fake structure rather
+        than blocking the entire message.
+        """
+        result = message
+        for pat in _FAKE_BOUNDARY_PATTERNS:
+            result = pat.sub("[BOUNDARY_STRIPPED]", result)
+        return result
+
+    # ─────────────────────────────────────────────────────────────────────────
 
     def _check_encoded_content(self, text: str) -> list[tuple[str, float]]:
         """Check for suspicious base64 content that decodes to injection attempts."""

@@ -3,4 +3,6 @@
 Purpose: script agent agent.
 
 Responsibilities:
-- Execute specialized tasks within the AI engineering OS.
+- Perform script agent-specific tasks
+- Support script agent workflows
+- Provide expertise in script agent domain

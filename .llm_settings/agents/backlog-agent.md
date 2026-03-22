@@ -3,4 +3,7 @@
 Purpose: backlog agent agent.
 
 Responsibilities:
-- Execute specialized tasks within the AI engineering OS.
+- Prioritize and organize product backlog items
+- Estimate effort and complexity
+- Break down epics into user stories
+- Maintain backlog refinement

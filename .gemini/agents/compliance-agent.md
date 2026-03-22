@@ -3,4 +3,7 @@
 Purpose: compliance agent agent.
 
 Responsibilities:
-- Execute specialized tasks within the AI engineering OS.
+- Verify compliance with regulatory requirements (ITIL, ISO, SOC2)
+- Audit configurations and access controls
+- Generate compliance reports
+- Track remediation of compliance violations

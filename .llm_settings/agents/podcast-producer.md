@@ -3,4 +3,6 @@
 Purpose: podcast producer agent.
 
 Responsibilities:
-- Execute specialized tasks within the AI engineering OS.
+- Perform podcast producer-specific tasks
+- Support podcast producer workflows
+- Provide expertise in podcast producer domain

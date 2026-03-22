@@ -843,43 +843,158 @@ window._showContribTab = function(name, el) {
 
 // ── Activity log ────────────────────────────────────────────────────────────
 
+// State: all loaded entries (pre-filter), current sort column/dir
+window._activityAllEntries = [];
+window._activitySortCol = 'timestamp';
+window._activitySortAsc = false; // newest first by default
+
 window._loadActivityLog = async function() {
-  const filterEl = document.getElementById('activity-user-filter');
-  const userId = filterEl ? filterEl.value : '';
-  const url = '/collaborators/activity?limit=100' + (userId ? `&user_id=${encodeURIComponent(userId)}` : '');
-  const { ok, data } = await _get(url);
+  const userEl = document.getElementById('activity-user-filter');
+  const dirEl  = document.getElementById('activity-direction-filter');
+  const userId    = userEl ? userEl.value : '';
+  const direction = dirEl  ? dirEl.value  : '';
+
+  let url = '/collaborators/activity?limit=500';
+  if (userId)    url += `&user_id=${encodeURIComponent(userId)}`;
+  if (direction) url += `&direction=${encodeURIComponent(direction)}`;
+
   const tbody = document.getElementById('activity-tbody');
+  if (tbody) tbody.innerHTML = '<tr><td colspan="6" style="color:var(--text-muted);text-align:center;padding:1rem">Loading…</td></tr>';
+
+  const { ok, data } = await _get(url);
   if (!tbody) return;
-  if (!ok || !Array.isArray(data?.entries) || data.entries.length === 0) {
-    tbody.innerHTML = '<tr><td colspan="6" style="color:var(--text-muted);text-align:center;padding:1rem">No activity recorded yet.</td></tr>';
+
+  if (!ok || !Array.isArray(data?.entries)) {
+    tbody.innerHTML = '<tr><td colspan="6" style="color:var(--danger);text-align:center;padding:1rem">Failed to load activity. Check gateway logs.</td></tr>';
     return;
   }
-  // Rebuild user filter options preserving current selection
-  if (filterEl) {
-    const currentVal = filterEl.value;
-    const userIds = [...new Set(data.entries.map(e => e.user_id).filter(Boolean))];
-    filterEl.innerHTML = '<option value="">All Users</option>' +
+
+  window._activityAllEntries = data.entries;
+
+  // Rebuild user filter preserving current selection
+  if (userEl && !userId) {
+    const currentVal = userEl.value;
+    const userIds = [...new Set(data.entries.map(e => e.user_id).filter(Boolean))].sort();
+    userEl.innerHTML = '<option value="">All Users</option>' +
       userIds.map(uid => `<option value="${_esc(uid)}"${uid === currentVal ? ' selected' : ''}>${_esc(uid)}</option>`).join('');
   }
-  _renderActivityLog(data.entries);
+
+  // New-since-last-view badge
+  const lastViewed = parseFloat(sessionStorage.getItem('activityLastViewed') || '0');
+  const newCount = data.entries.filter(e => (e.timestamp || 0) > lastViewed).length;
+  const badge = document.getElementById('activity-new-badge');
+  if (badge) {
+    if (newCount > 0 && lastViewed > 0) {
+      badge.textContent = `${newCount} new`;
+      badge.style.display = '';
+    } else {
+      badge.style.display = 'none';
+    }
+  }
+
+  // Stats bar
+  const statsEl = document.getElementById('activity-stats');
+  if (statsEl) {
+    const inCount  = data.entries.filter(e => e.direction === 'inbound').length;
+    const outCount = data.entries.filter(e => e.direction === 'outbound').length;
+    const uniqueUsers = new Set(data.entries.map(e => e.user_id).filter(Boolean)).size;
+    const lastTs = data.entries.length ? Math.max(...data.entries.map(e => e.timestamp || 0)) : 0;
+    const lastStr = lastTs ? new Date(lastTs * 1000).toLocaleString() : '—';
+    statsEl.innerHTML = `<b>${data.total}</b> entries &nbsp;|&nbsp; ${uniqueUsers} user(s) &nbsp;|&nbsp; ↑ ${inCount} inbound &nbsp; ↓ ${outCount} outbound &nbsp;|&nbsp; Last: ${_esc(lastStr)}`;
+  }
+
+  window._applyActivitySort();
 };
 
-function _renderActivityLog(entries) {
+window._filterActivityLocal = function() {
+  window._applyActivitySort();
+};
+
+window._applyActivitySort = function() {
+  const search = (document.getElementById('activity-search')?.value || '').toLowerCase();
+  let entries = window._activityAllEntries.slice();
+
+  // Text search filter
+  if (search) {
+    entries = entries.filter(e =>
+      (e.user_id || '').toLowerCase().includes(search) ||
+      (e.username || '').toLowerCase().includes(search) ||
+      (e.message_preview || '').toLowerCase().includes(search) ||
+      (e.source || '').toLowerCase().includes(search)
+    );
+  }
+
+  // Sort
+  const col = window._activitySortCol;
+  const asc = window._activitySortAsc;
+  entries.sort((a, b) => {
+    let av = a[col] ?? '', bv = b[col] ?? '';
+    if (typeof av === 'number' || typeof bv === 'number') {
+      av = parseFloat(av) || 0; bv = parseFloat(bv) || 0;
+    } else {
+      av = String(av).toLowerCase(); bv = String(bv).toLowerCase();
+    }
+    if (av < bv) return asc ? -1 : 1;
+    if (av > bv) return asc ? 1 : -1;
+    return 0;
+  });
+
+  _renderActivityLog(entries, search);
+
+  const footer = document.getElementById('activity-footer');
+  if (footer) footer.textContent = `Showing ${entries.length} of ${window._activityAllEntries.length} entries`;
+};
+
+window._sortActivity = function(col) {
+  if (window._activitySortCol === col) {
+    window._activitySortAsc = !window._activitySortAsc;
+  } else {
+    window._activitySortCol = col;
+    window._activitySortAsc = col !== 'timestamp'; // timestamps default newest-first
+  }
+  // Update sort indicators
+  ['timestamp','user_id','direction'].forEach(c => {
+    const el = document.getElementById(`sort-${c}`);
+    if (!el) return;
+    if (c === col) el.textContent = window._activitySortAsc ? '▲' : '▼';
+    else el.textContent = '';
+  });
+  window._applyActivitySort();
+};
+
+window._markActivityViewed = function() {
+  sessionStorage.setItem('activityLastViewed', String(Date.now() / 1000));
+  const badge = document.getElementById('activity-new-badge');
+  if (badge) badge.style.display = 'none';
+};
+
+function _renderActivityLog(entries, search) {
   const tbody = document.getElementById('activity-tbody');
   if (!tbody) return;
+  if (!entries || entries.length === 0) {
+    const msg = search
+      ? `No entries match "${_esc(search)}".`
+      : 'No activity recorded yet. Send a message from a collaborator account to generate entries.';
+    tbody.innerHTML = `<tr><td colspan="6" style="color:var(--text-muted);text-align:center;padding:1rem">${msg}</td></tr>`;
+    return;
+  }
+  const lastViewed = parseFloat(sessionStorage.getItem('activityLastViewed') || '0');
   tbody.innerHTML = entries.map(e => {
     const ts = e.timestamp ? new Date(e.timestamp * 1000).toLocaleString() : '—';
+    const isNew = lastViewed > 0 && (e.timestamp || 0) > lastViewed;
+    const rowStyle = isNew ? 'background:rgba(99,210,255,0.06)' : '';
     const dirBadge = e.direction === 'inbound'
-      ? '<span class="badge badge-info">in</span>'
-      : '<span class="badge badge-warning">out</span>';
+      ? '<span class="badge badge-info">↑ in</span>'
+      : '<span class="badge badge-warning">↓ out</span>';
     const srcBadge = `<span class="badge badge-info">${_esc(e.source || '—')}</span>`;
-    return `<tr>
-      <td style="white-space:nowrap;font-size:11px">${_esc(ts)}</td>
+    const preview = e.message_preview || '—';
+    return `<tr style="${rowStyle}">
+      <td style="white-space:nowrap;font-size:11px">${isNew ? '<span style="color:var(--accent);font-weight:700">●</span> ' : ''}${_esc(ts)}</td>
       <td style="font-size:11px;font-family:monospace">${_esc(e.user_id || '—')}</td>
       <td>${_esc(e.username || '—')}</td>
       <td>${dirBadge}</td>
       <td>${srcBadge}</td>
-      <td style="font-size:11px;max-width:300px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap" title="${_esc(e.message_preview || '')}">${_esc(e.message_preview || '—')}</td>
+      <td style="font-size:11px;max-width:320px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap" title="${_esc(preview)}">${_esc(preview)}</td>
     </tr>`;
   }).join('');
 }

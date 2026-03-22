@@ -118,10 +118,10 @@ LLM_Settings/
 ### Claude Code ('.claude/')
 - **Format:** JSON
 - **Agents:** Subagents (doc-writer, security-reviewer, testrunner)
-- **Skills:** 36 skills (`/8d`, `/aws`, `/browser`, `/bs`, `/cicd`, `/cr`, `/data`, `/env`, `/gg`, `/icloud`, `/mac`, `/mc`, `/mcpm`, `/mcpm-auth-reset`, `/mcpm-aws-profile`, `/mcpm-doctor`, `/pm`, `/pr`, `/production`, `/ps`, `/qa`, `/sec`, `/sec-defense`, `/sec-offense`, `/tdd`, `/ti`, `/tw`, plus 9 podcast pipeline skills)
+- **Skills:** 36 skills (`/8d`, `/aws`, `/browser`, `/bs`, `/cicd`, `/cr`, `/data`, `/env`, `/gg`, `/icloud`, `/mac`, `/mc`, `/mcpm`, `/mcpm-auth-reset`, `/mcpm-aws-profile`, `/mcpm-doctor`, `/mm`, `/pm`, `/pr`, `/production`, `/ps`, `/qa`, `/sec`, `/sec-defense`, `/sec-offense`, `/tdd`, `/ti`, `/tw`, plus 9 podcast pipeline skills)
 - **Hooks:** 3 hooks (warn_dangerous_bash, auto_format_python, run_targeted_tests)
 - **Context:** CLAUDE.md loaded automatically
-- **MCP:** Via .mcp.json (GitHub, Atlassian, AWS API)
+- **MCP:** Via .mcp.json (GitHub, Atlassian, AWS API, XMind Generator)
 
 ### Gemini CLI ('.gemini/')
 - **Format:** JSON
@@ -223,6 +223,7 @@ npm install -g @github/copilot
 | **Atlassian** | ✅ Working | See MCP_README.md |
 | **GitHub** | ✅ Working | See MCP_README.md |
 | **AWS API** | ✅ Working | See MCP_README.md |
+| **XMind Generator** | ✅ Working | `npx xmind-generator-mcp` — outputs `.xmind` files to `~/Desktop` |
 
 All tools support MCP servers but configure them differently:
 - **Claude:** `.mcp.json`
