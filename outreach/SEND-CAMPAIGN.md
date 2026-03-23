@@ -3,51 +3,41 @@
 ## Overview
 
 You are sending a podcast outreach email campaign on behalf of Isaiah Jefferson.
-- **From:** agentshroud.ai@gmail.com
+- **From:** agentshroud.ai@gmail.com (primary) / agentshroud.ai@icloud.com (fallback)
 - **Cc (every email):** idallasj@gmail.com, isaiah_jefferson@mac.com
-- **Campaign manifest:** `/home/node/agentshroud/workspace/outreach/campaign-manifest.json`
+- **Campaign manifest:** `/home/node/.openclaw/workspace/outreach/campaign-manifest.json`
 - **Total:** 44 podcasts — 24 with direct email, 20 require contact forms (skip those)
 
-## Step 1 — Retrieve Gmail App Password
+## Step 1 — Send the Test Email
 
-Run the following to get the Gmail app password from 1Password:
+Run the test script to verify Gmail SMTP is working before sending the full campaign:
 
 ```bash
-export OP_SERVICE_ACCOUNT_TOKEN=$(cat /run/secrets/1password_service_account) && \
-op item get tdx3r77qoplljrv45luh7zkngi \
-  --vault 'Agent Shroud Bot Credentials' \
-  --fields label=password \
-  --reveal
+node /home/node/.openclaw/workspace/outreach/send-test.js --gmail
 ```
 
-Store the output as `GMAIL_APP_PASSWORD` for use in Step 3.
+Expected output: `OK: sent — <message-id>`
 
-## Step 2 — Start with the Test Email
+If Gmail fails (535 error), fall back to iCloud:
 
-Before sending all 44, send the sample email to confirm delivery:
-- **To:** idallasj@gmail.com
-- **Subject:** [TEST] AgentShroud Outreach Campaign — Sample Email
-- **Body:** Use the body from `intelligent-machines` entry in the manifest
+```bash
+node /home/node/.openclaw/workspace/outreach/send-test.js
+```
 
-Wait for confirmation before proceeding to Step 3.
+Wait for confirmation of delivery before proceeding to Step 2.
 
-## Step 3 — Send All Emails with Direct Addresses
+## Step 2 — Send All Emails with Direct Addresses
 
-Read `campaign-manifest.json`. For each entry where `to` contains `@` and `sent` is `false`:
-
-Write and execute a Node.js script using nodemailer:
+Read `/home/node/.openclaw/workspace/outreach/campaign-manifest.json`. For each entry where `to` contains `@` and `sent` is `false`, use `send-test.js` as a reference for credential handling. Write and execute a per-campaign Node.js script using the same 1Password signin pattern, but loop over manifest entries:
 
 ```javascript
-const nodemailer = require('nodemailer');
-
+// Use the same op signin pattern from send-test.js to get the Gmail app password
+// Then send via smtp.gmail.com:465 (SSL):
 const transporter = nodemailer.createTransport({
   host: 'smtp.gmail.com',
   port: 465,
   secure: true,
-  auth: {
-    user: 'agentshroud.ai@gmail.com',
-    pass: GMAIL_APP_PASSWORD  // from Step 1
-  }
+  auth: { user: 'agentshroud.ai@gmail.com', pass: gmailPass }
 });
 
 await transporter.sendMail({
@@ -55,8 +45,7 @@ await transporter.sendMail({
   to: entry.to,
   cc: 'idallasj@gmail.com, isaiah_jefferson@mac.com',
   subject: entry.subject,
-  text: entry.body.replace(/\*\*/g, '').replace(/^---$/gm, '---'),
-  html: convertMarkdownToHtml(entry.body)  // optional: plain text is fine
+  text: entry.body
 });
 ```
 
