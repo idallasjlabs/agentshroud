@@ -1,7 +1,7 @@
 # Security, Spoken (WIRED)
 **To:** uncannyvalley@wired.com
 **Cc:** idallasj@gmail.com, isaiah_jefferson@mac.com
-**Subject:** Long-time listener — AgentShroud: a security proxy for autonomous AI agents
+**Subject:** Security Spoken - Introducing AgentShroud - Transparent Security Proxy for Autonomous AI Agents
 
 ---
 
@@ -28,6 +28,8 @@ If you'd like to connect:
 - **Slack:** Send me your Slack user ID and I'll add you directly
 
 More about me: www.linkedin.com/in/isaiahjefferson
+
+One more thing worth noting: AgentShroud was designed, built, and tested entirely by me working with AI — no team, no agency. The podcast was generated and published by AI. The GPT was created by AI. This email was written and sent by an autonomous AI agent running behind the AgentShroud gateway. One person, one security proxy, and a stack of AI agents doing real work. That's the world we're already in.
 
 Isaiah Jefferson
 
