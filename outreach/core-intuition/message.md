@@ -29,6 +29,8 @@ More about me: www.linkedin.com/in/isaiahjefferson
 
 Thanks for keeping the conversation about indie development grounded and honest.
 
+One more thing worth noting: AgentShroud was designed, built, and tested entirely by me working with AI — no team, no agency. The podcast was generated and published by AI. The GPT was created by AI. This email was written and sent by an autonomous AI agent running behind the AgentShroud gateway. One person, one security proxy, and a stack of AI agents doing real work. That's the world we're already in.
+
 Isaiah Jefferson
 
 ---
