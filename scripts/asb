@@ -16,7 +16,7 @@ if [ "$USER" = "agentshroud-bot" ]; then
     echo "ERROR: no compose override for host '${HOST}' — expected: $OVERRIDE" >&2
     exit 1
   fi
-  COMPOSE="docker compose -f $REPO_DIR/docker/docker-compose.yml -f $OVERRIDE -p agentshroud"
+  COMPOSE="docker compose -f $REPO_DIR/docker/docker-compose.yml -f $OVERRIDE -p agentshroud-dev"
 else
   COMPOSE="docker compose -f $REPO_DIR/docker/docker-compose.yml -p agentshroud"
 fi
