@@ -103,21 +103,21 @@ You access the repo on marvin via SSH. Use these commands:
 
 | Action | Command |
 |--------|---------|
-| Run tests | `ssh marvin dev test` |
-| Build containers | `ssh marvin dev build` |
-| Rebuild + restart | `ssh marvin dev rebuild` |
-| Check status | `ssh marvin dev status` |
-| View logs | `ssh marvin dev logs` |
-| Git pull | `ssh marvin dev pull` |
+| Run tests | `ssh marvin asb test` |
+| Build containers | `ssh marvin asb build` |
+| Rebuild + restart | `ssh marvin asb rebuild` |
+| Check status | `ssh marvin asb status` |
+| View logs | `ssh marvin asb logs` |
+| Git pull | `ssh marvin asb pull` |
 
 **Repo path on marvin:** `/Users/agentshroud-bot/Development/agentshroud`
 **Compose file:** `docker/docker-compose.yml`
 
 **After Python changes — always run:**
 ```
-ssh marvin dev test
+ssh marvin asb test
 ```
-And lint/format (single atomic commands via dev helper or separate ssh calls):
+And lint/format (single atomic commands via asb helper or separate ssh calls):
 ```
 ssh marvin "ruff check --fix /Users/agentshroud-bot/Development/agentshroud/gateway/"
 ssh marvin "black /Users/agentshroud-bot/Development/agentshroud/gateway/"
