@@ -1,46 +1,20 @@
-# AgentShroud Dev/Test Instance — Raspberry Pi host, agentshroud-bot user
+# AgentShroud — Raspberry Pi host, agentshroud-bot user
+# Separate host — no port or subnet conflicts with other instances.
+#
 # Usage: docker compose -f docker/docker-compose.yml -f docker/docker-compose.agentshroud-bot.raspberrypi.yml -p agentshroud up -d
-# Bot: @agentshroud_raspberrypi_bot
-# Ports: gateway 8080, bot 18789 (no conflict — separate host)
-# Note: ARM64, limited resources — reduced limits, no Playwright browsers
 services:
   gateway:
-    ports: !override
-      - "127.0.0.1:8080:8080"
     environment:
       - AGENTSHROUD_COMPOSE_HOST=raspberrypi
+      - AGENTSHROUD_COMPOSE_DIR=/home/agentshroud-bot/Development/agentshroud
     mem_limit: 512m
     memswap_limit: 512m
     cpus: 0.5
 
   bot:
-    hostname: raspberrypi
-    ports: !override
-      - "127.0.0.1:18789:18789"
     environment:
-      - NODE_ENV=production
-      - OPENCLAW_GATEWAY_BIND=lan
-      - OPENCLAW_GATEWAY_PASSWORD_FILE=/run/secrets/gateway_password
-      - GATEWAY_OP_PROXY_URL=http://gateway:8080
       - OPENCLAW_BOT_NAME=agentshroud_bot_raspberrypi
-      - OPENCLAW_BOT_EMAIL=agentshroud.ai@icloud.com
-      - OPENCLAW_DISABLE_HOST_FILESYSTEM=true
-      - OPENCLAW_SANDBOX_MODE=strict
-      - OPENCLAW_DISABLE_BONJOUR=1
-      # Route ALL outbound internet through gateway HTTP CONNECT proxy
-      - HTTP_PROXY=http://gateway:8181
-      - HTTPS_PROXY=http://gateway:8181
-      # Bypass proxy for internal container-to-container traffic
-      - NO_PROXY=gateway,localhost,127.0.0.1,pihole
-      # Route Telegram API through gateway
-      - TELEGRAM_API_BASE_URL=http://gateway:8080/telegram-api
-      - TELEGRAM_BOT_TOKEN_FILE=/run/secrets/telegram_bot_token
-      - AGENTSHROUD_CONTROL_UI_ORIGINS=https://raspberrypi.tail240ea8.ts.net:18789,http://raspberrypi.tail240ea8.ts.net:18789
-    secrets:
-      - gateway_password
-      - telegram_bot_token
-    extra_hosts:
-      - "host.docker.internal:host-gateway"
+      - AGENTSHROUD_CONTROL_UI_ORIGINS=https://raspberrypi.tail240ea8.ts.net:18790,http://raspberrypi.tail240ea8.ts.net:18790
     mem_limit: 2g
     memswap_limit: 2g
     cpus: 2.0
