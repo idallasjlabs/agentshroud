@@ -456,3 +456,71 @@ class TestSocketModeRelay:
         token1 = resp1["url"].split("t=")[1]
         token2 = resp2["url"].split("t=")[1]
         assert token1 != token2
+
+
+class TestHandleEvent:
+    """Tests for SlackAPIProxy.handle_event() — inbound Socket Mode event processing."""
+
+    @pytest.mark.asyncio
+    async def test_message_event_records_activity(self):
+        """handle_event records inbound activity for message events."""
+        tracker = MagicMock()
+        proxy = SlackAPIProxy(tracker=tracker)
+        payload = {
+            "event": {
+                "type": "message",
+                "user": "U123ABC",
+                "text": "hello from slack",
+            }
+        }
+        await proxy.handle_event(payload)
+        tracker.record_activity.assert_called_once_with(
+            user_id="U123ABC",
+            username="U123ABC",
+            message_preview="hello from slack",
+            source="slack",
+            direction="inbound",
+        )
+
+    @pytest.mark.asyncio
+    async def test_non_message_event_ignored(self):
+        """handle_event ignores non-message event types."""
+        tracker = MagicMock()
+        proxy = SlackAPIProxy(tracker=tracker)
+        await proxy.handle_event({"event": {"type": "reaction_added", "user": "U123"}})
+        tracker.record_activity.assert_not_called()
+
+    @pytest.mark.asyncio
+    async def test_event_without_user_ignored(self):
+        """handle_event ignores message events with no user field."""
+        tracker = MagicMock()
+        proxy = SlackAPIProxy(tracker=tracker)
+        await proxy.handle_event({"event": {"type": "message", "text": "bot msg"}})
+        tracker.record_activity.assert_not_called()
+
+    @pytest.mark.asyncio
+    async def test_no_tracker_does_not_raise(self):
+        """handle_event is a no-op and does not raise when tracker is None."""
+        proxy = SlackAPIProxy(tracker=None)
+        payload = {"event": {"type": "message", "user": "U999", "text": "hi"}}
+        await proxy.handle_event(payload)  # must not raise
+
+    @pytest.mark.asyncio
+    async def test_tracker_error_does_not_propagate(self):
+        """handle_event swallows tracker exceptions (non-fatal)."""
+        tracker = MagicMock()
+        tracker.record_activity.side_effect = RuntimeError("db offline")
+        proxy = SlackAPIProxy(tracker=tracker)
+        payload = {"event": {"type": "message", "user": "U001", "text": "test"}}
+        await proxy.handle_event(payload)  # must not raise
+
+    @pytest.mark.asyncio
+    async def test_message_preview_truncated_to_80_chars(self):
+        """handle_event truncates message_preview to 80 characters."""
+        tracker = MagicMock()
+        proxy = SlackAPIProxy(tracker=tracker)
+        long_text = "x" * 200
+        payload = {"event": {"type": "message", "user": "U001", "text": long_text}}
+        await proxy.handle_event(payload)
+        call_kwargs = tracker.record_activity.call_args.kwargs
+        assert len(call_kwargs["message_preview"]) == 80

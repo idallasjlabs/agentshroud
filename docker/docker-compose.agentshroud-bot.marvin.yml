@@ -53,8 +53,6 @@ services:
     extra_hosts:
       - "host.docker.internal:host-gateway"
       - "marvin.tail240ea8.ts.net:host-gateway"
-      # DNS redirect: Anthropic API -> gateway for message-level security
-      - "api.anthropic.com:host-gateway"
 
 secrets:
   telegram_bot_token:
