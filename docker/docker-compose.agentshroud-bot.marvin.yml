@@ -6,6 +6,10 @@
 #
 # Prod (ijefferson.admin):    gateway 8080,  bot 18790,  nets 10.254.110/111/112.0/24
 # This (agentshroud-bot):     gateway 9080,  bot 19789,  nets 172.20/172.21/172.22.0.0/16
+#
+# One-time host setup (required before first run):
+#   sudo chmod 755 /Users/agentshroud-bot
+#   (allows Colima's virtiofs to mount /Users/agentshroud-bot so ./secrets/ is visible to Docker)
 services:
   gateway:
     container_name: agentshroud-marvin-gateway
@@ -22,44 +26,6 @@ services:
       - GATEWAY_HOST_PORT=9080
       - OPENCLAW_BOT_NAME=agentshroud_bot_marvin
       - AGENTSHROUD_CONTROL_UI_ORIGINS=https://marvin.tail240ea8.ts.net:19789,http://marvin.tail240ea8.ts.net:19789
-
-secrets:
-  # Secrets must reference /Users/Shared/agentshroud-secrets/ — the Colima Lima VM
-  # (run by ijefferson.admin) mounts /Users/Shared but not /Users/agentshroud-bot
-  # due to macOS VZ/virtiofs per-user permission restrictions.
-  #
-  # One-time setup (run as agentshroud-bot):
-  #   mkdir -p /Users/Shared/agentshroud-secrets && chmod 755 /Users/Shared/agentshroud-secrets
-  #   for f in gateway_password anthropic_oauth_token openai_api_key google_api_key \
-  #             1password_bot_email 1password_bot_master_password 1password_bot_secret_key \
-  #             slack_bot_token slack_signing_secret slack_app_token \
-  #             telegram_bot_token_marvin; do
-  #     cp ~/Development/agentshroud/docker/secrets/${f}.txt \
-  #        /Users/Shared/agentshroud-secrets/${f}.txt && \
-  #     chmod 644 /Users/Shared/agentshroud-secrets/${f}.txt
-  #   done
-  gateway_password:
-    file: /Users/Shared/agentshroud-secrets/gateway_password.txt
-  anthropic_oauth_token:
-    file: /Users/Shared/agentshroud-secrets/anthropic_oauth_token.txt
-  openai_api_key:
-    file: /Users/Shared/agentshroud-secrets/openai_api_key.txt
-  google_api_key:
-    file: /Users/Shared/agentshroud-secrets/google_api_key.txt
-  1password_bot_email:
-    file: /Users/Shared/agentshroud-secrets/1password_bot_email.txt
-  1password_bot_master_password:
-    file: /Users/Shared/agentshroud-secrets/1password_bot_master_password.txt
-  1password_bot_secret_key:
-    file: /Users/Shared/agentshroud-secrets/1password_bot_secret_key.txt
-  telegram_bot_token:
-    file: /Users/Shared/agentshroud-secrets/telegram_bot_token_marvin.txt
-  slack_bot_token:
-    file: /Users/Shared/agentshroud-secrets/slack_bot_token.txt
-  slack_signing_secret:
-    file: /Users/Shared/agentshroud-secrets/slack_signing_secret.txt
-  slack_app_token:
-    file: /Users/Shared/agentshroud-secrets/slack_app_token.txt
 
 networks:
   agentshroud-internal:
