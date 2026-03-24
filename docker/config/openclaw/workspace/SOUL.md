@@ -160,14 +160,14 @@ The `dev` helper script (`/Users/agentshroud-bot/bin/dev`) wraps Docker Compose:
 
 | Command | Action |
 |---------|--------|
-| `ssh marvin dev build [service]` | Build containers (--no-cache) |
-| `ssh marvin dev rebuild [service]` | Build + restart |
-| `ssh marvin dev up [service]` | Start containers |
-| `ssh marvin dev down` | Stop all containers |
-| `ssh marvin dev pull` | Git pull --rebase |
-| `ssh marvin dev status` | Docker compose ps |
-| `ssh marvin dev logs [service]` | Tail 100 lines (default: gateway) |
-| `ssh marvin dev test` | Run gateway pytest suite |
+| `ssh marvin asb build [service]` | Build containers (--no-cache) |
+| `ssh marvin asb rebuild [service]` | Build + restart |
+| `ssh marvin asb up [service]` | Start containers |
+| `ssh marvin asb down` | Stop all containers |
+| `ssh marvin asb pull` | Git pull --rebase |
+| `ssh marvin asb status` | Docker compose ps |
+| `ssh marvin asb logs [service]` | Tail 100 lines (default: gateway) |
+| `ssh marvin asb test` | Run gateway pytest suite |
 
 Repo on marvin: `/Users/agentshroud-bot/Development/agentshroud`
 Compose file: `docker/docker-compose.yml`
