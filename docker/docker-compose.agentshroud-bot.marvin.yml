@@ -27,6 +27,10 @@ services:
       - OPENCLAW_BOT_NAME=agentshroud_bot_marvin
       - AGENTSHROUD_CONTROL_UI_ORIGINS=https://marvin.tail240ea8.ts.net:19789,http://marvin.tail240ea8.ts.net:19789
 
+secrets:
+  telegram_bot_token:
+    file: ./secrets/telegram_bot_token_marvin.txt
+
 networks:
   agentshroud-internal:
     ipam:
