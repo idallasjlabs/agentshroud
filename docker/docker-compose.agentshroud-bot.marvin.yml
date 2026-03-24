@@ -55,13 +55,44 @@ services:
       - "marvin.tail240ea8.ts.net:host-gateway"
 
 secrets:
-  telegram_bot_token:
-    file: ./secrets/telegram_bot_token_marvin.txt
-  # google_api_key is required by the base compose file; create an empty placeholder
-  # if this dev instance does not need direct Google API access:
-  #   touch docker/secrets/google_api_key.txt
+  # All secrets point to /Users/Shared/agentshroud-dev-secrets/ so they are visible
+  # to the Colima Lima VM (which mounts /Users/Shared but not /Users/agentshroud-bot).
+  #
+  # One-time setup (run as agentshroud-bot):
+  #   mkdir -p /Users/Shared/agentshroud-dev-secrets
+  #   chmod 755 /Users/Shared/agentshroud-dev-secrets
+  #   for f in gateway_password anthropic_oauth_token openai_api_key google_api_key \
+  #             1password_bot_email 1password_bot_master_password 1password_bot_secret_key \
+  #             slack_bot_token slack_signing_secret slack_app_token; do
+  #     cp ~/Development/agentshroud/docker/secrets/${f}.txt \
+  #        /Users/Shared/agentshroud-dev-secrets/${f}.txt
+  #     chmod 644 /Users/Shared/agentshroud-dev-secrets/${f}.txt
+  #   done
+  #   cp ~/Development/agentshroud/docker/secrets/telegram_bot_token_marvin.txt \
+  #      /Users/Shared/agentshroud-dev-secrets/telegram_bot_token_marvin.txt
+  #   chmod 644 /Users/Shared/agentshroud-dev-secrets/telegram_bot_token_marvin.txt
+  gateway_password:
+    file: /Users/Shared/agentshroud-dev-secrets/gateway_password.txt
+  anthropic_oauth_token:
+    file: /Users/Shared/agentshroud-dev-secrets/anthropic_oauth_token.txt
+  openai_api_key:
+    file: /Users/Shared/agentshroud-dev-secrets/openai_api_key.txt
   google_api_key:
-    file: ./secrets/google_api_key.txt
+    file: /Users/Shared/agentshroud-dev-secrets/google_api_key.txt
+  1password_bot_email:
+    file: /Users/Shared/agentshroud-dev-secrets/1password_bot_email.txt
+  1password_bot_master_password:
+    file: /Users/Shared/agentshroud-dev-secrets/1password_bot_master_password.txt
+  1password_bot_secret_key:
+    file: /Users/Shared/agentshroud-dev-secrets/1password_bot_secret_key.txt
+  telegram_bot_token:
+    file: /Users/Shared/agentshroud-dev-secrets/telegram_bot_token_marvin.txt
+  slack_bot_token:
+    file: /Users/Shared/agentshroud-dev-secrets/slack_bot_token.txt
+  slack_signing_secret:
+    file: /Users/Shared/agentshroud-dev-secrets/slack_signing_secret.txt
+  slack_app_token:
+    file: /Users/Shared/agentshroud-dev-secrets/slack_app_token.txt
 
 # openclaw-runtime was previously created under project "agentshroud-dev".
 # external: true tells Compose to use the existing volume as-is without
