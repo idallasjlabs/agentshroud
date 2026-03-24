@@ -113,9 +113,14 @@ async function main() {
     ].join('\n');
   }
 
+  const attachmentPath = path.join(__dirname, 'AgentShroud-Competitive-Intelligence-Report-2026-03-22.pdf');
+  const attachments = fs.existsSync(attachmentPath)
+    ? [{ filename: 'AgentShroud-Competitive-Intelligence-Report-2026-03-22.pdf', path: attachmentPath }]
+    : [];
+
   try {
-    const info = await transporter.sendMail({ from: fromAddress, to, cc, subject, text: body });
-    console.log('OK: sent — ' + info.messageId);
+    const info = await transporter.sendMail({ from: fromAddress, to, cc, subject, text: body, attachments });
+    console.log('OK: sent — ' + info.messageId + (attachments.length ? ' [+attachment]' : ''));
   } catch (e) {
     console.error('FAILED: SMTP —', e.message);
     process.exit(1);
