@@ -62,21 +62,55 @@ def _check_clamd() -> str:
         s.close()
         return "running"
     except Exception:
-        return "stopped"
+        pass
+    # Socket not ready yet — check if the clamd process is running (still initialising)
+    try:
+        for entry in os.listdir("/proc"):
+            if not entry.isdigit():
+                continue
+            try:
+                comm = open(f"/proc/{entry}/comm").read().strip()
+                if comm in ("clamd", "clamd.exe"):
+                    return "running"
+            except Exception:
+                continue
+    except Exception:
+        pass
+    return "stopped"
 
 
 def _check_fluent_bit() -> str:
     """Return 'running', 'stopped', or 'not_installed' for fluent-bit (CC-01)."""
     import shutil
     import os as _os
-    if not shutil.which("fluent-bit") and not shutil.which("td-agent-bit"):
+    _FB_FALLBACK = "/opt/fluent-bit/bin/fluent-bit"
+    if (
+        not shutil.which("fluent-bit")
+        and not shutil.which("td-agent-bit")
+        and not _os.path.exists(_FB_FALLBACK)
+    ):
         return "not_installed"
     try:
         pid = int(open("/tmp/fluent-bit.pid").read().strip())
         _os.kill(pid, 0)
         return "running"
     except Exception:
-        return "stopped"
+        pass
+    # Fallback: scan /proc for a running fluent-bit process
+    try:
+        for entry in _os.listdir("/proc"):
+            if not entry.isdigit():
+                continue
+            comm_path = f"/proc/{entry}/comm"
+            try:
+                comm = open(comm_path).read().strip()
+                if "fluent-bit" in comm or "td-agent-bit" in comm:
+                    return "running"
+            except Exception:
+                continue
+    except Exception:
+        pass
+    return "stopped"
 
 
 def _check_wazuh_agent() -> str:
@@ -93,9 +127,22 @@ def _check_wazuh_agent() -> str:
     except OSError as exc:
         if exc.errno == _errno.EPERM:
             return "running"  # process exists, owned by different user
-        return "stopped"
     except Exception:
-        return "stopped"
+        pass
+    # PID file missing — scan /proc for wazuh-agentd process directly
+    try:
+        for entry in _os.listdir("/proc"):
+            if not entry.isdigit():
+                continue
+            try:
+                comm = open(f"/proc/{entry}/comm").read().strip()
+                if comm in ("wazuh-agentd",):
+                    return "running"
+            except Exception:
+                continue
+    except Exception:
+        pass
+    return "stopped"
 
 
 def _check_openscap() -> str:
