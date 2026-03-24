@@ -5,8 +5,10 @@
 
 set -euo pipefail
 
-HOST=$(hostname)
-REPO_DIR="$(cd "$(dirname "$0")/.." && pwd)"
+HOST=$(hostname -s)
+SCRIPT_PATH="${BASH_SOURCE[0]}"
+[ -L "$SCRIPT_PATH" ] && SCRIPT_PATH="$(readlink "$SCRIPT_PATH")"
+REPO_DIR="$(cd "$(dirname "$SCRIPT_PATH")/.." && pwd)"
 
 if [ "$USER" = "agentshroud-bot" ]; then
   OVERRIDE="$REPO_DIR/docker/docker-compose.agentshroud-bot.${HOST}.yml"
