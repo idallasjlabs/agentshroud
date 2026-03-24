@@ -269,5 +269,31 @@ class SlackAPIProxy:
         """
         return self._relay_tokens.pop(token, None)
 
+    async def handle_event(self, payload: dict) -> None:
+        """Handle an inbound Slack event payload received via Socket Mode.
+
+        Called by SlackSocketClient for each ``events_api`` envelope.  Records
+        collaborator inbound activity so the daily digest and SOC Activity tab
+        reflect Slack messages even when the bot handles them natively.
+        """
+        event = payload.get("event", {})
+        if event.get("type") != "message":
+            return
+        user_id = event.get("user", "")
+        text = str(event.get("text", ""))
+        if not user_id:
+            return
+        if self.tracker:
+            try:
+                self.tracker.record_activity(
+                    user_id=user_id,
+                    username=user_id,
+                    message_preview=text[:80],
+                    source="slack",
+                    direction="inbound",
+                )
+            except Exception as exc:
+                logger.debug("Slack handle_event tracker error (non-fatal): %s", exc)
+
     def get_stats(self) -> dict:
         return dict(self._stats)

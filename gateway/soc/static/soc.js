@@ -50,7 +50,9 @@ function _ts(iso) {
 
 function _ago(iso) {
   if (!iso) return '—';
-  const diff = (Date.now() - new Date(iso)) / 1000;
+  const d = new Date(iso);
+  if (isNaN(d.getTime())) return '—';
+  const diff = (Date.now() - d) / 1000;
   if (diff < 60)   return `${Math.round(diff)}s ago`;
   if (diff < 3600) return `${Math.round(diff / 60)}m ago`;
   return `${Math.round(diff / 3600)}h ago`;
@@ -436,6 +438,9 @@ function _renderScanners(data) {
 }
 
 let _sbomPackagesAll = [];
+let _sbomSortCol = 'name';
+let _sbomSortAsc = true;
+let _sbomTypeFilter = '';
 
 function _renderSbom(sbom, status) {
   const el = document.getElementById('sbom-panel');
@@ -463,6 +468,38 @@ function _renderSbom(sbom, status) {
   }
 }
 
+function _sbomGetVal(p, col) {
+  if (col === 'name')    return (p.name || p.packageName || '').toLowerCase();
+  if (col === 'version') return (p.versionInfo || p.version || '').toLowerCase();
+  if (col === 'type')    return (p.externalRefs?.[0]?.referenceCategory || p.type || '').toLowerCase();
+  if (col === 'loc')     return (p.sourceInfo || p.packageFileName || '').toLowerCase();
+  return '';
+}
+
+window._sortSbomCol = function(col) {
+  if (_sbomSortCol === col) { _sbomSortAsc = !_sbomSortAsc; }
+  else { _sbomSortCol = col; _sbomSortAsc = true; }
+  _applyAndRenderSbom();
+};
+
+window._filterSbomType = function(type) {
+  _sbomTypeFilter = type;
+  _applyAndRenderSbom();
+};
+
+function _applyAndRenderSbom() {
+  const searchEl = document.getElementById('sbom-search');
+  const query = searchEl ? searchEl.value.trim().toLowerCase() : '';
+  let pkgs = _sbomPackagesAll;
+  if (query) pkgs = pkgs.filter(p => (p.name || '').toLowerCase().includes(query));
+  if (_sbomTypeFilter) pkgs = pkgs.filter(p => (p.externalRefs?.[0]?.referenceCategory || p.type || '') === _sbomTypeFilter);
+  pkgs = pkgs.slice().sort((a, b) => {
+    const av = _sbomGetVal(a, _sbomSortCol), bv = _sbomGetVal(b, _sbomSortCol);
+    return _sbomSortAsc ? av.localeCompare(bv) : bv.localeCompare(av);
+  });
+  _renderSbomPackageTable(pkgs);
+}
+
 function _renderSbomPackageTable(pkgs) {
   const tbl = document.getElementById('sbom-pkg-table');
   if (!tbl) return;
@@ -470,8 +507,25 @@ function _renderSbomPackageTable(pkgs) {
     tbl.innerHTML = '<span style="color:var(--text-muted);font-size:12px">No packages</span>';
     return;
   }
-  tbl.innerHTML = `<table class="data-table" style="font-size:11px">
-    <thead><tr><th>Package</th><th>Version</th><th>Type</th><th>Location</th></tr></thead>
+  const _thStyle = (col) => {
+    const active = _sbomSortCol === col;
+    const arrow = active ? (_sbomSortAsc ? ' ▲' : ' ▼') : '';
+    return `style="cursor:pointer;user-select:none${active ? ';color:var(--accent)' : ''}" onclick="window._sortSbomCol('${col}')"`;
+  };
+  // Build type filter dropdown options from all packages
+  const allTypes = [...new Set(_sbomPackagesAll.map(p => p.externalRefs?.[0]?.referenceCategory || p.type || '').filter(Boolean))].sort();
+  const typeOpts = `<option value="">All Types</option>` + allTypes.map(t => `<option value="${_esc(t)}"${_sbomTypeFilter===t?' selected':''}>${_esc(t)}</option>`).join('');
+  const typeFilter = allTypes.length > 1
+    ? `<select style="font-size:11px;margin-left:8px;padding:2px 4px;background:var(--surface);color:var(--text);border:1px solid var(--border);border-radius:3px" onchange="window._filterSbomType(this.value)">${typeOpts}</select>`
+    : '';
+  const filterRow = typeFilter ? `<div style="margin-bottom:6px;font-size:11px">Filter by type: ${typeFilter}</div>` : '';
+  tbl.innerHTML = filterRow + `<table class="data-table" style="font-size:11px">
+    <thead><tr>
+      <th ${_thStyle('name')}>Package${_sbomSortCol==='name'?(_sbomSortAsc?' ▲':' ▼'):''}</th>
+      <th ${_thStyle('version')}>Version${_sbomSortCol==='version'?(_sbomSortAsc?' ▲':' ▼'):''}</th>
+      <th ${_thStyle('type')}>Type${_sbomSortCol==='type'?(_sbomSortAsc?' ▲':' ▼'):''}</th>
+      <th ${_thStyle('loc')}>Location${_sbomSortCol==='loc'?(_sbomSortAsc?' ▲':' ▼'):''}</th>
+    </tr></thead>
     <tbody>${pkgs.slice(0, 500).map(p => {
       const name    = p.name || p.packageName || '—';
       const version = p.versionInfo || p.version || '—';
@@ -483,10 +537,7 @@ function _renderSbomPackageTable(pkgs) {
 }
 
 window._filterSbomPackages = function(query) {
-  const filtered = query
-    ? _sbomPackagesAll.filter(p => (p.name || '').toLowerCase().includes(query.toLowerCase()))
-    : _sbomPackagesAll;
-  _renderSbomPackageTable(filtered);
+  _applyAndRenderSbom();
 };
 
 window._reloadScanners = _loadScanners;
@@ -861,11 +912,25 @@ window._loadActivityLog = async function() {
   const tbody = document.getElementById('activity-tbody');
   if (tbody) tbody.innerHTML = '<tr><td colspan="6" style="color:var(--text-muted);text-align:center;padding:1rem">Loading…</td></tr>';
 
-  const { ok, data } = await _get(url);
-  if (!tbody) return;
+  // Defensive timeout: clear "Loading…" if API takes >12s
+  const _loadTimeout = setTimeout(() => {
+    const t = document.getElementById('activity-tbody');
+    if (t && t.innerHTML.includes('Loading')) {
+      t.innerHTML = '<tr><td colspan="6" style="color:var(--text-muted);text-align:center;padding:1rem">No activity data available — tracker may not be initialised.</td></tr>';
+    }
+  }, 12000);
 
-  if (!ok || !Array.isArray(data?.entries)) {
-    tbody.innerHTML = '<tr><td colspan="6" style="color:var(--danger);text-align:center;padding:1rem">Failed to load activity. Check gateway logs.</td></tr>';
+  const { ok, data } = await _get(url);
+  clearTimeout(_loadTimeout);
+  const tbodyEl = document.getElementById('activity-tbody');
+  if (!tbodyEl) return;
+
+  if (!ok) {
+    tbodyEl.innerHTML = '<tr><td colspan="6" style="color:var(--danger);text-align:center;padding:1rem">Failed to load activity. Check gateway logs.</td></tr>';
+    return;
+  }
+  if (!Array.isArray(data?.entries)) {
+    tbodyEl.innerHTML = '<tr><td colspan="6" style="color:var(--text-muted);text-align:center;padding:1rem">No activity recorded yet.</td></tr>';
     return;
   }
 

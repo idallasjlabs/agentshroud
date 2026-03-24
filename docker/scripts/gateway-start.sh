@@ -12,17 +12,21 @@ if command -v freshclam >/dev/null 2>&1; then
     echo "[gateway-start] freshclam DB update complete"
 fi
 
-# Start ClamAV daemon (non-fatal)
+# Start ClamAV daemon (non-fatal); wait up to 10s for socket so health checks pass
 if command -v clamd >/dev/null 2>&1; then
     clamd --config-file=/etc/clamav/clamd.conf 2>/tmp/clamd-start.log &
     echo "[gateway-start] clamd launched (pid=$!)"
+    for _i in $(seq 1 10); do [ -S /tmp/clamd.ctl ] && break; sleep 1; done
+    [ -S /tmp/clamd.ctl ] && echo "[gateway-start] clamd socket ready" || echo "[gateway-start] clamd socket not yet ready (still initialising)"
 fi
 
-# Start Fluent Bit log collector (non-fatal); write pidfile for health check
-if command -v fluent-bit >/dev/null 2>&1; then
-    fluent-bit -c /etc/fluent-bit/fluent-bit.conf 2>/tmp/fluent-bit-start.log &
+# Start Fluent Bit log collector (non-fatal); write pidfile for health check.
+# fluent-bit deb installs to /opt/fluent-bit/bin/fluent-bit which is not on PATH.
+_FB_BIN=$(command -v fluent-bit 2>/dev/null || command -v td-agent-bit 2>/dev/null || echo /opt/fluent-bit/bin/fluent-bit)
+if [ -x "$_FB_BIN" ]; then
+    "$_FB_BIN" -c /etc/fluent-bit/fluent-bit.conf 2>/tmp/fluent-bit-start.log &
     echo $! > /tmp/fluent-bit.pid
-    echo "[gateway-start] fluent-bit launched (pid=$(cat /tmp/fluent-bit.pid))"
+    echo "[gateway-start] fluent-bit launched via $_FB_BIN (pid=$(cat /tmp/fluent-bit.pid))"
 fi
 
 # Start Wazuh agent (non-fatal) — FIM on /app/gateway + Falco alert ingestion
