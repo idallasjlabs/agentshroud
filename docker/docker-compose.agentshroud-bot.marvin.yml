@@ -57,6 +57,18 @@ services:
 secrets:
   telegram_bot_token:
     file: ./secrets/telegram_bot_token_marvin.txt
+  # google_api_key is required by the base compose file; create an empty placeholder
+  # if this dev instance does not need direct Google API access:
+  #   touch docker/secrets/google_api_key.txt
+  google_api_key:
+    file: ./secrets/google_api_key.txt
+
+# openclaw-runtime was previously created under project "agentshroud-dev".
+# external: true tells Compose to use the existing volume as-is without
+# complaining about project-name ownership mismatch.
+volumes:
+  openclaw-runtime:
+    external: true
 
 # All three bridge subnets offset from prod (10.254.110-112.0/24) to prevent
 # Docker refusing to allocate duplicate subnets on the same host.
