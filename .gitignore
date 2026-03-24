@@ -7,11 +7,15 @@
 # SECRETS & CREDENTIALS (CRITICAL)
 # Docker secrets directory (contains runtime secrets)
 docker/secrets/
-!docker/secrets/
-docker/secrets/*
+!docker/secrets/*.example
 !docker/secrets/README.md
 !docker/secrets/setup-secrets.sh
-!docker/secrets/*.example
+# agentshroud-dev
+docker/agentshroud-dev-secrets/
+!docker/agentshroud-dev-secrets/*.example
+!docker/agentshroud-dev-secrets/README.md
+!docker/agentshroud-dev-secrets/setup-secrets.sh
+
 # Environment variables
 .env
 .env.*
@@ -21,6 +25,7 @@ docker/secrets/*
 llm_settings/env/.llm_env
 llm_settings/mcp-servers/**/.env
 security_assessment/.assessment_env
+
 # SSH & GPG keys
 .ssh/
 *.pem
@@ -33,6 +38,7 @@ id_rsa
 id_ed25519
 *.asc
 *.gpg
+
 # Credential files
 aws_credentials
 .pgpass
