@@ -639,7 +639,8 @@ class SecurityPipeline:
         if self.prompt_protection:
             user_id_pp = (metadata or {}).get("user_id", "")
             is_owner_pp = bool(
-                self._owner_user_id and str(user_id_pp) == str(self._owner_user_id)
+                user_trust_level == "FULL"
+                or (self._owner_user_id and str(user_id_pp) == str(self._owner_user_id))
             )
             if not is_owner_pp:
                 try:

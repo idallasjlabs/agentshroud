@@ -81,6 +81,7 @@ RUN DPKG_ARCH=$(dpkg --print-architecture) && \
     rm "/tmp/trivy_${TRIVY_VERSION}_Linux-${TRIVY_ARCH}.deb" /tmp/trivy_checksums.txt
 
 # cosign — image signing and verification (Domain 17)
+# R2-M1: Checksum verified via published cosign_checksums.txt (same pattern as Trivy)
 ARG COSIGN_VERSION=3.0.5
 RUN DPKG_ARCH=$(dpkg --print-architecture) && \
     case "$DPKG_ARCH" in \
@@ -88,36 +89,60 @@ RUN DPKG_ARCH=$(dpkg --print-architecture) && \
       amd64) COSIGN_ARCH="amd64" ;; \
       *) COSIGN_ARCH="$DPKG_ARCH" ;; \
     esac && \
-    ( curl -sSfL -o /usr/local/bin/cosign \
-        "https://github.com/sigstore/cosign/releases/download/v${COSIGN_VERSION}/cosign-linux-${COSIGN_ARCH}" && \
-      chmod +x /usr/local/bin/cosign ) || \
+    COSIGN_BIN="cosign-linux-${COSIGN_ARCH}" && \
+    ( curl -sSfL -o "/tmp/${COSIGN_BIN}" \
+        "https://github.com/sigstore/cosign/releases/download/v${COSIGN_VERSION}/${COSIGN_BIN}" && \
+      curl -sSfL -o /tmp/cosign_checksums.txt \
+        "https://github.com/sigstore/cosign/releases/download/v${COSIGN_VERSION}/cosign_checksums.txt" && \
+      cd /tmp && grep "^[0-9a-f]*  ${COSIGN_BIN}$" cosign_checksums.txt | sha256sum -c - && \
+      mv "/tmp/${COSIGN_BIN}" /usr/local/bin/cosign && \
+      chmod +x /usr/local/bin/cosign && \
+      rm /tmp/cosign_checksums.txt ) || \
     echo "cosign: download deferred to runtime"
 
 # slsa-verifier — SLSA provenance attestation (Domain 17 Level 4)
+# R2-M1: slsa-verifier publishes only .intoto.jsonl provenance (no checksums file).
+# Pin SHA256 via build args. Override at build time:
+#   --build-arg SLSA_SHA256_AMD64=<sha> --build-arg SLSA_SHA256_ARM64=<sha>
+# Obtain values: sha256sum slsa-verifier-linux-{amd64,arm64} after manual verification.
 ARG SLSA_VERSION=2.7.1
+ARG SLSA_SHA256_AMD64=""
+ARG SLSA_SHA256_ARM64=""
 RUN DPKG_ARCH=$(dpkg --print-architecture) && \
     case "$DPKG_ARCH" in \
-      arm64) SLSA_ARCH="linux-arm64" ;; \
-      amd64) SLSA_ARCH="linux-amd64" ;; \
-      *) SLSA_ARCH="linux-$DPKG_ARCH" ;; \
+      arm64) SLSA_ARCH="linux-arm64"; SLSA_SHA="${SLSA_SHA256_ARM64}" ;; \
+      amd64) SLSA_ARCH="linux-amd64"; SLSA_SHA="${SLSA_SHA256_AMD64}" ;; \
+      *) SLSA_ARCH="linux-$DPKG_ARCH"; SLSA_SHA="" ;; \
     esac && \
-    ( curl -sSfL -o /usr/local/bin/slsa-verifier \
-        "https://github.com/slsa-framework/slsa-verifier/releases/download/v${SLSA_VERSION}/slsa-verifier-${SLSA_ARCH}" && \
+    SLSA_BIN="slsa-verifier-${SLSA_ARCH}" && \
+    ( curl -sSfL -o "/tmp/${SLSA_BIN}" \
+        "https://github.com/slsa-framework/slsa-verifier/releases/download/v${SLSA_VERSION}/${SLSA_BIN}" && \
+      if [ -n "$SLSA_SHA" ]; then echo "${SLSA_SHA}  /tmp/${SLSA_BIN}" | sha256sum -c -; fi && \
+      mv "/tmp/${SLSA_BIN}" /usr/local/bin/slsa-verifier && \
       chmod +x /usr/local/bin/slsa-verifier ) || \
     echo "slsa-verifier: download deferred to runtime"
 
 # Docker CLI static binary — for docker info (Domain 19 Level 3)
+# R2-M1: download.docker.com publishes no separate checksums for static tarballs.
+# Pin SHA256 via build args. Override at build time:
+#   --build-arg DOCKER_CLI_SHA256_AMD64=<sha> --build-arg DOCKER_CLI_SHA256_ARM64=<sha>
+# Obtain values: sha256sum docker-{version}.tgz after manual download and verification.
 ARG DOCKER_CLI_VERSION=29.3.0
+ARG DOCKER_CLI_SHA256_AMD64=""
+ARG DOCKER_CLI_SHA256_ARM64=""
 RUN DPKG_ARCH=$(dpkg --print-architecture) && \
     case "$DPKG_ARCH" in \
-      arm64) DOCKER_ARCH="aarch64" ;; \
-      amd64) DOCKER_ARCH="x86_64" ;; \
-      *) DOCKER_ARCH="$DPKG_ARCH" ;; \
+      arm64) DOCKER_ARCH="aarch64"; DOCKER_SHA="${DOCKER_CLI_SHA256_ARM64}" ;; \
+      amd64) DOCKER_ARCH="x86_64"; DOCKER_SHA="${DOCKER_CLI_SHA256_AMD64}" ;; \
+      *) DOCKER_ARCH="$DPKG_ARCH"; DOCKER_SHA="" ;; \
     esac && \
-    ( curl -fsSL "https://download.docker.com/linux/static/stable/${DOCKER_ARCH}/docker-${DOCKER_CLI_VERSION}.tgz" \
-        | tar -xz -C /tmp docker/docker && \
+    ( curl -fsSL -o /tmp/docker.tgz \
+        "https://download.docker.com/linux/static/stable/${DOCKER_ARCH}/docker-${DOCKER_CLI_VERSION}.tgz" && \
+      if [ -n "$DOCKER_SHA" ]; then echo "${DOCKER_SHA}  /tmp/docker.tgz" | sha256sum -c -; fi && \
+      tar -xz -C /tmp -f /tmp/docker.tgz docker/docker && \
       mv /tmp/docker/docker /usr/local/bin/docker && \
-      chmod +x /usr/local/bin/docker ) || \
+      chmod +x /usr/local/bin/docker && \
+      rm -rf /tmp/docker.tgz /tmp/docker ) || \
     echo "docker CLI: download deferred to runtime"
 
 # Wazuh agent — HIDS / FIM, runs as agentshroud user inside the gateway container

@@ -596,6 +596,27 @@ async def lifespan(app: FastAPI):
         logger.error(f"Failed to initialize CollaboratorActivityTracker: {e}")
         app_state.collaborator_tracker = None
 
+    # Start gateway-side Slack Socket Mode client for inbound activity tracking.
+    # OpenClaw uses native Slack integration (connects directly to Slack's WSS),
+    # so the gateway never sees inbound Slack events without this parallel listener.
+    import asyncio as _asyncio
+    app_state.slack_socket_task = None
+    app_state.slack_socket_client = None
+    try:
+        _slack_app_token = _read_secret("slack_app_token")
+        if _slack_app_token:
+            from ..proxy.slack_socket_client import SlackSocketClient
+            from ..proxy.slack_proxy import SlackAPIProxy as _SlackProxyClass
+            _monitor_proxy = _SlackProxyClass(tracker=app_state.collaborator_tracker)
+            _socket_client = SlackSocketClient(_monitor_proxy, _slack_app_token)
+            app_state.slack_socket_task = _asyncio.create_task(_socket_client.run())
+            app_state.slack_socket_client = _socket_client
+            logger.info("✓ Slack Socket Mode client started for inbound activity tracking")
+        else:
+            logger.info("Slack Socket Mode not configured (no slack_app_token secret)")
+    except Exception as _slack_exc:
+        logger.error("✗ Slack Socket Mode client: %s", _slack_exc)
+
     # ══════════════════════════════════════════════════════════════════
     # P3 — Background & Infrastructure Security Modules
     # All modules fully configured with real binaries and data paths.
@@ -1197,6 +1218,14 @@ async def lifespan(app: FastAPI):
     if getattr(app_state, "dns_blocklist", None):
         app_state.dns_blocklist.stop()
         logger.info("DNSBlocklist periodic updates stopped")
+
+    # Stop Slack Socket Mode client
+    slack_socket_client = getattr(app_state, "slack_socket_client", None)
+    if slack_socket_client:
+        slack_socket_client.stop()
+    slack_socket_task = getattr(app_state, "slack_socket_task", None)
+    if slack_socket_task and not slack_socket_task.done():
+        slack_socket_task.cancel()
 
     await app_state.ledger.close()
 

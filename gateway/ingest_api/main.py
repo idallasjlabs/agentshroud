@@ -206,6 +206,11 @@ _soc_static = Path(__file__).parent.parent / "soc" / "static"
 if _soc_static.exists():
     app.mount("/soc/static", StaticFiles(directory=str(_soc_static)), name="soc-static")
 
+# Serve brand logos at /soc/branding/ (branding/ dir is mounted at /app/branding in Docker)
+_soc_branding = Path(__file__).parent.parent.parent / "branding" / "logos" / "png"
+if _soc_branding.exists():
+    app.mount("/soc/branding", StaticFiles(directory=str(_soc_branding)), name="soc-branding")
+
 
 # === CORS Middleware ===
 # Custom CORS middleware that reads from app_state.config at runtime
@@ -3752,9 +3757,17 @@ async def telegram_api_proxy(path: str, request: Request):
     # System notifications (startup/shutdown from start.sh) carry X-AgentShroud-System: 1
     # so the proxy skips outbound content filtering — these are not LLM-generated output.
     is_system = request.headers.get("x-agentshroud-system") == "1"
-    from fastapi.responses import JSONResponse
+    from fastapi.responses import JSONResponse, Response
     result = await _telegram_proxy.proxy_request(bot_token, method, body, content_type, is_system=is_system, path_prefix=file_prefix)
-    
+
+    # File downloads return binary data — serve as-is rather than JSON-encoding.
+    if "_raw_body" in result:
+        return Response(
+            content=result["_raw_body"],
+            media_type=result.get("_content_type", "application/octet-stream"),
+            status_code=result.get("_status_code", 200),
+        )
+
     status_code = 200 if result.get('ok', False) else result.get('error_code', 500)
     return JSONResponse(content=result, status_code=status_code)
 

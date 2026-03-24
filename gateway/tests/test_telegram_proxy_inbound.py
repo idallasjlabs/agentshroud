@@ -8148,3 +8148,110 @@ class AsyncMock:
     async def __call__(self, *args, **kwargs):
         self.calls.append((args, kwargs))
         return None
+
+
+# ── File Download Tests ───────────────────────────────────────────────────────
+
+class TestFileDownload:
+    """Tests for _forward_file_download() and proxy_request() binary path.
+
+    Regression tests for the bug where file/bot<token>/<path> requests caused
+    json.loads() to raise JSONDecodeError on binary image data, returning 502.
+    """
+
+    @pytest.mark.asyncio
+    async def test_forward_file_download_returns_raw_body_sentinel(self, monkeypatch):
+        """_forward_file_download returns dict with _raw_body, _content_type, _status_code."""
+        import io
+        import ssl
+
+        fake_body = b"\x89PNG\r\n\x1a\n" + b"\x00" * 100  # fake PNG bytes
+        fake_response = io.BytesIO(fake_body)
+        fake_response.status = 200
+        fake_response.headers = {"Content-Type": "image/png"}
+
+        proxy = TelegramAPIProxy()
+        monkeypatch.setattr(
+            "urllib.request.urlopen",
+            lambda *args, **kwargs: fake_response,
+        )
+
+        result = await proxy._forward_file_download("https://api.telegram.org/file/botTOKEN/photo/file_0.jpg")
+        assert result["_raw_body"] == fake_body
+        assert result["_content_type"] == "image/png"
+        assert result["_status_code"] == 200
+
+    @pytest.mark.asyncio
+    async def test_proxy_request_file_prefix_returns_binary_sentinel(self, monkeypatch):
+        """proxy_request with path_prefix='file/' returns _raw_body sentinel (no JSON parse)."""
+        import io
+
+        fake_body = b"\xff\xd8\xff"  # JPEG magic bytes
+        fake_response = io.BytesIO(fake_body)
+        fake_response.status = 200
+        fake_response.headers = {"Content-Type": "image/jpeg"}
+
+        proxy = TelegramAPIProxy()
+        monkeypatch.setattr(
+            "urllib.request.urlopen",
+            lambda *args, **kwargs: fake_response,
+        )
+
+        result = await proxy.proxy_request(
+            bot_token="TOKEN",
+            method="photos/file_0.jpg",
+            body=None,
+            content_type=None,
+            path_prefix="file/",
+        )
+        assert "_raw_body" in result
+        assert result["_raw_body"] == fake_body
+        assert "ok" not in result  # must NOT be a JSON API response
+
+    @pytest.mark.asyncio
+    async def test_proxy_request_file_download_error_returns_502(self, monkeypatch):
+        """proxy_request returns 502 sentinel when file download raises."""
+        import urllib.request
+
+        proxy = TelegramAPIProxy()
+        monkeypatch.setattr(
+            "urllib.request.urlopen",
+            lambda *args, **kwargs: (_ for _ in ()).throw(RuntimeError("network error")),
+        )
+
+        result = await proxy.proxy_request(
+            bot_token="TOKEN",
+            method="photos/file_0.jpg",
+            body=None,
+            content_type=None,
+            path_prefix="file/",
+        )
+        assert result.get("ok") is False
+        assert result.get("error_code") == 502
+
+    @pytest.mark.asyncio
+    async def test_proxy_request_api_path_still_json_parsed(self, monkeypatch):
+        """proxy_request without file/ prefix still JSON-parses the response."""
+        import io
+        import json as _json
+
+        api_response = _json.dumps({"ok": True, "result": []}).encode()
+        fake_response = io.BytesIO(api_response)
+        fake_response.status = 200
+        fake_response.headers = {}
+
+        proxy = TelegramAPIProxy()
+        monkeypatch.setattr(
+            "urllib.request.urlopen",
+            lambda *args, **kwargs: fake_response,
+        )
+
+        result = await proxy.proxy_request(
+            bot_token="TOKEN",
+            method="getUpdates",
+            body=None,
+            content_type=None,
+            path_prefix="",
+        )
+        assert result.get("ok") is True
+        assert "_raw_body" not in result
