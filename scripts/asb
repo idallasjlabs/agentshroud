@@ -10,8 +10,12 @@ SCRIPT_PATH="${BASH_SOURCE[0]}"
 [ -L "$SCRIPT_PATH" ] && SCRIPT_PATH="$(readlink "$SCRIPT_PATH")"
 REPO_DIR="$(cd "$(dirname "$SCRIPT_PATH")/.." && pwd)"
 
-OVERRIDE="$REPO_DIR/docker/docker-compose.agentshroud-bot.${HOST}.yml"
-if [ -f "$OVERRIDE" ]; then
+if [ "$USER" = "agentshroud-bot" ]; then
+  OVERRIDE="$REPO_DIR/docker/docker-compose.agentshroud-bot.${HOST}.yml"
+  if [ ! -f "$OVERRIDE" ]; then
+    echo "ERROR: no compose override for host '${HOST}' — expected: $OVERRIDE" >&2
+    exit 1
+  fi
   COMPOSE="docker compose -f $REPO_DIR/docker/docker-compose.yml -f $OVERRIDE -p agentshroud"
 else
   COMPOSE="docker compose -f $REPO_DIR/docker/docker-compose.yml -p agentshroud"
