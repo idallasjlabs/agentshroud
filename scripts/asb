@@ -1,0 +1,32 @@
+#!/usr/bin/env bash
+# asb — AgentShroud Bot helper
+# Works on any server: resolves compose override file from hostname.
+# Usage: asb {build|up|down|rebuild|pull|status|logs [service]|test}
+
+set -euo pipefail
+
+HOST=$(hostname)
+REPO_DIR="$(cd "$(dirname "$0")/.." && pwd)"
+OVERRIDE="$REPO_DIR/docker/docker-compose.agentshroud-bot.${HOST}.yml"
+
+if [ ! -f "$OVERRIDE" ]; then
+  echo "ERROR: no compose override for host '${HOST}' — expected: $OVERRIDE" >&2
+  exit 1
+fi
+
+COMPOSE="docker compose -f $REPO_DIR/docker/docker-compose.yml -f $OVERRIDE -p agentshroud"
+
+case "${1:-}" in
+  build)   $COMPOSE build --no-cache ;;
+  up)      $COMPOSE up -d ;;
+  down)    $COMPOSE down ;;
+  rebuild) $COMPOSE build --no-cache && $COMPOSE up -d ;;
+  pull)    cd "$REPO_DIR" && git pull --rebase ;;
+  status)  $COMPOSE ps ;;
+  logs)    $COMPOSE logs -f --tail=100 ${2:-} ;;
+  test)    $COMPOSE exec gateway python -m pytest gateway/tests/ -q ;;
+  *)
+    echo "Usage: asb {build|up|down|rebuild|pull|status|logs [service]|test}"
+    exit 1
+    ;;
+esac
