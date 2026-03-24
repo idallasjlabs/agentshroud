@@ -38,32 +38,43 @@ def _map_severity(raw: Any) -> Severity:
 
 
 def from_audit_chain_entry(entry: Any) -> SecurityEvent:
-    """Convert AuditChainEntry (from AuditStore) to SecurityEvent."""
+    """Convert AuditEvent (from AuditStore) to SecurityEvent.
+
+    AuditEvent fields: event_type, severity, timestamp, source_module,
+    details (dict), prev_hash, entry_hash.  Agent/user/action context is
+    stored inside the details dict by callers of AuditStore.log_event().
+    """
     try:
         ts_raw = getattr(entry, "timestamp", None) or ""
-        details = {}
-        direction = getattr(entry, "direction", "unknown")
-        block_reason = getattr(entry, "block_reason", "") or ""
-        agent_id = getattr(entry, "agent_id", "") or ""
-        user_id = getattr(entry, "user_id", None)
-        action_taken = getattr(entry, "action_taken", "allowed") or "allowed"
+        details: dict = getattr(entry, "details", None) or {}
+        event_type = getattr(entry, "event_type", None) or "audit_entry"
+        source_module = getattr(entry, "source_module", None) or "audit_store"
 
-        if block_reason:
-            details["block_reason"] = block_reason
-        if direction:
-            details["direction"] = direction
+        # Context fields stored in details by pipeline/proxy callers
+        agent_id = str(details.get("agent_id", "") or "")
+        user_id = details.get("user_id") or details.get("user") or None
+        block_reason = str(details.get("block_reason", "") or "")
+        action_taken = str(details.get("action_taken", "") or "allowed")
+
+        # Build a human-readable summary
+        summary = (
+            details.get("summary")
+            or block_reason
+            or details.get("message")
+            or event_type
+        )
 
         return SecurityEvent(
-            event_type=direction or "audit_entry",
+            event_type=event_type,
             severity=_map_severity(getattr(entry, "severity", "info")),
             timestamp=ts_raw or datetime.now(timezone.utc).isoformat(),
-            source_module="audit_store",
-            agent_id=str(agent_id),
+            source_module=source_module,
+            agent_id=agent_id,
             user_id=str(user_id) if user_id else None,
             action_taken=action_taken,
-            summary=block_reason or direction or "Audit entry",
-            details=details,
-            chain_hash=getattr(entry, "chain_hash", None),
+            summary=str(summary),
+            details=dict(details),
+            chain_hash=getattr(entry, "entry_hash", None),
             prev_hash=getattr(entry, "prev_hash", None),
         )
     except Exception as exc:

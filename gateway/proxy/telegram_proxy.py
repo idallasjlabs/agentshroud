@@ -2273,6 +2273,14 @@ class TelegramAPIProxy:
                 logger.debug("Outbound collab response tracking error (non-fatal): %s", _ote)
 
         # Forward to real Telegram API
+        # File download paths return binary data (images, documents) — do NOT JSON-parse.
+        if path_prefix == "file/":
+            try:
+                return await self._forward_file_download(url)
+            except Exception as e:
+                logger.error(f"Telegram file download proxy error for {method}: {e}")
+                return {"ok": False, "error_code": 502, "description": str(e)}
+
         try:
             response_data = await self._forward_to_telegram(url, body, content_type)
         except Exception as e:
@@ -2433,7 +2441,12 @@ class TelegramAPIProxy:
                         data[text_key] = (
                             self._collaborator_safe_notice("tool output redacted")
                             if not is_owner_chat
-                            else _PROTECTED_POLICY_NOTICE
+                            else (
+                                f"⚠️ Agent returned a raw tool-call JSON for '{tool_name or 'unknown'}' "
+                                "which is not configured in this environment. "
+                                "Ask the agent to report findings as text rather than executing commands, "
+                                "or switch to a tool-capable model (scripts/switch_model.sh)."
+                            )
                         )
                     return json.dumps(data).encode()
 
@@ -6098,3 +6111,25 @@ class TelegramAPIProxy:
                 parsed.get("description"),
             )
             return parsed
+
+    async def _forward_file_download(self, url: str) -> dict:
+        """Forward a Telegram file download and return a raw-binary sentinel dict.
+
+        File downloads (path prefix ``file/``) return binary image or document
+        data, not JSON.  Callers must detect the ``_raw_body`` key and return a
+        binary HTTP response instead of JSONResponse.
+        """
+        req = urllib.request.Request(url)
+        loop = asyncio.get_event_loop()
+        response = await loop.run_in_executor(
+            None,
+            lambda: urllib.request.urlopen(req, timeout=60, context=self._ssl_context),
+        )
+        body = response.read()
+        content_type = response.headers.get("Content-Type", "application/octet-stream")
+        status_code = response.status
+        return {
+            "_raw_body": body,
+            "_content_type": content_type,
+            "_status_code": status_code,
+        }
