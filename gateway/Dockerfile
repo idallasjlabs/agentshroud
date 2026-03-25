@@ -77,22 +77,21 @@ RUN DPKG_ARCH=$(dpkg --print-architecture) && \
     rm /tmp/cosign_checksums.txt
 
 # slsa-verifier — SLSA provenance verification for downloaded artifacts
+# v2.7.0 publishes only .intoto.jsonl (no checksums file), so we pin SHA256 directly.
 ARG SLSA_VERIFIER_VERSION=2.7.0
+ARG SLSA_SHA256_ARM64=dc3845d7605f666a0938389c1c5735230e50b32a547867ffd351fb14df928167
+ARG SLSA_SHA256_AMD64=499befb675efcca9001afe6e5156891b91e71f9c07ab120a8943979f85cc82e6
 RUN DPKG_ARCH=$(dpkg --print-architecture) && \
     case "$DPKG_ARCH" in \
-      arm64) SLSA_ARCH="linux-arm64" ;; \
-      amd64) SLSA_ARCH="linux-amd64" ;; \
-      armhf) SLSA_ARCH="linux-arm" ;; \
-      *) SLSA_ARCH="linux-$DPKG_ARCH" ;; \
+      arm64) SLSA_ARCH="linux-arm64"; SLSA_SHA256="$SLSA_SHA256_ARM64" ;; \
+      amd64) SLSA_ARCH="linux-amd64"; SLSA_SHA256="$SLSA_SHA256_AMD64" ;; \
+      *) echo "Unsupported arch: $DPKG_ARCH" && exit 1 ;; \
     esac && \
     curl -sSfL -o /tmp/slsa-verifier \
         "https://github.com/slsa-framework/slsa-verifier/releases/download/v${SLSA_VERIFIER_VERSION}/slsa-verifier-${SLSA_ARCH}" && \
-    curl -sSfL -o /tmp/slsa-verifier.sha256 \
-        "https://github.com/slsa-framework/slsa-verifier/releases/download/v${SLSA_VERIFIER_VERSION}/slsa-verifier-${SLSA_ARCH}.sha256" && \
-    (cd /tmp && sha256sum -c slsa-verifier.sha256) && \
+    echo "${SLSA_SHA256}  /tmp/slsa-verifier" | sha256sum -c - && \
     chmod +x /tmp/slsa-verifier && \
-    mv /tmp/slsa-verifier /usr/local/bin/slsa-verifier && \
-    rm /tmp/slsa-verifier.sha256
+    mv /tmp/slsa-verifier /usr/local/bin/slsa-verifier
 
 # Trivy vulnerability scanner — pinned version (M7 fix)
 ARG TRIVY_VERSION=0.69.3
