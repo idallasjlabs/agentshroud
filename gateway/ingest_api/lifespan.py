@@ -617,6 +617,17 @@ async def lifespan(app: FastAPI):
     except Exception as _slack_exc:
         logger.error("✗ Slack Socket Mode client: %s", _slack_exc)
 
+    # Initialize group registry — auto-groups (telegram, slack, everyone) + custom persisted groups
+    try:
+        from gateway.security.rbac_config import GroupRegistry, RBACConfig as _RBACCfgGR
+        _gr = GroupRegistry()
+        _gr.init_auto_groups(_RBACCfgGR())
+        app_state.group_registry = _gr
+        logger.info("GroupRegistry initialized (%d groups)", len(_gr.groups))
+    except Exception as e:
+        logger.error("Failed to initialize GroupRegistry: %s", e)
+        app_state.group_registry = None
+
     # ══════════════════════════════════════════════════════════════════
     # P3 — Background & Infrastructure Security Modules
     # All modules fully configured with real binaries and data paths.
@@ -1121,6 +1132,85 @@ async def lifespan(app: FastAPI):
                 logger.debug("Wazuh periodic check error (non-fatal): %s", _wp_exc)
 
     _asyncio.create_task(_wazuh_periodic())
+
+    # Startup security scanner — runs ClamAV + Trivy 30s after boot so the SOC
+    # shows real results immediately rather than waiting for a manual POST trigger.
+    async def _startup_scanner():
+        await _asyncio.sleep(30)
+        _loop = _asyncio.get_event_loop()
+        _now = __import__("datetime").datetime.now(__import__("datetime").timezone.utc).isoformat()
+
+        def _store_result(scanner: str, result: dict, target: str = "") -> None:
+            store = getattr(app_state, "scanner_results", None)
+            if not isinstance(store, dict):
+                store = {}
+            history = getattr(app_state, "scanner_result_history", None)
+            if not isinstance(history, list):
+                history = []
+            summary: dict = {
+                "scanner": scanner, "target": target,
+                "status": "unknown", "findings": 0,
+                "critical": 0, "high": 0, "medium": 0, "low": 0,
+            }
+            if isinstance(result, dict) and not result.get("error"):
+                if scanner == "clamav":
+                    infected = int(result.get("infected_count", 0))
+                    summary.update({"findings": infected, "critical": infected,
+                                    "status": "critical" if infected > 0 else "clean"})
+                elif scanner == "trivy":
+                    bsev = result.get("by_severity", {}) or {}
+                    summary.update({
+                        "critical": int(bsev.get("CRITICAL", 0)),
+                        "high":     int(bsev.get("HIGH", 0)),
+                        "medium":   int(bsev.get("MEDIUM", 0)),
+                        "low":      int(bsev.get("LOW", 0)),
+                        "findings": int(result.get("total_vulnerabilities", 0)),
+                    })
+                    summary["status"] = ("critical" if summary["critical"] > 0
+                                         else "warning" if summary["high"] > 0 else "clean")
+            elif isinstance(result, dict) and result.get("error"):
+                summary["status"] = "error"
+            entry = {"timestamp": _now, "scanner": scanner, "target": target,
+                     "summary": summary, "result": result}
+            store[scanner] = entry
+            app_state.scanner_results = store
+            history.append(entry)
+            if len(history) > 5000:
+                del history[:len(history) - 5000]
+            app_state.scanner_result_history = history
+
+        # ClamAV
+        _clamav = getattr(app_state, "clamav_scanner", None)
+        if _clamav:
+            try:
+                import shutil as _sh, os as _os
+                _bin = ("clamdscan"
+                        if (_sh.which("clamdscan") and _os.path.exists("/var/run/clamav/clamd.ctl"))
+                        else "clamscan")
+                _clam_result = await _loop.run_in_executor(
+                    None, lambda: _clamav.run_clamscan(target="/app", timeout=120, clamscan_bin=_bin)
+                )
+                _store_result("clamav", _clam_result, target="/app")
+                logger.info("✓ Startup ClamAV scan complete (status=%s)",
+                            (app_state.scanner_results or {}).get("clamav", {}).get("summary", {}).get("status"))
+            except Exception as _exc:
+                logger.warning("Startup ClamAV scan failed: %s", _exc)
+
+        # Trivy
+        _trivy = getattr(app_state, "trivy_scanner", None)
+        if _trivy:
+            try:
+                _trivy_result = await _loop.run_in_executor(
+                    None, lambda: _trivy.run_trivy_scan(scan_type="fs", target="/app", timeout=300)
+                )
+                _store_result("trivy", _trivy_result, target="/app")
+                logger.info("✓ Startup Trivy scan complete (status=%s)",
+                            (app_state.scanner_results or {}).get("trivy", {}).get("summary", {}).get("status"))
+            except Exception as _exc:
+                logger.warning("Startup Trivy scan failed: %s", _exc)
+
+    app_state._startup_scanner_task = _asyncio.create_task(_startup_scanner())
+    logger.info("✓ Startup security scanner scheduled (runs in 30s)")
 
     # Register Telegram bot commands so the "/" menu shows in the client
     _tg_token_cmds = os.environ.get("TELEGRAM_BOT_TOKEN", "") or _read_secret("telegram_bot_token")
