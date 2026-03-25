@@ -48,6 +48,7 @@ class AppState:
     # Security enforcement state (set by background tasks at startup)
     trivy_critical_count: int
     image_verification: Optional[object]
+    group_registry: Optional[object]
 
 
 # Global application state instance

@@ -297,3 +297,55 @@ class SlackAPIProxy:
 
     def get_stats(self) -> dict:
         return dict(self._stats)
+
+    async def provision_group_channel(self, group_id: str, name: str) -> Optional[str]:
+        """Create a Slack channel for a group. Returns channel_id or None on failure.
+
+        Channel name is sanitized to Slack's lowercase, no-space format.
+        """
+        if not self._bot_token:
+            return None
+        safe_name = name.lower().replace(" ", "-").replace("_", "-")
+        safe_name = "".join(c for c in safe_name if c.isalnum() or c == "-")[:80]
+        result = await self._call_slack_api("conversations.create", {
+            "name": f"group-{safe_name}",
+            "is_private": False,
+        })
+        if result.get("ok"):
+            channel_id = result.get("channel", {}).get("id")
+            logger.info("Slack channel created for group %r: %s", group_id, channel_id)
+            return channel_id
+        logger.warning("Slack channel creation failed for group %r: %s", group_id, result.get("error"))
+        return None
+
+    async def invite_channel_member(self, channel_id: str, slack_user_id: str) -> bool:
+        """Invite a Slack user to a channel. Returns True on success."""
+        if not self._bot_token or not channel_id or not slack_user_id:
+            return False
+        result = await self._call_slack_api("conversations.invite", {
+            "channel": channel_id,
+            "users": slack_user_id,
+        })
+        if result.get("ok"):
+            return True
+        err = result.get("error", "")
+        if err == "already_in_channel":
+            return True  # idempotent
+        logger.warning("Slack invite failed: channel=%s user=%s error=%s", channel_id, slack_user_id, err)
+        return False
+
+    async def kick_channel_member(self, channel_id: str, slack_user_id: str) -> bool:
+        """Remove a Slack user from a channel. Returns True on success."""
+        if not self._bot_token or not channel_id or not slack_user_id:
+            return False
+        result = await self._call_slack_api("conversations.kick", {
+            "channel": channel_id,
+            "user": slack_user_id,
+        })
+        if result.get("ok"):
+            return True
+        err = result.get("error", "")
+        if err in ("not_in_channel", "cant_kick_self"):
+            return True  # idempotent
+        logger.warning("Slack kick failed: channel=%s user=%s error=%s", channel_id, slack_user_id, err)
+        return False
