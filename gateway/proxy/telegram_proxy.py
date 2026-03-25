@@ -150,6 +150,12 @@ _LOCAL_COLLABS_COMMANDS = {
     "/listcollabs",
     "listcollabs",
 }
+# Group management — owner-only
+_LOCAL_NEWGROUP_COMMANDS = {"/newgroup", "newgroup"}
+_LOCAL_LINKGROUP_COMMANDS = {"/linkgroup", "linkgroup"}
+_LOCAL_ADDMEMBER_COMMANDS = {"/addmember", "addmember", "/addtogroup", "addtogroup"}
+_LOCAL_REMOVEMEMBER_COMMANDS = {"/removemember", "removemember", "/kickmember", "kickmember"}
+_LOCAL_LISTGROUPS_COMMANDS = {"/listgroups", "listgroups", "/groups", "groups"}
 _COLLABORATOR_ALLOWED_SLASH_COMMANDS = {
     "/start",
     "/help",
@@ -426,6 +432,40 @@ class TelegramAPIProxy:
                 cmd_text = text[offset : offset + length].lower()
                 if f"@{bot_username}" in cmd_text:
                     return True
+        return False
+
+    async def _telegram_create_invite_link(self, chat_id: int) -> Optional[str]:
+        """Create a single-use invite link for a Telegram group. Returns URL or None."""
+        if not self._bot_token:
+            return None
+        try:
+            url = f"{TELEGRAM_API_BASE}/bot{self._bot_token}/createChatInviteLink"
+            body = json.dumps({"chat_id": chat_id, "member_limit": 1}).encode()
+            resp = await self._forward_to_telegram(url, body, "application/json")
+            if resp.get("ok"):
+                return resp.get("result", {}).get("invite_link")
+        except Exception as exc:
+            logger.debug("createChatInviteLink error: %s", exc)
+        return None
+
+    async def _telegram_kick_member(self, chat_id: int, user_id: int) -> bool:
+        """Kick (ban + unban) a user from a Telegram group. Returns True on success."""
+        if not self._bot_token:
+            return False
+        try:
+            ban_url = f"{TELEGRAM_API_BASE}/bot{self._bot_token}/banChatMember"
+            ban_body = json.dumps({"chat_id": chat_id, "user_id": user_id}).encode()
+            ban_resp = await self._forward_to_telegram(ban_url, ban_body, "application/json")
+            if not ban_resp.get("ok"):
+                return False
+            # Immediately unban so the user can rejoin later via invite link
+            unban_url = f"{TELEGRAM_API_BASE}/bot{self._bot_token}/unbanChatMember"
+            unban_body = json.dumps({"chat_id": chat_id, "user_id": user_id,
+                                     "only_if_banned": True}).encode()
+            await self._forward_to_telegram(unban_url, unban_body, "application/json")
+            return True
+        except Exception as exc:
+            logger.debug("Telegram kick error: %s", exc)
         return False
 
     def _set_outbound_block_cascade(self, chat_id: str) -> None:
@@ -3716,6 +3756,274 @@ class TelegramAPIProxy:
                 elif is_owner and cmd_base in _LOCAL_COLLABS_COMMANDS:
                     local_handler = self._send_owner_collabs_notice
                     local_label = "collabs"
+
+                # ── Group management (owner-only) ─────────────────────────────
+                elif is_owner and cmd_base in _LOCAL_LISTGROUPS_COMMANDS:
+                    local_label = "listgroups"
+                    _owner_chat_snap = chat_id
+
+                    async def _local_listgroups_handler(target_chat_id: int) -> None:
+                        from gateway.ingest_api.state import app_state as _s
+                        _gr = getattr(_s, "group_registry", None)
+                        if not _gr:
+                            await self._send_owner_admin_notice(
+                                target_chat_id, f"{_PROTECT_HEADER}Group registry unavailable."
+                            )
+                            return
+                        groups = _gr.list_groups()
+                        if not groups:
+                            await self._send_owner_admin_notice(
+                                target_chat_id, f"{_PROTECT_HEADER}No groups defined."
+                            )
+                            return
+                        lines = [f"{_PROTECT_HEADER}*Groups ({len(groups)}):*\n"]
+                        for g in groups:
+                            tg = f"tg:{g.telegram_chat_id}" if g.telegram_chat_id else "tg:unlinked"
+                            sl = f"slack:{g.slack_channel_id}" if g.slack_channel_id else "slack:none"
+                            lines.append(
+                                f"• `{g.id}` — {g.name} | {len(g.members)} members | {tg} | {sl}"
+                            )
+                        await self._send_owner_admin_notice(target_chat_id, "\n".join(lines))
+
+                    local_handler = _local_listgroups_handler
+
+                elif is_owner and cmd_base in _LOCAL_NEWGROUP_COMMANDS:
+                    local_label = "newgroup"
+                    _args = text.split(None, 2)
+                    if len(_args) < 3:
+                        await self._send_owner_admin_notice(
+                            chat_id, f"{_PROTECT_HEADER}Usage: /newgroup <id> <name>"
+                        )
+                        continue
+                    _grp_id = _args[1].lower().strip()
+                    _grp_name = _args[2].strip()
+                    _owner_chat_snap = chat_id
+                    _grp_id_snap = _grp_id
+                    _grp_name_snap = _grp_name
+
+                    async def _local_newgroup_handler(target_chat_id: int) -> None:
+                        from gateway.ingest_api.state import app_state as _s
+                        _gr = getattr(_s, "group_registry", None)
+                        if not _gr:
+                            await self._send_owner_admin_notice(
+                                target_chat_id, f"{_PROTECT_HEADER}Group registry unavailable."
+                            )
+                            return
+                        try:
+                            grp = _gr.create_group(_grp_id_snap, _grp_name_snap)
+                        except ValueError as ve:
+                            await self._send_owner_admin_notice(
+                                target_chat_id, f"{_PROTECT_HEADER}Error: {ve}"
+                            )
+                            return
+
+                        # Auto-provision Slack channel if slack proxy available
+                        _slack_ch = None
+                        try:
+                            from gateway.ingest_api.main import _slack_proxy as _sp
+                            _slack_ch = await _sp.provision_group_channel(_grp_id_snap, _grp_name_snap)
+                            if _slack_ch:
+                                grp.slack_channel_id = _slack_ch
+                                from gateway.security.rbac_config import _persist_groups
+                                _persist_groups(_gr.groups)
+                        except Exception as _se:
+                            logger.debug("Slack group provision error: %s", _se)
+
+                        msg = (
+                            f"{_PROTECT_HEADER}*Group created:* `{_grp_id_snap}`\n"
+                            f"Name: {_grp_name_snap}\n"
+                        )
+                        if _slack_ch:
+                            msg += f"Slack channel: `{_slack_ch}` provisioned ✅\n"
+                        else:
+                            msg += "Slack: no channel provisioned (tokens not set or unavailable)\n"
+                        msg += (
+                            "\n*Telegram group:* Bots cannot create groups. To link:\n"
+                            "1. Create a Telegram group manually\n"
+                            "2. Add this bot as admin (with Invite + Ban permissions)\n"
+                            f"3. Run: `/linkgroup {_grp_id_snap} <chat_id>`\n"
+                            "   (Get chat_id from gateway logs after the bot receives a group message)"
+                        )
+                        await self._send_owner_admin_notice(target_chat_id, msg)
+
+                    local_handler = _local_newgroup_handler
+
+                elif is_owner and cmd_base in _LOCAL_LINKGROUP_COMMANDS:
+                    local_label = "linkgroup"
+                    _args = text.split(None, 2)
+                    if len(_args) < 3:
+                        await self._send_owner_admin_notice(
+                            chat_id, f"{_PROTECT_HEADER}Usage: /linkgroup <group_id> <telegram_chat_id>"
+                        )
+                        continue
+                    _lnk_grp_id = _args[1].lower().strip()
+                    try:
+                        _lnk_chat_id = int(_args[2].strip())
+                    except ValueError:
+                        await self._send_owner_admin_notice(
+                            chat_id, f"{_PROTECT_HEADER}Invalid chat_id — must be an integer (e.g. -1001234567890)"
+                        )
+                        continue
+                    _lnk_grp_id_snap = _lnk_grp_id
+                    _lnk_chat_id_snap = _lnk_chat_id
+
+                    async def _local_linkgroup_handler(target_chat_id: int) -> None:
+                        from gateway.ingest_api.state import app_state as _s
+                        _gr = getattr(_s, "group_registry", None)
+                        if not _gr:
+                            await self._send_owner_admin_notice(
+                                target_chat_id, f"{_PROTECT_HEADER}Group registry unavailable."
+                            )
+                            return
+                        grp = _gr.get_group(_lnk_grp_id_snap)
+                        if not grp:
+                            await self._send_owner_admin_notice(
+                                target_chat_id,
+                                f"{_PROTECT_HEADER}Group `{_lnk_grp_id_snap}` not found. Create it first with /newgroup."
+                            )
+                            return
+                        grp.telegram_chat_id = _lnk_chat_id_snap
+                        from gateway.security.rbac_config import _persist_groups
+                        _persist_groups(_gr.groups)
+                        await self._send_owner_admin_notice(
+                            target_chat_id,
+                            f"{_PROTECT_HEADER}Linked `{_lnk_grp_id_snap}` → Telegram chat `{_lnk_chat_id_snap}` ✅\n"
+                            f"Group has {len(grp.members)} members. Use /addmember to invite them."
+                        )
+
+                    local_handler = _local_linkgroup_handler
+
+                elif is_owner and cmd_base in _LOCAL_ADDMEMBER_COMMANDS:
+                    local_label = "addmember"
+                    _args = text.split(None, 2)
+                    if len(_args) < 3:
+                        await self._send_owner_admin_notice(
+                            chat_id, f"{_PROTECT_HEADER}Usage: /addmember <group_id> <user_id>"
+                        )
+                        continue
+                    _am_grp_id = _args[1].lower().strip()
+                    _am_user_id = _args[2].strip()
+                    _am_grp_id_snap = _am_grp_id
+                    _am_user_id_snap = _am_user_id
+                    _am_owner_chat = chat_id
+
+                    async def _local_addmember_handler(target_chat_id: int) -> None:
+                        from gateway.ingest_api.state import app_state as _s
+                        _gr = getattr(_s, "group_registry", None)
+                        if not _gr:
+                            await self._send_owner_admin_notice(
+                                target_chat_id, f"{_PROTECT_HEADER}Group registry unavailable."
+                            )
+                            return
+                        grp = _gr.get_group(_am_grp_id_snap)
+                        if not grp:
+                            await self._send_owner_admin_notice(
+                                target_chat_id,
+                                f"{_PROTECT_HEADER}Group `{_am_grp_id_snap}` not found."
+                            )
+                            return
+                        _gr.add_member(_am_grp_id_snap, _am_user_id_snap)
+
+                        results = []
+                        # Telegram: send invite link to the user's DM if group is linked
+                        if grp.telegram_chat_id:
+                            invite = await self._telegram_create_invite_link(grp.telegram_chat_id)
+                            if invite:
+                                try:
+                                    await self._send_telegram_text(
+                                        int(_am_user_id_snap),
+                                        f"You've been added to group *{grp.name}*.\n"
+                                        f"Join via: {invite}"
+                                    )
+                                    results.append("Telegram invite sent ✅")
+                                except Exception:
+                                    results.append(f"Telegram invite link (send manually): {invite}")
+                            else:
+                                results.append("Telegram invite: failed (is bot admin with invite permission?)")
+                        else:
+                            results.append("Telegram: no linked group chat (use /linkgroup first)")
+
+                        # Slack: invite to channel if user ID looks like a Slack ID and channel exists
+                        if grp.slack_channel_id and _am_user_id_snap.startswith("U"):
+                            try:
+                                from gateway.ingest_api.main import _slack_proxy as _sp
+                                ok = await _sp.invite_channel_member(grp.slack_channel_id, _am_user_id_snap)
+                                results.append(f"Slack invite: {'✅' if ok else '❌'}")
+                            except Exception as _se:
+                                results.append(f"Slack invite error: {_se}")
+                        elif grp.slack_channel_id:
+                            results.append("Slack: user ID is not a Slack ID (skipped)")
+
+                        summary = "\n".join(f"  • {r}" for r in results)
+                        await self._send_owner_admin_notice(
+                            target_chat_id,
+                            f"{_PROTECT_HEADER}Added `{_am_user_id_snap}` to group `{_am_grp_id_snap}`:\n{summary}"
+                        )
+
+                    local_handler = _local_addmember_handler
+
+                elif is_owner and cmd_base in _LOCAL_REMOVEMEMBER_COMMANDS:
+                    local_label = "removemember"
+                    _args = text.split(None, 2)
+                    if len(_args) < 3:
+                        await self._send_owner_admin_notice(
+                            chat_id, f"{_PROTECT_HEADER}Usage: /removemember <group_id> <user_id>"
+                        )
+                        continue
+                    _rm_grp_id = _args[1].lower().strip()
+                    _rm_user_id = _args[2].strip()
+                    _rm_grp_id_snap = _rm_grp_id
+                    _rm_user_id_snap = _rm_user_id
+
+                    async def _local_removemember_handler(target_chat_id: int) -> None:
+                        from gateway.ingest_api.state import app_state as _s
+                        _gr = getattr(_s, "group_registry", None)
+                        if not _gr:
+                            await self._send_owner_admin_notice(
+                                target_chat_id, f"{_PROTECT_HEADER}Group registry unavailable."
+                            )
+                            return
+                        grp = _gr.get_group(_rm_grp_id_snap)
+                        if not grp:
+                            await self._send_owner_admin_notice(
+                                target_chat_id,
+                                f"{_PROTECT_HEADER}Group `{_rm_grp_id_snap}` not found."
+                            )
+                            return
+                        _gr.remove_member(_rm_grp_id_snap, _rm_user_id_snap)
+
+                        results = []
+                        # Telegram: kick from group if linked
+                        if grp.telegram_chat_id:
+                            try:
+                                kicked = await self._telegram_kick_member(
+                                    grp.telegram_chat_id, int(_rm_user_id_snap)
+                                )
+                                results.append(f"Telegram kick: {'✅' if kicked else '❌'}")
+                            except (ValueError, Exception) as _ke:
+                                results.append(f"Telegram kick error: {_ke}")
+                        else:
+                            results.append("Telegram: no linked group chat")
+
+                        # Slack: remove from channel if Slack ID
+                        if grp.slack_channel_id and _rm_user_id_snap.startswith("U"):
+                            try:
+                                from gateway.ingest_api.main import _slack_proxy as _sp
+                                ok = await _sp.kick_channel_member(grp.slack_channel_id, _rm_user_id_snap)
+                                results.append(f"Slack remove: {'✅' if ok else '❌'}")
+                            except Exception as _se:
+                                results.append(f"Slack remove error: {_se}")
+                        elif grp.slack_channel_id:
+                            results.append("Slack: user ID is not a Slack ID (skipped)")
+
+                        summary = "\n".join(f"  • {r}" for r in results)
+                        await self._send_owner_admin_notice(
+                            target_chat_id,
+                            f"{_PROTECT_HEADER}Removed `{_rm_user_id_snap}` from group `{_rm_grp_id_snap}`:\n{summary}"
+                        )
+
+                    local_handler = _local_removemember_handler
+
                 elif is_owner and cmd_base in _LOCAL_REVOKE_COMMANDS:
                     target_id = self._extract_owner_target_resolved(text)
                     if not target_id:
