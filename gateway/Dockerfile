@@ -67,14 +67,14 @@ RUN DPKG_ARCH=$(dpkg --print-architecture) && \
       armhf) COSIGN_ARCH="arm" ;; \
       *) COSIGN_ARCH="$DPKG_ARCH" ;; \
     esac && \
-    curl -sSfL -o /tmp/cosign \
+    curl -sSfL -o "/tmp/cosign-linux-${COSIGN_ARCH}" \
         "https://github.com/sigstore/cosign/releases/download/v${COSIGN_VERSION}/cosign-linux-${COSIGN_ARCH}" && \
-    curl -sSfL -o /tmp/cosign.sha256 \
-        "https://github.com/sigstore/cosign/releases/download/v${COSIGN_VERSION}/cosign-linux-${COSIGN_ARCH}.sha256" && \
-    (cd /tmp && sha256sum -c cosign.sha256) && \
-    chmod +x /tmp/cosign && \
-    mv /tmp/cosign /usr/local/bin/cosign && \
-    rm /tmp/cosign.sha256
+    curl -sSfL -o /tmp/cosign_checksums.txt \
+        "https://github.com/sigstore/cosign/releases/download/v${COSIGN_VERSION}/cosign_checksums.txt" && \
+    (cd /tmp && grep "cosign-linux-${COSIGN_ARCH}$" cosign_checksums.txt | sha256sum -c -) && \
+    chmod +x "/tmp/cosign-linux-${COSIGN_ARCH}" && \
+    mv "/tmp/cosign-linux-${COSIGN_ARCH}" /usr/local/bin/cosign && \
+    rm /tmp/cosign_checksums.txt
 
 # slsa-verifier — SLSA provenance verification for downloaded artifacts
 ARG SLSA_VERIFIER_VERSION=2.7.0
