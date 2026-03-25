@@ -107,20 +107,17 @@ RUN DPKG_ARCH=$(dpkg --print-architecture) && \
         "https://github.com/aquasecurity/trivy/releases/download/v${TRIVY_VERSION}/trivy_${TRIVY_VERSION}_Linux-${TRIVY_ARCH}.deb" && \
     curl -sSfL -o /tmp/trivy_checksums.txt \
         "https://github.com/aquasecurity/trivy/releases/download/v${TRIVY_VERSION}/trivy_${TRIVY_VERSION}_checksums.txt" && \
-    curl -sSfL -o /tmp/trivy_checksums.txt.pem \
-        "https://github.com/aquasecurity/trivy/releases/download/v${TRIVY_VERSION}/trivy_${TRIVY_VERSION}_checksums.txt.pem" && \
-    curl -sSfL -o /tmp/trivy_checksums.txt.sig \
-        "https://github.com/aquasecurity/trivy/releases/download/v${TRIVY_VERSION}/trivy_${TRIVY_VERSION}_checksums.txt.sig" && \
+    curl -sSfL -o /tmp/trivy_checksums.txt.sigstore.json \
+        "https://github.com/aquasecurity/trivy/releases/download/v${TRIVY_VERSION}/trivy_${TRIVY_VERSION}_checksums.txt.sigstore.json" && \
     cosign verify-blob \
         --certificate-oidc-issuer https://token.actions.githubusercontent.com \
         --certificate-identity-regexp "https://github.com/aquasecurity/trivy/.github/workflows/release.yaml@refs/tags/v${TRIVY_VERSION}" \
-        --certificate /tmp/trivy_checksums.txt.pem \
-        --signature /tmp/trivy_checksums.txt.sig \
+        --bundle /tmp/trivy_checksums.txt.sigstore.json \
         /tmp/trivy_checksums.txt && \
     cd /tmp && grep "trivy_${TRIVY_VERSION}_Linux-${TRIVY_ARCH}.deb" trivy_checksums.txt | sha256sum -c - && \
     dpkg -i "/tmp/trivy_${TRIVY_VERSION}_Linux-${TRIVY_ARCH}.deb" && \
     rm "/tmp/trivy_${TRIVY_VERSION}_Linux-${TRIVY_ARCH}.deb" /tmp/trivy_checksums.txt \
-       /tmp/trivy_checksums.txt.pem /tmp/trivy_checksums.txt.sig
+       /tmp/trivy_checksums.txt.sigstore.json
 
 # Create non-root user
 RUN useradd --create-home --shell /bin/bash --uid 1000 agentshroud
