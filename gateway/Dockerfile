@@ -111,7 +111,7 @@ RUN DPKG_ARCH=$(dpkg --print-architecture) && \
         "https://github.com/aquasecurity/trivy/releases/download/v${TRIVY_VERSION}/trivy_${TRIVY_VERSION}_checksums.txt.sigstore.json" && \
     cosign verify-blob \
         --certificate-oidc-issuer https://token.actions.githubusercontent.com \
-        --certificate-identity-regexp "https://github.com/aquasecurity/trivy/.github/workflows/release.yaml@refs/tags/v${TRIVY_VERSION}" \
+        --certificate-identity-regexp "https://github.com/aquasecurity/trivy/.github/workflows/.*release.yaml@refs/tags/v${TRIVY_VERSION}" \
         --bundle /tmp/trivy_checksums.txt.sigstore.json \
         /tmp/trivy_checksums.txt && \
     cd /tmp && grep "trivy_${TRIVY_VERSION}_Linux-${TRIVY_ARCH}.deb" trivy_checksums.txt | sha256sum -c - && \
