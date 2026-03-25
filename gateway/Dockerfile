@@ -57,9 +57,46 @@ RUN apt-get update && apt-get install -y --no-install-recommends curl ca-certifi
     && apt-get update && apt-get install -y --no-install-recommends 1password-cli \
     && rm -rf /var/lib/apt/lists/*
 
+# cosign — supply-chain verification tool (used to verify Trivy and other binaries)
+# Pinned to SHA256 digest; cosign binary itself is verified against its published checksum.
+ARG COSIGN_VERSION=2.4.3
+RUN DPKG_ARCH=$(dpkg --print-architecture) && \
+    case "$DPKG_ARCH" in \
+      arm64) COSIGN_ARCH="arm64" ;; \
+      amd64) COSIGN_ARCH="amd64" ;; \
+      armhf) COSIGN_ARCH="arm" ;; \
+      *) COSIGN_ARCH="$DPKG_ARCH" ;; \
+    esac && \
+    curl -sSfL -o /tmp/cosign \
+        "https://github.com/sigstore/cosign/releases/download/v${COSIGN_VERSION}/cosign-linux-${COSIGN_ARCH}" && \
+    curl -sSfL -o /tmp/cosign.sha256 \
+        "https://github.com/sigstore/cosign/releases/download/v${COSIGN_VERSION}/cosign-linux-${COSIGN_ARCH}.sha256" && \
+    (cd /tmp && sha256sum -c cosign.sha256) && \
+    chmod +x /tmp/cosign && \
+    mv /tmp/cosign /usr/local/bin/cosign && \
+    rm /tmp/cosign.sha256
+
+# slsa-verifier — SLSA provenance verification for downloaded artifacts
+ARG SLSA_VERIFIER_VERSION=2.7.0
+RUN DPKG_ARCH=$(dpkg --print-architecture) && \
+    case "$DPKG_ARCH" in \
+      arm64) SLSA_ARCH="linux-arm64" ;; \
+      amd64) SLSA_ARCH="linux-amd64" ;; \
+      armhf) SLSA_ARCH="linux-arm" ;; \
+      *) SLSA_ARCH="linux-$DPKG_ARCH" ;; \
+    esac && \
+    curl -sSfL -o /tmp/slsa-verifier \
+        "https://github.com/slsa-framework/slsa-verifier/releases/download/v${SLSA_VERIFIER_VERSION}/slsa-verifier-${SLSA_ARCH}" && \
+    curl -sSfL -o /tmp/slsa-verifier.sha256 \
+        "https://github.com/slsa-framework/slsa-verifier/releases/download/v${SLSA_VERIFIER_VERSION}/slsa-verifier-${SLSA_ARCH}.sha256" && \
+    (cd /tmp && sha256sum -c slsa-verifier.sha256) && \
+    chmod +x /tmp/slsa-verifier && \
+    mv /tmp/slsa-verifier /usr/local/bin/slsa-verifier && \
+    rm /tmp/slsa-verifier.sha256
+
 # Trivy vulnerability scanner — pinned version (M7 fix)
 ARG TRIVY_VERSION=0.69.3
-# R2-M1: Download Trivy with checksum verification for supply chain integrity
+# R2-M1: Download Trivy with SHA256 + cosign signature verification for supply chain integrity
 RUN DPKG_ARCH=$(dpkg --print-architecture) && \
     case "$DPKG_ARCH" in \
       arm64) TRIVY_ARCH="ARM64" ;; \
@@ -71,9 +108,20 @@ RUN DPKG_ARCH=$(dpkg --print-architecture) && \
         "https://github.com/aquasecurity/trivy/releases/download/v${TRIVY_VERSION}/trivy_${TRIVY_VERSION}_Linux-${TRIVY_ARCH}.deb" && \
     curl -sSfL -o /tmp/trivy_checksums.txt \
         "https://github.com/aquasecurity/trivy/releases/download/v${TRIVY_VERSION}/trivy_${TRIVY_VERSION}_checksums.txt" && \
+    curl -sSfL -o /tmp/trivy_checksums.txt.pem \
+        "https://github.com/aquasecurity/trivy/releases/download/v${TRIVY_VERSION}/trivy_${TRIVY_VERSION}_checksums.txt.pem" && \
+    curl -sSfL -o /tmp/trivy_checksums.txt.sig \
+        "https://github.com/aquasecurity/trivy/releases/download/v${TRIVY_VERSION}/trivy_${TRIVY_VERSION}_checksums.txt.sig" && \
+    cosign verify-blob \
+        --certificate-oidc-issuer https://token.actions.githubusercontent.com \
+        --certificate-identity-regexp "https://github.com/aquasecurity/trivy/.github/workflows/release.yaml@refs/tags/v${TRIVY_VERSION}" \
+        --certificate /tmp/trivy_checksums.txt.pem \
+        --signature /tmp/trivy_checksums.txt.sig \
+        /tmp/trivy_checksums.txt && \
     cd /tmp && grep "trivy_${TRIVY_VERSION}_Linux-${TRIVY_ARCH}.deb" trivy_checksums.txt | sha256sum -c - && \
     dpkg -i "/tmp/trivy_${TRIVY_VERSION}_Linux-${TRIVY_ARCH}.deb" && \
-    rm "/tmp/trivy_${TRIVY_VERSION}_Linux-${TRIVY_ARCH}.deb" /tmp/trivy_checksums.txt
+    rm "/tmp/trivy_${TRIVY_VERSION}_Linux-${TRIVY_ARCH}.deb" /tmp/trivy_checksums.txt \
+       /tmp/trivy_checksums.txt.pem /tmp/trivy_checksums.txt.sig
 
 # Create non-root user
 RUN useradd --create-home --shell /bin/bash --uid 1000 agentshroud
