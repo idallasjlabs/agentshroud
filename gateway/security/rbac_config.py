@@ -134,7 +134,9 @@ class Group:
     id: str
     name: str
     members: List[str] = field(default_factory=list)
-    platform: Optional[str] = None  # 'telegram', 'slack', or None for cross-platform
+    platform: Optional[str] = None          # 'telegram', 'slack', or None for cross-platform
+    telegram_chat_id: Optional[int] = None  # Linked Telegram group/supergroup chat ID
+    slack_channel_id: Optional[str] = None  # Provisioned Slack channel ID (C...)
 
 
 _AUTO_GROUP_IDS = frozenset({"telegram", "slack", "everyone"})
@@ -245,6 +247,8 @@ def _load_persisted_groups() -> List[Group]:
                     name=g.get("name", g["id"]),
                     members=g.get("members", []),
                     platform=g.get("platform"),
+                    telegram_chat_id=g.get("telegram_chat_id"),
+                    slack_channel_id=g.get("slack_channel_id"),
                 )
                 for g in data.get("groups", [])
                 if g.get("id") and g["id"] not in _AUTO_GROUP_IDS
@@ -261,7 +265,14 @@ def _persist_groups(groups: Dict[str, Group]) -> None:
         _GROUPS_FILE_PATH.parent.mkdir(parents=True, exist_ok=True)
         data = {
             "groups": [
-                {"id": g.id, "name": g.name, "members": g.members, "platform": g.platform}
+                {
+                    "id": g.id,
+                    "name": g.name,
+                    "members": g.members,
+                    "platform": g.platform,
+                    "telegram_chat_id": g.telegram_chat_id,
+                    "slack_channel_id": g.slack_channel_id,
+                }
                 for g in custom
             ]
         }
