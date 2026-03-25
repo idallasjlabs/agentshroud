@@ -8,10 +8,14 @@ Defines user roles and access control policies for AgentShroud.
 """
 
 from __future__ import annotations
-from dataclasses import dataclass, field
-from typing import Dict, List, Optional
-from enum import Enum
+import fcntl
+import json
+import logging
 import os
+from dataclasses import dataclass, field
+from enum import Enum
+from pathlib import Path
+from typing import Dict, List, Optional
 
 
 class Role(str, Enum):
@@ -286,11 +290,6 @@ def _persist_groups(groups: Dict[str, Group]) -> None:
 # gateway restarts. Written to /app/data/approved_collaborators.json on the
 # shared data volume.
 # ---------------------------------------------------------------------------
-import fcntl
-import json
-import logging
-from pathlib import Path
-
 _collab_persist_logger = logging.getLogger("agentshroud.security.rbac_config")
 _APPROVED_COLLABORATORS_FILE = Path(
     os.environ.get("AGENTSHROUD_DATA_DIR", "/app/data")
