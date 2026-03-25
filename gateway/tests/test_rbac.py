@@ -401,3 +401,105 @@ class TestRBACErrorHandling:
 
 if __name__ == "__main__":
     pytest.main([__file__, "-v"])
+
+
+# ── GroupRegistry tests ───────────────────────────────────────────────────────
+
+from gateway.security.rbac_config import Group, GroupRegistry, RBACConfig
+
+
+class TestGroupRegistry:
+    """Tests for GroupRegistry auto-groups and custom group management."""
+
+    def _make_rbac(self) -> RBACConfig:
+        rbac = RBACConfig.__new__(RBACConfig)
+        rbac.owner_user_id = "8096968754"
+        rbac.collaborator_user_ids = ["8506022825", "8545356403"]
+        rbac.default_role = None
+        from gateway.security.rbac_config import Role
+        rbac.user_roles = {
+            "8096968754": Role.OWNER,
+            "8506022825": Role.COLLABORATOR,
+            "8545356403": Role.COLLABORATOR,
+            "U0AL7640RHD": Role.OWNER,  # Slack owner
+        }
+        return rbac
+
+    def test_auto_groups_created(self):
+        registry = GroupRegistry()
+        registry.init_auto_groups(self._make_rbac())
+        assert "telegram" in registry.groups
+        assert "slack" in registry.groups
+        assert "everyone" in registry.groups
+
+    def test_telegram_group_contains_numeric_ids(self):
+        registry = GroupRegistry()
+        registry.init_auto_groups(self._make_rbac())
+        tg = registry.get_group("telegram")
+        assert tg is not None
+        assert "8096968754" in tg.members
+        assert "8506022825" in tg.members
+        assert "U0AL7640RHD" not in tg.members
+
+    def test_slack_group_contains_slack_ids(self):
+        registry = GroupRegistry()
+        registry.init_auto_groups(self._make_rbac())
+        slack = registry.get_group("slack")
+        assert slack is not None
+        assert "U0AL7640RHD" in slack.members
+        assert "8096968754" not in slack.members
+
+    def test_everyone_group_contains_all_users(self):
+        registry = GroupRegistry()
+        registry.init_auto_groups(self._make_rbac())
+        everyone = registry.get_group("everyone")
+        assert everyone is not None
+        for uid in ["8096968754", "8506022825", "U0AL7640RHD"]:
+            assert uid in everyone.members
+
+    def test_create_custom_group(self, tmp_path, monkeypatch):
+        import gateway.security.rbac_config as rc
+        monkeypatch.setattr(rc, "_GROUPS_FILE_PATH", tmp_path / "groups.json")
+        registry = GroupRegistry()
+        registry.init_auto_groups(self._make_rbac())
+        g = registry.create_group("project-alpha", "Project Alpha", members=["8506022825"])
+        assert g.id == "project-alpha"
+        assert "8506022825" in g.members
+        assert "project-alpha" in registry.groups
+
+    def test_delete_custom_group(self, tmp_path, monkeypatch):
+        import gateway.security.rbac_config as rc
+        monkeypatch.setattr(rc, "_GROUPS_FILE_PATH", tmp_path / "groups.json")
+        registry = GroupRegistry()
+        registry.init_auto_groups(self._make_rbac())
+        registry.create_group("temp-group", "Temp")
+        assert registry.delete_group("temp-group") is True
+        assert "temp-group" not in registry.groups
+
+    def test_cannot_delete_auto_group(self):
+        registry = GroupRegistry()
+        registry.init_auto_groups(self._make_rbac())
+        with pytest.raises(ValueError, match="auto-group"):
+            registry.delete_group("telegram")
+
+    def test_cannot_create_reserved_group_id(self):
+        registry = GroupRegistry()
+        registry.init_auto_groups(self._make_rbac())
+        with pytest.raises(ValueError, match="reserved"):
+            registry.create_group("everyone", "My Everyone")
+
+    def test_add_remove_member(self, tmp_path, monkeypatch):
+        import gateway.security.rbac_config as rc
+        monkeypatch.setattr(rc, "_GROUPS_FILE_PATH", tmp_path / "groups.json")
+        registry = GroupRegistry()
+        registry.init_auto_groups(self._make_rbac())
+        registry.create_group("team-a", "Team A")
+        registry.add_member("team-a", "8506022825")
+        assert registry.is_member("team-a", "8506022825")
+        registry.remove_member("team-a", "8506022825")
+        assert not registry.is_member("team-a", "8506022825")
+
+    def test_is_member_unknown_group_returns_false(self):
+        registry = GroupRegistry()
+        registry.init_auto_groups(self._make_rbac())
+        assert registry.is_member("nonexistent", "8506022825") is False
