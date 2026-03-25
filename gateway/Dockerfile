@@ -48,6 +48,26 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     && apt-get update && apt-get install -y --no-install-recommends 1password-cli \
     && rm -rf /var/lib/apt/lists/*
 
+# cosign bootstrap — supply-chain verification tool used to verify Trivy below.
+# Installed early so it is available during Trivy download/verification.
+# Pinned to SHA256 digest via published cosign_checksums.txt.
+ARG COSIGN_BOOTSTRAP_VERSION=2.4.3
+RUN DPKG_ARCH=$(dpkg --print-architecture) && \
+    case "$DPKG_ARCH" in \
+      arm64) COSIGN_ARCH="arm64" ;; \
+      amd64) COSIGN_ARCH="amd64" ;; \
+      armhf) COSIGN_ARCH="arm" ;; \
+      *) COSIGN_ARCH="$DPKG_ARCH" ;; \
+    esac && \
+    curl -sSfL -o "/tmp/cosign-linux-${COSIGN_ARCH}" \
+        "https://github.com/sigstore/cosign/releases/download/v${COSIGN_BOOTSTRAP_VERSION}/cosign-linux-${COSIGN_ARCH}" && \
+    curl -sSfL -o /tmp/cosign_checksums.txt \
+        "https://github.com/sigstore/cosign/releases/download/v${COSIGN_BOOTSTRAP_VERSION}/cosign_checksums.txt" && \
+    (cd /tmp && grep "cosign-linux-${COSIGN_ARCH}$" cosign_checksums.txt | sha256sum -c -) && \
+    chmod +x "/tmp/cosign-linux-${COSIGN_ARCH}" && \
+    mv "/tmp/cosign-linux-${COSIGN_ARCH}" /usr/local/bin/cosign && \
+    rm /tmp/cosign_checksums.txt
+
 # Syft SBOM generator — pinned version
 ARG SYFT_VERSION=1.42.3
 RUN DPKG_ARCH=$(dpkg --print-architecture) && \
@@ -64,7 +84,7 @@ RUN DPKG_ARCH=$(dpkg --print-architecture) && \
 
 # Trivy vulnerability scanner — pinned version (M7 fix)
 ARG TRIVY_VERSION=0.69.3
-# R2-M1: Download Trivy with checksum verification for supply chain integrity
+# R2-M1: Download Trivy with SHA256 + cosign signature verification for supply chain integrity
 RUN DPKG_ARCH=$(dpkg --print-architecture) && \
     case "$DPKG_ARCH" in \
       arm64) TRIVY_ARCH="ARM64" ;; \
@@ -76,9 +96,17 @@ RUN DPKG_ARCH=$(dpkg --print-architecture) && \
         "https://github.com/aquasecurity/trivy/releases/download/v${TRIVY_VERSION}/trivy_${TRIVY_VERSION}_Linux-${TRIVY_ARCH}.deb" && \
     curl -sSfL -o /tmp/trivy_checksums.txt \
         "https://github.com/aquasecurity/trivy/releases/download/v${TRIVY_VERSION}/trivy_${TRIVY_VERSION}_checksums.txt" && \
+    curl -sSfL -o /tmp/trivy_checksums.txt.sigstore.json \
+        "https://github.com/aquasecurity/trivy/releases/download/v${TRIVY_VERSION}/trivy_${TRIVY_VERSION}_checksums.txt.sigstore.json" && \
+    cosign verify-blob \
+        --certificate-oidc-issuer https://token.actions.githubusercontent.com \
+        --certificate-identity-regexp "https://github.com/aquasecurity/trivy/.github/workflows/.*release.yaml@refs/tags/v${TRIVY_VERSION}" \
+        --bundle /tmp/trivy_checksums.txt.sigstore.json \
+        /tmp/trivy_checksums.txt && \
     cd /tmp && grep "trivy_${TRIVY_VERSION}_Linux-${TRIVY_ARCH}.deb" trivy_checksums.txt | sha256sum -c - && \
     dpkg -i "/tmp/trivy_${TRIVY_VERSION}_Linux-${TRIVY_ARCH}.deb" && \
-    rm "/tmp/trivy_${TRIVY_VERSION}_Linux-${TRIVY_ARCH}.deb" /tmp/trivy_checksums.txt
+    rm "/tmp/trivy_${TRIVY_VERSION}_Linux-${TRIVY_ARCH}.deb" /tmp/trivy_checksums.txt \
+       /tmp/trivy_checksums.txt.sigstore.json
 
 # cosign — image signing and verification (Domain 17)
 # R2-M1: Checksum verified via published cosign_checksums.txt (same pattern as Trivy)
