@@ -136,6 +136,14 @@ _LOCAL_EGRESS_COMMANDS = {
     "/egress",
     "egress",
 }
+_LOCAL_EGRESS_ALLOW_COMMANDS = {
+    "/egress-allow",
+    "egress-allow",
+}
+_LOCAL_SETNAME_COMMANDS = {
+    "/setname",
+    "setname",
+}
 _LOCAL_COLLABS_COMMANDS = {
     "/collabs",
     "collabs",
@@ -153,6 +161,12 @@ _LOCAL_DELEGATE_COMMANDS = {"/delegate", "delegate"}
 _LOCAL_DELEGATIONS_COMMANDS = {"/delegations", "delegations"}
 _LOCAL_REVOKE_DELEGATION_COMMANDS = {"/revoke_delegation", "revoke_delegation", "/revoke-delegation", "revoke-delegation", "/revokedelegation", "revokedelegation"}
 
+# Group management — owner-only
+_LOCAL_NEWGROUP_COMMANDS = {"/newgroup", "newgroup"}
+_LOCAL_LINKGROUP_COMMANDS = {"/linkgroup", "linkgroup"}
+_LOCAL_ADDMEMBER_COMMANDS = {"/addmember", "addmember", "/addtogroup", "addtogroup"}
+_LOCAL_REMOVEMEMBER_COMMANDS = {"/removemember", "removemember", "/kickmember", "kickmember"}
+_LOCAL_LISTGROUPS_COMMANDS = {"/listgroups", "listgroups", "/groups", "groups"}
 _COLLABORATOR_ALLOWED_SLASH_COMMANDS = {
     "/start",
     "/help",
@@ -167,6 +181,7 @@ _COLLABORATOR_ALLOWED_SLASH_COMMANDS = {
     "/groups",
     "/groupinfo",
     "/projects",
+    "/setname",
 }
 
 _DISCLOSURE_MESSAGE = (
@@ -284,6 +299,20 @@ class TelegramAPIProxy:
             os.environ.get("AGENTSHROUD_LOCAL_COMMAND_DEDUPE_TTL_SECONDS", "600.0")
         )
 
+        # Group chat at-mention filter: bot reads ALL group messages for context but only
+        # responds when @mentioned. Requires TELEGRAM_BOT_USERNAME (without @).
+        # Set AGENTSHROUD_GROUP_MENTION_ONLY=0 to respond to every group message.
+        self._bot_username = (
+            os.environ.get("TELEGRAM_BOT_USERNAME", "").strip().lstrip("@").lower()
+        )
+        self._group_mention_only = (
+            os.environ.get("AGENTSHROUD_GROUP_MENTION_ONLY", "1").strip().lower()
+            not in ("0", "false", "no")
+        )
+        # Tracks whether the bot should respond in each group chat. True = @mentioned,
+        # False = context only (suppress outbound). Keyed by chat_id (int).
+        self._group_response_eligible: dict[int, bool] = {}
+
         # Progressive lockdown: per-user cumulative block counter with escalating responses.
         # 3 blocks → owner alert; 5 blocks → double rate limit window; 10 → session suspended.
         try:
@@ -351,6 +380,21 @@ class TelegramAPIProxy:
             os.environ.get("AGENTSHROUD_IMMUNITY_DEFAULT_TTL_SECONDS", str(8 * 3600))
         )
 
+        # Collaborator self-set display names. Persisted to /app/data/ so they
+        # survive gateway restarts. Loaded eagerly at __init__ time.
+        self._custom_display_names: dict[str, str] = {}
+        self._display_names_path = os.environ.get(
+            "AGENTSHROUD_DISPLAY_NAMES_PATH", "/app/data/collaborator_display_names.json"
+        )
+        try:
+            import json as _json
+            with open(self._display_names_path, "r", encoding="utf-8") as _dnf:
+                self._custom_display_names = _json.load(_dnf)
+        except (FileNotFoundError, ValueError):
+            pass
+        except Exception as _dne:
+            logger.debug("Could not load display names: %s", _dne)
+
     def _is_immune(self, user_id: str) -> bool:
         """Return True if user_id has active (non-expired) immunity."""
         expiry = self._immune_users.get(user_id)
@@ -374,6 +418,73 @@ class TelegramAPIProxy:
         if str(chat_id) == str(getattr(self._rbac, "owner_user_id", "")):
             return True
         return False
+
+    @staticmethod
+    def _is_group_message(message: dict) -> bool:
+        """Return True if message originates from a group or supergroup chat."""
+        return (message.get("chat") or {}).get("type") in ("group", "supergroup")
+
+    @staticmethod
+    def _bot_is_mentioned(message: dict, bot_username: str) -> bool:
+        """Return True if the bot is @mentioned or a bot_command targets this bot.
+
+        Checks both text entities and caption_entities (media messages with captions).
+        """
+        if not bot_username:
+            return False
+        text = message.get("text") or message.get("caption") or ""
+        entities = message.get("entities") or message.get("caption_entities") or []
+        for entity in entities:
+            etype = entity.get("type")
+            if etype == "mention":
+                offset = entity.get("offset", 0)
+                length = entity.get("length", 0)
+                mention_text = text[offset : offset + length].lstrip("@").lower()
+                if mention_text == bot_username:
+                    return True
+            elif etype == "bot_command":
+                # /command@botname — targeted command for this bot
+                offset = entity.get("offset", 0)
+                length = entity.get("length", 0)
+                cmd_text = text[offset : offset + length].lower()
+                if f"@{bot_username}" in cmd_text:
+                    return True
+        return False
+
+    async def _telegram_create_invite_link(self, chat_id: int) -> Optional[str]:
+        """Create a single-use invite link for a Telegram group. Returns URL or None."""
+        if not self._bot_token:
+            return None
+        try:
+            url = f"{TELEGRAM_API_BASE}/bot{self._bot_token}/createChatInviteLink"
+            body = json.dumps({"chat_id": chat_id, "member_limit": 1}).encode()
+            resp = await self._forward_to_telegram(url, body, "application/json")
+            if resp.get("ok"):
+                return resp.get("result", {}).get("invite_link")
+        except Exception as exc:
+            logger.debug("createChatInviteLink error: %s", exc)
+        return None
+
+    async def _telegram_kick_member(self, chat_id: int, user_id: int) -> bool:
+        """Kick (ban + unban) a user from a Telegram group. Returns True on success."""
+        if not self._bot_token:
+            return False
+        try:
+            ban_url = f"{TELEGRAM_API_BASE}/bot{self._bot_token}/banChatMember"
+            ban_body = json.dumps({"chat_id": chat_id, "user_id": user_id}).encode()
+            ban_resp = await self._forward_to_telegram(ban_url, ban_body, "application/json")
+            if not ban_resp.get("ok"):
+                return False
+            # Immediately unban so the user can rejoin later via invite link
+            unban_url = f"{TELEGRAM_API_BASE}/bot{self._bot_token}/unbanChatMember"
+            unban_body = json.dumps({"chat_id": chat_id, "user_id": user_id,
+                                     "only_if_banned": True}).encode()
+            await self._forward_to_telegram(unban_url, unban_body, "application/json")
+            return True
+        except Exception as exc:
+            logger.debug("Telegram kick error: %s", exc)
+        return False
+
 
     def _set_outbound_block_cascade(self, chat_id: str, *, force: bool = False) -> None:
         """Activate per-chat cascade window to prevent streaming-fragment leak-through.
@@ -486,10 +597,16 @@ class TelegramAPIProxy:
         return self._resolve_pending_username_target(text)
 
     def _resolve_display_name(self, user_id: str) -> str:
-        """Resolve a readable label for user id when available."""
+        """Resolve a readable label for user id when available.
+
+        Priority: user self-set name → env override → known labels dict → raw user_id.
+        """
         user_id = str(user_id or "").strip()
         if not user_id:
             return "unknown"
+        # Highest priority: user-set display name via /setname
+        if user_id in self._custom_display_names:
+            return f"{self._custom_display_names[user_id]} ({user_id})"
         # Optional override via env: "id:name,id:name"
         env_labels = os.environ.get("AGENTSHROUD_COLLABORATOR_LABELS", "")
         if env_labels:
@@ -1162,6 +1279,7 @@ class TelegramAPIProxy:
                 "how does this work",
                 "how does it work",
                 "how do you work",
+                "how does",
                 "network",
                 "infrastructure",
                 "hosting",
@@ -1826,22 +1944,19 @@ class TelegramAPIProxy:
             )
         if any(token in lowered for token in ("get processed", "message processed", "processed before", "how are messages", "message pipeline", "message flow", "before you answer", "before answering")):
             return (
-                f"{_PROTECT_HEADER}"
                 "Message processing overview:\n"
-                "• Messages are verified for sender identity and trust level before routing.\n"
-                "• Policy controls determine what actions are permitted based on your access level.\n"
+                "• Your message passes through identity and policy checks before routing.\n"
+                "• Collaborator sessions are isolated from owner sessions — different context and permissions.\n"
                 "• Outputs are safety-checked before delivery to prevent unintended disclosure.\n"
-                "• I can discuss the general flow without exposing internal implementation details."
+                "• I respond based on scoped context — no owner-private files or operational details."
             )
         if any(token in lowered for token in ("authentication", "credential", "api key", "secret", "password", "raw values", "placeholders")):
             if any(token in lowered for token in ("flow", "how", "intermediary", "handles", "brokered", "integrate", "integration", "work")):
                 return (
-                    f"{_PROTECT_HEADER}"
-                    "Authentication flow overview:\n"
-                    "• External credentials are stored in a secured secrets manager — not in my active context.\n"
-                    "• When external access is needed, the security gateway brokers the request on my behalf.\n"
-                    "• I never receive raw API keys or tokens — only confirmation that a request was authorized.\n"
-                    "• For integration guidance, I can help with OAuth patterns, least-privilege design, and safe request flows."
+                    "Authentication in this workspace:\n"
+                    "• Credentials are managed server-side — I don't hold raw API keys or tokens in active context.\n"
+                    "• When external access is needed, the gateway brokers the request on my behalf.\n"
+                    "• I can help with OAuth patterns, least-privilege design, and safe API patterns for integrations."
                 )
             return (
                 f"{_PROTECT_HEADER}"
@@ -1877,6 +1992,14 @@ class TelegramAPIProxy:
                 "• Direct file content access and secret/credential retrieval are restricted.\n"
                 "• External/network actions require explicit owner approval before execution."
             )
+        if any(token in lowered for token in ("dns lookup", "dns query", "dns resolve", "dns check", "ping", "icmp", "connectivity probe", "connectivity check", "udp probe", "network probe")):
+            return (
+                f"{_PROTECT_HEADER}"
+                "Network probe policy:\n"
+                "• Outbound network access — including DNS probes, pings, and connectivity checks — requires owner authorization.\n"
+                "• This applies regardless of protocol (HTTP, DNS, ICMP, UDP).\n"
+                "• All external network actions go through the owner approval workflow."
+            )
         if any(token in lowered for token in ("approval", "egress", "external", "network")):
             return (
                 f"{_PROTECT_HEADER}"
@@ -1886,18 +2009,24 @@ class TelegramAPIProxy:
                 "• Approval decisions are enforced before execution.\n"
                 "• I can help draft safe request criteria and risk-aware justification."
             )
+        if any(token in lowered for token in ("too risky", "risky for me", "system react", "how does the system", "considered risky", "considered dangerous", "action risk", "risky action")):
+            return (
+                "Action risk guidance:\n"
+                "• Actions requiring confirmation: external network requests, file writes, destructive operations.\n"
+                "• Actions always declined: credential retrieval, system reconnaissance, policy bypass attempts.\n"
+                "• The system explains what it can't do and why — there are no silent failures.\n"
+                "• The gateway enforces hard limits regardless of how a request is phrased."
+            )
         if any(token in lowered for token in (
             "owner versus", "owner vs", "came from the owner", "came from owner",
             "tell whether", "tell if", "owner or collaborator", "collaborator or owner",
             "how does that affect", "how does it affect",
         )):
             return (
-                f"{_PROTECT_HEADER}"
-                "Access level guidance:\n"
-                "• The security proxy identifies all message senders and applies the appropriate trust level.\n"
-                "• Owner messages have full operational access; collaborator messages are policy-gated.\n"
-                "• This distinction determines what actions I can take and what information I can share.\n"
-                "• These boundaries are enforced by the gateway — I cannot override them."
+                "Yes — all messages are identified by sender and assigned a trust level.\n"
+                "• Owner messages have full operational access to tools, files, and external services.\n"
+                "• Collaborator messages are policy-gated: conversation is the primary available capability.\n"
+                "• These boundaries are enforced by the gateway and cannot be overridden in chat."
             )
         if any(token in lowered for token in ("refuse", "restrict", "decline", "not allowed")):
             return (
@@ -1955,6 +2084,14 @@ class TelegramAPIProxy:
                 "are treated as internal system files.\n"
                 "• Collaborators cannot access raw file contents or direct file reads.\n"
                 "• I can provide high-level onboarding and role guidance without exposing file data."
+            )
+        if any(token in lowered for token in ("stream through", "still stream", "chunks", "chunked", "partial leak", "partial content", "partial response", "blocked answer", "too long to")):
+            return (
+                f"{_PROTECT_HEADER}"
+                "Output delivery policy:\n"
+                "• Responses are evaluated atomically before delivery — no partial content streams through a block.\n"
+                "• If a full response would be blocked, the entire message is replaced, not truncated.\n"
+                "• This applies regardless of response length."
             )
         return _COLLABORATOR_SAFE_INFO_NOTICE
 
@@ -2272,6 +2409,34 @@ class TelegramAPIProxy:
             except Exception as _ote:
                 logger.debug("Outbound collab response tracking error (non-fatal): %s", _ote)
 
+        # ── Group chat response gate ──────────────────────────────────────────
+        # Suppress bot replies to group/supergroup chats where the last inbound
+        # was not an @mention. The bot still received those messages for context
+        # (_group_response_eligible tracks eligibility per chat_id). This applies
+        # to sendMessage and editMessageText only; system notifications are exempt.
+        if (
+            not is_system
+            and self._group_mention_only
+            and self._bot_username
+            and method in ("sendMessage", "editMessageText", "sendPhoto",
+                           "sendDocument", "copyMessage", "forwardMessage")
+            and body
+        ):
+            try:
+                _out_body = json.loads(body.decode("utf-8", errors="replace"))
+                _out_chat_id = _out_body.get("chat_id")
+                if isinstance(_out_chat_id, (int, str)):
+                    _cid = int(_out_chat_id)
+                    # Telegram group/supergroup IDs are negative integers.
+                    if _cid < 0 and not self._group_response_eligible.get(_cid, True):
+                        logger.debug(
+                            "Group outbound suppressed (context-only mode): chat_id=%s method=%s",
+                            _cid, method,
+                        )
+                        return {"ok": True, "result": {"suppressed": True, "method": method}}
+            except Exception as _gge:
+                logger.debug("Group gate parse error (non-fatal): %s", _gge)
+
         # Forward to real Telegram API
         # File download paths return binary data (images, documents) — do NOT JSON-parse.
         if path_prefix == "file/":
@@ -2363,6 +2528,12 @@ class TelegramAPIProxy:
                 text_key, text = self._resolve_text_field(data)
                 chat_id = str(data.get("chat_id", ""))
                 is_owner_chat = self._is_owner_chat(chat_id)
+                logger.info(
+                    "Outbound sendMessage: chat_id=%s role=%s len=%d",
+                    chat_id,
+                    "owner" if is_owner_chat else "collaborator",
+                    len(text) if isinstance(text, str) else 0,
+                )
 
                 # Guardrail: never leak raw tool-call JSON blobs to Telegram users.
                 parsed_tool_call = self._parse_tool_call_json(text) if isinstance(text, str) else None
@@ -2663,7 +2834,8 @@ class TelegramAPIProxy:
                         self._stats["outbound_filtered"] += 1
                         self._set_outbound_block_cascade(chat_id)
                         logger.warning(
-                            "Outbound message blocked by pipeline: %s", pipeline_result.block_reason
+                            "Outbound message blocked by pipeline: chat_id=%s reason=%s",
+                            chat_id, pipeline_result.block_reason,
                         )
                     elif (
                         chat_id
@@ -2699,13 +2871,13 @@ class TelegramAPIProxy:
                     if pii_result.entity_types_found:
                         data["text"] = pii_result.sanitized_content
                         self._stats["outbound_filtered"] += 1
-                        logger.info("Outbound message: PII redacted: %s", pii_result.entity_types_found)
+                        logger.info("Outbound message: PII redacted: chat_id=%s types=%s", chat_id, pii_result.entity_types_found)
                     # 2. XML leak filter
                     filtered, was_filtered = self.sanitizer.filter_xml_blocks(data["text"])
                     if was_filtered:
                         data["text"] = filtered
                         self._stats["outbound_filtered"] += 1
-                        logger.info("Outbound message: XML blocks stripped")
+                        logger.info("Outbound message: XML blocks stripped chat_id=%s", chat_id)
                     # 3. Credential blocking
                     blocked, was_blocked = await self.sanitizer.block_credentials(
                         data["text"], "telegram"
@@ -2719,7 +2891,7 @@ class TelegramAPIProxy:
                         )
                         data["text"] = blocked
                         self._stats["outbound_filtered"] += 1
-                        logger.warning("Outbound message: credentials blocked")
+                        logger.warning("Outbound message: credentials blocked chat_id=%s", chat_id)
                     return json.dumps(data).encode()
             elif "x-www-form-urlencoded" in ct or (
                 not ct
@@ -3376,6 +3548,26 @@ class TelegramAPIProxy:
             user_id = str(message.get("from", {}).get("id", "unknown"))
             chat_id = message.get("chat", {}).get("id")
 
+            # ── Group chat at-mention filter ──────────────────────────────────
+            # ALL group messages are forwarded to the bot for conversational context.
+            # But outbound responses are suppressed unless the bot was @mentioned.
+            # _group_response_eligible[chat_id] = True → bot may respond.
+            # _group_response_eligible[chat_id] = False → context only, no reply sent.
+            # Requires TELEGRAM_BOT_USERNAME env var; if unset, all messages get replies.
+            if (
+                self._group_mention_only
+                and self._bot_username
+                and self._is_group_message(message)
+                and chat_id is not None
+            ):
+                mentioned = self._bot_is_mentioned(message, self._bot_username)
+                self._group_response_eligible[int(chat_id)] = mentioned
+                if not mentioned:
+                    logger.debug(
+                        "Group message (context-only, no reply): user_id=%s chat_id=%s preview=%s",
+                        user_id, chat_id, (text or "")[:40].replace("\n", " "),
+                    )
+
             if not text:
                 # In local_only mode, collaborators cannot send raw media (no caption).
                 # Forwarding it to the bot would bypass all inbound collaborator guards.
@@ -3414,6 +3606,15 @@ class TelegramAPIProxy:
                 not is_owner and
                 not is_revoked and
                 user_id in {str(uid) for uid in (self._rbac.collaborator_user_ids or [])}
+            )
+
+            # ── Inbound attribution log ───────────────────────────────────────
+            logger.info(
+                "Inbound message: user_id=%s role=%s chat_id=%s preview=%s",
+                user_id,
+                "owner" if is_owner else ("collaborator" if is_collaborator else "unknown"),
+                chat_id,
+                text[:40].replace("\n", " "),
             )
 
             # ── Progressive lockdown: early suspend check ─────────────────────
@@ -3479,9 +3680,11 @@ class TelegramAPIProxy:
                     _tracker = getattr(_app_state, "collaborator_tracker", None)
                     if _tracker:
                         sender = message.get("from", {})
-                        _username = sender.get("first_name") or (
+                        _telegram_name = sender.get("first_name") or (
                             f"@{sender['username']}" if sender.get("username") else "unknown"
                         )
+                        _resolved = self._resolve_display_name(user_id)
+                        _username = _resolved if _resolved != user_id else _telegram_name
                         _tracker.record_activity(
                             user_id=user_id,
                             username=_username,
@@ -3657,6 +3860,274 @@ class TelegramAPIProxy:
                 elif is_owner and cmd_base in _LOCAL_COLLABS_COMMANDS:
                     local_handler = self._send_owner_collabs_notice
                     local_label = "collabs"
+
+                # ── Group management (owner-only) ─────────────────────────────
+                elif is_owner and cmd_base in _LOCAL_LISTGROUPS_COMMANDS:
+                    local_label = "listgroups"
+                    _owner_chat_snap = chat_id
+
+                    async def _local_listgroups_handler(target_chat_id: int) -> None:
+                        from gateway.ingest_api.state import app_state as _s
+                        _gr = getattr(_s, "group_registry", None)
+                        if not _gr:
+                            await self._send_owner_admin_notice(
+                                target_chat_id, f"{_PROTECT_HEADER}Group registry unavailable."
+                            )
+                            return
+                        groups = _gr.list_groups()
+                        if not groups:
+                            await self._send_owner_admin_notice(
+                                target_chat_id, f"{_PROTECT_HEADER}No groups defined."
+                            )
+                            return
+                        lines = [f"{_PROTECT_HEADER}*Groups ({len(groups)}):*\n"]
+                        for g in groups:
+                            tg = f"tg:{g.telegram_chat_id}" if g.telegram_chat_id else "tg:unlinked"
+                            sl = f"slack:{g.slack_channel_id}" if g.slack_channel_id else "slack:none"
+                            lines.append(
+                                f"• `{g.id}` — {g.name} | {len(g.members)} members | {tg} | {sl}"
+                            )
+                        await self._send_owner_admin_notice(target_chat_id, "\n".join(lines))
+
+                    local_handler = _local_listgroups_handler
+
+                elif is_owner and cmd_base in _LOCAL_NEWGROUP_COMMANDS:
+                    local_label = "newgroup"
+                    _args = text.split(None, 2)
+                    if len(_args) < 3:
+                        await self._send_owner_admin_notice(
+                            chat_id, f"{_PROTECT_HEADER}Usage: /newgroup <id> <name>"
+                        )
+                        continue
+                    _grp_id = _args[1].lower().strip()
+                    _grp_name = _args[2].strip()
+                    _owner_chat_snap = chat_id
+                    _grp_id_snap = _grp_id
+                    _grp_name_snap = _grp_name
+
+                    async def _local_newgroup_handler(target_chat_id: int) -> None:
+                        from gateway.ingest_api.state import app_state as _s
+                        _gr = getattr(_s, "group_registry", None)
+                        if not _gr:
+                            await self._send_owner_admin_notice(
+                                target_chat_id, f"{_PROTECT_HEADER}Group registry unavailable."
+                            )
+                            return
+                        try:
+                            grp = _gr.create_group(_grp_id_snap, _grp_name_snap)
+                        except ValueError as ve:
+                            await self._send_owner_admin_notice(
+                                target_chat_id, f"{_PROTECT_HEADER}Error: {ve}"
+                            )
+                            return
+
+                        # Auto-provision Slack channel if slack proxy available
+                        _slack_ch = None
+                        try:
+                            from gateway.ingest_api.main import _slack_proxy as _sp
+                            _slack_ch = await _sp.provision_group_channel(_grp_id_snap, _grp_name_snap)
+                            if _slack_ch:
+                                grp.slack_channel_id = _slack_ch
+                                from gateway.security.rbac_config import _persist_groups
+                                _persist_groups(_gr.groups)
+                        except Exception as _se:
+                            logger.debug("Slack group provision error: %s", _se)
+
+                        msg = (
+                            f"{_PROTECT_HEADER}*Group created:* `{_grp_id_snap}`\n"
+                            f"Name: {_grp_name_snap}\n"
+                        )
+                        if _slack_ch:
+                            msg += f"Slack channel: `{_slack_ch}` provisioned ✅\n"
+                        else:
+                            msg += "Slack: no channel provisioned (tokens not set or unavailable)\n"
+                        msg += (
+                            "\n*Telegram group:* Bots cannot create groups. To link:\n"
+                            "1. Create a Telegram group manually\n"
+                            "2. Add this bot as admin (with Invite + Ban permissions)\n"
+                            f"3. Run: `/linkgroup {_grp_id_snap} <chat_id>`\n"
+                            "   (Get chat_id from gateway logs after the bot receives a group message)"
+                        )
+                        await self._send_owner_admin_notice(target_chat_id, msg)
+
+                    local_handler = _local_newgroup_handler
+
+                elif is_owner and cmd_base in _LOCAL_LINKGROUP_COMMANDS:
+                    local_label = "linkgroup"
+                    _args = text.split(None, 2)
+                    if len(_args) < 3:
+                        await self._send_owner_admin_notice(
+                            chat_id, f"{_PROTECT_HEADER}Usage: /linkgroup <group_id> <telegram_chat_id>"
+                        )
+                        continue
+                    _lnk_grp_id = _args[1].lower().strip()
+                    try:
+                        _lnk_chat_id = int(_args[2].strip())
+                    except ValueError:
+                        await self._send_owner_admin_notice(
+                            chat_id, f"{_PROTECT_HEADER}Invalid chat_id — must be an integer (e.g. -1001234567890)"
+                        )
+                        continue
+                    _lnk_grp_id_snap = _lnk_grp_id
+                    _lnk_chat_id_snap = _lnk_chat_id
+
+                    async def _local_linkgroup_handler(target_chat_id: int) -> None:
+                        from gateway.ingest_api.state import app_state as _s
+                        _gr = getattr(_s, "group_registry", None)
+                        if not _gr:
+                            await self._send_owner_admin_notice(
+                                target_chat_id, f"{_PROTECT_HEADER}Group registry unavailable."
+                            )
+                            return
+                        grp = _gr.get_group(_lnk_grp_id_snap)
+                        if not grp:
+                            await self._send_owner_admin_notice(
+                                target_chat_id,
+                                f"{_PROTECT_HEADER}Group `{_lnk_grp_id_snap}` not found. Create it first with /newgroup."
+                            )
+                            return
+                        grp.telegram_chat_id = _lnk_chat_id_snap
+                        from gateway.security.rbac_config import _persist_groups
+                        _persist_groups(_gr.groups)
+                        await self._send_owner_admin_notice(
+                            target_chat_id,
+                            f"{_PROTECT_HEADER}Linked `{_lnk_grp_id_snap}` → Telegram chat `{_lnk_chat_id_snap}` ✅\n"
+                            f"Group has {len(grp.members)} members. Use /addmember to invite them."
+                        )
+
+                    local_handler = _local_linkgroup_handler
+
+                elif is_owner and cmd_base in _LOCAL_ADDMEMBER_COMMANDS:
+                    local_label = "addmember"
+                    _args = text.split(None, 2)
+                    if len(_args) < 3:
+                        await self._send_owner_admin_notice(
+                            chat_id, f"{_PROTECT_HEADER}Usage: /addmember <group_id> <user_id>"
+                        )
+                        continue
+                    _am_grp_id = _args[1].lower().strip()
+                    _am_user_id = _args[2].strip()
+                    _am_grp_id_snap = _am_grp_id
+                    _am_user_id_snap = _am_user_id
+                    _am_owner_chat = chat_id
+
+                    async def _local_addmember_handler(target_chat_id: int) -> None:
+                        from gateway.ingest_api.state import app_state as _s
+                        _gr = getattr(_s, "group_registry", None)
+                        if not _gr:
+                            await self._send_owner_admin_notice(
+                                target_chat_id, f"{_PROTECT_HEADER}Group registry unavailable."
+                            )
+                            return
+                        grp = _gr.get_group(_am_grp_id_snap)
+                        if not grp:
+                            await self._send_owner_admin_notice(
+                                target_chat_id,
+                                f"{_PROTECT_HEADER}Group `{_am_grp_id_snap}` not found."
+                            )
+                            return
+                        _gr.add_member(_am_grp_id_snap, _am_user_id_snap)
+
+                        results = []
+                        # Telegram: send invite link to the user's DM if group is linked
+                        if grp.telegram_chat_id:
+                            invite = await self._telegram_create_invite_link(grp.telegram_chat_id)
+                            if invite:
+                                try:
+                                    await self._send_telegram_text(
+                                        int(_am_user_id_snap),
+                                        f"You've been added to group *{grp.name}*.\n"
+                                        f"Join via: {invite}"
+                                    )
+                                    results.append("Telegram invite sent ✅")
+                                except Exception:
+                                    results.append(f"Telegram invite link (send manually): {invite}")
+                            else:
+                                results.append("Telegram invite: failed (is bot admin with invite permission?)")
+                        else:
+                            results.append("Telegram: no linked group chat (use /linkgroup first)")
+
+                        # Slack: invite to channel if user ID looks like a Slack ID and channel exists
+                        if grp.slack_channel_id and _am_user_id_snap.startswith("U"):
+                            try:
+                                from gateway.ingest_api.main import _slack_proxy as _sp
+                                ok = await _sp.invite_channel_member(grp.slack_channel_id, _am_user_id_snap)
+                                results.append(f"Slack invite: {'✅' if ok else '❌'}")
+                            except Exception as _se:
+                                results.append(f"Slack invite error: {_se}")
+                        elif grp.slack_channel_id:
+                            results.append("Slack: user ID is not a Slack ID (skipped)")
+
+                        summary = "\n".join(f"  • {r}" for r in results)
+                        await self._send_owner_admin_notice(
+                            target_chat_id,
+                            f"{_PROTECT_HEADER}Added `{_am_user_id_snap}` to group `{_am_grp_id_snap}`:\n{summary}"
+                        )
+
+                    local_handler = _local_addmember_handler
+
+                elif is_owner and cmd_base in _LOCAL_REMOVEMEMBER_COMMANDS:
+                    local_label = "removemember"
+                    _args = text.split(None, 2)
+                    if len(_args) < 3:
+                        await self._send_owner_admin_notice(
+                            chat_id, f"{_PROTECT_HEADER}Usage: /removemember <group_id> <user_id>"
+                        )
+                        continue
+                    _rm_grp_id = _args[1].lower().strip()
+                    _rm_user_id = _args[2].strip()
+                    _rm_grp_id_snap = _rm_grp_id
+                    _rm_user_id_snap = _rm_user_id
+
+                    async def _local_removemember_handler(target_chat_id: int) -> None:
+                        from gateway.ingest_api.state import app_state as _s
+                        _gr = getattr(_s, "group_registry", None)
+                        if not _gr:
+                            await self._send_owner_admin_notice(
+                                target_chat_id, f"{_PROTECT_HEADER}Group registry unavailable."
+                            )
+                            return
+                        grp = _gr.get_group(_rm_grp_id_snap)
+                        if not grp:
+                            await self._send_owner_admin_notice(
+                                target_chat_id,
+                                f"{_PROTECT_HEADER}Group `{_rm_grp_id_snap}` not found."
+                            )
+                            return
+                        _gr.remove_member(_rm_grp_id_snap, _rm_user_id_snap)
+
+                        results = []
+                        # Telegram: kick from group if linked
+                        if grp.telegram_chat_id:
+                            try:
+                                kicked = await self._telegram_kick_member(
+                                    grp.telegram_chat_id, int(_rm_user_id_snap)
+                                )
+                                results.append(f"Telegram kick: {'✅' if kicked else '❌'}")
+                            except (ValueError, Exception) as _ke:
+                                results.append(f"Telegram kick error: {_ke}")
+                        else:
+                            results.append("Telegram: no linked group chat")
+
+                        # Slack: remove from channel if Slack ID
+                        if grp.slack_channel_id and _rm_user_id_snap.startswith("U"):
+                            try:
+                                from gateway.ingest_api.main import _slack_proxy as _sp
+                                ok = await _sp.kick_channel_member(grp.slack_channel_id, _rm_user_id_snap)
+                                results.append(f"Slack remove: {'✅' if ok else '❌'}")
+                            except Exception as _se:
+                                results.append(f"Slack remove error: {_se}")
+                        elif grp.slack_channel_id:
+                            results.append("Slack: user ID is not a Slack ID (skipped)")
+
+                        summary = "\n".join(f"  • {r}" for r in results)
+                        await self._send_owner_admin_notice(
+                            target_chat_id,
+                            f"{_PROTECT_HEADER}Removed `{_rm_user_id_snap}` from group `{_rm_grp_id_snap}`:\n{summary}"
+                        )
+
+                    local_handler = _local_removemember_handler
+
                 elif is_owner and cmd_base in _LOCAL_REVOKE_COMMANDS:
                     target_id = self._extract_owner_target_resolved(text)
                     if not target_id:
@@ -4058,6 +4529,35 @@ class TelegramAPIProxy:
                                 chat_id,
                                 f"{_PROTECT_HEADER}Egress approval queue not available.",
                             )
+                    elif subcmd in ("allow", "pre-approve") and len(tokens) > 2:
+                        target_domain = tokens[2].strip()
+                        # Optional duration: 1h, 4h, 24h, forever (default: forever)
+                        duration_arg = tokens[3].strip().lower() if len(tokens) > 3 else "forever"
+                        from gateway.security.egress_approval import ApprovalMode
+                        _mode = ApprovalMode.SESSION if duration_arg not in ("forever", "permanent") else ApprovalMode.PERMANENT
+                        if _eq:
+                            added = await _eq.add_rule(target_domain, "allow", _mode)
+                            if added:
+                                mode_label = "session" if _mode == ApprovalMode.SESSION else "permanent"
+                                await self._send_owner_admin_notice(
+                                    chat_id,
+                                    (
+                                        f"{_PROTECT_HEADER}Egress rule added.\n"
+                                        f"Domain: `{target_domain}`\n"
+                                        f"Action: ALLOW ({mode_label})\n"
+                                        "The bot may now connect to this domain."
+                                    ),
+                                )
+                            else:
+                                await self._send_owner_admin_notice(
+                                    chat_id,
+                                    f"{_PROTECT_HEADER}Failed to add rule for `{target_domain}`.",
+                                )
+                        else:
+                            await self._send_owner_admin_notice(
+                                chat_id,
+                                f"{_PROTECT_HEADER}Egress approval queue not available.",
+                            )
                     elif subcmd == "revoke" and len(tokens) > 2:
                         target_domain = tokens[2].strip()
                         if _eq:
@@ -4090,6 +4590,7 @@ class TelegramAPIProxy:
                             (
                                 f"{_PROTECT_HEADER}*Egress Firewall Commands*\n\n"
                                 "`/egress list` — show all allow/deny rules\n"
+                                "`/egress allow <domain> [forever|session]` — pre-approve a domain\n"
                                 "`/egress revoke <domain>` — remove a rule\n"
                             ),
                         )
@@ -4243,6 +4744,78 @@ class TelegramAPIProxy:
                             chat_id,
                             f"{_PROTECT_HEADER}Revocation failed: {_rd_exc}",
                         )
+                elif is_owner and cmd_base in _LOCAL_EGRESS_ALLOW_COMMANDS:
+                    # Shorthand: /egress-allow <domain> [forever|session]
+                    from gateway.ingest_api.state import app_state as _ea_state
+                    _eq2 = getattr(_ea_state, "egress_approval_queue", None)
+                    tokens2 = normalize_input(text).strip().split(None, 2)
+                    if len(tokens2) < 2:
+                        await self._send_owner_admin_notice(
+                            chat_id,
+                            f"{_PROTECT_HEADER}Usage: /egress-allow <domain> [forever|session]",
+                        )
+                    else:
+                        target_domain2 = tokens2[1].strip()
+                        duration2 = tokens2[2].strip().lower() if len(tokens2) > 2 else "forever"
+                        from gateway.security.egress_approval import ApprovalMode as _AM2
+                        _mode2 = _AM2.SESSION if duration2 not in ("forever", "permanent") else _AM2.PERMANENT
+                        if _eq2:
+                            added2 = await _eq2.add_rule(target_domain2, "allow", _mode2)
+                            mode_label2 = "session" if _mode2 == _AM2.SESSION else "permanent"
+                            if added2:
+                                await self._send_owner_admin_notice(
+                                    chat_id,
+                                    (
+                                        f"{_PROTECT_HEADER}Egress rule added.\n"
+                                        f"Domain: `{target_domain2}`\n"
+                                        f"Action: ALLOW ({mode_label2})\n"
+                                        "The bot may now connect to this domain."
+                                    ),
+                                )
+                            else:
+                                await self._send_owner_admin_notice(
+                                    chat_id,
+                                    f"{_PROTECT_HEADER}Failed to add rule for `{target_domain2}`.",
+                                )
+                        else:
+                            await self._send_owner_admin_notice(
+                                chat_id,
+                                f"{_PROTECT_HEADER}Egress approval queue not available.",
+                            )
+                    continue
+                elif cmd_base in _LOCAL_SETNAME_COMMANDS:
+                    # /setname <display name> — collaborators and owner may set display name
+                    tokens_sn = normalize_input(text).strip().split(None, 1)
+                    if len(tokens_sn) < 2 or not tokens_sn[1].strip():
+                        reply_sn = (
+                            "Usage: `/setname <display name>`\n"
+                            "Example: `/setname Brett`\n\n"
+                            "Your display name will appear in the SOC activity log.\n"
+                            "Use `/setname clear` to reset to your Telegram name."
+                        )
+                        if is_owner:
+                            await self._send_owner_admin_notice(chat_id, f"{_PROTECT_HEADER}{reply_sn}")
+                        else:
+                            await self._send_telegram_text(int(chat_id), reply_sn)
+                    else:
+                        new_name = tokens_sn[1].strip()[:64]
+                        if new_name.lower() == "clear":
+                            self._custom_display_names.pop(user_id, None)
+                            msg_sn = "Display name cleared. Your Telegram name will be used."
+                        else:
+                            self._custom_display_names[user_id] = new_name
+                            msg_sn = f"Display name set to: {new_name}"
+                        # Persist to disk
+                        try:
+                            import json as _json_sn
+                            with open(self._display_names_path, "w", encoding="utf-8") as _dnf_sn:
+                                _json_sn.dump(self._custom_display_names, _dnf_sn)
+                        except Exception as _sne:
+                            logger.warning("Could not persist display names: %s", _sne)
+                        if is_owner:
+                            await self._send_owner_admin_notice(chat_id, f"{_PROTECT_HEADER}{msg_sn}")
+                        else:
+                            await self._send_telegram_text(int(chat_id), msg_sn)
                     continue
                 if local_handler is not None:
                     update_id = update.get("update_id")
@@ -5981,8 +6554,29 @@ class TelegramAPIProxy:
                         _COLLABORATOR_UNAVAILABLE_NOTICE,
                         retries=5,
                     )
+                # Record outbound response in activity tracker so both sides of the
+                # conversation appear in the SOC Command Center Activity tab.
+                try:
+                    from gateway.ingest_api.state import app_state as _app_state
+                    _tracker = getattr(_app_state, "collaborator_tracker", None)
+                    if _tracker:
+                        _collab_uid = self._collaborator_chat_ids.get(str(chat_id))
+                        if _collab_uid:
+                            _tracker.record_activity(
+                                user_id=_collab_uid,
+                                username="bot",
+                                message_preview=(msg or _COLLABORATOR_UNAVAILABLE_NOTICE)[:80],
+                                source="telegram",
+                                direction="outbound",
+                            )
+                except Exception as _te:
+                    logger.debug("Outbound local-response tracker error (non-fatal): %s", _te)
         except Exception as e:
             logger.warning("Failed to send collaborator safe-info response to chat %s: %s", chat_id, e)
+            try:
+                await self._send_telegram_text(chat_id, _COLLABORATOR_UNAVAILABLE_NOTICE, retries=3)
+            except Exception:
+                pass
 
     async def _send_disclosure(self, chat_id: int) -> None:
         """Send the one-time collaborator disclosure notice."""
