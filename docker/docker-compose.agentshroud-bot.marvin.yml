@@ -61,12 +61,12 @@ networks:
   agentshroud-internal:
     ipam:
       config: !override
-        - subnet: 172.20.0.0/16
+        - subnet: 172.20.0.0/24
   agentshroud-isolated:
     ipam:
       config: !override
-        - subnet: 172.21.0.0/16
+        - subnet: 172.21.0.0/24
   agentshroud-console:
     ipam:
       config: !override
-        - subnet: 172.22.0.0/16
+        - subnet: 172.22.0.0/24
