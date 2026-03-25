@@ -276,6 +276,20 @@ class TelegramAPIProxy:
             os.environ.get("AGENTSHROUD_LOCAL_COMMAND_DEDUPE_TTL_SECONDS", "600.0")
         )
 
+        # Group chat at-mention filter: bot reads ALL group messages for context but only
+        # responds when @mentioned. Requires TELEGRAM_BOT_USERNAME (without @).
+        # Set AGENTSHROUD_GROUP_MENTION_ONLY=0 to respond to every group message.
+        self._bot_username = (
+            os.environ.get("TELEGRAM_BOT_USERNAME", "").strip().lstrip("@").lower()
+        )
+        self._group_mention_only = (
+            os.environ.get("AGENTSHROUD_GROUP_MENTION_ONLY", "1").strip().lower()
+            not in ("0", "false", "no")
+        )
+        # Tracks whether the bot should respond in each group chat. True = @mentioned,
+        # False = context only (suppress outbound). Keyed by chat_id (int).
+        self._group_response_eligible: dict[int, bool] = {}
+
         # Progressive lockdown: per-user cumulative block counter with escalating responses.
         # 3 blocks → owner alert; 5 blocks → double rate limit window; 10 → session suspended.
         try:
@@ -380,6 +394,38 @@ class TelegramAPIProxy:
             return False
         if str(chat_id) == str(getattr(self._rbac, "owner_user_id", "")):
             return True
+        return False
+
+    @staticmethod
+    def _is_group_message(message: dict) -> bool:
+        """Return True if message originates from a group or supergroup chat."""
+        return (message.get("chat") or {}).get("type") in ("group", "supergroup")
+
+    @staticmethod
+    def _bot_is_mentioned(message: dict, bot_username: str) -> bool:
+        """Return True if the bot is @mentioned or a bot_command targets this bot.
+
+        Checks both text entities and caption_entities (media messages with captions).
+        """
+        if not bot_username:
+            return False
+        text = message.get("text") or message.get("caption") or ""
+        entities = message.get("entities") or message.get("caption_entities") or []
+        for entity in entities:
+            etype = entity.get("type")
+            if etype == "mention":
+                offset = entity.get("offset", 0)
+                length = entity.get("length", 0)
+                mention_text = text[offset : offset + length].lstrip("@").lower()
+                if mention_text == bot_username:
+                    return True
+            elif etype == "bot_command":
+                # /command@botname — targeted command for this bot
+                offset = entity.get("offset", 0)
+                length = entity.get("length", 0)
+                cmd_text = text[offset : offset + length].lower()
+                if f"@{bot_username}" in cmd_text:
+                    return True
         return False
 
     def _set_outbound_block_cascade(self, chat_id: str) -> None:
@@ -2246,6 +2292,34 @@ class TelegramAPIProxy:
             except Exception as _ote:
                 logger.debug("Outbound collab response tracking error (non-fatal): %s", _ote)
 
+        # ── Group chat response gate ──────────────────────────────────────────
+        # Suppress bot replies to group/supergroup chats where the last inbound
+        # was not an @mention. The bot still received those messages for context
+        # (_group_response_eligible tracks eligibility per chat_id). This applies
+        # to sendMessage and editMessageText only; system notifications are exempt.
+        if (
+            not is_system
+            and self._group_mention_only
+            and self._bot_username
+            and method in ("sendMessage", "editMessageText", "sendPhoto",
+                           "sendDocument", "copyMessage", "forwardMessage")
+            and body
+        ):
+            try:
+                _out_body = json.loads(body.decode("utf-8", errors="replace"))
+                _out_chat_id = _out_body.get("chat_id")
+                if isinstance(_out_chat_id, (int, str)):
+                    _cid = int(_out_chat_id)
+                    # Telegram group/supergroup IDs are negative integers.
+                    if _cid < 0 and not self._group_response_eligible.get(_cid, True):
+                        logger.debug(
+                            "Group outbound suppressed (context-only mode): chat_id=%s method=%s",
+                            _cid, method,
+                        )
+                        return {"ok": True, "result": {"suppressed": True, "method": method}}
+            except Exception as _gge:
+                logger.debug("Group gate parse error (non-fatal): %s", _gge)
+
         # Forward to real Telegram API
         try:
             response_data = await self._forward_to_telegram(url, body, content_type)
@@ -3343,6 +3417,26 @@ class TelegramAPIProxy:
             original_transport_text = text
             user_id = str(message.get("from", {}).get("id", "unknown"))
             chat_id = message.get("chat", {}).get("id")
+
+            # ── Group chat at-mention filter ──────────────────────────────────
+            # ALL group messages are forwarded to the bot for conversational context.
+            # But outbound responses are suppressed unless the bot was @mentioned.
+            # _group_response_eligible[chat_id] = True → bot may respond.
+            # _group_response_eligible[chat_id] = False → context only, no reply sent.
+            # Requires TELEGRAM_BOT_USERNAME env var; if unset, all messages get replies.
+            if (
+                self._group_mention_only
+                and self._bot_username
+                and self._is_group_message(message)
+                and chat_id is not None
+            ):
+                mentioned = self._bot_is_mentioned(message, self._bot_username)
+                self._group_response_eligible[int(chat_id)] = mentioned
+                if not mentioned:
+                    logger.debug(
+                        "Group message (context-only, no reply): user_id=%s chat_id=%s preview=%s",
+                        user_id, chat_id, (text or "")[:40].replace("\n", " "),
+                    )
 
             if not text:
                 filtered_updates.append(update)

@@ -8214,3 +8214,184 @@ class AsyncMock:
     async def __call__(self, *args, **kwargs):
         self.calls.append((args, kwargs))
         return None
+
+
+# ── Group at-mention filter ───────────────────────────────────────────────────
+
+def _make_group_update(
+    text: str,
+    user_id: str = "8506022825",
+    chat_id: int = -1001234567890,
+    chat_type: str = "supergroup",
+    update_id: int = 1,
+    entities: list | None = None,
+) -> dict:
+    """Build a Telegram group message update."""
+    msg: dict = {
+        "message_id": 1,
+        "from": {"id": int(user_id), "is_bot": False, "first_name": "Test"},
+        "chat": {"id": chat_id, "type": chat_type, "title": "Test Group"},
+        "date": 1700000000,
+        "text": text,
+    }
+    if entities is not None:
+        msg["entities"] = entities
+    return {"update_id": update_id, "message": msg}
+
+
+class TestBotIsMentioned:
+    """Unit tests for TelegramAPIProxy._bot_is_mentioned()."""
+
+    def test_direct_mention_matches(self):
+        msg = {
+            "text": "hey @testbot do something",
+            "entities": [{"type": "mention", "offset": 4, "length": 8}],
+        }
+        assert TelegramAPIProxy._bot_is_mentioned(msg, "testbot") is True
+
+    def test_mention_case_insensitive(self):
+        msg = {
+            "text": "hey @TestBot please help",
+            "entities": [{"type": "mention", "offset": 4, "length": 8}],
+        }
+        assert TelegramAPIProxy._bot_is_mentioned(msg, "testbot") is True
+
+    def test_mention_different_bot_not_matched(self):
+        msg = {
+            "text": "hey @otherbot do something",
+            "entities": [{"type": "mention", "offset": 4, "length": 9}],
+        }
+        assert TelegramAPIProxy._bot_is_mentioned(msg, "testbot") is False
+
+    def test_bot_command_with_username_matches(self):
+        msg = {
+            "text": "/start@testbot",
+            "entities": [{"type": "bot_command", "offset": 0, "length": 14}],
+        }
+        assert TelegramAPIProxy._bot_is_mentioned(msg, "testbot") is True
+
+    def test_bot_command_without_username_not_matched(self):
+        msg = {
+            "text": "/start",
+            "entities": [{"type": "bot_command", "offset": 0, "length": 6}],
+        }
+        assert TelegramAPIProxy._bot_is_mentioned(msg, "testbot") is False
+
+    def test_no_entities_not_matched(self):
+        msg = {"text": "hey testbot do something", "entities": []}
+        assert TelegramAPIProxy._bot_is_mentioned(msg, "testbot") is False
+
+    def test_empty_bot_username_never_matches(self):
+        msg = {
+            "text": "@testbot hello",
+            "entities": [{"type": "mention", "offset": 0, "length": 8}],
+        }
+        assert TelegramAPIProxy._bot_is_mentioned(msg, "") is False
+
+    def test_caption_entities_supported(self):
+        """Media messages use caption + caption_entities."""
+        msg = {
+            "caption": "check this @testbot",
+            "caption_entities": [{"type": "mention", "offset": 12, "length": 8}],
+        }
+        assert TelegramAPIProxy._bot_is_mentioned(msg, "testbot") is True
+
+
+class TestIsGroupMessage:
+    """Unit tests for TelegramAPIProxy._is_group_message()."""
+
+    def test_supergroup_is_group(self):
+        assert TelegramAPIProxy._is_group_message({"chat": {"type": "supergroup"}}) is True
+
+    def test_group_is_group(self):
+        assert TelegramAPIProxy._is_group_message({"chat": {"type": "group"}}) is True
+
+    def test_private_is_not_group(self):
+        assert TelegramAPIProxy._is_group_message({"chat": {"type": "private"}}) is False
+
+    def test_channel_is_not_group(self):
+        assert TelegramAPIProxy._is_group_message({"chat": {"type": "channel"}}) is False
+
+    def test_missing_chat_is_not_group(self):
+        assert TelegramAPIProxy._is_group_message({}) is False
+
+
+class TestGroupMentionFilter:
+    """Integration tests for group at-mention filtering.
+
+    The bot reads ALL group messages for context (they are forwarded inbound),
+    but outbound responses are suppressed unless the bot was @mentioned.
+    _group_response_eligible[chat_id] tracks eligibility per group.
+    """
+
+    def _make_proxy(self, bot_username: str = "testbot") -> TelegramAPIProxy:
+        proxy = TelegramAPIProxy()
+        proxy._rbac = FakeRBAC(owner_id="8096968754", collaborators=["8506022825"])
+        proxy._bot_token = ""
+        proxy._bot_username = bot_username
+        proxy._group_mention_only = True
+        return proxy
+
+    @pytest.mark.asyncio
+    async def test_group_message_without_mention_forwarded_but_flagged(self):
+        """Group messages without @mention are forwarded (for context) but mark chat as response-ineligible."""
+        proxy = self._make_proxy()
+        update = _make_group_update("hello everyone", user_id="8506022825",
+                                    chat_id=-1001234567890, update_id=42)
+        result = await proxy._filter_inbound_updates(_wrap_response(update))
+        updates = result["result"]
+        # Message is forwarded to bot for context
+        assert len(updates) == 1
+        assert updates[0].get("message") is not None, "Full message should be forwarded"
+        # But chat is marked ineligible for response
+        assert proxy._group_response_eligible.get(-1001234567890) is False
+
+    @pytest.mark.asyncio
+    async def test_group_message_with_mention_forwarded_and_eligible(self):
+        """Group messages with @mention are forwarded and mark chat as response-eligible."""
+        proxy = self._make_proxy()
+        text = "hey @testbot can you help?"
+        entities = [{"type": "mention", "offset": 4, "length": 8}]
+        update = _make_group_update(text, user_id="8506022825",
+                                    chat_id=-1001234567890, entities=entities)
+        result = await proxy._filter_inbound_updates(_wrap_response(update))
+        updates = result["result"]
+        assert len(updates) == 1
+        assert updates[0].get("message", {}).get("text") == text
+        assert proxy._group_response_eligible.get(-1001234567890) is True
+
+    @pytest.mark.asyncio
+    async def test_group_command_with_bot_suffix_eligible(self):
+        """/command@botname marks chat as response-eligible."""
+        proxy = self._make_proxy()
+        text = "/help@testbot"
+        entities = [{"type": "bot_command", "offset": 0, "length": 13}]
+        update = _make_group_update(text, user_id="8506022825",
+                                    chat_id=-1001234567890, entities=entities)
+        await proxy._filter_inbound_updates(_wrap_response(update))
+        assert proxy._group_response_eligible.get(-1001234567890) is True
+
+    @pytest.mark.asyncio
+    async def test_private_message_does_not_set_eligibility_flag(self):
+        """DMs don't interact with the group eligibility map."""
+        proxy = self._make_proxy()
+        update = _make_update("hello no mention needed", user_id="8506022825", chat_id=8506022825)
+        await proxy._filter_inbound_updates(_wrap_response(update))
+        assert 8506022825 not in proxy._group_response_eligible
+
+    @pytest.mark.asyncio
+    async def test_filter_disabled_does_not_set_eligibility(self):
+        """When group_mention_only is disabled, eligibility map is not populated."""
+        proxy = self._make_proxy()
+        proxy._group_mention_only = False
+        update = _make_group_update("no mention", user_id="8506022825", chat_id=-999)
+        await proxy._filter_inbound_updates(_wrap_response(update))
+        assert -999 not in proxy._group_response_eligible
+
+    @pytest.mark.asyncio
+    async def test_no_bot_username_does_not_set_eligibility(self):
+        """When bot_username is unset the filter is bypassed entirely."""
+        proxy = self._make_proxy(bot_username="")
+        update = _make_group_update("no mention no username", user_id="8506022825", chat_id=-888)
+        await proxy._filter_inbound_updates(_wrap_response(update))
+        assert -888 not in proxy._group_response_eligible
