@@ -283,6 +283,62 @@ if (TEAMS_JSON_RAW) {
   }
 }
 
+// Patch 1d: group-project agent — broader tool access for collaborative team use.
+// Allows web_search, web_fetch, memory_search, memory_get, image, pdf.
+// Denies exec/process/gateway/cron/session management (same as collaborator).
+const _GROUP_TOOL_DENY = [
+  'exec', 'process', 'gateway', 'cron', 'message',
+  'sessions_spawn', 'sessions_send', 'subagents',
+  'nodes', 'agents_list',
+  'sessions_list', 'sessions_history', 'session_status',
+  'canvas',
+];
+const gpIdx = config.agents.list.findIndex((a) => a.id === 'group-project');
+if (gpIdx < 0) {
+  config.agents.list.push({
+    id: 'group-project',
+    name: 'AgentShroud Group Project',
+    model: MAIN_MODEL,
+    tools: { profile: 'minimal', deny: _GROUP_TOOL_DENY },
+    skills: [],
+    workspace: '.agentshroud/group-project',
+    memorySearch: { enabled: true },
+  });
+  console.log('[init-patch] Added group-project agent (web+memory enabled)');
+  changed = true;
+} else {
+  if (config.agents.list[gpIdx].model !== MAIN_MODEL) {
+    config.agents.list[gpIdx].model = MAIN_MODEL;
+    changed = true;
+  }
+  const existingGpTools = config.agents.list[gpIdx].tools || {};
+  if (JSON.stringify(existingGpTools.deny) !== JSON.stringify(_GROUP_TOOL_DENY)) {
+    config.agents.list[gpIdx].tools = { profile: 'minimal', deny: _GROUP_TOOL_DENY };
+    console.log('[init-patch] Updated group-project agent tool config');
+    changed = true;
+  }
+}
+
+// Bind a configured group chat ID to the group-project agent.
+// Set AGENTSHROUD_GROUP_CHAT_ID to your Telegram group/supergroup chat ID.
+const GROUP_CHAT_ID = String(process.env.AGENTSHROUD_GROUP_CHAT_ID || '').trim();
+if (GROUP_CHAT_ID) {
+  const hasGroupBinding = config.bindings.some(
+    (b) => b.agentId === 'group-project' && b.match && b.match.peer && b.match.peer.id === GROUP_CHAT_ID
+  );
+  if (!hasGroupBinding) {
+    config.bindings = config.bindings.filter(
+      (b) => !(b.match && b.match.peer && b.match.peer.id === GROUP_CHAT_ID)
+    );
+    config.bindings.push({
+      agentId: 'group-project',
+      match: { channel: 'telegram', peer: { kind: 'group', id: GROUP_CHAT_ID } },
+    });
+    console.log(`[init-patch] Bound group chat ${GROUP_CHAT_ID} → group-project`);
+    changed = true;
+  }
+}
+
 // Patch 2: gateway auth and cleanup
 config.gateway = config.gateway || {};
 if (Object.prototype.hasOwnProperty.call(config.gateway, 'model')) {
