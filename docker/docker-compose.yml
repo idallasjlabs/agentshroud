@@ -54,10 +54,11 @@ services:
       - PYTHONDONTWRITEBYTECODE=1
       - PYTHONPYCACHEPREFIX=/tmp/pycache
       - AGENTSHROUD_EGRESS_APPROVAL_ALL=false
+      - TRIVY_CACHE_DIR=/app/data/trivy-cache
       - GATEWAY_AUTH_TOKEN_FILE=/run/secrets/gateway_password
-      - OP_SERVICE_ACCOUNT_TOKEN_FILE=/run/secrets/1password_service_account
       - PROXY_ALLOWED_NETWORKS=10.254.111.0/24,10.254.112.0/24
-      - AGENTSHROUD_SLACK_OWNER_USER_ID=U01J37F6YT0
+      - AGENTSHROUD_SLACK_OWNER_USER_ID=U0AL7640RHD
+      - AGENTSHROUD_CONTROL_UI_ORIGINS=https://marvin.tail240ea8.ts.net:18790,http://marvin.tail240ea8.ts.net:18790,http://127.0.0.1:19789,http://127.0.0.1:18790
       - AGENTSHROUD_COLLAB_LOCAL_INFO_ONLY=0
       - AGENTSHROUD_MODEL_MODE=${AGENTSHROUD_MODEL_MODE:-cloud}
       - AGENTSHROUD_CLOUD_MODEL_REF=${AGENTSHROUD_CLOUD_MODEL_REF:-anthropic/claude-opus-4-6}
@@ -76,6 +77,11 @@ services:
     memswap_limit: 1280m
     cpus: 1.0
     pids_limit: 100
+    logging:
+      driver: json-file
+      options:
+        max-size: "50m"
+        max-file: "5"
     healthcheck:
       test:
         - CMD
@@ -158,7 +164,8 @@ services:
       - AGENTSHROUD_LOCAL_MODEL=${AGENTSHROUD_LOCAL_MODEL:-qwen3:14b}
       - TELEGRAM_API_BASE_URL=http://gateway:8080/telegram-api
       - SLACK_API_BASE_URL=http://gateway:8080/slack-api
-      - AGENTSHROUD_SLACK_OWNER_USER_ID=U01J37F6YT0
+      - AGENTSHROUD_SLACK_OWNER_USER_ID=U0AL7640RHD
+      - AGENTSHROUD_CONTROL_UI_ORIGINS=https://marvin.tail240ea8.ts.net:18790,http://marvin.tail240ea8.ts.net:18790,http://127.0.0.1:19789,http://127.0.0.1:18790
       - GATEWAY_HOST_PORT=8080
       - OPENCLAW_BOT_NAME=agentshroud_bot
       - OPENCLAW_BOT_EMAIL=agentshroud.ai@icloud.com
@@ -182,6 +189,11 @@ services:
     memswap_limit: 4g
     cpus: 2.0
     pids_limit: 512
+    logging:
+      driver: json-file
+      options:
+        max-size: "50m"
+        max-file: "5"
     healthcheck:
       test:
         - CMD-SHELL
@@ -242,7 +254,7 @@ networks:
       com.docker.network.bridge.enable_icc: "true"
   agentshroud-console:
     driver: bridge
-    internal: false
+    internal: true
     driver_opts:
       com.docker.network.bridge.enable_ip_masquerade: "false"
     ipam:
