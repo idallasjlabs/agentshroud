@@ -136,6 +136,14 @@ _LOCAL_EGRESS_COMMANDS = {
     "/egress",
     "egress",
 }
+_LOCAL_EGRESS_ALLOW_COMMANDS = {
+    "/egress-allow",
+    "egress-allow",
+}
+_LOCAL_SETNAME_COMMANDS = {
+    "/setname",
+    "setname",
+}
 _LOCAL_COLLABS_COMMANDS = {
     "/collabs",
     "collabs",
@@ -153,6 +161,7 @@ _COLLABORATOR_ALLOWED_SLASH_COMMANDS = {
     "/model-status",
     "/whoami",
     "/id",
+    "/setname",
 }
 
 _DISCLOSURE_MESSAGE = (
@@ -334,6 +343,21 @@ class TelegramAPIProxy:
             os.environ.get("AGENTSHROUD_IMMUNITY_DEFAULT_TTL_SECONDS", str(8 * 3600))
         )
 
+        # Collaborator self-set display names. Persisted to /app/data/ so they
+        # survive gateway restarts. Loaded eagerly at __init__ time.
+        self._custom_display_names: dict[str, str] = {}
+        self._display_names_path = os.environ.get(
+            "AGENTSHROUD_DISPLAY_NAMES_PATH", "/app/data/collaborator_display_names.json"
+        )
+        try:
+            import json as _json
+            with open(self._display_names_path, "r", encoding="utf-8") as _dnf:
+                self._custom_display_names = _json.load(_dnf)
+        except (FileNotFoundError, ValueError):
+            pass
+        except Exception as _dne:
+            logger.debug("Could not load display names: %s", _dne)
+
     def _is_immune(self, user_id: str) -> bool:
         """Return True if user_id has active (non-expired) immunity."""
         expiry = self._immune_users.get(user_id)
@@ -430,10 +454,16 @@ class TelegramAPIProxy:
         return self._resolve_pending_username_target(text)
 
     def _resolve_display_name(self, user_id: str) -> str:
-        """Resolve a readable label for user id when available."""
+        """Resolve a readable label for user id when available.
+
+        Priority: user self-set name → env override → known labels dict → raw user_id.
+        """
         user_id = str(user_id or "").strip()
         if not user_id:
             return "unknown"
+        # Highest priority: user-set display name via /setname
+        if user_id in self._custom_display_names:
+            return f"{self._custom_display_names[user_id]} ({user_id})"
         # Optional override via env: "id:name,id:name"
         env_labels = os.environ.get("AGENTSHROUD_COLLABORATOR_LABELS", "")
         if env_labels:
@@ -2299,6 +2329,12 @@ class TelegramAPIProxy:
                 text_key, text = self._resolve_text_field(data)
                 chat_id = str(data.get("chat_id", ""))
                 is_owner_chat = self._is_owner_chat(chat_id)
+                logger.info(
+                    "Outbound sendMessage: chat_id=%s role=%s len=%d",
+                    chat_id,
+                    "owner" if is_owner_chat else "collaborator",
+                    len(text) if isinstance(text, str) else 0,
+                )
 
                 # Guardrail: never leak raw tool-call JSON blobs to Telegram users.
                 parsed_tool_call = self._parse_tool_call_json(text) if isinstance(text, str) else None
@@ -2594,7 +2630,8 @@ class TelegramAPIProxy:
                         self._stats["outbound_filtered"] += 1
                         self._set_outbound_block_cascade(chat_id)
                         logger.warning(
-                            "Outbound message blocked by pipeline: %s", pipeline_result.block_reason
+                            "Outbound message blocked by pipeline: chat_id=%s reason=%s",
+                            chat_id, pipeline_result.block_reason,
                         )
                     elif (
                         chat_id
@@ -2630,13 +2667,13 @@ class TelegramAPIProxy:
                     if pii_result.entity_types_found:
                         data["text"] = pii_result.sanitized_content
                         self._stats["outbound_filtered"] += 1
-                        logger.info("Outbound message: PII redacted: %s", pii_result.entity_types_found)
+                        logger.info("Outbound message: PII redacted: chat_id=%s types=%s", chat_id, pii_result.entity_types_found)
                     # 2. XML leak filter
                     filtered, was_filtered = self.sanitizer.filter_xml_blocks(data["text"])
                     if was_filtered:
                         data["text"] = filtered
                         self._stats["outbound_filtered"] += 1
-                        logger.info("Outbound message: XML blocks stripped")
+                        logger.info("Outbound message: XML blocks stripped chat_id=%s", chat_id)
                     # 3. Credential blocking
                     blocked, was_blocked = await self.sanitizer.block_credentials(
                         data["text"], "telegram"
@@ -2650,7 +2687,7 @@ class TelegramAPIProxy:
                         )
                         data["text"] = blocked
                         self._stats["outbound_filtered"] += 1
-                        logger.warning("Outbound message: credentials blocked")
+                        logger.warning("Outbound message: credentials blocked chat_id=%s", chat_id)
                     return json.dumps(data).encode()
             elif "x-www-form-urlencoded" in ct or (
                 not ct
@@ -3333,6 +3370,15 @@ class TelegramAPIProxy:
                 user_id in {str(uid) for uid in (self._rbac.collaborator_user_ids or [])}
             )
 
+            # ── Inbound attribution log ───────────────────────────────────────
+            logger.info(
+                "Inbound message: user_id=%s role=%s chat_id=%s preview=%s",
+                user_id,
+                "owner" if is_owner else ("collaborator" if is_collaborator else "unknown"),
+                chat_id,
+                text[:40].replace("\n", " "),
+            )
+
             # ── Progressive lockdown: early suspend check ─────────────────────
             # If the user's session has been suspended by cumulative block count,
             # drop the message and send a one-time notice to the user (rate-limited
@@ -3396,9 +3442,11 @@ class TelegramAPIProxy:
                     _tracker = getattr(_app_state, "collaborator_tracker", None)
                     if _tracker:
                         sender = message.get("from", {})
-                        _username = sender.get("first_name") or (
+                        _telegram_name = sender.get("first_name") or (
                             f"@{sender['username']}" if sender.get("username") else "unknown"
                         )
+                        _resolved = self._resolve_display_name(user_id)
+                        _username = _resolved if _resolved != user_id else _telegram_name
                         _tracker.record_activity(
                             user_id=user_id,
                             username=_username,
@@ -3944,6 +3992,35 @@ class TelegramAPIProxy:
                                 chat_id,
                                 f"{_PROTECT_HEADER}Egress approval queue not available.",
                             )
+                    elif subcmd in ("allow", "pre-approve") and len(tokens) > 2:
+                        target_domain = tokens[2].strip()
+                        # Optional duration: 1h, 4h, 24h, forever (default: forever)
+                        duration_arg = tokens[3].strip().lower() if len(tokens) > 3 else "forever"
+                        from gateway.security.egress_approval import ApprovalMode
+                        _mode = ApprovalMode.SESSION if duration_arg not in ("forever", "permanent") else ApprovalMode.PERMANENT
+                        if _eq:
+                            added = await _eq.add_rule(target_domain, "allow", _mode)
+                            if added:
+                                mode_label = "session" if _mode == ApprovalMode.SESSION else "permanent"
+                                await self._send_owner_admin_notice(
+                                    chat_id,
+                                    (
+                                        f"{_PROTECT_HEADER}Egress rule added.\n"
+                                        f"Domain: `{target_domain}`\n"
+                                        f"Action: ALLOW ({mode_label})\n"
+                                        "The bot may now connect to this domain."
+                                    ),
+                                )
+                            else:
+                                await self._send_owner_admin_notice(
+                                    chat_id,
+                                    f"{_PROTECT_HEADER}Failed to add rule for `{target_domain}`.",
+                                )
+                        else:
+                            await self._send_owner_admin_notice(
+                                chat_id,
+                                f"{_PROTECT_HEADER}Egress approval queue not available.",
+                            )
                     elif subcmd == "revoke" and len(tokens) > 2:
                         target_domain = tokens[2].strip()
                         if _eq:
@@ -3976,9 +4053,83 @@ class TelegramAPIProxy:
                             (
                                 f"{_PROTECT_HEADER}*Egress Firewall Commands*\n\n"
                                 "`/egress list` — show all allow/deny rules\n"
+                                "`/egress allow <domain> [forever|session]` — pre-approve a domain\n"
                                 "`/egress revoke <domain>` — remove a rule\n"
                             ),
                         )
+                    continue
+                elif is_owner and cmd_base in _LOCAL_EGRESS_ALLOW_COMMANDS:
+                    # Shorthand: /egress-allow <domain> [forever|session]
+                    from gateway.ingest_api.state import app_state as _ea_state
+                    _eq2 = getattr(_ea_state, "egress_approval_queue", None)
+                    tokens2 = normalize_input(text).strip().split(None, 2)
+                    if len(tokens2) < 2:
+                        await self._send_owner_admin_notice(
+                            chat_id,
+                            f"{_PROTECT_HEADER}Usage: /egress-allow <domain> [forever|session]",
+                        )
+                    else:
+                        target_domain2 = tokens2[1].strip()
+                        duration2 = tokens2[2].strip().lower() if len(tokens2) > 2 else "forever"
+                        from gateway.security.egress_approval import ApprovalMode as _AM2
+                        _mode2 = _AM2.SESSION if duration2 not in ("forever", "permanent") else _AM2.PERMANENT
+                        if _eq2:
+                            added2 = await _eq2.add_rule(target_domain2, "allow", _mode2)
+                            mode_label2 = "session" if _mode2 == _AM2.SESSION else "permanent"
+                            if added2:
+                                await self._send_owner_admin_notice(
+                                    chat_id,
+                                    (
+                                        f"{_PROTECT_HEADER}Egress rule added.\n"
+                                        f"Domain: `{target_domain2}`\n"
+                                        f"Action: ALLOW ({mode_label2})\n"
+                                        "The bot may now connect to this domain."
+                                    ),
+                                )
+                            else:
+                                await self._send_owner_admin_notice(
+                                    chat_id,
+                                    f"{_PROTECT_HEADER}Failed to add rule for `{target_domain2}`.",
+                                )
+                        else:
+                            await self._send_owner_admin_notice(
+                                chat_id,
+                                f"{_PROTECT_HEADER}Egress approval queue not available.",
+                            )
+                    continue
+                elif cmd_base in _LOCAL_SETNAME_COMMANDS:
+                    # /setname <display name> — collaborators and owner may set display name
+                    tokens_sn = normalize_input(text).strip().split(None, 1)
+                    if len(tokens_sn) < 2 or not tokens_sn[1].strip():
+                        reply_sn = (
+                            "Usage: `/setname <display name>`\n"
+                            "Example: `/setname Brett`\n\n"
+                            "Your display name will appear in the SOC activity log.\n"
+                            "Use `/setname clear` to reset to your Telegram name."
+                        )
+                        if is_owner:
+                            await self._send_owner_admin_notice(chat_id, f"{_PROTECT_HEADER}{reply_sn}")
+                        else:
+                            await self._send_telegram_text(int(chat_id), reply_sn)
+                    else:
+                        new_name = tokens_sn[1].strip()[:64]
+                        if new_name.lower() == "clear":
+                            self._custom_display_names.pop(user_id, None)
+                            msg_sn = "Display name cleared. Your Telegram name will be used."
+                        else:
+                            self._custom_display_names[user_id] = new_name
+                            msg_sn = f"Display name set to: {new_name}"
+                        # Persist to disk
+                        try:
+                            import json as _json_sn
+                            with open(self._display_names_path, "w", encoding="utf-8") as _dnf_sn:
+                                _json_sn.dump(self._custom_display_names, _dnf_sn)
+                        except Exception as _sne:
+                            logger.warning("Could not persist display names: %s", _sne)
+                        if is_owner:
+                            await self._send_owner_admin_notice(chat_id, f"{_PROTECT_HEADER}{msg_sn}")
+                        else:
+                            await self._send_telegram_text(int(chat_id), msg_sn)
                     continue
                 if local_handler is not None:
                     update_id = update.get("update_id")
@@ -5452,6 +5603,23 @@ class TelegramAPIProxy:
                         _COLLABORATOR_UNAVAILABLE_NOTICE,
                         retries=5,
                     )
+                # Record outbound response in activity tracker so both sides of the
+                # conversation appear in the SOC Command Center Activity tab.
+                try:
+                    from gateway.ingest_api.state import app_state as _app_state
+                    _tracker = getattr(_app_state, "collaborator_tracker", None)
+                    if _tracker:
+                        _collab_uid = self._collaborator_chat_ids.get(str(chat_id))
+                        if _collab_uid:
+                            _tracker.record_activity(
+                                user_id=_collab_uid,
+                                username="bot",
+                                message_preview=(msg or _COLLABORATOR_UNAVAILABLE_NOTICE)[:80],
+                                source="telegram",
+                                direction="outbound",
+                            )
+                except Exception as _te:
+                    logger.debug("Outbound local-response tracker error (non-fatal): %s", _te)
         except Exception as e:
             logger.warning("Failed to send collaborator safe-info response to chat %s: %s", chat_id, e)
             try:

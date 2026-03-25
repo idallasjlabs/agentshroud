@@ -151,7 +151,11 @@ def load_persisted_collaborators() -> list[str]:
 
 def persist_approved_collaborator(uid: str) -> None:
     """Append a collaborator UID to the persistent store (idempotent, file-locked)."""
-    _APPROVED_COLLABORATORS_FILE.parent.mkdir(parents=True, exist_ok=True)
+    try:
+        _APPROVED_COLLABORATORS_FILE.parent.mkdir(parents=True, exist_ok=True)
+    except OSError as _mkdir_exc:
+        _collab_persist_logger.warning("Could not create collaborator persist dir: %s", _mkdir_exc)
+        return
     lock_path = _APPROVED_COLLABORATORS_FILE.with_suffix(".lock")
     try:
         with open(lock_path, "w") as lock_fh:
