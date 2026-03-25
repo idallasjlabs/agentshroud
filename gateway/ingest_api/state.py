@@ -40,6 +40,7 @@ class AppState:
     heuristic_classifier: Optional[object]
     memory_integrity: Optional[object]
     memory_lifecycle: Optional[object]
+    group_registry: Optional[object]
 
 
 # Global application state instance

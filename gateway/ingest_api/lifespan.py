@@ -490,6 +490,17 @@ async def lifespan(app: FastAPI):
         logger.error(f"Failed to initialize CollaboratorActivityTracker: {e}")
         app_state.collaborator_tracker = None
 
+    # Initialize group registry — auto-groups (telegram, slack, everyone) + custom persisted groups
+    try:
+        from gateway.security.rbac_config import GroupRegistry, RBACConfig as _RBACCfgGR
+        _gr = GroupRegistry()
+        _gr.init_auto_groups(_RBACCfgGR())
+        app_state.group_registry = _gr
+        logger.info("GroupRegistry initialized (%d groups)", len(_gr.groups))
+    except Exception as e:
+        logger.error("Failed to initialize GroupRegistry: %s", e)
+        app_state.group_registry = None
+
     # ══════════════════════════════════════════════════════════════════
     # P3 — Background & Infrastructure Security Modules
     # All modules fully configured with real binaries and data paths.
