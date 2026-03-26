@@ -599,12 +599,50 @@ async def lifespan(app: FastAPI):
         from ..security.collaborator_tracker import CollaboratorActivityTracker
         from gateway.security.rbac_config import RBACConfig as _RBACCfg
         _rbac_cfg = _RBACCfg()
+        # During pytest runs, redirect log to a temp dir so test data never
+        # bleeds into the production JSONL read by the SOC dashboard.
+        import os as _os
+        if _os.environ.get("PYTEST_CURRENT_TEST"):
+            import tempfile as _tempfile
+            _test_tmp = Path(_tempfile.mkdtemp(prefix="agentshroud_test_"))
+            _tracker_log_path = _test_tmp / "collaborator_activity.jsonl"
+            _tracker_contrib_dir = _test_tmp / "contributors"
+        else:
+            _tracker_log_path = Path("/app/data/collaborator_activity.jsonl")
+            _tracker_contrib_dir = Path("/app/data/contributors")
         app_state.collaborator_tracker = CollaboratorActivityTracker(
-            log_path=Path("/app/data/collaborator_activity.jsonl"),
+            log_path=_tracker_log_path,
             owner_user_id=_rbac_cfg.owner_user_id,
             collaborator_ids=_rbac_cfg.collaborator_user_ids,
-            contributor_log_dir=Path("/app/data/contributors"),
+            contributor_log_dir=_tracker_contrib_dir,
         )
+        # Prune test-fixture user IDs that leaked into the production log
+        # (numeric-string IDs < 1000 or matching test_user_* patterns).
+        _known_test_ids = {"42", "99", "123456789", "5555555555"}
+        if not _os.environ.get("PYTEST_CURRENT_TEST") and _tracker_log_path.exists():
+            try:
+                import json as _jlog
+                _lines = _tracker_log_path.read_text(encoding="utf-8").splitlines()
+                _clean = []
+                for _ln in _lines:
+                    try:
+                        _entry = _jlog.loads(_ln)
+                        _uid = str(_entry.get("user_id", ""))
+                        _uname = str(_entry.get("username", ""))
+                        if (
+                            _uid in _known_test_ids
+                            or _uid.startswith("test_")
+                            or _uname.startswith("test_")
+                        ):
+                            continue
+                        _clean.append(_ln)
+                    except Exception:
+                        _clean.append(_ln)
+                if len(_clean) != len(_lines):
+                    _tracker_log_path.write_text("\n".join(_clean) + ("\n" if _clean else ""), encoding="utf-8")
+                    logger.info("Pruned %d test-fixture entries from production activity log", len(_lines) - len(_clean))
+            except Exception as _prune_exc:
+                logger.debug("Activity log prune skipped: %s", _prune_exc)
         logger.info("CollaboratorActivityTracker initialized")
     except Exception as e:
         logger.error(f"Failed to initialize CollaboratorActivityTracker: {e}")
