@@ -29,7 +29,8 @@
       },
       "sessionKey": "agent:main:main",
       "delivery": {
-        "mode": "announce"
+        "mode": "announce",
+        "channel": "telegram"
       }
     },
     {
@@ -60,7 +61,8 @@
       },
       "sessionKey": "agent:main:main",
       "delivery": {
-        "mode": "announce"
+        "mode": "announce",
+        "channel": "telegram"
       }
     },
     {
@@ -90,7 +92,8 @@
       },
       "sessionKey": "agent:main:main",
       "delivery": {
-        "mode": "announce"
+        "mode": "announce",
+        "channel": "telegram"
       }
     },
     {
@@ -120,7 +123,8 @@
       },
       "sessionKey": "agent:main:main",
       "delivery": {
-        "mode": "announce"
+        "mode": "announce",
+        "channel": "telegram"
       }
     },
     {
@@ -150,7 +154,8 @@
         "consecutiveErrors": 0
       },
       "delivery": {
-        "mode": "announce"
+        "mode": "announce",
+        "channel": "telegram"
       }
     },
     {
@@ -180,7 +185,8 @@
         "consecutiveErrors": 0
       },
       "delivery": {
-        "mode": "announce"
+        "mode": "announce",
+        "channel": "telegram"
       }
     },
     {
@@ -210,7 +216,8 @@
         "consecutiveErrors": 0
       },
       "delivery": {
-        "mode": "announce"
+        "mode": "announce",
+        "channel": "telegram"
       }
     },
     {
@@ -239,7 +246,8 @@
         "consecutiveErrors": 0
       },
       "delivery": {
-        "mode": "announce"
+        "mode": "announce",
+        "channel": "telegram"
       }
     },
     {
@@ -268,7 +276,8 @@
         "consecutiveErrors": 0
       },
       "delivery": {
-        "mode": "announce"
+        "mode": "announce",
+        "channel": "telegram"
       }
     },
     {
@@ -299,7 +308,8 @@
         "consecutiveErrors": 0
       },
       "delivery": {
-        "mode": "announce"
+        "mode": "announce",
+        "channel": "telegram"
       }
     }
   ]

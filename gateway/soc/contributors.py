@@ -107,6 +107,12 @@ class ContributorManager:
         last_active = None
         total_messages = 0
         display_name = activity.get("username", "")
+        if not display_name:
+            try:
+                from ..proxy.telegram_proxy import _KNOWN_COLLABORATOR_LABELS
+                display_name = _KNOWN_COLLABORATOR_LABELS.get(str(user_id), "")
+            except Exception:
+                pass
         if activity:
             ts = activity.get("last_active")
             if ts:

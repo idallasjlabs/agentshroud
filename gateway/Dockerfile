@@ -42,6 +42,9 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     libpq5 \
     libelf1 \
     && mkdir -p /var/lib/clamav \
+    && sed -i \
+        -e 's|^UpdateLogFile.*|UpdateLogFile /tmp/freshclam.log|' \
+        /etc/clamav/freshclam.conf \
     && curl -sS https://downloads.1password.com/linux/keys/1password.asc \
         | gpg --dearmor --output /usr/share/keyrings/1password-archive-keyring.gpg \
     && arch=$(dpkg --print-architecture) \

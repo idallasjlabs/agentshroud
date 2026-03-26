@@ -461,6 +461,15 @@ async def lifespan(app: FastAPI):
         logger.error("✗ EnvelopeSigner: %s", _es_exc)
         _envelope_signer = None
 
+    # Pre-load ClamAV scan_bytes so the pipeline is constructed with it already wired.
+    # Without this, SecurityPipeline fires a CRITICAL warning at construction time even
+    # though clamav_scanner is set moments later in the post-pipeline init block.
+    _clamav_scan_bytes = None
+    try:
+        from ..security.clamav_scanner import scan_bytes as _clamav_scan_bytes
+    except Exception as _clamav_pre_exc:
+        logger.warning("ClamAV scan_bytes not available at pipeline init: %s", _clamav_pre_exc)
+
     app_state.pipeline = SecurityPipeline(
         prompt_guard=app_state.prompt_guard,
         pii_sanitizer=app_state.sanitizer,
@@ -479,6 +488,7 @@ async def lifespan(app: FastAPI):
         context_integrity_scorer=_context_integrity_scorer,
         output_schema_enforcer=_output_schema_enforcer,
         envelope_signer=_envelope_signer,
+        clamav_scanner=_clamav_scan_bytes,
     )
     logger.info("Security pipeline initialized")
 
