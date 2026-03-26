@@ -35,15 +35,10 @@ run_trivy() {
         return 1
     fi
 
-    # Use pre-seeded DB baked into the image at /var/lib/trivy (set at build time).
-    # Fall back to /var/log/security/.trivy-cache if the image cache is missing.
-    # On VPN, ghcr.io is blocked — always prefer --skip-db-update with the baked cache.
-    TRIVY_CACHE="${TRIVY_CACHE_DIR:-/var/lib/trivy}"
-    if [ ! -d "$TRIVY_CACHE/db" ]; then
-        TRIVY_CACHE="/var/log/security/.trivy-cache"
-        mkdir -p "$TRIVY_CACHE"
-        log "WARNING: /var/lib/trivy/db missing — using fallback cache at $TRIVY_CACHE"
-    fi
+    # DB lives on the writable security-reports volume (downloaded at container startup).
+    # On VPN, ghcr.io is blocked — startup download fails; scan will fail until off-VPN.
+    TRIVY_CACHE="${TRIVY_CACHE_DIR:-/var/log/security/.trivy-cache}"
+    mkdir -p "$TRIVY_CACHE"
 
     # Try with pre-seeded cache first (no network needed), then fall back to live download.
     if ! trivy fs --format json --severity CRITICAL,HIGH,MEDIUM,LOW --no-progress \
@@ -67,7 +62,7 @@ run_trivy() {
 import json, datetime
 print(json.dumps({
     'SchemaVersion': 2, 'Results': [],
-    'error': 'scan failed — rebuild image off-VPN to refresh DB',
+    'error': 'scan failed — restart container off-VPN to download Trivy DB',
     'timestamp': datetime.datetime.utcnow().isoformat() + 'Z',
 }))
 " > "$LOG_DIR/trivy/trivy-$TIMESTAMP.json" 2>/dev/null || true
