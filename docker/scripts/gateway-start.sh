@@ -27,7 +27,7 @@ fi
 if command -v clamd >/dev/null 2>&1; then
     clamd --config-file=/etc/clamav/clamd.conf 2>/tmp/clamd-start.log &
     echo "[gateway-start] clamd launched (pid=$!)"
-    for _i in $(seq 1 10); do [ -S /tmp/clamd.ctl ] && break; sleep 1; done
+    for _i in $(seq 1 30); do [ -S /tmp/clamd.ctl ] && break; sleep 1; done
     [ -S /tmp/clamd.ctl ] && echo "[gateway-start] clamd socket ready" || echo "[gateway-start] clamd socket not yet ready (still initialising)"
 fi
 
