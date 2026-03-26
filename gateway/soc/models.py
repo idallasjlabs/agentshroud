@@ -42,6 +42,7 @@ class ServiceStatus(str, Enum):
     UNHEALTHY = "unhealthy"
     UNKNOWN = "unknown"
     NOT_INSTALLED = "not_installed"
+    STANDBY = "standby"  # installed but cannot run in this environment (e.g. no eBPF, no manager)
 
 
 class HealthStatus(str, Enum):

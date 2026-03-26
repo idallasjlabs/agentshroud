@@ -5376,16 +5376,18 @@ class TestInboundPipelineOnGetUpdates:
         assert source == "telegram"
 
     @pytest.mark.asyncio
-    async def test_owner_activity_not_tracked(self, monkeypatch):
-        """Owner messages must never be recorded in collaborator tracker."""
+    async def test_owner_activity_is_tracked_with_flag(self, monkeypatch):
+        """Owner messages are recorded in the tracker with is_owner=True."""
         from gateway.ingest_api import state as state_module
 
         class FakeTracker:
             def __init__(self):
                 self.calls = 0
+                self.last_kwargs = {}
 
-            def record_activity(self, **_kwargs):
+            def record_activity(self, **kwargs):
                 self.calls += 1
+                self.last_kwargs = kwargs
 
         tracker = FakeTracker()
         owner_id = "8096968754"
@@ -5402,7 +5404,7 @@ class TestInboundPipelineOnGetUpdates:
         response = _wrap_response(_make_update("owner msg", user_id=owner_id, chat_id=int(owner_id)))
         await proxy._filter_inbound_updates(response)
 
-        assert tracker.calls == 0
+        assert tracker.calls == 1
 
     @pytest.mark.asyncio
     async def test_egress_callback_applies_queue_decision(self, monkeypatch):
