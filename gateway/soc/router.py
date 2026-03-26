@@ -201,6 +201,45 @@ def _risk_level_label(score: int) -> str:
     return "low"
 
 
+@router.get("/security/risk/summary")
+async def get_risk_summary(caller: SCLCaller = Depends(get_caller)) -> Dict:
+    """Operator-ready risk summary with plain-English bullets and per-user risk map (V9-2).
+
+    Returns:
+      - operator_summary: list of plain-English threat indicators for ops runbook
+      - per_user_risk: ranked list of users by cross-signal risk contribution
+      - risk_score, severity: aggregate values
+    """
+    caller.require(Action.READ, Resource.SYSTEM)
+    app = _app_state()
+    try:
+        from ..security.soc_correlation import build_correlation_summary
+        summary = build_correlation_summary(app)
+        return {
+            "risk_score": summary.risk_score,
+            "severity": summary.severity,
+            "operator_summary": summary.operator_summary,
+            "per_user_risk": summary.per_user_risk,
+            "correlated_findings": [
+                f for f in summary.correlated_findings
+                if f.get("type") not in ("generated_at",)
+            ],
+            "generated_at": next(
+                (f["timestamp"] for f in summary.correlated_findings if f.get("type") == "generated_at"),
+                None,
+            ),
+        }
+    except Exception as exc:
+        logger.debug("get_risk_summary: %s", exc)
+    return {
+        "risk_score": 0,
+        "severity": "low",
+        "operator_summary": ["Risk summary unavailable"],
+        "per_user_risk": [],
+        "correlated_findings": [],
+    }
+
+
 @router.get("/security/audit/export")
 async def export_audit(
     fmt: str = Query(default="json", alias="format"),
@@ -1445,6 +1484,39 @@ async def get_scanner_results(caller: SCLCaller = Depends(get_caller)) -> Dict:
             "scanners": {},
             "totals": {"critical": 0, "high": 0, "medium": 0, "low": 0},
         }
+
+
+@router.get("/scanners/recent")
+async def get_scanner_recent_events(
+    caller: SCLCaller = Depends(get_caller),
+    limit: int = 50,
+    status: str = "all",
+) -> Dict:
+    """Recent scanner events from the in-process startup/scheduled scan history.
+
+    Complements /scanners (disk-based aggregate) with live app_state events
+    including findings from the 30s post-boot ClamAV and Trivy scans.
+
+    Query params:
+        limit  — max events to return (default 50)
+        status — filter by summary.status: "all" | "critical" | "warning" | "clean" | "error"
+    """
+    caller.require(Action.READ, Resource.SYSTEM)
+    app = _app_state()
+    history = list(getattr(app, "scanner_result_history", []) or [])
+    if status and status.lower() != "all":
+        history = [
+            h for h in history
+            if str((h.get("summary") or {}).get("status", "")).lower() == status.lower()
+        ]
+    items = history[-limit:]
+    totals: Dict[str, int] = {"critical": 0, "high": 0, "findings": 0}
+    for h in items:
+        s = h.get("summary") or {}
+        totals["critical"] += int(s.get("critical", 0) or 0)
+        totals["high"] += int(s.get("high", 0) or 0)
+        totals["findings"] += int(s.get("findings", 0) or 0)
+    return {"count": len(items), "totals": totals, "items": items}
 
 
 @router.get("/scorecard")

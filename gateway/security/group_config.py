@@ -60,6 +60,10 @@ class GroupConfig(BaseModel):
     projects: List[str] = Field(default_factory=list)
     collab_mode: str = "local_only"  # local_only | project_scoped | full_access
     tool_tier_max: str = "medium"
+    # V9-4: Per-group response prefix hook — operators can set a brief context
+    # string (e.g. "Team: Ops") that is prepended to collaborator-safe responses
+    # for members of this group.  None means no prefix (default behaviour).
+    safe_response_prefix: Optional[str] = None
 
     @field_validator("members", mode="before")
     @classmethod
@@ -138,6 +142,14 @@ class TeamsConfig(BaseModel):
         """Return the first project accessible to a user (primary project)."""
         projects = self.get_user_projects(user_id)
         return projects[0] if projects else None
+
+    def get_group_safe_response_prefix(self, user_id: str) -> Optional[str]:
+        """Return the safe_response_prefix for the first group that the user belongs to
+        which has one set.  Returns None if no group defines a prefix (V9-4 hook)."""
+        for group in self.groups.values():
+            if group.is_member(user_id) and group.safe_response_prefix:
+                return group.safe_response_prefix
+        return None
 
     def get_user_collab_mode(self, user_id: str) -> str:
         """Return the most-permissive collab_mode across all user's groups.
