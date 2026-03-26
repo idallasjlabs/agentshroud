@@ -29,7 +29,9 @@ ENV PIP_ROOT_USER_ACTION=ignore
 ENV PIP_DISABLE_PIP_VERSION_CHECK=1
 ENV DEBIAN_FRONTEND=noninteractive
 
-# Install system dependencies: OpenSCAP (compliance), SSH client, ClamAV (malware scanning), 1Password CLI
+# Install system dependencies: OpenSCAP (compliance), SSH client, ClamAV (malware scanning),
+# 1Password CLI, Wazuh HIDS agent, libelf1 (Falco dep) — consolidated single layer (~100MB saved).
+ARG WAZUH_VERSION=4.9.2
 RUN apt-get update && apt-get install -y --no-install-recommends \
     libopenscap33 \
     openscap-scanner \
@@ -38,14 +40,21 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     openssl \
     curl ca-certificates gpg \
     libpq5 \
+    libelf1 \
     && mkdir -p /var/lib/clamav \
-    && (freshclam --quiet 2>/dev/null || echo "freshclam: virus DB download deferred to runtime") \
     && curl -sS https://downloads.1password.com/linux/keys/1password.asc \
         | gpg --dearmor --output /usr/share/keyrings/1password-archive-keyring.gpg \
     && arch=$(dpkg --print-architecture) \
     && echo "deb [arch=${arch} signed-by=/usr/share/keyrings/1password-archive-keyring.gpg] https://downloads.1password.com/linux/debian/${arch} stable main" \
         > /etc/apt/sources.list.d/1password.list \
-    && apt-get update && apt-get install -y --no-install-recommends 1password-cli \
+    && curl -sSfL https://packages.wazuh.com/key/GPG-KEY-WAZUH \
+        | gpg --dearmor -o /usr/share/keyrings/wazuh.gpg \
+    && echo "deb [signed-by=/usr/share/keyrings/wazuh.gpg] https://packages.wazuh.com/4.x/apt/ stable main" \
+        > /etc/apt/sources.list.d/wazuh.list \
+    && apt-get update \
+    && apt-get install -y --no-install-recommends 1password-cli \
+    && WAZUH_MANAGER=127.0.0.1 apt-get install -y --no-install-recommends \
+        wazuh-agent=${WAZUH_VERSION}-1 \
     && rm -rf /var/lib/apt/lists/*
 
 # cosign bootstrap — supply-chain verification tool used to verify Trivy below.
@@ -108,13 +117,6 @@ RUN DPKG_ARCH=$(dpkg --print-architecture) && \
     rm "/tmp/trivy_${TRIVY_VERSION}_Linux-${TRIVY_ARCH}.deb" /tmp/trivy_checksums.txt \
        /tmp/trivy_checksums.txt.sigstore.json
 
-# Pre-seed Trivy vulnerability DB at build time.
-# Avoids ghcr.io download at runtime (blocked on VPN). Non-fatal: if this build
-# runs on VPN the DB is absent and security-scan.sh falls back to a live download.
-RUN mkdir -p /var/lib/trivy && \
-    trivy fs --download-db-only --cache-dir /var/lib/trivy --no-progress 2>&1 && \
-    echo "Trivy DB pre-seeded at build time" || \
-    echo "WARNING: Trivy DB download failed (VPN?) — runtime will attempt download on first scan"
 
 # cosign — image signing and verification (Domain 17)
 # R2-M1: Checksum verified via published cosign_checksums.txt (same pattern as Trivy)
@@ -181,17 +183,7 @@ RUN DPKG_ARCH=$(dpkg --print-architecture) && \
       rm -rf /tmp/docker.tgz /tmp/docker ) || \
     echo "docker CLI: download deferred to runtime"
 
-# Wazuh agent — HIDS / FIM, runs as agentshroud user inside the gateway container
-# ARM64-native since Wazuh 4.3. Pinned to same version as compose sidecar.
-ARG WAZUH_VERSION=4.9.2
-RUN curl -sSfL https://packages.wazuh.com/key/GPG-KEY-WAZUH \
-        | gpg --dearmor -o /usr/share/keyrings/wazuh.gpg \
-    && echo "deb [signed-by=/usr/share/keyrings/wazuh.gpg] https://packages.wazuh.com/4.x/apt/ stable main" \
-        > /etc/apt/sources.list.d/wazuh.list \
-    && apt-get update \
-    && WAZUH_MANAGER=127.0.0.1 apt-get install -y --no-install-recommends \
-        wazuh-agent=${WAZUH_VERSION}-1 \
-    && rm -rf /var/lib/apt/lists/*
+# Wazuh agent installed in consolidated apt block above.
 
 # Fluent Bit log processor — pinned version, arch-aware (same pattern as Trivy/Syft)
 ARG FLUENT_BIT_VERSION=3.2.7
@@ -209,8 +201,6 @@ RUN DPKG_ARCH=$(dpkg --print-architecture) && \
       rm -rf /var/lib/apt/lists/* ) || \
     echo "fluent-bit: install failed, starting without log collector"
 
-# libelf1 — runtime dependency for Falco binary
-RUN apt-get update && apt-get install -y --no-install-recommends libelf1 && rm -rf /var/lib/apt/lists/*
 
 # Falco runtime security — embedded in gateway (no separate container)
 # Uses modern_ebpf engine for ARM64/AMD64 syscall monitoring.
@@ -234,7 +224,7 @@ COPY docker/falco/rules.yaml /etc/falco/rules.d/agentshroud.yaml
 
 # clamd.conf — adapted for non-root execution in read-only rootfs
 # Socket, pidfile, temp, and log all land in tmpfs (/tmp).
-# DatabaseDirectory reads the virus DB baked in at build time (read-only OK).
+# DatabaseDirectory points to the clamav-db named volume (populated by freshclam at startup).
 RUN printf '%s\n' \
     'LocalSocket /tmp/clamd.ctl' \
     'LocalSocketMode 666' \
