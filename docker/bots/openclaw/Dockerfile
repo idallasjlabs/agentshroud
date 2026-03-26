@@ -75,8 +75,8 @@ RUN corepack enable
 WORKDIR /app
 
 # Install OpenClaw from npm registry (pinned version for reproducible builds)
-RUN npm install -g openclaw@2026.3.13
-RUN echo "2026.3.13" > /app/.openclaw-image-version
+RUN npm install -g openclaw@2026.3.24
+RUN echo "2026.3.24" > /app/.openclaw-image-version
 RUN npm cache clean --force
 # SECURITY: Route LLM API through AgentShroud gateway
 COPY docker/scripts/patch-anthropic-sdk.sh /usr/local/bin/patch-anthropic-sdk.sh
