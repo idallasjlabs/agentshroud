@@ -273,6 +273,7 @@
                 <option value="">In + Out</option>
                 <option value="inbound">Inbound ↑</option>
                 <option value="outbound">Outbound ↓</option>
+                <option value="owner">Owner</option>
               </select>
               <button class="btn btn-sm" onclick="window._markActivityViewed();window._loadActivityLog()">Mark Viewed</button>
               <button class="btn btn-sm" onclick="window._loadActivityLog()">Refresh</button>
@@ -284,15 +285,14 @@
               <thead>
                 <tr>
                   <th class="sortable" data-col="timestamp" onclick="window._sortActivity('timestamp')" style="cursor:pointer;white-space:nowrap">Timestamp <span id="sort-timestamp">▼</span></th>
-                  <th class="sortable" data-col="user_id" onclick="window._sortActivity('user_id')" style="cursor:pointer">User ID <span id="sort-user_id"></span></th>
-                  <th>Username</th>
-                  <th class="sortable" data-col="direction" onclick="window._sortActivity('direction')" style="cursor:pointer">Direction <span id="sort-direction"></span></th>
+                  <th class="sortable" data-col="user_id" onclick="window._sortActivity('user_id')" style="cursor:pointer">User <span id="sort-user_id"></span></th>
+                  <th>Query</th>
+                  <th>Response</th>
                   <th>Source</th>
-                  <th>Message Preview</th>
                 </tr>
               </thead>
               <tbody id="activity-tbody">
-                <tr><td colspan="6" style="color:var(--text-muted);text-align:center;padding:1rem">loading...</td></tr>
+                <tr><td colspan="5" style="color:var(--text-muted);text-align:center;padding:1rem">loading...</td></tr>
               </tbody>
             </table>
           </div>

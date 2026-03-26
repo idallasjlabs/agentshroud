@@ -773,20 +773,28 @@ async def get_collaborator_activity(
     user_id: Optional[str] = Query(default=None),
     direction: Optional[str] = Query(default=None),
     search: Optional[str] = Query(default=None),
+    is_owner: Optional[bool] = Query(default=None),
     caller: SCLCaller = Depends(get_caller),
 ) -> JSONResponse:
-    """Return full collaborator activity log. limit=0 returns all entries."""
+    """Return full collaborator activity log. limit=0 returns all entries.
+
+    Returns both flat ``entries`` (backward-compatible) and ``paired_entries``
+    where inbound queries are paired with their outbound bot responses using
+    the ``correlation_id`` field added when entries are recorded.
+    """
     caller.require(Action.READ, Resource.USERS)
     app = _app_state()
     tracker = getattr(app, "collaborator_tracker", None)
     if not tracker:
-        return JSONResponse(content={"entries": [], "total": 0, "total_unfiltered": 0, "tracker_available": False})
+        return JSONResponse(content={"entries": [], "paired_entries": [], "total": 0, "total_unfiltered": 0, "tracker_available": False})
     entries = tracker.get_activity(since=since, limit=0)  # fetch all, filter below
     total_unfiltered = len(entries)
     if user_id:
         entries = [e for e in entries if e.get("user_id") == user_id]
     if direction in ("inbound", "outbound"):
         entries = [e for e in entries if e.get("direction") == direction]
+    if is_owner is not None:
+        entries = [e for e in entries if bool(e.get("is_owner")) == is_owner]
     if search:
         search_lower = search.lower()
         entries = [
@@ -797,12 +805,59 @@ async def get_collaborator_activity(
             or search_lower in (e.get("source") or "").lower()
         ]
     total_filtered = len(entries)
+
+    # Build paired_entries: group inbound+outbound by correlation_id
+    paired: dict = {}
+    unpaired: list = []
+    for e in entries:
+        corr = e.get("correlation_id")
+        if corr:
+            if corr not in paired:
+                paired[corr] = {
+                    "timestamp": e.get("timestamp"),
+                    "user_id": e.get("user_id"),
+                    "username": e.get("username"),
+                    "source": e.get("source"),
+                    "is_owner": e.get("is_owner", False),
+                    "correlation_id": corr,
+                    "query_preview": None,
+                    "response_preview": None,
+                }
+            if e.get("direction") == "inbound":
+                paired[corr]["query_preview"] = e.get("message_preview")
+                paired[corr]["timestamp"] = e.get("timestamp")  # use inbound timestamp
+                paired[corr]["user_id"] = e.get("user_id")
+                paired[corr]["username"] = e.get("username")
+                paired[corr]["is_owner"] = e.get("is_owner", False)
+            elif e.get("direction") == "outbound":
+                paired[corr]["response_preview"] = e.get("message_preview")
+        else:
+            # Older entries without correlation_id — render as standalone
+            unpaired.append({
+                "timestamp": e.get("timestamp"),
+                "user_id": e.get("user_id"),
+                "username": e.get("username"),
+                "source": e.get("source"),
+                "is_owner": e.get("is_owner", False),
+                "correlation_id": None,
+                "query_preview": e.get("message_preview") if e.get("direction") == "inbound" else None,
+                "response_preview": e.get("message_preview") if e.get("direction") == "outbound" else None,
+            })
+    paired_entries = sorted(
+        list(paired.values()) + unpaired,
+        key=lambda x: x.get("timestamp") or 0,
+        reverse=True,
+    )
+
     if offset:
         entries = entries[offset:]
+        paired_entries = paired_entries[offset:]
     if limit:
         entries = entries[:limit]
+        paired_entries = paired_entries[:limit]
     return JSONResponse(content={
         "entries": entries,
+        "paired_entries": paired_entries,
         "total": total_filtered,
         "total_unfiltered": total_unfiltered,
         "offset": offset,
@@ -1246,7 +1301,7 @@ async def get_health(caller: SCLCaller = Depends(get_caller)) -> Dict:
     from .services import ServiceManager
     mgr = ServiceManager()
     services = mgr.list_services()
-    all_healthy = all(s.status.value == "running" for s in services)
+    all_healthy = all(s.status.value in ("running", "standby") for s in services)
     return {
         "status": "healthy" if all_healthy else "degraded",
         "services": [{"name": s.name, "status": s.status.value, "health": s.health.value} for s in services],
