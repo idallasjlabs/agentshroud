@@ -68,6 +68,19 @@ print(json.dumps({
 " > "$LOG_DIR/trivy/trivy-$TIMESTAMP.json" 2>/dev/null || true
     fi
 
+    # Validate report is parseable — catches silent corruption from prior runs
+    if ! python3 -c "import json, sys; json.load(open('$LOG_DIR/trivy/trivy-$TIMESTAMP.json'))" 2>/dev/null; then
+        log "WARNING: Trivy report is not valid JSON — overwriting with error marker"
+        python3 -c "
+import json, datetime
+print(json.dumps({
+    'SchemaVersion': 2, 'Results': [],
+    'error': 'scan completed but report JSON was corrupt',
+    'timestamp': datetime.datetime.utcnow().isoformat() + 'Z',
+}))
+" > "$LOG_DIR/trivy/trivy-$TIMESTAMP.json" 2>/dev/null || true
+    fi
+
     CRITICAL=$(python3 -c "
 import json, sys
 try:
