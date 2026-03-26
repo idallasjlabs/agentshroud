@@ -238,8 +238,11 @@ RUN printf '%s\n' \
 # Create non-root user
 RUN useradd --create-home --shell /bin/bash --uid 1000 agentshroud
 
-# Transfer Wazuh directory ownership to agentshroud so wazuh-agentd starts without root
-RUN chown -R agentshroud:agentshroud /var/ossec
+# Transfer Wazuh + ClamAV directory ownership to agentshroud (non-root runtime user).
+# /var/ossec — wazuh-agentd needs write access; /var/lib/clamav — freshclam needs write
+# access to update the virus DB on the named volume.
+RUN chown -R agentshroud:agentshroud /var/ossec \
+    && chown -R agentshroud:agentshroud /var/lib/clamav
 
 # Falco alert directory (tmpfs mount point at runtime)
 RUN mkdir -p /var/log/falco && chown agentshroud:agentshroud /var/log/falco
