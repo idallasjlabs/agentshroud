@@ -228,7 +228,7 @@ class TestConfigValidation:
         assert primary_match, "Primary bot Dockerfile must pin openclaw@<version>"
         assert openclaw_match, "OpenClaw bot Dockerfile must pin openclaw@<version>"
         assert primary_match.group(1) == openclaw_match.group(1)
-        assert primary_match.group(1) == "2026.3.13"
+        assert primary_match.group(1) == "2026.3.24"
     def test_openclaw_patch_script_sets_control_ui_allowed_origins(self):
         """openclaw init patch script must seed control UI origins for non-loopback bind."""
         path = REPO_ROOT / "docker" / "config" / "openclaw" / "apply-patches.js"
