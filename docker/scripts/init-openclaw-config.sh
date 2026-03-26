@@ -424,13 +424,13 @@ fi
 if [ -d "${MEMORY_BACKUP_DIR}" ]; then
   if [ -f "${MEMORY_FILE}" ] || [ -d "${MEMORY_DIR}" ]; then
     if touch "${MEMORY_BACKUP_DIR}/.write-test" 2>/dev/null && rm -f "${MEMORY_BACKUP_DIR}/.write-test"; then
-      [ -f "${MEMORY_FILE}" ] && cp "${MEMORY_FILE}" "${MEMORY_BACKUP_DIR}/MEMORY.md"
+      [ -f "${MEMORY_FILE}" ] && cp -f "${MEMORY_FILE}" "${MEMORY_BACKUP_DIR}/MEMORY.md"
       if [ -d "${MEMORY_DIR}" ]; then
         mkdir -p "${MEMORY_BACKUP_DIR}/memory"
-        cp -r "${MEMORY_DIR}/"* "${MEMORY_BACKUP_DIR}/memory/" 2>/dev/null || true
+        cp -rf "${MEMORY_DIR}/"* "${MEMORY_BACKUP_DIR}/memory/" 2>/dev/null || true
       fi
       for f in USER.md TOOLS.md HEARTBEAT.md; do
-        [ -f "${WORKSPACE_DIR}/${f}" ] && cp "${WORKSPACE_DIR}/${f}" "${MEMORY_BACKUP_DIR}/${f}"
+        [ -f "${WORKSPACE_DIR}/${f}" ] && cp -f "${WORKSPACE_DIR}/${f}" "${MEMORY_BACKUP_DIR}/${f}"
       done
       echo "[init] ✓ Memory backed up to ${MEMORY_BACKUP_DIR}"
     else
