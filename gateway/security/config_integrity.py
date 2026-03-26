@@ -96,6 +96,17 @@ class ConfigIntegrityMonitor:
             abs_path = self.bot_config_dir / rel_path
             current[rel_path] = self._hash_file(abs_path)
 
+        # First boot: no baseline exists yet.  Silently establish it so the
+        # next restart has something to compare against.  Do NOT fire "added"
+        # alerts — every file looks new on the very first run.
+        if not baseline:
+            self._save_baseline(current)
+            logger.info(
+                "ConfigIntegrityMonitor: first-boot baseline established (%d file(s))",
+                len(current),
+            )
+            return []
+
         for rel_path in _MONITORED_FILES:
             prev = baseline.get(rel_path)
             curr = current.get(rel_path)

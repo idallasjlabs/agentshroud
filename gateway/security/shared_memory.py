@@ -164,7 +164,16 @@ class SharedMemoryManager:
             raw = self.get_group_memory(gid)
             if not raw.strip():
                 continue
-            filtered = raw if is_owner else self._strip_private_content(raw)
+            if is_owner:
+                filtered = raw
+            else:
+                if self.contains_private_content(raw):
+                    logger.warning(
+                        "SharedMemory AUDIT: private content detected in group memory — "
+                        "redacting before serving to non-owner: user=%s group=%s",
+                        user_id, gid,
+                    )
+                filtered = self._strip_private_content(raw)
             if filtered.strip():
                 parts.append(f"[GROUP MEMORY — {group.name}]\n{filtered}")
 
@@ -214,7 +223,16 @@ class SharedMemoryManager:
             raw = self.get_group_memory(gid)
             if not raw.strip():
                 continue
-            filtered = raw if is_owner else self._strip_private_content(raw)
+            if is_owner:
+                filtered = raw
+            else:
+                if self.contains_private_content(raw):
+                    logger.warning(
+                        "SharedMemory AUDIT: private content detected in group memory — "
+                        "redacting before serving to non-owner: user=%s group=%s",
+                        user_id, gid,
+                    )
+                filtered = self._strip_private_content(raw)
             if filtered.strip():
                 parts.append(f"[GROUP MEMORY — {group.name}]\n{filtered}")
 

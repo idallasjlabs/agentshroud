@@ -487,3 +487,103 @@ async def test_manage_scan_all_endpoint(client, auth_headers):
     assert "summaries" in data
     assert "clamav" in data["results"]
     assert "trivy" in data["results"]
+
+
+# ---------------------------------------------------------------------------
+# V9-3: /soc/v1/scanners/recent endpoint (live app_state history)
+# ---------------------------------------------------------------------------
+
+_SOC_TEST_TOKEN = "test-token-12345"
+_SOC_AUTH_HEADERS = {"Authorization": f"Bearer {_SOC_TEST_TOKEN}"}
+
+
+@pytest.mark.asyncio
+async def test_soc_scanners_recent_empty(client):
+    """Returns empty result when scanner_result_history is empty."""
+    app_state.scanner_result_history = []
+    with patch("gateway.soc.auth._get_config_token", return_value=_SOC_TEST_TOKEN):
+        resp = await client.get("/soc/v1/scanners/recent", headers=_SOC_AUTH_HEADERS)
+    assert resp.status_code == 200
+    data = resp.json()
+    assert data["count"] == 0
+    assert data["items"] == []
+    assert data["totals"]["critical"] == 0
+
+
+@pytest.mark.asyncio
+async def test_soc_scanners_recent_returns_history(client):
+    """Returns scanner events from app_state.scanner_result_history."""
+    app_state.scanner_result_history = [
+        {
+            "timestamp": "2026-01-01T00:00:00Z",
+            "scanner": "trivy",
+            "target": "fs",
+            "summary": {"status": "critical", "critical": 1, "high": 0, "findings": 1},
+            "result": {},
+        },
+        {
+            "timestamp": "2026-01-01T00:01:00Z",
+            "scanner": "clamav",
+            "target": "/app",
+            "summary": {"status": "clean", "critical": 0, "high": 0, "findings": 0},
+            "result": {},
+        },
+    ]
+    with patch("gateway.soc.auth._get_config_token", return_value=_SOC_TEST_TOKEN):
+        resp = await client.get("/soc/v1/scanners/recent", headers=_SOC_AUTH_HEADERS)
+    assert resp.status_code == 200
+    data = resp.json()
+    assert data["count"] == 2
+    assert data["totals"]["critical"] == 1
+    assert data["totals"]["findings"] == 1
+
+
+@pytest.mark.asyncio
+async def test_soc_scanners_recent_status_filter(client):
+    """Status query param filters by summary.status."""
+    app_state.scanner_result_history = [
+        {
+            "timestamp": "2026-01-01T00:00:00Z",
+            "scanner": "trivy",
+            "target": "fs",
+            "summary": {"status": "critical", "critical": 2, "high": 0, "findings": 2},
+            "result": {},
+        },
+        {
+            "timestamp": "2026-01-01T00:01:00Z",
+            "scanner": "clamav",
+            "target": "/app",
+            "summary": {"status": "clean", "critical": 0, "high": 0, "findings": 0},
+            "result": {},
+        },
+    ]
+    with patch("gateway.soc.auth._get_config_token", return_value=_SOC_TEST_TOKEN):
+        resp = await client.get(
+            "/soc/v1/scanners/recent",
+            headers=_SOC_AUTH_HEADERS,
+            params={"status": "critical"},
+        )
+    assert resp.status_code == 200
+    data = resp.json()
+    assert data["count"] == 1
+    assert data["items"][0]["scanner"] == "trivy"
+
+
+@pytest.mark.asyncio
+async def test_soc_scanners_recent_limit(client):
+    """Limit param caps the number of returned items."""
+    app_state.scanner_result_history = [
+        {"timestamp": f"2026-01-01T00:0{i}:00Z", "scanner": "trivy",
+         "summary": {"status": "clean", "critical": 0, "high": 0, "findings": 0},
+         "result": {}}
+        for i in range(5)
+    ]
+    with patch("gateway.soc.auth._get_config_token", return_value=_SOC_TEST_TOKEN):
+        resp = await client.get(
+            "/soc/v1/scanners/recent",
+            headers=_SOC_AUTH_HEADERS,
+            params={"limit": 2},
+        )
+    assert resp.status_code == 200
+    data = resp.json()
+    assert data["count"] == 2

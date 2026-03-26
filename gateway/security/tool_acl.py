@@ -194,6 +194,8 @@ class ToolACLEnforcer:
         self._rbac = rbac_config
         # C35: sliding window call-time store  { user_id: { tool_name: [timestamps] } }
         self._tool_call_times: Dict[str, Dict[str, List[float]]] = {}
+        # V9-2: per-user denial counter for SOC cross-signal correlation
+        self._denial_counts: Dict[str, int] = {}
 
     def can_use_tool(self, user_id: str, tool_name: str) -> Tuple[bool, str]:
         """Check whether user_id may invoke the named tool.
@@ -212,7 +214,13 @@ class ToolACLEnforcer:
 
         # Private tools: owner-only
         if tool_lower in self._acl.effective_private:
-            return False, f"tool '{tool_name}' is owner-private and cannot be used by {role_value}"
+            reason = f"tool '{tool_name}' is owner-private and cannot be used by {role_value}"
+            logger.warning(
+                "ToolACL DENIED private-tier tool: user=%s role=%s tool=%s tier=PRIVATE",
+                user_id, role_value, tool_name,
+            )
+            self._denial_counts[user_id] = self._denial_counts.get(user_id, 0) + 1
+            return False, reason
 
         # Admin+: access to admin tools
         if role_value == "admin":
@@ -228,7 +236,13 @@ class ToolACLEnforcer:
         # Collaborator/Viewer: restricted
         if role_value in ("collaborator", "viewer", "operator"):
             if tool_lower in self._acl.effective_admin:
-                return False, f"tool '{tool_name}' requires admin role"
+                reason = f"tool '{tool_name}' requires admin role"
+                logger.warning(
+                    "ToolACL DENIED admin-tier tool: user=%s role=%s tool=%s tier=ADMIN",
+                    user_id, role_value, tool_name,
+                )
+                self._denial_counts[user_id] = self._denial_counts.get(user_id, 0) + 1
+                return False, reason
 
             # Check group allowlist override
             group_allowed = self._get_group_tool_allowlist(user_id)
@@ -239,12 +253,24 @@ class ToolACLEnforcer:
                 return True, "tool in collaborator allowlist"
 
             if self._acl.deny_unknown_tools:
-                return False, f"tool '{tool_name}' not in collaborator allowlist (deny_unknown_tools=True)"
+                reason = f"tool '{tool_name}' not in collaborator allowlist (deny_unknown_tools=True)"
+                logger.warning(
+                    "ToolACL DENIED unknown tool: user=%s role=%s tool=%s policy=deny_unknown",
+                    user_id, role_value, tool_name,
+                )
+                self._denial_counts[user_id] = self._denial_counts.get(user_id, 0) + 1
+                return False, reason
 
             return True, "unknown tool not denied (deny_unknown_tools=False)"
 
         # Unknown role: deny
-        return False, f"unknown role '{role_value}' — denying by default"
+        reason = f"unknown role '{role_value}' — denying by default"
+        logger.warning(
+            "ToolACL DENIED unknown role: user=%s role=%s tool=%s",
+            user_id, role_value, tool_name,
+        )
+        self._denial_counts[user_id] = self._denial_counts.get(user_id, 0) + 1
+        return False, reason
 
     def get_allowed_tools(self, user_id: str) -> List[str]:
         """Return the list of tools the user is allowed to use (union of all sets)."""
@@ -275,6 +301,10 @@ class ToolACLEnforcer:
             return sorted(self._acl.effective_private)
 
         return sorted(self._acl.effective_private | self._acl.effective_admin)
+
+    def get_denial_counts(self) -> Dict[str, int]:
+        """Return per-user tool denial counts since last restart (V9-2: SOC correlation)."""
+        return dict(self._denial_counts)
 
     # ── C35: Per-Tool Rate Limiting ───────────────────────────────────────────
 

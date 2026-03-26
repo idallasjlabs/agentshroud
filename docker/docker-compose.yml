@@ -57,7 +57,6 @@ services:
       - PYTHONDONTWRITEBYTECODE=1
       - PYTHONPYCACHEPREFIX=/tmp/pycache
       - AGENTSHROUD_EGRESS_APPROVAL_ALL=false
-      - TRIVY_CACHE_DIR=/app/data/trivy-cache
       - GATEWAY_AUTH_TOKEN_FILE=/run/secrets/gateway_password
       - OP_SERVICE_ACCOUNT_TOKEN_FILE=/run/secrets/1password_service_account
       - PROXY_ALLOWED_NETWORKS=10.254.110.0/24,10.254.111.0/24,10.254.112.0/24
@@ -74,7 +73,7 @@ services:
       - AGENTSHROUD_COMPOSE_DIR=/Users/agentshroud-bot/Development/agentshroud
       - TRIVY_CACHE_DIR=/var/log/security/.trivy-cache
       # Group chat: bot @handle (without @) for at-mention-only filtering in groups
-      - TELEGRAM_BOT_USERNAME=${TELEGRAM_BOT_USERNAME:-}
+      - TELEGRAM_BOT_USERNAME=${TELEGRAM_BOT_USERNAME:-agentshroud_bot}
       # Group chat: set to Telegram group/supergroup chat ID to bind → group-project agent
       - AGENTSHROUD_GROUP_CHAT_ID=${AGENTSHROUD_GROUP_CHAT_ID:-}
     group_add:
@@ -238,6 +237,10 @@ services:
       timeout: 10s
       retries: 3
       start_period: 60s
+    # Bot resolves DNS via corporate servers (same as gateway — prevents DNS outage drops)
+    dns:
+      - 192.168.7.45
+      - 192.168.7.1
     networks:
       - agentshroud-internal
       - agentshroud-isolated
