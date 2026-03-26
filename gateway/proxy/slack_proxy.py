@@ -78,6 +78,9 @@ class SlackAPIProxy:
         # Consumed (popped) by the /slack-ws-relay WebSocket endpoint.
         self._relay_tokens: dict[str, str] = {}
 
+        # Map str(channel) → (correlation_id, timestamp) for inbound→outbound pairing (TTL 5 min)
+        self._last_inbound_corr: dict[str, tuple] = {}
+
         self._stats: dict[str, int] = {
             "outbound_forwarded": 0,
             "outbound_blocked": 0,
@@ -203,12 +206,15 @@ class SlackAPIProxy:
                     import json as _json
                     _text = _json.dumps(_text)
                 if _channel and _text:
+                    _corr_pair = self._last_inbound_corr.get(str(_channel))
+                    _out_corr_id = _corr_pair[0] if _corr_pair else None
                     self.tracker.record_activity(
                         user_id=str(_channel),
                         username="bot",
                         message_preview=str(_text)[:80],
                         source="slack",
                         direction="outbound",
+                        correlation_id=_out_corr_id,
                     )
             except Exception as _se:
                 logger.debug("Slack outbound tracker error (non-fatal): %s", _se)
@@ -285,12 +291,23 @@ class SlackAPIProxy:
             return
         if self.tracker:
             try:
+                import time as _time_mod
+                _ts_id = str(event.get("ts", _time_mod.time())).replace(".", "")
+                _corr_id = f"{user_id}:{_ts_id}"
+                _now = _time_mod.time()
+                self._last_inbound_corr = {
+                    k: v for k, v in self._last_inbound_corr.items()
+                    if _now - v[1] < 300
+                }
+                channel = event.get("channel", user_id)
+                self._last_inbound_corr[str(channel)] = (_corr_id, _now)
                 self.tracker.record_activity(
                     user_id=user_id,
                     username=user_id,
                     message_preview=text[:80],
                     source="slack",
                     direction="inbound",
+                    correlation_id=_corr_id,
                 )
             except Exception as exc:
                 logger.debug("Slack handle_event tracker error (non-fatal): %s", exc)

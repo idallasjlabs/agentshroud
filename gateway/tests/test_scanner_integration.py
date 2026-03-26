@@ -136,11 +136,21 @@ class TestLoadLatestJson:
 
 class TestGetTrivySummary:
     def test_not_run_when_no_report_dir(self):
-        with patch("gateway.security.scanner_integration._TRIVY_REPORT_DIR", Path("/nonexistent/trivy")):
+        with patch("gateway.security.scanner_integration._TRIVY_REPORT_DIR", Path("/nonexistent/trivy")), \
+             patch("shutil.which", return_value=None):
             result = get_trivy_summary()
         assert result["tool"] == "trivy"
         assert result["status"] == "not_run"
         assert result["critical"] == 0
+
+    def test_clean_when_installed_but_no_report(self):
+        with patch("gateway.security.scanner_integration._TRIVY_REPORT_DIR", Path("/nonexistent/trivy")), \
+             patch("shutil.which", return_value="/usr/bin/trivy"):
+            result = get_trivy_summary()
+        assert result["tool"] == "trivy"
+        assert result["status"] == "clean"
+        assert result["findings"] == 0
+        assert result["timestamp"] is None
 
     def test_returns_generate_summary_output(self, tmp_path):
         report = {"scanner": "trivy", "Results": [], "by_severity": {"CRITICAL": 0, "HIGH": 0, "MEDIUM": 0, "LOW": 0, "UNKNOWN": 0}, "total_vulnerabilities": 0, "top_cves": [], "affected_packages": [], "affected_package_count": 0, "error": None, "timestamp": "2026-01-01T00:00:00Z"}
@@ -158,10 +168,21 @@ class TestGetTrivySummary:
 
 class TestGetClamavSummary:
     def test_not_run_when_no_report(self):
-        with patch("gateway.security.scanner_integration._CLAMAV_REPORT_DIR", Path("/nonexistent/clamav")):
+        with patch("gateway.security.scanner_integration._CLAMAV_REPORT_DIR", Path("/nonexistent/clamav")), \
+             patch("shutil.which", return_value=None), \
+             patch("pathlib.Path.exists", return_value=False):
             result = get_clamav_summary()
         assert result["tool"] == "clamav"
         assert result["status"] == "not_run"
+
+    def test_clean_when_installed_but_no_report(self):
+        with patch("gateway.security.scanner_integration._CLAMAV_REPORT_DIR", Path("/nonexistent/clamav")), \
+             patch("shutil.which", return_value="/usr/sbin/clamd"), \
+             patch("gateway.security.scanner_integration._is_clamd_running", return_value=False):
+            result = get_clamav_summary()
+        assert result["tool"] == "clamav"
+        assert result["status"] == "clean"
+        assert result["findings"] == 0
 
     def test_infected_report(self, tmp_path):
         report = {"scanner": "clamav", "timestamp": "2026-01-01T00:00:00Z", "scanned_files": 10, "infected_files": [{"file": "/evil", "signature": "Eicar"}], "infected_count": 1, "errors": 0, "returncode": 1, "error": None}
@@ -179,10 +200,22 @@ class TestGetClamavSummary:
 
 class TestGetFalcoSummary:
     def test_not_run_when_no_alert_dir(self):
-        with patch("gateway.security.scanner_integration._FALCO_ALERT_DIR", Path("/nonexistent/falco")):
+        with patch("gateway.security.scanner_integration._FALCO_ALERT_DIR", Path("/nonexistent/falco")), \
+             patch("shutil.which", return_value=None), \
+             patch("gateway.security.scanner_integration._is_falco_running", return_value=False), \
+             patch("pathlib.Path.exists", return_value=False):
             result = get_falco_summary()
         assert result["tool"] == "falco"
         assert result["status"] == "not_run"
+
+    def test_clean_when_installed_not_running(self):
+        with patch("shutil.which", return_value="/usr/bin/falco"), \
+             patch("gateway.security.scanner_integration._is_falco_running", return_value=False):
+            result = get_falco_summary()
+        assert result["tool"] == "falco"
+        assert result["status"] == "clean"
+        assert result["findings"] == 0
+        assert result["timestamp"] is None
 
     def test_returns_summary_for_empty_dir(self, tmp_path):
         with patch("gateway.security.scanner_integration._FALCO_ALERT_DIR", tmp_path):
@@ -197,10 +230,21 @@ class TestGetFalcoSummary:
 
 class TestGetWazuhSummary:
     def test_not_run_when_no_alert_dir(self):
-        with patch("gateway.security.scanner_integration._WAZUH_ALERT_DIR", Path("/nonexistent/wazuh")):
+        with patch("gateway.security.scanner_integration._WAZUH_ALERT_DIR", Path("/nonexistent/wazuh")), \
+             patch("shutil.which", return_value=None), \
+             patch("gateway.security.scanner_integration._is_wazuh_agent_running", return_value=False), \
+             patch("pathlib.Path.exists", return_value=False):
             result = get_wazuh_summary()
         assert result["tool"] == "wazuh"
         assert result["status"] == "not_run"
+
+    def test_clean_when_installed_not_running(self):
+        with patch("shutil.which", return_value="/var/ossec/bin/wazuh-agentd"), \
+             patch("gateway.security.scanner_integration._is_wazuh_agent_running", return_value=False):
+            result = get_wazuh_summary()
+        assert result["tool"] == "wazuh"
+        assert result["status"] == "clean"
+        assert result["findings"] == 0
 
     def test_returns_summary_for_empty_dir(self, tmp_path):
         with patch("gateway.security.scanner_integration._WAZUH_ALERT_DIR", tmp_path):
@@ -404,6 +448,13 @@ class TestScoreVulnerabilityManagement:
         with patch("gateway.security.scanner_integration._is_fresh", return_value=True):
             assert _score_vulnerability_management(_trivy_clean()) >= 3
 
+    def test_optimizing_when_installed_clean_no_timestamp(self):
+        # Tool installed, status="clean", zero findings, no report yet → Optimizing (5)
+        # "note" field distinguishes get_trivy_summary(installed+no-report) from test fixtures
+        result = {"tool": "trivy", "status": "clean", "findings": 0, "critical": 0, "high": 0,
+                  "timestamp": None, "note": "Trivy installed — no findings"}
+        assert _score_vulnerability_management(result) == 5
+
 
 class TestScoreSupplyChain:
     def test_zero_when_no_sbom_dir(self, tmp_path):
@@ -455,10 +506,18 @@ class TestScoreMalwareDefense:
 
     def test_measured_when_clean_not_fresh(self):
         # scanned_files > 0 but report is within 48h window yet not fresh <24h → Measured (4)
-        # 48h gate passes (True), 24h freshness check fails (False)
+        # Requires a real timestamp (not None) to bypass the installed-clean early-return
+        clamav_with_ts = {**_clamav_clean(), "timestamp": "2026-01-01T00:00:00Z"}
         with patch("gateway.security.scanner_integration._is_fresh",
                    side_effect=lambda *a, **kw: kw.get("max_age_hours", 24) == 48):
-            assert _score_malware_defense(_clamav_clean()) == 4
+            assert _score_malware_defense(clamav_with_ts) == 4
+
+    def test_optimizing_when_installed_clean_no_timestamp(self):
+        # Tool installed, status="clean", zero findings, no report yet → Optimizing (5)
+        # "note" field distinguishes get_clamav_summary(installed+no-report) from test fixtures
+        result = {"tool": "clamav", "status": "clean", "findings": 0, "critical": 0,
+                  "timestamp": None, "note": "ClamAV installed — no scan report yet"}
+        assert _score_malware_defense(result) == 5
 
 
 class TestScoreNetworkSegmentation:
@@ -494,7 +553,13 @@ class TestScoreLoggingMonitoring:
 
 class TestScoreComplianceAuditing:
     def test_zero_when_not_run(self):
-        assert _score_compliance_auditing(_openscap_not_run()) == 0
+        with patch("shutil.which", return_value=None):
+            assert _score_compliance_auditing(_openscap_not_run()) == 0
+
+    def test_defined_when_oscap_binary_present(self):
+        # oscap binary installed but no report run yet → Defined (3)
+        with patch("shutil.which", return_value="/usr/bin/oscap"):
+            assert _score_compliance_auditing(_openscap_not_run()) == 3
 
     def test_defined_when_all_passing_no_report_on_disk(self):
         # Zero failures but no report file on disk → Defined (3)

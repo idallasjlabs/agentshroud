@@ -329,6 +329,8 @@ class TelegramAPIProxy:
         # Map str(chat_id) → user_id for known collaborators. Used to attribute
         # outbound bot sendMessage calls to the correct collaborator in activity logs.
         self._collaborator_chat_ids: dict[str, str] = {}
+        # Map str(chat_id) → (correlation_id, timestamp) for inbound→outbound pairing
+        self._last_inbound_corr: dict[str, tuple] = {}
         self._pending_collaborator_request_cooldown_seconds = float(
             os.environ.get("AGENTSHROUD_COLLAB_REQUEST_COOLDOWN_SECONDS", "90.0")
         )
@@ -2406,12 +2408,15 @@ class TelegramAPIProxy:
                     from gateway.ingest_api.state import app_state as _app_state
                     _tracker = getattr(_app_state, "collaborator_tracker", None)
                     if _tracker:
+                        _corr_pair = self._last_inbound_corr.get(_out_chat_id)
+                        _out_corr_id = _corr_pair[0] if _corr_pair else None
                         _tracker.record_activity(
                             user_id=_collab_uid,
                             username="bot",
                             message_preview=_response_text[:80],
                             source="telegram",
                             direction="outbound",
+                            correlation_id=_out_corr_id,
                         )
             except Exception as _ote:
                 logger.debug("Outbound collab response tracking error (non-fatal): %s", _ote)
@@ -3681,26 +3686,36 @@ class TelegramAPIProxy:
             # push-mode webhooks which are not used in this deployment.
             # Track all non-owner users; tracker policy decides whether unknown
             # users are auto-enrolled (track_unknown_non_owner).
-            if not is_owner:
-                try:
-                    from gateway.ingest_api.state import app_state as _app_state
-                    _tracker = getattr(_app_state, "collaborator_tracker", None)
-                    if _tracker:
-                        sender = message.get("from", {})
-                        _telegram_name = sender.get("first_name") or (
-                            f"@{sender['username']}" if sender.get("username") else "unknown"
-                        )
-                        _resolved = self._resolve_display_name(user_id)
-                        _username = _resolved if _resolved != user_id else _telegram_name
-                        _tracker.record_activity(
-                            user_id=user_id,
-                            username=_username,
-                            message_preview=text[:80],
-                            source="telegram",
-                            direction="inbound",
-                        )
-                except Exception as _te:
-                    logger.debug("Collaborator tracker error (non-fatal): %s", _te)
+            try:
+                from gateway.ingest_api.state import app_state as _app_state
+                _tracker = getattr(_app_state, "collaborator_tracker", None)
+                if _tracker and (not is_owner or is_owner):  # track owner and collaborators
+                    sender = message.get("from", {})
+                    _telegram_name = sender.get("first_name") or (
+                        f"@{sender['username']}" if sender.get("username") else "unknown"
+                    )
+                    _resolved = self._resolve_display_name(user_id)
+                    _username = _resolved if _resolved != user_id else _telegram_name
+                    _msg_id = message.get("message_id", int(time.time()))
+                    _corr_id = f"{user_id}:{_msg_id}"
+                    # Store correlation for outbound pairing (TTL: evict entries older than 5 min)
+                    import time as _time_mod
+                    _now = _time_mod.time()
+                    self._last_inbound_corr = {
+                        k: v for k, v in self._last_inbound_corr.items()
+                        if _now - v[1] < 300
+                    }
+                    self._last_inbound_corr[str(chat_id)] = (_corr_id, _now)
+                    _tracker.record_activity(
+                        user_id=user_id,
+                        username=_username,
+                        message_preview=text[:80],
+                        source="telegram",
+                        direction="inbound",
+                        correlation_id=_corr_id,
+                    )
+            except Exception as _te:
+                logger.debug("Collaborator tracker error (non-fatal): %s", _te)
 
             # Register collaborator chat_id → user_id for outbound response attribution
             if is_collaborator and chat_id:
@@ -6596,12 +6611,15 @@ class TelegramAPIProxy:
                     if _tracker:
                         _collab_uid = self._collaborator_chat_ids.get(str(chat_id))
                         if _collab_uid:
+                            _corr_pair = self._last_inbound_corr.get(str(chat_id))
+                            _local_corr_id = _corr_pair[0] if _corr_pair else None
                             _tracker.record_activity(
                                 user_id=_collab_uid,
                                 username="bot",
                                 message_preview=(msg or _COLLABORATOR_UNAVAILABLE_NOTICE)[:80],
                                 source="telegram",
                                 direction="outbound",
+                                correlation_id=_local_corr_id,
                             )
                 except Exception as _te:
                     logger.debug("Outbound local-response tracker error (non-fatal): %s", _te)

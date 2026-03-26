@@ -3,7 +3,7 @@
 from __future__ import annotations
 
 import json
-from unittest.mock import AsyncMock, MagicMock, patch
+from unittest.mock import ANY, AsyncMock, MagicMock, patch
 
 import pytest
 
@@ -480,6 +480,7 @@ class TestHandleEvent:
             message_preview="hello from slack",
             source="slack",
             direction="inbound",
+            correlation_id=ANY,
         )
 
     @pytest.mark.asyncio
