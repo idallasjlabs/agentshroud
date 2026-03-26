@@ -616,9 +616,17 @@ async def lifespan(app: FastAPI):
             collaborator_ids=_rbac_cfg.collaborator_user_ids,
             contributor_log_dir=_tracker_contrib_dir,
         )
-        # Prune test-fixture user IDs that leaked into the production log
-        # (numeric-string IDs < 1000 or matching test_user_* patterns).
-        _known_test_ids = {"42", "99", "123456789", "5555555555"}
+        # Prune test-fixture user IDs that leaked into the production log.
+        # Heuristic: Telegram UIDs are always 9-10+ digits; any UID < 10000 is a test fixture.
+        # Also prune known test IDs and env-configured additional IDs.
+        _known_test_ids = {
+            "42", "99", "999", "123456789", "1234567890",
+            "5555555555", "7614658048", "8506022825", "9999999",
+        }
+        # Allow operators to add IDs via env var without a code change
+        _extra_prune = _os.environ.get("AGENTSHROUD_PRUNE_TEST_IDS", "")
+        if _extra_prune:
+            _known_test_ids.update(x.strip() for x in _extra_prune.split(",") if x.strip())
         if not _os.environ.get("PYTEST_CURRENT_TEST") and _tracker_log_path.exists():
             try:
                 import json as _jlog
@@ -629,8 +637,11 @@ async def lifespan(app: FastAPI):
                         _entry = _jlog.loads(_ln)
                         _uid = str(_entry.get("user_id", ""))
                         _uname = str(_entry.get("username", ""))
+                        # Short numeric IDs (< 10000) are never real Telegram UIDs
+                        _is_short_numeric = _uid.isdigit() and int(_uid) < 10000
                         if (
                             _uid in _known_test_ids
+                            or _is_short_numeric
                             or _uid.startswith("test_")
                             or _uname.startswith("test_")
                         ):

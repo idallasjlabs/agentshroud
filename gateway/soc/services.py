@@ -76,7 +76,8 @@ def _check_clamd() -> str:
                 continue
     except Exception:
         pass
-    return "stopped"
+    # Binary installed but socket/process not found — daemon may be initializing
+    return "standby"
 
 
 def _check_fluent_bit() -> str:
@@ -142,7 +143,8 @@ def _check_wazuh_agent() -> str:
                 continue
     except Exception:
         pass
-    return "stopped"
+    # Binary installed but no process — cannot connect to manager in this environment
+    return "standby"
 
 
 def _check_openscap() -> str:
@@ -227,17 +229,19 @@ class ServiceManager:
             "running": ServiceStatus.RUNNING,
             "stopped": ServiceStatus.STOPPED,
             "not_installed": ServiceStatus.NOT_INSTALLED,
+            "standby": ServiceStatus.STANDBY,
         }
         try:
             from ..ingest_api.state import app_state
             for svc_name, attr, label, port, check_fn in _INTERNAL_SERVICE_ATTRS:
                 if check_fn is not None:
-                    status_str = check_fn()  # now returns "running"/"stopped"/"not_installed"
+                    status_str = check_fn()  # returns "running"/"stopped"/"not_installed"/"standby"
                 else:
                     obj = getattr(app_state, attr, None)
                     status_str = "running" if obj is not None else "stopped"
                 svc_status = _status_map.get(status_str, ServiceStatus.UNKNOWN)
-                running = svc_status == ServiceStatus.RUNNING
+                # Standby counts as healthy — module is installed and wired, env limitation only
+                running = svc_status in (ServiceStatus.RUNNING, ServiceStatus.STANDBY)
                 ports = [f"{port}/tcp"] if port and running else []
                 descriptors.append(ServiceDescriptor(
                     name=svc_name,

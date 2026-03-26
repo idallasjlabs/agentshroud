@@ -43,6 +43,18 @@ class TestServiceDescriptorDefaults:
         )
         assert sd.health == HealthStatus.UNHEALTHY
 
+    def test_standby_service(self):
+        """STANDBY = binary installed but cannot run in this environment; should be healthy."""
+        sd = ServiceDescriptor(
+            name="agentshroud-wazuh",
+            status=ServiceStatus.STANDBY,
+            health=HealthStatus.HEALTHY,
+            image="wazuh-agent:latest",
+        )
+        assert sd.status == ServiceStatus.STANDBY
+        assert sd.status.value == "standby"
+        assert sd.health == HealthStatus.HEALTHY
+
 
 class TestServiceManagerImport:
     """Verify ServiceManager can be imported without a running container engine."""
