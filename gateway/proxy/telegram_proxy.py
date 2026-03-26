@@ -4870,6 +4870,20 @@ class TelegramAPIProxy:
             # ── Collaborator command blocking ─────────────────────────────────
             # Block owner-only slash commands before they reach the bot.
             if is_collaborator and chat_id:
+                # ── Group chat context pass-through ──────────────────────────
+                # In group chats, ALL messages are forwarded to the bot so it
+                # can maintain conversational context.  The DM-focused content
+                # guards below (blocked commands, file queries, local_only) are
+                # not applied to group messages; response suppression is handled
+                # on the outbound side via _group_response_eligible.
+                if (
+                    self._group_mention_only
+                    and self._bot_username
+                    and self._is_group_message(message)
+                ):
+                    filtered_updates.append(update)
+                    continue
+
                 cmd_base = self._normalize_command_token(text)
                 if cmd_base in _COLLABORATOR_BLOCKED_COMMANDS:
                     self._stats["messages_blocked"] += 1
@@ -6547,6 +6561,19 @@ class TelegramAPIProxy:
         try:
             if self._bot_token:
                 msg = self._build_collaborator_safe_info_response(prompt)
+                # V9-4: Apply per-group safe_response_prefix if operator configured one.
+                try:
+                    from gateway.ingest_api.state import app_state as _gs
+                    _rbac = getattr(_gs, 'rbac_config', None)
+                    _teams = getattr(_rbac, 'teams_config', None) if _rbac else None
+                    if _teams:
+                        _uid = self._collaborator_chat_ids.get(str(chat_id))
+                        if _uid:
+                            _pfx = _teams.get_group_safe_response_prefix(_uid)
+                            if _pfx:
+                                msg = _pfx + "\n\n" + msg
+                except Exception:
+                    pass  # Never block delivery on prefix lookup failure
                 sent = await self._send_telegram_text(chat_id, msg, retries=2)
                 if not sent:
                     await self._send_telegram_text(

@@ -5,10 +5,11 @@ Builds a compact cross-signal security view by correlating:
 - egress denials/attempts
 - quarantined blocked messages
 - Wazuh and Falco alerts
+- tool ACL denials (V9-2: per-user cross-signal correlation)
 """
 from __future__ import annotations
 
-from dataclasses import asdict, dataclass
+from dataclasses import asdict, dataclass, field
 from collections import Counter
 from datetime import datetime, timezone
 from typing import Any
@@ -33,6 +34,9 @@ class CorrelationSummary:
     scanner_findings: dict[str, Any]
     scanner_recent_critical_events: int
     correlated_findings: list[dict[str, Any]]
+    # V9-2: per-user cross-signal risk map + operator-ready summary
+    per_user_risk: list[dict[str, Any]] = field(default_factory=list)
+    operator_summary: list[str] = field(default_factory=list)
 
     def to_dict(self) -> dict[str, Any]:
         return asdict(self)
@@ -81,6 +85,17 @@ def build_correlation_summary(app_state, limit: int = 200) -> CorrelationSummary
             falco_alerts = len(alerts[-limit:])
         except Exception:
             falco_alerts = 0
+
+    # V9-2: Tool ACL denial counts — per-user tool access violations
+    tool_acl_denials: Counter[str] = Counter()
+    tool_acl_enforcer = getattr(app_state, "tool_acl_enforcer", None)
+    if tool_acl_enforcer is not None and hasattr(tool_acl_enforcer, "get_denial_counts"):
+        try:
+            for uid, count in tool_acl_enforcer.get_denial_counts().items():
+                tool_acl_denials[uid] += count
+                denied_agents[uid] += count
+        except Exception:
+            pass
 
     private_data_policy_violations = 0
     private_data_redactions = 0
@@ -200,6 +215,58 @@ def build_correlation_summary(app_state, limit: int = 200) -> CorrelationSummary
             }
         )
 
+    # V9-2: Tool ACL denial correlation rules
+    total_tool_acl_denials = sum(tool_acl_denials.values())
+    if total_tool_acl_denials >= 3:
+        correlated.append(
+            {
+                "type": "repeated_tool_acl_denials",
+                "confidence": "high" if total_tool_acl_denials >= 5 else "medium",
+                "details": f"Tool ACL denials from {len(tool_acl_denials)} user(s): {total_tool_acl_denials} total",
+            }
+        )
+
+    # V9-2: Per-user cross-signal correlation
+    # A user appearing in multiple signal types (egress + tool ACL + quarantine) is a high-confidence indicator
+    # Build per-user signal map from egress log
+    user_egress_denials: Counter[str] = Counter()
+    for a in egress_log:
+        if a.action.value == "deny":
+            user_egress_denials[a.agent_id] += 1
+
+    # Find users that appear in 2+ signal types
+    per_user_risk: list[dict[str, Any]] = []
+    all_signal_users = set(user_egress_denials) | set(tool_acl_denials)
+    for uid in sorted(all_signal_users):
+        egress_count = user_egress_denials.get(uid, 0)
+        acl_count = tool_acl_denials.get(uid, 0)
+        signal_count = (1 if egress_count > 0 else 0) + (1 if acl_count > 0 else 0)
+        if signal_count < 1:
+            continue
+        user_risk = min(100, egress_count * 8 + acl_count * 10)
+        entry = {
+            "user_id": uid,
+            "egress_denials": egress_count,
+            "tool_acl_denials": acl_count,
+            "signal_types": signal_count,
+            "user_risk_score": user_risk,
+        }
+        per_user_risk.append(entry)
+        if signal_count >= 2:
+            correlated.append(
+                {
+                    "type": "multi_signal_user_threat",
+                    "confidence": "high",
+                    "user_id": uid,
+                    "details": (
+                        f"User '{uid}' triggered {signal_count} signal types: "
+                        f"egress_denials={egress_count}, tool_acl_denials={acl_count}"
+                    ),
+                }
+            )
+
+    per_user_risk.sort(key=lambda x: x["user_risk_score"], reverse=True)
+
     risk_score = min(
         100,
         egress_denied * 8
@@ -212,6 +279,7 @@ def build_correlation_summary(app_state, limit: int = 200) -> CorrelationSummary
         + scanner_findings["critical"] * 12
         + scanner_findings["high"] * 6
         + scanner_recent_critical_events * 3
+        + total_tool_acl_denials * 5
         + len(correlated) * 15,
     )
     if risk_score >= 70:
@@ -222,6 +290,31 @@ def build_correlation_summary(app_state, limit: int = 200) -> CorrelationSummary
         severity = "medium"
     else:
         severity = "low"
+
+    # V9-2: Operator-ready summary — plain English bullets for ops runbook
+    operator_summary: list[str] = []
+    if severity in ("critical", "high"):
+        operator_summary.append(f"RISK {severity.upper()} (score {risk_score}/100) — immediate review recommended")
+    if egress_denied > 0:
+        operator_summary.append(f"{egress_denied} outbound egress request(s) blocked")
+    if total_tool_acl_denials > 0:
+        top_violator = tool_acl_denials.most_common(1)
+        violator_str = f" (top offender: {top_violator[0][0]})" if top_violator else ""
+        operator_summary.append(f"{total_tool_acl_denials} tool ACL violation(s){violator_str}")
+    if quarantined_messages > 0:
+        operator_summary.append(f"{quarantined_messages} inbound message(s) quarantined")
+    if wazuh_alerts > 0:
+        operator_summary.append(f"{wazuh_alerts} Wazuh host-security alert(s)")
+    if falco_alerts > 0:
+        operator_summary.append(f"{falco_alerts} Falco runtime alert(s)")
+    if scanner_findings["critical"] > 0:
+        operator_summary.append(f"CRITICAL: {scanner_findings['critical']} scanner finding(s) — patch required")
+    multi_signal_users = [e for e in correlated if e.get("type") == "multi_signal_user_threat"]
+    if multi_signal_users:
+        uids = ", ".join(e["user_id"] for e in multi_signal_users[:3])
+        operator_summary.append(f"Multi-signal threat user(s) detected: {uids}")
+    if not operator_summary:
+        operator_summary.append("No active threat signals — system posture normal")
 
     correlated.append(
         {
@@ -253,4 +346,6 @@ def build_correlation_summary(app_state, limit: int = 200) -> CorrelationSummary
         scanner_findings=scanner_findings,
         scanner_recent_critical_events=scanner_recent_critical_events,
         correlated_findings=correlated,
+        per_user_risk=per_user_risk,
+        operator_summary=operator_summary,
     )
