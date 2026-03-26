@@ -98,35 +98,38 @@ class CollaboratorActivityTracker:
         message_preview: str,
         source: str,
         direction: str = "inbound",
+        correlation_id: Optional[str] = None,
     ) -> None:
-        """Append one activity entry if user_id is a tracked collaborator.
-
-        The owner is never logged. Unknown users are silently skipped.
+        """Append one activity entry for any tracked collaborator or the owner.
 
         Args:
             user_id: Telegram/Slack user ID string.
             username: Display name (first_name, @username, or "bot" for outbound).
             message_preview: Message text, truncated to 80 chars for privacy.
             source: Channel (e.g. "telegram", "slack").
-            direction: "inbound" (collaborator→bot) or "outbound" (bot→collaborator).
+            direction: "inbound" (user→bot) or "outbound" (bot→user).
+            correlation_id: Optional ID linking an inbound query to its outbound response.
         """
         uid = str(user_id)
-        if uid == self.owner_user_id:
-            return
-        if uid not in self.collaborator_ids and self.track_unknown_non_owner:
-            self.collaborator_ids.add(uid)
-        if uid not in self.collaborator_ids:
-            return
+        is_owner = uid == self.owner_user_id
+        if not is_owner:
+            if uid not in self.collaborator_ids and self.track_unknown_non_owner:
+                self.collaborator_ids.add(uid)
+            if uid not in self.collaborator_ids:
+                return
 
         normalized_preview = self._normalize_preview(message_preview)
-        entry = {
+        entry: dict = {
             "timestamp": time.time(),
             "user_id": uid,
             "username": self._normalize_username(username),
             "message_preview": normalized_preview[:_PREVIEW_MAX],
             "source": source,
             "direction": direction,
+            "is_owner": is_owner,
         }
+        if correlation_id is not None:
+            entry["correlation_id"] = correlation_id
         try:
             with self.log_path.open("a", encoding="utf-8") as fh:
                 fh.write(json.dumps(entry) + "\n")

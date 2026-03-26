@@ -237,7 +237,7 @@ async function _loadOverview() {
     _eventFeed = events.slice(0, MAX_FEED);
   }
 
-  const running = (health.services || []).filter(s => s.status === 'running').length;
+  const running = (health.services || []).filter(s => s.status === 'running' || s.status === 'standby').length;
   const total   = (health.services || []).length;
   const score   = risk.risk_score ?? '--';
   const level   = risk.level ?? 'low';
@@ -669,8 +669,8 @@ function _renderServices(services) {
   const internals  = services.filter(s => s.is_internal);
 
   const renderCard = s => {
-    const statusCls   = s.status === 'running' ? 'running' : s.status === 'unhealthy' ? 'unhealthy' : 'stopped';
-    const statusBadge = s.status === 'running' ? 'success' : s.status === 'unhealthy' ? 'danger'
+    const statusCls   = (s.status === 'running' || s.status === 'standby') ? 'running' : s.status === 'unhealthy' ? 'unhealthy' : 'stopped';
+    const statusBadge = (s.status === 'running' || s.status === 'standby') ? 'success' : s.status === 'unhealthy' ? 'danger'
                       : s.status === 'not_installed' ? 'muted' : 'warning';
     const healthBadge = s.health === 'healthy' ? 'success' : s.health === 'unhealthy' ? 'danger' : 'muted';
     const statusLabel = s.status === 'not_installed' ? 'not installed' : s.status;
@@ -907,16 +907,20 @@ window._loadActivityLog = async function() {
 
   let url = '/collaborators/activity?limit=0';
   if (userId)    url += `&user_id=${encodeURIComponent(userId)}`;
-  if (direction) url += `&direction=${encodeURIComponent(direction)}`;
+  if (direction === 'owner') {
+    url += '&is_owner=true';
+  } else if (direction) {
+    url += `&direction=${encodeURIComponent(direction)}`;
+  }
 
   const tbody = document.getElementById('activity-tbody');
-  if (tbody) tbody.innerHTML = '<tr><td colspan="6" style="color:var(--text-muted);text-align:center;padding:1rem">Loading…</td></tr>';
+  if (tbody) tbody.innerHTML = '<tr><td colspan="5" style="color:var(--text-muted);text-align:center;padding:1rem">Loading…</td></tr>';
 
   // Defensive timeout: clear "Loading…" if API takes >12s
   const _loadTimeout = setTimeout(() => {
     const t = document.getElementById('activity-tbody');
     if (t && t.innerHTML.includes('Loading')) {
-      t.innerHTML = '<tr><td colspan="6" style="color:var(--text-muted);text-align:center;padding:1rem">No activity data available — tracker may not be initialised.</td></tr>';
+      t.innerHTML = '<tr><td colspan="5" style="color:var(--text-muted);text-align:center;padding:1rem">No activity data available — tracker may not be initialised.</td></tr>';
     }
   }, 12000);
 
@@ -926,15 +930,16 @@ window._loadActivityLog = async function() {
   if (!tbodyEl) return;
 
   if (!ok) {
-    tbodyEl.innerHTML = '<tr><td colspan="6" style="color:var(--danger);text-align:center;padding:1rem">Failed to load activity. Check gateway logs.</td></tr>';
+    tbodyEl.innerHTML = '<tr><td colspan="5" style="color:var(--danger);text-align:center;padding:1rem">Failed to load activity. Check gateway logs.</td></tr>';
     return;
   }
   if (!Array.isArray(data?.entries)) {
-    tbodyEl.innerHTML = '<tr><td colspan="6" style="color:var(--text-muted);text-align:center;padding:1rem">No activity recorded yet.</td></tr>';
+    tbodyEl.innerHTML = '<tr><td colspan="5" style="color:var(--text-muted);text-align:center;padding:1rem">No activity recorded yet.</td></tr>';
     return;
   }
 
-  window._activityAllEntries = data.entries;
+  // Use paired_entries (query+response per row) when available; fall back to flat entries
+  window._activityAllEntries = Array.isArray(data.paired_entries) ? data.paired_entries : data.entries;
   window._activityPage = 0;
 
   // Rebuild user filter with display names (username / uid) preserving selection
@@ -989,12 +994,14 @@ window._applyActivitySort = function() {
   const dirFilter = document.getElementById('activity-direction-filter')?.value || '';
   let entries = window._activityAllEntries.slice();
 
-  // Text search filter
+  // Text search filter — works on both flat entries and paired entries
   if (search) {
     entries = entries.filter(e =>
       (e.user_id || '').toLowerCase().includes(search) ||
       (e.username || '').toLowerCase().includes(search) ||
-      (e.message_preview || '').toLowerCase().includes(search) ||
+      (e.message_preview || e.query_preview || e.response_preview || '').toLowerCase().includes(search) ||
+      (e.query_preview || '').toLowerCase().includes(search) ||
+      (e.response_preview || '').toLowerCase().includes(search) ||
       (e.source || '').toLowerCase().includes(search)
     );
   }
@@ -1077,32 +1084,47 @@ function _renderActivityLog(entries, search, dirFilter, totalFiltered) {
     if (search) {
       msg = `No entries match "${_esc(search)}".`;
     } else if (dirFilter === 'outbound') {
-      msg = 'No outbound (bot response) entries yet. Bot responses are recorded when a collaborator is active in the current session.';
+      msg = 'No outbound (bot response) entries yet.';
     } else if (dirFilter === 'inbound') {
       msg = 'No inbound entries match the current filter.';
+    } else if (dirFilter === 'owner') {
+      msg = 'No owner activity recorded yet.';
     } else {
       msg = 'No activity recorded yet. Send a message from a collaborator account to generate entries.';
     }
-    tbody.innerHTML = `<tr><td colspan="6" style="color:var(--text-muted);text-align:center;padding:1rem">${msg}</td></tr>`;
+    tbody.innerHTML = `<tr><td colspan="5" style="color:var(--text-muted);text-align:center;padding:1rem">${msg}</td></tr>`;
     return;
   }
   const lastViewed = parseFloat(sessionStorage.getItem('activityLastViewed') || '0');
   tbody.innerHTML = entries.map(e => {
     const ts = e.timestamp ? new Date(e.timestamp * 1000).toLocaleString() : '—';
     const isNew = lastViewed > 0 && (e.timestamp || 0) > lastViewed;
-    const rowStyle = isNew ? 'background:rgba(99,210,255,0.06)' : '';
-    const dirBadge = e.direction === 'inbound'
-      ? '<span class="badge badge-info">↑ in</span>'
-      : '<span class="badge badge-warning">↓ out</span>';
+    const rowStyle = e.is_owner ? 'background:rgba(99,255,160,0.05)' : (isNew ? 'background:rgba(99,210,255,0.06)' : '');
     const srcBadge = `<span class="badge badge-info">${_esc(e.source || '—')}</span>`;
-    const preview = e.message_preview || '—';
+    // User cell: show user_id + username + owner badge if applicable
+    const ownerBadge = e.is_owner ? ' <span class="badge badge-success" style="font-size:9px">owner</span>' : '';
+    const userCell = `<span style="font-size:11px;font-family:monospace">${_esc(e.user_id || '—')}</span><br><span style="font-size:11px;color:var(--text-muted)">${_esc(e.username || '')}</span>${ownerBadge}`;
+    // Query/Response columns: support both paired_entries (query_preview/response_preview) and flat entries (message_preview + direction)
+    let queryText, responseText;
+    if ('query_preview' in e || 'response_preview' in e) {
+      queryText = e.query_preview || '';
+      responseText = e.response_preview || '';
+    } else {
+      queryText = e.direction === 'inbound' ? (e.message_preview || '') : '';
+      responseText = e.direction === 'outbound' ? (e.message_preview || '') : '';
+    }
+    const queryCell = queryText
+      ? `<span style="font-size:11px" title="${_esc(queryText)}">${_esc(queryText.length > 80 ? queryText.slice(0, 80) + '…' : queryText)}</span>`
+      : '<span style="color:var(--text-muted);font-size:11px">—</span>';
+    const responseCell = responseText
+      ? `<span style="font-size:11px;color:var(--text-muted)" title="${_esc(responseText)}">${_esc(responseText.length > 80 ? responseText.slice(0, 80) + '…' : responseText)}</span>`
+      : '<span style="color:var(--text-muted);font-size:11px">—</span>';
     return `<tr style="${rowStyle}">
       <td style="white-space:nowrap;font-size:11px">${isNew ? '<span style="color:var(--accent);font-weight:700">●</span> ' : ''}${_esc(ts)}</td>
-      <td style="font-size:11px;font-family:monospace">${_esc(e.user_id || '—')}</td>
-      <td>${_esc(e.username || '—')}</td>
-      <td>${dirBadge}</td>
+      <td>${userCell}</td>
+      <td style="max-width:260px;overflow:hidden">${queryCell}</td>
+      <td style="max-width:260px;overflow:hidden">${responseCell}</td>
       <td>${srcBadge}</td>
-      <td style="font-size:11px;max-width:320px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap" title="${_esc(preview)}">${_esc(preview)}</td>
     </tr>`;
   }).join('');
 }
