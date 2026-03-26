@@ -168,3 +168,44 @@ class TestCollabMode:
     def test_unknown_user_returns_local_only(self, teams):
         # Unknown users have no groups — default falls back to "local_only"
         assert teams.get_user_collab_mode("9999999999") == "local_only"
+
+
+# ---------------------------------------------------------------------------
+# V9-4: Per-group safe_response_prefix hook
+# ---------------------------------------------------------------------------
+
+class TestGroupSafeResponsePrefix:
+    def test_no_prefix_by_default(self, teams):
+        # Groups without safe_response_prefix return None
+        result = teams.get_group_safe_response_prefix("8279589982")
+        assert result is None
+
+    def test_prefix_returned_for_member(self, teams):
+        teams.groups["sort"].safe_response_prefix = "Team: SORT Ops"
+        result = teams.get_group_safe_response_prefix("8279589982")
+        assert result == "Team: SORT Ops"
+
+    def test_prefix_not_returned_for_non_member(self, teams):
+        teams.groups["sort"].safe_response_prefix = "Team: SORT Ops"
+        result = teams.get_group_safe_response_prefix("8506022825")  # GSDEA member
+        assert result is None
+
+    def test_unknown_user_returns_none(self, teams):
+        teams.groups["sort"].safe_response_prefix = "Team: SORT Ops"
+        result = teams.get_group_safe_response_prefix("9999999999")
+        assert result is None
+
+    def test_empty_prefix_string_not_returned(self, teams):
+        # Empty strings are falsy — treated as not configured
+        teams.groups["sort"].safe_response_prefix = ""
+        result = teams.get_group_safe_response_prefix("8279589982")
+        assert result is None
+
+    def test_group_config_safe_response_prefix_field(self):
+        # GroupConfig accepts the field and defaults to None
+        g = GroupConfig(name="test")
+        assert g.safe_response_prefix is None
+
+    def test_group_config_safe_response_prefix_set(self):
+        g = GroupConfig(name="ops", safe_response_prefix="Ops Team")
+        assert g.safe_response_prefix == "Ops Team"

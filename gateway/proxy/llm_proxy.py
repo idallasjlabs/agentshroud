@@ -32,10 +32,11 @@ MODEL_MODE = os.environ.get("AGENTSHROUD_MODEL_MODE", "local").lower()
 class LLMProxy:
     """Proxies LLM API calls (Anthropic, OpenAI, Google) through the security pipeline."""
 
-    def __init__(self, pipeline=None, middleware_manager=None, sanitizer=None):
+    def __init__(self, pipeline=None, middleware_manager=None, sanitizer=None, tool_acl_enforcer=None):
         self.pipeline = pipeline
         self.middleware_manager = middleware_manager
         self.sanitizer = sanitizer
+        self.tool_acl_enforcer = tool_acl_enforcer
         self._ssl_context = ssl.create_default_context()
         self._stats = {
             "total_requests": 0,
@@ -141,6 +142,9 @@ class LLMProxy:
         # === OUTBOUND FILTERING ===
         if not is_streaming and status == 200 and resp_body:
             resp_body = await self._filter_outbound(resp_body)
+            # Tool ACL: gate tool_use blocks in Anthropic responses
+            if self.tool_acl_enforcer and user_id != "unknown":
+                resp_body = self._enforce_tool_acl(resp_body, user_id)
         elif is_streaming and status == 200 and resp_body:
             # Streaming responses are fully buffered by urllib before delivery
             resp_body = await self._filter_outbound_streaming(resp_body, user_id=user_id)
@@ -248,6 +252,50 @@ class LLMProxy:
             logger.error(f"LLM proxy outbound filter error: {e}")
 
         return resp_body
+
+    def _enforce_tool_acl(self, resp_body: bytes, user_id: str) -> bytes:
+        """Scan Anthropic tool_use blocks; replace denied tools with a text error block.
+
+        Only acts on non-streaming Anthropic-format responses (content list with
+        tool_use blocks). Silently passes through non-Anthropic or malformed responses.
+        """
+        try:
+            data = json.loads(resp_body)
+        except (json.JSONDecodeError, UnicodeDecodeError):
+            return resp_body
+
+        content = data.get("content")
+        if not isinstance(content, list):
+            return resp_body
+
+        modified = False
+        new_content = []
+        for block in content:
+            if not isinstance(block, dict) or block.get("type") != "tool_use":
+                new_content.append(block)
+                continue
+
+            tool_name = block.get("name", "")
+            allowed, reason = self.tool_acl_enforcer.can_use_tool(user_id, tool_name)
+            if allowed:
+                new_content.append(block)
+            else:
+                logger.warning(
+                    "LLMProxy ToolACL: blocked tool_use for user=%s tool=%s reason=%s",
+                    user_id, tool_name, reason,
+                )
+                # Replace denied tool_use with an informational text block
+                new_content.append({
+                    "type": "text",
+                    "text": f"[AgentShroud] Tool '{tool_name}' is not permitted for your role. {reason}",
+                })
+                modified = True
+
+        if not modified:
+            return resp_body
+
+        data["content"] = new_content
+        return json.dumps(data).encode()
 
     @staticmethod
     def _build_timeout_fallback_response(
@@ -435,28 +483,50 @@ class LLMProxy:
     async def _forward_request(
         self, url: str, body: bytes, headers: dict[str, str]
     ) -> tuple[int, dict, bytes]:
-        """Forward request to the real LLM API provider."""
+        """Forward request to the real LLM API provider.
+
+        Retries up to 3 times on transient API errors (429, 529, 503) with
+        exponential backoff + jitter. Respects Retry-After header when present.
+        """
+        import random
+
         forward_headers = {}
         allowed_headers = (
             "authorization", "x-api-key", "anthropic-version", "anthropic-beta",
             "content-type", "accept", "user-agent", "x-goog-api-key"
         )
-        
         for key, value in headers.items():
             if key.lower() in allowed_headers:
                 forward_headers[key] = value
 
-        req = urllib.request.Request(url, data=body, headers=forward_headers)
-
+        _RETRYABLE = {429, 503, 529}  # 529 = Anthropic "overloaded"
+        _MAX_RETRIES = 3
         loop = asyncio.get_event_loop()
-        try:
-            response = await loop.run_in_executor(
-                None,
-                lambda: urllib.request.urlopen(req, timeout=120, context=self._ssl_context),
-            )
-            resp_body = response.read()
-            resp_headers = dict(response.headers)
-            return response.status, resp_headers, resp_body
-        except urllib.error.HTTPError as e:
-            resp_body = e.read()
-            return e.code, dict(e.headers), resp_body
+
+        for _attempt in range(_MAX_RETRIES + 1):
+            req = urllib.request.Request(url, data=body, headers=forward_headers)
+            try:
+                response = await loop.run_in_executor(
+                    None,
+                    lambda: urllib.request.urlopen(req, timeout=120, context=self._ssl_context),
+                )
+                resp_body = response.read()
+                resp_headers = dict(response.headers)
+                return response.status, resp_headers, resp_body
+            except urllib.error.HTTPError as e:
+                resp_body = e.read()
+                resp_headers = dict(e.headers)
+                if e.code not in _RETRYABLE or _attempt >= _MAX_RETRIES:
+                    return e.code, resp_headers, resp_body
+                # Respect Retry-After header (Anthropic 429 includes it)
+                retry_after_str = resp_headers.get("retry-after") or resp_headers.get("Retry-After", "")
+                try:
+                    wait = max(float(retry_after_str), 1.0)
+                except (ValueError, TypeError):
+                    # Exponential backoff: 2s, 4s, 8s + jitter
+                    wait = (2 ** (_attempt + 1)) + random.uniform(0, 1)
+                logger.warning(
+                    "LLM API returned %s (attempt %d/%d) — retrying in %.1fs",
+                    e.code, _attempt + 1, _MAX_RETRIES, wait,
+                )
+                await asyncio.sleep(wait)

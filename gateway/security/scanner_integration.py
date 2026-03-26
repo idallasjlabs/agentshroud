@@ -451,14 +451,42 @@ def get_clamav_summary() -> Dict[str, Any]:
 
 
 def _is_falco_running() -> bool:
-    """Return True if a falco process is running inside this container."""
+    """Return True if a non-zombie falco process is running inside this container."""
     try:
         for pid_dir in Path("/proc").iterdir():
             if not pid_dir.name.isdigit():
                 continue
-            comm = (pid_dir / "comm").read_text().strip()
-            if comm == "falco":
-                return True
+            try:
+                comm = (pid_dir / "comm").read_text().strip()
+                if comm != "falco":
+                    continue
+                # Exclude zombie processes — they have no driver and cannot protect
+                status_text = (pid_dir / "status").read_text()
+                for line in status_text.splitlines():
+                    if line.startswith("State:"):
+                        if "Z" in line.split(":", 1)[1]:
+                            break  # zombie — skip
+                        return True
+                        break
+            except (OSError, PermissionError):
+                continue
+    except Exception:
+        pass
+    return False
+
+
+def _is_wazuh_agent_running() -> bool:
+    """Return True if wazuh-agentd is running as a local process inside this container."""
+    try:
+        for pid_dir in Path("/proc").iterdir():
+            if not pid_dir.name.isdigit():
+                continue
+            try:
+                comm = (pid_dir / "comm").read_text().strip()
+                if comm in ("wazuh-agentd", "wazuh-agent"):
+                    return True
+            except (OSError, PermissionError):
+                continue
     except Exception:
         pass
     return False
@@ -497,12 +525,17 @@ def get_falco_summary() -> Dict[str, Any]:
 
 
 def get_wazuh_summary() -> Dict[str, Any]:
-    """Return latest Wazuh alert summary from the shared alert volume."""
-    if not _is_container_running("agentshroud-wazuh-agent"):
+    """Return latest Wazuh alert summary from the shared alert volume.
+
+    wazuh-agentd runs as a local process inside the gateway container (not as a
+    separate Docker sidecar), so we check /proc rather than the Docker socket.
+    """
+    if not _is_wazuh_agent_running():
         return {"tool": "wazuh", "status": "not_run", "findings": 0, "critical": 0, "high": 0}
     from .wazuh_client import read_alerts, generate_summary
     if not _WAZUH_ALERT_DIR.exists():
-        return {"tool": "wazuh", "status": "not_run", "findings": 0, "critical": 0, "high": 0}
+        # Agent running but no alerts dir yet — this is a clean state
+        return {"tool": "wazuh", "status": "clean", "findings": 0, "critical": 0, "high": 0}
     alerts = read_alerts(alert_dir=_WAZUH_ALERT_DIR)
     return generate_summary(alerts)
 
@@ -744,8 +777,9 @@ def _score_runtime_protection(falco: Dict[str, Any]) -> int:
 
     1=module exists, 2=running with criticals, 4=running no criticals + actively monitoring,
     5=running no criticals + zero findings (Optimizing).
+    "unavailable" means Falco binary is present but not running (zombie/no eBPF) — score 1.
     """
-    if falco.get("status") == "not_run":
+    if falco.get("status") in ("not_run", "unavailable"):
         return 1
     if falco.get("critical", 0) > 0:
         return 2
