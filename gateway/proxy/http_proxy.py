@@ -278,7 +278,12 @@ class HTTPConnectProxy:
 
         if result_blocked:
             self._stats["blocked"] += 1
-            logger.warning(f"CONNECT blocked: {host}:{port} — {block_reason}")
+            # Known force-blocked domains (e.g. api.telegram.org) are expected — log at DEBUG
+            # to avoid noise in docker logs. Unknown hosts are genuine security signals → WARNING.
+            if host.lower().rstrip(".") in CONNECT_FORCE_BLOCK_DOMAINS:
+                logger.debug(f"CONNECT blocked (expected): {host}:{port} — {block_reason}")
+            else:
+                logger.warning(f"CONNECT blocked: {host}:{port} — {block_reason}")
             writer.write(b"HTTP/1.1 403 Forbidden\r\nContent-Length: 0\r\n\r\n")
             await writer.drain()
             return
