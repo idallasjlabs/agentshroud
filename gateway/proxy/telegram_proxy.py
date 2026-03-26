@@ -340,6 +340,13 @@ class TelegramAPIProxy:
         except Exception:
             self._rbac = None
 
+        # Pre-populate collaborator_chat_ids from RBAC so outbound tracking fires
+        # even if the collaborator hasn't sent an inbound message this session.
+        # In Telegram private chats, chat_id == user_id — safe to pre-seed.
+        if self._rbac:
+            for _uid in self._rbac.collaborator_user_ids:
+                self._collaborator_chat_ids[str(_uid)] = str(_uid)
+
         # Per-user collaborator rate limiter: configurable (default 1000/hour)
         from gateway.ingest_api.auth import RateLimiter
         self._collaborator_rate_limit_max_requests = int(

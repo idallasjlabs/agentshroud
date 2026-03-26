@@ -935,13 +935,19 @@ window._loadActivityLog = async function() {
   }
 
   window._activityAllEntries = data.entries;
+  window._activityPage = 0;
 
-  // Rebuild user filter preserving current selection
+  // Rebuild user filter with display names (username / uid) preserving selection
   if (userEl && !userId) {
     const currentVal = userEl.value;
-    const userIds = [...new Set(data.entries.map(e => e.user_id).filter(Boolean))].sort();
+    const seenUids = [...new Set(data.entries.map(e => e.user_id).filter(Boolean))].sort();
+    const nameMap = {};
+    data.entries.forEach(e => { if (e.user_id && e.username && e.username !== 'unknown') nameMap[e.user_id] = e.username; });
     userEl.innerHTML = '<option value="">All Users</option>' +
-      userIds.map(uid => `<option value="${_esc(uid)}"${uid === currentVal ? ' selected' : ''}>${_esc(uid)}</option>`).join('');
+      seenUids.map(uid => {
+        const label = nameMap[uid] ? `${nameMap[uid]} (${uid})` : uid;
+        return `<option value="${_esc(uid)}"${uid === currentVal ? ' selected' : ''}>${_esc(label)}</option>`;
+      }).join('');
   }
 
   // New-since-last-view badge
@@ -972,11 +978,15 @@ window._loadActivityLog = async function() {
 };
 
 window._filterActivityLocal = function() {
+  window._activityPage = 0;
   window._applyActivitySort();
 };
 
+const _ACTIVITY_PAGE_SIZE = 100;
+
 window._applyActivitySort = function() {
   const search = (document.getElementById('activity-search')?.value || '').toLowerCase();
+  const dirFilter = document.getElementById('activity-direction-filter')?.value || '';
   let entries = window._activityAllEntries.slice();
 
   // Text search filter
@@ -1004,10 +1014,36 @@ window._applyActivitySort = function() {
     return 0;
   });
 
-  _renderActivityLog(entries, search);
+  window._activityFilteredEntries = entries;
+  const page = window._activityPage || 0;
+  const start = page * _ACTIVITY_PAGE_SIZE;
+  const pageEntries = entries.slice(start, start + _ACTIVITY_PAGE_SIZE);
 
+  _renderActivityLog(pageEntries, search, dirFilter, entries.length);
+
+  const totalPages = Math.max(1, Math.ceil(entries.length / _ACTIVITY_PAGE_SIZE));
   const footer = document.getElementById('activity-footer');
-  if (footer) footer.textContent = `Showing ${entries.length} of ${window._activityAllEntries.length} entries`;
+  if (footer) {
+    const showing = entries.length === 0 ? 0 : Math.min(start + _ACTIVITY_PAGE_SIZE, entries.length) - start;
+    const pageInfo = totalPages > 1
+      ? ` &nbsp;|&nbsp; Page ${page + 1} / ${totalPages} &nbsp;`
+        + `<button class="btn btn-sm" onclick="window._activityPagePrev()" ${page === 0 ? 'disabled' : ''}>‹ Prev</button> `
+        + `<button class="btn btn-sm" onclick="window._activityPageNext()" ${page >= totalPages - 1 ? 'disabled' : ''}>Next ›</button>`
+      : '';
+    footer.innerHTML = `Showing ${showing} of ${entries.length} (${window._activityAllEntries.length} total)${pageInfo}`;
+  }
+};
+
+window._activityPagePrev = function() {
+  window._activityPage = Math.max(0, (window._activityPage || 0) - 1);
+  window._applyActivitySort();
+};
+
+window._activityPageNext = function() {
+  const total = (window._activityFilteredEntries || []).length;
+  const maxPage = Math.max(0, Math.ceil(total / _ACTIVITY_PAGE_SIZE) - 1);
+  window._activityPage = Math.min(maxPage, (window._activityPage || 0) + 1);
+  window._applyActivitySort();
 };
 
 window._sortActivity = function(col) {
@@ -1033,13 +1069,20 @@ window._markActivityViewed = function() {
   if (badge) badge.style.display = 'none';
 };
 
-function _renderActivityLog(entries, search) {
+function _renderActivityLog(entries, search, dirFilter, totalFiltered) {
   const tbody = document.getElementById('activity-tbody');
   if (!tbody) return;
   if (!entries || entries.length === 0) {
-    const msg = search
-      ? `No entries match "${_esc(search)}".`
-      : 'No activity recorded yet. Send a message from a collaborator account to generate entries.';
+    let msg;
+    if (search) {
+      msg = `No entries match "${_esc(search)}".`;
+    } else if (dirFilter === 'outbound') {
+      msg = 'No outbound (bot response) entries yet. Bot responses are recorded when a collaborator is active in the current session.';
+    } else if (dirFilter === 'inbound') {
+      msg = 'No inbound entries match the current filter.';
+    } else {
+      msg = 'No activity recorded yet. Send a message from a collaborator account to generate entries.';
+    }
     tbody.innerHTML = `<tr><td colspan="6" style="color:var(--text-muted);text-align:center;padding:1rem">${msg}</td></tr>`;
     return;
   }
