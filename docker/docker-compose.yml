@@ -39,6 +39,7 @@ services:
       - security-reports:/var/log/security
       - /var/run/docker.sock:/var/run/docker.sock:ro
       - wazuh-alerts:/var/ossec/logs/alerts
+      - clamav-db:/var/lib/clamav
     secrets:
       - gateway_password
       - telegram_bot_token
@@ -318,4 +319,6 @@ volumes:
   security-reports:
     driver: local
   wazuh-alerts:
+    driver: local
+  clamav-db:
     driver: local
