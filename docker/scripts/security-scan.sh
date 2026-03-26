@@ -35,21 +35,42 @@ run_trivy() {
         return 1
     fi
 
-    # Try with DB update first; fall back to cached DB if download fails (e.g. VPN blocks ghcr.io)
-    TRIVY_CACHE="${TRIVY_CACHE_DIR:-/var/log/security/.trivy-cache}"
-    mkdir -p "$TRIVY_CACHE"
+    # Use pre-seeded DB baked into the image at /var/lib/trivy (set at build time).
+    # Fall back to /var/log/security/.trivy-cache if the image cache is missing.
+    # On VPN, ghcr.io is blocked — always prefer --skip-db-update with the baked cache.
+    TRIVY_CACHE="${TRIVY_CACHE_DIR:-/var/lib/trivy}"
+    if [ ! -d "$TRIVY_CACHE/db" ]; then
+        TRIVY_CACHE="/var/log/security/.trivy-cache"
+        mkdir -p "$TRIVY_CACHE"
+        log "WARNING: /var/lib/trivy/db missing — using fallback cache at $TRIVY_CACHE"
+    fi
+
+    # Try with pre-seeded cache first (no network needed), then fall back to live download.
     if ! trivy fs --format json --severity CRITICAL,HIGH,MEDIUM,LOW --no-progress \
         --ignore-unfixed \
+        --skip-db-update \
         --cache-dir "$TRIVY_CACHE" \
         / \
         > "$LOG_DIR/trivy/trivy-$TIMESTAMP.json" 2>"$LOG_DIR/trivy/trivy-$TIMESTAMP.err"; then
-        log "WARNING: Trivy with DB update failed, retrying with --skip-db-update"
+        log "WARNING: Trivy with cached DB failed, attempting live DB download"
         trivy fs --format json --severity CRITICAL,HIGH,MEDIUM,LOW --no-progress \
             --ignore-unfixed \
-            --skip-db-update \
             --cache-dir "$TRIVY_CACHE" \
             / \
             > "$LOG_DIR/trivy/trivy-$TIMESTAMP.json" 2>"$LOG_DIR/trivy/trivy-$TIMESTAMP.err" || true
+    fi
+
+    # If both attempts left an empty file, write a valid error JSON so scorer doesn't fail
+    if [ ! -s "$LOG_DIR/trivy/trivy-$TIMESTAMP.json" ]; then
+        log "ERROR: Trivy produced no output — writing error report"
+        python3 -c "
+import json, datetime
+print(json.dumps({
+    'SchemaVersion': 2, 'Results': [],
+    'error': 'scan failed — rebuild image off-VPN to refresh DB',
+    'timestamp': datetime.datetime.utcnow().isoformat() + 'Z',
+}))
+" > "$LOG_DIR/trivy/trivy-$TIMESTAMP.json" 2>/dev/null || true
     fi
 
     CRITICAL=$(python3 -c "
@@ -76,16 +97,48 @@ except: print(0)
 
 run_clamav() {
     log "Starting ClamAV scan..."
-    if ! command -v clamscan >/dev/null 2>&1; then
-        log "ERROR: clamscan not found"
+
+    # Update DB first (non-fatal — run in background so we don't block the scan)
+    freshclam --no-warnings --log="$LOG_DIR/clamav/freshclam-$TIMESTAMP.log" \
+        2>/dev/null || log "WARNING: freshclam update failed"
+
+    CLAMAV_RAW="$LOG_DIR/clamav/clamscan-$TIMESTAMP.log"
+    SCAN_EXIT=0
+
+    # Prefer clamdscan (delegates to running clamd daemon — much lighter than in-process clamscan).
+    # Fallback to clamscan with strict size limits if clamd socket is unavailable.
+    if command -v clamdscan >/dev/null 2>&1 && \
+       ([ -S /run/clamav/clamd.ctl ] || [ -S /var/run/clamav/clamd.ctl ]); then
+        log "Using clamdscan (clamd socket found)"
+        clamdscan --no-summary --multiscan \
+            --max-filesize=50M --max-scansize=200M \
+            "$WORKSPACE" > "$CLAMAV_RAW" 2>&1 || SCAN_EXIT=$?
+    elif command -v clamscan >/dev/null 2>&1; then
+        log "Using clamscan (clamd socket not found)"
+        clamscan -r --no-summary \
+            --max-filesize=50M --max-scansize=200M \
+            --exclude-dir=/proc --exclude-dir=/sys --exclude-dir=/dev \
+            "$WORKSPACE" > "$CLAMAV_RAW" 2>&1 || SCAN_EXIT=$?
+    else
+        log "ERROR: neither clamdscan nor clamscan found"
+        python3 -c "
+import json
+print(json.dumps({'tool':'clamav','status':'error','error':'clamav not installed',
+    'files_scanned':0,'infected':0,'findings':[],'scan_target':'$WORKSPACE'}))
+" > "$LOG_DIR/clamav/clamav-$TIMESTAMP.json" 2>/dev/null || true
         return 1
     fi
 
-    # Update DB first
-    freshclam --no-warnings 2>/dev/null || log "WARNING: freshclam update failed"
-
-    CLAMAV_RAW="$LOG_DIR/clamav/clamscan-$TIMESTAMP.log"
-    clamscan -r --no-summary "$WORKSPACE" > "$CLAMAV_RAW" 2>&1 || true
+    # Exit code 1 from clamscan/clamdscan means "infected files found" — not a failure
+    if [ "$SCAN_EXIT" -gt 1 ]; then
+        log "WARNING: ClamAV scanner exited with code $SCAN_EXIT — writing error report"
+        python3 -c "
+import json
+print(json.dumps({'tool':'clamav','status':'error','error':'scanner exit code $SCAN_EXIT',
+    'files_scanned':0,'infected':0,'findings':[],'scan_target':'$WORKSPACE'}))
+" > "$LOG_DIR/clamav/clamav-$TIMESTAMP.json" 2>/dev/null || true
+        return 0
+    fi
 
     INFECTED=$(grep -c "FOUND$" "$CLAMAV_RAW" 2>/dev/null || echo "0")
     SCANNED=$(grep -c ": OK$" "$CLAMAV_RAW" 2>/dev/null || echo "0")

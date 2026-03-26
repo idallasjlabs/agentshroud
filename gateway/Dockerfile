@@ -108,6 +108,14 @@ RUN DPKG_ARCH=$(dpkg --print-architecture) && \
     rm "/tmp/trivy_${TRIVY_VERSION}_Linux-${TRIVY_ARCH}.deb" /tmp/trivy_checksums.txt \
        /tmp/trivy_checksums.txt.sigstore.json
 
+# Pre-seed Trivy vulnerability DB at build time.
+# Avoids ghcr.io download at runtime (blocked on VPN). Non-fatal: if this build
+# runs on VPN the DB is absent and security-scan.sh falls back to a live download.
+RUN mkdir -p /var/lib/trivy && \
+    trivy fs --download-db-only --cache-dir /var/lib/trivy --no-progress 2>&1 && \
+    echo "Trivy DB pre-seeded at build time" || \
+    echo "WARNING: Trivy DB download failed (VPN?) — runtime will attempt download on first scan"
+
 # cosign — image signing and verification (Domain 17)
 # R2-M1: Checksum verified via published cosign_checksums.txt (same pattern as Trivy)
 ARG COSIGN_VERSION=3.0.5
