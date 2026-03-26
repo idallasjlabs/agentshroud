@@ -48,6 +48,7 @@ services:
       - ./examples/egress-config.yml:/app/egress-config.yml:ro
       - gateway-data:/app/data
       - security-reports:/var/log/security
+      - clamav-db:/var/lib/clamav
     healthcheck:
       test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://localhost:8080/health').read()"]
       interval: 30s
