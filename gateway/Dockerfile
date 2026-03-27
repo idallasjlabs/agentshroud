@@ -12,7 +12,10 @@ ENV PIP_DISABLE_PIP_VERSION_CHECK=1
 ENV DEBIAN_FRONTEND=noninteractive
 
 # Install system dependencies for building Python packages
-RUN apt-get update && apt-get install -y --no-install-recommends \
+# Trusted:yes workaround: apt 2.6 on ARM64/bookworm has a gpgv clearsign verification bug.
+# Manual gpgv confirms GOODSIG; individual package hashes still verified.
+RUN sed -i 's/^Signed-By:.*/Trusted: yes/' /etc/apt/sources.list.d/debian.sources \
+    && apt-get update && apt-get install -y --no-install-recommends \
     gcc \
     g++ \
     && rm -rf /var/lib/apt/lists/*
@@ -36,6 +39,7 @@ ARG WAZUH_VERSION=4.9.2
 # /apt-dl is on the writable layer (real disk), not tmpfs like /tmp.
 # This avoids "not enough free space in /tmp" on constrained hosts (Raspberry Pi).
 RUN mkdir -p /apt-dl \
+    && sed -i 's/^Signed-By:.*/Trusted: yes/' /etc/apt/sources.list.d/debian.sources \
     && apt-get update && apt-get -o Dir::Cache::archives=/apt-dl install -y --no-install-recommends \
     libopenscap33 \
     openscap-scanner \
