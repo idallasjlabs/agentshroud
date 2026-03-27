@@ -676,9 +676,11 @@ function _renderServices(services) {
     const statusLabel = s.status === 'not_installed' ? 'not installed' : s.status;
     // CC-26: no Update button (local-only builds, no registry)
     // CC-33: internal services show "Restart Gateway" instead of per-service controls
+    // For internal modules, derive a module_filter key so logs are filtered to that module.
+    const modFilter = s.is_internal ? s.name.replace(/^agentshroud-/, '').replace(/-/g, '_') : '';
     const actions = s.is_internal
       ? `<button class="btn btn-sm" title="Restart gateway to restart this module" onclick="window._svcAction('restart','agentshroud-gateway')">Restart Gateway</button>
-         <button class="btn btn-sm" onclick="window._viewSvcLogs('agentshroud-gateway')">Logs</button>`
+         <button class="btn btn-sm" onclick="window._viewSvcLogs('agentshroud-gateway','${modFilter}')">Logs</button>`
       : `<button class="btn btn-sm" onclick="window._svcAction('restart','${_esc(s.name)}')">Restart</button>
          <button class="btn btn-sm btn-danger" onclick="window._svcAction('stop','${_esc(s.name)}')">Stop</button>
          <button class="btn btn-sm" onclick="window._viewSvcLogs('${_esc(s.name)}')">Logs</button>`;
@@ -728,16 +730,18 @@ window._svcAction = function(action, name) {
 };
 
 // CC-27: show service logs in an inline modal, not by switching tabs
-window._viewSvcLogs = async function(name) {
+// module_filter: when set, server-side filters gateway logs to lines containing that string
+window._viewSvcLogs = async function(name, module_filter) {
   const modal = document.getElementById('log-modal');
   const titleEl = document.getElementById('log-modal-title');
   const bodyEl  = document.getElementById('log-modal-body');
   if (!modal || !bodyEl) { _showTab('logs'); return; }
-  if (titleEl) titleEl.textContent = `Logs: ${name}`;
+  if (titleEl) titleEl.textContent = module_filter ? `Logs: ${name} [${module_filter}]` : `Logs: ${name}`;
   bodyEl.textContent = 'Loading…';
   modal.classList.add('open');
-  const { data } = await _get(`/services/${encodeURIComponent(name)}/logs?tail=200`);
-  bodyEl.textContent = (data?.lines || []).join('\n') || '(no log output)';
+  const qs = module_filter ? `?tail=200&filter=${encodeURIComponent(module_filter)}` : '?tail=200';
+  const { data } = await _get(`/services/${encodeURIComponent(name)}/logs${qs}`);
+  bodyEl.textContent = (data?.lines || []).join('\n') || '(no log output for this module)';
   bodyEl.scrollTop = bodyEl.scrollHeight;
 };
 
