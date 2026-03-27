@@ -36,12 +36,26 @@ case "${1:-}" in
   up)      $COMPOSE up -d ;;
   down)    $COMPOSE down ;;
   rebuild) $COMPOSE build --no-cache && $COMPOSE up -d ;;
+  clean-rebuild)
+    echo "This will remove containers, prune stale volumes, clear build cache, and rebuild."
+    echo "Persistent data (workspace, config, SSH keys, browsers) is PRESERVED."
+    read -r -p "Continue? [y/N] " confirm
+    [[ "$confirm" =~ ^[Yy]$ ]] || { echo "Aborted."; exit 0; }
+    $COMPOSE down
+    for vol in gateway-data clamav-db; do
+      docker volume rm "${PROJECT}_${vol}" 2>/dev/null && echo "  Removed ${PROJECT}_${vol}" || true
+    done
+    docker builder prune -a -f
+    $COMPOSE build --no-cache
+    $COMPOSE up -d
+    echo "Clean rebuild complete."
+    ;;
   pull)    cd "$REPO_DIR" && git pull --rebase ;;
   status)  $COMPOSE ps ;;
   logs)    $COMPOSE logs -f --tail=100 ${2:-} ;;
   test)    $COMPOSE exec gateway python -m pytest gateway/tests/ -q ;;
   *)
-    echo "Usage: asb {build|up|down|rebuild|pull|status|logs [service]|test}"
+    echo "Usage: asb {build|up|down|rebuild|clean-rebuild|pull|status|logs [service]|test}"
     exit 1
     ;;
 esac
