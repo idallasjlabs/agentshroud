@@ -410,22 +410,28 @@ class ServiceManager:
             logger.debug("_logs_via_socket(%s): %s", name, exc)
             return []
 
-    async def get_logs(self, name: str, tail: int = 50) -> List[str]:
+    async def get_logs(self, name: str, tail: int = 50, module_filter: str = "") -> List[str]:
+        # Fetch a larger pool when filtering so the tail limit applies after narrowing.
+        fetch_tail = min(tail * 20, 2000) if module_filter else tail
         engine = self._get_engine()
+        lines: List[str] = []
         if engine is not None:
             try:
-                raw = engine.logs(name, tail=tail)
+                raw = engine.logs(name, tail=fetch_tail)
                 if isinstance(raw, (bytes, bytearray)):
                     raw = raw.decode("utf-8", errors="replace")
-                return raw.splitlines()[-tail:]
+                lines = raw.splitlines()
             except Exception as exc:
                 logger.warning("get_logs(%s): engine error (%s) — falling back to socket", name, exc)
         # Fallback: read directly via Docker Unix socket (always mounted in gateway)
-        if os.path.exists(_DOCKER_SOCK):
-            lines = self._logs_via_socket(name, tail=tail)
-            if lines:
-                return lines
-            logger.debug("get_logs(%s): socket fallback returned no lines", name)
-        else:
-            logger.debug("get_logs(%s): Docker socket not available at %s", name, _DOCKER_SOCK)
-        return []
+        if not lines:
+            if os.path.exists(_DOCKER_SOCK):
+                lines = self._logs_via_socket(name, tail=fetch_tail)
+                if not lines:
+                    logger.debug("get_logs(%s): socket fallback returned no lines", name)
+            else:
+                logger.debug("get_logs(%s): Docker socket not available at %s", name, _DOCKER_SOCK)
+        if module_filter:
+            needle = module_filter.lower()
+            lines = [l for l in lines if needle in l.lower()]
+        return lines[-tail:]
