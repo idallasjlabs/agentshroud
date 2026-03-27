@@ -18,7 +18,7 @@ I'm building **AgentShroud** — an open-source, security-first transparent prox
 
 The governance angle is what makes it different from existing tooling. It's not just blocking bad actions — it's creating an auditable, policy-enforced trust boundary so organizations can actually answer the question: "What did the agent do, and why?"
 
-**v0.9.0 is nearly complete, v1.0.0 imminent.** Try the GPT to explore the project without setup:
+**v0.9.0 is complete. AgentShroud™ is trademark-filed and patent pending, with v1.0.0 imminent.** Try the GPT to explore the project without setup:
 https://chatgpt.com/g/g-69c03367b94481918e812d02897b5365-agentshroudtm
 
 Also listen to the AI-generated AgentShroud podcast episode:
