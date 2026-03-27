@@ -17,6 +17,7 @@ RUN apt-get update && \
         curl \
         ca-certificates \
         unzip \
+        openscap-scanner \
         gosu \
         gnupg \
         clamav clamav-daemon clamav-freshclam \
