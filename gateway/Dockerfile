@@ -55,6 +55,8 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
         | gpg --dearmor -o /usr/share/keyrings/wazuh.gpg \
     && echo "deb [signed-by=/usr/share/keyrings/wazuh.gpg] https://packages.wazuh.com/4.x/apt/ stable main" \
         > /etc/apt/sources.list.d/wazuh.list \
+    && apt-get clean \
+    && rm -rf /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb \
     && apt-get update \
     && apt-get install -y --no-install-recommends 1password-cli \
     && WAZUH_MANAGER=127.0.0.1 apt-get install -y --no-install-recommends \
