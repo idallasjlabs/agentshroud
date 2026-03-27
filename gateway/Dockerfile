@@ -33,10 +33,10 @@ ENV DEBIAN_FRONTEND=noninteractive
 # 1Password CLI, Wazuh HIDS agent, libelf1 (Falco dep) — consolidated single layer (~100MB saved).
 ARG WAZUH_VERSION=4.9.2
 # Install base packages and clean between groups to limit peak disk usage.
-# -o Dir::Cache::archives=/tmp: redirects apt's download staging area to /tmp,
-# which has more headroom on constrained hosts (Raspberry Pi dev) where
-# /var/cache/apt/archives/ cannot hold the full 34.5 MB first-phase download.
-RUN apt-get update && apt-get -o Dir::Cache::archives=/tmp install -y --no-install-recommends \
+# /apt-dl is on the writable layer (real disk), not tmpfs like /tmp.
+# This avoids "not enough free space in /tmp" on constrained hosts (Raspberry Pi).
+RUN mkdir -p /apt-dl \
+    && apt-get update && apt-get -o Dir::Cache::archives=/apt-dl install -y --no-install-recommends \
     libopenscap33 \
     openscap-scanner \
     openssh-client \
@@ -45,6 +45,7 @@ RUN apt-get update && apt-get -o Dir::Cache::archives=/tmp install -y --no-insta
     curl ca-certificates gpg \
     libpq5 \
     libelf1 \
+    && rm -rf /apt-dl/* \
     && mkdir -p /var/lib/clamav \
     && sed -i \
         -e 's|^UpdateLogFile.*|UpdateLogFile /tmp/freshclam.log|' \
@@ -59,10 +60,11 @@ RUN apt-get update && apt-get -o Dir::Cache::archives=/tmp install -y --no-insta
     && echo "deb [signed-by=/usr/share/keyrings/wazuh.gpg] https://packages.wazuh.com/4.x/apt/ stable main" \
         > /etc/apt/sources.list.d/wazuh.list \
     && apt-get update \
-    && apt-get -o Dir::Cache::archives=/tmp install -y --no-install-recommends 1password-cli \
-    && WAZUH_MANAGER=127.0.0.1 apt-get -o Dir::Cache::archives=/tmp install -y --no-install-recommends \
+    && apt-get -o Dir::Cache::archives=/apt-dl install -y --no-install-recommends 1password-cli \
+    && rm -rf /apt-dl/* \
+    && WAZUH_MANAGER=127.0.0.1 apt-get -o Dir::Cache::archives=/apt-dl install -y --no-install-recommends \
         wazuh-agent=${WAZUH_VERSION}-1 \
-    && rm -rf /var/lib/apt/lists/*
+    && rm -rf /apt-dl /var/lib/apt/lists/*
 
 # cosign bootstrap — supply-chain verification tool used to verify Trivy below.
 # Installed early so it is available during Trivy download/verification.
