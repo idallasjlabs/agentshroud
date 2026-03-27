@@ -17,7 +17,6 @@ RUN apt-get update && \
         curl \
         ca-certificates \
         unzip \
-        libopenscap25 \
         openscap-scanner \
         gosu \
         gnupg \
