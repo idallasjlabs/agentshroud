@@ -9,8 +9,10 @@ FROM node:22-bookworm-slim@sha256:5373f1906319b3a1f291da5d102f4ce5c77ccbe29eb637
 ENV DEBIAN_FRONTEND=noninteractive
 
 # Install system dependencies
-RUN apt-get update && \
-    apt-get install -y --no-install-recommends \
+# /apt-dl is on the writable layer (real disk), not tmpfs — avoids "no space in /tmp" on constrained hosts.
+RUN mkdir -p /apt-dl \
+    && apt-get update \
+    && apt-get -o Dir::Cache::archives=/apt-dl install -y --no-install-recommends \
         openssh-client \
         netcat-openbsd \
         git \
@@ -21,8 +23,7 @@ RUN apt-get update && \
         gosu \
         gnupg \
         clamav clamav-daemon clamav-freshclam \
-    && apt-get clean && \
-    rm -rf /var/lib/apt/lists/* /var/cache/apt/archives/*
+    && rm -rf /apt-dl/* /var/lib/apt/lists/*
 
 # Trivy vulnerability scanner — pinned version with checksum verification (M7 fix)
 ARG TRIVY_VERSION=0.69.3
@@ -58,9 +59,10 @@ RUN curl -sSfL https://packages.wazuh.com/key/GPG-KEY-WAZUH \
     && echo "deb [signed-by=/usr/share/keyrings/wazuh.gpg] https://packages.wazuh.com/4.x/apt/ stable main" \
         > /etc/apt/sources.list.d/wazuh.list \
     && apt-get update \
-    && WAZUH_MANAGER=127.0.0.1 apt-get install -y --no-install-recommends \
+    && mkdir -p /apt-dl \
+    && WAZUH_MANAGER=127.0.0.1 apt-get -o Dir::Cache::archives=/apt-dl install -y --no-install-recommends \
         wazuh-agent=${WAZUH_VERSION}-1 \
-    && rm -rf /var/lib/apt/lists/* \
+    && rm -rf /apt-dl/* /var/lib/apt/lists/* \
     && chown -R node:node /var/ossec
 
 # Install bun via npm (avoids curl|bash supply chain risk)
@@ -98,8 +100,10 @@ RUN curl -sS https://downloads.1password.com/linux/keys/1password.asc | \
     gpg --dearmor --output /usr/share/keyrings/1password-archive-keyring.gpg && \
     echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/1password-archive-keyring.gpg] https://downloads.1password.com/linux/debian/$(dpkg --print-architecture) stable main" | \
     tee /etc/apt/sources.list.d/1password.list && \
-    apt-get update && apt-get install -y --no-install-recommends 1password-cli \
-    && rm -rf /var/lib/apt/lists/*
+    apt-get update \
+    && mkdir -p /apt-dl \
+    && apt-get -o Dir::Cache::archives=/apt-dl install -y --no-install-recommends 1password-cli \
+    && rm -rf /apt-dl/* /var/lib/apt/lists/*
 # Create directories for AgentShroud configuration and workspace
 # Create directories for AgentShroud configuration and workspace
 # Note: OpenClaw CLI expects ~/.openclaw, so we symlink it to ~/.agentshroud
