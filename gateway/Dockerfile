@@ -370,6 +370,8 @@ COPY scripts/switch_model.sh /app/scripts/switch_model.sh
 
 # Strip setuid/setgid bits — CIS Docker Benchmark 4.8
 RUN find / -perm /6000 -type f -exec chmod a-s {} + 2>/dev/null || true
+# Restore gosu setuid — required for ENTRYPOINT privilege drop (CIS 4.8 intentional exception)
+RUN chmod u+s "$(which gosu)"
 
 # Container starts as root so the entrypoint can fix volume ownership,
 # then drops to agentshroud via gosu (standard privilege-drop pattern).
