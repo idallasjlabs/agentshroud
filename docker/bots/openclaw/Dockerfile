@@ -210,6 +210,8 @@ RUN rm -f /usr/bin/perl /usr/bin/perl5* 2>/dev/null || true
 
 # Strip setuid/setgid bits — CIS Docker Benchmark 4.8 (R2-H2 fix)
 RUN find / -perm /6000 -type f -exec chmod a-s {} + 2>/dev/null || true
+# Restore gosu setuid — required for ENTRYPOINT privilege drop (CIS 4.8 intentional exception)
+RUN chmod u+s "$(which gosu)"
 
 # NPM_CONFIG_PREFIX: writable volume path for runtime `npm install -g` (Update Now button)
 # PATH: prioritise runtime-volume bin over /usr/local/bin so updates take effect immediately
