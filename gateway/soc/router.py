@@ -524,12 +524,13 @@ async def list_services(caller: SCLCaller = Depends(get_caller)) -> List[Dict]:
 async def get_service_logs(
     name: str,
     tail: int = Query(default=50, le=500),
+    module_filter: str = Query(default="", alias="filter"),
     caller: SCLCaller = Depends(get_caller),
 ) -> Dict:
     caller.require(Action.READ, Resource.SYSTEM)
     from .services import ServiceManager
     mgr = ServiceManager()
-    lines = await mgr.get_logs(name, tail=tail)
+    lines = await mgr.get_logs(name, tail=tail, module_filter=module_filter)
     return {"service": name, "lines": lines}
 
 
