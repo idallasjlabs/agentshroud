@@ -216,10 +216,12 @@ RUN find / -perm /6000 -type f -exec chmod a-s {} + 2>/dev/null || true
 ENV NPM_CONFIG_PREFIX=/home/node/.npm-global
 ENV PATH="/home/node/.npm-global/bin:${PATH}"
 
-# Switch to non-root user (node user has UID 1000)
-USER node
 ENV HOME=/home/node
 WORKDIR /home/node
+
+# Container starts as root so the entrypoint can fix bind-mount ownership
+# (memory-backups may be owned by host UID != node 1000), then drops to node via gosu.
+# USER directive intentionally omitted — gosu handles the privilege drop.
 
 # Expose AgentShroud gateway port
 EXPOSE 18789
@@ -228,5 +230,7 @@ EXPOSE 18789
 HEALTHCHECK --interval=30s --timeout=10s --start-period=60s --retries=3 \
     CMD curl -sf http://localhost:18789/ -o /dev/null || exit 1
 
-# Start AgentShroud gateway via wrapper script
+# Root-phase entrypoint: fix volume ownership, apply openclaw config, then exec gosu node <CMD>
+ENTRYPOINT ["/usr/local/bin/entrypoint-agentshroud.sh"]
+# Start AgentShroud bot via wrapper script
 CMD ["/usr/local/bin/start-agentshroud.sh"]

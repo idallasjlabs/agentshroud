@@ -90,7 +90,7 @@ services:
     pid: host
     read_only: true
     tmpfs:
-      - /tmp:noexec,nosuid,size=100m
+      - /tmp:noexec,nosuid,size=500m
       - /var/tmp:noexec,nosuid,size=50m
       - /var/log/fluent-bit:noexec,nosuid,size=50m
       - /var/log/falco:noexec,nosuid,size=50m
@@ -118,10 +118,11 @@ services:
       retries: 3
       start_period: 30s
 
-    # Gateway resolves DNS via corporate servers (reachable over VPN)
+    # Gateway resolves DNS — router first (always reachable), corporate DNS as fallback.
+    # 192.168.7.45 (corporate VPN DNS) times out ~5s when VPN is down; router first avoids penalty.
     dns:
-      - 192.168.7.45
       - 192.168.7.1
+      - 192.168.7.45
 
     # Gateway on BOTH networks: internal (internet) + isolated (to bot)
     networks:
@@ -238,10 +239,10 @@ services:
       timeout: 10s
       retries: 3
       start_period: 60s
-    # Bot resolves DNS via corporate servers (same as gateway — prevents DNS outage drops)
+    # Bot resolves DNS — router first (always reachable), corporate DNS as fallback.
     dns:
-      - 192.168.7.45
       - 192.168.7.1
+      - 192.168.7.45
     networks:
       - agentshroud-internal
       - agentshroud-isolated
