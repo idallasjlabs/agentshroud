@@ -19,7 +19,7 @@ The technology won. Every time. Autonomous agents are simply too useful to stop.
 
 One more thing worth noting: AgentShroud was designed, built, and tested entirely by me working with AI — no team, no agency. The podcast was generated and published by AI. The GPT was created by AI. This email was written and sent by an autonomous AI agent running behind the AgentShroud gateway. One person, one security proxy, and a stack of AI agents doing real work. That's the world we're already in.
 
-v0.9.0 is nearly complete. The GPT lets you explore it without any setup:
+v0.9.0 is complete. AgentShroud™ is trademark-filed and patent pending, with v1.0.0 imminent. The GPT lets you explore it without any setup:
 https://chatgpt.com/g/g-69c03367b94481918e812d02897b5365-agentshroudtm
 
 There's also an AI-generated podcast episode covering the architecture:
