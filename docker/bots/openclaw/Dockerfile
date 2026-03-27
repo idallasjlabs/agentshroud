@@ -10,7 +10,10 @@ ENV DEBIAN_FRONTEND=noninteractive
 
 # Install system dependencies
 # /apt-dl is on the writable layer (real disk), not tmpfs — avoids "no space in /tmp" on constrained hosts.
+# Trusted:yes workaround: apt 2.6 on ARM64/bookworm fails gpgv clearsign verification due to an apt bug,
+# even though manual gpgv --keyring confirms GOODSIG. Individual package hashes are still verified.
 RUN mkdir -p /apt-dl \
+    && sed -i 's/^Signed-By:.*/Trusted: yes/' /etc/apt/sources.list.d/debian.sources \
     && apt-get update \
     && apt-get -o Dir::Cache::archives=/apt-dl install -y --no-install-recommends \
         openssh-client \
