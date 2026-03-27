@@ -21,14 +21,10 @@ else
     echo "[entrypoint] Warning: No Playwright browsers found in /root/.cache/ms-playwright"
 fi
 
-# Fix memory-backups bind-mount ownership: host UID may differ from node (1000).
-# Runs as root here so chown succeeds; gosu drops back to node before exec.
-chown -R node:node /app/memory-backups 2>/dev/null || true
-
 # Apply required OpenClaw config (agents, bindings, cron jobs)
 echo "[entrypoint] Applying OpenClaw config..."
 /usr/local/bin/init-openclaw-config.sh
 
-# Drop from root to node and exec CMD (start-agentshroud.sh)
+# Run startup script as node user (no privilege drop needed - already set USER in Dockerfile)
 echo "[entrypoint] Starting AgentShroud..."
-exec gosu node "$@"
+exec /usr/local/bin/start-agentshroud.sh

@@ -39,7 +39,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     clamav clamav-daemon clamav-freshclam clamdscan \
     openssl \
     curl ca-certificates gpg \
-    gosu \
     libpq5 \
     libelf1 \
     && mkdir -p /var/lib/clamav \
@@ -338,8 +337,7 @@ COPY docker/scripts/security-scheduler.sh /usr/local/bin/security-scheduler.sh
 COPY docker/scripts/security-scan.sh /usr/local/bin/security-scan.sh
 COPY docker/scripts/security-report.sh /usr/local/bin/security-report.sh
 COPY docker/scripts/gateway-start.sh /usr/local/bin/gateway-start.sh
-COPY docker/scripts/gateway-entrypoint.sh /usr/local/bin/gateway-entrypoint.sh
-RUN chmod +x /usr/local/bin/security-*.sh /usr/local/bin/gateway-start.sh /usr/local/bin/gateway-entrypoint.sh
+RUN chmod +x /usr/local/bin/security-*.sh /usr/local/bin/gateway-start.sh
 
 # Create security log directory
 RUN mkdir -p /var/log/security && chown agentshroud:agentshroud /var/log/security
@@ -370,14 +368,11 @@ COPY scripts/start-control-center /app/scripts/start-control-center
 COPY scripts/chat-console /app/scripts/chat-console
 COPY scripts/switch_model.sh /app/scripts/switch_model.sh
 
+# Switch to non-root user
 # Strip setuid/setgid bits — CIS Docker Benchmark 4.8
-# gosu does NOT need setuid — the container starts as root (no USER directive),
-# so the ENTRYPOINT already has root privileges to call gosu natively.
 RUN find / -perm /6000 -type f -exec chmod a-s {} + 2>/dev/null || true
 
-# Container starts as root so the entrypoint can fix volume ownership,
-# then drops to agentshroud via gosu (standard privilege-drop pattern).
-# USER directive intentionally omitted here — gosu handles the drop.
+USER agentshroud
 
 # Expose gateway port
 EXPOSE 8080
@@ -389,8 +384,6 @@ HEALTHCHECK --interval=30s --timeout=5s --retries=3 \
 # Set Python path to include parent directory
 ENV PYTHONPATH=/app
 
-# Root-phase entrypoint: chown volumes, then exec gosu agentshroud <CMD>
-ENTRYPOINT ["/usr/local/bin/gateway-entrypoint.sh"]
 # Run gateway (bind to 0.0.0.0 for Docker port mapping to work)
 # Security: docker-compose maps only to host 127.0.0.1
 CMD ["/usr/local/bin/gateway-start.sh"]
