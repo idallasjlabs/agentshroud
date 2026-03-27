@@ -118,11 +118,11 @@ services:
       retries: 3
       start_period: 30s
 
-    # Gateway resolves DNS — router first (always reachable), corporate DNS as fallback.
-    # 192.168.7.45 (corporate VPN DNS) times out ~5s when VPN is down; router first avoids penalty.
+    # Gateway resolves DNS via Pi-hole (192.168.7.45) for network-wide ad/tracking protection.
+    # Router (192.168.7.1) is fallback only — no DNS filtering.
     dns:
-      - 192.168.7.1
       - 192.168.7.45
+      - 192.168.7.1
 
     # Gateway on BOTH networks: internal (internet) + isolated (to bot)
     networks:
@@ -239,10 +239,10 @@ services:
       timeout: 10s
       retries: 3
       start_period: 60s
-    # Bot resolves DNS — router first (always reachable), corporate DNS as fallback.
+    # Bot resolves DNS via Pi-hole — same as gateway for consistent DNS protection.
     dns:
-      - 192.168.7.1
       - 192.168.7.45
+      - 192.168.7.1
     networks:
       - agentshroud-internal
       - agentshroud-isolated
