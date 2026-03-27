@@ -3,7 +3,7 @@
 ## Overview
 
 You are sending a podcast outreach email campaign on behalf of Isaiah Jefferson.
-- **From:** agentshroud.ai@gmail.com (primary) / agentshroud.ai@icloud.com (fallback)
+- **From:** agentshroud.ai@gmail.com — ONLY. Do not use iCloud as a fallback.
 - **Cc (every email):** idallasj@gmail.com, isaiah_jefferson@mac.com
 - **Campaign manifest:** `/home/node/.openclaw/workspace/outreach/campaign-manifest.json`
 - **Total:** 44 podcasts — 24 with direct email, 20 require contact forms (skip those)
@@ -18,13 +18,16 @@ node /home/node/.openclaw/workspace/outreach/send-test.js --gmail
 
 Expected output: `OK: sent — <message-id>`
 
-If Gmail fails (535 error), fall back to iCloud:
+If Gmail fails (535 error or any auth error), **STOP immediately. Do not fall back to iCloud.**
+Sending from iCloud makes the emails look fake to recipients — the sender address changes
+from agentshroud.ai@gmail.com to agentshroud.ai@icloud.com, which is unrecognized and
+suspicious. Report the exact error to Isaiah and wait for the Gmail credential to be fixed.
 
-```bash
-node /home/node/.openclaw/workspace/outreach/send-test.js
-```
+**To fix:** Isaiah must regenerate the Gmail app password at myaccount.google.com →
+Security → App passwords, update it in 1Password (vault: "Agent Shroud Bot Credentials",
+item wgblbbbqkmnyobh2xtr6r65k34, field: "app password"), then re-run this step.
 
-Wait for confirmation of delivery before proceeding to Step 2.
+Wait for `OK: sent — <message-id>` before proceeding to Step 2.
 
 ## Step 2 — Send All Emails with Direct Addresses
 
