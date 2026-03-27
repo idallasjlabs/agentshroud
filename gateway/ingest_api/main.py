@@ -211,6 +211,11 @@ _soc_branding = Path(__file__).parent.parent.parent / "branding" / "logos" / "pn
 if _soc_branding.exists():
     app.mount("/soc/branding", StaticFiles(directory=str(_soc_branding)), name="soc-branding")
 
+# Serve favicons at /soc/favicons/
+_soc_favicons = Path(__file__).parent.parent.parent / "branding" / "favicons"
+if _soc_favicons.exists():
+    app.mount("/soc/favicons", StaticFiles(directory=str(_soc_favicons)), name="soc-favicons")
+
 
 # === CORS Middleware ===
 # Custom CORS middleware that reads from app_state.config at runtime
