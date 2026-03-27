@@ -32,9 +32,8 @@ ENV DEBIAN_FRONTEND=noninteractive
 # Install system dependencies: OpenSCAP (compliance), SSH client, ClamAV (malware scanning),
 # 1Password CLI, Wazuh HIDS agent, libelf1 (Falco dep) — consolidated single layer (~100MB saved).
 ARG WAZUH_VERSION=4.9.2
-# Use Dir::Cache::archives=/tmp so apt downloads land in /tmp (larger) rather than
-# the base image's /var/cache/apt/archives/ which is too small on constrained hosts.
-RUN apt-get update && apt-get -o Dir::Cache::archives=/tmp install -y --no-install-recommends \
+# Install base packages and clean between groups to limit peak disk usage.
+RUN apt-get update && apt-get install -y --no-install-recommends \
     libopenscap33 \
     openscap-scanner \
     openssh-client \
@@ -43,7 +42,7 @@ RUN apt-get update && apt-get -o Dir::Cache::archives=/tmp install -y --no-insta
     curl ca-certificates gpg \
     libpq5 \
     libelf1 \
-    && rm -f /tmp/*.deb \
+    && apt-get clean \
     && mkdir -p /var/lib/clamav \
     && sed -i \
         -e 's|^UpdateLogFile.*|UpdateLogFile /tmp/freshclam.log|' \
@@ -58,11 +57,11 @@ RUN apt-get update && apt-get -o Dir::Cache::archives=/tmp install -y --no-insta
     && echo "deb [signed-by=/usr/share/keyrings/wazuh.gpg] https://packages.wazuh.com/4.x/apt/ stable main" \
         > /etc/apt/sources.list.d/wazuh.list \
     && apt-get update \
-    && apt-get -o Dir::Cache::archives=/tmp install -y --no-install-recommends 1password-cli \
-    && rm -f /tmp/*.deb \
-    && WAZUH_MANAGER=127.0.0.1 apt-get -o Dir::Cache::archives=/tmp install -y --no-install-recommends \
+    && apt-get install -y --no-install-recommends 1password-cli \
+    && apt-get clean \
+    && WAZUH_MANAGER=127.0.0.1 apt-get install -y --no-install-recommends \
         wazuh-agent=${WAZUH_VERSION}-1 \
-    && rm -f /tmp/*.deb \
+    && apt-get clean \
     && rm -rf /var/lib/apt/lists/*
 
 # cosign bootstrap — supply-chain verification tool used to verify Trivy below.
