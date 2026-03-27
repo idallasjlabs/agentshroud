@@ -196,25 +196,71 @@ class SlackAPIProxy:
 
         # Log bot responses to collaborator activity tracker for /collabs reports.
         # Only track chat.postMessage (actual message sends, not edits or reactions).
-        # The Slack channel field is used as the user_id key; for DMs this is the
-        # user's member ID (U...), for channels it's the channel ID (C...).
+        # When the bot replies, recover the user's original message via conversations.replies
+        # (inbound tracking — replaces the removed Socket Mode parallel listener).
         if method == "chat.postMessage" and not is_system and self.tracker:
             try:
+                import time as _time_mod
                 _channel = payload.get("channel", "")
                 _text = payload.get("text", "")
+                _thread_ts = payload.get("thread_ts", "")
                 if isinstance(_text, (list, dict)):
                     import json as _json
                     _text = _json.dumps(_text)
                 if _channel and _text:
+                    # --- Recover inbound query from Slack API ---
+                    # Without Socket Mode, we look up the user's original message by fetching
+                    # conversations.replies (if thread reply) or conversations.history (DM).
                     _corr_pair = self._last_inbound_corr.get(str(_channel))
-                    _out_corr_id = _corr_pair[0] if _corr_pair else None
+                    _inbound_corr_id = _corr_pair[0] if _corr_pair else None
+                    if not _inbound_corr_id:
+                        try:
+                            if _thread_ts:
+                                _hist = await self._call_slack_api(
+                                    "conversations.replies",
+                                    {"channel": _channel, "ts": _thread_ts, "limit": 1, "inclusive": True},
+                                )
+                            else:
+                                _hist = await self._call_slack_api(
+                                    "conversations.history",
+                                    {"channel": _channel, "limit": 5},
+                                )
+                            _msgs = _hist.get("messages", []) if _hist.get("ok") else []
+                            # Find the most recent non-bot message (subtype absent = user message)
+                            _user_msg = next(
+                                (m for m in _msgs if m.get("user") and not m.get("subtype") and not m.get("bot_id")),
+                                None,
+                            )
+                            if _user_msg:
+                                _uid = _user_msg.get("user", "")
+                                _utext = _user_msg.get("text", "")
+                                _uts = _user_msg.get("ts", "")
+                                _inbound_corr_id = f"{_uid}:{_uts.replace('.', '')}"
+                                _now = _time_mod.time()
+                                self._last_inbound_corr[str(_channel)] = (_inbound_corr_id, _now)
+                                self.tracker.record_activity(
+                                    user_id=_uid,
+                                    username=_uid,
+                                    message_preview=_utext[:80],
+                                    source="slack",
+                                    direction="inbound",
+                                    correlation_id=_inbound_corr_id,
+                                )
+                        except Exception as _re:
+                            logger.debug("Slack inbound recovery error (non-fatal): %s", _re)
+                    # --- Record outbound bot response ---
+                    _out_uid = str(_channel)
+                    if _inbound_corr_id:
+                        # Use the actual user ID extracted from inbound if available
+                        _inbound_uid = _inbound_corr_id.split(":")[0] if ":" in _inbound_corr_id else _out_uid
+                        _out_uid = _inbound_uid
                     self.tracker.record_activity(
-                        user_id=str(_channel),
+                        user_id=_out_uid,
                         username="bot",
                         message_preview=str(_text)[:80],
                         source="slack",
                         direction="outbound",
-                        correlation_id=_out_corr_id,
+                        correlation_id=_inbound_corr_id,
                     )
             except Exception as _se:
                 logger.debug("Slack outbound tracker error (non-fatal): %s", _se)

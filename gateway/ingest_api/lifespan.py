@@ -659,26 +659,14 @@ async def lifespan(app: FastAPI):
         logger.error(f"Failed to initialize CollaboratorActivityTracker: {e}")
         app_state.collaborator_tracker = None
 
-    # Start gateway-side Slack Socket Mode client for inbound activity tracking.
-    # OpenClaw uses native Slack integration (connects directly to Slack's WSS),
-    # so the gateway never sees inbound Slack events without this parallel listener.
-    import asyncio as _asyncio
+    # NOTE: Gateway-side Slack Socket Mode listener removed.
+    # Slack distributes Socket Mode events across all active connections for the same app.
+    # Opening a second connection from the gateway stole events from OpenClaw, preventing
+    # the bot from receiving and responding to Slack messages.
+    # Inbound Slack tracking now happens via the outbound chat.postMessage proxy path:
+    # when the bot replies, slack_proxy.proxy_outbound() records inbound + outbound pairs.
     app_state.slack_socket_task = None
     app_state.slack_socket_client = None
-    try:
-        _slack_app_token = _read_secret("slack_app_token")
-        if _slack_app_token:
-            from ..proxy.slack_socket_client import SlackSocketClient
-            from ..proxy.slack_proxy import SlackAPIProxy as _SlackProxyClass
-            _monitor_proxy = _SlackProxyClass(tracker=app_state.collaborator_tracker)
-            _socket_client = SlackSocketClient(_monitor_proxy, _slack_app_token)
-            app_state.slack_socket_task = _asyncio.create_task(_socket_client.run())
-            app_state.slack_socket_client = _socket_client
-            logger.info("✓ Slack Socket Mode client started for inbound activity tracking")
-        else:
-            logger.info("Slack Socket Mode not configured (no slack_app_token secret)")
-    except Exception as _slack_exc:
-        logger.error("✗ Slack Socket Mode client: %s", _slack_exc)
 
     # Initialize group registry — auto-groups (telegram, slack, everyone) + custom persisted groups
     try:
