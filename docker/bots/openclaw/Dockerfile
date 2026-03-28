@@ -12,7 +12,7 @@ ENV DEBIAN_FRONTEND=noninteractive
 # /apt-dl is on the writable layer (real disk), not tmpfs — avoids "no space in /tmp" on constrained hosts.
 # Trusted:yes workaround: apt 2.6 on ARM64/bookworm fails gpgv clearsign verification due to an apt bug,
 # even though manual gpgv --keyring confirms GOODSIG. Individual package hashes are still verified.
-RUN mkdir -p /apt-dl \
+RUN mkdir -p /apt-dl/partial \
     && sed -i 's/^Signed-By:.*/Trusted: yes/' /etc/apt/sources.list.d/debian.sources \
     && apt-get update \
     && apt-get -o Dir::Cache::archives=/apt-dl install -y --no-install-recommends \
@@ -62,7 +62,7 @@ RUN curl -sSfL https://packages.wazuh.com/key/GPG-KEY-WAZUH \
     && echo "deb [signed-by=/usr/share/keyrings/wazuh.gpg] https://packages.wazuh.com/4.x/apt/ stable main" \
         > /etc/apt/sources.list.d/wazuh.list \
     && apt-get update \
-    && mkdir -p /apt-dl \
+    && mkdir -p /apt-dl/partial \
     && WAZUH_MANAGER=127.0.0.1 apt-get -o Dir::Cache::archives=/apt-dl install -y --no-install-recommends \
         wazuh-agent=${WAZUH_VERSION}-1 \
     && rm -rf /apt-dl/* /var/lib/apt/lists/* \
@@ -104,7 +104,7 @@ RUN curl -sS https://downloads.1password.com/linux/keys/1password.asc | \
     echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/1password-archive-keyring.gpg] https://downloads.1password.com/linux/debian/$(dpkg --print-architecture) stable main" | \
     tee /etc/apt/sources.list.d/1password.list && \
     apt-get update \
-    && mkdir -p /apt-dl \
+    && mkdir -p /apt-dl/partial \
     && apt-get -o Dir::Cache::archives=/apt-dl install -y --no-install-recommends 1password-cli \
     && rm -rf /apt-dl/* /var/lib/apt/lists/*
 # Create directories for AgentShroud configuration and workspace
