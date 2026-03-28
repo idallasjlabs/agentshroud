@@ -38,7 +38,7 @@ ARG WAZUH_VERSION=4.9.2
 # Install base packages and clean between groups to limit peak disk usage.
 # /apt-dl is on the writable layer (real disk), not tmpfs like /tmp.
 # This avoids "not enough free space in /tmp" on constrained hosts (Raspberry Pi).
-RUN mkdir -p /apt-dl \
+RUN mkdir -p /apt-dl/partial \
     && sed -i 's/^Signed-By:.*/Trusted: yes/' /etc/apt/sources.list.d/debian.sources \
     && apt-get update && apt-get -o Dir::Cache::archives=/apt-dl install -y --no-install-recommends \
     libopenscap33 \
@@ -49,7 +49,7 @@ RUN mkdir -p /apt-dl \
     curl ca-certificates gpg \
     libpq5 \
     libelf1 \
-    && rm -rf /apt-dl/* \
+    && rm -rf /apt-dl/* && mkdir -p /apt-dl/partial \
     && mkdir -p /var/lib/clamav \
     && sed -i \
         -e 's|^UpdateLogFile.*|UpdateLogFile /tmp/freshclam.log|' \
@@ -65,7 +65,7 @@ RUN mkdir -p /apt-dl \
         > /etc/apt/sources.list.d/wazuh.list \
     && apt-get update \
     && apt-get -o Dir::Cache::archives=/apt-dl install -y --no-install-recommends 1password-cli \
-    && rm -rf /apt-dl/* \
+    && rm -rf /apt-dl/* && mkdir -p /apt-dl/partial \
     && WAZUH_MANAGER=127.0.0.1 apt-get -o Dir::Cache::archives=/apt-dl install -y --no-install-recommends \
         wazuh-agent=${WAZUH_VERSION}-1 \
     && rm -rf /apt-dl /var/lib/apt/lists/*
