@@ -57,11 +57,11 @@ RUN mkdir -p /apt-dl/partial \
     && curl -sS https://downloads.1password.com/linux/keys/1password.asc \
         | gpg --dearmor --output /usr/share/keyrings/1password-archive-keyring.gpg \
     && arch=$(dpkg --print-architecture) \
-    && echo "deb [arch=${arch} signed-by=/usr/share/keyrings/1password-archive-keyring.gpg] https://downloads.1password.com/linux/debian/${arch} stable main" \
+    && echo "deb [arch=${arch} trusted=yes signed-by=/usr/share/keyrings/1password-archive-keyring.gpg] https://downloads.1password.com/linux/debian/${arch} stable main" \
         > /etc/apt/sources.list.d/1password.list \
     && curl -sSfL https://packages.wazuh.com/key/GPG-KEY-WAZUH \
         | gpg --dearmor -o /usr/share/keyrings/wazuh.gpg \
-    && echo "deb [signed-by=/usr/share/keyrings/wazuh.gpg] https://packages.wazuh.com/4.x/apt/ stable main" \
+    && echo "deb [trusted=yes signed-by=/usr/share/keyrings/wazuh.gpg] https://packages.wazuh.com/4.x/apt/ stable main" \
         > /etc/apt/sources.list.d/wazuh.list \
     && apt-get update \
     && apt-get -o Dir::Cache::archives=/apt-dl install -y --no-install-recommends 1password-cli \

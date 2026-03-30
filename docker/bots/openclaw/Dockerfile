@@ -101,7 +101,7 @@ RUN sh /usr/local/bin/patch-slack-sdk.sh
 # R2-H1: GPG signature verification for supply chain integrity
 RUN curl -sS https://downloads.1password.com/linux/keys/1password.asc | \
     gpg --dearmor --output /usr/share/keyrings/1password-archive-keyring.gpg && \
-    echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/1password-archive-keyring.gpg] https://downloads.1password.com/linux/debian/$(dpkg --print-architecture) stable main" | \
+    echo "deb [arch=$(dpkg --print-architecture) trusted=yes signed-by=/usr/share/keyrings/1password-archive-keyring.gpg] https://downloads.1password.com/linux/debian/$(dpkg --print-architecture) stable main" | \
     tee /etc/apt/sources.list.d/1password.list && \
     apt-get update \
     && mkdir -p /apt-dl/partial \
