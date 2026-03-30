@@ -298,8 +298,29 @@ async def log_requests(request: Request, call_next):
 
 @app.middleware("http")
 async def security_headers_middleware(request: Request, call_next):
-    """Add security headers to all responses (defense-in-depth)."""
-    response = await call_next(request)
+    """Add security headers to all responses (defense-in-depth).
+
+    Also catches Python 3.11+ BaseExceptionGroup raised by anyio TaskGroups
+    when connections are cancelled (e.g. DNS timeouts). Starlette's
+    ServerErrorMiddleware only catches Exception, not BaseException, so
+    BaseExceptionGroup (which wraps CancelledError) would otherwise crash
+    the ASGI worker. This is the outermost @app.middleware, so it runs first.
+    """
+    try:
+        response = await call_next(request)
+    except BaseException as exc:
+        # BaseExceptionGroup is a BaseException (not Exception) in Python 3.11+
+        # when any contained exception is a BaseException (e.g. CancelledError).
+        if hasattr(exc, "exceptions"):
+            logger.error(
+                "ASGI ExceptionGroup caught in outermost middleware — returning 500",
+                exc_info=True,
+            )
+            return JSONResponse(
+                status_code=status.HTTP_500_INTERNAL_SERVER_ERROR,
+                content={"detail": "Internal server error"},
+            )
+        raise
     # Only add if not already set (allow per-route overrides like CSP)
     if "X-Content-Type-Options" not in response.headers:
         response.headers["X-Content-Type-Options"] = "nosniff"
@@ -489,7 +510,7 @@ async def op_proxy(request: OpProxyRequest, auth: AuthRequired):
     def _do_op_read(session: str):
         return subprocess.run(
             ["op", "read", "--session", session, reference],
-            capture_output=True, text=True, timeout=90,
+            capture_output=True, text=True, timeout=30,
         )
 
     def _refresh_session() -> "str | None":
@@ -506,13 +527,13 @@ async def op_proxy(request: OpProxyRequest, auth: AuthRequired):
             r = subprocess.run(
                 ["op", "account", "add", "--address", "my.1password.com",
                  "--email", email, "--secret-key", key, "--signin", "--raw"],
-                input=password, capture_output=True, text=True, timeout=120,
+                input=password, capture_output=True, text=True, timeout=30,
             )
             if r.returncode == 0 and r.stdout.strip():
                 return r.stdout.strip()
         r = subprocess.run(
             ["op", "signin", "--raw"],
-            input=password, capture_output=True, text=True, timeout=60,
+            input=password, capture_output=True, text=True, timeout=30,
         )
         return r.stdout.strip() if r.returncode == 0 else None
 

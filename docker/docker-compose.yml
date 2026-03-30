@@ -70,6 +70,10 @@ services:
       - AGENTSHROUD_LOCAL_MODEL_REF=${AGENTSHROUD_LOCAL_MODEL_REF:-ollama/qwen3:14b}
       - OPENCLAW_MAIN_MODEL=${OPENCLAW_MAIN_MODEL:-}
       - DOCKER_CONTENT_TRUST=1
+      # Image digest refs for cosign supply-chain verification. Set to
+      # repo@sha256:<digest> at deploy time. Left empty disables verification.
+      - AGENTSHROUD_BOT_IMAGE_REF=${AGENTSHROUD_BOT_IMAGE_REF:-}
+      - AGENTSHROUD_GATEWAY_IMAGE_REF=${AGENTSHROUD_GATEWAY_IMAGE_REF:-}
       - AGENTSHROUD_COMPOSE_HOST=marvin
       - AGENTSHROUD_COMPOSE_DIR=/Users/agentshroud-bot/Development/agentshroud
       - TRIVY_CACHE_DIR=/var/log/security/.trivy-cache
@@ -120,9 +124,11 @@ services:
 
     # Gateway resolves DNS via Pi-hole (192.168.7.45) for network-wide ad/tracking protection.
     # Router (192.168.7.1) is fallback only — no DNS filtering.
+    # Cloudflare (1.1.1.1) is last-resort fallback during Pi-hole/router outages (Colima DNS instability).
     dns:
       - 192.168.7.45
       - 192.168.7.1
+      - 1.1.1.1
 
     # Gateway on BOTH networks: internal (internet) + isolated (to bot)
     networks:
@@ -156,7 +162,7 @@ services:
       - openclaw-runtime:/home/node/.npm-global
       - agentshroud-browsers:/home/node/.cache/ms-playwright
       - ../branding:/app/branding:ro
-      - ../memory-backups:/app/memory-backups
+      - memory-backups:/app/memory-backups
       - wazuh-alerts:/var/ossec/logs/alerts
     secrets:
       - gateway_password
@@ -240,9 +246,11 @@ services:
       retries: 3
       start_period: 60s
     # Bot resolves DNS via Pi-hole — same as gateway for consistent DNS protection.
+    # Cloudflare (1.1.1.1) is last-resort fallback during Pi-hole/router outages.
     dns:
       - 192.168.7.45
       - 192.168.7.1
+      - 1.1.1.1
     networks:
       - agentshroud-internal
       - agentshroud-isolated
@@ -322,4 +330,6 @@ volumes:
   wazuh-alerts:
     driver: local
   clamav-db:
+    driver: local
+  memory-backups:
     driver: local

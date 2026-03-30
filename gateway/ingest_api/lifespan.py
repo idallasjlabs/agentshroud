@@ -107,7 +107,7 @@ async def lifespan(app: FastAPI):
                  "--email", email,
                  "--secret-key", key,
                  "--signin", "--raw"],
-                input=password, capture_output=True, text=True, timeout=120,
+                input=password, capture_output=True, text=True, timeout=30,
             )
             if r.returncode == 0 and r.stdout.strip():
                 return r.stdout.strip()
@@ -115,7 +115,7 @@ async def lifespan(app: FastAPI):
         # Tier 2: op signin --raw (account already registered on this host)
         r = subprocess.run(
             ["op", "signin", "--raw"],
-            input=password, capture_output=True, text=True, timeout=60,
+            input=password, capture_output=True, text=True, timeout=30,
         )
         if r.returncode == 0 and r.stdout.strip():
             return r.stdout.strip()
