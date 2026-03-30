@@ -220,6 +220,15 @@ fi
 echo "[startup] Bootstrapping OpenClaw config..."
 /usr/local/bin/init-openclaw-config.sh
 
+# CVE-2021-23358: upgrade underscore in bot workspace if pinned to vulnerable version (<1.12.1)
+# underscore@1.7.0 allows arbitrary code execution via _.template(); fixed in >=1.12.1
+_WORKSPACE_PKG="/home/node/agentshroud/workspace/package-lock.json"
+if [ -f "$_WORKSPACE_PKG" ] && grep -q '"underscore"' "$_WORKSPACE_PKG" 2>/dev/null; then
+    cd /home/node/agentshroud/workspace && npm update underscore --no-fund --no-audit 2>/dev/null || true
+    cd /home/node
+    echo "[startup] ✓ underscore updated (CVE-2021-23358)"
+fi
+
 # Wait briefly for background iCloud fetch, then source if ready
 if [ -n "${_ICLOUD_BG_PID:-}" ]; then
     # Give it 3 seconds — if it's not done, gateway starts without iCloud
