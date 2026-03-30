@@ -444,11 +444,14 @@ def _load_latest_json(directory: Path, prefix: str = "") -> Optional[Dict[str, A
     files = sorted(directory.glob(pattern), reverse=True)
     if not files:
         return None
-    try:
-        return json.loads(files[0].read_text())
-    except Exception as exc:
-        logger.warning("Failed to load report from %s: %s", files[0], exc)
-        return None
+    for f in files:
+        if f.stat().st_size == 0:
+            continue
+        try:
+            return json.loads(f.read_text())
+        except Exception as exc:
+            logger.warning("Failed to load report from %s: %s", f, exc)
+    return None
 
 
 # ---------------------------------------------------------------------------
