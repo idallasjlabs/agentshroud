@@ -222,13 +222,15 @@ RUN find / -perm /6000 -type f -exec chmod a-s {} + 2>/dev/null || true
 ENV NPM_CONFIG_PREFIX=/home/node/.npm-global
 ENV PATH="/home/node/.npm-global/bin:${PATH}"
 
+# Create memory-backups directory as node:node so Docker named volumes
+# are initialized with correct ownership (prevents root:root write failures).
+# Must run as root (before USER node) since /app is root-owned.
+RUN mkdir -p /app/memory-backups && chown node:node /app/memory-backups
+
 # Switch to non-root user (node user has UID 1000)
 USER node
 ENV HOME=/home/node
 WORKDIR /home/node
-# Create memory-backups directory as node:node so Docker named volumes
-# are initialized with correct ownership (prevents root:root write failures).
-RUN mkdir -p /app/memory-backups
 
 # Expose AgentShroud gateway port
 EXPOSE 18789
