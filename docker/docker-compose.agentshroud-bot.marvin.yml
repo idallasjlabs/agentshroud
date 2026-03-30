@@ -22,19 +22,6 @@ services:
     container_name: agentshroud-marvin-bot
     ports: !override
       - "127.0.0.1:19789:18789"
-    # Bind mount memory-backups so backups land directly on the host filesystem
-    # (macOS virtiofs / agentshroud-bot user has UID matching node:1000 in container).
-    # Other hosts use the named volume from the base compose for correct ownership.
-    volumes:
-      - agentshroud-config:/home/node/.agentshroud
-      - agentshroud-workspace:/home/node/agentshroud/workspace
-      - gateway-data:/home/node/agentshroud/gateway-data:ro
-      - agentshroud-ssh:/home/node/.ssh
-      - openclaw-runtime:/home/node/.npm-global
-      - agentshroud-browsers:/home/node/.cache/ms-playwright
-      - ../branding:/app/branding:ro
-      - ../memory-backups:/app/memory-backups
-      - wazuh-alerts:/var/ossec/logs/alerts
     environment:
       - GATEWAY_HOST_PORT=9080
       - OPENCLAW_BOT_NAME=agentshroud_bot_marvin
