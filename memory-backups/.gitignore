@@ -1,7 +1,0 @@
-# Backup content (personal data — never commit)
-MEMORY.md
-memory/*.md
-# Keep the directory structure
-!README.md
-!.gitignore
-!memory/.gitkeep
