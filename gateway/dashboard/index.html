@@ -404,7 +404,27 @@ body{
   font-size:10px;color:var(--text-3);
   text-align:right;
 }
+/* ── Light mode ─────────────────────────────────────────────────────────── */
+[data-theme="light"]{
+  --bg:#f6f8fa;--surface:#ffffff;--surface-2:#f0f4f8;--surface-3:#e8edf3;
+  --border:#d0d7de;--border-bright:#b6bfc8;
+  --brand:#0969da;--brand-dim:rgba(9,105,218,0.10);--brand-mid:rgba(9,105,218,0.20);
+  --brand-glow:0 0 20px rgba(9,105,218,0.20);
+  --text:#1f2328;--text-2:#656d76;--text-3:#8c959f;
+  --green:#1a7f37;--green-dim:rgba(26,127,55,0.12);
+  --yellow:#9a6700;--yellow-dim:rgba(154,103,0,0.12);
+  --red:#cf222e;--red-dim:rgba(207,34,46,0.12);
+  --purple:#8250df;--purple-dim:rgba(130,80,223,0.12);
+}
+[data-theme="light"] body{background:var(--bg);color:var(--text);}
+/* Theme toggle button */
+.theme-toggle{background:none;border:1px solid var(--border);color:var(--text-3);
+  border-radius:6px;width:28px;height:28px;cursor:pointer;font-size:14px;
+  display:flex;align-items:center;justify-content:center;flex-shrink:0;
+  transition:background 0.15s,border-color 0.15s,color 0.15s;}
+.theme-toggle:hover{background:var(--brand-dim);border-color:var(--brand);color:var(--brand);}
 </style>
+<script>(function(){var t=localStorage.getItem('as_theme')||(window.matchMedia&&window.matchMedia('(prefers-color-scheme: light)').matches?'light':'dark');document.documentElement.dataset.theme=t;}());</script>
 </head>
 <body>
 
@@ -431,6 +451,7 @@ body{
     <a class="nav-link" href="/manage/" title="Management Dashboard">Manage</a>
     <div class="header-sep" style="margin:0 4px"></div>
     <span class="uptime-pill" id="uptime">—</span>
+    <button id="theme-toggle" class="theme-toggle" aria-label="Toggle light/dark mode">🌙</button>
   </nav>
 </header>
 
@@ -781,6 +802,8 @@ body{
       .catch(function() { console.warn('Could not fetch WS token'); });
   }
   if (Notification.permission === 'default') Notification.requestPermission();
+  // Theme toggle
+  (function(){var b=document.getElementById('theme-toggle');if(!b)return;b.textContent=document.documentElement.dataset.theme==='light'?'☀':'🌙';b.addEventListener('click',function(){var n=document.documentElement.dataset.theme==='light'?'dark':'light';document.documentElement.dataset.theme=n;localStorage.setItem('as_theme',n);b.textContent=n==='light'?'☀':'🌙';});})();
 })();
 </script>
 </body>

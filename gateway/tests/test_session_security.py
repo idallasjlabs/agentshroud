@@ -155,3 +155,35 @@ class TestSessionCleanup:
         manager.destroy_session(s.session_id)
         with pytest.raises(SessionError):
             manager.validate_session(s.session_id, "1.2.3.4", "UA")
+
+
+# ── C47: Per-Instruction Replay Prevention tests ──────────────────────────────
+
+class TestInstructionNonce:
+    @pytest.fixture
+    def manager(self):
+        return SessionManager(
+            max_session_age=3600, max_sessions_per_ip=100, rate_limit_window=60
+        )
+
+    def test_nonce_generation_unique(self, manager):
+        """Each call generates a distinct nonce."""
+        nonces = {manager.generate_instruction_nonce() for _ in range(50)}
+        assert len(nonces) == 50
+
+    def test_nonce_first_use_passes(self, manager):
+        """A freshly generated nonce validates on first use."""
+        nonce = manager.generate_instruction_nonce()
+        assert manager.validate_nonce(nonce) is True
+
+    def test_nonce_replay_blocked(self, manager):
+        """Replaying the same nonce is rejected."""
+        nonce = manager.generate_instruction_nonce()
+        manager.validate_nonce(nonce)  # consume it
+        assert manager.validate_nonce(nonce) is False
+
+    def test_nonce_expired_rejected(self, manager):
+        """A nonce with a timestamp outside the 5-min window is rejected."""
+        old_ts = int(time.time()) - 400  # 6+ minutes ago
+        stale_nonce = f"{old_ts}:{'a' * 32}"
+        assert manager.validate_nonce(stale_nonce) is False

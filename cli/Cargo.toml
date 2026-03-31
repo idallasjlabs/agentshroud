@@ -1,0 +1,23 @@
+[package]
+name = "agentshroud-soc"
+version = "0.9.0"
+edition = "2021"
+authors = ["Isaiah Jefferson <agentshroud.ai@gmail.com>"]
+description = "AgentShroud SOC CLI — Shared Command Layer (Rust, v1.0.0 target)"
+license = "Proprietary"
+
+[[bin]]
+name = "agentshroud-soc"
+path = "src/main.rs"
+
+[dependencies]
+clap = { version = "4", features = ["derive", "env"] }
+reqwest = { version = "0.12", features = ["json", "blocking"] }
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+tokio = { version = "1", features = ["full"] }
+tokio-tungstenite = { version = "0.24", features = ["native-tls"] }
+futures-util = "0.3"
+tabled = "0.15"
+colored = "2"
+anyhow = "1"

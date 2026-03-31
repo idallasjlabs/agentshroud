@@ -448,5 +448,40 @@ class TestMultiTurnTracker:
         assert success is False
 
 
+# ── C30: Response Consistency Scoring tests ───────────────────────────────────
+
+class TestResponseConsistency:
+    @pytest.fixture
+    def tracker(self):
+        return MultiTurnTracker()
+
+    def test_consistent_response_scores_high(self, tracker):
+        query = "What is the capital of France?"
+        response = "The capital of France is Paris."
+        result = tracker.score_response_consistency("s1", response, query)
+        assert result.score >= 0.6
+        assert "unsolicited_tool_call" not in result.anomalies
+
+    def test_off_topic_response_scores_low(self, tracker):
+        query = "Tell me about Python programming."
+        response = "Bananas are yellow fruits."
+        result = tracker.score_response_consistency("s2", response, query)
+        assert result.score < 1.0
+
+    def test_unsolicited_tool_call_flagged(self, tracker):
+        query = "Hello"
+        response = "Sure! <function_calls><invoke name='read_file'></invoke></function_calls>"
+        result = tracker.score_response_consistency("s3", response, query)
+        assert "unsolicited_tool_call" in result.anomalies
+        assert result.score < 1.0
+
+    def test_language_mismatch_or_anomalies(self, tracker):
+        query = "Hi"
+        # Vastly disproportionate response length
+        response = "word " * 1000
+        result = tracker.score_response_consistency("s4", response, query)
+        assert result.score < 1.0
+
+
 if __name__ == "__main__":
     pytest.main([__file__])

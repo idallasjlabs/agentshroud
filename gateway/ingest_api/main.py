@@ -16,6 +16,7 @@ Entry point for the gateway API. Wires together all components:
 """
 
 
+import asyncio
 import fnmatch
 import hashlib
 import json
@@ -31,6 +32,7 @@ from typing import Annotated, Optional
 from fastapi import Depends, FastAPI, HTTPException, Query, Request, WebSocket, status
 from pydantic import BaseModel, Field
 from fastapi.responses import JSONResponse, HTMLResponse
+from fastapi.staticfiles import StaticFiles
 from starlette.responses import RedirectResponse
 from pathlib import Path
 
@@ -56,6 +58,7 @@ from .routes.health import router as health_router
 from .routes.forward import router as forward_router
 from .routes.approval import router as approval_router
 from .routes.dashboard import router as dashboard_router
+from ..soc.router import router as soc_router
 from ..ssh_proxy.proxy import SSHProxy
 from .router import ForwardError, MultiAgentRouter
 from ..security.prompt_guard import PromptGuard
@@ -150,7 +153,7 @@ logger = logging.getLogger("agentshroud.gateway.main")
 app = FastAPI(
     title="AgentShroud Gateway",
     description="Ingest API for the AgentShroud proxy layer framework",
-    version="0.8.0",
+    version="0.9.0",
     lifespan=lifespan,
 )
 
@@ -188,6 +191,30 @@ app.include_router(management_dashboard_router)
 
 # Mount version management routes (gateway Bearer auth)
 app.include_router(version_router, dependencies=[Depends(auth_dep)])
+
+# Mount Shared Command Layer (SCL) — unified /soc/v1/ API + /soc/ dashboard
+app.include_router(soc_router)
+
+# Redirect bare /soc and /soc/ to canonical /soc/v1/ prefix
+@app.get("/soc", include_in_schema=False)
+@app.get("/soc/", include_in_schema=False)
+async def soc_redirect():
+    return RedirectResponse(url="/soc/v1/", status_code=307)
+
+# Serve SOC static assets at /soc/static/
+_soc_static = Path(__file__).parent.parent / "soc" / "static"
+if _soc_static.exists():
+    app.mount("/soc/static", StaticFiles(directory=str(_soc_static)), name="soc-static")
+
+# Serve brand logos at /soc/branding/ (branding/ dir is mounted at /app/branding in Docker)
+_soc_branding = Path(__file__).parent.parent.parent / "branding" / "logos" / "png"
+if _soc_branding.exists():
+    app.mount("/soc/branding", StaticFiles(directory=str(_soc_branding)), name="soc-branding")
+
+# Serve favicons at /soc/favicons/
+_soc_favicons = Path(__file__).parent.parent.parent / "branding" / "favicons"
+if _soc_favicons.exists():
+    app.mount("/soc/favicons", StaticFiles(directory=str(_soc_favicons)), name="soc-favicons")
 
 
 # === CORS Middleware ===
@@ -271,8 +298,29 @@ async def log_requests(request: Request, call_next):
 
 @app.middleware("http")
 async def security_headers_middleware(request: Request, call_next):
-    """Add security headers to all responses (defense-in-depth)."""
-    response = await call_next(request)
+    """Add security headers to all responses (defense-in-depth).
+
+    Also catches Python 3.11+ BaseExceptionGroup raised by anyio TaskGroups
+    when connections are cancelled (e.g. DNS timeouts). Starlette's
+    ServerErrorMiddleware only catches Exception, not BaseException, so
+    BaseExceptionGroup (which wraps CancelledError) would otherwise crash
+    the ASGI worker. This is the outermost @app.middleware, so it runs first.
+    """
+    try:
+        response = await call_next(request)
+    except BaseException as exc:
+        # BaseExceptionGroup is a BaseException (not Exception) in Python 3.11+
+        # when any contained exception is a BaseException (e.g. CancelledError).
+        if hasattr(exc, "exceptions"):
+            logger.error(
+                "ASGI ExceptionGroup caught in outermost middleware — returning 500",
+                exc_info=True,
+            )
+            return JSONResponse(
+                status_code=status.HTTP_500_INTERNAL_SERVER_ERROR,
+                content={"detail": "Internal server error"},
+            )
+        raise
     # Only add if not already set (allow per-route overrides like CSP)
     if "X-Content-Type-Options" not in response.headers:
         response.headers["X-Content-Type-Options"] = "nosniff"
@@ -462,7 +510,7 @@ async def op_proxy(request: OpProxyRequest, auth: AuthRequired):
     def _do_op_read(session: str):
         return subprocess.run(
             ["op", "read", "--session", session, reference],
-            capture_output=True, text=True, timeout=90,
+            capture_output=True, text=True, timeout=30,
         )
 
     def _refresh_session() -> "str | None":
@@ -479,13 +527,13 @@ async def op_proxy(request: OpProxyRequest, auth: AuthRequired):
             r = subprocess.run(
                 ["op", "account", "add", "--address", "my.1password.com",
                  "--email", email, "--secret-key", key, "--signin", "--raw"],
-                input=password, capture_output=True, text=True, timeout=120,
+                input=password, capture_output=True, text=True, timeout=30,
             )
             if r.returncode == 0 and r.stdout.strip():
                 return r.stdout.strip()
         r = subprocess.run(
             ["op", "signin", "--raw"],
-            input=password, capture_output=True, text=True, timeout=60,
+            input=password, capture_output=True, text=True, timeout=30,
         )
         return r.stdout.strip() if r.returncode == 0 else None
 
@@ -1164,7 +1212,9 @@ async def run_clamav_scan(auth: AuthRequired, target: str = "/app"):
     # Prefer clamdscan (daemon, shared memory) if clamd is running, else clamscan
     import os as _os
     _bin = "clamdscan" if (_sh.which("clamdscan") and _os.path.exists("/var/run/clamav/clamd.ctl")) else "clamscan"
-    result = app_state.clamav_scanner.run_clamscan(target=target, timeout=120, clamscan_bin=_bin)
+    result = await asyncio.get_running_loop().run_in_executor(
+        None, lambda: app_state.clamav_scanner.run_clamscan(target=target, timeout=120, clamscan_bin=_bin)
+    )
     await _record_scanner_result("clamav", result, target=target)
     if app_state.alert_dispatcher and result.get("infected_count", 0) > 0:
         app_state.alert_dispatcher.dispatch(
@@ -1314,6 +1364,51 @@ async def full_security_report(auth: AuthRequired):
 
     report = app_state.health_report.generate_report(summaries=summaries, save_history=False)
     return report
+
+
+@app.post("/api/alerts")
+async def receive_security_alert(request: Request):
+    """Receive structured security alerts from gateway-internal scripts.
+
+    Called by security-scan.sh, security-entrypoint.sh, and security-report.sh
+    running inside the gateway container. No auth required — only reachable from
+    localhost (127.0.0.1) within the container.
+
+    Payload schema:
+        type      — "security_alert" | "health_report"
+        severity  — "CRITICAL" | "HIGH" | "WARNING" | "INFO"
+        tool      — scanner name (e.g. "clamav", "trivy", "health_report")
+        message   — human-readable description
+        timestamp — ISO-8601 (optional)
+    """
+    try:
+        body = await request.json()
+    except Exception:
+        body = {}
+
+    severity = body.get("severity", "INFO").upper()
+    tool = body.get("tool", "unknown")
+    message = body.get("message", "")
+    alert_type = body.get("type", "security_alert")
+
+    log_fn = logger.warning if severity in ("CRITICAL", "HIGH", "WARNING") else logger.info
+    log_fn("[security-alert] type=%s severity=%s tool=%s message=%s", alert_type, severity, tool, message[:200])
+
+    if app_state.event_bus:
+        try:
+            await app_state.event_bus.publish({
+                "event_type": "security_alert",
+                "source": "security_script",
+                "alert_type": alert_type,
+                "severity": severity,
+                "tool": tool,
+                "message": message,
+                "timestamp": body.get("timestamp"),
+            })
+        except Exception:
+            pass
+
+    return {"ok": True, "received": True}
 
 
 @app.get("/manage/scanners/summary")
@@ -2218,7 +2313,9 @@ async def run_all_scanners(auth: AuthRequired):
         import os as _os
 
         _bin = "clamdscan" if (_sh.which("clamdscan") and _os.path.exists("/var/run/clamav/clamd.ctl")) else "clamscan"
-        clam = app_state.clamav_scanner.run_clamscan(target="/app", timeout=120, clamscan_bin=_bin)
+        clam = await asyncio.get_running_loop().run_in_executor(
+            None, lambda: app_state.clamav_scanner.run_clamscan(target="/app", timeout=120, clamscan_bin=_bin)
+        )
         await _record_scanner_result("clamav", clam, target="/app")
         results["clamav"] = clam
     else:
@@ -2935,13 +3032,15 @@ async def deep_security_test(auth: AuthRequired):
     # ═══════════════════════════════════════════════════
     # 28. CLAMAV — live scan
     # ═══════════════════════════════════════════════════
-    def t_clamav():
+    async def t_clamav():
         scanner = getattr(app_state, "clamav_scanner", None)
         if not scanner or not shutil.which("clamscan"):
             return False, "ClamAV not available"
-        r = scanner.run_clamscan(target="/app/agentshroud.yaml", timeout=60, clamscan_bin="clamscan")
+        r = await asyncio.get_running_loop().run_in_executor(
+            None, lambda: scanner.run_clamscan(target="/app/agentshroud.yaml", timeout=60, clamscan_bin="clamscan")
+        )
         return r.get("returncode") == 0, f"rc={r.get('returncode')}, infected={r.get('infected_count')}"
-    test("ClamAV: live scan", "antivirus", t_clamav)
+    await atest("ClamAV: live scan", "antivirus", t_clamav)
 
     # ═══════════════════════════════════════════════════
     # 29. TRIVY — misconfig scan
@@ -3434,7 +3533,7 @@ async def get_soc2_compliance_report(auth: AuthRequired):
 
     return {
         "standard": "SOC 2 Type II — Trust Service Criteria",
-        "version": "v0.8.0-watchtower",
+        "version": "v0.9.0",
         "criteria_total": len(criteria),
         "criteria_covered": len(covered),
         "criteria_gaps": len(gaps),
@@ -3628,6 +3727,7 @@ _slack_proxy = SlackAPIProxy(
     middleware_manager=None,
     sanitizer=None,
     tracker=None,   # Will be wired to app_state.collaborator_tracker at request time
+    # owner_slack_user_id read from AGENTSHROUD_SLACK_OWNER_USER_ID env var at init time
 )
 
 @app.api_route('/telegram-api/{path:path}', methods=['GET', 'POST', 'PUT', 'DELETE'])
@@ -3683,9 +3783,17 @@ async def telegram_api_proxy(path: str, request: Request):
     # System notifications (startup/shutdown from start.sh) carry X-AgentShroud-System: 1
     # so the proxy skips outbound content filtering — these are not LLM-generated output.
     is_system = request.headers.get("x-agentshroud-system") == "1"
-    from fastapi.responses import JSONResponse
+    from fastapi.responses import JSONResponse, Response
     result = await _telegram_proxy.proxy_request(bot_token, method, body, content_type, is_system=is_system, path_prefix=file_prefix)
-    
+
+    # File downloads return binary data — serve as-is rather than JSON-encoding.
+    if "_raw_body" in result:
+        return Response(
+            content=result["_raw_body"],
+            media_type=result.get("_content_type", "application/octet-stream"),
+            status_code=result.get("_status_code", 200),
+        )
+
     status_code = 200 if result.get('ok', False) else result.get('error_code', 500)
     return JSONResponse(content=result, status_code=status_code)
 
@@ -3729,3 +3837,72 @@ async def slack_api_proxy(path: str, request: Request):
     from fastapi.responses import JSONResponse
     result = await _slack_proxy.proxy_outbound(path, body, content_type, is_system=is_system)
     return JSONResponse(content=result)
+
+
+@app.websocket("/slack-ws-relay")
+async def slack_ws_relay(websocket: WebSocket, t: str = Query(...)):
+    """WebSocket relay for Slack Socket Mode inbound traffic.
+
+    Bot connects here (ws://) instead of directly to Slack (wss://).
+    The gateway bridges both sides and inspects Slack→Bot frames for
+    events_api message envelopes to record collaborator inbound activity.
+
+    The relay token `t` is a one-time value issued by SlackAPIProxy when it
+    intercepts apps.connections.open. It maps to the real Slack WSS URL.
+    """
+    import websockets as _websockets
+
+    real_url = _slack_proxy.consume_relay_token(t)
+    if not real_url:
+        await websocket.close(code=4403)
+        return
+
+    await websocket.accept()
+
+    async def _upstream_to_bot(upstream) -> None:
+        """Forward Slack→Bot frames; inspect for inbound message events."""
+        async for frame in upstream:
+            if isinstance(frame, str):
+                try:
+                    data = json.loads(frame)
+                    if data.get("type") == "events_api":
+                        event = data.get("payload", {}).get("event", {})
+                        if event.get("type") == "message" and event.get("user"):
+                            tracker = getattr(app_state, "collaborator_tracker", None)
+                            if tracker:
+                                tracker.record_activity(
+                                    user_id=event["user"],
+                                    username=event.get("user", "unknown"),
+                                    message_preview=str(event.get("text", ""))[:80],
+                                    source="slack",
+                                    direction="inbound",
+                                )
+                except (json.JSONDecodeError, KeyError):
+                    pass
+                await websocket.send_text(frame)
+            else:
+                await websocket.send_bytes(frame)
+
+    async def _bot_to_upstream(upstream) -> None:
+        """Forward Bot→Slack frames (acks, etc.)."""
+        try:
+            while True:
+                data = await websocket.receive_text()
+                await upstream.send(data)
+        except Exception:
+            pass
+
+    try:
+        async with _websockets.connect(real_url) as upstream:
+            await asyncio.gather(
+                _upstream_to_bot(upstream),
+                _bot_to_upstream(upstream),
+                return_exceptions=True,
+            )
+    except Exception as exc:
+        logger.warning("slack_ws_relay: connection error: %s", exc)
+    finally:
+        try:
+            await websocket.close()
+        except Exception:
+            pass

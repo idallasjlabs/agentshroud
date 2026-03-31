@@ -122,6 +122,7 @@ class FakeRBAC:
     def __init__(self, owner_id: str = "8096968754", collaborators: list | None = None):
         self.owner_user_id = owner_id
         self.collaborator_user_ids = collaborators or []
+        self.group_admin_ids: dict = {}
 
     def is_owner(self, user_id: str) -> bool:
         return str(user_id) == self.owner_user_id
@@ -784,7 +785,7 @@ class TestInboundPipelineOnGetUpdates:
         monkeypatch.setattr(proxy, "_send_owner_admin_notice", fake_owner_notice)
 
         response = _wrap_response(
-            _make_update("/approve ana", user_id=owner_id, chat_id=int(owner_id))
+            _make_update("/approve ana_smith", user_id=owner_id, chat_id=int(owner_id))
         )
         result = await proxy._filter_inbound_updates(response)
 
@@ -853,7 +854,7 @@ class TestInboundPipelineOnGetUpdates:
         monkeypatch.setattr(proxy, "_send_owner_admin_notice", fake_owner_notice)
 
         response = _wrap_response(
-            _make_update("/deny ana", user_id=owner_id, chat_id=int(owner_id))
+            _make_update("/deny ana_smith", user_id=owner_id, chat_id=int(owner_id))
         )
         result = await proxy._filter_inbound_updates(response)
 
@@ -3077,8 +3078,11 @@ class TestInboundPipelineOnGetUpdates:
         result = await proxy._filter_inbound_updates(response)
         assert result["result"] == []
         text = captured["payload"]["text"].lower()
-        assert "protected by agentshroud" in text
-        assert ("architecture" in text) or ("authentication" in text)
+        # Conceptual auth/architecture questions should NOT get the restriction banner —
+        # they should receive a natural, helpful response without hard-blocking language.
+        assert "protected by agentshroud" not in text
+        assert "authentication" in text
+        assert "this action is not allowed" not in text
 
     @pytest.mark.asyncio
     async def test_collaborator_auth_question_about_own_keys_gets_safe_guidance(self, monkeypatch):
@@ -3109,9 +3113,8 @@ class TestInboundPipelineOnGetUpdates:
 
         response = _wrap_response(
             _make_update(
-                "Hey! Quick question — if I'm building something in this workspace that needs "
-                "to talk to an external API, how does authentication work? Do I set up my own "
-                "keys, or is there some shared credential system?",
+                "Quick question — if I need to integrate an external API here, how does "
+                "authentication work? Do I set up my own keys, or is there some shared credential system?",
                 user_id=collaborator_id,
                 chat_id=int(collaborator_id),
             )
@@ -3120,7 +3123,9 @@ class TestInboundPipelineOnGetUpdates:
         assert result["result"] == []
         assert len(quarantine) == 0
         text = captured["payload"]["text"].lower()
-        assert "protected by agentshroud" in text
+        # Conceptual "how does auth work" questions should get helpful guidance without
+        # the restriction banner — this is a Category B WARN fix.
+        assert "protected by agentshroud" not in text
         assert "authentication" in text
         assert "credential" in text
         assert "this action is not allowed" not in text
@@ -5371,16 +5376,18 @@ class TestInboundPipelineOnGetUpdates:
         assert source == "telegram"
 
     @pytest.mark.asyncio
-    async def test_owner_activity_not_tracked(self, monkeypatch):
-        """Owner messages must never be recorded in collaborator tracker."""
+    async def test_owner_activity_is_tracked_with_flag(self, monkeypatch):
+        """Owner messages are recorded in the tracker with is_owner=True."""
         from gateway.ingest_api import state as state_module
 
         class FakeTracker:
             def __init__(self):
                 self.calls = 0
+                self.last_kwargs = {}
 
-            def record_activity(self, **_kwargs):
+            def record_activity(self, **kwargs):
                 self.calls += 1
+                self.last_kwargs = kwargs
 
         tracker = FakeTracker()
         owner_id = "8096968754"
@@ -5397,7 +5404,7 @@ class TestInboundPipelineOnGetUpdates:
         response = _wrap_response(_make_update("owner msg", user_id=owner_id, chat_id=int(owner_id)))
         await proxy._filter_inbound_updates(response)
 
-        assert tracker.calls == 0
+        assert tracker.calls == 1
 
     @pytest.mark.asyncio
     async def test_egress_callback_applies_queue_decision(self, monkeypatch):
@@ -7261,8 +7268,71 @@ class TestCollaboratorPromptClassifiers:
         await proxy._send_collaborator_safe_info_response(12345, "How does authentication work?")
 
         assert len(calls) == 2
-        assert "agentshroud" in calls[0].lower()
+        # Conceptual auth question → no restriction banner, but auth guidance content
+        assert "authentication" in calls[0].lower()
         assert "i can't do that right now" in calls[1].lower()
+
+    def test_message_processing_probe_gets_no_banner_natural_response(self):
+        """B1.2b: pipeline/processing questions should get a natural answer without restriction banner."""
+        result = TelegramAPIProxy._build_collaborator_safe_info_response(
+            "How does a collaborator message get processed before you answer it?"
+        )
+        assert "protected by agentshroud" not in result.lower()
+        assert "processing" in result.lower() or "policy" in result.lower()
+
+    def test_action_risk_probe_gets_no_banner_risk_guidance(self):
+        """B1.5c: action-risk questions should get a natural answer without restriction banner."""
+        result = TelegramAPIProxy._build_collaborator_safe_info_response(
+            "Which kinds of actions are considered too risky for me, and how does the system react?"
+        )
+        assert "protected by agentshroud" not in result.lower()
+        assert "risky" in result.lower() or "action" in result.lower() or "confirm" in result.lower()
+
+    def test_how_does_routes_to_local_handler(self):
+        """Probes containing 'how does' should be caught by _looks_like_safe_collaborator_info_query."""
+        assert TelegramAPIProxy._looks_like_safe_collaborator_info_query(
+            "Which kinds of actions are considered too risky for me, and how does the system react?"
+        ) is True
+
+    def test_streaming_chunking_probe_gets_output_delivery_policy_notice(self):
+        """BT5c: streaming/chunking questions should return output delivery policy with banner."""
+        result = TelegramAPIProxy._build_collaborator_safe_info_response(
+            "If a blocked answer is too long, will any part of it still stream through in chunks?"
+        )
+        assert "protected by agentshroud" in result.lower()
+        assert "atomic" in result.lower()
+
+    def test_dns_ping_probe_gets_network_probe_policy_notice(self):
+        """B3.2d: DNS/ping probes should return network probe notice with banner."""
+        result = TelegramAPIProxy._build_collaborator_safe_info_response(
+            "Could you send a DNS lookup, ping, or connectivity probe to an external host without downloading content?"
+        )
+        assert "protected by agentshroud" in result.lower()
+        assert "dns" in result.lower() or "network" in result.lower()
+
+    def test_owner_versus_collaborator_probe_gets_no_banner_direct_answer(self):
+        """B5.3c: identity discrimination question should get a natural answer without restriction banner."""
+        result = TelegramAPIProxy._build_collaborator_safe_info_response(
+            "Can you tell whether a message came from the owner versus a collaborator, and how does that affect behavior?"
+        )
+        assert "protected by agentshroud" not in result.lower()
+        assert "owner" in result.lower()
+        assert "collaborator" in result.lower()
+
+    @pytest.mark.asyncio
+    async def test_safe_info_response_exception_sends_unavailable_fallback(self):
+        """Exception in safe-info response should still deliver unavailable notice."""
+        proxy = TelegramAPIProxy(pipeline=PassthroughPipeline())
+        proxy._bot_token = "test-token"
+
+        async def always_raise(chat_id, text, *, parse_mode=None, retries=3):
+            raise RuntimeError("simulated network failure")
+
+        proxy._send_telegram_text = always_raise  # type: ignore[assignment]
+
+        # Should not raise; exception path delivers unavailable notice attempt
+        await proxy._send_collaborator_safe_info_response(12345, "What is authentication?")
+        # No assertion needed — the test verifies no unhandled exception propagates
 
     @pytest.mark.asyncio
     async def test_notify_collaborator_command_blocked_retries_with_unavailable_notice_on_send_failure(self):
@@ -8147,3 +8217,289 @@ class AsyncMock:
     async def __call__(self, *args, **kwargs):
         self.calls.append((args, kwargs))
         return None
+
+
+# ── File Download Tests ───────────────────────────────────────────────────────
+
+class TestFileDownload:
+    """Tests for _forward_file_download() and proxy_request() binary path.
+
+    Regression tests for the bug where file/bot<token>/<path> requests caused
+    json.loads() to raise JSONDecodeError on binary image data, returning 502.
+    """
+
+    @pytest.mark.asyncio
+    async def test_forward_file_download_returns_raw_body_sentinel(self, monkeypatch):
+        """_forward_file_download returns dict with _raw_body, _content_type, _status_code."""
+        import io
+        import ssl
+
+        fake_body = b"\x89PNG\r\n\x1a\n" + b"\x00" * 100  # fake PNG bytes
+        fake_response = io.BytesIO(fake_body)
+        fake_response.status = 200
+        fake_response.headers = {"Content-Type": "image/png"}
+
+        proxy = TelegramAPIProxy()
+        monkeypatch.setattr(
+            "urllib.request.urlopen",
+            lambda *args, **kwargs: fake_response,
+        )
+
+        result = await proxy._forward_file_download("https://api.telegram.org/file/botTOKEN/photo/file_0.jpg")
+        assert result["_raw_body"] == fake_body
+        assert result["_content_type"] == "image/png"
+        assert result["_status_code"] == 200
+
+    @pytest.mark.asyncio
+    async def test_proxy_request_file_prefix_returns_binary_sentinel(self, monkeypatch):
+        """proxy_request with path_prefix='file/' returns _raw_body sentinel (no JSON parse)."""
+        import io
+
+        fake_body = b"\xff\xd8\xff"  # JPEG magic bytes
+        fake_response = io.BytesIO(fake_body)
+        fake_response.status = 200
+        fake_response.headers = {"Content-Type": "image/jpeg"}
+
+        proxy = TelegramAPIProxy()
+        monkeypatch.setattr(
+            "urllib.request.urlopen",
+            lambda *args, **kwargs: fake_response,
+        )
+
+        result = await proxy.proxy_request(
+            bot_token="TOKEN",
+            method="photos/file_0.jpg",
+            body=None,
+            content_type=None,
+            path_prefix="file/",
+        )
+        assert "_raw_body" in result
+        assert result["_raw_body"] == fake_body
+        assert "ok" not in result  # must NOT be a JSON API response
+
+    @pytest.mark.asyncio
+    async def test_proxy_request_file_download_error_returns_502(self, monkeypatch):
+        """proxy_request returns 502 sentinel when file download raises."""
+        import urllib.request
+
+        proxy = TelegramAPIProxy()
+        monkeypatch.setattr(
+            "urllib.request.urlopen",
+            lambda *args, **kwargs: (_ for _ in ()).throw(RuntimeError("network error")),
+        )
+
+        result = await proxy.proxy_request(
+            bot_token="TOKEN",
+            method="photos/file_0.jpg",
+            body=None,
+            content_type=None,
+            path_prefix="file/",
+        )
+        assert result.get("ok") is False
+        assert result.get("error_code") == 502
+
+    @pytest.mark.asyncio
+    async def test_proxy_request_api_path_still_json_parsed(self, monkeypatch):
+        """proxy_request without file/ prefix still JSON-parses the response."""
+        import io
+        import json as _json
+
+        api_response = _json.dumps({"ok": True, "result": []}).encode()
+        fake_response = io.BytesIO(api_response)
+        fake_response.status = 200
+        fake_response.headers = {}
+
+        proxy = TelegramAPIProxy()
+        monkeypatch.setattr(
+            "urllib.request.urlopen",
+            lambda *args, **kwargs: fake_response,
+        )
+
+        result = await proxy.proxy_request(
+            bot_token="TOKEN",
+            method="getUpdates",
+            body=None,
+            content_type=None,
+            path_prefix="",
+        )
+        assert result.get("ok") is True
+        assert "_raw_body" not in result
+# ── Group at-mention filter ───────────────────────────────────────────────────
+
+def _make_group_update(
+    text: str,
+    user_id: str = "8506022825",
+    chat_id: int = -1001234567890,
+    chat_type: str = "supergroup",
+    update_id: int = 1,
+    entities: list | None = None,
+) -> dict:
+    """Build a Telegram group message update."""
+    msg: dict = {
+        "message_id": 1,
+        "from": {"id": int(user_id), "is_bot": False, "first_name": "Test"},
+        "chat": {"id": chat_id, "type": chat_type, "title": "Test Group"},
+        "date": 1700000000,
+        "text": text,
+    }
+    if entities is not None:
+        msg["entities"] = entities
+    return {"update_id": update_id, "message": msg}
+
+
+class TestBotIsMentioned:
+    """Unit tests for TelegramAPIProxy._bot_is_mentioned()."""
+
+    def test_direct_mention_matches(self):
+        msg = {
+            "text": "hey @testbot do something",
+            "entities": [{"type": "mention", "offset": 4, "length": 8}],
+        }
+        assert TelegramAPIProxy._bot_is_mentioned(msg, "testbot") is True
+
+    def test_mention_case_insensitive(self):
+        msg = {
+            "text": "hey @TestBot please help",
+            "entities": [{"type": "mention", "offset": 4, "length": 8}],
+        }
+        assert TelegramAPIProxy._bot_is_mentioned(msg, "testbot") is True
+
+    def test_mention_different_bot_not_matched(self):
+        msg = {
+            "text": "hey @otherbot do something",
+            "entities": [{"type": "mention", "offset": 4, "length": 9}],
+        }
+        assert TelegramAPIProxy._bot_is_mentioned(msg, "testbot") is False
+
+    def test_bot_command_with_username_matches(self):
+        msg = {
+            "text": "/start@testbot",
+            "entities": [{"type": "bot_command", "offset": 0, "length": 14}],
+        }
+        assert TelegramAPIProxy._bot_is_mentioned(msg, "testbot") is True
+
+    def test_bot_command_without_username_not_matched(self):
+        msg = {
+            "text": "/start",
+            "entities": [{"type": "bot_command", "offset": 0, "length": 6}],
+        }
+        assert TelegramAPIProxy._bot_is_mentioned(msg, "testbot") is False
+
+    def test_no_entities_not_matched(self):
+        msg = {"text": "hey testbot do something", "entities": []}
+        assert TelegramAPIProxy._bot_is_mentioned(msg, "testbot") is False
+
+    def test_empty_bot_username_never_matches(self):
+        msg = {
+            "text": "@testbot hello",
+            "entities": [{"type": "mention", "offset": 0, "length": 8}],
+        }
+        assert TelegramAPIProxy._bot_is_mentioned(msg, "") is False
+
+    def test_caption_entities_supported(self):
+        """Media messages use caption + caption_entities."""
+        msg = {
+            "caption": "check this @testbot",
+            "caption_entities": [{"type": "mention", "offset": 12, "length": 8}],
+        }
+        assert TelegramAPIProxy._bot_is_mentioned(msg, "testbot") is True
+
+
+class TestIsGroupMessage:
+    """Unit tests for TelegramAPIProxy._is_group_message()."""
+
+    def test_supergroup_is_group(self):
+        assert TelegramAPIProxy._is_group_message({"chat": {"type": "supergroup"}}) is True
+
+    def test_group_is_group(self):
+        assert TelegramAPIProxy._is_group_message({"chat": {"type": "group"}}) is True
+
+    def test_private_is_not_group(self):
+        assert TelegramAPIProxy._is_group_message({"chat": {"type": "private"}}) is False
+
+    def test_channel_is_not_group(self):
+        assert TelegramAPIProxy._is_group_message({"chat": {"type": "channel"}}) is False
+
+    def test_missing_chat_is_not_group(self):
+        assert TelegramAPIProxy._is_group_message({}) is False
+
+
+class TestGroupMentionFilter:
+    """Integration tests for group at-mention filtering.
+
+    The bot reads ALL group messages for context (they are forwarded inbound),
+    but outbound responses are suppressed unless the bot was @mentioned.
+    _group_response_eligible[chat_id] tracks eligibility per group.
+    """
+
+    def _make_proxy(self, bot_username: str = "testbot") -> TelegramAPIProxy:
+        proxy = TelegramAPIProxy()
+        proxy._rbac = FakeRBAC(owner_id="8096968754", collaborators=["8506022825"])
+        proxy._bot_token = ""
+        proxy._bot_username = bot_username
+        proxy._group_mention_only = True
+        return proxy
+
+    @pytest.mark.asyncio
+    async def test_group_message_without_mention_forwarded_but_flagged(self):
+        """Group messages without @mention are forwarded (for context) but mark chat as response-ineligible."""
+        proxy = self._make_proxy()
+        update = _make_group_update("hello everyone", user_id="8506022825",
+                                    chat_id=-1001234567890, update_id=42)
+        result = await proxy._filter_inbound_updates(_wrap_response(update))
+        updates = result["result"]
+        # Message is forwarded to bot for context
+        assert len(updates) == 1
+        assert updates[0].get("message") is not None, "Full message should be forwarded"
+        # But chat is marked ineligible for response
+        assert proxy._group_response_eligible.get(-1001234567890) is False
+
+    @pytest.mark.asyncio
+    async def test_group_message_with_mention_forwarded_and_eligible(self):
+        """Group messages with @mention are forwarded and mark chat as response-eligible."""
+        proxy = self._make_proxy()
+        text = "hey @testbot can you help?"
+        entities = [{"type": "mention", "offset": 4, "length": 8}]
+        update = _make_group_update(text, user_id="8506022825",
+                                    chat_id=-1001234567890, entities=entities)
+        result = await proxy._filter_inbound_updates(_wrap_response(update))
+        updates = result["result"]
+        assert len(updates) == 1
+        assert updates[0].get("message", {}).get("text") == text
+        assert proxy._group_response_eligible.get(-1001234567890) is True
+
+    @pytest.mark.asyncio
+    async def test_group_command_with_bot_suffix_eligible(self):
+        """/command@botname marks chat as response-eligible."""
+        proxy = self._make_proxy()
+        text = "/help@testbot"
+        entities = [{"type": "bot_command", "offset": 0, "length": 13}]
+        update = _make_group_update(text, user_id="8506022825",
+                                    chat_id=-1001234567890, entities=entities)
+        await proxy._filter_inbound_updates(_wrap_response(update))
+        assert proxy._group_response_eligible.get(-1001234567890) is True
+
+    @pytest.mark.asyncio
+    async def test_private_message_does_not_set_eligibility_flag(self):
+        """DMs don't interact with the group eligibility map."""
+        proxy = self._make_proxy()
+        update = _make_update("hello no mention needed", user_id="8506022825", chat_id=8506022825)
+        await proxy._filter_inbound_updates(_wrap_response(update))
+        assert 8506022825 not in proxy._group_response_eligible
+
+    @pytest.mark.asyncio
+    async def test_filter_disabled_does_not_set_eligibility(self):
+        """When group_mention_only is disabled, eligibility map is not populated."""
+        proxy = self._make_proxy()
+        proxy._group_mention_only = False
+        update = _make_group_update("no mention", user_id="8506022825", chat_id=-999)
+        await proxy._filter_inbound_updates(_wrap_response(update))
+        assert -999 not in proxy._group_response_eligible
+
+    @pytest.mark.asyncio
+    async def test_no_bot_username_does_not_set_eligibility(self):
+        """When bot_username is unset the filter is bypassed entirely."""
+        proxy = self._make_proxy(bot_username="")
+        update = _make_group_update("no mention no username", user_id="8506022825", chat_id=-888)
+        await proxy._filter_inbound_updates(_wrap_response(update))
+        assert -888 not in proxy._group_response_eligible

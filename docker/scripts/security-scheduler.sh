@@ -21,14 +21,25 @@ log() {
     echo "[$(date -u +%Y-%m-%dT%H:%M:%SZ)] [scheduler] $*" >> "$LOG_DIR/scheduler.log"
 }
 
-# Track what we've run today to avoid duplicate runs
-LAST_TRIVY_DATE=""
-LAST_CLAMAV_DATE=""
-LAST_OSCAP_DATE=""
-LAST_REPORT_DATE=""
+# Persistent dedup stamp helpers — survive scheduler/container restarts.
+# Each stamp file holds the ISO date (YYYY-MM-DD) of the last successful run.
+_stamp_read() {
+    local f="$LOG_DIR/.last_${1}_date"
+    [ -f "$f" ] && cat "$f" 2>/dev/null || echo ""
+}
+_stamp_write() {
+    printf '%s\n' "$2" > "$LOG_DIR/.last_${1}_date" 2>/dev/null || true
+}
+
+# Load persisted dates on startup (prevents duplicate runs after restart)
+LAST_TRIVY_DATE="$(_stamp_read trivy)"
+LAST_CLAMAV_DATE="$(_stamp_read clamav)"
+LAST_OSCAP_DATE="$(_stamp_read oscap)"
+LAST_SBOM_DATE="$(_stamp_read sbom)"
+LAST_REPORT_DATE="$(_stamp_read report)"
 LAST_FALCO_CHECK=0
 
-log "Security scheduler started"
+log "Security scheduler started (last_report=${LAST_REPORT_DATE:-never})"
 
 while true; do
     CURRENT_HOUR=$(date -u +%H)
@@ -39,28 +50,36 @@ while true; do
     if [ "$CURRENT_HOUR" = "03" ] && [ "$LAST_TRIVY_DATE" != "$CURRENT_DATE" ]; then
         log "Running scheduled Trivy scan"
         "$SCAN_SCRIPT" --trivy 2>&1 >> "$LOG_DIR/scheduler.log" || log "Trivy scan failed"
-        LAST_TRIVY_DATE="$CURRENT_DATE"
+        LAST_TRIVY_DATE="$CURRENT_DATE"; _stamp_write trivy "$CURRENT_DATE"
+    fi
+
+    # SBOM generation at 3:15 AM UTC (after Trivy)
+    CURRENT_MIN=$(date -u +%M)
+    if [ "$CURRENT_HOUR" = "03" ] && [ "$CURRENT_MIN" -ge 15 ] && [ "$LAST_SBOM_DATE" != "$CURRENT_DATE" ]; then
+        log "Running scheduled SBOM generation"
+        "$SCAN_SCRIPT" --sbom 2>&1 >> "$LOG_DIR/scheduler.log" || log "SBOM generation failed"
+        LAST_SBOM_DATE="$CURRENT_DATE"; _stamp_write sbom "$CURRENT_DATE"
     fi
 
     # ClamAV scan at 4 AM UTC
     if [ "$CURRENT_HOUR" = "04" ] && [ "$LAST_CLAMAV_DATE" != "$CURRENT_DATE" ]; then
         log "Running scheduled ClamAV scan"
         "$SCAN_SCRIPT" --clamav 2>&1 >> "$LOG_DIR/scheduler.log" || log "ClamAV scan failed"
-        LAST_CLAMAV_DATE="$CURRENT_DATE"
+        LAST_CLAMAV_DATE="$CURRENT_DATE"; _stamp_write clamav "$CURRENT_DATE"
     fi
 
     # OpenSCAP scan at 5 AM UTC
     if [ "$CURRENT_HOUR" = "05" ] && [ "$LAST_OSCAP_DATE" != "$CURRENT_DATE" ]; then
         log "Running scheduled OpenSCAP scan"
         "$SCAN_SCRIPT" --oscap 2>&1 >> "$LOG_DIR/scheduler.log" || log "OpenSCAP scan failed"
-        LAST_OSCAP_DATE="$CURRENT_DATE"
+        LAST_OSCAP_DATE="$CURRENT_DATE"; _stamp_write oscap "$CURRENT_DATE"
     fi
 
     # Health report at 12 PM UTC (6 AM CST)
     if [ "$CURRENT_HOUR" = "12" ] && [ "$LAST_REPORT_DATE" != "$CURRENT_DATE" ]; then
         log "Generating daily health report"
         "$REPORT_SCRIPT" 2>&1 >> "$LOG_DIR/scheduler.log" || log "Report generation failed"
-        LAST_REPORT_DATE="$CURRENT_DATE"
+        LAST_REPORT_DATE="$CURRENT_DATE"; _stamp_write report "$CURRENT_DATE"
     fi
 
     # Falco alert check every 5 minutes

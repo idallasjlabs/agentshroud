@@ -227,6 +227,10 @@ class AuditStore:
 
         return events
 
+    async def get_recent_entries(self, limit: int = 100) -> list["AuditEvent"]:
+        """Return the most recent audit entries (alias for query_events with limit)."""
+        return await self.query_events(limit=limit)
+
     async def verify_hash_chain(self, start_id: Optional[str] = None, limit: int = 1000) -> tuple[bool, str]:
         """Verify the integrity of the hash chain.
         

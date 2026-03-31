@@ -44,6 +44,7 @@ def test_records_known_collaborator(tracker, log_file):
     assert entry["message_preview"] == "Hello there!"
     assert entry["source"] == "telegram"
     assert "timestamp" in entry
+    assert entry["is_owner"] is False
 
 
 def test_username_is_normalized_for_log_safety(tracker, log_file):
@@ -52,9 +53,13 @@ def test_username_is_normalized_for_log_safety(tracker, log_file):
     assert entry["username"] == "Ali/ce [ops]"
 
 
-def test_owner_is_never_recorded(tracker, log_file):
+def test_owner_is_recorded_with_is_owner_flag(tracker, log_file):
+    """Owner messages are now recorded with is_owner=True (not silently dropped)."""
     tracker.record_activity("1111111", "Owner", "secret command", "telegram")
-    assert not log_file.exists() or log_file.read_text().strip() == ""
+    assert log_file.exists() and log_file.read_text().strip() != ""
+    entry = json.loads(log_file.read_text().strip())
+    assert entry["user_id"] == "1111111"
+    assert entry["is_owner"] is True
 
 
 def test_unknown_user_is_skipped(tracker, log_file):
@@ -247,3 +252,50 @@ def test_record_activity_mirror_handles_delimiter_chars_in_username(tracker, log
     file_path = next(iter(contributor_dir.glob("*-7614658040.md")))
     content = file_path.read_text()
     assert "Ali/ce [ops] (7614658040)" in content
+
+
+# ── correlation_id and is_owner ───────────────────────────────────────────────
+
+def test_correlation_id_included_when_provided(tracker, log_file):
+    tracker.record_activity(
+        "7614658040", "Alice", "hello", "telegram", correlation_id="7614658040:42"
+    )
+    entry = json.loads(log_file.read_text().strip())
+    assert entry["correlation_id"] == "7614658040:42"
+
+
+def test_correlation_id_absent_when_not_provided(tracker, log_file):
+    tracker.record_activity("7614658040", "Alice", "hello", "telegram")
+    entry = json.loads(log_file.read_text().strip())
+    assert "correlation_id" not in entry
+
+
+def test_collaborator_entry_has_is_owner_false(tracker, log_file):
+    tracker.record_activity("9999999", "Bob", "hey", "telegram")
+    entry = json.loads(log_file.read_text().strip())
+    assert entry["is_owner"] is False
+
+
+def test_owner_correlation_id_is_stored(tracker, log_file):
+    tracker.record_activity(
+        "1111111", "Owner", "run scan", "telegram", correlation_id="1111111:100"
+    )
+    entry = json.loads(log_file.read_text().strip())
+    assert entry["is_owner"] is True
+    assert entry["correlation_id"] == "1111111:100"
+
+
+# ── pruner heuristic ──────────────────────────────────────────────────────────
+
+def test_pruner_short_numeric_ids_are_test_fixtures():
+    """IDs < 10000 should be treated as test fixtures by the pruner heuristic."""
+    test_ids = ["42", "99", "999", "1234"]
+    for uid in test_ids:
+        assert uid.isdigit() and int(uid) < 10000, f"{uid} should be flagged as test fixture"
+
+
+def test_pruner_real_telegram_uids_not_flagged():
+    """Real Telegram UIDs (9-10 digits) must NOT be pruned."""
+    real_ids = ["7614658040", "8506022825", "123456789012"]
+    for uid in real_ids:
+        assert not (uid.isdigit() and int(uid) < 10000), f"{uid} should NOT be flagged"
