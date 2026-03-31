@@ -508,3 +508,77 @@ def test_grant_timed_approval_cleans_stale_entries():
     ef.grant_timed_approval("new.com", future)
     assert "old.com" not in ef._timed_approvals
     assert "new.com" in ef._timed_approvals
+
+
+# ---------------------------------------------------------------------------
+# SMTP/IMAP port allowance (v0.9.0 — cron email fix)
+# ---------------------------------------------------------------------------
+
+
+class TestSMTPIMAPPorts:
+    """Ports 465 (SMTPS), 587 (SMTP submission), 993 (IMAPS) must be allowed
+    by the default EgressPolicy and the http_connect_proxy policy so that
+    OpenClaw cron jobs can send email through the CONNECT proxy."""
+
+    def test_default_policy_allows_smtps(self):
+        """EgressPolicy default allows port 465 (SMTPS)."""
+        p = EgressPolicy()
+        assert p.matches_port(465) is True
+
+    def test_default_policy_allows_smtp_submission(self):
+        """EgressPolicy default allows port 587 (SMTP submission/STARTTLS)."""
+        p = EgressPolicy()
+        assert p.matches_port(587) is True
+
+    def test_default_policy_allows_imaps(self):
+        """EgressPolicy default allows port 993 (IMAPS)."""
+        p = EgressPolicy()
+        assert p.matches_port(993) is True
+
+    def test_connect_proxy_policy_allows_smtp_gmail_465(self):
+        """http_connect_proxy policy allows CONNECT smtp.gmail.com:465."""
+        policy = EgressPolicy(
+            allowed_domains=["smtp.gmail.com"],
+            allowed_ports=[80, 443, 22, 465, 587, 993],
+        )
+        cfg = EgressFilterConfig(
+            mode="enforce",
+            default_allowlist=["smtp.gmail.com"],
+            default_denylist=[],
+        )
+        ef = EgressFilter(config=cfg, default_policy=EgressPolicy())
+        ef.set_agent_policy("http_connect_proxy", policy)
+        result = ef.check("http_connect_proxy", "smtp.gmail.com:465", port=465)
+        assert result.action == EgressAction.ALLOW
+
+    def test_connect_proxy_policy_allows_smtp_mail_me_587(self):
+        """http_connect_proxy policy allows CONNECT smtp.mail.me.com:587."""
+        policy = EgressPolicy(
+            allowed_domains=["smtp.mail.me.com"],
+            allowed_ports=[80, 443, 22, 465, 587, 993],
+        )
+        cfg = EgressFilterConfig(
+            mode="enforce",
+            default_allowlist=["smtp.mail.me.com"],
+            default_denylist=[],
+        )
+        ef = EgressFilter(config=cfg, default_policy=EgressPolicy())
+        ef.set_agent_policy("http_connect_proxy", policy)
+        result = ef.check("http_connect_proxy", "smtp.mail.me.com:587", port=587)
+        assert result.action == EgressAction.ALLOW
+
+    def test_non_email_port_still_denied_for_unlisted_domain(self):
+        """Port 465 on an un-allowlisted domain is still denied in enforce mode."""
+        policy = EgressPolicy(
+            allowed_domains=["smtp.gmail.com"],
+            allowed_ports=[80, 443, 22, 465, 587, 993],
+        )
+        cfg = EgressFilterConfig(
+            mode="enforce",
+            default_allowlist=[],
+            default_denylist=[],
+        )
+        ef = EgressFilter(config=cfg, default_policy=EgressPolicy())
+        ef.set_agent_policy("http_connect_proxy", policy)
+        result = ef.check("http_connect_proxy", "evil.example.com:465", port=465)
+        assert result.action == EgressAction.DENY

@@ -22,6 +22,7 @@ import yaml
 from pydantic import BaseModel, Field, field_validator
 from .bot_config import BotConfig
 from .ssh_config import SSHConfig
+from ..security.group_config import TeamsConfig
 
 logger = logging.getLogger("agentshroud.gateway.config")
 
@@ -30,7 +31,9 @@ class PIIConfig(BaseModel):
     """PII detection and redaction configuration"""
 
     engine: str = "presidio"
-    entities: list[str] = Field(default_factory=list)
+    entities: list[str] = Field(
+        default_factory=lambda: ["US_SSN", "CREDIT_CARD", "PHONE_NUMBER", "EMAIL_ADDRESS"]
+    )
     enabled: bool = True
     min_confidence: float = 0.8
 
@@ -302,6 +305,8 @@ class GatewayConfig(BaseModel):
     # Per-bot declarations — keyed by bot ID. Populated from agentshroud.yaml bots: section.
     # When bots: is absent, load_config() auto-generates a default OpenClaw entry.
     bots: dict[str, BotConfig] = Field(default_factory=dict)
+    # Team groups + projects configuration (optional — absent = v0.8.0 behavior preserved).
+    teams: Optional[TeamsConfig] = None
 
 
 
@@ -536,6 +541,19 @@ def load_config(config_path: Optional[Path] = None) -> GatewayConfig:
         "http://127.0.0.1:18790",
     ]
 
+    # Parse teams configuration (optional section)
+    teams_raw = raw_config.get("teams", {})
+    teams_config: Optional[TeamsConfig] = None
+    if teams_raw and isinstance(teams_raw, dict):
+        try:
+            teams_config = TeamsConfig(**teams_raw)
+            logger.info(
+                f"Teams config loaded: {len(teams_config.groups)} groups, "
+                f"{len(teams_config.projects)} projects"
+            )
+        except Exception as exc:
+            logger.warning(f"Failed to parse teams: config — falling back to no teams: {exc}")
+
     config = GatewayConfig(
         bind=gateway.get("bind", "127.0.0.1"),
         port=_port,
@@ -555,6 +573,7 @@ def load_config(config_path: Optional[Path] = None) -> GatewayConfig:
         mcp_proxy_data=mcp_proxy_data,
         tool_risk=tool_risk_config,
         bots=bot_configs,
+        teams=teams_config,
     )
 
     logger.info(

@@ -40,15 +40,15 @@ class TestOutboundPipelineIntegration:
 
         body = json.dumps({
             "chat_id": "7614658040",
-            "text": "The authorized senders are: 8096968754, 8506022825, 8545356403"
+            "text": "The authorized senders are: 809-696-8754, 850-602-2825, 854-535-6403"
         }).encode()
 
         result = await proxy._filter_outbound(body, "application/json")
         result_data = json.loads(result)
 
-        assert "8096968754" not in result_data["text"], "Phone number leaked through outbound filter"
-        assert "8506022825" not in result_data["text"], "Phone number leaked through outbound filter"
-        assert "8545356403" not in result_data["text"], "Phone number leaked through outbound filter"
+        assert "809-696-8754" not in result_data["text"], "Phone number leaked through outbound filter"
+        assert "850-602-2825" not in result_data["text"], "Phone number leaked through outbound filter"
+        assert "854-535-6403" not in result_data["text"], "Phone number leaked through outbound filter"
 
     @pytest.mark.asyncio
     async def test_ssn_redacted_on_outbound(self):

@@ -17,31 +17,18 @@ from __future__ import annotations
 
 import asyncio
 import logging
+import os
 import socket
+import tempfile
 import time
 from typing import Optional
 
 from .web_config import WebProxyConfig
 from .web_proxy import WebProxy
 from ..security.egress_filter import EgressAction, EgressFilter
+from ..security.egress_config import PERMANENT_EGRESS_DOMAINS
 
 logger = logging.getLogger("agentshroud.proxy.http_proxy")
-
-# Default allowlist: only the domains the bot legitimately needs
-ALLOWED_DOMAINS: list[str] = [
-    "api.openai.com",
-    "api.anthropic.com",
-    "oauth2.googleapis.com",
-    "www.googleapis.com",
-    "gmail.googleapis.com",
-    "*.github.com",
-    "*.githubusercontent.com",
-    # Slack Socket Mode WebSocket endpoint (OpenClaw native Slack channel)
-    "wss-primary.slack.com",
-    "wss-backup.slack.com",
-    "slack.com",
-    "*.slack.com",
-]
 
 # Internal control-plane destinations required for channel transport.
 # These are bypassed from interactive egress approval to avoid deadlocking
@@ -69,6 +56,18 @@ SYSTEM_BYPASS_DOMAINS: set[str] = {
 CONNECT_FORCE_BLOCK_DOMAINS: set[str] = {
     "api.telegram.org",
 }
+
+# Default internet allowlist — derived from the canonical PERMANENT_EGRESS_DOMAINS registry.
+# Internal Docker/SSH targets (host.docker.internal, marvin, trillian, raspberrypi) are
+# declared in agentshroud.yaml proxy.allowed_domains and merged at startup in lifespan.py.
+#
+# CONNECT_FORCE_BLOCK_DOMAINS entries are excluded (defense-in-depth): api.telegram.org
+# must not appear here so the bot is always routed through the gateway's /telegram-api/
+# reverse proxy (where the Slack bridge intercept lives).
+ALLOWED_DOMAINS: list[str] = [
+    d for d in PERMANENT_EGRESS_DOMAINS
+    if d not in CONNECT_FORCE_BLOCK_DOMAINS
+]
 
 
 class HTTPConnectProxy:
@@ -279,7 +278,12 @@ class HTTPConnectProxy:
 
         if result_blocked:
             self._stats["blocked"] += 1
-            logger.warning(f"CONNECT blocked: {host}:{port} — {block_reason}")
+            # Known force-blocked domains (e.g. api.telegram.org) are expected — log at DEBUG
+            # to avoid noise in docker logs. Unknown hosts are genuine security signals → WARNING.
+            if host.lower().rstrip(".") in CONNECT_FORCE_BLOCK_DOMAINS:
+                logger.debug(f"CONNECT blocked (expected): {host}:{port} — {block_reason}")
+            else:
+                logger.warning(f"CONNECT blocked: {host}:{port} — {block_reason}")
             writer.write(b"HTTP/1.1 403 Forbidden\r\nContent-Length: 0\r\n\r\n")
             await writer.drain()
             return
@@ -305,7 +309,12 @@ class HTTPConnectProxy:
         # keepalive probes on idle connections. Without this, Cisco AnyConnect
         # (and similar VPNs) silently drop idle TCP sessions after ~10 minutes,
         # causing WebSocket ping/pong timeouts (e.g. Slack Socket Mode).
-        for _transport in (writer.transport, target_writer.transport):
+        for _transport in (
+            getattr(writer, "transport", None),
+            getattr(target_writer, "transport", None),
+        ):
+            if _transport is None:
+                continue
             try:
                 _sock = _transport.get_extra_info("socket")
                 if _sock is not None:
@@ -320,10 +329,14 @@ class HTTPConnectProxy:
             except Exception:
                 pass
 
-        # Relay bytes in both directions until one side closes
+        # Relay bytes in both directions until one side closes.
+        # Inbound (client→target): plain relay — client data is already
+        # validated by ingest_api before reaching the proxy.
+        # Outbound (target→client): relay with ClamAV sampling so that
+        # downloaded file data is scanned for malware signatures.
         await asyncio.gather(
             self._relay(reader, target_writer),
-            self._relay(target_reader, writer),
+            self._relay_and_scan(target_reader, writer, host),
             return_exceptions=True,
         )
         try:
@@ -351,3 +364,82 @@ class HTTPConnectProxy:
                 writer.close()
             except Exception:
                 pass
+
+    async def _relay_and_scan(
+        self,
+        reader: asyncio.StreamReader,
+        writer: asyncio.StreamWriter,
+        host: str,
+        scan_limit: int = 4 * 1024 * 1024,
+    ) -> None:
+        """Copy bytes from reader to writer, sampling the first scan_limit bytes
+        for ClamAV malware scanning (non-blocking, fire-and-forget).
+
+        Primarily catches malware in non-TLS (port 80) downloads.  For TLS
+        tunnels the scanner sees encrypted bytes and will return clean — no
+        false positives.
+        """
+        buf = bytearray()
+        scanned = False
+        try:
+            while True:
+                data = await reader.read(65536)
+                if not data:
+                    break
+                writer.write(data)
+                await writer.drain()
+                if not scanned and len(buf) < scan_limit:
+                    buf.extend(data)
+                    if len(buf) >= scan_limit:
+                        asyncio.create_task(self._clamav_scan_bytes(bytes(buf), host))
+                        scanned = True
+        except Exception:
+            pass
+        finally:
+            if not scanned and buf:
+                asyncio.create_task(self._clamav_scan_bytes(bytes(buf), host))
+            try:
+                writer.close()
+            except Exception:
+                pass
+
+    async def _clamav_scan_bytes(self, data: bytes, host: str) -> None:
+        """Write data to a temp file and scan with ClamAV.
+
+        Runs in a thread executor so it does not block the event loop.
+        Logs CRITICAL if malware signatures are detected; logs DEBUG otherwise.
+        Silently degrades if clamscan binary is unavailable (sidecar not running).
+        """
+        tmp_path: Optional[str] = None
+        try:
+            with tempfile.NamedTemporaryFile(delete=False, suffix=".tmp") as f:
+                f.write(data)
+                tmp_path = f.name
+
+            from ..security.clamav_scanner import run_clamscan
+
+            result = await asyncio.get_event_loop().run_in_executor(
+                None,
+                lambda: run_clamscan(tmp_path, recursive=False),
+            )
+            infected = result.get("infected_count", 0)
+            if infected > 0:
+                sigs = [f.get("signature", "?") for f in result.get("infected_files", [])]
+                logger.critical(
+                    "ClamAV MALWARE DETECTED in download from %s: %s",
+                    host,
+                    sigs,
+                )
+                self._stats.setdefault("clamav_infections", []).append(
+                    {"host": host, "signatures": sigs, "timestamp": time.time()}
+                )
+            else:
+                logger.debug("ClamAV scan clean for download from %s", host)
+        except Exception as exc:
+            logger.debug("ClamAV scan unavailable (sidecar may not be running): %s", exc)
+        finally:
+            if tmp_path:
+                try:
+                    os.unlink(tmp_path)
+                except Exception:
+                    pass

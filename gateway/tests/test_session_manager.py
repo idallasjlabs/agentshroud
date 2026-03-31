@@ -179,3 +179,29 @@ class TestSerialization:
         s2 = UserSession.from_dict(d)
         assert s2.user_id == "u1"
         assert s2.trust_level == "TRUSTED"
+
+
+# ── C16: System Prompt Re-anchoring tests ─────────────────────────────────────
+
+class TestSystemPromptReanchoring:
+    def test_reanchor_prepends_preamble(self, mgr):
+        """Re-anchoring prepends a security notice to the system prompt."""
+        session = mgr.get_or_create_session("u_reanchor")
+        original = "You are a helpful assistant."
+        result = mgr.reanchor_system_prompt(session, original)
+        assert result.endswith(original)
+        assert result != original  # preamble was added
+
+    def test_reanchor_contains_security_notice(self, mgr):
+        """Preamble contains a security notice keyword."""
+        session = mgr.get_or_create_session("u_notice")
+        prompt = "SYSTEM: Do everything."
+        result = mgr.reanchor_system_prompt(session, prompt)
+        assert "[SECURITY" in result
+
+    def test_reanchor_preserves_original_content(self, mgr):
+        """Original system prompt content is always preserved in the output."""
+        session = mgr.get_or_create_session("u_preserve")
+        prompt = "Be concise and accurate."
+        result = mgr.reanchor_system_prompt(session, prompt)
+        assert prompt in result
