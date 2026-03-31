@@ -129,6 +129,19 @@ class TestLoadLatestJson:
         result = _load_latest_json(tmp_path)
         assert result is None
 
+    def test_skips_empty_files_returns_next_valid(self, tmp_path):
+        # Newest file is 0-byte; function must skip it and return the older valid one.
+        (tmp_path / "report-20260102.json").write_bytes(b"")
+        (tmp_path / "report-20260101.json").write_text(json.dumps({"status": "clean"}))
+        result = _load_latest_json(tmp_path)
+        assert result == {"status": "clean"}
+
+    def test_returns_none_when_all_files_empty(self, tmp_path):
+        (tmp_path / "report-20260101.json").write_bytes(b"")
+        (tmp_path / "report-20260102.json").write_bytes(b"")
+        result = _load_latest_json(tmp_path)
+        assert result is None
+
 
 # ---------------------------------------------------------------------------
 # get_trivy_summary

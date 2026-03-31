@@ -224,9 +224,15 @@ echo "[startup] Bootstrapping OpenClaw config..."
 # underscore@1.7.0 allows arbitrary code execution via _.template(); fixed in >=1.12.1
 _WORKSPACE_PKG="/home/node/agentshroud/workspace/package-lock.json"
 if [ -f "$_WORKSPACE_PKG" ] && grep -q '"underscore"' "$_WORKSPACE_PKG" 2>/dev/null; then
-    cd /home/node/agentshroud/workspace && npm update underscore --no-fund --no-audit 2>/dev/null || true
-    cd /home/node
-    echo "[startup] ✓ underscore updated (CVE-2021-23358)"
+    _US_VER=$(node -e "try{console.log(require('/home/node/agentshroud/workspace/node_modules/underscore/package.json').version)}catch(e){console.log('0')}" 2>/dev/null || echo "0")
+    # Skip npm update if already patched (>= 1.12.1)
+    if [ "$_US_VER" = "0" ] || [ "$(printf '%s\n' "1.12.1" "$_US_VER" | sort -V | head -n1)" != "1.12.1" ]; then
+        cd /home/node/agentshroud/workspace && npm update underscore --no-fund --no-audit 2>/dev/null || true
+        cd /home/node
+        echo "[startup] underscore upgraded from $_US_VER (CVE-2021-23358)"
+    else
+        echo "[startup] underscore $_US_VER already patched — skipping update (CVE-2021-23358)"
+    fi
 fi
 
 # Wait briefly for background iCloud fetch, then source if ready
