@@ -1,4 +1,30 @@
 'use strict';
+// Suppress known transient unhandled rejections that occur during CONNECT proxy
+// startup and Slack SocketModeClient WSS URL fetching. These are harmless network
+// hiccups (gateway not yet ready, DNS transient, VPN reconnect) that should not
+// crash the Node.js process. Unknown rejections are re-thrown so genuine bugs still
+// surface as crashes (preserving fail-fast behavior for unexpected errors).
+process.on('unhandledRejection', (reason, _promise) => {
+  const msg = (reason && (reason.message || String(reason))) || '';
+  const TRANSIENT = [
+    'CONNECT proxy rejected',
+    'ECONNREFUSED',
+    'ENOTFOUND',
+    'ETIMEDOUT',
+    'ECONNRESET',
+    'socket hang up',
+  ];
+  if (TRANSIENT.some((pat) => msg.includes(pat))) {
+    // Transient proxy/DNS rejection — log at debug level and suppress
+    if (process.env.NODE_DEBUG) {
+      process.stderr.write(`[setup-https-proxy] transient rejection suppressed: ${msg}\n`);
+    }
+    return;
+  }
+  // Unknown rejection — re-throw so Node.js default crash behavior is preserved
+  throw reason;
+});
+
 /**
  * setup-https-proxy.js
  *
