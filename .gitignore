@@ -5,6 +5,8 @@
 # - Keep `docker/secrets/*.example` tracked so collaborators have secret templates
 # - Keep `memory-backups/backup.log` tracked while ignoring backup tarball artifacts
 # SECRETS & CREDENTIALS (CRITICAL)
+# Real deployment config (contains personal IPs, phone numbers, hostnames)
+agentshroud.yaml
 # Docker secrets directory (contains runtime secrets)
 docker/secrets/
 !docker/secrets/*.example
