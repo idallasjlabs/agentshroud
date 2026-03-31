@@ -1270,8 +1270,11 @@ async def lifespan(app: FastAPI):
                     None, lambda: _clamav.run_clamscan(target="/app", timeout=120, clamscan_bin=_bin)
                 )
                 _store_result("clamav", _clam_result, target="/app")
-                logger.info("✓ Startup ClamAV scan complete (status=%s)",
-                            (app_state.scanner_results or {}).get("clamav", {}).get("summary", {}).get("status"))
+                _clam_status = (app_state.scanner_results or {}).get("clamav", {}).get("summary", {}).get("status")
+                if _clam_status in ("error", "critical"):
+                    logger.warning("⚠ Startup ClamAV scan complete (status=%s)", _clam_status)
+                else:
+                    logger.info("✓ Startup ClamAV scan complete (status=%s)", _clam_status)
             except Exception as _exc:
                 logger.warning("Startup ClamAV scan failed: %s", _exc)
 
@@ -1283,8 +1286,11 @@ async def lifespan(app: FastAPI):
                     None, lambda: _trivy.run_trivy_scan(scan_type="fs", target="/app", timeout=300)
                 )
                 _store_result("trivy", _trivy_result, target="/app")
-                logger.info("✓ Startup Trivy scan complete (status=%s)",
-                            (app_state.scanner_results or {}).get("trivy", {}).get("summary", {}).get("status"))
+                _trivy_status = (app_state.scanner_results or {}).get("trivy", {}).get("summary", {}).get("status")
+                if _trivy_status in ("error", "critical"):
+                    logger.warning("⚠ Startup Trivy scan complete (status=%s)", _trivy_status)
+                else:
+                    logger.info("✓ Startup Trivy scan complete (status=%s)", _trivy_status)
             except Exception as _exc:
                 logger.warning("Startup Trivy scan failed: %s", _exc)
 
