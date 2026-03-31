@@ -59,7 +59,7 @@ RUN printf '%s\n' \
 ARG WAZUH_VERSION=4.9.2
 RUN curl -sSfL https://packages.wazuh.com/key/GPG-KEY-WAZUH \
         | gpg --dearmor -o /usr/share/keyrings/wazuh.gpg \
-    && echo "deb [signed-by=/usr/share/keyrings/wazuh.gpg] https://packages.wazuh.com/4.x/apt/ stable main" \
+    && echo "deb [trusted=yes signed-by=/usr/share/keyrings/wazuh.gpg] https://packages.wazuh.com/4.x/apt/ stable main" \
         > /etc/apt/sources.list.d/wazuh.list \
     && apt-get update \
     && mkdir -p /apt-dl/partial \
