@@ -22,7 +22,6 @@ RUN mkdir -p /apt-dl/partial \
         curl \
         ca-certificates \
         unzip \
-        openscap-scanner \
         gosu \
         gnupg \
         clamav clamav-daemon clamav-freshclam \
