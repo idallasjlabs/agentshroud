@@ -185,9 +185,9 @@ class ApprovalQueue:
                 }
             )
 
-            # Remove from pending after a delay (keep for audit)
-            # For now, just keep in memory until cleanup
-            # TODO: Consider persisting approved/rejected items
+            # Decided items remain in self.pending for in-session lookups and are
+            # persisted to the JSON store via _persist_pending_store(). Call
+            # cleanup_decided() periodically to prune old decided items from memory.
 
             return item
 
@@ -217,6 +217,45 @@ class ApprovalQueue:
         """
         async with self._lock:
             return self.pending.get(request_id)
+
+    async def cleanup_decided(self, max_age_seconds: int = 3600) -> int:
+        """Remove decided (approved/rejected/expired) items older than max_age_seconds.
+
+        Decided items are already persisted to the JSON store and audit log.
+        This method only prunes the in-memory dict to prevent unbounded growth
+        in long-running processes.
+
+        Args:
+            max_age_seconds: Items decided longer ago than this are removed.
+
+        Returns:
+            Number of items removed.
+        """
+        from datetime import timezone
+
+        cutoff = datetime.now(timezone.utc) - timedelta(seconds=max_age_seconds)
+        decided_statuses = {"approved", "rejected", "expired"}
+        to_remove = []
+
+        async with self._lock:
+            for request_id, item in self.pending.items():
+                if item.status not in decided_statuses:
+                    continue
+                try:
+                    submitted = datetime.fromisoformat(
+                        item.submitted_at.replace("Z", "+00:00")
+                    )
+                    if submitted < cutoff:
+                        to_remove.append(request_id)
+                except (ValueError, AttributeError):
+                    to_remove.append(request_id)
+
+            for request_id in to_remove:
+                del self.pending[request_id]
+
+        if to_remove:
+            logger.info("Approval queue cleanup removed %d decided item(s)", len(to_remove))
+        return len(to_remove)
 
     async def _expire_stale(self) -> list[str]:
         """Check all pending items and expire those past timeout

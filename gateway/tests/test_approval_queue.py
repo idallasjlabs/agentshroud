@@ -374,3 +374,63 @@ def test_store_restores_items_on_init(queue_config, tmp_path, monkeypatch):
     queue = ApprovalQueue(queue_config)
     assert "r1" in queue.pending
     assert queue.pending["r1"].status == "pending"
+
+
+@pytest.mark.asyncio
+async def test_cleanup_decided_removes_old_decided_items(approval_queue):
+    """cleanup_decided() should remove approved/rejected items older than threshold."""
+    from datetime import timezone
+
+    request = ApprovalRequest(
+        action_type="email_sending",
+        description="cleanup test",
+        details={},
+    )
+    item = await approval_queue.submit(request)
+    await approval_queue.decide(item.request_id, approved=True)
+
+    # Backdate the decided item so it appears old
+    decided_item = approval_queue.pending[item.request_id]
+    decided_item.submitted_at = "2020-01-01T00:00:00Z"
+
+    removed = await approval_queue.cleanup_decided(max_age_seconds=3600)
+
+    assert item.request_id not in approval_queue.pending
+    assert removed == 1
+
+
+@pytest.mark.asyncio
+async def test_cleanup_decided_keeps_recent_decided_items(approval_queue):
+    """cleanup_decided() should not remove decided items newer than threshold."""
+    request = ApprovalRequest(
+        action_type="file_deletion",
+        description="recent decided",
+        details={},
+    )
+    item = await approval_queue.submit(request)
+    await approval_queue.decide(item.request_id, approved=False)
+
+    # Item was just decided — submitted_at is recent
+    removed = await approval_queue.cleanup_decided(max_age_seconds=3600)
+
+    assert item.request_id in approval_queue.pending
+    assert removed == 0
+
+
+@pytest.mark.asyncio
+async def test_cleanup_decided_keeps_pending_items(approval_queue):
+    """cleanup_decided() must not remove pending items regardless of age."""
+    request = ApprovalRequest(
+        action_type="email_sending",
+        description="still pending",
+        details={},
+    )
+    item = await approval_queue.submit(request)
+
+    # Backdate the item
+    approval_queue.pending[item.request_id].submitted_at = "2020-01-01T00:00:00Z"
+
+    removed = await approval_queue.cleanup_decided(max_age_seconds=0)
+
+    assert item.request_id in approval_queue.pending
+    assert removed == 0
