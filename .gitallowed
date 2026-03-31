@@ -7,7 +7,6 @@ password=test
 # Documentation patterns - echo statements showing users how to test
 echo "password=
 echo 'password=
-
 # git-secrets false positives for tests and docs
 AKIAIOSFODNN7EXAMPLE
 AKIAEXAMPLEKEY123456

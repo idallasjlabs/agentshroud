@@ -3,4 +3,7 @@
 Purpose: devsecops agent agent.
 
 Responsibilities:
-- Execute specialized tasks within the AI engineering OS.
+- Integrate security into CI/CD pipelines
+- Automate security scanning (SAST, DAST, dependency checks)
+- Manage secrets and credentials securely
+- Implement least-privilege access controls

@@ -29,7 +29,7 @@ async def health_check():
 
     Returns only basic liveness info. Detailed status requires auth via /status/detail.
     """
-    return {"status": "healthy", "version": "0.8.0"}
+    return {"status": "healthy", "version": "0.9.0"}
 
 
 @router.get("/status/detail", response_model=StatusResponse)

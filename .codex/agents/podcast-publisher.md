@@ -3,4 +3,6 @@
 Purpose: podcast publisher agent.
 
 Responsibilities:
-- Execute specialized tasks within the AI engineering OS.
+- Perform podcast publisher-specific tasks
+- Support podcast publisher workflows
+- Provide expertise in podcast publisher domain

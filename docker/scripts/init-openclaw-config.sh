@@ -188,6 +188,14 @@ if [ -f "${DEFAULTS_DIR}/workspace/SOUL.md" ]; then
   echo "[init] ✓ Refreshed SOUL.md (anti-hallucination rules for main agent)"
 fi
 
+# DEVELOPER.md: always overwrite — development context (TDD, SDLC, skill/agent lookup).
+# Gives the bot the same development standards as Claude Code when working on the repo.
+# Must match repo on every restart so changes baked into the image take effect immediately.
+if [ -f "${DEFAULTS_DIR}/workspace/DEVELOPER.md" ]; then
+  cp "${DEFAULTS_DIR}/workspace/DEVELOPER.md" "${WORKSPACE_DIR}/DEVELOPER.md"
+  echo "[init] ✓ Refreshed DEVELOPER.md (development context)"
+fi
+
 # IDENTITY.md: seed only if missing or still the unfilled OpenClaw default.
 IDENTITY_FILE="${WORKSPACE_DIR}/IDENTITY.md"
 if [ ! -f "${IDENTITY_FILE}" ] || grep -q "_Fill this in during your first conversation_" "${IDENTITY_FILE}" 2>/dev/null; then
@@ -195,6 +203,55 @@ if [ ! -f "${IDENTITY_FILE}" ] || grep -q "_Fill this in during your first conve
   echo "[init] ✓ Seeded IDENTITY.md with AgentShroud identity"
 else
   echo "[init] ✓ IDENTITY.md already set — skipping"
+fi
+
+# context.md: seed only if missing — nightly cron overwrites daily
+CONTEXT_FILE="${WORKSPACE_DIR}/memory/context.md"
+mkdir -p "${WORKSPACE_DIR}/memory/journal"
+if [ ! -f "${CONTEXT_FILE}" ]; then
+  if [ -f "${DEFAULTS_DIR}/workspace/memory/context.md" ]; then
+    cp "${DEFAULTS_DIR}/workspace/memory/context.md" "${CONTEXT_FILE}"
+    echo "[init] ✓ Seeded context.md (initial operational context)"
+  fi
+else
+  echo "[init] ✓ context.md already exists — skipping"
+fi
+
+# --- OpenClaw runtime version management ---
+# Seeds openclaw into the NPM_CONFIG_PREFIX volume (writable at runtime).
+# This enables the "Update now" button to install newer versions without
+# hitting the read-only rootfs (/usr/local/).
+IMAGE_VERSION_FILE="/app/.openclaw-image-version"
+RUNTIME_VERSION_FILE="${NPM_CONFIG_PREFIX:-/usr/local}/.openclaw-runtime-version"
+
+if [ -n "${NPM_CONFIG_PREFIX}" ] && [ -d "${NPM_CONFIG_PREFIX}" ]; then
+  IMAGE_VER="unknown"
+  [ -f "${IMAGE_VERSION_FILE}" ] && IMAGE_VER=$(cat "${IMAGE_VERSION_FILE}")
+
+  RUNTIME_VER="none"
+  [ -f "${RUNTIME_VERSION_FILE}" ] && RUNTIME_VER=$(cat "${RUNTIME_VERSION_FILE}")
+
+  if [ "${RUNTIME_VER}" != "${IMAGE_VER}" ]; then
+    echo "[init] Seeding openclaw ${IMAGE_VER} into NPM_CONFIG_PREFIX (was: ${RUNTIME_VER})..."
+    if npm install -g "openclaw@${IMAGE_VER}" 2>&1 | tail -5; then
+      echo "${IMAGE_VER}" > "${RUNTIME_VERSION_FILE}"
+      echo "[init] ✓ openclaw ${IMAGE_VER} seeded to ${NPM_CONFIG_PREFIX}"
+      # Re-apply SDK patches to the volume-installed openclaw.
+      # The image build patches /usr/local/lib/node_modules/openclaw/, but the
+      # volume copy at NPM_CONFIG_PREFIX/lib/node_modules/ is unpatched.
+      # Without this, grammY and the Anthropic SDK bypass the gateway proxy.
+      for _patch in patch-anthropic-sdk.sh patch-telegram-sdk.sh patch-slack-sdk.sh; do
+        if [ -x "/usr/local/bin/${_patch}" ]; then
+          echo "[init] Re-applying ${_patch} to NPM_CONFIG_PREFIX install..."
+          sh "/usr/local/bin/${_patch}" 2>&1 || echo "[init] ⚠ ${_patch} failed (non-fatal)"
+        fi
+      done
+    else
+      echo "[init] ⚠ openclaw seed failed — bot will use image-bundled version (/usr/local/bin/openclaw)"
+    fi
+  else
+    echo "[init] ✓ openclaw ${RUNTIME_VER} already in NPM_CONFIG_PREFIX"
+  fi
 fi
 
 # AGENTS.md: add "read BRAND.md" to the session startup checklist if absent.
@@ -330,29 +387,33 @@ MEMORY_BACKUP_DIR="/app/memory-backups"
 MEMORY_DIR="${WORKSPACE_DIR}/memory"
 MEMORY_FILE="${WORKSPACE_DIR}/MEMORY.md"
 
-# Restore: if workspace has no memory but backup exists, restore it
+# Restore: independently restore each memory artifact if missing from workspace.
+# Each check is independent so a partial backup (e.g. memory/ present but MEMORY.md
+# missing) still restores whatever is available.
 if [ -d "${MEMORY_BACKUP_DIR}" ] && [ "$(ls -A ${MEMORY_BACKUP_DIR} 2>/dev/null)" ]; then
-  if [ ! -f "${MEMORY_FILE}" ] && [ ! -d "${MEMORY_DIR}" ]; then
-    echo "[init] Fresh workspace detected — restoring memory from backup"
-    # Restore MEMORY.md
-    if [ -f "${MEMORY_BACKUP_DIR}/MEMORY.md" ]; then
-      cp "${MEMORY_BACKUP_DIR}/MEMORY.md" "${MEMORY_FILE}"
-      echo "[init] ✓ Restored MEMORY.md"
+  _restored=0
+  # MEMORY.md — restore if missing from workspace and present in backup
+  if [ ! -f "${MEMORY_FILE}" ] && [ -f "${MEMORY_BACKUP_DIR}/MEMORY.md" ]; then
+    cp "${MEMORY_BACKUP_DIR}/MEMORY.md" "${MEMORY_FILE}"
+    echo "[init] ✓ Restored MEMORY.md"
+    _restored=$((_restored + 1))
+  fi
+  # memory/ directory — restore if missing or empty
+  if { [ ! -d "${MEMORY_DIR}" ] || [ -z "$(ls -A "${MEMORY_DIR}" 2>/dev/null)" ]; } && [ -d "${MEMORY_BACKUP_DIR}/memory" ]; then
+    mkdir -p "${MEMORY_DIR}"
+    cp -r "${MEMORY_BACKUP_DIR}/memory/"* "${MEMORY_DIR}/" 2>/dev/null || true
+    echo "[init] ✓ Restored memory/ directory ($(ls "${MEMORY_DIR}" 2>/dev/null | wc -l | tr -d ' ') files)"
+    _restored=$((_restored + 1))
+  fi
+  # Workspace files — restore each independently if missing
+  for f in USER.md TOOLS.md HEARTBEAT.md; do
+    if [ ! -f "${WORKSPACE_DIR}/${f}" ] && [ -f "${MEMORY_BACKUP_DIR}/${f}" ]; then
+      cp "${MEMORY_BACKUP_DIR}/${f}" "${WORKSPACE_DIR}/${f}"
+      echo "[init] ✓ Restored ${f}"
+      _restored=$((_restored + 1))
     fi
-    # Restore memory/ directory
-    if [ -d "${MEMORY_BACKUP_DIR}/memory" ]; then
-      mkdir -p "${MEMORY_DIR}"
-      cp -r "${MEMORY_BACKUP_DIR}/memory/"* "${MEMORY_DIR}/" 2>/dev/null || true
-      echo "[init] ✓ Restored memory/ directory ($(ls ${MEMORY_DIR} | wc -l) files)"
-    fi
-    # Restore USER.md, TOOLS.md if they exist in backup
-    for f in USER.md TOOLS.md HEARTBEAT.md; do
-      if [ -f "${MEMORY_BACKUP_DIR}/${f}" ]; then
-        cp "${MEMORY_BACKUP_DIR}/${f}" "${WORKSPACE_DIR}/${f}"
-        echo "[init] ✓ Restored ${f}"
-      fi
-    done
-  else
+  done
+  if [ "${_restored}" -eq 0 ]; then
     echo "[init] ✓ Memory already present — no restore needed"
   fi
 else
@@ -362,15 +423,19 @@ fi
 # Backup: save current memory to backup directory (runs every startup)
 if [ -d "${MEMORY_BACKUP_DIR}" ]; then
   if [ -f "${MEMORY_FILE}" ] || [ -d "${MEMORY_DIR}" ]; then
-    [ -f "${MEMORY_FILE}" ] && cp "${MEMORY_FILE}" "${MEMORY_BACKUP_DIR}/MEMORY.md"
-    if [ -d "${MEMORY_DIR}" ]; then
-      mkdir -p "${MEMORY_BACKUP_DIR}/memory"
-      cp -r "${MEMORY_DIR}/"* "${MEMORY_BACKUP_DIR}/memory/" 2>/dev/null || true
+    if touch "${MEMORY_BACKUP_DIR}/.write-test" 2>/dev/null && rm -f "${MEMORY_BACKUP_DIR}/.write-test"; then
+      [ -f "${MEMORY_FILE}" ] && cp -f "${MEMORY_FILE}" "${MEMORY_BACKUP_DIR}/MEMORY.md"
+      if [ -d "${MEMORY_DIR}" ]; then
+        mkdir -p "${MEMORY_BACKUP_DIR}/memory"
+        cp -rf "${MEMORY_DIR}/"* "${MEMORY_BACKUP_DIR}/memory/" 2>/dev/null || true
+      fi
+      for f in USER.md TOOLS.md HEARTBEAT.md; do
+        [ -f "${WORKSPACE_DIR}/${f}" ] && cp -f "${WORKSPACE_DIR}/${f}" "${MEMORY_BACKUP_DIR}/${f}"
+      done
+      echo "[init] ✓ Memory backed up to ${MEMORY_BACKUP_DIR}"
+    else
+      echo "[init] ⚠ Memory backup mount is read-only — skipping backup (memory NOT persisted to host)"
     fi
-    for f in USER.md TOOLS.md HEARTBEAT.md; do
-      [ -f "${WORKSPACE_DIR}/${f}" ] && cp "${WORKSPACE_DIR}/${f}" "${MEMORY_BACKUP_DIR}/${f}"
-    done
-    echo "[init] ✓ Memory backed up to ${MEMORY_BACKUP_DIR}"
   fi
 fi
 
@@ -400,47 +465,3 @@ else
   echo "[init] ⚠ SSH config defaults not found — skipping"
 fi
 
-# ── 5. Memory persistence — backup & restore ─────────────────────────────────
-# Memory files (MEMORY.md, memory/*.md) are the bot continuity across sessions.
-# They live on the workspace volume, but must survive:
-#   - docker compose down -v  (volume deletion)
-#   - Fresh installs on new machines
-#   - Container image rebuilds
-#
-# Strategy: host-mounted /app/memory-backups is a bind mount to the repo
-# memory-backups/ directory. On every startup, we:
-#   1. Restore from backup if workspace memory is empty (fresh volume)
-#   2. Backup current memory to the host mount (on every startup)
-
-MEMORY_BACKUP_DIR="/app/memory-backups"
-WORKSPACE_MEMORY="${WORKSPACE_DIR}/memory"
-WORKSPACE_MEMORY_FILE="${WORKSPACE_DIR}/MEMORY.md"
-
-if [ -d "${MEMORY_BACKUP_DIR}" ]; then
-  # Restore: if workspace has no memory but backup does, restore it
-  if [ ! -f "${WORKSPACE_MEMORY_FILE}" ] && [ -f "${MEMORY_BACKUP_DIR}/MEMORY.md" ]; then
-    echo "[init] Fresh volume detected — restoring memory from backup"
-    cp "${MEMORY_BACKUP_DIR}/MEMORY.md" "${WORKSPACE_MEMORY_FILE}"
-    echo "[init]   Restored MEMORY.md"
-  fi
-
-  if [ ! -d "${WORKSPACE_MEMORY}" ] || [ -z "$(ls -A "${WORKSPACE_MEMORY}" 2>/dev/null)" ]; then
-    if [ -d "${MEMORY_BACKUP_DIR}/memory" ] && [ -n "$(ls -A "${MEMORY_BACKUP_DIR}/memory" 2>/dev/null)" ]; then
-      mkdir -p "${WORKSPACE_MEMORY}"
-      cp -r "${MEMORY_BACKUP_DIR}/memory/"* "${WORKSPACE_MEMORY}/" 2>/dev/null || true
-      echo "[init]   Restored memory/ directory"
-    fi
-  fi
-
-  # Backup: snapshot current memory to host mount (runs every startup)
-  if [ -f "${WORKSPACE_MEMORY_FILE}" ]; then
-    mkdir -p "${MEMORY_BACKUP_DIR}/memory"
-    cp "${WORKSPACE_MEMORY_FILE}" "${MEMORY_BACKUP_DIR}/MEMORY.md"
-    if [ -d "${WORKSPACE_MEMORY}" ]; then
-      cp -r "${WORKSPACE_MEMORY}/"* "${MEMORY_BACKUP_DIR}/memory/" 2>/dev/null || true
-    fi
-    echo "[init] Memory backed up to host mount (survives volume resets)"
-  fi
-else
-  echo "[init] Memory backup mount not available — memory NOT persisted to host"
-fi

@@ -1,8 +1,3 @@
----
-name: "pm"
-description: "Project Manager for the SecureClaw project. Tracks phases, coordinates agents, maintains continuity files, and ensures team delivery on roadmap. Use for sprint tracking, status reporting, and session continuity."
----
-
 # Skill: Project Management (PM)
 
 ## Role
@@ -14,15 +9,15 @@ You do NOT write code — you write plans, summaries, and status reports.
 
 | Phase | Name | Status | Key Deliverables |
 |-------|------|--------|-----------------|
-| 1 | Foundation | Complete | OpenClaw container, Telegram, Control UI |
-| 2 | Gateway & Testing | Complete | FastAPI gateway, 92% coverage, 116 tests |
-| 3A | Security Hardening | Complete | Seccomp, secrets, mDNS, NET_RAW removal |
-| 3B | Kill Switch | Complete | freeze/shutdown/disconnect modes |
-| 4 | SSH Capability | In Progress | SSH proxy, approval integration, audit |
-| 5 | Live Dashboard | Planned | WebSocket feed, React UI, alerting |
-| 6 | Tailscale + Docs | Planned | Remote access, IEC 62443, policies |
-| 7 | Hardening Skills | Planned | PromptGuard, egress filter, drift detection |
-| 8 | Polish & Publish | Planned | Documentation, examples, release |
+| 1 | Foundation | ✅ Complete | OpenClaw container, Telegram, Control UI |
+| 2 | Gateway & Testing | ✅ Complete | FastAPI gateway, 92% coverage, 116 tests |
+| 3A | Security Hardening | ✅ Complete | Seccomp, secrets, mDNS, NET_RAW removal |
+| 3B | Kill Switch | ✅ Complete | freeze/shutdown/disconnect modes |
+| 4 | SSH Capability | 🔨 In Progress | SSH proxy, approval integration, audit |
+| 5 | Live Dashboard | 📅 Planned | WebSocket feed, React UI, alerting |
+| 6 | Tailscale + Docs | 📅 Planned | Remote access, IEC 62443, policies |
+| 7 | Hardening Skills | 📅 Planned | PromptGuard, egress filter, drift detection |
+| 8 | Polish & Publish | 📅 Planned | Documentation, examples, release |
 
 ## Continuity Files
 
@@ -109,10 +104,10 @@ A task is done when:
 ### Quick Status (for chat/Telegram)
 ```
 SecureClaw Status:
-Phase 3B complete
-Phase 4: SSH Capability (40%)
-Coverage: 92% (116 tests)
-Blocked: iCloud auth
+✅ Phase 3B complete
+🔨 Phase 4: SSH Capability (40%)
+📊 Coverage: 92% (116 tests)
+🔴 Blocked: iCloud auth
 Next: SSH proxy module
 ```
 

@@ -248,15 +248,19 @@ fi
 # Backup: save current memory to backup directory (runs every startup)
 if [ -d "${MEMORY_BACKUP_DIR}" ]; then
   if [ -f "${MEMORY_FILE}" ] || [ -d "${MEMORY_DIR}" ]; then
-    [ -f "${MEMORY_FILE}" ] && cp "${MEMORY_FILE}" "${MEMORY_BACKUP_DIR}/MEMORY.md"
-    if [ -d "${MEMORY_DIR}" ]; then
-      mkdir -p "${MEMORY_BACKUP_DIR}/memory"
-      cp -r "${MEMORY_DIR}/"* "${MEMORY_BACKUP_DIR}/memory/" 2>/dev/null || true
+    if touch "${MEMORY_BACKUP_DIR}/.write-test" 2>/dev/null && rm -f "${MEMORY_BACKUP_DIR}/.write-test"; then
+      [ -f "${MEMORY_FILE}" ] && cp "${MEMORY_FILE}" "${MEMORY_BACKUP_DIR}/MEMORY.md"
+      if [ -d "${MEMORY_DIR}" ]; then
+        mkdir -p "${MEMORY_BACKUP_DIR}/memory"
+        cp -r "${MEMORY_DIR}/"* "${MEMORY_BACKUP_DIR}/memory/" 2>/dev/null || true
+      fi
+      for f in USER.md TOOLS.md HEARTBEAT.md; do
+        [ -f "${WORKSPACE_DIR}/${f}" ] && cp "${WORKSPACE_DIR}/${f}" "${MEMORY_BACKUP_DIR}/${f}"
+      done
+      echo "[init] ✓ Memory backed up to ${MEMORY_BACKUP_DIR}"
+    else
+      echo "[init] ⚠ Memory backup mount is read-only — skipping backup (memory NOT persisted to host)"
     fi
-    for f in USER.md TOOLS.md HEARTBEAT.md; do
-      [ -f "${WORKSPACE_DIR}/${f}" ] && cp "${WORKSPACE_DIR}/${f}" "${MEMORY_BACKUP_DIR}/${f}"
-    done
-    echo "[init] ✓ Memory backed up to ${MEMORY_BACKUP_DIR}"
   fi
 fi
 
@@ -320,12 +324,16 @@ if [ -d "${MEMORY_BACKUP_DIR}" ]; then
 
   # Backup: snapshot current memory to host mount (runs every startup)
   if [ -f "${WORKSPACE_MEMORY_FILE}" ]; then
-    mkdir -p "${MEMORY_BACKUP_DIR}/memory"
-    cp "${WORKSPACE_MEMORY_FILE}" "${MEMORY_BACKUP_DIR}/MEMORY.md"
-    if [ -d "${WORKSPACE_MEMORY}" ]; then
-      cp -r "${WORKSPACE_MEMORY}/"* "${MEMORY_BACKUP_DIR}/memory/" 2>/dev/null || true
+    if touch "${MEMORY_BACKUP_DIR}/.write-test" 2>/dev/null && rm -f "${MEMORY_BACKUP_DIR}/.write-test"; then
+      mkdir -p "${MEMORY_BACKUP_DIR}/memory"
+      cp "${WORKSPACE_MEMORY_FILE}" "${MEMORY_BACKUP_DIR}/MEMORY.md"
+      if [ -d "${WORKSPACE_MEMORY}" ]; then
+        cp -r "${WORKSPACE_MEMORY}/"* "${MEMORY_BACKUP_DIR}/memory/" 2>/dev/null || true
+      fi
+      echo "[init] Memory backed up to host mount (survives volume resets)"
+    else
+      echo "[init] ⚠ Memory backup mount is read-only — skipping backup (memory NOT persisted to host)"
     fi
-    echo "[init] Memory backed up to host mount (survives volume resets)"
   fi
 else
   echo "[init] Memory backup mount not available — memory NOT persisted to host"

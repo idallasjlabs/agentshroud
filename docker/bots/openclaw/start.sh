@@ -132,7 +132,9 @@ if [ -n "${GATEWAY_AUTH_TOKEN:-}" ] && [ -n "${GATEWAY_OP_PROXY_URL:-}" ]; then
 
     # Load Brave Search API key (non-blocking single attempt).
     # This key is optional; do not delay bot startup for retry backoff loops.
+    # Brief delay gives the gateway op-proxy time to authenticate before the first attempt.
     # Item ID: 6j6ij5tzld6kobvit5tk6ufrhq (Brave Search API - agentshroud.ai@gmail.com)
+    sleep 5
     BRAVE_API_KEY="${BRAVE_API_KEY:-$(/usr/local/bin/op-wrapper.sh read \
         "op://Agent Shroud Bot Credentials/6j6ij5tzld6kobvit5tk6ufrhq/brave search api key" \
         2>/dev/null || true)}"

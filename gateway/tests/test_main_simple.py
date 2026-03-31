@@ -13,7 +13,7 @@ import pytest
 from unittest.mock import MagicMock, patch
 from fastapi import HTTPException
 
-from gateway.ingest_api.main import log_requests, global_exception_handler
+from gateway.ingest_api.main import log_requests, global_exception_handler, security_headers_middleware
 from gateway.ingest_api.models import ForwardRequest
 
 
@@ -36,6 +36,60 @@ async def test_log_requests_middleware():
     result = await log_requests(request, mock_call_next)
 
     assert result == response
+
+
+@pytest.mark.asyncio
+async def test_security_headers_middleware_normal_response():
+    """security_headers_middleware adds expected security headers."""
+    request = MagicMock()
+    response = MagicMock()
+    response.headers = {}
+    response.status_code = 200
+
+    async def mock_call_next(req):
+        return response
+
+    result = await security_headers_middleware(request, mock_call_next)
+
+    assert result.headers.get("X-Content-Type-Options") == "nosniff"
+    assert result.headers.get("X-Frame-Options") == "DENY"
+    assert result.headers.get("Cache-Control") == "no-store"
+
+
+@pytest.mark.asyncio
+async def test_security_headers_middleware_catches_exception_group():
+    """security_headers_middleware returns 500 when anyio BaseExceptionGroup is raised.
+
+    Python 3.11+ anyio TaskGroups wrap CancelledError in BaseExceptionGroup,
+    which is a BaseException (not Exception) and bypasses Starlette's
+    ServerErrorMiddleware. The outermost middleware must catch it explicitly.
+    """
+    request = MagicMock()
+    request.url.path = "/test"
+
+    # Simulate a BaseExceptionGroup (has .exceptions attribute)
+    class FakeExceptionGroup(BaseException):
+        exceptions = [ConnectionError("DNS timeout")]
+
+    async def mock_call_next_raises(req):
+        raise FakeExceptionGroup("group")
+
+    result = await security_headers_middleware(request, mock_call_next_raises)
+
+    assert result.status_code == 500
+    assert "internal server error" in result.body.decode().lower()
+
+
+@pytest.mark.asyncio
+async def test_security_headers_middleware_reraises_non_group():
+    """security_headers_middleware re-raises BaseExceptions that are not groups."""
+    request = MagicMock()
+
+    async def mock_call_next_raises(req):
+        raise KeyboardInterrupt("shutdown")
+
+    with pytest.raises(KeyboardInterrupt):
+        await security_headers_middleware(request, mock_call_next_raises)
 
 
 @pytest.mark.asyncio

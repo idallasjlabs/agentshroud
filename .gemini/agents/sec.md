@@ -1,8 +1,3 @@
----
-name: "sec"
-description: "Security Reviewer for the SecureClaw project. Reviews code changes across application, container, network, and data flow security layers. Use for security audits of pull requests or new features in the SecureClaw proxy system."
----
-
 # Skill: Security Review (SEC)
 
 ## Role
@@ -71,6 +66,12 @@ grep -rn "sk-ant\|sk-proj\|password\s*=" gateway/ --include="*.py" | grep -v tes
 # Check container security posture
 docker inspect secureclaw-gateway --format '{{json .HostConfig.SecurityOpt}}'
 docker inspect openclaw-bot --format '{{json .HostConfig.CapDrop}}'
+
+# Verify seccomp profiles loaded
+docker inspect secureclaw-gateway --format '{{.HostConfig.SecurityOpt}}'
+
+# Check for PII in logs
+docker logs secureclaw-gateway 2>&1 | grep -iE "password|secret|token|key=" | head
 ```
 
 ## Output Format

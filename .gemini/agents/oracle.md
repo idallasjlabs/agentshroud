@@ -1,5 +1,5 @@
 ---
-name: "oracle"
+name: oracle
 description: "Feedback Analyst for podcast pipeline. Analyzes episode quality and audience impact. Use when reviewing and improving podcast episodes."
 ---
 

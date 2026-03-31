@@ -3,4 +3,6 @@
 Purpose: postmortem agent agent.
 
 Responsibilities:
-- Execute specialized tasks within the AI engineering OS.
+- Perform postmortem agent-specific tasks
+- Support postmortem agent workflows
+- Provide expertise in postmortem agent domain

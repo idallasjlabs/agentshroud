@@ -13,7 +13,7 @@ LOG_DIR="/var/log/security"
 GATEWAY_URL="${GATEWAY_URL:-http://localhost:8080}"
 TIMESTAMP=$(date -u +%Y%m%d-%H%M%S)
 
-mkdir -p "$LOG_DIR"/{trivy,clamav,oscap}
+mkdir -p "$LOG_DIR/trivy" "$LOG_DIR/clamav" "$LOG_DIR/oscap"
 
 log() {
     echo "[$(date -u +%Y-%m-%dT%H:%M:%SZ)] $*" | tee -a "$LOG_DIR/entrypoint-$TIMESTAMP.log"
@@ -41,11 +41,18 @@ fi
 # --- Initial Trivy Scan ---
 log "Running initial Trivy filesystem scan..."
 if command -v trivy >/dev/null 2>&1; then
-    trivy fs --format json --severity CRITICAL,HIGH,MEDIUM,LOW --no-progress / \
+    _trivy_ignorefile=""
+    [ -f /app/.trivyignore ] && _trivy_ignorefile="--ignorefile /app/.trivyignore"
+    # shellcheck disable=SC2086
+    trivy fs --format json --severity CRITICAL,HIGH,MEDIUM,LOW --no-progress \
+        $_trivy_ignorefile / \
         > "$LOG_DIR/trivy/trivy-$TIMESTAMP.json" 2>"$LOG_DIR/trivy/trivy-$TIMESTAMP.err" || true
 
-    TRIVY_CRITICAL=$(cat "$LOG_DIR/trivy/trivy-$TIMESTAMP.json" | \
-        python3 -c "import sys,json; d=json.load(sys.stdin); print(sum(1 for r in d.get('Results',[]) for v in r.get('Vulnerabilities',[]) if v.get('Severity')=='CRITICAL'))" 2>/dev/null || echo "0")
+    if [ -s "$LOG_DIR/trivy/trivy-$TIMESTAMP.json" ]; then
+        TRIVY_CRITICAL=$(python3 -c "import sys,json; d=json.load(sys.stdin); print(sum(1 for r in d.get('Results',[]) for v in r.get('Vulnerabilities',[]) if v.get('Severity')=='CRITICAL'))" < "$LOG_DIR/trivy/trivy-$TIMESTAMP.json" 2>/dev/null || echo "0")
+    else
+        TRIVY_CRITICAL=0
+    fi
 
     log "Trivy scan complete: $TRIVY_CRITICAL critical vulnerabilities"
     if [ "$TRIVY_CRITICAL" -gt 0 ] 2>/dev/null; then

@@ -9,18 +9,36 @@ Sanitize HTTP headers, image metadata, and filenames to prevent information disc
 from __future__ import annotations
 
 
+import hashlib
 import re
+import time
 import unicodedata
+from dataclasses import dataclass
 from typing import Dict, Optional
 import logging
 
 logger = logging.getLogger(__name__)
 
 
+# C18: Document File Tagging
+@dataclass
+class DocumentTag:
+    """Provenance record for a document ingested into the agent context."""
+    filename: str
+    content_hash: str          # SHA-256 of raw content bytes
+    source: str                # upload / tool_fetch / web_fetch
+    trust_level: str           # TRUSTED / UNTRUSTED
+    tagged_at: float
+    size_bytes: int
+
+
 class MetadataGuard:
     """Guards against metadata channel attacks and information disclosure."""
 
     def __init__(self):
+        # C18: document tag store keyed by content_hash
+        self._document_tags: Dict[str, DocumentTag] = {}
+
         # Headers to strip entirely
         self.strip_headers = {"Server", "X-Powered-By"}
 
@@ -135,6 +153,34 @@ class MetadataGuard:
 
         # Remove the EXIF section
         return data[:exif_start] + data[exif_end:]
+
+    # ── C18: Document File Tagging ────────────────────────────────────────────
+
+    def tag_document(
+        self,
+        filename: str,
+        content: bytes,
+        source: str = "upload",
+        trust_level: str = "UNTRUSTED",
+    ) -> DocumentTag:
+        """Create and store a provenance tag for a document."""
+        content_hash = hashlib.sha256(content).hexdigest()
+        tag = DocumentTag(
+            filename=filename,
+            content_hash=content_hash,
+            source=source,
+            trust_level=trust_level,
+            tagged_at=time.time(),
+            size_bytes=len(content),
+        )
+        self._document_tags[content_hash] = tag
+        return tag
+
+    def get_document_tag(self, content_hash: str) -> Optional[DocumentTag]:
+        """Look up a document tag by its SHA-256 content hash."""
+        return self._document_tags.get(content_hash)
+
+    # ─────────────────────────────────────────────────────────────────────────
 
     def check_oversized_headers(self, headers: Dict[str, str]) -> Optional[str]:
         """Check if headers exceed size limits."""

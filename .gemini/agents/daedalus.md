@@ -1,5 +1,5 @@
 ---
-name: "daedalus"
+name: daedalus
 description: "Concept Illustrator for podcast pipeline. Generates PlantUML and Mermaid diagrams for key concepts. Use when creating visual aids for podcast episodes."
 ---
 

@@ -3,4 +3,7 @@
 Purpose: sre agent agent.
 
 Responsibilities:
-- Execute specialized tasks within the AI engineering OS.
+- Ensure service reliability and availability
+- Implement SRE best practices (SLOs, error budgets, toil reduction)
+- Automate operational tasks
+- Conduct post-incident reviews

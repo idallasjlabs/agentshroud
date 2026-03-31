@@ -3,4 +3,7 @@
 Purpose: deploy agent agent.
 
 Responsibilities:
-- Execute specialized tasks within the AI engineering OS.
+- Execute deployment procedures
+- Validate pre-deployment checklist
+- Monitor deployment health
+- Execute rollback if deployment fails

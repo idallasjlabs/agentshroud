@@ -1,8 +1,3 @@
----
-name: "mcpm-doctor"
-description: "MCP Diagnostics specialist. Diagnoses and troubleshoots MCP server connectivity and configuration issues for GitHub, Atlassian, and AWS MCP servers. Use when MCP servers fail to connect, authentication errors occur, or configuration issues are suspected."
----
-
 # Skill: MCP Doctor (MCPM-DOCTOR)
 
 ## Role

@@ -49,6 +49,13 @@ const patterns = [
         old: 'const TELEGRAM_API_BASE = \"https://api.telegram.org\"',
         rep: 'const TELEGRAM_API_BASE = (' + BASE_ENV + ' || ' + FALLBACK + ')',
     },
+    // TELEGRAM_MEDIA_SSRF_POLICY: add "gateway" to allowedHostnames so that file downloads
+    // routed through http://gateway:8080/telegram-api/... pass the SSRF private-IP check.
+    // OpenClaw's SSRF guard blocks private IPs unless the hostname is in allowedHostnames.
+    {
+        old: 'allowedHostnames: [\"api.telegram.org\"],\n\tallowRfc2544BenchmarkRange: true\n};',
+        rep: 'allowedHostnames: [\"api.telegram.org\",\"gateway\"],\n\tallowRfc2544BenchmarkRange: true\n};',
+    },
     // Bare literal (catch-all for remaining occurrences not already replaced above)
     {
         old: '\"https://api.telegram.org\"',

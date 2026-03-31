@@ -1,117 +1,151 @@
 ---
-name: "icloud"
-description: "iCloud Data Manager for the SecureClaw project. Provides structured access to iCloud Drive, Contacts, and Calendar via gateway API. Use when interacting with iCloud data sources, checking sync status, or managing iCloud-based workflows."
+name: icloud
+description: Manage iCloud Calendar, Contacts, Mail, and Notes. Use when user needs to create/view/update calendar events, manage contacts, send emails, or work with notes. Credentials automatically retrieved from 1Password.
 ---
 
-# Skill: iCloud Data Manager (ICLOUD)
+# iCloud Services
 
-## Role
-You are an iCloud Integration Specialist for the SecureClaw project.  You provide
-structured, audited access to iCloud data via the gateway proxy — never directly.
+Manage Apple iCloud Calendar, Contacts, Mail, and Notes with automatic credential handling.
 
-## Core Principle
-All iCloud access MUST go through the SecureClaw gateway.  The agent never
-accesses iCloud APIs directly.  The gateway enforces:
-- PII sanitization before data reaches the agent
-- Approval queue for sensitive read operations
-- Full audit logging of all accesses
-- Rate limiting and session isolation
+## Setup
 
-## Available iCloud Integrations
+**Prerequisites**: Apple ID with app-specific password stored in 1Password.
 
-### 1. iCloud Drive
-**Via MCP iCloud Drive server (when configured):**
-```
-gateway → icloud-drive-mcp → ~/Library/Mobile Documents/com~apple~CloudDocs/
-```
+**Credentials**: Automatically retrieved from 1Password item "Apple ID - therealidallasj", field "oenclaw bot password".
 
-**Capabilities:**
-- List directories and files
-- Read text files, Markdown, JSON, CSV
-- Write Markdown and plain text files
-- **Cannot:** Read binary files, modify non-text content
+## Calendar Operations
 
-**Gateway Request:**
-```json
-{
-  "tool": "icloud_drive_list",
-  "params": {"path": "/Documents/"},
-  "requires_approval": false
-}
-```
+### List Events
 
-### 2. iCloud Contacts
-**Via pyicloud or Apple Open Directory:**
-
-**Capabilities:**
-- List contacts (PII sanitized by gateway)
-- Search by name or email
-- Add new contacts (requires approval)
-- **Cannot:** Bulk export, delete contacts, access notes
-
-**Note:** Gateway strips phone numbers, addresses, and email details before
-returning to agent.  Only name and contact ID returned by default.
-
-### 3. iCloud Calendar
-**Via CalDAV API:**
-
-**Capabilities:**
-- List calendar events for a date range
-- Get event details (PII sanitized)
-- Create new calendar events (requires approval)
-- **Cannot:** Delete events, modify attendees, access private notes
-
-## Approval Requirements
-
-| Operation | Approval Required? |
-|-----------|-------------------|
-| List iCloud Drive directory | No |
-| Read text file | No |
-| List calendar events | No |
-| Search contacts | No |
-| Write new file | **Yes** |
-| Create calendar event | **Yes** |
-| Read contact details (PII) | **Yes** |
-| Delete anything | **Never allowed** |
-
-## Common Tasks
-
-### Check iCloud Sync Status
 ```bash
-# Via gateway diagnostic endpoint
-curl -H "Authorization: Bearer $GATEWAY_TOKEN" \
-  http://127.0.0.1:9080/manage/icloud/status
+scripts/calendar.js list --from "2026-02-16" --to "2026-02-20"
 ```
 
-### List Recent Files
-Request to gateway:
-```json
-{
-  "tool": "icloud_drive_list",
-  "params": {
-    "path": "/Documents/",
-    "sort": "modified_desc",
-    "limit": 20
-  }
-}
+### Create Event
+
+```bash
+scripts/calendar.js create \
+  --summary "Team Meeting" \
+  --start "2026-02-20T14:00:00" \
+  --end "2026-02-20T15:00:00" \
+  --location "Conference Room A" \
+  --description "Weekly team sync"
 ```
 
-### Read Markdown File
-Request to gateway:
-```json
-{
-  "tool": "icloud_drive_read",
-  "params": {
-    "path": "/Documents/Notes/meeting-notes-2025-01.md"
-  }
-}
+### Update Event
+
+```bash
+scripts/calendar.js update <event-id> \
+  --summary "Updated Meeting Title" \
+  --start "2026-02-20T15:00:00"
 ```
 
-## Security Constraints
+### Delete Event
 
-- Agent NEVER receives raw iCloud API tokens
-- All contact data returned with PII stripped
-- Calendar event attendee details are redacted
-- File read operations are logged to audit ledger
-- Write operations require explicit approval
-- No bulk operations without per-batch approval
+```bash
+scripts/calendar.js delete <event-id>
+```
+
+## Contact Operations
+
+### List Contacts
+
+```bash
+scripts/contacts.js list
+```
+
+### Search Contacts
+
+```bash
+scripts/contacts.js search "john"
+scripts/contacts.js search --email "john@example.com"
+```
+
+### Add Contact
+
+```bash
+scripts/contacts.js add \
+  --name "John Doe" \
+  --email "john@example.com" \
+  --phone "+1-555-0123"
+```
+
+### Update Contact
+
+```bash
+scripts/contacts.js update <contact-id> \
+  --email "newemail@example.com"
+```
+
+## Mail Operations
+
+### List Messages
+
+```bash
+scripts/mail.js list --folder INBOX --limit 10
+```
+
+### Send Email
+
+```bash
+scripts/mail.js send \
+  --to "recipient@example.com" \
+  --subject "Hello" \
+  --body "Message content"
+```
+
+### Search Mail
+
+```bash
+scripts/mail.js search "from:john@example.com subject:meeting"
+```
+
+## Notes Operations
+
+### List Notes
+
+```bash
+scripts/notes.js list
+```
+
+### Create Note
+
+```bash
+scripts/notes.js create \
+  --title "Meeting Notes" \
+  --content "Discussion points..."
+```
+
+### Search Notes
+
+```bash
+scripts/notes.js search "project"
+```
+
+## Configuration
+
+iCloud services use:
+- **Calendar**: CalDAV at caldav.icloud.com
+- **Contacts**: CardDAV at contacts.icloud.com/card
+- **Mail**: IMAP at imap.mail.me.com (port 993)
+- **Notes**: IMAP folder "Notes"
+
+All operations use app-specific password for authentication.
+
+## Security
+
+- Credentials never displayed in output
+- Retrieved from 1Password on-demand
+- Automatic cleanup after operations
+- All connections use TLS/SSL
+
+## Troubleshooting
+
+### "401 Unauthorized"
+Check app-specific password is correct in 1Password.
+
+### "Connection timeout"
+Verify network access to icloud.com.
+
+### "Calendar/Contacts not found"
+Ensure services are enabled at icloud.com.

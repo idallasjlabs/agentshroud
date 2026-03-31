@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<!-- Copyright © 2026 Isaiah Dallas Jefferson, Jr. AgentShroud™. All rights reserved. -->
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AgentShroud™ Command Center</title>
+  <link rel="stylesheet" href="/soc/static/soc.css">
+  <link rel="icon" type="image/x-icon" href="/soc/favicons/favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="/soc/favicons/favicon-32x32.png">
+  <link rel="apple-touch-icon" href="/soc/favicons/apple-touch-icon.png">
+  <script>(function(){var t=localStorage.getItem('as_theme')||(window.matchMedia&&window.matchMedia('(prefers-color-scheme: light)').matches?'light':'dark');document.documentElement.dataset.theme=t;}());</script>
+</head>
+<body>
+
+<!-- ── Top bar ──────────────────────────────────────────────── -->
+<header class="topbar">
+  <div class="topbar-brand">
+    <img src="/soc/branding/logo.png" alt="AgentShroud™" width="26" height="26" style="border-radius:3px;object-fit:contain" onerror="this.outerHTML='<svg class=&quot;brand-shield&quot; width=&quot;26&quot; height=&quot;26&quot; viewBox=&quot;0 0 24 24&quot; fill=&quot;none&quot; aria-hidden=&quot;true&quot;><path d=&quot;M12 2L4 6v6c0 5.25 3.5 10.15 8 11.35C16.5 22.15 20 17.25 20 12V6l-8-4z&quot; fill=&quot;currentColor&quot; opacity=&quot;0.85&quot;/></svg>'" class="brand-shield">
+    <div class="brand-text">
+      <span class="brand-name">AgentShroud™</span>
+      <span class="brand-sub">Security Operations Command Center</span>
+    </div>
+    <span class="brand-version">v0.9.0</span>
+  </div>
+
+  <div class="topbar-center">
+    <div id="ws-status" class="ws-pill disconnected">
+      <span class="ws-dot"></span>
+      <span id="ws-label">Disconnected</span>
+    </div>
+  </div>
+
+  <div class="topbar-controls">
+    <button id="theme-toggle" class="theme-toggle" aria-label="Toggle light/dark mode">🌙</button>
+    <div class="estop-group" title="System control — requires confirmation">
+      <span class="estop-label">System&nbsp;Control</span>
+      <button class="btn-estop-freeze" onclick="window._ksFreeze()">⏸ Freeze</button>
+      <button class="btn-estop-halt"   onclick="window._ksHalt()">■ Halt</button>
+    </div>
+  </div>
+</header>
+
+<!-- ── Main layout ──────────────────────────────────────────── -->
+<div class="layout">
+
+  <!-- Sidebar -->
+  <nav class="sidebar">
+    <div class="nav-section">Monitor</div>
+    <a class="nav-item active" data-tab="overview">Overview</a>
+    <a class="nav-item" data-tab="security">Security Events</a>
+    <a class="nav-item" data-tab="scanners">Scanners</a>
+    <a class="nav-item" data-tab="scorecard">Scorecard</a>
+    <div class="nav-section">Manage</div>
+    <a class="nav-item" data-tab="services">Services</a>
+    <a class="nav-item" data-tab="contributors">Contributors</a>
+    <a class="nav-item" data-tab="egress">Egress</a>
+    <div class="nav-section">Debug</div>
+    <a class="nav-item" data-tab="logs">Logs</a>
+    <a class="nav-item" data-tab="config">Config</a>
+  </nav>
+
+  <!-- Main content -->
+  <main class="main">
+
+    <!-- ── Overview ─────────────────────────────────────────── -->
+    <div id="tab-overview" class="tab-pane">
+      <h2>Overview</h2>
+      <div id="kpi-strip" class="kpi-strip">
+        <div class="kpi-card"><div class="kpi-label">Risk Score</div><div class="kpi-value" id="kpi-risk">--</div><div class="kpi-sub" id="kpi-risk-sub">loading...</div></div>
+        <div class="kpi-card"><div class="kpi-label">Services</div><div class="kpi-value" id="kpi-services">--</div><div class="kpi-sub" id="kpi-services-sub">loading...</div></div>
+        <div class="kpi-card"><div class="kpi-label">Events (stream)</div><div class="kpi-value" id="kpi-events">0</div><div class="kpi-sub">live feed</div></div>
+        <div class="kpi-card"><div class="kpi-label">Contributors</div><div class="kpi-value" id="kpi-contribs">--</div><div class="kpi-sub" id="kpi-contribs-sub">active</div></div>
+        <div class="kpi-card"><div class="kpi-label">Egress Pending</div><div class="kpi-value" id="kpi-egress">--</div><div class="kpi-sub">approvals</div></div>
+      </div>
+      <div class="panel">
+        <div class="panel-header">
+          Activity Feed
+          <span id="feed-count" class="badge badge-info">0</span>
+        </div>
+        <div class="panel-body" style="padding:0">
+          <div id="overview-feed" style="max-height:420px;overflow-y:auto;padding:0.5rem 1rem">
+            <div style="color:var(--text-muted);font-size:12px;padding:0.5rem 0">Connecting to event stream...</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ── Security Events ──────────────────────────────────── -->
+    <div id="tab-security" class="tab-pane" style="display:none">
+      <h2>Security Events</h2>
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:1rem;margin-bottom:1rem">
+        <div class="panel">
+          <div class="panel-header">Risk Score</div>
+          <div class="panel-body">
+            <div class="risk-gauge">
+              <div class="risk-score low" id="risk-score-big">--</div>
+              <div>
+                <div id="risk-level-label" style="font-size:14px;font-weight:600">loading...</div>
+                <div style="color:var(--text-muted);font-size:11px;margin-top:0.2rem" id="risk-updated">--</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="panel">
+          <div class="panel-header">SOC Correlation</div>
+          <div class="panel-body" id="correlation-panel" style="font-size:12px;color:var(--text-muted)">loading...</div>
+        </div>
+      </div>
+      <div class="panel">
+        <div class="panel-header">
+          Event Log
+          <div class="toolbar" style="margin:0">
+            <select id="sev-filter" class="filter-select">
+              <option value="">All severity</option>
+              <option value="critical">Critical</option>
+              <option value="high">High</option>
+              <option value="medium">Medium</option>
+              <option value="low">Low</option>
+            </select>
+            <button class="btn btn-sm" onclick="window._reloadSecurity()">Refresh</button>
+          </div>
+        </div>
+        <div class="panel-body" style="padding:0">
+          <table class="data-table">
+            <thead>
+              <tr><th>Time</th><th>Severity</th><th>Type</th><th>Module</th><th>Summary</th></tr>
+            </thead>
+            <tbody id="security-tbody">
+              <tr><td colspan="5" style="color:var(--text-muted);text-align:center;padding:1rem">loading...</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <!-- ── Security Scanners ────────────────────────────────── -->
+    <div id="tab-scanners" class="tab-pane" style="display:none">
+      <h2>Security Scanners</h2>
+      <div class="toolbar" style="margin-bottom:1.25rem">
+        <button class="btn btn-sm" onclick="window._reloadScanners()">Refresh All</button>
+        <button class="btn btn-sm btn-primary" onclick="window._runScan('all', this)">▶ Run All Scans</button>
+        <span style="color:var(--text-muted);font-size:11px" id="scanners-updated">--</span>
+      </div>
+      <div id="scanner-grid" class="scanner-grid">
+        <div style="color:var(--text-muted);font-size:12px">loading scanners...</div>
+      </div>
+      <div class="panel">
+        <div class="panel-header">
+          Software Bill of Materials (SBOM)
+          <button class="btn btn-sm" onclick="window._downloadSbom()">Download JSON</button>
+        </div>
+        <div class="panel-body">
+          <div id="sbom-panel" class="sbom-meta" style="color:var(--text-muted);font-size:12px">loading...</div>
+          <div id="sbom-packages" style="margin-top:1rem;display:none">
+            <input id="sbom-search" class="filter-select" placeholder="Search packages..." style="width:100%;margin-bottom:.5rem" oninput="window._filterSbomPackages(this.value)">
+            <div id="sbom-pkg-table"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ── Container Security Scorecard ─────────────────────── -->
+    <div id="tab-scorecard" class="tab-pane" style="display:none">
+      <h2>Container Security Scorecard</h2>
+      <div id="scorecard-header" class="scorecard-header">
+        <div>
+          <div class="scorecard-overall-score score-2" id="scorecard-score">--</div>
+          <div style="font-size:11px;color:var(--text-muted);margin-top:0.25rem">/ 5.0 overall maturity</div>
+        </div>
+        <div class="scorecard-meta">
+          <h3 id="scorecard-level">Loading...</h3>
+          <p id="scorecard-desc" style="color:var(--text-muted)">
+            33-domain assessment · Infrastructure (D1–D21) + Agentic AI (D22–D33) · 11 standards
+          </p>
+        </div>
+        <button class="btn btn-sm" onclick="window._reloadScorecard()">Refresh</button>
+      </div>
+      <div id="scorecard-grid" class="scorecard-grid">
+        <div style="color:var(--text-muted);font-size:12px">loading scorecard...</div>
+      </div>
+
+      <!-- Standards Reference -->
+      <section id="scorecard-standards" style="margin-top:2rem;border-top:1px solid var(--border-color);padding-top:1.5rem">
+        <h3 style="font-size:13px;font-weight:600;margin-bottom:1rem;color:var(--text-muted);text-transform:uppercase;letter-spacing:.05em">Standards &amp; Frameworks Reference</h3>
+        <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:1.25rem;font-size:12px">
+
+          <!-- Infrastructure -->
+          <div>
+            <div style="font-weight:600;margin-bottom:0.5rem;color:var(--text-primary)">Infrastructure Security (D1–D21)</div>
+            <ul style="list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:0.35rem;color:var(--text-muted)">
+              <li><a href="https://www.cisecurity.org/benchmark/docker" target="_blank" rel="noopener" style="color:var(--accent)">CIS Docker Benchmark v1.6.0</a> — Container host &amp; daemon hardening (Sections 1–6)</li>
+              <li><a href="https://csrc.nist.gov/publications/detail/sp/800-190/final" target="_blank" rel="noopener" style="color:var(--accent)">NIST SP 800-190</a> — Application Container Security Guide (5 risk areas)</li>
+              <li><a href="https://public.cyber.mil/stigs/downloads/" target="_blank" rel="noopener" style="color:var(--accent)">DISA Docker Enterprise STIG</a> — U.S. DoD STIG for container platforms</li>
+              <li><a href="https://www.isa.org/standards-and-publications/isa-standards/isa-iec-62443-series-of-standards" target="_blank" rel="noopener" style="color:var(--accent)">IEC 62443</a> — Industrial cybersecurity (FR1–FR7, Security Levels SL 0–4)</li>
+            </ul>
+          </div>
+
+          <!-- Agentic AI -->
+          <div>
+            <div style="font-weight:600;margin-bottom:0.5rem;color:var(--text-primary)">Agentic AI Security (D22–D33)</div>
+            <ul style="list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:0.35rem;color:var(--text-muted)">
+              <li><a href="https://owasp.org/www-project-top-10-for-agentic-ai/" target="_blank" rel="noopener" style="color:var(--accent)">OWASP Top 10 for Agentic AI 2026</a> — ASI-01 through ASI-10 agent-specific risks</li>
+              <li><a href="https://atlas.mitre.org" target="_blank" rel="noopener" style="color:var(--accent)">MITRE ATLAS (Oct 2025)</a> — Adversarial Threat Landscape for AI Systems (15 tactics, 80+ techniques)</li>
+              <li><a href="https://cloudsecurityalliance.org/research/topics/ai-security" target="_blank" rel="noopener" style="color:var(--accent)">CSA MAESTRO (Feb 2025)</a> — Multi-Agent Extensible Security Threat &amp; Risk Ontology</li>
+              <li><a href="https://owasp.org/www-project-top-10-for-large-language-model-applications/" target="_blank" rel="noopener" style="color:var(--accent)">OWASP LLM Top 10</a> — Top 10 security risks for large language model applications</li>
+            </ul>
+          </div>
+
+          <!-- AI Governance -->
+          <div>
+            <div style="font-weight:600;margin-bottom:0.5rem;color:var(--text-primary)">AI Governance &amp; Risk Management</div>
+            <ul style="list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:0.35rem;color:var(--text-muted)">
+              <li><a href="https://airc.nist.gov/Home" target="_blank" rel="noopener" style="color:var(--accent)">NIST AI RMF 1.0</a> — AI Risk Management Framework (Govern / Map / Measure / Manage)</li>
+              <li><a href="https://www.nist.gov/artificial-intelligence" target="_blank" rel="noopener" style="color:var(--accent)">NIST AI Agent Standards Initiative 2026</a> — Agent identity, authorization &amp; audit requirements</li>
+              <li><a href="https://www.iso.org/standard/81230.html" target="_blank" rel="noopener" style="color:var(--accent)">ISO/IEC 42001:2023</a> — AI Management System Standard (§8.4 human oversight, §9 monitoring)</li>
+            </ul>
+          </div>
+
+        </div>
+      </section>
+    </div>
+
+    <!-- ── Services ─────────────────────────────────────────── -->
+    <div id="tab-services" class="tab-pane" style="display:none">
+      <h2>Services</h2>
+      <div class="toolbar">
+        <button class="btn btn-sm" onclick="window._reloadServices()">Refresh</button>
+        <span style="color:var(--text-muted);font-size:11px" id="services-updated">--</span>
+      </div>
+      <div id="services-grid" class="services-grid">
+        <div style="color:var(--text-muted);font-size:12px">loading...</div>
+      </div>
+    </div>
+
+    <!-- ── Contributors ─────────────────────────────────────── -->
+    <div id="tab-contributors" class="tab-pane" style="display:none">
+      <h2>Contributors</h2>
+      <div class="tab-bar">
+        <div class="tab active" onclick="window._showContribTab('users',this)">Users</div>
+        <div class="tab" onclick="window._showContribTab('groups',this)">Groups</div>
+        <div class="tab" onclick="window._showContribTab('activity',this)">Activity</div>
+      </div>
+      <div id="contribs-users">
+        <div class="panel">
+          <div class="panel-header">
+            Users
+            <button class="btn btn-sm btn-primary" onclick="window._showAddCollabForm()">+ Add</button>
+          </div>
+          <div class="panel-body" style="padding:0">
+            <table class="data-table">
+              <thead>
+                <tr><th>User ID</th><th>Name</th><th>Role</th><th>Groups</th><th>Mode</th><th>Lockdown</th><th>Actions</th></tr>
+              </thead>
+              <tbody id="users-tbody">
+                <tr><td colspan="7" style="color:var(--text-muted);text-align:center;padding:1rem">loading...</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+      <div id="contribs-activity" style="display:none">
+        <div class="panel">
+          <div class="panel-header" style="flex-wrap:wrap;gap:.5rem">
+            <span style="display:flex;align-items:center;gap:.5rem">
+              Activity Log
+              <span id="activity-new-badge" style="display:none;background:var(--accent);color:#fff;border-radius:10px;padding:1px 8px;font-size:11px;font-weight:700"></span>
+            </span>
+            <div style="display:flex;gap:.5rem;align-items:center;flex-wrap:wrap">
+              <input id="activity-search" type="text" placeholder="Search user / preview…" class="filter-select" style="width:200px"
+                oninput="window._filterActivityLocal()" />
+              <select id="activity-user-filter" class="filter-select" style="width:160px" onchange="window._loadActivityLog()">
+                <option value="">All Users</option>
+              </select>
+              <select id="activity-direction-filter" class="filter-select" style="width:110px" onchange="window._loadActivityLog()">
+                <option value="">In + Out</option>
+                <option value="inbound">Inbound ↑</option>
+                <option value="outbound">Outbound ↓</option>
+                <option value="owner">Owner</option>
+              </select>
+              <button class="btn btn-sm" onclick="window._markActivityViewed();window._loadActivityLog()">Mark Viewed</button>
+              <button class="btn btn-sm" onclick="window._loadActivityLog()">Refresh</button>
+            </div>
+          </div>
+          <div id="activity-stats" style="padding:.5rem 1rem;font-size:12px;color:var(--text-muted);border-bottom:1px solid var(--border)"></div>
+          <div class="panel-body" style="padding:0">
+            <table class="data-table">
+              <thead>
+                <tr>
+                  <th class="sortable" data-col="timestamp" onclick="window._sortActivity('timestamp')" style="cursor:pointer;white-space:nowrap">Timestamp <span id="sort-timestamp">▼</span></th>
+                  <th class="sortable" data-col="user_id" onclick="window._sortActivity('user_id')" style="cursor:pointer">User <span id="sort-user_id"></span></th>
+                  <th>Query</th>
+                  <th>Response</th>
+                  <th>Source</th>
+                </tr>
+              </thead>
+              <tbody id="activity-tbody">
+                <tr><td colspan="5" style="color:var(--text-muted);text-align:center;padding:1rem">loading...</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <div id="activity-footer" style="padding:.5rem 1rem;font-size:11px;color:var(--text-muted);text-align:right"></div>
+        </div>
+      </div>
+      <div id="contribs-groups" style="display:none">
+        <div class="panel">
+          <div class="panel-header">
+            Groups
+            <button class="btn btn-sm btn-primary" onclick="window._openGroupPanel(null)">+ Create Group</button>
+          </div>
+          <div class="panel-body" style="padding:0">
+            <table class="data-table">
+              <thead>
+                <tr><th>Group ID</th><th>Name</th><th>Members</th><th>Collab Mode</th><th>Actions</th></tr>
+              </thead>
+              <tbody id="groups-tbody">
+                <tr><td colspan="5" style="color:var(--text-muted);text-align:center;padding:1rem">loading...</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <!-- Group management panel (create / edit) -->
+        <div id="group-panel" class="panel" style="display:none;margin-top:1rem">
+          <div class="panel-header">
+            <span id="group-panel-title">Group</span>
+            <button class="btn btn-sm" onclick="window._closeGroupPanel()">✕ Close</button>
+          </div>
+          <div class="panel-body">
+            <div style="display:grid;grid-template-columns:1fr 1fr;gap:1rem;margin-bottom:1rem">
+              <label style="display:flex;flex-direction:column;gap:.35rem;font-size:12px;color:var(--text-muted)">
+                Group ID
+                <input id="gp-id" class="filter-select" style="width:100%" placeholder="e.g. soc-analysts">
+              </label>
+              <label style="display:flex;flex-direction:column;gap:.35rem;font-size:12px;color:var(--text-muted)">
+                Name
+                <input id="gp-name" class="filter-select" style="width:100%" placeholder="Display name">
+              </label>
+              <label style="display:flex;flex-direction:column;gap:.35rem;font-size:12px;color:var(--text-muted)">
+                Collab Mode
+                <select id="gp-mode" class="filter-select" style="width:100%">
+                  <option value="local_only">local_only — responses stay local, no cross-user sharing</option>
+                  <option value="project_scoped">project_scoped — share within project context only</option>
+                  <option value="full_access">full_access — full shared memory across all group members</option>
+                </select>
+              </label>
+              <label style="display:flex;flex-direction:column;gap:.35rem;font-size:12px;color:var(--text-muted)">
+                Admin User ID <span style="opacity:.5">(optional)</span>
+                <input id="gp-admin" class="filter-select" style="width:100%" placeholder="Telegram user ID">
+              </label>
+            </div>
+            <div id="gp-create-row" style="margin-bottom:1rem">
+              <button class="btn btn-primary" onclick="window._submitCreateGroup()">Create Group</button>
+            </div>
+            <!-- Members section (shown in edit mode) -->
+            <div id="gp-members-section" style="display:none">
+              <div style="font-size:12px;font-weight:600;color:var(--text-muted);margin-bottom:.5rem;text-transform:uppercase;letter-spacing:.05em">Members</div>
+              <div id="gp-members-list" style="margin-bottom:.75rem"></div>
+              <div style="display:flex;gap:.5rem;align-items:center">
+                <input id="gp-add-uid" class="filter-select" placeholder="User ID to add" style="flex:1">
+                <button class="btn btn-sm btn-primary" onclick="window._submitAddMember()">Add Member</button>
+              </div>
+              <div style="margin-top:1rem;padding-top:1rem;border-top:1px solid var(--border)">
+                <button class="btn btn-sm" onclick="window._submitSaveMode()">Save Mode</button>
+                <button class="btn btn-sm btn-danger" onclick="window._submitDeleteGroup()" style="margin-left:.5rem">Delete Group</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ── Egress ────────────────────────────────────────────── -->
+    <div id="tab-egress" class="tab-pane" style="display:none">
+      <h2>Egress</h2>
+      <div class="toolbar">
+        <button class="btn btn-sm btn-danger" onclick="window._emergencyBlock()">Block All Egress</button>
+        <button class="btn btn-sm" onclick="window._reloadEgress()">Refresh</button>
+      </div>
+      <div class="panel">
+        <div class="panel-header">
+          Pending Approvals
+          <span id="egress-count" class="badge badge-warning">0</span>
+        </div>
+        <div class="panel-body" style="padding:0">
+          <table class="data-table">
+            <thead>
+              <tr><th>ID</th><th>Domain</th><th>Port</th><th>Agent</th><th>Tool</th><th>Risk</th><th>Submitted</th><th>Expires</th><th>Actions</th></tr>
+            </thead>
+            <tbody id="egress-tbody">
+              <tr><td colspan="9" style="color:var(--text-muted);text-align:center;padding:1rem">loading...</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <div class="panel">
+        <div class="panel-header">
+          Egress Rules
+          <span style="font-size:11px;color:var(--text-muted);font-weight:400">
+            <span class="badge badge-success" style="margin-right:.25rem">GREEN</span>known-safe &nbsp;
+            <span class="badge badge-warning" style="margin-right:.25rem">YELLOW</span>unknown/standard-port &nbsp;
+            <span class="badge badge-danger" style="margin-right:.25rem">RED</span>IP/suspicious-TLD/non-standard-port
+          </span>
+        </div>
+        <div class="panel-body" id="egress-rules" style="font-size:12px;color:var(--text-muted)">loading...</div>
+      </div>
+      <div class="panel">
+        <div class="panel-header">
+          Decision History
+          <button class="btn btn-sm" onclick="window._reloadEgress()">Refresh</button>
+        </div>
+        <div class="panel-body" style="padding:0">
+          <table class="data-table">
+            <thead>
+              <tr><th>Domain</th><th>Agent</th><th>Decision</th><th>Mode</th><th>Decided By</th><th>When</th><th>Actions</th></tr>
+            </thead>
+            <tbody id="egress-history-tbody">
+              <tr><td colspan="7" style="color:var(--text-muted);text-align:center;padding:1rem">loading...</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <!-- ── Logs ─────────────────────────────────────────────── -->
+    <div id="tab-logs" class="tab-pane" style="display:none">
+      <h2>Logs</h2>
+      <div class="toolbar">
+        <select id="log-service-filter" class="filter-select">
+          <option value="agentshroud-gateway">Gateway</option>
+          <option value="agentshroud-bot">Bot</option>
+          <option value="">All services</option>
+        </select>
+        <label class="live-label">
+          <input type="checkbox" id="log-live" checked> Live tail
+        </label>
+        <button class="btn btn-sm" onclick="window._clearLogs()">Clear</button>
+      </div>
+      <div class="log-viewer" id="log-viewer">Waiting for events...</div>
+    </div>
+
+    <!-- ── Config ────────────────────────────────────────────── -->
+    <div id="tab-config" class="tab-pane" style="display:none">
+      <h2>Configuration</h2>
+      <div class="panel">
+        <div class="panel-header">
+          Gateway Config
+          <button class="btn btn-sm" onclick="window._reloadConfig()">Reload</button>
+        </div>
+        <div class="panel-body">
+          <pre id="config-view" style="font-size:11.5px;overflow-x:auto;white-space:pre-wrap;word-break:break-all;color:var(--text-muted)">loading...</pre>
+        </div>
+      </div>
+      <div class="panel">
+        <div class="panel-header">Security Modules</div>
+        <div class="panel-body" id="modules-view" style="color:var(--text-muted);font-size:12px">loading...</div>
+      </div>
+    </div>
+
+  </main>
+</div>
+
+<!-- ── Login modal ──────────────────────────────────────────────── -->
+<div class="modal-overlay" id="login-modal">
+  <div class="modal">
+    <h3 style="color:var(--accent)">AgentShroud&#8482; SOC</h3>
+    <p id="login-msg" style="color:var(--text-muted);margin-bottom:0.75rem">Enter gateway token to continue.</p>
+    <input id="login-token" type="password" placeholder="Gateway token"
+      style="width:100%;padding:0.5rem 0.75rem;background:var(--input-bg,#161b22);
+             border:1px solid var(--border);border-radius:5px;color:var(--text);
+             font-family:monospace;font-size:13px;box-sizing:border-box;outline:none;">
+    <div class="modal-actions">
+      <button class="btn btn-primary" id="login-submit-btn" onclick="window._loginSubmit()">Connect</button>
+    </div>
+  </div>
+</div>
+
+<!-- ── Confirm modal ─────────────────────────────────────────── -->
+<div class="modal-overlay" id="confirm-modal">
+  <div class="modal">
+    <h3 id="modal-title" style="color:var(--danger)">Confirm Action</h3>
+    <p id="modal-body"></p>
+    <div class="modal-actions">
+      <button class="btn" onclick="window._closeModal()">Cancel</button>
+      <button class="btn btn-danger" id="modal-confirm-btn">Confirm</button>
+    </div>
+  </div>
+</div>
+
+<!-- ── Log viewer modal (CC-27) ──────────────────────────────── -->
+<div class="modal-overlay" id="log-modal" onclick="if(event.target===this)window._closeLogModal()">
+  <div class="modal" style="max-width:700px;width:90vw">
+    <h3 id="log-modal-title" style="color:var(--accent);margin-bottom:.5rem">Service Logs</h3>
+    <pre id="log-modal-body" style="background:var(--bg);border:1px solid var(--border);border-radius:4px;padding:.75rem;font-size:11px;max-height:60vh;overflow-y:auto;white-space:pre-wrap;word-break:break-all;color:var(--text-muted)">Loading...</pre>
+    <div class="modal-actions">
+      <button class="btn" onclick="window._closeLogModal()">Close</button>
+    </div>
+  </div>
+</div>
+
+<!-- ── Add Collaborator modal (CC-38) ─────────────────────────── -->
+<div class="modal-overlay" id="add-collab-modal" onclick="if(event.target===this)window._closeAddCollabModal()">
+  <div class="modal" style="max-width:460px">
+    <h3 style="color:var(--accent);margin-bottom:.75rem">Add Collaborator</h3>
+    <div style="display:flex;flex-direction:column;gap:.75rem">
+      <label style="display:flex;flex-direction:column;gap:.3rem;font-size:12px;color:var(--text-muted)">
+        Telegram / Slack User ID <span style="color:var(--danger)">*</span>
+        <input id="ac-user-id" class="filter-select" style="width:100%" placeholder="e.g. 123456789">
+      </label>
+      <label style="display:flex;flex-direction:column;gap:.3rem;font-size:12px;color:var(--text-muted)">
+        Display Name <span style="opacity:.5">(optional)</span>
+        <input id="ac-display-name" class="filter-select" style="width:100%" placeholder="e.g. Brett Galura">
+      </label>
+      <label style="display:flex;flex-direction:column;gap:.3rem;font-size:12px;color:var(--text-muted)">
+        Platform
+        <select id="ac-platform" class="filter-select" style="width:100%">
+          <option value="telegram">Telegram</option>
+          <option value="slack">Slack</option>
+        </select>
+      </label>
+    </div>
+    <div class="modal-actions">
+      <button class="btn" onclick="window._closeAddCollabModal()">Cancel</button>
+      <button class="btn btn-primary" onclick="window._submitAddCollab()">Add Collaborator</button>
+    </div>
+  </div>
+</div>
+
+<script src="/soc/static/soc.js"></script>
+</body>
+</html>
