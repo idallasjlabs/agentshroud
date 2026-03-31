@@ -1,0 +1,366 @@
+# AgentShroud Configuration — EXAMPLE
+# Copy this file to agentshroud.yaml and fill in your values.
+# agentshroud.yaml is gitignored (contains personal IPs, phone numbers, hostnames).
+# Version: 0.5.0
+# This file defines the complete security posture and operational configuration
+
+security:
+  # Network isolation settings
+  network_isolation: true
+  allowed_networks:  # Required for LLM API access (OpenAI, Anthropic)
+    - "0.0.0.0/0"  # Internet only
+  blocked_networks:
+    - "192.168.0.0/16"  # RFC1918 private networks
+    - "10.0.0.0/8"
+    - "172.16.0.0/12"
+
+  # PII sanitization
+  pii_min_confidence: 0.9  # Increase confidence threshold to reduce false positives
+  pii_redaction: true  # Re-enabled with higher confidence threshold
+  pii_detection_engine: "presidio"  # Options: presidio, spacy
+  redaction_rules:
+    - type: "SSN"
+      enabled: true
+    - type: "CREDIT_CARD"
+      enabled: true
+    - type: "PHONE_NUMBER"
+      enabled: true
+    - type: "EMAIL_ADDRESS"
+      enabled: true
+    - type: "STREET_ADDRESS"
+      enabled: true
+
+  # Action approval queue
+  approval_queue: true
+  require_approval_for:
+    - email_sending
+    - file_deletion
+    - external_api_calls
+    - skill_installation
+
+gateway:
+  # Gateway API configuration
+  bind: "127.0.0.1"
+  port: 8080
+  auth_method: "shared_secret"
+  auth_token: ""  # REQUIRED: Generate with: python3 -c "import secrets; print(secrets.token_hex(32))"  # Generated during setup
+
+  # Data ledger
+  ledger_database: "sqlite:///data/ledger.db"
+  retention_days: 90  # Auto-delete forwarded content after 90 days
+
+  # Multi-agent router
+  router_enabled: true
+  default_agent: "general"
+
+proxy:
+  # HTTP CONNECT proxy — intercepts all bot outbound traffic (activated in FINAL PR)
+  # The proxy server starts on port 8181 now. The bot uses it only after
+  # HTTP_PROXY=http://gateway:8181 is set in docker-compose.yml (FINAL PR).
+  mode: allowlist  # default-deny: only listed domains can connect
+  listen_port: 8181
+  # Runtime allowed_domains — merged with PERMANENT_EGRESS_DOMAINS at startup.
+  # The Python constant (gateway/security/egress_config.py) is the source of truth
+  # for internet egress; this list adds internal Docker/SSH targets and any
+  # site-specific overrides not appropriate for the shared canonical registry.
+  allowed_domains:
+    # ── Core Messaging ──
+    - api.telegram.org
+    - slack.com
+    - "*.slack.com"
+    - wss-primary.slack.com
+    - wss-backup.slack.com
+    - edgeapi.slack.com
+    # ── LLM Backends ──
+    - api.anthropic.com
+    - api.openai.com
+    - generativelanguage.googleapis.com
+    # ── Google Services ──
+    - oauth2.googleapis.com
+    - www.googleapis.com
+    - gmail.googleapis.com
+    # ── Email ──
+    - imap.gmail.com
+    - smtp.gmail.com
+    - imap.mail.me.com
+    - smtp.mail.me.com
+    - p154-caldav.icloud.com
+    - "*.icloud.com"
+    # ── Credential Management ──
+    - 1password.com
+    - "*.1password.com"
+    - "*.1password.ca"
+    - "*.b5project.com"
+    - "*.agilebits.com"
+    # ── Search ──
+    - api.brave.com
+    - "*.brave.com"
+    - "*.search.brave.com"
+    # ── Development & Package Registries ──
+    - "*.github.com"
+    - "*.githubusercontent.com"
+    - pypi.org
+    - files.pythonhosted.org
+    - registry.npmjs.org
+    - cdnjs.cloudflare.com
+    - unpkg.com
+    - cdn.jsdelivr.net
+    # ── Security Sidecars ──
+    - database.clamav.net
+    # ── Internal Docker / SSH relay targets ──
+    - host.docker.internal
+    - your-hostname-1        # Replace with your actual host short names
+    - your-hostname-2
+    - your-hostname-3
+
+container:
+  # Container runtime
+  runtime: "podman"  # Options: podman, docker
+  rootless: true
+  read_only_rootfs: true  # Read-only root filesystem (recommended)
+
+  # Network configuration
+  tailscale: true
+  tailscale_hostname: "agentshroud"
+  internet_only: true
+
+  # Resource limits
+  memory_limit: "4g"
+  memory_reservation: "2g"
+  cpu_limit: 2
+  pids_limit: 1024
+
+agentshroud:
+  # AgentShroud-specific settings
+  version: "main"
+  default_model: "ollama/phi4:14b"
+  gateway_bind: "loopback"
+  gateway_port: 18789
+  ui_port: 18790
+  workspace: "/app/workspace"
+
+bots:
+  # Bot declarations — define every bot encapsulated by this AgentShroud instance.
+  # The gateway resolves hostnames, ports, and workspace paths from this section
+  # instead of hardcoded OpenClaw-specific values.
+  #
+  # Required bot HTTP endpoints:
+  #   GET  {health_path}   — liveness probe; returns 200 {"status": "ok"}
+  #   POST {chat_path}     — receive forwarded messages
+  #   POST {webhook_path}  — receive sanitized Telegram/channel webhooks
+  #
+  # Required env vars the gateway sets on the bot container:
+  #   ANTHROPIC_BASE_URL           http://gateway:8080
+  #   HTTP_PROXY / HTTPS_PROXY     http://gateway:8181
+  #   AGENTSHROUD_GATEWAY_PASSWORD gateway auth token
+  #   AGENTSHROUD_BOT_ID           bot identifier (matches key below)
+  #   AGENTSHROUD_WORKSPACE        workspace_path value below
+  openclaw:
+    name: "OpenClaw"
+    runtime: node
+    hostname: agentshroud          # Docker service hostname (matches docker-compose.yml)
+    port: 18789
+    health_path: /health
+    chat_path: /chat
+    webhook_path: /webhook
+    workspace_path: /home/node/.openclaw/workspace
+    config_dir: /home/node/.openclaw
+    dockerfile: docker/bots/openclaw/Dockerfile
+    env_prefix: OPENCLAW_
+    default: true
+  # nanobot:
+  #   name: "NanoBot"
+  #   runtime: python
+  #   hostname: nanobot
+  #   port: 8000
+  #   workspace_path: /app/workspace
+  #   config_dir: /app/config
+  #   dockerfile: docker/bots/nanobot/Dockerfile
+  #   env_prefix: NANOBOT_
+  #   default: false
+
+shortcuts:
+  # iOS/macOS Shortcuts configuration
+  endpoint: ""  # REQUIRED: Set to Tailscale URL during setup
+  auth_token: ""  # REQUIRED: Generate with: python3 -c "import secrets; print(secrets.token_hex(32))"  # Shared secret for shortcuts
+
+  # Feature toggles
+  voice_capture: true
+  screenshot_ocr: true
+  clipboard_monitoring: false  # Opt-in only
+  exif_stripping: true
+  photo_downsizing: true
+  max_photo_size_mb: 5
+
+browser_extension:
+  # Browser extension settings
+  allowed_domains: []  # Empty = all domains allowed
+  blocked_domains:
+    - "*.bank.com"
+    - "*.paypal.com"
+
+  # Privacy settings
+  send_cookies: false
+  send_session_tokens: false
+  send_dom: false
+  readability_mode: true
+
+dashboard:
+  # Dashboard configuration
+  bind: "127.0.0.1"
+  port: 3000
+  websocket_enabled: true
+
+  # Kill switch settings
+  kill_switch_enabled: true
+  kill_switch_action: "freeze"  # Options: freeze, shutdown, disconnect
+
+telemetry:
+  # Disable all telemetry
+  disabled: true
+  do_not_track: true
+
+logging:
+  # Logging configuration
+  level: "INFO"  # Options: DEBUG, INFO, WARNING, ERROR
+  max_size_mb: 10
+  max_files: 3
+  destination: "/app/logs"
+
+channels:
+  # Channel ownership (P3) — Telegram + email oversight + Slack
+  # All bot messages route through the gateway for PII scanning,
+  # recipient allowlisting, and approval queue integration.
+  slack:
+    enabled: true       # Opt-in: flip to true after placing secrets in docker/secrets/
+    channel_id: "YOUR_SLACK_CHANNEL_ID"       # Primary Slack channel for bot notifications (e.g. C0ABC123DEF)
+  email:
+    enabled: true
+    provider: icloud
+    imap_host: imap.mail.me.com
+    imap_port: 993
+    smtp_host: smtp.mail.me.com
+    smtp_port: 587
+    username: your-email@example.com
+    address: bot@example.com
+    allowed_recipients: []
+    rate_limit_per_hour: 10
+    require_approval_for_new: true
+  telegram:
+    enabled: true
+  imessage:
+    enabled: true
+    # Phone numbers / handles the bot may message without human approval.
+    # Anything not listed goes to the approval queue first.
+    allowed_recipients:
+      - "+10000000000"   # Owner (replace with your number)
+      - "CHANGE_ME"      # Additional approved recipient
+    rate_limit_per_hour: 30
+    require_approval_for_new: true
+
+mcp_proxy:
+  # Per-server trust levels and per-tool permission overrides.
+  # The gateway wires this into MCPProxy on startup.
+  # Tools not listed here inherit the server default (read permission, no rate limit).
+  servers:
+    mac-messages:
+      transport: http_sse
+      # Bridge runs on macOS host: npx mcp-proxy uvx mac-messages-mcp --port 8200
+      url: "http://host.docker.internal:8200"
+      timeout_seconds: 30
+      tools:
+        tool_send_message:
+          permission_level: write
+          rate_limit: 30      # max 30 sends per minute
+          sensitive: true     # extra audit logging
+        tool_get_recent_messages:
+          permission_level: read
+          rate_limit: 60
+        tool_get_chats:
+          permission_level: read
+          rate_limit: 60
+        tool_find_contact:
+          permission_level: read
+          rate_limit: 60
+        tool_fuzzy_search_messages:
+          permission_level: read
+          rate_limit: 30
+        tool_check_imessage_availability:
+          permission_level: read
+          rate_limit: 10
+
+  # Credential isolation (P2) — gateway op-proxy
+  # The gateway reads 1Password secrets on behalf of the bot.
+  # Only references matching these patterns are permitted.
+  # Activated in the FINAL PR when OP_SERVICE_ACCOUNT_TOKEN moves to the gateway.
+  allowed_op_paths:
+    - "op://Agent Shroud Bot Credentials/*"
+
+# SSH Proxy configuration
+# Approved hosts only — no command-level restrictions (unrestricted dev access).
+# SSH key mounted from agentshroud-ssh volume at /var/agentshroud-ssh (read-only).
+# known_hosts stored at /tmp/ssh_known_hosts (gateway tmpfs, accept-new policy).
+ssh:
+  enabled: true
+  require_approval: false
+  global_denied_commands:
+    - "rm -rf /"
+    - "mkfs"
+    - "dd if="
+  hosts:
+    host1:
+      host: "your-hostname-1"
+      port: 22
+      username: "agentshroud-bot"
+      key_path: "/var/agentshroud-ssh/id_ed25519"
+      known_hosts_file: "/tmp/ssh_known_hosts"
+      max_session_seconds: 300
+    host2:
+      host: "your-hostname-2"
+      port: 22
+      username: "agentshroud-bot"
+      key_path: "/var/agentshroud-ssh/id_ed25519"
+      known_hosts_file: "/tmp/ssh_known_hosts"
+      max_session_seconds: 1800
+    host3:
+      host: "your-hostname-3"
+      port: 22
+      username: "agentshroud-bot"
+      key_path: "/var/agentshroud-ssh/id_ed25519"
+      known_hosts_file: "/tmp/ssh_known_hosts"
+      max_session_seconds: 300
+
+# Security Module Configuration (v0.7.0 - Enforce by Default)
+security_modules:
+  # PII Sanitizer - redacts sensitive data from all messages
+  pii_sanitizer:
+    mode: enforce      # enforce (default) or monitor
+    action: redact     # redact (default) or block
+
+  # Prompt Injection Defense - blocks malicious prompt manipulation
+  prompt_guard:
+    mode: enforce      # enforce (default) or monitor
+
+  # Egress Filter - controls outbound network traffic
+  egress_filter:
+    mode: enforce      # enforce (default) or monitor
+
+  # MCP Proxy - enforces per-tool permissions
+  mcp_proxy:
+    mode: enforce      # enforce (default) or monitor
+
+  # DNS Exfiltration Filter - blocks DNS tunneling and enforces domain allowlist
+  dns_filter:
+    mode: enforce      # enforce (default) or monitor
+
+  # Sub-agent Oversight - enforces concurrency limits and trust-gated tool access
+  subagent_monitor:
+    mode: enforce      # enforce (default) or monitor
+
+  # Unified Egress Monitor - anomaly detection across all egress channels
+  egress_monitor:
+    mode: enforce      # enforce (default) or monitor
+
+  # Kill Switch - live enforcement (dry_run disabled)
+  killswitch:
+    mode: enforce      # enforce (default) or monitor

@@ -1,3 +1,6 @@
+# Real deployment config (contains personal IPs, phone numbers, hostnames)
+../agentshroud.yaml
+
 # Secrets - NEVER commit
 secrets/*.txt
 secrets/*.key

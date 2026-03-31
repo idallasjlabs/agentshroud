@@ -14,7 +14,7 @@ services:
   bot:
     environment:
       - OPENCLAW_BOT_NAME=agentshroud_bot_raspberrypi
-      - AGENTSHROUD_CONTROL_UI_ORIGINS=https://raspberrypi.tail240ea8.ts.net:18790,http://raspberrypi.tail240ea8.ts.net:18790
+      - AGENTSHROUD_CONTROL_UI_ORIGINS=${AGENTSHROUD_CONTROL_UI_ORIGINS:-http://localhost:18790,https://localhost:18790}
     extra_hosts:
       # DNS redirect: Anthropic API -> gateway for message-level security
       - "api.anthropic.com:host-gateway"
