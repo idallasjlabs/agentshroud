@@ -40,6 +40,15 @@ class AppState:
     heuristic_classifier: Optional[object]
     memory_integrity: Optional[object]
     memory_lifecycle: Optional[object]
+    config_integrity: Optional[object]
+    # v0.9.0 collaboration security modules
+    delegation_manager: Optional[object]
+    tool_acl_enforcer: Optional[object]
+    privacy_enforcer: Optional[object]
+    # Security enforcement state (set by background tasks at startup)
+    trivy_critical_count: int
+    image_verification: Optional[object]
+    group_registry: Optional[object]
 
 
 # Global application state instance

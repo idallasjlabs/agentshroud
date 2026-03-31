@@ -164,9 +164,15 @@ class OutboundInfoFilter:
             },
             {
                 "name": "port_number_in_url",
-                "pattern": r":(8080|8443|3000|5000|9090|6379|5432|3306|27017)\b",
+                "pattern": r":(22|8080|8443|3000|5000|9090|6379|5432|3306|27017)\b",
                 "category": InfoCategory.INFRASTRUCTURE,
                 "replacement": ":[PORT]",
+            },
+            {
+                "name": "ssh_command",
+                "pattern": r"\bssh\s+\S+@\S+",
+                "category": InfoCategory.INFRASTRUCTURE,
+                "replacement": "[SSH_CMD]",
             },
             {
                 "name": "sensitive_port_reference",

@@ -31,3 +31,14 @@ repos:
       - id: detect-secrets
         args: ['--baseline', '.secrets.baseline']
         exclude: package-lock.json
+
+  # Semgrep - SAST for Python gateway source (IEC 62443 4-1 SDL)
+  # Catches: command injection, path traversal, hardcoded secrets, SSRF
+  - repo: https://github.com/returntocorp/semgrep
+    rev: v1.60.1
+    hooks:
+      - id: semgrep
+        name: semgrep (agentshroud rules)
+        args: ['--config', '.semgrep.yml', '--error', '--quiet']
+        types: [python]
+        files: ^gateway/

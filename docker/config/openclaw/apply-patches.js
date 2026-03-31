@@ -247,6 +247,98 @@ for (const [collabId, collabName] of Object.entries(COLLABORATOR_IDS)) {
   }
 }
 
+// Patch 1c: group workspaces (V9-4E)
+// Read AGENTSHROUD_TEAMS_JSON from env to discover groups and create shared workspace dirs.
+// The sharedWorkspace field is set on each per-collaborator agent so the bot knows where
+// the group's shared memory and workspace live on the config volume.
+const TEAMS_JSON_RAW = process.env.AGENTSHROUD_TEAMS_JSON || '';
+if (TEAMS_JSON_RAW) {
+  try {
+    const teams = JSON.parse(TEAMS_JSON_RAW);
+    const groups = teams.groups || {};
+    for (const [groupId, group] of Object.entries(groups)) {
+      const groupDir = `.agentshroud/groups/${groupId}`;
+      const groupWorkspaceDir = `${groupDir}/workspace`;
+      // Create group dirs on the config volume if they don't already exist
+      if (!fs.existsSync(groupDir)) {
+        fs.mkdirSync(groupDir, { recursive: true });
+        console.log(`[init-patch] Created group workspace dir: ${groupDir}`);
+      }
+      if (!fs.existsSync(groupWorkspaceDir)) {
+        fs.mkdirSync(groupWorkspaceDir, { recursive: true });
+      }
+      // Attach sharedWorkspace to each group member's per-collaborator agent
+      const members = group.members || [];
+      for (const memberId of members) {
+        const agentId = `collab-${memberId}`;
+        const agentIdx = config.agents.list.findIndex((a) => a.id === agentId);
+        if (agentIdx >= 0 && config.agents.list[agentIdx].sharedWorkspace !== groupWorkspaceDir) {
+          config.agents.list[agentIdx].sharedWorkspace = groupWorkspaceDir;
+          changed = true;
+        }
+      }
+    }
+  } catch (e) {
+    console.warn(`[init-patch] Could not parse AGENTSHROUD_TEAMS_JSON: ${e.message}`);
+  }
+}
+
+// Patch 1d: group-project agent — broader tool access for collaborative team use.
+// Allows web_search, web_fetch, memory_search, memory_get, image, pdf.
+// Denies exec/process/gateway/cron/session management (same as collaborator).
+const _GROUP_TOOL_DENY = [
+  'exec', 'process', 'gateway', 'cron', 'message',
+  'sessions_spawn', 'sessions_send', 'subagents',
+  'nodes', 'agents_list',
+  'sessions_list', 'sessions_history', 'session_status',
+  'canvas',
+];
+const gpIdx = config.agents.list.findIndex((a) => a.id === 'group-project');
+if (gpIdx < 0) {
+  config.agents.list.push({
+    id: 'group-project',
+    name: 'AgentShroud Group Project',
+    model: MAIN_MODEL,
+    tools: { profile: 'minimal', deny: _GROUP_TOOL_DENY },
+    skills: [],
+    workspace: '.agentshroud/group-project',
+    memorySearch: { enabled: true },
+  });
+  console.log('[init-patch] Added group-project agent (web+memory enabled)');
+  changed = true;
+} else {
+  if (config.agents.list[gpIdx].model !== MAIN_MODEL) {
+    config.agents.list[gpIdx].model = MAIN_MODEL;
+    changed = true;
+  }
+  const existingGpTools = config.agents.list[gpIdx].tools || {};
+  if (JSON.stringify(existingGpTools.deny) !== JSON.stringify(_GROUP_TOOL_DENY)) {
+    config.agents.list[gpIdx].tools = { profile: 'minimal', deny: _GROUP_TOOL_DENY };
+    console.log('[init-patch] Updated group-project agent tool config');
+    changed = true;
+  }
+}
+
+// Bind a configured group chat ID to the group-project agent.
+// Set AGENTSHROUD_GROUP_CHAT_ID to your Telegram group/supergroup chat ID.
+const GROUP_CHAT_ID = String(process.env.AGENTSHROUD_GROUP_CHAT_ID || '').trim();
+if (GROUP_CHAT_ID) {
+  const hasGroupBinding = config.bindings.some(
+    (b) => b.agentId === 'group-project' && b.match && b.match.peer && b.match.peer.id === GROUP_CHAT_ID
+  );
+  if (!hasGroupBinding) {
+    config.bindings = config.bindings.filter(
+      (b) => !(b.match && b.match.peer && b.match.peer.id === GROUP_CHAT_ID)
+    );
+    config.bindings.push({
+      agentId: 'group-project',
+      match: { channel: 'telegram', peer: { kind: 'group', id: GROUP_CHAT_ID } },
+    });
+    console.log(`[init-patch] Bound group chat ${GROUP_CHAT_ID} → group-project`);
+    changed = true;
+  }
+}
+
 // Patch 2: gateway auth and cleanup
 config.gateway = config.gateway || {};
 if (Object.prototype.hasOwnProperty.call(config.gateway, 'model')) {
@@ -282,10 +374,14 @@ const allowedOrigins = [
   'http://localhost:18790',
   'http://127.0.0.1:18790',
 ];
+// Extra origins from AGENTSHROUD_CONTROL_UI_ORIGINS (comma-separated, e.g. Tailscale hostnames)
+const extraOrigins = (process.env.AGENTSHROUD_CONTROL_UI_ORIGINS || '')
+  .split(',').map(o => o.trim()).filter(o => o.length > 0);
+const allAllowedOrigins = [...allowedOrigins, ...extraOrigins];
 const currentOrigins = Array.isArray(config.gateway.controlUi.allowedOrigins)
   ? config.gateway.controlUi.allowedOrigins
   : [];
-const missingOrigins = allowedOrigins.filter((origin) => !currentOrigins.includes(origin));
+const missingOrigins = allAllowedOrigins.filter((origin) => !currentOrigins.includes(origin));
 if (missingOrigins.length > 0) {
   config.gateway.controlUi.allowedOrigins = [...currentOrigins, ...missingOrigins];
   console.log(`[init-patch] Added gateway.controlUi.allowedOrigins: ${missingOrigins.join(', ')}`);
@@ -293,6 +389,19 @@ if (missingOrigins.length > 0) {
 }
 if (config.gateway.controlUi.dangerouslyAllowHostHeaderOriginFallback !== false) {
   config.gateway.controlUi.dangerouslyAllowHostHeaderOriginFallback = false;
+  changed = true;
+}
+
+// Patch 2c: trustedProxies — trust Tailscale gateway so Control UI pairing works
+// Without this, OpenClaw sees the Tailscale NAT address as an untrusted proxy and
+// requires a full pairing challenge for every browser session from non-loopback origins.
+const trustedProxies = (process.env.AGENTSHROUD_TRUSTED_PROXIES || '10.254.110.0/24')
+  .split(',').map(p => p.trim()).filter(p => p.length > 0);
+const currentProxies = Array.isArray(config.gateway.trustedProxies) ? config.gateway.trustedProxies : [];
+const missingProxies = trustedProxies.filter(p => !currentProxies.includes(p));
+if (missingProxies.length > 0) {
+  config.gateway.trustedProxies = [...currentProxies, ...missingProxies];
+  console.log(`[init-patch] Added gateway.trustedProxies: ${missingProxies.join(', ')}`);
   changed = true;
 }
 
@@ -404,6 +513,12 @@ if (slackBotToken && slackAppToken) {
       config.channels.slack.allowFrom = allowFrom;
       changed = true;
     }
+  }
+  // Remove healthMonitor if previously set — OpenClaw rejects this as an unrecognized key.
+  if (Object.prototype.hasOwnProperty.call(config.channels.slack, 'healthMonitor')) {
+    delete config.channels.slack.healthMonitor;
+    console.log('[init-patch] Removed unsupported channels.slack.healthMonitor key');
+    changed = true;
   }
   console.log('[init-patch] Patched channels.slack (Socket Mode, dmPolicy=open)');
 } else {

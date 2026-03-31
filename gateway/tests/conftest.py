@@ -7,10 +7,39 @@ from __future__ import annotations
 """Shared test fixtures for AgentShroud Gateway tests"""
 
 
+import sys
 import tempfile
 from pathlib import Path
 
 import pytest
+
+# Allow bare `from security.xxx` and `from ingest_api.xxx` imports in test files
+# that were written relative to the gateway/ package root.
+_gateway_root = str(Path(__file__).parent.parent)
+if _gateway_root not in sys.path:
+    sys.path.insert(0, _gateway_root)
+
+# Pre-register gateway sub-packages under their bare names so that relative
+# imports inside those packages resolve correctly (avoids "attempted relative
+# import beyond top-level package" errors when loaded as top-level).
+import importlib as _importlib
+
+_ALIAS_MAP = [
+    ("security", "gateway.security"),
+    ("proxy", "gateway.proxy"),
+    ("ingest_api", "gateway.ingest_api"),
+    # Sub-modules accessed directly by test_security_audit_advanced.py
+    ("ingest_api.sanitizer", "gateway.ingest_api.sanitizer"),
+    ("ingest_api.config", "gateway.ingest_api.config"),
+    ("ingest_api.models", "gateway.ingest_api.models"),
+]
+for _alias, _full in _ALIAS_MAP:
+    if _alias not in sys.modules:
+        try:
+            _mod = _importlib.import_module(_full)
+            sys.modules[_alias] = _mod
+        except Exception:
+            pass
 import pytest_asyncio
 from fastapi.testclient import TestClient
 

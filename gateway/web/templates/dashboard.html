@@ -6,9 +6,17 @@
     <title>AgentShroud Web Control Center</title>
     <link rel="stylesheet" href="/static/agentshroud-dashboard.css">
     <style>
-        body { background: #08090b; color: #e2e8f0; font-family: system-ui; margin: 0; padding: 0; }
-        .header { background: #0f1219; padding: 1rem 2rem; border-bottom: 1px solid #232b3d; }
-        .header h1 { margin: 0; color: #1583f0; }
+        :root { --bg:#08090b; --surface:#0f1219; --border:#232b3d; --text:#e2e8f0; --text-2:#94a3b8; --brand:#1583f0; }
+        [data-theme="light"] { --bg:#f6f8fa; --surface:#ffffff; --border:#d0d7de; --text:#1f2328; --text-2:#656d76; --brand:#0969da; }
+        [data-theme="light"] body { background:var(--bg); color:var(--text); }
+        [data-theme="light"] .header { background:var(--surface); border-color:var(--border); }
+        [data-theme="light"] .nav-tabs { background:var(--surface); border-color:var(--border); }
+        [data-theme="light"] .card { background:var(--surface); border-color:var(--border); }
+        .theme-toggle { background:none; border:1px solid var(--border,#232b3d); color:var(--text-2,#94a3b8); border-radius:6px; width:28px; height:28px; cursor:pointer; font-size:14px; display:flex; align-items:center; justify-content:center; margin-left:auto; }
+        .theme-toggle:hover { background:rgba(21,131,240,0.1); }
+        body { background: var(--bg); color: var(--text); font-family: system-ui; margin: 0; padding: 0; }
+        .header { background: var(--surface); padding: 1rem 2rem; border-bottom: 1px solid var(--border); display:flex; align-items:center; }
+        .header h1 { margin: 0; color: var(--brand); }
         .nav-tabs { background: #0f1219; border-bottom: 1px solid #232b3d; }
         .nav-list { display: flex; list-style: none; margin: 0; padding: 0 2rem; }
         .nav-link { display: block; padding: 1rem 1.5rem; color: #94a3b8; text-decoration: none; }
@@ -22,11 +30,13 @@
         .btn-primary { background: #1583f0; color: white; }
         .btn-secondary { background: #1e2535; color: #e2e8f0; border: 1px solid #232b3d; }
     </style>
+    <script>(function(){var t=localStorage.getItem('as_theme')||(window.matchMedia&&window.matchMedia('(prefers-color-scheme: light)').matches?'light':'dark');document.documentElement.dataset.theme=t;}());</script>
 </head>
 <body>
     <!-- Header -->
     <header class="header">
         <h1>🛡️ AgentShroud Control Center</h1>
+        <button id="theme-toggle" class="theme-toggle" aria-label="Toggle light/dark mode">🌙</button>
     </header>
 
     <!-- Navigation -->
@@ -99,6 +109,7 @@
             <p><strong>Last Updated:</strong> Feb 20, 2024</p>
         </section>
     </main>
+<script>(function(){var b=document.getElementById('theme-toggle');if(!b)return;b.textContent=document.documentElement.dataset.theme==='light'?'☀':'🌙';b.addEventListener('click',function(){var n=document.documentElement.dataset.theme==='light'?'dark':'light';document.documentElement.dataset.theme=n;localStorage.setItem('as_theme',n);b.textContent=n==='light'?'☀':'🌙';});})();</script>
 </body>
 </html>
 EOFhead -50 gateway/web/management.py

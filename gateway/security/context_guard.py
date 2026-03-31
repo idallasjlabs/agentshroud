@@ -15,11 +15,23 @@ import re
 import time
 import hashlib
 import logging
+import uuid
 from typing import Dict, List, Any, Tuple
-from dataclasses import dataclass
+from dataclasses import dataclass, field
 from collections import defaultdict, deque
 
 logger = logging.getLogger(__name__)
+
+
+# C10: Context Segment Source Tagging
+@dataclass
+class ContextSegment:
+    """Tagged provenance record for a context segment."""
+    source: str          # system / user / tool_result / document / memory
+    content_hash: str    # SHA-256 of segment content
+    timestamp: float
+    trust_level: str     # TRUSTED / UNTRUSTED / OWNER
+    segment_id: str
 
 
 @dataclass
@@ -61,6 +73,8 @@ class ContextGuard:
         self.max_context_size = max_context_size
         self.sessions: Dict[str, SessionContext] = {}
         self.detected_attacks: List[ContextAttack] = []
+        # C10: per-session segment provenance store
+        self._segments: Dict[str, List[ContextSegment]] = defaultdict(list)
 
         # Patterns that might indicate instruction injection
         self.instruction_patterns = [
@@ -512,6 +526,34 @@ class ContextGuard:
         ]
 
         logger.info(f"Cleaned up {len(old_sessions)} old sessions")
+
+    # ── C10: Source Tagging ───────────────────────────────────────────────────
+
+    def tag_segment(
+        self, content: str, source: str, trust_level: str = "UNTRUSTED"
+    ) -> ContextSegment:
+        """Create a provenance record for a context segment."""
+        return ContextSegment(
+            source=source,
+            content_hash=hashlib.sha256(content.encode("utf-8")).hexdigest(),
+            timestamp=time.time(),
+            trust_level=trust_level,
+            segment_id=str(uuid.uuid4()),
+        )
+
+    def record_segment(
+        self, session_id: str, content: str, source: str, trust_level: str = "UNTRUSTED"
+    ) -> ContextSegment:
+        """Tag a segment and append it to the session's provenance log."""
+        seg = self.tag_segment(content, source, trust_level)
+        self._segments[session_id].append(seg)
+        return seg
+
+    def get_segment_provenance(self, session_id: str) -> List[ContextSegment]:
+        """Return ordered list of provenance records for the session."""
+        return list(self._segments.get(session_id, []))
+
+    # ─────────────────────────────────────────────────────────────────────────
 
     def export_attack_report(self, output_path: str):
         """Export attack detection report."""

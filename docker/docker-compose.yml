@@ -36,6 +36,10 @@ services:
       - ../gateway:/app/gateway:ro
       - agentshroud-workspace:/data/bot-workspace:ro
       - agentshroud-config:/data/bot-config:ro
+      - security-reports:/var/log/security
+      - /var/run/docker.sock:/var/run/docker.sock:ro
+      - wazuh-alerts:/var/ossec/logs/alerts
+      - clamav-db:/var/lib/clamav
     secrets:
       - gateway_password
       - telegram_bot_token
@@ -56,26 +60,57 @@ services:
       - AGENTSHROUD_EGRESS_APPROVAL_ALL=false
       - GATEWAY_AUTH_TOKEN_FILE=/run/secrets/gateway_password
       - OP_SERVICE_ACCOUNT_TOKEN_FILE=/run/secrets/1password_service_account
-      - PROXY_ALLOWED_NETWORKS=10.254.111.0/24,10.254.112.0/24
-      - AGENTSHROUD_SLACK_OWNER_USER_ID=U01J37F6YT0
+      - PROXY_ALLOWED_NETWORKS=10.254.110.0/24,10.254.111.0/24,10.254.112.0/24
+      - AGENTSHROUD_SLACK_OWNER_USER_ID=U0AL7640RHD
+      - AGENTSHROUD_CONTROL_UI_ORIGINS=https://marvin.tail240ea8.ts.net:18790,http://marvin.tail240ea8.ts.net:18790,http://127.0.0.1:19789,http://127.0.0.1:18790
       - AGENTSHROUD_COLLAB_LOCAL_INFO_ONLY=0
+      - AGENTSHROUD_TEAMS_JSON=${AGENTSHROUD_TEAMS_JSON:-}
       - AGENTSHROUD_MODEL_MODE=${AGENTSHROUD_MODEL_MODE:-cloud}
       - AGENTSHROUD_CLOUD_MODEL_REF=${AGENTSHROUD_CLOUD_MODEL_REF:-anthropic/claude-opus-4-6}
       - AGENTSHROUD_LOCAL_MODEL_REF=${AGENTSHROUD_LOCAL_MODEL_REF:-ollama/qwen3:14b}
       - OPENCLAW_MAIN_MODEL=${OPENCLAW_MAIN_MODEL:-}
+      - DOCKER_CONTENT_TRUST=1
+      # Image digest refs for cosign supply-chain verification. Set to
+      # repo@sha256:<digest> at deploy time. Left empty disables verification.
+      - AGENTSHROUD_BOT_IMAGE_REF=${AGENTSHROUD_BOT_IMAGE_REF:-}
+      - AGENTSHROUD_GATEWAY_IMAGE_REF=${AGENTSHROUD_GATEWAY_IMAGE_REF:-}
+      - AGENTSHROUD_COMPOSE_HOST=marvin
+      - AGENTSHROUD_COMPOSE_DIR=/Users/agentshroud-bot/Development/agentshroud
+      - TRIVY_CACHE_DIR=/var/log/security/.trivy-cache
+      # Group chat: bot @handle (without @) for at-mention-only filtering in groups
+      - TELEGRAM_BOT_USERNAME=${TELEGRAM_BOT_USERNAME:-agentshroud_bot}
+      # Group chat: set to Telegram group/supergroup chat ID to bind → group-project agent
+      - AGENTSHROUD_GROUP_CHAT_ID=${AGENTSHROUD_GROUP_CHAT_ID:-}
+    group_add:
+      - "991"   # docker socket GID — read-only service introspection for SOC
     security_opt:
       - no-new-privileges:true
       - seccomp=./seccomp/gateway-seccomp.json
     cap_drop:
       - ALL
+    cap_add:
+      - SYS_PTRACE
+      - PERFMON
+    pid: host
     read_only: true
     tmpfs:
-      - /tmp:noexec,nosuid,size=100m
+      - /tmp:noexec,nosuid,size=500m
       - /var/tmp:noexec,nosuid,size=50m
-    mem_limit: 1280m
-    memswap_limit: 1280m
+      - /var/log/fluent-bit:noexec,nosuid,size=50m
+      - /var/log/falco:noexec,nosuid,size=50m
+      - /var/ossec/var:nosuid,size=10m,uid=1000,gid=1000
+      - /var/ossec/queue:nosuid,size=50m,uid=1000,gid=1000
+      - /var/ossec/tmp:noexec,nosuid,size=10m,uid=1000,gid=1000
+      - /var/ossec/logs/ossec:noexec,nosuid,size=20m,uid=1000,gid=1000
+    mem_limit: 2560m
+    memswap_limit: 2560m
     cpus: 1.0
-    pids_limit: 100
+    pids_limit: 512
+    logging:
+      driver: json-file
+      options:
+        max-size: "10m"
+        max-file: "3"
     healthcheck:
       test:
         - CMD
@@ -85,12 +120,15 @@ services:
       interval: 30s
       timeout: 10s
       retries: 3
-      start_period: 10s
+      start_period: 30s
 
-    # Gateway resolves DNS directly (sole egress point)
+    # Gateway resolves DNS via Pi-hole (192.168.7.45) for network-wide ad/tracking protection.
+    # Router (192.168.7.1) is fallback only — no DNS filtering.
+    # Cloudflare (1.1.1.1) is last-resort fallback during Pi-hole/router outages (Colima DNS instability).
     dns:
-      - 8.8.8.8
-      - 8.8.4.4
+      - 192.168.7.45
+      - 192.168.7.1
+      - 1.1.1.1
 
     # Gateway on BOTH networks: internal (internet) + isolated (to bot)
     networks:
@@ -121,9 +159,11 @@ services:
       - agentshroud-workspace:/home/node/agentshroud/workspace
       - gateway-data:/home/node/agentshroud/gateway-data:ro
       - agentshroud-ssh:/home/node/.ssh
+      - openclaw-runtime:/home/node/.npm-global
       - agentshroud-browsers:/home/node/.cache/ms-playwright
       - ../branding:/app/branding:ro
-      - ../memory-backups:/app/memory-backups
+      - memory-backups:/app/memory-backups
+      - wazuh-alerts:/var/ossec/logs/alerts
     secrets:
       - gateway_password
       - telegram_bot_token
@@ -151,20 +191,26 @@ services:
       - GEMINI_BASE_URL=http://gateway:8080
       - OLLAMA_BASE_URL=${OLLAMA_BASE_URL:-http://gateway:8080/v1}
       - OLLAMA_API_KEY=${OLLAMA_API_KEY:-ollama-local}
-      - AGENTSHROUD_MODEL_MODE=${AGENTSHROUD_MODEL_MODE:-local}
+      - AGENTSHROUD_MODEL_MODE=${AGENTSHROUD_MODEL_MODE:-cloud}
       - AGENTSHROUD_LOCAL_MODEL_REF=${AGENTSHROUD_LOCAL_MODEL_REF:-ollama/qwen3:14b}
       - AGENTSHROUD_CLOUD_MODEL_REF=${AGENTSHROUD_CLOUD_MODEL_REF:-anthropic/claude-opus-4-6}
       - OPENCLAW_MAIN_MODEL=${OPENCLAW_MAIN_MODEL:-}
       - AGENTSHROUD_LOCAL_MODEL=${AGENTSHROUD_LOCAL_MODEL:-qwen3:14b}
+      - AGENTSHROUD_TEAMS_JSON=${AGENTSHROUD_TEAMS_JSON:-}
       - TELEGRAM_API_BASE_URL=http://gateway:8080/telegram-api
       - SLACK_API_BASE_URL=http://gateway:8080/slack-api
-      - AGENTSHROUD_SLACK_OWNER_USER_ID=U01J37F6YT0
+      - AGENTSHROUD_SLACK_OWNER_USER_ID=U0AL7640RHD
+      - AGENTSHROUD_CONTROL_UI_ORIGINS=https://marvin.tail240ea8.ts.net:18790,http://marvin.tail240ea8.ts.net:18790,http://127.0.0.1:19789,http://127.0.0.1:18790
       - GATEWAY_HOST_PORT=8080
+      - AGENTSHROUD_GROUP_CHAT_ID=${AGENTSHROUD_GROUP_CHAT_ID:-}
       - OPENCLAW_BOT_NAME=agentshroud_bot
       - OPENCLAW_BOT_EMAIL=agentshroud.ai@icloud.com
       - OPENCLAW_DISABLE_HOST_FILESYSTEM=true
       - OPENCLAW_SANDBOX_MODE=strict
       - OPENCLAW_DISABLE_BONJOUR=1
+      - NPM_CONFIG_PREFIX=/home/node/.npm-global
+      - NPM_CONFIG_CACHE=/home/node/.npm-global/.cache
+      - PATH=/home/node/.npm-global/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
     security_opt:
       - no-new-privileges:true
       - seccomp=./seccomp/agentshroud-seccomp.json
@@ -174,14 +220,23 @@ services:
     tmpfs:
       - /tmp:noexec,nosuid,size=500m
       - /var/tmp:noexec,nosuid,size=100m
-      - /home/node/.npm:noexec,nosuid,size=200m
+      - /home/node/.npm:noexec,nosuid,size=200m,uid=1000,gid=1000
       - /home/node/.local:noexec,nosuid,size=100m
       - /home/node/.config:noexec,nosuid,size=100m,uid=1000,gid=1000
       - /home/node/.ssh-tmp:nosuid,size=10m,uid=1000,gid=1000
+      - /var/ossec/var:nosuid,size=10m,uid=1000,gid=1000
+      - /var/ossec/queue:nosuid,size=50m,uid=1000,gid=1000
+      - /var/ossec/tmp:noexec,nosuid,size=10m,uid=1000,gid=1000
+      - /var/ossec/logs/ossec:noexec,nosuid,size=20m,uid=1000,gid=1000
     mem_limit: 4g
     memswap_limit: 4g
     cpus: 2.0
     pids_limit: 512
+    logging:
+      driver: json-file
+      options:
+        max-size: "10m"
+        max-file: "3"
     healthcheck:
       test:
         - CMD-SHELL
@@ -190,12 +245,19 @@ services:
       timeout: 10s
       retries: 3
       start_period: 60s
+    # Bot resolves DNS via Pi-hole — same as gateway for consistent DNS protection.
+    # Cloudflare (1.1.1.1) is last-resort fallback during Pi-hole/router outages.
+    dns:
+      - 192.168.7.45
+      - 192.168.7.1
+      - 1.1.1.1
     networks:
+      - agentshroud-internal
       - agentshroud-isolated
-      - agentshroud-console
     depends_on:
       gateway:
         condition: service_healthy
+
 
 # ── Secrets ────────────────────────────────────────────────────────────────────
 secrets:
@@ -242,7 +304,7 @@ networks:
       com.docker.network.bridge.enable_icc: "true"
   agentshroud-console:
     driver: bridge
-    internal: false
+    internal: true
     driver_opts:
       com.docker.network.bridge.enable_ip_masquerade: "false"
     ipam:
@@ -260,4 +322,14 @@ volumes:
   agentshroud-ssh:
     driver: local
   agentshroud-browsers:
+    driver: local
+  openclaw-runtime:
+    name: openclaw-runtime
+  security-reports:
+    driver: local
+  wazuh-alerts:
+    driver: local
+  clamav-db:
+    driver: local
+  memory-backups:
     driver: local

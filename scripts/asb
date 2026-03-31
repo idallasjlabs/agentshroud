@@ -1,0 +1,65 @@
+#!/usr/bin/env bash
+# asb — AgentShroud Bot helper
+# Works on any server: resolves compose override file from hostname.
+# Usage: asb {build|up|down|rebuild|pull|status|logs [service]|test}
+
+set -euo pipefail
+
+# Ensure the Colima Docker socket is group-writable (required on macOS with Colima)
+chmod g+rw /Users/ijefferson.admin/.colima/default/docker.sock 2>/dev/null || true
+
+HOST=$(hostname -s)
+SCRIPT_PATH="${BASH_SOURCE[0]}"
+[ -L "$SCRIPT_PATH" ] && SCRIPT_PATH="$(readlink "$SCRIPT_PATH")"
+REPO_DIR="$(cd "$(dirname "$SCRIPT_PATH")/.." && pwd)"
+
+# Project name: "agentshroud" for prod, "agentshroud-bot" for bot account
+if [ "$USER" = "agentshroud-bot" ]; then
+  PROJECT="agentshroud-bot"
+else
+  PROJECT="agentshroud"
+fi
+
+if [ "$USER" = "agentshroud-bot" ]; then
+  OVERRIDE="$REPO_DIR/docker/docker-compose.agentshroud-bot.${HOST}.yml"
+  if [ ! -f "$OVERRIDE" ]; then
+    echo "ERROR: no compose override for host '${HOST}' — expected: $OVERRIDE" >&2
+    exit 1
+  fi
+  COMPOSE="docker compose -f $REPO_DIR/docker/docker-compose.yml -f $OVERRIDE -p $PROJECT"
+else
+  COMPOSE="docker compose -f $REPO_DIR/docker/docker-compose.yml -p $PROJECT"
+fi
+
+case "${1:-}" in
+  build)   $COMPOSE build --no-cache ;;
+  up)      $COMPOSE up -d ;;
+  down)    $COMPOSE down ;;
+  rebuild) $COMPOSE build --no-cache && $COMPOSE up -d ;;
+  clean-rebuild)
+    echo "This will remove containers, prune stale volumes, and rebuild from scratch."
+    echo "Persistent data (workspace, config, SSH keys, browsers) is PRESERVED."
+    read -r -p "Continue? [y/N] " confirm
+    [[ "$confirm" =~ ^[Yy]$ ]] || { echo "Aborted."; exit 0; }
+    $COMPOSE down
+    for vol in gateway-data clamav-db; do
+      docker volume rm "${PROJECT}_${vol}" 2>/dev/null && echo "  Removed ${PROJECT}_${vol}" || true
+    done
+    # Prune BuildKit cache to clear stale overlay snapshots from previous failed builds.
+    # docker compose uses BuildKit (not the legacy builder), so docker buildx prune is
+    # required — docker builder prune targets the deprecated legacy builder and reclaims 0 bytes.
+    echo "Pruning BuildKit cache..."
+    docker buildx prune -a -f
+    $COMPOSE build --no-cache
+    $COMPOSE up -d
+    echo "Clean rebuild complete."
+    ;;
+  pull)    cd "$REPO_DIR" && git pull --rebase ;;
+  status)  $COMPOSE ps ;;
+  logs)    $COMPOSE logs -f --tail=100 ${2:-} ;;
+  test)    $COMPOSE exec gateway python -m pytest gateway/tests/ -q ;;
+  *)
+    echo "Usage: asb {build|up|down|rebuild|clean-rebuild|pull|status|logs [service]|test}"
+    exit 1
+    ;;
+esac

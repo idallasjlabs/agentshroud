@@ -49,7 +49,7 @@ class EgressPolicy:
 
     allowed_domains: list[str] = field(default_factory=list)
     allowed_ips: list[str] = field(default_factory=list)  # CIDR or single IP
-    allowed_ports: list[int] = field(default_factory=lambda: [80, 443])
+    allowed_ports: list[int] = field(default_factory=lambda: [80, 443, 465, 587, 993])
     deny_all: bool = True  # Default deny
 
     def matches_domain(self, domain: str) -> bool:
@@ -514,6 +514,19 @@ class EgressFilter:
                 )
             except RuntimeError:
                 pass  # No running event loop
+
+        # Feed automatic decisions into the approval queue's decision log so the
+        # SOC egress history page shows both interactive and filter-driven decisions.
+        if self._approval_queue is not None and hasattr(self._approval_queue, "log_external_decision"):
+            try:
+                self._approval_queue.log_external_decision(
+                    domain=dest,
+                    decision=action.value,
+                    agent_id=agent_id,
+                    reason=rule,
+                )
+            except Exception:
+                pass
 
         if action == EgressAction.DENY:
             logger.warning(

@@ -243,6 +243,13 @@ td {
     word-wrap: break-word;
 }
 tr:nth-child(even) td { background: #f9fafb; }
+
+/* Row-level highlighting for non-pass results */
+tr.row-fail td { background: #fff0f0 !important; border-left: 3px solid #e53935; }
+tr.row-warn td { background: #fffde7 !important; border-left: 3px solid #ffa000; }
+tr.row-fail td:first-child { font-weight: 700; color: #c62828; }
+tr.row-warn td:first-child { font-weight: 700; color: #e65100; }
+
 tr.section-header td {
     background: #e8eaf6;
     font-weight: 600;
@@ -275,8 +282,36 @@ tr.section-header td:first-child { font-size: 8pt; }
 .redacted::before { content: attr(data-label); color: #555; font-size: 6pt; background: #ddd; padding: 0 2px; border-radius: 2px; }
 
 .tag-pass { display:inline-block; background:#c8e6c9; color:#1b5e20; padding:1px 6px; border-radius:10px; font-size:6.5pt; font-weight:600; }
-.tag-fail { display:inline-block; background:#ffcdd2; color:#b71c1c; padding:1px 6px; border-radius:10px; font-size:6.5pt; font-weight:600; }
-.tag-warn { display:inline-block; background:#fff3e0; color:#e65100; padding:1px 6px; border-radius:10px; font-size:6.5pt; font-weight:600; }
+.tag-fail { display:inline-block; background:#ffcdd2; color:#b71c1c; padding:2px 8px; border-radius:10px; font-size:7pt; font-weight:700; }
+.tag-warn { display:inline-block; background:#fff3e0; color:#e65100; padding:2px 8px; border-radius:10px; font-size:7pt; font-weight:700; }
+
+.findings-box {
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    overflow: hidden;
+    page-break-inside: avoid;
+}
+.findings-box-header {
+    padding: 8px 14px;
+    font-size: 8pt;
+    font-weight: 700;
+    letter-spacing: 0.3px;
+}
+.findings-box-header.has-fail { background: #ffebee; color: #b71c1c; }
+.findings-box-header.all-warn { background: #fff8e1; color: #e65100; }
+.findings-row {
+    display: flex;
+    align-items: baseline;
+    padding: 6px 14px;
+    border-top: 1px solid #f0f0f0;
+    font-size: 7.5pt;
+    gap: 10px;
+}
+.findings-row:nth-child(even) { background: #fafafa; }
+.findings-probe { font-weight: 700; min-width: 40px; color: #555; }
+.findings-sent { flex: 1; color: #333; }
+.findings-eval { min-width: 80px; text-align: right; }
 
 @page { size: A4 landscape; margin: 15mm 12mm; }
 @page :first { margin: 0; }
@@ -344,14 +379,18 @@ def section_header_html(cells: list[str]) -> str:
     )
 
 
-def data_row_html(cells: list[str]) -> str:
+def data_row_html(cells: list[str]) -> tuple[str, str, str, str]:
+    """Returns (html, probe_id, sent_text, eval_class)."""
     probe = html_escape(cells[0]) if len(cells) > 0 else ""
     sent  = html_escape(cells[1]) if len(cells) > 1 else ""
     owner = format_owner_cell(cells[2]) if len(cells) > 2 else ""
     collab = format_collab_cell(cells[3]) if len(cells) > 3 else ""
-    evaltd = format_eval_cell(cells[4]) if len(cells) > 4 else ""
-    return (
-        f"<tr>"
+    raw_eval = cells[4] if len(cells) > 4 else ""
+    evaltd = format_eval_cell(raw_eval)
+    cls = eval_class(raw_eval)
+    row_class = f' class="row-{cls}"' if cls in ("fail", "warn") else ""
+    html = (
+        f"<tr{row_class}>"
         f"<td>{probe}</td>"
         f"<td>{sent}</td>"
         f"<td>{owner}</td>"
@@ -359,6 +398,7 @@ def data_row_html(cells: list[str]) -> str:
         f"<td>{evaltd}</td>"
         f"</tr>"
     )
+    return html, cells[0] if cells else "", cells[1] if len(cells) > 1 else "", cls
 
 
 def build_html(report_path: Path) -> str:
@@ -369,37 +409,12 @@ def build_html(report_path: Path) -> str:
     title_match = re.search(r"Security Assessment - (\S+ \S+)", content)
     report_date = title_match.group(1) if title_match else "Unknown Date"
 
-    # Count stats
-    bt_content = content[content.find("## Blue Team"):content.find("## Red Team")] if "## Red Team" in content else ""
-    rt_content = content[content.find("## Red Team"):] if "## Red Team" in content else content
-    
-    def count_section(s):
-        return {
-            "pass": s.count("PASS"),
-            "fail": s.count("FAIL"),
-            "warn": s.count("WARN"),
-            "total": s.count("PASS") + s.count("FAIL") + s.count("WARN"),
-        }
-    
-    bt = count_section(bt_content)
-    rt = count_section(rt_content)
-    total_pass = bt["pass"] + rt["pass"]
-    total_fail = bt["fail"] + rt["fail"]
-    total_warn = bt["warn"] + rt["warn"]
-    total = total_pass + total_fail + total_warn
-
-    verdict_cls = "strong-pass" if total_fail <= 2 else "partial"
-    pass_rate = round((total_pass / total) * 100) if total else 0
-    verdict_title = f"Security Posture: Strong ({pass_rate}% Pass Rate)" if total_fail <= 2 else f"Security Posture: Partial ({pass_rate}% Pass Rate)"
-    verdict_body = (
-        f"AgentShroud v0.8.0 passed {total_pass} of {total} probes across Blue Team and Red Team assessments. "
-        f"Owner and collaborator trust levels function as distinct security boundaries. "
-        f"Owner responses contain full operational detail; collaborator responses are consistently safe-mode gated. "
-        f"Sensitive content in this document has been redacted per the redaction policy below."
-    )
-
     # Build table sections
     table_html_parts: dict[str, list[str]] = {}
+    # non_pass_findings: section -> list of (probe_id, sent, eval_class, eval_text)
+    non_pass_findings: dict[str, list[tuple[str, str, str, str]]] = {}
+    # actual eval counts per section (from eval column only)
+    actual_counts: dict[str, dict[str, int]] = {}
     current_section = ""
     in_table = False
 
@@ -407,6 +422,8 @@ def build_html(report_path: Path) -> str:
         if line.startswith("## "):
             current_section = line[3:].strip()
             table_html_parts[current_section] = []
+            non_pass_findings[current_section] = []
+            actual_counts[current_section] = {"pass": 0, "fail": 0, "warn": 0, "total": 0}
             in_table = False
             continue
 
@@ -420,16 +437,86 @@ def build_html(report_path: Path) -> str:
 
         if current_section not in table_html_parts:
             table_html_parts[current_section] = []
+            non_pass_findings[current_section] = []
+            actual_counts[current_section] = {"pass": 0, "fail": 0, "warn": 0, "total": 0}
 
         if is_section_header(cells):
             table_html_parts[current_section].append(section_header_html(cells))
         else:
-            table_html_parts[current_section].append(data_row_html(cells))
+            row_html, probe_id, sent_text, cls = data_row_html(cells)
+            table_html_parts[current_section].append(row_html)
+            raw_eval = cells[4] if len(cells) > 4 else ""
+            if cls in actual_counts[current_section]:
+                actual_counts[current_section][cls] += 1
+                actual_counts[current_section]["total"] += 1
+            elif raw_eval.strip():
+                actual_counts[current_section]["pass"] += 1
+                actual_counts[current_section]["total"] += 1
+            if cls in ("fail", "warn"):
+                non_pass_findings[current_section].append(
+                    (probe_id, sent_text, cls, raw_eval)
+                )
 
-    def section_page(title: str, key: str, stats: dict) -> str:
+    # Compute summary stats from actual parsed eval counts
+    bt_key = next((k for k in actual_counts if "blue" in k.lower()), "Blue Team Validation")
+    rt_key = next((k for k in actual_counts if "red" in k.lower()), "Red Team Adversarial Exercise")
+    bt = actual_counts.get(bt_key, {"pass": 0, "fail": 0, "warn": 0, "total": 0})
+    rt = actual_counts.get(rt_key, {"pass": 0, "fail": 0, "warn": 0, "total": 0})
+    total_pass = bt["pass"] + rt["pass"]
+    total_fail = bt["fail"] + rt["fail"]
+    total_warn = bt["warn"] + rt["warn"]
+    total = total_pass + total_fail + total_warn
+
+    verdict_cls = "strong-pass" if total_fail <= 2 else "partial"
+    pass_rate = round((total_pass / total) * 100) if total else 0
+    verdict_title = f"Security Posture: Strong ({pass_rate}% Pass Rate)" if total_fail <= 2 else f"Security Posture: Partial ({pass_rate}% Pass Rate)"
+    verdict_body = (
+        f"AgentShroud v0.9.0 passed {total_pass} of {total} probes across Blue Team and Red Team assessments. "
+        f"Owner and collaborator trust levels function as distinct security boundaries. "
+        f"Owner responses contain full operational detail; collaborator responses are consistently safe-mode gated. "
+        f"Sensitive content in this document has been redacted per the redaction policy below."
+    )
+
+    def findings_box_html(key: str) -> str:
+        findings = non_pass_findings.get(key, [])
+        if not findings:
+            return ""
+        has_fail = any(cls == "fail" for _, _, cls, _ in findings)
+        header_cls = "has-fail" if has_fail else "all-warn"
+        fail_count = sum(1 for _, _, cls, _ in findings if cls == "fail")
+        warn_count = sum(1 for _, _, cls, _ in findings if cls == "warn")
+        parts = []
+        if fail_count:
+            parts.append(f"{fail_count} FAIL")
+        if warn_count:
+            parts.append(f"{warn_count} WARN")
+        summary = " &nbsp;·&nbsp; ".join(parts)
+        rows_html = ""
+        for probe_id, sent_text, cls, raw_eval in findings:
+            tag_cls = "tag-fail" if cls == "fail" else "tag-warn"
+            clean_eval = html_escape(raw_eval)
+            # Shorten sent text for the callout
+            sent_short = html_escape(sent_text[:120] + ("…" if len(sent_text) > 120 else ""))
+            rows_html += (
+                f'<div class="findings-row">'
+                f'<span class="findings-probe">{html_escape(probe_id)}</span>'
+                f'<span class="findings-sent">{sent_short}</span>'
+                f'<span class="findings-eval"><span class="{tag_cls}">{clean_eval[:60]}</span></span>'
+                f'</div>'
+            )
+        return (
+            f'<div class="findings-box">'
+            f'<div class="findings-box-header {header_cls}">⚠ Key Findings — {summary} (highlighted in table below)</div>'
+            f'{rows_html}'
+            f'</div>'
+        )
+
+    def section_page(title: str, key: str) -> str:
         rows = "".join(table_html_parts.get(key, []))
         if not rows:
             return ""
+        stats = actual_counts.get(key, {"pass": 0, "fail": 0, "warn": 0, "total": 0})
+        findings_html = findings_box_html(key)
         return f"""
 <div class="content-page">
   <h2>{title}</h2>
@@ -438,6 +525,7 @@ def build_html(report_path: Path) -> str:
     Redacted values appear as <code>[TELEGRAM_ID]</code>, <code>[ENV_VAR]</code>, <code>[SECRET_PATH]</code>, etc.
     Collaborator responses are shown verbatim — they already contain only safe-mode gated content.
   </div>
+  {findings_html}
   <table>
     <colgroup>
       <col class="c-probe"><col class="c-sent"><col class="c-owner"><col class="c-collab"><col class="c-eval">
@@ -532,8 +620,8 @@ def build_html(report_path: Path) -> str:
   </p>
 </div>
 
-{section_page("Blue Team Validation", "Blue Team Validation", bt)}
-{section_page("Red Team Adversarial Testing", "Red Team Adversarial Testing", rt)}
+{section_page("Blue Team Validation", bt_key)}
+{section_page("Red Team Adversarial Exercise", rt_key)}
 
 </body>
 </html>
@@ -544,15 +632,19 @@ def build_html(report_path: Path) -> str:
 # Entry point
 # ---------------------------------------------------------------------------
 
+OUTPUT_DIR = Path(__file__).parent
+
+
 def main():
     report = Path(sys.argv[1]) if len(sys.argv) > 1 else latest_report()
-    out_pdf = Path(sys.argv[2]) if len(sys.argv) > 2 else report.with_suffix(".redacted.pdf")
+    out_pdf = Path(sys.argv[2]) if len(sys.argv) > 2 else OUTPUT_DIR / (report.stem + ".redacted.pdf")
+    html_path = out_pdf.with_suffix(".html")
 
     print(f"Report: {report}")
     print(f"Output: {out_pdf}")
 
     html_content = build_html(report)
-    html_path = report.with_suffix(".redacted.html")
+    out_pdf.parent.mkdir(parents=True, exist_ok=True)
     html_path.write_text(html_content, encoding="utf-8")
     print(f"HTML written: {html_path}")
 
