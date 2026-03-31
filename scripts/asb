@@ -45,6 +45,11 @@ case "${1:-}" in
     for vol in gateway-data clamav-db; do
       docker volume rm "${PROJECT}_${vol}" 2>/dev/null && echo "  Removed ${PROJECT}_${vol}" || true
     done
+    # Prune BuildKit cache to clear stale overlay snapshots from previous failed builds.
+    # docker compose uses BuildKit (not the legacy builder), so docker buildx prune is
+    # required — docker builder prune targets the deprecated legacy builder and reclaims 0 bytes.
+    echo "Pruning BuildKit cache..."
+    docker buildx prune -a -f
     $COMPOSE build --no-cache
     $COMPOSE up -d
     echo "Clean rebuild complete."

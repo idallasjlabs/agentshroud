@@ -228,22 +228,93 @@ docker volume rm agentshroud-bot_gateway-data agentshroud-bot_clamav-db
 
 ## 7. Build Troubleshooting
 
-### Symptom: `E: You don't have enough free space in /apt-dl/`
+### Diagnose first: real disk full vs. phantom "no space"
 
-**Cause:** Colima VM disk full from accumulated Docker build layers.
+Before running any prune, check whether the Docker data partition is actually full:
 
 ```bash
-# Step 1: Check disk usage
 colima ssh -- df -h /var/lib/docker
+```
 
-# Step 2: Kill any hung prune process on the host
+Expected output includes a line like:
+```
+/dev/vdb1       99G    13G   86G  14% /mnt/lima-colima
+```
+
+**14% used → phantom "no space" (BuildKit stale overlay) — see next section.**
+**>80% used → real disk full — skip to "Symptom: disk truly full" below.**
+
+---
+
+### Symptom: `E: You don't have enough free space in /apt-dl/` — Docker data partition has plenty of free space
+
+**Cause:** BuildKit stale overlay from a previous failed build. When a build fails
+mid-layer, BuildKit retains a snapshot of the overlay filesystem at that point. That
+snapshot may report full (it's a stale copy of the full-disk state), even though the
+actual VM disk has gigabytes free.
+
+> **Important:** `docker builder prune` targets the **deprecated legacy builder** and
+> reclaims 0 bytes. Docker Compose uses **BuildKit** (`[+]` output prefix). Use
+> `docker buildx prune` to target BuildKit specifically.
+
+**Fix (run in order — stop when build works):**
+
+```bash
+# Step 1: Check BuildKit cache size
+docker buildx du
+
+# Step 2: Prune the BuildKit cache (this is what docker compose uses — NOT docker builder prune)
+docker buildx prune -a -f
+
+# Step 3: Retry build
+./scripts/asb clean-rebuild
+```
+
+**If `docker buildx prune` doesn't resolve it (stale overlay still locked):**
+
+```bash
+# Restart the Docker daemon inside the VM — clears all overlay references
+colima ssh -- sudo systemctl restart docker
+
+# Then retry
+./scripts/asb clean-rebuild
+```
+
+**Shortcut: use the cleanup script:**
+
+```bash
+# From the repo root (either account):
+./docker/scripts/docker-cleanup.sh diagnose   # Check disk + BuildKit cache size
+./docker/scripts/docker-cleanup.sh buildkit   # Prune BuildKit cache
+./docker/scripts/docker-cleanup.sh restart    # Restart Docker daemon
+```
+
+---
+
+### Symptom: `E: You don't have enough free space in /apt-dl/` — Docker data partition is >80% full
+
+**Cause:** Colima VM disk truly full from accumulated Docker build layers.
+
+```bash
+# Step 1: Kill any hung prune process on the host
 pkill -f "docker system prune" 2>/dev/null || true
 pkill -f "docker builder prune" 2>/dev/null || true
 
-# Step 3: Prune from inside the VM (avoids host-side hangs)
+# Step 2: Prune from inside the VM (avoids host-side hangs)
 colima ssh -- docker system prune -a -f
 
+# Step 3: Prune BuildKit cache
+docker buildx prune -a -f
+
 # Step 4: Retry build
+./scripts/asb clean-rebuild
+```
+
+**Shortcut:**
+
+```bash
+./docker/scripts/docker-cleanup.sh safe-prune
+./docker/scripts/docker-cleanup.sh buildkit
 ./scripts/asb clean-rebuild
 ```
 
@@ -302,8 +373,9 @@ due to this exact issue).
 This does:
 1. `docker compose down` — stops containers
 2. Removes only `gateway-data` and `clamav-db` volumes
-3. `docker compose build --no-cache` — full image rebuild
-4. `docker compose up -d` — starts everything
+3. `docker buildx prune -a -f` — clears BuildKit cache (prevents phantom "no space" errors)
+4. `docker compose build --no-cache` — full image rebuild
+5. `docker compose up -d` — starts everything
 
 > **Workspace, config, SSH keys, browsers, and memory backups are NOT removed.**
 
@@ -427,7 +499,8 @@ exit
 
 | Error | Likely Cause | Fix |
 |-------|-------------|-----|
-| `E: You don't have enough free space in /apt-dl/` | Colima VM disk full | `colima ssh -- docker system prune -a -f` then retry |
+| `E: You don't have enough free space in /apt-dl/` (VM has free space) | BuildKit stale overlay from failed build | `docker buildx prune -a -f` then `./scripts/asb clean-rebuild` (or just `clean-rebuild` — it now prunes BuildKit automatically) |
+| `E: You don't have enough free space in /apt-dl/` (VM disk >80% full) | Colima VM disk truly full | `colima ssh -- docker system prune -a -f` then `docker buildx prune -a -f` then retry |
 | `W: GPG error: ... invalid signature` + build fails | BuildKit cache stale | `docker builder prune -f` or prune from inside VM |
 | `exit code: 100` on apt-get (no GPG warning) | Package unavailable on arm64/bookworm | Check if package was removed in git history; may need a code fix |
 | `Cannot connect to the Docker daemon` | Colima VM not running | `colima start --cpu 4 --memory 6 --disk 60 --network-address` |
