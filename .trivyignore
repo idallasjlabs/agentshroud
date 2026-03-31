@@ -1,0 +1,19 @@
+# Trivy CVE Ignore List — AgentShroud Gateway
+#
+# IEC 62443 SR 2.4 / FR 2 (Use Control) risk assessment:
+# Each entry below has been reviewed and accepted per the criteria:
+#   - Not reachable from external input
+#   - Component is vendor-internal / non-exposed
+#   - Practical exploitability is negligible in this deployment context
+#
+# Review cadence: reassess at each minor version bump of the affected package.
+
+# CVE-2021-23358 — underscore < 1.12.1, Prototype Pollution
+# Location: /var/ossec/framework/node_modules/underscore/ (Wazuh Agent 4.9.2 embedded Node.js)
+# Risk assessment:
+#   - Wazuh uses this internally for its Python framework tooling; not exposed to external input.
+#   - The vulnerable template() function is not called with untrusted data in this context.
+#   - Updating underscore inside Wazuh's internal node_modules risks breaking Wazuh internals.
+#   - Mitigated by: Wazuh runs isolated inside the gateway container with no direct external exposure.
+# Accepted risk: LOW  |  Next review: Wazuh Agent >= 5.0.0 or CVE severity upgrade
+CVE-2021-23358
