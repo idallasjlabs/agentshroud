@@ -8,6 +8,66 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ---
 
+## [1.0.0] — feat/v1.0.0 — "Fortress" (2026-03-31)
+
+### Summary
+
+v1.0.0 "Fortress" — production hardening and stabilization release. No net-new security modules.
+76 security modules fully wired, IEC 62443 compliance matrix updated, performance baselines
+established, credential store integration shipped. Full test suite: 3,724+ tests, 94%+ coverage.
+
+### Hardened
+
+- **Approval queue** — confirmed end-to-end persistence (`_persist_pending_store` / `_load_pending_store`
+  verified); added `cleanup_decided(max_age_seconds)` to prevent unbounded in-memory growth in
+  long-running processes; stale TODO removed (IEC 62443 FR6 audit completeness)
+- **Dead code removed** — deleted `gateway/proxy/pipeline.py.original` pre-refactor backup
+- **Version bump** — `gateway/__init__.py` → `1.0.0`
+- **No-plaintext-passwords** — `docker/setup-secrets.sh store/extract` workflow with auto-detected
+  backend hierarchy: 1Password CLI → macOS Keychain → Linux secret-tool → prompt fallback;
+  `agentshroud.yaml.example` with sanitized placeholders; `.gitignore` updated for secret file patterns
+
+### Performance Baselines (arm64 / macOS / Python 3.13)
+
+Baselines written to `.benchmarks/baseline-v1.0.0.json`:
+
+| Benchmark | Result |
+|-----------|--------|
+| Single inbound message (SecurityPipeline) | 0.4 ms |
+| Single outbound message (SecurityPipeline) | 0.03 ms |
+| 100 inbound messages | 0.029 s |
+| 100 PII-laden inbound messages | 0.028 s |
+| 1000 prompt guard scans | 0.22 s |
+| 10,000 trust lookups | 0.032 s |
+
+New benchmark classes in `gateway/tests/test_performance.py`:
+- `TestSecurityPipelineChainLatency` — `SecurityPipeline.process_inbound/outbound` latency
+- `TestBenchmarkBaseline` — writes `.benchmarks/baseline-v1.0.0.json` on every run
+
+### Compliance
+
+IEC 62443 compliance matrix (`docs/compliance/iec-62443-matrix.md`) updated from v0.2.0 to v1.0.0:
+
+| FR | v0.2.0 SL | v1.0.0 SL | Uplift |
+|----|:---------:|:---------:|--------|
+| FR 3: System Integrity | 2 | **3** | Cosign image signing, Trivy CVE, Syft SBOM, Falco, Semgrep SAST |
+| FR 6: Timely Response | 2 | **3** | SHA-256 hash chain audit log, Wazuh SIEM, Fluent Bit |
+| FR 7: Resource Availability | 1 | **2** | ProgressiveLockdown rate limiting, HealthReport, backup scripts |
+
+FR 1 (credential mgmt row) updated: 1Password CLI / Keychain / secret-tool / Docker Secrets pipeline
+documented. FR 2 updated: ToolACL tiers, ProgressiveLockdown, EnhancedApprovalQueue reflected.
+
+### Known Issues
+
+- **Dockerfile `Trusted: yes` workaround** (`docker/bots/openclaw/Dockerfile:15`) — ARM64/Debian
+  bookworm `gpgv` clearsign bug requires bypassing apt GPG verification for 1Password/Wazuh apt
+  sources. Individual package hashes still verified. Remove when upstream ships a fix.
+- **FR 1 MFA gap** — No native MFA layer for sensitive operations (kill switch, SSH); relies on
+  Telegram's own 2FA. Deferred to v1.1.0.
+- **FR 5 DMZ gap** — Network policies and dedicated DMZ require multi-node deployment. Deferred.
+
+---
+
 ## [0.9.0] — feat/v0.9.0-soc-team-collab — "Sentinel" (2026-03-18)
 
 ### Summary
