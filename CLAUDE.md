@@ -73,7 +73,7 @@ Isaiah Jefferson is Chief Innovation Engineer for Fluence Energy's Global Servic
 | **Data Lakehouse (FODL)** | 275TB operational data platform, Athena/Glue/S3 | Active |
 | **AWS FinOps** | EBS right-sizing, EC2 optimization, tagging governance | Active |
 | **Fleet Alarms** | Standardization, local UX, centralized monitoring | Active |
-| **AgentShroud** | Security proxy for autonomous AI agents (v0.9.0 → v1.0.0) | Active |
+| **AgentShroud** | Security proxy for autonomous AI agents (v1.0.0 "Fortress") | Active |
 | **PKE/OKE** | Podcast automation, Telegram delivery, episode glossaries | Active |
 | **8D-RCA System** | Root cause analysis using Athena + z-score anomaly detection | Active |
 | **MCP Stack Evaluation** | Claude/Gemini/Codex parity testing with identical MCP configs | Active |
@@ -798,11 +798,10 @@ conda activate gsdl
 |-------|-------|
 | **Product** | AgentShroud™ — Enterprise Governance Proxy for Autonomous AI Agents |
 | **Trademark** | AgentShroud™ — Isaiah Dallas Jefferson, Jr. — Federal registration pending |
-| **Current Branch** | `feat/v0.9.0-soc-team-collab` ("Sentinel") |
-| **Current Version** | v0.9.0 |
-| **Target Version** | v1.0.0 |
+| **Current Branch** | `feat/v1.0.0` ("Fortress") |
+| **Current Version** | v1.0.0 |
 | **Language** | Python 3.9+ |
-| **Test Coverage** | 94% — 3,404 tests total; maintain or improve |
+| **Test Coverage** | 94% — 3,724+ tests total; maintain or improve |
 
 ---
 
@@ -827,7 +826,7 @@ AI Agent → AgentShroud Gateway (33 security modules) → Target System
 |------|----------|
 | `gateway/` | Core proxy, runtime, approval queue, ingest API, SSH proxy |
 | `gateway/security/` | All 33 security modules |
-| `gateway/soc/` | SOC team collaboration features (v0.9.0 focus) |
+| `gateway/soc/` | SOC team collaboration features |
 | `gateway/proxy/` | Request interception and routing |
 | `gateway/runtime/` | Agent runtime management |
 | `gateway/approval_queue/` | Human-in-the-loop approval workflow |
@@ -842,28 +841,26 @@ AI Agent → AgentShroud Gateway (33 security modules) → Target System
 
 ---
 
-## v0.9.0 "Sentinel" — Active Feature Set
+## v1.0.0 "Fortress" — Active Feature Set
 
-Three tranches delivered; all 33 security modules active (no stubs):
+76 security modules active (no stubs). Hardening and stabilization release.
 
-| Tranche | Feature | Key Files |
-|---------|---------|-----------|
-| T1 | True Collaboration Architecture | `gateway/security/delegation.py`, `shared_memory.py`, `rbac.py` |
-| T2 | Private Service Data Isolation | `gateway/security/tool_acl.py`, `privacy_policy.py` |
-| T3 | IEC 62443 Security Tools | `.semgrep.yml`, `docker/falco/`, `docker/wazuh/`, `scripts/security-scan.sh` |
-
-**New in T1:** Owner-away privilege delegation, group shared memory, `Role.OPERATOR`
-**New in T2:** Per-user/group tool ACL (PRIVATE/ADMIN/COLLABORATOR tiers), service privacy tiers
-**New in T3:** Trivy CVE scan, Syft SBOM, Cosign signing, OpenSCAP CIS, Semgrep SAST
+| Area | Highlights |
+|------|-----------|
+| Credential management | `docker/setup-secrets.sh` — 1Password / Keychain / secret-tool / prompt; no plaintext secrets |
+| Approval queue | `ApprovalQueue.cleanup_decided()` — prevents unbounded memory growth; full persistence verified |
+| SOC collaboration | Delegation, shared memory, tool ACL, privacy tiers, RBAC Operator role |
+| Performance baselines | `.benchmarks/baseline-v1.0.0.json` — arm64/macOS baselines; <0.5ms inbound latency |
+| IEC 62443 | FR3 → SL3 (Cosign/Trivy/Falco/Semgrep); FR6 → SL3 (SHA-256 hash chain + Wazuh); FR7 → SL2 |
 
 ---
 
-## Security Module Registry (33 Active)
+## Security Module Registry (76 Active)
 
 **P0 — Core Pipeline:** PromptGuard, TrustManager, EgressFilter, PII Sanitizer, Gateway Binding
-**P1 — Middleware:** SessionManager, TokenValidator, ConsentFramework, SubagentMonitor, AgentRegistry + 7 original
-**P2 — Network:** 5 modules active in web proxy
-**P3 — Infrastructure:** AlertDispatcher, DriftDetector, EncryptedStore, KeyVault, Canary, ClamAV, Trivy, Falco, Wazuh, HealthReport
+**P1 — Middleware:** SessionManager, TokenValidator, ConsentFramework, SubagentMonitor, AgentRegistry, Delegation, SharedMemory, ToolACL, PrivacyPolicy, RBAC + others
+**P2 — Network:** EgressFilter, EgressApproval, DNSFilter, NetworkValidator, WebContentScanner
+**P3 — Infrastructure:** AlertDispatcher, DriftDetector, EncryptedStore, KeyVault, Canary, ClamAV, Trivy, Falco, Wazuh, HealthReport, ProgressiveLockdown, ConfigIntegrity
 
 ---
 
@@ -905,12 +902,4 @@ docker-compose -f docker-compose.sidecar.yml up
 
 ---
 
-## Path to v1.0.0
-
-v0.9.0 → v1.0.0 is a hardening and stabilization release. No net-new security modules.
-Focus areas:
-- SOC team collaboration production-hardening (v0.9.0 feature set)
-- Performance benchmarking under load
-- Full IEC 62443 audit pass
-- Public documentation and onboarding materials
 <!-- ── SESSION PROMPT END ── -->

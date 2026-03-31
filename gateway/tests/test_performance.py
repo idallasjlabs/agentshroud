@@ -265,3 +265,199 @@ class TestFullPipelineLatency:
         tm.close()
         assert elapsed < 0.1, f"Pipeline latency: {elapsed*1000:.1f}ms (limit: 100ms)"
         assert entry.id is not None
+
+
+class TestSecurityPipelineChainLatency:
+    """SecurityPipeline.process_inbound/outbound latency via the real pipeline class."""
+
+    @pytest.fixture
+    def pipeline(self):
+        from gateway.proxy.pipeline import SecurityPipeline
+
+        sanitizer = PIISanitizer(
+            PIIConfig(
+                engine="regex",
+                entities=["US_SSN", "CREDIT_CARD", "PHONE_NUMBER", "EMAIL_ADDRESS"],
+                enabled=True,
+            )
+        )
+        guard = PromptGuard()
+        tm = TrustManager(db_path=":memory:")
+        tm.register_agent("bench-agent")
+        pipe = SecurityPipeline(
+            pii_sanitizer=sanitizer,
+            prompt_guard=guard,
+            trust_manager=tm,
+        )
+        yield pipe
+        tm.close()
+
+    @pytest.mark.asyncio
+    async def test_single_inbound_under_200ms(self, pipeline):
+        """Single message through SecurityPipeline.process_inbound < 200ms."""
+        msg = "Analyze the quarterly revenue report and flag anomalies."
+        start = time.perf_counter()
+        # Use read_file action (BASIC trust) so trust check passes without warmup
+        result = await pipeline.process_inbound(
+            msg, agent_id="bench-agent", action="read_file"
+        )
+        elapsed = time.perf_counter() - start
+
+        assert not result.blocked, f"Unexpected block: {result.block_reason}"
+        assert elapsed < 0.2, f"Inbound pipeline: {elapsed*1000:.1f}ms (limit: 200ms)"
+
+    @pytest.mark.asyncio
+    async def test_single_outbound_under_200ms(self, pipeline):
+        """Single message through SecurityPipeline.process_outbound < 200ms."""
+        msg = "The quarterly revenue increased by 12% year-over-year."
+        start = time.perf_counter()
+        result = await pipeline.process_outbound(msg, agent_id="bench-agent")
+        elapsed = time.perf_counter() - start
+
+        assert not result.blocked, f"Unexpected block: {result.block_reason}"
+        assert elapsed < 0.2, f"Outbound pipeline: {elapsed*1000:.1f}ms (limit: 200ms)"
+
+    @pytest.mark.asyncio
+    async def test_100_inbound_messages_under_5s(self, pipeline):
+        """100 messages through process_inbound in under 5 seconds."""
+        messages = CLEAN_MESSAGES * 20  # 100 messages
+        start = time.perf_counter()
+        for msg in messages:
+            await pipeline.process_inbound(
+                msg, agent_id="bench-agent", action="read_file"
+            )
+        elapsed = time.perf_counter() - start
+
+        assert elapsed < 5.0, f"100 inbound messages: {elapsed:.2f}s (limit: 5s)"
+
+    @pytest.mark.asyncio
+    async def test_100_outbound_messages_under_5s(self, pipeline):
+        """100 messages through process_outbound in under 5 seconds."""
+        messages = CLEAN_MESSAGES * 20
+        start = time.perf_counter()
+        for msg in messages:
+            await pipeline.process_outbound(msg, agent_id="bench-agent")
+        elapsed = time.perf_counter() - start
+
+        assert elapsed < 5.0, f"100 outbound messages: {elapsed:.2f}s (limit: 5s)"
+
+    @pytest.mark.asyncio
+    async def test_pii_inbound_latency(self, pipeline):
+        """PII-laden messages through inbound pipeline — verify redaction + timing."""
+        messages = PII_MESSAGES * 20  # 100 PII messages
+        start = time.perf_counter()
+        results = []
+        for msg in messages:
+            results.append(
+                await pipeline.process_inbound(
+                    msg, agent_id="bench-agent", action="read_file"
+                )
+            )
+        elapsed = time.perf_counter() - start
+
+        assert elapsed < 10.0, f"100 PII inbound: {elapsed:.2f}s (limit: 10s)"
+        # Verify PII was actually redacted
+        redacted_count = sum(1 for r in results if r.pii_redaction_count > 0)
+        assert redacted_count == 100, f"Expected 100 redacted, got {redacted_count}"
+
+
+class TestBenchmarkBaseline:
+    """Collect and write benchmark baselines to .benchmarks/baseline-v1.0.0.json."""
+
+    @pytest.fixture
+    def pipeline(self):
+        from gateway.proxy.pipeline import SecurityPipeline
+
+        sanitizer = PIISanitizer(
+            PIIConfig(
+                engine="regex",
+                entities=["US_SSN", "CREDIT_CARD", "PHONE_NUMBER", "EMAIL_ADDRESS"],
+                enabled=True,
+            )
+        )
+        guard = PromptGuard()
+        tm = TrustManager(db_path=":memory:")
+        tm.register_agent("baseline-agent")
+        pipe = SecurityPipeline(
+            pii_sanitizer=sanitizer,
+            prompt_guard=guard,
+            trust_manager=tm,
+        )
+        yield pipe
+        tm.close()
+
+    @pytest.mark.asyncio
+    async def test_write_baseline_json(self, pipeline):
+        """Run standard benchmarks and write results to .benchmarks/baseline-v1.0.0.json."""
+        import json
+        import platform
+
+        benchmarks = {}
+
+        # Benchmark 1: Single inbound (read_file = BASIC trust, no warmup needed)
+        start = time.perf_counter()
+        await pipeline.process_inbound(
+            CLEAN_MESSAGES[0], agent_id="baseline-agent", action="read_file"
+        )
+        benchmarks["single_inbound_ms"] = round((time.perf_counter() - start) * 1000, 2)
+
+        # Benchmark 2: Single outbound
+        start = time.perf_counter()
+        await pipeline.process_outbound(CLEAN_MESSAGES[0], agent_id="baseline-agent")
+        benchmarks["single_outbound_ms"] = round((time.perf_counter() - start) * 1000, 2)
+
+        # Benchmark 3: 100 inbound messages
+        messages = CLEAN_MESSAGES * 20
+        start = time.perf_counter()
+        for msg in messages:
+            await pipeline.process_inbound(
+                msg, agent_id="baseline-agent", action="read_file"
+            )
+        benchmarks["100_inbound_s"] = round(time.perf_counter() - start, 3)
+
+        # Benchmark 4: 100 PII messages
+        pii_msgs = PII_MESSAGES * 20
+        start = time.perf_counter()
+        for msg in pii_msgs:
+            await pipeline.process_inbound(
+                msg, agent_id="baseline-agent", action="read_file"
+            )
+        benchmarks["100_pii_inbound_s"] = round(time.perf_counter() - start, 3)
+
+        # Benchmark 5: 1000 prompt guard scans
+        guard = PromptGuard()
+        all_msgs = (CLEAN_MESSAGES + INJECTION_MESSAGES) * 100
+        start = time.perf_counter()
+        for msg in all_msgs[:1000]:
+            guard.scan(msg)
+        benchmarks["1000_prompt_guard_s"] = round(time.perf_counter() - start, 3)
+
+        # Benchmark 6: 10000 trust lookups
+        tm = TrustManager(db_path=":memory:")
+        for i in range(50):
+            tm.register_agent(f"bl-agent-{i}")
+        start = time.perf_counter()
+        for i in range(10000):
+            tm.is_action_allowed(f"bl-agent-{i % 50}", "read_file")
+        benchmarks["10000_trust_lookups_s"] = round(time.perf_counter() - start, 3)
+        tm.close()
+
+        # Metadata
+        benchmarks["_meta"] = {
+            "version": "1.0.0",
+            "platform": platform.platform(),
+            "python": platform.python_version(),
+            "arch": platform.machine(),
+            "timestamp": time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime()),
+        }
+
+        # Write baseline
+        baseline_dir = Path(__file__).resolve().parent.parent.parent / ".benchmarks"
+        baseline_dir.mkdir(exist_ok=True)
+        baseline_path = baseline_dir / "baseline-v1.0.0.json"
+        with open(baseline_path, "w", encoding="utf-8") as f:
+            json.dump(benchmarks, f, indent=2)
+
+        assert baseline_path.exists()
+        assert benchmarks["single_inbound_ms"] < 200
+        assert benchmarks["100_inbound_s"] < 5.0
