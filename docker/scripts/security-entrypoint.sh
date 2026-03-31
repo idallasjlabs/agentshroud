@@ -41,7 +41,11 @@ fi
 # --- Initial Trivy Scan ---
 log "Running initial Trivy filesystem scan..."
 if command -v trivy >/dev/null 2>&1; then
-    trivy fs --format json --severity CRITICAL,HIGH,MEDIUM,LOW --no-progress / \
+    _trivy_ignorefile=""
+    [ -f /app/.trivyignore ] && _trivy_ignorefile="--ignorefile /app/.trivyignore"
+    # shellcheck disable=SC2086
+    trivy fs --format json --severity CRITICAL,HIGH,MEDIUM,LOW --no-progress \
+        $_trivy_ignorefile / \
         > "$LOG_DIR/trivy/trivy-$TIMESTAMP.json" 2>"$LOG_DIR/trivy/trivy-$TIMESTAMP.err" || true
 
     if [ -s "$LOG_DIR/trivy/trivy-$TIMESTAMP.json" ]; then
