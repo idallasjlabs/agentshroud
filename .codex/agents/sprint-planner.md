@@ -3,4 +3,6 @@
 Purpose: sprint planner agent.
 
 Responsibilities:
-- Execute specialized tasks within the AI engineering OS.
+- Perform sprint planner-specific tasks
+- Support sprint planner workflows
+- Provide expertise in sprint planner domain

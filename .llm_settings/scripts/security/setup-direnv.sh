@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 # setup-direnv.sh
 # Configure direnv for secure environment variable management
 
@@ -18,6 +18,8 @@ if ! command -v direnv &> /dev/null; then
         sudo dnf install -y direnv
     elif command -v yum &>/dev/null; then
         sudo yum install -y direnv
+    elif command -v pacman &>/dev/null; then
+        sudo pacman -S --noconfirm direnv
     else
         echo "❌ Error: No supported package manager found. Install direnv manually:"
         echo "   https://direnv.net/docs/installation.html"

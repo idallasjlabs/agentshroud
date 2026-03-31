@@ -1,8 +1,3 @@
----
-name: "mcpm-auth-reset"
-description: "MCP Authentication Reset specialist. Guides through re-authenticating GitHub, Atlassian, and AWS MCP connections. Use when encountering token expiration, authentication failures, or credential rotation needs."
----
-
 # Skill: MCP Auth Reset (MCPM-AUTH-RESET)
 
 ## Role

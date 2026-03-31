@@ -1,5 +1,5 @@
 ---
-name: "apollo"
+name: apollo
 description: "Audio Systems Producer for podcast pipeline. Converts approved dialogue scripts to audio using ElevenLabs API. Use when producing podcast audio from script.md."
 ---
 

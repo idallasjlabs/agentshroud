@@ -3,4 +3,7 @@
 Purpose: ai training agent agent.
 
 Responsibilities:
-- Execute specialized tasks within the AI engineering OS.
+- Design and implement AI model training pipelines
+- Optimize hyperparameters and model architecture
+- Monitor training metrics and convergence
+- Implement data augmentation strategies

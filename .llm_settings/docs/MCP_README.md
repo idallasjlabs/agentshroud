@@ -138,7 +138,7 @@ Used to validate **direct Atlassian MCP OAuth**.
 ```dotenv
 ATLASSIAN_CLIENT_ID=
 ATLASSIAN_CLIENT_SECRET=
-ATLASSIAN_SCOPES=read:jira-user read:jira-work read:confluence-content.summary
+ATLASSIAN_SCOPES=read:jira-user read:jira-work write:jira-work read:confluence-content.summary write:confluence-content
 # ATLASSIAN_REDIRECT_URI=http://127.0.0.1:8000/callback
 ```
 
@@ -157,8 +157,10 @@ ATLASSIAN_SCOPES=read:jira-user read:jira-work read:confluence-content.summary
    - Jira:
      - `read:jira-user`
      - `read:jira-work`
+     - `write:jira-work`
    - Confluence:
      - `read:confluence-content.summary`
+     - `write:confluence-content`
 5. Save the app
 6. Copy:
    - **Client ID** → `ATLASSIAN_CLIENT_ID`

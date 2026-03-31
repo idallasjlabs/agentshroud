@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 # security-audit.sh
 # Initial security audit and setup for a repository
 
@@ -12,11 +12,16 @@ echo "1️⃣  Checking for gitleaks..."
 if ! command -v gitleaks &> /dev/null; then
     echo "📦 Installing gitleaks..."
     if command -v brew &>/dev/null; then
-        brew install gitleaks
-        echo "✅ gitleaks installed"
+        brew install gitleaks && echo "   ✅ gitleaks installed"
+    elif command -v go &>/dev/null; then
+        go install github.com/gitleaks/gitleaks/v8@latest && echo "   ✅ gitleaks installed via go"
     else
-        echo "❌ gitleaks not found. Install it from: https://github.com/gitleaks/gitleaks#installing"
-        exit 1
+        echo "   ⚠️  gitleaks not found — install manually and re-run:"
+        echo "      macOS:  brew install gitleaks"
+        echo "      Linux:  go install github.com/gitleaks/gitleaks/v8@latest"
+        echo "      Binary: https://github.com/gitleaks/gitleaks/releases"
+        echo "   Skipping gitleaks checks."
+        SKIP_GITLEAKS=true
     fi
 else
     echo "✅ gitleaks already installed"
@@ -28,11 +33,19 @@ echo "2️⃣  Checking for git-secrets..."
 if ! command -v git-secrets &> /dev/null; then
     echo "📦 Installing git-secrets..."
     if command -v brew &>/dev/null; then
-        brew install git-secrets
-        echo "✅ git-secrets installed"
+        brew install git-secrets && echo "   ✅ git-secrets installed"
+    elif command -v git &>/dev/null && command -v make &>/dev/null; then
+        _tmp=$(mktemp -d)
+        git clone --depth 1 https://github.com/awslabs/git-secrets.git "$_tmp/git-secrets" 2>/dev/null \
+            && (cd "$_tmp/git-secrets" && sudo make install 2>/dev/null) \
+            && echo "   ✅ git-secrets installed from source" \
+            || { echo "   ⚠️  git-secrets source install failed. See: https://github.com/awslabs/git-secrets#installing-git-secrets"; SKIP_GIT_SECRETS=true; }
+        rm -rf "$_tmp"
     else
-        echo "❌ git-secrets not found. Install it from: https://github.com/awslabs/git-secrets#installing-git-secrets"
-        exit 1
+        echo "   ⚠️  git-secrets not found — install manually and re-run:"
+        echo "      macOS: brew install git-secrets"
+        echo "      Linux: https://github.com/awslabs/git-secrets#installing-git-secrets"
+        SKIP_GIT_SECRETS=true
     fi
 else
     echo "✅ git-secrets already installed"
@@ -41,9 +54,10 @@ echo ""
 
 # Step 3: Scan repository history
 echo "3️⃣  Scanning repository history for secrets..."
-if [ -d ".git" ]; then
+if [ "${SKIP_GITLEAKS:-false}" = "true" ]; then
+    echo "⚠️  Skipping (gitleaks not installed)"
+elif [ -d ".git" ]; then
     echo "   This may take a while for large repositories..."
-    
     if gitleaks detect --report-path gitleaks-report.json --verbose; then
         echo "✅ No secrets detected in repository history"
         rm -f gitleaks-report.json
@@ -100,7 +114,9 @@ echo ""
 
 # Step 5: Check for existing secrets in working directory
 echo "5️⃣  Scanning working directory for secrets..."
-if gitleaks protect --staged --verbose; then
+if [ "${SKIP_GITLEAKS:-false}" = "true" ]; then
+    echo "⚠️  Skipping (gitleaks not installed)"
+elif gitleaks protect --staged --verbose; then
     echo "✅ No secrets in current working directory"
 else
     echo "⚠️  Potential secrets found in working directory"

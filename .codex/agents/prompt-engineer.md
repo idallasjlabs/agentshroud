@@ -3,4 +3,6 @@
 Purpose: prompt engineer agent.
 
 Responsibilities:
-- Execute specialized tasks within the AI engineering OS.
+- Perform prompt engineer-specific tasks
+- Support prompt engineer workflows
+- Provide expertise in prompt engineer domain

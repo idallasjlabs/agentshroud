@@ -3,4 +3,6 @@
 Purpose: roadmap agent agent.
 
 Responsibilities:
-- Execute specialized tasks within the AI engineering OS.
+- Perform roadmap agent-specific tasks
+- Support roadmap agent workflows
+- Provide expertise in roadmap agent domain

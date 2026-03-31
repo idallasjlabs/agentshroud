@@ -16,7 +16,9 @@ from gateway.security.tool_chain_analyzer import (
     ChainMatch,
     RiskLevel,
     ChainAction,
-    SessionChainContext
+    SessionChainContext,
+    ParamScanResult,
+    ReversibilityScore,
 )
 
 
@@ -502,6 +504,70 @@ class TestToolChainAnalyzer:
         # Should not crash despite failing callback
         tool_chain_analyzer.analyze_tool_call(session_id, "read", {"file_path": "/test"})
         tool_chain_analyzer.analyze_tool_call(session_id, "web_fetch", {"url": "https://example.com"})
+
+
+# ── C34: Parameter Sanitization tests ────────────────────────────────────────
+
+class TestParamSanitization:
+    @pytest.fixture
+    def analyzer(self):
+        return ToolChainAnalyzer({"enabled": True})
+
+    def test_clean_params_pass(self, analyzer):
+        result = analyzer.sanitize_tool_params("read_file", {"file_path": "/app/data/report.txt"})
+        assert isinstance(result, ParamScanResult)
+        assert result.safe
+
+    def test_param_path_traversal_blocked(self, analyzer):
+        result = analyzer.sanitize_tool_params("read_file", {"path": "../../etc/passwd"})
+        assert not result.safe
+        assert any("path_traversal" in v for v in result.violations)
+
+    def test_param_sql_injection_blocked(self, analyzer):
+        result = analyzer.sanitize_tool_params("db_query", {"query": "SELECT * FROM users WHERE id=1 UNION SELECT password FROM admins"})
+        assert not result.safe
+        assert any("sql_injection" in v for v in result.violations)
+
+    def test_param_template_injection_blocked(self, analyzer):
+        result = analyzer.sanitize_tool_params("render", {"template": "Hello {{evil_code}} world"})
+        assert not result.safe
+        assert any("template_injection" in v for v in result.violations)
+
+    def test_sanitization_returns_cleaned(self, analyzer):
+        result = analyzer.sanitize_tool_params("read_file", {"path": "../../secret"})
+        assert not result.safe
+        assert "../" not in result.sanitized_params.get("path", "../../secret")
+
+    def test_multiple_params_scanned(self, analyzer):
+        result = analyzer.sanitize_tool_params("tool", {"a": "safe", "b": "{{injection}}"})
+        assert not result.safe
+        assert "b:template_injection" in result.violations
+
+
+# ── C37: Reversibility Scoring tests ─────────────────────────────────────────
+
+class TestReversibilityScoring:
+    @pytest.fixture
+    def analyzer(self):
+        return ToolChainAnalyzer({"enabled": True})
+
+    def test_read_file_fully_reversible(self, analyzer):
+        score = analyzer.score_reversibility("read_file", {})
+        assert isinstance(score, ReversibilityScore)
+        assert score.score == 1.0
+
+    def test_delete_file_mostly_irreversible(self, analyzer):
+        score = analyzer.score_reversibility("delete_file", {})
+        assert score.score <= 0.2
+
+    def test_unknown_tool_defaults_low(self, analyzer):
+        score = analyzer.score_reversibility("some_unknown_tool_xyz", {})
+        assert 0.0 < score.score <= 0.3
+
+    def test_reversibility_below_threshold_has_reasoning(self, analyzer):
+        score = analyzer.score_reversibility("delete", {})
+        assert score.reasoning != ""
+        assert score.tool_name == "delete"
 
 
 if __name__ == "__main__":

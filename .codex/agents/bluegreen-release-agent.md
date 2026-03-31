@@ -3,4 +3,7 @@
 Purpose: bluegreen release agent agent.
 
 Responsibilities:
-- Execute specialized tasks within the AI engineering OS.
+- Implement blue-green deployment strategies
+- Manage traffic routing between environments
+- Validate new releases before cutover
+- Execute rollback procedures if needed

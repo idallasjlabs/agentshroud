@@ -3,4 +3,7 @@
 Purpose: observability agent agent.
 
 Responsibilities:
-- Execute specialized tasks within the AI engineering OS.
+- Implement observability across services (logs, metrics, traces)
+- Correlate signals for root cause analysis
+- Design distributed tracing strategies
+- Optimize observability costs

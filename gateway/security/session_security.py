@@ -134,6 +134,51 @@ class SessionManager:
             raise EventInjectionError(f"Unregistered event source: {source}")
         return True
 
+    # ── C47: Per-Instruction Replay Prevention ────────────────────────────────
+
+    def generate_instruction_nonce(self) -> str:
+        """Generate a single-use, time-bound nonce for an instruction.
+
+        Format: ``<unix_timestamp>:<16-byte-hex>``
+        """
+        if not hasattr(self, "_used_nonces"):
+            self._used_nonces: set[str] = set()
+        ts = int(time.time())
+        return f"{ts}:{secrets.token_hex(16)}"
+
+    def validate_nonce(self, nonce: str) -> bool:
+        """Return True if the nonce is valid (not replayed, within 5-min window).
+
+        Side-effect: marks the nonce as used so future calls return False.
+        """
+        if not hasattr(self, "_used_nonces"):
+            self._used_nonces = set()
+
+        if nonce in self._used_nonces:
+            return False
+
+        try:
+            ts_str, _ = nonce.split(":", 1)
+            ts = int(ts_str)
+            if abs(time.time() - ts) > 300:  # 5-minute window
+                return False
+        except (ValueError, AttributeError):
+            return False
+
+        self._used_nonces.add(nonce)
+
+        # Periodic cleanup — prevent unbounded growth
+        if len(self._used_nonces) > 10_000:
+            cutoff = time.time() - 300
+            self._used_nonces = {
+                n for n in self._used_nonces
+                if not n.split(":")[0].isdigit() or float(n.split(":")[0]) > cutoff
+            }
+
+        return True
+
+    # ─────────────────────────────────────────────────────────────────────────
+
     def cleanup_expired(self) -> int:
         now = time.time()
         expired = [

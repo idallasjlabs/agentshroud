@@ -3,4 +3,6 @@
 Purpose: kaizen agent agent.
 
 Responsibilities:
-- Execute specialized tasks within the AI engineering OS.
+- Perform kaizen agent-specific tasks
+- Support kaizen agent workflows
+- Provide expertise in kaizen agent domain

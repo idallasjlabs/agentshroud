@@ -1,8 +1,3 @@
----
-name: "mcpm-aws-profile"
-description: "AWS Profile Configuration specialist for MCP. Helps configure and switch AWS profiles for MCP operations, including SSO, named profiles, and multi-account access."
----
-
 # Skill: MCP AWS Profile Configuration (MCPM-AWS-PROFILE)
 
 ## Role
@@ -87,16 +82,16 @@ You'll be prompted for:
 **Edit `~/.aws/credentials`:**
 ```ini
 [default]
-aws_access_key_id = YOUR_ACCESS_KEY_ID
-aws_secret_access_key = YOUR_SECRET_ACCESS_KEY
+aws_access_key_id = AKIAIOSFODNN7EXAMPLE
+aws_secret_access_key = wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY
 
 [production]
-aws_access_key_id = YOUR_ACCESS_KEY_ID
-aws_secret_access_key = YOUR_SECRET_ACCESS_KEY
+aws_access_key_id = AKIAI44QH8DHBEXAMPLE
+aws_secret_access_key = je7MtGbClwBF/2Zp9Utk/h3yCo8nvbEXAMPLEKEY
 
 [development]
-aws_access_key_id = YOUR_ACCESS_KEY_ID
-aws_secret_access_key = YOUR_SECRET_ACCESS_KEY
+aws_access_key_id = AKIAI44QH8DHBEXAMPLE
+aws_secret_access_key = je7MtGbClwBF/2Zp9Utk/h3yCo8nvbEXAMPLEKEY
 ```
 
 **Edit `~/.aws/config`:**

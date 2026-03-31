@@ -239,11 +239,11 @@ class DNSBlocklist:
     async def _periodic_update_loop(self):
         """Background loop: update blocklists every UPDATE_INTERVAL_SECONDS."""
         while True:
+            await asyncio.sleep(UPDATE_INTERVAL_SECONDS)
             try:
                 await self.update()
             except Exception as e:
                 logger.error(f"Blocklist update failed: {e}")
-            await asyncio.sleep(UPDATE_INTERVAL_SECONDS)
 
     def stop(self):
         """Stop periodic updates."""

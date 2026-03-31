@@ -1,5 +1,5 @@
 ---
-name: "browser"
+name: browser
 description: "Playwright-powered browser automation with enterprise security controls. Use for web tasks requiring browser interaction (form filling, screenshots, page navigation, data extraction) with built-in URL allowlisting, approval queue integration, audit logging, and sandboxed contexts. Supports JavaScript-heavy sites and dynamic web applications. Triggers on: browser automation, web fetch, form fill, screenshot, page navigation, scrape, dynamic site, 1Password share link, web interaction."
 ---
 
@@ -128,6 +128,7 @@ security:
     - "icloud.com"
     - "account.apple.com"
     - "appleid.apple.com"
+    # Add more trusted domains as needed
 
   url_blocklist:
     - "*.onion"
@@ -159,6 +160,141 @@ security:
     javascript_enabled: true
 ```
 
+## Approval Integration
+
+High-risk actions integrate with approval queue:
+
+```python
+from gateway.approval_queue import ApprovalQueue
+
+approval = await ApprovalQueue.request(
+    action="fill_password_field",
+    url="https://account.apple.com",
+    details={"field": "password", "value": "[REDACTED]"},
+    risk_level="HIGH"
+)
+
+if approval.approved:
+    # Execute action
+else:
+    raise SecurityError("Action denied by approval queue")
+```
+
+## Audit Logging
+
+Every action is logged to audit ledger:
+
+```python
+await ledger.record(
+    source="browser",
+    content=f"Navigated to {url}",
+    metadata={
+        "action": "navigate",
+        "url": url,
+        "risk_level": "LOW",
+        "timestamp": datetime.now().isoformat(),
+        "screenshot_path": screenshot_path
+    }
+)
+```
+
+## Example: Apple ID Creation (Semi-Automated)
+
+```python
+# Step 1: Navigate to signup (LOW RISK - auto-execute)
+await browse.navigate("https://appleid.apple.com/account")
+await browse.screenshot("/tmp/signup_page.png")
+
+# Step 2: Fill email (LOW RISK - auto-execute)
+await browse.fill_field("#email", "user@example.com")
+
+# Step 3: Fill password (HIGH RISK - require approval)
+# Approval request sent to Control UI
+await browse.fill_field("#password", password, risk="HIGH")
+
+# Step 4: Handle CAPTCHA (MANUAL - notify user)
+captcha_detected = await browse.detect_captcha()
+if captcha_detected:
+    return "CAPTCHA detected. Please complete manually at: [URL]"
+
+# Step 5: Submit (MEDIUM RISK - log + execute)
+await browse.click("#submit-button")
+
+# Step 6: Handle verification (MANUAL - notify user)
+return "Email verification required. Check inbox for link."
+```
+
+## Best Practices
+
+### 1. Always Specify Risk Level
+```python
+# Bad
+await browse.fill_field("#password", password)
+
+# Good
+await browse.fill_field("#password", password, risk="HIGH")
+```
+
+### 2. Use Allowlisting Liberally
+```python
+# Add domain before using
+await browse.add_allowed_domain("newsite.com")
+await browse.navigate("https://newsite.com")
+```
+
+### 3. Take Screenshots for Audit Trail
+```python
+await browse.screenshot(f"/tmp/before_{action}.png")
+await browse.perform_action()
+await browse.screenshot(f"/tmp/after_{action}.png")
+```
+
+### 4. Handle CAPTCHAs Gracefully
+```python
+if await browse.detect_captcha():
+    return "Manual intervention required: CAPTCHA detected"
+```
+
+### 5. Never Extract Credentials
+```python
+# FORBIDDEN - Will be blocked
+password = await browse.extract_field("#password")
+
+# ALLOWED - Use credentials without extracting
+await browse.fill_field("#password", get_credential("password"))
+```
+
+## Limitations
+
+**Cannot Fully Automate**:
+- CAPTCHAs (requires manual completion)
+- SMS/Email verification (requires manual code entry)
+- Biometric authentication (Touch ID, Face ID)
+- Two-factor authentication (requires TOTP from 1Password)
+
+**Security Restrictions**:
+- Cannot extract password values from pages
+- Cannot bypass allowlist (even with approval)
+- Cannot disable audit logging
+- Cannot access cookies/local storage from other sessions
+
+## Troubleshooting
+
+### "URL not in allowlist"
+Add domain to config.yaml under `security.url_allowlist`
+
+### "Action requires approval but none granted"
+High-risk actions need manual approval via Control UI
+
+### "Rate limit exceeded"
+Wait or increase limits in config.yaml (if authorized)
+
+### "Browser timeout"
+Increase timeout in config.yaml or optimize page load
+
+### "CAPTCHA detected"
+Manual intervention required — user must complete CAPTCHA
+
 ## Security Guarantees
 
 Enforced:
@@ -168,3 +304,8 @@ Enforced:
 - All browser contexts isolated (no cross-contamination)
 - All screenshots stored for review
 - All credential fields protected from extraction
+
+Not Guaranteed:
+- Perfect CAPTCHA detection (may miss some)
+- Protection against zero-day browser vulnerabilities
+- Prevention of all forms of prompt injection (defense in depth)

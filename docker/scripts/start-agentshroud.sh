@@ -7,6 +7,28 @@
 
 set -euo pipefail
 
+# ---------------------------------------------------------------------------
+# Security agents — start before main process (non-fatal, background)
+# ---------------------------------------------------------------------------
+
+# ClamAV daemon — malware scanning for bot workspace
+# Bot has ClamAV installed; clamd.conf uses /tmp for socket (read_only rootfs safe).
+if command -v clamd >/dev/null 2>&1 && [ -f /var/lib/clamav/main.cvd -o -f /var/lib/clamav/main.cld ]; then
+    clamd --config-file=/etc/clamav/clamd.conf 2>/tmp/clamd-start.log &
+    echo "[startup] clamd launched (pid=$!)"
+else
+    echo "[startup] clamd: skipping (binary or virus DB not ready)"
+fi
+
+# Wazuh agent — FIM on /home/node/agentshroud/workspace
+# /var/ossec is owned by node (chowned at build time); runs without root.
+if [ -x /var/ossec/bin/wazuh-agentd ]; then
+    mkdir -p /var/ossec/var/run /var/ossec/queue/sockets /var/ossec/tmp 2>/dev/null || true
+    /var/ossec/bin/wazuh-agentd 2>/tmp/wazuh-start.log &
+    echo "[startup] wazuh-agentd launched (pid=$!)"
+fi
+
+# ---------------------------------------------------------------------------
 # Export Gateway password from secret file
 # Note: OpenClaw CLI expects OPENCLAW_GATEWAY_PASSWORD env var
 if [ -f "/run/secrets/gateway_password" ]; then
@@ -142,7 +164,9 @@ if [ -n "${GATEWAY_AUTH_TOKEN:-}" ] && [ -n "${GATEWAY_OP_PROXY_URL:-}" ] && $_O
 
     # Load Brave Search API key (non-blocking single attempt).
     # This key is optional; do not delay bot startup for retry backoff loops.
+    # Brief delay gives the gateway op-proxy time to authenticate before the first attempt.
     # Item ID: 6j6ij5tzld6kobvit5tk6ufrhq (Brave Search API - agentshroud.ai@gmail.com)
+    sleep 5
     BRAVE_API_KEY="${BRAVE_API_KEY:-$(/usr/local/bin/op-wrapper.sh read \
         "op://Agent Shroud Bot Credentials/6j6ij5tzld6kobvit5tk6ufrhq/brave search api key" \
         2>/dev/null || true)}"
@@ -195,6 +219,21 @@ fi
 # Apply OpenClaw config defaults (SSH allowlist, cron jobs, agent patches, workspace brand files)
 echo "[startup] Bootstrapping OpenClaw config..."
 /usr/local/bin/init-openclaw-config.sh
+
+# CVE-2021-23358: upgrade underscore in bot workspace if pinned to vulnerable version (<1.12.1)
+# underscore@1.7.0 allows arbitrary code execution via _.template(); fixed in >=1.12.1
+_WORKSPACE_PKG="/home/node/agentshroud/workspace/package-lock.json"
+if [ -f "$_WORKSPACE_PKG" ] && grep -q '"underscore"' "$_WORKSPACE_PKG" 2>/dev/null; then
+    _US_VER=$(node -e "try{console.log(require('/home/node/agentshroud/workspace/node_modules/underscore/package.json').version)}catch(e){console.log('0')}" 2>/dev/null || echo "0")
+    # Skip npm update if already patched (>= 1.12.1)
+    if [ "$_US_VER" = "0" ] || [ "$(printf '%s\n' "1.12.1" "$_US_VER" | sort -V | head -n1)" != "1.12.1" ]; then
+        cd /home/node/agentshroud/workspace && npm update underscore --no-fund --no-audit 2>/dev/null || true
+        cd /home/node
+        echo "[startup] underscore upgraded from $_US_VER (CVE-2021-23358)"
+    else
+        echo "[startup] underscore $_US_VER already patched — skipping update (CVE-2021-23358)"
+    fi
+fi
 
 # Wait briefly for background iCloud fetch, then source if ready
 if [ -n "${_ICLOUD_BG_PID:-}" ]; then

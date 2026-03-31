@@ -3,4 +3,6 @@
 Purpose: value stream agent agent.
 
 Responsibilities:
-- Execute specialized tasks within the AI engineering OS.
+- Perform value stream agent-specific tasks
+- Support value stream agent workflows
+- Provide expertise in value stream agent domain

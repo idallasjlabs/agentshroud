@@ -95,7 +95,14 @@ llm-init() {
         fi
         local _candidate
         _candidate="$(cd "$(dirname "$_script")/../.." 2>/dev/null && pwd)"
-        if [ -d "${_candidate}/.claude" ] && { [ -d "${_candidate}/.llm_settings" ] || [ -d "${_candidate}/llm_settings" ]; }; then
+        # Guard: if the candidate equals the current working directory, it is likely
+        # a deployed target repo (sourced via relative path), not the llm_settings
+        # source.  Skip BASH_SOURCE resolution and fall through to well-known paths.
+        local _cwd
+        _cwd="$(pwd)"
+        if [ "$_candidate" != "$_cwd" ] && \
+           [ -d "${_candidate}/.claude" ] && \
+           { [ -d "${_candidate}/.llm_settings" ] || [ -d "${_candidate}/llm_settings" ]; }; then
             source_dir="$_candidate"
         fi
     fi
@@ -227,8 +234,15 @@ llm-init() {
         "GEMINI.md"
         ".llm_env_example"
         "new-skills"
-        "new-skills-"*.tgz
         "llm_settings"
+        # Stale nested scope copies — created when llm-init was previously run
+        # on the llm_settings repo itself. These must not exist in target repos.
+        ".llm_settings/scripts/.claude"
+        ".llm_settings/scripts/.gemini"
+        ".llm_settings/scripts/.codex"
+        ".llm_settings/scripts/.github"
+        ".llm_settings/scripts/.mcp.json"
+        ".llm_settings/scripts/.llm_settings"
     )
 
     for item in "${old_items[@]}"; do
@@ -248,6 +262,13 @@ llm-init() {
             fi
         fi
     done
+
+    # Glob-safe cleanup for new-skills-*.tgz — use find to avoid zsh "no matches found" error
+    while IFS= read -r _tgz; do
+        echo "   🗑️  Removing file: $_tgz"
+        $dry_run || rm -f "$_tgz"
+        cleaned=true
+    done < <(find "$target_dir" -maxdepth 1 -name 'new-skills-*.tgz' -type f 2>/dev/null)
 
     if [ "$cleaned" = true ]; then
         echo "   ✅ Old deployment cleaned up"
@@ -339,6 +360,8 @@ llm-init() {
             --exclude='stats-cache.json' \
             --exclude='statsig/' \
             --exclude='todos/' \
+            --exclude='agents/' \
+            --exclude='skills/' \
             "$source_dir/.claude/" .claude/
         echo "   ✅ .claude/ synchronized (secrets preserved)"
 
@@ -398,11 +421,13 @@ llm-init() {
             --exclude='.cache/' \
             --exclude='tmp/' \
             --exclude='logs/' \
+            --exclude='agents/' \
             "$source_dir/.gemini/" .gemini/
         # Patch hardcoded macOS paths after sync (skip in dry-run)
         if ! $dry_run && [ -f ".gemini/settings.json" ] && [ -n "$uvx_path" ]; then
             sed -i.bak \
                 -e "s|/opt/homebrew/bin/uvx|$uvx_path|g" \
+                -e "s|/opt/homebrew/bin/npx|${npx_path:-/opt/homebrew/bin/npx}|g" \
                 -e "s|/opt/homebrew/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin|$mcp_path|g" \
                 .gemini/settings.json
             rm -f .gemini/settings.json.bak
@@ -446,11 +471,13 @@ llm-init() {
             --exclude='.cache/' \
             --exclude='tmp/' \
             --exclude='logs/' \
+            --exclude='agents/' \
             "$source_dir/.codex/" .codex/
         # Patch hardcoded macOS paths after sync (skip in dry-run)
         if ! $dry_run && [ -f ".codex/config.toml" ] && [ -n "$uvx_path" ]; then
             sed -i.bak \
                 -e "s|/opt/homebrew/bin/uvx|$uvx_path|g" \
+                -e "s|/opt/homebrew/bin/npx|${npx_path:-/opt/homebrew/bin/npx}|g" \
                 .codex/config.toml
             rm -f .codex/config.toml.bak
         fi
@@ -525,6 +552,7 @@ llm-init() {
         if ! $dry_run && [ -f ".mcp.json" ] && [ -n "$uvx_path" ]; then
             sed -i.bak \
                 -e "s|/opt/homebrew/bin/uvx|$uvx_path|g" \
+                -e "s|/opt/homebrew/bin/npx|${npx_path:-/opt/homebrew/bin/npx}|g" \
                 -e "s|/opt/homebrew/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin|$mcp_path|g" \
                 .mcp.json
             rm -f .mcp.json.bak
@@ -564,6 +592,12 @@ llm-init() {
             --exclude='*.pem' \
             --exclude='*.key' \
             --exclude='mcp-servers/*/.claude' \
+            --exclude='scripts/.claude/' \
+            --exclude='scripts/.gemini/' \
+            --exclude='scripts/.codex/' \
+            --exclude='scripts/.github/' \
+            --exclude='scripts/.mcp.json' \
+            --exclude='scripts/.llm_settings/' \
             "$llm_settings_src/" .llm_settings/
 
         # Make scripts executable
@@ -599,21 +633,15 @@ llm-init() {
     # 7. Git Security Configuration
     echo "7️⃣  Git Security Configuration"
 
-    # Deploy .gitignore (prompt if exists)
+    # Deploy .gitignore (augment if exists)
     if [ -f "$llm_settings_src/templates/.gitignore" ]; then
         if [ -f ".gitignore" ]; then
-            echo "   ⚠️  .gitignore already exists"
             if $dry_run; then
-                echo "   ℹ️  [dry-run] Would prompt: Replace with comprehensive template?"
+                echo "   ℹ️  [dry-run] Would merge missing patterns into existing .gitignore"
             else
-                read -p "   Replace with comprehensive template? [y/N] " -n 1 -r
-                echo
-                if [[ $REPLY =~ ^[Yy]$ ]]; then
-                    rsync -a "$llm_settings_src/templates/.gitignore" .
-                    echo "   ✅ .gitignore replaced with template"
-                else
-                    echo "   ⏭️  Skipped .gitignore (kept existing)"
-                fi
+                cat "$llm_settings_src/templates/.gitignore" >> .gitignore
+                awk '!seen[$0]++' .gitignore > .gitignore.tmp && mv .gitignore.tmp .gitignore
+                echo "   ✅ .gitignore augmented with missing template patterns"
             fi
         else
             rsync -a $rsync_dry "$llm_settings_src/templates/.gitignore" .
@@ -623,22 +651,10 @@ llm-init() {
         echo "   ⚠️  .gitignore template not found in source"
     fi
 
-    # Deploy .pre-commit-config.yaml (prompt if exists)
+    # Deploy .pre-commit-config.yaml (preserve existing if present)
     if [ -f "$llm_settings_src/templates/.pre-commit-config.yaml" ]; then
         if [ -f ".pre-commit-config.yaml" ]; then
-            echo "   ⚠️  .pre-commit-config.yaml already exists"
-            if $dry_run; then
-                echo "   ℹ️  [dry-run] Would prompt: Replace with template?"
-            else
-                read -p "   Replace with template? [y/N] " -n 1 -r
-                echo
-                if [[ $REPLY =~ ^[Yy]$ ]]; then
-                    rsync -a "$llm_settings_src/templates/.pre-commit-config.yaml" .
-                    echo "   ✅ .pre-commit-config.yaml replaced"
-                else
-                    echo "   ⏭️  Skipped .pre-commit-config.yaml (kept existing)"
-                fi
-            fi
+            echo "   ✅ .pre-commit-config.yaml preserved (existing repo config kept)"
         else
             rsync -a $rsync_dry "$llm_settings_src/templates/.pre-commit-config.yaml" .
             echo "   ✅ .pre-commit-config.yaml deployed"
@@ -647,24 +663,17 @@ llm-init() {
         echo "   ⚠️  .pre-commit-config.yaml template not found in source"
     fi
 
-    # Deploy .gitallowed (merge if exists)
+    # Deploy .gitallowed (always augment if exists)
     if [ -f "$llm_settings_src/templates/.gitallowed" ]; then
         if [ -f ".gitallowed" ]; then
-            echo "   ⚠️  .gitallowed already exists"
             if $dry_run; then
-                echo "   ℹ️  [dry-run] Would prompt: Merge with template?"
+                echo "   ℹ️  [dry-run] Would merge template patterns into existing .gitallowed"
             else
-                read -p "   Merge with template? [y/N] " -n 1 -r
-                echo
-                if [[ $REPLY =~ ^[Yy]$ ]]; then
-                    # Append template patterns if not already present
-                    cat "$llm_settings_src/templates/.gitallowed" >> .gitallowed
-                    # Remove duplicates while preserving comments
-                    awk '!seen[$0]++' .gitallowed > .gitallowed.tmp && mv .gitallowed.tmp .gitallowed
-                    echo "   ✅ .gitallowed merged with template"
-                else
-                    echo "   ⏭️  Skipped .gitallowed (kept existing)"
-                fi
+                # Append template patterns if not already present
+                cat "$llm_settings_src/templates/.gitallowed" >> .gitallowed
+                # Remove duplicates while preserving comments
+                awk '!seen[$0]++' .gitallowed > .gitallowed.tmp && mv .gitallowed.tmp .gitallowed
+                echo "   ✅ .gitallowed merged with template"
             fi
         else
             rsync -a $rsync_dry "$llm_settings_src/templates/.gitallowed" .
@@ -674,10 +683,31 @@ llm-init() {
         echo "   ⚠️  .gitallowed template not found in source"
     fi
 
-    # Deploy gitleaks.toml (gitleaks configuration)
+    # Deploy gitleaks.toml (augment if existing)
     if [ -f "$llm_settings_src/git-hooks/gitleaks.toml" ]; then
-        rsync -a $rsync_dry "$llm_settings_src/git-hooks/gitleaks.toml" .
-        echo "   ✅ gitleaks.toml deployed (custom gitleaks config)"
+        if [ -f "gitleaks.toml" ]; then
+            if $dry_run; then
+                echo "   ℹ️  [dry-run] Would augment existing gitleaks.toml (non-destructive)"
+            else
+                if grep -q "path = \".llm_settings/git-hooks/gitleaks.toml\"" gitleaks.toml 2>/dev/null || grep -q "regexes = \\['REDACTED'\\]" gitleaks.toml 2>/dev/null; then
+                    echo "   ✅ gitleaks.toml preserved (already contains llm_settings rule)"
+                elif grep -q "^\\[extend\\]" gitleaks.toml 2>/dev/null; then
+                    echo "   ⚠️  gitleaks.toml has [extend] already; skipped auto-merge to avoid breaking existing config"
+                    echo "      Add manually: path = \".llm_settings/git-hooks/gitleaks.toml\" under [extend]"
+                else
+                    {
+                        echo ""
+                        echo "# Added by llm-init: extend with llm_settings defaults"
+                        echo "[extend]"
+                        echo "path = \".llm_settings/git-hooks/gitleaks.toml\""
+                    } >> gitleaks.toml
+                    echo "   ✅ gitleaks.toml augmented via [extend] path to .llm_settings/git-hooks/gitleaks.toml"
+                fi
+            fi
+        else
+            rsync -a $rsync_dry "$llm_settings_src/git-hooks/gitleaks.toml" .
+            echo "   ✅ gitleaks.toml deployed (custom gitleaks config)"
+        fi
     else
         echo "   ⚠️  gitleaks.toml not found in source"
     fi
@@ -824,9 +854,10 @@ llm-init() {
     echo "      - copilot     (QUATERNARY agent)"
     echo ""
     echo "🔌 MCP Servers configured:"
-    echo "   - GitHub     (.llm_settings/mcp-servers/github/)"
-    echo "   - Atlassian  (.llm_settings/mcp-servers/atlassian/)"
-    echo "   - AWS API    (via uvx awslabs.aws-api-mcp-server)"
+    echo "   - GitHub          (.llm_settings/mcp-servers/github/)"
+    echo "   - Atlassian       (.llm_settings/mcp-servers/atlassian/)"
+    echo "   - AWS API         (via uvx awslabs.aws-api-mcp-server)"
+    echo "   - XMind Generator (via npx xmind-generator-mcp)"
     echo ""
     echo "   📝 Project-level: .mcp.json (works in this repo only)"
     echo "   💡 User-level: Run setup-mcp-user.sh to enable 'claude mcp list'"

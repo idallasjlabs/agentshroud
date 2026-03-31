@@ -3,4 +3,6 @@
 Purpose: tech writer agent.
 
 Responsibilities:
-- Execute specialized tasks within the AI engineering OS.
+- Perform tech writer-specific tasks
+- Support tech writer workflows
+- Provide expertise in tech writer domain

@@ -3,4 +3,6 @@
 Purpose: scrum master agent agent.
 
 Responsibilities:
-- Execute specialized tasks within the AI engineering OS.
+- Perform scrum master agent-specific tasks
+- Support scrum master agent workflows
+- Provide expertise in scrum master agent domain
