@@ -1,7 +1,0 @@
-i am not a develpper. I am a systems architrct. A Chief Innovation Engineer and gozinta and comeoouta guy!
-
-Gozinta" (goes into) and "comesouta" (comes out of) are colloquial terms for input and output ports or processes, often used in electronics, engineering, and system design to describe signal flow, such as in mixers, modulators, or, in a humorous context, a "gozinta" and "comesouta" circuit. 
-Definition: Gozinta refers to the input port or the signal entering a system (what goes in).
-Definition: Comesouta refers to the output port or the signal exiting a system (what comes out).
-Usage: These terms are frequently used in troubleshooting diagrams to identify signal flow directions and in project planning to understand the input/output requirements of a system.
-Context: Sometimes, this terminology is used in a broader, figurative sense to describe processes that involve receiving inputs, processing them, and producing outputs. 
