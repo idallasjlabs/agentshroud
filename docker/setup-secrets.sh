@@ -206,7 +206,7 @@ cmd_store() {
 
     echo ""
     echo "All secrets stored in backend: ${BACKEND}"
-    echo "Run './setup-secrets.sh extract' to write secret files for Docker."
+    echo "Run 'scripts/asb up' to start the stack (secrets extracted automatically)."
 }
 
 cmd_extract() {
@@ -218,18 +218,24 @@ cmd_extract() {
 
     mkdir -p "${SECRETS_DIR}"
 
-    all_names=("gateway_password")
+    # Build list of (name, optional) pairs. gateway_password is always required.
+    declare -a extract_defs=("gateway_password|no")
     for def in "${SECRET_DEFS[@]}"; do
-        IFS='|' read -r name _ _ _ <<< "$def"
-        all_names+=("$name")
+        IFS='|' read -r name _ _ optional <<< "$def"
+        extract_defs+=("${name}|${optional}")
     done
 
     ok=true
-    for name in "${all_names[@]}"; do
+    for entry in "${extract_defs[@]}"; do
+        IFS='|' read -r name optional <<< "$entry"
         value="$(get_secret "$name")"
         if [[ -z "$value" ]]; then
-            echo "  [missing] $name — not found in backend ${BACKEND}"
-            ok=false
+            if [[ "$optional" == "yes" ]]; then
+                echo "  [skipped] $name — not stored (optional)"
+            else
+                echo "  [missing] $name — not found in backend ${BACKEND}"
+                ok=false
+            fi
             continue
         fi
         out="${SECRETS_DIR}/${name}.txt"
@@ -240,10 +246,10 @@ cmd_extract() {
 
     echo ""
     if $ok; then
-        echo "All secrets extracted to ${SECRETS_DIR}/"
-        echo "Next: docker compose -f docker/docker-compose.yml up -d"
+        echo "All required secrets extracted to ${SECRETS_DIR}/"
+        echo "Next: scripts/asb up"
     else
-        echo "Some secrets were missing. Run './setup-secrets.sh store' first."
+        echo "Some required secrets were missing. Run './docker/setup-secrets.sh store' first."
         exit 1
     fi
 }
