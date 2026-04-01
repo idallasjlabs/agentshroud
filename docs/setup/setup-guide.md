@@ -4,7 +4,7 @@ Welcome to AgentShroud! This guide will take you from zero to a fully secured AI
 
 ## What is AgentShroud?
 
-AgentShroud adds 26 security modules on top of OpenClaw, including:
+AgentShroud adds 76 security modules on top of OpenClaw, including:
 - **Egress filtering** — Control what domains your AI can access
 - **Message scanning** — Block malicious prompts and data exfiltration
 - **Audit logging** — Tamper-evident trail of all AI actions
@@ -59,7 +59,7 @@ git clone https://github.com/idallasjlabs/agentshroud.git
 cd agentshroud
 
 # Start AgentShroud with secure defaults
-docker compose -f docker-compose.secure.yml up -d
+docker compose -f docker/docker-compose.yml up -d
 
 # Wait for startup (30-60 seconds)
 docker compose logs -f agentshroud-gateway
@@ -69,7 +69,7 @@ curl http://localhost:8080/health
 ```
 
 That's it! AgentShroud is now running with:
-- ✅ All 26 security modules enabled
+- ✅ All 76 security modules enabled
 - ✅ OpenClaw AI assistant ready
 - ✅ Web dashboard at https://localhost:8443
 - ✅ Audit logging to local files
@@ -90,7 +90,7 @@ ls -la
 You should see:
 ```
 docker-compose.yml              # Standard OpenClaw
-docker-compose.secure.yml       # AgentShroud (recommended)
+docker/docker-compose.yml       # AgentShroud (recommended)
 docker-compose.sidecar.yml      # Sidecar mode
 agentshroud.yaml                 # Security configuration
 egress-config.yml              # Egress filtering rules
@@ -109,10 +109,10 @@ docker info
 docker compose version
 
 # Start AgentShroud
-docker compose -f docker-compose.secure.yml up -d
+docker compose -f docker/docker-compose.yml up -d
 
 # Check status
-docker compose -f docker-compose.secure.yml ps
+docker compose -f docker/docker-compose.yml ps
 ```
 
 #### Option B: Podman (Red Hat/Enterprise)
@@ -126,10 +126,10 @@ podman-compose --version
 systemctl --user enable --now podman.socket
 
 # Start AgentShroud
-podman-compose -f docker-compose.secure.yml up -d
+podman-compose -f docker/docker-compose.yml up -d
 
 # Check status
-podman-compose -f docker-compose.secure.yml ps
+podman-compose -f docker/docker-compose.yml ps
 ```
 
 #### Option C: Apple Containers (macOS 26+)
@@ -140,10 +140,10 @@ containers version
 containers info
 
 # Start AgentShroud
-containers compose -f docker-compose.secure.yml up -d
+containers compose -f docker/docker-compose.yml up -d
 
 # Check status  
-containers compose -f docker-compose.secure.yml ps
+containers compose -f docker/docker-compose.yml ps
 ```
 
 ### Step 3: Configure Secrets Management
@@ -193,7 +193,7 @@ echo "your_openai_key" | docker secret create openai_api_key -
 echo "your_anthropic_oauth_token" | docker secret create anthropic_oauth_token -
 
 # Deploy with secrets
-docker stack deploy -c docker-compose.secure.yml agentshroud
+docker stack deploy -c docker/docker-compose.yml agentshroud
 ```
 
 #### Option C: Environment Variables (Development Only)
@@ -212,7 +212,7 @@ EOF
 source .env
 
 # Start with environment
-docker compose -f docker-compose.secure.yml up -d
+docker compose -f docker/docker-compose.yml up -d
 ```
 
 ### Step 4: Choose Security Mode
@@ -277,7 +277,7 @@ lsof -i :8443
 lsof -i :3000
 
 # Start with defaults
-docker compose -f docker-compose.secure.yml up -d
+docker compose -f docker/docker-compose.yml up -d
 ```
 
 #### Multi-Instance Setup
@@ -285,10 +285,10 @@ Running multiple AgentShroud instances (useful on Mac Studio or shared hosts):
 
 ```bash
 # First instance (default ports)
-docker compose -f docker-compose.secure.yml up -d
+docker compose -f docker/docker-compose.yml up -d
 
 # Second instance (offset by 100)
-AGENTSHROUD_PORT_OFFSET=100 docker compose -f docker-compose.secure.yml -p agentshroud2 up -d
+AGENTSHROUD_PORT_OFFSET=100 docker compose -f docker/docker-compose.yml -p agentshroud2 up -d
 ```
 
 This creates:
@@ -299,7 +299,7 @@ This creates:
 AgentShroud includes a PortManager that automatically finds available ports:
 
 ```yaml
-# In docker-compose.secure.yml
+# In docker/docker-compose.yml
 environment:
   - AGENTSHROUD_AUTO_PORTS=true
   - AGENTSHROUD_PORT_BASE=8000
@@ -311,27 +311,27 @@ Choose your deployment method:
 
 #### Development (local testing)
 ```bash
-docker compose -f docker-compose.secure.yml up
+docker compose -f docker/docker-compose.yml up
 # Ctrl+C to stop
 ```
 
 #### Production (background daemon)
 ```bash
-docker compose -f docker-compose.secure.yml up -d
+docker compose -f docker/docker-compose.yml up -d
 
 # View logs
 docker compose logs -f agentshroud-gateway
 
 # Stop when needed
-docker compose -f docker-compose.secure.yml down
+docker compose -f docker/docker-compose.yml down
 ```
 
 #### Production with Restart Policy
 ```bash
-# Modify docker-compose.secure.yml to add:
+# Modify docker/docker-compose.yml to add:
 # restart: unless-stopped
 
-docker compose -f docker-compose.secure.yml up -d
+docker compose -f docker/docker-compose.yml up -d
 ```
 
 ### Step 7: Verify Installation
@@ -420,7 +420,7 @@ Service accounts can only access vaults they're explicitly granted access to:
    chmod 600 secrets/1password_service_account
    ```
 
-2. **Update docker-compose.secure.yml**:
+2. **Update docker/docker-compose.yml**:
    ```yaml
    secrets:
      1password_service_account:
@@ -616,7 +616,7 @@ audit:
   retention_days: 365
   tamper_detection: true
 modules:
-  # Enable all 26 security modules
+  # Enable all 76 security modules
   "*": true
 ```
 
@@ -635,11 +635,11 @@ A typical Mac Studio setup running both Docker and Apple Containers:
 ```bash
 # Instance 1: Docker (Production)
 cd /Users/admin/agentshroud-prod
-docker compose -f docker-compose.secure.yml up -d
+docker compose -f docker/docker-compose.yml up -d
 
 # Instance 2: Apple Containers (Development)
 cd /Users/admin/agentshroud-dev
-AGENTSHROUD_PORT_OFFSET=100 containers compose -f docker-compose.secure.yml up -d
+AGENTSHROUD_PORT_OFFSET=100 containers compose -f docker/docker-compose.yml up -d
 
 # Instance 3: Testing (different config)
 cd /Users/admin/agentshroud-test
@@ -715,14 +715,14 @@ If you prefer manual control:
 
 ```bash
 # 1. Backup current state
-docker compose -f docker-compose.secure.yml exec agentshroud-gateway \
+docker compose -f docker/docker-compose.yml exec agentshroud-gateway \
   /scripts/backup-data.sh /backups/$(date +%Y%m%d-%H%M%S)
 
 # 2. Pull latest images
-docker compose -f docker-compose.secure.yml pull
+docker compose -f docker/docker-compose.yml pull
 
 # 3. Recreate containers
-docker compose -f docker-compose.secure.yml up -d --force-recreate
+docker compose -f docker/docker-compose.yml up -d --force-recreate
 
 # 4. Verify health
 curl http://localhost:8080/health
@@ -735,9 +735,9 @@ curl http://localhost:8080/health
 ./scripts/restore-backup.sh /backups/20240219-143022
 
 # Or manually:
-docker compose -f docker-compose.secure.yml down
+docker compose -f docker/docker-compose.yml down
 docker image tag agentshroud:backup agentshroud:latest
-docker compose -f docker-compose.secure.yml up -d
+docker compose -f docker/docker-compose.yml up -d
 ```
 
 ## Troubleshooting
@@ -753,7 +753,7 @@ lsof -i :8080
 sudo ss -tulpn | grep :8080
 
 # Use port offset
-AGENTSHROUD_PORT_OFFSET=100 docker compose -f docker-compose.secure.yml up -d
+AGENTSHROUD_PORT_OFFSET=100 docker compose -f docker/docker-compose.yml up -d
 
 # Or kill the conflicting process
 sudo kill $(lsof -t -i:8080)
@@ -834,7 +834,7 @@ python -m pytest gateway/tests/ -k "not slow" --maxfail=3
 # Check environment variable
 echo $NODE_TLS_REJECT_UNAUTHORIZED  # Should be "0" for Gmail
 
-# Add to docker-compose.secure.yml:
+# Add to docker/docker-compose.yml:
 environment:
   - NODE_TLS_REJECT_UNAUTHORIZED=0
   - GMAIL_USER=youruser@gmail.com
@@ -964,7 +964,7 @@ curl -X POST http://localhost:8080/api/chat \
 
 Before going to production, verify:
 
-- [ ] All 26 security modules show "active" status
+- [ ] All 76 security modules show "active" status
 - [ ] HTTPS dashboard accessible with valid certificate
 - [ ] Audit logging enabled with tamper detection  
 - [ ] 1Password integration working (no plaintext secrets)
