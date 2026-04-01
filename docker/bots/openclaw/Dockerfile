@@ -12,7 +12,7 @@ ENV DEBIAN_FRONTEND=noninteractive
 # /apt-dl is on the writable layer (real disk), not tmpfs — avoids "no space in /tmp" on constrained hosts.
 # Trusted:yes workaround: apt 2.6 on ARM64/bookworm fails gpgv clearsign verification due to an apt bug,
 # even though manual gpgv --keyring confirms GOODSIG. Individual package hashes are still verified.
-# FIXME: remove Trusted:yes sed patch (and the same flag in Wazuh/1Password list entries below) once
+# NOTE (upstream bug): remove Trusted:yes sed patch (and the same flag in Wazuh/1Password list entries below) once
 # Debian bookworm ships a fixed apt that resolves the ARM64 gpgv clearsign bug.
 RUN mkdir -p /apt-dl/partial \
     && sed -i 's/^Signed-By:.*/Trusted: yes/' /etc/apt/sources.list.d/debian.sources \

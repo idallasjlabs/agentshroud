@@ -171,6 +171,7 @@ logs/
 # Lock files
 *.lock
 !poetry.lock
+!gateway/requirements.lock
 !Pipfile.lock
 !package-lock.json
 # Core dumps
