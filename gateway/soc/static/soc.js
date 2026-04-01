@@ -1708,6 +1708,176 @@ document.addEventListener('DOMContentLoaded', async () => {
 
   // Register tab loaders
   _registerTab('overview',     _loadOverview);
+// ---------------------------------------------------------------------------
+// CVE Intelligence tab
+// ---------------------------------------------------------------------------
+
+const _SEV_ICON = { CRITICAL: '🔴', HIGH: '🟠', MEDIUM: '🟡', LOW: '🟢', UNKNOWN: '⚪' };
+const _STATUS_BADGE = {
+  fully_mitigated:    '<span style="background:#1a7f37;color:#fff;padding:2px 7px;border-radius:3px;font-size:10px;font-weight:600">✓ MITIGATED</span>',
+  partially_mitigated:'<span style="background:#9a6700;color:#fff;padding:2px 7px;border-radius:3px;font-size:10px;font-weight:600">⚠ PARTIAL</span>',
+  not_mitigated:      '<span style="background:#cf222e;color:#fff;padding:2px 7px;border-radius:3px;font-size:10px;font-weight:600">✗ OPEN</span>',
+};
+
+window._agentCveData = null;
+window._trivyCveData = null;
+
+async function _loadAgentCves() {
+  const [agentRes, trivyRes] = await Promise.all([
+    _get('/agent-cves'),
+    _get('/trivy'),
+  ]);
+
+  // Agent CVEs
+  if (agentRes.ok) {
+    const d = agentRes.data;
+    window._agentCveData = d;
+    document.getElementById('cve-kpi-agent').textContent    = d.wrapped_agent || '--';
+    document.getElementById('cve-kpi-total').textContent    = d.total_cves ?? '--';
+    document.getElementById('cve-kpi-full').textContent     = d.by_status?.fully_mitigated ?? '--';
+    const partial = (d.by_status?.partially_mitigated ?? 0) + (d.by_status?.not_mitigated ?? 0);
+    document.getElementById('cve-kpi-partial').textContent  = partial;
+    const agentHeader = document.getElementById('cve-agent-header');
+    if (agentHeader) agentHeader.textContent = `${d.wrapped_agent} CVEs (${d.total_cves} tracked)`;
+    _renderAgentCveTable(d);
+  } else {
+    document.getElementById('agent-cve-table').innerHTML =
+      '<div style="padding:1rem;color:var(--danger);font-size:12px">Failed to load CVE registry.</div>';
+  }
+
+  // Container / Trivy CVEs
+  if (trivyRes.ok) {
+    const d = trivyRes.data;
+    window._trivyCveData = d;
+    document.getElementById('cve-kpi-container').textContent = d.findings ?? d.total_vulnerabilities ?? '--';
+    _renderTrivyCveTable(d);
+  } else {
+    document.getElementById('trivy-cve-table').innerHTML =
+      '<div style="padding:1rem;color:var(--text-muted);font-size:12px">No Trivy scan results. Run a scan above.</div>';
+  }
+}
+
+function _renderAgentCveTable(data) {
+  if (!data) return;
+  const statusFilter = document.getElementById('cve-status-filter')?.value || '';
+  const sevFilter    = document.getElementById('cve-sev-filter')?.value    || '';
+
+  const rows = (data.cves || []).filter(c =>
+    (!statusFilter || c.status === statusFilter) &&
+    (!sevFilter    || c.severity === sevFilter)
+  );
+
+  if (!rows.length) {
+    document.getElementById('agent-cve-table').innerHTML =
+      '<div style="padding:1rem;color:var(--text-muted);font-size:12px">No CVEs match filters.</div>';
+    return;
+  }
+
+  const thead = `<thead><tr>
+    <th style="width:130px">CVE ID</th>
+    <th style="width:60px">CVSS</th>
+    <th style="width:80px">Severity</th>
+    <th style="width:110px">Status</th>
+    <th>Vulnerability</th>
+    <th>AgentShroud Defense</th>
+    <th style="width:90px">Fixed In</th>
+  </tr></thead>`;
+
+  const tbody = rows.map(c => {
+    const icon = _SEV_ICON[c.severity] || '⚪';
+    const badge = _STATUS_BADGE[c.status] || c.status;
+    const layers = (c.defense_layers || []).map(l =>
+      `<code style="background:var(--input-bg,#161b22);padding:1px 4px;border-radius:3px;font-size:10px;margin-right:3px">${l}</code>`
+    ).join('');
+    return `<tr>
+      <td><code style="font-size:11px">${c.id}</code></td>
+      <td style="text-align:center;font-weight:600">${c.cvss}</td>
+      <td>${icon} ${c.severity}</td>
+      <td>${badge}</td>
+      <td>
+        <div style="font-weight:600;font-size:11px;margin-bottom:2px">${c.title}</div>
+        <div style="color:var(--text-muted);font-size:10px;line-height:1.4">${c.description}</div>
+      </td>
+      <td>
+        <div style="color:var(--text-muted);font-size:10px;line-height:1.5;margin-bottom:4px">${c.mitigation}</div>
+        <div>${layers}</div>
+      </td>
+      <td style="font-size:10px;color:var(--text-muted)">${c.fixed_in || '—'}</td>
+    </tr>`;
+  }).join('');
+
+  document.getElementById('agent-cve-table').innerHTML =
+    `<table class="data-table" style="font-size:11px">${thead}<tbody>${tbody}</tbody></table>`;
+}
+
+function _renderTrivyCveTable(data) {
+  if (!data) return;
+  const sevFilter = document.getElementById('trivy-sev-filter')?.value || '';
+  const cves = (data.top_cves || []).filter(c => !sevFilter || c.severity === sevFilter);
+
+  if (data.error) {
+    document.getElementById('trivy-cve-table').innerHTML =
+      `<div style="padding:1rem;color:var(--warning);font-size:12px">Trivy scan error: ${data.error}. Click "Run Scan" to retry.</div>`;
+    return;
+  }
+
+  if (!cves.length) {
+    const ts = data.timestamp ? ` (scan: ${data.timestamp?.slice(0,10)})` : '';
+    document.getElementById('trivy-cve-table').innerHTML =
+      `<div style="padding:1rem;color:var(--green);font-size:12px">✅ No vulnerabilities found${ts}.</div>`;
+    return;
+  }
+
+  const bySev = data.by_severity || {};
+  const summary = Object.entries(bySev).filter(([,v]) => v > 0)
+    .map(([k,v]) => `${_SEV_ICON[k]||'⚪'} ${k}: <strong>${v}</strong>`).join('  ·  ');
+
+  const thead = `<thead><tr>
+    <th style="width:130px">CVE ID</th>
+    <th style="width:80px">Severity</th>
+    <th>Package</th>
+    <th>Installed</th>
+    <th>Fixed In</th>
+    <th>Title</th>
+    <th>Target</th>
+  </tr></thead>`;
+
+  const tbody = cves.map(c => {
+    const icon = _SEV_ICON[c.severity] || '⚪';
+    const fix = c.fixed_version
+      ? `<span style="color:var(--green)">${c.fixed_version}</span>`
+      : '<span style="color:var(--text-muted)">no fix</span>';
+    return `<tr>
+      <td><code style="font-size:11px">${c.id}</code></td>
+      <td>${icon} ${c.severity}</td>
+      <td><code style="font-size:11px">${c.package}</code></td>
+      <td><code style="font-size:10px;color:var(--text-muted)">${c.installed_version}</code></td>
+      <td><code style="font-size:10px">${fix}</code></td>
+      <td style="font-size:10px;color:var(--text-muted)">${c.title}</td>
+      <td style="font-size:10px;color:var(--text-muted)">${c.target}</td>
+    </tr>`;
+  }).join('');
+
+  const ts = data.timestamp ? `<div style="font-size:10px;color:var(--text-muted);padding:0.5rem 1rem">Last scan: ${data.timestamp?.slice(0,19).replace('T',' ')} UTC · ${summary}</div>` : '';
+  document.getElementById('trivy-cve-table').innerHTML =
+    ts + `<table class="data-table" style="font-size:11px">${thead}<tbody>${tbody}</tbody></table>`;
+}
+
+window._triggerCveReport = async function() {
+  const btn = document.querySelector('[onclick*="_triggerCveReport"]');
+  if (btn) { btn.disabled = true; btn.textContent = '⏳ Scanning...'; }
+  const res = await fetch(`${SOC_BASE}/cve-report`, {
+    method: 'POST',
+    headers: { Authorization: `Bearer ${_token}`, 'Content-Type': 'application/json' },
+  });
+  if (btn) { btn.disabled = false; btn.textContent = '▶ Run Scan & Send Report'; }
+  const data = await res.json().catch(() => ({}));
+  if (data.status === 'queued') {
+    setTimeout(() => _loadAgentCves(), 8000);  // reload after scan completes
+  }
+};
+
+
   _registerTab('security',     _loadSecurity);
   _registerTab('scanners',     _loadScanners);
   _registerTab('scorecard',    _loadScorecard);
@@ -1716,11 +1886,20 @@ document.addEventListener('DOMContentLoaded', async () => {
   _registerTab('egress',       _loadEgress);
   _registerTab('logs',         _loadLogs);  // CC-30: fetch REST logs on tab open
   _registerTab('config',       _loadConfig);
+  _registerTab('agent-cves',   _loadAgentCves);
 
   // Wire nav items
   document.querySelectorAll('.nav-item[data-tab]').forEach(el => {
     el.addEventListener('click', e => { e.preventDefault(); _showTab(el.dataset.tab); });
   });
+
+  // CVE Intelligence filter change handlers
+  const cveStatusFilter = document.getElementById('cve-status-filter');
+  if (cveStatusFilter) cveStatusFilter.addEventListener('change', () => _renderAgentCveTable(window._agentCveData));
+  const cveSevFilter = document.getElementById('cve-sev-filter');
+  if (cveSevFilter) cveSevFilter.addEventListener('change', () => _renderAgentCveTable(window._agentCveData));
+  const trivySevFilter = document.getElementById('trivy-sev-filter');
+  if (trivySevFilter) trivySevFilter.addEventListener('change', () => _renderTrivyCveTable(window._trivyCveData));
 
   // Severity filter change handler
   const sevFilter = document.getElementById('sev-filter');
