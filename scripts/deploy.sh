@@ -50,26 +50,25 @@ fi
 # any other user (e.g. Isaiah) → production @agentshroud_bot
 SCRIPT_DIR="$(cd "$(dirname "$0")" && pwd)"
 PROJECT_DIR="$(dirname "$SCRIPT_DIR")"
-SECRETS_DIR="$PROJECT_DIR/docker/secrets"
 CURRENT_USER="$(whoami)"
 
 TELEGRAM_TOKEN=""
-TELEGRAM_TOKEN_FILE=""
 TELEGRAM_BOT_NAME=""
 
+# Determine which telegram_bot_token variant this host/user needs.
+TG_SECRET_NAME="telegram_bot_token_production"
 if [ "$CURRENT_USER" = "agentshroud-bot" ]; then
-    # Dev/test bot — select by hostname
     case "$HOSTNAME_SHORT" in
         marvin*)
-            TELEGRAM_TOKEN_FILE="$SECRETS_DIR/telegram_bot_token_marvin.txt"
+            TG_SECRET_NAME="telegram_bot_token_marvin"
             TELEGRAM_BOT_NAME="agentshroud_marvin_bot"
             ;;
         trillian*)
-            TELEGRAM_TOKEN_FILE="$SECRETS_DIR/telegram_bot_token_trillian.txt"
+            TG_SECRET_NAME="telegram_bot_token_trillian"
             TELEGRAM_BOT_NAME="agentshroud_trillian_bot"
             ;;
         raspberrypi*|rpi*)
-            TELEGRAM_TOKEN_FILE="$SECRETS_DIR/telegram_bot_token_rpi.txt"
+            TG_SECRET_NAME="telegram_bot_token_rpi"
             TELEGRAM_BOT_NAME="agentshroud_raspberrypi_bot"
             ;;
         *)
@@ -79,17 +78,23 @@ if [ "$CURRENT_USER" = "agentshroud-bot" ]; then
             ;;
     esac
 else
-    # Production bot — used by Isaiah or any non-bot user
-    TELEGRAM_TOKEN_FILE="$SECRETS_DIR/telegram_bot_token_production.txt"
     TELEGRAM_BOT_NAME="agentshroud_bot"
 fi
 
-if [ -n "$TELEGRAM_TOKEN_FILE" ] && [ -f "$TELEGRAM_TOKEN_FILE" ]; then
-    TELEGRAM_TOKEN=$(cat "$TELEGRAM_TOKEN_FILE")
+# Extract the needed token from the credential backend into a tmpdir.
+# The tmpdir is deleted on EXIT regardless of success or failure.
+_DEPLOY_TMPDIR="$(mktemp -d "${TMPDIR:-/tmp}/asb-deploy-secrets.XXXXXX")"
+trap 'rm -rf "$_DEPLOY_TMPDIR"' EXIT
+
+AGENTSHROUD_SECRETS_DIR="$_DEPLOY_TMPDIR" "$PROJECT_DIR/docker/setup-secrets.sh" extract 2>/dev/null || true
+
+TG_TOKEN_FILE="$_DEPLOY_TMPDIR/${TG_SECRET_NAME}.txt"
+if [ -f "$TG_TOKEN_FILE" ] && [ -s "$TG_TOKEN_FILE" ]; then
+    TELEGRAM_TOKEN=$(cat "$TG_TOKEN_FILE")
     echo "🤖 Telegram bot: @${TELEGRAM_BOT_NAME} (user: $CURRENT_USER)"
-elif [ -n "$TELEGRAM_TOKEN_FILE" ]; then
-    echo "⚠️  Token file not found: $TELEGRAM_TOKEN_FILE"
-    echo "   Create it with: echo 'YOUR_BOT_TOKEN' > $TELEGRAM_TOKEN_FILE"
+else
+    echo "⚠️  Token '${TG_SECRET_NAME}' not found in credential backend."
+    echo "   Run: ./docker/setup-secrets.sh store"
 fi
 
 # --- Detect container runtime ---
