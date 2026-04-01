@@ -522,20 +522,49 @@
 <section id="quickstart">
   <div class="container">
     <div class="section-label">Get started</div>
-    <h2>Up in three commands</h2>
+    <h2>Up in four commands</h2>
     <p class="section-sub">Self-hosted Docker stack. No external cloud dependencies.</p>
 
     <div class="code-block">
-      <div class="header">bash</div>
+      <div class="header">bash — macOS (Colima) · Linux (Docker CE)</div>
       <pre><span class="kw">git</span> clone https://github.com/idallasjlabs/agentshroud.git
 <span class="kw">cd</span> agentshroud
-./docker/setup-secrets.sh store   <span class="cm"># store credentials (1Password / Keychain / secret-tool)</span>
-scripts/asb up                    <span class="cm"># bring up the stack</span></pre>
+
+<span class="cm"># Store credentials in your OS backend (prompts interactively)</span>
+<span class="cm"># Auto-detects: 1Password CLI → macOS Keychain → Linux secret-tool → ~/.agentshroud/secrets/</span>
+./docker/setup-secrets.sh store
+
+<span class="cm"># Bring up the stack — secrets are extracted ephemerally and cleaned up on exit</span>
+scripts/asb up</pre>
     </div>
 
-    <p style="margin-top: 24px; font-size: 0.9rem; color: var(--muted);">
+    <div style="margin-top: 16px; background: var(--code-bg); border: 1px solid var(--border); border-radius: 8px; padding: 16px 20px;">
+      <p style="font-size: 0.8rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.8px; color: var(--muted); margin-bottom: 10px;">Prerequisites</p>
+      <ul style="font-size: 0.875rem; color: var(--muted); list-style: none; display: grid; grid-template-columns: 1fr 1fr; gap: 6px;">
+        <li>✓ Git</li>
+        <li>✓ Docker Engine (Colima on macOS)</li>
+        <li>✓ Claude OAuth token <code style="font-size:0.8em;color:var(--accent)">sk-ant-oat01-...</code></li>
+        <li>✓ Telegram bot token</li>
+        <li>✓ 1Password account credentials</li>
+        <li>✓ Python 3 (for key generation)</li>
+      </ul>
+    </div>
+
+    <div style="margin-top: 16px; background: var(--code-bg); border: 1px solid var(--border); border-radius: 8px; padding: 16px 20px;">
+      <p style="font-size: 0.8rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.8px; color: var(--muted); margin-bottom: 10px;">asb commands</p>
+      <table style="font-size: 0.85rem; width: 100%; border-collapse: collapse;">
+        <tr><td style="padding: 4px 12px 4px 0; color: var(--accent); font-family: monospace; white-space: nowrap;">asb up</td><td style="color: var(--muted);">Start the stack</td></tr>
+        <tr><td style="padding: 4px 12px 4px 0; color: var(--accent); font-family: monospace; white-space: nowrap;">asb down</td><td style="color: var(--muted);">Stop the stack</td></tr>
+        <tr><td style="padding: 4px 12px 4px 0; color: var(--accent); font-family: monospace; white-space: nowrap;">asb rebuild</td><td style="color: var(--muted);">Rebuild images and restart</td></tr>
+        <tr><td style="padding: 4px 12px 4px 0; color: var(--accent); font-family: monospace; white-space: nowrap;">asb status</td><td style="color: var(--muted);">Show container health</td></tr>
+        <tr><td style="padding: 4px 12px 4px 0; color: var(--accent); font-family: monospace; white-space: nowrap;">asb logs [service]</td><td style="color: var(--muted);">Tail logs</td></tr>
+        <tr><td style="padding: 4px 12px 4px 0; color: var(--accent); font-family: monospace; white-space: nowrap;">asb test</td><td style="color: var(--muted);">Run test suite inside gateway</td></tr>
+      </table>
+    </div>
+
+    <p style="margin-top: 20px; font-size: 0.9rem; color: var(--muted);">
       Full setup guide in the <a href="https://github.com/idallasjlabs/agentshroud#readme">README</a>.
-      Works on macOS (Colima/Docker Desktop) and Linux.
+      Works on macOS (Colima) and Linux (Docker CE).
     </p>
   </div>
 </section>
