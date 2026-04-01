@@ -116,16 +116,33 @@ YAML
   COMPOSE="$COMPOSE -f $override"
 }
 
+# ── Docker disk reclamation ──────────────────────────────────────────────────
+# Removes stopped containers, dangling images, unused networks, and BuildKit
+# cache to reclaim disk on the Colima VM before builds. Safe to run without
+# stopping running containers — running containers and named volumes are NOT removed.
+_prune_docker() {
+  echo "Pruning stopped containers, dangling images, and BuildKit cache..."
+  docker container prune -f 2>/dev/null || true
+  docker image prune -f 2>/dev/null || true
+  docker network prune -f 2>/dev/null || true
+  docker builder prune -f 2>/dev/null || docker buildx prune -f 2>/dev/null || true
+  echo "Docker prune complete."
+}
+
 _asb_banner
 
 case "${1:-}" in
-  build)   $COMPOSE build --no-cache ;;
+  build)
+    _prune_docker
+    $COMPOSE build --no-cache
+    ;;
   up)
     setup_ephemeral_secrets
     $COMPOSE up -d
     ;;
   down)    $COMPOSE down ;;
   rebuild)
+    _prune_docker
     setup_ephemeral_secrets
     $COMPOSE build --no-cache && $COMPOSE up -d
     ;;
@@ -138,9 +155,7 @@ case "${1:-}" in
     for vol in gateway-data clamav-db; do
       docker volume rm "${PROJECT}_${vol}" 2>/dev/null && echo "  Removed ${PROJECT}_${vol}" || true
     done
-    # Prune BuildKit cache to clear stale overlay snapshots from previous failed builds.
-    echo "Pruning BuildKit cache..."
-    docker builder prune -f 2>/dev/null || docker buildx prune -f 2>/dev/null || true
+    _prune_docker
     setup_ephemeral_secrets
     $COMPOSE build --no-cache
     $COMPOSE up -d
