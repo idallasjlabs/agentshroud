@@ -141,7 +141,7 @@ All machines connected via **Tailscale** mesh VPN (`tail240ea8.ts.net`). SSH res
 |------|---------|-------------|
 | **Telegram** | Primary command channel — Isaiah ↔ Bot | Isaiah, Bot, Advisors |
 | **OpenClaw Console** | Agent runtime, session management, sub-agent orchestration | Bot (Scrum Master) |
-| **GitHub** | Source control, PRs, branch management | All (repo: `idallasj/agentshroud`) |
+| **GitHub** | Source control, PRs, branch management | All (repo: `idallasjlabs/agentshroud`) |
 | **1Password** | Secrets management (Service Account → op-proxy) | Bot (via gateway), Isaiah |
 | **Blink Shell** | iPad terminal access (TUI dashboard, SSH) | Isaiah |
 | **Git Worktrees** | Parallel branch development without conflicts | Bot (all dev work) |

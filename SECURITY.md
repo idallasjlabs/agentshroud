@@ -90,7 +90,7 @@ AgentShroud includes automated security scanning in CI/CD:
 
 If you discover a security vulnerability in AgentShroud:
 
-1. **GitHub Security Advisories** (preferred): https://github.com/idallasj/agentshroud/security/advisories
+1. **GitHub Security Advisories** (preferred): https://github.com/idallasjlabs/agentshroud/security/advisories
 2. **Email**: security@agentshroud.ai
 3. **Do NOT** create public GitHub issues for security vulnerabilities
 

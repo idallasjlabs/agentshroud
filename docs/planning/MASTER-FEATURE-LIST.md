@@ -365,7 +365,7 @@
 - Marvin: 192.168.7.137 (Mac, Colima, primary dev)
 - Trillian: 192.168.7.97 (Mac, x86_64)
 - Raspberry Pi: 192.168.7.25 (Debian 11, arm64, Podman 3.0.1 too old)
-- Repo: github.com/idallasj/agentshroud
+- Repo: github.com/idallasjlabs/agentshroud
 - Current branch: main (HEAD: b6e3622)
 - 1987 tests passing (as of Feb 27)
 - Domains secured: agentshroud.ai, .com, .net

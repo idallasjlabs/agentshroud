@@ -37,7 +37,7 @@ You **MAY NOT** use the name "AgentShroud" to:
 ## Contact
 
 For trademark licensing inquiries, contact the author via
-[GitHub Issues](https://github.com/idallasj/agentshroud/issues).
+[GitHub Issues](https://github.com/idallasjlabs/agentshroud/issues).
 
 ---
 
