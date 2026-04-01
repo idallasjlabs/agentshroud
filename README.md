@@ -411,6 +411,10 @@ If you are a system architect who wants to use LLMs to build real software, brin
 
 The bot layer is built on [OpenClaw](https://github.com/openclaw/openclaw) — the open-source AI agent framework. AgentShroud wraps it with an enterprise security and governance layer without modifying the underlying platform.
 
+Special thanks to the collaborators who stress-tested AgentShroud in production,
+broke things in creative ways, and helped harden it into what it is today:
+**Ana, Brett, Chris, Gabe, German, Michael, Praveen, Steve, and TJ.**
+
 ---
 
 <div align="center">
