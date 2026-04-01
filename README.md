@@ -245,7 +245,7 @@ This prompts for each credential interactively. The backend is auto-detected:
 | Backend | Platform | Requires |
 |---------|----------|---------|
 | 1Password CLI | Any | `op` CLI installed and signed in |
-| macOS Keychain | macOS | Interactive TTY |
+| macOS Keychain | macOS | Interactive TTY (auto-unlocks; prompts for login password over SSH) |
 | secret-tool | Linux | `libsecret` / `secret-tool` in PATH |
 | `~/.agentshroud/secrets/` | Any | SSH sessions, service accounts |
 

@@ -34,7 +34,16 @@ detect_backend() {
     if command -v op &>/dev/null && op account list &>/dev/null 2>&1; then
         echo "1password"
     elif [[ "$(uname)" == "Darwin" ]] && [[ -t 0 ]]; then
-        # Only use Keychain when we have an interactive TTY
+        # Keychain must be unlocked — SSH sessions start with it locked.
+        # Attempt unlock interactively; if it fails, fall through to homedir.
+        if ! security show-keychain-info ~/Library/Keychains/login.keychain-db &>/dev/null; then
+            echo "  Keychain is locked. Unlocking..." >&2
+            if ! security unlock-keychain ~/Library/Keychains/login.keychain-db; then
+                echo "  Keychain unlock failed — falling back to ~/.agentshroud/secrets/" >&2
+                echo "homedir"
+                return
+            fi
+        fi
         echo "keychain"
     elif command -v secret-tool &>/dev/null && [[ -t 0 ]]; then
         echo "secretstore"
@@ -106,10 +115,11 @@ get_secret() {
 read_secret_masked() {
     local prompt="$1" optional="${2:-}"
     local value="" char
+    echo ""
     if [[ "$optional" == "optional" ]]; then
-        printf "%s (press Enter to skip): " "$prompt"
+        printf "  → %s (press Enter to skip): " "$prompt"
     else
-        printf "%s: " "$prompt"
+        printf "  → %s: " "$prompt"
     fi
     while IFS= read -r -s -n1 char; do
         if [[ "$char" == $'\0' || "$char" == $'\n' ]]; then
@@ -139,10 +149,11 @@ read_secret_masked() {
 read_secret_plain() {
     local prompt="$1" optional="${2:-}"
     local value
+    echo ""
     if [[ "$optional" == "optional" ]]; then
-        read -rp "$prompt (press Enter to skip): " value || true
+        read -rp "  → $prompt (press Enter to skip): " value || true
     else
-        read -rp "$prompt: " value
+        read -rp "  → $prompt: " value
         if [[ -z "$value" ]]; then
             echo "Error: value required." >&2
             exit 1
