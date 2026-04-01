@@ -38,6 +38,14 @@ logger = logging.getLogger("agentshroud.proxy.telegram_api")
 TELEGRAM_API_BASE = "https://api.telegram.org"
 _SUPPRESS_OUTBOUND_TOKEN = "__AGENTSHROUD_SUPPRESS_OUTBOUND__"
 
+# Maximum file size accepted from inbound media (50 MB — matches Telegram Bot API limit).
+# Telegram includes a `file_size` field on document/video/audio/voice/photo objects.
+# Payloads exceeding this are dropped before reaching the bot (CVE-2026-32049 mitigation).
+_MAX_MEDIA_FILE_SIZE = int(os.environ.get("AGENTSHROUD_MAX_MEDIA_BYTES", 50 * 1024 * 1024))
+
+# Media object keys that carry a file_size field in Telegram updates.
+_MEDIA_KEYS = ("document", "video", "audio", "voice", "video_note", "animation", "sticker")
+
 # Slash-commands that are forbidden for collaborators (owner-only capabilities)
 _COLLABORATOR_BLOCKED_COMMANDS = {
     "/skill", "/1password", "/op", "/exec", "/run", "/cron",
@@ -3581,21 +3589,42 @@ class TelegramAPIProxy:
                     )
 
             if not text:
-                # In local_only mode, collaborators cannot send raw media (no caption).
-                # Forwarding it to the bot would bypass all inbound collaborator guards.
-                _is_known_collab = (
-                    self._rbac
-                    and not self._rbac.is_owner(user_id)
-                    and user_id in {str(uid) for uid in (self._rbac.collaborator_user_ids or [])}
-                )
-                if _is_known_collab and self._resolve_collaborator_mode(user_id) == "local_only":
-                    if chat_id:
-                        await self._send_owner_admin_notice(
-                            int(str(chat_id)),
-                            f"{_PROTECT_HEADER}Media without a caption cannot be processed in collaborator mode. Add a text caption to your image or file.",
-                        )
-                    continue
-                filtered_updates.append(update)
+                # ── CVE-2026-32049: reject oversized media before reaching the bot ─────
+                # Telegram includes file_size on document/video/audio/voice/video_note.
+                # Drop updates whose declared size exceeds _MAX_MEDIA_FILE_SIZE so an
+                # oversized payload can never crash the OpenClaw process.
+                for _mk in _MEDIA_KEYS:
+                    _media_obj = message.get(_mk)
+                    if isinstance(_media_obj, dict):
+                        _fsize = _media_obj.get("file_size")
+                        if isinstance(_fsize, int) and _fsize > _MAX_MEDIA_FILE_SIZE:
+                            logger.warning(
+                                "Oversized media dropped (CVE-2026-32049): "
+                                "type=%s file_size=%d limit=%d user_id=%s",
+                                _mk, _fsize, _MAX_MEDIA_FILE_SIZE, user_id,
+                            )
+                            if chat_id:
+                                await self._send_owner_admin_notice(
+                                    int(str(chat_id)),
+                                    f"{_PROTECT_HEADER}Oversized media rejected ({_fsize:,} bytes exceeds {_MAX_MEDIA_FILE_SIZE:,} byte limit).",
+                                )
+                            break
+                else:
+                    # In local_only mode, collaborators cannot send raw media (no caption).
+                    # Forwarding it to the bot would bypass all inbound collaborator guards.
+                    _is_known_collab = (
+                        self._rbac
+                        and not self._rbac.is_owner(user_id)
+                        and user_id in {str(uid) for uid in (self._rbac.collaborator_user_ids or [])}
+                    )
+                    if _is_known_collab and self._resolve_collaborator_mode(user_id) == "local_only":
+                        if chat_id:
+                            await self._send_owner_admin_notice(
+                                int(str(chat_id)),
+                                f"{_PROTECT_HEADER}Media without a caption cannot be processed in collaborator mode. Add a text caption to your image or file.",
+                            )
+                        continue
+                    filtered_updates.append(update)
                 continue
 
             # Normalize transport text before any guard checks so downstream
@@ -6764,6 +6793,9 @@ class TelegramAPIProxy:
         File downloads (path prefix ``file/``) return binary image or document
         data, not JSON.  Callers must detect the ``_raw_body`` key and return a
         binary HTTP response instead of JSONResponse.
+
+        CVE-2026-32049: reads in chunks and aborts if the response exceeds
+        _MAX_MEDIA_FILE_SIZE, preventing unbounded memory consumption.
         """
         req = urllib.request.Request(url)
         loop = asyncio.get_event_loop()
@@ -6771,9 +6803,28 @@ class TelegramAPIProxy:
             None,
             lambda: urllib.request.urlopen(req, timeout=60, context=self._ssl_context),
         )
-        body = response.read()
         content_type = response.headers.get("Content-Type", "application/octet-stream")
         status_code = response.status
+
+        # Stream in 64 KB chunks; abort if total exceeds the media size limit.
+        _chunk_size = 65536
+        _chunks: list[bytes] = []
+        _total = 0
+        def _read_chunks():
+            nonlocal _total
+            while True:
+                chunk = response.read(_chunk_size)
+                if not chunk:
+                    break
+                _total += len(chunk)
+                if _total > _MAX_MEDIA_FILE_SIZE:
+                    raise ValueError(
+                        f"File download exceeds size limit ({_MAX_MEDIA_FILE_SIZE} bytes)"
+                    )
+                _chunks.append(chunk)
+
+        await loop.run_in_executor(None, _read_chunks)
+        body = b"".join(_chunks)
         return {
             "_raw_body": body,
             "_content_type": content_type,
