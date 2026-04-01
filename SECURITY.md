@@ -1,147 +1,110 @@
-# AgentShroud Security Configuration
+# AgentShroud™ Security Policy
 
-AgentShroud v0.7.0 implements **enforce-by-default** security with comprehensive protection against prompt injection, PII exposure, unauthorized tool access, and egress filtering.
+AgentShroud v1.0.0 "Fortress" implements **enforce-by-default** security with 76 defense
+modules across 7 layers, protecting against prompt injection, PII exposure, unauthorized
+tool access, egress exfiltration, container escape, and privilege escalation.
 
-## Security Modules
+## Supported Versions
 
-AgentShroud includes four core security modules that **default to enforcement mode**:
+| Version | Status |
+|---------|--------|
+| v1.0.x  | ✅ Current release — full support |
+| v0.9.x  | ⚠️ Critical security fixes only |
+| < v0.9  | ❌ Unsupported — upgrade immediately |
 
-1. **PII Sanitizer (#1)** - Detects and redacts personally identifiable information
-2. **Prompt Injection Defense (#8)** - Blocks malicious prompt injection attempts  
-3. **Egress Filtering (#10)** - Controls outbound network traffic with domain allowlist
-4. **MCP Proxy (#19)** - Enforces per-tool permissions for AI agent actions
+## Security Architecture
+
+### Layer 1 — Core Pipeline (P0)
+PromptGuard, TrustManager, EgressFilter, PII Sanitizer, Gateway Binding
+
+### Layer 2 — Middleware (P1)
+SessionManager, TokenValidator, ConsentFramework, SubagentMonitor, AgentRegistry,
+Delegation, SharedMemory, ToolACL, PrivacyPolicy, RBAC, ContextGuard, ContextIntegrity,
+EncodingDetector, InputNormalizer, HeuristicClassifier, ApprovalHardening, BrowserSecurity
+
+### Layer 3 — Output Protection
+OutboundFilter, OutputCanary, OutputSchema, MultiTurnTracker, LogSanitizer,
+MetadataGuard, ToolResultSanitizer, ToolResultInjection, XmlLeakFilter, PromptProtection
+
+### Layer 4 — Tool & Agent Control
+ToolACL, ToolChainAnalyzer, ToolResultSanitizer, InstructionEnvelope,
+SubagentMonitor, ProgressiveLockdown, KillswitchMonitor
+
+### Layer 5 — Network & Egress
+EgressFilter, EgressApproval, EgressMonitor, DNSFilter, NetworkValidator,
+WebContentScanner (via BrowserSecurity)
+
+### Layer 6 — File & Memory Integrity
+FileSandbox, PathIsolation, DriftDetector, MemoryIntegrity, MemoryLifecycle,
+GitGuard, EnvGuard, ConfigIntegrity
+
+### Layer 7 — Infrastructure & Supply Chain
+ImageVerifier (cosign/Sigstore), ClamAV Scanner, Trivy Scanner, Falco Monitor,
+Wazuh Client, EncryptedStore, KeyVault, KeyRotation, HealthReport,
+AlertDispatcher, CanaryTripwire, SOCCorrelation, ScannerIntegration
+
+## Compliance Alignment
+
+- **IEC 62443** — FR3→SL3 (supply chain), FR6→SL3 (integrity), FR7→SL2 (availability)
+- **OWASP Top 10 for LLM Applications** — all categories addressed
+- **NIST CSF** — Identify, Protect, Detect, Respond, Recover mapped
+
+## Upstream Agent CVE Tracking
+
+AgentShroud maintains a registry of known CVEs in the wrapped AI agent (OpenClaw) and
+documents the specific defense layers that mitigate each vulnerability. As of v1.0.0,
+all 9 disclosed OpenClaw CVEs (March 2026) are **fully mitigated** by AgentShroud's
+defense-in-depth architecture. See the SOC "CVE Intelligence" dashboard for details.
 
 ## Monitor Mode Warning
 
 **⚠️ CRITICAL SECURITY NOTICE**
 
-AgentShroud defaults to **enforce mode** for core security modules. Running in monitor mode (`AGENTSHROUD_MODE=monitor` or per-module `mode: monitor`) disables active protection.
+AgentShroud defaults to **enforce mode** for all security modules. Running in monitor
+mode (`AGENTSHROUD_MODE=monitor`) disables active protection and should ONLY be used
+during initial deployment tuning (1-2 weeks) in non-production environments.
 
-### In Monitor Mode, the following protections are DISABLED:
-
-- **PII Exposure**: Credit cards, SSNs, emails pass through unredacted
-- **Prompt Injection**: Malicious prompts are logged but not blocked  
-- **Tool Access**: All MCP tool calls are permitted regardless of user trust level
-- **Network Traffic**: Outbound requests to any domain are allowed
-
-### When Monitor Mode is Appropriate
-
-Monitor mode is intended for **initial deployment tuning ONLY**:
-
-1. **Initial Setup**: Deploy in monitor mode for 1-2 weeks to establish baselines
-2. **Threshold Tuning**: Observe false positive rates in logs
-3. **Allowlist Building**: Identify legitimate domains and tools that need access
-4. **Testing**: Development and testing environments where security is not required
-
-### Production Requirements
+In monitor mode, the following protections are **DISABLED**:
+- PII detection and redaction
+- Prompt injection blocking
+- Tool access control enforcement
+- Outbound domain filtering
+- File sandbox enforcement
 
 **Never run monitor mode in production with real users.**
 
-For production deployments:
-- Remove `AGENTSHROUD_MODE=monitor` from environment variables
-- Ensure all core modules have `mode: enforce` in configuration
-- Regularly review security logs for blocked attempts
-- Update allowlists only after thorough security review
+## Security Scanning
 
-## Development Override
+AgentShroud includes automated security scanning in CI/CD:
 
-For development environments, you can temporarily disable enforcement:
+- **Semgrep SAST** — 11 custom rules (CWE-78, CWE-22, CWE-798, CWE-918, CWE-502, CWE-89)
+- **Gitleaks** — Secret scanning in pre-commit and CI
+- **Trivy** — Container image vulnerability scanning
+- **pip-audit** — Python dependency vulnerability auditing
+- **cosign** — Container image signing and SBOM generation
+- **Falco** — Runtime container behavior monitoring
+- **ClamAV** — Malware scanning on file operations
+- **Wazuh** — Host intrusion detection
 
-```bash
-export AGENTSHROUD_MODE=monitor
-```
+## Reporting a Vulnerability
 
-Or in `docker-compose.yml`:
-```yaml
-services:
-  gateway:
-    environment:
-      AGENTSHROUD_MODE: monitor  # Remove for production!
-```
+If you discover a security vulnerability in AgentShroud:
 
-## Configuration
+1. **GitHub Security Advisories** (preferred): https://github.com/idallasj/agentshroud/security/advisories
+2. **Email**: security@agentshroud.ai
+3. **Do NOT** create public GitHub issues for security vulnerabilities
 
-Core modules can be individually configured in `agentshroud.yaml`:
-
-```yaml
-security_modules:
-  pii_sanitizer:
-    mode: enforce    # enforce (default) or monitor
-    action: redact   # redact (default) or block
-  prompt_guard:
-    mode: enforce    # enforce (default) or monitor
-  egress_filter:
-    mode: enforce    # enforce (default) or monitor
-  mcp_proxy:
-    mode: enforce    # enforce (default) or monitor
-```
-
-## Security Verification
-
-To verify enforcement is active:
-
-1. **PII Test**: Send a test credit card number - should be redacted
-2. **Injection Test**: Send a known injection payload - should be blocked
-3. **Egress Test**: Request a non-allowlisted URL - should be denied  
-4. **Tool Test**: Attempt unauthorized tool access - should be blocked
-
-## Monitoring
-
-Security events are logged with structured data:
-- All enforcement actions are audited
-- Monitor mode generates security warnings at startup
-- Failed attempts are logged at WARNING level
-- Successful blocks are logged at INFO level
+### Response Timeline
+- **Acknowledgment**: within 48 hours
+- **Initial assessment**: within 5 business days
+- **Critical fix**: within 7 business days
+- **Disclosure coordination**: per reporter preference
 
 ## Emergency Response
 
 If security is compromised:
-1. Immediately set `AGENTSHROUD_MODE=enforce` 
-2. Restart the gateway service
-3. Review audit logs for the breach window
-4. Update allowlists to close identified gaps
-
-## Contact
-
-For security issues: security@agentshroud.ai
-For documentation: https://github.com/agentshroud/agentshroud/security
-
-
-## Security Features
-
-- **PII Sanitizer** — Hybrid Presidio + regex detection with redaction
-- **Prompt Guard** — Injection and jailbreak detection
-- **Egress Filter** — DNS-layer domain allowlist
-- **File Sandbox** — Path-based read/write access control
-- **Metadata Guard** — Path traversal and injection prevention
-- **Outbound Info Filter** — Prevents credential/PII leakage in responses
-- **Approval Queue** — Human-in-the-loop for high-risk tool calls
-- **Session Isolation** — Per-agent session boundaries
-- **Credential Injector** — Gateway-only credential storage
-- **Network Validator** — Container network policy enforcement
-- **ClamAV Scanner** — Malware detection on file operations
-- **Trivy Scanner** — Container vulnerability scanning
-- **Drift Detector** — Runtime file integrity monitoring
-- **Kill Switch** — Emergency shutdown capability for compromised agents
-- **Rate Limiter** — Request throttling per agent/IP
-- **Canary System** — Data exfiltration detection via planted tokens
-
-## Supported Versions
-
-| Version | Supported |
-|---------|-----------|
-| v0.7.x  | ✅ Active  |
-| v0.7.x  | ✅ Current release |
-| v0.6.x  | ⚠️ Critical fixes only |
-| < v0.6  | ❌ Unsupported |
-
-
-## Responsible Disclosure Policy
-
-If you discover a security vulnerability in AgentShroud, please report it responsibly:
-
-1. **Email:** security@agentshroud.ai
-2. **Do not** create public GitHub issues for security vulnerabilities
-3. We will acknowledge receipt within 48 hours
-4. We aim to provide a fix within 7 business days for critical issues
-
+1. Set `AGENTSHROUD_MODE=enforce` immediately
+2. Activate kill switch: `scripts/activate-lockdown.sh`
+3. Restart the gateway: `asb rebuild`
+4. Review audit logs: `GET /soc/v1/egress-log`
+5. Update allowlists to close identified gaps

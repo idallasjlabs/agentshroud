@@ -34,7 +34,7 @@ const fetch = require('node-fetch');
 
 async function testGoogleCalendar() {
     const username = 'agentshroud.ai@gmail.com';
-    const password = 'nkcy luwd cwou zimj'; // App password from 1Password
+    const password = 'xxxx xxxx xxxx xxxx'; // App password from 1Password
 
     // Google CalDAV endpoint
     const caldavUrl = 'https://apidata.googleusercontent.com/caldav/v2/';
@@ -277,7 +277,7 @@ cat > /tmp/google-calendar-helper.js << 'EOF'
 const https = require('https');
 
 const username = 'agentshroud.ai@gmail.com';
-const password = 'nkcy luwd cwou zimj';
+const password = 'xxxx xxxx xxxx xxxx';
 const auth = 'Basic ' + Buffer.from(username + ':' + password).toString('base64');
 
 function makeCalDAVRequest(method, path, body = '') {
