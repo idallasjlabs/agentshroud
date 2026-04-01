@@ -74,13 +74,21 @@ setup_ephemeral_secrets() {
   done
 
   # Determine which telegram_bot_token variant to use for this host/user.
+  # Falls back to production token if the host-specific token was not stored.
   local tg_file="telegram_bot_token_production.txt"
   if [ "$USER" = "agentshroud-bot" ]; then
+    local host_tg_file
     case "$HOST" in
-      marvin*)       tg_file="telegram_bot_token_marvin.txt" ;;
-      trillian*)     tg_file="telegram_bot_token_trillian.txt" ;;
-      raspberrypi*)  tg_file="telegram_bot_token_rpi.txt" ;;
+      marvin*)       host_tg_file="telegram_bot_token_marvin.txt" ;;
+      trillian*)     host_tg_file="telegram_bot_token_trillian.txt" ;;
+      raspberrypi*)  host_tg_file="telegram_bot_token_rpi.txt" ;;
+      *)             host_tg_file="" ;;
     esac
+    if [[ -n "$host_tg_file" && -s "$tmpdir/$host_tg_file" ]]; then
+      tg_file="$host_tg_file"
+    else
+      echo "  NOTE: host-specific token '$host_tg_file' not found — using production token"
+    fi
   fi
 
   # Generate a compose override that redirects all secrets: file: entries to
