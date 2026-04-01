@@ -7,6 +7,31 @@ name = "agentshroud-gateway"
 version = "1.0.0"
 description = "AgentShroud Gateway — security proxy for autonomous AI agents"
 requires-python = ">=3.10"
+license = {text = "MIT"}
+authors = [
+  {name = "Isaiah Dallas Jefferson, Jr.", email = "security@agentshroud.ai"},
+]
+readme = "README.md"
+keywords = ["ai", "security", "agent", "proxy", "governance", "llm"]
+classifiers = [
+  "Development Status :: 5 - Production/Stable",
+  "Intended Audience :: Developers",
+  "Intended Audience :: Information Technology",
+  "License :: OSI Approved :: MIT License",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.9",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Programming Language :: Python :: 3.13",
+  "Topic :: Security",
+  "Topic :: Software Development :: Libraries :: Application Frameworks",
+]
+
+[project.urls]
+Homepage = "https://github.com/idallasj/agentshroud"
+Documentation = "https://github.com/idallasj/agentshroud/tree/main/docs"
+"Bug Tracker" = "https://github.com/idallasj/agentshroud/issues"
 
 [project.scripts]
 agentshroud-soc = "gateway.cli.main:main"
@@ -14,3 +39,13 @@ agentshroud-soc = "gateway.cli.main:main"
 [tool.setuptools.packages.find]
 where = [".."]
 include = ["gateway*"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py39"
+select = ["E", "F", "W", "I"]
+ignore = ["E501"]
+
+[tool.black]
+line-length = 100
+target-version = ["py39"]

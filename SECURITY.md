@@ -108,3 +108,7 @@ If security is compromised:
 3. Restart the gateway: `asb rebuild`
 4. Review audit logs: `GET /soc/v1/egress-log`
 5. Update allowlists to close identified gaps
+
+---
+*AgentShroud™ is a trademark of Isaiah Dallas Jefferson, Jr. (USPTO Serial No. 99728633)*
+*Patent Pending — U.S. Provisional Application No. 64/018,744*

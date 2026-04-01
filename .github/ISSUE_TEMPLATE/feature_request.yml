@@ -1,0 +1,61 @@
+name: Feature Request
+description: Propose a new capability or improvement for AgentShroud
+title: "[Feature]: "
+labels:
+  - enhancement
+assignees:
+  - idallasj
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for proposing an enhancement to AgentShroud™. Please complete the fields below. Security implications are particularly important — do not leave that section blank if your request touches any security module, policy enforcement path, or agent interaction surface.
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem Description
+      description: What problem does this feature solve? Who is affected and under what conditions?
+      placeholder: |
+        When running AgentShroud as a proxy for multiple agent types, there is no way to
+        enforce per-agent rate limits on file write operations. This creates a risk of
+        runaway agents exhausting disk resources.
+    validations:
+      required: true
+
+  - type: textarea
+    id: solution
+    attributes:
+      label: Proposed Solution
+      description: Describe your proposed implementation or design. Be specific about which modules, APIs, or configuration surfaces would change.
+      placeholder: |
+        Add a `FileWriteRateLimiter` security module (P1 middleware) that tracks cumulative
+        bytes written per agent session and enforces a configurable ceiling. Expose the
+        limit via `AGENTSHROUD_MAX_WRITE_BYTES_PER_SESSION` environment variable.
+    validations:
+      required: true
+
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives Considered
+      description: What other approaches did you evaluate? Why did you prefer the proposed solution?
+      placeholder: Describe any alternative designs or workarounds you considered (optional).
+    validations:
+      required: false
+
+  - type: textarea
+    id: security
+    attributes:
+      label: Security Implications
+      description: |
+        Describe any security impact — positive or negative. Reference relevant IEC 62443
+        Foundational Requirements (FRs) if applicable (e.g., FR2 — Use Control,
+        FR3 — System Integrity, FR4 — Data Confidentiality).
+      placeholder: |
+        This feature strengthens FR2 (Use Control) by adding resource-level constraints
+        on agent-initiated file operations. No new attack surface is introduced provided
+        the rate-limit counter is stored in process memory and not exposed via any API.
+    validations:
+      required: false
