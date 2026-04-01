@@ -1,4 +1,6 @@
 # Copyright © 2026 Isaiah Dallas Jefferson, Jr. AgentShroud™. All rights reserved.
+# AgentShroud™ is a trademark of Isaiah Dallas Jefferson, Jr. (USPTO Serial No. 99728633)
+# Patent Pending — U.S. Provisional Application No. 64/018,744
 """Progressive Lockdown — per-user cumulative risk scoring and escalation.
 
 Tracks the number of blocked/quarantined requests per user across a session.
