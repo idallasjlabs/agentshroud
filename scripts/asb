@@ -31,11 +31,82 @@ else
   COMPOSE="docker compose -f $REPO_DIR/docker/docker-compose.yml -p $PROJECT"
 fi
 
+# ── Ephemeral secrets injection ──────────────────────────────────────────────
+# Reads secrets from the credential backend (1Password/Keychain/secret-tool)
+# into a mktemp directory, generates a compose override that remaps all
+# secrets: file: paths to the tmpdir, then cleans up via EXIT trap.
+# Secret files exist on the host only for the duration of `docker compose up`.
+setup_ephemeral_secrets() {
+  local tmpdir
+  tmpdir="$(mktemp -d "${TMPDIR:-/tmp}/asb-secrets.XXXXXX")"
+  trap 'rm -rf "$tmpdir"' EXIT
+
+  # Extract secrets from credential backend → tmpdir (suppress interactive banner)
+  AGENTSHROUD_SECRETS_DIR="$tmpdir" "$REPO_DIR/docker/setup-secrets.sh" extract || {
+    echo "ERROR: secret extraction failed" >&2; exit 1
+  }
+
+  # Create empty placeholders for optional secrets so Docker Compose does not
+  # refuse to start when a token was not stored (Slack, OpenAI, Google API key).
+  for optional in slack_bot_token slack_signing_secret slack_app_token \
+                  openai_api_key google_api_key; do
+    [ -f "$tmpdir/${optional}.txt" ] || touch "$tmpdir/${optional}.txt"
+  done
+
+  # Determine which telegram_bot_token variant to use for this host/user.
+  local tg_file="telegram_bot_token_production.txt"
+  if [ "$USER" = "agentshroud-bot" ]; then
+    case "$HOST" in
+      marvin*)       tg_file="telegram_bot_token_marvin.txt" ;;
+      trillian*)     tg_file="telegram_bot_token_trillian.txt" ;;
+      raspberrypi*)  tg_file="telegram_bot_token_rpi.txt" ;;
+    esac
+  fi
+
+  # Generate a compose override that redirects all secrets: file: entries to
+  # the tmpdir. This override is appended last in the -f chain so it wins over
+  # any base or host-specific overlay definitions.
+  local override="$tmpdir/docker-compose.secrets-override.yml"
+  cat > "$override" << YAML
+secrets:
+  gateway_password:
+    file: ${tmpdir}/gateway_password.txt
+  anthropic_oauth_token:
+    file: ${tmpdir}/anthropic_oauth_token.txt
+  openai_api_key:
+    file: ${tmpdir}/openai_api_key.txt
+  google_api_key:
+    file: ${tmpdir}/google_api_key.txt
+  1password_bot_email:
+    file: ${tmpdir}/1password_bot_email.txt
+  1password_bot_master_password:
+    file: ${tmpdir}/1password_bot_master_password.txt
+  1password_bot_secret_key:
+    file: ${tmpdir}/1password_bot_secret_key.txt
+  telegram_bot_token:
+    file: ${tmpdir}/${tg_file}
+  slack_bot_token:
+    file: ${tmpdir}/slack_bot_token.txt
+  slack_signing_secret:
+    file: ${tmpdir}/slack_signing_secret.txt
+  slack_app_token:
+    file: ${tmpdir}/slack_app_token.txt
+YAML
+
+  COMPOSE="$COMPOSE -f $override"
+}
+
 case "${1:-}" in
   build)   $COMPOSE build --no-cache ;;
-  up)      $COMPOSE up -d ;;
+  up)
+    setup_ephemeral_secrets
+    $COMPOSE up -d
+    ;;
   down)    $COMPOSE down ;;
-  rebuild) $COMPOSE build --no-cache && $COMPOSE up -d ;;
+  rebuild)
+    setup_ephemeral_secrets
+    $COMPOSE build --no-cache && $COMPOSE up -d
+    ;;
   clean-rebuild)
     echo "This will remove containers, prune stale volumes, and rebuild from scratch."
     echo "Persistent data (workspace, config, SSH keys, browsers) is PRESERVED."
@@ -50,6 +121,7 @@ case "${1:-}" in
     # required — docker builder prune targets the deprecated legacy builder and reclaims 0 bytes.
     echo "Pruning BuildKit cache..."
     docker buildx prune -a -f
+    setup_ephemeral_secrets
     $COMPOSE build --no-cache
     $COMPOSE up -d
     echo "Clean rebuild complete."

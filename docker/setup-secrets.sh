@@ -21,7 +21,7 @@
 set -euo pipefail
 
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
-SECRETS_DIR="${SCRIPT_DIR}/secrets"
+SECRETS_DIR="${AGENTSHROUD_SECRETS_DIR:-${SCRIPT_DIR}/secrets}"
 
 # ── Credential backend detection ──────────────────────────────────────────────
 detect_backend() {
