@@ -941,8 +941,12 @@
             // Security overview
             const activeModules = modules.filter(m => m.status === 'active').length;
             document.getElementById('active-modules').textContent = `${activeModules}/${modules.length}`;
-            // TODO: fetch real blocked count from /proxy/status endpoint
-            document.getElementById('threats-blocked').textContent = 'N/A';
+            // blocked_count sourced from /proxy/status (see SOC dashboard for live data)
+            fetch('/proxy/status').then(r => r.ok ? r.json() : null).then(d => {
+              if (d && d.blocked_count !== undefined) {
+                document.getElementById('threats-blocked').textContent = d.blocked_count;
+              }
+            }).catch(() => {});
             
             // Agent overview
             document.getElementById('active-agents').textContent = agents.length;

@@ -49,3 +49,17 @@ ignore = ["E501"]
 [tool.black]
 line-length = 100
 target-version = ["py39"]
+
+[tool.coverage.run]
+source = ["gateway"]
+omit = ["gateway/tests/*", "*/migrations/*"]
+
+[tool.coverage.report]
+show_missing = true
+fail_under = 94
+exclude_lines = [
+    "pragma: no cover",
+    "def __repr__",
+    "raise NotImplementedError",
+    "if TYPE_CHECKING:",
+]
