@@ -261,13 +261,39 @@ _MAX_BODY_SIZE = 1_048_576  # 1 MB
 
 @app.middleware("http")
 async def limit_request_body(request: Request, call_next):
-    """Reject request bodies larger than 1MB before parsing."""
+    """Reject request bodies larger than 1MB before parsing.
+
+    Checks Content-Length header first (fast path). For chunked transfers
+    where Content-Length is absent, reads the body in chunks and enforces
+    the limit on actual bytes received (CVE-2026-32049 defense-in-depth).
+    """
     content_length = request.headers.get("content-length")
-    if content_length and int(content_length) > _MAX_BODY_SIZE:
-        return JSONResponse(
-            status_code=413,
-            content={"detail": "Request body too large (max 1MB)"},
-        )
+    if content_length:
+        try:
+            if int(content_length) > _MAX_BODY_SIZE:
+                return JSONResponse(
+                    status_code=413,
+                    content={"detail": "Request body too large (max 1MB)"},
+                )
+        except ValueError:
+            pass  # malformed header — let downstream handle it
+    else:
+        # No Content-Length — chunked or unknown. Measure actual bytes.
+        total = 0
+        chunks: list[bytes] = []
+        async for chunk in request.stream():
+            total += len(chunk)
+            if total > _MAX_BODY_SIZE:
+                return JSONResponse(
+                    status_code=413,
+                    content={"detail": "Request body too large (max 1MB)"},
+                )
+            chunks.append(chunk)
+        # Re-inject the consumed body so downstream handlers can still read it.
+        async def _body_stream():
+            for c in chunks:
+                yield c
+        request._stream = _body_stream()  # type: ignore[attr-defined]
     return await call_next(request)
 
 
