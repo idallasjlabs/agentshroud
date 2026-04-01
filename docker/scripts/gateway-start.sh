@@ -23,7 +23,7 @@ if command -v freshclam >/dev/null 2>&1; then
     echo "[gateway-start] freshclam DB update complete"
 fi
 
-# Start ClamAV daemon (non-fatal); wait up to 10s for socket so health checks pass
+# Start ClamAV daemon (non-fatal); wait up to 30s for socket so health checks pass
 if command -v clamd >/dev/null 2>&1; then
     clamd --config-file=/etc/clamav/clamd.conf 2>/tmp/clamd-start.log &
     echo "[gateway-start] clamd launched (pid=$!)"
