@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="AgentShroud™ — Enterprise governance proxy for autonomous AI agents. Intercepts, inspects, and policy-enforces every tool call, API request, and file operation without modifying your agent." />
+  <meta property="og:title" content="AgentShroud™ — AI Agent Governance Proxy" />
+  <meta property="og:description" content="76 security modules. IEC 62443 aligned. Human-in-the-loop approvals. Open source." />
+  <meta property="og:url" content="https://agentshroud.ai" />
+  <meta property="og:type" content="website" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <title>AgentShroud™ — Enterprise Governance for Autonomous AI Agents</title>
+  <style>
+    :root {
+      --bg:        #0a0c10;
+      --surface:   #0f1318;
+      --border:    #1e2530;
+      --accent:    #00d4aa;
+      --accent2:   #0096ff;
+      --danger:    #ff4d4d;
+      --warn:      #ffb800;
+      --text:      #e4e8ef;
+      --muted:     #8b95a5;
+      --code-bg:   #111820;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
+      font-size: 16px;
+      line-height: 1.65;
+    }
+
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    /* ── Layout ─────────────────────────────────────────── */
+    .container { max-width: 1000px; margin: 0 auto; padding: 0 24px; }
+
+    /* ── Nav ─────────────────────────────────────────────── */
+    nav {
+      position: sticky; top: 0; z-index: 100;
+      border-bottom: 1px solid var(--border);
+      background: rgba(10, 12, 16, 0.92);
+      backdrop-filter: blur(8px);
+      -webkit-backdrop-filter: blur(8px);
+    }
+    nav .inner {
+      display: flex; align-items: center; justify-content: space-between;
+      max-width: 1000px; margin: 0 auto; padding: 14px 24px;
+    }
+    .logo { font-size: 1.1rem; font-weight: 700; letter-spacing: -0.3px; color: var(--text); }
+    .logo span { color: var(--accent); }
+    nav ul { list-style: none; display: flex; gap: 24px; }
+    nav ul li a { color: var(--muted); font-size: 0.9rem; transition: color 0.2s; }
+    nav ul li a:hover { color: var(--text); text-decoration: none; }
+    .nav-cta {
+      background: var(--accent); color: #000 !important; padding: 7px 16px;
+      border-radius: 6px; font-weight: 600; font-size: 0.875rem;
+    }
+    .nav-cta:hover { opacity: 0.88; text-decoration: none !important; }
+
+    /* ── Hero ────────────────────────────────────────────── */
+    .hero {
+      padding: 96px 24px 80px;
+      text-align: center;
+      background: radial-gradient(ellipse 80% 50% at 50% 0%, rgba(0,212,170,0.07) 0%, transparent 70%);
+    }
+    .version-badge {
+      display: inline-block; margin-bottom: 20px;
+      background: rgba(0,212,170,0.1); border: 1px solid rgba(0,212,170,0.3);
+      color: var(--accent); font-size: 0.8rem; font-weight: 600;
+      padding: 4px 12px; border-radius: 100px; letter-spacing: 0.4px;
+    }
+    h1 {
+      font-size: clamp(2rem, 5vw, 3.2rem);
+      font-weight: 800; letter-spacing: -1px; line-height: 1.15;
+      margin-bottom: 20px;
+    }
+    h1 em { font-style: normal; color: var(--accent); }
+    .hero-sub {
+      font-size: 1.15rem; color: var(--muted); max-width: 640px;
+      margin: 0 auto 36px;
+    }
+    .hero-actions { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; }
+    .btn {
+      display: inline-flex; align-items: center; gap: 8px;
+      padding: 12px 24px; border-radius: 8px; font-weight: 600;
+      font-size: 0.95rem; transition: all 0.2s; cursor: pointer;
+    }
+    .btn-primary { background: var(--accent); color: #000; }
+    .btn-primary:hover { opacity: 0.88; text-decoration: none; }
+    .btn-secondary {
+      background: transparent; color: var(--text);
+      border: 1px solid var(--border);
+    }
+    .btn-secondary:hover { border-color: var(--accent); color: var(--accent); text-decoration: none; }
+
+    /* ── Pipeline diagram ────────────────────────────────── */
+    .pipeline {
+      margin: 48px auto 0; max-width: 680px;
+      background: var(--code-bg); border: 1px solid var(--border);
+      border-radius: 10px; padding: 20px 28px; font-family: 'SF Mono', 'Fira Code', monospace;
+      font-size: 0.85rem; color: var(--muted); text-align: left;
+    }
+    .pipeline .arrow { color: var(--accent); }
+    .pipeline .shield { color: var(--accent); font-weight: 700; }
+    .pipeline .comment { color: #4a5568; }
+
+    /* ── Stats bar ───────────────────────────────────────── */
+    .stats-bar {
+      border-top: 1px solid var(--border); border-bottom: 1px solid var(--border);
+      background: var(--surface);
+    }
+    .stats-bar .inner {
+      max-width: 1000px; margin: 0 auto; padding: 32px 24px;
+      display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; text-align: center;
+    }
+    .stat-num { font-size: 2rem; font-weight: 800; color: var(--accent); letter-spacing: -1px; }
+    .stat-label { font-size: 0.85rem; color: var(--muted); margin-top: 4px; }
+
+    /* ── Section headers ─────────────────────────────────── */
+    section { padding: 72px 24px; }
+    section:nth-child(even) { background: var(--surface); }
+    .section-label {
+      font-size: 0.75rem; font-weight: 700; letter-spacing: 1.5px;
+      text-transform: uppercase; color: var(--accent); margin-bottom: 10px;
+    }
+    h2 { font-size: 1.9rem; font-weight: 800; letter-spacing: -0.5px; margin-bottom: 12px; }
+    .section-sub { color: var(--muted); max-width: 580px; margin-bottom: 40px; font-size: 1rem; }
+
+    /* ── Feature grid ────────────────────────────────────── */
+    .feature-grid {
+      display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 16px;
+    }
+    .feature-card {
+      background: var(--code-bg); border: 1px solid var(--border);
+      border-radius: 10px; padding: 24px;
+    }
+    .feature-card:hover { border-color: rgba(0,212,170,0.3); }
+    .feature-icon { font-size: 1.5rem; margin-bottom: 12px; }
+    .feature-card h3 { font-size: 1rem; font-weight: 700; margin-bottom: 6px; }
+    .feature-card p { font-size: 0.875rem; color: var(--muted); line-height: 1.6; }
+
+    /* ── Layers table ────────────────────────────────────── */
+    .layer-table { width: 100%; border-collapse: collapse; font-size: 0.9rem; }
+    .layer-table th {
+      text-align: left; padding: 10px 16px; font-size: 0.75rem;
+      font-weight: 700; letter-spacing: 0.8px; text-transform: uppercase;
+      color: var(--muted); border-bottom: 1px solid var(--border);
+    }
+    .layer-table td { padding: 12px 16px; border-bottom: 1px solid var(--border); vertical-align: top; }
+    .layer-table tr:last-child td { border-bottom: none; }
+    .layer-table tr:hover td { background: rgba(255,255,255,0.02); }
+    .layer-tag {
+      display: inline-block; padding: 2px 8px; border-radius: 4px;
+      font-size: 0.75rem; font-weight: 700; font-family: monospace;
+      background: rgba(0,212,170,0.1); color: var(--accent); border: 1px solid rgba(0,212,170,0.2);
+    }
+    .module-list { color: var(--muted); font-size: 0.85rem; line-height: 1.7; }
+
+    /* ── CVE table ───────────────────────────────────────── */
+    .cve-table { width: 100%; border-collapse: collapse; font-size: 0.875rem; }
+    .cve-table th {
+      text-align: left; padding: 10px 14px; font-size: 0.75rem;
+      font-weight: 700; letter-spacing: 0.8px; text-transform: uppercase;
+      color: var(--muted); border-bottom: 1px solid var(--border);
+    }
+    .cve-table td { padding: 11px 14px; border-bottom: 1px solid var(--border); }
+    .cve-table tr:last-child td { border-bottom: none; }
+    .badge-crit { color: var(--danger); font-weight: 700; }
+    .badge-high { color: var(--warn); font-weight: 700; }
+    .badge-med  { color: #9b8eff; font-weight: 700; }
+    .badge-ok   { color: var(--accent); }
+    .cve-id { font-family: monospace; font-size: 0.8rem; color: var(--muted); }
+
+    /* ── Code block ──────────────────────────────────────── */
+    .code-block {
+      background: var(--code-bg); border: 1px solid var(--border);
+      border-radius: 10px; overflow: hidden; margin-top: 20px;
+    }
+    .code-block .header {
+      background: rgba(255,255,255,0.03); padding: 10px 16px;
+      border-bottom: 1px solid var(--border); font-size: 0.75rem;
+      color: var(--muted); font-family: monospace;
+    }
+    .code-block pre {
+      padding: 20px; font-family: 'SF Mono', 'Fira Code', monospace;
+      font-size: 0.85rem; line-height: 1.7; overflow-x: auto; color: var(--text);
+    }
+    .code-block .kw  { color: var(--accent2); }
+    .code-block .cm  { color: #4a5568; }
+    .code-block .st  { color: var(--accent); }
+
+    /* ── Compliance badges ───────────────────────────────── */
+    .compliance-grid {
+      display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 12px;
+    }
+    .compliance-card {
+      background: var(--code-bg); border: 1px solid var(--border);
+      border-radius: 8px; padding: 16px 18px;
+    }
+    .compliance-card .standard { font-size: 0.75rem; font-weight: 700; color: var(--accent); letter-spacing: 0.5px; }
+    .compliance-card .level { font-size: 0.9rem; font-weight: 700; margin: 4px 0 2px; }
+    .compliance-card .desc { font-size: 0.8rem; color: var(--muted); }
+
+    /* ── CTA section ─────────────────────────────────────── */
+    .cta-section {
+      text-align: center; padding: 80px 24px;
+      background: radial-gradient(ellipse 60% 60% at 50% 50%, rgba(0,212,170,0.06) 0%, transparent 70%);
+    }
+    .cta-section h2 { margin-bottom: 14px; }
+    .cta-section p { color: var(--muted); max-width: 520px; margin: 0 auto 32px; }
+    .support-links { margin-top: 20px; font-size: 0.875rem; color: var(--muted); }
+    .support-links a { color: var(--muted); text-decoration: underline; }
+
+    /* ── Footer ──────────────────────────────────────────── */
+    footer {
+      border-top: 1px solid var(--border); padding: 32px 24px;
+      text-align: center; font-size: 0.8rem; color: var(--muted);
+    }
+    footer p + p { margin-top: 6px; }
+    footer a { color: var(--muted); text-decoration: underline; }
+
+    /* ── Responsive ──────────────────────────────────────── */
+    @media (max-width: 640px) {
+      nav ul { display: none; }
+      .stats-bar .inner { grid-template-columns: 1fr; }
+      h1 { font-size: 2rem; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- ── Nav ─────────────────────────────────────────────────── -->
+<nav>
+  <div class="inner">
+    <div class="logo">Agent<span>Shroud</span>™</div>
+    <ul>
+      <li><a href="#features">Features</a></li>
+      <li><a href="#layers">Architecture</a></li>
+      <li><a href="#cves">CVEs</a></li>
+      <li><a href="#quickstart">Quickstart</a></li>
+      <li><a href="https://github.com/idallasj/agentshroud" class="nav-cta">GitHub</a></li>
+    </ul>
+  </div>
+</nav>
+
+<!-- ── Hero ────────────────────────────────────────────────── -->
+<section class="hero">
+  <div class="container">
+    <div class="version-badge">v1.0.0 "Fortress" — Now Available</div>
+    <h1>Enterprise Governance for<br><em>Autonomous AI Agents</em></h1>
+    <p class="hero-sub">
+      AgentShroud sits transparently between your AI agents and every system they touch.
+      Every tool call, API request, file write, and cloud mutation is intercepted,
+      inspected, and policy-enforced — without modifying the agent.
+    </p>
+    <div class="hero-actions">
+      <a href="https://github.com/idallasj/agentshroud" class="btn btn-primary">
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg>
+        View on GitHub
+      </a>
+      <a href="#quickstart" class="btn btn-secondary">Quickstart</a>
+    </div>
+
+    <div class="pipeline">
+      <span class="comment"># every request through every security module, every time</span><br>
+      AI Agent &nbsp;<span class="arrow">→</span>&nbsp; <span class="shield">AgentShroud Gateway</span> &nbsp;<span class="arrow">→</span>&nbsp; Target System<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span class="comment">└── 76 modules │ 7 layers │ &lt;0.5ms P99</span>
+    </div>
+  </div>
+</section>
+
+<!-- ── Stats ────────────────────────────────────────────────── -->
+<div class="stats-bar">
+  <div class="inner">
+    <div>
+      <div class="stat-num">76</div>
+      <div class="stat-label">Active security modules — zero stubs</div>
+    </div>
+    <div>
+      <div class="stat-num">3,724+</div>
+      <div class="stat-label">Tests — 94% coverage</div>
+    </div>
+    <div>
+      <div class="stat-num">&lt;0.5 ms</div>
+      <div class="stat-label">Inbound latency P99 (arm64/macOS)</div>
+    </div>
+  </div>
+</div>
+
+<!-- ── Features ─────────────────────────────────────────────── -->
+<section id="features">
+  <div class="container">
+    <div class="section-label">What's included</div>
+    <h2>Production-grade from day one</h2>
+    <p class="section-sub">Every module is fully wired in the request pipeline. No dead code, no placeholders.</p>
+
+    <div class="feature-grid">
+      <div class="feature-card">
+        <div class="feature-icon">🛡️</div>
+        <h3>Prompt Injection Defense</h3>
+        <p>PromptGuard + HeuristicClassifier intercept and neutralize injection attempts before they reach tool execution.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">🔍</div>
+        <h3>PII Sanitization</h3>
+        <p>Presidio-powered detection at 0.9 confidence minimum. Redacts PII from both inbound and outbound traffic.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">🌐</div>
+        <h3>Egress Filtering</h3>
+        <p>Domain allowlisting, DNS filtering, and real-time egress approval queue with Telegram notifications.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">✋</div>
+        <h3>Human-in-the-Loop</h3>
+        <p>High-risk actions — email sending, file deletion, external API calls, skill installation — route through a persistent approval queue.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">👥</div>
+        <h3>SOC Collaboration Dashboard</h3>
+        <p>7-page web control center: approvals, delegations, tool ACLs, shared memory, RBAC, and live agent activity.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">📊</div>
+        <h3>Daily CVE Reports</h3>
+        <p>Trivy-powered CVE digests delivered daily via Telegram. Severity-filtered, owner-gated, with error-report fallback.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">🔐</div>
+        <h3>Credential Hygiene</h3>
+        <p>1Password CLI, macOS Keychain, and secret-tool integration. No plaintext secrets on host disk during normal operation.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">📦</div>
+        <h3>Supply Chain Integrity</h3>
+        <p>Cosign image signing, Trivy CVE scanning, Semgrep SAST, ClamAV malware scanning, Falco runtime enforcement.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">⚖️</div>
+        <h3>IEC 62443 Alignment</h3>
+        <p>FR3→SL3 system integrity, FR6→SL3 audit logging with SHA-256 hash chains, FR7→SL2 availability hardening.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── Architecture ──────────────────────────────────────────── -->
+<section id="layers">
+  <div class="container">
+    <div class="section-label">Architecture</div>
+    <h2>7 defense layers, 76 modules</h2>
+    <p class="section-sub">Every inbound request traverses all active layers. Enforcement is the default — monitor mode requires explicit opt-in.</p>
+
+    <table class="layer-table">
+      <thead>
+        <tr>
+          <th>Layer</th>
+          <th>Modules</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><span class="layer-tag">P0 Core</span></td>
+          <td class="module-list">PromptGuard, TrustManager, EgressFilter, PII Sanitizer, Gateway Binding</td>
+        </tr>
+        <tr>
+          <td><span class="layer-tag">P1 Middleware</span></td>
+          <td class="module-list">SessionManager, TokenValidator, ConsentFramework, SubagentMonitor, AgentRegistry, Delegation, SharedMemory, ToolACL, PrivacyPolicy, RBAC, ContextGuard, ContextIntegrity, EncodingDetector, InputNormalizer, HeuristicClassifier, ApprovalHardening, BrowserSecurity</td>
+        </tr>
+        <tr>
+          <td><span class="layer-tag">P2 Output</span></td>
+          <td class="module-list">OutboundFilter, OutputCanary, OutputSchema, MultiTurnTracker, LogSanitizer, MetadataGuard, ToolResultSanitizer, ToolResultInjection, XmlLeakFilter, PromptProtection</td>
+        </tr>
+        <tr>
+          <td><span class="layer-tag">P3 Tool Control</span></td>
+          <td class="module-list">ToolACL, ToolChainAnalyzer, InstructionEnvelope, SubagentMonitor, ProgressiveLockdown, KillswitchMonitor</td>
+        </tr>
+        <tr>
+          <td><span class="layer-tag">P4 Network</span></td>
+          <td class="module-list">EgressFilter, EgressApproval, EgressMonitor, DNSFilter, NetworkValidator, WebContentScanner</td>
+        </tr>
+        <tr>
+          <td><span class="layer-tag">P5 File & Memory</span></td>
+          <td class="module-list">FileSandbox, PathIsolation, DriftDetector, MemoryIntegrity, MemoryLifecycle, GitGuard, EnvGuard, ConfigIntegrity</td>
+        </tr>
+        <tr>
+          <td><span class="layer-tag">P6 Infrastructure</span></td>
+          <td class="module-list">ImageVerifier (cosign/Sigstore), ClamAV, Trivy, Falco, Wazuh, EncryptedStore, KeyVault, KeyRotation, HealthReport, AlertDispatcher, CanaryTripwire, SOCCorrelation, ScannerIntegration</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<!-- ── CVEs ──────────────────────────────────────────────────── -->
+<section id="cves">
+  <div class="container">
+    <div class="section-label">CVE Registry</div>
+    <h2>9 OpenClaw CVEs — all mitigated</h2>
+    <p class="section-sub">All CVEs disclosed in the March 2026 OpenClaw release are documented and fully mitigated by AgentShroud's defense-in-depth architecture.</p>
+
+    <table class="cve-table">
+      <thead>
+        <tr>
+          <th>CVE</th>
+          <th>CVSS</th>
+          <th>Title</th>
+          <th>Status</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="cve-id">CVE-2026-22172</td>
+          <td class="badge-crit">9.9 CRITICAL</td>
+          <td>WebSocket Scope Self-Declaration</td>
+          <td class="badge-ok">✓ Mitigated</td>
+        </tr>
+        <tr>
+          <td class="cve-id">CVE-2026-32051</td>
+          <td class="badge-high">8.8 HIGH</td>
+          <td>Privilege Escalation via operator.write</td>
+          <td class="badge-ok">✓ Mitigated</td>
+        </tr>
+        <tr>
+          <td class="cve-id">CVE-2026-22171</td>
+          <td class="badge-high">8.2 HIGH</td>
+          <td>Path Traversal in Feishu Media</td>
+          <td class="badge-ok">✓ Mitigated</td>
+        </tr>
+        <tr>
+          <td class="cve-id">CVE-2026-32025</td>
+          <td class="badge-high">7.5 HIGH</td>
+          <td>WebSocket Brute-Force (ClawJacked)</td>
+          <td class="badge-ok">✓ Mitigated</td>
+        </tr>
+        <tr>
+          <td class="cve-id">CVE-2026-32048</td>
+          <td class="badge-high">7.5 HIGH</td>
+          <td>Sandbox Escape via sessions_spawn</td>
+          <td class="badge-ok">✓ Mitigated</td>
+        </tr>
+        <tr>
+          <td class="cve-id">CVE-2026-32049</td>
+          <td class="badge-high">7.5 HIGH</td>
+          <td>Oversized Media Payload DoS</td>
+          <td class="badge-ok">✓ Mitigated</td>
+        </tr>
+        <tr>
+          <td class="cve-id">CVE-2026-32032</td>
+          <td class="badge-high">7.0 HIGH</td>
+          <td>Arbitrary Shell via SHELL env var</td>
+          <td class="badge-ok">✓ Mitigated</td>
+        </tr>
+        <tr>
+          <td class="cve-id">CVE-2026-29607</td>
+          <td class="badge-med">6.4 MEDIUM</td>
+          <td>Allow-Always Wrapper Persistence</td>
+          <td class="badge-ok">✓ Mitigated</td>
+        </tr>
+        <tr>
+          <td class="cve-id">CVE-2026-28460</td>
+          <td class="badge-med">5.9 MEDIUM</td>
+          <td>Allowlist Bypass via Shell Continuation</td>
+          <td class="badge-ok">✓ Mitigated</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<!-- ── Compliance ─────────────────────────────────────────────── -->
+<section>
+  <div class="container">
+    <div class="section-label">Compliance</div>
+    <h2>Standards alignment</h2>
+    <p class="section-sub">Built for regulated and OT-adjacent environments from the start.</p>
+
+    <div class="compliance-grid">
+      <div class="compliance-card">
+        <div class="standard">IEC 62443</div>
+        <div class="level">FR3 → SL3</div>
+        <div class="desc">System Integrity — Cosign, Trivy, Falco, Semgrep</div>
+      </div>
+      <div class="compliance-card">
+        <div class="standard">IEC 62443</div>
+        <div class="level">FR6 → SL3</div>
+        <div class="desc">Audit Logging — SHA-256 hash chain + Wazuh SIEM</div>
+      </div>
+      <div class="compliance-card">
+        <div class="standard">IEC 62443</div>
+        <div class="level">FR7 → SL2</div>
+        <div class="desc">Resource Availability — agent-induced exhaustion hardening</div>
+      </div>
+      <div class="compliance-card">
+        <div class="standard">OWASP LLM Top 10</div>
+        <div class="level">Full coverage</div>
+        <div class="desc">LLM01 – LLM10 all addressed across the 7 defense layers</div>
+      </div>
+      <div class="compliance-card">
+        <div class="standard">NIST CSF</div>
+        <div class="level">All 5 functions</div>
+        <div class="desc">Identify, Protect, Detect, Respond, Recover — all mapped</div>
+      </div>
+      <div class="compliance-card">
+        <div class="standard">CIS Docker</div>
+        <div class="level">Benchmark 4.8</div>
+        <div class="desc">Setuid/setgid bits stripped, non-root container user</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── Quickstart ─────────────────────────────────────────────── -->
+<section id="quickstart">
+  <div class="container">
+    <div class="section-label">Get started</div>
+    <h2>Up in three commands</h2>
+    <p class="section-sub">Self-hosted Docker stack. No external cloud dependencies.</p>
+
+    <div class="code-block">
+      <div class="header">bash</div>
+      <pre><span class="kw">git</span> clone https://github.com/idallasj/agentshroud.git
+<span class="kw">cd</span> agentshroud
+./docker/setup-secrets.sh store   <span class="cm"># store credentials (1Password / Keychain / secret-tool)</span>
+scripts/asb up                    <span class="cm"># bring up the stack</span></pre>
+    </div>
+
+    <p style="margin-top: 24px; font-size: 0.9rem; color: var(--muted);">
+      Full setup guide in the <a href="https://github.com/idallasj/agentshroud#readme">README</a>.
+      Works on macOS (Colima/Docker Desktop) and Linux.
+    </p>
+  </div>
+</section>
+
+<!-- ── CTA ───────────────────────────────────────────────────── -->
+<section class="cta-section">
+  <div class="container">
+    <h2>Open source. MIT licensed.</h2>
+    <p>If your team is deploying AI agents against real infrastructure, the governance gap is real. AgentShroud closes it.</p>
+    <div class="hero-actions">
+      <a href="https://github.com/idallasj/agentshroud" class="btn btn-primary">
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg>
+        Star on GitHub
+      </a>
+      <a href="https://ko-fi.com/agentshroud" class="btn btn-secondary">Support on Ko-fi</a>
+    </div>
+    <p class="support-links">
+      Also available via <a href="https://github.com/sponsors/agentshroud-ai">GitHub Sponsors</a>
+    </p>
+  </div>
+</section>
+
+<!-- ── Footer ────────────────────────────────────────────────── -->
+<footer>
+  <p>
+    AgentShroud™ is a trademark of Isaiah Dallas Jefferson, Jr. (USPTO Serial No. 99728633) &nbsp;·&nbsp;
+    Patent Pending — U.S. Provisional Application No. 64/018,744
+  </p>
+  <p>
+    Licensed under the <a href="https://github.com/idallasj/agentshroud/blob/main/LICENSE">MIT License</a> &nbsp;·&nbsp;
+    <a href="https://github.com/idallasj/agentshroud/security/advisories">Report a vulnerability</a> &nbsp;·&nbsp;
+    <a href="https://github.com/idallasj/agentshroud">GitHub</a>
+  </p>
+</footer>
+
+</body>
+</html>
