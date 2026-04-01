@@ -52,7 +52,7 @@ flake8 gateway/ --max-line-length 100
 ### Requirements
 
 - **90%+ test coverage** on new code
-- **All existing tests pass** (currently 351+)
+- **All existing tests pass** (currently 3,700+)
 - **No CRITICAL or HIGH** security findings in peer review
 - **Code formatted** with black/isort (CI checks this)
 
