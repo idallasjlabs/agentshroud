@@ -17,6 +17,7 @@ services:
       - "127.0.0.1:9080:8080"
     environment:
       - PROXY_ALLOWED_NETWORKS=172.20.0.0/16,172.21.0.0/16,172.22.0.0/16
+      - AGENTSHROUD_INSTANCE_LABEL=dev-marvin
 
   bot:
     container_name: agentshroud-marvin-bot
@@ -25,6 +26,7 @@ services:
     environment:
       - GATEWAY_HOST_PORT=9080
       - OPENCLAW_BOT_NAME=agentshroud_bot_marvin
+      - AGENTSHROUD_INSTANCE_LABEL=dev-marvin
       - AGENTSHROUD_CONTROL_UI_ORIGINS=${AGENTSHROUD_CONTROL_UI_ORIGINS:-http://localhost:19789,https://localhost:19789}
 
 secrets:

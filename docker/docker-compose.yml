@@ -77,6 +77,7 @@ services:
       - AGENTSHROUD_GATEWAY_IMAGE_REF=${AGENTSHROUD_GATEWAY_IMAGE_REF:-}
       - AGENTSHROUD_COMPOSE_HOST=marvin
       - AGENTSHROUD_COMPOSE_DIR=/Users/agentshroud-bot/Development/agentshroud
+      - AGENTSHROUD_INSTANCE_LABEL=${AGENTSHROUD_INSTANCE_LABEL:-prod}
       - TRIVY_CACHE_DIR=/var/log/security/.trivy-cache
       # Group chat: bot @handle (without @) for at-mention-only filtering in groups
       - TELEGRAM_BOT_USERNAME=${TELEGRAM_BOT_USERNAME:-agentshroud_bot}
@@ -209,6 +210,7 @@ services:
       - OPENCLAW_DISABLE_HOST_FILESYSTEM=true
       - OPENCLAW_SANDBOX_MODE=strict
       - OPENCLAW_DISABLE_BONJOUR=1
+      - AGENTSHROUD_INSTANCE_LABEL=${AGENTSHROUD_INSTANCE_LABEL:-prod}
       - NPM_CONFIG_PREFIX=/home/node/.npm-global
       - NPM_CONFIG_CACHE=/home/node/.npm-global/.cache
       - PATH=/home/node/.npm-global/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
