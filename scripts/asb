@@ -70,6 +70,12 @@ setup_ephemeral_secrets() {
     echo "ERROR: secret extraction failed" >&2; exit 1
   }
 
+  # The Docker daemon inside the Colima VM runs under a different UID and cannot
+  # stat files created with chmod 600. Relax permissions on this ephemeral tmpdir
+  # so the daemon can bind-mount the files. The directory is cleaned up on EXIT.
+  chmod 755 "$tmpdir"
+  chmod 644 "$tmpdir"/*.txt 2>/dev/null || true
+
   # Create empty placeholders for optional secrets so Docker Compose does not
   # refuse to start when a token was not stored (Slack, OpenAI, Google API key).
   for optional in slack_bot_token slack_signing_secret slack_app_token \
