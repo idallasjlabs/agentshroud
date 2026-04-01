@@ -125,7 +125,7 @@ services:
       interval: 30s
       timeout: 10s
       retries: 3
-      start_period: 30s
+      start_period: 120s
 
     # Gateway DNS — set AGENTSHROUD_DNS_PRIMARY to your Pi-hole/local resolver for ad/tracking protection.
     # AGENTSHROUD_DNS_SECONDARY is the fallback (e.g. router). Defaults to public resolvers.
