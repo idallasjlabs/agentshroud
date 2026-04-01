@@ -322,7 +322,7 @@ This paper presented AgentShroud, a transparent proxy framework implementing 52 
 
 Future work includes: (1) a second blue team assessment on v0.8.0 followed by adversarial red team testing across six phases (trust probing, prompt injection, indirect injection, data exfiltration, exploitation chains, and detection validation) [19]; (2) integration of production security tooling (Wazuh, Trivy, OpenSCAP, ClamAV) from stub implementations to fully operational scanning; (3) multi-platform container runtime support (Colima, Podman, Docker Desktop, Apple Containers); and (4) a professional command center with CLI, TUI, and SSH-accessible interfaces for operational management.
 
-AgentShroud is available under the MIT License at github.com/idallasj/agentshroud.
+AgentShroud is available under the MIT License at github.com/idallasjlabs/agentshroud.
 
 ---
 

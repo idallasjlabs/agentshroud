@@ -29,9 +29,9 @@ classifiers = [
 ]
 
 [project.urls]
-Homepage = "https://github.com/idallasj/agentshroud"
-Documentation = "https://github.com/idallasj/agentshroud/tree/main/docs"
-"Bug Tracker" = "https://github.com/idallasj/agentshroud/issues"
+Homepage = "https://github.com/idallasjlabs/agentshroud"
+Documentation = "https://github.com/idallasjlabs/agentshroud/tree/main/docs"
+"Bug Tracker" = "https://github.com/idallasjlabs/agentshroud/issues"
 
 [project.scripts]
 agentshroud-soc = "gateway.cli.main:main"

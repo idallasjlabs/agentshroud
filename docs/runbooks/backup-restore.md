@@ -90,7 +90,7 @@ If the Pi is completely lost:
 
 2. **Restore code:**
    ```bash
-   git clone https://github.com/idallasj/agentshroud.git ~/Development/agentshroud
+   git clone https://github.com/idallasjlabs/agentshroud.git ~/Development/agentshroud
    ```
 
 3. **Restore conda env:**

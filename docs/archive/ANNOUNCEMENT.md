@@ -321,11 +321,11 @@ One shroud covers every wire. The agent is free to help you.
 
 ## Get Involved
 
-**Repository**: https://github.com/idallasj/agentshroud
+**Repository**: https://github.com/idallasjlabs/agentshroud
 
 **Quick Start**:
 ```bash
-git clone https://github.com/idallasj/agentshroud.git
+git clone https://github.com/idallasjlabs/agentshroud.git
 cd agentshroud
 open setup-wizard.html
 ```
@@ -427,6 +427,6 @@ I chose option 2.
 - If compromised, attacker gets a burner email and $40, not your digital identity
 - Open source, auditable, runs locally
 - Need developers, security engineers, and testers
-- https://github.com/idallasj/agentshroud
+- https://github.com/idallasjlabs/agentshroud
 
 **Let's make AI assistants actually safe to use.**

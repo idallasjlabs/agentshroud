@@ -78,13 +78,13 @@ Actions touching `email_sending`, `file_deletion`, `external_api_calls`, and
 ## Getting Started
 
 ```bash
-git clone https://github.com/idallasj/agentshroud.git
+git clone https://github.com/idallasjlabs/agentshroud.git
 cd agentshroud
 ./docker/setup-secrets.sh store   # store credentials (1Password / Keychain / secret-tool)
 scripts/asb up                    # bring up the stack
 ```
 
-Full setup guide: [README](https://github.com/idallasj/agentshroud#readme)
+Full setup guide: [README](https://github.com/idallasjlabs/agentshroud#readme)
 
 ---
 
@@ -133,7 +133,7 @@ What ships in v1.0.0:
 If your team is deploying LLM agents against real infrastructure, the governance gap is
 real. This closes it.
 
-GitHub: github.com/idallasj/agentshroud
+GitHub: github.com/idallasjlabs/agentshroud
 Support: ko-fi.com/agentshroud
 
 Patent Pending No. 64/018,744.
@@ -162,7 +162,7 @@ Patent Pending No. 64/018,744.
 
 **List entry:**
 ```markdown
-- [AgentShroud](https://github.com/idallasj/agentshroud) — Enterprise governance proxy for autonomous AI agents. 76 security modules, IEC 62443 aligned, prompt injection defense, egress filtering, PII sanitization, and human-in-the-loop approval queue.
+- [AgentShroud](https://github.com/idallasjlabs/agentshroud) — Enterprise governance proxy for autonomous AI agents. 76 security modules, IEC 62443 aligned, prompt injection defense, egress filtering, PII sanitization, and human-in-the-loop approval queue.
 ```
 
 ---
@@ -184,7 +184,7 @@ Patent Pending No. 64/018,744.
 
 **List entry:**
 ```markdown
-- [AgentShroud](https://github.com/idallasj/agentshroud) — Security proxy that wraps AI agents (Claude, Gemini, Codex) with defense-in-depth: 76 active security modules, SOC dashboard, daily CVE reports, and IEC 62443 compliance.
+- [AgentShroud](https://github.com/idallasjlabs/agentshroud) — Security proxy that wraps AI agents (Claude, Gemini, Codex) with defense-in-depth: 76 active security modules, SOC dashboard, daily CVE reports, and IEC 62443 compliance.
 ```
 
 ---
@@ -206,5 +206,5 @@ Patent Pending No. 64/018,744.
 
 **List entry:**
 ```markdown
-- [AgentShroud](https://github.com/idallasj/agentshroud) — AI agent governance proxy. Intercepts and policy-enforces every LLM tool call. Covers OWASP LLM Top 10, IEC 62443, prompt injection, PII leakage, egress exfiltration, and container escape mitigation.
+- [AgentShroud](https://github.com/idallasjlabs/agentshroud) — AI agent governance proxy. Intercepts and policy-enforces every LLM tool call. Covers OWASP LLM Top 10, IEC 62443, prompt injection, PII leakage, egress exfiltration, and container escape mitigation.
 ```

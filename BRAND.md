@@ -7,13 +7,13 @@
 - **Subtitle**: Enterprise Governance Proxy for Autonomous AI Agents
 - **Domain**: [agentshroud.ai](https://agentshroud.ai)
 - **Email**: agentshroud.ai@gmail.com
-- **GitHub**: [github.com/idallasj/agentshroud](https://github.com/idallasj/agentshroud)
+- **GitHub**: [github.com/idallasjlabs/agentshroud](https://github.com/idallasjlabs/agentshroud)
 
 ## Social Handles
 
 Use **@agentshroud** consistently across all platforms:
 
-- GitHub: [@idallasj/agentshroud](https://github.com/idallasj/agentshroud)
+- GitHub: [@idallasjlabs/agentshroud](https://github.com/idallasjlabs/agentshroud)
 - Twitter/X: @agentshroud
 - LinkedIn: @agentshroud
 - All other platforms: @agentshroud
