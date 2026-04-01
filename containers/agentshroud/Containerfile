@@ -1,3 +1,4 @@
+# DEPRECATED: Use docker/Dockerfile.agentshroud instead. This Containerfile is retained for reference only.
 # AgentShroud OpenClaw Container - Real OpenClaw Platform
 # Goal: Full OpenClaw features (agents, skills, MCP) with bot identity
 # Base: Node.js 22 (required by OpenClaw)

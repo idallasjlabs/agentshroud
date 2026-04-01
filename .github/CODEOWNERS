@@ -1,0 +1,15 @@
+# AgentShroud™ — Code Owners
+# All pull requests require review from the owner(s) listed for each path.
+# More specific rules override broader ones.
+
+# Default owner for all files not matched by a more specific rule
+* @idallasj
+
+# Security modules — require owner review on all changes
+gateway/security/ @idallasj
+
+# Container stack and sidecars (Falco, ClamAV, Wazuh, Fluent Bit)
+docker/ @idallasj
+
+# GitHub configuration and CI/CD workflows
+.github/ @idallasj

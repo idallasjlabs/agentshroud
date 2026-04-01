@@ -1,4 +1,6 @@
 # Copyright (c) 2026 Isaiah Dallas Jefferson, Jr. AgentShroud\u2122
+# AgentShroud™ is a trademark of Isaiah Dallas Jefferson, Jr. (USPTO Serial No. 99728633)
+# Patent Pending — U.S. Provisional Application No. 64/018,744
 from __future__ import annotations
 import base64
 import codecs
