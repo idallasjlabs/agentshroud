@@ -1,0 +1,10 @@
+{
+  "_note": "This file is auto-generated. Run scripts/export-openapi.sh with the gateway running to regenerate.",
+  "openapi": "3.0.0",
+  "info": {
+    "title": "AgentShroud Gateway API",
+    "version": "1.0.0",
+    "description": "AgentShroud enterprise governance proxy API. Run scripts/export-openapi.sh to generate the full spec."
+  },
+  "paths": {}
+}

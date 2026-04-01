@@ -813,7 +813,7 @@ tool invocation is intercepted, inspected, logged, and policy-enforced without d
 the agent's native workflow.
 
 ```
-AI Agent → AgentShroud Gateway (33 security modules) → Target System
+AI Agent → AgentShroud Gateway (76 security modules) → Target System
 ```
 
 **Control surfaces:** Telegram, iOS Shortcuts, Browser Extension, SSH, REST API — all over Tailscale.
@@ -825,7 +825,7 @@ AI Agent → AgentShroud Gateway (33 security modules) → Target System
 | Path | Contents |
 |------|----------|
 | `gateway/` | Core proxy, runtime, approval queue, ingest API, SSH proxy |
-| `gateway/security/` | All 33 security modules |
+| `gateway/security/` | All 76 security modules |
 | `gateway/soc/` | SOC team collaboration features |
 | `gateway/proxy/` | Request interception and routing |
 | `gateway/runtime/` | Agent runtime management |
