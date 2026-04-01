@@ -23,7 +23,7 @@
     <img src="https://img.shields.io/badge/License-MIT-yellow.svg" alt="MIT License" />
   </a>
   <img src="https://img.shields.io/badge/trademark-AgentShroud™-1583f0" alt="AgentShroud™ Trademark" />
-  <img src="https://img.shields.io/badge/modules-33-blueviolet" alt="33 Security Modules" />
+  <img src="https://img.shields.io/badge/modules-76-blueviolet" alt="76 Security Modules" />
 </p>
 
 <p><em>Built by a system architect, for system architects. Powered by agents. Governed by design.</em></p>
@@ -44,9 +44,9 @@ AgentShroud is simultaneously a **production-grade tool**, a **learning laborato
 
 ---
 
-## What's New — February 2026
+## What's New — v1.0.0 "Fortress" (March 2026)
 
-A major development sprint wired all **33 security modules** into the live pipeline and delivered two complete control center interfaces:
+A major development sprint wired all **76 security modules** into the live pipeline and delivered two complete control center interfaces:
 
 - **P0 — Core Pipeline**: PromptGuard, TrustManager, EgressFilter, PII fix, gateway binding
 - **P1 — Middleware**: 12 modules wired (7 original + SessionManager, TokenValidator, ConsentFramework, SubagentMonitor, AgentRegistry) + MCP fail-closed enforcement
@@ -55,7 +55,7 @@ A major development sprint wired all **33 security modules** into the live pipel
 - **Web Control Center**: 7-page responsive dashboard for browser-based management
 - **Terminal Control Center**: Full TUI + chat console (optimized for Blink Shell / mobile)
 
-All 33 security modules are now **active in the pipeline** — no stubs, no dead code, no planned-but-unbuilt features.
+All 76 security modules are now **active in the pipeline** — no stubs, no dead code, no planned-but-unbuilt features.
 
 ---
 
@@ -119,9 +119,9 @@ All 33 security modules are now **active in the pipeline** — no stubs, no dead
 
 ---
 
-## 30 Security Modules
+## 76 Security Modules
 
-AgentShroud implements a defense-in-depth strategy with 33 security modules operating across 7 distinct layers, from network isolation to application-level content filtering.
+AgentShroud implements a defense-in-depth strategy with 76 security modules operating across 7 distinct layers, from network isolation to application-level content filtering.
 
 ### Core Security Pipeline
 

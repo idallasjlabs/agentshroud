@@ -38,7 +38,7 @@ policy-enforced without disrupting the agent's native workflow.
 AI Agent → AgentShroud Gateway (33 security modules) → Target System
 ```
 
-**Current branch:** `feat/v0.9.0-soc-team-collab` ("Sentinel") — v0.9.0 → v1.0.0
+**Current branch:** `feat/v1.0.0` ("Fortress") — v1.0.0
 **Test coverage:** ≥94% — 3,404+ tests total; maintain or improve
 **Language:** Python 3.9+, Node.js 22
 
@@ -46,7 +46,7 @@ AI Agent → AgentShroud Gateway (33 security modules) → Target System
 |------|----------|
 | `gateway/` | Core proxy, runtime, ingest API, SSH proxy |
 | `gateway/security/` | All 33 security modules |
-| `gateway/soc/` | SOC team collaboration (v0.9.0 focus) |
+| `gateway/soc/` | SOC team collaboration (v1.0.0) |
 | `gateway/proxy/` | Request interception and routing |
 | `gateway/tests/` | Primary test suite |
 | `docker/` | Container stack (Falco, ClamAV, Wazuh, Fluent Bit) |

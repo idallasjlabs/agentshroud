@@ -59,7 +59,7 @@ _asb_banner() {
 setup_ephemeral_secrets() {
   local tmpdir
   tmpdir="$(mktemp -d "${TMPDIR:-/tmp}/asb-secrets.XXXXXX")"
-  trap 'rm -rf "$tmpdir"' EXIT
+  trap '[[ -n "${tmpdir:-}" ]] && rm -rf "$tmpdir"' EXIT
 
   # Extract secrets from credential backend → tmpdir (suppress interactive banner)
   AGENTSHROUD_SECRETS_DIR="$tmpdir" "$REPO_DIR/docker/setup-secrets.sh" extract || {
@@ -139,10 +139,8 @@ case "${1:-}" in
       docker volume rm "${PROJECT}_${vol}" 2>/dev/null && echo "  Removed ${PROJECT}_${vol}" || true
     done
     # Prune BuildKit cache to clear stale overlay snapshots from previous failed builds.
-    # docker compose uses BuildKit (not the legacy builder), so docker buildx prune is
-    # required — docker builder prune targets the deprecated legacy builder and reclaims 0 bytes.
     echo "Pruning BuildKit cache..."
-    docker buildx prune -a -f
+    docker builder prune -f 2>/dev/null || docker buildx prune -f 2>/dev/null || true
     setup_ephemeral_secrets
     $COMPOSE build --no-cache
     $COMPOSE up -d

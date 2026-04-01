@@ -153,7 +153,7 @@ logger = logging.getLogger("agentshroud.gateway.main")
 app = FastAPI(
     title="AgentShroud Gateway",
     description="Ingest API for the AgentShroud proxy layer framework",
-    version="0.9.0",
+    version="1.0.0",
     lifespan=lifespan,
 )
 
@@ -422,7 +422,7 @@ async def system_control(auth: AuthRequired):
 
         <div class="status">
             <h2 class="healthy">● System Status: HEALTHY</h2>
-            <div class="metric">Version: 0.8.0</div>
+            <div class="metric">Version: 1.0.0</div>
             <div class="metric">Uptime: {int(uptime)}s</div>
             <div class="metric">PII Engine: {app_state.sanitizer.get_mode()}</div>
         </div>
@@ -3443,7 +3443,7 @@ async def refresh_dns_blocklist(auth: AuthRequired):
     return bl.stats()
 
 
-# === SOC 2 Compliance Report (v0.8.0 Feature 1d) ===
+# === SOC 2 Compliance Report (v1.0.0 Feature 1d) ===
 
 @app.get("/manage/compliance/soc2")
 async def get_soc2_compliance_report(auth: AuthRequired):
@@ -3559,7 +3559,7 @@ async def get_soc2_compliance_report(auth: AuthRequired):
 
     return {
         "standard": "SOC 2 Type II — Trust Service Criteria",
-        "version": "v0.9.0",
+        "version": "v1.0.0",
         "criteria_total": len(criteria),
         "criteria_covered": len(covered),
         "criteria_gaps": len(gaps),
@@ -3738,7 +3738,7 @@ async def llm_proxy_stats(auth: AuthRequired):
     return llm_proxy.get_stats()
 
 
-# === Telegram API Reverse Proxy (v0.8.0) ===
+# === Telegram API Reverse Proxy (v1.0.0) ===
 # All bot Telegram traffic routes through this endpoint for security scanning.
 # Bot uses TELEGRAM_API_BASE_URL=http://gateway:8080/telegram-api
 

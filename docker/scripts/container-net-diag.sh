@@ -91,7 +91,7 @@ has() { command -v "$1" >/dev/null 2>&1; }
 # ── Start ────────────────────────────────────────────────────────────────────
 if ! $JSON_MODE; then
   echo -e "${BOLD}╔════════════════════════════════════════════════════════╗${NC}"
-  echo -e "${BOLD}║   Container Network Diagnostic — AgentShroud v0.8.0   ║${NC}"
+  echo -e "${BOLD}║   Container Network Diagnostic — AgentShroud v1.0.0   ║${NC}"
   echo -e "${BOLD}╚════════════════════════════════════════════════════════╝${NC}"
   echo ""
   echo "  Container: $(hostname 2>/dev/null || echo unknown)"

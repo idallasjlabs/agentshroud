@@ -24,13 +24,23 @@ SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 SECRETS_DIR="${AGENTSHROUD_SECRETS_DIR:-${SCRIPT_DIR}/secrets}"
 
 # ── Credential backend detection ──────────────────────────────────────────────
+# AGENTSHROUD_SECRET_BACKEND env var always wins.
+# Auto-detection falls back to 'homedir' when stdin is not a TTY (service
+# account / SSH / launchd) because macOS Keychain requires an interactive
+# login session and will fail with "User interaction is not allowed".
+SECRETS_HOME_DIR="${HOME}/.agentshroud/secrets"
+
 detect_backend() {
     if command -v op &>/dev/null && op account list &>/dev/null 2>&1; then
         echo "1password"
-    elif [[ "$(uname)" == "Darwin" ]]; then
+    elif [[ "$(uname)" == "Darwin" ]] && [[ -t 0 ]]; then
+        # Only use Keychain when we have an interactive TTY
         echo "keychain"
-    elif command -v secret-tool &>/dev/null; then
+    elif command -v secret-tool &>/dev/null && [[ -t 0 ]]; then
         echo "secretstore"
+    elif [[ -d "${SECRETS_HOME_DIR}" ]]; then
+        # Service account fallback: home-directory secrets store
+        echo "homedir"
     else
         echo "prompt"
     fi
@@ -57,6 +67,12 @@ store_secret() {
         secretstore)
             secret-tool store --label="agentshroud-${name}" service agentshroud key "${name}" <<< "${value}"
             ;;
+        homedir)
+            mkdir -p "${SECRETS_HOME_DIR}"
+            chmod 700 "${SECRETS_HOME_DIR}"
+            printf '%s' "$value" > "${SECRETS_HOME_DIR}/${name}.txt"
+            chmod 600 "${SECRETS_HOME_DIR}/${name}.txt"
+            ;;
         prompt)
             mkdir -p "${SECRETS_DIR}"
             printf '%s' "$value" > "${SECRETS_DIR}/${name}.txt"
@@ -76,6 +92,9 @@ get_secret() {
             ;;
         secretstore)
             secret-tool lookup service agentshroud key "${name}" 2>/dev/null || true
+            ;;
+        homedir)
+            cat "${SECRETS_HOME_DIR}/${name}.txt" 2>/dev/null || true
             ;;
         prompt)
             cat "${SECRETS_DIR}/${name}.txt" 2>/dev/null || true
