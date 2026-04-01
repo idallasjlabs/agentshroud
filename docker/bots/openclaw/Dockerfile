@@ -9,15 +9,13 @@ FROM node:22-bookworm-slim@sha256:5373f1906319b3a1f291da5d102f4ce5c77ccbe29eb637
 ENV DEBIAN_FRONTEND=noninteractive
 
 # Install system dependencies
-# /apt-dl is on the writable layer (real disk), not tmpfs — avoids "no space in /tmp" on constrained hosts.
 # Trusted:yes workaround: apt 2.6 on ARM64/bookworm fails gpgv clearsign verification due to an apt bug,
 # even though manual gpgv --keyring confirms GOODSIG. Individual package hashes are still verified.
 # NOTE (upstream bug): remove Trusted:yes sed patch (and the same flag in Wazuh/1Password list entries below) once
 # Debian bookworm ships a fixed apt that resolves the ARM64 gpgv clearsign bug.
-RUN mkdir -p /apt-dl/partial \
-    && sed -i 's/^Signed-By:.*/Trusted: yes/' /etc/apt/sources.list.d/debian.sources \
+RUN sed -i 's/^Signed-By:.*/Trusted: yes/' /etc/apt/sources.list.d/debian.sources \
     && apt-get update \
-    && apt-get -o Dir::Cache::archives=/apt-dl install -y --no-install-recommends \
+    && apt-get install -y --no-install-recommends \
         openssh-client \
         netcat-openbsd \
         git \
@@ -27,7 +25,7 @@ RUN mkdir -p /apt-dl/partial \
         gosu \
         gnupg \
         clamav clamav-daemon clamav-freshclam \
-    && rm -rf /apt-dl/* /var/lib/apt/lists/*
+    && rm -rf /var/cache/apt/archives/*.deb /var/lib/apt/lists/*
 
 # Trivy vulnerability scanner — pinned version with checksum verification (M7 fix)
 ARG TRIVY_VERSION=0.69.3
@@ -63,10 +61,9 @@ RUN curl -sSfL https://packages.wazuh.com/key/GPG-KEY-WAZUH \
     && echo "deb [trusted=yes signed-by=/usr/share/keyrings/wazuh.gpg] https://packages.wazuh.com/4.x/apt/ stable main" \
         > /etc/apt/sources.list.d/wazuh.list \
     && apt-get update \
-    && mkdir -p /apt-dl/partial \
-    && WAZUH_MANAGER=127.0.0.1 apt-get -o Dir::Cache::archives=/apt-dl install -y --no-install-recommends \
+    && WAZUH_MANAGER=127.0.0.1 apt-get install -y --no-install-recommends \
         wazuh-agent=${WAZUH_VERSION}-1 \
-    && rm -rf /apt-dl/* /var/lib/apt/lists/* \
+    && rm -rf /var/cache/apt/archives/*.deb /var/lib/apt/lists/* \
     && chown -R node:node /var/ossec
 
 # Install bun via npm (avoids curl|bash supply chain risk)
@@ -105,9 +102,8 @@ RUN curl -sS https://downloads.1password.com/linux/keys/1password.asc | \
     echo "deb [arch=$(dpkg --print-architecture) trusted=yes signed-by=/usr/share/keyrings/1password-archive-keyring.gpg] https://downloads.1password.com/linux/debian/$(dpkg --print-architecture) stable main" | \
     tee /etc/apt/sources.list.d/1password.list && \
     apt-get update \
-    && mkdir -p /apt-dl/partial \
-    && apt-get -o Dir::Cache::archives=/apt-dl install -y --no-install-recommends 1password-cli \
-    && rm -rf /apt-dl/* /var/lib/apt/lists/*
+    && apt-get install -y --no-install-recommends 1password-cli \
+    && rm -rf /var/cache/apt/archives/*.deb /var/lib/apt/lists/*
 # Create directories for AgentShroud configuration and workspace
 # Create directories for AgentShroud configuration and workspace
 # Note: OpenClaw CLI expects ~/.openclaw, so we symlink it to ~/.agentshroud
