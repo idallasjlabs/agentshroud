@@ -8298,6 +8298,88 @@ class TestFileDownload:
         assert result.get("ok") is False
         assert result.get("error_code") == 502
 
+    # ── CVE-2026-32049: oversized media rejection tests ───────────────────────
+
+    @pytest.mark.asyncio
+    async def test_oversized_document_update_is_dropped(self):
+        """Inbound update with document.file_size > limit must be dropped (CVE-2026-32049)."""
+        from gateway.proxy.telegram_proxy import _MAX_MEDIA_FILE_SIZE
+
+        proxy = TelegramAPIProxy(pipeline=PassthroughPipeline())
+        proxy._rbac = FakeRBAC()
+        proxy._bot_token = ""
+
+        oversized_update = {
+            "update_id": 1,
+            "message": {
+                "message_id": 1,
+                "from": {"id": 999, "is_bot": False, "first_name": "Attacker"},
+                "chat": {"id": 999, "type": "private"},
+                "date": 1700000000,
+                "document": {
+                    "file_id": "abc123",
+                    "file_unique_id": "xyz",
+                    "file_name": "evil.zip",
+                    "mime_type": "application/zip",
+                    "file_size": _MAX_MEDIA_FILE_SIZE + 1,
+                },
+            },
+        }
+        result = await proxy._filter_inbound_updates(_wrap_response(oversized_update))
+        assert len(result["result"]) == 0, "Oversized document must be dropped"
+
+    @pytest.mark.asyncio
+    async def test_within_limit_document_update_passes(self):
+        """Inbound update with document.file_size within limit must pass (CVE-2026-32049)."""
+        from gateway.proxy.telegram_proxy import _MAX_MEDIA_FILE_SIZE
+
+        proxy = TelegramAPIProxy(pipeline=PassthroughPipeline())
+        proxy._rbac = FakeRBAC()
+        proxy._bot_token = ""
+
+        ok_update = {
+            "update_id": 1,
+            "message": {
+                "message_id": 1,
+                "from": {"id": 999, "is_bot": False, "first_name": "User"},
+                "chat": {"id": 999, "type": "private"},
+                "date": 1700000000,
+                "document": {
+                    "file_id": "abc123",
+                    "file_unique_id": "xyz",
+                    "file_name": "report.pdf",
+                    "mime_type": "application/pdf",
+                    "file_size": _MAX_MEDIA_FILE_SIZE - 1,
+                },
+            },
+        }
+        result = await proxy._filter_inbound_updates(_wrap_response(ok_update))
+        assert len(result["result"]) == 1, "Within-limit document must be forwarded"
+
+    @pytest.mark.asyncio
+    async def test_forward_file_download_aborts_at_size_limit(self, monkeypatch):
+        """_forward_file_download must raise when streamed bytes exceed limit (CVE-2026-32049)."""
+        import io
+        from gateway.proxy.telegram_proxy import _MAX_MEDIA_FILE_SIZE
+
+        # Fake response that reports fewer bytes via Content-Length but streams more.
+        oversized_body = b"A" * (_MAX_MEDIA_FILE_SIZE + 1)
+
+        class _FakeResponse:
+            status = 200
+            headers = {"Content-Type": "application/octet-stream"}
+
+            def read(self, n=-1):
+                if n == -1:
+                    return oversized_body
+                return oversized_body[:n] if n <= len(oversized_body) else oversized_body
+
+        proxy = TelegramAPIProxy()
+        monkeypatch.setattr("urllib.request.urlopen", lambda *a, **kw: _FakeResponse())
+
+        with pytest.raises(ValueError, match="exceeds size limit"):
+            await proxy._forward_file_download("https://api.telegram.org/file/botTOKEN/big.bin")
+
     @pytest.mark.asyncio
     async def test_proxy_request_api_path_still_json_parsed(self, monkeypatch):
         """proxy_request without file/ prefix still JSON-parses the response."""
