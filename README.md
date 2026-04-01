@@ -407,6 +407,12 @@ If you are a system architect who wants to use LLMs to build real software, brin
 
 ---
 
+## Media
+
+- 🎙️ **[Introduction to AgentShroud](https://overcast.fm/+ABV5l7XfkRk)** — Podcast episode covering the motivation, architecture, and real-world use cases for AgentShroud.
+
+---
+
 ## Acknowledgments
 
 The bot layer is built on [OpenClaw](https://github.com/openclaw/openclaw) — the open-source AI agent framework. AgentShroud wraps it with an enterprise security and governance layer without modifying the underlying platform.
