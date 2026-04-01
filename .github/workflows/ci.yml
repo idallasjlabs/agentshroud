@@ -14,7 +14,7 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        python-version: ["3.11"]
+        python-version: ["3.11", "3.13"]
 
     steps:
       - uses: actions/checkout@v4
@@ -69,7 +69,7 @@ jobs:
       - name: Security audit
         run: |
           pip install -r gateway/requirements.txt
-          pip-audit --desc on --fix --dry-run || true
+          pip-audit --desc on --fix --dry-run
 
   gitleaks:
     name: Secret Scanning (gitleaks)

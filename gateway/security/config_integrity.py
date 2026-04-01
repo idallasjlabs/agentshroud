@@ -1,4 +1,6 @@
 # Copyright © 2026 Isaiah Dallas Jefferson, Jr. AgentShroud™. All rights reserved.
+# AgentShroud™ is a trademark of Isaiah Dallas Jefferson, Jr. (USPTO Serial No. 99728633)
+# Patent Pending — U.S. Provisional Application No. 64/018,744
 """Config Integrity Monitor — detects tampering with bot configuration files.
 
 Hashes openclaw.json and other security-critical workspace files at gateway

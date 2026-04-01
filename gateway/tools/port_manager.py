@@ -279,10 +279,7 @@ if __name__ == "__main__":
     logging.basicConfig(level=logging.INFO, format="%(message)s")
     host = sys.argv[1] if len(sys.argv) > 1 else "0.0.0.0"
     result = check_and_report(host)
-    print(f"\nConflicts: {result.conflicts_found}")
-    print(f"Final ports: {result.ports}")
     if result.has_conflicts:
-        print("\nCompose port mappings:")
         pm = PortManager(host=host)
         for svc, mapping in pm.generate_compose_ports(result).items():
-            print(f"  {svc}: {mapping}")
+            logging.info("  %s: %s", svc, mapping)
