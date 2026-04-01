@@ -93,7 +93,7 @@ We follow the [Contributor Covenant](https://www.contributor-covenant.org/versio
 
 ## Questions?
 
-Open a [Discussion](https://github.com/idallasj/agentshroud/discussions) for general questions or file a [GitHub Issue](https://github.com/idallasj/agentshroud/issues) for bugs and feature requests.
+Open a [Discussion](https://github.com/idallasjlabs/agentshroud/discussions) for general questions or file a [GitHub Issue](https://github.com/idallasjlabs/agentshroud/issues) for bugs and feature requests.
 
 ## Response SLA
 
