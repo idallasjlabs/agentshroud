@@ -218,47 +218,67 @@ A full TUI (Text User Interface) + chat console designed for terminal-first work
 
 ## Quickstart
 
-Get AgentShroud running in 5 minutes:
+### Prerequisites
 
-### 1. Clone & Configure
+- **Git**
+- **Docker Engine** — [Colima](https://github.com/abiosoft/colima) on macOS, Docker CE on Linux
+- **Claude OAuth token** — `sk-ant-oat01-...` (required)
+- **Telegram bot token** — create one via [@BotFather](https://t.me/BotFather) (required)
+- **1Password account** — email, master password, and secret key (required)
+- **Python 3** — for gateway key generation
+
+### 1. Clone
 
 ```bash
 git clone https://github.com/idallasjlabs/agentshroud.git
 cd agentshroud
-
-# Copy example config
-cp examples/minimal.env .env
-
-# Generate auth token
-python3 -c "import secrets; print(f'GATEWAY_AUTH_TOKEN={secrets.token_hex(32)}')" >> .env
 ```
 
-### 2. Start with Docker Compose
+### 2. Store credentials
 
 ```bash
-docker compose -f examples/docker-compose.minimal.yml up -d
+./docker/setup-secrets.sh store
 ```
 
-### 3. Verify
+This prompts for each credential interactively. The backend is auto-detected:
+
+| Backend | Platform | Requires |
+|---------|----------|---------|
+| 1Password CLI | Any | `op` CLI installed and signed in |
+| macOS Keychain | macOS | Interactive TTY |
+| secret-tool | Linux | `libsecret` / `secret-tool` in PATH |
+| `~/.agentshroud/secrets/` | Any | SSH sessions, service accounts |
+
+Secrets required: Claude OAuth token, Telegram bot token, 1Password email/master password/secret key.
+Optional: OpenAI API key, Google API key, Slack tokens.
+
+### 3. Start the stack
 
 ```bash
-# Health check
-curl -s http://localhost:8080/health | python3 -m json.tool
-
-# Web Control Center
-open http://localhost:3000
+scripts/asb up
 ```
 
-### 4. Forward Your First Data
+Secrets are extracted into a temp directory for the duration of `docker compose up` and cleaned up automatically on exit — nothing persists on disk.
+
+### 4. Verify
 
 ```bash
-curl -X POST http://localhost:8080/api/v1/forward \
-  -H "Authorization: Bearer YOUR_TOKEN" \
-  -H "Content-Type: application/json" \
-  -d '{"content": "Hello from AgentShroud!", "source": "api", "content_type": "text"}'
+scripts/asb status   # container health
+scripts/asb logs     # tail all logs
 ```
 
-That's it! The gateway is now filtering all data between you and your OpenClaw agent.
+### `asb` reference
+
+| Command | Action |
+|---------|--------|
+| `asb up` | Start the stack |
+| `asb down` | Stop the stack |
+| `asb rebuild` | Rebuild images and restart |
+| `asb clean-rebuild` | Full teardown, prune, rebuild, restart |
+| `asb status` | Show container health |
+| `asb logs [service]` | Tail logs |
+| `asb test` | Run test suite inside gateway container |
+| `asb pull` | `git pull --rebase` |
 
 ---
 
