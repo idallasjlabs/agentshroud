@@ -260,6 +260,11 @@ services:
 
 
 # ── Secrets ────────────────────────────────────────────────────────────────────
+# `asb up/rebuild/clean-rebuild` extracts secrets from the credential backend
+# (1Password/Keychain/secret-tool) into a tmpdir and overrides these file: paths
+# at runtime — no persistent plaintext files on the host. The paths below are
+# fallbacks for manual `docker compose` usage; run `./setup-secrets.sh extract`
+# to populate them, or prefer `asb up` (recommended).
 secrets:
   gateway_password:
     file: ./secrets/gateway_password.txt
