@@ -1645,6 +1645,23 @@ async def get_trivy_results(caller: SCLCaller = Depends(get_caller)) -> Dict:
         return {"tool": "trivy", "status": "error", "error": str(exc), "findings": 0}
 
 
+@router.get("/agent-cves")
+async def get_agent_cves(caller: SCLCaller = Depends(get_caller)) -> Dict:
+    """Return the CVE registry for the wrapped AI agent (currently OpenClaw).
+
+    Each entry includes CVE metadata, CVSS score, and AgentShroud mitigation status
+    (fully_mitigated / partially_mitigated / not_mitigated) with defense layer details.
+    Powers the SOC CVE Intelligence page.
+    """
+    caller.require(Action.READ, Resource.SYSTEM)
+    try:
+        from ..security.agent_cve_registry import get_agent_cve_summary
+        return get_agent_cve_summary()
+    except Exception as exc:
+        logger.warning("get_agent_cves: %s", exc)
+        return {"error": str(exc)}
+
+
 @router.post("/cve-report")
 async def trigger_cve_report(caller: SCLCaller = Depends(get_caller)) -> Dict:
     """Run a Trivy CVE scan immediately and send the report via Telegram.
@@ -1685,7 +1702,7 @@ async def trigger_cve_report(caller: SCLCaller = Depends(get_caller)) -> Dict:
 # ---------------------------------------------------------------------------
 
 _GH_RELEASES_API = "https://api.github.com/repos/idallasj/agentshroud/releases/latest"
-_CURRENT_VERSION = "0.9.0"
+_CURRENT_VERSION = "1.0.0"
 
 
 def _fetch_latest_release() -> Dict:
