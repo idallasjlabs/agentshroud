@@ -58,7 +58,9 @@ _asb_banner() {
 # Secret files exist on the host only for the duration of `docker compose up`.
 setup_ephemeral_secrets() {
   local tmpdir
-  tmpdir="$(mktemp -d "${TMPDIR:-/tmp}/asb-secrets.XXXXXX")"
+  # Use /tmp/ explicitly — macOS $TMPDIR resolves to /var/folders/ which is NOT
+  # shared into the Colima VM, so Docker can't bind-mount files from there.
+  tmpdir="$(mktemp -d /tmp/asb-secrets.XXXXXX)"
   trap '[[ -n "${tmpdir:-}" ]] && rm -rf "$tmpdir"' EXIT
 
   # Extract secrets from credential backend → tmpdir (suppress interactive banner)
