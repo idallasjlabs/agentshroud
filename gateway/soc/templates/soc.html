@@ -21,7 +21,7 @@
       <span class="brand-name">AgentShroud™</span>
       <span class="brand-sub">Security Operations Command Center</span>
     </div>
-    <span class="brand-version">v0.9.0</span>
+    <span class="brand-version">v1.0.0</span>
   </div>
 
   <div class="topbar-center">
@@ -51,6 +51,7 @@
     <a class="nav-item" data-tab="security">Security Events</a>
     <a class="nav-item" data-tab="scanners">Scanners</a>
     <a class="nav-item" data-tab="scorecard">Scorecard</a>
+    <a class="nav-item" data-tab="agent-cves">CVE Intelligence</a>
     <div class="nav-section">Manage</div>
     <a class="nav-item" data-tab="services">Services</a>
     <a class="nav-item" data-tab="contributors">Contributors</a>
@@ -453,6 +454,69 @@
       <div class="panel">
         <div class="panel-header">Security Modules</div>
         <div class="panel-body" id="modules-view" style="color:var(--text-muted);font-size:12px">loading...</div>
+      </div>
+    </div>
+
+    <!-- ── CVE Intelligence ──────────────────────────────── -->
+    <div id="tab-agent-cves" class="tab-pane" style="display:none">
+      <h2>CVE Intelligence</h2>
+
+      <!-- Summary bar -->
+      <div id="cve-summary-bar" class="kpi-strip" style="margin-bottom:1.5rem">
+        <div class="kpi-card"><div class="kpi-label">Wrapped Agent</div><div class="kpi-value" id="cve-kpi-agent">--</div><div class="kpi-sub">upstream agent</div></div>
+        <div class="kpi-card"><div class="kpi-label">Agent CVEs</div><div class="kpi-value" id="cve-kpi-total">--</div><div class="kpi-sub">tracked</div></div>
+        <div class="kpi-card"><div class="kpi-label">Fully Mitigated</div><div class="kpi-value" id="cve-kpi-full" style="color:var(--green)">--</div><div class="kpi-sub">by AgentShroud</div></div>
+        <div class="kpi-card"><div class="kpi-label">Partial / Open</div><div class="kpi-value" id="cve-kpi-partial" style="color:var(--warning)">--</div><div class="kpi-sub">gaps remain</div></div>
+        <div class="kpi-card"><div class="kpi-label">Container CVEs</div><div class="kpi-value" id="cve-kpi-container">--</div><div class="kpi-sub">Trivy scan</div></div>
+      </div>
+
+      <!-- Upstream agent CVEs -->
+      <div class="panel" style="margin-bottom:1.5rem">
+        <div class="panel-header" style="display:flex;align-items:center;justify-content:space-between">
+          <span id="cve-agent-header">Upstream Agent CVEs</span>
+          <div style="display:flex;gap:0.5rem;align-items:center">
+            <select id="cve-status-filter" class="filter-select" style="font-size:11px">
+              <option value="">All statuses</option>
+              <option value="fully_mitigated">Fully Mitigated</option>
+              <option value="partially_mitigated">Partially Mitigated</option>
+              <option value="not_mitigated">Not Mitigated</option>
+            </select>
+            <select id="cve-sev-filter" class="filter-select" style="font-size:11px">
+              <option value="">All severities</option>
+              <option value="CRITICAL">Critical</option>
+              <option value="HIGH">High</option>
+              <option value="MEDIUM">Medium</option>
+              <option value="LOW">Low</option>
+            </select>
+          </div>
+        </div>
+        <div class="panel-body" style="padding:0;overflow-x:auto">
+          <div id="agent-cve-table">
+            <div style="padding:1rem;color:var(--text-muted);font-size:12px">Loading CVE registry...</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Container / dependency CVEs (Trivy) -->
+      <div class="panel">
+        <div class="panel-header" style="display:flex;align-items:center;justify-content:space-between">
+          <span>Container &amp; Dependency CVEs (Trivy)</span>
+          <div style="display:flex;gap:0.5rem">
+            <select id="trivy-sev-filter" class="filter-select" style="font-size:11px">
+              <option value="">All severities</option>
+              <option value="CRITICAL">Critical</option>
+              <option value="HIGH">High</option>
+              <option value="MEDIUM">Medium</option>
+              <option value="LOW">Low</option>
+            </select>
+            <button class="btn btn-primary" style="font-size:11px;padding:0.2rem 0.6rem" onclick="window._triggerCveReport()">▶ Run Scan &amp; Send Report</button>
+          </div>
+        </div>
+        <div class="panel-body" style="padding:0;overflow-x:auto">
+          <div id="trivy-cve-table">
+            <div style="padding:1rem;color:var(--text-muted);font-size:12px">Loading Trivy results...</div>
+          </div>
+        </div>
       </div>
     </div>
 
