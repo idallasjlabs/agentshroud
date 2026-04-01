@@ -31,6 +31,26 @@ else
   COMPOSE="docker compose -f $REPO_DIR/docker/docker-compose.yml -p $PROJECT"
 fi
 
+# ── Instance banner ──────────────────────────────────────────────────────────
+# Prints a one-line banner identifying which instance asb is operating on.
+# Makes PROD vs DEV immediately obvious when multiple stacks run on the same host.
+_asb_banner() {
+  local label gw_port bot_port
+  if [ "$USER" = "agentshroud-bot" ]; then
+    label="DEV"
+    case "$HOST" in
+      marvin*) gw_port=9080; bot_port=19789 ;;
+      *)       gw_port=8080; bot_port=18790 ;;
+    esac
+  else
+    label="PROD"
+    gw_port=8080
+    bot_port=18790
+  fi
+  printf '\n== AgentShroud™ [%s] %s@%s  |  project: %s  |  gw: :%s  bot: :%s ==\n\n' \
+    "$label" "$USER" "$HOST" "$PROJECT" "$gw_port" "$bot_port"
+}
+
 # ── Ephemeral secrets injection ──────────────────────────────────────────────
 # Reads secrets from the credential backend (1Password/Keychain/secret-tool)
 # into a mktemp directory, generates a compose override that remaps all
@@ -95,6 +115,8 @@ YAML
 
   COMPOSE="$COMPOSE -f $override"
 }
+
+_asb_banner
 
 case "${1:-}" in
   build)   $COMPOSE build --no-cache ;;

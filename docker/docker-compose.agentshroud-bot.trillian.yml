@@ -4,15 +4,19 @@
 # Usage: docker compose -f docker/docker-compose.yml -f docker/docker-compose.agentshroud-bot.trillian.yml -p agentshroud up -d
 services:
   gateway:
+    container_name: agentshroud-trillian-gateway
     environment:
       - AGENTSHROUD_COMPOSE_HOST=trillian
+      - AGENTSHROUD_INSTANCE_LABEL=dev-trillian
     mem_limit: 512m
     memswap_limit: 512m
     cpus: 0.5
 
   bot:
+    container_name: agentshroud-trillian-bot
     environment:
       - OPENCLAW_BOT_NAME=agentshroud_bot_trillian
+      - AGENTSHROUD_INSTANCE_LABEL=dev-trillian
       - AGENTSHROUD_CONTROL_UI_ORIGINS=${AGENTSHROUD_CONTROL_UI_ORIGINS:-http://localhost:18790,https://localhost:18790}
     extra_hosts:
       # DNS redirect: Anthropic API -> gateway for message-level security
