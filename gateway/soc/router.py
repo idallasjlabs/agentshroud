@@ -1645,6 +1645,41 @@ async def get_trivy_results(caller: SCLCaller = Depends(get_caller)) -> Dict:
         return {"tool": "trivy", "status": "error", "error": str(exc), "findings": 0}
 
 
+@router.post("/cve-report")
+async def trigger_cve_report(caller: SCLCaller = Depends(get_caller)) -> Dict:
+    """Run a Trivy CVE scan immediately and send the report via Telegram.
+
+    Requires SYSTEM READ permission. Runs the scan in the background so the
+    HTTP response returns immediately; the Telegram message follows within
+    seconds once the scan completes.
+    """
+    caller.require(Action.READ, Resource.SYSTEM)
+    import asyncio as _aio
+    import os as _os
+
+    try:
+        from ..security.daily_cve_report import run_and_send_cve_report
+        from ..security.rbac_config import RBACConfig as _RBACConfig
+        from ..utils.secrets import read_secret as _read_sec
+
+        _token = _os.environ.get("TELEGRAM_BOT_TOKEN", "") or _read_sec("telegram_bot_token")
+        _owner = _RBACConfig().owner_user_id
+        _tg_base = _os.environ.get("TELEGRAM_API_BASE_URL", "https://api.telegram.org").rstrip("/")
+
+        async def _run():
+            return await run_and_send_cve_report(
+                bot_token=_token,
+                owner_chat_id=_owner,
+                base_url=_tg_base,
+            )
+
+        _aio.create_task(_run())
+        return {"status": "queued", "message": "CVE report scan started — Telegram message will follow"}
+    except Exception as exc:
+        logger.error("trigger_cve_report: %s", exc)
+        return {"status": "error", "error": str(exc)}
+
+
 # ---------------------------------------------------------------------------
 # Updates / upgrade endpoints
 # ---------------------------------------------------------------------------
