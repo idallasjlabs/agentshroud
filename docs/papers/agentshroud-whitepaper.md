@@ -2,7 +2,7 @@
 
 **White Paper v1.1 — February 2026**
 **Author: Isaiah Dallas Jefferson, Jr., Chief Innovation Engineer**
-**Repository: github.com/idallasj/agentshroud**
+**Repository: github.com/idallasjlabs/agentshroud**
 **Version: v0.5.0**
 
 ---
@@ -705,7 +705,7 @@ The AI agent security space is nascent. Most platforms treat security as an afte
 ### 7.2 Quick Start
 
 ```bash
-git clone https://github.com/idallasj/agentshroud.git
+git clone https://github.com/idallasjlabs/agentshroud.git
 cd agentshroud
 cp .env.example .env
 # Edit .env with your configuration
@@ -1230,7 +1230,7 @@ The entire stack is open source, runs on a Raspberry Pi, and has 1300+ tests at 
 
 If you're deploying AI agents in production — whether for personal use, for your team, or for your enterprise — you need a security layer. AgentShroud is that layer.
 
-**Get started:** [github.com/idallasj/agentshroud](https://github.com/idallasj/agentshroud)
+**Get started:** [github.com/idallasjlabs/agentshroud](https://github.com/idallasjlabs/agentshroud)
 **Questions:** Open an issue on GitHub
 **Author:** Isaiah Jefferson
 

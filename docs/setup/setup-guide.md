@@ -55,7 +55,7 @@ For the impatient, here's the zero-config way to get AgentShroud running:
 
 ```bash
 # Clone the repository
-git clone https://github.com/idallasj/agentshroud.git
+git clone https://github.com/idallasjlabs/agentshroud.git
 cd agentshroud
 
 # Start AgentShroud with secure defaults
@@ -82,7 +82,7 @@ That's it! AgentShroud is now running with:
 ### Step 1: Clone the Repository
 
 ```bash
-git clone https://github.com/idallasj/agentshroud.git
+git clone https://github.com/idallasjlabs/agentshroud.git
 cd agentshroud
 ls -la
 ```
@@ -991,7 +991,7 @@ With AgentShroud running, you're ready to:
 For advanced configuration, see the [Configuration Guide](configuration-guide.md).  
 For troubleshooting, join our [Discord community](https://discord.gg/agentshroud).
 
-**Questions?** File an issue at https://github.com/idallasj/agentshroud/issues
+**Questions?** File an issue at https://github.com/idallasjlabs/agentshroud/issues
 
 ---
 

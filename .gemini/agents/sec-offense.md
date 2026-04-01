@@ -366,7 +366,7 @@ After running, produce `docs/reviews/red-team-report-v0.7.0.md` with:
 
 ## Infrastructure
 
-- Repository: `github.com/idallasj/agentshroud`
+- Repository: `github.com/idallasjlabs/agentshroud`
 - Main checkout: `~/Development/agentshroud` on Marvin (SSH alias `marvin`)
 - Worktrees: `~/Development/worktrees/<branch-name>/`
 - Gateway API: `http://localhost:9080` (test instance on Marvin)

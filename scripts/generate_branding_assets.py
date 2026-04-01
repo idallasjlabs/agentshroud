@@ -330,7 +330,7 @@ def generate_email():
 <table cellpadding="0" cellspacing="0" border="0" style="width:500px;">
   <tr>
     <td style="padding:16px 0 8px;">
-      <img src="https://raw.githubusercontent.com/idallasj/agentshroud/main/branding/email/email-banner-600x150.png"
+      <img src="https://raw.githubusercontent.com/idallasjlabs/agentshroud/main/branding/email/email-banner-600x150.png"
            alt="AgentShroud™" width="500" style="display:block;border:0;" />
     </td>
   </tr>
@@ -345,8 +345,8 @@ def generate_email():
       <a href="mailto:agentshroud.ai@gmail.com"
          style="font-size:12px;color:{BRAND_BLUE_HEX};text-decoration:none;">agentshroud.ai@gmail.com</a>
       &nbsp;&bull;&nbsp;
-      <a href="https://github.com/idallasj/agentshroud"
-         style="font-size:12px;color:{BRAND_BLUE_HEX};text-decoration:none;">github.com/idallasj/agentshroud</a>
+      <a href="https://github.com/idallasjlabs/agentshroud"
+         style="font-size:12px;color:{BRAND_BLUE_HEX};text-decoration:none;">github.com/idallasjlabs/agentshroud</a>
     </td>
   </tr>
   <tr>

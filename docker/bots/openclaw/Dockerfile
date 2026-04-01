@@ -206,7 +206,7 @@ LABEL org.opencontainers.image.title="AgentShroud Bot"
 LABEL org.opencontainers.image.description="AgentShroud platform for agentshroud bot"
 LABEL org.opencontainers.image.vendor="AgentShroud"
 LABEL org.opencontainers.image.version="1.0.0"
-LABEL org.opencontainers.image.source="https://github.com/idallasj/agentshroud"
+LABEL org.opencontainers.image.source="https://github.com/idallasjlabs/agentshroud"
 
 # SECURITY (M2): Remove unnecessary interpreter entrypoints from PATH.
 # Avoid purging essential base packages to keep image builds warning-free.

@@ -567,5 +567,5 @@ docker compose -f docker/docker-compose.yml up -d --build
 **Version**: 0.5.0
 **Last Updated**: 2026-02-22
 **License**: MIT
-**Repository**: https://github.com/idallasj/agentshroud (AgentShroud)
+**Repository**: https://github.com/idallasjlabs/agentshroud (AgentShroud)
 **Upstream**: https://openclaw.ai (OpenClaw)

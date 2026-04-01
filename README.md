@@ -12,10 +12,10 @@
 
 
 <p>
-  <a href="https://github.com/idallasj/agentshroud/actions/workflows/ci.yml">
-    <img src="https://github.com/idallasj/agentshroud/actions/workflows/ci.yml/badge.svg" alt="Tests" />
+  <a href="https://github.com/idallasjlabs/agentshroud/actions/workflows/ci.yml">
+    <img src="https://github.com/idallasjlabs/agentshroud/actions/workflows/ci.yml/badge.svg" alt="Tests" />
   </a>
-  <a href="https://github.com/idallasj/agentshroud">
+  <a href="https://github.com/idallasjlabs/agentshroud">
     <img src="https://img.shields.io/badge/coverage-94%25-brightgreen" alt="Coverage" />
   </a>
   <img src="https://img.shields.io/badge/python-3.9%2B-blue.svg" alt="Python 3.9+" />
@@ -223,7 +223,7 @@ Get AgentShroud running in 5 minutes:
 ### 1. Clone & Configure
 
 ```bash
-git clone https://github.com/idallasj/agentshroud.git
+git clone https://github.com/idallasjlabs/agentshroud.git
 cd agentshroud
 
 # Copy example config
@@ -360,7 +360,7 @@ See the [`examples/`](examples/) directory:
 
 ```bash
 # Clone
-git clone https://github.com/idallasj/agentshroud.git
+git clone https://github.com/idallasjlabs/agentshroud.git
 cd agentshroud
 
 # Create virtual environment
@@ -405,6 +405,6 @@ The bot layer is built on [OpenClaw](https://github.com/openclaw/openclaw) — t
 *Patent Pending — U.S. Provisional Application No. 64/018,744*
 *Unauthorized reproduction, distribution, or use of the AgentShroud name or brand is strictly prohibited.*
 
-[agentshroud.ai@gmail.com](mailto:agentshroud.ai@gmail.com) · [github.com/idallasj/agentshroud](https://github.com/idallasj/agentshroud)
+[agentshroud.ai@gmail.com](mailto:agentshroud.ai@gmail.com) · [github.com/idallasjlabs/agentshroud](https://github.com/idallasjlabs/agentshroud)
 
 </div>

@@ -60,7 +60,7 @@ No logo or design element required at this stage.)*
 
 Choose one of the following (must show the mark used in commerce):
 
-1. **GitHub repository page** — screenshot of `https://github.com/idallasj/agentshroud`
+1. **GitHub repository page** — screenshot of `https://github.com/idallasjlabs/agentshroud`
    showing the "AgentShroud" name in the repository header and README
 2. **Running service screenshot** — screenshot of the AgentShroud bot active in
    Telegram or the dashboard, clearly showing the "AgentShroud" name
