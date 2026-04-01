@@ -1212,6 +1212,28 @@ async def lifespan(app: FastAPI):
 
     _asyncio.create_task(_wazuh_periodic())
 
+    # -- Daily CVE report: Trivy digest → Telegram at configurable UTC hour --
+    try:
+        from ..security.daily_cve_report import cve_report_scheduler as _cve_scheduler
+        _cve_token = os.environ.get("TELEGRAM_BOT_TOKEN", "") or _read_secret("telegram_bot_token")
+        _cve_owner_id = RBACConfig().owner_user_id
+        _cve_tg_base = os.environ.get("TELEGRAM_API_BASE_URL", "https://api.telegram.org").rstrip("/")
+        _cve_hour = int(os.environ.get("AGENTSHROUD_CVE_REPORT_HOUR", "6"))
+        if _cve_token and _cve_owner_id:
+            app_state._cve_report_task = _asyncio.create_task(
+                _cve_scheduler(
+                    bot_token=_cve_token,
+                    owner_chat_id=_cve_owner_id,
+                    base_url=_cve_tg_base,
+                    report_hour=_cve_hour,
+                )
+            )
+            logger.info("✓ Daily CVE report scheduler started (UTC hour=%d)", _cve_hour)
+        else:
+            logger.warning("⚠ Daily CVE report scheduler skipped — TELEGRAM_BOT_TOKEN or owner_user_id not set")
+    except Exception as _cve_exc:
+        logger.warning("⚠ Daily CVE report scheduler failed to start: %s", _cve_exc)
+
     # Startup security scanner — runs ClamAV + Trivy 30s after boot so the SOC
     # shows real results immediately rather than waiting for a manual POST trigger.
     async def _startup_scanner():
