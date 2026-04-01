@@ -93,7 +93,16 @@ We follow the [Contributor Covenant](https://www.contributor-covenant.org/versio
 
 ## Questions?
 
-Open a [Discussion](https://github.com/idallasj/agentshroud/discussions) or file an issue.
+Open a [Discussion](https://github.com/idallasj/agentshroud/discussions) for general questions or file a [GitHub Issue](https://github.com/idallasj/agentshroud/issues) for bugs and feature requests.
+
+## Response SLA
+
+| Type | Response time |
+|------|--------------|
+| Bug report | Acknowledged within **48 hours** |
+| Feature request | Reviewed within **7 days** |
+| Security vulnerability | See [SECURITY.md](SECURITY.md) — 48h acknowledgment, 7-day critical fix |
+| Pull request | First review within **7 days** |
 
 ---
 
