@@ -1701,7 +1701,7 @@ async def trigger_cve_report(caller: SCLCaller = Depends(get_caller)) -> Dict:
 # Updates / upgrade endpoints
 # ---------------------------------------------------------------------------
 
-_GH_RELEASES_API = "https://api.github.com/repos/idallasj/agentshroud/releases/latest"
+_GH_RELEASES_API = "https://api.github.com/repos/idallasjlabs/agentshroud/releases/latest"
 _CURRENT_VERSION = "1.0.0"
 
 

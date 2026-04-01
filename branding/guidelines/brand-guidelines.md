@@ -210,7 +210,7 @@ Use only the following files. Do not alter, recolor, or distort.
 
 ### Media Contact
 - Email: agentshroud.ai@gmail.com
-- Repository: github.com/idallasj/agentshroud
+- Repository: github.com/idallasjlabs/agentshroud
 
 ---
 
@@ -335,7 +335,7 @@ Use `pulse-success` (2s infinite) for live/healthy indicators and `pulse-danger`
 
 **Brand Inquiries:**
 - Email: agentshroud.ai@gmail.com
-- Repository: github.com/idallasj/agentshroud
+- Repository: github.com/idallasjlabs/agentshroud
 
 **Asset Requests:**
 - See `branding/` directory for latest files

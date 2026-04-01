@@ -409,7 +409,7 @@ AgentShroud achieves "docker-compose up = fully secured" through intelligent def
 
 ```bash
 # Complete deployment in three commands
-git clone https://github.com/idallasj/agentshroud.git
+git clone https://github.com/idallasjlabs/agentshroud.git
 cd agentshroud/deployments/agentshroud
 docker-compose up -d
 

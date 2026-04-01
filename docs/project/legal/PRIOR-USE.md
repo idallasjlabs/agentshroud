@@ -11,7 +11,7 @@ for common law trademark rights in AgentShroud™.
 
 | Asset | First Created | Notes |
 |-------|--------------|-------|
-| GitHub repository `idallasj/agentshroud` | February 2026 | Verify: `https://github.com/idallasj/agentshroud` — created date visible in repo |
+| GitHub repository `idallasjlabs/agentshroud` | February 2026 | Verify: `https://github.com/idallasjlabs/agentshroud` — created date visible in repo |
 | Telegram bot `@agentshroud.ai_bot` (AgentShroud) | February 2026 | Bot operational; identity associated with AgentShroud platform |
 | Gmail identity `agentshroud.ai@gmail.com` | February 20, 2026 | First use in commerce date |
 | Domain / brand use | February 20, 2026 | First commerce use per trademark claim |
@@ -61,11 +61,11 @@ AgentShroud project at this date.*
 
 ## GitHub Repository Evidence
 
-Repository URL: `https://github.com/idallasj/agentshroud`
+Repository URL: `https://github.com/idallasjlabs/agentshroud`
 
 To verify creation date programmatically:
 ```bash
-gh api repos/idallasj/agentshroud --jq '{name: .name, created_at: .created_at, description: .description}'
+gh api repos/idallasjlabs/agentshroud --jq '{name: .name, created_at: .created_at, description: .description}'
 ```
 
 To verify commit history (first commit):

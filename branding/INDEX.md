@@ -142,7 +142,7 @@ See: `branding/colors/palette.md`
 ## 📞 Contact
 
 **Brand Questions:** agentshroud.ai@gmail.com
-**Repository:** github.com/idallasj/agentshroud
+**Repository:** github.com/idallasjlabs/agentshroud
 
 ---
 
