@@ -19,7 +19,7 @@ jobs:
       id-token: write
       packages: write
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v6
 
       - name: Install cosign
         uses: sigstore/cosign-installer@v3
@@ -47,7 +47,7 @@ jobs:
     name: Trivy Container Scan
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v6
 
       - name: Build Gateway Image
         run: docker build -t agentshroud-gateway:scan -f gateway/Dockerfile .
@@ -93,7 +93,7 @@ jobs:
     name: Python Dependency Audit
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v6
 
       - uses: actions/setup-python@v5
         with:

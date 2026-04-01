@@ -27,7 +27,7 @@ jobs:
           echo "✅ Branch '$SOURCE' is allowed"
 
       - name: Check for mass deletions
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
         with:
           fetch-depth: 0
       - name: Analyze diff size
