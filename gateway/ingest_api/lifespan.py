@@ -411,7 +411,7 @@ async def lifespan(app: FastAPI):
         await app_state.audit_store.log_event(
             event_type="gateway_startup",
             severity="INFO",
-            details={"version": "0.9.0", "db_path": _audit_db},
+            details={"version": "1.0.0", "db_path": _audit_db},
             source_module="lifespan",
         )
     except Exception as e:
@@ -434,7 +434,7 @@ async def lifespan(app: FastAPI):
         _canary_tripwire = None
         _encoding_detector = None
 
-    # Initialize v0.9.0 prompt-injection hardening guards (C21, C25, C46)
+    # Initialize v1.0.0 prompt-injection hardening guards (C21, C25, C46)
     try:
         from ..security.context_integrity import ContextIntegrityScorer
         _context_integrity_scorer = ContextIntegrityScorer(
@@ -545,7 +545,7 @@ async def lifespan(app: FastAPI):
         app_state.session_manager = None
         _rbac = None
 
-    # Initialize v0.9.0 collaboration security modules
+    # Initialize v1.0.0 collaboration security modules
     try:
         from ..security.delegation import DelegationManager
         from ..security.rbac_config import RBACConfig as _RBACCfgDel

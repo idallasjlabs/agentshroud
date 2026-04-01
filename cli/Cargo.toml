@@ -1,6 +1,6 @@
 [package]
 name = "agentshroud-soc"
-version = "0.9.0"
+version = "1.0.0"
 edition = "2021"
 authors = ["Isaiah Jefferson <agentshroud.ai@gmail.com>"]
 description = "AgentShroud SOC CLI — Shared Command Layer (Rust, v1.0.0 target)"
