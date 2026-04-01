@@ -32,6 +32,18 @@ repos:
         args: ['--baseline', '.secrets.baseline']
         exclude: package-lock.json
 
+  - repo: https://github.com/astral-sh/ruff-pre-commit
+    rev: v0.4.4
+    hooks:
+      - id: ruff
+        args: [--fix]
+        files: ^gateway/
+  - repo: https://github.com/psf/black
+    rev: 24.4.2
+    hooks:
+      - id: black
+        files: ^gateway/
+
   # Semgrep - SAST for Python gateway source (IEC 62443 4-1 SDL)
   # Catches: command injection, path traversal, hardcoded secrets, SSRF
   - repo: https://github.com/returntocorp/semgrep
