@@ -11,7 +11,7 @@ related: [Architecture Overview, Data Flow, Quick Reference]
 
 AgentShroud is a **security gateway proxy** that sits between an autonomous AI agent (OpenClaw) and the external world. Every outbound request — LLM API calls, MCP tool invocations, Telegram messages, HTTP fetches, SSH sessions — passes through the gateway's security pipeline before reaching its destination.
 
-**Version:** 0.9.x (approaching 1.0.0)
+**Version:** 1.0.0 "Fortress"
 **License:** Proprietary — Copyright © 2026 Isaiah Dallas Jefferson, Jr.
 **Stack:** Python 3.13 / FastAPI (gateway) + Node.js 22 (OpenClaw bot container)
 

@@ -182,7 +182,7 @@ class DNSBlocklist:
 
             # Download with timeout
             ctx = ssl.create_default_context()
-            req = urllib.request.Request(url, headers={"User-Agent": "AgentShroud/0.8.0"})
+            req = urllib.request.Request(url, headers={"User-Agent": "AgentShroud/1.0.0"})
             response = await asyncio.get_event_loop().run_in_executor(
                 None,
                 lambda: urllib.request.urlopen(req, timeout=30, context=ctx).read().decode("utf-8", errors="replace"),

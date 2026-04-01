@@ -210,7 +210,7 @@ Consider switching to a notes app with a proper API:
 
 ### Step 1: Enable App Password (Gmail)
 
-You already have this in 1Password: `nkcy luwd cwou zimj`
+You already have this in 1Password: `xxxx xxxx xxxx xxxx`
 
 ### Step 2: Enable CalDAV/CardDAV Access
 
@@ -227,7 +227,7 @@ import caldav
 client = caldav.DAVClient(
     url="https://apidata.googleusercontent.com/caldav/v2/",
     username="agentshroud.ai@gmail.com",
-    password="nkcy luwd cwou zimj"
+    password="xxxx xxxx xxxx xxxx"
 )
 
 try:
@@ -252,7 +252,7 @@ import requests
 from requests.auth import HTTPBasicAuth
 
 username = "agentshroud.ai@gmail.com"
-password = "nkcy luwd cwou zimj"
+password = "xxxx xxxx xxxx xxxx"
 
 url = f"https://www.googleapis.com/carddav/v1/principals/{username}/lists/default/"
 
@@ -389,7 +389,7 @@ import caldav
 client = caldav.DAVClient(
     url='https://apidata.googleusercontent.com/caldav/v2/',
     username='agentshroud.ai@gmail.com',
-    password='nkcy luwd cwou zimj'
+    password='xxxx xxxx xxxx xxxx'
 )
 print('Calendars:', [c.name for c in client.principal().calendars()])
 "

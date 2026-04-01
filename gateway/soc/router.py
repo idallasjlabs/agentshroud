@@ -1071,7 +1071,7 @@ async def set_group_mode(
 
 
 # ---------------------------------------------------------------------------
-# Delegation management endpoints (v0.9.0)
+# Delegation management endpoints (v1.0.0)
 # ---------------------------------------------------------------------------
 
 @router.get("/delegation")
@@ -1149,7 +1149,7 @@ async def revoke_delegation(
 
 
 # ---------------------------------------------------------------------------
-# Tool ACL endpoints (v0.9.0) — read-only visibility
+# Tool ACL endpoints (v1.0.0) — read-only visibility
 # ---------------------------------------------------------------------------
 
 @router.get("/tool-acl/{entity_id}")
@@ -1168,7 +1168,7 @@ async def get_tool_acl(entity_id: str, caller: SCLCaller = Depends(get_caller)) 
 
 
 # ---------------------------------------------------------------------------
-# Shared memory endpoints (v0.9.0) — group memory visibility + clear
+# Shared memory endpoints (v1.0.0) — group memory visibility + clear
 # ---------------------------------------------------------------------------
 
 @router.get("/shared-memory/groups/{group_id}")
@@ -1205,7 +1205,7 @@ async def clear_group_memory(group_id: str, caller: SCLCaller = Depends(get_call
 
 
 # ---------------------------------------------------------------------------
-# Privacy policy endpoints (v0.9.0) — service policy visibility
+# Privacy policy endpoints (v1.0.0) — service policy visibility
 # ---------------------------------------------------------------------------
 
 @router.get("/privacy")
@@ -1593,7 +1593,7 @@ async def get_security_scorecard(caller: SCLCaller = Depends(get_caller)) -> Dic
         logger.warning("get_security_scorecard: %s", exc)
         return {
             "error": str(exc),
-            "version": "v0.9.0",
+            "version": "v1.0.0",
             "domains": [],
             "totals": {"score": 0, "max": 60, "percentage": 0},
             "overall_maturity": "Not Started",
@@ -1960,7 +1960,7 @@ def _minimal_dashboard_html() -> str:
 h1{color:#58a6ff;} a{color:#58a6ff;}</style></head>
 <body>
 <h1>AgentShroud SOC — Command Center</h1>
-<p>v0.9.0 Sentinel | <a href="/soc/v1/health">Health</a> |
+<p>v1.0.0 Fortress | <a href="/soc/v1/health">Health</a> |
 <a href="/soc/v1/security/events">Events</a> |
 <a href="/soc/v1/services">Services</a> |
 <a href="/soc/v1/users">Contributors</a></p>

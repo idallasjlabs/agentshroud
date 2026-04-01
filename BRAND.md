@@ -62,7 +62,7 @@ Logo assets are located in [`branding/logos/`](branding/logos/):
 > Enterprise governance proxy that makes autonomous AI agents safe for production.
 
 ### Elevator pitch
-> AgentShroud is an open-source security proxy for AI agents. It sits between agents like Claude Code, Gemini CLI, and OpenClaw and the systems they interact with — intercepting, inspecting, and policy-enforcing every action. 30 security modules, immutable audit trails, and a kill switch. Speed and safety are not mutually exclusive.
+> AgentShroud is an open-source security proxy for AI agents. It sits between agents like Claude Code, Gemini CLI, and OpenClaw and the systems they interact with — intercepting, inspecting, and policy-enforcing every action. 76 security modules, immutable audit trails, and a kill switch. Speed and safety are not mutually exclusive.
 
 ### What it is NOT
 - Not a chatbot
