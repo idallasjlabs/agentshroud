@@ -153,6 +153,21 @@ _prune_docker() {
 
 _asb_banner
 
+# ── Config file pre-flight ───────────────────────────────────────────────────
+# agentshroud.yaml is .gitignore'd (per-host config). If the file is missing,
+# Docker creates an empty directory as a bind-mount placeholder, crashing the
+# gateway with IsADirectoryError. Auto-create from example if needed.
+_CONFIG="$REPO_DIR/agentshroud.yaml"
+_CONFIG_EXAMPLE="$REPO_DIR/agentshroud.yaml.example"
+if [ -d "$_CONFIG" ]; then
+  echo "WARNING: agentshroud.yaml is a directory (Docker placeholder) — removing"
+  rm -rf "$_CONFIG"
+fi
+if [ ! -f "$_CONFIG" ] && [ -f "$_CONFIG_EXAMPLE" ]; then
+  echo "Creating agentshroud.yaml from example template (edit $REPO_DIR/agentshroud.yaml to customize)"
+  cp "$_CONFIG_EXAMPLE" "$_CONFIG"
+fi
+
 case "${1:-}" in
   build)
     _prune_docker
