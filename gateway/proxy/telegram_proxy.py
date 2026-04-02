@@ -3834,9 +3834,7 @@ class TelegramAPIProxy:
                                     await _queue.approve(rid, ApprovalMode.ONCE)
                                     _expires_at = result.get("expires_at")
                                     if _expires_at and domain:
-                                        from gateway.ingest_api.state import (
-                                            app_state as _state,
-                                        )
+                                        from gateway.ingest_api.state import app_state as _state
 
                                         _ef = getattr(_state, "egress_filter", None)
                                         if _ef is not None and hasattr(_ef, "grant_timed_approval"):
@@ -5366,9 +5364,7 @@ class TelegramAPIProxy:
                     else:
                         target_domain2 = tokens2[1].strip()
                         duration2 = tokens2[2].strip().lower() if len(tokens2) > 2 else "forever"
-                        from gateway.security.egress_approval import (
-                            ApprovalMode as _AM2,
-                        )
+                        from gateway.security.egress_approval import ApprovalMode as _AM2
 
                         _mode2 = (
                             _AM2.SESSION

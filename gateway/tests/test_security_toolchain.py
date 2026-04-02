@@ -216,9 +216,7 @@ class TestTrivyRun:
 # ClamAV Scanner Tests
 # ═══════════════════════════════════════════
 
-from gateway.security.clamav_scanner import (  # noqa: E402
-    generate_summary as clamav_summary,
-)
+from gateway.security.clamav_scanner import generate_summary as clamav_summary  # noqa: E402
 from gateway.security.clamav_scanner import (
     parse_clamscan_output,
     run_clamscan,
@@ -313,9 +311,7 @@ class TestClamAVRun:
 from gateway.security.falco_monitor import (
     categorize_alerts,
 )
-from gateway.security.falco_monitor import (  # noqa: E402
-    generate_summary as falco_summary,
-)
+from gateway.security.falco_monitor import generate_summary as falco_summary  # noqa: E402
 from gateway.security.falco_monitor import (
     is_agentshroud_rule,
     parse_alert,
