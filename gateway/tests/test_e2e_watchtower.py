@@ -202,10 +202,10 @@ class TestE2E05CanaryTripwire:
         """If an agent response contains a registered canary value, block it."""
         canary = pipeline.canary_tripwire
         # Register a canary token
-        canary.register_canary("SECRET_CANARY_XYZ_001", "test_target")
+        canary.register_canary("EXAMPLE_CANARY_VALUE_001", "test_target")
 
         result = await pipeline.process_outbound(
-            response="The secret is: SECRET_CANARY_XYZ_001 — exfiltrated successfully.",
+            response="The secret is: EXAMPLE_CANARY_VALUE_001 — exfiltrated successfully.",
             agent_id="compromised_agent",
         )
         assert result.blocked is True

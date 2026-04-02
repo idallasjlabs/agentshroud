@@ -109,7 +109,7 @@ class TestCredentialLeakDetection:
 
     def test_detect_openai_key(self, injector):
         result = injector.scan_for_credential_leak(
-            "Here is my key: sk-proj-abc123def456ghi789jkl012mno345pqr678stu"
+            "Here is my key: sk-example-not-a-real-key-000000000"
         )
         assert result is not None
         assert "API key" in result
@@ -127,13 +127,13 @@ class TestCredentialLeakDetection:
         assert "GitHub" in result
 
     def test_detect_google_oauth_secret(self, injector):
-        result = injector.scan_for_credential_leak("Secret: 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")
+        result = injector.scan_for_credential_leak("Secret: GOCSPX-EXAMPLE0000000000000000000000")
         assert result is not None
         assert "Google" in result
 
     def test_detect_jwt_token(self, injector):
         result = injector.scan_for_credential_leak(
-            "Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIn0.dozjgNryP4J3jVmNHl0w5N_XgL0n3I9PlFUP0THsR8U"
+            "Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.EXAMPLE_PAYLOAD.EXAMPLE_SIGNATUREP0THsR8U"
         )
         assert result is not None
         assert "JWT" in result
@@ -165,7 +165,7 @@ class TestCredentialLeakDetection:
         )
         injector = CredentialInjector(config)
         result = injector.scan_for_credential_leak(
-            "sk-proj-abc123def456ghi789jkl012mno345pqr678stu"
+            "sk-example-not-a-real-key-000000000"
         )
         assert result is None  # Detection disabled
 

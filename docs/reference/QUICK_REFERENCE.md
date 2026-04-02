@@ -118,7 +118,7 @@ nano docker/secrets/anthropic_oauth_token.txt
 
 - **Control UI**: http://localhost:18790
 - **Gateway**: http://localhost:8080
-- **Password**: `b539ae0c7a720f71e9b26cfab1b53c58ae362a0ad40d857eaed9a44a15932a05`
+- **Password**: `YOUR_GATEWAY_PASSWORD_HERE`
 
 ---
 

@@ -985,7 +985,7 @@ class TestLoggingSecurity:
         assert "4111111111111111" not in rec.getMessage()
 
     def test_jwt_redaction(self, sanitizer):
-        jwt = "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxMjM0NTY3ODkwIn0.dozjgNryP4J3jVmNHl0w5N_XgL0n3I9PlFUP0THsR8U"
+        jwt = "eyJhbGciOiJIUzI1NiJ9.EXAMPLE_PAYLOAD.EXAMPLE_SIGNATURE"
         rec = self._make_record(f"Bearer {jwt}")
         sanitizer.filter(rec)
         assert "eyJhbGciOiJIUzI1NiJ9" not in rec.getMessage()

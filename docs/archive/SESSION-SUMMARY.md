@@ -227,7 +227,7 @@ This document summarizes all work completed during the session where we research
 **Gateway Credentials**:
 ```
 URL:   ws://127.0.0.1:18789
-Token: acd0842962070d58c2bb825876aab743c4c45ddbc2eae7e475c4058e0b3f7832
+Token: YOUR_GATEWAY_PASSWORD_HERE
 ```
 
 #### docs/README.md (~3,000 words)
@@ -605,7 +605,7 @@ cp CONNECTION-GUIDE.md docs/
 
 ```
 Gateway WebSocket URL: ws://127.0.0.1:18789
-Gateway Token:         acd0842962070d58c2bb825876aab743c4c45ddbc2eae7e475c4058e0b3f7832
+Gateway Token:         YOUR_GATEWAY_PASSWORD_HERE
 
 Control UI:            http://localhost:18791
 Optional Tailscale:    https://marvin.tail240ea8.ts.net/ (if configured)

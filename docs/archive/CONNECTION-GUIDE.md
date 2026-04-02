@@ -22,7 +22,7 @@ ws://127.0.0.1:18789
 
 **Auth Token**:
 ```
-acd0842962070d58c2bb825876aab743c4c45ddbc2eae7e475c4058e0b3f7832
+YOUR_GATEWAY_PASSWORD_HERE
 ```
 
 ### Step 3: Test Connection
@@ -41,7 +41,7 @@ The UI should show "Connected" in green. If not, try:
      -H "Connection: Upgrade" \
      -H "Upgrade: websocket" \
      -H "Sec-WebSocket-Version: 13" \
-     -H "Sec-WebSocket-Key: dGhlIHNhbXBsZSBub25jZQ==" \
+     -H "Sec-WebSocket-Key: EXAMPLE_WEBSOCKET_KEY==" \
      http://localhost:18789/
    ```
    Should return HTTP 101 Switching Protocols
@@ -137,7 +137,7 @@ npm install -g wscat
 
 # Connect to gateway
 wscat -c ws://127.0.0.1:18789 \
-  -H "Authorization: Bearer acd0842962070d58c2bb825876aab743c4c45ddbc2eae7e475c4058e0b3f7832"
+  -H "Authorization: Bearer YOUR_GATEWAY_PASSWORD_HERE"
 ```
 
 If connected, you should see:

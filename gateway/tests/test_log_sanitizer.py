@@ -47,8 +47,8 @@ class TestLogSanitizer:
         assert "mypassword123" not in result
 
     def test_token_assignment_redacted(self):
-        result = self._filter_msg('token="abc123xyz789"')
-        assert "abc123xyz789" not in result
+        result = self._filter_msg('token="example-token-000"')
+        assert "example-token-000" not in result
 
     def test_secret_assignment_redacted(self):
         result = self._filter_msg('secret = "topsecret456"')

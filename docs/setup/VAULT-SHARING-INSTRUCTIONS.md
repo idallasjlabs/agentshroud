@@ -86,7 +86,7 @@ Alternative approach - just add credentials to the bot's existing "Private" vaul
 1. **Sign in as the bot** at https://my.1password.com
    - Email: `agentshroud.ai@gmail.com`
    - Master Password: [the one you created]
-   - Secret Key: `A3-5Q7Q4G-9P59AL-CK3QN-83KVZ-VC8GL-BPV8H`
+   - Secret Key: `A3-XXXXXX-XXXXXX-XXXXX-XXXXX-XXXXX-XXXXX`
 
 2. **Add credentials to Private vault**:
    - Click "New Item"

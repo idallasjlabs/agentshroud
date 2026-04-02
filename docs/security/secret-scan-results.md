@@ -26,10 +26,10 @@
 
 | Token | Found In |
 |-------|----------|
-| `b539ae0c7a720f71e9b26cfab1b53c58ae362a0ad40d857eaed9a44a15932a05` | `archive/FINAL_CONFIGURATION.md:137`, `archive/ACCESS_INFO.md` (×3), `archive/QUICK_ACCESS.md` (×6), `archive/CONNECT_NOW.md` (×2), `archive/SYSTEM_STATUS.md` (×2), `archive/SETUP_SUMMARY.md` (×2), `archive/session-notes/continue-20260215-1457.md` (×3), `telegram_history.jsonl` (×10+), `.claude/skills/sec-offense/SKILL.md:373` |
-| `14bf48103da11537b7207a2fe5487084d39a799a6129f3bbcb644a417c7f091b` | `archive/HOW_TO_CONNECT.md` (×3) |
-| `acd0842962070d58c2bb825876aab743c4c45ddbc2eae7e475c4058e0b3f7832` | `docs/archive/CONNECTION-GUIDE.md` (×2), `docs/archive/README.md`, `docs/archive/SESSION-SUMMARY.md` (×2) |
-| `dd92285d1a3c22f46fc325a8a6756b6fb2977b7af127dd08fb7432757776a287` | `archive/session-notes/continue-20260215-0717.md` (×2) |
+| `YOUR_GATEWAY_PASSWORD_HERE` | `archive/FINAL_CONFIGURATION.md:137`, `archive/ACCESS_INFO.md` (×3), `archive/QUICK_ACCESS.md` (×6), `archive/CONNECT_NOW.md` (×2), `archive/SYSTEM_STATUS.md` (×2), `archive/SETUP_SUMMARY.md` (×2), `archive/session-notes/continue-20260215-1457.md` (×3), `telegram_history.jsonl` (×10+), `.claude/skills/sec-offense/SKILL.md:373` |
+| `YOUR_GATEWAY_PASSWORD_HERE` | `archive/HOW_TO_CONNECT.md` (×3) |
+| `YOUR_GATEWAY_PASSWORD_HERE` | `docs/archive/CONNECTION-GUIDE.md` (×2), `docs/archive/README.md`, `docs/archive/SESSION-SUMMARY.md` (×2) |
+| `YOUR_GATEWAY_PASSWORD_HERE` | `archive/session-notes/continue-20260215-0717.md` (×2) |
 
 **Rotation:** Generate new token, update:
 - `docker/secrets/gateway_password.txt`
