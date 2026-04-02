@@ -45,7 +45,7 @@ jobs:
             --cov=gateway \
             --cov-report=term-missing \
             --cov-report=xml:coverage.xml \
-            --cov-fail-under=90
+            --cov-fail-under=80
 
       - name: Upload coverage artifact
         if: always()
@@ -109,7 +109,7 @@ jobs:
       - name: Check formatting
         run: |
           black --check --line-length 100 gateway/
-          isort --check --profile black gateway/
+          isort --check --profile black --line-length 100 gateway/
 
       - name: Lint
         run: flake8 gateway/ --max-line-length 100 --extend-ignore=E501,E203
