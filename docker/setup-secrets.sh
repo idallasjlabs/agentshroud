@@ -31,20 +31,28 @@ SECRETS_DIR="${AGENTSHROUD_SECRETS_DIR:-${SCRIPT_DIR}/secrets}"
 SECRETS_HOME_DIR="${HOME}/.agentshroud/secrets"
 
 detect_backend() {
-    if command -v op &>/dev/null && op account list &>/dev/null 2>&1; then
-        echo "1password"
-    elif [[ "$(uname)" == "Darwin" ]] && [[ -t 0 ]]; then
-        # Keychain must be unlocked — SSH sessions start with it locked.
-        # Attempt unlock interactively; if it fails, fall through to homedir.
+    # macOS interactive session: prefer Keychain (fast, local, no network dependency).
+    # Keychain must be unlocked — SSH sessions start with it locked; fall through to
+    # 1Password if unlock fails so service accounts still work.
+    if [[ "$(uname)" == "Darwin" ]] && [[ -t 0 ]]; then
         if ! security show-keychain-info ~/Library/Keychains/login.keychain-db &>/dev/null; then
             echo "  Keychain is locked. Unlocking..." >&2
             if ! security unlock-keychain ~/Library/Keychains/login.keychain-db; then
-                echo "  Keychain unlock failed — falling back to ~/.agentshroud/secrets/" >&2
-                echo "homedir"
+                echo "  Keychain unlock failed — trying 1Password..." >&2
+                # fall through to 1Password check below
+                true
+            else
+                echo "keychain"
                 return
             fi
+        else
+            echo "keychain"
+            return
         fi
-        echo "keychain"
+    fi
+    # Non-macOS or Keychain unavailable: prefer 1Password CLI (cross-platform, team-friendly).
+    if command -v op &>/dev/null && op account list &>/dev/null 2>&1; then
+        echo "1password"
     elif command -v secret-tool &>/dev/null && [[ -t 0 ]]; then
         echo "secretstore"
     elif [[ -d "${SECRETS_HOME_DIR}" ]]; then
