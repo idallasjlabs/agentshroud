@@ -1,0 +1,46 @@
+# AgentShroud™ gitleaks configuration
+# Prevents secrets from being committed to the repository.
+#
+# All real credentials were redacted in commit c628add (v1.0.4).
+# The CI scans only commits from that point forward so the pre-redaction
+# history does not produce false positives.
+
+title = "AgentShroud gitleaks config"
+
+[extend]
+# Use the upstream default ruleset as the base
+useDefault = true
+
+[allowlist]
+description = "Known safe patterns in this repo"
+
+# Commit SHA where all historical secrets were redacted (v1.0.4).
+# Any finding on or before this commit is a pre-remediation artefact.
+commits = [
+  "c628add",  # fix: redact all secret values flagged by GitGuardian/gitleaks (#14)
+]
+
+# Paths that contain intentionally fake / example credential strings
+paths = [
+  '''gateway/tests/''',
+  '''gateway/examples/''',
+  '''docs/''',
+  '''docker/scap-content/''',
+]
+
+# Patterns that appear in test fixtures, example configs, or benchmark XML
+# and are not real credentials (clearly fake values).
+regexes = [
+  # Fake gateway passwords used in tests/examples
+  '''YOUR_GATEWAY_PASSWORD_HERE''',
+  # Fake API keys used in test fixtures
+  '''sk-example-not-a-real-key''',
+  # Fake JWT used in test fixtures
+  '''EXAMPLE_PAYLOAD\.EXAMPLE_SIGNATURE''',
+  # Fake canary value used in output canary tests
+  '''EXAMPLE_CANARY_VALUE''',
+  # Fake Google OAuth used in examples
+  '''GOCSPX-EXAMPLE''',
+  # Fake 1Password secret key used in examples
+  '''A3-XXXXXX''',
+]
