@@ -58,23 +58,11 @@ _asb_banner() {
 # Secret files exist on the host only for the duration of `docker compose up`.
 setup_ephemeral_secrets() {
   local tmpdir
-  # Colima's virtiofs mount is configured per-machine in ~/.colima/default/colima.yaml.
-  # On marvin, only /Users/agentshroud-bot is mounted — /Users/ijefferson.admin is NOT
-  # (except Library/Caches and Development/agentshroud-worktrees). To ensure Docker
-  # can always bind-mount the secret files, resolve the Colima mount root from the
-  # config and place the tmpdir inside it.
-  local _colima_cfg="$HOME/.colima/default/colima.yaml"
-  local _asb_tmp
-  # Extract first writable mount location from colima.yaml, fall back to $HOME.
-  if [[ -f "$_colima_cfg" ]]; then
-    _asb_tmp="$(awk '/^mounts:/{f=1} f && /location:/{gsub(/.*location: */,""); print; exit}' "$_colima_cfg")/.agentshroud/.asb-tmp"
-    # Expand ~ in the path if present
-    _asb_tmp="${_asb_tmp/#\~/$HOME}"
-  fi
-  # Fallback: use $HOME (works when Colima mounts $HOME, or on Linux/no-Colima)
-  [[ -z "$_asb_tmp" ]] && _asb_tmp="$HOME/.agentshroud/.asb-tmp"
-  mkdir -p "$_asb_tmp"
-  tmpdir="$(mktemp -d "$_asb_tmp/asb-secrets.XXXXXX")"
+  # Use $HOME/.agentshroud/.asb-tmp — Colima mounts $HOME by default (see
+  # ~/.colima/default/colima.yaml mounts:). If Docker can't reach this path,
+  # add $HOME to the Colima mounts config and restart Colima.
+  mkdir -p "$HOME/.agentshroud/.asb-tmp"
+  tmpdir="$(mktemp -d "$HOME/.agentshroud/.asb-tmp/asb-secrets.XXXXXX")"
   trap '[[ -n "${tmpdir:-}" ]] && rm -rf "$tmpdir"' EXIT
 
   # Extract secrets from credential backend → tmpdir (suppress interactive banner)
