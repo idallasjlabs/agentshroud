@@ -49,6 +49,9 @@ def build_correlation_summary(app_state, limit: int = 200) -> CorrelationSummary
     now = datetime.now(timezone.utc)
     correlated: list[dict[str, Any]] = []
 
+    # Internal gateway mechanisms that should not appear as policy violators
+    _INTERNAL_AGENT_IDS = frozenset({"http_connect_proxy", "internal_gateway", "gateway"})
+
     egress_denied = 0
     egress_allowed = 0
     denied_destinations: Counter[str] = Counter()
@@ -64,7 +67,8 @@ def build_correlation_summary(app_state, limit: int = 200) -> CorrelationSummary
                     parsed = urlparse(dest)
                     dest = parsed.hostname or dest
                 denied_destinations[dest] += 1
-                denied_agents[a.agent_id] += 1
+                if a.agent_id not in _INTERNAL_AGENT_IDS:
+                    denied_agents[a.agent_id] += 1
             else:
                 egress_allowed += 1
 
@@ -96,7 +100,8 @@ def build_correlation_summary(app_state, limit: int = 200) -> CorrelationSummary
         try:
             for uid, count in tool_acl_enforcer.get_denial_counts().items():
                 tool_acl_denials[uid] += count
-                denied_agents[uid] += count
+                if uid not in _INTERNAL_AGENT_IDS:
+                    denied_agents[uid] += count
         except Exception:
             pass
 
@@ -109,7 +114,8 @@ def build_correlation_summary(app_state, limit: int = 200) -> CorrelationSummary
             private_data_policy_violations = private_summary.get("total", 0)
             by_agent = private_summary.get("by_agent", {})
             for agent_id, count in by_agent.items():
-                denied_agents[agent_id] += int(count)
+                if agent_id not in _INTERNAL_AGENT_IDS:
+                    denied_agents[agent_id] += int(count)
             if hasattr(perms, "get_private_redaction_summary"):
                 private_data_redactions = int(
                     perms.get_private_redaction_summary(limit=limit).get("total_redactions", 0)
