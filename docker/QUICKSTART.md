@@ -106,7 +106,7 @@ docker-compose logs gateway | grep "Generated new token"
 ```bash
 # Replace YOUR_TOKEN with the token from step 2
 curl -X POST http://localhost:8080/forward \
-  -H "Authorization: Bearer YOUR_TOKEN" \
+  -H "Authorization: Bearer <your-gateway-password>" \
   -H "Content-Type: application/json" \
   -d '{
     "content": "Hello! What is your primary area of expertise?",

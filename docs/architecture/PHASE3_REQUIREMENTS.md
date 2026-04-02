@@ -335,7 +335,7 @@ No feature creep. No advanced features until basic chat works. Focus:
 ```bash
 # From host machine
 curl -X POST http://localhost:8080/forward \
-  -H "Authorization: Bearer YOUR_TOKEN" \
+  -H "Authorization: Bearer <your-gateway-password>" \
   -H "Content-Type: application/json" \
   -d '{
     "content": "Hello, what is your primary area of expertise?",

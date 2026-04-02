@@ -134,7 +134,7 @@ class TestEnvironmentValidation:
             name="s",
             command="node",
             args=["server.js"],
-            env={"API_KEY": "sk-1234567890abcdef"},
+            env={"API_KEY": "sk-example-0000000"},
         )
         result = framework.validate_config(cfg)
         assert result.warnings

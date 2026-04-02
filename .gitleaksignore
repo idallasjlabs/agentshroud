@@ -1,0 +1,2 @@
+# SCAP benchmark content — GRUB2 hash is part of CIS/DISA benchmark XML, not a real credential
+docker/scap-content/ssg-debian12-ds.xml:generic-api-key:213720
