@@ -58,11 +58,11 @@ _asb_banner() {
 # Secret files exist on the host only for the duration of `docker compose up`.
 setup_ephemeral_secrets() {
   local tmpdir
-  # Colima only mounts $HOME by default — neither $TMPDIR (/var/folders/) nor
-  # /tmp is shared into the VM. Use $HOME/.agentshroud/.asb-tmp so Docker can
-  # always reach the secrets via the mounted home directory.
-  mkdir -p "$HOME/.agentshroud/.asb-tmp"
-  tmpdir="$(mktemp -d "$HOME/.agentshroud/.asb-tmp/asb-secrets.XXXXXX")"
+  # Colima mounts only specific paths into the VM (virtiofs). Use a tmpdir inside
+  # the repo directory so Docker can always reach the secret files via the same
+  # mount that serves the compose files and agentshroud.yaml.
+  mkdir -p "$REPO_DIR/.asb-tmp"
+  tmpdir="$(mktemp -d "$REPO_DIR/.asb-tmp/asb-secrets.XXXXXX")"
   trap '[[ -n "${tmpdir:-}" ]] && rm -rf "$tmpdir"' EXIT
 
   # Extract secrets from credential backend → tmpdir (suppress interactive banner)
