@@ -132,8 +132,9 @@ class TestCredentialLeakDetection:
         assert "Google" in result
 
     def test_detect_jwt_token(self, injector):
+        # credential_injector matches eyJ{10+}.eyJ{10+}. — payload must start with eyJ
         result = injector.scan_for_credential_leak(
-            "Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.EXAMPLE_PAYLOAD.EXAMPLE_SIGNATUREP0THsR8U"
+            "Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleGFtcGxlIjoidGVzdCJ9.AAAAAAAAAAAAAAAAAAAAAAAAA"
         )
         assert result is not None
         assert "JWT" in result
@@ -164,9 +165,7 @@ class TestCredentialLeakDetection:
             leak_detection=False,
         )
         injector = CredentialInjector(config)
-        result = injector.scan_for_credential_leak(
-            "sk-example-not-a-real-key-000000000"
-        )
+        result = injector.scan_for_credential_leak("sk-example-not-a-real-key-000000000")
         assert result is None  # Detection disabled
 
 
