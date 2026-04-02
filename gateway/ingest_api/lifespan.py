@@ -640,9 +640,7 @@ async def lifespan(app: FastAPI):
     # and domain 12 (Incident Response) scorecard check passes.
     # The router calls build_correlation_summary() directly; this attribute is the init signal.
     try:
-        from ..security.soc_correlation import (  # noqa: F401
-            build_correlation_summary as _corr_fn,
-        )
+        from ..security.soc_correlation import build_correlation_summary as _corr_fn  # noqa: F401
 
         app_state.soc_correlation = True
         logger.info("✓ SOC correlation engine initialized")
@@ -790,7 +788,7 @@ async def lifespan(app: FastAPI):
     # Scorers check st_size > 0 — a bare touch() does not satisfy D14/D15/D19.
     import json as _json
 
-    _now_iso = __import__("datetime").datetime.utcnow().isoformat() + "Z"
+    _now_iso = __import__("datetime").datetime.now(__import__("datetime").timezone.utc).isoformat()
 
     # Domain 14 (L5): collaborator activity log — non-empty access review evidence
     _collab_log = _data_dir / "collaborator_activity.jsonl"
@@ -1076,31 +1074,39 @@ async def lifespan(app: FastAPI):
         app_state.network_validator = None
 
     # Initialize MCP proxy — load server registry from agentshroud.yaml mcp_proxy section
-    mcp_mode = get_module_mode(app_state.config, "mcp_proxy")
-    mcp_proxy_config = (
-        MCPProxyConfig.from_dict(app_state.config.mcp_proxy_data)
-        if app_state.config.mcp_proxy_data
-        else MCPProxyConfig()
-    )
-    # In enforce mode, enable all security scanning
-    if mcp_mode == "enforce":
-        mcp_proxy_config.pii_scan_enabled = True
-        mcp_proxy_config.injection_scan_enabled = True
-        mcp_proxy_config.audit_enabled = True
-    app_state.mcp_proxy = MCPProxy(
-        config=mcp_proxy_config,
-        approval_queue=app_state.approval_queue,
-        egress_filter=getattr(app_state, "egress_filter", None),
-    )
-    logger.info(
-        f"MCP proxy initialized (mode: {mcp_mode}): {len(mcp_proxy_config.servers)} server(s) registered"
-    )
+    try:
+        mcp_mode = get_module_mode(app_state.config, "mcp_proxy")
+        mcp_proxy_config = (
+            MCPProxyConfig.from_dict(app_state.config.mcp_proxy_data)
+            if app_state.config.mcp_proxy_data
+            else MCPProxyConfig()
+        )
+        # In enforce mode, enable all security scanning
+        if mcp_mode == "enforce":
+            mcp_proxy_config.pii_scan_enabled = True
+            mcp_proxy_config.injection_scan_enabled = True
+            mcp_proxy_config.audit_enabled = True
+        app_state.mcp_proxy = MCPProxy(
+            config=mcp_proxy_config,
+            approval_queue=app_state.approval_queue,
+            egress_filter=getattr(app_state, "egress_filter", None),
+        )
+        logger.info(
+            f"✓ MCP proxy (mode: {mcp_mode}): {len(mcp_proxy_config.servers)} server(s) registered"
+        )
+    except Exception as e:
+        logger.error(f"✗ MCP proxy: {e}")
+        app_state.mcp_proxy = None
 
     # Initialize SSH proxy
-    if app_state.config.ssh.enabled:
-        app_state.ssh_proxy = SSHProxy(app_state.config.ssh)
-        logger.info("SSH proxy initialized")
-    else:
+    try:
+        if app_state.config.ssh.enabled:
+            app_state.ssh_proxy = SSHProxy(app_state.config.ssh)
+            logger.info("✓ SSH proxy initialized")
+        else:
+            app_state.ssh_proxy = None
+    except Exception as e:
+        logger.error(f"✗ SSH proxy: {e}")
         app_state.ssh_proxy = None
 
     # Initialize event bus
@@ -1301,9 +1307,7 @@ async def lifespan(app: FastAPI):
         while True:
             await _asyncio.sleep(300)
             try:
-                from ..security.scanner_integration import (
-                    get_wazuh_summary as _get_wazuh,
-                )
+                from ..security.scanner_integration import get_wazuh_summary as _get_wazuh
 
                 _wazuh = _get_wazuh()
                 if _wazuh.get("status") == "not_run":
