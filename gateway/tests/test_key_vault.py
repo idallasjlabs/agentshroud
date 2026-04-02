@@ -152,8 +152,9 @@ class TestKeyLeakDetection:
 
     def test_detect_api_key_patterns(self):
         detector = KeyLeakDetector(KeyVault(KeyVaultConfig()))
-        # Generic API key patterns
-        result = detector.scan_outbound("key=sk-example-not-a-real-key-000")
+        # Generic API key patterns — detector matches sk-[a-zA-Z0-9]{20,}
+        # Use a clearly synthetic string that still matches the regex structure
+        result = detector.scan_outbound("key=sk-EXAMPLEFAKEKEY0000000000000000")
         assert result.leak_detected is True
 
     def test_leak_detection_logged(self, vault):

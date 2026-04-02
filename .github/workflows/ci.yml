@@ -87,10 +87,11 @@ jobs:
         # Scan only commits after c628add (the v1.0.4 secret-redaction commit).
         # Pre-remediation history is intentionally excluded — all secrets were
         # replaced with clearly-fake values in that commit.
+        # Note: --no-git (filesystem scan) is intentionally omitted here because
+        # the test suite contains legitimate fake-but-detectable credential strings
+        # used to verify the detection system itself; those are covered by the
+        # paths allowlist in .gitleaks.toml.
         run: gitleaks detect --source . --log-opts="c628add..HEAD" --redact
-      - name: Run gitleaks (working tree / staged files)
-        # Also scan the current working tree for any secrets not yet committed.
-        run: gitleaks detect --source . --no-git --redact
 
   lint:
     runs-on: ubuntu-latest

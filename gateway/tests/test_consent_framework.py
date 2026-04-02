@@ -134,7 +134,8 @@ class TestEnvironmentValidation:
             name="s",
             command="node",
             args=["server.js"],
-            env={"API_KEY": "sk-example-0000000"},
+            # Pattern: ^sk-[a-zA-Z0-9]{10,} — no inner hyphens; clearly synthetic
+            env={"API_KEY": "sk-EXAMPLEFAKE00000000"},
         )
         result = framework.validate_config(cfg)
         assert result.warnings
