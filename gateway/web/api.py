@@ -15,6 +15,7 @@ import asyncio
 import logging
 import os
 import platform
+import secrets as _secrets
 import time
 from datetime import datetime, timezone
 from pathlib import Path
@@ -40,8 +41,6 @@ from ..runtime.security import get_security_comparison, warn_missing_features
 logger = logging.getLogger("agentshroud.web.api")
 
 # Scoped WebSocket tokens for management API (R3-M2)
-import secrets as _secrets
-
 _mgmt_ws_tokens: dict[str, float] = {}
 _MGMT_WS_TOKEN_TTL = 300  # 5 minutes
 

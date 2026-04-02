@@ -373,8 +373,8 @@ class TestVersionConsistency:
 
     @pytest.mark.asyncio
     async def test_status_returns_current_version(self, client):
-        """GET /status should return version 0.9.0"""
+        """GET /status should return current version"""
         resp = await client.get("/status")
         assert resp.status_code == 200
         data = resp.json()
-        assert data["version"] == "0.9.0"
+        assert data["version"] == "1.0.0"

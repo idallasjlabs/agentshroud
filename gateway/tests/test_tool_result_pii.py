@@ -10,8 +10,6 @@ and sanitizes tool results before they reach the agent context.
 
 from __future__ import annotations
 
-import asyncio
-from typing import Any, Dict
 from unittest.mock import AsyncMock, Mock, patch
 
 import pytest
@@ -500,14 +498,14 @@ class TestRealWorldScenarios:
         # Simulate email with sensitive content
         email_content = """
         Subject: Account Information
-        
+
         Dear Customer,
-        
+
         Your account details:
         SSN: 123-45-6789
         Card: 4111-1111-1111-1111
         Contact: support@bank.com
-        
+
         Best regards,
         Customer Service
         """
