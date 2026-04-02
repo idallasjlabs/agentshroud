@@ -153,7 +153,7 @@ class TestKeyLeakDetection:
     def test_detect_api_key_patterns(self):
         detector = KeyLeakDetector(KeyVault(KeyVaultConfig()))
         # Generic API key patterns
-        result = detector.scan_outbound("key=sk-proj-abcdefghij1234567890")
+        result = detector.scan_outbound("key=sk-example-not-a-real-key-000")
         assert result.leak_detected is True
 
     def test_leak_detection_logged(self, vault):
