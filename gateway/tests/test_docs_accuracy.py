@@ -112,12 +112,17 @@ class TestSecurityMdAccuracy:
 
     def test_lists_security_features(self, security_md):
         assert "PII Sanitizer" in security_md
-        assert "Prompt Guard" in security_md
-        assert "Kill Switch" in security_md
+        # SECURITY.md uses "PromptGuard" (no space) — accept both spellings
+        assert "PromptGuard" in security_md or "Prompt Guard" in security_md
+        assert (
+            "Kill Switch" in security_md
+            or "KillSwitch" in security_md
+            or "kill switch" in security_md.lower()
+        )
 
     def test_version_table_present(self, security_md):
-        # Should have version support table
-        assert "0.7" in security_md or "0.6" in security_md
+        # Should have version support table with current or recent versions
+        assert any(v in security_md for v in ("1.0", "0.9", "0.8", "0.7", "0.6"))
 
 
 class TestContributingMdAccuracy:
