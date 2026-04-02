@@ -18,7 +18,7 @@ import json
 import logging
 import os
 import urllib.request
-from datetime import datetime, timezone
+from datetime import datetime, timedelta, timezone
 from pathlib import Path
 from typing import Any, Optional
 
@@ -37,6 +37,10 @@ _SEV_ICON = {
 
 # Path to store the last report timestamp so we avoid duplicate sends on restart.
 _LAST_REPORT_PATH = Path("/var/log/security/trivy/.last_cve_report")
+
+# In-memory guard: tracks dates already sent this process lifetime.
+# Prevents infinite send loops when the disk is full and _LAST_REPORT_PATH can't be written.
+_sent_dates: set[str] = set()
 
 
 def format_cve_report(report: dict[str, Any]) -> str:
@@ -144,7 +148,8 @@ async def run_and_send_cve_report(
         except Exception as exc:
             logger.error("Failed to send CVE report via Telegram: %s", exc)
 
-    # Record timestamp.
+    # Record timestamp — in-memory first (disk may be full).
+    _sent_dates.add(datetime.now(timezone.utc).date().isoformat())
     try:
         _LAST_REPORT_PATH.parent.mkdir(parents=True, exist_ok=True)
         _LAST_REPORT_PATH.write_text(datetime.now(timezone.utc).isoformat())
@@ -200,14 +205,24 @@ async def cve_report_scheduler(
     while True:
         try:
             now = datetime.now(timezone.utc)
-            # Next trigger: today at report_hour, or tomorrow if we've already passed it.
+            today_str = now.date().isoformat()
+
+            # Next trigger: today at report_hour, or tomorrow if already past/sent.
             target = now.replace(hour=report_hour, minute=0, second=0, microsecond=0)
+            already_sent = today_str in _sent_dates or _already_sent_today(now)
+
             if now >= target:
-                # Check if we already sent today.
-                if _already_sent_today(now):
-                    # Sleep until tomorrow's report_hour.
-                    target = target.replace(day=target.day + 1)
+                if already_sent:
+                    # Sleep until tomorrow's report_hour (timedelta avoids month-end overflow).
+                    target = (target + timedelta(days=1)).replace(
+                        hour=report_hour, minute=0, second=0, microsecond=0
+                    )
                 # else: trigger immediately (first run of the day).
+            elif already_sent:
+                # Sent today but target is still in the future — shouldn't happen, but be safe.
+                target = (target + timedelta(days=1)).replace(
+                    hour=report_hour, minute=0, second=0, microsecond=0
+                )
 
             sleep_secs = max(0, (target - now).total_seconds())
             if sleep_secs > 0:
@@ -217,6 +232,13 @@ async def cve_report_scheduler(
                     target.strftime("%H:%M"),
                 )
                 await asyncio.sleep(sleep_secs)
+
+            # Re-check after waking — another task may have sent while we slept.
+            now = datetime.now(timezone.utc)
+            today_str = now.date().isoformat()
+            if today_str in _sent_dates or _already_sent_today(now):
+                logger.info("CVE report already sent today, skipping.")
+                continue
 
             logger.info("Running daily CVE report...")
             result = await run_and_send_cve_report(
@@ -234,12 +256,13 @@ async def cve_report_scheduler(
             return
         except Exception as exc:
             logger.error("CVE report scheduler error: %s", exc, exc_info=True)
-            # Retry in 1 hour on failure.
+            # Retry in 1 hour on failure — but record today so we don't spam.
+            _sent_dates.add(datetime.now(timezone.utc).date().isoformat())
             await asyncio.sleep(3600)
 
 
 def _already_sent_today(now: datetime) -> bool:
-    """Check if a report was already sent today."""
+    """Check if a report was already sent today (disk-based, secondary to _sent_dates)."""
     try:
         if _LAST_REPORT_PATH.exists():
             last = datetime.fromisoformat(_LAST_REPORT_PATH.read_text().strip())
