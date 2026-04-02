@@ -56,17 +56,18 @@ detect_backend() {
 }
 
 BACKEND="${AGENTSHROUD_SECRET_BACKEND:-$(detect_backend)}"
+OP_VAULT="${AGENTSHROUD_OP_VAULT:-Private}"
 
 # ── Backend primitives ─────────────────────────────────────────────────────────
 store_secret() {
     local name="$1" value="$2"
     case "$BACKEND" in
         1password)
-            op item edit "AgentShroud" "${name}[password]=${value}" --vault "Employee" 2>/dev/null \
+            op item edit "AgentShroud" "${name}[password]=${value}" --vault "$OP_VAULT" 2>/dev/null \
             || op item create \
                 --category login \
                 --title "AgentShroud" \
-                --vault "Employee" \
+                --vault "$OP_VAULT" \
                 "username=${name}" \
                 "password=${value}"
             ;;
