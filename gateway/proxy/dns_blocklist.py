@@ -1,3 +1,6 @@
+# Copyright © 2026 Isaiah Dallas Jefferson, Jr. AgentShroud™. All rights reserved.
+# AgentShroud™ is a trademark of Isaiah Dallas Jefferson, Jr. (USPTO Serial No. 99728633)
+# Patent Pending — U.S. Provisional Application No. 64/018,744
 """
 AgentShroud DNS Blocklist — Pi-hole-compatible domain blocking for the gateway.
 
@@ -12,11 +15,10 @@ Supports:
   - Wildcard blocking (block *.example.com by blocking example.com)
   - Custom allow/deny lists
   - Periodic background updates
-
-Copyright © 2026 Isaiah Dallas Jefferson, Jr. AgentShroud™. All rights reserved.
 """
 
 import asyncio
+import fnmatch
 import logging
 import os
 import re
@@ -70,6 +72,9 @@ class DNSBlocklist:
         self.blocked_domains: Set[str] = set()
         self.allowlist: Set[str] = SYSTEM_ALLOWLIST.copy()
         self.denylist: Set[str] = set()
+        # Wildcard entries (e.g. "*.evil.com") are stored separately so they
+        # can be matched via fnmatch without polluting exact-match lookups.
+        self._denylist_wildcards: list[str] = []
         self.data_dir = data_dir or DATA_DIR
         self.last_update: float = 0
         self.update_task: Optional[asyncio.Task] = None
@@ -78,7 +83,11 @@ class DNSBlocklist:
         if custom_allowlist:
             self.allowlist.update(custom_allowlist)
         if custom_denylist:
-            self.denylist.update(custom_denylist)
+            for entry in custom_denylist:
+                if "*" in entry or "?" in entry:
+                    self._denylist_wildcards.append(entry.lower())
+                else:
+                    self.denylist.add(entry)
 
         # Create data directory
         self.data_dir.mkdir(parents=True, exist_ok=True)
@@ -96,9 +105,14 @@ class DNSBlocklist:
         if domain in self.allowlist:
             return False
 
-        # Custom denylist always blocks
+        # Custom denylist always blocks (exact match)
         if domain in self.denylist:
             return True
+
+        # Custom denylist wildcard patterns (e.g. "*.evil.com" blocks "sub.evil.com")
+        for pattern in self._denylist_wildcards:
+            if fnmatch.fnmatch(domain, pattern):
+                return True
 
         # Check exact match
         if domain in self.blocked_domains:
