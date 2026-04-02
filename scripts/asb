@@ -87,6 +87,10 @@ setup_ephemeral_secrets() {
   # The directory is cleaned up on EXIT.
   chmod 755 "$tmpdir"
   chmod 644 "$tmpdir"/*.txt 2>/dev/null || true
+  # Flush filesystem writes so Colima's virtiofs sees them before Docker tries to
+  # bind-mount. Without this, newly created placeholder files may not be visible
+  # to the Docker daemon inside the VM.
+  sync
 
   # Determine which telegram_bot_token variant to use for this host/user.
   # Falls back to production token if the host-specific token was not stored.
