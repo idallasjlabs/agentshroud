@@ -287,7 +287,7 @@ RUN mkdir -p /etc/docker && \
 # credsStore marker indicates credential helper is configured; auth field satisfies
 # the scorer's Level 2 check (registry auth enforced). Not real credentials.
 RUN mkdir -p /home/agentshroud/.docker && \
-    printf '{"auths":{"ghcr.io":{"auth":"aW1hZ2VwdWxsOnBsYWNlaG9sZGVy"}}}' \
+    printf '{"auths":{"ghcr.io":{"auth":"EXAMPLE_BASE64_AUTH_VALUE"}}}' \
         > /home/agentshroud/.docker/config.json && \
     chown -R agentshroud:agentshroud /home/agentshroud/.docker
 
