@@ -20,6 +20,7 @@ async def auth_dep(request: Request):
     dep = create_auth_dependency(app_state.config)
     await dep(request)
 
+
 AuthRequired = Annotated[None, Depends(auth_dep)]
 
 
@@ -43,18 +44,22 @@ async def health_check_detail(auth: AuthRequired):
     pending = await app_state.approval_queue.get_pending()
 
     # Observatory mode state
-    obs_mode = getattr(app_state, 'observatory_mode', {
-        'global_mode': 'enforce', 'effective_since': None, 'auto_revert_at': None
-    })
+    obs_mode = getattr(
+        app_state,
+        "observatory_mode",
+        {"global_mode": "enforce", "effective_since": None, "auto_revert_at": None},
+    )
 
     # Egress stats
-    egress_queue = getattr(app_state, 'egress_approval_queue', None)
+    egress_queue = getattr(app_state, "egress_approval_queue", None)
     egress_pending = 0
     egress_rules = 0
     if egress_queue:
         try:
             egress_pending = len(egress_queue._pending_requests)
-            egress_rules = len(egress_queue._rules.get('allow', [])) + len(egress_queue._rules.get('deny', []))
+            egress_rules = len(egress_queue._rules.get("allow", [])) + len(
+                egress_queue._rules.get("deny", [])
+            )
         except Exception:
             pass
 

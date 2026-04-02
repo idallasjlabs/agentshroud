@@ -37,9 +37,7 @@ class RuntimeConfig:
         """Load configuration from environment variables."""
         runtime = os.environ.get("AGENTSHROUD_RUNTIME")
         rootless_str = os.environ.get("AGENTSHROUD_ROOTLESS")
-        compose_file = os.environ.get(
-            "AGENTSHROUD_COMPOSE_FILE", "docker-compose.secure.yml"
-        )
+        compose_file = os.environ.get("AGENTSHROUD_COMPOSE_FILE", "docker-compose.secure.yml")
         socket_path = os.environ.get("AGENTSHROUD_RUNTIME_SOCKET")
 
         rootless = None

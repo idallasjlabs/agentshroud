@@ -8,8 +8,8 @@ Covers all three engines (Docker, Podman, Apple Containers),
 detection logic, compose generation, security feature mapping,
 runtime config, and web API endpoints.
 """
-from __future__ import annotations
 
+from __future__ import annotations
 
 import os
 from unittest.mock import MagicMock, patch
@@ -41,9 +41,7 @@ class TestDetectRuntime:
 
     @patch("shutil.which")
     def test_detect_apple(self, mock_which):
-        mock_which.side_effect = lambda x: (
-            "/usr/bin/container" if x == "container" else None
-        )
+        mock_which.side_effect = lambda x: ("/usr/bin/container" if x == "container" else None)
         from gateway.runtime import detect_runtime
 
         result = detect_runtime()
@@ -242,9 +240,7 @@ class TestDockerEngine:
 
     @patch("subprocess.run")
     def test_logs(self, mock_run):
-        mock_run.return_value = MagicMock(
-            stdout="log line 1\nlog line 2\n", returncode=0
-        )
+        mock_run.return_value = MagicMock(stdout="log line 1\nlog line 2\n", returncode=0)
         logs = self.engine.logs("web", tail=50)
         assert "log line" in logs
         args = mock_run.call_args[0][0]
@@ -258,9 +254,7 @@ class TestDockerEngine:
 
     @patch("subprocess.run")
     def test_inspect(self, mock_run):
-        mock_run.return_value = MagicMock(
-            stdout='[{"Id":"abc","Name":"web"}]', returncode=0
-        )
+        mock_run.return_value = MagicMock(stdout='[{"Id":"abc","Name":"web"}]', returncode=0)
         info = self.engine.inspect("web")
         assert info["Id"] == "abc"
 
@@ -347,9 +341,7 @@ class TestPodmanEngine:
 
     @patch("subprocess.run")
     def test_generate_systemd(self, mock_run):
-        mock_run.return_value = MagicMock(
-            stdout="[Unit]\nDescription=...", returncode=0
-        )
+        mock_run.return_value = MagicMock(stdout="[Unit]\nDescription=...", returncode=0)
         result = self.engine.generate_systemd("web")
         assert "[Unit]" in result
 
@@ -373,9 +365,7 @@ class TestAppleContainerEngine:
     @patch("subprocess.run")
     def test_run_ignores_seccomp(self, mock_run):
         mock_run.return_value = MagicMock(stdout="c1\n", returncode=0)
-        self.engine.run(
-            "img", "c1", seccomp="/path", caps=["NET_ADMIN"], privileged=True
-        )
+        self.engine.run("img", "c1", seccomp="/path", caps=["NET_ADMIN"], privileged=True)
         args = mock_run.call_args[0][0]
         # Apple should NOT pass seccomp, caps, or privileged
         assert "seccomp" not in " ".join(args)
@@ -564,6 +554,7 @@ class TestSecurityFeatures:
 
     def test_security_options_unknown(self):
         import pytest
+
         from gateway.runtime.security import get_security_options
 
         with pytest.raises(ValueError, match="Invalid runtime"):
@@ -593,7 +584,7 @@ class TestComposeGenerator:
         assert ":z" in result  # SELinux labels
 
     def test_generate_custom_services(self):
-        from gateway.runtime.compose_generator import generate_compose, ServiceDef
+        from gateway.runtime.compose_generator import ServiceDef, generate_compose
 
         services = [ServiceDef(name="test", image="test:latest", ports=["8080:80"])]
         result = generate_compose(services=services, runtime="docker")
@@ -610,7 +601,7 @@ class TestComposeGenerator:
         assert "down" in result
 
     def test_apple_script_custom_services(self):
-        from gateway.runtime.compose_generator import generate_apple_script, ServiceDef
+        from gateway.runtime.compose_generator import ServiceDef, generate_apple_script
 
         services = [ServiceDef(name="myapp", image="app:v1", ports=["3000:3000"])]
         result = generate_apple_script(services=services)
@@ -673,7 +664,8 @@ class TestWebAPI:
     def client(self):
         from fastapi import FastAPI
         from fastapi.testclient import TestClient
-        from gateway.web.api import router, require_auth
+
+        from gateway.web.api import require_auth, router
 
         app = FastAPI()
         app.include_router(router)
@@ -789,6 +781,7 @@ class TestInstallerAPI:
     def client(self):
         from fastapi import FastAPI
         from fastapi.testclient import TestClient
+
         from gateway.web.installer import router
 
         app = FastAPI()
@@ -834,8 +827,9 @@ class TestManagementPage:
     def client(self):
         from fastapi import FastAPI
         from fastapi.testclient import TestClient
-        from gateway.web.management import router
+
         from gateway.web.api import require_auth
+        from gateway.web.management import router
 
         app = FastAPI()
         app.include_router(router)
@@ -859,7 +853,8 @@ class TestConfigRoundTrip:
     def client(self):
         from fastapi import FastAPI
         from fastapi.testclient import TestClient
-        from gateway.web.api import router, require_auth
+
+        from gateway.web.api import require_auth, router
 
         app = FastAPI()
         app.include_router(router)

@@ -44,7 +44,9 @@ class BotConfig(BaseModel):
     workspace_path: str = Field(..., description="Workspace directory inside the container")
     config_dir: str = Field(..., description="Bot config directory inside the container")
     dockerfile: str = Field(default="", description="Relative path to the bot Dockerfile")
-    env_prefix: str = Field(default="", description="Env var prefix for bot-specific vars, e.g. 'OPENCLAW_'")
+    env_prefix: str = Field(
+        default="", description="Env var prefix for bot-specific vars, e.g. 'OPENCLAW_'"
+    )
     egress_domains: list[str] = Field(
         default_factory=list,
         description="Additional egress domains this bot requires beyond the global allowlist",

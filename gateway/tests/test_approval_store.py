@@ -3,8 +3,8 @@
 # Protected by common law trademark rights. Federal trademark registration pending.
 # Unauthorized reproduction, distribution, or use of the AgentShroud name or brand is strictly prohibited.
 """Tests for SQLite-backed approval queue persistence."""
-from __future__ import annotations
 
+from __future__ import annotations
 
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
@@ -29,9 +29,7 @@ def _make_item(
         details={"to": "test@example.com", "subject": "Hello"},
         agent_id="openclaw-main",
         submitted_at=now.isoformat().replace("+00:00", "Z"),
-        expires_at=(now + timedelta(minutes=expires_minutes))
-        .isoformat()
-        .replace("+00:00", "Z"),
+        expires_at=(now + timedelta(minutes=expires_minutes)).isoformat().replace("+00:00", "Z"),
         status=status,
     )
 

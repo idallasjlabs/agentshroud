@@ -121,9 +121,7 @@ VALID_RUNTIMES = frozenset({"docker", "podman", "apple"})
 def _validate_runtime(runtime: str) -> str:
     """Validate runtime name to prevent attribute access injection."""
     if runtime not in VALID_RUNTIMES:
-        raise ValueError(
-            f"Invalid runtime: {runtime!r}. Must be one of: {sorted(VALID_RUNTIMES)}"
-        )
+        raise ValueError(f"Invalid runtime: {runtime!r}. Must be one of: {sorted(VALID_RUNTIMES)}")
     return runtime
 
 

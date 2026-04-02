@@ -1,5 +1,6 @@
 # Copyright © 2026 Isaiah Dallas Jefferson, Jr. AgentShroud™. All rights reserved.
 """Tests for gateway.security.daily_cve_report."""
+
 from __future__ import annotations
 
 import asyncio
@@ -11,14 +12,14 @@ from unittest.mock import AsyncMock, MagicMock, patch
 import pytest
 
 from gateway.security.daily_cve_report import (
+    _LAST_REPORT_PATH,
+    _already_sent_today,
     format_cve_report,
     run_and_send_cve_report,
-    _already_sent_today,
-    _LAST_REPORT_PATH,
 )
 
-
 # ── Fixtures ─────────────────────────────────────────────────────────────────
+
 
 def _make_report(critical=2, high=5, medium=10, low=3, total=20) -> dict:
     """Build a minimal parsed Trivy report."""
@@ -73,6 +74,7 @@ def _make_error_report() -> dict:
 
 
 # ── format_cve_report ─────────────────────────────────────────────────────────
+
 
 class TestFormatCveReport:
     def test_contains_header(self):
@@ -132,6 +134,7 @@ class TestFormatCveReport:
 
 # ── _already_sent_today ───────────────────────────────────────────────────────
 
+
 class TestAlreadySentToday:
     def test_returns_false_when_file_missing(self, tmp_path, monkeypatch):
         monkeypatch.setattr(
@@ -139,11 +142,13 @@ class TestAlreadySentToday:
             tmp_path / "does_not_exist.txt",
         )
         from gateway.security import daily_cve_report
+
         monkeypatch.setattr(daily_cve_report, "_LAST_REPORT_PATH", tmp_path / "no.txt")
         assert not _already_sent_today(datetime.now(timezone.utc))
 
     def test_returns_true_when_sent_today(self, tmp_path, monkeypatch):
         import gateway.security.daily_cve_report as _mod
+
         sentinel = tmp_path / "last.txt"
         now = datetime.now(timezone.utc)
         sentinel.write_text(now.isoformat())
@@ -151,8 +156,10 @@ class TestAlreadySentToday:
         assert _mod._already_sent_today(now)
 
     def test_returns_false_when_sent_yesterday(self, tmp_path, monkeypatch):
-        import gateway.security.daily_cve_report as _mod
         from datetime import timedelta
+
+        import gateway.security.daily_cve_report as _mod
+
         sentinel = tmp_path / "last.txt"
         yesterday = datetime.now(timezone.utc) - timedelta(days=1)
         sentinel.write_text(yesterday.isoformat())
@@ -161,6 +168,7 @@ class TestAlreadySentToday:
 
 
 # ── run_and_send_cve_report ───────────────────────────────────────────────────
+
 
 class TestRunAndSendCveReport:
     @pytest.mark.asyncio

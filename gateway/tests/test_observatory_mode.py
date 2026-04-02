@@ -17,28 +17,28 @@ Tests:
 
 D2 kill switch verification assertions also live here.
 """
+
 from __future__ import annotations
 
 import asyncio
-import os
 import logging
+import os
 import tempfile
+from datetime import datetime, timedelta, timezone
 from pathlib import Path
-from unittest.mock import AsyncMock, MagicMock, patch
+from unittest.mock import AsyncMock, MagicMock, Mock, patch
 
 import pytest
 from fastapi import FastAPI
 from fastapi.testclient import TestClient
 
 import gateway.web.api as api_module
-from gateway.web.api import router, ModeRequest, VALID_AGENTSHROUD_MODES
-from datetime import datetime, timezone, timedelta
-from gateway.ingest_api.config import get_module_mode, GatewayConfig
+from gateway.ingest_api.config import GatewayConfig, get_module_mode
 from gateway.proxy.pipeline import SecurityPipeline
-from unittest.mock import Mock, patch, AsyncMock
-
+from gateway.web.api import VALID_AGENTSHROUD_MODES, ModeRequest, router
 
 # ── app fixture ─────────────────────────────────────────────────────────────
+
 
 @pytest.fixture(autouse=True)
 def reset_env_and_task():
@@ -63,6 +63,7 @@ def _make_app() -> FastAPI:
     app = FastAPI()
     # Override auth dependency to always succeed
     from gateway.web.api import require_auth
+
     app.dependency_overrides[require_auth] = lambda: "test"
     app.include_router(router)
     return app
@@ -74,6 +75,7 @@ def client():
 
 
 # ── GET /api/mode ───────────────────────────────────────────────────────────
+
 
 class TestGetMode:
     def test_default_mode_is_enforce(self, client):
@@ -100,6 +102,7 @@ class TestGetMode:
 
 
 # ── PUT /api/mode ────────────────────────────────────────────────────────────
+
 
 class TestSetMode:
     def test_set_monitor_mode(self, client):
@@ -150,13 +153,14 @@ class TestSetMode:
 
 # ── CRITICAL log on non-enforce ──────────────────────────────────────────────
 
+
 class TestCriticalLogging:
     def test_critical_logged_when_setting_non_enforce(self, client, caplog):
         with caplog.at_level(logging.CRITICAL, logger="agentshroud.web.api"):
             client.put("/api/mode", json={"mode": "observatory"})
-        assert any(r.levelno == logging.CRITICAL for r in caplog.records), (
-            f"Expected CRITICAL log; got: {[r.levelname for r in caplog.records]}"
-        )
+        assert any(
+            r.levelno == logging.CRITICAL for r in caplog.records
+        ), f"Expected CRITICAL log; got: {[r.levelname for r in caplog.records]}"
 
     def test_no_critical_when_setting_enforce(self, client, caplog):
         os.environ["AGENTSHROUD_MODE"] = "observatory"
@@ -167,16 +171,19 @@ class TestCriticalLogging:
 
 # ── Auto-revert task ─────────────────────────────────────────────────────────
 
+
 class TestAutoRevert:
     @pytest.mark.asyncio
     async def test_revert_task_created_on_put(self):
         """A revert task is created (and is an asyncio.Task)."""
         app = _make_app()
         from fastapi.testclient import TestClient
+
         async with app.router.lifespan_context(app):
             pass  # not needed — just verify task creation
         # Call the endpoint function directly to avoid event-loop issues
         from gateway.web.api import set_mode
+
         req = ModeRequest(mode="monitor", revert_after_minutes=60)
         await set_mode(req, user="test")
         task = api_module._revert_task
@@ -188,6 +195,7 @@ class TestAutoRevert:
     async def test_second_put_cancels_previous_task(self):
         """Second PUT cancels the first revert task."""
         from gateway.web.api import set_mode
+
         req1 = ModeRequest(mode="monitor", revert_after_minutes=60)
         await set_mode(req1, user="test")
         first_task = api_module._revert_task
@@ -236,6 +244,7 @@ class TestAutoRevert:
 
 # ── ModeRequest model ────────────────────────────────────────────────────────
 
+
 class TestModeRequestModel:
     def test_default_revert_minutes(self):
         req = ModeRequest(mode="monitor")
@@ -254,12 +263,14 @@ class TestModeRequestModel:
 
 # ── D2: Kill switch automated verification ──────────────────────────────────
 
+
 class TestKillSwitchVerification:
     """Automated verification that verify_killswitch() returns required fields."""
 
     def _make_monitor(self, tmp_path: Path):
         from gateway.security.killswitch_config import KillSwitchConfig
         from gateway.security.killswitch_monitor import KillSwitchMonitor
+
         config = KillSwitchConfig()
         config.killswitch_script_path = Path("/nonexistent/killswitch.sh")
         config.verification_log_path = tmp_path / "verification.jsonl"
@@ -269,7 +280,14 @@ class TestKillSwitchVerification:
     def test_result_has_required_fields(self, tmp_path):
         monitor = self._make_monitor(tmp_path)
         result = monitor.verify_killswitch(dry_run=True)
-        required = {"timestamp", "dry_run", "script_path", "tests", "overall_status", "duration_seconds"}
+        required = {
+            "timestamp",
+            "dry_run",
+            "script_path",
+            "tests",
+            "overall_status",
+            "duration_seconds",
+        }
         missing = required - set(result.keys())
         assert not missing, f"Missing fields in verify_killswitch result: {missing}"
 
@@ -303,8 +321,8 @@ class TestKillSwitchVerification:
         assert log_path.stat().st_size > 0
 
 
-
 # === Tests from main branch (observatory mode unit tests) ===
+
 
 class TestObservatoryMode:
     """Test Observatory Mode configuration and endpoints."""
@@ -316,15 +334,15 @@ class TestObservatoryMode:
         config.security = Mock()
         config.security.pii_sanitizer = Mock()
         config.security.pii_sanitizer.mode = "enforce"
-        
+
         # Test enforce mode (default)
         with patch.dict(os.environ, {"AGENTSHROUD_MODE": "enforce"}):
             assert get_module_mode(config, "pii_sanitizer") == "enforce"
-        
+
         # Test monitor mode override
         with patch.dict(os.environ, {"AGENTSHROUD_MODE": "monitor"}):
             assert get_module_mode(config, "pii_sanitizer") == "monitor"
-        
+
         # Test without env var (should use module-specific config)
         with patch.dict(os.environ, {}, clear=True):
             assert get_module_mode(config, "pii_sanitizer") == "enforce"
@@ -346,28 +364,26 @@ class TestObservatoryMode:
         prompt_guard.warn_threshold = 0.4
         egress_filter = Mock()
         egress_filter.set_mode = Mock()
-        
+
         pipeline = SecurityPipeline(
-            pii_sanitizer=pii_sanitizer,
-            prompt_guard=prompt_guard,
-            egress_filter=egress_filter
+            pii_sanitizer=pii_sanitizer, prompt_guard=prompt_guard, egress_filter=egress_filter
         )
-        
+
         # Test switching to monitor mode
         pipeline.set_global_mode("monitor")
-        
+
         # Verify components were updated
         pii_sanitizer.set_mode.assert_called_with("monitor")
         prompt_guard.set_mode.assert_called_with("monitor")
         egress_filter.set_mode.assert_called_with("monitor")
-        
+
         # Verify prompt guard thresholds were set to high values
         assert prompt_guard.block_threshold == 999.0
         assert prompt_guard.warn_threshold == 999.0
-        
+
         # Test switching to enforce mode
         pipeline.set_global_mode("enforce")
-        
+
         # Verify thresholds were reset to normal
         assert prompt_guard.block_threshold == 0.8
         assert prompt_guard.warn_threshold == 0.4
@@ -377,7 +393,7 @@ class TestObservatoryMode:
         # Provide minimal required component (pii_sanitizer)
         pii_sanitizer = Mock()
         pipeline = SecurityPipeline(pii_sanitizer=pii_sanitizer)
-        
+
         # Should not raise any exceptions when optional components are missing
         pipeline.set_global_mode("monitor")
         pipeline.set_global_mode("enforce")
@@ -387,9 +403,9 @@ class TestObservatoryMode:
         """Test that observatory mode state is properly initialized."""
         # This would test the app_state initialization
         # Since we can't easily test the actual app_state, we test the structure
-        
+
         expected_keys = ["global_mode", "effective_since", "auto_revert_at", "pinned_modules"]
-        
+
         # Mock app_state structure
         mock_state = {
             "global_mode": "enforce",
@@ -397,18 +413,18 @@ class TestObservatoryMode:
             "auto_revert_at": None,
             "pinned_modules": [],
         }
-        
+
         for key in expected_keys:
             assert key in mock_state
-        
+
         assert mock_state["global_mode"] in ["monitor", "enforce"]
         assert isinstance(mock_state["pinned_modules"], list)
 
-    @pytest.mark.asyncio  
+    @pytest.mark.asyncio
     async def test_auto_revert_timer_logic(self):
         """Test auto-revert timer functionality."""
         # Test the auto-revert logic (without actual FastAPI app)
-        
+
         # Mock observatory state
         observatory_mode = {
             "global_mode": "monitor",
@@ -416,41 +432,43 @@ class TestObservatoryMode:
             "auto_revert_at": None,
             "pinned_modules": [],
         }
-        
+
         # Calculate revert time
         revert_hours = 2
         revert_time = datetime.now(tz=timezone.utc) + timedelta(hours=revert_hours)
         observatory_mode["auto_revert_at"] = revert_time.isoformat()
-        
+
         # Verify revert time is set correctly
         assert observatory_mode["auto_revert_at"] is not None
-        parsed_revert_time = datetime.fromisoformat(observatory_mode["auto_revert_at"].replace("Z", "+00:00"))
+        parsed_revert_time = datetime.fromisoformat(
+            observatory_mode["auto_revert_at"].replace("Z", "+00:00")
+        )
         assert parsed_revert_time > datetime.now(tz=timezone.utc)
 
     def test_module_mode_resolution(self):
         """Test module mode resolution with pinned modules."""
         # Test the logic that determines effective module mode
-        
+
         # Global monitor mode with no pinned modules
         global_mode = "monitor"
         pinned_modules = []
         module = "pii_sanitizer"
-        
+
         if module in pinned_modules:
             effective_mode = "enforce"
         else:
             effective_mode = global_mode
-        
+
         assert effective_mode == "monitor"
-        
+
         # Global monitor mode with pinned module
         pinned_modules = ["pii_sanitizer"]
-        
+
         if module in pinned_modules:
             effective_mode = "enforce"
         else:
             effective_mode = global_mode
-        
+
         assert effective_mode == "enforce"
 
     def test_observatory_mode_validation(self):
@@ -458,20 +476,20 @@ class TestObservatoryMode:
         # Test mode validation
         valid_modes = ["monitor", "enforce"]
         invalid_modes = ["disabled", "debug", "", None]
-        
+
         for mode in valid_modes:
             assert mode in ["monitor", "enforce"]
-        
+
         for mode in invalid_modes:
             assert mode not in ["monitor", "enforce"]
-        
-        # Test auto_revert_hours validation  
+
+        # Test auto_revert_hours validation
         valid_hours = [1, 24, 168]  # 1 hour to 1 week
         invalid_hours = [0, -1, 169, 1000]
-        
+
         for hours in valid_hours:
             assert 1 <= hours <= 168
-        
+
         for hours in invalid_hours:
             assert not (1 <= hours <= 168)
 
@@ -479,10 +497,10 @@ class TestObservatoryMode:
         """Test validation of pinned module names."""
         valid_modules = ["pii_sanitizer", "prompt_guard", "egress_filter", "mcp_proxy"]
         invalid_modules = ["nonexistent", "killswitch", "", None]
-        
+
         for module in valid_modules:
             assert module in ["pii_sanitizer", "prompt_guard", "egress_filter", "mcp_proxy"]
-        
+
         # Test that invalid modules would be rejected
         for module in invalid_modules:
             if module:
@@ -504,14 +522,20 @@ class TestObservatoryModeAPI:
             "pinned_modules": [],
             "module_modes": {
                 "pii_sanitizer": "enforce",
-                "prompt_guard": "enforce", 
+                "prompt_guard": "enforce",
                 "egress_filter": "enforce",
-                "mcp_proxy": "enforce"
-            }
+                "mcp_proxy": "enforce",
+            },
         }
-        
+
         # Verify structure
-        required_keys = ["global_mode", "effective_since", "auto_revert_at", "pinned_modules", "module_modes"]
+        required_keys = [
+            "global_mode",
+            "effective_since",
+            "auto_revert_at",
+            "pinned_modules",
+            "module_modes",
+        ]
         for key in required_keys:
             assert key in expected_response
 
@@ -519,12 +543,8 @@ class TestObservatoryModeAPI:
     async def test_set_observatory_mode_endpoint(self):
         """Test POST /manage/mode endpoint request/response."""
         # Mock request payload
-        request_payload = {
-            "mode": "monitor",
-            "auto_revert_hours": 4,
-            "pin_modules": ["killswitch"]
-        }
-        
+        request_payload = {"mode": "monitor", "auto_revert_hours": 4, "pin_modules": ["killswitch"]}
+
         # Mock successful response
         expected_response = {
             "success": True,
@@ -532,9 +552,9 @@ class TestObservatoryModeAPI:
             "new_mode": "monitor",
             "effective_since": "2026-03-04T16:32:00Z",
             "auto_revert_at": "2026-03-04T20:32:00Z",
-            "pinned_modules": ["killswitch"]
+            "pinned_modules": ["killswitch"],
         }
-        
+
         # Verify response structure
         assert expected_response["success"] is True
         assert expected_response["new_mode"] == request_payload["mode"]

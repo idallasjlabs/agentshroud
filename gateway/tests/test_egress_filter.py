@@ -8,18 +8,18 @@ from __future__ import annotations
 
 import pytest
 
-from gateway.security.egress_filter import (
-    EgressFilter,
-    EgressAction,
-    EgressPolicy,
-    EgressAttempt,
-)
 from gateway.security.egress_config import EgressFilterConfig
-
+from gateway.security.egress_filter import (
+    EgressAction,
+    EgressAttempt,
+    EgressFilter,
+    EgressPolicy,
+)
 
 # ---------------------------------------------------------------------------
 # Helpers
 # ---------------------------------------------------------------------------
+
 
 def _make_filter(mode="enforce", allowed_domains=None, denied_domains=None, allowed_ips=None):
     """Create an EgressFilter with a simple config."""
@@ -35,6 +35,7 @@ def _make_filter(mode="enforce", allowed_domains=None, denied_domains=None, allo
 # ---------------------------------------------------------------------------
 # Basic allow / deny in enforce mode
 # ---------------------------------------------------------------------------
+
 
 class TestEnforceMode:
     """EgressFilter in enforce mode should block unlisted destinations."""
@@ -86,6 +87,7 @@ class TestEnforceMode:
 # Monitor mode
 # ---------------------------------------------------------------------------
 
+
 class TestMonitorMode:
     """EgressFilter in monitor mode should allow but log unlisted destinations."""
 
@@ -104,6 +106,7 @@ class TestMonitorMode:
 # ---------------------------------------------------------------------------
 # IP-based rules
 # ---------------------------------------------------------------------------
+
 
 class TestIPRules:
     """IP allowlist and private-IP SSRF protection."""
@@ -150,6 +153,7 @@ class TestIPRules:
 # Per-agent policies
 # ---------------------------------------------------------------------------
 
+
 class TestPerAgentPolicy:
     """Per-agent policies override the default."""
 
@@ -175,6 +179,7 @@ class TestPerAgentPolicy:
 # URL parsing
 # ---------------------------------------------------------------------------
 
+
 class TestURLParsing:
     """EgressFilter correctly parses URLs, host:port, and bare hostnames."""
 
@@ -197,6 +202,7 @@ class TestURLParsing:
 # ---------------------------------------------------------------------------
 # Logging / stats
 # ---------------------------------------------------------------------------
+
 
 class TestLogging:
     """EgressFilter records attempts and provides stats."""
@@ -242,6 +248,7 @@ class TestLogging:
 # EgressAttempt dataclass
 # ---------------------------------------------------------------------------
 
+
 class TestEgressAttempt:
     """EgressAttempt stores the right fields."""
 
@@ -268,6 +275,7 @@ class TestInteractiveApproval:
         class FakeApprovalQueue:
             async def request_approval(self, **_kwargs):
                 from gateway.security.egress_approval import ApprovalResult
+
                 return ApprovalResult.APPROVED
 
             async def get_pending_requests(self):
@@ -283,6 +291,7 @@ class TestInteractiveApproval:
         class FakeApprovalQueue:
             async def request_approval(self, **_kwargs):
                 from gateway.security.egress_approval import ApprovalResult
+
                 return ApprovalResult.DENIED
 
             async def get_pending_requests(self):
@@ -307,6 +316,7 @@ class TestInteractiveApproval:
         ef.set_event_bus(bus)
         ef.check("bot", "https://api.anthropic.com/v1/messages")
         import asyncio
+
         await asyncio.sleep(0)
         assert any(e.type == "egress_attempt" for e in bus.events)
 
@@ -319,6 +329,7 @@ class TestInteractiveApproval:
             async def request_approval(self, **_kwargs):
                 self.calls += 1
                 from gateway.security.egress_approval import ApprovalResult
+
                 return ApprovalResult.APPROVED
 
             async def get_pending_requests(self):
@@ -333,7 +344,9 @@ class TestInteractiveApproval:
         ef = EgressFilter(config=cfg)
         q = FakeApprovalQueue()
         ef.set_approval_queue(q)
-        result = await ef.check_async("bot", "https://api.anthropic.com/v1/messages", tool_name="web_fetch")
+        result = await ef.check_async(
+            "bot", "https://api.anthropic.com/v1/messages", tool_name="web_fetch"
+        )
         assert result.action == EgressAction.ALLOW
         assert q.calls == 1
 
@@ -341,6 +354,7 @@ class TestInteractiveApproval:
 # ---------------------------------------------------------------------------
 # EgressPolicy standalone tests
 # ---------------------------------------------------------------------------
+
 
 class TestEgressPolicy:
     """Unit tests for EgressPolicy matching methods."""
@@ -394,6 +408,7 @@ async def test_egress_filter_notifies_on_deny():
             notifications.append({"domain": domain, "agent_id": agent_id})
 
     from gateway.security.egress_config import EgressFilterConfig
+
     policy = EgressPolicy(allowed_domains=["api.anthropic.com"], deny_all=True)
     config = EgressFilterConfig(mode="enforce")
     ef = EgressFilter(config=config, default_policy=policy)
@@ -418,6 +433,7 @@ async def test_egress_filter_no_notification_on_allow():
             notifications.append({"domain": domain, "agent_id": agent_id})
 
     from gateway.security.egress_config import EgressFilterConfig
+
     policy = EgressPolicy(allowed_domains=["api.anthropic.com"], deny_all=True)
     config = EgressFilterConfig(mode="enforce")
     ef = EgressFilter(config=config, default_policy=policy)
@@ -434,6 +450,7 @@ async def test_egress_filter_no_notification_on_allow():
 async def test_egress_filter_flush_without_notifier():
     """flush_notifications with no notifier set should not crash."""
     from gateway.security.egress_config import EgressFilterConfig
+
     policy = EgressPolicy(allowed_domains=[], deny_all=True)
     config = EgressFilterConfig(mode="enforce")
     ef = EgressFilter(config=config, default_policy=policy)
@@ -450,6 +467,7 @@ async def test_egress_filter_flush_without_notifier():
 
 def _make_deny_all_filter() -> EgressFilter:
     from gateway.security.egress_config import EgressFilterConfig
+
     policy = EgressPolicy(allowed_domains=[], deny_all=True)
     config = EgressFilterConfig(mode="enforce")
     return EgressFilter(config=config, default_policy=policy)
@@ -457,7 +475,8 @@ def _make_deny_all_filter() -> EgressFilter:
 
 def test_grant_timed_approval_allows_domain():
     """A domain with an active timed approval should be allowed."""
-    from datetime import datetime, timezone, timedelta
+    from datetime import datetime, timedelta, timezone
+
     ef = _make_deny_all_filter()
     expires = (datetime.now(timezone.utc) + timedelta(hours=1)).isoformat()
     ef.grant_timed_approval("weather.com", expires)
@@ -468,7 +487,8 @@ def test_grant_timed_approval_allows_domain():
 
 def test_grant_timed_approval_does_not_affect_other_domains():
     """Timed approval for one domain must not allow other domains."""
-    from datetime import datetime, timezone, timedelta
+    from datetime import datetime, timedelta, timezone
+
     ef = _make_deny_all_filter()
     expires = (datetime.now(timezone.utc) + timedelta(hours=1)).isoformat()
     ef.grant_timed_approval("weather.com", expires)
@@ -479,7 +499,8 @@ def test_grant_timed_approval_does_not_affect_other_domains():
 def test_grant_timed_approval_expired_falls_back_to_deny():
     """An expired timed approval should be evicted and the domain denied."""
     import time
-    from datetime import datetime, timezone, timedelta
+    from datetime import datetime, timedelta, timezone
+
     ef = _make_deny_all_filter()
     # Grant an approval that already expired
     expired = (datetime.now(timezone.utc) - timedelta(seconds=1)).isoformat()
@@ -499,7 +520,8 @@ def test_grant_timed_approval_invalid_iso_is_ignored():
 
 def test_grant_timed_approval_cleans_stale_entries():
     """grant_timed_approval should purge expired entries on each call."""
-    from datetime import datetime, timezone, timedelta
+    from datetime import datetime, timedelta, timezone
+
     ef = _make_deny_all_filter()
     # Insert a stale entry manually
     ef._timed_approvals["old.com"] = datetime.now(timezone.utc).timestamp() - 100

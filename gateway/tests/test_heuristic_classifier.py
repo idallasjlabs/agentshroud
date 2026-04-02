@@ -2,7 +2,11 @@
 """Tests for heuristic injection classifier."""
 
 import pytest
-from gateway.security.heuristic_classifier import HeuristicClassifier, ClassificationResult
+
+from gateway.security.heuristic_classifier import (
+    ClassificationResult,
+    HeuristicClassifier,
+)
 
 
 class TestHeuristicClassifier:
@@ -107,6 +111,7 @@ class TestHeuristicClassifier:
     def test_backward_compat_alias(self):
         """InjectionClassifier alias should still work."""
         from gateway.security.heuristic_classifier import InjectionClassifier
+
         clf = InjectionClassifier()
         result = clf.classify("Hello world")
         assert result.probability < 0.3

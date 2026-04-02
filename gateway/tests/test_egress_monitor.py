@@ -3,16 +3,17 @@
 # Protected by common law trademark rights. Federal trademark registration pending.
 # Unauthorized reproduction, distribution, or use of the AgentShroud name or brand is strictly prohibited.
 """Tests for unified egress monitoring."""
+
 from __future__ import annotations
 
-
 import pytest
+
 from gateway.security.egress_monitor import (
+    AlertSeverity,
+    EgressChannel,
+    EgressEvent,
     EgressMonitor,
     EgressMonitorConfig,
-    EgressEvent,
-    EgressChannel,
-    AlertSeverity,
 )
 
 

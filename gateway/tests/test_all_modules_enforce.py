@@ -7,6 +7,7 @@
 This test suite is the enforcement gate for the v0.8.0 "Watchtower" release.
 A pass here means every module is configured fail-closed by default.
 """
+
 from __future__ import annotations
 
 import os
@@ -14,26 +15,25 @@ import os
 import pytest
 
 from gateway.ingest_api.config import (
+    GatewayConfig,
     SecurityConfig,
     SecurityModuleConfig,
     get_module_mode,
-    GatewayConfig,
 )
-from gateway.security.dns_filter import DNSFilterConfig
-from gateway.security.egress_monitor import EgressMonitorConfig
-from gateway.security.subagent_monitor import SubagentMonitorConfig
-from gateway.security.killswitch_config import KillSwitchConfig
-from gateway.security.prompt_guard import PromptGuard
-from gateway.security.context_guard import ContextGuard
-from gateway.security.git_guard import GitGuard
-from gateway.security.file_sandbox import FileSandbox, FileSandboxConfig
-from gateway.security.egress_filter import EgressFilter
-from gateway.security.multi_turn_tracker import MultiTurnTracker
-from gateway.security.tool_chain_analyzer import ToolChainAnalyzer
 from gateway.security.browser_security import BrowserSecurityGuard
-from gateway.security.path_isolation import PathIsolationManager, PathIsolationConfig
+from gateway.security.context_guard import ContextGuard
+from gateway.security.dns_filter import DNSFilterConfig
+from gateway.security.egress_filter import EgressFilter
+from gateway.security.egress_monitor import EgressMonitorConfig
+from gateway.security.file_sandbox import FileSandbox, FileSandboxConfig
+from gateway.security.git_guard import GitGuard
+from gateway.security.killswitch_config import KillSwitchConfig
+from gateway.security.multi_turn_tracker import MultiTurnTracker
 from gateway.security.output_canary import OutputCanary
-
+from gateway.security.path_isolation import PathIsolationConfig, PathIsolationManager
+from gateway.security.prompt_guard import PromptGuard
+from gateway.security.subagent_monitor import SubagentMonitorConfig
+from gateway.security.tool_chain_analyzer import ToolChainAnalyzer
 
 ENFORCE_MODE = "enforce"
 
@@ -111,12 +111,18 @@ class TestGetModuleModeEnforceDefault:
             auth_token="test-token",
         )
         for module in [
-            "pii_sanitizer", "prompt_guard", "egress_filter", "mcp_proxy",
-            "dns_filter", "subagent_monitor", "egress_monitor", "killswitch",
+            "pii_sanitizer",
+            "prompt_guard",
+            "egress_filter",
+            "mcp_proxy",
+            "dns_filter",
+            "subagent_monitor",
+            "egress_monitor",
+            "killswitch",
         ]:
-            assert get_module_mode(cfg, module) == ENFORCE_MODE, (
-                f"Module {module} should default to enforce"
-            )
+            assert (
+                get_module_mode(cfg, module) == ENFORCE_MODE
+            ), f"Module {module} should default to enforce"
 
     def test_global_monitor_override_downgrades_all(self, monkeypatch):
         """AGENTSHROUD_MODE=monitor must downgrade ALL modules to monitor."""
@@ -128,12 +134,18 @@ class TestGetModuleModeEnforceDefault:
             auth_token="test-token",
         )
         for module in [
-            "pii_sanitizer", "prompt_guard", "egress_filter", "mcp_proxy",
-            "dns_filter", "subagent_monitor", "egress_monitor", "killswitch",
+            "pii_sanitizer",
+            "prompt_guard",
+            "egress_filter",
+            "mcp_proxy",
+            "dns_filter",
+            "subagent_monitor",
+            "egress_monitor",
+            "killswitch",
         ]:
-            assert get_module_mode(cfg, module) == "monitor", (
-                f"Module {module} should be in monitor when AGENTSHROUD_MODE=monitor"
-            )
+            assert (
+                get_module_mode(cfg, module) == "monitor"
+            ), f"Module {module} should be in monitor when AGENTSHROUD_MODE=monitor"
 
 
 class TestModuleInstantiationInEnforceMode:

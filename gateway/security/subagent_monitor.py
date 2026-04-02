@@ -66,9 +66,7 @@ class SubagentMonitorConfig:
 class SubagentMonitor:
     def __init__(self, config: SubagentMonitorConfig):
         self.config = config
-        self._active: dict[str, dict[str, SubagentInfo]] = (
-            {}
-        )  # session -> {agent_id: info}
+        self._active: dict[str, dict[str, SubagentInfo]] = {}  # session -> {agent_id: info}
         self._events: list[SubagentEvent] = []
 
     def register_spawn(
@@ -131,9 +129,7 @@ class SubagentMonitor:
         if info and info.effective_trust < required_trust:
             flagged = True
             reason = f"trust {info.effective_trust} < required {required_trust} for {tool_name}"
-            self._log_event(
-                session_id, agent_id, SubagentEventType.TRUST_VIOLATION, reason
-            )
+            self._log_event(session_id, agent_id, SubagentEventType.TRUST_VIOLATION, reason)
 
         self._log_event(
             session_id,
@@ -160,9 +156,7 @@ class SubagentMonitor:
             self._active[session_id].pop(agent_id, None)
         self._log_event(session_id, agent_id, SubagentEventType.KILLED, "kill_agent")
 
-    def get_audit_log(
-        self, session_id: str, agent_id: Optional[str] = None
-    ) -> list[SubagentEvent]:
+    def get_audit_log(self, session_id: str, agent_id: Optional[str] = None) -> list[SubagentEvent]:
         events = [e for e in self._events if e.session_id == session_id]
         if agent_id:
             events = [e for e in events if e.agent_id == agent_id]
@@ -174,9 +168,7 @@ class SubagentMonitor:
             SubagentEventType.LIMIT_EXCEEDED,
         }
         return [
-            e
-            for e in self._events
-            if e.session_id == session_id and e.event_type in flagged_types
+            e for e in self._events if e.session_id == session_id and e.event_type in flagged_types
         ]
 
     def _log_event(
@@ -194,6 +186,4 @@ class SubagentMonitor:
             details=details,
         )
         self._events.append(event)
-        logger.info(
-            "Subagent event: %s %s %s — %s", session_id, agent_id, event_type, details
-        )
+        logger.info("Subagent event: %s %s %s — %s", session_id, agent_id, event_type, details)

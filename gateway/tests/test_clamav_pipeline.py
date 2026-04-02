@@ -10,6 +10,7 @@ Covers:
   - SecurityPipeline Step 2.5: no clamav_scanner configured → skipped (no error)
   - SecurityPipeline Step 2.5: clamav_scanner error → fail-open (FORWARD + CRITICAL log)
 """
+
 from __future__ import annotations
 
 import asyncio
@@ -18,13 +19,13 @@ from unittest.mock import AsyncMock, MagicMock, patch
 
 import pytest
 
-from gateway.security.clamav_scanner import parse_clamscan_output, scan_bytes
 from gateway.proxy.pipeline import PipelineAction, SecurityPipeline
-
+from gateway.security.clamav_scanner import parse_clamscan_output, scan_bytes
 
 # ---------------------------------------------------------------------------
 # scan_bytes unit tests
 # ---------------------------------------------------------------------------
+
 
 @pytest.mark.asyncio
 async def test_scan_bytes_empty_input():
@@ -36,7 +37,9 @@ async def test_scan_bytes_empty_input():
 
 @pytest.mark.asyncio
 async def test_scan_bytes_binary_not_found():
-    with patch("asyncio.create_subprocess_exec", side_effect=FileNotFoundError("clamdscan not found")):
+    with patch(
+        "asyncio.create_subprocess_exec", side_effect=FileNotFoundError("clamdscan not found")
+    ):
         result = await scan_bytes(b"hello world" * 50)
     assert result["infected_count"] == 0
     assert result["error"] == "binary_not_found"
@@ -89,6 +92,7 @@ async def test_scan_bytes_infected():
 # Pipeline integration tests
 # ---------------------------------------------------------------------------
 
+
 def _make_pipeline(clamav_fn=None):
     """Build a minimal SecurityPipeline with passthrough PII + optional clamav."""
     pii = MagicMock()
@@ -122,11 +126,13 @@ async def test_pipeline_clamav_clean_payload():
 @pytest.mark.asyncio
 async def test_pipeline_clamav_malware_blocked():
     """Malware-infected base64 payload → BLOCK with signature in block_reason."""
-    clamav_fn = AsyncMock(return_value={
-        "infected_count": 1,
-        "infected_files": [{"file": "stream", "signature": "Eicar-Test-Signature"}],
-        "error": None,
-    })
+    clamav_fn = AsyncMock(
+        return_value={
+            "infected_count": 1,
+            "infected_files": [{"file": "stream", "signature": "Eicar-Test-Signature"}],
+            "error": None,
+        }
+    )
     pipeline = _make_pipeline(clamav_fn)
     payload = _b64_payload(b"EICAR" * 60)
     result = await pipeline.process_inbound(f"run this: {payload}", agent_id="agent1")
@@ -146,13 +152,16 @@ async def test_pipeline_clamav_not_configured():
 @pytest.mark.asyncio
 async def test_pipeline_clamav_error_fail_open(caplog):
     """ClamAV scan_bytes returns error → fail-open: CRITICAL log, FORWARD."""
-    clamav_fn = AsyncMock(return_value={
-        "infected_count": 0,
-        "error": "binary_not_found",
-    })
+    clamav_fn = AsyncMock(
+        return_value={
+            "infected_count": 0,
+            "error": "binary_not_found",
+        }
+    )
     pipeline = _make_pipeline(clamav_fn)
     payload = _b64_payload(b"data " * 60)
     import logging
+
     with caplog.at_level(logging.CRITICAL, logger="agentshroud.proxy.pipeline"):
         result = await pipeline.process_inbound(f"scan this: {payload}", agent_id="agent1")
     assert result.action == PipelineAction.FORWARD
@@ -162,7 +171,13 @@ async def test_pipeline_clamav_error_fail_open(caplog):
 @pytest.mark.asyncio
 async def test_pipeline_short_base64_not_scanned():
     """Short base64 (<64 groups of 4) skips ClamAV scan."""
-    clamav_fn = AsyncMock(return_value={"infected_count": 1, "infected_files": [{"file": "x", "signature": "Test"}], "error": None})
+    clamav_fn = AsyncMock(
+        return_value={
+            "infected_count": 1,
+            "infected_files": [{"file": "x", "signature": "Test"}],
+            "error": None,
+        }
+    )
     pipeline = _make_pipeline(clamav_fn)
     # Short base64 (< 256 bytes decoded) — should NOT trigger scan
     short_b64 = base64.b64encode(b"short " * 5).decode()

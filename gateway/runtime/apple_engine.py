@@ -86,15 +86,11 @@ class AppleContainerEngine(ContainerEngine):
         for k, v in (env or {}).items():
             cmd += ["-e", f"{k}={v}"]
         if privileged:
-            logger.warning(
-                "Apple Containers: --privileged flag not applicable (VM isolation)"
-            )
+            logger.warning("Apple Containers: --privileged flag not applicable (VM isolation)")
         if seccomp:
             logger.info("Apple Containers: seccomp profiles not needed (VM isolation)")
         if caps:
-            logger.info(
-                "Apple Containers: capability flags not applicable (VM isolation)"
-            )
+            logger.info("Apple Containers: capability flags not applicable (VM isolation)")
         cmd.append(image)
         return self._run(cmd).stdout.strip()
 
@@ -197,8 +193,7 @@ class AppleContainerEngine(ContainerEngine):
 
     def compose_down(self, file: str) -> str:
         raise NotImplementedError(
-            "Apple Containers does not support compose. "
-            "Use the generated shutdown script."
+            "Apple Containers does not support compose. " "Use the generated shutdown script."
         )
 
     # -- health ----------------------------------------------------------

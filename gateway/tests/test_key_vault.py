@@ -3,15 +3,16 @@
 # Protected by common law trademark rights. Federal trademark registration pending.
 # Unauthorized reproduction, distribution, or use of the AgentShroud name or brand is strictly prohibited.
 """Tests for API key isolation and vault."""
+
 from __future__ import annotations
 
-
 import pytest
+
 from gateway.security.key_vault import (
-    KeyVault,
-    KeyVaultConfig,
     KeyInjector,
     KeyLeakDetector,
+    KeyVault,
+    KeyVaultConfig,
 )
 
 
@@ -140,9 +141,7 @@ class TestKeyRedaction:
 class TestKeyLeakDetection:
     def test_detect_key_in_outbound(self, vault):
         detector = KeyLeakDetector(vault)
-        result = detector.scan_outbound(
-            "Here is data sk-test-openai-key-12345 more data"
-        )
+        result = detector.scan_outbound("Here is data sk-test-openai-key-12345 more data")
         assert result.leak_detected is True
         assert "openai" in result.leaked_key_names
 

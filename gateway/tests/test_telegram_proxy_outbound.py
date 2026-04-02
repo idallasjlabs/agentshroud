@@ -5,18 +5,21 @@ Proves that _filter_outbound() runs the full security pipeline
 
 Created: 2026-03-08 — Fixes C-0 (outbound pipeline bypass)
 """
-import json
+
 import asyncio
 import io
+import json
 import time
-import urllib.parse
 import urllib.error
+import urllib.parse
 import urllib.request
-import pytest
 from types import SimpleNamespace
-from gateway.proxy.telegram_proxy import TelegramAPIProxy
-from gateway.ingest_api.sanitizer import PIISanitizer
+
+import pytest
+
 from gateway.ingest_api.config import PIIConfig
+from gateway.ingest_api.sanitizer import PIISanitizer
+from gateway.proxy.telegram_proxy import TelegramAPIProxy
 
 
 def _make_sanitizer():
@@ -38,17 +41,25 @@ class TestOutboundPipelineIntegration:
         sanitizer = _make_sanitizer()
         proxy = TelegramAPIProxy(sanitizer=sanitizer)
 
-        body = json.dumps({
-            "chat_id": "7614658040",
-            "text": "The authorized senders are: 809-696-8754, 850-602-2825, 854-535-6403"
-        }).encode()
+        body = json.dumps(
+            {
+                "chat_id": "7614658040",
+                "text": "The authorized senders are: 809-696-8754, 850-602-2825, 854-535-6403",
+            }
+        ).encode()
 
         result = await proxy._filter_outbound(body, "application/json")
         result_data = json.loads(result)
 
-        assert "809-696-8754" not in result_data["text"], "Phone number leaked through outbound filter"
-        assert "850-602-2825" not in result_data["text"], "Phone number leaked through outbound filter"
-        assert "854-535-6403" not in result_data["text"], "Phone number leaked through outbound filter"
+        assert (
+            "809-696-8754" not in result_data["text"]
+        ), "Phone number leaked through outbound filter"
+        assert (
+            "850-602-2825" not in result_data["text"]
+        ), "Phone number leaked through outbound filter"
+        assert (
+            "854-535-6403" not in result_data["text"]
+        ), "Phone number leaked through outbound filter"
 
     @pytest.mark.asyncio
     async def test_ssn_redacted_on_outbound(self):
@@ -56,10 +67,9 @@ class TestOutboundPipelineIntegration:
         sanitizer = _make_sanitizer()
         proxy = TelegramAPIProxy(sanitizer=sanitizer)
 
-        body = json.dumps({
-            "chat_id": "12345",
-            "text": "Your SSN is 987-65-4321 as requested."
-        }).encode()
+        body = json.dumps(
+            {"chat_id": "12345", "text": "Your SSN is 987-65-4321 as requested."}
+        ).encode()
 
         result = await proxy._filter_outbound(body, "application/json")
         result_data = json.loads(result)
@@ -76,20 +86,19 @@ class TestOutboundPipelineIntegration:
                 nonlocal pipeline_called
                 pipeline_called = True
                 from dataclasses import dataclass
+
                 @dataclass
                 class Result:
                     blocked = False
                     sanitized_message = response
                     block_reason = ""
+
                 return Result()
 
         sanitizer = _make_sanitizer()
         proxy = TelegramAPIProxy(pipeline=MockPipeline(), sanitizer=sanitizer)
 
-        body = json.dumps({
-            "chat_id": "12345",
-            "text": "Hello world"
-        }).encode()
+        body = json.dumps({"chat_id": "12345", "text": "Hello world"}).encode()
 
         await proxy._filter_outbound(body, "application/json")
         assert pipeline_called, "Pipeline.process_outbound must be called for outbound messages"
@@ -97,6 +106,7 @@ class TestOutboundPipelineIntegration:
     @pytest.mark.asyncio
     async def test_outbound_fails_closed_for_non_owner(self):
         """If pipeline crashes, non-owner messages must be blocked."""
+
         class CrashingPipeline:
             async def process_outbound(self, response, **kwargs):
                 raise RuntimeError("Intentional crash")
@@ -106,22 +116,25 @@ class TestOutboundPipelineIntegration:
 
         class MockRBAC:
             owner_user_id = "9999999999"
+
         proxy._rbac = MockRBAC()
 
-        body = json.dumps({
-            "chat_id": "7614658040",
-            "text": "Some response with secrets"
-        }).encode()
+        body = json.dumps({"chat_id": "7614658040", "text": "Some response with secrets"}).encode()
 
         result = await proxy._filter_outbound(body, "application/json")
         result_data = json.loads(result)
 
-        assert "protected by agentshroud" in result_data["text"].lower(),             "Non-owner messages must be blocked when pipeline crashes"
-        assert "Some response with secrets" not in result_data["text"],             "Original content must not leak through on pipeline crash"
+        assert (
+            "protected by agentshroud" in result_data["text"].lower()
+        ), "Non-owner messages must be blocked when pipeline crashes"
+        assert (
+            "Some response with secrets" not in result_data["text"]
+        ), "Original content must not leak through on pipeline crash"
 
     @pytest.mark.asyncio
     async def test_outbound_owner_exempt_from_fail_closed(self):
         """If pipeline crashes, owner messages should still go through."""
+
         class CrashingPipeline:
             async def process_outbound(self, response, **kwargs):
                 raise RuntimeError("Intentional crash")
@@ -131,17 +144,19 @@ class TestOutboundPipelineIntegration:
 
         class MockRBAC:
             owner_user_id = "8096968754"
+
         proxy._rbac = MockRBAC()
 
-        body = json.dumps({
-            "chat_id": "8096968754",
-            "text": "Owner response should pass through"
-        }).encode()
+        body = json.dumps(
+            {"chat_id": "8096968754", "text": "Owner response should pass through"}
+        ).encode()
 
         result = await proxy._filter_outbound(body, "application/json")
         result_data = json.loads(result)
 
-        assert "security pipeline" not in result_data["text"].lower(),             "Owner messages should not be blocked on pipeline crash"
+        assert (
+            "security pipeline" not in result_data["text"].lower()
+        ), "Owner messages should not be blocked on pipeline crash"
 
     @pytest.mark.asyncio
     async def test_long_outbound_message_blocked_for_non_owner(self):
@@ -150,10 +165,7 @@ class TestOutboundPipelineIntegration:
         proxy = TelegramAPIProxy(sanitizer=sanitizer)
         proxy._max_outbound_chars = 32
 
-        body = json.dumps({
-            "chat_id": "7614658040",
-            "text": "A" * 100
-        }).encode()
+        body = json.dumps({"chat_id": "7614658040", "text": "A" * 100}).encode()
 
         result = await proxy._filter_outbound(body, "application/json")
         result_data = json.loads(result)
@@ -183,6 +195,7 @@ class TestOutboundPipelineIntegration:
     @pytest.mark.asyncio
     async def test_info_filter_redaction_escalates_to_block_for_non_owner(self):
         """Any outbound info-filter redaction should be blocked for collaborators."""
+
         class InfoFilterPipeline:
             async def process_outbound(self, response, **kwargs):
                 return SimpleNamespace(
@@ -195,10 +208,12 @@ class TestOutboundPipelineIntegration:
         sanitizer = _make_sanitizer()
         proxy = TelegramAPIProxy(pipeline=InfoFilterPipeline(), sanitizer=sanitizer)
 
-        body = json.dumps({
-            "chat_id": "7614658040",
-            "text": "sensitive runtime details",
-        }).encode()
+        body = json.dumps(
+            {
+                "chat_id": "7614658040",
+                "text": "sensitive runtime details",
+            }
+        ).encode()
 
         result = await proxy._filter_outbound(body, "application/json")
         result_data = json.loads(result)
@@ -265,7 +280,7 @@ class TestOutboundPipelineIntegration:
         body = json.dumps(
             {
                 "chat_id": "7614658040",
-                "text": "{\"name\": \"sessions_spawn\", \"arguments\": {\"agentId\": \"acp.healthcheck\"}}",
+                "text": '{"name": "sessions_spawn", "arguments": {"agentId": "acp.healthcheck"}}',
             }
         ).encode()
         result = json.loads(await proxy._filter_outbound(body, "application/json"))
@@ -279,7 +294,7 @@ class TestOutboundPipelineIntegration:
         body = json.dumps(
             {
                 "chat_id": "7614658040",
-                "text": "{\"\u200bname\": \"sessions_spawn\", \"arguments\": {\"agentId\": \"acp.healthcheck\"}}",
+                "text": '{"\u200bname": "sessions_spawn", "arguments": {"agentId": "acp.healthcheck"}}',
             }
         ).encode()
         result = json.loads(await proxy._filter_outbound(body, "application/json"))
@@ -293,7 +308,7 @@ class TestOutboundPipelineIntegration:
         body = json.dumps(
             {
                 "chat_id": "8096968754",
-                "text": "{\"name\": \"NO_REPLY\", \"arguments\": {}}",
+                "text": '{"name": "NO_REPLY", "arguments": {}}',
             }
         ).encode()
         result = json.loads(await proxy._filter_outbound(body, "application/json"))
@@ -372,7 +387,7 @@ class TestOutboundPipelineIntegration:
         body = json.dumps(
             {
                 "chat_id": "8096968754",
-                "text": "{\"name\":\"sessions_spawn\",\"arguments\":{\"agentId\":\"acp.healthcheck\",\"task\":\"x\"}}",
+                "text": '{"name":"sessions_spawn","arguments":{"agentId":"acp.healthcheck","task":"x"}}',
             }
         ).encode()
         result = json.loads(await proxy._filter_outbound(body, "application/json"))
@@ -385,7 +400,7 @@ class TestOutboundPipelineIntegration:
         body = json.dumps(
             {
                 "chat_id": "8096968754",
-                "text": "{\"name\":\"sessions_spawn\",\"arguments\":{\"agentId\":\"acp.any\"}}",
+                "text": '{"name":"sessions_spawn","arguments":{"agentId":"acp.any"}}',
             }
         ).encode()
         result = json.loads(await proxy._filter_outbound(body, "application/json"))
@@ -592,7 +607,7 @@ class TestOutboundPipelineIntegration:
         body = json.dumps(
             {
                 "chat_id": "8096968754",
-                "text": "Ollama API error 400: {\"error\":\"model does not support tools\"}",
+                "text": 'Ollama API error 400: {"error":"model does not support tools"}',
             }
         ).encode()
         result = json.loads(await proxy._filter_outbound(body, "application/json"))
@@ -908,7 +923,7 @@ class TestOutboundPipelineIntegration:
         body = urllib.parse.urlencode(
             {
                 "chat_id": "7614658040",
-                "text": "<function_calls>{\"name\":\"web_fetch\",\"arguments\":{}}</function_calls>",
+                "text": '<function_calls>{"name":"web_fetch","arguments":{}}</function_calls>',
             }
         ).encode()
         result = await proxy._filter_outbound(body, "application/x-www-form-urlencoded")
@@ -937,7 +952,7 @@ class TestOutboundPipelineIntegration:
         body = urllib.parse.urlencode(
             {
                 "chat_id": "7614658040",
-                "caption": "<function_calls>{\"name\":\"web_fetch\",\"arguments\":{}}</function_calls>",
+                "caption": '<function_calls>{"name":"web_fetch","arguments":{}}</function_calls>',
             }
         ).encode()
         result = await proxy._filter_outbound(body, "application/x-www-form-urlencoded")
@@ -999,7 +1014,7 @@ class TestOutboundPipelineIntegration:
             {
                 "chat_id": "7614658040",
                 "text": " ",
-                "message": "<function_calls>{\"name\":\"web_fetch\",\"arguments\":{}}</function_calls>",
+                "message": '<function_calls>{"name":"web_fetch","arguments":{}}</function_calls>',
             }
         ).encode()
         result = await proxy._filter_outbound(body, "application/x-www-form-urlencoded")
@@ -1030,7 +1045,7 @@ class TestOutboundPipelineIntegration:
             {
                 "chat_id": "7614658040",
                 "text": " ",
-                "content": "<function_calls>{\"name\":\"web_fetch\",\"arguments\":{}}</function_calls>",
+                "content": '<function_calls>{"name":"web_fetch","arguments":{}}</function_calls>',
             }
         ).encode()
         result = await proxy._filter_outbound(body, "application/x-www-form-urlencoded")
@@ -1061,7 +1076,7 @@ class TestOutboundPipelineIntegration:
             {
                 "chat_id": "7614658040",
                 "text": "",
-                "draft": "<function_calls>{\"name\":\"web_fetch\",\"arguments\":{}}</function_calls>",
+                "draft": '<function_calls>{"name":"web_fetch","arguments":{}}</function_calls>',
             }
         ).encode()
         result = await proxy._filter_outbound(body, "application/x-www-form-urlencoded")
@@ -1246,7 +1261,9 @@ class TestOutboundPipelineIntegration:
         assert "/healthcheck" in text.lower()
 
     @pytest.mark.asyncio
-    async def test_healthcheck_skill_message_without_sandbox_is_not_rewritten_for_json_caption_field(self):
+    async def test_healthcheck_skill_message_without_sandbox_is_not_rewritten_for_json_caption_field(
+        self,
+    ):
         """JSON caption field should keep healthcheck SKILL.md text unchanged when sandbox hint is absent."""
         proxy = TelegramAPIProxy(sanitizer=_make_sanitizer())
         original = "Cannot access healthcheck skill.md from this environment."
@@ -1300,7 +1317,9 @@ class TestOutboundPipelineIntegration:
         assert "/healthcheck" in text.lower()
 
     @pytest.mark.asyncio
-    async def test_healthcheck_skill_message_without_sandbox_is_not_rewritten_for_json_content_field(self):
+    async def test_healthcheck_skill_message_without_sandbox_is_not_rewritten_for_json_content_field(
+        self,
+    ):
         """JSON content field should keep healthcheck SKILL.md text unchanged when sandbox hint is absent."""
         proxy = TelegramAPIProxy(sanitizer=_make_sanitizer())
         original = "Cannot access healthcheck skill.md from this environment."
@@ -1392,7 +1411,9 @@ class TestOutboundPipelineIntegration:
     async def test_memory_error_without_error_keyword_is_not_rewritten(self):
         """Embedding/provider hints without explicit error marker should not trigger rewrite."""
         proxy = TelegramAPIProxy(sanitizer=_make_sanitizer())
-        original = "Memory search unavailable: embedding/provider unavailable during index bootstrap."
+        original = (
+            "Memory search unavailable: embedding/provider unavailable during index bootstrap."
+        )
         body = json.dumps({"chat_id": "8096968754", "text": original}).encode()
         result = json.loads(await proxy._filter_outbound(body, "application/json"))
         assert result["text"] == original
@@ -1401,7 +1422,9 @@ class TestOutboundPipelineIntegration:
     async def test_memory_error_without_error_keyword_is_not_rewritten_for_json_message_field(self):
         """JSON message field with embedding/provider hints but no error keyword should remain unchanged."""
         proxy = TelegramAPIProxy(sanitizer=_make_sanitizer())
-        original = "Memory search unavailable: embedding-provider unavailable during index bootstrap."
+        original = (
+            "Memory search unavailable: embedding-provider unavailable during index bootstrap."
+        )
         body = json.dumps({"chat_id": "8096968754", "message": original}).encode()
         result = json.loads(await proxy._filter_outbound(body, "application/json"))
         assert result.get("message", "") == original
@@ -1434,7 +1457,9 @@ class TestOutboundPipelineIntegration:
         assert result["text"] == original
 
     @pytest.mark.asyncio
-    async def test_skill_sandbox_message_without_healthcheck_is_not_rewritten_for_message_field(self):
+    async def test_skill_sandbox_message_without_healthcheck_is_not_rewritten_for_message_field(
+        self,
+    ):
         """JSON message field should keep non-healthcheck SKILL.md sandbox text unchanged."""
         proxy = TelegramAPIProxy(sanitizer=_make_sanitizer())
         original = "Cannot access profile skill.md due to sandbox restrictions."
@@ -1443,7 +1468,9 @@ class TestOutboundPipelineIntegration:
         assert result.get("message", "") == original
 
     @pytest.mark.asyncio
-    async def test_healthcheck_skill_message_without_sandbox_is_not_rewritten_for_message_field(self):
+    async def test_healthcheck_skill_message_without_sandbox_is_not_rewritten_for_message_field(
+        self,
+    ):
         """JSON message field should keep healthcheck SKILL.md text unchanged when sandbox hint is absent."""
         proxy = TelegramAPIProxy(sanitizer=_make_sanitizer())
         original = "Cannot access healthcheck skill.md from this environment."
@@ -1452,7 +1479,9 @@ class TestOutboundPipelineIntegration:
         assert result.get("message", "") == original
 
     @pytest.mark.asyncio
-    async def test_healthcheck_sandbox_message_without_skill_md_is_not_rewritten_for_content_field(self):
+    async def test_healthcheck_sandbox_message_without_skill_md_is_not_rewritten_for_content_field(
+        self,
+    ):
         """JSON content field should keep healthcheck sandbox text unchanged when SKILL.md marker is absent."""
         proxy = TelegramAPIProxy(sanitizer=_make_sanitizer())
         original = "Cannot access healthcheck diagnostics due to sandbox restrictions."
@@ -1461,7 +1490,9 @@ class TestOutboundPipelineIntegration:
         assert result.get("content", "") == original
 
     @pytest.mark.asyncio
-    async def test_memory_error_without_embedding_provider_hint_is_not_rewritten_for_form_payload(self):
+    async def test_memory_error_without_embedding_provider_hint_is_not_rewritten_for_form_payload(
+        self,
+    ):
         """Form payload non-embedding memory errors should keep original text."""
         proxy = TelegramAPIProxy(sanitizer=_make_sanitizer())
         original = "Memory search unavailable: disk read error while opening index."
@@ -1475,7 +1506,9 @@ class TestOutboundPipelineIntegration:
     async def test_memory_error_without_error_keyword_is_not_rewritten_for_form_payload(self):
         """Form payload embedding/provider hints without 'error' should keep original text."""
         proxy = TelegramAPIProxy(sanitizer=_make_sanitizer())
-        original = "Memory search unavailable: embedding-provider unavailable during index bootstrap."
+        original = (
+            "Memory search unavailable: embedding-provider unavailable during index bootstrap."
+        )
         form_body = urllib.parse.urlencode({"chat_id": "8096968754", "text": original}).encode()
         result = urllib.parse.parse_qs(
             (await proxy._filter_outbound(form_body, "application/x-www-form-urlencoded")).decode()
@@ -1486,7 +1519,9 @@ class TestOutboundPipelineIntegration:
     async def test_memory_error_without_error_keyword_is_not_rewritten_for_form_message_field(self):
         """Form message field with embedding/provider hints but no error keyword should remain unchanged."""
         proxy = TelegramAPIProxy(sanitizer=_make_sanitizer())
-        original = "Memory search unavailable: embedding/provider unavailable during index bootstrap."
+        original = (
+            "Memory search unavailable: embedding/provider unavailable during index bootstrap."
+        )
         form_body = urllib.parse.urlencode({"chat_id": "8096968754", "message": original}).encode()
         result = urllib.parse.parse_qs(
             (await proxy._filter_outbound(form_body, "application/x-www-form-urlencoded")).decode()
@@ -1494,7 +1529,9 @@ class TestOutboundPipelineIntegration:
         assert result.get("message", [""])[0] == original
 
     @pytest.mark.asyncio
-    async def test_healthcheck_skill_error_without_sandbox_hint_is_not_rewritten_for_form_payload(self):
+    async def test_healthcheck_skill_error_without_sandbox_hint_is_not_rewritten_for_form_payload(
+        self,
+    ):
         """Form payload healthcheck SKILL text without sandbox context should keep original text."""
         proxy = TelegramAPIProxy(sanitizer=_make_sanitizer())
         original = "Cannot access healthcheck skill.md from this environment."
@@ -1505,7 +1542,9 @@ class TestOutboundPipelineIntegration:
         assert result.get("text", [""])[0] == original
 
     @pytest.mark.asyncio
-    async def test_skill_sandbox_message_without_healthcheck_is_not_rewritten_for_form_caption(self):
+    async def test_skill_sandbox_message_without_healthcheck_is_not_rewritten_for_form_caption(
+        self,
+    ):
         """Form caption should keep non-healthcheck SKILL.md sandbox text unchanged."""
         proxy = TelegramAPIProxy(sanitizer=_make_sanitizer())
         original = "Cannot access profile skill.md due to sandbox restrictions."
@@ -1516,7 +1555,9 @@ class TestOutboundPipelineIntegration:
         assert result.get("caption", [""])[0] == original
 
     @pytest.mark.asyncio
-    async def test_skill_sandbox_message_without_healthcheck_is_not_rewritten_for_form_message(self):
+    async def test_skill_sandbox_message_without_healthcheck_is_not_rewritten_for_form_message(
+        self,
+    ):
         """Form message should keep non-healthcheck SKILL.md sandbox text unchanged."""
         proxy = TelegramAPIProxy(sanitizer=_make_sanitizer())
         original = "Cannot access profile skill.md due to sandbox restrictions."
@@ -1527,7 +1568,9 @@ class TestOutboundPipelineIntegration:
         assert result.get("message", [""])[0] == original
 
     @pytest.mark.asyncio
-    async def test_healthcheck_skill_message_without_sandbox_is_not_rewritten_for_form_message(self):
+    async def test_healthcheck_skill_message_without_sandbox_is_not_rewritten_for_form_message(
+        self,
+    ):
         """Form message should keep healthcheck SKILL.md text unchanged when sandbox hint is absent."""
         proxy = TelegramAPIProxy(sanitizer=_make_sanitizer())
         original = "Cannot access healthcheck skill.md from this environment."
@@ -1538,7 +1581,9 @@ class TestOutboundPipelineIntegration:
         assert result.get("message", [""])[0] == original
 
     @pytest.mark.asyncio
-    async def test_healthcheck_sandbox_message_without_skill_md_is_not_rewritten_for_form_content(self):
+    async def test_healthcheck_sandbox_message_without_skill_md_is_not_rewritten_for_form_content(
+        self,
+    ):
         """Form content should keep healthcheck sandbox text unchanged when SKILL.md marker is absent."""
         proxy = TelegramAPIProxy(sanitizer=_make_sanitizer())
         original = "Cannot access healthcheck diagnostics due to sandbox restrictions."
@@ -1549,7 +1594,9 @@ class TestOutboundPipelineIntegration:
         assert result.get("content", [""])[0] == original
 
     @pytest.mark.asyncio
-    async def test_healthcheck_sandbox_message_without_skill_md_is_not_rewritten_for_form_draft(self):
+    async def test_healthcheck_sandbox_message_without_skill_md_is_not_rewritten_for_form_draft(
+        self,
+    ):
         """Form draft should keep healthcheck sandbox text unchanged when SKILL.md marker is absent."""
         proxy = TelegramAPIProxy(sanitizer=_make_sanitizer())
         original = "Cannot access healthcheck diagnostics due to sandbox restrictions."
@@ -1684,7 +1731,7 @@ class TestOutboundPipelineIntegration:
         body = json.dumps(
             {
                 "chat_id": "8096968754",
-                "text": "{\"name\":\"NO_REPLY\",\"arguments\":{}}",
+                "text": '{"name":"NO_REPLY","arguments":{}}',
             }
         ).encode()
         result = json.loads(await proxy._filter_outbound(body, None))
@@ -1697,7 +1744,7 @@ class TestOutboundPipelineIntegration:
         body = urllib.parse.urlencode(
             {
                 "chat_id": "8096968754",
-                "draft": "{\"name\":\"NO_REPLY\",\"arguments\":{}}",
+                "draft": '{"name":"NO_REPLY","arguments":{}}',
             }
         ).encode()
         result = await proxy._filter_outbound(body, None)
@@ -1739,7 +1786,7 @@ class TestOutboundPipelineIntegration:
         body = urllib.parse.urlencode(
             {
                 "chat_id": "8096968754",
-                "caption": "{\"name\":\"sessions_spawn\",\"arguments\":{\"agentId\":\"acp.healthcheck\"}}",
+                "caption": '{"name":"sessions_spawn","arguments":{"agentId":"acp.healthcheck"}}',
             }
         ).encode()
         result = await proxy._filter_outbound(body, None)
@@ -1755,7 +1802,7 @@ class TestOutboundPipelineIntegration:
             {
                 "chat_id": "7614658040",
                 "text": " ",
-                "caption": "{\"name\":\"sessions_spawn\",\"arguments\":{\"agentId\":\"acp.healthcheck\"}}",
+                "caption": '{"name":"sessions_spawn","arguments":{"agentId":"acp.healthcheck"}}',
             }
         ).encode()
         result = await proxy._filter_outbound(body, None)
@@ -1771,7 +1818,7 @@ class TestOutboundPipelineIntegration:
             {
                 "chat_id": "7614658040",
                 "text": "",
-                "caption": "{\"name\":\"sessions_spawn\",\"arguments\":{\"agentId\":\"acp.healthcheck\"}}",
+                "caption": '{"name":"sessions_spawn","arguments":{"agentId":"acp.healthcheck"}}',
             }
         ).encode()
         result = json.loads(await proxy._filter_outbound(body, None))
@@ -1786,7 +1833,7 @@ class TestOutboundPipelineIntegration:
             {
                 "chat_id": "7614658040",
                 "text": "",
-                "message": "{\"name\":\"sessions_spawn\",\"arguments\":{\"agentId\":\"acp.healthcheck\"}}",
+                "message": '{"name":"sessions_spawn","arguments":{"agentId":"acp.healthcheck"}}',
             }
         ).encode()
         result = await proxy._filter_outbound(body, None)
@@ -1802,7 +1849,7 @@ class TestOutboundPipelineIntegration:
             {
                 "chat_id": "7614658040",
                 "text": " ",
-                "message": "{\"name\":\"sessions_spawn\",\"arguments\":{\"agentId\":\"acp.healthcheck\"}}",
+                "message": '{"name":"sessions_spawn","arguments":{"agentId":"acp.healthcheck"}}',
             }
         ).encode()
         result = json.loads(await proxy._filter_outbound(body, None))
@@ -1817,7 +1864,7 @@ class TestOutboundPipelineIntegration:
             {
                 "chat_id": "7614658040",
                 "text": "",
-                "content": "{\"name\":\"sessions_spawn\",\"arguments\":{\"agentId\":\"acp.healthcheck\"}}",
+                "content": '{"name":"sessions_spawn","arguments":{"agentId":"acp.healthcheck"}}',
             }
         ).encode()
         result = await proxy._filter_outbound(body, None)
@@ -1833,7 +1880,7 @@ class TestOutboundPipelineIntegration:
             {
                 "chat_id": "7614658040",
                 "text": " ",
-                "content": "{\"name\":\"sessions_spawn\",\"arguments\":{\"agentId\":\"acp.healthcheck\"}}",
+                "content": '{"name":"sessions_spawn","arguments":{"agentId":"acp.healthcheck"}}',
             }
         ).encode()
         result = json.loads(await proxy._filter_outbound(body, None))
@@ -1848,7 +1895,7 @@ class TestOutboundPipelineIntegration:
             {
                 "chat_id": "7614658040",
                 "text": "",
-                "draft": "{\"name\":\"sessions_spawn\",\"arguments\":{\"agentId\":\"acp.healthcheck\"}}",
+                "draft": '{"name":"sessions_spawn","arguments":{"agentId":"acp.healthcheck"}}',
             }
         ).encode()
         result = await proxy._filter_outbound(body, None)
@@ -1864,7 +1911,7 @@ class TestOutboundPipelineIntegration:
             {
                 "chat_id": "7614658040",
                 "text": " ",
-                "draft": "{\"name\":\"sessions_spawn\",\"arguments\":{\"agentId\":\"acp.healthcheck\"}}",
+                "draft": '{"name":"sessions_spawn","arguments":{"agentId":"acp.healthcheck"}}',
             }
         ).encode()
         result = json.loads(await proxy._filter_outbound(body, None))
@@ -1878,7 +1925,7 @@ class TestOutboundPipelineIntegration:
         body = urllib.parse.urlencode(
             {
                 "chat_id": "7614658040",
-                "text": "{\"name\":\"NO_REPLY\",\"arguments\":{}}",
+                "text": '{"name":"NO_REPLY","arguments":{}}',
             }
         ).encode()
         result = await proxy._filter_outbound(body, "application/x-www-form-urlencoded")
@@ -1946,7 +1993,7 @@ class TestOutboundPipelineIntegration:
         monkeypatch.setattr(proxy, "_forward_to_telegram", _mock_forward)
 
         body = json.dumps(
-            {"chat_id": "8096968754", "text": "{\"name\":\"NO_REPLY\",\"arguments\":{}}"}
+            {"chat_id": "8096968754", "text": '{"name":"NO_REPLY","arguments":{}}'}
         ).encode()
         result = await proxy.proxy_request(
             bot_token="dummy",
@@ -1960,7 +2007,9 @@ class TestOutboundPipelineIntegration:
         assert "still processing" in forwarded.get("text", "").lower()
 
     @pytest.mark.asyncio
-    async def test_proxy_request_duplicate_no_reply_messages_return_deterministic_reply(self, monkeypatch):
+    async def test_proxy_request_duplicate_no_reply_messages_return_deterministic_reply(
+        self, monkeypatch
+    ):
         """Repeated NO_REPLY payloads should still return deterministic non-empty replies."""
         proxy = TelegramAPIProxy(sanitizer=_make_sanitizer())
         calls = {"count": 0}
@@ -1972,7 +2021,7 @@ class TestOutboundPipelineIntegration:
         monkeypatch.setattr(proxy, "_forward_to_telegram", _mock_forward)
 
         body = json.dumps(
-            {"chat_id": "8096968754", "text": "{\"name\":\"NO_REPLY\",\"arguments\":{}}"}
+            {"chat_id": "8096968754", "text": '{"name":"NO_REPLY","arguments":{}}'}
         ).encode()
         first = await proxy.proxy_request(
             bot_token="dummy",
@@ -2023,9 +2072,10 @@ class TestOutboundPipelineIntegration:
         assert second.get("ok") is True
         assert second.get("result", {}).get("suppressed") is True
 
-
     @pytest.mark.asyncio
-    async def test_proxy_request_suppresses_duplicate_startup_notice_without_system_flag(self, monkeypatch):
+    async def test_proxy_request_suppresses_duplicate_startup_notice_without_system_flag(
+        self, monkeypatch
+    ):
         """Startup notice dedupe should still apply when sender forgets system header."""
         proxy = TelegramAPIProxy(sanitizer=_make_sanitizer())
         calls = {"count": 0}
@@ -2070,7 +2120,9 @@ class TestOutboundPipelineIntegration:
         monkeypatch.setattr(proxy, "_forward_to_telegram", _mock_forward)
 
         online = json.dumps({"chat_id": "8096968754", "text": "🛡️ AgentShroud online"}).encode()
-        shutdown = json.dumps({"chat_id": "8096968754", "text": "🔴 AgentShroud shutting down"}).encode()
+        shutdown = json.dumps(
+            {"chat_id": "8096968754", "text": "🔴 AgentShroud shutting down"}
+        ).encode()
 
         first = await proxy.proxy_request(
             bot_token="dummy",
@@ -2137,8 +2189,12 @@ class TestOutboundPipelineIntegration:
 
         monkeypatch.setattr(proxy, "_forward_to_telegram", _mock_forward)
 
-        first_body = json.dumps({"chat_id": "8096968754", "text": "🟡 AgentShroud starting"}).encode()
-        second_body = json.dumps({"chat_id": "8096968754", "text": "🟡️ AgentShroud starting"}).encode()
+        first_body = json.dumps(
+            {"chat_id": "8096968754", "text": "🟡 AgentShroud starting"}
+        ).encode()
+        second_body = json.dumps(
+            {"chat_id": "8096968754", "text": "🟡️ AgentShroud starting"}
+        ).encode()
 
         first = await proxy.proxy_request(
             bot_token="dummy",
@@ -2231,7 +2287,9 @@ class TestOutboundPipelineIntegration:
         assert calls["count"] == 1
 
     @pytest.mark.asyncio
-    async def test_proxy_request_suppresses_delayed_starting_notice_emoji_variants(self, monkeypatch):
+    async def test_proxy_request_suppresses_delayed_starting_notice_emoji_variants(
+        self, monkeypatch
+    ):
         """Delayed-starting dedupe should tolerate emoji variation drift."""
         proxy = TelegramAPIProxy(sanitizer=_make_sanitizer())
         calls = {"count": 0}
@@ -2412,7 +2470,7 @@ class TestOutboundPipelineIntegration:
         body = json.dumps(
             {
                 "chat_id": "8096968754",
-                "text": "{\"name\":\"web_fetch\",\"arguments\":{\"url\":\"https://weather.com\"}}",
+                "text": '{"name":"web_fetch","arguments":{"url":"https://weather.com"}}',
             }
         ).encode()
         result = json.loads(await proxy._filter_outbound(body, "application/json"))
@@ -2441,7 +2499,7 @@ class TestOutboundPipelineIntegration:
         body = json.dumps(
             {
                 "chat_id": "8096968754",
-                "text": "{\"name\":\"web_fetch\",\"arguments\":{\"url\":\"https://weather.com/weather/today\"}}",
+                "text": '{"name":"web_fetch","arguments":{"url":"https://weather.com/weather/today"}}',
             }
         ).encode()
         result = json.loads(await proxy._filter_outbound(body, "application/json"))
@@ -2474,7 +2532,7 @@ class TestOutboundPipelineIntegration:
         body = json.dumps(
             {
                 "chat_id": "8096968754",
-                "text": "{\"name\":\"web_fetch\",\"arguments\":{\"url\":\"https://weather.com/weather/today\"}}",
+                "text": '{"name":"web_fetch","arguments":{"url":"https://weather.com/weather/today"}}',
             }
         ).encode()
 
@@ -2509,13 +2567,13 @@ class TestOutboundPipelineIntegration:
         https_body = json.dumps(
             {
                 "chat_id": "8096968754",
-                "text": "{\"name\":\"web_fetch\",\"arguments\":{\"url\":\"https://weather.com/weather/today\"}}",
+                "text": '{"name":"web_fetch","arguments":{"url":"https://weather.com/weather/today"}}',
             }
         ).encode()
         http_body = json.dumps(
             {
                 "chat_id": "8096968754",
-                "text": "{\"name\":\"web_fetch\",\"arguments\":{\"url\":\"http://weather.com/weather/today\"}}",
+                "text": '{"name":"web_fetch","arguments":{"url":"http://weather.com/weather/today"}}',
             }
         ).encode()
 
@@ -2550,11 +2608,13 @@ class TestOutboundPipelineIntegration:
         proxy._recent_web_fetch_approval_until = {
             (f"chat-{i}", "https", f"example{i}.com", 443): now - 10 for i in range(1025)
         }
-        proxy._recent_web_fetch_approval_until[("live", "https", "live.example.com", 443)] = now + 600
+        proxy._recent_web_fetch_approval_until[("live", "https", "live.example.com", 443)] = (
+            now + 600
+        )
         body = json.dumps(
             {
                 "chat_id": "8096968754",
-                "text": "{\"name\":\"web_fetch\",\"arguments\":{\"url\":\"https://weather.com/weather/today\"}}",
+                "text": '{"name":"web_fetch","arguments":{"url":"https://weather.com/weather/today"}}',
             }
         ).encode()
 
@@ -2588,7 +2648,7 @@ class TestOutboundPipelineIntegration:
         body = json.dumps(
             {
                 "chat_id": "8096968754",
-                "text": "{\"name\":\"web_fetch\",\"arguments\":{\"url\":\"https://.waether.com/weather/today\"}}",
+                "text": '{"name":"web_fetch","arguments":{"url":"https://.waether.com/weather/today"}}',
             }
         ).encode()
 
@@ -2621,7 +2681,7 @@ class TestOutboundPipelineIntegration:
         body = json.dumps(
             {
                 "chat_id": "8096968754",
-                "text": "{\"name\":\"web_fetch\",\"arguments\":{\"url\":\"https://accuweather.com)\"}}",
+                "text": '{"name":"web_fetch","arguments":{"url":"https://accuweather.com)"}}',
             }
         ).encode()
 
@@ -2653,7 +2713,7 @@ class TestOutboundPipelineIntegration:
         body = json.dumps(
             {
                 "chat_id": "8096968754",
-                "text": "{\"name\":\"web_fetch\",\"arguments\":{\"url\":\"https://localhost\"}}",
+                "text": '{"name":"web_fetch","arguments":{"url":"https://localhost"}}',
             }
         ).encode()
 
@@ -2684,7 +2744,7 @@ class TestOutboundPipelineIntegration:
         body = json.dumps(
             {
                 "chat_id": "8096968754",
-                "text": "{\"name\":\"web_fetch\",\"arguments\":{\"url\":\"BOOTSTRAP.md\"}}",
+                "text": '{"name":"web_fetch","arguments":{"url":"BOOTSTRAP.md"}}',
             }
         ).encode()
 
@@ -2695,7 +2755,9 @@ class TestOutboundPipelineIntegration:
         assert "approval request queued" not in result["text"].lower()
 
     @pytest.mark.asyncio
-    async def test_raw_web_fetch_json_explicit_md_tld_domain_still_queues_approval(self, monkeypatch):
+    async def test_raw_web_fetch_json_explicit_md_tld_domain_still_queues_approval(
+        self, monkeypatch
+    ):
         """Explicitly schemed domains should still queue approvals even for .md ccTLD."""
         called = {"value": False}
 
@@ -2716,7 +2778,7 @@ class TestOutboundPipelineIntegration:
         body = json.dumps(
             {
                 "chat_id": "8096968754",
-                "text": "{\"name\":\"web_fetch\",\"arguments\":{\"url\":\"https://example.md/status\"}}",
+                "text": '{"name":"web_fetch","arguments":{"url":"https://example.md/status"}}',
             }
         ).encode()
 
@@ -2748,7 +2810,7 @@ class TestOutboundPipelineIntegration:
         body = json.dumps(
             {
                 "chat_id": "8096968754",
-                "text": "{\"name\":\"web_fetch\",\"arguments\":{\"url\":\"http://127.0.0.1:8080\"}}",
+                "text": '{"name":"web_fetch","arguments":{"url":"http://127.0.0.1:8080"}}',
             }
         ).encode()
 
@@ -2759,7 +2821,9 @@ class TestOutboundPipelineIntegration:
         assert "approval request queued" not in result["text"].lower()
 
     @pytest.mark.asyncio
-    async def test_raw_web_fetch_json_malformed_hyphen_domain_does_not_queue_approval(self, monkeypatch):
+    async def test_raw_web_fetch_json_malformed_hyphen_domain_does_not_queue_approval(
+        self, monkeypatch
+    ):
         """Malformed domain labels should be rejected before approval queueing."""
         calls = {"count": 0}
 
@@ -2779,7 +2843,7 @@ class TestOutboundPipelineIntegration:
         body = json.dumps(
             {
                 "chat_id": "8096968754",
-                "text": "{\"name\":\"web_fetch\",\"arguments\":{\"url\":\"https://-bad.example.com\"}}",
+                "text": '{"name":"web_fetch","arguments":{"url":"https://-bad.example.com"}}',
             }
         ).encode()
 
@@ -2790,7 +2854,9 @@ class TestOutboundPipelineIntegration:
         assert "approval request queued" not in result["text"].lower()
 
     @pytest.mark.asyncio
-    async def test_raw_web_fetch_json_consecutive_dot_domain_does_not_queue_approval(self, monkeypatch):
+    async def test_raw_web_fetch_json_consecutive_dot_domain_does_not_queue_approval(
+        self, monkeypatch
+    ):
         """Consecutive-dot domains should be rejected before approval queueing."""
         calls = {"count": 0}
 
@@ -2810,7 +2876,7 @@ class TestOutboundPipelineIntegration:
         body = json.dumps(
             {
                 "chat_id": "8096968754",
-                "text": "{\"name\":\"web_fetch\",\"arguments\":{\"url\":\"https://good..example.com\"}}",
+                "text": '{"name":"web_fetch","arguments":{"url":"https://good..example.com"}}',
             }
         ).encode()
 
@@ -2821,7 +2887,9 @@ class TestOutboundPipelineIntegration:
         assert "approval request queued" not in result["text"].lower()
 
     @pytest.mark.asyncio
-    async def test_raw_web_fetch_json_domain_with_invalid_chars_does_not_queue_approval(self, monkeypatch):
+    async def test_raw_web_fetch_json_domain_with_invalid_chars_does_not_queue_approval(
+        self, monkeypatch
+    ):
         """Domains containing invalid hostname characters must be rejected."""
         calls = {"count": 0}
 
@@ -2841,7 +2909,7 @@ class TestOutboundPipelineIntegration:
         body = json.dumps(
             {
                 "chat_id": "8096968754",
-                "text": "{\"name\":\"web_fetch\",\"arguments\":{\"url\":\"https://exa_mple.com\"}}",
+                "text": '{"name":"web_fetch","arguments":{"url":"https://exa_mple.com"}}',
             }
         ).encode()
 
@@ -2852,7 +2920,9 @@ class TestOutboundPipelineIntegration:
         assert "approval request queued" not in result["text"].lower()
 
     @pytest.mark.asyncio
-    async def test_raw_web_fetch_json_url_with_trailing_quote_still_queues_approval(self, monkeypatch):
+    async def test_raw_web_fetch_json_url_with_trailing_quote_still_queues_approval(
+        self, monkeypatch
+    ):
         """Trailing quote punctuation in leaked URL should still normalize and queue approval."""
         called = {"value": False}
 
@@ -2873,7 +2943,7 @@ class TestOutboundPipelineIntegration:
         body = json.dumps(
             {
                 "chat_id": "8096968754",
-                "text": "{\"name\":\"web_fetch\",\"arguments\":{\"url\":\"https://weather.com\\\"\"}}",
+                "text": '{"name":"web_fetch","arguments":{"url":"https://weather.com\\""}}',
             }
         ).encode()
 
@@ -2885,7 +2955,9 @@ class TestOutboundPipelineIntegration:
         assert "approval request queued" in result["text"].lower()
 
     @pytest.mark.asyncio
-    async def test_raw_web_fetch_json_url_with_trailing_backtick_still_queues_approval(self, monkeypatch):
+    async def test_raw_web_fetch_json_url_with_trailing_backtick_still_queues_approval(
+        self, monkeypatch
+    ):
         """Trailing markdown backtick in leaked URL should normalize for approval."""
         called = {"value": False}
 
@@ -2906,7 +2978,7 @@ class TestOutboundPipelineIntegration:
         body = json.dumps(
             {
                 "chat_id": "8096968754",
-                "text": "{\"name\":\"web_fetch\",\"arguments\":{\"url\":\"https://weather.com`\"}}",
+                "text": '{"name":"web_fetch","arguments":{"url":"https://weather.com`"}}',
             }
         ).encode()
 
@@ -2918,7 +2990,9 @@ class TestOutboundPipelineIntegration:
         assert "approval request queued" in result["text"].lower()
 
     @pytest.mark.asyncio
-    async def test_raw_web_fetch_json_url_with_control_character_does_not_queue_approval(self, monkeypatch):
+    async def test_raw_web_fetch_json_url_with_control_character_does_not_queue_approval(
+        self, monkeypatch
+    ):
         """Control characters in leaked URL should be rejected before queueing approval."""
         calls = {"count": 0}
 
@@ -2938,7 +3012,7 @@ class TestOutboundPipelineIntegration:
         body = json.dumps(
             {
                 "chat_id": "8096968754",
-                "text": "{\"name\":\"web_fetch\",\"arguments\":{\"url\":\"https://weather.com/\\nsecret\"}}",
+                "text": '{"name":"web_fetch","arguments":{"url":"https://weather.com/\\nsecret"}}',
             }
         ).encode()
 
@@ -2949,7 +3023,9 @@ class TestOutboundPipelineIntegration:
         assert "approval request queued" not in result["text"].lower()
 
     @pytest.mark.asyncio
-    async def test_raw_web_fetch_json_url_with_backslashes_does_not_queue_approval(self, monkeypatch):
+    async def test_raw_web_fetch_json_url_with_backslashes_does_not_queue_approval(
+        self, monkeypatch
+    ):
         """Backslash-containing URLs should be rejected to avoid parser confusion."""
         calls = {"count": 0}
 
@@ -2969,7 +3045,7 @@ class TestOutboundPipelineIntegration:
         body = json.dumps(
             {
                 "chat_id": "8096968754",
-                "text": "{\"name\":\"web_fetch\",\"arguments\":{\"url\":\"https:\\\\weather.com\\\\today\"}}",
+                "text": '{"name":"web_fetch","arguments":{"url":"https:\\\\weather.com\\\\today"}}',
             }
         ).encode()
 
@@ -2980,7 +3056,9 @@ class TestOutboundPipelineIntegration:
         assert "approval request queued" not in result["text"].lower()
 
     @pytest.mark.asyncio
-    async def test_raw_web_fetch_json_url_with_percent_encoded_control_does_not_queue_approval(self, monkeypatch):
+    async def test_raw_web_fetch_json_url_with_percent_encoded_control_does_not_queue_approval(
+        self, monkeypatch
+    ):
         """Percent-encoded control bytes should be rejected before queueing approval."""
         calls = {"count": 0}
 
@@ -3000,7 +3078,7 @@ class TestOutboundPipelineIntegration:
         body = json.dumps(
             {
                 "chat_id": "8096968754",
-                "text": "{\"name\":\"web_fetch\",\"arguments\":{\"url\":\"https://weather.com/%0asecret\"}}",
+                "text": '{"name":"web_fetch","arguments":{"url":"https://weather.com/%0asecret"}}',
             }
         ).encode()
 
@@ -3011,7 +3089,9 @@ class TestOutboundPipelineIntegration:
         assert "approval request queued" not in result["text"].lower()
 
     @pytest.mark.asyncio
-    async def test_raw_web_fetch_json_url_with_whitespace_queues_approval_using_first_token(self, monkeypatch):
+    async def test_raw_web_fetch_json_url_with_whitespace_queues_approval_using_first_token(
+        self, monkeypatch
+    ):
         """Whitespace in leaked URL should queue approval using first URL token."""
         calls = {"count": 0}
 
@@ -3031,7 +3111,7 @@ class TestOutboundPipelineIntegration:
         body = json.dumps(
             {
                 "chat_id": "8096968754",
-                "text": "{\"name\":\"web_fetch\",\"arguments\":{\"url\":\"https://weather.com /today\"}}",
+                "text": '{"name":"web_fetch","arguments":{"url":"https://weather.com /today"}}',
             }
         ).encode()
 
@@ -3062,7 +3142,7 @@ class TestOutboundPipelineIntegration:
         body = json.dumps(
             {
                 "chat_id": "8096968754",
-                "text": "{\"name\":\"web_fetch\",\"arguments\":{\"url\":\"ftp://weather.com/archive.txt\"}}",
+                "text": '{"name":"web_fetch","arguments":{"url":"ftp://weather.com/archive.txt"}}',
             }
         ).encode()
 
@@ -3093,7 +3173,7 @@ class TestOutboundPipelineIntegration:
         body = json.dumps(
             {
                 "chat_id": "8096968754",
-                "text": "{\"name\":\"web_fetch\",\"arguments\":{\"url\":\"https://admin:secret@weather.com/private\"}}",
+                "text": '{"name":"web_fetch","arguments":{"url":"https://admin:secret@weather.com/private"}}',
             }
         ).encode()
 
@@ -3124,7 +3204,7 @@ class TestOutboundPipelineIntegration:
         body = json.dumps(
             {
                 "chat_id": "8096968754",
-                "text": "{\"name\":\"web_fetch\",\"arguments\":{\"url\":\"https://weather.com:8443/status\"}}",
+                "text": '{"name":"web_fetch","arguments":{"url":"https://weather.com:8443/status"}}',
             }
         ).encode()
 
@@ -3135,7 +3215,9 @@ class TestOutboundPipelineIntegration:
         assert "approval request queued" not in result["text"].lower()
 
     @pytest.mark.asyncio
-    async def test_raw_web_fetch_json_internal_suffix_domain_does_not_queue_approval(self, monkeypatch):
+    async def test_raw_web_fetch_json_internal_suffix_domain_does_not_queue_approval(
+        self, monkeypatch
+    ):
         """Internal pseudo-TLD hosts should be rejected from approval queue."""
         calls = {"count": 0}
 
@@ -3155,7 +3237,7 @@ class TestOutboundPipelineIntegration:
         body = json.dumps(
             {
                 "chat_id": "8096968754",
-                "text": "{\"name\":\"web_fetch\",\"arguments\":{\"url\":\"https://weather.local/today\"}}",
+                "text": '{"name":"web_fetch","arguments":{"url":"https://weather.local/today"}}',
             }
         ).encode()
 
@@ -3220,7 +3302,7 @@ class TestOutboundPipelineIntegration:
         body = json.dumps(
             {
                 "chat_id": "8096968754",
-                "text": "{\"name\":\"web_fetch\",\"arguments\":{\"url\":\"https://weather.123/today\"}}",
+                "text": '{"name":"web_fetch","arguments":{"url":"https://weather.123/today"}}',
             }
         ).encode()
 
@@ -3285,7 +3367,7 @@ class TestOutboundPipelineIntegration:
         body = json.dumps(
             {
                 "chat_id": "8096968754",
-                "text": "{\"name\":\"web_fetch\",\"arguments\":{\"url\":\"https://xn--e1afmkfd.xn--p1ai/today\"}}",
+                "text": '{"name":"web_fetch","arguments":{"url":"https://xn--e1afmkfd.xn--p1ai/today"}}',
             }
         ).encode()
 
@@ -3295,7 +3377,9 @@ class TestOutboundPipelineIntegration:
         assert calls["count"] == 0
         assert "approval request queued" not in result["text"].lower()
 
-    async def test_raw_web_fetch_json_uppercase_http_scheme_queues_port_80_approval(self, monkeypatch):
+    async def test_raw_web_fetch_json_uppercase_http_scheme_queues_port_80_approval(
+        self, monkeypatch
+    ):
         """Uppercase HTTP schemes should normalize and queue on port 80."""
         called = {"value": False}
 
@@ -3316,7 +3400,7 @@ class TestOutboundPipelineIntegration:
         body = json.dumps(
             {
                 "chat_id": "8096968754",
-                "text": "{\"name\":\"web_fetch\",\"arguments\":{\"url\":\"HTTP://weather.com/today\"}}",
+                "text": '{"name":"web_fetch","arguments":{"url":"HTTP://weather.com/today"}}',
             }
         ).encode()
 
@@ -3350,7 +3434,7 @@ class TestOutboundPipelineIntegration:
         body = json.dumps(
             {
                 "chat_id": "8096968754",
-                "text": "{\"name\":\"web_fetch\",\"arguments\":{\"url\":\"//weather.com/today\"}}",
+                "text": '{"name":"web_fetch","arguments":{"url":"//weather.com/today"}}',
             }
         ).encode()
 
@@ -3363,7 +3447,9 @@ class TestOutboundPipelineIntegration:
         assert "approval request queued" in result["text"].lower()
 
     @pytest.mark.asyncio
-    async def test_raw_web_fetch_json_url_with_html_entity_domain_still_queues_approval(self, monkeypatch):
+    async def test_raw_web_fetch_json_url_with_html_entity_domain_still_queues_approval(
+        self, monkeypatch
+    ):
         """HTML-entity encoded domains in leaked JSON should normalize before approval."""
         called = {"value": False}
 
@@ -3384,7 +3470,7 @@ class TestOutboundPipelineIntegration:
         body = json.dumps(
             {
                 "chat_id": "8096968754",
-                "text": "{\"name\":\"web_fetch\",\"arguments\":{\"url\":\"https://weather&#46;com/weather/today\"}}",
+                "text": '{"name":"web_fetch","arguments":{"url":"https://weather&#46;com/weather/today"}}',
             }
         ).encode()
 
@@ -3509,7 +3595,9 @@ class TestRuntimeRewriteHelpers:
         assert "/healthcheck" in rewritten.lower()
 
     def test_rewrite_known_runtime_errors_matches_no_response_generated_phrase(self):
-        rewritten = TelegramAPIProxy._rewrite_known_runtime_errors("No response generated. Please try again.")
+        rewritten = TelegramAPIProxy._rewrite_known_runtime_errors(
+            "No response generated. Please try again."
+        )
         assert rewritten is not None
         assert "response generation failed" in rewritten.lower()
 
@@ -3783,9 +3871,7 @@ class TestOutboundClassifierHelpers:
         assert target is None
 
     def test_extract_first_egress_target_skips_identity_md(self):
-        target = TelegramAPIProxy._extract_first_egress_target(
-            "What does identity.md contain?"
-        )
+        target = TelegramAPIProxy._extract_first_egress_target("What does identity.md contain?")
         assert target is None
 
     def test_extract_first_egress_target_still_catches_real_domains(self):
@@ -3808,6 +3894,7 @@ class TestOutboundClassifierHelpers:
 
 # ── _looks_like_safe_collaborator_info_query ─────────────────────────────────
 
+
 class TestLooksLikeSafeCollaboratorInfoQuery:
     """Classifier for conceptual collaborator questions."""
 
@@ -3828,46 +3915,98 @@ class TestLooksLikeSafeCollaboratorInfoQuery:
         assert TelegramAPIProxy._looks_like_safe_collaborator_info_query("Hello!") is True
 
     def test_security_model_question(self):
-        assert TelegramAPIProxy._looks_like_safe_collaborator_info_query("What is the security model here?") is True
+        assert (
+            TelegramAPIProxy._looks_like_safe_collaborator_info_query(
+                "What is the security model here?"
+            )
+            is True
+        )
 
     def test_protection_question(self):
-        assert TelegramAPIProxy._looks_like_safe_collaborator_info_query("How does protection work?") is True
+        assert (
+            TelegramAPIProxy._looks_like_safe_collaborator_info_query("How does protection work?")
+            is True
+        )
 
     def test_refuse_question(self):
-        assert TelegramAPIProxy._looks_like_safe_collaborator_info_query("What requests do you refuse?") is True
+        assert (
+            TelegramAPIProxy._looks_like_safe_collaborator_info_query(
+                "What requests do you refuse?"
+            )
+            is True
+        )
 
     def test_restrict_question(self):
-        assert TelegramAPIProxy._looks_like_safe_collaborator_info_query("What is restricted for collaborators?") is True
+        assert (
+            TelegramAPIProxy._looks_like_safe_collaborator_info_query(
+                "What is restricted for collaborators?"
+            )
+            is True
+        )
 
     def test_pii_question(self):
-        assert TelegramAPIProxy._looks_like_safe_collaborator_info_query("What happens to pii in my messages?") is True
+        assert (
+            TelegramAPIProxy._looks_like_safe_collaborator_info_query(
+                "What happens to pii in my messages?"
+            )
+            is True
+        )
 
     def test_sanitiz_question(self):
-        assert TelegramAPIProxy._looks_like_safe_collaborator_info_query("How does sanitization work?") is True
+        assert (
+            TelegramAPIProxy._looks_like_safe_collaborator_info_query("How does sanitization work?")
+            is True
+        )
 
     def test_formatting_trick_question(self):
-        assert TelegramAPIProxy._looks_like_safe_collaborator_info_query("Can a formatting trick bypass the policy?") is True
+        assert (
+            TelegramAPIProxy._looks_like_safe_collaborator_info_query(
+                "Can a formatting trick bypass the policy?"
+            )
+            is True
+        )
 
     def test_what_can_you_question(self):
-        assert TelegramAPIProxy._looks_like_safe_collaborator_info_query("What can you help with?") is True
+        assert (
+            TelegramAPIProxy._looks_like_safe_collaborator_info_query("What can you help with?")
+            is True
+        )
 
     def test_collaboration_question(self):
-        assert TelegramAPIProxy._looks_like_safe_collaborator_info_query("How does collaboration work here?") is True
+        assert (
+            TelegramAPIProxy._looks_like_safe_collaborator_info_query(
+                "How does collaboration work here?"
+            )
+            is True
+        )
 
     def test_password_question(self):
-        assert TelegramAPIProxy._looks_like_safe_collaborator_info_query("How are passwords handled?") is True
+        assert (
+            TelegramAPIProxy._looks_like_safe_collaborator_info_query("How are passwords handled?")
+            is True
+        )
 
     def test_no_match_without_tokens(self):
-        assert TelegramAPIProxy._looks_like_safe_collaborator_info_query("Tell me something random") is False
+        assert (
+            TelegramAPIProxy._looks_like_safe_collaborator_info_query("Tell me something random")
+            is False
+        )
 
     def test_file_query_is_blocked(self):
-        assert TelegramAPIProxy._looks_like_safe_collaborator_info_query("What is in config.yaml?") is False
+        assert (
+            TelegramAPIProxy._looks_like_safe_collaborator_info_query("What is in config.yaml?")
+            is False
+        )
 
     def test_execute_verb_is_blocked(self):
-        assert TelegramAPIProxy._looks_like_safe_collaborator_info_query("How do I execute a command?") is False
+        assert (
+            TelegramAPIProxy._looks_like_safe_collaborator_info_query("How do I execute a command?")
+            is False
+        )
 
 
 # ── _build_collaborator_safe_info_response ────────────────────────────────────
+
 
 class TestBuildCollaboratorSafeInfoResponse:
     """Static response builder for collaborator conceptual queries."""
@@ -3890,7 +4029,9 @@ class TestBuildCollaboratorSafeInfoResponse:
 
     def test_greeting_contains_capability_hint(self):
         r = self._resp("Hello")
-        assert "security" in r.lower() or "architecture" in r.lower() or "authorization" in r.lower()
+        assert (
+            "security" in r.lower() or "architecture" in r.lower() or "authorization" in r.lower()
+        )
 
     def test_restriction_refuse(self):
         r = self._resp("What do you refuse to do?")

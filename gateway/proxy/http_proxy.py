@@ -12,8 +12,8 @@ domain allowlist before a TCP tunnel is established.
 Running this server now adds zero risk — the bot has no HTTP_PROXY set
 yet, so it doesn't use this server until FINAL.
 """
-from __future__ import annotations
 
+from __future__ import annotations
 
 import asyncio
 import logging
@@ -23,10 +23,10 @@ import tempfile
 import time
 from typing import Optional
 
+from ..security.egress_config import PERMANENT_EGRESS_DOMAINS
+from ..security.egress_filter import EgressAction, EgressFilter
 from .web_config import WebProxyConfig
 from .web_proxy import WebProxy
-from ..security.egress_filter import EgressAction, EgressFilter
-from ..security.egress_config import PERMANENT_EGRESS_DOMAINS
 
 logger = logging.getLogger("agentshroud.proxy.http_proxy")
 
@@ -65,8 +65,7 @@ CONNECT_FORCE_BLOCK_DOMAINS: set[str] = {
 # must not appear here so the bot is always routed through the gateway's /telegram-api/
 # reverse proxy (where the Slack bridge intercept lives).
 ALLOWED_DOMAINS: list[str] = [
-    d for d in PERMANENT_EGRESS_DOMAINS
-    if d not in CONNECT_FORCE_BLOCK_DOMAINS
+    d for d in PERMANENT_EGRESS_DOMAINS if d not in CONNECT_FORCE_BLOCK_DOMAINS
 ]
 
 
@@ -111,9 +110,7 @@ class HTTPConnectProxy:
 
     async def start(self) -> None:
         """Start the CONNECT proxy server."""
-        self._server = await asyncio.start_server(
-            self._handle_client, self.host, self.port
-        )
+        self._server = await asyncio.start_server(self._handle_client, self.host, self.port)
         logger.info(f"HTTP CONNECT proxy listening on {self.host}:{self.port}")
 
     async def stop(self) -> None:
@@ -182,18 +179,14 @@ class HTTPConnectProxy:
             try:
                 header_line = await asyncio.wait_for(reader.readline(), timeout=10.0)
             except asyncio.TimeoutError:
-                writer.write(
-                    b"HTTP/1.1 408 Request Timeout\r\nContent-Length: 0\r\n\r\n"
-                )
+                writer.write(b"HTTP/1.1 408 Request Timeout\r\nContent-Length: 0\r\n\r\n")
                 await writer.drain()
                 return
             if header_line in (b"\r\n", b"\n", b""):
                 break
 
         if method.upper() != "CONNECT":
-            writer.write(
-                b"HTTP/1.1 405 Method Not Allowed\r\nContent-Length: 0\r\n\r\n"
-            )
+            writer.write(b"HTTP/1.1 405 Method Not Allowed\r\nContent-Length: 0\r\n\r\n")
             await writer.drain()
             return
 
@@ -237,11 +230,7 @@ class HTTPConnectProxy:
             )
             if egress_attempt.action != EgressAction.ALLOW:
                 result_blocked = True
-                block_reason = (
-                    egress_attempt.details
-                    or egress_attempt.rule
-                    or "egress denied"
-                )
+                block_reason = egress_attempt.details or egress_attempt.rule or "egress denied"
             else:
                 # Keep static allowlist as observability signal when interactive
                 # approval/policy allows an otherwise unknown domain.
@@ -252,11 +241,7 @@ class HTTPConnectProxy:
                         host,
                         port,
                     )
-                block_reason = (
-                    egress_attempt.details
-                    or egress_attempt.rule
-                    or "egress allowed"
-                )
+                block_reason = egress_attempt.details or egress_attempt.rule or "egress allowed"
         else:
             # Fallback path when egress filter is unavailable.
             result = self.web_proxy.check_request(url)

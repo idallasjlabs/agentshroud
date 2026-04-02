@@ -3,8 +3,8 @@
 # Protected by common law trademark rights. Federal trademark registration pending.
 # Unauthorized reproduction, distribution, or use of the AgentShroud name or brand is strictly prohibited.
 """Audit Chain Verification Tests — integrity, tamper detection, concurrency."""
-from __future__ import annotations
 
+from __future__ import annotations
 
 import asyncio
 import hashlib

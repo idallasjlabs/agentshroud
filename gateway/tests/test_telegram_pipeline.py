@@ -5,6 +5,7 @@
 Verifies that every Telegram message (inbound and outbound) flows through the
 full security pipeline — PromptGuard, HeuristicClassifier, PII sanitizer, etc.
 """
+
 from __future__ import annotations
 
 import json
@@ -15,8 +16,8 @@ import pytest
 from gateway.proxy.pipeline import PipelineAction, PipelineResult
 from gateway.proxy.telegram_proxy import TelegramAPIProxy
 
-
 # ── Helpers ──────────────────────────────────────────────────────────────────
+
 
 def _make_pipeline_result(
     *,
@@ -78,6 +79,7 @@ def _getUpdates_response(updates: list[dict]) -> dict:
 
 # ── Test 1: inbound → pipeline.process_inbound called with skip_context_guard=True ──
 
+
 class TestInboundPipelineWired:
     @pytest.mark.asyncio
     async def test_pipeline_process_inbound_called_with_skip_context_guard(self):
@@ -87,7 +89,9 @@ class TestInboundPipelineWired:
         )
         proxy = _make_proxy(pipeline=pipeline)
 
-        response = _getUpdates_response([_make_update("process the quarterly update", user_id="42")])
+        response = _getUpdates_response(
+            [_make_update("process the quarterly update", user_id="42")]
+        )
         await proxy._filter_inbound_updates(response)
 
         pipeline.process_inbound.assert_called_once()
@@ -98,6 +102,7 @@ class TestInboundPipelineWired:
 
 
 # ── Test 2: blocked non-owner message → dropped, stats incremented ──
+
 
 class TestInboundPipelineBlockedNonOwner:
     @pytest.mark.asyncio
@@ -123,6 +128,7 @@ class TestInboundPipelineBlockedNonOwner:
 
 # ── Test 3: blocked owner message → allowed through, sanitized text applied ──
 
+
 class TestInboundPipelineBlockedOwner:
     @pytest.mark.asyncio
     async def test_blocked_owner_message_allowed_through_with_sanitized_text(self):
@@ -146,6 +152,7 @@ class TestInboundPipelineBlockedOwner:
 
 # ── Test 4: pipeline exception → non-owner blocked (fail-closed) ──
 
+
 class TestInboundPipelineExceptionNonOwner:
     @pytest.mark.asyncio
     async def test_pipeline_exception_fails_closed_for_non_owner(self):
@@ -154,7 +161,9 @@ class TestInboundPipelineExceptionNonOwner:
         proxy = _make_proxy(pipeline=pipeline, owner_user_id="99999")
         proxy._notify_user_blocked = AsyncMock()
 
-        response = _getUpdates_response([_make_update("process the quarterly update", user_id="42")])
+        response = _getUpdates_response(
+            [_make_update("process the quarterly update", user_id="42")]
+        )
         result = await proxy._filter_inbound_updates(response)
 
         # Fail-closed: blocked collaborator message is dropped (bot never receives it);
@@ -165,6 +174,7 @@ class TestInboundPipelineExceptionNonOwner:
 
 
 # ── Test 5: pipeline exception → owner allowed through ──
+
 
 class TestInboundPipelineExceptionOwner:
     @pytest.mark.asyncio
@@ -182,6 +192,7 @@ class TestInboundPipelineExceptionOwner:
 
 
 # ── Test 6: outbound → pipeline.process_outbound called ──
+
 
 class TestOutboundPipelineWired:
     @pytest.mark.asyncio
@@ -232,6 +243,7 @@ class TestOutboundPipelineWired:
 
 # ── Test 7: outbound blocked → replacement text set ──
 
+
 class TestOutboundPipelineBlocked:
     @pytest.mark.asyncio
     async def test_outbound_blocked_replaces_text(self):
@@ -255,6 +267,7 @@ class TestOutboundPipelineBlocked:
 
 
 # ── Test 8: pipeline=None fallback → direct sanitizer used (inbound) ──
+
 
 class TestInboundFallbackToDirectSanitizer:
     @pytest.mark.asyncio

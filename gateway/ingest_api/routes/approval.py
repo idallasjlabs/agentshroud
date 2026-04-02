@@ -12,16 +12,16 @@ import hmac
 import logging
 from typing import Annotated
 
-from fastapi import APIRouter, Request, HTTPException, Query, WebSocket, Depends
+from fastapi import APIRouter, Depends, HTTPException, Query, Request, WebSocket
 
+from ..auth import create_auth_dependency
+from ..event_bus import make_event
 from ..models import (
     ApprovalDecision,
     ApprovalQueueItem,
     ApprovalRequest,
 )
-from ..auth import create_auth_dependency
 from ..state import app_state
-from ..event_bus import make_event
 
 # Create router
 router = APIRouter()
@@ -112,9 +112,10 @@ async def approval_websocket(websocket: WebSocket, token: str | None = Query(Non
     4. Client can send decisions: {"type": "decide", "request_id": "...", "approved": true}
     """
     # Access app_state from websocket state
-    
+
     # L5: Accept scoped WS tokens (short-lived, single-use) alongside master token
     from .dashboard import _validate_ws_token
+
     if not token or (
         not _validate_ws_token(token)
         and not hmac.compare_digest(token, app_state.config.auth_token)

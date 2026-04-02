@@ -3,14 +3,15 @@
 # Protected by common law trademark rights. Federal trademark registration pending.
 # Unauthorized reproduction, distribution, or use of the AgentShroud name or brand is strictly prohibited.
 """Tests for POST /mcp/result endpoint and mcp_proxy_data / proxy_allowed_domains config loading."""
+
 from __future__ import annotations
 
+from pathlib import Path
+from unittest.mock import AsyncMock, patch
 
 import pytest
 import pytest_asyncio
-from httpx import AsyncClient, ASGITransport
-from unittest.mock import patch, AsyncMock
-from pathlib import Path
+from httpx import ASGITransport, AsyncClient
 
 from gateway.ingest_api.config import (
     ApprovalQueueConfig,
@@ -22,7 +23,6 @@ from gateway.ingest_api.config import (
 from gateway.ingest_api.main import app, lifespan
 from gateway.ingest_api.state import app_state
 from gateway.proxy.mcp_proxy import ProxyResult
-
 
 # ── Fixtures ──────────────────────────────────────────────────────────────────
 
@@ -49,10 +49,13 @@ def auth_headers():
 
 @pytest_asyncio.fixture
 async def client(test_config, auth_headers):
-    with patch("gateway.ingest_api.lifespan.load_config", return_value=test_config), patch(
-        "gateway.ingest_api.router.MultiAgentRouter.forward_to_agent",
-        new_callable=AsyncMock,
-    ) as mock_forward:
+    with (
+        patch("gateway.ingest_api.lifespan.load_config", return_value=test_config),
+        patch(
+            "gateway.ingest_api.router.MultiAgentRouter.forward_to_agent",
+            new_callable=AsyncMock,
+        ) as mock_forward,
+    ):
         mock_forward.return_value = "mocked response"
         async with lifespan(app):
             transport = ASGITransport(app=app)
@@ -272,8 +275,7 @@ class TestMCPProxyConfigLoading:
         from gateway.ingest_api.config import load_config
 
         config_file = tmp_path / "agentshroud.yaml"
-        config_file.write_text(
-            """
+        config_file.write_text("""
 gateway:
   bind: "127.0.0.1"
   port: 8080
@@ -290,8 +292,7 @@ mcp_proxy:
       tools:
         get_file_contents:
           permission_level: read
-"""
-        )
+""")
         cfg = load_config(config_file)
         assert cfg.mcp_proxy_data != {}
         assert cfg.mcp_proxy_data["enabled"] is True
@@ -303,16 +304,14 @@ mcp_proxy:
         from gateway.ingest_api.config import load_config
 
         config_file = tmp_path / "agentshroud.yaml"
-        config_file.write_text(
-            """
+        config_file.write_text("""
 gateway:
   bind: "127.0.0.1"
   port: 8080
   auth_token: "test-token"
 security:
   pii_redaction: false
-"""
-        )
+""")
         cfg = load_config(config_file)
         assert cfg.mcp_proxy_data == {}
 
@@ -321,8 +320,7 @@ security:
         from gateway.ingest_api.config import load_config
 
         config_file = tmp_path / "agentshroud.yaml"
-        config_file.write_text(
-            """
+        config_file.write_text("""
 gateway:
   bind: "127.0.0.1"
   port: 8080
@@ -334,8 +332,7 @@ proxy:
     - api.openai.com
     - api.anthropic.com
     - "*.github.com"
-"""
-        )
+""")
         cfg = load_config(config_file)
         assert "api.openai.com" in cfg.proxy_allowed_domains
         assert "*.github.com" in cfg.proxy_allowed_domains
@@ -345,15 +342,13 @@ proxy:
         from gateway.ingest_api.config import load_config
 
         config_file = tmp_path / "agentshroud.yaml"
-        config_file.write_text(
-            """
+        config_file.write_text("""
 gateway:
   bind: "127.0.0.1"
   port: 8080
   auth_token: "test-token"
 security:
   pii_redaction: false
-"""
-        )
+""")
         cfg = load_config(config_file)
         assert cfg.proxy_allowed_domains == []

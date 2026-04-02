@@ -4,11 +4,12 @@
 Verifies that the client correctly processes events_api envelopes, acknowledges
 them, calls proxy.handle_event(), and handles disconnect/reconnect cycles.
 """
+
 from __future__ import annotations
 
 import asyncio
 import json
-from unittest.mock import AsyncMock, MagicMock, patch, call
+from unittest.mock import AsyncMock, MagicMock, call, patch
 
 import pytest
 
@@ -44,8 +45,10 @@ class TestSlackSocketClient:
         class MockAsyncClient:
             async def __aenter__(self):
                 return self
+
             async def __aexit__(self, *args):
                 pass
+
             async def post(self, *args, **kwargs):
                 return mock_resp
 
@@ -63,8 +66,10 @@ class TestSlackSocketClient:
         class MockAsyncClient:
             async def __aenter__(self):
                 return self
+
             async def __aexit__(self, *args):
                 pass
+
             async def post(self, *args, **kwargs):
                 return mock_resp
 
@@ -80,30 +85,36 @@ class TestSlackSocketClient:
         client = _make_client(proxy)
 
         payload = {"event": {"type": "message", "user": "U123", "text": "hi"}}
-        envelope = json.dumps({
-            "type": "events_api",
-            "envelope_id": "env-001",
-            "payload": payload,
-        })
+        envelope = json.dumps(
+            {
+                "type": "events_api",
+                "envelope_id": "env-001",
+                "payload": payload,
+            }
+        )
 
         sent_acks = []
 
         class FakeWS:
             def __init__(self):
                 self._items = iter([envelope])
+
             def __aiter__(self):
                 return self
+
             async def __anext__(self):
                 try:
                     return next(self._items)
                 except StopIteration:
                     raise StopAsyncIteration
+
             async def send(self, data):
                 sent_acks.append(json.loads(data))
 
         class FakeCM:
             async def __aenter__(self):
                 return FakeWS()
+
             async def __aexit__(self, *a):
                 pass
 
@@ -130,19 +141,23 @@ class TestSlackSocketClient:
         class FakeWS:
             def __init__(self):
                 self._items = iter([hello])
+
             def __aiter__(self):
                 return self
+
             async def __anext__(self):
                 try:
                     return next(self._items)
                 except StopIteration:
                     raise StopAsyncIteration
+
             async def send(self, data):
                 pass
 
         class FakeCM:
             async def __aenter__(self):
                 return FakeWS()
+
             async def __aexit__(self, *a):
                 pass
 

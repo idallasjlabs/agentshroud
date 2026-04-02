@@ -7,7 +7,7 @@ from unittest.mock import AsyncMock, MagicMock, patch
 
 import pytest
 
-from gateway.proxy.dns_blocklist import DNSBlocklist, SYSTEM_ALLOWLIST
+from gateway.proxy.dns_blocklist import SYSTEM_ALLOWLIST, DNSBlocklist
 
 
 class TestParseHostsLine:

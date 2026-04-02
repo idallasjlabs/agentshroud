@@ -3,8 +3,8 @@
 # Protected by common law trademark rights. Federal trademark registration pending.
 # Unauthorized reproduction, distribution, or use of the AgentShroud name or brand is strictly prohibited.
 """Security Module Integration Tests — full pipeline end-to-end."""
-from __future__ import annotations
 
+from __future__ import annotations
 
 import asyncio
 import tempfile
@@ -13,6 +13,7 @@ from pathlib import Path
 import pytest
 import pytest_asyncio
 
+from gateway.approval_queue.queue import ApprovalQueue
 from gateway.ingest_api.config import (
     ApprovalQueueConfig,
     GatewayConfig,
@@ -22,13 +23,12 @@ from gateway.ingest_api.config import (
 )
 from gateway.ingest_api.ledger import DataLedger
 from gateway.ingest_api.sanitizer import PIISanitizer
-from gateway.security.prompt_guard import PromptGuard
-from gateway.security.trust_manager import TrustManager, TrustLevel
+from gateway.security.drift_detector import ContainerSnapshot, DriftDetector
 from gateway.security.egress_config import EgressFilterConfig
-from gateway.security.egress_filter import EgressFilter, EgressPolicy, EgressAction
-from gateway.security.drift_detector import DriftDetector, ContainerSnapshot
+from gateway.security.egress_filter import EgressAction, EgressFilter, EgressPolicy
 from gateway.security.encrypted_store import EncryptedStore
-from gateway.approval_queue.queue import ApprovalQueue
+from gateway.security.prompt_guard import PromptGuard
+from gateway.security.trust_manager import TrustLevel, TrustManager
 
 # --- Fixtures ---
 
@@ -79,7 +79,7 @@ def egress_filter():
         allowed_domains=["api.openai.com", "api.anthropic.com"],
         allowed_ports=[443],
     )
-    return EgressFilter(config=EgressFilterConfig(mode='enforce'), default_policy=policy)
+    return EgressFilter(config=EgressFilterConfig(mode="enforce"), default_policy=policy)
 
 
 @pytest.fixture
@@ -101,9 +101,7 @@ async def ledger():
 
 @pytest_asyncio.fixture
 async def approval_queue():
-    config = ApprovalQueueConfig(
-        enabled=True, actions=["email_sending"], timeout_seconds=60
-    )
+    config = ApprovalQueueConfig(enabled=True, actions=["email_sending"], timeout_seconds=60)
     return ApprovalQueue(config)
 
 
@@ -148,9 +146,7 @@ async def test_full_pipeline_clean_message(
 
 
 @pytest.mark.asyncio
-async def test_full_pipeline_pii_message(
-    sanitizer, prompt_guard, trust_manager, ledger
-):
+async def test_full_pipeline_pii_message(sanitizer, prompt_guard, trust_manager, ledger):
     """Message with PII gets sanitized and logged correctly."""
     message = "My SSN is 123-45-6789 and email is test@example.com"
 
@@ -226,9 +222,7 @@ def test_trust_insufficient_action_blocked(trust_manager):
 
 
 @pytest.mark.asyncio
-async def test_pipeline_concurrent_messages(
-    sanitizer, prompt_guard, trust_manager, ledger
-):
+async def test_pipeline_concurrent_messages(sanitizer, prompt_guard, trust_manager, ledger):
     """Multiple messages through pipeline concurrently — thread safety."""
     trust_manager.register_agent("concurrent-agent")
 

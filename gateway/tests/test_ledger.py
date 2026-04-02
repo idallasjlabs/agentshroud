@@ -3,8 +3,8 @@
 # Protected by common law trademark rights. Federal trademark registration pending.
 # Unauthorized reproduction, distribution, or use of the AgentShroud name or brand is strictly prohibited.
 """Tests for data ledger"""
-from __future__ import annotations
 
+from __future__ import annotations
 
 import pytest
 
@@ -158,7 +158,7 @@ async def test_get_stats(test_ledger):
 @pytest.mark.asyncio
 async def test_query_with_time_filters(test_ledger):
     """Test querying ledger with time range filters"""
-    from datetime import datetime, timezone, timedelta
+    from datetime import datetime, timedelta, timezone
 
     # Add test entry
     await test_ledger.record(

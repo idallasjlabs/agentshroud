@@ -3,14 +3,14 @@
 # Protected by common law trademark rights. Federal trademark registration pending.
 # Unauthorized reproduction, distribution, or use of the AgentShroud name or brand is strictly prohibited.
 """Tests for URL Analyzer — SSRF detection, PII in URLs, data exfiltration."""
+
 from __future__ import annotations
 
+import base64
 
 import pytest
 
 from gateway.proxy.url_analyzer import URLAnalyzer, URLVerdict, _looks_like_base64
-
-import base64
 
 
 @pytest.fixture
@@ -185,9 +185,7 @@ class TestDataExfiltration:
         assert any(f.category == "exfiltration" for f in r.findings)
 
     def test_base64_in_query_flagged(self, analyzer):
-        payload = base64.b64encode(
-            b"Stolen data with secret information and credentials"
-        ).decode()
+        payload = base64.b64encode(b"Stolen data with secret information and credentials").decode()
         r = analyzer.analyze(f"https://attacker.com/collect?data={payload}")
         assert r.verdict == URLVerdict.FLAG
         assert any(f.category == "exfiltration" for f in r.findings)
@@ -238,9 +236,7 @@ class TestBase64Heuristic:
     """Test the _looks_like_base64 helper."""
 
     def test_actual_base64(self):
-        encoded = base64.b64encode(
-            b"This is a test message for base64 detection"
-        ).decode()
+        encoded = base64.b64encode(b"This is a test message for base64 detection").decode()
         assert _looks_like_base64(encoded)
 
     def test_short_string_not_base64(self):

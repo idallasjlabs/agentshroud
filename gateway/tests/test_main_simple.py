@@ -6,14 +6,19 @@
 
 Focuses on easily testable functions without complex mocking.
 """
+
 from __future__ import annotations
 
+from unittest.mock import MagicMock, patch
 
 import pytest
-from unittest.mock import MagicMock, patch
 from fastapi import HTTPException
 
-from gateway.ingest_api.main import log_requests, global_exception_handler, security_headers_middleware
+from gateway.ingest_api.main import (
+    global_exception_handler,
+    log_requests,
+    security_headers_middleware,
+)
 from gateway.ingest_api.models import ForwardRequest
 
 
@@ -198,7 +203,7 @@ async def test_approval_decision_valid():
 @pytest.mark.asyncio
 async def test_lifespan_initialization(test_config):
     """Test FastAPI lifespan initialization"""
-    from gateway.ingest_api.main import lifespan, app, app_state
+    from gateway.ingest_api.main import app, app_state, lifespan
 
     # Temporarily override config loading
     with patch("gateway.ingest_api.lifespan.load_config", return_value=test_config):

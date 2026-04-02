@@ -10,6 +10,7 @@ CVE report comparisons.
 
 To add a new CVE: append to AGENT_CVE_REGISTRY with status and mitigation notes.
 """
+
 from __future__ import annotations
 
 from typing import Any
@@ -42,7 +43,11 @@ AGENT_CVE_REGISTRY: list[dict[str, Any]] = [
             "file_sandbox.py validates all file I/O paths. "
             "Feishu extension is not enabled."
         ),
-        "defense_layers": ["read_only container", "file_sandbox", "OPENCLAW_DISABLE_HOST_FILESYSTEM"],
+        "defense_layers": [
+            "read_only container",
+            "file_sandbox",
+            "OPENCLAW_DISABLE_HOST_FILESYSTEM",
+        ],
     },
     {
         "id": "CVE-2026-28460",
@@ -122,7 +127,12 @@ AGENT_CVE_REGISTRY: list[dict[str, Any]] = [
             "256-bit gateway password (secrets.token_hex(32)). "
             "dangerouslyAllowHostHeaderOriginFallback=false."
         ),
-        "defense_layers": ["localhost_binding", "tailscale", "hmac_auth", "auth_failure_escalation"],
+        "defense_layers": [
+            "localhost_binding",
+            "tailscale",
+            "hmac_auth",
+            "auth_failure_escalation",
+        ],
     },
     {
         "id": "CVE-2026-22172",
@@ -163,7 +173,12 @@ AGENT_CVE_REGISTRY: list[dict[str, Any]] = [
             "no-new-privileges, pids_limit:512) is unaffected by OpenClaw escape. "
             "ProgressiveLockdown escalates: 3 blocks=alert, 5=rate limit, 10=suspend."
         ),
-        "defense_layers": ["tool_acl", "subagent_monitor", "container_sandbox", "progressive_lockdown"],
+        "defense_layers": [
+            "tool_acl",
+            "subagent_monitor",
+            "container_sandbox",
+            "progressive_lockdown",
+        ],
     },
     {
         "id": "CVE-2026-32049",
@@ -184,7 +199,12 @@ AGENT_CVE_REGISTRY: list[dict[str, Any]] = [
             "limit_request_body middleware enforces 1MB on API requests including "
             "chunked transfers. Container mem_limit + auto-restart as backstop."
         ),
-        "defense_layers": ["media_size_guard", "streaming_download_limit", "request_body_limit", "mem_limit"],
+        "defense_layers": [
+            "media_size_guard",
+            "streaming_download_limit",
+            "request_body_limit",
+            "mem_limit",
+        ],
     },
     {
         "id": "CVE-2026-32051",

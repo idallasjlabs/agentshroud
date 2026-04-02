@@ -12,6 +12,7 @@ bot container. A compromised bot could edit openclaw.json directly, silently
 weakening tool restrictions or agent bindings without a container rebuild. The
 gateway mounts this volume read-only and acts as an independent audit observer.
 """
+
 from __future__ import annotations
 
 import hashlib
@@ -77,9 +78,7 @@ class ConfigIntegrityMonitor:
                 "updated_at": time.time(),
                 "hashes": hashes,
             }
-            self.baseline_path.write_text(
-                json.dumps(payload, indent=2), encoding="utf-8"
-            )
+            self.baseline_path.write_text(json.dumps(payload, indent=2), encoding="utf-8")
         except OSError as exc:
             logger.warning("ConfigIntegrityMonitor: could not save baseline: %s", exc)
 
@@ -122,15 +121,18 @@ class ConfigIntegrityMonitor:
             else:
                 continue  # unchanged
 
-            changes.append({
-                "file": rel_path,
-                "previous": prev,
-                "current": curr,
-                "event": event,
-            })
+            changes.append(
+                {
+                    "file": rel_path,
+                    "previous": prev,
+                    "current": curr,
+                    "event": event,
+                }
+            )
             logger.warning(
                 "ConfigIntegrityMonitor: %s → %s (was %s, now %s)",
-                rel_path, event,
+                rel_path,
+                event,
                 (prev or "MISSING")[:12] + "..." if prev else "MISSING",
                 (curr or "MISSING")[:12] + "..." if curr else "MISSING",
             )
@@ -150,9 +152,7 @@ class ConfigIntegrityMonitor:
             abs_path = self.bot_config_dir / rel_path
             current[rel_path] = self._hash_file(abs_path)
         self._save_baseline(current)
-        logger.info(
-            "ConfigIntegrityMonitor: baseline reset by owner (%d file(s))", len(current)
-        )
+        logger.info("ConfigIntegrityMonitor: baseline reset by owner (%d file(s))", len(current))
 
     def format_alert_text(self, changes: list[dict]) -> str:
         """Format Telegram alert text for detected config changes."""
