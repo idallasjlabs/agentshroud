@@ -190,10 +190,10 @@ class TestResponseFiltering:
 
     def test_collaborator_api_key_redacted(self, enforcer):
         # Format matches pattern: keyword[:=]value on same line
-        raw = "token=sk-abcdefghij1234567890 — use for auth"
+        raw = "token=sk-example-not-a-real-key-000 — use for auth"
         filtered, was_modified = enforcer.filter_response(raw, COLLAB_ID)
         assert was_modified
-        assert "sk-abcdefghij1234567890" not in filtered
+        assert "sk-example-not-a-real-key-000" not in filtered
 
     def test_clean_response_not_modified(self, enforcer):
         raw = "The BESS fleet alarm threshold has been updated to 95%."
