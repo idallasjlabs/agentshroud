@@ -356,7 +356,7 @@ function _renderCorrelation(corr) {
         </div>
         ${denied.length ? `
         <div style="font-size:11px;font-weight:600;text-transform:uppercase;letter-spacing:.05em;color:var(--text-muted);margin:.75rem 0 .3rem">Top Denied Destinations</div>
-        ${denied.map(d => `<div style="font-size:11px;display:flex;justify-content:space-between"><code>${_esc(d.domain||d)}</code><span style="color:var(--danger)">${d.count??''}</span></div>`).join('')}
+        ${denied.map(d => `<div style="font-size:11px;display:flex;justify-content:space-between"><code>${_esc(d.destination||d.domain||'unknown')}</code><span style="color:var(--danger)">${d.count??''}</span></div>`).join('')}
         ` : ''}
         ${violators.length ? `
         <div style="font-size:11px;font-weight:600;text-transform:uppercase;letter-spacing:.05em;color:var(--text-muted);margin:.75rem 0 .3rem">Top Policy Violators</div>
