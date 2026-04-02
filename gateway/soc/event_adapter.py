@@ -57,8 +57,19 @@ def from_audit_chain_entry(entry: Any) -> SecurityEvent:
         block_reason = str(details.get("block_reason", "") or "")
         action_taken = str(details.get("action_taken", "") or "allowed")
 
-        # Build a human-readable summary
-        summary = details.get("summary") or block_reason or details.get("message") or event_type
+        # Build a human-readable summary from available context fields
+        summary = (
+            details.get("summary")
+            or block_reason
+            or details.get("message")
+            or (
+                f"{action_taken}: {event_type}"
+                if action_taken and action_taken != "allowed"
+                else None
+            )
+            or (f"{agent_id}: {event_type}" if agent_id else None)
+            or event_type
+        )
 
         return SecurityEvent(
             event_type=event_type,
