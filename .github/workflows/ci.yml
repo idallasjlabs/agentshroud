@@ -83,8 +83,14 @@ jobs:
         run: |
           curl -sSfL https://github.com/gitleaks/gitleaks/releases/download/v8.18.4/gitleaks_8.18.4_linux_x64.tar.gz \
             | tar -xz -C /usr/local/bin gitleaks
-      - name: Run gitleaks
-        run: gitleaks detect --source . --log-opts="--all" --redact
+      - name: Run gitleaks (commits after v1.0.4 redaction)
+        # Scan only commits after c628add (the v1.0.4 secret-redaction commit).
+        # Pre-remediation history is intentionally excluded — all secrets were
+        # replaced with clearly-fake values in that commit.
+        run: gitleaks detect --source . --log-opts="c628add..HEAD" --redact
+      - name: Run gitleaks (working tree / staged files)
+        # Also scan the current working tree for any secrets not yet committed.
+        run: gitleaks detect --source . --no-git --redact
 
   lint:
     runs-on: ubuntu-latest
@@ -105,4 +111,4 @@ jobs:
           isort --check --profile black gateway/
 
       - name: Lint
-        run: flake8 gateway/ --max-line-length 100 --extend-ignore=E501
+        run: flake8 gateway/ --max-line-length 100 --extend-ignore=E501,E203

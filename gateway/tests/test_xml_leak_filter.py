@@ -24,7 +24,7 @@ class TestXMLLeakFilter:
         """Test that clean responses pass through unchanged."""
         clean_response = """
         I can help you with that task. Here's what I found:
-        
+
         The weather today is sunny with a high of 75°F.
         You might want to consider going for a walk.
         """
@@ -38,7 +38,7 @@ class TestXMLLeakFilter:
     def test_function_calls_xml_removal(self):
         """Test removal of function call XML blocks."""
         response_with_xml = """Let me check that for you.
-        
+
 <function_calls>
 <invoke name="web_search">
 <parameter name="query">weather today</parameter>
