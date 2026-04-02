@@ -149,7 +149,9 @@ class EgressFilterConfig:
 
     # Interactive firewall mode: require approval for all outbound connections,
     # even when destination is allowlisted.
-    approval_required_for_all: bool = True
+    # Default is False — production deployment sets AGENTSHROUD_EGRESS_APPROVAL_ALL=false
+    # in docker-compose.yml.  Set to True only for maximum-friction environments.
+    approval_required_for_all: bool = False
 
     @classmethod
     def from_environment(cls) -> "EgressFilterConfig":

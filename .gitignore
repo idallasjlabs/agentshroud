@@ -156,8 +156,10 @@ temp/
 # History files that may contain credentials
 history.env
 /secrets/
-# Memory backup archives (keep directory/logs, ignore tarballs)
+# Memory backup archives — only keep backup.log; ignore contents and tarballs
 memory-backups/*.tar.gz
+memory-backups/memory/
+memory-backups/MEMORY.md
 # Large data files (adjust as needed)
 *.csv.gz
 *.parquet.gz

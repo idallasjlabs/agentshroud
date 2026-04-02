@@ -754,8 +754,9 @@ class PromptGuard:
             matched.append(name)
             total_score += weight
 
-        # Cap score at a reasonable max
-        total_score = min(total_score, 5.0)
+        # Cap score at a reasonable max — raised to 10.0 for better SOC triage
+        # granularity (5.0 caused high-severity findings to cluster at the ceiling)
+        total_score = min(total_score, 10.0)
 
         # Determine action
         if total_score >= self.block_threshold:

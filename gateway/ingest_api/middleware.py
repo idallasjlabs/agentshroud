@@ -1043,7 +1043,21 @@ class MiddlewareManager:
     def _check_cross_session_access(
         self, request_data: Dict[str, Any], user_id: str
     ) -> MiddlewareResult:
-        """Check for unauthorized cross-session access attempts."""
+        """Check for unauthorized cross-session access attempts.
+
+        **Implementation note:** This is a lightweight string-based heuristic.
+        It scans the serialised ``message`` field of the request payload for
+        regex patterns that resemble cross-session commands (e.g. ``session_send``,
+        ``send to session``, ``access user <id>``).  It does *not* parse or
+        execute the message — it only checks whether the text matches known
+        command patterns.
+
+        False-positive risk: legitimate messages that coincidentally contain
+        phrases like "access user settings" may trigger the pattern.  The
+        owner is always allowed through; non-owner requests are blocked with an
+        explanation.  If a false positive is reported, tighten the regex or add
+        an allowlist of safe phrases here.
+        """
         message_content = request_data.get("message", "")
         if isinstance(message_content, dict):
             message_content = str(message_content)

@@ -76,6 +76,15 @@ class HTTPConnectProxy:
     against the allowlist, and either establishes a TCP relay or
     returns 403 Forbidden.
 
+    **Enforcement posture — allowlist-only:**
+    This proxy operates exclusively in allowlist mode: destinations that are
+    not explicitly permitted (via ``ALLOWED_DOMAINS`` / ``agentshroud.yaml``
+    ``proxy.allowed_domains``) are blocked by default.  There is no fallback
+    "allow unknown" path.  ``CONNECT_FORCE_BLOCK_DOMAINS`` (e.g.
+    ``api.telegram.org``) adds a hard-block layer that cannot be overridden by
+    the runtime egress-approval queue — the bot *must* use the gateway's
+    ``/telegram-api/`` reverse proxy for those destinations.
+
     Usage:
         proxy = HTTPConnectProxy()
         await proxy.start()          # called in FastAPI lifespan
@@ -333,15 +342,24 @@ class HTTPConnectProxy:
     async def _relay(
         reader: asyncio.StreamReader,
         writer: asyncio.StreamWriter,
+        idle_timeout: float = 120.0,
     ) -> None:
-        """Copy bytes from reader to writer until EOF."""
+        """Copy bytes from reader to writer until EOF.
+
+        ``idle_timeout`` (default 120 s) closes the tunnel if no data
+        arrives for that long.  This prevents stale SSH/TLS connections
+        from hanging the proxy indefinitely when the remote peer stops
+        sending without closing the TCP connection.
+        """
         try:
             while True:
-                data = await reader.read(65536)
+                data = await asyncio.wait_for(reader.read(65536), timeout=idle_timeout)
                 if not data:
                     break
                 writer.write(data)
                 await writer.drain()
+        except asyncio.TimeoutError:
+            logger.debug("_relay: idle timeout (%.0fs) — closing tunnel", idle_timeout)
         except Exception:
             pass
         finally:
@@ -366,9 +384,10 @@ class HTTPConnectProxy:
         """
         buf = bytearray()
         scanned = False
+        idle_timeout = 120.0
         try:
             while True:
-                data = await reader.read(65536)
+                data = await asyncio.wait_for(reader.read(65536), timeout=idle_timeout)
                 if not data:
                     break
                 writer.write(data)
@@ -378,6 +397,8 @@ class HTTPConnectProxy:
                     if len(buf) >= scan_limit:
                         asyncio.create_task(self._clamav_scan_bytes(bytes(buf), host))
                         scanned = True
+        except asyncio.TimeoutError:
+            logger.debug("_relay_and_scan: idle timeout (%.0fs) — closing tunnel", idle_timeout)
         except Exception:
             pass
         finally:
