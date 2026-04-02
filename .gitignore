@@ -345,3 +345,4 @@ mkdocs/
 # Lock files for testing
 # OS generated files
 .fuse_hidden*
+.asb-tmp/
