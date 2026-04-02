@@ -3,19 +3,20 @@
 
 from typing import Optional
 
+from gateway.security.session_manager import UserSessionManager
+
 from ..approval_queue.enhanced_queue import EnhancedApprovalQueue
-from .config import GatewayConfig
-from .event_bus import EventBus
-from .ledger import DataLedger
-from .router import MultiAgentRouter
-from .sanitizer import PIISanitizer
 from ..proxy.http_proxy import HTTPConnectProxy
 from ..proxy.mcp_proxy import MCPProxy
 from ..proxy.pipeline import SecurityPipeline
 from ..security.egress_filter import EgressFilter
 from ..security.prompt_guard import PromptGuard
 from ..security.trust_manager import TrustManager
-from gateway.security.session_manager import UserSessionManager
+from .config import GatewayConfig
+from .event_bus import EventBus
+from .ledger import DataLedger
+from .router import MultiAgentRouter
+from .sanitizer import PIISanitizer
 
 
 class AppState:

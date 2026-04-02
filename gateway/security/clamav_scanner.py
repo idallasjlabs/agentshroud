@@ -22,9 +22,7 @@ logger = logging.getLogger(__name__)
 DEFAULT_LOG_DIR = Path("/var/log/security/clamav")
 
 
-def update_virus_db(
-    freshclam_bin: str = "freshclam", timeout: int = 300
-) -> dict[str, Any]:
+def update_virus_db(freshclam_bin: str = "freshclam", timeout: int = 300) -> dict[str, Any]:
     """Update ClamAV virus database using freshclam.
 
     Args:
@@ -179,7 +177,10 @@ async def scan_bytes(data: bytes, timeout: int = 30) -> dict[str, Any]:
 
     try:
         proc = await asyncio.create_subprocess_exec(
-            "clamdscan", "--stream", "--no-summary", "-",
+            "clamdscan",
+            "--stream",
+            "--no-summary",
+            "-",
             stdin=asyncio.subprocess.PIPE,
             stdout=asyncio.subprocess.PIPE,
             stderr=asyncio.subprocess.PIPE,
@@ -191,12 +192,27 @@ async def scan_bytes(data: bytes, timeout: int = 30) -> dict[str, Any]:
         return result
     except asyncio.TimeoutError:
         logger.warning("ClamAV scan_bytes timed out after %ds", timeout)
-        return {"scanner": "clamav", "infected_count": 0, "error": "timeout", "scanned_bytes": len(data)}
+        return {
+            "scanner": "clamav",
+            "infected_count": 0,
+            "error": "timeout",
+            "scanned_bytes": len(data),
+        }
     except FileNotFoundError:
-        return {"scanner": "clamav", "infected_count": 0, "error": "binary_not_found", "scanned_bytes": len(data)}
+        return {
+            "scanner": "clamav",
+            "infected_count": 0,
+            "error": "binary_not_found",
+            "scanned_bytes": len(data),
+        }
     except Exception as exc:
         logger.error("ClamAV scan_bytes error: %s", exc)
-        return {"scanner": "clamav", "infected_count": 0, "error": str(exc), "scanned_bytes": len(data)}
+        return {
+            "scanner": "clamav",
+            "infected_count": 0,
+            "error": str(exc),
+            "scanned_bytes": len(data),
+        }
 
 
 def generate_summary(report: dict[str, Any]) -> dict[str, Any]:

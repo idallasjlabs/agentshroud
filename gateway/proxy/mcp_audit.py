@@ -209,7 +209,9 @@ class MCPAuditTrail:
             if entry.content_hash != expected_content_hash:
                 return False, f"Entry {i} ({entry.id}): content_hash mismatch"
 
-            chain_input = f"{entry.previous_hash}:{entry.content_hash}:{entry.direction}:{entry.timestamp}"
+            chain_input = (
+                f"{entry.previous_hash}:{entry.content_hash}:{entry.direction}:{entry.timestamp}"
+            )
             expected_chain_hash = hashlib.sha256(chain_input.encode()).hexdigest()
             if entry.chain_hash != expected_chain_hash:
                 return False, f"Entry {i} ({entry.id}): chain_hash mismatch (tampered)"
@@ -242,9 +244,7 @@ class MCPAuditTrail:
         return [e for e in self._entries if e.blocked]
 
     def get_failed_entries(self) -> list[MCPAuditEntry]:
-        return [
-            e for e in self._entries if not e.success and e.direction == "tool_result"
-        ]
+        return [e for e in self._entries if not e.success and e.direction == "tool_result"]
 
     def generate_report(self) -> dict[str, Any]:
         """Generate an MCP audit report summary."""

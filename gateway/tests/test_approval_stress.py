@@ -3,8 +3,8 @@
 # Protected by common law trademark rights. Federal trademark registration pending.
 # Unauthorized reproduction, distribution, or use of the AgentShroud name or brand is strictly prohibited.
 """Approval Queue Stress Tests — concurrent requests and timeouts."""
-from __future__ import annotations
 
+from __future__ import annotations
 
 import asyncio
 import tempfile
@@ -22,9 +22,7 @@ from gateway.ingest_api.models import ApprovalRequest
 
 @pytest_asyncio.fixture
 async def queue():
-    config = ApprovalQueueConfig(
-        enabled=True, actions=["email_sending"], timeout_seconds=5
-    )
+    config = ApprovalQueueConfig(enabled=True, actions=["email_sending"], timeout_seconds=5)
     return ApprovalQueue(config)
 
 
@@ -106,9 +104,7 @@ class TestApprovalTimeout:
 
         # Manually expire it
         item.expires_at = (
-            (datetime.now(timezone.utc) - timedelta(seconds=10))
-            .isoformat()
-            .replace("+00:00", "Z")
+            (datetime.now(timezone.utc) - timedelta(seconds=10)).isoformat().replace("+00:00", "Z")
         )
 
         with pytest.raises(ValueError, match="expired"):
@@ -125,9 +121,7 @@ class TestApprovalTimeout:
         item = await queue.submit(req)
         # Manually expire
         item.expires_at = (
-            (datetime.now(timezone.utc) - timedelta(seconds=10))
-            .isoformat()
-            .replace("+00:00", "Z")
+            (datetime.now(timezone.utc) - timedelta(seconds=10)).isoformat().replace("+00:00", "Z")
         )
 
         pending = await queue.get_pending()
@@ -182,9 +176,7 @@ class TestApprovalStorePersistence:
                 details={},
                 agent_id="agent-1",
                 submitted_at=now.isoformat().replace("+00:00", "Z"),
-                expires_at=(now + timedelta(hours=1))
-                .isoformat()
-                .replace("+00:00", "Z"),
+                expires_at=(now + timedelta(hours=1)).isoformat().replace("+00:00", "Z"),
                 status="pending",
             )
             await store1.save(item)
@@ -213,9 +205,7 @@ class TestApprovalStorePersistence:
             details={},
             agent_id="agent-1",
             submitted_at=past.isoformat().replace("+00:00", "Z"),
-            expires_at=(past + timedelta(seconds=10))
-            .isoformat()
-            .replace("+00:00", "Z"),
+            expires_at=(past + timedelta(seconds=10)).isoformat().replace("+00:00", "Z"),
             status="pending",
         )
         await store.save(item)

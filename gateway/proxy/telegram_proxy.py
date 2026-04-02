@@ -10,6 +10,7 @@ The gateway acts as a man-in-the-middle for Telegram Bot API calls:
 The bot connects to http://gateway:8080/telegram-api/bot<token>/<method>
 instead of https://api.telegram.org/bot<token>/<method>.
 """
+
 from __future__ import annotations
 
 import asyncio
@@ -18,14 +19,14 @@ import ipaddress
 import json
 import logging
 import math
-import re
 import os
+import re
+import ssl
 import time
-import uuid
-import urllib.request
 import urllib.error
 import urllib.parse
-import ssl
+import urllib.request
+import uuid
 from typing import Any, Optional
 from urllib.parse import urlparse
 
@@ -48,9 +49,23 @@ _MEDIA_KEYS = ("document", "video", "audio", "voice", "video_note", "animation",
 
 # Slash-commands that are forbidden for collaborators (owner-only capabilities)
 _COLLABORATOR_BLOCKED_COMMANDS = {
-    "/skill", "/1password", "/op", "/exec", "/run", "/cron",
-    "/ssh", "/admin", "/config", "/secret", "/key", "/token",
-    "/memory", "/reset", "/kill", "/restart", "/update",
+    "/skill",
+    "/1password",
+    "/op",
+    "/exec",
+    "/run",
+    "/cron",
+    "/ssh",
+    "/admin",
+    "/config",
+    "/secret",
+    "/key",
+    "/token",
+    "/memory",
+    "/reset",
+    "/kill",
+    "/restart",
+    "/update",
 }
 _LOCAL_HEALTHCHECK_COMMANDS = {
     "/healthcheck",
@@ -167,7 +182,14 @@ _LOCAL_RMFROMGROUP_COMMANDS = {"/rmfromgroup", "rmfromgroup"}
 _LOCAL_SETMODE_COMMANDS = {"/setmode", "setmode"}
 _LOCAL_DELEGATE_COMMANDS = {"/delegate", "delegate"}
 _LOCAL_DELEGATIONS_COMMANDS = {"/delegations", "delegations"}
-_LOCAL_REVOKE_DELEGATION_COMMANDS = {"/revoke_delegation", "revoke_delegation", "/revoke-delegation", "revoke-delegation", "/revokedelegation", "revokedelegation"}
+_LOCAL_REVOKE_DELEGATION_COMMANDS = {
+    "/revoke_delegation",
+    "revoke_delegation",
+    "/revoke-delegation",
+    "revoke-delegation",
+    "/revokedelegation",
+    "revokedelegation",
+}
 
 # Group management — owner-only
 _LOCAL_NEWGROUP_COMMANDS = {"/newgroup", "newgroup"}
@@ -206,7 +228,9 @@ _PROTECT_PREFIX = "🛡️ Protected by AgentShroud"
 _PROTECT_HEADER = f"{_PROTECT_PREFIX}\n\n"
 _COLLABORATOR_BLOCK_NOTICE = f"{_PROTECT_HEADER}This action is not allowed."
 _COLLABORATOR_UNAVAILABLE_NOTICE = f"{_PROTECT_HEADER}I can't do that right now."
-_COLLABORATOR_FILE_NOTICE = f"{_PROTECT_HEADER}File/system content access is restricted for collaborators."
+_COLLABORATOR_FILE_NOTICE = (
+    f"{_PROTECT_HEADER}File/system content access is restricted for collaborators."
+)
 _COLLABORATOR_SECRET_NOTICE = f"{_PROTECT_HEADER}Sensitive credentials/secrets are restricted."
 _COLLABORATOR_EGRESS_NOTICE = (
     f"{_PROTECT_HEADER}"
@@ -214,8 +238,7 @@ _COLLABORATOR_EGRESS_NOTICE = (
     "This request is owner-gated and available when permitted by the owner."
 )
 _COLLABORATOR_EGRESS_PENDING_NOTICE = (
-    f"{_PROTECT_HEADER}"
-    "This request is owner-gated and available when permitted by the owner."
+    f"{_PROTECT_HEADER}" "This request is owner-gated and available when permitted by the owner."
 )
 _COLLABORATOR_SCOPE_NOTICE = (
     f"{_PROTECT_HEADER}"
@@ -275,15 +298,20 @@ class TelegramAPIProxy:
         }
         # Read token from env var; fall back to Docker secret so gateway container
         # can send local command responses even without TELEGRAM_BOT_TOKEN in env.
-        self._bot_token = (
-            os.environ.get("TELEGRAM_BOT_TOKEN", "")
-            or _read_secret_static("telegram_bot_token")
+        self._bot_token = os.environ.get("TELEGRAM_BOT_TOKEN", "") or _read_secret_static(
+            "telegram_bot_token"
         )
         self._ssl_context = ssl.create_default_context()
         self._max_outbound_chars = int(os.environ.get("AGENTSHROUD_MAX_OUTBOUND_CHARS", "3800"))
-        self._block_cascade_seconds = float(os.environ.get("AGENTSHROUD_BLOCK_CASCADE_SECONDS", "4.0"))
-        self._block_cascade_threshold = int(os.environ.get("AGENTSHROUD_BLOCK_CASCADE_THRESHOLD", "3"))
-        self._block_cascade_window_seconds = float(os.environ.get("AGENTSHROUD_BLOCK_CASCADE_WINDOW_SECONDS", "300.0"))
+        self._block_cascade_seconds = float(
+            os.environ.get("AGENTSHROUD_BLOCK_CASCADE_SECONDS", "4.0")
+        )
+        self._block_cascade_threshold = int(
+            os.environ.get("AGENTSHROUD_BLOCK_CASCADE_THRESHOLD", "3")
+        )
+        self._block_cascade_window_seconds = float(
+            os.environ.get("AGENTSHROUD_BLOCK_CASCADE_WINDOW_SECONDS", "300.0")
+        )
         self._recent_outbound_blocks_until: dict[str, float] = {}
         self._outbound_block_timestamps: dict[str, list[float]] = {}
         self._system_notice_cooldown_seconds = float(
@@ -310,13 +338,10 @@ class TelegramAPIProxy:
         # Group chat at-mention filter: bot reads ALL group messages for context but only
         # responds when @mentioned. Requires TELEGRAM_BOT_USERNAME (without @).
         # Set AGENTSHROUD_GROUP_MENTION_ONLY=0 to respond to every group message.
-        self._bot_username = (
-            os.environ.get("TELEGRAM_BOT_USERNAME", "").strip().lstrip("@").lower()
-        )
-        self._group_mention_only = (
-            os.environ.get("AGENTSHROUD_GROUP_MENTION_ONLY", "1").strip().lower()
-            not in ("0", "false", "no")
-        )
+        self._bot_username = os.environ.get("TELEGRAM_BOT_USERNAME", "").strip().lstrip("@").lower()
+        self._group_mention_only = os.environ.get(
+            "AGENTSHROUD_GROUP_MENTION_ONLY", "1"
+        ).strip().lower() not in ("0", "false", "no")
         # Tracks whether the bot should respond in each group chat. True = @mentioned,
         # False = context only (suppress outbound). Keyed by chat_id (int).
         self._group_response_eligible: dict[int, bool] = {}
@@ -325,6 +350,7 @@ class TelegramAPIProxy:
         # 3 blocks → owner alert; 5 blocks → double rate limit window; 10 → session suspended.
         try:
             from gateway.security.progressive_lockdown import ProgressiveLockdown
+
             self._lockdown = ProgressiveLockdown()
         except Exception:
             self._lockdown = None
@@ -346,6 +372,7 @@ class TelegramAPIProxy:
         # Cache RBAC config to avoid re-instantiating on every message
         try:
             from gateway.security.rbac_config import RBACConfig
+
             self._rbac = RBACConfig()
         except Exception:
             self._rbac = None
@@ -359,6 +386,7 @@ class TelegramAPIProxy:
 
         # Per-user collaborator rate limiter: configurable (default 1000/hour)
         from gateway.ingest_api.auth import RateLimiter
+
         self._collaborator_rate_limit_max_requests = int(
             os.environ.get("AGENTSHROUD_COLLAB_RATE_LIMIT_MAX_REQUESTS", "5000")
         )
@@ -405,6 +433,7 @@ class TelegramAPIProxy:
         )
         try:
             import json as _json
+
             with open(self._display_names_path, "r", encoding="utf-8") as _dnf:
                 self._custom_display_names = _json.load(_dnf)
         except (FileNotFoundError, ValueError):
@@ -494,14 +523,14 @@ class TelegramAPIProxy:
                 return False
             # Immediately unban so the user can rejoin later via invite link
             unban_url = f"{TELEGRAM_API_BASE}/bot{self._bot_token}/unbanChatMember"
-            unban_body = json.dumps({"chat_id": chat_id, "user_id": user_id,
-                                     "only_if_banned": True}).encode()
+            unban_body = json.dumps(
+                {"chat_id": chat_id, "user_id": user_id, "only_if_banned": True}
+            ).encode()
             await self._forward_to_telegram(unban_url, unban_body, "application/json")
             return True
         except Exception as exc:
             logger.debug("Telegram kick error: %s", exc)
         return False
-
 
     def _set_outbound_block_cascade(self, chat_id: str, *, force: bool = False) -> None:
         """Activate per-chat cascade window to prevent streaming-fragment leak-through.
@@ -676,10 +705,12 @@ class TelegramAPIProxy:
             f"Action required: approve or deny below."
         )
         _keyboard = {
-            "inline_keyboard": [[
-                {"text": "✅ Approve", "callback_data": f"collab_approve_{user_id}"},
-                {"text": "❌ Deny", "callback_data": f"collab_deny_{user_id}"},
-            ]]
+            "inline_keyboard": [
+                [
+                    {"text": "✅ Approve", "callback_data": f"collab_approve_{user_id}"},
+                    {"text": "❌ Deny", "callback_data": f"collab_deny_{user_id}"},
+                ]
+            ]
         }
         sent = await self._send_telegram_with_keyboard(int(owner_id), _notif_text, _keyboard)
         if not sent:
@@ -799,9 +830,9 @@ class TelegramAPIProxy:
     def _sanitize_reason(reason: str) -> str:
         """Strip internal paths and module names from block reasons before user display."""
         # Remove Python module paths (gateway.security.module_name patterns)
-        sanitized = re.sub(r'gateway\.[a-z_.]+', '[internal]', reason)
+        sanitized = re.sub(r"gateway\.[a-z_.]+", "[internal]", reason)
         # Remove absolute file paths (/app/..., /home/..., /usr/...)
-        sanitized = re.sub(r'/[a-z][a-zA-Z0-9/_.-]+\.py(?:\s+line\s+\d+)?', '', sanitized)
+        sanitized = re.sub(r"/[a-z][a-zA-Z0-9/_.-]+\.py(?:\s+line\s+\d+)?", "", sanitized)
         return sanitized.strip()
 
     @staticmethod
@@ -810,8 +841,15 @@ class TelegramAPIProxy:
         if not isinstance(text, str):
             return False
         lowered = normalize_input(text).lower()
-        internal_file_markers = ("bootstrap.md", "identity.md", "memory.md", "skill.md",
-                               "soul.md", "heartbeat.md", "agents.md")
+        internal_file_markers = (
+            "bootstrap.md",
+            "identity.md",
+            "memory.md",
+            "skill.md",
+            "soul.md",
+            "heartbeat.md",
+            "agents.md",
+        )
         content_request_markers = (
             "show",
             "read",
@@ -844,10 +882,15 @@ class TelegramAPIProxy:
         mixed_bootstrap_identity_probe = (
             "bootstrap.md" in lowered
             and "identity.md" in lowered
-            and any(token in lowered for token in ("what are those", "what are they", "what are these"))
+            and any(
+                token in lowered for token in ("what are those", "what are they", "what are these")
+            )
         )
         if (
-            any(token in lowered for token in ("show me", "contents", "read", "open", "cat", "print", "dump"))
+            any(
+                token in lowered
+                for token in ("show me", "contents", "read", "open", "cat", "print", "dump")
+            )
             and not mixed_bootstrap_identity_probe
         ):
             return False
@@ -1035,7 +1078,9 @@ class TelegramAPIProxy:
         if not isinstance(text, str):
             return False
         lowered = normalize_input(text).lower()
-        if not any(token in lowered for token in ("base64", "hex", "decode", "deobfuscate", "unescape")):
+        if not any(
+            token in lowered for token in ("base64", "hex", "decode", "deobfuscate", "unescape")
+        ):
             return False
         command_markers = (
             "bash",
@@ -1051,9 +1096,8 @@ class TelegramAPIProxy:
             "chown",
         )
         execution_markers = ("run", "execute", "launch", "invoke", "then run", "pipe to shell")
-        return (
-            any(marker in lowered for marker in command_markers)
-            and any(marker in lowered for marker in execution_markers)
+        return any(marker in lowered for marker in command_markers) and any(
+            marker in lowered for marker in execution_markers
         )
 
     @staticmethod
@@ -1072,7 +1116,8 @@ class TelegramAPIProxy:
         if any(re.search(pat, lowered) for pat in patterns):
             return True
         if "appropriately blocked" in lowered and any(
-            token in lowered for token in ("command", "commands", "tool", "tools", "capability", "capabilities")
+            token in lowered
+            for token in ("command", "commands", "tool", "tools", "capability", "capabilities")
         ):
             return True
         return False
@@ -1085,8 +1130,12 @@ class TelegramAPIProxy:
         lowered = normalize_input(text).lower()
         has_bare_domain = bool(re.search(r"\b[a-z0-9.-]+\.[a-z]{2,}\b", lowered))
         has_url = any(token in lowered for token in ("http://", "https://", "www."))
-        asks_policy = any(token in lowered for token in ("blocked", "approval", "policy", "allowed", "permission"))
-        asks_why_how = any(token in lowered for token in ("how", "what", "why", "explain", "workflow", "process"))
+        asks_policy = any(
+            token in lowered for token in ("blocked", "approval", "policy", "allowed", "permission")
+        )
+        asks_why_how = any(
+            token in lowered for token in ("how", "what", "why", "explain", "workflow", "process")
+        )
         has_imperative = any(
             token in lowered
             for token in ("check ", "fetch ", "open ", "browse ", "go to ", "look up ", "visit ")
@@ -1094,16 +1143,14 @@ class TelegramAPIProxy:
         if (
             not has_url
             and asks_why_how
-            and any(token in lowered for token in ("external api", "egress", "approval", "network access", "web access"))
+            and any(
+                token in lowered
+                for token in ("external api", "egress", "approval", "network access", "web access")
+            )
         ):
             # Conceptual policy/design question, not an execution/fetch request.
             return False
-        if (
-            (has_url or has_bare_domain)
-            and asks_why_how
-            and asks_policy
-            and not has_imperative
-        ):
+        if (has_url or has_bare_domain) and asks_why_how and asks_policy and not has_imperative:
             # Conceptual question that references a URL as an example.
             return False
         if re.search(r"https?://|www\.", lowered):
@@ -1261,18 +1308,28 @@ class TelegramAPIProxy:
             return False
         lowered = normalize_input(text).lower()
         # Greetings are always safe — no interrogative required.
-        if re.match(r"^\s*(hello|hi|hey|good\s+morning|good\s+afternoon|good\s+evening|howdy)\b", lowered):
+        if re.match(
+            r"^\s*(hello|hi|hey|good\s+morning|good\s+afternoon|good\s+evening|howdy)\b", lowered
+        ):
             return True
         # Common conversational identity/capability questions are always safe.
-        if re.search(r"\b(who are you|what do you do|what can you do|tell me about yourself|what does .{1,40} mean|owner.gated|owner gated)\b", lowered):
+        if re.search(
+            r"\b(who are you|what do you do|what can you do|tell me about yourself|what does .{1,40} mean|owner.gated|owner gated)\b",
+            lowered,
+        ):
             return True
-        if not any(ch in lowered for ch in ("?", "how", "what", "why", "can you explain", "walk me through")):
+        if not any(
+            ch in lowered
+            for ch in ("?", "how", "what", "why", "can you explain", "walk me through")
+        ):
             return False
         if TelegramAPIProxy._looks_like_file_query(lowered):
             return False
         if TelegramAPIProxy._looks_like_command_enumeration_query(lowered):
             return False
-        if re.search(r"\b(create|write|edit|delete|execute|open|cat|grep|find|ls|fetch)\b", lowered):
+        if re.search(
+            r"\b(create|write|edit|delete|execute|open|cat|grep|find|ls|fetch)\b", lowered
+        ):
             return False
         if re.search(r"\brun\b(?!\s+on\b)", lowered):
             return False
@@ -1453,7 +1510,12 @@ class TelegramAPIProxy:
         # questions (e.g., "what is the credential isolation policy").
         if any(marker in lowered for marker in value_markers):
             return True
-        return bool(re.search(r"\b(show|reveal|display|print|give|share)\b.{0,32}\b(api key|token|password|secret|credential)\b", lowered))
+        return bool(
+            re.search(
+                r"\b(show|reveal|display|print|give|share)\b.{0,32}\b(api key|token|password|secret|credential)\b",
+                lowered,
+            )
+        )
 
     @staticmethod
     def _looks_like_env_secret_probe(text: str) -> bool:
@@ -1476,7 +1538,16 @@ class TelegramAPIProxy:
         )
         if not any(marker in lowered for marker in env_markers):
             return False
-        request_markers = ("show", "list", "print", "dump", "display", "reveal", "what are", "return")
+        request_markers = (
+            "show",
+            "list",
+            "print",
+            "dump",
+            "display",
+            "reveal",
+            "what are",
+            "return",
+        )
         return any(marker in lowered for marker in request_markers)
 
     @staticmethod
@@ -1485,8 +1556,18 @@ class TelegramAPIProxy:
         if not isinstance(text, str):
             return False
         lowered = normalize_input(text).lower()
-        target_markers = ("bootstrap.md", "identity.md", "memory.md", "soul.md",
-                          "heartbeat.md", "agents.md", ".env", "secret", "token", "credential")
+        target_markers = (
+            "bootstrap.md",
+            "identity.md",
+            "memory.md",
+            "soul.md",
+            "heartbeat.md",
+            "agents.md",
+            ".env",
+            "secret",
+            "token",
+            "credential",
+        )
         if not any(marker in lowered for marker in target_markers):
             return False
         chunk_markers = (
@@ -1583,8 +1664,17 @@ class TelegramAPIProxy:
             return False
         lowered = normalize_input(text).lower()
         archive_markers = ("zip", "tar", "tar.gz", "archive", "bundle", "pack")
-        target_markers = ("workspace", "bootstrap.md", "identity.md", "memory.md",
-                          "soul.md", "heartbeat.md", "agents.md", "all files", "project files")
+        target_markers = (
+            "workspace",
+            "bootstrap.md",
+            "identity.md",
+            "memory.md",
+            "soul.md",
+            "heartbeat.md",
+            "agents.md",
+            "all files",
+            "project files",
+        )
         request_markers = ("export", "download", "send", "create", "make", "build", "package")
         return (
             any(marker in lowered for marker in archive_markers)
@@ -1621,7 +1711,14 @@ class TelegramAPIProxy:
             return False
         lowered = normalize_input(text).lower()
         # Conceptual/diagnostic questions about schedules are not execution requests.
-        conceptual_markers = ("how does", "what is", "do you have", "tell me about", "is there a", "are there any")
+        conceptual_markers = (
+            "how does",
+            "what is",
+            "do you have",
+            "tell me about",
+            "is there a",
+            "are there any",
+        )
         if any(marker in lowered for marker in conceptual_markers):
             return False
         schedule_markers = (
@@ -1637,7 +1734,15 @@ class TelegramAPIProxy:
         if not any(marker in lowered for marker in schedule_markers):
             return False
         # Use word-boundary matching for "run" so "running" doesn't trigger a false positive.
-        action_markers_re = (r"\brun\b", r"\bexecute\b", r"\bstart\b", r"\btrigger\b", r"\bcreate\b", r"\bset up\b", r"\bconfigure\b")
+        action_markers_re = (
+            r"\brun\b",
+            r"\bexecute\b",
+            r"\bstart\b",
+            r"\btrigger\b",
+            r"\bcreate\b",
+            r"\bset up\b",
+            r"\bconfigure\b",
+        )
         return any(re.search(pat, lowered) for pat in action_markers_re)
 
     @staticmethod
@@ -1667,7 +1772,14 @@ class TelegramAPIProxy:
         if not isinstance(text, str):
             return False
         lowered = normalize_input(text).lower()
-        conceptual_markers = ("how should", "how does", "what is", "best practice", "approval", "governed")
+        conceptual_markers = (
+            "how should",
+            "how does",
+            "what is",
+            "best practice",
+            "approval",
+            "governed",
+        )
         if any(marker in lowered for marker in conceptual_markers):
             return False
         action_markers = (
@@ -1762,7 +1874,10 @@ class TelegramAPIProxy:
         if not isinstance(text, str):
             return False
         lowered = normalize_input(text).lower()
-        if not any(token in lowered for token in ("egress_", "callback data", "approval token", "request id", "rid")):
+        if not any(
+            token in lowered
+            for token in ("egress_", "callback data", "approval token", "request id", "rid")
+        ):
             return False
         return any(
             token in lowered
@@ -1894,7 +2009,16 @@ class TelegramAPIProxy:
         )
         if not any(marker in lowered for marker in target_markers):
             return False
-        request_markers = ("show", "print", "dump", "reveal", "display", "return", "give me", "share")
+        request_markers = (
+            "show",
+            "print",
+            "dump",
+            "reveal",
+            "display",
+            "return",
+            "give me",
+            "share",
+        )
         return any(marker in lowered for marker in request_markers)
 
     @staticmethod
@@ -1903,29 +2027,69 @@ class TelegramAPIProxy:
         lowered = normalize_input(reason or "").lower()
         if any(
             token in lowered
-            for token in ("metadata-endpoint", "imds", "secret-access", "credential", "secret", "token", "password", "key")
+            for token in (
+                "metadata-endpoint",
+                "imds",
+                "secret-access",
+                "credential",
+                "secret",
+                "token",
+                "password",
+                "key",
+            )
         ):
             return _COLLABORATOR_SECRET_NOTICE
         if any(
             token in lowered
-            for token in ("outbound policy block", "outbound block", "blocked outbound", "blocked response", "pipeline blocked")
+            for token in (
+                "outbound policy block",
+                "outbound block",
+                "blocked outbound",
+                "blocked response",
+                "pipeline blocked",
+            )
         ):
             return _COLLABORATOR_UNAVAILABLE_NOTICE
         if any(
             token in lowered
-            for token in ("internal-network", "ssrf", "localhost", "egress", "domain", "network", "url", "web")
+            for token in (
+                "internal-network",
+                "ssrf",
+                "localhost",
+                "egress",
+                "domain",
+                "network",
+                "url",
+                "web",
+            )
         ):
             return _COLLABORATOR_EGRESS_NOTICE
         if any(
             token in lowered
-            for token in ("obfuscated-command", "execution-request", "tool", "command", "capability", "permissions", "blocked command")
+            for token in (
+                "obfuscated-command",
+                "execution-request",
+                "tool",
+                "command",
+                "capability",
+                "permissions",
+                "blocked command",
+            )
         ):
             return _COLLABORATOR_SCOPE_NOTICE
         if any(token in lowered for token in ("file", "workspace", ".md", "path", "directory")):
             return _COLLABORATOR_FILE_NOTICE
         if any(
             token in lowered
-            for token in ("timeout", "unavailable", "processing", "no_reply", "runtime", "failed", "error")
+            for token in (
+                "timeout",
+                "unavailable",
+                "processing",
+                "no_reply",
+                "runtime",
+                "failed",
+                "error",
+            )
         ):
             return _COLLABORATOR_UNAVAILABLE_NOTICE
         return _COLLABORATOR_BLOCK_NOTICE
@@ -1934,7 +2098,9 @@ class TelegramAPIProxy:
     def _build_collaborator_safe_info_response(prompt: str) -> str:
         """Build informative but non-sensitive response for collaborator conceptual questions."""
         lowered = normalize_input(prompt or "").lower()
-        if re.match(r"^\s*(hello|hi|hey|good\s+morning|good\s+afternoon|good\s+evening|howdy)\b", lowered):
+        if re.match(
+            r"^\s*(hello|hi|hey|good\s+morning|good\s+afternoon|good\s+evening|howdy)\b", lowered
+        ):
             return (
                 f"{_PROTECT_HEADER}"
                 "Hello! I'm the AgentShroud assistant operating in collaborator mode.\n"
@@ -1959,7 +2125,19 @@ class TelegramAPIProxy:
                 "• Security/configuration changes require authorized admin approval.\n"
                 "• I can explain policy intent and propose safe change-request language."
             )
-        if any(token in lowered for token in ("get processed", "message processed", "processed before", "how are messages", "message pipeline", "message flow", "before you answer", "before answering")):
+        if any(
+            token in lowered
+            for token in (
+                "get processed",
+                "message processed",
+                "processed before",
+                "how are messages",
+                "message pipeline",
+                "message flow",
+                "before you answer",
+                "before answering",
+            )
+        ):
             return (
                 "Message processing overview:\n"
                 "• Your message passes through identity and policy checks before routing.\n"
@@ -1967,8 +2145,31 @@ class TelegramAPIProxy:
                 "• Outputs are safety-checked before delivery to prevent unintended disclosure.\n"
                 "• I respond based on scoped context — no owner-private files or operational details."
             )
-        if any(token in lowered for token in ("authentication", "credential", "api key", "secret", "password", "raw values", "placeholders")):
-            if any(token in lowered for token in ("flow", "how", "intermediary", "handles", "brokered", "integrate", "integration", "work")):
+        if any(
+            token in lowered
+            for token in (
+                "authentication",
+                "credential",
+                "api key",
+                "secret",
+                "password",
+                "raw values",
+                "placeholders",
+            )
+        ):
+            if any(
+                token in lowered
+                for token in (
+                    "flow",
+                    "how",
+                    "intermediary",
+                    "handles",
+                    "brokered",
+                    "integrate",
+                    "integration",
+                    "work",
+                )
+            ):
                 return (
                     "Authentication in this workspace:\n"
                     "• Credentials are managed server-side — I don't hold raw API keys or tokens in active context.\n"
@@ -1983,7 +2184,18 @@ class TelegramAPIProxy:
                 "• Sensitive operations require policy checks and authorization.\n"
                 "• If authorized, I can help with integration patterns and least-privilege recommendations."
             )
-        if any(token in lowered for token in ("security setup", "architecture", "filters messages", "how does this work", "security model", "security approach", "protection")):
+        if any(
+            token in lowered
+            for token in (
+                "security setup",
+                "architecture",
+                "filters messages",
+                "how does this work",
+                "security model",
+                "security approach",
+                "protection",
+            )
+        ):
             return (
                 f"{_PROTECT_HEADER}"
                 "Secure architecture overview:\n"
@@ -2000,7 +2212,18 @@ class TelegramAPIProxy:
                 "• Security controls enforce trusted boundaries and approved communication paths.\n"
                 "• I can provide high-level architecture guidance without exposing sensitive implementation details."
             )
-        if any(token in lowered for token in ("tool", "command", "capability", "permissions", "what can you", "help with", "collaboration")):
+        if any(
+            token in lowered
+            for token in (
+                "tool",
+                "command",
+                "capability",
+                "permissions",
+                "what can you",
+                "help with",
+                "collaboration",
+            )
+        ):
             return (
                 f"{_PROTECT_HEADER}"
                 "Collaborator capability overview:\n"
@@ -2009,7 +2232,21 @@ class TelegramAPIProxy:
                 "• Direct file content access and secret/credential retrieval are restricted.\n"
                 "• External/network actions require explicit owner approval before execution."
             )
-        if any(token in lowered for token in ("dns lookup", "dns query", "dns resolve", "dns check", "ping", "icmp", "connectivity probe", "connectivity check", "udp probe", "network probe")):
+        if any(
+            token in lowered
+            for token in (
+                "dns lookup",
+                "dns query",
+                "dns resolve",
+                "dns check",
+                "ping",
+                "icmp",
+                "connectivity probe",
+                "connectivity check",
+                "udp probe",
+                "network probe",
+            )
+        ):
             return (
                 f"{_PROTECT_HEADER}"
                 "Network probe policy:\n"
@@ -2026,7 +2263,19 @@ class TelegramAPIProxy:
                 "• Approval decisions are enforced before execution.\n"
                 "• I can help draft safe request criteria and risk-aware justification."
             )
-        if any(token in lowered for token in ("too risky", "risky for me", "system react", "how does the system", "considered risky", "considered dangerous", "action risk", "risky action")):
+        if any(
+            token in lowered
+            for token in (
+                "too risky",
+                "risky for me",
+                "system react",
+                "how does the system",
+                "considered risky",
+                "considered dangerous",
+                "action risk",
+                "risky action",
+            )
+        ):
             return (
                 "Action risk guidance:\n"
                 "• Actions requiring confirmation: external network requests, file writes, destructive operations.\n"
@@ -2034,11 +2283,21 @@ class TelegramAPIProxy:
                 "• The system explains what it can't do and why — there are no silent failures.\n"
                 "• The gateway enforces hard limits regardless of how a request is phrased."
             )
-        if any(token in lowered for token in (
-            "owner versus", "owner vs", "came from the owner", "came from owner",
-            "tell whether", "tell if", "owner or collaborator", "collaborator or owner",
-            "how does that affect", "how does it affect",
-        )):
+        if any(
+            token in lowered
+            for token in (
+                "owner versus",
+                "owner vs",
+                "came from the owner",
+                "came from owner",
+                "tell whether",
+                "tell if",
+                "owner or collaborator",
+                "collaborator or owner",
+                "how does that affect",
+                "how does it affect",
+            )
+        ):
             return (
                 "Yes — all messages are identified by sender and assigned a trust level.\n"
                 "• Owner messages have full operational access to tools, files, and external services.\n"
@@ -2054,7 +2313,10 @@ class TelegramAPIProxy:
                 "• Credential and secret retrieval is fully restricted in collaborator mode.\n"
                 "• I can explain what types of requests are gated and why, without exposing policy internals."
             )
-        if any(token in lowered for token in ("credit card", "pii", "personal info", "sanitiz", "what would you see")):
+        if any(
+            token in lowered
+            for token in ("credit card", "pii", "personal info", "sanitiz", "what would you see")
+        ):
             return (
                 f"{_PROTECT_HEADER}"
                 "Input privacy notice:\n"
@@ -2063,7 +2325,9 @@ class TelegramAPIProxy:
                 "• Sensitive values such as credentials or personal data are redacted or flagged before forwarding.\n"
                 "• I receive sanitized content — I do not see raw credential values or un-sanitized personal data."
             )
-        if any(token in lowered for token in ("formatting trick", "spaces or dashes", "bypass sanitiz")):
+        if any(
+            token in lowered for token in ("formatting trick", "spaces or dashes", "bypass sanitiz")
+        ):
             return (
                 f"{_PROTECT_HEADER}"
                 "Input handling notice:\n"
@@ -2092,8 +2356,10 @@ class TelegramAPIProxy:
                 "• I cannot disclose other users' status, files, or conversation details.\n"
                 "• If authorized, I can help with shared process guidance without exposing user-specific data."
             )
-        if any(token in lowered for token in ("bootstrap.md", "identity.md", "soul.md",
-                                              "heartbeat.md", "agents.md")):
+        if any(
+            token in lowered
+            for token in ("bootstrap.md", "identity.md", "soul.md", "heartbeat.md", "agents.md")
+        ):
             return (
                 f"{_PROTECT_HEADER}"
                 "File access policy guidance:\n"
@@ -2102,7 +2368,20 @@ class TelegramAPIProxy:
                 "• Collaborators cannot access raw file contents or direct file reads.\n"
                 "• I can provide high-level onboarding and role guidance without exposing file data."
             )
-        if any(token in lowered for token in ("stream through", "still stream", "chunks", "chunked", "partial leak", "partial content", "partial response", "blocked answer", "too long to")):
+        if any(
+            token in lowered
+            for token in (
+                "stream through",
+                "still stream",
+                "chunks",
+                "chunked",
+                "partial leak",
+                "partial content",
+                "partial response",
+                "blocked answer",
+                "too long to",
+            )
+        ):
             return (
                 f"{_PROTECT_HEADER}"
                 "Output delivery policy:\n"
@@ -2144,9 +2423,21 @@ class TelegramAPIProxy:
         fn_match = re.search(sensitive_filenames, normalized)
         if fn_match:
             denial_markers = (
-                "cannot", "can't", "not allowed", "restricted", "blocked", "denied",
-                "do not", "won't", "unable", "not able", "not permitted", "access denied",
-                "i'm not", "i am not", "not authorized",
+                "cannot",
+                "can't",
+                "not allowed",
+                "restricted",
+                "blocked",
+                "denied",
+                "do not",
+                "won't",
+                "unable",
+                "not able",
+                "not permitted",
+                "access denied",
+                "i'm not",
+                "i am not",
+                "not authorized",
             )
             fn_start = fn_match.start()
             # Only consider denial safe if a denial marker appears within 120 chars of the filename
@@ -2232,7 +2523,9 @@ class TelegramAPIProxy:
             return None
         name = parsed.get("name")
         arguments = parsed.get("arguments")
-        if isinstance(name, str) and isinstance(arguments, (dict, list, str, int, float, bool, type(None))):
+        if isinstance(name, str) and isinstance(
+            arguments, (dict, list, str, int, float, bool, type(None))
+        ):
             return parsed
         return None
 
@@ -2306,10 +2599,36 @@ class TelegramAPIProxy:
         if "." in head:
             tld = head.rsplit(".", 1)[-1].lower()
             if tld in {
-                "md", "txt", "json", "yaml", "yml", "toml", "ini",
-                "py", "js", "ts", "tsx", "jsx", "sh", "bash", "zsh",
-                "csv", "log", "pdf", "png", "jpg", "jpeg", "gif", "svg",
-                "sql", "db", "sqlite", "env", "conf", "cfg", "lock",
+                "md",
+                "txt",
+                "json",
+                "yaml",
+                "yml",
+                "toml",
+                "ini",
+                "py",
+                "js",
+                "ts",
+                "tsx",
+                "jsx",
+                "sh",
+                "bash",
+                "zsh",
+                "csv",
+                "log",
+                "pdf",
+                "png",
+                "jpg",
+                "jpeg",
+                "gif",
+                "svg",
+                "sql",
+                "db",
+                "sqlite",
+                "env",
+                "conf",
+                "cfg",
+                "lock",
             }:
                 return None
         return f"https://{candidate}"
@@ -2393,14 +2712,19 @@ class TelegramAPIProxy:
             if self._suppress_duplicate_system_notice(body, content_type):
                 return {"ok": True, "result": {"suppressed": True, "method": method}}
 
-        if not is_system and method in (
-            "sendMessage",
-            "editMessageText",
-            "sendPhoto",
-            "sendDocument",
-            "copyMessage",
-            "forwardMessage",
-        ) and body:
+        if (
+            not is_system
+            and method
+            in (
+                "sendMessage",
+                "editMessageText",
+                "sendPhoto",
+                "sendDocument",
+                "copyMessage",
+                "forwardMessage",
+            )
+            and body
+        ):
             body = await self._filter_outbound(body, content_type)
             if self._is_suppressed_outbound_payload(body, content_type):
                 return {"ok": True, "result": {"suppressed": True, "method": method}}
@@ -2414,6 +2738,7 @@ class TelegramAPIProxy:
                 if _collab_uid:
                     _response_text = _outbound_data.get("text", "")
                     from gateway.ingest_api.state import app_state as _app_state
+
                     _tracker = getattr(_app_state, "collaborator_tracker", None)
                     if _tracker:
                         _corr_pair = self._last_inbound_corr.get(_out_chat_id)
@@ -2438,8 +2763,15 @@ class TelegramAPIProxy:
             not is_system
             and self._group_mention_only
             and self._bot_username
-            and method in ("sendMessage", "editMessageText", "sendPhoto",
-                           "sendDocument", "copyMessage", "forwardMessage")
+            and method
+            in (
+                "sendMessage",
+                "editMessageText",
+                "sendPhoto",
+                "sendDocument",
+                "copyMessage",
+                "forwardMessage",
+            )
             and body
         ):
             try:
@@ -2451,7 +2783,8 @@ class TelegramAPIProxy:
                     if _cid < 0 and not self._group_response_eligible.get(_cid, True):
                         logger.debug(
                             "Group outbound suppressed (context-only mode): chat_id=%s method=%s",
-                            _cid, method,
+                            _cid,
+                            method,
                         )
                         return {"ok": True, "result": {"suppressed": True, "method": method}}
             except Exception as _gge:
@@ -2556,7 +2889,9 @@ class TelegramAPIProxy:
                 )
 
                 # Guardrail: never leak raw tool-call JSON blobs to Telegram users.
-                parsed_tool_call = self._parse_tool_call_json(text) if isinstance(text, str) else None
+                parsed_tool_call = (
+                    self._parse_tool_call_json(text) if isinstance(text, str) else None
+                )
                 embedded_tool_call = (
                     self._extract_embedded_tool_call_json(text) if isinstance(text, str) else None
                 )
@@ -2571,9 +2906,15 @@ class TelegramAPIProxy:
                             self._stats["outbound_filtered"] += 1
                             return json.dumps(data).encode()
                         tool_name = str(parsed_tool_call.get("name", "")).strip()
-                        tool_args = parsed_tool_call.get("arguments") if isinstance(parsed_tool_call.get("arguments"), dict) else {}
+                        tool_args = (
+                            parsed_tool_call.get("arguments")
+                            if isinstance(parsed_tool_call.get("arguments"), dict)
+                            else {}
+                        )
                         if tool_name == "web_fetch":
-                            approval_queued = await self._trigger_web_fetch_approval(chat_id, tool_args)
+                            approval_queued = await self._trigger_web_fetch_approval(
+                                chat_id, tool_args
+                            )
                             if approval_queued:
                                 cleaned = (
                                     f"{cleaned}\n\n"
@@ -2584,7 +2925,11 @@ class TelegramAPIProxy:
                         return json.dumps(data).encode()
                 if parsed_tool_call is not None:
                     tool_name = str(parsed_tool_call.get("name", "")).strip()
-                    tool_args = parsed_tool_call.get("arguments") if isinstance(parsed_tool_call.get("arguments"), dict) else {}
+                    tool_args = (
+                        parsed_tool_call.get("arguments")
+                        if isinstance(parsed_tool_call.get("arguments"), dict)
+                        else {}
+                    )
                     self._stats["outbound_filtered"] += 1
                     if tool_name.upper() == "NO_REPLY":
                         data[text_key] = (
@@ -2592,7 +2937,10 @@ class TelegramAPIProxy:
                             if not is_owner_chat
                             else "⏳ Agent is still processing a previous request. Please wait 10–20 seconds and retry."
                         )
-                    elif tool_name == "sessions_spawn" and str(tool_args.get("agentId", "")) == "acp.healthcheck":
+                    elif (
+                        tool_name == "sessions_spawn"
+                        and str(tool_args.get("agentId", "")) == "acp.healthcheck"
+                    ):
                         data[text_key] = (
                             self._collaborator_safe_notice("restricted command")
                             if not is_owner_chat
@@ -2603,13 +2951,14 @@ class TelegramAPIProxy:
                         if not is_owner_chat:
                             data[text_key] = (
                                 _COLLABORATOR_EGRESS_NOTICE
-                                if approval_queued else self._collaborator_safe_notice("web access unavailable")
+                                if approval_queued
+                                else self._collaborator_safe_notice("web access unavailable")
                             )
                         else:
                             approval_note = (
                                 " Approval request queued for this destination."
-                                if approval_queued else
-                                ""
+                                if approval_queued
+                                else ""
                             )
                             data[text_key] = (
                                 "🌐 Web fetch requested, but this model returned raw tool JSON instead of executing it. "
@@ -2652,7 +3001,10 @@ class TelegramAPIProxy:
                 if (
                     not is_owner_chat
                     and isinstance(text, str)
-                    and normalize_input(text).strip().lower().startswith("⚠️ agent failed before reply:")
+                    and normalize_input(text)
+                    .strip()
+                    .lower()
+                    .startswith("⚠️ agent failed before reply:")
                 ):
                     self._stats["outbound_filtered"] += 1
                     data[text_key] = self._collaborator_safe_notice("runtime unavailable")
@@ -2687,7 +3039,10 @@ class TelegramAPIProxy:
                 if (
                     not is_owner_chat
                     and isinstance(text, str)
-                    and ("security monitoring active at" in text.lower() and "threshold" in text.lower())
+                    and (
+                        "security monitoring active at" in text.lower()
+                        and "threshold" in text.lower()
+                    )
                 ):
                     self._stats["outbound_filtered"] += 1
                     data[text_key] = self._collaborator_safe_notice("policy block")
@@ -2708,10 +3063,12 @@ class TelegramAPIProxy:
                     self._stats["outbound_filtered"] += 1
                     _owner_id_str = str(getattr(self._rbac, "owner_user_id", "")).strip()
                     if _owner_id_str:
-                        asyncio.create_task(self._send_owner_admin_notice(
-                            int(_owner_id_str),
-                            "🔔 *Egress Approval Triggered*\n\nA collaborator interaction generated an egress approval request. Check /pending to review.",
-                        ))
+                        asyncio.create_task(
+                            self._send_owner_admin_notice(
+                                int(_owner_id_str),
+                                "🔔 *Egress Approval Triggered*\n\nA collaborator interaction generated an egress approval request. Check /pending to review.",
+                            )
+                        )
                     data[text_key] = _COLLABORATOR_EGRESS_NOTICE
                     return json.dumps(data).encode()
                 if (
@@ -2743,11 +3100,19 @@ class TelegramAPIProxy:
                             text,
                             flags=re.IGNORECASE,
                         ).strip()
-                        data[text_key] = redacted if redacted else self._collaborator_safe_notice("redacted protected content")
-                        text = data[text_key]  # update local ref so sanitizer sees the redacted text
+                        data[text_key] = (
+                            redacted
+                            if redacted
+                            else self._collaborator_safe_notice("redacted protected content")
+                        )
+                        text = data[
+                            text_key
+                        ]  # update local ref so sanitizer sees the redacted text
                 if isinstance(text, str) and "does not support tools" in text.lower():
                     self._stats["outbound_filtered"] += 1
-                    data[text_key] = "⚠️ Current local model does not support tool calls. Use scripts/switch_model.sh local qwen3:14b (or a tools-capable model)."
+                    data[text_key] = (
+                        "⚠️ Current local model does not support tool calls. Use scripts/switch_model.sh local qwen3:14b (or a tools-capable model)."
+                    )
                     return json.dumps(data).encode()
                 if isinstance(text, str) and "ollama requires authentication" in text.lower():
                     self._stats["outbound_filtered"] += 1
@@ -2763,7 +3128,9 @@ class TelegramAPIProxy:
                         "(local qwen3:14b or cloud gemini/openai)."
                     )
                     return json.dumps(data).encode()
-                rewritten_runtime_error = self._rewrite_known_runtime_errors(text) if isinstance(text, str) else None
+                rewritten_runtime_error = (
+                    self._rewrite_known_runtime_errors(text) if isinstance(text, str) else None
+                )
                 if rewritten_runtime_error:
                     self._stats["outbound_filtered"] += 1
                     if not is_owner_chat and "switch_model.sh" in rewritten_runtime_error.lower():
@@ -2783,7 +3150,11 @@ class TelegramAPIProxy:
                 # Prevent Telegram HTML parse errors caused by redaction placeholders
                 # like <EMAIL_ADDRESS> / <PHONE_NUMBER> in sanitized output.
                 parse_mode = str(data.get("parse_mode", "")).upper()
-                if parse_mode == "HTML" and not is_owner_chat and isinstance(data.get(text_key), str):
+                if (
+                    parse_mode == "HTML"
+                    and not is_owner_chat
+                    and isinstance(data.get(text_key), str)
+                ):
                     # Collaborator UX/safety: never render model-provided HTML markup
                     # (e.g., <code> blocks) that can expose code-like snippets.
                     cleaned = self._strip_collaborator_html_markup(data[text_key])
@@ -2810,12 +3181,7 @@ class TelegramAPIProxy:
                         self._stats["outbound_filtered"] += 1
                         return json.dumps(data).encode()
 
-                if (
-                    text
-                    and chat_id
-                    and not is_owner_chat
-                    and len(text) > self._max_outbound_chars
-                ):
+                if text and chat_id and not is_owner_chat and len(text) > self._max_outbound_chars:
                     self._quarantine_outbound_block(
                         chat_id=chat_id,
                         text=text or "",
@@ -2843,11 +3209,14 @@ class TelegramAPIProxy:
                         self._quarantine_outbound_block(
                             chat_id=chat_id,
                             text=text or "",
-                            reason=pipeline_result.block_reason or "Pipeline blocked outbound response",
+                            reason=pipeline_result.block_reason
+                            or "Pipeline blocked outbound response",
                             source="telegram_outbound_pipeline_block",
                         )
                         data["text"] = (
-                            self._collaborator_safe_notice(pipeline_result.block_reason or "outbound policy block")
+                            self._collaborator_safe_notice(
+                                pipeline_result.block_reason or "outbound policy block"
+                            )
                             if not is_owner_chat
                             else _PROTECTED_POLICY_NOTICE
                         )
@@ -2855,7 +3224,8 @@ class TelegramAPIProxy:
                         self._set_outbound_block_cascade(chat_id)
                         logger.warning(
                             "Outbound message blocked by pipeline: chat_id=%s reason=%s",
-                            chat_id, pipeline_result.block_reason,
+                            chat_id,
+                            pipeline_result.block_reason,
                         )
                     elif (
                         chat_id
@@ -2891,7 +3261,11 @@ class TelegramAPIProxy:
                     if pii_result.entity_types_found:
                         data["text"] = pii_result.sanitized_content
                         self._stats["outbound_filtered"] += 1
-                        logger.info("Outbound message: PII redacted: chat_id=%s types=%s", chat_id, pii_result.entity_types_found)
+                        logger.info(
+                            "Outbound message: PII redacted: chat_id=%s types=%s",
+                            chat_id,
+                            pii_result.entity_types_found,
+                        )
                     # 2. XML leak filter
                     filtered, was_filtered = self.sanitizer.filter_xml_blocks(data["text"])
                     if was_filtered:
@@ -2938,7 +3312,9 @@ class TelegramAPIProxy:
                 chat_id = str(data.get("chat_id", ""))
                 is_owner_chat = self._is_owner_chat(chat_id)
 
-                parsed_tool_call = self._parse_tool_call_json(text) if isinstance(text, str) else None
+                parsed_tool_call = (
+                    self._parse_tool_call_json(text) if isinstance(text, str) else None
+                )
                 embedded_tool_call = (
                     self._extract_embedded_tool_call_json(text) if isinstance(text, str) else None
                 )
@@ -2953,9 +3329,15 @@ class TelegramAPIProxy:
                             self._stats["outbound_filtered"] += 1
                             return urllib.parse.urlencode(data).encode()
                         tool_name = str(parsed_tool_call.get("name", "")).strip()
-                        tool_args = parsed_tool_call.get("arguments") if isinstance(parsed_tool_call.get("arguments"), dict) else {}
+                        tool_args = (
+                            parsed_tool_call.get("arguments")
+                            if isinstance(parsed_tool_call.get("arguments"), dict)
+                            else {}
+                        )
                         if tool_name == "web_fetch":
-                            approval_queued = await self._trigger_web_fetch_approval(chat_id, tool_args)
+                            approval_queued = await self._trigger_web_fetch_approval(
+                                chat_id, tool_args
+                            )
                             if approval_queued:
                                 cleaned = (
                                     f"{cleaned}\n\n"
@@ -2966,7 +3348,11 @@ class TelegramAPIProxy:
                         return urllib.parse.urlencode(data).encode()
                 if parsed_tool_call is not None:
                     tool_name = str(parsed_tool_call.get("name", "")).strip()
-                    tool_args = parsed_tool_call.get("arguments") if isinstance(parsed_tool_call.get("arguments"), dict) else {}
+                    tool_args = (
+                        parsed_tool_call.get("arguments")
+                        if isinstance(parsed_tool_call.get("arguments"), dict)
+                        else {}
+                    )
                     self._stats["outbound_filtered"] += 1
                     if tool_name.upper() == "NO_REPLY":
                         data[text_key] = (
@@ -2974,7 +3360,10 @@ class TelegramAPIProxy:
                             if not is_owner_chat
                             else "⏳ Agent is still processing a previous request. Please wait 10–20 seconds and retry."
                         )
-                    elif tool_name == "sessions_spawn" and str(tool_args.get("agentId", "")) == "acp.healthcheck":
+                    elif (
+                        tool_name == "sessions_spawn"
+                        and str(tool_args.get("agentId", "")) == "acp.healthcheck"
+                    ):
                         data[text_key] = (
                             self._collaborator_safe_notice("restricted command")
                             if not is_owner_chat
@@ -2985,13 +3374,14 @@ class TelegramAPIProxy:
                         if not is_owner_chat:
                             data[text_key] = (
                                 _COLLABORATOR_EGRESS_NOTICE
-                                if approval_queued else self._collaborator_safe_notice("web access unavailable")
+                                if approval_queued
+                                else self._collaborator_safe_notice("web access unavailable")
                             )
                         else:
                             approval_note = (
                                 " Approval request queued for this destination."
-                                if approval_queued else
-                                ""
+                                if approval_queued
+                                else ""
                             )
                             data[text_key] = (
                                 "🌐 Web fetch requested, but this model returned raw tool JSON instead of executing it. "
@@ -3023,7 +3413,10 @@ class TelegramAPIProxy:
                 if (
                     not is_owner_chat
                     and isinstance(text, str)
-                    and normalize_input(text).strip().lower().startswith("⚠️ agent failed before reply:")
+                    and normalize_input(text)
+                    .strip()
+                    .lower()
+                    .startswith("⚠️ agent failed before reply:")
                 ):
                     self._stats["outbound_filtered"] += 1
                     data[text_key] = self._collaborator_safe_notice("runtime unavailable")
@@ -3046,7 +3439,9 @@ class TelegramAPIProxy:
                     return urllib.parse.urlencode(data).encode()
                 if isinstance(text, str) and "does not support tools" in text.lower():
                     self._stats["outbound_filtered"] += 1
-                    data[text_key] = "⚠️ Current local model does not support tool calls. Use scripts/switch_model.sh local qwen3:14b (or a tools-capable model)."
+                    data[text_key] = (
+                        "⚠️ Current local model does not support tool calls. Use scripts/switch_model.sh local qwen3:14b (or a tools-capable model)."
+                    )
                     return urllib.parse.urlencode(data).encode()
                 if isinstance(text, str) and "ollama requires authentication" in text.lower():
                     self._stats["outbound_filtered"] += 1
@@ -3062,7 +3457,9 @@ class TelegramAPIProxy:
                         "(local qwen3:14b or cloud gemini/openai)."
                     )
                     return urllib.parse.urlencode(data).encode()
-                rewritten_runtime_error = self._rewrite_known_runtime_errors(text) if isinstance(text, str) else None
+                rewritten_runtime_error = (
+                    self._rewrite_known_runtime_errors(text) if isinstance(text, str) else None
+                )
                 if rewritten_runtime_error:
                     self._stats["outbound_filtered"] += 1
                     if not is_owner_chat and "switch_model.sh" in rewritten_runtime_error.lower():
@@ -3084,7 +3481,10 @@ class TelegramAPIProxy:
                 if (
                     not is_owner_chat
                     and isinstance(text, str)
-                    and ("security monitoring active at" in text.lower() and "threshold" in text.lower())
+                    and (
+                        "security monitoring active at" in text.lower()
+                        and "threshold" in text.lower()
+                    )
                 ):
                     self._stats["outbound_filtered"] += 1
                     data[text_key] = self._collaborator_safe_notice("policy block")
@@ -3105,10 +3505,12 @@ class TelegramAPIProxy:
                     self._stats["outbound_filtered"] += 1
                     _owner_id_str = str(getattr(self._rbac, "owner_user_id", "")).strip()
                     if _owner_id_str:
-                        asyncio.create_task(self._send_owner_admin_notice(
-                            int(_owner_id_str),
-                            "🔔 *Egress Approval Triggered*\n\nA collaborator interaction generated an egress approval request. Check /pending to review.",
-                        ))
+                        asyncio.create_task(
+                            self._send_owner_admin_notice(
+                                int(_owner_id_str),
+                                "🔔 *Egress Approval Triggered*\n\nA collaborator interaction generated an egress approval request. Check /pending to review.",
+                            )
+                        )
                     data[text_key] = _COLLABORATOR_EGRESS_NOTICE
                     return urllib.parse.urlencode(data).encode()
                 if (
@@ -3130,7 +3532,11 @@ class TelegramAPIProxy:
                             text,
                             flags=re.IGNORECASE,
                         ).strip()
-                        data[text_key] = redacted if redacted else self._collaborator_safe_notice("redacted protected content")
+                        data[text_key] = (
+                            redacted
+                            if redacted
+                            else self._collaborator_safe_notice("redacted protected content")
+                        )
                         return urllib.parse.urlencode(data).encode()
         except Exception as e:
             logger.error(f"Outbound filter error: {e}")
@@ -3227,6 +3633,7 @@ class TelegramAPIProxy:
             pass
         try:
             from gateway.ingest_api.state import app_state as _app_state
+
             _egress_filter = getattr(_app_state, "egress_filter", None)
             if _egress_filter is None or not hasattr(_egress_filter, "check_async"):
                 return False
@@ -3260,6 +3667,7 @@ class TelegramAPIProxy:
 
     def _suppress_duplicate_system_notice(self, body: bytes, content_type: Optional[str]) -> bool:
         """Suppress repeated startup/shutdown system notices in short windows."""
+
         def _canonical_notice(raw: str) -> str:
             text = (raw or "").strip()
             # Normalize emoji-variation and punctuation drift so duplicate startup
@@ -3268,7 +3676,11 @@ class TelegramAPIProxy:
             lowered = re.sub(r"\s+", " ", lowered).strip()
             if "agentshroud" in lowered and "online" in lowered:
                 return "agentshroud_online"
-            if "agentshroud" in lowered and "starting" in lowered and "readiness delayed" in lowered:
+            if (
+                "agentshroud" in lowered
+                and "starting" in lowered
+                and "readiness delayed" in lowered
+            ):
                 return "agentshroud_starting_delayed"
             if "agentshroud" in lowered and "starting" in lowered:
                 return "agentshroud_starting"
@@ -3346,7 +3758,9 @@ class TelegramAPIProxy:
                 if cb_data.startswith("egress_"):
                     try:
                         cb_user_id = str((callback_query.get("from") or {}).get("id", ""))
-                        cb_chat_id = ((callback_query.get("message") or {}).get("chat") or {}).get("id")
+                        cb_chat_id = ((callback_query.get("message") or {}).get("chat") or {}).get(
+                            "id"
+                        )
                         if cb_user_id and self._rbac and not self._rbac.is_owner(cb_user_id):
                             self._stats["messages_blocked"] += 1
                             self._quarantine_blocked_message(
@@ -3357,6 +3771,7 @@ class TelegramAPIProxy:
                                 source="telegram_callback_rbac_block",
                             )
                             from gateway.ingest_api.state import app_state as _app_state
+
                             _notifier = getattr(_app_state, "egress_notifier", None)
                             if _notifier:
                                 await _notifier.answer_callback(
@@ -3365,6 +3780,7 @@ class TelegramAPIProxy:
                                 )
                             continue
                         from gateway.ingest_api.state import app_state as _app_state
+
                         _notifier = getattr(_app_state, "egress_notifier", None)
                         if _notifier:
                             result = await _notifier.handle_callback(cb_data)
@@ -3376,6 +3792,7 @@ class TelegramAPIProxy:
                                 }
                             _queue = getattr(_app_state, "egress_approval_queue", None)
                             from gateway.security.egress_approval import ApprovalMode
+
                             action = result.get("action", "")
                             domain = result.get("domain", "")
                             rid = result.get("request_id", "")
@@ -3391,10 +3808,13 @@ class TelegramAPIProxy:
                                 domain = _queue._request_domain_map.get(rid, "")
                                 if domain:
                                     action = (
-                                        "allow_always" if "allow_always" in cb_data
-                                        else "allow_once" if "allow_once" in cb_data
-                                        else "deny" if "deny" in cb_data
-                                        else ""
+                                        "allow_always"
+                                        if "allow_always" in cb_data
+                                        else (
+                                            "allow_once"
+                                            if "allow_once" in cb_data
+                                            else "deny" if "deny" in cb_data else ""
+                                        )
                                     )
                                     result = {
                                         "status": "ok",
@@ -3414,7 +3834,10 @@ class TelegramAPIProxy:
                                     await _queue.approve(rid, ApprovalMode.ONCE)
                                     _expires_at = result.get("expires_at")
                                     if _expires_at and domain:
-                                        from gateway.ingest_api.state import app_state as _state
+                                        from gateway.ingest_api.state import (
+                                            app_state as _state,
+                                        )
+
                                         _ef = getattr(_state, "egress_filter", None)
                                         if _ef is not None and hasattr(_ef, "grant_timed_approval"):
                                             _ef.grant_timed_approval(domain, _expires_at)
@@ -3467,7 +3890,7 @@ class TelegramAPIProxy:
                                 _toast,
                             )
                             # Edit the original approval message to show the decision.
-                            _cb_msg_id = ((callback_query.get("message") or {}).get("message_id"))
+                            _cb_msg_id = (callback_query.get("message") or {}).get("message_id")
                             if _cb_msg_id and cb_chat_id:
                                 await _notifier.edit_decision_message(
                                     cb_chat_id, _cb_msg_id, _edit_text
@@ -3485,7 +3908,9 @@ class TelegramAPIProxy:
                                         f"{_edit_text}"
                                     )
                                     asyncio.create_task(
-                                        self._send_owner_admin_notice(int(_origin_uid), _collab_notice)
+                                        self._send_owner_admin_notice(
+                                            int(_origin_uid), _collab_notice
+                                        )
                                     )
                             logger.info(
                                 "Egress callback handled: %s",
@@ -3498,9 +3923,9 @@ class TelegramAPIProxy:
                     try:
                         _cb_action = "approve" if cb_data.startswith("collab_approve_") else "deny"
                         _target_id = (
-                            cb_data[len("collab_approve_"):]
+                            cb_data[len("collab_approve_") :]
                             if _cb_action == "approve"
-                            else cb_data[len("collab_deny_"):]
+                            else cb_data[len("collab_deny_") :]
                         ).strip()
                         # RBAC guard — only owner can act
                         if cb_user_id and self._rbac and not self._rbac.is_owner(cb_user_id):
@@ -3509,16 +3934,26 @@ class TelegramAPIProxy:
                                 "Not authorized for approval actions",
                             )
                         elif _target_id:
-                            _pending_info = self._pending_collaborator_requests.get(_target_id, {}) or {}
+                            _pending_info = (
+                                self._pending_collaborator_requests.get(_target_id, {}) or {}
+                            )
                             _cb_username = str(_pending_info.get("username", "")).strip()
-                            _cb_display = f"@{_cb_username}" if _cb_username and _cb_username != "unknown" else f"ID {_target_id}"
-                            _cb_msg_id = ((callback_query.get("message") or {}).get("message_id"))
+                            _cb_display = (
+                                f"@{_cb_username}"
+                                if _cb_username and _cb_username != "unknown"
+                                else f"ID {_target_id}"
+                            )
+                            _cb_msg_id = (callback_query.get("message") or {}).get("message_id")
 
                             if _cb_action == "approve":
                                 self._runtime_revoked_collaborators.discard(_target_id)
                                 self._pending_collaborator_requests.pop(_target_id, None)
-                                if self._rbac and _target_id not in {str(uid) for uid in (self._rbac.collaborator_user_ids or [])}:
-                                    self._rbac.collaborator_user_ids = list(self._rbac.collaborator_user_ids or []) + [_target_id]
+                                if self._rbac and _target_id not in {
+                                    str(uid) for uid in (self._rbac.collaborator_user_ids or [])
+                                }:
+                                    self._rbac.collaborator_user_ids = list(
+                                        self._rbac.collaborator_user_ids or []
+                                    ) + [_target_id]
                                 persist_approved_collaborator(_target_id)
                                 _decision_text = f"✅ *Access Approved*\n\nUser: {_cb_display}\nID: `{_target_id}`"
                                 _toast = f"✅ Approved: {_cb_display}"
@@ -3535,7 +3970,9 @@ class TelegramAPIProxy:
                             else:
                                 self._pending_collaborator_requests.pop(_target_id, None)
                                 self._runtime_revoked_collaborators.add(_target_id)
-                                _decision_text = f"❌ *Access Denied*\n\nUser: {_cb_display}\nID: `{_target_id}`"
+                                _decision_text = (
+                                    f"❌ *Access Denied*\n\nUser: {_cb_display}\nID: `{_target_id}`"
+                                )
                                 _toast = f"❌ Denied: {_cb_display}"
                                 _collab_chat = _pending_info.get("chat_id")
                                 if _collab_chat:
@@ -3549,9 +3986,13 @@ class TelegramAPIProxy:
 
                             await self._answer_callback_query(callback_query.get("id", ""), _toast)
                             if _cb_msg_id and cb_chat_id:
-                                await self._edit_telegram_message(cb_chat_id, _cb_msg_id, _decision_text)
+                                await self._edit_telegram_message(
+                                    cb_chat_id, _cb_msg_id, _decision_text
+                                )
                             logger.info(
-                                "Collab callback handled: action=%s target=%s", _cb_action, _target_id
+                                "Collab callback handled: action=%s target=%s",
+                                _cb_action,
+                                _target_id,
                             )
                     except Exception as _ce:
                         logger.error("Collab callback error (non-fatal): %s", _ce)
@@ -3585,7 +4026,9 @@ class TelegramAPIProxy:
                 if not mentioned:
                     logger.debug(
                         "Group message (context-only, no reply): user_id=%s chat_id=%s preview=%s",
-                        user_id, chat_id, (text or "")[:40].replace("\n", " "),
+                        user_id,
+                        chat_id,
+                        (text or "")[:40].replace("\n", " "),
                     )
 
             if not text:
@@ -3601,7 +4044,10 @@ class TelegramAPIProxy:
                             logger.warning(
                                 "Oversized media dropped (CVE-2026-32049): "
                                 "type=%s file_size=%d limit=%d user_id=%s",
-                                _mk, _fsize, _MAX_MEDIA_FILE_SIZE, user_id,
+                                _mk,
+                                _fsize,
+                                _MAX_MEDIA_FILE_SIZE,
+                                user_id,
                             )
                             if chat_id:
                                 await self._send_owner_admin_notice(
@@ -3615,9 +4061,13 @@ class TelegramAPIProxy:
                     _is_known_collab = (
                         self._rbac
                         and not self._rbac.is_owner(user_id)
-                        and user_id in {str(uid) for uid in (self._rbac.collaborator_user_ids or [])}
+                        and user_id
+                        in {str(uid) for uid in (self._rbac.collaborator_user_ids or [])}
                     )
-                    if _is_known_collab and self._resolve_collaborator_mode(user_id) == "local_only":
+                    if (
+                        _is_known_collab
+                        and self._resolve_collaborator_mode(user_id) == "local_only"
+                    ):
                         if chat_id:
                             await self._send_owner_admin_notice(
                                 int(str(chat_id)),
@@ -3643,10 +4093,10 @@ class TelegramAPIProxy:
             is_owner = self._rbac.is_owner(user_id) if self._rbac else False
             is_revoked = user_id in self._runtime_revoked_collaborators
             is_collaborator = (
-                self._rbac and
-                not is_owner and
-                not is_revoked and
-                user_id in {str(uid) for uid in (self._rbac.collaborator_user_ids or [])}
+                self._rbac
+                and not is_owner
+                and not is_revoked
+                and user_id in {str(uid) for uid in (self._rbac.collaborator_user_ids or [])}
             )
 
             # ── Inbound attribution log ───────────────────────────────────────
@@ -3673,8 +4123,12 @@ class TelegramAPIProxy:
                     "ProgressiveLockdown: dropping message from suspended user %s", user_id
                 )
                 _now = time.time()
-                if chat_id is not None and _now > self._suspended_drop_notice_until.get(user_id, 0.0):
-                    self._suspended_drop_notice_until[user_id] = _now + self._suspended_drop_notice_cooldown_seconds
+                if chat_id is not None and _now > self._suspended_drop_notice_until.get(
+                    user_id, 0.0
+                ):
+                    self._suspended_drop_notice_until[user_id] = (
+                        _now + self._suspended_drop_notice_cooldown_seconds
+                    )
                     try:
                         await self._send_telegram_text(
                             int(chat_id),
@@ -3717,6 +4171,7 @@ class TelegramAPIProxy:
             # users are auto-enrolled (track_unknown_non_owner).
             try:
                 from gateway.ingest_api.state import app_state as _app_state
+
                 _tracker = getattr(_app_state, "collaborator_tracker", None)
                 if _tracker and (not is_owner or is_owner):  # track owner and collaborators
                     sender = message.get("from", {})
@@ -3729,10 +4184,10 @@ class TelegramAPIProxy:
                     _corr_id = f"{user_id}:{_msg_id}"
                     # Store correlation for outbound pairing (TTL: evict entries older than 5 min)
                     import time as _time_mod
+
                     _now = _time_mod.time()
                     self._last_inbound_corr = {
-                        k: v for k, v in self._last_inbound_corr.items()
-                        if _now - v[1] < 300
+                        k: v for k, v in self._last_inbound_corr.items() if _now - v[1] < 300
                     }
                     self._last_inbound_corr[str(chat_id)] = (_corr_id, _now)
                     _tracker.record_activity(
@@ -3765,7 +4220,11 @@ class TelegramAPIProxy:
                     now = time.time()
                     # Prune expired rate-limit entries to prevent unbounded growth
                     _now_prune = time.time()
-                    expired_keys = [k for k, v in self._recent_stranger_rate_limit_until.items() if v < _now_prune]
+                    expired_keys = [
+                        k
+                        for k, v in self._recent_stranger_rate_limit_until.items()
+                        if v < _now_prune
+                    ]
                     for k in expired_keys:
                         del self._recent_stranger_rate_limit_until[k]
                     if self._recent_stranger_rate_limit_until.get(user_id, 0) <= now:
@@ -3790,14 +4249,21 @@ class TelegramAPIProxy:
             if is_collaborator and text.strip().lower().startswith("/start"):
                 try:
                     from gateway.ingest_api.state import app_state as _app_state
+
                     _tracker = getattr(_app_state, "multi_turn_tracker", None)
                     if _tracker and _tracker.reset_session(user_id, owner_override=True):
-                        logger.info("Reset MultiTurnTracker session for collaborator %s via /start", user_id)
+                        logger.info(
+                            "Reset MultiTurnTracker session for collaborator %s via /start", user_id
+                        )
                 except Exception as _re:
                     logger.debug("MultiTurnTracker reset error (non-fatal): %s", _re)
 
             # ── Collaborator rate limiting (configured msgs/hour) ─────────────
-            if is_collaborator and not self._is_immune(user_id) and not self._collaborator_rate_limiter.check(user_id):
+            if (
+                is_collaborator
+                and not self._is_immune(user_id)
+                and not self._collaborator_rate_limiter.check(user_id)
+            ):
                 self._stats["messages_blocked"] += 1
                 logger.warning(
                     "Collaborator %s exceeded rate limit (%s/hr) — dropping message",
@@ -3919,6 +4385,7 @@ class TelegramAPIProxy:
 
                     async def _local_listgroups_handler(target_chat_id: int) -> None:
                         from gateway.ingest_api.state import app_state as _s
+
                         _gr = getattr(_s, "group_registry", None)
                         if not _gr:
                             await self._send_owner_admin_notice(
@@ -3934,7 +4401,11 @@ class TelegramAPIProxy:
                         lines = [f"{_PROTECT_HEADER}*Groups ({len(groups)}):*\n"]
                         for g in groups:
                             tg = f"tg:{g.telegram_chat_id}" if g.telegram_chat_id else "tg:unlinked"
-                            sl = f"slack:{g.slack_channel_id}" if g.slack_channel_id else "slack:none"
+                            sl = (
+                                f"slack:{g.slack_channel_id}"
+                                if g.slack_channel_id
+                                else "slack:none"
+                            )
                             lines.append(
                                 f"• `{g.id}` — {g.name} | {len(g.members)} members | {tg} | {sl}"
                             )
@@ -3958,6 +4429,7 @@ class TelegramAPIProxy:
 
                     async def _local_newgroup_handler(target_chat_id: int) -> None:
                         from gateway.ingest_api.state import app_state as _s
+
                         _gr = getattr(_s, "group_registry", None)
                         if not _gr:
                             await self._send_owner_admin_notice(
@@ -3976,10 +4448,14 @@ class TelegramAPIProxy:
                         _slack_ch = None
                         try:
                             from gateway.ingest_api.main import _slack_proxy as _sp
-                            _slack_ch = await _sp.provision_group_channel(_grp_id_snap, _grp_name_snap)
+
+                            _slack_ch = await _sp.provision_group_channel(
+                                _grp_id_snap, _grp_name_snap
+                            )
                             if _slack_ch:
                                 grp.slack_channel_id = _slack_ch
                                 from gateway.security.rbac_config import _persist_groups
+
                                 _persist_groups(_gr.groups)
                         except Exception as _se:
                             logger.debug("Slack group provision error: %s", _se)
@@ -4008,7 +4484,8 @@ class TelegramAPIProxy:
                     _args = text.split(None, 2)
                     if len(_args) < 3:
                         await self._send_owner_admin_notice(
-                            chat_id, f"{_PROTECT_HEADER}Usage: /linkgroup <group_id> <telegram_chat_id>"
+                            chat_id,
+                            f"{_PROTECT_HEADER}Usage: /linkgroup <group_id> <telegram_chat_id>",
                         )
                         continue
                     _lnk_grp_id = _args[1].lower().strip()
@@ -4016,7 +4493,8 @@ class TelegramAPIProxy:
                         _lnk_chat_id = int(_args[2].strip())
                     except ValueError:
                         await self._send_owner_admin_notice(
-                            chat_id, f"{_PROTECT_HEADER}Invalid chat_id — must be an integer (e.g. -1001234567890)"
+                            chat_id,
+                            f"{_PROTECT_HEADER}Invalid chat_id — must be an integer (e.g. -1001234567890)",
                         )
                         continue
                     _lnk_grp_id_snap = _lnk_grp_id
@@ -4024,6 +4502,7 @@ class TelegramAPIProxy:
 
                     async def _local_linkgroup_handler(target_chat_id: int) -> None:
                         from gateway.ingest_api.state import app_state as _s
+
                         _gr = getattr(_s, "group_registry", None)
                         if not _gr:
                             await self._send_owner_admin_notice(
@@ -4034,16 +4513,17 @@ class TelegramAPIProxy:
                         if not grp:
                             await self._send_owner_admin_notice(
                                 target_chat_id,
-                                f"{_PROTECT_HEADER}Group `{_lnk_grp_id_snap}` not found. Create it first with /newgroup."
+                                f"{_PROTECT_HEADER}Group `{_lnk_grp_id_snap}` not found. Create it first with /newgroup.",
                             )
                             return
                         grp.telegram_chat_id = _lnk_chat_id_snap
                         from gateway.security.rbac_config import _persist_groups
+
                         _persist_groups(_gr.groups)
                         await self._send_owner_admin_notice(
                             target_chat_id,
                             f"{_PROTECT_HEADER}Linked `{_lnk_grp_id_snap}` → Telegram chat `{_lnk_chat_id_snap}` ✅\n"
-                            f"Group has {len(grp.members)} members. Use /addmember to invite them."
+                            f"Group has {len(grp.members)} members. Use /addmember to invite them.",
                         )
 
                     local_handler = _local_linkgroup_handler
@@ -4064,6 +4544,7 @@ class TelegramAPIProxy:
 
                     async def _local_addmember_handler(target_chat_id: int) -> None:
                         from gateway.ingest_api.state import app_state as _s
+
                         _gr = getattr(_s, "group_registry", None)
                         if not _gr:
                             await self._send_owner_admin_notice(
@@ -4074,7 +4555,7 @@ class TelegramAPIProxy:
                         if not grp:
                             await self._send_owner_admin_notice(
                                 target_chat_id,
-                                f"{_PROTECT_HEADER}Group `{_am_grp_id_snap}` not found."
+                                f"{_PROTECT_HEADER}Group `{_am_grp_id_snap}` not found.",
                             )
                             return
                         _gr.add_member(_am_grp_id_snap, _am_user_id_snap)
@@ -4088,13 +4569,17 @@ class TelegramAPIProxy:
                                     await self._send_telegram_text(
                                         int(_am_user_id_snap),
                                         f"You've been added to group *{grp.name}*.\n"
-                                        f"Join via: {invite}"
+                                        f"Join via: {invite}",
                                     )
                                     results.append("Telegram invite sent ✅")
                                 except Exception:
-                                    results.append(f"Telegram invite link (send manually): {invite}")
+                                    results.append(
+                                        f"Telegram invite link (send manually): {invite}"
+                                    )
                             else:
-                                results.append("Telegram invite: failed (is bot admin with invite permission?)")
+                                results.append(
+                                    "Telegram invite: failed (is bot admin with invite permission?)"
+                                )
                         else:
                             results.append("Telegram: no linked group chat (use /linkgroup first)")
 
@@ -4102,7 +4587,10 @@ class TelegramAPIProxy:
                         if grp.slack_channel_id and _am_user_id_snap.startswith("U"):
                             try:
                                 from gateway.ingest_api.main import _slack_proxy as _sp
-                                ok = await _sp.invite_channel_member(grp.slack_channel_id, _am_user_id_snap)
+
+                                ok = await _sp.invite_channel_member(
+                                    grp.slack_channel_id, _am_user_id_snap
+                                )
                                 results.append(f"Slack invite: {'✅' if ok else '❌'}")
                             except Exception as _se:
                                 results.append(f"Slack invite error: {_se}")
@@ -4112,7 +4600,7 @@ class TelegramAPIProxy:
                         summary = "\n".join(f"  • {r}" for r in results)
                         await self._send_owner_admin_notice(
                             target_chat_id,
-                            f"{_PROTECT_HEADER}Added `{_am_user_id_snap}` to group `{_am_grp_id_snap}`:\n{summary}"
+                            f"{_PROTECT_HEADER}Added `{_am_user_id_snap}` to group `{_am_grp_id_snap}`:\n{summary}",
                         )
 
                     local_handler = _local_addmember_handler
@@ -4132,6 +4620,7 @@ class TelegramAPIProxy:
 
                     async def _local_removemember_handler(target_chat_id: int) -> None:
                         from gateway.ingest_api.state import app_state as _s
+
                         _gr = getattr(_s, "group_registry", None)
                         if not _gr:
                             await self._send_owner_admin_notice(
@@ -4142,7 +4631,7 @@ class TelegramAPIProxy:
                         if not grp:
                             await self._send_owner_admin_notice(
                                 target_chat_id,
-                                f"{_PROTECT_HEADER}Group `{_rm_grp_id_snap}` not found."
+                                f"{_PROTECT_HEADER}Group `{_rm_grp_id_snap}` not found.",
                             )
                             return
                         _gr.remove_member(_rm_grp_id_snap, _rm_user_id_snap)
@@ -4164,7 +4653,10 @@ class TelegramAPIProxy:
                         if grp.slack_channel_id and _rm_user_id_snap.startswith("U"):
                             try:
                                 from gateway.ingest_api.main import _slack_proxy as _sp
-                                ok = await _sp.kick_channel_member(grp.slack_channel_id, _rm_user_id_snap)
+
+                                ok = await _sp.kick_channel_member(
+                                    grp.slack_channel_id, _rm_user_id_snap
+                                )
                                 results.append(f"Slack remove: {'✅' if ok else '❌'}")
                             except Exception as _se:
                                 results.append(f"Slack remove error: {_se}")
@@ -4174,7 +4666,7 @@ class TelegramAPIProxy:
                         summary = "\n".join(f"  • {r}" for r in results)
                         await self._send_owner_admin_notice(
                             target_chat_id,
-                            f"{_PROTECT_HEADER}Removed `{_rm_user_id_snap}` from group `{_rm_grp_id_snap}`:\n{summary}"
+                            f"{_PROTECT_HEADER}Removed `{_rm_user_id_snap}` from group `{_rm_grp_id_snap}`:\n{summary}",
                         )
 
                     local_handler = _local_removemember_handler
@@ -4221,7 +4713,9 @@ class TelegramAPIProxy:
                                 for _pid in pending_ids[:5]:
                                     _pi = self._pending_collaborator_requests.get(_pid, {}) or {}
                                     _pu = str(_pi.get("username", "")).strip()
-                                    _pu_label = f"@{_pu}" if _pu and _pu != "unknown" else "no username"
+                                    _pu_label = (
+                                        f"@{_pu}" if _pu and _pu != "unknown" else "no username"
+                                    )
                                     _pending_lines.append(f"  {_pu_label} ({_pid})")
                                 pending_hint = "\nPending:\n" + "\n".join(_pending_lines)
                             else:
@@ -4246,8 +4740,12 @@ class TelegramAPIProxy:
                         continue
                     self._runtime_revoked_collaborators.discard(target_id)
                     pending = self._pending_collaborator_requests.pop(target_id, None)
-                    if self._rbac and target_id not in {str(uid) for uid in (self._rbac.collaborator_user_ids or [])}:
-                        self._rbac.collaborator_user_ids = list(self._rbac.collaborator_user_ids or []) + [target_id]
+                    if self._rbac and target_id not in {
+                        str(uid) for uid in (self._rbac.collaborator_user_ids or [])
+                    }:
+                        self._rbac.collaborator_user_ids = list(
+                            self._rbac.collaborator_user_ids or []
+                        ) + [target_id]
                     persist_approved_collaborator(target_id)
                     await self._send_owner_admin_notice(
                         chat_id,
@@ -4353,11 +4851,16 @@ class TelegramAPIProxy:
                         n = s["block_count"]
                         since_ts = s.get("suspended_at") or s.get("last_block_ts") or 0.0
                         since_str = (
-                            _dt.datetime.fromtimestamp(since_ts, tz=_dt.timezone.utc).strftime("%H:%M UTC")
-                            if since_ts else "unknown"
+                            _dt.datetime.fromtimestamp(since_ts, tz=_dt.timezone.utc).strftime(
+                                "%H:%M UTC"
+                            )
+                            if since_ts
+                            else "unknown"
                         )
                         label = _KNOWN_COLLABORATOR_LABELS.get(uid, uid)
-                        lines.append(f"User {uid} ({label}) — {level} ({n} blocks, since {since_str})")
+                        lines.append(
+                            f"User {uid} ({label}) — {level} ({n} blocks, since {since_str})"
+                        )
                     lines.append("\nUse /unlock <user_id> to restore access.")
                     await self._send_owner_admin_notice(chat_id, "\n".join(lines))
                     continue
@@ -4385,12 +4888,19 @@ class TelegramAPIProxy:
                     self._immune_users[target_id] = _expiry
                     label = _KNOWN_COLLABORATOR_LABELS.get(target_id, target_id)
                     _expiry_str = (
-                        _dt.datetime.fromtimestamp(_expiry, tz=_dt.timezone.utc).strftime("%H:%M UTC")
-                        if _expiry else "no expiry"
+                        _dt.datetime.fromtimestamp(_expiry, tz=_dt.timezone.utc).strftime(
+                            "%H:%M UTC"
+                        )
+                        if _expiry
+                        else "no expiry"
                     )
                     logger.info(
                         "IMMUNITY GRANTED: owner=%s target=%s (%s) ttl=%.0fs expires=%s",
-                        user_id, target_id, label, _ttl, _expiry_str,
+                        user_id,
+                        target_id,
+                        label,
+                        _ttl,
+                        _expiry_str,
                     )
                     await self._send_owner_admin_notice(
                         chat_id,
@@ -4412,7 +4922,9 @@ class TelegramAPIProxy:
                     if removed:
                         logger.info(
                             "IMMUNITY REVOKED: owner=%s target=%s (%s)",
-                            user_id, target_id, label,
+                            user_id,
+                            target_id,
+                            label,
                         )
                         await self._send_owner_admin_notice(
                             chat_id,
@@ -4429,7 +4941,8 @@ class TelegramAPIProxy:
                     # Purge expired entries before listing
                     _now_ts = time.time()
                     self._immune_users = {
-                        uid: exp for uid, exp in self._immune_users.items()
+                        uid: exp
+                        for uid, exp in self._immune_users.items()
                         if exp == 0.0 or _now_ts < exp
                     }
                     if not self._immune_users:
@@ -4442,8 +4955,11 @@ class TelegramAPIProxy:
                     for uid, exp in sorted(self._immune_users.items()):
                         label = _KNOWN_COLLABORATOR_LABELS.get(uid, uid)
                         exp_str = (
-                            _dt.datetime.fromtimestamp(exp, tz=_dt.timezone.utc).strftime("%H:%M UTC")
-                            if exp else "no expiry"
+                            _dt.datetime.fromtimestamp(exp, tz=_dt.timezone.utc).strftime(
+                                "%H:%M UTC"
+                            )
+                            if exp
+                            else "no expiry"
                         )
                         lines.append(f"  {uid} ({label}) — expires {exp_str}")
                     lines.append("\nUse /ri <user_id> to revoke immunity.")
@@ -4465,8 +4981,12 @@ class TelegramAPIProxy:
                         continue
                     pending = self._pending_collaborator_requests.pop(target_id, None)
                     self._runtime_revoked_collaborators.discard(target_id)
-                    if self._rbac and target_id not in {str(uid) for uid in (self._rbac.collaborator_user_ids or [])}:
-                        self._rbac.collaborator_user_ids = list(self._rbac.collaborator_user_ids or []) + [target_id]
+                    if self._rbac and target_id not in {
+                        str(uid) for uid in (self._rbac.collaborator_user_ids or [])
+                    }:
+                        self._rbac.collaborator_user_ids = list(
+                            self._rbac.collaborator_user_ids or []
+                        ) + [target_id]
                     persist_approved_collaborator(target_id)
                     await self._send_owner_admin_notice(
                         chat_id,
@@ -4531,9 +5051,25 @@ class TelegramAPIProxy:
                     gid_arg = tokens[2].strip() if len(tokens) > 2 else ""
                     await self._handle_addtogroup_command(chat_id, user_id, uid_arg, gid_arg)
                     continue
-                elif (is_owner or (is_collaborator and self._rbac and self._rbac.group_admin_ids.get(
-                        next((g for g in (self._teams_config.groups if self._teams_config else {})), "")
-                    ) == user_id)) and cmd_base in _LOCAL_RMFROMGROUP_COMMANDS:
+                elif (
+                    is_owner
+                    or (
+                        is_collaborator
+                        and self._rbac
+                        and self._rbac.group_admin_ids.get(
+                            next(
+                                (
+                                    g
+                                    for g in (
+                                        self._teams_config.groups if self._teams_config else {}
+                                    )
+                                ),
+                                "",
+                            )
+                        )
+                        == user_id
+                    )
+                ) and cmd_base in _LOCAL_RMFROMGROUP_COMMANDS:
                     tokens = normalize_input(text).strip().split(None, 2)
                     uid_arg = tokens[1].strip() if len(tokens) > 1 else ""
                     gid_arg = tokens[2].strip() if len(tokens) > 2 else ""
@@ -4547,6 +5083,7 @@ class TelegramAPIProxy:
                     continue
                 elif is_owner and cmd_base in _LOCAL_EGRESS_COMMANDS:
                     from gateway.ingest_api.state import app_state as _eq_state
+
                     _eq = getattr(_eq_state, "egress_approval_queue", None)
                     tokens = normalize_input(text).strip().split(None, 2)
                     # tokens[0] = "/egress", tokens[1] = subcommand, tokens[2] = arg
@@ -4569,12 +5106,8 @@ class TelegramAPIProxy:
                                     lines.append(f"  {r['action'].upper()}  `{r['domain']}`")
                             else:
                                 lines.append("\n*Session:* none")
-                            lines.append(
-                                "\nUse `/egress revoke <domain>` to remove a rule."
-                            )
-                            await self._send_owner_admin_notice(
-                                chat_id, "\n".join(lines)
-                            )
+                            lines.append("\nUse `/egress revoke <domain>` to remove a rule.")
+                            await self._send_owner_admin_notice(chat_id, "\n".join(lines))
                         else:
                             await self._send_owner_admin_notice(
                                 chat_id,
@@ -4585,11 +5118,18 @@ class TelegramAPIProxy:
                         # Optional duration: 1h, 4h, 24h, forever (default: forever)
                         duration_arg = tokens[3].strip().lower() if len(tokens) > 3 else "forever"
                         from gateway.security.egress_approval import ApprovalMode
-                        _mode = ApprovalMode.SESSION if duration_arg not in ("forever", "permanent") else ApprovalMode.PERMANENT
+
+                        _mode = (
+                            ApprovalMode.SESSION
+                            if duration_arg not in ("forever", "permanent")
+                            else ApprovalMode.PERMANENT
+                        )
                         if _eq:
                             added = await _eq.add_rule(target_domain, "allow", _mode)
                             if added:
-                                mode_label = "session" if _mode == ApprovalMode.SESSION else "permanent"
+                                mode_label = (
+                                    "session" if _mode == ApprovalMode.SESSION else "permanent"
+                                )
                                 await self._send_owner_admin_notice(
                                     chat_id,
                                     (
@@ -4650,6 +5190,7 @@ class TelegramAPIProxy:
                     # /delegate <uid|alias> <privilege> <duration>
                     # e.g. /delegate brett egress_approval 8h
                     from gateway.ingest_api.state import app_state as _del_state
+
                     _del_mgr = getattr(_del_state, "delegation_manager", None)
                     _parts = normalize_input(text).strip().split()
                     # _parts: ["/delegate", uid, privilege, duration]
@@ -4666,9 +5207,12 @@ class TelegramAPIProxy:
                     _del_priv_raw = _parts[2].lower()
                     _del_dur_raw = _parts[3].lower()
                     # Resolve target
-                    _del_target = self._extract_owner_target_resolved(
-                        f"/delegate {_del_target_raw} {_del_priv_raw} {_del_dur_raw}"
-                    ) or _del_target_raw
+                    _del_target = (
+                        self._extract_owner_target_resolved(
+                            f"/delegate {_del_target_raw} {_del_priv_raw} {_del_dur_raw}"
+                        )
+                        or _del_target_raw
+                    )
                     # Parse duration
                     _dur_match = re.fullmatch(r"(?:(\d+)h)?(?:(\d+)m)?", _del_dur_raw)
                     if not _dur_match or not (_dur_match.group(1) or _dur_match.group(2)):
@@ -4688,6 +5232,7 @@ class TelegramAPIProxy:
                         continue
                     try:
                         from gateway.security.delegation import DelegationPrivilege
+
                         _priv = DelegationPrivilege(_del_priv_raw)
                         _delegation = _del_mgr.delegate(
                             owner_id=user_id,
@@ -4701,7 +5246,10 @@ class TelegramAPIProxy:
                         ).strftime("%Y-%m-%d %H:%M UTC")
                         logger.info(
                             "DELEGATION CREATED: owner=%s target=%s priv=%s expires=%s",
-                            user_id, _del_target, _del_priv_raw, _exp_str,
+                            user_id,
+                            _del_target,
+                            _del_priv_raw,
+                            _exp_str,
                         )
                         await self._send_owner_admin_notice(
                             chat_id,
@@ -4718,6 +5266,7 @@ class TelegramAPIProxy:
                     continue
                 elif is_owner and cmd_base in _LOCAL_DELEGATIONS_COMMANDS:
                     from gateway.ingest_api.state import app_state as _del_state
+
                     _del_mgr = getattr(_del_state, "delegation_manager", None)
                     if not _del_mgr:
                         await self._send_owner_admin_notice(
@@ -4739,12 +5288,15 @@ class TelegramAPIProxy:
                         _exp_str = _dt.datetime.fromtimestamp(
                             _d.expires_at, tz=_dt.timezone.utc
                         ).strftime("%H:%M UTC")
-                        lines.append(f"  {_label} ({_d.delegated_to}) — {_d.privilege} until {_exp_str}")
+                        lines.append(
+                            f"  {_label} ({_d.delegated_to}) — {_d.privilege} until {_exp_str}"
+                        )
                     lines.append("\nUse /revoke_delegation <user_id> <privilege> to revoke.")
                     await self._send_owner_admin_notice(chat_id, "\n".join(lines))
                     continue
                 elif is_owner and cmd_base in _LOCAL_REVOKE_DELEGATION_COMMANDS:
                     from gateway.ingest_api.state import app_state as _del_state
+
                     _del_mgr = getattr(_del_state, "delegation_manager", None)
                     _parts = normalize_input(text).strip().split()
                     # _parts: ["/revoke-delegation", uid, privilege(optional)]
@@ -4758,9 +5310,10 @@ class TelegramAPIProxy:
                         continue
                     _rd_target_raw = _parts[1]
                     _rd_priv_raw = _parts[2].lower() if len(_parts) > 2 else None
-                    _rd_target = self._extract_owner_target_resolved(
-                        f"/revoke_delegation {_rd_target_raw}"
-                    ) or _rd_target_raw
+                    _rd_target = (
+                        self._extract_owner_target_resolved(f"/revoke_delegation {_rd_target_raw}")
+                        or _rd_target_raw
+                    )
                     if not _del_mgr:
                         await self._send_owner_admin_notice(
                             chat_id,
@@ -4770,6 +5323,7 @@ class TelegramAPIProxy:
                     try:
                         if _rd_priv_raw:
                             from gateway.security.delegation import DelegationPrivilege
+
                             _priv = DelegationPrivilege(_rd_priv_raw)
                             _revoked = _del_mgr.revoke(user_id, _rd_target, _priv)
                             _count = 1 if _revoked else 0
@@ -4779,7 +5333,10 @@ class TelegramAPIProxy:
                         if _count:
                             logger.info(
                                 "DELEGATION REVOKED: owner=%s target=%s priv=%s count=%d",
-                                user_id, _rd_target, _rd_priv_raw or "all", _count,
+                                user_id,
+                                _rd_target,
+                                _rd_priv_raw or "all",
+                                _count,
                             )
                             await self._send_owner_admin_notice(
                                 chat_id,
@@ -4798,6 +5355,7 @@ class TelegramAPIProxy:
                 elif is_owner and cmd_base in _LOCAL_EGRESS_ALLOW_COMMANDS:
                     # Shorthand: /egress-allow <domain> [forever|session]
                     from gateway.ingest_api.state import app_state as _ea_state
+
                     _eq2 = getattr(_ea_state, "egress_approval_queue", None)
                     tokens2 = normalize_input(text).strip().split(None, 2)
                     if len(tokens2) < 2:
@@ -4808,8 +5366,15 @@ class TelegramAPIProxy:
                     else:
                         target_domain2 = tokens2[1].strip()
                         duration2 = tokens2[2].strip().lower() if len(tokens2) > 2 else "forever"
-                        from gateway.security.egress_approval import ApprovalMode as _AM2
-                        _mode2 = _AM2.SESSION if duration2 not in ("forever", "permanent") else _AM2.PERMANENT
+                        from gateway.security.egress_approval import (
+                            ApprovalMode as _AM2,
+                        )
+
+                        _mode2 = (
+                            _AM2.SESSION
+                            if duration2 not in ("forever", "permanent")
+                            else _AM2.PERMANENT
+                        )
                         if _eq2:
                             added2 = await _eq2.add_rule(target_domain2, "allow", _mode2)
                             mode_label2 = "session" if _mode2 == _AM2.SESSION else "permanent"
@@ -4845,7 +5410,9 @@ class TelegramAPIProxy:
                             "Use `/setname clear` to reset to your Telegram name."
                         )
                         if is_owner:
-                            await self._send_owner_admin_notice(chat_id, f"{_PROTECT_HEADER}{reply_sn}")
+                            await self._send_owner_admin_notice(
+                                chat_id, f"{_PROTECT_HEADER}{reply_sn}"
+                            )
                         else:
                             await self._send_telegram_text(int(chat_id), reply_sn)
                     else:
@@ -4859,12 +5426,15 @@ class TelegramAPIProxy:
                         # Persist to disk
                         try:
                             import json as _json_sn
+
                             with open(self._display_names_path, "w", encoding="utf-8") as _dnf_sn:
                                 _json_sn.dump(self._custom_display_names, _dnf_sn)
                         except Exception as _sne:
                             logger.warning("Could not persist display names: %s", _sne)
                         if is_owner:
-                            await self._send_owner_admin_notice(chat_id, f"{_PROTECT_HEADER}{msg_sn}")
+                            await self._send_owner_admin_notice(
+                                chat_id, f"{_PROTECT_HEADER}{msg_sn}"
+                            )
                         else:
                             await self._send_telegram_text(int(chat_id), msg_sn)
                     continue
@@ -4947,12 +5517,16 @@ class TelegramAPIProxy:
                     )
                     logger.info(
                         "Collaborator %s attempted blocked command %r — rejecting",
-                        user_id, cmd_base,
+                        user_id,
+                        cmd_base,
                     )
                     await self._notify_collaborator_command_blocked(chat_id, cmd_base)
                     # Drop the update — do not forward to bot
                     continue
-                if cmd_base.startswith("/") and cmd_base not in _COLLABORATOR_ALLOWED_SLASH_COMMANDS:
+                if (
+                    cmd_base.startswith("/")
+                    and cmd_base not in _COLLABORATOR_ALLOWED_SLASH_COMMANDS
+                ):
                     self._stats["messages_blocked"] += 1
                     self._quarantine_blocked_message(
                         user_id=user_id,
@@ -5148,7 +5722,11 @@ class TelegramAPIProxy:
                                 original_transport_text,
                             )
                         )
-                        requested_url = self._extract_first_egress_target(text) if not has_encoded_controls else None
+                        requested_url = (
+                            self._extract_first_egress_target(text)
+                            if not has_encoded_controls
+                            else None
+                        )
                         if requested_url and not preflight_egress_queued:
                             owner_chat = (
                                 str(getattr(self._rbac, "owner_user_id", "")).strip()
@@ -5159,7 +5737,9 @@ class TelegramAPIProxy:
                                 owner_chat or str(chat_id or ""),
                                 {"url": requested_url},
                             )
-                            await self._send_telegram_text(chat_id, _COLLABORATOR_EGRESS_PENDING_NOTICE)
+                            await self._send_telegram_text(
+                                chat_id, _COLLABORATOR_EGRESS_PENDING_NOTICE
+                            )
                         else:
                             await self._notify_collaborator_command_blocked(chat_id, "web-access")
                     except Exception as _wf:
@@ -5302,7 +5882,9 @@ class TelegramAPIProxy:
                             reason="Blocked collaborator execution request",
                             source="telegram_execution_request_block",
                         )
-                        await self._notify_collaborator_command_blocked(chat_id, "execution-request")
+                        await self._notify_collaborator_command_blocked(
+                            chat_id, "execution-request"
+                        )
                     continue
                 if self._looks_like_obfuscated_command_probe(text):
                     self._stats["messages_blocked"] += 1
@@ -5381,7 +5963,8 @@ class TelegramAPIProxy:
                             self._stats["messages_blocked"] += 1
                             logger.warning(
                                 "Pipeline blocked Telegram message from collaborator %s: %s",
-                                user_id, _pipe_result.block_reason,
+                                user_id,
+                                _pipe_result.block_reason,
                             )
                             self._quarantine_blocked_message(
                                 user_id=user_id,
@@ -5404,7 +5987,8 @@ class TelegramAPIProxy:
                     except Exception as _pipe_exc:
                         logger.error(
                             "Pipeline error for collaborator Telegram message from %s: %s",
-                            user_id, _pipe_exc,
+                            user_id,
+                            _pipe_exc,
                         )
                         self._stats["messages_blocked"] += 1
                         if chat_id:
@@ -5467,7 +6051,8 @@ class TelegramAPIProxy:
                             # Owner messages are logged but never blocked by middleware
                             logger.info(
                                 "Middleware would block owner message (%s) — allowing: %s",
-                                user_id, result.reason,
+                                user_id,
+                                result.reason,
                             )
                         else:
                             reason_text = result.reason or ""
@@ -5482,7 +6067,8 @@ class TelegramAPIProxy:
                             else:
                                 logger.warning(
                                     "Telegram message from %s blocked by middleware: %s",
-                                    user_id, result.reason,
+                                    user_id,
+                                    result.reason,
                                 )
                                 self._stats["messages_blocked"] += 1
                                 self._quarantine_blocked_message(
@@ -5495,7 +6081,9 @@ class TelegramAPIProxy:
                                 if chat_id:
                                     await self._notify_user_blocked(chat_id, result.reason)
                                 blocked_text = (
-                                    self._collaborator_safe_notice(result.reason or "blocked action")
+                                    self._collaborator_safe_notice(
+                                        result.reason or "blocked action"
+                                    )
                                     if not is_owner
                                     else f"[BLOCKED BY AGENTSHROUD: {result.reason}]"
                                 )
@@ -5523,7 +6111,8 @@ class TelegramAPIProxy:
                         if is_owner:
                             logger.info(
                                 "Pipeline would block owner message (%s) — allowing; reason: %s",
-                                user_id, pipeline_result.block_reason,
+                                user_id,
+                                pipeline_result.block_reason,
                             )
                         else:
                             block_reason = pipeline_result.block_reason or ""
@@ -5540,7 +6129,8 @@ class TelegramAPIProxy:
                             self._stats["messages_blocked"] += 1
                             logger.warning(
                                 "Pipeline blocked Telegram message from %s: %s",
-                                user_id, pipeline_result.block_reason,
+                                user_id,
+                                pipeline_result.block_reason,
                             )
                             self._quarantine_blocked_message(
                                 user_id=user_id,
@@ -5550,9 +6140,13 @@ class TelegramAPIProxy:
                                 source="telegram_pipeline_block",
                             )
                             if chat_id:
-                                await self._notify_user_blocked(chat_id, pipeline_result.block_reason)
+                                await self._notify_user_blocked(
+                                    chat_id, pipeline_result.block_reason
+                                )
                             blocked_text = (
-                                self._collaborator_safe_notice(pipeline_result.block_reason or "blocked action")
+                                self._collaborator_safe_notice(
+                                    pipeline_result.block_reason or "blocked action"
+                                )
                                 if not is_owner
                                 else f"[BLOCKED BY AGENTSHROUD: {pipeline_result.block_reason}]"
                             )
@@ -5570,7 +6164,9 @@ class TelegramAPIProxy:
                         if "message" in update:
                             update["message"]["text"] = sanitized_text
                             update["message"]["_agentshroud_pii_redacted"] = True
-                            update["message"]["_agentshroud_redactions"] = pipeline_result.pii_redactions
+                            update["message"][
+                                "_agentshroud_redactions"
+                            ] = pipeline_result.pii_redactions
                         elif "edited_message" in update:
                             update["edited_message"]["text"] = sanitized_text
                             update["edited_message"]["_agentshroud_pii_redacted"] = True
@@ -5598,12 +6194,15 @@ class TelegramAPIProxy:
                         self._stats["messages_sanitized"] += 1
                         logger.info(
                             "Telegram message from %s: PII redacted: %s",
-                            user_id, sanitize_result.entity_types_found,
+                            user_id,
+                            sanitize_result.entity_types_found,
                         )
                         if "message" in update:
                             update["message"]["text"] = sanitize_result.sanitized_content
                             update["message"]["_agentshroud_pii_redacted"] = True
-                            update["message"]["_agentshroud_redactions"] = list(sanitize_result.entity_types_found)
+                            update["message"]["_agentshroud_redactions"] = list(
+                                sanitize_result.entity_types_found
+                            )
                         elif "edited_message" in update:
                             update["edited_message"]["text"] = sanitize_result.sanitized_content
                             update["edited_message"]["_agentshroud_pii_redacted"] = True
@@ -5681,6 +6280,7 @@ class TelegramAPIProxy:
 
         try:
             from gateway.ingest_api.state import app_state as _app_state
+
             store = getattr(_app_state, "blocked_message_quarantine", None)
             if store is None:
                 store = []
@@ -5725,6 +6325,7 @@ class TelegramAPIProxy:
         """Persist blocked outbound messages for admin review."""
         try:
             from gateway.ingest_api.state import app_state as _app_state
+
             store = getattr(_app_state, "blocked_outbound_quarantine", None)
             if store is None:
                 store = []
@@ -5761,10 +6362,12 @@ class TelegramAPIProxy:
         """Best-effort async event emission for quarantine actions."""
         try:
             from gateway.ingest_api.state import app_state as _app_state
+
             bus = getattr(_app_state, "event_bus", None)
             if not bus:
                 return
             from gateway.ingest_api.event_bus import make_event
+
             loop = asyncio.get_running_loop()
             loop.create_task(
                 bus.emit(
@@ -5824,7 +6427,9 @@ class TelegramAPIProxy:
                     )
                     await loop.run_in_executor(
                         None,
-                        lambda: urllib.request.urlopen(fallback_req, timeout=5, context=self._ssl_context),
+                        lambda: urllib.request.urlopen(
+                            fallback_req, timeout=5, context=self._ssl_context
+                        ),
                     )
                     return True
         except Exception as e:
@@ -5845,7 +6450,9 @@ class TelegramAPIProxy:
         except Exception:
             return 60
 
-    async def _send_stranger_rate_limit_notice(self, chat_id: int, user_id: Optional[str] = None) -> bool:
+    async def _send_stranger_rate_limit_notice(
+        self, chat_id: int, user_id: Optional[str] = None
+    ) -> bool:
         """Notify an unknown/unapproved user they have exceeded the access request rate limit."""
         try:
             if not self._bot_token:
@@ -5923,7 +6530,9 @@ class TelegramAPIProxy:
                     if code == 429:
                         try:
                             body = exc.read()
-                            parsed = json.loads(body.decode("utf-8", errors="ignore")) if body else {}
+                            parsed = (
+                                json.loads(body.decode("utf-8", errors="ignore")) if body else {}
+                            )
                             retry_after_val = (
                                 parsed.get("parameters", {}).get("retry_after", 0)
                                 if isinstance(parsed, dict)
@@ -6009,7 +6618,9 @@ class TelegramAPIProxy:
             )
             return True
         except Exception as exc:
-            logger.warning("Telegram editMessageText failed (chat=%s, msg=%s): %s", chat_id, message_id, exc)
+            logger.warning(
+                "Telegram editMessageText failed (chat=%s, msg=%s): %s", chat_id, message_id, exc
+            )
             return False
 
     async def _answer_callback_query(
@@ -6236,7 +6847,9 @@ class TelegramAPIProxy:
                 return
             configured_ids: list[str] = []
             if self._rbac:
-                configured_ids = sorted(str(uid) for uid in (self._rbac.collaborator_user_ids or []))
+                configured_ids = sorted(
+                    str(uid) for uid in (self._rbac.collaborator_user_ids or [])
+                )
             pending_ids = sorted(self._pending_collaborator_requests.keys())
             revoked_ids = sorted(self._runtime_revoked_collaborators)
 
@@ -6260,15 +6873,16 @@ class TelegramAPIProxy:
 
             # Append recent activity section from tracker (queries + bot responses)
             try:
-                from gateway.ingest_api.state import app_state as _app_state
                 import time as _time
-                from datetime import datetime as _datetime, timezone as _tz
+                from datetime import datetime as _datetime
+                from datetime import timezone as _tz
+
+                from gateway.ingest_api.state import app_state as _app_state
+
                 _tracker = getattr(_app_state, "collaborator_tracker", None)
                 if _tracker and configured_ids:
                     # Pull last 24h of activity, max 60 entries
-                    _recent = _tracker.get_activity(
-                        since=_time.time() - 86400, limit=60
-                    )
+                    _recent = _tracker.get_activity(since=_time.time() - 86400, limit=60)
                     if _recent:
                         # Group by (user_id, source), newest-first already
                         _by_user: dict[str, list[dict]] = {}
@@ -6285,7 +6899,9 @@ class TelegramAPIProxy:
                             _last_ts = _entries[0].get("timestamp", 0)
                             _last_dt = _datetime.fromtimestamp(_last_ts, tz=_tz.utc)
                             _last_str = _last_dt.strftime("%H:%M UTC")
-                            _inbound = [e for e in _entries if e.get("direction", "inbound") == "inbound"]
+                            _inbound = [
+                                e for e in _entries if e.get("direction", "inbound") == "inbound"
+                            ]
                             _outbound = [e for e in _entries if e.get("direction") == "outbound"]
                             _activity_lines.append(
                                 f"\n{_name} — {len(_inbound)}q/{len(_outbound)}r, last {_last_str}"
@@ -6418,7 +7034,9 @@ class TelegramAPIProxy:
                         retries=5,
                     )
         except Exception as e:
-            logger.warning("Failed to send collaborator safe-info notice to chat %s: %s", chat_id, e)
+            logger.warning(
+                "Failed to send collaborator safe-info notice to chat %s: %s", chat_id, e
+            )
 
     # ------------------------------------------------------------------
     # V9-4D — Collab mode resolution + project scope
@@ -6429,6 +7047,7 @@ class TelegramAPIProxy:
         """Return TeamsConfig from app_state if available."""
         try:
             from gateway.ingest_api.state import app_state as _as
+
             cfg = getattr(_as, "config", None)
             return getattr(cfg, "teams", None) if cfg else None
         except Exception:
@@ -6471,7 +7090,7 @@ class TelegramAPIProxy:
             return True  # No scope defined → allow everything
         text_lower = (text or "").lower()
         for project in projects:
-            for topic in (project.focus_topics or []):
+            for topic in project.focus_topics or []:
                 if topic.lower() in text_lower:
                     return True
         return False
@@ -6483,6 +7102,7 @@ class TelegramAPIProxy:
     async def _handle_groups_command(self, chat_id: int, user_id: str) -> None:
         """Handle /groups — list groups this user belongs to."""
         from .collaborator_responses import format_groups_list
+
         teams = self._teams_config
         if teams is None:
             await self._send_owner_admin_notice(
@@ -6497,7 +7117,12 @@ class TelegramAPIProxy:
 
     async def _handle_groupinfo_command(self, chat_id: int, user_id: str, group_id: str) -> None:
         """Handle /groupinfo <group_id>."""
-        from .collaborator_responses import format_group_info, format_unknown_group, format_not_member
+        from .collaborator_responses import (
+            format_group_info,
+            format_not_member,
+            format_unknown_group,
+        )
+
         teams = self._teams_config
         if teams is None or not group_id:
             await self._send_owner_admin_notice(
@@ -6518,6 +7143,7 @@ class TelegramAPIProxy:
     async def _handle_projects_command(self, chat_id: int, user_id: str) -> None:
         """Handle /projects — list accessible projects."""
         from .collaborator_responses import format_projects_list
+
         teams = self._teams_config
         if teams is None:
             await self._send_owner_admin_notice(
@@ -6526,16 +7152,18 @@ class TelegramAPIProxy:
             )
             return
         user_projects = teams.get_user_projects(user_id)
-        await self._send_owner_admin_notice(
-            chat_id, format_projects_list(user_id, user_projects)
-        )
+        await self._send_owner_admin_notice(chat_id, format_projects_list(user_id, user_projects))
 
     async def _handle_addtogroup_command(
         self, chat_id: int, user_id: str, target_uid: str, group_id: str
     ) -> None:
         """Handle /addtogroup <user_id> <group_id> (owner only)."""
-        from .collaborator_responses import format_addtogroup_success, format_unknown_group
         from ..security.group_config import persist_group_member_add
+        from .collaborator_responses import (
+            format_addtogroup_success,
+            format_unknown_group,
+        )
+
         if not target_uid or not group_id:
             await self._send_owner_admin_notice(
                 chat_id,
@@ -6551,8 +7179,12 @@ class TelegramAPIProxy:
             group.members.append(target_uid)
         persist_group_member_add(group_id, target_uid)
         # Also ensure the user is a recognized collaborator
-        if self._rbac and target_uid not in {str(u) for u in (self._rbac.collaborator_user_ids or [])}:
-            self._rbac.collaborator_user_ids = list(self._rbac.collaborator_user_ids or []) + [target_uid]
+        if self._rbac and target_uid not in {
+            str(u) for u in (self._rbac.collaborator_user_ids or [])
+        }:
+            self._rbac.collaborator_user_ids = list(self._rbac.collaborator_user_ids or []) + [
+                target_uid
+            ]
         await self._send_owner_admin_notice(
             chat_id, format_addtogroup_success(target_uid, group_id)
         )
@@ -6561,8 +7193,12 @@ class TelegramAPIProxy:
         self, chat_id: int, user_id: str, target_uid: str, group_id: str
     ) -> None:
         """Handle /rmfromgroup <user_id> <group_id> (owner or group admin)."""
-        from .collaborator_responses import format_rmfromgroup_success, format_unknown_group
         from ..security.group_config import persist_group_member_remove
+        from .collaborator_responses import (
+            format_rmfromgroup_success,
+            format_unknown_group,
+        )
+
         if not target_uid or not group_id:
             await self._send_owner_admin_notice(
                 chat_id,
@@ -6584,8 +7220,9 @@ class TelegramAPIProxy:
         self, chat_id: int, user_id: str, target: str, mode: str
     ) -> None:
         """Handle /setmode <group_id|user_id> <local_only|project_scoped|full_access> (owner only)."""
-        from .collaborator_responses import format_setmode_success
         from ..security.group_config import persist_group_collab_mode
+        from .collaborator_responses import format_setmode_success
+
         valid_modes = {"local_only", "project_scoped", "full_access"}
         if not target or mode not in valid_modes:
             await self._send_owner_admin_notice(
@@ -6615,8 +7252,9 @@ class TelegramAPIProxy:
                 # V9-4: Apply per-group safe_response_prefix if operator configured one.
                 try:
                     from gateway.ingest_api.state import app_state as _gs
-                    _rbac = getattr(_gs, 'rbac_config', None)
-                    _teams = getattr(_rbac, 'teams_config', None) if _rbac else None
+
+                    _rbac = getattr(_gs, "rbac_config", None)
+                    _teams = getattr(_rbac, "teams_config", None) if _rbac else None
                     if _teams:
                         _uid = self._collaborator_chat_ids.get(str(chat_id))
                         if _uid:
@@ -6636,6 +7274,7 @@ class TelegramAPIProxy:
                 # conversation appear in the SOC Command Center Activity tab.
                 try:
                     from gateway.ingest_api.state import app_state as _app_state
+
                     _tracker = getattr(_app_state, "collaborator_tracker", None)
                     if _tracker:
                         _collab_uid = self._collaborator_chat_ids.get(str(chat_id))
@@ -6653,7 +7292,9 @@ class TelegramAPIProxy:
                 except Exception as _te:
                     logger.debug("Outbound local-response tracker error (non-fatal): %s", _te)
         except Exception as e:
-            logger.warning("Failed to send collaborator safe-info response to chat %s: %s", chat_id, e)
+            logger.warning(
+                "Failed to send collaborator safe-info response to chat %s: %s", chat_id, e
+            )
             try:
                 await self._send_telegram_text(chat_id, _COLLABORATOR_UNAVAILABLE_NOTICE, retries=3)
             except Exception:
@@ -6691,7 +7332,6 @@ class TelegramAPIProxy:
         except Exception as e:
             logger.warning("Failed to send command-blocked notice to chat %s: %s", chat_id, e)
 
-
     async def _notify_user_blocked(self, chat_id: int, reason: str):
         """Send a user-friendly notification when a message is blocked."""
         try:
@@ -6704,7 +7344,7 @@ class TelegramAPIProxy:
                     "promptguard": "Your message was flagged as a potential prompt injection attempt.",
                     "prompt injection": "Your message was flagged as a potential prompt injection attempt.",
                     "browsersecurity": "Your message contained a potentially unsafe browser payload.",
-                    "rbac": "You don\'t have permission to perform this action.",
+                    "rbac": "You don't have permission to perform this action.",
                     "contextguard": "Your message was flagged for context manipulation.",
                     "filesandbox": "Your message referenced a restricted file path.",
                 }
@@ -6810,6 +7450,7 @@ class TelegramAPIProxy:
         _chunk_size = 65536
         _chunks: list[bytes] = []
         _total = 0
+
         def _read_chunks():
             nonlocal _total
             while True:

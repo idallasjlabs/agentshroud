@@ -208,7 +208,9 @@ class AuditChain:
         for i, entry in enumerate(self._entries):
             if entry.previous_hash != prev_hash:
                 return False, f"Entry {i} ({entry.id}): previous_hash mismatch"
-            expected_input = f"{entry.previous_hash}:{entry.content_hash}:{entry.direction}:{entry.timestamp}"
+            expected_input = (
+                f"{entry.previous_hash}:{entry.content_hash}:{entry.direction}:{entry.timestamp}"
+            )
             expected_hash = hashlib.sha256(expected_input.encode()).hexdigest()
             if entry.chain_hash != expected_hash:
                 return False, f"Entry {i} ({entry.id}): chain_hash mismatch (tampered)"
@@ -311,9 +313,7 @@ class SecurityPipeline:
         # Without PII sanitization, the pipeline would pass raw PII through
         # to agents — that's unacceptable.
         _REQUIRED_GUARDS = ("pii_sanitizer",)
-        missing_required = [
-            g for g in _REQUIRED_GUARDS if getattr(self, g) is None
-        ]
+        missing_required = [g for g in _REQUIRED_GUARDS if getattr(self, g) is None]
         if missing_required:
             raise RuntimeError(
                 f"SecurityPipeline cannot start: required guards missing: "
@@ -323,7 +323,15 @@ class SecurityPipeline:
         # Warn loudly about recommended guards that are absent.
         # These don't block startup but produce CRITICAL logs so operators
         # notice the degraded security posture immediately.
-        _RECOMMENDED_GUARDS = ("context_guard", "prompt_guard", "egress_filter", "outbound_filter", "canary_tripwire", "encoding_detector", "clamav_scanner")
+        _RECOMMENDED_GUARDS = (
+            "context_guard",
+            "prompt_guard",
+            "egress_filter",
+            "outbound_filter",
+            "canary_tripwire",
+            "encoding_detector",
+            "clamav_scanner",
+        )
         for guard_name in _RECOMMENDED_GUARDS:
             if getattr(self, guard_name) is None:
                 logger.critical(
@@ -366,20 +374,27 @@ class SecurityPipeline:
                 attacks = self.context_guard.analyze_message(agent_id, message)
                 for attack in attacks:
                     if attack.attack_type == "repetition_attack":
-                        logger.info("ContextGuard: repetition noted (not blocking): %s", attack.description)
+                        logger.info(
+                            "ContextGuard: repetition noted (not blocking): %s", attack.description
+                        )
                         continue
                     if attack.severity in ("critical", "high"):
                         if is_owner:
                             logger.info(
                                 "ContextGuard: owner message would be blocked (%s — %s) — allowing",
-                                attack.attack_type, attack.description,
+                                attack.attack_type,
+                                attack.description,
                             )
                             continue
                         result.action = PipelineAction.BLOCK
                         result.blocked = True
-                        result.block_reason = f"ContextGuard: {attack.attack_type} — {attack.description}"
+                        result.block_reason = (
+                            f"ContextGuard: {attack.attack_type} — {attack.description}"
+                        )
                         self._stats["inbound_blocked"] += 1
-                        entry = await self.audit_chain.append_block(message, "inbound_context_blocked", metadata)
+                        entry = await self.audit_chain.append_block(
+                            message, "inbound_context_blocked", metadata
+                        )
                         result.audit_entry_id = entry.id
                         result.audit_hash = entry.chain_hash
                         result.processing_time_ms = (time.time() - start) * 1000
@@ -412,10 +427,14 @@ class SecurityPipeline:
                 else:
                     result.action = PipelineAction.BLOCK
                     result.blocked = True
-                    result.block_reason = f"Prompt injection detected (score={scan.score}, patterns={scan.patterns})"
+                    result.block_reason = (
+                        f"Prompt injection detected (score={scan.score}, patterns={scan.patterns})"
+                    )
                     self._stats["inbound_blocked"] += 1
                     # Still audit blocked messages
-                    entry = await self.audit_chain.append_block(message, "inbound_blocked", metadata)
+                    entry = await self.audit_chain.append_block(
+                        message, "inbound_blocked", metadata
+                    )
                     result.audit_entry_id = entry.id
                     result.audit_hash = entry.chain_hash
                     result.processing_time_ms = (time.time() - start) * 1000
@@ -451,7 +470,8 @@ class SecurityPipeline:
                     elif hc_result.is_uncertain:
                         logger.warning(
                             "HeuristicClassifier: uncertain (prob=%.2f) from %s — allowing with log",
-                            hc_result.probability, source,
+                            hc_result.probability,
+                            source,
                         )
                 except Exception as exc:
                     logger.error("HeuristicClassifier error: %s", exc)
@@ -472,7 +492,11 @@ class SecurityPipeline:
         if self.clamav_scanner and not result.blocked:
             import base64
             import re as _re
-            _b64_chunks = _re.findall(r"(?:[A-Za-z0-9+/]{4}){64,}(?:[A-Za-z0-9+/]{2}==|[A-Za-z0-9+/]{3}=)?", result.sanitized_message)
+
+            _b64_chunks = _re.findall(
+                r"(?:[A-Za-z0-9+/]{4}){64,}(?:[A-Za-z0-9+/]{2}==|[A-Za-z0-9+/]{3}=)?",
+                result.sanitized_message,
+            )
             for _chunk in _b64_chunks:
                 try:
                     _decoded = base64.b64decode(_chunk)
@@ -489,14 +513,17 @@ class SecurityPipeline:
                             result.block_reason = f"ClamAV: malware detected — {_sigs}"
                             self._stats["inbound_blocked"] += 1
                             entry = await self.audit_chain.append_block(
-                                message, "inbound_clamav_blocked",
+                                message,
+                                "inbound_clamav_blocked",
                                 {**(metadata or {}), "signatures": _sigs},
                             )
                             result.audit_entry_id = entry.id
                             result.audit_hash = entry.chain_hash
                             result.processing_time_ms = (time.time() - start) * 1000
                             logger.critical(
-                                "ClamAV BLOCKED inbound from agent=%s: signatures=%s", agent_id, _sigs
+                                "ClamAV BLOCKED inbound from agent=%s: signatures=%s",
+                                agent_id,
+                                _sigs,
                             )
                             return result
                 except Exception:
@@ -527,9 +554,7 @@ class SecurityPipeline:
             result.action = PipelineAction.QUEUE_APPROVAL
             result.queued_for_approval = True
             self._stats["inbound_queued"] += 1
-            entry = self.audit_chain.append(
-                result.sanitized_message, "inbound_queued", metadata
-            )
+            entry = self.audit_chain.append(result.sanitized_message, "inbound_queued", metadata)
             result.audit_entry_id = entry.id
             result.audit_hash = entry.chain_hash
             result.processing_time_ms = (time.time() - start) * 1000
@@ -564,9 +589,7 @@ class SecurityPipeline:
 
         # Step 0: Strip Claude XML internal blocks
         if self.pii_sanitizer:
-            filtered_response, xml_filtered = self.pii_sanitizer.filter_xml_blocks(
-                response
-            )
+            filtered_response, xml_filtered = self.pii_sanitizer.filter_xml_blocks(response)
             if xml_filtered:
                 result.sanitized_message = filtered_response
                 response = filtered_response
@@ -586,18 +609,18 @@ class SecurityPipeline:
             filter_result = self.outbound_filter.filter_response(
                 response_text=result.sanitized_message,
                 user_trust_level=user_trust_level,
-                source=source
+                source=source,
             )
-            
+
             result.sanitized_message = filter_result.filtered_text
             result.info_filter_redactions = filter_result.categories_found
             result.info_filter_redaction_count = filter_result.redaction_count
             result.info_disclosure_risk = filter_result.risk_level
-            
+
             if filter_result.matches:
                 self._stats["outbound_info_filtered"] += 1
                 self._stats["info_redactions_total"] += filter_result.redaction_count
-                
+
                 # Log high-risk responses for additional review
                 if filter_result.risk_level == "high":
                     logger.warning(
@@ -611,7 +634,9 @@ class SecurityPipeline:
         # the substring is insufficient — the surrounding context is still deceptive.
         # Replace the entire response with a clean fallback and block delivery.
         if self.outbound_filter and filter_result.matches:
-            fabricated = [m for m in filter_result.matches if m.pattern_name == "fabricated_security_notice"]
+            fabricated = [
+                m for m in filter_result.matches if m.pattern_name == "fabricated_security_notice"
+            ]
             if fabricated:
                 result.action = PipelineAction.BLOCK
                 result.blocked = True
@@ -629,7 +654,8 @@ class SecurityPipeline:
                 result.processing_time_ms = (time.time() - start) * 1000
                 logger.warning(
                     "Fabricated security notice blocked from %s: %d match(es)",
-                    source, len(fabricated),
+                    source,
+                    len(fabricated),
                 )
                 return result
 
@@ -649,14 +675,14 @@ class SecurityPipeline:
                         result.sanitized_message = pp_result.redacted_text
                         logger.info(
                             "PromptProtection: %d redaction(s) applied, risk_score=%.1f (source=%s)",
-                            len(pp_result.redactions_made), pp_result.risk_score, source,
+                            len(pp_result.redactions_made),
+                            pp_result.risk_score,
+                            source,
                         )
                     if pp_result.risk_score > 100:
                         result.action = PipelineAction.BLOCK
                         result.blocked = True
-                        result.block_reason = (
-                            f"PromptProtection: critical disclosure risk_score={pp_result.risk_score}"
-                        )
+                        result.block_reason = f"PromptProtection: critical disclosure risk_score={pp_result.risk_score}"
                         self._stats["outbound_blocked"] += 1
                         entry = await self.audit_chain.append_block(
                             result.sanitized_message, "outbound_pp_blocked", metadata
@@ -692,19 +718,20 @@ class SecurityPipeline:
         # Step 1.7: Canary Tripwire (Final Defense)
         if self.canary_tripwire:
             tripwire_result = self.canary_tripwire.scan_response(
-                response_text=result.sanitized_message,
-                source=source
+                response_text=result.sanitized_message, source=source
             )
-            
+
             if tripwire_result.is_blocked:
                 # BLOCK the entire response - no redaction, complete block
                 result.action = PipelineAction.BLOCK
                 result.blocked = True
                 result.canary_blocked = True
-                result.block_reason = f"Canary tripwire triggered: {len(tripwire_result.detections)} detections"
+                result.block_reason = (
+                    f"Canary tripwire triggered: {len(tripwire_result.detections)} detections"
+                )
                 result.canary_detections = tripwire_result.detections
                 self._stats["canary_blocked"] += 1
-                
+
                 # Audit the block (guaranteed persistence — canary triggers are critical)
                 entry = await self.audit_chain.append_block(
                     f"CANARY_BLOCKED: {len(tripwire_result.detections)} detections",
@@ -714,14 +741,14 @@ class SecurityPipeline:
                 result.audit_entry_id = entry.id
                 result.audit_hash = entry.chain_hash
                 result.processing_time_ms = (time.time() - start) * 1000
-                
+
                 # Log critical alert
                 logger.critical(
                     f"CANARY TRIPWIRE BLOCKED RESPONSE from {source}: "
                     f"{len(tripwire_result.detections)} canary detections, "
                     f"methods={tripwire_result.scan_methods_used}"
                 )
-                
+
                 return result
 
         # Step 1.75: Enhanced tool result sanitizer — strip exfil patterns from outbound content
@@ -744,7 +771,9 @@ class SecurityPipeline:
                 if not is_owner_outbound:
                     result.action = PipelineAction.BLOCK
                     result.blocked = True
-                    result.block_reason = f"Security module error (EnhancedToolResultSanitizer): {exc}"
+                    result.block_reason = (
+                        f"Security module error (EnhancedToolResultSanitizer): {exc}"
+                    )
                     self._stats["outbound_blocked"] += 1
                     entry = self.audit_chain.append(
                         f"MODULE_ERROR: EnhancedToolResultSanitizer: {exc}",
@@ -759,13 +788,17 @@ class SecurityPipeline:
         # Step 1.8: OutputCanary — check for leaked canary tokens in responses
         if self.output_canary:
             try:
-                canary_result = self.output_canary.check_response(agent_id, result.sanitized_message)
+                canary_result = self.output_canary.check_response(
+                    agent_id, result.sanitized_message
+                )
                 if canary_result.canary_detected:
                     logger.critical(
                         "OutputCanary: canary token detected in response from %s — "
                         "method=%s risk=%s incident=%s",
-                        source, canary_result.detection_method,
-                        canary_result.risk_level, canary_result.incident_id,
+                        source,
+                        canary_result.detection_method,
+                        canary_result.risk_level,
+                        canary_result.incident_id,
                     )
                     # High risk detections block; medium/low are logged only
                     if canary_result.risk_level in ("high", "critical"):
@@ -859,22 +892,23 @@ class SecurityPipeline:
 
     def verify_audit_chain(self) -> tuple[bool, str]:
         return self.audit_chain.verify_chain()
+
     def set_global_mode(self, mode: str) -> None:
         """Set global observatory mode for all security modules.
-        
+
         Args:
             mode: "monitor" or "enforce"
         """
         # Update components that support mode switching
         if hasattr(self.pii_sanitizer, "set_mode"):
             self.pii_sanitizer.set_mode(mode)
-        
+
         if hasattr(self.prompt_guard, "set_mode"):
             self.prompt_guard.set_mode(mode)
-        
+
         if hasattr(self.egress_filter, "set_mode"):
             self.egress_filter.set_mode(mode)
-        
+
         # Update prompt guard thresholds based on mode
         if self.prompt_guard:
             if mode == "monitor":

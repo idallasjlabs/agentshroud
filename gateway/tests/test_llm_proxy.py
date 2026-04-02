@@ -52,9 +52,7 @@ async def test_filter_outbound_streaming_filters_openai_delta_content():
     proxy = LLMProxy(sanitizer=sanitizer)
 
     event = {
-        "choices": [
-            {"delta": {"content": "before <function_calls>doit</function_calls> after"}}
-        ]
+        "choices": [{"delta": {"content": "before <function_calls>doit</function_calls> after"}}]
     }
     stream = f"data: {json.dumps(event)}\ndata: [DONE]\n".encode("utf-8")
 
@@ -63,7 +61,7 @@ async def test_filter_outbound_streaming_filters_openai_delta_content():
 
     assert "[XML BLOCKED]" in decoded
     assert "<function_calls>" not in decoded
-    assert 'data: [DONE]' in decoded
+    assert "data: [DONE]" in decoded
 
 
 @pytest.mark.asyncio

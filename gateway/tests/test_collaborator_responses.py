@@ -4,22 +4,23 @@
 from __future__ import annotations
 
 import pytest
+
 from gateway.proxy.collaborator_responses import (
-    COLLAB_UNAVAILABLE,
-    COLLAB_OUTSIDE_SCOPE,
     COLLAB_NO_GROUPS,
     COLLAB_NO_PROJECTS,
-    format_groups_list,
-    format_group_info,
-    format_projects_list,
+    COLLAB_OUTSIDE_SCOPE,
+    COLLAB_UNAVAILABLE,
+    build_project_context_injection,
     format_addtogroup_success,
+    format_already_member,
+    format_group_info,
+    format_groups_list,
+    format_no_permission,
+    format_not_member,
+    format_projects_list,
     format_rmfromgroup_success,
     format_setmode_success,
     format_unknown_group,
-    format_not_member,
-    format_already_member,
-    format_no_permission,
-    build_project_context_injection,
 )
 from gateway.security.group_config import GroupConfig, ProjectConfig, TeamsConfig
 

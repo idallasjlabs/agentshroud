@@ -60,8 +60,10 @@ async def verify_image(
     cmd = [
         cosign_path,
         "verify",
-        "--certificate-oidc-issuer", certificate_oidc_issuer,
-        "--certificate-identity-regexp", certificate_identity_regexp,
+        "--certificate-oidc-issuer",
+        certificate_oidc_issuer,
+        "--certificate-identity-regexp",
+        certificate_identity_regexp,
         image_ref,
     ]
 

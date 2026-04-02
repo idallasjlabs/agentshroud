@@ -19,6 +19,7 @@ Usage:
                      duration_hours=4)
   mgr.is_delegated("456", DelegationPrivilege.EGRESS_APPROVAL)  # True
 """
+
 from __future__ import annotations
 
 import fcntl
@@ -42,8 +43,10 @@ _DELEGATIONS_FILE = _DATA_DIR / "delegations.json"
 # Domain types
 # ---------------------------------------------------------------------------
 
+
 class DelegationPrivilege(str, Enum):
     """Subset of privileges that can be delegated by the owner."""
+
     EGRESS_APPROVAL = "egress_approval"
     USER_MANAGEMENT = "user_management"
 
@@ -55,11 +58,12 @@ class DelegationError(ValueError):
 @dataclass
 class Delegation:
     """A single time-bounded privilege delegation record."""
+
     id: str
-    delegated_by: str       # owner user_id
-    delegated_to: str       # target user_id
-    privilege: str          # DelegationPrivilege value (str for easy JSON round-trip)
-    expires_at: float       # Unix timestamp
+    delegated_by: str  # owner user_id
+    delegated_to: str  # target user_id
+    privilege: str  # DelegationPrivilege value (str for easy JSON round-trip)
+    expires_at: float  # Unix timestamp
     created_at: float = field(default_factory=time.time)
 
     @property
@@ -84,6 +88,7 @@ class Delegation:
 # ---------------------------------------------------------------------------
 # Manager
 # ---------------------------------------------------------------------------
+
 
 class DelegationManager:
     """Manages owner-away privilege delegations.
@@ -159,7 +164,11 @@ class DelegationManager:
 
         logger.info(
             "Delegation created: %s → %s priv=%s ttl=%.1fh id=%s",
-            owner_id, to_user_id, privilege.value, duration_hours, d.id,
+            owner_id,
+            to_user_id,
+            privilege.value,
+            duration_hours,
+            d.id,
         )
         return d
 
@@ -175,7 +184,8 @@ class DelegationManager:
         """Revoke all delegations for a specific user. Returns count removed."""
         self._require_owner(owner_id)
         ids_to_remove = [
-            did for did, d in self._delegations.items()
+            did
+            for did, d in self._delegations.items()
             if d.delegated_to == to_user_id and d.is_active
         ]
         for did in ids_to_remove:
@@ -202,17 +212,19 @@ class DelegationManager:
     def get_delegations_for_user(self, user_id: str) -> List[Delegation]:
         """Return all active delegations held by a specific user."""
         self._cleanup_expired()
-        return [
-            d for d in self._delegations.values()
-            if d.delegated_to == user_id and d.is_active
-        ]
+        return [d for d in self._delegations.values() if d.delegated_to == user_id and d.is_active]
 
     def cleanup_expired(self) -> int:
         """Remove expired delegations, persist result. Returns count removed."""
         expired = [did for did, d in self._delegations.items() if not d.is_active]
         for did in expired:
             d = self._delegations.pop(did)
-            logger.debug("Delegation expired and pruned: id=%s user=%s priv=%s", did, d.delegated_to, d.privilege)
+            logger.debug(
+                "Delegation expired and pruned: id=%s user=%s priv=%s",
+                did,
+                d.delegated_to,
+                d.privilege,
+            )
         if expired:
             self._save()
         return len(expired)
@@ -230,7 +242,8 @@ class DelegationManager:
     ) -> bool:
         priv_val = privilege.value if isinstance(privilege, DelegationPrivilege) else privilege
         matches = [
-            did for did, d in self._delegations.items()
+            did
+            for did, d in self._delegations.items()
             if d.delegated_to == to_user_id and d.privilege == priv_val and d.is_active
         ]
         for did in matches:

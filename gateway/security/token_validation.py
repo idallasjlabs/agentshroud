@@ -11,6 +11,7 @@ References:
     - Naik et al. 2026 (arXiv:2602.13477) - Token passthrough vulnerabilities
     - Maloyan & Namiot 2026 (arXiv:2601.17548) - MCP security analysis
 """
+
 from __future__ import annotations
 
 import base64
@@ -18,20 +19,24 @@ import json
 import sqlite3
 import time
 from dataclasses import dataclass, field
-from typing import List, Optional, Dict, Any
+from typing import Any, Dict, List, Optional
 
 
 class TokenError(Exception):
     pass
 
+
 class AudienceMismatch(TokenError):
     pass
+
 
 class IssuerMismatch(TokenError):
     pass
 
+
 class ScopeViolation(TokenError):
     pass
+
 
 class TokenExpiredError(TokenError):
     pass
@@ -44,7 +49,9 @@ class TokenValidationResult:
 
 
 class TokenValidator:
-    def __init__(self, expected_audience: str, expected_issuer: str, audit_log_path: str = ":memory:"):
+    def __init__(
+        self, expected_audience: str, expected_issuer: str, audit_log_path: str = ":memory:"
+    ):
         self.expected_audience = expected_audience
         self.expected_issuer = expected_issuer
         self._db = sqlite3.connect(audit_log_path)
@@ -70,11 +77,15 @@ class TokenValidator:
             raise TokenError(f"Failed to decode token: {e}")
 
     def _log(self, decision: str, reason: str, claims: Dict):
-        self._db.execute("INSERT INTO audit_log (timestamp, decision, reason, claims) VALUES (?, ?, ?, ?)",
-                         (time.time(), decision, reason, json.dumps(claims, default=str)))
+        self._db.execute(
+            "INSERT INTO audit_log (timestamp, decision, reason, claims) VALUES (?, ?, ?, ?)",
+            (time.time(), decision, reason, json.dumps(claims, default=str)),
+        )
         self._db.commit()
 
-    def validate(self, token: str, required_scopes: Optional[List[str]] = None) -> TokenValidationResult:
+    def validate(
+        self, token: str, required_scopes: Optional[List[str]] = None
+    ) -> TokenValidationResult:
         try:
             claims = self._decode_token(token)
         except TokenError:
@@ -129,5 +140,10 @@ class TokenValidator:
         return TokenValidationResult(valid=True, claims=claims)
 
     def get_audit_log(self) -> List[Dict]:
-        cursor = self._db.execute("SELECT timestamp, decision, reason, claims FROM audit_log ORDER BY id")
-        return [{"timestamp": r[0], "decision": r[1], "reason": r[2], "claims": json.loads(r[3])} for r in cursor]
+        cursor = self._db.execute(
+            "SELECT timestamp, decision, reason, claims FROM audit_log ORDER BY id"
+        )
+        return [
+            {"timestamp": r[0], "decision": r[1], "reason": r[2], "claims": json.loads(r[3])}
+            for r in cursor
+        ]

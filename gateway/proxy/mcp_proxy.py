@@ -20,15 +20,15 @@ import logging
 import re
 import time
 import uuid
-from urllib.parse import urlparse
 from dataclasses import dataclass
 from typing import Any, Optional
+from urllib.parse import urlparse
 
+from ..approval_queue.enhanced_queue import EnhancedApprovalQueue
 from .mcp_audit import MCPAuditTrail
 from .mcp_config import MCPProxyConfig, MCPServerConfig, MCPTransport
 from .mcp_inspector import MCPInspector
 from .mcp_permissions import MCPPermissionManager
-from ..approval_queue.enhanced_queue import EnhancedApprovalQueue
 
 logger = logging.getLogger("agentshroud.proxy.mcp_proxy")
 
@@ -301,7 +301,9 @@ class MCPProxy:
         """Wire optional event bus for privacy/security telemetry."""
         self._event_bus = event_bus
 
-    async def _emit_privacy_event(self, event_type: str, summary: str, details: dict, severity: str = "warning") -> None:
+    async def _emit_privacy_event(
+        self, event_type: str, summary: str, details: dict, severity: str = "warning"
+    ) -> None:
         """Best-effort privacy event emission."""
         if self._event_bus is None:
             return
@@ -397,12 +399,9 @@ class MCPProxy:
                     tool_name=tool_call.tool_name,
                     success=not tool_result.is_error,
                     error_message=tool_result.error_message,
-                    result_summary=(
-                        str(tool_result.content)[:200] if tool_result.content else ""
-                    ),
+                    result_summary=(str(tool_result.content)[:200] if tool_result.content else ""),
                 )
             return result
-
 
         # === APPROVAL CHECK ===
         approved, denial_reason = await self.check_approval_required(tool_call)
@@ -485,9 +484,7 @@ class MCPProxy:
                 threat_level=inspection.threat_level.value,
                 blocked=True,
                 block_reason=inspection.block_reason,
-                pii_redacted=any(
-                    f.finding_type.value == "pii_leak" for f in inspection.findings
-                ),
+                pii_redacted=any(f.finding_type.value == "pii_leak" for f in inspection.findings),
                 call_id=tool_call.id,
             )
             return ProxyResult(
@@ -504,7 +501,9 @@ class MCPProxy:
 
         # 2.5. Egress policy check for URL-bearing tool parameters.
         if self.egress_filter:
-            for target in self._extract_egress_targets(inspection.sanitized_params or tool_call.parameters):
+            for target in self._extract_egress_targets(
+                inspection.sanitized_params or tool_call.parameters
+            ):
                 if hasattr(self.egress_filter, "check_async"):
                     attempt = await self.egress_filter.check_async(
                         agent_id=tool_call.agent_id,
@@ -516,9 +515,15 @@ class MCPProxy:
                         tool_call.agent_id,
                         target,
                     )
-                action = getattr(getattr(attempt, "action", None), "value", getattr(attempt, "action", ""))
+                action = getattr(
+                    getattr(attempt, "action", None), "value", getattr(attempt, "action", "")
+                )
                 if str(action).lower() == "deny":
-                    reason = getattr(attempt, "details", "") or getattr(attempt, "rule", "") or "egress policy denied"
+                    reason = (
+                        getattr(attempt, "details", "")
+                        or getattr(attempt, "rule", "")
+                        or "egress policy denied"
+                    )
                     block_reason = f"Egress blocked: {target} — {reason}"
                     self._stats["blocked"] += 1
                     entry = self.audit.log_tool_call(
@@ -546,9 +551,7 @@ class MCPProxy:
 
         # 3. Log allowed call
         self._stats["allowed"] += 1
-        pii_redacted = any(
-            f.finding_type.value == "pii_leak" for f in inspection.findings
-        )
+        pii_redacted = any(f.finding_type.value == "pii_leak" for f in inspection.findings)
         entry = self.audit.log_tool_call(
             agent_id=tool_call.agent_id,
             server_name=tool_call.server_name,
@@ -584,9 +587,11 @@ class MCPProxy:
                     check_pii=self.config.pii_scan_enabled,
                 )
                 sanitized_result = result_inspection.sanitized_result
-                sanitized_result, private_redacted, private_redaction_count = self._sanitize_admin_private_data(
-                    sanitized_result,
-                    tool_call.agent_id,
+                sanitized_result, private_redacted, private_redaction_count = (
+                    self._sanitize_admin_private_data(
+                        sanitized_result,
+                        tool_call.agent_id,
+                    )
                 )
                 if private_redacted:
                     self.permissions.record_private_data_redaction(
@@ -608,8 +613,7 @@ class MCPProxy:
                     )
                 result.sanitized_result = sanitized_result
                 result_pii = any(
-                    f.finding_type.value == "pii_leak"
-                    for f in result_inspection.findings
+                    f.finding_type.value == "pii_leak" for f in result_inspection.findings
                 )
             else:
                 result_pii = False
@@ -623,13 +627,9 @@ class MCPProxy:
                 tool_name=tool_call.tool_name,
                 success=not tool_result.is_error,
                 error_message=tool_result.error_message,
-                result_summary=(
-                    str(tool_result.content)[:200] if tool_result.content else ""
-                ),
+                result_summary=(str(tool_result.content)[:200] if tool_result.content else ""),
                 findings_count=(
-                    len(result_inspection.findings)
-                    if tool_result.content is not None
-                    else 0
+                    len(result_inspection.findings) if tool_result.content is not None else 0
                 ),
                 threat_level=(
                     result_inspection.threat_level.value
@@ -674,9 +674,7 @@ class MCPProxy:
                     server_name=tool_call.server_name,
                     tool_name=tool_call.tool_name,
                     is_error=True,
-                    error_message=response["error"].get(
-                        "message", str(response["error"])
-                    ),
+                    error_message=response["error"].get("message", str(response["error"])),
                 )
 
             return MCPToolResult(
@@ -724,9 +722,7 @@ class MCPProxy:
                 tool_name=tool_result.tool_name,
                 success=not tool_result.is_error,
                 error_message=tool_result.error_message,
-                result_summary=(
-                    str(tool_result.content)[:200] if tool_result.content else ""
-                ),
+                result_summary=(str(tool_result.content)[:200] if tool_result.content else ""),
             )
             return ProxyResult(
                 allowed=True,
@@ -742,9 +738,11 @@ class MCPProxy:
             check_pii=self.config.pii_scan_enabled,
         )
 
-        sanitized_result, private_redacted, private_redaction_count = self._sanitize_admin_private_data(
-            inspection.sanitized_result,
-            agent_id,
+        sanitized_result, private_redacted, private_redaction_count = (
+            self._sanitize_admin_private_data(
+                inspection.sanitized_result,
+                agent_id,
+            )
         )
         if private_redacted:
             self.permissions.record_private_data_redaction(
@@ -765,9 +763,7 @@ class MCPProxy:
                 severity="info",
             )
 
-        pii_redacted = any(
-            f.finding_type.value == "pii_leak" for f in inspection.findings
-        )
+        pii_redacted = any(f.finding_type.value == "pii_leak" for f in inspection.findings)
 
         self.audit.log_tool_result(
             call_id=tool_result.call_id,
@@ -776,9 +772,7 @@ class MCPProxy:
             tool_name=tool_result.tool_name,
             success=not tool_result.is_error,
             error_message=tool_result.error_message,
-            result_summary=(
-                str(tool_result.content)[:200] if tool_result.content else ""
-            ),
+            result_summary=(str(tool_result.content)[:200] if tool_result.content else ""),
             findings_count=len(inspection.findings),
             threat_level=inspection.threat_level.value,
             pii_redacted=(pii_redacted or private_redacted),
@@ -816,26 +810,26 @@ class MCPProxy:
         """Check if a tool call requires approval and wait for it if needed."""
         if not self.approval_queue:
             return True, None  # No approval queue configured, allow by default
-            
+
         # Check if tool requires approval
         request_id, requires_wait = await self.approval_queue.submit_tool_request(
-            tool_call.tool_name,
-            tool_call.parameters,
-            tool_call.agent_id
+            tool_call.tool_name, tool_call.parameters, tool_call.agent_id
         )
-        
+
         if not requires_wait:
             return True, None  # Tool doesn't require approval
-            
-        logger.info(f"Tool {tool_call.tool_name} requires approval, waiting for decision (request_id: {request_id})")
-        
+
+        logger.info(
+            f"Tool {tool_call.tool_name} requires approval, waiting for decision (request_id: {request_id})"
+        )
+
         # Wait for approval decision
         approved = await self.approval_queue.wait_for_decision(request_id)
-        
+
         if not approved:
             item = await self.approval_queue.get_item(request_id)
             status = item.status if item else "denied"
             reason = f"Tool call '{tool_call.tool_name}' requires human approval and was {status}. The operator has been notified. Do not attempt to work around this restriction."
             return False, reason
-            
+
         return True, None

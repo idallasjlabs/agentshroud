@@ -14,8 +14,8 @@ import json
 import logging
 import os
 import time
-from pathlib import Path
 from datetime import datetime, timezone
+from pathlib import Path
 from typing import Optional
 
 logger = logging.getLogger("agentshroud.security.collaborator_tracker")
@@ -45,10 +45,9 @@ class CollaboratorActivityTracker:
         self.log_path = log_path
         self.owner_user_id = str(owner_user_id)
         self.collaborator_ids: set[str] = {str(uid) for uid in (collaborator_ids or [])}
-        self.track_unknown_non_owner = (
-            str(os.environ.get("AGENTSHROUD_TRACK_ALL_NON_OWNER_ACTIVITY", "true")).strip().lower()
-            not in ("0", "false", "no", "off")
-        )
+        self.track_unknown_non_owner = str(
+            os.environ.get("AGENTSHROUD_TRACK_ALL_NON_OWNER_ACTIVITY", "true")
+        ).strip().lower() not in ("0", "false", "no", "off")
         self.contributor_log_dir = contributor_log_dir or Path(
             os.environ.get(
                 "AGENTSHROUD_CONTRIBUTOR_LOG_DIR",
@@ -165,7 +164,9 @@ class CollaboratorActivityTracker:
                         exc,
                     )
             if not wrote:
-                logger.warning("CollaboratorActivityTracker: contributor log write failed for all dirs")
+                logger.warning(
+                    "CollaboratorActivityTracker: contributor log write failed for all dirs"
+                )
         except OSError as exc:
             logger.warning("CollaboratorActivityTracker: contributor log write failed: %s", exc)
 

@@ -16,8 +16,7 @@ import json
 import logging
 import uuid
 from datetime import datetime, timedelta
-from typing import Optional
-from typing import Any
+from typing import Any, Optional
 
 import aiosqlite
 
@@ -282,9 +281,7 @@ class DataLedger:
                     )
                 )
 
-        return LedgerQueryResponse(
-            entries=entries, total=total, page=page, page_size=page_size
-        )
+        return LedgerQueryResponse(entries=entries, total=total, page=page, page_size=page_size)
 
     async def get_entry(self, entry_id: str) -> LedgerEntry | None:
         """Fetch a single ledger entry by ID
@@ -361,9 +358,7 @@ class DataLedger:
             stats["total_entries"] = row[0] if row else 0
 
         # By source
-        async with self.db.execute(
-            "SELECT source, COUNT(*) FROM ledger GROUP BY source"
-        ) as cursor:
+        async with self.db.execute("SELECT source, COUNT(*) FROM ledger GROUP BY source") as cursor:
             stats["by_source"] = {row[0]: row[1] async for row in cursor}
 
         # Sanitized vs not

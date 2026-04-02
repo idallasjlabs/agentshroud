@@ -6,8 +6,8 @@
 Log Sanitizer - Security Hardening Module
 Scrubs PII, credentials, and sensitive data from ALL log output.
 """
-from __future__ import annotations
 
+from __future__ import annotations
 
 import logging
 import re
@@ -33,12 +33,8 @@ class LogSanitizer(logging.Filter):
             "aws_access_key": re.compile(r"\bAKIA[0-9A-Z]{16}\b"),
             "github_token": re.compile(r"\bghp_[A-Za-z0-9]{36}\b"),
             "telegram_bot_token": re.compile(r"/bot\d{8,12}:[A-Za-z0-9_-]{30,}/"),
-            "jwt_token": re.compile(
-                r"\beyJ[A-Za-z0-9_-]+\.eyJ[A-Za-z0-9_-]+\.[A-Za-z0-9_-]+"
-            ),
-            "api_key_generic": re.compile(
-                r'\b[Aa]pi[_-]?[Kk]ey["\s:=]+[A-Za-z0-9+/]{20,}\b'
-            ),
+            "jwt_token": re.compile(r"\beyJ[A-Za-z0-9_-]+\.eyJ[A-Za-z0-9_-]+\.[A-Za-z0-9_-]+"),
+            "api_key_generic": re.compile(r'\b[Aa]pi[_-]?[Kk]ey["\s:=]+[A-Za-z0-9+/]{20,}\b'),
             # Credential Patterns in Code/Configs
             "password_assignment": re.compile(
                 r'password\s*[:=]\s*["\']?[^"\'\s]{3,}["\']?', re.IGNORECASE
@@ -57,9 +53,7 @@ class LogSanitizer(logging.Filter):
             "windows_user_paths": re.compile(r"C:\\Users\\[^\\s]+\\", re.IGNORECASE),
             # 1Password CLI output (op command)
             "op_command_output": re.compile(r"op\s+[^|;\n&]+"),
-            "op_vault_content": re.compile(
-                r'"[^"]*":\s*"[^"]*"'
-            ),  # JSON-like op output
+            "op_vault_content": re.compile(r'"[^"]*":\s*"[^"]*"'),  # JSON-like op output
             # Internal structure leakage
             "internal_paths": re.compile(r"/opt/[a-zA-Z0-9_-]+/[^\s]*"),
             "docker_paths": re.compile(r"/var/lib/docker/[^\s]*"),

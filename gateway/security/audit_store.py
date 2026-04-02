@@ -64,6 +64,7 @@ class AuditEvent:
     def _generate_event_id(self) -> str:
         """Generate a unique event ID based on timestamp + random."""
         import uuid
+
         return f"audit_{int(datetime.now().timestamp())}_{str(uuid.uuid4())[24:]}"
 
     def to_dict(self) -> dict:
@@ -231,13 +232,15 @@ class AuditStore:
         """Return the most recent audit entries (alias for query_events with limit)."""
         return await self.query_events(limit=limit)
 
-    async def verify_hash_chain(self, start_id: Optional[str] = None, limit: int = 1000) -> tuple[bool, str]:
+    async def verify_hash_chain(
+        self, start_id: Optional[str] = None, limit: int = 1000
+    ) -> tuple[bool, str]:
         """Verify the integrity of the hash chain.
-        
+
         Args:
             start_id: Start verification from this event ID (None = from beginning)
             limit: Maximum number of events to verify
-            
+
         Returns:
             Tuple of (is_valid, message)
         """
@@ -250,8 +253,11 @@ class AuditStore:
         params = []
 
         if start_id:
-            query = query.replace("ORDER BY id ASC", """WHERE id >= (SELECT id FROM audit_events WHERE event_id = ?)
-                                                            ORDER BY id ASC""")
+            query = query.replace(
+                "ORDER BY id ASC",
+                """WHERE id >= (SELECT id FROM audit_events WHERE event_id = ?)
+                                                            ORDER BY id ASC""",
+            )
             params.append(start_id)
 
         if limit:
@@ -280,12 +286,18 @@ class AuditStore:
 
             # Verify previous hash chain
             if stored_prev_hash != expected_prev_hash:
-                return False, f"Hash chain broken at event {event.event_id}: expected prev_hash {expected_prev_hash}, got {stored_prev_hash}"
+                return (
+                    False,
+                    f"Hash chain broken at event {event.event_id}: expected prev_hash {expected_prev_hash}, got {stored_prev_hash}",
+                )
 
             # Verify entry hash
             computed_hash = event.compute_entry_hash(stored_prev_hash)
             if computed_hash != stored_entry_hash:
-                return False, f"Entry hash mismatch at event {event.event_id}: expected {computed_hash}, got {stored_entry_hash}"
+                return (
+                    False,
+                    f"Entry hash mismatch at event {event.event_id}: expected {computed_hash}, got {stored_entry_hash}",
+                )
 
             expected_prev_hash = stored_entry_hash
             verified_count += 1
@@ -314,9 +326,7 @@ class AuditStore:
         )
         severity_counts = dict(await cursor.fetchall())
 
-        cursor = await self._db.execute(
-            "SELECT MIN(timestamp), MAX(timestamp) FROM audit_events"
-        )
+        cursor = await self._db.execute("SELECT MIN(timestamp), MAX(timestamp) FROM audit_events")
         time_range = await cursor.fetchone()
 
         return {

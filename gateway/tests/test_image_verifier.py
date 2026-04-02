@@ -8,6 +8,7 @@ Covers:
   - verify_image: timeout → verified=False, error="timeout"
   - verify_images: multiple images, mixed results
 """
+
 from __future__ import annotations
 
 import asyncio

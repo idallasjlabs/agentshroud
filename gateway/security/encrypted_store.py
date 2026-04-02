@@ -8,8 +8,8 @@ Encrypted Memory Store — AES-256-GCM encryption for data at rest.
 Provides EncryptedStore class for encrypting audit ledger entries,
 cached PII, and memory/state files. Supports key rotation.
 """
-from __future__ import annotations
 
+from __future__ import annotations
 
 import base64
 import ctypes
@@ -19,9 +19,9 @@ import struct
 from pathlib import Path
 from typing import Optional, Union
 
+from cryptography.hazmat.primitives import hashes
 from cryptography.hazmat.primitives.ciphers.aead import AESGCM
 from cryptography.hazmat.primitives.kdf.pbkdf2 import PBKDF2HMAC
-from cryptography.hazmat.primitives import hashes
 
 # Blob format: version(1) + salt(16) + nonce(12) + key_id(4) + ciphertext(...)
 BLOB_VERSION = 1
@@ -42,9 +42,7 @@ def _secure_zero(buffer: Union[bytes, bytearray]) -> None:
         return
     try:
         if isinstance(buffer, bytearray):
-            ctypes.memset(
-                (ctypes.c_char * len(buffer)).from_buffer(buffer), 0, len(buffer)
-            )
+            ctypes.memset((ctypes.c_char * len(buffer)).from_buffer(buffer), 0, len(buffer))
         else:
             # For bytes: use ctypes to find and zero the internal buffer
             # This is CPython-specific defense-in-depth

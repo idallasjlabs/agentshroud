@@ -6,15 +6,15 @@
 
 Design: log-and-allow for ambiguous cases, block only clear threats.
 """
-from __future__ import annotations
 
+from __future__ import annotations
 
 import logging
 import re
 from copy import deepcopy
 from dataclasses import dataclass, field
 from enum import Enum
-from typing import Any, Optional, Dict, List
+from typing import Any, Dict, List, Optional
 
 logger = logging.getLogger(__name__)
 
@@ -119,9 +119,7 @@ class InspectionResult:
             ThreatLevel.MEDIUM: 1,
             ThreatLevel.HIGH: 2,
         }
-        return max(
-            self.findings, key=lambda f: threat_order[f.threat_level]
-        ).threat_level
+        return max(self.findings, key=lambda f: threat_order[f.threat_level]).threat_level
 
 
 # ---------------------------------------------------------------------------
@@ -152,8 +150,13 @@ class MCPInspector:
         findings: List[InspectionFinding] = []
 
         self._scan_value(
-            params, "params", findings,
-            check_injection, check_pii, check_encoding, check_sensitive,
+            params,
+            "params",
+            findings,
+            check_injection,
+            check_pii,
+            check_encoding,
+            check_sensitive,
         )
 
         sanitized_params = self._redact_pii(params) if check_pii else deepcopy(params)
@@ -187,14 +190,24 @@ class MCPInspector:
 
         findings: List[InspectionFinding] = []
         self._scan_value(
-            result_content, "result", findings,
+            result_content,
+            "result",
+            findings,
             check_injection=False,
             check_pii=check_pii,
             check_encoding=check_encoding,
             check_sensitive=False,
         )
 
-        sanitized = self._redact_pii(result_content) if check_pii else deepcopy(result_content) if isinstance(result_content, (dict, list)) else result_content
+        sanitized = (
+            self._redact_pii(result_content)
+            if check_pii
+            else (
+                deepcopy(result_content)
+                if isinstance(result_content, (dict, list))
+                else result_content
+            )
+        )
 
         result = InspectionResult(
             blocked=False,  # results are never blocked, only redacted
@@ -222,20 +235,35 @@ class MCPInspector:
         """Recursively scan a value, appending findings in-place."""
         if isinstance(value, str):
             self._scan_text(
-                value, path, findings,
-                check_injection, check_pii, check_encoding, check_sensitive,
+                value,
+                path,
+                findings,
+                check_injection,
+                check_pii,
+                check_encoding,
+                check_sensitive,
             )
         elif isinstance(value, dict):
             for k, v in value.items():
                 self._scan_value(
-                    v, f"{path}.{k}", findings,
-                    check_injection, check_pii, check_encoding, check_sensitive,
+                    v,
+                    f"{path}.{k}",
+                    findings,
+                    check_injection,
+                    check_pii,
+                    check_encoding,
+                    check_sensitive,
                 )
         elif isinstance(value, list):
             for i, item in enumerate(value):
                 self._scan_value(
-                    item, f"{path}[{i}]", findings,
-                    check_injection, check_pii, check_encoding, check_sensitive,
+                    item,
+                    f"{path}[{i}]",
+                    findings,
+                    check_injection,
+                    check_pii,
+                    check_encoding,
+                    check_sensitive,
                 )
 
     def _scan_text(
@@ -252,75 +280,91 @@ class MCPInspector:
         if check_injection:
             for pattern in _INJECTION_HIGH:
                 if pattern.search(text):
-                    findings.append(InspectionFinding(
-                        finding_type=FindingType.INJECTION,
-                        threat_level=ThreatLevel.HIGH,
-                        field_path=path,
-                        description="Prompt injection pattern detected",
-                        matched_value=FindingType.INJECTION.value,
-                    ))
+                    findings.append(
+                        InspectionFinding(
+                            finding_type=FindingType.INJECTION,
+                            threat_level=ThreatLevel.HIGH,
+                            field_path=path,
+                            description="Prompt injection pattern detected",
+                            matched_value=FindingType.INJECTION.value,
+                        )
+                    )
                     break  # one injection finding per field
 
         if check_pii:
             for match in _SSN.finditer(text):
-                findings.append(InspectionFinding(
-                    finding_type=FindingType.PII_LEAK,
-                    threat_level=ThreatLevel.HIGH,
-                    field_path=path,
-                    description="Social Security Number detected",
-                    matched_value="US_SSN",
-                ))
+                findings.append(
+                    InspectionFinding(
+                        finding_type=FindingType.PII_LEAK,
+                        threat_level=ThreatLevel.HIGH,
+                        field_path=path,
+                        description="Social Security Number detected",
+                        matched_value="US_SSN",
+                    )
+                )
 
             for match in _CREDIT_CARD.finditer(text):
                 # Avoid re-matching SSNs captured as 16-digit sequences
                 raw = match.group(0).replace("-", "").replace(" ", "")
                 if len(raw) == 16:
-                    findings.append(InspectionFinding(
-                        finding_type=FindingType.PII_LEAK,
-                        threat_level=ThreatLevel.HIGH,
-                        field_path=path,
-                        description="Credit card number detected",
-                        matched_value="CREDIT_CARD",
-                    ))
+                    findings.append(
+                        InspectionFinding(
+                            finding_type=FindingType.PII_LEAK,
+                            threat_level=ThreatLevel.HIGH,
+                            field_path=path,
+                            description="Credit card number detected",
+                            matched_value="CREDIT_CARD",
+                        )
+                    )
 
             for match in _EMAIL.finditer(text):
-                findings.append(InspectionFinding(
-                    finding_type=FindingType.PII_LEAK,
-                    threat_level=ThreatLevel.LOW,
-                    field_path=path,
-                    description="Email address detected",
-                    matched_value="EMAIL",
-                ))
+                findings.append(
+                    InspectionFinding(
+                        finding_type=FindingType.PII_LEAK,
+                        threat_level=ThreatLevel.LOW,
+                        field_path=path,
+                        description="Email address detected",
+                        matched_value="EMAIL",
+                    )
+                )
 
         if check_encoding:
             # Large opaque blob (potential base64 payload)
-            if len(text) > _LARGE_BLOB_THRESHOLD and not re.search(r"\s", text[:_LARGE_BLOB_THRESHOLD]):
-                findings.append(InspectionFinding(
-                    finding_type=FindingType.SUSPICIOUS_ENCODING,
-                    threat_level=ThreatLevel.MEDIUM,
-                    field_path=path,
-                    description="Suspicious large opaque payload detected",
-                ))
+            if len(text) > _LARGE_BLOB_THRESHOLD and not re.search(
+                r"\s", text[:_LARGE_BLOB_THRESHOLD]
+            ):
+                findings.append(
+                    InspectionFinding(
+                        finding_type=FindingType.SUSPICIOUS_ENCODING,
+                        threat_level=ThreatLevel.MEDIUM,
+                        field_path=path,
+                        description="Suspicious large opaque payload detected",
+                    )
+                )
 
             # Heavy URL encoding
             url_enc_count = len(_URL_ENCODED.findall(text))
             if url_enc_count >= _URL_ENCODING_COUNT_THRESHOLD:
-                findings.append(InspectionFinding(
-                    finding_type=FindingType.SUSPICIOUS_ENCODING,
-                    threat_level=ThreatLevel.MEDIUM,
-                    field_path=path,
-                    description=f"Heavy URL encoding detected ({url_enc_count} sequences)",
-                ))
+                findings.append(
+                    InspectionFinding(
+                        finding_type=FindingType.SUSPICIOUS_ENCODING,
+                        threat_level=ThreatLevel.MEDIUM,
+                        field_path=path,
+                        description=f"Heavy URL encoding detected ({url_enc_count} sequences)",
+                    )
+                )
 
         if check_sensitive:
             for pattern in _SENSITIVE_OP:
                 if pattern.search(text):
-                    findings.append(InspectionFinding(
-                        finding_type=FindingType.SENSITIVE_OP,
-                        threat_level=ThreatLevel.MEDIUM,
-                        field_path=path,
-                        description="Potentially sensitive operation pattern detected",
-                    ))
+                    findings.append(
+                        InspectionFinding(
+                            finding_type=FindingType.SENSITIVE_OP,
+                            threat_level=ThreatLevel.MEDIUM,
+                            field_path=path,
+                            description="Potentially sensitive operation pattern detected",
+                        )
+                    )
                     break  # one sensitive-op finding per field
 
     # ------------------------------------------------------------------
@@ -332,7 +376,11 @@ class MCPInspector:
         if isinstance(value, str):
             value = _SSN.sub("REDACTED_SSN", value)
             value = _CREDIT_CARD.sub(
-                lambda m: "REDACTED_CC" if len(m.group(0).replace("-", "").replace(" ", "")) == 16 else m.group(0),
+                lambda m: (
+                    "REDACTED_CC"
+                    if len(m.group(0).replace("-", "").replace(" ", "")) == 16
+                    else m.group(0)
+                ),
                 value,
             )
             # Emails (LOW threat) are NOT redacted
@@ -348,9 +396,7 @@ class MCPInspector:
     # Blocking decision
     # ------------------------------------------------------------------
 
-    def _should_block(
-        self, findings: List[InspectionFinding]
-    ) -> tuple[bool, str]:
+    def _should_block(self, findings: List[InspectionFinding]) -> tuple[bool, str]:
         """Decide whether to block based on findings and mode."""
         if self.strict_mode:
             high = [f for f in findings if f.threat_level == ThreatLevel.HIGH]
@@ -361,7 +407,8 @@ class MCPInspector:
 
         # Default mode: only HIGH injection blocks
         injections = [
-            f for f in findings
+            f
+            for f in findings
             if f.finding_type == FindingType.INJECTION and f.threat_level == ThreatLevel.HIGH
         ]
         if injections:

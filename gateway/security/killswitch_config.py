@@ -24,43 +24,41 @@ class KillSwitchConfig:
     # Verification Schedule
     verification_interval: timedelta = timedelta(days=30)  # Monthly verification
     verification_timeout: timedelta = timedelta(seconds=30)  # Timeout for kill switch checks
-    
+
     # Heartbeat Monitoring
     heartbeat_interval: timedelta = timedelta(minutes=5)  # How often to check heartbeat
     heartbeat_timeout: timedelta = timedelta(seconds=10)  # Max response time for heartbeat
     heartbeat_miss_threshold: int = 3  # Consecutive misses before alert
-    
+
     # Anomaly Detection Thresholds
     max_tool_calls_per_minute: int = 20  # Excessive tool usage
     max_tokens_per_hour: int = 100000  # Excessive token usage
     max_requests_per_minute: int = 30  # Rapid-fire requests
     memory_threshold_mb: int = 1024  # Memory usage alert threshold
     cpu_threshold_percent: float = 80.0  # CPU usage alert threshold
-    
+
     # File Paths
     killswitch_script_path: Path = Path("/app/docker/scripts/killswitch.sh")
     verification_log_path: Path = Path("/var/log/security/killswitch_verification.jsonl")
     heartbeat_log_path: Path = Path("/var/log/security/heartbeat.jsonl")
-    
+
     # Alert Settings
     alert_on_verification_failure: bool = True
     alert_on_heartbeat_miss: bool = True
     alert_on_anomaly: bool = True
     alert_severity: str = "CRITICAL"
-    
+
     # Test Configuration
     dry_run_enabled: bool = False  # Live enforcement; set KILLSWITCH_DRY_RUN=true to override
     test_freeze_mode: bool = True  # Test freeze mode by default
     test_shutdown_mode: bool = False  # Test shutdown mode (more disruptive)
     test_disconnect_mode: bool = False  # Test disconnect mode (most disruptive)
-    
+
     @classmethod
     def from_env(cls) -> "KillSwitchConfig":
         """Load configuration from environment variables."""
         return cls(
-            verification_interval=timedelta(
-                days=int(os.getenv("KILLSWITCH_VERIFY_DAYS", "30"))
-            ),
+            verification_interval=timedelta(days=int(os.getenv("KILLSWITCH_VERIFY_DAYS", "30"))),
             verification_timeout=timedelta(
                 seconds=int(os.getenv("KILLSWITCH_VERIFY_TIMEOUT", "30"))
             ),
@@ -70,35 +68,27 @@ class KillSwitchConfig:
             heartbeat_timeout=timedelta(
                 seconds=int(os.getenv("KILLSWITCH_HEARTBEAT_TIMEOUT", "10"))
             ),
-            heartbeat_miss_threshold=int(
-                os.getenv("KILLSWITCH_HEARTBEAT_MISS_THRESHOLD", "3")
-            ),
-            max_tool_calls_per_minute=int(
-                os.getenv("KILLSWITCH_MAX_TOOL_CALLS_PER_MIN", "20")
-            ),
-            max_tokens_per_hour=int(
-                os.getenv("KILLSWITCH_MAX_TOKENS_PER_HOUR", "100000")
-            ),
-            max_requests_per_minute=int(
-                os.getenv("KILLSWITCH_MAX_REQUESTS_PER_MIN", "30")
-            ),
-            memory_threshold_mb=int(
-                os.getenv("KILLSWITCH_MEMORY_THRESHOLD_MB", "1024")
-            ),
-            cpu_threshold_percent=float(
-                os.getenv("KILLSWITCH_CPU_THRESHOLD_PERCENT", "80.0")
-            ),
+            heartbeat_miss_threshold=int(os.getenv("KILLSWITCH_HEARTBEAT_MISS_THRESHOLD", "3")),
+            max_tool_calls_per_minute=int(os.getenv("KILLSWITCH_MAX_TOOL_CALLS_PER_MIN", "20")),
+            max_tokens_per_hour=int(os.getenv("KILLSWITCH_MAX_TOKENS_PER_HOUR", "100000")),
+            max_requests_per_minute=int(os.getenv("KILLSWITCH_MAX_REQUESTS_PER_MIN", "30")),
+            memory_threshold_mb=int(os.getenv("KILLSWITCH_MEMORY_THRESHOLD_MB", "1024")),
+            cpu_threshold_percent=float(os.getenv("KILLSWITCH_CPU_THRESHOLD_PERCENT", "80.0")),
             killswitch_script_path=Path(
                 os.getenv("KILLSWITCH_SCRIPT_PATH", "/app/docker/scripts/killswitch.sh")
             ),
             verification_log_path=Path(
-                os.getenv("KILLSWITCH_VERIFY_LOG", "/var/log/security/killswitch_verification.jsonl")
+                os.getenv(
+                    "KILLSWITCH_VERIFY_LOG", "/var/log/security/killswitch_verification.jsonl"
+                )
             ),
             heartbeat_log_path=Path(
                 os.getenv("KILLSWITCH_HEARTBEAT_LOG", "/var/log/security/heartbeat.jsonl")
             ),
-            alert_on_verification_failure=os.getenv("KILLSWITCH_ALERT_VERIFY_FAIL", "true").lower() == "true",
-            alert_on_heartbeat_miss=os.getenv("KILLSWITCH_ALERT_HEARTBEAT_MISS", "true").lower() == "true",
+            alert_on_verification_failure=os.getenv("KILLSWITCH_ALERT_VERIFY_FAIL", "true").lower()
+            == "true",
+            alert_on_heartbeat_miss=os.getenv("KILLSWITCH_ALERT_HEARTBEAT_MISS", "true").lower()
+            == "true",
             alert_on_anomaly=os.getenv("KILLSWITCH_ALERT_ANOMALY", "true").lower() == "true",
             alert_severity=os.getenv("KILLSWITCH_ALERT_SEVERITY", "CRITICAL"),
             dry_run_enabled=os.getenv("KILLSWITCH_DRY_RUN", "false").lower() == "true",

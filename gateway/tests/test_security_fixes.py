@@ -10,18 +10,19 @@ Covers:
 - CRITICAL-3: Dashboard cookie-based auth with redirect
 - CRITICAL-4: PII sanitization in approval queue details
 """
+
 from __future__ import annotations
 
+from unittest.mock import AsyncMock, patch
 
 import pytest
 import pytest_asyncio
-from unittest.mock import patch, AsyncMock
-from httpx import AsyncClient, ASGITransport
+from httpx import ASGITransport, AsyncClient
 from starlette.testclient import TestClient
 from starlette.websockets import WebSocketDisconnect
-from gateway.ingest_api.routes.dashboard import _create_ws_token
 
 from gateway.ingest_api.main import app, app_state, lifespan
+from gateway.ingest_api.routes.dashboard import _create_ws_token
 
 
 @pytest_asyncio.fixture
@@ -49,8 +50,9 @@ class TestSSHStrictHostKeyChecking:
 
     def test_strict_host_key_checking_in_source(self):
         """Source code uses StrictHostKeyChecking=yes"""
-        from gateway.ssh_proxy.proxy import SSHProxy
         import inspect
+
+        from gateway.ssh_proxy.proxy import SSHProxy
 
         source = inspect.getsource(SSHProxy.execute)
         assert "StrictHostKeyChecking=yes" in source
@@ -59,8 +61,8 @@ class TestSSHStrictHostKeyChecking:
     @pytest.mark.asyncio
     async def test_ssh_command_uses_strict_checking(self):
         """SSH execute builds command with StrictHostKeyChecking=yes"""
-        from gateway.ssh_proxy.proxy import SSHProxy
         from gateway.ingest_api.ssh_config import SSHConfig, SSHHostConfig
+        from gateway.ssh_proxy.proxy import SSHProxy
 
         config = SSHConfig(
             enabled=True,
@@ -89,9 +91,7 @@ class TestSSHStrictHostKeyChecking:
             proc.returncode = 0
             return proc
 
-        with patch(
-            "asyncio.create_subprocess_exec", side_effect=mock_create_subprocess
-        ):
+        with patch("asyncio.create_subprocess_exec", side_effect=mock_create_subprocess):
             await proxy.execute("testhost", "echo hello")
 
         # Verify StrictHostKeyChecking=yes is in the command
@@ -119,9 +119,7 @@ class TestWebSocketHandshakeAuth:
 
     def test_ws_approvals_accepts_valid_token(self, sync_client):
         """WS /ws/approvals accepts valid token in query param"""
-        with sync_client.websocket_connect(
-            "/ws/approvals?token=test-token-12345"
-        ) as ws:
+        with sync_client.websocket_connect("/ws/approvals?token=test-token-12345") as ws:
             msg = ws.receive_json()
             assert msg["type"] == "authenticated"
 
@@ -208,8 +206,8 @@ class TestApprovalQueuePIISanitization:
     async def test_ssh_approval_sanitizes_command_pii(self, client):
         """SSH exec requiring approval sanitizes PII in command before storing"""
         # Configure SSH proxy to require approval
-        from gateway.ssh_proxy.proxy import SSHProxy
         from gateway.ingest_api.ssh_config import SSHConfig, SSHHostConfig
+        from gateway.ssh_proxy.proxy import SSHProxy
 
         config = SSHConfig(
             enabled=True,

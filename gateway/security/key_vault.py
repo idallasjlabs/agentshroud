@@ -154,9 +154,7 @@ class KeyInjector:
     def __init__(self, vault: KeyVault):
         self.vault = vault
 
-    def inject_for_request(
-        self, url: str, headers: dict, agent_id: str, key_name: str
-    ) -> dict:
+    def inject_for_request(self, url: str, headers: dict, agent_id: str, key_name: str) -> dict:
         key = self.vault.get_key(key_name, agent_id)
         result = dict(headers)
         if key:
@@ -174,9 +172,7 @@ class KeyLeakDetector:
         matched = self.vault.check_value_match(text)
         for name in matched:
             leaked.append(name)
-            self.vault._log_audit(
-                name, "", "leak_detected", "key found in outbound content"
-            )
+            self.vault._log_audit(name, "", "leak_detected", "key found in outbound content")
 
         # Check generic patterns
         if not leaked:

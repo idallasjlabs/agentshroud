@@ -3,8 +3,8 @@
 # Protected by common law trademark rights. Federal trademark registration pending.
 # Unauthorized reproduction, distribution, or use of the AgentShroud name or brand is strictly prohibited.
 """Performance Baseline Tests — latency and throughput benchmarks."""
-from __future__ import annotations
 
+from __future__ import annotations
 
 import tempfile
 import time
@@ -98,9 +98,7 @@ class TestPromptGuardPerformance:
 
     def test_1000_messages_under_5s(self, guard):
         """Scan 1000 messages in under 5 seconds."""
-        messages = (CLEAN_MESSAGES + PII_MESSAGES + INJECTION_MESSAGES) * (
-            1000 // 15 + 1
-        )
+        messages = (CLEAN_MESSAGES + PII_MESSAGES + INJECTION_MESSAGES) * (1000 // 15 + 1)
         messages = messages[:1000]
 
         start = time.perf_counter()
@@ -114,9 +112,7 @@ class TestPromptGuardPerformance:
         """Injection attempts should be detected even under load."""
         results = [guard.scan(msg) for msg in INJECTION_MESSAGES * 20]
         # All injection messages should score above warn threshold
-        assert all(
-            r.score >= 0.4 for r in results
-        ), "Some injection attempts were not detected"
+        assert all(r.score >= 0.4 for r in results), "Some injection attempts were not detected"
 
 
 class TestAuditChainPerformance:
@@ -149,9 +145,7 @@ class TestAuditChainPerformance:
             )
         elapsed = time.perf_counter() - start
 
-        assert (
-            elapsed < 20.0
-        ), f"Audit chain writes took {elapsed:.2f}s (limit: 20s on ARM64)"
+        assert elapsed < 20.0, f"Audit chain writes took {elapsed:.2f}s (limit: 20s on ARM64)"
 
     @pytest.mark.asyncio
     async def test_query_after_1000_entries(self, ledger):
@@ -298,9 +292,7 @@ class TestSecurityPipelineChainLatency:
         msg = "Analyze the quarterly revenue report and flag anomalies."
         start = time.perf_counter()
         # Use read_file action (BASIC trust) so trust check passes without warmup
-        result = await pipeline.process_inbound(
-            msg, agent_id="bench-agent", action="read_file"
-        )
+        result = await pipeline.process_inbound(msg, agent_id="bench-agent", action="read_file")
         elapsed = time.perf_counter() - start
 
         assert not result.blocked, f"Unexpected block: {result.block_reason}"
@@ -323,9 +315,7 @@ class TestSecurityPipelineChainLatency:
         messages = CLEAN_MESSAGES * 20  # 100 messages
         start = time.perf_counter()
         for msg in messages:
-            await pipeline.process_inbound(
-                msg, agent_id="bench-agent", action="read_file"
-            )
+            await pipeline.process_inbound(msg, agent_id="bench-agent", action="read_file")
         elapsed = time.perf_counter() - start
 
         assert elapsed < 5.0, f"100 inbound messages: {elapsed:.2f}s (limit: 5s)"
@@ -349,9 +339,7 @@ class TestSecurityPipelineChainLatency:
         results = []
         for msg in messages:
             results.append(
-                await pipeline.process_inbound(
-                    msg, agent_id="bench-agent", action="read_file"
-                )
+                await pipeline.process_inbound(msg, agent_id="bench-agent", action="read_file")
             )
         elapsed = time.perf_counter() - start
 
@@ -410,18 +398,14 @@ class TestBenchmarkBaseline:
         messages = CLEAN_MESSAGES * 20
         start = time.perf_counter()
         for msg in messages:
-            await pipeline.process_inbound(
-                msg, agent_id="baseline-agent", action="read_file"
-            )
+            await pipeline.process_inbound(msg, agent_id="baseline-agent", action="read_file")
         benchmarks["100_inbound_s"] = round(time.perf_counter() - start, 3)
 
         # Benchmark 4: 100 PII messages
         pii_msgs = PII_MESSAGES * 20
         start = time.perf_counter()
         for msg in pii_msgs:
-            await pipeline.process_inbound(
-                msg, agent_id="baseline-agent", action="read_file"
-            )
+            await pipeline.process_inbound(msg, agent_id="baseline-agent", action="read_file")
         benchmarks["100_pii_inbound_s"] = round(time.perf_counter() - start, 3)
 
         # Benchmark 5: 1000 prompt guard scans

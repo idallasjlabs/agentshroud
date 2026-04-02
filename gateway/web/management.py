@@ -16,8 +16,12 @@ from fastapi import APIRouter, Depends, HTTPException
 from fastapi.responses import HTMLResponse
 from pydantic import BaseModel
 
+from ..security.egress_config import (
+    EgressFilterConfig,
+    get_egress_config,
+    set_egress_config,
+)
 from .api import require_auth
-from ..security.egress_config import get_egress_config, set_egress_config, EgressFilterConfig
 
 logger = logging.getLogger("agentshroud.web.management")
 
@@ -35,7 +39,7 @@ async def dashboard():
     return HTMLResponse(template.read_text())
 
 
-@router.get("/dashboard", response_class=HTMLResponse) 
+@router.get("/dashboard", response_class=HTMLResponse)
 async def dashboard_main():
     """Serve the main dashboard page."""
     template = Path(__file__).parent / "templates" / "dashboard.html"
@@ -916,12 +920,14 @@ async def killswitch():
 # Pydantic models for egress management
 class EgressAllowlistUpdate(BaseModel):
     """Request model for updating egress allowlist."""
+
     domains: list[str]
     mode: str = "enforce"  # "enforce" or "monitor"
 
 
 class EgressAllowlistResponse(BaseModel):
     """Response model for egress allowlist."""
+
     domains: list[str]
     mode: str
     denylist: list[str]
@@ -932,9 +938,7 @@ async def get_egress_allowlist():
     """Get current egress allowlist configuration."""
     config = get_egress_config()
     return EgressAllowlistResponse(
-        domains=config.default_allowlist,
-        mode=config.mode,
-        denylist=config.default_denylist
+        domains=config.default_allowlist, mode=config.mode, denylist=config.default_denylist
     )
 
 
@@ -943,14 +947,11 @@ async def update_egress_allowlist(update: EgressAllowlistUpdate):
     """Update egress allowlist configuration (owner only)."""
     # Validate mode
     if update.mode not in ("enforce", "monitor"):
-        raise HTTPException(
-            status_code=400, 
-            detail="Mode must be 'enforce' or 'monitor'"
-        )
-    
+        raise HTTPException(status_code=400, detail="Mode must be 'enforce' or 'monitor'")
+
     # Get current config
     current_config = get_egress_config()
-    
+
     # Create updated config
     new_config = EgressFilterConfig(
         mode=update.mode,
@@ -959,18 +960,20 @@ async def update_egress_allowlist(update: EgressAllowlistUpdate):
         agent_allowlists=current_config.agent_allowlists,
         allowed_ips=current_config.allowed_ips,
         allowed_ports=current_config.allowed_ports,
-        strict_mode=current_config.strict_mode
+        strict_mode=current_config.strict_mode,
     )
-    
+
     # Update global config
     set_egress_config(new_config)
-    
+
     return {
-        "status": "success", 
+        "status": "success",
         "message": f"Egress allowlist updated with {len(update.domains)} domains in {update.mode} mode",
         "domains": update.domains,
-        "mode": update.mode
+        "mode": update.mode,
     }
+
+
 # =====================================================# Credential Rotation Management (R-22)
 # =====================================================
 @router.get("/credentials/status")
@@ -978,14 +981,14 @@ async def credentials_status():
     """Get status of all managed credentials including age and rotation schedule."""
     from gateway.security.key_rotation import KeyRotationManager
     from gateway.security.key_rotation_config import KeyRotationConfig
-    
+
     # Initialize with default config
     # In production, this would be loaded from persistent storage
     manager = KeyRotationManager(KeyRotationConfig())
-    
+
     return {
         "credentials": manager.get_all_credentials_status(),
-        "health": manager.get_health_score()
+        "health": manager.get_health_score(),
     }
 
 
@@ -994,23 +997,17 @@ async def rotate_credential(credential_id: str, force: bool = False):
     """Trigger manual rotation for a specific credential (owner only)."""
     from gateway.security.key_rotation import KeyRotationManager
     from gateway.security.key_rotation_config import KeyRotationConfig
-    
+
     manager = KeyRotationManager(KeyRotationConfig())
-    
+
     if credential_id not in manager._credentials:
-        raise HTTPException(
-            status_code=404,
-            detail=f"Credential {credential_id} not found"
-        )
-    
+        raise HTTPException(status_code=404, detail=f"Credential {credential_id} not found")
+
     result = await manager.rotate_credential(credential_id, force=force)
-    
+
     if not result["success"]:
-        raise HTTPException(
-            status_code=400,
-            detail=result["error"]
-        )
-    
+        raise HTTPException(status_code=400, detail=result["error"])
+
     return result
 
 
@@ -1019,6 +1016,6 @@ async def credentials_health():
     """Get overall credential health score and status summary."""
     from gateway.security.key_rotation import KeyRotationManager
     from gateway.security.key_rotation_config import KeyRotationConfig
-    
+
     manager = KeyRotationManager(KeyRotationConfig())
     return manager.get_health_score()

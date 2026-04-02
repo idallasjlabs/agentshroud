@@ -35,10 +35,15 @@ class WebhookReceiver:
     process_webhook method can be called directly.
     """
 
-    def __init__(self, pipeline=None, forwarder=None, session_manager=None,
-                 workspace_path: str = "/app/workspace",
-                 webhook_secret: Optional[str] = None,
-                 owner_user_id: Optional[str] = None):
+    def __init__(
+        self,
+        pipeline=None,
+        forwarder=None,
+        session_manager=None,
+        workspace_path: str = "/app/workspace",
+        webhook_secret: Optional[str] = None,
+        owner_user_id: Optional[str] = None,
+    ):
         self.pipeline = pipeline
         self.forwarder = forwarder
         self.webhook_secret = webhook_secret
@@ -52,16 +57,18 @@ class WebhookReceiver:
                     # Use config-driven owner_user_id; fall back to RBACConfig default
                     if owner_user_id is None:
                         from gateway.security.rbac_config import RBACConfig
+
                         owner_user_id = RBACConfig().owner_user_id
                     self.session_manager = UserSessionManager(
-                        base_workspace=base_workspace,
-                        owner_user_id=owner_user_id
+                        base_workspace=base_workspace, owner_user_id=owner_user_id
                     )
                 else:
                     logger.warning("Cannot create workspace directory - session isolation disabled")
                     self.session_manager = None
             except Exception as e:
-                logger.warning(f"Failed to initialize session manager: {e} - session isolation disabled")
+                logger.warning(
+                    f"Failed to initialize session manager: {e} - session isolation disabled"
+                )
                 self.session_manager = None
         else:
             self.session_manager = session_manager
@@ -72,7 +79,7 @@ class WebhookReceiver:
                 "X-Telegram-Bot-Api-Secret-Token validation is disabled. "
                 "Set webhook_secret in config to enable signature verification."
             )
-            
+
         self._stats = {
             "webhooks_received": 0,
             "webhooks_forwarded": 0,
@@ -139,14 +146,15 @@ class WebhookReceiver:
             # Store user message in conversation history
             self.session_manager.add_conversation_message(
                 user_id=user_id,
-                role="user", 
+                role="user",
                 content=message_text,
-                metadata={"source": source, "timestamp": time.time()}
+                metadata={"source": source, "timestamp": time.time()},
             )
 
         # Record collaborator activity at gateway level (before pipeline processing)
         try:
             from gateway.ingest_api.state import app_state as _app_state
+
             _tracker = getattr(_app_state, "collaborator_tracker", None)
             if _tracker and user_id:
                 _username = self._extract_username(payload, source)
@@ -164,11 +172,7 @@ class WebhookReceiver:
                 message=message_text,
                 agent_id=agent_id,
                 source=source,
-                metadata={
-                    "webhook_source": source,
-                    "user_id": user_id,
-                    "session_isolated": True
-                },
+                metadata={"webhook_source": source, "user_id": user_id, "session_isolated": True},
             )
 
             if result.blocked:
@@ -210,7 +214,7 @@ class WebhookReceiver:
                             user_id=user_id,
                             role="assistant",
                             content=forward_result.body,
-                            metadata={"source": source, "timestamp": time.time()}
+                            metadata={"source": source, "timestamp": time.time()},
                         )
 
                     if forward_result.body and self.pipeline:
@@ -223,19 +227,19 @@ class WebhookReceiver:
                             "response": outbound.sanitized_message,
                             "inbound_sanitized": result.pii_redaction_count > 0,
                             "outbound_sanitized": outbound.pii_redaction_count > 0,
-                            "user_id": user_id
+                            "user_id": user_id,
                         }
 
                     return {
                         "status": "forwarded",
                         "response": forward_result.body,
-                        "user_id": user_id
+                        "user_id": user_id,
                     }
                 else:
                     return {
                         "status": "forward_error",
                         "error": forward_result.error,
-                        "user_id": user_id
+                        "user_id": user_id,
                     }
 
             return {
@@ -243,7 +247,7 @@ class WebhookReceiver:
                 "sanitized": result.sanitized_message,
                 "pii_stripped": result.pii_redaction_count > 0,
                 "audit_id": result.audit_entry_id,
-                "user_id": user_id
+                "user_id": user_id,
             }
 
         logger.warning("Webhook received with no pipeline configured!")
@@ -256,24 +260,26 @@ class WebhookReceiver:
         # Get session context
         session_context = self.session_manager.get_session_context(user_id)
         session_prompt = self.session_manager.get_session_prompt_addition(user_id)
-        
+
         # Create modified payload with session context
         session_payload = self._replace_message(original_payload, sanitized_message)
-        
+
         # Inject session context into the payload
         if "session_context" not in session_payload:
             session_payload["session_context"] = {}
-            
-        session_payload["session_context"].update({
-            "user_id": user_id,
-            "workspace_path": session_context["workspace_path"],
-            "memory_path": session_context["memory_path"],
-            "trust_level": session_context["trust_level"],
-            "conversation_history": session_context["conversation_history"],
-            "isolation_prompt": session_prompt,
-            "workspace_restricted": True
-        })
-        
+
+        session_payload["session_context"].update(
+            {
+                "user_id": user_id,
+                "workspace_path": session_context["workspace_path"],
+                "memory_path": session_context["memory_path"],
+                "trust_level": session_context["trust_level"],
+                "conversation_history": session_context["conversation_history"],
+                "isolation_prompt": session_prompt,
+                "workspace_restricted": True,
+            }
+        )
+
         return session_payload
 
     @staticmethod

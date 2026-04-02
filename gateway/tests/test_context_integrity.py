@@ -1,13 +1,20 @@
 # Copyright © 2026 Isaiah Dallas Jefferson, Jr. AgentShroud™. All rights reserved.
 """Tests for ContextIntegrityScorer (C21)."""
+
 from __future__ import annotations
 
 import time
-import pytest
 from unittest.mock import MagicMock
 
-from gateway.security.context_integrity import ContextIntegrityScorer, IntegrityScore, _ALERT_THRESHOLD, _LOCKDOWN_THRESHOLD
+import pytest
+
 from gateway.security.context_guard import ContextSegment
+from gateway.security.context_integrity import (
+    _ALERT_THRESHOLD,
+    _LOCKDOWN_THRESHOLD,
+    ContextIntegrityScorer,
+    IntegrityScore,
+)
 from gateway.security.prompt_guard import PromptGuard, SystemPromptFingerprint
 
 
@@ -79,6 +86,7 @@ class TestContextIntegrityScorer:
     def test_below_alert_threshold_logs_warning(self, scorer, caplog):
         """Score below 0.6 should produce a warning log."""
         import logging
+
         # Build context that maximally fails: tampered hashes + injection + duplicate
         seg1 = _make_segment(source="system", trust_level="TRUSTED", content_hash="b" * 64)
         seg2 = _make_segment(source="tool_result", trust_level="UNTRUSTED", content_hash="b" * 64)

@@ -1,9 +1,17 @@
 # Copyright (c) 2026 Isaiah Dallas Jefferson, Jr. AgentShroud\u2122
 from __future__ import annotations
+
 import base64
 import codecs
+
 import pytest
-from gateway.security.canary_tripwire import CanaryTripwire, CanaryConfig, TripwireResponse
+
+from gateway.security.canary_tripwire import (
+    CanaryConfig,
+    CanaryTripwire,
+    TripwireResponse,
+)
+
 
 class TestCanaryTripwire:
     def setup_method(self):

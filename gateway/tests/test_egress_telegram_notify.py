@@ -1,10 +1,12 @@
 # Copyright © 2026 Isaiah Dallas Jefferson, Jr. AgentShroud™. All rights reserved.
 """Tests for Egress Firewall Telegram inline button notifications."""
 
-import pytest
-from unittest.mock import patch, MagicMock
 import json
-from datetime import datetime, timezone, timedelta
+from datetime import datetime, timedelta, timezone
+from unittest.mock import MagicMock, patch
+
+import pytest
+
 from gateway.proxy.telegram_egress_notify import EgressTelegramNotifier
 
 
@@ -13,10 +15,7 @@ class TestEgressTelegramNotify:
 
     @pytest.fixture
     def notifier(self):
-        return EgressTelegramNotifier(
-            bot_token="test_token",
-            owner_chat_id="123456789"
-        )
+        return EgressTelegramNotifier(bot_token="test_token", owner_chat_id="123456789")
 
     @pytest.mark.asyncio
     async def test_notify_pending_success(self, notifier):
@@ -30,7 +29,7 @@ class TestEgressTelegramNotify:
                 port=443,
                 risk_level="medium",
                 agent_id="bot-1",
-                tool_name="web_fetch"
+                tool_name="web_fetch",
             )
 
             assert result is True
@@ -48,8 +47,12 @@ class TestEgressTelegramNotify:
         """Test notification handles API failure gracefully."""
         with patch.object(notifier, "_async_send", side_effect=Exception("Network error")):
             result = await notifier.notify_pending(
-                request_id="fail123", domain="evil.com", port=80,
-                risk_level="high", agent_id="bot-1", tool_name="exec"
+                request_id="fail123",
+                domain="evil.com",
+                port=80,
+                risk_level="high",
+                agent_id="bot-1",
+                tool_name="exec",
             )
             assert result is False
 
@@ -57,8 +60,10 @@ class TestEgressTelegramNotify:
     async def test_handle_callback_approve_permanent(self, notifier):
         """Test handling permanent (allow_always) approval callback."""
         notifier.pending_requests["req1"] = {
-            "domain": "api.example.com", "port": 443,
-            "risk_level": "low", "agent_id": "bot",
+            "domain": "api.example.com",
+            "port": 443,
+            "risk_level": "low",
+            "agent_id": "bot",
             "tool_name": "web_fetch",
             "timestamp": datetime.now(timezone.utc).isoformat(),
         }
@@ -74,8 +79,10 @@ class TestEgressTelegramNotify:
     async def test_handle_callback_approve_1h(self, notifier):
         """Test handling 1-hour time-limited approval callback."""
         notifier.pending_requests["req2"] = {
-            "domain": "cdn.example.com", "port": 443,
-            "risk_level": "medium", "agent_id": "bot",
+            "domain": "cdn.example.com",
+            "port": 443,
+            "risk_level": "medium",
+            "agent_id": "bot",
             "tool_name": "web_search",
             "timestamp": datetime.now(timezone.utc).isoformat(),
         }
@@ -89,8 +96,10 @@ class TestEgressTelegramNotify:
     async def test_handle_callback_approve_4h(self, notifier):
         """Test handling 4-hour time-limited approval callback."""
         notifier.pending_requests["req4h"] = {
-            "domain": "cdn.example.com", "port": 443,
-            "risk_level": "low", "agent_id": "bot",
+            "domain": "cdn.example.com",
+            "port": 443,
+            "risk_level": "low",
+            "agent_id": "bot",
             "tool_name": "web_fetch",
             "timestamp": datetime.now(timezone.utc).isoformat(),
         }
@@ -104,8 +113,10 @@ class TestEgressTelegramNotify:
     async def test_handle_callback_deny(self, notifier):
         """Test handling deny callback."""
         notifier.pending_requests["req3"] = {
-            "domain": "evil.com", "port": 80,
-            "risk_level": "high", "agent_id": "bot",
+            "domain": "evil.com",
+            "port": 80,
+            "risk_level": "high",
+            "agent_id": "bot",
             "tool_name": "exec",
             "timestamp": datetime.now(timezone.utc).isoformat(),
         }
@@ -134,12 +145,20 @@ class TestEgressTelegramNotify:
         new_time = datetime.now(timezone.utc).isoformat()
 
         notifier.pending_requests["old1"] = {
-            "domain": "old.com", "port": 80, "risk_level": "low",
-            "agent_id": "bot", "tool_name": "test", "timestamp": old_time,
+            "domain": "old.com",
+            "port": 80,
+            "risk_level": "low",
+            "agent_id": "bot",
+            "tool_name": "test",
+            "timestamp": old_time,
         }
         notifier.pending_requests["new1"] = {
-            "domain": "new.com", "port": 443, "risk_level": "low",
-            "agent_id": "bot", "tool_name": "test", "timestamp": new_time,
+            "domain": "new.com",
+            "port": 443,
+            "risk_level": "low",
+            "agent_id": "bot",
+            "tool_name": "test",
+            "timestamp": new_time,
         }
 
         removed = notifier.cleanup_expired(max_age_seconds=300)
@@ -154,11 +173,14 @@ class TestEgressTelegramNotify:
             mock_send.return_value = {"ok": True}
             result = await notifier.answer_callback("cb123", "Approved!")
             assert result is True
-            mock_send.assert_called_once_with("answerCallbackQuery", {
-                "callback_query_id": "cb123",
-                "text": "Approved!",
-                "show_alert": False,
-            })
+            mock_send.assert_called_once_with(
+                "answerCallbackQuery",
+                {
+                    "callback_query_id": "cb123",
+                    "text": "Approved!",
+                    "show_alert": False,
+                },
+            )
 
     @pytest.mark.asyncio
     async def test_answer_callback_error(self, notifier):
@@ -176,6 +198,7 @@ class TestEgressTelegramNotify:
     def test_risk_emoji_mapping(self, notifier):
         """Test risk level emoji display."""
         from gateway.proxy.telegram_egress_notify import RISK_EMOJI
+
         assert RISK_EMOJI["low"] == "🟢"
         assert RISK_EMOJI["medium"] == "🟡"
         assert RISK_EMOJI["high"] == "🔴"
@@ -185,8 +208,10 @@ class TestEgressTelegramNotify:
     async def test_handle_callback_returns_agent_id(self, notifier):
         """handle_callback must include agent_id so the proxy can notify the originating collaborator."""
         notifier.pending_requests["rid-collab"] = {
-            "domain": "example.com", "port": 443,
-            "risk_level": "yellow", "agent_id": "telegram_web_fetch:9876543210",
+            "domain": "example.com",
+            "port": 443,
+            "risk_level": "yellow",
+            "agent_id": "telegram_web_fetch:9876543210",
             "tool_name": "web_fetch",
             "timestamp": datetime.now(timezone.utc).isoformat(),
         }
@@ -198,8 +223,10 @@ class TestEgressTelegramNotify:
     async def test_handle_callback_allow_always_returns_agent_id(self, notifier):
         """Permanent approval also includes agent_id in result."""
         notifier.pending_requests["rid-perm"] = {
-            "domain": "api.safe.com", "port": 443,
-            "risk_level": "low", "agent_id": "telegram_web_fetch:1111111111",
+            "domain": "api.safe.com",
+            "port": 443,
+            "risk_level": "low",
+            "agent_id": "telegram_web_fetch:1111111111",
             "tool_name": "web_fetch",
             "timestamp": datetime.now(timezone.utc).isoformat(),
         }
@@ -211,8 +238,10 @@ class TestEgressTelegramNotify:
     async def test_handle_callback_deny_returns_agent_id(self, notifier):
         """Denial result also includes agent_id so collaborator can be notified."""
         notifier.pending_requests["rid-deny"] = {
-            "domain": "evil.com", "port": 80,
-            "risk_level": "high", "agent_id": "telegram_web_fetch:2222222222",
+            "domain": "evil.com",
+            "port": 80,
+            "risk_level": "high",
+            "agent_id": "telegram_web_fetch:2222222222",
             "tool_name": "exec",
             "timestamp": datetime.now(timezone.utc).isoformat(),
         }
@@ -224,7 +253,8 @@ class TestEgressTelegramNotify:
     async def test_handle_callback_missing_agent_id_safe(self, notifier):
         """Missing agent_id in stored request returns empty string, not a crash."""
         notifier.pending_requests["rid-noagent"] = {
-            "domain": "example.com", "port": 443,
+            "domain": "example.com",
+            "port": 443,
             "risk_level": "low",
             "tool_name": "web_fetch",
             "timestamp": datetime.now(timezone.utc).isoformat(),

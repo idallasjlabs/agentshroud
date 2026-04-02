@@ -16,7 +16,7 @@ import logging
 import time
 from collections import defaultdict
 from dataclasses import dataclass, field
-from enum import IntEnum, Enum
+from enum import Enum, IntEnum
 from typing import Optional
 
 logger = logging.getLogger(__name__)

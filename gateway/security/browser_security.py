@@ -10,13 +10,13 @@ entry protection, and screenshot analysis hooks.
 References:
     - Wu et al. 2026 (arXiv:2601.07263) - Browser-based attacks on AI agents
 """
-from __future__ import annotations
 
+from __future__ import annotations
 
 import re
 from dataclasses import dataclass, field
 from enum import IntEnum
-from typing import List, Callable
+from typing import Callable, List
 from urllib.parse import urlparse
 
 
@@ -55,9 +55,7 @@ _SE_PATTERNS = [
         "phone scam",
     ),
     (
-        re.compile(
-            r"(windows\s+defender|microsoft\s+support)\s*(alert|error|warning)", re.I
-        ),
+        re.compile(r"(windows\s+defender|microsoft\s+support)\s*(alert|error|warning)", re.I),
         ThreatLevel.HIGH,
         "tech support scam",
     ),
@@ -165,15 +163,11 @@ class BrowserSecurityGuard:
 
         # Block HTTP for non-localhost
         if parsed.scheme != "https":
-            raise CredentialEntryBlocked(
-                f"Credential entry blocked on non-HTTPS: {url}"
-            )
+            raise CredentialEntryBlocked(f"Credential entry blocked on non-HTTPS: {url}")
 
         # Block IP addresses
         if re.match(r"^\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}$", hostname):
-            raise CredentialEntryBlocked(
-                f"Credential entry blocked on IP address: {url}"
-            )
+            raise CredentialEntryBlocked(f"Credential entry blocked on IP address: {url}")
 
         # Block lookalikes
         for pat in _LOOKALIKE_PATTERNS:
@@ -184,9 +178,7 @@ class BrowserSecurityGuard:
 
         # Check URL reputation
         if self.check_url_reputation(url) >= ThreatLevel.HIGH:
-            raise CredentialEntryBlocked(
-                f"Credential entry blocked - high threat URL: {url}"
-            )
+            raise CredentialEntryBlocked(f"Credential entry blocked - high threat URL: {url}")
 
         return True
 

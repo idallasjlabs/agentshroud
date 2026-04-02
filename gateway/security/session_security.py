@@ -11,14 +11,14 @@ References:
     - Chen et al. 2026 (arXiv:2602.14364) - Session hijacking in agent frameworks
     - Wang et al. 2026 (arXiv:2602.08412) - Event injection attacks
 """
-from __future__ import annotations
 
+from __future__ import annotations
 
 import hashlib
 import secrets
 import time
 from dataclasses import dataclass, field
-from typing import Dict, Set, Any
+from typing import Any, Dict, Set
 
 
 class SessionError(Exception):
@@ -98,9 +98,7 @@ class SessionManager:
             raise SessionExpired("Session expired")
         expected_fp = self._fingerprint(ip, user_agent)
         if session.fingerprint != expected_fp:
-            raise SessionBindingError(
-                "Session binding mismatch (IP or user-agent changed)"
-            )
+            raise SessionBindingError("Session binding mismatch (IP or user-agent changed)")
         return True
 
     def rotate_session(self, old_session_id: str, ip: str, user_agent: str) -> Session:
@@ -171,7 +169,8 @@ class SessionManager:
         if len(self._used_nonces) > 10_000:
             cutoff = time.time() - 300
             self._used_nonces = {
-                n for n in self._used_nonces
+                n
+                for n in self._used_nonces
                 if not n.split(":")[0].isdigit() or float(n.split(":")[0]) > cutoff
             }
 
@@ -182,9 +181,7 @@ class SessionManager:
     def cleanup_expired(self) -> int:
         now = time.time()
         expired = [
-            sid
-            for sid, s in self._sessions.items()
-            if now - s.created_at > self.max_session_age
+            sid for sid, s in self._sessions.items() if now - s.created_at > self.max_session_age
         ]
         for sid in expired:
             del self._sessions[sid]
