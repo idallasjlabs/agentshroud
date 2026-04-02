@@ -170,7 +170,7 @@ class HeuristicClassifier:
         Returns:
             ClassificationResult with probability, confidence, and signal breakdown
         """
-        if self.model_loaded:
+        if self.model_loaded and self.model:
             return self._classify_ml(text)
 
         return self._classify_heuristic(text)
