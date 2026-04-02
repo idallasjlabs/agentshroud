@@ -58,9 +58,11 @@ _asb_banner() {
 # Secret files exist on the host only for the duration of `docker compose up`.
 setup_ephemeral_secrets() {
   local tmpdir
-  # Use /tmp/ explicitly — macOS $TMPDIR resolves to /var/folders/ which is NOT
-  # shared into the Colima VM, so Docker can't bind-mount files from there.
-  tmpdir="$(mktemp -d /tmp/asb-secrets.XXXXXX)"
+  # Use $HOME/.agentshroud/.asb-tmp — Colima mounts $HOME by default (see
+  # ~/.colima/default/colima.yaml mounts:). If Docker can't reach this path,
+  # add $HOME to the Colima mounts config and restart Colima.
+  mkdir -p "$HOME/.agentshroud/.asb-tmp"
+  tmpdir="$(mktemp -d "$HOME/.agentshroud/.asb-tmp/asb-secrets.XXXXXX")"
   trap '[[ -n "${tmpdir:-}" ]] && rm -rf "$tmpdir"' EXIT
 
   # Extract secrets from credential backend → tmpdir (suppress interactive banner)
@@ -68,12 +70,27 @@ setup_ephemeral_secrets() {
     echo "ERROR: secret extraction failed" >&2; exit 1
   }
 
-  # Create empty placeholders for optional secrets so Docker Compose does not
-  # refuse to start when a token was not stored (Slack, OpenAI, Google API key).
-  for optional in slack_bot_token slack_signing_secret slack_app_token \
-                  openai_api_key google_api_key; do
-    [ -f "$tmpdir/${optional}.txt" ] || touch "$tmpdir/${optional}.txt"
+  # Create empty placeholders for ALL secrets referenced in the compose override
+  # so Docker Compose does not refuse to start when a secret was not stored.
+  # Required secrets that are actually empty will cause runtime failures (not
+  # bind-mount failures), which produces a clearer error message.
+  for name in gateway_password anthropic_oauth_token openai_api_key google_api_key \
+              1password_bot_email 1password_bot_master_password 1password_bot_secret_key \
+              telegram_bot_token_production \
+              slack_bot_token slack_signing_secret slack_app_token; do
+    [ -f "$tmpdir/${name}.txt" ] || touch "$tmpdir/${name}.txt"
   done
+
+  # The Docker daemon inside the Colima VM runs under a different UID and cannot
+  # stat files created with chmod 600. Relax permissions on this ephemeral tmpdir
+  # (including placeholders just created) so the daemon can bind-mount the files.
+  # The directory is cleaned up on EXIT.
+  chmod 755 "$tmpdir"
+  chmod 644 "$tmpdir"/*.txt 2>/dev/null || true
+  # Flush filesystem writes so Colima's virtiofs sees them before Docker tries to
+  # bind-mount. Without this, newly created placeholder files may not be visible
+  # to the Docker daemon inside the VM.
+  sync
 
   # Determine which telegram_bot_token variant to use for this host/user.
   # Falls back to production token if the host-specific token was not stored.
@@ -144,6 +161,21 @@ _prune_docker() {
 }
 
 _asb_banner
+
+# ── Config file pre-flight ───────────────────────────────────────────────────
+# agentshroud.yaml is .gitignore'd (per-host config). If the file is missing,
+# Docker creates an empty directory as a bind-mount placeholder, crashing the
+# gateway with IsADirectoryError. Auto-create from example if needed.
+_CONFIG="$REPO_DIR/agentshroud.yaml"
+_CONFIG_EXAMPLE="$REPO_DIR/agentshroud.yaml.example"
+if [ -d "$_CONFIG" ]; then
+  echo "WARNING: agentshroud.yaml is a directory (Docker placeholder) — removing"
+  rm -rf "$_CONFIG"
+fi
+if [ ! -f "$_CONFIG" ] && [ -f "$_CONFIG_EXAMPLE" ]; then
+  echo "Creating agentshroud.yaml from example template (edit $REPO_DIR/agentshroud.yaml to customize)"
+  cp "$_CONFIG_EXAMPLE" "$_CONFIG"
+fi
 
 case "${1:-}" in
   build)
