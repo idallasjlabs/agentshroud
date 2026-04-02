@@ -3,12 +3,14 @@
 # Protected by common law trademark rights. Federal trademark registration pending.
 # Unauthorized reproduction, distribution, or use of the AgentShroud name or brand is strictly prohibited.
 """Tests for gateway/security/session_manager.py — session isolation and security."""
+
 from __future__ import annotations
 
 import tempfile
 from pathlib import Path
 
 import pytest
+
 from gateway.security.session_manager import (
     ConversationMessage,
     UserSession,
@@ -25,6 +27,7 @@ def mgr(tmp_path):
 # ---------------------------------------------------------------------------
 # Session creation & isolation
 # ---------------------------------------------------------------------------
+
 
 class TestSessionIsolation:
     def test_sessions_are_isolated(self, mgr):
@@ -60,6 +63,7 @@ class TestSessionIsolation:
 # Access control
 # ---------------------------------------------------------------------------
 
+
 class TestAccessControl:
     def test_owner_can_view_all_sessions(self, mgr):
         mgr.get_or_create_session("user-1")
@@ -94,6 +98,7 @@ class TestAccessControl:
 # Input validation / path traversal
 # ---------------------------------------------------------------------------
 
+
 class TestInputValidation:
     def test_path_traversal_rejected(self, mgr):
         with pytest.raises(ValueError):
@@ -115,6 +120,7 @@ class TestInputValidation:
 # ---------------------------------------------------------------------------
 # Conversation history
 # ---------------------------------------------------------------------------
+
 
 class TestConversationHistory:
     def test_add_message(self, mgr):
@@ -138,6 +144,7 @@ class TestConversationHistory:
 # Trust level updates
 # ---------------------------------------------------------------------------
 
+
 class TestTrustLevel:
     def test_update_trust_level(self, mgr):
         mgr.get_or_create_session("user-1")
@@ -149,6 +156,7 @@ class TestTrustLevel:
 # ---------------------------------------------------------------------------
 # Session context & prompt injection
 # ---------------------------------------------------------------------------
+
 
 class TestSessionContext:
     def test_get_session_context_contains_user_id(self, mgr):
@@ -166,6 +174,7 @@ class TestSessionContext:
 # Serialization roundtrip
 # ---------------------------------------------------------------------------
 
+
 class TestSerialization:
     def test_session_to_dict_and_back(self):
         s = UserSession(
@@ -182,6 +191,7 @@ class TestSerialization:
 
 
 # ── C16: System Prompt Re-anchoring tests ─────────────────────────────────────
+
 
 class TestSystemPromptReanchoring:
     def test_reanchor_prepends_preamble(self, mgr):

@@ -103,9 +103,7 @@ class MCPProxyConfig:
             for tname, tdata in sdata.get("tools", {}).items():
                 tools[tname] = MCPToolConfig(
                     name=tname,
-                    permission_level=PermissionLevel(
-                        tdata.get("permission_level", "read")
-                    ),
+                    permission_level=PermissionLevel(tdata.get("permission_level", "read")),
                     rate_limit=tdata.get("rate_limit", 0),
                     sensitive=tdata.get("sensitive", False),
                     description=tdata.get("description", ""),
@@ -120,9 +118,7 @@ class MCPProxyConfig:
                 timeout_seconds=sdata.get(
                     "timeout_seconds", data.get("default_timeout_seconds", 30)
                 ),
-                max_retries=sdata.get(
-                    "max_retries", data.get("default_max_retries", 3)
-                ),
+                max_retries=sdata.get("max_retries", data.get("default_max_retries", 3)),
                 min_trust_level=sdata.get("min_trust_level", 0),
                 tools=tools,
                 allowed_agents=sdata.get("allowed_agents", []),

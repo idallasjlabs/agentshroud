@@ -11,6 +11,7 @@ Key sourcing (in priority order):
   1. ``AGENTSHROUD_ENVELOPE_SIGNING_KEY`` environment variable
   2. Session-scoped random 32-byte key (rotated on restart)
 """
+
 from __future__ import annotations
 
 import hashlib
@@ -28,11 +29,12 @@ logger = logging.getLogger("agentshroud.security.instruction_envelope")
 @dataclass
 class InstructionEnvelope:
     """A signed instruction or tool result."""
-    instruction_id: str   # UUID
+
+    instruction_id: str  # UUID
     content: str
-    issuer: str           # e.g. "system", "tool:read_file", "owner"
+    issuer: str  # e.g. "system", "tool:read_file", "owner"
     timestamp: float
-    signature: str        # hex HMAC-SHA256
+    signature: str  # hex HMAC-SHA256
     algorithm: str = "hmac-sha256"
 
 

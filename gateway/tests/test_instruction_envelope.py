@@ -1,5 +1,6 @@
 # Copyright © 2026 Isaiah Dallas Jefferson, Jr. AgentShroud™. All rights reserved.
 """Tests for EnvelopeSigner (C46 — Signed Instruction Envelopes)."""
+
 from __future__ import annotations
 
 import pytest

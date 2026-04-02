@@ -18,17 +18,18 @@ Score factors:
 
 Alert at < 0.6, escalate progressive lockdown at < 0.3.
 """
+
 from __future__ import annotations
 
 import hashlib
 import logging
 import time
 from dataclasses import dataclass, field
-from typing import Any, Dict, List, Optional, TYPE_CHECKING
+from typing import TYPE_CHECKING, Any, Dict, List, Optional
 
 if TYPE_CHECKING:
     from gateway.security.context_guard import ContextSegment
-    from gateway.security.prompt_guard import SystemPromptFingerprint, PromptGuard
+    from gateway.security.prompt_guard import PromptGuard, SystemPromptFingerprint
 
 logger = logging.getLogger("agentshroud.security.context_integrity")
 
@@ -39,8 +40,9 @@ _LOCKDOWN_THRESHOLD = 0.3
 @dataclass
 class IntegrityScore:
     """Rolling context integrity score for a session."""
-    score: float           # 0.0 – 1.0
-    factors: List[str]     # score components added
+
+    score: float  # 0.0 – 1.0
+    factors: List[str]  # score components added
     timestamp: float
     session_id: str
 
@@ -91,11 +93,7 @@ class ContextIntegrityScorer:
         factors: List[str] = []
 
         # ── Factor 1: System prompt HMAC valid (+0.3) ────────────────────────
-        if (
-            system_prompt
-            and system_prompt_fingerprint is not None
-            and prompt_guard is not None
-        ):
+        if system_prompt and system_prompt_fingerprint is not None and prompt_guard is not None:
             if prompt_guard.verify_system_prompt(
                 system_prompt, system_prompt_fingerprint, key=hmac_key
             ):
@@ -138,9 +136,7 @@ class ContextIntegrityScorer:
                 last_was_system = True
             elif last_was_system and seg.trust_level == "UNTRUSTED" and seg.source not in ("user",):
                 has_injection = True
-                factors.append(
-                    f"untrusted_injection_after_system:{seg.source}:+0.0"
-                )
+                factors.append(f"untrusted_injection_after_system:{seg.source}:+0.0")
                 break
         if not has_injection:
             score += 0.2
@@ -174,12 +170,14 @@ class ContextIntegrityScorer:
             logger.error(
                 "Context integrity CRITICAL for session %s: score=%.3f — "
                 "escalating to progressive lockdown",
-                session_id, score,
+                session_id,
+                score,
             )
         elif score < _ALERT_THRESHOLD:
             logger.warning(
                 "Context integrity LOW for session %s: score=%.3f — audit event logged",
-                session_id, score,
+                session_id,
+                score,
             )
 
         return IntegrityScore(

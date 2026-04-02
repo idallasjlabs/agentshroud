@@ -5,8 +5,9 @@ from __future__ import annotations
 
 import asyncio
 import json
-import pytest
 from unittest.mock import MagicMock
+
+import pytest
 
 from gateway.soc.models import WSEventType
 from gateway.soc.websocket import SOCWebSocketHandler, _coerce_to_ws_event
@@ -83,4 +84,5 @@ class TestCoerceToWSEvent:
     def test_preserves_severity(self):
         ev = _coerce_to_ws_event({"type": "security_event", "severity": "critical", "summary": "x"})
         from gateway.soc.models import Severity
+
         assert ev.severity == Severity.CRITICAL

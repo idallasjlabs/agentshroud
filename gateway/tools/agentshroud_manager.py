@@ -25,9 +25,7 @@ logger = logging.getLogger("agentshroud.version_manager")
 
 # Pattern to mask credentials in output
 CREDENTIAL_PATTERNS = [
-    re.compile(
-        r'(token|password|secret|key|auth)["\s:=]+["\']?([A-Za-z0-9_\-\.]{8,})', re.I
-    ),
+    re.compile(r'(token|password|secret|key|auth)["\s:=]+["\']?([A-Za-z0-9_\-\.]{8,})', re.I),
     re.compile(r"(Bearer\s+)([A-Za-z0-9_\-\.]{8,})", re.I),
 ]
 
@@ -238,9 +236,7 @@ def downgrade(
     review = security_review(target_version)
 
     # Downgrade has higher risk
-    review["risk_level"] = (
-        "medium" if review["risk_level"] == "low" else review["risk_level"]
-    )
+    review["risk_level"] = "medium" if review["risk_level"] == "low" else review["risk_level"]
 
     if not review["passed"]:
         return {

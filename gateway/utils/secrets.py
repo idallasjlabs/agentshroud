@@ -1,5 +1,6 @@
 # Copyright © 2026 Isaiah Dallas Jefferson, Jr. AgentShroud™. All rights reserved.
 """Shared secret-reading utilities for gateway components."""
+
 from __future__ import annotations
 
 import logging

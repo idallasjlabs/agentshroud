@@ -5,19 +5,20 @@
 """Tests for oauth_security module - MCP OAuth proxy security.
 TDD: Written before implementation.
 """
+
 from __future__ import annotations
 
+import os
+import sys
 
 import pytest
-import sys
-import os
 
 sys.path.insert(0, os.path.join(os.path.dirname(__file__), ".."))
 from security.oauth_security import (
-    OAuthSecurityValidator,
-    OAuthRequest,
-    OAuthError,
     ConfusedDeputyError,
+    OAuthError,
+    OAuthRequest,
+    OAuthSecurityValidator,
     PKCEViolation,
     RedirectMismatch,
 )
@@ -147,8 +148,8 @@ class TestPKCE:
             validator.validate_request(req)
 
     def test_pkce_verifier_validation(self, validator):
-        import hashlib
         import base64
+        import hashlib
 
         verifier = "dBjftJeZ4CVP-mB92K27uhbUJU1p1r_wW1gFWFOEjXk"
         expected = (
@@ -184,9 +185,7 @@ class TestRedirectURI:
 
 class TestConsentCookieBinding:
     def test_create_consent_cookie(self, validator):
-        cookie = validator.create_consent_cookie(
-            "client-1", ["read", "write"], "user-123"
-        )
+        cookie = validator.create_consent_cookie("client-1", ["read", "write"], "user-123")
         assert cookie
         assert len(cookie) > 20
 
@@ -196,19 +195,13 @@ class TestConsentCookieBinding:
 
     def test_cookie_wrong_client_fails(self, validator):
         cookie = validator.create_consent_cookie("client-1", ["read"], "user-1")
-        assert not validator.validate_consent_cookie(
-            cookie, "client-2", ["read"], "user-1"
-        )
+        assert not validator.validate_consent_cookie(cookie, "client-2", ["read"], "user-1")
 
     def test_cookie_wrong_scope_fails(self, validator):
         cookie = validator.create_consent_cookie("client-1", ["read"], "user-1")
-        assert not validator.validate_consent_cookie(
-            cookie, "client-1", ["write"], "user-1"
-        )
+        assert not validator.validate_consent_cookie(cookie, "client-1", ["write"], "user-1")
 
     def test_cookie_tamper_detected(self, validator):
         cookie = validator.create_consent_cookie("client-1", ["read"], "user-1")
         tampered = cookie[:-4] + "XXXX"
-        assert not validator.validate_consent_cookie(
-            tampered, "client-1", ["read"], "user-1"
-        )
+        assert not validator.validate_consent_cookie(tampered, "client-1", ["read"], "user-1")

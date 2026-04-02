@@ -6,18 +6,27 @@
 
 from __future__ import annotations
 
+from unittest.mock import AsyncMock, patch
+
 import pytest
 import pytest_asyncio
-from unittest.mock import patch, AsyncMock
-from httpx import AsyncClient, ASGITransport
+from httpx import ASGITransport, AsyncClient
 
 from gateway.ingest_api.main import app, app_state, lifespan
-from gateway.web.dashboard_endpoints import alert_store, log_buffer, AlertStore, LogBuffer
+from gateway.web.dashboard_endpoints import (
+    AlertStore,
+    LogBuffer,
+    alert_store,
+    log_buffer,
+)
 
 
 @pytest_asyncio.fixture
 async def client(test_config):
-    with patch("gateway.ingest_api.lifespan.load_config", return_value=test_config),          patch("gateway.web.api.load_config", return_value=test_config):
+    with (
+        patch("gateway.ingest_api.lifespan.load_config", return_value=test_config),
+        patch("gateway.web.api.load_config", return_value=test_config),
+    ):
         async with lifespan(app):
             transport = ASGITransport(app=app)
             async with AsyncClient(transport=transport, base_url="http://test") as ac:
@@ -30,6 +39,7 @@ def auth_headers(test_config):
 
 
 # --- /api/proxy/status ---
+
 
 @pytest.mark.asyncio
 async def test_proxy_status_requires_auth(client):
@@ -59,6 +69,7 @@ async def test_proxy_status_includes_pipeline_stats(client, auth_headers):
 
 
 # --- /api/alerts/summary ---
+
 
 @pytest.mark.asyncio
 async def test_alerts_summary_requires_auth(client):
@@ -94,6 +105,7 @@ async def test_alerts_summary_with_alerts(client, auth_headers):
 
 # --- /api/ssh/hosts ---
 
+
 @pytest.mark.asyncio
 async def test_ssh_hosts_requires_auth(client):
     resp = await client.get("/api/ssh/hosts")
@@ -116,6 +128,7 @@ async def test_ssh_hosts_returns_hosts(client, auth_headers):
 async def test_ssh_hosts_online(client, auth_headers):
     # Clear cache to force re-check
     from gateway.web.dashboard_endpoints import _ssh_cache
+
     _ssh_cache.clear()
 
     with patch("gateway.web.dashboard_endpoints._tcp_check", return_value=True):
@@ -127,6 +140,7 @@ async def test_ssh_hosts_online(client, auth_headers):
 
 
 # --- /api/logs/recent ---
+
 
 @pytest.mark.asyncio
 async def test_logs_recent_requires_auth(client):
@@ -165,6 +179,7 @@ async def test_logs_recent_tail_clamped(client, auth_headers):
 
 
 # --- Unit tests for AlertStore and LogBuffer ---
+
 
 def test_alert_store_push_and_summary():
     store = AlertStore()

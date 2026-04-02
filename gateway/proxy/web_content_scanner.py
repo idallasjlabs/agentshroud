@@ -170,9 +170,7 @@ _ZERO_WIDTH_CHARS = frozenset(
     }
 )
 
-_ZERO_WIDTH_PATTERN = re.compile(
-    "[" + "".join(re.escape(c) for c in _ZERO_WIDTH_CHARS) + "]{3,}"
-)
+_ZERO_WIDTH_PATTERN = re.compile("[" + "".join(re.escape(c) for c in _ZERO_WIDTH_CHARS) + "]{3,}")
 
 
 class WebContentScanner:
@@ -205,9 +203,7 @@ class WebContentScanner:
         # Truncate to prevent ReDoS on adversarial input
         if len(content) > self.MAX_SCAN_LENGTH:
             content = content[: self.MAX_SCAN_LENGTH]
-            logger.warning(
-                "Content truncated to %d chars for scanning", self.MAX_SCAN_LENGTH
-            )
+            logger.warning("Content truncated to %d chars for scanning", self.MAX_SCAN_LENGTH)
 
         result = ScanResult(content_length=len(content))
 
@@ -241,16 +237,12 @@ class WebContentScanner:
             if matches:
                 score = min(weight * len(matches), 1.0)
                 max_score = max(max_score, score)
-                match_text = (
-                    matches[0] if isinstance(matches[0], str) else str(matches[0])
-                )
+                match_text = matches[0] if isinstance(matches[0], str) else str(matches[0])
                 result.findings.append(
                     ContentFinding(
                         category="prompt_injection",
                         severity=(
-                            FindingSeverity.HIGH
-                            if weight >= 0.8
-                            else FindingSeverity.MEDIUM
+                            FindingSeverity.HIGH if weight >= 0.8 else FindingSeverity.MEDIUM
                         ),
                         description=desc,
                         evidence=match_text[:100],

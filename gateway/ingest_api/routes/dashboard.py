@@ -11,28 +11,29 @@ Dashboard and activity monitoring endpoints:
 
 import asyncio
 import hmac
-import secrets
-import time
 import logging
 import os
 import re
+import secrets
+import time
 from datetime import datetime
 from pathlib import Path
 from typing import Annotated
 
-from fastapi import APIRouter, Request, HTTPException, Query, WebSocket, Depends
-from fastapi.responses import JSONResponse, HTMLResponse
+from fastapi import APIRouter, Depends, HTTPException, Query, Request, WebSocket
+from fastapi.responses import HTMLResponse, JSONResponse
 from starlette.responses import RedirectResponse
 
 from ..auth import create_auth_dependency
-from ..state import app_state
 from ..event_bus import make_event
+from ..state import app_state
 
 # Create router
 # Short-lived WS tokens (token -> expiry timestamp)
 # These are scoped tokens that cannot be used for API auth
 _ws_tokens: dict[str, float] = {}
 _WS_TOKEN_TTL = 300  # 5 minutes
+
 
 def _create_ws_token() -> str:
     """Create a short-lived WebSocket-only token."""
@@ -45,6 +46,7 @@ def _create_ws_token() -> str:
         del _ws_tokens[t]
     return token
 
+
 def _validate_ws_token(token: str) -> bool:
     """Validate a WebSocket token (single-use, time-limited)."""
     if not token or not token.startswith("ws_"):
@@ -53,6 +55,7 @@ def _validate_ws_token(token: str) -> bool:
     if expiry is None:
         return False
     return time.time() < expiry
+
 
 router = APIRouter()
 
@@ -162,7 +165,12 @@ def _build_activity_entries_from_contributor_logs(logs: list[dict], limit: int =
             parts = [p.strip() for p in payload.split("|")]
             if len(parts) < 4:
                 continue
-            ts_token, user_token, source_token, preview = parts[0], parts[1], parts[2], " | ".join(parts[3:])
+            ts_token, user_token, source_token, preview = (
+                parts[0],
+                parts[1],
+                parts[2],
+                " | ".join(parts[3:]),
+            )
             if ts_token.endswith("Z"):
                 ts_token = ts_token[:-1] + "+00:00"
             try:
@@ -249,7 +257,8 @@ async def _build_egress_live_snapshot() -> dict:
         for t, c in sorted(pending_tools.items(), key=lambda kv: kv[1], reverse=True)[:10]
     ]
     pending_average_age_seconds = (
-        sum(float(item.get("age_seconds", 0.0) or 0.0) for item in pending_items) / len(pending_items)
+        sum(float(item.get("age_seconds", 0.0) or 0.0) for item in pending_items)
+        / len(pending_items)
         if pending_items
         else 0.0
     )
@@ -272,8 +281,8 @@ async def _build_egress_live_snapshot() -> dict:
     soc_risk = {"risk_score": 0, "severity": "low"}
     soc_summary: dict = {}
     try:
-        from ..main import app_state as _app_state
         from ...security.soc_correlation import build_correlation_summary
+        from ..main import app_state as _app_state
 
         corr = build_correlation_summary(_app_state, limit=200)
         soc_risk = {"risk_score": corr.risk_score, "severity": corr.severity}
@@ -290,14 +299,22 @@ async def _build_egress_live_snapshot() -> dict:
         "inbound": {
             "total": len(quarantine),
             "pending": quarantine_pending,
-            "released": sum(1 for q in quarantine if str(q.get("status", "")).lower() == "released"),
-            "discarded": sum(1 for q in quarantine if str(q.get("status", "")).lower() == "discarded"),
+            "released": sum(
+                1 for q in quarantine if str(q.get("status", "")).lower() == "released"
+            ),
+            "discarded": sum(
+                1 for q in quarantine if str(q.get("status", "")).lower() == "discarded"
+            ),
         },
         "outbound": {
             "total": len(outbound_quarantine),
             "pending": outbound_quarantine_pending,
-            "released": sum(1 for q in outbound_quarantine if str(q.get("status", "")).lower() == "released"),
-            "discarded": sum(1 for q in outbound_quarantine if str(q.get("status", "")).lower() == "discarded"),
+            "released": sum(
+                1 for q in outbound_quarantine if str(q.get("status", "")).lower() == "released"
+            ),
+            "discarded": sum(
+                1 for q in outbound_quarantine if str(q.get("status", "")).lower() == "discarded"
+            ),
         },
     }
     privacy_policy_summary = {
@@ -424,7 +441,9 @@ async def get_collaborators(req: Request, auth: AuthRequired):
         result["activity"] = _build_activity_entries_from_contributor_logs(
             result["contributor_logs"], limit=50
         )
-        result["summary"] = _build_activity_summary_from_contributor_logs(result["contributor_logs"])
+        result["summary"] = _build_activity_summary_from_contributor_logs(
+            result["contributor_logs"]
+        )
         result["activity_source"] = "contributor_logs_fallback"
 
     return result
@@ -448,8 +467,7 @@ async def serve_dashboard(request: Request, token: str | None = Query(None)):
         # Valid token in query param - set cookie and redirect to clean URL
         redirect = RedirectResponse(url="/dashboard", status_code=302)
         is_secure = (
-            request.url.scheme == "https"
-            or request.headers.get("x-forwarded-proto") == "https"
+            request.url.scheme == "https" or request.headers.get("x-forwarded-proto") == "https"
         )
         redirect.set_cookie(
             key="dashboard_token",
@@ -463,12 +481,13 @@ async def serve_dashboard(request: Request, token: str | None = Query(None)):
 
     if not authenticated:
         return JSONResponse(status_code=403, content={"detail": "Forbidden"})
-    
+
     dashboard_path = Path(__file__).parent.parent.parent / "dashboard" / "index.html"
     if dashboard_path.exists():
         html = dashboard_path.read_text()
         # L4: Generate nonce for inline scripts/styles
         import secrets as _secrets
+
         nonce = _secrets.token_urlsafe(24)
         # Inject nonce into script/style tags
         html = html.replace("<script", f'<script nonce="{nonce}"')
@@ -532,9 +551,7 @@ async def dashboard_ws_token(request: Request):
     This token can ONLY be used for WebSocket connections, not API auth.
     """
     cookie_token = request.cookies.get("dashboard_token")
-    if not cookie_token or not hmac.compare_digest(
-        cookie_token, app_state.config.auth_token
-    ):
+    if not cookie_token or not hmac.compare_digest(cookie_token, app_state.config.auth_token):
         return JSONResponse(status_code=403, content={"detail": "Forbidden"})
     ws_token = _create_ws_token()
     return JSONResponse(content={"token": ws_token})
@@ -544,15 +561,13 @@ async def dashboard_ws_token(request: Request):
 async def activity_websocket(websocket: WebSocket, token: str | None = Query(None)):
     """WebSocket for real-time activity feed"""
     # Access app_state from websocket state
-    
+
     # Accept either master auth token or scoped WS token
     # R3-L4: Only accept scoped WS tokens (no master token fallback)
     if not token or not _validate_ws_token(token):
         await websocket.close(code=4003, reason="Authentication failed")
         await app_state.event_bus.emit(
-            make_event(
-                "auth_failed", "Activity WebSocket authentication failed", {}, "warning"
-            )
+            make_event("auth_failed", "Activity WebSocket authentication failed", {}, "warning")
         )
         return
 
@@ -560,7 +575,9 @@ async def activity_websocket(websocket: WebSocket, token: str | None = Query(Non
 
     try:
         await websocket.send_json({"type": "authenticated"})
-        await websocket.send_json({"type": "egress_snapshot", "details": await _build_egress_live_snapshot()})
+        await websocket.send_json(
+            {"type": "egress_snapshot", "details": await _build_egress_live_snapshot()}
+        )
 
         # Subscribe to events
         queue: asyncio.Queue = asyncio.Queue()
@@ -591,15 +608,15 @@ async def egress_websocket(websocket: WebSocket, token: str | None = Query(None)
     if not token or not _validate_ws_token(token):
         await websocket.close(code=4003, reason="Authentication failed")
         await app_state.event_bus.emit(
-            make_event(
-                "auth_failed", "Egress WebSocket authentication failed", {}, "warning"
-            )
+            make_event("auth_failed", "Egress WebSocket authentication failed", {}, "warning")
         )
         return
 
     await websocket.accept()
     await websocket.send_json({"type": "authenticated"})
-    await websocket.send_json({"type": "egress_snapshot", "details": await _build_egress_live_snapshot()})
+    await websocket.send_json(
+        {"type": "egress_snapshot", "details": await _build_egress_live_snapshot()}
+    )
 
     queue: asyncio.Queue = asyncio.Queue()
 

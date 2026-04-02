@@ -3,27 +3,28 @@
 # Protected by common law trademark rights. Federal trademark registration pending.
 # Unauthorized reproduction, distribution, or use of the AgentShroud name or brand is strictly prohibited.
 """Tests for Dashboard endpoints and WebSocket activity feed"""
+
 from __future__ import annotations
 
-
 import asyncio
-import pytest
-import pytest_asyncio
 import time
-from unittest.mock import patch
-from httpx import AsyncClient, ASGITransport
 from pathlib import Path
 from types import SimpleNamespace
+from unittest.mock import patch
 
-from gateway.ingest_api.main import app, app_state, lifespan
+import pytest
+import pytest_asyncio
+from httpx import ASGITransport, AsyncClient
+
 from gateway.ingest_api.event_bus import make_event
+from gateway.ingest_api.main import app, app_state, lifespan
 from gateway.ingest_api.routes.dashboard import (
-    _create_ws_token,
-    _parse_collaborator_log_dirs,
-    _load_contributor_logs,
     _build_activity_entries_from_contributor_logs,
     _build_activity_summary_from_contributor_logs,
     _build_egress_live_snapshot,
+    _create_ws_token,
+    _load_contributor_logs,
+    _parse_collaborator_log_dirs,
 )
 
 
@@ -87,7 +88,9 @@ async def test_dashboard_stats_requires_auth(client):
 
 
 @pytest.mark.asyncio
-async def test_collaborators_endpoint_reads_configured_contributor_sources(client, monkeypatch, tmp_path):
+async def test_collaborators_endpoint_reads_configured_contributor_sources(
+    client, monkeypatch, tmp_path
+):
     dir_a = tmp_path / "contributors-a"
     dir_b = tmp_path / "contributors-b"
     dir_a.mkdir()
@@ -224,7 +227,9 @@ def test_ws_egress_receives_privacy_event(sync_client):
         _ = ws.receive_json()  # snapshot
 
         loop = asyncio.new_event_loop()
-        event = make_event("privacy_policy_violation", "blocked private tool", {"tool": "gmail_send"})
+        event = make_event(
+            "privacy_policy_violation", "blocked private tool", {"tool": "gmail_send"}
+        )
         loop.run_until_complete(app_state.event_bus.emit(event))
         loop.close()
 
@@ -439,8 +444,4 @@ async def test_dashboard_xss_prevention(client):
         "/dashboard",
     )
     assert "onclick" not in resp.text
-    assert (
-        "data-action" in resp.text
-        or "data-id" in resp.text
-        or "addEventListener" in resp.text
-    )
+    assert "data-action" in resp.text or "data-id" in resp.text or "addEventListener" in resp.text

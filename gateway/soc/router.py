@@ -10,6 +10,7 @@ Every handler:
   3. Logs an AuditLogEntry for every write operation
   4. Returns SCLError / SCLConfirmationRequired for error/confirmation cases
 """
+
 from __future__ import annotations
 
 import asyncio
@@ -25,6 +26,7 @@ from fastapi import APIRouter, Depends, HTTPException, Query, Request, WebSocket
 from fastapi.responses import HTMLResponse, JSONResponse, StreamingResponse
 from pydantic import BaseModel, Field
 
+from ..security.rbac import Action, Resource
 from .auth import SCLCaller, get_caller, issue_session_token, issue_ws_token
 from .models import (
     AuditLogEntry,
@@ -35,7 +37,6 @@ from .models import (
     Severity,
     WSEventType,
 )
-from ..security.rbac import Action, Resource
 
 logger = logging.getLogger("agentshroud.soc.router")
 
@@ -46,8 +47,10 @@ router = APIRouter(prefix="/soc/v1", tags=["soc"])
 # Helpers
 # ---------------------------------------------------------------------------
 
+
 def _app_state():
     from ..ingest_api.state import app_state
+
     return app_state
 
 
@@ -70,6 +73,7 @@ def _log_audit(
     )
     try:
         import asyncio
+
         audit_store = getattr(_app_state(), "audit_store", None)
         if audit_store and hasattr(audit_store, "append"):
             asyncio.create_task(audit_store.append(entry.model_dump()))
@@ -89,6 +93,7 @@ def _confirmation_required(action: str, target: str, message: str):
 # Auth endpoints
 # ---------------------------------------------------------------------------
 
+
 class LoginRequest(BaseModel):
     token: str
 
@@ -97,20 +102,27 @@ class LoginRequest(BaseModel):
 async def auth_login(body: LoginRequest) -> JSONResponse:
     """Exchange gateway token for a session cookie."""
     import hmac
-    cfg_token = os.environ.get("AGENTSHROUD_GATEWAY_PASSWORD", "") or os.environ.get("OPENCLAW_GATEWAY_PASSWORD", "")
+
+    cfg_token = os.environ.get("AGENTSHROUD_GATEWAY_PASSWORD", "") or os.environ.get(
+        "OPENCLAW_GATEWAY_PASSWORD", ""
+    )
     if not cfg_token or not hmac.compare_digest(body.token.encode(), cfg_token.encode()):
         return JSONResponse(
             status_code=status.HTTP_401_UNAUTHORIZED,
             content={"error": True, "code": "UNAUTHORIZED", "message": "Invalid token"},
         )
     from ..security.rbac_config import RBACConfig
+
     owner_id = RBACConfig().owner_user_id
     session_token = issue_session_token(cfg_token, owner_id)
     response = JSONResponse(content={"ok": True, "user_id": owner_id})
     _dev_mode = os.environ.get("AGENTSHROUD_DEV_MODE", "0").lower() in ("1", "true", "yes")
     response.set_cookie(
-        "soc_session", session_token,
-        httponly=True, samesite="strict", secure=not _dev_mode,
+        "soc_session",
+        session_token,
+        httponly=True,
+        samesite="strict",
+        secure=not _dev_mode,
     )
     return response
 
@@ -126,6 +138,7 @@ async def auth_ws_token(caller: SCLCaller = Depends(get_caller)) -> Dict[str, An
 # Security endpoints
 # ---------------------------------------------------------------------------
 
+
 @router.get("/security/events")
 async def get_security_events(
     limit: int = Query(default=50, le=500),
@@ -135,6 +148,7 @@ async def get_security_events(
     caller.require(Action.READ, Resource.SYSTEM)
     app = _app_state()
     from .event_adapter import collect_recent_events
+
     events = await collect_recent_events(
         getattr(app, "audit_store", None),
         limit=limit,
@@ -153,6 +167,7 @@ async def get_security_alerts(caller: SCLCaller = Depends(get_caller)) -> List[D
         if dispatcher and hasattr(dispatcher, "get_recent_alerts"):
             raw = dispatcher.get_recent_alerts(limit=50)
             from .event_adapter import from_dict
+
             alerts = [from_dict(a).model_dump() for a in raw if isinstance(a, dict)]
     except Exception as exc:
         logger.debug("get_security_alerts: %s", exc)
@@ -168,6 +183,7 @@ async def get_soc_correlation(caller: SCLCaller = Depends(get_caller)) -> Dict:
         if engine and hasattr(engine, "get_summary"):
             return engine.get_summary()
         from ..security.soc_correlation import build_correlation_summary
+
         return build_correlation_summary(app).to_dict()
     except Exception as exc:
         logger.debug("get_soc_correlation: %s", exc)
@@ -184,6 +200,7 @@ async def get_risk_score(caller: SCLCaller = Depends(get_caller)) -> Dict:
             score = engine.get_risk_score()
             return {"risk_score": score, "level": _risk_level_label(score)}
         from ..security.soc_correlation import build_correlation_summary
+
         score = build_correlation_summary(app).risk_score
         return {"risk_score": score, "level": _risk_level_label(score)}
     except Exception as exc:
@@ -214,6 +231,7 @@ async def get_risk_summary(caller: SCLCaller = Depends(get_caller)) -> Dict:
     app = _app_state()
     try:
         from ..security.soc_correlation import build_correlation_summary
+
         summary = build_correlation_summary(app)
         return {
             "risk_score": summary.risk_score,
@@ -221,11 +239,14 @@ async def get_risk_summary(caller: SCLCaller = Depends(get_caller)) -> Dict:
             "operator_summary": summary.operator_summary,
             "per_user_risk": summary.per_user_risk,
             "correlated_findings": [
-                f for f in summary.correlated_findings
-                if f.get("type") not in ("generated_at",)
+                f for f in summary.correlated_findings if f.get("type") not in ("generated_at",)
             ],
             "generated_at": next(
-                (f["timestamp"] for f in summary.correlated_findings if f.get("type") == "generated_at"),
+                (
+                    f["timestamp"]
+                    for f in summary.correlated_findings
+                    if f.get("type") == "generated_at"
+                ),
                 None,
             ),
         }
@@ -284,6 +305,7 @@ async def verify_audit_chain(caller: SCLCaller = Depends(get_caller)) -> Dict:
 # Egress endpoints
 # ---------------------------------------------------------------------------
 
+
 @router.get("/egress/pending")
 async def get_egress_pending(caller: SCLCaller = Depends(get_caller)) -> List[Dict]:
     caller.require(Action.READ, Resource.APPROVALS)
@@ -332,6 +354,7 @@ async def get_egress_log(
 ) -> List[Dict]:
     caller.require(Action.READ, Resource.SYSTEM)
     from .event_adapter import collect_recent_events
+
     events = await collect_recent_events(
         getattr(_app_state(), "audit_store", None),
         limit=limit,
@@ -356,6 +379,7 @@ async def approve_egress(
         eq = getattr(app, "egress_approval_queue", None)
         if eq and hasattr(eq, "approve"):
             from ..security.egress_approval import ApprovalMode
+
             # Map web UI mode strings to ApprovalMode (CC-06)
             _mode_map = {
                 "once": ApprovalMode.ONCE,
@@ -393,15 +417,15 @@ async def deny_egress(
 
 
 class EgressScopeRequest(BaseModel):
-    kind: str = "all"         # "all" | "user" | "group"
+    kind: str = "all"  # "all" | "user" | "group"
     user_ids: List[str] = []
     group_ids: List[str] = []
 
 
 class EgressRuleOverrideRequest(BaseModel):
     domain: str
-    action: str = "deny"      # "allow" or "deny"
-    mode: str = "permanent"   # "permanent" or "session"
+    action: str = "deny"  # "allow" or "deny"
+    mode: str = "permanent"  # "permanent" or "session"
     scope: Optional[EgressScopeRequest] = None  # None means "all" (backward-compatible)
 
 
@@ -421,13 +445,23 @@ async def override_egress_rule(
     if not eq:
         return {"ok": False, "error": "Egress approval queue not available"}
     from ..security.egress_approval import ApprovalMode, EgressScope
+
     mode = ApprovalMode.PERMANENT if body.mode == "permanent" else ApprovalMode.SESSION
     scope = EgressScope.from_dict(body.scope.model_dump()) if body.scope else EgressScope()
     ok = await eq.add_rule(body.domain, body.action, mode, scope=scope)
-    _log_audit(caller, "override egress rule", target=body.domain,
-               details={"action": body.action, "mode": body.mode, "scope": scope.to_dict()})
-    return {"ok": ok, "domain": body.domain, "action": body.action, "mode": body.mode,
-            "scope": scope.to_dict()}
+    _log_audit(
+        caller,
+        "override egress rule",
+        target=body.domain,
+        details={"action": body.action, "mode": body.mode, "scope": scope.to_dict()},
+    )
+    return {
+        "ok": ok,
+        "domain": body.domain,
+        "action": body.action,
+        "mode": body.mode,
+        "scope": scope.to_dict(),
+    }
 
 
 @router.delete("/egress/rules/{domain}")
@@ -508,6 +542,7 @@ async def emergency_block_egress(
 # Service endpoints
 # ---------------------------------------------------------------------------
 
+
 class ServiceActionRequest(BaseModel):
     confirm: bool = False
 
@@ -516,6 +551,7 @@ class ServiceActionRequest(BaseModel):
 async def list_services(caller: SCLCaller = Depends(get_caller)) -> List[Dict]:
     caller.require(Action.READ, Resource.SYSTEM)
     from .services import ServiceManager
+
     mgr = ServiceManager()
     return [s.model_dump() for s in mgr.list_services()]
 
@@ -529,6 +565,7 @@ async def get_service_logs(
 ) -> Dict:
     caller.require(Action.READ, Resource.SYSTEM)
     from .services import ServiceManager
+
     mgr = ServiceManager()
     lines = await mgr.get_logs(name, tail=tail, module_filter=module_filter)
     return {"service": name, "lines": lines}
@@ -541,9 +578,15 @@ async def start_service(
 ) -> Dict:
     caller.require(Action.MANAGE, Resource.SYSTEM)
     from .services import ServiceManager
+
     mgr = ServiceManager()
     ok = await mgr.start_service(name)
-    _log_audit(caller, "start service", target=name, result=AuditResult.SUCCESS if ok else AuditResult.FAILED)
+    _log_audit(
+        caller,
+        "start service",
+        target=name,
+        result=AuditResult.SUCCESS if ok else AuditResult.FAILED,
+    )
     return {"ok": ok, "service": name, "action": "start"}
 
 
@@ -555,11 +598,19 @@ async def stop_service(
 ) -> JSONResponse:
     caller.require(Action.MANAGE, Resource.SYSTEM)
     if not body.confirm:
-        return _confirmation_required("stop service", name, f"This will stop container '{name}'. Resend with confirm: true.")
+        return _confirmation_required(
+            "stop service", name, f"This will stop container '{name}'. Resend with confirm: true."
+        )
     from .services import ServiceManager
+
     mgr = ServiceManager()
     ok = await mgr.stop_service(name)
-    _log_audit(caller, "stop service", target=name, result=AuditResult.SUCCESS if ok else AuditResult.FAILED)
+    _log_audit(
+        caller,
+        "stop service",
+        target=name,
+        result=AuditResult.SUCCESS if ok else AuditResult.FAILED,
+    )
     return JSONResponse(content={"ok": ok, "service": name, "action": "stop"})
 
 
@@ -571,11 +622,21 @@ async def restart_service(
 ) -> JSONResponse:
     caller.require(Action.MANAGE, Resource.SYSTEM)
     if not body.confirm:
-        return _confirmation_required("restart service", name, f"This will restart container '{name}'. Resend with confirm: true.")
+        return _confirmation_required(
+            "restart service",
+            name,
+            f"This will restart container '{name}'. Resend with confirm: true.",
+        )
     from .services import ServiceManager
+
     mgr = ServiceManager()
     ok = await mgr.restart_service(name)
-    _log_audit(caller, "restart service", target=name, result=AuditResult.SUCCESS if ok else AuditResult.FAILED)
+    _log_audit(
+        caller,
+        "restart service",
+        target=name,
+        result=AuditResult.SUCCESS if ok else AuditResult.FAILED,
+    )
     return JSONResponse(content={"ok": ok, "service": name, "action": "restart"})
 
 
@@ -588,11 +649,21 @@ async def update_service(
     """Pull the latest image for a container and restart it."""
     caller.require(Action.MANAGE, Resource.SYSTEM)
     if not body.confirm:
-        return _confirmation_required("update service", name, f"This will pull the latest image for '{name}' and restart it. Resend with confirm: true.")
+        return _confirmation_required(
+            "update service",
+            name,
+            f"This will pull the latest image for '{name}' and restart it. Resend with confirm: true.",
+        )
     from .services import ServiceManager
+
     mgr = ServiceManager()
     ok = await mgr.update_service(name)
-    _log_audit(caller, "update service", target=name, result=AuditResult.SUCCESS if ok else AuditResult.FAILED)
+    _log_audit(
+        caller,
+        "update service",
+        target=name,
+        result=AuditResult.SUCCESS if ok else AuditResult.FAILED,
+    )
     return JSONResponse(content={"ok": ok, "service": name, "action": "update"})
 
 
@@ -603,14 +674,25 @@ async def rebuild_all_services(
 ) -> JSONResponse:
     caller.require(Action.MANAGE, Resource.SYSTEM)
     if not body.confirm:
-        return _confirmation_required("rebuild services", "all", "This will rebuild all containers. Resend with confirm: true.")
+        return _confirmation_required(
+            "rebuild services",
+            "all",
+            "This will rebuild all containers. Resend with confirm: true.",
+        )
     _log_audit(caller, "rebuild services", target="all")
-    return JSONResponse(content={"ok": True, "action": "rebuild", "note": "Rebuild initiated — monitor logs for progress"})
+    return JSONResponse(
+        content={
+            "ok": True,
+            "action": "rebuild",
+            "note": "Rebuild initiated — monitor logs for progress",
+        }
+    )
 
 
 # ---------------------------------------------------------------------------
 # Kill switch endpoints
 # ---------------------------------------------------------------------------
+
 
 @router.post("/killswitch/freeze")
 async def killswitch_freeze(
@@ -619,7 +701,11 @@ async def killswitch_freeze(
 ) -> JSONResponse:
     caller.require(Action.MANAGE, Resource.SYSTEM)
     if not body.confirm:
-        return _confirmation_required("freeze services", "all", "This will pause all bot containers. Resend with confirm: true.")
+        return _confirmation_required(
+            "freeze services",
+            "all",
+            "This will pause all bot containers. Resend with confirm: true.",
+        )
     app = _app_state()
     try:
         monitor = getattr(app, "killswitch_monitor", None)
@@ -638,7 +724,9 @@ async def killswitch_shutdown(
 ) -> JSONResponse:
     caller.require(Action.MANAGE, Resource.SYSTEM)
     if not body.confirm:
-        return _confirmation_required("shutdown services", "all", "This will perform compose down. Resend with confirm: true.")
+        return _confirmation_required(
+            "shutdown services", "all", "This will perform compose down. Resend with confirm: true."
+        )
     app = _app_state()
     try:
         monitor = getattr(app, "killswitch_monitor", None)
@@ -664,7 +752,11 @@ async def killswitch_disconnect(
     if not caller.is_owner():
         return JSONResponse(
             status_code=status.HTTP_403_FORBIDDEN,
-            content={"error": True, "code": "PERMISSION_DENIED", "message": "Disconnect requires owner role"},
+            content={
+                "error": True,
+                "code": "PERMISSION_DENIED",
+                "message": "Disconnect requires owner role",
+            },
         )
     if not (body.confirm and body.force):
         return _confirmation_required(
@@ -688,11 +780,13 @@ async def killswitch_disconnect(
 # Contributor / user management endpoints
 # ---------------------------------------------------------------------------
 
+
 @router.get("/users")
 async def list_users(caller: SCLCaller = Depends(get_caller)) -> List[Dict]:
     caller.require(Action.READ, Resource.USERS)
     app = _app_state()
     from .contributors import ContributorManager
+
     mgr = ContributorManager(
         teams_config=getattr(getattr(app, "config", None), "teams", None),
         activity_tracker=getattr(app, "collaborator_tracker", None),
@@ -705,13 +799,17 @@ async def get_user(user_id: str, caller: SCLCaller = Depends(get_caller)) -> Dic
     caller.require(Action.READ, Resource.USERS)
     app = _app_state()
     from .contributors import ContributorManager
+
     mgr = ContributorManager(
         teams_config=getattr(getattr(app, "config", None), "teams", None),
         activity_tracker=getattr(app, "collaborator_tracker", None),
     )
     rec = mgr.get_contributor(user_id)
     if rec is None:
-        raise HTTPException(status_code=404, detail={"error": True, "code": "NOT_FOUND", "message": f"User {user_id} not found"})
+        raise HTTPException(
+            status_code=404,
+            detail={"error": True, "code": "NOT_FOUND", "message": f"User {user_id} not found"},
+        )
     return rec.model_dump()
 
 
@@ -728,10 +826,20 @@ async def update_display_name(
     """Update a user's display name (CC-35)."""
     caller.require(Action.MANAGE, Resource.USERS)
     if not caller.is_owner():
-        raise HTTPException(status_code=403, detail={"error": True, "code": "PERMISSION_DENIED", "message": "Owner required"})
-    _log_audit(caller, "set display-name", target=user_id, details={"display_name": body.display_name})
+        raise HTTPException(
+            status_code=403,
+            detail={"error": True, "code": "PERMISSION_DENIED", "message": "Owner required"},
+        )
+    _log_audit(
+        caller, "set display-name", target=user_id, details={"display_name": body.display_name}
+    )
     # Runtime-only update (no persist path available without access to the collab file)
-    return {"ok": True, "user_id": user_id, "display_name": body.display_name, "note": "Runtime update only; persisted on next collaborator record write"}
+    return {
+        "ok": True,
+        "user_id": user_id,
+        "display_name": body.display_name,
+        "note": "Runtime update only; persisted on next collaborator record write",
+    }
 
 
 class AddCollaboratorRequest(BaseModel):
@@ -747,8 +855,12 @@ async def add_collaborator(
 ) -> Dict:
     caller.require(Action.MANAGE, Resource.USERS)
     if not caller.is_owner():
-        raise HTTPException(status_code=403, detail={"error": True, "code": "PERMISSION_DENIED", "message": "Owner required"})
+        raise HTTPException(
+            status_code=403,
+            detail={"error": True, "code": "PERMISSION_DENIED", "message": "Owner required"},
+        )
     from ..security.rbac_config import persist_approved_collaborator
+
     persist_approved_collaborator(body.user_id)
     _log_audit(caller, "add collaborator", target=body.user_id)
     return {"ok": True, "user_id": body.user_id, "action": "added"}
@@ -761,9 +873,17 @@ async def revoke_collaborator(
 ) -> Dict:
     caller.require(Action.MANAGE, Resource.USERS)
     if not caller.is_owner():
-        raise HTTPException(status_code=403, detail={"error": True, "code": "PERMISSION_DENIED", "message": "Owner required"})
+        raise HTTPException(
+            status_code=403,
+            detail={"error": True, "code": "PERMISSION_DENIED", "message": "Owner required"},
+        )
     _log_audit(caller, "revoke collaborator", target=user_id)
-    return {"ok": True, "user_id": user_id, "action": "revoked", "note": "Runtime revocation; restart gateway for full effect"}
+    return {
+        "ok": True,
+        "user_id": user_id,
+        "action": "revoked",
+        "note": "Runtime revocation; restart gateway for full effect",
+    }
 
 
 @router.get("/collaborators/activity")
@@ -787,7 +907,15 @@ async def get_collaborator_activity(
     app = _app_state()
     tracker = getattr(app, "collaborator_tracker", None)
     if not tracker:
-        return JSONResponse(content={"entries": [], "paired_entries": [], "total": 0, "total_unfiltered": 0, "tracker_available": False})
+        return JSONResponse(
+            content={
+                "entries": [],
+                "paired_entries": [],
+                "total": 0,
+                "total_unfiltered": 0,
+                "tracker_available": False,
+            }
+        )
     entries = tracker.get_activity(since=since, limit=0)  # fetch all, filter below
     total_unfiltered = len(entries)
     if user_id:
@@ -799,7 +927,8 @@ async def get_collaborator_activity(
     if search:
         search_lower = search.lower()
         entries = [
-            e for e in entries
+            e
+            for e in entries
             if search_lower in (e.get("user_id") or "").lower()
             or search_lower in (e.get("username") or "").lower()
             or search_lower in (e.get("message_preview") or "").lower()
@@ -834,16 +963,22 @@ async def get_collaborator_activity(
                 paired[corr]["response_preview"] = e.get("message_preview")
         else:
             # Older entries without correlation_id — render as standalone
-            unpaired.append({
-                "timestamp": e.get("timestamp"),
-                "user_id": e.get("user_id"),
-                "username": e.get("username"),
-                "source": e.get("source"),
-                "is_owner": e.get("is_owner", False),
-                "correlation_id": None,
-                "query_preview": e.get("message_preview") if e.get("direction") == "inbound" else None,
-                "response_preview": e.get("message_preview") if e.get("direction") == "outbound" else None,
-            })
+            unpaired.append(
+                {
+                    "timestamp": e.get("timestamp"),
+                    "user_id": e.get("user_id"),
+                    "username": e.get("username"),
+                    "source": e.get("source"),
+                    "is_owner": e.get("is_owner", False),
+                    "correlation_id": None,
+                    "query_preview": (
+                        e.get("message_preview") if e.get("direction") == "inbound" else None
+                    ),
+                    "response_preview": (
+                        e.get("message_preview") if e.get("direction") == "outbound" else None
+                    ),
+                }
+            )
     paired_entries = sorted(
         list(paired.values()) + unpaired,
         key=lambda x: x.get("timestamp") or 0,
@@ -856,15 +991,17 @@ async def get_collaborator_activity(
     if limit:
         entries = entries[:limit]
         paired_entries = paired_entries[:limit]
-    return JSONResponse(content={
-        "entries": entries,
-        "paired_entries": paired_entries,
-        "total": total_filtered,
-        "total_unfiltered": total_unfiltered,
-        "offset": offset,
-        "limit": limit,
-        "tracker_available": True,
-    })
+    return JSONResponse(
+        content={
+            "entries": entries,
+            "paired_entries": paired_entries,
+            "total": total_filtered,
+            "total_unfiltered": total_unfiltered,
+            "offset": offset,
+            "limit": limit,
+            "tracker_available": True,
+        }
+    )
 
 
 class SetRoleRequest(BaseModel):
@@ -880,14 +1017,25 @@ async def set_user_role(
     caller.require(Action.SET_ROLE, Resource.USERS)
     from ..security.rbac import RBACManager
     from ..security.rbac_config import RBACConfig, Role
+
     mgr = RBACManager(RBACConfig())
     try:
         role = Role(body.role.lower())
     except ValueError:
-        raise HTTPException(status_code=400, detail={"error": True, "code": "VALIDATION_ERROR", "message": f"Invalid role: {body.role}"})
+        raise HTTPException(
+            status_code=400,
+            detail={
+                "error": True,
+                "code": "VALIDATION_ERROR",
+                "message": f"Invalid role: {body.role}",
+            },
+        )
     result = mgr.set_user_role(caller.user_id, user_id, role)
     if not result.allowed:
-        raise HTTPException(status_code=403, detail={"error": True, "code": "PERMISSION_DENIED", "message": result.reason})
+        raise HTTPException(
+            status_code=403,
+            detail={"error": True, "code": "PERMISSION_DENIED", "message": result.reason},
+        )
     _log_audit(caller, "set role", target=user_id, details={"role": body.role})
     return {"ok": True, "user_id": user_id, "role": body.role}
 
@@ -895,6 +1043,7 @@ async def set_user_role(
 # ---------------------------------------------------------------------------
 # Group management endpoints
 # ---------------------------------------------------------------------------
+
 
 @router.get("/groups")
 async def list_groups(caller: SCLCaller = Depends(get_caller)) -> List[Dict]:
@@ -912,7 +1061,10 @@ async def get_group(group_id: str, caller: SCLCaller = Depends(get_caller)) -> D
     app = _app_state()
     teams = getattr(getattr(app, "config", None), "teams", None)
     if not teams or group_id not in teams.groups:
-        raise HTTPException(status_code=404, detail={"error": True, "code": "NOT_FOUND", "message": f"Group {group_id} not found"})
+        raise HTTPException(
+            status_code=404,
+            detail={"error": True, "code": "NOT_FOUND", "message": f"Group {group_id} not found"},
+        )
     g = teams.groups[group_id]
     return {"id": group_id, **g.model_dump()}
 
@@ -933,14 +1085,32 @@ async def create_group(
     """Create a new group at runtime (owner only)."""
     caller.require(Action.WRITE, Resource.GROUPS)
     if not caller.is_owner():
-        raise HTTPException(status_code=403, detail={"error": True, "code": "PERMISSION_DENIED", "message": "Owner required"})
+        raise HTTPException(
+            status_code=403,
+            detail={"error": True, "code": "PERMISSION_DENIED", "message": "Owner required"},
+        )
     app = _app_state()
     teams = getattr(getattr(app, "config", None), "teams", None)
     if teams is None:
-        raise HTTPException(status_code=503, detail={"error": True, "code": "CONFIG_UNAVAILABLE", "message": "Teams config not available"})
+        raise HTTPException(
+            status_code=503,
+            detail={
+                "error": True,
+                "code": "CONFIG_UNAVAILABLE",
+                "message": "Teams config not available",
+            },
+        )
     if body.group_id in teams.groups:
-        raise HTTPException(status_code=409, detail={"error": True, "code": "CONFLICT", "message": f"Group '{body.group_id}' already exists"})
+        raise HTTPException(
+            status_code=409,
+            detail={
+                "error": True,
+                "code": "CONFLICT",
+                "message": f"Group '{body.group_id}' already exists",
+            },
+        )
     from ..security.group_config import GroupConfig, persist_group_create
+
     new_group = GroupConfig(
         id=body.group_id,
         name=body.name,
@@ -950,8 +1120,19 @@ async def create_group(
     )
     teams.groups[body.group_id] = new_group
     persist_group_create(body.group_id, body.name, body.collab_mode, body.members, body.admin)
-    _log_audit(caller, "create group", target=body.group_id, details={"name": body.name, "collab_mode": body.collab_mode})
-    return {"ok": True, "id": body.group_id, "name": body.name, "collab_mode": body.collab_mode, "members": body.members}
+    _log_audit(
+        caller,
+        "create group",
+        target=body.group_id,
+        details={"name": body.name, "collab_mode": body.collab_mode},
+    )
+    return {
+        "ok": True,
+        "id": body.group_id,
+        "name": body.name,
+        "collab_mode": body.collab_mode,
+        "members": body.members,
+    }
 
 
 @router.delete("/groups/{group_id}")
@@ -962,13 +1143,20 @@ async def delete_group(
     """Delete a group at runtime (owner only)."""
     caller.require(Action.WRITE, Resource.GROUPS)
     if not caller.is_owner():
-        raise HTTPException(status_code=403, detail={"error": True, "code": "PERMISSION_DENIED", "message": "Owner required"})
+        raise HTTPException(
+            status_code=403,
+            detail={"error": True, "code": "PERMISSION_DENIED", "message": "Owner required"},
+        )
     app = _app_state()
     teams = getattr(getattr(app, "config", None), "teams", None)
     if not teams or group_id not in teams.groups:
-        raise HTTPException(status_code=404, detail={"error": True, "code": "NOT_FOUND", "message": f"Group {group_id} not found"})
+        raise HTTPException(
+            status_code=404,
+            detail={"error": True, "code": "NOT_FOUND", "message": f"Group {group_id} not found"},
+        )
     del teams.groups[group_id]
     from ..security.group_config import persist_group_delete
+
     persist_group_delete(group_id)
     _log_audit(caller, "delete group", target=group_id)
     return {"ok": True, "group_id": group_id, "action": "deleted"}
@@ -985,15 +1173,26 @@ async def add_group_member(
     caller: SCLCaller = Depends(get_caller),
 ) -> Dict:
     if not caller.is_owner() and not caller.is_group_admin(group_id):
-        raise HTTPException(status_code=403, detail={"error": True, "code": "PERMISSION_DENIED", "message": "Owner or group admin required"})
+        raise HTTPException(
+            status_code=403,
+            detail={
+                "error": True,
+                "code": "PERMISSION_DENIED",
+                "message": "Owner or group admin required",
+            },
+        )
     app = _app_state()
     teams = getattr(getattr(app, "config", None), "teams", None)
     if not teams or group_id not in teams.groups:
-        raise HTTPException(status_code=404, detail={"error": True, "code": "NOT_FOUND", "message": f"Group {group_id} not found"})
+        raise HTTPException(
+            status_code=404,
+            detail={"error": True, "code": "NOT_FOUND", "message": f"Group {group_id} not found"},
+        )
     group = teams.groups[group_id]
     if body.user_id not in group.members:
         group.members.append(body.user_id)
     from ..security.group_config import persist_group_member_add
+
     persist_group_member_add(group_id, body.user_id)
     _log_audit(caller, "add group-member", target=f"{group_id}/{body.user_id}")
     return {"ok": True, "group_id": group_id, "user_id": body.user_id, "action": "added"}
@@ -1006,15 +1205,26 @@ async def remove_group_member(
     caller: SCLCaller = Depends(get_caller),
 ) -> Dict:
     if not caller.is_owner() and not caller.is_group_admin(group_id):
-        raise HTTPException(status_code=403, detail={"error": True, "code": "PERMISSION_DENIED", "message": "Owner or group admin required"})
+        raise HTTPException(
+            status_code=403,
+            detail={
+                "error": True,
+                "code": "PERMISSION_DENIED",
+                "message": "Owner or group admin required",
+            },
+        )
     app = _app_state()
     teams = getattr(getattr(app, "config", None), "teams", None)
     if not teams or group_id not in teams.groups:
-        raise HTTPException(status_code=404, detail={"error": True, "code": "NOT_FOUND", "message": f"Group {group_id} not found"})
+        raise HTTPException(
+            status_code=404,
+            detail={"error": True, "code": "NOT_FOUND", "message": f"Group {group_id} not found"},
+        )
     group = teams.groups[group_id]
     if uid in group.members:
         group.members.remove(uid)
     from ..security.group_config import persist_group_member_remove
+
     persist_group_member_remove(group_id, uid)
     _log_audit(caller, "remove group-member", target=f"{group_id}/{uid}")
     return {"ok": True, "group_id": group_id, "user_id": uid, "action": "removed"}
@@ -1032,13 +1242,22 @@ async def rename_group(
 ) -> Dict:
     """Rename a group (CC-34)."""
     if not caller.is_owner():
-        raise HTTPException(status_code=403, detail={"error": True, "code": "PERMISSION_DENIED", "message": "Owner required"})
+        raise HTTPException(
+            status_code=403,
+            detail={"error": True, "code": "PERMISSION_DENIED", "message": "Owner required"},
+        )
     if not body.name.strip():
-        raise HTTPException(status_code=400, detail={"error": True, "code": "VALIDATION_ERROR", "message": "Name cannot be empty"})
+        raise HTTPException(
+            status_code=400,
+            detail={"error": True, "code": "VALIDATION_ERROR", "message": "Name cannot be empty"},
+        )
     app = _app_state()
     teams = getattr(getattr(app, "config", None), "teams", None)
     if not teams or group_id not in teams.groups:
-        raise HTTPException(status_code=404, detail={"error": True, "code": "NOT_FOUND", "message": f"Group {group_id} not found"})
+        raise HTTPException(
+            status_code=404,
+            detail={"error": True, "code": "NOT_FOUND", "message": f"Group {group_id} not found"},
+        )
     teams.groups[group_id].name = body.name
     _log_audit(caller, "rename group", target=group_id, details={"name": body.name})
     return {"ok": True, "group_id": group_id, "name": body.name}
@@ -1055,16 +1274,30 @@ async def set_group_mode(
     caller: SCLCaller = Depends(get_caller),
 ) -> Dict:
     if not caller.is_owner():
-        raise HTTPException(status_code=403, detail={"error": True, "code": "PERMISSION_DENIED", "message": "Owner required"})
+        raise HTTPException(
+            status_code=403,
+            detail={"error": True, "code": "PERMISSION_DENIED", "message": "Owner required"},
+        )
     valid_modes = {"local_only", "project_scoped", "full_access"}
     if body.collab_mode not in valid_modes:
-        raise HTTPException(status_code=400, detail={"error": True, "code": "VALIDATION_ERROR", "message": f"Invalid mode: {body.collab_mode}"})
+        raise HTTPException(
+            status_code=400,
+            detail={
+                "error": True,
+                "code": "VALIDATION_ERROR",
+                "message": f"Invalid mode: {body.collab_mode}",
+            },
+        )
     app = _app_state()
     teams = getattr(getattr(app, "config", None), "teams", None)
     if not teams or group_id not in teams.groups:
-        raise HTTPException(status_code=404, detail={"error": True, "code": "NOT_FOUND", "message": f"Group {group_id} not found"})
+        raise HTTPException(
+            status_code=404,
+            detail={"error": True, "code": "NOT_FOUND", "message": f"Group {group_id} not found"},
+        )
     teams.groups[group_id].collab_mode = body.collab_mode
     from ..security.group_config import persist_group_collab_mode
+
     persist_group_collab_mode(group_id, body.collab_mode)
     _log_audit(caller, "set mode", target=group_id, details={"mode": body.collab_mode})
     return {"ok": True, "group_id": group_id, "collab_mode": body.collab_mode}
@@ -1073,6 +1306,7 @@ async def set_group_mode(
 # ---------------------------------------------------------------------------
 # Delegation management endpoints (v1.0.0)
 # ---------------------------------------------------------------------------
+
 
 @router.get("/delegation")
 async def list_delegations(caller: SCLCaller = Depends(get_caller)) -> List[Dict]:
@@ -1100,23 +1334,46 @@ async def create_delegation(
     """Create a time-bounded privilege delegation (owner only)."""
     caller.require(Action.MANAGE, Resource.USERS)
     if not caller.is_owner():
-        raise HTTPException(status_code=403, detail={"error": True, "code": "PERMISSION_DENIED", "message": "Owner required"})
+        raise HTTPException(
+            status_code=403,
+            detail={"error": True, "code": "PERMISSION_DENIED", "message": "Owner required"},
+        )
     app = _app_state()
     mgr = getattr(app, "delegation_manager", None)
     if not mgr:
-        raise HTTPException(status_code=503, detail={"error": True, "code": "UNAVAILABLE", "message": "DelegationManager not initialized"})
+        raise HTTPException(
+            status_code=503,
+            detail={
+                "error": True,
+                "code": "UNAVAILABLE",
+                "message": "DelegationManager not initialized",
+            },
+        )
     try:
         from ..security.delegation import DelegationPrivilege
+
         priv = DelegationPrivilege(body.privilege)
     except ValueError:
-        raise HTTPException(status_code=400, detail={"error": True, "code": "VALIDATION_ERROR", "message": f"Invalid privilege: {body.privilege}. Valid: egress_approval, user_management"})
+        raise HTTPException(
+            status_code=400,
+            detail={
+                "error": True,
+                "code": "VALIDATION_ERROR",
+                "message": f"Invalid privilege: {body.privilege}. Valid: egress_approval, user_management",
+            },
+        )
     delegation = mgr.delegate(
         owner_id=caller.user_id,
         to_user_id=body.delegatee_id,
         privilege=priv,
         duration_hours=body.duration_hours,
     )
-    _log_audit(caller, "create delegation", target=body.delegatee_id, details={"privilege": body.privilege, "duration_hours": body.duration_hours})
+    _log_audit(
+        caller,
+        "create delegation",
+        target=body.delegatee_id,
+        details={"privilege": body.privilege, "duration_hours": body.duration_hours},
+    )
     return delegation.to_dict()
 
 
@@ -1129,28 +1386,52 @@ async def revoke_delegation(
     """Revoke a privilege delegation. Omit privilege to revoke all for the user."""
     caller.require(Action.MANAGE, Resource.USERS)
     if not caller.is_owner():
-        raise HTTPException(status_code=403, detail={"error": True, "code": "PERMISSION_DENIED", "message": "Owner required"})
+        raise HTTPException(
+            status_code=403,
+            detail={"error": True, "code": "PERMISSION_DENIED", "message": "Owner required"},
+        )
     app = _app_state()
     mgr = getattr(app, "delegation_manager", None)
     if not mgr:
-        raise HTTPException(status_code=503, detail={"error": True, "code": "UNAVAILABLE", "message": "DelegationManager not initialized"})
+        raise HTTPException(
+            status_code=503,
+            detail={
+                "error": True,
+                "code": "UNAVAILABLE",
+                "message": "DelegationManager not initialized",
+            },
+        )
     if privilege:
         try:
             from ..security.delegation import DelegationPrivilege
+
             priv = DelegationPrivilege(privilege)
         except ValueError:
-            raise HTTPException(status_code=400, detail={"error": True, "code": "VALIDATION_ERROR", "message": f"Invalid privilege: {privilege}"})
+            raise HTTPException(
+                status_code=400,
+                detail={
+                    "error": True,
+                    "code": "VALIDATION_ERROR",
+                    "message": f"Invalid privilege: {privilege}",
+                },
+            )
         revoked = mgr.revoke(caller.user_id, delegatee_id, priv)
         count = 1 if revoked else 0
     else:
         count = mgr.revoke_all_for_user(caller.user_id, delegatee_id)
-    _log_audit(caller, "revoke delegation", target=delegatee_id, details={"privilege": privilege or "all", "count": count})
+    _log_audit(
+        caller,
+        "revoke delegation",
+        target=delegatee_id,
+        details={"privilege": privilege or "all", "count": count},
+    )
     return {"ok": count > 0, "delegatee_id": delegatee_id, "revoked_count": count}
 
 
 # ---------------------------------------------------------------------------
 # Tool ACL endpoints (v1.0.0) — read-only visibility
 # ---------------------------------------------------------------------------
+
 
 @router.get("/tool-acl/{entity_id}")
 async def get_tool_acl(entity_id: str, caller: SCLCaller = Depends(get_caller)) -> Dict:
@@ -1159,7 +1440,12 @@ async def get_tool_acl(entity_id: str, caller: SCLCaller = Depends(get_caller)) 
     app = _app_state()
     enforcer = getattr(app, "tool_acl_enforcer", None)
     if not enforcer:
-        return {"entity_id": entity_id, "allowed": [], "denied": [], "note": "ToolACLEnforcer not initialized"}
+        return {
+            "entity_id": entity_id,
+            "allowed": [],
+            "denied": [],
+            "note": "ToolACLEnforcer not initialized",
+        }
     return {
         "entity_id": entity_id,
         "allowed": enforcer.get_allowed_tools(entity_id),
@@ -1171,6 +1457,7 @@ async def get_tool_acl(entity_id: str, caller: SCLCaller = Depends(get_caller)) 
 # Shared memory endpoints (v1.0.0) — group memory visibility + clear
 # ---------------------------------------------------------------------------
 
+
 @router.get("/shared-memory/groups/{group_id}")
 async def get_group_memory(group_id: str, caller: SCLCaller = Depends(get_caller)) -> Dict:
     """Read raw shared memory for a group workspace."""
@@ -1180,6 +1467,7 @@ async def get_group_memory(group_id: str, caller: SCLCaller = Depends(get_caller
     if not sm:
         return {"group_id": group_id, "memory": "", "note": "SessionManager not initialized"}
     from ..security.shared_memory import SharedMemoryManager
+
     memory_text = SharedMemoryManager(sm).get_group_memory(group_id)
     return {"group_id": group_id, "memory": memory_text, "length": len(memory_text)}
 
@@ -1189,7 +1477,10 @@ async def clear_group_memory(group_id: str, caller: SCLCaller = Depends(get_call
     """Clear shared memory for a group workspace (owner only)."""
     caller.require(Action.MANAGE, Resource.USERS)
     if not caller.is_owner():
-        raise HTTPException(status_code=403, detail={"error": True, "code": "PERMISSION_DENIED", "message": "Owner required"})
+        raise HTTPException(
+            status_code=403,
+            detail={"error": True, "code": "PERMISSION_DENIED", "message": "Owner required"},
+        )
     app = _app_state()
     sm = getattr(app, "session_manager", None)
     if not sm:
@@ -1201,12 +1492,15 @@ async def clear_group_memory(group_id: str, caller: SCLCaller = Depends(get_call
         _log_audit(caller, "clear group-memory", target=group_id)
         return {"ok": True, "group_id": group_id}
     except Exception as exc:
-        raise HTTPException(status_code=500, detail={"error": True, "code": "INTERNAL_ERROR", "message": str(exc)})
+        raise HTTPException(
+            status_code=500, detail={"error": True, "code": "INTERNAL_ERROR", "message": str(exc)}
+        )
 
 
 # ---------------------------------------------------------------------------
 # Privacy policy endpoints (v1.0.0) — service policy visibility
 # ---------------------------------------------------------------------------
+
 
 @router.get("/privacy")
 async def get_privacy_policies(caller: SCLCaller = Depends(get_caller)) -> Dict:
@@ -1234,6 +1528,7 @@ async def get_privacy_policies(caller: SCLCaller = Depends(get_caller)) -> Dict:
 # ---------------------------------------------------------------------------
 # Approval endpoints
 # ---------------------------------------------------------------------------
+
 
 @router.get("/approvals/pending")
 async def list_pending_approvals(caller: SCLCaller = Depends(get_caller)) -> List[Dict]:
@@ -1295,17 +1590,21 @@ async def deny_request(
 # Observability / health
 # ---------------------------------------------------------------------------
 
+
 @router.get("/health")
 async def get_health(caller: SCLCaller = Depends(get_caller)) -> Dict:
     caller.require(Action.READ, Resource.SYSTEM)
     app = _app_state()
     from .services import ServiceManager
+
     mgr = ServiceManager()
     services = mgr.list_services()
     all_healthy = all(s.status.value in ("running", "standby") for s in services)
     return {
         "status": "healthy" if all_healthy else "degraded",
-        "services": [{"name": s.name, "status": s.status.value, "health": s.health.value} for s in services],
+        "services": [
+            {"name": s.name, "status": s.status.value, "health": s.health.value} for s in services
+        ],
         "risk_score": 0,
     }
 
@@ -1333,9 +1632,16 @@ async def get_modules(caller: SCLCaller = Depends(get_caller)) -> List[Dict]:
     app = _app_state()
     modules = []
     module_names = [
-        "sanitizer", "prompt_guard", "egress_filter", "mcp_proxy",
-        "killswitch_monitor", "drift_detector", "memory_integrity",
-        "soc_correlation", "dns_blocklist", "heuristic_classifier",
+        "sanitizer",
+        "prompt_guard",
+        "egress_filter",
+        "mcp_proxy",
+        "killswitch_monitor",
+        "drift_detector",
+        "memory_integrity",
+        "soc_correlation",
+        "dns_blocklist",
+        "heuristic_classifier",
     ]
     for name in module_names:
         obj = getattr(app, name, None)
@@ -1347,12 +1653,14 @@ async def get_modules(caller: SCLCaller = Depends(get_caller)) -> List[Dict]:
                 mode = getattr(cfg, "mode", "enforce")
             else:
                 mode = getattr(obj, "mode", "enforce")
-        modules.append({
-            "name": name,
-            "available": obj is not None,
-            "mode": mode,
-            "description": _MODULE_DESCRIPTIONS.get(name, ""),
-        })
+        modules.append(
+            {
+                "name": name,
+                "available": obj is not None,
+                "mode": mode,
+                "description": _MODULE_DESCRIPTIONS.get(name, ""),
+            }
+        )
     return modules
 
 
@@ -1369,11 +1677,25 @@ async def set_module_mode(
     """Switch a security module between enforce/monitor/disabled modes at runtime (CC-42)."""
     caller.require(Action.MANAGE, Resource.SYSTEM)
     if body.mode not in ("enforce", "monitor", "disabled"):
-        raise HTTPException(status_code=400, detail={"error": True, "code": "VALIDATION_ERROR", "message": "mode must be enforce | monitor | disabled"})
+        raise HTTPException(
+            status_code=400,
+            detail={
+                "error": True,
+                "code": "VALIDATION_ERROR",
+                "message": "mode must be enforce | monitor | disabled",
+            },
+        )
     app = _app_state()
     obj = getattr(app, name, None)
     if obj is None:
-        raise HTTPException(status_code=404, detail={"error": True, "code": "NOT_FOUND", "message": f"Module {name} not found or not initialized"})
+        raise HTTPException(
+            status_code=404,
+            detail={
+                "error": True,
+                "code": "NOT_FOUND",
+                "message": f"Module {name} not found or not initialized",
+            },
+        )
     # Try to set mode on config or directly on the object
     changed = False
     cfg = getattr(obj, "config", None)
@@ -1384,7 +1706,14 @@ async def set_module_mode(
         obj.mode = body.mode
         changed = True
     if not changed:
-        raise HTTPException(status_code=400, detail={"error": True, "code": "NOT_SUPPORTED", "message": f"Module {name} does not support runtime mode switching"})
+        raise HTTPException(
+            status_code=400,
+            detail={
+                "error": True,
+                "code": "NOT_SUPPORTED",
+                "message": f"Module {name} does not support runtime mode switching",
+            },
+        )
     _log_audit(caller, f"set module mode {name}", target=name, details={"mode": body.mode})
     return {"ok": True, "name": name, "mode": body.mode}
 
@@ -1401,7 +1730,10 @@ async def get_config(caller: SCLCaller = Depends(get_caller)) -> Dict:
         "bind": getattr(cfg, "bind", ""),
         "port": getattr(cfg, "port", 8080),
         "log_level": getattr(cfg, "log_level", "INFO"),
-        "bots": {bid: {"name": b.name, "hostname": b.hostname, "port": b.port} for bid, b in getattr(cfg, "bots", {}).items()},
+        "bots": {
+            bid: {"name": b.name, "hostname": b.hostname, "port": b.port}
+            for bid, b in getattr(cfg, "bots", {}).items()
+        },
         "teams_enabled": getattr(cfg, "teams", None) is not None,
     }
 
@@ -1420,8 +1752,16 @@ async def set_log_level(
     valid = {"DEBUG", "INFO", "WARNING", "ERROR", "CRITICAL"}
     lvl = body.level.upper()
     if lvl not in valid:
-        raise HTTPException(status_code=400, detail={"error": True, "code": "VALIDATION_ERROR", "message": f"Invalid level: {body.level}. Valid: {sorted(valid)}"})
+        raise HTTPException(
+            status_code=400,
+            detail={
+                "error": True,
+                "code": "VALIDATION_ERROR",
+                "message": f"Invalid level: {body.level}. Valid: {sorted(valid)}",
+            },
+        )
     import logging as _logging
+
     _logging.getLogger().setLevel(lvl)
     _logging.getLogger("agentshroud").setLevel(lvl)
     _log_audit(caller, "set log-level", target="root", details={"level": lvl})
@@ -1464,7 +1804,8 @@ async def _launch_scan_background(scanner: str) -> None:
     flag = _SCANNER_FLAG_MAP[scanner]
     try:
         proc = await asyncio.create_subprocess_exec(
-            _SECURITY_SCAN_SCRIPT, flag,
+            _SECURITY_SCAN_SCRIPT,
+            flag,
             stdout=asyncio.subprocess.DEVNULL,
             stderr=asyncio.subprocess.DEVNULL,
         )
@@ -1489,7 +1830,11 @@ async def run_scanner(
     if scanner not in valid_scanners:
         raise HTTPException(
             status_code=400,
-            detail={"error": True, "code": "VALIDATION_ERROR", "message": f"Unknown scanner: {scanner}. Valid: {sorted(valid_scanners)}"},
+            detail={
+                "error": True,
+                "code": "VALIDATION_ERROR",
+                "message": f"Unknown scanner: {scanner}. Valid: {sorted(valid_scanners)}",
+            },
         )
     _log_audit(caller, f"scan {scanner}", target="system")
     await _launch_scan_background(scanner)
@@ -1521,6 +1866,7 @@ async def get_scan_results(caller: SCLCaller = Depends(get_caller)) -> List[Dict
 # Scanner aggregation + Container Security Scorecard endpoints
 # ---------------------------------------------------------------------------
 
+
 @router.get("/scanners")
 async def get_scanner_results(caller: SCLCaller = Depends(get_caller)) -> Dict:
     """Unified scanner aggregation: Trivy, Falco, ClamAV, Wazuh, OpenSCAP.
@@ -1531,6 +1877,7 @@ async def get_scanner_results(caller: SCLCaller = Depends(get_caller)) -> Dict:
     caller.require(Action.READ, Resource.SYSTEM)
     try:
         from ..security.scanner_integration import aggregate_results
+
         return aggregate_results()
     except Exception as exc:
         logger.warning("get_scanner_results: %s", exc)
@@ -1562,7 +1909,8 @@ async def get_scanner_recent_events(
     history = list(getattr(app, "scanner_result_history", []) or [])
     if status and status.lower() != "all":
         history = [
-            h for h in history
+            h
+            for h in history
             if str((h.get("summary") or {}).get("status", "")).lower() == status.lower()
         ]
     items = history[-limit:]
@@ -1588,6 +1936,7 @@ async def get_security_scorecard(caller: SCLCaller = Depends(get_caller)) -> Dic
     caller.require(Action.READ, Resource.SYSTEM)
     try:
         from ..security.scanner_integration import compute_scorecard
+
         return compute_scorecard()
     except Exception as exc:
         logger.warning("get_security_scorecard: %s", exc)
@@ -1610,6 +1959,7 @@ async def get_sbom(caller: SCLCaller = Depends(get_caller)) -> Dict:
     caller.require(Action.READ, Resource.SYSTEM)
     try:
         from ..security.scanner_integration import get_sbom as _get_sbom
+
         sbom = _get_sbom()
         if sbom is None:
             return JSONResponse(
@@ -1639,6 +1989,7 @@ async def get_trivy_results(caller: SCLCaller = Depends(get_caller)) -> Dict:
     caller.require(Action.READ, Resource.SYSTEM)
     try:
         from ..security.scanner_integration import get_trivy_summary
+
         return get_trivy_summary()
     except Exception as exc:
         logger.warning("get_trivy_results: %s", exc)
@@ -1656,6 +2007,7 @@ async def get_agent_cves(caller: SCLCaller = Depends(get_caller)) -> Dict:
     caller.require(Action.READ, Resource.SYSTEM)
     try:
         from ..security.agent_cve_registry import get_agent_cve_summary
+
         return get_agent_cve_summary()
     except Exception as exc:
         logger.warning("get_agent_cves: %s", exc)
@@ -1691,7 +2043,10 @@ async def trigger_cve_report(caller: SCLCaller = Depends(get_caller)) -> Dict:
             )
 
         _aio.create_task(_run())
-        return {"status": "queued", "message": "CVE report scan started — Telegram message will follow"}
+        return {
+            "status": "queued",
+            "message": "CVE report scan started — Telegram message will follow",
+        }
     except Exception as exc:
         logger.error("trigger_cve_report: %s", exc)
         return {"status": "error", "error": str(exc)}
@@ -1710,11 +2065,18 @@ def _fetch_latest_release() -> Dict:
     try:
         req = urllib.request.Request(
             _GH_RELEASES_API,
-            headers={"User-Agent": f"agentshroud-gateway/{_CURRENT_VERSION}", "Accept": "application/vnd.github+json"},
+            headers={
+                "User-Agent": f"agentshroud-gateway/{_CURRENT_VERSION}",
+                "Accept": "application/vnd.github+json",
+            },
         )
         with urllib.request.urlopen(req, timeout=10) as resp:
             data = json.loads(resp.read())
-        return {"tag_name": data.get("tag_name", ""), "html_url": data.get("html_url", ""), "body": data.get("body", "")}
+        return {
+            "tag_name": data.get("tag_name", ""),
+            "html_url": data.get("html_url", ""),
+            "body": data.get("body", ""),
+        }
     except Exception as exc:
         return {"error": str(exc)}
 
@@ -1724,11 +2086,21 @@ async def get_updates(caller: SCLCaller = Depends(get_caller)) -> Dict:
     caller.require(Action.READ, Resource.SYSTEM)
     release = await asyncio.get_event_loop().run_in_executor(None, _fetch_latest_release)
     if "error" in release:
-        return {"current_version": _CURRENT_VERSION, "available": [], "check_error": release["error"]}
+        return {
+            "current_version": _CURRENT_VERSION,
+            "available": [],
+            "check_error": release["error"],
+        }
     latest = release.get("tag_name", "").lstrip("v")
     available = []
     if latest and latest != _CURRENT_VERSION:
-        available.append({"version": latest, "url": release.get("html_url", ""), "notes": release.get("body", "")})
+        available.append(
+            {
+                "version": latest,
+                "url": release.get("html_url", ""),
+                "notes": release.get("body", ""),
+            }
+        )
     return {"current_version": _CURRENT_VERSION, "latest_version": latest, "available": available}
 
 
@@ -1742,20 +2114,32 @@ async def _ssh_compose(command: str, timeout: int = 120) -> tuple[int, str, str]
     host = os.environ.get("AGENTSHROUD_COMPOSE_HOST", "")
     compose_dir = os.environ.get("AGENTSHROUD_COMPOSE_DIR", "/opt/agentshroud")
     if not host:
-        return 1, "", "AGENTSHROUD_COMPOSE_HOST is not configured — cannot perform remote compose operations"
+        return (
+            1,
+            "",
+            "AGENTSHROUD_COMPOSE_HOST is not configured — cannot perform remote compose operations",
+        )
     full_cmd = f"cd {compose_dir} && {command}"
     try:
         proc = await asyncio.create_subprocess_exec(
             "ssh",
-            "-o", "BatchMode=yes",
-            "-o", "ConnectTimeout=10",
-            "-o", "StrictHostKeyChecking=accept-new",
-            host, full_cmd,
+            "-o",
+            "BatchMode=yes",
+            "-o",
+            "ConnectTimeout=10",
+            "-o",
+            "StrictHostKeyChecking=accept-new",
+            host,
+            full_cmd,
             stdout=asyncio.subprocess.PIPE,
             stderr=asyncio.subprocess.PIPE,
         )
         stdout, stderr = await asyncio.wait_for(proc.communicate(), timeout=timeout)
-        return proc.returncode or 0, stdout.decode(errors="replace"), stderr.decode(errors="replace")
+        return (
+            proc.returncode or 0,
+            stdout.decode(errors="replace"),
+            stderr.decode(errors="replace"),
+        )
     except asyncio.TimeoutError:
         return 1, "", f"SSH command timed out after {timeout}s"
     except Exception as exc:
@@ -1769,10 +2153,14 @@ async def upgrade_gateway(
 ) -> JSONResponse:
     caller.require(Action.MANAGE, Resource.SYSTEM)
     if not caller.is_owner():
-        raise HTTPException(status_code=403, detail={"error": True, "code": "PERMISSION_DENIED", "message": "Owner required"})
+        raise HTTPException(
+            status_code=403,
+            detail={"error": True, "code": "PERMISSION_DENIED", "message": "Owner required"},
+        )
     if not body.confirm:
         return _confirmation_required(
-            "upgrade gateway", "agentshroud-gateway",
+            "upgrade gateway",
+            "agentshroud-gateway",
             "Runs: git pull origin main && docker compose up -d --build --no-deps agentshroud-gateway "
             "on AGENTSHROUD_COMPOSE_HOST. Resend with confirm: true.",
         )
@@ -1784,9 +2172,17 @@ async def upgrade_gateway(
     if rc != 0:
         return JSONResponse(
             status_code=status.HTTP_500_INTERNAL_SERVER_ERROR,
-            content={"ok": False, "action": "upgrade", "target": "gateway", "exit_code": rc, "stderr": stderr[:2000]},
+            content={
+                "ok": False,
+                "action": "upgrade",
+                "target": "gateway",
+                "exit_code": rc,
+                "stderr": stderr[:2000],
+            },
         )
-    return JSONResponse(content={"ok": True, "action": "upgrade", "target": "gateway", "stdout": stdout[:2000]})
+    return JSONResponse(
+        content={"ok": True, "action": "upgrade", "target": "gateway", "stdout": stdout[:2000]}
+    )
 
 
 async def _docker_exec_bot(command: list[str], timeout: int = 120) -> tuple[int, str]:
@@ -1817,15 +2213,21 @@ async def _docker_exec_bot(command: list[str], timeout: int = 120) -> tuple[int,
 
     try:
         # Create exec instance
-        exec_body = _json.dumps({
-            "AttachStdout": True, "AttachStderr": True,
-            "Cmd": command,
-        }).encode()
+        exec_body = _json.dumps(
+            {
+                "AttachStdout": True,
+                "AttachStderr": True,
+                "Cmd": command,
+            }
+        ).encode()
         status_code, data = await asyncio.get_event_loop().run_in_executor(
             None, lambda: _unix_call("POST", f"/containers/{_CONTAINER}/exec", exec_body)
         )
         if status_code not in (200, 201):
-            return 1, f"Docker exec create failed ({status_code}): {data.decode(errors='replace')[:500]}"
+            return (
+                1,
+                f"Docker exec create failed ({status_code}): {data.decode(errors='replace')[:500]}",
+            )
         exec_id = _json.loads(data).get("Id", "")
         if not exec_id:
             return 1, "Docker exec create returned no ID"
@@ -1846,8 +2248,8 @@ async def _docker_exec_bot(command: list[str], timeout: int = 120) -> tuple[int,
         text = ""
         offset = 0
         while offset + 8 <= len(raw):
-            frame_size = int.from_bytes(raw[offset + 4:offset + 8], "big")
-            text += raw[offset + 8: offset + 8 + frame_size].decode(errors="replace")
+            frame_size = int.from_bytes(raw[offset + 4 : offset + 8], "big")
+            text += raw[offset + 8 : offset + 8 + frame_size].decode(errors="replace")
             offset += 8 + frame_size
         return exit_code, text or output.decode(errors="replace")
     except Exception as exc:
@@ -1873,7 +2275,8 @@ async def upgrade_bot(
         )
     if not body.confirm:
         return _confirmation_required(
-            "upgrade bot", "agentshroud-bot",
+            "upgrade bot",
+            "agentshroud-bot",
             "Runs: npm install -g openclaw@latest inside the agentshroud-bot container "
             "(writes to /home/node/.npm-global — no container rebuild needed). "
             "Resend with confirm: true.",
@@ -1886,9 +2289,17 @@ async def upgrade_bot(
     if exit_code != 0:
         return JSONResponse(
             status_code=status.HTTP_500_INTERNAL_SERVER_ERROR,
-            content={"ok": False, "action": "upgrade", "target": "bot", "exit_code": exit_code, "output": output[:2000]},
+            content={
+                "ok": False,
+                "action": "upgrade",
+                "target": "bot",
+                "exit_code": exit_code,
+                "output": output[:2000],
+            },
         )
-    return JSONResponse(content={"ok": True, "action": "upgrade", "target": "bot", "output": output[:2000]})
+    return JSONResponse(
+        content={"ok": True, "action": "upgrade", "target": "bot", "output": output[:2000]}
+    )
 
 
 @router.post("/updates/gateway/rollback")
@@ -1898,10 +2309,14 @@ async def rollback_gateway(
 ) -> JSONResponse:
     caller.require(Action.MANAGE, Resource.SYSTEM)
     if not caller.is_owner():
-        raise HTTPException(status_code=403, detail={"error": True, "code": "PERMISSION_DENIED", "message": "Owner required"})
+        raise HTTPException(
+            status_code=403,
+            detail={"error": True, "code": "PERMISSION_DENIED", "message": "Owner required"},
+        )
     if not body.confirm:
         return _confirmation_required(
-            "rollback gateway", "agentshroud-gateway",
+            "rollback gateway",
+            "agentshroud-gateway",
             "Runs: git checkout HEAD~1 -- gateway/ && docker compose up -d --build --no-deps agentshroud-gateway "
             "on AGENTSHROUD_COMPOSE_HOST. Resend with confirm: true.",
         )
@@ -1914,24 +2329,35 @@ async def rollback_gateway(
     if rc != 0:
         return JSONResponse(
             status_code=status.HTTP_500_INTERNAL_SERVER_ERROR,
-            content={"ok": False, "action": "rollback", "target": "gateway", "exit_code": rc, "stderr": stderr[:2000]},
+            content={
+                "ok": False,
+                "action": "rollback",
+                "target": "gateway",
+                "exit_code": rc,
+                "stderr": stderr[:2000],
+            },
         )
-    return JSONResponse(content={"ok": True, "action": "rollback", "target": "gateway", "stdout": stdout[:2000]})
+    return JSONResponse(
+        content={"ok": True, "action": "rollback", "target": "gateway", "stdout": stdout[:2000]}
+    )
 
 
 # ---------------------------------------------------------------------------
 # WebSocket endpoint
 # ---------------------------------------------------------------------------
 
+
 @router.websocket("/ws")
 async def soc_websocket(websocket: WebSocket):
     from .websocket import ws_soc_endpoint
+
     await ws_soc_endpoint(websocket)
 
 
 # ---------------------------------------------------------------------------
 # Web dashboard — serve SPA at /soc/
 # ---------------------------------------------------------------------------
+
 
 @router.get("/", response_class=HTMLResponse, include_in_schema=False)
 @router.get("", response_class=HTMLResponse, include_in_schema=False)

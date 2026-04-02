@@ -21,28 +21,32 @@ logger = logging.getLogger(__name__)
 
 class ApprovalResult(Enum):
     """Result of an approval request."""
+
     APPROVED = "approved"
-    DENIED = "denied" 
+    DENIED = "denied"
     TIMEOUT = "timeout"
 
 
 class RiskLevel(Enum):
     """Risk assessment levels for egress requests."""
-    GREEN = "green"    # Known-safe domains
+
+    GREEN = "green"  # Known-safe domains
     YELLOW = "yellow"  # Unknown domain, standard ports
-    RED = "red"        # High-risk (IP, non-standard ports, suspicious TLDs)
+    RED = "red"  # High-risk (IP, non-standard ports, suspicious TLDs)
 
 
 class ApprovalMode(Enum):
     """Approval modes for rules."""
+
     PERMANENT = "permanent"
-    SESSION = "session" 
+    SESSION = "session"
     ONCE = "once"
 
 
 @dataclass
 class EgressRequest:
     """Represents a pending egress approval request."""
+
     request_id: str
     domain: str
     port: int
@@ -62,11 +66,14 @@ class EgressScope:
       "user"  — applies only to user_ids listed
       "group" — applies only to members of group_ids listed
     """
+
     kind: str = "all"  # "all" | "user" | "group"
     user_ids: List[str] = field(default_factory=list)
     group_ids: List[str] = field(default_factory=list)
 
-    def matches(self, user_id: Optional[str], group_ids: Optional[List[str]], is_owner: bool = False) -> bool:
+    def matches(
+        self, user_id: Optional[str], group_ids: Optional[List[str]], is_owner: bool = False
+    ) -> bool:
         """Return True if this scope applies to the given user context."""
         if is_owner or self.kind == "all":
             return True
@@ -91,6 +98,7 @@ class EgressScope:
 @dataclass
 class EgressRule:
     """Represents an egress allow/deny rule."""
+
     domain: str
     action: str  # "allow" or "deny"
     mode: ApprovalMode
@@ -102,20 +110,19 @@ class EgressRule:
 class EgressApprovalQueue:
     """
     Thread-safe asyncio queue for managing egress approval requests.
-    
+
     Features:
     - Risk assessment heuristic for incoming requests
     - Persistent allowlist/denylist rules
     - Configurable timeout for pending requests
     - Session vs permanent rules
     """
-    
+
     # Known-safe domains (green risk level) — derived from canonical PERMANENT_EGRESS_DOMAINS.
     # Wildcards (*.foo.com) are stored as their base domain (foo.com) so the subdomain
     # walk in _assess_risk can match them via domain.endswith(".foo.com").
     SAFE_DOMAINS: set[str] = {
-        d[2:] if d.startswith("*.") else d
-        for d in PERMANENT_EGRESS_DOMAINS
+        d[2:] if d.startswith("*.") else d for d in PERMANENT_EGRESS_DOMAINS
     } | {
         # Additional known-safe domains not in the egress allowlist
         "github.com",
@@ -127,13 +134,25 @@ class EgressApprovalQueue:
         "api.x.com",
         "registry.npmjs.com",
     }
-    
+
     # Suspicious TLDs (contribute to red risk level)
     SUSPICIOUS_TLDS = {
-        ".tk", ".ml", ".ga", ".cf", ".xyz", ".top", ".click", ".download",
-        ".stream", ".science", ".work", ".party", ".webcam", ".win"
+        ".tk",
+        ".ml",
+        ".ga",
+        ".cf",
+        ".xyz",
+        ".top",
+        ".click",
+        ".download",
+        ".stream",
+        ".science",
+        ".work",
+        ".party",
+        ".webcam",
+        ".win",
     }
-    
+
     def __init__(
         self,
         rules_file: str = "/tmp/agentshroud/egress_rules.json",
@@ -148,7 +167,7 @@ class EgressApprovalQueue:
         """
         self.rules_file = Path(rules_file)
         self.default_timeout = default_timeout
-        
+
         # Thread-safe data structures
         self._lock = asyncio.Lock()
         self._pending_requests: Dict[str, EgressRequest] = {}
@@ -167,7 +186,7 @@ class EgressApprovalQueue:
         # Prevents the decision log being flooded with repetitive allow entries for
         # pre-approved domains (only first occurrence per domain per hour is logged).
         self._external_decision_throttle: Dict[str, float] = {}
-        
+
         # Ensure rules file directory exists
         try:
             self.rules_file.parent.mkdir(parents=True, exist_ok=True)
@@ -175,7 +194,7 @@ class EgressApprovalQueue:
             # Fallback for restricted environments/tests where /app is unwritable
             self.rules_file = Path("/tmp/agentshroud/egress_rules.json")
             self.rules_file.parent.mkdir(parents=True, exist_ok=True)
-        
+
         # Load existing rules
         self._load_rules()
 
@@ -220,54 +239,54 @@ class EgressApprovalQueue:
     def _assess_risk(self, domain: str, port: int) -> RiskLevel:
         """
         Assess risk level for a domain/port combination.
-        
+
         Returns:
             RiskLevel.GREEN: Known-safe domains
             RiskLevel.YELLOW: Unknown domain, standard ports (80/443)
             RiskLevel.RED: IP addresses, non-standard ports, suspicious TLDs
         """
         # Check if it's an IP address
-        ip_pattern = re.compile(r'^\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}$')
+        ip_pattern = re.compile(r"^\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}$")
         if ip_pattern.match(domain):
             return RiskLevel.RED
-        
+
         # Check for suspicious TLDs
         for tld in self.SUSPICIOUS_TLDS:
             if domain.endswith(tld):
                 return RiskLevel.RED
-        
+
         # Check for non-standard ports
         if port not in (80, 443, 8080, 8443):
             return RiskLevel.RED
-        
+
         # Check if it's a known-safe domain
         if domain in self.SAFE_DOMAINS:
             return RiskLevel.GREEN
-        
+
         # Check if subdomain of known-safe domain
         for safe_domain in self.SAFE_DOMAINS:
             if domain.endswith(f".{safe_domain}"):
                 return RiskLevel.GREEN
-        
+
         # Default to yellow for unknown domains on standard ports
         return RiskLevel.YELLOW
 
     def assess_risk(self, domain: str, port: int) -> str:
         """Public risk assessment helper for management/API surfaces."""
         return self._assess_risk(domain, port).value
-    
+
     def _load_rules(self):
         """Load rules from persistent storage."""
         if not self.rules_file.exists():
             return
-        
+
         try:
-            with open(self.rules_file, 'r') as f:
+            with open(self.rules_file, "r") as f:
                 content = f.read().strip()
                 if not content:  # Empty file
                     return
                 data = json.loads(content)
-            
+
             for rule_data in data.get("permanent_rules", []):
                 rule = EgressRule(
                     domain=rule_data["domain"],
@@ -285,7 +304,7 @@ class EgressApprovalQueue:
 
         except Exception as e:
             logger.error(f"Failed to load egress rules: {e}")
-    
+
     def _save_rules(self):
         """Save rules to persistent storage."""
         try:
@@ -303,23 +322,19 @@ class EgressApprovalQueue:
                 ],
                 # Persist so old inline keyboard buttons resolve domain after restart.
                 # Capped at 500 entries to avoid unbounded growth.
-                "request_domain_map": dict(
-                    list(self._request_domain_map.items())[-500:]
-                ),
+                "request_domain_map": dict(list(self._request_domain_map.items())[-500:]),
             }
-            
-            with open(self.rules_file, 'w') as f:
+
+            with open(self.rules_file, "w") as f:
                 json.dump(data, f, indent=2)
 
             # Cap in-memory map to match the on-disk cap
             if len(self._request_domain_map) > 500:
-                self._request_domain_map = dict(
-                    list(self._request_domain_map.items())[-500:]
-                )
+                self._request_domain_map = dict(list(self._request_domain_map.items())[-500:])
 
         except Exception as e:
             logger.error(f"Failed to save egress rules: {e}")
-    
+
     def _check_existing_rule(self, domain: str) -> Optional[EgressRule]:
         """Check if domain matches an existing rule."""
         # Check exact domain match first
@@ -327,36 +342,31 @@ class EgressApprovalQueue:
             return self._permanent_rules[domain]
         if domain in self._session_rules:
             return self._session_rules[domain]
-        
+
         # Check for wildcard/parent domain matches
-        parts = domain.split('.')
+        parts = domain.split(".")
         for i in range(1, len(parts)):
-            parent_domain = '.'.join(parts[i:])
+            parent_domain = ".".join(parts[i:])
             if parent_domain in self._permanent_rules:
                 return self._permanent_rules[parent_domain]
             if parent_domain in self._session_rules:
                 return self._session_rules[parent_domain]
-        
+
         return None
-    
+
     async def request_approval(
-        self, 
-        domain: str, 
-        port: int, 
-        agent_id: str, 
-        tool_name: str,
-        timeout: Optional[int] = None
+        self, domain: str, port: int, agent_id: str, tool_name: str, timeout: Optional[int] = None
     ) -> ApprovalResult:
         """
         Request approval for egress to a domain/port.
-        
+
         Args:
             domain: Target domain
             port: Target port
             agent_id: ID of requesting agent
             tool_name: Name of tool making request
             timeout: Custom timeout in seconds
-            
+
         Returns:
             ApprovalResult indicating if request was approved, denied, or timed out
         """
@@ -364,10 +374,13 @@ class EgressApprovalQueue:
             if self._emergency_block_all:
                 logger.warning(
                     "Egress denied by emergency block-all: %s:%s (%s)",
-                    domain, port, self._emergency_reason or "no reason",
+                    domain,
+                    port,
+                    self._emergency_reason or "no reason",
                 )
                 if self._event_bus is not None:
                     from gateway.ingest_api.event_bus import make_event
+
                     await self._event_bus.emit(
                         make_event(
                             "egress_approval_denied",
@@ -387,12 +400,12 @@ class EgressApprovalQueue:
                 else:
                     logger.info(f"Egress denied by existing rule: {domain}:{port}")
                     return ApprovalResult.DENIED
-            
+
             # Create new pending request
             request_id = str(uuid.uuid4())
             risk_level = self._assess_risk(domain, port)
             request_timeout = timeout or self.default_timeout
-            
+
             request = EgressRequest(
                 request_id=request_id,
                 domain=domain,
@@ -401,9 +414,9 @@ class EgressApprovalQueue:
                 tool_name=tool_name,
                 timestamp=time.time(),
                 risk_level=risk_level,
-                timeout_at=time.time() + request_timeout
+                timeout_at=time.time() + request_timeout,
             )
-            
+
             self._pending_requests[request_id] = request
             self._request_domain_map[request_id] = domain
 
@@ -413,6 +426,7 @@ class EgressApprovalQueue:
             )
             if self._event_bus is not None:
                 from gateway.ingest_api.event_bus import make_event
+
                 await self._event_bus.emit(
                     make_event(
                         "egress_approval_requested",
@@ -428,7 +442,7 @@ class EgressApprovalQueue:
                         "warning",
                     )
                 )
-        
+
         # Wait for approval or timeout
         try:
             while time.time() < request.timeout_at:
@@ -443,30 +457,30 @@ class EgressApprovalQueue:
                             return ApprovalResult.APPROVED
                         else:
                             return ApprovalResult.DENIED
-                
+
                 await asyncio.sleep(0.1)  # Check every 100ms
-            
+
             # Timeout reached
             async with self._lock:
                 self._pending_requests.pop(request_id, None)
-            
+
             logger.warning(f"Egress approval timeout: {domain}:{port}")
             return ApprovalResult.TIMEOUT
-            
+
         except Exception as e:
             logger.error(f"Error in approval request: {e}")
             async with self._lock:
                 self._pending_requests.pop(request_id, None)
             return ApprovalResult.DENIED
-    
+
     async def approve(self, request_id: str, mode: ApprovalMode = ApprovalMode.ONCE) -> bool:
         """
         Approve a pending egress request.
-        
+
         Args:
             request_id: ID of request to approve
             mode: Approval mode (permanent, session, or once)
-            
+
         Returns:
             True if request was found and approved, False otherwise
         """
@@ -474,7 +488,7 @@ class EgressApprovalQueue:
             request = self._pending_requests.get(request_id)
             if not request:
                 return False
-            
+
             if mode == ApprovalMode.ONCE:
                 # Remove from pending, mark as once-approved
                 self._once_approved.add(request_id)
@@ -482,25 +496,23 @@ class EgressApprovalQueue:
             else:
                 # Create a rule for future requests
                 rule = EgressRule(
-                    domain=request.domain,
-                    action="allow",
-                    mode=mode,
-                    created_at=time.time()
+                    domain=request.domain, action="allow", mode=mode, created_at=time.time()
                 )
-                
+
                 if mode == ApprovalMode.PERMANENT:
                     self._permanent_rules[request.domain] = rule
                     self._save_rules()
                 else:  # SESSION
                     self._session_rules[request.domain] = rule
-                
+
                 # Remove from pending
                 self._pending_requests.pop(request_id)
-            
+
             self._append_decision(request, "approved", mode.value, "")
             logger.info(f"Egress approved: {request.domain}:{request.port} (mode={mode.value})")
             if self._event_bus is not None:
                 from gateway.ingest_api.event_bus import make_event
+
                 await self._event_bus.emit(
                     make_event(
                         "egress_approval_decision",
@@ -516,15 +528,15 @@ class EgressApprovalQueue:
                     )
                 )
             return True
-    
+
     async def deny(self, request_id: str, mode: ApprovalMode = ApprovalMode.ONCE) -> bool:
         """
         Deny a pending egress request.
-        
+
         Args:
             request_id: ID of request to deny
             mode: Denial mode (permanent, session, or once)
-            
+
         Returns:
             True if request was found and denied, False otherwise
         """
@@ -532,32 +544,30 @@ class EgressApprovalQueue:
             request = self._pending_requests.get(request_id)
             if not request:
                 return False
-            
+
             if mode == ApprovalMode.ONCE:
                 # Remove from pending, deny this one request
                 self._pending_requests.pop(request_id)
             else:
                 # Create a deny rule for future requests
                 rule = EgressRule(
-                    domain=request.domain,
-                    action="deny",
-                    mode=mode,
-                    created_at=time.time()
+                    domain=request.domain, action="deny", mode=mode, created_at=time.time()
                 )
-                
+
                 if mode == ApprovalMode.PERMANENT:
                     self._permanent_rules[request.domain] = rule
                     self._save_rules()
                 else:  # SESSION
                     self._session_rules[request.domain] = rule
-                
+
                 # Remove from pending
                 self._pending_requests.pop(request_id)
-            
+
             self._append_decision(request, "denied", mode.value, "")
             logger.info(f"Egress denied: {request.domain}:{request.port} (mode={mode.value})")
             if self._event_bus is not None:
                 from gateway.ingest_api.event_bus import make_event
+
                 await self._event_bus.emit(
                     make_event(
                         "egress_approval_decision",
@@ -573,7 +583,7 @@ class EgressApprovalQueue:
                     )
                 )
             return True
-    
+
     async def get_pending_requests(self) -> List[Dict]:
         """Get list of pending approval requests."""
         async with self._lock:
@@ -586,11 +596,11 @@ class EgressApprovalQueue:
                     "tool_name": req.tool_name,
                     "timestamp": req.timestamp,
                     "risk_level": req.risk_level.value,
-                    "timeout_at": req.timeout_at
+                    "timeout_at": req.timeout_at,
                 }
                 for req in self._pending_requests.values()
             ]
-    
+
     def _rule_to_dict(self, rule: "EgressRule") -> dict:
         d = {
             "domain": rule.domain,
@@ -624,8 +634,10 @@ class EgressApprovalQueue:
             if scope.matches(user_id, group_ids, is_owner=is_owner):
                 matching.append(rule)
         return matching
-    
-    def _append_decision(self, request: "EgressRequest", decision: str, mode: str, decided_by: str) -> None:
+
+    def _append_decision(
+        self, request: "EgressRequest", decision: str, mode: str, decided_by: str
+    ) -> None:
         """Append an entry to the capped decision audit log (CC-40)."""
         entry = {
             "id": str(uuid.uuid4())[:8],
@@ -714,41 +726,41 @@ class EgressApprovalQueue:
                 created_at=time.time(),
                 scope=scope or EgressScope(),
             )
-            
+
             if mode == ApprovalMode.PERMANENT:
                 self._permanent_rules[domain] = rule
                 self._save_rules()
             else:  # SESSION
                 self._session_rules[domain] = rule
-            
+
             logger.info(f"Egress rule added: {domain} -> {action} (mode={mode.value})")
             return True
-    
+
     async def remove_rule(self, domain: str) -> bool:
         """
         Remove an egress rule.
-        
+
         Args:
             domain: Domain to remove rule for
-            
+
         Returns:
             True if rule was found and removed
         """
         async with self._lock:
             removed = False
-            
+
             if domain in self._permanent_rules:
                 del self._permanent_rules[domain]
                 self._save_rules()
                 removed = True
-            
+
             if domain in self._session_rules:
                 del self._session_rules[domain]
                 removed = True
-            
+
             if removed:
                 logger.info(f"Egress rule removed: {domain}")
-            
+
             return removed
 
     async def set_emergency_block_all(self, enabled: bool, reason: str = "") -> None:
@@ -764,41 +776,44 @@ class EgressApprovalQueue:
                 "enabled": self._emergency_block_all,
                 "reason": self._emergency_reason,
             }
-    
+
     async def cleanup_expired(self):
         """Remove expired session rules and timed-out requests."""
         current_time = time.time()
-        
+
         async with self._lock:
             # Clean up timed-out pending requests
             expired_requests = [
-                req_id for req_id, req in self._pending_requests.items()
+                req_id
+                for req_id, req in self._pending_requests.items()
                 if req.timeout_at < current_time
             ]
-            
+
             for req_id in expired_requests:
                 self._pending_requests.pop(req_id)
-            
+
             if expired_requests:
                 logger.info(f"Cleaned up {len(expired_requests)} expired pending requests")
-            
+
             # Clean up expired rules (if we add expiration support later)
             expired_permanent = [
-                domain for domain, rule in self._permanent_rules.items()
+                domain
+                for domain, rule in self._permanent_rules.items()
                 if rule.expires_at and rule.expires_at < current_time
             ]
-            
+
             expired_session = [
-                domain for domain, rule in self._session_rules.items() 
+                domain
+                for domain, rule in self._session_rules.items()
                 if rule.expires_at and rule.expires_at < current_time
             ]
-            
+
             for domain in expired_permanent:
                 del self._permanent_rules[domain]
-            
+
             for domain in expired_session:
                 del self._session_rules[domain]
-            
+
             if expired_permanent or expired_session:
                 logger.info(f"Cleaned up {len(expired_permanent + expired_session)} expired rules")
                 if expired_permanent:

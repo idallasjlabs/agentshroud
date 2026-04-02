@@ -3,17 +3,18 @@
 # Protected by common law trademark rights. Federal trademark registration pending.
 # Unauthorized reproduction, distribution, or use of the AgentShroud name or brand is strictly prohibited.
 """Tests for port_manager — port conflict detection and auto-assignment."""
+
 from __future__ import annotations
 
-
-import pytest
 from unittest.mock import patch
 
+import pytest
+
 from gateway.tools.port_manager import (
-    PortManager,
-    PortAssignment,
-    PortResolution,
     PORT_SEARCH_RANGE,
+    PortAssignment,
+    PortManager,
+    PortResolution,
 )
 
 

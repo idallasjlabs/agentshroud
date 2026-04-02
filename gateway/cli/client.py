@@ -1,12 +1,13 @@
 # Copyright © 2026 Isaiah Dallas Jefferson, Jr. AgentShroud™. All rights reserved.
 """HTTP client for the AgentShroud SCL REST API (/soc/v1/)."""
+
 from __future__ import annotations
 
 import json
 import os
 from typing import Any, Dict, List, Optional
 from urllib.error import HTTPError
-from urllib.parse import urljoin, urlencode
+from urllib.parse import urlencode, urljoin
 from urllib.request import Request, urlopen
 
 
@@ -131,9 +132,11 @@ class SCLClient:
 def client_from_env(base_url: Optional[str] = None, token: Optional[str] = None) -> SCLClient:
     """Build SCLClient from args or environment variables."""
     url = base_url or os.environ.get("AGENTSHROUD_URL", "http://localhost:8080")
-    tok = token or os.environ.get("AGENTSHROUD_TOKEN", "") or os.environ.get("AGENTSHROUD_GATEWAY_PASSWORD", "")
+    tok = (
+        token
+        or os.environ.get("AGENTSHROUD_TOKEN", "")
+        or os.environ.get("AGENTSHROUD_GATEWAY_PASSWORD", "")
+    )
     if not tok:
-        raise ValueError(
-            "No token provided. Set AGENTSHROUD_TOKEN or pass --token."
-        )
+        raise ValueError("No token provided. Set AGENTSHROUD_TOKEN or pass --token.")
     return SCLClient(url, tok)

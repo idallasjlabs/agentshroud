@@ -4,6 +4,7 @@
 SecurityEvent, EgressRequest, ServiceDescriptor, ContributorRecord,
 Alarm, AuditLogEntry — canonical types for /soc/v1/ API and WebSocket stream.
 """
+
 from __future__ import annotations
 
 import uuid
@@ -25,6 +26,7 @@ def _new_uuid() -> str:
 # ---------------------------------------------------------------------------
 # Enums
 # ---------------------------------------------------------------------------
+
 
 class Severity(str, Enum):
     CRITICAL = "critical"
@@ -103,6 +105,7 @@ class EgressStatus(str, Enum):
 # SecurityEvent — unified envelope replaces fragmented pipeline/egress models
 # ---------------------------------------------------------------------------
 
+
 class SecurityEvent(BaseModel):
     event_id: str = Field(default_factory=_new_uuid)
     event_type: str
@@ -122,6 +125,7 @@ class SecurityEvent(BaseModel):
 # EgressRequest — pending approval item
 # ---------------------------------------------------------------------------
 
+
 class EgressRequest(BaseModel):
     request_id: str = Field(default_factory=_new_uuid)
     domain: str
@@ -139,6 +143,7 @@ class EgressRequest(BaseModel):
 # ---------------------------------------------------------------------------
 # ServiceDescriptor
 # ---------------------------------------------------------------------------
+
 
 class ResourceUsage(BaseModel):
     cpu_percent: Optional[float] = None
@@ -166,6 +171,7 @@ class ServiceDescriptor(BaseModel):
 # ContributorRecord
 # ---------------------------------------------------------------------------
 
+
 class ContributorRecord(BaseModel):
     user_id: str
     platform: Platform = Platform.TELEGRAM
@@ -188,6 +194,7 @@ class ContributorRecord(BaseModel):
 # Alarm
 # ---------------------------------------------------------------------------
 
+
 class Alarm(BaseModel):
     alarm_id: str = Field(default_factory=_new_uuid)
     title: str
@@ -208,6 +215,7 @@ class Alarm(BaseModel):
 # AuditLogEntry — SCL operator action audit trail
 # ---------------------------------------------------------------------------
 
+
 class AuditLogEntry(BaseModel):
     entry_id: str = Field(default_factory=_new_uuid)
     timestamp: str = Field(default_factory=_now_iso)
@@ -225,6 +233,7 @@ class AuditLogEntry(BaseModel):
 # ---------------------------------------------------------------------------
 # SCL API response envelope
 # ---------------------------------------------------------------------------
+
 
 class SCLError(BaseModel):
     error: bool = True
@@ -244,6 +253,7 @@ class SCLConfirmationRequired(BaseModel):
 # ---------------------------------------------------------------------------
 # WebSocket event envelope
 # ---------------------------------------------------------------------------
+
 
 class WSEventType(str, Enum):
     SECURITY_EVENT = "security_event"

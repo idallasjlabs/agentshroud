@@ -3,24 +3,25 @@
 
 from __future__ import annotations
 
-import pytest
 from datetime import datetime, timezone
 
+import pytest
+
 from gateway.soc.models import (
-    Severity,
-    ServiceStatus,
-    HealthStatus,
-    SecurityEvent,
-    EgressRequest,
-    RiskLevel,
-    EgressStatus,
-    ServiceDescriptor,
-    ResourceUsage,
     ContributorRecord,
-    UserRole,
+    EgressRequest,
+    EgressStatus,
+    HealthStatus,
     Platform,
-    SCLError,
+    ResourceUsage,
+    RiskLevel,
     SCLConfirmationRequired,
+    SCLError,
+    SecurityEvent,
+    ServiceDescriptor,
+    ServiceStatus,
+    Severity,
+    UserRole,
     WSEvent,
     WSEventType,
 )

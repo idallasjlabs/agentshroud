@@ -2,6 +2,7 @@
 # AgentShroud™ is a trademark of Isaiah Dallas Jefferson, Jr. (USPTO Serial No. 99728633)
 # Patent Pending — U.S. Provisional Application No. 64/018,744
 from __future__ import annotations
+
 import base64
 import codecs
 import logging
@@ -13,11 +14,19 @@ from urllib.parse import unquote
 logger = logging.getLogger(__name__)
 
 HOMOGLYPHS = {
-    "\u0435": "e", "\u0430": "a", "\u043e": "o", "\u0440": "p",
-    "\u0441": "c", "\u0443": "y", "\u0445": "x", "\u0456": "i",
-    "\u0458": "j", "\u04bb": "h",
+    "\u0435": "e",
+    "\u0430": "a",
+    "\u043e": "o",
+    "\u0440": "p",
+    "\u0441": "c",
+    "\u0443": "y",
+    "\u0445": "x",
+    "\u0456": "i",
+    "\u0458": "j",
+    "\u04bb": "h",
 }
 ZERO_WIDTH = re.compile(r"[\u200b\u200c\u200d\u2060\ufeff\u00ad]")
+
 
 @dataclass
 class EncodingConfig:
@@ -30,17 +39,20 @@ class EncodingConfig:
     min_base64_len: int = 24
     max_decode_depth: int = 3
 
+
 @dataclass
 class DecodedLayer:
     encoding: str
     original: str
     decoded: str
 
+
 @dataclass
 class EncodingResult:
     detected: bool = False
     layers: List[DecodedLayer] = field(default_factory=list)
     cleaned_text: str = ""
+
 
 class EncodingDetector:
     def __init__(self, config: Optional[EncodingConfig] = None):
@@ -55,6 +67,7 @@ class EncodingDetector:
     def decode_base64_segments(self, text: str):
         layers = []
         pattern = "[A-Za-z0-9+/]{%d,}={0,2}" % self.config.min_base64_len
+
         def replacer(m):
             try:
                 decoded = base64.b64decode(m.group()).decode("utf-8", errors="ignore")
@@ -64,21 +77,25 @@ class EncodingDetector:
             except Exception:
                 pass
             return m.group()
+
         result = re.sub(pattern, replacer, text)
         return result, layers
 
     def decode_url(self, text: str):
         layers = []
+
         def replacer(m):
             decoded = unquote(m.group())
             if decoded != m.group():
                 layers.append(DecodedLayer("url", m.group(), decoded))
             return decoded
+
         result = re.sub(r"(?:%[0-9A-Fa-f]{2}){2,}", replacer, text)
         return result, layers
 
     def decode_hex(self, text: str):
         layers = []
+
         def replacer(m):
             try:
                 decoded = bytes.fromhex(m.group().replace(" ", "")).decode("utf-8", errors="ignore")
@@ -88,6 +105,7 @@ class EncodingDetector:
             except Exception:
                 pass
             return m.group()
+
         result = re.sub(r"\b(?:[0-9a-fA-F]{2}\s?){4,}\b", replacer, text)
         return result, layers
 

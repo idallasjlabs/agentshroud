@@ -10,9 +10,9 @@ Uses urllib (stdlib) to avoid aiohttp dependency.
 import asyncio
 import json
 import logging
-import urllib.request
 import urllib.parse
-from datetime import datetime, timezone, timedelta
+import urllib.request
+from datetime import datetime, timedelta, timezone
 from typing import Optional
 
 logger = logging.getLogger("agentshroud.proxy.telegram_egress_notify")
@@ -35,10 +35,14 @@ class EgressTelegramNotifier:
         "always": None,
     }
 
-    def __init__(self, bot_token: str, owner_chat_id: str,
-                 notification_recipients: Optional[list[str]] = None,
-                 base_url: str = "https://api.telegram.org",
-                 timeout_seconds: int = 30):
+    def __init__(
+        self,
+        bot_token: str,
+        owner_chat_id: str,
+        notification_recipients: Optional[list[str]] = None,
+        base_url: str = "https://api.telegram.org",
+        timeout_seconds: int = 30,
+    ):
         self.bot_token = bot_token
         self.owner_chat_id = owner_chat_id
         # All chat IDs that receive egress approval notifications.
@@ -58,7 +62,8 @@ class EgressTelegramNotifier:
         url = self._api_url(method)
         data = json.dumps(payload).encode("utf-8")
         req = urllib.request.Request(
-            url, data=data,
+            url,
+            data=data,
             headers={"Content-Type": "application/json"},
             method="POST",
         )
@@ -70,8 +75,15 @@ class EgressTelegramNotifier:
         loop = asyncio.get_event_loop()
         return await loop.run_in_executor(None, self._send_request, method, payload)
 
-    async def notify_pending(self, request_id: str, domain: str, port: int,
-                             risk_level: str, agent_id: str, tool_name: str) -> bool:
+    async def notify_pending(
+        self,
+        request_id: str,
+        domain: str,
+        port: int,
+        risk_level: str,
+        agent_id: str,
+        tool_name: str,
+    ) -> bool:
         """Send Telegram message with time-limited approve/deny buttons.
 
         Buttons: Allow 1h | Allow 4h | Allow 24h | Allow Forever | Deny
@@ -151,14 +163,14 @@ class EgressTelegramNotifier:
             if callback_data.startswith(prefix):
                 action = act
                 duration_key = dur
-                request_id = callback_data[len(prefix):]
+                request_id = callback_data[len(prefix) :]
                 break
 
         if action is None:
             if callback_data.startswith("egress_deny_"):
                 action = "deny"
                 duration_key = None
-                request_id = callback_data[len("egress_deny_"):]
+                request_id = callback_data[len("egress_deny_") :]
             else:
                 return {"status": "error", "reason": "invalid_format"}
 
@@ -188,30 +200,34 @@ class EgressTelegramNotifier:
     async def answer_callback(self, callback_query_id: str, text: str) -> bool:
         """Send answerCallbackQuery to dismiss the button loading state."""
         try:
-            result = await self._async_send("answerCallbackQuery", {
-                "callback_query_id": callback_query_id,
-                "text": text,
-                "show_alert": False,
-            })
+            result = await self._async_send(
+                "answerCallbackQuery",
+                {
+                    "callback_query_id": callback_query_id,
+                    "text": text,
+                    "show_alert": False,
+                },
+            )
             return result.get("ok", False)
         except Exception as e:
             logger.error(f"Failed to answer callback: {e}")
             return False
 
-    async def edit_decision_message(
-        self, chat_id, message_id: int, decision_text: str
-    ) -> bool:
+    async def edit_decision_message(self, chat_id, message_id: int, decision_text: str) -> bool:
         """Replace the inline keyboard approval message with a decision record.
 
         Removes the buttons and shows the outcome so it's visible in chat history.
         """
         try:
-            result = await self._async_send("editMessageText", {
-                "chat_id": chat_id,
-                "message_id": message_id,
-                "text": decision_text,
-                "parse_mode": "Markdown",
-            })
+            result = await self._async_send(
+                "editMessageText",
+                {
+                    "chat_id": chat_id,
+                    "message_id": message_id,
+                    "text": decision_text,
+                    "parse_mode": "Markdown",
+                },
+            )
             return result.get("ok", False)
         except Exception as e:
             logger.error(f"Failed to edit egress decision message: {e}")

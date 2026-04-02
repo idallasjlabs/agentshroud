@@ -3,6 +3,7 @@
 # Protected by common law trademark rights. Federal trademark registration pending.
 # Unauthorized reproduction, distribution, or use of the AgentShroud name or brand is strictly prohibited.
 """Unit tests for pipeline components."""
+
 from __future__ import annotations
 
 from dataclasses import dataclass
@@ -10,7 +11,7 @@ from unittest.mock import AsyncMock, MagicMock, patch
 
 import pytest
 
-from gateway.proxy.pipeline import AuditChain, SecurityPipeline, PipelineAction
+from gateway.proxy.pipeline import AuditChain, PipelineAction, SecurityPipeline
 
 
 class TestAuditChain:
@@ -91,6 +92,7 @@ class TestAuditChain:
 
 # ── ContextGuard wiring in SecurityPipeline ──────────────────────────────────
 
+
 @dataclass
 class _FakeAttack:
     attack_type: str
@@ -102,11 +104,13 @@ def _make_pipeline(context_guard=None):
     """Minimal SecurityPipeline with a real PII sanitizer stub."""
     pii = MagicMock()
     pii.filter_xml_blocks = MagicMock(return_value=("msg", False))
-    pii.sanitize = AsyncMock(return_value=MagicMock(
-        sanitized_content="msg",
-        entity_types_found=[],
-        redactions=[],
-    ))
+    pii.sanitize = AsyncMock(
+        return_value=MagicMock(
+            sanitized_content="msg",
+            entity_types_found=[],
+            redactions=[],
+        )
+    )
     return SecurityPipeline(pii_sanitizer=pii, context_guard=context_guard)
 
 

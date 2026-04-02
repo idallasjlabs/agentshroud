@@ -1,25 +1,26 @@
 # Copyright © 2026 Isaiah Dallas Jefferson, Jr. AgentShroud™. All rights reserved.
 """Tests for gateway/security/shared_memory.py — V9-T1: Group shared memory + isolation."""
+
 from __future__ import annotations
 
 import tempfile
 from pathlib import Path
+
 import pytest
 
-from gateway.security.session_manager import UserSessionManager
-from gateway.security.shared_memory import SharedMemoryManager
 from gateway.security.group_config import TeamsConfig
 from gateway.security.rbac_config import RBACConfig
-
+from gateway.security.session_manager import UserSessionManager
+from gateway.security.shared_memory import SharedMemoryManager
 
 # ---------------------------------------------------------------------------
 # Fixtures
 # ---------------------------------------------------------------------------
 
 OWNER_ID = "owner-001"
-USER_A = "8279589982"   # sort group member
-USER_B = "8506022825"   # gsdea group member
-RANDO = "9999999999"    # not in any group
+USER_A = "8279589982"  # sort group member
+USER_B = "8506022825"  # gsdea group member
+RANDO = "9999999999"  # not in any group
 
 TEAMS_RAW = {
     "groups": {
@@ -80,6 +81,7 @@ def smm(session_mgr):
 # Group memory — read / write
 # ---------------------------------------------------------------------------
 
+
 class TestGroupMemoryReadWrite:
     def test_get_group_memory_empty_initially(self, smm):
         content = smm.get_group_memory("sort")
@@ -103,6 +105,7 @@ class TestGroupMemoryReadWrite:
 # ---------------------------------------------------------------------------
 # User private memory
 # ---------------------------------------------------------------------------
+
 
 class TestUserPrivateMemory:
     def test_get_user_memory_returns_string(self, smm):
@@ -128,6 +131,7 @@ class TestUserPrivateMemory:
 # ---------------------------------------------------------------------------
 # Merged memory for user
 # ---------------------------------------------------------------------------
+
 
 class TestMergedMemory:
     def test_user_sees_own_private_memory(self, smm, rbac):
@@ -169,6 +173,7 @@ class TestMergedMemory:
 # ---------------------------------------------------------------------------
 # Private content detection and filtering
 # ---------------------------------------------------------------------------
+
 
 class TestPrivateContentDetection:
     def test_detects_api_key_pattern(self):
@@ -217,11 +222,14 @@ class TestPrivateContentDetection:
 # Topic-scoped memory
 # ---------------------------------------------------------------------------
 
+
 class TestTopicScopedMemory:
     def test_topic_scoped_returns_matching_group(self, smm, rbac):
         smm.append_to_group_memory("sort", "Fleet alarm data", author_id=USER_A)
         # "alarms" is a focus topic for fleet-alarms project in sort group
-        result = smm.get_topic_scoped_memory(USER_A, rbac, query_text="check the alarms for site-42")
+        result = smm.get_topic_scoped_memory(
+            USER_A, rbac, query_text="check the alarms for site-42"
+        )
         assert "Fleet alarm data" in result
 
     def test_topic_scoped_excludes_non_matching_project_scoped_group(self, smm, rbac):

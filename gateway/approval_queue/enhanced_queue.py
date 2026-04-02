@@ -1,5 +1,6 @@
 # Copyright © 2026 Isaiah Dallas Jefferson, Jr. AgentShroud™. All rights reserved.
 from __future__ import annotations
+
 import os
 
 # AgentShroud™ is a trademark of Isaiah Dallas Jefferson, Jr., first used in February 2026.
@@ -17,19 +18,22 @@ from datetime import datetime, timedelta, timezone
 from typing import Any, Optional
 
 import httpx
-
 from fastapi import WebSocket
 
-from gateway.ingest_api.config import ApprovalQueueConfig, ToolRiskConfig, ToolRiskPolicy
-from gateway.ingest_api.models import ApprovalQueueItem, ApprovalRequest
 from gateway.approval_queue.store import ApprovalStore
+from gateway.ingest_api.config import (
+    ApprovalQueueConfig,
+    ToolRiskConfig,
+    ToolRiskPolicy,
+)
+from gateway.ingest_api.models import ApprovalQueueItem, ApprovalRequest
 
 logger = logging.getLogger("agentshroud.gateway.approval_queue.enhanced")
 
 
 class EnhancedApprovalQueue:
     """Enhanced approval queue with enforce mode and tool risk tiers.
-    
+
     Features:
     - SQLite persistence via ApprovalStore
     - Tool risk tier-based policies
@@ -58,14 +62,18 @@ class EnhancedApprovalQueue:
         """
         self.config = config
         self.tool_risk_config = tool_risk_config
-        import tempfile as _tf; self.store = store or ApprovalStore(os.path.join(os.environ.get("AGENTSHROUD_DATA_DIR", _tf.gettempdir()), "approvals.db"))
+        import tempfile as _tf
+
+        self.store = store or ApprovalStore(
+            os.path.join(os.environ.get("AGENTSHROUD_DATA_DIR", _tf.gettempdir()), "approvals.db")
+        )
         self.bot_token = bot_token
         self.admin_chat_id = admin_chat_id
         self.connected_clients: set[WebSocket] = set()
         self._lock = asyncio.Lock()
         self._pending_futures: dict[str, asyncio.Future] = {}
         self._timeout_tasks: dict[str, asyncio.Task] = {}
-        
+
         logger.info(
             f"Enhanced approval queue initialized "
             f"(enforce_mode={tool_risk_config.enforce_mode})"
@@ -74,13 +82,13 @@ class EnhancedApprovalQueue:
     async def initialize(self):
         """Initialize the store and restore pending items."""
         await self.store.initialize()
-        
+
         # Restore pending items and recreate timeout tasks
         pending_items = await self.store.load_pending()
         for item in pending_items:
             self._pending_futures[item.request_id] = asyncio.Future()
             self._schedule_timeout(item.request_id, item.expires_at)
-            
+
         logger.info(f"Restored {len(pending_items)} pending approval items")
 
     async def close(self):
@@ -89,7 +97,7 @@ class EnhancedApprovalQueue:
         for task in self._timeout_tasks.values():
             if not task.done():
                 task.cancel()
-        
+
         await self.store.close()
 
     def get_tool_risk_tier(self, tool_name: str) -> str:
@@ -104,35 +112,34 @@ class EnhancedApprovalQueue:
         """Check if a tool requires approval based on risk tier and policy."""
         if not self.tool_risk_config.enforce_mode:
             return False
-            
+
         tier = self.get_tool_risk_tier(tool_name)
         policy = self.get_policy_for_tier(tier)
-        
+
         # Check owner bypass
-        if (policy.owner_bypass and 
-            self.tool_risk_config.owner_user_id and 
-            agent_id == self.tool_risk_config.owner_user_id):
+        if (
+            policy.owner_bypass
+            and self.tool_risk_config.owner_user_id
+            and agent_id == self.tool_risk_config.owner_user_id
+        ):
             return False
-            
+
         return policy.require_approval
 
     async def submit_tool_request(
-        self, 
-        tool_name: str,
-        parameters: dict[str, Any],
-        agent_id: str = "default"
+        self, tool_name: str, parameters: dict[str, Any], agent_id: str = "default"
     ) -> tuple[str, bool]:
         """Submit a tool call request for approval.
-        
+
         Returns:
             (request_id, requires_wait) - If requires_wait is False, tool can proceed immediately
         """
         if not self.requires_approval(tool_name, agent_id):
             return "", False
-            
-        tier = self.get_tool_risk_tier(tool_name) 
+
+        tier = self.get_tool_risk_tier(tool_name)
         policy = self.get_policy_for_tier(tier)
-        
+
         # Create approval request
         request = ApprovalRequest(
             action_type=f"tool_call_{tier}",
@@ -144,14 +151,12 @@ class EnhancedApprovalQueue:
             },
             agent_id=agent_id,
         )
-        
+
         item = await self.submit(request, policy)
         return item.request_id, True
 
     async def submit(
-        self, 
-        request: ApprovalRequest, 
-        policy: Optional[ToolRiskPolicy] = None
+        self, request: ApprovalRequest, policy: Optional[ToolRiskPolicy] = None
     ) -> ApprovalQueueItem:
         """Add an action to the approval queue with policy-based timeout."""
         async with self._lock:
@@ -159,13 +164,11 @@ class EnhancedApprovalQueue:
             request_id = str(uuid.uuid4())
             now = datetime.now(timezone.utc)
             submitted_at = now.isoformat().replace("+00:00", "Z")
-            
+
             # Use policy timeout if provided, otherwise use default config
             timeout_seconds = policy.timeout_seconds if policy else self.config.timeout_seconds
             expires_at = (
-                (now + timedelta(seconds=timeout_seconds))
-                .isoformat()
-                .replace("+00:00", "Z")
+                (now + timedelta(seconds=timeout_seconds)).isoformat().replace("+00:00", "Z")
             )
 
             # Create queue item
@@ -182,10 +185,10 @@ class EnhancedApprovalQueue:
 
             # Save to store
             await self.store.save(item)
-            
+
             # Create future for waiting
             self._pending_futures[request_id] = asyncio.Future()
-            
+
             # Schedule timeout
             self._schedule_timeout(request_id, expires_at, policy)
 
@@ -196,33 +199,37 @@ class EnhancedApprovalQueue:
             )
 
             # Broadcast to WebSocket clients
-            await self.broadcast({
-                "type": "new_request", 
-                "data": {
-                    **item.model_dump(),
-                    "risk_tier": request.details.get("risk_tier", "unknown"),
-                    "tool_name": request.details.get("tool_name", "unknown"),
+            await self.broadcast(
+                {
+                    "type": "new_request",
+                    "data": {
+                        **item.model_dump(),
+                        "risk_tier": request.details.get("risk_tier", "unknown"),
+                        "tool_name": request.details.get("tool_name", "unknown"),
+                    },
                 }
-            })
-            
+            )
+
             # Send Telegram notification for critical tier
             if policy and "telegram_admin" in policy.notify_channels:
                 await self._notify_telegram(item, request.details.get("risk_tier", "unknown"))
 
             return item
 
-    def _schedule_timeout(self, request_id: str, expires_at: str, policy: Optional[ToolRiskPolicy] = None):
+    def _schedule_timeout(
+        self, request_id: str, expires_at: str, policy: Optional[ToolRiskPolicy] = None
+    ):
         """Schedule a timeout task for a request."""
         expires_dt = datetime.fromisoformat(expires_at.replace("Z", "+00:00"))
         now = datetime.now(timezone.utc)
         delay = max(0, (expires_dt - now).total_seconds())
-        
+
         timeout_action = policy.timeout_action if policy else "deny"
-        
+
         async def timeout_handler():
             await asyncio.sleep(delay)
             await self._timeout_request(request_id, timeout_action)
-        
+
         self._timeout_tasks[request_id] = asyncio.create_task(timeout_handler())
 
     async def _timeout_request(self, request_id: str, action: str = "deny"):
@@ -230,32 +237,34 @@ class EnhancedApprovalQueue:
         async with self._lock:
             if request_id not in self._pending_futures:
                 return  # Already resolved
-                
+
             # Update status in store
             await self.store.update_status(request_id, "expired", f"timeout (action: {action})")
-            
+
             # Resolve future
             future = self._pending_futures.pop(request_id, None)
             if future and not future.done():
                 future.set_result(action == "approve")
-                
+
             # Clean up timeout task
             self._timeout_tasks.pop(request_id, None)
-            
+
             logger.info(f"Approval request {request_id} timed out (action: {action})")
-            
+
             # Broadcast timeout
-            await self.broadcast({
-                "type": "request_expired",
-                "data": {
-                    "request_id": request_id,
-                    "timeout_action": action,
+            await self.broadcast(
+                {
+                    "type": "request_expired",
+                    "data": {
+                        "request_id": request_id,
+                        "timeout_action": action,
+                    },
                 }
-            })
+            )
 
     async def wait_for_decision(self, request_id: str, timeout: float = 300) -> bool:
         """Wait for an approval decision.
-        
+
         Returns:
             True if approved, False if denied/timed out
         """
@@ -263,7 +272,7 @@ class EnhancedApprovalQueue:
         if not future:
             # Request doesn't exist or already resolved
             return False
-            
+
         try:
             return await asyncio.wait_for(future, timeout=timeout)
         except asyncio.TimeoutError:
@@ -278,15 +287,15 @@ class EnhancedApprovalQueue:
             future = self._pending_futures.get(request_id)
             if not future:
                 raise KeyError(f"Approval request {request_id} not found or already decided")
-                
+
             # Update status in store
             status = "approved" if approved else "rejected"
             await self.store.update_status(request_id, status, reason)
-            
+
             # Resolve future
             if not future.done():
                 future.set_result(approved)
-                
+
             # Clean up
             self._pending_futures.pop(request_id, None)
             timeout_task = self._timeout_tasks.pop(request_id, None)
@@ -299,22 +308,24 @@ class EnhancedApprovalQueue:
             )
 
             # Broadcast decision
-            await self.broadcast({
-                "type": "decision",
-                "data": {
-                    "request_id": request_id,
-                    "status": status,
-                    "reason": reason,
-                    "decided_by": decided_by,
+            await self.broadcast(
+                {
+                    "type": "decision",
+                    "data": {
+                        "request_id": request_id,
+                        "status": status,
+                        "reason": reason,
+                        "decided_by": decided_by,
+                    },
                 }
-            })
-            
+            )
+
             # Load the updated item to return
             items = await self.store.load_all()
             for item in items:
                 if item.request_id == request_id:
                     return item
-                    
+
             raise ValueError(f"Failed to load updated item {request_id}")
 
     async def get_pending(self) -> list[ApprovalQueueItem]:

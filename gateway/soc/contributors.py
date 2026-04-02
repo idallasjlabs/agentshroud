@@ -1,5 +1,6 @@
 # Copyright © 2026 Isaiah Dallas Jefferson, Jr. AgentShroud™. All rights reserved.
 """SOC Contributor Manager — wraps RBACConfig + TeamsConfig → ContributorRecord."""
+
 from __future__ import annotations
 
 import logging
@@ -31,6 +32,7 @@ class ContributorManager:
     def _ensure_rbac(self):
         if self._rbac is None:
             from ..security.rbac_config import RBACConfig
+
             self._rbac = RBACConfig()
         return self._rbac
 
@@ -40,6 +42,7 @@ class ContributorManager:
         # Try to get from app_state
         try:
             from ..ingest_api.state import app_state
+
             cfg = getattr(app_state, "config", None)
             if cfg:
                 return getattr(cfg, "teams", None)
@@ -93,11 +96,7 @@ class ContributorManager:
                 user_groups = teams.get_user_groups(user_id)
                 groups = [g.id for g in user_groups]
                 user_projects = teams.get_user_projects(user_id)
-                projects = [
-                    pid
-                    for g in user_groups
-                    for pid in g.projects
-                ]
+                projects = [pid for g in user_groups for pid in g.projects]
                 collab_mode = teams.get_user_collab_mode(user_id)
             except Exception:
                 pass
@@ -110,6 +109,7 @@ class ContributorManager:
         if not display_name:
             try:
                 from ..proxy.telegram_proxy import _KNOWN_COLLABORATOR_LABELS
+
                 display_name = _KNOWN_COLLABORATOR_LABELS.get(str(user_id), "")
             except Exception:
                 pass
@@ -118,6 +118,7 @@ class ContributorManager:
             if ts:
                 try:
                     from datetime import datetime, timezone
+
                     last_active = datetime.fromtimestamp(float(ts), tz=timezone.utc).isoformat()
                 except Exception:
                     pass
@@ -129,6 +130,7 @@ class ContributorManager:
         immunity_expires = None
         try:
             from ..ingest_api.state import app_state
+
             lockdown = getattr(app_state, "_lockdown", None) or getattr(
                 getattr(app_state, "telegram_proxy", None), "_lockdown", None
             )

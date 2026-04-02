@@ -3,16 +3,17 @@
 # Protected by common law trademark rights. Federal trademark registration pending.
 # Unauthorized reproduction, distribution, or use of the AgentShroud name or brand is strictly prohibited.
 """Tests for POST /credentials/op-proxy endpoint (P2: credential isolation)."""
+
 from __future__ import annotations
 
-
-from unittest.mock import patch, MagicMock
+from unittest.mock import MagicMock, patch
 
 import pytest
 from fastapi.testclient import TestClient
 
-from gateway.ingest_api.main import _is_op_reference_allowed, app as gateway_app, auth_dep
-
+from gateway.ingest_api.main import _is_op_reference_allowed
+from gateway.ingest_api.main import app as gateway_app
+from gateway.ingest_api.main import auth_dep
 
 # ============================================================
 # Unit tests for reference validation helpers
@@ -34,7 +35,10 @@ class TestIsOpReferenceAllowed:
         assert _is_op_reference_allowed("op://Personal/Logins/bank") is False
 
     def test_path_traversal_blocked(self):
-        assert _is_op_reference_allowed("op://Agent Shroud Bot Credentials/../../../etc/passwd") is False
+        assert (
+            _is_op_reference_allowed("op://Agent Shroud Bot Credentials/../../../etc/passwd")
+            is False
+        )
 
     def test_missing_op_prefix_blocked(self):
         assert _is_op_reference_allowed("http://evil.com") is False
@@ -111,6 +115,7 @@ class TestOpProxyEndpoint:
     def test_requires_auth(self):
         """Endpoint returns 401 without auth override."""
         from gateway.ingest_api.main import app as real_app
+
         saved = real_app.dependency_overrides.pop(auth_dep, None)
         try:
             tc = TestClient(real_app, raise_server_exceptions=False)

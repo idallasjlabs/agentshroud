@@ -7,13 +7,14 @@ from __future__ import annotations
 """Tests for audit export functionality."""
 
 import json
-import pytest
-import pytest_asyncio
 from datetime import datetime, timezone
 from io import StringIO
 
-from gateway.security.audit_store import AuditStore, AuditEvent
-from gateway.security.audit_export import AuditExporter, AuditExportConfig
+import pytest
+import pytest_asyncio
+
+from gateway.security.audit_export import AuditExportConfig, AuditExporter
+from gateway.security.audit_store import AuditEvent, AuditStore
 
 
 class TestAuditEvent:
@@ -25,9 +26,9 @@ class TestAuditEvent:
             event_type="security_alert",
             severity="HIGH",
             details={"source": "test", "message": "test alert"},
-            source_module="test_module"
+            source_module="test_module",
         )
-        
+
         assert event.event_type == "security_alert"
         assert event.severity == "HIGH"
         assert event.source_module == "test_module"
@@ -43,9 +44,9 @@ class TestAuditEvent:
             details={"data": "value"},
             source_module="test",
             event_id="test_123",
-            timestamp="2026-01-01T12:00:00Z"
+            timestamp="2026-01-01T12:00:00Z",
         )
-        
+
         # Hash should be deterministic for same content
         hash1 = event.compute_content_hash()
         hash2 = event.compute_content_hash()
@@ -55,19 +56,15 @@ class TestAuditEvent:
     def test_entry_hash_chain(self):
         """Test hash chain computation."""
         event = AuditEvent(
-            event_type="test",
-            severity="LOW",
-            details={},
-            source_module="test",
-            event_id="test_123"
+            event_type="test", severity="LOW", details={}, source_module="test", event_id="test_123"
         )
-        
+
         # First event (no previous hash)
         hash1 = event.compute_entry_hash(None)
-        
+
         # Second event (with previous hash)
         hash2 = event.compute_entry_hash(hash1)
-        
+
         assert hash1 != hash2
         assert len(hash1) == 64
         assert len(hash2) == 64
@@ -91,9 +88,9 @@ class TestAuditStore:
             event_type="test_event",
             severity="MEDIUM",
             details={"test": "data"},
-            source_module="test_module"
+            source_module="test_module",
         )
-        
+
         assert event.event_type == "test_event"
         assert event.severity == "MEDIUM"
         assert event.entry_hash is not None
@@ -109,17 +106,17 @@ class TestAuditStore:
                 event_type=f"event_{i}",
                 severity="LOW",
                 details={"sequence": i},
-                source_module="test"
+                source_module="test",
             )
             events.append(event)
-        
+
         # First event should have no previous hash
         assert events[0].prev_hash is None
-        
+
         # Subsequent events should chain properly
         assert events[1].prev_hash == events[0].entry_hash
         assert events[2].prev_hash == events[1].entry_hash
-        
+
         # Verify chain integrity
         valid, message = await audit_store.verify_hash_chain()
         assert valid
@@ -132,15 +129,15 @@ class TestAuditStore:
         await audit_store.log_event("login", "INFO", {"user": "test1"}, "auth")
         await audit_store.log_event("security_alert", "HIGH", {"threat": "xss"}, "security")
         await audit_store.log_event("login", "INFO", {"user": "test2"}, "auth")
-        
+
         # Query all events
         all_events = await audit_store.query_events()
         assert len(all_events) == 3
-        
+
         # Query by event type
         login_events = await audit_store.query_events(event_type="login")
         assert len(login_events) == 2
-        
+
         # Query by severity
         high_events = await audit_store.query_events(severity_min="HIGH")
         assert len(high_events) == 1
@@ -152,12 +149,12 @@ class TestAuditStore:
         # Initially empty
         stats = await audit_store.get_stats()
         assert stats["total_events"] == 0
-        
+
         # Log some events
         await audit_store.log_event("test1", "CRITICAL", {}, "test")
         await audit_store.log_event("test2", "CRITICAL", {}, "test")
         await audit_store.log_event("test3", "LOW", {}, "test")
-        
+
         stats = await audit_store.get_stats()
         assert stats["total_events"] == 3
         assert stats["severity_counts"]["CRITICAL"] == 2
@@ -172,12 +169,16 @@ class TestAuditExporter:
         """Create audit store with test data."""
         store = AuditStore(":memory:")
         await store.initialize()
-        
+
         # Add test events
         await store.log_event("user_login", "INFO", {"user": "alice", "ip": "192.168.1.1"}, "auth")
-        await store.log_event("security_alert", "HIGH", {"type": "injection", "blocked": True}, "security")
-        await store.log_event("data_access", "MEDIUM", {"table": "users", "records": 10}, "database")
-        
+        await store.log_event(
+            "security_alert", "HIGH", {"type": "injection", "blocked": True}, "security"
+        )
+        await store.log_event(
+            "data_access", "MEDIUM", {"table": "users", "records": 10}, "database"
+        )
+
         yield store
         await store.close()
 
@@ -186,42 +187,42 @@ class TestAuditExporter:
         """Create test export configuration."""
         return AuditExportConfig(
             cef_vendor="TestVendor",
-            cef_product="TestProduct", 
+            cef_product="TestProduct",
             cef_version="1.0",
-            include_hash_verification=True
+            include_hash_verification=True,
         )
 
     @pytest.mark.asyncio
     async def test_export_json(self, audit_store, export_config):
         """Test JSON export format."""
         exporter = AuditExporter(export_config, audit_store)
-        
+
         result = await exporter.export_events(format_type="json")
-        
+
         assert result["format"] == "json"
         assert result["record_count"] == 3
         assert result["hash_verification"]["verified"] is True
-        
+
         # Parse the exported content
         export_data = json.loads(result["export_content"])
         assert "export_metadata" in export_data
         assert "events" in export_data
         assert len(export_data["events"]) == 3
 
-    @pytest.mark.asyncio 
+    @pytest.mark.asyncio
     async def test_export_cef(self, audit_store, export_config):
         """Test CEF export format."""
         exporter = AuditExporter(export_config, audit_store)
-        
+
         result = await exporter.export_events(format_type="cef")
-        
+
         assert result["format"] == "cef"
         assert result["record_count"] == 3
-        
+
         # Check CEF format
         cef_lines = result["export_content"].strip().split("\n")
         assert len(cef_lines) == 3
-        
+
         for line in cef_lines:
             assert line.startswith("CEF:0|TestVendor|TestProduct|1.0|")
             assert "entryHash=" in line
@@ -230,12 +231,12 @@ class TestAuditExporter:
     async def test_export_json_ld(self, audit_store, export_config):
         """Test JSON-LD export format."""
         exporter = AuditExporter(export_config, audit_store)
-        
+
         result = await exporter.export_events(format_type="json-ld")
-        
+
         assert result["format"] == "json-ld"
         assert result["record_count"] == 3
-        
+
         # Parse JSON-LD
         jsonld_data = json.loads(result["export_content"])
         assert "@context" in jsonld_data
@@ -247,21 +248,15 @@ class TestAuditExporter:
     async def test_export_filtering(self, audit_store, export_config):
         """Test export with filters."""
         exporter = AuditExporter(export_config, audit_store)
-        
+
         # Filter by event type
-        result = await exporter.export_events(
-            format_type="json",
-            event_type="security_alert"
-        )
+        result = await exporter.export_events(format_type="json", event_type="security_alert")
         export_data = json.loads(result["export_content"])
         assert len(export_data["events"]) == 1
         assert export_data["events"][0]["event_type"] == "security_alert"
-        
+
         # Filter by severity
-        result = await exporter.export_events(
-            format_type="json", 
-            severity_min="HIGH"
-        )
+        result = await exporter.export_events(format_type="json", severity_min="HIGH")
         export_data = json.loads(result["export_content"])
         assert len(export_data["events"]) == 1
 
@@ -269,11 +264,11 @@ class TestAuditExporter:
     async def test_verify_export_integrity(self, audit_store, export_config):
         """Test export integrity verification."""
         exporter = AuditExporter(export_config, audit_store)
-        
+
         # Export in JSON format
         result = await exporter.export_events(format_type="json")
         export_content = result["export_content"]
-        
+
         # Verify the export
         verification = await exporter.verify_export_integrity(export_content, "json")
         assert verification["verified"] is True
@@ -283,15 +278,15 @@ class TestAuditExporter:
     async def test_tamper_detection(self, audit_store, export_config):
         """Test tamper detection in exports."""
         exporter = AuditExporter(export_config, audit_store)
-        
+
         # Export and tamper with content
         result = await exporter.export_events(format_type="json")
         export_data = json.loads(result["export_content"])
-        
+
         # Tamper with an event hash
         export_data["events"][0]["entry_hash"] = "tampered_hash"
         tampered_content = json.dumps(export_data)
-        
+
         # Verification should detect tampering
         verification = await exporter.verify_export_integrity(tampered_content, "json")
         assert verification["verified"] is False
