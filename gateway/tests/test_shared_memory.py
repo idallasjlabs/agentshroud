@@ -177,7 +177,7 @@ class TestMergedMemory:
 
 class TestPrivateContentDetection:
     def test_detects_api_key_pattern(self):
-        assert SharedMemoryManager.contains_private_content("api_key: abc123xyz456")
+        assert SharedMemoryManager.contains_private_content("api_key: example-key-000")
 
     def test_detects_bearer_token(self):
         assert SharedMemoryManager.contains_private_content("Authorization: Bearer eyJhbGci")
@@ -191,9 +191,9 @@ class TestPrivateContentDetection:
         assert not SharedMemoryManager.contains_private_content(text)
 
     def test_strip_private_content_redacts_api_key(self):
-        raw = "api_key: sk-abc123def456\nSafe content here."
+        raw = "api_key: sk-example-not-real\nSafe content here."
         stripped = SharedMemoryManager._strip_private_content(raw)
-        assert "sk-abc123def456" not in stripped
+        assert "sk-example-not-real" not in stripped
         assert "[REDACTED]" in stripped
         assert "Safe content here" in stripped
 

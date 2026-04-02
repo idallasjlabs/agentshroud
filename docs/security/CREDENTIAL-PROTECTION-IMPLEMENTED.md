@@ -205,7 +205,7 @@ I can use credentials internally without displaying them.
 
 ```bash
 # View recent ledger entries
-curl http://localhost:8080/ledger -H "Authorization: Bearer YOUR_TOKEN" | jq '.entries | .[] | select(.forwarded_to=="blocked")'
+curl http://localhost:8080/ledger -H "Authorization: Bearer <your-gateway-password>" | jq '.entries | .[] | select(.forwarded_to=="blocked")'
 ```
 
 You should see an entry showing the credential block event.

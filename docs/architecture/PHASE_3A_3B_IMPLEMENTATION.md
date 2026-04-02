@@ -216,7 +216,7 @@ sleep 60 && docker compose -f docker/docker-compose.yml ps
 
 # 6. Test Control UI
 # Open: http://localhost:18790
-# Enter gateway password: ***REVOKED-GATEWAY-TOKEN***
+# Enter gateway password: YOUR_GATEWAY_PASSWORD_HERE
 
 # 7. Verify seccomp is active
 docker inspect --format '{{.HostConfig.SecurityOpt}}' agentshroud-gateway
@@ -272,7 +272,7 @@ If issues occur during testing:
 # Change:
 #   - OPENCLAW_GATEWAY_PASSWORD_FILE=/run/secrets/gateway_password
 # To:
-#   - OPENCLAW_GATEWAY_PASSWORD=***REVOKED-GATEWAY-TOKEN***
+#   - OPENCLAW_GATEWAY_PASSWORD=YOUR_GATEWAY_PASSWORD_HERE
 ```
 
 ### Emergency container access

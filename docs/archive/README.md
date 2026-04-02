@@ -222,7 +222,7 @@ agentshroud/
 
 ```
 Gateway URL: ws://127.0.0.1:18789
-Auth Token:  acd0842962070d58c2bb825876aab743c4c45ddbc2eae7e475c4058e0b3f7832
+Auth Token:  YOUR_GATEWAY_PASSWORD_HERE
 Web UI:      http://localhost:18791
 ```
 

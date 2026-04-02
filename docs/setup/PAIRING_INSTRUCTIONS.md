@@ -27,7 +27,7 @@ You should see the OpenClaw Control interface with a "Disconnected from gateway"
 2. Paste this token:
 
 ```
-***REVOKED-GATEWAY-TOKEN***
+YOUR_GATEWAY_PASSWORD_HERE
 ```
 
 3. Click **"Save"** or **"Connect"**
@@ -45,7 +45,7 @@ The UI should now show **"Connected"** status and you can start using OpenClaw.
 If the UI has a field to paste a pairing URL, use this:
 
 ```
-http://localhost:18790/#token=***REVOKED-GATEWAY-TOKEN***
+http://localhost:18790/#token=YOUR_GATEWAY_PASSWORD_HERE
 ```
 
 ---
@@ -109,5 +109,5 @@ docker compose -f docker/docker-compose.yml exec openclaw \
 
 Output:
 ```
-***REVOKED-GATEWAY-TOKEN***
+YOUR_GATEWAY_PASSWORD_HERE
 ```

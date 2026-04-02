@@ -23,7 +23,7 @@ from gateway.security.credential_injector import (
 def secrets_dir(tmp_path):
     """Create a temp secrets directory with a test credential."""
     secret_file = tmp_path / "test_api_key.txt"
-    secret_file.write_text("sk-test-secret-key-12345678901234567890")
+    secret_file.write_text("sk-example-not-a-real-key-000000000")
     return tmp_path
 
 
@@ -155,6 +155,6 @@ class TestStatus:
             headers: dict[str, str] = {}
             injector.inject_headers("api.example.com", headers)
         # The actual secret value should NOT appear in any log record
-        secret = "sk-test-secret-key-12345678901234567890"
+        secret = "sk-example-not-a-real-key-000000000"
         for record in caplog.records:
             assert secret not in record.getMessage(), f"Secret leaked in log: {record.getMessage()}"

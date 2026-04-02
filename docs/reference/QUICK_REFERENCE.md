@@ -118,7 +118,7 @@ nano docker/secrets/anthropic_oauth_token.txt
 
 - **Control UI**: http://localhost:18790
 - **Gateway**: http://localhost:8080
-- **Password**: `***REVOKED-GATEWAY-TOKEN***`
+- **Password**: `YOUR_GATEWAY_PASSWORD_HERE`
 
 ---
 

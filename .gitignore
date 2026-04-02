@@ -346,3 +346,13 @@ mkdocs/
 # OS generated files
 .fuse_hidden*
 .asb-tmp/
+
+# Security scan reports (contain secret values from history)
+gitleaks-report.json
+gitleaks*.json
+trivy*.json
+trivy*.sarif
+
+# Python cache
+gateway/tests/__pycache__/
+**/__pycache__/
