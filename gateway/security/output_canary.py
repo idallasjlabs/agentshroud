@@ -191,9 +191,11 @@ class OutputCanary:
         encoded_pattern = re.escape(base_canary).replace(r"\ ", r"[\ \s]*")
         patterns.append(re.compile(encoded_pattern, re.IGNORECASE))
 
-        # Partial matches (at least 8 consecutive chars for long canaries)
+        # Partial matches (at least 8 consecutive chars for long canaries).
+        # Stride by 4 to avoid creating ~25 overlapping patterns per session that
+        # would dominate regex compilation time and inflate false-positive risk.
         if len(base_canary) >= 12:
-            for i in range(len(base_canary) - 8):
+            for i in range(0, len(base_canary) - 8, 4):
                 partial = base_canary[i : i + 8]
                 patterns.append(re.compile(re.escape(partial), re.IGNORECASE))
 
