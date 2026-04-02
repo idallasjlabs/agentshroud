@@ -16,13 +16,14 @@ Usage:
     allowed = enforcer.is_service_allowed(user_id, "gmail")
     filtered_text, was_modified = enforcer.filter_response(raw_text, user_id)
 """
+
 from __future__ import annotations
 
 import logging
 import re
 from dataclasses import dataclass, field
 from enum import Enum
-from typing import Dict, List, Optional, Set, Tuple, TYPE_CHECKING
+from typing import TYPE_CHECKING, Dict, List, Optional, Set, Tuple
 
 if TYPE_CHECKING:
     from gateway.security.rbac_config import RBACConfig
@@ -34,16 +35,19 @@ logger = logging.getLogger("agentshroud.security.privacy_policy")
 # Domain types
 # ---------------------------------------------------------------------------
 
+
 class ServicePrivacy(str, Enum):
     """Privacy classification for a service."""
-    PRIVATE = "private"       # Owner-only — collaborators cannot access
-    SHARED = "shared"         # All collaborators may access
-    GROUP_ONLY = "group_only" # Only members of specified groups may access
+
+    PRIVATE = "private"  # Owner-only — collaborators cannot access
+    SHARED = "shared"  # All collaborators may access
+    GROUP_ONLY = "group_only"  # Only members of specified groups may access
 
 
 @dataclass
 class ServicePolicy:
     """Privacy policy for a single service."""
+
     name: str
     privacy: ServicePrivacy
     allowed_groups: List[str] = field(default_factory=list)  # Only used when privacy=GROUP_ONLY
@@ -55,7 +59,9 @@ class ServicePolicy:
         try:
             privacy = ServicePrivacy(privacy_str)
         except ValueError:
-            logger.warning("Unknown privacy value %r for service %r — defaulting to private", privacy_str, name)
+            logger.warning(
+                "Unknown privacy value %r for service %r — defaulting to private", privacy_str, name
+            )
             privacy = ServicePrivacy.PRIVATE
         return cls(
             name=name,
@@ -73,9 +79,21 @@ class ServicePolicy:
 # These are the known admin-private services that must never be accessible
 # to collaborators without explicit owner override.
 _DEFAULT_PRIVATE_SERVICES: Set[str] = {
-    "gmail", "google_mail", "icloud", "apple_mail", "apple_messages",
-    "home_assistant", "homekit", "banking", "stripe", "paypal",
-    "1password", "onepassword", "aws_iam", "ssh", "terraform",
+    "gmail",
+    "google_mail",
+    "icloud",
+    "apple_mail",
+    "apple_messages",
+    "home_assistant",
+    "homekit",
+    "banking",
+    "stripe",
+    "paypal",
+    "1password",
+    "onepassword",
+    "aws_iam",
+    "ssh",
+    "terraform",
 }
 
 # Response content patterns that signal private service data was included.
@@ -101,6 +119,7 @@ class PrivacyPolicy:
 
     Loaded from agentshroud.yaml `privacy:` section.
     """
+
     services: Dict[str, ServicePolicy] = field(default_factory=dict)
     # Additional regex patterns to redact from all collaborator responses
     extra_redact_patterns: List[str] = field(default_factory=list)
@@ -155,10 +174,13 @@ class PrivacyPolicy:
 # Enforcer
 # ---------------------------------------------------------------------------
 
+
 class PrivacyPolicyEnforcer:
     """Evaluates access control and filters responses per privacy policy."""
 
-    def __init__(self, policy: Optional[PrivacyPolicy] = None, rbac_config: Optional["RBACConfig"] = None):
+    def __init__(
+        self, policy: Optional[PrivacyPolicy] = None, rbac_config: Optional["RBACConfig"] = None
+    ):
         self._policy = policy or PrivacyPolicy.default()
         self._rbac = rbac_config
         self._compiled_extra: List[re.Pattern] = []
@@ -194,7 +216,9 @@ class PrivacyPolicyEnforcer:
             if self._policy.audit_access_attempts:
                 logger.warning(
                     "Private service access blocked: user=%s service=%s role=%s",
-                    user_id, service_name, role_value,
+                    user_id,
+                    service_name,
+                    role_value,
                 )
             return False
 
@@ -204,7 +228,10 @@ class PrivacyPolicyEnforcer:
             if self._policy.audit_access_attempts:
                 logger.warning(
                     "Group-restricted service access blocked: user=%s service=%s allowed_groups=%s role=%s",
-                    user_id, service_name, svc.allowed_groups, role_value,
+                    user_id,
+                    service_name,
+                    svc.allowed_groups,
+                    role_value,
                 )
             return False
 
@@ -264,7 +291,9 @@ class PrivacyPolicyEnforcer:
         if was_modified:
             logger.info(
                 "Response filtered for non-owner user %s: private content redacted (len_before=%d len_after=%d)",
-                user_id, len(response), len(filtered),
+                user_id,
+                len(response),
+                len(filtered),
             )
 
         return filtered, was_modified

@@ -6,16 +6,16 @@
 Metadata Channel Guard - Security Hardening Module
 Sanitize HTTP headers, image metadata, and filenames to prevent information disclosure.
 """
+
 from __future__ import annotations
 
-
 import hashlib
+import logging
 import re
 import time
 import unicodedata
 from dataclasses import dataclass
 from typing import Dict, Optional
-import logging
 
 logger = logging.getLogger(__name__)
 
@@ -24,10 +24,11 @@ logger = logging.getLogger(__name__)
 @dataclass
 class DocumentTag:
     """Provenance record for a document ingested into the agent context."""
+
     filename: str
-    content_hash: str          # SHA-256 of raw content bytes
-    source: str                # upload / tool_fetch / web_fetch
-    trust_level: str           # TRUSTED / UNTRUSTED
+    content_hash: str  # SHA-256 of raw content bytes
+    source: str  # upload / tool_fetch / web_fetch
+    trust_level: str  # TRUSTED / UNTRUSTED
     tagged_at: float
     size_bytes: int
 
@@ -82,9 +83,7 @@ class MetadataGuard:
 
             # Skip if total headers exceed limit
             if total_size > self.max_header_size:
-                logger.warning(
-                    f"Headers exceed size limit ({self.max_header_size}B), truncating"
-                )
+                logger.warning(f"Headers exceed size limit ({self.max_header_size}B), truncating")
                 break
 
             # Strip sensitive headers entirely
@@ -116,7 +115,11 @@ class MetadataGuard:
         filename = filename.replace("\\", "/")  # Normalize backslash
         parts = filename.split("/")
         safe_parts = [p for p in parts if p and p != ".."]
-        filename = "/".join(safe_parts) if len(safe_parts) > 1 else (safe_parts[0] if safe_parts else "unnamed")
+        filename = (
+            "/".join(safe_parts)
+            if len(safe_parts) > 1
+            else (safe_parts[0] if safe_parts else "unnamed")
+        )
 
         # Strip leading slashes (prevent absolute paths)
         filename = filename.lstrip("/")
@@ -185,13 +188,10 @@ class MetadataGuard:
     def check_oversized_headers(self, headers: Dict[str, str]) -> Optional[str]:
         """Check if headers exceed size limits."""
         total_size = sum(
-            len(k.encode("utf-8")) + len(str(v).encode("utf-8"))
-            for k, v in headers.items()
+            len(k.encode("utf-8")) + len(str(v).encode("utf-8")) for k, v in headers.items()
         )
 
         if total_size > self.max_header_size:
-            return (
-                f"Headers size ({total_size}B) exceeds limit ({self.max_header_size}B)"
-            )
+            return f"Headers size ({total_size}B) exceeds limit ({self.max_header_size}B)"
 
         return None

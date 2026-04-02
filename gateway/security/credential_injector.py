@@ -17,6 +17,7 @@ This module ensures:
   R-11: Agent container has no secret files or credential env vars
   R-12: All authenticated requests route through gateway with server-side injection
 """
+
 from __future__ import annotations
 
 import logging
@@ -48,6 +49,7 @@ _compiled_leak_patterns = [(re.compile(p), desc) for p, desc in CREDENTIAL_LEAK_
 @dataclass
 class CredentialMapping:
     """Maps a destination domain to its credential injection config."""
+
     domain: str
     header_name: str  # e.g., "Authorization", "x-api-key"
     secret_file: str  # path to secret file in /run/secrets/
@@ -58,6 +60,7 @@ class CredentialMapping:
 @dataclass
 class CredentialInjectorConfig:
     """Configuration for the credential injector."""
+
     secrets_dir: str = "/run/secrets"
     enabled: bool = True
     leak_detection: bool = True  # scan outbound content for credential patterns

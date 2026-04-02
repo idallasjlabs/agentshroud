@@ -1,8 +1,10 @@
 # Copyright © 2026 Isaiah Dallas Jefferson, Jr. AgentShroud™. All rights reserved.
 """Tests for gateway/security/delegation.py — V9-T1: Owner-away privilege delegation."""
+
 from __future__ import annotations
 
 import time
+
 import pytest
 
 from gateway.security.delegation import (
@@ -27,6 +29,7 @@ def mgr() -> DelegationManager:
 # ---------------------------------------------------------------------------
 # Basic delegation lifecycle
 # ---------------------------------------------------------------------------
+
 
 class TestDelegateBasic:
     def test_create_egress_delegation(self, mgr):
@@ -57,6 +60,7 @@ class TestDelegateBasic:
 # is_delegated
 # ---------------------------------------------------------------------------
 
+
 class TestIsDelegated:
     def test_is_delegated_returns_true_for_active(self, mgr):
         mgr.delegate(OWNER, USER_A, DelegationPrivilege.EGRESS_APPROVAL, 2)
@@ -79,6 +83,7 @@ class TestIsDelegated:
 # ---------------------------------------------------------------------------
 # Revoke
 # ---------------------------------------------------------------------------
+
 
 class TestRevoke:
     def test_revoke_removes_delegation(self, mgr):
@@ -103,6 +108,7 @@ class TestRevoke:
 # ---------------------------------------------------------------------------
 # Access control
 # ---------------------------------------------------------------------------
+
 
 class TestAccessControl:
     def test_non_owner_cannot_delegate(self, mgr):
@@ -131,6 +137,7 @@ class TestAccessControl:
 # Re-delegation (idempotent override)
 # ---------------------------------------------------------------------------
 
+
 class TestRedelegation:
     def test_redelegate_replaces_existing(self, mgr):
         d1 = mgr.delegate(OWNER, USER_A, DelegationPrivilege.EGRESS_APPROVAL, 1)
@@ -146,6 +153,7 @@ class TestRedelegation:
 # ---------------------------------------------------------------------------
 # List and cleanup
 # ---------------------------------------------------------------------------
+
 
 class TestListAndCleanup:
     def test_get_active_delegations_excludes_expired(self, mgr):
@@ -179,6 +187,7 @@ class TestListAndCleanup:
 # ---------------------------------------------------------------------------
 # Serialization round-trip
 # ---------------------------------------------------------------------------
+
 
 class TestSerialization:
     def test_delegation_to_dict_and_back(self, mgr):

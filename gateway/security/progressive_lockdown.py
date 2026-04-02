@@ -12,6 +12,7 @@ At defined thresholds, escalates the response:
 Block counts are in-memory only (reset on gateway restart). For persistent
 tracking across restarts, the audit store can be wired in the future.
 """
+
 from __future__ import annotations
 
 import logging
@@ -24,8 +25,8 @@ logger = logging.getLogger("agentshroud.security.progressive_lockdown")
 
 
 class LockdownLevel(str, Enum):
-    NORMAL = "normal"        # < 3 blocks — no change
-    ALERT = "alert"          # 3–4 blocks — owner alert sent
+    NORMAL = "normal"  # < 3 blocks — no change
+    ALERT = "alert"  # 3–4 blocks — owner alert sent
     ESCALATED = "escalated"  # 5–9 blocks — rate limit doubled
     SUSPENDED = "suspended"  # 10+ blocks — session suspended
 
@@ -35,9 +36,9 @@ class UserLockdownState:
     user_id: str
     block_count: int = 0
     level: LockdownLevel = LockdownLevel.NORMAL
-    alert_sent: bool = False       # owner alert at ALERT level
+    alert_sent: bool = False  # owner alert at ALERT level
     escalation_sent: bool = False  # owner alert at ESCALATED level
-    suspend_sent: bool = False     # owner alert at SUSPENDED level
+    suspend_sent: bool = False  # owner alert at SUSPENDED level
     first_block_ts: float = 0.0
     last_block_ts: float = 0.0
     suspended_at: Optional[float] = None
@@ -46,11 +47,12 @@ class UserLockdownState:
 @dataclass
 class LockdownAction:
     """What the caller should do in response to this block."""
+
     level: LockdownLevel
-    notify_owner: bool           # send escalation notice to owner right now
-    notify_text: str             # text of owner notification (empty if no notify)
-    rate_limit_multiplier: float # 1.0 = normal, 2.0 = double window
-    suspended: bool              # True → drop request immediately, no response
+    notify_owner: bool  # send escalation notice to owner right now
+    notify_text: str  # text of owner notification (empty if no notify)
+    rate_limit_multiplier: float  # 1.0 = normal, 2.0 = double window
+    suspended: bool  # True → drop request immediately, no response
 
 
 _THRESHOLD_ALERT = 3
@@ -106,11 +108,15 @@ class ProgressiveLockdown:
             notify = not state.suspend_sent
             state.suspend_sent = True
             notify_text = (
-                f"🔴 *Session Suspended* — {display} has triggered {n} security blocks.\n"
-                f"Latest: {reason}\n"
-                f"All further messages from this user are silently dropped.\n"
-                f"Use /unlock {user_id} to restore access."
-            ) if notify else ""
+                (
+                    f"🔴 *Session Suspended* — {display} has triggered {n} security blocks.\n"
+                    f"Latest: {reason}\n"
+                    f"All further messages from this user are silently dropped.\n"
+                    f"Use /unlock {user_id} to restore access."
+                )
+                if notify
+                else ""
+            )
             return LockdownAction(
                 level=LockdownLevel.SUSPENDED,
                 notify_owner=notify,
@@ -124,10 +130,14 @@ class ProgressiveLockdown:
             notify = not state.escalation_sent
             state.escalation_sent = True
             notify_text = (
-                f"🟠 *Lockdown Escalated* — {display} has {n} blocks.\n"
-                f"Latest: {reason}\n"
-                f"Rate limit window doubled. Next suspension at {_THRESHOLD_SUSPEND} blocks."
-            ) if notify else ""
+                (
+                    f"🟠 *Lockdown Escalated* — {display} has {n} blocks.\n"
+                    f"Latest: {reason}\n"
+                    f"Rate limit window doubled. Next suspension at {_THRESHOLD_SUSPEND} blocks."
+                )
+                if notify
+                else ""
+            )
             return LockdownAction(
                 level=LockdownLevel.ESCALATED,
                 notify_owner=notify,
@@ -141,10 +151,14 @@ class ProgressiveLockdown:
             notify = not state.alert_sent
             state.alert_sent = True
             notify_text = (
-                f"🟡 *Lockdown Alert* — {display} has reached {n} security blocks.\n"
-                f"Latest: {reason}\n"
-                f"Monitoring elevated. Escalation at {_THRESHOLD_ESCALATE} blocks."
-            ) if notify else ""
+                (
+                    f"🟡 *Lockdown Alert* — {display} has reached {n} security blocks.\n"
+                    f"Latest: {reason}\n"
+                    f"Monitoring elevated. Escalation at {_THRESHOLD_ESCALATE} blocks."
+                )
+                if notify
+                else ""
+            )
             return LockdownAction(
                 level=LockdownLevel.ALERT,
                 notify_owner=notify,

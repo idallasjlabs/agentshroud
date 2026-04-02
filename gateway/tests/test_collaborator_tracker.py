@@ -34,6 +34,7 @@ def tracker(log_file, monkeypatch):
 
 # ── record_activity ───────────────────────────────────────────────────────────
 
+
 def test_records_known_collaborator(tracker, log_file):
     tracker.record_activity("7614658040", "Alice", "Hello there!", "telegram")
     lines = log_file.read_text().strip().split("\n")
@@ -112,6 +113,7 @@ def test_multiple_entries_appended(tracker, log_file):
 
 # ── get_activity ──────────────────────────────────────────────────────────────
 
+
 def test_get_activity_returns_empty_when_no_file(tracker, log_file):
     assert tracker.get_activity() == []
 
@@ -174,6 +176,7 @@ def test_get_activity_ignores_non_numeric_timestamps(tracker, log_file):
 
 
 # ── get_activity_summary ──────────────────────────────────────────────────────
+
 
 def test_summary_empty_when_no_file(tracker):
     s = tracker.get_activity_summary()
@@ -256,6 +259,7 @@ def test_record_activity_mirror_handles_delimiter_chars_in_username(tracker, log
 
 # ── correlation_id and is_owner ───────────────────────────────────────────────
 
+
 def test_correlation_id_included_when_provided(tracker, log_file):
     tracker.record_activity(
         "7614658040", "Alice", "hello", "telegram", correlation_id="7614658040:42"
@@ -286,6 +290,7 @@ def test_owner_correlation_id_is_stored(tracker, log_file):
 
 
 # ── pruner heuristic ──────────────────────────────────────────────────────────
+
 
 def test_pruner_short_numeric_ids_are_test_fixtures():
     """IDs < 10000 should be treated as test fixtures by the pruner heuristic."""

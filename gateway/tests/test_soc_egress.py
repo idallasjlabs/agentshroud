@@ -4,6 +4,7 @@
 from __future__ import annotations
 
 import pytest
+
 from gateway.soc.models import (
     EgressRequest,
     EgressStatus,

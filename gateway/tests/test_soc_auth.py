@@ -4,11 +4,16 @@
 from __future__ import annotations
 
 import time
+
 import pytest
 
 from gateway.soc.auth import (
-    issue_ws_token, redeem_ws_token, _ws_tokens,
-    issue_session_token, _verify_session_token, _session_tokens,
+    _session_tokens,
+    _verify_session_token,
+    _ws_tokens,
+    issue_session_token,
+    issue_ws_token,
+    redeem_ws_token,
 )
 
 

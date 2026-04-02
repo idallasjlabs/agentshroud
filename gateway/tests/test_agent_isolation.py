@@ -3,9 +3,11 @@
 # Protected by common law trademark rights. Federal trademark registration pending.
 # Unauthorized reproduction, distribution, or use of the AgentShroud name or brand is strictly prohibited.
 """Tests for gateway/security/agent_isolation.py — verify shared-nothing isolation."""
+
 from __future__ import annotations
 
 import pytest
+
 from gateway.security.agent_isolation import (
     AgentRegistry,
     ContainerConfig,
@@ -31,6 +33,7 @@ def _make_config(agent_id: str, **overrides) -> ContainerConfig:
 # ---------------------------------------------------------------------------
 # AgentRegistry CRUD
 # ---------------------------------------------------------------------------
+
 
 class TestAgentRegistry:
     def test_register_and_get(self):
@@ -75,6 +78,7 @@ class TestAgentRegistry:
 # IsolationVerifier — network isolation
 # ---------------------------------------------------------------------------
 
+
 class TestNetworkIsolation:
     def test_separate_networks_pass(self):
         reg = AgentRegistry()
@@ -98,6 +102,7 @@ class TestNetworkIsolation:
 # IsolationVerifier — volume isolation
 # ---------------------------------------------------------------------------
 
+
 class TestVolumeIsolation:
     def test_separate_volumes_pass(self):
         reg = AgentRegistry()
@@ -119,6 +124,7 @@ class TestVolumeIsolation:
 # ---------------------------------------------------------------------------
 # IsolationVerifier — shared-nothing (full check)
 # ---------------------------------------------------------------------------
+
 
 class TestSharedNothing:
     def test_fully_isolated_agents_pass(self):
@@ -179,6 +185,7 @@ class TestSharedNothing:
 # ---------------------------------------------------------------------------
 # IsolationVerifier — Docker Compose generation
 # ---------------------------------------------------------------------------
+
 
 class TestGenerateCompose:
     def test_compose_contains_all_agents(self):

@@ -80,9 +80,7 @@ class ApprovalStore:
         )
         await self._db.commit()
 
-    async def update_status(
-        self, request_id: str, status: str, reason: str = ""
-    ) -> None:
+    async def update_status(self, request_id: str, status: str, reason: str = "") -> None:
         """Update the status of an existing item."""
         assert self._db is not None
         decided_at = datetime.now(timezone.utc).isoformat().replace("+00:00", "Z")

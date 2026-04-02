@@ -3,8 +3,8 @@
 # Protected by common law trademark rights. Federal trademark registration pending.
 # Unauthorized reproduction, distribution, or use of the AgentShroud name or brand is strictly prohibited.
 """Tests for configuration loading"""
-from __future__ import annotations
 
+from __future__ import annotations
 
 from gateway.ingest_api.config import load_config
 

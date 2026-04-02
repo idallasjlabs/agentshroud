@@ -137,10 +137,19 @@ class DNSBlocklist:
             if len(parts) >= 2:
                 domain = parts[1].lower().strip()
                 # Skip localhost entries
-                if domain in ("localhost", "localhost.localdomain", "local",
-                              "broadcasthost", "ip6-localhost", "ip6-loopback",
-                              "ip6-localnet", "ip6-mcastprefix", "ip6-allnodes",
-                              "ip6-allrouters", "ip6-allhosts"):
+                if domain in (
+                    "localhost",
+                    "localhost.localdomain",
+                    "local",
+                    "broadcasthost",
+                    "ip6-localhost",
+                    "ip6-loopback",
+                    "ip6-localnet",
+                    "ip6-mcastprefix",
+                    "ip6-allnodes",
+                    "ip6-allrouters",
+                    "ip6-allhosts",
+                ):
                     return None
                 # Basic domain validation
                 if "." in domain and not domain.startswith("."):
@@ -150,13 +159,13 @@ class DNSBlocklist:
         # Adblock filter format: "||domain.com^"
         if line.startswith("||") and line.endswith("^"):
             domain = line[2:-1].lower().strip()
-            if "." in domain and re.match(r'^[a-z0-9.-]+$', domain):
+            if "." in domain and re.match(r"^[a-z0-9.-]+$", domain):
                 return domain
             return None
 
         # Domain-only format (one domain per line)
         line_lower = line.lower().split("#")[0].strip()  # Remove inline comments
-        if line_lower and "." in line_lower and re.match(r'^[a-z0-9.-]+$', line_lower):
+        if line_lower and "." in line_lower and re.match(r"^[a-z0-9.-]+$", line_lower):
             if " " not in line_lower and len(line_lower) < 256:
                 return line_lower
 
@@ -177,15 +186,17 @@ class DNSBlocklist:
         cache_file = self.data_dir / f"blocklist_{hash(url) & 0xFFFFFFFF:08x}.txt"
 
         try:
-            import urllib.request
             import ssl
+            import urllib.request
 
             # Download with timeout
             ctx = ssl.create_default_context()
             req = urllib.request.Request(url, headers={"User-Agent": "AgentShroud/1.0.0"})
             response = await asyncio.get_event_loop().run_in_executor(
                 None,
-                lambda: urllib.request.urlopen(req, timeout=30, context=ctx).read().decode("utf-8", errors="replace"),
+                lambda: urllib.request.urlopen(req, timeout=30, context=ctx)
+                .read()
+                .decode("utf-8", errors="replace"),
             )
 
             # Cache to disk

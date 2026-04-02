@@ -7,16 +7,17 @@ Sits between OpenClaw and the LLM APIs, enabling:
 - Outbound: LLM responses are filtered (credential blocking, XML stripping, canary detection)
 - Audit: Every API call is logged to the security ledger
 """
+
 from __future__ import annotations
 
 import asyncio
 import json
 import logging
 import os
-import time
 import ssl
-import urllib.request
+import time
 import urllib.error
+import urllib.request
 from typing import Any
 
 logger = logging.getLogger("agentshroud.proxy.llm_api")
@@ -32,7 +33,9 @@ MODEL_MODE = os.environ.get("AGENTSHROUD_MODEL_MODE", "local").lower()
 class LLMProxy:
     """Proxies LLM API calls (Anthropic, OpenAI, Google) through the security pipeline."""
 
-    def __init__(self, pipeline=None, middleware_manager=None, sanitizer=None, tool_acl_enforcer=None):
+    def __init__(
+        self, pipeline=None, middleware_manager=None, sanitizer=None, tool_acl_enforcer=None
+    ):
         self.pipeline = pipeline
         self.middleware_manager = middleware_manager
         self.sanitizer = sanitizer
@@ -60,7 +63,7 @@ class LLMProxy:
         user_id: str = "unknown",
     ) -> tuple[int, dict, bytes]:
         """Proxy an LLM API request.
-        
+
         Returns (status_code, response_headers, response_body).
         Automatically detects provider (Anthropic, OpenAI, Google) based on path or headers.
         """
@@ -70,7 +73,7 @@ class LLMProxy:
         is_openai = "/v1/chat/completions" in path or "/v1/completions" in path
         is_google = "/v1beta" in path or "google" in path.lower()
         is_ollama_native = "/api/" in path
-        
+
         request_data = None
         if body:
             try:
@@ -81,7 +84,7 @@ class LLMProxy:
         # Detect Ollama (local model)
         model_name = request_data.get("model", "") if request_data else ""
         local_keywords = ["qwen", "llama", "mistral", "deepseek", "phi", "ollama"]
-        
+
         # INTERCEPT: If the system tries to use Claude Opus, force it to use Ollama Phi4
         if MODEL_MODE != "cloud" and "claude-opus" in model_name.lower():
             logger.info(f"LLMProxy: Intercepted internal Claude Opus request, forcing {MAIN_MODEL}")
@@ -90,12 +93,21 @@ class LLMProxy:
                 body = json.dumps(request_data).encode()
             model_name = MAIN_MODEL
 
-        is_ollama = is_ollama_native or any(k in model_name.lower() for k in local_keywords) or model_name.startswith("ollama/")
+        is_ollama = (
+            is_ollama_native
+            or any(k in model_name.lower() for k in local_keywords)
+            or model_name.startswith("ollama/")
+        )
 
         # Normalize Ollama model references for OpenAI-compatible endpoints.
         # OpenClaw may emit model IDs like "ollama/qwen2.5-coder:7b", but
         # Ollama's OpenAI-compatible API expects bare model names.
-        if is_ollama and request_data and isinstance(model_name, str) and model_name.startswith("ollama/"):
+        if (
+            is_ollama
+            and request_data
+            and isinstance(model_name, str)
+            and model_name.startswith("ollama/")
+        ):
             request_data["model"] = model_name.split("/", 1)[1]
             model_name = request_data["model"]
 
@@ -114,14 +126,12 @@ class LLMProxy:
             base_url = GOOGLE_API_BASE
 
         url = f"{base_url}{path}"
-        
+
         # Check if streaming
         is_streaming = request_data and request_data.get("stream", False)
-        
+
         try:
-            status, resp_headers, resp_body = await self._forward_request(
-                url, body, headers
-            )
+            status, resp_headers, resp_body = await self._forward_request(url, body, headers)
         except TimeoutError as e:
             logger.error(f"LLM proxy timeout: {e}")
             fallback_body = self._build_timeout_fallback_response(
@@ -133,10 +143,12 @@ class LLMProxy:
             return 200, {"content-type": "application/json"}, fallback_body
         except Exception as e:
             logger.error(f"LLM proxy error: {e}")
-            error_resp = json.dumps({
-                "type": "error",
-                "error": {"type": "api_error", "message": f"Gateway proxy error: {e}"}
-            }).encode()
+            error_resp = json.dumps(
+                {
+                    "type": "error",
+                    "error": {"type": "api_error", "message": f"Gateway proxy error: {e}"},
+                }
+            ).encode()
             return 502, {"content-type": "application/json"}, error_resp
 
         # === OUTBOUND FILTERING ===
@@ -164,8 +176,10 @@ class LLMProxy:
                     elif isinstance(content, list):
                         for part in content:
                             if isinstance(part, dict) and part.get("type") == "text":
-                                part["text"] = await self._scan_inbound(part["text"], user_id=user_id)
-        
+                                part["text"] = await self._scan_inbound(
+                                    part["text"], user_id=user_id
+                                )
+
         # Google Gemini format
         if "contents" in request_data:
             for content in request_data["contents"]:
@@ -176,7 +190,9 @@ class LLMProxy:
 
         # Ollama Native Chat/Generate format
         if "prompt" in request_data and isinstance(request_data["prompt"], str):
-            request_data["prompt"] = await self._scan_inbound(request_data["prompt"], user_id=user_id)
+            request_data["prompt"] = await self._scan_inbound(
+                request_data["prompt"], user_id=user_id
+            )
 
     async def _scan_inbound(self, text: str, user_id: str = "unknown") -> str:
         """Scan inbound user message text for PII and injection."""
@@ -191,7 +207,9 @@ class LLMProxy:
                 result = await self.sanitizer.sanitize(text)
                 if result.entity_types_found:
                     self._stats["pii_redacted"] += 1
-                    logger.info(f"LLM proxy: PII redacted from user message: {result.entity_types_found}")
+                    logger.info(
+                        f"LLM proxy: PII redacted from user message: {result.entity_types_found}"
+                    )
                     text = result.sanitized_content
             except Exception as e:
                 logger.error(f"LLM proxy PII scan error: {e}")
@@ -222,10 +240,10 @@ class LLMProxy:
         """Filter outbound LLM response for credential leaks and XML."""
         try:
             data = json.loads(resp_body)
-            
+
             # Anthropic/OpenAI response formats differ
             modified = False
-            
+
             # Anthropic
             if "content" in data and isinstance(data["content"], list):
                 for i, block in enumerate(data["content"]):
@@ -282,13 +300,17 @@ class LLMProxy:
             else:
                 logger.warning(
                     "LLMProxy ToolACL: blocked tool_use for user=%s tool=%s reason=%s",
-                    user_id, tool_name, reason,
+                    user_id,
+                    tool_name,
+                    reason,
                 )
                 # Replace denied tool_use with an informational text block
-                new_content.append({
-                    "type": "text",
-                    "text": f"[AgentShroud] Tool '{tool_name}' is not permitted for your role. {reason}",
-                })
+                new_content.append(
+                    {
+                        "type": "text",
+                        "text": f"[AgentShroud] Tool '{tool_name}' is not permitted for your role. {reason}",
+                    }
+                )
                 modified = True
 
         if not modified:
@@ -362,7 +384,7 @@ class LLMProxy:
         """Apply XML and credential filters to text."""
         if not text or not self.sanitizer:
             return text, False
-            
+
         modified = False
         # XML leak filter
         filtered, was_filtered = self.sanitizer.filter_xml_blocks(text)
@@ -377,7 +399,7 @@ class LLMProxy:
             text = blocked
             modified = True
             self._stats["responses_filtered"] += 1
-            
+
         return text, modified
 
     async def _filter_outbound_streaming(self, resp_body: bytes, user_id: str = "unknown") -> bytes:
@@ -492,8 +514,14 @@ class LLMProxy:
 
         forward_headers = {}
         allowed_headers = (
-            "authorization", "x-api-key", "anthropic-version", "anthropic-beta",
-            "content-type", "accept", "user-agent", "x-goog-api-key"
+            "authorization",
+            "x-api-key",
+            "anthropic-version",
+            "anthropic-beta",
+            "content-type",
+            "accept",
+            "user-agent",
+            "x-goog-api-key",
         )
         for key, value in headers.items():
             if key.lower() in allowed_headers:
@@ -519,7 +547,9 @@ class LLMProxy:
                 if e.code not in _RETRYABLE or _attempt >= _MAX_RETRIES:
                     return e.code, resp_headers, resp_body
                 # Respect Retry-After header (Anthropic 429 includes it)
-                retry_after_str = resp_headers.get("retry-after") or resp_headers.get("Retry-After", "")
+                retry_after_str = resp_headers.get("retry-after") or resp_headers.get(
+                    "Retry-After", ""
+                )
                 try:
                     wait = max(float(retry_after_str), 1.0)
                 except (ValueError, TypeError):
@@ -527,6 +557,9 @@ class LLMProxy:
                     wait = (2 ** (_attempt + 1)) + random.uniform(0, 1)
                 logger.warning(
                     "LLM API returned %s (attempt %d/%d) — retrying in %.1fs",
-                    e.code, _attempt + 1, _MAX_RETRIES, wait,
+                    e.code,
+                    _attempt + 1,
+                    _MAX_RETRIES,
+                    wait,
                 )
                 await asyncio.sleep(wait)

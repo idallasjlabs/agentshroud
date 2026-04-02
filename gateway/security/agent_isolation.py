@@ -12,7 +12,7 @@ network namespace separation and shared-nothing constraints.
 """
 
 
-from dataclasses import dataclass, field, asdict
+from dataclasses import asdict, dataclass, field
 from enum import Enum
 from typing import Optional
 
@@ -173,9 +173,7 @@ class IsolationVerifier:
                 issues.append("Not all capabilities are dropped")
 
             status = IsolationStatus.VIOLATION if issues else IsolationStatus.ISOLATED
-            results.append(
-                IsolationCheck(agent_id=agent_id, status=status, issues=issues)
-            )
+            results.append(IsolationCheck(agent_id=agent_id, status=status, issues=issues))
         return results
 
     def generate_compose(self) -> dict:

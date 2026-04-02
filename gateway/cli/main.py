@@ -11,6 +11,7 @@ Environment variables:
 Output format:
     --format table|json|yaml   default: table for TTY, json for pipe
 """
+
 from __future__ import annotations
 
 import json
@@ -43,6 +44,7 @@ def _output(data: Any, fmt: str) -> None:
     if fmt == "yaml":
         try:
             import yaml
+
             click.echo(yaml.safe_dump(data, default_flow_style=False))
         except ImportError:
             click.echo(json.dumps(data, indent=2, default=str))
@@ -81,8 +83,11 @@ def _print_table(rows: List[dict]) -> None:
 # CLI root
 # ---------------------------------------------------------------------------
 
+
 @click.group()
-@click.option("--url", envvar="AGENTSHROUD_URL", default="http://localhost:8080", help="Gateway base URL")
+@click.option(
+    "--url", envvar="AGENTSHROUD_URL", default="http://localhost:8080", help="Gateway base URL"
+)
 @click.option("--token", envvar="AGENTSHROUD_TOKEN", default="", help="Bearer token")
 @click.option("--format", "fmt", type=click.Choice(["table", "json", "yaml"]), default=None)
 @click.pass_context
@@ -98,6 +103,7 @@ def cli(ctx, url: str, token: str, fmt: Optional[str]):
 # ---------------------------------------------------------------------------
 # get commands
 # ---------------------------------------------------------------------------
+
 
 @cli.group()
 def get():
@@ -188,6 +194,7 @@ def get_logs(ctx, service, tail):
 # restart / stop / start
 # ---------------------------------------------------------------------------
 
+
 @cli.group()
 def restart():
     """Restart a service."""
@@ -233,6 +240,7 @@ def stop_service(ctx, name, confirm):
 # approve / deny
 # ---------------------------------------------------------------------------
 
+
 @cli.command("approve")
 @click.argument("target")
 @click.pass_context
@@ -254,6 +262,7 @@ def deny(ctx, target):
 # ---------------------------------------------------------------------------
 # add / remove
 # ---------------------------------------------------------------------------
+
 
 @cli.group()
 def add():
@@ -284,6 +293,7 @@ def add_group_member(ctx, group_id, user_id):
 # set
 # ---------------------------------------------------------------------------
 
+
 @cli.group()
 def set():
     """Set configuration values."""
@@ -303,6 +313,7 @@ def set_mode(ctx, group_id, mode):
 # ---------------------------------------------------------------------------
 # Emergency operations
 # ---------------------------------------------------------------------------
+
 
 @cli.command()
 @click.option("--confirm", is_flag=True, default=False)
@@ -330,6 +341,7 @@ def scan(ctx, scanner):
 # Live streaming (WebSocket tail)
 # ---------------------------------------------------------------------------
 
+
 @cli.command("tail")
 @click.argument("stream", type=click.Choice(["events", "logs"]))
 @click.argument("target", default="")
@@ -344,6 +356,7 @@ def tail(ctx, stream, target, severity, url, token):
     click.echo(f"Connecting to {url}/soc/v1/ws ... (Ctrl-C to stop)")
     try:
         import asyncio
+
         asyncio.run(_tail_ws(url, token, stream, target, severity))
     except KeyboardInterrupt:
         click.echo("\nDisconnected.")

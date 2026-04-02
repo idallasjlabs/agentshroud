@@ -30,6 +30,7 @@ router = APIRouter(prefix="/api", tags=["dashboard"])
 # Alert store (in-memory, other modules can push alerts here)
 # ---------------------------------------------------------------------------
 
+
 @dataclass
 class Alert:
     timestamp: float
@@ -45,12 +46,14 @@ class AlertStore:
         self._alerts: list[Alert] = []
 
     def push(self, severity: str, module: str, message: str) -> None:
-        self._alerts.append(Alert(
-            timestamp=time.time(),
-            severity=severity,
-            module=module,
-            message=message,
-        ))
+        self._alerts.append(
+            Alert(
+                timestamp=time.time(),
+                severity=severity,
+                module=module,
+                message=message,
+            )
+        )
 
     def summary(self) -> dict[str, int]:
         counts = {"critical": 0, "high": 0, "medium": 0, "low": 0}
@@ -131,6 +134,7 @@ def _tcp_check(host: str, port: int, timeout: int) -> bool:
 # In-memory log buffer
 # ---------------------------------------------------------------------------
 
+
 class LogBuffer:
     """Ring buffer for recent log/audit entries."""
 
@@ -139,14 +143,16 @@ class LogBuffer:
         self._max_size = max_size
 
     def append(self, level: str, module: str, message: str) -> None:
-        self._entries.append({
-            "timestamp": datetime.now(timezone.utc).isoformat(),
-            "level": level,
-            "module": module,
-            "message": message,
-        })
+        self._entries.append(
+            {
+                "timestamp": datetime.now(timezone.utc).isoformat(),
+                "level": level,
+                "module": module,
+                "message": message,
+            }
+        )
         if len(self._entries) > self._max_size:
-            self._entries = self._entries[-self._max_size:]
+            self._entries = self._entries[-self._max_size :]
 
     def tail(self, n: int = 20) -> list[dict[str, Any]]:
         n = max(1, min(n, 100))
@@ -160,6 +166,7 @@ log_buffer = LogBuffer()
 # ---------------------------------------------------------------------------
 # Logging handler that feeds log_buffer
 # ---------------------------------------------------------------------------
+
 
 class BufferHandler(logging.Handler):
     """Logging handler that pushes records into the LogBuffer."""
@@ -189,13 +196,20 @@ def install_log_handler() -> None:
 # Endpoints
 # ---------------------------------------------------------------------------
 
+
 @router.get("/proxy/status")
 async def proxy_status(user: str = Depends(require_auth)) -> dict:
     """Proxy statistics (requests allowed/blocked/flagged)."""
     try:
         from ..ingest_api.main import app_state
 
-        stats: dict[str, Any] = {"total_requests": 0, "allowed": 0, "blocked": 0, "flagged": 0, "uptime_seconds": 0}
+        stats: dict[str, Any] = {
+            "total_requests": 0,
+            "allowed": 0,
+            "blocked": 0,
+            "flagged": 0,
+            "uptime_seconds": 0,
+        }
 
         # Pull from SecurityPipeline if available
         if getattr(app_state, "pipeline", None) is not None:
@@ -237,12 +251,14 @@ async def ssh_hosts(user: str = Depends(require_auth)) -> dict:
     hosts = []
     for i, r in enumerate(results):
         if isinstance(r, Exception):
-            hosts.append({
-                "name": _SSH_HOSTS[i]["name"],
-                "host": _SSH_HOSTS[i]["host"],
-                "status": "error",
-                "last_check": datetime.now(timezone.utc).isoformat(),
-            })
+            hosts.append(
+                {
+                    "name": _SSH_HOSTS[i]["name"],
+                    "host": _SSH_HOSTS[i]["host"],
+                    "status": "error",
+                    "last_check": datetime.now(timezone.utc).isoformat(),
+                }
+            )
         else:
             hosts.append(r)
     return {"hosts": hosts}
@@ -260,15 +276,20 @@ async def logs_recent(
     # Also try to include audit chain entries
     try:
         from ..ingest_api.main import app_state
+
         if getattr(app_state, "pipeline", None) is not None:
             chain_entries = app_state.pipeline.audit_chain.entries
             for ce in chain_entries[-tail:]:
-                entries.append({
-                    "timestamp": datetime.fromtimestamp(ce.timestamp, tz=timezone.utc).isoformat(),
-                    "level": "AUDIT",
-                    "module": "audit_chain",
-                    "message": f"[{ce.direction}] hash={ce.chain_hash[:16]}…",
-                })
+                entries.append(
+                    {
+                        "timestamp": datetime.fromtimestamp(
+                            ce.timestamp, tz=timezone.utc
+                        ).isoformat(),
+                        "level": "AUDIT",
+                        "module": "audit_chain",
+                        "message": f"[{ce.direction}] hash={ce.chain_hash[:16]}…",
+                    }
+                )
     except Exception:
         pass
 

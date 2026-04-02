@@ -6,12 +6,13 @@
 
 TDD approach: Tests written first for credential blocking behavior.
 """
+
 from __future__ import annotations
 
-
 import pytest
-from gateway.ingest_api.sanitizer import PIISanitizer
+
 from gateway.ingest_api.config import PIIConfig
+from gateway.ingest_api.sanitizer import PIISanitizer
 
 
 @pytest.fixture
@@ -22,10 +23,11 @@ def sanitizer():
 
 # === Trusted sources should NOT block ===
 
+
 @pytest.mark.asyncio
 async def test_console_source_not_blocked(sanitizer):
     """Console is a trusted source — credentials should pass through."""
-    content = 'password: MyS3cretP@ss!'
+    content = "password: MyS3cretP@ss!"
     result, blocked = await sanitizer.block_credentials(content, source="console")
     assert blocked is False
     assert result == content
@@ -34,7 +36,7 @@ async def test_console_source_not_blocked(sanitizer):
 @pytest.mark.asyncio
 async def test_localhost_source_not_blocked(sanitizer):
     """Localhost is a trusted source."""
-    content = 'password: MyS3cretP@ss!'
+    content = "password: MyS3cretP@ss!"
     result, blocked = await sanitizer.block_credentials(content, source="localhost")
     assert blocked is False
 
@@ -42,7 +44,7 @@ async def test_localhost_source_not_blocked(sanitizer):
 @pytest.mark.asyncio
 async def test_control_ui_source_not_blocked(sanitizer):
     """Control UI is a trusted source."""
-    content = 'token: abcdefghijklmnopqrstuvwxyz1234'
+    content = "token: abcdefghijklmnopqrstuvwxyz1234"
     result, blocked = await sanitizer.block_credentials(content, source="control_ui")
     assert blocked is False
 
@@ -50,17 +52,18 @@ async def test_control_ui_source_not_blocked(sanitizer):
 @pytest.mark.asyncio
 async def test_api_source_not_blocked(sanitizer):
     """API is a trusted source."""
-    content = 'secret: verylongsecretstring12345678'
+    content = "secret: verylongsecretstring12345678"
     result, blocked = await sanitizer.block_credentials(content, source="api")
     assert blocked is False
 
 
 # === Untrusted sources SHOULD block ===
 
+
 @pytest.mark.asyncio
 async def test_telegram_blocks_password(sanitizer):
     """Telegram should block password display."""
-    content = 'password: MyS3cretP@ss!Word'
+    content = "password: MyS3cretP@ss!Word"
     result, blocked = await sanitizer.block_credentials(content, source="telegram")
     assert blocked is True
     assert "REDACTED" in result
@@ -69,7 +72,7 @@ async def test_telegram_blocks_password(sanitizer):
 @pytest.mark.asyncio
 async def test_telegram_blocks_openai_api_key(sanitizer):
     """Telegram should block OpenAI API keys."""
-    content = 'Your key is sk-abcdefghijklmnopqrstuvwxyz1234567890'
+    content = "Your key is sk-abcdefghijklmnopqrstuvwxyz1234567890"
     result, blocked = await sanitizer.block_credentials(content, source="telegram")
     assert blocked is True
 
@@ -77,7 +80,7 @@ async def test_telegram_blocks_openai_api_key(sanitizer):
 @pytest.mark.asyncio
 async def test_telegram_blocks_github_token(sanitizer):
     """Telegram should block GitHub tokens."""
-    content = 'Token: ghp_ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefgh'
+    content = "Token: ghp_ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefgh"
     result, blocked = await sanitizer.block_credentials(content, source="telegram")
     assert blocked is True
 
@@ -85,7 +88,7 @@ async def test_telegram_blocks_github_token(sanitizer):
 @pytest.mark.asyncio
 async def test_telegram_blocks_aws_key(sanitizer):
     """Telegram should block AWS access keys."""
-    content = 'Access key: AKIAIOSFODNN7EXAMPLE'
+    content = "Access key: AKIAIOSFODNN7EXAMPLE"
     result, blocked = await sanitizer.block_credentials(content, source="telegram")
     assert blocked is True
 
@@ -93,7 +96,7 @@ async def test_telegram_blocks_aws_key(sanitizer):
 @pytest.mark.asyncio
 async def test_telegram_blocks_ssh_private_key(sanitizer):
     """Telegram should block SSH private keys."""
-    content = '-----BEGIN RSA PRIVATE KEY-----\nMIIEowIBAAKCAQEA...'
+    content = "-----BEGIN RSA PRIVATE KEY-----\nMIIEowIBAAKCAQEA..."
     result, blocked = await sanitizer.block_credentials(content, source="telegram")
     assert blocked is True
 
@@ -109,12 +112,13 @@ async def test_telegram_blocks_json_password(sanitizer):
 @pytest.mark.asyncio
 async def test_external_api_blocks_credentials(sanitizer):
     """External API source should also block."""
-    content = 'password: SuperSecret123!'
+    content = "password: SuperSecret123!"
     result, blocked = await sanitizer.block_credentials(content, source="external_api")
     assert blocked is True
 
 
 # === False positive avoidance ===
+
 
 @pytest.mark.asyncio
 async def test_normal_text_not_blocked(sanitizer):
@@ -151,10 +155,11 @@ async def test_short_password_field_not_blocked(sanitizer):
 
 # === Blocking message format ===
 
+
 @pytest.mark.asyncio
 async def test_blocked_message_contains_guidance(sanitizer):
     """Blocked responses should contain helpful guidance."""
-    content = 'password: SuperSecretPassword123!'
+    content = "password: SuperSecretPassword123!"
     result, blocked = await sanitizer.block_credentials(content, source="telegram")
     assert blocked is True
     assert "REDACTED" in result

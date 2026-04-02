@@ -3,23 +3,23 @@
 # Protected by common law trademark rights. Federal trademark registration pending.
 # Unauthorized reproduction, distribution, or use of the AgentShroud name or brand is strictly prohibited.
 """Tests for the canary verification system."""
-from __future__ import annotations
 
+from __future__ import annotations
 
 import pytest
 
+from gateway.ingest_api.config import PIIConfig
+from gateway.ingest_api.sanitizer import PIISanitizer
+from gateway.proxy.forwarder import ForwarderConfig, HTTPForwarder
+from gateway.proxy.pipeline import SecurityPipeline
 from gateway.security.canary import (
     CANARY_EMAIL,
     CANARY_MESSAGE,
     CANARY_SSN,
     run_canary,
 )
-from gateway.proxy.pipeline import SecurityPipeline
-from gateway.proxy.forwarder import ForwarderConfig, HTTPForwarder
 from gateway.security.prompt_guard import PromptGuard
 from gateway.security.trust_manager import TrustManager
-from gateway.ingest_api.sanitizer import PIISanitizer
-from gateway.ingest_api.config import PIIConfig
 
 
 @pytest.fixture
@@ -74,10 +74,7 @@ async def test_canary_verifies_pii_stripping(canary_pipeline):
     result = await run_canary(pipeline=canary_pipeline)
     assert result.checks["pii"] is True
     pii_detail = next(c for c in result.check_details if c.name == "pii")
-    assert (
-        "stripped" in pii_detail.details.lower()
-        or "redaction" in pii_detail.details.lower()
-    )
+    assert "stripped" in pii_detail.details.lower() or "redaction" in pii_detail.details.lower()
 
 
 @pytest.mark.asyncio

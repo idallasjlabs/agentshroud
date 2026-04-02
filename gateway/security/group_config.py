@@ -7,6 +7,7 @@
 Defines TeamsConfig, GroupConfig, and ProjectConfig Pydantic models.
 Provides membership queries, admin checks, and group-override persistence.
 """
+
 from __future__ import annotations
 
 import fcntl
@@ -28,6 +29,7 @@ _GROUP_OVERRIDES_FILE = _DATA_DIR / "group_overrides.json"
 # ---------------------------------------------------------------------------
 # Pydantic models
 # ---------------------------------------------------------------------------
+
 
 class ProjectConfig(BaseModel):
     """A project defines a scoped focus area for a team."""
@@ -170,6 +172,7 @@ class TeamsConfig(BaseModel):
 # TeamsConfig at startup (or immediately in the same process).
 # ---------------------------------------------------------------------------
 
+
 def _apply_persisted_overrides(teams: TeamsConfig) -> None:
     """Merge group_overrides.json additions into the in-memory TeamsConfig."""
     try:
@@ -226,9 +229,7 @@ def _save_overrides(data: dict) -> None:
         with open(lock_path, "w") as lf:
             fcntl.flock(lf, fcntl.LOCK_EX)
             try:
-                _GROUP_OVERRIDES_FILE.write_text(
-                    json.dumps(data, indent=2), encoding="utf-8"
-                )
+                _GROUP_OVERRIDES_FILE.write_text(json.dumps(data, indent=2), encoding="utf-8")
             finally:
                 fcntl.flock(lf, fcntl.LOCK_UN)
     except Exception as exc:

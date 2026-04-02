@@ -3,10 +3,11 @@
 # Protected by common law trademark rights. Federal trademark registration pending.
 # Unauthorized reproduction, distribution, or use of the AgentShroud name or brand is strictly prohibited.
 """Test Log Sanitizer - verify PII and credential scrubbing from log output."""
+
 from __future__ import annotations
 
-
 import logging
+
 from gateway.security.log_sanitizer import LogSanitizer, install_log_sanitizer
 
 
@@ -69,7 +70,9 @@ class TestLogSanitizer:
 
     def test_telegram_bot_token_in_url_redacted(self):
         # Simulate a URL path logged by the Telegram proxy containing a bot token
-        result = self._filter_msg("GET /telegram-api/bot1234567890:ABCDefghijklmnopqrstuvwxyz01234567/sendMessage")
+        result = self._filter_msg(
+            "GET /telegram-api/bot1234567890:ABCDefghijklmnopqrstuvwxyz01234567/sendMessage"
+        )
         assert "1234567890:ABCDefghijklmnopqrstuvwxyz01234567" not in result
         assert "/bot***/" in result
 

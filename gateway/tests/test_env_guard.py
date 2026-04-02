@@ -3,8 +3,8 @@
 # Protected by common law trademark rights. Federal trademark registration pending.
 # Unauthorized reproduction, distribution, or use of the AgentShroud name or brand is strictly prohibited.
 """Test Environment Leakage Guard."""
-from __future__ import annotations
 
+from __future__ import annotations
 
 from gateway.security.env_guard import check_command, scrub_output
 

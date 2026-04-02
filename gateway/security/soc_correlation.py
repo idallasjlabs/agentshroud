@@ -9,10 +9,11 @@ Builds a compact cross-signal security view by correlating:
 - Wazuh and Falco alerts
 - tool ACL denials (V9-2: per-user cross-signal correlation)
 """
+
 from __future__ import annotations
 
-from dataclasses import asdict, dataclass, field
 from collections import Counter
+from dataclasses import asdict, dataclass, field
 from datetime import datetime, timezone
 from typing import Any
 from urllib.parse import urlparse
@@ -296,7 +297,9 @@ def build_correlation_summary(app_state, limit: int = 200) -> CorrelationSummary
     # V9-2: Operator-ready summary — plain English bullets for ops runbook
     operator_summary: list[str] = []
     if severity in ("critical", "high"):
-        operator_summary.append(f"RISK {severity.upper()} (score {risk_score}/100) — immediate review recommended")
+        operator_summary.append(
+            f"RISK {severity.upper()} (score {risk_score}/100) — immediate review recommended"
+        )
     if egress_denied > 0:
         operator_summary.append(f"{egress_denied} outbound egress request(s) blocked")
     if total_tool_acl_denials > 0:
@@ -310,7 +313,9 @@ def build_correlation_summary(app_state, limit: int = 200) -> CorrelationSummary
     if falco_alerts > 0:
         operator_summary.append(f"{falco_alerts} Falco runtime alert(s)")
     if scanner_findings["critical"] > 0:
-        operator_summary.append(f"CRITICAL: {scanner_findings['critical']} scanner finding(s) — patch required")
+        operator_summary.append(
+            f"CRITICAL: {scanner_findings['critical']} scanner finding(s) — patch required"
+        )
     multi_signal_users = [e for e in correlated if e.get("type") == "multi_signal_user_threat"]
     if multi_signal_users:
         uids = ", ".join(e["user_id"] for e in multi_signal_users[:3])

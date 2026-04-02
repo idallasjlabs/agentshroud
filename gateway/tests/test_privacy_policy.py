@@ -1,18 +1,18 @@
 # Copyright © 2026 Isaiah Dallas Jefferson, Jr. AgentShroud™. All rights reserved.
 """Tests for gateway/security/privacy_policy.py — V9-T2: Privacy policy enforcement."""
+
 from __future__ import annotations
 
 import pytest
 
+from gateway.security.group_config import TeamsConfig
 from gateway.security.privacy_policy import (
     PrivacyPolicy,
     PrivacyPolicyEnforcer,
-    ServicePrivacy,
     ServicePolicy,
+    ServicePrivacy,
 )
 from gateway.security.rbac_config import RBACConfig, Role
-from gateway.security.group_config import TeamsConfig
-
 
 # ---------------------------------------------------------------------------
 # Fixtures
@@ -62,6 +62,7 @@ def enforcer(rbac, default_policy):
 # PrivacyPolicy.from_dict
 # ---------------------------------------------------------------------------
 
+
 class TestPrivacyPolicyParsing:
     def test_default_policy_marks_gmail_private(self, default_policy):
         svc = default_policy.services.get("gmail")
@@ -69,40 +70,43 @@ class TestPrivacyPolicyParsing:
         assert svc.privacy == ServicePrivacy.PRIVATE
 
     def test_from_dict_overrides_existing(self):
-        policy = PrivacyPolicy.from_dict({
-            "services": {
-                "gmail": {"privacy": "shared"},
+        policy = PrivacyPolicy.from_dict(
+            {
+                "services": {
+                    "gmail": {"privacy": "shared"},
+                }
             }
-        })
+        )
         assert policy.services["gmail"].privacy == ServicePrivacy.SHARED
 
     def test_from_dict_adds_new_service(self):
-        policy = PrivacyPolicy.from_dict({
-            "services": {
-                "jira": {"privacy": "shared"},
-                "private_db": {"privacy": "group_only", "allowed_groups": ["ops"]},
+        policy = PrivacyPolicy.from_dict(
+            {
+                "services": {
+                    "jira": {"privacy": "shared"},
+                    "private_db": {"privacy": "group_only", "allowed_groups": ["ops"]},
+                }
             }
-        })
+        )
         assert policy.services["jira"].privacy == ServicePrivacy.SHARED
         assert policy.services["private_db"].privacy == ServicePrivacy.GROUP_ONLY
         assert policy.services["private_db"].allowed_groups == ["ops"]
 
     def test_from_dict_unknown_privacy_defaults_to_private(self):
-        policy = PrivacyPolicy.from_dict({
-            "services": {"weird_svc": {"privacy": "undefined_value"}}
-        })
+        policy = PrivacyPolicy.from_dict(
+            {"services": {"weird_svc": {"privacy": "undefined_value"}}}
+        )
         assert policy.services["weird_svc"].privacy == ServicePrivacy.PRIVATE
 
     def test_extra_redact_patterns_loaded(self):
-        policy = PrivacyPolicy.from_dict({
-            "extra_redact_patterns": [r"\bSECRET-\w+\b"]
-        })
+        policy = PrivacyPolicy.from_dict({"extra_redact_patterns": [r"\bSECRET-\w+\b"]})
         assert len(policy.extra_redact_patterns) == 1
 
 
 # ---------------------------------------------------------------------------
 # Service access control — is_service_allowed
 # ---------------------------------------------------------------------------
+
 
 class TestServiceAccessControl:
     def test_owner_can_access_private_service(self, enforcer):
@@ -115,29 +119,23 @@ class TestServiceAccessControl:
         assert not enforcer.is_service_allowed(ADMIN_ID, "gmail")
 
     def test_collaborator_allowed_shared_service(self):
-        policy = PrivacyPolicy.from_dict({
-            "services": {"jira": {"privacy": "shared"}}
-        })
+        policy = PrivacyPolicy.from_dict({"services": {"jira": {"privacy": "shared"}}})
         rbac = _make_rbac()
         enforcer = PrivacyPolicyEnforcer(policy=policy, rbac_config=rbac)
         assert enforcer.is_service_allowed(COLLAB_ID, "jira")
 
     def test_group_member_allowed_group_only_service(self):
-        policy = PrivacyPolicy.from_dict({
-            "services": {
-                "monitoring_ops": {"privacy": "group_only", "allowed_groups": ["ops"]}
-            }
-        })
+        policy = PrivacyPolicy.from_dict(
+            {"services": {"monitoring_ops": {"privacy": "group_only", "allowed_groups": ["ops"]}}}
+        )
         rbac = _make_rbac()
         enforcer = PrivacyPolicyEnforcer(policy=policy, rbac_config=rbac)
         assert enforcer.is_service_allowed(GROUP_MEMBER_ID, "monitoring_ops")
 
     def test_non_group_member_blocked_from_group_only_service(self):
-        policy = PrivacyPolicy.from_dict({
-            "services": {
-                "monitoring_ops": {"privacy": "group_only", "allowed_groups": ["ops"]}
-            }
-        })
+        policy = PrivacyPolicy.from_dict(
+            {"services": {"monitoring_ops": {"privacy": "group_only", "allowed_groups": ["ops"]}}}
+        )
         rbac = _make_rbac()
         enforcer = PrivacyPolicyEnforcer(policy=policy, rbac_config=rbac)
         assert not enforcer.is_service_allowed(COLLAB_ID, "monitoring_ops")
@@ -150,6 +148,7 @@ class TestServiceAccessControl:
 # ---------------------------------------------------------------------------
 # Audit / alert flags
 # ---------------------------------------------------------------------------
+
 
 class TestAuditAndAlert:
     def test_should_audit_private_service(self, enforcer):
@@ -173,6 +172,7 @@ class TestAuditAndAlert:
 # ---------------------------------------------------------------------------
 # Response filtering
 # ---------------------------------------------------------------------------
+
 
 class TestResponseFiltering:
     def test_owner_response_not_filtered(self, enforcer):
@@ -202,9 +202,7 @@ class TestResponseFiltering:
         assert filtered == raw
 
     def test_extra_pattern_redacted(self, rbac):
-        policy = PrivacyPolicy.from_dict({
-            "extra_redact_patterns": [r"\bCONFIDENTIAL-\w+\b"]
-        })
+        policy = PrivacyPolicy.from_dict({"extra_redact_patterns": [r"\bCONFIDENTIAL-\w+\b"]})
         enforcer = PrivacyPolicyEnforcer(policy=policy, rbac_config=rbac)
         raw = "Project code: CONFIDENTIAL-X99 is approved."
         filtered, was_modified = enforcer.filter_response(raw, COLLAB_ID)
@@ -212,9 +210,9 @@ class TestResponseFiltering:
         assert "CONFIDENTIAL-X99" not in filtered
 
     def test_invalid_extra_pattern_does_not_crash(self, rbac):
-        policy = PrivacyPolicy.from_dict({
-            "extra_redact_patterns": [r"[invalid(pattern"]  # malformed regex
-        })
+        policy = PrivacyPolicy.from_dict(
+            {"extra_redact_patterns": [r"[invalid(pattern"]}  # malformed regex
+        )
         enforcer = PrivacyPolicyEnforcer(policy=policy, rbac_config=rbac)
         raw = "Some safe response"
         filtered, _ = enforcer.filter_response(raw, COLLAB_ID)

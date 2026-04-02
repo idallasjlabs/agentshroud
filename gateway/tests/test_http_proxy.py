@@ -3,18 +3,22 @@
 # Protected by common law trademark rights. Federal trademark registration pending.
 # Unauthorized reproduction, distribution, or use of the AgentShroud name or brand is strictly prohibited.
 """Tests for HTTPConnectProxy — CONNECT tunnel server on port 8181."""
+
 from __future__ import annotations
 
-
 import asyncio
-import pytest
 from types import SimpleNamespace
 
-from gateway.proxy.http_proxy import HTTPConnectProxy, ALLOWED_DOMAINS, SYSTEM_BYPASS_DOMAINS
+import pytest
+
+from gateway.proxy.http_proxy import (
+    ALLOWED_DOMAINS,
+    SYSTEM_BYPASS_DOMAINS,
+    HTTPConnectProxy,
+)
 from gateway.proxy.web_config import WebProxyConfig
 from gateway.proxy.web_proxy import WebProxy
 from gateway.security.egress_filter import EgressAction
-
 
 # ============================================================
 # Default config
@@ -283,11 +287,15 @@ async def test_connect_unknown_domain_can_be_allowed_by_interactive_egress(monke
 def test_telegram_api_blocked_in_connect_proxy():
     """CONNECT tunnel must NOT allow api.telegram.org — forces traffic through reverse proxy for RBAC."""
     from gateway.proxy.http_proxy import ALLOWED_DOMAINS
-    assert "api.telegram.org" not in ALLOWED_DOMAINS, "api.telegram.org must not be in CONNECT allowlist"
+
+    assert (
+        "api.telegram.org" not in ALLOWED_DOMAINS
+    ), "api.telegram.org must not be in CONNECT allowlist"
 
     # Also verify via WebProxy check
     from gateway.proxy.web_config import WebProxyConfig
     from gateway.proxy.web_proxy import WebProxy
+
     config = WebProxyConfig(mode="allowlist", allowed_domains=ALLOWED_DOMAINS)
     proxy = WebProxy(config=config)
     result = proxy.check_request("https://api.telegram.org/bot123/sendMessage")
@@ -302,5 +310,6 @@ def test_telegram_is_force_blocked_not_bypass():
     in http_proxy.py.
     """
     from gateway.proxy.http_proxy import CONNECT_FORCE_BLOCK_DOMAINS
+
     assert "api.telegram.org" not in SYSTEM_BYPASS_DOMAINS
     assert "api.telegram.org" in CONNECT_FORCE_BLOCK_DOMAINS

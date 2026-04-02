@@ -11,6 +11,7 @@ Each user gets an isolated workspace, memory file, and conversation history.
 References:
     - docs/redteam/03-session-isolation.md - Security requirements
 """
+
 from __future__ import annotations
 
 import json
@@ -19,14 +20,15 @@ import os
 from dataclasses import dataclass, field
 from datetime import datetime, timezone
 from pathlib import Path
-from typing import Dict, List, Optional, Any
+from typing import Any, Dict, List, Optional
 
 logger = logging.getLogger(__name__)
 
 
-@dataclass 
+@dataclass
 class ConversationMessage:
     """A single message in a conversation."""
+
     role: str  # "user" or "assistant"
     content: str
     timestamp: str
@@ -36,6 +38,7 @@ class ConversationMessage:
 @dataclass
 class UserSession:
     """Represents an isolated session for a user."""
+
     user_id: str
     workspace_dir: Path
     memory_file: Path
@@ -56,14 +59,14 @@ class UserSession:
                     "role": msg.role,
                     "content": msg.content,
                     "timestamp": msg.timestamp,
-                    "metadata": msg.metadata
+                    "metadata": msg.metadata,
                 }
                 for msg in self.conversation_history
             ],
             "trust_level": self.trust_level,
             "created_at": self.created_at,
             "last_active": self.last_active,
-            "metadata": self.metadata
+            "metadata": self.metadata,
         }
 
     @classmethod
@@ -74,11 +77,11 @@ class UserSession:
                 role=msg["role"],
                 content=msg["content"],
                 timestamp=msg["timestamp"],
-                metadata=msg.get("metadata", {})
+                metadata=msg.get("metadata", {}),
             )
             for msg in data.get("conversation_history", [])
         ]
-        
+
         return cls(
             user_id=data["user_id"],
             workspace_dir=Path(data["workspace_dir"]),
@@ -87,13 +90,14 @@ class UserSession:
             trust_level=data.get("trust_level", "UNTRUSTED"),
             created_at=data.get("created_at"),
             last_active=data.get("last_active"),
-            metadata=data.get("metadata", {})
+            metadata=data.get("metadata", {}),
         )
 
 
 @dataclass
 class GroupSession:
     """Represents a shared workspace + memory for a group."""
+
     group_id: str
     workspace_dir: Path
     memory_file: Path
@@ -103,10 +107,10 @@ class GroupSession:
 
 class UserSessionManager:
     """Manages per-user session isolation."""
-    
+
     def __init__(self, base_workspace: Path, owner_user_id: Optional[str] = None):
         """Initialize session manager.
-        
+
         Args:
             base_workspace: Base directory for user workspaces
             owner_user_id: User ID of the owner/admin who can view all sessions
@@ -115,12 +119,12 @@ class UserSessionManager:
         self.owner_user_id = owner_user_id
         self.sessions: Dict[str, UserSession] = {}
         self.session_metadata_file = self.base_workspace / "session_registry.json"
-        
+
         # Ensure base directories exist
         self.base_workspace.mkdir(parents=True, exist_ok=True)
         (self.base_workspace / "users").mkdir(exist_ok=True)
         (self.base_workspace / "shared").mkdir(exist_ok=True)
-        
+
         # Load existing sessions
         self._load_sessions()
 
@@ -130,10 +134,10 @@ class UserSessionManager:
             try:
                 with open(self.session_metadata_file, "r") as f:
                     sessions_data = json.load(f)
-                    
+
                 for user_id, session_data in sessions_data.items():
                     self.sessions[user_id] = UserSession.from_dict(session_data)
-                    
+
                 logger.info(f"Loaded {len(self.sessions)} user sessions")
             except Exception as e:
                 logger.error(f"Failed to load sessions: {e}")
@@ -142,25 +146,25 @@ class UserSessionManager:
         """Save current sessions to metadata file."""
         try:
             sessions_data = {
-                user_id: session.to_dict() 
-                for user_id, session in self.sessions.items()
+                user_id: session.to_dict() for user_id, session in self.sessions.items()
             }
-            
+
             with open(self.session_metadata_file, "w") as f:
                 json.dump(sessions_data, f, indent=2)
-                
+
         except Exception as e:
             logger.error(f"Failed to save sessions: {e}")
 
     @staticmethod
     def _validate_user_id(user_id: str) -> str:
         """Validate and sanitize user_id to prevent path traversal.
-        
+
         Only allows alphanumeric characters, underscores, and hyphens.
         Raises ValueError for invalid user IDs.
         """
         import re
-        if not user_id or not re.match(r'^[a-zA-Z0-9_-]+$', user_id):
+
+        if not user_id or not re.match(r"^[a-zA-Z0-9_-]+$", user_id):
             raise ValueError(f"Invalid user_id: must be alphanumeric, got {user_id!r}")
         if len(user_id) > 64:
             raise ValueError(f"Invalid user_id: too long ({len(user_id)} chars)")
@@ -177,15 +181,15 @@ class UserSessionManager:
             if not str(resolved).startswith(str(base_resolved)):
                 raise ValueError(f"Path traversal detected for user_id: {user_id!r}")
             session_dir.mkdir(parents=True, exist_ok=True)
-            
+
             workspace_dir = session_dir / "workspace"
             memory_file = session_dir / "MEMORY.md"
             logs_dir = session_dir / "logs"
-            
+
             # Create directories
             workspace_dir.mkdir(exist_ok=True)
             logs_dir.mkdir(exist_ok=True)
-            
+
             # Create initial memory file
             if not memory_file.exists():
                 memory_content = f"""# Session Memory for User {user_id}
@@ -202,7 +206,7 @@ This is your personal memory space. Information stored here is private to your s
 
 """
                 memory_file.write_text(memory_content)
-            
+
             # Create session object
             session = UserSession(
                 user_id=user_id,
@@ -211,47 +215,43 @@ This is your personal memory space. Information stored here is private to your s
                 trust_level="UNTRUSTED",
                 created_at=datetime.now(timezone.utc).isoformat(),
             )
-            
+
             self.sessions[user_id] = session
             self._save_sessions()
-            
+
             logger.info(f"Created new session for user {user_id}")
-            
+
         # Update last active timestamp
         session = self.sessions[user_id]
         session.last_active = datetime.now(timezone.utc).isoformat()
-        
+
         return session
 
     def add_conversation_message(
-        self, 
-        user_id: str, 
-        role: str, 
-        content: str, 
-        metadata: Optional[Dict[str, Any]] = None
+        self, user_id: str, role: str, content: str, metadata: Optional[Dict[str, Any]] = None
     ):
         """Add a message to the user's conversation history."""
         session = self.get_or_create_session(user_id)
-        
+
         message = ConversationMessage(
             role=role,
             content=content,
             timestamp=datetime.now(timezone.utc).isoformat(),
-            metadata=metadata or {}
+            metadata=metadata or {},
         )
-        
+
         session.conversation_history.append(message)
-        
+
         # Limit conversation history size (keep last 1000 messages)
         if len(session.conversation_history) > 1000:
             session.conversation_history = session.conversation_history[-1000:]
-        
+
         self._save_sessions()
 
     def get_session_context(self, user_id: str) -> Dict[str, Any]:
         """Get session context for injection into agent request."""
         session = self.get_or_create_session(user_id)
-        
+
         # Read current memory content
         memory_content = ""
         if session.memory_file.exists():
@@ -259,7 +259,7 @@ This is your personal memory space. Information stored here is private to your s
                 memory_content = session.memory_file.read_text()
             except Exception as e:
                 logger.error(f"Failed to read memory file for user {user_id}: {e}")
-        
+
         return {
             "user_id": user_id,
             "workspace_path": str(session.workspace_dir),
@@ -269,13 +269,13 @@ This is your personal memory space. Information stored here is private to your s
             "conversation_history": [
                 {"role": msg.role, "content": msg.content, "timestamp": msg.timestamp}
                 for msg in session.conversation_history[-10:]  # Last 10 messages for context
-            ]
+            ],
         }
 
     def get_session_prompt_addition(self, user_id: str) -> str:
         """Get session-specific prompt addition for the agent."""
         session = self.get_or_create_session(user_id)
-        
+
         return f"""
 SESSION CONTEXT:
 You are currently in an isolated session with user {user_id}.
@@ -299,7 +299,7 @@ USER SESSION TRUST LEVEL: {session.trust_level}
         # Owner/admin can access all sessions
         if self.owner_user_id and requesting_user_id == self.owner_user_id:
             return True
-        
+
         # Users can only access their own sessions
         return requesting_user_id == target_user_id
 
@@ -327,8 +327,9 @@ USER SESSION TRUST LEVEL: {session.trust_level}
     def cleanup_old_sessions(self, days_inactive: int = 90):
         """Clean up sessions that haven't been active for the specified number of days."""
         import time
+
         cutoff_timestamp = time.time() - (days_inactive * 24 * 60 * 60)
-        
+
         sessions_to_remove = []
         for user_id, session in self.sessions.items():
             if session.last_active:
@@ -338,11 +339,11 @@ USER SESSION TRUST LEVEL: {session.trust_level}
                         sessions_to_remove.append(user_id)
                 except Exception as e:
                     logger.error(f"Error parsing last_active for user {user_id}: {e}")
-        
+
         for user_id in sessions_to_remove:
             logger.info(f"Cleaning up inactive session for user {user_id}")
             del self.sessions[user_id]
-            
+
         if sessions_to_remove:
             self._save_sessions()
 
@@ -410,9 +411,15 @@ USER SESSION TRUST LEVEL: {session.trust_level}
             logger.warning("Could not read user memory for %s: %s", user_id, exc)
 
         # Group memories — only groups this user belongs to
-        if rbac_config is not None and hasattr(rbac_config, "teams_config") and rbac_config.teams_config:
+        if (
+            rbac_config is not None
+            and hasattr(rbac_config, "teams_config")
+            and rbac_config.teams_config
+        ):
             for group_id, group in rbac_config.teams_config.groups.items():
-                if user_id in group.members or user_id == getattr(rbac_config, "owner_user_id", None):
+                if user_id in group.members or user_id == getattr(
+                    rbac_config, "owner_user_id", None
+                ):
                     try:
                         gs = self.get_or_create_group_session(group_id)
                         if gs.memory_file.exists():

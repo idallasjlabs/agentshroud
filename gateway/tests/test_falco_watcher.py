@@ -9,6 +9,7 @@ Covers:
   - Missing alert directory → no-op (graceful degradation)
   - Alert watcher stops when stop() is called
 """
+
 from __future__ import annotations
 
 import asyncio
@@ -43,20 +44,26 @@ async def test_critical_alert_triggers_lockdown():
     with tempfile.TemporaryDirectory() as tmpdir:
         alert_dir = Path(tmpdir)
         alert_file = alert_dir / "falco_alerts.json"
-        alert_file.write_text(json.dumps(_make_alert("Container Shell Spawn", "Critical", "agentshroud-bot")) + "\n")
+        alert_file.write_text(
+            json.dumps(_make_alert("Container Shell Spawn", "Critical", "agentshroud-bot")) + "\n"
+        )
 
         lockdown = MagicMock()
         lockdown.record_block = MagicMock()
         audit_store = MagicMock()
         audit_store.log_event = AsyncMock()
 
-        watcher = FalcoAlertWatcher(alert_dir=alert_dir, progressive_lockdown=lockdown, audit_store=audit_store)
+        watcher = FalcoAlertWatcher(
+            alert_dir=alert_dir, progressive_lockdown=lockdown, audit_store=audit_store
+        )
         await watcher._process_new_alerts()
 
         lockdown.record_block.assert_called_once()
         call_args = lockdown.record_block.call_args
         assert call_args[0][0] == "agentshroud-bot"
-        assert "Container Shell Spawn" in call_args[1].get("reason", call_args[0][1] if len(call_args[0]) > 1 else "")
+        assert "Container Shell Spawn" in call_args[1].get(
+            "reason", call_args[0][1] if len(call_args[0]) > 1 else ""
+        )
         audit_store.log_event.assert_awaited_once()
 
 
@@ -65,7 +72,9 @@ async def test_warning_alert_not_blocked():
     with tempfile.TemporaryDirectory() as tmpdir:
         alert_dir = Path(tmpdir)
         alert_file = alert_dir / "falco_alerts.json"
-        alert_file.write_text(json.dumps(_make_alert("Unexpected Network Connection", "Warning")) + "\n")
+        alert_file.write_text(
+            json.dumps(_make_alert("Unexpected Network Connection", "Warning")) + "\n"
+        )
 
         lockdown = MagicMock()
         lockdown.record_block = MagicMock()
@@ -110,7 +119,9 @@ async def test_multiple_critical_alerts():
             _make_alert("Container Shell Spawn", "Critical", "agentshroud-bot"),
             _make_alert("Secret File Access", "Emergency", "agentshroud-gateway"),
         ]
-        (alert_dir / "falco_alerts.json").write_text("\n".join(json.dumps(a) for a in alerts) + "\n")
+        (alert_dir / "falco_alerts.json").write_text(
+            "\n".join(json.dumps(a) for a in alerts) + "\n"
+        )
 
         lockdown = MagicMock()
         lockdown.record_block = MagicMock()

@@ -13,11 +13,11 @@ from .mcp_config import (
     PermissionLevel,
 )
 from .mcp_inspector import (
-    MCPInspector,
-    InspectionResult,
-    InspectionFinding,
-    ThreatLevel,
     FindingType,
+    InspectionFinding,
+    InspectionResult,
+    MCPInspector,
+    ThreatLevel,
 )
 from .mcp_permissions import MCPPermissionManager, PermissionCheck
 from .mcp_proxy import MCPProxy, MCPToolCall, MCPToolResult, ProxyResult

@@ -8,6 +8,7 @@ Supports three auth methods for the /soc/v1/ API:
 
 RBAC is enforced via check_permission() on every SCL handler.
 """
+
 from __future__ import annotations
 
 import hashlib
@@ -20,7 +21,7 @@ from typing import Optional
 
 from fastapi import Cookie, Depends, Header, HTTPException, Request, status
 
-from ..security.rbac import Action, Resource, RBACManager
+from ..security.rbac import Action, RBACManager, Resource
 from ..security.rbac_config import RBACConfig, Role
 
 logger = logging.getLogger("agentshroud.soc.auth")
@@ -85,9 +86,7 @@ def _get_config_token() -> str:
 def issue_session_token(cfg_token: str, owner_id: str) -> str:
     """Derive an HMAC session token and register it in the session store."""
     ts = int(time.time())
-    token = hmac.new(
-        cfg_token.encode(), f"{owner_id}:{ts}".encode(), "sha256"
-    ).hexdigest()
+    token = hmac.new(cfg_token.encode(), f"{owner_id}:{ts}".encode(), "sha256").hexdigest()
     _session_tokens[token] = (owner_id, float(ts))
     # Prune expired session tokens
     cutoff = time.time() - _SESSION_TTL
@@ -136,6 +135,7 @@ def redeem_ws_token(token: str) -> Optional[str]:
 # FastAPI dependency: resolve caller identity + enforce RBAC
 # ---------------------------------------------------------------------------
 
+
 class SCLCaller:
     """Resolved identity of the SCL caller, including role and user_id."""
 
@@ -150,7 +150,11 @@ class SCLCaller:
         if not result.allowed:
             raise HTTPException(
                 status_code=status.HTTP_403_FORBIDDEN,
-                detail={"error": True, "code": "PERMISSION_DENIED", "message": result.reason or "Forbidden"},
+                detail={
+                    "error": True,
+                    "code": "PERMISSION_DENIED",
+                    "message": result.reason or "Forbidden",
+                },
             )
 
     def is_owner(self) -> bool:

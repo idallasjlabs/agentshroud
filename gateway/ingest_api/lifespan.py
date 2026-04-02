@@ -1,47 +1,48 @@
 # Copyright © 2026 Isaiah Dallas Jefferson, Jr. AgentShroud™. All rights reserved.
 """Application lifespan management for the AgentShroud Gateway"""
 
+import asyncio
 import json
 import logging
-import asyncio
-import time
 import os
 import subprocess
-import urllib.request
 import threading
+import time
+import urllib.request
 from contextlib import asynccontextmanager
 from pathlib import Path
 from typing import TYPE_CHECKING
 
 from fastapi import FastAPI
 
-from .config import load_config, get_module_mode, check_monitor_mode_warnings
-from ..security.agent_isolation import AgentRegistry, ContainerConfig, IsolationVerifier
-from ..utils.secrets import read_secret as _read_secret
-from .state import app_state
-from .sanitizer import PIISanitizer
-from .ledger import DataLedger
-from .router import MultiAgentRouter
-from ..approval_queue.enhanced_queue import EnhancedApprovalQueue
-from ..security.prompt_guard import PromptGuard
-from ..security.trust_manager import TrustManager, TrustLevel
-from ..security.egress_filter import EgressFilter
-from ..security.outbound_filter import OutboundInfoFilter
-from .middleware import MiddlewareManager
-from .event_bus import EventBus
-from ..proxy.pipeline import SecurityPipeline
 from gateway.security.session_manager import UserSessionManager
-from ..proxy.mcp_proxy import MCPProxy
+
+from ..approval_queue.enhanced_queue import EnhancedApprovalQueue
+from ..proxy.dns_blocklist import DNSBlocklist
+from ..proxy.dns_forwarder import start_dns_forwarder
+from ..proxy.http_proxy import ALLOWED_DOMAINS, HTTPConnectProxy
 from ..proxy.mcp_config import MCPProxyConfig
+from ..proxy.mcp_proxy import MCPProxy
+from ..proxy.pipeline import SecurityPipeline
 from ..proxy.web_config import WebProxyConfig
 from ..proxy.web_proxy import WebProxy
-from ..proxy.http_proxy import ALLOWED_DOMAINS, HTTPConnectProxy
+from ..security.agent_isolation import AgentRegistry, ContainerConfig, IsolationVerifier
 from ..security.egress_config import PERMANENT_EGRESS_DOMAINS
-from ..proxy.dns_forwarder import start_dns_forwarder
-from ..proxy.dns_blocklist import DNSBlocklist
-from ..ssh_proxy.proxy import SSHProxy
+from ..security.egress_filter import EgressFilter
 from ..security.killswitch_monitor import KillSwitchMonitor
+from ..security.outbound_filter import OutboundInfoFilter
+from ..security.prompt_guard import PromptGuard
+from ..security.trust_manager import TrustLevel, TrustManager
+from ..ssh_proxy.proxy import SSHProxy
+from ..utils.secrets import read_secret as _read_secret
 from ..web.dashboard_endpoints import install_log_handler
+from .config import check_monitor_mode_warnings, get_module_mode, load_config
+from .event_bus import EventBus
+from .ledger import DataLedger
+from .middleware import MiddlewareManager
+from .router import MultiAgentRouter
+from .sanitizer import PIISanitizer
+from .state import app_state
 
 if TYPE_CHECKING:
     pass
@@ -84,15 +85,15 @@ async def lifespan(app: FastAPI):
     # use email + master password + secret key instead.
     _OP_SECRETS = "/run/secrets"
     _op_email_file = os.path.join(_OP_SECRETS, "1password_bot_email")
-    _op_pass_file  = os.path.join(_OP_SECRETS, "1password_bot_master_password")
-    _op_key_file   = os.path.join(_OP_SECRETS, "1password_bot_secret_key")
+    _op_pass_file = os.path.join(_OP_SECRETS, "1password_bot_master_password")
+    _op_key_file = os.path.join(_OP_SECRETS, "1password_bot_secret_key")
 
     def _op_authenticate() -> "str | None":
         """Sign in to 1Password with personal credentials; return session token or None."""
         try:
-            email    = Path(_op_email_file).read_text().strip()
+            email = Path(_op_email_file).read_text().strip()
             password = Path(_op_pass_file).read_text().strip()
-            key      = Path(_op_key_file).read_text().strip() if Path(_op_key_file).exists() else ""
+            key = Path(_op_key_file).read_text().strip() if Path(_op_key_file).exists() else ""
         except OSError as e:
             logger.warning(f"1Password credentials not found: {e}")
             return None
@@ -102,12 +103,23 @@ async def lifespan(app: FastAPI):
         # Tier 1: op account add --signin --raw (first boot / account not yet registered)
         if key:
             r = subprocess.run(
-                ["op", "account", "add",
-                 "--address", "my.1password.com",
-                 "--email", email,
-                 "--secret-key", key,
-                 "--signin", "--raw"],
-                input=password, capture_output=True, text=True, timeout=30,
+                [
+                    "op",
+                    "account",
+                    "add",
+                    "--address",
+                    "my.1password.com",
+                    "--email",
+                    email,
+                    "--secret-key",
+                    key,
+                    "--signin",
+                    "--raw",
+                ],
+                input=password,
+                capture_output=True,
+                text=True,
+                timeout=30,
             )
             if r.returncode == 0 and r.stdout.strip():
                 return r.stdout.strip()
@@ -115,7 +127,10 @@ async def lifespan(app: FastAPI):
         # Tier 2: op signin --raw (account already registered on this host)
         r = subprocess.run(
             ["op", "signin", "--raw"],
-            input=password, capture_output=True, text=True, timeout=30,
+            input=password,
+            capture_output=True,
+            text=True,
+            timeout=30,
         )
         if r.returncode == 0 and r.stdout.strip():
             return r.stdout.strip()
@@ -124,6 +139,7 @@ async def lifespan(app: FastAPI):
         return None
 
     if Path(_op_email_file).exists() and Path(_op_email_file).stat().st_size > 0:
+
         def _prewarm_op():
             session = _op_authenticate()
             if session:
@@ -153,7 +169,9 @@ async def lifespan(app: FastAPI):
     try:
         sanitizer_mode = get_module_mode(app_state.config, "pii_sanitizer")
         sanitizer_action = app_state.config.security.pii_sanitizer.action or "redact"
-        app_state.sanitizer = PIISanitizer(app_state.config.pii, mode=sanitizer_mode, action=sanitizer_action)
+        app_state.sanitizer = PIISanitizer(
+            app_state.config.pii, mode=sanitizer_mode, action=sanitizer_action
+        )
         logger.info(
             f"PII sanitizer initialized (mode: {app_state.sanitizer.get_mode()}, action: {sanitizer_action})"
         )
@@ -207,9 +225,11 @@ async def lifespan(app: FastAPI):
 
     # Initialize approval queue
     try:
-        from ..security.rbac_config import RBACConfig
-        from ..approval_queue.store import ApprovalStore
         import tempfile
+
+        from ..approval_queue.store import ApprovalStore
+        from ..security.rbac_config import RBACConfig
+
         _data_dir = os.environ.get("AGENTSHROUD_DATA_DIR", tempfile.gettempdir())
         _approval_db = os.path.join(_data_dir, "agentshroud_approvals.db")
         store = ApprovalStore(_approval_db)
@@ -223,7 +243,9 @@ async def lifespan(app: FastAPI):
             admin_chat_id=_rbac_owner_id,
         )
         await app_state.approval_queue.initialize()
-        logger.info(f"Enhanced approval queue initialized (enforce_mode={app_state.config.tool_risk.enforce_mode})")
+        logger.info(
+            f"Enhanced approval queue initialized (enforce_mode={app_state.config.tool_risk.enforce_mode})"
+        )
     except Exception as e:
         logger.critical(f"Failed to initialize approval queue: {e}")
         raise
@@ -234,7 +256,9 @@ async def lifespan(app: FastAPI):
         # Set thresholds based on mode - in monitor mode, set very high threshold so nothing blocks
         block_threshold = 999.0 if prompt_guard_mode == "monitor" else 0.8
         warn_threshold = 999.0 if prompt_guard_mode == "monitor" else 0.4
-        app_state.prompt_guard = PromptGuard(block_threshold=block_threshold, warn_threshold=warn_threshold)
+        app_state.prompt_guard = PromptGuard(
+            block_threshold=block_threshold, warn_threshold=warn_threshold
+        )
         logger.info("PromptGuard initialized")
     except Exception as e:
         logger.critical(f"Failed to initialize PromptGuard: {e}")
@@ -242,6 +266,7 @@ async def lifespan(app: FastAPI):
 
     try:
         from ..security.heuristic_classifier import HeuristicClassifier
+
         app_state.heuristic_classifier = HeuristicClassifier()
         logger.info("HeuristicClassifier initialized")
     except Exception as e:
@@ -254,7 +279,7 @@ async def lifespan(app: FastAPI):
         # Elevate default agent to STANDARD so internal API calls work
         app_state.trust_manager._conn.execute(
             "UPDATE trust_scores SET score = 200, level = ? WHERE agent_id = ?",
-            (int(TrustLevel.STANDARD), "default")
+            (int(TrustLevel.STANDARD), "default"),
         )
         app_state.trust_manager._conn.commit()
         logger.info("TrustManager initialized")
@@ -266,13 +291,17 @@ async def lifespan(app: FastAPI):
         egress_mode = get_module_mode(app_state.config, "egress_filter")
         # Create default policy with required domains for AgentShroud operation
         from ..security.egress_filter import EgressPolicy
+
         default_policy = EgressPolicy(
             allowed_domains=list(PERMANENT_EGRESS_DOMAINS) + app_state.config.proxy_allowed_domains,
-            deny_all=(egress_mode == "enforce")
+            deny_all=(egress_mode == "enforce"),
         )
         app_state.egress_filter = EgressFilter(default_policy=default_policy)
-        logger.info(f"EgressFilter initialized (mode: {egress_mode}, deny_all: {default_policy.deny_all})")
+        logger.info(
+            f"EgressFilter initialized (mode: {egress_mode}, deny_all: {default_policy.deny_all})"
+        )
         from ..security.egress_approval import EgressApprovalQueue
+
         app_state.egress_approval_queue = EgressApprovalQueue(
             default_timeout=int(os.environ.get("AGENTSHROUD_EGRESS_TIMEOUT", "30"))
         )
@@ -301,7 +330,8 @@ async def lifespan(app: FastAPI):
                 app_state.egress_filter.set_agent_policy(bot_id, bot_policy)
                 logger.info(
                     "EgressFilter: bot '%s' policy set (%d extra domains)",
-                    bot_id, len(bot.egress_domains),
+                    bot_id,
+                    len(bot.egress_domains),
                 )
 
         # HTTP CONNECT proxy needs port 22 allowed for SSH relay targets.
@@ -328,7 +358,10 @@ async def lifespan(app: FastAPI):
     # Wire EgressTelegramNotifier into EgressFilter
     try:
         from ..proxy.telegram_egress_notify import EgressTelegramNotifier
-        _tg_token_egress = os.environ.get("TELEGRAM_BOT_TOKEN", "") or _read_secret("telegram_bot_token")
+
+        _tg_token_egress = os.environ.get("TELEGRAM_BOT_TOKEN", "") or _read_secret(
+            "telegram_bot_token"
+        )
         if _tg_token_egress:
             app_state.egress_notifier = EgressTelegramNotifier(
                 bot_token=_tg_token_egress,
@@ -373,11 +406,14 @@ async def lifespan(app: FastAPI):
     except Exception as e:
         logger.warning(f"Failed to wire log sanitizer: {e}")
 
-
     # Initialize outbound information filter
     try:
-        app_state.outbound_filter = OutboundInfoFilter(getattr(app_state.config, "outbound_filter", None))
-        logger.info(f"Outbound information filter initialized (mode: {app_state.outbound_filter.mode})")
+        app_state.outbound_filter = OutboundInfoFilter(
+            getattr(app_state.config, "outbound_filter", None)
+        )
+        logger.info(
+            f"Outbound information filter initialized (mode: {app_state.outbound_filter.mode})"
+        )
     except Exception as e:
         logger.critical(f"Failed to initialize outbound information filter: {e}")
         raise
@@ -385,10 +421,12 @@ async def lifespan(app: FastAPI):
     # Initialize PromptProtection — prevents system prompt / architecture disclosure
     try:
         from ..security.prompt_protection import PromptProtection
+
         app_state.prompt_protection = PromptProtection()
         # Filter out the product name — "agentshroud" is public branding, not infrastructure
         _bot_hostnames = [
-            b.hostname for b in app_state.config.bots.values()
+            b.hostname
+            for b in app_state.config.bots.values()
             if b.hostname and b.hostname.lower() != "agentshroud"
         ]
         if _bot_hostnames:
@@ -401,9 +439,8 @@ async def lifespan(app: FastAPI):
     # Initialize AuditStore (prerequisite for Pipeline, EgressFilter, AuditExporter)
     try:
         from ..security.audit_store import AuditStore
-        _audit_db = os.path.join(
-            os.environ.get("AGENTSHROUD_DATA_DIR", "/app/data"), "audit.db"
-        )
+
+        _audit_db = os.path.join(os.environ.get("AGENTSHROUD_DATA_DIR", "/app/data"), "audit.db")
         app_state.audit_store = AuditStore(db_path=_audit_db)
         await app_state.audit_store.initialize()
         logger.info("AuditStore initialized (%s)", _audit_db)
@@ -427,6 +464,7 @@ async def lifespan(app: FastAPI):
     try:
         from ..security.canary_tripwire import CanaryTripwire
         from ..security.encoding_detector import EncodingDetector
+
         _canary_tripwire = CanaryTripwire()
         _encoding_detector = EncodingDetector()
     except Exception as e:
@@ -437,6 +475,7 @@ async def lifespan(app: FastAPI):
     # Initialize v1.0.0 prompt-injection hardening guards (C21, C25, C46)
     try:
         from ..security.context_integrity import ContextIntegrityScorer
+
         _context_integrity_scorer = ContextIntegrityScorer(
             audit_store=getattr(app_state, "audit_store", None)
         )
@@ -447,6 +486,7 @@ async def lifespan(app: FastAPI):
 
     try:
         from ..security.output_schema import OutputSchemaEnforcer
+
         _output_schema_enforcer = OutputSchemaEnforcer()
         logger.info("✓ OutputSchemaEnforcer initialized")
     except Exception as _os_exc:
@@ -455,6 +495,7 @@ async def lifespan(app: FastAPI):
 
     try:
         from ..security.instruction_envelope import EnvelopeSigner
+
         _envelope_signer = EnvelopeSigner()
         logger.info("✓ EnvelopeSigner initialized")
     except Exception as _es_exc:
@@ -477,11 +518,21 @@ async def lifespan(app: FastAPI):
         egress_filter=app_state.egress_filter,
         approval_queue=app_state.approval_queue,
         outbound_filter=app_state.outbound_filter,
-        context_guard=app_state.middleware_manager.context_guard if app_state.middleware_manager else None,
+        context_guard=(
+            app_state.middleware_manager.context_guard if app_state.middleware_manager else None
+        ),
         canary_tripwire=_canary_tripwire,
         encoding_detector=_encoding_detector,
-        output_canary=app_state.middleware_manager.get_output_canary() if app_state.middleware_manager else None,
-        enhanced_tool_sanitizer=app_state.middleware_manager.get_enhanced_tool_sanitizer() if app_state.middleware_manager else None,
+        output_canary=(
+            app_state.middleware_manager.get_output_canary()
+            if app_state.middleware_manager
+            else None
+        ),
+        enhanced_tool_sanitizer=(
+            app_state.middleware_manager.get_enhanced_tool_sanitizer()
+            if app_state.middleware_manager
+            else None
+        ),
         audit_store=app_state.audit_store,
         prompt_protection=app_state.prompt_protection,
         heuristic_classifier=app_state.heuristic_classifier,
@@ -495,6 +546,7 @@ async def lifespan(app: FastAPI):
     # Initialize LLM proxy — wires pipeline into Anthropic API path
     try:
         from ..proxy.llm_proxy import LLMProxy
+
         app_state.llm_proxy = LLMProxy(
             pipeline=app_state.pipeline,
             middleware_manager=app_state.middleware_manager,
@@ -513,16 +565,14 @@ async def lifespan(app: FastAPI):
             (b for b in _bots.values() if b.default),
             next(iter(_bots.values()), None),
         )
-        _workspace_path = (
-            _default_bot.workspace_path if _default_bot else "/app/workspace"
-        )
+        _workspace_path = _default_bot.workspace_path if _default_bot else "/app/workspace"
         base_workspace = Path("/app/data/sessions")
         from gateway.security.rbac_config import RBACConfig as _RBACConfig
+
         _rbac = _RBACConfig()
         owner_user_id = _rbac.owner_user_id
         app_state.session_manager = UserSessionManager(
-            base_workspace=base_workspace,
-            owner_user_id=owner_user_id
+            base_workspace=base_workspace, owner_user_id=owner_user_id
         )
         logger.info("UserSessionManager initialized (workspace: /app/data/sessions)")
 
@@ -549,6 +599,7 @@ async def lifespan(app: FastAPI):
     try:
         from ..security.delegation import DelegationManager
         from ..security.rbac_config import RBACConfig as _RBACCfgDel
+
         app_state.delegation_manager = DelegationManager(
             owner_user_id=_RBACCfgDel().owner_user_id,
             persist=False,
@@ -559,8 +610,9 @@ async def lifespan(app: FastAPI):
         app_state.delegation_manager = None
 
     try:
-        from ..security.tool_acl import ToolACLEnforcer
         from ..security.rbac_config import RBACConfig as _RBACCfgACL
+        from ..security.tool_acl import ToolACLEnforcer
+
         app_state.tool_acl_enforcer = ToolACLEnforcer(rbac_config=_RBACCfgACL())
         logger.info("ToolACLEnforcer initialized")
         # Post-init wire into LLM proxy so tool_use blocks can be gated (V9-1)
@@ -572,8 +624,9 @@ async def lifespan(app: FastAPI):
         app_state.tool_acl_enforcer = None
 
     try:
-        from ..security.privacy_policy import PrivacyPolicyEnforcer, PrivacyPolicy
+        from ..security.privacy_policy import PrivacyPolicy, PrivacyPolicyEnforcer
         from ..security.rbac_config import RBACConfig as _RBACCfgPriv
+
         app_state.privacy_enforcer = PrivacyPolicyEnforcer(
             policy=PrivacyPolicy.default(),
             rbac_config=_RBACCfgPriv(),
@@ -587,7 +640,10 @@ async def lifespan(app: FastAPI):
     # and domain 12 (Incident Response) scorecard check passes.
     # The router calls build_correlation_summary() directly; this attribute is the init signal.
     try:
-        from ..security.soc_correlation import build_correlation_summary as _corr_fn  # noqa: F401
+        from ..security.soc_correlation import (  # noqa: F401
+            build_correlation_summary as _corr_fn,
+        )
+
         app_state.soc_correlation = True
         logger.info("✓ SOC correlation engine initialized")
     except Exception as e:
@@ -596,14 +652,18 @@ async def lifespan(app: FastAPI):
 
     # Initialize gateway-level collaborator activity tracker
     try:
-        from ..security.collaborator_tracker import CollaboratorActivityTracker
         from gateway.security.rbac_config import RBACConfig as _RBACCfg
+
+        from ..security.collaborator_tracker import CollaboratorActivityTracker
+
         _rbac_cfg = _RBACCfg()
         # During pytest runs, redirect log to a temp dir so test data never
         # bleeds into the production JSONL read by the SOC dashboard.
         import os as _os
+
         if _os.environ.get("PYTEST_CURRENT_TEST"):
             import tempfile as _tempfile
+
             _test_tmp = Path(_tempfile.mkdtemp(prefix="agentshroud_test_"))
             _tracker_log_path = _test_tmp / "collaborator_activity.jsonl"
             _tracker_contrib_dir = _test_tmp / "contributors"
@@ -620,8 +680,15 @@ async def lifespan(app: FastAPI):
         # Heuristic: Telegram UIDs are always 9-10+ digits; any UID < 10000 is a test fixture.
         # Also prune known test IDs and env-configured additional IDs.
         _known_test_ids = {
-            "42", "99", "999", "123456789", "1234567890",
-            "5555555555", "7614658048", "8506022825", "9999999",
+            "42",
+            "99",
+            "999",
+            "123456789",
+            "1234567890",
+            "5555555555",
+            "7614658048",
+            "8506022825",
+            "9999999",
         }
         # Allow operators to add IDs via env var without a code change
         _extra_prune = _os.environ.get("AGENTSHROUD_PRUNE_TEST_IDS", "")
@@ -630,6 +697,7 @@ async def lifespan(app: FastAPI):
         if not _os.environ.get("PYTEST_CURRENT_TEST") and _tracker_log_path.exists():
             try:
                 import json as _jlog
+
                 _lines = _tracker_log_path.read_text(encoding="utf-8").splitlines()
                 _clean = []
                 for _ln in _lines:
@@ -650,8 +718,13 @@ async def lifespan(app: FastAPI):
                     except Exception:
                         _clean.append(_ln)
                 if len(_clean) != len(_lines):
-                    _tracker_log_path.write_text("\n".join(_clean) + ("\n" if _clean else ""), encoding="utf-8")
-                    logger.info("Pruned %d test-fixture entries from production activity log", len(_lines) - len(_clean))
+                    _tracker_log_path.write_text(
+                        "\n".join(_clean) + ("\n" if _clean else ""), encoding="utf-8"
+                    )
+                    logger.info(
+                        "Pruned %d test-fixture entries from production activity log",
+                        len(_lines) - len(_clean),
+                    )
             except Exception as _prune_exc:
                 logger.debug("Activity log prune skipped: %s", _prune_exc)
         logger.info("CollaboratorActivityTracker initialized")
@@ -670,7 +743,9 @@ async def lifespan(app: FastAPI):
 
     # Initialize group registry — auto-groups (telegram, slack, everyone) + custom persisted groups
     try:
-        from gateway.security.rbac_config import GroupRegistry, RBACConfig as _RBACCfgGR
+        from gateway.security.rbac_config import GroupRegistry
+        from gateway.security.rbac_config import RBACConfig as _RBACCfgGR
+
         _gr = GroupRegistry()
         _gr.init_auto_groups(_RBACCfgGR())
         app_state.group_registry = _gr
@@ -688,9 +763,12 @@ async def lifespan(app: FastAPI):
 
     # Create required directories (tmpfs in containers, /tmp fallback in tests)
     _security_dirs = [
-        "/tmp/security/alerts", "/tmp/security/clamav",
-        "/tmp/security/trivy", "/tmp/security/falco",
-        "/tmp/security/wazuh", "/tmp/security/canary",
+        "/tmp/security/alerts",
+        "/tmp/security/clamav",
+        "/tmp/security/trivy",
+        "/tmp/security/falco",
+        "/tmp/security/wazuh",
+        "/tmp/security/canary",
         "/tmp/security/drift",
     ]
     for _d in _security_dirs:
@@ -711,6 +789,7 @@ async def lifespan(app: FastAPI):
     # Write startup events to scorecard evidence files.
     # Scorers check st_size > 0 — a bare touch() does not satisfy D14/D15/D19.
     import json as _json
+
     _now_iso = __import__("datetime").datetime.utcnow().isoformat() + "Z"
 
     # Domain 14 (L5): collaborator activity log — non-empty access review evidence
@@ -718,11 +797,14 @@ async def lifespan(app: FastAPI):
     try:
         if not _collab_log.exists() or _collab_log.stat().st_size == 0:
             _collab_log.write_text(
-                _json.dumps({
-                    "event": "gateway_startup",
-                    "timestamp": _now_iso,
-                    "message": "AgentShroud gateway started — RBAC access control active",
-                }) + "\n",
+                _json.dumps(
+                    {
+                        "event": "gateway_startup",
+                        "timestamp": _now_iso,
+                        "message": "AgentShroud gateway started — RBAC access control active",
+                    }
+                )
+                + "\n",
                 encoding="utf-8",
             )
     except OSError:
@@ -757,6 +839,7 @@ async def lifespan(app: FastAPI):
     # -- AlertDispatcher: routes security findings to logging --
     try:
         from ..security.alert_dispatcher import AlertDispatcher
+
         app_state.alert_dispatcher = AlertDispatcher(
             alert_log=_Path("/tmp/security/alerts/alerts.jsonl")
         )
@@ -778,6 +861,7 @@ async def lifespan(app: FastAPI):
     # -- DriftDetector: detects config changes from baseline --
     try:
         from ..security.drift_detector import DriftDetector
+
         app_state.drift_detector = DriftDetector(
             db_path=str(_data_dir / "drift.db"),
         )
@@ -797,8 +881,9 @@ async def lifespan(app: FastAPI):
         _mem_base.mkdir(parents=True, exist_ok=True)
 
     try:
-        from ..security.memory_integrity import MemoryIntegrityMonitor
         from ..security.memory_config import MemoryIntegrityConfig
+        from ..security.memory_integrity import MemoryIntegrityMonitor
+
         _mem_integrity_cfg = MemoryIntegrityConfig()
         app_state.memory_integrity = MemoryIntegrityMonitor(_mem_integrity_cfg, _mem_base)
         app_state.memory_integrity.scan_all_monitored_files()  # Establish hash baseline
@@ -814,6 +899,7 @@ async def lifespan(app: FastAPI):
     # -- ConfigIntegrityMonitor: detect bot config tampering between restarts --
     try:
         from ..security.config_integrity import ConfigIntegrityMonitor
+
         _bot_config_dir = _Path("/data/bot-config")
         _config_baseline = _data_dir / "config-integrity-baseline.json"
         _cfg_monitor = ConfigIntegrityMonitor(_bot_config_dir, _config_baseline)
@@ -826,15 +912,19 @@ async def lifespan(app: FastAPI):
             )
             # Attempt Telegram alert to owner
             try:
-                _cfg_token = os.environ.get("TELEGRAM_BOT_TOKEN", "") or _read_secret("telegram_bot_token")
+                _cfg_token = os.environ.get("TELEGRAM_BOT_TOKEN", "") or _read_secret(
+                    "telegram_bot_token"
+                )
                 _cfg_owner = str(getattr(getattr(app_state, "config", None), "owner_user_id", ""))
                 if _cfg_token and _cfg_owner:
                     _alert_text = _cfg_monitor.format_alert_text(_cfg_changes)
-                    _tg_payload = json.dumps({
-                        "chat_id": _cfg_owner,
-                        "text": _alert_text,
-                        "parse_mode": "Markdown",
-                    }).encode()
+                    _tg_payload = json.dumps(
+                        {
+                            "chat_id": _cfg_owner,
+                            "text": _alert_text,
+                            "parse_mode": "Markdown",
+                        }
+                    ).encode()
                     _tg_req = urllib.request.Request(
                         f"https://api.telegram.org/bot{_cfg_token}/sendMessage",
                         data=_tg_payload,
@@ -854,13 +944,12 @@ async def lifespan(app: FastAPI):
 
     # -- MemoryLifecycleManager: PII + injection scanning on memory writes --
     try:
-        from ..security.memory_lifecycle import MemoryLifecycleManager
         from ..security.memory_config import MemoryLifecycleConfig
+        from ..security.memory_lifecycle import MemoryLifecycleManager
+
         _mem_lifecycle_cfg = MemoryLifecycleConfig()
         app_state.memory_lifecycle = MemoryLifecycleManager(_mem_lifecycle_cfg, _mem_base)
-        logger.info(
-            "✓ MemoryLifecycleManager → PII+injection scanning enabled (%s)", _mem_base
-        )
+        logger.info("✓ MemoryLifecycleManager → PII+injection scanning enabled (%s)", _mem_base)
     except Exception as e:
         logger.error(f"✗ MemoryLifecycleManager: {e}")
         app_state.memory_lifecycle = None
@@ -868,6 +957,7 @@ async def lifespan(app: FastAPI):
     # -- HealthReport: aggregates security posture from all modules --
     try:
         from ..security import health_report as _health_mod
+
         app_state.health_report = _health_mod
         logger.info("✓ HealthReport module loaded")
     except Exception as e:
@@ -877,6 +967,7 @@ async def lifespan(app: FastAPI):
     # -- EncryptedStore: AES-256-GCM encryption for ledger entries --
     try:
         from ..security.encrypted_store import EncryptedStore
+
         _master = (
             os.getenv("AGENTSHROUD_GATEWAY_PASSWORD", "")
             or os.getenv("OPENCLAW_GATEWAY_PASSWORD", "")
@@ -900,6 +991,7 @@ async def lifespan(app: FastAPI):
     # -- Canary: integrity checks on critical files --
     try:
         from ..security.canary import run_canary
+
         app_state.canary_runner = run_canary
         app_state.canary_targets = [
             "/app/agentshroud.yaml",
@@ -914,6 +1006,7 @@ async def lifespan(app: FastAPI):
     # -- ClamAV: antivirus file scanning --
     try:
         from ..security import clamav_scanner as _clamav_mod
+
         _clam_bin = shutil.which("clamscan") or shutil.which("clamdscan")
         app_state.clamav_scanner = _clamav_mod
         # Wire scan_bytes callable into SecurityPipeline for inline malware detection
@@ -931,6 +1024,7 @@ async def lifespan(app: FastAPI):
     # -- Trivy: container/image vulnerability scanning --
     try:
         from ..security import trivy_report as _trivy_mod
+
         _trivy_bin = shutil.which("trivy")
         app_state.trivy_scanner = _trivy_mod
         if _trivy_bin:
@@ -951,6 +1045,7 @@ async def lifespan(app: FastAPI):
     # -- Falco: runtime security monitoring (reads JSON alert files) --
     try:
         from ..security import falco_monitor as _falco_mod
+
         app_state.falco_monitor = _falco_mod
         # Register bot names as Falco rule prefixes so bot-specific rules are captured
         _bot_names = [b.name for b in app_state.config.bots.values() if b.name]
@@ -963,6 +1058,7 @@ async def lifespan(app: FastAPI):
     # -- Wazuh: host intrusion detection (reads alert files) --
     try:
         from ..security import wazuh_client as _wazuh_mod
+
         app_state.wazuh_client = _wazuh_mod
         logger.info("✓ Wazuh client (alerts: /tmp/security/wazuh)")
     except Exception as e:
@@ -972,6 +1068,7 @@ async def lifespan(app: FastAPI):
     # -- NetworkValidator: Docker/container network security --
     try:
         from ..security.network_validator import NetworkValidator
+
         app_state.network_validator = NetworkValidator()
         logger.info("✓ NetworkValidator")
     except Exception:
@@ -1111,7 +1208,8 @@ async def lifespan(app: FastAPI):
             return
         try:
             proc = await _asyncio.create_subprocess_exec(
-                str(scan_script), "--all",
+                str(scan_script),
+                "--all",
                 stdout=_asyncio.subprocess.DEVNULL,
                 stderr=_asyncio.subprocess.DEVNULL,
             )
@@ -1125,6 +1223,7 @@ async def lifespan(app: FastAPI):
     # -- FalcoAlertWatcher: enforce progressive lockdown on CRITICAL Falco alerts --
     try:
         from ..security.falco_monitor import FalcoAlertWatcher as _FalcoAlertWatcher
+
         _falco_watcher = _FalcoAlertWatcher(
             progressive_lockdown=getattr(app_state, "progressive_lockdown", None),
             audit_store=getattr(app_state, "audit_store", None),
@@ -1139,6 +1238,7 @@ async def lifespan(app: FastAPI):
         await _asyncio.sleep(30)
         try:
             from ..security.scanner_integration import get_trivy_summary as _get_trivy
+
             _trivy = _get_trivy()
             _crit = _trivy.get("critical", 0)
             _high = _trivy.get("high", 0)
@@ -1146,7 +1246,8 @@ async def lifespan(app: FastAPI):
             if _crit > 0:
                 logger.critical(
                     "TRIVY: %d CRITICAL CVE(s) found — review /soc/v1/trivy. "
-                    "Patch or accept risk before production deployment.", _crit
+                    "Patch or accept risk before production deployment.",
+                    _crit,
                 )
                 if hasattr(app_state, "audit_store") and app_state.audit_store:
                     await app_state.audit_store.log_event(
@@ -1166,12 +1267,18 @@ async def lifespan(app: FastAPI):
     async def _verify_bot_image():
         await _asyncio.sleep(5)
         try:
-            from ..security.image_verifier import verify_images as _verify_images
             import os as _os
-            _images = [r for r in [
-                _os.environ.get("AGENTSHROUD_BOT_IMAGE_REF", ""),
-                _os.environ.get("AGENTSHROUD_GATEWAY_IMAGE_REF", ""),
-            ] if r]
+
+            from ..security.image_verifier import verify_images as _verify_images
+
+            _images = [
+                r
+                for r in [
+                    _os.environ.get("AGENTSHROUD_BOT_IMAGE_REF", ""),
+                    _os.environ.get("AGENTSHROUD_GATEWAY_IMAGE_REF", ""),
+                ]
+                if r
+            ]
             if not _images:
                 logger.info("Image verification skipped — AGENTSHROUD_BOT_IMAGE_REF not set")
                 return
@@ -1194,7 +1301,10 @@ async def lifespan(app: FastAPI):
         while True:
             await _asyncio.sleep(300)
             try:
-                from ..security.scanner_integration import get_wazuh_summary as _get_wazuh
+                from ..security.scanner_integration import (
+                    get_wazuh_summary as _get_wazuh,
+                )
+
                 _wazuh = _get_wazuh()
                 if _wazuh.get("status") == "not_run":
                     continue
@@ -1215,9 +1325,12 @@ async def lifespan(app: FastAPI):
     # -- Daily CVE report: Trivy digest → Telegram at configurable UTC hour --
     try:
         from ..security.daily_cve_report import cve_report_scheduler as _cve_scheduler
+
         _cve_token = os.environ.get("TELEGRAM_BOT_TOKEN", "") or _read_secret("telegram_bot_token")
         _cve_owner_id = RBACConfig().owner_user_id
-        _cve_tg_base = os.environ.get("TELEGRAM_API_BASE_URL", "https://api.telegram.org").rstrip("/")
+        _cve_tg_base = os.environ.get("TELEGRAM_API_BASE_URL", "https://api.telegram.org").rstrip(
+            "/"
+        )
         _cve_hour = int(os.environ.get("AGENTSHROUD_CVE_REPORT_HOUR", "6"))
         if _cve_token and _cve_owner_id:
             app_state._cve_report_task = _asyncio.create_task(
@@ -1230,7 +1343,9 @@ async def lifespan(app: FastAPI):
             )
             logger.info("✓ Daily CVE report scheduler started (UTC hour=%d)", _cve_hour)
         else:
-            logger.warning("⚠ Daily CVE report scheduler skipped — TELEGRAM_BOT_TOKEN or owner_user_id not set")
+            logger.warning(
+                "⚠ Daily CVE report scheduler skipped — TELEGRAM_BOT_TOKEN or owner_user_id not set"
+            )
     except Exception as _cve_exc:
         logger.warning("⚠ Daily CVE report scheduler failed to start: %s", _cve_exc)
 
@@ -1249,50 +1364,80 @@ async def lifespan(app: FastAPI):
             if not isinstance(history, list):
                 history = []
             summary: dict = {
-                "scanner": scanner, "target": target,
-                "status": "unknown", "findings": 0,
-                "critical": 0, "high": 0, "medium": 0, "low": 0,
+                "scanner": scanner,
+                "target": target,
+                "status": "unknown",
+                "findings": 0,
+                "critical": 0,
+                "high": 0,
+                "medium": 0,
+                "low": 0,
             }
             if isinstance(result, dict) and not result.get("error"):
                 if scanner == "clamav":
                     infected = int(result.get("infected_count", 0))
-                    summary.update({"findings": infected, "critical": infected,
-                                    "status": "critical" if infected > 0 else "clean"})
+                    summary.update(
+                        {
+                            "findings": infected,
+                            "critical": infected,
+                            "status": "critical" if infected > 0 else "clean",
+                        }
+                    )
                 elif scanner == "trivy":
                     bsev = result.get("by_severity", {}) or {}
-                    summary.update({
-                        "critical": int(bsev.get("CRITICAL", 0)),
-                        "high":     int(bsev.get("HIGH", 0)),
-                        "medium":   int(bsev.get("MEDIUM", 0)),
-                        "low":      int(bsev.get("LOW", 0)),
-                        "findings": int(result.get("total_vulnerabilities", 0)),
-                    })
-                    summary["status"] = ("critical" if summary["critical"] > 0
-                                         else "warning" if summary["high"] > 0 else "clean")
+                    summary.update(
+                        {
+                            "critical": int(bsev.get("CRITICAL", 0)),
+                            "high": int(bsev.get("HIGH", 0)),
+                            "medium": int(bsev.get("MEDIUM", 0)),
+                            "low": int(bsev.get("LOW", 0)),
+                            "findings": int(result.get("total_vulnerabilities", 0)),
+                        }
+                    )
+                    summary["status"] = (
+                        "critical"
+                        if summary["critical"] > 0
+                        else "warning" if summary["high"] > 0 else "clean"
+                    )
             elif isinstance(result, dict) and result.get("error"):
                 summary["status"] = "error"
-            entry = {"timestamp": _now, "scanner": scanner, "target": target,
-                     "summary": summary, "result": result}
+            entry = {
+                "timestamp": _now,
+                "scanner": scanner,
+                "target": target,
+                "summary": summary,
+                "result": result,
+            }
             store[scanner] = entry
             app_state.scanner_results = store
             history.append(entry)
             if len(history) > 5000:
-                del history[:len(history) - 5000]
+                del history[: len(history) - 5000]
             app_state.scanner_result_history = history
 
         # ClamAV
         _clamav = getattr(app_state, "clamav_scanner", None)
         if _clamav:
             try:
-                import shutil as _sh, os as _os
-                _bin = ("clamdscan"
-                        if (_sh.which("clamdscan") and _os.path.exists("/var/run/clamav/clamd.ctl"))
-                        else "clamscan")
+                import os as _os
+                import shutil as _sh
+
+                _bin = (
+                    "clamdscan"
+                    if (_sh.which("clamdscan") and _os.path.exists("/var/run/clamav/clamd.ctl"))
+                    else "clamscan"
+                )
                 _clam_result = await _loop.run_in_executor(
-                    None, lambda: _clamav.run_clamscan(target="/app", timeout=120, clamscan_bin=_bin)
+                    None,
+                    lambda: _clamav.run_clamscan(target="/app", timeout=120, clamscan_bin=_bin),
                 )
                 _store_result("clamav", _clam_result, target="/app")
-                _clam_status = (app_state.scanner_results or {}).get("clamav", {}).get("summary", {}).get("status")
+                _clam_status = (
+                    (app_state.scanner_results or {})
+                    .get("clamav", {})
+                    .get("summary", {})
+                    .get("status")
+                )
                 if _clam_status in ("error", "critical"):
                     logger.warning("⚠ Startup ClamAV scan complete (status=%s)", _clam_status)
                 else:
@@ -1308,7 +1453,12 @@ async def lifespan(app: FastAPI):
                     None, lambda: _trivy.run_trivy_scan(scan_type="fs", target="/app", timeout=300)
                 )
                 _store_result("trivy", _trivy_result, target="/app")
-                _trivy_status = (app_state.scanner_results or {}).get("trivy", {}).get("summary", {}).get("status")
+                _trivy_status = (
+                    (app_state.scanner_results or {})
+                    .get("trivy", {})
+                    .get("summary", {})
+                    .get("status")
+                )
                 if _trivy_status in ("error", "critical"):
                     logger.warning("⚠ Startup Trivy scan complete (status=%s)", _trivy_status)
                 else:
@@ -1324,31 +1474,41 @@ async def lifespan(app: FastAPI):
     if _tg_token_cmds:
         try:
             from gateway.security.rbac_config import RBACConfig as _RBACCmdCfg
+
             _owner_cmd_id = str(_RBACCmdCfg().owner_user_id).strip()
             _tg_api_cmds = f"https://api.telegram.org/bot{_tg_token_cmds}/setMyCommands"
             _collab_cmds = [
-                {"command": "start",  "description": "Start or restart the session"},
-                {"command": "help",   "description": "List available commands"},
+                {"command": "start", "description": "Start or restart the session"},
+                {"command": "help", "description": "List available commands"},
                 {"command": "status", "description": "Gateway and bot health"},
                 {"command": "whoami", "description": "Your role and user ID"},
-                {"command": "model",  "description": "Show active AI model"},
+                {"command": "model", "description": "Show active AI model"},
             ]
             _owner_cmds = _collab_cmds + [
-                {"command": "pending",        "description": "Review pending approval requests"},
-                {"command": "collabs",        "description": "List collaborators"},
-                {"command": "addcollab",      "description": "Add a collaborator by Telegram user ID"},
-                {"command": "restorecollabs", "description": "Restore persisted collaborators from disk"},
-                {"command": "approve",        "description": "Approve a pending request"},
-                {"command": "deny",           "description": "Deny a pending request"},
-                {"command": "revoke",         "description": "Revoke collaborator access"},
-                {"command": "unlock",         "description": "Unlock a suspended user"},
-                {"command": "locked",         "description": "Show lockdown status for all users"},
-                {"command": "gi",                "description": "Grant security immunity to a user"},
-                {"command": "ri",                "description": "Revoke security immunity from a user"},
-                {"command": "immune",            "description": "List users with active security immunity"},
-                {"command": "delegate",          "description": "Delegate a privilege to a collaborator (e.g. /delegate brett egress_approval 8h)"},
-                {"command": "delegations",       "description": "List active privilege delegations"},
-                {"command": "revoke_delegation", "description": "Revoke a privilege delegation (e.g. /revoke_delegation brett egress_approval)"},
+                {"command": "pending", "description": "Review pending approval requests"},
+                {"command": "collabs", "description": "List collaborators"},
+                {"command": "addcollab", "description": "Add a collaborator by Telegram user ID"},
+                {
+                    "command": "restorecollabs",
+                    "description": "Restore persisted collaborators from disk",
+                },
+                {"command": "approve", "description": "Approve a pending request"},
+                {"command": "deny", "description": "Deny a pending request"},
+                {"command": "revoke", "description": "Revoke collaborator access"},
+                {"command": "unlock", "description": "Unlock a suspended user"},
+                {"command": "locked", "description": "Show lockdown status for all users"},
+                {"command": "gi", "description": "Grant security immunity to a user"},
+                {"command": "ri", "description": "Revoke security immunity from a user"},
+                {"command": "immune", "description": "List users with active security immunity"},
+                {
+                    "command": "delegate",
+                    "description": "Delegate a privilege to a collaborator (e.g. /delegate brett egress_approval 8h)",
+                },
+                {"command": "delegations", "description": "List active privilege delegations"},
+                {
+                    "command": "revoke_delegation",
+                    "description": "Revoke a privilege delegation (e.g. /revoke_delegation brett egress_approval)",
+                },
             ]
             for _scope, _cmds in [
                 ({"type": "default"}, _collab_cmds),
@@ -1362,7 +1522,11 @@ async def lifespan(app: FastAPI):
                     method="POST",
                 )
                 urllib.request.urlopen(_req, timeout=5)
-            logger.info("✓ Telegram bot commands registered (%d collab, %d owner)", len(_collab_cmds), len(_owner_cmds))
+            logger.info(
+                "✓ Telegram bot commands registered (%d collab, %d owner)",
+                len(_collab_cmds),
+                len(_owner_cmds),
+            )
         except Exception as _cmd_exc:
             logger.warning("⚠ Telegram command registration failed: %s", _cmd_exc)
     else:
@@ -1372,9 +1536,7 @@ async def lifespan(app: FastAPI):
     app_state.start_time = time.time()
 
     install_log_handler()
-    logger.info(
-        f"AgentShroud Gateway ready at {app_state.config.bind}:{app_state.config.port}"
-    )
+    logger.info(f"AgentShroud Gateway ready at {app_state.config.bind}:{app_state.config.port}")
     logger.info("=" * 80)
 
     yield

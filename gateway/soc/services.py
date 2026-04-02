@@ -1,5 +1,6 @@
 # Copyright © 2026 Isaiah Dallas Jefferson, Jr. AgentShroud™. All rights reserved.
 """SOC Service Manager — wraps container runtime engine to produce ServiceDescriptors."""
+
 from __future__ import annotations
 
 import http.client
@@ -24,6 +25,7 @@ _DOCKER_SOCK = "/var/run/docker.sock"
 def _inspect_via_socket(name: str) -> Optional[Dict[str, Any]]:
     """Query Docker daemon directly via Unix socket — no CLI needed."""
     try:
+
         class _UnixHTTP(http.client.HTTPConnection):
             def connect(self) -> None:
                 self.sock = socket.socket(socket.AF_UNIX, socket.SOCK_STREAM)
@@ -53,6 +55,7 @@ _KNOWN_SERVICES = [
 def _check_clamd() -> str:
     """Return 'running', 'stopped', or 'not_installed' for clamd (CC-01)."""
     import shutil
+
     if not shutil.which("clamd") and not os.path.exists("/usr/sbin/clamd"):
         return "not_installed"
     try:
@@ -82,8 +85,9 @@ def _check_clamd() -> str:
 
 def _check_fluent_bit() -> str:
     """Return 'running', 'stopped', or 'not_installed' for fluent-bit (CC-01)."""
-    import shutil
     import os as _os
+    import shutil
+
     _FB_FALLBACK = "/opt/fluent-bit/bin/fluent-bit"
     if (
         not shutil.which("fluent-bit")
@@ -119,6 +123,7 @@ def _check_wazuh_agent() -> str:
     import errno as _errno
     import os as _os
     import shutil
+
     if not shutil.which("wazuh-agentd") and not os.path.exists("/var/ossec/bin/wazuh-agentd"):
         return "not_installed"
     try:
@@ -150,6 +155,7 @@ def _check_wazuh_agent() -> str:
 def _check_openscap() -> str:
     """Return 'running', 'stopped', or 'not_installed' for openscap (CC-01)."""
     import shutil
+
     if not shutil.which("oscap"):
         return "not_installed"
     if os.path.exists("/usr/share/xml/scap/ssg/content/ssg-debian12-ds.xml"):
@@ -161,16 +167,16 @@ def _check_openscap() -> str:
 # (svc_name, app_state_attr, label, port, check_fn)
 # check_fn: callable() -> bool overrides app_state attr lookup when not None.
 _INTERNAL_SERVICE_ATTRS = [
-    ("agentshroud-http-proxy",    "http_proxy",    "HTTP CONNECT Proxy",  8181, None),
-    ("agentshroud-dns-forwarder", "dns_transport", "DNS Forwarder",       5353, None),
-    ("agentshroud-mcp-proxy",     "mcp_proxy",     "MCP Proxy",           None, None),
-    ("agentshroud-ssh-proxy",     "ssh_proxy",     "SSH Proxy",           None, None),
-    ("agentshroud-egress-filter", "egress_filter", "Egress Filter",       None, None),
-    ("agentshroud-pii-sanitizer", "sanitizer",     "PII Sanitizer",       None, None),
-    ("agentshroud-clamav",        None,             "ClamAV",              None, _check_clamd),
-    ("agentshroud-fluent-bit",    None,             "Fluent Bit",          2020, _check_fluent_bit),
-    ("agentshroud-wazuh",         None,             "Wazuh Agent",         None, _check_wazuh_agent),
-    ("agentshroud-openscap",      None,             "OpenSCAP",            None, _check_openscap),
+    ("agentshroud-http-proxy", "http_proxy", "HTTP CONNECT Proxy", 8181, None),
+    ("agentshroud-dns-forwarder", "dns_transport", "DNS Forwarder", 5353, None),
+    ("agentshroud-mcp-proxy", "mcp_proxy", "MCP Proxy", None, None),
+    ("agentshroud-ssh-proxy", "ssh_proxy", "SSH Proxy", None, None),
+    ("agentshroud-egress-filter", "egress_filter", "Egress Filter", None, None),
+    ("agentshroud-pii-sanitizer", "sanitizer", "PII Sanitizer", None, None),
+    ("agentshroud-clamav", None, "ClamAV", None, _check_clamd),
+    ("agentshroud-fluent-bit", None, "Fluent Bit", 2020, _check_fluent_bit),
+    ("agentshroud-wazuh", None, "Wazuh Agent", None, _check_wazuh_agent),
+    ("agentshroud-openscap", None, "OpenSCAP", None, _check_openscap),
 ]
 
 
@@ -212,6 +218,7 @@ class ServiceManager:
         try:
             from ..ingest_api.state import app_state
             from ..runtime.engine import get_engine
+
             return get_engine()
         except Exception:
             return None
@@ -233,6 +240,7 @@ class ServiceManager:
         }
         try:
             from ..ingest_api.state import app_state
+
             for svc_name, attr, label, port, check_fn in _INTERNAL_SERVICE_ATTRS:
                 if check_fn is not None:
                     status_str = check_fn()  # returns "running"/"stopped"/"not_installed"/"standby"
@@ -243,16 +251,18 @@ class ServiceManager:
                 # Standby counts as healthy — module is installed and wired, env limitation only
                 running = svc_status in (ServiceStatus.RUNNING, ServiceStatus.STANDBY)
                 ports = [f"{port}/tcp"] if port and running else []
-                descriptors.append(ServiceDescriptor(
-                    name=svc_name,
-                    status=svc_status,
-                    health=HealthStatus.HEALTHY if running else HealthStatus.UNKNOWN,
-                    uptime_seconds=gateway_uptime if running else None,
-                    ports=ports,
-                    networks=["agentshroud-internal"],
-                    version=None,
-                    is_internal=True,  # CC-25
-                ))
+                descriptors.append(
+                    ServiceDescriptor(
+                        name=svc_name,
+                        status=svc_status,
+                        health=HealthStatus.HEALTHY if running else HealthStatus.UNKNOWN,
+                        uptime_seconds=gateway_uptime if running else None,
+                        ports=ports,
+                        networks=["agentshroud-internal"],
+                        version=None,
+                        is_internal=True,  # CC-25
+                    )
+                )
         except Exception as exc:
             logger.debug("list_services: internal service probe failed: %s", exc)
         return descriptors
@@ -277,7 +287,11 @@ class ServiceManager:
                 return ServiceDescriptor(name=name, status=ServiceStatus.STOPPED)
             state = info.get("State", {})
             status_raw = state.get("Status", "")
-            health_raw = state.get("Health", {}).get("Status", "") if isinstance(state.get("Health"), dict) else ""
+            health_raw = (
+                state.get("Health", {}).get("Status", "")
+                if isinstance(state.get("Health"), dict)
+                else ""
+            )
             started_at = state.get("StartedAt", "")
             restart_count = state.get("RestartCount", 0)
             image = info.get("Image", "")
@@ -285,14 +299,21 @@ class ServiceManager:
             labels = config.get("Labels", {}) if isinstance(config, dict) else {}
             version = labels.get("org.opencontainers.image.version") or labels.get("version")
             network_settings = info.get("NetworkSettings", {})
-            ports_raw = network_settings.get("Ports", {}) if isinstance(network_settings, dict) else {}
+            ports_raw = (
+                network_settings.get("Ports", {}) if isinstance(network_settings, dict) else {}
+            )
             ports = [f"{k}:{v[0].get('HostPort', '')}" for k, v in ports_raw.items() if v]
-            networks = list(network_settings.get("Networks", {}).keys()) if isinstance(network_settings, dict) else []
+            networks = (
+                list(network_settings.get("Networks", {}).keys())
+                if isinstance(network_settings, dict)
+                else []
+            )
             # Uptime
             uptime: Optional[float] = None
             if started_at and started_at != "0001-01-01T00:00:00Z":
                 try:
                     from datetime import datetime, timezone
+
                     started_dt = datetime.fromisoformat(started_at.replace("Z", "+00:00"))
                     uptime = (datetime.now(timezone.utc) - started_dt).total_seconds()
                 except Exception:
@@ -357,7 +378,9 @@ class ServiceManager:
                 try:
                     engine.pull(name)
                 except Exception as pull_exc:
-                    logger.warning("update_service(%s): pull failed (%s), restarting anyway", name, pull_exc)
+                    logger.warning(
+                        "update_service(%s): pull failed (%s), restarting anyway", name, pull_exc
+                    )
             engine.restart(name)
             return True
         except Exception as exc:
@@ -374,7 +397,9 @@ class ServiceManager:
           bytes 8+  : payload
         """
         import struct
+
         try:
+
             class _UnixHTTP(http.client.HTTPConnection):
                 def connect(self) -> None:
                     self.sock = socket.socket(socket.AF_UNIX, socket.SOCK_STREAM)
@@ -422,7 +447,9 @@ class ServiceManager:
                     raw = raw.decode("utf-8", errors="replace")
                 lines = raw.splitlines()
             except Exception as exc:
-                logger.warning("get_logs(%s): engine error (%s) — falling back to socket", name, exc)
+                logger.warning(
+                    "get_logs(%s): engine error (%s) — falling back to socket", name, exc
+                )
         # Fallback: read directly via Docker Unix socket (always mounted in gateway)
         if not lines:
             if os.path.exists(_DOCKER_SOCK):

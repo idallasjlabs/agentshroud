@@ -1,14 +1,15 @@
 # Copyright © 2026 Isaiah Dallas Jefferson, Jr. AgentShroud™. All rights reserved.
 from __future__ import annotations
 
-import pytest
-import pytest_asyncio
 from types import SimpleNamespace
 from unittest.mock import patch
-from httpx import AsyncClient, ASGITransport
 
-from gateway.ingest_api.main import app, lifespan, app_state
+import pytest
+import pytest_asyncio
+from httpx import ASGITransport, AsyncClient
+
 from gateway.ingest_api.event_bus import make_event
+from gateway.ingest_api.main import app, app_state, lifespan
 
 
 @pytest_asyncio.fixture
@@ -163,7 +164,9 @@ async def test_manage_soc_correlation_endpoint(client, auth_headers):
 @pytest.mark.asyncio
 async def test_manage_soc_events_endpoint(client, auth_headers):
     await app_state.event_bus.emit(
-        make_event("privacy_policy_violation", "blocked private tool", {"tool": "gmail_send"}, "warning")
+        make_event(
+            "privacy_policy_violation", "blocked private tool", {"tool": "gmail_send"}, "warning"
+        )
     )
     await app_state.event_bus.emit(
         make_event("egress_attempt", "egress checked", {"domain": "example.com"}, "info")
@@ -197,7 +200,9 @@ async def test_manage_soc_report_endpoint(client, auth_headers):
             "total_messages": 2,
             "unique_users": 1,
             "last_activity": 1700000000.0,
-            "by_user": {"1234": {"username": "steve", "message_count": 2, "last_active": 1700000000.0}},
+            "by_user": {
+                "1234": {"username": "steve", "message_count": 2, "last_active": 1700000000.0}
+            },
         },
         get_activity=lambda limit=100: [
             {
@@ -231,7 +236,9 @@ async def test_manage_soc_report_endpoint(client, auth_headers):
 
 
 @pytest.mark.asyncio
-async def test_manage_soc_report_falls_back_to_contributor_logs(client, auth_headers, monkeypatch, tmp_path):
+async def test_manage_soc_report_falls_back_to_contributor_logs(
+    client, auth_headers, monkeypatch, tmp_path
+):
     contrib = tmp_path / "contributors"
     contrib.mkdir()
     (contrib / "2026-03-10-111.md").write_text(
@@ -573,9 +580,12 @@ async def test_soc_scanners_recent_status_filter(client):
 async def test_soc_scanners_recent_limit(client):
     """Limit param caps the number of returned items."""
     app_state.scanner_result_history = [
-        {"timestamp": f"2026-01-01T00:0{i}:00Z", "scanner": "trivy",
-         "summary": {"status": "clean", "critical": 0, "high": 0, "findings": 0},
-         "result": {}}
+        {
+            "timestamp": f"2026-01-01T00:0{i}:00Z",
+            "scanner": "trivy",
+            "summary": {"status": "clean", "critical": 0, "high": 0, "findings": 0},
+            "result": {},
+        }
         for i in range(5)
     ]
     with patch("gateway.soc.auth._get_config_token", return_value=_SOC_TEST_TOKEN):

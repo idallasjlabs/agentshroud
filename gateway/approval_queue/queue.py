@@ -12,9 +12,9 @@ WebSocket broadcast for real-time notifications.
 
 
 import asyncio
+import json
 import logging
 import os
-import json
 import uuid
 from datetime import datetime, timedelta
 from typing import Any
@@ -121,9 +121,7 @@ class ApprovalQueue:
 
             return item
 
-    async def decide(
-        self, request_id: str, approved: bool, reason: str = ""
-    ) -> ApprovalQueueItem:
+    async def decide(self, request_id: str, approved: bool, reason: str = "") -> ApprovalQueueItem:
         """Process an approval decision
 
         Args:
@@ -159,8 +157,7 @@ class ApprovalQueue:
             self._persist_pending_store()
 
             logger.info(
-                f"Approval request {request_id} {item.status} "
-                f"(reason: {reason or 'none'})"
+                f"Approval request {request_id} {item.status} " f"(reason: {reason or 'none'})"
             )
             self._append_audit_event(
                 {
@@ -242,9 +239,7 @@ class ApprovalQueue:
                 if item.status not in decided_statuses:
                     continue
                 try:
-                    submitted = datetime.fromisoformat(
-                        item.submitted_at.replace("Z", "+00:00")
-                    )
+                    submitted = datetime.fromisoformat(item.submitted_at.replace("Z", "+00:00"))
                     if submitted < cutoff:
                         to_remove.append(request_id)
                 except (ValueError, AttributeError):
@@ -312,9 +307,7 @@ class ApprovalQueue:
         """
         await websocket.accept()
         self.connected_clients.add(websocket)
-        logger.info(
-            f"WebSocket client connected (total: {len(self.connected_clients)})"
-        )
+        logger.info(f"WebSocket client connected (total: {len(self.connected_clients)})")
 
     async def disconnect(self, websocket: WebSocket) -> None:
         """Remove a WebSocket connection from connected set
@@ -323,9 +316,7 @@ class ApprovalQueue:
             websocket: WebSocket connection
         """
         self.connected_clients.discard(websocket)
-        logger.info(
-            f"WebSocket client disconnected (remaining: {len(self.connected_clients)})"
-        )
+        logger.info(f"WebSocket client disconnected (remaining: {len(self.connected_clients)})")
 
     async def broadcast(self, message: dict[str, Any]) -> None:
         """Send a JSON message to all connected WebSocket clients

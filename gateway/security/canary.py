@@ -25,9 +25,7 @@ logger = logging.getLogger("agentshroud.security.canary")
 CANARY_SSN = "000-00-0000"
 CANARY_EMAIL = "canary@test.agentshroud.local"
 CANARY_PHONE = "555-000-0000"
-CANARY_MESSAGE = (
-    f"Canary test: SSN {CANARY_SSN}, email {CANARY_EMAIL}, phone {CANARY_PHONE}"
-)
+CANARY_MESSAGE = f"Canary test: SSN {CANARY_SSN}, email {CANARY_EMAIL}, phone {CANARY_PHONE}"
 
 
 @dataclass
@@ -136,9 +134,7 @@ async def run_canary(
         try:
             healthy = await forwarder.health_check()
             proxy_check.passed = healthy
-            proxy_check.details = (
-                "Proxy target healthy" if healthy else "Proxy target unhealthy"
-            )
+            proxy_check.details = "Proxy target healthy" if healthy else "Proxy target unhealthy"
         except Exception as e:
             proxy_check.details = f"Health check failed: {e}"
         if not proxy_check.passed:

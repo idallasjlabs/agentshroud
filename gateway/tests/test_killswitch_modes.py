@@ -3,8 +3,8 @@
 # Protected by common law trademark rights. Federal trademark registration pending.
 # Unauthorized reproduction, distribution, or use of the AgentShroud name or brand is strictly prohibited.
 """Kill Switch Tests — verify freeze, shutdown, disconnect modes."""
-from __future__ import annotations
 
+from __future__ import annotations
 
 import os
 import stat
@@ -63,9 +63,7 @@ class TestKillSwitchScript:
 
     def test_invalid_mode_shows_usage(self, script_content):
         assert (
-            "usage" in script_content
-            and "Error" in script_content
-            or "Invalid" in script_content
+            "usage" in script_content and "Error" in script_content or "Invalid" in script_content
         )
 
     def test_creates_incident_record(self, script_content):

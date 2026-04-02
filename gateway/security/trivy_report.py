@@ -74,9 +74,7 @@ def run_trivy_scan(
 
     if result.returncode not in (0, 1):
         # returncode 1 = vulns found (expected)
-        logger.warning(
-            "Trivy exited with code %d: %s", result.returncode, result.stderr[:500]
-        )
+        logger.warning("Trivy exited with code %d: %s", result.returncode, result.stderr[:500])
 
     try:
         raw = json.loads(result.stdout) if result.stdout.strip() else {}

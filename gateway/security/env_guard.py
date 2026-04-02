@@ -6,15 +6,15 @@
 Environment Leakage Guard - Security Hardening Module
 Block agent access to environment variables and prevent credential leakage.
 """
+
 from __future__ import annotations
 
-
+import logging
 import os
 import re
-import logging
-from typing import List, Dict, Any
-from dataclasses import dataclass
 import shlex
+from dataclasses import dataclass
+from typing import Any, Dict, List
 
 logger = logging.getLogger(__name__)
 
@@ -231,9 +231,7 @@ class EnvironmentGuard:
         for pattern in self.api_key_patterns:
             matches = pattern.findall(output)
             if matches:
-                leaked_vars.extend(
-                    [f"api_key_pattern:{len(match)}" for match in matches]
-                )
+                leaked_vars.extend([f"api_key_pattern:{len(match)}" for match in matches])
                 scrubbed_output = pattern.sub("[REDACTED-API-KEY]", scrubbed_output)
 
         # Scrub environment variable patterns
@@ -317,8 +315,7 @@ class EnvironmentGuard:
                 [
                     leak
                     for leak in agent_leakages
-                    if leak.detection_method
-                    in ["path_block", "command_block", "pattern_block"]
+                    if leak.detection_method in ["path_block", "command_block", "pattern_block"]
                 ]
             )
 
@@ -326,9 +323,7 @@ class EnvironmentGuard:
             critical_attempts = len(
                 [leak for leak in agent_leakages if leak.severity == "critical"]
             )
-            high_attempts = len(
-                [leak for leak in agent_leakages if leak.severity == "high"]
-            )
+            high_attempts = len([leak for leak in agent_leakages if leak.severity == "high"])
 
             if critical_attempts > 0:
                 monitoring_results["risk_level"] = "critical"

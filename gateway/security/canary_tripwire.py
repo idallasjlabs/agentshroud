@@ -2,22 +2,27 @@
 # AgentShroud™ is a trademark of Isaiah Dallas Jefferson, Jr. (USPTO Serial No. 99728633)
 # Patent Pending — U.S. Provisional Application No. 64/018,744
 from __future__ import annotations
+
 import base64
 import codecs
 import logging
 import re
-import time
 import threading
+import time
 from dataclasses import dataclass, field
 from typing import List, Optional
 
 logger = logging.getLogger(__name__)
 
+
 @dataclass
 class CanaryConfig:
-    values: List[str] = field(default_factory=lambda: ["987-65-4321", "sk-test-REDTEAM123", "Project Nightingale"])
+    values: List[str] = field(
+        default_factory=lambda: ["987-65-4321", "sk-test-REDTEAM123", "Project Nightingale"]
+    )
     check_encodings: bool = True
     block_on_detect: bool = True
+
 
 @dataclass
 class CanaryResult:
@@ -30,9 +35,11 @@ class CanaryResult:
 @dataclass
 class TripwireResponse:
     """Bridge result returned by scan_response() for pipeline compatibility."""
+
     is_blocked: bool
     detections: List[str]
     scan_methods_used: List[str]
+
 
 class CanaryTripwire:
     def __init__(self, config: Optional[CanaryConfig] = None):
@@ -56,7 +63,14 @@ class CanaryTripwire:
     def _record(self, canary: str, encoding: str, context: str) -> None:
         with self._lock:
             self._detections += 1
-            self._alerts.append({"canary": canary, "encoding": encoding, "time": time.time(), "context": context[:200]})
+            self._alerts.append(
+                {
+                    "canary": canary,
+                    "encoding": encoding,
+                    "time": time.time(),
+                    "context": context[:200],
+                }
+            )
         logger.warning("CANARY TRIPWIRE: detected %r (%s)", canary, encoding)
 
     def _normalize(self, text: str) -> str:
@@ -93,12 +107,17 @@ class CanaryTripwire:
             pass
         for match in re.finditer(r"(?:%[0-9A-Fa-f]{2}){4,}", text):
             from urllib.parse import unquote
+
             decoded = unquote(match.group()).lower()
             if norm_canary in decoded:
                 return CanaryResult(True, canary, "url_encoded", match.group()[:100])
         for match in re.finditer(r"(?:[0-9a-fA-F]{2}\s?){6,}", text):
             try:
-                decoded = bytes.fromhex(match.group().replace(" ", "")).decode("utf-8", errors="ignore").lower()
+                decoded = (
+                    bytes.fromhex(match.group().replace(" ", ""))
+                    .decode("utf-8", errors="ignore")
+                    .lower()
+                )
                 if norm_canary in decoded:
                     return CanaryResult(True, canary, "hex", match.group()[:100])
             except Exception:

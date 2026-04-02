@@ -1,11 +1,17 @@
 # Copyright © 2026 Isaiah Dallas Jefferson, Jr. AgentShroud™. All rights reserved.
 """Tests for OutputSchemaEnforcer (C25)."""
+
 from __future__ import annotations
 
 import re
+
 import pytest
 
-from gateway.security.output_schema import OutputSchemaEnforcer, SchemaRule, SchemaValidationResult
+from gateway.security.output_schema import (
+    OutputSchemaEnforcer,
+    SchemaRule,
+    SchemaValidationResult,
+)
 
 
 @pytest.fixture

@@ -137,8 +137,8 @@ class AlertDispatcher:
             True if notification sent successfully.
         """
         try:
-            import urllib.request
             import urllib.error
+            import urllib.request
 
             payload = json.dumps(
                 {
@@ -212,9 +212,7 @@ class AlertDispatcher:
             Number of entries removed.
         """
         now = time.time()
-        expired = [
-            k for k, v in self._seen_ids.items() if (now - v) > self.dedup_window
-        ]
+        expired = [k for k, v in self._seen_ids.items() if (now - v) > self.dedup_window]
         for k in expired:
             del self._seen_ids[k]
         return len(expired)
