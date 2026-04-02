@@ -10,13 +10,13 @@ Tests that DNS filter, network validator, egress monitor, browser security,
 and oauth security are properly wired into the request flow.
 """
 
-import time
+import os
+import sys
 import unittest
-from dataclasses import dataclass
 from enum import Enum
-from unittest.mock import MagicMock, Mock, patch
+from unittest.mock import Mock, patch
 
-import pytest
+sys.path.append(os.path.join(os.path.dirname(__file__), ".."))
 
 
 # Mock the security modules for testing
@@ -54,14 +54,6 @@ class MockEgressEvent:
 
 class MockEgressChannel(Enum):
     HTTP = "http"
-
-
-import os
-
-# Import the actual modules we're testing
-import sys
-
-sys.path.append(os.path.join(os.path.dirname(__file__), ".."))
 
 
 class TestWebProxySecurityIntegration(unittest.TestCase):
@@ -196,7 +188,7 @@ class TestWebProxySecurityIntegration(unittest.TestCase):
         headers = {"User-Agent": "python-requests/2.25.1"}
 
         # Execute
-        result = self.proxy.check_request("https://example.com/api", headers=headers)
+        self.proxy.check_request("https://example.com/api", headers=headers)
 
         # Verify
         self.proxy.browser_security.check_url_reputation.assert_not_called()
@@ -229,7 +221,7 @@ class TestWebProxySecurityIntegration(unittest.TestCase):
         )
 
         # Execute
-        result = self.proxy.scan_response(
+        self.proxy.scan_response(
             "https://example.com/api", "response body", "application/json", 200, 1024
         )
 
