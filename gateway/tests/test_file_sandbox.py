@@ -3,10 +3,11 @@
 # Protected by common law trademark rights. Federal trademark registration pending.
 # Unauthorized reproduction, distribution, or use of the AgentShroud name or brand is strictly prohibited.
 """Tests for file I/O sandboxing."""
+
 from __future__ import annotations
 
-
 import pytest
+
 from gateway.security.file_sandbox import (
     FileSandbox,
     FileSandboxConfig,
@@ -59,9 +60,7 @@ class TestNormalFileOperations:
         assert v.allowed is True
 
     def test_workspace_write_allowed(self, sandbox):
-        v = sandbox.check_write(
-            "/home/user/output.txt", agent_id="agent1", content="hello"
-        )
+        v = sandbox.check_write("/home/user/output.txt", agent_id="agent1", content="hello")
         assert v.allowed is True
 
     def test_tmp_read_allowed(self, sandbox):

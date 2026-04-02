@@ -65,9 +65,7 @@ class MultiAgentRouter:
         # Add any additional configured targets
         for name, url in config.targets.items():
             if name not in self.targets:
-                self.targets[name] = AgentTarget(
-                    name=name, url=url, content_types=[], tags=[]
-                )
+                self.targets[name] = AgentTarget(name=name, url=url, content_types=[], tags=[])
 
         logger.info(f"Router initialized with {len(self.targets)} target(s)")
 
@@ -116,8 +114,7 @@ class MultiAgentRouter:
                 return self.targets[request.route_to]
             else:
                 logger.warning(
-                    f"Explicit route_to '{request.route_to}' not found, "
-                    "falling back to default"
+                    f"Explicit route_to '{request.route_to}' not found, " "falling back to default"
                 )
 
         # Priority 2: Metadata tags (future enhancement)
@@ -129,9 +126,7 @@ class MultiAgentRouter:
         # Priority 4: Default target
         default_target = self.targets.get(self.config.default_target)
         if not default_target:
-            raise RouterError(
-                f"Default target '{self.config.default_target}' not found"
-            )
+            raise RouterError(f"Default target '{self.config.default_target}' not found")
 
         logger.debug(f"Routing to default target: {self.config.default_target}")
         return default_target
@@ -165,9 +160,7 @@ class MultiAgentRouter:
             "metadata": metadata,
         }
 
-        logger.info(
-            f"Forwarding to {target.name} at {target.url} (ledger_id={ledger_id})"
-        )
+        logger.info(f"Forwarding to {target.name} at {target.url} (ledger_id={ledger_id})")
 
         try:
             async with httpx.AsyncClient(timeout=30.0) as client:
@@ -178,8 +171,7 @@ class MultiAgentRouter:
                 response.raise_for_status()
 
                 logger.info(
-                    f"Successfully forwarded to {target.name} "
-                    f"(status={response.status_code})"
+                    f"Successfully forwarded to {target.name} " f"(status={response.status_code})"
                 )
 
                 return response.json()
@@ -190,9 +182,7 @@ class MultiAgentRouter:
                 f"Agent {target.name} offline at {target.url}: {e}. "
                 "Content logged but not forwarded."
             )
-            raise ForwardError(
-                f"Agent {target.name} offline. Content saved to ledger."
-            ) from e
+            raise ForwardError(f"Agent {target.name} offline. Content saved to ledger.") from e
 
         except httpx.TimeoutException as e:
             logger.error(f"Timeout forwarding to {target.name}: {e}")
@@ -244,9 +234,7 @@ class MultiAgentRouter:
                 from datetime import timezone
 
                 t.healthy = False
-                t.last_health_check = (
-                    datetime.now(timezone.utc).isoformat().replace("+00:00", "Z")
-                )
+                t.last_health_check = datetime.now(timezone.utc).isoformat().replace("+00:00", "Z")
 
                 results[t.name] = {
                     "healthy": False,

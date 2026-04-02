@@ -23,10 +23,11 @@ logger = logging.getLogger("agentshroud.security.heuristic_classifier")
 @dataclass
 class ClassificationResult:
     """Result of injection classification."""
+
     probability: float  # 0.0 (safe) to 1.0 (injection)
-    confidence: float   # 0.0 (no confidence) to 1.0 (certain)
-    method: str         # "heuristic" or "ml"
-    signals: dict       # Breakdown of scoring signals
+    confidence: float  # 0.0 (no confidence) to 1.0 (certain)
+    method: str  # "heuristic" or "ml"
+    signals: dict  # Breakdown of scoring signals
 
     @property
     def is_injection(self) -> bool:
@@ -39,43 +40,43 @@ class ClassificationResult:
 
 # Heuristic signal patterns
 IMPERATIVE_VERBS = re.compile(
-    r'\b(ignore|forget|disregard|override|bypass|skip|disable|stop|cancel|'
-    r'abandon|replace|rewrite|overwrite|delete|remove|erase|clear|reset|'
-    r'reveal|expose|show|display|output|print|dump|leak|exfiltrate)\b',
-    re.IGNORECASE
+    r"\b(ignore|forget|disregard|override|bypass|skip|disable|stop|cancel|"
+    r"abandon|replace|rewrite|overwrite|delete|remove|erase|clear|reset|"
+    r"reveal|expose|show|display|output|print|dump|leak|exfiltrate)\b",
+    re.IGNORECASE,
 )
 
 ROLE_PLAY_INDICATORS = re.compile(
-    r'\b(you are now|act as|pretend to be|roleplay as|simulate being|'
-    r'from now on you|your new role|your true purpose|your real task|'
-    r'jailbreak|DAN|developer mode|god mode|unrestricted mode)\b',
-    re.IGNORECASE
+    r"\b(you are now|act as|pretend to be|roleplay as|simulate being|"
+    r"from now on you|your new role|your true purpose|your real task|"
+    r"jailbreak|DAN|developer mode|god mode|unrestricted mode)\b",
+    re.IGNORECASE,
 )
 
 INSTRUCTION_LANGUAGE = re.compile(
-    r'\b(instructions?|rules?|guidelines?|constraints?|system prompt|'
-    r'previous context|above text|prior messages|original task|'
-    r'new instructions?|real task|actual goal|true objective)\b',
-    re.IGNORECASE
+    r"\b(instructions?|rules?|guidelines?|constraints?|system prompt|"
+    r"previous context|above text|prior messages|original task|"
+    r"new instructions?|real task|actual goal|true objective)\b",
+    re.IGNORECASE,
 )
 
 ENCODING_EVASION = re.compile(
-    r'(base64|rot13|hex|encode|decode|\\x[0-9a-f]{2}|\\u[0-9a-f]{4}|'
-    r'%[0-9a-f]{2}|&#[0-9]+;|&[a-z]+;)',
-    re.IGNORECASE
+    r"(base64|rot13|hex|encode|decode|\\x[0-9a-f]{2}|\\u[0-9a-f]{4}|"
+    r"%[0-9a-f]{2}|&#[0-9]+;|&[a-z]+;)",
+    re.IGNORECASE,
 )
 
 SEPARATOR_INJECTION = re.compile(
-    r'(---+|===+|###|```|</?system>|<\|im_start\|>|<\|im_end\|>|'
-    r'\[INST\]|\[/INST\]|<\|user\|>|<\|assistant\|>|\nHuman:|'
-    r'\nAssistant:)',
-    re.IGNORECASE
+    r"(---+|===+|###|```|</?system>|<\|im_start\|>|<\|im_end\|>|"
+    r"\[INST\]|\[/INST\]|<\|user\|>|<\|assistant\|>|\nHuman:|"
+    r"\nAssistant:)",
+    re.IGNORECASE,
 )
 
 EXFIL_PATTERNS = re.compile(
-    r'(!\[.*?\]\(https?://|<img\s+src=|<script|<iframe|'
-    r'fetch\(|XMLHttpRequest|navigator\.sendBeacon)',
-    re.IGNORECASE
+    r"(!\[.*?\]\(https?://|<img\s+src=|<script|<iframe|"
+    r"fetch\(|XMLHttpRequest|navigator\.sendBeacon)",
+    re.IGNORECASE,
 )
 
 
@@ -125,7 +126,9 @@ class HeuristicClassifier:
             logger.warning(f"Failed to load ML model: {e}")
             return False
 
-    def _score_signal(self, text: str, pattern: re.Pattern, normalize_by_length: bool = True) -> float:
+    def _score_signal(
+        self, text: str, pattern: re.Pattern, normalize_by_length: bool = True
+    ) -> float:
         """Score a single signal pattern. Returns 0.0–1.0."""
         matches = pattern.findall(text)
         if not matches:
@@ -145,14 +148,14 @@ class HeuristicClassifier:
         anomalies = 0
 
         # Zero-width characters
-        zw_chars = ['\u200b', '\u200c', '\u200d', '\ufeff', '\u00ad', '\u200e', '\u200f']
+        zw_chars = ["\u200b", "\u200c", "\u200d", "\ufeff", "\u00ad", "\u200e", "\u200f"]
         for c in zw_chars:
             if c in text:
                 anomalies += text.count(c)
 
         # Homoglyph detection (Cyrillic/Greek lookalikes in Latin context)
-        latin_count = sum(1 for c in text if 'a' <= c.lower() <= 'z')
-        cyrillic_count = sum(1 for c in text if '\u0400' <= c <= '\u04ff')
+        latin_count = sum(1 for c in text if "a" <= c.lower() <= "z")
+        cyrillic_count = sum(1 for c in text if "\u0400" <= c <= "\u04ff")
         if latin_count > 10 and cyrillic_count > 0:
             anomalies += cyrillic_count * 2
 
@@ -185,9 +188,7 @@ class HeuristicClassifier:
         }
 
         # Weighted probability
-        probability = sum(
-            signals.get(k, 0) * w for k, w in self.weights.items()
-        )
+        probability = sum(signals.get(k, 0) * w for k, w in self.weights.items())
         # Add unicode anomaly as bonus
         probability = min(probability + signals["unicode_anomaly"] * 0.1, 1.0)
 

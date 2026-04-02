@@ -6,19 +6,19 @@
 Context Window Poisoning Defense - Security Hardening Module
 Detect attempts to manipulate the AI context window through malicious inputs.
 """
+
 from __future__ import annotations
 
-from gateway.security.input_normalizer import normalize_input
-
-
-import re
-import time
 import hashlib
 import logging
+import re
+import time
 import uuid
-from typing import Dict, List, Any, Tuple
-from dataclasses import dataclass, field
 from collections import defaultdict, deque
+from dataclasses import dataclass, field
+from typing import Any, Dict, List, Tuple
+
+from gateway.security.input_normalizer import normalize_input
 
 logger = logging.getLogger(__name__)
 
@@ -27,10 +27,11 @@ logger = logging.getLogger(__name__)
 @dataclass
 class ContextSegment:
     """Tagged provenance record for a context segment."""
-    source: str          # system / user / tool_result / document / memory
-    content_hash: str    # SHA-256 of segment content
+
+    source: str  # system / user / tool_result / document / memory
+    content_hash: str  # SHA-256 of segment content
     timestamp: float
-    trust_level: str     # TRUSTED / UNTRUSTED / OWNER
+    trust_level: str  # TRUSTED / UNTRUSTED / OWNER
     segment_id: str
 
 
@@ -66,9 +67,7 @@ class SessionContext:
 class ContextGuard:
     """Guard against context window poisoning attacks."""
 
-    def __init__(
-        self, max_message_length: int = 50000, max_context_size: int = 1000000
-    ):
+    def __init__(self, max_message_length: int = 50000, max_context_size: int = 1000000):
         self.max_message_length = max_message_length
         self.max_context_size = max_context_size
         self.sessions: Dict[str, SessionContext] = {}
@@ -109,9 +108,7 @@ class ContextGuard:
         ]
 
         # Compile patterns for efficiency
-        self.compiled_patterns = [
-            re.compile(pattern) for pattern in self.instruction_patterns
-        ]
+        self.compiled_patterns = [re.compile(pattern) for pattern in self.instruction_patterns]
 
         # Patterns for repetition detection
         self.repetition_patterns = [
@@ -172,9 +169,7 @@ class ContextGuard:
                     attack_type="message_size_limit",
                     severity="high",
                     description=f"Message exceeds size limit ({message_length} > {self.max_message_length})",
-                    message_content=(
-                        message[:1000] + "..." if len(message) > 1000 else message
-                    ),
+                    message_content=(message[:1000] + "..." if len(message) > 1000 else message),
                     detection_patterns=["message_size_limit"],
                     timestamp=current_time,
                     context_size_before=context_size_before,
@@ -192,9 +187,7 @@ class ContextGuard:
                     attack_type="context_size_limit",
                     severity="high",
                     description=f"Message would exceed total context limit ({context_size_before + message_length} > {self.max_context_size})",
-                    message_content=(
-                        message[:1000] + "..." if len(message) > 1000 else message
-                    ),
+                    message_content=(message[:1000] + "..." if len(message) > 1000 else message),
                     detection_patterns=["context_size_limit"],
                     timestamp=current_time,
                     context_size_before=context_size_before,
@@ -277,9 +270,7 @@ class ContextGuard:
                     attack_type="instruction_injection",
                     severity=severity,
                     description=f"Potential instruction injection detected (patterns: {len(detected_patterns)})",
-                    message_content=(
-                        message[:500] + "..." if len(message) > 500 else message
-                    ),
+                    message_content=(message[:500] + "..." if len(message) > 500 else message),
                     detection_patterns=detected_patterns,
                     timestamp=timestamp,
                     context_size_before=context_size_before,
@@ -335,9 +326,7 @@ class ContextGuard:
                     attack_type="repetition_attack",
                     severity=severity,
                     description="Repetition-based context stuffing detected",
-                    message_content=(
-                        message[:300] + "..." if len(message) > 300 else message
-                    ),
+                    message_content=(message[:300] + "..." if len(message) > 300 else message),
                     detection_patterns=detected_patterns,
                     timestamp=timestamp,
                     context_size_before=context_size_before,
@@ -437,9 +426,7 @@ class ContextGuard:
     def get_session_risk_level(self, session_id: str) -> str:
         """Get risk level for a session based on detected attacks."""
         session_attacks = [
-            attack
-            for attack in self.detected_attacks
-            if attack.session_id == session_id
+            attack for attack in self.detected_attacks if attack.session_id == session_id
         ]
 
         if not session_attacks:
@@ -457,9 +444,7 @@ class ContextGuard:
         else:
             return "low"
 
-    def should_block_message(
-        self, session_id: str, message: str
-    ) -> Tuple[bool, List[str]]:
+    def should_block_message(self, session_id: str, message: str) -> Tuple[bool, List[str]]:
         """
         Determine if a message should be blocked.
 
@@ -471,13 +456,9 @@ class ContextGuard:
 
         for attack in attacks:
             if attack.severity == "critical":
-                block_reasons.append(
-                    f"Critical {attack.attack_type}: {attack.description}"
-                )
+                block_reasons.append(f"Critical {attack.attack_type}: {attack.description}")
             elif attack.severity == "high":
-                block_reasons.append(
-                    f"High-severity {attack.attack_type}: {attack.description}"
-                )
+                block_reasons.append(f"High-severity {attack.attack_type}: {attack.description}")
 
         return len(block_reasons) > 0, block_reasons
 
@@ -486,15 +467,11 @@ class ContextGuard:
         return {
             "total_attacks": len(self.detected_attacks),
             "by_type": {
-                attack_type: len(
-                    [a for a in self.detected_attacks if a.attack_type == attack_type]
-                )
+                attack_type: len([a for a in self.detected_attacks if a.attack_type == attack_type])
                 for attack_type in set(a.attack_type for a in self.detected_attacks)
             },
             "by_severity": {
-                severity: len(
-                    [a for a in self.detected_attacks if a.severity == severity]
-                )
+                severity: len([a for a in self.detected_attacks if a.severity == severity])
                 for severity in set(a.severity for a in self.detected_attacks)
             },
             "session_metrics": self.session_metrics,
@@ -634,9 +611,7 @@ def check_message(text: str) -> tuple[bool, list[str]]:
     # Check message length (500KB default)
     max_length = 500 * 1024  # 500KB
     if len(text.encode("utf-8")) > max_length:
-        findings.append(
-            f"Message too large: {len(text.encode('utf-8'))} bytes (max {max_length})"
-        )
+        findings.append(f"Message too large: {len(text.encode('utf-8'))} bytes (max {max_length})")
         allowed = False
 
     # Check for instruction dilution (entropy check)

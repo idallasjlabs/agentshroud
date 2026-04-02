@@ -19,22 +19,23 @@ the Watchtower release:
     E2E-09  Session isolation — agents process independently
     E2E-10  Pipeline fail-closed: missing PII sanitizer raises RuntimeError
 """
+
 from __future__ import annotations
 
 import pytest
 import pytest_asyncio
 
-from gateway.proxy.pipeline import AuditChain, PipelineAction, SecurityPipeline
-from gateway.security.prompt_guard import PromptGuard
-from gateway.security.context_guard import ContextGuard
-from gateway.security.trust_manager import TrustManager, TrustConfig
-from gateway.security.canary_tripwire import CanaryTripwire
-from gateway.security.encoding_detector import EncodingDetector
-from gateway.ingest_api.sanitizer import PIISanitizer
 from gateway.ingest_api.config import PIIConfig
-
+from gateway.ingest_api.sanitizer import PIISanitizer
+from gateway.proxy.pipeline import AuditChain, PipelineAction, SecurityPipeline
+from gateway.security.canary_tripwire import CanaryTripwire
+from gateway.security.context_guard import ContextGuard
+from gateway.security.encoding_detector import EncodingDetector
+from gateway.security.prompt_guard import PromptGuard
+from gateway.security.trust_manager import TrustConfig, TrustManager
 
 # ─── Shared fixtures ──────────────────────────────────────────────────────────
+
 
 @pytest.fixture
 def pii_config():
@@ -77,6 +78,7 @@ def pipeline(sanitizer, trust_manager):
 
 # ─── E2E-01: PromptGuard blocks prompt injection ──────────────────────────────
 
+
 class TestE2E01PromptGuardBlocking:
     """E2E-01: PromptGuard blocks high-confidence injection payloads."""
 
@@ -109,6 +111,7 @@ class TestE2E01PromptGuardBlocking:
 
 
 # ─── E2E-02: PII redacted on inbound ─────────────────────────────────────────
+
 
 class TestE2E02InboundPIIRedaction:
     """E2E-02: Social security numbers and email are redacted before forwarding."""
@@ -144,6 +147,7 @@ class TestE2E02InboundPIIRedaction:
 
 # ─── E2E-03: PII redacted on outbound ────────────────────────────────────────
 
+
 class TestE2E03OutboundPIIRedaction:
     """E2E-03: PII in agent responses is stripped before delivery."""
 
@@ -169,6 +173,7 @@ class TestE2E03OutboundPIIRedaction:
 
 # ─── E2E-04: ContextGuard blocks cross-turn injection ────────────────────────
 
+
 class TestE2E04ContextGuardBlocking:
     """E2E-04: ContextGuard detects session-level injection in multi-turn context."""
 
@@ -187,6 +192,7 @@ class TestE2E04ContextGuardBlocking:
 
 
 # ─── E2E-05: Canary tripwire blocks tampered response ────────────────────────
+
 
 class TestE2E05CanaryTripwire:
     """E2E-05: Canary tokens in responses trigger full block."""
@@ -217,6 +223,7 @@ class TestE2E05CanaryTripwire:
 
 # ─── E2E-06: Encoding bypass detected ────────────────────────────────────────
 
+
 class TestE2E06EncodingBypassDetection:
     """E2E-06: Base64 and Unicode encoding bypasses are decoded and processed."""
 
@@ -229,6 +236,7 @@ class TestE2E06EncodingBypassDetection:
     async def test_base64_content_decoded(self, pipeline):
         """Response containing base64-encoded payload is decoded by the pipeline."""
         import base64
+
         encoded = base64.b64encode(b"exfiltrated secret data").decode()
         result = await pipeline.process_outbound(
             response=f"Encoded output: {encoded}",
@@ -240,6 +248,7 @@ class TestE2E06EncodingBypassDetection:
 
 
 # ─── E2E-07: Trust manager blocks high-risk action ───────────────────────────
+
 
 class TestE2E07TrustEnforcement:
     """E2E-07: Low-trust agent cannot perform high-risk actions."""
@@ -266,6 +275,7 @@ class TestE2E07TrustEnforcement:
 
 
 # ─── E2E-08: Audit chain records all events ──────────────────────────────────
+
 
 class TestE2E08AuditChainIntegrity:
     """E2E-08: Every pipeline event — block or forward — produces an audit entry."""
@@ -302,6 +312,7 @@ class TestE2E08AuditChainIntegrity:
 
 
 # ─── E2E-09: Session isolation ────────────────────────────────────────────────
+
 
 class TestE2E09SessionIsolation:
     """E2E-09: Two agents process independently with no cross-contamination."""
@@ -341,6 +352,7 @@ class TestE2E09SessionIsolation:
 
 # ─── E2E-10: Fail-closed: no PII sanitizer = no startup ─────────────────────
 
+
 class TestE2E10FailClosed:
     """E2E-10: SecurityPipeline refuses to operate without PII sanitizer."""
 
@@ -363,12 +375,14 @@ class TestE2E10FailClosed:
 
 class _BrokenSanitizer:
     """Sanitizer that always crashes — simulates module failure."""
+
     def sanitize(self, text):
         raise RuntimeError("Intentional crash for fail-closed test")
 
 
 class _BrokenOutputCanary:
     """OutputCanary that always crashes."""
+
     def check_response(self, agent_id, text):
         raise RuntimeError("Intentional OutputCanary crash")
 

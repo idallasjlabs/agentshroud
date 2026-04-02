@@ -41,15 +41,32 @@ MAX_PACKET_SIZE = 4096
 
 # DNS query types
 QTYPES = {
-    1: "A", 2: "NS", 5: "CNAME", 6: "SOA", 12: "PTR", 15: "MX",
-    16: "TXT", 28: "AAAA", 33: "SRV", 35: "NAPTR", 43: "DS",
-    46: "RRSIG", 47: "NSEC", 48: "DNSKEY", 65: "HTTPS", 255: "ANY",
+    1: "A",
+    2: "NS",
+    5: "CNAME",
+    6: "SOA",
+    12: "PTR",
+    15: "MX",
+    16: "TXT",
+    28: "AAAA",
+    33: "SRV",
+    35: "NAPTR",
+    43: "DS",
+    46: "RRSIG",
+    47: "NSEC",
+    48: "DNSKEY",
+    65: "HTTPS",
+    255: "ANY",
 }
 
 # DNS response codes
 RCODES = {
-    0: "NOERROR", 1: "FORMERR", 2: "SERVFAIL", 3: "NXDOMAIN",
-    4: "NOTIMP", 5: "REFUSED",
+    0: "NOERROR",
+    1: "FORMERR",
+    2: "SERVFAIL",
+    3: "NXDOMAIN",
+    4: "NOTIMP",
+    5: "REFUSED",
 }
 
 
@@ -72,12 +89,12 @@ def parse_domain_name(data: bytes, offset: int) -> Tuple[str, int]:
             # Compression pointer
             if not jumped:
                 original_offset = offset + 2
-            pointer = struct.unpack("!H", data[offset:offset + 2])[0] & 0x3FFF
+            pointer = struct.unpack("!H", data[offset : offset + 2])[0] & 0x3FFF
             offset = pointer
             jumped = True
         else:
             offset += 1
-            labels.append(data[offset:offset + length].decode("ascii", errors="replace"))
+            labels.append(data[offset : offset + length].decode("ascii", errors="replace"))
             offset += length
 
     domain = ".".join(labels)
@@ -86,7 +103,7 @@ def parse_domain_name(data: bytes, offset: int) -> Tuple[str, int]:
 
 def parse_query(data: bytes) -> Optional[Tuple[str, int, int]]:
     """Extract domain name and query type from a DNS query packet.
-    
+
     Returns: (domain, qtype, qclass) or None if parsing fails.
     """
     try:
@@ -103,7 +120,7 @@ def parse_query(data: bytes) -> Optional[Tuple[str, int, int]]:
         if offset + 4 > len(data):
             return None
 
-        qtype, qclass = struct.unpack("!HH", data[offset:offset + 4])
+        qtype, qclass = struct.unpack("!HH", data[offset : offset + 4])
         return domain, qtype, qclass
 
     except Exception:
@@ -119,9 +136,7 @@ async def forward_query(data: bytes) -> Optional[bytes]:
             sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
             sock.settimeout(UPSTREAM_TIMEOUT)
 
-            await loop.run_in_executor(
-                None, sock.sendto, data, (upstream_host, upstream_port)
-            )
+            await loop.run_in_executor(None, sock.sendto, data, (upstream_host, upstream_port))
 
             response = await asyncio.wait_for(
                 loop.run_in_executor(None, sock.recv, MAX_PACKET_SIZE),
@@ -199,20 +214,20 @@ class DNSForwarderProtocol(asyncio.DatagramProtocol):
                 blocked_resp[7] = 0x01
                 # Append answer: pointer to question name + A record 0.0.0.0
                 if qtype == 1:  # A record
-                    answer = b'\xc0\x0c'  # Name pointer to offset 12
-                    answer += b'\x00\x01'  # Type A
-                    answer += b'\x00\x01'  # Class IN
-                    answer += b'\x00\x00\x00\x3c'  # TTL 60s
-                    answer += b'\x00\x04'  # RDLENGTH 4
-                    answer += b'\x00\x00\x00\x00'  # 0.0.0.0
+                    answer = b"\xc0\x0c"  # Name pointer to offset 12
+                    answer += b"\x00\x01"  # Type A
+                    answer += b"\x00\x01"  # Class IN
+                    answer += b"\x00\x00\x00\x3c"  # TTL 60s
+                    answer += b"\x00\x04"  # RDLENGTH 4
+                    answer += b"\x00\x00\x00\x00"  # 0.0.0.0
                     self.transport.sendto(bytes(blocked_resp) + answer, addr)
                 elif qtype == 28:  # AAAA record
-                    answer = b'\xc0\x0c'
-                    answer += b'\x00\x1c'  # Type AAAA
-                    answer += b'\x00\x01'  # Class IN
-                    answer += b'\x00\x00\x00\x3c'  # TTL 60s
-                    answer += b'\x00\x10'  # RDLENGTH 16
-                    answer += b'\x00' * 16  # ::
+                    answer = b"\xc0\x0c"
+                    answer += b"\x00\x1c"  # Type AAAA
+                    answer += b"\x00\x01"  # Class IN
+                    answer += b"\x00\x00\x00\x3c"  # TTL 60s
+                    answer += b"\x00\x10"  # RDLENGTH 16
+                    answer += b"\x00" * 16  # ::
                     self.transport.sendto(bytes(blocked_resp) + answer, addr)
                 else:
                     # NXDOMAIN for other types

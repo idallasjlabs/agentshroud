@@ -3,10 +3,12 @@
 # Protected by common law trademark rights. Federal trademark registration pending.
 # Unauthorized reproduction, distribution, or use of the AgentShroud name or brand is strictly prohibited.
 """Test Context Window Poisoning Defense."""
+
 from __future__ import annotations
 
 import pytest
-from gateway.security.context_guard import check_message, ContextGuard, ContextSegment
+
+from gateway.security.context_guard import ContextGuard, ContextSegment, check_message
 
 
 class TestCheckMessage:
@@ -49,6 +51,7 @@ class TestCheckMessage:
 
 # ── C10: Source Tagging tests ─────────────────────────────────────────────────
 
+
 class TestSourceTagging:
     @pytest.fixture
     def guard(self):
@@ -65,7 +68,9 @@ class TestSourceTagging:
     def test_segment_provenance_ordering(self, guard):
         guard.record_segment("session-a", "system message", source="system", trust_level="TRUSTED")
         guard.record_segment("session-a", "user query", source="user", trust_level="UNTRUSTED")
-        guard.record_segment("session-a", "tool result", source="tool_result", trust_level="UNTRUSTED")
+        guard.record_segment(
+            "session-a", "tool result", source="tool_result", trust_level="UNTRUSTED"
+        )
         provenance = guard.get_segment_provenance("session-a")
         assert len(provenance) == 3
         assert provenance[0].source == "system"
@@ -74,6 +79,7 @@ class TestSourceTagging:
 
     def test_segment_hash_integrity(self, guard):
         import hashlib
+
         content = "important content"
         seg = guard.tag_segment(content, source="document")
         expected_hash = hashlib.sha256(content.encode("utf-8")).hexdigest()

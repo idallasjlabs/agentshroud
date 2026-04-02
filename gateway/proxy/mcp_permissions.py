@@ -12,16 +12,17 @@ Trust levels map to permission ceilings, not floors.
 
 
 import fnmatch
+import json
 import logging
 import os
-import json
-import time
 import re
+import time
 from dataclasses import dataclass
 from typing import Optional
 
-from .mcp_config import MCPProxyConfig, MCPServerConfig, PermissionLevel
 from gateway.security.rbac_config import RBACConfig
+
+from .mcp_config import MCPProxyConfig, MCPServerConfig, PermissionLevel
 
 logger = logging.getLogger("agentshroud.proxy.mcp_permissions")
 
@@ -191,7 +192,9 @@ class MCPPermissionManager:
         self._private_redaction_events: list[PrivateRedactionEvent] = []
         self._max_private_access_attempts = 2000
         self._privacy_policy_status: dict[str, object] = {
-            "path": os.environ.get("AGENTSHROUD_PRIVACY_POLICY_FILE", "/app/data/privacy_policy.json"),
+            "path": os.environ.get(
+                "AGENTSHROUD_PRIVACY_POLICY_FILE", "/app/data/privacy_policy.json"
+            ),
             "loaded": False,
             "loaded_at": None,
             "error": "",
@@ -222,14 +225,18 @@ class MCPPermissionManager:
                 data = json.load(f)
             custom_patterns = data.get("admin_private_tool_patterns", [])
             if isinstance(custom_patterns, list):
-                self._private_tool_patterns = [str(p).lower() for p in custom_patterns if str(p).strip()]
+                self._private_tool_patterns = [
+                    str(p).lower() for p in custom_patterns if str(p).strip()
+                ]
                 logger.info(
                     "Loaded %d admin-private tool patterns from privacy policy",
                     len(self._private_tool_patterns),
                 )
             private_data_patterns = data.get("admin_private_data_patterns", [])
             if isinstance(private_data_patterns, list) and private_data_patterns:
-                self._private_data_patterns = [str(p) for p in private_data_patterns if str(p).strip()]
+                self._private_data_patterns = [
+                    str(p) for p in private_data_patterns if str(p).strip()
+                ]
                 logger.info(
                     "Loaded %d admin-private data patterns from privacy policy",
                     len(self._private_data_patterns),
@@ -264,7 +271,9 @@ class MCPPermissionManager:
             )
         )
         if len(self._private_access_attempts) > self._max_private_access_attempts:
-            self._private_access_attempts = self._private_access_attempts[-self._max_private_access_attempts :]
+            self._private_access_attempts = self._private_access_attempts[
+                -self._max_private_access_attempts :
+            ]
 
     def get_private_access_events(self, limit: int = 100) -> list[dict]:
         """Return recent blocked private-tool attempts for auditing."""
@@ -314,7 +323,9 @@ class MCPPermissionManager:
             )
         )
         if len(self._private_redaction_events) > self._max_private_access_attempts:
-            self._private_redaction_events = self._private_redaction_events[-self._max_private_access_attempts :]
+            self._private_redaction_events = self._private_redaction_events[
+                -self._max_private_access_attempts :
+            ]
 
     def get_private_redaction_events(self, limit: int = 100) -> list[dict]:
         """Return recent private-data redaction events."""
@@ -389,9 +400,7 @@ class MCPPermissionManager:
         # Default: WRITE level (generous but not unrestricted)
         return PermissionLevel.WRITE
 
-    def check_agent_server_access(
-        self, agent_id: str, server_name: str
-    ) -> PermissionCheck:
+    def check_agent_server_access(self, agent_id: str, server_name: str) -> PermissionCheck:
         """Check if an agent can access a server at all."""
         server_config = self.config.servers.get(server_name)
         if not server_config:
@@ -401,9 +410,7 @@ class MCPPermissionManager:
             )
 
         if not server_config.enabled:
-            return PermissionCheck(
-                allowed=False, reason=f"Server {server_name} is disabled"
-            )
+            return PermissionCheck(allowed=False, reason=f"Server {server_name} is disabled")
 
         # Check denylist first
         if server_config.denied_agents and agent_id in server_config.denied_agents:
@@ -413,10 +420,7 @@ class MCPPermissionManager:
             )
 
         # Check allowlist (empty = all allowed)
-        if (
-            server_config.allowed_agents
-            and agent_id not in server_config.allowed_agents
-        ):
+        if server_config.allowed_agents and agent_id not in server_config.allowed_agents:
             return PermissionCheck(
                 allowed=False,
                 reason=f"Agent {agent_id} not in allowlist for {server_name}",

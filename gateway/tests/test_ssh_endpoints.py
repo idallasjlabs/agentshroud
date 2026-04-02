@@ -3,10 +3,11 @@
 # Protected by common law trademark rights. Federal trademark registration pending.
 # Unauthorized reproduction, distribution, or use of the AgentShroud name or brand is strictly prohibited.
 """Tests for SSH API endpoints"""
+
 from __future__ import annotations
 
-
 import tempfile
+import time
 from pathlib import Path
 from unittest.mock import AsyncMock, patch
 
@@ -14,6 +15,7 @@ import pytest
 import pytest_asyncio
 from starlette.testclient import TestClient
 
+from gateway.approval_queue.queue import ApprovalQueue
 from gateway.ingest_api.config import (
     ApprovalQueueConfig,
     GatewayConfig,
@@ -21,15 +23,12 @@ from gateway.ingest_api.config import (
     PIIConfig,
     RouterConfig,
 )
-from gateway.ingest_api.ssh_config import SSHConfig, SSHHostConfig
-from gateway.ingest_api.main import app, app_state
 from gateway.ingest_api.ledger import DataLedger
-from gateway.ingest_api.sanitizer import PIISanitizer
-from gateway.approval_queue.queue import ApprovalQueue
+from gateway.ingest_api.main import app, app_state
 from gateway.ingest_api.router import MultiAgentRouter
+from gateway.ingest_api.sanitizer import PIISanitizer
+from gateway.ingest_api.ssh_config import SSHConfig, SSHHostConfig
 from gateway.ssh_proxy.proxy import SSHProxy, SSHResult
-
-import time
 
 
 @pytest.fixture
@@ -93,9 +92,7 @@ async def client(test_config_with_ssh):
     app_state.start_time = time.time()
 
     # Patch load_config to return our test config so lifespan doesn't override
-    with patch(
-        "gateway.ingest_api.lifespan.load_config", return_value=test_config_with_ssh
-    ):
+    with patch("gateway.ingest_api.lifespan.load_config", return_value=test_config_with_ssh):
         with TestClient(app) as c:
             yield c
 
@@ -197,9 +194,7 @@ class TestSSHHistory:
             new_callable=AsyncMock,
             return_value=mock_result,
         ):
-            client.post(
-                "/ssh/exec", json={"host": "pi", "command": "ls"}, headers=auth_headers
-            )
+            client.post("/ssh/exec", json={"host": "pi", "command": "ls"}, headers=auth_headers)
         resp = client.get("/ssh/history", headers=auth_headers)
         assert resp.status_code == 200
         data = resp.json()
@@ -225,9 +220,7 @@ class TestSSHDisabledEndpoint:
             ledger=LedgerConfig(backend="sqlite", path=tmp_path, retention_days=90),
             router=RouterConfig(enabled=True, default_target="test-agent", targets={}),
             pii=PIIConfig(engine="regex", entities=[], enabled=True),
-            approval_queue=ApprovalQueueConfig(
-                enabled=True, actions=[], timeout_seconds=3600
-            ),
+            approval_queue=ApprovalQueueConfig(enabled=True, actions=[], timeout_seconds=3600),
             log_level="WARNING",
             ssh=SSHConfig(enabled=False),
         )
@@ -290,9 +283,7 @@ class TestSSHRequireApprovalFalse:
             ledger=LedgerConfig(backend="sqlite", path=tmp_path, retention_days=90),
             router=RouterConfig(enabled=True, default_target="test-agent", targets={}),
             pii=PIIConfig(engine="regex", entities=[], enabled=True),
-            approval_queue=ApprovalQueueConfig(
-                enabled=True, actions=[], timeout_seconds=3600
-            ),
+            approval_queue=ApprovalQueueConfig(enabled=True, actions=[], timeout_seconds=3600),
             log_level="WARNING",
             ssh=ssh_cfg,
         )
@@ -312,9 +303,7 @@ class TestSSHRequireApprovalFalse:
         await app_state.ledger.close()
         tmp_path.unlink(missing_ok=True)
 
-    def test_non_auto_approved_executes_directly(
-        self, no_approval_client, auth_headers
-    ):
+    def test_non_auto_approved_executes_directly(self, no_approval_client, auth_headers):
         """When require_approval=false, non-auto-approved commands execute directly."""
         mock_result = SSHResult(
             stdout="hosts content",

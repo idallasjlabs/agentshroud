@@ -8,22 +8,22 @@ Prompt Injection Defense — detect and block prompt injection attempts.
 Scoring system with configurable thresholds. Returns structured results
 including blocked status, threat score, matched patterns, and sanitized input.
 """
+
 from __future__ import annotations
-
-from gateway.security.input_normalizer import normalize_input, detect_base64_payloads
-
 
 import base64
 import hashlib
 import hmac
 import os
+import re
 import secrets
 import time
 import unicodedata
-import re
 from dataclasses import dataclass
 from enum import Enum
 from typing import Optional
+
+from gateway.security.input_normalizer import detect_base64_payloads, normalize_input
 
 
 class ThreatAction(str, Enum):
@@ -53,6 +53,7 @@ class PatternRule:
 @dataclass
 class SystemPromptFingerprint:
     """HMAC-SHA256 fingerprint for a registered system prompt."""
+
     hmac_hex: str
     algorithm: str
     created_at: float
@@ -60,10 +61,10 @@ class SystemPromptFingerprint:
 
 # C8: Patterns that represent fake delimiter/boundary injection to strip
 _FAKE_BOUNDARY_PATTERNS: list[re.Pattern] = [
-    re.compile(r'---+\s*(?:new|real|actual)\s+(?:instructions?|prompt|task)', re.IGNORECASE),
-    re.compile(r'={3,}\s*(?:SYSTEM|OVERRIDE|NEW)\s*={3,}', re.IGNORECASE),
-    re.compile(r'<\s*/?\s*(?:system|instruction|prompt)\s*>', re.IGNORECASE),
-    re.compile(r'```\s*(?:system|assistant|user)\s*\n', re.IGNORECASE),
+    re.compile(r"---+\s*(?:new|real|actual)\s+(?:instructions?|prompt|task)", re.IGNORECASE),
+    re.compile(r"={3,}\s*(?:SYSTEM|OVERRIDE|NEW)\s*={3,}", re.IGNORECASE),
+    re.compile(r"<\s*/?\s*(?:system|instruction|prompt)\s*>", re.IGNORECASE),
+    re.compile(r"```\s*(?:system|assistant|user)\s*\n", re.IGNORECASE),
 ]
 
 
@@ -292,7 +293,7 @@ _PATTERNS: list[PatternRule] = [
         weight=0.85,
         description="Social engineering with authority claims",
     ),
-    # Instruction boundary manipulation  
+    # Instruction boundary manipulation
     PatternRule(
         "boundary_manipulation",
         re.compile(
@@ -327,7 +328,6 @@ _PATTERNS: list[PatternRule] = [
         weight=0.8,
         description="Encoding/token smuggling instruction",
     ),
-
     # ── v0.8.0 additions: 20 new patterns (43 total) ──────────────────────
     # LLaMA / Alpaca / ChatML special-token injection
     PatternRule(
@@ -565,7 +565,7 @@ _PATTERNS: list[PatternRule] = [
         weight=0.9,
         description="Tier 1 multilingual instruction override (20 languages)",
     ),
-    # Tier 2 Multilingual injection (8 languages) 
+    # Tier 2 Multilingual injection (8 languages)
     PatternRule(
         "multilingual_injection_tier2",
         re.compile(
@@ -656,9 +656,7 @@ class PromptGuard:
         b64_re = re.compile(r"[A-Za-z0-9+/]{20,}={0,2}")
         for match in b64_re.finditer(text):
             try:
-                decoded = base64.b64decode(match.group()).decode(
-                    "utf-8", errors="ignore"
-                )
+                decoded = base64.b64decode(match.group()).decode("utf-8", errors="ignore")
                 # Check for double-base64 encoding
                 for inner_match in b64_re.finditer(decoded):
                     try:
@@ -713,10 +711,10 @@ class PromptGuard:
 
         # Normalize input to defeat encoding evasion
         text = normalize_input(text)
-        
+
         # Check for base64-encoded injection payloads
         b64_payloads = detect_base64_payloads(text)
-        
+
         # Check unicode tricks on RAW text before normalization
         pre_norm_unicode = self._check_unicode_tricks(text) if text else []
 

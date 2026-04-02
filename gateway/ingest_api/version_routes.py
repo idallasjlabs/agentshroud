@@ -37,9 +37,7 @@ class VersionRequest(BaseModel):
     """Request for version change operations."""
 
     target_version: str = Field(..., description="Target version (semver)")
-    approval_id: str | None = Field(
-        None, description="Approval queue ID (required for mutations)"
-    )
+    approval_id: str | None = Field(None, description="Approval queue ID (required for mutations)")
     dry_run: bool = Field(False, description="Preview without executing")
 
 

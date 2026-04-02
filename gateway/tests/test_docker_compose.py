@@ -3,8 +3,8 @@
 # Protected by common law trademark rights. Federal trademark registration pending.
 # Unauthorized reproduction, distribution, or use of the AgentShroud name or brand is strictly prohibited.
 """Docker Compose Validation Tests — parse and validate compose files."""
-from __future__ import annotations
 
+from __future__ import annotations
 
 from pathlib import Path
 
@@ -64,9 +64,7 @@ class TestProductionCompose:
 
     def test_gateway_read_only(self, compose):
         gateway = compose["services"]["gateway"]
-        assert (
-            gateway.get("read_only") is True
-        ), "Production gateway should have read_only rootfs"
+        assert gateway.get("read_only") is True, "Production gateway should have read_only rootfs"
 
     def test_gateway_no_new_privileges(self, compose):
         gateway = compose["services"]["gateway"]

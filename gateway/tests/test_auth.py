@@ -3,8 +3,8 @@
 # Protected by common law trademark rights. Federal trademark registration pending.
 # Unauthorized reproduction, distribution, or use of the AgentShroud name or brand is strictly prohibited.
 """Tests for authentication and rate limiting"""
-from __future__ import annotations
 
+from __future__ import annotations
 
 import time
 

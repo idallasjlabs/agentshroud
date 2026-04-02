@@ -7,14 +7,14 @@
 Supports Docker, Podman, and Apple Containers with automatic detection.
 """
 
-import shutil
 import logging
+import shutil
 from typing import Optional
 
-from .engine import ContainerEngine
-from .docker_engine import DockerEngine
-from .podman_engine import PodmanEngine
 from .apple_engine import AppleContainerEngine
+from .docker_engine import DockerEngine
+from .engine import ContainerEngine
+from .podman_engine import PodmanEngine
 
 logger = logging.getLogger("agentshroud.runtime")
 
@@ -64,9 +64,7 @@ def get_engine(preference: Optional[str] = None) -> ContainerEngine:
     if preference:
         key = preference.lower()
         if key not in engines:
-            raise ValueError(
-                f"Unknown runtime: {preference!r}. Choose from: {list(engines)}"
-            )
+            raise ValueError(f"Unknown runtime: {preference!r}. Choose from: {list(engines)}")
         return engines[key]()
 
     available = detect_runtime()
@@ -76,6 +74,4 @@ def get_engine(preference: Optional[str] = None) -> ContainerEngine:
             logger.info("Selected runtime: %s", rt)
             return engines[rt]()
 
-    raise RuntimeError(
-        "No container runtime found. Install Docker, Podman, or Apple Containers."
-    )
+    raise RuntimeError("No container runtime found. Install Docker, Podman, or Apple Containers.")

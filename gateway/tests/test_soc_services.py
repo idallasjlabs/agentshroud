@@ -3,10 +3,11 @@
 
 from __future__ import annotations
 
-import pytest
 from unittest.mock import AsyncMock, MagicMock, patch
 
-from gateway.soc.models import ServiceStatus, HealthStatus, ServiceDescriptor
+import pytest
+
+from gateway.soc.models import HealthStatus, ServiceDescriptor, ServiceStatus
 
 
 class TestServiceDescriptorDefaults:
@@ -61,10 +62,12 @@ class TestServiceManagerImport:
 
     def test_import(self):
         from gateway.soc.services import ServiceManager
+
         assert ServiceManager is not None
 
     def test_instantiate_without_engine(self):
         from gateway.soc.services import ServiceManager
+
         # Should not raise — engine is resolved lazily
         sm = ServiceManager()
         assert sm is not None
@@ -76,6 +79,7 @@ class TestServiceManagerGetLogs:
     @pytest.fixture
     def mgr_with_engine(self):
         from gateway.soc.services import ServiceManager
+
         engine = MagicMock()
         return ServiceManager(engine=engine), engine
 
@@ -130,6 +134,7 @@ class TestServiceManagerGetLogs:
     @pytest.mark.asyncio
     async def test_get_logs_no_engine_returns_empty(self):
         from gateway.soc.services import ServiceManager
+
         mgr = ServiceManager(engine=None)
         with patch("os.path.exists", return_value=False):
             lines = await mgr.get_logs("agentshroud-gateway", tail=10)

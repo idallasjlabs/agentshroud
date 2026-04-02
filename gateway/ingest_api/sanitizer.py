@@ -8,8 +8,8 @@ Detects and redacts personally identifiable information using:
 1. Microsoft Presidio with spaCy (if available)
 2. Regex patterns (fallback)
 """
-from __future__ import annotations
 
+from __future__ import annotations
 
 import asyncio
 import logging
@@ -109,12 +109,14 @@ class PIISanitizer:
 
                 # Initialize Presidio engines with our specific spaCy model
                 from presidio_analyzer.nlp_engine import NlpEngineProvider
+
                 nlp_config = {
                     "nlp_engine_name": "spacy",
                     "models": [{"lang_code": "en", "model_name": "en_core_web_sm"}],
                 }
                 nlp_engine = NlpEngineProvider(nlp_configuration=nlp_config).create_engine()
                 from presidio_analyzer import RecognizerRegistry
+
                 registry = RecognizerRegistry(supported_languages=["en"])
                 registry.load_predefined_recognizers(languages=["en"])
                 self.analyzer = AnalyzerEngine(
@@ -128,15 +130,12 @@ class PIISanitizer:
 
             except (OSError, Exception) as e:
                 logger.warning(
-                    f"spaCy model not available or incompatible: {e}. "
-                    "Using regex fallback."
+                    f"spaCy model not available or incompatible: {e}. " "Using regex fallback."
                 )
                 self.mode = "regex"
 
         except ImportError as e:
-            logger.warning(
-                f"Presidio not installed: {e}. Using regex fallback for PII detection."
-            )
+            logger.warning(f"Presidio not installed: {e}. Using regex fallback for PII detection.")
             self.mode = "regex"
 
     async def sanitize(self, content: str) -> RedactionResult:
@@ -165,7 +164,9 @@ class PIISanitizer:
             regex_result = await self._sanitize_regex(presidio_result.sanitized_content)
             # Merge redactions from both passes
             all_redactions = presidio_result.redactions + regex_result.redactions
-            all_types = list(set(presidio_result.entity_types_found + regex_result.entity_types_found))
+            all_types = list(
+                set(presidio_result.entity_types_found + regex_result.entity_types_found)
+            )
             return RedactionResult(
                 sanitized_content=regex_result.sanitized_content,
                 redactions=all_redactions,
@@ -185,9 +186,7 @@ class PIISanitizer:
             entities = self.config.entities
 
             # Analyze
-            results = self.analyzer.analyze(
-                text=content, entities=entities, language="en"
-            )
+            results = self.analyzer.analyze(text=content, entities=entities, language="en")
 
             # Filter by confidence
             results = [r for r in results if r.score >= self.config.min_confidence]
@@ -198,9 +197,7 @@ class PIISanitizer:
                 )
 
             # Anonymize
-            anonymized = self.anonymizer.anonymize(
-                text=content, analyzer_results=results
-            )
+            anonymized = self.anonymizer.anonymize(text=content, analyzer_results=results)
 
             # Build redaction details
             redactions = [
@@ -246,7 +243,11 @@ class PIISanitizer:
 
         # If no entities configured, detect all by default
         entities = self.config.entities or [
-            "US_SSN", "CREDIT_CARD", "PHONE_NUMBER", "EMAIL_ADDRESS", "LOCATION"
+            "US_SSN",
+            "CREDIT_CARD",
+            "PHONE_NUMBER",
+            "EMAIL_ADDRESS",
+            "LOCATION",
         ]
 
         if "US_SSN" in entities:
@@ -289,9 +290,7 @@ class PIISanitizer:
             patterns.append(
                 (
                     "PHONE_NUMBER",
-                    re.compile(
-                        r"\b(?:\+?1[-.\s]?)?\(?\d{3}\)?[-.\s]?\d{3}[-.\s]?\d{4}\b"
-                    ),
+                    re.compile(r"\b(?:\+?1[-.\s]?)?\(?\d{3}\)?[-.\s]?\d{3}[-.\s]?\d{4}\b"),
                     "<PHONE_NUMBER>",
                 )
             )
@@ -337,9 +336,7 @@ class PIISanitizer:
         # Apply replacements (reverse order to maintain positions)
         for redaction in redactions:
             sanitized = (
-                sanitized[: redaction.start]
-                + redaction.replacement
-                + sanitized[redaction.end :]
+                sanitized[: redaction.start] + redaction.replacement + sanitized[redaction.end :]
             )
 
         # Get unique entity types

@@ -3,12 +3,14 @@
 # Protected by common law trademark rights. Federal trademark registration pending.
 # Unauthorized reproduction, distribution, or use of the AgentShroud name or brand is strictly prohibited.
 """Tests for Metadata Channel Guard"""
+
 from __future__ import annotations
 
-
 import hashlib
+
 import pytest
-from gateway.security.metadata_guard import MetadataGuard, DocumentTag
+
+from gateway.security.metadata_guard import DocumentTag, MetadataGuard
 
 
 class TestMetadataGuard:
@@ -179,6 +181,7 @@ class TestMetadataGuard:
 
 
 # ── C18: Document File Tagging tests ─────────────────────────────────────────
+
 
 class TestDocumentTagging:
     @pytest.fixture

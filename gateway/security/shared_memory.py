@@ -17,17 +17,18 @@ Architecture:
   group workspaces live at:  <base>/groups/<group_id>/MEMORY.md
   user workspaces live at:   <base>/users/<user_id>/MEMORY.md
 """
+
 from __future__ import annotations
 
 import logging
 import re
 from datetime import datetime, timezone
 from pathlib import Path
-from typing import List, Optional, TYPE_CHECKING
+from typing import TYPE_CHECKING, List, Optional
 
 if TYPE_CHECKING:
-    from gateway.security.session_manager import UserSessionManager
     from gateway.security.rbac_config import RBACConfig
+    from gateway.security.session_manager import UserSessionManager
 
 logger = logging.getLogger("agentshroud.security.shared_memory")
 
@@ -39,10 +40,10 @@ _PRIVATE_PATTERNS: List[re.Pattern] = [
     # key/secret/token assignment — stays on one line to avoid bleeding into next
     re.compile(r"(?i)(api[_\s-]?key|secret|password|token|credential)[ \t]*[:=][ \t]*\S+"),
     re.compile(r"(?i)bearer\s+[A-Za-z0-9\-._~+/]+=*"),
-    re.compile(r"(?i)sk-[A-Za-z0-9]{20,}"),         # OpenAI-style keys
-    re.compile(r"(?i)[0-9]{10}:[A-Za-z0-9\-_]{35}"), # Telegram bot token shape
+    re.compile(r"(?i)sk-[A-Za-z0-9]{20,}"),  # OpenAI-style keys
+    re.compile(r"(?i)[0-9]{10}:[A-Za-z0-9\-_]{35}"),  # Telegram bot token shape
     re.compile(r"(?i)-----BEGIN [A-Z ]+-----[\s\S]+?-----END [A-Z ]+-----"),  # PEM blocks
-    re.compile(r"\b[A-Z0-9]{20}\b"),                 # AWS access key shape (20-char uppercase)
+    re.compile(r"\b[A-Z0-9]{20}\b"),  # AWS access key shape (20-char uppercase)
 ]
 
 _PRIVATE_SECTION_HEADER = re.compile(
@@ -79,7 +80,12 @@ class SharedMemoryManager:
             entry = f"\n---\n**[{ts}] {author_id}:**\n{content.strip()}\n"
             with open(gs.memory_file, "a", encoding="utf-8") as fh:
                 fh.write(entry)
-            logger.debug("Appended to group memory: group=%s author=%s bytes=%d", group_id, author_id, len(entry))
+            logger.debug(
+                "Appended to group memory: group=%s author=%s bytes=%d",
+                group_id,
+                author_id,
+                len(entry),
+            )
         except Exception as exc:
             logger.warning("Could not append to group memory for %s: %s", group_id, exc)
 
@@ -155,9 +161,7 @@ class SharedMemoryManager:
 
         # Prioritise active_group_id
         if active_group_id:
-            accessible_groups.sort(
-                key=lambda item: (0 if item[0] == active_group_id else 1)
-            )
+            accessible_groups.sort(key=lambda item: (0 if item[0] == active_group_id else 1))
 
         # 3. Append each group's shared memory
         for gid, group in accessible_groups:
@@ -171,7 +175,8 @@ class SharedMemoryManager:
                     logger.warning(
                         "SharedMemory AUDIT: private content detected in group memory — "
                         "redacting before serving to non-owner: user=%s group=%s",
-                        user_id, gid,
+                        user_id,
+                        gid,
                     )
                 filtered = self._strip_private_content(raw)
             if filtered.strip():
@@ -230,7 +235,8 @@ class SharedMemoryManager:
                     logger.warning(
                         "SharedMemory AUDIT: private content detected in group memory — "
                         "redacting before serving to non-owner: user=%s group=%s",
-                        user_id, gid,
+                        user_id,
+                        gid,
                     )
                 filtered = self._strip_private_content(raw)
             if filtered.strip():

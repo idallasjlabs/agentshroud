@@ -3,6 +3,7 @@
 # Protected by common law trademark rights. Federal trademark registration pending.
 # Unauthorized reproduction, distribution, or use of the AgentShroud name or brand is strictly prohibited.
 """Tests for gateway/security/credential_injector.py — verify secrets never leak."""
+
 from __future__ import annotations
 
 import logging
@@ -10,6 +11,7 @@ import tempfile
 from pathlib import Path
 
 import pytest
+
 from gateway.security.credential_injector import (
     CredentialInjector,
     CredentialInjectorConfig,
@@ -47,6 +49,7 @@ def injector(secrets_dir):
 # ---------------------------------------------------------------------------
 # Header injection
 # ---------------------------------------------------------------------------
+
 
 class TestCredentialInjection:
     def test_credential_injected_into_request(self, injector):
@@ -88,6 +91,7 @@ class TestCredentialInjection:
 # ---------------------------------------------------------------------------
 # Leak detection
 # ---------------------------------------------------------------------------
+
 
 class TestLeakDetection:
     def test_openai_key_detected(self, injector):
@@ -135,6 +139,7 @@ class TestLeakDetection:
 # Status endpoint
 # ---------------------------------------------------------------------------
 
+
 class TestStatus:
     def test_get_status_structure(self, injector):
         status = injector.get_status()
@@ -152,6 +157,4 @@ class TestStatus:
         # The actual secret value should NOT appear in any log record
         secret = "sk-test-secret-key-12345678901234567890"
         for record in caplog.records:
-            assert secret not in record.getMessage(), (
-                f"Secret leaked in log: {record.getMessage()}"
-            )
+            assert secret not in record.getMessage(), f"Secret leaked in log: {record.getMessage()}"

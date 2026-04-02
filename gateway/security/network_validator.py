@@ -6,16 +6,18 @@
 Container Network Isolation Validator - Security Hardening Module
 Validate docker-compose network configuration and detect security issues.
 """
+
 from __future__ import annotations
 
-
-import yaml
 import json
 import logging
-import docker
 import time
-from typing import Dict, List, Any, Optional
 from dataclasses import dataclass
+from typing import Any, Dict, List, Optional
+
+import yaml
+
+import docker
 
 logger = logging.getLogger(__name__)
 
@@ -55,15 +57,17 @@ class NetworkValidator:
         self.expected_networks = {
             "agentshroud-internal",  # Internet-accessible network (gateway only)
             "agentshroud-isolated",  # Isolated network (gateway ↔ bot, no internet)
-            "agentshroud-console",   # Console access network
-            "default",               # Docker default network
+            "agentshroud-console",  # Console access network
+            "default",  # Docker default network
         }
         self.gateway_service = "gateway"  # Service that should bridge networks
 
         try:
             self.docker_client = docker.from_env()
         except Exception as e:
-            logger.info("NetworkValidator: Docker socket not available (expected in containerized deployments) — static validation only")
+            logger.info(
+                "NetworkValidator: Docker socket not available (expected in containerized deployments) — static validation only"
+            )
 
     def validate_docker_compose_config(
         self, compose_file_path: str
@@ -330,10 +334,7 @@ class NetworkValidator:
                         )
 
             # Check for services that shouldn't expose ports
-            if (
-                service_name == "bot"
-                and service_name != self.gateway_service
-            ):
+            if service_name == "bot" and service_name != self.gateway_service:
                 if config.published_ports:
                     findings.append(
                         NetworkSecurityFinding(
@@ -483,9 +484,7 @@ class NetworkValidator:
 
         return findings
 
-    def _validate_container_runtime_config(
-        self, container
-    ) -> List[NetworkSecurityFinding]:
+    def _validate_container_runtime_config(self, container) -> List[NetworkSecurityFinding]:
         """Validate a single container's runtime network configuration."""
         findings = []
 
@@ -516,10 +515,7 @@ class NetworkValidator:
                         if host_port:
                             exposed_ports.append(f"{host_port}:{container_port}")
 
-            if (
-                exposed_ports
-                and container_name == "agentshroud-bot"
-            ):
+            if exposed_ports and container_name == "agentshroud-bot":
                 findings.append(
                     NetworkSecurityFinding(
                         category="runtime_unnecessary_exposure",
@@ -536,9 +532,7 @@ class NetworkValidator:
 
         return findings
 
-    def detect_configuration_drift(
-        self, compose_file_path: str
-    ) -> List[NetworkSecurityFinding]:
+    def detect_configuration_drift(self, compose_file_path: str) -> List[NetworkSecurityFinding]:
         """Detect drift between compose file and runtime configuration."""
         findings = []
 

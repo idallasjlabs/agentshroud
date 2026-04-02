@@ -10,11 +10,13 @@ Verifies:
 - Transparent credential injection works
 - Credential leak detection catches patterns
 """
+
 from __future__ import annotations
 
-import pytest
 import os
 import re
+
+import pytest
 
 
 class TestCredentialInjector:
@@ -26,6 +28,7 @@ class TestCredentialInjector:
             CredentialInjector,
             CredentialInjectorConfig,
         )
+
         # Use a temp dir with no secrets (simulating agent container)
         config = CredentialInjectorConfig(secrets_dir="/tmp/nonexistent-secrets")
         return CredentialInjector(config)
@@ -36,6 +39,7 @@ class TestCredentialInjector:
             CredentialInjector,
             CredentialInjectorConfig,
         )
+
         # Create fake secrets matching Docker secret mount names (no .txt suffix)
         (tmp_path / "anthropic_oauth_token").write_text("test-oauth-token-abc")
         (tmp_path / "openai_api_key").write_text("sk-test-openai-key-67890")
@@ -66,6 +70,7 @@ class TestCredentialInjector:
             CredentialInjector,
             CredentialInjectorConfig,
         )
+
         (tmp_path / "anthropic_oauth_token").write_text("sk-ant-test")
         config = CredentialInjectorConfig(secrets_dir=str(tmp_path), enabled=False)
         injector = CredentialInjector(config)
@@ -98,11 +103,14 @@ class TestCredentialLeakDetection:
             CredentialInjector,
             CredentialInjectorConfig,
         )
+
         config = CredentialInjectorConfig(secrets_dir="/tmp/nonexistent")
         return CredentialInjector(config)
 
     def test_detect_openai_key(self, injector):
-        result = injector.scan_for_credential_leak("Here is my key: sk-proj-abc123def456ghi789jkl012mno345pqr678stu")
+        result = injector.scan_for_credential_leak(
+            "Here is my key: sk-proj-abc123def456ghi789jkl012mno345pqr678stu"
+        )
         assert result is not None
         assert "API key" in result
 
@@ -112,7 +120,9 @@ class TestCredentialLeakDetection:
         assert "AWS" in result
 
     def test_detect_github_token(self, injector):
-        result = injector.scan_for_credential_leak("Token: ghp_ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghij")
+        result = injector.scan_for_credential_leak(
+            "Token: ghp_ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghij"
+        )
         assert result is not None
         assert "GitHub" in result
 
@@ -134,7 +144,9 @@ class TestCredentialLeakDetection:
         assert "1Password" in result
 
     def test_clean_content_passes(self, injector):
-        result = injector.scan_for_credential_leak("This is a normal message about security best practices.")
+        result = injector.scan_for_credential_leak(
+            "This is a normal message about security best practices."
+        )
         assert result is None
 
     def test_clean_code_passes(self, injector):
@@ -146,12 +158,15 @@ class TestCredentialLeakDetection:
             CredentialInjector,
             CredentialInjectorConfig,
         )
+
         config = CredentialInjectorConfig(
             secrets_dir="/tmp/nonexistent",
             leak_detection=False,
         )
         injector = CredentialInjector(config)
-        result = injector.scan_for_credential_leak("sk-proj-abc123def456ghi789jkl012mno345pqr678stu")
+        result = injector.scan_for_credential_leak(
+            "sk-proj-abc123def456ghi789jkl012mno345pqr678stu"
+        )
         assert result is None  # Detection disabled
 
 
@@ -161,6 +176,7 @@ class TestDockerSecretIsolation:
     def test_compose_gateway_has_secrets(self):
         """Gateway service should have secrets configured."""
         import yaml
+
         compose_path = os.path.join(
             os.path.dirname(__file__), "..", "..", "docker", "docker-compose.yml"
         )
@@ -174,6 +190,7 @@ class TestDockerSecretIsolation:
     def test_compose_agent_no_gateway_secrets(self):
         """Agent (agentshroud) service should not have credential secrets."""
         import yaml
+
         compose_path = os.path.join(
             os.path.dirname(__file__), "..", "..", "docker", "docker-compose.yml"
         )
@@ -185,8 +202,11 @@ class TestDockerSecretIsolation:
         agent_secrets = agent.get("secrets", [])
         # Agent should not have credential-type secrets
         credential_secrets = [
-            "anthropic_api_key", "openai_api_key", "gmail_password",
-            "op_service_account_token", "1password_service_account",
+            "anthropic_api_key",
+            "openai_api_key",
+            "gmail_password",
+            "op_service_account_token",
+            "1password_service_account",
         ]
         for secret_name in credential_secrets:
             # Check both string refs and dict refs

@@ -8,6 +8,7 @@ Defines user roles and access control policies for AgentShroud.
 """
 
 from __future__ import annotations
+
 import fcntl
 import json
 import logging
@@ -31,15 +32,17 @@ class Role(str, Enum):
     capability when explicitly delegated by the owner. Sits between admin and
     collaborator — can be granted time-bounded owner-delegated privileges.
     """
+
     OWNER = "owner"
     ADMIN = "admin"
-    OPERATOR = "operator"      # v0.9.0: granular role between admin and collaborator
+    OPERATOR = "operator"  # v0.9.0: granular role between admin and collaborator
     COLLABORATOR = "collaborator"
     VIEWER = "viewer"
 
 
 class ToolTier(str, Enum):
     """Tool security tiers for RBAC permissions."""
+
     CRITICAL = "critical"
     HIGH = "high"
     MEDIUM = "medium"
@@ -49,6 +52,7 @@ class ToolTier(str, Enum):
 @dataclass
 class RBACConfig:
     """Configuration for Role-Based Access Control."""
+
     # User to role mapping
     user_roles: Dict[str, Role] = field(default_factory=dict)
 
@@ -59,22 +63,24 @@ class RBACConfig:
     owner_user_id: str = "8096968754"
 
     # Pre-configured collaborators
-    collaborator_user_ids: List[str] = field(default_factory=lambda: [
-        "8506022825",
-        "8545356403",
-        "15712621992",
-        "8279589982",
-        "8526379012",
-        "7614658040",
-        "8633775668"
-    ])
+    collaborator_user_ids: List[str] = field(
+        default_factory=lambda: [
+            "8506022825",
+            "8545356403",
+            "15712621992",
+            "8279589982",
+            "8526379012",
+            "7614658040",
+            "8633775668",
+        ]
+    )
 
     # Group admin mapping — {group_id: admin_user_id}. Populated from TeamsConfig.
     group_admin_ids: Dict[str, str] = field(default_factory=dict)
 
     # TeamsConfig reference (set by lifespan after config load, not in __post_init__)
     teams_config: Optional["TeamsConfig"] = field(default=None, repr=False)
-    
+
     def __post_init__(self):
         """Initialize user roles based on configuration."""
         owner_override = str(os.environ.get("AGENTSHROUD_OWNER_USER_ID", "")).strip()
@@ -91,11 +97,7 @@ class RBACConfig:
             os.environ.get("AGENTSHROUD_COLLABORATOR_USER_IDS", "")
         ).strip()
         if collaborators_override:
-            parsed = [
-                token.strip()
-                for token in collaborators_override.split(",")
-                if token.strip()
-            ]
+            parsed = [token.strip() for token in collaborators_override.split(",") if token.strip()]
             self.collaborator_user_ids = parsed
 
         # Ensure owner never appears as collaborator.
@@ -116,7 +118,7 @@ class RBACConfig:
         for user_id in self.collaborator_user_ids:
             if user_id not in self.user_roles:  # Don't override owner
                 self.user_roles[user_id] = Role.COLLABORATOR
-    
+
     def wire_teams_config(self, teams: "TeamsConfig") -> None:
         """Merge group membership and admin IDs from TeamsConfig into RBAC.
 
@@ -145,19 +147,19 @@ class RBACConfig:
     def get_user_role(self, user_id: str) -> Role:
         """Get role for a user ID."""
         return self.user_roles.get(user_id, self.default_role)
-    
+
     def set_user_role(self, user_id: str, role: Role) -> None:
         """Set role for a user ID (owner-only operation)."""
         self.user_roles[user_id] = role
-    
+
     def get_users_by_role(self, role: Role) -> List[str]:
         """Get all users with a specific role."""
         return [user_id for user_id, user_role in self.user_roles.items() if user_role == role]
-    
+
     def is_owner(self, user_id: str) -> bool:
         """Check if user is the owner (any platform)."""
         return user_id == self.owner_user_id or self.user_roles.get(user_id) == Role.OWNER
-    
+
     def is_admin_or_higher(self, user_id: str) -> bool:
         """Check if user has admin privileges or higher."""
         role = self.get_user_role(user_id)
@@ -180,13 +182,15 @@ class RBACConfig:
 # and never persisted. Custom groups are persisted to groups.json.
 # ---------------------------------------------------------------------------
 
+
 @dataclass
 class Group:
     """A named group of users."""
+
     id: str
     name: str
     members: List[str] = field(default_factory=list)
-    platform: Optional[str] = None          # 'telegram', 'slack', or None for cross-platform
+    platform: Optional[str] = None  # 'telegram', 'slack', or None for cross-platform
     telegram_chat_id: Optional[int] = None  # Linked Telegram group/supergroup chat ID
     slack_channel_id: Optional[str] = None  # Provisioned Slack channel ID (C...)
 
@@ -197,6 +201,7 @@ _AUTO_GROUP_IDS = frozenset({"telegram", "slack", "everyone"})
 @dataclass
 class GroupRegistry:
     """Manages user groups including auto-groups and custom groups."""
+
     groups: Dict[str, Group] = field(default_factory=dict)
 
     def init_auto_groups(self, rbac: "RBACConfig") -> None:
@@ -205,19 +210,27 @@ class GroupRegistry:
         # Telegram: numeric user IDs (may be prefixed with - for supergroups, but user IDs are positive)
         telegram_users = [uid for uid in all_users if uid.lstrip("-").isdigit()]
         # Slack: alphanumeric IDs starting with U (e.g. U0AL7640RHD)
-        slack_users = [uid for uid in all_users if uid.startswith("U") and len(uid) >= 8 and uid[1:].isalnum()]
+        slack_users = [
+            uid for uid in all_users if uid.startswith("U") and len(uid) >= 8 and uid[1:].isalnum()
+        ]
 
         self.groups["telegram"] = Group(
-            id="telegram", name="Telegram Users",
-            members=telegram_users, platform="telegram",
+            id="telegram",
+            name="Telegram Users",
+            members=telegram_users,
+            platform="telegram",
         )
         self.groups["slack"] = Group(
-            id="slack", name="Slack Users",
-            members=slack_users, platform="slack",
+            id="slack",
+            name="Slack Users",
+            members=slack_users,
+            platform="slack",
         )
         self.groups["everyone"] = Group(
-            id="everyone", name="Everyone",
-            members=all_users, platform=None,
+            id="everyone",
+            name="Everyone",
+            members=all_users,
+            platform=None,
         )
         # Layer custom groups on top without overwriting auto-groups
         for group in _load_persisted_groups():
@@ -232,9 +245,13 @@ class GroupRegistry:
         """Return all groups."""
         return list(self.groups.values())
 
-    def create_group(self, group_id: str, name: str,
-                     members: Optional[List[str]] = None,
-                     platform: Optional[str] = None) -> Group:
+    def create_group(
+        self,
+        group_id: str,
+        name: str,
+        members: Optional[List[str]] = None,
+        platform: Optional[str] = None,
+    ) -> Group:
         """Create or replace a custom group and persist it."""
         if group_id in _AUTO_GROUP_IDS:
             raise ValueError(f"Cannot create group with reserved id: {group_id!r}")
@@ -266,9 +283,7 @@ class GroupRegistry:
         """Remove a user from a group (auto-groups are updated in-memory only)."""
         if group_id not in self.groups:
             raise KeyError(f"Group not found: {group_id!r}")
-        self.groups[group_id].members = [
-            m for m in self.groups[group_id].members if m != user_id
-        ]
+        self.groups[group_id].members = [m for m in self.groups[group_id].members if m != user_id]
         if group_id not in _AUTO_GROUP_IDS:
             _persist_groups(self.groups)
 
@@ -282,9 +297,7 @@ class GroupRegistry:
 # Group persistence — only custom (non-auto) groups are written to disk.
 # ---------------------------------------------------------------------------
 
-_GROUPS_FILE_PATH = Path(
-    os.environ.get("AGENTSHROUD_DATA_DIR", "/app/data")
-) / "groups.json"
+_GROUPS_FILE_PATH = Path(os.environ.get("AGENTSHROUD_DATA_DIR", "/app/data")) / "groups.json"
 _groups_persist_logger = logging.getLogger("agentshroud.security.rbac_config")
 
 
@@ -339,9 +352,9 @@ def _persist_groups(groups: Dict[str, Group]) -> None:
 # shared data volume.
 # ---------------------------------------------------------------------------
 _collab_persist_logger = logging.getLogger("agentshroud.security.rbac_config")
-_APPROVED_COLLABORATORS_FILE = Path(
-    os.environ.get("AGENTSHROUD_DATA_DIR", "/app/data")
-) / "approved_collaborators.json"
+_APPROVED_COLLABORATORS_FILE = (
+    Path(os.environ.get("AGENTSHROUD_DATA_DIR", "/app/data")) / "approved_collaborators.json"
+)
 
 
 def load_persisted_collaborators() -> list[str]:

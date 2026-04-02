@@ -19,12 +19,13 @@ Integrates with:
   - RBACConfig for role resolution
   - TeamsConfig for group tool_tier_max and per-group overrides
 """
+
 from __future__ import annotations
 
 import logging
 import time
 from dataclasses import dataclass, field
-from typing import Dict, List, Optional, Tuple, TYPE_CHECKING
+from typing import TYPE_CHECKING, Dict, List, Optional, Tuple
 
 if TYPE_CHECKING:
     from gateway.security.rbac_config import RBACConfig, Role
@@ -36,96 +37,104 @@ logger = logging.getLogger("agentshroud.security.tool_acl")
 # ---------------------------------------------------------------------------
 
 # Owner-only: collaborators and admins cannot use these regardless of context.
-PRIVATE_TOOLS: frozenset[str] = frozenset({
-    # Personal services
-    "gmail",
-    "google_mail",
-    "icloud",
-    "icloud_calendar",
-    "icloud_contacts",
-    "icloud_notes",
-    "apple_messages",
-    "apple_mail",
-    # Financial
-    "banking",
-    "financial",
-    "stripe",
-    "paypal",
-    "venmo",
-    # Key / credential management
-    "key_rotation",
-    "secret_manager",
-    "1password",
-    "onepassword",
-    "op",  # 1Password CLI
-    "credential_injector",
-    # Infrastructure
-    "ssh",
-    "aws_iam",
-    "terraform",
-    "ansible",
-    # Home automation (personal)
-    "home_assistant",
-    "homekit",
-    "ha_automation",
-})
+PRIVATE_TOOLS: frozenset[str] = frozenset(
+    {
+        # Personal services
+        "gmail",
+        "google_mail",
+        "icloud",
+        "icloud_calendar",
+        "icloud_contacts",
+        "icloud_notes",
+        "apple_messages",
+        "apple_mail",
+        # Financial
+        "banking",
+        "financial",
+        "stripe",
+        "paypal",
+        "venmo",
+        # Key / credential management
+        "key_rotation",
+        "secret_manager",
+        "1password",
+        "onepassword",
+        "op",  # 1Password CLI
+        "credential_injector",
+        # Infrastructure
+        "ssh",
+        "aws_iam",
+        "terraform",
+        "ansible",
+        # Home automation (personal)
+        "home_assistant",
+        "homekit",
+        "ha_automation",
+    }
+)
 
 # Admin+: available to owner + admin roles only.
-ADMIN_TOOLS: frozenset[str] = frozenset({
-    "rbac_manage",
-    "user_management",
-    "config_write",
-    "gateway_config",
-    "audit_export",
-    "security_scan",
-    "trivy",
-    "wazuh",
-    "clamav",
-    "openscap",
-    "egress_policy",
-    "memory_manage",
-    "session_admin",
-    "kill_session",
-    "delegation_manage",
-})
+ADMIN_TOOLS: frozenset[str] = frozenset(
+    {
+        "rbac_manage",
+        "user_management",
+        "config_write",
+        "gateway_config",
+        "audit_export",
+        "security_scan",
+        "trivy",
+        "wazuh",
+        "clamav",
+        "openscap",
+        "egress_policy",
+        "memory_manage",
+        "session_admin",
+        "kill_session",
+        "delegation_manage",
+    }
+)
 
 # Collaborator allowlist: tools collaborators CAN use (additive to PRIVATE/ADMIN blocklists)
 # These are the "safe" subset. Everything not in this list is also denied for
 # collaborators unless explicitly in a group allowlist.
-COLLABORATOR_ALLOWED_TOOLS: frozenset[str] = frozenset({
-    "read",
-    "write",
-    "edit",
-    "search",
-    "grep",
-    "glob",
-    "web_search",
-    "web_fetch",
-    "calculator",
-    "translate",
-    "summarize",
-    "draft",
-    "calendar_read",     # read-only calendar access
-    "notes_read",        # read-only notes
-    "slack_send",        # outbound Slack (gated by egress)
-    "jira_read",
-    "jira_comment",
-    "confluence_read",
-    "github_read",
-    "github_comment",
-    "monitoring_read",   # Zabbix/Grafana read-only
-    "athena_query",      # data platform read-only
-    "s3_read",           # S3 read-only
-})
+COLLABORATOR_ALLOWED_TOOLS: frozenset[str] = frozenset(
+    {
+        "read",
+        "write",
+        "edit",
+        "search",
+        "grep",
+        "glob",
+        "web_search",
+        "web_fetch",
+        "calculator",
+        "translate",
+        "summarize",
+        "draft",
+        "calendar_read",  # read-only calendar access
+        "notes_read",  # read-only notes
+        "slack_send",  # outbound Slack (gated by egress)
+        "jira_read",
+        "jira_comment",
+        "confluence_read",
+        "github_read",
+        "github_comment",
+        "monitoring_read",  # Zabbix/Grafana read-only
+        "athena_query",  # data platform read-only
+        "s3_read",  # S3 read-only
+    }
+)
 
 
 # ---------------------------------------------------------------------------
 # C35: Per-Tool Rate Limits
 # ---------------------------------------------------------------------------
 
+
 @dataclass
 class ToolRateLimit:
     """Per-tool call rate limit configuration."""
+
     tool_name: str
     max_calls_per_minute: int
     max_calls_per_hour: int
@@ -133,18 +142,19 @@ class ToolRateLimit:
 
 _DEFAULT_TOOL_RATE_LIMITS: Dict[str, ToolRateLimit] = {
     "execute_command": ToolRateLimit("execute_command", 5, 30),
-    "exec":            ToolRateLimit("exec", 5, 30),
-    "bash":            ToolRateLimit("bash", 5, 30),
-    "delete_file":     ToolRateLimit("delete_file", 3, 15),
-    "delete":          ToolRateLimit("delete", 3, 15),
-    "write_file":      ToolRateLimit("write_file", 10, 60),
-    "write":           ToolRateLimit("write", 10, 60),
+    "exec": ToolRateLimit("exec", 5, 30),
+    "bash": ToolRateLimit("bash", 5, 30),
+    "delete_file": ToolRateLimit("delete_file", 3, 15),
+    "delete": ToolRateLimit("delete", 3, 15),
+    "write_file": ToolRateLimit("write_file", 10, 60),
+    "write": ToolRateLimit("write", 10, 60),
 }
 
 
 # ---------------------------------------------------------------------------
 # Config
 # ---------------------------------------------------------------------------
+
 
 @dataclass
 class ToolACLConfig:
@@ -153,6 +163,7 @@ class ToolACLConfig:
     Loaded from agentshroud.yaml `tool_acl:` section; defaults match the
     conservative security posture above.
     """
+
     # Override the built-in sets via YAML config (appended, not replaced)
     extra_private_tools: List[str] = field(default_factory=list)
     extra_admin_tools: List[str] = field(default_factory=list)
@@ -181,6 +192,7 @@ class ToolACLConfig:
 # Enforcer
 # ---------------------------------------------------------------------------
 
+
 class ToolACLEnforcer:
     """Enforces tool-level access control based on user role and group membership.
 
@@ -189,7 +201,9 @@ class ToolACLEnforcer:
         allowed, reason = enforcer.can_use_tool(user_id, "gmail")
     """
 
-    def __init__(self, acl_config: Optional[ToolACLConfig] = None, rbac_config: Optional["RBACConfig"] = None):
+    def __init__(
+        self, acl_config: Optional[ToolACLConfig] = None, rbac_config: Optional["RBACConfig"] = None
+    ):
         self._acl = acl_config or ToolACLConfig()
         self._rbac = rbac_config
         # C35: sliding window call-time store  { user_id: { tool_name: [timestamps] } }
@@ -217,7 +231,9 @@ class ToolACLEnforcer:
             reason = f"tool '{tool_name}' is owner-private and cannot be used by {role_value}"
             logger.warning(
                 "ToolACL DENIED private-tier tool: user=%s role=%s tool=%s tier=PRIVATE",
-                user_id, role_value, tool_name,
+                user_id,
+                role_value,
+                tool_name,
             )
             self._denial_counts[user_id] = self._denial_counts.get(user_id, 0) + 1
             return False, reason
@@ -239,7 +255,9 @@ class ToolACLEnforcer:
                 reason = f"tool '{tool_name}' requires admin role"
                 logger.warning(
                     "ToolACL DENIED admin-tier tool: user=%s role=%s tool=%s tier=ADMIN",
-                    user_id, role_value, tool_name,
+                    user_id,
+                    role_value,
+                    tool_name,
                 )
                 self._denial_counts[user_id] = self._denial_counts.get(user_id, 0) + 1
                 return False, reason
@@ -253,10 +271,14 @@ class ToolACLEnforcer:
                 return True, "tool in collaborator allowlist"
 
             if self._acl.deny_unknown_tools:
-                reason = f"tool '{tool_name}' not in collaborator allowlist (deny_unknown_tools=True)"
+                reason = (
+                    f"tool '{tool_name}' not in collaborator allowlist (deny_unknown_tools=True)"
+                )
                 logger.warning(
                     "ToolACL DENIED unknown tool: user=%s role=%s tool=%s policy=deny_unknown",
-                    user_id, role_value, tool_name,
+                    user_id,
+                    role_value,
+                    tool_name,
                 )
                 self._denial_counts[user_id] = self._denial_counts.get(user_id, 0) + 1
                 return False, reason
@@ -267,7 +289,9 @@ class ToolACLEnforcer:
         reason = f"unknown role '{role_value}' — denying by default"
         logger.warning(
             "ToolACL DENIED unknown role: user=%s role=%s tool=%s",
-            user_id, role_value, tool_name,
+            user_id,
+            role_value,
+            tool_name,
         )
         self._denial_counts[user_id] = self._denial_counts.get(user_id, 0) + 1
         return False, reason
@@ -328,8 +352,12 @@ class ToolACLEnforcer:
         if per_minute >= limit.max_calls_per_minute or len(times) >= limit.max_calls_per_hour:
             logger.warning(
                 "Tool rate limit hit: user=%s tool=%s per_min=%d/%d per_hr=%d/%d",
-                user_id, tool_name, per_minute, limit.max_calls_per_minute,
-                len(times), limit.max_calls_per_hour,
+                user_id,
+                tool_name,
+                per_minute,
+                limit.max_calls_per_minute,
+                len(times),
+                limit.max_calls_per_hour,
             )
             user_calls[tool_name.lower()] = times
             return False
@@ -347,6 +375,7 @@ class ToolACLEnforcer:
     def _get_role(self, user_id: str):
         if self._rbac is None:
             from gateway.security.rbac_config import Role
+
             return Role.VIEWER
         return self._rbac.get_user_role(user_id)
 

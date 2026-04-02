@@ -8,8 +8,8 @@ TDD red phase: these tests define the required behaviour for:
   POST /webhook/telegram  — inbound Telegram messages through the gateway
   POST /email/send        — bot email requests mediated by the gateway
 """
-from __future__ import annotations
 
+from __future__ import annotations
 
 from unittest.mock import AsyncMock, MagicMock, patch
 
@@ -18,7 +18,6 @@ from fastapi.testclient import TestClient
 
 from gateway.ingest_api.main import app, auth_dep
 from gateway.ingest_api.routes.forward import auth_dep as forward_auth_dep
-
 
 # ============================================================
 # Auth bypass fixture (autouse keeps every test isolated)
@@ -173,9 +172,12 @@ class TestEmailSend:
         mock_sanitizer = MagicMock()
         mock_sanitizer.sanitize = AsyncMock(return_value=mock_scan)
 
-        with patch(
-            "gateway.ingest_api.routes.forward._is_email_recipient_allowed", return_value=True
-        ), patch("gateway.ingest_api.routes.forward.app_state") as mock_state:
+        with (
+            patch(
+                "gateway.ingest_api.routes.forward._is_email_recipient_allowed", return_value=True
+            ),
+            patch("gateway.ingest_api.routes.forward.app_state") as mock_state,
+        ):
             mock_state.sanitizer = mock_sanitizer
             mock_state.approval_queue = None
             resp = client.post(
@@ -199,9 +201,12 @@ class TestEmailSend:
         mock_queue = MagicMock()
         mock_queue.submit = AsyncMock(return_value=mock_item)
 
-        with patch(
-            "gateway.ingest_api.routes.forward._is_email_recipient_allowed", return_value=False
-        ), patch("gateway.ingest_api.routes.forward.app_state") as mock_state:
+        with (
+            patch(
+                "gateway.ingest_api.routes.forward._is_email_recipient_allowed", return_value=False
+            ),
+            patch("gateway.ingest_api.routes.forward.app_state") as mock_state,
+        ):
             mock_state.sanitizer = None
             mock_state.approval_queue = mock_queue
             resp = client.post(
@@ -219,9 +224,12 @@ class TestEmailSend:
 
     def test_unknown_recipient_no_queue_returns_403(self, client):
         """Unknown recipient with no approval queue configured returns 403."""
-        with patch(
-            "gateway.ingest_api.routes.forward._is_email_recipient_allowed", return_value=False
-        ), patch("gateway.ingest_api.routes.forward.app_state") as mock_state:
+        with (
+            patch(
+                "gateway.ingest_api.routes.forward._is_email_recipient_allowed", return_value=False
+            ),
+            patch("gateway.ingest_api.routes.forward.app_state") as mock_state,
+        ):
             mock_state.sanitizer = None
             mock_state.approval_queue = None
             resp = client.post(

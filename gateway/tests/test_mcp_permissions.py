@@ -3,11 +3,12 @@
 # Protected by common law trademark rights. Federal trademark registration pending.
 # Unauthorized reproduction, distribution, or use of the AgentShroud name or brand is strictly prohibited.
 """Tests for MCP permission system."""
+
 from __future__ import annotations
 
+import json
 
 import pytest
-import json
 
 from gateway.proxy.mcp_config import (
     MCPProxyConfig,
@@ -16,8 +17,8 @@ from gateway.proxy.mcp_config import (
     PermissionLevel,
 )
 from gateway.proxy.mcp_permissions import (
-    MCPPermissionManager,
     TRUST_PERMISSION_MAP,
+    MCPPermissionManager,
 )
 
 # === PermissionLevel ordering ===
@@ -236,7 +237,9 @@ class TestToolPermission:
         assert "admin-private data" in result.reason
 
     def test_private_data_parameter_denied_for_gateway_contributor_logs(self, mgr):
-        params = {"path": "/home/node/agentshroud/gateway-data/contributors/2026-03-10-7614658040.md"}
+        params = {
+            "path": "/home/node/agentshroud/gateway-data/contributors/2026-03-10-7614658040.md"
+        }
         result = mgr.check_tool_parameters(
             "agent-a",
             "test-server",
@@ -371,9 +374,7 @@ class TestInferPermission:
         assert mgr.infer_permission_level("read_data", sc) == PermissionLevel.READ
 
     def test_pattern_sensitive(self, mgr):
-        assert (
-            mgr.infer_permission_level("run_shell_command") == PermissionLevel.EXECUTE
-        )
+        assert mgr.infer_permission_level("run_shell_command") == PermissionLevel.EXECUTE
 
     def test_pattern_read(self, mgr):
         assert mgr.infer_permission_level("get_users") == PermissionLevel.READ
@@ -385,9 +386,7 @@ class TestInferPermission:
         assert mgr.infer_permission_level("delete_record") == PermissionLevel.EXECUTE
 
     def test_default_write(self, mgr):
-        assert (
-            mgr.infer_permission_level("do_something_custom") == PermissionLevel.WRITE
-        )
+        assert mgr.infer_permission_level("do_something_custom") == PermissionLevel.WRITE
 
 
 class TestRateLimiting:

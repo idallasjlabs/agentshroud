@@ -3,10 +3,11 @@
 # Protected by common law trademark rights. Federal trademark registration pending.
 # Unauthorized reproduction, distribution, or use of the AgentShroud name or brand is strictly prohibited.
 """Tests for DNS exfiltration prevention."""
+
 from __future__ import annotations
 
-
 import pytest
+
 from gateway.security.dns_filter import (
     DNSFilter,
     DNSFilterConfig,
@@ -189,9 +190,7 @@ class TestAuditLogging:
         assert hasattr(logs[0], "allowed")
 
     def test_flagged_queries_in_log(self, dns_filter):
-        dns_filter.check(
-            "aGVsbG8gd29ybGQgdGhpcyBpcyBiYXNlNjQ.evil.com", agent_id="agent1"
-        )
+        dns_filter.check("aGVsbG8gd29ybGQgdGhpcyBpcyBiYXNlNjQ.evil.com", agent_id="agent1")
         flagged = dns_filter.get_flagged_queries(agent_id="agent1")
         assert len(flagged) >= 1
 
@@ -208,6 +207,7 @@ class TestEntropyCalculator:
 
 
 # ── C44: DNS Rebinding Prevention tests ──────────────────────────────────────
+
 
 class TestDNSRebinding:
     @pytest.fixture

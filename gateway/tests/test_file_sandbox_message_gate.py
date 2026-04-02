@@ -15,19 +15,19 @@ Fixes verified here:
   2. FileSandbox block skipped for plain chat (non-tool-call) requests
   3. Owner (8096968754) bypasses content-pattern blocking (still audited)
 """
+
 from __future__ import annotations
 
-import tempfile
 import shutil
+import tempfile
 from pathlib import Path
-from unittest.mock import Mock, MagicMock
+from unittest.mock import MagicMock, Mock
 
 import pytest
 import pytest_asyncio
 
 from gateway.ingest_api.middleware import MiddlewareManager, MiddlewareResult
 from gateway.security.session_manager import UserSessionManager
-
 
 OWNER_ID = "8096968754"
 USER_ID = "user_999"
@@ -78,11 +78,14 @@ def manager(session_manager):
 
 # ── helpers ─────────────────────────────────────────────────────────────────
 
+
 def _plain_msg(user_id: str, text: str) -> dict:
     return {"user_id": user_id, "message": text}
 
 
-def _tool_call_msg(user_id: str, text: str, tool_name: str = "read_file", path: str = "/tmp/x") -> dict:
+def _tool_call_msg(
+    user_id: str, text: str, tool_name: str = "read_file", path: str = "/tmp/x"
+) -> dict:
     return {
         "user_id": user_id,
         "message": text,
@@ -99,6 +102,7 @@ def _tool_result_msg(user_id: str) -> dict:
 
 
 # ── RED: _is_tool_call_request ───────────────────────────────────────────────
+
 
 class TestIsToolCallRequest:
     """Unit tests for the _is_tool_call_request helper (TDD RED phase)."""
@@ -134,6 +138,7 @@ class TestIsToolCallRequest:
 
 # ── RED: FileSandbox skipped for plain chat ──────────────────────────────────
 
+
 class TestFileSandboxSkippedForPlainMessages:
     """FileSandbox must NOT block plain chat messages that mention file-like words."""
 
@@ -142,17 +147,15 @@ class TestFileSandboxSkippedForPlainMessages:
         # "MEMORY.md" in conversation text should NOT trigger sandbox
         req = _plain_msg(USER_ID, "Can you check my MEMORY.md file?")
         result = await manager.process_request(req)
-        assert result.allowed is True, (
-            f"Plain chat message blocked: {result.reason}"
-        )
+        assert result.allowed is True, f"Plain chat message blocked: {result.reason}"
 
     @pytest.mark.asyncio
     async def test_plain_message_mentioning_config_yaml_not_blocked(self, manager):
         req = _plain_msg(USER_ID, "Please look at config.yaml and fix it")
         result = await manager.process_request(req)
-        assert result.allowed is True, (
-            f"config.yaml mention in chat incorrectly blocked: {result.reason}"
-        )
+        assert (
+            result.allowed is True
+        ), f"config.yaml mention in chat incorrectly blocked: {result.reason}"
 
     @pytest.mark.asyncio
     async def test_plain_message_mentioning_etc_passwd_not_blocked(self, manager):
@@ -160,9 +163,9 @@ class TestFileSandboxSkippedForPlainMessages:
         # FileSandbox is for actual tool-call file operations, not chat content scanning.
         req = _plain_msg(USER_ID, "I read that /etc/passwd contains user entries")
         result = await manager.process_request(req)
-        assert result.allowed is True, (
-            f"Educational mention of /etc/passwd in chat blocked: {result.reason}"
-        )
+        assert (
+            result.allowed is True
+        ), f"Educational mention of /etc/passwd in chat blocked: {result.reason}"
 
     @pytest.mark.asyncio
     async def test_tool_call_with_unauthorized_path_still_blocked(self, manager, temp_workspace):
@@ -185,6 +188,7 @@ class TestFileSandboxSkippedForPlainMessages:
 
 # ── RED: Owner bypass ────────────────────────────────────────────────────────
 
+
 class TestOwnerBypassContentPatternChecks:
     """Owner (8096968754) must not be blocked by content-pattern scanning.
     They should still be audited, but never hard-blocked."""
@@ -193,18 +197,18 @@ class TestOwnerBypassContentPatternChecks:
     async def test_owner_plain_message_with_path_not_blocked(self, manager):
         req = _plain_msg(OWNER_ID, "Let me check /etc/hosts for the mapping")
         result = await manager.process_request(req)
-        assert result.allowed is True, (
-            f"Owner blocked by content pattern: {result.reason}"
-        )
+        assert result.allowed is True, f"Owner blocked by content pattern: {result.reason}"
 
     @pytest.mark.asyncio
-    async def test_owner_message_mentioning_other_users_file_not_blocked(self, manager, temp_workspace):
+    async def test_owner_message_mentioning_other_users_file_not_blocked(
+        self, manager, temp_workspace
+    ):
         other_path = str(temp_workspace / "users" / "user_999" / "workspace" / "data.txt")
         req = _plain_msg(OWNER_ID, f"Review {other_path} for user_999")
         result = await manager.process_request(req)
-        assert result.allowed is True, (
-            f"Owner blocked when reviewing another user's file path in chat: {result.reason}"
-        )
+        assert (
+            result.allowed is True
+        ), f"Owner blocked when reviewing another user's file path in chat: {result.reason}"
 
     @pytest.mark.asyncio
     async def test_non_owner_cross_path_plain_message_still_blocked(self, manager, temp_workspace):

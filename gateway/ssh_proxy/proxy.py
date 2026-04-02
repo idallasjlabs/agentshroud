@@ -104,9 +104,7 @@ class SSHProxy:
         host = self.config.hosts[host_name]
         return command in host.auto_approve_commands
 
-    async def execute(
-        self, host_name: str, command: str, timeout: int | None = None
-    ) -> SSHResult:
+    async def execute(self, host_name: str, command: str, timeout: int | None = None) -> SSHResult:
         """Execute a command on a remote host via SSH."""
         if host_name not in self.config.hosts:
             raise ValueError(f"Unknown host: {host_name}")

@@ -8,8 +8,8 @@ URL Analyzer — detect SSRF, data exfiltration, and suspicious URL patterns.
 Hard blocks: SSRF (private IPs) only.
 Flags: PII in URLs, base64 payloads, suspiciously long query strings.
 """
-from __future__ import annotations
 
+from __future__ import annotations
 
 import base64
 import ipaddress
@@ -19,7 +19,7 @@ import socket
 from dataclasses import dataclass, field
 from enum import Enum
 from typing import Optional
-from urllib.parse import parse_qs, urlparse, unquote
+from urllib.parse import parse_qs, unquote, urlparse
 
 logger = logging.getLogger("agentshroud.proxy.url_analyzer")
 
@@ -270,12 +270,7 @@ class URLAnalyzer:
             if isinstance(addr, type(network.network_address)) and addr in network:
                 return True
 
-        return (
-            addr.is_private
-            or addr.is_loopback
-            or addr.is_link_local
-            or addr.is_reserved
-        )
+        return addr.is_private or addr.is_loopback or addr.is_link_local or addr.is_reserved
 
     @staticmethod
     def _resolve_host(hostname: str) -> Optional[str]:
@@ -286,9 +281,7 @@ class URLAnalyzer:
         connect through this proxy and pin the resolved IP for the request.
         """
         try:
-            result = socket.getaddrinfo(
-                hostname, None, socket.AF_UNSPEC, socket.SOCK_STREAM
-            )
+            result = socket.getaddrinfo(hostname, None, socket.AF_UNSPEC, socket.SOCK_STREAM)
             if result:
                 return result[0][4][0]
         except (socket.gaierror, OSError):

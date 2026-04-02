@@ -1,8 +1,9 @@
 # Copyright (c) 2026 Isaiah Dallas Jefferson, Jr. AgentShroud. All rights reserved.
 
-import pytest
-from unittest.mock import MagicMock, patch
 import time
+from unittest.mock import MagicMock, patch
+
+import pytest
 
 
 class TestEnhancedStatus:
@@ -11,7 +12,7 @@ class TestEnhancedStatus:
     def test_status_response_model(self):
         """Test that StatusResponse model accepts new fields."""
         from gateway.ingest_api.models import StatusResponse
-        
+
         resp = StatusResponse(
             status="healthy",
             version="0.8.0",
@@ -39,7 +40,7 @@ class TestEnhancedStatus:
                 "allowed_today": 10,
             },
         )
-        
+
         assert resp.version == "0.8.0"
         assert resp.observatory_mode["global_mode"] == "enforce"
         assert resp.security_summary["modules_active"] == 33
@@ -49,7 +50,7 @@ class TestEnhancedStatus:
     def test_status_response_optional_fields(self):
         """Test that new fields are optional (backward compat)."""
         from gateway.ingest_api.models import StatusResponse
-        
+
         resp = StatusResponse(
             status="healthy",
             version="0.7.0",
@@ -59,7 +60,7 @@ class TestEnhancedStatus:
             pii_engine="regex",
             config_loaded=True,
         )
-        
+
         assert resp.observatory_mode is None
         assert resp.security_summary is None
         assert resp.egress is None
@@ -67,7 +68,7 @@ class TestEnhancedStatus:
     def test_status_response_monitor_mode(self):
         """Test status response in monitor mode."""
         from gateway.ingest_api.models import StatusResponse
-        
+
         resp = StatusResponse(
             status="healthy",
             version="0.8.0",
@@ -89,7 +90,7 @@ class TestEnhancedStatus:
                 "canary_status": "green",
             },
         )
-        
+
         assert resp.observatory_mode["global_mode"] == "monitor"
         assert resp.observatory_mode["auto_revert_at"] is not None
         assert resp.security_summary["modules_enforcing"] == 0

@@ -6,17 +6,18 @@
 Resource Exhaustion Guard - Security Hardening Module
 Monitor and limit resource usage to prevent DoS attacks and resource exhaustion.
 """
+
 from __future__ import annotations
 
-
 import asyncio
+import logging
 import os
-import psutil
 import time
 from collections import defaultdict
-from typing import Dict, List, Optional, Any
 from dataclasses import dataclass
-import logging
+from typing import Any, Dict, List, Optional
+
+import psutil
 
 logger = logging.getLogger(__name__)
 
@@ -145,9 +146,7 @@ class ResourceGuard:
             except Exception as e:
                 logger.error(f"Alert callback failed: {e}")
 
-    def check_resource(
-        self, agent_id: str, resource_type: str, amount: int
-    ) -> tuple[bool, str]:
+    def check_resource(self, agent_id: str, resource_type: str, amount: int) -> tuple[bool, str]:
         """Check if resource usage is allowed for an agent.
 
         Args:
@@ -203,9 +202,7 @@ class ResourceGuard:
         except ValueError:
             raise
         except Exception as e:
-            logger.error(
-                f"Error checking resource {resource_type} for agent {agent_id}: {e}"
-            )
+            logger.error(f"Error checking resource {resource_type} for agent {agent_id}: {e}")
             return False, f"Error checking resource: {e}"
 
     def _cleanup_expired_usage(self):
@@ -226,9 +223,7 @@ class ResourceGuard:
     def _get_disk_io_stats(self) -> Dict[str, Any]:
         """Get current disk I/O statistics."""
         try:
-            return (
-                psutil.disk_io_counters()._asdict() if psutil.disk_io_counters() else {}
-            )
+            return psutil.disk_io_counters()._asdict() if psutil.disk_io_counters() else {}
         except Exception:
             return {}
 
@@ -274,9 +269,7 @@ class ResourceGuard:
             memory_used = current_memory - usage.memory_mb
 
             if memory_used > self.limits.max_memory_mb_per_agent:
-                logger.warning(
-                    f"Agent {agent_id} exceeded memory limit: {memory_used:.2f}MB"
-                )
+                logger.warning(f"Agent {agent_id} exceeded memory limit: {memory_used:.2f}MB")
                 return False
 
             return True
@@ -292,14 +285,11 @@ class ResourceGuard:
                 return True
 
             writes_mb = (
-                current_io.get("write_bytes", 0)
-                - self.baseline_disk_io.get("write_bytes", 0)
+                current_io.get("write_bytes", 0) - self.baseline_disk_io.get("write_bytes", 0)
             ) / (1024 * 1024)
 
             if writes_mb > self.limits.max_disk_writes_mb_per_minute:
-                logger.warning(
-                    f"Agent {agent_id} exceeded disk write limit: {writes_mb:.2f}MB"
-                )
+                logger.warning(f"Agent {agent_id} exceeded disk write limit: {writes_mb:.2f}MB")
                 return False
 
             return True
@@ -312,9 +302,7 @@ class ResourceGuard:
         temp_files = self.temp_files_by_agent[agent_id]
 
         if len(temp_files) >= self.limits.max_temp_files:
-            logger.warning(
-                f"Agent {agent_id} exceeded temp file limit: {len(temp_files)}"
-            )
+            logger.warning(f"Agent {agent_id} exceeded temp file limit: {len(temp_files)}")
             return False
 
         temp_files.append(file_path)
