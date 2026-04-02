@@ -19,6 +19,7 @@ import logging
 import os
 import urllib.error
 import urllib.request
+from datetime import datetime, timezone
 from pathlib import Path
 from typing import Any, Dict, List, Optional
 
@@ -194,18 +195,19 @@ async def get_soc_correlation(caller: SCLCaller = Depends(get_caller)) -> Dict:
 async def get_risk_score(caller: SCLCaller = Depends(get_caller)) -> Dict:
     caller.require(Action.READ, Resource.SYSTEM)
     app = _app_state()
+    now_iso = datetime.now(timezone.utc).isoformat()
     try:
         engine = getattr(app, "soc_correlation", None)
         if engine and hasattr(engine, "get_risk_score"):
             score = engine.get_risk_score()
-            return {"risk_score": score, "level": _risk_level_label(score)}
+            return {"risk_score": score, "level": _risk_level_label(score), "updated_at": now_iso}
         from ..security.soc_correlation import build_correlation_summary
 
         score = build_correlation_summary(app).risk_score
-        return {"risk_score": score, "level": _risk_level_label(score)}
+        return {"risk_score": score, "level": _risk_level_label(score), "updated_at": now_iso}
     except Exception as exc:
         logger.debug("get_risk_score: %s", exc)
-    return {"risk_score": 0, "level": "low"}
+    return {"risk_score": 0, "level": "low", "updated_at": now_iso}
 
 
 def _risk_level_label(score: int) -> str:
