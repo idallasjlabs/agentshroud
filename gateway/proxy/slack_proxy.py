@@ -14,6 +14,7 @@ Inbound Slack events are handled natively by OpenClaw's Slack channel integratio
 (Socket Mode). The gateway's role is outbound-only: content filtering and token
 injection for all Slack Web API calls the bot makes.
 """
+
 from __future__ import annotations
 
 import json
@@ -22,7 +23,10 @@ import os
 import secrets as _secrets
 
 from gateway.utils.secrets import read_secret as _read_secret_static
-from .collaborator_responses import COLLAB_OUTSIDE_SCOPE  # noqa: F401 — re-exported for Slack use
+
+from .collaborator_responses import (  # noqa: F401 — re-exported for Slack use
+    COLLAB_OUTSIDE_SCOPE,
+)
 
 logger = logging.getLogger("agentshroud.proxy.slack")
 
@@ -61,16 +65,14 @@ class SlackAPIProxy:
         self.tracker = tracker  # CollaboratorActivityTracker for outbound message logging
 
         # Bot token: gateway holds it; bot never sees the raw token
-        self._bot_token = (
-            os.environ.get("SLACK_BOT_TOKEN", "")
-            or _read_secret_static("slack_bot_token")
+        self._bot_token = os.environ.get("SLACK_BOT_TOKEN", "") or _read_secret_static(
+            "slack_bot_token"
         )
 
         # Owner's Slack User ID (e.g. "U01J37F6YT0") — messages to this channel
         # receive FULL trust; all other channels are treated as UNTRUSTED collaborators.
-        self._owner_slack_user_id = (
-            owner_slack_user_id
-            or os.environ.get("AGENTSHROUD_SLACK_OWNER_USER_ID", "")
+        self._owner_slack_user_id = owner_slack_user_id or os.environ.get(
+            "AGENTSHROUD_SLACK_OWNER_USER_ID", ""
         )
 
         # Relay tokens issued by _intercept_connections_open.
@@ -96,7 +98,9 @@ class SlackAPIProxy:
             return False
         return channel == self._owner_slack_user_id
 
-    async def proxy_outbound(self, method: str, body: bytes, content_type: str, is_system: bool = False) -> dict:
+    async def proxy_outbound(
+        self, method: str, body: bytes, content_type: str, is_system: bool = False
+    ) -> dict:
         """Proxy a bot Slack Web API call through the security pipeline.
 
         For message-sending methods (chat.postMessage, chat.update, chat.meMessage):
@@ -118,6 +122,7 @@ class SlackAPIProxy:
                     payload = json.loads(body.decode("utf-8", errors="replace"))
                 elif "application/x-www-form-urlencoded" in (content_type or ""):
                     from urllib.parse import parse_qs
+
                     qs = parse_qs(body.decode("utf-8", errors="replace"))
                     payload = {k: v[0] for k, v in qs.items()}
             except Exception as exc:
@@ -140,6 +145,7 @@ class SlackAPIProxy:
                 # non-owner channels before running the full pipeline.
                 if not is_owner:
                     from .telegram_proxy import TelegramAPIProxy as _TelegramAPIProxy
+
                     if _TelegramAPIProxy._contains_high_risk_collaborator_leakage(str(text)):
                         logger.warning(
                             "Slack outbound BLOCKED: high-risk leakage detected for non-owner channel %s",
@@ -172,7 +178,8 @@ class SlackAPIProxy:
                                 self._stats["outbound_blocked"] += 1
                                 logger.warning(
                                     "Slack proxy: outbound %s BLOCKED: info redaction (count=%d) for non-owner",
-                                    method, rc,
+                                    method,
+                                    rc,
                                 )
                                 return {"ok": False, "error": "content_policy_violation"}
                         except Exception:
@@ -185,7 +192,8 @@ class SlackAPIProxy:
                         self._stats["outbound_blocked"] += 1
                         logger.error(
                             "Slack proxy: pipeline error for non-owner channel %s — blocking: %s",
-                            channel, exc,
+                            channel,
+                            exc,
                         )
                         return {"ok": False, "error": "content_policy_violation"}
                     logger.error("Slack proxy: pipeline outbound error (owner channel): %s", exc)
@@ -201,11 +209,13 @@ class SlackAPIProxy:
         if method == "chat.postMessage" and not is_system and self.tracker:
             try:
                 import time as _time_mod
+
                 _channel = payload.get("channel", "")
                 _text = payload.get("text", "")
                 _thread_ts = payload.get("thread_ts", "")
                 if isinstance(_text, (list, dict)):
                     import json as _json
+
                     _text = _json.dumps(_text)
                 if _channel and _text:
                     # --- Recover inbound query from Slack API ---
@@ -218,7 +228,12 @@ class SlackAPIProxy:
                             if _thread_ts:
                                 _hist = await self._call_slack_api(
                                     "conversations.replies",
-                                    {"channel": _channel, "ts": _thread_ts, "limit": 1, "inclusive": True},
+                                    {
+                                        "channel": _channel,
+                                        "ts": _thread_ts,
+                                        "limit": 1,
+                                        "inclusive": True,
+                                    },
                                 )
                             else:
                                 _hist = await self._call_slack_api(
@@ -228,7 +243,13 @@ class SlackAPIProxy:
                             _msgs = _hist.get("messages", []) if _hist.get("ok") else []
                             # Find the most recent non-bot message (subtype absent = user message)
                             _user_msg = next(
-                                (m for m in _msgs if m.get("user") and not m.get("subtype") and not m.get("bot_id")),
+                                (
+                                    m
+                                    for m in _msgs
+                                    if m.get("user")
+                                    and not m.get("subtype")
+                                    and not m.get("bot_id")
+                                ),
                                 None,
                             )
                             if _user_msg:
@@ -252,7 +273,9 @@ class SlackAPIProxy:
                     _out_uid = str(_channel)
                     if _inbound_corr_id:
                         # Use the actual user ID extracted from inbound if available
-                        _inbound_uid = _inbound_corr_id.split(":")[0] if ":" in _inbound_corr_id else _out_uid
+                        _inbound_uid = (
+                            _inbound_corr_id.split(":")[0] if ":" in _inbound_corr_id else _out_uid
+                        )
                         _out_uid = _inbound_uid
                     self.tracker.record_activity(
                         user_id=_out_uid,
@@ -272,6 +295,7 @@ class SlackAPIProxy:
         url = f"{SLACK_API_BASE}/{method}"
         try:
             import httpx
+
             async with httpx.AsyncClient(timeout=15.0) as client:
                 resp = await client.post(
                     url,
@@ -338,12 +362,12 @@ class SlackAPIProxy:
         if self.tracker:
             try:
                 import time as _time_mod
+
                 _ts_id = str(event.get("ts", _time_mod.time())).replace(".", "")
                 _corr_id = f"{user_id}:{_ts_id}"
                 _now = _time_mod.time()
                 self._last_inbound_corr = {
-                    k: v for k, v in self._last_inbound_corr.items()
-                    if _now - v[1] < 300
+                    k: v for k, v in self._last_inbound_corr.items() if _now - v[1] < 300
                 }
                 channel = event.get("channel", user_id)
                 self._last_inbound_corr[str(channel)] = (_corr_id, _now)
@@ -370,45 +394,60 @@ class SlackAPIProxy:
             return None
         safe_name = name.lower().replace(" ", "-").replace("_", "-")
         safe_name = "".join(c for c in safe_name if c.isalnum() or c == "-")[:80]
-        result = await self._call_slack_api("conversations.create", {
-            "name": f"group-{safe_name}",
-            "is_private": False,
-        })
+        result = await self._call_slack_api(
+            "conversations.create",
+            {
+                "name": f"group-{safe_name}",
+                "is_private": False,
+            },
+        )
         if result.get("ok"):
             channel_id = result.get("channel", {}).get("id")
             logger.info("Slack channel created for group %r: %s", group_id, channel_id)
             return channel_id
-        logger.warning("Slack channel creation failed for group %r: %s", group_id, result.get("error"))
+        logger.warning(
+            "Slack channel creation failed for group %r: %s", group_id, result.get("error")
+        )
         return None
 
     async def invite_channel_member(self, channel_id: str, slack_user_id: str) -> bool:
         """Invite a Slack user to a channel. Returns True on success."""
         if not self._bot_token or not channel_id or not slack_user_id:
             return False
-        result = await self._call_slack_api("conversations.invite", {
-            "channel": channel_id,
-            "users": slack_user_id,
-        })
+        result = await self._call_slack_api(
+            "conversations.invite",
+            {
+                "channel": channel_id,
+                "users": slack_user_id,
+            },
+        )
         if result.get("ok"):
             return True
         err = result.get("error", "")
         if err == "already_in_channel":
             return True  # idempotent
-        logger.warning("Slack invite failed: channel=%s user=%s error=%s", channel_id, slack_user_id, err)
+        logger.warning(
+            "Slack invite failed: channel=%s user=%s error=%s", channel_id, slack_user_id, err
+        )
         return False
 
     async def kick_channel_member(self, channel_id: str, slack_user_id: str) -> bool:
         """Remove a Slack user from a channel. Returns True on success."""
         if not self._bot_token or not channel_id or not slack_user_id:
             return False
-        result = await self._call_slack_api("conversations.kick", {
-            "channel": channel_id,
-            "user": slack_user_id,
-        })
+        result = await self._call_slack_api(
+            "conversations.kick",
+            {
+                "channel": channel_id,
+                "user": slack_user_id,
+            },
+        )
         if result.get("ok"):
             return True
         err = result.get("error", "")
         if err in ("not_in_channel", "cant_kick_self"):
             return True  # idempotent
-        logger.warning("Slack kick failed: channel=%s user=%s error=%s", channel_id, slack_user_id, err)
+        logger.warning(
+            "Slack kick failed: channel=%s user=%s error=%s", channel_id, slack_user_id, err
+        )
         return False

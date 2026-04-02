@@ -11,21 +11,21 @@ import logging
 from datetime import datetime, timezone
 from typing import Annotated
 
-from fastapi import APIRouter, Request, HTTPException, status, Depends
+from fastapi import APIRouter, Depends, HTTPException, Request, status
 from fastapi.responses import JSONResponse
 
+from ...proxy.webhook_receiver import WebhookReceiver
+from ..auth import create_auth_dependency
+from ..event_bus import make_event
 from ..models import (
     ApprovalRequest,
-    EmailSendRequest, 
+    EmailSendRequest,
     EmailSendResponse,
     ForwardRequest,
     ForwardResponse,
 )
-from ..auth import create_auth_dependency
-from ..state import app_state
 from ..router import ForwardError
-from ..event_bus import make_event
-from ...proxy.webhook_receiver import WebhookReceiver
+from ..state import app_state
 
 # Create router
 router = APIRouter()
@@ -37,7 +37,6 @@ logger = logging.getLogger(__name__)
 _EMAIL_ALLOWED_RECIPIENTS: list[str] = [
     # Fill in trusted addresses; unknown recipients always go to approval queue.
 ]
-
 
 
 # Authentication dependency
@@ -61,7 +60,6 @@ def _is_email_recipient_allowed(address: str) -> bool:
     return address.lower().strip() in {r.lower() for r in _EMAIL_ALLOWED_RECIPIENTS}
 
 
-
 # Route endpoints
 @router.post("/webhook/telegram")
 async def telegram_webhook(request: Request, auth: AuthRequired):
@@ -82,7 +80,9 @@ async def telegram_webhook(request: Request, auth: AuthRequired):
     pipeline = getattr(app_state, "pipeline", None)
     forwarder = getattr(app_state, "forwarder", None)
     session_manager = getattr(app_state, "session_manager", None)
-    receiver = WebhookReceiver(pipeline=pipeline, forwarder=forwarder, session_manager=session_manager)
+    receiver = WebhookReceiver(
+        pipeline=pipeline, forwarder=forwarder, session_manager=session_manager
+    )
 
     result = await receiver.process_webhook(payload, source="telegram")
     logger.info(f"telegram-webhook: status={result.get('status')}")
@@ -113,9 +113,7 @@ async def email_send(request: EmailSendRequest, req: Request, auth: AuthRequired
             sanitized_body = scan.sanitized_content
             pii_redacted = len(scan.redactions) > 0
             if pii_redacted:
-                logger.warning(
-                    f"email-send: PII redacted from body ({len(scan.redactions)} items)"
-                )
+                logger.warning(f"email-send: PII redacted from body ({len(scan.redactions)} items)")
         except Exception as e:
             logger.warning(f"email-send: PII scan failed ({e}), proceeding with original body")
 
@@ -146,6 +144,7 @@ async def email_send(request: EmailSendRequest, req: Request, auth: AuthRequired
         item = await approval_queue.submit(approval_req)
         logger.info(f"email-send: queued for approval (id={item.request_id})")
         from fastapi.responses import JSONResponse as _JSONResponse
+
         return _JSONResponse(
             status_code=status.HTTP_202_ACCEPTED,
             content=EmailSendResponse(
@@ -165,9 +164,7 @@ async def email_send(request: EmailSendRequest, req: Request, auth: AuthRequired
     )
 
 
-@router.post(
-    "/forward", response_model=ForwardResponse, status_code=status.HTTP_201_CREATED
-)
+@router.post("/forward", response_model=ForwardResponse, status_code=status.HTTP_201_CREATED)
 async def forward_content(request: ForwardRequest, req: Request, auth: AuthRequired):
     """Main ingest endpoint
 
@@ -191,7 +188,8 @@ async def forward_content(request: ForwardRequest, req: Request, auth: AuthRequi
                 "content_type": request.content_type,
                 "source": request.source,
                 "headers": {},  # Add headers if available in request
-                "user_id": getattr(request, "user_id", None) or getattr(request, "source", "anonymous")
+                "user_id": getattr(request, "user_id", None)
+                or getattr(request, "source", "anonymous"),
             }
 
             # Process through middleware
@@ -201,7 +199,7 @@ async def forward_content(request: ForwardRequest, req: Request, auth: AuthRequi
                 logger.warning(f"Middleware blocked request: {middleware_result.reason}")
                 raise HTTPException(
                     status_code=status.HTTP_403_FORBIDDEN,
-                    detail=f"Request blocked by middleware: {middleware_result.reason}"
+                    detail=f"Request blocked by middleware: {middleware_result.reason}",
                 )
 
             # If middleware modified the request, update it
@@ -218,7 +216,7 @@ async def forward_content(request: ForwardRequest, req: Request, auth: AuthRequi
             # Fail closed - block request on middleware error
             raise HTTPException(
                 status_code=status.HTTP_500_INTERNAL_SERVER_ERROR,
-                detail="Middleware processing failed. Request blocked for safety."
+                detail="Middleware processing failed. Request blocked for safety.",
             )
     else:
         logger.warning("MiddlewareManager not available - middleware security checks skipped")
@@ -390,12 +388,12 @@ async def forward_content(request: ForwardRequest, req: Request, auth: AuthRequi
                         user_trust_level = "STANDARD"
                     elif trust_score >= 100:
                         user_trust_level = "BASIC"
-            
+
             out_result = await pipeline.process_outbound(
-                response=agent_response, 
+                response=agent_response,
                 agent_id="default",
                 user_trust_level=user_trust_level,
-                source=request.source
+                source=request.source,
             )
             filtered_response = out_result.sanitized_message
         else:
@@ -403,9 +401,7 @@ async def forward_content(request: ForwardRequest, req: Request, auth: AuthRequi
                 agent_response
             )
             if xml_was_filtered:
-                logger.info(
-                    f"Filtered XML blocks from agent response for source={request.source}"
-                )
+                logger.info(f"Filtered XML blocks from agent response for source={request.source}")
 
         # Step 5.1: Block credentials from being displayed via untrusted sources
         blocked_response, was_blocked = await app_state.sanitizer.block_credentials(

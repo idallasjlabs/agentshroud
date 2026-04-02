@@ -14,6 +14,7 @@ Protocol:
   5. Process payload in background via SlackAPIProxy.handle_event()
   6. On {"type": "disconnect"}: reconnect (Slack rotates connections every few hours)
 """
+
 from __future__ import annotations
 
 import asyncio
@@ -58,9 +59,7 @@ class SlackSocketClient:
                 break
             except Exception as exc:
                 wait = _RECONNECT_BACKOFF[min(backoff_idx, len(_RECONNECT_BACKOFF) - 1)]
-                logger.error(
-                    "Slack Socket Mode error: %s — reconnecting in %ds", exc, wait
-                )
+                logger.error("Slack Socket Mode error: %s — reconnecting in %ds", exc, wait)
                 backoff_idx += 1
                 await asyncio.sleep(wait)
 
@@ -73,6 +72,7 @@ class SlackSocketClient:
     async def _get_wss_url(self) -> str:
         """Call apps.connections.open to get a fresh WSS URL."""
         import httpx
+
         async with httpx.AsyncClient(timeout=15.0) as client:
             resp = await client.post(
                 CONNECTIONS_OPEN_URL,
@@ -83,9 +83,7 @@ class SlackSocketClient:
             )
             data = resp.json()
         if not data.get("ok"):
-            raise RuntimeError(
-                f"apps.connections.open failed: {data.get('error', 'unknown')}"
-            )
+            raise RuntimeError(f"apps.connections.open failed: {data.get('error', 'unknown')}")
         return data["url"]
 
     async def _connect_and_handle(self, wss_url: str) -> None:
@@ -109,9 +107,7 @@ class SlackSocketClient:
 
                 if msg_type == "hello":
                     conns = envelope.get("num_connections", "?")
-                    logger.info(
-                        "Slack Socket Mode: connected (%s active connection(s))", conns
-                    )
+                    logger.info("Slack Socket Mode: connected (%s active connection(s))", conns)
                     continue
 
                 if msg_type == "disconnect":

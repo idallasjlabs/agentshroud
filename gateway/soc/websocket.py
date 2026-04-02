@@ -5,6 +5,7 @@ Replaces the 5 separate /ws/* endpoints with a single filtered stream.
 Clients send a subscription filter on connect; the server fans out matching
 events from the EventBus ring buffer.
 """
+
 from __future__ import annotations
 
 import asyncio
@@ -15,7 +16,7 @@ from typing import Optional, Set
 
 from fastapi import WebSocket, WebSocketDisconnect
 
-from .auth import redeem_ws_token, _get_config_token
+from .auth import _get_config_token, redeem_ws_token
 from .models import WSEvent, WSEventType
 
 logger = logging.getLogger("agentshroud.soc.websocket")
@@ -142,6 +143,7 @@ def _coerce_to_ws_event(raw) -> Optional[WSEvent]:
             }
             etype = type_map.get(str(etype_raw).lower(), WSEventType.SECURITY_EVENT)
             from .models import Severity
+
             sev_raw = raw.get("severity", "info")
             sev_map = {
                 "critical": Severity.CRITICAL,
@@ -155,7 +157,11 @@ def _coerce_to_ws_event(raw) -> Optional[WSEvent]:
                 type=etype,
                 severity=sev,
                 summary=raw.get("summary", raw.get("message", "")),
-                details={k: v for k, v in raw.items() if k not in {"type", "severity", "summary", "message", "timestamp"}},
+                details={
+                    k: v
+                    for k, v in raw.items()
+                    if k not in {"type", "severity", "summary", "message", "timestamp"}
+                },
                 source_module=raw.get("source_module", raw.get("source", "")),
                 timestamp=raw.get("timestamp", ""),
             )
@@ -182,9 +188,11 @@ async def ws_soc_endpoint(websocket: WebSocket) -> None:
     if not user_id:
         # Compatibility fallback: accept raw gateway password directly as token
         import hmac
+
         gateway_token = _get_config_token()
         if gateway_token and token and hmac.compare_digest(token.encode(), gateway_token.encode()):
             from ..security.rbac_config import RBACConfig
+
             user_id = RBACConfig().owner_user_id
 
     if not user_id:
@@ -196,6 +204,7 @@ async def ws_soc_endpoint(websocket: WebSocket) -> None:
 
     try:
         from ..ingest_api.state import app_state
+
         event_bus = getattr(app_state, "event_bus", None)
     except Exception:
         event_bus = None

@@ -3,13 +3,15 @@
 # Protected by common law trademark rights. Federal trademark registration pending.
 # Unauthorized reproduction, distribution, or use of the AgentShroud name or brand is strictly prohibited.
 """Tests for Network Isolation Validator"""
+
 from __future__ import annotations
 
-
-import tempfile
-import yaml
 import os
-from gateway.security.network_validator import NetworkValidator, NetworkSecurityFinding
+import tempfile
+
+import yaml
+
+from gateway.security.network_validator import NetworkSecurityFinding, NetworkValidator
 
 
 class TestNetworkValidator:
@@ -173,9 +175,7 @@ class TestNetworkValidator:
     def test_validate_docker_compose_config_invalid_file(self):
         """Test handling of invalid/non-existent files."""
         # Test non-existent file
-        findings = self.validator.validate_docker_compose_config(
-            "/nonexistent/file.yml"
-        )
+        findings = self.validator.validate_docker_compose_config("/nonexistent/file.yml")
         assert isinstance(findings, list)  # Should handle gracefully
 
         # Test invalid YAML
@@ -232,26 +232,20 @@ class TestNetworkValidator:
                 "name": "host_network_mode",
                 "config": {
                     "version": "3.8",
-                    "services": {
-                        "service": {"image": "service:latest", "network_mode": "host"}
-                    },
+                    "services": {"service": {"image": "service:latest", "network_mode": "host"}},
                 },
             },
             {
                 "name": "privileged_container",
                 "config": {
                     "version": "3.8",
-                    "services": {
-                        "service": {"image": "service:latest", "privileged": True}
-                    },
+                    "services": {"service": {"image": "service:latest", "privileged": True}},
                 },
             },
         ]
 
         for test_case in test_cases:
-            with tempfile.NamedTemporaryFile(
-                mode="w", suffix=".yml", delete=False
-            ) as f:
+            with tempfile.NamedTemporaryFile(mode="w", suffix=".yml", delete=False) as f:
                 yaml.dump(test_case["config"], f)
                 f.flush()
 

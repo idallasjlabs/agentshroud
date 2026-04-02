@@ -10,18 +10,18 @@ validation, redirect URI strict matching, and consent cookie binding.
 References:
     - Wang et al. 2026 (arXiv:2602.08412) - MCP OAuth confused deputy attacks
 """
-from __future__ import annotations
 
+from __future__ import annotations
 
 import hashlib
 import hmac
 import json
+import posixpath
 import secrets
 import time
 from dataclasses import dataclass
 from typing import Dict, List, Optional, Set
 from urllib.parse import urlparse
-import posixpath
 
 
 class OAuthError(Exception):
@@ -71,9 +71,7 @@ class OAuthSecurityValidator:
         if not req.client_id:
             raise OAuthError("Empty client_id")
         if req.client_id in self._known_shared_ids:
-            raise ConfusedDeputyError(
-                f"Shared/static client_id rejected: {req.client_id}"
-            )
+            raise ConfusedDeputyError(f"Shared/static client_id rejected: {req.client_id}")
         if not req.state or len(req.state) < 8:
             raise OAuthError("State parameter missing or too short (min 8 chars)")
         self.validate_redirect_uri(req.redirect_uri)
@@ -133,15 +131,9 @@ class OAuthSecurityValidator:
             return hmac.compare_digest(verifier, challenge)
         return False
 
-    def create_consent_cookie(
-        self, client_id: str, scopes: List[str], user_id: str
-    ) -> str:
-        payload = json.dumps(
-            {"c": client_id, "s": sorted(scopes), "u": user_id, "t": time.time()}
-        )
-        sig = hmac.new(
-            self._COOKIE_SECRET, payload.encode(), hashlib.sha256
-        ).hexdigest()
+    def create_consent_cookie(self, client_id: str, scopes: List[str], user_id: str) -> str:
+        payload = json.dumps({"c": client_id, "s": sorted(scopes), "u": user_id, "t": time.time()})
+        sig = hmac.new(self._COOKIE_SECRET, payload.encode(), hashlib.sha256).hexdigest()
         import base64
 
         encoded = base64.urlsafe_b64encode(payload.encode()).decode()

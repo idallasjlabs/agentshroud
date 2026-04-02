@@ -11,6 +11,7 @@ This is a hard enforcement layer that runs after the agent generates
 a response but before delivery to the user. It complements system
 prompt restrictions with deterministic regex-based filtering.
 """
+
 from __future__ import annotations
 
 import logging
@@ -25,19 +26,21 @@ logger = logging.getLogger("agentshroud.security.outbound_filter")
 
 class InfoCategory(Enum):
     """Categories of information that may need filtering."""
-    INFRASTRUCTURE = "infrastructure"      # hostnames, IPs, URLs, ports
-    TOOL_INVENTORY = "tool_inventory"       # MCP tool names, capabilities
-    USER_IDENTITY = "user_identity"         # user IDs, usernames, email addresses
-    SECURITY_ARCH = "security_architecture" # module names, modes, thresholds
-    CREDENTIAL = "credential"              # paths to secrets, token names
-    OPERATIONAL = "operational"            # bugs, versions, internal processes
-    CODE_BLOCKS = "code_blocks"            # function_calls XML, raw tool invocations
-    SAFE = "safe"                          # general knowledge, functional descriptions
+
+    INFRASTRUCTURE = "infrastructure"  # hostnames, IPs, URLs, ports
+    TOOL_INVENTORY = "tool_inventory"  # MCP tool names, capabilities
+    USER_IDENTITY = "user_identity"  # user IDs, usernames, email addresses
+    SECURITY_ARCH = "security_architecture"  # module names, modes, thresholds
+    CREDENTIAL = "credential"  # paths to secrets, token names
+    OPERATIONAL = "operational"  # bugs, versions, internal processes
+    CODE_BLOCKS = "code_blocks"  # function_calls XML, raw tool invocations
+    SAFE = "safe"  # general knowledge, functional descriptions
 
 
 @dataclass
 class FilterMatch:
     """A single match found by the outbound filter."""
+
     category: InfoCategory
     pattern_name: str
     matched_text: str
@@ -50,6 +53,7 @@ class FilterMatch:
 @dataclass
 class FilterResult:
     """Result of filtering agent response content."""
+
     original_text: str
     filtered_text: str
     matches: List[FilterMatch]
@@ -61,14 +65,14 @@ class FilterResult:
 
 class OutboundInfoFilter:
     """Main outbound information filtering engine.
-    
+
     Uses compiled regex patterns to detect and redact sensitive
     system information before delivering agent responses to users.
     """
-    
+
     def __init__(self, config: Optional[Dict[str, Any]] = None):
         """Initialize the outbound information filter.
-        
+
         Args:
             config: Configuration dictionary with:
                 - mode: "enforce" (redact) or "monitor" (log only)
@@ -85,9 +89,9 @@ class OutboundInfoFilter:
                 # Owner configured the whole system — show all operational details
                 "security_architecture": True,
                 "operational": True,
-                "infrastructure": True,   # hostnames, IPs, ports — owner knows these
-                "user_identity": True,    # collaborator names, IDs — owner manages these
-                "tool_inventory": True,   # tool names — owner configured these
+                "infrastructure": True,  # hostnames, IPs, ports — owner knows these
+                "user_identity": True,  # collaborator names, IDs — owner manages these
+                "tool_inventory": True,  # tool names — owner configured these
                 # Raw credentials and tool-call XML are never appropriate in chat output
                 "credential": False,
                 "code_blocks": False,
@@ -106,10 +110,10 @@ class OutboundInfoFilter:
             **_default_trust_overrides,
             **self.config.get("trust_overrides", {}),
         }
-        
+
         # Compile all filter patterns
         self.patterns = self._compile_patterns()
-        
+
         # Add any additional patterns from config
         additional = self.config.get("additional_patterns", [])
         for pattern_def in additional:
@@ -118,14 +122,16 @@ class OutboundInfoFilter:
                     "name": pattern_def["name"],
                     "regex": re.compile(pattern_def["pattern"], pattern_def.get("flags", 0)),
                     "category": InfoCategory(pattern_def["category"]),
-                    "replacement": pattern_def["replacement"]
+                    "replacement": pattern_def["replacement"],
                 }
                 self.patterns.append(compiled_pattern)
                 logger.info(f"Added custom pattern: {pattern_def['name']}")
             except Exception as e:
                 logger.warning(f"Failed to add custom pattern {pattern_def.get('name', '?')}: {e}")
-        
-        logger.info(f"OutboundInfoFilter initialized: {len(self.patterns)} patterns, mode={self.mode}")
+
+        logger.info(
+            f"OutboundInfoFilter initialized: {len(self.patterns)} patterns, mode={self.mode}"
+        )
 
     def _compile_patterns(self) -> List[Dict[str, Any]]:
         """Compile all filter patterns into regex objects."""
@@ -139,7 +145,7 @@ class OutboundInfoFilter:
                 "replacement": "[INTERNAL_HOST]",
             },
             {
-                "name": "tailnet_id", 
+                "name": "tailnet_id",
                 "pattern": r"\btail[a-f0-9]{6,}\b",
                 "category": InfoCategory.INFRASTRUCTURE,
                 "replacement": "[TAILNET]",
@@ -181,7 +187,6 @@ class OutboundInfoFilter:
                 "replacement": "port [PORT]",
                 "flags": re.IGNORECASE,
             },
-
             # Runtime environment patterns — bot container internals not for collaborators
             {
                 "name": "os_kernel_version",
@@ -220,7 +225,6 @@ class OutboundInfoFilter:
                 "replacement": "[MODEL_INFO]",
                 "flags": re.IGNORECASE,
             },
-
             # Tool inventory patterns - only security-sensitive tools
             {
                 "name": "mcp_tool_name",
@@ -228,7 +232,6 @@ class OutboundInfoFilter:
                 "category": InfoCategory.TOOL_INVENTORY,
                 "replacement": "[TOOL]",
             },
-            
             # User identity patterns - Fixed pattern
             {
                 "name": "telegram_user_id",
@@ -244,7 +247,6 @@ class OutboundInfoFilter:
                 "replacement": "[COLLABORATOR]",
                 "flags": re.IGNORECASE,
             },
-
             # Security architecture patterns
             {
                 "name": "module_reference",
@@ -261,12 +263,11 @@ class OutboundInfoFilter:
                 "replacement": "[SECRET_PATH]",
             },
             {
-                "name": "env_var_credential", 
+                "name": "env_var_credential",
                 "pattern": r"\b(?:OP_SERVICE_ACCOUNT_TOKEN|ANTHROPIC_API_KEY|OPENAI_API_KEY|API_KEY|SECRET_KEY|ACCESS_TOKEN)\b",
                 "category": InfoCategory.CREDENTIAL,
                 "replacement": "[CREDENTIAL_VAR]",
             },
-
             # Operational patterns
             {
                 "name": "source_file_path",
@@ -287,7 +288,6 @@ class OutboundInfoFilter:
                 "replacement": "[PRIVATE_DATA]",
                 "flags": re.IGNORECASE,
             },
-            
             # Fabricated security notice — bot roleplaying as the gateway/pipeline.
             # escalate=True: pipeline escalates this from REDACT to BLOCK and returns
             # a clean replacement message instead of passing the redacted text through.
@@ -304,7 +304,6 @@ class OutboundInfoFilter:
                 "flags": re.IGNORECASE,
                 "escalate": True,
             },
-
             # Code block patterns - function_calls XML, tool invocations
             {
                 "name": "function_calls_xml",
@@ -328,87 +327,91 @@ class OutboundInfoFilter:
                 "flags": re.IGNORECASE,
             },
         ]
-        
+
         # Compile all patterns
         compiled = []
         for p in patterns:
             try:
                 flags = p.get("flags", 0)
-                compiled.append({
-                    "name": p["name"],
-                    "regex": re.compile(p["pattern"], flags),
-                    "category": p["category"],
-                    "replacement": p["replacement"],
-                    "escalate": p.get("escalate", False),
-                })
+                compiled.append(
+                    {
+                        "name": p["name"],
+                        "regex": re.compile(p["pattern"], flags),
+                        "category": p["category"],
+                        "replacement": p["replacement"],
+                        "escalate": p.get("escalate", False),
+                    }
+                )
             except re.error as e:
                 logger.error(f"Failed to compile pattern {p['name']}: {e}")
                 continue
-        
+
         return compiled
 
     def filter_response(
-        self,
-        response_text: str,
-        user_trust_level: str = "UNTRUSTED",
-        source: str = "unknown"
+        self, response_text: str, user_trust_level: str = "UNTRUSTED", source: str = "unknown"
     ) -> FilterResult:
         """Filter agent response for sensitive information disclosure.
-        
+
         Args:
             response_text: The agent's response text to filter
             user_trust_level: Trust level of the requesting user
             source: Source of the request (for logging context)
-            
+
         Returns:
             FilterResult with filtered text and match details
         """
         start_time = time.time()
-        
+
         matches = []
-        
+
         # Find all pattern matches
         for pattern in self.patterns:
             for match in pattern["regex"].finditer(response_text):
                 # Check if this category is allowed for the user's trust level
                 if self._is_allowed_for_trust(pattern["category"], user_trust_level):
                     continue
-                    
+
                 # Special handling for user ID pattern (capture group replacement)
                 replacement = pattern["replacement"]
                 if pattern["name"] == "telegram_user_id":
                     # Use a simpler replacement for user IDs
-                    replacement = re.sub(r"(?:user|owner|admin|authorized|telegram)\s+(?:ID\s+)?", "", match.group(), flags=re.IGNORECASE) 
+                    replacement = re.sub(
+                        r"(?:user|owner|admin|authorized|telegram)\s+(?:ID\s+)?",
+                        "",
+                        match.group(),
+                        flags=re.IGNORECASE,
+                    )
                     replacement = "[USER_ID]"
-                    
-                matches.append(FilterMatch(
-                    category=pattern["category"],
-                    pattern_name=pattern["name"],
-                    matched_text=match.group(),
-                    replacement=replacement,
-                    start=match.start(),
-                    end=match.end(),
-                ))
-        
+
+                matches.append(
+                    FilterMatch(
+                        category=pattern["category"],
+                        pattern_name=pattern["name"],
+                        matched_text=match.group(),
+                        replacement=replacement,
+                        start=match.start(),
+                        end=match.end(),
+                    )
+                )
+
         # Apply redactions if in enforce mode
         filtered_text = response_text
         if self.mode == "enforce":
             # Apply replacements in reverse order to preserve offsets
             for match in sorted(matches, key=lambda m: m.start, reverse=True):
                 filtered_text = (
-                    filtered_text[:match.start] + 
-                    match.replacement + 
-                    filtered_text[match.end:]
+                    filtered_text[: match.start] + match.replacement + filtered_text[match.end :]
                 )
-        
+
         # Classify risk level based on match density
         risk_level = self._classify_response_risk(matches)
-        
+
         # Get unique categories found
         categories_found = list({match.category.value for match in matches})
-        
+
         processing_time = (time.time() - start_time) * 1000
-        
+
         result = FilterResult(
             original_text=response_text,
             filtered_text=filtered_text,
@@ -416,9 +419,9 @@ class OutboundInfoFilter:
             risk_level=risk_level,
             redaction_count=len(matches),
             categories_found=categories_found,
-            processing_time_ms=processing_time
+            processing_time_ms=processing_time,
         )
-        
+
         # Log results
         if matches:
             if self.mode == "enforce":
@@ -431,15 +434,15 @@ class OutboundInfoFilter:
                     f"Outbound filter: {len(matches)} matches found "
                     f"(monitor mode, trust={user_trust_level}, risk={risk_level}, source={source})"
                 )
-            
+
             # Log category breakdown
             category_counts = {}
             for match in matches:
                 cat = match.category.value
                 category_counts[cat] = category_counts.get(cat, 0) + 1
-            
+
             logger.info(f"Categories: {category_counts}")
-        
+
         return result
 
     def _is_allowed_for_trust(
@@ -448,7 +451,7 @@ class OutboundInfoFilter:
         trust_level: str,
     ) -> bool:
         """Check if a disclosure category is permitted for the user's trust level.
-        
+
         Default policy: FULL trust can see security architecture and operational
         details. All other categories are always filtered regardless of trust.
         """
@@ -460,10 +463,10 @@ class OutboundInfoFilter:
         if len(matches) == 0:
             return "clean"
         if len(matches) <= 2:
-            return "low"    # incidental mention
+            return "low"  # incidental mention
         if len(matches) <= 5:
-            return "medium" # possible probing response
-        return "high"       # likely architecture disclosure attempt
+            return "medium"  # possible probing response
+        return "high"  # likely architecture disclosure attempt
 
     def get_stats(self) -> Dict[str, Any]:
         """Get filter statistics."""

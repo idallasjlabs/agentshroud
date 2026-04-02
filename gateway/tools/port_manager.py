@@ -106,9 +106,7 @@ class PortManager:
             # Double-check by trying to connect (catches TIME_WAIT etc.)
             with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
                 s.settimeout(0.5)
-                result = s.connect_ex(
-                    (host if host != "0.0.0.0" else "127.0.0.1", port)
-                )
+                result = s.connect_ex((host if host != "0.0.0.0" else "127.0.0.1", port))
                 if result == 0:
                     # Something is actually listening
                     return False
@@ -157,9 +155,7 @@ class PortManager:
             if tcp_ok and udp_ok:
                 return candidate
 
-        raise RuntimeError(
-            f"No available port found in range {base}-{base + PORT_SEARCH_RANGE}"
-        )
+        raise RuntimeError(f"No available port found in range {base}-{base + PORT_SEARCH_RANGE}")
 
     def resolve_ports(
         self, requested: Optional[dict[str, int]] = None, auto_resolve: bool = True

@@ -317,6 +317,7 @@ _SCORECARD_DOMAINS: List[Dict[str, Any]] = [
 # Internal helpers
 # ---------------------------------------------------------------------------
 
+
 def _is_fresh(report_dir: Path, prefix: str = "", max_age_hours: int = 24) -> bool:
     """Return True if the most recent report file was written within max_age_hours."""
     if not report_dir.exists():
@@ -336,6 +337,7 @@ def _app_state_has(attr_name: str) -> bool:
     """Return True if app_state has a non-None attribute with the given name."""
     try:
         from ..ingest_api.state import app_state
+
         return getattr(app_state, attr_name, None) is not None
     except Exception:
         return False
@@ -349,12 +351,15 @@ def _is_container_running(container_name: str) -> bool:
     """
     import http.client
     import socket as _socket
+
     try:
+
         class _UnixHTTP(http.client.HTTPConnection):
             def connect(self) -> None:
                 self.sock = _socket.socket(_socket.AF_UNIX, _socket.SOCK_STREAM)
                 self.sock.settimeout(2)
                 self.sock.connect("/var/run/docker.sock")
+
         conn = _UnixHTTP("localhost")
         conn.request("GET", f"/containers/{container_name}/json")
         resp = conn.getresponse()
@@ -370,6 +375,7 @@ def _is_container_running(container_name: str) -> bool:
 def _is_clamd_running() -> bool:
     """Return True if clamd Unix socket /tmp/clamd.ctl is connectable."""
     import socket as _socket
+
     try:
         sock = _socket.socket(_socket.AF_UNIX, _socket.SOCK_STREAM)
         sock.settimeout(1)
@@ -383,6 +389,7 @@ def _is_clamd_running() -> bool:
 def _is_fluent_bit_running() -> bool:
     """Return True if fluent-bit pidfile /tmp/fluent-bit.pid exists with a live PID."""
     import os as _os
+
     try:
         pid = int(Path("/tmp/fluent-bit.pid").read_text().strip())
         _os.kill(pid, 0)
@@ -458,6 +465,7 @@ def _load_latest_json(directory: Path, prefix: str = "") -> Optional[Dict[str, A
 # Per-scanner summary accessors
 # ---------------------------------------------------------------------------
 
+
 def get_trivy_summary() -> Dict[str, Any]:
     """Return latest Trivy scan summary from saved reports.
 
@@ -465,7 +473,9 @@ def get_trivy_summary() -> Dict[str, Any]:
     status='clean' with zero findings — the tool is wired and available.
     """
     import shutil
+
     from .trivy_report import generate_summary
+
     report = _load_latest_json(_TRIVY_REPORT_DIR, "trivy-")
     if report is None:
         if shutil.which("trivy"):
@@ -480,13 +490,22 @@ def get_trivy_summary() -> Dict[str, Any]:
                 "timestamp": None,
                 "note": "Trivy installed — no findings",
             }
-        return {"tool": "trivy", "status": "not_run", "findings": 0, "critical": 0, "high": 0, "timestamp": None}
+        return {
+            "tool": "trivy",
+            "status": "not_run",
+            "findings": 0,
+            "critical": 0,
+            "high": 0,
+            "timestamp": None,
+        }
     summary = generate_summary(report)
     # Ensure timestamp is set from file mtime if not in report (CC-18)
     if not summary.get("timestamp"):
         files = sorted(_TRIVY_REPORT_DIR.glob("trivy-*.json"), reverse=True)
         if files:
-            summary["timestamp"] = datetime.fromtimestamp(files[0].stat().st_mtime, tz=timezone.utc).isoformat()
+            summary["timestamp"] = datetime.fromtimestamp(
+                files[0].stat().st_mtime, tz=timezone.utc
+            ).isoformat()
     return summary
 
 
@@ -497,9 +516,12 @@ def get_clamav_summary() -> Dict[str, Any]:
     returns status='clean' with zero findings — the tool is wired and available.
     """
     import shutil
+
     clamd_running = _is_clamd_running()
     if not clamd_running:
-        clamav_installed = bool(shutil.which("clamd") or shutil.which("clamdscan") or Path("/usr/sbin/clamd").exists())
+        clamav_installed = bool(
+            shutil.which("clamd") or shutil.which("clamdscan") or Path("/usr/sbin/clamd").exists()
+        )
         if clamav_installed:
             return {
                 "tool": "clamav",
@@ -520,15 +542,26 @@ def get_clamav_summary() -> Dict[str, Any]:
             "error": "clamd not running — start ClamAV daemon",
         }
     from .clamav_scanner import generate_summary
+
     report = _load_latest_json(_CLAMAV_REPORT_DIR, "clamav-")
     if report is None:
-        return {"tool": "clamav", "status": "clean", "findings": 0, "critical": 0, "high": 0, "timestamp": None, "note": "clamd running — no scan report yet"}
+        return {
+            "tool": "clamav",
+            "status": "clean",
+            "findings": 0,
+            "critical": 0,
+            "high": 0,
+            "timestamp": None,
+            "note": "clamd running — no scan report yet",
+        }
     summary = generate_summary(report)
     # Ensure timestamp is set (CC-18)
     if not summary.get("timestamp"):
         files = sorted(_CLAMAV_REPORT_DIR.glob("clamav-*.json"), reverse=True)
         if files:
-            summary["timestamp"] = datetime.fromtimestamp(files[0].stat().st_mtime, tz=timezone.utc).isoformat()
+            summary["timestamp"] = datetime.fromtimestamp(
+                files[0].stat().st_mtime, tz=timezone.utc
+            ).isoformat()
     return summary
 
 
@@ -581,6 +614,7 @@ def get_falco_summary() -> Dict[str, Any]:
     Colima/runc), return status='unavailable' rather than the misleading 'clean'.
     """
     import shutil
+
     falco_installed = bool(shutil.which("falco") or Path("/usr/bin/falco").exists())
     falco_running = _is_falco_running()
     if falco_installed and not falco_running:
@@ -596,10 +630,25 @@ def get_falco_summary() -> Dict[str, Any]:
             "note": "Falco installed — eBPF unavailable in this runtime (Colima/runc)",
         }
     if not falco_running:
-        return {"tool": "falco", "status": "not_run", "findings": 0, "critical": 0, "high": 0, "timestamp": None}
-    from .falco_monitor import read_alerts, generate_summary
+        return {
+            "tool": "falco",
+            "status": "not_run",
+            "findings": 0,
+            "critical": 0,
+            "high": 0,
+            "timestamp": None,
+        }
+    from .falco_monitor import generate_summary, read_alerts
+
     if not _FALCO_ALERT_DIR.exists():
-        return {"tool": "falco", "status": "not_run", "findings": 0, "critical": 0, "high": 0, "timestamp": None}
+        return {
+            "tool": "falco",
+            "status": "not_run",
+            "findings": 0,
+            "critical": 0,
+            "high": 0,
+            "timestamp": None,
+        }
     alerts = read_alerts(alert_dir=_FALCO_ALERT_DIR)
     summary = generate_summary(alerts)
     if not summary.get("timestamp"):
@@ -616,6 +665,7 @@ def get_wazuh_summary() -> Dict[str, Any]:
     status='clean' — the module is wired with zero findings.
     """
     import shutil
+
     if not _is_wazuh_agent_running():
         wazuh_installed = bool(
             shutil.which("wazuh-agentd") or Path("/var/ossec/bin/wazuh-agentd").exists()
@@ -630,7 +680,8 @@ def get_wazuh_summary() -> Dict[str, Any]:
                 "note": "Wazuh agent installed — no manager connection",
             }
         return {"tool": "wazuh", "status": "not_run", "findings": 0, "critical": 0, "high": 0}
-    from .wazuh_client import read_alerts, generate_summary
+    from .wazuh_client import generate_summary, read_alerts
+
     if not _WAZUH_ALERT_DIR.exists():
         # Agent running but no alerts dir yet — this is a clean state
         return {"tool": "wazuh", "status": "clean", "findings": 0, "critical": 0, "high": 0}
@@ -703,6 +754,7 @@ def get_fluent_bit_summary() -> Dict[str, Any]:
     Status reflects whether the container is running and actively writing logs.
     """
     import time as _time
+
     _FLUENT_BIT_LOG_DIR = Path("/var/log/fluent-bit")
     if not _is_fluent_bit_running():
         return {"tool": "fluent-bit", "status": "not_run", "findings": 0, "critical": 0, "high": 0}
@@ -738,6 +790,7 @@ def get_sbom() -> Optional[Dict[str, Any]]:
 # ---------------------------------------------------------------------------
 # Aggregation
 # ---------------------------------------------------------------------------
+
 
 def aggregate_results() -> Dict[str, Any]:
     """Aggregate results from all security scanners into a unified dict.
@@ -784,6 +837,7 @@ def aggregate_results() -> Dict[str, Any]:
 # Scorecard domain scorers
 # ---------------------------------------------------------------------------
 
+
 def _score_image_integrity(trivy: Dict[str, Any]) -> int:
     """Score domain 1: Image Integrity (0-5).
 
@@ -810,8 +864,11 @@ def _score_image_integrity(trivy: Dict[str, Any]) -> int:
         and not trivy.get("error")
         and trivy.get("timestamp") is None  # no report file generated yet
     )
-    if sbom_exists and trivy_no_critical and trivy_no_high and (
-        _is_fresh(_TRIVY_REPORT_DIR, "trivy-") or trivy_clean_no_report
+    if (
+        sbom_exists
+        and trivy_no_critical
+        and trivy_no_high
+        and (_is_fresh(_TRIVY_REPORT_DIR, "trivy-") or trivy_clean_no_report)
     ):
         score += 1
     return min(score, 5)
@@ -832,8 +889,12 @@ def _score_vulnerability_management(trivy: Dict[str, Any]) -> int:
     # When tool is installed with zero findings (no report generated yet), score Optimizing.
     # The "note" field is set only by get_trivy_summary() when the binary is present but no
     # report file exists yet — distinguishes from test fixtures with status="clean".
-    if (trivy.get("status") == "clean" and trivy.get("findings", 0) == 0
-            and trivy.get("timestamp") is None and trivy.get("note") is not None):
+    if (
+        trivy.get("status") == "clean"
+        and trivy.get("findings", 0) == 0
+        and trivy.get("timestamp") is None
+        and trivy.get("note") is not None
+    ):
         return 5
     # Require a fresh report — stale results cannot score above 1
     if not _is_fresh(_TRIVY_REPORT_DIR, "trivy-", max_age_hours=48):
@@ -918,8 +979,12 @@ def _score_malware_defense(clamav: Dict[str, Any]) -> int:
     # When tool is installed with zero findings (no report generated yet), score Optimizing.
     # The "note" field is set only by get_clamav_summary() when the binary is present but no
     # report file exists yet — distinguishes from test fixtures with status="clean".
-    if (clamav.get("status") == "clean" and clamav.get("findings", 0) == 0
-            and clamav.get("timestamp") is None and clamav.get("note") is not None):
+    if (
+        clamav.get("status") == "clean"
+        and clamav.get("findings", 0) == 0
+        and clamav.get("timestamp") is None
+        and clamav.get("note") is not None
+    ):
         return 5
     # Require a fresh report to score above 1
     if not _is_fresh(_CLAMAV_REPORT_DIR, "clamav-", max_age_hours=48):
@@ -1033,6 +1098,7 @@ def _score_compliance_auditing(openscap: Dict[str, Any]) -> int:
     4=zero failures + report on disk (Measured), 5=zero failures + fresh report <24h (Optimizing).
     """
     import shutil
+
     if openscap.get("status") == "not_run":
         # If oscap binary is available, score Defined (3) — module is wired, no failures found
         if shutil.which("oscap"):
@@ -1041,7 +1107,9 @@ def _score_compliance_auditing(openscap: Dict[str, Any]) -> int:
     if openscap.get("fail_count", 0) > 0:
         return 2
     # Zero failures — at least Defined (3)
-    report_exists = _OPENSCAP_REPORT_DIR.exists() and any(_OPENSCAP_REPORT_DIR.glob("openscap-*.json"))
+    report_exists = _OPENSCAP_REPORT_DIR.exists() and any(
+        _OPENSCAP_REPORT_DIR.glob("openscap-*.json")
+    )
     if not report_exists:
         return 3
     if _is_fresh(_OPENSCAP_REPORT_DIR, "openscap-"):
@@ -1259,6 +1327,7 @@ def _score_image_signing_provenance() -> int:
     build-pipeline evidence of signing capability.
     """
     import shutil
+
     cosign_available = bool(shutil.which("cosign"))
     if not cosign_available and _is_containerized():
         # Check build-pipeline evidence: security-scan.sh references cosign
@@ -1317,6 +1386,7 @@ def _score_image_signing_provenance() -> int:
     # principle as Trivy/ClamAV scoring "installed + zero findings = clean posture".
     try:
         from ..ingest_api.state import app_state
+
         verification = getattr(app_state, "image_verification", None)
         if verification and any(v.get("verified") for v in verification.values()):
             score += 1
@@ -1368,7 +1438,13 @@ def _score_registry_security() -> int:
     if not auths and _is_containerized():
         # Inside container, docker config may not exist — check compose-file for private registry images
         compose = _read_compose_text()
-        known_private = ("ghcr.io", "ecr.", "gcr.io", "registry.gitlab.com", "docker.io/agentshroud")
+        known_private = (
+            "ghcr.io",
+            "ecr.",
+            "gcr.io",
+            "registry.gitlab.com",
+            "docker.io/agentshroud",
+        )
         if any(r in compose for r in known_private):
             # Images pulled from private scanning-capable registries
             score = 1
@@ -1416,12 +1492,16 @@ def _score_host_os_hardening() -> int:
         score += 1
     # Level 3: Docker daemon info accessible via socket — check via docker CLI
     import shutil
+
     if shutil.which("docker"):
         try:
             import subprocess
+
             result = subprocess.run(
                 ["docker", "info", "--format", "{{.ServerVersion}}"],
-                capture_output=True, text=True, timeout=5,
+                capture_output=True,
+                text=True,
+                timeout=5,
             )
             if result.returncode == 0 and result.stdout.strip():
                 score += 1
@@ -1511,7 +1591,11 @@ def _score_docker_daemon_config() -> int:
     # Level 3: log driver with size limits
     log_driver = daemon.get("log-driver", "")
     log_opts = daemon.get("log-opts", {})
-    if log_driver and log_driver != "json-file" or (log_opts.get("max-size") or log_opts.get("max-file")):
+    if (
+        log_driver
+        and log_driver != "json-file"
+        or (log_opts.get("max-size") or log_opts.get("max-file"))
+    ):
         score += 1
     # Level 4: live-restore + userland-proxy disabled
     if daemon.get("live-restore", False) and not daemon.get("userland-proxy", True):
@@ -1567,8 +1651,7 @@ def _score_container_runtime_isolation() -> int:
         mounts = Path("/proc/mounts").read_text()
         # Root mount is typically "/ " or "overlay /"
         root_ro = any(
-            ("/ " in line or " / " in line) and " ro," in line
-            for line in mounts.splitlines()
+            ("/ " in line or " / " in line) and " ro," in line for line in mounts.splitlines()
         )
         if root_ro:
             score += 1
@@ -1583,8 +1666,7 @@ def _score_container_runtime_isolation() -> int:
     try:
         proc_status = Path("/proc/self/status").read_text()
         seccomp_enabled = "Seccomp:" in proc_status and "2" in [
-            l.split(":", 1)[1].strip() for l in proc_status.splitlines()
-            if l.startswith("Seccomp:")
+            l.split(":", 1)[1].strip() for l in proc_status.splitlines() if l.startswith("Seccomp:")
         ]
     except Exception:
         pass
@@ -1601,6 +1683,7 @@ def _score_container_runtime_isolation() -> int:
 # ---------------------------------------------------------------------------
 # Agentic AI domain scorers (22–33)
 # ---------------------------------------------------------------------------
+
 
 def _score_prompt_injection_defense() -> int:
     """Score domain 22: Prompt Injection Defense (0-5). OWASP ASI-07, MITRE AML.T0051.
@@ -1915,7 +1998,9 @@ def _evaluate_mandatory_gates(
     Returns updated scores dict. Gate failures set the affected domain to 0
     regardless of other signals.
     """
-    import os, shutil
+    import os
+    import shutil
+
     updated = dict(domain_scores)
 
     # Gate: privileged container → Domain 21 → 0
@@ -2012,26 +2097,26 @@ _IEC_DOMAIN_MAP: Dict[int, tuple] = {
     13: ("FR1", 2),
     14: ("FR2", 2),
     15: ("FR4", 2),
-    7:  ("FR5", 2),
-    9:  ("FR6", 1),
+    7: ("FR5", 2),
+    9: ("FR6", 1),
     12: ("FR6", 1),
     16: ("FR7", 2),
-    8:  ("FR4", 1),
+    8: ("FR4", 1),
     # Agentic AI — IEC-mapped FRs
-    25: ("FR2", 1),   # Least Agency → FR2 (Use Control)
-    26: ("FR1", 1),   # Agent Identity → FR1 (Identification & Auth)
-    33: ("FR4", 1),   # Data Exfil Prevention → FR4 (Data Confidentiality)
-    30: ("FR6", 1),   # AI Observability → FR6 (Audit Logging)
+    25: ("FR2", 1),  # Least Agency → FR2 (Use Control)
+    26: ("FR1", 1),  # Agent Identity → FR1 (Identification & Auth)
+    33: ("FR4", 1),  # Data Exfil Prevention → FR4 (Data Confidentiality)
+    30: ("FR6", 1),  # AI Observability → FR6 (Audit Logging)
 }
 
 # NIST 800-190 risk area mapping: {domain_id: (risk_area, weight)}
 _NIST_DOMAIN_MAP: Dict[int, tuple] = {
-    1:  ("image_risks", 2),
-    2:  ("image_risks", 2),
-    3:  ("image_risks", 2),
+    1: ("image_risks", 2),
+    2: ("image_risks", 2),
+    3: ("image_risks", 2),
     17: ("image_risks", 2),
     18: ("registry_risks", 2),
-    5:  ("container_risks", 1),
+    5: ("container_risks", 1),
     21: ("container_risks", 2),
     19: ("host_risks", 2),
     29: ("image_risks", 1),  # AI Model Supply Chain → image/model risks
@@ -2041,10 +2126,10 @@ _NIST_DOMAIN_MAP: Dict[int, tuple] = {
 _CIS_DOMAIN_MAP: Dict[int, tuple] = {
     19: ("section_1", 2),
     20: ("sections_2_3", 2),
-    4:  ("section_4", 2),
+    4: ("section_4", 2),
     21: ("section_5", 2),
     17: ("section_4_5", 1),
-    6:  ("section_6", 1),
+    6: ("section_6", 1),
 }
 
 # OWASP Top 10 for Agentic AI 2026 mapping: {domain_id: (asi_ref, weight)}
@@ -2072,8 +2157,8 @@ _MITRE_ATLAS_DOMAIN_MAP: Dict[int, tuple] = {
 # NIST AI RMF mapping: {domain_id: (function_ref, weight)}
 _NIST_AI_RMF_DOMAIN_MAP: Dict[int, tuple] = {
     23: ("GOVERN", 2),  # Agent Behavior Integrity
-    29: ("MAP", 2),     # AI Model Supply Chain
-    30: ("MEASURE", 2), # AI Observability
+    29: ("MAP", 2),  # AI Model Supply Chain
+    30: ("MEASURE", 2),  # AI Observability
     31: ("MANAGE", 2),  # Human-in-the-Loop
     25: ("GOVERN", 1),  # Least Agency
     26: ("GOVERN", 1),  # Agent Identity
@@ -2081,17 +2166,15 @@ _NIST_AI_RMF_DOMAIN_MAP: Dict[int, tuple] = {
 
 # CSA MAESTRO mapping: {domain_id: (maestro_ref, weight)}
 _CSA_MAESTRO_DOMAIN_MAP: Dict[int, tuple] = {
-    22: ("threat_model_prompt_injection", 2),   # Prompt Injection Defense
-    24: ("threat_model_tool_misuse", 2),         # Tool Use Safety
-    28: ("threat_model_orchestration", 2),       # Inter-Agent Trust
-    32: ("threat_model_rogue_agent", 2),         # Rogue Agent Containment
-    25: ("threat_model_least_privilege", 1),     # Least Agency
+    22: ("threat_model_prompt_injection", 2),  # Prompt Injection Defense
+    24: ("threat_model_tool_misuse", 2),  # Tool Use Safety
+    28: ("threat_model_orchestration", 2),  # Inter-Agent Trust
+    32: ("threat_model_rogue_agent", 2),  # Rogue Agent Containment
+    25: ("threat_model_least_privilege", 1),  # Least Agency
 }
 
 
-def _compute_weighted_subscore(
-    scores: Dict[int, int], domain_map: Dict[int, tuple]
-) -> float:
+def _compute_weighted_subscore(scores: Dict[int, int], domain_map: Dict[int, tuple]) -> float:
     """Return weighted sub-score as 0.0–100.0 percentage."""
     total_weighted = 0
     max_weighted = 0
@@ -2117,8 +2200,11 @@ def _determine_iec_sl(scores: Dict[int, int]) -> int:
         sl = 1
     else:
         return 0
-    if all(scores.get(d, 0) >= 3 for d in iec_ids) and \
-       scores.get(13, 0) >= 4 and scores.get(14, 0) >= 4:
+    if (
+        all(scores.get(d, 0) >= 3 for d in iec_ids)
+        and scores.get(13, 0) >= 4
+        and scores.get(14, 0) >= 4
+    ):
         sl = 2
     else:
         return sl
@@ -2152,8 +2238,13 @@ def _determine_compliance_level(
       Optimizing    ≥ 95% on all
     """
     min_score = min(
-        iec_pct, nist_pct, cis_pct,
-        owasp_agentic_pct, mitre_atlas_pct, nist_ai_rmf_pct, csa_maestro_pct,
+        iec_pct,
+        nist_pct,
+        cis_pct,
+        owasp_agentic_pct,
+        mitre_atlas_pct,
+        nist_ai_rmf_pct,
+        csa_maestro_pct,
     )
     if min_score >= 95:
         return "Optimizing"
@@ -2171,6 +2262,7 @@ def _determine_compliance_level(
 # ---------------------------------------------------------------------------
 # Scorecard computation
 # ---------------------------------------------------------------------------
+
 
 def compute_scorecard() -> Dict[str, Any]:
     """Compute the 33-domain Security Scorecard.
@@ -2200,40 +2292,40 @@ def compute_scorecard() -> Dict[str, Any]:
 
     # Raw domain scores (index 0 = domain 1)
     raw_scores = [
-        _score_image_integrity(trivy),             # 1
-        _score_vulnerability_management(trivy),    # 2
-        _score_supply_chain(),                     # 3
-        _score_container_hardening(openscap),      # 4
-        _score_runtime_protection(falco),          # 5
-        _score_malware_defense(clamav),            # 6
-        _score_network_segmentation(),             # 7
-        _score_secrets_management(),               # 8
-        _score_logging_monitoring(wazuh),          # 9
-        _score_compliance_auditing(openscap),      # 10
-        _score_secure_development(),               # 11
-        _score_incident_response(falco, wazuh),    # 12
-        _score_identity_authentication(),          # 13
-        _score_access_control_authorization(),     # 14
+        _score_image_integrity(trivy),  # 1
+        _score_vulnerability_management(trivy),  # 2
+        _score_supply_chain(),  # 3
+        _score_container_hardening(openscap),  # 4
+        _score_runtime_protection(falco),  # 5
+        _score_malware_defense(clamav),  # 6
+        _score_network_segmentation(),  # 7
+        _score_secrets_management(),  # 8
+        _score_logging_monitoring(wazuh),  # 9
+        _score_compliance_auditing(openscap),  # 10
+        _score_secure_development(),  # 11
+        _score_incident_response(falco, wazuh),  # 12
+        _score_identity_authentication(),  # 13
+        _score_access_control_authorization(),  # 14
         _score_data_confidentiality_encryption(),  # 15
-        _score_resource_availability(),            # 16
-        _score_image_signing_provenance(),         # 17
-        _score_registry_security(),                # 18
-        _score_host_os_hardening(),                # 19
-        _score_docker_daemon_config(),             # 20
-        _score_container_runtime_isolation(),      # 21
+        _score_resource_availability(),  # 16
+        _score_image_signing_provenance(),  # 17
+        _score_registry_security(),  # 18
+        _score_host_os_hardening(),  # 19
+        _score_docker_daemon_config(),  # 20
+        _score_container_runtime_isolation(),  # 21
         # Agentic AI domains
-        _score_prompt_injection_defense(),         # 22
-        _score_agent_behavior_integrity(),         # 23
-        _score_tool_use_safety(),                  # 24
-        _score_least_agency(),                     # 25
-        _score_agent_identity_nhi(),               # 26
-        _score_memory_integrity(),                 # 27
-        _score_inter_agent_trust(),                # 28
-        _score_ai_model_supply_chain(),            # 29
-        _score_ai_observability(),                 # 30
-        _score_human_in_the_loop(),                # 31
-        _score_rogue_agent_containment(),          # 32
-        _score_data_exfiltration_prevention(),     # 33
+        _score_prompt_injection_defense(),  # 22
+        _score_agent_behavior_integrity(),  # 23
+        _score_tool_use_safety(),  # 24
+        _score_least_agency(),  # 25
+        _score_agent_identity_nhi(),  # 26
+        _score_memory_integrity(),  # 27
+        _score_inter_agent_trust(),  # 28
+        _score_ai_model_supply_chain(),  # 29
+        _score_ai_observability(),  # 30
+        _score_human_in_the_loop(),  # 31
+        _score_rogue_agent_containment(),  # 32
+        _score_data_exfiltration_prevention(),  # 33
     ]
 
     # Build domain_id → score dict (1-indexed)
@@ -2245,25 +2337,45 @@ def compute_scorecard() -> Dict[str, Any]:
 
     # CC-21: per-score next-action guidance and urgency tier
     _next_action_by_score = {
-        0: ("Not yet implemented — review this domain and enable the relevant security module.", "critical"),
-        1: ("Initial capability exists. Run available scans or enable the relevant module.", "high"),
-        2: ("Basic controls in place. Automate, enforce policies, and close coverage gaps.", "medium"),
-        3: ("Controls defined and enforced. Focus on measuring effectiveness and fixing remaining findings.", "low"),
-        4: ("Measured and effective. Review trends and set remediation SLAs for any residual findings.", "info"),
-        5: ("Optimizing — no immediate action needed. Continue monitoring and scheduled reviews.", "info"),
+        0: (
+            "Not yet implemented — review this domain and enable the relevant security module.",
+            "critical",
+        ),
+        1: (
+            "Initial capability exists. Run available scans or enable the relevant module.",
+            "high",
+        ),
+        2: (
+            "Basic controls in place. Automate, enforce policies, and close coverage gaps.",
+            "medium",
+        ),
+        3: (
+            "Controls defined and enforced. Focus on measuring effectiveness and fixing remaining findings.",
+            "low",
+        ),
+        4: (
+            "Measured and effective. Review trends and set remediation SLAs for any residual findings.",
+            "info",
+        ),
+        5: (
+            "Optimizing — no immediate action needed. Continue monitoring and scheduled reviews.",
+            "info",
+        ),
     }
 
     # Build domain list with metadata
     domains = []
     for meta, score in zip(_SCORECARD_DOMAINS, domain_scores):
         next_action, urgency = _next_action_by_score.get(score, _next_action_by_score[0])
-        domains.append({
-            **meta,
-            "score": score,
-            "maturity": _MATURITY_LABELS[score],
-            "next_action": next_action,
-            "urgency": urgency,
-        })
+        domains.append(
+            {
+                **meta,
+                "score": score,
+                "maturity": _MATURITY_LABELS[score],
+                "next_action": next_action,
+                "urgency": urgency,
+            }
+        )
 
     total = sum(domain_scores)
     max_total = len(domain_scores) * 5
@@ -2286,8 +2398,13 @@ def compute_scorecard() -> Dict[str, Any]:
 
     # Composite compliance level (weakest-link across all 7 sub-scores)
     compliance_level = _determine_compliance_level(
-        iec_pct, nist_pct, cis_pct,
-        owasp_agentic_pct, mitre_atlas_pct, nist_ai_rmf_pct, csa_maestro_pct,
+        iec_pct,
+        nist_pct,
+        cis_pct,
+        owasp_agentic_pct,
+        mitre_atlas_pct,
+        nist_ai_rmf_pct,
+        csa_maestro_pct,
     )
 
     return {

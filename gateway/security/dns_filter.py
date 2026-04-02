@@ -33,9 +33,7 @@ class EntropyCalculator:
         for c in s:
             freq[c] += 1
         length = len(s)
-        return -sum(
-            (count / length) * math.log2(count / length) for count in freq.values()
-        )
+        return -sum((count / length) * math.log2(count / length) for count in freq.values())
 
 
 @dataclass
@@ -83,12 +81,8 @@ class DNSFilter:
         self._query_times: dict[str, list[float]] = defaultdict(list)
         # C44: IP resolution cache  { domain: (ip, timestamp) }
         self._resolved_ip_cache: dict[str, Tuple[str, float]] = {}
-        self._hex_re = re.compile(
-            r"^[0-9a-f]{%d,}$" % config.hex_pattern_min_length, re.I
-        )
-        self._b64_re = re.compile(
-            r"^[A-Za-z0-9+/]{%d,}={0,2}$" % config.base64_pattern_min_length
-        )
+        self._hex_re = re.compile(r"^[0-9a-f]{%d,}$" % config.hex_pattern_min_length, re.I)
+        self._b64_re = re.compile(r"^[A-Za-z0-9+/]{%d,}={0,2}$" % config.base64_pattern_min_length)
 
     def check(self, domain: str, agent_id: str) -> DNSVerdict:
         now = time.time()
@@ -134,9 +128,7 @@ class DNSFilter:
         self._audit.append(query)
 
         if flagged:
-            logger.warning(
-                "DNS query flagged: %s from %s — %s", domain, agent_id, reason
-            )
+            logger.warning("DNS query flagged: %s from %s — %s", domain, agent_id, reason)
 
         return DNSVerdict(allowed=allowed, flagged=flagged, reason=reason)
 
@@ -161,10 +153,7 @@ class DNSFilter:
             if self._hex_re.match(label):
                 patterns.append(TunnelingPattern("hex_encoding", label, 0.8))
 
-            if (
-                self._b64_re.match(label)
-                and len(label) >= self.config.base64_pattern_min_length
-            ):
+            if self._b64_re.match(label) and len(label) >= self.config.base64_pattern_min_length:
                 patterns.append(TunnelingPattern("base64_encoding", label, 0.9))
 
             entropy = EntropyCalculator.shannon_entropy(label)
@@ -180,9 +169,7 @@ class DNSFilter:
 
     def _cleanup_rate_window(self, agent_id: str, now: float):
         cutoff = now - 60
-        self._query_times[agent_id] = [
-            t for t in self._query_times[agent_id] if t > cutoff
-        ]
+        self._query_times[agent_id] = [t for t in self._query_times[agent_id] if t > cutoff]
 
     def get_audit_log(self, agent_id: Optional[str] = None) -> list[DNSQuery]:
         if agent_id:
@@ -226,7 +213,9 @@ class DNSFilter:
         if new_ip and new_ip != prev_ip and self._is_private_ip(new_ip):
             logger.warning(
                 "DNS rebinding detected for %s: %s -> %s (private range)",
-                domain, prev_ip, new_ip,
+                domain,
+                prev_ip,
+                new_ip,
             )
             return True
 
@@ -237,14 +226,14 @@ class DNSFilter:
     def _is_private_ip(self, ip: str) -> bool:
         """Return True if the IP address is in a private / loopback range."""
         private_patterns = [
-            re.compile(r'^10\.'),
-            re.compile(r'^192\.168\.'),
-            re.compile(r'^172\.(1[6-9]|2[0-9]|3[01])\.'),
-            re.compile(r'^127\.'),
-            re.compile(r'^169\.254\.'),
-            re.compile(r'^::1$'),
-            re.compile(r'^fc[0-9a-f]{2}:'),
-            re.compile(r'^fe80:'),
+            re.compile(r"^10\."),
+            re.compile(r"^192\.168\."),
+            re.compile(r"^172\.(1[6-9]|2[0-9]|3[01])\."),
+            re.compile(r"^127\."),
+            re.compile(r"^169\.254\."),
+            re.compile(r"^::1$"),
+            re.compile(r"^fc[0-9a-f]{2}:"),
+            re.compile(r"^fe80:"),
         ]
         return any(p.match(ip) for p in private_patterns)
 

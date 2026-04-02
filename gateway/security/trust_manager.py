@@ -179,21 +179,15 @@ class TrustManager:
 
     def record_success(self, agent_id: str, details: str = "") -> TrustLevel:
         """Record a successful action, increasing trust."""
-        return self._update_score(
-            agent_id, self.config.success_points, "success", details
-        )
+        return self._update_score(agent_id, self.config.success_points, "success", details)
 
     def record_failure(self, agent_id: str, details: str = "") -> TrustLevel:
         """Record a failed/blocked action, decreasing trust."""
-        return self._update_score(
-            agent_id, self.config.failure_points, "failure", details
-        )
+        return self._update_score(agent_id, self.config.failure_points, "failure", details)
 
     def record_violation(self, agent_id: str, details: str = "") -> TrustLevel:
         """Record a security violation, significantly decreasing trust."""
-        return self._update_score(
-            agent_id, self.config.violation_points, "violation", details
-        )
+        return self._update_score(agent_id, self.config.violation_points, "violation", details)
 
     def _update_score(
         self, agent_id: str, delta: float, event_type: str, details: str

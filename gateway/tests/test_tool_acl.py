@@ -1,9 +1,12 @@
 # Copyright © 2026 Isaiah Dallas Jefferson, Jr. AgentShroud™. All rights reserved.
 """Tests for gateway/security/tool_acl.py — V9-T2: Tool-level access control."""
+
 from __future__ import annotations
 
 import pytest
 
+from gateway.security.group_config import TeamsConfig
+from gateway.security.rbac_config import RBACConfig, Role
 from gateway.security.tool_acl import (
     ADMIN_TOOLS,
     COLLABORATOR_ALLOWED_TOOLS,
@@ -11,9 +14,6 @@ from gateway.security.tool_acl import (
     ToolACLConfig,
     ToolACLEnforcer,
 )
-from gateway.security.rbac_config import RBACConfig, Role
-from gateway.security.group_config import TeamsConfig
-
 
 # ---------------------------------------------------------------------------
 # Fixtures
@@ -51,6 +51,7 @@ def enforcer(rbac):
 # Owner: unrestricted
 # ---------------------------------------------------------------------------
 
+
 class TestOwnerAccess:
     def test_owner_can_use_private_tool(self, enforcer):
         allowed, reason = enforcer.can_use_tool(OWNER_ID, "gmail")
@@ -72,6 +73,7 @@ class TestOwnerAccess:
 # ---------------------------------------------------------------------------
 # Admin: admin tools + collaborator tools, not private
 # ---------------------------------------------------------------------------
+
 
 class TestAdminAccess:
     def test_admin_blocked_from_private_tool(self, enforcer):
@@ -96,6 +98,7 @@ class TestAdminAccess:
 # ---------------------------------------------------------------------------
 # Collaborator: only allowed subset
 # ---------------------------------------------------------------------------
+
 
 class TestCollaboratorAccess:
     def test_collaborator_blocked_from_private_tool(self, enforcer):
@@ -133,6 +136,7 @@ class TestCollaboratorAccess:
 # Viewer: same as collaborator (no tool use)
 # ---------------------------------------------------------------------------
 
+
 class TestViewerAccess:
     def test_viewer_blocked_from_private_tool(self, enforcer):
         allowed, _ = enforcer.can_use_tool(VIEWER_ID, "icloud")
@@ -147,25 +151,28 @@ class TestViewerAccess:
 # Group tool allowlist override
 # ---------------------------------------------------------------------------
 
+
 class TestGroupToolAllowlist:
     def test_group_allowlist_grants_extra_tool(self):
-        teams = TeamsConfig(**{
-            "groups": {
-                "ops": {
-                    "name": "Ops Team",
-                    "members": [COLLAB_ID],
-                    "projects": ["monitoring"],
-                    "collab_mode": "project_scoped",
+        teams = TeamsConfig(
+            **{
+                "groups": {
+                    "ops": {
+                        "name": "Ops Team",
+                        "members": [COLLAB_ID],
+                        "projects": ["monitoring"],
+                        "collab_mode": "project_scoped",
+                    },
                 },
-            },
-            "projects": {
-                "monitoring": {
-                    "name": "Monitoring",
-                    "focus_topics": ["monitoring"],
-                    "allowed_tools": ["monitoring_read", "grafana_query"],
+                "projects": {
+                    "monitoring": {
+                        "name": "Monitoring",
+                        "focus_topics": ["monitoring"],
+                        "allowed_tools": ["monitoring_read", "grafana_query"],
+                    },
                 },
-            },
-        })
+            }
+        )
         rbac = _make_rbac(teams)
         acl_cfg = ToolACLConfig(group_tool_allowlists={"ops": ["monitoring_read"]})
         enforcer = ToolACLEnforcer(acl_config=acl_cfg, rbac_config=rbac)
@@ -174,23 +181,25 @@ class TestGroupToolAllowlist:
         assert "group" in reason.lower()
 
     def test_project_allowed_tools_grant_access(self):
-        teams = TeamsConfig(**{
-            "groups": {
-                "data": {
-                    "name": "Data Team",
-                    "members": [COLLAB_ID],
-                    "projects": ["lakehouse"],
-                    "collab_mode": "project_scoped",
+        teams = TeamsConfig(
+            **{
+                "groups": {
+                    "data": {
+                        "name": "Data Team",
+                        "members": [COLLAB_ID],
+                        "projects": ["lakehouse"],
+                        "collab_mode": "project_scoped",
+                    },
                 },
-            },
-            "projects": {
-                "lakehouse": {
-                    "name": "Lakehouse",
-                    "focus_topics": ["parquet"],
-                    "allowed_tools": ["athena_query", "s3_read"],
+                "projects": {
+                    "lakehouse": {
+                        "name": "Lakehouse",
+                        "focus_topics": ["parquet"],
+                        "allowed_tools": ["athena_query", "s3_read"],
+                    },
                 },
-            },
-        })
+            }
+        )
         rbac = _make_rbac(teams)
         enforcer = ToolACLEnforcer(acl_config=ToolACLConfig(), rbac_config=rbac)
         # athena_query is in project allowed_tools → granted via group
@@ -201,6 +210,7 @@ class TestGroupToolAllowlist:
 # ---------------------------------------------------------------------------
 # No RBAC config (defaults to viewer)
 # ---------------------------------------------------------------------------
+
 
 class TestNoRBACConfig:
     def test_no_rbac_defaults_to_viewer(self):
@@ -217,6 +227,7 @@ class TestNoRBACConfig:
 # ---------------------------------------------------------------------------
 # deny_unknown_tools=False mode
 # ---------------------------------------------------------------------------
+
 
 class TestDenyUnknownFalse:
     def test_collaborator_can_use_unknown_tool_when_not_denied(self, rbac):
@@ -236,6 +247,7 @@ class TestDenyUnknownFalse:
 # Classification sets sanity checks
 # ---------------------------------------------------------------------------
 
+
 class TestClassificationSets:
     def test_private_and_admin_do_not_overlap_with_collab_allowed(self):
         overlap_private = PRIVATE_TOOLS & COLLABORATOR_ALLOWED_TOOLS
@@ -249,6 +261,7 @@ class TestClassificationSets:
 
 
 # ── C35: Per-Tool Rate Limiting tests ────────────────────────────────────────
+
 
 class TestToolRateLimiting:
     @pytest.fixture

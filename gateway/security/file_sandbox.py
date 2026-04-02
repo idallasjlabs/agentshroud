@@ -15,8 +15,8 @@ Enforce mode: hard path restrictions with separation of privilege protections.
 import fnmatch
 import logging
 import os
-import sys
 import re
+import sys
 import time
 from dataclasses import dataclass, field
 from typing import Optional
@@ -44,9 +44,7 @@ class PIIScanner:
         ("email", re.compile(r"\b[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}\b")),
         (
             "api_key",
-            re.compile(
-                r"\b(sk-[a-zA-Z0-9]{20,}|ghp-[a-zA-Z0-9]{20,}|AKIA[0-9A-Z]{16})\b"
-            ),
+            re.compile(r"\b(sk-[a-zA-Z0-9]{20,}|ghp-[a-zA-Z0-9]{20,}|AKIA[0-9A-Z]{16})\b"),
         ),
         ("api_key_generic", re.compile(r"\bsk-proj-[a-zA-Z0-9]{20,}\b")),
     ]
@@ -102,45 +100,37 @@ class FileSandboxConfig:
             "/etc/shadow",
             "/etc/passwd",
             "/etc/sudoers",
-            
             # SSH keys and authentication
             "**/.ssh/id_*",
             "**/.ssh/authorized_keys",
             "**/.ssh/*_rsa",
             "**/.ssh/*_ed25519",
             "**/.ssh/config",
-            
             # Environment and secrets
             "**/.env",
             "**/.env.*",
             "**/secrets/**",
             "/run/secrets/**",
-            
             # AWS credentials
             "**/.aws/credentials",
             "**/.aws/config",
-            
             # Other credential files
             "**/.gnupg/*",
             "**/credentials",
-            
             # AgentShroud gateway source code - CRITICAL: agent cannot modify its own security
             "/app/agentshroud/**",
             "/app/config/**",
             "**/gateway/**/*.py",
             "**/modules/**/*.py",
             "**/security/**/*.py",
-            
             # Security policies and behavioral instructions - IMMUTABLE
             "**/SOUL.md",
             "**/system_prompt*",
-            
             # Docker configuration - prevent container escape/manipulation
             "**/docker-compose*.yml",
             "**/docker-compose*.yaml",
             "**/Dockerfile*",
             "**/seccomp/*.json",
-            
             # Cross-session memory protection - prevent users from accessing each other's memory
             "**/memory/*/",  # Block access to other users' memory directories
             "**/workspace/memory/*/",  # Block cross-session memory access in any bot workspace
@@ -148,11 +138,10 @@ class FileSandboxConfig:
             "**/workspace/*/memory/**",  # Block cross-workspace memory access
             "**/session_*/memory/**",  # Block cross-session memory access
             "**/agent_*/memory/**",  # Block cross-agent memory access
-            
             # Shared memory and temporary file isolation
             "/tmp/agentshroud/*/",  # Block cross-user temp directory access (handled by PathIsolation)
             "/var/tmp/agentshroud/*/",  # Block cross-user var temp access
-                        # Host system paths that should never be accessible from container
+            # Host system paths that should never be accessible from container
             "/etc/**",
             "/var/log/**",
             "/var/lib/**",
@@ -162,12 +151,10 @@ class FileSandboxConfig:
             "/sbin/**",
             "/proc/sys/**",
             "/sys/**",
-            
             # Gateway runtime and configuration
             "**/agentshroud.yaml",
             "**/config.yaml",
             "**/tool_risk_tiers.yaml",
-            
             # Development and deployment configs
             "**/.git/**",
             "**/terraform/**",
@@ -234,22 +221,20 @@ class FileSandbox:
     def _detect_raw_traversal(self, path: str) -> str:
         """Detect path traversal attempts in raw input before normalization."""
         # Detect double-dot patterns (including double-encoded)
-        if re.search(r'\.\.+[/\\]', path) or re.search(r'[/\\]\.\.+', path):
+        if re.search(r"\.\.+[/\\]", path) or re.search(r"[/\\]\.\.+", path):
             return "path traversal sequence detected"
-        
-        # Detect Windows-style traversal with backslashes  
-        if '\\' in path and ('system32' in path.lower() or 'windows' in path.lower()):
+
+        # Detect Windows-style traversal with backslashes
+        if "\\" in path and ("system32" in path.lower() or "windows" in path.lower()):
             return "Windows-style path traversal detected"
-            
+
         # Detect encoded traversal patterns
-        if '....//....' in path or '....//' in path:
+        if "....//...." in path or "....//" in path:
             return "double-encoded traversal detected"
-            
+
         return ""
 
-    def _check(
-        self, path: str, agent_id: str, operation: str, size: int = 0
-    ) -> FileVerdict:
+    def _check(self, path: str, agent_id: str, operation: str, size: int = 0) -> FileVerdict:
         flags: list[str] = []
 
         # Pre-normalization traversal detection
@@ -264,18 +249,22 @@ class FileSandbox:
             resolved = path
         # macOS: /tmp -> /private/tmp, /etc -> /private/etc - normalize for pattern matching
         if sys.platform == "darwin" and resolved.startswith("/private/"):
-            resolved_canonical = resolved[len("/private"):]  # /private/tmp/x -> /tmp/x
+            resolved_canonical = resolved[len("/private") :]  # /private/tmp/x -> /tmp/x
         else:
             resolved_canonical = resolved
 
         # Check blocked paths against both original and resolved
-        if self._matches_blocked(path) or (
-            resolved != path and self._matches_blocked(resolved)) or self._matches_blocked(resolved_canonical
+        if (
+            self._matches_blocked(path)
+            or (resolved != path and self._matches_blocked(resolved))
+            or self._matches_blocked(resolved_canonical)
         ):
             flags.append(f"security-sensitive path: {path}")
 
         # Special check for immutable files (security policies)
-        if self._is_immutable_file(path) or (resolved != path and self._is_immutable_file(resolved)):
+        if self._is_immutable_file(path) or (
+            resolved != path and self._is_immutable_file(resolved)
+        ):
             flags.append(f"immutable security file: {path}")
 
         # In enforce mode, check allowed paths against resolved path
@@ -283,12 +272,19 @@ class FileSandbox:
             if operation == "write":
                 # For writes, use explicit allowed list or defaults
                 allowed_paths = self.config.allowed_write_paths or self.config.allowed_write_default
-                if not (self._matches_allowed_paths(path, allowed_paths) or self._matches_allowed_paths(resolved, allowed_paths) or self._matches_allowed_paths(resolved_canonical, allowed_paths)):
+                if not (
+                    self._matches_allowed_paths(path, allowed_paths)
+                    or self._matches_allowed_paths(resolved, allowed_paths)
+                    or self._matches_allowed_paths(resolved_canonical, allowed_paths)
+                ):
                     flags.append(f"write outside allowed workspace: {path}")
             elif operation == "read":
                 # For reads, check if it's in blocked paths
                 allowed_paths = self.config.allowed_read_paths
-                if allowed_paths is not None and not (self._matches_allowed_paths(path, allowed_paths) or self._matches_allowed_paths(resolved, allowed_paths)):
+                if allowed_paths is not None and not (
+                    self._matches_allowed_paths(path, allowed_paths)
+                    or self._matches_allowed_paths(resolved, allowed_paths)
+                ):
                     flags.append(f"read outside allowed paths: {path}")
 
         flagged = len(flags) > 0
@@ -329,7 +325,7 @@ class FileSandbox:
         """Check if this is an immutable security file by name."""
         immutable_names = {
             "SOUL.md",
-            "system_prompt.txt", 
+            "system_prompt.txt",
             "system_prompt.md",
             "agentshroud.yaml",
             "config.yaml",
@@ -351,8 +347,8 @@ class FileSandbox:
         # Direct fnmatch
         if fnmatch.fnmatch(path, pattern):
             return True
-        
-        # Handle ** patterns 
+
+        # Handle ** patterns
         if pattern.startswith("**/"):
             suffix = pattern[3:]
             # Check if path ends with suffix
@@ -367,13 +363,13 @@ class FileSandbox:
                 subpath = "/".join(path_parts[i:])
                 if fnmatch.fnmatch(subpath, suffix):
                     return True
-                    
+
         # Handle trailing ** patterns (directory and all contents)
         if pattern.endswith("/**"):
             prefix = pattern[:-3]
             if path.startswith(prefix + "/") or path == prefix:
                 return True
-                
+
         return False
 
     def record_network_activity(self, agent_id: str):
@@ -409,9 +405,7 @@ class FileSandbox:
         return [
             op.path
             for op in self._audit
-            if op.agent_id == agent_id
-            and op.operation == "write"
-            and op.path.startswith("/tmp")
+            if op.agent_id == agent_id and op.operation == "write" and op.path.startswith("/tmp")
         ]
 
     def get_security_violations(self, agent_id: Optional[str] = None) -> list[FileOperation]:

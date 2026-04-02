@@ -12,8 +12,8 @@ with logging of all egress attempts. Supports enforce and monitor modes.
 """
 
 
-import ipaddress
 import asyncio
+import ipaddress
 import logging
 import time
 from collections import Counter
@@ -22,7 +22,7 @@ from enum import Enum
 from typing import Optional
 from urllib.parse import urlparse
 
-from .egress_config import get_egress_config, EgressFilterConfig
+from .egress_config import EgressFilterConfig, get_egress_config
 
 logger = logging.getLogger(__name__)
 
@@ -102,10 +102,12 @@ class EgressPolicy:
 class EgressFilter:
     """Filter outbound connections based on allowlists with enforce/monitor modes."""
 
-    def __init__(self,
-                 config: Optional[EgressFilterConfig] = None,
-                 default_policy: Optional[EgressPolicy] = None,
-                 audit_store=None):
+    def __init__(
+        self,
+        config: Optional[EgressFilterConfig] = None,
+        default_policy: Optional[EgressPolicy] = None,
+        audit_store=None,
+    ):
         self.config = config or get_egress_config()
         self.default_policy = default_policy or EgressPolicy()
         self._agent_policies: dict[str, EgressPolicy] = {}
@@ -139,6 +141,7 @@ class EgressFilter:
         Cleans up stale entries to prevent unbounded growth.
         """
         from datetime import datetime, timezone
+
         try:
             expiry = datetime.fromisoformat(expires_at_iso.replace("Z", "+00:00")).timestamp()
         except (ValueError, AttributeError):
@@ -157,9 +160,7 @@ class EgressFilter:
         """Get effective policy for an agent."""
         return self._agent_policies.get(agent_id, self.default_policy)
 
-    def check(
-        self, agent_id: str, destination: str, port: Optional[int] = None
-    ) -> EgressAttempt:
+    def check(self, agent_id: str, destination: str, port: Optional[int] = None) -> EgressAttempt:
         """
         Check if an outbound connection is allowed.
 
@@ -359,6 +360,7 @@ class EgressFilter:
                         )
                         if self._event_bus is not None:
                             from gateway.ingest_api.event_bus import make_event
+
                             await self._event_bus.emit(
                                 make_event(
                                     "egress_approval_pending",
@@ -452,12 +454,7 @@ class EgressFilter:
                     or mapped.is_link_local
                     or mapped.is_reserved
                 )
-            return (
-                addr.is_private
-                or addr.is_loopback
-                or addr.is_link_local
-                or addr.is_reserved
-            )
+            return addr.is_private or addr.is_loopback or addr.is_link_local or addr.is_reserved
         except ValueError:
             # Not an IP address (it's a domain) — check for localhost variants
             normalized = host.lower().rstrip(".")
@@ -479,7 +476,7 @@ class EgressFilter:
                 f"Domain '{dest}' is not in the allowlist. "
                 f"Contact your administrator to add trusted domains."
             )
-        
+
         attempt = EgressAttempt(
             timestamp=time.time(),
             agent_id=agent_id,
@@ -496,6 +493,7 @@ class EgressFilter:
         # Persist to SQLite audit store if configured (fire-and-forget)
         if self._audit_store is not None:
             import asyncio
+
             try:
                 loop = asyncio.get_running_loop()
                 loop.create_task(
@@ -517,7 +515,9 @@ class EgressFilter:
 
         # Feed automatic decisions into the approval queue's decision log so the
         # SOC egress history page shows both interactive and filter-driven decisions.
-        if self._approval_queue is not None and hasattr(self._approval_queue, "log_external_decision"):
+        if self._approval_queue is not None and hasattr(
+            self._approval_queue, "log_external_decision"
+        ):
             try:
                 self._approval_queue.log_external_decision(
                     domain=dest,
@@ -535,12 +535,14 @@ class EgressFilter:
             )
             # Queue notification for async delivery
             if self._notifier:
-                self._pending_notifications.append({
-                    "domain": dest,
-                    "agent_id": agent_id,
-                    "port": port,
-                    "timestamp": time.time(),
-                })
+                self._pending_notifications.append(
+                    {
+                        "domain": dest,
+                        "agent_id": agent_id,
+                        "port": port,
+                        "timestamp": time.time(),
+                    }
+                )
         else:
             logger.info(
                 f"EGRESS ALLOWED: agent={agent_id} dest={dest} port={port} "
@@ -549,8 +551,9 @@ class EgressFilter:
 
         if self._event_bus is not None:
             try:
-                from gateway.ingest_api.event_bus import make_event
                 import asyncio
+
+                from gateway.ingest_api.event_bus import make_event
 
                 loop = asyncio.get_running_loop()
                 loop.create_task(
@@ -604,9 +607,7 @@ class EgressFilter:
                 logger.error("Egress notification failed: %s", e)
         return sent
 
-    def get_log(
-        self, agent_id: Optional[str] = None, limit: int = 100
-    ) -> list[EgressAttempt]:
+    def get_log(self, agent_id: Optional[str] = None, limit: int = 100) -> list[EgressAttempt]:
         """Get egress attempt log, optionally filtered by agent."""
         if agent_id:
             filtered = [a for a in self._log if a.agent_id == agent_id]
@@ -648,4 +649,7 @@ class EgressFilter:
                 parsed = urlparse(destination)
                 destination = parsed.hostname or destination
             counter[destination] += 1
-        return [{"destination": dest, "count": count} for dest, count in counter.most_common(max(1, limit))]
+        return [
+            {"destination": dest, "count": count}
+            for dest, count in counter.most_common(max(1, limit))
+        ]

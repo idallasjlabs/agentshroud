@@ -8,16 +8,17 @@ Tool Result Injection Scanner — detect and neutralize prompt injection attempt
 This scanner protects against indirect prompt injection attacks where malicious instructions
 are embedded in web pages, emails, or other tool results that the agent processes.
 """
-from __future__ import annotations
 
-from gateway.security.input_normalizer import normalize_input, strip_markdown_exfil
+from __future__ import annotations
 
 import base64
 import re
 import unicodedata
 from dataclasses import dataclass
 from enum import Enum
-from typing import Optional, List, Tuple
+from typing import List, Optional, Tuple
+
+from gateway.security.input_normalizer import normalize_input, strip_markdown_exfil
 
 
 class InjectionSeverity(str, Enum):
@@ -27,14 +28,15 @@ class InjectionSeverity(str, Enum):
 
 
 class InjectionAction(str, Enum):
-    STRIP = "strip"     # Remove injected content completely
-    WARN = "warn"       # Flag and warn but pass through with warning
-    LOG = "log"         # Log only, pass through unchanged
+    STRIP = "strip"  # Remove injected content completely
+    WARN = "warn"  # Flag and warn but pass through with warning
+    LOG = "log"  # Log only, pass through unchanged
 
 
 @dataclass
 class InjectionResult:
     """Result from tool result injection scan."""
+
     severity: InjectionSeverity
     action: InjectionAction
     patterns: List[str]
@@ -45,6 +47,7 @@ class InjectionResult:
 @dataclass
 class InjectionRule:
     """Rule for detecting injection patterns in tool results."""
+
     name: str
     pattern: re.Pattern
     severity: InjectionSeverity
@@ -108,7 +111,6 @@ _TOOL_INJECTION_PATTERNS: List[InjectionRule] = [
         severity=InjectionSeverity.HIGH,
         description="Social engineering with admin authority",
     ),
-    
     # Medium severity - likely injection attempts
     InjectionRule(
         "prompt_extraction",
@@ -146,7 +148,6 @@ _TOOL_INJECTION_PATTERNS: List[InjectionRule] = [
         severity=InjectionSeverity.MEDIUM,
         description="Code block delimiter injection",
     ),
-    
     # Low severity - suspicious patterns worth logging
     InjectionRule(
         "prompt_leak_attempt",
@@ -171,22 +172,22 @@ _TOOL_INJECTION_PATTERNS: List[InjectionRule] = [
 
 class ToolResultInjectionScanner:
     """Scanner for detecting prompt injection in tool results."""
-    
+
     def __init__(self, custom_rules: Optional[List[InjectionRule]] = None):
         """
         Initialize the scanner with optional custom rules.
-        
+
         Args:
             custom_rules: Additional injection rules to include in scanning.
         """
         self.rules = list(_TOOL_INJECTION_PATTERNS)
         if custom_rules:
             self.rules.extend(custom_rules)
-    
+
     def _detect_encoded_injection(self, content: str) -> List[Tuple[str, InjectionSeverity]]:
         """Check for base64 or hex encoded injection attempts."""
         findings = []
-        
+
         # Base64 detection
         b64_re = re.compile(r"[A-Za-z0-9+/]{20,}={0,2}")
         for match in b64_re.finditer(content):
@@ -199,7 +200,7 @@ class ToolResultInjectionScanner:
                         break
             except Exception:
                 continue
-        
+
         # Hex detection
         hex_re = re.compile(r"(?:0x)?[0-9a-fA-F]{20,}", re.IGNORECASE)
         for match in hex_re.finditer(content):
@@ -214,39 +215,39 @@ class ToolResultInjectionScanner:
                             break
             except Exception:
                 continue
-        
+
         return findings
-    
+
     def _detect_unicode_obfuscation(self, content: str) -> List[Tuple[str, InjectionSeverity]]:
         """Detect unicode-based obfuscation techniques."""
         findings = []
-        
+
         # Zero-width characters
         if re.search(r"[\u200b\u200c\u200d\u2060\ufeff]", content):
             findings.append(("zero_width_obfuscation", InjectionSeverity.MEDIUM))
-        
+
         # Right-to-left override
         if "\u202e" in content or "\u200f" in content:
             findings.append(("rtl_obfuscation", InjectionSeverity.MEDIUM))
-        
+
         # Homoglyph detection (mixing scripts)
         if re.search(r"[\u0400-\u04FF]", content) and re.search(r"[a-zA-Z]", content):
             findings.append(("homoglyph_obfuscation", InjectionSeverity.MEDIUM))
-        
+
         # Fullwidth characters
         if re.search(r"[！-～]", content):
             findings.append(("fullwidth_obfuscation", InjectionSeverity.LOW))
-        
+
         return findings
-    
+
     def scan_tool_result(self, tool_name: str, result_content: str) -> InjectionResult:
         """
         Scan tool result content for injection attempts.
-        
+
         Args:
             tool_name: Name of the tool that produced the result
             result_content: The content returned by the tool
-            
+
         Returns:
             InjectionResult with detected patterns and sanitized content
         """
@@ -264,15 +265,15 @@ class ToolResultInjectionScanner:
                 patterns=[],
                 sanitized_content=result_content or "",
             )
-        
+
         # Normalize unicode to defeat obfuscation
         normalized_content = unicodedata.normalize("NFKC", result_content)
         # Strip zero-width characters for pattern matching
         stripped_content = re.sub(r"[\u200b\u200c\u200d\u2060\ufeff]", "", normalized_content)
-        
+
         matched_patterns = []
         max_severity = InjectionSeverity.LOW
-        
+
         # Pattern matching
         for rule in self.rules:
             if rule.pattern.search(stripped_content):
@@ -281,7 +282,7 @@ class ToolResultInjectionScanner:
                     max_severity = InjectionSeverity.HIGH
                 elif rule.severity.value == "medium" and max_severity.value != "high":
                     max_severity = InjectionSeverity.MEDIUM
-        
+
         # Encoded content check
         for pattern_name, severity in self._detect_encoded_injection(result_content):
             matched_patterns.append(pattern_name)
@@ -289,7 +290,7 @@ class ToolResultInjectionScanner:
                 max_severity = InjectionSeverity.HIGH
             elif severity.value == "medium" and max_severity.value != "high":
                 max_severity = InjectionSeverity.MEDIUM
-        
+
         # Unicode obfuscation check
         for pattern_name, severity in self._detect_unicode_obfuscation(result_content):
             matched_patterns.append(pattern_name)
@@ -297,7 +298,7 @@ class ToolResultInjectionScanner:
                 max_severity = InjectionSeverity.HIGH
             elif severity.value == "medium" and max_severity.value != "high":
                 max_severity = InjectionSeverity.MEDIUM
-        
+
         # Determine action based on severity
         if max_severity == InjectionSeverity.HIGH:
             action = InjectionAction.STRIP
@@ -305,25 +306,27 @@ class ToolResultInjectionScanner:
             action = InjectionAction.WARN
         else:
             action = InjectionAction.LOG
-        
+
         # Create sanitized content
         sanitized_content = result_content
         warning_message = None
-        
+
         if action == InjectionAction.STRIP:
             # Strip detected injection patterns
             sanitized_content = result_content
             for rule in self.rules:
                 sanitized_content = rule.pattern.sub("[CONTENT_FILTERED]", sanitized_content)
             # Also remove encoded content that might contain injections
-            sanitized_content = re.sub(r"[A-Za-z0-9+/]{20,}={0,2}", "[BASE64_FILTERED]", sanitized_content)
+            sanitized_content = re.sub(
+                r"[A-Za-z0-9+/]{20,}={0,2}", "[BASE64_FILTERED]", sanitized_content
+            )
             warning_message = f"[AGENTSHROUD SECURITY] Malicious content detected and filtered from {tool_name} result. Patterns: {', '.join(matched_patterns)}"
-            
+
         elif action == InjectionAction.WARN:
             warning_message = f"[AGENTSHROUD SECURITY WARNING] Suspicious content detected in {tool_name} result. Exercise caution. Patterns: {', '.join(matched_patterns)}"
             # Prepend warning to content
             sanitized_content = f"{warning_message}\n\n{result_content}"
-        
+
         return InjectionResult(
             severity=max_severity,
             action=action,

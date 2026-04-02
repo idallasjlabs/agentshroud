@@ -20,9 +20,10 @@ from urllib.parse import urlparse
 
 import yaml
 from pydantic import BaseModel, Field, field_validator
+
+from ..security.group_config import TeamsConfig
 from .bot_config import BotConfig
 from .ssh_config import SSHConfig
-from ..security.group_config import TeamsConfig
 
 logger = logging.getLogger("agentshroud.gateway.config")
 
@@ -85,9 +86,7 @@ class RouterConfig(BaseModel):
         """Validate that each target URL uses http/https and targets an internal Docker host."""
         for name, url in v.items():
             if not url.startswith(("http://", "https://")):
-                raise ValueError(
-                    f"Target '{name}' URL must start with http:// or https://"
-                )
+                raise ValueError(f"Target '{name}' URL must start with http:// or https://")
 
             parsed = urlparse(url)
             hostname = parsed.hostname or ""
@@ -125,8 +124,6 @@ class ChannelsConfig(BaseModel):
     slack_channel_id: str = ""  # Primary Slack channel for gateway-originated notifications
 
 
-
-
 class SecurityModuleConfig(BaseModel):
     """Security module configuration"""
 
@@ -137,7 +134,9 @@ class SecurityModuleConfig(BaseModel):
 class SecurityConfig(BaseModel):
     """Complete security configuration"""
 
-    pii_sanitizer: SecurityModuleConfig = Field(default_factory=lambda: SecurityModuleConfig(action="redact"))
+    pii_sanitizer: SecurityModuleConfig = Field(
+        default_factory=lambda: SecurityModuleConfig(action="redact")
+    )
     prompt_guard: SecurityModuleConfig = Field(default_factory=SecurityModuleConfig)
     egress_filter: SecurityModuleConfig = Field(default_factory=SecurityModuleConfig)
     mcp_proxy: SecurityModuleConfig = Field(default_factory=SecurityModuleConfig)
@@ -150,17 +149,17 @@ class SecurityConfig(BaseModel):
 def get_module_mode(config: "GatewayConfig", module_name: str) -> str:
     """Return module mode, respecting the global permissive override."""
     import os
-    
+
     # Check for global override
     permissive = os.getenv("AGENTSHROUD_MODE", "enforce") == "monitor"
     if permissive:
         return "monitor"
-    
+
     # Get module-specific config
     module_config = getattr(config.security, module_name, None)
     if module_config:
         return module_config.mode
-    
+
     # Default to enforce
     return "enforce"
 
@@ -168,10 +167,16 @@ def get_module_mode(config: "GatewayConfig", module_name: str) -> str:
 def check_monitor_mode_warnings(config: "GatewayConfig", logger):
     """Log warnings for any core modules running in monitor mode."""
     core_modules = [
-        "pii_sanitizer", "prompt_guard", "egress_filter", "mcp_proxy",
-        "dns_filter", "subagent_monitor", "egress_monitor", "killswitch",
+        "pii_sanitizer",
+        "prompt_guard",
+        "egress_filter",
+        "mcp_proxy",
+        "dns_filter",
+        "subagent_monitor",
+        "egress_monitor",
+        "killswitch",
     ]
-    
+
     for module_name in core_modules:
         mode = get_module_mode(config, module_name)
         if mode == "monitor":
@@ -180,8 +185,11 @@ def check_monitor_mode_warnings(config: "GatewayConfig", logger):
                 f"Threats will be logged but NOT blocked. "
                 f"Set mode: enforce or remove AGENTSHROUD_MODE=monitor for production."
             )
+
+
 class ToolRiskPolicy(BaseModel):
     """Risk policy configuration for a tool tier"""
+
     require_approval: bool = False
     timeout_seconds: int = 300  # 5 minutes default
     timeout_action: str = "deny"  # deny or allow
@@ -191,65 +199,72 @@ class ToolRiskPolicy(BaseModel):
 
 class ToolRiskConfig(BaseModel):
     """Tool risk tier configuration"""
-    
-    critical: ToolRiskPolicy = Field(default_factory=lambda: ToolRiskPolicy(
-        require_approval=True,
-        timeout_seconds=300,
-        timeout_action="deny",
-        notify_channels=["websocket", "telegram_admin"],
-        owner_bypass=False
-    ))
-    
-    high: ToolRiskPolicy = Field(default_factory=lambda: ToolRiskPolicy(
-        require_approval=True, 
-        timeout_seconds=300,
-        timeout_action="deny",
-        notify_channels=["websocket"],
-        owner_bypass=True
-    ))
-    
-    medium: ToolRiskPolicy = Field(default_factory=lambda: ToolRiskPolicy(
-        require_approval=False,
-        timeout_seconds=300,
-        timeout_action="deny",
-        notify_channels=["websocket"],
-        owner_bypass=True
-    ))
-    
-    low: ToolRiskPolicy = Field(default_factory=lambda: ToolRiskPolicy(
-        require_approval=False,
-        timeout_seconds=300,
-        timeout_action="deny",
-        notify_channels=["websocket"],
-        owner_bypass=True
-    ))
-    
+
+    critical: ToolRiskPolicy = Field(
+        default_factory=lambda: ToolRiskPolicy(
+            require_approval=True,
+            timeout_seconds=300,
+            timeout_action="deny",
+            notify_channels=["websocket", "telegram_admin"],
+            owner_bypass=False,
+        )
+    )
+
+    high: ToolRiskPolicy = Field(
+        default_factory=lambda: ToolRiskPolicy(
+            require_approval=True,
+            timeout_seconds=300,
+            timeout_action="deny",
+            notify_channels=["websocket"],
+            owner_bypass=True,
+        )
+    )
+
+    medium: ToolRiskPolicy = Field(
+        default_factory=lambda: ToolRiskPolicy(
+            require_approval=False,
+            timeout_seconds=300,
+            timeout_action="deny",
+            notify_channels=["websocket"],
+            owner_bypass=True,
+        )
+    )
+
+    low: ToolRiskPolicy = Field(
+        default_factory=lambda: ToolRiskPolicy(
+            require_approval=False,
+            timeout_seconds=300,
+            timeout_action="deny",
+            notify_channels=["websocket"],
+            owner_bypass=True,
+        )
+    )
+
     # Tool classifications
-    tool_classifications: dict[str, str] = Field(default_factory=lambda: {
-        # Critical: irreversible external impact
-        "exec": "critical",
-        "cron": "critical", 
-        "sessions_send": "critical",
-        
-        # High: sensitive resource access
-        "nodes": "high",
-        "browser": "high",
-        "apply_patch": "high", 
-        "subagents": "high",
-        
-        # Medium: read potentially sensitive data
-        "grep": "medium",
-        "find": "medium",
-        "sessions_list": "medium",
-        "sessions_history": "medium", 
-        "session_status": "medium",
-        
-        # Low: safe read-only operations
-        "ls": "low",
-        "canvas": "low", 
-        "process": "low",
-    })
-    
+    tool_classifications: dict[str, str] = Field(
+        default_factory=lambda: {
+            # Critical: irreversible external impact
+            "exec": "critical",
+            "cron": "critical",
+            "sessions_send": "critical",
+            # High: sensitive resource access
+            "nodes": "high",
+            "browser": "high",
+            "apply_patch": "high",
+            "subagents": "high",
+            # Medium: read potentially sensitive data
+            "grep": "medium",
+            "find": "medium",
+            "sessions_list": "medium",
+            "sessions_history": "medium",
+            "session_status": "medium",
+            # Low: safe read-only operations
+            "ls": "low",
+            "canvas": "low",
+            "process": "low",
+        }
+    )
+
     # Global enforcement settings
     enforce_mode: bool = True
     monitor_only_mode: bool = False
@@ -271,9 +286,11 @@ class AuditExportConfig(BaseModel):
     def model_post_init(self, __context):
         if not self.db_path:
             import tempfile
+
             data_dir = Path(os.environ.get("AGENTSHROUD_DATA_DIR", tempfile.gettempdir()))
             data_dir.mkdir(parents=True, exist_ok=True)
             self.db_path = str(data_dir / "agentshroud_audit.db")
+
 
 class GatewayConfig(BaseModel):
     """Complete gateway configuration"""
@@ -297,7 +314,40 @@ class GatewayConfig(BaseModel):
     # Security modules configuration
     security: SecurityConfig = Field(default_factory=SecurityConfig)
     # Tool result PII configuration
-    tool_result_pii: dict = Field(default_factory=lambda: {"enabled": True, "tool_overrides": {"icloud": {"entities": ["US_SSN", "CREDIT_CARD", "PHONE_NUMBER", "EMAIL_ADDRESS", "LOCATION"], "min_confidence": 0.7}, "email": {"entities": ["US_SSN", "CREDIT_CARD", "PHONE_NUMBER", "EMAIL_ADDRESS"], "min_confidence": 0.7}, "contacts": {"entities": ["PHONE_NUMBER", "EMAIL_ADDRESS", "LOCATION"], "min_confidence": 0.8}, "web_search": {"entities": ["US_SSN", "CREDIT_CARD", "PHONE_NUMBER"], "min_confidence": 0.8}, "web_fetch": {"entities": ["US_SSN", "CREDIT_CARD", "PHONE_NUMBER", "EMAIL_ADDRESS"], "min_confidence": 0.8}, "browser": {"entities": ["US_SSN", "CREDIT_CARD"], "min_confidence": 0.9}}})
+    tool_result_pii: dict = Field(
+        default_factory=lambda: {
+            "enabled": True,
+            "tool_overrides": {
+                "icloud": {
+                    "entities": [
+                        "US_SSN",
+                        "CREDIT_CARD",
+                        "PHONE_NUMBER",
+                        "EMAIL_ADDRESS",
+                        "LOCATION",
+                    ],
+                    "min_confidence": 0.7,
+                },
+                "email": {
+                    "entities": ["US_SSN", "CREDIT_CARD", "PHONE_NUMBER", "EMAIL_ADDRESS"],
+                    "min_confidence": 0.7,
+                },
+                "contacts": {
+                    "entities": ["PHONE_NUMBER", "EMAIL_ADDRESS", "LOCATION"],
+                    "min_confidence": 0.8,
+                },
+                "web_search": {
+                    "entities": ["US_SSN", "CREDIT_CARD", "PHONE_NUMBER"],
+                    "min_confidence": 0.8,
+                },
+                "web_fetch": {
+                    "entities": ["US_SSN", "CREDIT_CARD", "PHONE_NUMBER", "EMAIL_ADDRESS"],
+                    "min_confidence": 0.8,
+                },
+                "browser": {"entities": ["US_SSN", "CREDIT_CARD"], "min_confidence": 0.9},
+            },
+        }
+    )
     # Tool risk tier configuration
     tool_risk: ToolRiskConfig = Field(default_factory=ToolRiskConfig)
     # Compliance audit export configuration
@@ -307,7 +357,6 @@ class GatewayConfig(BaseModel):
     bots: dict[str, BotConfig] = Field(default_factory=dict)
     # Team groups + projects configuration (optional — absent = v0.8.0 behavior preserved).
     teams: Optional[TeamsConfig] = None
-
 
 
 def _entity_type_mapping(yaml_type: str) -> str:
@@ -383,9 +432,7 @@ def load_config(config_path: Optional[Path] = None) -> GatewayConfig:
 
     # Filter to enabled entities and map names
     enabled_entities = [
-        _entity_type_mapping(rule["type"])
-        for rule in redaction_rules
-        if rule.get("enabled", True)
+        _entity_type_mapping(rule["type"]) for rule in redaction_rules if rule.get("enabled", True)
     ]
 
     pii_config = PIIConfig(
@@ -436,9 +483,7 @@ def load_config(config_path: Optional[Path] = None) -> GatewayConfig:
         (b for b in bot_configs.values() if b.default),
         next(iter(bot_configs.values()), None),
     )
-    _default_url = (
-        _default_bot.base_url if _default_bot else "http://localhost:18789"
-    )
+    _default_url = _default_bot.base_url if _default_bot else "http://localhost:18789"
 
     # Map router configuration
     router_config = RouterConfig(
@@ -510,11 +555,10 @@ def load_config(config_path: Optional[Path] = None) -> GatewayConfig:
     # MCP proxy config (raw dict — converted to MCPProxyConfig in main.py at startup)
     mcp_proxy_data = raw_config.get("mcp_proxy", {})
 
-    
     # Map security configuration
     security_raw = raw_config.get("security_modules", {})
     security_config = SecurityConfig()
-    
+
     # Override defaults with YAML values if present
     for module in ["pii_sanitizer", "prompt_guard", "egress_filter", "mcp_proxy"]:
         if module in security_raw:
@@ -529,9 +573,13 @@ def load_config(config_path: Optional[Path] = None) -> GatewayConfig:
     tool_risk_section = raw_config.get("tool_risk", {})
     # Audit export configuration
     audit_export_section = raw_config.get("audit_export", {})
-    audit_export_config = AuditExportConfig(**audit_export_section) if audit_export_section else AuditExportConfig()
+    audit_export_config = (
+        AuditExportConfig(**audit_export_section) if audit_export_section else AuditExportConfig()
+    )
 
-    tool_risk_config = ToolRiskConfig(**tool_risk_section) if tool_risk_section else ToolRiskConfig()
+    tool_risk_config = (
+        ToolRiskConfig(**tool_risk_section) if tool_risk_section else ToolRiskConfig()
+    )
 
     _port = gateway.get("port", 8080)
     _cors_origins = [
@@ -584,5 +632,3 @@ def load_config(config_path: Optional[Path] = None) -> GatewayConfig:
     )
 
     return config
-
-

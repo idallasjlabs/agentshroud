@@ -8,6 +8,7 @@ Covers:
   4. /locked owner command returns formatted lockdown status
   5. /unlock owner command calls reset() and confirms success
 """
+
 from __future__ import annotations
 
 import asyncio
@@ -17,12 +18,11 @@ from typing import Any
 
 import pytest
 
+from gateway.proxy.telegram_proxy import TelegramAPIProxy
 from gateway.security.progressive_lockdown import (
     LockdownLevel,
     ProgressiveLockdown,
 )
-from gateway.proxy.telegram_proxy import TelegramAPIProxy
-
 
 # ── Shared stubs ─────────────────────────────────────────────────────────────
 
@@ -94,6 +94,7 @@ def _make_proxy(owner_id: str = OWNER_ID, collab_ids: list | None = None) -> Tel
 
 
 # ── Section 1: ProgressiveLockdown unit tests ────────────────────────────────
+
 
 class TestProgressiveLockdownUnit:
     def test_reset_true_for_known_user(self):
@@ -180,6 +181,7 @@ class TestProgressiveLockdownUnit:
 
 # ── Section 2: Collaborator notifications via _quarantine_blocked_message ────
 
+
 class TestCollabLockdownNotifications:
     """Verify _quarantine_blocked_message sends threshold warnings to the collaborator."""
 
@@ -233,7 +235,9 @@ class TestCollabLockdownNotifications:
         for _ in range(4):
             proxy._quarantine_blocked_message(COLLAB_ID, COLLAB_CHAT, "bad text", "reason", "test")
         await asyncio.sleep(0)
-        alert_msgs = [t for cid, t in sent if cid == COLLAB_CHAT and "multiple security blocks" in t]
+        alert_msgs = [
+            t for cid, t in sent if cid == COLLAB_CHAT and "multiple security blocks" in t
+        ]
         assert len(alert_msgs) == 1
 
     async def test_owner_also_notified_on_threshold(self):
@@ -249,6 +253,7 @@ class TestCollabLockdownNotifications:
 
 
 # ── Section 3: Suspended-drop notice with cooldown ───────────────────────────
+
 
 class TestSuspendedDropNotice:
     """Verify suspended users get a drop notice (rate-limited to avoid spam)."""
@@ -289,7 +294,9 @@ class TestSuspendedDropNotice:
         proxy._suspended_drop_notice_until[COLLAB_ID] = time.time() + 9999.0
 
         for _ in range(3):
-            response = _wrap(_make_update("anything", user_id=COLLAB_ID, chat_id=COLLAB_CHAT, update_id=_))
+            response = _wrap(
+                _make_update("anything", user_id=COLLAB_ID, chat_id=COLLAB_CHAT, update_id=_)
+            )
             await proxy._filter_inbound_updates(response)
         await asyncio.sleep(0)
 
@@ -303,9 +310,7 @@ class TestSuspendedDropNotice:
         for _ in range(10):
             proxy._lockdown.record_block(COLLAB_ID, "attack")
 
-        response = _wrap(
-            _make_update("hello owner", user_id=OWNER_ID, chat_id=OWNER_CHAT)
-        )
+        response = _wrap(_make_update("hello owner", user_id=OWNER_ID, chat_id=OWNER_CHAT))
         result = await proxy._filter_inbound_updates(response)
         # Owner update should pass through (not dropped)
         forwarded = [u for u in result.get("result", []) if u.get("message")]
@@ -313,6 +318,7 @@ class TestSuspendedDropNotice:
 
 
 # ── Section 4: /locked owner command ─────────────────────────────────────────
+
 
 class TestLockedCommand:
     async def _run_owner_cmd(self, text: str, proxy: TelegramAPIProxy) -> list[str]:
@@ -365,6 +371,7 @@ class TestLockedCommand:
 
 
 # ── Section 5: /unlock owner command ─────────────────────────────────────────
+
 
 class TestUnlockCommand:
     async def _run_owner_cmd(self, text: str, proxy: TelegramAPIProxy) -> list[str]:

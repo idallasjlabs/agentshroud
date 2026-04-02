@@ -100,9 +100,7 @@ class HTTPForwarder:
                         import aiohttp
 
                         url = f"{self.config.target_url}{path}"
-                        timeout = aiohttp.ClientTimeout(
-                            total=self.config.timeout_seconds
-                        )
+                        timeout = aiohttp.ClientTimeout(total=self.config.timeout_seconds)
                         async with aiohttp.ClientSession(timeout=timeout) as session:
                             async with session.request(
                                 method,
@@ -142,9 +140,7 @@ class HTTPForwarder:
                         latency_ms=(time.time() - start) * 1000,
                     )
 
-        return ForwardResult(
-            success=False, error="Max retries exceeded", retries=retries
-        )
+        return ForwardResult(success=False, error="Max retries exceeded", retries=retries)
 
     async def health_check(self) -> bool:
         """Check if the OpenClaw backend is healthy."""

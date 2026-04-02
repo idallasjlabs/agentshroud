@@ -3,13 +3,15 @@
 # Protected by common law trademark rights. Federal trademark registration pending.
 # Unauthorized reproduction, distribution, or use of the AgentShroud name or brand is strictly prohibited.
 """Security and edge case tests for AgentShroud Gateway"""
+
 from __future__ import annotations
 
+import time
 
 import pytest
-from gateway.ingest_api.auth import verify_token, RateLimiter
+
+from gateway.ingest_api.auth import RateLimiter, verify_token
 from gateway.ingest_api.models import ForwardRequest
-import time
 
 # === PII Security Tests ===
 
@@ -18,9 +20,7 @@ import time
 async def test_very_large_content(sanitizer):
     """Test handling of very large content (1MB+)"""
     # Create 1MB of content with embedded PII
-    large_content = (
-        "Normal text. " * 50000 + "My SSN is 123-45-6789. " + "More text. " * 20000
-    )
+    large_content = "Normal text. " * 50000 + "My SSN is 123-45-6789. " + "More text. " * 20000
 
     result = await sanitizer.sanitize(large_content)
 

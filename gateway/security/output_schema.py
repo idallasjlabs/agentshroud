@@ -14,6 +14,7 @@ Default schema enforces:
 
 Custom schemas can be registered per-context via register_schema().
 """
+
 from __future__ import annotations
 
 import logging
@@ -28,17 +29,14 @@ _RAW_TOOL_PAYLOAD = re.compile(
     r'"tool_name"\s*:\s*"[^"]*"|"function"\s*:\s*\{.*?"name"\s*:\s*"[^"]*"',
     re.IGNORECASE | re.DOTALL,
 )
-_LARGE_BASE64 = re.compile(
-    r"[A-Za-z0-9+/]{1370,}={0,2}"  # 1370 chars ≈ 1 KB decoded
-)
-_RAW_FILE_PATH = re.compile(
-    r"(?:/(?:Users|home|app|tmp|var|etc|root)/[^\s]{3,}|[A-Z]:\\[^\s]{3,})"
-)
+_LARGE_BASE64 = re.compile(r"[A-Za-z0-9+/]{1370,}={0,2}")  # 1370 chars ≈ 1 KB decoded
+_RAW_FILE_PATH = re.compile(r"(?:/(?:Users|home|app|tmp|var|etc|root)/[^\s]{3,}|[A-Z]:\\[^\s]{3,})")
 
 
 @dataclass
 class SchemaRule:
     """Definition for a named output schema."""
+
     name: str
     max_length: int = 100_000
     forbidden_patterns: List[re.Pattern] = field(default_factory=list)
@@ -49,6 +47,7 @@ class SchemaRule:
 @dataclass
 class SchemaValidationResult:
     """Result of validating output against a schema."""
+
     valid: bool
     violations: List[str]
     sanitized_output: str
@@ -87,9 +86,7 @@ class OutputSchemaEnforcer:
         self._schemas[name] = rule
         logger.debug("OutputSchemaEnforcer: registered schema %r", name)
 
-    def validate(
-        self, output: str, schema_name: str = "default"
-    ) -> SchemaValidationResult:
+    def validate(self, output: str, schema_name: str = "default") -> SchemaValidationResult:
         """Validate output against the named schema.
 
         Args:
@@ -105,13 +102,13 @@ class OutputSchemaEnforcer:
 
         # Length check
         if len(output) > rule.max_length:
-            violations.append(
-                f"output_too_long:{len(output)}>{rule.max_length}"
-            )
+            violations.append(f"output_too_long:{len(output)}>{rule.max_length}")
             sanitized = sanitized[: rule.max_length]
             logger.warning(
                 "OutputSchema '%s': response trimmed %d -> %d chars",
-                schema_name, len(output), rule.max_length,
+                schema_name,
+                len(output),
+                rule.max_length,
             )
 
         # Forbidden pattern checks

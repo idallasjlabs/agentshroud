@@ -39,7 +39,9 @@ class ForwardRequest(BaseModel):
         default=None, max_length=100, description="Optional explicit target agent name"
     )
     user_id: Optional[str] = Field(
-        default=None, max_length=100, description="Telegram/platform user ID for RBAC. Set by gateway for webhook requests."
+        default=None,
+        max_length=100,
+        description="Telegram/platform user ID for RBAC. Set by gateway for webhook requests.",
     )
 
     @field_validator("content")
@@ -52,7 +54,15 @@ class ForwardRequest(BaseModel):
     @field_validator("source")
     @classmethod
     def validate_source(cls, v: str) -> str:
-        allowed = {"shortcut", "browser_extension", "script", "api", "telegram", "chat-console", "control-center"}
+        allowed = {
+            "shortcut",
+            "browser_extension",
+            "script",
+            "api",
+            "telegram",
+            "chat-console",
+            "control-center",
+        }
         if v not in allowed:
             raise ValueError(f"source must be one of {allowed}")
         return v
@@ -68,11 +78,11 @@ class ApprovalRequest(BaseModel):
     description: str = Field(
         ..., max_length=2_000, description="Human-readable description of the action"
     )
-    details: dict[str, Any] = Field(
-        default_factory=dict, description="Action-specific payload"
-    )
+    details: dict[str, Any] = Field(default_factory=dict, description="Action-specific payload")
     agent_id: str = Field(
-        default="", max_length=100, description="Agent requesting approval (set by gateway from active bot config)"
+        default="",
+        max_length=100,
+        description="Agent requesting approval (set by gateway from active bot config)",
     )
 
 
@@ -99,18 +109,12 @@ class ForwardResponse(BaseModel):
     content_hash: str = Field(..., description="SHA-256 hash of sanitized content")
     forwarded_to: str = Field(..., description="Target agent name")
     timestamp: str = Field(..., description="ISO 8601 timestamp")
-    agent_response: Optional[str] = Field(
-        None, description="Agent's response if available"
-    )
-    audit_entry_id: Optional[str] = Field(
-        None, description="Pipeline audit chain entry ID"
-    )
+    agent_response: Optional[str] = Field(None, description="Agent's response if available")
+    audit_entry_id: Optional[str] = Field(None, description="Pipeline audit chain entry ID")
     audit_hash: Optional[str] = Field(
         None, description="SHA-256 hash chain entry for tamper-evident audit"
     )
-    prompt_score: Optional[float] = Field(
-        None, description="Prompt injection risk score (0.0–1.0)"
-    )
+    prompt_score: Optional[float] = Field(None, description="Prompt injection risk score (0.0–1.0)")
 
 
 class LedgerEntry(BaseModel):
@@ -238,7 +242,11 @@ class EmailSendRequest(BaseModel):
     to: str = Field(..., max_length=254, description="Recipient email address")
     subject: str = Field(..., max_length=998, description="Email subject")
     body: str = Field(..., max_length=100_000, description="Email body text")
-    agent_id: str = Field(default="", max_length=100, description="Requesting agent (set by gateway from active bot config)")
+    agent_id: str = Field(
+        default="",
+        max_length=100,
+        description="Requesting agent (set by gateway from active bot config)",
+    )
 
     @field_validator("subject")
     @classmethod

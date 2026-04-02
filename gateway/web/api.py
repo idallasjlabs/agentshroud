@@ -28,12 +28,11 @@ from fastapi import (
     WebSocket,
     WebSocketDisconnect,
 )
-from fastapi.security import HTTPBearer, HTTPAuthorizationCredentials
+from fastapi.security import HTTPAuthorizationCredentials, HTTPBearer
 from pydantic import BaseModel
 
 from ..ingest_api.auth import verify_token
 from ..ingest_api.config import load_config
-
 from ..runtime import detect_runtime, get_engine
 from ..runtime.config import RuntimeConfig
 from ..runtime.security import get_security_comparison, warn_missing_features
@@ -42,8 +41,10 @@ logger = logging.getLogger("agentshroud.web.api")
 
 # Scoped WebSocket tokens for management API (R3-M2)
 import secrets as _secrets
+
 _mgmt_ws_tokens: dict[str, float] = {}
 _MGMT_WS_TOKEN_TTL = 300  # 5 minutes
+
 
 def _create_mgmt_ws_token() -> str:
     """Create a short-lived WebSocket-only token for management endpoints."""
@@ -56,6 +57,7 @@ def _create_mgmt_ws_token() -> str:
         del _mgmt_ws_tokens[t]
     return token
 
+
 def _validate_mgmt_ws_token(token: str) -> bool:
     """Validate a management WebSocket token (single-use, time-limited)."""
     if not token or not token.startswith("mgmt_ws_"):
@@ -64,6 +66,7 @@ def _validate_mgmt_ws_token(token: str) -> bool:
     if expiry is None:
         return False
     return time.time() < expiry
+
 
 router = APIRouter(prefix="/api", tags=["management"])
 
@@ -239,9 +242,7 @@ async def get_status(user: str = Depends(require_auth)) -> dict:
             c = container_map[svc_name]
             services[svc_name] = {
                 "status": (
-                    "running"
-                    if "Up" in c.status or "running" in c.status.lower()
-                    else "stopped"
+                    "running" if "Up" in c.status or "running" in c.status.lower() else "stopped"
                 ),
                 "image": c.image,
                 "id": c.id[:12],
@@ -383,9 +384,7 @@ async def get_config(user: str = Depends(require_auth)) -> dict:
 
 
 @router.put("/config")
-async def update_config(
-    update: ConfigUpdate, user: str = Depends(require_auth)
-) -> dict:
+async def update_config(update: ConfigUpdate, user: str = Depends(require_auth)) -> dict:
     """Update configuration (writes YAML and optionally restarts)."""
     import yaml
 
@@ -405,9 +404,7 @@ async def update_config(
     }
     unexpected = set(update.config.keys()) - ALLOWED_TOP_KEYS
     if unexpected:
-        raise HTTPException(
-            status_code=400, detail=f"Unknown config keys: {sorted(unexpected)}"
-        )
+        raise HTTPException(status_code=400, detail=f"Unknown config keys: {sorted(unexpected)}")
 
     # Backup current
     if config_path.exists():
@@ -419,9 +416,7 @@ async def update_config(
 
 
 @router.post("/config/import")
-async def import_config(
-    update: ConfigUpdate, user: str = Depends(require_auth)
-) -> dict:
+async def import_config(update: ConfigUpdate, user: str = Depends(require_auth)) -> dict:
     """Import configuration from uploaded data."""
     return await update_config(update)
 
@@ -505,16 +500,12 @@ async def check_bot_updates(bot_id: str, user: str = Depends(require_auth)) -> d
         "bot_id": bot_id,
         "current": current,
         "latest": latest,
-        "update_available": current != latest
-        and latest != "unknown"
-        and current != "unknown",
+        "update_available": current != latest and latest != "unknown" and current != "unknown",
     }
 
 
 @router.post("/updates/bot/{bot_id}/upgrade")
-async def upgrade_bot(
-    bot_id: str, req: UpdateRequest, user: str = Depends(require_auth)
-) -> dict:
+async def upgrade_bot(bot_id: str, req: UpdateRequest, user: str = Depends(require_auth)) -> dict:
     """Upgrade a named bot container."""
     engine = _get_engine()
     container = _resolve_bot_container(bot_id)
@@ -558,9 +549,7 @@ async def check_openclaw_updates(user: str = Depends(require_auth)) -> dict:
 
 
 @router.post("/updates/openclaw/upgrade")
-async def upgrade_openclaw(
-    req: UpdateRequest, user: str = Depends(require_auth)
-) -> dict:
+async def upgrade_openclaw(req: UpdateRequest, user: str = Depends(require_auth)) -> dict:
     """Upgrade OpenClaw (backward-compat alias for /updates/bot/openclaw/upgrade)."""
     return await upgrade_bot("openclaw", req, user)
 
@@ -595,14 +584,10 @@ async def check_agentshroud_updates(user: str = Depends(require_auth)) -> dict:
             timeout=10,
             cwd=".",
         )
-        current_version = (
-            tag_result.stdout.strip() if tag_result.returncode == 0 else "dev"
-        )
+        current_version = tag_result.stdout.strip() if tag_result.returncode == 0 else "dev"
 
         # Fetch latest from remote
-        subprocess.run(
-            ["git", "fetch", "--tags"], capture_output=True, timeout=30, cwd="."
-        )
+        subprocess.run(["git", "fetch", "--tags"], capture_output=True, timeout=30, cwd=".")
 
         # Check if behind
         behind = subprocess.run(
@@ -639,9 +624,7 @@ async def check_agentshroud_updates(user: str = Depends(require_auth)) -> dict:
 
 
 @router.post("/updates/agentshroud/upgrade")
-async def upgrade_agentshroud(
-    req: UpdateRequest, user: str = Depends(require_auth)
-) -> dict:
+async def upgrade_agentshroud(req: UpdateRequest, user: str = Depends(require_auth)) -> dict:
     """Pull latest AgentShroud, test, rebuild, restart. Auto-rollback on failure."""
     import subprocess
 
@@ -857,9 +840,7 @@ async def ws_logs(websocket: WebSocket, token: str = Query(default="")):
                 for svc in ["agentshroud-gateway", "agentshroud-bot"]:
                     try:
                         logs = engine.logs(svc, tail=5)
-                        await websocket.send_json(
-                            {"service": svc, "logs": logs.splitlines()}
-                        )
+                        await websocket.send_json({"service": svc, "logs": logs.splitlines()})
                     except Exception:
                         pass
             except Exception:

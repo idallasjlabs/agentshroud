@@ -5,17 +5,18 @@
 """Tests for consent_framework module - MCP server config validation.
 TDD: Written before implementation.
 """
+
 from __future__ import annotations
 
+import os
+import sys
 
 import pytest
-import sys
-import os
 
 sys.path.insert(0, os.path.join(os.path.dirname(__file__), ".."))
 from security.consent_framework import (
-    ConsentFramework,
     ConsentDecision,
+    ConsentFramework,
     ServerConfig,
     ShellInjectionDetected,
 )
@@ -147,9 +148,7 @@ class TestEnvironmentValidation:
         assert not result.warnings
 
     def test_env_with_path_manipulation(self, framework):
-        cfg = ServerConfig(
-            name="s", command="node", args=[], env={"PATH": "/tmp/evil:/usr/bin"}
-        )
+        cfg = ServerConfig(name="s", command="node", args=[], env={"PATH": "/tmp/evil:/usr/bin"})
         result = framework.validate_config(cfg)
         assert result.warnings
 

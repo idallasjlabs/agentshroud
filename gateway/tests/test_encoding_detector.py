@@ -1,8 +1,12 @@
 # Copyright (c) 2026 Isaiah Dallas Jefferson, Jr. AgentShroud\u2122
 from __future__ import annotations
+
 import base64
+
 import pytest
-from gateway.security.encoding_detector import EncodingDetector, EncodingConfig
+
+from gateway.security.encoding_detector import EncodingConfig, EncodingDetector
+
 
 class TestEncodingDetector:
     def setup_method(self):

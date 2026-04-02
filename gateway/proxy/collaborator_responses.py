@@ -4,6 +4,7 @@
 Centralises all user-facing message strings and formatters so they stay
 consistent across channels without duplication.
 """
+
 from __future__ import annotations
 
 from typing import TYPE_CHECKING
@@ -16,9 +17,7 @@ if TYPE_CHECKING:
 # Status / info templates
 # ---------------------------------------------------------------------------
 
-COLLAB_UNAVAILABLE = (
-    "I'm not available right now. Please try again shortly."
-)
+COLLAB_UNAVAILABLE = "I'm not available right now. Please try again shortly."
 
 COLLAB_OUTSIDE_SCOPE = (
     "That request falls outside the current project scope. "
@@ -40,6 +39,7 @@ COLLAB_NO_PROJECTS = (
 # ---------------------------------------------------------------------------
 # Group/project formatters
 # ---------------------------------------------------------------------------
+
 
 def format_groups_list(user_id: str, teams: "TeamsConfig") -> str:
     """Format a user's group memberships for display."""
@@ -90,10 +90,7 @@ def format_projects_list(user_id: str, teams: "TeamsConfig") -> str:
     lines = ["Your accessible projects:"]
     for p in projects:
         topic_preview = ", ".join(p.focus_topics[:5])
-        lines.append(
-            f"  \u2022 {p.name}\n"
-            f"    Topics: {topic_preview}"
-        )
+        lines.append(f"  \u2022 {p.name}\n" f"    Topics: {topic_preview}")
     return "\n".join(lines)
 
 
@@ -129,6 +126,7 @@ def format_no_permission(action: str) -> str:
 # Project context injection string (prepended to bot context)
 # ---------------------------------------------------------------------------
 
+
 def build_project_context_injection(group_name: str, project: "ProjectConfig") -> str:
     """Build the system-prompt injection for project_scoped mode."""
     topics = ", ".join(project.focus_topics) if project.focus_topics else "general"
@@ -139,5 +137,5 @@ def build_project_context_injection(group_name: str, project: "ProjectConfig") -
         f"Focus: {topics}. Allowed tools: {tools}.\n"
         f"Only assist with queries related to the above. "
         f"For out-of-scope requests, respond: "
-        f"\"This falls outside the current project scope.\""
+        f'"This falls outside the current project scope."'
     )

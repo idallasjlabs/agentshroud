@@ -10,6 +10,7 @@ The report is triggered:
   1. On a daily schedule (configurable via AGENTSHROUD_CVE_REPORT_HOUR, default 06:00 UTC)
   2. On-demand via POST /soc/v1/cve-report
 """
+
 from __future__ import annotations
 
 import asyncio
@@ -21,7 +22,7 @@ from datetime import datetime, timezone
 from pathlib import Path
 from typing import Any, Optional
 
-from .trivy_report import run_trivy_scan, save_report, generate_summary, SEVERITY_ORDER
+from .trivy_report import SEVERITY_ORDER, generate_summary, run_trivy_scan, save_report
 
 logger = logging.getLogger("agentshroud.security.daily_cve_report")
 
@@ -124,9 +125,7 @@ async def run_and_send_cve_report(
     loop = asyncio.get_event_loop()
 
     # Run Trivy in executor (blocking subprocess).
-    report = await loop.run_in_executor(
-        None, lambda: run_trivy_scan(target=scan_target)
-    )
+    report = await loop.run_in_executor(None, lambda: run_trivy_scan(target=scan_target))
 
     # Persist report to shared volume.
     try:
@@ -158,9 +157,7 @@ async def run_and_send_cve_report(
     return summary
 
 
-async def _send_telegram(
-    bot_token: str, chat_id: str, text: str, base_url: str
-) -> bool:
+async def _send_telegram(bot_token: str, chat_id: str, text: str, base_url: str) -> bool:
     """Send a message via Telegram Bot API. Returns True on success."""
     url = f"{base_url}/bot{bot_token}/sendMessage"
     payload = {
@@ -171,7 +168,8 @@ async def _send_telegram(
     }
     data = json.dumps(payload).encode("utf-8")
     req = urllib.request.Request(
-        url, data=data,
+        url,
+        data=data,
         headers={"Content-Type": "application/json"},
         method="POST",
     )
@@ -215,7 +213,8 @@ async def cve_report_scheduler(
             if sleep_secs > 0:
                 logger.info(
                     "CVE report scheduler: next report in %.0f seconds (at %s UTC)",
-                    sleep_secs, target.strftime("%H:%M"),
+                    sleep_secs,
+                    target.strftime("%H:%M"),
                 )
                 await asyncio.sleep(sleep_secs)
 
@@ -227,7 +226,8 @@ async def cve_report_scheduler(
             )
             logger.info(
                 "Daily CVE report complete: %d findings, telegram_sent=%s",
-                result.get("findings", 0), result.get("telegram_sent"),
+                result.get("findings", 0),
+                result.get("telegram_sent"),
             )
         except asyncio.CancelledError:
             logger.info("CVE report scheduler cancelled")

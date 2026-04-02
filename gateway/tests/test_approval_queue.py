@@ -3,16 +3,16 @@
 # Protected by common law trademark rights. Federal trademark registration pending.
 # Unauthorized reproduction, distribution, or use of the AgentShroud name or brand is strictly prohibited.
 """Tests for approval queue"""
-from __future__ import annotations
 
+from __future__ import annotations
 
 import asyncio
 
 import pytest
 
+from gateway.approval_queue.queue import ApprovalQueue
 from gateway.ingest_api.config import ApprovalQueueConfig
 from gateway.ingest_api.models import ApprovalRequest
-from gateway.approval_queue.queue import ApprovalQueue
 
 
 @pytest.fixture
@@ -93,9 +93,7 @@ async def test_decide_approval_reject(approval_queue):
     item = await approval_queue.submit(request)
 
     # Reject it
-    updated = await approval_queue.decide(
-        item.request_id, approved=False, reason="Too risky"
-    )
+    updated = await approval_queue.decide(item.request_id, approved=False, reason="Too risky")
 
     assert updated.status == "rejected"
 
@@ -280,8 +278,9 @@ async def test_decide_expired_request(approval_queue):
 @pytest.mark.asyncio
 async def test_websocket_connect(approval_queue):
     """Test WebSocket client connection"""
-    from fastapi import WebSocket
     from unittest.mock import AsyncMock, MagicMock
+
+    from fastapi import WebSocket
 
     websocket = MagicMock(spec=WebSocket)
     websocket.accept = AsyncMock()
@@ -295,8 +294,9 @@ async def test_websocket_connect(approval_queue):
 @pytest.mark.asyncio
 async def test_websocket_disconnect(approval_queue):
     """Test WebSocket client disconnection"""
-    from fastapi import WebSocket
     from unittest.mock import MagicMock
+
+    from fastapi import WebSocket
 
     websocket = MagicMock(spec=WebSocket)
 
@@ -312,7 +312,7 @@ async def test_websocket_disconnect(approval_queue):
 @pytest.mark.asyncio
 async def test_broadcast_with_failed_client(approval_queue):
     """Test broadcast handles failed client sends"""
-    from unittest.mock import MagicMock, AsyncMock
+    from unittest.mock import AsyncMock, MagicMock
 
     # Add two mock websockets
     ws1 = MagicMock()

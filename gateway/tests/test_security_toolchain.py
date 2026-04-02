@@ -7,24 +7,25 @@
 Covers: Trivy, ClamAV, Falco, Wazuh, Health Report, Alert Dispatcher.
 Target: 50+ tests.
 """
-from __future__ import annotations
 
+from __future__ import annotations
 
 import json
 import tempfile
 import time
 from pathlib import Path
-from unittest.mock import patch, MagicMock
+from unittest.mock import MagicMock, patch
+
+from gateway.security.trivy_report import (
+    generate_summary,
+    parse_trivy_output,
+    run_trivy_scan,
+)
 
 # ═══════════════════════════════════════════
 # Trivy Report Tests
 # ═══════════════════════════════════════════
 
-from gateway.security.trivy_report import (
-    parse_trivy_output,
-    generate_summary,
-    run_trivy_scan,
-)
 
 SAMPLE_TRIVY_OUTPUT = {
     "Results": [
@@ -216,8 +217,10 @@ class TestTrivyRun:
 # ═══════════════════════════════════════════
 
 from gateway.security.clamav_scanner import (  # noqa: E402
-    parse_clamscan_output,
     generate_summary as clamav_summary,
+)
+from gateway.security.clamav_scanner import (
+    parse_clamscan_output,
     run_clamscan,
     update_virus_db,
 )
@@ -307,12 +310,16 @@ class TestClamAVRun:
 # Falco Monitor Tests
 # ═══════════════════════════════════════════
 
-from gateway.security.falco_monitor import (  # noqa: E402
-    parse_alert,
+from gateway.security.falco_monitor import (
     categorize_alerts,
-    is_agentshroud_rule,
-    read_alerts,
+)
+from gateway.security.falco_monitor import (  # noqa: E402
     generate_summary as falco_summary,
+)
+from gateway.security.falco_monitor import (
+    is_agentshroud_rule,
+    parse_alert,
+    read_alerts,
 )
 
 SAMPLE_FALCO_ALERT = {
@@ -410,13 +417,13 @@ class TestFalcoSummary:
 # Wazuh Client Tests
 # ═══════════════════════════════════════════
 
-from gateway.security.wazuh_client import (  # noqa: E402
-    parse_alert as wazuh_parse,
+from gateway.security.wazuh_client import generate_summary as wazuh_summary
+from gateway.security.wazuh_client import (
     get_fim_events,
     get_rootkit_events,
     level_to_severity,
-    generate_summary as wazuh_summary,
 )
+from gateway.security.wazuh_client import parse_alert as wazuh_parse  # noqa: E402
 
 SAMPLE_WAZUH_FIM = {
     "timestamp": "2024-01-15T10:30:00Z",
@@ -487,12 +494,12 @@ class TestWazuhSummary:
 # ═══════════════════════════════════════════
 
 from gateway.security.health_report import (  # noqa: E402
-    calculate_tool_score,
     calculate_overall_score,
-    score_to_grade,
-    generate_report,
+    calculate_tool_score,
     format_report,
+    generate_report,
     get_trend,
+    score_to_grade,
 )
 
 
@@ -656,9 +663,7 @@ class TestAlertDispatcher:
         with tempfile.TemporaryDirectory() as tmpdir:
             d = self._make_dispatcher(tmpdir)
             with patch.object(d, "_send_notification", return_value=True):
-                result = d.dispatch(
-                    {"id": "CVE-1", "severity": "CRITICAL", "tool": "trivy"}
-                )
+                result = d.dispatch({"id": "CVE-1", "severity": "CRITICAL", "tool": "trivy"})
                 assert result["action"] == "notified"
 
     def test_low_alert_buffered(self):
@@ -685,12 +690,8 @@ class TestAlertDispatcher:
             d = self._make_dispatcher(tmpdir)
             with patch.object(d, "_send_notification", return_value=True):
                 for i in range(3):
-                    d.dispatch(
-                        {"id": f"CVE-R{i}", "severity": "CRITICAL", "tool": "trivy"}
-                    )
-                result = d.dispatch(
-                    {"id": "CVE-R3", "severity": "CRITICAL", "tool": "trivy"}
-                )
+                    d.dispatch({"id": f"CVE-R{i}", "severity": "CRITICAL", "tool": "trivy"})
+                result = d.dispatch({"id": "CVE-R3", "severity": "CRITICAL", "tool": "trivy"})
                 assert result["action"] == "rate_limited"
 
     def test_get_digest(self):
@@ -713,9 +714,7 @@ class TestAlertDispatcher:
     def test_cleanup_seen(self):
         with tempfile.TemporaryDirectory() as tmpdir:
             d = self._make_dispatcher(tmpdir)
-            d._seen_ids["old"] = (
-                time.time() - 100
-            )  # Within 60s dedup window? No, dedup=60
+            d._seen_ids["old"] = time.time() - 100  # Within 60s dedup window? No, dedup=60
             d._seen_ids["very_old"] = time.time() - 200
             removed = d.cleanup_seen()
             assert removed == 2
@@ -731,16 +730,12 @@ class TestAlertDispatcher:
         with tempfile.TemporaryDirectory() as tmpdir:
             d = self._make_dispatcher(tmpdir)
             with patch.object(d, "_send_notification", return_value=True):
-                result = d.dispatch(
-                    {"id": "CVE-H1", "severity": "HIGH", "tool": "falco"}
-                )
+                result = d.dispatch({"id": "CVE-H1", "severity": "HIGH", "tool": "falco"})
                 assert result["action"] == "notified"
 
     def test_notify_failure(self):
         with tempfile.TemporaryDirectory() as tmpdir:
             d = self._make_dispatcher(tmpdir)
             with patch.object(d, "_send_notification", return_value=False):
-                result = d.dispatch(
-                    {"id": "CVE-F1", "severity": "CRITICAL", "tool": "trivy"}
-                )
+                result = d.dispatch({"id": "CVE-F1", "severity": "CRITICAL", "tool": "trivy"})
                 assert result["action"] == "notify_failed"

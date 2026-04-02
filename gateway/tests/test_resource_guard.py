@@ -3,12 +3,14 @@
 # Protected by common law trademark rights. Federal trademark registration pending.
 # Unauthorized reproduction, distribution, or use of the AgentShroud name or brand is strictly prohibited.
 """Tests for Resource Exhaustion Guard"""
+
 from __future__ import annotations
 
-
-import pytest
 import time
 from unittest.mock import patch
+
+import pytest
+
 from gateway.security.resource_guard import ResourceGuard, ResourceLimits
 
 
@@ -145,9 +147,7 @@ class TestResourceGuard:
         )  # Should have this field based on requirements
 
         # Test custom values
-        custom_config = ResourceLimits(
-            max_disk_writes_mb_per_minute=50, max_temp_files=500
-        )
+        custom_config = ResourceLimits(max_disk_writes_mb_per_minute=50, max_temp_files=500)
         assert custom_config.max_disk_writes_mb_per_minute == 50
         assert custom_config.max_temp_files == 500
 

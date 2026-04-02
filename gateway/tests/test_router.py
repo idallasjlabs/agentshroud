@@ -3,8 +3,8 @@
 # Protected by common law trademark rights. Federal trademark registration pending.
 # Unauthorized reproduction, distribution, or use of the AgentShroud name or brand is strictly prohibited.
 """Tests for multi-agent router"""
-from __future__ import annotations
 
+from __future__ import annotations
 
 import pytest
 
@@ -32,9 +32,7 @@ def router(router_config):
 @pytest.mark.asyncio
 async def test_resolve_target_default(router):
     """Test routing to default target"""
-    request = ForwardRequest(
-        content="test content", source="shortcut", content_type="text"
-    )
+    request = ForwardRequest(content="test content", source="shortcut", content_type="text")
 
     target = await router.resolve_target(request)
 
@@ -77,9 +75,7 @@ async def test_resolve_target_invalid_explicit(router):
 @pytest.mark.asyncio
 async def test_forward_to_agent_offline(router):
     """Test forwarding to offline agent raises ForwardError"""
-    target = AgentTarget(
-        name="offline-agent", url="http://localhost:99999"  # Invalid port
-    )
+    target = AgentTarget(name="offline-agent", url="http://localhost:99999")  # Invalid port
 
     with pytest.raises(ForwardError):
         await router.forward_to_agent(
@@ -268,9 +264,7 @@ async def test_forward_uses_chat_path(router, monkeypatch):
 
     monkeypatch.setattr(httpx.AsyncClient, "post", mock_post)
 
-    target = AgentTarget(
-        name="bot", url="http://localhost:18789", chat_path="/api/chat"
-    )
+    target = AgentTarget(name="bot", url="http://localhost:18789", chat_path="/api/chat")
     await router.forward_to_agent(
         target=target,
         sanitized_content="hello",
@@ -296,9 +290,7 @@ async def test_health_check_uses_health_path(router, monkeypatch):
 
     monkeypatch.setattr(httpx.AsyncClient, "get", mock_get)
 
-    target = AgentTarget(
-        name="bot", url="http://localhost:18789", health_path="/api/health"
-    )
+    target = AgentTarget(name="bot", url="http://localhost:18789", health_path="/api/health")
     await router.health_check(target=target)
     assert captured_url[0] == "http://localhost:18789/api/health"
 
@@ -306,6 +298,7 @@ async def test_health_check_uses_health_path(router, monkeypatch):
 def test_cors_origins_include_configured_port():
     """load_config computes CORS origins from the configured port."""
     from gateway.ingest_api.config import GatewayConfig
+
     # Simulate what load_config does: cors_origins derived from port
     port = 9080
     cors_origins = [

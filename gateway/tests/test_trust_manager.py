@@ -3,12 +3,15 @@
 # Protected by common law trademark rights. Federal trademark registration pending.
 # Unauthorized reproduction, distribution, or use of the AgentShroud name or brand is strictly prohibited.
 """Tests for Progressive Trust System."""
+
 from __future__ import annotations
 
 import os
 import tempfile
+
 import pytest
-from gateway.security.trust_manager import TrustManager, TrustLevel, TrustConfig
+
+from gateway.security.trust_manager import TrustConfig, TrustLevel, TrustManager
 
 
 @pytest.fixture

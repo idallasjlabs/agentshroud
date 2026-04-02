@@ -6,19 +6,18 @@
 
 TDD approach: Tests written first for XML block filtering behavior.
 """
+
 from __future__ import annotations
 
-
 import pytest
-from gateway.ingest_api.sanitizer import PIISanitizer
+
 from gateway.ingest_api.config import PIIConfig
+from gateway.ingest_api.sanitizer import PIISanitizer
 
 
 @pytest.fixture
 def sanitizer():
-    config = PIIConfig(
-        engine="regex", entities=["US_SSN", "EMAIL_ADDRESS"], enabled=True
-    )
+    config = PIIConfig(engine="regex", entities=["US_SSN", "EMAIL_ADDRESS"], enabled=True)
     return PIISanitizer(config)
 
 
@@ -56,9 +55,7 @@ def test_filters_thinking_block(sanitizer):
 
 def test_filters_system_reminder_block(sanitizer):
     """Closed <system-reminder> block is removed."""
-    content = (
-        "Hi\n<system-reminder>\nRemember to be helpful.\n</system-reminder>\nHello!"
-    )
+    content = "Hi\n<system-reminder>\nRemember to be helpful.\n</system-reminder>\nHello!"
     result, filtered = sanitizer.filter_xml_blocks(content)
     assert filtered is True
     assert "<system-reminder>" not in result

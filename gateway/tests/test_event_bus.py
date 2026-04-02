@@ -3,10 +3,11 @@
 # Protected by common law trademark rights. Federal trademark registration pending.
 # Unauthorized reproduction, distribution, or use of the AgentShroud name or brand is strictly prohibited.
 """Tests for EventBus"""
+
 from __future__ import annotations
 
-
 import pytest
+
 from gateway.ingest_api.event_bus import EventBus, make_event
 
 

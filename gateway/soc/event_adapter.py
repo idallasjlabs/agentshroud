@@ -8,6 +8,7 @@ Maps:
   AnomalyAlert     → SecurityEvent
   dict (generic)   → SecurityEvent
 """
+
 from __future__ import annotations
 
 import logging
@@ -57,12 +58,7 @@ def from_audit_chain_entry(entry: Any) -> SecurityEvent:
         action_taken = str(details.get("action_taken", "") or "allowed")
 
         # Build a human-readable summary
-        summary = (
-            details.get("summary")
-            or block_reason
-            or details.get("message")
-            or event_type
-        )
+        summary = details.get("summary") or block_reason or details.get("message") or event_type
 
         return SecurityEvent(
             event_type=event_type,
@@ -172,7 +168,21 @@ def from_dict(raw: Dict[str, Any]) -> SecurityEvent:
             user_id=str(raw["user_id"]) if raw.get("user_id") else None,
             action_taken=raw.get("action_taken", "unknown"),
             summary=raw.get("summary", raw.get("message", "")),
-            details={k: v for k, v in raw.items() if k not in {"event_type", "severity", "timestamp", "source_module", "agent_id", "user_id", "action_taken", "summary"}},
+            details={
+                k: v
+                for k, v in raw.items()
+                if k
+                not in {
+                    "event_type",
+                    "severity",
+                    "timestamp",
+                    "source_module",
+                    "agent_id",
+                    "user_id",
+                    "action_taken",
+                    "summary",
+                }
+            },
         )
     except Exception as exc:
         logger.warning("from_dict: %s", exc)
@@ -195,7 +205,13 @@ async def collect_recent_events(
             ev = from_audit_chain_entry(entry)
             if severity_filter:
                 target_sev = _map_severity(severity_filter)
-                sev_rank = {Severity.INFO: 0, Severity.LOW: 1, Severity.MEDIUM: 2, Severity.HIGH: 3, Severity.CRITICAL: 4}
+                sev_rank = {
+                    Severity.INFO: 0,
+                    Severity.LOW: 1,
+                    Severity.MEDIUM: 2,
+                    Severity.HIGH: 3,
+                    Severity.CRITICAL: 4,
+                }
                 if sev_rank.get(ev.severity, 0) < sev_rank.get(target_sev, 0):
                     continue
             events.append(ev)

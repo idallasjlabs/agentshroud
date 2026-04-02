@@ -14,7 +14,7 @@ tracks history in SQLite, and generates formatted reports.
 import json
 import logging
 import sqlite3
-from datetime import datetime, timezone, timedelta
+from datetime import datetime, timedelta, timezone
 from pathlib import Path
 from typing import Any
 
@@ -226,9 +226,7 @@ def generate_report(
                 f"🔴 {tool.upper()}: {s['critical']} CRITICAL findings — immediate action required"
             )
         if s.get("high", 0) > 0:
-            recommendations.append(
-                f"🟠 {tool.upper()}: {s['high']} HIGH findings — review soon"
-            )
+            recommendations.append(f"🟠 {tool.upper()}: {s['high']} HIGH findings — review soon")
 
     if not recommendations:
         recommendations.append("✅ No critical or high findings — looking good!")

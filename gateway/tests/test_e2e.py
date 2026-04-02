@@ -7,16 +7,17 @@
 Tests the complete flow through authentication, forwarding,
 PII sanitization, ledger, event bus, and dashboard.
 """
+
 from __future__ import annotations
 
+from unittest.mock import patch
 
 import pytest
 import pytest_asyncio
-from unittest.mock import patch
-from httpx import AsyncClient, ASGITransport
+from httpx import ASGITransport, AsyncClient
 
-from gateway.ingest_api.main import app, app_state, lifespan
 from gateway.ingest_api.event_bus import EventBus
+from gateway.ingest_api.main import app, app_state, lifespan
 
 
 @pytest_asyncio.fixture
@@ -40,7 +41,13 @@ async def test_forward_pii_sanitized_and_ledger_entry(client):
     """Forward content → PII sanitized → ledger entry created → event bus fired."""
     # Ensure test users have RBAC permissions
     from gateway.security.rbac_config import Role
-    if hasattr(app_state, 'middleware_manager') and app_state.middleware_manager and hasattr(app_state.middleware_manager, 'rbac_manager') and app_state.middleware_manager.rbac_manager:
+
+    if (
+        hasattr(app_state, "middleware_manager")
+        and app_state.middleware_manager
+        and hasattr(app_state.middleware_manager, "rbac_manager")
+        and app_state.middleware_manager.rbac_manager
+    ):
         app_state.middleware_manager.rbac_manager.config.user_roles["test-user"] = Role.COLLABORATOR
         app_state.middleware_manager.rbac_manager.config.user_roles["api"] = Role.COLLABORATOR
     bus: EventBus = getattr(app_state, "event_bus", None)

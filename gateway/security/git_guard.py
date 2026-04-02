@@ -6,20 +6,20 @@
 Git Hook Guard - Security Hardening Module
 Scan git hooks and package installation scripts for malicious content.
 """
+
 from __future__ import annotations
 
-
-import os
-import stat
-import re
 import json
 import logging
+import os
+import re
+import stat
 import tempfile
 import time
-from pathlib import Path
-from typing import List, Dict, Any, Optional
 from dataclasses import dataclass
 from enum import Enum
+from pathlib import Path
+from typing import Any, Dict, List, Optional
 
 logger = logging.getLogger(__name__)
 
@@ -279,9 +279,7 @@ class GitGuard:
                 )
 
             # Also scan raw content for patterns
-            findings.extend(
-                self._analyze_file_content(package_file, content, "package_json")
-            )
+            findings.extend(self._analyze_file_content(package_file, content, "package_json"))
 
         except Exception as e:
             logger.error(f"Error scanning {package_file}: {e}")
@@ -309,18 +307,14 @@ class GitGuard:
             with open(pyproject_file, "r", encoding="utf-8") as f:
                 content = f.read()
 
-            findings.extend(
-                self._analyze_file_content(pyproject_file, content, "pyproject")
-            )
+            findings.extend(self._analyze_file_content(pyproject_file, content, "pyproject"))
 
         except Exception as e:
             logger.error(f"Error scanning {pyproject_file}: {e}")
 
         return findings
 
-    def _analyze_script_file(
-        self, file_path: Path, category: str
-    ) -> List[SecurityFinding]:
+    def _analyze_script_file(self, file_path: Path, category: str) -> List[SecurityFinding]:
         """Analyze a script file for malicious patterns."""
         findings = []
 
@@ -454,9 +448,7 @@ class GitGuard:
         for finding in self.findings:
             # Count by threat level
             level = finding.threat_level.value
-            summary["by_threat_level"][level] = (
-                summary["by_threat_level"].get(level, 0) + 1
-            )
+            summary["by_threat_level"][level] = summary["by_threat_level"].get(level, 0) + 1
 
             # Count by category
             summary["by_category"][finding.category] = (

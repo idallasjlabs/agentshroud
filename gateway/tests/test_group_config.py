@@ -4,12 +4,12 @@
 from __future__ import annotations
 
 import pytest
+
 from gateway.security.group_config import (
     GroupConfig,
     ProjectConfig,
     TeamsConfig,
 )
-
 
 # ---------------------------------------------------------------------------
 # Fixtures
@@ -71,6 +71,7 @@ def teams() -> TeamsConfig:
 # Parsing
 # ---------------------------------------------------------------------------
 
+
 class TestTeamsConfigParsing:
     def test_parses_groups(self, teams):
         assert len(teams.groups) == 3
@@ -91,6 +92,7 @@ class TestTeamsConfigParsing:
 # ---------------------------------------------------------------------------
 # Membership queries
 # ---------------------------------------------------------------------------
+
 
 class TestMembershipQueries:
     def test_get_user_groups_member(self, teams):
@@ -121,6 +123,7 @@ class TestMembershipQueries:
 # Admin checks
 # ---------------------------------------------------------------------------
 
+
 class TestAdminChecks:
     def test_is_group_admin_correct(self, teams):
         assert teams.is_group_admin("8279589982", "sort") is True
@@ -135,6 +138,7 @@ class TestAdminChecks:
 # ---------------------------------------------------------------------------
 # Project queries
 # ---------------------------------------------------------------------------
+
 
 class TestProjectQueries:
     def test_get_user_projects_member(self, teams):
@@ -158,6 +162,7 @@ class TestProjectQueries:
 # Collab mode resolution
 # ---------------------------------------------------------------------------
 
+
 class TestCollabMode:
     def test_project_scoped_mode(self, teams):
         assert teams.get_user_collab_mode("8279589982") == "project_scoped"
@@ -173,6 +178,7 @@ class TestCollabMode:
 # ---------------------------------------------------------------------------
 # V9-4: Per-group safe_response_prefix hook
 # ---------------------------------------------------------------------------
+
 
 class TestGroupSafeResponsePrefix:
     def test_no_prefix_by_default(self, teams):

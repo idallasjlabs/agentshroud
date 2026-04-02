@@ -3,11 +3,18 @@
 # Protected by common law trademark rights. Federal trademark registration pending.
 # Unauthorized reproduction, distribution, or use of the AgentShroud name or brand is strictly prohibited.
 """Test enforce-by-default functionality for core security modules."""
+
 import os
-import pytest
 from unittest.mock import Mock, patch
 
-from gateway.ingest_api.config import SecurityConfig, SecurityModuleConfig, get_module_mode, check_monitor_mode_warnings
+import pytest
+
+from gateway.ingest_api.config import (
+    SecurityConfig,
+    SecurityModuleConfig,
+    check_monitor_mode_warnings,
+    get_module_mode,
+)
 
 
 class TestEnforceDefaults:
@@ -36,7 +43,7 @@ class TestEnforceDefaults:
         """Test get_module_mode returns enforce when no override set."""
         mock_config = Mock()
         mock_config.security = SecurityConfig()
-        
+
         mode = get_module_mode(mock_config, "pii_sanitizer")
         assert mode == "enforce"
 
@@ -45,7 +52,7 @@ class TestEnforceDefaults:
         """Test get_module_mode returns monitor when AGENTSHROUD_MODE=monitor."""
         mock_config = Mock()
         mock_config.security = SecurityConfig()
-        
+
         mode = get_module_mode(mock_config, "pii_sanitizer")
         assert mode == "monitor"
 
@@ -54,7 +61,7 @@ class TestEnforceDefaults:
         """Test get_module_mode returns enforce when explicitly set."""
         mock_config = Mock()
         mock_config.security = SecurityConfig()
-        
+
         mode = get_module_mode(mock_config, "pii_sanitizer")
         assert mode == "enforce"
 
@@ -64,9 +71,9 @@ class TestEnforceDefaults:
         mock_logger = Mock()
         mock_config = Mock()
         mock_config.security = SecurityConfig()  # All defaults to enforce
-        
+
         check_monitor_mode_warnings(mock_config, mock_logger)
-        
+
         # Should not call warning for any module
         assert not mock_logger.warning.called
 
@@ -76,9 +83,9 @@ class TestEnforceDefaults:
         mock_logger = Mock()
         mock_config = Mock()
         mock_config.security = SecurityConfig()
-        
+
         check_monitor_mode_warnings(mock_config, mock_logger)
-        
+
         # Should warn for each of the 8 core modules (expanded in v0.8.0)
         assert mock_logger.warning.call_count == 8
         warning_calls = [call[0][0] for call in mock_logger.warning.call_args_list]
@@ -100,14 +107,14 @@ class TestEnforceDefaults:
         security_config = SecurityConfig()
         security_config.pii_sanitizer.mode = "monitor"
         mock_config.security = security_config
-        
+
         with patch.dict(os.environ, {}, clear=True):
             check_monitor_mode_warnings(mock_config, mock_logger)
-        
+
         # Should warn for the one monitor mode module
         mock_logger.warning.assert_called_once()
         warning_msg = mock_logger.warning.call_args[0][0]
-        
+
         assert "SECURITY: Module pii_sanitizer is in MONITOR mode" in warning_msg
         assert "Threats will be logged but NOT blocked" in warning_msg
         assert "Set mode: enforce" in warning_msg
@@ -118,22 +125,22 @@ class TestModuleEnforcement:
 
     def test_pii_sanitizer_mode_param(self):
         """Test PIISanitizer accepts and stores mode parameter."""
-        from gateway.ingest_api.sanitizer import PIISanitizer
         from gateway.ingest_api.config import PIIConfig
-        
+        from gateway.ingest_api.sanitizer import PIISanitizer
+
         config = PIIConfig()
         sanitizer = PIISanitizer(config, mode="monitor", action="redact")
-        
+
         assert sanitizer.get_mode() == "monitor"
         assert sanitizer.enforcement_action == "redact"
 
     def test_pii_sanitizer_default_enforcement(self):
         """Test PIISanitizer defaults to enforce mode."""
-        from gateway.ingest_api.sanitizer import PIISanitizer
         from gateway.ingest_api.config import PIIConfig
-        
+        from gateway.ingest_api.sanitizer import PIISanitizer
+
         config = PIIConfig()
         sanitizer = PIISanitizer(config)
-        
+
         assert sanitizer.get_mode() == "enforce"
         assert sanitizer.enforcement_action == "redact"

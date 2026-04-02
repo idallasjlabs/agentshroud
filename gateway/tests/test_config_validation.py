@@ -209,8 +209,6 @@ class TestConfigValidation:
         assert "Removed unsupported key gateway.model" in script
         assert "Set internal gateway model" not in script
 
-
-
     def test_openclaw_version_pin_is_consistent_across_bot_images(self):
         """Both bot Dockerfiles must pin the same OpenClaw version."""
         import re
@@ -229,6 +227,7 @@ class TestConfigValidation:
         assert openclaw_match, "OpenClaw bot Dockerfile must pin openclaw@<version>"
         assert primary_match.group(1) == openclaw_match.group(1)
         assert primary_match.group(1) == "2026.3.24"
+
     def test_openclaw_patch_script_sets_control_ui_allowed_origins(self):
         """openclaw init patch script must seed control UI origins for non-loopback bind."""
         path = REPO_ROOT / "docker" / "config" / "openclaw" / "apply-patches.js"
@@ -251,6 +250,7 @@ class TestConfigValidation:
     def test_lifespan_uvicorn_warning_filter_drops_invalid_http_noise(self):
         """Lifespan filter should suppress repeated malformed HTTP warning noise."""
         import logging
+
         from gateway.ingest_api.lifespan import _DropInvalidHTTPRequestFilter
 
         filt = _DropInvalidHTTPRequestFilter()
@@ -301,10 +301,10 @@ class TestConfigValidation:
         if not path.exists():
             pytest.skip("start-agentshroud.sh not available in this environment")
         script = path.read_text()
-        assert '🟡 AgentShroud starting' in script
-        assert '🛡️ AgentShroud online' in script
-        assert '🟠 AgentShroud starting (readiness delayed)' in script
-        assert '🔴 AgentShroud shutting down' in script
+        assert "🟡 AgentShroud starting" in script
+        assert "🛡️ AgentShroud online" in script
+        assert "🟠 AgentShroud starting (readiness delayed)" in script
+        assert "🔴 AgentShroud shutting down" in script
 
     def test_startup_notifications_wait_for_runtime_readiness(self):
         """Startup script should verify Telegram/model readiness before sending online notice."""
@@ -316,7 +316,7 @@ class TestConfigValidation:
         assert "_model_runtime_ready" in script
         assert "/getMe" in script
         assert "/api/tags" in script
-        assert "ready=\"no\"" in script
+        assert 'ready="no"' in script
         assert "for _i in $(seq 1 60)" in script
 
     def test_openclaw_start_script_uses_two_phase_startup_notifications(self):
@@ -325,14 +325,12 @@ class TestConfigValidation:
         if not path.exists():
             pytest.skip("openclaw/start.sh not available in this environment")
         script = path.read_text()
-        assert '🟡 AgentShroud starting' in script
-        assert '🛡️ AgentShroud online' in script
-        assert '🟠 AgentShroud starting (readiness delayed)' in script
+        assert "🟡 AgentShroud starting" in script
+        assert "🛡️ AgentShroud online" in script
+        assert "🟠 AgentShroud starting (readiness delayed)" in script
         assert "_telegram_get_me_ready" in script
         assert "_model_runtime_ready" in script
         assert "for _i in $(seq 1 60)" in script
-
-
 
     def test_startup_online_notice_sent_only_after_readiness_gate(self):
         """Online notice must appear after readiness probes to avoid premature status signals."""
@@ -341,9 +339,13 @@ class TestConfigValidation:
             pytest.skip("start-agentshroud.sh not available in this environment")
         script = path.read_text()
         assert script.index('ready="no"') < script.index('if [ "${ready}" = "yes" ]; then')
-        assert script.index('_telegram_get_me_ready') < script.index('if [ "${ready}" = "yes" ]; then')
-        assert script.index('_model_runtime_ready') < script.index('if [ "${ready}" = "yes" ]; then')
-        assert script.index('🟡 AgentShroud starting') < script.index('🛡️ AgentShroud online')
+        assert script.index("_telegram_get_me_ready") < script.index(
+            'if [ "${ready}" = "yes" ]; then'
+        )
+        assert script.index("_model_runtime_ready") < script.index(
+            'if [ "${ready}" = "yes" ]; then'
+        )
+        assert script.index("🟡 AgentShroud starting") < script.index("🛡️ AgentShroud online")
 
     def test_openclaw_bot_start_script_online_notice_after_readiness_gate(self):
         """OpenClaw bot wrapper should send online notice only after readiness checks pass."""
@@ -352,9 +354,14 @@ class TestConfigValidation:
             pytest.skip("openclaw/start.sh not available in this environment")
         script = path.read_text()
         assert script.index('ready="no"') < script.index('if [ "${ready}" = "yes" ]; then')
-        assert script.index('_telegram_get_me_ready') < script.index('if [ "${ready}" = "yes" ]; then')
-        assert script.index('_model_runtime_ready') < script.index('if [ "${ready}" = "yes" ]; then')
-        assert script.index('🟡 AgentShroud starting') < script.index('🛡️ AgentShroud online')
+        assert script.index("_telegram_get_me_ready") < script.index(
+            'if [ "${ready}" = "yes" ]; then'
+        )
+        assert script.index("_model_runtime_ready") < script.index(
+            'if [ "${ready}" = "yes" ]; then'
+        )
+        assert script.index("🟡 AgentShroud starting") < script.index("🛡️ AgentShroud online")
+
     def test_startup_telegram_calls_use_system_header(self):
         """Startup notification Telegram calls should be marked as system-originated."""
         script_path = REPO_ROOT / "docker" / "scripts" / "start-agentshroud.sh"
@@ -436,8 +443,14 @@ class TestConfigValidation:
         """Main compose stack should expose a single model-mode switch with local/cloud refs."""
         compose = (REPO_ROOT / "docker" / "docker-compose.yml").read_text()
         assert "AGENTSHROUD_MODEL_MODE=${AGENTSHROUD_MODEL_MODE:-cloud}" in compose
-        assert "AGENTSHROUD_LOCAL_MODEL_REF=${AGENTSHROUD_LOCAL_MODEL_REF:-ollama/qwen3:14b}" in compose
-        assert "AGENTSHROUD_CLOUD_MODEL_REF=${AGENTSHROUD_CLOUD_MODEL_REF:-anthropic/claude-opus-4-6}" in compose
+        assert (
+            "AGENTSHROUD_LOCAL_MODEL_REF=${AGENTSHROUD_LOCAL_MODEL_REF:-ollama/qwen3:14b}"
+            in compose
+        )
+        assert (
+            "AGENTSHROUD_CLOUD_MODEL_REF=${AGENTSHROUD_CLOUD_MODEL_REF:-anthropic/claude-opus-4-6}"
+            in compose
+        )
         assert "OLLAMA_BASE_URL=${OLLAMA_BASE_URL:-http://gateway:8080/v1}" in compose
         assert "OLLAMA_API_KEY=${OLLAMA_API_KEY:-ollama-local}" in compose
 
