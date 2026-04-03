@@ -1,6 +1,6 @@
 # Copyright © 2026 Isaiah Dallas Jefferson, Jr. AgentShroud™. All rights reserved.
-# AgentShroud™ is a trademark of Isaiah Dallas Jefferson, Jr., first used in February 2026.
-# Protected by common law trademark rights. Federal trademark registration pending.
+# AgentShroud™ is a trademark of Isaiah Dallas Jefferson, Jr. (USPTO Serial No. 99728633)
+# Patent Pending — U.S. Provisional Application No. 64/018,744
 # Unauthorized reproduction, distribution, or use of the AgentShroud name or brand is strictly prohibited.
 """
 AgentShroud Branding Asset Generator
@@ -352,8 +352,8 @@ def generate_email():
   <tr>
     <td style="padding:8px 0 0;border-top:1px solid #e0e0e0;">
       <span style="font-size:10px;color:#888888;">
-        <em>AgentShroud™ is a trademark of Isaiah Dallas Jefferson, Jr., first used in February 2026.
-        Protected by common law trademark rights. Federal trademark registration pending.
+        <em>AgentShroud™ is a trademark of Isaiah Dallas Jefferson, Jr. (USPTO Serial No. 99728633)
+        Patent Pending — U.S. Provisional Application No. 64/018,744
         Unauthorized reproduction, distribution, or use of the AgentShroud name or brand is strictly prohibited.</em><br/>
         © 2026 Isaiah Dallas Jefferson, Jr. All rights reserved.
       </span>
@@ -526,7 +526,7 @@ def generate_svg_logos():
 <!--
   AgentShroud™ Logo — SVG wrapper with embedded PNG
   © 2026 Isaiah Dallas Jefferson, Jr. AgentShroud™. All rights reserved.
-  AgentShroud™ is a trademark of Isaiah Dallas Jefferson, Jr., first used in February 2026.
+  AgentShroud™ is a trademark of Isaiah Dallas Jefferson, Jr. (USPTO Serial No. 99728633)
 
   NOTE: This SVG embeds the raster logo as a base64 data URI.
   For a true vector version, manual illustration work is required.

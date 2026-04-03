@@ -1,8 +1,8 @@
 # Copyright © 2026 Isaiah Dallas Jefferson, Jr. AgentShroud™. All rights reserved.
 from __future__ import annotations
 
-# AgentShroud™ is a trademark of Isaiah Dallas Jefferson, Jr., first used in February 2026.
-# Protected by common law trademark rights. Federal trademark registration pending.
+# AgentShroud™ is a trademark of Isaiah Dallas Jefferson, Jr. (USPTO Serial No. 99728633)
+# Patent Pending — U.S. Provisional Application No. 64/018,744
 # Unauthorized reproduction, distribution, or use of the AgentShroud name or brand is strictly prohibited.
 """AgentShroud Gateway - Main FastAPI Application
 
@@ -106,11 +106,20 @@ _PROXY_ALLOWED_NETWORKS = [
 ] + [_ipaddress.ip_network("127.0.0.0/8")]
 
 # Allowed op:// reference patterns for the gateway op-proxy.
-# Uses fnmatch glob syntax: * matches any characters within a path segment.
-# Add entries here when the bot legitimately needs access to a new secret.
+# Uses fnmatch glob syntax: * matches any single path segment (not /).
+# Restrict to specific item names; add new entries when the bot legitimately
+# needs access to a new secret.  Do NOT use /*/*  (allows any item + field).
 _ALLOWED_OP_PATHS: list[str] = [
-    "op://Agent Shroud Bot Credentials/*/*",
-    "op://AgentShroud Bot Credentials/*/*",
+    "op://Agent Shroud Bot Credentials/Telegram Bot Token/*",
+    "op://Agent Shroud Bot Credentials/Slack Bot Token/*",
+    "op://Agent Shroud Bot Credentials/Slack App Token/*",
+    "op://Agent Shroud Bot Credentials/Slack Signing Secret/*",
+    "op://Agent Shroud Bot Credentials/OpenAI API Key/*",
+    "op://Agent Shroud Bot Credentials/Anthropic API Key/*",
+    "op://Agent Shroud Bot Credentials/Anthropic OAuth Token/*",
+    "op://Agent Shroud Bot Credentials/Google API Key/*",
+    "op://Agent Shroud Bot Credentials/Brave Search API Key/*",
+    "op://Agent Shroud Bot Credentials/Gateway Password/*",
 ]
 
 
