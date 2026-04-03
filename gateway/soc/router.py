@@ -2299,8 +2299,27 @@ async def upgrade_bot(
                 "output": output[:2000],
             },
         )
+    # Re-apply SDK patches so grammY/Anthropic/Slack SDKs continue routing
+    # through the gateway proxy.  init-openclaw-config.sh does this on startup,
+    # but an in-place npm upgrade replaces the patched files.
+    patch_output_parts: list[str] = []
+    for patch in ("patch-anthropic-sdk.sh", "patch-telegram-sdk.sh", "patch-slack-sdk.sh"):
+        rc, pout = await _docker_exec_bot(
+            ["sh", f"/usr/local/bin/{patch}"],
+            timeout=60,
+        )
+        if rc != 0:
+            patch_output_parts.append(f"{patch}: FAILED ({pout[:200]})")
+        else:
+            patch_output_parts.append(f"{patch}: ok")
     return JSONResponse(
-        content={"ok": True, "action": "upgrade", "target": "bot", "output": output[:2000]}
+        content={
+            "ok": True,
+            "action": "upgrade",
+            "target": "bot",
+            "output": output[:2000],
+            "sdk_patches": patch_output_parts,
+        }
     )
 
 
