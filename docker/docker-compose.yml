@@ -22,9 +22,9 @@ services:
     # Host entries for personal lab — override via AGENTSHROUD_EXTRA_HOSTS env var or docker-compose.override.yml
     extra_hosts:
       - "host.docker.internal:host-gateway"
-      - "marvin:192.0.2.137"
-      - "trillian:192.0.2.97"
-      - "raspberrypi:192.0.2.25"
+      - "marvin:192.168.7.137"
+      - "trillian:192.168.7.97"
+      - "raspberrypi:192.168.7.25"
     image: agentshroud-gateway:${AGENTSHROUD_VERSION:-latest}
     container_name: agentshroud-gateway
     hostname: gateway
@@ -151,9 +151,9 @@ services:
     # Host entries for personal lab — override via AGENTSHROUD_EXTRA_HOSTS env var or docker-compose.override.yml
     extra_hosts:
       - "host.docker.internal:host-gateway"
-      - "marvin:192.0.2.137"
-      - "trillian:192.0.2.97"
-      - "raspberrypi:192.0.2.25"
+      - "marvin:192.168.7.137"
+      - "trillian:192.168.7.97"
+      - "raspberrypi:192.168.7.25"
     image: agentshroud-bot:${AGENTSHROUD_VERSION:-latest}
     container_name: agentshroud-bot
     hostname: agentshroud
