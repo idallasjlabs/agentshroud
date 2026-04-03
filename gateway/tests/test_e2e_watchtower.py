@@ -1,6 +1,6 @@
 # Copyright © 2026 Isaiah Dallas Jefferson, Jr. AgentShroud™. All rights reserved.
-# AgentShroud™ is a trademark of Isaiah Dallas Jefferson, Jr., first used in February 2026.
-# Protected by common law trademark rights. Federal trademark registration pending.
+# AgentShroud™ is a trademark of Isaiah Dallas Jefferson, Jr. (USPTO Serial No. 99728633)
+# Patent Pending — U.S. Provisional Application No. 64/018,744
 # Unauthorized reproduction, distribution, or use of the AgentShroud name or brand is strictly prohibited.
 """Batch F1 — v0.8.0 "Watchtower" E2E Test Suite (10 enforcement scenarios).
 
