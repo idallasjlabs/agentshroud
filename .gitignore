@@ -358,3 +358,8 @@ trivy*.sarif
 # Python cache
 gateway/tests/__pycache__/
 **/__pycache__/
+
+# SQLite runtime files — never commit WAL/SHM artifacts
+data/ledger.db
+data/ledger.db-shm
+data/ledger.db-wal
