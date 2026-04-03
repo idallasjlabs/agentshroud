@@ -226,10 +226,15 @@ https.globalAgent = new ConnectProxyAgent({ keepAlive: true });
         protocols = undefined;
       }
 
-      // Inject proxyCreateConnection before ws's initAsClient sets tlsConnect
+      // Inject proxyCreateConnection before ws's initAsClient sets tlsConnect.
+      // Also remove any explicit `agent` — when an agent is passed, Node's
+      // https.request() delegates to agent.createConnection(), which does its
+      // own DNS resolution (bypassing our proxy). Removing the agent ensures
+      // ws falls through to opts.createConnection (our proxy-aware version).
       if (!opts) opts = {};
       if (!opts.createConnection) {
         opts = { ...opts, createConnection: proxyCreateConnection };
+        delete opts.agent;
       }
 
       if (protocols !== undefined) {
