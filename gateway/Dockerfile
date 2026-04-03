@@ -361,7 +361,7 @@ COPY CONTRIBUTING.md /app/CONTRIBUTING.md
 # SDL config files for Secure Development scorer (Domain 11)
 COPY .semgrep.yml /app/.semgrep.yml
 COPY .pre-commit-config.yaml /app/.pre-commit-config.yaml
-COPY gitleaks.toml /app/gitleaks.toml
+COPY .gitleaks.toml /app/.gitleaks.toml
 COPY examples/ /app/examples/
 COPY docker/docker-compose.yml /app/docker/docker-compose.yml
 COPY pytest.ini /app/pytest.ini
