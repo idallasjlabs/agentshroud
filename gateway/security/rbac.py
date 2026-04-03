@@ -27,6 +27,7 @@ class PermissionResult:
     reason: Optional[str] = None
     requires_approval: bool = False
     denied_action: Optional[str] = None
+    data: Any = None
 
 
 class Action(str, Enum):
@@ -331,6 +332,7 @@ class RBACManager:
             return PermissionResult(
                 allowed=True,
                 reason="success",
+                data=users_info,
             )
 
         except Exception as e:
