@@ -258,8 +258,9 @@ services:
       - ${AGENTSHROUD_DNS_PRIMARY:-1.1.1.1}
       - ${AGENTSHROUD_DNS_SECONDARY:-8.8.8.8}
       - 1.1.1.1
+    # Bot on isolated network only — no direct internet access.
+    # All outbound traffic must route through the gateway on agentshroud-isolated.
     networks:
-      - agentshroud-internal
       - agentshroud-isolated
     depends_on:
       gateway:
@@ -314,14 +315,6 @@ networks:
         - subnet: 10.254.111.0/24
     driver_opts:
       com.docker.network.bridge.enable_icc: "true"
-  agentshroud-console:
-    driver: bridge
-    internal: true
-    driver_opts:
-      com.docker.network.bridge.enable_ip_masquerade: "false"
-    ipam:
-      config:
-        - subnet: 10.254.112.0/24
 
 # ── Volumes ────────────────────────────────────────────────────────────────────
 volumes:
