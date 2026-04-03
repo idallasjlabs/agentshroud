@@ -132,30 +132,36 @@ https.globalAgent = new ConnectProxyAgent({ keepAlive: true });
 // Fix: wrap the WebSocket class so every new instance gets a proxy-aware
 // createConnection injected before initAsClient can install tlsConnect.
 (function patchWsForProxy() {
-  // Resolve 'ws' dynamically: check openclaw's own node_modules first, then
-  // fall back to global paths.  Avoids hard-coding a version-specific path.
-  let WS_PATH;
+  // Resolve ALL copies of 'ws' under the openclaw tree — extensions (e.g.
+  // @slack/socket-mode) bundle their own ws in nested node_modules, and each
+  // copy needs to be patched independently.
   const _WS_SEARCH = [
     '/usr/local/lib/node_modules/openclaw/node_modules',
     '/usr/local/lib/node_modules/openclaw',
+    '/usr/local/lib/node_modules/openclaw/dist/extensions/slack/node_modules',
   ].concat((require.resolve.paths && require.resolve.paths('ws')) || []);
+
+  const wsPaths = [];
   for (const searchDir of _WS_SEARCH) {
     try {
-      WS_PATH = require.resolve('ws', { paths: [searchDir] });
-      break;
+      const resolved = require.resolve('ws', { paths: [searchDir] });
+      if (!wsPaths.includes(resolved)) wsPaths.push(resolved);
     } catch (_) { /* try next */ }
   }
-  if (!WS_PATH) return; // ws not found — skip
+  if (wsPaths.length === 0) return; // ws not found — skip
+
+  // Patch each ws instance found
+  for (const WS_PATH of wsPaths) {
 
   let wsExports;
   try {
     wsExports = require(WS_PATH);
   } catch (e) {
-    return; // ws not loadable — skip
+    continue; // ws not loadable — skip to next
   }
 
   const OrigWebSocket = wsExports.WebSocket || wsExports;
-  if (!OrigWebSocket || typeof OrigWebSocket !== 'function') return;
+  if (!OrigWebSocket || typeof OrigWebSocket !== 'function') continue;
 
   // createConnection(options, callback) — called by Node.js HTTP agent machinery.
   // For bypass hosts: direct TLS (same as ws's built-in tlsConnect).
@@ -242,10 +248,11 @@ https.globalAgent = new ConnectProxyAgent({ keepAlive: true });
 
   // Replace in the require cache so all subsequent require('ws') calls —
   // including @slack/socket-mode — receive PatchedWebSocket.
-  const resolved = require.resolve(WS_PATH);
-  const cached   = require.cache[resolved];
+  const cached = require.cache[WS_PATH];
   if (cached) {
     cached.exports             = PatchedWebSocket;
     PatchedWebSocket.WebSocket = PatchedWebSocket;
   }
+
+  } // end for (wsPaths)
 }());
