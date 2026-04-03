@@ -127,10 +127,11 @@ services:
       retries: 3
       start_period: 120s
 
-    # Gateway DNS — Pi-hole (192.168.7.45) → router (192.168.7.1) → public fallbacks.
+    # Gateway DNS — defaults to public resolvers. Override via AGENTSHROUD_DNS_PRIMARY/SECONDARY
+    # in docker/.env for site-specific resolvers (e.g. Pi-hole, local router).
     dns:
-      - 192.168.7.45
-      - 192.168.7.1
+      - ${AGENTSHROUD_DNS_PRIMARY:-1.1.1.1}
+      - ${AGENTSHROUD_DNS_SECONDARY:-8.8.8.8}
       - 1.1.1.1
       - 8.8.8.8
 
@@ -253,10 +254,11 @@ services:
       timeout: 10s
       retries: 3
       start_period: 60s
-    # Bot DNS — Pi-hole (192.168.7.45) → router (192.168.7.1) → public fallbacks.
+    # Bot DNS — defaults to public resolvers. Override via AGENTSHROUD_DNS_PRIMARY/SECONDARY
+    # in docker/.env for site-specific resolvers (e.g. Pi-hole, local router).
     dns:
-      - 192.168.7.45
-      - 192.168.7.1
+      - ${AGENTSHROUD_DNS_PRIMARY:-1.1.1.1}
+      - ${AGENTSHROUD_DNS_SECONDARY:-8.8.8.8}
       - 1.1.1.1
       - 8.8.8.8
     # Bot on isolated network only — no direct internet access.
