@@ -95,6 +95,12 @@ RUN sh /usr/local/bin/patch-telegram-sdk.sh
 # NOISE REDUCTION: Demote Slack pong timeout warnings to debug level
 COPY docker/scripts/patch-slack-sdk.sh /usr/local/bin/patch-slack-sdk.sh
 RUN sh /usr/local/bin/patch-slack-sdk.sh
+# NETWORK: Route ws wss:// connections through HTTPS_PROXY CONNECT tunnel.
+# Required because openclaw uses Node.js Compile Cache (module.enableCompileCache),
+# which bypasses the runtime require.cache patch in setup-https-proxy.js.
+# Disk-level patch ensures the proxy routing is baked into the compiled bytecode.
+COPY docker/scripts/patch-ws-proxy.sh /usr/local/bin/patch-ws-proxy.sh
+RUN sh /usr/local/bin/patch-ws-proxy.sh
 # Install 1Password CLI for secure secret management (multi-arch)
 # R2-H1: GPG signature verification for supply chain integrity
 RUN curl -sS https://downloads.1password.com/linux/keys/1password.asc | \
