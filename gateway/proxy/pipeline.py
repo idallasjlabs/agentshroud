@@ -909,13 +909,18 @@ class SecurityPipeline:
         if hasattr(self.egress_filter, "set_mode"):
             self.egress_filter.set_mode(mode)
 
-        # Update prompt guard thresholds based on mode
+        # Update prompt guard thresholds based on mode.
+        # Original thresholds are saved on first monitor switch so they can be
+        # restored exactly when returning to enforce — avoids overwriting any
+        # custom values set at PromptGuard initialization time.
         if self.prompt_guard:
             if mode == "monitor":
-                # In monitor mode, set very high threshold so nothing blocks
+                if not hasattr(self, "_pg_orig_block_threshold"):
+                    self._pg_orig_block_threshold = self.prompt_guard.block_threshold
+                    self._pg_orig_warn_threshold = self.prompt_guard.warn_threshold
                 self.prompt_guard.block_threshold = 999.0
                 self.prompt_guard.warn_threshold = 999.0
             else:
-                # In enforce mode, use normal thresholds
-                self.prompt_guard.block_threshold = 0.8
-                self.prompt_guard.warn_threshold = 0.4
+                # Restore originals if saved; fall back to defaults if not
+                self.prompt_guard.block_threshold = getattr(self, "_pg_orig_block_threshold", 0.8)
+                self.prompt_guard.warn_threshold = getattr(self, "_pg_orig_warn_threshold", 0.4)
