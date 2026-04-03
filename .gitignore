@@ -3,7 +3,6 @@
 
 # Note:
 # - Keep `docker/secrets/*.example` tracked so collaborators have secret templates
-# - Keep `memory-backups/backup.log` tracked while ignoring backup tarball artifacts
 # SECRETS & CREDENTIALS (CRITICAL)
 # Real deployment config (contains personal IPs, phone numbers, hostnames)
 agentshroud.yaml
@@ -156,10 +155,8 @@ temp/
 # History files that may contain credentials
 history.env
 /secrets/
-# Memory backup archives — only keep backup.log; ignore contents and tarballs
-memory-backups/*.tar.gz
-memory-backups/memory/
-memory-backups/MEMORY.md
+# Memory backup archives — runtime-generated, not tracked
+memory-backups/
 # Large data files (adjust as needed)
 *.csv.gz
 *.parquet.gz
@@ -169,7 +166,7 @@ data/processed/
 # Logs
 *.log
 logs/
-!memory-backups/backup.log
+
 # Lock files
 *.lock
 !poetry.lock
