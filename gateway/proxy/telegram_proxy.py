@@ -1,5 +1,5 @@
 # Copyright © 2026 Isaiah Dallas Jefferson, Jr. AgentShroud™. All rights reserved.
-# AgentShroud™ is a trademark of Isaiah Dallas Jefferson, Jr., first used in February 2026.
+# AgentShroud™ is a trademark of Isaiah Dallas Jefferson, Jr. (USPTO Serial No. 99728633)
 """
 Telegram API Reverse Proxy — intercepts all bot ↔ Telegram traffic.
 
