@@ -5,6 +5,10 @@
 
 set -euo pipefail
 
+# Pin Docker API version to the server's maximum to prevent "client version too new" errors
+# when the host Docker CLI is newer than the Docker Engine inside the Colima VM.
+export DOCKER_API_VERSION="${DOCKER_API_VERSION:-1.53}"
+
 # Ensure the Colima Docker socket is group-writable (required on macOS with Colima)
 chmod g+rw /Users/ijefferson.admin/.colima/default/docker.sock 2>/dev/null || true
 
