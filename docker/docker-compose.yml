@@ -127,12 +127,12 @@ services:
       retries: 3
       start_period: 120s
 
-    # Gateway DNS — set AGENTSHROUD_DNS_PRIMARY to your Pi-hole/local resolver for ad/tracking protection.
-    # AGENTSHROUD_DNS_SECONDARY is the fallback (e.g. router). Defaults to public resolvers.
+    # Gateway DNS — Pi-hole (192.168.7.45) → router (192.168.7.1) → public fallbacks.
     dns:
-      - ${AGENTSHROUD_DNS_PRIMARY:-1.1.1.1}
-      - ${AGENTSHROUD_DNS_SECONDARY:-8.8.8.8}
+      - 192.168.7.45
+      - 192.168.7.1
       - 1.1.1.1
+      - 8.8.8.8
 
     # Gateway on BOTH networks: internal (internet) + isolated (to bot)
     networks:
@@ -253,11 +253,12 @@ services:
       timeout: 10s
       retries: 3
       start_period: 60s
-    # Bot DNS — same resolver hierarchy as gateway for consistent DNS protection.
+    # Bot DNS — Pi-hole (192.168.7.45) → router (192.168.7.1) → public fallbacks.
     dns:
-      - ${AGENTSHROUD_DNS_PRIMARY:-1.1.1.1}
-      - ${AGENTSHROUD_DNS_SECONDARY:-8.8.8.8}
+      - 192.168.7.45
+      - 192.168.7.1
       - 1.1.1.1
+      - 8.8.8.8
     # Bot on isolated network only — no direct internet access.
     # All outbound traffic must route through the gateway on agentshroud-isolated.
     networks:
