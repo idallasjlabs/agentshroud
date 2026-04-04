@@ -135,11 +135,21 @@ https.globalAgent = new ConnectProxyAgent({ keepAlive: true });
   // Resolve ALL copies of 'ws' under the openclaw tree — extensions (e.g.
   // @slack/socket-mode) bundle their own ws in nested node_modules, and each
   // copy needs to be patched independently.
-  const _WS_SEARCH = [
+  // Search both image install (/usr/local/) and runtime volume (NPM_CONFIG_PREFIX)
+  // paths. PATH prioritises the volume, so __require("ws") in the bundle resolves
+  // to the volume copy. We must patch that copy's require.cache entry.
+  const _npmPrefix = process.env.NPM_CONFIG_PREFIX;
+  const _WS_SEARCH = [];
+  if (_npmPrefix) {
+    const _pfx = _npmPrefix + '/lib/node_modules/openclaw';
+    _WS_SEARCH.push(_pfx + '/node_modules', _pfx, _pfx + '/dist/extensions/slack/node_modules');
+  }
+  _WS_SEARCH.push(
     '/usr/local/lib/node_modules/openclaw/node_modules',
     '/usr/local/lib/node_modules/openclaw',
     '/usr/local/lib/node_modules/openclaw/dist/extensions/slack/node_modules',
-  ].concat((require.resolve.paths && require.resolve.paths('ws')) || []);
+  );
+  _WS_SEARCH.push(...((require.resolve.paths && require.resolve.paths('ws')) || []));
 
   const wsPaths = [];
   for (const searchDir of _WS_SEARCH) {
