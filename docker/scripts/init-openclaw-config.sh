@@ -240,7 +240,7 @@ if [ -n "${NPM_CONFIG_PREFIX}" ] && [ -d "${NPM_CONFIG_PREFIX}" ]; then
       # The image build patches /usr/local/lib/node_modules/openclaw/, but the
       # volume copy at NPM_CONFIG_PREFIX/lib/node_modules/ is unpatched.
       # Without this, grammY and the Anthropic SDK bypass the gateway proxy.
-      for _patch in patch-anthropic-sdk.sh patch-telegram-sdk.sh patch-slack-sdk.sh; do
+      for _patch in patch-anthropic-sdk.sh patch-telegram-sdk.sh patch-slack-sdk.sh patch-ws-proxy.sh; do
         if [ -x "/usr/local/bin/${_patch}" ]; then
           echo "[init] Re-applying ${_patch} to NPM_CONFIG_PREFIX install..."
           sh "/usr/local/bin/${_patch}" 2>&1 || echo "[init] ⚠ ${_patch} failed (non-fatal)"
