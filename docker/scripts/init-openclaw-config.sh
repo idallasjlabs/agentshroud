@@ -252,6 +252,14 @@ if [ -n "${NPM_CONFIG_PREFIX}" ] && [ -d "${NPM_CONFIG_PREFIX}" ]; then
   else
     echo "[init] ✓ openclaw ${RUNTIME_VER} already in NPM_CONFIG_PREFIX"
   fi
+
+  # Always ensure ws proxy patch is applied to the runtime volume.
+  # The patch is idempotent (skips if AGENTSHROUD_WS_PROXY_PATCHED marker found).
+  # Must run outside the version-check block because existing volumes pre-date the patch.
+  if [ -x "/usr/local/bin/patch-ws-proxy.sh" ]; then
+    echo "[init] Ensuring ws proxy patch on NPM_CONFIG_PREFIX install..."
+    sh /usr/local/bin/patch-ws-proxy.sh 2>&1 || echo "[init] ⚠ patch-ws-proxy.sh failed (non-fatal)"
+  fi
 fi
 
 # AGENTS.md: add "read BRAND.md" to the session startup checklist if absent.
