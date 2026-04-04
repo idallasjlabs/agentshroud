@@ -41,7 +41,7 @@ ARG WAZUH_VERSION=4.9.2
 RUN mkdir -p /apt-dl/partial \
     && sed -i 's/^Signed-By:.*/Trusted: yes/' /etc/apt/sources.list.d/debian.sources \
     && apt-get update && apt-get -o Dir::Cache::archives=/apt-dl install -y --no-install-recommends \
-    libopenscap25 \
+    libopenscap33 \
     openscap-scanner \
     openssh-client \
     clamav clamav-daemon clamav-freshclam clamdscan \
