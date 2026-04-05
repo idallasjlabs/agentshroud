@@ -42,6 +42,41 @@ scripts/asb logs gateway
 
 ---
 
+## Colima VM
+
+> Colima is the Docker runtime on macOS. PROD runs as `ijefferson.admin`, DEV as `agentshroud-bot`.
+> Both user homes are virtiofs-mounted so each instance stays fully isolated.
+
+```bash
+# Status
+colima status
+
+# Start (standard flags for this host)
+colima start --cpu 8 --memory 10 --disk 60 --network-address
+
+# Stop / restart
+colima stop
+colima stop && colima start --cpu 8 --memory 10 --disk 60 --network-address
+
+# Verify both user homes are mounted (expect two virtiofs entries)
+colima ssh -- mount | grep virtiofs
+
+# SSH into the VM (for deep diagnostics)
+colima ssh
+
+# Disk usage inside VM
+colima ssh -- df -h /
+
+# Check what paths are visible to Docker (mounts config)
+# ~/.colima/default/colima.yaml  →  mounts: section
+# Both /Users/ijefferson.admin and /Users/agentshroud-bot must be listed
+
+# If a container can't find a bind-mount path, the host path is not virtiofs-mounted.
+# Fix: add the missing path to mounts: in colima.yaml, then restart Colima.
+```
+
+---
+
 ## Network Diagnostics
 
 ```bash
