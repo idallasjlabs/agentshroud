@@ -58,8 +58,8 @@ const LMSTUDIO_BASE_URL_RAW = process.env.LMSTUDIO_API_BASE || 'http://host.dock
 const LMSTUDIO_BASE_URL = /\/v1\/?$/i.test(LMSTUDIO_BASE_URL_RAW)
   ? LMSTUDIO_BASE_URL_RAW.replace(/\/+$/, '')
   : `${LMSTUDIO_BASE_URL_RAW.replace(/\/+$/, '')}/v1`;
-const LMSTUDIO_ANCHOR_MODEL = process.env.AGENTSHROUD_ANCHOR_MODEL || 'qwen3.5-27b';
-const LMSTUDIO_CODING_MODEL = process.env.AGENTSHROUD_CODING_MODEL || 'qwen2.5-coder-32b';
+const LMSTUDIO_ANCHOR_MODEL = process.env.AGENTSHROUD_ANCHOR_MODEL || 'qwen3.5:27b';
+const LMSTUDIO_CODING_MODEL = process.env.AGENTSHROUD_CODING_MODEL || 'qwen2.5-coder:32b';
 
 // Patch 0: agents.defaults.model (startup/default model resolution path)
 config.agents = config.agents || {};
@@ -101,8 +101,8 @@ const ollamaModels = [
   },
 ];
 if (MODEL_MODE === 'local-multi') {
-  const ANCHOR_MODEL_NAME = process.env.AGENTSHROUD_ANCHOR_MODEL || 'qwen3.5-27b';
-  const CODING_MODEL_NAME = process.env.AGENTSHROUD_CODING_MODEL || 'qwen2.5-coder-32b';
+  const ANCHOR_MODEL_NAME = process.env.AGENTSHROUD_ANCHOR_MODEL || 'qwen3.5:27b';
+  const CODING_MODEL_NAME = process.env.AGENTSHROUD_CODING_MODEL || 'qwen2.5-coder:32b';
   const REASONING_MODEL_NAME = process.env.AGENTSHROUD_REASONING_MODEL || 'deepseek-r1';
   for (const [id, label, reasoning] of [
     [ANCHOR_MODEL_NAME, 'Anchor', false],
