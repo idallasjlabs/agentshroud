@@ -55,22 +55,21 @@ _asb_banner() {
     "$label" "$USER" "$HOST" "$PROJECT" "$gw_port" "$bot_port"
 }
 
-# ── Ephemeral secrets injection ──────────────────────────────────────────────
+# ── Secrets injection ────────────────────────────────────────────────────────
 # Reads secrets from the credential backend (1Password/Keychain/secret-tool)
-# into a mktemp directory, generates a compose override that remaps all
-# secrets: file: paths to the tmpdir, then cleans up via EXIT trap.
-# Secret files exist on the host only for the duration of `docker compose up`.
+# into a fixed-path directory under $HOME, generates a compose override that
+# remaps all secrets: file: paths to that directory. The directory persists as
+# long as containers are running — Docker Compose (standalone) bind-mounts
+# secrets directly from the host path, so deleting them while containers run
+# causes "No such file or directory" inside the container. Cleanup is done by
+# `asb down` and at the start of each `asb up`/`rebuild` to rotate secrets.
+# Each user ($HOME) keeps their own secrets dir — PROD and DEV stay isolated.
+# $HOME must be virtiofs-mounted in Colima (see ~/.colima/default/colima.yaml).
 setup_ephemeral_secrets() {
-  local tmpdir
-  # Each user's $HOME must be virtiofs-mounted in Colima for Docker bind-mounts
-  # to work. Both /Users/ijefferson.admin and /Users/agentshroud-bot are configured
-  # as explicit mounts in ~/.colima/default/colima.yaml so PROD and DEV stay isolated.
-  mkdir -p "$HOME/.agentshroud/.asb-tmp"
-  tmpdir="$(mktemp -d "$HOME/.agentshroud/.asb-tmp/asb-secrets.XXXXXX")"
-  # Use a global so the EXIT trap can reference it after this function returns
-  # (local vars are out of scope when the trap fires at script exit).
-  _ASB_SECRETS_TMPDIR="$tmpdir"
-  trap '[[ -n "${_ASB_SECRETS_TMPDIR:-}" ]] && rm -rf "$_ASB_SECRETS_TMPDIR"' EXIT
+  local tmpdir="$HOME/.agentshroud/.asb-secrets"
+  # Wipe previous secrets before writing new ones (ensures rotation).
+  rm -rf "$tmpdir"
+  mkdir -p "$tmpdir"
 
   # Extract secrets from credential backend → tmpdir (suppress interactive banner)
   AGENTSHROUD_SECRETS_DIR="$tmpdir" "$REPO_DIR/docker/setup-secrets.sh" extract || {
@@ -193,7 +192,10 @@ case "${1:-}" in
     setup_ephemeral_secrets
     $COMPOSE up -d
     ;;
-  down)    $COMPOSE down ;;
+  down)
+    $COMPOSE down
+    rm -rf "$HOME/.agentshroud/.asb-secrets"
+    ;;
   rebuild)
     _prune_docker
     setup_ephemeral_secrets
