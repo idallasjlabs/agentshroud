@@ -36,8 +36,14 @@ scripts/asb up
 scripts/asb down
 scripts/asb rebuild
 scripts/asb clean-rebuild
+scripts/asb prune          # safe disk reclaim — NEVER deletes named volumes
 scripts/asb status
 scripts/asb logs gateway
+
+# ⚠ NEVER run: docker system prune --volumes
+# It destroys gateway-data, agentshroud-workspace, agentshroud-config, etc.
+# Ollama (~/.ollama) and mlx_lm (~/.cache/huggingface) are on the macOS host
+# and are safe from Docker prune, but always use `asb prune` not `docker system prune`.
 ```
 
 ---

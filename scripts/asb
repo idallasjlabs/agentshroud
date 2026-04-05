@@ -155,6 +155,12 @@ YAML
 # stopping running containers — running containers and named volumes are NOT removed.
 # Each step is wrapped in a 30-second timeout — BuildKit prune is known to hang
 # on Colima when the daemon is in a bad state.
+#
+# ⚠ NEVER run `docker system prune --volumes` manually — it deletes ALL named
+#   volumes including gateway-data, agentshroud-workspace, agentshroud-config, etc.
+#   Ollama models (~/.ollama) and mlx_lm models (~/.cache/huggingface) live on the
+#   macOS host and are safe, but Docker volumes would be permanently lost.
+#   Always use `asb prune` or `asb clean-rebuild` which explicitly preserve volumes.
 _prune_docker() {
   echo "Pruning stopped containers, dangling images, and BuildKit cache..."
   timeout 30 docker container prune -f 2>/dev/null || true
@@ -163,7 +169,7 @@ _prune_docker() {
   timeout 60 docker builder prune -f 2>/dev/null \
     || timeout 60 docker buildx prune -f 2>/dev/null \
     || echo "  BuildKit prune timed out — continuing anyway"
-  echo "Docker prune complete."
+  echo "Docker prune complete. Named volumes preserved."
 }
 
 _asb_banner
@@ -216,12 +222,13 @@ case "${1:-}" in
     $COMPOSE up -d
     echo "Clean rebuild complete."
     ;;
+  prune)   _prune_docker ;;
   pull)    cd "$REPO_DIR" && git pull --rebase ;;
   status)  $COMPOSE ps ;;
   logs)    $COMPOSE logs -f --tail=100 ${2:-} ;;
   test)    $COMPOSE exec gateway python -m pytest gateway/tests/ -q ;;
   *)
-    echo "Usage: asb {build|up|down|rebuild|clean-rebuild|pull|status|logs [service]|test}"
+    echo "Usage: asb {build|up|down|rebuild|clean-rebuild|prune|pull|status|logs [service]|test}"
     exit 1
     ;;
 esac
