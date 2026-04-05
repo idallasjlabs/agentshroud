@@ -86,30 +86,48 @@ if (!config.agents.defaults.models[MAIN_MODEL]) {
 // Patch 0b: models.providers.ollama fallback registration.
 // This gives OpenClaw an explicit provider + model definition even if dynamic
 // model discovery is unavailable at startup.
+// In local-multi mode all 3 models (Anchor, Coding, Reasoning) run under Ollama.
 config.models = config.models || {};
 config.models.providers = config.models.providers || {};
 const currentOllama = config.models.providers.ollama || {};
-const desiredOllamaModel = {
-  id: LOCAL_MODEL_NAME,
-  name: LOCAL_MODEL_NAME,
-  reasoning: false,
-  input: ['text'],
-  contextWindow: 128000,
-  maxTokens: 8192,
-};
+const ollamaModels = [
+  {
+    id: LOCAL_MODEL_NAME,
+    name: LOCAL_MODEL_NAME,
+    reasoning: false,
+    input: ['text'],
+    contextWindow: 128000,
+    maxTokens: 8192,
+  },
+];
+if (MODEL_MODE === 'local-multi') {
+  const ANCHOR_MODEL_NAME = process.env.AGENTSHROUD_ANCHOR_MODEL || 'qwen3.5-27b';
+  const CODING_MODEL_NAME = process.env.AGENTSHROUD_CODING_MODEL || 'qwen2.5-coder-32b';
+  const REASONING_MODEL_NAME = process.env.AGENTSHROUD_REASONING_MODEL || 'deepseek-r1';
+  for (const [id, label, reasoning] of [
+    [ANCHOR_MODEL_NAME, 'Anchor', false],
+    [CODING_MODEL_NAME, 'Coding', false],
+    [REASONING_MODEL_NAME, 'Reasoning', true],
+  ]) {
+    if (!ollamaModels.some((m) => m.id === id)) {
+      ollamaModels.push({ id, name: label + ' (' + id + ')', reasoning, input: ['text'], contextWindow: 32768, maxTokens: 8192 });
+    }
+  }
+}
 const desiredOllama = {
   baseUrl: OLLAMA_BASE_URL,
   api: OLLAMA_PROVIDER_API,
-  models: [desiredOllamaModel],
+  models: ollamaModels,
 };
 if (JSON.stringify(currentOllama) !== JSON.stringify(desiredOllama)) {
   config.models.providers.ollama = desiredOllama;
   changed = true;
 }
 
-// Patch 0c: models.providers.lmstudio — Anchor (qwen3.5-27b) + Coding (qwen2.5-coder-32b).
-// Only registered when MODEL_MODE is 'local-multi' or LMSTUDIO_API_BASE is explicitly set.
-if (MODEL_MODE === 'local-multi' || process.env.LMSTUDIO_API_BASE) {
+// Patch 0c: models.providers.lmstudio — only registered when LMSTUDIO_API_BASE is
+// explicitly set (i.e. user has LM Studio running alongside Ollama).
+// In the default local-multi setup all models run under Ollama; this block is a no-op.
+if (process.env.LMSTUDIO_API_BASE) {
   const currentLmStudio = config.models.providers.lmstudio || {};
   const desiredLmStudio = {
     baseUrl: LMSTUDIO_BASE_URL,
