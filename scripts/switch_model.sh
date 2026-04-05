@@ -85,18 +85,19 @@ case "$TARGET" in
     ;;
   local-multi)
     MODEL_MODE="local-multi"
-    # Anchor model (qwen3.5) is the default OpenClaw agent model; routed to LM Studio
-    LOCAL_REF="lmstudio/${ANCHOR_MODEL}"
-    OPENCLAW_MAIN_MODEL="lmstudio/${ANCHOR_MODEL}"
+    # Anchor model is the default OpenClaw agent model; all 3 models run under Ollama.
+    # DeepSeek-R1 (Reasoning) routes to mlx_lm via LOCAL_MODEL_ROUTES in llm_proxy.py.
+    LOCAL_REF="ollama/${ANCHOR_MODEL}"
+    OPENCLAW_MAIN_MODEL="ollama/${ANCHOR_MODEL}"
     LOCAL_MODEL_NAME="${ANCHOR_MODEL}"
     if [[ -n "${CUSTOM_MODEL_REF}" ]]; then
-      if [[ "${CUSTOM_MODEL_REF}" == lmstudio/* ]]; then
+      if [[ "${CUSTOM_MODEL_REF}" == ollama/* ]]; then
         LOCAL_REF="${CUSTOM_MODEL_REF}"
       else
-        LOCAL_REF="lmstudio/${CUSTOM_MODEL_REF}"
+        LOCAL_REF="ollama/${CUSTOM_MODEL_REF}"
       fi
       OPENCLAW_MAIN_MODEL="${LOCAL_REF}"
-      LOCAL_MODEL_NAME="${LOCAL_REF#lmstudio/}"
+      LOCAL_MODEL_NAME="${LOCAL_REF#ollama/}"
     fi
     ;;
   gemini)

@@ -31,13 +31,12 @@ MLXLM_API_BASE = os.environ.get("MLXLM_API_BASE", "http://host.docker.internal:8
 MAIN_MODEL = os.environ.get("AGENTSHROUD_LOCAL_MODEL", "qwen2.5-coder:7b")
 MODEL_MODE = os.environ.get("AGENTSHROUD_MODEL_MODE", "local").lower()
 
-# Maps model name prefixes to their backend base URL.
-# Checked before the generic Ollama fallback so LM Studio / mlx_lm models
-# are routed correctly even though they speak the same OpenAI-compatible API.
+# Maps model name prefixes to specific backend base URLs.
+# Checked before the generic Ollama fallback — only needed for models that do NOT
+# run under Ollama (e.g. mlx_lm or LM Studio on a different port).
+# Models not listed here fall through to OLLAMA_API_BASE automatically.
 LOCAL_MODEL_ROUTES: dict[str, str] = {
-    "qwen3.5": LMSTUDIO_API_BASE,
-    "qwen2.5-coder": LMSTUDIO_API_BASE,
-    "deepseek-r1": MLXLM_API_BASE,
+    "deepseek-r1": MLXLM_API_BASE,  # Reasoning — mlx_lm on :8234 (no tool calling)
 }
 
 
