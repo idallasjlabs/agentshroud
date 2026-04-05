@@ -62,24 +62,13 @@ _asb_banner() {
 # Secret files exist on the host only for the duration of `docker compose up`.
 setup_ephemeral_secrets() {
   local tmpdir
-  # Colima's virtiofs only mounts the home of the user who started it (e.g.
-  # /Users/ijefferson.admin). When running as a different user (agentshroud-bot),
-  # $HOME resolves to /Users/agentshroud-bot which is invisible to the Docker
-  # daemon inside the VM, causing bind-mount failures. Detect the actual virtiofs
-  # mount point so the tmpdir is always within the visible path.
-  # Derive mount point from the Docker socket path (<home>/.colima/default/docker.sock).
-  # This avoids requiring colima in PATH (agentshroud-bot doesn't have /opt/homebrew/bin).
-  local _colima_mount=""
-  local _docker_sock
-  _docker_sock="$(docker context inspect --format '{{.Endpoints.docker.Host}}' 2>/dev/null | sed 's|unix://||')"
-  if [[ "$_docker_sock" == */.colima/* ]]; then
-    _colima_mount="${_docker_sock%%/.colima/*}"
-  fi
-  local _asb_tmp="${_colima_mount:-$HOME}/.agentshroud/.asb-tmp"
-  mkdir -p "$_asb_tmp"
-  tmpdir="$(mktemp -d "$_asb_tmp/asb-secrets.XXXXXX")"
-  # Use a global so the EXIT trap (which fires after this function returns and
-  # local vars are gone) can still reference the path to clean up.
+  # Each user's $HOME must be virtiofs-mounted in Colima for Docker bind-mounts
+  # to work. Both /Users/ijefferson.admin and /Users/agentshroud-bot are configured
+  # as explicit mounts in ~/.colima/default/colima.yaml so PROD and DEV stay isolated.
+  mkdir -p "$HOME/.agentshroud/.asb-tmp"
+  tmpdir="$(mktemp -d "$HOME/.agentshroud/.asb-tmp/asb-secrets.XXXXXX")"
+  # Use a global so the EXIT trap can reference it after this function returns
+  # (local vars are out of scope when the trap fires at script exit).
   _ASB_SECRETS_TMPDIR="$tmpdir"
   trap '[[ -n "${_ASB_SECRETS_TMPDIR:-}" ]] && rm -rf "$_ASB_SECRETS_TMPDIR"' EXIT
 
