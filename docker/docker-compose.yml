@@ -261,10 +261,15 @@ services:
       - ${AGENTSHROUD_DNS_SECONDARY:-8.8.8.8}
       - 1.1.1.1
       - 8.8.8.8
-    # Bot on isolated network only — no direct internet access.
-    # All outbound traffic must route through the gateway on agentshroud-isolated.
+    # Bot networks:
+    #   agentshroud-isolated (internal:true)  — all proxy/agent traffic to gateway
+    #   agentshroud-console  (internal:false) — Control UI port publishing only
+    # Docker cannot publish host ports on internal-only networks, so the console
+    # network is required solely to allow 127.0.0.1:18789->18789 to bind on the host.
+    # All outbound HTTP/HTTPS still routes through the gateway via HTTP_PROXY.
     networks:
       - agentshroud-isolated
+      - agentshroud-console
     depends_on:
       gateway:
         condition: service_healthy
@@ -302,7 +307,8 @@ secrets:
 
 # ── Networks ───────────────────────────────────────────────────────────────────
 # Two networks: internal (internet access) and isolated (no internet)
-# Only the gateway is on both. Bot is isolated only.
+# Gateway is on agentshroud-internal + agentshroud-isolated.
+# Bot is on agentshroud-isolated (agent traffic) + agentshroud-console (Control UI port publish).
 networks:
   agentshroud-internal:
     driver: bridge
@@ -318,6 +324,15 @@ networks:
         - subnet: 10.254.111.0/24
     driver_opts:
       com.docker.network.bridge.enable_icc: "true"
+  agentshroud-console:
+    # Non-internal bridge solely to allow Docker host port publishing for the bot
+    # Control UI (127.0.0.1:18789->18789). Docker cannot publish ports on internal
+    # networks. No containers other than the bot use this network.
+    driver: bridge
+    internal: false
+    ipam:
+      config:
+        - subnet: 10.254.112.0/24
 
 # ── Volumes ────────────────────────────────────────────────────────────────────
 volumes:
