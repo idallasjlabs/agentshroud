@@ -62,12 +62,20 @@ _asb_banner() {
 # Secret files exist on the host only for the duration of `docker compose up`.
 setup_ephemeral_secrets() {
   local tmpdir
-  # Use $HOME/.agentshroud/.asb-tmp — Colima mounts $HOME by default (see
-  # ~/.colima/default/colima.yaml mounts:). If Docker can't reach this path,
-  # add $HOME to the Colima mounts config and restart Colima.
-  mkdir -p "$HOME/.agentshroud/.asb-tmp"
-  tmpdir="$(mktemp -d "$HOME/.agentshroud/.asb-tmp/asb-secrets.XXXXXX")"
-  trap '[[ -n "${tmpdir:-}" ]] && rm -rf "$tmpdir"' EXIT
+  # Colima's virtiofs only mounts the home of the user who started it (e.g.
+  # /Users/ijefferson.admin). When running as a different user (agentshroud-bot),
+  # $HOME resolves to /Users/agentshroud-bot which is invisible to the Docker
+  # daemon inside the VM, causing bind-mount failures. Detect the actual virtiofs
+  # mount point so the tmpdir is always within the visible path.
+  local _colima_mount
+  _colima_mount="$(colima ssh -- mount 2>/dev/null | awk '/virtiofs/{print $3}')" || true
+  local _asb_tmp="${_colima_mount:-$HOME}/.agentshroud/.asb-tmp"
+  mkdir -p "$_asb_tmp"
+  tmpdir="$(mktemp -d "$_asb_tmp/asb-secrets.XXXXXX")"
+  # Use a global so the EXIT trap (which fires after this function returns and
+  # local vars are gone) can still reference the path to clean up.
+  _ASB_SECRETS_TMPDIR="$tmpdir"
+  trap '[[ -n "${_ASB_SECRETS_TMPDIR:-}" ]] && rm -rf "$_ASB_SECRETS_TMPDIR"' EXIT
 
   # Extract secrets from credential backend → tmpdir (suppress interactive banner)
   AGENTSHROUD_SECRETS_DIR="$tmpdir" "$REPO_DIR/docker/setup-secrets.sh" extract || {
