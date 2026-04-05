@@ -245,7 +245,8 @@ http://localhost:8080/manage/dashboard/security
 http://localhost:8080/manage/dashboard/killswitch
 
 # Via Tailscale
-https://marvin.tail240ea8.ts.net:18790/          # Control UI
+https://marvin.tail240ea8.ts.net:18789/          # Control UI (PROD)
+https://marvin.tail240ea8.ts.net:18790/          # Control UI (DEV)
 ```
 
 ---

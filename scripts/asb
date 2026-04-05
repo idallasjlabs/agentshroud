@@ -43,13 +43,13 @@ _asb_banner() {
   if [ "$USER" = "agentshroud-bot" ]; then
     label="DEV"
     case "$HOST" in
-      marvin*) gw_port=9080; bot_port=19789 ;;
-      *)       gw_port=8080; bot_port=18790 ;;
+      marvin*) gw_port=9080; bot_port=18790 ;;
+      *)       gw_port=8080; bot_port=18789 ;;
     esac
   else
     label="PROD"
     gw_port=8080
-    bot_port=18790
+    bot_port=18789
   fi
   printf '\n== AgentShroud™ [%s] %s@%s  |  project: %s  |  gw: :%s  bot: :%s ==\n\n' \
     "$label" "$USER" "$HOST" "$PROJECT" "$gw_port" "$bot_port"

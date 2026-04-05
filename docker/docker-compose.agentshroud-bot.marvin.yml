@@ -4,8 +4,8 @@
 #
 # Usage: docker compose -f docker/docker-compose.yml -f docker/docker-compose.agentshroud-bot.marvin.yml -p agentshroud up -d
 #
-# Prod (ijefferson.admin):    gateway 8080,  bot 18790,  nets 10.254.110/111/112.0/24
-# This (agentshroud-bot):     gateway 9080,  bot 19789,  nets 172.20/172.21/172.22.0.0/16
+# Prod (ijefferson.admin):    gateway 8080,  bot 18789,  nets 10.254.110/111/112.0/24
+# This (agentshroud-bot):     gateway 9080,  bot 18790,  nets 172.20/172.21/172.22.0.0/16
 #
 # One-time host setup (required before first run):
 #   sudo chmod 755 /Users/agentshroud-bot
@@ -22,12 +22,12 @@ services:
   bot:
     container_name: agentshroud-marvin-bot
     ports: !override
-      - "127.0.0.1:19789:18789"
+      - "127.0.0.1:18790:18789"
     environment:
       - GATEWAY_HOST_PORT=9080
       - OPENCLAW_BOT_NAME=agentshroud_bot_marvin
       - AGENTSHROUD_INSTANCE_LABEL=dev-marvin
-      - AGENTSHROUD_CONTROL_UI_ORIGINS=${AGENTSHROUD_CONTROL_UI_ORIGINS:-http://localhost:19789,https://localhost:19789}
+      - AGENTSHROUD_CONTROL_UI_ORIGINS=${AGENTSHROUD_CONTROL_UI_ORIGINS:-http://localhost:18790,https://localhost:18790}
 
 secrets:
   telegram_bot_token:
