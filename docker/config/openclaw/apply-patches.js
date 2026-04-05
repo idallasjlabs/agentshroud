@@ -53,6 +53,14 @@ const OLLAMA_BASE_URL = /\/v1\/?$/i.test(OLLAMA_BASE_URL_RAW)
   ? OLLAMA_BASE_URL_RAW.replace(/\/+$/, '')
   : `${OLLAMA_BASE_URL_RAW.replace(/\/+$/, '')}/v1`;
 
+// LM Studio provider (Anchor + Coding models via OpenAI-compatible API on port 1234)
+const LMSTUDIO_BASE_URL_RAW = process.env.LMSTUDIO_API_BASE || 'http://host.docker.internal:1234';
+const LMSTUDIO_BASE_URL = /\/v1\/?$/i.test(LMSTUDIO_BASE_URL_RAW)
+  ? LMSTUDIO_BASE_URL_RAW.replace(/\/+$/, '')
+  : `${LMSTUDIO_BASE_URL_RAW.replace(/\/+$/, '')}/v1`;
+const LMSTUDIO_ANCHOR_MODEL = process.env.AGENTSHROUD_ANCHOR_MODEL || 'qwen3.5-27b';
+const LMSTUDIO_CODING_MODEL = process.env.AGENTSHROUD_CODING_MODEL || 'qwen2.5-coder-32b';
+
 // Patch 0: agents.defaults.model (startup/default model resolution path)
 config.agents = config.agents || {};
 config.agents.defaults = config.agents.defaults || {};
@@ -97,6 +105,39 @@ const desiredOllama = {
 if (JSON.stringify(currentOllama) !== JSON.stringify(desiredOllama)) {
   config.models.providers.ollama = desiredOllama;
   changed = true;
+}
+
+// Patch 0c: models.providers.lmstudio — Anchor (qwen3.5-27b) + Coding (qwen2.5-coder-32b).
+// Only registered when MODEL_MODE is 'local-multi' or LMSTUDIO_API_BASE is explicitly set.
+if (MODEL_MODE === 'local-multi' || process.env.LMSTUDIO_API_BASE) {
+  const currentLmStudio = config.models.providers.lmstudio || {};
+  const desiredLmStudio = {
+    baseUrl: LMSTUDIO_BASE_URL,
+    api: 'openai',
+    models: [
+      {
+        id: LMSTUDIO_ANCHOR_MODEL,
+        name: 'Anchor (' + LMSTUDIO_ANCHOR_MODEL + ')',
+        reasoning: false,
+        input: ['text'],
+        contextWindow: 32768,
+        maxTokens: 8192,
+      },
+      {
+        id: LMSTUDIO_CODING_MODEL,
+        name: 'Coding (' + LMSTUDIO_CODING_MODEL + ')',
+        reasoning: false,
+        input: ['text'],
+        contextWindow: 32768,
+        maxTokens: 8192,
+      },
+    ],
+  };
+  if (JSON.stringify(currentLmStudio) !== JSON.stringify(desiredLmStudio)) {
+    config.models.providers.lmstudio = desiredLmStudio;
+    console.log('[init-patch] Registered LM Studio provider with Anchor + Coding models');
+    changed = true;
+  }
 }
 
 // Patch 1: agents.list

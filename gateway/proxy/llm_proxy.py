@@ -26,8 +26,19 @@ ANTHROPIC_API_BASE = "https://api.anthropic.com"
 OPENAI_API_BASE = "https://api.openai.com"
 GOOGLE_API_BASE = "https://generativelanguage.googleapis.com"
 OLLAMA_API_BASE = "http://host.docker.internal:11434"
+LMSTUDIO_API_BASE = os.environ.get("LMSTUDIO_API_BASE", "http://host.docker.internal:1234")
+MLXLM_API_BASE = os.environ.get("MLXLM_API_BASE", "http://host.docker.internal:8234")
 MAIN_MODEL = os.environ.get("AGENTSHROUD_LOCAL_MODEL", "qwen2.5-coder:7b")
 MODEL_MODE = os.environ.get("AGENTSHROUD_MODEL_MODE", "local").lower()
+
+# Maps model name prefixes to their backend base URL.
+# Checked before the generic Ollama fallback so LM Studio / mlx_lm models
+# are routed correctly even though they speak the same OpenAI-compatible API.
+LOCAL_MODEL_ROUTES: dict[str, str] = {
+    "qwen3.5": LMSTUDIO_API_BASE,
+    "qwen2.5-coder": LMSTUDIO_API_BASE,
+    "deepseek-r1": MLXLM_API_BASE,
+}
 
 
 class LLMProxy:
@@ -81,12 +92,12 @@ class LLMProxy:
             except (json.JSONDecodeError, UnicodeDecodeError):
                 pass
 
-        # Detect Ollama (local model)
+        # Detect local model (Ollama, LM Studio, or mlx_lm)
         model_name = request_data.get("model", "") if request_data else ""
-        local_keywords = ["qwen", "llama", "mistral", "deepseek", "phi", "ollama"]
+        local_keywords = ["qwen", "llama", "mistral", "deepseek", "phi", "ollama", "lmstudio", "mlxlm"]
 
-        # INTERCEPT: If the system tries to use Claude Opus, force it to use Ollama Phi4
-        if MODEL_MODE != "cloud" and "claude-opus" in model_name.lower():
+        # INTERCEPT: If the system tries to use Claude Opus, force it to use the configured local model
+        if MODEL_MODE not in ("cloud",) and "claude-opus" in model_name.lower():
             logger.info(f"LLMProxy: Intercepted internal Claude Opus request, forcing {MAIN_MODEL}")
             if request_data:
                 request_data["model"] = MAIN_MODEL
@@ -97,29 +108,35 @@ class LLMProxy:
             is_ollama_native
             or any(k in model_name.lower() for k in local_keywords)
             or model_name.startswith("ollama/")
+            or model_name.startswith("lmstudio/")
         )
 
-        # Normalize Ollama model references for OpenAI-compatible endpoints.
-        # OpenClaw may emit model IDs like "ollama/qwen2.5-coder:7b", but
-        # Ollama's OpenAI-compatible API expects bare model names.
-        if (
-            is_ollama
-            and request_data
-            and isinstance(model_name, str)
-            and model_name.startswith("ollama/")
-        ):
-            request_data["model"] = model_name.split("/", 1)[1]
-            model_name = request_data["model"]
+        # Normalize provider-prefixed model references (ollama/, lmstudio/) to bare model names.
+        # OpenClaw may emit model IDs like "ollama/qwen2.5-coder:7b" or "lmstudio/qwen3.5-27b",
+        # but all local OpenAI-compatible APIs expect bare model names.
+        model_lower = model_name.lower()
+        for prefix in ("ollama/", "lmstudio/"):
+            if model_lower.startswith(prefix):
+                request_data["model"] = model_name.split("/", 1)[1]
+                model_name = request_data["model"]
+                model_lower = model_name.lower()
+                break
 
         # === INBOUND SCANNING: Scan user messages ===
         if request_data:
             await self._scan_request_data(request_data, user_id)
             body = json.dumps(request_data).encode()
 
-        # Determine provider base URL
+        # Determine provider base URL.
+        # LOCAL_MODEL_ROUTES maps model name prefixes to specific backends (LM Studio / mlx_lm).
+        # Falls back to Ollama for all other local keywords.
         base_url = ANTHROPIC_API_BASE
         if is_ollama:
             base_url = OLLAMA_API_BASE
+            for prefix, route_url in LOCAL_MODEL_ROUTES.items():
+                if model_lower.startswith(prefix):
+                    base_url = route_url
+                    break
         elif is_openai:
             base_url = OPENAI_API_BASE
         elif is_google:
