@@ -208,7 +208,7 @@ services:
       - TELEGRAM_API_BASE_URL=http://gateway:8080/telegram-api
       - SLACK_API_BASE_URL=http://gateway:8080/slack-api
       - AGENTSHROUD_SLACK_OWNER_USER_ID=${AGENTSHROUD_SLACK_OWNER_USER_ID:-}
-      - AGENTSHROUD_CONTROL_UI_ORIGINS=${AGENTSHROUD_CONTROL_UI_ORIGINS:-http://localhost:18789,https://localhost:18789,http://127.0.0.1:18789,https://127.0.0.1:18789}
+      - AGENTSHROUD_CONTROL_UI_ORIGINS=${AGENTSHROUD_CONTROL_UI_ORIGINS:-http://localhost:18789,https://localhost:18789,http://127.0.0.1:18789,https://127.0.0.1:18789,https://marvin.tail240ea8.ts.net:18789,http://marvin.tail240ea8.ts.net:18789}
       - GATEWAY_HOST_PORT=8080
       - AGENTSHROUD_GROUP_CHAT_ID=${AGENTSHROUD_GROUP_CHAT_ID:-}
       - OPENCLAW_BOT_NAME=agentshroud_bot
