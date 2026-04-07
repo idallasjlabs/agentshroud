@@ -8811,3 +8811,150 @@ class TestGroupMentionFilter:
         update = _make_group_update("no mention no username", user_id="8506022825", chat_id=-888)
         await proxy._filter_inbound_updates(_wrap_response(update))
         assert -888 not in proxy._group_response_eligible
+
+
+# ── full_access middleware bypass ─────────────────────────────────────────────
+
+
+class TestFullAccessMiddlewareBypass:
+    """full_access collaborators must pass through middleware and secondary pipeline blocks.
+
+    Regression test for the bug where Brett's benign research query was blocked with
+    "This action is not allowed." even though AGENTSHROUD_COLLAB_LOCAL_INFO_ONLY=0 was set.
+    Root cause: the middleware bypass condition was too narrow — it required "multi-turn"
+    in the block reason AND _looks_like_safe_collaborator_info_query(text) to be True.
+    Brett's imperative phrasing ("So some research and tell me...") fails the second
+    predicate, causing legitimate full_access messages to be silently blocked.
+    """
+
+    OWNER = "8096968754"
+    COLLAB = "8506022825"
+
+    @pytest.mark.asyncio
+    async def test_full_access_collaborator_passes_despite_middleware_block(self, monkeypatch):
+        """Middleware block must be bypassed for full_access collaborators."""
+        from gateway.ingest_api.middleware import MiddlewareResult
+
+        class BlockingMiddleware:
+            async def process_request(self, request_data, session_id):
+                return MiddlewareResult(
+                    allowed=False,
+                    reason="Context attack detected: unusual context switch",
+                )
+
+        monkeypatch.setenv("AGENTSHROUD_COLLAB_LOCAL_INFO_ONLY", "0")
+        proxy = TelegramAPIProxy(middleware_manager=BlockingMiddleware())
+        proxy._rbac = FakeRBAC(owner_id=self.OWNER, collaborators=[self.COLLAB])
+        proxy._bot_token = ""
+
+        block_notices: list[str] = []
+
+        async def fake_notify_blocked(chat_id, reason):
+            block_notices.append(str(reason))
+
+        monkeypatch.setattr(proxy, "_notify_user_blocked", fake_notify_blocked)
+
+        response = _wrap_response(
+            _make_update(
+                "So some research and tell me the leading academics researching solid state transformers",
+                user_id=self.COLLAB,
+                chat_id=int(self.COLLAB),
+            )
+        )
+        result = await proxy._filter_inbound_updates(response)
+
+        assert result["result"], "full_access collaborator message must not be dropped by middleware"
+        assert not block_notices, (
+            f"full_access collaborator must not receive a block notice; got: {block_notices}"
+        )
+
+    @pytest.mark.asyncio
+    async def test_full_access_collaborator_passes_despite_multi_turn_middleware_block_without_interrogative(
+        self, monkeypatch
+    ):
+        """full_access bypass applies even when the message has no interrogative marker.
+
+        This is the exact Brett scenario: the middleware blocks with a "multi-turn" reason
+        but the message uses imperative phrasing ("So some research and tell me...") rather
+        than a question, so _looks_like_safe_collaborator_info_query returns False.
+        Before the fix, this combination caused the bypass to fail and the message to be
+        silently blocked with "This action is not allowed.".
+        """
+        from gateway.ingest_api.middleware import MiddlewareResult
+
+        class MultiTurnBlockingMiddleware:
+            async def process_request(self, request_data, session_id):
+                return MiddlewareResult(
+                    allowed=False,
+                    reason="multi-turn disclosure: repeated context switch detected",
+                )
+
+        monkeypatch.setenv("AGENTSHROUD_COLLAB_LOCAL_INFO_ONLY", "0")
+        proxy = TelegramAPIProxy(middleware_manager=MultiTurnBlockingMiddleware())
+        proxy._rbac = FakeRBAC(owner_id=self.OWNER, collaborators=[self.COLLAB])
+        proxy._bot_token = ""
+
+        block_notices: list[str] = []
+
+        async def fake_notify_blocked(chat_id, reason):
+            block_notices.append(str(reason))
+
+        monkeypatch.setattr(proxy, "_notify_user_blocked", fake_notify_blocked)
+
+        # Imperative phrasing — no "?", "how", "what", "why" → _looks_like_safe_collaborator_info_query = False
+        assert not TelegramAPIProxy._looks_like_safe_collaborator_info_query(
+            "So some research and tell me the leading academics researching solid state transformers"
+        ), "Precondition: this message must NOT pass _looks_like_safe_collaborator_info_query"
+
+        response = _wrap_response(
+            _make_update(
+                "So some research and tell me the leading academics researching solid state transformers",
+                user_id=self.COLLAB,
+                chat_id=int(self.COLLAB),
+            )
+        )
+        result = await proxy._filter_inbound_updates(response)
+
+        assert result["result"], (
+            "full_access collaborator message with imperative phrasing must not be dropped "
+            "by multi-turn middleware block"
+        )
+        assert not block_notices, (
+            f"full_access collaborator must not receive a block notice; got: {block_notices}"
+        )
+
+    @pytest.mark.asyncio
+    async def test_project_scoped_collaborator_still_blocked_by_middleware(self, monkeypatch):
+        """project_scoped collaborators are still blocked when middleware blocks (non-multi-turn)."""
+        from gateway.ingest_api.middleware import MiddlewareResult
+
+        class BlockingMiddleware:
+            async def process_request(self, request_data, session_id):
+                return MiddlewareResult(allowed=False, reason="RBAC: insufficient permissions")
+
+        proxy = TelegramAPIProxy(middleware_manager=BlockingMiddleware())
+        proxy._rbac = FakeRBAC(owner_id=self.OWNER, collaborators=[self.COLLAB])
+        proxy._bot_token = ""
+
+        monkeypatch.setattr(proxy, "_resolve_collaborator_mode", lambda uid: "project_scoped")
+        monkeypatch.setattr(proxy, "_is_within_project_scope", lambda text, projects: True)
+        monkeypatch.setattr(proxy, "_get_user_projects", lambda uid: ["test-project"])
+
+        block_notices: list[str] = []
+
+        async def fake_notify_blocked(chat_id, reason):
+            block_notices.append(str(reason or ""))
+
+        monkeypatch.setattr(proxy, "_notify_user_blocked", fake_notify_blocked)
+
+        response = _wrap_response(
+            _make_update(
+                "Tell me about solid state transformers",
+                user_id=self.COLLAB,
+                chat_id=int(self.COLLAB),
+            )
+        )
+        result = await proxy._filter_inbound_updates(response)
+
+        assert not result["result"], "project_scoped collaborator must be blocked by middleware"
+        assert block_notices, "project_scoped collaborator must receive a block notice"
