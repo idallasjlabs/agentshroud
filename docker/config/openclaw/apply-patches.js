@@ -74,6 +74,10 @@ if (!config.agents.defaults.models[MAIN_MODEL]) {
   config.agents.defaults.models[MAIN_MODEL] = { alias: 'local-qwen' };
   changed = true;
 }
+if (!config.agents.defaults.timeoutSeconds || config.agents.defaults.timeoutSeconds < 300) {
+  config.agents.defaults.timeoutSeconds = 300;
+  changed = true;
+}
 
 // Patch 0b: models.providers.ollama fallback registration.
 // This gives OpenClaw an explicit provider + model definition even if dynamic

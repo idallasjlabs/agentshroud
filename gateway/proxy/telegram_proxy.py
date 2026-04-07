@@ -6053,12 +6053,17 @@ class TelegramAPIProxy:
                         else:
                             reason_text = result.reason or ""
                             if (
-                                "multi-turn" in reason_text.lower()
-                                and self._looks_like_safe_collaborator_info_query(text)
+                                self._resolve_collaborator_mode(user_id) == "full_access"
+                                or (
+                                    "multi-turn" in reason_text.lower()
+                                    and self._looks_like_safe_collaborator_info_query(text)
+                                )
                             ):
                                 logger.info(
-                                    "Allowing collaborator conceptual query despite multi-turn middleware block (%s)",
+                                    "Allowing collaborator message despite middleware block"
+                                    " (mode=full_access or multi-turn conceptual query) (%s): %s",
                                     user_id,
+                                    reason_text,
                                 )
                             else:
                                 logger.warning(
@@ -6113,12 +6118,17 @@ class TelegramAPIProxy:
                         else:
                             block_reason = pipeline_result.block_reason or ""
                             if (
-                                "multi-turn" in block_reason.lower()
-                                and self._looks_like_safe_collaborator_info_query(text)
+                                self._resolve_collaborator_mode(user_id) == "full_access"
+                                or (
+                                    "multi-turn" in block_reason.lower()
+                                    and self._looks_like_safe_collaborator_info_query(text)
+                                )
                             ):
                                 logger.info(
-                                    "Allowing collaborator conceptual query despite multi-turn pipeline block (%s)",
+                                    "Allowing collaborator message despite pipeline block"
+                                    " (mode=full_access or multi-turn conceptual query) (%s): %s",
                                     user_id,
+                                    block_reason,
                                 )
                                 filtered_updates.append(update)
                                 continue
