@@ -2967,13 +2967,20 @@ class TelegramAPIProxy:
                                 "Switch to a tool-capable model."
                             )
                     elif tool_name == "web_fetch":
+                        _is_full_access_fetch = (
+                            not is_owner_chat
+                            and self._resolve_collaborator_mode(chat_id) == "full_access"
+                        )
                         approval_queued = await self._trigger_web_fetch_approval(chat_id, tool_args)
                         if not is_owner_chat:
-                            data[text_key] = (
-                                _COLLABORATOR_EGRESS_NOTICE
-                                if approval_queued
-                                else self._collaborator_safe_notice("web access unavailable")
-                            )
+                            if _is_full_access_fetch:
+                                data[text_key] = self._collaborator_safe_notice("web fetch in progress")
+                            else:
+                                data[text_key] = (
+                                    _COLLABORATOR_EGRESS_NOTICE
+                                    if approval_queued
+                                    else self._collaborator_safe_notice("web access unavailable")
+                                )
                         else:
                             approval_note = (
                                 " Approval request queued for this destination."
@@ -3409,13 +3416,20 @@ class TelegramAPIProxy:
                                 "Switch to a tool-capable model (e.g., scripts/switch_model.sh gemini or local qwen3:14b once pulled)."
                             )
                     elif tool_name == "web_fetch":
+                        _is_full_access_fetch = (
+                            not is_owner_chat
+                            and self._resolve_collaborator_mode(chat_id) == "full_access"
+                        )
                         approval_queued = await self._trigger_web_fetch_approval(chat_id, tool_args)
                         if not is_owner_chat:
-                            data[text_key] = (
-                                _COLLABORATOR_EGRESS_NOTICE
-                                if approval_queued
-                                else self._collaborator_safe_notice("web access unavailable")
-                            )
+                            if _is_full_access_fetch:
+                                data[text_key] = self._collaborator_safe_notice("web fetch in progress")
+                            else:
+                                data[text_key] = (
+                                    _COLLABORATOR_EGRESS_NOTICE
+                                    if approval_queued
+                                    else self._collaborator_safe_notice("web access unavailable")
+                                )
                         else:
                             approval_note = (
                                 " Approval request queued for this destination."
