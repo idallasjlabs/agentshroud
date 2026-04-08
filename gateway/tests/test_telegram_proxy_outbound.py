@@ -3543,6 +3543,103 @@ class TestOutboundPipelineIntegration:
         assert result["error_code"] == 500
 
 
+class TestWebSearchLog:
+    """Tests for _trigger_web_search_log and raw web_search JSON outbound handling."""
+
+    @pytest.mark.asyncio
+    async def test_web_search_log_called_with_correct_params(self, monkeypatch):
+        """_trigger_web_search_log calls log_external_decision with Brave domain and query."""
+        log_calls = []
+
+        class _MockAQ:
+            def log_external_decision(self, **kwargs):
+                log_calls.append(kwargs)
+
+        class _MockEgress:
+            _approval_queue = _MockAQ()
+
+        from gateway.ingest_api import state as state_module
+
+        monkeypatch.setattr(state_module, "app_state", SimpleNamespace(egress_filter=_MockEgress()))
+        proxy = TelegramAPIProxy(sanitizer=_make_sanitizer())
+        await proxy._trigger_web_search_log("8096968754", {"query": "BESS alarm count"})
+
+        assert len(log_calls) == 1
+        call = log_calls[0]
+        assert call["domain"] == "api.search.brave.com"
+        assert call["decision"] == "allow"
+        assert "8096968754" in call["agent_id"]
+        assert "BESS alarm count" in call["reason"]
+
+    @pytest.mark.asyncio
+    async def test_web_search_no_egress_filter(self, monkeypatch):
+        """_trigger_web_search_log returns silently when egress_filter is None."""
+        from gateway.ingest_api import state as state_module
+
+        monkeypatch.setattr(state_module, "app_state", SimpleNamespace(egress_filter=None))
+        proxy = TelegramAPIProxy(sanitizer=_make_sanitizer())
+        # Must not raise
+        await proxy._trigger_web_search_log("123", {"query": "test"})
+
+    @pytest.mark.asyncio
+    async def test_web_search_query_truncation(self, monkeypatch):
+        """Queries longer than 200 chars are truncated in the SOC log reason."""
+        log_calls = []
+
+        class _MockAQ:
+            def log_external_decision(self, **kwargs):
+                log_calls.append(kwargs)
+
+        class _MockEgress:
+            _approval_queue = _MockAQ()
+
+        from gateway.ingest_api import state as state_module
+
+        monkeypatch.setattr(state_module, "app_state", SimpleNamespace(egress_filter=_MockEgress()))
+        proxy = TelegramAPIProxy(sanitizer=_make_sanitizer())
+        long_query = "x" * 300
+        await proxy._trigger_web_search_log("123", {"query": long_query})
+
+        assert len(log_calls) == 1
+        # Reason embeds the truncated query (max 200 chars)
+        reason = log_calls[0]["reason"]
+        assert len(reason) < 300
+
+    @pytest.mark.asyncio
+    async def test_raw_web_search_json_owner_message(self):
+        """Owner chat: raw web_search JSON produces 'Switch to tool-capable model' message."""
+        proxy = TelegramAPIProxy(sanitizer=_make_sanitizer())
+        body = json.dumps(
+            {
+                "chat_id": "8096968754",
+                "text": '{"name":"web_search","arguments":{"query":"BESS alarms"}}',
+            }
+        ).encode()
+        result = json.loads(await proxy._filter_outbound(body, "application/json"))
+        assert "web search" in result["text"].lower() or "switch" in result["text"].lower()
+        assert "web_search" not in result["text"]
+
+    @pytest.mark.asyncio
+    async def test_raw_web_search_json_collaborator_safe_notice(self):
+        """Collaborator chat: raw web_search JSON produces a safe notice."""
+        proxy = TelegramAPIProxy(sanitizer=_make_sanitizer())
+
+        class _MockRBAC:
+            owner_user_id = "8096968754"
+
+        proxy._rbac = _MockRBAC()
+        body = json.dumps(
+            {
+                "chat_id": "9999999999",  # not the owner
+                "text": '{"name":"web_search","arguments":{"query":"BESS alarms"}}',
+            }
+        ).encode()
+        result = json.loads(await proxy._filter_outbound(body, "application/json"))
+        # Must not expose raw tool JSON to collaborators
+        assert "web_search" not in result["text"]
+        assert "arguments" not in result["text"]
+
+
 class TestRuntimeRewriteHelpers:
     """Unit tests for deterministic runtime error rewrite helper behavior."""
 
