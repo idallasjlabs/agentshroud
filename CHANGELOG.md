@@ -63,7 +63,7 @@ documented. FR 2 updated: ToolACL tiers, ProgressiveLockdown, EnhancedApprovalQu
   bookworm `gpgv` clearsign bug requires bypassing apt GPG verification for 1Password/Wazuh apt
   sources. Individual package hashes still verified. Remove when upstream ships a fix.
 - **FR 1 MFA gap** — No native MFA layer for sensitive operations (kill switch, SSH); relies on
-  Telegram's own 2FA. Deferred to v1.1.0.
+  Telegram's own 2FA. Deferred to v1.3.0.
 - **FR 5 DMZ gap** — Network policies and dedicated DMZ require multi-node deployment. Deferred.
 
 ---
