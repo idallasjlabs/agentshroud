@@ -12,6 +12,7 @@ Usage: scripts/switch_model.sh <target> [model_ref] [--wait]
 
 Targets:
   local       Use local Ollama model (qwen3:14b)
+  local-multi Use 3 local LLMs: Anchor (LM Studio:1234) + Coding (LM Studio:1234) + Reasoning (mlx_lm:8234)
   gemini      Use Google Gemini cloud model (gemini-2.5-flash)
   anthropic   Use Anthropic cloud model (claude-opus-4-6)
   openai      Use OpenAI cloud model (gpt-4o-mini)
@@ -20,6 +21,7 @@ Examples:
   scripts/switch_model.sh local
   scripts/switch_model.sh local qwen3:14b
   scripts/switch_model.sh local qwen3:14b --wait
+  scripts/switch_model.sh local-multi
   scripts/switch_model.sh gemini
   scripts/switch_model.sh openai openai/gpt-4.1-mini
 EOF
@@ -59,6 +61,10 @@ CLOUD_REF="anthropic/claude-opus-4-6"
 OPENCLAW_MAIN_MODEL=""
 LOCAL_MODEL_NAME="qwen3:14b"
 OLLAMA_PROVIDER_API="ollama"
+LMSTUDIO_API_BASE="${LMSTUDIO_API_BASE:-http://host.docker.internal:1234}"
+MLXLM_API_BASE="${MLXLM_API_BASE:-http://host.docker.internal:8234}"
+ANCHOR_MODEL="${AGENTSHROUD_ANCHOR_MODEL:-qwen3.5:27b}"
+CODING_MODEL="${AGENTSHROUD_CODING_MODEL:-qwen2.5-coder:32b}"
 
 case "$TARGET" in
   local)
@@ -67,6 +73,23 @@ case "$TARGET" in
     CLOUD_REF="anthropic/claude-opus-4-6"
     OPENCLAW_MAIN_MODEL="ollama/qwen3:14b"
     LOCAL_MODEL_NAME="qwen3:14b"
+    if [[ -n "${CUSTOM_MODEL_REF}" ]]; then
+      if [[ "${CUSTOM_MODEL_REF}" == ollama/* ]]; then
+        LOCAL_REF="${CUSTOM_MODEL_REF}"
+      else
+        LOCAL_REF="ollama/${CUSTOM_MODEL_REF}"
+      fi
+      OPENCLAW_MAIN_MODEL="${LOCAL_REF}"
+      LOCAL_MODEL_NAME="${LOCAL_REF#ollama/}"
+    fi
+    ;;
+  local-multi)
+    MODEL_MODE="local-multi"
+    # Anchor model is the default OpenClaw agent model; all 3 models run under Ollama.
+    # DeepSeek-R1 (Reasoning) routes to mlx_lm via LOCAL_MODEL_ROUTES in llm_proxy.py.
+    LOCAL_REF="ollama/${ANCHOR_MODEL}"
+    OPENCLAW_MAIN_MODEL="ollama/${ANCHOR_MODEL}"
+    LOCAL_MODEL_NAME="${ANCHOR_MODEL}"
     if [[ -n "${CUSTOM_MODEL_REF}" ]]; then
       if [[ "${CUSTOM_MODEL_REF}" == ollama/* ]]; then
         LOCAL_REF="${CUSTOM_MODEL_REF}"
@@ -167,6 +190,8 @@ upsert_env_value() {
 
 if [[ "${MODEL_MODE}" == "local" ]]; then
   ensure_local_model_available "${LOCAL_MODEL_NAME}"
+elif [[ "${MODEL_MODE}" == "local-multi" ]]; then
+  echo "[switch-model] local-multi: verify LM Studio is running on ${LMSTUDIO_API_BASE} and mlx_lm on ${MLXLM_API_BASE}"
 fi
 
 echo "[switch-model] target=${TARGET} mode=${MODEL_MODE} model=${OPENCLAW_MAIN_MODEL}"
@@ -181,6 +206,12 @@ upsert_env_value "${MODEL_ENV_FILE}" "OPENCLAW_OLLAMA_API" "${OLLAMA_PROVIDER_AP
 if [[ "${MODEL_MODE}" == "local" ]]; then
   upsert_env_value "${MODEL_ENV_FILE}" "OLLAMA_API_KEY" "${OLLAMA_API_KEY:-ollama-local}"
 fi
+if [[ "${MODEL_MODE}" == "local-multi" ]]; then
+  upsert_env_value "${MODEL_ENV_FILE}" "LMSTUDIO_API_BASE" "${LMSTUDIO_API_BASE}"
+  upsert_env_value "${MODEL_ENV_FILE}" "MLXLM_API_BASE" "${MLXLM_API_BASE}"
+  upsert_env_value "${MODEL_ENV_FILE}" "AGENTSHROUD_ANCHOR_MODEL" "${ANCHOR_MODEL}"
+  upsert_env_value "${MODEL_ENV_FILE}" "AGENTSHROUD_CODING_MODEL" "${CODING_MODEL}"
+fi
 echo "[switch-model] persisted model profile to ${MODEL_ENV_FILE}"
 
 cd "${REPO_ROOT}"
@@ -191,6 +222,10 @@ AGENTSHROUD_LOCAL_MODEL="${LOCAL_MODEL_NAME}" \
 OPENCLAW_MAIN_MODEL="${OPENCLAW_MAIN_MODEL}" \
 OPENCLAW_OLLAMA_API="${OLLAMA_PROVIDER_API}" \
 OLLAMA_API_KEY="${OLLAMA_API_KEY:-ollama-local}" \
+LMSTUDIO_API_BASE="${LMSTUDIO_API_BASE}" \
+MLXLM_API_BASE="${MLXLM_API_BASE}" \
+AGENTSHROUD_ANCHOR_MODEL="${ANCHOR_MODEL}" \
+AGENTSHROUD_CODING_MODEL="${CODING_MODEL}" \
 OPENCLAW_GATEWAY_BIND="${OPENCLAW_GATEWAY_BIND:-lan}" \
 docker compose -f "${COMPOSE_FILE}" up -d --force-recreate gateway bot
 
