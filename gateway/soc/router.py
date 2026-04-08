@@ -15,6 +15,7 @@ from __future__ import annotations
 
 import asyncio
 import json
+import hashlib
 import logging
 import os
 import urllib.error
@@ -2095,6 +2096,19 @@ async def trigger_cve_report(caller: SCLCaller = Depends(get_caller)) -> Dict:
 _GH_RELEASES_API = "https://api.github.com/repos/idallasjlabs/agentshroud/releases/latest"
 _CURRENT_VERSION = "1.0.0"
 
+# Content-hash cache busters for static assets — recomputed at import time so
+# any change to soc.js / soc.css produces a new hash and busts browser caches.
+_soc_static_dir = Path(__file__).parent / "static"
+
+
+def _file_hash(name: str) -> str:
+    p = _soc_static_dir / name
+    return hashlib.md5(p.read_bytes()).hexdigest()[:8] if p.exists() else "0"
+
+
+_SOC_JS_HASH = _file_hash("soc.js")
+_SOC_CSS_HASH = _file_hash("soc.css")
+
 
 def _fetch_latest_release() -> Dict:
     """Query GitHub releases API. Returns {"tag_name": ..., "html_url": ...} or {"error": ...}."""
@@ -2419,12 +2433,11 @@ async def soc_websocket(websocket: WebSocket):
 async def soc_dashboard(request: Request):
     """Serve the unified SOC web dashboard."""
     template_path = Path(__file__).parent / "templates" / "soc.html"
-    _v = _CURRENT_VERSION.replace(".", "") + "b"
     if template_path.exists():
         html = template_path.read_text()
-        # Inject version query param for cache-busting on each release
-        html = html.replace('/soc/static/soc.js"', f'/soc/static/soc.js?v={_v}"')
-        html = html.replace('/soc/static/soc.css"', f'/soc/static/soc.css?v={_v}"')
+        # Inject content-hash query params for cache-busting on every build
+        html = html.replace('/soc/static/soc.js"', f'/soc/static/soc.js?v={_SOC_JS_HASH}"')
+        html = html.replace('/soc/static/soc.css"', f'/soc/static/soc.css?v={_SOC_CSS_HASH}"')
         return HTMLResponse(
             content=html,
             headers={"Cache-Control": "no-cache, no-store, must-revalidate"},

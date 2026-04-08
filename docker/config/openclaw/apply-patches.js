@@ -133,11 +133,10 @@ const COLLABORATOR_IDS = {
 };
 const OWNER_TELEGRAM_ID = '8096968754';
 
-// Collaborator tool restriction: use the most restrictive built-in profile ('minimal')
-// plus an explicit deny list for the highest-risk capabilities.
-// NOTE: OpenClaw does not support profile:'none'. 'minimal' is the most restricted
-// available profile. The deny list covers capabilities that minimal may still expose.
-const _COLLAB_TOOL_ALLOW = null; // unused; kept for reference
+// Collaborator tool restriction profiles.
+// OpenClaw supports 4 profiles: 'minimal', 'coding', 'messaging', 'full'.
+// 'minimal' → file tools only (read/write/edit). 'full' → all tools including web_search, web_fetch.
+// Restrictive/project_scoped tier uses 'minimal'; full_access tier uses 'full'.
 const _COLLAB_TOOL_DENY = [
   'exec', 'process', 'gateway', 'cron', 'message',
   'sessions_spawn', 'sessions_send', 'subagents',
@@ -147,8 +146,8 @@ const _COLLAB_TOOL_DENY = [
   'image', 'web_fetch', 'web_search',
 ];
 
-// full_access tier: allows web_search, web_fetch, tts, pdf, image, browser.
-// Still denies exec/process/gateway/cron/session management and agent introspection.
+// full_access tier: profile:'full' provides web_search/web_fetch.
+// Deny list still blocks exec/process/gateway/cron/sessions/agent introspection.
 const _COLLAB_TOOL_DENY_FULL_ACCESS = [
   'exec', 'process', 'gateway', 'cron', 'message',
   'sessions_spawn', 'sessions_send', 'subagents',
@@ -158,7 +157,7 @@ const _COLLAB_TOOL_DENY_FULL_ACCESS = [
   'canvas',
 ];
 
-// Parse TEAMS_JSON early so _resolveCollabDenyList can inspect group collab_mode
+// Parse TEAMS_JSON early so _resolveCollabToolConfig can inspect group collab_mode
 // before per-collaborator agents are created. Patch 1c will reuse this variable.
 const TEAMS_JSON_RAW = process.env.AGENTSHROUD_TEAMS_JSON || '';
 let _teamsJsonParsed = null;
@@ -167,31 +166,56 @@ try { if (TEAMS_JSON_RAW) _teamsJsonParsed = JSON.parse(TEAMS_JSON_RAW); } catch
 const COLLAB_LOCAL_INFO_ONLY = (process.env.AGENTSHROUD_COLLAB_LOCAL_INFO_ONLY || '1').trim().toLowerCase();
 const _is_global_full_access = ['0', 'false', 'no'].includes(COLLAB_LOCAL_INFO_ONLY);
 
-function _resolveCollabDenyList(uid, teamsJson) {
-  if (uid && teamsJson && teamsJson.groups) {
+// Load per-user mode overrides from group_overrides.json (gateway-data volume).
+let _userOverrides = {};
+try {
+  const _overridesPath = '/home/node/agentshroud/gateway-data/group_overrides.json';
+  const _overridesRaw = require('fs').readFileSync(_overridesPath, 'utf-8');
+  _userOverrides = JSON.parse(_overridesRaw).__user_overrides__ || {};
+} catch (e) { /* file may not exist yet */ }
+
+// Resolve tool config (profile + deny list) for a collaborator.
+// Priority: per-user override in group_overrides.json → group collab_mode → global env var.
+function _resolveCollabToolConfig(uid, teamsJson) {
+  let isFullAccess = false;
+  // 1. Per-user override
+  if (uid && _userOverrides[uid] && _userOverrides[uid].collab_mode === 'full_access') {
+    isFullAccess = true;
+  }
+  // 2. Group membership
+  if (!isFullAccess && uid && teamsJson && teamsJson.groups) {
     for (const g of Object.values(teamsJson.groups)) {
       if (g.members && g.members.includes(uid) && g.collab_mode === 'full_access') {
-        return _COLLAB_TOOL_DENY_FULL_ACCESS;
+        isFullAccess = true;
+        break;
       }
     }
   }
-  if (_is_global_full_access) return _COLLAB_TOOL_DENY_FULL_ACCESS;
-  return _COLLAB_TOOL_DENY;
+  // 3. Global env var fallback
+  if (!isFullAccess) isFullAccess = _is_global_full_access;
+  return isFullAccess
+    ? { profile: 'full', deny: _COLLAB_TOOL_DENY_FULL_ACCESS }
+    : { profile: 'minimal', deny: _COLLAB_TOOL_DENY };
+}
+
+// Backward-compat: keep old name as alias
+function _resolveCollabDenyList(uid, teamsJson) {
+  return _resolveCollabToolConfig(uid, teamsJson).deny;
 }
 
 const cIdx = config.agents.list.findIndex((a) => a.id === 'collaborator');
-const _genericCollabDeny = _is_global_full_access ? _COLLAB_TOOL_DENY_FULL_ACCESS : _COLLAB_TOOL_DENY;
+const { profile: _genericProfile, deny: _genericCollabDeny } = _resolveCollabToolConfig(null, _teamsJsonParsed);
 if (cIdx < 0) {
   config.agents.list.push({
     id: 'collaborator',
     name: 'AgentShroud Collaborator',
     model: MAIN_MODEL,
-    tools: { profile: 'minimal', deny: _genericCollabDeny },
+    tools: { profile: _genericProfile, deny: _genericCollabDeny },
     skills: [],
     workspace: '.agentshroud/collaborator-workspace',
     memorySearch: { enabled: false },
   });
-  console.log(`[init-patch] Added collaborator agent (${MAIN_MODEL}, restricted tools)`);
+  console.log(`[init-patch] Added collaborator agent (${MAIN_MODEL}, profile:${_genericProfile})`);
   changed = true;
 } else {
   if (config.agents.list[cIdx].model !== MAIN_MODEL) {
@@ -208,11 +232,11 @@ if (cIdx < 0) {
     console.log('[init-patch] Migrated collaborator workspace to .agentshroud/collaborator-workspace');
     changed = true;
   }
-  // Ensure tools config is current (profile:minimal + correct tier deny list)
+  // Ensure tools config is current (correct profile + tier deny list)
   const existingTools = config.agents.list[cIdx].tools || {};
-  if (existingTools.profile !== 'minimal' || existingTools.allow || JSON.stringify(existingTools.deny) !== JSON.stringify(_genericCollabDeny)) {
-    config.agents.list[cIdx].tools = { profile: 'minimal', deny: _genericCollabDeny };
-    console.log('[init-patch] Updated collaborator agent tools to profile:minimal + deny list');
+  if (existingTools.profile !== _genericProfile || existingTools.allow || JSON.stringify(existingTools.deny) !== JSON.stringify(_genericCollabDeny)) {
+    config.agents.list[cIdx].tools = { profile: _genericProfile, deny: _genericCollabDeny };
+    console.log(`[init-patch] Updated collaborator agent tools to profile:${_genericProfile} + deny list`);
     changed = true;
   }
 }
@@ -240,29 +264,29 @@ if (!hasOwnerBinding) {
 for (const [collabId, collabName] of Object.entries(COLLABORATOR_IDS)) {
   const agentId = `collab-${collabId}`;
   const agentIdx = config.agents.list.findIndex((a) => a.id === agentId);
-  const _collabDeny = _resolveCollabDenyList(collabId, _teamsJsonParsed);
+  const { profile: _collabProfile, deny: _collabDeny } = _resolveCollabToolConfig(collabId, _teamsJsonParsed);
   if (agentIdx < 0) {
     config.agents.list.push({
       id: agentId,
       name: `${collabName} (Collaborator)`,
       model: MAIN_MODEL,
-      tools: { profile: 'minimal', deny: _collabDeny },
+      tools: { profile: _collabProfile, deny: _collabDeny },
       skills: [],
       workspace: `.agentshroud/collab-${collabId}`,
       memorySearch: { enabled: false },
     });
-    console.log(`[init-patch] Added per-collaborator agent: ${agentId} (${collabName})`);
+    console.log(`[init-patch] Added per-collaborator agent: ${agentId} (${collabName}, profile:${_collabProfile})`);
     changed = true;
   } else {
     if (config.agents.list[agentIdx].model !== MAIN_MODEL) {
       config.agents.list[agentIdx].model = MAIN_MODEL;
       changed = true;
     }
-    // Fix any agent with invalid profile or wrong tier deny list
+    // Fix any agent with wrong profile or wrong tier deny list
     const existingTools = config.agents.list[agentIdx].tools || {};
-    if (existingTools.profile === 'none' || existingTools.allow || JSON.stringify(existingTools.deny) !== JSON.stringify(_collabDeny)) {
-      config.agents.list[agentIdx].tools = { profile: 'minimal', deny: _collabDeny };
-      console.log(`[init-patch] Fixed ${agentId} tools: restored profile:minimal + tier deny list`);
+    if (existingTools.profile !== _collabProfile || existingTools.allow || JSON.stringify(existingTools.deny) !== JSON.stringify(_collabDeny)) {
+      config.agents.list[agentIdx].tools = { profile: _collabProfile, deny: _collabDeny };
+      console.log(`[init-patch] Fixed ${agentId} tools: profile:${_collabProfile} + tier deny list`);
       changed = true;
     }
   }
