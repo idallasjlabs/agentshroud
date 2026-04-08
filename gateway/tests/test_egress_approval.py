@@ -331,6 +331,66 @@ class TestEgressApprovalQueue:
         result = await approval_queue.request_approval("example.com", 443, "agent1", "web_fetch")
         assert result == ApprovalResult.DENIED
 
+    def test_log_external_decision_basic(self, approval_queue):
+        """log_external_decision appends an entry to the decision log."""
+        approval_queue.log_external_decision(
+            domain="api.search.brave.com",
+            decision="allow",
+            agent_id="telegram_web_search:123",
+            reason="web_search query",
+        )
+        log = approval_queue._decision_log
+        assert len(log) == 1
+        entry = log[0]
+        assert entry["domain"] == "api.search.brave.com"
+        assert entry["decision"] == "allow"
+        assert entry["agent_id"] == "telegram_web_search:123"
+        assert entry["reason"] == "web_search query"
+        assert entry["decided_by"] == "egress_filter"
+
+    def test_log_external_decision_throttle_same_agent_domain(self, approval_queue):
+        """Second call within 1 hour for the same (agent_id, domain) is suppressed."""
+        approval_queue.log_external_decision(
+            domain="api.search.brave.com",
+            decision="allow",
+            agent_id="telegram_web_search:123",
+        )
+        approval_queue.log_external_decision(
+            domain="api.search.brave.com",
+            decision="allow",
+            agent_id="telegram_web_search:123",
+        )
+        assert len(approval_queue._decision_log) == 1
+
+    def test_log_external_decision_different_agent_same_domain(self, approval_queue):
+        """Different agent_ids for the same domain each produce their own log entry."""
+        approval_queue.log_external_decision(
+            domain="api.search.brave.com",
+            decision="allow",
+            agent_id="telegram_web_search:111",
+        )
+        approval_queue.log_external_decision(
+            domain="api.search.brave.com",
+            decision="allow",
+            agent_id="telegram_web_search:222",
+        )
+        assert len(approval_queue._decision_log) == 2
+        agent_ids = {e["agent_id"] for e in approval_queue._decision_log}
+        assert "telegram_web_search:111" in agent_ids
+        assert "telegram_web_search:222" in agent_ids
+
+    def test_log_external_decision_cap(self, approval_queue):
+        """Decision log is capped at 500 entries."""
+        for i in range(510):
+            # Use unique agent_ids to bypass throttle
+            approval_queue._external_decision_throttle.clear()
+            approval_queue.log_external_decision(
+                domain=f"domain-{i}.com",
+                decision="allow",
+                agent_id=f"agent-{i}",
+            )
+        assert len(approval_queue._decision_log) <= 500
+
 
 class TestEgressApprovalAPI:
     """Test suite for egress approval API endpoints."""
