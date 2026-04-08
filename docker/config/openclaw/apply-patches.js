@@ -53,6 +53,14 @@ const OLLAMA_BASE_URL = /\/v1\/?$/i.test(OLLAMA_BASE_URL_RAW)
   ? OLLAMA_BASE_URL_RAW.replace(/\/+$/, '')
   : `${OLLAMA_BASE_URL_RAW.replace(/\/+$/, '')}/v1`;
 
+// LM Studio provider (Anchor + Coding models via OpenAI-compatible API on port 1234)
+const LMSTUDIO_BASE_URL_RAW = process.env.LMSTUDIO_API_BASE || 'http://host.docker.internal:1234';
+const LMSTUDIO_BASE_URL = /\/v1\/?$/i.test(LMSTUDIO_BASE_URL_RAW)
+  ? LMSTUDIO_BASE_URL_RAW.replace(/\/+$/, '')
+  : `${LMSTUDIO_BASE_URL_RAW.replace(/\/+$/, '')}/v1`;
+const LMSTUDIO_ANCHOR_MODEL = process.env.AGENTSHROUD_ANCHOR_MODEL || 'qwen3.5:27b';
+const LMSTUDIO_CODING_MODEL = process.env.AGENTSHROUD_CODING_MODEL || 'qwen2.5-coder:32b';
+
 // Patch 0: agents.defaults.model (startup/default model resolution path)
 config.agents = config.agents || {};
 config.agents.defaults = config.agents.defaults || {};
@@ -82,25 +90,76 @@ if (!config.agents.defaults.timeoutSeconds || config.agents.defaults.timeoutSeco
 // Patch 0b: models.providers.ollama fallback registration.
 // This gives OpenClaw an explicit provider + model definition even if dynamic
 // model discovery is unavailable at startup.
+// In local-multi mode all 3 models (Anchor, Coding, Reasoning) run under Ollama.
 config.models = config.models || {};
 config.models.providers = config.models.providers || {};
 const currentOllama = config.models.providers.ollama || {};
-const desiredOllamaModel = {
-  id: LOCAL_MODEL_NAME,
-  name: LOCAL_MODEL_NAME,
-  reasoning: false,
-  input: ['text'],
-  contextWindow: 128000,
-  maxTokens: 8192,
-};
+const ollamaModels = [
+  {
+    id: LOCAL_MODEL_NAME,
+    name: LOCAL_MODEL_NAME,
+    reasoning: false,
+    input: ['text'],
+    contextWindow: 128000,
+    maxTokens: 8192,
+  },
+];
+if (MODEL_MODE === 'local-multi') {
+  const ANCHOR_MODEL_NAME = process.env.AGENTSHROUD_ANCHOR_MODEL || 'qwen3.5:27b';
+  const CODING_MODEL_NAME = process.env.AGENTSHROUD_CODING_MODEL || 'qwen2.5-coder:32b';
+  const REASONING_MODEL_NAME = process.env.AGENTSHROUD_REASONING_MODEL || 'deepseek-r1';
+  for (const [id, label, reasoning] of [
+    [ANCHOR_MODEL_NAME, 'Anchor', false],
+    [CODING_MODEL_NAME, 'Coding', false],
+    [REASONING_MODEL_NAME, 'Reasoning', true],
+  ]) {
+    if (!ollamaModels.some((m) => m.id === id)) {
+      ollamaModels.push({ id, name: label + ' (' + id + ')', reasoning, input: ['text'], contextWindow: 32768, maxTokens: 8192 });
+    }
+  }
+}
 const desiredOllama = {
   baseUrl: OLLAMA_BASE_URL,
   api: OLLAMA_PROVIDER_API,
-  models: [desiredOllamaModel],
+  models: ollamaModels,
 };
 if (JSON.stringify(currentOllama) !== JSON.stringify(desiredOllama)) {
   config.models.providers.ollama = desiredOllama;
   changed = true;
+}
+
+// Patch 0c: models.providers.lmstudio — only registered when LMSTUDIO_API_BASE is
+// explicitly set (i.e. user has LM Studio running alongside Ollama).
+// In the default local-multi setup all models run under Ollama; this block is a no-op.
+if (process.env.LMSTUDIO_API_BASE) {
+  const currentLmStudio = config.models.providers.lmstudio || {};
+  const desiredLmStudio = {
+    baseUrl: LMSTUDIO_BASE_URL,
+    api: 'openai',
+    models: [
+      {
+        id: LMSTUDIO_ANCHOR_MODEL,
+        name: 'Anchor (' + LMSTUDIO_ANCHOR_MODEL + ')',
+        reasoning: false,
+        input: ['text'],
+        contextWindow: 32768,
+        maxTokens: 8192,
+      },
+      {
+        id: LMSTUDIO_CODING_MODEL,
+        name: 'Coding (' + LMSTUDIO_CODING_MODEL + ')',
+        reasoning: false,
+        input: ['text'],
+        contextWindow: 32768,
+        maxTokens: 8192,
+      },
+    ],
+  };
+  if (JSON.stringify(currentLmStudio) !== JSON.stringify(desiredLmStudio)) {
+    config.models.providers.lmstudio = desiredLmStudio;
+    console.log('[init-patch] Registered LM Studio provider with Anchor + Coding models');
+    changed = true;
+  }
 }
 
 // Patch 1: agents.list
