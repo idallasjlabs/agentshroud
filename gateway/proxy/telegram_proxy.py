@@ -224,6 +224,15 @@ _DISCLOSURE_MESSAGE = (
     "have access to the full command set\\._"
 )
 
+_DISCLOSURE_MESSAGE_FULL_ACCESS = (
+    "\U0001f6e1\ufe0f *AgentShroud Notice*\n\n"
+    "This conversation is logged and may be reviewed as part of the AgentShroud\u2122 "
+    "project\\. By continuing, you acknowledge this\\. Questions? Reach out to Isaiah directly\\.\n\n"
+    "_You have general access \u2014 I can help with research, technical questions, "
+    "and a wide range of topics\\. Some bot commands and system\\-level operations "
+    "remain owner\\-gated\\._"
+)
+
 _PROTECT_PREFIX = "🛡️ Protected by AgentShroud"
 _PROTECT_HEADER = f"{_PROTECT_PREFIX}\n\n"
 _COLLABORATOR_BLOCK_NOTICE = f"{_PROTECT_HEADER}This action is not allowed."
@@ -3071,8 +3080,16 @@ class TelegramAPIProxy:
                         )
                     data[text_key] = _COLLABORATOR_EGRESS_NOTICE
                     return json.dumps(data).encode()
+                # full_access collaborators bypass the broad leakage filter — they are
+                # allowed to receive general research/technical responses. The filter
+                # still applies to local_only/project_scoped tiers.
+                _is_full_access = (
+                    not is_owner_chat
+                    and self._resolve_collaborator_mode(chat_id) == "full_access"
+                )
                 if (
                     not is_owner_chat
+                    and not _is_full_access
                     and isinstance(text, str)
                     and self._contains_high_risk_collaborator_leakage(text)
                 ):
@@ -3513,8 +3530,13 @@ class TelegramAPIProxy:
                         )
                     data[text_key] = _COLLABORATOR_EGRESS_NOTICE
                     return urllib.parse.urlencode(data).encode()
+                _is_full_access_fe = (
+                    not is_owner_chat
+                    and self._resolve_collaborator_mode(chat_id) == "full_access"
+                )
                 if (
                     not is_owner_chat
+                    and not _is_full_access_fe
                     and isinstance(text, str)
                     and self._contains_high_risk_collaborator_leakage(text)
                 ):
@@ -4240,7 +4262,7 @@ class TelegramAPIProxy:
 
             # ── Disclosure notice — send once per session per collaborator ─────
             if is_collaborator and chat_id and user_id not in self._disclosure_sent:
-                await self._send_disclosure(chat_id)
+                await self._send_disclosure(chat_id, user_id=user_id)
                 self._disclosure_sent.add(user_id)
 
             # ── Session unlock for blocked disclosure tracker on /start ───────
@@ -7306,20 +7328,32 @@ class TelegramAPIProxy:
             except Exception:
                 pass
 
-    async def _send_disclosure(self, chat_id: int) -> None:
-        """Send the one-time collaborator disclosure notice."""
+    async def _send_disclosure(self, chat_id: int, *, user_id: Optional[str] = None) -> None:
+        """Send the one-time collaborator disclosure notice.
+
+        Picks the appropriate message based on the collaborator's effective mode:
+        - full_access → _DISCLOSURE_MESSAGE_FULL_ACCESS (general access, no security-only scope)
+        - local_only / default → _DISCLOSURE_MESSAGE (restricted scope)
+        """
         try:
             if self._bot_token:
+                _uid = user_id or str(chat_id)
+                _mode = self._resolve_collaborator_mode(_uid)
+                _msg = (
+                    _DISCLOSURE_MESSAGE_FULL_ACCESS
+                    if _mode == "full_access"
+                    else _DISCLOSURE_MESSAGE
+                )
                 sent = await self._send_telegram_text(
                     chat_id,
-                    _DISCLOSURE_MESSAGE,
+                    _msg,
                     parse_mode="MarkdownV2",
                 )
                 if not sent:
                     # Markdown formatting can fail in edge cases; retry plain text.
-                    sent = await self._send_telegram_text(chat_id, _DISCLOSURE_MESSAGE)
+                    sent = await self._send_telegram_text(chat_id, _msg)
                 if sent:
-                    logger.info("Sent collaborator disclosure to chat %s", chat_id)
+                    logger.info("Sent collaborator disclosure to chat %s (mode=%s)", chat_id, _mode)
         except Exception as e:
             logger.warning("Failed to send disclosure to chat %s: %s", chat_id, e)
 
