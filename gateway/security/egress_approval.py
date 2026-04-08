@@ -185,7 +185,7 @@ class EgressApprovalQueue:
         # Throttle for EgressFilter auto-decisions: domain → last-logged unix timestamp.
         # Prevents the decision log being flooded with repetitive allow entries for
         # pre-approved domains (only first occurrence per domain per hour is logged).
-        self._external_decision_throttle: Dict[str, float] = {}
+        self._external_decision_throttle: Dict[tuple, float] = {}
 
         # Ensure rules file directory exists
         try:
@@ -658,14 +658,17 @@ class EgressApprovalQueue:
     ) -> None:
         """Log an automatic allow/deny from EgressFilter.check() (non-interactive).
 
-        Throttled to one entry per domain per hour so pre-approved permanent domains
-        do not flood the decision log on every request.
+        Throttled to one entry per (agent_id, domain) per hour so pre-approved
+        permanent domains do not flood the decision log on every request, while
+        still allowing different agents (e.g. per-user telegram_web_* ids) to
+        each produce their own log entries.
         """
         now = time.time()
-        last = self._external_decision_throttle.get(domain, 0.0)
+        throttle_key = (agent_id, domain)
+        last = self._external_decision_throttle.get(throttle_key, 0.0)
         if now - last < 3600:
             return
-        self._external_decision_throttle[domain] = now
+        self._external_decision_throttle[throttle_key] = now
         entry = {
             "id": str(uuid.uuid4())[:8],
             "domain": domain,

@@ -227,6 +227,21 @@ class HTTPConnectProxy:
             block_reason = f"direct CONNECT tunnel to {host} is blocked; use gateway proxy"
         elif bypass_system_domain:
             block_reason = "system egress bypass domain"
+            # Log bypass-domain connections to the SOC decision history so that
+            # outbound web_search / web_fetch calls to pre-approved domains
+            # (e.g. api.search.brave.com) are visible in the SOC Egress tab.
+            if self.egress_filter is not None:
+                _aq = getattr(self.egress_filter, "_approval_queue", None)
+                if _aq is not None and hasattr(_aq, "log_external_decision"):
+                    try:
+                        _aq.log_external_decision(
+                            domain=host,
+                            decision="allow",
+                            agent_id="http_connect_proxy",
+                            reason="system egress bypass domain",
+                        )
+                    except Exception:
+                        pass
         elif self.egress_filter is not None:
             # Primary policy path: interactive egress approval + policy engine.
             # This is required so unknown domains can raise approval prompts
