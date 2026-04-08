@@ -97,8 +97,15 @@ def test_list_targets(router):
 
 
 @pytest.mark.asyncio
-async def test_health_check_offline_agent(router):
+async def test_health_check_offline_agent(router, monkeypatch):
     """Test health check for offline agent"""
+    import httpx
+
+    async def _raise_connect(*args, **kwargs):
+        raise httpx.ConnectError("Connection refused")
+
+    monkeypatch.setattr(httpx.AsyncClient, "get", _raise_connect)
+
     results = await router.health_check()
 
     # Both agents should be reported (both offline)
