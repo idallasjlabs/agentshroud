@@ -1042,14 +1042,14 @@ async def set_user_role(
     return {"ok": True, "user_id": user_id, "role": body.role}
 
 
-class SetModeRequest(BaseModel):
+class SetUserModeRequest(BaseModel):
     mode: str
 
 
 @router.put("/users/{user_id}/mode")
 async def set_user_collab_mode(
     user_id: str,
-    body: SetModeRequest,
+    body: SetUserModeRequest,
     caller: SCLCaller = Depends(get_caller),
 ) -> Dict:
     """Set per-user collab mode override (persists across restarts)."""
