@@ -8958,3 +8958,109 @@ class TestFullAccessMiddlewareBypass:
 
         assert not result["result"], "project_scoped collaborator must be blocked by middleware"
         assert block_notices, "project_scoped collaborator must receive a block notice"
+
+    @pytest.mark.asyncio
+    async def test_full_access_outbound_not_blocked_by_leakage_filter(self, monkeypatch):
+        """full_access collaborator outbound must pass through even when leakage filter would fire.
+
+        The leakage filter (_contains_high_risk_collaborator_leakage) must be bypassed for
+        full_access mode so the bot's research responses reach the collaborator.
+        """
+        monkeypatch.setenv("AGENTSHROUD_COLLAB_LOCAL_INFO_ONLY", "0")
+        proxy = TelegramAPIProxy()
+        proxy._rbac = FakeRBAC(owner_id=self.OWNER, collaborators=[self.COLLAB])
+        proxy._bot_token = ""
+
+        # Confirm the payload would trigger the leakage filter normally
+        trigger_text = "Here is a traceback from the system call you requested."
+        assert TelegramAPIProxy._contains_high_risk_collaborator_leakage(trigger_text), (
+            "Precondition: test payload must trigger the leakage filter"
+        )
+
+        body = json.dumps({"chat_id": self.COLLAB, "text": trigger_text}).encode()
+        result = await proxy._filter_outbound(body, "application/json")
+        result_data = json.loads(result)
+
+        assert result_data.get("text") == trigger_text, (
+            f"full_access collaborator must receive the unblocked response; got: {result_data.get('text')!r}"
+        )
+
+    @pytest.mark.asyncio
+    async def test_default_collab_outbound_still_blocked_by_leakage_filter(self, monkeypatch):
+        """local_only collaborators must still be blocked by the leakage filter."""
+        monkeypatch.setenv("AGENTSHROUD_COLLAB_LOCAL_INFO_ONLY", "1")
+        proxy = TelegramAPIProxy()
+        proxy._rbac = FakeRBAC(owner_id=self.OWNER, collaborators=[self.COLLAB])
+        proxy._bot_token = ""
+
+        trigger_text = "Here is a traceback from the system call you requested."
+        assert TelegramAPIProxy._contains_high_risk_collaborator_leakage(trigger_text), (
+            "Precondition: test payload must trigger the leakage filter"
+        )
+
+        body = json.dumps({"chat_id": self.COLLAB, "text": trigger_text}).encode()
+        result = await proxy._filter_outbound(body, "application/json")
+        result_data = json.loads(result)
+
+        assert result_data.get("text") != trigger_text, (
+            "local_only collaborator must have response replaced by the leakage filter"
+        )
+        assert "AgentShroud" in result_data.get("text", ""), (
+            "blocked response must contain the AgentShroud protection notice"
+        )
+
+    @pytest.mark.asyncio
+    async def test_full_access_disclosure_text(self, monkeypatch):
+        """full_access collaborator must receive the general-access disclosure message."""
+        from gateway.proxy.telegram_proxy import _DISCLOSURE_MESSAGE_FULL_ACCESS
+
+        monkeypatch.setenv("AGENTSHROUD_COLLAB_LOCAL_INFO_ONLY", "0")
+        proxy = TelegramAPIProxy()
+        proxy._rbac = FakeRBAC(owner_id=self.OWNER, collaborators=[self.COLLAB])
+        proxy._bot_token = "test-token"
+
+        sent_texts: list[str] = []
+
+        async def fake_send_text(chat_id, text, **kwargs):
+            sent_texts.append(text)
+            return True
+
+        monkeypatch.setattr(proxy, "_send_telegram_text", fake_send_text)
+
+        await proxy._send_disclosure(int(self.COLLAB), user_id=self.COLLAB)
+
+        assert sent_texts, "disclosure must have been sent"
+        assert "general access" in sent_texts[0].lower(), (
+            f"full_access disclosure must mention 'general access'; got: {sent_texts[0]!r}"
+        )
+        assert "security concepts" not in sent_texts[0].lower(), (
+            "full_access disclosure must NOT mention 'security concepts'"
+        )
+
+    @pytest.mark.asyncio
+    async def test_default_disclosure_text(self, monkeypatch):
+        """local_only collaborator must receive the restricted-scope disclosure message."""
+        from gateway.proxy.telegram_proxy import _DISCLOSURE_MESSAGE
+
+        monkeypatch.setenv("AGENTSHROUD_COLLAB_LOCAL_INFO_ONLY", "1")
+        proxy = TelegramAPIProxy()
+        proxy._rbac = FakeRBAC(owner_id=self.OWNER, collaborators=[self.COLLAB])
+        proxy._bot_token = "test-token"
+
+        sent_texts: list[str] = []
+
+        async def fake_send_text(chat_id, text, **kwargs):
+            sent_texts.append(text)
+            return True
+
+        monkeypatch.setattr(proxy, "_send_telegram_text", fake_send_text)
+
+        await proxy._send_disclosure(int(self.COLLAB), user_id=self.COLLAB)
+
+        assert sent_texts, "disclosure must have been sent"
+        assert "security concepts" in sent_texts[0].lower(), (
+            f"default disclosure must mention 'security concepts'; got: {sent_texts[0]!r}"
+        )
+        assert "general access" not in sent_texts[0].lower(), (
+            "default disclosure must NOT mention 'general access'"
+        )
