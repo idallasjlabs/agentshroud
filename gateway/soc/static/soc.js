@@ -4,7 +4,7 @@
 'use strict';
 
 const SOC_BASE = '/soc/v1';
-let _token = localStorage.getItem('soc_token') || '';
+let _token = (localStorage.getItem('soc_token') || '').replace(/[^a-f0-9]/gi, '');
 let _ws = null;
 let _wsStatus = 'disconnected';
 let _eventFeed = [];
