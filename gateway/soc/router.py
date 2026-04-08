@@ -1042,6 +1042,40 @@ async def set_user_role(
     return {"ok": True, "user_id": user_id, "role": body.role}
 
 
+class SetModeRequest(BaseModel):
+    mode: str
+
+
+@router.put("/users/{user_id}/mode")
+async def set_user_collab_mode(
+    user_id: str,
+    body: SetModeRequest,
+    caller: SCLCaller = Depends(get_caller),
+) -> Dict:
+    """Set per-user collab mode override (persists across restarts)."""
+    caller.require(Action.SET_ROLE, Resource.USERS)
+    valid_modes = {"local_only", "project_scoped", "full_access"}
+    if body.mode not in valid_modes:
+        raise HTTPException(
+            status_code=400,
+            detail={
+                "error": True,
+                "code": "VALIDATION_ERROR",
+                "message": f"Invalid mode: {body.mode!r}. Must be one of {sorted(valid_modes)}",
+            },
+        )
+    from ..security.group_config import persist_user_collab_mode
+
+    persist_user_collab_mode(user_id, body.mode)
+    # Apply immediately to the running TeamsConfig so changes take effect without restart.
+    app = _app_state()
+    teams = getattr(getattr(app, "config", None), "teams", None)
+    if teams is not None:
+        teams.user_overrides.setdefault(str(user_id), {})["collab_mode"] = body.mode
+    _log_audit(caller, "set collab mode", target=user_id, details={"mode": body.mode})
+    return {"ok": True, "user_id": user_id, "mode": body.mode}
+
+
 # ---------------------------------------------------------------------------
 # Group management endpoints
 # ---------------------------------------------------------------------------
