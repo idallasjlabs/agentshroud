@@ -313,3 +313,59 @@ def test_telegram_is_force_blocked_not_bypass():
 
     assert "api.telegram.org" not in SYSTEM_BYPASS_DOMAINS
     assert "api.telegram.org" in CONNECT_FORCE_BLOCK_DOMAINS
+
+
+@pytest.mark.asyncio
+async def test_system_bypass_domain_logs_external_decision(monkeypatch):
+    """System bypass domains should be logged to the SOC decision history."""
+    log_calls = []
+
+    class _MockApprovalQueue:
+        def log_external_decision(self, **kwargs):
+            log_calls.append(kwargs)
+
+    class _MockEgressFilter:
+        _approval_queue = _MockApprovalQueue()
+
+    async def _open_conn(_host, _port):
+        r = asyncio.StreamReader()
+        r.feed_eof()
+        return r, _DummyTargetWriter()
+
+    monkeypatch.setattr(asyncio, "open_connection", _open_conn)
+
+    # Use a real SYSTEM_BYPASS_DOMAINS member (not api.telegram.org which is force-blocked)
+    bypass_host = next(iter(SYSTEM_BYPASS_DOMAINS))
+    p = HTTPConnectProxy(egress_filter=_MockEgressFilter())
+    req = f"CONNECT {bypass_host}:443 HTTP/1.1\r\nHost: {bypass_host}\r\n\r\n".encode()
+    reader = _make_stream(req)
+    writer = _MockWriter()
+
+    await p._process_connect(reader, writer)
+
+    assert len(log_calls) == 1
+    assert log_calls[0]["domain"] == bypass_host
+    assert log_calls[0]["decision"] == "allow"
+    assert log_calls[0]["agent_id"] == "http_connect_proxy"
+    assert log_calls[0]["reason"] == "system egress bypass domain"
+
+
+@pytest.mark.asyncio
+async def test_system_bypass_without_egress_filter(monkeypatch):
+    """System bypass domains should not error when egress_filter is None."""
+    async def _open_conn(_host, _port):
+        r = asyncio.StreamReader()
+        r.feed_eof()
+        return r, _DummyTargetWriter()
+
+    monkeypatch.setattr(asyncio, "open_connection", _open_conn)
+
+    bypass_host = next(iter(SYSTEM_BYPASS_DOMAINS))
+    p = HTTPConnectProxy(egress_filter=None)
+    req = f"CONNECT {bypass_host}:443 HTTP/1.1\r\nHost: {bypass_host}\r\n\r\n".encode()
+    reader = _make_stream(req)
+    writer = _MockWriter()
+
+    # Must not raise
+    await p._process_connect(reader, writer)
+    assert b"200 Connection Established" in writer.written
