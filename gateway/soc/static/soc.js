@@ -788,7 +788,14 @@ function _renderUsers(users) {
         ${(u.groups || []).map(g => `<span class="badge badge-info" style="margin-right:2px">${_esc(g)}</span>`).join('') || '—'}
         <button class="btn btn-sm" style="margin-left:4px;padding:1px 5px" onclick="window._assignGroups('${_esc(u.user_id)}',${JSON.stringify(u.groups||[])})">+</button>
       </td>
-      <td style="font-size:11px">${_esc(u.collab_mode || '—')}</td>
+      <td style="font-size:11px">
+        <select style="font-size:11px;padding:2px 4px;background:var(--surface);color:var(--text);border:1px solid var(--border);border-radius:3px"
+          onchange="window._changeUserMode('${_esc(u.user_id)}',this.value,this)">
+          <option value="local_only"${u.collab_mode==='local_only'?' selected':''}>Restrictive</option>
+          <option value="project_scoped"${u.collab_mode==='project_scoped'?' selected':''}>Project Scoped</option>
+          <option value="full_access"${u.collab_mode==='full_access'?' selected':''}>Full Access</option>
+        </select>
+      </td>
       <td style="font-size:11px">${_esc(u.lockdown_level ?? '—')}</td>
       <td>
         <button class="btn btn-sm btn-danger" onclick="window._removeCollab('${_esc(u.user_id)}')">Remove</button>
@@ -831,6 +838,19 @@ window._changeUserRole = async function(uid, newRole, selectEl) {
   const { ok, data } = await _put(`/users/${encodeURIComponent(uid)}/role`, { role: newRole });
   _toast(ok ? `Role changed to ${newRole}` : `Error: ${data?.message}`, ok ? 'success' : 'danger');
   if (!ok) selectEl.value = prev || 'collaborator';
+};
+
+// CC-38: collab mode dropdown change
+window._changeUserMode = async function(uid, newMode, selectEl) {
+  const prev = Array.from(selectEl.options).find(o => o.selected && o.value !== newMode)?.value;
+  const labels = { local_only: 'Restrictive', project_scoped: 'Project Scoped', full_access: 'Full Access' };
+  const { ok, data } = await _put(`/users/${encodeURIComponent(uid)}/mode`, { mode: newMode });
+  if (ok) {
+    _toast(`Mode changed to ${labels[newMode] || newMode}`, 'success');
+  } else {
+    _toast(`Error: ${data?.message || 'failed to set mode'}`, 'danger');
+    if (prev) selectEl.value = prev;
+  }
 };
 
 // CC-37: group assignment modal
