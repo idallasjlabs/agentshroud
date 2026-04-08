@@ -589,18 +589,22 @@ def load_config(config_path: Optional[Path] = None) -> GatewayConfig:
         "http://127.0.0.1:18790",
     ]
 
-    # Parse teams configuration (optional section)
+    # Parse teams configuration (optional section).
+    # Always create a TeamsConfig (even empty) so per-user collab mode overrides
+    # persisted in group_overrides.json are loaded into memory at startup.
     teams_raw = raw_config.get("teams", {})
     teams_config: Optional[TeamsConfig] = None
-    if teams_raw and isinstance(teams_raw, dict):
-        try:
-            teams_config = TeamsConfig(**teams_raw)
+    try:
+        teams_config = TeamsConfig(**(teams_raw if isinstance(teams_raw, dict) else {}))
+        if teams_raw:
             logger.info(
                 f"Teams config loaded: {len(teams_config.groups)} groups, "
                 f"{len(teams_config.projects)} projects"
             )
-        except Exception as exc:
-            logger.warning(f"Failed to parse teams: config — falling back to no teams: {exc}")
+        else:
+            logger.debug("Teams config initialized (empty — no AGENTSHROUD_TEAMS_JSON)")
+    except Exception as exc:
+        logger.warning(f"Failed to parse teams config — falling back to no teams: {exc}")
 
     config = GatewayConfig(
         bind=gateway.get("bind", "127.0.0.1"),
