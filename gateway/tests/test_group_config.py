@@ -5,10 +5,15 @@ from __future__ import annotations
 
 import pytest
 
+import json
+import tempfile
+from pathlib import Path
+
 from gateway.security.group_config import (
     GroupConfig,
     ProjectConfig,
     TeamsConfig,
+    persist_user_collab_mode,
 )
 
 # ---------------------------------------------------------------------------
@@ -215,3 +220,88 @@ class TestGroupSafeResponsePrefix:
     def test_group_config_safe_response_prefix_set(self):
         g = GroupConfig(name="ops", safe_response_prefix="Ops Team")
         assert g.safe_response_prefix == "Ops Team"
+
+
+# ---------------------------------------------------------------------------
+# Per-user collab mode override tests
+# ---------------------------------------------------------------------------
+
+
+class TestUserCollabModeOverride:
+    """Per-user collab_mode override: persists to group_overrides.json and takes
+    precedence over group-derived mode in get_user_collab_mode()."""
+
+    def test_persist_user_collab_mode(self, tmp_path, monkeypatch):
+        """persist_user_collab_mode writes under __user_overrides__ key."""
+        overrides_file = tmp_path / "group_overrides.json"
+        monkeypatch.setattr(
+            "gateway.security.group_config._GROUP_OVERRIDES_FILE", overrides_file
+        )
+
+        persist_user_collab_mode("7614658040", "local_only")
+
+        data = json.loads(overrides_file.read_text())
+        assert "__user_overrides__" in data
+        assert data["__user_overrides__"]["7614658040"]["collab_mode"] == "local_only"
+
+    def test_persist_user_collab_mode_update(self, tmp_path, monkeypatch):
+        """Calling persist_user_collab_mode twice updates the stored value."""
+        overrides_file = tmp_path / "group_overrides.json"
+        monkeypatch.setattr(
+            "gateway.security.group_config._GROUP_OVERRIDES_FILE", overrides_file
+        )
+
+        persist_user_collab_mode("8506022825", "local_only")
+        persist_user_collab_mode("8506022825", "full_access")
+
+        data = json.loads(overrides_file.read_text())
+        assert data["__user_overrides__"]["8506022825"]["collab_mode"] == "full_access"
+
+    def test_user_override_takes_precedence_over_group(self, tmp_path, monkeypatch):
+        """Per-user override beats group-derived collab_mode."""
+        overrides_file = tmp_path / "group_overrides.json"
+        # Pre-seed with a user override for Brett (who is in gsdea group = project_scoped)
+        overrides_file.write_text(
+            json.dumps({"__user_overrides__": {"8506022825": {"collab_mode": "full_access"}}})
+        )
+        monkeypatch.setattr(
+            "gateway.security.group_config._GROUP_OVERRIDES_FILE", overrides_file
+        )
+
+        teams = TeamsConfig(**TEAMS_RAW)
+        # Brett is in gsdea (project_scoped), but his override says full_access
+        mode = teams.get_user_collab_mode("8506022825")
+        assert mode == "full_access", (
+            f"Per-user override must beat group mode; expected 'full_access', got {mode!r}"
+        )
+
+    def test_get_user_collab_mode_falls_back_to_group(self, tmp_path, monkeypatch):
+        """Without a per-user override, group-derived mode is returned."""
+        overrides_file = tmp_path / "group_overrides.json"
+        # No user overrides — just an empty file
+        overrides_file.write_text("{}")
+        monkeypatch.setattr(
+            "gateway.security.group_config._GROUP_OVERRIDES_FILE", overrides_file
+        )
+
+        teams = TeamsConfig(**TEAMS_RAW)
+        # Brett is in gsdea (project_scoped), no override → falls back to group mode
+        mode = teams.get_user_collab_mode("8506022825")
+        assert mode == "project_scoped", (
+            f"Without override, group mode must be returned; expected 'project_scoped', got {mode!r}"
+        )
+
+    def test_apply_persisted_overrides_skips_user_overrides_key(self, tmp_path, monkeypatch):
+        """__user_overrides__ key must not be treated as a group_id."""
+        overrides_file = tmp_path / "group_overrides.json"
+        overrides_file.write_text(
+            json.dumps({"__user_overrides__": {"9999": {"collab_mode": "full_access"}}})
+        )
+        monkeypatch.setattr(
+            "gateway.security.group_config._GROUP_OVERRIDES_FILE", overrides_file
+        )
+
+        # Should load cleanly with no "unknown group" error and no spurious group created
+        teams = TeamsConfig(**TEAMS_RAW)
+        assert "__user_overrides__" not in teams.groups
+        assert teams.user_overrides.get("9999", {}).get("collab_mode") == "full_access"

@@ -9064,3 +9064,33 @@ class TestFullAccessMiddlewareBypass:
         assert "general access" not in sent_texts[0].lower(), (
             "default disclosure must NOT mention 'general access'"
         )
+
+    @pytest.mark.asyncio
+    async def test_per_user_mode_override_controls_outbound_filter(self, monkeypatch):
+        """Per-user mode override is respected by the outbound filter.
+
+        A collaborator whose global mode would be 'local_only' but whose per-user
+        override returns 'full_access' must bypass the leakage filter.
+        """
+        # Global env says local_only, but per-user override gives full_access
+        monkeypatch.setenv("AGENTSHROUD_COLLAB_LOCAL_INFO_ONLY", "1")
+        proxy = TelegramAPIProxy()
+        proxy._rbac = FakeRBAC(owner_id=self.OWNER, collaborators=[self.COLLAB])
+        proxy._bot_token = ""
+
+        # Simulate per-user override returning full_access despite local_only global
+        monkeypatch.setattr(proxy, "_resolve_collaborator_mode", lambda uid: "full_access")
+
+        trigger_text = "Here is a traceback from the system call you requested."
+        assert TelegramAPIProxy._contains_high_risk_collaborator_leakage(trigger_text), (
+            "Precondition: payload must trigger the leakage filter"
+        )
+
+        body = json.dumps({"chat_id": self.COLLAB, "text": trigger_text}).encode()
+        result = await proxy._filter_outbound(body, "application/json")
+        result_data = json.loads(result)
+
+        assert result_data.get("text") == trigger_text, (
+            "Per-user full_access override must bypass the leakage filter; "
+            f"got: {result_data.get('text')!r}"
+        )
