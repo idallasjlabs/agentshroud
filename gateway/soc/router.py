@@ -1979,7 +1979,7 @@ async def get_security_scorecard(caller: SCLCaller = Depends(get_caller)) -> Dic
         logger.warning("get_security_scorecard: %s", exc)
         return {
             "error": str(exc),
-            "version": "v1.0.0",
+            "version": "v1.0.38",
             "domains": [],
             "totals": {"score": 0, "max": 60, "percentage": 0},
             "overall_maturity": "Not Started",
@@ -2094,7 +2094,7 @@ async def trigger_cve_report(caller: SCLCaller = Depends(get_caller)) -> Dict:
 # ---------------------------------------------------------------------------
 
 _GH_RELEASES_API = "https://api.github.com/repos/idallasjlabs/agentshroud/releases/latest"
-_CURRENT_VERSION = "1.0.0"
+_CURRENT_VERSION = "1.0.38"
 
 # Content-hash cache busters for static assets — recomputed at import time so
 # any change to soc.js / soc.css produces a new hash and busts browser caches.
