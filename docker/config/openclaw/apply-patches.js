@@ -147,13 +147,46 @@ const _COLLAB_TOOL_DENY = [
   'image', 'web_fetch', 'web_search',
 ];
 
+// full_access tier: allows web_search, web_fetch, tts, pdf, image, browser.
+// Still denies exec/process/gateway/cron/session management and agent introspection.
+const _COLLAB_TOOL_DENY_FULL_ACCESS = [
+  'exec', 'process', 'gateway', 'cron', 'message',
+  'sessions_spawn', 'sessions_send', 'subagents',
+  'memory_search', 'memory_get',
+  'nodes', 'agents_list',
+  'sessions_list', 'sessions_history', 'session_status',
+  'canvas',
+];
+
+// Parse TEAMS_JSON early so _resolveCollabDenyList can inspect group collab_mode
+// before per-collaborator agents are created. Patch 1c will reuse this variable.
+const TEAMS_JSON_RAW = process.env.AGENTSHROUD_TEAMS_JSON || '';
+let _teamsJsonParsed = null;
+try { if (TEAMS_JSON_RAW) _teamsJsonParsed = JSON.parse(TEAMS_JSON_RAW); } catch (e) {}
+
+const COLLAB_LOCAL_INFO_ONLY = (process.env.AGENTSHROUD_COLLAB_LOCAL_INFO_ONLY || '1').trim().toLowerCase();
+const _is_global_full_access = ['0', 'false', 'no'].includes(COLLAB_LOCAL_INFO_ONLY);
+
+function _resolveCollabDenyList(uid, teamsJson) {
+  if (uid && teamsJson && teamsJson.groups) {
+    for (const g of Object.values(teamsJson.groups)) {
+      if (g.members && g.members.includes(uid) && g.collab_mode === 'full_access') {
+        return _COLLAB_TOOL_DENY_FULL_ACCESS;
+      }
+    }
+  }
+  if (_is_global_full_access) return _COLLAB_TOOL_DENY_FULL_ACCESS;
+  return _COLLAB_TOOL_DENY;
+}
+
 const cIdx = config.agents.list.findIndex((a) => a.id === 'collaborator');
+const _genericCollabDeny = _is_global_full_access ? _COLLAB_TOOL_DENY_FULL_ACCESS : _COLLAB_TOOL_DENY;
 if (cIdx < 0) {
   config.agents.list.push({
     id: 'collaborator',
     name: 'AgentShroud Collaborator',
     model: MAIN_MODEL,
-    tools: { profile: 'minimal', deny: _COLLAB_TOOL_DENY },
+    tools: { profile: 'minimal', deny: _genericCollabDeny },
     skills: [],
     workspace: '.agentshroud/collaborator-workspace',
     memorySearch: { enabled: false },
@@ -175,10 +208,10 @@ if (cIdx < 0) {
     console.log('[init-patch] Migrated collaborator workspace to .agentshroud/collaborator-workspace');
     changed = true;
   }
-  // Ensure tools config is current (profile:minimal + deny list)
+  // Ensure tools config is current (profile:minimal + correct tier deny list)
   const existingTools = config.agents.list[cIdx].tools || {};
-  if (existingTools.profile !== 'minimal' || existingTools.allow) {
-    config.agents.list[cIdx].tools = { profile: 'minimal', deny: _COLLAB_TOOL_DENY };
+  if (existingTools.profile !== 'minimal' || existingTools.allow || JSON.stringify(existingTools.deny) !== JSON.stringify(_genericCollabDeny)) {
+    config.agents.list[cIdx].tools = { profile: 'minimal', deny: _genericCollabDeny };
     console.log('[init-patch] Updated collaborator agent tools to profile:minimal + deny list');
     changed = true;
   }
@@ -207,12 +240,13 @@ if (!hasOwnerBinding) {
 for (const [collabId, collabName] of Object.entries(COLLABORATOR_IDS)) {
   const agentId = `collab-${collabId}`;
   const agentIdx = config.agents.list.findIndex((a) => a.id === agentId);
+  const _collabDeny = _resolveCollabDenyList(collabId, _teamsJsonParsed);
   if (agentIdx < 0) {
     config.agents.list.push({
       id: agentId,
       name: `${collabName} (Collaborator)`,
       model: MAIN_MODEL,
-      tools: { profile: 'minimal', deny: _COLLAB_TOOL_DENY },
+      tools: { profile: 'minimal', deny: _collabDeny },
       skills: [],
       workspace: `.agentshroud/collab-${collabId}`,
       memorySearch: { enabled: false },
@@ -224,11 +258,11 @@ for (const [collabId, collabName] of Object.entries(COLLABORATOR_IDS)) {
       config.agents.list[agentIdx].model = MAIN_MODEL;
       changed = true;
     }
-    // Fix any agent that has an invalid profile (e.g. 'none' from a previous failed migration)
+    // Fix any agent with invalid profile or wrong tier deny list
     const existingTools = config.agents.list[agentIdx].tools || {};
-    if (existingTools.profile === 'none' || existingTools.allow) {
-      config.agents.list[agentIdx].tools = { profile: 'minimal', deny: _COLLAB_TOOL_DENY };
-      console.log(`[init-patch] Fixed ${agentId} tools: restored profile:minimal + deny list`);
+    if (existingTools.profile === 'none' || existingTools.allow || JSON.stringify(existingTools.deny) !== JSON.stringify(_collabDeny)) {
+      config.agents.list[agentIdx].tools = { profile: 'minimal', deny: _collabDeny };
+      console.log(`[init-patch] Fixed ${agentId} tools: restored profile:minimal + tier deny list`);
       changed = true;
     }
   }
@@ -255,7 +289,8 @@ for (const [collabId, collabName] of Object.entries(COLLABORATOR_IDS)) {
 // Read AGENTSHROUD_TEAMS_JSON from env to discover groups and create shared workspace dirs.
 // The sharedWorkspace field is set on each per-collaborator agent so the bot knows where
 // the group's shared memory and workspace live on the config volume.
-const TEAMS_JSON_RAW = process.env.AGENTSHROUD_TEAMS_JSON || '';
+// Note: TEAMS_JSON_RAW is declared earlier (before Patch 1b) so _resolveCollabDenyList
+// can inspect group collab_mode during per-collaborator agent creation.
 if (TEAMS_JSON_RAW) {
   try {
     const teams = JSON.parse(TEAMS_JSON_RAW);
