@@ -2929,6 +2929,8 @@ class TelegramAPIProxy:
                                     f"{cleaned}\n\n"
                                     "🌐 Web access request detected. Approval request queued for this destination."
                                 ).strip()
+                        elif tool_name == "web_search":
+                            await self._trigger_web_search_log(chat_id, tool_args)
                         data[text_key] = cleaned
                         self._stats["outbound_filtered"] += 1
                         return json.dumps(data).encode()
@@ -2955,6 +2957,15 @@ class TelegramAPIProxy:
                             if not is_owner_chat
                             else "✅ Healthcheck started. I’ll reply with status once complete."
                         )
+                    elif tool_name == "web_search":
+                        await self._trigger_web_search_log(chat_id, tool_args)
+                        if not is_owner_chat:
+                            data[text_key] = self._collaborator_safe_notice("web search in progress")
+                        else:
+                            data[text_key] = (
+                                "🔍 Web search requested, but this model returned raw tool JSON instead of executing it. "
+                                "Switch to a tool-capable model."
+                            )
                     elif tool_name == "web_fetch":
                         approval_queued = await self._trigger_web_fetch_approval(chat_id, tool_args)
                         if not is_owner_chat:
@@ -3360,6 +3371,8 @@ class TelegramAPIProxy:
                                     f"{cleaned}\n\n"
                                     "🌐 Web access request detected. Approval request queued for this destination."
                                 ).strip()
+                        elif tool_name == "web_search":
+                            await self._trigger_web_search_log(chat_id, tool_args)
                         data[text_key] = cleaned
                         self._stats["outbound_filtered"] += 1
                         return urllib.parse.urlencode(data).encode()
@@ -3386,6 +3399,15 @@ class TelegramAPIProxy:
                             if not is_owner_chat
                             else "✅ Healthcheck started. I’ll reply with status once complete."
                         )
+                    elif tool_name == "web_search":
+                        await self._trigger_web_search_log(chat_id, tool_args)
+                        if not is_owner_chat:
+                            data[text_key] = self._collaborator_safe_notice("web search in progress")
+                        else:
+                            data[text_key] = (
+                                "🔍 Web search requested, but this model returned raw tool JSON instead of executing it. "
+                                "Switch to a tool-capable model (e.g., scripts/switch_model.sh gemini or local qwen3:14b once pulled)."
+                            )
                     elif tool_name == "web_fetch":
                         approval_queued = await self._trigger_web_fetch_approval(chat_id, tool_args)
                         if not is_owner_chat:
@@ -3580,6 +3602,34 @@ class TelegramAPIProxy:
             except Exception:
                 pass
         return body
+
+    async def _trigger_web_search_log(self, chat_id: str, tool_args: dict[str, Any]) -> None:
+        """Log a web_search egress event with user attribution when raw JSON leaks.
+
+        web_search always targets the configured search provider (Brave), which is
+        a pre-approved bypass domain.  We still want a per-user SOC egress entry so
+        the operator can see which collaborator triggered the search.
+        """
+        try:
+            from gateway.ingest_api.state import app_state as _app_state
+
+            _egress_filter = getattr(_app_state, "egress_filter", None)
+            if _egress_filter is None:
+                return
+            _aq = getattr(_egress_filter, "_approval_queue", None)
+            if _aq is None or not hasattr(_aq, "log_external_decision"):
+                return
+            _agent_id = f"telegram_web_search:{chat_id}" if chat_id else "telegram_web_search"
+            _query = normalize_input(str((tool_args or {}).get("query", ""))).strip()[:200]
+            _reason = f"web_search query via collaborator agent{': ' + _query if _query else ''}"
+            _aq.log_external_decision(
+                domain="api.search.brave.com",
+                decision="allow",
+                agent_id=_agent_id,
+                reason=_reason,
+            )
+        except Exception:
+            pass
 
     async def _trigger_web_fetch_approval(self, chat_id: str, tool_args: dict[str, Any]) -> bool:
         """Queue an interactive egress approval when raw web_fetch JSON leaks."""
