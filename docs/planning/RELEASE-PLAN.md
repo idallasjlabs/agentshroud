@@ -331,7 +331,43 @@ Every tranche must satisfy all of:
 
 ---
 
-## Post-v1.0.0 — Deferred (53 items)
+## v1.1.0 "Groups" — Workspaces for Teams (6 items)
+
+*Goal: Group-based project workspaces. Bot joins Telegram groups and Slack channels, silently logs all conversation to group memory, and responds only when @mentioned.*
+
+**Branch:** `feat-v1.1.0-workspaces-for-teams`
+
+**Foundation (already shipped):** `rbac.py` groups, `shared_memory.py`, `tool_acl.py`, `delegation.py`, `privacy_policy.py`, `slack_channel_bridge.py`
+
+1. **Group workspaces** — create groups for projects with isolated workspace per team; per-group memory, egress rules, tool ACLs
+2. **Telegram group membership** — bot joins Telegram group chats; all messages logged to group memory regardless of @mention
+3. **@mention-only response** — bot only sends a response when explicitly @mentioned; otherwise silently observes
+4. **Slack channel membership** — same pattern: join Slack channels, log conversation, respond only on @mention
+5. **Group memory isolation** — each group workspace has its own isolated memory context (extends `shared_memory.py` group scoping)
+6. **Group-scoped policies** — per-group tool ACLs and egress rules (extends `tool_acl.py`, `EgressScope` `kind="group"`)
+
+---
+
+## v1.2.0 "Local LLMs" — Offline Model Support (4 items)
+
+*Goal: Run AgentShroud without cloud API keys using local models via Ollama, LM Studio, or mlx_lm.*
+
+**Branch:** `feat-v1.2.0-local-llms`
+
+**Status:** 3 commits shipped (Ollama + LM Studio + mlx_lm backends, model routing, tag format fixes).
+
+1. **Ollama backend** — route models through Ollama; colon-tag format (e.g. `qwen3-coder:30`)
+2. **LM Studio + mlx_lm backends** — Anchor/Coding (LM Studio) and Reasoning (mlx_lm) profiles
+3. **Model switching** — `scripts/switch_model.sh` for runtime model selection
+4. **Gateway proxy routing** — all local model traffic routes through AgentShroud gateway pipeline
+
+---
+
+## v1.3.0 — Platform Expansion (53 items)
+
+*Goal: All remaining post-v1.0 deferred items.*
+
+**Branch:** `feat-v1.3.0` (TBD)
 
 ### Secure Voice (moved from v0.9.0 on 2026-03-04)
 - ElevenLabs Conversational AI — Real-time voice conversations
@@ -378,6 +414,10 @@ Every tranche must satisfy all of:
 ### Multi-Host Deployment
 - Coordinated deploy across Marvin/Trillian/Pi, health check dashboard, ARM32 support
 
+### Security Hardening
+- FR1: MFA for sensitive operations (kill switch, SSH) — was deferred from v1.0.0
+- FR5: Network DMZ — requires multi-node deployment
+
 ### Command Center — CLI/TUI (moved from v1.0.0 on 2026-03-20)
 - `agentshroud` CLI — status, logs, approve, deny, kill commands
 - TUI dashboard — rich/textual for SSH/tmux sessions
@@ -393,14 +433,22 @@ Every tranche must satisfy all of:
 
 ## Summary
 
-| Version | Codename | Items | Focus |
-|---------|----------|-------|-------|
-| v0.8.0 | Watchtower | 104 | Security fixes, module wiring, Steve prep |
-| v0.9.0 | Sentinel | 37 | Data isolation, SOC, remediation, iMessage, security tools |
-| v1.0.0 | Fortress | 116 | Ship-ready: security audit, repo hygiene, container hardening, docs, dashboard, installer, release |
-| Post-v1 | — | 60 | Voice, CLI/TUI, SSH chat, Apple integration, advanced features |
+| Version | Codename | Items | Focus | Branch |
+|---------|----------|-------|-------|--------|
+| v0.8.0 | Watchtower | 104 | Security fixes, module wiring, Steve prep | merged |
+| v0.9.0 | Sentinel | 37 | Data isolation, SOC, remediation, iMessage, security tools | merged |
+| v1.0.0 | Fortress | 116 | Ship-ready: security audit, repo hygiene, container hardening, docs, dashboard, installer, release | merged |
+| v1.1.0 | Groups | 6 | Group workspaces, @mention-only, Telegram/Slack group membership | `feat-v1.1.0-workspaces-for-teams` |
+| v1.2.0 | Local LLMs | 4 | Offline model support via Ollama/LM Studio/mlx_lm | `feat-v1.2.0-local-llms` |
+| v1.3.0 | Platform | 53 | Voice, CLI/TUI, SSH chat, Apple integration, advanced features | TBD |
 
-**Total tracked: 317 items**
+**Total tracked: 320 items**
+
+### Key Changes (2026-04-08)
+- **Versioned Post-v1.0 backlog:** Replaced unversioned "Post-v1.0.0" bucket with v1.1.0/v1.2.0/v1.3.0 milestones
+- **v1.1.0 scope defined:** Group workspaces + @mention-only response (new scope, not previously listed)
+- **v1.2.0 scope confirmed:** Local LLM support (3 commits already shipped on branch)
+- **v1.3.0:** All 53 original Post-v1.0 items + CHANGELOG MFA/DMZ deferred items
 
 ### Key Changes (2026-03-20)
 - **Moved to post-v1.0.0:** CLI/TUI (4 items), SSH Chat Interface (3 items)
