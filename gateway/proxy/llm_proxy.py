@@ -18,6 +18,7 @@ import ssl
 import time
 import urllib.error
 import urllib.request
+from collections.abc import AsyncIterator
 from typing import Any
 
 logger = logging.getLogger("agentshroud.proxy.llm_api")
@@ -178,6 +179,80 @@ class LLMProxy:
             resp_body = await self._filter_outbound_streaming(resp_body, user_id=user_id)
 
         return status, resp_headers, resp_body
+
+    async def proxy_messages_streaming(
+        self,
+        path: str,
+        body: bytes,
+        headers: dict[str, str],
+        user_id: str = "unknown",
+    ) -> AsyncIterator[bytes]:
+        """Proxy a streaming LLM API request, yielding SSE chunks as they arrive.
+
+        Used when the client sends stream:true.  Bypasses the buffering in
+        _forward_request so OpenClaw's 60-second HTTP fetch timeout is not
+        triggered while waiting for the first response byte from a slow model.
+        """
+        import httpx
+
+        self._stats["total_requests"] += 1
+
+        request_data = None
+        if body:
+            try:
+                request_data = json.loads(body)
+            except (json.JSONDecodeError, UnicodeDecodeError):
+                pass
+
+        # Inbound scanning (same as proxy_messages)
+        if request_data:
+            await self._scan_request_data(request_data, user_id)
+            body = json.dumps(request_data).encode()
+
+        # Determine target URL (same routing logic as proxy_messages)
+        model_name = (request_data or {}).get("model", "")
+        is_openai = "/v1/chat/completions" in path or "/v1/completions" in path
+        is_google = "/v1beta" in path or "google" in path.lower()
+        model_lower = model_name.lower()
+        local_keywords = ["qwen", "llama", "mistral", "deepseek", "phi", "ollama", "lmstudio", "mlxlm"]
+        is_ollama = any(k in model_lower for k in local_keywords) or model_lower.startswith("ollama/") or model_lower.startswith("lmstudio/")
+
+        base_url = ANTHROPIC_API_BASE
+        if is_ollama:
+            base_url = OLLAMA_API_BASE
+            for prefix, route_url in LOCAL_MODEL_ROUTES.items():
+                if model_lower.startswith(prefix):
+                    base_url = route_url
+                    break
+        elif is_openai:
+            base_url = OPENAI_API_BASE
+        elif is_google:
+            base_url = GOOGLE_API_BASE
+
+        url = f"{base_url}{path}"
+
+        forward_headers: dict[str, str] = {}
+        allowed_headers = (
+            "authorization", "x-api-key", "anthropic-version", "anthropic-beta",
+            "content-type", "accept", "user-agent", "x-goog-api-key",
+        )
+        for key, value in headers.items():
+            if key.lower() in allowed_headers:
+                forward_headers[key] = value
+
+        async def _stream() -> AsyncIterator[bytes]:
+            try:
+                async with httpx.AsyncClient(verify=True, timeout=httpx.Timeout(5.0, read=600.0)) as client:
+                    async with client.stream("POST", url, content=body, headers=forward_headers) as response:
+                        async for chunk in response.aiter_bytes():
+                            if chunk:
+                                yield chunk
+            except Exception as e:
+                logger.error("LLM proxy streaming error: %s", e)
+                err = json.dumps({"type": "error", "error": {"type": "api_error", "message": str(e)}})
+                yield f"data: {err}\n\n".encode()
+
+        return _stream()
 
     async def _scan_request_data(self, request_data: dict, user_id: str):
         """Scan request data for PII and injection across different provider formats."""
