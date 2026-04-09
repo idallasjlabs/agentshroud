@@ -179,9 +179,9 @@ declare -a SECRET_DEFS=(
     "anthropic_oauth_token|Claude OAuth token (sk-ant-oat01-...)|yes|no"
     "openai_api_key|OpenAI API key|yes|yes"
     "google_api_key|Google API key|yes|yes"
-    "1password_bot_email|1Password account email|no|no"
-    "1password_bot_master_password|1Password master password|yes|no"
-    "1password_bot_secret_key|1Password secret key (A3-...)|yes|no"
+    "1password_bot_email|1Password account email|no|yes"
+    "1password_bot_master_password|1Password master password|yes|yes"
+    "1password_bot_secret_key|1Password secret key (A3-...)|yes|yes"
     "telegram_bot_token_production|Telegram bot token (production)|yes|no"
     "telegram_bot_token_marvin|Telegram bot token (marvin dev)|yes|yes"
     "telegram_bot_token_trillian|Telegram bot token (trillian dev)|yes|yes"
@@ -269,8 +269,9 @@ cmd_extract() {
         echo "All required secrets extracted to ${SECRETS_DIR}/"
         echo "Next: scripts/asb up"
     else
-        echo "Some required secrets were missing. Run './docker/setup-secrets.sh store' first."
-        exit 1
+        echo "Some secrets were missing. Run './docker/setup-secrets.sh store' to configure them."
+        echo "The stack will start in degraded mode — unconfigured features will be disabled."
+        return 1
     fi
 }
 
