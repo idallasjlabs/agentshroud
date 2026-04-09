@@ -71,32 +71,24 @@ setup_ephemeral_secrets() {
   rm -rf "$tmpdir"
   mkdir -p "$tmpdir"
 
-  # Extract secrets from credential backend → tmpdir (suppress interactive banner)
-  AGENTSHROUD_SECRETS_DIR="$tmpdir" "$REPO_DIR/docker/setup-secrets.sh" extract || {
-    echo "ERROR: secret extraction failed" >&2; exit 1
-  }
-
-  # Create empty placeholders for ALL secrets referenced in the compose override
-  # so Docker Compose does not refuse to start when a secret was not stored.
-  # Required secrets that are actually empty will cause runtime failures (not
-  # bind-mount failures), which produces a clearer error message.
+  # ── Step 1: Create empty placeholders for ALL secrets referenced in the
+  # compose override. This must happen BEFORE extract so Docker Compose always
+  # has valid bind-mount source paths even when a secret was never stored.
+  # Real values from the credential backend overwrite these in Step 3.
   for name in gateway_password anthropic_oauth_token openai_api_key google_api_key \
               1password_bot_email 1password_bot_master_password 1password_bot_secret_key \
-              telegram_bot_token_production \
+              telegram_bot_token_production telegram_bot_token_marvin \
+              telegram_bot_token_trillian telegram_bot_token_rpi \
               slack_bot_token slack_signing_secret slack_app_token; do
-    [ -f "$tmpdir/${name}.txt" ] || touch "$tmpdir/${name}.txt"
+    touch "$tmpdir/${name}.txt"
   done
 
-  # The Docker daemon inside the Colima VM runs under a different UID and cannot
-  # stat files created with chmod 600. Relax permissions on this ephemeral tmpdir
-  # (including placeholders just created) so the daemon can bind-mount the files.
-  # The directory is cleaned up on EXIT.
-  chmod 755 "$tmpdir"
-  chmod 644 "$tmpdir"/*.txt 2>/dev/null || true
-  # Flush filesystem writes so Colima's virtiofs sees them before Docker tries to
-  # bind-mount. Without this, newly created placeholder files may not be visible
-  # to the Docker daemon inside the VM.
-  sync
+  # Auto-generate gateway_password so containers always have a valid auth token
+  # even when no credential backend is configured (e.g. brand-new machine).
+  if ! python3 -c "import secrets; print(secrets.token_hex(32), end='')" \
+      > "$tmpdir/gateway_password.txt" 2>/dev/null; then
+    openssl rand -hex 32 > "$tmpdir/gateway_password.txt"
+  fi
 
   # Determine which telegram_bot_token variant to use for this host/user.
   # Falls back to production token if the host-specific token was not stored.
@@ -109,16 +101,13 @@ setup_ephemeral_secrets() {
       raspberrypi*)  host_tg_file="telegram_bot_token_rpi.txt" ;;
       *)             host_tg_file="" ;;
     esac
-    if [[ -n "$host_tg_file" && -s "$tmpdir/$host_tg_file" ]]; then
-      tg_file="$host_tg_file"
-    else
-      echo "  NOTE: host-specific token '$host_tg_file' not found — using production token"
-    fi
+    # Select host-specific token after extract runs (may be populated then).
+    # Record the desired filename; the post-extract logic below will check -s.
+    [ -n "$host_tg_file" ] && tg_file="$host_tg_file"
   fi
 
-  # Generate a compose override that redirects all secrets: file: entries to
-  # the tmpdir. This override is appended last in the -f chain so it wins over
-  # any base or host-specific overlay definitions.
+  # ── Step 2: Generate the compose override pointing to the tmpdir.
+  # Done before extract so the override always exists regardless of extract outcome.
   local override="$tmpdir/docker-compose.secrets-override.yml"
   cat > "$override" << YAML
 secrets:
@@ -145,6 +134,60 @@ secrets:
   slack_app_token:
     file: ${tmpdir}/slack_app_token.txt
 YAML
+
+  # ── Step 3: Extract real secrets from credential backend (best-effort).
+  # A missing or locked backend is not fatal — placeholders ensure the stack
+  # starts in degraded mode with clear runtime warnings instead of a hard
+  # bind-mount error. New users and dev instances without all secrets stored
+  # will start successfully; unconfigured features log "not configured".
+  AGENTSHROUD_SECRETS_DIR="$tmpdir" "$REPO_DIR/docker/setup-secrets.sh" extract \
+    || echo "  WARN: secret extraction incomplete — starting with available secrets only" >&2
+
+  # If a host-specific token was populated by extract, use it; otherwise fall
+  # back to production token (which may also be empty on a fresh machine).
+  if [ "$USER" = "agentshroud-bot" ] && [ -n "${host_tg_file:-}" ]; then
+    if [ -s "$tmpdir/$host_tg_file" ]; then
+      tg_file="$host_tg_file"
+    else
+      echo "  NOTE: host-specific token '$host_tg_file' not found — using production token"
+      tg_file="telegram_bot_token_production.txt"
+    fi
+    # Rewrite override with the resolved tg_file (may have changed after extract).
+    cat > "$override" << YAML
+secrets:
+  gateway_password:
+    file: ${tmpdir}/gateway_password.txt
+  anthropic_oauth_token:
+    file: ${tmpdir}/anthropic_oauth_token.txt
+  openai_api_key:
+    file: ${tmpdir}/openai_api_key.txt
+  google_api_key:
+    file: ${tmpdir}/google_api_key.txt
+  1password_bot_email:
+    file: ${tmpdir}/1password_bot_email.txt
+  1password_bot_master_password:
+    file: ${tmpdir}/1password_bot_master_password.txt
+  1password_bot_secret_key:
+    file: ${tmpdir}/1password_bot_secret_key.txt
+  telegram_bot_token:
+    file: ${tmpdir}/${tg_file}
+  slack_bot_token:
+    file: ${tmpdir}/slack_bot_token.txt
+  slack_signing_secret:
+    file: ${tmpdir}/slack_signing_secret.txt
+  slack_app_token:
+    file: ${tmpdir}/slack_app_token.txt
+YAML
+  fi
+
+  # The Docker daemon inside the Colima VM runs under a different UID and cannot
+  # stat files created with chmod 600. Relax permissions on this ephemeral tmpdir
+  # so the daemon can bind-mount the files.
+  chmod 755 "$tmpdir"
+  chmod 644 "$tmpdir"/*.txt 2>/dev/null || true
+  # Flush filesystem writes so Colima's virtiofs sees them before Docker tries to
+  # bind-mount. Without this, newly created files may not be visible to the daemon.
+  sync
 
   COMPOSE="$COMPOSE -f $override"
 }
