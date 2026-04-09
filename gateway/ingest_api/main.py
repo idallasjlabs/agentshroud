@@ -4096,11 +4096,33 @@ async def llm_api_proxy(request: Request, path: str):
     # The bot sets X-AgentShroud-User-Id on every request (owner or collaborator Telegram ID).
     user_id = headers.get("x-agentshroud-user-id", "unknown")
 
+    # Detect streaming request — stream directly to avoid buffering the entire SSE response,
+    # which would cause OpenClaw's 60s HTTP fetch timeout to fire before the first byte arrives.
+    is_streaming_request = False
+    if body:
+        try:
+            is_streaming_request = bool(json.loads(body).get("stream", False))
+        except (json.JSONDecodeError, UnicodeDecodeError):
+            pass
+
+    if is_streaming_request:
+        from starlette.responses import StreamingResponse
+
+        stream_gen = await llm_proxy.proxy_messages_streaming(
+            f"/v1/{path}", body, headers, user_id=user_id
+        )
+        return StreamingResponse(
+            stream_gen,
+            status_code=200,
+            media_type="text/event-stream",
+            headers={"Cache-Control": "no-cache", "X-Accel-Buffering": "no"},
+        )
+
     status_code, resp_headers, resp_body = await llm_proxy.proxy_messages(
         f"/v1/{path}", body, headers, user_id=user_id
     )
 
-    # Check if streaming response
+    # Check if streaming response (non-streaming requests that returned SSE)
     content_type = resp_headers.get("content-type", "")
     if "text/event-stream" in content_type:
         import io
