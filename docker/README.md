@@ -240,6 +240,22 @@ docker ps | grep openclaw
 
 ---
 
+## Startup Warnings Reference
+
+Normal startup produces several warnings that are expected and harmless. This section explains each one so new users know what to ignore.
+
+| Warning | Source | Meaning | Action required? |
+|---------|--------|---------|-----------------|
+| `⚠️  Gateway is binding to a non-loopback address` | OpenClaw | The bot gateway binds to `0.0.0.0:18789` so the AgentShroud gateway container (a different IP on the Docker network) can reach it. OpenClaw emits this warning whenever it isn't on loopback. The port is mapped as `127.0.0.1:18789` on the host and the Docker network is `internal: true` (no internet). Authentication is enforced by `AGENTSHROUD_GATEWAY_PASSWORD`. | ✅ No action — expected |
+| `⚠ iCloud app password: attempt N/6 failed — retrying in Xs` | start-agentshroud.sh | iCloud credentials load asynchronously. The gateway starts before they're ready. Retries resolve on their own within ~60 s if iCloud credentials are stored. | ✅ No action — resolves automatically |
+| `⚠ Brave Search API key unavailable` | start-agentshroud.sh | No Brave Search API key was found. Web search tool will be disabled but all other features work. | ℹ️ Optional — store key via `setup-secrets.sh store` if web search is needed |
+| `WARN: secret extraction incomplete — starting with available secrets only` | scripts/asb | `setup-secrets.sh extract` could not find one or more secrets in the credential backend. Containers start in degraded mode; unconfigured features are disabled at runtime. | ℹ️ Optional — run `docker/setup-secrets.sh store` to configure missing secrets |
+| `NOTE: host-specific token '...' not found — using production token` | scripts/asb | A host-specific Telegram bot token (e.g. `telegram_bot_token_marvin`) was not stored. Falls back to the production token. | ℹ️ Dev only — store a host token if you want a separate dev bot |
+| `WARNING: grammY SDK not found at .../openclaw/node_modules/grammy/...` | patch-telegram-sdk.sh | grammY is bundled inside `openclaw/dist/extensions/telegram/` (not at the legacy top-level path). The OpenClaw dist patch still runs and succeeds — see the following `OpenClaw dist: patched N file(s)` line. | ✅ No action — expected since OpenClaw 2026.x |
+| `op-proxy: disallowed reference blocked` | gateway | The bot requested a 1Password secret whose path isn't in `allowed_op_paths` in `agentshroud.yaml`. This is the gateway enforcing least-privilege on credential access. | ✅ No action unless a legitimate tool needs the path — add it to `allowed_op_paths` in `agentshroud.yaml` |
+
+---
+
 ## Next Steps (Phase 4+)
 
 Once chat is working:
