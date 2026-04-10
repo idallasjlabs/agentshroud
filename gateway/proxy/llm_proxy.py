@@ -94,7 +94,16 @@ class LLMProxy:
 
         # Detect local model (Ollama, LM Studio, or mlx_lm)
         model_name = request_data.get("model", "") if request_data else ""
-        local_keywords = ["qwen", "llama", "mistral", "deepseek", "phi", "ollama", "lmstudio", "mlxlm"]
+        local_keywords = [
+            "qwen",
+            "llama",
+            "mistral",
+            "deepseek",
+            "phi",
+            "ollama",
+            "lmstudio",
+            "mlxlm",
+        ]
 
         # INTERCEPT: If the system tries to use Claude Opus, force it to use the configured local model
         if MODEL_MODE not in ("cloud",) and "claude-opus" in model_name.lower():
@@ -214,8 +223,21 @@ class LLMProxy:
         is_openai = "/v1/chat/completions" in path or "/v1/completions" in path
         is_google = "/v1beta" in path or "google" in path.lower()
         model_lower = model_name.lower()
-        local_keywords = ["qwen", "llama", "mistral", "deepseek", "phi", "ollama", "lmstudio", "mlxlm"]
-        is_ollama = any(k in model_lower for k in local_keywords) or model_lower.startswith("ollama/") or model_lower.startswith("lmstudio/")
+        local_keywords = [
+            "qwen",
+            "llama",
+            "mistral",
+            "deepseek",
+            "phi",
+            "ollama",
+            "lmstudio",
+            "mlxlm",
+        ]
+        is_ollama = (
+            any(k in model_lower for k in local_keywords)
+            or model_lower.startswith("ollama/")
+            or model_lower.startswith("lmstudio/")
+        )
 
         base_url = ANTHROPIC_API_BASE
         if is_ollama:
@@ -233,8 +255,14 @@ class LLMProxy:
 
         forward_headers: dict[str, str] = {}
         allowed_headers = (
-            "authorization", "x-api-key", "anthropic-version", "anthropic-beta",
-            "content-type", "accept", "user-agent", "x-goog-api-key",
+            "authorization",
+            "x-api-key",
+            "anthropic-version",
+            "anthropic-beta",
+            "content-type",
+            "accept",
+            "user-agent",
+            "x-goog-api-key",
         )
         for key, value in headers.items():
             if key.lower() in allowed_headers:
@@ -242,14 +270,20 @@ class LLMProxy:
 
         async def _stream() -> AsyncIterator[bytes]:
             try:
-                async with httpx.AsyncClient(verify=True, timeout=httpx.Timeout(5.0, read=600.0)) as client:
-                    async with client.stream("POST", url, content=body, headers=forward_headers) as response:
+                async with httpx.AsyncClient(
+                    verify=True, timeout=httpx.Timeout(5.0, read=600.0)
+                ) as client:
+                    async with client.stream(
+                        "POST", url, content=body, headers=forward_headers
+                    ) as response:
                         async for chunk in response.aiter_bytes():
                             if chunk:
                                 yield chunk
             except Exception as e:
                 logger.error("LLM proxy streaming error: %s", e)
-                err = json.dumps({"type": "error", "error": {"type": "api_error", "message": str(e)}})
+                err = json.dumps(
+                    {"type": "error", "error": {"type": "api_error", "message": str(e)}}
+                )
                 yield f"data: {err}\n\n".encode()
 
         return _stream()
