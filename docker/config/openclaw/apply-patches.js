@@ -538,6 +538,17 @@ if (telegramToken) {
     changed = true;
   }
 
+  // Set channels.telegram.apiRoot so OpenClaw's file download path
+  // (downloadAndSaveTelegramFile) routes photo/media downloads through the
+  // gateway proxy rather than calling api.telegram.org directly, which fails
+  // because the bot container is on an isolated (internal: true) network.
+  const telegramApiBase = process.env.TELEGRAM_API_BASE_URL;
+  if (telegramApiBase && config.channels.telegram.apiRoot !== telegramApiBase) {
+    config.channels.telegram.apiRoot = telegramApiBase;
+    console.log('[init-patch] Set channels.telegram.apiRoot = ' + telegramApiBase);
+    changed = true;
+  }
+
   // SECURITY NOTE: dmPolicy="open" + allowFrom=["*"] is required because OpenClaw's
   // "pairing" mode (default) drops messages without a prior /start handshake, which
   // prevents the gateway from delivering local command responses (/status, /approve, etc.)
