@@ -353,6 +353,7 @@ async def test_system_bypass_domain_logs_external_decision(monkeypatch):
 @pytest.mark.asyncio
 async def test_system_bypass_without_egress_filter(monkeypatch):
     """System bypass domains should not error when egress_filter is None."""
+
     async def _open_conn(_host, _port):
         r = asyncio.StreamReader()
         r.feed_eof()
