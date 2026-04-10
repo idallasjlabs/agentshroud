@@ -82,6 +82,12 @@ check "S6: setup-secrets.sh: read_secret_masked routes display to /dev/tty" \
     "$(grep -q '> /dev/tty' "$secrets_sh" && echo true || echo false)" \
     "Display output on stdout corrupts captured secret value (garbled token bug)"
 
+# S7: apply-patches.js removes stale channels.slack block when tokens are absent
+# Prevents invalid_auth crash loop when config volume has Slack block from a previous run.
+check "S7: apply-patches.js: stale channels.slack block removed when no tokens" \
+    "$(grep -q 'delete config.channels.slack' "$apply_js" && echo true || echo false)" \
+    "Stale Slack block not removed — causes invalid_auth crash loop on restart"
+
 # ── Summary ────────────────────────────────────────────────────────────────
 echo ""
 total=$(( pass + fail ))

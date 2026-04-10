@@ -170,6 +170,29 @@ console.log('\n=== test_apply_patches.js ===\n');
   );
 }
 
+// A6: Stale Slack block REMOVED when tokens are absent (prevent invalid_auth crash loop)
+{
+  const staleConfig = {
+    channels: {
+      telegram: { token: 'fake' },
+      slack: { enabled: true, mode: 'socket', botToken: 'xoxb-old', appToken: 'xapp-old' },
+    },
+  };
+  const cfg = runPatches(
+    {
+      SLACK_BOT_TOKEN: '',
+      SLACK_APP_TOKEN: '',
+      TELEGRAM_API_BASE_URL: 'http://gateway:8080/telegram-api',
+    },
+    staleConfig,
+  );
+  assert(
+    'A6: Stale channels.slack block removed when no valid tokens present',
+    cfg?.channels?.slack === undefined,
+    `channels.slack = ${JSON.stringify(cfg?.channels?.slack)}`,
+  );
+}
+
 // ── Summary ────────────────────────────────────────────────────────────────
 
 console.log(`\n${pass + fail} assertions: ${pass} passed, ${fail} failed\n`);
