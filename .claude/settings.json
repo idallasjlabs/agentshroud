@@ -1,6 +1,7 @@
 {
+  "model": "opusplan",
+
   "permissions": {
-    "defaultMode": "plan",
     "allow": [
       "Bash(chmod:*)",
       "Bash(python:*)",
@@ -9,12 +10,7 @@
       "Bash(ruff:*)",
       "Bash(black:*)",
       "Bash(pytest:*)"
-    ]
-  },
-
-  "model": "opusplan",
-
-  "permissions": {
+    ],
     "deny": [
       "Read(docker/secrets/**)",
       "Read(.agentshroud/secrets/**)",
@@ -41,6 +37,24 @@
           {
             "type": "command",
             "command": ".claude/scripts/claude-hooks/block_credential_read.sh"
+          }
+        ]
+      },
+      {
+        "matcher": "tools:EditTool",
+        "hooks": [
+          {
+            "type": "command",
+            "command": ".claude/scripts/claude-hooks/block_credential_write.sh"
+          }
+        ]
+      },
+      {
+        "matcher": "tools:WriteTool",
+        "hooks": [
+          {
+            "type": "command",
+            "command": ".claude/scripts/claude-hooks/block_credential_write.sh"
           }
         ]
       }
