@@ -245,6 +245,7 @@ case "${1:-}" in
   up)
     setup_ephemeral_secrets
     $COMPOSE up -d
+    bash "$REPO_DIR/scripts/post-deploy-check.sh" || true
     ;;
   down)
     $COMPOSE down
@@ -254,6 +255,7 @@ case "${1:-}" in
     _prune_docker
     setup_ephemeral_secrets
     $COMPOSE build --no-cache && $COMPOSE up -d
+    bash "$REPO_DIR/scripts/post-deploy-check.sh" || true
     ;;
   clean-rebuild)
     echo "This will remove containers, prune stale volumes, and rebuild from scratch."

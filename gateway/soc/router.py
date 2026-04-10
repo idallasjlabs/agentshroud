@@ -14,8 +14,8 @@ Every handler:
 from __future__ import annotations
 
 import asyncio
-import json
 import hashlib
+import json
 import logging
 import os
 import urllib.error
