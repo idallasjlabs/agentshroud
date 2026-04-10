@@ -124,11 +124,13 @@ get_secret() {
 read_secret_masked() {
     local prompt="$1" optional="${2:-}"
     local value="" char
-    echo ""
+    # All display output (prompt, asterisks, newlines) goes to /dev/tty so that
+    # callers using value="$(read_secret_masked ...)" only capture the actual secret.
+    echo "" > /dev/tty
     if [[ "$optional" == "optional" ]]; then
-        printf "  → %s (press Enter to skip): " "$prompt"
+        printf "  → %s (press Enter to skip): " "$prompt" > /dev/tty
     else
-        printf "  → %s: " "$prompt"
+        printf "  → %s: " "$prompt" > /dev/tty
     fi
     while IFS= read -r -s -n1 char; do
         if [[ "$char" == $'\0' || "$char" == $'\n' ]]; then
@@ -136,17 +138,17 @@ read_secret_masked() {
         elif [[ "$char" == $'\177' || "$char" == $'\b' ]]; then
             if [[ ${#value} -gt 0 ]]; then
                 value="${value%?}"
-                printf '\b \b'
+                printf '\b \b' > /dev/tty
             fi
         else
             value+="$char"
-            printf '*'
+            printf '*' > /dev/tty
         fi
     done
-    printf '\n'
+    printf '\n' > /dev/tty
     if [[ -z "$value" ]]; then
         if [[ "$optional" == "optional" ]]; then
-            echo ""
+            echo "" > /dev/tty
             return
         fi
         echo "Error: value required." >&2
