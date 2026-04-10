@@ -9,8 +9,13 @@ set -euo pipefail
 # when the host Docker CLI is newer than the Docker Engine inside the Colima VM.
 export DOCKER_API_VERSION="${DOCKER_API_VERSION:-1.53}"
 
-# Ensure the Colima Docker socket is group-writable (required on macOS with Colima)
-chmod g+rw /Users/ijefferson.admin/.colima/default/docker.sock 2>/dev/null || true
+# Ensure the Colima Docker socket is group-writable (required on macOS with Colima).
+# Each user runs their own Colima VM; DOCKER_HOST selects the correct socket.
+_COLIMA_SOCK="$HOME/.colima/default/docker.sock"
+if [ -S "$_COLIMA_SOCK" ]; then
+  chmod g+rw "$_COLIMA_SOCK" 2>/dev/null || true
+  export DOCKER_HOST="unix://$_COLIMA_SOCK"
+fi
 
 HOST=$(hostname -s)
 SCRIPT_PATH="${BASH_SOURCE[0]}"
