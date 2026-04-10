@@ -14,6 +14,9 @@
 //   A3. Slack channels block is added when xoxb-/xapp- tokens are present.
 //   A4. Slack channels block is NOT added when tokens are empty.
 //   A5. Slack channels block is NOT added when tokens lack xoxb-/xapp- prefix.
+//   A6. Stale Slack block removed when tokens are absent.
+//   A7. Garbled multi-line Telegram token blob is rejected (shape guard) — botToken NOT written.
+//   A8. Well-formed Telegram token is accepted and written to channels.telegram.botToken.
 
 'use strict';
 
@@ -91,7 +94,7 @@ console.log('\n=== test_apply_patches.js ===\n');
 {
   const cfg = runPatches(
     {
-      TELEGRAM_BOT_TOKEN: 'fake-bot-token-for-test',
+      TELEGRAM_BOT_TOKEN: '1234567890:AAFakeFakeFakeFakeFakeFakeFakeFakeFake123',
       TELEGRAM_API_BASE_URL: 'http://gateway:8080/telegram-api',
     },
     baseConfig(),
@@ -109,7 +112,7 @@ console.log('\n=== test_apply_patches.js ===\n');
     channels: { telegram: { token: 'fake', apiRoot: 'http://existing:1234' } },
   };
   const cfg = runPatches({
-    TELEGRAM_BOT_TOKEN: 'fake-bot-token-for-test',
+    TELEGRAM_BOT_TOKEN: '1234567890:AAFakeFakeFakeFakeFakeFakeFakeFakeFake123',
     TELEGRAM_API_BASE_URL: '',
   }, base);
   assert(
@@ -190,6 +193,47 @@ console.log('\n=== test_apply_patches.js ===\n');
     'A6: Stale channels.slack block removed when no valid tokens present',
     cfg?.channels?.slack === undefined,
     `channels.slack = ${JSON.stringify(cfg?.channels?.slack)}`,
+  );
+}
+
+// A7: Garbled multi-line Telegram token is rejected — botToken NOT written to config
+// Regression test for the marvin-dev secret issue: a pre-017e7bd Keychain entry
+// that captured TUI output (label + asterisks + real token) instead of a bare value.
+{
+  const garbledToken = '\n  \u2192 Telegram bot token (marvin dev): **********************************************\n8736289266:AAGVzcmqiSaTSyPz5B8lJCcxkmZPg9jTe28';
+  const cfg = runPatches(
+    {
+      TELEGRAM_BOT_TOKEN: garbledToken,
+      TELEGRAM_API_BASE_URL: 'http://gateway:8080/telegram-api',
+    },
+    baseConfig(),
+  );
+  assert(
+    'A7: Garbled multi-line token: channels.telegram.botToken is NOT the full blob',
+    cfg?.channels?.telegram?.botToken !== garbledToken,
+    `got ${JSON.stringify(cfg?.channels?.telegram?.botToken)}`,
+  );
+  assert(
+    'A7b: Garbled multi-line token: last-line normalizer extracts the real token',
+    cfg?.channels?.telegram?.botToken === '8736289266:AAGVzcmqiSaTSyPz5B8lJCcxkmZPg9jTe28',
+    `got ${JSON.stringify(cfg?.channels?.telegram?.botToken)}`,
+  );
+}
+
+// A8: Well-formed Telegram token is written verbatim
+{
+  const validToken = '9876543210:BBValidTokenBBValidTokenBBValidToken1';
+  const cfg = runPatches(
+    {
+      TELEGRAM_BOT_TOKEN: validToken,
+      TELEGRAM_API_BASE_URL: 'http://gateway:8080/telegram-api',
+    },
+    baseConfig(),
+  );
+  assert(
+    'A8: Well-formed Telegram token written verbatim to channels.telegram.botToken',
+    cfg?.channels?.telegram?.botToken === validToken,
+    `got ${JSON.stringify(cfg?.channels?.telegram?.botToken)}`,
   );
 }
 
