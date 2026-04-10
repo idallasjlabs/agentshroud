@@ -603,7 +603,7 @@ const slackAppToken = process.env.SLACK_APP_TOKEN || (() => {
   try { return fs.readFileSync('/run/secrets/slack_app_token', 'utf8').trim(); } catch (e) { return ''; }
 })();
 
-if (slackBotToken && slackAppToken) {
+if (slackBotToken && slackBotToken.startsWith('xoxb-') && slackAppToken && slackAppToken.startsWith('xapp-')) {
   config.channels = config.channels || {};
   config.channels.slack = config.channels.slack || {};
 
