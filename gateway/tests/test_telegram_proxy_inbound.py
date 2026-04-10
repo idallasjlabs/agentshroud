@@ -8863,10 +8863,12 @@ class TestFullAccessMiddlewareBypass:
         )
         result = await proxy._filter_inbound_updates(response)
 
-        assert result["result"], "full_access collaborator message must not be dropped by middleware"
-        assert not block_notices, (
-            f"full_access collaborator must not receive a block notice; got: {block_notices}"
-        )
+        assert result[
+            "result"
+        ], "full_access collaborator message must not be dropped by middleware"
+        assert (
+            not block_notices
+        ), f"full_access collaborator must not receive a block notice; got: {block_notices}"
 
     @pytest.mark.asyncio
     async def test_full_access_collaborator_passes_despite_multi_turn_middleware_block_without_interrogative(
@@ -8919,9 +8921,9 @@ class TestFullAccessMiddlewareBypass:
             "full_access collaborator message with imperative phrasing must not be dropped "
             "by multi-turn middleware block"
         )
-        assert not block_notices, (
-            f"full_access collaborator must not receive a block notice; got: {block_notices}"
-        )
+        assert (
+            not block_notices
+        ), f"full_access collaborator must not receive a block notice; got: {block_notices}"
 
     @pytest.mark.asyncio
     async def test_project_scoped_collaborator_still_blocked_by_middleware(self, monkeypatch):
@@ -8973,17 +8975,17 @@ class TestFullAccessMiddlewareBypass:
 
         # Confirm the payload would trigger the leakage filter normally
         trigger_text = "Here is a traceback from the system call you requested."
-        assert TelegramAPIProxy._contains_high_risk_collaborator_leakage(trigger_text), (
-            "Precondition: test payload must trigger the leakage filter"
-        )
+        assert TelegramAPIProxy._contains_high_risk_collaborator_leakage(
+            trigger_text
+        ), "Precondition: test payload must trigger the leakage filter"
 
         body = json.dumps({"chat_id": self.COLLAB, "text": trigger_text}).encode()
         result = await proxy._filter_outbound(body, "application/json")
         result_data = json.loads(result)
 
-        assert result_data.get("text") == trigger_text, (
-            f"full_access collaborator must receive the unblocked response; got: {result_data.get('text')!r}"
-        )
+        assert (
+            result_data.get("text") == trigger_text
+        ), f"full_access collaborator must receive the unblocked response; got: {result_data.get('text')!r}"
 
     @pytest.mark.asyncio
     async def test_default_collab_outbound_still_blocked_by_leakage_filter(self, monkeypatch):
@@ -8994,20 +8996,20 @@ class TestFullAccessMiddlewareBypass:
         proxy._bot_token = ""
 
         trigger_text = "Here is a traceback from the system call you requested."
-        assert TelegramAPIProxy._contains_high_risk_collaborator_leakage(trigger_text), (
-            "Precondition: test payload must trigger the leakage filter"
-        )
+        assert TelegramAPIProxy._contains_high_risk_collaborator_leakage(
+            trigger_text
+        ), "Precondition: test payload must trigger the leakage filter"
 
         body = json.dumps({"chat_id": self.COLLAB, "text": trigger_text}).encode()
         result = await proxy._filter_outbound(body, "application/json")
         result_data = json.loads(result)
 
-        assert result_data.get("text") != trigger_text, (
-            "local_only collaborator must have response replaced by the leakage filter"
-        )
-        assert "AgentShroud" in result_data.get("text", ""), (
-            "blocked response must contain the AgentShroud protection notice"
-        )
+        assert (
+            result_data.get("text") != trigger_text
+        ), "local_only collaborator must have response replaced by the leakage filter"
+        assert "AgentShroud" in result_data.get(
+            "text", ""
+        ), "blocked response must contain the AgentShroud protection notice"
 
     @pytest.mark.asyncio
     async def test_full_access_disclosure_text(self, monkeypatch):
@@ -9030,12 +9032,12 @@ class TestFullAccessMiddlewareBypass:
         await proxy._send_disclosure(int(self.COLLAB), user_id=self.COLLAB)
 
         assert sent_texts, "disclosure must have been sent"
-        assert "general access" in sent_texts[0].lower(), (
-            f"full_access disclosure must mention 'general access'; got: {sent_texts[0]!r}"
-        )
-        assert "security concepts" not in sent_texts[0].lower(), (
-            "full_access disclosure must NOT mention 'security concepts'"
-        )
+        assert (
+            "general access" in sent_texts[0].lower()
+        ), f"full_access disclosure must mention 'general access'; got: {sent_texts[0]!r}"
+        assert (
+            "security concepts" not in sent_texts[0].lower()
+        ), "full_access disclosure must NOT mention 'security concepts'"
 
     @pytest.mark.asyncio
     async def test_default_disclosure_text(self, monkeypatch):
@@ -9058,12 +9060,12 @@ class TestFullAccessMiddlewareBypass:
         await proxy._send_disclosure(int(self.COLLAB), user_id=self.COLLAB)
 
         assert sent_texts, "disclosure must have been sent"
-        assert "security concepts" in sent_texts[0].lower(), (
-            f"default disclosure must mention 'security concepts'; got: {sent_texts[0]!r}"
-        )
-        assert "general access" not in sent_texts[0].lower(), (
-            "default disclosure must NOT mention 'general access'"
-        )
+        assert (
+            "security concepts" in sent_texts[0].lower()
+        ), f"default disclosure must mention 'security concepts'; got: {sent_texts[0]!r}"
+        assert (
+            "general access" not in sent_texts[0].lower()
+        ), "default disclosure must NOT mention 'general access'"
 
     @pytest.mark.asyncio
     async def test_per_user_mode_override_controls_outbound_filter(self, monkeypatch):
@@ -9082,9 +9084,9 @@ class TestFullAccessMiddlewareBypass:
         monkeypatch.setattr(proxy, "_resolve_collaborator_mode", lambda uid: "full_access")
 
         trigger_text = "Here is a traceback from the system call you requested."
-        assert TelegramAPIProxy._contains_high_risk_collaborator_leakage(trigger_text), (
-            "Precondition: payload must trigger the leakage filter"
-        )
+        assert TelegramAPIProxy._contains_high_risk_collaborator_leakage(
+            trigger_text
+        ), "Precondition: payload must trigger the leakage filter"
 
         body = json.dumps({"chat_id": self.COLLAB, "text": trigger_text}).encode()
         result = await proxy._filter_outbound(body, "application/json")

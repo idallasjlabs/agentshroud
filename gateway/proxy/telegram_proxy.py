@@ -2960,7 +2960,9 @@ class TelegramAPIProxy:
                     elif tool_name == "web_search":
                         await self._trigger_web_search_log(chat_id, tool_args)
                         if not is_owner_chat:
-                            data[text_key] = self._collaborator_safe_notice("web search in progress")
+                            data[text_key] = self._collaborator_safe_notice(
+                                "web search in progress"
+                            )
                         else:
                             data[text_key] = (
                                 "🔍 Web search requested, but this model returned raw tool JSON instead of executing it. "
@@ -2974,7 +2976,9 @@ class TelegramAPIProxy:
                         approval_queued = await self._trigger_web_fetch_approval(chat_id, tool_args)
                         if not is_owner_chat:
                             if _is_full_access_fetch:
-                                data[text_key] = self._collaborator_safe_notice("web fetch in progress")
+                                data[text_key] = self._collaborator_safe_notice(
+                                    "web fetch in progress"
+                                )
                             else:
                                 data[text_key] = (
                                     _COLLABORATOR_EGRESS_NOTICE
@@ -3102,8 +3106,7 @@ class TelegramAPIProxy:
                 # allowed to receive general research/technical responses. The filter
                 # still applies to local_only/project_scoped tiers.
                 _is_full_access = (
-                    not is_owner_chat
-                    and self._resolve_collaborator_mode(chat_id) == "full_access"
+                    not is_owner_chat and self._resolve_collaborator_mode(chat_id) == "full_access"
                 )
                 if (
                     not is_owner_chat
@@ -3409,7 +3412,9 @@ class TelegramAPIProxy:
                     elif tool_name == "web_search":
                         await self._trigger_web_search_log(chat_id, tool_args)
                         if not is_owner_chat:
-                            data[text_key] = self._collaborator_safe_notice("web search in progress")
+                            data[text_key] = self._collaborator_safe_notice(
+                                "web search in progress"
+                            )
                         else:
                             data[text_key] = (
                                 "🔍 Web search requested, but this model returned raw tool JSON instead of executing it. "
@@ -3423,7 +3428,9 @@ class TelegramAPIProxy:
                         approval_queued = await self._trigger_web_fetch_approval(chat_id, tool_args)
                         if not is_owner_chat:
                             if _is_full_access_fetch:
-                                data[text_key] = self._collaborator_safe_notice("web fetch in progress")
+                                data[text_key] = self._collaborator_safe_notice(
+                                    "web fetch in progress"
+                                )
                             else:
                                 data[text_key] = (
                                     _COLLABORATOR_EGRESS_NOTICE
@@ -3567,8 +3574,7 @@ class TelegramAPIProxy:
                     data[text_key] = _COLLABORATOR_EGRESS_NOTICE
                     return urllib.parse.urlencode(data).encode()
                 _is_full_access_fe = (
-                    not is_owner_chat
-                    and self._resolve_collaborator_mode(chat_id) == "full_access"
+                    not is_owner_chat and self._resolve_collaborator_mode(chat_id) == "full_access"
                 )
                 if (
                     not is_owner_chat
@@ -6138,12 +6144,9 @@ class TelegramAPIProxy:
                             )
                         else:
                             reason_text = result.reason or ""
-                            if (
-                                self._resolve_collaborator_mode(user_id) == "full_access"
-                                or (
-                                    "multi-turn" in reason_text.lower()
-                                    and self._looks_like_safe_collaborator_info_query(text)
-                                )
+                            if self._resolve_collaborator_mode(user_id) == "full_access" or (
+                                "multi-turn" in reason_text.lower()
+                                and self._looks_like_safe_collaborator_info_query(text)
                             ):
                                 logger.info(
                                     "Allowing collaborator message despite middleware block"
@@ -6203,12 +6206,9 @@ class TelegramAPIProxy:
                             )
                         else:
                             block_reason = pipeline_result.block_reason or ""
-                            if (
-                                self._resolve_collaborator_mode(user_id) == "full_access"
-                                or (
-                                    "multi-turn" in block_reason.lower()
-                                    and self._looks_like_safe_collaborator_info_query(text)
-                                )
+                            if self._resolve_collaborator_mode(user_id) == "full_access" or (
+                                "multi-turn" in block_reason.lower()
+                                and self._looks_like_safe_collaborator_info_query(text)
                             ):
                                 logger.info(
                                     "Allowing collaborator message despite pipeline block"

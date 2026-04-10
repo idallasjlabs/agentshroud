@@ -656,6 +656,14 @@ if (slackBotToken && slackBotToken.startsWith('xoxb-') && slackAppToken && slack
   console.log('[init-patch] Patched channels.slack (Socket Mode, dmPolicy=open)');
 } else {
   console.log('[init-patch] Slack tokens not found — skipping channels.slack patch');
+  // Remove a stale channels.slack block that may have been written in a previous run when
+  // tokens were valid.  Leaving it causes openclaw to attempt Slack Socket Mode with expired
+  // or missing credentials, producing an 'invalid_auth' uncaught exception at startup.
+  if (config.channels && Object.prototype.hasOwnProperty.call(config.channels, 'slack')) {
+    delete config.channels.slack;
+    console.log('[init-patch] Removed stale channels.slack block (no valid tokens present)');
+    changed = true;
+  }
 }
 
 if (changed || isNew) {

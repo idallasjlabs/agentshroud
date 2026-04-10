@@ -14,6 +14,17 @@
 
   "model": "opusplan",
 
+  "permissions": {
+    "deny": [
+      "Read(docker/secrets/**)",
+      "Read(.agentshroud/secrets/**)",
+      "Read(/run/secrets/**)",
+      "Read(**/history.env)",
+      "Read(**/.env)",
+      "Read(**/.env.*)"
+    ]
+  },
+
   "hooks": {
     "PreToolUse": [
       {
@@ -22,6 +33,14 @@
           {
             "type": "command",
             "command": ".claude/scripts/claude-hooks/warn_dangerous_bash.sh"
+          },
+          {
+            "type": "command",
+            "command": ".claude/scripts/claude-hooks/block_main_commits.sh"
+          },
+          {
+            "type": "command",
+            "command": ".claude/scripts/claude-hooks/block_credential_read.sh"
           }
         ]
       }

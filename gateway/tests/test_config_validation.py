@@ -288,7 +288,9 @@ class TestConfigValidation:
             pytest.skip("start-agentshroud.sh not available in this environment")
         script = path.read_text()
         assert 'OPENCLAW_BIND_MODE="${OPENCLAW_GATEWAY_BIND:-loopback}"' in script
-        assert 'openclaw gateway --allow-unconfigured --bind "${OPENCLAW_BIND_MODE}"' in script
+        # The invocation was updated to pass --stack-size via node directly (ARM64 stack overflow fix).
+        # Assert the bind flag is passed regardless of the exact invocation form.
+        assert '--bind "${OPENCLAW_BIND_MODE}"' in script
 
     def test_main_compose_sets_openclaw_bind_lan_default(self):
         """Primary compose stack should bind OpenClaw gateway to lan by default for host Control UI access."""
