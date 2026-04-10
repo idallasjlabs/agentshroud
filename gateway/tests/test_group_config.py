@@ -3,11 +3,11 @@
 
 from __future__ import annotations
 
-import pytest
-
 import json
 import tempfile
 from pathlib import Path
+
+import pytest
 
 from gateway.security.group_config import (
     GroupConfig,
