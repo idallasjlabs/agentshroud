@@ -197,7 +197,7 @@ services:
       - HTTP_PROXY=http://gateway:8181
       - HTTPS_PROXY=http://gateway:8181
       - NO_PROXY=gateway,localhost,127.0.0.1
-      - NODE_OPTIONS=--require /app/config-defaults/openclaw/setup-https-proxy.js --stack-size=65536
+      - NODE_OPTIONS=--require /app/config-defaults/openclaw/setup-https-proxy.js
       - GATEWAY_OP_PROXY_URL=http://gateway:8080
       - ANTHROPIC_BASE_URL=http://gateway:8080
       - OPENAI_BASE_URL=http://gateway:8080

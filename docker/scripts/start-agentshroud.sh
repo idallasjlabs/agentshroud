@@ -253,7 +253,7 @@ fi
 # Start AgentShroud gateway (powered by OpenClaw CLI)
 echo "[startup] Starting AgentShroud gateway..."
 OPENCLAW_BIND_MODE="${OPENCLAW_GATEWAY_BIND:-loopback}"
-openclaw gateway --allow-unconfigured --bind "${OPENCLAW_BIND_MODE}" &
+node --stack-size=65536 "$(command -v openclaw)" gateway --allow-unconfigured --bind "${OPENCLAW_BIND_MODE}" &
 OPENCLAW_PID=$!
 
 # Telegram notification helpers — ALL traffic routes through AgentShroud gateway
