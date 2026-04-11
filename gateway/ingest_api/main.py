@@ -171,7 +171,7 @@ logger = logging.getLogger("agentshroud.gateway.main")
 app = FastAPI(
     title="AgentShroud Gateway",
     description="Ingest API for the AgentShroud proxy layer framework",
-    version="1.0.39",
+    version="1.0.43",
     lifespan=lifespan,
 )
 
@@ -442,7 +442,7 @@ async def system_control(auth: AuthRequired):
 
         <div class="status">
             <h2 class="healthy">● System Status: HEALTHY</h2>
-            <div class="metric">Version: 1.0.39</div>
+            <div class="metric">Version: 1.0.43</div>
             <div class="metric">Uptime: {int(uptime)}s</div>
             <div class="metric">PII Engine: {app_state.sanitizer.get_mode()}</div>
         </div>
@@ -4042,7 +4042,7 @@ async def get_soc2_compliance_report(auth: AuthRequired):
 
     return {
         "standard": "SOC 2 Type II — Trust Service Criteria",
-        "version": "v1.0.39",
+        "version": "v1.0.43",
         "criteria_total": len(criteria),
         "criteria_covered": len(covered),
         "criteria_gaps": len(gaps),
