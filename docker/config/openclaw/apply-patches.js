@@ -528,8 +528,23 @@ if (missingProxies.length > 0) {
 }
 
 // Patch 3: Telegram
-const telegramToken = process.env.TELEGRAM_BOT_TOKEN;
-if (telegramToken) {
+// Normalize: if the env var is a garbled multi-line blob (label + asterisks +
+// real token — written by pre-017e7bd setup-secrets.sh), extract the last
+// non-empty line. For a clean single-line value this is a no-op.
+const telegramTokenRaw = process.env.TELEGRAM_BOT_TOKEN || '';
+const telegramToken = telegramTokenRaw.split('\n').map((s) => s.trim()).filter(Boolean).pop() || '';
+// Shape guard: Telegram bot tokens are always "<digits>:<35+ alphanum/dash/underscore>".
+// Reject anything that doesn't match to prevent a garbled blob from being written to
+// openclaw.json, which would crash-loop the bot with 404s on every API call.
+const _TELEGRAM_TOKEN_RE = /^\d+:[A-Za-z0-9_-]{35,}$/;
+if (telegramToken && !_TELEGRAM_TOKEN_RE.test(telegramToken)) {
+  console.warn(
+    '[init-patch] TELEGRAM_BOT_TOKEN is present but does not match Telegram bot-token shape' +
+    ' — refusing to inject. Check secret backend for garbled multi-line value' +
+    ' (re-run setup-secrets.sh store/extract on this host to fix).',
+  );
+}
+if (telegramToken && _TELEGRAM_TOKEN_RE.test(telegramToken)) {
   config.channels = config.channels || {};
   config.channels.telegram = config.channels.telegram || {};
 

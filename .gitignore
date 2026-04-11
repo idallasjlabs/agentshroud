@@ -198,6 +198,8 @@ api_keys.txt
 *password*
 *secret*
 *token*
+# Allowlist: test utilities for secrets modules (no real secrets — only test fixtures and mocks)
+!gateway/tests/test_utils_secrets.py
 # SSH & GPG
 # AWS & CLOUD
 .aws/
