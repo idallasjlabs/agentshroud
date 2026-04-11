@@ -4,8 +4,20 @@
       "command": ".llm_settings/mcp-servers/github/github-mcp-wrapper.sh",
       "args": []
     },
-    "atlassian": {
+    "atlassian-fluence": {
       "command": ".llm_settings/mcp-servers/atlassian/mcp-atlassian.sh",
+      "args": [],
+      "timeout": 1800000,
+      "trust": false
+    },
+    "atlassian-agentshroud": {
+      "command": ".llm_settings/mcp-servers/atlassian/agentshroud/mcp-atlassian.sh",
+      "args": [],
+      "timeout": 1800000,
+      "trust": false
+    },
+    "atlassian-idallasj": {
+      "command": ".llm_settings/mcp-servers/atlassian/idallasj/mcp-atlassian.sh",
       "args": [],
       "timeout": 1800000,
       "trust": false
