@@ -96,6 +96,20 @@ jobs:
         # paths allowlist in .gitleaks.toml.
         run: gitleaks detect --source . --log-opts="c628add..HEAD" --redact
 
+  smoke-static:
+    name: Startup Smoke Tests (static)
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Run startup smoke tests
+        run: node tests/startup_smoke/test_apply_patches.js
+
   lint:
     runs-on: ubuntu-latest
     steps:
