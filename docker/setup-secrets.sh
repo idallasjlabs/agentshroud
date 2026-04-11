@@ -120,6 +120,15 @@ get_secret() {
     esac
 }
 
+# Extract the last non-empty line from stdin.
+# Handles garbled multi-line blobs stored before the 017e7bd write-path fix —
+# e.g. Keychain/homedir entries that captured TUI output (label + asterisks +
+# real value) via $(read_secret_masked). The real secret is always on the last
+# non-empty line; for clean single-line values the output is identical.
+normalize_secret() {
+    awk 'NF {last=$0} END {print last}'
+}
+
 # ── Masked interactive reader ──────────────────────────────────────────────────
 read_secret_masked() {
     local prompt="$1" optional="${2:-}"
@@ -250,7 +259,7 @@ cmd_extract() {
     ok=true
     for entry in "${extract_defs[@]}"; do
         IFS='|' read -r name optional <<< "$entry"
-        value="$(get_secret "$name")"
+        value="$(get_secret "$name" | normalize_secret)"
         if [[ -z "$value" ]]; then
             if [[ "$optional" == "yes" ]]; then
                 echo "  [skipped] $name — not stored (optional)"
