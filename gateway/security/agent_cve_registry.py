@@ -207,6 +207,180 @@ AGENT_CVE_REGISTRY: list[dict[str, Any]] = [
         ],
     },
     {
+        "id": "CVE-2026-32922",
+        "title": "Token Scope Expansion via device.token.rotate",
+        "cvss": 9.9,
+        "severity": "CRITICAL",
+        "disclosed": "2026-03-29",
+        "fixed_in": "2026.3.29",
+        "description": (
+            "device.token.rotate fails to constrain newly minted token scopes to "
+            "the caller's existing scope set, allowing any paired device to self-issue "
+            "operator.admin tokens — full admin takeover without credentials."
+        ),
+        "status": "fully_mitigated",
+        "mitigation": (
+            "AgentShroud does not use OpenClaw's device token system for authorization. "
+            "All admin actions require RBAC role from verified Telegram/Slack identity "
+            "(rbac.py + rbac_config.py). OpenClaw WS endpoint is on the isolated "
+            "internal Docker network unreachable externally."
+        ),
+        "defense_layers": ["rbac", "server_side_roles", "network_isolation", "verified_identity"],
+    },
+    {
+        "id": "CVE-2026-35660",
+        "title": "Insufficient Access Control in Gateway /reset Endpoint",
+        "cvss": 8.1,
+        "severity": "HIGH",
+        "disclosed": "2026-03-30",
+        "fixed_in": "2026.3.23",
+        "description": (
+            "The Gateway agent /reset endpoint accepts operator.write scope where "
+            "operator.admin is required, allowing scope-downgraded callers to reset "
+            "arbitrary admin sessions."
+        ),
+        "status": "fully_mitigated",
+        "mitigation": (
+            "AgentShroud RBAC enforces check_permission() on every SOC endpoint "
+            "server-side; OpenClaw's internal /reset route is unreachable directly. "
+            "ProgressiveLockdown escalates repeated unauthorized access attempts. "
+            "Internal Docker network prevents external callers from reaching the route."
+        ),
+        "defense_layers": ["rbac", "check_permission", "progressive_lockdown", "network_isolation"],
+    },
+    {
+        "id": "CVE-2026-35650",
+        "title": "Environment Variable Override Bypass",
+        "cvss": 6.3,
+        "severity": "MEDIUM",
+        "disclosed": "2026-03-30",
+        "fixed_in": "2026.3.22",
+        "description": (
+            "Inconsistent sanitization paths in OpenClaw's env-var handling allow "
+            "an attacker to inject environment variable overrides that bypass the "
+            "shared host environment policy."
+        ),
+        "status": "fully_mitigated",
+        "mitigation": (
+            "All container environment variables are explicitly declared in "
+            "docker-compose.yml; no host env passthrough. "
+            "no-new-privileges:true + cap_drop:ALL + read_only:true prevent "
+            "privilege escalation even if env vars are manipulated. "
+            "OPENCLAW_SANDBOX_MODE=strict and OPENCLAW_DISABLE_HOST_FILESYSTEM=true "
+            "prevent leveraging injected vars for meaningful access."
+        ),
+        "defense_layers": ["container_isolation", "read_only", "no_new_privileges", "cap_drop"],
+    },
+    {
+        "id": "CVE-2026-35668",
+        "title": "Path Traversal in Sandbox Enforcement (unnormalized mediaUrl)",
+        "cvss": 7.7,
+        "severity": "HIGH",
+        "disclosed": "2026-03-31",
+        "fixed_in": "2026.3.24",
+        "description": (
+            "normalizeSandboxMediaParams fails to normalize mediaUrl/fileUrl "
+            "before validating against mediaLocalRoots, letting a sandboxed agent "
+            "read arbitrary files from other agents' workspaces."
+        ),
+        "status": "fully_mitigated",
+        "mitigation": (
+            "OPENCLAW_DISABLE_HOST_FILESYSTEM=true prevents native file access. "
+            "file_sandbox.py validates and normalizes all file I/O paths independently. "
+            "Bot container runs read_only:true with noexec tmpfs; no persistent workspace "
+            "writable outside mounted volumes. Collaborator agents cannot reach owner's "
+            "workspace (per-collab workspace isolation)."
+        ),
+        "defense_layers": ["file_sandbox", "OPENCLAW_DISABLE_HOST_FILESYSTEM", "read_only_container", "workspace_isolation"],
+    },
+    {
+        "id": "CVE-2026-35625",
+        "title": "Privilege Escalation via Silent Local Auth Reconnect",
+        "cvss": 8.5,
+        "severity": "HIGH",
+        "disclosed": "2026-04-01",
+        "fixed_in": "2026.3.25",
+        "description": (
+            "Silent local shared-auth reconnects auto-approve scope-upgrade requests, "
+            "widening a paired device from operator.read to operator.admin without user "
+            "confirmation — enabling RCE on the host node."
+        ),
+        "status": "fully_mitigated",
+        "mitigation": (
+            "AgentShroud RBAC does not use OpenClaw's pairing scope system for access "
+            "control; all roles are resolved server-side from verified Telegram/Slack "
+            "identity. Local shared-auth is irrelevant as the WS endpoint is on an "
+            "isolated Docker network (localhost-only binding). "
+            "dangerouslyAllowHostHeaderOriginFallback=false blocks origin bypass."
+        ),
+        "defense_layers": ["rbac", "verified_identity", "localhost_binding", "network_isolation"],
+    },
+    {
+        "id": "CVE-2026-35629",
+        "title": "Server-Side Request Forgery (SSRF) in Channel Extension fetch()",
+        "cvss": 7.5,
+        "severity": "HIGH",
+        "disclosed": "2026-04-01",
+        "fixed_in": "2026.3.25",
+        "description": (
+            "Multiple channel extensions make unguarded fetch() calls to configured "
+            "base URLs without SSRF protection, allowing an attacker to rebind "
+            "requests to internal destinations."
+        ),
+        "status": "fully_mitigated",
+        "mitigation": (
+            "All outbound traffic routes through AgentShroud EgressFilter + EgressApproval; "
+            "no direct fetch() calls leave the container unproxied. "
+            "DNSFilter blocks internal RFC-1918 targets at the resolver. "
+            "NetworkValidator checks destination IPs against the allowlist before any "
+            "connection is made. HTTP_PROXY/HTTPS_PROXY force all traffic through the "
+            "AgentShroud gateway proxy on :8181."
+        ),
+        "defense_layers": ["egress_filter", "egress_approval", "dns_filter", "network_validator"],
+    },
+    {
+        "id": "CVE-2026-34512",
+        "title": "Improper Access Control in Session Kill Endpoint",
+        "cvss": 7.3,
+        "severity": "HIGH",
+        "disclosed": "2026-04-02",
+        "fixed_in": "2026.3.25",
+        "description": (
+            "The HTTP /sessions/:sessionKey/kill route accepts any bearer-authenticated "
+            "user and invokes killSubagentRunAdmin without validating caller ownership "
+            "or operator scope, allowing session hijacking."
+        ),
+        "status": "fully_mitigated",
+        "mitigation": (
+            "apply-patches.js denies sessions_spawn/sessions_send for all collaborator "
+            "and group agents at the tool-ACL layer. SubagentMonitor tracks and limits "
+            "spawn activity. The OpenClaw HTTP routes are on the isolated internal network "
+            "and are not reachable from outside the container stack."
+        ),
+        "defense_layers": ["tool_acl", "subagent_monitor", "network_isolation"],
+    },
+    {
+        "id": "CVE-2026-35669",
+        "title": "Privilege Escalation via Plugin HTTP Auth Scope Minting",
+        "cvss": 8.0,
+        "severity": "HIGH",
+        "disclosed": "2026-04-03",
+        "fixed_in": "2026.3.25",
+        "description": (
+            "Gateway-authenticated plugin HTTP routes incorrectly mint operator.admin "
+            "runtime scope regardless of the scope granted to the caller, providing a "
+            "straightforward privilege escalation path."
+        ),
+        "status": "fully_mitigated",
+        "mitigation": (
+            "AgentShroud does not use OpenClaw's runtime scope minting for admin "
+            "authorization. All admin actions require RBAC role from verified "
+            "Telegram/Slack identity. Plugin HTTP routes are on the isolated internal "
+            "Docker network; external callers never reach them directly."
+        ),
+        "defense_layers": ["rbac", "server_side_roles", "network_isolation"],
+    },
+    {
         "id": "CVE-2026-32051",
         "title": "Privilege Escalation (operator.write reaches owner-only surfaces)",
         "cvss": 8.8,

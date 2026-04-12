@@ -280,6 +280,16 @@ body {
 }
 .data-table tr:hover td { background: rgba(88,166,255,0.04); }
 
+/* CVE Intelligence — Vulnerability + Defense columns need wrapping */
+#agent-cve-table .data-table td:nth-child(5),
+#agent-cve-table .data-table td:nth-child(6) {
+  white-space: normal;
+  overflow: visible;
+  text-overflow: unset;
+  max-width: 340px;
+  vertical-align: top;
+}
+
 /* ── Activity feed ────────────────────────────────────── */
 
 .feed-item {
