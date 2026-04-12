@@ -168,7 +168,7 @@ services:
     ports:
       - 127.0.0.1:18789:18789
     volumes:
-      - agentshroud-config:/home/node/.agentshroud
+      - agentshroud-config:/home/node/.openclaw
       - agentshroud-workspace:/home/node/agentshroud/workspace
       - gateway-data:/home/node/agentshroud/gateway-data:ro
       - agentshroud-ssh:/home/node/.ssh
