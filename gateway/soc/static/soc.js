@@ -1807,7 +1807,7 @@ function _renderAgentCveTable(data) {
     const icon = _SEV_ICON[c.severity] || '⚪';
     const badge = _STATUS_BADGE[c.status] || c.status;
     const layers = (c.defense_layers || []).map(l =>
-      `<code style="background:var(--input-bg,#161b22);padding:1px 4px;border-radius:3px;font-size:10px;margin-right:3px">${l}</code>`
+      `<code style="background:var(--input-bg,#161b22);color:var(--text,#c9d1d9);padding:1px 4px;border-radius:3px;font-size:10px;margin-right:3px">${l}</code>`
     ).join('');
     return `<tr>
       <td><code style="font-size:11px">${c.id}</code></td>
