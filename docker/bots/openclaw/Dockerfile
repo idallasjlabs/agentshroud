@@ -110,11 +110,11 @@ RUN curl -sS https://downloads.1password.com/linux/keys/1password.asc | \
     apt-get update \
     && apt-get install -y --no-install-recommends 1password-cli \
     && rm -rf /var/cache/apt/archives/*.deb /var/lib/apt/lists/*
-# Create directories for AgentShroud configuration and workspace
-# Create directories for AgentShroud configuration and workspace
-# Note: OpenClaw CLI expects ~/.openclaw, so we symlink it to ~/.agentshroud
-RUN mkdir -p /home/node/.agentshroud && \
-    ln -s /home/node/.agentshroud /home/node/.openclaw && \
+# Create directories for AgentShroud configuration and workspace.
+# .openclaw is OpenClaw's canonical config dir; agentshroud-config volume mounts directly
+# here at runtime so there must be NO symlink — OpenClaw refuses exec approvals on symlink paths.
+RUN mkdir -p /home/node/.openclaw && \
+    mkdir -p /home/node/.agentshroud && \
     mkdir -p /home/node/agentshroud/workspace && \
     mkdir -p /home/node/.ssh && \
     mkdir -p /home/node/.npm-global/bin && \

@@ -448,7 +448,7 @@ async def lifespan(app: FastAPI):
         await app_state.audit_store.log_event(
             event_type="gateway_startup",
             severity="INFO",
-            details={"version": "1.0.43", "db_path": _audit_db},
+            details={"version": "1.0.44", "db_path": _audit_db},
             source_module="lifespan",
         )
     except Exception as e:
