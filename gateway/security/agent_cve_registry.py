@@ -291,7 +291,12 @@ AGENT_CVE_REGISTRY: list[dict[str, Any]] = [
             "writable outside mounted volumes. Collaborator agents cannot reach owner's "
             "workspace (per-collab workspace isolation)."
         ),
-        "defense_layers": ["file_sandbox", "OPENCLAW_DISABLE_HOST_FILESYSTEM", "read_only_container", "workspace_isolation"],
+        "defense_layers": [
+            "file_sandbox",
+            "OPENCLAW_DISABLE_HOST_FILESYSTEM",
+            "read_only_container",
+            "workspace_isolation",
+        ],
     },
     {
         "id": "CVE-2026-35625",

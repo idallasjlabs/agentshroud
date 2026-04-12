@@ -397,7 +397,13 @@ class TestFormatUpstreamCveAlert:
         from gateway.security.daily_cve_report import format_upstream_cve_alert
 
         # cvss=None, no summary, no published_at — should not raise
-        cve = {"id": "CVE-2026-99999", "severity": "HIGH", "cvss": None, "summary": "", "published_at": ""}
+        cve = {
+            "id": "CVE-2026-99999",
+            "severity": "HIGH",
+            "cvss": None,
+            "summary": "",
+            "published_at": "",
+        }
         msg = format_upstream_cve_alert([cve])
         assert "CVE-2026-99999" in msg
 
@@ -432,9 +438,7 @@ class TestRunUpstreamCveCheck:
 
         monkeypatch.setattr(_mod, "_send_telegram", _fake_send)
 
-        result = await _mod.run_upstream_cve_check(
-            bot_token="tok", owner_chat_id="12345"
-        )
+        result = await _mod.run_upstream_cve_check(bot_token="tok", owner_chat_id="12345")
 
         assert result["new_cves"] == 1
         assert result["cve_ids"] == ["CVE-2026-99999"]
@@ -455,9 +459,7 @@ class TestRunUpstreamCveCheck:
 
         monkeypatch.setattr(_mod, "_send_telegram", _fake_send)
 
-        result = await _mod.run_upstream_cve_check(
-            bot_token="tok", owner_chat_id="12345"
-        )
+        result = await _mod.run_upstream_cve_check(bot_token="tok", owner_chat_id="12345")
 
         assert result["new_cves"] == 0
         assert result["telegram_sent"] is False
@@ -473,9 +475,7 @@ class TestRunUpstreamCveCheck:
             MagicMock(side_effect=OSError("connection refused")),
         )
 
-        result = await _mod.run_upstream_cve_check(
-            bot_token="tok", owner_chat_id="12345"
-        )
+        result = await _mod.run_upstream_cve_check(bot_token="tok", owner_chat_id="12345")
 
         assert result["new_cves"] == 0
         assert result["telegram_sent"] is False
@@ -489,8 +489,14 @@ class TestRunUpstreamCveCheck:
             _mod,
             "check_upstream_cves",
             lambda token=None: [
-                {"id": "CVE-2026-99999", "summary": "", "severity": "HIGH",
-                 "cvss": 7.5, "published_at": "", "html_url": ""}
+                {
+                    "id": "CVE-2026-99999",
+                    "summary": "",
+                    "severity": "HIGH",
+                    "cvss": 7.5,
+                    "published_at": "",
+                    "html_url": "",
+                }
             ],
         )
         sent = []

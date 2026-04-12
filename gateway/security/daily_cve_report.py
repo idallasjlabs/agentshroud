@@ -320,8 +320,7 @@ def check_upstream_cves(github_token: Optional[str] = None) -> list[dict[str, An
     known_ids: set[str] = {c["id"] for c in AGENT_CVE_REGISTRY}
 
     url = (
-        f"https://api.github.com/repos/{_OPENCLAW_GITHUB_REPO}"
-        "/security-advisories?per_page=100"
+        f"https://api.github.com/repos/{_OPENCLAW_GITHUB_REPO}" "/security-advisories?per_page=100"
     )
     headers: dict[str, str] = {
         "Accept": "application/vnd.github+json",
@@ -382,9 +381,7 @@ def format_upstream_cve_alert(new_cves: list[dict[str, Any]]) -> str:
             lines.append(f"    📅 Disclosed: {pub}")
         lines.append("")
 
-    lines.append(
-        "⚠️ *Action required:* triage and add to `gateway/security/agent_cve_registry.py`"
-    )
+    lines.append("⚠️ *Action required:* triage and add to `gateway/security/agent_cve_registry.py`")
     return "\n".join(lines)
 
 
@@ -409,9 +406,7 @@ async def run_upstream_cve_check(
     loop = asyncio.get_event_loop()
 
     try:
-        new_cves = await loop.run_in_executor(
-            None, lambda: check_upstream_cves(github_token)
-        )
+        new_cves = await loop.run_in_executor(None, lambda: check_upstream_cves(github_token))
     except Exception as exc:
         logger.error("Upstream CVE check failed: %s", exc)
         return {"new_cves": 0, "cve_ids": [], "telegram_sent": False, "error": str(exc)}
@@ -464,12 +459,9 @@ async def upstream_cve_check_scheduler(
             now = datetime.now(timezone.utc)
             today_str = now.date().isoformat()
 
-            target = now.replace(
-                hour=report_hour, minute=_CHECK_MINUTE, second=0, microsecond=0
-            )
-            already_checked = (
-                today_str in _upstream_check_dates
-                or _already_checked_upstream_today(now)
+            target = now.replace(hour=report_hour, minute=_CHECK_MINUTE, second=0, microsecond=0)
+            already_checked = today_str in _upstream_check_dates or _already_checked_upstream_today(
+                now
             )
 
             if now >= target:
@@ -511,9 +503,7 @@ async def upstream_cve_check_scheduler(
             _upstream_check_dates.add(datetime.now(timezone.utc).date().isoformat())
             try:
                 _LAST_UPSTREAM_CHECK_PATH.parent.mkdir(parents=True, exist_ok=True)
-                _LAST_UPSTREAM_CHECK_PATH.write_text(
-                    datetime.now(timezone.utc).isoformat()
-                )
+                _LAST_UPSTREAM_CHECK_PATH.write_text(datetime.now(timezone.utc).isoformat())
             except Exception:
                 pass
 
@@ -527,9 +517,7 @@ async def upstream_cve_check_scheduler(
             logger.info("Upstream CVE check scheduler cancelled")
             return
         except Exception as exc:
-            logger.error(
-                "Upstream CVE check scheduler error: %s", exc, exc_info=True
-            )
+            logger.error("Upstream CVE check scheduler error: %s", exc, exc_info=True)
             # Record today so we don't loop and spam on persistent errors.
             _upstream_check_dates.add(datetime.now(timezone.utc).date().isoformat())
             await asyncio.sleep(3600)
