@@ -254,7 +254,7 @@
 <!-- ── Hero ────────────────────────────────────────────────── -->
 <section class="hero">
   <div class="container">
-    <div class="version-badge">v1.0.0 "Fortress" — Now Available</div>
+    <div class="version-badge">v1.0.44 "Fortress" — Now Available</div>
     <h1>Enterprise Governance for<br><em>Autonomous AI Agents</em></h1>
     <p class="hero-sub">
       AgentShroud sits transparently between your AI agents and every system they touch.
@@ -285,7 +285,7 @@
       <div class="stat-label">Active security modules — zero stubs</div>
     </div>
     <div>
-      <div class="stat-num">3,724+</div>
+      <div class="stat-num">3,836+</div>
       <div class="stat-label">Tests — 94% coverage</div>
     </div>
     <div>
@@ -404,8 +404,8 @@
 <section id="cves">
   <div class="container">
     <div class="section-label">CVE Registry</div>
-    <h2>9 OpenClaw CVEs — all mitigated</h2>
-    <p class="section-sub">All CVEs disclosed in the March 2026 OpenClaw release are documented and fully mitigated by AgentShroud's defense-in-depth architecture.</p>
+    <h2>17 OpenClaw CVEs — all mitigated</h2>
+    <p class="section-sub">All CVEs disclosed in OpenClaw (March–April 2026) are documented and fully mitigated by AgentShroud's defense-in-depth architecture.</p>
 
     <table class="cve-table">
       <thead>
@@ -424,15 +424,45 @@
           <td class="badge-ok">✓ Mitigated</td>
         </tr>
         <tr>
+          <td class="cve-id">CVE-2026-32922</td>
+          <td class="badge-crit">9.9 CRITICAL</td>
+          <td>Token Scope Expansion via device.token.rotate</td>
+          <td class="badge-ok">✓ Mitigated</td>
+        </tr>
+        <tr>
           <td class="cve-id">CVE-2026-32051</td>
           <td class="badge-high">8.8 HIGH</td>
           <td>Privilege Escalation via operator.write</td>
           <td class="badge-ok">✓ Mitigated</td>
         </tr>
         <tr>
+          <td class="cve-id">CVE-2026-35625</td>
+          <td class="badge-high">8.5 HIGH</td>
+          <td>Privilege Escalation via Silent Local Auth Reconnect</td>
+          <td class="badge-ok">✓ Mitigated</td>
+        </tr>
+        <tr>
+          <td class="cve-id">CVE-2026-35660</td>
+          <td class="badge-high">8.1 HIGH</td>
+          <td>Insufficient Access Control in /reset Endpoint</td>
+          <td class="badge-ok">✓ Mitigated</td>
+        </tr>
+        <tr>
           <td class="cve-id">CVE-2026-22171</td>
           <td class="badge-high">8.2 HIGH</td>
           <td>Path Traversal in Feishu Media</td>
+          <td class="badge-ok">✓ Mitigated</td>
+        </tr>
+        <tr>
+          <td class="cve-id">CVE-2026-35669</td>
+          <td class="badge-high">8.0 HIGH</td>
+          <td>Privilege Escalation via Plugin HTTP Auth Scope</td>
+          <td class="badge-ok">✓ Mitigated</td>
+        </tr>
+        <tr>
+          <td class="cve-id">CVE-2026-35668</td>
+          <td class="badge-high">7.7 HIGH</td>
+          <td>Path Traversal in Sandbox Enforcement</td>
           <td class="badge-ok">✓ Mitigated</td>
         </tr>
         <tr>
@@ -454,6 +484,18 @@
           <td class="badge-ok">✓ Mitigated</td>
         </tr>
         <tr>
+          <td class="cve-id">CVE-2026-35629</td>
+          <td class="badge-high">7.5 HIGH</td>
+          <td>SSRF in Channel Extension fetch()</td>
+          <td class="badge-ok">✓ Mitigated</td>
+        </tr>
+        <tr>
+          <td class="cve-id">CVE-2026-34512</td>
+          <td class="badge-high">7.3 HIGH</td>
+          <td>Improper Access Control in Session Kill Endpoint</td>
+          <td class="badge-ok">✓ Mitigated</td>
+        </tr>
+        <tr>
           <td class="cve-id">CVE-2026-32032</td>
           <td class="badge-high">7.0 HIGH</td>
           <td>Arbitrary Shell via SHELL env var</td>
@@ -463,6 +505,12 @@
           <td class="cve-id">CVE-2026-29607</td>
           <td class="badge-med">6.4 MEDIUM</td>
           <td>Allow-Always Wrapper Persistence</td>
+          <td class="badge-ok">✓ Mitigated</td>
+        </tr>
+        <tr>
+          <td class="cve-id">CVE-2026-35650</td>
+          <td class="badge-med">6.3 MEDIUM</td>
+          <td>Environment Variable Override Bypass</td>
           <td class="badge-ok">✓ Mitigated</td>
         </tr>
         <tr>
