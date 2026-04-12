@@ -4321,7 +4321,10 @@ async def telegram_api_proxy(path: str, request: Request):
         body = await request.body() if request.method in ("POST", "PUT") else None
     except ClientDisconnect:
         logger.debug("Telegram proxy: client disconnected before body read — ignoring")
-        return JSONResponse(content={"ok": False, "error_code": 499, "description": "Client Disconnected"}, status_code=499)
+        return JSONResponse(
+            content={"ok": False, "error_code": 499, "description": "Client Disconnected"},
+            status_code=499,
+        )
     content_type = request.headers.get("content-type")
 
     # Update proxy references if available
