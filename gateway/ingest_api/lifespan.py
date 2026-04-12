@@ -1353,6 +1353,34 @@ async def lifespan(app: FastAPI):
     except Exception as _cve_exc:
         logger.warning("⚠ Daily CVE report scheduler failed to start: %s", _cve_exc)
 
+    # -- Upstream CVE watch: daily GitHub Advisory diff → Telegram alert at same hour --
+    try:
+        from ..security.daily_cve_report import (
+            upstream_cve_check_scheduler as _upstream_cve_scheduler,
+        )
+
+        _gh_token = os.environ.get("GITHUB_TOKEN") or None
+        if _cve_token and _cve_owner_id:
+            app_state._upstream_cve_check_task = _asyncio.create_task(
+                _upstream_cve_scheduler(
+                    bot_token=_cve_token,
+                    owner_chat_id=_cve_owner_id,
+                    base_url=_cve_tg_base,
+                    report_hour=_cve_hour,
+                    github_token=_gh_token,
+                )
+            )
+            logger.info(
+                "✓ Upstream CVE check scheduler started (UTC hour=%d, offset +5 min)",
+                _cve_hour,
+            )
+        else:
+            logger.warning(
+                "⚠ Upstream CVE check scheduler skipped — TELEGRAM_BOT_TOKEN or owner_user_id not set"
+            )
+    except Exception as _upstream_exc:
+        logger.warning("⚠ Upstream CVE check scheduler failed to start: %s", _upstream_exc)
+
     # Startup security scanner — runs ClamAV + Trivy 30s after boot so the SOC
     # shows real results immediately rather than waiting for a manual POST trigger.
     async def _startup_scanner():
