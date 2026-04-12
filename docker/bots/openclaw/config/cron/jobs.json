@@ -268,6 +268,35 @@
       "delivery": {
         "mode": "announce"
       }
+    },
+    {
+      "id": "bffec5cb-3373-4c80-b628-1b3e2c78ff1c",
+      "agentId": "main",
+      "name": "Daily CVE Triage & Remediation Scan",
+      "enabled": true,
+      "notify": true,
+      "schedule": {
+        "kind": "cron",
+        "expr": "30 6 * * *",
+        "tz": "America/New_York"
+      },
+      "sessionTarget": "isolated",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "agentTurn",
+        "message": "CVE Triage & Remediation Scan:\n\n1. Fetch https://api.github.com/repos/openclaw/openclaw/security-advisories?per_page=100 and extract all CVE IDs and CVSS scores.\n\n2. Read gateway/security/agent_cve_registry.py on marvin (SSH if needed) and extract all known CVE IDs.\n\n3. For any NEW CVEs not in our registry:\n   - Report to Telegram: CVE ID, CVSS, severity, summary\n   - Analyze which AgentShroud security modules (PromptGuard, EgressFilter, RBAC, etc.) could mitigate the vulnerability\n   - State whether it is likely FULLY_MITIGATED, PARTIALLY_MITIGATED, or NOT_MITIGATED by our current defenses\n   - If code changes are needed, describe the specific file and the change required (do NOT make the change yourself)\n\n4. For CVEs already in our registry with status partially_mitigated or not_mitigated:\n   - Check if the upstream version in fixed_in has been deployed\n   - Suggest whether the status should be upgraded\n\n5. Summary: post a Telegram message with: total CVEs tracked, new since yesterday, any requiring code remediation.\n\nKeep the message concise. Use bold for CVE IDs and CVSS scores."
+      },
+      "state": {
+        "nextRunAtMs": 0,
+        "lastRunAtMs": 0,
+        "lastStatus": "ok",
+        "lastDurationMs": 0,
+        "consecutiveErrors": 0
+      },
+      "delivery": {
+        "mode": "announce",
+        "channel": "telegram"
+      }
     }
   ]
 }
