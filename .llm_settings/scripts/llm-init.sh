@@ -12,22 +12,222 @@
 #   llm-init /path/to/repo          # Deploy to specific directory
 #   llm-init --dry-run              # Preview without making changes
 #   llm-init -n /path/to/repo       # Dry run to specific directory
+#   llm-init --jira fluenceenergy . # Pin repo to a specific Atlassian tenant
+#   llm-init --jira all .           # Register all three Atlassian tenants
 
 # zsh compatibility: avoid alias expansion conflict on function name
 unalias llm-init 2>/dev/null || true
 
+# ─────────────────────────────────────────────────────────────────────────────
+# _llm_init_render_mcp [--dry-run]
+#
+# Reads .llm_settings/repo-tenants (in the current directory) and filters the
+# three agent MCP registry files to retain only the selected atlassian-* entries.
+# Non-atlassian entries (github, aws-api, xmind, etc.) are always preserved.
+#
+# Requires: jq (for .mcp.json / .gemini/settings.json); awk for .codex/config.toml.
+# If jq is absent, JSON files are left unfiltered with a warning.
+# ─────────────────────────────────────────────────────────────────────────────
+_llm_init_render_mcp() {
+    local _dry_run="${1:-false}"
+    local _marker=".llm_settings/repo-tenants"
+
+    # ── Resolve active MCP keys from marker file ─────────────────────
+    local -a _active_keys=()
+    if [ -f "$_marker" ]; then
+        while IFS= read -r _line; do
+            _line="${_line%%#*}"             # strip inline comments
+            _line="${_line//[[:space:]]/}"   # strip whitespace
+            [ -z "$_line" ] && continue
+            case "$_line" in
+                fluenceenergy)   _active_keys+=("atlassian-fluence") ;;
+                therealidallasj) _active_keys+=("atlassian-idallasj") ;;
+                agentshroudai)   _active_keys+=("atlassian-agentshroud") ;;
+                *) echo "   ⚠️  [render-mcp] Unknown tenant '$_line' in $_marker — skipping" >&2 ;;
+            esac
+        done < "$_marker"
+    fi
+    [ ${#_active_keys[@]} -eq 0 ] && _active_keys=("atlassian-fluence")  # safe default
+
+    local _keys_str="${_active_keys[*]}"
+
+    if [ "$_dry_run" = "true" ]; then
+        echo "   ℹ️  [dry-run] Would render MCP configs for: ${_keys_str}"
+        return 0
+    fi
+
+    echo "   🎛️  Rendering MCP configs — active tenant(s): ${_keys_str}"
+
+    # ── Filter JSON files with jq ─────────────────────────────────────
+    if command -v jq >/dev/null 2>&1; then
+        # Build a JSON array of the active atlassian-* keys for the jq filter
+        local _keys_json
+        _keys_json="$(printf '"%s",' "${_active_keys[@]}")"
+        _keys_json="[${_keys_json%,}]"
+        local _jq_filter
+        _jq_filter='.mcpServers |= with_entries(select(
+            (.key | startswith("atlassian-") | not) or
+            (.key as $k | $keep | any(. == $k))
+        ))'
+        local _jf _tmp
+        for _jf in ".mcp.json" ".gemini/settings.json"; do
+            if [ -f "$_jf" ]; then
+                _tmp="${_jf}.rnd.$$"
+                if jq --argjson keep "$_keys_json" "$_jq_filter" "$_jf" > "$_tmp" 2>/dev/null; then
+                    mv "$_tmp" "$_jf"
+                    echo "      ✅ $_jf"
+                else
+                    rm -f "$_tmp"
+                    echo "   ⚠️  [render-mcp] jq filter failed for $_jf — file unchanged" >&2
+                fi
+            fi
+        done
+    else
+        echo "   ⚠️  [render-mcp] jq not found — .mcp.json and .gemini/settings.json unfiltered" >&2
+        echo "   ⚠️              Install jq for full per-tenant filtering" >&2
+    fi
+
+    # ── Filter TOML file with awk (POSIX, always available) ──────────
+    local _tf=".codex/config.toml"
+    if [ -f "$_tf" ]; then
+        local _tmp
+        _tmp="${_tf}.rnd.$$"
+        awk -v keep="$_keys_str" '
+            BEGIN {
+                n = split(keep, arr, " ")
+                for (i = 1; i <= n; i++) keep_set[arr[i]] = 1
+                in_skip = 0
+            }
+            /^\[mcp_servers\.atlassian-[A-Za-z_-]+\]/ {
+                key = $0
+                sub(/^\[mcp_servers\./, "", key)
+                sub(/\].*$/, "", key)
+                in_skip = (key in keep_set) ? 0 : 1
+                if (!in_skip) print
+                next
+            }
+            /^\[/ {
+                in_skip = 0
+                print
+                next
+            }
+            !in_skip { print }
+        ' "$_tf" > "$_tmp" && mv "$_tmp" "$_tf" && echo "      ✅ $_tf" || {
+            rm -f "$_tmp"
+            echo "   ⚠️  [render-mcp] awk filter failed for $_tf — file unchanged" >&2
+        }
+    fi
+}
+
+# ─────────────────────────────────────────────────────────────────────────────
+# _llm_init_merge_claude_md <src> <tgt> <dry_run>
+#
+# Smart CLAUDE.md deployment:
+#   - No target       → deploy full template (as before)
+#   - Has markers     → replace only the llm-init block, preserve repo sections
+#   - No markers      → preserve entirely (repo owns its own CLAUDE.md)
+# ─────────────────────────────────────────────────────────────────────────────
+_llm_init_merge_claude_md() {
+    local _src="$1"
+    local _tgt="$2"
+    local _dry_run="${3:-false}"
+
+    local _start_marker="## LLM OPERATING CONTEXT (llm-init)"
+    local _end_marker="END OF LLM OPERATING CONTEXT (llm-init)"
+
+    # Case 1: No target — deploy full template
+    if [ ! -f "$_tgt" ]; then
+        if $_dry_run; then
+            echo "   ℹ️  [dry-run] Would deploy CLAUDE.md (new)"
+        else
+            cp "$_src" "$_tgt"
+            echo "   ✅ CLAUDE.md deployed (new)"
+        fi
+        return 0
+    fi
+
+    # Case 2: Target exists WITHOUT markers — preserve entirely
+    if ! grep -q "$_start_marker" "$_tgt"; then
+        echo "   ✅ CLAUDE.md preserved (no llm-init markers; repo-specific file kept as-is)"
+        return 0
+    fi
+
+    # Case 3: Target exists WITH markers — replace only the llm-init block
+    if ! grep -q "$_start_marker" "$_src"; then
+        echo "   ⚠️  Source CLAUDE.md missing llm-init markers; skipping merge"
+        return 1
+    fi
+
+    if $_dry_run; then
+        echo "   ℹ️  [dry-run] Would update llm-init block in existing CLAUDE.md (repo sections preserved)"
+        return 0
+    fi
+
+    # Line-number-based extraction (portable: macOS + Linux)
+    local _tgt_start _tgt_end _src_start _src_end
+    _tgt_start=$(grep -n "$_start_marker" "$_tgt" | head -1 | cut -d: -f1)
+    _tgt_end=$(grep -n "$_end_marker"   "$_tgt" | head -1 | cut -d: -f1)
+    _src_start=$(grep -n "$_start_marker" "$_src" | head -1 | cut -d: -f1)
+    _src_end=$(grep -n "$_end_marker"   "$_src" | head -1 | cut -d: -f1)
+
+    # The ── ruler line before start marker and after end marker belong to the block
+    local _tgt_block_start=$(( _tgt_start - 1 ))
+    local _tgt_block_end=$(( _tgt_end + 1 ))
+    local _src_block_start=$(( _src_start - 1 ))
+    local _src_block_end=$(( _src_end + 1 ))
+
+    local _tmpfile
+    _tmpfile="$(mktemp "${_tgt}.merge.XXXXXX")"
+
+    {
+        head -n $(( _tgt_block_start - 1 )) "$_tgt"
+        sed -n "${_src_block_start},${_src_block_end}p" "$_src"
+        tail -n +$(( _tgt_block_end + 1 )) "$_tgt"
+    } > "$_tmpfile"
+
+    mv "$_tmpfile" "$_tgt"
+    echo "   ✅ CLAUDE.md updated (llm-init block refreshed, repo-specific sections preserved)"
+}
+
 llm-init() {
     # ── Argument Parsing ───────────────────────────────────────────
     local dry_run=false target_dir="."
+    local -a jira_tenants=()
     while [[ $# -gt 0 ]]; do
         case "$1" in
             --dry-run|-n) dry_run=true; shift ;;
+            --jira)
+                shift
+                case "${1:-}" in
+                    fluenceenergy|therealidallasj|agentshroudai)
+                        jira_tenants+=("$1") ;;
+                    all)
+                        jira_tenants+=("fluenceenergy" "therealidallasj" "agentshroudai") ;;
+                    "")
+                        echo "llm-init: --jira requires a value" >&2
+                        echo "          valid: fluenceenergy | therealidallasj | agentshroudai | all" >&2
+                        return 2 ;;
+                    *)
+                        echo "llm-init: unknown --jira value: '$1'" >&2
+                        echo "          valid: fluenceenergy | therealidallasj | agentshroudai | all" >&2
+                        return 2 ;;
+                esac
+                shift ;;
             --help|-h)
-                echo "Usage: llm-init [--dry-run|-n] [--help|-h] [target_directory]"
+                echo "Usage: llm-init [--dry-run|-n] [--jira <tenant>]... [--help|-h] [target_directory]"
                 echo ""
-                echo "  --dry-run, -n   Preview changes without modifying anything"
-                echo "  --help,    -h   Show this help message"
-                echo "  target_directory  Directory to deploy to (default: .)"
+                echo "  --dry-run, -n          Preview changes without modifying anything"
+                echo "  --jira <tenant>        Select Atlassian Jira tenant (repeatable):"
+                echo "                           fluenceenergy   → fluenceenergy.atlassian.net (work)"
+                echo "                           therealidallasj → idallasj.atlassian.net (personal)"
+                echo "                           agentshroudai   → agentshroudai.atlassian.net (project)"
+                echo "                           all             → register all three tenants"
+                echo "                         Writes .llm_settings/repo-tenants (committed, per-repo)."
+                echo "                         Omit to preserve existing selection; default: fluenceenergy."
+                echo "  --help,    -h          Show this help message"
+                echo "  target_directory       Directory to deploy to (default: .)"
+                echo ""
+                echo "  Note: filtering .mcp.json and .gemini/settings.json requires jq."
                 return 0 ;;
             *) target_dir="$1"; shift ;;
         esac
@@ -338,6 +538,51 @@ llm-init() {
     fi
     echo ""
 
+    # ── Jira Tenant Marker File ────────────────────────────────────
+    echo "🎯 Jira Tenant Selection"
+    local _marker_file=".llm_settings/repo-tenants"
+    if [ ${#jira_tenants[@]} -gt 0 ]; then
+        # Deduplicate while preserving order
+        local -a _deduped=()
+        local _seen=""
+        for _t in "${jira_tenants[@]}"; do
+            if [[ "$_seen" != *"|${_t}|"* ]]; then
+                _deduped+=("$_t")
+                _seen="${_seen}|${_t}|"
+            fi
+        done
+        if ! $dry_run; then
+            mkdir -p .llm_settings
+            {
+                printf '# llm-init Jira tenant selection — generated %s\n' "$(date -u +%Y-%m-%dT%H:%M:%SZ)"
+                printf '# Accepted values: fluenceenergy | therealidallasj | agentshroudai\n'
+                printf '# Change with:  llm-init --jira <tenant> .\n'
+                printf '%s\n' "${_deduped[@]}"
+            } > "$_marker_file"
+            echo "   📌 Set tenant(s): ${_deduped[*]} → $_marker_file"
+        else
+            echo "   ℹ️  [dry-run] Would write $_marker_file: ${_deduped[*]}"
+        fi
+    elif [ ! -f "$_marker_file" ]; then
+        if ! $dry_run; then
+            mkdir -p .llm_settings
+            {
+                printf '# llm-init Jira tenant selection (default: fluenceenergy)\n'
+                printf '# Accepted values: fluenceenergy | therealidallasj | agentshroudai\n'
+                printf '# Change with:  llm-init --jira <tenant> .\n'
+                printf 'fluenceenergy\n'
+            } > "$_marker_file"
+            echo "   📌 No --jira flag and no marker found — defaulting to: fluenceenergy"
+        else
+            echo "   ℹ️  [dry-run] Would write $_marker_file: fluenceenergy (default)"
+        fi
+    else
+        local _current_tenants
+        _current_tenants="$(grep -v '^#' "$_marker_file" | tr -d '[:space:]' | tr '\n' ' ' | sed 's/ $//')"
+        echo "   📌 Preserving existing selection: ${_current_tenants:-fluenceenergy}"
+    fi
+    echo ""
+
     echo "📦 Copying configurations..."
     echo ""
 
@@ -404,8 +649,7 @@ llm-init() {
     fi
 
     if [ -f "$source_dir/CLAUDE.md" ]; then
-        rsync -a $rsync_dry "$source_dir/CLAUDE.md" .
-        echo "   ✅ CLAUDE.md synchronized"
+        _llm_init_merge_claude_md "$source_dir/CLAUDE.md" "./CLAUDE.md" "$dry_run"
     else
         echo "   ⚠️  CLAUDE.md not found in source"
     fi
@@ -581,6 +825,8 @@ llm-init() {
             --filter='protect .env.*' \
             --filter='protect .llm_env' \
             --filter='protect *.local.*' \
+            --filter='exclude repo-tenants' \
+            --filter='protect repo-tenants' \
             --exclude='.DS_Store' \
             --exclude='.cache/' \
             --exclude='tmp/' \
@@ -604,9 +850,13 @@ llm-init() {
         if ! $dry_run; then
             find .llm_settings/scripts -type f -name '*.sh' -exec chmod +x {} \; 2>/dev/null || true
             find .llm_settings/git-hooks -type f -exec chmod +x {} \; 2>/dev/null || true
+            find .llm_settings/mcp-servers -type f -name '*.sh' -exec chmod +x {} \; 2>/dev/null || true
         fi
 
         echo "   ✅ .llm_settings/ synchronized (secrets preserved, scripts executable)"
+
+        # Render per-repo MCP configs based on .llm_settings/repo-tenants
+        _llm_init_render_mcp "$dry_run"
     else
         echo "   ⚠️  .llm_settings/ directory not found in source"
     fi
@@ -931,8 +1181,10 @@ llm-init() {
 # Export function if script is sourced
 if [[ "${BASH_SOURCE[0]}" != "${0}" ]]; then
     export -f llm-init
+    export -f _llm_init_render_mcp
     echo "✅ llm-init function loaded"
-    echo "   Usage: llm-init [--dry-run] [target_directory]"
+    echo "   Usage: llm-init [--dry-run] [--jira <tenant>] [target_directory]"
+    echo "   Jira tenants: fluenceenergy | therealidallasj | agentshroudai | all"
 fi
 
 # If script is executed (not sourced), run the function
