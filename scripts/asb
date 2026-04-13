@@ -284,6 +284,7 @@ case "${1:-}" in
     rm -rf "$HOME/.agentshroud/.asb-secrets"
     ;;
   rebuild)
+    $COMPOSE down 2>/dev/null || true
     _prune_docker
     setup_ephemeral_secrets
     $COMPOSE build --no-cache && $COMPOSE up -d
