@@ -108,8 +108,8 @@ command = ".llm_settings/mcp-servers/github/github-mcp-wrapper.sh"
 args = []
 startup_timeout_sec = 30
 
-[mcp_servers.atlassian]
-command = ".llm_settings/mcp-servers/atlassian/mcp-atlassian.sh"
+[mcp_servers.atlassian-agentshroud]
+command = ".llm_settings/mcp-servers/atlassian/agentshroud/mcp-atlassian.sh"
 args = []
 startup_timeout_sec = 30
 
