@@ -197,6 +197,38 @@ YAML
   COMPOSE="$COMPOSE -f $override"
 }
 
+# ── Device store reset ───────────────────────────────────────────────────────
+# After a rebuild the agentshroud-config volume retains stale device tokens from
+# the previous container. OpenClaw's Telegram handler tries to upgrade scopes on
+# the old entry and loops indefinitely with "pairing required". Resetting
+# devices/paired.json and devices/pending.json forces a clean re-pair on startup.
+# Called after `docker compose up -d` in rebuild paths only — not on plain `up`.
+_reset_device_store() {
+  local bot_container
+  bot_container="$($COMPOSE ps --format '{{.Name}}' bot 2>/dev/null | head -1)"
+  if [ -z "$bot_container" ]; then
+    echo "  [device-reset] bot container not found — skipping"
+    return
+  fi
+
+  # Wait up to 30 s for the container to be running before exec-ing into it.
+  local i=0
+  until docker inspect --format '{{.State.Running}}' "$bot_container" 2>/dev/null \
+        | grep -q true; do
+    i=$((i + 1))
+    [ $i -ge 30 ] && { echo "  [device-reset] timeout waiting for $bot_container"; return; }
+    sleep 1
+  done
+
+  echo "  [device-reset] clearing stale device tokens in $bot_container"
+  docker exec "$bot_container" bash -c \
+    'echo "{}" > /home/node/.openclaw/devices/paired.json && \
+     echo "{}" > /home/node/.openclaw/devices/pending.json' 2>/dev/null \
+    && echo "  [device-reset] done — restarting bot for clean re-pair" \
+    || { echo "  [device-reset] exec failed — skipping"; return; }
+  docker restart "$bot_container" >/dev/null
+}
+
 # ── Docker disk reclamation ──────────────────────────────────────────────────
 # Removes stopped containers, dangling images, unused networks, and BuildKit
 # cache to reclaim disk on the Colima VM before builds. Safe to run without
@@ -255,6 +287,7 @@ case "${1:-}" in
     _prune_docker
     setup_ephemeral_secrets
     $COMPOSE build --no-cache && $COMPOSE up -d
+    _reset_device_store
     bash "$REPO_DIR/scripts/post-deploy-check.sh" || true
     ;;
   clean-rebuild)
@@ -270,6 +303,7 @@ case "${1:-}" in
     setup_ephemeral_secrets
     $COMPOSE build --no-cache
     $COMPOSE up -d
+    _reset_device_store
     echo "Clean rebuild complete."
     ;;
   prune)   _prune_docker ;;
