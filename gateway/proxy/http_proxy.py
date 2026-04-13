@@ -47,6 +47,9 @@ SYSTEM_BYPASS_DOMAINS: set[str] = {
     "wss-primary.slack.com",
     "wss-backup.slack.com",
     "edgeapi.slack.com",
+    # GitHub API: required for competitive intelligence, CVE triage, and extension
+    # update checks.  Blocking this triggers approval prompts for routine cron jobs.
+    "api.github.com",
 }
 
 # Domains that are unconditionally BLOCKED from direct CONNECT tunnels,
