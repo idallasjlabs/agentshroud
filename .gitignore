@@ -16,7 +16,6 @@ docker/agentshroud-dev-secrets/
 !docker/agentshroud-dev-secrets/*.example
 !docker/agentshroud-dev-secrets/README.md
 !docker/agentshroud-dev-secrets/setup-secrets.sh
-
 # Environment variables
 .env
 .env.*
@@ -26,7 +25,6 @@ docker/agentshroud-dev-secrets/
 llm_settings/env/.llm_env
 llm_settings/mcp-servers/**/.env
 security_assessment/.assessment_env
-
 # SSH & GPG keys
 .ssh/
 *.pem
@@ -39,7 +37,6 @@ id_rsa
 id_ed25519
 *.asc
 *.gpg
-
 # Credential files
 aws_credentials
 .pgpass
@@ -166,7 +163,6 @@ data/processed/
 # Logs
 *.log
 logs/
-
 # Lock files
 *.lock
 !poetry.lock
@@ -347,18 +343,18 @@ mkdocs/
 # OS generated files
 .fuse_hidden*
 .asb-tmp/
-
 # Security scan reports (contain secret values from history)
 gitleaks-report.json
 gitleaks*.json
 trivy*.json
 trivy*.sarif
-
 # Python cache
 gateway/tests/__pycache__/
 **/__pycache__/
-
 # SQLite runtime files — never commit WAL/SHM artifacts
 data/ledger.db
 data/ledger.db-shm
 data/ledger.db-wal
+# Obsidian per-repo vaults (local only)
+.obsidian-vaults/
+.obsidian-personal/
