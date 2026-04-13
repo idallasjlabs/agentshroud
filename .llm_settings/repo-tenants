@@ -1,0 +1,4 @@
+# llm-init Jira tenant selection — generated 2026-04-13T18:20:42Z
+# Accepted values: fluenceenergy | therealidallasj | agentshroudai
+# Change with:  llm-init --jira <tenant> .
+agentshroudai

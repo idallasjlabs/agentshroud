@@ -26,6 +26,7 @@ paths = [
   '''gateway/examples/''',
   '''docs/''',
   '''docker/scap-content/''',
+  '''.llm_settings/''',
 ]
 
 # Patterns that appear in test fixtures, example configs, or benchmark XML

@@ -149,7 +149,7 @@ Save as `docs/reviews/blue-team-audit-v0.7.0.md` with these sections:
 
 ## Infrastructure
 
-- Repository: `github.com/idallasjlabs/agentshroud`
+- Repository: `github.com/idallasj/agentshroud`
 - Main checkout: `~/Development/agentshroud` on Marvin (SSH alias `marvin`)
 - Worktrees: `~/Development/worktrees/<branch-name>/`
 - Key files: `gateway/ingest_api/main.py`, `gateway/ingest_api/middleware.py`, `gateway/security/*.py`

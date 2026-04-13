@@ -4,20 +4,8 @@
       "command": ".llm_settings/mcp-servers/github/github-mcp-wrapper.sh",
       "args": []
     },
-    "atlassian-fluence": {
-      "command": ".llm_settings/mcp-servers/atlassian/mcp-atlassian.sh",
-      "args": [],
-      "timeout": 1800000,
-      "trust": false
-    },
     "atlassian-agentshroud": {
       "command": ".llm_settings/mcp-servers/atlassian/agentshroud/mcp-atlassian.sh",
-      "args": [],
-      "timeout": 1800000,
-      "trust": false
-    },
-    "atlassian-idallasj": {
-      "command": ".llm_settings/mcp-servers/atlassian/idallasj/mcp-atlassian.sh",
       "args": [],
       "timeout": 1800000,
       "trust": false
@@ -51,7 +39,10 @@
     },
     "xmind-generator-mcp": {
       "command": "/opt/homebrew/bin/npx",
-      "args": ["-y", "xmind-generator-mcp"],
+      "args": [
+        "-y",
+        "xmind-generator-mcp"
+      ],
       "env": {
         "PATH": "/opt/homebrew/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin",
         "outputPath": "${HOME}/Desktop",

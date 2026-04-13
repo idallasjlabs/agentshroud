@@ -1,7 +1,6 @@
 {
-  "model": "opusplan",
-
   "permissions": {
+    "defaultMode": "plan",
     "allow": [
       "Bash(chmod:*)",
       "Bash(python:*)",
@@ -20,6 +19,8 @@
       "Read(**/.env.*)"
     ]
   },
+
+  "model": "opusplan",
 
   "hooks": {
     "PreToolUse": [

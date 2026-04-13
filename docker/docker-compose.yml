@@ -243,6 +243,7 @@ services:
       - /home/node/.npm:noexec,nosuid,size=200m,uid=1000,gid=1000
       - /home/node/.local:noexec,nosuid,size=100m
       - /home/node/.config:noexec,nosuid,size=100m,uid=1000,gid=1000
+      - /home/node/.agentshroud/agents:nosuid,size=200m,uid=1000,gid=1000
       - /home/node/.ssh-tmp:nosuid,size=10m,uid=1000,gid=1000
       - /var/ossec/var:nosuid,size=10m,uid=1000,gid=1000
       - /var/ossec/queue:nosuid,size=50m,uid=1000,gid=1000
