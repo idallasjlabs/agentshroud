@@ -405,7 +405,6 @@ AGENT_CVE_REGISTRY: list[dict[str, Any]] = [
         ),
         "defense_layers": ["rbac", "check_permission", "verified_identity", "privacy_policy"],
     },
-
     # ── NVD-sourced CVEs (276 entries, auto-assessed against OpenClaw 2026.4.11) ──
     {
         "id": "CVE-2026-28363",
@@ -1947,7 +1946,7 @@ AGENT_CVE_REGISTRY: list[dict[str, Any]] = [
         "severity": "MEDIUM",
         "disclosed": "2026-02-19",
         "fixed_in": "2026.2.14",
-        "description": "OpenClaw is a personal AI assistant. OpenClaw macOS desktop client registers the `openclaw://` URL scheme. For `openclaw://agent` deep links without an unattended `key`, the app shows a confirmation dialog that previously displayed only the first 240 characters of the message, but executed the full message after the user clicked \\\"Run.\\\" At the time of writing, the OpenClaw macOS desktop client is s",
+        "description": 'OpenClaw is a personal AI assistant. OpenClaw macOS desktop client registers the `openclaw://` URL scheme. For `openclaw://agent` deep links without an unattended `key`, the app shows a confirmation dialog that previously displayed only the first 240 characters of the message, but executed the full message after the user clicked \\"Run.\\" At the time of writing, the OpenClaw macOS desktop client is s',
         "status": "fully_mitigated",
         "mitigation": "Fixed upstream in OpenClaw 2026.2.14; running 2026.4.11 is unaffected. AgentShroud provides additional defense-in-depth: read_only container, EgressFilter, ToolACL, and network isolation contain this class of vulnerability.",
         "defense_layers": ["source_fix", "defense_in_depth"],
