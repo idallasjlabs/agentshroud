@@ -26,7 +26,20 @@ logger = logging.getLogger("agentshroud.security.tool_chain_analyzer")
 # C34: Parameter injection patterns (compiled once at module load)
 _PARAM_INJECTION_PATTERNS: list[tuple[re.Pattern, str]] = [
     (
-        re.compile(r"[;&|`$()]{1,}.*(?:rm\b|cat\b|wget\b|curl\b|chmod\b)|(?:^|\s)[;&|`]"),
+        # Shell metacharacters and piped-to-interpreter patterns (CVE-2026-35190 fix)
+        re.compile(
+            r"[;&|`$()]{1,}.*"
+            r"(?:rm\b|cat\b|wget\b|curl\b|chmod\b|sh\b|bash\b|python3?\b|perl\b|node\b|ruby\b|eval\b|source\b|exec\b)"
+            r"|(?:^|\s)[;&|`]"
+            r"|\|\s*(?:sh|bash|dash|zsh|python3?|perl|node|ruby)\b"  # piped-to-interpreter
+            r"|<<<|<<\s*\w*EOF"  # heredoc
+            r"|<\(|>\("  # process substitution
+            r"|(?:^|\s)eval\s"  # eval
+            r"|(?:^|\s)source\s"  # source
+            r"|(?:^|\s)\.\s+\./"  # `. ./script`
+            r"|(?:^|\s)exec\s+(?:-[a-z]+\s+)?[/\w]",  # exec /bin/sh
+            re.IGNORECASE | re.MULTILINE,
+        ),
         "shell_metacharacter",
     ),
     (

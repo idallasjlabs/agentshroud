@@ -778,3 +778,26 @@ class PromptGuard:
             sanitized_input=sanitized,
             action=action,
         )
+
+    def scan_tool_result(self, text: str) -> ScanResult:
+        """Scan tool result content for indirect prompt injection.
+
+        Tool results (web content, file reads, API responses) are an indirect
+        injection vector — attackers embed payloads in external content that the
+        LLM will process. Uses a lower block threshold (0.6 vs 0.8) because
+        legitimate tool results rarely contain instruction-override language.
+
+        Returns a ScanResult; ``blocked=True`` means the tool result should be
+        withheld from the LLM and the request blocked.
+        """
+        result = self.scan(text)
+        # Re-evaluate with lower threshold for indirect injection path
+        if not result.blocked and result.score >= 0.6:
+            return ScanResult(
+                blocked=True,
+                score=result.score,
+                patterns=result.patterns,
+                sanitized_input=result.sanitized_input,
+                action=ThreatAction.BLOCK,
+            )
+        return result
