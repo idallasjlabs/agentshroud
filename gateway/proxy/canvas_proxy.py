@@ -112,9 +112,7 @@ async def canvas_proxy_app(scope: dict[str, Any], receive: Any, send: Any) -> No
 
 async def _handle_http(scope: dict[str, Any], receive: Any, send: Any) -> None:
     """Proxy an HTTP request after validating Basic Auth."""
-    headers = dict(
-        (k.decode("latin-1"), v.decode("latin-1")) for k, v in scope.get("headers", [])
-    )
+    headers = dict((k.decode("latin-1"), v.decode("latin-1")) for k, v in scope.get("headers", []))
     auth_header = headers.get("authorization", "")
 
     if not _check_basic_auth(auth_header):
@@ -208,9 +206,7 @@ async def _handle_websocket(scope: dict[str, Any], receive: Any, send: Any) -> N
     import websockets
     import websockets.exceptions
 
-    headers = dict(
-        (k.decode("latin-1"), v.decode("latin-1")) for k, v in scope.get("headers", [])
-    )
+    headers = dict((k.decode("latin-1"), v.decode("latin-1")) for k, v in scope.get("headers", []))
     auth_header = headers.get("authorization", "")
 
     if not _check_basic_auth(auth_header):

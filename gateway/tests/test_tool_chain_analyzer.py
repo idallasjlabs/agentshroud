@@ -579,9 +579,9 @@ class TestShellBleedPatterns:
     def test_shell_bleed_bypass_blocked(self, analyzer, payload):
         result = analyzer.sanitize_tool_params("execute_command", {"cmd": payload})
         assert not result.safe, f"Expected {payload!r} to be blocked"
-        assert any("shell" in v for v in result.violations), (
-            f"Expected shell_metacharacter violation for {payload!r}, got {result.violations}"
-        )
+        assert any(
+            "shell" in v for v in result.violations
+        ), f"Expected shell_metacharacter violation for {payload!r}, got {result.violations}"
 
     def test_legitimate_file_path_passes(self, analyzer):
         result = analyzer.sanitize_tool_params("read_file", {"path": "/home/user/report.txt"})
