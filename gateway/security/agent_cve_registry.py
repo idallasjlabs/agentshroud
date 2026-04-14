@@ -499,15 +499,18 @@ AGENT_CVE_REGISTRY: list[dict[str, Any]] = [
         "description": "A remote code execution (RCE) vulnerability in OpenClaw Agent Platform v2026.2.6 allows attackers to execute arbitrary code via a Request-Side prompt injection attack.",
         "status": "fully_mitigated",
         "mitigation": (
-            "AgentShroud v1.0.44: PromptGuard.scan_tool_result() wired into the outbound "
-            "pipeline at Step 1.76 (gateway/proxy/pipeline.py) — all tool results (web content, "
-            "file reads, API responses) are scanned for indirect prompt injection before being "
-            "returned to the LLM. Block threshold: 0.6 (lower than direct-input 0.8 to catch "
-            "indirect injection). Integration: gateway/security/prompt_guard.py:scan_tool_result(). "
-            "Defense-in-depth: ToolACL, EgressFilter, read_only container, network isolation."
+            "Dual-layer inbound + outbound coverage. "
+            "Step 1.5 (inbound): ToolResultInjectionScanner runs on all inbound messages, "
+            "applying 12 injection rules + encoded injection detection + unicode obfuscation. "
+            "Step 1.76 (outbound): PromptGuard.scan_tool_result() scans all tool results "
+            "(web content, file reads, API responses) at threshold 0.6 before returning to LLM. "
+            "Combined with ContextGuard, HeuristicClassifier, ToolACL, EgressFilter, "
+            "read_only container, cap_drop:ALL, and network isolation."
         ),
         "defense_layers": [
+            "inbound_injection_scanner",
             "prompt_guard_tool_result",
+            "context_guard",
             "tool_acl",
             "egress_filter",
             "network_isolation",
@@ -1565,15 +1568,21 @@ AGENT_CVE_REGISTRY: list[dict[str, Any]] = [
         "description": "OpenClaw Canvas Authentication Bypass Vulnerability. This vulnerability allows remote attackers to bypass authentication on affected installations of OpenClaw. Authentication is not required to exploit this vulnerability.  The specific flaw exists within the implementation of the the authentication function for canvas endpoints. The issue results from improper implementation of authentication. An ",
         "status": "fully_mitigated",
         "mitigation": (
-            "AgentShroud v1.0.44: Canvas port 18789 is no longer published directly from the "
-            "bot container. An auth-gated reverse proxy (gateway/proxy/canvas_proxy.py) now runs "
-            "on the gateway at 127.0.0.1:18789 and validates HTTP Basic Auth (gateway_password) "
-            "before forwarding requests to bot:18789 on the agentshroud-isolated network. "
-            "Broken upstream auth (authorizeCanvasRequest) is now unreachable without valid "
-            "gateway credentials. WebSocket connections are also auth-gated at the HTTP upgrade. "
-            "docker/docker-compose.yml: port 18789 moved from bot to gateway."
+            "Dual-layer defense. "
+            "apply-patches.js Patch 2d: `config.interfaces.canvas = false` disables Canvas "
+            "in the OpenClaw config at every container start. "
+            "Additionally, v1.0.44 Canvas auth proxy (gateway/proxy/canvas_proxy.py) runs on "
+            "gateway at 127.0.0.1:18789 and validates HTTP Basic Auth (gateway_password) before "
+            "forwarding to bot:18789 on the isolated network — broken upstream auth is unreachable "
+            "without valid gateway credentials. WebSocket connections are also auth-gated."
         ),
-        "defense_layers": ["canvas_auth_proxy", "network_isolation", "gateway_password_auth"],
+        "defense_layers": [
+            "canvas_disabled",
+            "canvas_auth_proxy",
+            "apply_patches",
+            "gateway_password_auth",
+            "network_isolation",
+        ],
     },
     {
         "id": "CVE-2026-27488",
@@ -2975,16 +2984,22 @@ AGENT_CVE_REGISTRY: list[dict[str, Any]] = [
         "description": "OpenClaw versions prior to commit 8aceaf5 contain a preflight validation bypass vulnerability in shell-bleed protection that allows attackers to execute blocked script content by using piped or complex command forms that the parser fails to recognize. Attackers can craft commands such as piped execution, command substitution, or subshell invocation to bypass the validateScriptFileForShellBleed() v",
         "status": "fully_mitigated",
         "mitigation": (
-            "AgentShroud v1.0.44: _PARAM_INJECTION_PATTERNS in "
-            "gateway/security/tool_chain_analyzer.py expanded to catch piped-to-interpreter "
-            "(| sh, | bash, | python, | perl, | node, | ruby), heredoc (<<<, << EOF), process "
-            "substitution (<(), >()), eval, source, and exec. Shell execution tools "
-            "(execute_command, exec, bash, shell, run_command) added to PRIVATE_TOOLS in "
-            "gateway/security/tool_acl.py — owner-only, not accessible to collaborators. "
-            "13 new test cases added. seccomp profile and cap_drop:ALL provide additional "
-            "syscall-level containment."
+            "Multi-layer inbound pattern coverage. "
+            "pipeline.py Step 1.6: XMLLeakFilter C32 patterns (pipe chains, subshell `$()`, "
+            "backtick substitution, semicolon chaining) run on all inbound messages. "
+            "v1.0.44 tool_chain_analyzer.py: _PARAM_INJECTION_PATTERNS expanded to catch "
+            "piped-to-interpreter (| sh/bash/python/perl/node/ruby), heredoc, process "
+            "substitution. Shell exec tools added to PRIVATE_TOOLS (tool_acl.py) — owner-only. "
+            "seccomp default-deny and cap_drop:ALL provide syscall-level containment."
         ),
-        "defense_layers": ["tool_chain_analyzer", "tool_acl_private", "seccomp", "cap_drop_all"],
+        "defense_layers": [
+            "c32_inbound_scan",
+            "xml_leak_filter",
+            "tool_chain_analyzer",
+            "tool_acl_private",
+            "seccomp",
+            "cap_drop_all",
+        ],
     },
     {
         "id": "CVE-2026-35620",
