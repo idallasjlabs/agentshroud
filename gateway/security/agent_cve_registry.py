@@ -1568,21 +1568,12 @@ AGENT_CVE_REGISTRY: list[dict[str, Any]] = [
         "description": "OpenClaw Canvas Authentication Bypass Vulnerability. This vulnerability allows remote attackers to bypass authentication on affected installations of OpenClaw. Authentication is not required to exploit this vulnerability.  The specific flaw exists within the implementation of the the authentication function for canvas endpoints. The issue results from improper implementation of authentication. An ",
         "status": "fully_mitigated",
         "mitigation": (
-            "Dual-layer defense. "
-            "apply-patches.js Patch 2d: `config.interfaces.canvas = false` disables Canvas "
-            "in the OpenClaw config at every container start. "
-            "Additionally, v1.0.44 Canvas auth proxy (gateway/proxy/canvas_proxy.py) runs on "
+            "v1.0.44 Canvas auth proxy (gateway/proxy/canvas_proxy.py) runs on "
             "gateway at 127.0.0.1:18789 and validates HTTP Basic Auth (gateway_password) before "
             "forwarding to bot:18789 on the isolated network — broken upstream auth is unreachable "
             "without valid gateway credentials. WebSocket connections are also auth-gated."
         ),
-        "defense_layers": [
-            "canvas_disabled",
-            "canvas_auth_proxy",
-            "apply_patches",
-            "gateway_password_auth",
-            "network_isolation",
-        ],
+        "defense_layers": ["canvas_auth_proxy", "gateway_password_auth", "network_isolation"],
     },
     {
         "id": "CVE-2026-27488",
