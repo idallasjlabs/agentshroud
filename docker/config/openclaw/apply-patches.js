@@ -527,6 +527,14 @@ if (missingProxies.length > 0) {
   changed = true;
 }
 
+// Patch 2d: Disable Canvas — CVE-2026-3690 mitigation.
+// OpenClaw Canvas has an unpatched authentication bypass. Canvas is not used by
+// AgentShroud; disabling it eliminates the attack surface entirely.
+config.interfaces = config.interfaces || {};
+config.interfaces.canvas = false;
+console.log('[init-patch] Disabled Canvas endpoint (CVE-2026-3690 mitigation)');
+changed = true;
+
 // Patch 3: Telegram
 // Normalize: if the env var is a garbled multi-line blob (label + asterisks +
 // real token — written by pre-017e7bd setup-secrets.sh), extract the last
