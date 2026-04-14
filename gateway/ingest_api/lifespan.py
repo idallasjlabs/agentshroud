@@ -1589,6 +1589,43 @@ async def lifespan(app: FastAPI):
     # Record start time
     app_state.start_time = time.time()
 
+    # Canvas Auth-Proxy: start a second uvicorn server on port 18789 that
+    # validates the gateway password before forwarding to bot:18789.
+    # Mitigates CVE-2026-34871 (Canvas Authentication Bypass).
+    # Non-fatal: if the port is unavailable (e.g., in tests or dev), log and continue.
+    _canvas_port = int(os.environ.get("CANVAS_PROXY_PORT", "18789"))
+    _canvas_enabled = os.environ.get("CANVAS_PROXY_ENABLED", "true").lower() not in ("false", "0", "no")
+
+    async def _run_canvas_proxy() -> None:
+        import uvicorn as _uvicorn
+
+        from ..proxy.canvas_proxy import canvas_proxy_app as _canvas_app
+
+        try:
+            _canvas_config = _uvicorn.Config(
+                _canvas_app,
+                host="0.0.0.0",
+                port=_canvas_port,
+                loop="asyncio",
+                log_config=None,
+                access_log=False,
+            )
+            _canvas_server = _uvicorn.Server(_canvas_config)
+            await _canvas_server.serve()
+        except OSError as _ose:
+            logger.warning("⚠ Canvas auth-proxy port %d unavailable: %s", _canvas_port, _ose)
+        except SystemExit:
+            logger.warning("⚠ Canvas auth-proxy port %d unavailable (bind failed)", _canvas_port)
+        except Exception as _exc:
+            logger.warning("⚠ Canvas auth-proxy error: %s", _exc)
+
+    if _canvas_enabled:
+        app_state._canvas_proxy_task = _asyncio.create_task(_run_canvas_proxy())
+        logger.info("✓ Canvas auth-proxy scheduled on port %d (CVE-2026-34871 mitigation)", _canvas_port)
+    else:
+        app_state._canvas_proxy_task = None
+        logger.info("Canvas auth-proxy disabled via CANVAS_PROXY_ENABLED=false")
+
     install_log_handler()
     logger.info(f"AgentShroud Gateway ready at {app_state.config.bind}:{app_state.config.port}")
     logger.info("=" * 80)
@@ -1631,6 +1668,15 @@ async def lifespan(app: FastAPI):
     if getattr(app_state, "dns_blocklist", None):
         app_state.dns_blocklist.stop()
         logger.info("DNSBlocklist periodic updates stopped")
+
+    # Stop Canvas auth-proxy
+    canvas_proxy_task = getattr(app_state, "_canvas_proxy_task", None)
+    if canvas_proxy_task and not canvas_proxy_task.done():
+        canvas_proxy_task.cancel()
+        try:
+            await canvas_proxy_task
+        except asyncio.CancelledError:
+            pass
 
     # Stop Slack Socket Mode client
     slack_socket_client = getattr(app_state, "slack_socket_client", None)

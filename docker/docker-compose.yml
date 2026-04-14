@@ -32,6 +32,7 @@ services:
     stop_grace_period: "15s"
     ports:
       - 127.0.0.1:8080:8080
+      - 127.0.0.1:18789:18789  # Canvas auth-proxy (CVE-2026-34871 — auth gate in front of bot:18789)
     volumes:
       - ../agentshroud.yaml:/app/agentshroud.yaml:ro
       - agentshroud-ssh:/var/agentshroud-ssh:ro
@@ -165,8 +166,8 @@ services:
     hostname: agentshroud
     restart: unless-stopped
     stop_grace_period: "15s"
-    ports:
-      - 127.0.0.1:18789:18789
+    # Port 18789 is no longer published directly — Canvas traffic is now
+    # routed through the gateway's auth-proxy (CVE-2026-34871 mitigation).
     volumes:
       - agentshroud-config:/home/node/.openclaw
       - agentshroud-workspace:/home/node/agentshroud/workspace
@@ -273,15 +274,12 @@ services:
       - ${AGENTSHROUD_DNS_SECONDARY:-8.8.8.8}
       - 1.1.1.1
       - 8.8.8.8
-    # Bot networks:
-    #   agentshroud-isolated (internal:true)  — all proxy/agent traffic to gateway
-    #   agentshroud-console  (internal:false) — Control UI port publishing only
-    # Docker cannot publish host ports on internal-only networks, so the console
-    # network is required solely to allow 127.0.0.1:18789->18789 to bind on the host.
-    # All outbound HTTP/HTTPS still routes through the gateway via HTTP_PROXY.
+    # Bot is now on agentshroud-isolated only. Canvas port 18789 is no longer
+    # published directly from the bot — traffic routes through the gateway's
+    # auth-proxy on 127.0.0.1:18789 (CVE-2026-34871 mitigation).
+    # The gateway can reach bot:18789 via agentshroud-isolated.
     networks:
       - agentshroud-isolated
-      - agentshroud-console
     depends_on:
       gateway:
         condition: service_healthy
@@ -337,9 +335,9 @@ networks:
     driver_opts:
       com.docker.network.bridge.enable_icc: "true"
   agentshroud-console:
-    # Non-internal bridge solely to allow Docker host port publishing for the bot
-    # Control UI (127.0.0.1:18789->18789). Docker cannot publish ports on internal
-    # networks. No containers other than the bot use this network.
+    # Retained for backwards compatibility with override files.
+    # Canvas port 18789 is now published by the gateway (via canvas auth-proxy),
+    # not the bot directly. The bot no longer joins this network.
     driver: bridge
     internal: false
     ipam:

@@ -499,17 +499,20 @@ AGENT_CVE_REGISTRY: list[dict[str, Any]] = [
         "description": "A remote code execution (RCE) vulnerability in OpenClaw Agent Platform v2026.2.6 allows attackers to execute arbitrary code via a Request-Side prompt injection attack.",
         "status": "fully_mitigated",
         "mitigation": (
-            "ToolResultInjectionScanner now runs on all inbound messages via pipeline.py "
-            "Step 1.5, applying all 12 injection rules + encoded injection detection + "
-            "unicode obfuscation checks to inbound traffic. Combined with ContextGuard, "
-            "PromptGuard, HeuristicClassifier, read_only container, cap_drop:ALL, "
-            "EgressFilter, and network isolation."
+            "Dual-layer inbound + outbound coverage. "
+            "Step 1.5 (inbound): ToolResultInjectionScanner runs on all inbound messages, "
+            "applying 12 injection rules + encoded injection detection + unicode obfuscation. "
+            "Step 1.76 (outbound): PromptGuard.scan_tool_result() scans all tool results "
+            "(web content, file reads, API responses) at threshold 0.6 before returning to LLM. "
+            "Combined with ContextGuard, HeuristicClassifier, ToolACL, EgressFilter, "
+            "read_only container, cap_drop:ALL, and network isolation."
         ),
         "defense_layers": [
             "inbound_injection_scanner",
+            "prompt_guard_tool_result",
             "context_guard",
-            "prompt_guard",
-            "defense_in_depth",
+            "tool_acl",
+            "egress_filter",
             "network_isolation",
         ],
     },
@@ -1565,11 +1568,15 @@ AGENT_CVE_REGISTRY: list[dict[str, Any]] = [
         "description": "OpenClaw Canvas Authentication Bypass Vulnerability. This vulnerability allows remote attackers to bypass authentication on affected installations of OpenClaw. Authentication is not required to exploit this vulnerability.  The specific flaw exists within the implementation of the the authentication function for canvas endpoints. The issue results from improper implementation of authentication. An ",
         "status": "fully_mitigated",
         "mitigation": (
-            "Canvas disabled entirely via apply-patches.js Patch 2d: "
-            "`config.interfaces.canvas = false` is applied at every container start. "
-            "Attack surface eliminated — the vulnerable endpoint never starts."
+            "Dual-layer defense. "
+            "apply-patches.js Patch 2d: `config.interfaces.canvas = false` disables Canvas "
+            "in the OpenClaw config at every container start. "
+            "Additionally, v1.0.44 Canvas auth proxy (gateway/proxy/canvas_proxy.py) runs on "
+            "gateway at 127.0.0.1:18789 and validates HTTP Basic Auth (gateway_password) before "
+            "forwarding to bot:18789 on the isolated network — broken upstream auth is unreachable "
+            "without valid gateway credentials. WebSocket connections are also auth-gated."
         ),
-        "defense_layers": ["canvas_disabled", "apply_patches", "network_isolation"],
+        "defense_layers": ["canvas_disabled", "canvas_auth_proxy", "apply_patches", "gateway_password_auth", "network_isolation"],
     },
     {
         "id": "CVE-2026-27488",
@@ -2971,18 +2978,15 @@ AGENT_CVE_REGISTRY: list[dict[str, Any]] = [
         "description": "OpenClaw versions prior to commit 8aceaf5 contain a preflight validation bypass vulnerability in shell-bleed protection that allows attackers to execute blocked script content by using piped or complex command forms that the parser fails to recognize. Attackers can craft commands such as piped execution, command substitution, or subshell invocation to bypass the validateScriptFileForShellBleed() v",
         "status": "fully_mitigated",
         "mitigation": (
-            "XMLLeakFilter C32 shell metachar patterns (pipe chains, subshell expansion, "
-            "command substitution) now run on all inbound messages via pipeline.py Step 1.6, "
-            "catching piped/subshell bypass constructs before they reach the agent. "
-            "Combined with ToolACL, seccomp default-deny, and cap_drop:ALL containment."
+            "Multi-layer inbound pattern coverage. "
+            "pipeline.py Step 1.6: XMLLeakFilter C32 patterns (pipe chains, subshell `$()`, "
+            "backtick substitution, semicolon chaining) run on all inbound messages. "
+            "v1.0.44 tool_chain_analyzer.py: _PARAM_INJECTION_PATTERNS expanded to catch "
+            "piped-to-interpreter (| sh/bash/python/perl/node/ruby), heredoc, process "
+            "substitution. Shell exec tools added to PRIVATE_TOOLS (tool_acl.py) — owner-only. "
+            "seccomp default-deny and cap_drop:ALL provide syscall-level containment."
         ),
-        "defense_layers": [
-            "c32_inbound_scan",
-            "xml_leak_filter",
-            "tool_acl",
-            "seccomp",
-            "cap_drop_all",
-        ],
+        "defense_layers": ["c32_inbound_scan", "xml_leak_filter", "tool_chain_analyzer", "tool_acl_private", "seccomp", "cap_drop_all"],
     },
     {
         "id": "CVE-2026-35620",
