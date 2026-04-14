@@ -502,6 +502,26 @@ async def lifespan(app: FastAPI):
         logger.error("✗ EnvelopeSigner: %s", _es_exc)
         _envelope_signer = None
 
+    # Pre-load ToolResultInjectionScanner for inbound injection scanning (CVE-2026-30741).
+    _inbound_injection_scanner = None
+    try:
+        from ..security.tool_result_injection import ToolResultInjectionScanner
+
+        _inbound_injection_scanner = ToolResultInjectionScanner()
+        logger.info("InboundInjectionScanner initialized (CVE-2026-30741 mitigation)")
+    except Exception as _inj_exc:
+        logger.warning("InboundInjectionScanner not available: %s", _inj_exc)
+
+    # Pre-load XMLLeakFilter for inbound C32 command injection scanning (CVE-2026-34425).
+    _inbound_xml_leak_filter = None
+    try:
+        from ..security.xml_leak_filter import XMLLeakFilter
+
+        _inbound_xml_leak_filter = XMLLeakFilter()
+        logger.info("C32InboundScan (XMLLeakFilter) initialized (CVE-2026-34425 mitigation)")
+    except Exception as _xml_exc:
+        logger.warning("C32InboundScan not available: %s", _xml_exc)
+
     # Pre-load ClamAV scan_bytes so the pipeline is constructed with it already wired.
     # Without this, SecurityPipeline fires a CRITICAL warning at construction time even
     # though clamav_scanner is set moments later in the post-pipeline init block.
@@ -540,6 +560,8 @@ async def lifespan(app: FastAPI):
         output_schema_enforcer=_output_schema_enforcer,
         envelope_signer=_envelope_signer,
         clamav_scanner=_clamav_scan_bytes,
+        tool_result_injection_scanner=_inbound_injection_scanner,
+        xml_leak_filter=_inbound_xml_leak_filter,
     )
     logger.info("Security pipeline initialized")
 
