@@ -70,6 +70,12 @@ PRIVATE_TOOLS: frozenset[str] = frozenset(
         "home_assistant",
         "homekit",
         "ha_automation",
+        # Shell / command execution (CVE-2026-35190 fix — owner-only)
+        "execute_command",
+        "exec",
+        "bash",
+        "shell",
+        "run_command",
     }
 )
 
