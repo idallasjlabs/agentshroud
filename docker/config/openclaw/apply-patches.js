@@ -527,6 +527,15 @@ if (missingProxies.length > 0) {
   changed = true;
 }
 
+// Patch 2d-cleanup: Remove stale config.interfaces key written by a previous
+// broken patch. OpenClaw's config validator rejects any unrecognized top-level
+// key, so if this key exists the bot crash-loops. Safe to delete unconditionally.
+if (Object.prototype.hasOwnProperty.call(config, 'interfaces')) {
+  delete config.interfaces;
+  console.log('[init-patch] Removed stale config.interfaces key (cleanup)');
+  changed = true;
+}
+
 // Patch 3: Telegram
 // Normalize: if the env var is a garbled multi-line blob (label + asterisks +
 // real token — written by pre-017e7bd setup-secrets.sh), extract the last
