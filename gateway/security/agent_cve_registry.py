@@ -1576,7 +1576,13 @@ AGENT_CVE_REGISTRY: list[dict[str, Any]] = [
             "forwarding to bot:18789 on the isolated network — broken upstream auth is unreachable "
             "without valid gateway credentials. WebSocket connections are also auth-gated."
         ),
-        "defense_layers": ["canvas_disabled", "canvas_auth_proxy", "apply_patches", "gateway_password_auth", "network_isolation"],
+        "defense_layers": [
+            "canvas_disabled",
+            "canvas_auth_proxy",
+            "apply_patches",
+            "gateway_password_auth",
+            "network_isolation",
+        ],
     },
     {
         "id": "CVE-2026-27488",
@@ -2986,7 +2992,14 @@ AGENT_CVE_REGISTRY: list[dict[str, Any]] = [
             "substitution. Shell exec tools added to PRIVATE_TOOLS (tool_acl.py) — owner-only. "
             "seccomp default-deny and cap_drop:ALL provide syscall-level containment."
         ),
-        "defense_layers": ["c32_inbound_scan", "xml_leak_filter", "tool_chain_analyzer", "tool_acl_private", "seccomp", "cap_drop_all"],
+        "defense_layers": [
+            "c32_inbound_scan",
+            "xml_leak_filter",
+            "tool_chain_analyzer",
+            "tool_acl_private",
+            "seccomp",
+            "cap_drop_all",
+        ],
     },
     {
         "id": "CVE-2026-35620",

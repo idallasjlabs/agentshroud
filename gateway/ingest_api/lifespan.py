@@ -1594,7 +1594,11 @@ async def lifespan(app: FastAPI):
     # Mitigates CVE-2026-34871 (Canvas Authentication Bypass).
     # Non-fatal: if the port is unavailable (e.g., in tests or dev), log and continue.
     _canvas_port = int(os.environ.get("CANVAS_PROXY_PORT", "18789"))
-    _canvas_enabled = os.environ.get("CANVAS_PROXY_ENABLED", "true").lower() not in ("false", "0", "no")
+    _canvas_enabled = os.environ.get("CANVAS_PROXY_ENABLED", "true").lower() not in (
+        "false",
+        "0",
+        "no",
+    )
 
     async def _run_canvas_proxy() -> None:
         import uvicorn as _uvicorn
@@ -1621,7 +1625,9 @@ async def lifespan(app: FastAPI):
 
     if _canvas_enabled:
         app_state._canvas_proxy_task = _asyncio.create_task(_run_canvas_proxy())
-        logger.info("✓ Canvas auth-proxy scheduled on port %d (CVE-2026-34871 mitigation)", _canvas_port)
+        logger.info(
+            "✓ Canvas auth-proxy scheduled on port %d (CVE-2026-34871 mitigation)", _canvas_port
+        )
     else:
         app_state._canvas_proxy_task = None
         logger.info("Canvas auth-proxy disabled via CANVAS_PROXY_ENABLED=false")

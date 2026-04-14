@@ -537,9 +537,7 @@ class SecurityPipeline:
                     else:
                         result.action = PipelineAction.BLOCK
                         result.blocked = True
-                        result.block_reason = (
-                            f"Command injection pattern detected inbound: {c32_result.removed_items}"
-                        )
+                        result.block_reason = f"Command injection pattern detected inbound: {c32_result.removed_items}"
                         self._stats["inbound_blocked"] += 1
                         entry = await self.audit_chain.append_block(
                             message, "inbound_cmd_injection_blocked", metadata
