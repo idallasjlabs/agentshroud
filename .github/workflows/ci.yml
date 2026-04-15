@@ -45,7 +45,7 @@ jobs:
 
       - name: Run tests with coverage
         run: |
-          python -m pytest gateway/tests/ -v -n auto --dist=loadscope \
+          python -m pytest gateway/tests/ -v \
             --cov=gateway \
             --cov-config=gateway/pyproject.toml \
             --cov-report=term-missing \
