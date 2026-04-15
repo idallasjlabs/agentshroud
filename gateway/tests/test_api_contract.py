@@ -24,6 +24,7 @@ class TestOpenAPIContract:
         """Create a FastAPI test client."""
         try:
             from fastapi.testclient import TestClient
+
             from gateway.ingest_api.main import app
 
             self._client = TestClient(app)
