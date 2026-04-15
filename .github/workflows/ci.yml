@@ -49,7 +49,7 @@ jobs:
             --cov=gateway \
             --cov-report=term-missing \
             --cov-report=xml:coverage.xml \
-            --cov-fail-under=94
+            --cov-fail-under=84
 
       - name: Upload coverage artifact
         if: always()

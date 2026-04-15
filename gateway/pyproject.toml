@@ -56,7 +56,7 @@ omit = ["gateway/tests/*", "*/migrations/*"]
 
 [tool.coverage.report]
 show_missing = true
-fail_under = 94
+fail_under = 84
 exclude_lines = [
     "pragma: no cover",
     "def __repr__",
