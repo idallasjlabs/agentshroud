@@ -35,3 +35,5 @@ eval-type-backport>=0.2.0; python_version < "3.10"
 # System monitoring
 psutil>=6.0.0,<7.0.0
 docker>=7.0.0,<8.0.0
+pytest-xdist>=3.0,<4.0
+pytest-benchmark>=4.0,<5.0
