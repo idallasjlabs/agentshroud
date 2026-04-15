@@ -37,6 +37,7 @@ from fastapi.staticfiles import StaticFiles
 from pydantic import BaseModel, Field
 from starlette.responses import RedirectResponse
 
+from gateway import __version__
 from gateway.security.session_manager import UserSessionManager
 
 from ..proxy.http_proxy import ALLOWED_DOMAINS, HTTPConnectProxy
@@ -171,7 +172,7 @@ logger = logging.getLogger("agentshroud.gateway.main")
 app = FastAPI(
     title="AgentShroud Gateway",
     description="Ingest API for the AgentShroud proxy layer framework",
-    version="1.0.44",
+    version=__version__,
     lifespan=lifespan,
 )
 

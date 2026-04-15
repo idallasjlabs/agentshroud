@@ -41,6 +41,7 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r gateway/requirements.txt
           pip install pytest-cov
+          pip install pytest-xdist
 
       - name: Run tests with coverage
         run: |
@@ -48,7 +49,7 @@ jobs:
             --cov=gateway \
             --cov-report=term-missing \
             --cov-report=xml:coverage.xml \
-            --cov-fail-under=80
+            --cov-fail-under=84
 
       - name: Upload coverage artifact
         if: always()
@@ -177,3 +178,72 @@ jobs:
 
       - name: Lint
         run: flake8 gateway/ --max-line-length 100 --extend-ignore=E501,E203,E226,E228,E231,E304,E402,E712,E741,W291,W293,W503,F401,F541,F811,F821,F824,F841
+
+  benchmark:
+    runs-on: macos-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Set up Python
+        uses: actions/setup-python@v6
+        with:
+          python-version: "3.11"
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r gateway/requirements.txt
+          pip install pytest-benchmark
+      - name: Run benchmark regression
+        run: |
+          python -m pytest gateway/tests/test_benchmark_regression.py -v \
+            --benchmark-json=.benchmarks/current.json || true
+          python scripts/check_benchmark_regression.py
+
+  dast:
+    name: DAST Scan (Nuclei)
+    if: github.event_name == 'workflow_dispatch'
+    runs-on: self-hosted
+    steps:
+      - uses: actions/checkout@v4
+      - name: Start gateway
+        run: |
+          docker compose -f docker/docker-compose.yml up -d gateway
+          sleep 10
+      - name: Install nuclei
+        run: |
+          curl -sSfL https://github.com/projectdiscovery/nuclei/releases/latest/download/nuclei_linux_amd64.zip \
+            -o nuclei.zip && unzip nuclei.zip -d /usr/local/bin/
+      - name: Run nuclei scan
+        run: |
+          nuclei -u http://localhost:8080 -severity medium,high,critical \
+            -sarif-export dast-results.sarif || true
+      - name: Upload SARIF
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: dast-sarif
+          path: dast-results.sarif
+      - name: Stop gateway
+        if: always()
+        run: docker compose -f docker/docker-compose.yml down
+
+  docs-drift:
+    name: Docs Drift Check
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Set up Python
+        uses: actions/setup-python@v6
+        with:
+          python-version: "3.11"
+      - name: Check version consistency
+        run: |
+          PKG_VERSION=$(python -c "import sys; sys.path.insert(0,''); from gateway import __version__; print(__version__)")
+          API_VERSION=$(grep -o 'version="[^"]*"' gateway/ingest_api/main.py | grep -o '[0-9][^"]*' || echo "dynamic")
+          echo "Package version: $PKG_VERSION"
+          echo "API version declaration: $API_VERSION"
+          if [ "$API_VERSION" != "dynamic" ] && [ "$API_VERSION" != "$PKG_VERSION" ]; then
+            echo "ERROR: API version '$API_VERSION' does not match package version '$PKG_VERSION'"
+            echo "Fix: use version=__version__ in gateway/ingest_api/main.py"
+            exit 1
+          fi
+          echo "Version consistency: OK"

@@ -313,6 +313,20 @@
       }
     },
     {
+      "name": "Weekly Kaizen Review",
+      "schedule": "0 17 * * 5",
+      "timezone": "America/New_York",
+      "enabled": true,
+      "payload": "It's Friday 5 PM — time for the weekly kaizen review. Please analyze this week's activity: What shipped? What broke or caused friction? What process improvements would have the most impact? Be specific and actionable. Format your response as: SHIPPED / BROKE / IMPROVE."
+    },
+    {
+      "name": "Monthly Chaos Engineering Drill",
+      "schedule": "0 9 1 * *",
+      "timezone": "America/New_York",
+      "enabled": true,
+      "payload": "First of the month — chaos engineering drill. Simulate one realistic failure scenario for AgentShroud. Choose from: gateway crash, volume corruption, bot disconnect, or dependency outage. Describe: the failure mode, detection method, expected blast radius, and recovery procedure. Keep it concise and actionable."
+    },
+    {
       "id": "bffec5cb-3373-4c80-b628-1b3e2c78ff1c",
       "agentId": "main",
       "name": "Daily CVE Triage & Remediation Scan",
