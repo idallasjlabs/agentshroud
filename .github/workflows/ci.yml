@@ -47,7 +47,6 @@ jobs:
         run: |
           python -m pytest gateway/tests/ -v \
             --cov=gateway \
-            --cov-config=gateway/pyproject.toml \
             --cov-report=term-missing \
             --cov-report=xml:coverage.xml \
             --cov-fail-under=94
