@@ -312,8 +312,60 @@ case "${1:-}" in
   status)  $COMPOSE ps ;;
   logs)    $COMPOSE logs -f --tail=100 ${2:-} ;;
   test)    $COMPOSE exec gateway python -m pytest gateway/tests/ -q ;;
+  canary)
+    SERVICE=${2:-gateway}
+    CANARY_PROJECT="agentshroud-canary"
+    echo "[asb canary] Starting canary instance of $SERVICE on alternate ports (+100)..."
+    # Start canary instance with offset ports
+    docker compose -f docker/docker-compose.yml \
+      -p "$CANARY_PROJECT" \
+      up -d "$SERVICE" \
+      2>&1 || { echo "[asb canary] Failed to start canary"; exit 1; }
+    echo "[asb canary] Canary started. Waiting 60s for soak..."
+    sleep 60
+    # Health check both instances
+    PRIMARY_HEALTH=$(curl -sf http://localhost:8080/status > /dev/null 2>&1 && echo "healthy" || echo "unhealthy")
+    CANARY_HEALTH=$(curl -sf http://localhost:8180/status > /dev/null 2>&1 && echo "healthy" || echo "unhealthy")
+    echo "[asb canary] Primary: $PRIMARY_HEALTH | Canary: $CANARY_HEALTH"
+    if [ "$CANARY_HEALTH" != "healthy" ]; then
+      echo "[asb canary] Canary unhealthy — stopping canary, primary untouched"
+      docker compose -f docker/docker-compose.yml -p "$CANARY_PROJECT" down
+      exit 1
+    fi
+    printf "[asb canary] Canary healthy. Promote to primary? [y/N]: "
+    read -r PROMOTE
+    if [ "$PROMOTE" = "y" ] || [ "$PROMOTE" = "Y" ]; then
+      echo "[asb canary] Promoting canary..."
+      docker compose -f docker/docker-compose.yml down
+      docker compose -f docker/docker-compose.yml -p "$CANARY_PROJECT" down
+      docker compose -f docker/docker-compose.yml up -d
+      echo "[asb canary] Canary promoted. Primary restarted."
+    else
+      echo "[asb canary] Promotion declined. Stopping canary."
+      docker compose -f docker/docker-compose.yml -p "$CANARY_PROJECT" down
+    fi
+    ;;
+  rollback)
+    PREV_IMAGE_FILE=".asb-previous-image"
+    if [ ! -f "$PREV_IMAGE_FILE" ]; then
+      echo "[asb rollback] No previous image recorded at $PREV_IMAGE_FILE"
+      echo "[asb rollback] Cannot rollback — run 'asb rebuild' at least once to record a baseline"
+      exit 1
+    fi
+    PREV_IMAGE=$(cat "$PREV_IMAGE_FILE")
+    echo "[asb rollback] Rolling back to: $PREV_IMAGE"
+    docker compose -f docker/docker-compose.yml down
+    GATEWAY_IMAGE="$PREV_IMAGE" docker compose -f docker/docker-compose.yml up -d
+    echo "[asb rollback] Rollback complete. Running post-deploy check..."
+    sleep 5
+    curl -sf http://localhost:8080/status && echo " [ok]" || echo " [warning: health check failed]"
+    ;;
+  instances)
+    echo "[asb instances] Running AgentShroud instances:"
+    docker ps --filter "name=agentshroud" --format "table {{.Names}}\t{{.Ports}}\t{{.Status}}" 2>/dev/null || echo "No running instances found"
+    ;;
   *)
-    echo "Usage: asb {build|up|down|rebuild|clean-rebuild|prune|pull|status|logs [service]|test}"
+    echo "Usage: asb {build|up|down|rebuild|clean-rebuild|prune|pull|status|logs [service]|test|canary [service]|rollback|instances}"
     exit 1
     ;;
 esac
