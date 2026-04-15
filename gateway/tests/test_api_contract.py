@@ -8,6 +8,7 @@ Validates the FastAPI OpenAPI schema and ensures:
 - Protected endpoints reject unauthenticated requests
 - OpenAPI schema is structurally valid
 """
+
 import json
 
 import pytest
@@ -24,6 +25,7 @@ class TestOpenAPIContract:
         try:
             from fastapi.testclient import TestClient
             from gateway.ingest_api.main import app
+
             self._client = TestClient(app)
         except ImportError:
             pytest.skip("FastAPI TestClient not available")
@@ -59,9 +61,10 @@ class TestOpenAPIContract:
         for path in ["/status", "/health", "/"]:
             response = self._client.get(path)
             # Should NOT return 401/403 for health checks
-            assert response.status_code not in (401, 403), (
-                f"{path} returned {response.status_code} — health endpoints must be public"
-            )
+            assert response.status_code not in (
+                401,
+                403,
+            ), f"{path} returned {response.status_code} — health endpoints must be public"
 
     def test_protected_endpoints_reject_unauthenticated(self):
         """Protected API endpoints must reject requests without auth tokens."""
@@ -82,6 +85,6 @@ class TestOpenAPIContract:
         """API endpoints should not return 500 on malformed/empty requests."""
         response = self._client.post("/ingest", json={})
         # 500 = unhandled exception — bad. 4xx = expected validation rejection.
-        assert response.status_code != 500, (
-            f"/ingest returned 500 on empty request — this is an unhandled exception"
-        )
+        assert (
+            response.status_code != 500
+        ), f"/ingest returned 500 on empty request — this is an unhandled exception"

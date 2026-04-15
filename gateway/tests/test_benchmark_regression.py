@@ -6,6 +6,7 @@ Verifies that key latency metrics stay within 20% of the baseline recorded
 in .benchmarks/baseline-v1.0.0.json. Designed to be run with pytest-benchmark
 in CI, but degrades gracefully when run without it.
 """
+
 import json
 import time
 from pathlib import Path
@@ -22,7 +23,8 @@ def load_baseline():
         return {}
     with open(BASELINE_PATH) as f:
         data = json.load(f)
-    return data.get("benchmarks", {})
+    # Baseline is a flat dict — skip the _meta key and non-numeric values
+    return {k: v for k, v in data.items() if k != "_meta" and isinstance(v, (int, float))}
 
 
 def assert_within_threshold(measured_ms: float, baseline_ms: float, label: str):
@@ -120,10 +122,10 @@ class TestBenchmarkRegression:
         )
         with open(BASELINE_PATH) as f:
             data = json.load(f)
-        benchmarks = data.get("benchmarks", {})
+        # Baseline is a flat dict; check keys at the top level
         expected_keys = ["single_inbound_ms", "single_outbound_ms"]
         for key in expected_keys:
-            assert key in benchmarks, f"Baseline missing key: {key}"
+            assert key in data, f"Baseline missing key: {key}"
 
     def test_baseline_values_are_reasonable(self):
         """Baseline values should be positive and within expected ranges."""

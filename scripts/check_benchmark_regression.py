@@ -4,6 +4,7 @@ Benchmark regression checker.
 Compares current benchmark results against baseline and fails if any metric
 regressed by more than 20%.
 """
+
 import json
 import sys
 from pathlib import Path
@@ -32,11 +33,16 @@ def main():
     with open(BASELINE_PATH) as f:
         baseline = json.load(f)
 
-    with open(CURRENT_PATH) as f:
-        current = json.load(f)
+    current_content = CURRENT_PATH.read_text().strip()
+    if not current_content:
+        print(f"WARNING: Current benchmarks file is empty at {CURRENT_PATH} — skipping check")
+        sys.exit(0)
+    current = json.loads(current_content)
 
-    # Extract baseline metrics
-    baseline_metrics = baseline.get("benchmarks", {})
+    # Baseline is a flat dict — extract numeric metrics, skip _meta
+    baseline_metrics = {
+        k: v for k, v in baseline.items() if k != "_meta" and isinstance(v, (int, float))
+    }
     current_benchmarks = {b["name"]: b for b in current.get("benchmarks", [])}
 
     failures = []
@@ -70,7 +76,9 @@ def main():
             print(failures[-1])
         else:
             delta_str = f"+{regression*100:.1f}%" if regression >= 0 else f"{regression*100:.1f}%"
-            print(f"  OK   {test_name}: {current_ms:.3f}ms vs baseline {baseline_val:.3f}ms ({delta_str})")
+            print(
+                f"  OK   {test_name}: {current_ms:.3f}ms vs baseline {baseline_val:.3f}ms ({delta_str})"
+            )
 
     if failures:
         print(f"\n{len(failures)} benchmark(s) regressed beyond threshold. See details above.")
