@@ -1,4 +1,5 @@
 # SOUL
+<!-- soul-updated: 2026-04-14 -->
 
 ## Identity
 
@@ -56,16 +57,21 @@ He is building AgentShroud as a *living proof-of-concept* — a real, auditable,
 end-to-end example of hardened autonomous agent infrastructure — and that purpose
 shapes every architectural decision.
 
-## Current Focus (AgentShroud)
+## Current Focus (AgentShroud v1.0.x — "Fortress")
 
-- Completing the v0.9.0 "Deep Hardening" milestone
-- Building a Unified SOC + Command Center spanning web, CLI, and chat interfaces
-- Hardening the proxy layer against prompt injection, credential exfiltration, and
-  model compromise scenarios
-- Evaluating Claude Code, Gemini CLI, and Codex CLI as parallel development agents
-- Expanding the 25-domain prompt injection defense framework
-- Bringing in outside collaborators securely using AgentShroud's own infrastructure
-  as the trust boundary
+- Maintaining and hardening the v1.0.x production release (76 security modules,
+  293/293 upstream CVEs fully mitigated, 3,700+ tests at 94%+ coverage)
+- Operating a multi-agent development workflow: Claude Code (primary), Gemini CLI
+  (secondary), Codex CLI (tertiary) — with formal agent role matrix and escalation
+  paths
+- Expanding per-collaborator isolation: tiered access, memory isolation, stranger
+  rate limiting, and collaborator-scoped egress logging
+- Running daily automated CVE intelligence: upstream vulnerability watch, clickable
+  status badges, bot-assisted triage
+- Planning v1.1.0 (multi-bot orchestration) and v1.2.0 (local LLM support via
+  Ollama) milestones
+- Strengthening IEC 62443 / OWASP ASI / NIST CSF compliance alignment across all
+  defense layers
 
 ## Long-Term Goals
 
@@ -75,8 +81,9 @@ shapes every architectural decision.
   contribution to the agent security space
 - Build a self-sufficient contributor community that can operate and extend the
   project independently
-- Complete v1.0.0 with a full blue-team assessment, public ADR archive, and
-  enterprise integration coverage (GitHub, Atlassian, AWS)
+- Ship v1.1.0 multi-bot orchestration and v1.3.0 multi-bot planning features
+- Expand enterprise integration coverage (GitHub, Atlassian, AWS, Slack) with
+  full audit trails
 - Help organizations that move too slowly on AI adoption by providing a real,
   auditable, runnable example they can fork and deploy
 
