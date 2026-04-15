@@ -58,7 +58,7 @@ class TestBenchmarkRegression:
         if not baseline_ms:
             pytest.skip("No baseline for single_inbound_ms")
 
-        with patch("gateway.proxy.http_proxy.HttpProxy") as mock_proxy:
+        with patch("gateway.proxy.http_proxy.HTTPConnectProxy") as mock_proxy:
             mock_proxy.return_value.handle_request = MagicMock(return_value={"status": 200})
 
             def simulate_inbound():
@@ -73,7 +73,7 @@ class TestBenchmarkRegression:
         if not baseline_ms:
             pytest.skip("No baseline for single_outbound_ms")
 
-        with patch("gateway.proxy.http_proxy.HttpProxy") as mock_proxy:
+        with patch("gateway.proxy.http_proxy.HTTPConnectProxy") as mock_proxy:
             mock_proxy.return_value.handle_outbound = MagicMock(return_value={"status": 200})
 
             def simulate_outbound():
@@ -88,7 +88,7 @@ class TestBenchmarkRegression:
         if not baseline_ms:
             pytest.skip("No baseline for 100_inbound_ms")
 
-        with patch("gateway.proxy.http_proxy.HttpProxy") as mock_proxy:
+        with patch("gateway.proxy.http_proxy.HTTPConnectProxy") as mock_proxy:
             mock_proxy.return_value.handle_request = MagicMock(return_value={"status": 200})
 
             start = time.perf_counter()
@@ -104,7 +104,7 @@ class TestBenchmarkRegression:
         if not baseline_ms:
             pytest.skip("No baseline for 100_outbound_ms")
 
-        with patch("gateway.proxy.http_proxy.HttpProxy") as mock_proxy:
+        with patch("gateway.proxy.http_proxy.HTTPConnectProxy") as mock_proxy:
             mock_proxy.return_value.handle_outbound = MagicMock(return_value={"status": 200})
 
             start = time.perf_counter()

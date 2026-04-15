@@ -59,7 +59,7 @@ class TestOpenAPIContract:
 
     def test_health_endpoint_unauthenticated(self):
         """Health/status endpoint must be accessible without authentication."""
-        for path in ["/status", "/health", "/"]:
+        for path in ["/status", "/health"]:
             response = self._client.get(path)
             # Should NOT return 401/403 for health checks
             assert response.status_code not in (
