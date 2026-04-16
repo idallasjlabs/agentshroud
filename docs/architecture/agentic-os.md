@@ -364,7 +364,7 @@ Every tool invocation passes through hooks before execution:
 ```mermaid
 flowchart LR
     subgraph "PreToolUse Hooks"
-        H1[warn_dangerous_bash.sh<br/>rm -rf, curl|sh, chmod 777]
+        H1["warn_dangerous_bash.sh<br/>rm -rf, curl|sh, chmod 777"]
         H2[block_main_commits.sh<br/>No commits on main]
         H3[block_credential_read.sh<br/>No cat/grep on secrets/]
         H4[block_credential_write.sh<br/>No xoxb-, ghp_, sk-, AKIA]
