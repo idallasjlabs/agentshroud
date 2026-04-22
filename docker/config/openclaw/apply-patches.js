@@ -82,8 +82,8 @@ if (!config.agents.defaults.models[MAIN_MODEL]) {
   config.agents.defaults.models[MAIN_MODEL] = { alias: 'local-qwen' };
   changed = true;
 }
-if (!config.agents.defaults.timeoutSeconds || config.agents.defaults.timeoutSeconds < 600) {
-  config.agents.defaults.timeoutSeconds = 600;
+if (!config.agents.defaults.timeoutSeconds || config.agents.defaults.timeoutSeconds < 900) {
+  config.agents.defaults.timeoutSeconds = 900;
   changed = true;
 }
 
