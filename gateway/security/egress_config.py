@@ -32,6 +32,8 @@ PERMANENT_EGRESS_DOMAINS: list[str] = [
     "api.anthropic.com",
     "api.openai.com",
     "generativelanguage.googleapis.com",
+    "openrouter.ai",
+    "*.openrouter.ai",
     # ── Google Services ──
     "oauth2.googleapis.com",
     "www.googleapis.com",
