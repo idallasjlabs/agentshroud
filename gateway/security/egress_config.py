@@ -142,17 +142,13 @@ class EgressFilterConfig:
     agent_allowlists: Dict[str, List[str]] = field(default_factory=dict)
 
     # Global IP allowlist (CIDR notation supported)
-    # Lab hosts pre-approved for SSH relay — specific IPs only (not the full /24)
-    #   192.168.7.137 — marvin
-    #   192.168.7.97  — raspberrypi
-    #   192.168.7.103 — trillian (ethernet)
-    allowed_ips: List[str] = field(
-        default_factory=lambda: ["192.168.7.137/32", "192.168.7.97/32", "192.168.7.103/32"]
-    )
+    # Populated from AGENTSHROUD_ALLOWED_IPS env var (comma-separated)
+    allowed_ips: List[str] = field(default_factory=list)
 
     # Allowed ports (empty list means all ports allowed)
-    # Port 22: SSH relay to lab hosts via CONNECT proxy
-    allowed_ports: List[int] = field(default_factory=lambda: [22, 80, 443, 465, 587, 993])
+    # Populated from AGENTSHROUD_ALLOWED_PORTS env var (comma-separated)
+    # Defaults: 80, 443, 465 (SMTPS), 587 (submission), 993 (IMAPS)
+    allowed_ports: List[int] = field(default_factory=lambda: [80, 443, 465, 587, 993])
 
     # Whether to enable strict mode (denylist overrides allowlist)
     strict_mode: bool = True
@@ -180,7 +176,27 @@ class EgressFilterConfig:
 
         approval_all_env = os.getenv("AGENTSHROUD_EGRESS_APPROVAL_ALL", "true").strip().lower()
         approval_required_for_all = approval_all_env not in ("0", "false", "no", "off")
-        return cls(mode=mode, approval_required_for_all=approval_required_for_all)
+
+        # Parse allowed IPs from env (comma-separated, e.g. "192.168.7.137/32,10.0.0.5/32")
+        allowed_ips: List[str] = []
+        allowed_ips_env = os.getenv("AGENTSHROUD_ALLOWED_IPS", "").strip()
+        if allowed_ips_env:
+            allowed_ips = [ip.strip() for ip in allowed_ips_env.split(",") if ip.strip()]
+
+        # Parse allowed ports from env (comma-separated, e.g. "22,80,443")
+        # Falls back to class default if env var is absent
+        allowed_ports_env = os.getenv("AGENTSHROUD_ALLOWED_PORTS", "").strip()
+        kwargs: dict = dict(
+            mode=mode,
+            approval_required_for_all=approval_required_for_all,
+            allowed_ips=allowed_ips,
+        )
+        if allowed_ports_env:
+            kwargs["allowed_ports"] = [
+                int(p.strip()) for p in allowed_ports_env.split(",") if p.strip().isdigit()
+            ]
+
+        return cls(**kwargs)
 
     def get_effective_allowlist(self, agent_id: str) -> Set[str]:
         """Get the effective allowlist for a specific agent."""
