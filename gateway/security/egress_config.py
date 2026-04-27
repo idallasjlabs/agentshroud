@@ -142,10 +142,17 @@ class EgressFilterConfig:
     agent_allowlists: Dict[str, List[str]] = field(default_factory=dict)
 
     # Global IP allowlist (CIDR notation supported)
-    allowed_ips: List[str] = field(default_factory=list)
+    # Lab hosts pre-approved for SSH relay — specific IPs only (not the full /24)
+    #   192.168.7.137 — marvin
+    #   192.168.7.97  — raspberrypi
+    #   192.168.7.103 — trillian (ethernet)
+    allowed_ips: List[str] = field(
+        default_factory=lambda: ["192.168.7.137/32", "192.168.7.97/32", "192.168.7.103/32"]
+    )
 
     # Allowed ports (empty list means all ports allowed)
-    allowed_ports: List[int] = field(default_factory=lambda: [80, 443, 465, 587, 993])
+    # Port 22: SSH relay to lab hosts via CONNECT proxy
+    allowed_ports: List[int] = field(default_factory=lambda: [22, 80, 443, 465, 587, 993])
 
     # Whether to enable strict mode (denylist overrides allowlist)
     strict_mode: bool = True
