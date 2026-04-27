@@ -7489,26 +7489,28 @@ class TelegramAPIProxy:
 
         req = urllib.request.Request(url, data=body, headers=headers)
 
+        # getUpdates is a long-poll: Telegram holds the connection open for up to 30s
+        # waiting for messages, then closes with {"ok": true, "result": []}.
+        # urlopen_timeout must exceed Telegram's hold time or we abort mid-poll.
+        # All other methods (sendMessage, deleteWebhook, etc.) are fast — cap tightly
+        # to prevent thread-pool saturation from rapid bot restart cycles.
+        is_long_poll = "getUpdates" in url
+        urlopen_timeout = 38 if is_long_poll else 12
+        wait_for_timeout = urlopen_timeout + 5  # queue + execution budget
+
         loop = asyncio.get_event_loop()
         try:
-            # Cap total coroutine wait time (queue + execution) to 30s.
-            # Without this, a saturated thread pool (from rapid bot restart cycles)
-            # causes requests to wait thousands of seconds in the executor queue,
-            # which triggers openclaw's health monitor → restart loop → more saturation.
-            # The underlying urlopen timeout (25s) caps individual thread execution.
-            # asyncio.wait_for cancels the awaitable after 30s so new requests
-            # don't pile up behind a saturated queue.
             response = await asyncio.wait_for(
                 loop.run_in_executor(
                     None,
-                    lambda: urllib.request.urlopen(req, timeout=25, context=self._ssl_context),
+                    lambda: urllib.request.urlopen(req, timeout=urlopen_timeout, context=self._ssl_context),
                 ),
-                timeout=30,
+                timeout=wait_for_timeout,
             )
             response_body = response.read()
             return json.loads(response_body)
         except asyncio.TimeoutError:
-            logger.warning("_forward_to_telegram: timed out after 30s for %s", url)
+            logger.warning("_forward_to_telegram: timed out after %ss for %s", wait_for_timeout, url)
             return {"ok": False, "error_code": 504, "description": "Gateway timeout forwarding to Telegram API"}
         except urllib.error.HTTPError as exc:
             # Telegram uses HTTP 4xx/5xx with JSON bodies for expected API failures
