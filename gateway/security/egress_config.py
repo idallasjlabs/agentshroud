@@ -64,6 +64,9 @@ PERMANENT_EGRESS_DOMAINS: list[str] = [
     "cdn.jsdelivr.net",
     # ── Security Sidecars ──
     "database.clamav.net",
+    # ── LLM Routing (local proxy) ──
+    "openrouter.ai",
+    "*.openrouter.ai",
 ]
 
 
