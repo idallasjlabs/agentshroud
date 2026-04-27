@@ -28,12 +28,19 @@ protection management. Verify with `gh auth status` before proceeding.
 
 - **GitHub username:** `agentshroud-ai`
 - **1Password item:** `zjncjjozurlws7nbs66of7befa` in vault `Agent Shroud Bot Credentials`
-- **Retrieve PAT:**
+- **Retrieve PAT (try in order — stop at first success):**
   ```bash
-  BOT_PAT=$(op item get zjncjjozurlws7nbs66of7befa \
-    --vault "Agent Shroud Bot Credentials" \
-    --fields "personal access token" --reveal)
+  # 1. .env file (no Touch ID required — preferred when remote)
+  BOT_PAT=$(grep AGENTSHROUD_BOT_PAT .env 2>/dev/null | cut -d= -f2)
+
+  # 2. 1Password CLI (requires Touch ID / biometrics)
+  if [ -z "$BOT_PAT" ]; then
+    BOT_PAT=$(op item get zjncjjozurlws7nbs66of7befa \
+      --vault "Agent Shroud Bot Credentials" \
+      --fields "personal access token" --reveal)
+  fi
   ```
+- `.env` lives at the repo root and is gitignored. Contains `AGENTSHROUD_BOT_PAT=<token>`.
 - `agentshroud-ai` is a **write collaborator** on `idallasjlabs/agentshroud`.
   Its approvals count toward the required review.
 
@@ -57,9 +64,12 @@ authorizes bypass, proceed; otherwise stop and report.
 ### Step 3 — Bot approval
 Approve as `agentshroud-ai` (satisfies the 1-review requirement):
 ```bash
-BOT_PAT=$(op item get zjncjjozurlws7nbs66of7befa \
-  --vault "Agent Shroud Bot Credentials" \
-  --fields "personal access token" --reveal)
+BOT_PAT=$(grep AGENTSHROUD_BOT_PAT .env 2>/dev/null | cut -d= -f2)
+if [ -z "$BOT_PAT" ]; then
+  BOT_PAT=$(op item get zjncjjozurlws7nbs66of7befa \
+    --vault "Agent Shroud Bot Credentials" \
+    --fields "personal access token" --reveal)
+fi
 
 GH_TOKEN="$BOT_PAT" gh api \
   repos/idallasjlabs/agentshroud/pulls/<PR_NUMBER>/reviews \

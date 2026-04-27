@@ -7491,12 +7491,25 @@ class TelegramAPIProxy:
 
         loop = asyncio.get_event_loop()
         try:
-            response = await loop.run_in_executor(
-                None,
-                lambda: urllib.request.urlopen(req, timeout=60, context=self._ssl_context),
+            # Cap total coroutine wait time (queue + execution) to 30s.
+            # Without this, a saturated thread pool (from rapid bot restart cycles)
+            # causes requests to wait thousands of seconds in the executor queue,
+            # which triggers openclaw's health monitor → restart loop → more saturation.
+            # The underlying urlopen timeout (25s) caps individual thread execution.
+            # asyncio.wait_for cancels the awaitable after 30s so new requests
+            # don't pile up behind a saturated queue.
+            response = await asyncio.wait_for(
+                loop.run_in_executor(
+                    None,
+                    lambda: urllib.request.urlopen(req, timeout=25, context=self._ssl_context),
+                ),
+                timeout=30,
             )
             response_body = response.read()
             return json.loads(response_body)
+        except asyncio.TimeoutError:
+            logger.warning("_forward_to_telegram: timed out after 30s for %s", url)
+            return {"ok": False, "error_code": 504, "description": "Gateway timeout forwarding to Telegram API"}
         except urllib.error.HTTPError as exc:
             # Telegram uses HTTP 4xx/5xx with JSON bodies for expected API failures
             # (e.g., malformed Markdown, invalid chat ID). Treat as handled response.
