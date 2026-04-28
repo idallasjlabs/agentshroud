@@ -4,7 +4,7 @@ build-backend = "setuptools.backends.legacy:build"
 
 [project]
 name = "agentshroud-gateway"
-version = "1.0.68"
+version = "1.0.69"
 description = "AgentShroud Gateway — security proxy for autonomous AI agents"
 requires-python = ">=3.10"
 license = {text = "MIT"}
