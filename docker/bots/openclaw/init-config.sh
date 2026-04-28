@@ -187,6 +187,12 @@ mkdir -p "${WORKSPACE_DIR}"
 cp "${DEFAULTS_DIR}/workspace/BRAND.md" "${WORKSPACE_DIR}/BRAND.md"
 echo "[init] ✓ Refreshed BRAND.md (trademark & brand rules)"
 
+# SOUL.md: always overwrite — owner's personal LLM context (system prompt equivalent).
+# Baked into the image at build time from docker/config/openclaw/workspace/SOUL.md.
+# That file is gitignored (private) but included in Docker builds.
+cp "${DEFAULTS_DIR}/workspace/SOUL.md" "${WORKSPACE_DIR}/SOUL.md"
+echo "[init] ✓ Refreshed SOUL.md (personal LLM context)"
+
 # IDENTITY.md: seed only if missing or still the unfilled OpenClaw default.
 IDENTITY_FILE="${WORKSPACE_DIR}/IDENTITY.md"
 if [ ! -f "${IDENTITY_FILE}" ] || grep -q "_Fill this in during your first conversation_" "${IDENTITY_FILE}" 2>/dev/null; then

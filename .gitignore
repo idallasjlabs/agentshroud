@@ -96,6 +96,9 @@ yarn-error.log*
 .npm
 .eslintcache
 .node_repl_history
+# Personal LLM context / system prompt (private — baked into Docker image locally, not committed)
+docker/config/openclaw/workspace/SOUL.md
+
 # AI/LLM TOOLS (private — kept locally only, not shared in repo)
 # Claude Code
 .claude/agents/
