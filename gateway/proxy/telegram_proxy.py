@@ -3291,6 +3291,11 @@ class TelegramAPIProxy:
                     elif pipeline_result.sanitized_message != text:
                         data["text"] = pipeline_result.sanitized_message
                         self._stats["outbound_filtered"] += 1
+                        # Strip HTML parse_mode if PII placeholders like <EMAIL_ADDRESS> are present
+                        if data.get("parse_mode", "").upper() == "HTML" and re.search(
+                            r"<[A-Z][A-Z0-9_]{1,64}>", data["text"]
+                        ):
+                            data.pop("parse_mode", None)
                     return json.dumps(data).encode()
                 elif text and self.sanitizer:
                     # Fallback: direct sanitizer calls when pipeline is unavailable
@@ -3299,6 +3304,10 @@ class TelegramAPIProxy:
                     if pii_result.entity_types_found:
                         data["text"] = pii_result.sanitized_content
                         self._stats["outbound_filtered"] += 1
+                        # Strip HTML parse_mode to prevent tag parse errors from PII placeholders
+                        # e.g. <EMAIL_ADDRESS> is valid redaction but invalid Telegram HTML tag
+                        if data.get("parse_mode", "").upper() == "HTML":
+                            data.pop("parse_mode", None)
                         logger.info(
                             "Outbound message: PII redacted: chat_id=%s types=%s",
                             chat_id,
