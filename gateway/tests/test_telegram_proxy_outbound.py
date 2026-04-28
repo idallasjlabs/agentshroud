@@ -4182,3 +4182,137 @@ class TestBuildCollaboratorSafeInfoResponse:
     def test_fallback_for_unmatched(self):
         r = self._resp("something completely unrelated")
         assert "collaborator" in r.lower()
+
+
+class TestParseModeStrippedAfterPIIRedaction:
+    """Regression tests for Telegram HTML parse error caused by PII placeholders.
+
+    When the PII sanitizer replaces e.g. an email with <EMAIL_ADDRESS>, and
+    parse_mode=HTML is set, Telegram rejects the message with:
+      "can't parse entities: Unsupported start tag 'email_address'"
+
+    The bug manifests for OWNER chats: collaborators always have HTML stripped
+    at the collaborator-markup step. For the owner, HTML is preserved until the
+    PII sanitizer runs — and if the sanitizer injects <EMAIL_ADDRESS>, parse_mode
+    must be stripped AFTER sanitization.
+
+    Regression for: sendMessage failed — Unsupported start tag "email_address"
+    """
+
+    _OWNER_ID = "8096968754"
+
+    def _make_owner_proxy(self, **kwargs):
+        """Return a TelegramAPIProxy configured with a mock owner RBAC."""
+
+        class _MockRBAC:
+            owner_user_id = TestParseModeStrippedAfterPIIRedaction._OWNER_ID
+
+        proxy = TelegramAPIProxy(**kwargs)
+        proxy._rbac = _MockRBAC()
+        return proxy
+
+    @pytest.mark.asyncio
+    async def test_parse_mode_stripped_when_email_redacted_fallback_path(self):
+        """parse_mode must be removed when sanitizer injects <EMAIL_ADDRESS> (owner, fallback path).
+
+        For owner chats the collaborator-HTML strip is skipped, so the PII sanitizer
+        runs with parse_mode=HTML still active. After redaction, <EMAIL_ADDRESS> in
+        the text must cause parse_mode to be removed before the response is forwarded.
+        """
+        sanitizer = _make_sanitizer()
+        proxy = self._make_owner_proxy(sanitizer=sanitizer)
+
+        body = json.dumps(
+            {
+                "chat_id": self._OWNER_ID,
+                "text": "Contact me at user@example.com for details.",
+                "parse_mode": "HTML",
+            }
+        ).encode()
+
+        result = await proxy._filter_outbound(body, "application/json")
+        result_data = json.loads(result)
+
+        assert "user@example.com" not in result_data["text"], "Email should be redacted"
+        assert result_data.get("parse_mode", "") != "HTML", (
+            "parse_mode=HTML must be stripped when PII placeholders like "
+            "<EMAIL_ADDRESS> are present — Telegram rejects these as invalid tags"
+        )
+
+    @pytest.mark.asyncio
+    async def test_parse_mode_stripped_when_phone_redacted_fallback_path(self):
+        """parse_mode must be removed when sanitizer injects <PHONE_NUMBER> (owner, fallback path)."""
+        sanitizer = _make_sanitizer()
+        proxy = self._make_owner_proxy(sanitizer=sanitizer)
+
+        body = json.dumps(
+            {
+                "chat_id": self._OWNER_ID,
+                "text": "Call 555-867-5309 to schedule.",
+                "parse_mode": "HTML",
+            }
+        ).encode()
+
+        result = await proxy._filter_outbound(body, "application/json")
+        result_data = json.loads(result)
+
+        assert "555-867-5309" not in result_data["text"], "Phone should be redacted"
+        assert result_data.get("parse_mode", "") != "HTML", (
+            "parse_mode=HTML must be stripped when PII placeholders are present"
+        )
+
+    @pytest.mark.asyncio
+    async def test_parse_mode_preserved_when_no_pii_detected(self):
+        """parse_mode=HTML must be preserved for owner when text contains no PII."""
+        sanitizer = _make_sanitizer()
+        proxy = self._make_owner_proxy(sanitizer=sanitizer)
+
+        body = json.dumps(
+            {
+                "chat_id": self._OWNER_ID,
+                "text": "<b>Hello world</b>, no PII here.",
+                "parse_mode": "HTML",
+            }
+        ).encode()
+
+        result = await proxy._filter_outbound(body, "application/json")
+        result_data = json.loads(result)
+
+        # parse_mode should be preserved for owner when no PII is present
+        assert result_data.get("parse_mode") == "HTML", (
+            "parse_mode=HTML must be preserved when the text contains no PII"
+        )
+
+    @pytest.mark.asyncio
+    async def test_parse_mode_stripped_when_pipeline_sanitizes_email(self):
+        """parse_mode must be removed when pipeline produces <EMAIL_ADDRESS> (owner, pipeline path)."""
+        from types import SimpleNamespace
+
+        class PIIPipeline:
+            async def process_outbound(self, response, **kwargs):
+                sanitized = response.replace("user@example.com", "<EMAIL_ADDRESS>")
+                return SimpleNamespace(
+                    blocked=False,
+                    sanitized_message=sanitized,
+                    block_reason="",
+                    info_filter_redaction_count=0,
+                )
+
+        sanitizer = _make_sanitizer()
+        proxy = self._make_owner_proxy(pipeline=PIIPipeline(), sanitizer=sanitizer)
+
+        body = json.dumps(
+            {
+                "chat_id": self._OWNER_ID,
+                "text": "Send to user@example.com please.",
+                "parse_mode": "HTML",
+            }
+        ).encode()
+
+        result = await proxy._filter_outbound(body, "application/json")
+        result_data = json.loads(result)
+
+        assert "user@example.com" not in result_data["text"], "Email should be redacted"
+        assert result_data.get("parse_mode", "") != "HTML", (
+            "parse_mode=HTML must be stripped when pipeline produces PII placeholders"
+        )
