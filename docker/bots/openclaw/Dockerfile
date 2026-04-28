@@ -175,17 +175,6 @@ COPY docker/bots/openclaw/workspace/collaborator-workspace/ /app/config-defaults
 # Applied to /home/node/.ssh/config on every startup by init-openclaw-config.sh
 COPY docker/config/ssh/ /app/config-defaults/ssh/
 
-# Bake in Claude Code config (agents, skills, hooks, ORCHESTRATOR.md)
-# Applied to workspace/.claude/ on every startup by init-openclaw-config.sh
-COPY .claude/ /app/config-defaults/claude/
-
-# Bake in Gemini CLI config (agents, GEMINI.md, settings.json)
-# Applied to workspace/.gemini/ on every startup by init-openclaw-config.sh
-COPY .gemini/ /app/config-defaults/gemini/
-
-# Bake in Codex config (agents, AGENTS.md, config.toml)
-# Applied to workspace/.codex/ on every startup by init-openclaw-config.sh
-COPY .codex/ /app/config-defaults/codex/
 
 RUN chmod +x /usr/local/bin/security-entrypoint.sh \
     /usr/local/bin/security-scheduler.sh \
