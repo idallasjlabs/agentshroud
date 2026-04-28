@@ -21,6 +21,7 @@ import logging
 import math
 import os
 import re
+import socket as _socket
 import ssl
 import time
 import urllib.error
@@ -28,6 +29,26 @@ import urllib.parse
 import urllib.request
 import uuid
 from typing import Any, Optional
+
+# Prefer IPv4 when connecting to Telegram API.
+# In some VPN/Docker environments (Colima + Cisco AnyConnect) IPv6 packets are
+# silently dropped, causing socket.create_connection to hang for 10-12 seconds
+# before falling back to IPv4. This patch reorders getaddrinfo results so IPv4
+# addresses are tried first, eliminating the startup delay for sendMessage etc.
+_orig_getaddrinfo = _socket.getaddrinfo
+
+
+def _ipv4_first_getaddrinfo(host, port, family=0, type=0, proto=0, flags=0):
+    results = _orig_getaddrinfo(host, port, family, type, proto, flags)
+    if family == 0 and results:
+        ipv4 = [r for r in results if r[0] == _socket.AF_INET]
+        ipv6 = [r for r in results if r[0] == _socket.AF_INET6]
+        reordered = ipv4 + ipv6
+        return reordered if reordered else results
+    return results
+
+
+_socket.getaddrinfo = _ipv4_first_getaddrinfo
 from urllib.parse import urlparse
 
 from gateway.security.input_normalizer import normalize_input, strip_markdown_exfil
@@ -7501,10 +7522,11 @@ class TelegramAPIProxy:
         # getUpdates is a long-poll: Telegram holds the connection open for up to 30s
         # waiting for messages, then closes with {"ok": true, "result": []}.
         # urlopen_timeout must exceed Telegram's hold time or we abort mid-poll.
-        # All other methods (sendMessage, deleteWebhook, etc.) are fast — cap tightly
-        # to prevent thread-pool saturation from rapid bot restart cycles.
+        # Other methods (sendMessage, deleteWebhook, etc.) use a higher timeout than
+        # the historical 12s to accommodate environments where IPv6 is unreachable
+        # and socket.create_connection falls back to IPv4 (adds ~12s delay).
         is_long_poll = "getUpdates" in url
-        urlopen_timeout = 38 if is_long_poll else 12
+        urlopen_timeout = 38 if is_long_poll else 30
         wait_for_timeout = urlopen_timeout + 5  # queue + execution budget
 
         loop = asyncio.get_event_loop()
