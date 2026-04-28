@@ -22,8 +22,8 @@ docker/agentshroud-dev-secrets/
 !.env.example
 .llm_env
 .llm_env.*
-llm_settings/env/.llm_env
-llm_settings/mcp-servers/**/.env
+.llm_settings/env/.llm_env
+.llm_settings/mcp-servers/**/.env
 security_assessment/.assessment_env
 # SSH & GPG keys
 .ssh/
@@ -96,8 +96,14 @@ yarn-error.log*
 .npm
 .eslintcache
 .node_repl_history
-# AI/LLM TOOLS
+# AI/LLM TOOLS (private — kept locally only, not shared in repo)
 # Claude Code
+.claude/agents/
+.claude/skills/
+.claude/scripts/
+.claude/ORCHESTRATOR.md
+.claude/SESSION_BRIEF.md
+.claude/settings.json
 .claude/settings.local.json
 .claude/*.local.*
 .claude/.cache/
@@ -105,11 +111,11 @@ yarn-error.log*
 .claude/logs/
 .claude/plans/
 # Gemini CLI
-.gemini/settings.local.json
-.gemini/*.local.*
+.gemini/
 # Codex CLI
-.codex/config.local.toml
-.codex/*.local.*
+.codex/
+# LLM settings (MCP servers, CI/CD configs, skills, agent definitions)
+.llm_settings/
 # MCP local configs
 .mcp.local.json
 mcp-config.local.json
