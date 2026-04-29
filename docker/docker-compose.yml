@@ -23,7 +23,7 @@ services:
     extra_hosts:
       - "host.docker.internal:host-gateway"
       - "marvin:192.168.7.137"
-      - "trillian:192.168.7.97"
+      - "trillian:192.168.7.103"
       - "raspberrypi:192.168.7.25"
     image: agentshroud-gateway:${AGENTSHROUD_VERSION:-latest}
     container_name: agentshroud-gateway
@@ -161,7 +161,7 @@ services:
     extra_hosts:
       - "host.docker.internal:host-gateway"
       - "marvin:192.168.7.137"
-      - "trillian:192.168.7.97"
+      - "trillian:192.168.7.103"
       - "raspberrypi:192.168.7.25"
     image: agentshroud-bot:${AGENTSHROUD_VERSION:-latest}
     container_name: agentshroud-bot
