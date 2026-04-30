@@ -4,8 +4,8 @@
       "command": ".llm_settings/mcp-servers/github/github-mcp-wrapper.sh",
       "args": []
     },
-    "atlassian-agentshroud": {
-      "command": ".llm_settings/mcp-servers/atlassian/agentshroud/mcp-atlassian.sh",
+    "atlassian-fluence": {
+      "command": ".llm_settings/mcp-servers/atlassian/fluence/mcp-atlassian.sh",
       "args": [],
       "timeout": 1800000,
       "trust": false
@@ -26,18 +26,7 @@
       "timeout": 600000,
       "trust": false
     },
-    "xmind-generator": {
-      "command": "npx",
-      "args": [
-        "-y",
-        "xmind-generator-mcp"
-      ],
-      "env": {
-        "outputPath": "./mindmaps",
-        "autoOpenFile": "true"
-      }
-    },
-    "xmind-generator-mcp": {
+    "xmind": {
       "command": "/opt/homebrew/bin/npx",
       "args": [
         "-y",
@@ -47,6 +36,18 @@
         "PATH": "/opt/homebrew/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin",
         "outputPath": "${HOME}/Desktop",
         "autoOpenFile": "true"
+      },
+      "timeout": 60000,
+      "trust": false
+    },
+    "safari": {
+      "command": "/opt/homebrew/bin/npx",
+      "args": [
+        "-y",
+        "safari-mcp"
+      ],
+      "env": {
+        "PATH": "/opt/homebrew/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
       },
       "timeout": 60000,
       "trust": false

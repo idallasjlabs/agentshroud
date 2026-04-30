@@ -98,7 +98,6 @@ yarn-error.log*
 .node_repl_history
 # Personal LLM context / system prompt (private — baked into Docker image locally, not committed)
 docker/config/openclaw/workspace/SOUL.md
-
 # AI/LLM TOOLS (private — kept locally only, not shared in repo)
 # Claude Code
 .claude/agents/
@@ -367,3 +366,9 @@ data/ledger.db-wal
 # Obsidian per-repo vaults (local only)
 .obsidian-vaults/
 .obsidian-personal/
+llm_settings/env/.llm_env
+llm_settings/mcp-servers/**/.env
+.gemini/settings.local.json
+.gemini/*.local.*
+.codex/config.local.toml
+.codex/*.local.*
