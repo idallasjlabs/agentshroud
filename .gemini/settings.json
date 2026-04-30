@@ -1,0 +1,52 @@
+{
+  "mcpServers": {
+    "github": {
+      "command": ".llm_settings/mcp-servers/github/github-mcp-wrapper.sh",
+      "args": []
+    },
+    "atlassian": {
+      "command": ".llm_settings/mcp-servers/atlassian/mcp-atlassian.sh",
+      "args": [],
+      "timeout": 1800000,
+      "trust": false
+    },
+    "awslabs.aws-api-mcp-server": {
+      "command": "/opt/homebrew/bin/uvx",
+      "args": [
+        "awslabs.aws-api-mcp-server@latest",
+        "--readonly"
+      ],
+      "env": {
+        "PATH": "/opt/homebrew/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin",
+        "AWS_PROFILE": "default",
+        "AWS_REGION": "us-east-1",
+        "FASTMCP_LOG_LEVEL": "CRITICAL",
+        "FASTMCP_NO_BANNER": "1"
+      },
+      "timeout": 600000,
+      "trust": false
+    },
+    "xmind-generator": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "xmind-generator-mcp"
+      ],
+      "env": {
+        "outputPath": "./mindmaps",
+        "autoOpenFile": "true"
+      }
+    },
+    "xmind-generator-mcp": {
+      "command": "/opt/homebrew/bin/npx",
+      "args": ["-y", "xmind-generator-mcp"],
+      "env": {
+        "PATH": "/opt/homebrew/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin",
+        "outputPath": "${HOME}/Desktop",
+        "autoOpenFile": "true"
+      },
+      "timeout": 60000,
+      "trust": false
+    }
+  }
+}

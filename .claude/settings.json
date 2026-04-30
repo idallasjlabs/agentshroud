@@ -1,0 +1,46 @@
+{
+  "permissions": {
+    "defaultMode": "plan",
+    "allow": [
+      "Bash(chmod:*)",
+      "Bash(python:*)",
+      "Bash(python3:*)",
+      "Bash(conda run:*)",
+      "Bash(ruff:*)",
+      "Bash(black:*)",
+      "Bash(pytest:*)"
+    ]
+  },
+
+  "model": "opusplan",
+
+  "hooks": {
+    "PreToolUse": [
+      {
+        "matcher": "tools:BashTool",
+        "hooks": [
+          {
+            "type": "command",
+            "command": ".claude/scripts/claude-hooks/warn_dangerous_bash.sh"
+          }
+        ]
+      }
+    ],
+
+    "PostToolUse": [
+      {
+        "matcher": "tools:BashTool",
+        "hooks": [
+          {
+            "type": "command",
+            "command": ".claude/scripts/claude-hooks/auto_format_python.sh"
+          },
+          {
+            "type": "command",
+            "command": ".claude/scripts/claude-hooks/run_targeted_tests.sh"
+          }
+        ]
+      }
+    ]
+  }
+}
