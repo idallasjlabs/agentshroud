@@ -1,0 +1,394 @@
+# =============================================================================
+# SECRETS & CREDENTIALS (CRITICAL - DO NOT COMMIT)
+# =============================================================================
+
+# Environment variables
+.env
+.env.*
+.llm_env
+.llm_env.*
+llm_settings/env/.llm_env
+llm_settings/mcp-servers/**/.env
+
+# Gitleaks security reports
+**/*gitleaks-report*.json
+
+# Keys & Certificates
+*.pem
+*.key
+*.p12
+*.pfx
+*.crt
+*.cer
+*.der
+*.ppk
+id_rsa
+id_ed25519
+
+# Credential files
+*.credentials
+*credentials*
+credentials
+aws_credentials
+secrets.yaml
+secrets.yml
+config.json
+application-secrets.properties
+.token
+*_token
+api_keys.txt
+
+# Passwords & Secrets (pattern matching)
+*password*
+*secret*
+*token*
+
+# SSH & GPG
+.ssh/
+*.asc
+*.gpg
+
+
+# =============================================================================
+# AWS & CLOUD
+# =============================================================================
+
+.aws/
+*.tfstate
+*.tfstate.*
+.terraform/
+terraform.tfvars
+override.tf
+override.tf.json
+
+
+# =============================================================================
+# DATABASE
+# =============================================================================
+
+# PostgreSQL
+*.sql.gz
+*.dump
+*.backup
+database.ini
+db_config.py
+pgpass
+.pgpass
+
+# MySQL
+*.sql.bak
+my.cnf
+
+# SQLite
+*.db
+*.sqlite
+*.sqlite3
+
+
+# =============================================================================
+# PYTHON
+# =============================================================================
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+
+# Virtual environments
+venv/
+env/
+ENV/
+.venv/
+venv.bak/
+env.bak/
+
+# Distribution / packaging
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# PyInstaller
+*.manifest
+*.spec
+
+# Unit test / coverage
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+.hypothesis/
+.pytest_cache/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+*.ipynb_checkpoints/
+
+# pyenv
+.python-version
+
+# Celery
+celerybeat-schedule
+celerybeat.pid
+
+# SageMath
+*.sage.py
+
+# Spyder
+.spyderproject
+.spyproject
+
+# Rope
+.ropeproject
+
+# mypy
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# Pyre
+.pyre/
+
+
+# =============================================================================
+# NODE.JS / JAVASCRIPT
+# =============================================================================
+
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+.pnpm-debug.log*
+package-lock.json
+yarn.lock
+.npm
+.eslintcache
+.node_repl_history
+.yarn-integrity
+
+
+# =============================================================================
+# AI/LLM TOOLS & CLI
+# =============================================================================
+
+# Claude Code
+.claude/settings.local.json
+.claude/*.local.*
+.claude/.cache/
+.claude/tmp/
+.claude/logs/
+.claude/plans/
+
+# Gemini CLI
+.gemini/settings.local.json
+.gemini/*.local.*
+
+# Codex CLI
+.codex/config.local.toml
+.codex/*.local.*
+
+# MCP configurations
+.mcp.local.json
+mcp-config.local.json
+
+# OpenAI / AI responses
+.openai/
+ai_responses/
+
+
+# =============================================================================
+# IDE & EDITORS
+# =============================================================================
+
+# Visual Studio Code
+.vscode/
+*.code-workspace
+
+# JetBrains IDEs (PyCharm, IntelliJ, etc.)
+.idea/
+*.iml
+*.ipr
+*.iws
+
+# Vim
+*.swp
+*.swo
+*~
+.*.sw[op]
+
+# Emacs
+*~
+\#*\#
+/.emacs.desktop
+/.emacs.desktop.lock
+*.elc
+
+# Sublime Text
+*.sublime-project
+*.sublime-workspace
+
+# Atom
+.atom/
+
+
+# =============================================================================
+# OPERATING SYSTEMS
+# =============================================================================
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon
+._*
+.DocumentRevisions-V100
+.fseventsd
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+.VolumeIcon.icns
+.com.apple.timemachine.donotpresent
+.AppleDB
+.AppleDesktop
+Network Trash Folder
+Temporary Items
+.apdisk
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+*.cab
+*.msi
+*.msix
+*.msm
+*.msp
+*.lnk
+
+# Linux
+.directory
+.Trash-*
+.nfs*
+
+
+# =============================================================================
+# LOGS & MONITORING
+# =============================================================================
+
+*.log
+logs/
+*.log.*
+
+# Zabbix (your monitoring setup)
+zabbix_agentd.conf
+zabbix_server.conf
+*zabbix*password*
+
+
+# =============================================================================
+# TEMPORARY & CACHE FILES
+# =============================================================================
+
+tmp/
+temp/
+.cache/
+*.tmp
+*.temp
+*.bak
+*.backup
+*.old
+.scratch/
+
+
+# =============================================================================
+# BUILD & DISTRIBUTION
+# =============================================================================
+
+# Compiled files
+*.com
+*.class
+*.dll
+*.exe
+*.o
+*.pyc
+*.so
+
+# Archives
+*.7z
+*.dmg
+*.gz
+*.iso
+*.jar
+*.rar
+*.tar
+*.zip
+
+# Build outputs
+out/
+target/
+build/
+dist/
+
+
+# =============================================================================
+# DOCUMENTATION BUILDS
+# =============================================================================
+
+docs/_build/
+site/
+.sphinx/
+mkdocs/
+
+
+# =============================================================================
+# PROJECT SPECIFIC
+# =============================================================================
+
+# Large data files (adjust as needed for your data lakehouse work)
+*.csv.gz
+*.parquet.gz
+data/raw/
+data/processed/
+
+# Fluence Energy specific (add as needed)
+# battery_data/
+# das_exports/
+# monitoring_dumps/
+
+
+# =============================================================================
+# MISC
+# =============================================================================
+
+# Lock files for testing
+*.lock
+!poetry.lock
+!Pipfile.lock
+
+# OS generated files
+.fuse_hidden*
+
+# Core dumps
+core
+core.*

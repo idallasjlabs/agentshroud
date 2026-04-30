@@ -37,6 +37,8 @@ MODEL_MODE = os.environ.get("AGENTSHROUD_MODEL_MODE", "local").lower()
 # Models not listed here fall through to OLLAMA_API_BASE automatically.
 LOCAL_MODEL_ROUTES: dict[str, str] = {
     "deepseek-r1": MLXLM_API_BASE,  # Reasoning — mlx_lm on :8234 (no tool calling)
+    "qwen3.5": LMSTUDIO_API_BASE,  # Anchor — LM Studio on :1234
+    "qwen2.5-coder": LMSTUDIO_API_BASE,  # Coding — LM Studio on :1234
 }
 
 
