@@ -130,6 +130,7 @@ const desiredProvider = {
   baseUrl: OLLAMA_BASE_URL,
   api: OLLAMA_PROVIDER_API,
   apiKey: process.env.OLLAMA_API_KEY || 'lm-studio',
+  timeoutSeconds: 300,
   models: providerModels,
 };
 if (JSON.stringify(currentProvider) !== JSON.stringify(desiredProvider)) {
@@ -146,6 +147,7 @@ if (process.env.LMSTUDIO_API_BASE) {
     baseUrl: LMSTUDIO_BASE_URL,
     api: 'openai-completions',
     apiKey: 'lm-studio',
+    timeoutSeconds: 300,
     models: [
       {
         id: LMSTUDIO_ANCHOR_MODEL,
