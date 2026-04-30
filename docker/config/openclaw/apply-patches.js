@@ -103,7 +103,7 @@ const providerModels = [
     name: LOCAL_MODEL_NAME,
     reasoning: false,
     input: ['text'],
-    contextWindow: 128000,
+    contextWindow: 32768,
     maxTokens: 8192,
   },
 ];
