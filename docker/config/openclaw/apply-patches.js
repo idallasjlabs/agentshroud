@@ -131,7 +131,7 @@ if (process.env.LMSTUDIO_API_BASE) {
   const currentLmStudio = config.models.providers.lmstudio || {};
   const desiredLmStudio = {
     baseUrl: LMSTUDIO_BASE_URL,
-    api: 'openai',
+    api: 'openai-completions',
     models: [
       {
         id: LMSTUDIO_ANCHOR_MODEL,
