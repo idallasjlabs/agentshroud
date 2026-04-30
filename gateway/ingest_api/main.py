@@ -37,6 +37,7 @@ from fastapi.staticfiles import StaticFiles
 from pydantic import BaseModel, Field
 from starlette.responses import RedirectResponse
 
+from gateway import __version__
 from gateway.security.session_manager import UserSessionManager
 
 from ..proxy.http_proxy import ALLOWED_DOMAINS, HTTPConnectProxy
@@ -171,7 +172,7 @@ logger = logging.getLogger("agentshroud.gateway.main")
 app = FastAPI(
     title="AgentShroud Gateway",
     description="Ingest API for the AgentShroud proxy layer framework",
-    version="1.0.0",
+    version=__version__,
     lifespan=lifespan,
 )
 
@@ -442,7 +443,7 @@ async def system_control(auth: AuthRequired):
 
         <div class="status">
             <h2 class="healthy">● System Status: HEALTHY</h2>
-            <div class="metric">Version: 1.0.0</div>
+            <div class="metric">Version: 1.0.44</div>
             <div class="metric">Uptime: {int(uptime)}s</div>
             <div class="metric">PII Engine: {app_state.sanitizer.get_mode()}</div>
         </div>
@@ -4042,7 +4043,7 @@ async def get_soc2_compliance_report(auth: AuthRequired):
 
     return {
         "standard": "SOC 2 Type II — Trust Service Criteria",
-        "version": "v1.0.0",
+        "version": "v1.0.44",
         "criteria_total": len(criteria),
         "criteria_covered": len(covered),
         "criteria_gaps": len(gaps),
@@ -4096,11 +4097,33 @@ async def llm_api_proxy(request: Request, path: str):
     # The bot sets X-AgentShroud-User-Id on every request (owner or collaborator Telegram ID).
     user_id = headers.get("x-agentshroud-user-id", "unknown")
 
+    # Detect streaming request — stream directly to avoid buffering the entire SSE response,
+    # which would cause OpenClaw's 60s HTTP fetch timeout to fire before the first byte arrives.
+    is_streaming_request = False
+    if body:
+        try:
+            is_streaming_request = bool(json.loads(body).get("stream", False))
+        except (json.JSONDecodeError, UnicodeDecodeError):
+            pass
+
+    if is_streaming_request:
+        from starlette.responses import StreamingResponse
+
+        stream_gen = await llm_proxy.proxy_messages_streaming(
+            f"/v1/{path}", body, headers, user_id=user_id
+        )
+        return StreamingResponse(
+            stream_gen,
+            status_code=200,
+            media_type="text/event-stream",
+            headers={"Cache-Control": "no-cache", "X-Accel-Buffering": "no"},
+        )
+
     status_code, resp_headers, resp_body = await llm_proxy.proxy_messages(
         f"/v1/{path}", body, headers, user_id=user_id
     )
 
-    # Check if streaming response
+    # Check if streaming response (non-streaming requests that returned SSE)
     content_type = resp_headers.get("content-type", "")
     if "text/event-stream" in content_type:
         import io
@@ -4291,8 +4314,18 @@ async def telegram_api_proxy(path: str, request: Request):
         logger.warning("Telegram proxy: bot token mismatch — rejecting request")
         raise HTTPException(status_code=403, detail="Invalid bot token")
 
-    # Read request body
-    body = await request.body() if request.method in ("POST", "PUT") else None
+    # Read request body — guard against client disconnect mid-stream
+    from fastapi.responses import JSONResponse, Response
+    from starlette.requests import ClientDisconnect
+
+    try:
+        body = await request.body() if request.method in ("POST", "PUT") else None
+    except ClientDisconnect:
+        logger.debug("Telegram proxy: client disconnected before body read — ignoring")
+        return JSONResponse(
+            content={"ok": False, "error_code": 499, "description": "Client Disconnected"},
+            status_code=499,
+        )
     content_type = request.headers.get("content-type")
 
     # Update proxy references if available
@@ -4307,7 +4340,6 @@ async def telegram_api_proxy(path: str, request: Request):
     # System notifications (startup/shutdown from start.sh) carry X-AgentShroud-System: 1
     # so the proxy skips outbound content filtering — these are not LLM-generated output.
     is_system = request.headers.get("x-agentshroud-system") == "1"
-    from fastapi.responses import JSONResponse, Response
 
     result = await _telegram_proxy.proxy_request(
         bot_token, method, body, content_type, is_system=is_system, path_prefix=file_prefix

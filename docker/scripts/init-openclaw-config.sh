@@ -260,6 +260,18 @@ if [ -n "${NPM_CONFIG_PREFIX}" ] && [ -d "${NPM_CONFIG_PREFIX}" ]; then
     echo "[init] Ensuring ws proxy patch on NPM_CONFIG_PREFIX install..."
     sh /usr/local/bin/patch-ws-proxy.sh 2>&1 || echo "[init] ⚠ patch-ws-proxy.sh failed (non-fatal)"
   fi
+
+  # Always ensure Telegram/Anthropic/Slack SDK patches are applied to the runtime volume.
+  # These patches route API calls through the gateway proxy. They are idempotent — each
+  # checks for the old string before replacing, so re-running on already-patched files is safe.
+  # Must run outside the version-check block: plain container recreates (same image version)
+  # skip the version-check block entirely, leaving the runtime volume copy unpatched.
+  for _sdk_patch in patch-telegram-sdk.sh patch-anthropic-sdk.sh patch-slack-sdk.sh; do
+    if [ -x "/usr/local/bin/${_sdk_patch}" ]; then
+      echo "[init] Ensuring ${_sdk_patch} on NPM_CONFIG_PREFIX install..."
+      sh "/usr/local/bin/${_sdk_patch}" 2>&1 || echo "[init] ⚠ ${_sdk_patch} failed (non-fatal)"
+    fi
+  done
 fi
 
 # AGENTS.md: add "read BRAND.md" to the session startup checklist if absent.

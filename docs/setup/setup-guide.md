@@ -26,7 +26,7 @@ Before starting, ensure you have:
 - **Ports**: 8080 (gateway), 8443 (dashboard), 3000 (openclaw) available
 
 ### Optional Requirements
-- **1Password account** for secure secrets management (recommended for production)
+- **1Password account** for shared/team secrets management (individual installs use macOS Keychain by default)
 - **Custom domain** with TLS certificate for production deployments
 - **Monitoring stack** (Prometheus/Grafana) for observability
 
@@ -75,7 +75,7 @@ That's it! AgentShroud is now running with:
 - ✅ Audit logging to local files
 - ✅ Basic rate limiting (100 req/min)
 
-**Next steps**: Configure secrets management (see 1Password section) and customize security policies.
+**Next steps**: Configure secrets management (see Step 3 — macOS Keychain is the default) and customize security policies.
 
 ## Step-by-Step Installation
 
@@ -148,11 +148,55 @@ containers compose -f docker/docker-compose.yml ps
 
 ### Step 3: Configure Secrets Management
 
-AgentShroud supports three methods for secrets management. Choose based on your security requirements:
+AgentShroud auto-detects the best available secrets backend. No extra software is required
+on macOS — the system Keychain is used by default.
 
-#### Option A: 1Password Service Account (Recommended)
+**Auto-detection order**: macOS Keychain → 1Password CLI → Linux secret-tool (GNOME Keyring) → `~/.agentshroud/secrets/` (homedir fallback)
 
-Most secure option for production. Secrets never touch disk unencrypted.
+Override with an environment variable if needed:
+```bash
+export AGENTSHROUD_SECRET_BACKEND=1password   # force 1Password
+export AGENTSHROUD_SECRET_BACKEND=keychain    # force macOS Keychain
+export AGENTSHROUD_SECRET_BACKEND=secretstore # force Linux GNOME Keyring
+export AGENTSHROUD_SECRET_BACKEND=homedir     # force file-based fallback
+```
+
+#### Option A: macOS Keychain (Default — no software required)
+
+On macOS, AgentShroud reads and writes secrets via the system Keychain automatically.
+
+```bash
+# Populate all required secrets interactively
+./docker/setup-secrets.sh store
+
+# Then start the stack
+scripts/asb up
+```
+
+**Headless / SSH sessions** — unlock the keychain before running:
+```bash
+security unlock-keychain ~/Library/Keychains/login.keychain-db
+```
+
+**Verify the keychain is accessible**:
+```bash
+security show-keychain-info ~/Library/Keychains/login.keychain-db
+```
+
+**Store a single secret manually**:
+```bash
+security add-generic-password -U -s "agentshroud" -a <name> -w <value>
+```
+
+#### Option B: Linux (secret-tool / GNOME Keyring — Default on Linux)
+
+On Linux, AgentShroud uses `secret-tool` (GNOME Keyring) when available. Install it with
+your distro package manager if not present, then run `./docker/setup-secrets.sh store`.
+
+#### Option C: 1Password Service Account (Optional — Teams / Shared Credentials)
+
+Use 1Password when you need shared vaults across a team or automated credential rotation.
+Set `AGENTSHROUD_SECRET_BACKEND=1password` (or install the `op` CLI so auto-detection picks it up).
 
 1. **Create a Service Account**:
    - Go to https://my.1password.com → Developer → Service Accounts
@@ -180,7 +224,7 @@ Most secure option for production. Secrets never touch disk unencrypted.
    op item list --vault "AgentShroud Bot Credentials"
    ```
 
-#### Option B: Docker Secrets (Swarm Mode)
+#### Option D: Docker Secrets (Swarm Mode)
 
 Good for Docker Swarm deployments:
 
@@ -196,7 +240,7 @@ echo "your_anthropic_oauth_token" | docker secret create anthropic_oauth_token -
 docker stack deploy -c docker/docker-compose.yml agentshroud
 ```
 
-#### Option C: Environment Variables (Development Only)
+#### Option E: Environment Variables (Development Only)
 
 Least secure, only for development:
 

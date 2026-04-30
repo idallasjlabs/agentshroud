@@ -377,4 +377,39 @@ class TestVersionConsistency:
         resp = await client.get("/status")
         assert resp.status_code == 200
         data = resp.json()
-        assert data["version"] == "1.0.0"
+        assert data["version"] == "1.0.44"
+
+
+class TestTelegramProxyClientDisconnect:
+    """ClientDisconnect mid-body-read must not crash the gateway process."""
+
+    @pytest.mark.asyncio
+    async def test_client_disconnect_returns_499(self):
+        """When body() raises ClientDisconnect the handler returns 499 without crashing."""
+        import ipaddress
+        import json
+
+        from fastapi.responses import JSONResponse
+        from starlette.requests import ClientDisconnect
+
+        from gateway.ingest_api.main import telegram_api_proxy
+
+        mock_req = AsyncMock()
+        mock_req.method = "POST"
+        mock_req.client = type("Addr", (), {"host": "127.0.0.1"})()
+        mock_req.headers = {}
+        mock_req.body = AsyncMock(side_effect=ClientDisconnect())
+
+        with (
+            patch("gateway.ingest_api.main._read_secret", return_value="test-token"),
+            patch(
+                "gateway.ingest_api.main._PROXY_ALLOWED_NETWORKS",
+                [ipaddress.ip_network("127.0.0.0/8")],
+            ),
+        ):
+            result = await telegram_api_proxy("bottest-token/sendMessage", mock_req)
+
+        assert isinstance(result, JSONResponse)
+        data = json.loads(result.body)
+        assert data["ok"] is False
+        assert result.status_code == 499

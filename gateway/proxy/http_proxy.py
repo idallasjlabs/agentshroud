@@ -47,6 +47,9 @@ SYSTEM_BYPASS_DOMAINS: set[str] = {
     "wss-primary.slack.com",
     "wss-backup.slack.com",
     "edgeapi.slack.com",
+    # GitHub API: required for competitive intelligence, CVE triage, and extension
+    # update checks.  Blocking this triggers approval prompts for routine cron jobs.
+    "api.github.com",
 }
 
 # Domains that are unconditionally BLOCKED from direct CONNECT tunnels,
@@ -227,6 +230,21 @@ class HTTPConnectProxy:
             block_reason = f"direct CONNECT tunnel to {host} is blocked; use gateway proxy"
         elif bypass_system_domain:
             block_reason = "system egress bypass domain"
+            # Log bypass-domain connections to the SOC decision history so that
+            # outbound web_search / web_fetch calls to pre-approved domains
+            # (e.g. api.search.brave.com) are visible in the SOC Egress tab.
+            if self.egress_filter is not None:
+                _aq = getattr(self.egress_filter, "_approval_queue", None)
+                if _aq is not None and hasattr(_aq, "log_external_decision"):
+                    try:
+                        _aq.log_external_decision(
+                            domain=host,
+                            decision="allow",
+                            agent_id="http_connect_proxy",
+                            reason="system egress bypass domain",
+                        )
+                    except Exception:
+                        pass
         elif self.egress_filter is not None:
             # Primary policy path: interactive egress approval + policy engine.
             # This is required so unknown domains can raise approval prompts
@@ -282,14 +300,33 @@ class HTTPConnectProxy:
             await writer.drain()
             return
 
-        # Establish TCP tunnel to target
-        try:
-            target_reader, target_writer = await asyncio.wait_for(
-                asyncio.open_connection(host, port),
-                timeout=10.0,
-            )
-        except (OSError, asyncio.TimeoutError) as exc:
-            logger.error(f"CONNECT tunnel failed to {host}:{port}: {exc}")
+        # Establish TCP tunnel to target.
+        # Retry up to 3 times with brief backoff to handle transient network
+        # hiccups (VPN reconnect, Colima networking blip) without immediately
+        # returning 502 — which crashes OpenClaw's unhandled Bolt error path.
+        _MAX_CONNECT_ATTEMPTS = 3
+        _CONNECT_RETRY_DELAYS = [0.5, 1.5]  # seconds between attempts
+        target_reader = target_writer = None
+        _last_exc: Exception = OSError("no attempts made")
+        for _attempt in range(_MAX_CONNECT_ATTEMPTS):
+            if _attempt > 0:
+                _delay = _CONNECT_RETRY_DELAYS[min(_attempt - 1, len(_CONNECT_RETRY_DELAYS) - 1)]
+                logger.warning(
+                    f"CONNECT tunnel retry {_attempt}/{_MAX_CONNECT_ATTEMPTS - 1} "
+                    f"to {host}:{port} in {_delay}s (last error: {_last_exc})"
+                )
+                await asyncio.sleep(_delay)
+            try:
+                target_reader, target_writer = await asyncio.wait_for(
+                    asyncio.open_connection(host, port),
+                    timeout=10.0,
+                )
+                break  # success
+            except (OSError, asyncio.TimeoutError) as exc:
+                _last_exc = exc
+
+        if target_reader is None:
+            logger.error(f"CONNECT tunnel failed to {host}:{port} after {_MAX_CONNECT_ATTEMPTS} attempts: {_last_exc}")
             writer.write(b"HTTP/1.1 502 Bad Gateway\r\nContent-Length: 0\r\n\r\n")
             await writer.drain()
             return

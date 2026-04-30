@@ -19,7 +19,7 @@ Host host.docker.internal
     ProxyCommand nc -X connect -x gateway:8181 %h %p
 
 Host pi raspberrypi
-    HostName raspberrypi
+    HostName 192.168.7.25
     User agentshroud-bot
     Port 22
     IdentityFile ~/.ssh/id_ed25519
@@ -32,7 +32,7 @@ Host pi raspberrypi
     ProxyCommand nc -X connect -x gateway:8181 %h %p
 
 Host marvin
-    HostName marvin
+    HostName 192.168.7.137
     User agentshroud-bot
     Port 22
     IdentityFile ~/.ssh/id_ed25519
@@ -45,7 +45,7 @@ Host marvin
     ProxyCommand nc -X connect -x gateway:8181 %h %p
 
 Host trillian
-    HostName trillian
+    HostName 192.168.7.103
     User agentshroud-bot
     Port 22
     IdentityFile ~/.ssh/id_ed25519

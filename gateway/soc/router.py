@@ -14,6 +14,7 @@ Every handler:
 from __future__ import annotations
 
 import asyncio
+import hashlib
 import json
 import logging
 import os
@@ -1042,6 +1043,40 @@ async def set_user_role(
     return {"ok": True, "user_id": user_id, "role": body.role}
 
 
+class SetUserModeRequest(BaseModel):
+    mode: str
+
+
+@router.put("/users/{user_id}/mode")
+async def set_user_collab_mode(
+    user_id: str,
+    body: SetUserModeRequest,
+    caller: SCLCaller = Depends(get_caller),
+) -> Dict:
+    """Set per-user collab mode override (persists across restarts)."""
+    caller.require(Action.SET_ROLE, Resource.USERS)
+    valid_modes = {"local_only", "project_scoped", "full_access"}
+    if body.mode not in valid_modes:
+        raise HTTPException(
+            status_code=400,
+            detail={
+                "error": True,
+                "code": "VALIDATION_ERROR",
+                "message": f"Invalid mode: {body.mode!r}. Must be one of {sorted(valid_modes)}",
+            },
+        )
+    from ..security.group_config import persist_user_collab_mode
+
+    persist_user_collab_mode(user_id, body.mode)
+    # Apply immediately to the running TeamsConfig so changes take effect without restart.
+    app = _app_state()
+    teams = getattr(getattr(app, "config", None), "teams", None)
+    if teams is not None:
+        teams.user_overrides.setdefault(str(user_id), {})["collab_mode"] = body.mode
+    _log_audit(caller, "set collab mode", target=user_id, details={"mode": body.mode})
+    return {"ok": True, "user_id": user_id, "mode": body.mode}
+
+
 # ---------------------------------------------------------------------------
 # Group management endpoints
 # ---------------------------------------------------------------------------
@@ -1944,7 +1979,7 @@ async def get_security_scorecard(caller: SCLCaller = Depends(get_caller)) -> Dic
         logger.warning("get_security_scorecard: %s", exc)
         return {
             "error": str(exc),
-            "version": "v1.0.0",
+            "version": "v1.0.44",
             "domains": [],
             "totals": {"score": 0, "max": 60, "percentage": 0},
             "overall_maturity": "Not Started",
@@ -2059,7 +2094,20 @@ async def trigger_cve_report(caller: SCLCaller = Depends(get_caller)) -> Dict:
 # ---------------------------------------------------------------------------
 
 _GH_RELEASES_API = "https://api.github.com/repos/idallasjlabs/agentshroud/releases/latest"
-_CURRENT_VERSION = "1.0.0"
+_CURRENT_VERSION = "1.0.44"
+
+# Content-hash cache busters for static assets — recomputed at import time so
+# any change to soc.js / soc.css produces a new hash and busts browser caches.
+_soc_static_dir = Path(__file__).parent / "static"
+
+
+def _file_hash(name: str) -> str:
+    p = _soc_static_dir / name
+    return hashlib.md5(p.read_bytes()).hexdigest()[:8] if p.exists() else "0"
+
+
+_SOC_JS_HASH = _file_hash("soc.js")
+_SOC_CSS_HASH = _file_hash("soc.css")
 
 
 def _fetch_latest_release() -> Dict:
@@ -2385,12 +2433,11 @@ async def soc_websocket(websocket: WebSocket):
 async def soc_dashboard(request: Request):
     """Serve the unified SOC web dashboard."""
     template_path = Path(__file__).parent / "templates" / "soc.html"
-    _v = _CURRENT_VERSION.replace(".", "") + "b"
     if template_path.exists():
         html = template_path.read_text()
-        # Inject version query param for cache-busting on each release
-        html = html.replace('/soc/static/soc.js"', f'/soc/static/soc.js?v={_v}"')
-        html = html.replace('/soc/static/soc.css"', f'/soc/static/soc.css?v={_v}"')
+        # Inject content-hash query params for cache-busting on every build
+        html = html.replace('/soc/static/soc.js"', f'/soc/static/soc.js?v={_SOC_JS_HASH}"')
+        html = html.replace('/soc/static/soc.css"', f'/soc/static/soc.css?v={_SOC_CSS_HASH}"')
         return HTMLResponse(
             content=html,
             headers={"Cache-Control": "no-cache, no-store, must-revalidate"},
