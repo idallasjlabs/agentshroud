@@ -90,9 +90,12 @@ node -e "
   setApiKey('openai', process.env.OPENAI_API_KEY || '');
 
   const modelMode = String(process.env.AGENTSHROUD_MODEL_MODE || 'local').toLowerCase();
-  const localOnly = modelMode !== 'cloud' || String(process.env.OPENCLAW_MAIN_MODEL || '').startsWith('ollama/');
+  const mainModel = String(process.env.OPENCLAW_MAIN_MODEL || '');
+  const localOnly = modelMode !== 'cloud' || mainModel.startsWith('ollama/') || mainModel.startsWith('openai-local/');
   if (localOnly) {
     setApiKey('ollama', process.env.OLLAMA_API_KEY || 'ollama-local');
+    // local-multi uses "openai-local" provider (LM Studio, OpenAI-compatible).
+    setApiKey('openai-local', process.env.OLLAMA_API_KEY || 'lm-studio');
   }
 
   if (changed) {

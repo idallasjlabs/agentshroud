@@ -93,8 +93,11 @@ if (!config.agents.defaults.timeoutSeconds || config.agents.defaults.timeoutSeco
 // In local-multi mode all 3 models (Anchor, Coding, Reasoning) run under Ollama.
 config.models = config.models || {};
 config.models.providers = config.models.providers || {};
-const currentOllama = config.models.providers.ollama || {};
-const ollamaModels = [
+// In local-multi mode the provider key is "openai-local" (not "ollama") so OpenClaw
+// uses OpenAI stream parsing instead of Ollama-native parsing.
+const PROVIDER_KEY = MODEL_MODE === 'local-multi' ? 'openai-local' : 'ollama';
+const currentProvider = config.models.providers[PROVIDER_KEY] || {};
+const providerModels = [
   {
     id: LOCAL_MODEL_NAME,
     name: LOCAL_MODEL_NAME,
@@ -113,18 +116,24 @@ if (MODEL_MODE === 'local-multi') {
     [CODING_MODEL_NAME, 'Coding', false],
     [REASONING_MODEL_NAME, 'Reasoning', true],
   ]) {
-    if (!ollamaModels.some((m) => m.id === id)) {
-      ollamaModels.push({ id, name: label + ' (' + id + ')', reasoning, input: ['text'], contextWindow: 32768, maxTokens: 8192 });
+    if (!providerModels.some((m) => m.id === id)) {
+      providerModels.push({ id, name: label + ' (' + id + ')', reasoning, input: ['text'], contextWindow: 32768, maxTokens: 8192 });
     }
   }
+  // Remove stale "ollama" provider key from previous config to avoid dual-provider confusion.
+  if (config.models.providers.ollama) {
+    delete config.models.providers.ollama;
+    changed = true;
+  }
 }
-const desiredOllama = {
+const desiredProvider = {
   baseUrl: OLLAMA_BASE_URL,
   api: OLLAMA_PROVIDER_API,
-  models: ollamaModels,
+  apiKey: process.env.OLLAMA_API_KEY || 'lm-studio',
+  models: providerModels,
 };
-if (JSON.stringify(currentOllama) !== JSON.stringify(desiredOllama)) {
-  config.models.providers.ollama = desiredOllama;
+if (JSON.stringify(currentProvider) !== JSON.stringify(desiredProvider)) {
+  config.models.providers[PROVIDER_KEY] = desiredProvider;
   changed = true;
 }
 
@@ -136,6 +145,7 @@ if (process.env.LMSTUDIO_API_BASE) {
   const desiredLmStudio = {
     baseUrl: LMSTUDIO_BASE_URL,
     api: 'openai-completions',
+    apiKey: 'lm-studio',
     models: [
       {
         id: LMSTUDIO_ANCHOR_MODEL,
