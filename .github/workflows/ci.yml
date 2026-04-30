@@ -24,7 +24,7 @@ jobs:
       - uses: actions/checkout@v4
 
       - name: Set up Python ${{ matrix.python-version }}
-        uses: actions/setup-python@v5
+        uses: actions/setup-python@v6
         with:
           python-version: ${{ matrix.python-version }}
 
@@ -41,6 +41,7 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r gateway/requirements.txt
           pip install pytest-cov
+          pip install pytest-xdist
 
       - name: Run tests with coverage
         run: |
@@ -48,7 +49,7 @@ jobs:
             --cov=gateway \
             --cov-report=term-missing \
             --cov-report=xml:coverage.xml \
-            --cov-fail-under=80
+            --cov-fail-under=84
 
       - name: Upload coverage artifact
         if: always()
@@ -63,7 +64,7 @@ jobs:
       - uses: actions/checkout@v4
 
       - name: Set up Python
-        uses: actions/setup-python@v5
+        uses: actions/setup-python@v6
         with:
           python-version: "3.11"
 
@@ -96,13 +97,74 @@ jobs:
         # paths allowlist in .gitleaks.toml.
         run: gitleaks detect --source . --log-opts="c628add..HEAD" --redact
 
+  smoke-static:
+    name: Startup Smoke Tests (static)
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v6
+        with:
+          node-version: "20"
+
+      - name: Run startup smoke tests
+        run: node tests/startup_smoke/test_apply_patches.js
+
+  soul-freshness:
+    name: SOUL.md Freshness Check
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Check soul-updated date is within 90 days
+        run: |
+          set -e
+          SOUL_FILES=(
+            "docker/config/openclaw/workspace/SOUL.md"
+            "docker/bots/openclaw/workspace/collaborator-workspace/SOUL.md"
+          )
+          STALE=0
+          TODAY=$(date -u +%Y-%m-%d)
+          MAX_AGE_DAYS=90
+
+          for file in "${SOUL_FILES[@]}"; do
+            if [ ! -f "$file" ]; then
+              echo "ERROR: $file not found" >&2
+              exit 1
+            fi
+
+            DATE_LINE=$(grep -o 'soul-updated: [0-9]\{4\}-[0-9]\{2\}-[0-9]\{2\}' "$file" | grep -o '[0-9]\{4\}-[0-9]\{2\}-[0-9]\{2\}' || true)
+
+            if [ -z "$DATE_LINE" ]; then
+              echo "FAIL: $file is missing <!-- soul-updated: YYYY-MM-DD --> marker" >&2
+              STALE=1
+              continue
+            fi
+
+            # Days between soul-updated date and today
+            SOUL_EPOCH=$(date -u -d "$DATE_LINE" +%s 2>/dev/null || date -u -j -f "%Y-%m-%d" "$DATE_LINE" +%s)
+            TODAY_EPOCH=$(date -u -d "$TODAY" +%s 2>/dev/null || date -u +%s)
+            AGE_DAYS=$(( (TODAY_EPOCH - SOUL_EPOCH) / 86400 ))
+
+            if [ "$AGE_DAYS" -gt "$MAX_AGE_DAYS" ]; then
+              echo "FAIL: $file soul-updated is $DATE_LINE ($AGE_DAYS days ago — exceeds ${MAX_AGE_DAYS}-day limit)" >&2
+              echo "      Update the Current Focus / Long-Term Goals sections and bump soul-updated." >&2
+              STALE=1
+            else
+              echo "OK:   $file soul-updated $DATE_LINE ($AGE_DAYS days ago)"
+            fi
+          done
+
+          exit $STALE
+
   lint:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
 
       - name: Set up Python
-        uses: actions/setup-python@v5
+        uses: actions/setup-python@v6
         with:
           python-version: "3.11"
 
@@ -116,3 +178,72 @@ jobs:
 
       - name: Lint
         run: flake8 gateway/ --max-line-length 100 --extend-ignore=E501,E203,E226,E228,E231,E304,E402,E712,E741,W291,W293,W503,F401,F541,F811,F821,F824,F841
+
+  benchmark:
+    runs-on: macos-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Set up Python
+        uses: actions/setup-python@v6
+        with:
+          python-version: "3.11"
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r gateway/requirements.txt
+          pip install pytest-benchmark
+      - name: Run benchmark regression
+        run: |
+          python -m pytest gateway/tests/test_benchmark_regression.py -v \
+            --benchmark-json=.benchmarks/current.json || true
+          python scripts/check_benchmark_regression.py
+
+  dast:
+    name: DAST Scan (Nuclei)
+    if: github.event_name == 'workflow_dispatch'
+    runs-on: self-hosted
+    steps:
+      - uses: actions/checkout@v4
+      - name: Start gateway
+        run: |
+          docker compose -f docker/docker-compose.yml up -d gateway
+          sleep 10
+      - name: Install nuclei
+        run: |
+          curl -sSfL https://github.com/projectdiscovery/nuclei/releases/latest/download/nuclei_linux_amd64.zip \
+            -o nuclei.zip && unzip nuclei.zip -d /usr/local/bin/
+      - name: Run nuclei scan
+        run: |
+          nuclei -u http://localhost:8080 -severity medium,high,critical \
+            -sarif-export dast-results.sarif || true
+      - name: Upload SARIF
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: dast-sarif
+          path: dast-results.sarif
+      - name: Stop gateway
+        if: always()
+        run: docker compose -f docker/docker-compose.yml down
+
+  docs-drift:
+    name: Docs Drift Check
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Set up Python
+        uses: actions/setup-python@v6
+        with:
+          python-version: "3.11"
+      - name: Check version consistency
+        run: |
+          PKG_VERSION=$(python -c "import sys; sys.path.insert(0,''); from gateway import __version__; print(__version__)")
+          API_VERSION=$(grep -o 'version="[^"]*"' gateway/ingest_api/main.py | grep -o '[0-9][^"]*' || echo "dynamic")
+          echo "Package version: $PKG_VERSION"
+          echo "API version declaration: $API_VERSION"
+          if [ "$API_VERSION" != "dynamic" ] && [ "$API_VERSION" != "$PKG_VERSION" ]; then
+            echo "ERROR: API version '$API_VERSION' does not match package version '$PKG_VERSION'"
+            echo "Fix: use version=__version__ in gateway/ingest_api/main.py"
+            exit 1
+          fi
+          echo "Version consistency: OK"

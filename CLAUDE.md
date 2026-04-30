@@ -8,25 +8,23 @@
 
 ──────────────────────────────────────────────────────────────────────────────
 ## KNOWLEDGE MAP — READ THIS FIRST
-──────────────────────────────────────────────────────────────────────────────
 
 At the start of every session, the knowledge graph for this project lives here:
 
 | Vault | Path | Contents |
 |-------|------|----------|
-| Code architecture | `.obsidian-vaults/code-architecture/` | Module map, dependency graph, git log, ADRs |
-| Business | `.obsidian-vaults/business/` | Roadmap, competitive intel, IP/trademark notes |
-| Personal | `.obsidian-personal/` | Session logs, research, AI-CONTEXT notes |
+| Code architecture | `.obsidian-vaults/agentshroud-code-architecture/` | Module map, dependency graph, git log, ADRs |
+| Business | `.obsidian-vaults/agentshroud-business/` | Roadmap, competitive intel, IP/trademark notes |
+| Personal | `.obsidian-personal/agentshroud-personal/` | Session logs, research, AI-CONTEXT notes |
 
 **Entry points:**
-- Module index: `.obsidian-vaults/code-architecture/modules/`
-- Recent commits: `.obsidian-vaults/code-architecture/git-log/recent-commits.md`
-- Current roadmap: `.obsidian-vaults/business/roadmap.md`
-- Session context: `.obsidian-personal/AI-CONTEXT/`
+- Module index: `.obsidian-vaults/agentshroud-code-architecture/modules/`
+- Recent commits: `.obsidian-vaults/agentshroud-code-architecture/git-log/recent-commits.md`
+- Current roadmap: `.obsidian-vaults/agentshroud-business/roadmap.md`
+- Session context: `.obsidian-personal/agentshroud-personal/AI-CONTEXT/`
 
 Do not ask where files are. Read the module index first.
 
-──────────────────────────────────────────────────────────────────────────────
 ## 0) PRIME DIRECTIVE (NON-NEGOTIABLE)
 ──────────────────────────────────────────────────────────────────────────────
 

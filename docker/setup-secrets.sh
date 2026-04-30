@@ -120,15 +120,26 @@ get_secret() {
     esac
 }
 
+# Extract the last non-empty line from stdin.
+# Handles garbled multi-line blobs stored before the 017e7bd write-path fix —
+# e.g. Keychain/homedir entries that captured TUI output (label + asterisks +
+# real value) via $(read_secret_masked). The real secret is always on the last
+# non-empty line; for clean single-line values the output is identical.
+normalize_secret() {
+    awk 'NF {last=$0} END {print last}'
+}
+
 # ── Masked interactive reader ──────────────────────────────────────────────────
 read_secret_masked() {
     local prompt="$1" optional="${2:-}"
     local value="" char
-    echo ""
+    # All display output (prompt, asterisks, newlines) goes to /dev/tty so that
+    # callers using value="$(read_secret_masked ...)" only capture the actual secret.
+    echo "" > /dev/tty
     if [[ "$optional" == "optional" ]]; then
-        printf "  → %s (press Enter to skip): " "$prompt"
+        printf "  → %s (press Enter to skip): " "$prompt" > /dev/tty
     else
-        printf "  → %s: " "$prompt"
+        printf "  → %s: " "$prompt" > /dev/tty
     fi
     while IFS= read -r -s -n1 char; do
         if [[ "$char" == $'\0' || "$char" == $'\n' ]]; then
@@ -136,17 +147,17 @@ read_secret_masked() {
         elif [[ "$char" == $'\177' || "$char" == $'\b' ]]; then
             if [[ ${#value} -gt 0 ]]; then
                 value="${value%?}"
-                printf '\b \b'
+                printf '\b \b' > /dev/tty
             fi
         else
             value+="$char"
-            printf '*'
+            printf '*' > /dev/tty
         fi
     done
-    printf '\n'
+    printf '\n' > /dev/tty
     if [[ -z "$value" ]]; then
         if [[ "$optional" == "optional" ]]; then
-            echo ""
+            echo "" > /dev/tty
             return
         fi
         echo "Error: value required." >&2
@@ -179,9 +190,9 @@ declare -a SECRET_DEFS=(
     "anthropic_oauth_token|Claude OAuth token (sk-ant-oat01-...)|yes|no"
     "openai_api_key|OpenAI API key|yes|yes"
     "google_api_key|Google API key|yes|yes"
-    "1password_bot_email|1Password account email|no|no"
-    "1password_bot_master_password|1Password master password|yes|no"
-    "1password_bot_secret_key|1Password secret key (A3-...)|yes|no"
+    "1password_bot_email|1Password account email|no|yes"
+    "1password_bot_master_password|1Password master password|yes|yes"
+    "1password_bot_secret_key|1Password secret key (A3-...)|yes|yes"
     "telegram_bot_token_production|Telegram bot token (production)|yes|no"
     "telegram_bot_token_marvin|Telegram bot token (marvin dev)|yes|yes"
     "telegram_bot_token_trillian|Telegram bot token (trillian dev)|yes|yes"
@@ -248,7 +259,7 @@ cmd_extract() {
     ok=true
     for entry in "${extract_defs[@]}"; do
         IFS='|' read -r name optional <<< "$entry"
-        value="$(get_secret "$name")"
+        value="$(get_secret "$name" | normalize_secret)"
         if [[ -z "$value" ]]; then
             if [[ "$optional" == "yes" ]]; then
                 echo "  [skipped] $name — not stored (optional)"
@@ -269,8 +280,9 @@ cmd_extract() {
         echo "All required secrets extracted to ${SECRETS_DIR}/"
         echo "Next: scripts/asb up"
     else
-        echo "Some required secrets were missing. Run './docker/setup-secrets.sh store' first."
-        exit 1
+        echo "Some secrets were missing. Run './docker/setup-secrets.sh store' to configure them."
+        echo "The stack will start in degraded mode — unconfigured features will be disabled."
+        return 1
     fi
 }
 

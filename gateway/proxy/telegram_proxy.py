@@ -21,6 +21,7 @@ import logging
 import math
 import os
 import re
+import socket as _socket
 import ssl
 import time
 import urllib.error
@@ -28,6 +29,26 @@ import urllib.parse
 import urllib.request
 import uuid
 from typing import Any, Optional
+
+# Prefer IPv4 when connecting to Telegram API.
+# In some VPN/Docker environments (Colima + Cisco AnyConnect) IPv6 packets are
+# silently dropped, causing socket.create_connection to hang for 10-12 seconds
+# before falling back to IPv4. This patch reorders getaddrinfo results so IPv4
+# addresses are tried first, eliminating the startup delay for sendMessage etc.
+_orig_getaddrinfo = _socket.getaddrinfo
+
+
+def _ipv4_first_getaddrinfo(host, port, family=0, type=0, proto=0, flags=0):
+    results = _orig_getaddrinfo(host, port, family, type, proto, flags)
+    if family == 0 and results:
+        ipv4 = [r for r in results if r[0] == _socket.AF_INET]
+        ipv6 = [r for r in results if r[0] == _socket.AF_INET6]
+        reordered = ipv4 + ipv6
+        return reordered if reordered else results
+    return results
+
+
+_socket.getaddrinfo = _ipv4_first_getaddrinfo
 from urllib.parse import urlparse
 
 from gateway.security.input_normalizer import normalize_input, strip_markdown_exfil
@@ -222,6 +243,15 @@ _DISCLOSURE_MESSAGE = (
     "I'm the collaborator\\-facing assistant with read\\-only access \u2014 if authorized, I can discuss "
     "AgentShroud's features, security concepts, and provide technical advice, but I don't "
     "have access to the full command set\\._"
+)
+
+_DISCLOSURE_MESSAGE_FULL_ACCESS = (
+    "\U0001f6e1\ufe0f *AgentShroud Notice*\n\n"
+    "This conversation is logged and may be reviewed as part of the AgentShroud\u2122 "
+    "project\\. By continuing, you acknowledge this\\. Questions? Reach out to Isaiah directly\\.\n\n"
+    "_You have general access \u2014 I can help with research, technical questions, "
+    "and a wide range of topics\\. Some bot commands and system\\-level operations "
+    "remain owner\\-gated\\._"
 )
 
 _PROTECT_PREFIX = "🛡️ Protected by AgentShroud"
@@ -2920,6 +2950,8 @@ class TelegramAPIProxy:
                                     f"{cleaned}\n\n"
                                     "🌐 Web access request detected. Approval request queued for this destination."
                                 ).strip()
+                        elif tool_name == "web_search":
+                            await self._trigger_web_search_log(chat_id, tool_args)
                         data[text_key] = cleaned
                         self._stats["outbound_filtered"] += 1
                         return json.dumps(data).encode()
@@ -2946,14 +2978,34 @@ class TelegramAPIProxy:
                             if not is_owner_chat
                             else "✅ Healthcheck started. I’ll reply with status once complete."
                         )
+                    elif tool_name == "web_search":
+                        await self._trigger_web_search_log(chat_id, tool_args)
+                        if not is_owner_chat:
+                            data[text_key] = self._collaborator_safe_notice(
+                                "web search in progress"
+                            )
+                        else:
+                            data[text_key] = (
+                                "🔍 Web search requested, but this model returned raw tool JSON instead of executing it. "
+                                "Switch to a tool-capable model."
+                            )
                     elif tool_name == "web_fetch":
+                        _is_full_access_fetch = (
+                            not is_owner_chat
+                            and self._resolve_collaborator_mode(chat_id) == "full_access"
+                        )
                         approval_queued = await self._trigger_web_fetch_approval(chat_id, tool_args)
                         if not is_owner_chat:
-                            data[text_key] = (
-                                _COLLABORATOR_EGRESS_NOTICE
-                                if approval_queued
-                                else self._collaborator_safe_notice("web access unavailable")
-                            )
+                            if _is_full_access_fetch:
+                                data[text_key] = self._collaborator_safe_notice(
+                                    "web fetch in progress"
+                                )
+                            else:
+                                data[text_key] = (
+                                    _COLLABORATOR_EGRESS_NOTICE
+                                    if approval_queued
+                                    else self._collaborator_safe_notice("web access unavailable")
+                                )
                         else:
                             approval_note = (
                                 " Approval request queued for this destination."
@@ -3071,8 +3123,15 @@ class TelegramAPIProxy:
                         )
                     data[text_key] = _COLLABORATOR_EGRESS_NOTICE
                     return json.dumps(data).encode()
+                # full_access collaborators bypass the broad leakage filter — they are
+                # allowed to receive general research/technical responses. The filter
+                # still applies to local_only/project_scoped tiers.
+                _is_full_access = (
+                    not is_owner_chat and self._resolve_collaborator_mode(chat_id) == "full_access"
+                )
                 if (
                     not is_owner_chat
+                    and not _is_full_access
                     and isinstance(text, str)
                     and self._contains_high_risk_collaborator_leakage(text)
                 ):
@@ -3253,6 +3312,11 @@ class TelegramAPIProxy:
                     elif pipeline_result.sanitized_message != text:
                         data["text"] = pipeline_result.sanitized_message
                         self._stats["outbound_filtered"] += 1
+                        # Strip HTML parse_mode if PII placeholders like <EMAIL_ADDRESS> are present
+                        if data.get("parse_mode", "").upper() == "HTML" and re.search(
+                            r"<[A-Z][A-Z0-9_]{1,64}>", data["text"]
+                        ):
+                            data.pop("parse_mode", None)
                     return json.dumps(data).encode()
                 elif text and self.sanitizer:
                     # Fallback: direct sanitizer calls when pipeline is unavailable
@@ -3261,6 +3325,10 @@ class TelegramAPIProxy:
                     if pii_result.entity_types_found:
                         data["text"] = pii_result.sanitized_content
                         self._stats["outbound_filtered"] += 1
+                        # Strip HTML parse_mode to prevent tag parse errors from PII placeholders
+                        # e.g. <EMAIL_ADDRESS> is valid redaction but invalid Telegram HTML tag
+                        if data.get("parse_mode", "").upper() == "HTML":
+                            data.pop("parse_mode", None)
                         logger.info(
                             "Outbound message: PII redacted: chat_id=%s types=%s",
                             chat_id,
@@ -3343,6 +3411,8 @@ class TelegramAPIProxy:
                                     f"{cleaned}\n\n"
                                     "🌐 Web access request detected. Approval request queued for this destination."
                                 ).strip()
+                        elif tool_name == "web_search":
+                            await self._trigger_web_search_log(chat_id, tool_args)
                         data[text_key] = cleaned
                         self._stats["outbound_filtered"] += 1
                         return urllib.parse.urlencode(data).encode()
@@ -3369,14 +3439,34 @@ class TelegramAPIProxy:
                             if not is_owner_chat
                             else "✅ Healthcheck started. I’ll reply with status once complete."
                         )
+                    elif tool_name == "web_search":
+                        await self._trigger_web_search_log(chat_id, tool_args)
+                        if not is_owner_chat:
+                            data[text_key] = self._collaborator_safe_notice(
+                                "web search in progress"
+                            )
+                        else:
+                            data[text_key] = (
+                                "🔍 Web search requested, but this model returned raw tool JSON instead of executing it. "
+                                "Switch to a tool-capable model (e.g., scripts/switch_model.sh gemini or local qwen3:14b once pulled)."
+                            )
                     elif tool_name == "web_fetch":
+                        _is_full_access_fetch = (
+                            not is_owner_chat
+                            and self._resolve_collaborator_mode(chat_id) == "full_access"
+                        )
                         approval_queued = await self._trigger_web_fetch_approval(chat_id, tool_args)
                         if not is_owner_chat:
-                            data[text_key] = (
-                                _COLLABORATOR_EGRESS_NOTICE
-                                if approval_queued
-                                else self._collaborator_safe_notice("web access unavailable")
-                            )
+                            if _is_full_access_fetch:
+                                data[text_key] = self._collaborator_safe_notice(
+                                    "web fetch in progress"
+                                )
+                            else:
+                                data[text_key] = (
+                                    _COLLABORATOR_EGRESS_NOTICE
+                                    if approval_queued
+                                    else self._collaborator_safe_notice("web access unavailable")
+                                )
                         else:
                             approval_note = (
                                 " Approval request queued for this destination."
@@ -3513,8 +3603,12 @@ class TelegramAPIProxy:
                         )
                     data[text_key] = _COLLABORATOR_EGRESS_NOTICE
                     return urllib.parse.urlencode(data).encode()
+                _is_full_access_fe = (
+                    not is_owner_chat and self._resolve_collaborator_mode(chat_id) == "full_access"
+                )
                 if (
                     not is_owner_chat
+                    and not _is_full_access_fe
                     and isinstance(text, str)
                     and self._contains_high_risk_collaborator_leakage(text)
                 ):
@@ -3558,6 +3652,34 @@ class TelegramAPIProxy:
             except Exception:
                 pass
         return body
+
+    async def _trigger_web_search_log(self, chat_id: str, tool_args: dict[str, Any]) -> None:
+        """Log a web_search egress event with user attribution when raw JSON leaks.
+
+        web_search always targets the configured search provider (Brave), which is
+        a pre-approved bypass domain.  We still want a per-user SOC egress entry so
+        the operator can see which collaborator triggered the search.
+        """
+        try:
+            from gateway.ingest_api.state import app_state as _app_state
+
+            _egress_filter = getattr(_app_state, "egress_filter", None)
+            if _egress_filter is None:
+                return
+            _aq = getattr(_egress_filter, "_approval_queue", None)
+            if _aq is None or not hasattr(_aq, "log_external_decision"):
+                return
+            _agent_id = f"telegram_web_search:{chat_id}" if chat_id else "telegram_web_search"
+            _query = normalize_input(str((tool_args or {}).get("query", ""))).strip()[:200]
+            _reason = f"web_search query via collaborator agent{': ' + _query if _query else ''}"
+            _aq.log_external_decision(
+                domain="api.search.brave.com",
+                decision="allow",
+                agent_id=_agent_id,
+                reason=_reason,
+            )
+        except Exception:
+            pass
 
     async def _trigger_web_fetch_approval(self, chat_id: str, tool_args: dict[str, Any]) -> bool:
         """Queue an interactive egress approval when raw web_fetch JSON leaks."""
@@ -4240,7 +4362,7 @@ class TelegramAPIProxy:
 
             # ── Disclosure notice — send once per session per collaborator ─────
             if is_collaborator and chat_id and user_id not in self._disclosure_sent:
-                await self._send_disclosure(chat_id)
+                await self._send_disclosure(chat_id, user_id=user_id)
                 self._disclosure_sent.add(user_id)
 
             # ── Session unlock for blocked disclosure tracker on /start ───────
@@ -6052,13 +6174,15 @@ class TelegramAPIProxy:
                             )
                         else:
                             reason_text = result.reason or ""
-                            if (
+                            if self._resolve_collaborator_mode(user_id) == "full_access" or (
                                 "multi-turn" in reason_text.lower()
                                 and self._looks_like_safe_collaborator_info_query(text)
                             ):
                                 logger.info(
-                                    "Allowing collaborator conceptual query despite multi-turn middleware block (%s)",
+                                    "Allowing collaborator message despite middleware block"
+                                    " (mode=full_access or multi-turn conceptual query) (%s): %s",
                                     user_id,
+                                    reason_text,
                                 )
                             else:
                                 logger.warning(
@@ -6112,13 +6236,15 @@ class TelegramAPIProxy:
                             )
                         else:
                             block_reason = pipeline_result.block_reason or ""
-                            if (
+                            if self._resolve_collaborator_mode(user_id) == "full_access" or (
                                 "multi-turn" in block_reason.lower()
                                 and self._looks_like_safe_collaborator_info_query(text)
                             ):
                                 logger.info(
-                                    "Allowing collaborator conceptual query despite multi-turn pipeline block (%s)",
+                                    "Allowing collaborator message despite pipeline block"
+                                    " (mode=full_access or multi-turn conceptual query) (%s): %s",
                                     user_id,
+                                    block_reason,
                                 )
                                 filtered_updates.append(update)
                                 continue
@@ -7296,20 +7422,32 @@ class TelegramAPIProxy:
             except Exception:
                 pass
 
-    async def _send_disclosure(self, chat_id: int) -> None:
-        """Send the one-time collaborator disclosure notice."""
+    async def _send_disclosure(self, chat_id: int, *, user_id: Optional[str] = None) -> None:
+        """Send the one-time collaborator disclosure notice.
+
+        Picks the appropriate message based on the collaborator's effective mode:
+        - full_access → _DISCLOSURE_MESSAGE_FULL_ACCESS (general access, no security-only scope)
+        - local_only / default → _DISCLOSURE_MESSAGE (restricted scope)
+        """
         try:
             if self._bot_token:
+                _uid = user_id or str(chat_id)
+                _mode = self._resolve_collaborator_mode(_uid)
+                _msg = (
+                    _DISCLOSURE_MESSAGE_FULL_ACCESS
+                    if _mode == "full_access"
+                    else _DISCLOSURE_MESSAGE
+                )
                 sent = await self._send_telegram_text(
                     chat_id,
-                    _DISCLOSURE_MESSAGE,
+                    _msg,
                     parse_mode="MarkdownV2",
                 )
                 if not sent:
                     # Markdown formatting can fail in edge cases; retry plain text.
-                    sent = await self._send_telegram_text(chat_id, _DISCLOSURE_MESSAGE)
+                    sent = await self._send_telegram_text(chat_id, _msg)
                 if sent:
-                    logger.info("Sent collaborator disclosure to chat %s", chat_id)
+                    logger.info("Sent collaborator disclosure to chat %s (mode=%s)", chat_id, _mode)
         except Exception as e:
             logger.warning("Failed to send disclosure to chat %s: %s", chat_id, e)
 
@@ -7381,14 +7519,30 @@ class TelegramAPIProxy:
 
         req = urllib.request.Request(url, data=body, headers=headers)
 
+        # getUpdates is a long-poll: Telegram holds the connection open for up to 30s
+        # waiting for messages, then closes with {"ok": true, "result": []}.
+        # urlopen_timeout must exceed Telegram's hold time or we abort mid-poll.
+        # Other methods (sendMessage, deleteWebhook, etc.) use a higher timeout than
+        # the historical 12s to accommodate environments where IPv6 is unreachable
+        # and socket.create_connection falls back to IPv4 (adds ~12s delay).
+        is_long_poll = "getUpdates" in url
+        urlopen_timeout = 38 if is_long_poll else 30
+        wait_for_timeout = urlopen_timeout + 5  # queue + execution budget
+
         loop = asyncio.get_event_loop()
         try:
-            response = await loop.run_in_executor(
-                None,
-                lambda: urllib.request.urlopen(req, timeout=60, context=self._ssl_context),
+            response = await asyncio.wait_for(
+                loop.run_in_executor(
+                    None,
+                    lambda: urllib.request.urlopen(req, timeout=urlopen_timeout, context=self._ssl_context),
+                ),
+                timeout=wait_for_timeout,
             )
             response_body = response.read()
             return json.loads(response_body)
+        except asyncio.TimeoutError:
+            logger.warning("_forward_to_telegram: timed out after %ss for %s", wait_for_timeout, url)
+            return {"ok": False, "error_code": 504, "description": "Gateway timeout forwarding to Telegram API"}
         except urllib.error.HTTPError as exc:
             # Telegram uses HTTP 4xx/5xx with JSON bodies for expected API failures
             # (e.g., malformed Markdown, invalid chat ID). Treat as handled response.

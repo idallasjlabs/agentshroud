@@ -31,3 +31,8 @@ Impact: <!-- Strengthens / Neutral / Requires review -->
 - [ ] Approval queue routing preserved for `email_sending`, `file_deletion`, `external_api_calls`, `skill_installation`
 - [ ] PII redaction threshold not lowered (presidio confidence minimum remains 0.9)
 - [ ] AgentShroud™ trademark notices intact (not removed or altered)
+- [ ] `scripts/smoke.sh` passes locally (container assembly assertions)
+- [ ] `tests/startup_smoke/*` updated if shell/JS patches or Dockerfile changed
+- [ ] `scripts/post-deploy-check.sh` passes on dev box after deploy
+
+See [`docs/governance/TEST_STRATEGY.md`](../docs/governance/TEST_STRATEGY.md) for the full test-type decision matrix.

@@ -87,6 +87,40 @@ class TestCredentialInjection:
         inj.inject_headers("api.example.com", headers)
         assert "Authorization" not in headers
 
+    def test_strip_headers_removes_conflicting_header(self, secrets_dir):
+        """strip_headers must remove x-api-key before injecting Authorization: Bearer."""
+        cfg = CredentialInjectorConfig(
+            secrets_dir=str(secrets_dir),
+            enabled=True,
+            mappings=[
+                CredentialMapping(
+                    domain="api.example.com",
+                    header_name="Authorization",
+                    secret_file="test_api_key.txt",
+                    header_prefix="Bearer ",
+                    strip_headers=["x-api-key"],
+                ),
+            ],
+        )
+        inj = CredentialInjector(config=cfg)
+        headers = {"x-api-key": "stale-oauth-token", "Content-Type": "application/json"}
+        inj.inject_headers("api.example.com", headers)
+        assert "x-api-key" not in headers, "x-api-key must be stripped"
+        assert "Authorization" in headers
+        assert headers["Authorization"].startswith("Bearer ")
+        assert "Content-Type" in headers  # other headers untouched
+
+    def test_anthropic_default_strips_x_api_key(self, tmp_path):
+        """Default Anthropic mapping must strip x-api-key (regression guard)."""
+        oauth_file = tmp_path / "anthropic_oauth_token"
+        oauth_file.write_text("sk-ant-oat01-fake-token")
+        cfg = CredentialInjectorConfig(secrets_dir=str(tmp_path), enabled=True)
+        inj = CredentialInjector(config=cfg)
+        headers = {"x-api-key": "sk-ant-oat01-fake-token", "anthropic-version": "2023-06-01"}
+        inj.inject_headers("api.anthropic.com", headers)
+        assert "x-api-key" not in headers, "x-api-key must be stripped for Anthropic"
+        assert headers.get("Authorization", "").startswith("Bearer ")
+
 
 # ---------------------------------------------------------------------------
 # Leak detection

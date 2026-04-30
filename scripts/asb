@@ -9,8 +9,13 @@ set -euo pipefail
 # when the host Docker CLI is newer than the Docker Engine inside the Colima VM.
 export DOCKER_API_VERSION="${DOCKER_API_VERSION:-1.53}"
 
-# Ensure the Colima Docker socket is group-writable (required on macOS with Colima)
-chmod g+rw /Users/ijefferson.admin/.colima/default/docker.sock 2>/dev/null || true
+# Ensure the Colima Docker socket is group-writable (required on macOS with Colima).
+# Each user runs their own Colima VM; DOCKER_HOST selects the correct socket.
+_COLIMA_SOCK="$HOME/.colima/default/docker.sock"
+if [ -S "$_COLIMA_SOCK" ]; then
+  chmod g+rw "$_COLIMA_SOCK" 2>/dev/null || true
+  export DOCKER_HOST="unix://$_COLIMA_SOCK"
+fi
 
 HOST=$(hostname -s)
 SCRIPT_PATH="${BASH_SOURCE[0]}"
@@ -71,32 +76,24 @@ setup_ephemeral_secrets() {
   rm -rf "$tmpdir"
   mkdir -p "$tmpdir"
 
-  # Extract secrets from credential backend → tmpdir (suppress interactive banner)
-  AGENTSHROUD_SECRETS_DIR="$tmpdir" "$REPO_DIR/docker/setup-secrets.sh" extract || {
-    echo "ERROR: secret extraction failed" >&2; exit 1
-  }
-
-  # Create empty placeholders for ALL secrets referenced in the compose override
-  # so Docker Compose does not refuse to start when a secret was not stored.
-  # Required secrets that are actually empty will cause runtime failures (not
-  # bind-mount failures), which produces a clearer error message.
+  # ── Step 1: Create empty placeholders for ALL secrets referenced in the
+  # compose override. This must happen BEFORE extract so Docker Compose always
+  # has valid bind-mount source paths even when a secret was never stored.
+  # Real values from the credential backend overwrite these in Step 3.
   for name in gateway_password anthropic_oauth_token openai_api_key google_api_key \
               1password_bot_email 1password_bot_master_password 1password_bot_secret_key \
-              telegram_bot_token_production \
+              telegram_bot_token_production telegram_bot_token_marvin \
+              telegram_bot_token_trillian telegram_bot_token_rpi \
               slack_bot_token slack_signing_secret slack_app_token; do
-    [ -f "$tmpdir/${name}.txt" ] || touch "$tmpdir/${name}.txt"
+    touch "$tmpdir/${name}.txt"
   done
 
-  # The Docker daemon inside the Colima VM runs under a different UID and cannot
-  # stat files created with chmod 600. Relax permissions on this ephemeral tmpdir
-  # (including placeholders just created) so the daemon can bind-mount the files.
-  # The directory is cleaned up on EXIT.
-  chmod 755 "$tmpdir"
-  chmod 644 "$tmpdir"/*.txt 2>/dev/null || true
-  # Flush filesystem writes so Colima's virtiofs sees them before Docker tries to
-  # bind-mount. Without this, newly created placeholder files may not be visible
-  # to the Docker daemon inside the VM.
-  sync
+  # Auto-generate gateway_password so containers always have a valid auth token
+  # even when no credential backend is configured (e.g. brand-new machine).
+  if ! python3 -c "import secrets; print(secrets.token_hex(32), end='')" \
+      > "$tmpdir/gateway_password.txt" 2>/dev/null; then
+    openssl rand -hex 32 > "$tmpdir/gateway_password.txt"
+  fi
 
   # Determine which telegram_bot_token variant to use for this host/user.
   # Falls back to production token if the host-specific token was not stored.
@@ -109,16 +106,13 @@ setup_ephemeral_secrets() {
       raspberrypi*)  host_tg_file="telegram_bot_token_rpi.txt" ;;
       *)             host_tg_file="" ;;
     esac
-    if [[ -n "$host_tg_file" && -s "$tmpdir/$host_tg_file" ]]; then
-      tg_file="$host_tg_file"
-    else
-      echo "  NOTE: host-specific token '$host_tg_file' not found — using production token"
-    fi
+    # Select host-specific token after extract runs (may be populated then).
+    # Record the desired filename; the post-extract logic below will check -s.
+    [ -n "$host_tg_file" ] && tg_file="$host_tg_file"
   fi
 
-  # Generate a compose override that redirects all secrets: file: entries to
-  # the tmpdir. This override is appended last in the -f chain so it wins over
-  # any base or host-specific overlay definitions.
+  # ── Step 2: Generate the compose override pointing to the tmpdir.
+  # Done before extract so the override always exists regardless of extract outcome.
   local override="$tmpdir/docker-compose.secrets-override.yml"
   cat > "$override" << YAML
 secrets:
@@ -146,7 +140,93 @@ secrets:
     file: ${tmpdir}/slack_app_token.txt
 YAML
 
+  # ── Step 3: Extract real secrets from credential backend (best-effort).
+  # A missing or locked backend is not fatal — placeholders ensure the stack
+  # starts in degraded mode with clear runtime warnings instead of a hard
+  # bind-mount error. New users and dev instances without all secrets stored
+  # will start successfully; unconfigured features log "not configured".
+  AGENTSHROUD_SECRETS_DIR="$tmpdir" "$REPO_DIR/docker/setup-secrets.sh" extract \
+    || echo "  WARN: secret extraction incomplete — starting with available secrets only" >&2
+
+  # If a host-specific token was populated by extract, use it; otherwise fall
+  # back to production token (which may also be empty on a fresh machine).
+  if [ "$USER" = "agentshroud-bot" ] && [ -n "${host_tg_file:-}" ]; then
+    if [ -s "$tmpdir/$host_tg_file" ]; then
+      tg_file="$host_tg_file"
+    else
+      echo "  NOTE: host-specific token '$host_tg_file' not found — using production token"
+      tg_file="telegram_bot_token_production.txt"
+    fi
+    # Rewrite override with the resolved tg_file (may have changed after extract).
+    cat > "$override" << YAML
+secrets:
+  gateway_password:
+    file: ${tmpdir}/gateway_password.txt
+  anthropic_oauth_token:
+    file: ${tmpdir}/anthropic_oauth_token.txt
+  openai_api_key:
+    file: ${tmpdir}/openai_api_key.txt
+  google_api_key:
+    file: ${tmpdir}/google_api_key.txt
+  1password_bot_email:
+    file: ${tmpdir}/1password_bot_email.txt
+  1password_bot_master_password:
+    file: ${tmpdir}/1password_bot_master_password.txt
+  1password_bot_secret_key:
+    file: ${tmpdir}/1password_bot_secret_key.txt
+  telegram_bot_token:
+    file: ${tmpdir}/${tg_file}
+  slack_bot_token:
+    file: ${tmpdir}/slack_bot_token.txt
+  slack_signing_secret:
+    file: ${tmpdir}/slack_signing_secret.txt
+  slack_app_token:
+    file: ${tmpdir}/slack_app_token.txt
+YAML
+  fi
+
+  # The Docker daemon inside the Colima VM runs under a different UID and cannot
+  # stat files created with chmod 600. Relax permissions on this ephemeral tmpdir
+  # so the daemon can bind-mount the files.
+  chmod 755 "$tmpdir"
+  chmod 644 "$tmpdir"/*.txt 2>/dev/null || true
+  # Flush filesystem writes so Colima's virtiofs sees them before Docker tries to
+  # bind-mount. Without this, newly created files may not be visible to the daemon.
+  sync
+
   COMPOSE="$COMPOSE -f $override"
+}
+
+# ── Device store reset ───────────────────────────────────────────────────────
+# After a rebuild the agentshroud-config volume retains stale device tokens from
+# the previous container. OpenClaw's Telegram handler tries to upgrade scopes on
+# the old entry and loops indefinitely with "pairing required". Resetting
+# devices/paired.json and devices/pending.json forces a clean re-pair on startup.
+# Called after `docker compose up -d` in rebuild paths only — not on plain `up`.
+_reset_device_store() {
+  local bot_container
+  bot_container="$($COMPOSE ps --format '{{.Name}}' bot 2>/dev/null | head -1)"
+  if [ -z "$bot_container" ]; then
+    echo "  [device-reset] bot container not found — skipping"
+    return
+  fi
+
+  # Wait up to 30 s for the container to be running before exec-ing into it.
+  local i=0
+  until docker inspect --format '{{.State.Running}}' "$bot_container" 2>/dev/null \
+        | grep -q true; do
+    i=$((i + 1))
+    [ $i -ge 30 ] && { echo "  [device-reset] timeout waiting for $bot_container"; return; }
+    sleep 1
+  done
+
+  echo "  [device-reset] clearing stale device tokens in $bot_container"
+  docker exec "$bot_container" bash -c \
+    'echo "{}" > /home/node/.openclaw/devices/paired.json && \
+     echo "{}" > /home/node/.openclaw/devices/pending.json' 2>/dev/null \
+    && echo "  [device-reset] done — restarting bot for clean re-pair" \
+    || { echo "  [device-reset] exec failed — skipping"; return; }
+  docker restart "$bot_container" >/dev/null
 }
 
 # ── Docker disk reclamation ──────────────────────────────────────────────────
@@ -155,6 +235,12 @@ YAML
 # stopping running containers — running containers and named volumes are NOT removed.
 # Each step is wrapped in a 30-second timeout — BuildKit prune is known to hang
 # on Colima when the daemon is in a bad state.
+#
+# ⚠ NEVER run `docker system prune --volumes` manually — it deletes ALL named
+#   volumes including gateway-data, agentshroud-workspace, agentshroud-config, etc.
+#   Ollama models (~/.ollama) and mlx_lm models (~/.cache/huggingface) live on the
+#   macOS host and are safe, but Docker volumes would be permanently lost.
+#   Always use `asb prune` or `asb clean-rebuild` which explicitly preserve volumes.
 _prune_docker() {
   echo "Pruning stopped containers, dangling images, and BuildKit cache..."
   timeout 30 docker container prune -f 2>/dev/null || true
@@ -163,7 +249,7 @@ _prune_docker() {
   timeout 60 docker builder prune -f 2>/dev/null \
     || timeout 60 docker buildx prune -f 2>/dev/null \
     || echo "  BuildKit prune timed out — continuing anyway"
-  echo "Docker prune complete."
+  echo "Docker prune complete. Named volumes preserved."
 }
 
 _asb_banner
@@ -191,15 +277,19 @@ case "${1:-}" in
   up)
     setup_ephemeral_secrets
     $COMPOSE up -d
+    bash "$REPO_DIR/scripts/post-deploy-check.sh" || true
     ;;
   down)
     $COMPOSE down
     rm -rf "$HOME/.agentshroud/.asb-secrets"
     ;;
   rebuild)
+    $COMPOSE down 2>/dev/null || true
     _prune_docker
     setup_ephemeral_secrets
     $COMPOSE build --no-cache && $COMPOSE up -d
+    _reset_device_store
+    bash "$REPO_DIR/scripts/post-deploy-check.sh" || true
     ;;
   clean-rebuild)
     echo "This will remove containers, prune stale volumes, and rebuild from scratch."
@@ -214,14 +304,68 @@ case "${1:-}" in
     setup_ephemeral_secrets
     $COMPOSE build --no-cache
     $COMPOSE up -d
+    _reset_device_store
     echo "Clean rebuild complete."
     ;;
+  prune)   _prune_docker ;;
   pull)    cd "$REPO_DIR" && git pull --rebase ;;
   status)  $COMPOSE ps ;;
   logs)    $COMPOSE logs -f --tail=100 ${2:-} ;;
   test)    $COMPOSE exec gateway python -m pytest gateway/tests/ -q ;;
+  canary)
+    SERVICE=${2:-gateway}
+    CANARY_PROJECT="agentshroud-canary"
+    echo "[asb canary] Starting canary instance of $SERVICE on alternate ports (+100)..."
+    # Start canary instance with offset ports
+    docker compose -f docker/docker-compose.yml \
+      -p "$CANARY_PROJECT" \
+      up -d "$SERVICE" \
+      2>&1 || { echo "[asb canary] Failed to start canary"; exit 1; }
+    echo "[asb canary] Canary started. Waiting 60s for soak..."
+    sleep 60
+    # Health check both instances
+    PRIMARY_HEALTH=$(curl -sf http://localhost:8080/status > /dev/null 2>&1 && echo "healthy" || echo "unhealthy")
+    CANARY_HEALTH=$(curl -sf http://localhost:8180/status > /dev/null 2>&1 && echo "healthy" || echo "unhealthy")
+    echo "[asb canary] Primary: $PRIMARY_HEALTH | Canary: $CANARY_HEALTH"
+    if [ "$CANARY_HEALTH" != "healthy" ]; then
+      echo "[asb canary] Canary unhealthy — stopping canary, primary untouched"
+      docker compose -f docker/docker-compose.yml -p "$CANARY_PROJECT" down
+      exit 1
+    fi
+    printf "[asb canary] Canary healthy. Promote to primary? [y/N]: "
+    read -r PROMOTE
+    if [ "$PROMOTE" = "y" ] || [ "$PROMOTE" = "Y" ]; then
+      echo "[asb canary] Promoting canary..."
+      docker compose -f docker/docker-compose.yml down
+      docker compose -f docker/docker-compose.yml -p "$CANARY_PROJECT" down
+      docker compose -f docker/docker-compose.yml up -d
+      echo "[asb canary] Canary promoted. Primary restarted."
+    else
+      echo "[asb canary] Promotion declined. Stopping canary."
+      docker compose -f docker/docker-compose.yml -p "$CANARY_PROJECT" down
+    fi
+    ;;
+  rollback)
+    PREV_IMAGE_FILE=".asb-previous-image"
+    if [ ! -f "$PREV_IMAGE_FILE" ]; then
+      echo "[asb rollback] No previous image recorded at $PREV_IMAGE_FILE"
+      echo "[asb rollback] Cannot rollback — run 'asb rebuild' at least once to record a baseline"
+      exit 1
+    fi
+    PREV_IMAGE=$(cat "$PREV_IMAGE_FILE")
+    echo "[asb rollback] Rolling back to: $PREV_IMAGE"
+    docker compose -f docker/docker-compose.yml down
+    GATEWAY_IMAGE="$PREV_IMAGE" docker compose -f docker/docker-compose.yml up -d
+    echo "[asb rollback] Rollback complete. Running post-deploy check..."
+    sleep 5
+    curl -sf http://localhost:8080/status && echo " [ok]" || echo " [warning: health check failed]"
+    ;;
+  instances)
+    echo "[asb instances] Running AgentShroud instances:"
+    docker ps --filter "name=agentshroud" --format "table {{.Names}}\t{{.Ports}}\t{{.Status}}" 2>/dev/null || echo "No running instances found"
+    ;;
   *)
-    echo "Usage: asb {build|up|down|rebuild|clean-rebuild|pull|status|logs [service]|test}"
+    echo "Usage: asb {build|up|down|rebuild|clean-rebuild|prune|pull|status|logs [service]|test|canary [service]|rollback|instances}"
     exit 1
     ;;
 esac

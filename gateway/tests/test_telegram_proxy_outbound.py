@@ -3543,6 +3543,103 @@ class TestOutboundPipelineIntegration:
         assert result["error_code"] == 500
 
 
+class TestWebSearchLog:
+    """Tests for _trigger_web_search_log and raw web_search JSON outbound handling."""
+
+    @pytest.mark.asyncio
+    async def test_web_search_log_called_with_correct_params(self, monkeypatch):
+        """_trigger_web_search_log calls log_external_decision with Brave domain and query."""
+        log_calls = []
+
+        class _MockAQ:
+            def log_external_decision(self, **kwargs):
+                log_calls.append(kwargs)
+
+        class _MockEgress:
+            _approval_queue = _MockAQ()
+
+        from gateway.ingest_api import state as state_module
+
+        monkeypatch.setattr(state_module, "app_state", SimpleNamespace(egress_filter=_MockEgress()))
+        proxy = TelegramAPIProxy(sanitizer=_make_sanitizer())
+        await proxy._trigger_web_search_log("8096968754", {"query": "BESS alarm count"})
+
+        assert len(log_calls) == 1
+        call = log_calls[0]
+        assert call["domain"] == "api.search.brave.com"
+        assert call["decision"] == "allow"
+        assert "8096968754" in call["agent_id"]
+        assert "BESS alarm count" in call["reason"]
+
+    @pytest.mark.asyncio
+    async def test_web_search_no_egress_filter(self, monkeypatch):
+        """_trigger_web_search_log returns silently when egress_filter is None."""
+        from gateway.ingest_api import state as state_module
+
+        monkeypatch.setattr(state_module, "app_state", SimpleNamespace(egress_filter=None))
+        proxy = TelegramAPIProxy(sanitizer=_make_sanitizer())
+        # Must not raise
+        await proxy._trigger_web_search_log("123", {"query": "test"})
+
+    @pytest.mark.asyncio
+    async def test_web_search_query_truncation(self, monkeypatch):
+        """Queries longer than 200 chars are truncated in the SOC log reason."""
+        log_calls = []
+
+        class _MockAQ:
+            def log_external_decision(self, **kwargs):
+                log_calls.append(kwargs)
+
+        class _MockEgress:
+            _approval_queue = _MockAQ()
+
+        from gateway.ingest_api import state as state_module
+
+        monkeypatch.setattr(state_module, "app_state", SimpleNamespace(egress_filter=_MockEgress()))
+        proxy = TelegramAPIProxy(sanitizer=_make_sanitizer())
+        long_query = "x" * 300
+        await proxy._trigger_web_search_log("123", {"query": long_query})
+
+        assert len(log_calls) == 1
+        # Reason embeds the truncated query (max 200 chars)
+        reason = log_calls[0]["reason"]
+        assert len(reason) < 300
+
+    @pytest.mark.asyncio
+    async def test_raw_web_search_json_owner_message(self):
+        """Owner chat: raw web_search JSON produces 'Switch to tool-capable model' message."""
+        proxy = TelegramAPIProxy(sanitizer=_make_sanitizer())
+        body = json.dumps(
+            {
+                "chat_id": "8096968754",
+                "text": '{"name":"web_search","arguments":{"query":"BESS alarms"}}',
+            }
+        ).encode()
+        result = json.loads(await proxy._filter_outbound(body, "application/json"))
+        assert "web search" in result["text"].lower() or "switch" in result["text"].lower()
+        assert "web_search" not in result["text"]
+
+    @pytest.mark.asyncio
+    async def test_raw_web_search_json_collaborator_safe_notice(self):
+        """Collaborator chat: raw web_search JSON produces a safe notice."""
+        proxy = TelegramAPIProxy(sanitizer=_make_sanitizer())
+
+        class _MockRBAC:
+            owner_user_id = "8096968754"
+
+        proxy._rbac = _MockRBAC()
+        body = json.dumps(
+            {
+                "chat_id": "9999999999",  # not the owner
+                "text": '{"name":"web_search","arguments":{"query":"BESS alarms"}}',
+            }
+        ).encode()
+        result = json.loads(await proxy._filter_outbound(body, "application/json"))
+        # Must not expose raw tool JSON to collaborators
+        assert "web_search" not in result["text"]
+        assert "arguments" not in result["text"]
+
+
 class TestRuntimeRewriteHelpers:
     """Unit tests for deterministic runtime error rewrite helper behavior."""
 
@@ -4085,3 +4182,137 @@ class TestBuildCollaboratorSafeInfoResponse:
     def test_fallback_for_unmatched(self):
         r = self._resp("something completely unrelated")
         assert "collaborator" in r.lower()
+
+
+class TestParseModeStrippedAfterPIIRedaction:
+    """Regression tests for Telegram HTML parse error caused by PII placeholders.
+
+    When the PII sanitizer replaces e.g. an email with <EMAIL_ADDRESS>, and
+    parse_mode=HTML is set, Telegram rejects the message with:
+      "can't parse entities: Unsupported start tag 'email_address'"
+
+    The bug manifests for OWNER chats: collaborators always have HTML stripped
+    at the collaborator-markup step. For the owner, HTML is preserved until the
+    PII sanitizer runs — and if the sanitizer injects <EMAIL_ADDRESS>, parse_mode
+    must be stripped AFTER sanitization.
+
+    Regression for: sendMessage failed — Unsupported start tag "email_address"
+    """
+
+    _OWNER_ID = "8096968754"
+
+    def _make_owner_proxy(self, **kwargs):
+        """Return a TelegramAPIProxy configured with a mock owner RBAC."""
+
+        class _MockRBAC:
+            owner_user_id = TestParseModeStrippedAfterPIIRedaction._OWNER_ID
+
+        proxy = TelegramAPIProxy(**kwargs)
+        proxy._rbac = _MockRBAC()
+        return proxy
+
+    @pytest.mark.asyncio
+    async def test_parse_mode_stripped_when_email_redacted_fallback_path(self):
+        """parse_mode must be removed when sanitizer injects <EMAIL_ADDRESS> (owner, fallback path).
+
+        For owner chats the collaborator-HTML strip is skipped, so the PII sanitizer
+        runs with parse_mode=HTML still active. After redaction, <EMAIL_ADDRESS> in
+        the text must cause parse_mode to be removed before the response is forwarded.
+        """
+        sanitizer = _make_sanitizer()
+        proxy = self._make_owner_proxy(sanitizer=sanitizer)
+
+        body = json.dumps(
+            {
+                "chat_id": self._OWNER_ID,
+                "text": "Contact me at user@example.com for details.",
+                "parse_mode": "HTML",
+            }
+        ).encode()
+
+        result = await proxy._filter_outbound(body, "application/json")
+        result_data = json.loads(result)
+
+        assert "user@example.com" not in result_data["text"], "Email should be redacted"
+        assert result_data.get("parse_mode", "") != "HTML", (
+            "parse_mode=HTML must be stripped when PII placeholders like "
+            "<EMAIL_ADDRESS> are present — Telegram rejects these as invalid tags"
+        )
+
+    @pytest.mark.asyncio
+    async def test_parse_mode_stripped_when_phone_redacted_fallback_path(self):
+        """parse_mode must be removed when sanitizer injects <PHONE_NUMBER> (owner, fallback path)."""
+        sanitizer = _make_sanitizer()
+        proxy = self._make_owner_proxy(sanitizer=sanitizer)
+
+        body = json.dumps(
+            {
+                "chat_id": self._OWNER_ID,
+                "text": "Call 555-867-5309 to schedule.",
+                "parse_mode": "HTML",
+            }
+        ).encode()
+
+        result = await proxy._filter_outbound(body, "application/json")
+        result_data = json.loads(result)
+
+        assert "555-867-5309" not in result_data["text"], "Phone should be redacted"
+        assert result_data.get("parse_mode", "") != "HTML", (
+            "parse_mode=HTML must be stripped when PII placeholders are present"
+        )
+
+    @pytest.mark.asyncio
+    async def test_parse_mode_preserved_when_no_pii_detected(self):
+        """parse_mode=HTML must be preserved for owner when text contains no PII."""
+        sanitizer = _make_sanitizer()
+        proxy = self._make_owner_proxy(sanitizer=sanitizer)
+
+        body = json.dumps(
+            {
+                "chat_id": self._OWNER_ID,
+                "text": "<b>Hello world</b>, no PII here.",
+                "parse_mode": "HTML",
+            }
+        ).encode()
+
+        result = await proxy._filter_outbound(body, "application/json")
+        result_data = json.loads(result)
+
+        # parse_mode should be preserved for owner when no PII is present
+        assert result_data.get("parse_mode") == "HTML", (
+            "parse_mode=HTML must be preserved when the text contains no PII"
+        )
+
+    @pytest.mark.asyncio
+    async def test_parse_mode_stripped_when_pipeline_sanitizes_email(self):
+        """parse_mode must be removed when pipeline produces <EMAIL_ADDRESS> (owner, pipeline path)."""
+        from types import SimpleNamespace
+
+        class PIIPipeline:
+            async def process_outbound(self, response, **kwargs):
+                sanitized = response.replace("user@example.com", "<EMAIL_ADDRESS>")
+                return SimpleNamespace(
+                    blocked=False,
+                    sanitized_message=sanitized,
+                    block_reason="",
+                    info_filter_redaction_count=0,
+                )
+
+        sanitizer = _make_sanitizer()
+        proxy = self._make_owner_proxy(pipeline=PIIPipeline(), sanitizer=sanitizer)
+
+        body = json.dumps(
+            {
+                "chat_id": self._OWNER_ID,
+                "text": "Send to user@example.com please.",
+                "parse_mode": "HTML",
+            }
+        ).encode()
+
+        result = await proxy._filter_outbound(body, "application/json")
+        result_data = json.loads(result)
+
+        assert "user@example.com" not in result_data["text"], "Email should be redacted"
+        assert result_data.get("parse_mode", "") != "HTML", (
+            "parse_mode=HTML must be stripped when pipeline produces PII placeholders"
+        )

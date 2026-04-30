@@ -16,17 +16,15 @@ docker/agentshroud-dev-secrets/
 !docker/agentshroud-dev-secrets/*.example
 !docker/agentshroud-dev-secrets/README.md
 !docker/agentshroud-dev-secrets/setup-secrets.sh
-
 # Environment variables
 .env
 .env.*
 !.env.example
 .llm_env
 .llm_env.*
-llm_settings/env/.llm_env
-llm_settings/mcp-servers/**/.env
+.llm_settings/env/.llm_env
+.llm_settings/mcp-servers/**/.env
 security_assessment/.assessment_env
-
 # SSH & GPG keys
 .ssh/
 *.pem
@@ -39,7 +37,6 @@ id_rsa
 id_ed25519
 *.asc
 *.gpg
-
 # Credential files
 aws_credentials
 .pgpass
@@ -99,8 +96,17 @@ yarn-error.log*
 .npm
 .eslintcache
 .node_repl_history
-# AI/LLM TOOLS
+# Personal LLM context / system prompt (private — baked into Docker image locally, not committed)
+docker/config/openclaw/workspace/SOUL.md
+
+# AI/LLM TOOLS (private — kept locally only, not shared in repo)
 # Claude Code
+.claude/agents/
+.claude/skills/
+.claude/scripts/
+.claude/ORCHESTRATOR.md
+.claude/SESSION_BRIEF.md
+.claude/settings.json
 .claude/settings.local.json
 .claude/*.local.*
 .claude/.cache/
@@ -108,11 +114,11 @@ yarn-error.log*
 .claude/logs/
 .claude/plans/
 # Gemini CLI
-.gemini/settings.local.json
-.gemini/*.local.*
+.gemini/
 # Codex CLI
-.codex/config.local.toml
-.codex/*.local.*
+.codex/
+# LLM settings (MCP servers, CI/CD configs, skills, agent definitions)
+.llm_settings/
 # MCP local configs
 .mcp.local.json
 mcp-config.local.json
@@ -166,7 +172,6 @@ data/processed/
 # Logs
 *.log
 logs/
-
 # Lock files
 *.lock
 !poetry.lock
@@ -198,6 +203,8 @@ api_keys.txt
 *password*
 *secret*
 *token*
+# Allowlist: test utilities for secrets modules (no real secrets — only test fixtures and mocks)
+!gateway/tests/test_utils_secrets.py
 # SSH & GPG
 # AWS & CLOUD
 .aws/
@@ -345,18 +352,18 @@ mkdocs/
 # OS generated files
 .fuse_hidden*
 .asb-tmp/
-
 # Security scan reports (contain secret values from history)
 gitleaks-report.json
 gitleaks*.json
 trivy*.json
 trivy*.sarif
-
 # Python cache
 gateway/tests/__pycache__/
 **/__pycache__/
-
 # SQLite runtime files — never commit WAL/SHM artifacts
 data/ledger.db
 data/ledger.db-shm
 data/ledger.db-wal
+# Obsidian per-repo vaults (local only)
+.obsidian-vaults/
+.obsidian-personal/

@@ -23,7 +23,7 @@ services:
     extra_hosts:
       - "host.docker.internal:host-gateway"
       - "marvin:192.168.7.137"
-      - "trillian:192.168.7.97"
+      - "trillian:192.168.7.103"
       - "raspberrypi:192.168.7.25"
     image: agentshroud-gateway:${AGENTSHROUD_VERSION:-latest}
     container_name: agentshroud-gateway
@@ -32,6 +32,7 @@ services:
     stop_grace_period: "15s"
     ports:
       - 127.0.0.1:8080:8080
+      - 127.0.0.1:18789:18789  # Canvas auth-proxy (CVE-2026-34871 — auth gate in front of bot:18789)
     volumes:
       - ../agentshroud.yaml:/app/agentshroud.yaml:ro
       - agentshroud-ssh:/var/agentshroud-ssh:ro
@@ -62,11 +63,13 @@ services:
       - PYTHONDONTWRITEBYTECODE=1
       - PYTHONPYCACHEPREFIX=/tmp/pycache
       - AGENTSHROUD_EGRESS_APPROVAL_ALL=false
+      - AGENTSHROUD_ALLOWED_IPS=${AGENTSHROUD_ALLOWED_IPS:-}
+      - AGENTSHROUD_ALLOWED_PORTS=${AGENTSHROUD_ALLOWED_PORTS:-}
       - GATEWAY_AUTH_TOKEN_FILE=/run/secrets/gateway_password
       - OP_SERVICE_ACCOUNT_TOKEN_FILE=/run/secrets/1password_service_account
       - PROXY_ALLOWED_NETWORKS=10.254.110.0/24,10.254.111.0/24,10.254.112.0/24
       - AGENTSHROUD_SLACK_OWNER_USER_ID=${AGENTSHROUD_SLACK_OWNER_USER_ID:-}
-      - AGENTSHROUD_CONTROL_UI_ORIGINS=${AGENTSHROUD_CONTROL_UI_ORIGINS:-http://localhost:18789,https://localhost:18789}
+      - AGENTSHROUD_CONTROL_UI_ORIGINS=${AGENTSHROUD_CONTROL_UI_ORIGINS:-http://localhost:18789,https://localhost:18789,http://127.0.0.1:18789,https://127.0.0.1:18789}
       - AGENTSHROUD_COLLAB_LOCAL_INFO_ONLY=0
       - AGENTSHROUD_TEAMS_JSON=${AGENTSHROUD_TEAMS_JSON:-}
       - AGENTSHROUD_MODEL_MODE=${AGENTSHROUD_MODEL_MODE:-cloud}
@@ -159,17 +162,17 @@ services:
     extra_hosts:
       - "host.docker.internal:host-gateway"
       - "marvin:192.168.7.137"
-      - "trillian:192.168.7.97"
+      - "trillian:192.168.7.103"
       - "raspberrypi:192.168.7.25"
     image: agentshroud-bot:${AGENTSHROUD_VERSION:-latest}
     container_name: agentshroud-bot
     hostname: agentshroud
     restart: unless-stopped
     stop_grace_period: "15s"
-    ports:
-      - 127.0.0.1:18789:18789
+    # Port 18789 is no longer published directly — Canvas traffic is now
+    # routed through the gateway's auth-proxy (CVE-2026-34871 mitigation).
     volumes:
-      - agentshroud-config:/home/node/.agentshroud
+      - agentshroud-config:/home/node/.openclaw
       - agentshroud-workspace:/home/node/agentshroud/workspace
       - gateway-data:/home/node/agentshroud/gateway-data:ro
       - agentshroud-ssh:/home/node/.ssh
@@ -216,10 +219,12 @@ services:
       - AGENTSHROUD_CODING_MODEL=${AGENTSHROUD_CODING_MODEL:-qwen2.5-coder:32b}
       - AGENTSHROUD_REASONING_MODEL=${AGENTSHROUD_REASONING_MODEL:-deepseek-r1}
       - AGENTSHROUD_TEAMS_JSON=${AGENTSHROUD_TEAMS_JSON:-}
+      - AGENTSHROUD_COLLAB_LOCAL_INFO_ONLY=${AGENTSHROUD_COLLAB_LOCAL_INFO_ONLY:-0}
+      - BRAVE_API_KEY=${BRAVE_API_KEY:-}
       - TELEGRAM_API_BASE_URL=http://gateway:8080/telegram-api
       - SLACK_API_BASE_URL=http://gateway:8080/slack-api
       - AGENTSHROUD_SLACK_OWNER_USER_ID=${AGENTSHROUD_SLACK_OWNER_USER_ID:-}
-      - AGENTSHROUD_CONTROL_UI_ORIGINS=${AGENTSHROUD_CONTROL_UI_ORIGINS:-http://localhost:18789,https://localhost:18789}
+      - AGENTSHROUD_CONTROL_UI_ORIGINS=${AGENTSHROUD_CONTROL_UI_ORIGINS:-http://localhost:18789,https://localhost:18789,http://127.0.0.1:18789,https://127.0.0.1:18789,https://marvin.tail240ea8.ts.net:18789,http://marvin.tail240ea8.ts.net:18789}
       - GATEWAY_HOST_PORT=8080
       - AGENTSHROUD_GROUP_CHAT_ID=${AGENTSHROUD_GROUP_CHAT_ID:-}
       - OPENCLAW_BOT_NAME=agentshroud_bot
@@ -243,6 +248,7 @@ services:
       - /home/node/.npm:noexec,nosuid,size=200m,uid=1000,gid=1000
       - /home/node/.local:noexec,nosuid,size=100m
       - /home/node/.config:noexec,nosuid,size=100m,uid=1000,gid=1000
+      - /home/node/.agentshroud/agents:nosuid,size=200m,uid=1000,gid=1000
       - /home/node/.ssh-tmp:nosuid,size=10m,uid=1000,gid=1000
       - /var/ossec/var:nosuid,size=10m,uid=1000,gid=1000
       - /var/ossec/queue:nosuid,size=50m,uid=1000,gid=1000
@@ -272,8 +278,10 @@ services:
       - ${AGENTSHROUD_DNS_SECONDARY:-8.8.8.8}
       - 1.1.1.1
       - 8.8.8.8
-    # Bot on isolated network only — no direct internet access.
-    # All outbound traffic must route through the gateway on agentshroud-isolated.
+    # Bot is now on agentshroud-isolated only. Canvas port 18789 is no longer
+    # published directly from the bot — traffic routes through the gateway's
+    # auth-proxy on 127.0.0.1:18789 (CVE-2026-34871 mitigation).
+    # The gateway can reach bot:18789 via agentshroud-isolated.
     networks:
       - agentshroud-isolated
     depends_on:
@@ -313,7 +321,8 @@ secrets:
 
 # ── Networks ───────────────────────────────────────────────────────────────────
 # Two networks: internal (internet access) and isolated (no internet)
-# Only the gateway is on both. Bot is isolated only.
+# Gateway is on agentshroud-internal + agentshroud-isolated.
+# Bot is on agentshroud-isolated (agent traffic) + agentshroud-console (Control UI port publish).
 networks:
   agentshroud-internal:
     driver: bridge
@@ -329,6 +338,15 @@ networks:
         - subnet: 10.254.111.0/24
     driver_opts:
       com.docker.network.bridge.enable_icc: "true"
+  agentshroud-console:
+    # Retained for backwards compatibility with override files.
+    # Canvas port 18789 is now published by the gateway (via canvas auth-proxy),
+    # not the bot directly. The bot no longer joins this network.
+    driver: bridge
+    internal: false
+    ipam:
+      config:
+        - subnet: 10.254.112.0/24
 
 # ── Volumes ────────────────────────────────────────────────────────────────────
 volumes:

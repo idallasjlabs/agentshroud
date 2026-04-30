@@ -260,6 +260,10 @@ class SecurityPipeline:
         context_integrity_scorer=None,
         output_schema_enforcer=None,
         envelope_signer=None,
+        # CVE-2026-30741: inbound injection scanner (reuses ToolResultInjectionScanner)
+        tool_result_injection_scanner=None,
+        # CVE-2026-34425: inbound command injection scanner (reuses XMLLeakFilter C32 patterns)
+        xml_leak_filter=None,
     ):
         self.prompt_guard = prompt_guard
         self.pii_sanitizer = pii_sanitizer
@@ -275,6 +279,8 @@ class SecurityPipeline:
         self.prompt_protection = prompt_protection
         self.heuristic_classifier = heuristic_classifier
         self.clamav_scanner = clamav_scanner
+        self.tool_result_injection_scanner = tool_result_injection_scanner
+        self.xml_leak_filter = xml_leak_filter
         # C21 / C25 / C46
         self.context_integrity_scorer = context_integrity_scorer
         self.output_schema_enforcer = output_schema_enforcer
@@ -475,6 +481,73 @@ class SecurityPipeline:
                         )
                 except Exception as exc:
                     logger.error("HeuristicClassifier error: %s", exc)
+
+        # Step 1.5: Inbound injection scan — CVE-2026-30741 mitigation.
+        # Applies the ToolResultInjectionScanner pattern set (12 rules + encoded injection
+        # + unicode obfuscation) to inbound messages, closing the asymmetry where only
+        # tool results were scanned for these attack classes.
+        if self.tool_result_injection_scanner and not result.blocked:
+            try:
+                inj_result = self.tool_result_injection_scanner.scan_tool_result(
+                    "user_input", result.sanitized_message
+                )
+                from gateway.security.tool_result_injection import InjectionAction
+
+                if inj_result.action == InjectionAction.STRIP:
+                    if is_owner:
+                        logger.info(
+                            "InboundInjectionScanner: owner message flagged (patterns=%s) — allowing",
+                            inj_result.patterns,
+                        )
+                    else:
+                        result.action = PipelineAction.BLOCK
+                        result.blocked = True
+                        result.block_reason = (
+                            f"Inbound injection detected (patterns={inj_result.patterns})"
+                        )
+                        self._stats["inbound_blocked"] += 1
+                        entry = await self.audit_chain.append_block(
+                            message, "inbound_injection_blocked", metadata
+                        )
+                        result.audit_entry_id = entry.id
+                        result.audit_hash = entry.chain_hash
+                        result.processing_time_ms = (time.time() - start) * 1000
+                        return result
+                elif inj_result.action == InjectionAction.WARN:
+                    logger.warning(
+                        "InboundInjectionScanner: warning-level patterns in inbound from %s: %s",
+                        source,
+                        inj_result.patterns,
+                    )
+            except Exception as exc:
+                logger.error("InboundInjectionScanner error: %s", exc)
+
+        # Step 1.6: Inbound command injection scan — CVE-2026-34425 mitigation.
+        # Applies XMLLeakFilter C32 shell metachar patterns to inbound messages so
+        # piped/subshell constructs are caught on the way in, not only on outbound.
+        if self.xml_leak_filter and not result.blocked:
+            try:
+                c32_result = self.xml_leak_filter.scan_command_injection(result.sanitized_message)
+                if c32_result.filter_applied:
+                    if is_owner:
+                        logger.info(
+                            "C32InboundScan: owner message contains shell patterns (%s) — allowing",
+                            c32_result.removed_items,
+                        )
+                    else:
+                        result.action = PipelineAction.BLOCK
+                        result.blocked = True
+                        result.block_reason = f"Command injection pattern detected inbound: {c32_result.removed_items}"
+                        self._stats["inbound_blocked"] += 1
+                        entry = await self.audit_chain.append_block(
+                            message, "inbound_cmd_injection_blocked", metadata
+                        )
+                        result.audit_entry_id = entry.id
+                        result.audit_hash = entry.chain_hash
+                        result.processing_time_ms = (time.time() - start) * 1000
+                        return result
+            except Exception as exc:
+                logger.error("C32InboundScan error: %s", exc)
 
         # Step 2: PII sanitization
         if self.pii_sanitizer:
@@ -784,6 +857,47 @@ class SecurityPipeline:
                     result.audit_hash = entry.chain_hash
                     result.processing_time_ms = (time.time() - start) * 1000
                     return result
+
+        # Step 1.76: PromptGuard tool-result scan — block indirect prompt injection
+        # embedded in tool outputs (web pages, file reads, API responses).
+        # CVE-2026-31045 fix: tool results are a request-side injection vector.
+        if self.prompt_guard:
+            try:
+                tool_result_scan = self.prompt_guard.scan_tool_result(result.sanitized_message)
+                if tool_result_scan.blocked:
+                    result.action = PipelineAction.BLOCK
+                    result.blocked = True
+                    result.block_reason = (
+                        f"PromptGuard(tool_result): indirect injection detected "
+                        f"(score={tool_result_scan.score:.2f}, "
+                        f"patterns={tool_result_scan.patterns[:3]})"
+                    )
+                    self._stats["outbound_blocked"] += 1
+                    entry = self.audit_chain.append(
+                        f"TOOL_RESULT_INJECTION: score={tool_result_scan.score:.2f} "
+                        f"patterns={tool_result_scan.patterns[:3]}",
+                        "outbound_tool_result_injection",
+                        metadata,
+                    )
+                    result.audit_entry_id = entry.id
+                    result.audit_hash = entry.chain_hash
+                    result.processing_time_ms = (time.time() - start) * 1000
+                    logger.warning(
+                        "PromptGuard blocked tool result injection from %s: "
+                        "score=%.2f patterns=%s",
+                        source,
+                        tool_result_scan.score,
+                        tool_result_scan.patterns[:3],
+                    )
+                    return result
+                elif tool_result_scan.score > 0:
+                    logger.debug(
+                        "PromptGuard tool_result scan: score=%.2f patterns=%s (allowed)",
+                        tool_result_scan.score,
+                        tool_result_scan.patterns,
+                    )
+            except Exception as exc:
+                logger.error("PromptGuard tool_result scan error: %s", exc)
 
         # Step 1.8: OutputCanary — check for leaked canary tokens in responses
         if self.output_canary:
