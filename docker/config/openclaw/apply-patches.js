@@ -82,6 +82,10 @@ if (!config.agents.defaults.models[MAIN_MODEL]) {
   config.agents.defaults.models[MAIN_MODEL] = { alias: 'local-qwen' };
   changed = true;
 }
+if (!config.agents.defaults.timeoutSeconds || config.agents.defaults.timeoutSeconds < 900) {
+  config.agents.defaults.timeoutSeconds = 900;
+  changed = true;
+}
 
 // Patch 0b: models.providers.ollama fallback registration.
 // This gives OpenClaw an explicit provider + model definition even if dynamic
@@ -188,11 +192,10 @@ const COLLABORATOR_IDS = {
 };
 const OWNER_TELEGRAM_ID = '8096968754';
 
-// Collaborator tool restriction: use the most restrictive built-in profile ('minimal')
-// plus an explicit deny list for the highest-risk capabilities.
-// NOTE: OpenClaw does not support profile:'none'. 'minimal' is the most restricted
-// available profile. The deny list covers capabilities that minimal may still expose.
-const _COLLAB_TOOL_ALLOW = null; // unused; kept for reference
+// Collaborator tool restriction profiles.
+// OpenClaw supports 4 profiles: 'minimal', 'coding', 'messaging', 'full'.
+// 'minimal' → file tools only (read/write/edit). 'full' → all tools including web_search, web_fetch.
+// Restrictive/project_scoped tier uses 'minimal'; full_access tier uses 'full'.
 const _COLLAB_TOOL_DENY = [
   'exec', 'process', 'gateway', 'cron', 'message',
   'sessions_spawn', 'sessions_send', 'subagents',
@@ -202,18 +205,76 @@ const _COLLAB_TOOL_DENY = [
   'image', 'web_fetch', 'web_search',
 ];
 
+// full_access tier: profile:'full' provides web_search/web_fetch.
+// Deny list still blocks exec/process/gateway/cron/sessions/agent introspection.
+const _COLLAB_TOOL_DENY_FULL_ACCESS = [
+  'exec', 'process', 'gateway', 'cron', 'message',
+  'sessions_spawn', 'sessions_send', 'subagents',
+  'memory_search', 'memory_get',
+  'nodes', 'agents_list',
+  'sessions_list', 'sessions_history', 'session_status',
+  'canvas',
+];
+
+// Parse TEAMS_JSON early so _resolveCollabToolConfig can inspect group collab_mode
+// before per-collaborator agents are created. Patch 1c will reuse this variable.
+const TEAMS_JSON_RAW = process.env.AGENTSHROUD_TEAMS_JSON || '';
+let _teamsJsonParsed = null;
+try { if (TEAMS_JSON_RAW) _teamsJsonParsed = JSON.parse(TEAMS_JSON_RAW); } catch (e) {}
+
+const COLLAB_LOCAL_INFO_ONLY = (process.env.AGENTSHROUD_COLLAB_LOCAL_INFO_ONLY || '1').trim().toLowerCase();
+const _is_global_full_access = ['0', 'false', 'no'].includes(COLLAB_LOCAL_INFO_ONLY);
+
+// Load per-user mode overrides from group_overrides.json (gateway-data volume).
+let _userOverrides = {};
+try {
+  const _overridesPath = '/home/node/agentshroud/gateway-data/group_overrides.json';
+  const _overridesRaw = require('fs').readFileSync(_overridesPath, 'utf-8');
+  _userOverrides = JSON.parse(_overridesRaw).__user_overrides__ || {};
+} catch (e) { /* file may not exist yet */ }
+
+// Resolve tool config (profile + deny list) for a collaborator.
+// Priority: per-user override in group_overrides.json → group collab_mode → global env var.
+function _resolveCollabToolConfig(uid, teamsJson) {
+  let isFullAccess = false;
+  // 1. Per-user override
+  if (uid && _userOverrides[uid] && _userOverrides[uid].collab_mode === 'full_access') {
+    isFullAccess = true;
+  }
+  // 2. Group membership
+  if (!isFullAccess && uid && teamsJson && teamsJson.groups) {
+    for (const g of Object.values(teamsJson.groups)) {
+      if (g.members && g.members.includes(uid) && g.collab_mode === 'full_access') {
+        isFullAccess = true;
+        break;
+      }
+    }
+  }
+  // 3. Global env var fallback
+  if (!isFullAccess) isFullAccess = _is_global_full_access;
+  return isFullAccess
+    ? { profile: 'full', deny: _COLLAB_TOOL_DENY_FULL_ACCESS }
+    : { profile: 'minimal', deny: _COLLAB_TOOL_DENY };
+}
+
+// Backward-compat: keep old name as alias
+function _resolveCollabDenyList(uid, teamsJson) {
+  return _resolveCollabToolConfig(uid, teamsJson).deny;
+}
+
 const cIdx = config.agents.list.findIndex((a) => a.id === 'collaborator');
+const { profile: _genericProfile, deny: _genericCollabDeny } = _resolveCollabToolConfig(null, _teamsJsonParsed);
 if (cIdx < 0) {
   config.agents.list.push({
     id: 'collaborator',
     name: 'AgentShroud Collaborator',
     model: MAIN_MODEL,
-    tools: { profile: 'minimal', deny: _COLLAB_TOOL_DENY },
+    tools: { profile: _genericProfile, deny: _genericCollabDeny },
     skills: [],
     workspace: '.agentshroud/collaborator-workspace',
     memorySearch: { enabled: false },
   });
-  console.log(`[init-patch] Added collaborator agent (${MAIN_MODEL}, restricted tools)`);
+  console.log(`[init-patch] Added collaborator agent (${MAIN_MODEL}, profile:${_genericProfile})`);
   changed = true;
 } else {
   if (config.agents.list[cIdx].model !== MAIN_MODEL) {
@@ -230,11 +291,11 @@ if (cIdx < 0) {
     console.log('[init-patch] Migrated collaborator workspace to .agentshroud/collaborator-workspace');
     changed = true;
   }
-  // Ensure tools config is current (profile:minimal + deny list)
+  // Ensure tools config is current (correct profile + tier deny list)
   const existingTools = config.agents.list[cIdx].tools || {};
-  if (existingTools.profile !== 'minimal' || existingTools.allow) {
-    config.agents.list[cIdx].tools = { profile: 'minimal', deny: _COLLAB_TOOL_DENY };
-    console.log('[init-patch] Updated collaborator agent tools to profile:minimal + deny list');
+  if (existingTools.profile !== _genericProfile || existingTools.allow || JSON.stringify(existingTools.deny) !== JSON.stringify(_genericCollabDeny)) {
+    config.agents.list[cIdx].tools = { profile: _genericProfile, deny: _genericCollabDeny };
+    console.log(`[init-patch] Updated collaborator agent tools to profile:${_genericProfile} + deny list`);
     changed = true;
   }
 }
@@ -262,28 +323,29 @@ if (!hasOwnerBinding) {
 for (const [collabId, collabName] of Object.entries(COLLABORATOR_IDS)) {
   const agentId = `collab-${collabId}`;
   const agentIdx = config.agents.list.findIndex((a) => a.id === agentId);
+  const { profile: _collabProfile, deny: _collabDeny } = _resolveCollabToolConfig(collabId, _teamsJsonParsed);
   if (agentIdx < 0) {
     config.agents.list.push({
       id: agentId,
       name: `${collabName} (Collaborator)`,
       model: MAIN_MODEL,
-      tools: { profile: 'minimal', deny: _COLLAB_TOOL_DENY },
+      tools: { profile: _collabProfile, deny: _collabDeny },
       skills: [],
       workspace: `.agentshroud/collab-${collabId}`,
       memorySearch: { enabled: false },
     });
-    console.log(`[init-patch] Added per-collaborator agent: ${agentId} (${collabName})`);
+    console.log(`[init-patch] Added per-collaborator agent: ${agentId} (${collabName}, profile:${_collabProfile})`);
     changed = true;
   } else {
     if (config.agents.list[agentIdx].model !== MAIN_MODEL) {
       config.agents.list[agentIdx].model = MAIN_MODEL;
       changed = true;
     }
-    // Fix any agent that has an invalid profile (e.g. 'none' from a previous failed migration)
+    // Fix any agent with wrong profile or wrong tier deny list
     const existingTools = config.agents.list[agentIdx].tools || {};
-    if (existingTools.profile === 'none' || existingTools.allow) {
-      config.agents.list[agentIdx].tools = { profile: 'minimal', deny: _COLLAB_TOOL_DENY };
-      console.log(`[init-patch] Fixed ${agentId} tools: restored profile:minimal + deny list`);
+    if (existingTools.profile !== _collabProfile || existingTools.allow || JSON.stringify(existingTools.deny) !== JSON.stringify(_collabDeny)) {
+      config.agents.list[agentIdx].tools = { profile: _collabProfile, deny: _collabDeny };
+      console.log(`[init-patch] Fixed ${agentId} tools: profile:${_collabProfile} + tier deny list`);
       changed = true;
     }
   }
@@ -310,7 +372,8 @@ for (const [collabId, collabName] of Object.entries(COLLABORATOR_IDS)) {
 // Read AGENTSHROUD_TEAMS_JSON from env to discover groups and create shared workspace dirs.
 // The sharedWorkspace field is set on each per-collaborator agent so the bot knows where
 // the group's shared memory and workspace live on the config volume.
-const TEAMS_JSON_RAW = process.env.AGENTSHROUD_TEAMS_JSON || '';
+// Note: TEAMS_JSON_RAW is declared earlier (before Patch 1b) so _resolveCollabDenyList
+// can inspect group collab_mode during per-collaborator agent creation.
 if (TEAMS_JSON_RAW) {
   try {
     const teams = JSON.parse(TEAMS_JSON_RAW);
@@ -464,14 +527,49 @@ if (missingProxies.length > 0) {
   changed = true;
 }
 
+// Patch 2d-cleanup: Remove stale config.interfaces key written by a previous
+// broken patch. OpenClaw's config validator rejects any unrecognized top-level
+// key, so if this key exists the bot crash-loops. Safe to delete unconditionally.
+if (Object.prototype.hasOwnProperty.call(config, 'interfaces')) {
+  delete config.interfaces;
+  console.log('[init-patch] Removed stale config.interfaces key (cleanup)');
+  changed = true;
+}
+
 // Patch 3: Telegram
-const telegramToken = process.env.TELEGRAM_BOT_TOKEN;
-if (telegramToken) {
+// Normalize: if the env var is a garbled multi-line blob (label + asterisks +
+// real token — written by pre-017e7bd setup-secrets.sh), extract the last
+// non-empty line. For a clean single-line value this is a no-op.
+const telegramTokenRaw = process.env.TELEGRAM_BOT_TOKEN || '';
+const telegramToken = telegramTokenRaw.split('\n').map((s) => s.trim()).filter(Boolean).pop() || '';
+// Shape guard: Telegram bot tokens are always "<digits>:<35+ alphanum/dash/underscore>".
+// Reject anything that doesn't match to prevent a garbled blob from being written to
+// openclaw.json, which would crash-loop the bot with 404s on every API call.
+const _TELEGRAM_TOKEN_RE = /^\d+:[A-Za-z0-9_-]{35,}$/;
+if (telegramToken && !_TELEGRAM_TOKEN_RE.test(telegramToken)) {
+  console.warn(
+    '[init-patch] TELEGRAM_BOT_TOKEN is present but does not match Telegram bot-token shape' +
+    ' — refusing to inject. Check secret backend for garbled multi-line value' +
+    ' (re-run setup-secrets.sh store/extract on this host to fix).',
+  );
+}
+if (telegramToken && _TELEGRAM_TOKEN_RE.test(telegramToken)) {
   config.channels = config.channels || {};
   config.channels.telegram = config.channels.telegram || {};
 
   if (config.channels.telegram.botToken !== telegramToken) {
     config.channels.telegram.botToken = telegramToken;
+    changed = true;
+  }
+
+  // Set channels.telegram.apiRoot so OpenClaw's file download path
+  // (downloadAndSaveTelegramFile) routes photo/media downloads through the
+  // gateway proxy rather than calling api.telegram.org directly, which fails
+  // because the bot container is on an isolated (internal: true) network.
+  const telegramApiBase = process.env.TELEGRAM_API_BASE_URL;
+  if (telegramApiBase && config.channels.telegram.apiRoot !== telegramApiBase) {
+    config.channels.telegram.apiRoot = telegramApiBase;
+    console.log('[init-patch] Set channels.telegram.apiRoot = ' + telegramApiBase);
     changed = true;
   }
 
@@ -529,7 +627,7 @@ const slackAppToken = process.env.SLACK_APP_TOKEN || (() => {
   try { return fs.readFileSync('/run/secrets/slack_app_token', 'utf8').trim(); } catch (e) { return ''; }
 })();
 
-if (slackBotToken && slackAppToken) {
+if (slackBotToken && slackBotToken.startsWith('xoxb-') && slackAppToken && slackAppToken.startsWith('xapp-')) {
   config.channels = config.channels || {};
   config.channels.slack = config.channels.slack || {};
 
@@ -582,6 +680,14 @@ if (slackBotToken && slackAppToken) {
   console.log('[init-patch] Patched channels.slack (Socket Mode, dmPolicy=open)');
 } else {
   console.log('[init-patch] Slack tokens not found — skipping channels.slack patch');
+  // Remove a stale channels.slack block that may have been written in a previous run when
+  // tokens were valid.  Leaving it causes openclaw to attempt Slack Socket Mode with expired
+  // or missing credentials, producing an 'invalid_auth' uncaught exception at startup.
+  if (config.channels && Object.prototype.hasOwnProperty.call(config.channels, 'slack')) {
+    delete config.channels.slack;
+    console.log('[init-patch] Removed stale channels.slack block (no valid tokens present)');
+    changed = true;
+  }
 }
 
 if (changed || isNew) {

@@ -23,13 +23,26 @@ from gateway.ingest_api.main import auth_dep
 class TestIsOpReferenceAllowed:
 
     def test_allowed_path_passes(self):
-        assert _is_op_reference_allowed("op://Agent Shroud Bot Credentials/API Keys/openai") is True
+        assert (
+            _is_op_reference_allowed("op://Agent Shroud Bot Credentials/OpenAI API Key/credential")
+            is True
+        )
 
     def test_allowed_path_different_item(self):
-        assert _is_op_reference_allowed("op://Agent Shroud Bot Credentials/Email/password") is True
+        assert (
+            _is_op_reference_allowed(
+                "op://Agent Shroud Bot Credentials/Telegram Bot Token/credential"
+            )
+            is True
+        )
 
     def test_allowed_path_without_space_variant(self):
-        assert _is_op_reference_allowed("op://AgentShroud Bot Credentials/API Keys/openai") is True
+        assert (
+            _is_op_reference_allowed(
+                "op://Agent Shroud Bot Credentials/Brave Search API Key/credential"
+            )
+            is True
+        )
 
     def test_disallowed_vault_blocked(self):
         assert _is_op_reference_allowed("op://Personal/Logins/bank") is False
@@ -91,7 +104,9 @@ class TestOpProxyEndpoint:
             with patch("gateway.ingest_api.main.subprocess.run", return_value=mock_result):
                 resp = client.post(
                     "/credentials/op-proxy",
-                    json={"reference": "op://Agent Shroud Bot Credentials/API Keys/openai"},
+                    json={
+                        "reference": "op://Agent Shroud Bot Credentials/OpenAI API Key/credential"
+                    },
                 )
 
         assert resp.status_code == 200
@@ -107,7 +122,9 @@ class TestOpProxyEndpoint:
             with patch("gateway.ingest_api.main.subprocess.run", return_value=mock_result):
                 resp = client.post(
                     "/credentials/op-proxy",
-                    json={"reference": "op://Agent Shroud Bot Credentials/API Keys/openai"},
+                    json={
+                        "reference": "op://Agent Shroud Bot Credentials/OpenAI API Key/credential"
+                    },
                 )
 
         assert resp.status_code == 502
@@ -121,7 +138,7 @@ class TestOpProxyEndpoint:
             tc = TestClient(real_app, raise_server_exceptions=False)
             resp = tc.post(
                 "/credentials/op-proxy",
-                json={"reference": "op://Agent Shroud Bot Credentials/API Keys/openai"},
+                json={"reference": "op://Agent Shroud Bot Credentials/OpenAI API Key/credential"},
             )
             assert resp.status_code in (401, 403)
         finally:

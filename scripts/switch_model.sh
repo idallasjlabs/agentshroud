@@ -99,6 +99,7 @@ case "$TARGET" in
       OPENCLAW_MAIN_MODEL="${LOCAL_REF}"
       LOCAL_MODEL_NAME="${LOCAL_REF#ollama/}"
     fi
+<<<<<<< HEAD
     # LM Studio speaks OpenAI format, not Ollama native format.
     OLLAMA_PROVIDER_API="openai-completions"
     ;;

@@ -110,11 +110,11 @@ RUN curl -sS https://downloads.1password.com/linux/keys/1password.asc | \
     apt-get update \
     && apt-get install -y --no-install-recommends 1password-cli \
     && rm -rf /var/cache/apt/archives/*.deb /var/lib/apt/lists/*
-# Create directories for AgentShroud configuration and workspace
-# Create directories for AgentShroud configuration and workspace
-# Note: OpenClaw CLI expects ~/.openclaw, so we symlink it to ~/.agentshroud
-RUN mkdir -p /home/node/.agentshroud && \
-    ln -s /home/node/.agentshroud /home/node/.openclaw && \
+# Create directories for AgentShroud configuration and workspace.
+# .openclaw is OpenClaw's canonical config dir; agentshroud-config volume mounts directly
+# here at runtime so there must be NO symlink — OpenClaw refuses exec approvals on symlink paths.
+RUN mkdir -p /home/node/.openclaw && \
+    mkdir -p /home/node/.agentshroud && \
     mkdir -p /home/node/agentshroud/workspace && \
     mkdir -p /home/node/.ssh && \
     mkdir -p /home/node/.npm-global/bin && \
@@ -175,17 +175,6 @@ COPY docker/bots/openclaw/workspace/collaborator-workspace/ /app/config-defaults
 # Applied to /home/node/.ssh/config on every startup by init-openclaw-config.sh
 COPY docker/config/ssh/ /app/config-defaults/ssh/
 
-# Bake in Claude Code config (agents, skills, hooks, ORCHESTRATOR.md)
-# Applied to workspace/.claude/ on every startup by init-openclaw-config.sh
-COPY .claude/ /app/config-defaults/claude/
-
-# Bake in Gemini CLI config (agents, GEMINI.md, settings.json)
-# Applied to workspace/.gemini/ on every startup by init-openclaw-config.sh
-COPY .gemini/ /app/config-defaults/gemini/
-
-# Bake in Codex config (agents, AGENTS.md, config.toml)
-# Applied to workspace/.codex/ on every startup by init-openclaw-config.sh
-COPY .codex/ /app/config-defaults/codex/
 
 RUN chmod +x /usr/local/bin/security-entrypoint.sh \
     /usr/local/bin/security-scheduler.sh \

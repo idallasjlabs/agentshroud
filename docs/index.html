@@ -176,8 +176,12 @@
     .badge-crit { color: var(--danger); font-weight: 700; }
     .badge-high { color: var(--warn); font-weight: 700; }
     .badge-med  { color: #a78bfa; font-weight: 700; }
-    .badge-ok   { color: var(--accent); }
+    .badge-ok      { color: var(--accent); }
+    .badge-partial { color: var(--warn); font-weight: 700; }
+    .badge-open    { color: var(--danger); font-weight: 700; }
     .cve-id { font-family: monospace; font-size: 0.8rem; color: var(--muted); }
+    .cve-id a { color: var(--muted); text-decoration: none; border-bottom: 1px dashed var(--border); }
+    .cve-id a:hover { color: var(--accent); border-bottom-color: var(--accent); }
 
     /* ── Code block ──────────────────────────────────────── */
     .code-block {
@@ -254,7 +258,7 @@
 <!-- ── Hero ────────────────────────────────────────────────── -->
 <section class="hero">
   <div class="container">
-    <div class="version-badge">v1.0.0 "Fortress" — Now Available</div>
+    <div class="version-badge">v1.0.62 "Fortress" — Now Available</div>
     <h1>Enterprise Governance for<br><em>Autonomous AI Agents</em></h1>
     <p class="hero-sub">
       AgentShroud sits transparently between your AI agents and every system they touch.
@@ -285,7 +289,7 @@
       <div class="stat-label">Active security modules — zero stubs</div>
     </div>
     <div>
-      <div class="stat-num">3,724+</div>
+      <div class="stat-num">3,871+</div>
       <div class="stat-label">Tests — 94% coverage</div>
     </div>
     <div>
@@ -404,9 +408,32 @@
 <section id="cves">
   <div class="container">
     <div class="section-label">CVE Registry</div>
-    <h2>9 OpenClaw CVEs — all mitigated</h2>
-    <p class="section-sub">All CVEs disclosed in the March 2026 OpenClaw release are documented and fully mitigated by AgentShroud's defense-in-depth architecture.</p>
-
+    <!-- CVE_HEADING_START -->
+    <h2>293 OpenClaw CVEs — all mitigated</h2>
+    <p class="section-sub">All CVEs disclosed in OpenClaw (February–April 2026) are documented and tracked by AgentShroud’s defense-in-depth architecture.</p>
+    <!-- CVE_HEADING_END -->
+    <!-- CVE_TABLE_START -->
+    <style>
+      .badge-low { color: #6ee7b7; font-weight: 700; }
+      .cve-pagination {
+        display: flex; align-items: center; justify-content: center;
+        gap: 6px; margin: 18px 0 8px; flex-wrap: wrap;
+      }
+      .cve-pagination button {
+        background: rgba(21,131,240,0.12); border: 1px solid rgba(21,131,240,0.3);
+        color: var(--fg); padding: 4px 10px; border-radius: 6px; cursor: pointer;
+        font-size: 0.85rem; transition: background 0.15s;
+      }
+      .cve-pagination button:hover:not(:disabled) { background: rgba(21,131,240,0.25); }
+      .cve-pagination button:disabled { opacity: 0.35; cursor: default; }
+      .cve-pagination .pg-label { color: var(--muted); font-size: 0.85rem; padding: 0 4px; }
+      .cve-pagination input[type=number] {
+        width: 52px; padding: 3px 6px; border-radius: 6px;
+        border: 1px solid rgba(21,131,240,0.3);
+        background: rgba(21,131,240,0.08); color: var(--fg);
+        font-size: 0.85rem; text-align: center;
+      }
+    </style>
     <table class="cve-table">
       <thead>
         <tr>
@@ -416,63 +443,1802 @@
           <th>Status</th>
         </tr>
       </thead>
-      <tbody>
+      <tbody id="cve-tbody">
         <tr>
-          <td class="cve-id">CVE-2026-22172</td>
+          <td class="cve-id"><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-22172" target="_blank" rel="noopener">CVE-2026-22172</a></td>
           <td class="badge-crit">9.9 CRITICAL</td>
           <td>WebSocket Scope Self-Declaration</td>
           <td class="badge-ok">✓ Mitigated</td>
         </tr>
         <tr>
-          <td class="cve-id">CVE-2026-32051</td>
+          <td class="cve-id"><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-28363" target="_blank" rel="noopener">CVE-2026-28363</a></td>
+          <td class="badge-crit">9.9 CRITICAL</td>
+          <td>In OpenClaw before 2026.2.23, tools.exec.safeBins validation for sort could be bypassed...</td>
+          <td class="badge-ok">✓ Mitigated</td>
+        </tr>
+        <tr>
+          <td class="cve-id"><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-28466" target="_blank" rel="noopener">CVE-2026-28466</a></td>
+          <td class="badge-crit">9.9 CRITICAL</td>
+          <td>Versions prior to 2026.2.14 contain a vulnerability in the gateway in which it fails to...</td>
+          <td class="badge-ok">✓ Mitigated</td>
+        </tr>
+        <tr>
+          <td class="cve-id"><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-32922" target="_blank" rel="noopener">CVE-2026-32922</a></td>
+          <td class="badge-crit">9.9 CRITICAL</td>
+          <td>Token Scope Expansion via device.token.rotate</td>
+          <td class="badge-ok">✓ Mitigated</td>
+        </tr>
+        <tr>
+          <td class="cve-id"><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-33579" target="_blank" rel="noopener">CVE-2026-33579</a></td>
+          <td class="badge-crit">9.9 CRITICAL</td>
+          <td>Before 2026.3.28 contains a privilege escalation vulnerability in the /pair approve com...</td>
+          <td class="badge-ok">✓ Mitigated</td>
+        </tr>
+        <tr>
+          <td class="cve-id"><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-27002" target="_blank" rel="noopener">CVE-2026-27002</a></td>
+          <td class="badge-crit">9.8 CRITICAL</td>
+          <td>CVE-2026-27002</td>
+          <td class="badge-ok">✓ Mitigated</td>
+        </tr>
+        <tr>
+          <td class="cve-id"><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-28391" target="_blank" rel="noopener">CVE-2026-28391</a></td>
+          <td class="badge-crit">9.8 CRITICAL</td>
+          <td>Versions prior to 2026.2.2 fail to properly validate Windows cmd.exe metacharacters in ...</td>
+          <td class="badge-ok">✓ Mitigated</td>
+        </tr>
+        <tr>
+          <td class="cve-id"><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-28470" target="_blank" rel="noopener">CVE-2026-28470</a></td>
+          <td class="badge-crit">9.8 CRITICAL</td>
+          <td>Versions prior to 2026.2.2 contain an exec approvals (must be enabled) allowlist bypass...</td>
+          <td class="badge-ok">✓ Mitigated</td>
+        </tr>
+        <tr>
+          <td class="cve-id"><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-28474" target="_blank" rel="noopener">CVE-2026-28474</a></td>
+          <td class="badge-crit">9.8 CRITICAL</td>
+          <td>OpenClaw's Nextcloud Talk plugin versions prior to 2026.2.6 accept equality matching on...</td>
+          <td class="badge-ok">✓ Mitigated</td>
+        </tr>
+        <tr>
+          <td class="cve-id"><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-30741" target="_blank" rel="noopener">CVE-2026-30741</a></td>
+          <td class="badge-crit">9.8 CRITICAL</td>
+          <td>A remote code execution (RCE) vulnerability in OpenClaw Agent Platform v2026.2.6 allows...</td>
+          <td class="badge-ok">✓ Mitigated</td>
+        </tr>
+        <tr>
+          <td class="cve-id"><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-32038" target="_blank" rel="noopener">CVE-2026-32038</a></td>
+          <td class="badge-crit">9.8 CRITICAL</td>
+          <td>Before 2026.2.24 contains a sandbox network isolation bypass vulnerability that allows ...</td>
+          <td class="badge-ok">✓ Mitigated</td>
+        </tr>
+        <tr>
+          <td class="cve-id"><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-32917" target="_blank" rel="noopener">CVE-2026-32917</a></td>
+          <td class="badge-crit">9.8 CRITICAL</td>
+          <td>Before 2026.3.13 contains a remote command injection vulnerability in the iMessage atta...</td>
+          <td class="badge-ok">✓ Mitigated</td>
+        </tr>
+        <tr>
+          <td class="cve-id"><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-32924" target="_blank" rel="noopener">CVE-2026-32924</a></td>
+          <td class="badge-crit">9.8 CRITICAL</td>
+          <td>Before 2026.3.12 contains an authorization bypass vulnerability where Feishu reaction e...</td>
+          <td class="badge-ok">✓ Mitigated</td>
+        </tr>
+        <tr>
+          <td class="cve-id"><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-32973" target="_blank" rel="noopener">CVE-2026-32973</a></td>
+          <td class="badge-crit">9.8 CRITICAL</td>
+          <td>Before 2026.3.11 contains an exec allowlist bypass vulnerability where matchesExecAllow...</td>
+          <td class="badge-ok">✓ Mitigated</td>
+        </tr>
+        <tr>
+          <td class="cve-id"><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-32975" target="_blank" rel="noopener">CVE-2026-32975</a></td>
+          <td class="badge-crit">9.8 CRITICAL</td>
+          <td>Before 2026.3.12 contains a weak authorization vulnerability in Zalouser allowlist mode...</td>
+          <td class="badge-ok">✓ Mitigated</td>
+        </tr>
+        <tr>
+          <td class="cve-id"><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-32987" target="_blank" rel="noopener">CVE-2026-32987</a></td>
+          <td class="badge-crit">9.8 CRITICAL</td>
+          <td>Before 2026.3.13 allows bootstrap setup codes to be replayed during device pairing veri...</td>
+          <td class="badge-ok">✓ Mitigated</td>
+        </tr>
+        <tr>
+          <td class="cve-id"><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-28446" target="_blank" rel="noopener">CVE-2026-28446</a></td>
+          <td class="badge-crit">9.4 CRITICAL</td>
+          <td>Versions prior to 2026.2.1 with the voice-call extension installed and enabled contain ...</td>
+          <td class="badge-ok">✓ Mitigated</td>
+        </tr>
+        <tr>
+          <td class="cve-id"><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-32916" target="_blank" rel="noopener">CVE-2026-32916</a></td>
+          <td class="badge-crit">9.4 CRITICAL</td>
+          <td>Versions 2026.3.7 before 2026.3.11 contain an authorization bypass vulnerability where ...</td>
+          <td class="badge-ok">✓ Mitigated</td>
+        </tr>
+        <tr>
+          <td class="cve-id"><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-32913" target="_blank" rel="noopener">CVE-2026-32913</a></td>
+          <td class="badge-crit">9.3 CRITICAL</td>
+          <td>Before 2026.3.7 contains an improper header validation vulnerability in fetchWithSsrFGu...</td>
+          <td class="badge-ok">✓ Mitigated</td>
+        </tr>
+        <tr>
+          <td class="cve-id"><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-24763" target="_blank" rel="noopener">CVE-2026-24763</a></td>
           <td class="badge-high">8.8 HIGH</td>
-          <td>Privilege Escalation via operator.write</td>
+          <td>(formerly  Clawdbot) is a personal AI assistant you run on your own devices</td>
           <td class="badge-ok">✓ Mitigated</td>
         </tr>
         <tr>
-          <td class="cve-id">CVE-2026-22171</td>
+          <td class="cve-id"><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-25253" target="_blank" rel="noopener">CVE-2026-25253</a></td>
+          <td class="badge-high">8.8 HIGH</td>
+          <td>(aka clawdbot or Moltbot) before 2026.1.29 obtains a gatewayUrl value from a query stri...</td>
+          <td class="badge-ok">✓ Mitigated</td>
+        </tr>
+        <tr>
+          <td class="cve-id"><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-26323" target="_blank" rel="noopener">CVE-2026-26323</a></td>
+          <td class="badge-high">8.8 HIGH</td>
+          <td>CVE-2026-26323</td>
+          <td class="badge-ok">✓ Mitigated</td>
+        </tr>
+        <tr>
+          <td class="cve-id"><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-29610" target="_blank" rel="noopener">CVE-2026-29610</a></td>
+          <td class="badge-high">8.8 HIGH</td>
+          <td>Versions prior to 2026.2.14 contain a command hijacking vulnerability that allows attac...</td>
+          <td class="badge-ok">✓ Mitigated</td>
+        </tr>
+        <tr>
+          <td class="cve-id"><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-32013" target="_blank" rel="noopener">CVE-2026-32013</a></td>
+          <td class="badge-high">8.8 HIGH</td>
+          <td>Versions prior to 2026.2.25 contain a symlink traversal vulnerability in the agents.fil...</td>
+          <td class="badge-ok">✓ Mitigated</td>
+        </tr>
+        <tr>
+          <td class="cve-id"><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-32042" target="_blank" rel="noopener">CVE-2026-32042</a></td>
+          <td class="badge-high">8.8 HIGH</td>
+          <td>Versions 2026.2.22 prior to 2026.2.25 contain a privilege escalation vulnerability allo...</td>
+          <td class="badge-ok">✓ Mitigated</td>
+        </tr>
+        <tr>
+          <td class="cve-id"><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-32051" target="_blank" rel="noopener">CVE-2026-32051</a></td>
+          <td class="badge-high">8.8 HIGH</td>
+          <td>Privilege Escalation (operator.write reaches owner-only surfaces)</td>
+          <td class="badge-ok">✓ Mitigated</td>
+        </tr>
+        <tr>
+          <td class="cve-id"><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-32059" target="_blank" rel="noopener">CVE-2026-32059</a></td>
+          <td class="badge-high">8.8 HIGH</td>
+          <td>Version 2026.2.22-2 prior to 2026.2.23 tools.exec.safeBins validation for sort command ...</td>
+          <td class="badge-ok">✓ Mitigated</td>
+        </tr>
+        <tr>
+          <td class="cve-id"><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-32060" target="_blank" rel="noopener">CVE-2026-32060</a></td>
+          <td class="badge-high">8.8 HIGH</td>
+          <td>Versions prior to 2026.2.14 contain a path traversal vulnerability in apply_patch that ...</td>
+          <td class="badge-ok">✓ Mitigated</td>
+        </tr>
+        <tr>
+          <td class="cve-id"><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-32914" target="_blank" rel="noopener">CVE-2026-32914</a></td>
+          <td class="badge-high">8.8 HIGH</td>
+          <td>Before 2026.3.12 contains an insufficient access control vulnerability in the /config a...</td>
+          <td class="badge-ok">✓ Mitigated</td>
+        </tr>
+        <tr>
+          <td class="cve-id"><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-32915" target="_blank" rel="noopener">CVE-2026-32915</a></td>
+          <td class="badge-high">8.8 HIGH</td>
+          <td>Before 2026.3.11 contains a sandbox boundary bypass vulnerability allowing leaf subagen...</td>
+          <td class="badge-ok">✓ Mitigated</td>
+        </tr>
+        <tr>
+          <td class="cve-id"><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-33573" target="_blank" rel="noopener">CVE-2026-33573</a></td>
+          <td class="badge-high">8.8 HIGH</td>
+          <td>Before 2026.3.11 contains an authorization bypass vulnerability in the gateway agent RP...</td>
+          <td class="badge-ok">✓ Mitigated</td>
+        </tr>
+        <tr>
+          <td class="cve-id"><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-35638" target="_blank" rel="noopener">CVE-2026-35638</a></td>
+          <td class="badge-high">8.8 HIGH</td>
+          <td>Before 2026.3.22 contains a privilege escalation vulnerability in the Control UI that a...</td>
+          <td class="badge-ok">✓ Mitigated</td>
+        </tr>
+        <tr>
+          <td class="cve-id"><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-35639" target="_blank" rel="noopener">CVE-2026-35639</a></td>
+          <td class="badge-high">8.8 HIGH</td>
+          <td>Before 2026.3.22 contains a privilege escalation vulnerability in the device.pair.appro...</td>
+          <td class="badge-ok">✓ Mitigated</td>
+        </tr>
+        <tr>
+          <td class="cve-id"><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-35643" target="_blank" rel="noopener">CVE-2026-35643</a></td>
+          <td class="badge-high">8.8 HIGH</td>
+          <td>Before 2026.3.22 contains an unvalidated WebView JavascriptInterface vulnerability allo...</td>
+          <td class="badge-ok">✓ Mitigated</td>
+        </tr>
+        <tr>
+          <td class="cve-id"><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-35663" target="_blank" rel="noopener">CVE-2026-35663</a></td>
+          <td class="badge-high">8.8 HIGH</td>
+          <td>Before 2026.3.25 contains a privilege escalation vulnerability allowing non-admin opera...</td>
+          <td class="badge-ok">✓ Mitigated</td>
+        </tr>
+        <tr>
+          <td class="cve-id"><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-35666" target="_blank" rel="noopener">CVE-2026-35666</a></td>
+          <td class="badge-high">8.8 HIGH</td>
+          <td>Before 2026.3.22 contains an allowlist bypass vulnerability in system.run approvals tha...</td>
+          <td class="badge-ok">✓ Mitigated</td>
+        </tr>
+        <tr>
+          <td class="cve-id"><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-31998" target="_blank" rel="noopener">CVE-2026-31998</a></td>
+          <td class="badge-high">8.6 HIGH</td>
+          <td>Versions 2026.2.22 and 2026.2.23 contain an authorization bypass vulnerability in the s...</td>
+          <td class="badge-ok">✓ Mitigated</td>
+        </tr>
+        <tr>
+          <td class="cve-id"><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-32974" target="_blank" rel="noopener">CVE-2026-32974</a></td>
+          <td class="badge-high">8.6 HIGH</td>
+          <td>Before 2026.3.12 contains an authentication bypass vulnerability in Feishu webhook mode...</td>
+          <td class="badge-ok">✓ Mitigated</td>
+        </tr>
+        <tr>
+          <td class="cve-id"><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-35625" target="_blank" rel="noopener">CVE-2026-35625</a></td>
+          <td class="badge-high">8.5 HIGH</td>
+          <td>Privilege Escalation via Silent Local Auth Reconnect</td>
+          <td class="badge-ok">✓ Mitigated</td>
+        </tr>
+        <tr>
+          <td class="cve-id"><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-25593" target="_blank" rel="noopener">CVE-2026-25593</a></td>
+          <td class="badge-high">8.4 HIGH</td>
+          <td>CVE-2026-25593</td>
+          <td class="badge-ok">✓ Mitigated</td>
+        </tr>
+        <tr>
+          <td class="cve-id"><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-28463" target="_blank" rel="noopener">CVE-2026-28463</a></td>
+          <td class="badge-high">8.4 HIGH</td>
+          <td>Versions prior to 2026.2.14 contain an arbitrary file read vulnerability in the exec-ap...</td>
+          <td class="badge-ok">✓ Mitigated</td>
+        </tr>
+        <tr>
+          <td class="cve-id"><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-28485" target="_blank" rel="noopener">CVE-2026-28485</a></td>
+          <td class="badge-high">8.4 HIGH</td>
+          <td>Versions 2026.1.5 prior to 2026.2.12 fail to enforce mandatory authentication on the /a...</td>
+          <td class="badge-ok">✓ Mitigated</td>
+        </tr>
+        <tr>
+          <td class="cve-id"><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-32918" target="_blank" rel="noopener">CVE-2026-32918</a></td>
+          <td class="badge-high">8.4 HIGH</td>
+          <td>Before 2026.3.11 contains a session sandbox escape vulnerability in the session_status ...</td>
+          <td class="badge-ok">✓ Mitigated</td>
+        </tr>
+        <tr>
+          <td class="cve-id"><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-32920" target="_blank" rel="noopener">CVE-2026-32920</a></td>
+          <td class="badge-high">8.4 HIGH</td>
+          <td>Before 2026.3.12 automatically discovers and loads plugins from .OpenClaw/extensions/ w...</td>
+          <td class="badge-ok">✓ Mitigated</td>
+        </tr>
+        <tr>
+          <td class="cve-id"><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-33572" target="_blank" rel="noopener">CVE-2026-33572</a></td>
+          <td class="badge-high">8.4 HIGH</td>
+          <td>Before 2026.2.17 creates session transcript JSONL files with overly broad default permi...</td>
+          <td class="badge-ok">✓ Mitigated</td>
+        </tr>
+        <tr>
+          <td class="cve-id"><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-28451" target="_blank" rel="noopener">CVE-2026-28451</a></td>
+          <td class="badge-high">8.3 HIGH</td>
+          <td>Versions prior to 2026.2.14 contain server-side request forgery vulnerabilities in the ...</td>
+          <td class="badge-ok">✓ Mitigated</td>
+        </tr>
+        <tr>
+          <td class="cve-id"><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-28476" target="_blank" rel="noopener">CVE-2026-28476</a></td>
+          <td class="badge-high">8.3 HIGH</td>
+          <td>Versions prior to 2026.2.14 contain a server-side request forgery vulnerability in the ...</td>
+          <td class="badge-ok">✓ Mitigated</td>
+        </tr>
+        <tr>
+          <td class="cve-id"><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-34504" target="_blank" rel="noopener">CVE-2026-34504</a></td>
+          <td class="badge-high">8.3 HIGH</td>
+          <td>Before 2026.3.28 contains a server-side request forgery vulnerability in the fal provid...</td>
+          <td class="badge-ok">✓ Mitigated</td>
+        </tr>
+        <tr>
+          <td class="cve-id"><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-22171" target="_blank" rel="noopener">CVE-2026-22171</a></td>
           <td class="badge-high">8.2 HIGH</td>
-          <td>Path Traversal in Feishu Media</td>
+          <td>Path Traversal in Feishu Media Download</td>
           <td class="badge-ok">✓ Mitigated</td>
         </tr>
         <tr>
-          <td class="cve-id">CVE-2026-32025</td>
+          <td class="cve-id"><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-28447" target="_blank" rel="noopener">CVE-2026-28447</a></td>
+          <td class="badge-high">8.1 HIGH</td>
+          <td>Versions 2026.1.29-beta.1 prior to 2026.2.1 contain a path traversal vulnerability in p...</td>
+          <td class="badge-ok">✓ Mitigated</td>
+        </tr>
+        <tr>
+          <td class="cve-id"><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-28458" target="_blank" rel="noopener">CVE-2026-28458</a></td>
+          <td class="badge-high">8.1 HIGH</td>
+          <td>Version 2026.1.20 prior to 2026.2.1 contains a vulnerability in the Browser Relay (exte...</td>
+          <td class="badge-ok">✓ Mitigated</td>
+        </tr>
+        <tr>
+          <td class="cve-id"><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-28472" target="_blank" rel="noopener">CVE-2026-28472</a></td>
+          <td class="badge-high">8.1 HIGH</td>
+          <td>Versions prior to 2026.2.2 contain a vulnerability in the gateway WebSocket connect han...</td>
+          <td class="badge-ok">✓ Mitigated</td>
+        </tr>
+        <tr>
+          <td class="cve-id"><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-28473" target="_blank" rel="noopener">CVE-2026-28473</a></td>
+          <td class="badge-high">8.1 HIGH</td>
+          <td>Versions prior to 2026.2.2 contain an authorization bypass vulnerability where clients ...</td>
+          <td class="badge-ok">✓ Mitigated</td>
+        </tr>
+        <tr>
+          <td class="cve-id"><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-32034" target="_blank" rel="noopener">CVE-2026-32034</a></td>
+          <td class="badge-high">8.1 HIGH</td>
+          <td>Versions prior to 2026.2.21 contain an authentication bypass vulnerability in the Contr...</td>
+          <td class="badge-ok">✓ Mitigated</td>
+        </tr>
+        <tr>
+          <td class="cve-id"><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-32302" target="_blank" rel="noopener">CVE-2026-32302</a></td>
+          <td class="badge-high">8.1 HIGH</td>
+          <td>CVE-2026-32302</td>
+          <td class="badge-ok">✓ Mitigated</td>
+        </tr>
+        <tr>
+          <td class="cve-id"><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-33577" target="_blank" rel="noopener">CVE-2026-33577</a></td>
+          <td class="badge-high">8.1 HIGH</td>
+          <td>Before 2026.3.28 contains an insufficient scope validation vulnerability in the node pa...</td>
+          <td class="badge-ok">✓ Mitigated</td>
+        </tr>
+        <tr>
+          <td class="cve-id"><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-34503" target="_blank" rel="noopener">CVE-2026-34503</a></td>
+          <td class="badge-high">8.1 HIGH</td>
+          <td>Before 2026.3.28 fails to disconnect active WebSocket sessions when devices are removed...</td>
+          <td class="badge-ok">✓ Mitigated</td>
+        </tr>
+        <tr>
+          <td class="cve-id"><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-35645" target="_blank" rel="noopener">CVE-2026-35645</a></td>
+          <td class="badge-high">8.1 HIGH</td>
+          <td>Before 2026.3.25 contains a privilege escalation vulnerability in the gateway plugin su...</td>
+          <td class="badge-ok">✓ Mitigated</td>
+        </tr>
+        <tr>
+          <td class="cve-id"><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-35653" target="_blank" rel="noopener">CVE-2026-35653</a></td>
+          <td class="badge-high">8.1 HIGH</td>
+          <td>Before 2026.3.24 contains an incorrect authorization vulnerability in the POST /reset-p...</td>
+          <td class="badge-ok">✓ Mitigated</td>
+        </tr>
+        <tr>
+          <td class="cve-id"><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-35660" target="_blank" rel="noopener">CVE-2026-35660</a></td>
+          <td class="badge-high">8.1 HIGH</td>
+          <td>Insufficient Access Control in Gateway /reset Endpoint</td>
+          <td class="badge-ok">✓ Mitigated</td>
+        </tr>
+        <tr>
+          <td class="cve-id"><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-32014" target="_blank" rel="noopener">CVE-2026-32014</a></td>
+          <td class="badge-high">8.0 HIGH</td>
+          <td>Versions prior to 2026.2.26 contain a metadata spoofing vulnerability where reconnect p...</td>
+          <td class="badge-ok">✓ Mitigated</td>
+        </tr>
+        <tr>
+          <td class="cve-id"><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-32978" target="_blank" rel="noopener">CVE-2026-32978</a></td>
+          <td class="badge-high">8.0 HIGH</td>
+          <td>Before 2026.3.11 contains an approval integrity vulnerability where system.run approval...</td>
+          <td class="badge-ok">✓ Mitigated</td>
+        </tr>
+        <tr>
+          <td class="cve-id"><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-35669" target="_blank" rel="noopener">CVE-2026-35669</a></td>
+          <td class="badge-high">8.0 HIGH</td>
+          <td>Privilege Escalation via Plugin HTTP Auth Scope Minting</td>
+          <td class="badge-ok">✓ Mitigated</td>
+        </tr>
+        <tr>
+          <td class="cve-id"><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-27001" target="_blank" rel="noopener">CVE-2026-27001</a></td>
+          <td class="badge-high">7.8 HIGH</td>
+          <td>CVE-2026-27001</td>
+          <td class="badge-ok">✓ Mitigated</td>
+        </tr>
+        <tr>
+          <td class="cve-id"><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-32015" target="_blank" rel="noopener">CVE-2026-32015</a></td>
+          <td class="badge-high">7.8 HIGH</td>
+          <td>Versions 2026.1.21 prior to 2026.2.19 contain a path hijacking vulnerability in tools.e...</td>
+          <td class="badge-ok">✓ Mitigated</td>
+        </tr>
+        <tr>
+          <td class="cve-id"><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-32016" target="_blank" rel="noopener">CVE-2026-32016</a></td>
+          <td class="badge-high">7.8 HIGH</td>
+          <td>Versions prior to 2026.2.22 on macOS contain a path validation bypass vulnerability in ...</td>
+          <td class="badge-ok">✓ Mitigated</td>
+        </tr>
+        <tr>
+          <td class="cve-id"><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-35641" target="_blank" rel="noopener">CVE-2026-35641</a></td>
+          <td class="badge-high">7.8 HIGH</td>
+          <td>Before 2026.3.24 contains an arbitrary code execution vulnerability in local plugin and...</td>
+          <td class="badge-ok">✓ Mitigated</td>
+        </tr>
+        <tr>
+          <td class="cve-id"><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-25157" target="_blank" rel="noopener">CVE-2026-25157</a></td>
+          <td class="badge-high">7.7 HIGH</td>
+          <td>CVE-2026-25157</td>
+          <td class="badge-ok">✓ Mitigated</td>
+        </tr>
+        <tr>
+          <td class="cve-id"><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-28393" target="_blank" rel="noopener">CVE-2026-28393</a></td>
+          <td class="badge-high">7.7 HIGH</td>
+          <td>Versions 2.0.0-beta3 prior to 2026.2.14 contain a path traversal vulnerability in hook ...</td>
+          <td class="badge-ok">✓ Mitigated</td>
+        </tr>
+        <tr>
+          <td class="cve-id"><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-28468" target="_blank" rel="noopener">CVE-2026-28468</a></td>
+          <td class="badge-high">7.7 HIGH</td>
+          <td>Versions 2026.1.29-beta.1 prior to 2026.2.14 contain a vulnerability in the sandbox bro...</td>
+          <td class="badge-ok">✓ Mitigated</td>
+        </tr>
+        <tr>
+          <td class="cve-id"><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-32064" target="_blank" rel="noopener">CVE-2026-32064</a></td>
+          <td class="badge-high">7.7 HIGH</td>
+          <td>Versions prior to 2026.2.21 sandbox browser entrypoint launches x11vnc without authenti...</td>
+          <td class="badge-ok">✓ Mitigated</td>
+        </tr>
+        <tr>
+          <td class="cve-id"><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-35668" target="_blank" rel="noopener">CVE-2026-35668</a></td>
+          <td class="badge-high">7.7 HIGH</td>
+          <td>Path Traversal in Sandbox Enforcement (unnormalized mediaUrl)</td>
+          <td class="badge-ok">✓ Mitigated</td>
+        </tr>
+        <tr>
+          <td class="cve-id"><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-22181" target="_blank" rel="noopener">CVE-2026-22181</a></td>
+          <td class="badge-high">7.6 HIGH</td>
+          <td>Versions prior to 2026.3.2 contain a DNS pinning bypass vulnerability in strict URL fet...</td>
+          <td class="badge-ok">✓ Mitigated</td>
+        </tr>
+        <tr>
+          <td class="cve-id"><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-26322" target="_blank" rel="noopener">CVE-2026-26322</a></td>
+          <td class="badge-high">7.6 HIGH</td>
+          <td>CVE-2026-26322</td>
+          <td class="badge-ok">✓ Mitigated</td>
+        </tr>
+        <tr>
+          <td class="cve-id"><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-27487" target="_blank" rel="noopener">CVE-2026-27487</a></td>
+          <td class="badge-high">7.6 HIGH</td>
+          <td>CVE-2026-27487</td>
+          <td class="badge-ok">✓ Mitigated</td>
+        </tr>
+        <tr>
+          <td class="cve-id"><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-32055" target="_blank" rel="noopener">CVE-2026-32055</a></td>
+          <td class="badge-high">7.6 HIGH</td>
+          <td>Versions prior to 2026.2.26 contain a path traversal vulnerability in workspace boundar...</td>
+          <td class="badge-ok">✓ Mitigated</td>
+        </tr>
+        <tr>
+          <td class="cve-id"><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-34426" target="_blank" rel="noopener">CVE-2026-34426</a></td>
+          <td class="badge-high">7.6 HIGH</td>
+          <td>Versions prior to commit b57b680 contain an approval bypass vulnerability due to incons...</td>
+          <td class="badge-ok">✓ Mitigated</td>
+        </tr>
+        <tr>
+          <td class="cve-id"><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-25474" target="_blank" rel="noopener">CVE-2026-25474</a></td>
           <td class="badge-high">7.5 HIGH</td>
-          <td>WebSocket Brute-Force (ClawJacked)</td>
+          <td>CVE-2026-25474</td>
           <td class="badge-ok">✓ Mitigated</td>
         </tr>
         <tr>
-          <td class="cve-id">CVE-2026-32048</td>
+          <td class="cve-id"><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-26316" target="_blank" rel="noopener">CVE-2026-26316</a></td>
+          <td class="badge-high">7.5 HIGH</td>
+          <td>CVE-2026-26316</td>
+          <td class="badge-ok">✓ Mitigated</td>
+        </tr>
+        <tr>
+          <td class="cve-id"><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-26319" target="_blank" rel="noopener">CVE-2026-26319</a></td>
+          <td class="badge-high">7.5 HIGH</td>
+          <td>CVE-2026-26319</td>
+          <td class="badge-ok">✓ Mitigated</td>
+        </tr>
+        <tr>
+          <td class="cve-id"><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-26321" target="_blank" rel="noopener">CVE-2026-26321</a></td>
+          <td class="badge-high">7.5 HIGH</td>
+          <td>CVE-2026-26321</td>
+          <td class="badge-ok">✓ Mitigated</td>
+        </tr>
+        <tr>
+          <td class="cve-id"><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-26324" target="_blank" rel="noopener">CVE-2026-26324</a></td>
+          <td class="badge-high">7.5 HIGH</td>
+          <td>CVE-2026-26324</td>
+          <td class="badge-ok">✓ Mitigated</td>
+        </tr>
+        <tr>
+          <td class="cve-id"><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-28392" target="_blank" rel="noopener">CVE-2026-28392</a></td>
+          <td class="badge-high">7.5 HIGH</td>
+          <td>Versions prior to 2026.2.14 contain a privilege escalation vulnerability in the Slack s...</td>
+          <td class="badge-ok">✓ Mitigated</td>
+        </tr>
+        <tr>
+          <td class="cve-id"><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-28453" target="_blank" rel="noopener">CVE-2026-28453</a></td>
+          <td class="badge-high">7.5 HIGH</td>
+          <td>Versions prior to 2026.2.14 fail to validate TAR archive entry paths during extraction,...</td>
+          <td class="badge-ok">✓ Mitigated</td>
+        </tr>
+        <tr>
+          <td class="cve-id"><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-28454" target="_blank" rel="noopener">CVE-2026-28454</a></td>
+          <td class="badge-high">7.5 HIGH</td>
+          <td>Versions prior to 2026.2.2 fail to validate webhook secrets in Telegram webhook mode (m...</td>
+          <td class="badge-ok">✓ Mitigated</td>
+        </tr>
+        <tr>
+          <td class="cve-id"><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-28461" target="_blank" rel="noopener">CVE-2026-28461</a></td>
+          <td class="badge-high">7.5 HIGH</td>
+          <td>Versions prior to 2026.3.1 contain an unbounded memory growth vulnerability in the Zalo...</td>
+          <td class="badge-ok">✓ Mitigated</td>
+        </tr>
+        <tr>
+          <td class="cve-id"><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-28462" target="_blank" rel="noopener">CVE-2026-28462</a></td>
+          <td class="badge-high">7.5 HIGH</td>
+          <td>Versions prior to 2026.2.13 contain a vulnerability in the browser control API in which...</td>
+          <td class="badge-ok">✓ Mitigated</td>
+        </tr>
+        <tr>
+          <td class="cve-id"><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-28469" target="_blank" rel="noopener">CVE-2026-28469</a></td>
+          <td class="badge-high">7.5 HIGH</td>
+          <td>Versions prior to 2026.2.14 contain a webhook routing vulnerability in the Google Chat ...</td>
+          <td class="badge-ok">✓ Mitigated</td>
+        </tr>
+        <tr>
+          <td class="cve-id"><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-28478" target="_blank" rel="noopener">CVE-2026-28478</a></td>
+          <td class="badge-high">7.5 HIGH</td>
+          <td>Versions prior to 2026.2.13 contain a denial of service vulnerability in webhook handle...</td>
+          <td class="badge-ok">✓ Mitigated</td>
+        </tr>
+        <tr>
+          <td class="cve-id"><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-28479" target="_blank" rel="noopener">CVE-2026-28479</a></td>
+          <td class="badge-high">7.5 HIGH</td>
+          <td>Versions prior to 2026.2.15 use SHA-1 to hash sandbox identifier cache keys for Docker ...</td>
+          <td class="badge-ok">✓ Mitigated</td>
+        </tr>
+        <tr>
+          <td class="cve-id"><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-29609" target="_blank" rel="noopener">CVE-2026-29609</a></td>
+          <td class="badge-high">7.5 HIGH</td>
+          <td>Versions prior to 2026.2.14 contain a denial of service vulnerability in the fetchWithG...</td>
+          <td class="badge-ok">✓ Mitigated</td>
+        </tr>
+        <tr>
+          <td class="cve-id"><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-29611" target="_blank" rel="noopener">CVE-2026-29611</a></td>
+          <td class="badge-high">7.5 HIGH</td>
+          <td>Versions prior to 2026.2.14 contain a local file inclusion vulnerability in BlueBubbles...</td>
+          <td class="badge-ok">✓ Mitigated</td>
+        </tr>
+        <tr>
+          <td class="cve-id"><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-32011" target="_blank" rel="noopener">CVE-2026-32011</a></td>
+          <td class="badge-high">7.5 HIGH</td>
+          <td>Versions prior to 2026.3.2 contain a denial of service vulnerability in webhook handler...</td>
+          <td class="badge-ok">✓ Mitigated</td>
+        </tr>
+        <tr>
+          <td class="cve-id"><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-32025" target="_blank" rel="noopener">CVE-2026-32025</a></td>
+          <td class="badge-high">7.5 HIGH</td>
+          <td>WebSocket Brute-Force / ClawJacked (No Rate Limiting on Localhost)</td>
+          <td class="badge-ok">✓ Mitigated</td>
+        </tr>
+        <tr>
+          <td class="cve-id"><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-32030" target="_blank" rel="noopener">CVE-2026-32030</a></td>
+          <td class="badge-high">7.5 HIGH</td>
+          <td>Versions prior to 2026.2.19 contain a path traversal vulnerability in the stageSandboxM...</td>
+          <td class="badge-ok">✓ Mitigated</td>
+        </tr>
+        <tr>
+          <td class="cve-id"><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-32048" target="_blank" rel="noopener">CVE-2026-32048</a></td>
           <td class="badge-high">7.5 HIGH</td>
           <td>Sandbox Escape via sessions_spawn</td>
           <td class="badge-ok">✓ Mitigated</td>
         </tr>
         <tr>
-          <td class="cve-id">CVE-2026-32049</td>
+          <td class="cve-id"><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-32049" target="_blank" rel="noopener">CVE-2026-32049</a></td>
           <td class="badge-high">7.5 HIGH</td>
           <td>Oversized Media Payload DoS</td>
           <td class="badge-ok">✓ Mitigated</td>
         </tr>
         <tr>
-          <td class="cve-id">CVE-2026-32032</td>
+          <td class="cve-id"><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-32056" target="_blank" rel="noopener">CVE-2026-32056</a></td>
+          <td class="badge-high">7.5 HIGH</td>
+          <td>Versions prior to 2026.2.22 fail to sanitize shell startup environment variables HOME a...</td>
+          <td class="badge-ok">✓ Mitigated</td>
+        </tr>
+        <tr>
+          <td class="cve-id"><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-32062" target="_blank" rel="noopener">CVE-2026-32062</a></td>
+          <td class="badge-high">7.5 HIGH</td>
+          <td>Versions2026.2.21-2 prior to 2026.2.22 and @openclaw/voice-call versions 2026.2.21 prio...</td>
+          <td class="badge-ok">✓ Mitigated</td>
+        </tr>
+        <tr>
+          <td class="cve-id"><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-32846" target="_blank" rel="noopener">CVE-2026-32846</a></td>
+          <td class="badge-high">7.5 HIGH</td>
+          <td>Through 2026.3.23 (fixed in commit 4797bbc) contains a path traversal vulnerability in ...</td>
+          <td class="badge-ok">✓ Mitigated</td>
+        </tr>
+        <tr>
+          <td class="cve-id"><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-32980" target="_blank" rel="noopener">CVE-2026-32980</a></td>
+          <td class="badge-high">7.5 HIGH</td>
+          <td>Before 2026.3.13 reads and buffers Telegram webhook request bodies before validating th...</td>
+          <td class="badge-ok">✓ Mitigated</td>
+        </tr>
+        <tr>
+          <td class="cve-id"><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-32982" target="_blank" rel="noopener">CVE-2026-32982</a></td>
+          <td class="badge-high">7.5 HIGH</td>
+          <td>Before 2026.3.13 contains an information disclosure vulnerability in the fetchRemoteMed...</td>
+          <td class="badge-ok">✓ Mitigated</td>
+        </tr>
+        <tr>
+          <td class="cve-id"><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-32988" target="_blank" rel="noopener">CVE-2026-32988</a></td>
+          <td class="badge-high">7.5 HIGH</td>
+          <td>Before 2026.3.11 contains a sandbox boundary bypass vulnerability in fs-bridge staged w...</td>
+          <td class="badge-ok">✓ Mitigated</td>
+        </tr>
+        <tr>
+          <td class="cve-id"><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-33575" target="_blank" rel="noopener">CVE-2026-33575</a></td>
+          <td class="badge-high">7.5 HIGH</td>
+          <td>Before 2026.3.12 embeds long-lived shared gateway credentials directly in pairing setup...</td>
+          <td class="badge-ok">✓ Mitigated</td>
+        </tr>
+        <tr>
+          <td class="cve-id"><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-35629" target="_blank" rel="noopener">CVE-2026-35629</a></td>
+          <td class="badge-high">7.5 HIGH</td>
+          <td>Server-Side Request Forgery (SSRF) in Channel Extension fetch()</td>
+          <td class="badge-ok">✓ Mitigated</td>
+        </tr>
+        <tr>
+          <td class="cve-id"><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-31989" target="_blank" rel="noopener">CVE-2026-31989</a></td>
+          <td class="badge-high">7.4 HIGH</td>
+          <td>Versions prior to 2026.3.1 contain a server-side request forgery vulnerability in web_s...</td>
+          <td class="badge-ok">✓ Mitigated</td>
+        </tr>
+        <tr>
+          <td class="cve-id"><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-32019" target="_blank" rel="noopener">CVE-2026-32019</a></td>
+          <td class="badge-high">7.4 HIGH</td>
+          <td>Versions prior to 2026.2.22 contain incomplete IPv4 special-use range validation in the...</td>
+          <td class="badge-ok">✓ Mitigated</td>
+        </tr>
+        <tr>
+          <td class="cve-id"><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-3690" target="_blank" rel="noopener">CVE-2026-3690</a></td>
+          <td class="badge-high">7.4 HIGH</td>
+          <td>Canvas Authentication Bypass Vulnerability</td>
+          <td class="badge-ok">✓ Mitigated</td>
+        </tr>
+        <tr>
+          <td class="cve-id"><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-27488" target="_blank" rel="noopener">CVE-2026-27488</a></td>
+          <td class="badge-high">7.3 HIGH</td>
+          <td>CVE-2026-27488</td>
+          <td class="badge-ok">✓ Mitigated</td>
+        </tr>
+        <tr>
+          <td class="cve-id"><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-28448" target="_blank" rel="noopener">CVE-2026-28448</a></td>
+          <td class="badge-high">7.3 HIGH</td>
+          <td>Versions 2026.1.29 prior to 2026.2.1 contain a vulnerability in the Twitch plugin (must...</td>
+          <td class="badge-ok">✓ Mitigated</td>
+        </tr>
+        <tr>
+          <td class="cve-id"><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-32979" target="_blank" rel="noopener">CVE-2026-32979</a></td>
+          <td class="badge-high">7.3 HIGH</td>
+          <td>Before 2026.3.11 contains an approval integrity vulnerability allowing attackers to exe...</td>
+          <td class="badge-ok">✓ Mitigated</td>
+        </tr>
+        <tr>
+          <td class="cve-id"><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-34512" target="_blank" rel="noopener">CVE-2026-34512</a></td>
+          <td class="badge-high">7.3 HIGH</td>
+          <td>Improper Access Control in Session Kill Endpoint</td>
+          <td class="badge-ok">✓ Mitigated</td>
+        </tr>
+        <tr>
+          <td class="cve-id"><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-35637" target="_blank" rel="noopener">CVE-2026-35637</a></td>
+          <td class="badge-high">7.3 HIGH</td>
+          <td>Before 2026.3.22 performs cite expansion before completing channel and DM authorization...</td>
+          <td class="badge-ok">✓ Mitigated</td>
+        </tr>
+        <tr>
+          <td class="cve-id"><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-22179" target="_blank" rel="noopener">CVE-2026-22179</a></td>
+          <td class="badge-high">7.2 HIGH</td>
+          <td>Versions prior to 2026.2.22 in macOS node-host system.run contain an allowlist bypass v...</td>
+          <td class="badge-ok">✓ Mitigated</td>
+        </tr>
+        <tr>
+          <td class="cve-id"><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-26325" target="_blank" rel="noopener">CVE-2026-26325</a></td>
+          <td class="badge-high">7.2 HIGH</td>
+          <td>CVE-2026-26325</td>
+          <td class="badge-ok">✓ Mitigated</td>
+        </tr>
+        <tr>
+          <td class="cve-id"><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-28456" target="_blank" rel="noopener">CVE-2026-28456</a></td>
+          <td class="badge-high">7.2 HIGH</td>
+          <td>Versions 2026.1.5 prior to 2026.2.14 contain a vulnerability in the Gateway in which it...</td>
+          <td class="badge-ok">✓ Mitigated</td>
+        </tr>
+        <tr>
+          <td class="cve-id"><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-26317" target="_blank" rel="noopener">CVE-2026-26317</a></td>
+          <td class="badge-high">7.1 HIGH</td>
+          <td>CVE-2026-26317</td>
+          <td class="badge-ok">✓ Mitigated</td>
+        </tr>
+        <tr>
+          <td class="cve-id"><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-27566" target="_blank" rel="noopener">CVE-2026-27566</a></td>
+          <td class="badge-high">7.1 HIGH</td>
+          <td>Versions prior to 2026.2.22 contain an allowlist bypass vulnerability in system.run exe...</td>
+          <td class="badge-ok">✓ Mitigated</td>
+        </tr>
+        <tr>
+          <td class="cve-id"><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-28459" target="_blank" rel="noopener">CVE-2026-28459</a></td>
+          <td class="badge-high">7.1 HIGH</td>
+          <td>Versions prior to 2026.2.12 fail to validate the sessionFile path parameter, allowing a...</td>
+          <td class="badge-ok">✓ Mitigated</td>
+        </tr>
+        <tr>
+          <td class="cve-id"><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-28477" target="_blank" rel="noopener">CVE-2026-28477</a></td>
+          <td class="badge-high">7.1 HIGH</td>
+          <td>Versions prior to 2026.2.14 contain an oauth state validation bypass vulnerability in t...</td>
+          <td class="badge-ok">✓ Mitigated</td>
+        </tr>
+        <tr>
+          <td class="cve-id"><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-28482" target="_blank" rel="noopener">CVE-2026-28482</a></td>
+          <td class="badge-high">7.1 HIGH</td>
+          <td>Versions prior to 2026.2.12 construct transcript file paths using unsanitized sessionId...</td>
+          <td class="badge-ok">✓ Mitigated</td>
+        </tr>
+        <tr>
+          <td class="cve-id"><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-31992" target="_blank" rel="noopener">CVE-2026-31992</a></td>
+          <td class="badge-high">7.1 HIGH</td>
+          <td>Versions prior to 2026.2.23 contain an allowlist bypass vulnerability in system.run gua...</td>
+          <td class="badge-ok">✓ Mitigated</td>
+        </tr>
+        <tr>
+          <td class="cve-id"><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-31994" target="_blank" rel="noopener">CVE-2026-31994</a></td>
+          <td class="badge-high">7.1 HIGH</td>
+          <td>Versions prior to 2026.2.19 contain a local command injection vulnerability in Windows ...</td>
+          <td class="badge-ok">✓ Mitigated</td>
+        </tr>
+        <tr>
+          <td class="cve-id"><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-32000" target="_blank" rel="noopener">CVE-2026-32000</a></td>
+          <td class="badge-high">7.1 HIGH</td>
+          <td>Versions prior to 2026.2.19 contain a command injection vulnerability in the Lobster ex...</td>
+          <td class="badge-ok">✓ Mitigated</td>
+        </tr>
+        <tr>
+          <td class="cve-id"><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-32017" target="_blank" rel="noopener">CVE-2026-32017</a></td>
+          <td class="badge-high">7.1 HIGH</td>
+          <td>Versions prior to 2026.2.19 contain an allowlist bypass vulnerability in the exec safeB...</td>
+          <td class="badge-ok">✓ Mitigated</td>
+        </tr>
+        <tr>
+          <td class="cve-id"><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-32023" target="_blank" rel="noopener">CVE-2026-32023</a></td>
+          <td class="badge-high">7.1 HIGH</td>
+          <td>Versions prior to 2026.2.24 contain an approval gating bypass vulnerability in system.r...</td>
+          <td class="badge-ok">✓ Mitigated</td>
+        </tr>
+        <tr>
+          <td class="cve-id"><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-32057" target="_blank" rel="noopener">CVE-2026-32057</a></td>
+          <td class="badge-high">7.1 HIGH</td>
+          <td>Versions prior to 2026.2.25 contain an authentication bypass vulnerability in the trust...</td>
+          <td class="badge-ok">✓ Mitigated</td>
+        </tr>
+        <tr>
+          <td class="cve-id"><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-32063" target="_blank" rel="noopener">CVE-2026-32063</a></td>
+          <td class="badge-high">7.1 HIGH</td>
+          <td>Version 2026.2.19-2 prior to 2026.2.21 contains a command injection vulnerability in sy...</td>
+          <td class="badge-ok">✓ Mitigated</td>
+        </tr>
+        <tr>
+          <td class="cve-id"><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-32971" target="_blank" rel="noopener">CVE-2026-32971</a></td>
+          <td class="badge-high">7.1 HIGH</td>
+          <td>Before 2026.3.11 contains an approval-integrity vulnerability in node-host system.run a...</td>
+          <td class="badge-ok">✓ Mitigated</td>
+        </tr>
+        <tr>
+          <td class="cve-id"><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-32972" target="_blank" rel="noopener">CVE-2026-32972</a></td>
+          <td class="badge-high">7.1 HIGH</td>
+          <td>Before 2026.3.11 contains an authorization bypass vulnerability allowing authenticated ...</td>
+          <td class="badge-ok">✓ Mitigated</td>
+        </tr>
+        <tr>
+          <td class="cve-id"><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-35632" target="_blank" rel="noopener">CVE-2026-35632</a></td>
+          <td class="badge-high">7.1 HIGH</td>
+          <td>Through 2026.2.22 contains a symlink traversal vulnerability in agents.create and agent...</td>
+          <td class="badge-ok">✓ Mitigated</td>
+        </tr>
+        <tr>
+          <td class="cve-id"><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-32032" target="_blank" rel="noopener">CVE-2026-32032</a></td>
           <td class="badge-high">7.0 HIGH</td>
-          <td>Arbitrary Shell via SHELL env var</td>
+          <td>Arbitrary Shell Execution via SHELL Environment Variable</td>
           <td class="badge-ok">✓ Mitigated</td>
         </tr>
         <tr>
-          <td class="cve-id">CVE-2026-29607</td>
+          <td class="cve-id"><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-32041" target="_blank" rel="noopener">CVE-2026-32041</a></td>
+          <td class="badge-med">6.9 MEDIUM</td>
+          <td>Versions prior to 2026.3.1 fail to properly handle authentication bootstrap errors duri...</td>
+          <td class="badge-ok">✓ Mitigated</td>
+        </tr>
+        <tr>
+          <td class="cve-id"><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-28450" target="_blank" rel="noopener">CVE-2026-28450</a></td>
+          <td class="badge-med">6.8 MEDIUM</td>
+          <td>Versions prior to 2026.2.12 with the optional Nostr plugin enabled expose unauthenticat...</td>
+          <td class="badge-ok">✓ Mitigated</td>
+        </tr>
+        <tr>
+          <td class="cve-id"><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-32005" target="_blank" rel="noopener">CVE-2026-32005</a></td>
+          <td class="badge-med">6.8 MEDIUM</td>
+          <td>Versions prior to 2026.2.25 fail to enforce sender authorization checks for interactive...</td>
+          <td class="badge-ok">✓ Mitigated</td>
+        </tr>
+        <tr>
+          <td class="cve-id"><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-32007" target="_blank" rel="noopener">CVE-2026-32007</a></td>
+          <td class="badge-med">6.8 MEDIUM</td>
+          <td>Versions prior to 2026.2.23 contain a path traversal vulnerability in the experimental ...</td>
+          <td class="badge-ok">✓ Mitigated</td>
+        </tr>
+        <tr>
+          <td class="cve-id"><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-22169" target="_blank" rel="noopener">CVE-2026-22169</a></td>
+          <td class="badge-med">6.7 MEDIUM</td>
+          <td>Versions prior to 2026.2.22 contain an allowlist bypass vulnerability in the safeBins c...</td>
+          <td class="badge-ok">✓ Mitigated</td>
+        </tr>
+        <tr>
+          <td class="cve-id"><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-26972" target="_blank" rel="noopener">CVE-2026-26972</a></td>
+          <td class="badge-med">6.7 MEDIUM</td>
+          <td>CVE-2026-26972</td>
+          <td class="badge-ok">✓ Mitigated</td>
+        </tr>
+        <tr>
+          <td class="cve-id"><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-27008" target="_blank" rel="noopener">CVE-2026-27008</a></td>
+          <td class="badge-med">6.7 MEDIUM</td>
+          <td>CVE-2026-27008</td>
+          <td class="badge-ok">✓ Mitigated</td>
+        </tr>
+        <tr>
+          <td class="cve-id"><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-29608" target="_blank" rel="noopener">CVE-2026-29608</a></td>
+          <td class="badge-med">6.7 MEDIUM</td>
+          <td>2026.3.1 contains an approval integrity vulnerability in system.run node-host execution...</td>
+          <td class="badge-ok">✓ Mitigated</td>
+        </tr>
+        <tr>
+          <td class="cve-id"><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-32003" target="_blank" rel="noopener">CVE-2026-32003</a></td>
+          <td class="badge-med">6.6 MEDIUM</td>
+          <td>Versions prior to 2026.2.22 contain an environment variable injection vulnerability in ...</td>
+          <td class="badge-ok">✓ Mitigated</td>
+        </tr>
+        <tr>
+          <td class="cve-id"><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-22168" target="_blank" rel="noopener">CVE-2026-22168</a></td>
+          <td class="badge-med">6.5 MEDIUM</td>
+          <td>Versions prior to 2026.2.21 contain an approval-integrity mismatch vulnerability in sys...</td>
+          <td class="badge-ok">✓ Mitigated</td>
+        </tr>
+        <tr>
+          <td class="cve-id"><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-22170" target="_blank" rel="noopener">CVE-2026-22170</a></td>
+          <td class="badge-med">6.5 MEDIUM</td>
+          <td>Versions prior to 2026.2.22 with the optional BlueBubbles plugin contain an access cont...</td>
+          <td class="badge-ok">✓ Mitigated</td>
+        </tr>
+        <tr>
+          <td class="cve-id"><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-22178" target="_blank" rel="noopener">CVE-2026-22178</a></td>
+          <td class="badge-med">6.5 MEDIUM</td>
+          <td>Versions prior to 2026.2.19 construct RegExp objects directly from unescaped Feishu men...</td>
+          <td class="badge-ok">✓ Mitigated</td>
+        </tr>
+        <tr>
+          <td class="cve-id"><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-25475" target="_blank" rel="noopener">CVE-2026-25475</a></td>
+          <td class="badge-med">6.5 MEDIUM</td>
+          <td>CVE-2026-25475</td>
+          <td class="badge-ok">✓ Mitigated</td>
+        </tr>
+        <tr>
+          <td class="cve-id"><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-26320" target="_blank" rel="noopener">CVE-2026-26320</a></td>
+          <td class="badge-med">6.5 MEDIUM</td>
+          <td>CVE-2026-26320</td>
+          <td class="badge-ok">✓ Mitigated</td>
+        </tr>
+        <tr>
+          <td class="cve-id"><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-26327" target="_blank" rel="noopener">CVE-2026-26327</a></td>
+          <td class="badge-med">6.5 MEDIUM</td>
+          <td>CVE-2026-26327</td>
+          <td class="badge-ok">✓ Mitigated</td>
+        </tr>
+        <tr>
+          <td class="cve-id"><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-26328" target="_blank" rel="noopener">CVE-2026-26328</a></td>
+          <td class="badge-med">6.5 MEDIUM</td>
+          <td>CVE-2026-26328</td>
+          <td class="badge-ok">✓ Mitigated</td>
+        </tr>
+        <tr>
+          <td class="cve-id"><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-26329" target="_blank" rel="noopener">CVE-2026-26329</a></td>
+          <td class="badge-med">6.5 MEDIUM</td>
+          <td>CVE-2026-26329</td>
+          <td class="badge-ok">✓ Mitigated</td>
+        </tr>
+        <tr>
+          <td class="cve-id"><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-27522" target="_blank" rel="noopener">CVE-2026-27522</a></td>
+          <td class="badge-med">6.5 MEDIUM</td>
+          <td>Versions prior to 2026.2.24 contain a local media root bypass vulnerability in sendAtta...</td>
+          <td class="badge-ok">✓ Mitigated</td>
+        </tr>
+        <tr>
+          <td class="cve-id"><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-28394" target="_blank" rel="noopener">CVE-2026-28394</a></td>
+          <td class="badge-med">6.5 MEDIUM</td>
+          <td>Versions prior to 2026.2.15 contain a denial of service vulnerability in the web_fetch ...</td>
+          <td class="badge-ok">✓ Mitigated</td>
+        </tr>
+        <tr>
+          <td class="cve-id"><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-28395" target="_blank" rel="noopener">CVE-2026-28395</a></td>
+          <td class="badge-med">6.5 MEDIUM</td>
+          <td>Version 2026.1.14-1 prior to 2026.2.12 contain an improper network binding vulnerabilit...</td>
+          <td class="badge-ok">✓ Mitigated</td>
+        </tr>
+        <tr>
+          <td class="cve-id"><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-28449" target="_blank" rel="noopener">CVE-2026-28449</a></td>
+          <td class="badge-med">6.5 MEDIUM</td>
+          <td>Versions prior to 2026.2.25 lack durable replay state for Nextcloud Talk webhook events...</td>
+          <td class="badge-ok">✓ Mitigated</td>
+        </tr>
+        <tr>
+          <td class="cve-id"><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-28467" target="_blank" rel="noopener">CVE-2026-28467</a></td>
+          <td class="badge-med">6.5 MEDIUM</td>
+          <td>Versions prior to 2026.2.2 contain a server-side request forgery vulnerability in attac...</td>
+          <td class="badge-ok">✓ Mitigated</td>
+        </tr>
+        <tr>
+          <td class="cve-id"><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-28480" target="_blank" rel="noopener">CVE-2026-28480</a></td>
+          <td class="badge-med">6.5 MEDIUM</td>
+          <td>Versions prior to 2026.2.14 contain an authorization bypass vulnerability where Telegra...</td>
+          <td class="badge-ok">✓ Mitigated</td>
+        </tr>
+        <tr>
+          <td class="cve-id"><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-28481" target="_blank" rel="noopener">CVE-2026-28481</a></td>
+          <td class="badge-med">6.5 MEDIUM</td>
+          <td>Versions 2026.1.30 and earlier, contain an information disclosure vulnerability, patche...</td>
+          <td class="badge-ok">✓ Mitigated</td>
+        </tr>
+        <tr>
+          <td class="cve-id"><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-29606" target="_blank" rel="noopener">CVE-2026-29606</a></td>
+          <td class="badge-med">6.5 MEDIUM</td>
+          <td>Versions prior to 2026.2.14 contain a webhook signature-verification bypass in the voic...</td>
+          <td class="badge-ok">✓ Mitigated</td>
+        </tr>
+        <tr>
+          <td class="cve-id"><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-32004" target="_blank" rel="noopener">CVE-2026-32004</a></td>
+          <td class="badge-med">6.5 MEDIUM</td>
+          <td>Versions prior to 2026.3.2 contain an authentication bypass vulnerability in the /api/c...</td>
+          <td class="badge-ok">✓ Mitigated</td>
+        </tr>
+        <tr>
+          <td class="cve-id"><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-32008" target="_blank" rel="noopener">CVE-2026-32008</a></td>
+          <td class="badge-med">6.5 MEDIUM</td>
+          <td>Versions prior to 2026.2.21 contain an improper URL scheme validation vulnerability in ...</td>
+          <td class="badge-ok">✓ Mitigated</td>
+        </tr>
+        <tr>
+          <td class="cve-id"><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-32021" target="_blank" rel="noopener">CVE-2026-32021</a></td>
+          <td class="badge-med">6.5 MEDIUM</td>
+          <td>Versions prior to 2026.2.22 contain an authorization bypass vulnerability in the Feishu...</td>
+          <td class="badge-ok">✓ Mitigated</td>
+        </tr>
+        <tr>
+          <td class="cve-id"><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-32022" target="_blank" rel="noopener">CVE-2026-32022</a></td>
+          <td class="badge-med">6.5 MEDIUM</td>
+          <td>Versions prior to 2026.2.21 contain a stdin-only policy bypass vulnerability in the gre...</td>
+          <td class="badge-ok">✓ Mitigated</td>
+        </tr>
+        <tr>
+          <td class="cve-id"><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-32026" target="_blank" rel="noopener">CVE-2026-32026</a></td>
+          <td class="badge-med">6.5 MEDIUM</td>
+          <td>Versions prior to 2026.2.24 contain an improper path validation vulnerability in sandbo...</td>
+          <td class="badge-ok">✓ Mitigated</td>
+        </tr>
+        <tr>
+          <td class="cve-id"><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-32027" target="_blank" rel="noopener">CVE-2026-32027</a></td>
+          <td class="badge-med">6.5 MEDIUM</td>
+          <td>Versions prior to 2026.2.26 contain an authorization bypass vulnerability where DM pair...</td>
+          <td class="badge-ok">✓ Mitigated</td>
+        </tr>
+        <tr>
+          <td class="cve-id"><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-32033" target="_blank" rel="noopener">CVE-2026-32033</a></td>
+          <td class="badge-med">6.5 MEDIUM</td>
+          <td>Versions prior to 2026.2.24 contain a path traversal vulnerability where @-prefixed abs...</td>
+          <td class="badge-ok">✓ Mitigated</td>
+        </tr>
+        <tr>
+          <td class="cve-id"><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-32036" target="_blank" rel="noopener">CVE-2026-32036</a></td>
+          <td class="badge-med">6.5 MEDIUM</td>
+          <td>Gateway plugin versions prior to 2026.2.26 contain a path traversal vulnerability that ...</td>
+          <td class="badge-ok">✓ Mitigated</td>
+        </tr>
+        <tr>
+          <td class="cve-id"><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-32043" target="_blank" rel="noopener">CVE-2026-32043</a></td>
+          <td class="badge-med">6.5 MEDIUM</td>
+          <td>Versions prior to 2026.2.25 contain a time-of-check-time-of-use vulnerability in approv...</td>
+          <td class="badge-ok">✓ Mitigated</td>
+        </tr>
+        <tr>
+          <td class="cve-id"><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-32053" target="_blank" rel="noopener">CVE-2026-32053</a></td>
+          <td class="badge-med">6.5 MEDIUM</td>
+          <td>Versions prior to 2026.2.23 contain a vulnerability in Twilio webhook event deduplicati...</td>
+          <td class="badge-ok">✓ Mitigated</td>
+        </tr>
+        <tr>
+          <td class="cve-id"><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-32054" target="_blank" rel="noopener">CVE-2026-32054</a></td>
+          <td class="badge-med">6.5 MEDIUM</td>
+          <td>Versions prior to 2026.2.25 contain a symlink traversal vulnerability in browser trace ...</td>
+          <td class="badge-ok">✓ Mitigated</td>
+        </tr>
+        <tr>
+          <td class="cve-id"><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-32976" target="_blank" rel="noopener">CVE-2026-32976</a></td>
+          <td class="badge-med">6.5 MEDIUM</td>
+          <td>Before 2026.3.11 contains an authorization bypass vulnerability allowing channel comman...</td>
+          <td class="badge-ok">✓ Mitigated</td>
+        </tr>
+        <tr>
+          <td class="cve-id"><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-33576" target="_blank" rel="noopener">CVE-2026-33576</a></td>
+          <td class="badge-med">6.5 MEDIUM</td>
+          <td>Before 2026.3.28 downloads and stores inbound media from Zalo channels before validatin...</td>
+          <td class="badge-ok">✓ Mitigated</td>
+        </tr>
+        <tr>
+          <td class="cve-id"><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-33580" target="_blank" rel="noopener">CVE-2026-33580</a></td>
+          <td class="badge-med">6.5 MEDIUM</td>
+          <td>Before 2026.3.28 contains a missing rate limiting vulnerability in the Nextcloud Talk w...</td>
+          <td class="badge-ok">✓ Mitigated</td>
+        </tr>
+        <tr>
+          <td class="cve-id"><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-33581" target="_blank" rel="noopener">CVE-2026-33581</a></td>
+          <td class="badge-med">6.5 MEDIUM</td>
+          <td>Before 2026.3.24 contains a sandbox bypass vulnerability in the message tool that allow...</td>
+          <td class="badge-ok">✓ Mitigated</td>
+        </tr>
+        <tr>
+          <td class="cve-id"><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-34505" target="_blank" rel="noopener">CVE-2026-34505</a></td>
+          <td class="badge-med">6.5 MEDIUM</td>
+          <td>Before 2026.3.12 applies rate limiting only after successful webhook authentication, al...</td>
+          <td class="badge-ok">✓ Mitigated</td>
+        </tr>
+        <tr>
+          <td class="cve-id"><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-35618" target="_blank" rel="noopener">CVE-2026-35618</a></td>
+          <td class="badge-med">6.5 MEDIUM</td>
+          <td>Before 2026.3.23 contains a replay identity vulnerability in Plivo V2 signature verific...</td>
+          <td class="badge-ok">✓ Mitigated</td>
+        </tr>
+        <tr>
+          <td class="cve-id"><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-35621" target="_blank" rel="noopener">CVE-2026-35621</a></td>
+          <td class="badge-med">6.5 MEDIUM</td>
+          <td>Before 2026.3.24 contains a privilege escalation vulnerability where the /allowlist com...</td>
+          <td class="badge-ok">✓ Mitigated</td>
+        </tr>
+        <tr>
+          <td class="cve-id"><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-35627" target="_blank" rel="noopener">CVE-2026-35627</a></td>
+          <td class="badge-med">6.5 MEDIUM</td>
+          <td>Before 2026.3.22 performs cryptographic and dispatch operations on inbound Nostr direct...</td>
+          <td class="badge-ok">✓ Mitigated</td>
+        </tr>
+        <tr>
+          <td class="cve-id"><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-35631" target="_blank" rel="noopener">CVE-2026-35631</a></td>
+          <td class="badge-med">6.5 MEDIUM</td>
+          <td>Before 2026.3.22 fails to enforce operator.admin scope on mutating internal ACP chat co...</td>
+          <td class="badge-ok">✓ Mitigated</td>
+        </tr>
+        <tr>
+          <td class="cve-id"><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-35636" target="_blank" rel="noopener">CVE-2026-35636</a></td>
+          <td class="badge-med">6.5 MEDIUM</td>
+          <td>Versions 2026.3.11 through 2026.3.24 contain a session isolation bypass vulnerability w...</td>
+          <td class="badge-ok">✓ Mitigated</td>
+        </tr>
+        <tr>
+          <td class="cve-id"><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-35644" target="_blank" rel="noopener">CVE-2026-35644</a></td>
+          <td class="badge-med">6.5 MEDIUM</td>
+          <td>Before 2026.3.22 contains an information disclosure vulnerability that allows attackers...</td>
+          <td class="badge-ok">✓ Mitigated</td>
+        </tr>
+        <tr>
+          <td class="cve-id"><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-35649" target="_blank" rel="noopener">CVE-2026-35649</a></td>
+          <td class="badge-med">6.5 MEDIUM</td>
+          <td>Before 2026.3.22 contains a settings reconciliation vulnerability that allows attackers...</td>
+          <td class="badge-ok">✓ Mitigated</td>
+        </tr>
+        <tr>
+          <td class="cve-id"><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-35652" target="_blank" rel="noopener">CVE-2026-35652</a></td>
+          <td class="badge-med">6.5 MEDIUM</td>
+          <td>Before 2026.3.22 contains an authorization bypass vulnerability in interactive callback...</td>
+          <td class="badge-ok">✓ Mitigated</td>
+        </tr>
+        <tr>
+          <td class="cve-id"><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-35656" target="_blank" rel="noopener">CVE-2026-35656</a></td>
+          <td class="badge-med">6.5 MEDIUM</td>
+          <td>Before 2026.3.22 contains an authentication bypass vulnerability in the X-Forwarded-For...</td>
+          <td class="badge-ok">✓ Mitigated</td>
+        </tr>
+        <tr>
+          <td class="cve-id"><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-35657" target="_blank" rel="noopener">CVE-2026-35657</a></td>
+          <td class="badge-med">6.5 MEDIUM</td>
+          <td>Before 2026.3.25 contains an authorization bypass vulnerability in the HTTP /sessions/:...</td>
+          <td class="badge-ok">✓ Mitigated</td>
+        </tr>
+        <tr>
+          <td class="cve-id"><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-35658" target="_blank" rel="noopener">CVE-2026-35658</a></td>
+          <td class="badge-med">6.5 MEDIUM</td>
+          <td>Before 2026.3.2 contains a filesystem boundary bypass vulnerability in the image tool t...</td>
+          <td class="badge-ok">✓ Mitigated</td>
+        </tr>
+        <tr>
+          <td class="cve-id"><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-3689" target="_blank" rel="noopener">CVE-2026-3689</a></td>
+          <td class="badge-med">6.5 MEDIUM</td>
+          <td>Canvas Path Traversal Information Disclosure Vulnerability</td>
+          <td class="badge-ok">✓ Mitigated</td>
+        </tr>
+        <tr>
+          <td class="cve-id"><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-40037" target="_blank" rel="noopener">CVE-2026-40037</a></td>
+          <td class="badge-med">6.5 MEDIUM</td>
+          <td>Before 2026.3.31 (patched in 2026.4.8) contains a request body replay vulnerability in ...</td>
+          <td class="badge-ok">✓ Mitigated</td>
+        </tr>
+        <tr>
+          <td class="cve-id"><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-29607" target="_blank" rel="noopener">CVE-2026-29607</a></td>
           <td class="badge-med">6.4 MEDIUM</td>
-          <td>Allow-Always Wrapper Persistence</td>
+          <td>Allow-Always Wrapper Persistence Bypass</td>
           <td class="badge-ok">✓ Mitigated</td>
         </tr>
         <tr>
-          <td class="cve-id">CVE-2026-28460</td>
+          <td class="cve-id"><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-32052" target="_blank" rel="noopener">CVE-2026-32052</a></td>
+          <td class="badge-med">6.4 MEDIUM</td>
+          <td>Versions prior to 2026.2.24 contain a command injection vulnerability in the system.run...</td>
+          <td class="badge-ok">✓ Mitigated</td>
+        </tr>
+        <tr>
+          <td class="cve-id"><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-31999" target="_blank" rel="noopener">CVE-2026-31999</a></td>
+          <td class="badge-med">6.3 MEDIUM</td>
+          <td>Versions 2026.2.26 prior to 2026.3.1 on Windows contain a current working directory inj...</td>
+          <td class="badge-ok">✓ Mitigated</td>
+        </tr>
+        <tr>
+          <td class="cve-id"><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-32010" target="_blank" rel="noopener">CVE-2026-32010</a></td>
+          <td class="badge-med">6.3 MEDIUM</td>
+          <td>Versions prior to 2026.2.22 contain an allowlist bypass vulnerability in the safe-bin c...</td>
+          <td class="badge-ok">✓ Mitigated</td>
+        </tr>
+        <tr>
+          <td class="cve-id"><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-32921" target="_blank" rel="noopener">CVE-2026-32921</a></td>
+          <td class="badge-med">6.3 MEDIUM</td>
+          <td>Before 2026.3.8 contains an approval bypass vulnerability in system.run where mutable s...</td>
+          <td class="badge-ok">✓ Mitigated</td>
+        </tr>
+        <tr>
+          <td class="cve-id"><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-32977" target="_blank" rel="noopener">CVE-2026-32977</a></td>
+          <td class="badge-med">6.3 MEDIUM</td>
+          <td>Before 2026.3.11 contains a sandbox boundary bypass vulnerability in the fs-bridge writ...</td>
+          <td class="badge-ok">✓ Mitigated</td>
+        </tr>
+        <tr>
+          <td class="cve-id"><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-35650" target="_blank" rel="noopener">CVE-2026-35650</a></td>
+          <td class="badge-med">6.3 MEDIUM</td>
+          <td>Environment Variable Override Bypass</td>
+          <td class="badge-ok">✓ Mitigated</td>
+        </tr>
+        <tr>
+          <td class="cve-id"><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-4039" target="_blank" rel="noopener">CVE-2026-4039</a></td>
+          <td class="badge-med">6.3 MEDIUM</td>
+          <td>A vulnerability was determined in OpenClaw 2026.2.19-2</td>
+          <td class="badge-ok">✓ Mitigated</td>
+        </tr>
+        <tr>
+          <td class="cve-id"><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-33574" target="_blank" rel="noopener">CVE-2026-33574</a></td>
+          <td class="badge-med">6.2 MEDIUM</td>
+          <td>Before 2026.3.8 contains a path traversal vulnerability in the skills download installe...</td>
+          <td class="badge-ok">✓ Mitigated</td>
+        </tr>
+        <tr>
+          <td class="cve-id"><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-22217" target="_blank" rel="noopener">CVE-2026-22217</a></td>
+          <td class="badge-med">6.1 MEDIUM</td>
+          <td>Version 2026.2.22 prior to 2026.2.23 contain an arbitrary code execution vulnerability ...</td>
+          <td class="badge-ok">✓ Mitigated</td>
+        </tr>
+        <tr>
+          <td class="cve-id"><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-27523" target="_blank" rel="noopener">CVE-2026-27523</a></td>
+          <td class="badge-med">6.1 MEDIUM</td>
+          <td>Versions prior to 2026.2.24 contain a sandbox bind validation vulnerability allowing at...</td>
+          <td class="badge-ok">✓ Mitigated</td>
+        </tr>
+        <tr>
+          <td class="cve-id"><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-27545" target="_blank" rel="noopener">CVE-2026-27545</a></td>
+          <td class="badge-med">6.1 MEDIUM</td>
+          <td>Versions prior to 2026.2.26 contain an approval bypass vulnerability in system.run exec...</td>
+          <td class="badge-ok">✓ Mitigated</td>
+        </tr>
+        <tr>
+          <td class="cve-id"><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-27646" target="_blank" rel="noopener">CVE-2026-27646</a></td>
+          <td class="badge-med">6.1 MEDIUM</td>
+          <td>Versions prior to 2026.3.7 contain a sandbox escape vulnerability in the /acp spawn com...</td>
+          <td class="badge-ok">✓ Mitigated</td>
+        </tr>
+        <tr>
+          <td class="cve-id"><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-28457" target="_blank" rel="noopener">CVE-2026-28457</a></td>
+          <td class="badge-med">6.1 MEDIUM</td>
+          <td>Versions prior to 2026.2.14 contain a path traversal vulnerability in sandbox skill mir...</td>
+          <td class="badge-ok">✓ Mitigated</td>
+        </tr>
+        <tr>
+          <td class="cve-id"><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-28486" target="_blank" rel="noopener">CVE-2026-28486</a></td>
+          <td class="badge-med">6.1 MEDIUM</td>
+          <td>Versions 2026.1.16-2 prior to 2026.2.14 contain a path traversal vulnerability in archi...</td>
+          <td class="badge-ok">✓ Mitigated</td>
+        </tr>
+        <tr>
+          <td class="cve-id"><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-31990" target="_blank" rel="noopener">CVE-2026-31990</a></td>
+          <td class="badge-med">6.1 MEDIUM</td>
+          <td>Versions prior to 2026.3.2 contain a vulnerability in the stageSandboxMedia function in...</td>
+          <td class="badge-ok">✓ Mitigated</td>
+        </tr>
+        <tr>
+          <td class="cve-id"><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-32919" target="_blank" rel="noopener">CVE-2026-32919</a></td>
+          <td class="badge-med">6.1 MEDIUM</td>
+          <td>Before 2026.3.11 contains an authorization bypass vulnerability allowing write-scoped c...</td>
+          <td class="badge-ok">✓ Mitigated</td>
+        </tr>
+        <tr>
+          <td class="cve-id"><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-35667" target="_blank" rel="noopener">CVE-2026-35667</a></td>
+          <td class="badge-med">6.1 MEDIUM</td>
+          <td>Before 2026.3.24 contains an incomplete fix for CVE-2026-27486 where the !stop chat com...</td>
+          <td class="badge-ok">✓ Mitigated</td>
+        </tr>
+        <tr>
+          <td class="cve-id"><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-31997" target="_blank" rel="noopener">CVE-2026-31997</a></td>
+          <td class="badge-med">6.0 MEDIUM</td>
+          <td>Versions prior to 2026.3.1 fail to pin executable identity for non-path-like argv[0] to...</td>
+          <td class="badge-ok">✓ Mitigated</td>
+        </tr>
+        <tr>
+          <td class="cve-id"><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-32037" target="_blank" rel="noopener">CVE-2026-32037</a></td>
+          <td class="badge-med">6.0 MEDIUM</td>
+          <td>Versions prior to 2026.2.22 fail to consistently validate redirect chains against confi...</td>
+          <td class="badge-ok">✓ Mitigated</td>
+        </tr>
+        <tr>
+          <td class="cve-id"><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-28460" target="_blank" rel="noopener">CVE-2026-28460</a></td>
           <td class="badge-med">5.9 MEDIUM</td>
-          <td>Allowlist Bypass via Shell Continuation</td>
+          <td>Allowlist Bypass via Shell Line-Continuation</td>
+          <td class="badge-ok">✓ Mitigated</td>
+        </tr>
+        <tr>
+          <td class="cve-id"><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-28464" target="_blank" rel="noopener">CVE-2026-28464</a></td>
+          <td class="badge-med">5.9 MEDIUM</td>
+          <td>Versions prior to 2026.2.12 use non-constant-time string comparison for hook token vali...</td>
+          <td class="badge-ok">✓ Mitigated</td>
+        </tr>
+        <tr>
+          <td class="cve-id"><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-28465" target="_blank" rel="noopener">CVE-2026-28465</a></td>
+          <td class="badge-med">5.9 MEDIUM</td>
+          <td>OpenClaw's voice-call plugin versions before 2026.2.3 contain an improper authenticatio...</td>
+          <td class="badge-ok">✓ Mitigated</td>
+        </tr>
+        <tr>
+          <td class="cve-id"><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-29613" target="_blank" rel="noopener">CVE-2026-29613</a></td>
+          <td class="badge-med">5.9 MEDIUM</td>
+          <td>Versions prior to 2026.2.12 contain a vulnerability in the BlueBubbles (optional plugin...</td>
+          <td class="badge-ok">✓ Mitigated</td>
+        </tr>
+        <tr>
+          <td class="cve-id"><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-32035" target="_blank" rel="noopener">CVE-2026-32035</a></td>
+          <td class="badge-med">5.9 MEDIUM</td>
+          <td>Versions prior to 2026.3.2 fail to pass the senderIsOwner flag when processing Discord ...</td>
+          <td class="badge-ok">✓ Mitigated</td>
+        </tr>
+        <tr>
+          <td class="cve-id"><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-32039" target="_blank" rel="noopener">CVE-2026-32039</a></td>
+          <td class="badge-med">5.9 MEDIUM</td>
+          <td>Versions prior to 2026.2.22 contain an authorization bypass vulnerability in the toolsB...</td>
+          <td class="badge-ok">✓ Mitigated</td>
+        </tr>
+        <tr>
+          <td class="cve-id"><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-32045" target="_blank" rel="noopener">CVE-2026-32045</a></td>
+          <td class="badge-med">5.9 MEDIUM</td>
+          <td>Versions prior to 2026.2.21 incorrectly apply tokenless Tailscale header authentication...</td>
+          <td class="badge-ok">✓ Mitigated</td>
+        </tr>
+        <tr>
+          <td class="cve-id"><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-35622" target="_blank" rel="noopener">CVE-2026-35622</a></td>
+          <td class="badge-med">5.9 MEDIUM</td>
+          <td>Before 2026.3.22 contains an improper authentication verification vulnerability in Goog...</td>
+          <td class="badge-ok">✓ Mitigated</td>
+        </tr>
+        <tr>
+          <td class="cve-id"><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-35670" target="_blank" rel="noopener">CVE-2026-35670</a></td>
+          <td class="badge-med">5.9 MEDIUM</td>
+          <td>Before 2026.3.22 contains a webhook reply delivery vulnerability that allows attackers ...</td>
+          <td class="badge-ok">✓ Mitigated</td>
+        </tr>
+        <tr>
+          <td class="cve-id"><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-27009" target="_blank" rel="noopener">CVE-2026-27009</a></td>
+          <td class="badge-med">5.8 MEDIUM</td>
+          <td>CVE-2026-27009</td>
+          <td class="badge-ok">✓ Mitigated</td>
+        </tr>
+        <tr>
+          <td class="cve-id"><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-32009" target="_blank" rel="noopener">CVE-2026-32009</a></td>
+          <td class="badge-med">5.7 MEDIUM</td>
+          <td>Versions prior to 2026.2.24 contain a policy bypass vulnerability in the safeBins allow...</td>
+          <td class="badge-ok">✓ Mitigated</td>
+        </tr>
+        <tr>
+          <td class="cve-id"><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-35655" target="_blank" rel="noopener">CVE-2026-35655</a></td>
+          <td class="badge-med">5.7 MEDIUM</td>
+          <td>Before 2026.3.22 contains an identity spoofing vulnerability in ACP permission resoluti...</td>
+          <td class="badge-ok">✓ Mitigated</td>
+        </tr>
+        <tr>
+          <td class="cve-id"><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-6011" target="_blank" rel="noopener">CVE-2026-6011</a></td>
+          <td class="badge-med">5.6 MEDIUM</td>
+          <td>1.26</td>
+          <td class="badge-ok">✓ Mitigated</td>
+        </tr>
+        <tr>
+          <td class="cve-id"><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-27003" target="_blank" rel="noopener">CVE-2026-27003</a></td>
+          <td class="badge-med">5.5 MEDIUM</td>
+          <td>CVE-2026-27003</td>
+          <td class="badge-ok">✓ Mitigated</td>
+        </tr>
+        <tr>
+          <td class="cve-id"><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-27004" target="_blank" rel="noopener">CVE-2026-27004</a></td>
+          <td class="badge-med">5.5 MEDIUM</td>
+          <td>CVE-2026-27004</td>
+          <td class="badge-ok">✓ Mitigated</td>
+        </tr>
+        <tr>
+          <td class="cve-id"><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-28452" target="_blank" rel="noopener">CVE-2026-28452</a></td>
+          <td class="badge-med">5.5 MEDIUM</td>
+          <td>Versions prior to 2026.2.14 contain a denial of service vulnerability in the extractArc...</td>
+          <td class="badge-ok">✓ Mitigated</td>
+        </tr>
+        <tr>
+          <td class="cve-id"><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-29612" target="_blank" rel="noopener">CVE-2026-29612</a></td>
+          <td class="badge-med">5.5 MEDIUM</td>
+          <td>Versions prior to 2026.2.14 decode base64-backed media inputs into buffers before enfor...</td>
+          <td class="badge-ok">✓ Mitigated</td>
+        </tr>
+        <tr>
+          <td class="cve-id"><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-32024" target="_blank" rel="noopener">CVE-2026-32024</a></td>
+          <td class="badge-med">5.5 MEDIUM</td>
+          <td>Versions prior to 2026.2.22 contain a symlink traversal vulnerability in avatar handlin...</td>
+          <td class="badge-ok">✓ Mitigated</td>
+        </tr>
+        <tr>
+          <td class="cve-id"><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-32044" target="_blank" rel="noopener">CVE-2026-32044</a></td>
+          <td class="badge-med">5.5 MEDIUM</td>
+          <td>Versions prior to 2026.3.2 contain an archive extraction vulnerability in the tar.bz2 i...</td>
+          <td class="badge-ok">✓ Mitigated</td>
+        </tr>
+        <tr>
+          <td class="cve-id"><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-32001" target="_blank" rel="noopener">CVE-2026-32001</a></td>
+          <td class="badge-med">5.4 MEDIUM</td>
+          <td>Versions prior to 2026.2.22 contain an authentication bypass vulnerability that allows ...</td>
+          <td class="badge-ok">✓ Mitigated</td>
+        </tr>
+        <tr>
+          <td class="cve-id"><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-32895" target="_blank" rel="noopener">CVE-2026-32895</a></td>
+          <td class="badge-med">5.4 MEDIUM</td>
+          <td>Versions prior to 2026.2.26 fail to enforce sender authorization in member and message ...</td>
+          <td class="badge-ok">✓ Mitigated</td>
+        </tr>
+        <tr>
+          <td class="cve-id"><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-32898" target="_blank" rel="noopener">CVE-2026-32898</a></td>
+          <td class="badge-med">5.4 MEDIUM</td>
+          <td>Versions prior to 2026.2.23 contain an authorization bypass vulnerability in the ACP cl...</td>
+          <td class="badge-ok">✓ Mitigated</td>
+        </tr>
+        <tr>
+          <td class="cve-id"><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-32923" target="_blank" rel="noopener">CVE-2026-32923</a></td>
+          <td class="badge-med">5.4 MEDIUM</td>
+          <td>Before 2026.3.11 contains an authorization bypass vulnerability in Discord guild reacti...</td>
+          <td class="badge-ok">✓ Mitigated</td>
+        </tr>
+        <tr>
+          <td class="cve-id"><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-34425" target="_blank" rel="noopener">CVE-2026-34425</a></td>
+          <td class="badge-med">5.4 MEDIUM</td>
+          <td>Versions prior to commit 8aceaf5 contain a preflight validation bypass vulnerability in...</td>
+          <td class="badge-ok">✓ Mitigated</td>
+        </tr>
+        <tr>
+          <td class="cve-id"><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-35620" target="_blank" rel="noopener">CVE-2026-35620</a></td>
+          <td class="badge-med">5.4 MEDIUM</td>
+          <td>Before 2026.3.24 contains missing authorization vulnerabilities in the /send and /allow...</td>
+          <td class="badge-ok">✓ Mitigated</td>
+        </tr>
+        <tr>
+          <td class="cve-id"><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-22180" target="_blank" rel="noopener">CVE-2026-22180</a></td>
+          <td class="badge-med">5.3 MEDIUM</td>
+          <td>Versions prior to 2026.3.2 contain a path-confinement bypass vulnerability in browser o...</td>
+          <td class="badge-ok">✓ Mitigated</td>
+        </tr>
+        <tr>
+          <td class="cve-id"><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-27183" target="_blank" rel="noopener">CVE-2026-27183</a></td>
+          <td class="badge-med">5.3 MEDIUM</td>
+          <td>Versions prior to 2026.3.7 contain a shell approval gating bypass vulnerability in syst...</td>
+          <td class="badge-ok">✓ Mitigated</td>
+        </tr>
+        <tr>
+          <td class="cve-id"><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-27486" target="_blank" rel="noopener">CVE-2026-27486</a></td>
+          <td class="badge-med">5.3 MEDIUM</td>
+          <td>CVE-2026-27486</td>
+          <td class="badge-ok">✓ Mitigated</td>
+        </tr>
+        <tr>
+          <td class="cve-id"><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-27670" target="_blank" rel="noopener">CVE-2026-27670</a></td>
+          <td class="badge-med">5.3 MEDIUM</td>
+          <td>Versions prior to 2026.3.2 contain a race condition vulnerability in ZIP extraction tha...</td>
+          <td class="badge-ok">✓ Mitigated</td>
+        </tr>
+        <tr>
+          <td class="cve-id"><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-28471" target="_blank" rel="noopener">CVE-2026-28471</a></td>
+          <td class="badge-med">5.3 MEDIUM</td>
+          <td>Version 2026.1.14-1 prior to 2026.2.2, with the Matrix plugin installed and enabled, co...</td>
+          <td class="badge-ok">✓ Mitigated</td>
+        </tr>
+        <tr>
+          <td class="cve-id"><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-31995" target="_blank" rel="noopener">CVE-2026-31995</a></td>
+          <td class="badge-med">5.3 MEDIUM</td>
+          <td>Versions 2026.1.21 prior to 2026.2.19 contain a command injection vulnerability in the ...</td>
+          <td class="badge-ok">✓ Mitigated</td>
+        </tr>
+        <tr>
+          <td class="cve-id"><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-32002" target="_blank" rel="noopener">CVE-2026-32002</a></td>
+          <td class="badge-med">5.3 MEDIUM</td>
+          <td>Versions prior to 2026.2.23 contain a sandbox bypass vulnerability in the sandboxed ima...</td>
+          <td class="badge-ok">✓ Mitigated</td>
+        </tr>
+        <tr>
+          <td class="cve-id"><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-32028" target="_blank" rel="noopener">CVE-2026-32028</a></td>
+          <td class="badge-med">5.3 MEDIUM</td>
+          <td>Versions prior to 2026.2.25 fail to enforce dmPolicy and allowFrom authorization checks...</td>
+          <td class="badge-ok">✓ Mitigated</td>
+        </tr>
+        <tr>
+          <td class="cve-id"><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-32029" target="_blank" rel="noopener">CVE-2026-32029</a></td>
+          <td class="badge-med">5.3 MEDIUM</td>
+          <td>Versions prior to 2026.2.21 improperly parse the left-most X-Forwarded-For header value...</td>
+          <td class="badge-ok">✓ Mitigated</td>
+        </tr>
+        <tr>
+          <td class="cve-id"><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-32046" target="_blank" rel="noopener">CVE-2026-32046</a></td>
+          <td class="badge-med">5.3 MEDIUM</td>
+          <td>Versions prior to 2026.2.21 contain an improper sandbox configuration vulnerability tha...</td>
+          <td class="badge-ok">✓ Mitigated</td>
+        </tr>
+        <tr>
+          <td class="cve-id"><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-34510" target="_blank" rel="noopener">CVE-2026-34510</a></td>
+          <td class="badge-med">5.3 MEDIUM</td>
+          <td>Before 2026.3.22 contains a path traversal vulnerability in Windows media loaders that ...</td>
+          <td class="badge-ok">✓ Mitigated</td>
+        </tr>
+        <tr>
+          <td class="cve-id"><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-34511" target="_blank" rel="noopener">CVE-2026-34511</a></td>
+          <td class="badge-med">5.3 MEDIUM</td>
+          <td>Before 2026.4.2 reuses the PKCE verifier as the OAuth state parameter in the Gemini OAu...</td>
+          <td class="badge-ok">✓ Mitigated</td>
+        </tr>
+        <tr>
+          <td class="cve-id"><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-35626" target="_blank" rel="noopener">CVE-2026-35626</a></td>
+          <td class="badge-med">5.3 MEDIUM</td>
+          <td>Before 2026.3.22 contains an unauthenticated resource exhaustion vulnerability in voice...</td>
+          <td class="badge-ok">✓ Mitigated</td>
+        </tr>
+        <tr>
+          <td class="cve-id"><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-35633" target="_blank" rel="noopener">CVE-2026-35633</a></td>
+          <td class="badge-med">5.3 MEDIUM</td>
+          <td>Before 2026.3.22 contains an unbounded memory allocation vulnerability in remote media ...</td>
+          <td class="badge-ok">✓ Mitigated</td>
+        </tr>
+        <tr>
+          <td class="cve-id"><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-35640" target="_blank" rel="noopener">CVE-2026-35640</a></td>
+          <td class="badge-med">5.3 MEDIUM</td>
+          <td>Before 2026.3.25 parses JSON request bodies before validating webhook signatures, allow...</td>
+          <td class="badge-ok">✓ Mitigated</td>
+        </tr>
+        <tr>
+          <td class="cve-id"><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-35647" target="_blank" rel="noopener">CVE-2026-35647</a></td>
+          <td class="badge-med">5.3 MEDIUM</td>
+          <td>Before 2026.3.25 contains an access control vulnerability where verification notices by...</td>
+          <td class="badge-ok">✓ Mitigated</td>
+        </tr>
+        <tr>
+          <td class="cve-id"><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-35654" target="_blank" rel="noopener">CVE-2026-35654</a></td>
+          <td class="badge-med">5.3 MEDIUM</td>
+          <td>Before 2026.3.25 contains an authorization bypass vulnerability in Microsoft Teams feed...</td>
+          <td class="badge-ok">✓ Mitigated</td>
+        </tr>
+        <tr>
+          <td class="cve-id"><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-35661" target="_blank" rel="noopener">CVE-2026-35661</a></td>
+          <td class="badge-med">5.3 MEDIUM</td>
+          <td>Before 2026.3.25 contains an authorization bypass vulnerability in Telegram callback qu...</td>
+          <td class="badge-ok">✓ Mitigated</td>
+        </tr>
+        <tr>
+          <td class="cve-id"><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-35664" target="_blank" rel="noopener">CVE-2026-35664</a></td>
+          <td class="badge-med">5.3 MEDIUM</td>
+          <td>Before 2026.3.25 contains an authentication bypass vulnerability in raw card send surfa...</td>
+          <td class="badge-ok">✓ Mitigated</td>
+        </tr>
+        <tr>
+          <td class="cve-id"><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-35665" target="_blank" rel="noopener">CVE-2026-35665</a></td>
+          <td class="badge-med">5.3 MEDIUM</td>
+          <td>Before 2026.3.24 contains an incomplete fix for CVE-2026-32011 where the Feishu webhook...</td>
+          <td class="badge-ok">✓ Mitigated</td>
+        </tr>
+        <tr>
+          <td class="cve-id"><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-3691" target="_blank" rel="noopener">CVE-2026-3691</a></td>
+          <td class="badge-med">5.3 MEDIUM</td>
+          <td>Client PKCE Verifier Information Disclosure Vulnerability</td>
+          <td class="badge-ok">✓ Mitigated</td>
+        </tr>
+        <tr>
+          <td class="cve-id"><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-35634" target="_blank" rel="noopener">CVE-2026-35634</a></td>
+          <td class="badge-med">5.1 MEDIUM</td>
+          <td>Before 2026.3.23 contains an authentication bypass vulnerability in the Canvas gateway ...</td>
+          <td class="badge-ok">✓ Mitigated</td>
+        </tr>
+        <tr>
+          <td class="cve-id"><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-28475" target="_blank" rel="noopener">CVE-2026-28475</a></td>
+          <td class="badge-med">4.8 MEDIUM</td>
+          <td>Versions prior to 2026.2.13 use non-constant-time string comparison for hook token vali...</td>
+          <td class="badge-ok">✓ Mitigated</td>
+        </tr>
+        <tr>
+          <td class="cve-id"><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-31993" target="_blank" rel="noopener">CVE-2026-31993</a></td>
+          <td class="badge-med">4.8 MEDIUM</td>
+          <td>Versions prior to 2026.2.22 contain an allowlist parsing mismatch vulnerability in the ...</td>
+          <td class="badge-ok">✓ Mitigated</td>
+        </tr>
+        <tr>
+          <td class="cve-id"><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-32031" target="_blank" rel="noopener">CVE-2026-32031</a></td>
+          <td class="badge-med">4.8 MEDIUM</td>
+          <td>Versions prior to 2026.2.26 server-http contains an authentication bypass vulnerability...</td>
+          <td class="badge-ok">✓ Mitigated</td>
+        </tr>
+        <tr>
+          <td class="cve-id"><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-32065" target="_blank" rel="noopener">CVE-2026-32065</a></td>
+          <td class="badge-med">4.8 MEDIUM</td>
+          <td>Versions prior to 2026.2.25 contain an approval-integrity bypass vulnerability in syste...</td>
+          <td class="badge-ok">✓ Mitigated</td>
+        </tr>
+        <tr>
+          <td class="cve-id"><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-32896" target="_blank" rel="noopener">CVE-2026-32896</a></td>
+          <td class="badge-med">4.8 MEDIUM</td>
+          <td>Versions prior to 2026.2.21 BlueBubbles webhook handler contains a passwordless fallbac...</td>
+          <td class="badge-ok">✓ Mitigated</td>
+        </tr>
+        <tr>
+          <td class="cve-id"><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-35623" target="_blank" rel="noopener">CVE-2026-35623</a></td>
+          <td class="badge-med">4.8 MEDIUM</td>
+          <td>Before 2026.3.25 contains a missing rate limiting vulnerability in webhook authenticati...</td>
+          <td class="badge-ok">✓ Mitigated</td>
+        </tr>
+        <tr>
+          <td class="cve-id"><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-35628" target="_blank" rel="noopener">CVE-2026-35628</a></td>
+          <td class="badge-med">4.8 MEDIUM</td>
+          <td>Before 2026.3.25 contains a missing rate limiting vulnerability in Telegram webhook aut...</td>
+          <td class="badge-ok">✓ Mitigated</td>
+        </tr>
+        <tr>
+          <td class="cve-id"><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-35635" target="_blank" rel="noopener">CVE-2026-35635</a></td>
+          <td class="badge-med">4.8 MEDIUM</td>
+          <td>Before 2026.3.22 contains a webhook path route replacement vulnerability in the Synolog...</td>
+          <td class="badge-ok">✓ Mitigated</td>
+        </tr>
+        <tr>
+          <td class="cve-id"><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-35646" target="_blank" rel="noopener">CVE-2026-35646</a></td>
+          <td class="badge-med">4.8 MEDIUM</td>
+          <td>Before 2026.3.25 contains a pre-authentication rate-limit bypass vulnerability in webho...</td>
+          <td class="badge-ok">✓ Mitigated</td>
+        </tr>
+        <tr>
+          <td class="cve-id"><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-32040" target="_blank" rel="noopener">CVE-2026-32040</a></td>
+          <td class="badge-med">4.6 MEDIUM</td>
+          <td>Versions prior to 2026.2.23 contain an html injection vulnerability in the HTML session...</td>
+          <td class="badge-ok">✓ Mitigated</td>
+        </tr>
+        <tr>
+          <td class="cve-id"><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-35659" target="_blank" rel="noopener">CVE-2026-35659</a></td>
+          <td class="badge-med">4.6 MEDIUM</td>
+          <td>Before 2026.3.22 contains a service discovery vulnerability where TXT metadata from Bon...</td>
+          <td class="badge-ok">✓ Mitigated</td>
+        </tr>
+        <tr>
+          <td class="cve-id"><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-27485" target="_blank" rel="noopener">CVE-2026-27485</a></td>
+          <td class="badge-med">4.4 MEDIUM</td>
+          <td>CVE-2026-27485</td>
+          <td class="badge-ok">✓ Mitigated</td>
+        </tr>
+        <tr>
+          <td class="cve-id"><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-31996" target="_blank" rel="noopener">CVE-2026-31996</a></td>
+          <td class="badge-med">4.4 MEDIUM</td>
+          <td>Versions prior to 2026.2.19 tools.exec.safeBins contains an input validation bypass vul...</td>
+          <td class="badge-ok">✓ Mitigated</td>
+        </tr>
+        <tr>
+          <td class="cve-id"><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-32061" target="_blank" rel="noopener">CVE-2026-32061</a></td>
+          <td class="badge-med">4.4 MEDIUM</td>
+          <td>Versions prior to 2026.2.17 contain a path traversal vulnerability in the $include dire...</td>
+          <td class="badge-ok">✓ Mitigated</td>
+        </tr>
+        <tr>
+          <td class="cve-id"><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-26326" target="_blank" rel="noopener">CVE-2026-26326</a></td>
+          <td class="badge-med">4.3 MEDIUM</td>
+          <td>CVE-2026-26326</td>
+          <td class="badge-ok">✓ Mitigated</td>
+        </tr>
+        <tr>
+          <td class="cve-id"><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-27484" target="_blank" rel="noopener">CVE-2026-27484</a></td>
+          <td class="badge-med">4.3 MEDIUM</td>
+          <td>CVE-2026-27484</td>
+          <td class="badge-ok">✓ Mitigated</td>
+        </tr>
+        <tr>
+          <td class="cve-id"><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-27524" target="_blank" rel="noopener">CVE-2026-27524</a></td>
+          <td class="badge-med">4.3 MEDIUM</td>
+          <td>Versions prior to 2026.2.21 accept prototype-reserved keys in runtime /debug set overri...</td>
+          <td class="badge-ok">✓ Mitigated</td>
+        </tr>
+        <tr>
+          <td class="cve-id"><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-32899" target="_blank" rel="noopener">CVE-2026-32899</a></td>
+          <td class="badge-med">4.3 MEDIUM</td>
+          <td>Versions prior to 2026.2.25 fail to consistently apply sender-policy checks to reaction...</td>
+          <td class="badge-ok">✓ Mitigated</td>
+        </tr>
+        <tr>
+          <td class="cve-id"><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-33578" target="_blank" rel="noopener">CVE-2026-33578</a></td>
+          <td class="badge-med">4.3 MEDIUM</td>
+          <td>Before 2026.3.28 contains a sender policy bypass vulnerability in the Google Chat and Z...</td>
+          <td class="badge-ok">✓ Mitigated</td>
+        </tr>
+        <tr>
+          <td class="cve-id"><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-34506" target="_blank" rel="noopener">CVE-2026-34506</a></td>
+          <td class="badge-med">4.3 MEDIUM</td>
+          <td>Before 2026.3.8 contains a sender allowlist bypass vulnerability in its Microsoft Teams...</td>
+          <td class="badge-ok">✓ Mitigated</td>
+        </tr>
+        <tr>
+          <td class="cve-id"><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-35619" target="_blank" rel="noopener">CVE-2026-35619</a></td>
+          <td class="badge-med">4.3 MEDIUM</td>
+          <td>Before 2026.3.24 contains an authorization bypass vulnerability in the HTTP /v1/models ...</td>
+          <td class="badge-ok">✓ Mitigated</td>
+        </tr>
+        <tr>
+          <td class="cve-id"><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-35642" target="_blank" rel="noopener">CVE-2026-35642</a></td>
+          <td class="badge-med">4.3 MEDIUM</td>
+          <td>Before 2026.3.25 contains an authorization bypass vulnerability where group reaction ev...</td>
+          <td class="badge-ok">✓ Mitigated</td>
+        </tr>
+        <tr>
+          <td class="cve-id"><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-35651" target="_blank" rel="noopener">CVE-2026-35651</a></td>
+          <td class="badge-med">4.3 MEDIUM</td>
+          <td>Versions 2026.2.13 through 2026.3.24 contain an ANSI escape sequence injection vulnerab...</td>
+          <td class="badge-ok">✓ Mitigated</td>
+        </tr>
+        <tr>
+          <td class="cve-id"><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-35662" target="_blank" rel="noopener">CVE-2026-35662</a></td>
+          <td class="badge-med">4.3 MEDIUM</td>
+          <td>Before 2026.3.22 fails to enforce controlScope restrictions on the send action, allowin...</td>
+          <td class="badge-ok">✓ Mitigated</td>
+        </tr>
+        <tr>
+          <td class="cve-id"><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-35617" target="_blank" rel="noopener">CVE-2026-35617</a></td>
+          <td class="badge-med">4.2 MEDIUM</td>
+          <td>Before 2026.3.25 contains an authorization bypass vulnerability in Google Chat group po...</td>
+          <td class="badge-ok">✓ Mitigated</td>
+        </tr>
+        <tr>
+          <td class="cve-id"><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-35624" target="_blank" rel="noopener">CVE-2026-35624</a></td>
+          <td class="badge-med">4.2 MEDIUM</td>
+          <td>Before 2026.3.22 contains a policy confusion vulnerability in room authorization that m...</td>
+          <td class="badge-ok">✓ Mitigated</td>
+        </tr>
+        <tr>
+          <td class="cve-id"><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-27576" target="_blank" rel="noopener">CVE-2026-27576</a></td>
+          <td class="badge-med">4.0 MEDIUM</td>
+          <td>CVE-2026-27576</td>
+          <td class="badge-ok">✓ Mitigated</td>
+        </tr>
+        <tr>
+          <td class="cve-id"><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-24764" target="_blank" rel="noopener">CVE-2026-24764</a></td>
+          <td class="badge-low">3.7 LOW</td>
+          <td>(formerly Clawdbot) is a personal AI assistant users run on their own devices</td>
+          <td class="badge-ok">✓ Mitigated</td>
+        </tr>
+        <tr>
+          <td class="cve-id"><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-31991" target="_blank" rel="noopener">CVE-2026-31991</a></td>
+          <td class="badge-low">3.7 LOW</td>
+          <td>Versions prior to 2026.2.26 contain an authorization bypass vulnerability where Signal ...</td>
+          <td class="badge-ok">✓ Mitigated</td>
+        </tr>
+        <tr>
+          <td class="cve-id"><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-32050" target="_blank" rel="noopener">CVE-2026-32050</a></td>
+          <td class="badge-low">3.7 LOW</td>
+          <td>Versions prior to 2026.2.25 contain an access control vulnerability in signal reaction ...</td>
+          <td class="badge-ok">✓ Mitigated</td>
+        </tr>
+        <tr>
+          <td class="cve-id"><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-32067" target="_blank" rel="noopener">CVE-2026-32067</a></td>
+          <td class="badge-low">3.7 LOW</td>
+          <td>Versions prior to 2026.2.26 contains an authorization bypass vulnerability in the pairi...</td>
+          <td class="badge-ok">✓ Mitigated</td>
+        </tr>
+        <tr>
+          <td class="cve-id"><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-32897" target="_blank" rel="noopener">CVE-2026-32897</a></td>
+          <td class="badge-low">3.7 LOW</td>
+          <td>Versions prior to 2026.2.22 reuse gateway.auth.token as a fallback hash secret for owne...</td>
+          <td class="badge-ok">✓ Mitigated</td>
+        </tr>
+        <tr>
+          <td class="cve-id"><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-35648" target="_blank" rel="noopener">CVE-2026-35648</a></td>
+          <td class="badge-low">3.7 LOW</td>
+          <td>Before 2026.3.22 contains a policy bypass vulnerability where queued node actions are n...</td>
+          <td class="badge-ok">✓ Mitigated</td>
+        </tr>
+        <tr>
+          <td class="cve-id"><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-32018" target="_blank" rel="noopener">CVE-2026-32018</a></td>
+          <td class="badge-low">3.6 LOW</td>
+          <td>Versions prior to 2026.2.19 contain a race condition vulnerability in concurrent update...</td>
+          <td class="badge-ok">✓ Mitigated</td>
+        </tr>
+        <tr>
+          <td class="cve-id"><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-27007" target="_blank" rel="noopener">CVE-2026-27007</a></td>
+          <td class="badge-low">3.3 LOW</td>
+          <td>CVE-2026-27007</td>
+          <td class="badge-ok">✓ Mitigated</td>
+        </tr>
+        <tr>
+          <td class="cve-id"><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-32020" target="_blank" rel="noopener">CVE-2026-32020</a></td>
+          <td class="badge-low">3.3 LOW</td>
+          <td>Versions prior to 2026.2.22 contain a path traversal vulnerability in the static file h...</td>
+          <td class="badge-ok">✓ Mitigated</td>
+        </tr>
+        <tr>
+          <td class="cve-id"><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-4040" target="_blank" rel="noopener">CVE-2026-4040</a></td>
+          <td class="badge-low">3.3 LOW</td>
+          <td>2.17</td>
+          <td class="badge-ok">✓ Mitigated</td>
+        </tr>
+        <tr>
+          <td class="cve-id"><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-32006" target="_blank" rel="noopener">CVE-2026-32006</a></td>
+          <td class="badge-low">3.1 LOW</td>
+          <td>Versions prior to 2026.2.26 contain an authorization bypass vulnerability where DM pair...</td>
+          <td class="badge-ok">✓ Mitigated</td>
+        </tr>
+        <tr>
+          <td class="cve-id"><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-32058" target="_blank" rel="noopener">CVE-2026-32058</a></td>
+          <td class="badge-low">2.6 LOW</td>
+          <td>Versions prior to 2026.2.26 contain an approval context-binding weakness in system.run ...</td>
+          <td class="badge-ok">✓ Mitigated</td>
+        </tr>
+        <tr>
+          <td class="cve-id"><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-32970" target="_blank" rel="noopener">CVE-2026-32970</a></td>
+          <td class="badge-low">2.5 LOW</td>
+          <td>Before 2026.3.11 contains a credential fallback vulnerability where unavailable local g...</td>
           <td class="badge-ok">✓ Mitigated</td>
         </tr>
       </tbody>
     </table>
+    <div class="cve-pagination">
+      <button id="pg-first" onclick="cvePg(1)" title="First page">&#171;</button>
+      <button id="pg-prev" onclick="cvePg(_pgCur-1)" title="Previous page">&#8249;</button>
+      <span class="pg-label">Page</span>
+      <input type="number" id="pg-input" min="1" value="1"
+             onchange="cvePg(parseInt(this.value)||1)"
+             onkeydown="if(event.key==='Enter')cvePg(parseInt(this.value)||1)">
+      <span class="pg-label" id="pg-of-label">of 1</span>
+      <button id="pg-next" onclick="cvePg(_pgCur+1)" title="Next page">&#8250;</button>
+      <button id="pg-last" onclick="cvePg(_pgTotal)" title="Last page">&#187;</button>
+    </div>
+    <script>
+    (function(){
+      var ROWS=20;
+      var rows=Array.from(document.getElementById('cve-tbody').querySelectorAll('tr'));
+      var total=rows.length;
+      window._pgCur=1;
+      window._pgTotal=Math.ceil(total/ROWS)||1;
+      document.getElementById('pg-of-label').textContent='of '+window._pgTotal;
+      document.getElementById('pg-input').max=window._pgTotal;
+      window.cvePg=function(n){
+        n=Math.max(1,Math.min(n,window._pgTotal));
+        window._pgCur=n;
+        var start=(n-1)*ROWS,end=start+ROWS;
+        rows.forEach(function(r,i){r.style.display=(i>=start&&i<end)?'':'none';});
+        document.getElementById('pg-input').value=n;
+        document.getElementById('pg-first').disabled=(n===1);
+        document.getElementById('pg-prev').disabled=(n===1);
+        document.getElementById('pg-next').disabled=(n===window._pgTotal);
+        document.getElementById('pg-last').disabled=(n===window._pgTotal);
+      };
+      window.cvePg(1);
+    })();
+    </script>
+    <!-- CVE_TABLE_END -->
   </div>
 </section>
 
@@ -545,8 +2311,9 @@ scripts/asb up</pre>
         <li>✓ Docker Engine (Colima on macOS)</li>
         <li>✓ Claude OAuth token <code style="font-size:0.8em;color:var(--accent)">sk-ant-oat01-...</code></li>
         <li>✓ Telegram bot token</li>
-        <li>✓ 1Password account credentials</li>
+        <li>✓ macOS Keychain (built-in, no setup needed)</li>
         <li>✓ Python 3 (for key generation)</li>
+        <li style="grid-column: 1 / -1; color: var(--muted); font-size: 0.8em; margin-top: 4px;">Optional: 1Password CLI (for teams / shared credentials)</li>
       </ul>
     </div>
 

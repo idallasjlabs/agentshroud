@@ -29,10 +29,17 @@ if [ -x /var/ossec/bin/wazuh-agentd ]; then
 fi
 
 # ---------------------------------------------------------------------------
+# Read the last non-empty line from a secret file.
+# Handles garbled multi-line blobs (label + asterisks + real value) written to
+# the secret backend before the 017e7bd write-path fix. For clean single-line
+# values the result is identical to a raw cat + strip.
+_read_secret_file() { awk 'NF {last=$0} END {printf "%s", last}' "$1"; }
+
+# ---------------------------------------------------------------------------
 # Export Gateway password from secret file
 # Note: OpenClaw CLI expects OPENCLAW_GATEWAY_PASSWORD env var
 if [ -f "/run/secrets/gateway_password" ]; then
-    export OPENCLAW_GATEWAY_PASSWORD="$(cat /run/secrets/gateway_password)"
+    export OPENCLAW_GATEWAY_PASSWORD="$(_read_secret_file /run/secrets/gateway_password)"
     # FINAL: also set GATEWAY_AUTH_TOKEN so op-wrapper.sh routes through gateway
     export GATEWAY_AUTH_TOKEN="$OPENCLAW_GATEWAY_PASSWORD"
     # SECURITY (H3): Strip DNS architecture info from resolv.conf comments
@@ -50,16 +57,16 @@ fi
 # Export Telegram bot token from secret file (per-host token injection)
 # The apply-patches.js script reads TELEGRAM_BOT_TOKEN and injects it into openclaw.json
 if [ -f "/run/secrets/telegram_bot_token" ]; then
-    export TELEGRAM_BOT_TOKEN="$(cat /run/secrets/telegram_bot_token)"
+    export TELEGRAM_BOT_TOKEN="$(_read_secret_file /run/secrets/telegram_bot_token)"
     echo "[startup] Loaded Telegram bot token"
 elif [ -n "${TELEGRAM_BOT_TOKEN_FILE:-}" ] && [ -f "$TELEGRAM_BOT_TOKEN_FILE" ]; then
-    export TELEGRAM_BOT_TOKEN="$(cat "$TELEGRAM_BOT_TOKEN_FILE")"
+    export TELEGRAM_BOT_TOKEN="$(_read_secret_file "$TELEGRAM_BOT_TOKEN_FILE")"
     echo "[startup] Loaded Telegram bot token from $TELEGRAM_BOT_TOKEN_FILE"
 fi
 
 # Export OpenAI API key from secret file (optional)
 if [ -f "/run/secrets/openai_api_key" ] && [ -s "/run/secrets/openai_api_key" ]; then
-    export OPENAI_API_KEY="$(cat /run/secrets/openai_api_key)"
+    export OPENAI_API_KEY="$(_read_secret_file /run/secrets/openai_api_key)"
     echo "[startup] Loaded OpenAI API key"
 else
     echo "[startup] OpenAI API key not configured (optional)"
@@ -67,7 +74,7 @@ fi
 
 # Export Google Gemini API key from secret file (optional)
 if [ -f "/run/secrets/google_api_key" ] && [ -s "/run/secrets/google_api_key" ]; then
-    export GOOGLE_API_KEY="$(cat /run/secrets/google_api_key)"
+    export GOOGLE_API_KEY="$(_read_secret_file /run/secrets/google_api_key)"
     echo "[startup] Loaded Google API key"
 else
     echo "[startup] Google API key not configured (optional)"
@@ -89,7 +96,7 @@ fi
 # Load Claude OAuth token only when running non-local model backends.
 if ! $_LOCAL_ONLY_MODEL; then
     if [ -f "/run/secrets/anthropic_oauth_token" ] && [ -s "/run/secrets/anthropic_oauth_token" ]; then
-        export ANTHROPIC_OAUTH_TOKEN="$(cat /run/secrets/anthropic_oauth_token)"
+        export ANTHROPIC_OAUTH_TOKEN="$(_read_secret_file /run/secrets/anthropic_oauth_token)"
         echo "[startup] Loaded Claude OAuth token (from secret file)"
     fi
 else
@@ -253,7 +260,7 @@ fi
 # Start AgentShroud gateway (powered by OpenClaw CLI)
 echo "[startup] Starting AgentShroud gateway..."
 OPENCLAW_BIND_MODE="${OPENCLAW_GATEWAY_BIND:-loopback}"
-openclaw gateway --allow-unconfigured --bind "${OPENCLAW_BIND_MODE}" &
+node --stack-size=65536 "$(command -v openclaw)" gateway --allow-unconfigured --bind "${OPENCLAW_BIND_MODE}" &
 OPENCLAW_PID=$!
 
 # Telegram notification helpers — ALL traffic routes through AgentShroud gateway

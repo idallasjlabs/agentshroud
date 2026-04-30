@@ -53,8 +53,9 @@ AlertDispatcher, CanaryTripwire, SOCCorrelation, ScannerIntegration
 
 AgentShroud maintains a registry of known CVEs in the wrapped AI agent (OpenClaw) and
 documents the specific defense layers that mitigate each vulnerability. As of v1.0.0,
-all 9 disclosed OpenClaw CVEs (March 2026) are **fully mitigated** by AgentShroud's
-defense-in-depth architecture. See the SOC "CVE Intelligence" dashboard for details.
+**All 293 tracked CVEs are fully mitigated** by AgentShroud's defense-in-depth
+architecture. See `docs/security/cve-mitigation-matrix.md` for the full matrix and
+the SOC "CVE Intelligence" dashboard for live status.
 
 ## Monitor Mode Warning
 

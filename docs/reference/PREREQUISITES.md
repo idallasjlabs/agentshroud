@@ -114,15 +114,44 @@ AgentShroud requires careful setup of **isolated accounts** to maintain the "One
 
 ---
 
-### 4. 1Password Account (Credential Management)
+### 4. Secrets Backend (Credential Management)
 
-**Required**: 1Password account for secure credential storage
+> **Default: macOS Keychain (built-in, no software required)**
+> AgentShroud auto-detects the best available backend in this order:
+> macOS Keychain → 1Password CLI → Linux secret-tool (GNOME Keyring) → `~/.agentshroud/secrets/` (homedir fallback)
+>
+> Override with: `AGENTSHROUD_SECRET_BACKEND=keychain|1password|secretstore|homedir`
+
+#### macOS Keychain (Default)
+
+No setup required — the system keychain is used automatically on macOS.
+
+**Unlock keychain in headless/SSH sessions**:
+```bash
+security unlock-keychain ~/Library/Keychains/login.keychain-db
+```
+
+**Verify the keychain is accessible**:
+```bash
+security show-keychain-info ~/Library/Keychains/login.keychain-db
+```
+
+**Store a secret manually**:
+```bash
+security add-generic-password -U -s "agentshroud" -a <name> -w <value>
+```
+
+Then run `./docker/setup-secrets.sh store` to populate all required secrets interactively.
+
+#### 1Password (Optional — Teams / Shared Credentials)
+
+1Password is **not required** for individual installs. Use it when you need shared vaults
+across a team or automated credential rotation.
 
 **Your Setup**: ✅ Separate 1Password account added to Family plan
 
 **Purpose**:
-- Secure credential storage
-- No plain-text passwords in chat
+- Shared credential storage across team members
 - Vault-based access control
 - Automatic credential rotation support
 
@@ -133,6 +162,7 @@ AgentShroud requires careful setup of **isolated accounts** to maintain the "One
 4. **DO NOT** store credentials in default "Shared" vault
 5. Share bot vault ONLY with bot account
 6. Add bot credentials (Gmail, API keys, etc.)
+7. Set `AGENTSHROUD_SECRET_BACKEND=1password` (or install `op` CLI so auto-detection picks it up)
 
 **Security**:
 - ✅ Bot account added to Family plan

@@ -54,6 +54,7 @@ class CredentialMapping:
     header_name: str  # e.g., "Authorization", "x-api-key"
     secret_file: str  # path to secret file in /run/secrets/
     header_prefix: str = ""  # e.g., "Bearer " for Authorization headers
+    strip_headers: List[str] = field(default_factory=list)  # headers to remove before injecting
     loaded_value: Optional[str] = field(default=None, repr=False)
 
 
@@ -88,12 +89,15 @@ class CredentialInjector:
                 header_name="Authorization",
                 secret_file="anthropic_oauth_token",
                 header_prefix="Bearer ",
+                # OpenClaw sends x-api-key; strip it so Anthropic sees only the Bearer token
+                strip_headers=["x-api-key"],
             ),
             CredentialMapping(
                 domain="api.openai.com",
                 header_name="Authorization",
                 secret_file="openai_api_key",
                 header_prefix="Bearer ",
+                strip_headers=["x-api-key"],
             ),
             CredentialMapping(
                 domain="generativelanguage.googleapis.com",
@@ -144,6 +148,12 @@ class CredentialInjector:
 
         mapping = self._domain_map.get(destination_domain)
         if mapping and mapping.loaded_value:
+            # Strip conflicting auth headers (e.g. x-api-key when injecting Bearer)
+            for strip_hdr in mapping.strip_headers:
+                headers.pop(strip_hdr, None)
+                # Headers are case-insensitive in HTTP; check common casings
+                headers.pop(strip_hdr.lower(), None)
+                headers.pop(strip_hdr.title(), None)
             headers[mapping.header_name] = f"{mapping.header_prefix}{mapping.loaded_value}"
             logger.debug(f"Injected credential for {destination_domain}")
 

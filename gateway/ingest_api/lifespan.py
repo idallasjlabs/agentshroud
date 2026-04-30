@@ -448,7 +448,7 @@ async def lifespan(app: FastAPI):
         await app_state.audit_store.log_event(
             event_type="gateway_startup",
             severity="INFO",
-            details={"version": "1.0.0", "db_path": _audit_db},
+            details={"version": "1.0.44", "db_path": _audit_db},
             source_module="lifespan",
         )
     except Exception as e:
@@ -502,6 +502,26 @@ async def lifespan(app: FastAPI):
         logger.error("✗ EnvelopeSigner: %s", _es_exc)
         _envelope_signer = None
 
+    # Pre-load ToolResultInjectionScanner for inbound injection scanning (CVE-2026-30741).
+    _inbound_injection_scanner = None
+    try:
+        from ..security.tool_result_injection import ToolResultInjectionScanner
+
+        _inbound_injection_scanner = ToolResultInjectionScanner()
+        logger.info("InboundInjectionScanner initialized (CVE-2026-30741 mitigation)")
+    except Exception as _inj_exc:
+        logger.warning("InboundInjectionScanner not available: %s", _inj_exc)
+
+    # Pre-load XMLLeakFilter for inbound C32 command injection scanning (CVE-2026-34425).
+    _inbound_xml_leak_filter = None
+    try:
+        from ..security.xml_leak_filter import XMLLeakFilter
+
+        _inbound_xml_leak_filter = XMLLeakFilter()
+        logger.info("C32InboundScan (XMLLeakFilter) initialized (CVE-2026-34425 mitigation)")
+    except Exception as _xml_exc:
+        logger.warning("C32InboundScan not available: %s", _xml_exc)
+
     # Pre-load ClamAV scan_bytes so the pipeline is constructed with it already wired.
     # Without this, SecurityPipeline fires a CRITICAL warning at construction time even
     # though clamav_scanner is set moments later in the post-pipeline init block.
@@ -540,6 +560,8 @@ async def lifespan(app: FastAPI):
         output_schema_enforcer=_output_schema_enforcer,
         envelope_signer=_envelope_signer,
         clamav_scanner=_clamav_scan_bytes,
+        tool_result_injection_scanner=_inbound_injection_scanner,
+        xml_leak_filter=_inbound_xml_leak_filter,
     )
     logger.info("Security pipeline initialized")
 
@@ -1353,6 +1375,34 @@ async def lifespan(app: FastAPI):
     except Exception as _cve_exc:
         logger.warning("⚠ Daily CVE report scheduler failed to start: %s", _cve_exc)
 
+    # -- Upstream CVE watch: daily GitHub Advisory diff → Telegram alert at same hour --
+    try:
+        from ..security.daily_cve_report import (
+            upstream_cve_check_scheduler as _upstream_cve_scheduler,
+        )
+
+        _gh_token = os.environ.get("GITHUB_TOKEN") or None
+        if _cve_token and _cve_owner_id:
+            app_state._upstream_cve_check_task = _asyncio.create_task(
+                _upstream_cve_scheduler(
+                    bot_token=_cve_token,
+                    owner_chat_id=_cve_owner_id,
+                    base_url=_cve_tg_base,
+                    report_hour=_cve_hour,
+                    github_token=_gh_token,
+                )
+            )
+            logger.info(
+                "✓ Upstream CVE check scheduler started (UTC hour=%d, offset +5 min)",
+                _cve_hour,
+            )
+        else:
+            logger.warning(
+                "⚠ Upstream CVE check scheduler skipped — TELEGRAM_BOT_TOKEN or owner_user_id not set"
+            )
+    except Exception as _upstream_exc:
+        logger.warning("⚠ Upstream CVE check scheduler failed to start: %s", _upstream_exc)
+
     # Startup security scanner — runs ClamAV + Trivy 30s after boot so the SOC
     # shows real results immediately rather than waiting for a manual POST trigger.
     async def _startup_scanner():
@@ -1539,6 +1589,49 @@ async def lifespan(app: FastAPI):
     # Record start time
     app_state.start_time = time.time()
 
+    # Canvas Auth-Proxy: start a second uvicorn server on port 18789 that
+    # validates the gateway password before forwarding to bot:18789.
+    # Mitigates CVE-2026-34871 (Canvas Authentication Bypass).
+    # Non-fatal: if the port is unavailable (e.g., in tests or dev), log and continue.
+    _canvas_port = int(os.environ.get("CANVAS_PROXY_PORT", "18789"))
+    _canvas_enabled = os.environ.get("CANVAS_PROXY_ENABLED", "true").lower() not in (
+        "false",
+        "0",
+        "no",
+    )
+
+    async def _run_canvas_proxy() -> None:
+        import uvicorn as _uvicorn
+
+        from ..proxy.canvas_proxy import canvas_proxy_app as _canvas_app
+
+        try:
+            _canvas_config = _uvicorn.Config(
+                _canvas_app,
+                host="0.0.0.0",
+                port=_canvas_port,
+                loop="asyncio",
+                log_config=None,
+                access_log=False,
+            )
+            _canvas_server = _uvicorn.Server(_canvas_config)
+            await _canvas_server.serve()
+        except OSError as _ose:
+            logger.warning("⚠ Canvas auth-proxy port %d unavailable: %s", _canvas_port, _ose)
+        except SystemExit:
+            logger.warning("⚠ Canvas auth-proxy port %d unavailable (bind failed)", _canvas_port)
+        except Exception as _exc:
+            logger.warning("⚠ Canvas auth-proxy error: %s", _exc)
+
+    if _canvas_enabled:
+        app_state._canvas_proxy_task = _asyncio.create_task(_run_canvas_proxy())
+        logger.info(
+            "✓ Canvas auth-proxy scheduled on port %d (CVE-2026-34871 mitigation)", _canvas_port
+        )
+    else:
+        app_state._canvas_proxy_task = None
+        logger.info("Canvas auth-proxy disabled via CANVAS_PROXY_ENABLED=false")
+
     install_log_handler()
     logger.info(f"AgentShroud Gateway ready at {app_state.config.bind}:{app_state.config.port}")
     logger.info("=" * 80)
@@ -1581,6 +1674,15 @@ async def lifespan(app: FastAPI):
     if getattr(app_state, "dns_blocklist", None):
         app_state.dns_blocklist.stop()
         logger.info("DNSBlocklist periodic updates stopped")
+
+    # Stop Canvas auth-proxy
+    canvas_proxy_task = getattr(app_state, "_canvas_proxy_task", None)
+    if canvas_proxy_task and not canvas_proxy_task.done():
+        canvas_proxy_task.cancel()
+        try:
+            await canvas_proxy_task
+        except asyncio.CancelledError:
+            pass
 
     # Stop Slack Socket Mode client
     slack_socket_client = getattr(app_state, "slack_socket_client", None)

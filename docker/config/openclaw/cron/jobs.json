@@ -81,7 +81,7 @@
       "wakeMode": "now",
       "payload": {
         "kind": "agentTurn",
-        "message": "Competitive intelligence update. ZERO HALLUCINATIONS RULE: only include facts directly verifiable from fetched pages — omit or mark [unverified] anything you cannot confirm. Steps: 1) Fetch current state from the GitHub API: https://api.github.com/repos/openclaw/openclaw/releases/latest, https://api.github.com/repos/drposter/nanobot/releases/latest, https://api.github.com/repos/moshehbenavraham/crocbot/releases/latest, https://api.github.com/repos/jimtin/zetherion-ai/releases/latest, https://api.github.com/repos/qwibitai/nanoclaw/releases/latest, https://api.github.com/repos/NevaMind-AI/memU/releases/latest, https://api.github.com/repos/sipeed/picoclaw/releases/latest. Also search for recent news on 'AI personal assistant bot 2026', 'autonomous agent Telegram security', 'Claude MCP agent framework'. 2) Compare with /home/node/.openclaw/workspace/competitive-analysis.md. 3) If significant changes found (new release, security feature, major update, pricing change, star milestone), create /home/node/.openclaw/workspace/reports/competitive-report-[YYYY-MM-DD].md with four sections: ## Market Analysis (trends, key movements, positioning threats/opportunities for AgentShroud), ## Competitor Matrix (table: Competitor | Version | Key Features | Security Posture | Pricing | Notable Changes), ## Autonomous Agent Ecosystem (tool integrations, agent frameworks, MCP adoption, orchestration trends), ## Next Steps (specific recommended responses to competitive changes). 4) Update /home/node/.openclaw/workspace/competitive-analysis.md with verified latest state. 5) Append to /home/node/.openclaw/workspace/reports/trend-log.md: [DATE] | [top verified change] | [recommended action]. 6) If nothing significant changed, append to trend-log.md: [DATE] | No significant changes detected | No action needed. Do not update competitive-analysis.md if nothing changed."
+        "message": "Competitive intelligence update. SOURCING RULES (non-negotiable, zero exceptions): (1) Every claim MUST include the exact URL you fetched it from — inline in parentheses immediately after the claim. (2) NEVER generate, construct, guess, or infer a URL. NEVER include information from memory or training data. (3) If a GitHub API endpoint returns 404, null, or any error, omit that competitor entirely — do NOT infer its version, features, or any other data. (4) NEVER include news articles, blog posts, or press releases — these cannot be reliably fetched and verified. Silence is correct; hallucination is a critical failure. Steps: 1) Fetch ONLY these GitHub API URLs and record ONLY data present in the 200 responses: https://api.github.com/repos/openclaw/openclaw/releases/latest, https://api.github.com/repos/drposter/nanobot/releases/latest, https://api.github.com/repos/moshehbenavraham/crocbot/releases/latest, https://api.github.com/repos/jimtin/zetherion-ai/releases/latest, https://api.github.com/repos/qwibitai/nanoclaw/releases/latest, https://api.github.com/repos/NevaMind-AI/memU/releases/latest, https://api.github.com/repos/sipeed/picoclaw/releases/latest. For each endpoint that returns a non-200 status, record only: 'No public release data (API returned [status])'. 2) Compare verified API results with /home/node/.openclaw/workspace/competitive-analysis.md. 3) If significant changes found (new release, star milestone, or notable tag date shift) based ONLY on verified API responses, create /home/node/.openclaw/workspace/reports/competitive-report-[YYYY-MM-DD].md with two sections: ## Competitor Matrix (table: Competitor | Latest Version | Source URL | Tag Date | Notable Changes — only rows with a verified 200 API response; omit any row where the API returned non-200 or null), ## Next Steps (specific recommended responses to verified competitive changes only — no speculation). 4) Update /home/node/.openclaw/workspace/competitive-analysis.md with verified latest state. 5) Append to /home/node/.openclaw/workspace/reports/trend-log.md: [DATE] | [top verified change with URL] | [recommended action]. If nothing significant changed: [DATE] | No significant changes detected | No action needed. Do not update competitive-analysis.md if nothing changed."
       },
       "state": {
         "nextRunAtMs": 1771847100000,
@@ -112,7 +112,7 @@
       "wakeMode": "now",
       "payload": {
         "kind": "agentTurn",
-        "message": "Send the morning competitive analysis email. Steps: 1) Determine today's date in YYYY-MM-DD format. 2) Check if a competitive-report-[today's date].md exists in /home/node/.openclaw/workspace/reports/ — if yes, read that file; otherwise read /home/node/.openclaw/workspace/competitive-analysis.md as fallback. 3) Get Gmail app password via: export OP_SERVICE_ACCOUNT_TOKEN=$(cat /run/secrets/1password_service_account) && op item get tdx3r77qoplljrv45luh7zkngi --vault 'Agent Shroud Bot Credentials' --fields label=password --reveal. 4) Send email to idallasj@gmail.com from agentshroud.ai@gmail.com using nodemailer (smtp.gmail.com:465 SSL). Subject: AgentShroud Competitive Intelligence (AM) - [today date]. Body: full report content as plain text. 5) Report success or failure to Isaiah."
+        "message": "Send the morning competitive analysis email. Steps: 1) Determine today's date in YYYY-MM-DD format. 2) Check if a competitive-report-[today's date].md exists in /home/node/.openclaw/workspace/reports/ — if yes, read that file; otherwise read /home/node/.openclaw/workspace/competitive-analysis.md as fallback. 3) Get Gmail app password via: export OP_SERVICE_ACCOUNT_TOKEN=$(cat /run/secrets/1password_service_account) && op item get wgblbbbqkmnyobh2xtr6r65k34 --vault 'Agent Shroud Bot Credentials' --fields label='gmail app password' --reveal. 4) Send email to idallasj@gmail.com from agentshroud.ai@gmail.com using nodemailer (smtp.gmail.com:465 SSL). Subject: AgentShroud Competitive Intelligence (AM) - [today date]. Body: render as a clean HTML email. Use ONLY light-background email-safe inline styles: wrap entire body in a div with style=\"background:#ffffff;color:#111111;font-family:sans-serif;padding:24px\". No dark backgrounds, no CSS classes, no <style> blocks, no dark-mode. Headings in #111111, links in #1a73e8, code in #f1f3f4 background with #111111 text.. 5) Report success or failure to Isaiah."
       },
       "state": {
         "nextRunAtMs": 1771848000000,
@@ -144,7 +144,7 @@
       "wakeMode": "now",
       "payload": {
         "kind": "agentTurn",
-        "message": "Generate a collaborator activity report for the last 24 hours. Step 1: determine today's date in YYYY-MM-DD format. Step 2: look for contributor log files whose filenames START WITH today's date in BOTH paths: /home/node/agentshroud/gateway-data/contributors/ (primary) and /home/node/.openclaw/workspace/memory/contributors/ (fallback). Only read files matching today's date prefix — do NOT read files from previous days. Step 3: merge any duplicate entries across both paths. Step 4: summarize who messaged the bot today, what they asked, what recommendations they made, and any action items for Isaiah. If no files are found for today's date, report exactly: No collaborator activity in the last 24 hours. Keep it concise. Note: Isaiah can request a full history report by asking the agent directly (e.g., 'show Brett's full activity this week')."
+        "message": "Generate a collaborator activity report. Format your entire response using Telegram HTML mode (bold tags only, no markdown). Output exactly this structure:\n\n<b>AgentShroud(tm) -- Collaborator Report (Morning)</b>\n<b>Date:</b> [TODAY]\n\n<b>Active Collaborators</b>\n[list each with message count]\n\n<b>Key Topics</b>\n[brief bullets of what was asked]\n\n<b>Action Items for Isaiah</b>\n[items requiring attention, or: None]\n\nSteps: 1) Get today's date YYYY-MM-DD. 2) Read contributor log files starting with today's date from /home/node/agentshroud/gateway-data/contributors/ (primary) and /home/node/.openclaw/workspace/memory/contributors/ (fallback) — today only, no prior days. 3) Merge duplicates. 4) Fill in the template above. If no files found output: No collaborator activity in the last 24 hours."
       },
       "state": {
         "nextRunAtMs": 1771858800000,
@@ -175,7 +175,7 @@
       "wakeMode": "now",
       "payload": {
         "kind": "agentTurn",
-        "message": "Generate a collaborator activity report for the last 24 hours. Step 1: determine today's date in YYYY-MM-DD format. Step 2: look for contributor log files whose filenames START WITH today's date in BOTH paths: /home/node/agentshroud/gateway-data/contributors/ (primary) and /home/node/.openclaw/workspace/memory/contributors/ (fallback). Only read files matching today's date prefix — do NOT read files from previous days. Step 3: merge any duplicate entries across both paths. Step 4: summarize who messaged the bot today, what they asked, what recommendations they made, and any action items for Isaiah. If no files are found for today's date, report exactly: No collaborator activity in the last 24 hours. Keep it concise. Note: Isaiah can request a full history report by asking the agent directly (e.g., 'show Brett's full activity this week')."
+        "message": "Generate a collaborator activity report. Format your entire response using Telegram HTML mode (bold tags only, no markdown). Output exactly this structure:\n\n<b>AgentShroud(tm) -- Collaborator Report (Evening)</b>\n<b>Date:</b> [TODAY]\n\n<b>Active Collaborators</b>\n[list each with message count]\n\n<b>Key Topics</b>\n[brief bullets of what was asked]\n\n<b>Action Items for Isaiah</b>\n[items requiring attention, or: None]\n\nSteps: 1) Get today's date YYYY-MM-DD. 2) Read contributor log files starting with today's date from /home/node/agentshroud/gateway-data/contributors/ (primary) and /home/node/.openclaw/workspace/memory/contributors/ (fallback) — today only, no prior days. 3) Merge duplicates. 4) Fill in the template above. If no files found output: No collaborator activity in the last 24 hours."
       },
       "state": {
         "nextRunAtMs": 1771861500000,
@@ -206,7 +206,7 @@
       "wakeMode": "now",
       "payload": {
         "kind": "agentTurn",
-        "message": "Generate the daily collaborator digest for the last 24 hours. Step 1: determine today's date in YYYY-MM-DD format. Step 2: read only contributor log files whose filenames START WITH today's date from BOTH paths: /home/node/agentshroud/gateway-data/contributors/ (primary) and /home/node/.openclaw/workspace/memory/contributors/ (fallback). Do NOT read files from previous days. Step 3: merge duplicates. Step 4: produce a structured summary — 1) Total interactions per collaborator today 2) Key questions asked 3) Recommendations and suggestions made 4) Action items requiring Isaiah's attention 5) Any concerns or notable patterns. If no files are found for today's date, report exactly: No collaborator activity in the last 24 hours. Isaiah can request a full history report by asking the agent directly (e.g., 'show all Steve's messages from last week' or 'full collaborator report for the past 7 days')."
+        "message": "Generate the daily collaborator digest. Format your entire response using Telegram HTML mode (bold tags only, no markdown). Output exactly this structure:\n\n<b>AgentShroud(tm) -- Daily Collaborator Digest</b>\n<b>Date:</b> [TODAY]\n\n<b>Summary</b>\n[total interactions per collaborator today]\n\n<b>Key Questions</b>\n[questions and topics raised]\n\n<b>Recommendations</b>\n[suggestions made by collaborators]\n\n<b>Action Items for Isaiah</b>\n[items requiring attention, or: None]\n\n<b>Notable Patterns</b>\n[concerns or unusual activity, or: None]\n\nSteps: 1) Get today's date YYYY-MM-DD. 2) Read contributor log files starting with today's date from /home/node/agentshroud/gateway-data/contributors/ (primary) and /home/node/.openclaw/workspace/memory/contributors/ (fallback) — today only, no prior days. 3) Merge duplicates. 4) Fill in the template above. If no files found output: No collaborator activity in the last 24 hours."
       },
       "state": {
         "nextRunAtMs": 1771826400000,
@@ -236,7 +236,7 @@
       "wakeMode": "now",
       "payload": {
         "kind": "agentTurn",
-        "message": "Competitive intelligence update. ZERO HALLUCINATIONS RULE: only include facts directly verifiable from fetched pages — omit or mark [unverified] anything you cannot confirm. Steps: 1) Fetch current state from the GitHub API: https://api.github.com/repos/openclaw/openclaw/releases/latest, https://api.github.com/repos/drposter/nanobot/releases/latest, https://api.github.com/repos/moshehbenavraham/crocbot/releases/latest, https://api.github.com/repos/jimtin/zetherion-ai/releases/latest, https://api.github.com/repos/qwibitai/nanoclaw/releases/latest, https://api.github.com/repos/NevaMind-AI/memU/releases/latest, https://api.github.com/repos/sipeed/picoclaw/releases/latest. Also search for recent news on 'AI personal assistant bot 2026', 'autonomous agent Telegram security', 'Claude MCP agent framework'. 2) Compare with /home/node/.openclaw/workspace/competitive-analysis.md. 3) If significant changes found (new release, security feature, major update, pricing change, star milestone), create /home/node/.openclaw/workspace/reports/competitive-report-[YYYY-MM-DD].md with four sections: ## Market Analysis (trends, key movements, positioning threats/opportunities for AgentShroud), ## Competitor Matrix (table: Competitor | Version | Key Features | Security Posture | Pricing | Notable Changes), ## Autonomous Agent Ecosystem (tool integrations, agent frameworks, MCP adoption, orchestration trends), ## Next Steps (specific recommended responses to competitive changes). 4) Update /home/node/.openclaw/workspace/competitive-analysis.md with verified latest state. 5) Append to /home/node/.openclaw/workspace/reports/trend-log.md: [DATE] | [top verified change] | [recommended action]. 6) If nothing significant changed, append to trend-log.md: [DATE] | No significant changes detected | No action needed. Do not update competitive-analysis.md if nothing changed."
+        "message": "Competitive intelligence update. SOURCING RULES (non-negotiable, zero exceptions): (1) Every claim MUST include the exact URL you fetched it from — inline in parentheses immediately after the claim. (2) NEVER generate, construct, guess, or infer a URL. NEVER include information from memory or training data. (3) If a GitHub API endpoint returns 404, null, or any error, omit that competitor entirely — do NOT infer its version, features, or any other data. (4) NEVER include news articles, blog posts, or press releases — these cannot be reliably fetched and verified. Silence is correct; hallucination is a critical failure. Steps: 1) Fetch ONLY these GitHub API URLs and record ONLY data present in the 200 responses: https://api.github.com/repos/openclaw/openclaw/releases/latest, https://api.github.com/repos/drposter/nanobot/releases/latest, https://api.github.com/repos/moshehbenavraham/crocbot/releases/latest, https://api.github.com/repos/jimtin/zetherion-ai/releases/latest, https://api.github.com/repos/qwibitai/nanoclaw/releases/latest, https://api.github.com/repos/NevaMind-AI/memU/releases/latest, https://api.github.com/repos/sipeed/picoclaw/releases/latest. For each endpoint that returns a non-200 status, record only: 'No public release data (API returned [status])'. 2) Compare verified API results with /home/node/.openclaw/workspace/competitive-analysis.md. 3) If significant changes found (new release, star milestone, or notable tag date shift) based ONLY on verified API responses, create /home/node/.openclaw/workspace/reports/competitive-report-[YYYY-MM-DD].md with two sections: ## Competitor Matrix (table: Competitor | Latest Version | Source URL | Tag Date | Notable Changes — only rows with a verified 200 API response; omit any row where the API returned non-200 or null), ## Next Steps (specific recommended responses to verified competitive changes only — no speculation). 4) Update /home/node/.openclaw/workspace/competitive-analysis.md with verified latest state. 5) Append to /home/node/.openclaw/workspace/reports/trend-log.md: [DATE] | [top verified change with URL] | [recommended action]. If nothing significant changed: [DATE] | No significant changes detected | No action needed. Do not update competitive-analysis.md if nothing changed."
       },
       "state": {
         "nextRunAtMs": 1771793100000,
@@ -266,7 +266,7 @@
       "wakeMode": "now",
       "payload": {
         "kind": "agentTurn",
-        "message": "Send the afternoon competitive analysis email. Steps: 1) Determine today's date in YYYY-MM-DD format. 2) Check if a competitive-report-[today's date].md exists in /home/node/.openclaw/workspace/reports/ — if yes, read that file; otherwise read /home/node/.openclaw/workspace/competitive-analysis.md as fallback. 3) Get Gmail app password: export OP_SERVICE_ACCOUNT_TOKEN=$(cat /run/secrets/1password_service_account) && op item get tdx3r77qoplljrv45luh7zkngi --vault 'Agent Shroud Bot Credentials' --fields label='password' --reveal. 4) Send email to idallasj@gmail.com from agentshroud.ai@gmail.com using nodemailer (smtp.gmail.com:465 SSL). Subject: 'AgentShroud Competitive Intelligence (PM) - [today date]'. Body: full report content as plain text. 5) Report success or failure to Isaiah."
+        "message": "Send the afternoon competitive analysis email. Steps: 1) Determine today's date in YYYY-MM-DD format. 2) Check if a competitive-report-[today's date].md exists in /home/node/.openclaw/workspace/reports/ — if yes, read that file; otherwise read /home/node/.openclaw/workspace/competitive-analysis.md as fallback. 3) Get Gmail app password: export OP_SERVICE_ACCOUNT_TOKEN=$(cat /run/secrets/1password_service_account) && op item get wgblbbbqkmnyobh2xtr6r65k34 --vault 'Agent Shroud Bot Credentials' --fields label='gmail app password' --reveal. 4) Send email to idallasj@gmail.com from agentshroud.ai@gmail.com using nodemailer (smtp.gmail.com:465 SSL). Subject: 'AgentShroud Competitive Intelligence (PM) - [today date]'. Body: render as a clean HTML email. Use ONLY light-background email-safe inline styles: wrap entire body in a div with style=\"background:#ffffff;color:#111111;font-family:sans-serif;padding:24px\". No dark backgrounds, no CSS classes, no <style> blocks, no dark-mode. Headings in #111111, links in #1a73e8, code in #f1f3f4 background with #111111 text.. 5) Report success or failure to Isaiah."
       },
       "state": {
         "nextRunAtMs": 1771794000000,
@@ -302,6 +302,49 @@
       },
       "state": {
         "nextRunAtMs": 1771833300000,
+        "lastRunAtMs": 0,
+        "lastStatus": "ok",
+        "lastDurationMs": 0,
+        "consecutiveErrors": 0
+      },
+      "delivery": {
+        "mode": "announce",
+        "channel": "telegram"
+      }
+    },
+    {
+      "name": "Weekly Kaizen Review",
+      "schedule": "0 17 * * 5",
+      "timezone": "America/New_York",
+      "enabled": true,
+      "payload": "It's Friday 5 PM — time for the weekly kaizen review. Please analyze this week's activity: What shipped? What broke or caused friction? What process improvements would have the most impact? Be specific and actionable. Format your response as: SHIPPED / BROKE / IMPROVE."
+    },
+    {
+      "name": "Monthly Chaos Engineering Drill",
+      "schedule": "0 9 1 * *",
+      "timezone": "America/New_York",
+      "enabled": true,
+      "payload": "First of the month — chaos engineering drill. Simulate one realistic failure scenario for AgentShroud. Choose from: gateway crash, volume corruption, bot disconnect, or dependency outage. Describe: the failure mode, detection method, expected blast radius, and recovery procedure. Keep it concise and actionable."
+    },
+    {
+      "id": "bffec5cb-3373-4c80-b628-1b3e2c78ff1c",
+      "agentId": "main",
+      "name": "Daily CVE Triage & Remediation Scan",
+      "enabled": true,
+      "notify": true,
+      "schedule": {
+        "kind": "cron",
+        "expr": "30 6 * * *",
+        "tz": "America/New_York"
+      },
+      "sessionTarget": "isolated",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "agentTurn",
+        "message": "CVE Triage & Remediation Scan. SOURCING RULES (non-negotiable, zero exceptions): (1) Every claim MUST include the exact URL you fetched it from — inline in parentheses immediately after the claim. (2) NEVER generate, construct, guess, or infer a URL. NEVER include information from memory or training data. (3) If a GitHub API endpoint returns 404, null, or any error, omit that competitor entirely — do NOT infer its version, features, or any other data. (4) NEVER include news articles, blog posts, or press releases — these cannot be reliably fetched and verified. Silence is correct; hallucination is a critical failure. Steps: 1) Fetch https://api.github.com/repos/openclaw/openclaw/security-advisories?per_page=100. If this endpoint returns non-200, report the status and stop — do NOT infer any CVE data. For each CVE in the response, record ONLY fields present in the API response: CVE ID, CVSS score, severity, summary, published date. NEVER generate or guess CVE IDs, CVSS scores, summaries, or fix versions. 2) Read gateway/security/agent_cve_registry.py on marvin (SSH if needed) and extract all known CVE IDs. 3) For any NEW CVEs present in the API response but not in our registry: report to Telegram: CVE ID, CVSS, severity, and summary exactly as returned by the API (include the advisory URL). Analyze which AgentShroud security modules (PromptGuard, EgressFilter, RBAC, etc.) could mitigate the vulnerability. State whether it is likely FULLY_MITIGATED, PARTIALLY_MITIGATED, or NOT_MITIGATED by our current defenses. If code changes are needed, describe the specific file and change required — do NOT make the change. 4) For CVEs in our registry with status partially_mitigated or not_mitigated: check if the upstream version in fixed_in has been deployed; suggest whether the status should be upgraded. 5) Post a Telegram summary: total CVEs in API response, new since yesterday (by CVE ID), any requiring code remediation. Use bold for CVE IDs and CVSS scores. Keep concise."
+      },
+      "state": {
+        "nextRunAtMs": 0,
         "lastRunAtMs": 0,
         "lastStatus": "ok",
         "lastDurationMs": 0,

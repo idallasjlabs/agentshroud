@@ -94,6 +94,10 @@ class TeamsConfig(BaseModel):
 
     groups: Dict[str, GroupConfig] = Field(default_factory=dict)
     projects: Dict[str, ProjectConfig] = Field(default_factory=dict)
+    # Per-user collab mode overrides set via SOC dashboard.
+    # Takes precedence over group-derived mode. Persisted in group_overrides.json
+    # under the "__user_overrides__" key so it survives restarts and rebuilds.
+    user_overrides: Dict[str, Dict[str, str]] = Field(default_factory=dict)
 
     def model_post_init(self, __context) -> None:
         # Back-fill group ids from dict key
@@ -102,6 +106,14 @@ class TeamsConfig(BaseModel):
                 gcfg.id = gid
         # Apply persisted group overrides (runtime member additions)
         _apply_persisted_overrides(self)
+        # Load persisted per-user overrides
+        try:
+            if _GROUP_OVERRIDES_FILE.exists():
+                data = json.loads(_GROUP_OVERRIDES_FILE.read_text(encoding="utf-8"))
+                for uid, prefs in data.get("__user_overrides__", {}).items():
+                    self.user_overrides[str(uid)] = prefs
+        except Exception as exc:
+            logger.warning("Could not load user overrides: %s", exc)
 
     # ------------------------------------------------------------------
     # Membership queries
@@ -154,12 +166,23 @@ class TeamsConfig(BaseModel):
         return None
 
     def get_user_collab_mode(self, user_id: str) -> str:
-        """Return the most-permissive collab_mode across all user's groups.
+        """Return the effective collab_mode for a user.
 
-        Ordering: full_access > project_scoped > local_only.
+        Resolution order:
+          1. Per-user override set via SOC dashboard (highest priority)
+          2. Most-permissive mode across all groups the user belongs to
+          3. "local_only" (safe default)
+
+        Mode ordering: full_access > project_scoped > local_only.
         """
+        # 1. Per-user override takes precedence over group-derived mode.
+        uid = str(user_id)
+        override = self.user_overrides.get(uid, {}).get("collab_mode")
+        if override:
+            return override
+        # 2. Group aggregation — most permissive wins.
         mode_rank = {"local_only": 0, "project_scoped": 1, "full_access": 2}
-        groups = self.get_user_groups(user_id)
+        groups = self.get_user_groups(uid)
         if not groups:
             return "local_only"
         best = max(groups, key=lambda g: mode_rank.get(g.collab_mode, 0))
@@ -180,6 +203,9 @@ def _apply_persisted_overrides(teams: TeamsConfig) -> None:
             return
         data = json.loads(_GROUP_OVERRIDES_FILE.read_text(encoding="utf-8"))
         for group_id, ops in data.items():
+            # Skip the reserved per-user overrides key — handled in model_post_init.
+            if group_id == "__user_overrides__":
+                continue
             # Runtime deletions take priority
             if ops.get("_deleted"):
                 teams.groups.pop(group_id, None)
@@ -270,6 +296,18 @@ def persist_group_collab_mode(group_id: str, mode: str) -> None:
     data.setdefault(group_id, {})["collab_mode"] = mode
     _save_overrides(data)
     logger.info("Persisted group collab_mode: %s → %s", group_id, mode)
+
+
+def persist_user_collab_mode(user_id: str, mode: str) -> None:
+    """Persist a per-user collab mode override set via the SOC dashboard.
+
+    Stored under the reserved "__user_overrides__" key in group_overrides.json
+    so it survives container restarts and rebuilds without affecting group data.
+    """
+    data = _load_overrides()
+    data.setdefault("__user_overrides__", {}).setdefault(str(user_id), {})["collab_mode"] = mode
+    _save_overrides(data)
+    logger.info("Persisted user collab_mode override: %s → %s", user_id, mode)
 
 
 def persist_group_create(
