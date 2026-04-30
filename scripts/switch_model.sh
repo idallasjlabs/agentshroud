@@ -60,7 +60,7 @@ LOCAL_REF="ollama/qwen3:14b"
 CLOUD_REF="anthropic/claude-opus-4-6"
 OPENCLAW_MAIN_MODEL=""
 LOCAL_MODEL_NAME="qwen3:14b"
-OLLAMA_PROVIDER_API="ollama"
+OLLAMA_PROVIDER_API="ollama"  # overridden to openai-completions for local-multi below
 LMSTUDIO_API_BASE="${LMSTUDIO_API_BASE:-http://host.docker.internal:1234}"
 MLXLM_API_BASE="${MLXLM_API_BASE:-http://host.docker.internal:8234}"
 ANCHOR_MODEL="${AGENTSHROUD_ANCHOR_MODEL:-qwen3.5:27b}"
@@ -99,6 +99,9 @@ case "$TARGET" in
       OPENCLAW_MAIN_MODEL="${LOCAL_REF}"
       LOCAL_MODEL_NAME="${LOCAL_REF#ollama/}"
     fi
+<<<<<<< HEAD
+    # LM Studio speaks OpenAI format, not Ollama native format.
+    OLLAMA_PROVIDER_API="openai-completions"
     ;;
   gemini)
     MODEL_MODE="cloud"
