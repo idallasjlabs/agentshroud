@@ -14,6 +14,7 @@ import asyncio
 import json
 import logging
 import os
+import re
 import ssl
 import time
 import urllib.error
@@ -38,8 +39,9 @@ MODEL_MODE = os.environ.get("AGENTSHROUD_MODEL_MODE", "local").lower()
 # Models not listed here fall through to OLLAMA_API_BASE automatically.
 LOCAL_MODEL_ROUTES: dict[str, str] = {
     "deepseek-r1": MLXLM_API_BASE,  # Reasoning — mlx_lm on :8234 (no tool calling)
-    "qwen3.5": LMSTUDIO_API_BASE,  # Anchor — LM Studio on :1234
+    "qwen3": LMSTUDIO_API_BASE,  # Qwen3 family — LM Studio on :1234
     "qwen2.5-coder": LMSTUDIO_API_BASE,  # Coding — LM Studio on :1234
+    "gemma": LMSTUDIO_API_BASE,  # Gemma family — LM Studio on :1234
 }
 
 
@@ -384,12 +386,31 @@ class LLMProxy:
             # OpenAI
             if "choices" in data and isinstance(data["choices"], list):
                 for i, choice in enumerate(data["choices"]):
-                    if "message" in choice and "content" in choice["message"]:
-                        text = choice["message"]["content"]
-                        filtered, was_f = await self._apply_filters(text)
-                        if was_f:
-                            data["choices"][i]["message"]["content"] = filtered
+                    if "message" in choice:
+                        msg = choice["message"]
+                        # Handle reasoning_content (LM Studio separateReasoningContentInAPI).
+                        # When present, content has the final answer and reasoning_content
+                        # has the thinking. If content is empty, fall back to reasoning_content.
+                        reasoning = msg.pop("reasoning_content", None)
+                        if reasoning and isinstance(reasoning, str):
+                            if not msg.get("content"):
+                                msg["content"] = reasoning
+                            data["choices"][i]["message"] = msg
                             modified = True
+                        # Strip <think>...</think> blocks from inline content (Qwen3 without
+                        # separateReasoningContentInAPI sends thinking as <think> tags).
+                        if isinstance(msg.get("content"), str) and "<think>" in msg["content"]:
+                            cleaned = re.sub(r"<think>[\s\S]*?</think>\s*", "", msg["content"]).strip()
+                            if cleaned != msg["content"]:
+                                msg["content"] = cleaned
+                                data["choices"][i]["message"] = msg
+                                modified = True
+                        if "content" in msg and msg["content"]:
+                            text = msg["content"]
+                            filtered, was_f = await self._apply_filters(text)
+                            if was_f:
+                                data["choices"][i]["message"]["content"] = filtered
+                                modified = True
 
             if modified:
                 return json.dumps(data).encode()
@@ -587,21 +608,46 @@ class LLMProxy:
 
                 new_choice = dict(choice)
                 delta = new_choice.get("delta")
-                if isinstance(delta, dict) and isinstance(delta.get("content"), str):
-                    filtered, changed = await self._apply_filters(delta["content"])
-                    if changed:
+                if isinstance(delta, dict):
+                    # Handle reasoning_content: move to content if content is empty
+                    reasoning = delta.pop("reasoning_content", None)
+                    if reasoning and isinstance(reasoning, str):
                         delta = dict(delta)
-                        delta["content"] = filtered
+                        if not delta.get("content"):
+                            delta["content"] = reasoning
                         new_choice["delta"] = delta
                         modified = True
+                    # Strip <think> tags from streaming content
+                    if isinstance(delta.get("content"), str) and "<think>" in delta["content"]:
+                        cleaned = re.sub(r"<think>[\s\S]*?</think>\s*", "", delta["content"])
+                        if cleaned != delta["content"]:
+                            delta = dict(delta)
+                            delta["content"] = cleaned
+                            new_choice["delta"] = delta
+                            modified = True
+                    if isinstance(delta.get("content"), str) and delta["content"]:
+                        filtered, changed = await self._apply_filters(delta["content"])
+                        if changed:
+                            delta = dict(delta)
+                            delta["content"] = filtered
+                            new_choice["delta"] = delta
+                            modified = True
 
                 message = new_choice.get("message")
-                if isinstance(message, dict) and isinstance(message.get("content"), str):
-                    filtered, changed = await self._apply_filters(message["content"])
-                    if changed:
+                if isinstance(message, dict):
+                    reasoning = message.pop("reasoning_content", None)
+                    if reasoning and isinstance(reasoning, str):
                         message = dict(message)
-                        message["content"] = filtered
+                        if not message.get("content"):
+                            message["content"] = reasoning
                         new_choice["message"] = message
+                        modified = True
+                    if isinstance(message.get("content"), str):
+                        filtered, changed = await self._apply_filters(message["content"])
+                        if changed:
+                            message = dict(message)
+                            message["content"] = filtered
+                            new_choice["message"] = message
                         modified = True
 
                 new_choices.append(new_choice)
