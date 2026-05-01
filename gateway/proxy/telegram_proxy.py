@@ -6823,7 +6823,12 @@ class TelegramAPIProxy:
                     or "unknown"
                 )
                 mode = os.environ.get("AGENTSHROUD_MODEL_MODE", "unknown")
-                profile = os.environ.get("AGENTSHROUD_ACTIVE_PROFILE", "unknown")
+                _profile_labels = {
+                    "local": "Local (Ollama)",
+                    "local-multi": "Local Multi-LLM",
+                    "cloud": "Cloud",
+                }
+                profile = os.environ.get("AGENTSHROUD_ACTIVE_PROFILE") or _profile_labels.get(mode, mode)
                 msg = (
                     "ℹ️ AgentShroud model status\n"
                     f"• Mode: {mode}\n"
