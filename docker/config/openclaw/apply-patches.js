@@ -58,7 +58,7 @@ const LMSTUDIO_BASE_URL_RAW = process.env.LMSTUDIO_API_BASE || 'http://host.dock
 const LMSTUDIO_BASE_URL = /\/v1\/?$/i.test(LMSTUDIO_BASE_URL_RAW)
   ? LMSTUDIO_BASE_URL_RAW.replace(/\/+$/, '')
   : `${LMSTUDIO_BASE_URL_RAW.replace(/\/+$/, '')}/v1`;
-const LMSTUDIO_ANCHOR_MODEL = process.env.AGENTSHROUD_ANCHOR_MODEL || 'qwen3.5:27b';
+const LMSTUDIO_ANCHOR_MODEL = process.env.AGENTSHROUD_ANCHOR_MODEL || 'qwen3.6-27b';
 const LMSTUDIO_CODING_MODEL = process.env.AGENTSHROUD_CODING_MODEL || 'qwen2.5-coder:32b';
 
 // Patch 0: agents.defaults.model (startup/default model resolution path)
@@ -97,18 +97,22 @@ config.models.providers = config.models.providers || {};
 // uses OpenAI stream parsing instead of Ollama-native parsing.
 const PROVIDER_KEY = MODEL_MODE === 'local-multi' ? 'openai-local' : 'ollama';
 const currentProvider = config.models.providers[PROVIDER_KEY] || {};
+// Context window for local-multi models. Qwen 3.x 27B supports up to 128K in LM Studio;
+// 65536 gives cron jobs (competitive analysis, CVE triage) enough room for long workspace
+// reads without hitting the 32K cap that caused "prompt too large" context overflow errors.
+const LOCAL_CONTEXT_WINDOW = MODEL_MODE === 'local-multi' ? 65536 : 32768;
 const providerModels = [
   {
     id: LOCAL_MODEL_NAME,
     name: LOCAL_MODEL_NAME,
     reasoning: false,
     input: ['text'],
-    contextWindow: 32768,
+    contextWindow: LOCAL_CONTEXT_WINDOW,
     maxTokens: 8192,
   },
 ];
 if (MODEL_MODE === 'local-multi') {
-  const ANCHOR_MODEL_NAME = process.env.AGENTSHROUD_ANCHOR_MODEL || 'qwen3.5:27b';
+  const ANCHOR_MODEL_NAME = process.env.AGENTSHROUD_ANCHOR_MODEL || 'qwen3.6-27b';
   const CODING_MODEL_NAME = process.env.AGENTSHROUD_CODING_MODEL || 'qwen2.5-coder:32b';
   const REASONING_MODEL_NAME = process.env.AGENTSHROUD_REASONING_MODEL || 'deepseek-r1';
   for (const [id, label, reasoning] of [
@@ -117,7 +121,7 @@ if (MODEL_MODE === 'local-multi') {
     [REASONING_MODEL_NAME, 'Reasoning', true],
   ]) {
     if (!providerModels.some((m) => m.id === id)) {
-      providerModels.push({ id, name: label + ' (' + id + ')', reasoning, input: ['text'], contextWindow: 32768, maxTokens: 8192 });
+      providerModels.push({ id, name: label + ' (' + id + ')', reasoning, input: ['text'], contextWindow: LOCAL_CONTEXT_WINDOW, maxTokens: 8192 });
     }
   }
   // Remove stale "ollama" provider key from previous config to avoid dual-provider confusion.
@@ -126,11 +130,14 @@ if (MODEL_MODE === 'local-multi') {
     changed = true;
   }
 }
+// Provider timeout: raise to 600s for local-multi so long-context cron jobs
+// (competitive analysis, CVE triage) don't hit the idle watchdog on slow model inference.
+const PROVIDER_TIMEOUT_SECONDS = MODEL_MODE === 'local-multi' ? 600 : 300;
 const desiredProvider = {
   baseUrl: OLLAMA_BASE_URL,
   api: OLLAMA_PROVIDER_API,
   apiKey: process.env.OLLAMA_API_KEY || 'lm-studio',
-  timeoutSeconds: 300,
+  timeoutSeconds: PROVIDER_TIMEOUT_SECONDS,
   models: providerModels,
 };
 if (JSON.stringify(currentProvider) !== JSON.stringify(desiredProvider)) {
