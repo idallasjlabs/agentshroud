@@ -111,7 +111,8 @@ async def test_proxy_messages_rewrites_claude_opus_to_local_model(monkeypatch):
 
     assert status == 200
     assert captured["body"]["model"] == "qwen2.5-coder:7b"
-    assert captured["url"].startswith("http://host.docker.internal:11434")
+    # qwen2.5-coder is routed to LM Studio (LOCAL_MODEL_ROUTES), not Ollama
+    assert captured["url"].startswith("http://host.docker.internal:1234")
 
 
 @pytest.mark.asyncio
@@ -180,7 +181,8 @@ async def test_proxy_messages_strips_ollama_prefix_for_openai_compat(monkeypatch
 
     assert status == 200
     assert captured["body"]["model"] == "qwen2.5-coder:7b"
-    assert captured["url"].startswith("http://host.docker.internal:11434")
+    # qwen2.5-coder is routed to LM Studio (LOCAL_MODEL_ROUTES), not Ollama
+    assert captured["url"].startswith("http://host.docker.internal:1234")
 
 
 @pytest.mark.asyncio
