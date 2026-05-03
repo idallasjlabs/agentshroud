@@ -38,6 +38,7 @@ MODEL_MODE = os.environ.get("AGENTSHROUD_MODEL_MODE", "local").lower()
 # run under Ollama (e.g. mlx_lm or LM Studio on a different port).
 # Models not listed here fall through to OLLAMA_API_BASE automatically.
 LOCAL_MODEL_ROUTES: dict[str, str] = {
+    "mlx-community/deepseek-r1": MLXLM_API_BASE,  # mlx-lm full-ID: DeepSeek-R1-0528-Qwen3-8B-4bit
     "deepseek-r1": MLXLM_API_BASE,  # Reasoning — mlx_lm on :8234 (no tool calling)
     "qwen3": LMSTUDIO_API_BASE,  # Qwen3 family — LM Studio on :1234
     "qwen2.5-coder": LMSTUDIO_API_BASE,  # Coding — LM Studio on :1234
@@ -709,7 +710,7 @@ class LLMProxy:
             try:
                 response = await loop.run_in_executor(
                     None,
-                    lambda: urllib.request.urlopen(req, timeout=120, context=self._ssl_context),
+                    lambda: urllib.request.urlopen(req, timeout=600, context=self._ssl_context),
                 )
                 resp_body = response.read()
                 resp_headers = dict(response.headers)

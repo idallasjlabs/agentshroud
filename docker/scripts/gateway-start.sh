@@ -11,7 +11,7 @@ set -uo pipefail
 _TRIVY_WRITABLE_CACHE="${TRIVY_CACHE_DIR:-/var/log/security/.trivy-cache}"
 if [ ! -d "$_TRIVY_WRITABLE_CACHE/db" ]; then
     mkdir -p "$_TRIVY_WRITABLE_CACHE"
-    trivy fs --download-db-only --cache-dir "$_TRIVY_WRITABLE_CACHE" --no-progress 2>&1 \
+    trivy fs --download-db-only --cache-dir "$_TRIVY_WRITABLE_CACHE" --db-repository ghcr.io/aquasecurity/trivy-db --no-progress 2>&1 \
         && echo "[gateway-start] Trivy DB downloaded to $_TRIVY_WRITABLE_CACHE" \
         || echo "[gateway-start] WARNING: Trivy DB download failed (VPN?) — scans will retry"
 fi

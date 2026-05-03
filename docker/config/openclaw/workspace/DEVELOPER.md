@@ -97,7 +97,16 @@ least privilege, validate at boundaries (user input, external APIs only).
 
 ---
 
-## 6. SSH Development Workflow
+## 6. Runtime Environment (CRITICAL)
+
+**You are running inside a Docker container.** The following tools are NOT available locally:
+- `aws`, `docker`, `ping`, `traceroute`, `nslookup`, `ifconfig`, `systemctl`
+- Any host-level package management (`apt`, `brew`, `nix`)
+
+**ALL system checks, builds, and git operations MUST go through SSH to lab hosts.**
+Never attempt to run these commands directly — they will fail. Use SSH for everything.
+
+## 7. SSH Development Workflow
 
 You access the repo on marvin via SSH. Use these commands:
 
@@ -128,7 +137,7 @@ ssh marvin "black /Users/agentshroud-bot/Development/agentshroud/gateway/"
 
 ---
 
-## 7. Agent Orchestration
+## 8. Agent Orchestration
 
 Before starting a task, read the relevant agent file from `.claude/agents/` for role-specific
 guidance. Use these chains:
@@ -146,7 +155,7 @@ guidance. Use these chains:
 
 ---
 
-## 8. Skill Lookup
+## 9. Skill Lookup
 
 Before starting a task, read the relevant skill from `.claude/skills/{name}/SKILL.md`.
 Skills contain detailed step-by-step instructions and checklists.
