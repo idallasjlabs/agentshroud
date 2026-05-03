@@ -100,7 +100,7 @@ const currentProvider = config.models.providers[PROVIDER_KEY] || {};
 // Context window for local-multi models. Qwen 3.x 27B supports up to 128K in LM Studio;
 // 65536 gives cron jobs (competitive analysis, CVE triage) enough room for long workspace
 // reads without hitting the 32K cap that caused "prompt too large" context overflow errors.
-const LOCAL_CONTEXT_WINDOW = MODEL_MODE === 'local-multi' ? 65536 : 32768;
+const LOCAL_CONTEXT_WINDOW = 32768;
 const providerModels = [
   {
     id: LOCAL_MODEL_NAME,
@@ -154,7 +154,7 @@ if (process.env.LMSTUDIO_API_BASE) {
     baseUrl: LMSTUDIO_BASE_URL,
     api: 'openai-completions',
     apiKey: 'lm-studio',
-    timeoutSeconds: 300,
+    timeoutSeconds: PROVIDER_TIMEOUT_SECONDS,
     models: [
       {
         id: LMSTUDIO_ANCHOR_MODEL,

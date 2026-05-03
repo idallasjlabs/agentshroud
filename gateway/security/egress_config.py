@@ -62,6 +62,9 @@ PERMANENT_EGRESS_DOMAINS: list[str] = [
     "cdnjs.cloudflare.com",
     "unpkg.com",
     "cdn.jsdelivr.net",
+    # ── Health Checks ──
+    "status.docker.com",
+    "status.aws.amazon.com",
     # ── Security Sidecars ──
     "database.clamav.net",
     # ── LLM Routing (local proxy) ──

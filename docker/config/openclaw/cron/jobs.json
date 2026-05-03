@@ -18,7 +18,7 @@
       "wakeMode": "now",
       "payload": {
         "kind": "agentTurn",
-        "message": "Daily AgentShroud check-in. SSH to marvin (agentshroud-bot@marvin), project at ~/Development/agentshroud. Quick check: dev status, dev pull, then report: what branch is checked out, last 5 commits on current branch (git log --oneline -5), test count (dev test 2>&1 | tail -3), any container issues. Also SSH to Pi (agentshroud-bot@raspberrypi.tail240ea8.ts.net) for a secondary check: git log --oneline -3 main. Report to Isaiah: marvin status first, then pi status. Keep it under 200 words."
+        "message": "Daily AgentShroud check-in. IMPORTANT: You are running inside a Docker container — aws, docker, ping, and git are NOT available locally. ALL checks must go via SSH. SSH to marvin (agentshroud-bot@marvin), project at ~/Development/agentshroud. Quick check: dev status, dev pull, then report: what branch is checked out, last 5 commits on current branch (git log --oneline -5), test count (dev test 2>&1 | tail -3), any container issues. Also SSH to Pi (agentshroud-bot@raspberrypi.tail240ea8.ts.net) for a secondary check: git log --oneline -3 main. Report to Isaiah: marvin status first, then pi status. Keep it under 200 words."
       },
       "state": {
         "nextRunAtMs": 1771790400000,
