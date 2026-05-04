@@ -87,6 +87,38 @@ if (!config.agents.defaults.timeoutSeconds || config.agents.defaults.timeoutSeco
   changed = true;
 }
 
+// Patch 0a2: tools.exec — configure exec security for container environment.
+// The bot runs inside a Docker container with no host-level tools (systemctl, docker,
+// ping, aws). Safe local commands (ssh, cat, ls, curl) and SSH to lab hosts must work.
+// Default OpenClaw security is "allowlist" with an empty list — blocks everything.
+config.tools = config.tools || {};
+config.tools.exec = config.tools.exec || {};
+const desiredExecSecurity = 'allowlist';
+const desiredAllowlist = [
+  'ssh', 'cat', 'ls', 'pwd', 'echo', 'date', 'whoami', 'env', 'head', 'tail',
+  'wc', 'sort', 'grep', 'find', 'test', 'mkdir', 'cp', 'mv', 'touch',
+  'curl', 'wget', 'node', 'python3', 'pip',
+  'df', 'free', 'uptime', 'uname', 'hostname', 'id', 'ps',
+];
+if (config.tools.exec.security !== desiredExecSecurity) {
+  config.tools.exec.security = desiredExecSecurity;
+  changed = true;
+}
+if (JSON.stringify(config.tools.exec.allowlist || []) !== JSON.stringify(desiredAllowlist)) {
+  config.tools.exec.allowlist = desiredAllowlist;
+  changed = true;
+}
+// Enable elevated tools for the owner on Telegram (needed for SSH to lab hosts).
+config.tools.elevated = config.tools.elevated || {};
+if (!config.tools.elevated.enabled) {
+  config.tools.elevated.enabled = true;
+  changed = true;
+}
+if (!config.tools.elevated.allowFrom) {
+  config.tools.elevated.allowFrom = { telegram: true, slack: true, webchat: true };
+  changed = true;
+}
+
 // Patch 0b: models.providers.ollama fallback registration.
 // This gives OpenClaw an explicit provider + model definition even if dynamic
 // model discovery is unavailable at startup.
