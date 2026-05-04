@@ -35,6 +35,9 @@ import httpx
 logger = logging.getLogger("agentshroud.proxy.canvas")
 
 _BOT_CANVAS_URL = os.environ.get("CANVAS_BOT_URL", "http://bot:18789")
+# Skip HTTP Basic Auth on the Canvas proxy.  The port is already bound to
+# 127.0.0.1, and OpenClaw has its own gateway-token auth in the web UI.
+_SKIP_BASIC_AUTH = os.environ.get("CANVAS_SKIP_BASIC_AUTH", "").lower() in ("1", "true", "yes")
 
 # Headers that must not be forwarded upstream (hop-by-hop)
 _HOP_BY_HOP = frozenset(
@@ -127,7 +130,7 @@ async def _handle_http(scope: dict[str, Any], receive: Any, send: Any) -> None:
     headers = dict((k.decode("latin-1"), v.decode("latin-1")) for k, v in scope.get("headers", []))
     auth_header = headers.get("authorization", "")
 
-    if not _check_basic_auth(auth_header):
+    if not _SKIP_BASIC_AUTH and not _check_basic_auth(auth_header):
         logger.info(
             "Canvas proxy: unauthorized HTTP request from %s %s",
             scope.get("client"),
@@ -239,7 +242,7 @@ async def _handle_websocket(scope: dict[str, Any], receive: Any, send: Any) -> N
     ).split(",")
     origin_trusted = origin in allowed_origins
 
-    if not (_check_basic_auth(auth_header) or _check_token_auth(qs_str) or has_proto_token or origin_trusted):
+    if not _SKIP_BASIC_AUTH and not (_check_basic_auth(auth_header) or _check_token_auth(qs_str) or has_proto_token or origin_trusted):
         logger.info(
             "Canvas proxy: unauthorized WebSocket from %s %s",
             scope.get("client"),
@@ -265,7 +268,7 @@ async def _handle_websocket(scope: dict[str, Any], receive: Any, send: Any) -> N
         extra_headers["Origin"] = origin
 
     try:
-        async with websockets.connect(ws_url, additional_headers=extra_headers) as upstream_ws:
+        async with websockets.connect(ws_url, additional_headers=extra_headers, max_size=10 * 1024 * 1024) as upstream_ws:
 
             async def client_to_upstream() -> None:
                 while True:
