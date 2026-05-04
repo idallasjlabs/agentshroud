@@ -8,7 +8,7 @@ from unittest.mock import AsyncMock
 import pytest
 
 from gateway.proxy import llm_proxy as llm_proxy_module
-from gateway.proxy.llm_proxy import LLMProxy
+from gateway.proxy.llm_proxy import LLMProxy, _inject_no_think
 
 
 class _FakeSanitizer:
@@ -244,3 +244,41 @@ async def test_proxy_messages_timeout_returns_anthropic_compatible_fallback(monk
     assert parsed["type"] == "message"
     assert parsed["role"] == "assistant"
     assert "timed out before completion" in parsed["content"][0]["text"].lower()
+
+
+# ── _inject_no_think tests ──────────────────────────────────────────────────
+
+
+def test_inject_no_think_prepends_to_system_message():
+    data = {"messages": [{"role": "system", "content": "You are helpful."}, {"role": "user", "content": "hi"}]}
+    assert _inject_no_think(data, "qwen3-14b") is True
+    assert data["messages"][0]["content"] == "/no_think\nYou are helpful."
+
+
+def test_inject_no_think_inserts_system_when_missing():
+    data = {"messages": [{"role": "user", "content": "hi"}]}
+    assert _inject_no_think(data, "qwen3-14b") is True
+    assert data["messages"][0] == {"role": "system", "content": "/no_think"}
+
+
+def test_inject_no_think_skips_deepseek_reasoning():
+    data = {"messages": [{"role": "system", "content": "You are helpful."}, {"role": "user", "content": "hi"}]}
+    assert _inject_no_think(data, "deepseek-r1-0528-qwen3-8b") is False
+    assert data["messages"][0]["content"] == "You are helpful."
+
+
+def test_inject_no_think_skips_non_qwen3():
+    data = {"messages": [{"role": "system", "content": "You are helpful."}, {"role": "user", "content": "hi"}]}
+    assert _inject_no_think(data, "gemma-4-26b") is False
+    assert data["messages"][0]["content"] == "You are helpful."
+
+
+def test_inject_no_think_idempotent():
+    data = {"messages": [{"role": "system", "content": "/no_think\nAlready set."}]}
+    assert _inject_no_think(data, "qwen3-14b") is False
+    assert data["messages"][0]["content"] == "/no_think\nAlready set."
+
+
+def test_inject_no_think_skips_mlx_community_deepseek():
+    data = {"messages": [{"role": "system", "content": "You are helpful."}]}
+    assert _inject_no_think(data, "mlx-community/deepseek-r1-0528-qwen3-8b-4bit") is False
