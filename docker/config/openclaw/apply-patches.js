@@ -87,25 +87,21 @@ if (!config.agents.defaults.timeoutSeconds || config.agents.defaults.timeoutSeco
   changed = true;
 }
 
-// Patch 0a2: tools.exec — configure exec security for container environment.
-// The bot runs inside a Docker container with no host-level tools (systemctl, docker,
-// ping, aws). Safe local commands (ssh, cat, ls, curl) and SSH to lab hosts must work.
-// Default OpenClaw security is "allowlist" with an empty list — blocks everything.
+// Patch 0a2: tools.exec — set security to 'full' for container environment.
+// The bot runs inside a Docker container which is already isolated; 'full' allows
+// all commands within the container (ssh, cat, df, curl, etc.) without needing
+// a separate exec-approvals allowlist file.
+// Note: 'allowlist' mode reads approved commands from exec-approvals.json, NOT from
+// openclaw.json — the 'allowlist' key is not valid in the config schema.
 config.tools = config.tools || {};
 config.tools.exec = config.tools.exec || {};
-const desiredExecSecurity = 'allowlist';
-const desiredAllowlist = [
-  'ssh', 'cat', 'ls', 'pwd', 'echo', 'date', 'whoami', 'env', 'head', 'tail',
-  'wc', 'sort', 'grep', 'find', 'test', 'mkdir', 'cp', 'mv', 'touch',
-  'curl', 'wget', 'node', 'python3', 'pip',
-  'df', 'free', 'uptime', 'uname', 'hostname', 'id', 'ps',
-];
-if (config.tools.exec.security !== desiredExecSecurity) {
-  config.tools.exec.security = desiredExecSecurity;
+if (config.tools.exec.security !== 'full') {
+  config.tools.exec.security = 'full';
   changed = true;
 }
-if (JSON.stringify(config.tools.exec.allowlist || []) !== JSON.stringify(desiredAllowlist)) {
-  config.tools.exec.allowlist = desiredAllowlist;
+// Remove any stale invalid 'allowlist' key if it exists from a prior bad patch.
+if ('allowlist' in config.tools.exec) {
+  delete config.tools.exec.allowlist;
   changed = true;
 }
 // Enable elevated tools for the owner on Telegram (needed for SSH to lab hosts).
