@@ -110,8 +110,10 @@ if (!config.tools.elevated.enabled) {
   config.tools.elevated.enabled = true;
   changed = true;
 }
-if (!config.tools.elevated.allowFrom) {
-  config.tools.elevated.allowFrom = { telegram: true, slack: true, webchat: true };
+// allowFrom expects arrays of user IDs; ["*"] means all users on that channel.
+const desiredAllowFrom = { telegram: ['*'], slack: ['*'], webchat: ['*'] };
+if (JSON.stringify(config.tools.elevated.allowFrom) !== JSON.stringify(desiredAllowFrom)) {
+  config.tools.elevated.allowFrom = desiredAllowFrom;
   changed = true;
 }
 
