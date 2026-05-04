@@ -1,15 +1,15 @@
 {
-  "single_inbound_ms": 0.38,
-  "single_outbound_ms": 0.25,
-  "100_inbound_s": 0.027,
-  "100_pii_inbound_s": 0.027,
-  "1000_prompt_guard_s": 0.21,
-  "10000_trust_lookups_s": 0.026,
+  "single_inbound_ms": 0.44,
+  "single_outbound_ms": 0.28,
+  "100_inbound_s": 0.03,
+  "100_pii_inbound_s": 0.03,
+  "1000_prompt_guard_s": 0.233,
+  "10000_trust_lookups_s": 0.032,
   "_meta": {
     "version": "1.0.0",
-    "platform": "macOS-26.5-arm64-arm-64bit",
-    "python": "3.11.9",
+    "platform": "macOS-26.5-arm64-arm-64bit-Mach-O",
+    "python": "3.13.13",
     "arch": "arm64",
-    "timestamp": "2026-05-03T17:48:39Z"
+    "timestamp": "2026-05-04T16:36:49Z"
   }
 }
