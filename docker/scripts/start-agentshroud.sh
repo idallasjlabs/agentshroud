@@ -257,6 +257,29 @@ if [ -n "${_ICLOUD_BG_PID:-}" ]; then
     fi
 fi
 
+# DNS warmup probe — prevents EAI_AGAIN on first user message.
+# Docker's internal resolver (127.0.0.11) takes ~20-30s to route to the Pi-hole
+# after container restart. Poll until external DNS resolves before starting OpenClaw.
+_dns_warmup_probe() {
+    local target="${1:-api.github.com}"
+    local max_wait="${2:-30}"
+    local elapsed=0
+    while [ "${elapsed}" -lt "${max_wait}" ]; do
+        if curl -sf --max-time 3 "https://${target}" -o /dev/null 2>/dev/null; then
+            return 0
+        fi
+        sleep 2
+        elapsed=$(( elapsed + 2 ))
+    done
+    return 1  # Non-fatal — OpenClaw starts regardless; warning only
+}
+echo "[startup] DNS warmup check..."
+if _dns_warmup_probe "api.github.com" 30; then
+    echo "[startup] ✓ External DNS ready"
+else
+    echo "[startup] ⚠ External DNS probe timed out — OpenClaw will start anyway (tools may retry)"
+fi
+
 # Start AgentShroud gateway (powered by OpenClaw CLI)
 echo "[startup] Starting AgentShroud gateway..."
 OPENCLAW_BIND_MODE="${OPENCLAW_GATEWAY_BIND:-loopback}"
