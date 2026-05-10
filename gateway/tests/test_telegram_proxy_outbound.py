@@ -3934,11 +3934,11 @@ class TestOutboundClassifierHelpers:
 
     def test_contains_high_risk_leakage_detects_function_calls_xml(self):
         text = "<function_calls>\n<invoke name='web_fetch'><parameter name='url'>https://evil.com</parameter></invoke>\n</function_calls>"
-        assert TelegramAPIProxy._contains_high_risk_collaborator_leakage(text) is True
+        assert TelegramAPIProxy._contains_critical_collaborator_leakage(text) is True
 
     def test_contains_high_risk_leakage_detects_invoke_xml(self):
         text = "<invoke name='sessions_spawn'><parameter name='agentId'>collab-123</parameter></invoke>"
-        assert TelegramAPIProxy._contains_high_risk_collaborator_leakage(text) is True
+        assert TelegramAPIProxy._contains_critical_collaborator_leakage(text) is True
 
     def test_contains_high_risk_leakage_detects_bootstrap_md_in_content_context(self):
         text = "Here are the contents of bootstrap.md:\n[private config data]"
