@@ -39,6 +39,7 @@ services:
       - gateway-data:/app/data
       - ../web:/app/web:ro
       - ../gateway:/app/gateway:ro
+      - ../.benchmarks:/app/.benchmarks:ro
       - agentshroud-workspace:/data/bot-workspace:ro
       - agentshroud-config:/data/bot-config:ro
       - security-reports:/var/log/security
