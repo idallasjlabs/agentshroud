@@ -756,9 +756,7 @@ class TestScoreNetworkSegmentation:
                 "gateway.security.scanner_integration._read_docker_daemon_config", return_value={}
             ),
             patch("gateway.security.scanner_integration._app_state_has", return_value=False),
-            patch(
-                "gateway.security.scanner_integration._is_containerized", return_value=False
-            ),
+            patch("gateway.security.scanner_integration._is_containerized", return_value=False),
         ):
             assert _score_network_segmentation() == 3
 

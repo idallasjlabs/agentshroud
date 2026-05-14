@@ -404,7 +404,9 @@ class LLMProxy:
                         # Strip <think>...</think> blocks from inline content (Qwen3 without
                         # separateReasoningContentInAPI sends thinking as <think> tags).
                         if isinstance(msg.get("content"), str) and "<think>" in msg["content"]:
-                            cleaned = re.sub(r"<think>[\s\S]*?</think>\s*", "", msg["content"]).strip()
+                            cleaned = re.sub(
+                                r"<think>[\s\S]*?</think>\s*", "", msg["content"]
+                            ).strip()
                             if cleaned != msg["content"]:
                                 msg["content"] = cleaned
                                 data["choices"][i]["message"] = msg

@@ -4257,9 +4257,9 @@ class TestParseModeStrippedAfterPIIRedaction:
         result_data = json.loads(result)
 
         assert "555-867-5309" not in result_data["text"], "Phone should be redacted"
-        assert result_data.get("parse_mode", "") != "HTML", (
-            "parse_mode=HTML must be stripped when PII placeholders are present"
-        )
+        assert (
+            result_data.get("parse_mode", "") != "HTML"
+        ), "parse_mode=HTML must be stripped when PII placeholders are present"
 
     @pytest.mark.asyncio
     async def test_parse_mode_preserved_when_no_pii_detected(self):
@@ -4279,9 +4279,9 @@ class TestParseModeStrippedAfterPIIRedaction:
         result_data = json.loads(result)
 
         # parse_mode should be preserved for owner when no PII is present
-        assert result_data.get("parse_mode") == "HTML", (
-            "parse_mode=HTML must be preserved when the text contains no PII"
-        )
+        assert (
+            result_data.get("parse_mode") == "HTML"
+        ), "parse_mode=HTML must be preserved when the text contains no PII"
 
     @pytest.mark.asyncio
     async def test_parse_mode_stripped_when_pipeline_sanitizes_email(self):
@@ -4313,6 +4313,6 @@ class TestParseModeStrippedAfterPIIRedaction:
         result_data = json.loads(result)
 
         assert "user@example.com" not in result_data["text"], "Email should be redacted"
-        assert result_data.get("parse_mode", "") != "HTML", (
-            "parse_mode=HTML must be stripped when pipeline produces PII placeholders"
-        )
+        assert (
+            result_data.get("parse_mode", "") != "HTML"
+        ), "parse_mode=HTML must be stripped when pipeline produces PII placeholders"

@@ -2465,9 +2465,7 @@ class TelegramAPIProxy:
         if normalized.lstrip().startswith("🛡") or "protected by agentshroud" in normalized:
             return False
         # Patterns that are high-risk for local_only but not necessarily for full_access.
-        high_risk_patterns = (
-            r"\b(?:traceback|stack trace|stderr|stdout)\b",
-        )
+        high_risk_patterns = (r"\b(?:traceback|stack trace|stderr|stdout)\b",)
         if any(re.search(pat, normalized) for pat in high_risk_patterns):
             return True
         # Filename patterns are only high-risk when content is being revealed,
@@ -3160,8 +3158,7 @@ class TelegramAPIProxy:
                 # High-risk leakage (traceback, sensitive filenames) — full_access
                 # collaborators may bypass for legitimate research/technical responses.
                 _is_full_access = (
-                    not is_owner_chat
-                    and self._resolve_collaborator_mode(chat_id) == "full_access"
+                    not is_owner_chat and self._resolve_collaborator_mode(chat_id) == "full_access"
                 )
                 if (
                     not is_owner_chat
@@ -3648,8 +3645,7 @@ class TelegramAPIProxy:
                     return urllib.parse.urlencode(data).encode()
                 # High-risk leakage — full_access collaborators may bypass.
                 _is_full_access_fe = (
-                    not is_owner_chat
-                    and self._resolve_collaborator_mode(chat_id) == "full_access"
+                    not is_owner_chat and self._resolve_collaborator_mode(chat_id) == "full_access"
                 )
                 if (
                     not is_owner_chat
@@ -6873,7 +6869,9 @@ class TelegramAPIProxy:
                     "local-multi": "Local Multi-LLM",
                     "cloud": "Cloud",
                 }
-                profile = os.environ.get("AGENTSHROUD_ACTIVE_PROFILE") or _profile_labels.get(mode, mode)
+                profile = os.environ.get("AGENTSHROUD_ACTIVE_PROFILE") or _profile_labels.get(
+                    mode, mode
+                )
                 msg = (
                     "ℹ️ AgentShroud model status\n"
                     f"• Mode: {mode}\n"
@@ -7584,15 +7582,23 @@ class TelegramAPIProxy:
             response = await asyncio.wait_for(
                 loop.run_in_executor(
                     None,
-                    lambda: urllib.request.urlopen(req, timeout=urlopen_timeout, context=self._ssl_context),
+                    lambda: urllib.request.urlopen(
+                        req, timeout=urlopen_timeout, context=self._ssl_context
+                    ),
                 ),
                 timeout=wait_for_timeout,
             )
             response_body = response.read()
             return json.loads(response_body)
         except asyncio.TimeoutError:
-            logger.warning("_forward_to_telegram: timed out after %ss for %s", wait_for_timeout, url)
-            return {"ok": False, "error_code": 504, "description": "Gateway timeout forwarding to Telegram API"}
+            logger.warning(
+                "_forward_to_telegram: timed out after %ss for %s", wait_for_timeout, url
+            )
+            return {
+                "ok": False,
+                "error_code": 504,
+                "description": "Gateway timeout forwarding to Telegram API",
+            }
         except urllib.error.HTTPError as exc:
             # Telegram uses HTTP 4xx/5xx with JSON bodies for expected API failures
             # (e.g., malformed Markdown, invalid chat ID). Treat as handled response.

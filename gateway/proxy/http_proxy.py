@@ -326,7 +326,9 @@ class HTTPConnectProxy:
                 _last_exc = exc
 
         if target_reader is None:
-            logger.error(f"CONNECT tunnel failed to {host}:{port} after {_MAX_CONNECT_ATTEMPTS} attempts: {_last_exc}")
+            logger.error(
+                f"CONNECT tunnel failed to {host}:{port} after {_MAX_CONNECT_ATTEMPTS} attempts: {_last_exc}"
+            )
             writer.write(b"HTTP/1.1 502 Bad Gateway\r\nContent-Length: 0\r\n\r\n")
             await writer.drain()
             return
