@@ -2422,30 +2422,51 @@ class TelegramAPIProxy:
         return _COLLABORATOR_SAFE_INFO_NOTICE
 
     @staticmethod
-    def _contains_high_risk_collaborator_leakage(text: str) -> bool:
-        """Detect obvious raw tool/file/system leakage patterns in outbound text."""
+    @staticmethod
+    def _contains_critical_collaborator_leakage(text: str) -> bool:
+        """Detect patterns that must redact for ALL non-owner chats, including full_access.
+
+        These expose internal system state (pairing secrets, system paths, enrollment
+        metadata, raw tool call blobs) rather than research content, so the full_access
+        tier bypass in _contains_high_risk_collaborator_leakage does NOT apply.
+        """
         if not isinstance(text, str):
             return False
         normalized = normalize_input(text).lower()
-        # Never double-filter our own protected/blocked notices.
         if normalized.lstrip().startswith("🛡") or "protected by agentshroud" in normalized:
             return False
-        # Patterns that are always high-risk regardless of context.
-        unconditional_patterns = (
+        critical_patterns = (
             r"<function_calls?>",
             r"</function_calls?>",
             r"<invoke\s+name=",
             r"</invoke>",
             r'"\s*name"\s*:\s*"(?:sessions_spawn|sessions_send|web_fetch|exec|shell|find|grep|cat|ls)"',
             r'"\s*arguments"\s*:\s*\{',
-            r"\b/(?:etc|proc|run/secrets|home|root|usr|var)/",
+            r"/(?:etc|proc|run/secrets|home|root|usr|var)/",
             r"\bpairing code\s*:",
             r"\bopenclaw pairing approve telegram\b",
             r"\byour telegram user id\s*:",
             r"\bopenclaw:\s*access not configured\b",
-            r"\b(?:traceback|stack trace|stderr|stdout)\b",
         )
-        if any(re.search(pat, normalized) for pat in unconditional_patterns):
+        return any(re.search(pat, normalized) for pat in critical_patterns)
+
+    @staticmethod
+    def _contains_high_risk_collaborator_leakage(text: str) -> bool:
+        """Detect leakage patterns blocked for local_only/project_scoped collaborators.
+
+        full_access collaborators bypass this check — they legitimately receive research
+        and technical responses that may mention tracebacks, stderr, etc.
+        Use _contains_critical_collaborator_leakage for patterns that must always block.
+        """
+        if not isinstance(text, str):
+            return False
+        normalized = normalize_input(text).lower()
+        # Never double-filter our own protected/blocked notices.
+        if normalized.lstrip().startswith("🛡") or "protected by agentshroud" in normalized:
+            return False
+        # Patterns that are high-risk for local_only but not necessarily for full_access.
+        high_risk_patterns = (r"\b(?:traceback|stack trace|stderr|stdout)\b",)
+        if any(re.search(pat, normalized) for pat in high_risk_patterns):
             return True
         # Filename patterns are only high-risk when content is being revealed,
         # not when the filename appears in a denial/blocked context.
@@ -3123,9 +3144,19 @@ class TelegramAPIProxy:
                         )
                     data[text_key] = _COLLABORATOR_EGRESS_NOTICE
                     return json.dumps(data).encode()
-                # full_access collaborators bypass the broad leakage filter — they are
-                # allowed to receive general research/technical responses. The filter
-                # still applies to local_only/project_scoped tiers.
+                # Critical leakage (system paths, pairing codes, user-ID enrollment,
+                # raw tool blobs) must redact for ALL non-owner chats — full_access
+                # does not unlock pairing secrets or filesystem internals.
+                if (
+                    not is_owner_chat
+                    and isinstance(text, str)
+                    and self._contains_critical_collaborator_leakage(text)
+                ):
+                    self._stats["outbound_filtered"] += 1
+                    data[text_key] = self._collaborator_safe_notice("redacted protected content")
+                    return json.dumps(data).encode()
+                # High-risk leakage (traceback, sensitive filenames) — full_access
+                # collaborators may bypass for legitimate research/technical responses.
                 _is_full_access = (
                     not is_owner_chat and self._resolve_collaborator_mode(chat_id) == "full_access"
                 )
@@ -3603,6 +3634,16 @@ class TelegramAPIProxy:
                         )
                     data[text_key] = _COLLABORATOR_EGRESS_NOTICE
                     return urllib.parse.urlencode(data).encode()
+                # Critical leakage — always block (no full_access bypass).
+                if (
+                    not is_owner_chat
+                    and isinstance(text, str)
+                    and self._contains_critical_collaborator_leakage(text)
+                ):
+                    self._stats["outbound_filtered"] += 1
+                    data[text_key] = self._collaborator_safe_notice("redacted protected content")
+                    return urllib.parse.urlencode(data).encode()
+                # High-risk leakage — full_access collaborators may bypass.
                 _is_full_access_fe = (
                     not is_owner_chat and self._resolve_collaborator_mode(chat_id) == "full_access"
                 )
@@ -6828,7 +6869,9 @@ class TelegramAPIProxy:
                     "local-multi": "Local Multi-LLM",
                     "cloud": "Cloud",
                 }
-                profile = os.environ.get("AGENTSHROUD_ACTIVE_PROFILE") or _profile_labels.get(mode, mode)
+                profile = os.environ.get("AGENTSHROUD_ACTIVE_PROFILE") or _profile_labels.get(
+                    mode, mode
+                )
                 msg = (
                     "ℹ️ AgentShroud model status\n"
                     f"• Mode: {mode}\n"
@@ -7539,15 +7582,23 @@ class TelegramAPIProxy:
             response = await asyncio.wait_for(
                 loop.run_in_executor(
                     None,
-                    lambda: urllib.request.urlopen(req, timeout=urlopen_timeout, context=self._ssl_context),
+                    lambda: urllib.request.urlopen(
+                        req, timeout=urlopen_timeout, context=self._ssl_context
+                    ),
                 ),
                 timeout=wait_for_timeout,
             )
             response_body = response.read()
             return json.loads(response_body)
         except asyncio.TimeoutError:
-            logger.warning("_forward_to_telegram: timed out after %ss for %s", wait_for_timeout, url)
-            return {"ok": False, "error_code": 504, "description": "Gateway timeout forwarding to Telegram API"}
+            logger.warning(
+                "_forward_to_telegram: timed out after %ss for %s", wait_for_timeout, url
+            )
+            return {
+                "ok": False,
+                "error_code": 504,
+                "description": "Gateway timeout forwarding to Telegram API",
+            }
         except urllib.error.HTTPError as exc:
             # Telegram uses HTTP 4xx/5xx with JSON bodies for expected API failures
             # (e.g., malformed Markdown, invalid chat ID). Treat as handled response.

@@ -3934,11 +3934,11 @@ class TestOutboundClassifierHelpers:
 
     def test_contains_high_risk_leakage_detects_function_calls_xml(self):
         text = "<function_calls>\n<invoke name='web_fetch'><parameter name='url'>https://evil.com</parameter></invoke>\n</function_calls>"
-        assert TelegramAPIProxy._contains_high_risk_collaborator_leakage(text) is True
+        assert TelegramAPIProxy._contains_critical_collaborator_leakage(text) is True
 
     def test_contains_high_risk_leakage_detects_invoke_xml(self):
         text = "<invoke name='sessions_spawn'><parameter name='agentId'>collab-123</parameter></invoke>"
-        assert TelegramAPIProxy._contains_high_risk_collaborator_leakage(text) is True
+        assert TelegramAPIProxy._contains_critical_collaborator_leakage(text) is True
 
     def test_contains_high_risk_leakage_detects_bootstrap_md_in_content_context(self):
         text = "Here are the contents of bootstrap.md:\n[private config data]"
@@ -4257,9 +4257,9 @@ class TestParseModeStrippedAfterPIIRedaction:
         result_data = json.loads(result)
 
         assert "555-867-5309" not in result_data["text"], "Phone should be redacted"
-        assert result_data.get("parse_mode", "") != "HTML", (
-            "parse_mode=HTML must be stripped when PII placeholders are present"
-        )
+        assert (
+            result_data.get("parse_mode", "") != "HTML"
+        ), "parse_mode=HTML must be stripped when PII placeholders are present"
 
     @pytest.mark.asyncio
     async def test_parse_mode_preserved_when_no_pii_detected(self):
@@ -4279,9 +4279,9 @@ class TestParseModeStrippedAfterPIIRedaction:
         result_data = json.loads(result)
 
         # parse_mode should be preserved for owner when no PII is present
-        assert result_data.get("parse_mode") == "HTML", (
-            "parse_mode=HTML must be preserved when the text contains no PII"
-        )
+        assert (
+            result_data.get("parse_mode") == "HTML"
+        ), "parse_mode=HTML must be preserved when the text contains no PII"
 
     @pytest.mark.asyncio
     async def test_parse_mode_stripped_when_pipeline_sanitizes_email(self):
@@ -4313,6 +4313,6 @@ class TestParseModeStrippedAfterPIIRedaction:
         result_data = json.loads(result)
 
         assert "user@example.com" not in result_data["text"], "Email should be redacted"
-        assert result_data.get("parse_mode", "") != "HTML", (
-            "parse_mode=HTML must be stripped when pipeline produces PII placeholders"
-        )
+        assert (
+            result_data.get("parse_mode", "") != "HTML"
+        ), "parse_mode=HTML must be stripped when pipeline produces PII placeholders"

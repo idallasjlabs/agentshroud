@@ -87,6 +87,36 @@ if (!config.agents.defaults.timeoutSeconds || config.agents.defaults.timeoutSeco
   changed = true;
 }
 
+// Patch 0a1a: channels.telegram.streaming — normalize from string to object.
+// Older OpenClaw configs stored streaming as a plain string (e.g. "partial").
+// Newer OpenClaw schema (2026.3+) requires it to be an object. This patch
+// upgrades any string value to { mode: <value> } on every boot.
+if (config.channels?.telegram && typeof config.channels.telegram.streaming === 'string') {
+  const mode = config.channels.telegram.streaming;
+  config.channels.telegram.streaming = { mode };
+  changed = true;
+}
+
+// Patch 0a1b: tools.web — enable web_fetch and wire BRAVE_API_KEY for web_search.
+// Local models (qwen3-14b) will only call web tools if OpenClaw explicitly presents
+// them with a configured API key. Without this patch, BRAVE_API_KEY stays in the
+// environment but is never surfaced to the tools config, and web_search silently
+// omits the key causing the tool to be skipped.
+config.tools = config.tools || {};
+config.tools.web = config.tools.web || {};
+config.tools.web.fetch = config.tools.web.fetch || {};
+if (!config.tools.web.fetch.enabled) {
+  config.tools.web.fetch.enabled = true;
+  changed = true;
+}
+const BRAVE_KEY = process.env.BRAVE_API_KEY || '';
+if (BRAVE_KEY && (!config.tools.web.search || config.tools.web.search.apiKey !== BRAVE_KEY)) {
+  config.tools.web.search = config.tools.web.search || {};
+  config.tools.web.search.enabled = true;
+  config.tools.web.search.apiKey = BRAVE_KEY;
+  changed = true;
+}
+
 // Patch 0a2: tools.exec — set security to 'full' for container environment.
 // The bot runs inside a Docker container which is already isolated; 'full' allows
 // all commands within the container (ssh, cat, df, curl, etc.) without needing

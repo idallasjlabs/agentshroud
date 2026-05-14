@@ -375,7 +375,7 @@ class TestBenchmarkBaseline:
         tm.close()
 
     @pytest.mark.asyncio
-    async def test_write_baseline_json(self, pipeline):
+    async def test_write_baseline_json(self, pipeline, tmp_path):
         """Run standard benchmarks and write results to .benchmarks/baseline-v1.0.0.json."""
         import json
         import platform
@@ -435,10 +435,7 @@ class TestBenchmarkBaseline:
             "timestamp": time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime()),
         }
 
-        # Write baseline
-        baseline_dir = Path(__file__).resolve().parent.parent.parent / ".benchmarks"
-        baseline_dir.mkdir(exist_ok=True)
-        baseline_path = baseline_dir / "baseline-v1.0.0.json"
+        baseline_path = tmp_path / "baseline-v1.0.0.json"
         with open(baseline_path, "w", encoding="utf-8") as f:
             json.dump(benchmarks, f, indent=2)
 

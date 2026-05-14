@@ -123,6 +123,22 @@ class ConnectProxyAgent extends https.Agent {
 
 https.globalAgent = new ConnectProxyAgent({ keepAlive: true });
 
+// ── undici (native fetch) ProxyAgent ──────────────────────────────────────
+// Node 22's built-in `fetch` is backed by undici and bypasses https.globalAgent.
+// OpenClaw bundles undici under its own node_modules; load by absolute path so
+// this --require shim resolves it regardless of CWD.
+(function patchUndiciForProxy() {
+  try {
+    const undici = require('/usr/local/lib/node_modules/openclaw/node_modules/undici');
+    const proxyAgent = new undici.ProxyAgent({ uri: PROXY });
+    undici.setGlobalDispatcher(proxyAgent);
+  } catch (e) {
+    if (process.env.NODE_DEBUG) {
+      process.stderr.write(`[setup-https-proxy] undici patch skipped: ${e.message}\n`);
+    }
+  }
+})();
+
 // ── ws WebSocket proxy patch ───────────────────────────────────────────────
 // ws v8 sets opts.createConnection = tlsConnect (direct tls.connect) in
 // initAsClient, which takes priority over https.globalAgent in Node.js's

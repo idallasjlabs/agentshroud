@@ -479,6 +479,15 @@ class TestAggregateResults:
             "get_falco_summary": MagicMock(return_value=_falco_not_run()),
             "get_wazuh_summary": MagicMock(return_value=_wazuh_not_run()),
             "get_openscap_summary": MagicMock(return_value=_openscap_not_run()),
+            "get_fluent_bit_summary": MagicMock(
+                return_value={
+                    "tool": "fluent-bit",
+                    "status": "not_run",
+                    "findings": 0,
+                    "critical": 0,
+                    "high": 0,
+                }
+            ),
         }
 
     def test_overall_not_configured_when_all_not_run(self):
@@ -747,6 +756,7 @@ class TestScoreNetworkSegmentation:
                 "gateway.security.scanner_integration._read_docker_daemon_config", return_value={}
             ),
             patch("gateway.security.scanner_integration._app_state_has", return_value=False),
+            patch("gateway.security.scanner_integration._is_containerized", return_value=False),
         ):
             assert _score_network_segmentation() == 3
 
