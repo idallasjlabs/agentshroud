@@ -224,14 +224,18 @@ async def _handle_websocket(scope: dict[str, Any], receive: Any, send: Any) -> N
     headers = dict((k.decode("latin-1"), v.decode("latin-1")) for k, v in scope.get("headers", []))
     auth_header = headers.get("authorization", "")
     qs_raw = scope.get("query_string", b"")
-    qs_str = qs_raw.decode("latin-1", errors="replace") if isinstance(qs_raw, bytes) else str(qs_raw)
+    qs_str = (
+        qs_raw.decode("latin-1", errors="replace") if isinstance(qs_raw, bytes) else str(qs_raw)
+    )
 
     # Accept WS if any auth method succeeds: Basic auth header, token query param,
     # or gateway password in Sec-WebSocket-Protocol (OpenClaw dashboard pattern).
     sec_ws_protocol = headers.get("sec-websocket-protocol", "")
-    has_proto_token = any(
-        t.strip() == _read_gateway_password() for t in sec_ws_protocol.split(",")
-    ) if sec_ws_protocol and _read_gateway_password() else False
+    has_proto_token = (
+        any(t.strip() == _read_gateway_password() for t in sec_ws_protocol.split(","))
+        if sec_ws_protocol and _read_gateway_password()
+        else False
+    )
 
     # OpenClaw dashboard JS opens a bare WebSocket with no auth headers.
     # The page itself is behind Basic auth, so we trust WS from allowed origins.
@@ -242,7 +246,12 @@ async def _handle_websocket(scope: dict[str, Any], receive: Any, send: Any) -> N
     ).split(",")
     origin_trusted = origin in allowed_origins
 
-    if not _SKIP_BASIC_AUTH and not (_check_basic_auth(auth_header) or _check_token_auth(qs_str) or has_proto_token or origin_trusted):
+    if not _SKIP_BASIC_AUTH and not (
+        _check_basic_auth(auth_header)
+        or _check_token_auth(qs_str)
+        or has_proto_token
+        or origin_trusted
+    ):
         logger.info(
             "Canvas proxy: unauthorized WebSocket from %s %s",
             scope.get("client"),
@@ -268,7 +277,9 @@ async def _handle_websocket(scope: dict[str, Any], receive: Any, send: Any) -> N
         extra_headers["Origin"] = origin
 
     try:
-        async with websockets.connect(ws_url, additional_headers=extra_headers, max_size=10 * 1024 * 1024) as upstream_ws:
+        async with websockets.connect(
+            ws_url, additional_headers=extra_headers, max_size=10 * 1024 * 1024
+        ) as upstream_ws:
 
             async def client_to_upstream() -> None:
                 while True:

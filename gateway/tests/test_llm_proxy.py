@@ -250,7 +250,12 @@ async def test_proxy_messages_timeout_returns_anthropic_compatible_fallback(monk
 
 
 def test_inject_no_think_prepends_to_system_message():
-    data = {"messages": [{"role": "system", "content": "You are helpful."}, {"role": "user", "content": "hi"}]}
+    data = {
+        "messages": [
+            {"role": "system", "content": "You are helpful."},
+            {"role": "user", "content": "hi"},
+        ]
+    }
     assert _inject_no_think(data, "qwen3-14b") is True
     assert data["messages"][0]["content"] == "/no_think\nYou are helpful."
 
@@ -262,13 +267,23 @@ def test_inject_no_think_inserts_system_when_missing():
 
 
 def test_inject_no_think_skips_deepseek_reasoning():
-    data = {"messages": [{"role": "system", "content": "You are helpful."}, {"role": "user", "content": "hi"}]}
+    data = {
+        "messages": [
+            {"role": "system", "content": "You are helpful."},
+            {"role": "user", "content": "hi"},
+        ]
+    }
     assert _inject_no_think(data, "deepseek-r1-0528-qwen3-8b") is False
     assert data["messages"][0]["content"] == "You are helpful."
 
 
 def test_inject_no_think_skips_non_qwen3():
-    data = {"messages": [{"role": "system", "content": "You are helpful."}, {"role": "user", "content": "hi"}]}
+    data = {
+        "messages": [
+            {"role": "system", "content": "You are helpful."},
+            {"role": "user", "content": "hi"},
+        ]
+    }
     assert _inject_no_think(data, "gemma-4-26b") is False
     assert data["messages"][0]["content"] == "You are helpful."
 
