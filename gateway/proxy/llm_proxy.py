@@ -45,46 +45,8 @@ LOCAL_MODEL_ROUTES: dict[str, str] = {
     "gemma": LMSTUDIO_API_BASE,  # Gemma family — LM Studio on :1234
 }
 
-# Qwen3 models generate <think> blocks by default which can consume thousands of
-# tokens before producing a user-visible response, causing timeouts on complex
-# prompts.  Prefixing /no_think to the first system message suppresses thinking —
-# the model produces an empty <think></think> and goes straight to the answer.
-# Models whose name prefix appears in this set get the injection.
-_QWEN3_THINK_SUPPRESS_PREFIXES = ("qwen3",)
-
-# Models that SHOULD think (reasoning models) are excluded.
+# Models that SHOULD think (reasoning models) — used for routing to mlx_lm.
 _REASONING_MODEL_PREFIXES = ("deepseek-r1", "mlx-community/deepseek-r1")
-
-
-def _inject_no_think(request_data: dict, model_name: str) -> bool:
-    """Prepend /no_think to the first system message for Qwen3 non-reasoning models.
-
-    Returns True if the request was modified.
-    """
-    model_lower = model_name.lower()
-    # Only apply to Qwen3 models
-    if not any(model_lower.startswith(p) for p in _QWEN3_THINK_SUPPRESS_PREFIXES):
-        return False
-    # Skip reasoning models
-    if any(model_lower.startswith(p) for p in _REASONING_MODEL_PREFIXES):
-        return False
-
-    messages = request_data.get("messages")
-    if not messages or not isinstance(messages, list):
-        return False
-
-    # Find the first system message and prepend /no_think
-    for msg in messages:
-        if isinstance(msg, dict) and msg.get("role") == "system":
-            content = msg.get("content", "")
-            if isinstance(content, str) and not content.startswith("/no_think"):
-                msg["content"] = "/no_think\n" + content
-                return True
-            return False  # Already has /no_think
-
-    # No system message — inject one at the start
-    messages.insert(0, {"role": "system", "content": "/no_think"})
-    return True
 
 
 class LLMProxy:
@@ -176,11 +138,6 @@ class LLMProxy:
                 model_name = request_data["model"]
                 model_lower = model_name.lower()
                 break
-
-        # Suppress Qwen3 thinking for non-reasoning models (prevents timeouts)
-        if request_data and is_ollama:
-            if _inject_no_think(request_data, model_lower):
-                body = json.dumps(request_data).encode()
 
         # === INBOUND SCANNING: Scan user messages ===
         if request_data:
@@ -284,10 +241,6 @@ class LLMProxy:
             or model_lower.startswith("ollama/")
             or model_lower.startswith("lmstudio/")
         )
-
-        # Suppress Qwen3 thinking for non-reasoning models (prevents timeouts)
-        if request_data and is_ollama:
-            _inject_no_think(request_data, model_lower)
 
         # Inbound scanning (same as proxy_messages)
         if request_data:
