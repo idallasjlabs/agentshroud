@@ -326,7 +326,7 @@ class LLMProxy:
         async def _stream() -> AsyncIterator[bytes]:
             try:
                 async with httpx.AsyncClient(
-                    verify=True, timeout=httpx.Timeout(5.0, read=600.0)
+                    verify=True, timeout=httpx.Timeout(5.0, read=1800.0)
                 ) as client:
                     async with client.stream(
                         "POST", url, content=body, headers=forward_headers
@@ -760,7 +760,7 @@ class LLMProxy:
             try:
                 response = await loop.run_in_executor(
                     None,
-                    lambda: urllib.request.urlopen(req, timeout=600, context=self._ssl_context),
+                    lambda: urllib.request.urlopen(req, timeout=1800, context=self._ssl_context),
                 )
                 resp_body = response.read()
                 resp_headers = dict(response.headers)
