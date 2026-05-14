@@ -473,7 +473,8 @@ class TestScoreLoggingMonitoring:
 
 class TestScoreComplianceAuditing:
     def test_zero_when_not_run(self, not_run_openscap):
-        assert si._score_compliance_auditing(not_run_openscap) == 0
+        with patch("shutil.which", return_value=None):
+            assert si._score_compliance_auditing(not_run_openscap) == 0
 
     def test_two_with_failures(self):
         openscap = {"status": "warning", "fail_count": 3}
