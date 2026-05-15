@@ -7573,8 +7573,10 @@ class TelegramAPIProxy:
         # Other methods (sendMessage, deleteWebhook, etc.) use a higher timeout than
         # the historical 12s to accommodate environments where IPv6 is unreachable
         # and socket.create_connection falls back to IPv4 (adds ~12s delay).
+        # With IPv6 fallback: TCP setup ≈12s + Telegram hold ≈30s = 42s, so 38s
+        # was too tight. Using 60s for long-poll and 45s for other calls.
         is_long_poll = "getUpdates" in url
-        urlopen_timeout = 38 if is_long_poll else 30
+        urlopen_timeout = 60 if is_long_poll else 45
         wait_for_timeout = urlopen_timeout + 5  # queue + execution budget
 
         loop = asyncio.get_event_loop()

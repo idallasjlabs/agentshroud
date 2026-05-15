@@ -111,9 +111,18 @@ if (!config.tools.web.fetch.enabled) {
 }
 const BRAVE_KEY = process.env.BRAVE_API_KEY || '';
 if (BRAVE_KEY) {
+  // OpenClaw 2026.5+ moved search config to plugins.entries.brave.config.webSearch.
+  // Schema allows ONLY { webSearch: { apiKey } } — no other fields.
+  config.plugins = config.plugins || {};
+  config.plugins.entries = config.plugins.entries || {};
+  config.plugins.entries.brave = config.plugins.entries.brave || {};
+  if (!config.plugins.entries.brave.enabled) { config.plugins.entries.brave.enabled = true; changed = true; }
+  const braveWS = ((config.plugins.entries.brave.config = config.plugins.entries.brave.config || {}).webSearch =
+    config.plugins.entries.brave.config.webSearch || {});
+  if (braveWS.apiKey !== BRAVE_KEY) { braveWS.apiKey = BRAVE_KEY; changed = true; }
+  // Legacy field for fallback (no additional props beyond provider)
   config.tools.web.search = config.tools.web.search || {};
   if (!config.tools.web.search.enabled) { config.tools.web.search.enabled = true; changed = true; }
-  if (config.tools.web.search.apiKey !== BRAVE_KEY) { config.tools.web.search.apiKey = BRAVE_KEY; changed = true; }
   if (config.tools.web.search.provider !== 'brave') { config.tools.web.search.provider = 'brave'; changed = true; }
 }
 
