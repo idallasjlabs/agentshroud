@@ -121,6 +121,7 @@ _ALLOWED_OP_PATHS: list[str] = [
     "op://Agent Shroud Bot Credentials/Google API Key/*",
     "op://Agent Shroud Bot Credentials/Brave Search API Key/*",
     "op://Agent Shroud Bot Credentials/Gateway Password/*",
+    "op://Agent Shroud Bot Credentials/AgentShroud - Google/*",
 ]
 
 
