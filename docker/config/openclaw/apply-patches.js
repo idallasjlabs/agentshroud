@@ -110,10 +110,34 @@ if (!config.tools.web.fetch.enabled) {
   changed = true;
 }
 const BRAVE_KEY = process.env.BRAVE_API_KEY || '';
-if (BRAVE_KEY && (!config.tools.web.search || config.tools.web.search.apiKey !== BRAVE_KEY)) {
+if (BRAVE_KEY) {
+  // OpenClaw 2026.5+ moved search config to plugins.entries.brave.config.webSearch.
+  // Schema allows ONLY { webSearch: { apiKey } } — no other fields.
+  config.plugins = config.plugins || {};
+  config.plugins.entries = config.plugins.entries || {};
+  config.plugins.entries.brave = config.plugins.entries.brave || {};
+  if (!config.plugins.entries.brave.enabled) { config.plugins.entries.brave.enabled = true; changed = true; }
+  const braveWS = ((config.plugins.entries.brave.config = config.plugins.entries.brave.config || {}).webSearch =
+    config.plugins.entries.brave.config.webSearch || {});
+  if (braveWS.apiKey !== BRAVE_KEY) { braveWS.apiKey = BRAVE_KEY; changed = true; }
+  // Legacy field for fallback (no additional props beyond provider)
   config.tools.web.search = config.tools.web.search || {};
-  config.tools.web.search.enabled = true;
-  config.tools.web.search.apiKey = BRAVE_KEY;
+  if (!config.tools.web.search.enabled) { config.tools.web.search.enabled = true; changed = true; }
+  if (config.tools.web.search.provider !== 'brave') { config.tools.web.search.provider = 'brave'; changed = true; }
+}
+
+// Patch 0a1c: agents.defaults timeout + compaction headroom.
+// Cron jobs with long competitive intelligence prompts need >900s and a generous
+// compaction buffer to avoid context-window resets mid-run.
+config.agents = config.agents || {};
+config.agents.defaults = config.agents.defaults || {};
+if (config.agents.defaults.timeoutSeconds !== 1800) {
+  config.agents.defaults.timeoutSeconds = 1800;
+  changed = true;
+}
+config.agents.defaults.compaction = config.agents.defaults.compaction || { mode: 'safeguard' };
+if (config.agents.defaults.compaction.reserveTokensFloor !== 20000) {
+  config.agents.defaults.compaction.reserveTokensFloor = 20000;
   changed = true;
 }
 
