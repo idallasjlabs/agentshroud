@@ -25,6 +25,7 @@ services:
       - "marvin:192.168.7.137"
       - "trillian:192.168.7.103"
       - "raspberrypi:192.168.7.25"
+      - "api.telegram.org:149.154.166.110"
     image: agentshroud-gateway:${AGENTSHROUD_VERSION:-latest}
     container_name: agentshroud-gateway
     hostname: gateway
@@ -166,6 +167,7 @@ services:
       - "marvin:192.168.7.137"
       - "trillian:192.168.7.103"
       - "raspberrypi:192.168.7.25"
+      - "api.telegram.org:149.154.166.110"
     image: agentshroud-bot:${AGENTSHROUD_VERSION:-latest}
     container_name: agentshroud-bot
     hostname: agentshroud
