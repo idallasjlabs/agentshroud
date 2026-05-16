@@ -8,7 +8,13 @@ Core message forwarding endpoints:
 """
 
 import logging
+import os
+import smtplib
+import subprocess
 from datetime import datetime, timezone
+from email.mime.multipart import MIMEMultipart
+from email.mime.text import MIMEText
+from pathlib import Path
 from typing import Annotated
 
 from fastapi import APIRouter, Depends, HTTPException, Request, status
@@ -33,10 +39,57 @@ router = APIRouter()
 # Set up logger
 logger = logging.getLogger(__name__)
 
-# Configuration constants
+# Email configuration
 _EMAIL_ALLOWED_RECIPIENTS: list[str] = [
-    # Fill in trusted addresses; unknown recipients always go to approval queue.
+    "idallasj@gmail.com",
 ]
+_EMAIL_SENDER = "agentshroud.ai@gmail.com"
+_EMAIL_OP_REF = "op://Agent Shroud Bot Credentials/AgentShroud - Google/gmail app password"
+_EMAIL_SMTP_HOST = "smtp.gmail.com"
+_EMAIL_SMTP_PORT = 465
+
+
+def _get_gmail_app_password() -> "str | None":
+    """Read Gmail app password from 1Password using the gateway's cached session."""
+    session = os.environ.get("OP_SESSION", "")
+    if not session:
+        return None
+
+    def _run(sess: str) -> "subprocess.CompletedProcess[str]":
+        return subprocess.run(
+            ["op", "read", "--session", sess, _EMAIL_OP_REF],
+            capture_output=True, text=True, timeout=30,
+        )
+
+    result = _run(session)
+    if result.returncode != 0:
+        secrets = "/run/secrets"
+        try:
+            email = Path(f"{secrets}/1password_bot_email").read_text().strip()
+            password = Path(f"{secrets}/1password_bot_master_password").read_text().strip()
+            key_path = Path(f"{secrets}/1password_bot_secret_key")
+            key = key_path.read_text().strip() if key_path.exists() else ""
+        except OSError:
+            return None
+        if key:
+            r = subprocess.run(
+                ["op", "account", "add", "--address", "my.1password.com",
+                 "--email", email, "--secret-key", key, "--signin", "--raw"],
+                input=password, capture_output=True, text=True, timeout=30,
+            )
+            if r.returncode == 0 and r.stdout.strip():
+                os.environ["OP_SESSION"] = r.stdout.strip()
+                result = _run(r.stdout.strip())
+        if result.returncode != 0:
+            r = subprocess.run(
+                ["op", "signin", "--raw"], input=password,
+                capture_output=True, text=True, timeout=30,
+            )
+            if r.returncode == 0 and r.stdout.strip():
+                os.environ["OP_SESSION"] = r.stdout.strip()
+                result = _run(r.stdout.strip())
+
+    return result.stdout.strip() if result.returncode == 0 and result.stdout.strip() else None
 
 
 # Authentication dependency
@@ -94,13 +147,16 @@ async def email_send(request: EmailSendRequest, req: Request, auth: AuthRequired
     """Email send gateway (P3: channel ownership).
 
     The bot submits email send requests here instead of calling Gmail directly.
-    Controls:
-    - PII scan on body (redacts before logging)
-    - Recipient allowlist: known addresses return 200 (approved)
+    The bot container has no internet access; this endpoint sends via SMTP_SSL
+    on the gateway. Controls:
+    - PII scan on body (redacts before sending)
+    - Recipient allowlist: known addresses are sent immediately
     - Unknown recipients: submitted to approval queue → 202 (queued)
 
     Authentication required.
     """
+    import asyncio
+
     now = datetime.now(timezone.utc).isoformat().replace("+00:00", "Z")
 
     # PII scan on body
@@ -113,54 +169,104 @@ async def email_send(request: EmailSendRequest, req: Request, auth: AuthRequired
             sanitized_body = scan.sanitized_content
             pii_redacted = len(scan.redactions) > 0
             if pii_redacted:
-                logger.warning(f"email-send: PII redacted from body ({len(scan.redactions)} items)")
+                logger.warning("email-send: PII redacted from body (%d items)", len(scan.redactions))
         except Exception as e:
-            logger.warning(f"email-send: PII scan failed ({e}), proceeding with original body")
+            logger.warning("email-send: PII scan failed (%s), proceeding with original body", e)
 
     # Recipient allowlist check
-    if _is_email_recipient_allowed(request.to):
-        logger.info("email-send: approved for allowed recipient")
-        return EmailSendResponse(
-            status="approved",
-            sanitized_body=sanitized_body,
-            pii_redacted=pii_redacted,
-            timestamp=now,
+    if not _is_email_recipient_allowed(request.to):
+        # Unknown recipient → queue for approval
+        approval_queue = getattr(app_state, "approval_queue", None)
+        if approval_queue:
+            approval_req = ApprovalRequest(
+                action_type="email_sending",
+                description=f"Send email to {request.to}: {request.subject}",
+                details={
+                    "to": request.to,
+                    "subject": request.subject,
+                    "body": sanitized_body[:500],
+                    "pii_redacted": pii_redacted,
+                },
+                agent_id=request.agent_id,
+            )
+            item = await approval_queue.submit(approval_req)
+            logger.info("email-send: queued for approval (id=%s)", item.request_id)
+            return JSONResponse(
+                status_code=status.HTTP_202_ACCEPTED,
+                content=EmailSendResponse(
+                    status="queued",
+                    sanitized_body=sanitized_body,
+                    pii_redacted=pii_redacted,
+                    approval_id=item.request_id,
+                    timestamp=now,
+                ).model_dump(),
+            )
+        logger.warning("email-send: unknown recipient blocked (no approval queue available)")
+        raise HTTPException(
+            status_code=status.HTTP_403_FORBIDDEN,
+            detail="Recipient not in allowlist and no approval queue available",
         )
 
-    # Unknown recipient → queue for approval
-    approval_queue = getattr(app_state, "approval_queue", None)
-    if approval_queue:
-        approval_req = ApprovalRequest(
-            action_type="email_sending",
-            description=f"Send email to {request.to}: {request.subject}",
-            details={
-                "to": request.to,
-                "subject": request.subject,
-                "body": sanitized_body,
-                "pii_redacted": pii_redacted,
-            },
-            agent_id=request.agent_id,
+    # Retrieve Gmail app password from 1Password
+    loop = asyncio.get_event_loop()
+    try:
+        app_password = await loop.run_in_executor(None, _get_gmail_app_password)
+    except Exception as e:
+        logger.error("email-send: credential retrieval error: %s", e)
+        raise HTTPException(
+            status_code=status.HTTP_503_SERVICE_UNAVAILABLE,
+            detail="Failed to retrieve email credentials",
         )
-        item = await approval_queue.submit(approval_req)
-        logger.info(f"email-send: queued for approval (id={item.request_id})")
-        from fastapi.responses import JSONResponse as _JSONResponse
-
-        return _JSONResponse(
-            status_code=status.HTTP_202_ACCEPTED,
-            content=EmailSendResponse(
-                status="queued",
-                sanitized_body=sanitized_body,
-                pii_redacted=pii_redacted,
-                approval_id=item.request_id,
-                timestamp=now,
-            ).model_dump(),
+    if not app_password:
+        logger.error("email-send: Gmail app password not available")
+        raise HTTPException(
+            status_code=status.HTTP_503_SERVICE_UNAVAILABLE,
+            detail="Email credentials not available",
         )
 
-    # No approval queue available (e.g. during startup or tests) — block send
-    logger.warning("email-send: unknown recipient blocked (no approval queue available)")
-    raise HTTPException(
-        status_code=status.HTTP_403_FORBIDDEN,
-        detail="Recipient not in allowlist and no approval queue available",
+    # Build MIME message
+    msg = MIMEMultipart("alternative")
+    msg["Subject"] = request.subject
+    msg["From"] = _EMAIL_SENDER
+    msg["To"] = request.to
+
+    is_html = getattr(request, "is_html", False)
+    if is_html:
+        # Attach plain fallback first, then HTML (clients prefer last attachment)
+        plain = "This email requires an HTML-capable email client."
+        msg.attach(MIMEText(plain, "plain"))
+        msg.attach(MIMEText(sanitized_body, "html"))
+    else:
+        msg.attach(MIMEText(sanitized_body, "plain"))
+
+    # Send via SMTP_SSL
+    def _send() -> None:
+        with smtplib.SMTP_SSL(_EMAIL_SMTP_HOST, _EMAIL_SMTP_PORT) as smtp:
+            smtp.login(_EMAIL_SENDER, app_password)
+            smtp.sendmail(_EMAIL_SENDER, [request.to], msg.as_string())
+
+    try:
+        await loop.run_in_executor(None, _send)
+        logger.info("email-send: sent to %s subject=%r", request.to, request.subject)
+    except smtplib.SMTPAuthenticationError as e:
+        logger.error("email-send: SMTP auth failed: %s", e)
+        raise HTTPException(
+            status_code=status.HTTP_502_BAD_GATEWAY,
+            detail=f"SMTP authentication failed: {e}",
+        )
+    except Exception as e:
+        logger.error("email-send: SMTP error: %s", e)
+        raise HTTPException(
+            status_code=status.HTTP_502_BAD_GATEWAY,
+            detail=f"Failed to send email: {e}",
+        )
+
+    return EmailSendResponse(
+        status="approved",
+        sanitized_body=sanitized_body if pii_redacted else None,
+        pii_redacted=pii_redacted,
+        approval_id=None,
+        timestamp=now,
     )
 
 

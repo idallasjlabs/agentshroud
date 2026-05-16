@@ -134,9 +134,13 @@ class TestEmailSend:
 
     def test_allowed_recipient_returns_200(self, client):
         """Email to an allowed recipient returns 200 with status=approved."""
-        with patch(
-            "gateway.ingest_api.routes.forward._is_email_recipient_allowed", return_value=True
+        with (
+            patch("gateway.ingest_api.routes.forward._is_email_recipient_allowed", return_value=True),
+            patch("gateway.ingest_api.routes.forward._get_gmail_app_password", return_value="fake-app-pw"),
+            patch("gateway.ingest_api.routes.forward.smtplib.SMTP_SSL") as mock_smtp,
         ):
+            mock_smtp.return_value.__enter__ = MagicMock(return_value=MagicMock())
+            mock_smtp.return_value.__exit__ = MagicMock(return_value=False)
             resp = client.post(
                 "/email/send",
                 json={
@@ -151,9 +155,13 @@ class TestEmailSend:
 
     def test_allowed_recipient_response_has_sanitized_body(self, client):
         """Approved response includes sanitized_body field."""
-        with patch(
-            "gateway.ingest_api.routes.forward._is_email_recipient_allowed", return_value=True
+        with (
+            patch("gateway.ingest_api.routes.forward._is_email_recipient_allowed", return_value=True),
+            patch("gateway.ingest_api.routes.forward._get_gmail_app_password", return_value="fake-app-pw"),
+            patch("gateway.ingest_api.routes.forward.smtplib.SMTP_SSL") as mock_smtp,
         ):
+            mock_smtp.return_value.__enter__ = MagicMock(return_value=MagicMock())
+            mock_smtp.return_value.__exit__ = MagicMock(return_value=False)
             resp = client.post(
                 "/email/send",
                 json={"to": "trusted@example.com", "subject": "Test", "body": "Hi"},
@@ -173,11 +181,13 @@ class TestEmailSend:
         mock_sanitizer.sanitize = AsyncMock(return_value=mock_scan)
 
         with (
-            patch(
-                "gateway.ingest_api.routes.forward._is_email_recipient_allowed", return_value=True
-            ),
+            patch("gateway.ingest_api.routes.forward._is_email_recipient_allowed", return_value=True),
+            patch("gateway.ingest_api.routes.forward._get_gmail_app_password", return_value="fake-app-pw"),
+            patch("gateway.ingest_api.routes.forward.smtplib.SMTP_SSL") as mock_smtp,
             patch("gateway.ingest_api.routes.forward.app_state") as mock_state,
         ):
+            mock_smtp.return_value.__enter__ = MagicMock(return_value=MagicMock())
+            mock_smtp.return_value.__exit__ = MagicMock(return_value=False)
             mock_state.sanitizer = mock_sanitizer
             mock_state.approval_queue = None
             resp = client.post(
@@ -244,9 +254,13 @@ class TestEmailSend:
 
     def test_response_has_timestamp(self, client):
         """All responses include an ISO 8601 timestamp."""
-        with patch(
-            "gateway.ingest_api.routes.forward._is_email_recipient_allowed", return_value=True
+        with (
+            patch("gateway.ingest_api.routes.forward._is_email_recipient_allowed", return_value=True),
+            patch("gateway.ingest_api.routes.forward._get_gmail_app_password", return_value="fake-app-pw"),
+            patch("gateway.ingest_api.routes.forward.smtplib.SMTP_SSL") as mock_smtp,
         ):
+            mock_smtp.return_value.__enter__ = MagicMock(return_value=MagicMock())
+            mock_smtp.return_value.__exit__ = MagicMock(return_value=False)
             resp = client.post(
                 "/email/send",
                 json={"to": "trusted@example.com", "subject": "Test", "body": "Hi"},

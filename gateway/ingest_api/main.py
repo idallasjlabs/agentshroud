@@ -839,8 +839,6 @@ async def mcp_result_endpoint(payload: MCPResultRequest, http_request: Request, 
 # gateway instead of sending directly (FINAL PR wires docker-compose).
 
 
-# Allowed recipient list for email_send — add addresses as needed.
-# Empty list = all recipients require approval queue.
 @app.post("/webhook/telegram")
 async def telegram_webhook(request: Request, auth: AuthRequired):
     """Telegram inbound webhook (P3: channel ownership).
