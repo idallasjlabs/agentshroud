@@ -270,6 +270,32 @@ async def email_send(request: EmailSendRequest, req: Request, auth: AuthRequired
     )
 
 
+class OwnerEmailRequest(BaseModel):
+    subject: str = Field(..., max_length=998)
+    body: str = Field(..., max_length=100_000)
+    is_html: bool = Field(False)
+
+
+@router.post("/email/send-owner", status_code=status.HTTP_200_OK)
+async def email_send_owner(request: OwnerEmailRequest, req: Request, auth: AuthRequired):
+    """Send an email to the owner without exposing the recipient address in the request.
+
+    Identical to /email/send but the recipient is always _EMAIL_ALLOWED_RECIPIENTS[0]
+    (currently idallasj@gmail.com). Use this from cron jobs so the owner's email
+    never appears in the LLM prompt where the PII scanner would redact it.
+
+    Authentication required.
+    """
+    inner = EmailSendRequest(
+        to=_EMAIL_ALLOWED_RECIPIENTS[0],
+        subject=request.subject,
+        body=request.body,
+        is_html=request.is_html,
+    )
+    # Delegate to the existing handler — reuse all SMTP + PII logic
+    return await email_send(inner, req, auth)
+
+
 @router.post("/forward", response_model=ForwardResponse, status_code=status.HTTP_201_CREATED)
 async def forward_content(request: ForwardRequest, req: Request, auth: AuthRequired):
     """Main ingest endpoint
