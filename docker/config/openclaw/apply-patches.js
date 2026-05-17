@@ -126,7 +126,13 @@ if (BRAVE_KEY) {
   if (config.tools.web.search.provider !== 'brave') { config.tools.web.search.provider = 'brave'; changed = true; }
 }
 
-// Patch 0a1c: agents.defaults timeout + compaction headroom.
+// Patch 0a1c: cron lane + agents.defaults timeout + compaction headroom.
+// maxConcurrentRuns=1 serialises cron jobs so LM Studio never receives more
+// than one long-context request at a time — prevents KV-cache OOM crashes.
+config.cron = config.cron || {};
+if (config.cron.maxConcurrentRuns !== 1) { config.cron.maxConcurrentRuns = 1; changed = true; }
+
+// agents.defaults timeout + compaction headroom.
 // Cron jobs with long competitive intelligence prompts need >900s and a generous
 // compaction buffer to avoid context-window resets mid-run.
 config.agents = config.agents || {};
@@ -136,8 +142,10 @@ if (config.agents.defaults.timeoutSeconds !== 1800) {
   changed = true;
 }
 config.agents.defaults.compaction = config.agents.defaults.compaction || { mode: 'safeguard' };
-if (config.agents.defaults.compaction.reserveTokensFloor !== 20000) {
-  config.agents.defaults.compaction.reserveTokensFloor = 20000;
+// 4096 floor leaves 28K input budget for a 32768-context model with ~11K bootstrap.
+// 20000 was too large (exceeds the context window itself).
+if (config.agents.defaults.compaction.reserveTokensFloor !== 4096) {
+  config.agents.defaults.compaction.reserveTokensFloor = 4096;
   changed = true;
 }
 
