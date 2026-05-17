@@ -242,6 +242,7 @@ class EmailSendRequest(BaseModel):
     to: str = Field(..., max_length=254, description="Recipient email address")
     subject: str = Field(..., max_length=998, description="Email subject")
     body: str = Field(..., max_length=100_000, description="Email body text")
+    is_html: bool = Field(False, description="Send body as HTML (text/html content type)")
     agent_id: str = Field(
         default="",
         max_length=100,
