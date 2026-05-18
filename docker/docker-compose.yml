@@ -177,6 +177,7 @@ services:
     # routed through the gateway's auth-proxy (CVE-2026-34871 mitigation).
     volumes:
       - agentshroud-config:/home/node/.openclaw
+      - agentshroud-collab-workspaces:/home/node/.agentshroud
       - agentshroud-workspace:/home/node/agentshroud/workspace
       - gateway-data:/home/node/agentshroud/gateway-data:ro
       - agentshroud-ssh:/home/node/.ssh
@@ -252,7 +253,7 @@ services:
       - /home/node/.npm:noexec,nosuid,size=200m,uid=1000,gid=1000
       - /home/node/.local:noexec,nosuid,size=100m
       - /home/node/.config:noexec,nosuid,size=100m,uid=1000,gid=1000
-      - /home/node/.agentshroud/agents:nosuid,size=200m,uid=1000,gid=1000
+      - /home/node/.agentshroud/agents:nosuid,size=200m,uid=1000,gid=1000  # tmpfs overlay; parent vol provides collab/ persistence
       - /home/node/.ssh-tmp:nosuid,size=10m,uid=1000,gid=1000
       - /var/ossec/var:nosuid,size=10m,uid=1000,gid=1000
       - /var/ossec/queue:nosuid,size=50m,uid=1000,gid=1000
@@ -373,4 +374,6 @@ volumes:
   clamav-db:
     driver: local
   memory-backups:
+    driver: local
+  agentshroud-collab-workspaces:
     driver: local

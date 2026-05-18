@@ -142,10 +142,10 @@ if (config.agents.defaults.timeoutSeconds !== 1800) {
   changed = true;
 }
 config.agents.defaults.compaction = config.agents.defaults.compaction || { mode: 'safeguard' };
-// 4096 floor leaves 28K input budget for a 32768-context model with ~11K bootstrap.
-// 20000 was too large (exceeds the context window itself).
-if (config.agents.defaults.compaction.reserveTokensFloor !== 4096) {
-  config.agents.defaults.compaction.reserveTokensFloor = 4096;
+// 20000 floor leaves 20K input budget for a 40960-context model with ~11K bootstrap.
+// This matches the OpenClaw recommendation for qwen3-14b at 40960 context.
+if (config.agents.defaults.compaction.reserveTokensFloor !== 20000) {
+  config.agents.defaults.compaction.reserveTokensFloor = 20000;
   changed = true;
 }
 
@@ -189,31 +189,35 @@ config.models.providers = config.models.providers || {};
 // uses OpenAI stream parsing instead of Ollama-native parsing.
 const PROVIDER_KEY = MODEL_MODE === 'local-multi' ? 'openai-local' : 'ollama';
 const currentProvider = config.models.providers[PROVIDER_KEY] || {};
-// Context window for local-multi models. Qwen 3.x 27B supports up to 128K in LM Studio;
-// 65536 gives cron jobs (competitive analysis, CVE triage) enough room for long workspace
-// reads without hitting the 32K cap that caused "prompt too large" context overflow errors.
-const LOCAL_CONTEXT_WINDOW = 32768;
+// Context windows per model role (must match what LM Studio actually loads).
+// Anchor (qwen3-14b): 40960 — loaded at 40960 in LM Studio.
+// Reasoning (deepseek-r1-*): 16384 — smaller model, 16K is sufficient.
+// Coding: 32768 — coding model default.
+const ANCHOR_CONTEXT_WINDOW = 40960;
+const REASONING_CONTEXT_WINDOW = 16384;
+const CODING_CONTEXT_WINDOW = 32768;
+
 const providerModels = [
   {
     id: LOCAL_MODEL_NAME,
     name: LOCAL_MODEL_NAME,
     reasoning: false,
     input: ['text'],
-    contextWindow: LOCAL_CONTEXT_WINDOW,
+    contextWindow: ANCHOR_CONTEXT_WINDOW,
     maxTokens: 8192,
   },
 ];
 if (MODEL_MODE === 'local-multi') {
-  const ANCHOR_MODEL_NAME = process.env.AGENTSHROUD_ANCHOR_MODEL || 'qwen3.6-27b';
-  const CODING_MODEL_NAME = process.env.AGENTSHROUD_CODING_MODEL || 'qwen2.5-coder:32b';
-  const REASONING_MODEL_NAME = process.env.AGENTSHROUD_REASONING_MODEL || 'deepseek-r1';
-  for (const [id, label, reasoning] of [
-    [ANCHOR_MODEL_NAME, 'Anchor', false],
-    [CODING_MODEL_NAME, 'Coding', false],
-    [REASONING_MODEL_NAME, 'Reasoning', true],
+  const ANCHOR_MODEL_NAME = process.env.AGENTSHROUD_ANCHOR_MODEL || 'qwen3-14b';
+  const CODING_MODEL_NAME = process.env.AGENTSHROUD_CODING_MODEL || 'qwen3-coder-30b-a3b-instruct';
+  const REASONING_MODEL_NAME = process.env.AGENTSHROUD_REASONING_MODEL || 'deepseek-r1-0528-qwen3-8b';
+  for (const [id, label, reasoning, ctxWin] of [
+    [ANCHOR_MODEL_NAME, 'Anchor', false, ANCHOR_CONTEXT_WINDOW],
+    [CODING_MODEL_NAME, 'Coding', false, CODING_CONTEXT_WINDOW],
+    [REASONING_MODEL_NAME, 'Reasoning', true, REASONING_CONTEXT_WINDOW],
   ]) {
     if (!providerModels.some((m) => m.id === id)) {
-      providerModels.push({ id, name: label + ' (' + id + ')', reasoning, input: ['text'], contextWindow: LOCAL_CONTEXT_WINDOW, maxTokens: 8192 });
+      providerModels.push({ id, name: label + ' (' + id + ')', reasoning, input: ['text'], contextWindow: ctxWin, maxTokens: 8192 });
     }
   }
   // Remove stale "ollama" provider key from previous config to avoid dual-provider confusion.
@@ -222,9 +226,9 @@ if (MODEL_MODE === 'local-multi') {
     changed = true;
   }
 }
-// Provider timeout: raise to 600s for local-multi so long-context cron jobs
-// (competitive analysis, CVE triage) don't hit the idle watchdog on slow model inference.
-const PROVIDER_TIMEOUT_SECONDS = MODEL_MODE === 'local-multi' ? 600 : 300;
+// Provider timeout: 1800s for local-multi — qwen3-14b at 40960 ctx takes 2-5 min prefill
+// before the first token. 600s killed requests during that prefill window.
+const PROVIDER_TIMEOUT_SECONDS = MODEL_MODE === 'local-multi' ? 1800 : 300;
 const desiredProvider = {
   baseUrl: OLLAMA_BASE_URL,
   api: OLLAMA_PROVIDER_API,
@@ -253,7 +257,7 @@ if (process.env.LMSTUDIO_API_BASE) {
         name: 'Anchor (' + LMSTUDIO_ANCHOR_MODEL + ')',
         reasoning: false,
         input: ['text'],
-        contextWindow: 32768,
+        contextWindow: ANCHOR_CONTEXT_WINDOW,
         maxTokens: 8192,
       },
       {
@@ -261,7 +265,7 @@ if (process.env.LMSTUDIO_API_BASE) {
         name: 'Coding (' + LMSTUDIO_CODING_MODEL + ')',
         reasoning: false,
         input: ['text'],
-        contextWindow: 32768,
+        contextWindow: CODING_CONTEXT_WINDOW,
         maxTokens: 8192,
       },
     ],
