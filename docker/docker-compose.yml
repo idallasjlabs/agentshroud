@@ -144,6 +144,7 @@ services:
     dns:
       - ${AGENTSHROUD_DNS_PRIMARY:-1.1.1.1}
       - ${AGENTSHROUD_DNS_SECONDARY:-8.8.8.8}
+      - 192.168.64.1
       - 1.1.1.1
       - 8.8.8.8
 
@@ -281,6 +282,7 @@ services:
     dns:
       - ${AGENTSHROUD_DNS_PRIMARY:-1.1.1.1}
       - ${AGENTSHROUD_DNS_SECONDARY:-8.8.8.8}
+      - 192.168.64.1
       - 1.1.1.1
       - 8.8.8.8
     # Bot is now on agentshroud-isolated only. Canvas port 18789 is no longer
