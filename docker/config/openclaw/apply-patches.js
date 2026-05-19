@@ -150,11 +150,12 @@ if (config.agents.defaults.timeoutSeconds !== 1800) {
   changed = true;
 }
 config.agents.defaults.compaction = config.agents.defaults.compaction || { mode: 'safeguard' };
-// 6000 floor for qwen3-14b at 16384 context: leaves ~10K input budget after 6K output reserve.
-// Previous value was 20000 for 40960 context — reduced when we dropped ctx to 16384
-// to stop LM Studio OOM crashes during long competitive-intel prefills.
-if (config.agents.defaults.compaction.reserveTokensFloor !== 6000) {
-  config.agents.defaults.compaction.reserveTokensFloor = 6000;
+// 2048 floor is safe even if LM Studio reloads at its smallest default context (~2048).
+// If set higher (e.g. 6000) and LM Studio crashes then reloads at small ctx, OpenClaw
+// immediately errors: "tokens to keep from initial prompt > context length".
+// At 2048 we still protect the core system prompt; compaction can summarize older turns.
+if (config.agents.defaults.compaction.reserveTokensFloor !== 2048) {
+  config.agents.defaults.compaction.reserveTokensFloor = 2048;
   changed = true;
 }
 
