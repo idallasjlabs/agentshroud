@@ -109,6 +109,14 @@ if (!config.tools.web.fetch.enabled) {
   config.tools.web.fetch.enabled = true;
   changed = true;
 }
+// useTrustedEnvProxy: route web_fetch DNS through the gateway HTTPS proxy (HTTPS_PROXY env).
+// The bot runs on an internal-true Docker network with no direct external DNS resolution,
+// so local DNS lookups fail with EAI_AGAIN. Setting this true makes OpenClaw skip local
+// DNS pinning and trust the operator-controlled gateway proxy to resolve and policy-check.
+if (config.tools.web.fetch.useTrustedEnvProxy !== true) {
+  config.tools.web.fetch.useTrustedEnvProxy = true;
+  changed = true;
+}
 const BRAVE_KEY = process.env.BRAVE_API_KEY || '';
 if (BRAVE_KEY) {
   // OpenClaw 2026.5+ moved search config to plugins.entries.brave.config.webSearch.
@@ -142,10 +150,11 @@ if (config.agents.defaults.timeoutSeconds !== 1800) {
   changed = true;
 }
 config.agents.defaults.compaction = config.agents.defaults.compaction || { mode: 'safeguard' };
-// 20000 floor leaves 20K input budget for a 40960-context model with ~11K bootstrap.
-// This matches the OpenClaw recommendation for qwen3-14b at 40960 context.
-if (config.agents.defaults.compaction.reserveTokensFloor !== 20000) {
-  config.agents.defaults.compaction.reserveTokensFloor = 20000;
+// 6000 floor for qwen3-14b at 16384 context: leaves ~10K input budget after 6K output reserve.
+// Previous value was 20000 for 40960 context — reduced when we dropped ctx to 16384
+// to stop LM Studio OOM crashes during long competitive-intel prefills.
+if (config.agents.defaults.compaction.reserveTokensFloor !== 6000) {
+  config.agents.defaults.compaction.reserveTokensFloor = 6000;
   changed = true;
 }
 
@@ -190,12 +199,13 @@ config.models.providers = config.models.providers || {};
 const PROVIDER_KEY = MODEL_MODE === 'local-multi' ? 'openai-local' : 'ollama';
 const currentProvider = config.models.providers[PROVIDER_KEY] || {};
 // Context windows per model role (must match what LM Studio actually loads).
-// Anchor (qwen3-14b): 40960 — loaded at 40960 in LM Studio.
+// Anchor (qwen3-14b): 16384 — reduced from 40960 to prevent LM Studio OOM crashes
+// during long prefills (competitive-intel jobs fill context with web results).
 // Reasoning (deepseek-r1-*): 16384 — smaller model, 16K is sufficient.
-// Coding: 32768 — coding model default.
-const ANCHOR_CONTEXT_WINDOW = 40960;
+// Coding: 16384 — reduced to match anchor for consistency.
+const ANCHOR_CONTEXT_WINDOW = 16384;
 const REASONING_CONTEXT_WINDOW = 16384;
-const CODING_CONTEXT_WINDOW = 32768;
+const CODING_CONTEXT_WINDOW = 16384;
 
 const providerModels = [
   {
