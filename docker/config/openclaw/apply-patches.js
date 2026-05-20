@@ -150,12 +150,11 @@ if (config.agents.defaults.timeoutSeconds !== 1800) {
   changed = true;
 }
 config.agents.defaults.compaction = config.agents.defaults.compaction || { mode: 'safeguard' };
-// 2048 floor is safe even if LM Studio reloads at its smallest default context (~2048).
-// If set higher (e.g. 6000) and LM Studio crashes then reloads at small ctx, OpenClaw
-// immediately errors: "tokens to keep from initial prompt > context length".
-// At 2048 we still protect the core system prompt; compaction can summarize older turns.
-if (config.agents.defaults.compaction.reserveTokensFloor !== 2048) {
-  config.agents.defaults.compaction.reserveTokensFloor = 2048;
+// reserveTokensFloor=0: let OpenClaw decide compaction boundaries without a minimum floor.
+// Any positive floor > LM Studio's JIT-reload default context causes immediate failure
+// ("tokens to keep from initial prompt > context length"). 0 eliminates that failure mode.
+if (config.agents.defaults.compaction.reserveTokensFloor !== 0) {
+  config.agents.defaults.compaction.reserveTokensFloor = 0;
   changed = true;
 }
 
@@ -200,13 +199,13 @@ config.models.providers = config.models.providers || {};
 const PROVIDER_KEY = MODEL_MODE === 'local-multi' ? 'openai-local' : 'ollama';
 const currentProvider = config.models.providers[PROVIDER_KEY] || {};
 // Context windows per model role (must match what LM Studio actually loads).
-// Anchor (qwen3-14b): 16384 — reduced from 40960 to prevent LM Studio OOM crashes
-// during long prefills (competitive-intel jobs fill context with web results).
+// Anchor (qwen3-14b): 32768 — loaded via `printf '1\n' | lms load qwen3-14b --context-length 32768`
+//   M1 Ultra has 64-128GB unified memory; 32K is stable for competitive-intel cron jobs.
 // Reasoning (deepseek-r1-*): 16384 — smaller model, 16K is sufficient.
-// Coding: 16384 — reduced to match anchor for consistency.
-const ANCHOR_CONTEXT_WINDOW = 16384;
+// Coding: 32768 — match anchor.
+const ANCHOR_CONTEXT_WINDOW = 32768;
 const REASONING_CONTEXT_WINDOW = 16384;
-const CODING_CONTEXT_WINDOW = 16384;
+const CODING_CONTEXT_WINDOW = 32768;
 
 const providerModels = [
   {
