@@ -182,7 +182,8 @@ if (!config.tools.elevated.enabled) {
   changed = true;
 }
 // allowFrom expects arrays of user IDs; ["*"] means all users on that channel.
-const desiredAllowFrom = { telegram: ['*'], slack: ['*'], webchat: ['*'] };
+// "cron" and "direct" are needed for cron jobs that use exec (e.g. read gateway_password).
+const desiredAllowFrom = { telegram: ['*'], slack: ['*'], webchat: ['*'], cron: ['*'], direct: ['*'] };
 if (JSON.stringify(config.tools.elevated.allowFrom) !== JSON.stringify(desiredAllowFrom)) {
   config.tools.elevated.allowFrom = desiredAllowFrom;
   changed = true;
