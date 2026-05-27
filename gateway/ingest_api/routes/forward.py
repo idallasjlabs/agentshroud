@@ -54,8 +54,6 @@ _EMAIL_SMTP_PORT = 465
 def _get_gmail_app_password() -> "str | None":
     """Read Gmail app password from 1Password using the gateway's cached session."""
     session = os.environ.get("OP_SESSION", "")
-    if not session:
-        return None
 
     def _run(sess: str) -> "subprocess.CompletedProcess[str]":
         return subprocess.run(
@@ -63,8 +61,8 @@ def _get_gmail_app_password() -> "str | None":
             capture_output=True, text=True, timeout=30,
         )
 
-    result = _run(session)
-    if result.returncode != 0:
+    result = _run(session) if session else None
+    if not result or result.returncode != 0:
         secrets = "/run/secrets"
         try:
             email = Path(f"{secrets}/1password_bot_email").read_text().strip()
@@ -82,7 +80,7 @@ def _get_gmail_app_password() -> "str | None":
             if r.returncode == 0 and r.stdout.strip():
                 os.environ["OP_SESSION"] = r.stdout.strip()
                 result = _run(r.stdout.strip())
-        if result.returncode != 0:
+        if not result or result.returncode != 0:
             r = subprocess.run(
                 ["op", "signin", "--raw"], input=password,
                 capture_output=True, text=True, timeout=30,
@@ -91,7 +89,7 @@ def _get_gmail_app_password() -> "str | None":
                 os.environ["OP_SESSION"] = r.stdout.strip()
                 result = _run(r.stdout.strip())
 
-    return result.stdout.strip() if result.returncode == 0 and result.stdout.strip() else None
+    return result.stdout.strip() if result and result.returncode == 0 and result.stdout.strip() else None
 
 
 # Authentication dependency

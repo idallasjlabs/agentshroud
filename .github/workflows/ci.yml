@@ -130,8 +130,10 @@ jobs:
 
           for file in "${SOUL_FILES[@]}"; do
             if [ ! -f "$file" ]; then
-              echo "ERROR: $file not found" >&2
-              exit 1
+              # File is intentionally gitignored (personal LLM context, baked in locally).
+              # Skip rather than hard-fail so CI doesn't block on private-content files.
+              echo "SKIP: $file not present in checkout (gitignored personal content — OK)"
+              continue
             fi
 
             DATE_LINE=$(grep -o 'soul-updated: [0-9]\{4\}-[0-9]\{2\}-[0-9]\{2\}' "$file" | grep -o '[0-9]\{4\}-[0-9]\{2\}-[0-9]\{2\}' || true)
