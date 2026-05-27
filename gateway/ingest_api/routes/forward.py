@@ -310,6 +310,17 @@ async def forward_content(request: ForwardRequest, req: Request, auth: AuthRequi
         f"type={request.content_type}, size={len(request.content)}"
     )
 
+    # Resolve routing target before the security pipeline so the correct bot's
+    # agent_id flows into TrustManager, EgressFilter, and audit logs.
+    try:
+        target = await app_state.router.resolve_target(request)
+    except Exception as e:
+        logger.error(f"Routing failed: {e}")
+        raise HTTPException(
+            status_code=status.HTTP_500_INTERNAL_SERVER_ERROR,
+            detail="Failed to resolve routing target",
+        )
+
     # Step 0: P1 Middleware Security Processing
     middleware_manager = getattr(app_state, "middleware_manager", None)
     if middleware_manager:
@@ -362,7 +373,7 @@ async def forward_content(request: ForwardRequest, req: Request, auth: AuthRequi
         try:
             pipeline_result = await pipeline.process_inbound(
                 message=request.content,
-                agent_id="default",
+                agent_id=target.name,
                 action="send_message",
                 source=request.source,
             )
@@ -408,15 +419,7 @@ async def forward_content(request: ForwardRequest, req: Request, auth: AuthRequi
         entity_types_found = sanitization_result.entity_types_found
         redaction_count = len(sanitization_result.redactions)
 
-    # Step 2: Resolve routing target
-    try:
-        target = await app_state.router.resolve_target(request)
-    except Exception as e:
-        logger.error(f"Routing failed: {e}")
-        raise HTTPException(
-            status_code=status.HTTP_500_INTERNAL_SERVER_ERROR,
-            detail="Failed to resolve routing target",
-        )
+    # Step 2 (routing target already resolved above)
 
     # Step 3: Forward to agent
     forwarded_to = target.name
@@ -509,7 +512,7 @@ async def forward_content(request: ForwardRequest, req: Request, auth: AuthRequi
             # Get user trust level for outbound filtering
             user_trust_level = "UNTRUSTED"
             if pipeline.trust_manager:
-                trust_info = pipeline.trust_manager.get_trust("default")
+                trust_info = pipeline.trust_manager.get_trust(target.name)
                 if trust_info:
                     trust_score = trust_info[0]
                     if trust_score >= 400:
@@ -523,7 +526,7 @@ async def forward_content(request: ForwardRequest, req: Request, auth: AuthRequi
 
             out_result = await pipeline.process_outbound(
                 response=agent_response,
-                agent_id="default",
+                agent_id=target.name,
                 user_trust_level=user_trust_level,
                 source=request.source,
             )

@@ -4303,14 +4303,30 @@ async def telegram_api_proxy(path: str, request: Request):
     bot_token = match.group(2)
     method = match.group(3)
 
-    # M6: Validate bot token matches the configured token
-    configured_token = None
-    configured_token = _read_secret("telegram_bot_token") or None
-    if not configured_token:
-        logger.error("Telegram proxy: no bot token configured — rejecting request (fail-closed)")
-        raise HTTPException(status_code=503, detail="Telegram proxy not configured")
-    if not hmac.compare_digest(bot_token, configured_token):
-        logger.warning("Telegram proxy: bot token mismatch — rejecting request")
+    # M6: Validate bot token against the multi-bot registry.
+    # Registry is built lazily from BotConfig.telegram_token_secret + the legacy
+    # 'telegram_bot_token' secret (OpenClaw default). Keyed token → bot_id.
+    if not getattr(app_state, "_telegram_token_registry", None):
+        _registry: dict[str, str] = {}
+        for _bid, _bcfg in app_state.config.bots.items():
+            _secret_name = _bcfg.telegram_token_secret or (
+                "telegram_bot_token" if _bid == "openclaw" else f"telegram_bot_token_{_bid}"
+            )
+            _tok = _read_secret(_secret_name) or None
+            if _tok:
+                _registry[_tok] = _bid
+        # Legacy fallback: 'telegram_bot_token' covers OpenClaw even if not declared in BotConfig
+        _legacy = _read_secret("telegram_bot_token") or None
+        if _legacy and _legacy not in _registry:
+            _registry[_legacy] = "openclaw"
+        if not _registry:
+            logger.error("Telegram proxy: no bot tokens configured — rejecting request (fail-closed)")
+            raise HTTPException(status_code=503, detail="Telegram proxy not configured")
+        app_state._telegram_token_registry = _registry
+
+    matched_bot_id = app_state._telegram_token_registry.get(bot_token)
+    if not matched_bot_id:
+        logger.warning("Telegram proxy: unrecognised bot token — rejecting request")
         raise HTTPException(status_code=403, detail="Invalid bot token")
 
     # Read request body — guard against client disconnect mid-stream
@@ -4339,6 +4355,7 @@ async def telegram_api_proxy(path: str, request: Request):
     # System notifications (startup/shutdown from start.sh) carry X-AgentShroud-System: 1
     # so the proxy skips outbound content filtering — these are not LLM-generated output.
     is_system = request.headers.get("x-agentshroud-system") == "1"
+    logger.debug("Telegram proxy: bot_id=%s method=%s", matched_bot_id, method)
 
     result = await _telegram_proxy.proxy_request(
         bot_token, method, body, content_type, is_system=is_system, path_prefix=file_prefix
