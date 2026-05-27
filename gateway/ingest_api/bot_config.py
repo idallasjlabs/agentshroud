@@ -51,6 +51,15 @@ class BotConfig(BaseModel):
         default_factory=list,
         description="Additional egress domains this bot requires beyond the global allowlist",
     )
+    image: str = Field(
+        default="",
+        description="Full Docker image tag, e.g. 'agentshroud/hermes:latest'. Used by web/api.py rollback flows.",
+    )
+    telegram_token_secret: str = Field(
+        default="",
+        description="Docker secret name holding this bot's Telegram bot token, e.g. 'telegram_bot_token_hermes'. "
+        "When empty, falls back to the legacy 'telegram_bot_token' secret (OpenClaw default).",
+    )
     default: bool = Field(default=False, description="Whether this is the default bot for routing")
 
     @property

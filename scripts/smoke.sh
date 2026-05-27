@@ -55,6 +55,19 @@ run_test "test_setup_secrets.sh" bash "$SMOKE_DIR/test_setup_secrets.sh"
 # Live boot test (gated by SMOKE_LIVE=1)
 run_test "test_bot_boot_live.sh" bash "$SMOKE_DIR/test_bot_boot_live.sh"
 
+# Hermes health probe (live — gated by SMOKE_LIVE=1 and HERMES_ENABLED=1)
+if [[ "${SMOKE_LIVE:-0}" == "1" && "${HERMES_ENABLED:-0}" == "1" ]]; then
+    run_test "hermes_health" bash -c '
+        HERMES_URL="${HERMES_HEALTH_URL:-http://localhost:8642/health}"
+        if curl -fsS "$HERMES_URL" > /dev/null 2>&1; then
+            echo "  OK: Hermes health endpoint ${HERMES_URL}"
+        else
+            echo "  FAIL: Hermes health endpoint unreachable: ${HERMES_URL}" >&2
+            exit 1
+        fi
+    '
+fi
+
 # ── Summary ────────────────────────────────────────────────────────────────
 echo ""
 echo "══════════════════════════════════════════════════════"

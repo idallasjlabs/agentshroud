@@ -295,6 +295,68 @@ services:
       gateway:
         condition: service_healthy
 
+  # ── Hermes Agent (second bot — v1.4.0 bot-agnostic proof) ────────────────────
+  # AgentShroud™ Patent Pending — U.S. Provisional Application No. 64/018,744
+  # Hermes runs alongside OpenClaw on the same isolated network. All egress
+  # flows through gateway:8181 (HTTP_PROXY) so the same 76-module security
+  # pipeline applies regardless of bot runtime.
+  hermes:
+    image: agentshroud/hermes:${AGENTSHROUD_VERSION:-latest}
+    build:
+      context: ..
+      dockerfile: docker/bots/hermes/Dockerfile
+    container_name: agentshroud-hermes
+    hostname: agentshroud-hermes
+    restart: unless-stopped
+    depends_on:
+      gateway:
+        condition: service_healthy
+    networks:
+      - agentshroud-isolated      # no direct internet — all egress via gateway:8181
+    volumes:
+      - hermes-config:/opt/data
+      - gateway-data:/data/gateway:ro
+    secrets:
+      - hermes_telegram_bot_token
+      - slack_bot_token_hermes
+      - slack_app_token_hermes
+      - brave_api_key
+      - anthropic_oauth_token
+    environment:
+      HTTP_PROXY: http://gateway:8181
+      HTTPS_PROXY: http://gateway:8181
+      NO_PROXY: gateway,agentshroud-hermes,127.0.0.1,localhost
+      ANTHROPIC_BASE_URL: http://gateway:8080
+      OPENAI_BASE_URL: http://gateway:8080
+      OLLAMA_BASE_URL: http://gateway:8080/v1
+      # Owner-only allow-list for v1.4.0 launch. Add collaborators after smoke tests pass.
+      TELEGRAM_ALLOWED_USERS: "8096968754"
+      TELEGRAM_HOME_CHANNEL: "8096968754"
+      HERMES_DASHBOARD: "1"
+      HERMES_DASHBOARD_HOST: "0.0.0.0"
+      HERMES_DASHBOARD_PORT: "9119"
+      API_SERVER_ENABLED: "1"
+      API_SERVER_HOST: "0.0.0.0"
+      AGENTSHROUD_BOT_ID: hermes
+    read_only: true
+    cap_drop: [ALL]
+    security_opt:
+      - no-new-privileges:true
+      - seccomp:./security/seccomp-default.json
+    tmpfs:
+      - /tmp:size=128m,mode=1777
+      - /opt/data/sessions/cache:size=64m
+      - /opt/data/logs:size=32m
+    mem_limit: 3g
+    cpus: 1.5
+    pids_limit: 512
+    healthcheck:
+      test: ["CMD-SHELL", "curl -fsS http://127.0.0.1:8642/health || exit 1"]
+      interval: 30s
+      timeout: 10s
+      start_period: 90s
+      retries: 3
+
 
 # ── Secrets ────────────────────────────────────────────────────────────────────
 # `asb up/rebuild/clean-rebuild` extracts secrets from the credential backend
@@ -325,6 +387,14 @@ secrets:
     file: ./secrets/slack_signing_secret.txt
   slack_app_token:
     file: ./secrets/slack_app_token.txt
+  hermes_telegram_bot_token:
+    file: ./secrets/hermes_telegram_bot_token.txt
+  slack_bot_token_hermes:
+    file: ./secrets/slack_bot_token_hermes.txt
+  slack_app_token_hermes:
+    file: ./secrets/slack_app_token_hermes.txt
+  brave_api_key:
+    file: ./secrets/brave_api_key.txt
 
 # ── Networks ───────────────────────────────────────────────────────────────────
 # Two networks: internal (internet access) and isolated (no internet)
@@ -379,3 +449,6 @@ volumes:
     driver: local
   agentshroud-collab-workspaces:
     driver: local
+  hermes-config:
+    driver: local
+    name: hermes-config
