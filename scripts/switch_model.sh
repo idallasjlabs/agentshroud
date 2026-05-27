@@ -414,6 +414,20 @@ if [[ "${MODEL_MODE}" == "cloud" ]]; then
 fi
 echo "[switch-model] persisted model profile to ${MODEL_ENV_FILE}"
 
+# For local-multi mode, load the anchor model in LM Studio at the correct context window.
+# LM Studio's JIT load uses a small default context; we must set it explicitly.
+if [[ "${MODEL_MODE}" == "local-multi" ]]; then
+  LMS_CMD="${HOME}/.cache/lm-studio/bin/lms"
+  LMS_CONTEXT="${LMS_CONTEXT:-32768}"
+  if command -v "${LMS_CMD}" &>/dev/null; then
+    echo "[switch-model] Loading anchor model ${ANCHOR_MODEL} in LM Studio at ${LMS_CONTEXT} context..."
+    printf '1\n' | "${LMS_CMD}" load "${ANCHOR_MODEL}" --context-length "${LMS_CONTEXT}" --gpu max 2>&1 | tail -2 || \
+      echo "[switch-model] WARN: LM Studio model load failed — load manually: ${LMS_CMD} load ${ANCHOR_MODEL} --context-length ${LMS_CONTEXT}"
+  else
+    echo "[switch-model] WARN: lms CLI not found; load model manually in LM Studio at context-length ${LMS_CONTEXT}"
+  fi
+fi
+
 # Only gateway and bot are restarted; LM Studio/mlx_lm run on the host.
 cd "${REPO_ROOT}"
 AGENTSHROUD_MODEL_MODE="${MODEL_MODE}" \
