@@ -206,7 +206,7 @@ async def lifespan(app: FastAPI):
                 container_name=f"agentshroud-{bot_id}",
                 network=f"agentshroud-{bot_id}-net",
                 volume=f"agentshroud-{bot_id}-workspace",
-                image=f"agentshroud/{bot_id}:latest",
+                image=bot.image or f"agentshroud/{bot_id}:latest",
             )
             app_state.agent_registry.register(container_cfg)
             logger.info("AgentRegistry: registered bot '%s'", bot_id)

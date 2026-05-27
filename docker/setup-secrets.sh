@@ -200,6 +200,11 @@ declare -a SECRET_DEFS=(
     "slack_bot_token|Slack bot token (xoxb-...)|yes|yes"
     "slack_signing_secret|Slack signing secret|yes|yes"
     "slack_app_token|Slack app token (xapp-...)|yes|yes"
+    # Hermes Agent secrets (v1.4.0 — second bot)
+    "hermes_telegram_bot_token|Hermes Telegram bot token (@agentshroud_hermes_bot)|yes|yes"
+    "slack_bot_token_hermes|Hermes Slack bot token (xoxb-...)|yes|yes"
+    "slack_app_token_hermes|Hermes Slack app token (xapp-...)|yes|yes"
+    "brave_api_key|Brave Search API key (shared with OpenClaw)|yes|yes"
 )
 
 # ── gateway_password is auto-generated — not prompted ─────────────────────────

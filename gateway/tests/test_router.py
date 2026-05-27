@@ -318,3 +318,62 @@ def test_cors_origins_include_configured_port():
     assert f"http://localhost:{port}" in cfg.cors_origins
     assert f"http://127.0.0.1:{port}" in cfg.cors_origins
     assert "http://localhost:8080" not in cfg.cors_origins
+
+
+@pytest.mark.asyncio
+async def test_resolves_hermes_target():
+    """route_to='hermes' must resolve to the Hermes AgentTarget."""
+    from gateway.ingest_api.config import RouterConfig
+    from gateway.ingest_api.router import MultiAgentRouter
+
+    cfg = RouterConfig(
+        enabled=True,
+        default_target="openclaw",
+        targets={
+            "openclaw": "http://agentshroud:18789",
+            "hermes": "http://agentshroud-hermes:8642",
+        },
+    )
+    router = MultiAgentRouter(cfg)
+
+    request = ForwardRequest(
+        content="hello from hermes",
+        source="telegram",
+        content_type="text",
+        route_to="hermes",
+    )
+    target = await router.resolve_target(request)
+
+    assert target.name == "hermes"
+    assert target.url == "http://agentshroud-hermes:8642"
+
+
+@pytest.mark.asyncio
+async def test_hermes_and_openclaw_coexist():
+    """Both bots must be reachable via the same router without conflict."""
+    from gateway.ingest_api.config import RouterConfig
+    from gateway.ingest_api.router import MultiAgentRouter
+
+    cfg = RouterConfig(
+        enabled=True,
+        default_target="openclaw",
+        targets={
+            "openclaw": "http://agentshroud:18789",
+            "hermes": "http://agentshroud-hermes:8642",
+        },
+    )
+    router = MultiAgentRouter(cfg)
+
+    for route_to in ["openclaw", "hermes"]:
+        req = ForwardRequest(
+            content="test",
+            source="api",
+            content_type="text",
+            route_to=route_to,
+        )
+        target = await router.resolve_target(req)
+        assert target.name == route_to
+        # Hermes must resolve to its own URL (distinct from OpenClaw)
+        if route_to == "hermes":
+            assert target.url == "http://agentshroud-hermes:8642"
+        # OpenClaw may use RouterConfig.default_url — verify bot identity, not URL value
