@@ -1683,6 +1683,72 @@ async def lifespan(app: FastAPI):
         app_state._canvas_proxy_task = None
         logger.info("Canvas auth-proxy disabled via CANVAS_PROXY_ENABLED=false")
 
+    # Hermes Dashboard TCP Forwarder: gateway:9119 → agentshroud-hermes:9119.
+    # Hermes is on agentshroud-isolated (internal:true) so its port cannot be
+    # published directly.  The gateway forwards at the TCP level so both HTTP
+    # and WebSocket connections work transparently.
+    _hermes_dash_port = int(os.environ.get("HERMES_DASHBOARD_PROXY_PORT", "9119"))
+    _hermes_dash_host = os.environ.get("HERMES_DASHBOARD_HOST_UPSTREAM", "agentshroud-hermes")
+    _hermes_dash_upstream_port = int(os.environ.get("HERMES_DASHBOARD_UPSTREAM_PORT", "9119"))
+    _hermes_dash_enabled = os.environ.get("HERMES_DASHBOARD_PROXY_ENABLED", "true").lower() not in (
+        "false", "0", "no",
+    )
+
+    async def _run_hermes_dashboard_forwarder() -> None:
+        async def _pipe(reader: _asyncio.StreamReader, writer: _asyncio.StreamWriter) -> None:
+            try:
+                while True:
+                    chunk = await reader.read(65536)
+                    if not chunk:
+                        break
+                    writer.write(chunk)
+                    await writer.drain()
+            except Exception:
+                pass
+            finally:
+                try:
+                    writer.close()
+                except Exception:
+                    pass
+
+        async def _handle(
+            reader: _asyncio.StreamReader, writer: _asyncio.StreamWriter
+        ) -> None:
+            try:
+                r2, w2 = await _asyncio.open_connection(
+                    _hermes_dash_host, _hermes_dash_upstream_port
+                )
+            except Exception:
+                try:
+                    writer.write(b"HTTP/1.1 502 Bad Gateway\r\nContent-Length: 0\r\n\r\n")
+                    await writer.drain()
+                    writer.close()
+                except Exception:
+                    pass
+                return
+            await _asyncio.gather(_pipe(reader, w2), _pipe(r2, writer), return_exceptions=True)
+
+        try:
+            _fwd_server = await _asyncio.start_server(_handle, "0.0.0.0", _hermes_dash_port)
+            async with _fwd_server:
+                await _fwd_server.serve_forever()
+        except OSError as _ose:
+            logger.warning(
+                "⚠ Hermes dashboard forwarder port %d unavailable: %s",
+                _hermes_dash_port, _ose,
+            )
+        except Exception as _exc:
+            logger.warning("⚠ Hermes dashboard forwarder error: %s", _exc)
+
+    if _hermes_dash_enabled:
+        app_state._hermes_dash_task = _asyncio.create_task(_run_hermes_dashboard_forwarder())
+        logger.info(
+            "✓ Hermes dashboard forwarder scheduled on port %d → %s:%d",
+            _hermes_dash_port, _hermes_dash_host, _hermes_dash_upstream_port,
+        )
+    else:
+        app_state._hermes_dash_task = None
+
     install_log_handler()
     logger.info(f"AgentShroud Gateway ready at {app_state.config.bind}:{app_state.config.port}")
     logger.info("=" * 80)
@@ -1732,6 +1798,15 @@ async def lifespan(app: FastAPI):
         canvas_proxy_task.cancel()
         try:
             await canvas_proxy_task
+        except asyncio.CancelledError:
+            pass
+
+    # Stop Hermes dashboard TCP forwarder
+    hermes_dash_task = getattr(app_state, "_hermes_dash_task", None)
+    if hermes_dash_task and not hermes_dash_task.done():
+        hermes_dash_task.cancel()
+        try:
+            await hermes_dash_task
         except asyncio.CancelledError:
             pass
 
