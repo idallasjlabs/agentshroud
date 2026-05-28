@@ -396,13 +396,17 @@ class MiddlewareManager:
                 logger.warning("No user_id found in request - denying access")
                 return MiddlewareResult(allowed=False, reason="No user identification found")
 
+            # Extract bot_id for per-bot workspace scoping.
+            # Falls back to "openclaw" for requests that predate multi-bot support.
+            bot_id = str(request_data.get("bot_id") or "openclaw").strip() or "openclaw"
+
             # RBAC Check - Check basic permissions first
             rbac_result = self._check_rbac_permissions(request_data, user_id)
             if not rbac_result.allowed:
                 return rbac_result
 
             # Session Isolation Enforcement - This is the new critical security check
-            isolation_result = self._enforce_session_isolation(request_data, user_id)
+            isolation_result = self._enforce_session_isolation(request_data, user_id, bot_id=bot_id)
             if not isolation_result.allowed:
                 return isolation_result
 
@@ -652,8 +656,13 @@ class MiddlewareManager:
                             if isinstance(v, str) and ("/" in v or "\\" in v):
                                 file_paths.append(v)
 
-                    # Check if user is trying to access files outside their workspace
-                    user_workspace = self.user_session_manager.get_user_workspace_path(user_id)
+                    # Check if user is trying to access files outside their bot-scoped workspace.
+                    # bot_id was extracted at the top of process_request and flows here via
+                    # the request_data dict; read it again defensively.
+                    _file_bot_id = str(request_data.get("bot_id") or "openclaw").strip() or "openclaw"
+                    user_workspace = self.user_session_manager.get_user_workspace_path(
+                        user_id, bot_id=_file_bot_id
+                    )
 
                     for file_path in file_paths:
                         if not self._is_path_allowed_for_user(file_path, user_workspace, user_id):
@@ -889,9 +898,13 @@ class MiddlewareManager:
         return None
 
     def _enforce_session_isolation(
-        self, request_data: Dict[str, Any], user_id: str
+        self, request_data: Dict[str, Any], user_id: str, bot_id: str = "openclaw"
     ) -> MiddlewareResult:
-        """Enforce per-user session isolation rules."""
+        """Enforce per-user, per-bot session isolation rules.
+
+        Each (user_id, bot_id) pair receives an independent workspace and
+        MEMORY.md so that data from different bots cannot bleed into each other.
+        """
         if not self.user_session_manager:
             logger.error("UserSessionManager not initialized - session isolation fail-closed")
             return MiddlewareResult(
@@ -899,19 +912,23 @@ class MiddlewareManager:
             )
 
         try:
-            # Ensure user session exists
-            session = self.user_session_manager.get_or_create_session(user_id)
+            # Ensure user session exists for this specific bot (side effect: creates dir+MEMORY.md)
+            self.user_session_manager.get_or_create_session(user_id, bot_id=bot_id)
 
             # Inject session context into request if not already present
             if "session_context" not in request_data:
-                session_context = self.user_session_manager.get_session_context(user_id)
-                session_prompt = self.user_session_manager.get_session_prompt_addition(user_id)
+                session_context = self.user_session_manager.get_session_context(
+                    user_id, bot_id=bot_id
+                )
+                session_prompt = self.user_session_manager.get_session_prompt_addition(
+                    user_id, bot_id=bot_id
+                )
 
                 modified_request = request_data.copy()
                 modified_request["session_context"] = session_context
                 modified_request["session_context"]["isolation_prompt"] = session_prompt
 
-                logger.info(f"Injected session context for user {user_id}")
+                logger.info(f"Injected session context for user={user_id} bot={bot_id}")
 
                 return MiddlewareResult(allowed=True, modified_request=modified_request)
 

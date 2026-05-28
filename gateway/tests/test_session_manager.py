@@ -69,15 +69,17 @@ class TestAccessControl:
         mgr.get_or_create_session("user-1")
         mgr.get_or_create_session("user-2")
         visible = mgr.list_sessions_for_user("owner123")
-        assert "user-1" in visible
-        assert "user-2" in visible
+        # list_sessions_for_user now returns "user_id::bot_id" keys
+        assert any("user-1" in k for k in visible)
+        assert any("user-2" in k for k in visible)
 
     def test_non_owner_cannot_view_other_sessions(self, mgr):
         mgr.get_or_create_session("user-1")
         mgr.get_or_create_session("user-2")
         visible = mgr.list_sessions_for_user("user-1")
-        assert "user-1" in visible
-        assert "user-2" not in visible
+        # user-1 sees their own session key(s) but not user-2's
+        assert any("user-1" in k for k in visible)
+        assert not any("user-2" in k for k in visible)
 
     def test_non_owner_empty_when_no_session(self, mgr):
         visible = mgr.list_sessions_for_user("stranger")
@@ -188,6 +190,117 @@ class TestSerialization:
         s2 = UserSession.from_dict(d)
         assert s2.user_id == "u1"
         assert s2.trust_level == "TRUSTED"
+
+
+# ---------------------------------------------------------------------------
+# Multi-bot workspace isolation (v1.4.0)
+# ---------------------------------------------------------------------------
+
+
+class TestMultiBotIsolation:
+    """Verify that different bots get independent workspaces per user."""
+
+    def test_different_bots_get_different_workspace_dirs(self, mgr):
+        """openclaw and hermes sessions for the same user must not share a directory."""
+        s_oc = mgr.get_or_create_session("user-1", bot_id="openclaw")
+        s_hm = mgr.get_or_create_session("user-1", bot_id="hermes")
+        assert s_oc.workspace_dir != s_hm.workspace_dir
+        assert not str(s_oc.workspace_dir).startswith(str(s_hm.workspace_dir))
+
+    def test_different_bots_get_different_memory_files(self, mgr):
+        s_oc = mgr.get_or_create_session("user-1", bot_id="openclaw")
+        s_hm = mgr.get_or_create_session("user-1", bot_id="hermes")
+        assert s_oc.memory_file != s_hm.memory_file
+
+    def test_same_bot_same_user_returns_same_session(self, mgr):
+        s1 = mgr.get_or_create_session("user-1", bot_id="openclaw")
+        s2 = mgr.get_or_create_session("user-1", bot_id="openclaw")
+        assert s1.workspace_dir == s2.workspace_dir
+
+    def test_session_bot_id_stored_correctly(self, mgr):
+        s = mgr.get_or_create_session("user-1", bot_id="hermes")
+        assert s.bot_id == "hermes"
+
+    def test_default_bot_id_is_openclaw(self, mgr):
+        s = mgr.get_or_create_session("user-1")
+        assert s.bot_id == "openclaw"
+
+    def test_workspace_paths_under_bot_namespace(self, mgr, tmp_path):
+        s = mgr.get_or_create_session("user-1", bot_id="openclaw")
+        # Expect: base/users/user-1/bots/openclaw/workspace
+        assert "bots" in str(s.workspace_dir)
+        assert "openclaw" in str(s.workspace_dir)
+
+    def test_invalid_bot_id_rejected(self, mgr):
+        with pytest.raises(ValueError):
+            mgr.get_or_create_session("user-1", bot_id="../evil")
+
+    def test_long_bot_id_rejected(self, mgr):
+        with pytest.raises(ValueError):
+            mgr.get_or_create_session("user-1", bot_id="b" * 33)
+
+    def test_conversation_histories_are_bot_scoped(self, mgr):
+        mgr.get_or_create_session("user-1", bot_id="openclaw")
+        mgr.get_or_create_session("user-1", bot_id="hermes")
+        mgr.add_conversation_message("user-1", "user", "hello via openclaw", bot_id="openclaw")
+        mgr.add_conversation_message("user-1", "user", "hello via hermes", bot_id="hermes")
+
+        s_oc = mgr.get_or_create_session("user-1", bot_id="openclaw")
+        s_hm = mgr.get_or_create_session("user-1", bot_id="hermes")
+        assert len(s_oc.conversation_history) == 1
+        assert len(s_hm.conversation_history) == 1
+        assert s_oc.conversation_history[0].content == "hello via openclaw"
+        assert s_hm.conversation_history[0].content == "hello via hermes"
+
+    def test_session_context_includes_bot_id(self, mgr):
+        ctx = mgr.get_session_context("user-1", bot_id="hermes")
+        assert ctx["bot_id"] == "hermes"
+
+    def test_session_registry_uses_compound_key(self, mgr):
+        mgr.get_or_create_session("user-1", bot_id="openclaw")
+        mgr.get_or_create_session("user-1", bot_id="hermes")
+        assert "user-1::openclaw" in mgr.sessions
+        assert "user-1::hermes" in mgr.sessions
+
+    def test_legacy_session_promoted_on_load(self, tmp_path):
+        """Existing plain user_id keys (no separator) are promoted to user::openclaw."""
+        import json
+        from pathlib import Path
+
+        # Write a legacy session_registry.json with a plain user_id key
+        registry_path = tmp_path / "session_registry.json"
+        legacy_workspace = tmp_path / "users" / "old-user" / "workspace"
+        legacy_memory = tmp_path / "users" / "old-user" / "MEMORY.md"
+        legacy_workspace.mkdir(parents=True)
+        legacy_memory.write_text("# Legacy MEMORY\n")
+        registry_path.write_text(json.dumps({
+            "old-user": {
+                "user_id": "old-user",
+                "workspace_dir": str(legacy_workspace),
+                "memory_file": str(legacy_memory),
+                "conversation_history": [],
+                "trust_level": "UNTRUSTED",
+                "created_at": None,
+                "last_active": None,
+                "metadata": {},
+            }
+        }))
+
+        mgr2 = UserSessionManager(base_workspace=tmp_path, owner_user_id="owner")
+        # Legacy key must be promoted to compound form
+        assert "old-user::openclaw" in mgr2.sessions
+        assert "old-user" not in mgr2.sessions
+
+    def test_lazy_migration_copies_legacy_memory(self, tmp_path):
+        """If legacy users/{uid}/MEMORY.md exists, first openclaw session copies it."""
+        legacy_memory = tmp_path / "users" / "migrated-user" / "MEMORY.md"
+        legacy_memory.parent.mkdir(parents=True)
+        legacy_memory.write_text("# Old memory content\n")
+
+        mgr2 = UserSessionManager(base_workspace=tmp_path, owner_user_id="owner")
+        s = mgr2.get_or_create_session("migrated-user", bot_id="openclaw")
+        assert s.memory_file.exists()
+        assert "Old memory content" in s.memory_file.read_text()
 
 
 # ── C16: System Prompt Re-anchoring tests ─────────────────────────────────────
