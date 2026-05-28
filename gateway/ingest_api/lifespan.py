@@ -1687,6 +1687,15 @@ async def lifespan(app: FastAPI):
     # Hermes is on agentshroud-isolated (internal:true) so its port cannot be
     # published directly.  The gateway forwards at the TCP level so both HTTP
     # and WebSocket connections work transparently.
+    #
+    # Security scan assessment — WHY the SecurityPipeline is NOT wired here:
+    #   This is a raw TCP tunnel for an owner-facing control UI (human → dashboard).
+    #   The threat model for agent traffic (prompt injection, PII exfiltration,
+    #   unauthorised egress) does not apply to a human browsing their own dashboard.
+    #   No auth layer is added here; access control relies on Tailscale network
+    #   membership (tailscale serve proxies 127.0.0.1:9119, tailnet-only ACL).
+    #   Re-evaluate if: (a) the dashboard is exposed beyond the tailnet, or
+    #   (b) the dashboard begins relaying agent-generated content to third parties.
     _hermes_dash_port = int(os.environ.get("HERMES_DASHBOARD_PROXY_PORT", "9119"))
     _hermes_dash_host = os.environ.get("HERMES_DASHBOARD_HOST_UPSTREAM", "agentshroud-hermes")
     _hermes_dash_upstream_port = int(os.environ.get("HERMES_DASHBOARD_UPSTREAM_PORT", "9119"))
