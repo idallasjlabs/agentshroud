@@ -4482,3 +4482,67 @@ async def slack_ws_relay(websocket: WebSocket, t: str = Query(...)):
             await websocket.close()
         except Exception:
             pass
+
+
+# ── Hermes Dashboard Reverse Proxy ──────────────────────────────────────────
+# Hermes runs on agentshroud-isolated (internal:true) so its port 9119 cannot
+# be published directly to the host. The gateway (on the same isolated network)
+# proxies /hermes-dashboard/* → http://agentshroud-hermes:9119/*.
+# Access at: <gateway-host>:8080/hermes-dashboard/
+_HERMES_DASHBOARD_UPSTREAM = os.environ.get(
+    "HERMES_DASHBOARD_UPSTREAM", "http://agentshroud-hermes:9119"
+)
+
+
+@app.api_route(
+    "/hermes-dashboard",
+    methods=["GET", "HEAD"],
+    include_in_schema=False,
+)
+async def hermes_dashboard_root():
+    """Redirect bare /hermes-dashboard to /hermes-dashboard/ so assets resolve."""
+    from starlette.responses import RedirectResponse as _Redir
+    return _Redir(url="/hermes-dashboard/", status_code=307)
+
+
+@app.api_route(
+    "/hermes-dashboard/{path:path}",
+    methods=["GET", "POST", "PUT", "DELETE", "PATCH", "HEAD", "OPTIONS"],
+    include_in_schema=False,
+)
+async def hermes_dashboard_proxy(path: str, request: Request):
+    """Reverse-proxy the Hermes Agent dashboard through the gateway."""
+    import httpx as _httpx
+    upstream_url = f"{_HERMES_DASHBOARD_UPSTREAM}/{path}"
+    params = str(request.url.query)
+    if params:
+        upstream_url = f"{upstream_url}?{params}"
+    headers = {
+        k: v for k, v in request.headers.items()
+        if k.lower() not in ("host", "connection", "transfer-encoding")
+    }
+    body = await request.body()
+    try:
+        async with _httpx.AsyncClient(timeout=30.0) as client:
+            resp = await client.request(
+                method=request.method,
+                url=upstream_url,
+                headers=headers,
+                content=body,
+                follow_redirects=False,
+            )
+        resp_headers = {
+            k: v for k, v in resp.headers.items()
+            if k.lower() not in ("transfer-encoding", "connection")
+        }
+        from starlette.responses import Response as _Resp
+        return _Resp(
+            content=resp.content,
+            status_code=resp.status_code,
+            headers=resp_headers,
+        )
+    except _httpx.ConnectError:
+        raise HTTPException(status_code=502, detail="Hermes dashboard unavailable")
+    except Exception as exc:
+        logger.warning("hermes_dashboard_proxy error: %s", exc)
+        raise HTTPException(status_code=502, detail="Hermes dashboard proxy error")
