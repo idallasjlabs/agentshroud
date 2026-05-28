@@ -101,6 +101,7 @@ class HTTPConnectProxy:
         egress_filter: Optional[EgressFilter] = None,
         host: str = "0.0.0.0",
         port: int = 8181,
+        ip_to_bot_registry: Optional[dict] = None,
     ):
         if web_proxy is None:
             config = WebProxyConfig(
@@ -112,6 +113,10 @@ class HTTPConnectProxy:
         self.egress_filter = egress_filter
         self.host = host
         self.port = port
+        # Mapping of source-IP string → bot_id (e.g. "172.21.0.3" → "hermes").
+        # Built at startup by resolving each bot's hostname; used to attribute
+        # CONNECT requests to the correct bot instead of the generic "http_connect_proxy".
+        self._ip_to_bot_registry: dict = ip_to_bot_registry or {}
         self._server: Optional[asyncio.Server] = None
         self._stats: dict = {
             "total": 0,
@@ -160,12 +165,24 @@ class HTTPConnectProxy:
             except Exception:
                 pass
 
+    def _agent_id_for_peer(self, peer) -> str:
+        """Resolve source IP to a bot_id using the IP registry, fall back to generic label."""
+        if peer and self._ip_to_bot_registry:
+            ip = peer[0] if isinstance(peer, (tuple, list)) else str(peer)
+            bot_id = self._ip_to_bot_registry.get(ip)
+            if bot_id:
+                return bot_id
+        return "http_connect_proxy"
+
     async def _process_connect(
         self,
         reader: asyncio.StreamReader,
         writer: asyncio.StreamWriter,
     ) -> None:
         """Parse CONNECT request, check allowlist, relay or block."""
+        # Identify which bot is making this request from its source IP.
+        peer = writer.get_extra_info("peername")
+        agent_id = self._agent_id_for_peer(peer)
         # Read request line
         try:
             request_line = await asyncio.wait_for(reader.readline(), timeout=10.0)
@@ -240,7 +257,7 @@ class HTTPConnectProxy:
                         _aq.log_external_decision(
                             domain=host,
                             decision="allow",
-                            agent_id="http_connect_proxy",
+                            agent_id=agent_id,
                             reason="system egress bypass domain",
                         )
                     except Exception:
@@ -250,7 +267,7 @@ class HTTPConnectProxy:
             # This is required so unknown domains can raise approval prompts
             # instead of being hard-blocked by static CONNECT allowlists.
             egress_attempt = await self.egress_filter.check_async(
-                agent_id="http_connect_proxy",
+                agent_id=agent_id,
                 destination=url,
                 port=port,
                 tool_name="http_connect_tunnel",

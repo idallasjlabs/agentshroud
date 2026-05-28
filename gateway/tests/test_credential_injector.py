@@ -192,3 +192,63 @@ class TestStatus:
         secret = "sk-example-not-a-real-key-000000000"
         for record in caplog.records:
             assert secret not in record.getMessage(), f"Secret leaked in log: {record.getMessage()}"
+
+
+# ---------------------------------------------------------------------------
+# OAuth-token injection (anthropic-beta header + inject-if-absent)
+# ---------------------------------------------------------------------------
+
+
+class TestOAuthInjection:
+    """Verify gateway-side OAuth-token translation for the Anthropic path.
+
+    Root cause context: Anthropic OAuth tokens (sk-ant-oat0…) are only accepted
+    as Authorization: Bearer <token> + anthropic-beta: oauth-2025-04-20.
+    Hermes sends them as x-api-key → 401. The gateway must intercept and translate.
+    """
+
+    def _make_anthropic_injector(self, tmp_path: Path) -> CredentialInjector:
+        (tmp_path / "anthropic_oauth_token").write_text("sk-ant-oat01-gateway-token")
+        return CredentialInjector(config=CredentialInjectorConfig(secrets_dir=str(tmp_path), enabled=True))
+
+    def test_adds_oauth_beta_header_when_injecting(self, tmp_path):
+        """inject_headers sets anthropic-beta: oauth-2025-04-20 when Bearer is injected."""
+        inj = self._make_anthropic_injector(tmp_path)
+        headers: dict[str, str] = {"x-api-key": "sk-ant-oat01-hermes-token"}
+        inj.inject_headers("api.anthropic.com", headers)
+        assert "anthropic-beta" in headers
+        assert "oauth-2025-04-20" in headers["anthropic-beta"]
+
+    def test_inject_if_absent_skips_when_bearer_already_present(self, tmp_path):
+        """inject_headers does NOT overwrite an existing Authorization: Bearer token."""
+        inj = self._make_anthropic_injector(tmp_path)
+        original = "Bearer sk-ant-oat01-openclaw-runtime-token"
+        headers: dict[str, str] = {"Authorization": original}
+        inj.inject_headers("api.anthropic.com", headers)
+        assert headers["Authorization"] == original, "Gateway must not clobber client's Bearer token"
+
+    def test_x_api_key_stripped_and_bearer_plus_beta_injected(self, tmp_path):
+        """x-api-key is stripped; Authorization: Bearer and anthropic-beta are added."""
+        inj = self._make_anthropic_injector(tmp_path)
+        headers: dict[str, str] = {
+            "x-api-key": "sk-ant-oat01-hermes-token",
+            "anthropic-version": "2023-06-01",
+        }
+        inj.inject_headers("api.anthropic.com", headers)
+        assert "x-api-key" not in headers
+        assert headers["Authorization"] == "Bearer sk-ant-oat01-gateway-token"
+        assert "oauth-2025-04-20" in headers["anthropic-beta"]
+        assert "anthropic-version" in headers  # unrelated headers must survive
+
+    def test_existing_anthropic_beta_preserved_and_oauth_appended_no_duplicate(self, tmp_path):
+        """Existing anthropic-beta values are kept; oauth-2025-04-20 is appended once."""
+        inj = self._make_anthropic_injector(tmp_path)
+        headers: dict[str, str] = {
+            "x-api-key": "sk-ant-oat01-hermes-token",
+            "anthropic-beta": "computer-use-2024-10-22",
+        }
+        inj.inject_headers("api.anthropic.com", headers)
+        beta = headers["anthropic-beta"]
+        assert "computer-use-2024-10-22" in beta, "Pre-existing beta flags must be preserved"
+        assert "oauth-2025-04-20" in beta
+        assert beta.count("oauth-2025-04-20") == 1, "oauth-2025-04-20 must appear exactly once"

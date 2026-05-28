@@ -53,12 +53,18 @@ class LLMProxy:
     """Proxies LLM API calls (Anthropic, OpenAI, Google) through the security pipeline."""
 
     def __init__(
-        self, pipeline=None, middleware_manager=None, sanitizer=None, tool_acl_enforcer=None
+        self,
+        pipeline=None,
+        middleware_manager=None,
+        sanitizer=None,
+        tool_acl_enforcer=None,
+        credential_injector=None,
     ):
         self.pipeline = pipeline
         self.middleware_manager = middleware_manager
         self.sanitizer = sanitizer
         self.tool_acl_enforcer = tool_acl_enforcer
+        self.credential_injector = credential_injector
         self._ssl_context = ssl.create_default_context()
         self._stats = {
             "total_requests": 0,
@@ -275,6 +281,9 @@ class LLMProxy:
         for key, value in headers.items():
             if key.lower() in allowed_headers:
                 forward_headers[key] = value
+
+        if self.credential_injector and base_url == ANTHROPIC_API_BASE:
+            self.credential_injector.inject_headers("api.anthropic.com", forward_headers)
 
         async def _stream() -> AsyncIterator[bytes]:
             try:
@@ -705,6 +714,9 @@ class LLMProxy:
         for key, value in headers.items():
             if key.lower() in allowed_headers:
                 forward_headers[key] = value
+
+        if self.credential_injector and url.startswith(ANTHROPIC_API_BASE):
+            self.credential_injector.inject_headers("api.anthropic.com", forward_headers)
 
         _RETRYABLE = {429, 503, 529}  # 529 = Anthropic "overloaded"
         _MAX_RETRIES = 3

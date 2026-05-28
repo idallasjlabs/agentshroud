@@ -16,11 +16,18 @@ DATA_DIR="/opt/data"
 echo "[hermes-init] Checking config..."
 
 # config.yaml — Hermes primary config file
+# First-boot: seed from template if absent.
+# Upgrade path: if present but missing telegram.extra.base_url (added in v1.4.0
+# to route Telegram API calls through AgentShroud gateway:8080/telegram-api/),
+# replace it so EgressFilter does not block api.telegram.org CONNECT requests.
 if [ ! -f "${DATA_DIR}/config.yaml" ]; then
     cp "${DEFAULTS_DIR}/config.yaml.tmpl" "${DATA_DIR}/config.yaml"
     echo "[hermes-init] Seeded config.yaml from defaults"
+elif ! grep -q "telegram-api/bot" "${DATA_DIR}/config.yaml" 2>/dev/null; then
+    cp "${DEFAULTS_DIR}/config.yaml.tmpl" "${DATA_DIR}/config.yaml"
+    echo "[hermes-init] Upgraded config.yaml: added telegram.extra.base_url for AgentShroud gateway routing"
 else
-    echo "[hermes-init] config.yaml already exists — skipping"
+    echo "[hermes-init] config.yaml already exists and is current — skipping"
 fi
 
 # SOUL.md — bot identity file
