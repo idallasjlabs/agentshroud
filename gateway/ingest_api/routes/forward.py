@@ -325,6 +325,10 @@ async def forward_content(request: ForwardRequest, req: Request, auth: AuthRequi
     middleware_manager = getattr(app_state, "middleware_manager", None)
     if middleware_manager:
         try:
+            # bot_id: use the routing target's logical name (e.g. "openclaw", "hermes")
+            # so that session isolation and audit logs are scoped per-bot.
+            bot_id = getattr(target, "name", "openclaw") or "openclaw"
+
             # Prepare request data for middleware processing
             request_data = {
                 "message": request.content,
@@ -333,10 +337,13 @@ async def forward_content(request: ForwardRequest, req: Request, auth: AuthRequi
                 "headers": {},  # Add headers if available in request
                 "user_id": getattr(request, "user_id", None)
                 or getattr(request, "source", "anonymous"),
+                # bot_id scopes the session workspace and audit log entry to the
+                # correct bot so that OpenClaw and Hermes data never merge.
+                "bot_id": bot_id,
             }
 
             # Process through middleware
-            middleware_result = await middleware_manager.process_request(request_data, "unknown")
+            middleware_result = await middleware_manager.process_request(request_data, bot_id)
 
             if not middleware_result.allowed:
                 logger.warning(f"Middleware blocked request: {middleware_result.reason}")
