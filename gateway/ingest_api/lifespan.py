@@ -363,12 +363,31 @@ async def lifespan(app: FastAPI):
             "telegram_bot_token"
         )
         if _tg_token_egress:
+            # Build per-bot token map so egress approval notifications arrive via the
+            # correct bot when Hermes (or any future bot) triggers an egress request.
+            # Reads each bot's telegram_token_secret from /run/secrets/ at startup.
+            _per_bot_tokens: dict[str, str] = {}
+            for _bid, _bcfg in app_state.config.bots.items():
+                _secret_name = getattr(_bcfg, "telegram_token_secret", None) or (
+                    "telegram_bot_token" if _bid == "openclaw"
+                    else f"telegram_bot_token_{_bid}"
+                )
+                _bot_tok = _read_secret(_secret_name) or None
+                if _bot_tok and _bot_tok != _tg_token_egress:
+                    _per_bot_tokens[_bid] = _bot_tok
+                    logger.info(
+                        "EgressTelegramNotifier: registered per-bot token for '%s'", _bid
+                    )
             app_state.egress_notifier = EgressTelegramNotifier(
                 bot_token=_tg_token_egress,
                 owner_chat_id=RBACConfig().owner_user_id,
+                per_bot_tokens=_per_bot_tokens if _per_bot_tokens else None,
             )
             app_state.egress_filter.set_notifier(app_state.egress_notifier)
-            logger.info("EgressTelegramNotifier wired")
+            logger.info(
+                "EgressTelegramNotifier wired (per-bot tokens: %s)",
+                list(_per_bot_tokens.keys()) or "none",
+            )
         else:
             app_state.egress_notifier = None
             logger.warning("EgressTelegramNotifier skipped — TELEGRAM_BOT_TOKEN not set")
@@ -573,6 +592,7 @@ async def lifespan(app: FastAPI):
             pipeline=app_state.pipeline,
             middleware_manager=app_state.middleware_manager,
             sanitizer=app_state.sanitizer,
+            credential_injector=getattr(app_state.middleware_manager, "credential_injector", None),
         )
         logger.info("LLM proxy initialized")
     except Exception as e:
@@ -1154,9 +1174,34 @@ async def lifespan(app: FastAPI):
         # CONNECT proxy domain policy runs in monitor mode so interactive egress
         # approvals can decide unknown outbound destinations at runtime.
         _web_proxy = WebProxy(config=WebProxyConfig(mode="monitor", allowed_domains=_proxy_domains))
+
+        # Build source-IP → bot_id registry so the HTTP proxy can attribute each
+        # CONNECT request to the correct bot (instead of the generic "http_connect_proxy"
+        # label). Resolves each bot's hostname at startup; silently skips on failure.
+        import socket as _socket
+        _ip_bot_registry: dict[str, str] = {}
+        for _bid, _bcfg in app_state.config.bots.items():
+            _bhost = getattr(_bcfg, "hostname", None)
+            if _bhost:
+                try:
+                    for _info in _socket.getaddrinfo(_bhost, None):
+                        _ip = _info[4][0]
+                        _ip_bot_registry[_ip] = _bid
+                except Exception as _dns_err:
+                    logger.debug(
+                        "IP→bot registry: could not resolve '%s' for bot '%s': %s",
+                        _bhost, _bid, _dns_err,
+                    )
+        if _ip_bot_registry:
+            logger.info(
+                "HTTP CONNECT proxy IP→bot registry: %s",
+                {v: k for k, v in _ip_bot_registry.items()},
+            )
+
         app_state.http_proxy = HTTPConnectProxy(
             web_proxy=_web_proxy,
             egress_filter=getattr(app_state, "egress_filter", None),
+            ip_to_bot_registry=_ip_bot_registry or None,
         )
         await app_state.http_proxy.start()
         logger.info("HTTP CONNECT proxy started on port 8181")

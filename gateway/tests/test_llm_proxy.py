@@ -246,3 +246,150 @@ async def test_proxy_messages_timeout_returns_anthropic_compatible_fallback(monk
     assert "timed out before completion" in parsed["content"][0]["text"].lower()
 
 
+# ---------------------------------------------------------------------------
+# Credential injector integration — gateway-side OAuth translation
+# ---------------------------------------------------------------------------
+
+import urllib.request as _urllib_request  # noqa: E402 (after existing imports)
+from unittest.mock import MagicMock  # noqa: E402
+
+
+class _TrackingInjector:
+    """Fake CredentialInjector that records inject_headers calls and applies Anthropic translation."""
+
+    def __init__(self):
+        self.calls: list = []
+
+    def inject_headers(self, domain: str, headers: dict) -> dict:
+        self.calls.append((domain, dict(headers)))
+        if domain == "api.anthropic.com":
+            existing_auth = headers.get("Authorization", "")
+            if not existing_auth.startswith("Bearer "):
+                # Strip x-api-key (any case) and inject Bearer + beta
+                for k in list(headers):
+                    if k.lower() == "x-api-key":
+                        del headers[k]
+                headers["Authorization"] = "Bearer injected-gateway-token"
+                existing_beta = headers.get("anthropic-beta", "")
+                if "oauth-2025-04-20" not in existing_beta:
+                    headers["anthropic-beta"] = (
+                        f"{existing_beta},oauth-2025-04-20" if existing_beta else "oauth-2025-04-20"
+                    )
+        return headers
+
+
+def _make_fake_urlopen(status: int = 200, body: bytes = b'{"content":[]}'):
+    """Return a monkeypatched urlopen that captures the Request headers."""
+    captured: dict = {}
+
+    def fake_urlopen(req, timeout=None, context=None):
+        captured["request_headers"] = dict(req.headers)
+        resp = MagicMock()
+        resp.read.return_value = body
+        resp.headers = {"content-type": "application/json"}
+        resp.status = status
+        return resp
+
+    return fake_urlopen, captured
+
+
+@pytest.mark.asyncio
+async def test_credential_injector_injects_bearer_for_anthropic_x_api_key(monkeypatch):
+    """Anthropic-bound request with x-api-key: injector injects Bearer + beta, strips x-api-key."""
+    sanitizer = _FakeSanitizer()
+    injector = _TrackingInjector()
+    proxy = LLMProxy(sanitizer=sanitizer, credential_injector=injector)
+    monkeypatch.setattr(llm_proxy_module, "MODEL_MODE", "cloud")
+
+    fake_urlopen, captured = _make_fake_urlopen()
+    monkeypatch.setattr(_urllib_request, "urlopen", fake_urlopen)
+
+    await proxy._forward_request(
+        f"{llm_proxy_module.ANTHROPIC_API_BASE}/v1/messages",
+        b'{"model":"claude-opus-4-6","messages":[]}',
+        {"x-api-key": "sk-ant-oat01-hermes-token", "anthropic-version": "2023-06-01"},
+    )
+
+    # Injector must have been called for the Anthropic domain
+    assert any(d == "api.anthropic.com" for d, _ in injector.calls), "inject_headers not called"
+    # Headers forwarded to the upstream must have Bearer and no x-api-key
+    fwd = captured["request_headers"]
+    assert "Authorization" in fwd or "authorization" in fwd
+    auth_val = fwd.get("Authorization") or fwd.get("authorization", "")
+    assert auth_val.startswith("Bearer "), f"Expected Bearer token, got: {auth_val}"
+    assert "x-api-key" not in fwd and "X-Api-Key" not in fwd
+
+
+@pytest.mark.asyncio
+async def test_credential_injector_does_not_overwrite_existing_bearer(monkeypatch):
+    """OpenClaw already sends Authorization: Bearer — injector must leave it untouched."""
+    sanitizer = _FakeSanitizer()
+    injector = _TrackingInjector()
+    proxy = LLMProxy(sanitizer=sanitizer, credential_injector=injector)
+    monkeypatch.setattr(llm_proxy_module, "MODEL_MODE", "cloud")
+
+    fake_urlopen, captured = _make_fake_urlopen()
+    monkeypatch.setattr(_urllib_request, "urlopen", fake_urlopen)
+
+    openclaw_token = "Bearer sk-ant-oat01-openclaw-runtime-token"
+    await proxy._forward_request(
+        f"{llm_proxy_module.ANTHROPIC_API_BASE}/v1/messages",
+        b'{"model":"claude-opus-4-6","messages":[]}',
+        {"Authorization": openclaw_token},
+    )
+
+    # Injector was called but must not have overwritten Bearer
+    fwd = captured["request_headers"]
+    auth_val = fwd.get("Authorization") or fwd.get("authorization", "")
+    assert auth_val == openclaw_token, f"Bearer was overwritten: {auth_val!r}"
+
+
+@pytest.mark.asyncio
+async def test_credential_injector_not_applied_for_non_anthropic_dest(monkeypatch):
+    """Local/non-Anthropic destination: injector must NOT be called."""
+    sanitizer = _FakeSanitizer()
+    injector = _TrackingInjector()
+    proxy = LLMProxy(sanitizer=sanitizer, credential_injector=injector)
+    monkeypatch.setattr(llm_proxy_module, "MODEL_MODE", "local")
+
+    fake_urlopen, _ = _make_fake_urlopen(body=b'{"choices":[]}')
+    monkeypatch.setattr(_urllib_request, "urlopen", fake_urlopen)
+
+    # Use a non-Anthropic URL (LM Studio local endpoint)
+    await proxy._forward_request(
+        "http://host.docker.internal:1234/v1/chat/completions",
+        b'{"model":"qwen2.5-coder:7b","messages":[]}',
+        {"content-type": "application/json"},
+    )
+
+    assert injector.calls == [], f"inject_headers must not be called for local dest; got: {injector.calls}"
+
+
+@pytest.mark.asyncio
+async def test_credential_injector_called_in_streaming_path(monkeypatch):
+    """Streaming Anthropic request triggers inject_headers before httpx connects."""
+    sanitizer = _FakeSanitizer()
+    injector = _TrackingInjector()
+    proxy = LLMProxy(sanitizer=sanitizer, credential_injector=injector)
+    monkeypatch.setattr(llm_proxy_module, "MODEL_MODE", "cloud")
+
+    payload = json.dumps({
+        "model": "claude-opus-4-6",
+        "messages": [{"role": "user", "content": "hello"}],
+        "stream": True,
+    }).encode()
+
+    # Injection happens before _stream() — it occurs as part of proxy_messages_streaming() setup
+    stream = await proxy.proxy_messages_streaming(
+        "/v1/messages", payload, {"x-api-key": "sk-ant-oat01-hermes"}, user_id="u1"
+    )
+
+    # Injection already happened at this point (before the generator is iterated)
+    assert any(d == "api.anthropic.com" for d, _ in injector.calls), \
+        "inject_headers must be called before streaming starts"
+
+    # Drain one chunk (httpx will fail gracefully → error chunk; we don't care about content)
+    async for _ in stream:
+        break
+
+
