@@ -370,3 +370,79 @@ async def test_system_bypass_without_egress_filter(monkeypatch):
     # Must not raise
     await p._process_connect(reader, writer)
     assert b"200 Connection Established" in writer.written
+
+
+# ============================================================
+# _agent_id_for_peer — IP→bot registry + lazy rDNS attribution
+# ============================================================
+
+
+def test_agent_id_for_peer_known_ip():
+    """Startup registry hit returns correct bot_id immediately."""
+    p = HTTPConnectProxy(ip_to_bot_registry={"10.1.2.3": "hermes"})
+    assert p._agent_id_for_peer(("10.1.2.3", 12345)) == "hermes"
+
+
+def test_agent_id_for_peer_none_peer():
+    """None peer falls back to generic label without error."""
+    p = HTTPConnectProxy()
+    assert p._agent_id_for_peer(None) == "http_connect_proxy"
+
+
+def test_agent_id_for_peer_unknown_no_hostnames():
+    """Unknown IP with no bot_hostnames registered → generic label, cached."""
+    p = HTTPConnectProxy()
+    result = p._agent_id_for_peer(("10.9.9.9", 5000))
+    assert result == "http_connect_proxy"
+    assert p._ip_to_bot_registry["10.9.9.9"] == "http_connect_proxy"
+
+
+def test_agent_id_for_peer_lazy_rdns_hit(monkeypatch):
+    """Unknown IP resolved via reverse-DNS to a known bot hostname → correct bot_id cached."""
+    p = HTTPConnectProxy(bot_hostnames={"hermes": "agentshroud-hermes"})
+    monkeypatch.setattr(
+        "gateway.proxy.http_proxy.socket.gethostbyaddr",
+        lambda ip: ("agentshroud-hermes", [], [ip]),
+    )
+    result = p._agent_id_for_peer(("172.22.0.5", 9999))
+    assert result == "hermes"
+    assert p._ip_to_bot_registry["172.22.0.5"] == "hermes"
+
+
+def test_agent_id_for_peer_lazy_rdns_miss(monkeypatch):
+    """Unknown IP whose rDNS doesn't match any bot → generic label, cached."""
+    p = HTTPConnectProxy(bot_hostnames={"hermes": "agentshroud-hermes"})
+    monkeypatch.setattr(
+        "gateway.proxy.http_proxy.socket.gethostbyaddr",
+        lambda ip: ("some-unknown-host.local", [], [ip]),
+    )
+    result = p._agent_id_for_peer(("192.168.5.5", 1234))
+    assert result == "http_connect_proxy"
+    assert p._ip_to_bot_registry["192.168.5.5"] == "http_connect_proxy"
+
+
+def test_agent_id_for_peer_lazy_rdns_error(monkeypatch):
+    """rDNS failure (e.g. NXDOMAIN) → generic label, cached, no exception."""
+    p = HTTPConnectProxy(bot_hostnames={"hermes": "agentshroud-hermes"})
+    monkeypatch.setattr(
+        "gateway.proxy.http_proxy.socket.gethostbyaddr",
+        lambda ip: (_ for _ in ()).throw(OSError("nodename nor servname provided")),
+    )
+    result = p._agent_id_for_peer(("10.0.0.1", 8080))
+    assert result == "http_connect_proxy"
+
+
+def test_agent_id_for_peer_cached_after_first_lookup(monkeypatch):
+    """Second call for same IP uses cache; rDNS is only called once."""
+    call_count = {"n": 0}
+
+    def _rdns(ip):
+        call_count["n"] += 1
+        return ("agentshroud-hermes", [], [ip])
+
+    p = HTTPConnectProxy(bot_hostnames={"hermes": "agentshroud-hermes"})
+    monkeypatch.setattr("gateway.proxy.http_proxy.socket.gethostbyaddr", _rdns)
+
+    p._agent_id_for_peer(("172.22.0.7", 111))
+    p._agent_id_for_peer(("172.22.0.7", 222))
+    assert call_count["n"] == 1
