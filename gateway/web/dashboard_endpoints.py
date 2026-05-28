@@ -10,6 +10,7 @@ These endpoints power the web dashboard and TUI panels.
 from __future__ import annotations
 
 import asyncio
+import json
 import logging
 import socket
 import time
@@ -268,30 +269,59 @@ async def ssh_hosts(user: str = Depends(require_auth)) -> dict:
 async def logs_recent(
     user: str = Depends(require_auth),
     tail: int = Query(default=20, ge=1, le=100),
+    bot: str = Query(default="", description="Filter by bot_id (e.g. 'openclaw', 'hermes'). Empty = all bots."),
 ) -> dict:
-    """Recent security/audit log entries."""
-    # First try audit chain entries from pipeline
-    entries = log_buffer.tail(tail)
+    """Recent security/audit log entries.
 
-    # Also try to include audit chain entries
+    Optional ``?bot=`` query parameter restricts results to a single bot's
+    events (e.g. ``/api/logs/recent?bot=hermes``).  Omit or pass empty string
+    to return events from all bots.
+    """
+    # First try audit chain entries from pipeline (ring-buffer, no bot_id metadata)
+    entries = log_buffer.tail(tail * 2)  # fetch extra so bot filter doesn't under-fill
+
+    # Also include SQL-backed AuditStore entries which carry bot_id
     try:
         from ..ingest_api.main import app_state
 
-        if getattr(app_state, "pipeline", None) is not None:
-            chain_entries = app_state.pipeline.audit_chain.entries
-            for ce in chain_entries[-tail:]:
+        audit_store = getattr(app_state, "audit_store", None)
+        if audit_store is not None:
+            db_events = await audit_store.query_events(
+                bot_id=bot if bot else None,
+                limit=tail,
+            )
+            for evt in db_events:
                 entries.append(
                     {
-                        "timestamp": datetime.fromtimestamp(
-                            ce.timestamp, tz=timezone.utc
-                        ).isoformat(),
-                        "level": "AUDIT",
-                        "module": "audit_chain",
-                        "message": f"[{ce.direction}] hash={ce.chain_hash[:16]}…",
+                        "timestamp": evt.timestamp,
+                        "level": evt.severity,
+                        "module": evt.source_module,
+                        "message": f"[{evt.event_type}] {json.dumps(evt.details)[:120]}",
+                        "bot_id": evt.bot_id,
                     }
                 )
+        elif getattr(app_state, "pipeline", None) is not None:
+            # Legacy: audit_chain entries (no bot_id — include unless a specific bot filter was requested)
+            if not bot:
+                chain_entries = app_state.pipeline.audit_chain.entries
+                for ce in chain_entries[-tail:]:
+                    entries.append(
+                        {
+                            "timestamp": datetime.fromtimestamp(
+                                ce.timestamp, tz=timezone.utc
+                            ).isoformat(),
+                            "level": "AUDIT",
+                            "module": "audit_chain",
+                            "message": f"[{ce.direction}] hash={ce.chain_hash[:16]}…",
+                            "bot_id": "openclaw",
+                        }
+                    )
     except Exception:
         pass
+
+    # Apply bot filter to ring-buffer entries (which may not have bot_id)
+    if bot:
+        entries = [e for e in entries if e.get("bot_id", "openclaw") == bot]
 
     # Sort by timestamp descending, limit
     entries.sort(key=lambda e: e.get("timestamp", ""), reverse=True)
