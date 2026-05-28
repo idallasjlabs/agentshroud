@@ -32,8 +32,9 @@ services:
     restart: unless-stopped
     stop_grace_period: "15s"
     ports:
-      - 0.0.0.0:8080:8080      # Gateway API — auth required; Tailscale-accessible
-      - 0.0.0.0:18789:18789    # Canvas auth-proxy (CVE-2026-34871 — auth gate in front of bot:18789)
+      - 127.0.0.1:8080:8080      # Gateway API; exposed via tailscale serve → https://marvin.tail240ea8.ts.net:8080
+      - 127.0.0.1:18789:18789    # Canvas auth-proxy (CVE-2026-34871); exposed via tailscale serve → :18789
+      - 127.0.0.1:9119:9119      # Hermes dashboard TCP forwarder → agentshroud-hermes:9119; exposed via tailscale serve → :9119
     volumes:
       - ../agentshroud.yaml:/app/agentshroud.yaml:ro
       - agentshroud-ssh:/var/agentshroud-ssh:ro
