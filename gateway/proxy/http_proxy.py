@@ -102,6 +102,7 @@ class HTTPConnectProxy:
         host: str = "0.0.0.0",
         port: int = 8181,
         ip_to_bot_registry: Optional[dict] = None,
+        bot_hostnames: Optional[dict] = None,
     ):
         if web_proxy is None:
             config = WebProxyConfig(
@@ -114,9 +115,11 @@ class HTTPConnectProxy:
         self.host = host
         self.port = port
         # Mapping of source-IP string → bot_id (e.g. "172.21.0.3" → "hermes").
-        # Built at startup by resolving each bot's hostname; used to attribute
-        # CONNECT requests to the correct bot instead of the generic "http_connect_proxy".
+        # Populated at startup for any bot resolvable then; lazily extended via
+        # reverse-DNS for bots that start after the gateway (e.g. Hermes).
         self._ip_to_bot_registry: dict = ip_to_bot_registry or {}
+        # bot_id → Docker service hostname, used for lazy reverse-DNS attribution.
+        self._bot_hostnames: dict = bot_hostnames or {}
         self._server: Optional[asyncio.Server] = None
         self._stats: dict = {
             "total": 0,
@@ -166,12 +169,32 @@ class HTTPConnectProxy:
                 pass
 
     def _agent_id_for_peer(self, peer) -> str:
-        """Resolve source IP to a bot_id using the IP registry, fall back to generic label."""
-        if peer and self._ip_to_bot_registry:
-            ip = peer[0] if isinstance(peer, (tuple, list)) else str(peer)
-            bot_id = self._ip_to_bot_registry.get(ip)
-            if bot_id:
-                return bot_id
+        """Resolve source IP to a bot_id; lazily extends registry via reverse-DNS.
+
+        The startup registry may be empty for bots that start after the gateway
+        (e.g. Hermes). On first CONNECT from an unknown IP, attempt a reverse-DNS
+        lookup via Docker's embedded DNS and match against known bot hostnames.
+        Cache both hits and misses so the lookup runs at most once per IP.
+        """
+        if not peer:
+            return "http_connect_proxy"
+        ip = peer[0] if isinstance(peer, (tuple, list)) else str(peer)
+        if ip in self._ip_to_bot_registry:
+            return self._ip_to_bot_registry[ip]
+        if self._bot_hostnames:
+            try:
+                rdns_host = socket.gethostbyaddr(ip)[0]
+                for bot_id, bot_host in self._bot_hostnames.items():
+                    if rdns_host == bot_host or rdns_host.startswith(bot_host + "."):
+                        self._ip_to_bot_registry[ip] = bot_id
+                        logger.debug(
+                            "IP→bot registry (lazy rDNS): %s → %s (hostname=%s)",
+                            ip, bot_id, rdns_host,
+                        )
+                        return bot_id
+            except Exception:
+                pass
+        self._ip_to_bot_registry[ip] = "http_connect_proxy"
         return "http_connect_proxy"
 
     async def _process_connect(

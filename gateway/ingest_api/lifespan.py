@@ -1198,10 +1198,16 @@ async def lifespan(app: FastAPI):
                 {v: k for k, v in _ip_bot_registry.items()},
             )
 
+        _bot_hostnames = {
+            bid: bcfg.hostname
+            for bid, bcfg in app_state.config.bots.items()
+            if getattr(bcfg, "hostname", None)
+        }
         app_state.http_proxy = HTTPConnectProxy(
             web_proxy=_web_proxy,
             egress_filter=getattr(app_state, "egress_filter", None),
             ip_to_bot_registry=_ip_bot_registry or None,
+            bot_hostnames=_bot_hostnames or None,
         )
         await app_state.http_proxy.start()
         logger.info("HTTP CONNECT proxy started on port 8181")
