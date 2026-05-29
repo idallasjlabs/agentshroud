@@ -336,4 +336,4 @@ Before production deployment:
 
 **Last Updated**: 2026-02-16  
 **Review Cycle**: Quarterly  
-**Owner**: SecureClaw Security Team
+**Owner**: AgentShroud Security Team

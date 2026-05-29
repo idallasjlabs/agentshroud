@@ -248,6 +248,7 @@
     <ul>
       <li><a href="#features">Features</a></li>
       <li><a href="#layers">Architecture</a></li>
+      <li><a href="#hermes">Hermes</a></li>
       <li><a href="#cves">CVEs</a></li>
       <li><a href="#cves-hermes">Hermes CVEs</a></li>
       <li><a href="#quickstart">Quickstart</a></li>
@@ -402,6 +403,49 @@
         </tr>
       </tbody>
     </table>
+  </div>
+</section>
+
+<!-- ── Hermes Agent ───────────────────────────────────────────── -->
+<section id="hermes">
+  <div class="container">
+    <div class="section-label">Second Bot</div>
+    <h2>Hermes Agent</h2>
+    <p class="section-sub">Hermes is the second AgentShroud-secured autonomous AI agent — Python-based, built on <code>nousresearch/hermes-agent</code>. It runs alongside OpenClaw inside the same 76-module governance envelope, fully isolated on the <code>agentshroud-isolated</code> network with all LLM and egress traffic routed through the gateway.</p>
+
+    <div class="feature-grid">
+      <div class="feature-card">
+        <div class="feature-icon">🤖</div>
+        <h3>Capabilities</h3>
+        <p>Telegram, Slack, Brave web search, web fetch, cron scheduling, subagent personas, and native MCP (Model Context Protocol) server integrations — all policy-enforced at the gateway.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">🔒</div>
+        <h3>Security Posture</h3>
+        <p>All Hermes egress routes via <code>gateway:8181</code> (HTTP CONNECT proxy). All LLM calls route via <code>gateway:8080</code>. Same 76-module pipeline as OpenClaw — no bypass path exists at the container level.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">🌐</div>
+        <h3>OpenAI-Compatible API</h3>
+        <p>Exposes an OpenAI-compatible API on port 8642. Any tool or client that speaks the OpenAI chat completions format can connect to Hermes through the gateway's credential-injection and audit layer.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">🖥️</div>
+        <h3>HCI Admin UI</h3>
+        <p>Built-in admin dashboard on port 9121 (published at <code>127.0.0.1:9121</code> on marvin). Access is gateway-auth-gated — unauthenticated requests are blocked before reaching the Hermes process.</p>
+      </div>
+    </div>
+
+    <div class="code-block" style="margin-top: 32px;">
+      <div class="header">Connect to Hermes API — base URL</div>
+      <pre><span class="cm"># OpenAI-compatible endpoint (requires gateway auth token)</span>
+<span class="kw">base_url</span> = <span class="st">"https://marvin.tail240ea8.ts.net:8642/v1"</span>
+
+<span class="cm"># Health check</span>
+curl https://marvin.tail240ea8.ts.net:8642/health
+
+<span class="cm"># Full setup guide: docs/setup/HERMES_SETUP.md</span></pre>
+    </div>
   </div>
 </section>
 

@@ -294,12 +294,12 @@ class TestAuditExporter:
 
 
 # ---------------------------------------------------------------------------
-# Multi-bot bot_id support (v1.4.0)
+# Multi-bot bot_id support (v1.1.0)
 # ---------------------------------------------------------------------------
 
 
 class TestAuditStoreBotId:
-    """Verify per-bot filtering in AuditStore (v1.4.0 multi-bot support)."""
+    """Verify per-bot filtering in AuditStore (v1.1.0 multi-bot support)."""
 
     @pytest_asyncio.fixture
     async def store(self, tmp_path):

@@ -193,16 +193,19 @@ class TestUserSessionManager:
         session_manager.get_or_create_session(user1_id)
         session_manager.get_or_create_session(user2_id)
 
-        # Owner should see all sessions
+        # Owner should see all sessions (list_sessions_for_user returns "user_id::bot_id" keys)
         owner_sessions = session_manager.list_sessions_for_user(owner_id)
-        assert set(owner_sessions) == {user1_id, user2_id}
+        assert any(user1_id in k for k in owner_sessions)
+        assert any(user2_id in k for k in owner_sessions)
 
         # Regular users should only see their own
         user1_sessions = session_manager.list_sessions_for_user(user1_id)
-        assert user1_sessions == [user1_id]
+        assert any(user1_id in k for k in user1_sessions)
+        assert not any(user2_id in k for k in user1_sessions)
 
         user2_sessions = session_manager.list_sessions_for_user(user2_id)
-        assert user2_sessions == [user2_id]
+        assert any(user2_id in k for k in user2_sessions)
+        assert not any(user1_id in k for k in user2_sessions)
 
     def test_trust_level_per_user(self, session_manager):
         """Test that trust levels are tracked per user."""
@@ -532,10 +535,10 @@ class TestSessionIsolationEndToEnd:
         assert not (session2.workspace_dir / "secrets.txt").exists()
         assert session1.workspace_dir != session2.workspace_dir
 
-        # 4. Session listing isolation
+        # 4. Session listing isolation (list_sessions_for_user returns "user_id::bot_id" keys)
         user2_sessions = session_manager.list_sessions_for_user(user2_id)
-        assert user2_sessions == [user2_id]
-        assert user1_id not in user2_sessions
+        assert any(user2_id in k for k in user2_sessions)
+        assert not any(user1_id in k for k in user2_sessions)
 
         # 5. Access control
         assert not session_manager.can_user_access_session(user2_id, user1_id)
@@ -554,9 +557,10 @@ class TestSessionIsolationEndToEnd:
         session_manager.get_or_create_session(user1_id)
         session_manager.get_or_create_session(user2_id)
 
-        # Owner should see all sessions
+        # Owner should see all sessions (list_sessions_for_user returns "user_id::bot_id" keys)
         all_sessions = session_manager.list_sessions_for_user(owner_id)
-        assert set(all_sessions) == {user1_id, user2_id}
+        assert any(user1_id in k for k in all_sessions)
+        assert any(user2_id in k for k in all_sessions)
 
         # Owner should be able to access any session
         assert session_manager.can_user_access_session(owner_id, user1_id)
