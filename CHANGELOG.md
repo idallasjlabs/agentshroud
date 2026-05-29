@@ -8,6 +8,60 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ---
 
+## [1.1.0] — feat-v1.4.0-shroud-another-bot — "Hermes" (2026-05-29)
+
+### Summary
+
+v1.1.0 "Hermes" — multi-bot release. AgentShroud now secures two autonomous AI agents
+simultaneously: **OpenClaw** (the original Node.js-based bot) and **Hermes** (a Python-based
+`nousresearch/hermes-agent` running inside the same governance envelope). Every Hermes message,
+tool call, and egress request passes through the same 76-module security pipeline as OpenClaw.
+
+### Added
+
+- **Hermes bot** (`docker/bots/hermes/`) — second bot under AgentShroud governance; isolated on
+  `agentshroud-isolated` network with `HTTP_PROXY=gateway:8181`; all LLM calls via `gateway:8080`.
+- **Hermes OpenAI-compatible API** — port 8642, `API_SERVER_KEY` protected, `allow_model_override:false`.
+- **HCI (Hermes Control Interface)** — gateway-auth-gated reverse proxy (`gateway/proxy/hci_proxy.py`)
+  on port 9121; `xaspx/hermes-control-interface` container (profile `hermes`/`full`).
+- **Per-bot session isolation** — `UserSessionManager` keys sessions as `user_id::bot_id`
+  (`_KEY_SEP="::"`) so OpenClaw and Hermes workspaces never share memory.
+- **Per-bot Telegram token registry** — `_telegram_token_registry` in `app_state`; unknown tokens
+  return 403 (fail-closed). bot_id threaded into every pipeline, audit, and egress call via
+  `contextvars.ContextVar` in `TelegramAPIProxy`.
+- **Bot-agnostic gateway plumbing** — `forward.py` resolves `agent_id=target.name` before the
+  security pipeline; `lifespan.py` registers all configured bots (openclaw, hermes) in TrustManager
+  and EgressFilter at startup.
+- **Per-bot CVE registry** — `agent_cve_registry.py` carries OpenClaw + Hermes CVE entries.
+- **Hermes dashboard forwarder** — gateway TCP proxy `127.0.0.1:9119 → hermes:9119`.
+- **Hermes capability parity** — web search (Brave), web fetch, cron, subagent personas,
+  and native MCP server wiring via `init-config.sh` CLI invocations.
+- **`docs/setup/HERMES_SETUP.md`** — frontend connection instructions for Hermes OpenAI API
+  (Open WebUI, LibreChat, Chatbox) and HCI access (port 9121).
+
+### Changed
+
+- `scripts/asb` — `up`/`rebuild`/`clean-rebuild` start the `full` profile (gateway + openclaw +
+  hermes + hci); ephemeral secrets extended for `hermes_api_key`, `hermes_telegram_bot_token`,
+  `slack_{bot,app}_token_hermes`.
+- `scripts/post-deploy-check.sh` — added Hermes 9119/8642 and HCI 9121 health checks.
+- `CLAUDE.md`, `README.md`, `docker/README.md`, `docker/QUICKSTART.md` — multi-bot architecture
+  documented; `--profile full` usage explained; startup warnings updated.
+- Architecture diagrams (C4 container, network topology, Telegram sequence, bot-session state) —
+  updated to show two-bot topology.
+- `docs/index.html` — Hermes architecture/feature section added alongside CVE section.
+
+### Security
+
+- All Hermes outbound egress routes via `EgressFilter` (`gateway:8181`); no direct internet.
+- Direct API clients on port 8642 bypass inbound PromptGuard; mitigated by required API key,
+  tailnet-only `tailscale serve`, CORS allowlist, and `allow_model_override:false`. Documented in
+  `HERMES_SETUP.md`.
+- Hermes CVEs tracked: CVE-2026-7396, CVE-2026-7397, CVE-2026-6829, CVE-2026-9352, CVE-2026-9367,
+  CVE-2026-7112, CVE-2026-7113. All mitigated by AgentShroud defense layers.
+
+---
+
 ## [1.0.0] — feat/v1.0.0 — "Fortress" (2026-03-31)
 
 ### Summary

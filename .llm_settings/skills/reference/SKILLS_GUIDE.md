@@ -25,11 +25,11 @@
 | AWS operations | `/aws` | Cloud inventory, cost optimization, FinOps |
 | Root cause analysis | `/8d` | BESS incident investigation, 8D methodology |
 | Mac app inventory | `/mac` | Discover all macOS applications |
-| Security review | `/sec` | SecureClaw 4-layer security review |
+| Security review | `/sec` | AgentShroud 4-layer security review |
 | Defensive security | `/sec-defense` | Blue team STPA-Sec audit |
 | Offensive security | `/sec-offense` | Red team adversarial testing |
-| Environment setup | `/env` | SecureClaw Pi environment management |
-| Project tracking | `/pm` | SecureClaw roadmap and sprint tracking |
+| Environment setup | `/env` | AgentShroud Pi environment management |
+| Project tracking | `/pm` | AgentShroud roadmap and sprint tracking |
 | Technical writing | `/tw` | Documentation authoring |
 | Technical diagrams | `/ti` | Mermaid diagram generation |
 | Branding | `/bs` | Visual brand consistency |
@@ -201,7 +201,7 @@ aws s3 rm s3://fluenceenergy-ops-data-lakehouse/das_catalog/_test/ --recursive
 ### System Utilities
 - **MAC** (`/mac`) - macOS application inventory (10 collection methods), categorization (22 categories), JSON manifest + Markdown catalog, web-sourced alternatives
 
-### SecureClaw (Project-Specific)
+### AgentShroud (Project-Specific)
 - **SEC** (`/sec`) - 4-layer security review (application, container, network, data flow), threat model
 - **ENV** (`/env`) - Raspberry Pi environment management, Docker hardening, ARM64 considerations, CI/CD workflow
 - **PM** (`/pm`) - 8-phase roadmap tracking, continuity files, sprint management, 6-agent coordination
@@ -309,13 +309,13 @@ Since we deploy directly to production:
 # Mac app inventory
 /mac
 
-# SecureClaw security review
+# AgentShroud security review
 /sec
 
-# SecureClaw environment setup
+# AgentShroud environment setup
 /env
 
-# SecureClaw project tracking
+# AgentShroud project tracking
 /pm
 
 # Technical documentation

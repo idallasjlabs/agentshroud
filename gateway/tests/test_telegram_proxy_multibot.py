@@ -4,7 +4,7 @@
 # Unauthorized reproduction, distribution, or use of the AgentShroud name or brand is strictly prohibited.
 """Tests for multi-bot Telegram token registry in the gateway route handler.
 
-Phase 1.3 of v1.4.0: the /telegram-api/{path} endpoint previously accepted only
+Phase 1.3 of v1.1.0: the /telegram-api/{path} endpoint previously accepted only
 the single OpenClaw bot token. These tests verify the multi-bot registry correctly
 dispatches by token and rejects unrecognised tokens with 403 (fail-closed).
 """

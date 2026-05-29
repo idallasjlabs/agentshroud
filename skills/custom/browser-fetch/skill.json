@@ -2,7 +2,7 @@
   "name": "browser-fetch",
   "version": "1.0.0",
   "description": "Securely fetch content from JavaScript-heavy websites using headless browser",
-  "author": "SecureClaw",
+  "author": "AgentShroud",
   "keywords": ["browser", "playwright", "automation", "1password", "security"],
   "tools": [
     {

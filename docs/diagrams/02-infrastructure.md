@@ -36,9 +36,13 @@ graph TB
 
             subgraph NetIsolated["agentshroud-isolated  ·  172.21.0.0/16"]
                 BOT["agentshroud-bot\n:18789 OpenClaw\n:18790 Web UI\nNode.js 22 · 4 GB"]
+                HERMES["agentshroud-hermes  [--profile full]\n:8642 Hermes API\n:9119 Dashboard\nnousresearch/hermes-agent · Python 3.11"]
+                HCI["agentshroud-hci  [--profile full]\n:9121 Hermes Control Interface\nBasic-Auth gated"]
             end
 
             GW -.->|"shared network"| BOT
+            GW -.->|"HTTP_PROXY=gateway:8181"| HERMES
+            HERMES -.->|"management"| HCI
         end
 
         subgraph Volumes["Named Docker Volumes"]
@@ -82,14 +86,19 @@ graph LR
     end
 
     subgraph Isolated["agentshroud-isolated\n172.21.0.0/16"]
-        BOT_ISO["Bot\n172.21.x.x\n:18789"]
+        BOT_ISO["OpenClaw Bot\n172.21.x.x\n:18789"]
+        HERMES_ISO["Hermes Agent\n172.21.x.x\n:8642 :9119"]
+        HCI_ISO["HCI\n172.21.x.x\n:9121"]
         GW_ISO["Gateway\n172.21.x.x\n(bridge)"]
     end
 
     LOCALHOST["localhost\n127.0.0.1"] -->|":8080"| GW_INT
     LOCALHOST -->|":18790"| BOT_ISO
+    LOCALHOST -->|":8642 :9119"| HERMES_ISO
+    LOCALHOST -->|":9121"| HCI_ISO
 
     BOT_ISO -->|"HTTP CONNECT\nAll traffic"| GW_ISO
+    HERMES_ISO -->|"HTTP_PROXY=gateway:8181\nAll traffic"| GW_ISO
     GW_INT -->|"HTTPS 443\nAllowlisted domains only"| Internet(("Internet"))
 
     GW_INT -.->|"Blocked — RFC1918"| LAN(("LAN\n10.x / 172.16.x\n192.168.x"))
@@ -120,6 +129,8 @@ graph TB
         subgraph Running["Running Containers"]
             GW_C["agentshroud-gateway\n(healthy)"]
             BOT_C["agentshroud-bot\n(healthy)"]
+            HERMES_C["agentshroud-hermes\n(healthy) [--profile full]"]
+            HCI_C["agentshroud-hci\n(healthy) [--profile full]"]
         end
     end
 

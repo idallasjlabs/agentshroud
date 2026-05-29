@@ -5,7 +5,7 @@
 
 ## Purpose
 
-iCloud Data Manager for the SecureClaw project. Provides structured access to iCloud Drive, Contacts, and Calendar via gateway API. Use when interacting with iCloud data sources, checking sync status, or managing iCloud-based workflows.
+iCloud Data Manager for the AgentShroud project. Provides structured access to iCloud Drive, Contacts, and Calendar via gateway API. Use when interacting with iCloud data sources, checking sync status, or managing iCloud-based workflows.
 
 ## Usage
 

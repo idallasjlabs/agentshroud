@@ -5,7 +5,7 @@
 
 ## Purpose
 
-Security Reviewer for the SecureClaw project. Reviews code changes across application, container, network, and data flow security layers. Use for security audits of pull requests or new features in the SecureClaw proxy system.
+Security Reviewer for the AgentShroud project. Reviews code changes across application, container, network, and data flow security layers. Use for security audits of pull requests or new features in the AgentShroud proxy system.
 
 ## Usage
 
