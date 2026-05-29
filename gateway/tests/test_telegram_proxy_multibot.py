@@ -11,7 +11,9 @@ dispatches by token and rejects unrecognised tokens with 403 (fail-closed).
 
 from __future__ import annotations
 
-from unittest.mock import MagicMock, patch
+import asyncio
+import json
+from unittest.mock import AsyncMock, MagicMock, patch
 
 import pytest
 
@@ -169,3 +171,150 @@ class TestTelegramBotConfigTokenSecretField:
         assert cfg.telegram_token_secret == ""
         assert cfg.image == ""
         assert cfg.default is False
+
+
+class TestMultiBotContextvarRouting:
+    """Tests for per-request bot token routing via contextvars.
+
+    Regression suite for the cross-bot reply misrouting bug:
+      /status sent to Hermes bot → reply delivered through OpenClaw bot.
+    Root cause: single shared TelegramAPIProxy with self._bot_token = OpenClaw token;
+    local-command replies always egressed through the default token regardless of which
+    bot received the inbound getUpdates request.
+    Fix: proxy_request sets _inbound_bot_token contextvar; senders read _active_send_token().
+    """
+
+    def _make_proxy(self, default_token: str = _OPENCLAW_TOKEN) -> "TelegramAPIProxy":
+        from gateway.proxy.telegram_proxy import TelegramAPIProxy
+
+        proxy = TelegramAPIProxy.__new__(TelegramAPIProxy)
+        proxy._bot_token = default_token
+        proxy._ssl_context = MagicMock()
+        return proxy
+
+    def test_active_send_token_returns_default_outside_request(self):
+        """Outside a proxy_request call, _active_send_token() returns self._bot_token."""
+        from gateway.proxy import telegram_proxy as _tp
+
+        _tp._inbound_bot_token.set(None)
+        proxy = self._make_proxy(_OPENCLAW_TOKEN)
+        assert proxy._active_send_token() == _OPENCLAW_TOKEN
+
+    def test_active_send_token_returns_contextvar_inside_request(self):
+        """When _inbound_bot_token is set, _active_send_token() returns it."""
+        from gateway.proxy import telegram_proxy as _tp
+
+        token = _tp._inbound_bot_token.set(_HERMES_TOKEN)
+        try:
+            proxy = self._make_proxy(_OPENCLAW_TOKEN)
+            assert proxy._active_send_token() == _HERMES_TOKEN
+        finally:
+            _tp._inbound_bot_token.reset(token)
+
+    def test_active_bot_id_falls_back_to_openclaw(self):
+        """Outside a proxy_request call, _active_bot_id() returns 'openclaw'."""
+        from gateway.proxy import telegram_proxy as _tp
+
+        _tp._inbound_bot_id.set(None)
+        proxy = self._make_proxy()
+        assert proxy._active_bot_id() == "openclaw"
+
+    def test_active_bot_id_returns_contextvar_when_set(self):
+        """When _inbound_bot_id is set, _active_bot_id() returns it."""
+        from gateway.proxy import telegram_proxy as _tp
+
+        token = _tp._inbound_bot_id.set("hermes")
+        try:
+            proxy = self._make_proxy()
+            assert proxy._active_bot_id() == "hermes"
+        finally:
+            _tp._inbound_bot_id.reset(token)
+
+    def test_send_telegram_text_uses_inbound_token(self):
+        """_send_telegram_text uses the inbound contextvar token, not self._bot_token."""
+        from gateway.proxy import telegram_proxy as _tp
+
+        captured_urls = []
+
+        def fake_urlopen(req, timeout=None, context=None):
+            captured_urls.append(req.full_url)
+            return MagicMock()
+
+        ctx_token = _tp._inbound_bot_token.set(_HERMES_TOKEN)
+        try:
+            proxy = self._make_proxy(_OPENCLAW_TOKEN)
+            with patch("urllib.request.urlopen", side_effect=fake_urlopen):
+                asyncio.get_event_loop().run_until_complete(
+                    proxy._send_telegram_text(12345, "hello")
+                )
+        finally:
+            _tp._inbound_bot_token.reset(ctx_token)
+
+        assert len(captured_urls) == 1
+        assert f"bot{_HERMES_TOKEN}" in captured_urls[0]
+        assert f"bot{_OPENCLAW_TOKEN}" not in captured_urls[0]
+
+    def test_send_telegram_text_falls_back_to_default_token(self):
+        """Without contextvar, _send_telegram_text uses self._bot_token."""
+        from gateway.proxy import telegram_proxy as _tp
+
+        captured_urls = []
+
+        def fake_urlopen(req, timeout=None, context=None):
+            captured_urls.append(req.full_url)
+            return MagicMock()
+
+        _tp._inbound_bot_token.set(None)
+        proxy = self._make_proxy(_OPENCLAW_TOKEN)
+        with patch("urllib.request.urlopen", side_effect=fake_urlopen):
+            asyncio.get_event_loop().run_until_complete(
+                proxy._send_telegram_text(12345, "hello")
+            )
+
+        assert len(captured_urls) == 1
+        assert f"bot{_OPENCLAW_TOKEN}" in captured_urls[0]
+
+    def test_proxy_request_resets_contextvar_after_return(self):
+        """After proxy_request returns, _inbound_bot_token is reset to its prior value."""
+        from gateway.proxy import telegram_proxy as _tp
+
+        proxy = self._make_proxy(_OPENCLAW_TOKEN)
+        initial_value = _tp._inbound_bot_token.get()
+
+        async def run():
+            proxy._proxy_request_impl = AsyncMock(
+                return_value={"ok": True, "result": []}
+            )
+            await proxy.proxy_request(
+                _HERMES_TOKEN, "getUpdates", bot_id="hermes"
+            )
+
+        asyncio.get_event_loop().run_until_complete(run())
+        assert _tp._inbound_bot_token.get() == initial_value
+
+    def test_proxy_request_contextvar_visible_inside_impl(self):
+        """The contextvar set by proxy_request is visible throughout _proxy_request_impl.
+
+        This plus test_send_telegram_text_uses_inbound_token jointly prove that any sender
+        invoked inside _proxy_request_impl (e.g. _send_local_status_notice) will use the
+        inbound bot's token rather than the OpenClaw default — fixing the routing bug.
+        """
+        from gateway.proxy import telegram_proxy as _tp
+
+        proxy = self._make_proxy(_OPENCLAW_TOKEN)
+        captured_token_in_impl: list = []
+
+        async def run():
+            async def impl_capture(token, method, body=None, ct=None, is_system=False, prefix=""):
+                captured_token_in_impl.append(proxy._active_send_token())
+                return {"ok": True, "result": []}
+
+            proxy._proxy_request_impl = impl_capture
+            await proxy.proxy_request(_HERMES_TOKEN, "getUpdates", bot_id="hermes")
+
+        asyncio.get_event_loop().run_until_complete(run())
+
+        assert len(captured_token_in_impl) == 1
+        assert captured_token_in_impl[0] == _HERMES_TOKEN, (
+            f"_active_send_token() inside impl should return Hermes token, got: {captured_token_in_impl}"
+        )
