@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """
 SecureBrowser - Enterprise-grade secure browser automation
-Part of SecureClaw "One Claw Tied Behind Your Back" framework
+Part of AgentShroud "One Claw Tied Behind Your Back" framework
 
 Security Features:
 - URL allowlisting
@@ -100,7 +100,7 @@ class SecureBrowser:
                 browser={
                     "headless": True,
                     "timeout": 30000,
-                    "user_agent": "SecureClaw/1.0 (Enterprise Browser Automation)",
+                    "user_agent": "AgentShroud/1.0 (Enterprise Browser Automation)",
                     "block_third_party_cookies": True
                 }
             )

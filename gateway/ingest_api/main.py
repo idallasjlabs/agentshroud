@@ -4303,14 +4303,32 @@ async def telegram_api_proxy(path: str, request: Request):
     bot_token = match.group(2)
     method = match.group(3)
 
-    # M6: Validate bot token matches the configured token
-    configured_token = None
-    configured_token = _read_secret("telegram_bot_token") or None
-    if not configured_token:
-        logger.error("Telegram proxy: no bot token configured — rejecting request (fail-closed)")
-        raise HTTPException(status_code=503, detail="Telegram proxy not configured")
-    if not hmac.compare_digest(bot_token, configured_token):
-        logger.warning("Telegram proxy: bot token mismatch — rejecting request")
+    # M6: Validate bot token against the multi-bot registry.
+    # Registry is built lazily from BotConfig.telegram_token_secret + the legacy
+    # 'telegram_bot_token' secret (OpenClaw default). Keyed token → bot_id.
+    if not getattr(app_state, "_telegram_token_registry", None):
+        _registry: dict[str, str] = {}
+        for _bid, _bcfg in app_state.config.bots.items():
+            _secret_name = _bcfg.telegram_token_secret or (
+                "telegram_bot_token" if _bid == "openclaw" else f"telegram_bot_token_{_bid}"
+            )
+            _tok = _read_secret(_secret_name) or None
+            if _tok:
+                _registry[_tok] = _bid
+        # Legacy fallback: 'telegram_bot_token' covers OpenClaw even if not declared in BotConfig
+        _legacy = _read_secret("telegram_bot_token") or None
+        if _legacy and _legacy not in _registry:
+            _registry[_legacy] = "openclaw"
+        if not _registry:
+            logger.error(
+                "Telegram proxy: no bot tokens configured — rejecting request (fail-closed)"
+            )
+            raise HTTPException(status_code=503, detail="Telegram proxy not configured")
+        app_state._telegram_token_registry = _registry
+
+    matched_bot_id = app_state._telegram_token_registry.get(bot_token)
+    if not matched_bot_id:
+        logger.warning("Telegram proxy: unrecognised bot token — rejecting request")
         raise HTTPException(status_code=403, detail="Invalid bot token")
 
     # Read request body — guard against client disconnect mid-stream
@@ -4339,9 +4357,16 @@ async def telegram_api_proxy(path: str, request: Request):
     # System notifications (startup/shutdown from start.sh) carry X-AgentShroud-System: 1
     # so the proxy skips outbound content filtering — these are not LLM-generated output.
     is_system = request.headers.get("x-agentshroud-system") == "1"
+    logger.debug("Telegram proxy: bot_id=%s method=%s", matched_bot_id, method)
 
     result = await _telegram_proxy.proxy_request(
-        bot_token, method, body, content_type, is_system=is_system, path_prefix=file_prefix
+        bot_token,
+        method,
+        body,
+        content_type,
+        is_system=is_system,
+        path_prefix=file_prefix,
+        bot_id=matched_bot_id,
     )
 
     # File downloads return binary data — serve as-is rather than JSON-encoding.
@@ -4435,6 +4460,9 @@ async def slack_ws_relay(websocket: WebSocket, t: str = Query(...)):
                                     message_preview=str(event.get("text", ""))[:80],
                                     source="slack",
                                     direction="inbound",
+                                    # Slack WS relay is scoped to OpenClaw; no multi-bot
+                                    # routing at this layer yet.
+                                    bot_id="openclaw",
                                 )
                 except (json.JSONDecodeError, KeyError):
                     pass
@@ -4465,3 +4493,72 @@ async def slack_ws_relay(websocket: WebSocket, t: str = Query(...)):
             await websocket.close()
         except Exception:
             pass
+
+
+# ── Hermes Dashboard Reverse Proxy ──────────────────────────────────────────
+# Hermes runs on agentshroud-isolated (internal:true) so its port 9119 cannot
+# be published directly to the host. The gateway (on the same isolated network)
+# proxies /hermes-dashboard/* → http://agentshroud-hermes:9119/*.
+# Access at: <gateway-host>:8080/hermes-dashboard/
+_HERMES_DASHBOARD_UPSTREAM = os.environ.get(
+    "HERMES_DASHBOARD_UPSTREAM", "http://agentshroud-hermes:9119"
+)
+
+
+@app.api_route(
+    "/hermes-dashboard",
+    methods=["GET", "HEAD"],
+    include_in_schema=False,
+)
+async def hermes_dashboard_root():
+    """Redirect bare /hermes-dashboard to /hermes-dashboard/ so assets resolve."""
+    from starlette.responses import RedirectResponse as _Redir
+
+    return _Redir(url="/hermes-dashboard/", status_code=307)
+
+
+@app.api_route(
+    "/hermes-dashboard/{path:path}",
+    methods=["GET", "POST", "PUT", "DELETE", "PATCH", "HEAD", "OPTIONS"],
+    include_in_schema=False,
+)
+async def hermes_dashboard_proxy(path: str, request: Request):
+    """Reverse-proxy the Hermes Agent dashboard through the gateway."""
+    import httpx as _httpx
+
+    upstream_url = f"{_HERMES_DASHBOARD_UPSTREAM}/{path}"
+    params = str(request.url.query)
+    if params:
+        upstream_url = f"{upstream_url}?{params}"
+    headers = {
+        k: v
+        for k, v in request.headers.items()
+        if k.lower() not in ("host", "connection", "transfer-encoding")
+    }
+    body = await request.body()
+    try:
+        async with _httpx.AsyncClient(timeout=30.0) as client:
+            resp = await client.request(
+                method=request.method,
+                url=upstream_url,
+                headers=headers,
+                content=body,
+                follow_redirects=False,
+            )
+        resp_headers = {
+            k: v
+            for k, v in resp.headers.items()
+            if k.lower() not in ("transfer-encoding", "connection")
+        }
+        from starlette.responses import Response as _Resp
+
+        return _Resp(
+            content=resp.content,
+            status_code=resp.status_code,
+            headers=resp_headers,
+        )
+    except _httpx.ConnectError:
+        raise HTTPException(status_code=502, detail="Hermes dashboard unavailable")
+    except Exception as exc:
+        logger.warning("hermes_dashboard_proxy error: %s", exc)
+        raise HTTPException(status_code=502, detail="Hermes dashboard proxy error")

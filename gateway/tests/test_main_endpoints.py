@@ -41,6 +41,9 @@ class TestForwardEndpoint:
             patch("gateway.ingest_api.routes.forward.create_auth_dependency") as mock_auth_dep,
         ):
             mock_app_state.middleware_manager = mock_middleware
+            mock_target = MagicMock()
+            mock_target.name = "openclaw"
+            mock_app_state.router.resolve_target = AsyncMock(return_value=mock_target)
 
             client = TestClient(app)
 
@@ -80,6 +83,9 @@ class TestForwardEndpoint:
             patch("gateway.ingest_api.routes.forward.create_auth_dependency") as mock_auth_dep,
         ):
             mock_app_state.middleware_manager = mock_middleware
+            mock_target = MagicMock()
+            mock_target.name = "openclaw"
+            mock_app_state.router.resolve_target = AsyncMock(return_value=mock_target)
 
             client = TestClient(app)
 

@@ -94,3 +94,28 @@ def test_entity_type_mapping():
     assert _entity_type_mapping("CREDIT_CARD") == "CREDIT_CARD"
     assert _entity_type_mapping("STREET_ADDRESS") == "LOCATION"
     assert _entity_type_mapping("UNKNOWN") == "UNKNOWN"  # Passthrough
+
+
+def test_load_config_registers_hermes():
+    """When agentshroud.yaml declares hermes:, load_config() populates it in bots."""
+    try:
+        config = load_config()
+    except FileNotFoundError:
+        pytest.skip("agentshroud.yaml not found — skipped in CI")
+
+    assert "hermes" in config.bots, "hermes must be declared in agentshroud.yaml bots: section"
+    hermes = config.bots["hermes"]
+    assert hermes.port == 8642, "Hermes gateway API port must be 8642"
+    assert hermes.default is False, "Hermes must NOT be the default bot (OpenClaw is)"
+    assert hermes.hostname == "agentshroud-hermes"
+    assert hermes.chat_path == "/v1/chat/completions"
+    assert hermes.telegram_token_secret == "hermes_telegram_bot_token"
+    assert "api.telegram.org" in hermes.egress_domains
+
+
+def test_router_config_accepts_hermes_hostname():
+    """RouterConfig must accept the Hermes Docker service hostname."""
+    from gateway.ingest_api.config import RouterConfig
+
+    cfg = RouterConfig(default_url="http://agentshroud-hermes:8642")
+    assert cfg.default_url == "http://agentshroud-hermes:8642"

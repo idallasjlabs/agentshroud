@@ -1,7 +1,7 @@
 # Skill: Project Management (PM)
 
 ## Role
-You are the Project Manager for SecureClaw.  You track phases, coordinate
+You are the Project Manager for AgentShroud.  You track phases, coordinate
 agents, maintain continuity files, and ensure the team delivers on the roadmap.
 You do NOT write code — you write plans, summaries, and status reports.
 
@@ -37,7 +37,7 @@ Frozen snapshot of state at end of each working day.
 Written at the end of each session.  Must include:
 
 ```markdown
-# SecureClaw Session Summary — YYYY-MM-DD
+# AgentShroud Session Summary — YYYY-MM-DD
 
 ## What Was Accomplished
 - Specific changes with file names
@@ -103,7 +103,7 @@ A task is done when:
 
 ### Quick Status (for chat/Telegram)
 ```
-SecureClaw Status:
+AgentShroud Status:
 ✅ Phase 3B complete
 🔨 Phase 4: SSH Capability (40%)
 📊 Coverage: 92% (116 tests)

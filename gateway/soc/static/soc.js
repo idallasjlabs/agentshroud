@@ -9,6 +9,8 @@ let _ws = null;
 let _wsStatus = 'disconnected';
 let _eventFeed = [];
 const MAX_FEED = 300;
+// M6: global bot selector state — '' means "All bots" (no filter)
+let _selectedBot = localStorage.getItem('agentshroud_selected_bot') || '';
 
 // ---------------------------------------------------------------------------
 // API helpers
@@ -224,7 +226,7 @@ async function _loadOverview() {
     _get('/security/risk'),
     _get('/users'),
     _get('/egress/pending'),
-    _get('/security/events?limit=50'),  // CC-02: seed events KPI + feed on load
+    _get(`/security/events?limit=50${_botParam('&')}`),  // CC-02: seed events KPI + feed on load
   ]);
   const health  = healthRes.data  || {};
   const risk    = riskRes.data    || {};
@@ -284,7 +286,7 @@ function _renderOverviewFeed() {
 
 async function _loadSecurity() {
   const [evRes, corrRes, riskRes] = await Promise.all([
-    _get('/security/events?limit=100'),
+    _get(`/security/events?limit=100${_botParam('&')}`),
     _get('/security/correlation'),
     _get('/security/risk'),
   ]);
@@ -383,7 +385,7 @@ const SCANNER_INFO = {
 
 async function _loadScanners() {
   const [scannersRes, sbomRes] = await Promise.all([
-    _get('/scanners'),
+    _get(`/scanners${_botParam('?')}`),
     _get('/sbom'),
   ]);
   _renderScanners(scannersRes.data?.scanners ?? scannersRes.data);
@@ -598,7 +600,7 @@ const MATURITY_DESC = {
 };
 
 async function _loadScorecard() {
-  const { data } = await _get('/scorecard');
+  const { data } = await _get(`/scorecard${_botParam('?')}`);
   _renderScorecard(data);
 }
 
@@ -652,7 +654,7 @@ window._reloadScorecard = _loadScorecard;
 // ---------------------------------------------------------------------------
 
 async function _loadServices() {
-  const { data: services } = await _get('/services');
+  const { data: services } = await _get(`/services${_botParam('?')}`);
   _renderServices(services);
   _setText('services-updated', `Updated ${new Date().toLocaleTimeString()}`);
 }
@@ -930,6 +932,7 @@ window._loadActivityLog = async function() {
   const direction = dirEl  ? dirEl.value  : '';
 
   let url = '/collaborators/activity?limit=0';
+  if (_selectedBot) url += `&bot_id=${encodeURIComponent(_selectedBot)}`;
   if (userId)    url += `&user_id=${encodeURIComponent(userId)}`;
   if (direction === 'owner') {
     url += '&is_owner=true';
@@ -1339,9 +1342,9 @@ window._submitDeleteGroup = function() {
 
 async function _loadEgress() {
   const [pendingRes, rulesRes, histRes] = await Promise.all([
-    _get('/egress/pending'),
+    _get(`/egress/pending${_botParam('?')}`),
     _get('/egress/rules'),
-    _get('/egress/history?limit=50'),
+    _get(`/egress/history?limit=50${_botParam('&')}`),
   ]);
   _renderPendingEgress(pendingRes.data);
   _renderEgressRules(rulesRes.data);
@@ -1582,7 +1585,7 @@ window._clearLogs = function() {
 
 async function _loadConfig() {
   // CC-44: structured config view instead of raw JSON dump
-  const { data: cfg } = await _get('/config');
+  const { data: cfg } = await _get(`/config${_botParam('?')}`);
   const el = document.getElementById('config-view');
   if (el && cfg) {
     const rows = [
@@ -1710,6 +1713,59 @@ function _initTheme() {
   });
 }
 
+// ---------------------------------------------------------------------------
+// M6: Bot selector — fetches /bots, populates <select id="bot-selector">,
+// hides it when only 1 bot is registered, saves selection to localStorage.
+// ---------------------------------------------------------------------------
+
+async function _initBotSelector() {
+  const sel = document.getElementById('bot-selector');
+  if (!sel) return;
+  try {
+    const resp = await fetch(`${SOC_BASE}/bots`, {
+      headers: { 'Authorization': `Bearer ${_token}` },
+    });
+    if (!resp.ok) return;
+    const bots = await resp.json().catch(() => []);
+    if (!Array.isArray(bots) || bots.length === 0) return;
+
+    // Hide selector when there is only one bot — no useful choice to make
+    if (bots.length <= 1) {
+      sel.style.display = 'none';
+      return;
+    }
+
+    // Populate options (keep the "All bots" option at index 0)
+    sel.innerHTML = '<option value="">All bots</option>' +
+      bots.map(b => {
+        const selected = _selectedBot === b.id ? ' selected' : '';
+        return `<option value="${_esc(b.id)}"${selected}>${_esc(b.name)}</option>`;
+      }).join('');
+
+    sel.style.display = '';
+
+    sel.addEventListener('change', () => {
+      _selectedBot = sel.value;
+      if (_selectedBot) {
+        localStorage.setItem('agentshroud_selected_bot', _selectedBot);
+      } else {
+        localStorage.removeItem('agentshroud_selected_bot');
+      }
+      // Re-run the active tab's loader so all data refreshes with the new filter
+      _showTab(_currentTab);
+    });
+  } catch (err) {
+    // Non-fatal — selector simply remains hidden
+  }
+}
+
+// Helper: return ?bot_id=X or &bot_id=X when a bot is selected, else ''
+function _botParam(prefix) {
+  if (!_selectedBot) return '';
+  const sep = prefix === '?' ? '?' : '&';
+  return `${sep}bot_id=${encodeURIComponent(_selectedBot)}`;
+}
+
 document.addEventListener('DOMContentLoaded', async () => {
   _initTheme();
 
@@ -1725,6 +1781,9 @@ document.addEventListener('DOMContentLoaded', async () => {
   if (await _needsAuth()) {
     await _showLoginModal();
   }
+
+  // M6: init bot selector after auth so the /bots fetch is authenticated
+  await _initBotSelector();
 
   // Register tab loaders
   _registerTab('overview',     _loadOverview);
@@ -1744,7 +1803,7 @@ window._trivyCveData = null;
 
 async function _loadAgentCves() {
   const [agentRes, trivyRes] = await Promise.all([
-    _get('/agent-cves'),
+    _get(`/agent-cves${_botParam('?')}`),
     _get('/trivy'),
   ]);
 

@@ -54,7 +54,11 @@ C4Container
     System_Boundary(agentshroud, "AgentShroud (Docker Compose — macOS host)") {
         Container(gateway, "Gateway", "Python 3.11 / FastAPI", "REST :8080 · CONNECT :8181\nOp-proxy · PII sanitizer\nApproval queue · MCP inspector\nAudit ledger · SSH proxy")
 
-        Container(bot, "AgentShroud Bot", "Node.js 22 / OpenClaw", "Autonomous AI agent :18789\nTelegram · iMessage · Email\n8 cron jobs · Browser control\nMCP server integration")
+        Container(bot, "OpenClaw Bot", "Node.js 22 / OpenClaw", "Autonomous AI agent :18789\nTelegram · iMessage · Email\n8 cron jobs · Browser control\nMCP server integration")
+
+        Container(hermes, "Hermes Agent", "Python 3.11 / nousresearch/hermes-agent", "OpenAI-compat API :8642\nDashboard :9119\nEgress via gateway HTTP proxy\nTelegram @agentshroud_hermes_bot")
+
+        Container(hci, "HCI", "Hermes Control Interface", "Basic-Auth gated :9121\nManagement UI for Hermes")
 
         ContainerDb(ledger_db, "Ledger DB", "SQLite (aiosqlite)", "Audit trail — SHA-256 hashes only\n90-day retention · ledger.db")
 
@@ -67,9 +71,13 @@ C4Container
     System_Ext(op, "1Password", "Credential vault")
 
     Rel(isaiah, bot, "Messages via", "Telegram / iMessage / WebUI")
+    Rel(isaiah, hermes, "Messages via", "Telegram @agentshroud_hermes_bot")
+    Rel(isaiah, hci, "Manages Hermes via", "HTTP :9121 (Basic-Auth)")
     Rel(bot, gateway, "All outbound traffic via", "HTTP CONNECT proxy :8181")
     Rel(bot, gateway, "MCP tool calls via", "HTTP :8080/proxy/mcp")
     Rel(bot, gateway, "Reads secrets via", "HTTP :8080/credentials/op-proxy")
+    Rel(hermes, gateway, "All outbound traffic via", "HTTP_PROXY=gateway:8181")
+    Rel(hci, hermes, "Controls via", "HTTP :8642")
     Rel(gateway, ledger_db, "Writes audit entries to", "aiosqlite")
     Rel(gateway, approval_db, "Reads/writes approvals to", "aiosqlite")
     Rel(gateway, op, "Reads secrets from", "HTTPS (service account)")
@@ -133,11 +141,12 @@ graph TB
         end
     end
 
-    BOT["Bot Container"] -->|"POST /ingest"| AUTH
+    BOT["OpenClaw Bot Container\n(agentshroud-bot :18789)"] -->|"POST /ingest"| AUTH
     BOT -->|"CONNECT host:port"| HTTP_PROXY
     BOT -->|"POST /proxy/mcp/call"| MCP_PROXY
     BOT -->|"POST /credentials/op-proxy"| OP
     BOT -->|"POST /ssh/exec"| SSH
+    HERMES["Hermes Agent Container\n(agentshroud-hermes :8642)"] -->|"CONNECT host:port"| HTTP_PROXY
 
     AUTH --> ROUTER
     ROUTER --> SANITIZER

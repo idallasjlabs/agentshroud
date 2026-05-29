@@ -13,10 +13,14 @@
 #   4. prompt         — write directly to secret files (no credential store)
 #
 # Usage:
-#   ./setup-secrets.sh            # interactive, writes files directly (legacy)
-#   ./setup-secrets.sh store      # store all secrets in credential backend
-#   ./setup-secrets.sh extract    # write secret files from credential backend
-#   ./setup-secrets.sh help       # show this message
+#   ./setup-secrets.sh                         # interactive, writes files directly (legacy)
+#   ./setup-secrets.sh store                   # store ALL secrets in credential backend
+#   ./setup-secrets.sh store --bot openclaw    # store only OpenClaw + shared secrets
+#   ./setup-secrets.sh store --bot hermes      # store only Hermes + shared secrets
+#   ./setup-secrets.sh extract                 # write ALL secret files from credential backend
+#   ./setup-secrets.sh extract --bot openclaw  # write only OpenClaw + shared secret files
+#   ./setup-secrets.sh extract --bot hermes    # write only Hermes + shared secret files
+#   ./setup-secrets.sh help                    # show this message
 
 set -euo pipefail
 
@@ -183,24 +187,51 @@ read_secret_plain() {
 }
 
 # ── Secret definitions ─────────────────────────────────────────────────────────
-# Format: "name|prompt|masked|optional"
+# Format: "name|prompt|masked|optional|bot"
 # masked:   yes = mask input with asterisks
 # optional: yes = skip if empty (Enter to skip)
+# bot:      all      = applies to all bots (shared infrastructure)
+#           openclaw = applies only to OpenClaw
+#           hermes   = applies only to Hermes
+#
+# Use --bot openclaw or --bot hermes with store/extract to limit the operation
+# to a single bot's secrets plus all shared ("all") secrets.
 declare -a SECRET_DEFS=(
-    "anthropic_oauth_token|Claude OAuth token (sk-ant-oat01-...)|yes|no"
-    "openai_api_key|OpenAI API key|yes|yes"
-    "google_api_key|Google API key|yes|yes"
-    "1password_bot_email|1Password account email|no|yes"
-    "1password_bot_master_password|1Password master password|yes|yes"
-    "1password_bot_secret_key|1Password secret key (A3-...)|yes|yes"
-    "telegram_bot_token_production|Telegram bot token (production)|yes|no"
-    "telegram_bot_token_marvin|Telegram bot token (marvin dev)|yes|yes"
-    "telegram_bot_token_trillian|Telegram bot token (trillian dev)|yes|yes"
-    "telegram_bot_token_rpi|Telegram bot token (rpi dev)|yes|yes"
-    "slack_bot_token|Slack bot token (xoxb-...)|yes|yes"
-    "slack_signing_secret|Slack signing secret|yes|yes"
-    "slack_app_token|Slack app token (xapp-...)|yes|yes"
+    "anthropic_oauth_token|Claude OAuth token (sk-ant-oat01-...)|yes|no|all"
+    "openai_api_key|OpenAI API key|yes|yes|all"
+    "google_api_key|Google API key|yes|yes|all"
+    "1password_bot_email|1Password account email|no|yes|all"
+    "1password_bot_master_password|1Password master password|yes|yes|all"
+    "1password_bot_secret_key|1Password secret key (A3-...)|yes|yes|all"
+    "telegram_bot_token_production|Telegram bot token (production, OpenClaw)|yes|no|openclaw"
+    "telegram_bot_token_marvin|Telegram bot token (marvin dev, OpenClaw)|yes|yes|openclaw"
+    "telegram_bot_token_trillian|Telegram bot token (trillian dev, OpenClaw)|yes|yes|openclaw"
+    "telegram_bot_token_rpi|Telegram bot token (rpi dev, OpenClaw)|yes|yes|openclaw"
+    "slack_bot_token|OpenClaw Slack bot token (xoxb-...)|yes|yes|openclaw"
+    "slack_signing_secret|OpenClaw Slack signing secret|yes|yes|openclaw"
+    "slack_app_token|OpenClaw Slack app token (xapp-...)|yes|yes|openclaw"
+    # Hermes Agent secrets (v1.1.0 — second bot)
+    "hermes_telegram_bot_token|Hermes Telegram bot token (@agentshroud_hermes_bot)|yes|yes|hermes"
+    "slack_bot_token_hermes|Hermes Slack bot token (xoxb-...)|yes|yes|hermes"
+    "slack_app_token_hermes|Hermes Slack app token (xapp-...)|yes|yes|hermes"
+    "brave_api_key|Brave Search API key (shared with all bots)|yes|yes|all"
+    "hermes_api_key|Hermes OpenAI API server key (random hex)|yes|yes|hermes"
+    "github_pat|GitHub Personal Access Token (for Hermes GitHub MCP)|yes|yes|hermes"
 )
+
+# ── Bot filter helper ──────────────────────────────────────────────────────────
+# Returns 0 (include) if the secret's bot tag matches the requested bot filter.
+# BOT_FILTER="" or "all" → include everything.
+# BOT_FILTER="openclaw" → include "openclaw" and "all" secrets.
+# BOT_FILTER="hermes"   → include "hermes" and "all" secrets.
+secret_matches_bot_filter() {
+    local secret_bot="$1"
+    local filter="${BOT_FILTER:-all}"
+    [[ "$filter" == "all" ]] && return 0
+    [[ "$secret_bot" == "all" ]] && return 0
+    [[ "$secret_bot" == "$filter" ]] && return 0
+    return 1
+}
 
 # ── gateway_password is auto-generated — not prompted ─────────────────────────
 generate_gateway_password() {
@@ -209,9 +240,11 @@ generate_gateway_password() {
 
 # ── Subcommands ────────────────────────────────────────────────────────────────
 cmd_store() {
+    local bot_label="${BOT_FILTER:-all}"
     echo "╔═══════════════════════════════════════════╗"
     echo "║  AgentShroud — Store Secrets               ║"
     echo "║  Backend: ${BACKEND}$(printf '%*s' $((27 - ${#BACKEND})) '')║"
+    [[ "$bot_label" != "all" ]] && echo "║  Bot filter: ${bot_label}$(printf '%*s' $((27 - ${#bot_label})) '')║"
     echo "╚═══════════════════════════════════════════╝"
     echo ""
 
@@ -221,7 +254,9 @@ cmd_store() {
     echo "  [stored] gateway_password (auto-generated)"
 
     for def in "${SECRET_DEFS[@]}"; do
-        IFS='|' read -r name prompt masked optional <<< "$def"
+        IFS='|' read -r name prompt masked optional secret_bot <<< "$def"
+        # Skip secrets that don't match the bot filter
+        secret_matches_bot_filter "${secret_bot:-all}" || continue
         if [[ "$masked" == "yes" ]]; then
             value="$(read_secret_masked "$prompt" "$optional")"
         else
@@ -241,9 +276,11 @@ cmd_store() {
 }
 
 cmd_extract() {
+    local bot_label="${BOT_FILTER:-all}"
     echo "╔═══════════════════════════════════════════╗"
     echo "║  AgentShroud — Extract Secrets             ║"
     echo "║  Backend: ${BACKEND}$(printf '%*s' $((27 - ${#BACKEND})) '')║"
+    [[ "$bot_label" != "all" ]] && echo "║  Bot filter: ${bot_label}$(printf '%*s' $((27 - ${#bot_label})) '')║"
     echo "╚═══════════════════════════════════════════╝"
     echo ""
 
@@ -252,7 +289,8 @@ cmd_extract() {
     # Build list of (name, optional) pairs. gateway_password is always required.
     declare -a extract_defs=("gateway_password|no")
     for def in "${SECRET_DEFS[@]}"; do
-        IFS='|' read -r name _ _ optional <<< "$def"
+        IFS='|' read -r name _ _ optional secret_bot <<< "$def"
+        secret_matches_bot_filter "${secret_bot:-all}" || continue
         extract_defs+=("${name}|${optional}")
     done
 
@@ -348,10 +386,19 @@ cmd_help() {
 setup-secrets.sh — Docker secrets manager for AgentShroud
 
 Usage:
-  ./setup-secrets.sh              Interactive mode: prompt and write secret files directly
-  ./setup-secrets.sh store        Store all secrets in credential backend
-  ./setup-secrets.sh extract      Extract secrets from backend → docker/secrets/*.txt
-  ./setup-secrets.sh help         Show this message
+  ./setup-secrets.sh                         Interactive mode: prompt and write files directly
+  ./setup-secrets.sh store                   Store ALL secrets in credential backend
+  ./setup-secrets.sh store --bot openclaw    Store only OpenClaw + shared secrets
+  ./setup-secrets.sh store --bot hermes      Store only Hermes + shared secrets
+  ./setup-secrets.sh extract                 Extract ALL secrets → docker/secrets/*.txt
+  ./setup-secrets.sh extract --bot openclaw  Extract only OpenClaw + shared secret files
+  ./setup-secrets.sh extract --bot hermes    Extract only Hermes + shared secret files
+  ./setup-secrets.sh help                    Show this message
+
+Bot values for --bot flag:
+  openclaw   OpenClaw (primary bot) secrets only + shared infra secrets
+  hermes     Hermes agent secrets only + shared infra secrets
+  all        All secrets (default when --bot is omitted)
 
 Credential backend hierarchy (auto-detected, or set AGENTSHROUD_SECRET_BACKEND):
   1password    1Password CLI (cross-platform, team-friendly) — requires: op CLI + signed-in account
@@ -359,10 +406,15 @@ Credential backend hierarchy (auto-detected, or set AGENTSHROUD_SECRET_BACKEND):
   secretstore  Linux secret-tool (libsecret)                 — Linux only
   prompt       Write directly to secret files                — always available fallback
 
-Typical first-time setup:
+Typical first-time setup (all bots):
   1. ./setup-secrets.sh store      # enter secrets once; stored securely
   2. ./setup-secrets.sh extract    # write *.txt files Docker mounts need
   3. docker compose -f docker/docker-compose.yml up -d
+
+First-time setup for Hermes only (already have OpenClaw running):
+  1. ./setup-secrets.sh store --bot hermes
+  2. ./setup-secrets.sh extract --bot hermes
+  3. docker compose -f docker/docker-compose.yml --profile hermes up -d hermes
 
 On a new machine (secrets already stored in 1Password/Keychain):
   1. ./setup-secrets.sh extract    # pull from backend → local files
@@ -375,6 +427,34 @@ EOF
 
 # ── Dispatch ───────────────────────────────────────────────────────────────────
 SUBCOMMAND="${1:-}"
+shift || true  # consume subcommand; remaining args parsed below
+
+# Parse optional --bot flag for store/extract subcommands.
+# Exported as BOT_FILTER so helper functions can read it.
+BOT_FILTER="all"
+while [[ $# -gt 0 ]]; do
+    case "$1" in
+        --bot)
+            shift
+            BOT_FILTER="${1:-all}"
+            case "$BOT_FILTER" in
+                openclaw|hermes|all) ;;
+                *)
+                    echo "Invalid --bot value: '$BOT_FILTER'. Use: openclaw, hermes, all" >&2
+                    exit 1
+                    ;;
+            esac
+            shift
+            ;;
+        *)
+            echo "Unknown argument: $1" >&2
+            echo "Run './setup-secrets.sh help' for usage." >&2
+            exit 1
+            ;;
+    esac
+done
+export BOT_FILTER
+
 case "$SUBCOMMAND" in
     store)   cmd_store ;;
     extract) cmd_extract ;;

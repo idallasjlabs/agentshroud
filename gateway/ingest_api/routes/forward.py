@@ -17,10 +17,9 @@ from email.mime.text import MIMEText
 from pathlib import Path
 from typing import Annotated
 
-from pydantic import BaseModel, Field
-
 from fastapi import APIRouter, Depends, HTTPException, Request, status
 from fastapi.responses import JSONResponse
+from pydantic import BaseModel, Field
 
 from ...proxy.webhook_receiver import WebhookReceiver
 from ..auth import create_auth_dependency
@@ -58,7 +57,9 @@ def _get_gmail_app_password() -> "str | None":
     def _run(sess: str) -> "subprocess.CompletedProcess[str]":
         return subprocess.run(
             ["op", "read", "--session", sess, _EMAIL_OP_REF],
-            capture_output=True, text=True, timeout=30,
+            capture_output=True,
+            text=True,
+            timeout=30,
         )
 
     result = _run(session) if session else None
@@ -73,23 +74,44 @@ def _get_gmail_app_password() -> "str | None":
             return None
         if key:
             r = subprocess.run(
-                ["op", "account", "add", "--address", "my.1password.com",
-                 "--email", email, "--secret-key", key, "--signin", "--raw"],
-                input=password, capture_output=True, text=True, timeout=30,
+                [
+                    "op",
+                    "account",
+                    "add",
+                    "--address",
+                    "my.1password.com",
+                    "--email",
+                    email,
+                    "--secret-key",
+                    key,
+                    "--signin",
+                    "--raw",
+                ],
+                input=password,
+                capture_output=True,
+                text=True,
+                timeout=30,
             )
             if r.returncode == 0 and r.stdout.strip():
                 os.environ["OP_SESSION"] = r.stdout.strip()
                 result = _run(r.stdout.strip())
         if not result or result.returncode != 0:
             r = subprocess.run(
-                ["op", "signin", "--raw"], input=password,
-                capture_output=True, text=True, timeout=30,
+                ["op", "signin", "--raw"],
+                input=password,
+                capture_output=True,
+                text=True,
+                timeout=30,
             )
             if r.returncode == 0 and r.stdout.strip():
                 os.environ["OP_SESSION"] = r.stdout.strip()
                 result = _run(r.stdout.strip())
 
-    return result.stdout.strip() if result and result.returncode == 0 and result.stdout.strip() else None
+    return (
+        result.stdout.strip()
+        if result and result.returncode == 0 and result.stdout.strip()
+        else None
+    )
 
 
 # Authentication dependency
@@ -169,7 +191,9 @@ async def email_send(request: EmailSendRequest, req: Request, auth: AuthRequired
             sanitized_body = scan.sanitized_content
             pii_redacted = len(scan.redactions) > 0
             if pii_redacted:
-                logger.warning("email-send: PII redacted from body (%d items)", len(scan.redactions))
+                logger.warning(
+                    "email-send: PII redacted from body (%d items)", len(scan.redactions)
+                )
         except Exception as e:
             logger.warning("email-send: PII scan failed (%s), proceeding with original body", e)
 
@@ -310,10 +334,25 @@ async def forward_content(request: ForwardRequest, req: Request, auth: AuthRequi
         f"type={request.content_type}, size={len(request.content)}"
     )
 
+    # Resolve routing target before the security pipeline so the correct bot's
+    # agent_id flows into TrustManager, EgressFilter, and audit logs.
+    try:
+        target = await app_state.router.resolve_target(request)
+    except Exception as e:
+        logger.error(f"Routing failed: {e}")
+        raise HTTPException(
+            status_code=status.HTTP_500_INTERNAL_SERVER_ERROR,
+            detail="Failed to resolve routing target",
+        )
+
     # Step 0: P1 Middleware Security Processing
     middleware_manager = getattr(app_state, "middleware_manager", None)
     if middleware_manager:
         try:
+            # bot_id: use the routing target's logical name (e.g. "openclaw", "hermes")
+            # so that session isolation and audit logs are scoped per-bot.
+            bot_id = getattr(target, "name", "openclaw") or "openclaw"
+
             # Prepare request data for middleware processing
             request_data = {
                 "message": request.content,
@@ -322,10 +361,13 @@ async def forward_content(request: ForwardRequest, req: Request, auth: AuthRequi
                 "headers": {},  # Add headers if available in request
                 "user_id": getattr(request, "user_id", None)
                 or getattr(request, "source", "anonymous"),
+                # bot_id scopes the session workspace and audit log entry to the
+                # correct bot so that OpenClaw and Hermes data never merge.
+                "bot_id": bot_id,
             }
 
             # Process through middleware
-            middleware_result = await middleware_manager.process_request(request_data, "unknown")
+            middleware_result = await middleware_manager.process_request(request_data, bot_id)
 
             if not middleware_result.allowed:
                 logger.warning(f"Middleware blocked request: {middleware_result.reason}")
@@ -362,7 +404,7 @@ async def forward_content(request: ForwardRequest, req: Request, auth: AuthRequi
         try:
             pipeline_result = await pipeline.process_inbound(
                 message=request.content,
-                agent_id="default",
+                agent_id=target.name,
                 action="send_message",
                 source=request.source,
             )
@@ -408,15 +450,7 @@ async def forward_content(request: ForwardRequest, req: Request, auth: AuthRequi
         entity_types_found = sanitization_result.entity_types_found
         redaction_count = len(sanitization_result.redactions)
 
-    # Step 2: Resolve routing target
-    try:
-        target = await app_state.router.resolve_target(request)
-    except Exception as e:
-        logger.error(f"Routing failed: {e}")
-        raise HTTPException(
-            status_code=status.HTTP_500_INTERNAL_SERVER_ERROR,
-            detail="Failed to resolve routing target",
-        )
+    # Step 2 (routing target already resolved above)
 
     # Step 3: Forward to agent
     forwarded_to = target.name
@@ -509,7 +543,7 @@ async def forward_content(request: ForwardRequest, req: Request, auth: AuthRequi
             # Get user trust level for outbound filtering
             user_trust_level = "UNTRUSTED"
             if pipeline.trust_manager:
-                trust_info = pipeline.trust_manager.get_trust("default")
+                trust_info = pipeline.trust_manager.get_trust(target.name)
                 if trust_info:
                     trust_score = trust_info[0]
                     if trust_score >= 400:
@@ -523,7 +557,7 @@ async def forward_content(request: ForwardRequest, req: Request, auth: AuthRequi
 
             out_result = await pipeline.process_outbound(
                 response=agent_response,
-                agent_id="default",
+                agent_id=target.name,
                 user_trust_level=user_trust_level,
                 source=request.source,
             )

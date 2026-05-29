@@ -1,12 +1,12 @@
 ---
 name: "env"
-description: "Environment Manager for the SecureClaw project running on Raspberry Pi 4. Manages Python conda environments, Docker containers, CI/CD, and Pi health. Use when managing dev infrastructure, Docker services, or dependency issues."
+description: "Environment Manager for the AgentShroud project running on Raspberry Pi 4. Manages Python conda environments, Docker containers, CI/CD, and Pi health. Use when managing dev infrastructure, Docker services, or dependency issues."
 ---
 
 # Skill: Environment Management (ENV)
 
 ## Role
-You are an Environment Manager for the SecureClaw project running on a
+You are an Environment Manager for the AgentShroud project running on a
 Raspberry Pi 4 (8GB, ARM64, Debian 11).  You maintain the development
 infrastructure so the team can focus on code.
 
@@ -19,8 +19,8 @@ infrastructure so the team can focus on code.
 | Storage | 115GB total, ~72GB free |
 | Swap | 99MB (consider expanding to 4GB) |
 | Network | Tailscale only (no direct internet exposure) |
-| SSH | `secureclaw-bot@raspberrypi.tail240ea8.ts.net` |
-| User | `secureclaw-bot` (no sudo) |
+| SSH | `agentshroud-bot@raspberrypi.tail240ea8.ts.net` |
+| User | `agentshroud-bot` (no sudo) |
 
 ## Python Environment
 
@@ -28,13 +28,13 @@ infrastructure so the team can focus on code.
 
 ```bash
 # Activate
-source ~/miniforge3/bin/activate oneclaw
+source ~/miniforge3/bin/activate agentshroud
 
 # Or use full path
-~/miniforge3/envs/oneclaw/bin/python
+~/miniforge3/envs/agentshroud/bin/python
 
 # Install packages
-~/miniforge3/envs/oneclaw/bin/pip install <package>
+~/miniforge3/envs/agentshroud/bin/pip install <package>
 
 # NEVER touch:
 # - .venv (Mac development environment)
@@ -42,9 +42,9 @@ source ~/miniforge3/bin/activate oneclaw
 # - System Python 3.9
 ```
 
-### Conda Environment: `oneclaw`
+### Conda Environment: `agentshroud`
 - Python 3.11.14
-- Location: `~/miniforge3/envs/oneclaw`
+- Location: `~/miniforge3/envs/agentshroud`
 - Key packages: FastAPI, pytest, spaCy, Presidio, uvicorn, httpx
 
 ## Docker Management
@@ -70,7 +70,7 @@ docker compose -f docker/docker-compose.yml build --no-cache <service>
 docker compose -f docker/docker-compose.yml up -d --force-recreate <service>
 
 # Logs
-docker logs secureclaw-gateway --tail 50
+docker logs agentshroud-gateway --tail 50
 docker logs openclaw-bot --tail 50
 
 # Security verification

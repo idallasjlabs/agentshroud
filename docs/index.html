@@ -248,7 +248,9 @@
     <ul>
       <li><a href="#features">Features</a></li>
       <li><a href="#layers">Architecture</a></li>
+      <li><a href="#hermes">Hermes</a></li>
       <li><a href="#cves">CVEs</a></li>
+      <li><a href="#cves-hermes">Hermes CVEs</a></li>
       <li><a href="#quickstart">Quickstart</a></li>
       <li><a href="https://github.com/idallasjlabs/agentshroud" class="nav-cta">GitHub</a></li>
     </ul>
@@ -401,6 +403,49 @@
         </tr>
       </tbody>
     </table>
+  </div>
+</section>
+
+<!-- ── Hermes Agent ───────────────────────────────────────────── -->
+<section id="hermes">
+  <div class="container">
+    <div class="section-label">Second Bot</div>
+    <h2>Hermes Agent</h2>
+    <p class="section-sub">Hermes is the second AgentShroud-secured autonomous AI agent — Python-based, built on <code>nousresearch/hermes-agent</code>. It runs alongside OpenClaw inside the same 76-module governance envelope, fully isolated on the <code>agentshroud-isolated</code> network with all LLM and egress traffic routed through the gateway.</p>
+
+    <div class="feature-grid">
+      <div class="feature-card">
+        <div class="feature-icon">🤖</div>
+        <h3>Capabilities</h3>
+        <p>Telegram, Slack, Brave web search, web fetch, cron scheduling, subagent personas, and native MCP (Model Context Protocol) server integrations — all policy-enforced at the gateway.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">🔒</div>
+        <h3>Security Posture</h3>
+        <p>All Hermes egress routes via <code>gateway:8181</code> (HTTP CONNECT proxy). All LLM calls route via <code>gateway:8080</code>. Same 76-module pipeline as OpenClaw — no bypass path exists at the container level.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">🌐</div>
+        <h3>OpenAI-Compatible API</h3>
+        <p>Exposes an OpenAI-compatible API on port 8642. Any tool or client that speaks the OpenAI chat completions format can connect to Hermes through the gateway's credential-injection and audit layer.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">🖥️</div>
+        <h3>HCI Admin UI</h3>
+        <p>Built-in admin dashboard on port 9121 (published at <code>127.0.0.1:9121</code> on marvin). Access is gateway-auth-gated — unauthenticated requests are blocked before reaching the Hermes process.</p>
+      </div>
+    </div>
+
+    <div class="code-block" style="margin-top: 32px;">
+      <div class="header">Connect to Hermes API — base URL</div>
+      <pre><span class="cm"># OpenAI-compatible endpoint (requires gateway auth token)</span>
+<span class="kw">base_url</span> = <span class="st">"https://marvin.tail240ea8.ts.net:8642/v1"</span>
+
+<span class="cm"># Health check</span>
+curl https://marvin.tail240ea8.ts.net:8642/health
+
+<span class="cm"># Full setup guide: docs/setup/HERMES_SETUP.md</span></pre>
+    </div>
   </div>
 </section>
 
@@ -2205,15 +2250,15 @@
       </tbody>
     </table>
     <div class="cve-pagination">
-      <button id="pg-first" onclick="cvePg(1)" title="First page">&#171;</button>
-      <button id="pg-prev" onclick="cvePg(_pgCur-1)" title="Previous page">&#8249;</button>
+      <button id="pg-first" onclick="_pgPg(1)" title="First page">&#171;</button>
+      <button id="pg-prev" onclick="_pgPg(_pgCur-1)" title="Previous page">&#8249;</button>
       <span class="pg-label">Page</span>
       <input type="number" id="pg-input" min="1" value="1"
-             onchange="cvePg(parseInt(this.value)||1)"
-             onkeydown="if(event.key==='Enter')cvePg(parseInt(this.value)||1)">
+             onchange="_pgPg(parseInt(this.value)||1)"
+             onkeydown="if(event.key==='Enter')_pgPg(parseInt(this.value)||1)">
       <span class="pg-label" id="pg-of-label">of 1</span>
-      <button id="pg-next" onclick="cvePg(_pgCur+1)" title="Next page">&#8250;</button>
-      <button id="pg-last" onclick="cvePg(_pgTotal)" title="Last page">&#187;</button>
+      <button id="pg-next" onclick="_pgPg(_pgCur+1)" title="Next page">&#8250;</button>
+      <button id="pg-last" onclick="_pgPg(_pgTotal)" title="Last page">&#187;</button>
     </div>
     <script>
     (function(){
@@ -2224,7 +2269,7 @@
       window._pgTotal=Math.ceil(total/ROWS)||1;
       document.getElementById('pg-of-label').textContent='of '+window._pgTotal;
       document.getElementById('pg-input').max=window._pgTotal;
-      window.cvePg=function(n){
+      window._pgPg=function(n){
         n=Math.max(1,Math.min(n,window._pgTotal));
         window._pgCur=n;
         var start=(n-1)*ROWS,end=start+ROWS;
@@ -2235,12 +2280,135 @@
         document.getElementById('pg-next').disabled=(n===window._pgTotal);
         document.getElementById('pg-last').disabled=(n===window._pgTotal);
       };
-      window.cvePg(1);
+      window._pgPg(1);
     })();
     </script>
     <!-- CVE_TABLE_END -->
   </div>
 </section>
+
+<!-- ── Hermes CVE section ─────────────────────────────────────── -->
+<section id="cves-hermes">
+  <div class="container">
+    <div class="section-label">CVE Registry — Hermes Agent</div>
+    <!-- HERMES_CVE_HEADING_START -->
+    <h2>7 Hermes Agent CVEs — 4 mitigated, 3 partial</h2>
+    <p class="section-sub">All CVEs disclosed in Hermes Agent (March–April 2026) are documented and tracked by AgentShroud’s defense-in-depth architecture.</p>
+    <!-- HERMES_CVE_HEADING_END -->
+    <!-- HERMES_CVE_TABLE_START -->
+    <style>
+      .badge-low { color: #6ee7b7; font-weight: 700; }
+      .cve-pagination {
+        display: flex; align-items: center; justify-content: center;
+        gap: 6px; margin: 18px 0 8px; flex-wrap: wrap;
+      }
+      .cve-pagination button {
+        background: rgba(21,131,240,0.12); border: 1px solid rgba(21,131,240,0.3);
+        color: var(--fg); padding: 4px 10px; border-radius: 6px; cursor: pointer;
+        font-size: 0.85rem; transition: background 0.15s;
+      }
+      .cve-pagination button:hover:not(:disabled) { background: rgba(21,131,240,0.25); }
+      .cve-pagination button:disabled { opacity: 0.35; cursor: default; }
+      .cve-pagination .pg-label { color: var(--muted); font-size: 0.85rem; padding: 0 4px; }
+      .cve-pagination input[type=number] {
+        width: 52px; padding: 3px 6px; border-radius: 6px;
+        border: 1px solid rgba(21,131,240,0.3);
+        background: rgba(21,131,240,0.08); color: var(--fg);
+        font-size: 0.85rem; text-align: center;
+      }
+    </style>
+    <table class="cve-table">
+      <thead>
+        <tr>
+          <th>CVE</th>
+          <th>CVSS</th>
+          <th>Title</th>
+          <th>Status</th>
+        </tr>
+      </thead>
+      <tbody id="cve-tbody-hermes">
+        <tr>
+          <td class="cve-id"><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-9367" target="_blank" rel="noopener">CVE-2026-9367</a></td>
+          <td class="badge-high">8.1 HIGH</td>
+          <td>OS Command Injection in terminal_tool approval.py detect_dangerous_command</td>
+          <td class="badge-partial">⚠ Partial</td>
+        </tr>
+        <tr>
+          <td class="cve-id"><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-9352" target="_blank" rel="noopener">CVE-2026-9352</a></td>
+          <td class="badge-high">6.1 HIGH</td>
+          <td>Information Disclosure via _make_run_env in local.py</td>
+          <td class="badge-partial">⚠ Partial</td>
+        </tr>
+        <tr>
+          <td class="cve-id"><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-6829" target="_blank" rel="noopener">CVE-2026-6829</a></td>
+          <td class="badge-med">5.3 MEDIUM</td>
+          <td>WebUI Path Traversal via Workspace Path Manipulation</td>
+          <td class="badge-partial">⚠ Partial</td>
+        </tr>
+        <tr>
+          <td class="cve-id"><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-7112" target="_blank" rel="noopener">CVE-2026-7112</a></td>
+          <td class="badge-med">5.6 MEDIUM</td>
+          <td>Missing Authentication on Hermes Agent API Endpoints (GHSA-r7hr-pvjh-r4p3)</td>
+          <td class="badge-ok">✓ Mitigated</td>
+        </tr>
+        <tr>
+          <td class="cve-id"><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-7113" target="_blank" rel="noopener">CVE-2026-7113</a></td>
+          <td class="badge-med">5.6 MEDIUM</td>
+          <td>Missing Authentication on Hermes Agent Management Endpoints</td>
+          <td class="badge-ok">✓ Mitigated</td>
+        </tr>
+        <tr>
+          <td class="cve-id"><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-7397" target="_blank" rel="noopener">CVE-2026-7397</a></td>
+          <td class="badge-med">4.8 MEDIUM</td>
+          <td>Symlink Following in File Tools _check_sensitive_path</td>
+          <td class="badge-ok">✓ Mitigated</td>
+        </tr>
+        <tr>
+          <td class="cve-id"><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-7396" target="_blank" rel="noopener">CVE-2026-7396</a></td>
+          <td class="badge-med">4.0 MEDIUM</td>
+          <td>Path Traversal in WeChat Work Adapter</td>
+          <td class="badge-ok">✓ Mitigated</td>
+        </tr>
+      </tbody>
+    </table>
+    <div class="cve-pagination">
+      <button id="hpg-first" onclick="_hpgPg(1)" title="First page">&#171;</button>
+      <button id="hpg-prev" onclick="_hpgPg(_hpgCur-1)" title="Previous page">&#8249;</button>
+      <span class="pg-label">Page</span>
+      <input type="number" id="hpg-input" min="1" value="1"
+             onchange="_hpgPg(parseInt(this.value)||1)"
+             onkeydown="if(event.key==='Enter')_hpgPg(parseInt(this.value)||1)">
+      <span class="pg-label" id="hpg-of-label">of 1</span>
+      <button id="hpg-next" onclick="_hpgPg(_hpgCur+1)" title="Next page">&#8250;</button>
+      <button id="hpg-last" onclick="_hpgPg(_hpgTotal)" title="Last page">&#187;</button>
+    </div>
+    <script>
+    (function(){
+      var ROWS=20;
+      var rows=Array.from(document.getElementById('cve-tbody-hermes').querySelectorAll('tr'));
+      var total=rows.length;
+      window._hpgCur=1;
+      window._hpgTotal=Math.ceil(total/ROWS)||1;
+      document.getElementById('hpg-of-label').textContent='of '+window._hpgTotal;
+      document.getElementById('hpg-input').max=window._hpgTotal;
+      window._hpgPg=function(n){
+        n=Math.max(1,Math.min(n,window._hpgTotal));
+        window._hpgCur=n;
+        var start=(n-1)*ROWS,end=start+ROWS;
+        rows.forEach(function(r,i){r.style.display=(i>=start&&i<end)?'':'none';});
+        document.getElementById('hpg-input').value=n;
+        document.getElementById('hpg-first').disabled=(n===1);
+        document.getElementById('hpg-prev').disabled=(n===1);
+        document.getElementById('hpg-next').disabled=(n===window._hpgTotal);
+        document.getElementById('hpg-last').disabled=(n===window._hpgTotal);
+      };
+      window._hpgPg(1);
+    })();
+    </script>
+    <!-- HERMES_CVE_TABLE_END -->
+  </div>
+</section>
+<!-- ── Hermes CVE section end ─────────────────────────────────── -->
 
 <!-- ── Compliance ─────────────────────────────────────────────── -->
 <section>

@@ -32,8 +32,15 @@ services:
     restart: unless-stopped
     stop_grace_period: "15s"
     ports:
-      - 127.0.0.1:8080:8080
-      - 127.0.0.1:18789:18789  # Canvas auth-proxy (CVE-2026-34871 — auth gate in front of bot:18789)
+      - 127.0.0.1:8080:8080    # Gateway API; tailscale serve → https://marvin.tail240ea8.ts.net:8080
+      - 127.0.0.1:18789:18789  # OpenClaw canvas auth-proxy (CVE-2026-34871); tailscale serve → :18789
+                               #   Security: auth-gated (gateway password). No pipeline scan —
+                               #   owner-facing UI, human→dashboard traffic, not agent output.
+      - 127.0.0.1:9119:9119    # Hermes dashboard TCP forwarder → agentshroud-hermes:9119; tailscale serve → :9119
+                               #   Security: no auth, no pipeline scan — tailnet-only (Tailscale ACL
+                               #   is the access control). Re-evaluate if exposed beyond tailnet.
+      - "127.0.0.1:8642:8642"  # Hermes OpenAI-compatible API TCP forwarder → agentshroud-hermes:8642
+      - "127.0.0.1:9121:9121"  # HCI auth-gated reverse proxy → agentshroud-hci:3000
     volumes:
       - ../agentshroud.yaml:/app/agentshroud.yaml:ro
       - agentshroud-ssh:/var/agentshroud-ssh:ro
@@ -50,6 +57,7 @@ services:
     secrets:
       - gateway_password
       - telegram_bot_token
+      - hermes_telegram_bot_token
       - slack_bot_token
       - slack_signing_secret
       - slack_app_token
@@ -59,6 +67,7 @@ services:
       - 1password_bot_email
       - 1password_bot_master_password
       - 1password_bot_secret_key
+      - hermes_api_key
     environment:
       - PYTHONUNBUFFERED=1
       - LOG_LEVEL=INFO
@@ -295,6 +304,127 @@ services:
       gateway:
         condition: service_healthy
 
+  # ── Hermes Agent (second bot — v1.1.0 bot-agnostic proof) ────────────────────
+  # AgentShroud™ Patent Pending — U.S. Provisional Application No. 64/018,744
+  # Hermes runs alongside OpenClaw on the same isolated network. All egress
+  # flows through gateway:8181 (HTTP_PROXY) so the same 76-module security
+  # pipeline applies regardless of bot runtime.
+  hermes:
+    # Profiles: start Hermes only when explicitly requested.
+    # `docker-compose --profile hermes up -d`  — Hermes only
+    # `docker-compose --profile full up -d`    — gateway + openclaw + hermes + hci
+    # `docker-compose up -d`                   — gateway + openclaw only (default)
+    profiles: [hermes, full]
+    image: agentshroud/hermes:${AGENTSHROUD_VERSION:-latest}
+    build:
+      context: ..
+      dockerfile: docker/bots/hermes/Dockerfile
+    container_name: agentshroud-hermes
+    hostname: agentshroud-hermes
+    restart: unless-stopped
+    depends_on:
+      gateway:
+        condition: service_healthy
+    networks:
+      - agentshroud-isolated      # no direct internet — all egress via gateway:8181
+    volumes:
+      - hermes-config:/opt/data
+      - gateway-data:/data/gateway:ro
+    secrets:
+      - hermes_telegram_bot_token
+      - slack_bot_token_hermes
+      - slack_app_token_hermes
+      - brave_api_key
+      - anthropic_oauth_token
+      - hermes_api_key
+      - github_pat
+    environment:
+      HTTP_PROXY: http://gateway:8181
+      HTTPS_PROXY: http://gateway:8181
+      # api.telegram.org in NO_PROXY makes resolve_proxy_url() return None for
+      # Telegram targets, so PTB gets no explicit proxy and httpx honours the
+      # env NO_PROXY=gateway rule — sending getMe/getUpdates directly to
+      # gateway:8080 (our Telegram proxy) instead of through EgressFilter:8181.
+      # Hermes never connects to api.telegram.org directly; EgressFilter still
+      # blocks any accidental direct Telegram egress at the network level.
+      NO_PROXY: gateway,agentshroud-hermes,api.telegram.org,127.0.0.1,localhost
+      ANTHROPIC_BASE_URL: http://gateway:8080
+      OPENAI_BASE_URL: http://gateway:8080
+      OLLAMA_BASE_URL: http://gateway:8080/v1
+      # Owner-only allow-list for v1.1.0 launch. Add collaborators after smoke tests pass.
+      TELEGRAM_ALLOWED_USERS: "8096968754"
+      TELEGRAM_HOME_CHANNEL: "8096968754"
+      # Disable fallback-IP transport: TelegramFallbackTransport bypasses our gateway
+      # by connecting directly to api.telegram.org's resolved IPs, causing 405 on our
+      # /telegram-api/bot{token}/{method} paths. With this disabled, PTB uses a plain
+      # HTTPXRequest that honours base_url → http://gateway:8080/telegram-api/bot.
+      HERMES_TELEGRAM_DISABLE_FALLBACK_IPS: "1"
+      HERMES_DASHBOARD: "1"
+      HERMES_DASHBOARD_HOST: "0.0.0.0"
+      HERMES_DASHBOARD_PORT: "9119"
+      AGENTSHROUD_BOT_ID: hermes
+    # Security note: nousresearch/hermes-agent uses s6-overlay which must start as root
+    # and drop to UID 10000 via s6-setuidgid. cap_drop: ALL and no-new-privileges break
+    # this. Primary security boundaries: agentshroud-isolated network + seccomp + resource limits.
+    security_opt:
+      - seccomp=./seccomp/agentshroud-seccomp.json
+    tmpfs:
+      - /tmp:size=128m,mode=1777
+    mem_limit: 3g
+    cpus: 1.5
+    pids_limit: 512
+    healthcheck:
+      # Dashboard port 9119 is served by the s6 dashboard service (HERMES_DASHBOARD=1).
+      # start_period=120s covers s6 init + skill sync + gateway startup.
+      test: ["CMD-SHELL", "curl -fsS http://127.0.0.1:9119/ -o /dev/null || exit 1"]
+      interval: 30s
+      timeout: 10s
+      start_period: 120s
+      retries: 3
+
+
+  # ── Hermes Control Interface (HCI) ────────────────────────────────────────────
+  # AgentShroud™ Patent Pending — U.S. Provisional Application No. 64/018,744
+  # HCI provides a web control interface for the Hermes Agent.
+  # Access is via the gateway's hci_proxy.py (port 9121) which enforces Basic Auth.
+  # HCI itself has no published ports — all access flows through the gateway proxy.
+  agentshroud-hci:
+    profiles: [hermes, full]
+    image: ghcr.io/xaspx/hermes-control-interface:latest
+    build:
+      context: ..
+      dockerfile: docker/bots/hci/Dockerfile
+    container_name: agentshroud-hci
+    hostname: hci
+    restart: unless-stopped
+    depends_on:
+      hermes:
+        condition: service_healthy
+    networks:
+      - agentshroud-isolated      # no direct internet — all egress via HTTP_PROXY
+    volumes:
+      - hermes-config:/opt/data:ro
+    secrets:
+      - hermes_api_key
+    environment:
+      HTTP_PROXY: http://gateway:8181
+      HTTPS_PROXY: http://gateway:8181
+      NO_PROXY: gateway,agentshroud-hermes,hci,127.0.0.1,localhost
+      ANTHROPIC_BASE_URL: http://gateway:8080
+      HERMES_API_URL: http://agentshroud-hermes:8642
+    read_only: true
+    tmpfs:
+      - /tmp:size=64m,mode=1777
+    mem_limit: 512m
+    cpus: 0.5
+    pids_limit: 128
+    logging:
+      driver: json-file
+      options:
+        max-size: "5m"
+        max-file: "3"
+
+
 
 # ── Secrets ────────────────────────────────────────────────────────────────────
 # `asb up/rebuild/clean-rebuild` extracts secrets from the credential backend
@@ -325,6 +455,18 @@ secrets:
     file: ./secrets/slack_signing_secret.txt
   slack_app_token:
     file: ./secrets/slack_app_token.txt
+  hermes_telegram_bot_token:
+    file: ./secrets/hermes_telegram_bot_token.txt
+  slack_bot_token_hermes:
+    file: ./secrets/slack_bot_token_hermes.txt
+  slack_app_token_hermes:
+    file: ./secrets/slack_app_token_hermes.txt
+  brave_api_key:
+    file: ./secrets/brave_api_key.txt
+  hermes_api_key:
+    file: ./secrets/hermes_api_key.txt
+  github_pat:
+    file: ./secrets/github_pat.txt
 
 # ── Networks ───────────────────────────────────────────────────────────────────
 # Two networks: internal (internet access) and isolated (no internet)
@@ -379,3 +521,6 @@ volumes:
     driver: local
   agentshroud-collab-workspaces:
     driver: local
+  hermes-config:
+    driver: local
+    name: hermes-config

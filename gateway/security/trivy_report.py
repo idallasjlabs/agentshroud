@@ -142,19 +142,25 @@ def parse_trivy_output(raw: dict[str, Any]) -> dict[str, Any]:
     }
 
 
-def save_report(report: dict[str, Any], log_dir: Path = DEFAULT_LOG_DIR) -> Path:
+def save_report(
+    report: dict[str, Any],
+    log_dir: Path = DEFAULT_LOG_DIR,
+    report_prefix: str = "trivy-",
+) -> Path:
     """Save a Trivy report to the log directory.
 
     Args:
         report: Parsed report dict.
         log_dir: Directory to save reports.
+        report_prefix: Filename prefix (e.g. ``"trivy-"`` for fs scans,
+            ``"image-agentshroud-gateway-latest-"`` for image scans).
 
     Returns:
         Path to saved report file.
     """
     log_dir.mkdir(parents=True, exist_ok=True)
     ts = datetime.now(timezone.utc).strftime("%Y%m%d-%H%M%S")
-    path = log_dir / f"trivy-{ts}.json"
+    path = log_dir / f"{report_prefix}{ts}.json"
     path.write_text(json.dumps(report, indent=2))
     logger.info("Trivy report saved to %s", path)
     return path

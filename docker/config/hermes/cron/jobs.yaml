@@ -1,0 +1,77 @@
+# Copyright © 2026 Isaiah Dallas Jefferson, Jr. AgentShroud™. All rights reserved.
+# AgentShroud™ is a trademark of Isaiah Dallas Jefferson, Jr. (USPTO Serial No. 99728633)
+# Patent Pending — U.S. Provisional Application No. 64/018,744
+#
+# Hermes Agent scheduled jobs — seeded from AgentShroud defaults on first boot.
+# Mirrors OpenClaw's job set (docker/config/openclaw/cron/jobs.json) adapted for
+# Hermes' YAML format. Hermes reads this from /opt/data/cron/jobs.yaml.
+#
+# Job format: https://hermes-agent.nousresearch.com/docs/user-guide/configuration
+
+jobs:
+  - name: "AgentShroud Daily Check-in"
+    enabled: true
+    schedule: "0 14 * * *"
+    timezone: "America/New_York"
+    notify: true
+    delivery:
+      channel: telegram
+    message: >
+      Daily AgentShroud check-in from Hermes Agent. Report:
+      1) Current date and time.
+      2) A brief status of any tasks you have been working on.
+      3) Anything noteworthy from conversations today.
+      Keep it under 150 words and send to Isaiah via Telegram.
+
+  - name: "AgentShroud Weekly Summary"
+    enabled: true
+    schedule: "0 18 * * 5"
+    timezone: "America/New_York"
+    notify: true
+    delivery:
+      channel: telegram
+    message: >
+      Weekly summary from Hermes Agent. Compile:
+      1) Key topics discussed this week.
+      2) Skills learned or created.
+      3) What to focus on next week.
+      Format concisely and send to Isaiah via Telegram.
+
+  - name: "Weekly Kaizen Review"
+    enabled: true
+    schedule: "0 17 * * 5"
+    timezone: "America/New_York"
+    notify: true
+    delivery:
+      channel: telegram
+    message: >
+      It's Friday 5 PM — weekly kaizen review (Hermes Agent perspective).
+      What shipped this week? What caused friction? What process improvements
+      would have the most impact for our AgentShroud development workflow?
+      Format as: SHIPPED / FRICTION / IMPROVE. Be specific and actionable.
+
+  - name: "Monthly Chaos Engineering Drill"
+    enabled: true
+    schedule: "0 9 1 * *"
+    timezone: "America/New_York"
+    notify: true
+    delivery:
+      channel: telegram
+    message: >
+      First of the month — chaos engineering drill (Hermes Agent perspective).
+      Simulate one realistic failure scenario for AgentShroud that involves
+      the Hermes bot specifically. Choose from: gateway crash, volume corruption,
+      bot disconnect, or dependency outage. Describe the failure mode, detection
+      method, expected blast radius, and recovery procedure. Keep it concise.
+
+  - name: "Daily Memory Journal"
+    enabled: true
+    schedule: "55 23 * * *"
+    timezone: "America/New_York"
+    notify: false
+    delivery:
+      channel: telegram
+    message: >
+      Nightly memory consolidation for Hermes Agent. Summarize the day:
+      active projects, pending tasks, decisions made by the owner, and key
+      facts to maintain continuity. Store in memory/context. Silent operation.
