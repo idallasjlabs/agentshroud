@@ -58,11 +58,15 @@ class SlackAPIProxy:
         sanitizer=None,
         tracker=None,
         owner_slack_user_id: str = "",
+        bot_id: str = "openclaw",
     ):
         self.pipeline = pipeline
         self.middleware_manager = middleware_manager
         self.sanitizer = sanitizer
         self.tracker = tracker  # CollaboratorActivityTracker for outbound message logging
+        # Bot identity for per-bot activity filtering. Defaults to "openclaw" because
+        # the Slack proxy is currently scoped to the OpenClaw bot integration.
+        self._bot_id: str = bot_id or "openclaw"
 
         # Bot token: gateway holds it; bot never sees the raw token
         self._bot_token = os.environ.get("SLACK_BOT_TOKEN", "") or _read_secret_static(
@@ -266,6 +270,7 @@ class SlackAPIProxy:
                                     source="slack",
                                     direction="inbound",
                                     correlation_id=_inbound_corr_id,
+                                    bot_id=self._bot_id,
                                 )
                         except Exception as _re:
                             logger.debug("Slack inbound recovery error (non-fatal): %s", _re)
@@ -284,6 +289,7 @@ class SlackAPIProxy:
                         source="slack",
                         direction="outbound",
                         correlation_id=_inbound_corr_id,
+                        bot_id=self._bot_id,
                     )
             except Exception as _se:
                 logger.debug("Slack outbound tracker error (non-fatal): %s", _se)
@@ -378,6 +384,7 @@ class SlackAPIProxy:
                     source="slack",
                     direction="inbound",
                     correlation_id=_corr_id,
+                    bot_id=self._bot_id,
                 )
             except Exception as exc:
                 logger.debug("Slack handle_event tracker error (non-fatal): %s", exc)
