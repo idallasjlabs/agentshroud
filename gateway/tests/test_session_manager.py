@@ -273,18 +273,22 @@ class TestMultiBotIsolation:
         legacy_memory = tmp_path / "users" / "old-user" / "MEMORY.md"
         legacy_workspace.mkdir(parents=True)
         legacy_memory.write_text("# Legacy MEMORY\n")
-        registry_path.write_text(json.dumps({
-            "old-user": {
-                "user_id": "old-user",
-                "workspace_dir": str(legacy_workspace),
-                "memory_file": str(legacy_memory),
-                "conversation_history": [],
-                "trust_level": "UNTRUSTED",
-                "created_at": None,
-                "last_active": None,
-                "metadata": {},
-            }
-        }))
+        registry_path.write_text(
+            json.dumps(
+                {
+                    "old-user": {
+                        "user_id": "old-user",
+                        "workspace_dir": str(legacy_workspace),
+                        "memory_file": str(legacy_memory),
+                        "conversation_history": [],
+                        "trust_level": "UNTRUSTED",
+                        "created_at": None,
+                        "last_active": None,
+                        "metadata": {},
+                    }
+                }
+            )
+        )
 
         mgr2 = UserSessionManager(base_workspace=tmp_path, owner_user_id="owner")
         # Legacy key must be promoted to compound form

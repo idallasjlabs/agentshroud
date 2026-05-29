@@ -362,7 +362,9 @@ async def test_credential_injector_not_applied_for_non_anthropic_dest(monkeypatc
         {"content-type": "application/json"},
     )
 
-    assert injector.calls == [], f"inject_headers must not be called for local dest; got: {injector.calls}"
+    assert (
+        injector.calls == []
+    ), f"inject_headers must not be called for local dest; got: {injector.calls}"
 
 
 @pytest.mark.asyncio
@@ -373,11 +375,13 @@ async def test_credential_injector_called_in_streaming_path(monkeypatch):
     proxy = LLMProxy(sanitizer=sanitizer, credential_injector=injector)
     monkeypatch.setattr(llm_proxy_module, "MODEL_MODE", "cloud")
 
-    payload = json.dumps({
-        "model": "claude-opus-4-6",
-        "messages": [{"role": "user", "content": "hello"}],
-        "stream": True,
-    }).encode()
+    payload = json.dumps(
+        {
+            "model": "claude-opus-4-6",
+            "messages": [{"role": "user", "content": "hello"}],
+            "stream": True,
+        }
+    ).encode()
 
     # Injection happens before _stream() — it occurs as part of proxy_messages_streaming() setup
     stream = await proxy.proxy_messages_streaming(
@@ -385,11 +389,10 @@ async def test_credential_injector_called_in_streaming_path(monkeypatch):
     )
 
     # Injection already happened at this point (before the generator is iterated)
-    assert any(d == "api.anthropic.com" for d, _ in injector.calls), \
-        "inject_headers must be called before streaming starts"
+    assert any(
+        d == "api.anthropic.com" for d, _ in injector.calls
+    ), "inject_headers must be called before streaming starts"
 
     # Drain one chunk (httpx will fail gracefully → error chunk; we don't care about content)
     async for _ in stream:
         break
-
-

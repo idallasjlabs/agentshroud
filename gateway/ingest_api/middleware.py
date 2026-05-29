@@ -659,7 +659,9 @@ class MiddlewareManager:
                     # Check if user is trying to access files outside their bot-scoped workspace.
                     # bot_id was extracted at the top of process_request and flows here via
                     # the request_data dict; read it again defensively.
-                    _file_bot_id = str(request_data.get("bot_id") or "openclaw").strip() or "openclaw"
+                    _file_bot_id = (
+                        str(request_data.get("bot_id") or "openclaw").strip() or "openclaw"
+                    )
                     user_workspace = self.user_session_manager.get_user_workspace_path(
                         user_id, bot_id=_file_bot_id
                     )

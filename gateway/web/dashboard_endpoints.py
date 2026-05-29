@@ -269,7 +269,9 @@ async def ssh_hosts(user: str = Depends(require_auth)) -> dict:
 async def logs_recent(
     user: str = Depends(require_auth),
     tail: int = Query(default=20, ge=1, le=100),
-    bot: str = Query(default="", description="Filter by bot_id (e.g. 'openclaw', 'hermes'). Empty = all bots."),
+    bot: str = Query(
+        default="", description="Filter by bot_id (e.g. 'openclaw', 'hermes'). Empty = all bots."
+    ),
 ) -> dict:
     """Recent security/audit log entries.
 

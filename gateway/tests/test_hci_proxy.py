@@ -19,6 +19,7 @@ import pytest
 # Helpers
 # ---------------------------------------------------------------------------
 
+
 def _make_basic_auth(password: str, username: str = "user") -> str:
     """Return a well-formed Basic Authorization header value."""
     token = base64.b64encode(f"{username}:{password}".encode()).decode()
@@ -52,6 +53,7 @@ async def _run_asgi(app: Any, scope: dict, receive_events: list, send_collector:
 # Unit tests: _read_gateway_password
 # ---------------------------------------------------------------------------
 
+
 class TestReadGatewayPassword:
     def test_read_gateway_password_from_env(self, tmp_path, monkeypatch):
         """Returns env var when secret file is absent."""
@@ -61,6 +63,7 @@ class TestReadGatewayPassword:
         import importlib
 
         import gateway.proxy.hci_proxy as hci_mod
+
         importlib.reload(hci_mod)
         result = hci_mod._read_gateway_password()
         assert result == "env-token-abc123"
@@ -73,6 +76,7 @@ class TestReadGatewayPassword:
         import importlib
 
         import gateway.proxy.hci_proxy as hci_mod
+
         importlib.reload(hci_mod)
         result = hci_mod._read_gateway_password()
         assert result == "file-secret-xyz"
@@ -82,10 +86,12 @@ class TestReadGatewayPassword:
 # Unit tests: _check_basic_auth
 # ---------------------------------------------------------------------------
 
+
 class TestCheckBasicAuth:
     def test_check_basic_auth_valid(self, monkeypatch):
         """Valid password returns True."""
         import gateway.proxy.hci_proxy as hci_mod
+
         monkeypatch.setattr(hci_mod, "_read_gateway_password", lambda: "correct-password")
         auth = _make_basic_auth("correct-password")
         assert hci_mod._check_basic_auth(auth) is True
@@ -93,6 +99,7 @@ class TestCheckBasicAuth:
     def test_check_basic_auth_invalid(self, monkeypatch):
         """Wrong password returns False."""
         import gateway.proxy.hci_proxy as hci_mod
+
         monkeypatch.setattr(hci_mod, "_read_gateway_password", lambda: "correct-password")
         auth = _make_basic_auth("wrong-password")
         assert hci_mod._check_basic_auth(auth) is False
@@ -100,12 +107,14 @@ class TestCheckBasicAuth:
     def test_check_basic_auth_no_basic_prefix(self, monkeypatch):
         """Header not starting with 'Basic ' returns False."""
         import gateway.proxy.hci_proxy as hci_mod
+
         monkeypatch.setattr(hci_mod, "_read_gateway_password", lambda: "secret")
         assert hci_mod._check_basic_auth("Bearer some-token") is False
 
     def test_check_basic_auth_empty_password_in_store(self, monkeypatch):
         """Returns False when gateway password is unavailable (empty)."""
         import gateway.proxy.hci_proxy as hci_mod
+
         monkeypatch.setattr(hci_mod, "_read_gateway_password", lambda: "")
         auth = _make_basic_auth("any-password")
         assert hci_mod._check_basic_auth(auth) is False
@@ -113,6 +122,7 @@ class TestCheckBasicAuth:
     def test_check_basic_auth_malformed_base64(self, monkeypatch):
         """Malformed base64 returns False without raising."""
         import gateway.proxy.hci_proxy as hci_mod
+
         monkeypatch.setattr(hci_mod, "_read_gateway_password", lambda: "secret")
         assert hci_mod._check_basic_auth("Basic !!!not-valid-base64!!!") is False
 
@@ -121,11 +131,13 @@ class TestCheckBasicAuth:
 # ASGI tests: HTTP handling
 # ---------------------------------------------------------------------------
 
+
 class TestHciProxyHTTP:
     @pytest.mark.asyncio
     async def test_hci_proxy_unauthorized_http_returns_401(self, monkeypatch):
         """No Authorization header → 401 with WWW-Authenticate."""
         import gateway.proxy.hci_proxy as hci_mod
+
         monkeypatch.setattr(hci_mod, "_SKIP_BASIC_AUTH", False)
         monkeypatch.setattr(hci_mod, "_read_gateway_password", lambda: "secret")
 
@@ -150,6 +162,7 @@ class TestHciProxyHTTP:
     async def test_hci_proxy_wrong_password_returns_401(self, monkeypatch):
         """Wrong password → 401."""
         import gateway.proxy.hci_proxy as hci_mod
+
         monkeypatch.setattr(hci_mod, "_SKIP_BASIC_AUTH", False)
         monkeypatch.setattr(hci_mod, "_read_gateway_password", lambda: "correct")
 
@@ -172,6 +185,7 @@ class TestHciProxyHTTP:
     async def test_hci_proxy_authorized_proxies_request(self, monkeypatch):
         """Correct credentials + mock upstream → 200."""
         import gateway.proxy.hci_proxy as hci_mod
+
         monkeypatch.setattr(hci_mod, "_SKIP_BASIC_AUTH", False)
         monkeypatch.setattr(hci_mod, "_read_gateway_password", lambda: "secret")
 
@@ -207,6 +221,7 @@ class TestHciProxyHTTP:
     async def test_hci_proxy_skip_basic_auth_bypasses_auth(self, monkeypatch):
         """HCI_SKIP_BASIC_AUTH=1 → upstream reached without credentials."""
         import gateway.proxy.hci_proxy as hci_mod
+
         monkeypatch.setattr(hci_mod, "_SKIP_BASIC_AUTH", True)
         monkeypatch.setattr(hci_mod, "_read_gateway_password", lambda: "secret")
 
@@ -243,6 +258,7 @@ class TestHciProxyHTTP:
         import httpx
 
         import gateway.proxy.hci_proxy as hci_mod
+
         monkeypatch.setattr(hci_mod, "_SKIP_BASIC_AUTH", True)
 
         mock_client = AsyncMock()
@@ -273,6 +289,7 @@ class TestHciProxyHTTP:
     async def test_hci_proxy_query_string_forwarded(self, monkeypatch):
         """Query string is appended to upstream URL."""
         import gateway.proxy.hci_proxy as hci_mod
+
         monkeypatch.setattr(hci_mod, "_SKIP_BASIC_AUTH", True)
 
         mock_response = MagicMock()
@@ -307,11 +324,13 @@ class TestHciProxyHTTP:
 # ASGI tests: WebSocket handling
 # ---------------------------------------------------------------------------
 
+
 class TestHciProxyWebSocket:
     @pytest.mark.asyncio
     async def test_hci_proxy_unauthorized_websocket_closes_4401(self, monkeypatch):
         """WebSocket without auth → close 4401."""
         import gateway.proxy.hci_proxy as hci_mod
+
         monkeypatch.setattr(hci_mod, "_SKIP_BASIC_AUTH", False)
         monkeypatch.setattr(hci_mod, "_read_gateway_password", lambda: "secret")
 
@@ -352,6 +371,7 @@ class TestHciProxyWebSocket:
 # lifespan.py integration: Hermes API forwarder task creation
 # ---------------------------------------------------------------------------
 
+
 class TestBuildProxyHeaders:
     def test_build_proxy_headers_strips_hop_by_hop(self):
         """Hop-by-hop headers are stripped; normal headers are forwarded."""
@@ -386,6 +406,7 @@ class TestHciProxyWebSocketAuthorized:
         from unittest.mock import AsyncMock, MagicMock, patch
 
         import gateway.proxy.hci_proxy as hci_mod
+
         monkeypatch.setattr(hci_mod, "_SKIP_BASIC_AUTH", False)
         monkeypatch.setattr(hci_mod, "_read_gateway_password", lambda: "secret")
 
@@ -425,6 +446,7 @@ class TestHciProxyWebSocketAuthorized:
     async def test_hci_proxy_authorized_websocket_generic_exception(self, monkeypatch):
         """Authorized WebSocket — generic Exception from upstream triggers error log."""
         import gateway.proxy.hci_proxy as hci_mod
+
         monkeypatch.setattr(hci_mod, "_SKIP_BASIC_AUTH", True)
 
         mock_ws_connect = MagicMock()
@@ -452,6 +474,7 @@ class TestHciProxyWebSocketAuthorized:
     async def test_hci_proxy_websocket_with_origin_header(self, monkeypatch):
         """Origin header is forwarded to upstream in extra_headers."""
         import gateway.proxy.hci_proxy as hci_mod
+
         monkeypatch.setattr(hci_mod, "_SKIP_BASIC_AUTH", True)
 
         import websockets.exceptions
@@ -492,6 +515,7 @@ class TestHciProxyWebSocketBidirectional:
     async def test_ws_client_disconnect_triggers_close(self, monkeypatch):
         """client_to_upstream: websocket.disconnect closes upstream and returns."""
         import gateway.proxy.hci_proxy as hci_mod
+
         monkeypatch.setattr(hci_mod, "_SKIP_BASIC_AUTH", True)
 
         upstream_closed = []
@@ -511,6 +535,7 @@ class TestHciProxyWebSocketBidirectional:
             async def __anext__(self):
                 # Block indefinitely — will be cancelled by asyncio.wait
                 import asyncio
+
                 await asyncio.sleep(10)
                 raise StopAsyncIteration
 
@@ -535,6 +560,7 @@ class TestHciProxyWebSocketBidirectional:
                 idx += 1
                 return ev
             import asyncio
+
             await asyncio.sleep(10)
             return {"type": "websocket.disconnect"}
 
@@ -565,6 +591,7 @@ class TestHciProxyWebSocketBidirectional:
     async def test_ws_upstream_sends_bytes_to_client(self, monkeypatch):
         """upstream_to_client: bytes messages from upstream are forwarded to client."""
         import gateway.proxy.hci_proxy as hci_mod
+
         monkeypatch.setattr(hci_mod, "_SKIP_BASIC_AUTH", True)
 
         messages_to_send = [b"hello", b"world"]
@@ -605,6 +632,7 @@ class TestHciProxyWebSocketBidirectional:
                 idx += 1
                 return ev
             import asyncio
+
             await asyncio.sleep(10)
             return {"type": "websocket.disconnect"}
 
@@ -636,6 +664,7 @@ class TestHciProxyWebSocketBidirectional:
     async def test_ws_upstream_sends_text_to_client(self, monkeypatch):
         """upstream_to_client: text messages from upstream are forwarded to client."""
         import gateway.proxy.hci_proxy as hci_mod
+
         monkeypatch.setattr(hci_mod, "_SKIP_BASIC_AUTH", True)
 
         class MockUpstreamWs:
@@ -672,6 +701,7 @@ class TestHciProxyWebSocketBidirectional:
                 idx += 1
                 return ev
             import asyncio
+
             await asyncio.sleep(10)
             return {"type": "websocket.disconnect"}
 
@@ -700,6 +730,7 @@ class TestHciProxyWebSocketBidirectional:
     async def test_ws_client_receive_forwards_to_upstream(self, monkeypatch):
         """client_to_upstream: websocket.receive events are forwarded to upstream.send."""
         import gateway.proxy.hci_proxy as hci_mod
+
         monkeypatch.setattr(hci_mod, "_SKIP_BASIC_AUTH", True)
 
         upstream_received: list[bytes] = []
@@ -710,6 +741,7 @@ class TestHciProxyWebSocketBidirectional:
 
             async def __anext__(self):
                 import asyncio
+
                 await asyncio.sleep(10)
                 raise StopAsyncIteration
 
@@ -743,6 +775,7 @@ class TestHciProxyWebSocketBidirectional:
                 idx += 1
                 return ev
             import asyncio
+
             await asyncio.sleep(10)
             return {"type": "websocket.disconnect"}
 
@@ -770,6 +803,7 @@ class TestHciProxyWebSocketBidirectional:
     async def test_ws_finally_exception_suppressed(self, monkeypatch):
         """finally block suppresses exceptions from the final send."""
         import gateway.proxy.hci_proxy as hci_mod
+
         monkeypatch.setattr(hci_mod, "_SKIP_BASIC_AUTH", True)
 
         import websockets.exceptions

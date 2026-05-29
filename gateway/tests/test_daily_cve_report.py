@@ -562,7 +562,9 @@ class TestBuildImageTargets:
     def test_env_var_adds_extra_targets(self, monkeypatch):
         from gateway.security.daily_cve_report import _build_image_targets
 
-        monkeypatch.setenv("AGENTSHROUD_TRIVY_IMAGES", "agentshroud-bot:latest,agentshroud/hermes:latest")
+        monkeypatch.setenv(
+            "AGENTSHROUD_TRIVY_IMAGES", "agentshroud-bot:latest,agentshroud/hermes:latest"
+        )
         targets = _build_image_targets()
         assert "agentshroud-bot:latest" in targets
         assert "agentshroud/hermes:latest" in targets
@@ -578,14 +580,18 @@ class TestBuildImageTargets:
     def test_deduplication(self, monkeypatch):
         from gateway.security.daily_cve_report import _build_image_targets
 
-        monkeypatch.setenv("AGENTSHROUD_TRIVY_IMAGES", "agentshroud-gateway:latest,agentshroud-gateway:latest")
+        monkeypatch.setenv(
+            "AGENTSHROUD_TRIVY_IMAGES", "agentshroud-gateway:latest,agentshroud-gateway:latest"
+        )
         targets = _build_image_targets()
         assert targets.count("agentshroud-gateway:latest") == 1
 
     def test_whitespace_stripped_from_env_var(self, monkeypatch):
         from gateway.security.daily_cve_report import _build_image_targets
 
-        monkeypatch.setenv("AGENTSHROUD_TRIVY_IMAGES", "  agentshroud-bot:latest  ,  agentshroud/hermes:latest  ")
+        monkeypatch.setenv(
+            "AGENTSHROUD_TRIVY_IMAGES", "  agentshroud-bot:latest  ,  agentshroud/hermes:latest  "
+        )
         targets = _build_image_targets()
         assert "agentshroud-bot:latest" in targets
         assert "agentshroud/hermes:latest" in targets
@@ -699,7 +705,10 @@ class TestRunAndSendCveReportImageScans:
 
         assert result["telegram_sent"] is True
         # Error line present in image_scans
-        assert any("error" in line.lower() or "scan error" in line.lower() for line in result["image_scans"])
+        assert any(
+            "error" in line.lower() or "scan error" in line.lower()
+            for line in result["image_scans"]
+        )
 
     @pytest.mark.asyncio
     async def test_critical_image_finding_uses_red_icon(self, tmp_path, monkeypatch):

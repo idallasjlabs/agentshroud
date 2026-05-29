@@ -103,9 +103,7 @@ def test_load_config_registers_hermes():
     except FileNotFoundError:
         pytest.skip("agentshroud.yaml not found — skipped in CI")
 
-    assert "hermes" in config.bots, (
-        "hermes must be declared in agentshroud.yaml bots: section"
-    )
+    assert "hermes" in config.bots, "hermes must be declared in agentshroud.yaml bots: section"
     hermes = config.bots["hermes"]
     assert hermes.port == 8642, "Hermes gateway API port must be 8642"
     assert hermes.default is False, "Hermes must NOT be the default bot (OpenClaw is)"

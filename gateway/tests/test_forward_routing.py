@@ -74,7 +74,9 @@ def _make_mock_app_state(bot_name: str, pipeline_captor: _PipelineCaptor):
     mock_state.sanitizer.filter_xml_blocks = MagicMock(return_value=("hello from bot", False))
     mock_state.sanitizer.block_credentials = AsyncMock(return_value=("hello from bot", False))
     mock_state.ledger = MagicMock()
-    mock_state.ledger.add_entry = AsyncMock(return_value=MagicMock(id="ledger-id", content_hash="hash", timestamp="ts"))
+    mock_state.ledger.add_entry = AsyncMock(
+        return_value=MagicMock(id="ledger-id", content_hash="hash", timestamp="ts")
+    )
     mock_state.ledger.update_entry = AsyncMock()
     mock_state.audit_store = None
     mock_state.collaborator_tracker = None
@@ -96,7 +98,9 @@ class TestAgentIdPropagatedFromTarget:
         with patch("gateway.ingest_api.routes.forward.app_state", mock_state):
             with patch("gateway.ingest_api.main.auth_dep", return_value=None):
                 app.dependency_overrides[
-                    __import__("gateway.ingest_api.routes.forward", fromlist=["AuthRequired"]).AuthRequired
+                    __import__(
+                        "gateway.ingest_api.routes.forward", fromlist=["AuthRequired"]
+                    ).AuthRequired
                 ] = lambda: None
                 client = TestClient(app, raise_server_exceptions=True)
                 resp = client.post(
@@ -116,13 +120,17 @@ class TestAgentIdPropagatedFromTarget:
         """Pipeline receives 'openclaw' as agent_id when routed to openclaw."""
         captor = _PipelineCaptor("openclaw")
 
-        with patch("gateway.ingest_api.routes.forward.app_state", _make_mock_app_state("openclaw", captor)):
+        with patch(
+            "gateway.ingest_api.routes.forward.app_state", _make_mock_app_state("openclaw", captor)
+        ):
             import asyncio
 
             from gateway.ingest_api.models import ForwardRequest
             from gateway.ingest_api.models import AgentTarget
 
-            request = ForwardRequest(content="test", source="api", content_type="text", route_to="openclaw")
+            request = ForwardRequest(
+                content="test", source="api", content_type="text", route_to="openclaw"
+            )
             target = AgentTarget(name="openclaw", url="http://agentshroud:18789", chat_path="/chat")
 
             # Directly invoke pipeline.process_inbound with target.name
@@ -137,7 +145,9 @@ class TestAgentIdPropagatedFromTarget:
 
         import asyncio
 
-        target = AgentTarget(name="hermes", url="http://agentshroud-hermes:8642", chat_path="/v1/chat/completions")
+        target = AgentTarget(
+            name="hermes", url="http://agentshroud-hermes:8642", chat_path="/v1/chat/completions"
+        )
 
         asyncio.run(captor.process_inbound("test message", target.name, "send_message", "api"))
         asyncio.run(captor.process_outbound("response", target.name, "UNTRUSTED", "api"))

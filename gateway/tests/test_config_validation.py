@@ -389,10 +389,16 @@ class TestConfigValidation:
         assert "🛡️ Hermes online" in script, "Must send online notification"
         assert "🔴 Hermes shutting down" in script, "Must send shutdown notification"
         assert "🟠 Hermes starting (readiness delayed)" in script, "Must handle delayed readiness"
-        assert "TRAP" not in script or "trap" in script, "Must set TERM/INT trap for shutdown notification"
-        assert "hermes gateway run &" in script, "Must run hermes in background (not exec) to enable trap"
+        assert (
+            "TRAP" not in script or "trap" in script
+        ), "Must set TERM/INT trap for shutdown notification"
+        assert (
+            "hermes gateway run &" in script
+        ), "Must run hermes in background (not exec) to enable trap"
         assert "wait" in script, "Must wait on background hermes PID"
-        assert "_STARTUP_NOTICE_STAMP" in script, "Must use cooldown stamp to suppress duplicate notifications"
+        assert (
+            "_STARTUP_NOTICE_STAMP" in script
+        ), "Must use cooldown stamp to suppress duplicate notifications"
 
     def test_start_control_center_script_uses_repo_relative_exec(self):
         """Control center launcher should be robust to current working directory."""

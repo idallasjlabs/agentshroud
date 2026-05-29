@@ -4320,7 +4320,9 @@ async def telegram_api_proxy(path: str, request: Request):
         if _legacy and _legacy not in _registry:
             _registry[_legacy] = "openclaw"
         if not _registry:
-            logger.error("Telegram proxy: no bot tokens configured — rejecting request (fail-closed)")
+            logger.error(
+                "Telegram proxy: no bot tokens configured — rejecting request (fail-closed)"
+            )
             raise HTTPException(status_code=503, detail="Telegram proxy not configured")
         app_state._telegram_token_registry = _registry
 
@@ -4358,7 +4360,12 @@ async def telegram_api_proxy(path: str, request: Request):
     logger.debug("Telegram proxy: bot_id=%s method=%s", matched_bot_id, method)
 
     result = await _telegram_proxy.proxy_request(
-        bot_token, method, body, content_type, is_system=is_system, path_prefix=file_prefix,
+        bot_token,
+        method,
+        body,
+        content_type,
+        is_system=is_system,
+        path_prefix=file_prefix,
         bot_id=matched_bot_id,
     )
 
@@ -4506,6 +4513,7 @@ _HERMES_DASHBOARD_UPSTREAM = os.environ.get(
 async def hermes_dashboard_root():
     """Redirect bare /hermes-dashboard to /hermes-dashboard/ so assets resolve."""
     from starlette.responses import RedirectResponse as _Redir
+
     return _Redir(url="/hermes-dashboard/", status_code=307)
 
 
@@ -4517,12 +4525,14 @@ async def hermes_dashboard_root():
 async def hermes_dashboard_proxy(path: str, request: Request):
     """Reverse-proxy the Hermes Agent dashboard through the gateway."""
     import httpx as _httpx
+
     upstream_url = f"{_HERMES_DASHBOARD_UPSTREAM}/{path}"
     params = str(request.url.query)
     if params:
         upstream_url = f"{upstream_url}?{params}"
     headers = {
-        k: v for k, v in request.headers.items()
+        k: v
+        for k, v in request.headers.items()
         if k.lower() not in ("host", "connection", "transfer-encoding")
     }
     body = await request.body()
@@ -4536,10 +4546,12 @@ async def hermes_dashboard_proxy(path: str, request: Request):
                 follow_redirects=False,
             )
         resp_headers = {
-            k: v for k, v in resp.headers.items()
+            k: v
+            for k, v in resp.headers.items()
             if k.lower() not in ("transfer-encoding", "connection")
         }
         from starlette.responses import Response as _Resp
+
         return _Resp(
             content=resp.content,
             status_code=resp.status_code,

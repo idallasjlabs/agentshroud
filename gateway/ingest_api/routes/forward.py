@@ -58,7 +58,9 @@ def _get_gmail_app_password() -> "str | None":
     def _run(sess: str) -> "subprocess.CompletedProcess[str]":
         return subprocess.run(
             ["op", "read", "--session", sess, _EMAIL_OP_REF],
-            capture_output=True, text=True, timeout=30,
+            capture_output=True,
+            text=True,
+            timeout=30,
         )
 
     result = _run(session) if session else None
@@ -73,23 +75,44 @@ def _get_gmail_app_password() -> "str | None":
             return None
         if key:
             r = subprocess.run(
-                ["op", "account", "add", "--address", "my.1password.com",
-                 "--email", email, "--secret-key", key, "--signin", "--raw"],
-                input=password, capture_output=True, text=True, timeout=30,
+                [
+                    "op",
+                    "account",
+                    "add",
+                    "--address",
+                    "my.1password.com",
+                    "--email",
+                    email,
+                    "--secret-key",
+                    key,
+                    "--signin",
+                    "--raw",
+                ],
+                input=password,
+                capture_output=True,
+                text=True,
+                timeout=30,
             )
             if r.returncode == 0 and r.stdout.strip():
                 os.environ["OP_SESSION"] = r.stdout.strip()
                 result = _run(r.stdout.strip())
         if not result or result.returncode != 0:
             r = subprocess.run(
-                ["op", "signin", "--raw"], input=password,
-                capture_output=True, text=True, timeout=30,
+                ["op", "signin", "--raw"],
+                input=password,
+                capture_output=True,
+                text=True,
+                timeout=30,
             )
             if r.returncode == 0 and r.stdout.strip():
                 os.environ["OP_SESSION"] = r.stdout.strip()
                 result = _run(r.stdout.strip())
 
-    return result.stdout.strip() if result and result.returncode == 0 and result.stdout.strip() else None
+    return (
+        result.stdout.strip()
+        if result and result.returncode == 0 and result.stdout.strip()
+        else None
+    )
 
 
 # Authentication dependency
@@ -169,7 +192,9 @@ async def email_send(request: EmailSendRequest, req: Request, auth: AuthRequired
             sanitized_body = scan.sanitized_content
             pii_redacted = len(scan.redactions) > 0
             if pii_redacted:
-                logger.warning("email-send: PII redacted from body (%d items)", len(scan.redactions))
+                logger.warning(
+                    "email-send: PII redacted from body (%d items)", len(scan.redactions)
+                )
         except Exception as e:
             logger.warning("email-send: PII scan failed (%s), proceeding with original body", e)
 
