@@ -243,9 +243,7 @@ class TestMultiBotContextvarRouting:
         try:
             proxy = self._make_proxy(_OPENCLAW_TOKEN)
             with patch("urllib.request.urlopen", side_effect=fake_urlopen):
-                asyncio.get_event_loop().run_until_complete(
-                    proxy._send_telegram_text(12345, "hello")
-                )
+                asyncio.run(proxy._send_telegram_text(12345, "hello"))
         finally:
             _tp._inbound_bot_token.reset(ctx_token)
 
@@ -266,7 +264,7 @@ class TestMultiBotContextvarRouting:
         _tp._inbound_bot_token.set(None)
         proxy = self._make_proxy(_OPENCLAW_TOKEN)
         with patch("urllib.request.urlopen", side_effect=fake_urlopen):
-            asyncio.get_event_loop().run_until_complete(proxy._send_telegram_text(12345, "hello"))
+            asyncio.run(proxy._send_telegram_text(12345, "hello"))
 
         assert len(captured_urls) == 1
         assert f"bot{_OPENCLAW_TOKEN}" in captured_urls[0]
@@ -282,7 +280,7 @@ class TestMultiBotContextvarRouting:
             proxy._proxy_request_impl = AsyncMock(return_value={"ok": True, "result": []})
             await proxy.proxy_request(_HERMES_TOKEN, "getUpdates", bot_id="hermes")
 
-        asyncio.get_event_loop().run_until_complete(run())
+        asyncio.run(run())
         assert _tp._inbound_bot_token.get() == initial_value
 
     def test_proxy_request_contextvar_visible_inside_impl(self):
@@ -305,7 +303,7 @@ class TestMultiBotContextvarRouting:
             proxy._proxy_request_impl = impl_capture
             await proxy.proxy_request(_HERMES_TOKEN, "getUpdates", bot_id="hermes")
 
-        asyncio.get_event_loop().run_until_complete(run())
+        asyncio.run(run())
 
         assert len(captured_token_in_impl) == 1
         assert (
