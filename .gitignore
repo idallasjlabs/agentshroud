@@ -204,6 +204,8 @@ api_keys.txt
 *token*
 # Allowlist: test utilities for secrets modules (no real secrets — only test fixtures and mocks)
 !gateway/tests/test_utils_secrets.py
+# Allowlist: s6 cont-init scripts that inject secrets (shell scripts, not credential files)
+!docker/bots/hermes/agentshroud-secrets.sh
 # SSH & GPG
 # AWS & CLOUD
 .aws/
