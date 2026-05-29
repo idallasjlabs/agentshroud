@@ -14,6 +14,7 @@ instead of https://api.telegram.org/bot<token>/<method>.
 from __future__ import annotations
 
 import asyncio
+import contextvars
 import datetime as _dt
 import ipaddress
 import json
@@ -29,6 +30,17 @@ import urllib.parse
 import urllib.request
 import uuid
 from typing import Any, Optional
+
+# Per-request bot identity — set by proxy_request, isolated per asyncio task.
+# Ensures locally-generated Telegram replies (local commands, rate-limit notices,
+# owner notices) egress through the same bot token that received the inbound update,
+# not always through the OpenClaw/default self._bot_token.
+_inbound_bot_token: contextvars.ContextVar[Optional[str]] = contextvars.ContextVar(
+    "agentshroud_inbound_bot_token", default=None
+)
+_inbound_bot_id: contextvars.ContextVar[Optional[str]] = contextvars.ContextVar(
+    "agentshroud_inbound_bot_id", default=None
+)
 
 # Prefer IPv4 when connecting to Telegram API.
 # In some VPN/Docker environments (Colima + Cisco AnyConnect) IPv6 packets are
@@ -529,10 +541,11 @@ class TelegramAPIProxy:
 
     async def _telegram_create_invite_link(self, chat_id: int) -> Optional[str]:
         """Create a single-use invite link for a Telegram group. Returns URL or None."""
-        if not self._bot_token:
+        token = self._active_send_token()
+        if not token:
             return None
         try:
-            url = f"{TELEGRAM_API_BASE}/bot{self._bot_token}/createChatInviteLink"
+            url = f"{TELEGRAM_API_BASE}/bot{token}/createChatInviteLink"
             body = json.dumps({"chat_id": chat_id, "member_limit": 1}).encode()
             resp = await self._forward_to_telegram(url, body, "application/json")
             if resp.get("ok"):
@@ -543,16 +556,17 @@ class TelegramAPIProxy:
 
     async def _telegram_kick_member(self, chat_id: int, user_id: int) -> bool:
         """Kick (ban + unban) a user from a Telegram group. Returns True on success."""
-        if not self._bot_token:
+        token = self._active_send_token()
+        if not token:
             return False
         try:
-            ban_url = f"{TELEGRAM_API_BASE}/bot{self._bot_token}/banChatMember"
+            ban_url = f"{TELEGRAM_API_BASE}/bot{token}/banChatMember"
             ban_body = json.dumps({"chat_id": chat_id, "user_id": user_id}).encode()
             ban_resp = await self._forward_to_telegram(ban_url, ban_body, "application/json")
             if not ban_resp.get("ok"):
                 return False
             # Immediately unban so the user can rejoin later via invite link
-            unban_url = f"{TELEGRAM_API_BASE}/bot{self._bot_token}/unbanChatMember"
+            unban_url = f"{TELEGRAM_API_BASE}/bot{token}/unbanChatMember"
             unban_body = json.dumps(
                 {"chat_id": chat_id, "user_id": user_id, "only_if_banned": True}
             ).encode()
@@ -2729,7 +2743,46 @@ class TelegramAPIProxy:
             return first_string_key, value if isinstance(value, str) else ""
         return "text", ""
 
+    def _active_send_token(self) -> str:
+        """Per-request bot token for gateway-originated Telegram sends.
+
+        Returns the token set by proxy_request (via _inbound_bot_token contextvar)
+        for the current inbound request, falling back to the instance default
+        (OpenClaw/legacy) when called outside a proxy_request context.
+        """
+        return _inbound_bot_token.get() or self._bot_token
+
+    def _active_bot_id(self) -> str:
+        """Per-request bot_id for activity tracking.
+
+        Returns the bot_id set by proxy_request (via _inbound_bot_id contextvar),
+        falling back to "openclaw" when called outside a proxy_request context.
+        """
+        return _inbound_bot_id.get() or "openclaw"
+
     async def proxy_request(
+        self,
+        bot_token: str,
+        method: str,
+        body: Optional[bytes] = None,
+        content_type: Optional[str] = None,
+        is_system: bool = False,
+        path_prefix: str = "",
+        bot_id: Optional[str] = None,
+    ) -> dict:
+        """Thin wrapper: sets per-request bot identity in contextvars so local replies
+        egress through the correct bot token (multi-bot routing fix)."""
+        _tok = _inbound_bot_token.set(bot_token)
+        _bid = _inbound_bot_id.set(bot_id or "openclaw")
+        try:
+            return await self._proxy_request_impl(
+                bot_token, method, body, content_type, is_system, path_prefix
+            )
+        finally:
+            _inbound_bot_token.reset(_tok)
+            _inbound_bot_id.reset(_bid)
+
+    async def _proxy_request_impl(
         self,
         bot_token: str,
         method: str,
@@ -2801,9 +2854,7 @@ class TelegramAPIProxy:
                             source="telegram",
                             direction="outbound",
                             correlation_id=_out_corr_id,
-                            # TelegramAPIProxy is the OpenClaw/legacy Telegram path; no
-                            # per-instance bot_id attribute — default to "openclaw".
-                            bot_id="openclaw",
+                            bot_id=self._active_bot_id(),
                         )
             except Exception as _ote:
                 logger.debug("Outbound collab response tracking error (non-fatal): %s", _ote)
@@ -4361,9 +4412,7 @@ class TelegramAPIProxy:
                         source="telegram",
                         direction="inbound",
                         correlation_id=_corr_id,
-                        # TelegramAPIProxy is the OpenClaw/legacy Telegram path; no
-                        # per-instance bot_id attribute — default to "openclaw".
-                        bot_id="openclaw",
+                        bot_id=self._active_bot_id(),
                     )
             except Exception as _te:
                 logger.debug("Collaborator tracker error (non-fatal): %s", _te)
@@ -6555,7 +6604,8 @@ class TelegramAPIProxy:
     async def _send_rate_limit_notice(self, chat_id: int, user_id: Optional[str] = None) -> bool:
         """Notify a collaborator they have exceeded the hourly rate limit."""
         try:
-            if self._bot_token:
+            _send_token = self._active_send_token()
+            if _send_token:
                 limiter_user_id = str(user_id) if user_id else str(chat_id)
                 wait_seconds = self._collaborator_rate_limit_retry_after_seconds(limiter_user_id)
                 wait_minutes = max(1, math.ceil(wait_seconds / 60.0))
@@ -6566,7 +6616,7 @@ class TelegramAPIProxy:
                     f"\\({self._collaborator_rate_limiter.max_requests} messages/hour\\)\\.\n"
                     f"Rate limit resets at {reset_time_str} \\(~{wait_minutes} min\\)\\."
                 )
-                url = f"{TELEGRAM_API_BASE}/bot{self._bot_token}/sendMessage"
+                url = f"{TELEGRAM_API_BASE}/bot{_send_token}/sendMessage"
                 loop = asyncio.get_event_loop()
                 payload = {"chat_id": chat_id, "text": msg, "parse_mode": "MarkdownV2"}
                 req = urllib.request.Request(
@@ -6624,7 +6674,8 @@ class TelegramAPIProxy:
     ) -> bool:
         """Notify an unknown/unapproved user they have exceeded the access request rate limit."""
         try:
-            if not self._bot_token:
+            _send_token = self._active_send_token()
+            if not _send_token:
                 return False
             limiter_user_id = str(user_id) if user_id else str(chat_id)
             limiter = self._stranger_rate_limiter
@@ -6644,7 +6695,7 @@ class TelegramAPIProxy:
                 f"You may send another access request at {reset_time_str} (~{wait_minutes} min).\n"
                 "To request access sooner, contact the system owner directly."
             )
-            url = f"{TELEGRAM_API_BASE}/bot{self._bot_token}/sendMessage"
+            url = f"{TELEGRAM_API_BASE}/bot{_send_token}/sendMessage"
             loop = asyncio.get_event_loop()
             req = urllib.request.Request(
                 url,
@@ -6669,9 +6720,10 @@ class TelegramAPIProxy:
         retries: int = 3,
     ) -> bool:
         """Best-effort Telegram sender with bounded retries."""
-        if not self._bot_token:
+        token = self._active_send_token()
+        if not token:
             return False
-        url = f"{TELEGRAM_API_BASE}/bot{self._bot_token}/sendMessage"
+        url = f"{TELEGRAM_API_BASE}/bot{token}/sendMessage"
         payload: dict[str, Any] = {"chat_id": chat_id, "text": text}
         if parse_mode:
             payload["parse_mode"] = parse_mode
@@ -6731,9 +6783,10 @@ class TelegramAPIProxy:
         parse_mode: str = "Markdown",
     ) -> bool:
         """Send a Telegram message with an inline keyboard."""
-        if not self._bot_token:
+        token = self._active_send_token()
+        if not token:
             return False
-        url = f"{TELEGRAM_API_BASE}/bot{self._bot_token}/sendMessage"
+        url = f"{TELEGRAM_API_BASE}/bot{token}/sendMessage"
         payload: dict[str, Any] = {
             "chat_id": chat_id,
             "text": text,
@@ -6765,9 +6818,10 @@ class TelegramAPIProxy:
         parse_mode: str = "Markdown",
     ) -> bool:
         """Edit an existing Telegram message in-place (removes inline keyboard too)."""
-        if not self._bot_token:
+        token = self._active_send_token()
+        if not token:
             return False
-        url = f"{TELEGRAM_API_BASE}/bot{self._bot_token}/editMessageText"
+        url = f"{TELEGRAM_API_BASE}/bot{token}/editMessageText"
         payload: dict[str, Any] = {
             "chat_id": chat_id,
             "message_id": message_id,
@@ -6798,9 +6852,10 @@ class TelegramAPIProxy:
         text: str,
     ) -> bool:
         """Dismiss the Telegram inline button spinner with a brief toast."""
-        if not self._bot_token:
+        token = self._active_send_token()
+        if not token:
             return False
-        url = f"{TELEGRAM_API_BASE}/bot{self._bot_token}/answerCallbackQuery"
+        url = f"{TELEGRAM_API_BASE}/bot{token}/answerCallbackQuery"
         payload: dict[str, Any] = {
             "callback_query_id": callback_query_id,
             "text": text,
@@ -6843,7 +6898,7 @@ class TelegramAPIProxy:
     async def _send_local_healthcheck_notice(self, chat_id: int) -> None:
         """Send deterministic gateway health status without model invocation."""
         try:
-            if self._bot_token:
+            if self._active_send_token():
                 msg = (
                     "✅ AgentShroud healthcheck\n"
                     "• Gateway: online\n"
@@ -7109,7 +7164,7 @@ class TelegramAPIProxy:
     async def _send_local_status_notice(self, chat_id: int, *, is_owner: bool) -> None:
         """Send deterministic /status summary without model invocation."""
         try:
-            if not self._bot_token:
+            if not self._active_send_token():
                 return
             if is_owner:
                 pending_count = len(self._pending_collaborator_requests)
@@ -7464,9 +7519,7 @@ class TelegramAPIProxy:
                                 source="telegram",
                                 direction="outbound",
                                 correlation_id=_local_corr_id,
-                                # TelegramAPIProxy is the OpenClaw/legacy Telegram path; no
-                                # per-instance bot_id attribute — default to "openclaw".
-                                bot_id="openclaw",
+                                bot_id=self._active_bot_id(),
                             )
                 except Exception as _te:
                     logger.debug("Outbound local-response tracker error (non-fatal): %s", _te)

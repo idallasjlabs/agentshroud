@@ -4358,7 +4358,8 @@ async def telegram_api_proxy(path: str, request: Request):
     logger.debug("Telegram proxy: bot_id=%s method=%s", matched_bot_id, method)
 
     result = await _telegram_proxy.proxy_request(
-        bot_token, method, body, content_type, is_system=is_system, path_prefix=file_prefix
+        bot_token, method, body, content_type, is_system=is_system, path_prefix=file_prefix,
+        bot_id=matched_bot_id,
     )
 
     # File downloads return binary data — serve as-is rather than JSON-encoding.
