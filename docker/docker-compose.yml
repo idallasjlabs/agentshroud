@@ -39,6 +39,8 @@ services:
       - 127.0.0.1:9119:9119    # Hermes dashboard TCP forwarder → agentshroud-hermes:9119; tailscale serve → :9119
                                #   Security: no auth, no pipeline scan — tailnet-only (Tailscale ACL
                                #   is the access control). Re-evaluate if exposed beyond tailnet.
+      - "127.0.0.1:8642:8642"  # Hermes OpenAI-compatible API TCP forwarder → agentshroud-hermes:8642
+      - "127.0.0.1:9121:9121"  # HCI auth-gated reverse proxy → agentshroud-hci:3000
     volumes:
       - ../agentshroud.yaml:/app/agentshroud.yaml:ro
       - agentshroud-ssh:/var/agentshroud-ssh:ro
@@ -65,6 +67,7 @@ services:
       - 1password_bot_email
       - 1password_bot_master_password
       - 1password_bot_secret_key
+      - hermes_api_key
     environment:
       - PYTHONUNBUFFERED=1
       - LOG_LEVEL=INFO
@@ -308,9 +311,9 @@ services:
   # pipeline applies regardless of bot runtime.
   hermes:
     # Profiles: start Hermes only when explicitly requested.
-    # `docker compose --profile hermes up -d`  — Hermes only
-    # `docker compose --profile full up -d`     — gateway + openclaw + hermes
-    # `docker compose up -d`                    — gateway + openclaw only (default)
+    # `docker-compose --profile hermes up -d`  — Hermes only
+    # `docker-compose --profile full up -d`    — gateway + openclaw + hermes + hci
+    # `docker-compose up -d`                   — gateway + openclaw only (default)
     profiles: [hermes, full]
     image: agentshroud/hermes:${AGENTSHROUD_VERSION:-latest}
     build:
@@ -333,6 +336,7 @@ services:
       - slack_app_token_hermes
       - brave_api_key
       - anthropic_oauth_token
+      - hermes_api_key
     environment:
       HTTP_PROXY: http://gateway:8181
       HTTPS_PROXY: http://gateway:8181
@@ -378,6 +382,49 @@ services:
       retries: 3
 
 
+  # ── Hermes Control Interface (HCI) ────────────────────────────────────────────
+  # AgentShroud™ Patent Pending — U.S. Provisional Application No. 64/018,744
+  # HCI provides a web control interface for the Hermes Agent.
+  # Access is via the gateway's hci_proxy.py (port 9121) which enforces Basic Auth.
+  # HCI itself has no published ports — all access flows through the gateway proxy.
+  agentshroud-hci:
+    profiles: [hermes, full]
+    image: ghcr.io/xaspx/hermes-control-interface:latest
+    build:
+      context: ..
+      dockerfile: docker/bots/hci/Dockerfile
+    container_name: agentshroud-hci
+    hostname: hci
+    restart: unless-stopped
+    depends_on:
+      hermes:
+        condition: service_healthy
+    networks:
+      - agentshroud-isolated      # no direct internet — all egress via HTTP_PROXY
+    volumes:
+      - hermes-config:/opt/data:ro
+    secrets:
+      - hermes_api_key
+    environment:
+      HTTP_PROXY: http://gateway:8181
+      HTTPS_PROXY: http://gateway:8181
+      NO_PROXY: gateway,agentshroud-hermes,hci,127.0.0.1,localhost
+      ANTHROPIC_BASE_URL: http://gateway:8080
+      HERMES_API_URL: http://agentshroud-hermes:8642
+    read_only: true
+    tmpfs:
+      - /tmp:size=64m,mode=1777
+    mem_limit: 512m
+    cpus: 0.5
+    pids_limit: 128
+    logging:
+      driver: json-file
+      options:
+        max-size: "5m"
+        max-file: "3"
+
+
+
 # ── Secrets ────────────────────────────────────────────────────────────────────
 # `asb up/rebuild/clean-rebuild` extracts secrets from the credential backend
 # (1Password/Keychain/secret-tool) into a tmpdir and overrides these file: paths
@@ -415,6 +462,8 @@ secrets:
     file: ./secrets/slack_app_token_hermes.txt
   brave_api_key:
     file: ./secrets/brave_api_key.txt
+  hermes_api_key:
+    file: ./secrets/hermes_api_key.txt
 
 # ── Networks ───────────────────────────────────────────────────────────────────
 # Two networks: internal (internet access) and isolated (no internet)

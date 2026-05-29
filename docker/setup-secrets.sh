@@ -215,6 +215,7 @@ declare -a SECRET_DEFS=(
     "slack_bot_token_hermes|Hermes Slack bot token (xoxb-...)|yes|yes|hermes"
     "slack_app_token_hermes|Hermes Slack app token (xapp-...)|yes|yes|hermes"
     "brave_api_key|Brave Search API key (shared with all bots)|yes|yes|all"
+    "hermes_api_key|Hermes OpenAI API server key (random hex)|yes|yes|hermes"
 )
 
 # ── Bot filter helper ──────────────────────────────────────────────────────────

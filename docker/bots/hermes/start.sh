@@ -35,6 +35,13 @@ if [ -n "${ANTHROPIC_API_KEY:-}" ]; then
     echo "[hermes-startup] Anthropic API key present"
 fi
 
+if [ -n "${API_SERVER_KEY:-}" ]; then
+    echo "[hermes-startup] API server key present — OpenAI-compatible API server will be auth-gated"
+else
+    echo "[hermes-startup] WARNING: API_SERVER_KEY not set — API server will reject all requests"
+fi
+
+
 # Seed /opt/data config on first boot (idempotent)
 /usr/local/bin/init-hermes-config.sh
 
