@@ -17,6 +17,7 @@ from unittest.mock import AsyncMock, MagicMock, patch
 
 import pytest
 
+from gateway.security.rbac_config import Role
 from gateway.security.scanner_integration import compute_bot_scorecard
 from gateway.soc.auth import SCLCaller
 from gateway.soc.router import (
@@ -766,3 +767,179 @@ class TestComputeBotScorecard:
         result = compute_bot_scorecard("openclaw", app)
         assert result["egress_denials"] == 0
         assert result["score"] == 100
+
+
+# ---------------------------------------------------------------------------
+# M6: TestBotSelectorFrontend — /soc/v1/bots + bot_id filtering
+# ---------------------------------------------------------------------------
+
+
+def _make_m6_caller() -> SCLCaller:
+    caller = MagicMock(spec=SCLCaller)
+    caller.user_id = "owner-test"
+    caller.role = Role.OWNER
+    caller.require = MagicMock()
+    caller.is_owner = MagicMock(return_value=True)
+    return caller
+
+
+def _make_m6_bot_config(bot_id: str, name: str, hostname: str, default: bool = False) -> MagicMock:
+    bot = MagicMock()
+    bot.id = bot_id
+    bot.name = name
+    bot.hostname = hostname
+    bot.default = default
+    return bot
+
+
+def _make_m6_app_state(bots: dict) -> MagicMock:
+    cfg = MagicMock()
+    cfg.bots = bots
+    app = MagicMock()
+    app.config = cfg
+    app.audit_store = None
+    return app
+
+
+class TestBotSelectorFrontend:
+    """Unit tests for the M6 bot selector backend — /soc/v1/bots + bot_id filtering."""
+
+    @pytest.mark.asyncio
+    async def test_bots_returns_correct_structure(self):
+        bots = {
+            "openclaw": _make_m6_bot_config("openclaw", "OpenClaw", "agentshroud", default=True),
+            "hermes": _make_m6_bot_config("hermes", "Hermes", "agentshroud-hermes", default=False),
+        }
+        app = _make_m6_app_state(bots)
+        caller = _make_m6_caller()
+
+        with patch("gateway.soc.router._app_state", return_value=app):
+            result = await list_bots(caller=caller)
+
+        assert isinstance(result, list)
+        assert len(result) == 2
+        ids = {b["id"] for b in result}
+        assert "openclaw" in ids
+        assert "hermes" in ids
+        for entry in result:
+            assert "id" in entry
+            assert "name" in entry
+            assert "hostname" in entry
+            assert "default" in entry
+
+    @pytest.mark.asyncio
+    async def test_single_bot_returns_list_of_one(self):
+        bots = {"openclaw": _make_m6_bot_config("openclaw", "OpenClaw", "agentshroud", default=True)}
+        app = _make_m6_app_state(bots)
+        caller = _make_m6_caller()
+
+        with patch("gateway.soc.router._app_state", return_value=app):
+            result = await list_bots(caller=caller)
+
+        assert len(result) == 1
+        assert result[0]["id"] == "openclaw"
+
+    @pytest.mark.asyncio
+    async def test_bots_returns_default_true_on_default_bot(self):
+        bots = {
+            "openclaw": _make_m6_bot_config("openclaw", "OpenClaw", "agentshroud", default=True),
+            "hermes": _make_m6_bot_config("hermes", "Hermes", "agentshroud-hermes", default=False),
+        }
+        app = _make_m6_app_state(bots)
+        caller = _make_m6_caller()
+
+        with patch("gateway.soc.router._app_state", return_value=app):
+            result = await list_bots(caller=caller)
+
+        by_id = {b["id"]: b for b in result}
+        assert by_id["openclaw"]["default"] is True
+        assert by_id["hermes"]["default"] is False
+
+    @pytest.mark.asyncio
+    async def test_security_events_filters_by_bot_id(self):
+        # Router filters on e.agent_id (SecurityEvent attribute), not on the dict field.
+        hermes_event = MagicMock()
+        hermes_event.agent_id = "hermes"
+        hermes_event.model_dump.return_value = {
+            "event_id": "evt-1", "agent_id": "hermes",
+            "event_type": "security_event", "severity": "info",
+            "source_module": "hermes.promptguard", "summary": "prompt checked",
+            "timestamp": "2026-05-29T00:00:00Z",
+        }
+        openclaw_event = MagicMock()
+        openclaw_event.agent_id = "openclaw"
+        openclaw_event.model_dump.return_value = {
+            "event_id": "evt-2", "agent_id": "openclaw",
+            "event_type": "security_event", "severity": "info",
+            "source_module": "openclaw.promptguard", "summary": "openclaw event",
+            "timestamp": "2026-05-29T00:00:00Z",
+        }
+
+        caller = _make_m6_caller()
+        app = MagicMock()
+        app.audit_store = None
+
+        with (
+            patch("gateway.soc.router._app_state", return_value=app),
+            patch(
+                "gateway.soc.event_adapter.collect_recent_events",
+                new=AsyncMock(return_value=[hermes_event, openclaw_event]),
+            ),
+        ):
+            result = await get_security_events(limit=50, severity=None, bot_id="hermes", caller=caller)
+
+        assert len(result) == 1
+        assert result[0]["agent_id"] == "hermes"
+
+    @pytest.mark.asyncio
+    async def test_security_events_nonexistent_bot_returns_empty_not_404(self):
+        evt = MagicMock()
+        evt.agent_id = "openclaw"
+        evt.model_dump.return_value = {
+            "event_id": "evt-3", "agent_id": "openclaw",
+            "event_type": "security_event", "severity": "info",
+            "source_module": "openclaw.module", "summary": "some event",
+            "timestamp": "2026-05-29T00:00:00Z",
+        }
+
+        caller = _make_m6_caller()
+        app = MagicMock()
+        app.audit_store = None
+
+        with (
+            patch("gateway.soc.router._app_state", return_value=app),
+            patch(
+                "gateway.soc.event_adapter.collect_recent_events",
+                new=AsyncMock(return_value=[evt]),
+            ),
+        ):
+            result = await get_security_events(limit=50, severity=None, bot_id="nonexistent", caller=caller)
+
+        assert isinstance(result, list)
+        assert len(result) == 0
+
+    @pytest.mark.asyncio
+    async def test_bots_backward_compat_no_bots_config(self):
+        app = MagicMock()
+        app.config = MagicMock()
+        app.config.bots = {}
+        caller = _make_m6_caller()
+
+        with patch("gateway.soc.router._app_state", return_value=app):
+            result = await list_bots(caller=caller)
+
+        assert len(result) == 1
+        assert result[0]["id"] == "openclaw"
+        assert result[0]["default"] is True
+
+    @pytest.mark.asyncio
+    async def test_bots_no_config_returns_synthetic_entry(self):
+        app = MagicMock()
+        app.config = None
+        caller = _make_m6_caller()
+
+        with patch("gateway.soc.router._app_state", return_value=app):
+            result = await list_bots(caller=caller)
+
+        assert len(result) == 1
+        assert result[0]["id"] == "openclaw"
