@@ -363,6 +363,10 @@ services:
       HERMES_DASHBOARD_HOST: "0.0.0.0"
       HERMES_DASHBOARD_PORT: "9119"
       AGENTSHROUD_BOT_ID: hermes
+      API_SERVER_ENABLED: "1"
+      API_SERVER_HOST: "0.0.0.0"
+      API_SERVER_PORT: "8642"
+      API_SERVER_KEY: "${API_SERVER_KEY:-}"
     # Security note: nousresearch/hermes-agent uses s6-overlay which must start as root
     # and drop to UID 10000 via s6-setuidgid. cap_drop: ALL and no-new-privileges break
     # this. Primary security boundaries: agentshroud-isolated network + seccomp + resource limits.
@@ -389,7 +393,7 @@ services:
   # Access is via the gateway's hci_proxy.py (port 9121) which enforces Basic Auth.
   # HCI itself has no published ports — all access flows through the gateway proxy.
   agentshroud-hci:
-    profiles: [hermes, full]
+    profiles: [full]
     image: ghcr.io/xaspx/hermes-control-interface:latest
     build:
       context: ..
