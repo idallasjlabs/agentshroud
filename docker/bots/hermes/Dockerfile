@@ -41,7 +41,7 @@ RUN chmod +x /usr/local/bin/start-hermes.sh /usr/local/bin/init-hermes-config.sh
  && chown -R 10000:10000 /app/config-defaults
 
 # Port 9119: Hermes dashboard (served by s6 dashboard service when HERMES_DASHBOARD=1)
-# Port 8642: reserved for future Hermes API server
+# Port 8642: OpenAI-compatible API server (enabled, requires API_SERVER_KEY)
 EXPOSE 8642 9119
 
 # Healthcheck: probe the dashboard on 9119 (always up when HERMES_DASHBOARD=1).

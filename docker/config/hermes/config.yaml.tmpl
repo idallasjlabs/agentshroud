@@ -55,3 +55,15 @@ telegram:
   extra:
     base_url: "http://gateway:8080/telegram-api/bot"
     base_file_url: "http://gateway:8080/telegram-api/file/bot"
+
+# =============================================================================
+# OpenAI-compatible API server (port 8642)
+# =============================================================================
+# Requires API_SERVER_KEY env var (injected by agentshroud-secrets.sh).
+# allow_model_override: false — agent uses configured model only.
+api_server:
+  enabled: true
+  host: "0.0.0.0"
+  port: 8642
+  allow_model_override: false
+  cors_origins: []
