@@ -291,3 +291,90 @@ class TestAuditExporter:
         verification = await exporter.verify_export_integrity(tampered_content, "json")
         assert verification["verified"] is False
         assert "Entry hash mismatch" in verification["message"]
+
+
+# ---------------------------------------------------------------------------
+# Multi-bot bot_id support (v1.1.0)
+# ---------------------------------------------------------------------------
+
+
+class TestAuditStoreBotId:
+    """Verify per-bot filtering in AuditStore (v1.1.0 multi-bot support)."""
+
+    @pytest_asyncio.fixture
+    async def store(self, tmp_path):
+        s = AuditStore(db_path=str(tmp_path / "test_audit.db"))
+        await s.initialize()
+        yield s
+        await s.close()
+
+    @pytest.mark.asyncio
+    async def test_log_event_stores_bot_id(self, store):
+        evt = await store.log_event("test", "INFO", {}, "mod", bot_id="hermes")
+        assert evt.bot_id == "hermes"
+
+    @pytest.mark.asyncio
+    async def test_log_event_default_bot_id_is_openclaw(self, store):
+        evt = await store.log_event("test", "INFO", {}, "mod")
+        assert evt.bot_id == "openclaw"
+
+    @pytest.mark.asyncio
+    async def test_query_events_bot_filter(self, store):
+        await store.log_event("ev1", "INFO", {}, "mod", bot_id="openclaw")
+        await store.log_event("ev2", "INFO", {}, "mod", bot_id="hermes")
+        await store.log_event("ev3", "HIGH", {}, "mod", bot_id="hermes")
+
+        oc_events = await store.query_events(bot_id="openclaw")
+        hm_events = await store.query_events(bot_id="hermes")
+        all_events = await store.query_events()
+
+        assert len(oc_events) == 1
+        assert oc_events[0].bot_id == "openclaw"
+        assert len(hm_events) == 2
+        assert all(e.bot_id == "hermes" for e in hm_events)
+        assert len(all_events) == 3
+
+    @pytest.mark.asyncio
+    async def test_query_events_bot_filter_combined_with_severity(self, store):
+        await store.log_event("ev1", "INFO", {}, "mod", bot_id="hermes")
+        await store.log_event("ev2", "HIGH", {}, "mod", bot_id="hermes")
+        await store.log_event("ev3", "HIGH", {}, "mod", bot_id="openclaw")
+
+        results = await store.query_events(bot_id="hermes", severity_min="HIGH")
+        assert len(results) == 1
+        assert results[0].event_type == "ev2"
+
+    @pytest.mark.asyncio
+    async def test_migration_adds_bot_id_column(self, tmp_path):
+        """Opening a pre-migration DB (no bot_id column) should auto-migrate."""
+        import aiosqlite
+
+        db_path = str(tmp_path / "legacy.db")
+
+        # Create a legacy schema without bot_id
+        async with aiosqlite.connect(db_path) as db:
+            await db.execute("""CREATE TABLE audit_events (
+                    id INTEGER PRIMARY KEY AUTOINCREMENT,
+                    event_id TEXT NOT NULL UNIQUE,
+                    event_type TEXT NOT NULL,
+                    severity TEXT NOT NULL,
+                    timestamp TEXT NOT NULL,
+                    source_module TEXT NOT NULL,
+                    details TEXT NOT NULL,
+                    prev_hash TEXT,
+                    entry_hash TEXT NOT NULL
+                )""")
+            await db.commit()
+
+        # Open via AuditStore — should auto-migrate
+        store = AuditStore(db_path=db_path)
+        await store.initialize()
+        evt = await store.log_event("test", "INFO", {}, "mod", bot_id="hermes")
+        assert evt.bot_id == "hermes"
+        await store.close()
+
+    @pytest.mark.asyncio
+    async def test_event_to_dict_includes_bot_id(self, store):
+        evt = await store.log_event("test", "INFO", {}, "mod", bot_id="hermes")
+        d = evt.to_dict()
+        assert d["bot_id"] == "hermes"

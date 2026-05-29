@@ -26,7 +26,7 @@ import os
 import urllib.request
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
-from typing import Any, Optional
+from typing import Any, Dict, List, Optional
 
 from .trivy_report import SEVERITY_ORDER, generate_summary, run_trivy_scan, save_report
 
@@ -120,6 +120,23 @@ def format_cve_report(report: dict[str, Any]) -> str:
     return "\n".join(lines)
 
 
+def _build_image_targets() -> List[str]:
+    """Build the list of container image targets for Trivy image scanning.
+
+    Combines the gateway image, env-var-configured images (AGENTSHROUD_TRIVY_IMAGES),
+    and a placeholder slot for HCI (M8). Deduplicates while preserving order.
+    """
+    gateway_image = "agentshroud-gateway:latest"
+    env_images: List[str] = [
+        t.strip() for t in os.environ.get("AGENTSHROUD_TRIVY_IMAGES", "").split(",") if t.strip()
+    ]
+    # HCI placeholder (M8) — populated via AGENTSHROUD_TRIVY_IMAGES env var until M8 lands.
+    seen: Dict[str, None] = {}
+    for img in [gateway_image] + env_images:
+        seen[img] = None
+    return list(seen.keys())
+
+
 async def run_and_send_cve_report(
     bot_token: str,
     owner_chat_id: str,
@@ -139,7 +156,7 @@ async def run_and_send_cve_report(
     """
     loop = asyncio.get_event_loop()
 
-    # Run Trivy in executor (blocking subprocess).
+    # Run Trivy filesystem scan in executor (blocking subprocess).
     report = await loop.run_in_executor(None, lambda: run_trivy_scan(target=scan_target))
 
     # Persist report to shared volume.
@@ -148,8 +165,48 @@ async def run_and_send_cve_report(
     except Exception as exc:
         logger.warning("Failed to save Trivy report: %s", exc)
 
+    # Run image scans and collect per-image summaries for the digest.
+    image_scan_lines: List[str] = []
+    image_targets = _build_image_targets()
+    for image_target in image_targets:
+        try:
+            _img = image_target  # capture for lambda
+            img_report = await loop.run_in_executor(
+                None,
+                lambda _t=_img: run_trivy_scan(scan_type="image", target=_t),
+            )
+            try:
+                await loop.run_in_executor(
+                    None,
+                    lambda r=img_report: save_report(
+                        r, report_prefix=f"image-{_img.replace(':', '-').replace('/', '-')}-"
+                    ),
+                )
+            except Exception as save_exc:
+                logger.warning(
+                    "Failed to save Trivy image report for %s: %s", image_target, save_exc
+                )
+            if img_report.get("error"):
+                image_scan_lines.append(f"🖼 `{image_target}`: scan error — `{img_report['error']}`")
+            else:
+                n = img_report.get("total_vulnerabilities", 0)
+                crit = (img_report.get("by_severity") or {}).get("CRITICAL", 0)
+                high = (img_report.get("by_severity") or {}).get("HIGH", 0)
+                icon = "🔴" if crit > 0 else "🟠" if high > 0 else "✅"
+                image_scan_lines.append(
+                    f"{icon} `{image_target}`: {n} finding(s)"
+                    + (f" (CRIT:{crit} HIGH:{high})" if crit or high else "")
+                )
+        except Exception as exc:
+            logger.warning("Image scan failed for %s: %s", image_target, exc)
+            image_scan_lines.append(f"🖼 `{image_target}`: scan failed — `{exc}`")
+
     # Format the Telegram message.
     message = format_cve_report(report)
+
+    # Append image scan summary section.
+    if image_scan_lines:
+        message = message + "\n\n*Container Image Scans*\n" + "\n".join(image_scan_lines)
 
     # Send via Telegram Bot API.
     send_ok = False
@@ -170,6 +227,7 @@ async def run_and_send_cve_report(
     summary = generate_summary(report)
     summary["telegram_sent"] = send_ok
     summary["message_preview"] = message[:200]
+    summary["image_scans"] = image_scan_lines
     return summary
 
 

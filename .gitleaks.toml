@@ -27,6 +27,8 @@ paths = [
   '''docs/''',
   '''docker/scap-content/''',
   '''.llm_settings/''',
+  # The ignore file itself references known-fake key strings in comments
+  '''\.gitleaksignore''',
 ]
 
 # Patterns that appear in test fixtures, example configs, or benchmark XML

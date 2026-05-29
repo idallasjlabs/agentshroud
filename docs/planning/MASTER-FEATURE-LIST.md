@@ -341,7 +341,7 @@
 
 ## Apple Reminders — Items Recovered
 
-### SecureClaw Tasks (all overdue, added to v0.8.0):
+### AgentShroud Tasks (all overdue, added to v0.8.0):
 - !!!! AWS access key detection pattern (#added to v0.8.0 bugs)
 - !! Persist approval queue to SQLite (#added to v0.8.0 bugs)
 - !!! Install 1Password CLI on Pi (#added to v0.9.0 infra)

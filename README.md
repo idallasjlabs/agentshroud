@@ -69,7 +69,7 @@ All 76 security modules are now **active in the pipeline** — no stubs, no dead
                            │ HTTPS (Tailscale)
                            ▼
 ┌─────────────────────────────────────────────────────────────┐
-│                  AGENTSHROUD GATEWAY                         │
+│                  AGENTSHROUD GATEWAY  :8080                  │
 │                                                             │
 │  ┌──────────┐  ┌──────────┐  ┌──────────┐  ┌───────────┐  │
 │  │   PII    │  │ Approval │  │  Audit   │  │  Prompt   │  │
@@ -105,15 +105,19 @@ All 76 security modules are now **active in the pipeline** — no stubs, no dead
 │                                                             │
 │  Multi-Agent Router · Auth (HMAC/JWT) · WebSocket Events   │
 │  Web Control Center · Terminal Control Center (TUI)        │
-└──────────────────────────┬──────────────────────────────────┘
-                           │ Filtered & Approved
-                           ▼
-┌─────────────────────────────────────────────────────────────┐
-│              AI AGENT CONTAINER (OpenClaw)                   │
-│  Read-only rootfs · Seccomp · Memory limits · Internet-only │
-│  1Password via op-proxy (token stays on gateway)            │
-└─────────────────────────────────────────────────────────────┘
+└───────────────┬──────────────────────────┬─────────────────┘
+                │ Filtered & Approved       │ Filtered & Approved
+                ▼                           ▼
+┌───────────────────────────┐  ┌───────────────────────────────┐
+│  OpenClaw  (agentshroud-  │  │  Hermes Agent (agentshroud-   │
+│  bot)  :18789             │  │  hermes)  :8642 API           │
+│  Node.js · Telegram bot   │  │  :9119 dashboard · :9121 HCI  │
+│  @agentshroud_bot         │  │  Python · @agentshroud_       │
+│                           │  │  hermes_bot                   │
+└───────────────────────────┘  └───────────────────────────────┘
 ```
+
+**Multi-bot**: v1.1.0 introduces a second bot — Hermes — running alongside OpenClaw behind the same 76-module gateway. Start the full stack (gateway + OpenClaw + Hermes + HCI) with `--profile full`; omit `--profile full` for gateway + OpenClaw only.
 
 **MCP-native**: Any MCP-compatible agent (Claude Code, Gemini CLI, Codex) can plug in without modification. AgentShroud extends MCP with an enterprise governance layer.
 
@@ -255,7 +259,11 @@ Optional: OpenAI API key, Google API key, Slack tokens.
 ### 3. Start the stack
 
 ```bash
+# Gateway + OpenClaw only (default)
 scripts/asb up
+
+# Full stack — adds Hermes agent and HCI control interface
+docker-compose -f docker/docker-compose.yml -p agentshroud --profile full up -d
 ```
 
 Secrets are extracted into a temp directory for the duration of `docker compose up` and cleaned up automatically on exit — nothing persists on disk.

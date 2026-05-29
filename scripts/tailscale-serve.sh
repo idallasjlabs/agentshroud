@@ -11,9 +11,15 @@
 #   sudo ./scripts/tailscale-serve.sh status  # Show current serve config
 #
 # Services exposed:
-#   /           → Gateway API (port 8080)
-#   /ui         → Control UI (port 18790)
-#   /dashboard  → Dashboard (port 8050)
+#   /           → Gateway API (port 8080)         https://<host>/
+#   /ui         → Control UI (port 18790)         https://<host>/ui
+#   /dashboard  → Dashboard (port 8050)           https://<host>/dashboard
+#   :9119/      → Hermes dashboard (port 9119)    https://<host>:9119/
+#   :8642/      → Hermes OpenAI API (port 8642)   https://<host>:8642/v1
+#   :9121/      → HCI admin proxy (port 9121)     https://<host>:9121/
+#
+# Note: Hermes and HCI serves (:9119/:8642/:9121) are only reachable when the
+# full stack is running.  Use `asb up full` (or docker compose --profile full).
 
 set -euo pipefail
 
@@ -27,6 +33,9 @@ fi
 GATEWAY_PORT=8080
 CONTROL_UI_PORT=18790
 DASHBOARD_PORT=8050
+HERMES_DASH_PORT=9119
+HERMES_API_PORT=8642
+HCI_PORT=9121
 
 cmd_start() {
     echo "==> Enabling Tailscale HTTPS serve for AgentShroud services..."
@@ -40,12 +49,26 @@ cmd_start() {
     echo "  → Dashboard on /dashboard → http://127.0.0.1:${DASHBOARD_PORT}"
     tailscale serve --bg --https=443 /dashboard http://127.0.0.1:${DASHBOARD_PORT}
 
+    echo "  → Hermes dashboard :${HERMES_DASH_PORT} → http://127.0.0.1:${HERMES_DASH_PORT}"
+    tailscale serve --bg --https=${HERMES_DASH_PORT} http://127.0.0.1:${HERMES_DASH_PORT}
+
+    echo "  → Hermes OpenAI API :${HERMES_API_PORT} → http://127.0.0.1:${HERMES_API_PORT}"
+    tailscale serve --bg --https=${HERMES_API_PORT} http://127.0.0.1:${HERMES_API_PORT}
+
+    echo "  → HCI admin proxy :${HCI_PORT} → http://127.0.0.1:${HCI_PORT}"
+    tailscale serve --bg --https=${HCI_PORT} http://127.0.0.1:${HCI_PORT}
+
     echo ""
     echo "==> Done. Services are now available at:"
     HOSTNAME=$(tailscale status --self --json | python3 -c "import sys,json; print(json.load(sys.stdin)['Self']['DNSName'].rstrip('.'))" 2>/dev/null || echo "<your-tailscale-hostname>")  # python3 OK here: runs on host, not in conda env
-    echo "  Gateway:   https://${HOSTNAME}/"
-    echo "  Control:   https://${HOSTNAME}/ui"
-    echo "  Dashboard: https://${HOSTNAME}/dashboard"
+    echo "  Gateway:         https://${HOSTNAME}/"
+    echo "  Control:         https://${HOSTNAME}/ui"
+    echo "  Dashboard:       https://${HOSTNAME}/dashboard"
+    echo "  Hermes dashboard:https://${HOSTNAME}:${HERMES_DASH_PORT}/"
+    echo "  Hermes API:      https://${HOSTNAME}:${HERMES_API_PORT}/v1"
+    echo "  HCI:             https://${HOSTNAME}:${HCI_PORT}/"
+    echo ""
+    echo "  (Hermes/HCI URLs require: asb up full)"
 }
 
 cmd_stop() {
@@ -53,6 +76,9 @@ cmd_stop() {
     tailscale serve --https=443 / off 2>/dev/null || true
     tailscale serve --https=443 /ui off 2>/dev/null || true
     tailscale serve --https=443 /dashboard off 2>/dev/null || true
+    tailscale serve --https=${HERMES_DASH_PORT} off 2>/dev/null || true
+    tailscale serve --https=${HERMES_API_PORT} off 2>/dev/null || true
+    tailscale serve --https=${HCI_PORT} off 2>/dev/null || true
     echo "==> All serves disabled."
 }
 

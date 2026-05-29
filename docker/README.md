@@ -51,22 +51,35 @@ curl http://localhost:8080/status
 ```
 ┌─────────────────────────────────────────┐
 │  agentshroud-gateway                     │
-│  - Port: 127.0.0.1:8080 (localhost only)│
+│  - Port: 127.0.0.1:8080 (REST API)      │
+│  - Port: 127.0.0.1:8181 (CONNECT proxy) │
 │  - PII sanitization + audit ledger      │
 │  - Multi-agent routing                  │
 │  - Approval queue (WebSocket)           │
-└──────────────┬──────────────────────────┘
-               │ (Internal Docker network)
-               │ 172.20.0.0/16
-               ▼
-┌─────────────────────────────────────────┐
-│  openclaw-chat                          │
-│  - Port: 18789 (internal only, no host) │
-│  - Isaiah's persona (IDENTITY, SOUL, USER)│
-│  - Security: Non-root, read-only tmpfs  │
-│  - Session isolation enabled            │
-└─────────────────────────────────────────┘
+└──────────┬───────────────────┬──────────┘
+           │  172.20.0.0/16    │  172.21.0.0/16
+           ▼                   ▼
+┌──────────────────┐  ┌────────────────────────────────────┐
+│  agentshroud-bot │  │  agentshroud-hermes  [--profile full│
+│  (OpenClaw)      │  │  - Port: 8642 (OpenAI-compat API)  │
+│  - Port: 18789   │  │  - Port: 9119 (dashboard)          │
+│  - Node.js 22    │  │  - nousresearch/hermes-agent        │
+│  - @agentshroud  │  │  - Python 3.11, non-root (UID 10000│
+│    _bot          │  │  - @agentshroud_hermes_bot          │
+└──────────────────┘  └────────────────────────────────────┘
+                                  │
+                       ┌──────────┘
+                       ▼
+           ┌──────────────────────────────┐
+           │  agentshroud-hci             │
+           │  [--profile full]            │
+           │  - Port: 9121 (Basic-Auth)   │
+           │  - Hermes Control Interface  │
+           └──────────────────────────────┘
 ```
+
+**Profile `full`** starts the complete stack (gateway + OpenClaw + Hermes + HCI).
+Omitting `--profile full` starts gateway + OpenClaw only (original default).
 
 ### Security Features (Implemented)
 
@@ -125,30 +138,67 @@ These are planned but not yet implemented (Phase 3 has no skills, no external co
 ### Start the Stack
 
 ```bash
-docker-compose up -d
+# Gateway + OpenClaw only (default)
+docker-compose -f docker/docker-compose.yml -p agentshroud up -d
+
+# Full stack — gateway + OpenClaw + Hermes + HCI
+docker-compose -f docker/docker-compose.yml -p agentshroud --profile full up -d
 ```
 
 ### Check Status
 
 ```bash
-docker-compose ps
+docker-compose -f docker/docker-compose.yml -p agentshroud ps
 
-# Expected:
-# NAME                STATUS              PORTS
-# agentshroud-gateway  Up (healthy)        127.0.0.1:8080->8080/tcp
-# openclaw-chat       Up (healthy)
+# Default stack (gateway + OpenClaw):
+# NAME                    STATUS              PORTS
+# agentshroud-gateway     Up (healthy)        127.0.0.1:8080->8080/tcp
+# agentshroud-bot         Up (healthy)        127.0.0.1:18789->18789/tcp
+
+# Full stack additionally shows:
+# agentshroud-hermes      Up (healthy)        127.0.0.1:8642->8642/tcp
+#                                             127.0.0.1:9119->9119/tcp
+# agentshroud-hci         Up (healthy)        127.0.0.1:9121->9121/tcp
 ```
+
+### Port Reference
+
+| Container | Port | Purpose |
+|-----------|------|---------|
+| agentshroud-gateway | 8080 | REST API + MCP proxy |
+| agentshroud-gateway | 8181 | HTTP CONNECT proxy (bot egress) |
+| agentshroud-bot (OpenClaw) | 18789 | OpenClaw chat API |
+| agentshroud-bot (OpenClaw) | 18790 | OpenClaw web UI |
+| agentshroud-hermes | 8642 | Hermes OpenAI-compatible API + /health |
+| agentshroud-hermes | 9119 | Hermes agent dashboard |
+| agentshroud-hci | 9121 | Hermes Control Interface (Basic-Auth) |
 
 ### View Logs
 
 ```bash
 # All containers
-docker-compose logs -f
+docker-compose -f docker/docker-compose.yml -p agentshroud logs -f
 
 # Specific container
-docker-compose logs -f gateway
-docker-compose logs -f openclaw
+docker-compose -f docker/docker-compose.yml -p agentshroud logs -f gateway
+docker-compose -f docker/docker-compose.yml -p agentshroud logs -f hermes
 ```
+
+### Hermes / HCI
+
+Hermes and HCI are activated by the `full` compose profile.
+
+**Prerequisites:**
+1. Create `@agentshroud_hermes_bot` via @BotFather on Telegram.
+2. Store the token in the "Agent Shroud Bot Credentials" 1Password vault as item `hermes-telegram`.
+3. Run `docker/setup-secrets.sh store` to pull it into Docker secrets.
+
+**Health check:**
+```bash
+curl http://localhost:8642/health
+```
+
+**HCI (Hermes Control Interface)** is available at `http://localhost:9121` and requires HTTP Basic Auth. Credentials are sourced from Docker secrets at startup.
 
 ### Test Chat
 
@@ -253,6 +303,8 @@ Normal startup produces several warnings that are expected and harmless. This se
 | `NOTE: host-specific token '...' not found — using production token` | scripts/asb | A host-specific Telegram bot token (e.g. `telegram_bot_token_marvin`) was not stored. Falls back to the production token. | ℹ️ Dev only — store a host token if you want a separate dev bot |
 | `WARNING: grammY SDK not found at .../openclaw/node_modules/grammy/...` | patch-telegram-sdk.sh | grammY is bundled inside `openclaw/dist/extensions/telegram/` (not at the legacy top-level path). The OpenClaw dist patch still runs and succeeds — see the following `OpenClaw dist: patched N file(s)` line. | ✅ No action — expected since OpenClaw 2026.x |
 | `op-proxy: disallowed reference blocked` | gateway | The bot requested a 1Password secret whose path isn't in `allowed_op_paths` in `agentshroud.yaml`. This is the gateway enforcing least-privilege on credential access. | ✅ No action unless a legitimate tool needs the path — add it to `allowed_op_paths` in `agentshroud.yaml` |
+| `hermes: waiting for gateway...` | agentshroud-hermes | Hermes performs a readiness check against `http://gateway:8080/status` on startup. The message appears if the gateway container is still initializing. Resolves within a few seconds once the gateway is healthy. | ✅ No action — expected on cold start |
+| `hci: hermes not reachable at :8642` | agentshroud-hci | The HCI startup probe checks Hermes health before opening its own listener. Retries automatically. | ✅ No action — resolves once Hermes passes its health check |
 
 ---
 

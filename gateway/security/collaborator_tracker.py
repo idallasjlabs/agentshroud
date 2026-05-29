@@ -100,6 +100,8 @@ class CollaboratorActivityTracker:
         source: str,
         direction: str = "inbound",
         correlation_id: Optional[str] = None,
+        *,
+        bot_id: Optional[str] = None,
     ) -> None:
         """Append one activity entry for any tracked collaborator or the owner.
 
@@ -110,6 +112,7 @@ class CollaboratorActivityTracker:
             source: Channel (e.g. "telegram", "slack").
             direction: "inbound" (user→bot) or "outbound" (bot→user).
             correlation_id: Optional ID linking an inbound query to its outbound response.
+            bot_id: Optional bot identity (e.g. "openclaw", "hermes") for per-bot filtering.
         """
         uid = str(user_id)
         is_owner = uid == self.owner_user_id
@@ -128,6 +131,7 @@ class CollaboratorActivityTracker:
             "source": source,
             "direction": direction,
             "is_owner": is_owner,
+            "bot_id": bot_id,
         }
         if correlation_id is not None:
             entry["correlation_id"] = correlation_id
@@ -197,13 +201,20 @@ class CollaboratorActivityTracker:
         except (TypeError, ValueError):
             return 0.0
 
-    def get_activity(self, since: float = 0, limit: int = 100, offset: int = 0) -> list[dict]:
+    def get_activity(
+        self,
+        since: float = 0,
+        limit: int = 100,
+        offset: int = 0,
+        bot_id: Optional[str] = None,
+    ) -> list[dict]:
         """Return activity entries sorted newest-first.
 
         Args:
             since: Unix timestamp — only return entries after this time.
             limit: Maximum entries to return (0 = all).
             offset: Skip this many entries after sorting (for pagination).
+            bot_id: When set, only return entries whose bot_id matches this value.
 
         Returns:
             List of activity dicts, newest first.
@@ -230,6 +241,9 @@ class CollaboratorActivityTracker:
 
         # Newest first
         entries.sort(key=lambda e: self._coerce_timestamp(e.get("timestamp", 0)), reverse=True)
+        # Per-bot filter: applied after timestamp filter, before pagination
+        if bot_id is not None:
+            entries = [e for e in entries if e.get("bot_id") == bot_id]
         if offset:
             entries = entries[offset:]
         return entries[:limit] if limit else entries
@@ -238,7 +252,7 @@ class CollaboratorActivityTracker:
         """Return aggregated statistics over all recorded activity.
 
         Returns:
-            Dict with keys: total_messages, unique_users, last_activity, by_user.
+            Dict with keys: total_messages, unique_users, last_activity, by_user, by_bot.
         """
         if not self.log_path.exists():
             return {
@@ -246,11 +260,13 @@ class CollaboratorActivityTracker:
                 "unique_users": 0,
                 "last_activity": None,
                 "by_user": {},
+                "by_bot": {},
             }
 
         total = 0
         last_ts: Optional[float] = None
         by_user: dict[str, dict] = {}
+        by_bot: dict[str, int] = {}
 
         try:
             with self.log_path.open("r", encoding="utf-8") as fh:
@@ -280,6 +296,10 @@ class CollaboratorActivityTracker:
                     if ts > by_user[uid]["last_active"]:
                         by_user[uid]["last_active"] = ts
                         by_user[uid]["username"] = entry.get("username", by_user[uid]["username"])
+
+                    # Per-bot breakdown: entries without bot_id are bucketed as "unknown"
+                    _bid = entry.get("bot_id") or "unknown"
+                    by_bot[_bid] = by_bot.get(_bid, 0) + 1
         except OSError as exc:
             logger.warning("CollaboratorActivityTracker: summary read failed: %s", exc)
 
@@ -288,4 +308,5 @@ class CollaboratorActivityTracker:
             "unique_users": len(by_user),
             "last_activity": last_ts,
             "by_user": by_user,
+            "by_bot": by_bot,
         }

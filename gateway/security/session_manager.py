@@ -37,7 +37,12 @@ class ConversationMessage:
 
 @dataclass
 class UserSession:
-    """Represents an isolated session for a user."""
+    """Represents an isolated session for a user within a specific bot workspace.
+
+    Each (user_id, bot_id) pair has its own workspace, MEMORY.md, and
+    conversation history so that OpenClaw and Hermes sessions cannot bleed
+    into each other even for the same user.
+    """
 
     user_id: str
     workspace_dir: Path
@@ -47,11 +52,16 @@ class UserSession:
     created_at: Optional[str] = None
     last_active: Optional[str] = None
     metadata: Dict[str, Any] = field(default_factory=dict)
+    # bot_id identifies which bot this session belongs to (e.g. "openclaw", "hermes").
+    # Defaults to "openclaw" for backward-compatibility with sessions created before
+    # multi-bot support was added.
+    bot_id: str = "openclaw"
 
     def to_dict(self) -> Dict[str, Any]:
         """Convert session to dictionary for serialization."""
         return {
             "user_id": self.user_id,
+            "bot_id": self.bot_id,
             "workspace_dir": str(self.workspace_dir),
             "memory_file": str(self.memory_file),
             "conversation_history": [
@@ -84,6 +94,7 @@ class UserSession:
 
         return cls(
             user_id=data["user_id"],
+            bot_id=data.get("bot_id", "openclaw"),  # backward-compat default
             workspace_dir=Path(data["workspace_dir"]),
             memory_file=Path(data["memory_file"]),
             conversation_history=history,
@@ -106,7 +117,21 @@ class GroupSession:
 
 
 class UserSessionManager:
-    """Manages per-user session isolation."""
+    """Manages per-user, per-bot session isolation.
+
+    Sessions are keyed by (user_id, bot_id) so that each bot (e.g. "openclaw",
+    "hermes") maintains a fully independent workspace, MEMORY.md, and
+    conversation history for every user.  The session registry stores keys as
+    the string ``"{user_id}::{bot_id}"`` for JSON serialization.
+
+    Backward-compatibility: registries written before multi-bot support use
+    plain ``user_id`` keys.  These are automatically promoted to
+    ``"{user_id}::openclaw"`` on first load.
+    """
+
+    # Separator that cannot appear in a valid user_id (which allows only
+    # alphanumerics, underscores, and hyphens).
+    _KEY_SEP = "::"
 
     def __init__(self, base_workspace: Path, owner_user_id: Optional[str] = None):
         """Initialize session manager.
@@ -117,6 +142,7 @@ class UserSessionManager:
         """
         self.base_workspace = Path(base_workspace)
         self.owner_user_id = owner_user_id
+        # Cache key: "{user_id}::{bot_id}" → UserSession
         self.sessions: Dict[str, UserSession] = {}
         self.session_metadata_file = self.base_workspace / "session_registry.json"
 
@@ -128,15 +154,30 @@ class UserSessionManager:
         # Load existing sessions
         self._load_sessions()
 
+    @classmethod
+    def _session_key(cls, user_id: str, bot_id: str) -> str:
+        """Return the cache key string for a (user_id, bot_id) pair."""
+        return f"{user_id}{cls._KEY_SEP}{bot_id}"
+
     def _load_sessions(self):
-        """Load existing sessions from metadata file."""
+        """Load existing sessions from metadata file.
+
+        Handles both the new ``"{user_id}::{bot_id}"`` key format and the
+        legacy plain ``user_id`` format (promotes to ``"{user_id}::openclaw"``).
+        """
         if self.session_metadata_file.exists():
             try:
                 with open(self.session_metadata_file, "r") as f:
                     sessions_data = json.load(f)
 
-                for user_id, session_data in sessions_data.items():
-                    self.sessions[user_id] = UserSession.from_dict(session_data)
+                for raw_key, session_data in sessions_data.items():
+                    # Promote legacy key (no separator) → openclaw bucket
+                    if self._KEY_SEP not in raw_key:
+                        session_data.setdefault("bot_id", "openclaw")
+                        key = self._session_key(raw_key, "openclaw")
+                    else:
+                        key = raw_key
+                    self.sessions[key] = UserSession.from_dict(session_data)
 
                 logger.info(f"Loaded {len(self.sessions)} user sessions")
             except Exception as e:
@@ -145,9 +186,7 @@ class UserSessionManager:
     def _save_sessions(self):
         """Save current sessions to metadata file."""
         try:
-            sessions_data = {
-                user_id: session.to_dict() for user_id, session in self.sessions.items()
-            }
+            sessions_data = {key: session.to_dict() for key, session in self.sessions.items()}
 
             with open(self.session_metadata_file, "w") as f:
                 json.dump(sessions_data, f, indent=2)
@@ -170,68 +209,113 @@ class UserSessionManager:
             raise ValueError(f"Invalid user_id: too long ({len(user_id)} chars)")
         return user_id
 
-    def get_or_create_session(self, user_id: str) -> UserSession:
-        """Get existing session or create a new one for the user."""
+    @staticmethod
+    def _validate_bot_id(bot_id: str) -> str:
+        """Validate and sanitize bot_id to prevent path traversal.
+
+        Allows alphanumeric characters, underscores, and hyphens (max 32 chars).
+        """
+        import re
+
+        if not bot_id or not re.match(r"^[a-zA-Z0-9_-]+$", bot_id):
+            raise ValueError(f"Invalid bot_id: must be alphanumeric, got {bot_id!r}")
+        if len(bot_id) > 32:
+            raise ValueError(f"Invalid bot_id: too long ({len(bot_id)} chars)")
+        return bot_id
+
+    def get_or_create_session(self, user_id: str, bot_id: str = "openclaw") -> UserSession:
+        """Get existing session or create a new one for the (user_id, bot_id) pair.
+
+        Each bot maintains a fully independent workspace and MEMORY.md per user.
+        The filesystem layout is::
+
+            {base_workspace}/users/{user_id}/bots/{bot_id}/workspace/
+            {base_workspace}/users/{user_id}/bots/{bot_id}/MEMORY.md
+            {base_workspace}/users/{user_id}/bots/{bot_id}/logs/
+
+        Lazy migration: if a legacy ``users/{user_id}/MEMORY.md`` exists and this
+        is the first time the openclaw session is being created for this user, the
+        legacy file is copied to the new location non-destructively.
+        """
         user_id = self._validate_user_id(user_id)
-        if user_id not in self.sessions:
-            session_dir = self.base_workspace / "users" / user_id
+        bot_id = self._validate_bot_id(bot_id)
+        cache_key = self._session_key(user_id, bot_id)
+
+        if cache_key not in self.sessions:
+            # New per-bot layout: users/{user_id}/bots/{bot_id}/
+            session_dir = self.base_workspace / "users" / user_id / "bots" / bot_id
             # Verify resolved path is within base_workspace (defense in depth)
             resolved = session_dir.resolve()
             base_resolved = self.base_workspace.resolve()
             if not str(resolved).startswith(str(base_resolved)):
-                raise ValueError(f"Path traversal detected for user_id: {user_id!r}")
+                raise ValueError(
+                    f"Path traversal detected for user_id={user_id!r} bot_id={bot_id!r}"
+                )
             session_dir.mkdir(parents=True, exist_ok=True)
 
             workspace_dir = session_dir / "workspace"
             memory_file = session_dir / "MEMORY.md"
             logs_dir = session_dir / "logs"
 
-            # Create directories
             workspace_dir.mkdir(exist_ok=True)
             logs_dir.mkdir(exist_ok=True)
 
-            # Create initial memory file
+            # Lazy migration from legacy path (users/{user_id}/MEMORY.md → new location)
+            if not memory_file.exists() and bot_id == "openclaw":
+                legacy_memory = self.base_workspace / "users" / user_id / "MEMORY.md"
+                if legacy_memory.exists():
+                    try:
+                        import shutil
+
+                        shutil.copy2(str(legacy_memory), str(memory_file))
+                        logger.info(f"Migrated legacy MEMORY.md for user {user_id} → {memory_file}")
+                    except Exception as e:
+                        logger.warning(f"Could not migrate legacy MEMORY.md for {user_id}: {e}")
+
+            # Create initial memory file if still absent
             if not memory_file.exists():
-                memory_content = f"""# Session Memory for User {user_id}
-
-This is your personal memory space. Information stored here is private to your session.
-
-## Created
-{datetime.now(timezone.utc).isoformat()}
-
-## Notes
-- This memory is isolated from other users
-- Your conversations and files are private to your session
-- Cross-user data sharing requires explicit consent
-
-"""
+                memory_content = (
+                    f"# Session Memory for User {user_id} ({bot_id})\n\n"
+                    "This is your personal memory space. Information stored here is private to your session.\n\n"
+                    f"## Created\n{datetime.now(timezone.utc).isoformat()}\n\n"
+                    "## Notes\n"
+                    "- This memory is isolated from other users\n"
+                    "- Your conversations and files are private to your session\n"
+                    "- Cross-user data sharing requires explicit consent\n\n"
+                )
                 memory_file.write_text(memory_content)
 
             # Create session object
             session = UserSession(
                 user_id=user_id,
+                bot_id=bot_id,
                 workspace_dir=workspace_dir,
                 memory_file=memory_file,
                 trust_level="UNTRUSTED",
                 created_at=datetime.now(timezone.utc).isoformat(),
             )
 
-            self.sessions[user_id] = session
+            self.sessions[cache_key] = session
             self._save_sessions()
 
-            logger.info(f"Created new session for user {user_id}")
+            logger.info(f"Created new session for user={user_id} bot={bot_id}")
 
         # Update last active timestamp
-        session = self.sessions[user_id]
+        session = self.sessions[cache_key]
         session.last_active = datetime.now(timezone.utc).isoformat()
 
         return session
 
     def add_conversation_message(
-        self, user_id: str, role: str, content: str, metadata: Optional[Dict[str, Any]] = None
+        self,
+        user_id: str,
+        role: str,
+        content: str,
+        metadata: Optional[Dict[str, Any]] = None,
+        bot_id: str = "openclaw",
     ):
-        """Add a message to the user's conversation history."""
-        session = self.get_or_create_session(user_id)
+        """Add a message to the user's conversation history for a specific bot."""
+        session = self.get_or_create_session(user_id, bot_id=bot_id)
 
         message = ConversationMessage(
             role=role,
@@ -248,9 +332,9 @@ This is your personal memory space. Information stored here is private to your s
 
         self._save_sessions()
 
-    def get_session_context(self, user_id: str) -> Dict[str, Any]:
+    def get_session_context(self, user_id: str, bot_id: str = "openclaw") -> Dict[str, Any]:
         """Get session context for injection into agent request."""
-        session = self.get_or_create_session(user_id)
+        session = self.get_or_create_session(user_id, bot_id=bot_id)
 
         # Read current memory content
         memory_content = ""
@@ -258,10 +342,11 @@ This is your personal memory space. Information stored here is private to your s
             try:
                 memory_content = session.memory_file.read_text()
             except Exception as e:
-                logger.error(f"Failed to read memory file for user {user_id}: {e}")
+                logger.error(f"Failed to read memory file for user {user_id} bot {bot_id}: {e}")
 
         return {
             "user_id": user_id,
+            "bot_id": bot_id,
             "workspace_path": str(session.workspace_dir),
             "memory_path": str(session.memory_file),
             "memory_content": memory_content,
@@ -272,13 +357,13 @@ This is your personal memory space. Information stored here is private to your s
             ],
         }
 
-    def get_session_prompt_addition(self, user_id: str) -> str:
+    def get_session_prompt_addition(self, user_id: str, bot_id: str = "openclaw") -> str:
         """Get session-specific prompt addition for the agent."""
-        session = self.get_or_create_session(user_id)
+        session = self.get_or_create_session(user_id, bot_id=bot_id)
 
         return f"""
 SESSION CONTEXT:
-You are currently in an isolated session with user {user_id}.
+You are currently in an isolated session with user {user_id} via bot {bot_id}.
 Your workspace is at {session.workspace_dir}
 Your memory file is at {session.memory_file}
 User trust level: {session.trust_level}
@@ -304,25 +389,31 @@ USER SESSION TRUST LEVEL: {session.trust_level}
         return requesting_user_id == target_user_id
 
     def list_sessions_for_user(self, requesting_user_id: str) -> List[str]:
-        """List sessions that the requesting user is allowed to see."""
+        """List session keys that the requesting user is allowed to see.
+
+        Returns the full cache keys (``"user_id::bot_id"`` format) so callers
+        can distinguish sessions across bots.
+        """
         if self.owner_user_id and requesting_user_id == self.owner_user_id:
             # Owner can see all sessions
             return list(self.sessions.keys())
         else:
-            # Regular users can only see their own session
-            return [requesting_user_id] if requesting_user_id in self.sessions else []
+            # Regular users can only see their own sessions (across all bots)
+            prefix = f"{requesting_user_id}{self._KEY_SEP}"
+            exact = self._session_key(requesting_user_id, "openclaw")
+            return [k for k in self.sessions if k.startswith(prefix) or k == exact]
 
-    def get_user_workspace_path(self, user_id: str) -> str:
-        """Get the workspace path for a user."""
-        session = self.get_or_create_session(user_id)
+    def get_user_workspace_path(self, user_id: str, bot_id: str = "openclaw") -> str:
+        """Get the workspace path for a user within a bot's namespace."""
+        session = self.get_or_create_session(user_id, bot_id=bot_id)
         return str(session.workspace_dir)
 
-    def update_user_trust_level(self, user_id: str, trust_level: str):
-        """Update the trust level for a user."""
-        session = self.get_or_create_session(user_id)
+    def update_user_trust_level(self, user_id: str, trust_level: str, bot_id: str = "openclaw"):
+        """Update the trust level for a user within a bot's namespace."""
+        session = self.get_or_create_session(user_id, bot_id=bot_id)
         session.trust_level = trust_level
         self._save_sessions()
-        logger.info(f"Updated trust level for user {user_id} to {trust_level}")
+        logger.info(f"Updated trust level for user {user_id} bot {bot_id} to {trust_level}")
 
     def cleanup_old_sessions(self, days_inactive: int = 90):
         """Clean up sessions that haven't been active for the specified number of days."""
@@ -331,18 +422,18 @@ USER SESSION TRUST LEVEL: {session.trust_level}
         cutoff_timestamp = time.time() - (days_inactive * 24 * 60 * 60)
 
         sessions_to_remove = []
-        for user_id, session in self.sessions.items():
+        for cache_key, session in self.sessions.items():
             if session.last_active:
                 try:
                     last_active = datetime.fromisoformat(session.last_active.replace("Z", "+00:00"))
                     if last_active.timestamp() < cutoff_timestamp:
-                        sessions_to_remove.append(user_id)
+                        sessions_to_remove.append(cache_key)
                 except Exception as e:
-                    logger.error(f"Error parsing last_active for user {user_id}: {e}")
+                    logger.error(f"Error parsing last_active for session {cache_key}: {e}")
 
-        for user_id in sessions_to_remove:
-            logger.info(f"Cleaning up inactive session for user {user_id}")
-            del self.sessions[user_id]
+        for cache_key in sessions_to_remove:
+            logger.info(f"Cleaning up inactive session {cache_key}")
+            del self.sessions[cache_key]
 
         if sessions_to_remove:
             self._save_sessions()

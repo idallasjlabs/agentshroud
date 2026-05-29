@@ -55,6 +55,9 @@ class CredentialMapping:
     secret_file: str  # path to secret file in /run/secrets/
     header_prefix: str = ""  # e.g., "Bearer " for Authorization headers
     strip_headers: List[str] = field(default_factory=list)  # headers to remove before injecting
+    extra_headers: Dict[str, str] = field(
+        default_factory=dict
+    )  # additional headers to set/merge after injection
     loaded_value: Optional[str] = field(default=None, repr=False)
 
 
@@ -91,6 +94,8 @@ class CredentialInjector:
                 header_prefix="Bearer ",
                 # OpenClaw sends x-api-key; strip it so Anthropic sees only the Bearer token
                 strip_headers=["x-api-key"],
+                # OAuth tokens require this beta header; merge with any existing flags
+                extra_headers={"anthropic-beta": "oauth-2025-04-20"},
             ),
             CredentialMapping(
                 domain="api.openai.com",
@@ -148,14 +153,32 @@ class CredentialInjector:
 
         mapping = self._domain_map.get(destination_domain)
         if mapping and mapping.loaded_value:
+            # inject-if-absent: skip when Authorization: Bearer is already present (protects
+            # clients that manage their own OAuth tokens, e.g. OpenClaw runtime refresh).
+            existing_auth = headers.get("Authorization") or headers.get("authorization", "")
+            if existing_auth.startswith("Bearer "):
+                return headers
+
             # Strip conflicting auth headers (e.g. x-api-key when injecting Bearer)
             for strip_hdr in mapping.strip_headers:
                 headers.pop(strip_hdr, None)
-                # Headers are case-insensitive in HTTP; check common casings
                 headers.pop(strip_hdr.lower(), None)
                 headers.pop(strip_hdr.title(), None)
             headers[mapping.header_name] = f"{mapping.header_prefix}{mapping.loaded_value}"
             logger.debug(f"Injected credential for {destination_domain}")
+
+            # Merge extra_headers (comma-join for multi-value headers, no duplicate values)
+            for hdr_key, hdr_val in mapping.extra_headers.items():
+                hdr_key_lower = hdr_key.lower()
+                matched = next((k for k in headers if k.lower() == hdr_key_lower), None)
+                existing = headers.pop(matched, "") if matched else ""
+                if existing:
+                    existing_vals = [v.strip() for v in existing.split(",")]
+                    headers[hdr_key] = (
+                        existing if hdr_val in existing_vals else f"{existing},{hdr_val}"
+                    )
+                else:
+                    headers[hdr_key] = hdr_val
 
         return headers
 

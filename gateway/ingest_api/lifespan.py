@@ -206,7 +206,7 @@ async def lifespan(app: FastAPI):
                 container_name=f"agentshroud-{bot_id}",
                 network=f"agentshroud-{bot_id}-net",
                 volume=f"agentshroud-{bot_id}-workspace",
-                image=f"agentshroud/{bot_id}:latest",
+                image=bot.image or f"agentshroud/{bot_id}:latest",
             )
             app_state.agent_registry.register(container_cfg)
             logger.info("AgentRegistry: registered bot '%s'", bot_id)
@@ -275,12 +275,15 @@ async def lifespan(app: FastAPI):
 
     try:
         app_state.trust_manager = TrustManager()
-        app_state.trust_manager.register_agent("default")
-        # Elevate default agent to STANDARD so internal API calls work
-        app_state.trust_manager._conn.execute(
-            "UPDATE trust_scores SET score = 200, level = ? WHERE agent_id = ?",
-            (int(TrustLevel.STANDARD), "default"),
-        )
+        # Register the known agent identities with STANDARD trust so internal
+        # API calls are not blocked. "default" is the legacy fallback;
+        # "openclaw" and "hermes" are the production bot_ids.
+        for _agent_id in ("default", "openclaw", "hermes"):
+            app_state.trust_manager.register_agent(_agent_id)
+            app_state.trust_manager._conn.execute(
+                "UPDATE trust_scores SET score = 200, level = ? WHERE agent_id = ?",
+                (int(TrustLevel.STANDARD), _agent_id),
+            )
         app_state.trust_manager._conn.commit()
         logger.info("TrustManager initialized")
     except Exception as e:
@@ -363,12 +366,28 @@ async def lifespan(app: FastAPI):
             "telegram_bot_token"
         )
         if _tg_token_egress:
+            # Build per-bot token map so egress approval notifications arrive via the
+            # correct bot when Hermes (or any future bot) triggers an egress request.
+            # Reads each bot's telegram_token_secret from /run/secrets/ at startup.
+            _per_bot_tokens: dict[str, str] = {}
+            for _bid, _bcfg in app_state.config.bots.items():
+                _secret_name = getattr(_bcfg, "telegram_token_secret", None) or (
+                    "telegram_bot_token" if _bid == "openclaw" else f"telegram_bot_token_{_bid}"
+                )
+                _bot_tok = _read_secret(_secret_name) or None
+                if _bot_tok and _bot_tok != _tg_token_egress:
+                    _per_bot_tokens[_bid] = _bot_tok
+                    logger.info("EgressTelegramNotifier: registered per-bot token for '%s'", _bid)
             app_state.egress_notifier = EgressTelegramNotifier(
                 bot_token=_tg_token_egress,
                 owner_chat_id=RBACConfig().owner_user_id,
+                per_bot_tokens=_per_bot_tokens if _per_bot_tokens else None,
             )
             app_state.egress_filter.set_notifier(app_state.egress_notifier)
-            logger.info("EgressTelegramNotifier wired")
+            logger.info(
+                "EgressTelegramNotifier wired (per-bot tokens: %s)",
+                list(_per_bot_tokens.keys()) or "none",
+            )
         else:
             app_state.egress_notifier = None
             logger.warning("EgressTelegramNotifier skipped — TELEGRAM_BOT_TOKEN not set")
@@ -573,6 +592,7 @@ async def lifespan(app: FastAPI):
             pipeline=app_state.pipeline,
             middleware_manager=app_state.middleware_manager,
             sanitizer=app_state.sanitizer,
+            credential_injector=getattr(app_state.middleware_manager, "credential_injector", None),
         )
         logger.info("LLM proxy initialized")
     except Exception as e:
@@ -1154,9 +1174,43 @@ async def lifespan(app: FastAPI):
         # CONNECT proxy domain policy runs in monitor mode so interactive egress
         # approvals can decide unknown outbound destinations at runtime.
         _web_proxy = WebProxy(config=WebProxyConfig(mode="monitor", allowed_domains=_proxy_domains))
+
+        # Build source-IP → bot_id registry so the HTTP proxy can attribute each
+        # CONNECT request to the correct bot (instead of the generic "http_connect_proxy"
+        # label). Resolves each bot's hostname at startup; silently skips on failure.
+        import socket as _socket
+
+        _ip_bot_registry: dict[str, str] = {}
+        for _bid, _bcfg in app_state.config.bots.items():
+            _bhost = getattr(_bcfg, "hostname", None)
+            if _bhost:
+                try:
+                    for _info in _socket.getaddrinfo(_bhost, None):
+                        _ip = _info[4][0]
+                        _ip_bot_registry[_ip] = _bid
+                except Exception as _dns_err:
+                    logger.debug(
+                        "IP→bot registry: could not resolve '%s' for bot '%s': %s",
+                        _bhost,
+                        _bid,
+                        _dns_err,
+                    )
+        if _ip_bot_registry:
+            logger.info(
+                "HTTP CONNECT proxy IP→bot registry: %s",
+                {v: k for k, v in _ip_bot_registry.items()},
+            )
+
+        _bot_hostnames = {
+            bid: bcfg.hostname
+            for bid, bcfg in app_state.config.bots.items()
+            if getattr(bcfg, "hostname", None)
+        }
         app_state.http_proxy = HTTPConnectProxy(
             web_proxy=_web_proxy,
             egress_filter=getattr(app_state, "egress_filter", None),
+            ip_to_bot_registry=_ip_bot_registry or None,
+            bot_hostnames=_bot_hostnames or None,
         )
         await app_state.http_proxy.start()
         logger.info("HTTP CONNECT proxy started on port 8181")
@@ -1437,7 +1491,7 @@ async def lifespan(app: FastAPI):
                             "status": "critical" if infected > 0 else "clean",
                         }
                     )
-                elif scanner == "trivy":
+                elif scanner == "trivy" or scanner.startswith("trivy:"):
                     bsev = result.get("by_severity", {}) or {}
                     summary.update(
                         {
@@ -1499,13 +1553,15 @@ async def lifespan(app: FastAPI):
             except Exception as _exc:
                 logger.warning("Startup ClamAV scan failed: %s", _exc)
 
-        # Trivy
+        # Trivy — filesystem scan of /app
         _trivy = getattr(app_state, "trivy_scanner", None)
         if _trivy:
             try:
                 _trivy_result = await _loop.run_in_executor(
                     None, lambda: _trivy.run_trivy_scan(scan_type="fs", target="/app", timeout=300)
                 )
+                # Keyed by compound key; also store under legacy "trivy" for backward compat
+                _store_result("trivy:fs:/app", _trivy_result, target="/app")
                 _store_result("trivy", _trivy_result, target="/app")
                 _trivy_status = (
                     (app_state.scanner_results or {})
@@ -1514,11 +1570,63 @@ async def lifespan(app: FastAPI):
                     .get("status")
                 )
                 if _trivy_status in ("error", "critical"):
-                    logger.warning("⚠ Startup Trivy scan complete (status=%s)", _trivy_status)
+                    logger.warning("⚠ Startup Trivy fs scan complete (status=%s)", _trivy_status)
                 else:
-                    logger.info("✓ Startup Trivy scan complete (status=%s)", _trivy_status)
+                    logger.info("✓ Startup Trivy fs scan complete (status=%s)", _trivy_status)
             except Exception as _exc:
-                logger.warning("Startup Trivy scan failed: %s", _exc)
+                logger.warning("Startup Trivy fs scan failed: %s", _exc)
+
+            # Trivy — container image scans
+            try:
+                import os as _os_trivy
+
+                _gateway_image = "agentshroud-gateway:latest"
+                _bot_images = [
+                    b.image
+                    for b in (getattr(app_state.config, "bots", None) or {}).values()
+                    if getattr(b, "image", None)
+                ]
+                _env_images = [
+                    t.strip()
+                    for t in _os_trivy.environ.get("AGENTSHROUD_TRIVY_IMAGES", "").split(",")
+                    if t.strip()
+                ]
+                _image_targets = list(
+                    dict.fromkeys(
+                        img for img in [_gateway_image] + _bot_images + _env_images if img
+                    )
+                )
+                for _image_target in _image_targets:
+                    try:
+                        _img = _image_target  # capture loop variable for lambda
+                        _img_result = await _loop.run_in_executor(
+                            None,
+                            lambda _t=_img: _trivy.run_trivy_scan(
+                                scan_type="image", target=_t, timeout=300
+                            ),
+                        )
+                        _store_result(
+                            f"trivy:image:{_image_target}", _img_result, target=_image_target
+                        )
+                        _img_status = (
+                            (app_state.scanner_results or {})
+                            .get(f"trivy:image:{_image_target}", {})
+                            .get("summary", {})
+                            .get("status")
+                        )
+                        logger.info(
+                            "✓ Startup Trivy image scan complete (image=%s status=%s)",
+                            _image_target,
+                            _img_status,
+                        )
+                    except Exception as _img_exc:
+                        logger.warning(
+                            "Startup Trivy image scan failed (image=%s): %s",
+                            _image_target,
+                            _img_exc,
+                        )
+            except Exception as _exc:
+                logger.warning("Startup Trivy image scan loop failed: %s", _exc)
 
     app_state._startup_scanner_task = _asyncio.create_task(_startup_scanner())
     logger.info("✓ Startup security scanner scheduled (runs in 30s)")
@@ -1632,6 +1740,197 @@ async def lifespan(app: FastAPI):
         app_state._canvas_proxy_task = None
         logger.info("Canvas auth-proxy disabled via CANVAS_PROXY_ENABLED=false")
 
+    # Hermes Dashboard TCP Forwarder: gateway:9119 → agentshroud-hermes:9119.
+    # Hermes is on agentshroud-isolated (internal:true) so its port cannot be
+    # published directly.  The gateway forwards at the TCP level so both HTTP
+    # and WebSocket connections work transparently.
+    #
+    # Security scan assessment — WHY the SecurityPipeline is NOT wired here:
+    #   This is a raw TCP tunnel for an owner-facing control UI (human → dashboard).
+    #   The threat model for agent traffic (prompt injection, PII exfiltration,
+    #   unauthorised egress) does not apply to a human browsing their own dashboard.
+    #   No auth layer is added here; access control relies on Tailscale network
+    #   membership (tailscale serve proxies 127.0.0.1:9119, tailnet-only ACL).
+    #   Re-evaluate if: (a) the dashboard is exposed beyond the tailnet, or
+    #   (b) the dashboard begins relaying agent-generated content to third parties.
+    _hermes_dash_port = int(os.environ.get("HERMES_DASHBOARD_PROXY_PORT", "9119"))
+    _hermes_dash_host = os.environ.get("HERMES_DASHBOARD_HOST_UPSTREAM", "agentshroud-hermes")
+    _hermes_dash_upstream_port = int(os.environ.get("HERMES_DASHBOARD_UPSTREAM_PORT", "9119"))
+    _hermes_dash_enabled = os.environ.get("HERMES_DASHBOARD_PROXY_ENABLED", "true").lower() not in (
+        "false",
+        "0",
+        "no",
+    )
+
+    async def _run_hermes_dashboard_forwarder() -> None:
+        async def _pipe(reader: _asyncio.StreamReader, writer: _asyncio.StreamWriter) -> None:
+            try:
+                while True:
+                    chunk = await reader.read(65536)
+                    if not chunk:
+                        break
+                    writer.write(chunk)
+                    await writer.drain()
+            except Exception:
+                pass
+            finally:
+                try:
+                    writer.close()
+                except Exception:
+                    pass
+
+        async def _handle(reader: _asyncio.StreamReader, writer: _asyncio.StreamWriter) -> None:
+            try:
+                r2, w2 = await _asyncio.open_connection(
+                    _hermes_dash_host, _hermes_dash_upstream_port
+                )
+            except Exception:
+                try:
+                    writer.write(b"HTTP/1.1 502 Bad Gateway\r\nContent-Length: 0\r\n\r\n")
+                    await writer.drain()
+                    writer.close()
+                except Exception:
+                    pass
+                return
+            await _asyncio.gather(_pipe(reader, w2), _pipe(r2, writer), return_exceptions=True)
+
+        try:
+            _fwd_server = await _asyncio.start_server(_handle, "0.0.0.0", _hermes_dash_port)
+            async with _fwd_server:
+                await _fwd_server.serve_forever()
+        except OSError as _ose:
+            logger.warning(
+                "⚠ Hermes dashboard forwarder port %d unavailable: %s",
+                _hermes_dash_port,
+                _ose,
+            )
+        except Exception as _exc:
+            logger.warning("⚠ Hermes dashboard forwarder error: %s", _exc)
+
+    if _hermes_dash_enabled:
+        app_state._hermes_dash_task = _asyncio.create_task(_run_hermes_dashboard_forwarder())
+        logger.info(
+            "✓ Hermes dashboard forwarder scheduled on port %d → %s:%d",
+            _hermes_dash_port,
+            _hermes_dash_host,
+            _hermes_dash_upstream_port,
+        )
+    else:
+        app_state._hermes_dash_task = None
+
+    # Hermes OpenAI-compatible API TCP Forwarder: gateway:8642 → agentshroud-hermes:8642.
+    # Hermes is on agentshroud-isolated (internal:true) so its port cannot be
+    # published directly.  The gateway forwards at the TCP level.
+    #
+    # Security note: This forwarder intentionally bypasses inbound PromptGuard by
+    # design.  Access control is provided by:
+    #   1. API_SERVER_KEY — Hermes rejects requests without a valid bearer token.
+    #   2. 127.0.0.1 binding — only reachable via Tailscale (tailscale serve).
+    #   3. Outbound actions from Hermes are still gateway-enveloped via
+    #      HTTP_PROXY=http://gateway:8181 (EgressFilter + approval queue).
+    _hermes_api_port = int(os.environ.get("HERMES_API_PROXY_PORT", "8642"))
+    _hermes_api_host = os.environ.get("HERMES_API_HOST_UPSTREAM", "agentshroud-hermes")
+    _hermes_api_upstream_port = int(os.environ.get("HERMES_API_UPSTREAM_PORT", "8642"))
+    _hermes_api_enabled = os.environ.get("HERMES_API_PROXY_ENABLED", "1").lower() not in (
+        "false",
+        "0",
+        "no",
+    )
+
+    async def _run_hermes_api_forwarder() -> None:
+        async def _pipe(reader: _asyncio.StreamReader, writer: _asyncio.StreamWriter) -> None:
+            try:
+                while True:
+                    chunk = await reader.read(65536)
+                    if not chunk:
+                        break
+                    writer.write(chunk)
+                    await writer.drain()
+            except Exception:
+                pass
+            finally:
+                try:
+                    writer.close()
+                except Exception:
+                    pass
+
+        async def _handle(reader: _asyncio.StreamReader, writer: _asyncio.StreamWriter) -> None:
+            try:
+                r2, w2 = await _asyncio.open_connection(_hermes_api_host, _hermes_api_upstream_port)
+            except Exception:
+                try:
+                    writer.write(b"HTTP/1.1 502 Bad Gateway\r\nContent-Length: 0\r\n\r\n")
+                    await writer.drain()
+                    writer.close()
+                except Exception:
+                    pass
+                return
+            await _asyncio.gather(_pipe(reader, w2), _pipe(r2, writer), return_exceptions=True)
+
+        try:
+            _fwd_server = await _asyncio.start_server(_handle, "0.0.0.0", _hermes_api_port)
+            async with _fwd_server:
+                await _fwd_server.serve_forever()
+        except OSError as _ose:
+            logger.warning(
+                "⚠ Hermes API forwarder port %d unavailable: %s",
+                _hermes_api_port,
+                _ose,
+            )
+        except Exception as _exc:
+            logger.warning("⚠ Hermes API forwarder error: %s", _exc)
+
+    if _hermes_api_enabled:
+        app_state._hermes_api_task = _asyncio.create_task(_run_hermes_api_forwarder())
+        logger.info(
+            "✓ Hermes API forwarder scheduled on port %d → %s:%d",
+            _hermes_api_port,
+            _hermes_api_host,
+            _hermes_api_upstream_port,
+        )
+    else:
+        app_state._hermes_api_task = None
+
+    # HCI (Hermes Control Interface) Auth-Gated Reverse Proxy: gateway:9121 → hci:3000.
+    # Validates gateway password via HTTP Basic Auth before forwarding to the
+    # agentshroud-hci container on the agentshroud-isolated network.
+    _hci_port = int(os.environ.get("HCI_PROXY_PORT", "9121"))
+    _hci_enabled = os.environ.get("HCI_PROXY_ENABLED", "true").lower() not in (
+        "false",
+        "0",
+        "no",
+    )
+
+    async def _run_hci_proxy() -> None:
+        import uvicorn as _uvicorn
+
+        from ..proxy.hci_proxy import hci_proxy_app as _hci_app
+
+        try:
+            _hci_config = _uvicorn.Config(
+                _hci_app,
+                host="0.0.0.0",
+                port=_hci_port,
+                loop="asyncio",
+                log_config=None,
+                access_log=False,
+            )
+            _hci_server = _uvicorn.Server(_hci_config)
+            await _hci_server.serve()
+        except OSError as _ose:
+            logger.warning("⚠ HCI auth-proxy port %d unavailable: %s", _hci_port, _ose)
+        except SystemExit:
+            logger.warning("⚠ HCI auth-proxy port %d unavailable (bind failed)", _hci_port)
+        except Exception as _exc:
+            logger.warning("⚠ HCI auth-proxy error: %s", _exc)
+
+    if _hci_enabled:
+        app_state._hci_proxy_task = _asyncio.create_task(_run_hci_proxy())
+        logger.info("✓ HCI auth-proxy scheduled on port %d", _hci_port)
+    else:
+        app_state._hci_proxy_task = None
+        logger.info("HCI auth-proxy disabled via HCI_PROXY_ENABLED=false")
+
     install_log_handler()
     logger.info(f"AgentShroud Gateway ready at {app_state.config.bind}:{app_state.config.port}")
     logger.info("=" * 80)
@@ -1681,6 +1980,33 @@ async def lifespan(app: FastAPI):
         canvas_proxy_task.cancel()
         try:
             await canvas_proxy_task
+        except asyncio.CancelledError:
+            pass
+
+    # Stop Hermes dashboard TCP forwarder
+    hermes_dash_task = getattr(app_state, "_hermes_dash_task", None)
+    if hermes_dash_task and not hermes_dash_task.done():
+        hermes_dash_task.cancel()
+        try:
+            await hermes_dash_task
+        except asyncio.CancelledError:
+            pass
+
+    # Stop Hermes API TCP forwarder
+    hermes_api_task = getattr(app_state, "_hermes_api_task", None)
+    if hermes_api_task and not hermes_api_task.done():
+        hermes_api_task.cancel()
+        try:
+            await hermes_api_task
+        except asyncio.CancelledError:
+            pass
+
+    # Stop HCI auth-proxy
+    hci_proxy_task = getattr(app_state, "_hci_proxy_task", None)
+    if hci_proxy_task and not hci_proxy_task.done():
+        hci_proxy_task.cancel()
+        try:
+            await hci_proxy_task
         except asyncio.CancelledError:
             pass
 

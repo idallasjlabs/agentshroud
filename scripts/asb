@@ -84,7 +84,10 @@ setup_ephemeral_secrets() {
               1password_bot_email 1password_bot_master_password 1password_bot_secret_key \
               telegram_bot_token_production telegram_bot_token_marvin \
               telegram_bot_token_trillian telegram_bot_token_rpi \
-              slack_bot_token slack_signing_secret slack_app_token; do
+              slack_bot_token slack_signing_secret slack_app_token \
+              hermes_telegram_bot_token hermes_api_key \
+              slack_bot_token_hermes slack_app_token_hermes \
+              brave_api_key github_pat; do
     touch "$tmpdir/${name}.txt"
   done
 
@@ -138,6 +141,18 @@ secrets:
     file: ${tmpdir}/slack_signing_secret.txt
   slack_app_token:
     file: ${tmpdir}/slack_app_token.txt
+  hermes_telegram_bot_token:
+    file: ${tmpdir}/hermes_telegram_bot_token.txt
+  hermes_api_key:
+    file: ${tmpdir}/hermes_api_key.txt
+  slack_bot_token_hermes:
+    file: ${tmpdir}/slack_bot_token_hermes.txt
+  slack_app_token_hermes:
+    file: ${tmpdir}/slack_app_token_hermes.txt
+  brave_api_key:
+    file: ${tmpdir}/brave_api_key.txt
+  github_pat:
+    file: ${tmpdir}/github_pat.txt
 YAML
 
   # ── Step 3: Extract real secrets from credential backend (best-effort).
@@ -182,6 +197,18 @@ secrets:
     file: ${tmpdir}/slack_signing_secret.txt
   slack_app_token:
     file: ${tmpdir}/slack_app_token.txt
+  hermes_telegram_bot_token:
+    file: ${tmpdir}/hermes_telegram_bot_token.txt
+  hermes_api_key:
+    file: ${tmpdir}/hermes_api_key.txt
+  slack_bot_token_hermes:
+    file: ${tmpdir}/slack_bot_token_hermes.txt
+  slack_app_token_hermes:
+    file: ${tmpdir}/slack_app_token_hermes.txt
+  brave_api_key:
+    file: ${tmpdir}/brave_api_key.txt
+  github_pat:
+    file: ${tmpdir}/github_pat.txt
 YAML
   fi
 
@@ -275,35 +302,44 @@ case "${1:-}" in
     $COMPOSE build --no-cache
     ;;
   up)
+    _PROFILE_FLAG=""
+    [[ "${2:-}" == "full" ]] && _PROFILE_FLAG="--profile full"
     setup_ephemeral_secrets
-    $COMPOSE up -d
+    $COMPOSE $_PROFILE_FLAG up -d
     bash "$REPO_DIR/scripts/post-deploy-check.sh" || true
     ;;
   down)
-    $COMPOSE down
+    # --profile full ensures Hermes + HCI are stopped if running
+    $COMPOSE --profile full down
     rm -rf "$HOME/.agentshroud/.asb-secrets"
     ;;
   rebuild)
-    $COMPOSE down 2>/dev/null || true
+    _PROFILE_FLAG=""
+    [[ "${2:-}" == "full" ]] && _PROFILE_FLAG="--profile full"
+    $COMPOSE --profile full down 2>/dev/null || true
     _prune_docker
     setup_ephemeral_secrets
-    $COMPOSE build --no-cache && $COMPOSE up -d
+    $COMPOSE build --no-cache && $COMPOSE $_PROFILE_FLAG up -d
     _reset_device_store
     bash "$REPO_DIR/scripts/post-deploy-check.sh" || true
     ;;
   clean-rebuild)
+    _PROFILE_FLAG=""
+    [[ "${2:-}" == "full" ]] && _PROFILE_FLAG="--profile full"
     echo "This will remove containers, prune stale volumes, and rebuild from scratch."
     echo "Persistent data (workspace, config, SSH keys, browsers) is PRESERVED."
+    echo "hermes-config volume is NEVER deleted (preserves Hermes state across rebuilds)."
     read -r -p "Continue? [y/N] " confirm
     [[ "$confirm" =~ ^[Yy]$ ]] || { echo "Aborted."; exit 0; }
-    $COMPOSE down
+    $COMPOSE --profile full down
     for vol in gateway-data clamav-db; do
       docker volume rm "${PROJECT}_${vol}" 2>/dev/null && echo "  Removed ${PROJECT}_${vol}" || true
     done
+    # hermes-config is intentionally excluded — it persists Hermes skills, cron, MCP, memory
     _prune_docker
     setup_ephemeral_secrets
     $COMPOSE build --no-cache
-    $COMPOSE up -d
+    $COMPOSE $_PROFILE_FLAG up -d
     _reset_device_store
     echo "Clean rebuild complete."
     ;;
@@ -365,7 +401,8 @@ case "${1:-}" in
     docker ps --filter "name=agentshroud" --format "table {{.Names}}\t{{.Ports}}\t{{.Status}}" 2>/dev/null || echo "No running instances found"
     ;;
   *)
-    echo "Usage: asb {build|up|down|rebuild|clean-rebuild|prune|pull|status|logs [service]|test|canary [service]|rollback|instances}"
+    echo "Usage: asb {build|up [full]|down|rebuild [full]|clean-rebuild [full]|prune|pull|status|logs [service]|test|canary [service]|rollback|instances}"
+    echo "  Add 'full' to up/rebuild/clean-rebuild to start Hermes + HCI (--profile full)"
     exit 1
     ;;
 esac

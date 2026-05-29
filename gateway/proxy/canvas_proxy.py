@@ -21,6 +21,15 @@ Auth: HTTP Basic Auth
   - Password: contents of GATEWAY_AUTH_TOKEN_FILE (/run/secrets/gateway_password)
 
 WebSocket: auth via Authorization header on the initial HTTP upgrade.
+
+Security scan assessment — WHY the SecurityPipeline is NOT wired here:
+  These are owner-facing control UI connections (human → dashboard), not agent
+  outputs. The threat model for agent traffic (prompt injection, PII exfiltration,
+  unauthorised egress) does not apply to a human browsing their own control panel.
+  Running PII redaction or prompt-guard on dashboard HTML/JS/API responses would
+  add latency with no meaningful security gain. The relevant control here is auth
+  (already present) + network isolation (Tailscale-only, 127.0.0.1 binding).
+  Re-evaluate if the dashboard ever relays agent-generated content to third parties.
 """
 
 from __future__ import annotations

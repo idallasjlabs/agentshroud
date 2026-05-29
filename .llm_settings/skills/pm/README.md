@@ -5,7 +5,7 @@
 
 ## Purpose
 
-Project Manager for the SecureClaw project. Tracks phases, coordinates agents, maintains continuity files, and ensures team delivery on roadmap. Use for sprint tracking, status reporting, and session continuity.
+Project Manager for the AgentShroud project. Tracks phases, coordinates agents, maintains continuity files, and ensures team delivery on roadmap. Use for sprint tracking, status reporting, and session continuity.
 
 ## Usage
 

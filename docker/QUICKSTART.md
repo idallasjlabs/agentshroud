@@ -40,35 +40,45 @@ ls -la secrets/anthropic_api_key.txt
 ### Start Everything
 
 ```bash
-# From docker directory
-docker-compose up -d
+# Gateway + OpenClaw only (default)
+docker-compose -f docker/docker-compose.yml -p agentshroud up -d
 
-# Expected output:
-# Creating network "docker_agentshroud-internal"
-# Creating volume "docker_gateway-data"
-# Creating volume "docker_openclaw-data"
-# Building gateway...
-# Building openclaw...
-# Creating agentshroud-gateway ... done
-# Creating openclaw-chat       ... done
+# Full stack — gateway + OpenClaw + Hermes agent + HCI
+docker-compose -f docker/docker-compose.yml -p agentshroud --profile full up -d
 ```
 
 ### Check Status
 
 ```bash
 # View running containers
-docker-compose ps
+docker-compose -f docker/docker-compose.yml -p agentshroud ps
 
-# Expected output:
-# NAME                STATUS              PORTS
-# agentshroud-gateway  Up (healthy)        127.0.0.1:8080->8080/tcp
-# openclaw-chat       Up (healthy)
+# Default stack (gateway + OpenClaw):
+# NAME                    STATUS              PORTS
+# agentshroud-gateway     Up (healthy)        127.0.0.1:8080->8080/tcp
+# agentshroud-bot         Up (healthy)        127.0.0.1:18789->18789/tcp
+
+# Full stack additionally shows:
+# agentshroud-hermes      Up (healthy)        127.0.0.1:8642->8642/tcp
+#                                             127.0.0.1:9119->9119/tcp
+# agentshroud-hci         Up (healthy)        127.0.0.1:9121->9121/tcp
 
 # View logs
-docker-compose logs -f
+docker-compose -f docker/docker-compose.yml -p agentshroud logs -f
 
 # Press Ctrl+C to stop following logs
 ```
+
+### Hermes Setup (full profile only)
+
+Before starting with `--profile full`, ensure the Hermes Telegram token is stored:
+
+1. Create `@agentshroud_hermes_bot` via @BotFather on Telegram.
+2. In 1Password "Agent Shroud Bot Credentials" vault, create an item named `hermes-telegram` containing the token.
+3. Run `docker/setup-secrets.sh store` to populate Docker secrets.
+
+Hermes health check: `curl http://localhost:8642/health`
+HCI (Hermes Control Interface): `http://localhost:9121` (HTTP Basic Auth required)
 
 ---
 

@@ -14,10 +14,10 @@ import pytest
 
 from gateway.ingest_api.routes.forward import _get_gmail_app_password
 
-
 # ──────────────────────────────────────────────
 # Helpers
 # ──────────────────────────────────────────────
+
 
 def _completed(returncode: int, stdout: str = "", stderr: str = "") -> subprocess.CompletedProcess:
     r = MagicMock(spec=subprocess.CompletedProcess)
@@ -30,6 +30,7 @@ def _completed(returncode: int, stdout: str = "", stderr: str = "") -> subproces
 # ──────────────────────────────────────────────
 # Tests
 # ──────────────────────────────────────────────
+
 
 class TestGetGmailAppPasswordNoSession:
     """OP_SESSION absent — must fall back to mounted secrets."""
@@ -54,7 +55,11 @@ class TestGetGmailAppPasswordNoSession:
 
         def fake_path(p: str) -> Path:
             name = Path(p).name
-            if name in ("1password_bot_email", "1password_bot_master_password", "1password_bot_secret_key"):
+            if name in (
+                "1password_bot_email",
+                "1password_bot_master_password",
+                "1password_bot_secret_key",
+            ):
                 return tmp_path / name
             return Path(p)
 
@@ -90,7 +95,11 @@ class TestGetGmailAppPasswordNoSession:
 
         def fake_path(p: str) -> Path:
             name = Path(p).name
-            if name in ("1password_bot_email", "1password_bot_master_password", "1password_bot_secret_key"):
+            if name in (
+                "1password_bot_email",
+                "1password_bot_master_password",
+                "1password_bot_secret_key",
+            ):
                 return tmp_path / name
             return Path(p)
 
@@ -139,7 +148,11 @@ class TestGetGmailAppPasswordWithSession:
 
         def fake_path(p: str) -> Path:
             name = Path(p).name
-            if name in ("1password_bot_email", "1password_bot_master_password", "1password_bot_secret_key"):
+            if name in (
+                "1password_bot_email",
+                "1password_bot_master_password",
+                "1password_bot_secret_key",
+            ):
                 return tmp_path / name
             return Path(p)
 
@@ -173,7 +186,11 @@ class TestGetGmailAppPasswordWithSession:
 
         def fake_path(p: str) -> Path:
             name = Path(p).name
-            if name in ("1password_bot_email", "1password_bot_master_password", "1password_bot_secret_key"):
+            if name in (
+                "1password_bot_email",
+                "1password_bot_master_password",
+                "1password_bot_secret_key",
+            ):
                 return tmp_path / name
             return Path(p)
 
