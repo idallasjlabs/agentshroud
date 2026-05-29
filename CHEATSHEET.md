@@ -1,6 +1,6 @@
 # AgentShroud Operations Cheat Sheet
 
-> Quick reference for managing the `agentshroud-gateway` and `agentshroud-bot` containers.
+> Quick reference for managing the `agentshroud-gateway`, `agentshroud-bot` (OpenClaw), and `agentshroud-hermes` containers.
 > All commands run from `~/Development/agentshroud` on marvin unless noted.
 
 ---
@@ -32,13 +32,17 @@ docker compose -f docker/docker-compose.yml -p agentshroud up -d
 docker compose -f docker/docker-compose.yml -p agentshroud down
 
 # asb wrapper (auto-detects host profile)
-scripts/asb up
-scripts/asb down
-scripts/asb rebuild
-scripts/asb clean-rebuild
+scripts/asb up             # gateway + OpenClaw (default)
+scripts/asb up full        # gateway + OpenClaw + Hermes + HCI (--profile full)
+scripts/asb down           # stops all containers including Hermes + HCI
+scripts/asb rebuild        # default profile
+scripts/asb rebuild full   # full stack rebuild
+scripts/asb clean-rebuild  # default (hermes-config volume preserved)
+scripts/asb clean-rebuild full
 scripts/asb prune          # safe disk reclaim — NEVER deletes named volumes
 scripts/asb status
 scripts/asb logs gateway
+scripts/asb logs hermes
 
 # ⚠ NEVER run: docker system prune --volumes
 # It destroys gateway-data, agentshroud-workspace, agentshroud-config, etc.
@@ -105,6 +109,62 @@ docker exec agentshroud-bot ping -c1 8.8.8.8
 docker exec agentshroud-gateway ip addr show
 docker exec agentshroud-gateway cat /etc/hosts
 docker exec agentshroud-bot cat /etc/hosts
+```
+
+---
+
+## Hermes Agent Management
+
+```bash
+# Logs
+docker logs agentshroud-hermes --tail 50
+docker logs agentshroud-hermes -f
+
+# Restart
+docker restart agentshroud-hermes
+
+# Config check
+docker exec agentshroud-hermes hermes config show
+
+# Tools (what's enabled)
+docker exec agentshroud-hermes hermes tools list
+
+# MCP servers
+docker exec agentshroud-hermes hermes mcp list
+docker exec agentshroud-hermes hermes mcp add github \
+  --command npx --args -y @modelcontextprotocol/server-github \
+  --env "GITHUB_PERSONAL_ACCESS_TOKEN=<token>"
+docker exec agentshroud-hermes hermes mcp remove github
+docker exec agentshroud-hermes hermes security   # OSV.dev supply-chain audit
+
+# Cron jobs
+docker exec agentshroud-hermes hermes cron list
+docker exec agentshroud-hermes hermes cron create --name "My Job" --deliver telegram "0 9 * * 1" "Monday check-in"
+docker exec agentshroud-hermes hermes cron remove <job-id>
+
+# Dashboard (web UI)
+open http://localhost:9119/           # Hermes dashboard
+curl http://localhost:9119/           # healthcheck
+
+# OpenAI-compatible API (port 8642)
+curl -H "Authorization: Bearer <hermes_api_key>" http://localhost:8642/v1/models
+curl -H "Authorization: Bearer <hermes_api_key>" \
+  -H "Content-Type: application/json" \
+  http://localhost:8642/v1/chat/completions \
+  -d '{"model":"anthropic/claude-opus-4.6","messages":[{"role":"user","content":"hi"}]}'
+
+# HCI (Hermes Control Interface — port 9121, Basic Auth via gateway)
+# Access: http://localhost:9121 or https://marvin.tail240ea8.ts.net:9121
+# Credentials: same as gateway (gateway_password)
+
+# Secrets check
+docker exec agentshroud-hermes ls /run/secrets/
+docker exec agentshroud-hermes sh -c 'wc -c < /run/secrets/hermes_api_key'
+
+# Full stack (Tailscale)
+# https://marvin.tail240ea8.ts.net:9119/   — Hermes dashboard
+# https://marvin.tail240ea8.ts.net:8642/   — Hermes API
+# https://marvin.tail240ea8.ts.net:9121/   — HCI
 ```
 
 ---
@@ -241,6 +301,7 @@ curl -s -X PUT $BASE/config/log-level -H "Content-Type: application/json" -d '{"
 ## Web Management UI
 
 ```
+# AgentShroud Control UI (gateway)
 http://localhost:8080/manage/                    # Dashboard
 http://localhost:8080/manage/dashboard/approvals # Approval queue
 http://localhost:8080/manage/dashboard/modules   # Security modules
@@ -250,9 +311,17 @@ http://localhost:8080/manage/dashboard/collaborators
 http://localhost:8080/manage/dashboard/security
 http://localhost:8080/manage/dashboard/killswitch
 
-# Via Tailscale
+# Hermes Agent UIs (--profile full required)
+http://localhost:9119/                           # Hermes dashboard
+http://localhost:8642/v1/models                 # Hermes OpenAI API
+http://localhost:9121/                           # HCI (Basic Auth — gateway creds)
+
+# Via Tailscale  (requires: sudo scripts/tailscale-serve.sh start)
 https://marvin.tail240ea8.ts.net:18789/          # Control UI (PROD)
 https://marvin.tail240ea8.ts.net:18790/          # Control UI (DEV)
+https://marvin.tail240ea8.ts.net:9119/           # Hermes dashboard  (asb up full)
+https://marvin.tail240ea8.ts.net:8642/v1         # Hermes API        (asb up full)
+https://marvin.tail240ea8.ts.net:9121/           # HCI               (asb up full)
 ```
 
 ---
@@ -350,6 +419,8 @@ docker exec agentshroud-gateway python -m pytest gateway/tests/ -q
 | Security reports | volume `security-reports` → `/var/log/security/` |
 | Memory backups | `memory-backups/` (host-side) |
 | apply-patches.js | `docker/config/openclaw/apply-patches.js` (baked into image) |
+| Hermes data vol. | volume `hermes-config` → `/opt/data/` (NEVER deleted by clean-rebuild) |
+| Hermes defaults  | `docker/config/hermes/` (baked into image, seeded on first boot) |
 
 ---
 

@@ -42,6 +42,7 @@ class EgressTelegramNotifier:
         notification_recipients: Optional[list[str]] = None,
         base_url: str = "https://api.telegram.org",
         timeout_seconds: int = 30,
+        per_bot_tokens: Optional[dict] = None,
     ):
         self.bot_token = bot_token
         self.owner_chat_id = owner_chat_id
@@ -53,13 +54,28 @@ class EgressTelegramNotifier:
         self.base_url = base_url
         self.timeout_seconds = timeout_seconds
         self.pending_requests: dict[str, dict] = {}
+        # bot_id → Telegram bot token.  When an egress request is attributed to a
+        # specific bot (e.g. "hermes"), the notification is sent via that bot's token
+        # so the approval message appears in the correct Telegram chat thread.
+        self._per_bot_tokens: dict[str, str] = per_bot_tokens or {}
 
-    def _api_url(self, method: str) -> str:
-        return f"{self.base_url}/bot{self.bot_token}/{method}"
+    def _token_for(self, agent_id: str) -> str:
+        """Return the Telegram bot token to use for a given agent_id.
 
-    def _send_request(self, method: str, payload: dict) -> dict:
+        If the agent maps to a registered bot (e.g. "hermes") and that bot has
+        its own token in _per_bot_tokens, the per-bot token is returned so that
+        egress approval notifications appear in the correct Telegram chat thread.
+        Falls back to the default (OpenClaw/primary) token.
+        """
+        return self._per_bot_tokens.get(agent_id, self.bot_token)
+
+    def _api_url(self, method: str, token: Optional[str] = None) -> str:
+        t = token or self.bot_token
+        return f"{self.base_url}/bot{t}/{method}"
+
+    def _send_request(self, method: str, payload: dict, token: Optional[str] = None) -> dict:
         """Send a request to Telegram Bot API (sync, run in executor)."""
-        url = self._api_url(method)
+        url = self._api_url(method, token=token)
         data = json.dumps(payload).encode("utf-8")
         req = urllib.request.Request(
             url,
@@ -70,10 +86,10 @@ class EgressTelegramNotifier:
         with urllib.request.urlopen(req, timeout=10) as resp:
             return json.loads(resp.read().decode("utf-8"))
 
-    async def _async_send(self, method: str, payload: dict) -> dict:
+    async def _async_send(self, method: str, payload: dict, token: Optional[str] = None) -> dict:
         """Async wrapper around sync Telegram API call."""
         loop = asyncio.get_event_loop()
-        return await loop.run_in_executor(None, self._send_request, method, payload)
+        return await loop.run_in_executor(None, self._send_request, method, payload, token)
 
     async def notify_pending(
         self,
@@ -114,6 +130,11 @@ class EgressTelegramNotifier:
             ]
         }
 
+        # Select the bot token that should deliver this notification.
+        # If the egress request came from a known bot (e.g. agent_id="hermes"),
+        # use that bot's token so the approval message arrives in the correct chat.
+        notify_token = self._token_for(agent_id)
+
         self.pending_requests[request_id] = {
             "domain": domain,
             "port": port,
@@ -121,6 +142,7 @@ class EgressTelegramNotifier:
             "agent_id": agent_id,
             "tool_name": tool_name,
             "timestamp": datetime.now(timezone.utc).isoformat(),
+            "notify_token": notify_token,  # preserved for callback answer + edit
         }
 
         any_ok = False
@@ -132,7 +154,7 @@ class EgressTelegramNotifier:
                 "reply_markup": keyboard,
             }
             try:
-                result = await self._async_send("sendMessage", payload)
+                result = await self._async_send("sendMessage", payload, token=notify_token)
                 if result.get("ok", False):
                     any_ok = True
             except Exception as e:
@@ -195,10 +217,19 @@ class EgressTelegramNotifier:
             "port": request_info["port"],
             "expires_at": expires_at,
             "agent_id": request_info.get("agent_id", ""),
+            # Callers should pass notify_token to answer_callback / edit_decision_message
+            # so that bot API calls use the same token that sent the original notification.
+            "notify_token": request_info.get("notify_token"),
         }
 
-    async def answer_callback(self, callback_query_id: str, text: str) -> bool:
-        """Send answerCallbackQuery to dismiss the button loading state."""
+    async def answer_callback(
+        self, callback_query_id: str, text: str, token: Optional[str] = None
+    ) -> bool:
+        """Send answerCallbackQuery to dismiss the button loading state.
+
+        Pass ``token`` (from handle_callback result["notify_token"]) to ensure
+        the response uses the same bot that sent the original notification.
+        """
         try:
             result = await self._async_send(
                 "answerCallbackQuery",
@@ -207,16 +238,21 @@ class EgressTelegramNotifier:
                     "text": text,
                     "show_alert": False,
                 },
+                token=token,
             )
             return result.get("ok", False)
         except Exception as e:
             logger.error(f"Failed to answer callback: {e}")
             return False
 
-    async def edit_decision_message(self, chat_id, message_id: int, decision_text: str) -> bool:
+    async def edit_decision_message(
+        self, chat_id, message_id: int, decision_text: str, token: Optional[str] = None
+    ) -> bool:
         """Replace the inline keyboard approval message with a decision record.
 
         Removes the buttons and shows the outcome so it's visible in chat history.
+        Pass ``token`` (from handle_callback result["notify_token"]) to ensure
+        the edit uses the same bot that sent the original notification.
         """
         try:
             result = await self._async_send(
@@ -227,6 +263,7 @@ class EgressTelegramNotifier:
                     "text": decision_text,
                     "parse_mode": "Markdown",
                 },
+                token=token,
             )
             return result.get("ok", False)
         except Exception as e:

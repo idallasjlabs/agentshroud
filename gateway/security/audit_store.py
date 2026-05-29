@@ -21,7 +21,8 @@ import aiosqlite
 
 logger = logging.getLogger("agentshroud.gateway.security.audit_store")
 
-SCHEMA = """
+# Base table DDL — no index on bot_id yet (added after migration ensures the column exists).
+_SCHEMA_TABLE = """
 CREATE TABLE IF NOT EXISTS audit_events (
     id           INTEGER PRIMARY KEY AUTOINCREMENT,
     event_id     TEXT NOT NULL UNIQUE,
@@ -31,7 +32,8 @@ CREATE TABLE IF NOT EXISTS audit_events (
     source_module TEXT NOT NULL,
     details      TEXT NOT NULL,  -- JSON
     prev_hash    TEXT,
-    entry_hash   TEXT NOT NULL
+    entry_hash   TEXT NOT NULL,
+    bot_id       TEXT NOT NULL DEFAULT 'openclaw'
 );
 
 CREATE INDEX IF NOT EXISTS idx_audit_timestamp ON audit_events(timestamp);
@@ -39,9 +41,23 @@ CREATE INDEX IF NOT EXISTS idx_audit_type ON audit_events(event_type);
 CREATE INDEX IF NOT EXISTS idx_audit_severity ON audit_events(severity);
 """
 
+# Migration: add bot_id column to databases created before multi-bot support.
+# Executed BEFORE the bot_id index is created so the index is always valid.
+_MIGRATION_ADD_BOT_ID = (
+    "ALTER TABLE audit_events ADD COLUMN bot_id TEXT NOT NULL DEFAULT 'openclaw'"
+)
+
+# bot_id index — created AFTER the migration ensures the column exists.
+_SCHEMA_BOT_ID_INDEX = "CREATE INDEX IF NOT EXISTS idx_audit_bot_id ON audit_events(bot_id)"
+
 
 class AuditEvent:
-    """Represents a single audit event."""
+    """Represents a single audit event.
+
+    The ``bot_id`` field identifies which bot generated this event (e.g.
+    ``"openclaw"``, ``"hermes"``).  Defaults to ``"openclaw"`` for
+    backward-compatibility with events written before multi-bot support.
+    """
 
     def __init__(
         self,
@@ -51,6 +67,7 @@ class AuditEvent:
         source_module: str,
         event_id: Optional[str] = None,
         timestamp: Optional[str] = None,
+        bot_id: str = "openclaw",
     ):
         self.event_id = event_id or self._generate_event_id()
         self.event_type = event_type
@@ -58,6 +75,7 @@ class AuditEvent:
         self.timestamp = timestamp or datetime.now(timezone.utc).isoformat().replace("+00:00", "Z")
         self.source_module = source_module
         self.details = details
+        self.bot_id = bot_id
         self.prev_hash: Optional[str] = None
         self.entry_hash: Optional[str] = None
 
@@ -76,6 +94,7 @@ class AuditEvent:
             "timestamp": self.timestamp,
             "source_module": self.source_module,
             "details": self.details,
+            "bot_id": self.bot_id,
             "prev_hash": self.prev_hash,
             "entry_hash": self.entry_hash,
         }
@@ -108,9 +127,31 @@ class AuditStore:
         self._db: Optional[aiosqlite.Connection] = None
 
     async def initialize(self) -> None:
-        """Open the database and create the schema."""
+        """Open the database, create the schema, and run column migrations.
+
+        Initialization order is critical for legacy databases (no bot_id column):
+        1. Create the table (without bot_id index, in case the column is absent).
+        2. Migrate: ALTER TABLE ADD COLUMN bot_id (no-op if already present).
+        3. Create the bot_id index now that the column is guaranteed to exist.
+        """
         self._db = await aiosqlite.connect(self.db_path)
-        await self._db.executescript(SCHEMA)
+
+        # Step 1: create base table + non-bot_id indexes
+        await self._db.executescript(_SCHEMA_TABLE)
+
+        # Step 2: add bot_id column if missing (idempotent via duplicate-column catch)
+        try:
+            await self._db.execute(_MIGRATION_ADD_BOT_ID)
+            await self._db.commit()
+            logger.info("Audit store: applied bot_id column migration")
+        except Exception as exc:
+            if "duplicate column" in str(exc).lower():
+                pass  # Already migrated — normal after first successful migration
+            else:
+                logger.warning(f"Audit store migration warning: {exc}")
+
+        # Step 3: create bot_id index now that the column exists
+        await self._db.execute(_SCHEMA_BOT_ID_INDEX)
         await self._db.commit()
         logger.info(f"Audit store initialized: {self.db_path}")
 
@@ -127,8 +168,15 @@ class AuditStore:
         details: dict,
         source_module: str,
         event_id: Optional[str] = None,
+        bot_id: str = "openclaw",
     ) -> AuditEvent:
-        """Log a new audit event with hash chain integrity."""
+        """Log a new audit event with hash chain integrity.
+
+        Args:
+            bot_id: Identifier of the bot that generated this event
+                    (e.g. ``"openclaw"``, ``"hermes"``).  Stored in the
+                    ``bot_id`` column for per-bot dashboard filtering.
+        """
         assert self._db is not None
 
         # Create event
@@ -138,6 +186,7 @@ class AuditStore:
             details=details,
             source_module=source_module,
             event_id=event_id,
+            bot_id=bot_id,
         )
 
         # Get previous hash for chain
@@ -148,8 +197,8 @@ class AuditStore:
         # Insert into database
         await self._db.execute(
             """INSERT INTO audit_events
-               (event_id, event_type, severity, timestamp, source_module, details, prev_hash, entry_hash)
-               VALUES (?, ?, ?, ?, ?, ?, ?, ?)""",
+               (event_id, event_type, severity, timestamp, source_module, details, prev_hash, entry_hash, bot_id)
+               VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)""",
             (
                 event.event_id,
                 event.event_type,
@@ -159,11 +208,12 @@ class AuditStore:
                 json.dumps(event.details),
                 event.prev_hash,
                 event.entry_hash,
+                event.bot_id,
             ),
         )
         await self._db.commit()
 
-        logger.debug(f"Audit event logged: {event.event_id} ({event.event_type})")
+        logger.debug(f"Audit event logged: {event.event_id} ({event.event_type}) bot={bot_id}")
         return event
 
     async def query_events(
@@ -172,9 +222,16 @@ class AuditStore:
         end_time: Optional[str] = None,
         event_type: Optional[str] = None,
         severity_min: Optional[str] = None,
+        bot_id: Optional[str] = None,
         limit: int = 1000,
     ) -> list[AuditEvent]:
-        """Query audit events with optional filters."""
+        """Query audit events with optional filters.
+
+        Args:
+            bot_id: When set, restricts results to events from this bot
+                    (e.g. ``"openclaw"`` or ``"hermes"``).  Pass ``None``
+                    (default) to query across all bots.
+        """
         assert self._db is not None
 
         # Build WHERE clause
@@ -190,6 +247,9 @@ class AuditStore:
         if event_type:
             conditions.append("event_type = ?")
             params.append(event_type)
+        if bot_id:
+            conditions.append("bot_id = ?")
+            params.append(bot_id)
         if severity_min:
             # Severity ordering: CRITICAL > HIGH > MEDIUM > LOW > INFO
             severity_values = {"CRITICAL": 5, "HIGH": 4, "MEDIUM": 3, "LOW": 2, "INFO": 1}
@@ -201,8 +261,8 @@ class AuditStore:
                 conditions.append(f"({severity_condition})")
 
         where_clause = " AND ".join(conditions) if conditions else "1=1"
-        query = f"""SELECT event_id, event_type, severity, timestamp, source_module, 
-                               details, prev_hash, entry_hash
+        query = f"""SELECT event_id, event_type, severity, timestamp, source_module,
+                              details, prev_hash, entry_hash, bot_id
                         FROM audit_events
                         WHERE {where_clause}
                         ORDER BY timestamp DESC
@@ -221,6 +281,7 @@ class AuditStore:
                 source_module=row[4],
                 details=json.loads(row[5]),
                 timestamp=row[3],
+                bot_id=row[8] if len(row) > 8 else "openclaw",
             )
             event.prev_hash = row[6]
             event.entry_hash = row[7]

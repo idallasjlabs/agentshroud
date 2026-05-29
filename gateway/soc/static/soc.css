@@ -80,6 +80,32 @@ body {
   flex-shrink: 0;
 }
 
+/* M6: Bot selector in topbar */
+.bot-selector,
+#bot-selector {
+  font-family: inherit;
+  font-size: 11px;
+  padding: 0.25rem 0.6rem;
+  background: var(--surface-alt);
+  color: var(--text);
+  border: 1px solid var(--border);
+  border-radius: 5px;
+  cursor: pointer;
+  outline: none;
+  margin-right: 0.5rem;
+  transition: border-color 0.15s;
+  max-width: 160px;
+}
+.bot-selector:hover,
+#bot-selector:hover {
+  border-color: var(--accent);
+}
+.bot-selector:focus,
+#bot-selector:focus {
+  border-color: var(--accent);
+  box-shadow: 0 0 0 2px var(--accent-dim);
+}
+
 /* E-Stop group */
 .estop-group {
   display: flex;

@@ -95,7 +95,36 @@ else
     echo "  [post-deploy-check] SKIP: bot container not found (non-full-stack deploy?)"
 fi
 
-# ── P3: No subnet overlap in Docker networks ─────────────────────────────
+# ── P3: Hermes health checks (only when hermes container is running) ─────────
+if docker ps --format '{{.Names}}' 2>/dev/null | grep -q 'agentshroud-hermes'; then
+    hermes_dash_ok=false
+    deadline=$(( $(date +%s) + WAIT_SECS ))
+    while [[ $(date +%s) -lt $deadline ]]; do
+        if curl -sf "http://localhost:9119/" > /dev/null 2>&1; then
+            hermes_dash_ok=true
+            break
+        fi
+        sleep 3
+    done
+    check "Hermes dashboard :9119 returns 200 within ${WAIT_SECS}s" \
+        "$([[ "$hermes_dash_ok" == "true" ]] && echo true || echo false)"
+
+    hermes_api_ok=false
+    if curl -sf "http://localhost:8642/health" > /dev/null 2>&1 || \
+       curl -sf "http://localhost:8642/v1/models" > /dev/null 2>&1; then
+        hermes_api_ok=true
+    fi
+    check "Hermes API :8642 reachable" \
+        "$([[ "$hermes_api_ok" == "true" ]] && echo true || echo false)"
+
+    hermes_logs=$(docker logs agentshroud-hermes 2>&1 | tail -50 || echo "")
+    check "Hermes logs: no crash on startup" \
+        "$([[ "$hermes_logs" != *"Traceback (most recent call last)"* ]] && echo true || echo false)"
+else
+    echo "  [post-deploy-check] SKIP: agentshroud-hermes not running (use 'asb up full' for full stack)"
+fi
+
+# ── P4: No subnet overlap in Docker networks ─────────────────────────────
 network_output=$(docker network ls 2>/dev/null || echo "")
 pool_error=$(docker network inspect agentshroud-internal 2>&1 || true)
 check "No 'Pool overlaps' error in Docker network state" \
@@ -116,6 +145,7 @@ if [[ "$fail" -gt 0 ]]; then
     echo "  Investigate with:" >&2
     echo "    docker logs agentshroud-gateway 2>&1 | tail -50" >&2
     echo "    docker logs agentshroud-bot 2>&1 | tail -50" >&2
+    echo "    docker logs agentshroud-hermes 2>&1 | tail -50" >&2
     echo "    asb status" >&2
     echo ""
     exit 1

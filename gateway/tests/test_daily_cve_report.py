@@ -546,3 +546,190 @@ class TestAlreadyCheckedUpstreamToday:
         sentinel.write_text(yesterday.isoformat())
         monkeypatch.setattr(_mod, "_LAST_UPSTREAM_CHECK_PATH", sentinel)
         assert not _mod._already_checked_upstream_today(datetime.now(timezone.utc))
+
+
+# ── _build_image_targets ──────────────────────────────────────────────────────
+
+
+class TestBuildImageTargets:
+    def test_always_includes_gateway_image(self, monkeypatch):
+        from gateway.security.daily_cve_report import _build_image_targets
+
+        monkeypatch.delenv("AGENTSHROUD_TRIVY_IMAGES", raising=False)
+        targets = _build_image_targets()
+        assert "agentshroud-gateway:latest" in targets
+
+    def test_env_var_adds_extra_targets(self, monkeypatch):
+        from gateway.security.daily_cve_report import _build_image_targets
+
+        monkeypatch.setenv(
+            "AGENTSHROUD_TRIVY_IMAGES", "agentshroud-bot:latest,agentshroud/hermes:latest"
+        )
+        targets = _build_image_targets()
+        assert "agentshroud-bot:latest" in targets
+        assert "agentshroud/hermes:latest" in targets
+
+    def test_env_var_empty_string_ignored(self, monkeypatch):
+        from gateway.security.daily_cve_report import _build_image_targets
+
+        monkeypatch.setenv("AGENTSHROUD_TRIVY_IMAGES", "")
+        targets = _build_image_targets()
+        # Only gateway image — no empty entries
+        assert targets == ["agentshroud-gateway:latest"]
+
+    def test_deduplication(self, monkeypatch):
+        from gateway.security.daily_cve_report import _build_image_targets
+
+        monkeypatch.setenv(
+            "AGENTSHROUD_TRIVY_IMAGES", "agentshroud-gateway:latest,agentshroud-gateway:latest"
+        )
+        targets = _build_image_targets()
+        assert targets.count("agentshroud-gateway:latest") == 1
+
+    def test_whitespace_stripped_from_env_var(self, monkeypatch):
+        from gateway.security.daily_cve_report import _build_image_targets
+
+        monkeypatch.setenv(
+            "AGENTSHROUD_TRIVY_IMAGES", "  agentshroud-bot:latest  ,  agentshroud/hermes:latest  "
+        )
+        targets = _build_image_targets()
+        assert "agentshroud-bot:latest" in targets
+        assert "agentshroud/hermes:latest" in targets
+        assert "  agentshroud-bot:latest  " not in targets
+
+
+# ── run_and_send_cve_report — image scan integration ─────────────────────────
+
+
+class TestRunAndSendCveReportImageScans:
+    @pytest.mark.asyncio
+    async def test_image_scans_run_for_each_target(self, tmp_path, monkeypatch):
+        """run_and_send_cve_report calls run_trivy_scan with scan_type='image' for each target."""
+        import gateway.security.daily_cve_report as _mod
+
+        scan_calls = []
+
+        def _fake_trivy_scan(target="/", scan_type="fs", **kwargs):
+            scan_calls.append({"target": target, "scan_type": scan_type})
+            return _make_report(critical=0, high=0, medium=0, low=0, total=0)
+
+        monkeypatch.setattr(_mod, "run_trivy_scan", _fake_trivy_scan)
+        monkeypatch.setattr(_mod, "save_report", lambda r, **kw: None)
+        monkeypatch.setattr(_mod, "_LAST_REPORT_PATH", tmp_path / "last.txt")
+        monkeypatch.setenv("AGENTSHROUD_TRIVY_IMAGES", "agentshroud-bot:latest")
+
+        async def _fake_send(token, chat_id, text, base_url):
+            return True
+
+        monkeypatch.setattr(_mod, "_send_telegram", _fake_send)
+
+        await _mod.run_and_send_cve_report(bot_token="tok", owner_chat_id="12345")
+
+        image_calls = [c for c in scan_calls if c["scan_type"] == "image"]
+        image_targets = {c["target"] for c in image_calls}
+        assert "agentshroud-gateway:latest" in image_targets
+        assert "agentshroud-bot:latest" in image_targets
+
+    @pytest.mark.asyncio
+    async def test_image_scan_summary_appended_to_message(self, tmp_path, monkeypatch):
+        """Message sent via Telegram includes a Container Image Scans section."""
+        import gateway.security.daily_cve_report as _mod
+
+        def _fake_trivy_scan(target="/", scan_type="fs", **kwargs):
+            return _make_report(critical=0, high=0, medium=0, low=0, total=0)
+
+        monkeypatch.setattr(_mod, "run_trivy_scan", _fake_trivy_scan)
+        monkeypatch.setattr(_mod, "save_report", lambda r, **kw: None)
+        monkeypatch.setattr(_mod, "_LAST_REPORT_PATH", tmp_path / "last.txt")
+        monkeypatch.delenv("AGENTSHROUD_TRIVY_IMAGES", raising=False)
+
+        sent_messages = []
+
+        async def _fake_send(token, chat_id, text, base_url):
+            sent_messages.append(text)
+            return True
+
+        monkeypatch.setattr(_mod, "_send_telegram", _fake_send)
+
+        await _mod.run_and_send_cve_report(bot_token="tok", owner_chat_id="12345")
+
+        assert len(sent_messages) == 1
+        assert "Container Image Scans" in sent_messages[0]
+        assert "agentshroud-gateway:latest" in sent_messages[0]
+
+    @pytest.mark.asyncio
+    async def test_image_scan_result_in_return_value(self, tmp_path, monkeypatch):
+        """Return value includes image_scans list."""
+        import gateway.security.daily_cve_report as _mod
+
+        def _fake_trivy_scan(target="/", scan_type="fs", **kwargs):
+            return _make_report(critical=0, high=0, medium=0, low=0, total=0)
+
+        monkeypatch.setattr(_mod, "run_trivy_scan", _fake_trivy_scan)
+        monkeypatch.setattr(_mod, "save_report", lambda r, **kw: None)
+        monkeypatch.setattr(_mod, "_LAST_REPORT_PATH", tmp_path / "last.txt")
+        monkeypatch.delenv("AGENTSHROUD_TRIVY_IMAGES", raising=False)
+
+        async def _fake_send(token, chat_id, text, base_url):
+            return True
+
+        monkeypatch.setattr(_mod, "_send_telegram", _fake_send)
+
+        result = await _mod.run_and_send_cve_report(bot_token="tok", owner_chat_id="12345")
+
+        assert "image_scans" in result
+        assert isinstance(result["image_scans"], list)
+        assert len(result["image_scans"]) >= 1
+
+    @pytest.mark.asyncio
+    async def test_image_scan_error_does_not_abort_report(self, tmp_path, monkeypatch):
+        """A failing image scan appends an error line but does not raise."""
+        import gateway.security.daily_cve_report as _mod
+
+        def _fake_trivy_scan(target="/", scan_type="fs", **kwargs):
+            if scan_type == "image":
+                return {"error": "binary_not_found", "raw_output": ""}
+            return _make_report(critical=0, high=0, medium=0, low=0, total=0)
+
+        monkeypatch.setattr(_mod, "run_trivy_scan", _fake_trivy_scan)
+        monkeypatch.setattr(_mod, "save_report", lambda r, **kw: None)
+        monkeypatch.setattr(_mod, "_LAST_REPORT_PATH", tmp_path / "last.txt")
+        monkeypatch.delenv("AGENTSHROUD_TRIVY_IMAGES", raising=False)
+
+        async def _fake_send(token, chat_id, text, base_url):
+            return True
+
+        monkeypatch.setattr(_mod, "_send_telegram", _fake_send)
+
+        result = await _mod.run_and_send_cve_report(bot_token="tok", owner_chat_id="12345")
+
+        assert result["telegram_sent"] is True
+        # Error line present in image_scans
+        assert any(
+            "error" in line.lower() or "scan error" in line.lower()
+            for line in result["image_scans"]
+        )
+
+    @pytest.mark.asyncio
+    async def test_critical_image_finding_uses_red_icon(self, tmp_path, monkeypatch):
+        """A critical finding in an image scan uses the red icon."""
+        import gateway.security.daily_cve_report as _mod
+
+        def _fake_trivy_scan(target="/", scan_type="fs", **kwargs):
+            if scan_type == "image":
+                return _make_report(critical=3, high=1, medium=0, low=0, total=4)
+            return _make_report(critical=0, high=0, medium=0, low=0, total=0)
+
+        monkeypatch.setattr(_mod, "run_trivy_scan", _fake_trivy_scan)
+        monkeypatch.setattr(_mod, "save_report", lambda r, **kw: None)
+        monkeypatch.setattr(_mod, "_LAST_REPORT_PATH", tmp_path / "last.txt")
+        monkeypatch.delenv("AGENTSHROUD_TRIVY_IMAGES", raising=False)
+
+        async def _fake_send(token, chat_id, text, base_url):
+            return True
+
+        monkeypatch.setattr(_mod, "_send_telegram", _fake_send)
+
+        result = await _mod.run_and_send_cve_report(bot_token="tok", owner_chat_id="12345")
+
+        assert any("🔴" in line for line in result["image_scans"])

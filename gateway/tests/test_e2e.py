@@ -41,6 +41,7 @@ async def test_forward_pii_sanitized_and_ledger_entry(client):
     """Forward content → PII sanitized → ledger entry created → event bus fired."""
     # Ensure test users have RBAC permissions
     from gateway.security.rbac_config import Role
+    from gateway.security.trust_manager import TrustLevel as _TL
 
     if (
         hasattr(app_state, "middleware_manager")
@@ -50,6 +51,22 @@ async def test_forward_pii_sanitized_and_ledger_entry(client):
     ):
         app_state.middleware_manager.rbac_manager.config.user_roles["test-user"] = Role.COLLABORATOR
         app_state.middleware_manager.rbac_manager.config.user_roles["api"] = Role.COLLABORATOR
+
+    # Grant STANDARD trust for the router's default target (test_config uses "test-agent").
+    # forward.py now uses agent_id=target.name instead of "default", so the resolved
+    # routing target must be registered with sufficient trust in the pipeline.
+    if hasattr(app_state, "trust_manager") and app_state.trust_manager:
+        _router_default = getattr(
+            getattr(getattr(app_state, "config", None), "router", None),
+            "default_target",
+            "test-agent",
+        )
+        app_state.trust_manager.register_agent(_router_default)
+        app_state.trust_manager._conn.execute(
+            "UPDATE trust_scores SET score = 200, level = ? WHERE agent_id = ?",
+            (int(_TL.STANDARD), _router_default),
+        )
+        app_state.trust_manager._conn.commit()
     bus: EventBus = getattr(app_state, "event_bus", None)
     events_before = len(bus._recent_events) if bus else 0
 

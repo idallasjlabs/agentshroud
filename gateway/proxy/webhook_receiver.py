@@ -163,6 +163,7 @@ class WebhookReceiver:
                     username=_username,
                     message_preview=message_text[:_PREVIEW_MAX],
                     source=source,
+                    bot_id=agent_id,
                 )
         except Exception:
             pass  # Tracker is non-blocking — never fail a webhook on its behalf

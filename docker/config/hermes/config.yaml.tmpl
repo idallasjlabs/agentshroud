@@ -1,0 +1,69 @@
+# Copyright © 2026 Isaiah Dallas Jefferson, Jr. AgentShroud™. All rights reserved.
+# AgentShroud™ is a trademark of Isaiah Dallas Jefferson, Jr. (USPTO Serial No. 99728633)
+# Patent Pending — U.S. Provisional Application No. 64/018,744
+#
+# Hermes Agent CLI Configuration — AgentShroud managed first-boot template.
+# Seeded into /opt/data/config.yaml by init-config.sh on first boot (idempotent).
+# All secrets (API keys, tokens) are provided via environment variables — not here.
+# See agentshroud.yaml bots.hermes for network/port/routing configuration.
+#
+# Schema: Hermes CLI config (hermes config show / hermes config path).
+# Keys not recognized by Hermes are silently ignored; do NOT add custom top-level
+# keys (identity:, api:, channels:) — those caused "Could not load config.yaml".
+
+# =============================================================================
+# Model Configuration
+# =============================================================================
+# Default model. ANTHROPIC_API_KEY env var is injected by 00-agentshroud-secrets.sh.
+# ANTHROPIC_BASE_URL=http://gateway:8080 in compose routes all LLM calls through
+# the AgentShroud gateway for PII redaction + audit + egress inspection.
+model:
+  default: "anthropic/claude-opus-4.6"
+  provider: "anthropic"
+
+# =============================================================================
+# Terminal Tool Configuration
+# =============================================================================
+terminal:
+  backend: "local"
+  cwd: "."
+  timeout: 180
+  lifetime_seconds: 300
+  docker_mount_cwd_to_workspace: false
+
+# =============================================================================
+# Telegram Platform Configuration
+# =============================================================================
+# Route all Telegram Bot API calls through AgentShroud's gateway proxy
+# instead of connecting to api.telegram.org directly.
+#
+# Why: HTTP_PROXY=http://gateway:8181 (EgressFilter) blocks HTTPS CONNECT to
+# api.telegram.org (CONNECT_FORCE_BLOCK_DOMAINS). Telegram traffic MUST flow
+# through gateway:8080/telegram-api/ which is explicitly excluded from NO_PROXY.
+# The gateway's /telegram-api/{path} endpoint proxies to api.telegram.org and
+# applies the same 76-module security pipeline (PII redaction, audit, egress).
+#
+# python-telegram-bot constructs URLs as `base_url + token + "/" + method`
+# (see _bot.py:_parse_base_url → `return value + token`). The default base_url
+# is "https://api.telegram.org/bot" (ends in "bot", no trailing slash) so the
+# token slots in directly after "bot". Mirror that convention here so the
+# gateway proxy regex `^(file/)?bot([^/]+)/(.+)$` (main.py:4298) matches.
+#
+# extra.base_url is read by telegram.py:1481 via self.config.extra.get("base_url").
+# The _telegram_extra block in gateway/config.py:1064 merges this into PlatformConfig.extra.
+telegram:
+  extra:
+    base_url: "http://gateway:8080/telegram-api/bot"
+    base_file_url: "http://gateway:8080/telegram-api/file/bot"
+
+# =============================================================================
+# OpenAI-compatible API server (port 8642)
+# =============================================================================
+# Requires API_SERVER_KEY env var (injected by agentshroud-secrets.sh).
+# allow_model_override: false — agent uses configured model only.
+api_server:
+  enabled: true
+  host: "0.0.0.0"
+  port: 8642
+  allow_model_override: false
+  cors_origins: []

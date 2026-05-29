@@ -289,6 +289,95 @@ def test_owner_correlation_id_is_stored(tracker, log_file):
     assert entry["correlation_id"] == "1111111:100"
 
 
+# ── bot_id field (M4) ────────────────────────────────────────────────────────
+
+
+def test_record_activity_stores_bot_id_when_provided(tracker, log_file):
+    """record_activity with bot_id='hermes' stores bot_id in the entry."""
+    tracker.record_activity("7614658040", "Alice", "hello", "telegram", bot_id="hermes")
+    entry = json.loads(log_file.read_text().strip())
+    assert entry["bot_id"] == "hermes"
+
+
+def test_record_activity_stores_bot_id_none_when_omitted(tracker, log_file):
+    """record_activity without bot_id stores bot_id=None in the entry."""
+    tracker.record_activity("7614658040", "Alice", "hello", "telegram")
+    entry = json.loads(log_file.read_text().strip())
+    assert entry["bot_id"] is None
+
+
+def test_get_activity_filters_by_bot_id(tracker, log_file):
+    """get_activity(bot_id=...) returns only entries matching that bot_id."""
+    tracker.record_activity("7614658040", "Alice", "from hermes", "telegram", bot_id="hermes")
+    tracker.record_activity("9999999", "Bob", "from openclaw", "telegram", bot_id="openclaw")
+    tracker.record_activity("7614658040", "Alice", "no bot id", "telegram")
+
+    hermes_entries = tracker.get_activity(bot_id="hermes")
+    assert len(hermes_entries) == 1
+    assert hermes_entries[0]["message_preview"] == "from hermes"
+
+    openclaw_entries = tracker.get_activity(bot_id="openclaw")
+    assert len(openclaw_entries) == 1
+    assert openclaw_entries[0]["message_preview"] == "from openclaw"
+
+    # Without filter: all three entries returned
+    all_entries = tracker.get_activity()
+    assert len(all_entries) == 3
+
+
+def test_get_activity_summary_includes_by_bot(tracker, log_file):
+    """get_activity_summary returns a by_bot breakdown keyed by bot_id."""
+    tracker.record_activity("7614658040", "Alice", "msg1", "telegram", bot_id="hermes")
+    tracker.record_activity("7614658040", "Alice", "msg2", "telegram", bot_id="hermes")
+    tracker.record_activity("9999999", "Bob", "msg3", "telegram", bot_id="openclaw")
+    tracker.record_activity("9999999", "Bob", "msg4", "telegram")  # no bot_id → "unknown"
+
+    s = tracker.get_activity_summary()
+    assert "by_bot" in s
+    assert s["by_bot"]["hermes"] == 2
+    assert s["by_bot"]["openclaw"] == 1
+    assert s["by_bot"]["unknown"] == 1
+
+
+def test_get_activity_summary_by_bot_empty_when_no_file(tracker):
+    """get_activity_summary returns empty by_bot when no log file exists."""
+    s = tracker.get_activity_summary()
+    assert s["by_bot"] == {}
+
+
+@pytest.mark.asyncio
+async def test_webhook_receiver_passes_agent_id_as_bot_id():
+    """process_webhook passes agent_id as bot_id to record_activity."""
+    from unittest.mock import MagicMock, patch
+
+    from gateway.proxy.webhook_receiver import WebhookReceiver
+
+    tracker = MagicMock()
+    mock_session = MagicMock()
+    mock_session.add_conversation_message = MagicMock()
+
+    receiver = WebhookReceiver(pipeline=None, forwarder=None, session_manager=mock_session)
+
+    # Patch the lazy import of app_state inside the function body
+    mock_state = MagicMock()
+    mock_state.collaborator_tracker = tracker
+
+    with (
+        patch("gateway.ingest_api.state.app_state", mock_state),
+        patch.object(receiver, "_extract_user_id", return_value="7614658040"),
+        patch.object(receiver, "_extract_username", return_value="TestUser"),
+    ):
+        await receiver.process_webhook(
+            payload={"message": {"text": "hello from hermes"}},
+            source="telegram",
+            agent_id="hermes",
+        )
+
+    tracker.record_activity.assert_called_once()
+    call_kwargs = tracker.record_activity.call_args.kwargs
+    assert call_kwargs["bot_id"] == "hermes"
+
+
 # ── pruner heuristic ──────────────────────────────────────────────────────────
 
 
