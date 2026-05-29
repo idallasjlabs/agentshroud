@@ -125,8 +125,7 @@ class TestAgentIdPropagatedFromTarget:
         ):
             import asyncio
 
-            from gateway.ingest_api.models import ForwardRequest
-            from gateway.ingest_api.models import AgentTarget
+            from gateway.ingest_api.models import AgentTarget, ForwardRequest
 
             request = ForwardRequest(
                 content="test", source="api", content_type="text", route_to="openclaw"

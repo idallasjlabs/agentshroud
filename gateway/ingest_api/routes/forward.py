@@ -17,10 +17,9 @@ from email.mime.text import MIMEText
 from pathlib import Path
 from typing import Annotated
 
-from pydantic import BaseModel, Field
-
 from fastapi import APIRouter, Depends, HTTPException, Request, status
 from fastapi.responses import JSONResponse
+from pydantic import BaseModel, Field
 
 from ...proxy.webhook_receiver import WebhookReceiver
 from ..auth import create_auth_dependency
