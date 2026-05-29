@@ -1,2 +1,70 @@
 # SCAP benchmark content — GRUB2 hash is part of CIS/DISA benchmark XML, not a real credential
 docker/scap-content/ssg-debian12-ds.xml:generic-api-key:213720
+
+# Pre-existing false positives in main branch history (c628add..HEAD).
+# All confirmed non-secrets: AWS docs example keys (AKIAIOSFODNN7EXAMPLE etc.),
+# OpenAI placeholder keys (sk-proj-abc123, sk-abcdef...), test fixture tokens,
+# example content in skill/agent/codex docs, and old device config from
+# oneclaw-container (no longer in working tree).
+# Fingerprints use gitleaks v8.18.4 format: commit:file:rule:line
+
+# aws-access-token (25 findings — AWS documentation example keys, not real)
+43506dd3836b6716bc5ca78a25eb1c6dfcc72546:CREDENTIAL-SECURITY-POLICY.md:aws-access-token:161
+5b7e04c80c1ecf504311825c1c309a8328159ab2:gateway/ingest_api/main.py:aws-access-token:3279
+8b0664a59db09b2c6c9f64a2b76cd414de63f500:.claude/skills/mcpm-aws-profile/SKILL.md:aws-access-token:85
+8b0664a59db09b2c6c9f64a2b76cd414de63f500:.claude/skills/mcpm-aws-profile/SKILL.md:aws-access-token:89
+8b0664a59db09b2c6c9f64a2b76cd414de63f500:.claude/skills/mcpm-aws-profile/SKILL.md:aws-access-token:93
+8b0664a59db09b2c6c9f64a2b76cd414de63f500:.codex/agents/mcpm-aws-profile.md:aws-access-token:85
+8b0664a59db09b2c6c9f64a2b76cd414de63f500:.codex/agents/mcpm-aws-profile.md:aws-access-token:89
+8b0664a59db09b2c6c9f64a2b76cd414de63f500:.codex/agents/mcpm-aws-profile.md:aws-access-token:93
+8b0664a59db09b2c6c9f64a2b76cd414de63f500:.gemini/agents/mcpm-aws-profile.md:aws-access-token:85
+8b0664a59db09b2c6c9f64a2b76cd414de63f500:.gemini/agents/mcpm-aws-profile.md:aws-access-token:89
+8b0664a59db09b2c6c9f64a2b76cd414de63f500:.gemini/agents/mcpm-aws-profile.md:aws-access-token:93
+90f13cf8a13a16b29aa41cbe68ce0b0d06fce0b5:llm_settings/skills/mcpm-aws-profile/SKILL.md:aws-access-token:85
+90f13cf8a13a16b29aa41cbe68ce0b0d06fce0b5:llm_settings/skills/mcpm-aws-profile/SKILL.md:aws-access-token:89
+90f13cf8a13a16b29aa41cbe68ce0b0d06fce0b5:llm_settings/skills/mcpm-aws-profile/SKILL.md:aws-access-token:93
+929ea21ce216a73650691814f9b6590c6e44bd80:gateway/ingest_api/main.py:aws-access-token:3279
+92f117213c2425bc891accc28613d474212ff0ff:gateway/ingest_api/main.py:aws-access-token:2548
+a001c25010a11b0bfa62942727fd9e4e6eaf54a7:gateway/ingest_api/main.py:aws-access-token:2503
+a001c25010a11b0bfa62942727fd9e4e6eaf54a7:gateway/ingest_api/main.py:aws-access-token:2506
+acbc7b4a1ba53d7e38bfe5d0376ecb96acf4f365:gateway/ingest_api/main.py.backup.refactor:aws-access-token:2665
+acbc7b4a1ba53d7e38bfe5d0376ecb96acf4f365:gateway/ingest_api/main.py.backup.refactor:aws-access-token:2668
+dab2ffc6b087e963258cfb37fc9b11f9de13d61d:.gitallowed:aws-access-token:20
+db3cfa7489a3ecfe191bb688de9e027e5ddc39d3:reviews/codex-review-20260216-195951.md:aws-access-token:11
+dd67497b8adf7a843ccde8b5225213c5dbc75011:.gitallowed:aws-access-token:12
+dd67497b8adf7a843ccde8b5225213c5dbc75011:.gitallowed:aws-access-token:13
+dd67497b8adf7a843ccde8b5225213c5dbc75011:.gitallowed:aws-access-token:19
+
+# generic-api-key (26 findings — placeholder keys, test fixtures, example docs)
+0834fa0b39e8fd662d72affc2fabe2507bdc0c25:ACCESS_INFO.md:generic-api-key:120
+0834fa0b39e8fd662d72affc2fabe2507bdc0c25:DEPLOYMENT_STATUS.md:generic-api-key:25
+0834fa0b39e8fd662d72affc2fabe2507bdc0c25:PAIRING_INSTRUCTIONS.md:generic-api-key:48
+0834fa0b39e8fd662d72affc2fabe2507bdc0c25:QUICK_ACCESS.md:generic-api-key:105
+0834fa0b39e8fd662d72affc2fabe2507bdc0c25:QUICK_ACCESS.md:generic-api-key:161
+0834fa0b39e8fd662d72affc2fabe2507bdc0c25:QUICK_ACCESS.md:generic-api-key:237
+0834fa0b39e8fd662d72affc2fabe2507bdc0c25:QUICK_ACCESS.md:generic-api-key:241
+0834fa0b39e8fd662d72affc2fabe2507bdc0c25:QUICK_ACCESS.md:generic-api-key:49
+0834fa0b39e8fd662d72affc2fabe2507bdc0c25:SETUP_API_KEYS.md:generic-api-key:78
+0834fa0b39e8fd662d72affc2fabe2507bdc0c25:SETUP_SUMMARY.md:generic-api-key:84
+0834fa0b39e8fd662d72affc2fabe2507bdc0c25:SYSTEM_STATUS.md:generic-api-key:137
+0834fa0b39e8fd662d72affc2fabe2507bdc0c25:continue-20260215-1457.md:generic-api-key:460
+0834fa0b39e8fd662d72affc2fabe2507bdc0c25:docker/docker-compose.yml:generic-api-key:91
+0ab680eb3ac17f1c25d7ab340d4ef8b57f8bb30a:gateway/Dockerfile:generic-api-key:145
+2593dc85f9704214818f264ec7d636fbbe574bab:HOW_TO_CONNECT.md:generic-api-key:82
+2593dc85f9704214818f264ec7d636fbbe574bab:continue-20260215-0717.md:generic-api-key:148
+29b4e1bad64c8ea8b0c8c8a189f1a52e4b006686:gateway/ingest_api/main.py:generic-api-key:2503
+29b4e1bad64c8ea8b0c8c8a189f1a52e4b006686:gateway/ingest_api/main.py:generic-api-key:2506
+43506dd3836b6716bc5ca78a25eb1c6dfcc72546:CONTINUE-2026-02-16.md:generic-api-key:31
+43506dd3836b6716bc5ca78a25eb1c6dfcc72546:VAULT-SHARING-INSTRUCTIONS.md:generic-api-key:89
+929ea21ce216a73650691814f9b6590c6e44bd80:gateway/ingest_api/main.py:generic-api-key:3279
+92f117213c2425bc891accc28613d474212ff0ff:gateway/ingest_api/main.py:generic-api-key:2566
+a001c25010a11b0bfa62942727fd9e4e6eaf54a7:gateway/ingest_api/main.py:generic-api-key:2503
+acbc7b4a1ba53d7e38bfe5d0376ecb96acf4f365:gateway/ingest_api/main.py.backup.refactor:generic-api-key:2665
+c6976b92010072b1ce45f73339a9e6ea2473bb17:oneclaw-container/config/devices/paired.json:generic-api-key:4
+fb27e2fa550822478407849489d836f200836170:continue-20260220-0455.md:generic-api-key:197
+
+# github-pat (1 finding — placeholder pattern from .gitallowed examples)
+dd67497b8adf7a843ccde8b5225213c5dbc75011:.gitallowed:github-pat:15
+
+# private-key (1 finding — old oneclaw-container device identity, not in working tree)
+c6976b92010072b1ce45f73339a9e6ea2473bb17:oneclaw-container/config/identity/device.json:private-key:5
