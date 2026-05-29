@@ -48,9 +48,7 @@ _MIGRATION_ADD_BOT_ID = (
 )
 
 # bot_id index — created AFTER the migration ensures the column exists.
-_SCHEMA_BOT_ID_INDEX = (
-    "CREATE INDEX IF NOT EXISTS idx_audit_bot_id ON audit_events(bot_id)"
-)
+_SCHEMA_BOT_ID_INDEX = "CREATE INDEX IF NOT EXISTS idx_audit_bot_id ON audit_events(bot_id)"
 
 
 class AuditEvent:

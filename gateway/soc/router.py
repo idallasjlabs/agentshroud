@@ -587,7 +587,8 @@ async def list_services(
     bot_hostname = getattr(bot, "hostname", "")
     bot_image = getattr(bot, "image", "")
     return [
-        s for s in all_services
+        s
+        for s in all_services
         if (bot_hostname and bot_hostname in s.get("name", ""))
         or (bot_image and bot_image in s.get("image", ""))
     ]
@@ -2003,7 +2004,9 @@ async def get_scanner_results(
             scanner_results = getattr(app, "scanner_results", {}) or {}
             bot_image_scan = scanner_results.get(f"trivy:image:{image}") if image else None
             result["bot_id"] = bot_id
-            result["bot_image"] = bot_image_scan.get("summary") if isinstance(bot_image_scan, dict) else None
+            result["bot_image"] = (
+                bot_image_scan.get("summary") if isinstance(bot_image_scan, dict) else None
+            )
         return result
     except Exception as exc:
         logger.warning("get_scanner_results: %s", exc)

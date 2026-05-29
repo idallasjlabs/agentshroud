@@ -362,9 +362,11 @@ async def test_webhook_receiver_passes_agent_id_as_bot_id():
     mock_state = MagicMock()
     mock_state.collaborator_tracker = tracker
 
-    with patch("gateway.ingest_api.state.app_state", mock_state), patch.object(
-        receiver, "_extract_user_id", return_value="7614658040"
-    ), patch.object(receiver, "_extract_username", return_value="TestUser"):
+    with (
+        patch("gateway.ingest_api.state.app_state", mock_state),
+        patch.object(receiver, "_extract_user_id", return_value="7614658040"),
+        patch.object(receiver, "_extract_username", return_value="TestUser"),
+    ):
         await receiver.process_webhook(
             payload={"message": {"text": "hello from hermes"}},
             source="telegram",

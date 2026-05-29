@@ -189,7 +189,9 @@ class HTTPConnectProxy:
                         self._ip_to_bot_registry[ip] = bot_id
                         logger.debug(
                             "IP→bot registry (lazy rDNS): %s → %s (hostname=%s)",
-                            ip, bot_id, rdns_host,
+                            ip,
+                            bot_id,
+                            rdns_host,
                         )
                         return bot_id
             except Exception:

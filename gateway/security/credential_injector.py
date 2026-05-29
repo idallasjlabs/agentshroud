@@ -55,7 +55,9 @@ class CredentialMapping:
     secret_file: str  # path to secret file in /run/secrets/
     header_prefix: str = ""  # e.g., "Bearer " for Authorization headers
     strip_headers: List[str] = field(default_factory=list)  # headers to remove before injecting
-    extra_headers: Dict[str, str] = field(default_factory=dict)  # additional headers to set/merge after injection
+    extra_headers: Dict[str, str] = field(
+        default_factory=dict
+    )  # additional headers to set/merge after injection
     loaded_value: Optional[str] = field(default=None, repr=False)
 
 
@@ -172,7 +174,9 @@ class CredentialInjector:
                 existing = headers.pop(matched, "") if matched else ""
                 if existing:
                     existing_vals = [v.strip() for v in existing.split(",")]
-                    headers[hdr_key] = existing if hdr_val in existing_vals else f"{existing},{hdr_val}"
+                    headers[hdr_key] = (
+                        existing if hdr_val in existing_vals else f"{existing},{hdr_val}"
+                    )
                 else:
                     headers[hdr_key] = hdr_val
 

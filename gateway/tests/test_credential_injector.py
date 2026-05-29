@@ -209,7 +209,9 @@ class TestOAuthInjection:
 
     def _make_anthropic_injector(self, tmp_path: Path) -> CredentialInjector:
         (tmp_path / "anthropic_oauth_token").write_text("sk-ant-oat01-gateway-token")
-        return CredentialInjector(config=CredentialInjectorConfig(secrets_dir=str(tmp_path), enabled=True))
+        return CredentialInjector(
+            config=CredentialInjectorConfig(secrets_dir=str(tmp_path), enabled=True)
+        )
 
     def test_adds_oauth_beta_header_when_injecting(self, tmp_path):
         """inject_headers sets anthropic-beta: oauth-2025-04-20 when Bearer is injected."""
@@ -225,7 +227,9 @@ class TestOAuthInjection:
         original = "Bearer sk-ant-oat01-openclaw-runtime-token"
         headers: dict[str, str] = {"Authorization": original}
         inj.inject_headers("api.anthropic.com", headers)
-        assert headers["Authorization"] == original, "Gateway must not clobber client's Bearer token"
+        assert (
+            headers["Authorization"] == original
+        ), "Gateway must not clobber client's Bearer token"
 
     def test_x_api_key_stripped_and_bearer_plus_beta_injected(self, tmp_path):
         """x-api-key is stripped; Authorization: Bearer and anthropic-beta are added."""

@@ -187,7 +187,9 @@ class TestSecurityEventsBotFilter:
                 new=AsyncMock(return_value=[ev_openclaw, ev_hermes, ev_sub]),
             ),
         ):
-            result = await get_security_events(limit=50, severity=None, bot_id="openclaw", caller=caller)
+            result = await get_security_events(
+                limit=50, severity=None, bot_id="openclaw", caller=caller
+            )
 
         agent_ids = [r["agent_id"] for r in result]
         assert "openclaw" in agent_ids
@@ -477,9 +479,15 @@ class TestServicesBotFilter:
         """
         from gateway.soc.models import ServiceDescriptor, ServiceStatus
 
-        svc_openclaw = ServiceDescriptor(name="agentshroud-bot", status=ServiceStatus.RUNNING, image="openclaw:latest")
-        svc_hermes = ServiceDescriptor(name="agentshroud-hermes", status=ServiceStatus.RUNNING, image="hermes-agent:latest")
-        svc_gateway = ServiceDescriptor(name="agentshroud-gateway", status=ServiceStatus.RUNNING, image="gateway:latest")
+        svc_openclaw = ServiceDescriptor(
+            name="agentshroud-bot", status=ServiceStatus.RUNNING, image="openclaw:latest"
+        )
+        svc_hermes = ServiceDescriptor(
+            name="agentshroud-hermes", status=ServiceStatus.RUNNING, image="hermes-agent:latest"
+        )
+        svc_gateway = ServiceDescriptor(
+            name="agentshroud-gateway", status=ServiceStatus.RUNNING, image="gateway:latest"
+        )
 
         # Use a very specific hostname that only matches agentshroud-bot
         bot = _make_bot_config(hostname="agentshroud-bot", image="openclaw:latest")
@@ -584,7 +592,9 @@ class TestScorecardBotId:
 class TestConfigBotId:
     @pytest.mark.asyncio
     async def test_bot_id_returns_per_bot_config(self):
-        bot = _make_bot_config(name="OpenClaw", hostname="agentshroud", port=18789, image="openclaw:latest")
+        bot = _make_bot_config(
+            name="OpenClaw", hostname="agentshroud", port=18789, image="openclaw:latest"
+        )
         app = _make_app_state(bots={"openclaw": bot})
         caller = _make_owner_caller()
 
@@ -647,11 +657,15 @@ class TestComputeBotScorecard:
     ) -> MagicMock:
         bot = _make_bot_config(image=image)
         app = _make_app_state(bots={"openclaw": bot})
-        app.scanner_results = {
-            f"trivy:image:{image}": {
-                "summary": {"critical": critical, "high": high, "medium": medium}
+        app.scanner_results = (
+            {
+                f"trivy:image:{image}": {
+                    "summary": {"critical": critical, "high": high, "medium": medium}
+                }
             }
-        } if image else {}
+            if image
+            else {}
+        )
         ef = MagicMock()
         ef.get_stats = MagicMock(return_value={"denied": denials})
         app.egress_filter = ef
@@ -745,7 +759,17 @@ class TestComputeBotScorecard:
     def test_result_structure_has_required_keys(self):
         app = self._make_state_with_bot()
         result = compute_bot_scorecard("openclaw", app)
-        required = {"score", "risk_level", "bot_id", "image", "critical", "high", "medium", "egress_denials", "domains"}
+        required = {
+            "score",
+            "risk_level",
+            "bot_id",
+            "image",
+            "critical",
+            "high",
+            "medium",
+            "egress_denials",
+            "domains",
+        }
         assert required <= set(result.keys())
 
     def test_domains_has_vuln_and_egress(self):
@@ -829,7 +853,9 @@ class TestBotSelectorFrontend:
 
     @pytest.mark.asyncio
     async def test_single_bot_returns_list_of_one(self):
-        bots = {"openclaw": _make_m6_bot_config("openclaw", "OpenClaw", "agentshroud", default=True)}
+        bots = {
+            "openclaw": _make_m6_bot_config("openclaw", "OpenClaw", "agentshroud", default=True)
+        }
         app = _make_m6_app_state(bots)
         caller = _make_m6_caller()
 
@@ -861,17 +887,23 @@ class TestBotSelectorFrontend:
         hermes_event = MagicMock()
         hermes_event.agent_id = "hermes"
         hermes_event.model_dump.return_value = {
-            "event_id": "evt-1", "agent_id": "hermes",
-            "event_type": "security_event", "severity": "info",
-            "source_module": "hermes.promptguard", "summary": "prompt checked",
+            "event_id": "evt-1",
+            "agent_id": "hermes",
+            "event_type": "security_event",
+            "severity": "info",
+            "source_module": "hermes.promptguard",
+            "summary": "prompt checked",
             "timestamp": "2026-05-29T00:00:00Z",
         }
         openclaw_event = MagicMock()
         openclaw_event.agent_id = "openclaw"
         openclaw_event.model_dump.return_value = {
-            "event_id": "evt-2", "agent_id": "openclaw",
-            "event_type": "security_event", "severity": "info",
-            "source_module": "openclaw.promptguard", "summary": "openclaw event",
+            "event_id": "evt-2",
+            "agent_id": "openclaw",
+            "event_type": "security_event",
+            "severity": "info",
+            "source_module": "openclaw.promptguard",
+            "summary": "openclaw event",
             "timestamp": "2026-05-29T00:00:00Z",
         }
 
@@ -886,7 +918,9 @@ class TestBotSelectorFrontend:
                 new=AsyncMock(return_value=[hermes_event, openclaw_event]),
             ),
         ):
-            result = await get_security_events(limit=50, severity=None, bot_id="hermes", caller=caller)
+            result = await get_security_events(
+                limit=50, severity=None, bot_id="hermes", caller=caller
+            )
 
         assert len(result) == 1
         assert result[0]["agent_id"] == "hermes"
@@ -896,9 +930,12 @@ class TestBotSelectorFrontend:
         evt = MagicMock()
         evt.agent_id = "openclaw"
         evt.model_dump.return_value = {
-            "event_id": "evt-3", "agent_id": "openclaw",
-            "event_type": "security_event", "severity": "info",
-            "source_module": "openclaw.module", "summary": "some event",
+            "event_id": "evt-3",
+            "agent_id": "openclaw",
+            "event_type": "security_event",
+            "severity": "info",
+            "source_module": "openclaw.module",
+            "summary": "some event",
             "timestamp": "2026-05-29T00:00:00Z",
         }
 
@@ -913,7 +950,9 @@ class TestBotSelectorFrontend:
                 new=AsyncMock(return_value=[evt]),
             ),
         ):
-            result = await get_security_events(limit=50, severity=None, bot_id="nonexistent", caller=caller)
+            result = await get_security_events(
+                limit=50, severity=None, bot_id="nonexistent", caller=caller
+            )
 
         assert isinstance(result, list)
         assert len(result) == 0

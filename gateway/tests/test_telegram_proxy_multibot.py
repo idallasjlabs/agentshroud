@@ -17,7 +17,6 @@ from unittest.mock import AsyncMock, MagicMock, patch
 
 import pytest
 
-
 _OPENCLAW_TOKEN = "123456789:OpenClawFakeTelegram_TokenABCDEFGHIJK"
 _HERMES_TOKEN = "987654321:HermesFakeTelegram_TokenXYZABCDEFGHIJ"
 _UNKNOWN_TOKEN = "000000000:UnknownFakeTelegram_TokenZZZZZZZZZZZZ"
@@ -267,9 +266,7 @@ class TestMultiBotContextvarRouting:
         _tp._inbound_bot_token.set(None)
         proxy = self._make_proxy(_OPENCLAW_TOKEN)
         with patch("urllib.request.urlopen", side_effect=fake_urlopen):
-            asyncio.get_event_loop().run_until_complete(
-                proxy._send_telegram_text(12345, "hello")
-            )
+            asyncio.get_event_loop().run_until_complete(proxy._send_telegram_text(12345, "hello"))
 
         assert len(captured_urls) == 1
         assert f"bot{_OPENCLAW_TOKEN}" in captured_urls[0]
@@ -282,12 +279,8 @@ class TestMultiBotContextvarRouting:
         initial_value = _tp._inbound_bot_token.get()
 
         async def run():
-            proxy._proxy_request_impl = AsyncMock(
-                return_value={"ok": True, "result": []}
-            )
-            await proxy.proxy_request(
-                _HERMES_TOKEN, "getUpdates", bot_id="hermes"
-            )
+            proxy._proxy_request_impl = AsyncMock(return_value={"ok": True, "result": []})
+            await proxy.proxy_request(_HERMES_TOKEN, "getUpdates", bot_id="hermes")
 
         asyncio.get_event_loop().run_until_complete(run())
         assert _tp._inbound_bot_token.get() == initial_value
@@ -315,6 +308,6 @@ class TestMultiBotContextvarRouting:
         asyncio.get_event_loop().run_until_complete(run())
 
         assert len(captured_token_in_impl) == 1
-        assert captured_token_in_impl[0] == _HERMES_TOKEN, (
-            f"_active_send_token() inside impl should return Hermes token, got: {captured_token_in_impl}"
-        )
+        assert (
+            captured_token_in_impl[0] == _HERMES_TOKEN
+        ), f"_active_send_token() inside impl should return Hermes token, got: {captured_token_in_impl}"
