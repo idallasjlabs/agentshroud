@@ -2801,6 +2801,9 @@ class TelegramAPIProxy:
                             source="telegram",
                             direction="outbound",
                             correlation_id=_out_corr_id,
+                            # TelegramAPIProxy is the OpenClaw/legacy Telegram path; no
+                            # per-instance bot_id attribute — default to "openclaw".
+                            bot_id="openclaw",
                         )
             except Exception as _ote:
                 logger.debug("Outbound collab response tracking error (non-fatal): %s", _ote)
@@ -4358,6 +4361,9 @@ class TelegramAPIProxy:
                         source="telegram",
                         direction="inbound",
                         correlation_id=_corr_id,
+                        # TelegramAPIProxy is the OpenClaw/legacy Telegram path; no
+                        # per-instance bot_id attribute — default to "openclaw".
+                        bot_id="openclaw",
                     )
             except Exception as _te:
                 logger.debug("Collaborator tracker error (non-fatal): %s", _te)
@@ -7458,6 +7464,9 @@ class TelegramAPIProxy:
                                 source="telegram",
                                 direction="outbound",
                                 correlation_id=_local_corr_id,
+                                # TelegramAPIProxy is the OpenClaw/legacy Telegram path; no
+                                # per-instance bot_id attribute — default to "openclaw".
+                                bot_id="openclaw",
                             )
                 except Exception as _te:
                     logger.debug("Outbound local-response tracker error (non-fatal): %s", _te)

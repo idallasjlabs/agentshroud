@@ -495,6 +495,7 @@ class TestHandleEvent:
             source="slack",
             direction="inbound",
             correlation_id=ANY,
+            bot_id="openclaw",
         )
 
     @pytest.mark.asyncio

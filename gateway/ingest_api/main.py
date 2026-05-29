@@ -4452,6 +4452,9 @@ async def slack_ws_relay(websocket: WebSocket, t: str = Query(...)):
                                     message_preview=str(event.get("text", ""))[:80],
                                     source="slack",
                                     direction="inbound",
+                                    # Slack WS relay is scoped to OpenClaw; no multi-bot
+                                    # routing at this layer yet.
+                                    bot_id="openclaw",
                                 )
                 except (json.JSONDecodeError, KeyError):
                     pass
