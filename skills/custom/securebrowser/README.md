@@ -1,7 +1,7 @@
 # SecureBrowser Skill
 
 **Version**: 1.0.0  
-**Author**: SecureClaw Project  
+**Author**: AgentShroud Project  
 **License**: MIT  
 **Security Level**: Enterprise-Grade
 
@@ -268,7 +268,7 @@ python3 browse.py screenshot \
 
 ## Integration
 
-### With SecureClaw Gateway
+### With AgentShroud Gateway
 
 ```python
 # gateway/ingest_api/browser.py
@@ -390,8 +390,8 @@ docker exec openclaw-bot clawhub publish securebrowser.skill
 - config.yaml - Configuration reference
 
 **Issues**:
-- GitHub: https://github.com/secureclaw/securebrowser
-- Email: security@secureclaw.dev
+- GitHub: https://github.com/agentshroudai/agentshroud
+- Email: security@agentshroud.ai
 
 ## License
 

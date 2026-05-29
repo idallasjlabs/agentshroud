@@ -275,12 +275,15 @@ async def lifespan(app: FastAPI):
 
     try:
         app_state.trust_manager = TrustManager()
-        app_state.trust_manager.register_agent("default")
-        # Elevate default agent to STANDARD so internal API calls work
-        app_state.trust_manager._conn.execute(
-            "UPDATE trust_scores SET score = 200, level = ? WHERE agent_id = ?",
-            (int(TrustLevel.STANDARD), "default"),
-        )
+        # Register the known agent identities with STANDARD trust so internal
+        # API calls are not blocked. "default" is the legacy fallback;
+        # "openclaw" and "hermes" are the production bot_ids.
+        for _agent_id in ("default", "openclaw", "hermes"):
+            app_state.trust_manager.register_agent(_agent_id)
+            app_state.trust_manager._conn.execute(
+                "UPDATE trust_scores SET score = 200, level = ? WHERE agent_id = ?",
+                (int(TrustLevel.STANDARD), _agent_id),
+            )
         app_state.trust_manager._conn.commit()
         logger.info("TrustManager initialized")
     except Exception as e:

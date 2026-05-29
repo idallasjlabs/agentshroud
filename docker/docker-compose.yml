@@ -304,7 +304,7 @@ services:
       gateway:
         condition: service_healthy
 
-  # ── Hermes Agent (second bot — v1.4.0 bot-agnostic proof) ────────────────────
+  # ── Hermes Agent (second bot — v1.1.0 bot-agnostic proof) ────────────────────
   # AgentShroud™ Patent Pending — U.S. Provisional Application No. 64/018,744
   # Hermes runs alongside OpenClaw on the same isolated network. All egress
   # flows through gateway:8181 (HTTP_PROXY) so the same 76-module security
@@ -337,6 +337,7 @@ services:
       - brave_api_key
       - anthropic_oauth_token
       - hermes_api_key
+      - github_pat
     environment:
       HTTP_PROXY: http://gateway:8181
       HTTPS_PROXY: http://gateway:8181
@@ -350,7 +351,7 @@ services:
       ANTHROPIC_BASE_URL: http://gateway:8080
       OPENAI_BASE_URL: http://gateway:8080
       OLLAMA_BASE_URL: http://gateway:8080/v1
-      # Owner-only allow-list for v1.4.0 launch. Add collaborators after smoke tests pass.
+      # Owner-only allow-list for v1.1.0 launch. Add collaborators after smoke tests pass.
       TELEGRAM_ALLOWED_USERS: "8096968754"
       TELEGRAM_HOME_CHANNEL: "8096968754"
       # Disable fallback-IP transport: TelegramFallbackTransport bypasses our gateway
@@ -464,6 +465,8 @@ secrets:
     file: ./secrets/brave_api_key.txt
   hermes_api_key:
     file: ./secrets/hermes_api_key.txt
+  github_pat:
+    file: ./secrets/github_pat.txt
 
 # ── Networks ───────────────────────────────────────────────────────────────────
 # Two networks: internal (internet access) and isolated (no internet)

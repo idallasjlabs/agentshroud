@@ -5,7 +5,7 @@ docker/scap-content/ssg-debian12-ds.xml:generic-api-key:213720
 # All confirmed non-secrets: AWS docs example keys (AKIAIOSFODNN7EXAMPLE etc.),
 # OpenAI placeholder keys (sk-proj-abc123, sk-abcdef...), test fixture tokens,
 # example content in skill/agent/codex docs, and old device config from
-# oneclaw-container (no longer in working tree).
+# agentshroud-container (no longer in working tree).
 # Fingerprints use gitleaks v8.18.4 format: commit:file:rule:line
 
 # aws-access-token (25 findings — AWS documentation example keys, not real)
@@ -66,5 +66,5 @@ fb27e2fa550822478407849489d836f200836170:continue-20260220-0455.md:generic-api-k
 # github-pat (1 finding — placeholder pattern from .gitallowed examples)
 dd67497b8adf7a843ccde8b5225213c5dbc75011:.gitallowed:github-pat:15
 
-# private-key (1 finding — old oneclaw-container device identity, not in working tree)
+# private-key (1 finding — old agentshroud-container device identity, not in working tree)
 c6976b92010072b1ce45f73339a9e6ea2473bb17:oneclaw-container/config/identity/device.json:private-key:5

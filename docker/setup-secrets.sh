@@ -210,12 +210,13 @@ declare -a SECRET_DEFS=(
     "slack_bot_token|OpenClaw Slack bot token (xoxb-...)|yes|yes|openclaw"
     "slack_signing_secret|OpenClaw Slack signing secret|yes|yes|openclaw"
     "slack_app_token|OpenClaw Slack app token (xapp-...)|yes|yes|openclaw"
-    # Hermes Agent secrets (v1.4.0 — second bot)
+    # Hermes Agent secrets (v1.1.0 — second bot)
     "hermes_telegram_bot_token|Hermes Telegram bot token (@agentshroud_hermes_bot)|yes|yes|hermes"
     "slack_bot_token_hermes|Hermes Slack bot token (xoxb-...)|yes|yes|hermes"
     "slack_app_token_hermes|Hermes Slack app token (xapp-...)|yes|yes|hermes"
     "brave_api_key|Brave Search API key (shared with all bots)|yes|yes|all"
     "hermes_api_key|Hermes OpenAI API server key (random hex)|yes|yes|hermes"
+    "github_pat|GitHub Personal Access Token (for Hermes GitHub MCP)|yes|yes|hermes"
 )
 
 # ── Bot filter helper ──────────────────────────────────────────────────────────

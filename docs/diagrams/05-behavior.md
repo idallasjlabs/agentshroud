@@ -93,14 +93,21 @@ Time-ordered interactions with exact message passing.
 sequenceDiagram
     participant Isaiah as Isaiah (Telegram)
     participant TG as Telegram API
-    participant Bot as Bot Container<br/>(OpenClaw :18789)
+    participant Bot as OpenClaw Bot<br/>(agentshroud-bot :18789)
+    participant Hermes as Hermes Agent<br/>(agentshroud-hermes :8642)
     participant GW as Gateway<br/>(:8080/:8181)
     participant OAI as OpenAI API
     participant Ledger as ledger.db
 
-    Isaiah->>TG: Sends message
+    Isaiah->>TG: Sends message to @agentshroud_bot
     TG->>Bot: Webhook / long-poll delivery
     Note over Bot: Binding: peer 8096968754 → agent:main
+
+    Note over Isaiah,Hermes: Alternatively — message to @agentshroud_hermes_bot
+    Isaiah->>TG: Sends message to @agentshroud_hermes_bot
+    TG->>Hermes: Long-poll delivery
+    Hermes->>GW: Outbound via HTTP_PROXY=gateway:8181
+    Note over GW: Domain check + PII scan ✓
 
     Bot->>GW: POST /credentials/op-proxy<br/>(if fresh secret needed)
     GW-->>Bot: Secret value

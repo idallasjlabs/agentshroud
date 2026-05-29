@@ -154,7 +154,7 @@ security:
   browser:
     headless: true
     timeout: 30000
-    user_agent: "SecureClaw/1.0 (Enterprise Browser Automation)"
+    user_agent: "AgentShroud/1.0 (Enterprise Browser Automation)"
     block_third_party_cookies: true
     block_ads: true
     javascript_enabled: true

@@ -4,7 +4,7 @@
 # Unauthorized reproduction, distribution, or use of the AgentShroud name or brand is strictly prohibited.
 """Tests proving that agent_id=target.name (not "default") flows into the security pipeline.
 
-These tests close the gap identified in v1.4.0 planning: forward.py was hardcoding
+These tests close the gap identified in v1.1.0 planning: forward.py was hardcoding
 agent_id="default" in both pipeline.process_inbound and pipeline.process_outbound calls,
 preventing per-bot TrustManager, EgressFilter, and audit log disambiguation.
 """
