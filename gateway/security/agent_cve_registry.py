@@ -1,14 +1,17 @@
 # Copyright © 2026 Isaiah Dallas Jefferson, Jr. AgentShroud™. All rights reserved.
 # AgentShroud™ is a trademark of Isaiah Dallas Jefferson, Jr. (USPTO Serial No. 99728633)
 # Patent Pending — U.S. Provisional Application No. 64/018,744
-"""Upstream Agent CVE Registry — tracks known CVEs in the wrapped agent (OpenClaw).
+"""Upstream Agent CVE Registry — tracks known CVEs in the wrapped agents.
 
+Covers OpenClaw (primary) and Hermes (secondary) agent frameworks.
 Each entry records the CVE metadata, AgentShroud mitigation status, and
 the specific defense layer that addresses (or fails to address) the issue.
 This data powers the SOC "CVE Intelligence" dashboard page and the daily
 CVE report comparisons.
 
-To add a new CVE: append to AGENT_CVE_REGISTRY with status and mitigation notes.
+To add a new CVE: append to the appropriate per-agent list using the same
+dict schema (id, title, cvss, severity, disclosed, fixed_in, description,
+status, mitigation, defense_layers).
 """
 
 from __future__ import annotations
@@ -24,7 +27,7 @@ WRAPPED_AGENT = "OpenClaw"
 #   "not_mitigated"       — no specific defense (upstream patch required)
 MITIGATION_STATUS = ("fully_mitigated", "partially_mitigated", "not_mitigated")
 
-AGENT_CVE_REGISTRY: list[dict[str, Any]] = [
+_OPENCLAW_CVE_REGISTRY: list[dict[str, Any]] = [
     {
         "id": "CVE-2026-22171",
         "title": "Path Traversal in Feishu Media Download",
@@ -3749,23 +3752,222 @@ AGENT_CVE_REGISTRY: list[dict[str, Any]] = [
     },
 ]
 
+# ── Hermes Agent CVE Registry ────────────────────────────────────────────────
+# Tracks published CVEs affecting the Hermes agent framework wrapped by
+# AgentShroud when deployed as agentshroud-hermes.
+_HERMES_CVE_REGISTRY: list[dict[str, Any]] = [
+    {
+        "id": "CVE-2026-7396",
+        "title": "Path Traversal in WeChat Work Adapter",
+        "cvss": 4.0,
+        "severity": "MEDIUM",
+        "disclosed": "2026-03-15",
+        "fixed_in": None,
+        "description": (
+            "A path traversal vulnerability in the WeChat Work adapter "
+            "(gateway/platforms/wecom.py) in hermes-agent 0.8.0 allows a remote "
+            "attacker to traverse the filesystem by manipulating adapter-supplied "
+            "file paths."
+        ),
+        "status": "fully_mitigated",
+        "mitigation": (
+            "WeChat Work platform is not enabled in AgentShroud-managed Hermes "
+            "deployments. Container filesystem is read-only (read_only:true). "
+            "EgressFilter blocks all outbound traffic not explicitly permitted. "
+            "AgentShroud network isolation prevents lateral movement."
+        ),
+        "defense_layers": ["read_only_container", "network_isolation", "egress_filter"],
+    },
+    {
+        "id": "CVE-2026-7397",
+        "title": "Symlink Following in File Tools _check_sensitive_path",
+        "cvss": 4.8,
+        "severity": "MEDIUM",
+        "disclosed": "2026-03-16",
+        "fixed_in": "0.9.0",
+        "description": (
+            "A symlink-following vulnerability in tools/file_tools.py "
+            "_check_sensitive_path in hermes-agent 0.8.0 allows an attacker to "
+            "escape the intended directory boundary by crafting symbolic links that "
+            "point to sensitive paths not covered by the sensitive-path blocklist."
+        ),
+        "status": "fully_mitigated",
+        "mitigation": (
+            "Fixed upstream in hermes-agent 0.9.0; AgentShroud-managed deployments "
+            "run ≥0.9.0. Container filesystem is read-only (read_only:true) providing "
+            "additional defense-in-depth. ToolACL restricts file tool access to "
+            "explicitly permitted paths, preventing exploitation even on older images."
+        ),
+        "defense_layers": ["read_only_container", "tool_acl", "upstream_fix"],
+    },
+    {
+        "id": "CVE-2026-6829",
+        "title": "WebUI Path Traversal via Workspace Path Manipulation",
+        "cvss": 5.3,
+        "severity": "MEDIUM",
+        "disclosed": "2026-03-01",
+        "fixed_in": "v0.50.34",
+        "description": (
+            "A path traversal vulnerability in hermes-webui prior to v0.50.34 allows "
+            "an authenticated user to manipulate the workspace path parameter to read "
+            "files outside the intended workspace directory, potentially exposing "
+            "sensitive configuration or data files."
+        ),
+        "status": "partially_mitigated",
+        "mitigation": (
+            "hermes-webui pinned to ≥v0.50.34 in AgentShroud-managed deployments. "
+            "AgentShroud gateway auth gate enforces authentication on the Hermes web "
+            "dashboard (port 9119 exposed on localhost only; Tailscale required for "
+            "remote access). Recommend verifying version pin on each deployment."
+        ),
+        "defense_layers": ["gateway_auth_gate", "version_pinning"],
+    },
+    {
+        "id": "CVE-2026-9352",
+        "title": "Information Disclosure via _make_run_env in local.py",
+        "cvss": 6.1,
+        "severity": "HIGH",
+        "disclosed": "2026-04-25",
+        "fixed_in": None,
+        "description": (
+            "An information disclosure vulnerability in local.py _make_run_env in "
+            "hermes-agent ≤2026.4.23 allows environment variables — including "
+            "potentially sensitive values such as API tokens and credentials — to be "
+            "leaked into subprocess environments and subsequently into agent outputs "
+            "or logs."
+        ),
+        "status": "partially_mitigated",
+        "mitigation": (
+            "AgentShroud PII redaction layer (Presidio engine at ≥0.9 confidence) "
+            "scrubs sensitive patterns from all agent outputs traversing the gateway "
+            "pipeline. EgressFilter intercepts outbound data. Update hermes-agent to "
+            ">2026.4.23 when available to address the root cause."
+        ),
+        "defense_layers": ["pii_redaction", "egress_filter"],
+    },
+    {
+        "id": "CVE-2026-9367",
+        "title": "OS Command Injection in terminal_tool approval.py detect_dangerous_command",
+        "cvss": 8.1,
+        "severity": "HIGH",
+        "disclosed": "2026-04-28",
+        "fixed_in": None,
+        "description": (
+            "An OS command injection vulnerability in terminal_tool approval.py "
+            "detect_dangerous_command in hermes-agent allows an attacker to craft "
+            "terminal commands that bypass the dangerous-command detection heuristic "
+            "and execute arbitrary OS commands without triggering the approval flow."
+        ),
+        "status": "partially_mitigated",
+        "mitigation": (
+            "AgentShroud ToolACL restricts terminal tool access to explicitly "
+            "permitted principals; unauthorized principals cannot invoke terminal_tool. "
+            "Approval queue gates all dangerous command categories at the gateway layer "
+            "independent of the agent's own approval logic. Network isolation contains "
+            "blast radius if a command executes — egress is proxy-filtered and "
+            "deny-listed for internal RFC-1918 targets."
+        ),
+        "defense_layers": ["tool_acl", "approval_queue", "network_isolation"],
+    },
+    {
+        "id": "CVE-2026-7112",
+        "title": "Missing Authentication on Hermes Agent API Endpoints (GHSA-r7hr-pvjh-r4p3)",
+        "cvss": 5.6,
+        "severity": "MEDIUM",
+        "disclosed": "2026-03-10",
+        "fixed_in": "0.9.0",
+        "description": (
+            "hermes-agent 0.8.0 exposes API endpoints without authentication "
+            "(GHSA-r7hr-pvjh-r4p3), allowing unauthenticated remote callers to "
+            "invoke agent capabilities, read conversation state, and manipulate "
+            "ongoing sessions without credentials."
+        ),
+        "status": "fully_mitigated",
+        "mitigation": (
+            "AgentShroud gateway auth gate enforces authentication on all inbound "
+            "requests before forwarding to the Hermes agent API. Hermes is exposed "
+            "only on the agentshroud-isolated Docker network; direct external access "
+            "is blocked. Remote access requires Tailscale tailnet membership."
+        ),
+        "defense_layers": ["gateway_auth_gate", "network_isolation"],
+    },
+    {
+        "id": "CVE-2026-7113",
+        "title": "Missing Authentication on Hermes Agent Management Endpoints",
+        "cvss": 5.6,
+        "severity": "MEDIUM",
+        "disclosed": "2026-03-10",
+        "fixed_in": "0.9.0",
+        "description": (
+            "A variant of CVE-2026-7112: hermes-agent 0.8.0 additionally exposes "
+            "management and configuration endpoints without authentication, allowing "
+            "unauthenticated callers to modify agent configuration, reset state, or "
+            "enumerate internal agent metadata."
+        ),
+        "status": "fully_mitigated",
+        "mitigation": (
+            "AgentShroud gateway auth gate enforces authentication on all inbound "
+            "requests before forwarding to the Hermes management API. Hermes is "
+            "exposed only on the agentshroud-isolated Docker network; direct external "
+            "access is blocked. Remote access requires Tailscale tailnet membership."
+        ),
+        "defense_layers": ["gateway_auth_gate", "network_isolation"],
+    },
+]
 
-def get_agent_cve_summary() -> dict[str, Any]:
-    """Return a summary of the wrapped agent CVE registry.
+# ── Multi-agent registry lookup ──────────────────────────────────────────────
+# Maps bot_id (lowercase) → its CVE list. Add new agent frameworks here.
+_AGENT_CVE_REGISTRIES: dict[str, list[dict[str, Any]]] = {
+    "openclaw": _OPENCLAW_CVE_REGISTRY,
+    "hermes": _HERMES_CVE_REGISTRY,
+}
 
-    Used by the SOC dashboard and daily report.
+# ── Backward-compatible public aliases ───────────────────────────────────────
+# AGENT_CVE_REGISTRY — imported by daily_cve_report.py and other consumers
+# that predate multi-agent support.  Points at the OpenClaw list unchanged.
+AGENT_CVE_REGISTRY = _OPENCLAW_CVE_REGISTRY
+HERMES_CVE_REGISTRY = _HERMES_CVE_REGISTRY
+
+
+def list_cve_agents() -> list[str]:
+    """Return the list of registered agent bot IDs with CVE coverage.
+
+    Returns:
+        List of bot_id strings (e.g. ["openclaw", "hermes"]).
     """
-    total = len(AGENT_CVE_REGISTRY)
-    by_status = {"fully_mitigated": 0, "partially_mitigated": 0, "not_mitigated": 0}
-    by_severity = {"CRITICAL": 0, "HIGH": 0, "MEDIUM": 0, "LOW": 0}
-    for cve in AGENT_CVE_REGISTRY:
+    return list(_AGENT_CVE_REGISTRIES.keys())
+
+
+def get_agent_cve_summary(bot_id: str = "openclaw") -> dict[str, Any]:
+    """Return a summary of the CVE registry for the specified agent.
+
+    Args:
+        bot_id: The agent/bot identifier.  Defaults to ``"openclaw"`` for
+                backward compatibility with callers that predate multi-agent
+                support.  Pass ``"hermes"`` for the Hermes agent registry.
+
+    Returns:
+        Dict with keys: wrapped_agent, total_cves, by_status, by_severity, cves.
+
+    Raises:
+        KeyError: If *bot_id* is not found in the registry.
+    """
+    registry = _AGENT_CVE_REGISTRIES[bot_id]
+    total = len(registry)
+    by_status: dict[str, int] = {
+        "fully_mitigated": 0,
+        "partially_mitigated": 0,
+        "not_mitigated": 0,
+    }
+    by_severity: dict[str, int] = {"CRITICAL": 0, "HIGH": 0, "MEDIUM": 0, "LOW": 0}
+    for cve in registry:
         by_status[cve["status"]] = by_status.get(cve["status"], 0) + 1
         by_severity[cve["severity"]] = by_severity.get(cve["severity"], 0) + 1
 
     return {
-        "wrapped_agent": WRAPPED_AGENT,
+        "wrapped_agent": WRAPPED_AGENT if bot_id == "openclaw" else bot_id.capitalize(),
         "total_cves": total,
         "by_status": by_status,
         "by_severity": by_severity,
-        "cves": AGENT_CVE_REGISTRY,
+        "cves": registry,
     }
