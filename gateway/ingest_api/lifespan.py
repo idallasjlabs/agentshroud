@@ -369,15 +369,12 @@ async def lifespan(app: FastAPI):
             _per_bot_tokens: dict[str, str] = {}
             for _bid, _bcfg in app_state.config.bots.items():
                 _secret_name = getattr(_bcfg, "telegram_token_secret", None) or (
-                    "telegram_bot_token" if _bid == "openclaw"
-                    else f"telegram_bot_token_{_bid}"
+                    "telegram_bot_token" if _bid == "openclaw" else f"telegram_bot_token_{_bid}"
                 )
                 _bot_tok = _read_secret(_secret_name) or None
                 if _bot_tok and _bot_tok != _tg_token_egress:
                     _per_bot_tokens[_bid] = _bot_tok
-                    logger.info(
-                        "EgressTelegramNotifier: registered per-bot token for '%s'", _bid
-                    )
+                    logger.info("EgressTelegramNotifier: registered per-bot token for '%s'", _bid)
             app_state.egress_notifier = EgressTelegramNotifier(
                 bot_token=_tg_token_egress,
                 owner_chat_id=RBACConfig().owner_user_id,
@@ -1179,6 +1176,7 @@ async def lifespan(app: FastAPI):
         # CONNECT request to the correct bot (instead of the generic "http_connect_proxy"
         # label). Resolves each bot's hostname at startup; silently skips on failure.
         import socket as _socket
+
         _ip_bot_registry: dict[str, str] = {}
         for _bid, _bcfg in app_state.config.bots.items():
             _bhost = getattr(_bcfg, "hostname", None)
@@ -1190,7 +1188,9 @@ async def lifespan(app: FastAPI):
                 except Exception as _dns_err:
                     logger.debug(
                         "IP→bot registry: could not resolve '%s' for bot '%s': %s",
-                        _bhost, _bid, _dns_err,
+                        _bhost,
+                        _bid,
+                        _dns_err,
                     )
         if _ip_bot_registry:
             logger.info(
@@ -1590,9 +1590,7 @@ async def lifespan(app: FastAPI):
                 ]
                 _image_targets = list(
                     dict.fromkeys(
-                        img
-                        for img in [_gateway_image] + _bot_images + _env_images
-                        if img
+                        img for img in [_gateway_image] + _bot_images + _env_images if img
                     )
                 )
                 for _image_target in _image_targets:
@@ -1756,7 +1754,9 @@ async def lifespan(app: FastAPI):
     _hermes_dash_host = os.environ.get("HERMES_DASHBOARD_HOST_UPSTREAM", "agentshroud-hermes")
     _hermes_dash_upstream_port = int(os.environ.get("HERMES_DASHBOARD_UPSTREAM_PORT", "9119"))
     _hermes_dash_enabled = os.environ.get("HERMES_DASHBOARD_PROXY_ENABLED", "true").lower() not in (
-        "false", "0", "no",
+        "false",
+        "0",
+        "no",
     )
 
     async def _run_hermes_dashboard_forwarder() -> None:
@@ -1776,9 +1776,7 @@ async def lifespan(app: FastAPI):
                 except Exception:
                     pass
 
-        async def _handle(
-            reader: _asyncio.StreamReader, writer: _asyncio.StreamWriter
-        ) -> None:
+        async def _handle(reader: _asyncio.StreamReader, writer: _asyncio.StreamWriter) -> None:
             try:
                 r2, w2 = await _asyncio.open_connection(
                     _hermes_dash_host, _hermes_dash_upstream_port
@@ -1800,7 +1798,8 @@ async def lifespan(app: FastAPI):
         except OSError as _ose:
             logger.warning(
                 "⚠ Hermes dashboard forwarder port %d unavailable: %s",
-                _hermes_dash_port, _ose,
+                _hermes_dash_port,
+                _ose,
             )
         except Exception as _exc:
             logger.warning("⚠ Hermes dashboard forwarder error: %s", _exc)
@@ -1809,11 +1808,12 @@ async def lifespan(app: FastAPI):
         app_state._hermes_dash_task = _asyncio.create_task(_run_hermes_dashboard_forwarder())
         logger.info(
             "✓ Hermes dashboard forwarder scheduled on port %d → %s:%d",
-            _hermes_dash_port, _hermes_dash_host, _hermes_dash_upstream_port,
+            _hermes_dash_port,
+            _hermes_dash_host,
+            _hermes_dash_upstream_port,
         )
     else:
         app_state._hermes_dash_task = None
-
 
     # Hermes OpenAI-compatible API TCP Forwarder: gateway:8642 → agentshroud-hermes:8642.
     # Hermes is on agentshroud-isolated (internal:true) so its port cannot be
@@ -1829,7 +1829,9 @@ async def lifespan(app: FastAPI):
     _hermes_api_host = os.environ.get("HERMES_API_HOST_UPSTREAM", "agentshroud-hermes")
     _hermes_api_upstream_port = int(os.environ.get("HERMES_API_UPSTREAM_PORT", "8642"))
     _hermes_api_enabled = os.environ.get("HERMES_API_PROXY_ENABLED", "1").lower() not in (
-        "false", "0", "no",
+        "false",
+        "0",
+        "no",
     )
 
     async def _run_hermes_api_forwarder() -> None:
@@ -1849,13 +1851,9 @@ async def lifespan(app: FastAPI):
                 except Exception:
                     pass
 
-        async def _handle(
-            reader: _asyncio.StreamReader, writer: _asyncio.StreamWriter
-        ) -> None:
+        async def _handle(reader: _asyncio.StreamReader, writer: _asyncio.StreamWriter) -> None:
             try:
-                r2, w2 = await _asyncio.open_connection(
-                    _hermes_api_host, _hermes_api_upstream_port
-                )
+                r2, w2 = await _asyncio.open_connection(_hermes_api_host, _hermes_api_upstream_port)
             except Exception:
                 try:
                     writer.write(b"HTTP/1.1 502 Bad Gateway\r\nContent-Length: 0\r\n\r\n")
@@ -1873,7 +1871,8 @@ async def lifespan(app: FastAPI):
         except OSError as _ose:
             logger.warning(
                 "⚠ Hermes API forwarder port %d unavailable: %s",
-                _hermes_api_port, _ose,
+                _hermes_api_port,
+                _ose,
             )
         except Exception as _exc:
             logger.warning("⚠ Hermes API forwarder error: %s", _exc)
@@ -1882,7 +1881,9 @@ async def lifespan(app: FastAPI):
         app_state._hermes_api_task = _asyncio.create_task(_run_hermes_api_forwarder())
         logger.info(
             "✓ Hermes API forwarder scheduled on port %d → %s:%d",
-            _hermes_api_port, _hermes_api_host, _hermes_api_upstream_port,
+            _hermes_api_port,
+            _hermes_api_host,
+            _hermes_api_upstream_port,
         )
     else:
         app_state._hermes_api_task = None
@@ -1987,7 +1988,6 @@ async def lifespan(app: FastAPI):
             await hermes_dash_task
         except asyncio.CancelledError:
             pass
-
 
     # Stop Hermes API TCP forwarder
     hermes_api_task = getattr(app_state, "_hermes_api_task", None)

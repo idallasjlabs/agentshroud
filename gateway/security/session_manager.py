@@ -186,9 +186,7 @@ class UserSessionManager:
     def _save_sessions(self):
         """Save current sessions to metadata file."""
         try:
-            sessions_data = {
-                key: session.to_dict() for key, session in self.sessions.items()
-            }
+            sessions_data = {key: session.to_dict() for key, session in self.sessions.items()}
 
             with open(self.session_metadata_file, "w") as f:
                 json.dump(sessions_data, f, indent=2)
@@ -270,9 +268,7 @@ class UserSessionManager:
                         import shutil
 
                         shutil.copy2(str(legacy_memory), str(memory_file))
-                        logger.info(
-                            f"Migrated legacy MEMORY.md for user {user_id} → {memory_file}"
-                        )
+                        logger.info(f"Migrated legacy MEMORY.md for user {user_id} → {memory_file}")
                     except Exception as e:
                         logger.warning(f"Could not migrate legacy MEMORY.md for {user_id}: {e}")
 
@@ -405,10 +401,7 @@ USER SESSION TRUST LEVEL: {session.trust_level}
             # Regular users can only see their own sessions (across all bots)
             prefix = f"{requesting_user_id}{self._KEY_SEP}"
             exact = self._session_key(requesting_user_id, "openclaw")
-            return [
-                k for k in self.sessions
-                if k.startswith(prefix) or k == exact
-            ]
+            return [k for k in self.sessions if k.startswith(prefix) or k == exact]
 
     def get_user_workspace_path(self, user_id: str, bot_id: str = "openclaw") -> str:
         """Get the workspace path for a user within a bot's namespace."""

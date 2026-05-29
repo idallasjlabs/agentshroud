@@ -393,12 +393,8 @@ class TestStartupScannerKeying:
         store_fn(f"trivy:image:{img2}", r2, target=img2)
         assert f"trivy:image:{img1}" in app_state.scanner_results
         assert f"trivy:image:{img2}" in app_state.scanner_results
-        assert (
-            app_state.scanner_results[f"trivy:image:{img1}"]["summary"]["findings"] == 0
-        )
-        assert (
-            app_state.scanner_results[f"trivy:image:{img2}"]["summary"]["critical"] == 1
-        )
+        assert app_state.scanner_results[f"trivy:image:{img1}"]["summary"]["findings"] == 0
+        assert app_state.scanner_results[f"trivy:image:{img2}"]["summary"]["critical"] == 1
 
     def test_image_key_summary_severity_computed(self):
         """Summary status is derived correctly for compound 'trivy:image:...' keys."""
@@ -407,8 +403,12 @@ class TestStartupScannerKeying:
         report = dict(self._clean_report())
         report["by_severity"] = {"CRITICAL": 2, "HIGH": 0, "MEDIUM": 0, "LOW": 0, "UNKNOWN": 0}
         report["total_vulnerabilities"] = 2
-        store_fn("trivy:image:agentshroud-gateway:latest", report, target="agentshroud-gateway:latest")
-        status = app_state.scanner_results["trivy:image:agentshroud-gateway:latest"]["summary"]["status"]
+        store_fn(
+            "trivy:image:agentshroud-gateway:latest", report, target="agentshroud-gateway:latest"
+        )
+        status = app_state.scanner_results["trivy:image:agentshroud-gateway:latest"]["summary"][
+            "status"
+        ]
         assert status == "critical"
 
     def test_history_accumulates_all_entries(self):
@@ -417,7 +417,11 @@ class TestStartupScannerKeying:
         store_fn = self._make_store_result_fn(app_state)
         store_fn("trivy:fs:/app", self._clean_report(), target="/app")
         store_fn("trivy", self._clean_report(), target="/app")
-        store_fn("trivy:image:agentshroud-gateway:latest", self._clean_report(), target="agentshroud-gateway:latest")
+        store_fn(
+            "trivy:image:agentshroud-gateway:latest",
+            self._clean_report(),
+            target="agentshroud-gateway:latest",
+        )
         assert len(app_state.scanner_result_history) == 3
 
 

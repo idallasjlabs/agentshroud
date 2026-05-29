@@ -128,9 +128,7 @@ def _build_image_targets() -> List[str]:
     """
     gateway_image = "agentshroud-gateway:latest"
     env_images: List[str] = [
-        t.strip()
-        for t in os.environ.get("AGENTSHROUD_TRIVY_IMAGES", "").split(",")
-        if t.strip()
+        t.strip() for t in os.environ.get("AGENTSHROUD_TRIVY_IMAGES", "").split(",") if t.strip()
     ]
     # HCI placeholder (M8) — populated via AGENTSHROUD_TRIVY_IMAGES env var until M8 lands.
     seen: Dict[str, None] = {}
@@ -179,14 +177,17 @@ async def run_and_send_cve_report(
             )
             try:
                 await loop.run_in_executor(
-                    None, lambda r=img_report: save_report(r, report_prefix=f"image-{_img.replace(':', '-').replace('/', '-')}-")
+                    None,
+                    lambda r=img_report: save_report(
+                        r, report_prefix=f"image-{_img.replace(':', '-').replace('/', '-')}-"
+                    ),
                 )
             except Exception as save_exc:
-                logger.warning("Failed to save Trivy image report for %s: %s", image_target, save_exc)
-            if img_report.get("error"):
-                image_scan_lines.append(
-                    f"🖼 `{image_target}`: scan error — `{img_report['error']}`"
+                logger.warning(
+                    "Failed to save Trivy image report for %s: %s", image_target, save_exc
                 )
+            if img_report.get("error"):
+                image_scan_lines.append(f"🖼 `{image_target}`: scan error — `{img_report['error']}`")
             else:
                 n = img_report.get("total_vulnerabilities", 0)
                 crit = (img_report.get("by_severity") or {}).get("CRITICAL", 0)
@@ -205,11 +206,7 @@ async def run_and_send_cve_report(
 
     # Append image scan summary section.
     if image_scan_lines:
-        message = (
-            message
-            + "\n\n*Container Image Scans*\n"
-            + "\n".join(image_scan_lines)
-        )
+        message = message + "\n\n*Container Image Scans*\n" + "\n".join(image_scan_lines)
 
     # Send via Telegram Bot API.
     send_ok = False

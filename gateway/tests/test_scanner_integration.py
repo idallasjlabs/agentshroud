@@ -1030,8 +1030,12 @@ class TestGetTrivyImageSummaries:
     def test_returns_one_entry_per_report_file(self):
         with tempfile.TemporaryDirectory() as tmpdir:
             log_dir = Path(tmpdir)
-            _write_image_report(log_dir, "agentshroud-gateway:latest", _clean_trivy_report(), "20260528-100000")
-            _write_image_report(log_dir, "agentshroud-bot:latest", _clean_trivy_report(), "20260528-110000")
+            _write_image_report(
+                log_dir, "agentshroud-gateway:latest", _clean_trivy_report(), "20260528-100000"
+            )
+            _write_image_report(
+                log_dir, "agentshroud-bot:latest", _clean_trivy_report(), "20260528-110000"
+            )
             with patch("gateway.security.scanner_integration._TRIVY_REPORT_DIR", log_dir):
                 summaries = get_trivy_image_summaries()
             assert len(summaries) == 2
@@ -1069,8 +1073,12 @@ class TestGetTrivyImageSummaries:
         """bot_id + config param restricts results to that bot's image."""
         with tempfile.TemporaryDirectory() as tmpdir:
             log_dir = Path(tmpdir)
-            _write_image_report(log_dir, "agentshroud-bot:latest", _clean_trivy_report(), "20260528-100000")
-            _write_image_report(log_dir, "agentshroud/hermes:latest", _clean_trivy_report(), "20260528-110000")
+            _write_image_report(
+                log_dir, "agentshroud-bot:latest", _clean_trivy_report(), "20260528-100000"
+            )
+            _write_image_report(
+                log_dir, "agentshroud/hermes:latest", _clean_trivy_report(), "20260528-110000"
+            )
 
             # Build a minimal config mock
             class _BotStub:
@@ -1112,7 +1120,9 @@ class TestGetTrivyImageSummaries:
         with tempfile.TemporaryDirectory() as tmpdir:
             log_dir = Path(tmpdir)
             (log_dir / "image-corrupt-20260528-120000.json").write_text("not json {{{")
-            _write_image_report(log_dir, "agentshroud-gateway:latest", _clean_trivy_report(), "20260528-130000")
+            _write_image_report(
+                log_dir, "agentshroud-gateway:latest", _clean_trivy_report(), "20260528-130000"
+            )
             with patch("gateway.security.scanner_integration._TRIVY_REPORT_DIR", log_dir):
                 summaries = get_trivy_image_summaries()
             assert len(summaries) == 1

@@ -562,7 +562,7 @@ def get_trivy_image_summaries(
         # Filename: image-{image.replace(':','-').replace('/','-')}-TIMESTAMP.json
         stem = report_file.stem  # e.g. "image-agentshroud-gateway-latest-20260528-120000"
         # Strip leading "image-" and trailing timestamp "-YYYYMMDD-HHMMSS" (17 chars)
-        inner = stem[len("image-"):]
+        inner = stem[len("image-") :]
         if len(inner) > 17 and inner[-8:].isdigit() and inner[-15] == "-" and inner[-9] == "-":
             image_name = inner[:-16]  # drop "-YYYYMMDD-HHMMSS"
         else:
