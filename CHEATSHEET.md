@@ -317,8 +317,8 @@ http://localhost:8642/v1/models                 # Hermes OpenAI API
 http://localhost:9121/                           # HCI (Basic Auth — gateway creds)
 
 # Via Tailscale  (requires: sudo scripts/tailscale-serve.sh start)
-https://marvin.tail240ea8.ts.net:18789/          # Control UI (PROD)
-https://marvin.tail240ea8.ts.net:18790/          # Control UI (DEV)
+https://marvin.tail240ea8.ts.net:8080/           # Gateway API
+https://marvin.tail240ea8.ts.net:18789/          # Control UI
 https://marvin.tail240ea8.ts.net:9119/           # Hermes dashboard  (asb up full)
 https://marvin.tail240ea8.ts.net:8642/v1         # Hermes API        (asb up full)
 https://marvin.tail240ea8.ts.net:9121/           # HCI               (asb up full)
