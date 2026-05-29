@@ -35,9 +35,9 @@ if [ "$USER" = "agentshroud-bot" ]; then
     echo "ERROR: no compose override for host '${HOST}' — expected: $OVERRIDE" >&2
     exit 1
   fi
-  COMPOSE="docker compose -f $REPO_DIR/docker/docker-compose.yml -f $OVERRIDE -p $PROJECT"
+  COMPOSE="docker-compose -f $REPO_DIR/docker/docker-compose.yml -f $OVERRIDE -p $PROJECT"
 else
-  COMPOSE="docker compose -f $REPO_DIR/docker/docker-compose.yml -p $PROJECT"
+  COMPOSE="docker-compose -f $REPO_DIR/docker/docker-compose.yml -p $PROJECT"
 fi
 
 # ── Instance banner ──────────────────────────────────────────────────────────
@@ -304,6 +304,7 @@ case "${1:-}" in
   up)
     _PROFILE_FLAG=""
     [[ "${2:-}" == "full" ]] && _PROFILE_FLAG="--profile full"
+    [[ "${2:-}" == "hermes" ]] && _PROFILE_FLAG="--profile hermes"
     setup_ephemeral_secrets
     $COMPOSE $_PROFILE_FLAG up -d
     bash "$REPO_DIR/scripts/post-deploy-check.sh" || true
@@ -316,6 +317,7 @@ case "${1:-}" in
   rebuild)
     _PROFILE_FLAG=""
     [[ "${2:-}" == "full" ]] && _PROFILE_FLAG="--profile full"
+    [[ "${2:-}" == "hermes" ]] && _PROFILE_FLAG="--profile hermes"
     $COMPOSE --profile full down 2>/dev/null || true
     _prune_docker
     setup_ephemeral_secrets
@@ -326,6 +328,7 @@ case "${1:-}" in
   clean-rebuild)
     _PROFILE_FLAG=""
     [[ "${2:-}" == "full" ]] && _PROFILE_FLAG="--profile full"
+    [[ "${2:-}" == "hermes" ]] && _PROFILE_FLAG="--profile hermes"
     echo "This will remove containers, prune stale volumes, and rebuild from scratch."
     echo "Persistent data (workspace, config, SSH keys, browsers) is PRESERVED."
     echo "hermes-config volume is NEVER deleted (preserves Hermes state across rebuilds)."
@@ -353,7 +356,7 @@ case "${1:-}" in
     CANARY_PROJECT="agentshroud-canary"
     echo "[asb canary] Starting canary instance of $SERVICE on alternate ports (+100)..."
     # Start canary instance with offset ports
-    docker compose -f docker/docker-compose.yml \
+    docker-compose -f docker/docker-compose.yml \
       -p "$CANARY_PROJECT" \
       up -d "$SERVICE" \
       2>&1 || { echo "[asb canary] Failed to start canary"; exit 1; }
@@ -365,20 +368,20 @@ case "${1:-}" in
     echo "[asb canary] Primary: $PRIMARY_HEALTH | Canary: $CANARY_HEALTH"
     if [ "$CANARY_HEALTH" != "healthy" ]; then
       echo "[asb canary] Canary unhealthy — stopping canary, primary untouched"
-      docker compose -f docker/docker-compose.yml -p "$CANARY_PROJECT" down
+      docker-compose -f docker/docker-compose.yml -p "$CANARY_PROJECT" down
       exit 1
     fi
     printf "[asb canary] Canary healthy. Promote to primary? [y/N]: "
     read -r PROMOTE
     if [ "$PROMOTE" = "y" ] || [ "$PROMOTE" = "Y" ]; then
       echo "[asb canary] Promoting canary..."
-      docker compose -f docker/docker-compose.yml down
-      docker compose -f docker/docker-compose.yml -p "$CANARY_PROJECT" down
-      docker compose -f docker/docker-compose.yml up -d
+      docker-compose -f docker/docker-compose.yml down
+      docker-compose -f docker/docker-compose.yml -p "$CANARY_PROJECT" down
+      docker-compose -f docker/docker-compose.yml up -d
       echo "[asb canary] Canary promoted. Primary restarted."
     else
       echo "[asb canary] Promotion declined. Stopping canary."
-      docker compose -f docker/docker-compose.yml -p "$CANARY_PROJECT" down
+      docker-compose -f docker/docker-compose.yml -p "$CANARY_PROJECT" down
     fi
     ;;
   rollback)
@@ -390,8 +393,8 @@ case "${1:-}" in
     fi
     PREV_IMAGE=$(cat "$PREV_IMAGE_FILE")
     echo "[asb rollback] Rolling back to: $PREV_IMAGE"
-    docker compose -f docker/docker-compose.yml down
-    GATEWAY_IMAGE="$PREV_IMAGE" docker compose -f docker/docker-compose.yml up -d
+    docker-compose -f docker/docker-compose.yml down
+    GATEWAY_IMAGE="$PREV_IMAGE" docker-compose -f docker/docker-compose.yml up -d
     echo "[asb rollback] Rollback complete. Running post-deploy check..."
     sleep 5
     curl -sf http://localhost:8080/status && echo " [ok]" || echo " [warning: health check failed]"
