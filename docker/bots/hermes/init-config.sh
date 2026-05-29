@@ -119,7 +119,7 @@ if [ ! -f "${_MCP_STAMP}" ]; then
     else
         echo "[hermes-init] github_pat secret absent — skipping GitHub MCP setup"
         echo "[hermes-init]   To enable: store github_pat in 1Password 'Agent Shroud Bot Credentials' vault"
-        echo "[hermes-init]   and run: asb rebuild --profile full"
+        echo "[hermes-init]   and run: asb rebuild full"
     fi
 else
     echo "[hermes-init] GitHub MCP already configured — skipping"
