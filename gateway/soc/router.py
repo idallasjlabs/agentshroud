@@ -145,6 +145,7 @@ async def auth_ws_token(caller: SCLCaller = Depends(get_caller)) -> Dict[str, An
 async def get_security_events(
     limit: int = Query(default=50, le=500),
     severity: Optional[str] = Query(default=None),
+    bot_id: Optional[str] = Query(default=None),
     caller: SCLCaller = Depends(get_caller),
 ) -> List[Dict]:
     caller.require(Action.READ, Resource.SYSTEM)
@@ -156,6 +157,8 @@ async def get_security_events(
         limit=limit,
         severity_filter=severity,
     )
+    if bot_id:
+        events = [e for e in events if e.agent_id == bot_id or e.agent_id.startswith(f"{bot_id}:")]
     return [e.model_dump() for e in events]
 
 
@@ -310,14 +313,20 @@ async def verify_audit_chain(caller: SCLCaller = Depends(get_caller)) -> Dict:
 
 
 @router.get("/egress/pending")
-async def get_egress_pending(caller: SCLCaller = Depends(get_caller)) -> List[Dict]:
+async def get_egress_pending(
+    bot_id: Optional[str] = Query(default=None),
+    caller: SCLCaller = Depends(get_caller),
+) -> List[Dict]:
     caller.require(Action.READ, Resource.APPROVALS)
     app = _app_state()
     try:
         eq = getattr(app, "egress_approval_queue", None)
         if eq and hasattr(eq, "get_pending_requests"):
             pending = await eq.get_pending_requests()
-            return pending if isinstance(pending, list) else []
+            requests_list = pending if isinstance(pending, list) else []
+            if bot_id:
+                requests_list = [r for r in requests_list if r.get("agent_id") == bot_id]
+            return requests_list
     except Exception as exc:
         logger.debug("get_egress_pending: %s", exc)
     return []
@@ -353,6 +362,7 @@ async def get_egress_rules(caller: SCLCaller = Depends(get_caller)) -> Dict:
 @router.get("/egress/log")
 async def get_egress_log(
     limit: int = Query(default=50, le=500),
+    bot_id: Optional[str] = Query(default=None),
     caller: SCLCaller = Depends(get_caller),
 ) -> List[Dict]:
     caller.require(Action.READ, Resource.SYSTEM)
@@ -363,6 +373,8 @@ async def get_egress_log(
         limit=limit,
     )
     egress_events = [e.model_dump() for e in events if "egress" in e.event_type.lower()]
+    if bot_id:
+        egress_events = [e for e in egress_events if e.get("agent_id") == bot_id]
     return egress_events[:limit]
 
 
@@ -486,6 +498,7 @@ async def remove_egress_rule(
 @router.get("/egress/history")
 async def get_egress_history(
     limit: int = Query(default=100, le=500),
+    bot_id: Optional[str] = Query(default=None),
     caller: SCLCaller = Depends(get_caller),
 ) -> List[Dict]:
     """Return egress decision history (approve/deny/timeout) (CC-40)."""
@@ -494,7 +507,10 @@ async def get_egress_history(
     eq = getattr(app, "egress_approval_queue", None)
     if not eq or not hasattr(eq, "get_decision_log"):
         return []
-    return await eq.get_decision_log(limit=limit)
+    decisions = await eq.get_decision_log(limit=limit)
+    if bot_id:
+        decisions = [d for d in decisions if d.get("agent_id") == bot_id]
+    return decisions
 
 
 @router.post("/egress/history/{entry_id}/revoke")
@@ -551,12 +567,30 @@ class ServiceActionRequest(BaseModel):
 
 
 @router.get("/services")
-async def list_services(caller: SCLCaller = Depends(get_caller)) -> List[Dict]:
+async def list_services(
+    bot_id: Optional[str] = Query(default=None),
+    caller: SCLCaller = Depends(get_caller),
+) -> List[Dict]:
     caller.require(Action.READ, Resource.SYSTEM)
     from .services import ServiceManager
 
     mgr = ServiceManager()
-    return [s.model_dump() for s in mgr.list_services()]
+    all_services = [s.model_dump() for s in mgr.list_services()]
+    if not bot_id:
+        return all_services
+    app = _app_state()
+    cfg = getattr(app, "config", None)
+    bots = getattr(cfg, "bots", None) or {}
+    bot = bots.get(bot_id)
+    if not bot:
+        return all_services
+    bot_hostname = getattr(bot, "hostname", "")
+    bot_image = getattr(bot, "image", "")
+    return [
+        s for s in all_services
+        if (bot_hostname and bot_hostname in s.get("name", ""))
+        or (bot_image and bot_image in s.get("image", ""))
+    ]
 
 
 @router.get("/services/{name}/logs")
@@ -898,6 +932,7 @@ async def get_collaborator_activity(
     direction: Optional[str] = Query(default=None),
     search: Optional[str] = Query(default=None),
     is_owner: Optional[bool] = Query(default=None),
+    bot_id: Optional[str] = Query(default=None),
     caller: SCLCaller = Depends(get_caller),
 ) -> JSONResponse:
     """Return full collaborator activity log. limit=0 returns all entries.
@@ -921,6 +956,8 @@ async def get_collaborator_activity(
         )
     entries = tracker.get_activity(since=since, limit=0)  # fetch all, filter below
     total_unfiltered = len(entries)
+    if bot_id:
+        entries = [e for e in entries if bot_id in (e.get("source") or "")]
     if user_id:
         entries = [e for e in entries if e.get("user_id") == user_id]
     if direction in ("inbound", "outbound"):
@@ -1755,13 +1792,50 @@ async def set_module_mode(
     return {"ok": True, "name": name, "mode": body.mode}
 
 
+@router.get("/bots")
+async def list_bots(caller: SCLCaller = Depends(get_caller)) -> List[Dict]:
+    """Return the list of registered bots. Falls back to backward-compat OpenClaw default
+    when no bots section is configured (IEC 62443 FR3 — least-privilege visibility)."""
+    caller.require(Action.READ, Resource.SYSTEM)
+    app = _app_state()
+    cfg = getattr(app, "config", None)
+    bots = getattr(cfg, "bots", None) or {}
+    if not bots:
+        return [{"id": "openclaw", "name": "OpenClaw", "hostname": "agentshroud", "default": True}]
+    return [
+        {
+            "id": bid,
+            "name": b.name,
+            "hostname": b.hostname,
+            "default": bool(getattr(b, "default", False)),
+        }
+        for bid, b in bots.items()
+    ]
+
+
 @router.get("/config")
-async def get_config(caller: SCLCaller = Depends(get_caller)) -> Dict:
+async def get_config(
+    bot_id: Optional[str] = Query(default=None),
+    caller: SCLCaller = Depends(get_caller),
+) -> Dict:
     caller.require(Action.READ, Resource.CONFIGURATION)
     app = _app_state()
     cfg = getattr(app, "config", None)
     if cfg is None:
         return {}
+    if bot_id:
+        bots = getattr(cfg, "bots", None) or {}
+        b = bots.get(bot_id)
+        if not b:
+            return {"error": f"bot not found: {bot_id}"}
+        return {
+            "id": bot_id,
+            "name": b.name,
+            "hostname": b.hostname,
+            "port": b.port,
+            "image": getattr(b, "image", ""),
+            "egress_domains": getattr(b, "egress_domains", []),
+        }
     # Return a safe subset — no secrets
     return {
         "bind": getattr(cfg, "bind", ""),
@@ -1905,17 +1979,32 @@ async def get_scan_results(caller: SCLCaller = Depends(get_caller)) -> List[Dict
 
 
 @router.get("/scanners")
-async def get_scanner_results(caller: SCLCaller = Depends(get_caller)) -> Dict:
+async def get_scanner_results(
+    bot_id: Optional[str] = Query(default=None),
+    caller: SCLCaller = Depends(get_caller),
+) -> Dict:
     """Unified scanner aggregation: Trivy, Falco, ClamAV, Wazuh, OpenSCAP.
 
     Returns aggregated findings from all security sidecars. Data is read from
     shared volumes — no scanners are invoked at query time.
+    When bot_id is provided, augments the result with per-bot image scan summary.
     """
     caller.require(Action.READ, Resource.SYSTEM)
     try:
         from ..security.scanner_integration import aggregate_results
 
-        return aggregate_results()
+        result = aggregate_results()
+        if bot_id:
+            app = _app_state()
+            cfg = getattr(app, "config", None)
+            bots = getattr(cfg, "bots", None) or {}
+            bot = bots.get(bot_id)
+            image = getattr(bot, "image", "") if bot else ""
+            scanner_results = getattr(app, "scanner_results", {}) or {}
+            bot_image_scan = scanner_results.get(f"trivy:image:{image}") if image else None
+            result["bot_id"] = bot_id
+            result["bot_image"] = bot_image_scan.get("summary") if isinstance(bot_image_scan, dict) else None
+        return result
     except Exception as exc:
         logger.warning("get_scanner_results: %s", exc)
         return {
@@ -1961,7 +2050,10 @@ async def get_scanner_recent_events(
 
 
 @router.get("/scorecard")
-async def get_security_scorecard(caller: SCLCaller = Depends(get_caller)) -> Dict:
+async def get_security_scorecard(
+    bot_id: Optional[str] = Query(default=None),
+    caller: SCLCaller = Depends(get_caller),
+) -> Dict:
     """Container Security Scorecard — 12-domain maturity assessment.
 
     Standards basis: CIS Docker Benchmark v1.6.0, NIST SP 800-190,
@@ -1969,9 +2061,16 @@ async def get_security_scorecard(caller: SCLCaller = Depends(get_caller)) -> Dic
 
     Domains scored 0-5 per maturity scale:
       0=Not Started, 1=Initial, 2=Managed, 3=Defined, 4=Measured, 5=Optimizing
+
+    When bot_id is provided, returns a per-bot scorecard scoped to that bot's
+    image scan results and egress stats (compute_bot_scorecard).
     """
     caller.require(Action.READ, Resource.SYSTEM)
     try:
+        if bot_id:
+            from ..security.scanner_integration import compute_bot_scorecard
+
+            return compute_bot_scorecard(bot_id, _app_state())
         from ..security.scanner_integration import compute_scorecard
 
         return compute_scorecard()
@@ -2034,8 +2133,15 @@ async def get_trivy_results(caller: SCLCaller = Depends(get_caller)) -> Dict:
 
 
 @router.get("/agent-cves")
-async def get_agent_cves(caller: SCLCaller = Depends(get_caller)) -> Dict:
-    """Return the CVE registry for the wrapped AI agent (currently OpenClaw).
+async def get_agent_cves(
+    bot_id: Optional[str] = Query(default=None),
+    caller: SCLCaller = Depends(get_caller),
+) -> Dict:
+    """Return the CVE registry for the wrapped AI agent.
+
+    When bot_id is provided, returns CVE data scoped to that bot.
+    Currently OpenClaw ("openclaw") is the only registered agent; unknown bot_id
+    values return {"error": "unknown bot_id: <id>"}.
 
     Each entry includes CVE metadata, CVSS score, and AgentShroud mitigation status
     (fully_mitigated / partially_mitigated / not_mitigated) with defense layer details.
@@ -2045,6 +2151,10 @@ async def get_agent_cves(caller: SCLCaller = Depends(get_caller)) -> Dict:
     try:
         from ..security.agent_cve_registry import get_agent_cve_summary
 
+        target_bot = bot_id or "openclaw"
+        # Only "openclaw" has a registered CVE registry; any other bot_id is unknown.
+        if target_bot != "openclaw":
+            return {"error": f"unknown bot_id: {target_bot}"}
         return get_agent_cve_summary()
     except Exception as exc:
         logger.warning("get_agent_cves: %s", exc)

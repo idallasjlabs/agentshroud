@@ -2536,3 +2536,56 @@ def compute_scorecard() -> Dict[str, Any]:
         "overall_level": overall_label,
         "overall_maturity": overall_label,
     }
+
+
+def compute_bot_scorecard(bot_id: str, app_state: Any) -> Dict[str, Any]:
+    """Per-bot scorecard scoped to a single bot's image scan and egress stats.
+
+    Scoring formula (IEC 62443 FR3/FR6 aligned):
+      score = 100 - (critical * 20) - (high * 10) - (medium * 3) - (egress_denials * 5)
+      clamped to [0, 100]
+
+    Risk levels: green ≥ 80, yellow ≥ 50, red < 50.
+    """
+    cfg = getattr(app_state, "config", None)
+    bots = getattr(cfg, "bots", None) or {}
+    bot = bots.get(bot_id)
+    image = getattr(bot, "image", "") if bot else ""
+
+    # Trivy image scan results for this bot's image
+    scanner_results = getattr(app_state, "scanner_results", {}) or {}
+    scan = scanner_results.get(f"trivy:image:{image}") if image else None
+    summary = (scan or {}).get("summary", {}) if scan else {}
+    critical = int(summary.get("critical", 0) or 0)
+    high = int(summary.get("high", 0) or 0)
+    medium = int(summary.get("medium", 0) or 0)
+
+    # Egress denials for this bot
+    ef = getattr(app_state, "egress_filter", None)
+    try:
+        denials = ef.get_stats(agent_id=bot_id).get("denied", 0) if ef else 0
+    except Exception:
+        denials = 0
+
+    # Weighted score: start 100, penalise findings + egress denials
+    score = 100 - (critical * 20) - (high * 10) - (medium * 3) - (int(denials) * 5)
+    score = max(0, min(100, score))
+
+    risk_level = "green" if score >= 80 else ("yellow" if score >= 50 else "red")
+
+    domains = [
+        {"domain": "vuln_scan", "score": max(0, 100 - critical * 20 - high * 10)},
+        {"domain": "egress", "score": max(0, 100 - int(denials) * 5)},
+    ]
+
+    return {
+        "score": score,
+        "risk_level": risk_level,
+        "bot_id": bot_id,
+        "image": image,
+        "critical": critical,
+        "high": high,
+        "medium": medium,
+        "egress_denials": int(denials),
+        "domains": domains,
+    }
