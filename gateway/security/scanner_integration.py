@@ -509,6 +509,82 @@ def get_trivy_summary() -> Dict[str, Any]:
     return summary
 
 
+def get_trivy_image_summaries(
+    bot_id: Optional[str] = None,
+    config: Optional[Any] = None,
+) -> List[Dict[str, Any]]:
+    """Return per-image Trivy scan summaries from saved image reports.
+
+    Reads reports matching the ``image-*.json`` filename pattern from the
+    Trivy report directory (``/var/log/security/trivy/``).
+
+    Args:
+        bot_id: Optional bot identifier.  When provided together with
+            ``config``, only returns summaries for images belonging to the
+            specified bot (matched via ``config.bots[bot_id].image``).
+        config: Optional gateway config object exposing a ``bots`` dict of
+            :class:`~gateway.ingest_api.bot_config.BotConfig` instances.
+            Used to resolve ``bot_id`` → image name when filtering.
+
+    Returns:
+        List of summary dicts, one per saved image report (newest first).
+        Each dict has keys: ``image``, ``status``, ``findings``,
+        ``critical``, ``high``, ``medium``, ``low``, ``timestamp``.
+    """
+    from .trivy_report import generate_summary
+
+    filter_image: Optional[str] = None
+    if bot_id and config:
+        bots = getattr(config, "bots", None) or {}
+        bot = bots.get(bot_id)
+        if bot:
+            filter_image = getattr(bot, "image", None) or None
+
+    if not _TRIVY_REPORT_DIR.exists():
+        return []
+
+    # Collect all image-*.json reports, newest first.
+    report_files = sorted(
+        _TRIVY_REPORT_DIR.glob("image-*.json"),
+        key=lambda f: f.stat().st_mtime,
+        reverse=True,
+    )
+
+    summaries: List[Dict[str, Any]] = []
+    for report_file in report_files:
+        try:
+            raw = json.loads(report_file.read_text())
+        except Exception as exc:
+            logger.warning("Failed to load image report %s: %s", report_file, exc)
+            continue
+
+        # Derive image name from filename: image-<sanitised-image-name>-YYYYMMDD-HHMMSS.json
+        # Filename: image-{image.replace(':','-').replace('/','-')}-TIMESTAMP.json
+        stem = report_file.stem  # e.g. "image-agentshroud-gateway-latest-20260528-120000"
+        # Strip leading "image-" and trailing timestamp "-YYYYMMDD-HHMMSS" (17 chars)
+        inner = stem[len("image-"):]
+        if len(inner) > 17 and inner[-8:].isdigit() and inner[-15] == "-" and inner[-9] == "-":
+            image_name = inner[:-16]  # drop "-YYYYMMDD-HHMMSS"
+        else:
+            image_name = inner
+
+        if filter_image is not None:
+            # Normalise filter_image the same way save_report does
+            normalised_filter = filter_image.replace(":", "-").replace("/", "-")
+            if not image_name.startswith(normalised_filter):
+                continue
+
+        summary = generate_summary(raw)
+        summary["image"] = image_name
+        if not summary.get("timestamp"):
+            summary["timestamp"] = datetime.fromtimestamp(
+                report_file.stat().st_mtime, tz=timezone.utc
+            ).isoformat()
+        summaries.append(summary)
+
+    return summaries
+
+
 def get_clamav_summary() -> Dict[str, Any]:
     """Return latest ClamAV scan summary from saved reports.
 

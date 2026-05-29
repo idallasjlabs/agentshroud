@@ -1488,7 +1488,7 @@ async def lifespan(app: FastAPI):
                             "status": "critical" if infected > 0 else "clean",
                         }
                     )
-                elif scanner == "trivy":
+                elif scanner == "trivy" or scanner.startswith("trivy:"):
                     bsev = result.get("by_severity", {}) or {}
                     summary.update(
                         {
@@ -1550,13 +1550,15 @@ async def lifespan(app: FastAPI):
             except Exception as _exc:
                 logger.warning("Startup ClamAV scan failed: %s", _exc)
 
-        # Trivy
+        # Trivy — filesystem scan of /app
         _trivy = getattr(app_state, "trivy_scanner", None)
         if _trivy:
             try:
                 _trivy_result = await _loop.run_in_executor(
                     None, lambda: _trivy.run_trivy_scan(scan_type="fs", target="/app", timeout=300)
                 )
+                # Keyed by compound key; also store under legacy "trivy" for backward compat
+                _store_result("trivy:fs:/app", _trivy_result, target="/app")
                 _store_result("trivy", _trivy_result, target="/app")
                 _trivy_status = (
                     (app_state.scanner_results or {})
@@ -1565,11 +1567,65 @@ async def lifespan(app: FastAPI):
                     .get("status")
                 )
                 if _trivy_status in ("error", "critical"):
-                    logger.warning("⚠ Startup Trivy scan complete (status=%s)", _trivy_status)
+                    logger.warning("⚠ Startup Trivy fs scan complete (status=%s)", _trivy_status)
                 else:
-                    logger.info("✓ Startup Trivy scan complete (status=%s)", _trivy_status)
+                    logger.info("✓ Startup Trivy fs scan complete (status=%s)", _trivy_status)
             except Exception as _exc:
-                logger.warning("Startup Trivy scan failed: %s", _exc)
+                logger.warning("Startup Trivy fs scan failed: %s", _exc)
+
+            # Trivy — container image scans
+            try:
+                import os as _os_trivy
+
+                _gateway_image = "agentshroud-gateway:latest"
+                _bot_images = [
+                    b.image
+                    for b in (getattr(app_state.config, "bots", None) or {}).values()
+                    if getattr(b, "image", None)
+                ]
+                _env_images = [
+                    t.strip()
+                    for t in _os_trivy.environ.get("AGENTSHROUD_TRIVY_IMAGES", "").split(",")
+                    if t.strip()
+                ]
+                _image_targets = list(
+                    dict.fromkeys(
+                        img
+                        for img in [_gateway_image] + _bot_images + _env_images
+                        if img
+                    )
+                )
+                for _image_target in _image_targets:
+                    try:
+                        _img = _image_target  # capture loop variable for lambda
+                        _img_result = await _loop.run_in_executor(
+                            None,
+                            lambda _t=_img: _trivy.run_trivy_scan(
+                                scan_type="image", target=_t, timeout=300
+                            ),
+                        )
+                        _store_result(
+                            f"trivy:image:{_image_target}", _img_result, target=_image_target
+                        )
+                        _img_status = (
+                            (app_state.scanner_results or {})
+                            .get(f"trivy:image:{_image_target}", {})
+                            .get("summary", {})
+                            .get("status")
+                        )
+                        logger.info(
+                            "✓ Startup Trivy image scan complete (image=%s status=%s)",
+                            _image_target,
+                            _img_status,
+                        )
+                    except Exception as _img_exc:
+                        logger.warning(
+                            "Startup Trivy image scan failed (image=%s): %s",
+                            _image_target,
+                            _img_exc,
+                        )
+            except Exception as _exc:
+                logger.warning("Startup Trivy image scan loop failed: %s", _exc)
 
     app_state._startup_scanner_task = _asyncio.create_task(_startup_scanner())
     logger.info("✓ Startup security scanner scheduled (runs in 30s)")

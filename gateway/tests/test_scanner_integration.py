@@ -9,6 +9,7 @@ Trivy/Falco/ClamAV/Wazuh processes are invoked.
 from __future__ import annotations
 
 import json
+import tempfile
 from pathlib import Path
 from typing import Any, Dict
 from unittest.mock import MagicMock, patch
@@ -37,6 +38,7 @@ from gateway.security.scanner_integration import (
     get_falco_summary,
     get_openscap_summary,
     get_sbom,
+    get_trivy_image_summaries,
     get_trivy_summary,
     get_wazuh_summary,
 )
@@ -976,3 +978,141 @@ class TestComputeScorecard:
             result = compute_scorecard()
         domain_8 = next(d for d in result["domains"] if d["id"] == 8)
         assert domain_8["score"] >= 2
+
+
+# ---------------------------------------------------------------------------
+# get_trivy_image_summaries (M2 — per-image report reading)
+# ---------------------------------------------------------------------------
+
+
+def _write_image_report(
+    log_dir: Path,
+    image_tag: str,
+    report: Dict[str, Any],
+    ts: str = "20260528-120000",
+) -> Path:
+    """Write a fake image report file in the expected filename format."""
+    sanitised = image_tag.replace(":", "-").replace("/", "-")
+    path = log_dir / f"image-{sanitised}-{ts}.json"
+    path.write_text(json.dumps(report))
+    return path
+
+
+def _clean_trivy_report() -> Dict[str, Any]:
+    return {
+        "scanner": "trivy",
+        "total_vulnerabilities": 0,
+        "by_severity": {"CRITICAL": 0, "HIGH": 0, "MEDIUM": 0, "LOW": 0, "UNKNOWN": 0},
+        "top_cves": [],
+        "affected_packages": [],
+        "affected_package_count": 0,
+        "error": None,
+        "timestamp": "2026-05-28T12:00:00+00:00",
+    }
+
+
+def _critical_trivy_report() -> Dict[str, Any]:
+    r = _clean_trivy_report()
+    r["total_vulnerabilities"] = 3
+    r["by_severity"] = {"CRITICAL": 2, "HIGH": 1, "MEDIUM": 0, "LOW": 0, "UNKNOWN": 0}
+    return r
+
+
+class TestGetTrivyImageSummaries:
+    def test_returns_empty_list_when_dir_missing(self):
+        with patch(
+            "gateway.security.scanner_integration._TRIVY_REPORT_DIR",
+            Path("/nonexistent/trivy/dir"),
+        ):
+            result = get_trivy_image_summaries()
+        assert result == []
+
+    def test_returns_one_entry_per_report_file(self):
+        with tempfile.TemporaryDirectory() as tmpdir:
+            log_dir = Path(tmpdir)
+            _write_image_report(log_dir, "agentshroud-gateway:latest", _clean_trivy_report(), "20260528-100000")
+            _write_image_report(log_dir, "agentshroud-bot:latest", _clean_trivy_report(), "20260528-110000")
+            with patch("gateway.security.scanner_integration._TRIVY_REPORT_DIR", log_dir):
+                summaries = get_trivy_image_summaries()
+            assert len(summaries) == 2
+
+    def test_each_entry_has_image_key(self):
+        with tempfile.TemporaryDirectory() as tmpdir:
+            log_dir = Path(tmpdir)
+            _write_image_report(log_dir, "agentshroud-gateway:latest", _clean_trivy_report())
+            with patch("gateway.security.scanner_integration._TRIVY_REPORT_DIR", log_dir):
+                summaries = get_trivy_image_summaries()
+            assert all("image" in s for s in summaries)
+
+    def test_critical_report_status_is_critical(self):
+        with tempfile.TemporaryDirectory() as tmpdir:
+            log_dir = Path(tmpdir)
+            _write_image_report(log_dir, "agentshroud-bot:latest", _critical_trivy_report())
+            with patch("gateway.security.scanner_integration._TRIVY_REPORT_DIR", log_dir):
+                summaries = get_trivy_image_summaries()
+            assert summaries[0]["status"] == "critical"
+            assert summaries[0]["critical"] == 2
+
+    def test_ignores_non_image_prefixed_files(self):
+        """Files named trivy-*.json (fs scans) are not included."""
+        with tempfile.TemporaryDirectory() as tmpdir:
+            log_dir = Path(tmpdir)
+            # Write a regular fs scan report
+            (log_dir / "trivy-20260528-120000.json").write_text(json.dumps(_clean_trivy_report()))
+            # Write an image report
+            _write_image_report(log_dir, "agentshroud-gateway:latest", _clean_trivy_report())
+            with patch("gateway.security.scanner_integration._TRIVY_REPORT_DIR", log_dir):
+                summaries = get_trivy_image_summaries()
+            assert len(summaries) == 1
+
+    def test_bot_id_filter_matches_bot_image(self):
+        """bot_id + config param restricts results to that bot's image."""
+        with tempfile.TemporaryDirectory() as tmpdir:
+            log_dir = Path(tmpdir)
+            _write_image_report(log_dir, "agentshroud-bot:latest", _clean_trivy_report(), "20260528-100000")
+            _write_image_report(log_dir, "agentshroud/hermes:latest", _clean_trivy_report(), "20260528-110000")
+
+            # Build a minimal config mock
+            class _BotStub:
+                image = "agentshroud-bot:latest"
+
+            class _ConfigStub:
+                bots = {"openclaw": _BotStub()}
+
+            with patch("gateway.security.scanner_integration._TRIVY_REPORT_DIR", log_dir):
+                summaries = get_trivy_image_summaries(bot_id="openclaw", config=_ConfigStub())
+            assert len(summaries) == 1
+            assert summaries[0]["image"].startswith("agentshroud-bot-latest")
+
+    def test_bot_id_filter_unknown_bot_returns_all(self):
+        """Unknown bot_id with no config match falls through and returns all entries."""
+        with tempfile.TemporaryDirectory() as tmpdir:
+            log_dir = Path(tmpdir)
+            _write_image_report(log_dir, "agentshroud-gateway:latest", _clean_trivy_report())
+
+            class _ConfigStub:
+                bots: Dict = {}
+
+            with patch("gateway.security.scanner_integration._TRIVY_REPORT_DIR", log_dir):
+                summaries = get_trivy_image_summaries(bot_id="nonexistent", config=_ConfigStub())
+            # filter_image is None when bot not found → all entries returned
+            assert len(summaries) == 1
+
+    def test_returns_empty_when_no_image_reports(self):
+        """Directory exists but contains only fs scan files — returns []."""
+        with tempfile.TemporaryDirectory() as tmpdir:
+            log_dir = Path(tmpdir)
+            (log_dir / "trivy-20260528-120000.json").write_text(json.dumps(_clean_trivy_report()))
+            with patch("gateway.security.scanner_integration._TRIVY_REPORT_DIR", log_dir):
+                summaries = get_trivy_image_summaries()
+            assert summaries == []
+
+    def test_corrupt_report_file_is_skipped(self):
+        """A JSON-corrupt file is silently skipped, others are still returned."""
+        with tempfile.TemporaryDirectory() as tmpdir:
+            log_dir = Path(tmpdir)
+            (log_dir / "image-corrupt-20260528-120000.json").write_text("not json {{{")
+            _write_image_report(log_dir, "agentshroud-gateway:latest", _clean_trivy_report(), "20260528-130000")
+            with patch("gateway.security.scanner_integration._TRIVY_REPORT_DIR", log_dir):
+                summaries = get_trivy_image_summaries()
+            assert len(summaries) == 1

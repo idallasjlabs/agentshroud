@@ -20,6 +20,7 @@ from gateway.security.trivy_report import (
     generate_summary,
     parse_trivy_output,
     run_trivy_scan,
+    save_report,
 )
 
 # ═══════════════════════════════════════════
@@ -210,6 +211,214 @@ class TestTrivyRun:
         )
         result = run_trivy_scan()
         assert result["total_vulnerabilities"] == 5
+
+    @patch("gateway.security.trivy_report.subprocess.run")
+    def test_run_image_scan_type(self, mock_run):
+        """scan_type='image' is passed correctly to the trivy binary."""
+        mock_run.return_value = MagicMock(
+            returncode=0,
+            stdout=json.dumps(SAMPLE_TRIVY_OUTPUT),
+            stderr="",
+        )
+        result = run_trivy_scan(scan_type="image", target="agentshroud-gateway:latest")
+        assert result["total_vulnerabilities"] == 5
+        call_args = mock_run.call_args[0][0]
+        assert "image" in call_args
+        assert "agentshroud-gateway:latest" in call_args
+
+
+class TestTrivySaveReport:
+    def test_default_prefix(self):
+        """Default report_prefix produces a 'trivy-' filename."""
+        with tempfile.TemporaryDirectory() as tmpdir:
+            report = parse_trivy_output({})
+            path = save_report(report, log_dir=Path(tmpdir))
+            assert path.name.startswith("trivy-")
+            assert path.suffix == ".json"
+
+    def test_custom_prefix(self):
+        """Custom report_prefix is used verbatim."""
+        with tempfile.TemporaryDirectory() as tmpdir:
+            report = parse_trivy_output({})
+            path = save_report(
+                report,
+                log_dir=Path(tmpdir),
+                report_prefix="image-agentshroud-gateway-latest-",
+            )
+            assert path.name.startswith("image-agentshroud-gateway-latest-")
+
+    def test_report_content_persisted(self):
+        """Saved file is valid JSON containing the report keys."""
+        with tempfile.TemporaryDirectory() as tmpdir:
+            report = parse_trivy_output(SAMPLE_TRIVY_OUTPUT)
+            path = save_report(report, log_dir=Path(tmpdir))
+            loaded = json.loads(path.read_text())
+            assert loaded["total_vulnerabilities"] == 5
+
+    def test_log_dir_created_if_missing(self):
+        """save_report creates the log directory if it does not exist."""
+        with tempfile.TemporaryDirectory() as tmpdir:
+            nested = Path(tmpdir) / "a" / "b" / "c"
+            report = parse_trivy_output({})
+            path = save_report(report, log_dir=nested)
+            assert path.exists()
+
+
+# ═══════════════════════════════════════════
+# Startup Scanner Keying (M2 — per-target keys)
+# ═══════════════════════════════════════════
+
+
+class TestStartupScannerKeying:
+    """Simulate the _store_result keying logic from lifespan._startup_scanner.
+
+    The inner function is not importable directly; we exercise the same
+    logic (dict keying with compound scanner names) as a unit.
+    """
+
+    @staticmethod
+    def _make_app_state():
+        class _AS:
+            scanner_results = None
+            scanner_result_history = None
+
+        return _AS()
+
+    @staticmethod
+    def _make_store_result_fn(app_state):
+        """Reproduce the _store_result closure from lifespan.py."""
+        import datetime as _dt
+
+        _now = _dt.datetime.now(_dt.timezone.utc).isoformat()
+
+        def _store_result(scanner: str, result: dict, target: str = "") -> None:
+            store = getattr(app_state, "scanner_results", None)
+            if not isinstance(store, dict):
+                store = {}
+            history = getattr(app_state, "scanner_result_history", None)
+            if not isinstance(history, list):
+                history = []
+            summary: dict = {
+                "scanner": scanner,
+                "target": target,
+                "status": "unknown",
+                "findings": 0,
+                "critical": 0,
+                "high": 0,
+                "medium": 0,
+                "low": 0,
+            }
+            if isinstance(result, dict) and not result.get("error"):
+                if scanner == "clamav":
+                    infected = int(result.get("infected_count", 0))
+                    summary.update(
+                        {
+                            "findings": infected,
+                            "critical": infected,
+                            "status": "critical" if infected > 0 else "clean",
+                        }
+                    )
+                elif scanner == "trivy" or scanner.startswith("trivy:"):
+                    bsev = result.get("by_severity", {}) or {}
+                    summary.update(
+                        {
+                            "critical": int(bsev.get("CRITICAL", 0)),
+                            "high": int(bsev.get("HIGH", 0)),
+                            "medium": int(bsev.get("MEDIUM", 0)),
+                            "low": int(bsev.get("LOW", 0)),
+                            "findings": int(result.get("total_vulnerabilities", 0)),
+                        }
+                    )
+                    summary["status"] = (
+                        "critical"
+                        if summary["critical"] > 0
+                        else "warning" if summary["high"] > 0 else "clean"
+                    )
+            elif isinstance(result, dict) and result.get("error"):
+                summary["status"] = "error"
+            entry = {
+                "timestamp": _now,
+                "scanner": scanner,
+                "target": target,
+                "summary": summary,
+                "result": result,
+            }
+            store[scanner] = entry
+            app_state.scanner_results = store
+            history.append(entry)
+            if len(history) > 5000:
+                del history[: len(history) - 5000]
+            app_state.scanner_result_history = history
+
+        return _store_result
+
+    def _clean_report(self):
+        return {
+            "scanner": "trivy",
+            "total_vulnerabilities": 0,
+            "by_severity": {"CRITICAL": 0, "HIGH": 0, "MEDIUM": 0, "LOW": 0, "UNKNOWN": 0},
+            "top_cves": [],
+            "affected_packages": [],
+            "affected_package_count": 0,
+            "error": None,
+        }
+
+    def test_legacy_trivy_key_present(self):
+        """'trivy' key is always stored for backward compat (SOC /scanners endpoint)."""
+        app_state = self._make_app_state()
+        store = self._make_store_result_fn(app_state)
+        store("trivy", self._clean_report(), target="/app")
+        assert "trivy" in app_state.scanner_results
+
+    def test_fs_compound_key_stored(self):
+        """'trivy:fs:/app' key is stored for per-target access."""
+        app_state = self._make_app_state()
+        store_fn = self._make_store_result_fn(app_state)
+        store_fn("trivy:fs:/app", self._clean_report(), target="/app")
+        store_fn("trivy", self._clean_report(), target="/app")
+        assert "trivy:fs:/app" in app_state.scanner_results
+        assert "trivy" in app_state.scanner_results
+
+    def test_image_keys_do_not_overwrite_each_other(self):
+        """Per-image compound keys are independent — last image doesn't clobber first."""
+        app_state = self._make_app_state()
+        store_fn = self._make_store_result_fn(app_state)
+        img1 = "agentshroud-gateway:latest"
+        img2 = "agentshroud-bot:latest"
+        r1 = dict(self._clean_report())
+        r2 = dict(self._clean_report())
+        r2["total_vulnerabilities"] = 3
+        r2["by_severity"] = {"CRITICAL": 1, "HIGH": 1, "MEDIUM": 1, "LOW": 0, "UNKNOWN": 0}
+        store_fn(f"trivy:image:{img1}", r1, target=img1)
+        store_fn(f"trivy:image:{img2}", r2, target=img2)
+        assert f"trivy:image:{img1}" in app_state.scanner_results
+        assert f"trivy:image:{img2}" in app_state.scanner_results
+        assert (
+            app_state.scanner_results[f"trivy:image:{img1}"]["summary"]["findings"] == 0
+        )
+        assert (
+            app_state.scanner_results[f"trivy:image:{img2}"]["summary"]["critical"] == 1
+        )
+
+    def test_image_key_summary_severity_computed(self):
+        """Summary status is derived correctly for compound 'trivy:image:...' keys."""
+        app_state = self._make_app_state()
+        store_fn = self._make_store_result_fn(app_state)
+        report = dict(self._clean_report())
+        report["by_severity"] = {"CRITICAL": 2, "HIGH": 0, "MEDIUM": 0, "LOW": 0, "UNKNOWN": 0}
+        report["total_vulnerabilities"] = 2
+        store_fn("trivy:image:agentshroud-gateway:latest", report, target="agentshroud-gateway:latest")
+        status = app_state.scanner_results["trivy:image:agentshroud-gateway:latest"]["summary"]["status"]
+        assert status == "critical"
+
+    def test_history_accumulates_all_entries(self):
+        """Each _store_result call appends an entry to scanner_result_history."""
+        app_state = self._make_app_state()
+        store_fn = self._make_store_result_fn(app_state)
+        store_fn("trivy:fs:/app", self._clean_report(), target="/app")
+        store_fn("trivy", self._clean_report(), target="/app")
+        store_fn("trivy:image:agentshroud-gateway:latest", self._clean_report(), target="agentshroud-gateway:latest")
+        assert len(app_state.scanner_result_history) == 3
 
 
 # ═══════════════════════════════════════════
