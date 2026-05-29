@@ -180,6 +180,7 @@ class TestEgressTelegramNotify:
                     "text": "Approved!",
                     "show_alert": False,
                 },
+                token=None,
             )
 
     @pytest.mark.asyncio
