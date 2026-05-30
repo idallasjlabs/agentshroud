@@ -1891,46 +1891,6 @@ async def lifespan(app: FastAPI):
     else:
         app_state._hermes_api_task = None
 
-    # HCI (Hermes Control Interface) Auth-Gated Reverse Proxy: gateway:9121 → hci:3000.
-    # Validates gateway password via HTTP Basic Auth before forwarding to the
-    # agentshroud-hci container on the agentshroud-isolated network.
-    _hci_port = int(os.environ.get("HCI_PROXY_PORT", "9121"))
-    _hci_enabled = os.environ.get("HCI_PROXY_ENABLED", "true").lower() not in (
-        "false",
-        "0",
-        "no",
-    )
-
-    async def _run_hci_proxy() -> None:
-        import uvicorn as _uvicorn
-
-        from ..proxy.hci_proxy import hci_proxy_app as _hci_app
-
-        try:
-            _hci_config = _uvicorn.Config(
-                _hci_app,
-                host="0.0.0.0",
-                port=_hci_port,
-                loop="asyncio",
-                log_config=None,
-                access_log=False,
-            )
-            _hci_server = _uvicorn.Server(_hci_config)
-            await _hci_server.serve()
-        except OSError as _ose:
-            logger.warning("⚠ HCI auth-proxy port %d unavailable: %s", _hci_port, _ose)
-        except SystemExit:
-            logger.warning("⚠ HCI auth-proxy port %d unavailable (bind failed)", _hci_port)
-        except Exception as _exc:
-            logger.warning("⚠ HCI auth-proxy error: %s", _exc)
-
-    if _hci_enabled:
-        app_state._hci_proxy_task = _asyncio.create_task(_run_hci_proxy())
-        logger.info("✓ HCI auth-proxy scheduled on port %d", _hci_port)
-    else:
-        app_state._hci_proxy_task = None
-        logger.info("HCI auth-proxy disabled via HCI_PROXY_ENABLED=false")
-
     install_log_handler()
     logger.info(f"AgentShroud Gateway ready at {app_state.config.bind}:{app_state.config.port}")
     logger.info("=" * 80)
@@ -1998,15 +1958,6 @@ async def lifespan(app: FastAPI):
         hermes_api_task.cancel()
         try:
             await hermes_api_task
-        except asyncio.CancelledError:
-            pass
-
-    # Stop HCI auth-proxy
-    hci_proxy_task = getattr(app_state, "_hci_proxy_task", None)
-    if hci_proxy_task and not hci_proxy_task.done():
-        hci_proxy_task.cancel()
-        try:
-            await hci_proxy_task
         except asyncio.CancelledError:
             pass
 
