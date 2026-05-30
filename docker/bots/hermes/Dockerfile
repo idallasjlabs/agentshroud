@@ -40,6 +40,10 @@ COPY docker/config/hermes/ /app/config-defaults/hermes/
 COPY docker/bots/hermes/start.sh /usr/local/bin/start-hermes.sh
 COPY docker/bots/hermes/init-config.sh /usr/local/bin/init-hermes-config.sh
 
+# Branding assets — logo for Telegram startup photo notifications
+COPY branding/logos/png/logo.png /app/branding/logo.png
+COPY branding/logos/svg/logo.svg /app/branding/logo.svg
+
 RUN chmod +x /usr/local/bin/start-hermes.sh /usr/local/bin/init-hermes-config.sh \
  && mkdir -p /app/config-defaults \
  && chown -R 10000:10000 /app/config-defaults

@@ -194,6 +194,7 @@ RUN chmod +x /usr/local/bin/security-entrypoint.sh \
 
 # Branding assets — logo for Telegram startup photo notifications
 COPY branding/logos/png/logo.png /app/branding/logo.png
+COPY branding/logos/svg/logo.svg /app/branding/logo.svg
 COPY branding/social/telegram-avatar-512x512.png /app/branding/telegram-avatar.png
 
 # Copy documentation
