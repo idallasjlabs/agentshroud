@@ -1034,7 +1034,7 @@ class TestGetTrivyImageSummaries:
                 log_dir, "agentshroud-gateway:latest", _clean_trivy_report(), "20260528-100000"
             )
             _write_image_report(
-                log_dir, "agentshroud-bot:latest", _clean_trivy_report(), "20260528-110000"
+                log_dir, "agentshroud-openclaw:latest", _clean_trivy_report(), "20260528-110000"
             )
             with patch("gateway.security.scanner_integration._TRIVY_REPORT_DIR", log_dir):
                 summaries = get_trivy_image_summaries()
@@ -1051,7 +1051,7 @@ class TestGetTrivyImageSummaries:
     def test_critical_report_status_is_critical(self):
         with tempfile.TemporaryDirectory() as tmpdir:
             log_dir = Path(tmpdir)
-            _write_image_report(log_dir, "agentshroud-bot:latest", _critical_trivy_report())
+            _write_image_report(log_dir, "agentshroud-openclaw:latest", _critical_trivy_report())
             with patch("gateway.security.scanner_integration._TRIVY_REPORT_DIR", log_dir):
                 summaries = get_trivy_image_summaries()
             assert summaries[0]["status"] == "critical"
@@ -1074,7 +1074,7 @@ class TestGetTrivyImageSummaries:
         with tempfile.TemporaryDirectory() as tmpdir:
             log_dir = Path(tmpdir)
             _write_image_report(
-                log_dir, "agentshroud-bot:latest", _clean_trivy_report(), "20260528-100000"
+                log_dir, "agentshroud-openclaw:latest", _clean_trivy_report(), "20260528-100000"
             )
             _write_image_report(
                 log_dir, "agentshroud/hermes:latest", _clean_trivy_report(), "20260528-110000"
@@ -1082,7 +1082,7 @@ class TestGetTrivyImageSummaries:
 
             # Build a minimal config mock
             class _BotStub:
-                image = "agentshroud-bot:latest"
+                image = "agentshroud-openclaw:latest"
 
             class _ConfigStub:
                 bots = {"openclaw": _BotStub()}
@@ -1090,7 +1090,7 @@ class TestGetTrivyImageSummaries:
             with patch("gateway.security.scanner_integration._TRIVY_REPORT_DIR", log_dir):
                 summaries = get_trivy_image_summaries(bot_id="openclaw", config=_ConfigStub())
             assert len(summaries) == 1
-            assert summaries[0]["image"].startswith("agentshroud-bot-latest")
+            assert summaries[0]["image"].startswith("agentshroud-openclaw-latest")
 
     def test_bot_id_filter_unknown_bot_returns_all(self):
         """Unknown bot_id with no config match falls through and returns all entries."""

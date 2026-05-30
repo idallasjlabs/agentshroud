@@ -13,8 +13,8 @@ services:
     memswap_limit: 512m
     cpus: 0.5
 
-  bot:
-    container_name: agentshroud-rpi-bot
+  openclaw:
+    container_name: agentshroud-rpi-openclaw
     environment:
       - OPENCLAW_BOT_NAME=agentshroud_bot_raspberrypi
       - AGENTSHROUD_INSTANCE_LABEL=dev-rpi

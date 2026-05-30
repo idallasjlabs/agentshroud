@@ -40,7 +40,7 @@ LOG_FILE="$HOME/Library/Logs/agentshroud-health.log"
 STATE_FILE="/tmp/agentshroud-health-state.json"
 FIREWALL_SCRIPT="$SCRIPT_DIR/colima-firewall.sh"
 DIAG_SCRIPT="$SCRIPT_DIR/container-net-diag.sh"
-BOT_CONTAINER="agentshroud-bot"
+BOT_CONTAINER="agentshroud-openclaw"
 GATEWAY_CONTAINER="agentshroud-gateway"
 
 # ── Prevent overlapping runs ─────────────────────────────────────────────────

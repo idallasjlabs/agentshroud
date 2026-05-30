@@ -152,6 +152,7 @@ class StatusResponse(BaseModel):
     observatory_mode: Optional[dict] = Field(None, description="Observatory mode state")
     security_summary: Optional[dict] = Field(None, description="Security modules summary")
     egress: Optional[dict] = Field(None, description="Egress firewall stats")
+    proxies: Optional[dict] = Field(None, description="Proxy subsystem health (http, dns)")
 
 
 class ApprovalQueueItem(BaseModel):

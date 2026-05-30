@@ -377,7 +377,7 @@ class TestVersionConsistency:
         resp = await client.get("/status")
         assert resp.status_code == 200
         data = resp.json()
-        assert data["version"] == "1.0.44"
+        assert data["version"] == "1.1.0"
 
 
 class TestTelegramProxyClientDisconnect:

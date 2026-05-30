@@ -27,7 +27,7 @@ echo ""
 mkdir -p "$REPORTS_DIR"
 
 # Check if containers are running
-if ! docker ps | grep -q "agentshroud-bot"; then
+if ! docker ps | grep -q "agentshroud-openclaw"; then
     echo -e "${RED}Error:${NC} AgentShroud container is not running"
     echo "Start containers with: docker compose -f docker/docker-compose.yml up -d"
     exit 1
@@ -40,7 +40,7 @@ if ! docker ps | grep -q "agentshroud-gateway"; then
 fi
 
 echo "Checking for OpenSCAP installation..."
-if ! docker exec agentshroud-bot which oscap >/dev/null 2>&1; then
+if ! docker exec agentshroud-openclaw which oscap >/dev/null 2>&1; then
     echo -e "${YELLOW}Warning:${NC} OpenSCAP not installed in AgentShroud container"
     echo "OpenSCAP can be added to the Dockerfile for compliance scanning"
     echo "Skipping AgentShroud SCAP scan..."
@@ -66,20 +66,20 @@ if [ "$AGENTSHROUD_SCAP" = true ]; then
     echo "Scanning AgentShroud container..."
 
     # Check for available SCAP content
-    SCAP_CONTENT=$(docker exec agentshroud-bot find /usr/share/xml/scap -name "*-ds.xml" 2>/dev/null | head -1 || echo "")
+    SCAP_CONTENT=$(docker exec agentshroud-openclaw find /usr/share/xml/scap -name "*-ds.xml" 2>/dev/null | head -1 || echo "")
 
     if [ -n "$SCAP_CONTENT" ]; then
         echo "Using SCAP content: $SCAP_CONTENT"
 
         # Run SCAP evaluation
-        docker exec agentshroud-bot oscap xccdf eval \
+        docker exec agentshroud-openclaw oscap xccdf eval \
             --results-arf "/tmp/agentshroud-scan-$TIMESTAMP.xml" \
             --report "/tmp/agentshroud-scan-$TIMESTAMP.html" \
             "$SCAP_CONTENT" 2>&1 | tee "$REPORTS_DIR/agentshroud-scan-$TIMESTAMP.log" || true
 
         # Copy reports out of container
-        docker cp "agentshroud-bot:/tmp/agentshroud-scan-$TIMESTAMP.xml" "$REPORTS_DIR/" 2>/dev/null || true
-        docker cp "agentshroud-bot:/tmp/agentshroud-scan-$TIMESTAMP.html" "$REPORTS_DIR/" 2>/dev/null || true
+        docker cp "agentshroud-openclaw:/tmp/agentshroud-scan-$TIMESTAMP.xml" "$REPORTS_DIR/" 2>/dev/null || true
+        docker cp "agentshroud-openclaw:/tmp/agentshroud-scan-$TIMESTAMP.html" "$REPORTS_DIR/" 2>/dev/null || true
 
         echo -e "${GREEN}✓${NC} AgentShroud scan complete"
         echo "   Report: $REPORTS_DIR/agentshroud-scan-$TIMESTAMP.html"
@@ -142,33 +142,33 @@ echo "Running manual security checks..."
 
     echo "Container User (should be non-root):"
     echo "  Gateway: $(docker exec agentshroud-gateway whoami)"
-    echo "  AgentShroud: $(docker exec agentshroud-bot whoami)"
+    echo "  AgentShroud: $(docker exec agentshroud-openclaw whoami)"
     echo ""
 
     echo "Read-only filesystem test:"
     echo -n "  Gateway: "
     docker exec agentshroud-gateway touch /test-file 2>&1 && echo "FAIL" || echo "PASS (read-only)"
     echo -n "  AgentShroud: "
-    docker exec agentshroud-bot touch /test-file 2>&1 && echo "FAIL (expected during dev)" || echo "PASS (read-only)"
+    docker exec agentshroud-openclaw touch /test-file 2>&1 && echo "FAIL (expected during dev)" || echo "PASS (read-only)"
     echo ""
 
     echo "Network connectivity:"
     echo -n "  Gateway to internet: "
     docker exec agentshroud-gateway ping -c 1 8.8.8.8 >/dev/null 2>&1 && echo "PASS" || echo "FAIL"
     echo -n "  AgentShroud to internet: "
-    docker exec agentshroud-bot ping -c 1 8.8.8.8 >/dev/null 2>&1 && echo "PASS" || echo "FAIL"
+    docker exec agentshroud-openclaw ping -c 1 8.8.8.8 >/dev/null 2>&1 && echo "PASS" || echo "FAIL"
     echo ""
 
     echo "Port bindings (should be 127.0.0.1 only):"
     docker port agentshroud-gateway
-    docker port agentshroud-bot
+    docker port agentshroud-openclaw
     echo ""
 
     echo "Security options:"
     echo "  Gateway:"
     docker inspect --format '  {{.HostConfig.SecurityOpt}}' agentshroud-gateway
     echo "  AgentShroud:"
-    docker inspect --format '  {{.HostConfig.SecurityOpt}}' agentshroud-bot
+    docker inspect --format '  {{.HostConfig.SecurityOpt}}' agentshroud-openclaw
     echo ""
 
     echo "Capabilities:"
@@ -177,9 +177,9 @@ echo "Running manual security checks..."
     echo "  Gateway added: {{.HostConfig.CapAdd}}"
     docker inspect --format '  {{.HostConfig.CapAdd}}' agentshroud-gateway
     echo "  AgentShroud dropped: {{.HostConfig.CapDrop}}"
-    docker inspect --format '  {{.HostConfig.CapDrop}}' agentshroud-bot
+    docker inspect --format '  {{.HostConfig.CapDrop}}' agentshroud-openclaw
     echo "  AgentShroud added: {{.HostConfig.CapAdd}}"
-    docker inspect --format '  {{.HostConfig.CapAdd}}' agentshroud-bot
+    docker inspect --format '  {{.HostConfig.CapAdd}}' agentshroud-openclaw
     echo ""
 
 } | tee "$REPORTS_DIR/manual-checks-$TIMESTAMP.log"

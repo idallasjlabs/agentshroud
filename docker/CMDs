@@ -1,19 +1,19 @@
-#docker exec agentshroud-bot openclaw config get gateway.auth.token
+#docker exec agentshroud-openclaw openclaw config get gateway.auth.token
 
-#docker exec agentshroud-bot openclaw config set gateway.auth.allowTailscale true
+#docker exec agentshroud-openclaw openclaw config set gateway.auth.allowTailscale true
 
-#docker exec agentshroud-bot openclaw dashboard
+#docker exec agentshroud-openclaw openclaw dashboard
 
-#docker exec agentshroud-bot openclaw config get gateway.auth
+#docker exec agentshroud-openclaw openclaw config get gateway.auth
 
-#docker exec agentshroud-bot openclaw --help
+#docker exec agentshroud-openclaw openclaw --help
 
-docker exec agentshroud-bot openclaw devices list
+docker exec agentshroud-openclaw openclaw devices list
 
-#docker exec agentshroud-bot openclaw devices approve <requestId>
-echo "docker exec agentshroud-bot openclaw devices approve <requestId>"
+#docker exec agentshroud-openclaw openclaw devices approve <requestId>
+echo "docker exec agentshroud-openclaw openclaw devices approve <requestId>"
 
 # Telegram commands
-#docker exec agentshroud-bot openclaw channels list
-#docker exec agentshroud-bot openclaw pairing list telegram
-#docker exec agentshroud-bot openclaw pairing approve telegram <CODE>
+#docker exec agentshroud-openclaw openclaw channels list
+#docker exec agentshroud-openclaw openclaw pairing list telegram
+#docker exec agentshroud-openclaw openclaw pairing approve telegram <CODE>

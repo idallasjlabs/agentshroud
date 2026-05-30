@@ -83,10 +83,10 @@ class TestEgressRequest:
 class TestServiceDescriptor:
     def test_defaults(self):
         sd = ServiceDescriptor(
-            name="agentshroud-bot",
+            name="agentshroud-openclaw",
             status=ServiceStatus.RUNNING,
             health=HealthStatus.HEALTHY,
-            image="agentshroud-bot:latest",
+            image="agentshroud-openclaw:latest",
         )
         assert sd.container_id is None
         assert sd.resource_usage is not None
@@ -96,10 +96,10 @@ class TestServiceDescriptor:
     def test_with_resource_usage(self):
         ru = ResourceUsage(cpu_percent=12.5, memory_mb=256.0, memory_limit_mb=512.0)
         sd = ServiceDescriptor(
-            name="agentshroud-bot",
+            name="agentshroud-openclaw",
             status=ServiceStatus.RUNNING,
             health=HealthStatus.HEALTHY,
-            image="agentshroud-bot:latest",
+            image="agentshroud-openclaw:latest",
             resource_usage=ru,
         )
         assert sd.resource_usage.cpu_percent == 12.5
@@ -130,7 +130,7 @@ class TestSCLError:
         conf = SCLConfirmationRequired(
             message="This will stop the container.",
             action="stop",
-            target="agentshroud-bot",
+            target="agentshroud-openclaw",
         )
         assert conf.error is True
         assert conf.code == "CONFIRMATION_REQUIRED"

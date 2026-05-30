@@ -78,7 +78,7 @@ graph TB
 
     subgraph Containers["Containers (startup order)"]
         GW_C["agentshroud-gateway\n(starts first)"]
-        BOT_C["agentshroud-bot\n(starts after gateway healthy)"]
+        BOT_C["agentshroud-openclaw\n(starts after gateway healthy)"]
     end
 
     OP --> SEC_OP

@@ -384,7 +384,7 @@ class TestStartupScannerKeying:
         app_state = self._make_app_state()
         store_fn = self._make_store_result_fn(app_state)
         img1 = "agentshroud-gateway:latest"
-        img2 = "agentshroud-bot:latest"
+        img2 = "agentshroud-openclaw:latest"
         r1 = dict(self._clean_report())
         r2 = dict(self._clean_report())
         r2["total_vulnerabilities"] = 3

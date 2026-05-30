@@ -60,7 +60,7 @@ curl http://localhost:8080/status
            │  172.20.0.0/16    │  172.21.0.0/16
            ▼                   ▼
 ┌──────────────────┐  ┌────────────────────────────────────┐
-│  agentshroud-bot │  │  agentshroud-hermes  [--profile full│
+│  agentshroud-openclaw │  │  agentshroud-hermes  [--profile full│
 │  (OpenClaw)      │  │  - Port: 8642 (OpenAI-compat API)  │
 │  - Port: 18789   │  │  - Port: 9119 (dashboard)          │
 │  - Node.js 22    │  │  - nousresearch/hermes-agent        │
@@ -153,7 +153,7 @@ docker-compose -f docker/docker-compose.yml -p agentshroud ps
 # Default stack (gateway + OpenClaw):
 # NAME                    STATUS              PORTS
 # agentshroud-gateway     Up (healthy)        127.0.0.1:8080->8080/tcp
-# agentshroud-bot         Up (healthy)        127.0.0.1:18789->18789/tcp
+# agentshroud-openclaw    Up (healthy)        127.0.0.1:18789->18789/tcp
 
 # Full stack additionally shows:
 # agentshroud-hermes      Up (healthy)        127.0.0.1:8642->8642/tcp
@@ -167,8 +167,8 @@ docker-compose -f docker/docker-compose.yml -p agentshroud ps
 |-----------|------|---------|
 | agentshroud-gateway | 8080 | REST API + MCP proxy |
 | agentshroud-gateway | 8181 | HTTP CONNECT proxy (bot egress) |
-| agentshroud-bot (OpenClaw) | 18789 | OpenClaw chat API |
-| agentshroud-bot (OpenClaw) | 18790 | OpenClaw web UI |
+| agentshroud-openclaw | 18789 | OpenClaw chat API |
+| agentshroud-openclaw | 18790 | OpenClaw web UI |
 | agentshroud-hermes | 8642 | Hermes OpenAI-compatible API + /health |
 | agentshroud-hermes | 9119 | Hermes agent dashboard |
 | agentshroud-hci | 9121 | Hermes Control Interface (Basic-Auth) |

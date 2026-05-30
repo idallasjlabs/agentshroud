@@ -19,8 +19,8 @@ services:
       - PROXY_ALLOWED_NETWORKS=172.20.0.0/16,172.21.0.0/16,172.22.0.0/16
       - AGENTSHROUD_INSTANCE_LABEL=dev-marvin
 
-  bot:
-    container_name: agentshroud-marvin-bot
+  openclaw:
+    container_name: agentshroud-marvin-openclaw
     ports: !override
       - "127.0.0.1:18790:18789"
     environment:
