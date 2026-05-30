@@ -56,7 +56,7 @@ docker-compose -f docker/docker-compose.yml -p agentshroud ps
 # Default stack (gateway + OpenClaw):
 # NAME                    STATUS              PORTS
 # agentshroud-gateway     Up (healthy)        127.0.0.1:8080->8080/tcp
-# agentshroud-bot         Up (healthy)        127.0.0.1:18789->18789/tcp
+# agentshroud-openclaw         Up (healthy)        127.0.0.1:18789->18789/tcp
 
 # Full stack additionally shows:
 # agentshroud-hermes      Up (healthy)        127.0.0.1:8642->8642/tcp

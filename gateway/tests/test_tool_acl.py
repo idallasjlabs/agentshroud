@@ -294,3 +294,37 @@ class TestToolRateLimiting:
         """Tools not in the rate-limit map should always pass."""
         for _ in range(100):
             assert enforcer.check_tool_rate_limit("user5", "web_search")
+
+
+# ── CVE-2026-9367: terminal_tool command injection bypass ────────────────────
+
+
+class TestCVE2026_9367TerminalToolDenied:
+    """terminal_tool must be in PRIVATE_TOOLS and blocked for non-owner principals."""
+
+    def test_terminal_tool_in_private_tools(self):
+        assert "terminal_tool" in PRIVATE_TOOLS
+
+    def test_terminal_in_private_tools(self):
+        assert "terminal" in PRIVATE_TOOLS
+
+    def test_collaborator_denied_terminal_tool(self, enforcer):
+        allowed, reason = enforcer.can_use_tool(COLLAB_ID, "terminal_tool")
+        assert not allowed
+        assert reason
+
+    def test_owner_allowed_terminal_tool(self, enforcer):
+        allowed, _ = enforcer.can_use_tool(OWNER_ID, "terminal_tool")
+        assert allowed
+
+    def test_admin_denied_terminal_tool(self, enforcer):
+        # terminal_tool is PRIVATE (owner-only), so admin should also be denied
+        allowed, _ = enforcer.can_use_tool(ADMIN_ID, "terminal_tool")
+        assert not allowed
+
+    def test_viewer_denied_terminal_tool(self, enforcer):
+        allowed, _ = enforcer.can_use_tool(VIEWER_ID, "terminal_tool")
+        assert not allowed
+
+    def test_terminal_tool_not_in_collab_allowed(self):
+        assert "terminal_tool" not in COLLABORATOR_ALLOWED_TOOLS

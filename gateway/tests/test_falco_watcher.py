@@ -23,7 +23,7 @@ import pytest
 from gateway.security.falco_monitor import FalcoAlertWatcher
 
 
-def _make_alert(rule: str, priority: str, container: str = "agentshroud-bot") -> dict:
+def _make_alert(rule: str, priority: str, container: str = "agentshroud-openclaw") -> dict:
     return {
         "time": "2026-03-22T10:00:00Z",
         "rule": rule,
@@ -45,7 +45,7 @@ async def test_critical_alert_triggers_lockdown():
         alert_dir = Path(tmpdir)
         alert_file = alert_dir / "falco_alerts.json"
         alert_file.write_text(
-            json.dumps(_make_alert("Container Shell Spawn", "Critical", "agentshroud-bot")) + "\n"
+            json.dumps(_make_alert("Container Shell Spawn", "Critical", "agentshroud-openclaw")) + "\n"
         )
 
         lockdown = MagicMock()
@@ -60,7 +60,7 @@ async def test_critical_alert_triggers_lockdown():
 
         lockdown.record_block.assert_called_once()
         call_args = lockdown.record_block.call_args
-        assert call_args[0][0] == "agentshroud-bot"
+        assert call_args[0][0] == "agentshroud-openclaw"
         assert "Container Shell Spawn" in call_args[1].get(
             "reason", call_args[0][1] if len(call_args[0]) > 1 else ""
         )
@@ -116,7 +116,7 @@ async def test_multiple_critical_alerts():
     with tempfile.TemporaryDirectory() as tmpdir:
         alert_dir = Path(tmpdir)
         alerts = [
-            _make_alert("Container Shell Spawn", "Critical", "agentshroud-bot"),
+            _make_alert("Container Shell Spawn", "Critical", "agentshroud-openclaw"),
             _make_alert("Secret File Access", "Emergency", "agentshroud-gateway"),
         ]
         (alert_dir / "falco_alerts.json").write_text(

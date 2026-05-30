@@ -30,7 +30,7 @@ async def health_check():
 
     Returns only basic liveness info. Detailed status requires auth via /status/detail.
     """
-    return {"status": "healthy", "version": "1.0.44"}
+    return {"status": "healthy", "version": "1.1.0"}
 
 
 @router.get("/status/detail", response_model=StatusResponse)
@@ -65,7 +65,7 @@ async def health_check_detail(auth: AuthRequired):
 
     return StatusResponse(
         status="healthy",
-        version="1.0.44",
+        version="1.1.0",
         uptime_seconds=uptime,
         ledger_entries=stats.get("total_entries", 0),
         pending_approvals=len(pending),
@@ -88,5 +88,18 @@ async def health_check_detail(auth: AuthRequired):
             "rules_count": egress_rules,
             "blocked_today": 0,
             "allowed_today": 0,
+        },
+        proxies={
+            "http": (
+                "running"
+                if getattr(app_state, "http_proxy", None) is not None
+                else "stopped"
+            ),
+            "http_error": getattr(app_state, "_http_proxy_start_error", None),
+            "dns": (
+                "running"
+                if getattr(app_state, "dns_transport", None) is not None
+                else "stopped"
+            ),
         },
     )

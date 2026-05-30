@@ -44,7 +44,7 @@ check_warn() {
 # Check 1: Both containers running as non-root
 echo "[1/13] Checking non-root users..."
 GATEWAY_USER=$(docker inspect --format '{{.Config.User}}' agentshroud-gateway 2>/dev/null || echo "")
-AGENTSHROUD_USER=$(docker inspect --format '{{.Config.User}}' agentshroud-bot 2>/dev/null || echo "")
+AGENTSHROUD_USER=$(docker inspect --format '{{.Config.User}}' agentshroud-openclaw 2>/dev/null || echo "")
 
 if [ "$GATEWAY_USER" != "" ] && [ "$GATEWAY_USER" != "0" ] && [ "$GATEWAY_USER" != "root" ]; then
     check_pass "Gateway running as non-root user: $GATEWAY_USER"
@@ -62,7 +62,7 @@ fi
 echo ""
 echo "[2/13] Checking read-only root filesystem..."
 GATEWAY_READONLY=$(docker inspect --format '{{.HostConfig.ReadonlyRootfs}}' agentshroud-gateway 2>/dev/null || echo "false")
-AGENTSHROUD_READONLY=$(docker inspect --format '{{.HostConfig.ReadonlyRootfs}}' agentshroud-bot 2>/dev/null || echo "false")
+AGENTSHROUD_READONLY=$(docker inspect --format '{{.HostConfig.ReadonlyRootfs}}' agentshroud-openclaw 2>/dev/null || echo "false")
 
 if [ "$GATEWAY_READONLY" == "true" ]; then
     check_pass "Gateway has read-only root filesystem"
@@ -80,7 +80,7 @@ fi
 echo ""
 echo "[3/13] Checking capabilities..."
 GATEWAY_CAPDROP=$(docker inspect --format '{{.HostConfig.CapDrop}}' agentshroud-gateway 2>/dev/null || echo "")
-AGENTSHROUD_CAPDROP=$(docker inspect --format '{{.HostConfig.CapDrop}}' agentshroud-bot 2>/dev/null || echo "")
+AGENTSHROUD_CAPDROP=$(docker inspect --format '{{.HostConfig.CapDrop}}' agentshroud-openclaw 2>/dev/null || echo "")
 
 if echo "$GATEWAY_CAPDROP" | grep -q "ALL"; then
     check_pass "Gateway has dropped all capabilities"
@@ -97,7 +97,7 @@ fi
 # Check 4: NET_RAW capability not added
 echo ""
 echo "[4/13] Checking NET_RAW capability..."
-AGENTSHROUD_CAPADD=$(docker inspect --format '{{.HostConfig.CapAdd}}' agentshroud-bot 2>/dev/null || echo "")
+AGENTSHROUD_CAPADD=$(docker inspect --format '{{.HostConfig.CapAdd}}' agentshroud-openclaw 2>/dev/null || echo "")
 
 if ! echo "$AGENTSHROUD_CAPADD" | grep -q "NET_RAW"; then
     check_pass "AgentShroud does not have NET_RAW capability"
@@ -109,7 +109,7 @@ fi
 echo ""
 echo "[5/13] Checking no-new-privileges..."
 GATEWAY_SECOPT=$(docker inspect --format '{{.HostConfig.SecurityOpt}}' agentshroud-gateway 2>/dev/null || echo "")
-AGENTSHROUD_SECOPT=$(docker inspect --format '{{.HostConfig.SecurityOpt}}' agentshroud-bot 2>/dev/null || echo "")
+AGENTSHROUD_SECOPT=$(docker inspect --format '{{.HostConfig.SecurityOpt}}' agentshroud-openclaw 2>/dev/null || echo "")
 
 if echo "$GATEWAY_SECOPT" | grep -q "no-new-privileges:true"; then
     check_pass "Gateway has no-new-privileges enabled"
@@ -142,7 +142,7 @@ fi
 echo ""
 echo "[7/13] Checking localhost-only port binding..."
 GATEWAY_PORTS=$(docker port agentshroud-gateway 2>/dev/null || echo "")
-AGENTSHROUD_PORTS=$(docker port agentshroud-bot 2>/dev/null || echo "")
+AGENTSHROUD_PORTS=$(docker port agentshroud-openclaw 2>/dev/null || echo "")
 
 if echo "$GATEWAY_PORTS" | grep -q "127.0.0.1"; then
     check_pass "Gateway bound to localhost only"
@@ -160,7 +160,7 @@ fi
 echo ""
 echo "[8/13] Checking resource limits..."
 GATEWAY_MEM=$(docker inspect --format '{{.HostConfig.Memory}}' agentshroud-gateway 2>/dev/null || echo "0")
-AGENTSHROUD_MEM=$(docker inspect --format '{{.HostConfig.Memory}}' agentshroud-bot 2>/dev/null || echo "0")
+AGENTSHROUD_MEM=$(docker inspect --format '{{.HostConfig.Memory}}' agentshroud-openclaw 2>/dev/null || echo "0")
 
 if [ "$GATEWAY_MEM" -gt 0 ]; then
     check_pass "Gateway has memory limit: $((GATEWAY_MEM / 1024 / 1024))MB"
@@ -182,13 +182,13 @@ echo "[9/13] Checking Docker secrets..."
 check_pass "Gateway secrets check (not required)"
 
 # Check if AgentShroud has secret files mounted
-if docker exec agentshroud-bot test -f /run/secrets/openai_api_key 2>/dev/null; then
+if docker exec agentshroud-openclaw test -f /run/secrets/openai_api_key 2>/dev/null; then
     check_pass "AgentShroud has OpenAI API key secret mounted"
 else
     check_fail "AgentShroud missing OpenAI API key secret"
 fi
 
-if docker exec agentshroud-bot test -f /run/secrets/gateway_password 2>/dev/null; then
+if docker exec agentshroud-openclaw test -f /run/secrets/gateway_password 2>/dev/null; then
     check_pass "AgentShroud has Gateway password secret mounted"
 else
     check_fail "AgentShroud missing Gateway password secret"
@@ -198,7 +198,7 @@ fi
 echo ""
 echo "[10/13] Checking network isolation..."
 GATEWAY_NETWORKS=$(docker inspect --format '{{range $k,$v := .NetworkSettings.Networks}}{{$k}} {{end}}' agentshroud-gateway 2>/dev/null || echo "")
-AGENTSHROUD_NETWORKS=$(docker inspect --format '{{range $k,$v := .NetworkSettings.Networks}}{{$k}} {{end}}' agentshroud-bot 2>/dev/null || echo "")
+AGENTSHROUD_NETWORKS=$(docker inspect --format '{{range $k,$v := .NetworkSettings.Networks}}{{$k}} {{end}}' agentshroud-openclaw 2>/dev/null || echo "")
 
 if echo "$GATEWAY_NETWORKS" | grep -q "agentshroud-internal"; then
     check_pass "Gateway on agentshroud-internal network"
@@ -222,7 +222,7 @@ fi
 echo ""
 echo "[11/13] Checking container health..."
 GATEWAY_HEALTH=$(docker inspect --format '{{.State.Health.Status}}' agentshroud-gateway 2>/dev/null || echo "unknown")
-AGENTSHROUD_HEALTH=$(docker inspect --format '{{.State.Health.Status}}' agentshroud-bot 2>/dev/null || echo "unknown")
+AGENTSHROUD_HEALTH=$(docker inspect --format '{{.State.Health.Status}}' agentshroud-openclaw 2>/dev/null || echo "unknown")
 
 if [ "$GATEWAY_HEALTH" == "healthy" ]; then
     check_pass "Gateway is healthy"
@@ -239,7 +239,7 @@ fi
 # Check 12: Environment variables properly set
 echo ""
 echo "[12/13] Checking security environment variables..."
-AGENTSHROUD_ENV=$(docker inspect --format '{{range .Config.Env}}{{println .}}{{end}}' agentshroud-bot 2>/dev/null || echo "")
+AGENTSHROUD_ENV=$(docker inspect --format '{{range .Config.Env}}{{println .}}{{end}}' agentshroud-openclaw 2>/dev/null || echo "")
 
 if echo "$AGENTSHROUD_ENV" | grep -q "AGENTSHROUD_DISABLE_HOST_FILESYSTEM=true"; then
     check_pass "AgentShroud has host filesystem disabled"

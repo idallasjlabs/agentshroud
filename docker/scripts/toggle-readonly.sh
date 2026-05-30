@@ -35,15 +35,15 @@ elif [ "$MODE" = "test" ]; then
     echo ""
     echo "Testing OS immutability..."
 
-    if docker exec agentshroud-bot touch /etc/test-file 2>&1 | grep -q "Read-only file system"; then
+    if docker exec agentshroud-openclaw touch /etc/test-file 2>&1 | grep -q "Read-only file system"; then
         echo "✅ AgentShroud OS is read-only"
     else
         echo "❌ AgentShroud OS is WRITABLE (BAD)"
     fi
 
-    if docker exec agentshroud-bot touch /home/node/workspace/test-file 2>&1; then
+    if docker exec agentshroud-openclaw touch /home/node/workspace/test-file 2>&1; then
         echo "✅ AgentShroud workspace is writable"
-        docker exec agentshroud-bot rm /home/node/workspace/test-file
+        docker exec agentshroud-openclaw rm /home/node/workspace/test-file
     else
         echo "❌ AgentShroud workspace is read-only (BAD)"
     fi

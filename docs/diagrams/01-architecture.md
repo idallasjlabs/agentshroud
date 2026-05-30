@@ -141,7 +141,7 @@ graph TB
         end
     end
 
-    BOT["OpenClaw Bot Container\n(agentshroud-bot :18789)"] -->|"POST /ingest"| AUTH
+    BOT["OpenClaw Bot Container\n(agentshroud-openclaw :18789)"] -->|"POST /ingest"| AUTH
     BOT -->|"CONNECT host:port"| HTTP_PROXY
     BOT -->|"POST /proxy/mcp/call"| MCP_PROXY
     BOT -->|"POST /credentials/op-proxy"| OP

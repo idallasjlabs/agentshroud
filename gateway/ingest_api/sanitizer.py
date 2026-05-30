@@ -74,6 +74,25 @@ class PIISanitizer:
         # Whitespace cleanup pattern
         self._excessive_newlines_pattern = re.compile(r"\n{3,}")
 
+        # CVE-2026-9352: literal-match patterns built from all Docker secret values so
+        # any LLM response that echoes a secret value is redacted before leaving the gateway.
+        self._secret_literal_patterns: list = []
+        try:
+            from ..security.credential_injector import load_all_secret_file_values
+
+            self._secret_literal_patterns = [
+                re.compile(re.escape(v))
+                for v in load_all_secret_file_values()
+                if v
+            ]
+            if self._secret_literal_patterns:
+                logger.info(
+                    "Loaded %d secret literal patterns for outbound scrubbing",
+                    len(self._secret_literal_patterns),
+                )
+        except Exception as _exc:
+            logger.debug("Could not load secret scrub patterns: %s", _exc)
+
         if config.engine == "presidio":
             self._init_presidio()
         else:
@@ -448,12 +467,19 @@ class PIISanitizer:
                 blocked_message = (
                     "🔒 [REDACTED: Credentials cannot be displayed via Telegram]\n\n"
                     "For security, passwords and secrets are only accessible via:\n"
-                    "• Console: docker exec agentshroud-bot get-credential <name>\n"
+                    "• Console: docker exec agentshroud-openclaw get-credential <name>\n"
                     "• Control UI: http://localhost:18790\n\n"
                     "If you need to configure a service, ask me to do it. "
                     "I can use credentials internally without displaying them."
                 )
                 return (blocked_message, True)
+
+        # CVE-2026-9352: scrub literal secret values loaded at startup.
+        for pat in self._secret_literal_patterns:
+            if pat.search(content):
+                logger.warning("Blocked env/secret value from being displayed via %s", source)
+                content = pat.sub("<REDACTED:secret>", content)
+                return (content, True)
 
         return (content, False)
 

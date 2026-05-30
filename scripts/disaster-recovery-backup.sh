@@ -75,7 +75,7 @@ fi
 # ── 4. Bot memory / workspace from Docker volume ─────
 echo "[4/7] Bot workspace + memory..."
 mkdir -p "$STAGING/workspace"
-CONTAINER="agentshroud-bot"
+CONTAINER="agentshroud-openclaw"
 if docker inspect "$CONTAINER" --format '{{.State.Running}}' 2>/dev/null | grep -q true; then
   docker cp "$CONTAINER:/home/node/.openclaw/workspace/." "$STAGING/workspace/" 2>/dev/null || true
   docker cp "$CONTAINER:/home/node/.openclaw/workspace-collaborator" "$STAGING/workspace/workspace-collaborator" 2>/dev/null || true

@@ -15,10 +15,10 @@ class TestServiceDescriptorDefaults:
 
     def test_running_service(self):
         sd = ServiceDescriptor(
-            name="agentshroud-bot",
+            name="agentshroud-openclaw",
             status=ServiceStatus.RUNNING,
             health=HealthStatus.HEALTHY,
-            image="agentshroud:latest",
+            image="agentshroud-openclaw:latest",
         )
         assert sd.status == ServiceStatus.RUNNING
         assert sd.health == HealthStatus.HEALTHY
@@ -37,7 +37,7 @@ class TestServiceDescriptorDefaults:
 
     def test_unhealthy_service(self):
         sd = ServiceDescriptor(
-            name="agentshroud-bot",
+            name="agentshroud-openclaw",
             status=ServiceStatus.RUNNING,
             health=HealthStatus.UNHEALTHY,
             image="agentshroud:latest",

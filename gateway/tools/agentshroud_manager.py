@@ -111,6 +111,7 @@ def list_available_versions() -> list[str]:
     # In production this would query GitHub API or local git tags
     # For now, return known versions
     return [
+        "1.1.0",
         "1.0.0",
         "0.9.0",
         "0.8.0",

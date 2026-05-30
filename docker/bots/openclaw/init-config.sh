@@ -198,6 +198,17 @@ fi
 
 # AGENTS.md: add "read BRAND.md" to the session startup checklist if absent.
 AGENTS_FILE="${WORKSPACE_DIR}/AGENTS.md"
+# Add ENOENT guard rule if not already present — prevents log noise from hallucinated reads.
+if [ -f "${AGENTS_FILE}" ] && ! grep -q "ENOENT\|before.*read\|check.*exist" "${AGENTS_FILE}" 2>/dev/null; then
+  cat >> "${AGENTS_FILE}" << 'EOFAGENTS'
+
+## Tool Use Rules (AgentShroud policy)
+- **Always check if a file exists before calling `read`.**  Use `ls` or `stat` first; if the file does not exist, do NOT call `read` — log "file not found" and continue.
+- **GitHub API 404 responses are expected** for repos that have no public releases.  Omit those repos from reports silently; do not log an error.
+- These rules reduce `[tools] read failed: ENOENT` log noise and keep cron job output clean.
+EOFAGENTS
+  echo "[init] ✓ Added tool-use ENOENT guard rules to AGENTS.md"
+fi
 if [ -f "${AGENTS_FILE}" ] && ! grep -q "BRAND.md" "${AGENTS_FILE}" 2>/dev/null; then
   # Insert after the last numbered item in the "Every Session" section
   sed -i 's/4\. \*\*If in MAIN SESSION\*\*/5. Read `BRAND.md` — AgentShroud trademark \& communication standards\n4. **If in MAIN SESSION**/' "${AGENTS_FILE}"

@@ -2953,6 +2953,23 @@ class TelegramAPIProxy:
         )
 
     @staticmethod
+    def _html_tags_balanced(text: str) -> bool:
+        """Return True only when every Telegram-supported HTML open tag has a matching close.
+
+        Telegram's HTML parser is strict: an unmatched <code> or <pre> causes a
+        400 "can't parse entities" error that silently drops the message.  We check
+        the subset of tags Telegram actually supports so we don't false-positive on
+        inline angle-bracket uses that aren't tags.
+        """
+        _PAIRED = ("code", "pre", "b", "i", "a", "u", "s", "strong", "em", "blockquote")
+        for tag in _PAIRED:
+            opens = len(re.findall(rf"<{tag}(?:\s[^>]*)?>", text, re.IGNORECASE))
+            closes = len(re.findall(rf"</{tag}>", text, re.IGNORECASE))
+            if opens != closes:
+                return False
+        return True
+
+    @staticmethod
     def _build_ack_only_updates(inbound_updates: list[Any]) -> list[dict[str, Any]]:
         """Return minimal getUpdates payload entries containing only update_id."""
         ack_only: list[dict[str, Any]] = []
@@ -3308,7 +3325,14 @@ class TelegramAPIProxy:
                     text = cleaned
                     parse_mode = ""
                 if parse_mode == "HTML" and isinstance(data.get(text_key), str):
-                    if re.search(r"<[A-Z][A-Z0-9_]{1,64}>", data[text_key]):
+                    msg_text = data[text_key]
+                    # Strip parse_mode when PII placeholders are present (would cause 400)
+                    if re.search(r"<[A-Z][A-Z0-9_]{1,64}>", msg_text):
+                        data.pop("parse_mode", None)
+                        self._stats["outbound_filtered"] += 1
+                    # D1 fix: strip parse_mode when HTML tags are imbalanced (Telegram returns
+                    # 400 "can't parse entities" on mismatched <code>/<pre> etc.)
+                    elif not self._html_tags_balanced(msg_text):
                         data.pop("parse_mode", None)
                         self._stats["outbound_filtered"] += 1
 

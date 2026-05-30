@@ -7,7 +7,7 @@ set -euo pipefail
 
 # Helper script for working with AgentShroud workspace (Docker volume)
 
-CONTAINER="agentshroud-bot"
+CONTAINER="agentshroud-openclaw"
 WORKSPACE="/home/node/agentshroud/workspace"
 
 usage() {

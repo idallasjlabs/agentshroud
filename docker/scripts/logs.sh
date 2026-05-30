@@ -15,7 +15,7 @@ LINES=${2:-50}
 case $SERVICE in
     agentshroud|oc)
         echo "=== AgentShroud Logs (last $LINES lines) ==="
-        docker logs agentshroud-bot --tail $LINES
+        docker logs agentshroud-openclaw --tail $LINES
         ;;
     gateway|gw)
         echo "=== Gateway Logs (last $LINES lines) ==="
@@ -25,7 +25,7 @@ case $SERVICE in
         echo "=== Gateway Logs (last $LINES lines) ==="
         docker logs agentshroud-gateway --tail $LINES
         echo -e "\n=== AgentShroud Logs (last $LINES lines) ==="
-        docker logs agentshroud-bot --tail $LINES
+        docker logs agentshroud-openclaw --tail $LINES
         ;;
 esac
 

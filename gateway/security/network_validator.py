@@ -515,7 +515,7 @@ class NetworkValidator:
                         if host_port:
                             exposed_ports.append(f"{host_port}:{container_port}")
 
-            if exposed_ports and container_name == "agentshroud-bot":
+            if exposed_ports and container_name in ("agentshroud-openclaw", "agentshroud-bot"):
                 findings.append(
                     NetworkSecurityFinding(
                         category="runtime_unnecessary_exposure",

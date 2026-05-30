@@ -563,10 +563,10 @@ class TestBuildImageTargets:
         from gateway.security.daily_cve_report import _build_image_targets
 
         monkeypatch.setenv(
-            "AGENTSHROUD_TRIVY_IMAGES", "agentshroud-bot:latest,agentshroud/hermes:latest"
+            "AGENTSHROUD_TRIVY_IMAGES", "agentshroud-openclaw:latest,agentshroud/hermes:latest"
         )
         targets = _build_image_targets()
-        assert "agentshroud-bot:latest" in targets
+        assert "agentshroud-openclaw:latest" in targets
         assert "agentshroud/hermes:latest" in targets
 
     def test_env_var_empty_string_ignored(self, monkeypatch):
@@ -590,12 +590,12 @@ class TestBuildImageTargets:
         from gateway.security.daily_cve_report import _build_image_targets
 
         monkeypatch.setenv(
-            "AGENTSHROUD_TRIVY_IMAGES", "  agentshroud-bot:latest  ,  agentshroud/hermes:latest  "
+            "AGENTSHROUD_TRIVY_IMAGES", "  agentshroud-openclaw:latest  ,  agentshroud/hermes:latest  "
         )
         targets = _build_image_targets()
-        assert "agentshroud-bot:latest" in targets
+        assert "agentshroud-openclaw:latest" in targets
         assert "agentshroud/hermes:latest" in targets
-        assert "  agentshroud-bot:latest  " not in targets
+        assert "  agentshroud-openclaw:latest  " not in targets
 
 
 # ── run_and_send_cve_report — image scan integration ─────────────────────────
@@ -616,7 +616,7 @@ class TestRunAndSendCveReportImageScans:
         monkeypatch.setattr(_mod, "run_trivy_scan", _fake_trivy_scan)
         monkeypatch.setattr(_mod, "save_report", lambda r, **kw: None)
         monkeypatch.setattr(_mod, "_LAST_REPORT_PATH", tmp_path / "last.txt")
-        monkeypatch.setenv("AGENTSHROUD_TRIVY_IMAGES", "agentshroud-bot:latest")
+        monkeypatch.setenv("AGENTSHROUD_TRIVY_IMAGES", "agentshroud-openclaw:latest")
 
         async def _fake_send(token, chat_id, text, base_url):
             return True
@@ -628,7 +628,7 @@ class TestRunAndSendCveReportImageScans:
         image_calls = [c for c in scan_calls if c["scan_type"] == "image"]
         image_targets = {c["target"] for c in image_calls}
         assert "agentshroud-gateway:latest" in image_targets
-        assert "agentshroud-bot:latest" in image_targets
+        assert "agentshroud-openclaw:latest" in image_targets
 
     @pytest.mark.asyncio
     async def test_image_scan_summary_appended_to_message(self, tmp_path, monkeypatch):

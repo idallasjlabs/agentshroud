@@ -133,7 +133,7 @@ User (Any Chat): "What's my Gmail password?"
 Bot: "I cannot display credentials in chat for security.
 
      To view credentials:
-     • Console: docker exec agentshroud-bot get-credential gmail-password
+     • Console: docker exec agentshroud-openclaw get-credential gmail-password
      • 1Password app: Open 1Password and view vault
 
      I can USE the password to configure services without displaying it."
@@ -147,7 +147,7 @@ When executed via direct Terminal commands:
 
 **Example:**
 ```bash
-$ docker exec agentshroud-bot get-credential gmail-password
+$ docker exec agentshroud-openclaw get-credential gmail-password
 6nE7YN77Ahs4zG!A2ZUTN*@m
 ```
 

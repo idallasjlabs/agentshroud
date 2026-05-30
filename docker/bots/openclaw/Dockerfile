@@ -192,6 +192,10 @@ RUN chmod +x /usr/local/bin/security-entrypoint.sh \
     /usr/local/bin/patch-telegram-sdk.sh \
     /usr/local/bin/patch-slack-sdk.sh
 
+# Branding assets — logo for Telegram startup photo notifications
+COPY branding/logos/png/logo.png /app/branding/logo.png
+COPY branding/social/telegram-avatar-512x512.png /app/branding/telegram-avatar.png
+
 # Copy documentation
 COPY docker/bot-capabilities.md /app/bot-capabilities.md
 COPY docker/SYSTEM-INSTRUCTIONS-SECURITY.md /app/SYSTEM-INSTRUCTIONS-SECURITY.md

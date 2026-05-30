@@ -76,6 +76,9 @@ PRIVATE_TOOLS: frozenset[str] = frozenset(
         "bash",
         "shell",
         "run_command",
+        # Terminal access (CVE-2026-9367 — command injection bypass via terminal_tool)
+        "terminal_tool",
+        "terminal",
     }
 )
 

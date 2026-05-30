@@ -290,12 +290,14 @@ def test_hermes_7397_fully_mitigated_with_upstream_fix() -> None:
     assert "upstream_fix" in cve["defense_layers"]
 
 
-def test_hermes_9367_high_severity_partially_mitigated() -> None:
+def test_hermes_9367_high_severity_fully_mitigated() -> None:
     cve = next(c for c in _HERMES_CVE_REGISTRY if c["id"] == "CVE-2026-9367")
     assert cve["severity"] == "HIGH"
-    assert cve["status"] == "partially_mitigated"
-    assert "tool_acl" in cve["defense_layers"]
+    assert cve["status"] == "fully_mitigated"
+    assert "tool_acl_deny" in cve["defense_layers"]
+    assert "command_injection_pattern_scan" in cve["defense_layers"]
     assert "approval_queue" in cve["defense_layers"]
+    assert "network_isolation" in cve["defense_layers"]
 
 
 def test_hermes_7112_and_7113_gateway_auth_gate() -> None:

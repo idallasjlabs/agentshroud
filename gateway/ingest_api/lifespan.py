@@ -442,11 +442,11 @@ async def lifespan(app: FastAPI):
         from ..security.prompt_protection import PromptProtection
 
         app_state.prompt_protection = PromptProtection()
-        # Filter out the product name — "agentshroud" is public branding, not infrastructure
+        # Filter out the legacy product-name hostname (kept for backward compat only)
         _bot_hostnames = [
             b.hostname
             for b in app_state.config.bots.values()
-            if b.hostname and b.hostname.lower() != "agentshroud"
+            if b.hostname and b.hostname.lower() not in ("agentshroud",)
         ]
         if _bot_hostnames:
             app_state.prompt_protection.register_bot_hostnames(_bot_hostnames)
@@ -467,7 +467,7 @@ async def lifespan(app: FastAPI):
         await app_state.audit_store.log_event(
             event_type="gateway_startup",
             severity="INFO",
-            details={"version": "1.0.44", "db_path": _audit_db},
+            details={"version": "1.1.0", "db_path": _audit_db},
             source_module="lifespan",
         )
     except Exception as e:
@@ -1215,8 +1215,11 @@ async def lifespan(app: FastAPI):
         await app_state.http_proxy.start()
         logger.info("HTTP CONNECT proxy started on port 8181")
     except Exception as e:
-        logger.warning(f"HTTP CONNECT proxy failed to start: {e} (continuing)")
+        logger.error(
+            "HTTP CONNECT proxy failed to start: %s — egress from bots will be blocked", e
+        )
         app_state.http_proxy = None
+        app_state._http_proxy_start_error = str(e)
 
     # Start DNS forwarder with Pi-hole-style blocklist filtering
     # Replaces the separate Pi-hole container — all DNS filtering in gateway.

@@ -18,6 +18,10 @@ FROM nousresearch/hermes-agent:latest
 
 USER root
 
+# HOME must be /opt/data for uid 10000 so interactive docker exec shells write
+# hermes CLI config (qwen creds, mcp config) to the persisted volume, not /root.
+ENV HOME=/opt/data
+
 # curl for healthcheck; no dumb-init needed (image already uses s6-overlay as PID 1)
 RUN apt-get update && apt-get install -y --no-install-recommends \
       curl \

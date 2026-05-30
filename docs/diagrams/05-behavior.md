@@ -93,7 +93,7 @@ Time-ordered interactions with exact message passing.
 sequenceDiagram
     participant Isaiah as Isaiah (Telegram)
     participant TG as Telegram API
-    participant Bot as OpenClaw Bot<br/>(agentshroud-bot :18789)
+    participant Bot as OpenClaw Bot<br/>(agentshroud-openclaw :18789)
     participant Hermes as Hermes Agent<br/>(agentshroud-hermes :8642)
     participant GW as Gateway<br/>(:8080/:8181)
     participant OAI as OpenAI API

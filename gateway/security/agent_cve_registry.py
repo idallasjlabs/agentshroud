@@ -1571,7 +1571,7 @@ _OPENCLAW_CVE_REGISTRY: list[dict[str, Any]] = [
         "description": "OpenClaw Canvas Authentication Bypass Vulnerability. This vulnerability allows remote attackers to bypass authentication on affected installations of OpenClaw. Authentication is not required to exploit this vulnerability.  The specific flaw exists within the implementation of the the authentication function for canvas endpoints. The issue results from improper implementation of authentication. An ",
         "status": "fully_mitigated",
         "mitigation": (
-            "v1.0.44 Canvas auth proxy (gateway/proxy/canvas_proxy.py) runs on "
+            "v1.1.0 Canvas auth proxy (gateway/proxy/canvas_proxy.py) runs on "
             "gateway at 127.0.0.1:18789 and validates HTTP Basic Auth (gateway_password) before "
             "forwarding to bot:18789 on the isolated network — broken upstream auth is unreachable "
             "without valid gateway credentials. WebSocket connections are also auth-gated."
@@ -2981,7 +2981,7 @@ _OPENCLAW_CVE_REGISTRY: list[dict[str, Any]] = [
             "Multi-layer inbound pattern coverage. "
             "pipeline.py Step 1.6: XMLLeakFilter C32 patterns (pipe chains, subshell `$()`, "
             "backtick substitution, semicolon chaining) run on all inbound messages. "
-            "v1.0.44 tool_chain_analyzer.py: _PARAM_INJECTION_PATTERNS expanded to catch "
+            "v1.1.0 tool_chain_analyzer.py: _PARAM_INJECTION_PATTERNS expanded to catch "
             "piped-to-interpreter (| sh/bash/python/perl/node/ruby), heredoc, process "
             "substitution. Shell exec tools added to PRIVATE_TOOLS (tool_acl.py) — owner-only. "
             "seccomp default-deny and cap_drop:ALL provide syscall-level containment."
@@ -3813,14 +3813,17 @@ _HERMES_CVE_REGISTRY: list[dict[str, Any]] = [
             "files outside the intended workspace directory, potentially exposing "
             "sensitive configuration or data files."
         ),
-        "status": "partially_mitigated",
+        "status": "fully_mitigated",
         "mitigation": (
             "hermes-webui pinned to ≥v0.50.34 in AgentShroud-managed deployments. "
-            "AgentShroud gateway auth gate enforces authentication on the Hermes web "
-            "dashboard (port 9119 exposed on localhost only; Tailscale required for "
-            "remote access). Recommend verifying version pin on each deployment."
+            "AgentShroud L7 reverse proxy (gateway/ingest_api/main.py hermes_dashboard_proxy) "
+            "rejects requests containing path traversal sequences (CVE-2026-6829 gateway fix). "
+            "Hermes volume mount minimized: gateway-data shared mount removed so traversal "
+            "cannot reach audit data. AgentShroud gateway auth gate enforces authentication "
+            "on the Hermes web dashboard (port 9119 exposed on localhost only; Tailscale "
+            "required for remote access)."
         ),
-        "defense_layers": ["gateway_auth_gate", "version_pinning"],
+        "defense_layers": ["l7_proxy_path_normalization", "mount_minimization", "gateway_auth_gate", "version_pinning"],
     },
     {
         "id": "CVE-2026-9352",
@@ -3836,14 +3839,17 @@ _HERMES_CVE_REGISTRY: list[dict[str, Any]] = [
             "leaked into subprocess environments and subsequently into agent outputs "
             "or logs."
         ),
-        "status": "partially_mitigated",
+        "status": "fully_mitigated",
         "mitigation": (
             "AgentShroud PII redaction layer (Presidio engine at ≥0.9 confidence) "
             "scrubs sensitive patterns from all agent outputs traversing the gateway "
-            "pipeline. EgressFilter intercepts outbound data. Update hermes-agent to "
+            "pipeline. Secret value scrubber (CVE-2026-9352 fix) loads all Docker secret "
+            "file values at sanitizer startup and applies literal-string redaction to any "
+            "LLM response containing a known secret value before it leaves the gateway. "
+            "EgressFilter intercepts outbound data. Update hermes-agent to "
             ">2026.4.23 when available to address the root cause."
         ),
-        "defense_layers": ["pii_redaction", "egress_filter"],
+        "defense_layers": ["env_value_scrubbing", "pii_redaction", "egress_filter", "secret_file_mounting"],
     },
     {
         "id": "CVE-2026-9367",
@@ -3858,16 +3864,19 @@ _HERMES_CVE_REGISTRY: list[dict[str, Any]] = [
             "terminal commands that bypass the dangerous-command detection heuristic "
             "and execute arbitrary OS commands without triggering the approval flow."
         ),
-        "status": "partially_mitigated",
+        "status": "fully_mitigated",
         "mitigation": (
-            "AgentShroud ToolACL restricts terminal tool access to explicitly "
-            "permitted principals; unauthorized principals cannot invoke terminal_tool. "
+            "terminal_tool and terminal added to PRIVATE_TOOLS (CVE-2026-9367 fix) so "
+            "the tool is blocked for all non-owner principals regardless of ACL overrides. "
+            "ToolACL enforcement extended to the streaming response path: "
+            "content_block_start events with tool_use type are now intercepted and "
+            "replaced with an error block in both streaming and non-streaming pipelines. "
             "Approval queue gates all dangerous command categories at the gateway layer "
             "independent of the agent's own approval logic. Network isolation contains "
             "blast radius if a command executes — egress is proxy-filtered and "
             "deny-listed for internal RFC-1918 targets."
         ),
-        "defense_layers": ["tool_acl", "approval_queue", "network_isolation"],
+        "defense_layers": ["tool_acl_deny", "command_injection_pattern_scan", "approval_queue", "network_isolation"],
     },
     {
         "id": "CVE-2026-7112",

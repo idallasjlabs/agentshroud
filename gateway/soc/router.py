@@ -1802,7 +1802,7 @@ async def list_bots(caller: SCLCaller = Depends(get_caller)) -> List[Dict]:
     cfg = getattr(app, "config", None)
     bots = getattr(cfg, "bots", None) or {}
     if not bots:
-        return [{"id": "openclaw", "name": "OpenClaw", "hostname": "agentshroud", "default": True}]
+        return [{"id": "openclaw", "name": "OpenClaw", "hostname": "agentshroud-openclaw", "default": True}]
     return [
         {
             "id": bid,
@@ -2081,7 +2081,7 @@ async def get_security_scorecard(
         logger.warning("get_security_scorecard: %s", exc)
         return {
             "error": str(exc),
-            "version": "v1.0.44",
+            "version": "v1.1.0",
             "domains": [],
             "totals": {"score": 0, "max": 60, "percentage": 0},
             "overall_maturity": "Not Started",
@@ -2208,7 +2208,7 @@ async def trigger_cve_report(caller: SCLCaller = Depends(get_caller)) -> Dict:
 # ---------------------------------------------------------------------------
 
 _GH_RELEASES_API = "https://api.github.com/repos/idallasjlabs/agentshroud/releases/latest"
-_CURRENT_VERSION = "1.0.44"
+_CURRENT_VERSION = "1.1.0"
 
 # Content-hash cache busters for static assets — recomputed at import time so
 # any change to soc.js / soc.css produces a new hash and busts browser caches.
@@ -2350,7 +2350,7 @@ async def upgrade_gateway(
 
 
 async def _docker_exec_bot(command: list[str], timeout: int = 120) -> tuple[int, str]:
-    """Run a command inside the agentshroud-bot container via the Docker socket.
+    """Run a command inside the agentshroud-openclaw container via the Docker socket.
 
     Uses Docker's exec API (create + start) so no external CLI is needed.
     Returns (exit_code, combined_output).
@@ -2360,7 +2360,7 @@ async def _docker_exec_bot(command: list[str], timeout: int = 120) -> tuple[int,
     import socket as _socket
 
     _SOCK = "/var/run/docker.sock"
-    _CONTAINER = "agentshroud-bot"
+    _CONTAINER = "agentshroud-openclaw"
 
     def _unix_call(method: str, path: str, body: bytes = b"") -> tuple[int, bytes]:
         class _UH(http.client.HTTPConnection):
@@ -2440,12 +2440,12 @@ async def upgrade_bot(
     if not body.confirm:
         return _confirmation_required(
             "upgrade bot",
-            "agentshroud-bot",
-            "Runs: npm install -g openclaw@latest inside the agentshroud-bot container "
+            "agentshroud-openclaw",
+            "Runs: npm install -g openclaw@latest inside the agentshroud-openclaw container "
             "(writes to /home/node/.npm-global — no container rebuild needed). "
             "Resend with confirm: true.",
         )
-    _log_audit(caller, "upgrade bot", target="agentshroud-bot")
+    _log_audit(caller, "upgrade bot", target="agentshroud-openclaw")
     exit_code, output = await _docker_exec_bot(
         ["npm", "install", "-g", "openclaw@latest"],
         timeout=300,
@@ -2481,6 +2481,55 @@ async def upgrade_bot(
             "target": "bot",
             "output": output[:2000],
             "sdk_patches": patch_output_parts,
+        }
+    )
+
+
+@router.post("/updates/hermes/upgrade")
+async def upgrade_hermes(
+    body: ServiceActionRequest = ServiceActionRequest(),
+    caller: SCLCaller = Depends(get_caller),
+) -> JSONResponse:
+    """Pull the latest Hermes Agent image and restart the container.
+
+    Unlike OpenClaw (npm in-place upgrade), Hermes uses Docker image tags.
+    Upgrade = docker pull nousresearch/hermes-agent:latest + container restart.
+    Requires the gateway's Docker socket to be mounted.
+    """
+    caller.require(Action.MANAGE, Resource.SYSTEM)
+    if not caller.is_owner():
+        raise HTTPException(
+            status_code=status.HTTP_403_FORBIDDEN,
+            detail={"error": True, "code": "PERMISSION_DENIED", "message": "Owner required"},
+        )
+    if not body.confirm:
+        return _confirmation_required(
+            "upgrade hermes",
+            "agentshroud-hermes",
+            "Pulls nousresearch/hermes-agent:latest then restarts agentshroud-hermes. "
+            "Resend with confirm: true.",
+        )
+    _log_audit(caller, "upgrade hermes", target="agentshroud-hermes")
+    from .services import ServiceManager
+
+    svc_mgr = ServiceManager()
+    ok = await svc_mgr.update_service("agentshroud-hermes")
+    if not ok:
+        return JSONResponse(
+            status_code=status.HTTP_500_INTERNAL_SERVER_ERROR,
+            content={
+                "ok": False,
+                "action": "upgrade",
+                "target": "hermes",
+                "error": "update_service returned False — check Docker socket access",
+            },
+        )
+    return JSONResponse(
+        content={
+            "ok": True,
+            "action": "upgrade",
+            "target": "hermes",
+            "output": "Image pull + restart initiated for agentshroud-hermes",
         }
     )
 
@@ -2552,6 +2601,8 @@ async def soc_dashboard(request: Request):
         # Inject content-hash query params for cache-busting on every build
         html = html.replace('/soc/static/soc.js"', f'/soc/static/soc.js?v={_SOC_JS_HASH}"')
         html = html.replace('/soc/static/soc.css"', f'/soc/static/soc.css?v={_SOC_CSS_HASH}"')
+        # Inject current version into header badge
+        html = html.replace('>v1.0.0<', f'>v{_CURRENT_VERSION}<')
         return HTMLResponse(
             content=html,
             headers={"Cache-Control": "no-cache, no-store, must-revalidate"},
@@ -2568,7 +2619,7 @@ def _minimal_dashboard_html() -> str:
 h1{color:#58a6ff;} a{color:#58a6ff;}</style></head>
 <body>
 <h1>AgentShroud SOC — Command Center</h1>
-<p>v1.0.0 Fortress | <a href="/soc/v1/health">Health</a> |
+<p>v1.1.0 Fortress | <a href="/soc/v1/health">Health</a> |
 <a href="/soc/v1/security/events">Events</a> |
 <a href="/soc/v1/services">Services</a> |
 <a href="/soc/v1/users">Contributors</a></p>
