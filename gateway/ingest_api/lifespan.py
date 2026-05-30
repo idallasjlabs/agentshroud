@@ -1215,9 +1215,7 @@ async def lifespan(app: FastAPI):
         await app_state.http_proxy.start()
         logger.info("HTTP CONNECT proxy started on port 8181")
     except Exception as e:
-        logger.error(
-            "HTTP CONNECT proxy failed to start: %s — egress from bots will be blocked", e
-        )
+        logger.error("HTTP CONNECT proxy failed to start: %s — egress from bots will be blocked", e)
         app_state.http_proxy = None
         app_state._http_proxy_start_error = str(e)
 

@@ -20,9 +20,10 @@ import sys
 from pathlib import Path
 from unittest.mock import patch
 
+import pytest
+
 # ── helpers ───────────────────────────────────────────────────────────────────
 
-import pytest
 
 REPO_ROOT = Path(__file__).resolve().parent.parent.parent
 

@@ -1802,7 +1802,14 @@ async def list_bots(caller: SCLCaller = Depends(get_caller)) -> List[Dict]:
     cfg = getattr(app, "config", None)
     bots = getattr(cfg, "bots", None) or {}
     if not bots:
-        return [{"id": "openclaw", "name": "OpenClaw", "hostname": "agentshroud-openclaw", "default": True}]
+        return [
+            {
+                "id": "openclaw",
+                "name": "OpenClaw",
+                "hostname": "agentshroud-openclaw",
+                "default": True,
+            }
+        ]
     return [
         {
             "id": bid,
@@ -2152,9 +2159,7 @@ async def get_agent_cves(
     """
     caller.require(Action.READ, Resource.SYSTEM)
     try:
-        from ..security.agent_cve_registry import get_agent_cve_summary
-
-        from ..security.agent_cve_registry import _AGENT_CVE_REGISTRIES
+        from ..security.agent_cve_registry import _AGENT_CVE_REGISTRIES, get_agent_cve_summary
 
         target_bot = bot_id or "openclaw"
         if target_bot not in _AGENT_CVE_REGISTRIES:
@@ -2602,7 +2607,7 @@ async def soc_dashboard(request: Request):
         html = html.replace('/soc/static/soc.js"', f'/soc/static/soc.js?v={_SOC_JS_HASH}"')
         html = html.replace('/soc/static/soc.css"', f'/soc/static/soc.css?v={_SOC_CSS_HASH}"')
         # Inject current version into header badge
-        html = html.replace('>v1.0.0<', f'>v{_CURRENT_VERSION}<')
+        html = html.replace(">v1.0.0<", f">v{_CURRENT_VERSION}<")
         return HTMLResponse(
             content=html,
             headers={"Cache-Control": "no-cache, no-store, must-revalidate"},

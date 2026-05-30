@@ -45,7 +45,8 @@ async def test_critical_alert_triggers_lockdown():
         alert_dir = Path(tmpdir)
         alert_file = alert_dir / "falco_alerts.json"
         alert_file.write_text(
-            json.dumps(_make_alert("Container Shell Spawn", "Critical", "agentshroud-openclaw")) + "\n"
+            json.dumps(_make_alert("Container Shell Spawn", "Critical", "agentshroud-openclaw"))
+            + "\n"
         )
 
         lockdown = MagicMock()

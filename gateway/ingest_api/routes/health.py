@@ -91,15 +91,11 @@ async def health_check_detail(auth: AuthRequired):
         },
         proxies={
             "http": (
-                "running"
-                if getattr(app_state, "http_proxy", None) is not None
-                else "stopped"
+                "running" if getattr(app_state, "http_proxy", None) is not None else "stopped"
             ),
             "http_error": getattr(app_state, "_http_proxy_start_error", None),
             "dns": (
-                "running"
-                if getattr(app_state, "dns_transport", None) is not None
-                else "stopped"
+                "running" if getattr(app_state, "dns_transport", None) is not None else "stopped"
             ),
         },
     )

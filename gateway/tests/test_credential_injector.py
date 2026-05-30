@@ -291,7 +291,10 @@ class TestLoadAllSecretFileValues:
 
     def test_get_all_loaded_values_method(self, tmp_path):
         """CredentialInjector.get_all_loaded_values returns all loaded credential values."""
-        from gateway.security.credential_injector import CredentialInjector, CredentialInjectorConfig
+        from gateway.security.credential_injector import (
+            CredentialInjector,
+            CredentialInjectorConfig,
+        )
 
         (tmp_path / "anthropic_api_key").write_text("sk-ant-oat01-testvalue12345678")
         cfg = CredentialInjectorConfig(secrets_dir=str(tmp_path))

@@ -81,9 +81,7 @@ class PIISanitizer:
             from ..security.credential_injector import load_all_secret_file_values
 
             self._secret_literal_patterns = [
-                re.compile(re.escape(v))
-                for v in load_all_secret_file_values()
-                if v
+                re.compile(re.escape(v)) for v in load_all_secret_file_values() if v
             ]
             if self._secret_literal_patterns:
                 logger.info(

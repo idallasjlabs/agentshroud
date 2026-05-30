@@ -3823,7 +3823,12 @@ _HERMES_CVE_REGISTRY: list[dict[str, Any]] = [
             "on the Hermes web dashboard (port 9119 exposed on localhost only; Tailscale "
             "required for remote access)."
         ),
-        "defense_layers": ["l7_proxy_path_normalization", "mount_minimization", "gateway_auth_gate", "version_pinning"],
+        "defense_layers": [
+            "l7_proxy_path_normalization",
+            "mount_minimization",
+            "gateway_auth_gate",
+            "version_pinning",
+        ],
     },
     {
         "id": "CVE-2026-9352",
@@ -3849,7 +3854,12 @@ _HERMES_CVE_REGISTRY: list[dict[str, Any]] = [
             "EgressFilter intercepts outbound data. Update hermes-agent to "
             ">2026.4.23 when available to address the root cause."
         ),
-        "defense_layers": ["env_value_scrubbing", "pii_redaction", "egress_filter", "secret_file_mounting"],
+        "defense_layers": [
+            "env_value_scrubbing",
+            "pii_redaction",
+            "egress_filter",
+            "secret_file_mounting",
+        ],
     },
     {
         "id": "CVE-2026-9367",
@@ -3876,7 +3886,12 @@ _HERMES_CVE_REGISTRY: list[dict[str, Any]] = [
             "blast radius if a command executes — egress is proxy-filtered and "
             "deny-listed for internal RFC-1918 targets."
         ),
-        "defense_layers": ["tool_acl_deny", "command_injection_pattern_scan", "approval_queue", "network_isolation"],
+        "defense_layers": [
+            "tool_acl_deny",
+            "command_injection_pattern_scan",
+            "approval_queue",
+            "network_isolation",
+        ],
     },
     {
         "id": "CVE-2026-7112",

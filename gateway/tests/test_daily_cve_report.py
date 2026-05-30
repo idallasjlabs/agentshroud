@@ -590,7 +590,8 @@ class TestBuildImageTargets:
         from gateway.security.daily_cve_report import _build_image_targets
 
         monkeypatch.setenv(
-            "AGENTSHROUD_TRIVY_IMAGES", "  agentshroud-openclaw:latest  ,  agentshroud/hermes:latest  "
+            "AGENTSHROUD_TRIVY_IMAGES",
+            "  agentshroud-openclaw:latest  ,  agentshroud/hermes:latest  ",
         )
         targets = _build_image_targets()
         assert "agentshroud-openclaw:latest" in targets
