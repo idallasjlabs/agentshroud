@@ -123,14 +123,13 @@ def format_cve_report(report: dict[str, Any]) -> str:
 def _build_image_targets() -> List[str]:
     """Build the list of container image targets for Trivy image scanning.
 
-    Combines the gateway image, env-var-configured images (AGENTSHROUD_TRIVY_IMAGES),
-    and a placeholder slot for HCI (M8). Deduplicates while preserving order.
+    Combines the gateway image and env-var-configured images (AGENTSHROUD_TRIVY_IMAGES).
+    Deduplicates while preserving order.
     """
     gateway_image = "agentshroud-gateway:latest"
     env_images: List[str] = [
         t.strip() for t in os.environ.get("AGENTSHROUD_TRIVY_IMAGES", "").split(",") if t.strip()
     ]
-    # HCI placeholder (M8) — populated via AGENTSHROUD_TRIVY_IMAGES env var until M8 lands.
     seen: Dict[str, None] = {}
     for img in [gateway_image] + env_images:
         seen[img] = None

@@ -40,7 +40,6 @@ services:
                                #   Security: no auth, no pipeline scan — tailnet-only (Tailscale ACL
                                #   is the access control). Re-evaluate if exposed beyond tailnet.
       - "127.0.0.1:8642:8642"  # Hermes OpenAI-compatible API TCP forwarder → agentshroud-hermes:8642
-      - "127.0.0.1:9121:9121"  # HCI auth-gated reverse proxy → agentshroud-hci:3000
     volumes:
       - ../agentshroud.yaml:/app/agentshroud.yaml:ro
       - agentshroud-ssh:/var/agentshroud-ssh:ro
@@ -312,7 +311,7 @@ services:
   hermes:
     # Profiles: start Hermes only when explicitly requested.
     # `docker-compose --profile hermes up -d`  — Hermes only
-    # `docker-compose --profile full up -d`    — gateway + openclaw + hermes + hci
+    # `docker-compose --profile full up -d`    — gateway + openclaw + hermes
     # `docker-compose up -d`                   — gateway + openclaw only (default)
     profiles: [hermes, full]
     image: agentshroud/hermes:${AGENTSHROUD_VERSION:-latest}
@@ -385,48 +384,6 @@ services:
       timeout: 10s
       start_period: 120s
       retries: 3
-
-
-  # ── Hermes Control Interface (HCI) ────────────────────────────────────────────
-  # AgentShroud™ Patent Pending — U.S. Provisional Application No. 64/018,744
-  # HCI provides a web control interface for the Hermes Agent.
-  # Access is via the gateway's hci_proxy.py (port 9121) which enforces Basic Auth.
-  # HCI itself has no published ports — all access flows through the gateway proxy.
-  agentshroud-hci:
-    profiles: [full]
-    image: ghcr.io/xaspx/hermes-control-interface:latest
-    build:
-      context: ..
-      dockerfile: docker/bots/hci/Dockerfile
-    container_name: agentshroud-hci
-    hostname: hci
-    restart: unless-stopped
-    depends_on:
-      hermes:
-        condition: service_healthy
-    networks:
-      - agentshroud-isolated      # no direct internet — all egress via HTTP_PROXY
-    volumes:
-      - hermes-config:/opt/data:ro
-    secrets:
-      - hermes_api_key
-    environment:
-      HTTP_PROXY: http://gateway:8181
-      HTTPS_PROXY: http://gateway:8181
-      NO_PROXY: gateway,agentshroud-hermes,hci,127.0.0.1,localhost
-      ANTHROPIC_BASE_URL: http://gateway:8080
-      HERMES_API_URL: http://agentshroud-hermes:8642
-    read_only: true
-    tmpfs:
-      - /tmp:size=64m,mode=1777
-    mem_limit: 512m
-    cpus: 0.5
-    pids_limit: 128
-    logging:
-      driver: json-file
-      options:
-        max-size: "5m"
-        max-file: "3"
 
 
 
