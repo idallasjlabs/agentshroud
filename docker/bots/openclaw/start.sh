@@ -147,8 +147,13 @@ if [ -n "${GATEWAY_AUTH_TOKEN:-}" ] && [ -n "${GATEWAY_OP_PROXY_URL:-}" ]; then
 
     # iCloud email credentials — loaded in background to avoid blocking startup
     # (non-critical: email features degrade gracefully without iCloud creds)
+    # Set OPENCLAW_SKIP_ICLOUD=1 to skip immediately (e.g. when 1Password isn't yet signed in)
     SECRETS_DIR="${SECRETS_DIR:-/tmp/secrets}"
     _ICLOUD_ENV_FILE="/tmp/.icloud-env"
+    if [ "${OPENCLAW_SKIP_ICLOUD:-0}" = "1" ]; then
+        echo "[startup] OPENCLAW_SKIP_ICLOUD=1 — skipping iCloud credential fetch"
+        _ICLOUD_BG_PID=""
+    else
     (
         ICLOUD_APP_PASSWORD="$(op_proxy_read_with_retry "iCloud app password" \
             "op://Agent Shroud Bot Credentials/25ghxryyvup5wpufgfldgc2vjm/agentshroud app-specific password")" || true
@@ -180,6 +185,7 @@ EOF
         fi
     ) &
     _ICLOUD_BG_PID=$!
+    fi  # end OPENCLAW_SKIP_ICLOUD else branch
 else
     echo "[startup] Warning: Gateway op-proxy not configured, 1Password secrets unavailable"
 fi
@@ -267,6 +273,23 @@ _telegram_send() {
         >/dev/null 2>&1
 }
 
+_telegram_send_photo() {
+    local caption="$1"
+    local photo_path="${2:-/app/branding/logo.png}"
+    local token
+    token="$(_telegram_bot_token)"
+    if [ -z "$token" ] || [ ! -f "$photo_path" ]; then
+        return 1
+    fi
+    curl -sf --max-time 15 -X POST "${_GATEWAY_TELEGRAM_BASE}/bot${token}/sendPhoto" \
+        -H "Authorization: Bearer ${GATEWAY_AUTH_TOKEN:-}" \
+        -H "X-AgentShroud-System: 1" \
+        -F "chat_id=${_OWNER_CHAT_ID}" \
+        -F "caption=${caption}" \
+        -F "photo=@${photo_path}" \
+        >/dev/null 2>&1
+}
+
 _telegram_get_me_ready() {
     local token
     token="$(_telegram_bot_token)"
@@ -297,7 +320,7 @@ _model_runtime_ready() {
 
 # Instance identity for notifications
 _INSTANCE_LABEL="${INSTANCE_NAME:-$(hostname -s)}"
-_BOT_NAME="${OPENCLAW_BOT_NAME:-agentshroud-bot}"
+_BOT_NAME="${OPENCLAW_BOT_NAME:-agentshroud-openclaw}"
 _STARTUP_NOTICE_STAMP="${OPENCLAW_STARTUP_NOTICE_STAMP:-/home/node/.openclaw/workspace/.startup_notice_at}"
 _STARTUP_NOTICE_COOLDOWN_SECONDS="${OPENCLAW_STARTUP_NOTICE_COOLDOWN_SECONDS:-300}"
 
@@ -362,9 +385,13 @@ trap '
     done
 
     if [ "${ready}" = "yes" ]; then
-        _telegram_send "🛡️ AgentShroud online" \
-            && echo "[startup] ✓ Sent Telegram startup notification" \
-            || echo "[startup] ⚠ Could not send Telegram startup notification"
+        if _telegram_send_photo "🛡️ AgentShroud™ online — ${_INSTANCE_LABEL}" "/app/branding/logo.png" 2>/dev/null; then
+            echo "[startup] ✓ Sent Telegram startup photo notification"
+        else
+            _telegram_send "🛡️ AgentShroud online — ${_INSTANCE_LABEL}" \
+                && echo "[startup] ✓ Sent Telegram startup notification" \
+                || echo "[startup] ⚠ Could not send Telegram startup notification"
+        fi
     else
         _telegram_send "🟠 AgentShroud starting (readiness delayed)" \
             && echo "[startup] ⚠ Sent delayed startup notification" \

@@ -11,6 +11,8 @@ let _eventFeed = [];
 const MAX_FEED = 300;
 // M6: global bot selector state — '' means "All bots" (no filter)
 let _selectedBot = localStorage.getItem('agentshroud_selected_bot') || '';
+// M6: populated by _initBotSelector — used by _botContainerName()
+let _botsData = null;
 
 // ---------------------------------------------------------------------------
 // API helpers
@@ -1529,20 +1531,53 @@ window._emergencyBlock = function() {
 
 // CC-30/41: fetch REST logs on Logs tab load so viewer is pre-populated
 async function _loadLogs() {
-  const svcFilter = document.getElementById('log-service-filter')?.value || 'agentshroud-gateway';
+  const sel = document.getElementById('log-service-filter');
+  // When a bot is selected, default the dropdown to that bot's container so the
+  // user sees the right logs without having to manually switch the filter.
+  const botContainer = _botContainerName();
+  if (sel && _selectedBot && sel.value === 'agentshroud-gateway') {
+    // Only override the default; respect explicit user selections.
+    const opt = Array.from(sel.options).find(o => o.value === botContainer);
+    if (opt) sel.value = botContainer;
+  }
+  const svcFilter = sel?.value || botContainer;
   const el = document.getElementById('log-viewer');
   if (!el) return;
   el.textContent = 'Loading logs…';
-  const { data } = await _get(`/services/${encodeURIComponent(svcFilter || 'agentshroud-gateway')}/logs?tail=300`);
+  const { data } = await _get(`/services/${encodeURIComponent(svcFilter)}/logs?tail=300`);
   const lines = data?.lines || [];
   if (lines.length) {
     el.textContent = lines.join('\n');
+    // Detect device_token_mismatch so the user can take corrective action without
+    // hunting for the right localStorage key manually (stale token after rebuild).
+    const mismatch = lines.some(l => l.includes('device_token_mismatch'));
+    _showDeviceTokenAlert(mismatch, svcFilter);
   } else if (_eventFeed.length) {
     _replayLogsTab();
   } else {
     el.textContent = 'No log data available — waiting for events…';
   }
   el.scrollTop = el.scrollHeight;
+}
+
+function _showDeviceTokenAlert(show, svcFilter) {
+  const existing = document.getElementById('device-token-alert');
+  if (existing) existing.remove();
+  if (!show) return;
+  const logPane = document.getElementById('tab-logs');
+  if (!logPane) return;
+  // Derive webchat port from selected bot (OpenClaw = 18789, generic default)
+  const port = (svcFilter || '').includes('hermes') ? '8642' : '18789';
+  const origin = `http://127.0.0.1:${port}`;
+  const div = document.createElement('div');
+  div.id = 'device-token-alert';
+  div.style.cssText = 'background:var(--risk-high,#dc2626);color:#fff;padding:.5rem .75rem;border-radius:4px;margin:.5rem 0;font-size:.85rem;';
+  div.innerHTML = `<strong>⚠ device_token_mismatch detected</strong> — stale webchat pairing after rebuild.
+    Fix: open the bot webchat at <a href="${origin}" target="_blank" style="color:#fff;text-decoration:underline">${origin}</a>
+    and run <code style="background:rgba(0,0,0,.3);padding:0 .25rem">localStorage.clear()</code> in the browser console, then reload the page.`;
+  const toolbar = logPane.querySelector('.toolbar');
+  if (toolbar) toolbar.after(div);
+  else logPane.prepend(div);
 }
 
 function _appendLogLine(ev) {
@@ -1735,6 +1770,8 @@ async function _initBotSelector() {
       return;
     }
 
+    _botsData = bots;
+
     // Populate options (keep the "All bots" option at index 0)
     sel.innerHTML = '<option value="">All bots</option>' +
       bots.map(b => {
@@ -1764,6 +1801,17 @@ function _botParam(prefix) {
   if (!_selectedBot) return '';
   const sep = prefix === '?' ? '?' : '&';
   return `${sep}bot_id=${encodeURIComponent(_selectedBot)}`;
+}
+
+// Helper: return the Docker container name for the currently selected bot.
+// Convention: if a bot's hostname starts with "agentshroud-" the container
+// name matches the hostname (e.g. agentshroud-hermes, agentshroud-openclaw).
+function _botContainerName() {
+  if (!_selectedBot) return 'agentshroud-gateway';
+  const bot = (_botsData || []).find(b => b.id === _selectedBot);
+  if (!bot) return 'agentshroud-gateway';
+  if (bot.hostname && bot.hostname.startsWith('agentshroud-')) return bot.hostname;
+  return 'agentshroud-openclaw'; // legacy hostname "agentshroud" (pre-rename compatibility)
 }
 
 document.addEventListener('DOMContentLoaded', async () => {

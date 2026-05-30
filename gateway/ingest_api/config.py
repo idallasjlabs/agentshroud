@@ -465,11 +465,13 @@ def load_config(config_path: Optional[Path] = None) -> GatewayConfig:
                 bot_configs[bot_id] = BotConfig(id=bot_id, **bot_data)
     else:
         # Backward compat: auto-generate default OpenClaw entry when bots: is absent.
+        # hostname changed to agentshroud-openclaw (clean break rename, 2026-05-30).
+        # Legacy deployments with hostname="agentshroud" are accepted via _LEGACY_BOT_ALIAS.
         bot_configs["openclaw"] = BotConfig(
             id="openclaw",
             name="OpenClaw",
             runtime="node",
-            hostname="agentshroud",
+            hostname="agentshroud-openclaw",
             port=18789,
             workspace_path="/home/node/.openclaw/workspace",
             config_dir="/home/node/.openclaw",

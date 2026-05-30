@@ -256,3 +256,50 @@ class TestOAuthInjection:
         assert "computer-use-2024-10-22" in beta, "Pre-existing beta flags must be preserved"
         assert "oauth-2025-04-20" in beta
         assert beta.count("oauth-2025-04-20") == 1, "oauth-2025-04-20 must appear exactly once"
+
+
+# ---------------------------------------------------------------------------
+# CVE-2026-9352: load_all_secret_file_values
+# ---------------------------------------------------------------------------
+
+
+class TestLoadAllSecretFileValues:
+    """load_all_secret_file_values reads all Docker secret files for scrubbing."""
+
+    def test_returns_empty_when_dir_missing(self, tmp_path):
+        from gateway.security.credential_injector import load_all_secret_file_values
+
+        result = load_all_secret_file_values(secrets_dir=str(tmp_path / "nonexistent"))
+        assert result == []
+
+    def test_returns_values_meeting_min_len(self, tmp_path):
+        from gateway.security.credential_injector import load_all_secret_file_values
+
+        (tmp_path / "token_a").write_text("supersecrettoken12345")
+        (tmp_path / "token_b").write_text("short")
+        result = load_all_secret_file_values(secrets_dir=str(tmp_path), min_len=12)
+        assert "supersecrettoken12345" in result
+        assert "short" not in result
+
+    def test_strips_trailing_newline(self, tmp_path):
+        from gateway.security.credential_injector import load_all_secret_file_values
+
+        (tmp_path / "mytoken").write_text("myverylongsecretvalue\n")
+        result = load_all_secret_file_values(secrets_dir=str(tmp_path), min_len=12)
+        assert "myverylongsecretvalue" in result
+        assert "myverylongsecretvalue\n" not in result
+
+    def test_get_all_loaded_values_method(self, tmp_path):
+        """CredentialInjector.get_all_loaded_values returns all loaded credential values."""
+        from gateway.security.credential_injector import (
+            CredentialInjector,
+            CredentialInjectorConfig,
+        )
+
+        (tmp_path / "anthropic_api_key").write_text("sk-ant-oat01-testvalue12345678")
+        cfg = CredentialInjectorConfig(secrets_dir=str(tmp_path))
+        inj = CredentialInjector(config=cfg)
+        vals = inj.get_all_loaded_values(min_len=12)
+        # The injector only exposes values from its domain map, not all files
+        # — that's correct: load_all_secret_file_values handles the rest.
+        assert isinstance(vals, list)

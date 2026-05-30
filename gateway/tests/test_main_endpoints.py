@@ -360,3 +360,73 @@ class TestQuarantineEndpoints:
             assert payload["error"] == "message_not_found"
         finally:
             app.dependency_overrides.pop(auth_dep, None)
+
+
+# ---------------------------------------------------------------------------
+# CVE-2026-6829: hermes-dashboard path traversal guard
+# ---------------------------------------------------------------------------
+
+
+class TestHermesDashboardPathTraversal:
+    """hermes_dashboard_proxy must reject traversal sequences before forwarding."""
+
+    def test_dotdot_path_rejected(self):
+        from gateway.ingest_api.main import _TRAVERSAL_RE
+
+        assert _TRAVERSAL_RE.search("../../etc/passwd")
+
+    def test_encoded_traversal_rejected(self):
+        from gateway.ingest_api.main import _TRAVERSAL_RE
+
+        assert _TRAVERSAL_RE.search("%2e%2e%2fetc%2fpasswd")
+
+    def test_mixed_case_encoded_rejected(self):
+        from gateway.ingest_api.main import _TRAVERSAL_RE
+
+        assert _TRAVERSAL_RE.search("%2E%2E/etc/passwd")
+
+    def test_backslash_encoded_rejected(self):
+        from gateway.ingest_api.main import _TRAVERSAL_RE
+
+        assert _TRAVERSAL_RE.search("..%5cetc%5cpasswd")
+
+    def test_safe_path_passes(self):
+        from gateway.ingest_api.main import _TRAVERSAL_RE
+
+        assert not _TRAVERSAL_RE.search("api/workspace/files/index.html")
+        assert not _TRAVERSAL_RE.search("api/conversations/list")
+
+    @pytest.mark.asyncio
+    async def test_proxy_returns_400_on_traversal(self):
+        """hermes_dashboard_proxy raises HTTPException(400) for traversal in path."""
+        from unittest.mock import MagicMock
+
+        from fastapi import HTTPException
+
+        from gateway.ingest_api.main import hermes_dashboard_proxy
+
+        mock_request = MagicMock()
+        mock_request.url.query = ""
+
+        with pytest.raises(HTTPException) as exc_info:
+            await hermes_dashboard_proxy(path="../../etc/passwd", request=mock_request)
+
+        assert exc_info.value.status_code == 400
+        assert "traversal" in exc_info.value.detail.lower()
+
+    @pytest.mark.asyncio
+    async def test_proxy_returns_400_on_traversal_in_query(self):
+        """hermes_dashboard_proxy raises HTTPException(400) for traversal in query string."""
+        from unittest.mock import MagicMock
+
+        from fastapi import HTTPException
+
+        from gateway.ingest_api.main import hermes_dashboard_proxy
+
+        mock_request = MagicMock()
+        mock_request.url.query = "path=../../etc/passwd"
+
+        with pytest.raises(HTTPException) as exc_info:
+            await hermes_dashboard_proxy(path="api/workspace", request=mock_request)
+
+        assert exc_info.value.status_code == 400

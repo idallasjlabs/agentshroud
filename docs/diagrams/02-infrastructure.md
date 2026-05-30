@@ -20,7 +20,7 @@ graph TB
 
     subgraph Tailscale["Tailscale Overlay  ·  tail240ea8.ts.net"]
         MARVIN["marvin\n100.90.175.83"]
-        PI["raspberrypi\n100.107.248.66\nagentshroud-bot user"]
+        PI["raspberrypi\n100.107.248.66\nagentshroud-openclaw user"]
         TRILLIAN["trillian\n100.94.68.61"]
     end
 
@@ -35,7 +35,7 @@ graph TB
             end
 
             subgraph NetIsolated["agentshroud-isolated  ·  172.21.0.0/16"]
-                BOT["agentshroud-bot\n:18789 OpenClaw\n:18790 Web UI\nNode.js 22 · 4 GB"]
+                BOT["agentshroud-openclaw\n:18789 OpenClaw\n:18790 Web UI\nNode.js 22 · 4 GB"]
                 HERMES["agentshroud-hermes  [--profile full]\n:8642 Hermes API\n:9119 Dashboard\nnousresearch/hermes-agent · Python 3.11"]
                 HCI["agentshroud-hci  [--profile full]\n:9121 Hermes Control Interface\nBasic-Auth gated"]
             end
@@ -128,7 +128,7 @@ graph TB
 
         subgraph Running["Running Containers"]
             GW_C["agentshroud-gateway\n(healthy)"]
-            BOT_C["agentshroud-bot\n(healthy)"]
+            BOT_C["agentshroud-openclaw\n(healthy)"]
             HERMES_C["agentshroud-hermes\n(healthy) [--profile full]"]
             HCI_C["agentshroud-hci\n(healthy) [--profile full]"]
         end

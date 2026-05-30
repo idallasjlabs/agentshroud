@@ -112,7 +112,7 @@ class TestPromptProtection:
         Generic hostnames (e.g. server.example.com) are NOT redacted to avoid
         false positives on filenames like 'file.py' or 'test.md'. Only IPs,
         Tailscale FQDNs, and known internal bot names (e.g. 'marvin') are redacted.
-        'agentshroud' and 'agentshroud-bot' are public branding and NOT redacted.
+        'agentshroud' and 'agentshroud-openclaw' are public branding and NOT redacted.
         """
         test_cases = [
             "The IP address is 192.168.1.100",
@@ -126,8 +126,8 @@ class TestPromptProtection:
             assert result.risk_score > 0
 
     def test_product_name_not_redacted(self, prompt_protection):
-        """Product name 'agentshroud' and 'agentshroud-bot' are public branding — must not be redacted."""
-        for text in ["Using AgentShroud gateway", "agentshroud-bot is the container name"]:
+        """Product name 'agentshroud' and 'agentshroud-openclaw' are public branding — must not be redacted."""
+        for text in ["Using AgentShroud gateway", "agentshroud-openclaw is the container name"]:
             result = prompt_protection.scan_response(text)
             assert "[INFRASTRUCTURE_REDACTED]" not in result.redacted_text
 

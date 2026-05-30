@@ -396,3 +396,101 @@ async def test_credential_injector_called_in_streaming_path(monkeypatch):
     # Drain one chunk (httpx will fail gracefully → error chunk; we don't care about content)
     async for _ in stream:
         break
+
+
+# ---------------------------------------------------------------------------
+# CVE-2026-9367: ToolACL enforcement in streaming path
+# ---------------------------------------------------------------------------
+
+
+class _FakeToolACL:
+    """Minimal ToolACLEnforcer stub that denies a named tool."""
+
+    def __init__(self, deny_tool: str):
+        self._deny = deny_tool
+
+    def can_use_tool(self, user_id: str, tool_name: str):
+        if tool_name == self._deny:
+            return False, f"{tool_name} is PRIVATE"
+        return True, "allowed"
+
+
+@pytest.mark.asyncio
+async def test_streaming_tool_acl_blocks_terminal_tool():
+    """content_block_start with terminal_tool must be replaced with a text error block."""
+    sanitizer = _FakeSanitizer()
+    acl = _FakeToolACL(deny_tool="terminal_tool")
+    proxy = LLMProxy(sanitizer=sanitizer, tool_acl_enforcer=acl)
+
+    event = {
+        "type": "content_block_start",
+        "index": 0,
+        "content_block": {"type": "tool_use", "id": "tu_1", "name": "terminal_tool", "input": {}},
+    }
+    result = await proxy._filter_streaming_event(event, user_id="collab-123")
+
+    assert result is not event
+    assert result["type"] == "content_block_start"
+    assert result["content_block"]["type"] == "text"
+    assert "terminal_tool" in result["content_block"]["text"]
+    assert "not permitted" in result["content_block"]["text"]
+
+
+@pytest.mark.asyncio
+async def test_streaming_tool_acl_allows_permitted_tool():
+    """Allowed tool blocks must pass through unchanged."""
+    sanitizer = _FakeSanitizer()
+    acl = _FakeToolACL(deny_tool="terminal_tool")
+    proxy = LLMProxy(sanitizer=sanitizer, tool_acl_enforcer=acl)
+
+    event = {
+        "type": "content_block_start",
+        "index": 0,
+        "content_block": {"type": "tool_use", "id": "tu_2", "name": "web_search", "input": {}},
+    }
+    result = await proxy._filter_streaming_event(event, user_id="collab-123")
+    # Should be the same object (no modification)
+    assert result is event
+
+
+@pytest.mark.asyncio
+async def test_streaming_tool_acl_skips_unknown_user():
+    """Events from 'unknown' user_id must not be blocked (not authenticated)."""
+    sanitizer = _FakeSanitizer()
+    acl = _FakeToolACL(deny_tool="terminal_tool")
+    proxy = LLMProxy(sanitizer=sanitizer, tool_acl_enforcer=acl)
+
+    event = {
+        "type": "content_block_start",
+        "index": 0,
+        "content_block": {"type": "tool_use", "id": "tu_3", "name": "terminal_tool", "input": {}},
+    }
+    result = await proxy._filter_streaming_event(event, user_id="unknown")
+    # unknown user_id bypasses ACL enforcement
+    assert result is event
+
+
+# ---------------------------------------------------------------------------
+# CVE-2026-9352: secret value scrubbing in _filter_outbound_streaming
+# ---------------------------------------------------------------------------
+
+
+@pytest.mark.asyncio
+async def test_streaming_secret_value_redacted():
+    """A known secret value echoed in a streaming delta must be scrubbed."""
+
+    class _SecretSanitizer(_FakeSanitizer):
+        async def block_credentials(self, text: str, source: str):
+            if "supersecrettoken12345" in text:
+                return ("<REDACTED:secret>", True)
+            return (text, False)
+
+    proxy = LLMProxy(sanitizer=_SecretSanitizer())
+    sse_body = (
+        'data: {"choices":[{"delta":{"content":"your token is supersecrettoken12345"}}]}\n'
+        "data: [DONE]\n"
+    ).encode()
+
+    result = await proxy._filter_outbound_streaming(sse_body, user_id="u1")
+    assert b"supersecrettoken12345" not in result
+    assert b"REDACTED" in result

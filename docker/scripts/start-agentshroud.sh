@@ -394,7 +394,7 @@ _model_runtime_ready() {
 
 # Instance identity for notifications
 _INSTANCE_LABEL="${INSTANCE_NAME:-$(hostname -s)}"
-_BOT_NAME="${OPENCLAW_BOT_NAME:-agentshroud-bot}"
+_BOT_NAME="${OPENCLAW_BOT_NAME:-agentshroud-openclaw}"
 _STARTUP_NOTICE_STAMP="${OPENCLAW_STARTUP_NOTICE_STAMP:-/home/node/.openclaw/workspace/.startup_notice_at}"
 _STARTUP_NOTICE_COOLDOWN_SECONDS="${OPENCLAW_STARTUP_NOTICE_COOLDOWN_SECONDS:-300}"
 

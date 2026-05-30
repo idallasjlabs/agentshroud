@@ -480,7 +480,7 @@ class TestServicesBotFilter:
         from gateway.soc.models import ServiceDescriptor, ServiceStatus
 
         svc_openclaw = ServiceDescriptor(
-            name="agentshroud-bot", status=ServiceStatus.RUNNING, image="openclaw:latest"
+            name="agentshroud-openclaw", status=ServiceStatus.RUNNING, image="openclaw:latest"
         )
         svc_hermes = ServiceDescriptor(
             name="agentshroud-hermes", status=ServiceStatus.RUNNING, image="hermes-agent:latest"
@@ -489,8 +489,8 @@ class TestServicesBotFilter:
             name="agentshroud-gateway", status=ServiceStatus.RUNNING, image="gateway:latest"
         )
 
-        # Use a very specific hostname that only matches agentshroud-bot
-        bot = _make_bot_config(hostname="agentshroud-bot", image="openclaw:latest")
+        # Use a very specific hostname that only matches agentshroud-openclaw
+        bot = _make_bot_config(hostname="agentshroud-openclaw", image="openclaw:latest")
         app = _make_app_state(bots={"openclaw": bot})
         caller = _make_owner_caller()
 
@@ -504,8 +504,8 @@ class TestServicesBotFilter:
             result = await list_services(bot_id="openclaw", caller=caller)
 
         names = [r["name"] for r in result]
-        # agentshroud-bot matches both hostname and image; gateway/hermes do not
-        assert "agentshroud-bot" in names
+        # agentshroud-openclaw matches both hostname and image; gateway/hermes do not
+        assert "agentshroud-openclaw" in names
         assert "agentshroud-hermes" not in names
         assert "agentshroud-gateway" not in names
 
@@ -514,7 +514,7 @@ class TestServicesBotFilter:
         from gateway.soc.models import ServiceDescriptor, ServiceStatus
 
         svcs = [
-            ServiceDescriptor(name="agentshroud-bot", status=ServiceStatus.RUNNING),
+            ServiceDescriptor(name="agentshroud-openclaw", status=ServiceStatus.RUNNING),
             ServiceDescriptor(name="agentshroud-hermes", status=ServiceStatus.RUNNING),
         ]
         app = _make_app_state()

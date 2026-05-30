@@ -118,8 +118,11 @@ run_clamav() {
     if command -v clamdscan >/dev/null 2>&1 && \
        ([ -S /run/clamav/clamd.ctl ] || [ -S /var/run/clamav/clamd.ctl ]); then
         log "Using clamdscan (clamd socket found)"
-        clamdscan --no-summary --multiscan \
+        clamdscan --no-summary \
             --max-filesize=50M --max-scansize=200M \
+            --max-recursion=10 --cross-fs=no \
+            --exclude-dir='^/proc' --exclude-dir='^/sys' \
+            --exclude-dir='^/dev' --exclude-dir='^/var/lib/clamav' \
             "$WORKSPACE" > "$CLAMAV_RAW" 2>&1 || SCAN_EXIT=$?
     elif command -v clamscan >/dev/null 2>&1; then
         log "Using clamscan (clamd socket not found)"

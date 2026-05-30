@@ -12,8 +12,8 @@ services:
     memswap_limit: 512m
     cpus: 0.5
 
-  bot:
-    container_name: agentshroud-trillian-bot
+  openclaw:
+    container_name: agentshroud-trillian-openclaw
     environment:
       - OPENCLAW_BOT_NAME=agentshroud_bot_trillian
       - AGENTSHROUD_INSTANCE_LABEL=dev-trillian
