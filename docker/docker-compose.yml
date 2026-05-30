@@ -98,6 +98,8 @@ services:
       # repo@sha256:<digest> at deploy time. Left empty disables verification.
       - AGENTSHROUD_BOT_IMAGE_REF=${AGENTSHROUD_BOT_IMAGE_REF:-}
       - AGENTSHROUD_GATEWAY_IMAGE_REF=${AGENTSHROUD_GATEWAY_IMAGE_REF:-}
+      - AGENTSHROUD_HERMES_IMAGE_REF=${AGENTSHROUD_HERMES_IMAGE_REF:-}
+      - AGENTSHROUD_TRIVY_IMAGES=agentshroud/hermes:latest
       - AGENTSHROUD_COMPOSE_HOST=marvin
       - AGENTSHROUD_COMPOSE_DIR=/Users/agentshroud-bot/Development/agentshroud
       - AGENTSHROUD_INSTANCE_LABEL=${AGENTSHROUD_INSTANCE_LABEL:-prod}

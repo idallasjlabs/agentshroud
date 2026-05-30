@@ -2154,11 +2154,12 @@ async def get_agent_cves(
     try:
         from ..security.agent_cve_registry import get_agent_cve_summary
 
+        from ..security.agent_cve_registry import _AGENT_CVE_REGISTRIES
+
         target_bot = bot_id or "openclaw"
-        # Only "openclaw" has a registered CVE registry; any other bot_id is unknown.
-        if target_bot != "openclaw":
+        if target_bot not in _AGENT_CVE_REGISTRIES:
             return {"error": f"unknown bot_id: {target_bot}"}
-        return get_agent_cve_summary()
+        return get_agent_cve_summary(target_bot)
     except Exception as exc:
         logger.warning("get_agent_cves: %s", exc)
         return {"error": str(exc)}
