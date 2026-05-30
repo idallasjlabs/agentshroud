@@ -3,7 +3,7 @@
 # Runs every 4 hours via launchd, keeps last 6 snapshots
 set -euo pipefail
 
-CONTAINER="agentshroud-bot"
+CONTAINER="agentshroud-openclaw"
 BACKUP_DIR="/Users/ijefferson.admin/Development/agentshroud/memory-backups"
 MAX_BACKUPS=6
 TIMESTAMP=$(date +%Y%m%d-%H%M%S)

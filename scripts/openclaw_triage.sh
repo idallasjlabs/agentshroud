@@ -4,7 +4,7 @@ set -euo pipefail
 OUT_DIR="${1:-/tmp/openclaw_triage_$(date +%Y%m%d_%H%M%S)}"
 mkdir -p "$OUT_DIR"
 
-BOT_CONTAINER="${BOT_CONTAINER:-agentshroud-bot}"
+BOT_CONTAINER="${BOT_CONTAINER:-agentshroud-openclaw}"
 GW_CONTAINER="${GW_CONTAINER:-agentshroud-gateway}"
 
 log() {

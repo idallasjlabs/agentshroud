@@ -67,12 +67,12 @@ check "Gateway /status 200 within ${WAIT_SECS}s" \
 # Wait a short period for the bot to start fully
 sleep 5
 bot_logs=""
-if docker ps --format '{{.Names}}' 2>/dev/null | grep -q 'agentshroud-bot\|agentshroud-openclaw'; then
+if docker ps --format '{{.Names}}' 2>/dev/null | grep -q 'agentshroud-openclaw'; then
     # Allow bot to finish startup within BOT_WAIT_SECS
     started=false
     deadline=$(( $(date +%s) + BOT_WAIT_SECS ))
     while [[ $(date +%s) -lt $deadline ]]; do
-        bot_logs=$(docker logs agentshroud-bot 2>&1 || docker logs agentshroud-openclaw 2>&1 || echo "")
+        bot_logs=$(docker logs agentshroud-openclaw 2>&1 || echo "")
         if [[ "$bot_logs" == *"Telegram startup notification"* || "$bot_logs" == *"Listening for"* || "$bot_logs" == *"Bot is running"* ]]; then
             started=true
             break
@@ -144,7 +144,7 @@ if [[ "$fail" -gt 0 ]]; then
     echo ""
     echo "  Investigate with:" >&2
     echo "    docker logs agentshroud-gateway 2>&1 | tail -50" >&2
-    echo "    docker logs agentshroud-bot 2>&1 | tail -50" >&2
+    echo "    docker logs agentshroud-openclaw 2>&1 | tail -50" >&2
     echo "    docker logs agentshroud-hermes 2>&1 | tail -50" >&2
     echo "    asb status" >&2
     echo ""

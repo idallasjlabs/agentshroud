@@ -148,7 +148,7 @@ graph TB
     end
 
     subgraph MetricsDest["Where Metrics Land"]
-        DOCKER_LOGS["docker logs agentshroud-bot\nPrimary Observability Surface"]
+        DOCKER_LOGS["docker logs agentshroud-openclaw\nPrimary Observability Surface"]
         SQLITE_AUDIT["ledger.db + approval_queue.db\nQueryable via GET /ledger"]
         TELEGRAM_CHAN["Telegram Channel\nHuman-readable Alerts\nStartup / Shutdown Events"]
     end

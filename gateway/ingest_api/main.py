@@ -444,7 +444,7 @@ async def system_control(auth: AuthRequired):
 
         <div class="status">
             <h2 class="healthy">● System Status: HEALTHY</h2>
-            <div class="metric">Version: 1.0.44</div>
+            <div class="metric">Version: 1.1.0</div>
             <div class="metric">Uptime: {int(uptime)}s</div>
             <div class="metric">PII Engine: {app_state.sanitizer.get_mode()}</div>
         </div>
@@ -4042,7 +4042,7 @@ async def get_soc2_compliance_report(auth: AuthRequired):
 
     return {
         "standard": "SOC 2 Type II — Trust Service Criteria",
-        "version": "v1.0.44",
+        "version": "v1.1.0",
         "criteria_total": len(criteria),
         "criteria_covered": len(covered),
         "criteria_gaps": len(gaps),
@@ -4503,6 +4503,8 @@ async def slack_ws_relay(websocket: WebSocket, t: str = Query(...)):
 _HERMES_DASHBOARD_UPSTREAM = os.environ.get(
     "HERMES_DASHBOARD_UPSTREAM", "http://agentshroud-hermes:9119"
 )
+# CVE-2026-6829: block path traversal sequences in the reverse-proxy path/query.
+_TRAVERSAL_RE = re.compile(r"\.\.|%2e%2e|%2f|%5c", re.IGNORECASE)
 
 
 @app.api_route(
@@ -4525,6 +4527,11 @@ async def hermes_dashboard_root():
 async def hermes_dashboard_proxy(path: str, request: Request):
     """Reverse-proxy the Hermes Agent dashboard through the gateway."""
     import httpx as _httpx
+
+    # CVE-2026-6829: reject path traversal sequences before forwarding.
+    raw_query = str(request.url.query)
+    if _TRAVERSAL_RE.search(path) or _TRAVERSAL_RE.search(raw_query):
+        raise HTTPException(status_code=400, detail="Path traversal not permitted")
 
     upstream_url = f"{_HERMES_DASHBOARD_UPSTREAM}/{path}"
     params = str(request.url.query)

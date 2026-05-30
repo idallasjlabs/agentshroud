@@ -14,7 +14,7 @@
 #
 # Environment:
 #   AGENTSHROUD_IMAGE_GATEWAY  Gateway image name (default: agentshroud-gateway:latest)
-#   AGENTSHROUD_IMAGE_BOT      Bot image name (default: agentshroud-bot:latest)
+#   AGENTSHROUD_IMAGE_BOT      Bot image name (default: agentshroud-openclaw:latest)
 #   REPORTS_DIR                Output directory for reports (default: reports/security)
 #   TRIVY_SEVERITY             Severity filter (default: CRITICAL,HIGH)
 #   COSIGN_SKIP                Set to 1 to skip cosign (e.g., in local dev)
@@ -28,7 +28,7 @@ set -euo pipefail
 # ---------------------------------------------------------------------------
 
 GATEWAY_IMAGE="${AGENTSHROUD_IMAGE_GATEWAY:-agentshroud-gateway:latest}"
-BOT_IMAGE="${AGENTSHROUD_IMAGE_BOT:-agentshroud-bot:latest}"
+BOT_IMAGE="${AGENTSHROUD_IMAGE_BOT:-agentshroud-openclaw:latest}"
 REPORTS_DIR="${REPORTS_DIR:-reports/security}"
 TRIVY_SEVERITY="${TRIVY_SEVERITY:-CRITICAL,HIGH}"
 COSIGN_SKIP="${COSIGN_SKIP:-0}"

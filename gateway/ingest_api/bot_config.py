@@ -63,7 +63,7 @@ class BotConfig(BaseModel):
     default: bool = Field(default=False, description="Whether this is the default bot for routing")
     image: str = Field(
         default="",
-        description="Docker image name:tag used by this bot, e.g. 'agentshroud-bot:latest'",
+        description="Docker image name:tag used by this bot, e.g. 'agentshroud-openclaw:latest'",
     )
 
     @property

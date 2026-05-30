@@ -73,7 +73,7 @@ DEFAULT_SERVICES = [
     ),
     ServiceDef(
         name="bot",
-        image="agentshroud-bot:latest",
+        image="agentshroud-openclaw:latest",
         build="docker/bots/openclaw/Dockerfile",
         ports=["127.0.0.1:18789:18789"],
         volumes=["bot-data:/home/node/.openclaw"],

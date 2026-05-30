@@ -74,6 +74,23 @@ _telegram_send() {
         >/dev/null 2>&1
 }
 
+_telegram_send_photo() {
+    local caption="$1"
+    local photo_path="${2:-/app/branding/logo.png}"
+    local token
+    token="$(_telegram_bot_token)"
+    if [ -z "$token" ] || [ ! -f "$photo_path" ]; then
+        return 1
+    fi
+    curl -sf --max-time 15 -X POST "${_GATEWAY_TELEGRAM_BASE}/bot${token}/sendPhoto" \
+        -H "Authorization: Bearer ${GATEWAY_AUTH_TOKEN:-}" \
+        -H "X-AgentShroud-System: 1" \
+        -F "chat_id=${_OWNER_CHAT_ID}" \
+        -F "caption=${caption}" \
+        -F "photo=@${photo_path}" \
+        >/dev/null 2>&1
+}
+
 _telegram_get_me_ready() {
     local token
     token="$(_telegram_bot_token)"
@@ -159,9 +176,13 @@ echo "[hermes-startup] Starting Hermes Agent gateway (Telegram/Discord long-poll
     done
 
     if [ "${ready}" = "yes" ]; then
-        _telegram_send "🛡️ Hermes online" \
-            && echo "[hermes-startup] ✓ Sent Telegram startup notification" \
-            || echo "[hermes-startup] ⚠ Could not send Telegram startup notification"
+        if _telegram_send_photo "🛡️ Hermes online" "/app/branding/logo.png" 2>/dev/null; then
+            echo "[hermes-startup] ✓ Sent Telegram startup photo notification"
+        else
+            _telegram_send "🛡️ Hermes online" \
+                && echo "[hermes-startup] ✓ Sent Telegram startup notification" \
+                || echo "[hermes-startup] ⚠ Could not send Telegram startup notification"
+        fi
     else
         _telegram_send "🟠 Hermes starting (readiness delayed)" \
             && echo "[hermes-startup] ⚠ Sent delayed startup notification" \

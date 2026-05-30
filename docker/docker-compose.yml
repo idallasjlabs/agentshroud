@@ -129,8 +129,8 @@ services:
       - /var/ossec/queue:nosuid,size=50m,uid=1000,gid=1000
       - /var/ossec/tmp:noexec,nosuid,size=10m,uid=1000,gid=1000
       - /var/ossec/logs/ossec:noexec,nosuid,size=20m,uid=1000,gid=1000
-    mem_limit: 2560m
-    memswap_limit: 2560m
+    mem_limit: 4096m
+    memswap_limit: 4096m
     cpus: 1.0
     pids_limit: 512
     logging:
@@ -166,7 +166,7 @@ services:
   # ── Bot ──────────────────────────────────────────────────────────────────────
   # OpenClaw agent. Fully isolated — no direct internet, no host access.
   # All egress through gateway proxy. DNS: Docker internal only.
-  bot:
+  openclaw:
     build:
       context: ..
       dockerfile: docker/bots/openclaw/Dockerfile
@@ -179,9 +179,9 @@ services:
       - "trillian:192.168.7.103"
       - "raspberrypi:192.168.7.25"
       - "api.telegram.org:149.154.166.110"
-    image: agentshroud-bot:${AGENTSHROUD_VERSION:-latest}
-    container_name: agentshroud-bot
-    hostname: agentshroud
+    image: agentshroud-openclaw:${AGENTSHROUD_VERSION:-latest}
+    container_name: agentshroud-openclaw
+    hostname: agentshroud-openclaw
     restart: unless-stopped
     stop_grace_period: "15s"
     # Port 18789 is no longer published directly — Canvas traffic is now

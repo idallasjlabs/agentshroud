@@ -112,8 +112,8 @@ case "$MODE" in
         echo "[2/2] Containers are now paused for forensic analysis"
         echo ""
         echo "To resume:  docker compose -f $DOCKER_DIR/docker-compose.yml unpause"
-        echo "To inspect: docker exec agentshroud-bot /bin/bash"
-        echo "            docker logs agentshroud-bot"
+        echo "To inspect: docker exec agentshroud-openclaw /bin/bash"
+        echo "            docker logs agentshroud-openclaw"
         echo ""
         ;;
 
@@ -252,7 +252,7 @@ $(docker inspect agentshroud-gateway 2>/dev/null || echo "Container not found")
 
 ### AgentShroud Container
 \`\`\`
-$(docker inspect agentshroud-bot 2>/dev/null || echo "Container not found")
+$(docker inspect agentshroud-openclaw 2>/dev/null || echo "Container not found")
 \`\`\`
 
 ## Recent Logs
@@ -264,7 +264,7 @@ $(docker logs --tail 50 agentshroud-gateway 2>/dev/null || echo "No logs availab
 
 ### AgentShroud Logs (last 50 lines)
 \`\`\`
-$(docker logs --tail 50 agentshroud-bot 2>/dev/null || echo "No logs available")
+$(docker logs --tail 50 agentshroud-openclaw 2>/dev/null || echo "No logs available")
 \`\`\`
 
 ---

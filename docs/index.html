@@ -248,6 +248,7 @@
     <ul>
       <li><a href="#features">Features</a></li>
       <li><a href="#layers">Architecture</a></li>
+      <li><a href="#openclaw">OpenClaw</a></li>
       <li><a href="#hermes">Hermes</a></li>
       <li><a href="#cves">CVEs</a></li>
       <li><a href="#cves-hermes">Hermes CVEs</a></li>
@@ -260,7 +261,7 @@
 <!-- ── Hero ────────────────────────────────────────────────── -->
 <section class="hero">
   <div class="container">
-    <div class="version-badge">v1.0.62 "Fortress" — Now Available</div>
+    <div class="version-badge">v1.1.0 "Fortress" — Now Available</div>
     <h1>Enterprise Governance for<br><em>Autonomous AI Agents</em></h1>
     <p class="hero-sub">
       AgentShroud sits transparently between your AI agents and every system they touch.
@@ -403,6 +404,49 @@
         </tr>
       </tbody>
     </table>
+  </div>
+</section>
+
+<!-- ── OpenClaw Bot ───────────────────────────────────────────── -->
+<section id="openclaw">
+  <div class="container">
+    <div class="section-label">GA Bot — Since v1.0.x</div>
+    <h2>OpenClaw</h2>
+    <p class="section-sub">OpenClaw is AgentShroud's flagship production bot — a Node.js autonomous agent shipped as <code>agentshroud-openclaw</code>. It has been in production since v1.0.x and is the primary interface for Telegram, Slack, iOS Shortcuts, Browser Extension, SSH, and REST API — all traffic governed by the full 76-module security pipeline.</p>
+
+    <div class="feature-grid">
+      <div class="feature-card">
+        <div class="feature-icon">💬</div>
+        <h3>Multi-Channel Presence</h3>
+        <p>Telegram bot, Slack workspace integration, iOS Shortcuts, Browser Extension, SSH terminal access, and REST API — every channel routes through AgentShroud before reaching any downstream system.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">🔒</div>
+        <h3>Security Posture</h3>
+        <p>All egress routes via <code>gateway:8181</code> (HTTP CONNECT proxy). All LLM calls route via <code>gateway:8080</code>. PII is redacted at 0.9 confidence before any response reaches a user. Credentials are never leaked in chat — blocked at the sanitizer layer.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">🧠</div>
+        <h3>Persistent Memory</h3>
+        <p>Per-collaborator workspace isolation with encrypted memory volumes. Conversation context, task history, and collaborator profiles persist across restarts on the <code>agentshroud-config</code> volume.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">🖥️</div>
+        <h3>Web Control UI</h3>
+        <p>Built-in web dashboard at port 18789 (published at <code>127.0.0.1:18789</code>). Manage devices, view conversation history, and configure channels without CLI access.</p>
+      </div>
+    </div>
+
+    <div class="code-block" style="margin-top: 32px;">
+      <div class="header">Connect via Telegram</div>
+      <pre><span class="cm"># Add the bot to your Telegram workspace</span>
+<span class="cm"># Bot token stored in Docker secret: telegram_bot_token</span>
+
+<span class="cm"># Check status</span>
+curl http://localhost:8080/status
+
+<span class="cm"># Full setup guide: docs/setup-telegram.md</span></pre>
+    </div>
   </div>
 </section>
 

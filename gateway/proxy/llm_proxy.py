@@ -566,8 +566,7 @@ class LLMProxy:
         return text, modified
 
     async def _filter_outbound_streaming(self, resp_body: bytes, user_id: str = "unknown") -> bytes:
-        """Filter buffered SSE-like streaming responses for XML/credential leaks."""
-        del user_id  # reserved for per-user telemetry in future revisions
+        """Filter buffered SSE-like streaming responses for XML/credential leaks and ToolACL."""
 
         try:
             text = resp_body.decode("utf-8")
@@ -596,7 +595,7 @@ class LLMProxy:
                 out_lines.append(line)
                 continue
 
-            modified_event = await self._filter_streaming_event(event)
+            modified_event = await self._filter_streaming_event(event, user_id=user_id)
             if modified_event is not event:
                 modified_any = True
             out_lines.append(f"data: {json.dumps(modified_event, separators=(',', ':'))}")
@@ -607,8 +606,42 @@ class LLMProxy:
         self._stats["streaming_responses_scanned"] += 1
         return ("\n".join(out_lines) + "\n").encode("utf-8")
 
-    async def _filter_streaming_event(self, event: dict[str, Any]) -> dict[str, Any]:
-        """Apply outbound text filters to known streaming response formats."""
+    async def _filter_streaming_event(
+        self, event: dict[str, Any], user_id: str = "unknown"
+    ) -> dict[str, Any]:
+        """Apply outbound text filters to known streaming response formats.
+
+        Also enforces ToolACL on Anthropic content_block_start events so that
+        streaming responses receive the same terminal_tool / PRIVATE_TOOLS protection
+        as non-streaming responses (CVE-2026-9367 streaming path fix).
+        """
+        # CVE-2026-9367: gate tool_use blocks in Anthropic streaming events.
+        if (
+            self.tool_acl_enforcer
+            and user_id != "unknown"
+            and event.get("type") == "content_block_start"
+        ):
+            cb = event.get("content_block", {})
+            if isinstance(cb, dict) and cb.get("type") == "tool_use":
+                tool_name = cb.get("name", "")
+                allowed, reason = self.tool_acl_enforcer.can_use_tool(user_id, tool_name)
+                if not allowed:
+                    logger.warning(
+                        "LLMProxy ToolACL (streaming): blocked tool_use user=%s tool=%s reason=%s",
+                        user_id,
+                        tool_name,
+                        reason,
+                    )
+                    self._stats["responses_filtered"] += 1
+                    return {
+                        "type": "content_block_start",
+                        "index": event.get("index", 0),
+                        "content_block": {
+                            "type": "text",
+                            "text": f"[AgentShroud] Tool '{tool_name}' is not permitted for your role. {reason}",
+                        },
+                    }
+
         modified = False
         event_copy = dict(event)
 

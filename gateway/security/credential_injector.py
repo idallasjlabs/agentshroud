@@ -71,6 +71,31 @@ class CredentialInjectorConfig:
     mappings: List[CredentialMapping] = field(default_factory=list)
 
 
+def load_all_secret_file_values(secrets_dir: str = "/run/secrets", min_len: int = 12) -> list:
+    """Return all non-empty values from Docker secret files (CVE-2026-9352).
+
+    Reads every file in *secrets_dir*, returns values with length >= *min_len* to
+    avoid false-positive redactions of short tokens.  Used by the PII sanitizer to
+    extend outbound credential scrubbing with all known secret values at startup.
+    """
+    from pathlib import Path as _Path
+
+    values: list = []
+    try:
+        d = _Path(secrets_dir)
+        for f in sorted(d.iterdir()):
+            if f.is_file():
+                try:
+                    v = f.read_text().strip()
+                    if len(v) >= min_len:
+                        values.append(v)
+                except Exception:
+                    pass
+    except Exception:
+        pass
+    return values
+
+
 class CredentialInjector:
     """Injects credentials into outbound requests based on destination domain.
 
@@ -201,6 +226,17 @@ class CredentialInjector:
                 return description
 
         return None
+
+    def get_all_loaded_values(self, min_len: int = 12) -> list:
+        """Return all loaded credential values for use in outbound scrubbing (CVE-2026-9352).
+
+        Returns values whose length >= min_len to avoid false-positive redactions on short tokens.
+        """
+        return [
+            m.loaded_value
+            for m in self._domain_map.values()
+            if m.loaded_value and len(m.loaded_value) >= min_len
+        ]
 
     def get_status(self) -> Dict:
         """Return status for /manage/modules endpoint."""

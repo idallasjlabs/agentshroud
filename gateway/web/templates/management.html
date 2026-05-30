@@ -169,7 +169,7 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; b
       <select id="log-service">
         <option value="">All Services</option>
         <option value="agentshroud-gateway">Gateway</option>
-        <option value="agentshroud-bot">Bot</option>
+        <option value="agentshroud-openclaw">OpenClaw</option>
       </select>
       <input type="number" id="log-tail" value="100" min="10" max="1000" style="width:80px;" placeholder="Lines">
       <button class="btn btn-sm btn-primary" onclick="loadLogs()">Refresh</button>
@@ -263,7 +263,7 @@ async function loadStatus() {
     // Services grid
     const grid = document.getElementById('service-grid');
     grid.innerHTML = '';
-    const icons = {'agentshroud-gateway':'🛡️','agentshroud-bot':'🤖','falco':'🦅','wazuh-agent':'👁️','clamav':'🦠'};
+    const icons = {'agentshroud-gateway':'🛡️','agentshroud-openclaw':'🤖','falco':'🦅','wazuh-agent':'👁️','clamav':'🦠'};
     for (const [name, info] of Object.entries(data.services)) {
       const running = info.status === 'running';
       grid.innerHTML += `<div class="card">
