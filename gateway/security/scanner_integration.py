@@ -2249,6 +2249,48 @@ _CSA_MAESTRO_DOMAIN_MAP: Dict[int, tuple] = {
     25: ("threat_model_least_privilege", 1),  # Least Agency
 }
 
+# EU AI Act mapping (Art 9 risk mgmt, Art 13 transparency, Art 14 human oversight, Art 15 robustness)
+_EU_AI_ACT_DOMAIN_MAP: Dict[int, tuple] = {
+    31: ("Art_14_human_oversight", 2),  # Human-in-the-Loop → Art 14
+    30: ("Art_13_transparency", 2),  # AI Observability → Art 13
+    9: ("Art_13_logging", 2),  # Logging & Monitoring → Art 13 audit log
+    23: ("Art_9_risk_mgmt", 2),  # Agent Behavior Integrity → Art 9 risk system
+    22: ("Art_15_robustness", 1),  # Prompt Injection Defense → Art 15 robustness
+}
+
+# ISO/IEC 42001:2023 mapping (§6.1 risk, §8 operations, §9 performance evaluation)
+_ISO_42001_DOMAIN_MAP: Dict[int, tuple] = {
+    23: ("clause_6_1_risk_assessment", 2),  # Agent Behavior Integrity → §6.1 Risk
+    29: ("clause_6_1_supply_chain", 2),  # AI Model Supply Chain → §6.1 Risk
+    24: ("clause_8_1_operational_planning", 2),  # Tool Use Safety → §8.1 Ops
+    31: ("clause_8_2_risk_treatment", 2),  # Human-in-Loop → §8.2 Risk Treatment
+    30: ("clause_9_performance_eval", 1),  # AI Observability → §9 Evaluation
+    10: ("clause_9_audit", 1),  # Compliance Auditing → §9 Internal Audit
+}
+
+# NIST CSF 2.0 mapping (Govern, Identify, Protect, Detect, Respond, Recover)
+_NIST_CSF_DOMAIN_MAP: Dict[int, tuple] = {
+    13: ("IDENTIFY_ID_AM", 2),  # Identity & Authentication → ID.AM Asset Mgmt
+    14: ("PROTECT_PR_AC", 2),  # Access Control → PR.AC
+    15: ("PROTECT_PR_DS", 2),  # Data Confidentiality → PR.DS
+    5: ("PROTECT_PR_PT", 2),  # Runtime Protection → PR.PT Protective Technology
+    9: ("DETECT_DE_CM", 2),  # Logging & Monitoring → DE.CM Continuous Monitoring
+    12: ("RESPOND_RS_MI", 2),  # Incident Response → RS.MI Incident Mitigation
+    23: ("GOVERN_GV_OC", 1),  # Agent Behavior Integrity → GV.OC Org Context
+    25: ("GOVERN_GV_RM", 1),  # Least Agency → GV.RM Risk Management Strategy
+}
+
+# DISA Container STIG mapping (CAT I/II checks — aligned to CIS Docker domains)
+_DISA_STIG_DOMAIN_MAP: Dict[int, tuple] = {
+    19: ("V_host_hardening", 2),  # Host OS Hardening
+    20: ("V_daemon_config", 2),  # Docker Daemon Configuration
+    4: ("V_container_hardening", 2),  # Container Hardening (CIS Section 4)
+    21: ("V_runtime_isolation", 2),  # Runtime Isolation
+    17: ("V_image_signing", 2),  # Image Signing & Provenance
+    6: ("V_malware_defense", 1),  # Malware Defense (ClamAV)
+    16: ("V_resource_limits", 1),  # Resource Availability
+}
+
 
 def _compute_weighted_subscore(scores: Dict[int, int], domain_map: Dict[int, tuple]) -> float:
     """Return weighted sub-score as 0.0–100.0 percentage."""
@@ -2468,6 +2510,10 @@ def compute_scorecard() -> Dict[str, Any]:
     mitre_atlas_pct = _compute_weighted_subscore(scores_by_id, _MITRE_ATLAS_DOMAIN_MAP)
     nist_ai_rmf_pct = _compute_weighted_subscore(scores_by_id, _NIST_AI_RMF_DOMAIN_MAP)
     csa_maestro_pct = _compute_weighted_subscore(scores_by_id, _CSA_MAESTRO_DOMAIN_MAP)
+    eu_ai_act_pct = _compute_weighted_subscore(scores_by_id, _EU_AI_ACT_DOMAIN_MAP)
+    iso_42001_pct = _compute_weighted_subscore(scores_by_id, _ISO_42001_DOMAIN_MAP)
+    nist_csf_pct = _compute_weighted_subscore(scores_by_id, _NIST_CSF_DOMAIN_MAP)
+    disa_stig_pct = _compute_weighted_subscore(scores_by_id, _DISA_STIG_DOMAIN_MAP)
 
     # IEC 62443 Security Level
     iec_sl = _determine_iec_sl(scores_by_id)
@@ -2488,15 +2534,19 @@ def compute_scorecard() -> Dict[str, Any]:
         "standard_basis": [
             "CIS Docker Benchmark v1.6.0",
             "NIST SP 800-190",
-            "DISA Docker Enterprise STIG",
+            "DISA Container STIG",
             "IEC 62443",
-            "OWASP Top 10 for Agentic AI 2026",
+            "OWASP Top 10 for Agentic AI 2026 (ASI-01–ASI-10)",
             "MITRE ATLAS (Oct 2025)",
             "NIST AI RMF 1.0",
+            "NIST CSF 2.0",
             "NIST AI Agent Standards Initiative 2026",
             "ISO/IEC 42001:2023",
             "CSA MAESTRO (Feb 2025)",
             "OWASP LLM Top 10",
+            "EU AI Act (Art 9, 13, 14, 15)",
+            "ITIL v5 AI-native (Feb 2026) — informational",
+            "Singapore MAS Autonomous Agent Framework (Jan 2026) — informational",
         ],
         "timestamp": datetime.now(timezone.utc).isoformat(),
         "domains": domains,
@@ -2529,6 +2579,20 @@ def compute_scorecard() -> Dict[str, Any]:
             },
             "csa_maestro": {
                 "sub_score_pct": csa_maestro_pct,
+            },
+            "eu_ai_act": {
+                "sub_score_pct": eu_ai_act_pct,
+                "coverage_note": "Art 9/13/14/15 covered; Art 11/17 partial",
+            },
+            "iso_42001": {
+                "sub_score_pct": iso_42001_pct,
+                "coverage_note": "§6.1/8/9 controls covered; full QMS lifecycle partial",
+            },
+            "nist_csf": {
+                "sub_score_pct": nist_csf_pct,
+            },
+            "disa_stig": {
+                "sub_score_pct": disa_stig_pct,
             },
         },
         # UI-friendly aliases
