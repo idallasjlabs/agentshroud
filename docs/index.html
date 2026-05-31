@@ -476,17 +476,17 @@ curl http://localhost:8080/status
       <div class="feature-card">
         <div class="feature-icon">🖥️</div>
         <h3>HCI Admin UI</h3>
-        <p>Built-in admin dashboard on port 9121 (published at <code>127.0.0.1:9121</code> on marvin). Access is gateway-auth-gated — unauthenticated requests are blocked before reaching the Hermes process.</p>
+        <p>Built-in admin dashboard on port 9119. Access is gateway-auth-gated — unauthenticated requests are blocked before reaching the Hermes process.</p>
       </div>
     </div>
 
     <div class="code-block" style="margin-top: 32px;">
       <div class="header">Connect to Hermes API — base URL</div>
       <pre><span class="cm"># OpenAI-compatible endpoint (requires gateway auth token)</span>
-<span class="kw">base_url</span> = <span class="st">"https://marvin.tail240ea8.ts.net:8642/v1"</span>
+<span class="kw">base_url</span> = <span class="st">"http://localhost:8642/v1"</span>
 
 <span class="cm"># Health check</span>
-curl https://marvin.tail240ea8.ts.net:8642/health
+curl http://localhost:8642/health
 
 <span class="cm"># Full setup guide: docs/setup/HERMES_SETUP.md</span></pre>
     </div>
