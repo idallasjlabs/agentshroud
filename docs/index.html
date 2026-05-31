@@ -2336,7 +2336,7 @@ curl http://localhost:8642/health
   <div class="container">
     <div class="section-label">CVE Registry — Hermes Agent</div>
     <!-- HERMES_CVE_HEADING_START -->
-    <h2>7 Hermes Agent CVEs — 4 mitigated, 3 partial</h2>
+    <h2>7 Hermes Agent CVEs — all mitigated</h2>
     <p class="section-sub">All CVEs disclosed in Hermes Agent (March–April 2026) are documented and tracked by AgentShroud’s defense-in-depth architecture.</p>
     <!-- HERMES_CVE_HEADING_END -->
     <!-- HERMES_CVE_TABLE_START -->
@@ -2375,19 +2375,13 @@ curl http://localhost:8642/health
           <td class="cve-id"><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-9367" target="_blank" rel="noopener">CVE-2026-9367</a></td>
           <td class="badge-high">8.1 HIGH</td>
           <td>OS Command Injection in terminal_tool approval.py detect_dangerous_command</td>
-          <td class="badge-partial">⚠ Partial</td>
+          <td class="badge-ok">✓ Mitigated</td>
         </tr>
         <tr>
           <td class="cve-id"><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-9352" target="_blank" rel="noopener">CVE-2026-9352</a></td>
           <td class="badge-high">6.1 HIGH</td>
           <td>Information Disclosure via _make_run_env in local.py</td>
-          <td class="badge-partial">⚠ Partial</td>
-        </tr>
-        <tr>
-          <td class="cve-id"><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-6829" target="_blank" rel="noopener">CVE-2026-6829</a></td>
-          <td class="badge-med">5.3 MEDIUM</td>
-          <td>WebUI Path Traversal via Workspace Path Manipulation</td>
-          <td class="badge-partial">⚠ Partial</td>
+          <td class="badge-ok">✓ Mitigated</td>
         </tr>
         <tr>
           <td class="cve-id"><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-7112" target="_blank" rel="noopener">CVE-2026-7112</a></td>
@@ -2399,6 +2393,12 @@ curl http://localhost:8642/health
           <td class="cve-id"><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-7113" target="_blank" rel="noopener">CVE-2026-7113</a></td>
           <td class="badge-med">5.6 MEDIUM</td>
           <td>Missing Authentication on Hermes Agent Management Endpoints</td>
+          <td class="badge-ok">✓ Mitigated</td>
+        </tr>
+        <tr>
+          <td class="cve-id"><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-6829" target="_blank" rel="noopener">CVE-2026-6829</a></td>
+          <td class="badge-med">5.3 MEDIUM</td>
+          <td>WebUI Path Traversal via Workspace Path Manipulation</td>
           <td class="badge-ok">✓ Mitigated</td>
         </tr>
         <tr>
