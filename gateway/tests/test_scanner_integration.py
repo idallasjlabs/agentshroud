@@ -17,8 +17,13 @@ from unittest.mock import MagicMock, patch
 import pytest
 
 from gateway.security.scanner_integration import (
+    _DISA_STIG_DOMAIN_MAP,
+    _EU_AI_ACT_DOMAIN_MAP,
+    _ISO_42001_DOMAIN_MAP,
     _MATURITY_LABELS,
+    _NIST_CSF_DOMAIN_MAP,
     _SCORECARD_DOMAINS,
+    _compute_weighted_subscore,
     _load_latest_json,
     _score_compliance_auditing,
     _score_container_hardening,
@@ -916,13 +921,61 @@ class TestComputeScorecard:
     def test_standard_basis_present(self):
         with patch.multiple("gateway.security.scanner_integration", **self._all_not_run_patches()):
             result = compute_scorecard()
-        assert "CIS Docker Benchmark v1.6.0" in result["standard_basis"]
-        assert "NIST SP 800-190" in result["standard_basis"]
-        assert "IEC 62443" in result["standard_basis"]
-        assert "OWASP Top 10 for Agentic AI 2026" in result["standard_basis"]
-        assert "MITRE ATLAS (Oct 2025)" in result["standard_basis"]
-        assert "NIST AI RMF 1.0" in result["standard_basis"]
-        assert "CSA MAESTRO (Feb 2025)" in result["standard_basis"]
+        basis = result["standard_basis"]
+        assert any("CIS Docker Benchmark" in s for s in basis)
+        assert any("NIST SP 800-190" in s for s in basis)
+        assert any("IEC 62443" in s for s in basis)
+        assert any("OWASP" in s and "Agentic AI" in s for s in basis)
+        assert any("MITRE ATLAS" in s for s in basis)
+        assert any("NIST AI RMF" in s for s in basis)
+        assert any("CSA MAESTRO" in s for s in basis)
+        assert any("EU AI Act" in s for s in basis)
+        assert any("ISO/IEC 42001" in s for s in basis)
+        assert any("NIST CSF" in s for s in basis)
+        assert any("DISA" in s for s in basis)
+
+    def test_compliance_new_keys_present(self):
+        """New compliance sub-scores (EU AI Act, ISO 42001, NIST CSF, DISA STIG) appear in output."""
+        with patch.multiple("gateway.security.scanner_integration", **self._all_not_run_patches()):
+            result = compute_scorecard()
+        compliance = result["compliance"]
+        for key in ("eu_ai_act", "iso_42001", "nist_csf", "disa_stig"):
+            assert key in compliance, f"Missing compliance key: {key}"
+            assert "sub_score_pct" in compliance[key], f"Missing sub_score_pct for {key}"
+            assert 0.0 <= compliance[key]["sub_score_pct"] <= 100.0
+
+    def test_eu_ai_act_domain_map_valid(self):
+        """EU AI Act domain map references only valid domain IDs."""
+        valid_ids = {d["id"] for d in _SCORECARD_DOMAINS}
+        for domain_id in _EU_AI_ACT_DOMAIN_MAP:
+            assert domain_id in valid_ids, f"EU AI Act domain {domain_id} not in _SCORECARD_DOMAINS"
+
+    def test_iso_42001_domain_map_valid(self):
+        """ISO 42001 domain map references only valid domain IDs."""
+        valid_ids = {d["id"] for d in _SCORECARD_DOMAINS}
+        for domain_id in _ISO_42001_DOMAIN_MAP:
+            assert domain_id in valid_ids, f"ISO 42001 domain {domain_id} not in _SCORECARD_DOMAINS"
+
+    def test_nist_csf_domain_map_valid(self):
+        """NIST CSF domain map references only valid domain IDs."""
+        valid_ids = {d["id"] for d in _SCORECARD_DOMAINS}
+        for domain_id in _NIST_CSF_DOMAIN_MAP:
+            assert domain_id in valid_ids, f"NIST CSF domain {domain_id} not in _SCORECARD_DOMAINS"
+
+    def test_disa_stig_domain_map_valid(self):
+        """DISA STIG domain map references only valid domain IDs."""
+        valid_ids = {d["id"] for d in _SCORECARD_DOMAINS}
+        for domain_id in _DISA_STIG_DOMAIN_MAP:
+            assert domain_id in valid_ids, f"DISA STIG domain {domain_id} not in _SCORECARD_DOMAINS"
+
+    def test_compute_weighted_subscore_zero_for_empty_map(self):
+        """_compute_weighted_subscore returns 0.0 for an empty domain map."""
+        assert _compute_weighted_subscore({}, {}) == 0.0
+
+    def test_compute_weighted_subscore_full_score(self):
+        """_compute_weighted_subscore returns 100.0 when all domains score 5."""
+        scores = {d: 5 for d in _EU_AI_ACT_DOMAIN_MAP}
+        assert _compute_weighted_subscore(scores, _EU_AI_ACT_DOMAIN_MAP) == 100.0
 
     def test_overall_maturity_present(self):
         with patch.multiple("gateway.security.scanner_integration", **self._all_not_run_patches()):

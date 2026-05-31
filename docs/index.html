@@ -2461,6 +2461,7 @@ curl http://localhost:8642/health
     <h2>Standards alignment</h2>
     <p class="section-sub">Built for regulated and OT-adjacent environments from the start.</p>
 
+    <!-- COMPLIANCE_CARDS_START -->
     <div class="compliance-grid">
       <div class="compliance-card">
         <div class="standard">IEC 62443</div>
@@ -2483,16 +2484,57 @@ curl http://localhost:8642/health
         <div class="desc">LLM01 – LLM10 all addressed across the 7 defense layers</div>
       </div>
       <div class="compliance-card">
-        <div class="standard">NIST CSF</div>
-        <div class="level">All 5 functions</div>
-        <div class="desc">Identify, Protect, Detect, Respond, Recover — all mapped</div>
+        <div class="standard">NIST CSF 2.0</div>
+        <div class="level">All 6 functions</div>
+        <div class="desc">Govern, Identify, Protect, Detect, Respond, Recover — all mapped</div>
       </div>
       <div class="compliance-card">
         <div class="standard">CIS Docker</div>
         <div class="level">Benchmark 4.8</div>
         <div class="desc">Setuid/setgid bits stripped, non-root container user</div>
       </div>
+      <div class="compliance-card">
+        <div class="standard">CSA MAESTRO</div>
+        <div class="level">All 7 layers</div>
+        <div class="desc">L1 model integrity through L7 governance — mapped to AgentShroud's 7 defense layers</div>
+      </div>
+      <div class="compliance-card">
+        <div class="standard">OWASP Agentic AI</div>
+        <div class="level">ASI-01 – ASI-10</div>
+        <div class="desc">Prompt injection, tool abuse, memory poisoning, egress bypass — all addressed</div>
+      </div>
+      <div class="compliance-card">
+        <div class="standard">MITRE ATLAS</div>
+        <div class="level">Full coverage</div>
+        <div class="desc">ML adversarial techniques — PromptGuard, Trivy, Wazuh FIM, audit chain</div>
+      </div>
+      <div class="compliance-card">
+        <div class="standard">NIST AI RMF 1.0</div>
+        <div class="level">All 4 functions</div>
+        <div class="desc">Govern → RBAC/consent; Map → CVE registry; Measure → scorecard; Manage → approval queue</div>
+      </div>
+      <div class="compliance-card">
+        <div class="standard">NIST SP 800-190</div>
+        <div class="level">All 5 risk areas</div>
+        <div class="desc">Image signing, vulnerability scanning, config hardening, network policy, runtime monitoring</div>
+      </div>
+      <div class="compliance-card">
+        <div class="standard">DISA Container STIG</div>
+        <div class="level">CAT I + CAT II</div>
+        <div class="desc">Non-root user, no privileged mode, read-only root FS, resource limits enforced</div>
+      </div>
+      <div class="compliance-card">
+        <div class="standard">EU AI Act</div>
+        <div class="level">Partial coverage</div>
+        <div class="desc">Art 14 human oversight (ApprovalQueue), Art 13 transparency (AuditChain), Art 9 risk management (CVE registry)</div>
+      </div>
+      <div class="compliance-card">
+        <div class="standard">ISO/IEC 42001:2023</div>
+        <div class="level">Partial coverage</div>
+        <div class="desc">§6.1 risk controls, §8 operational controls (ToolACL, ApprovalQueue), §9 monitoring (scorecard)</div>
+      </div>
     </div>
+    <!-- COMPLIANCE_CARDS_END -->
   </div>
 </section>
 
