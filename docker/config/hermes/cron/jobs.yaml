@@ -75,3 +75,37 @@ jobs:
       Nightly memory consolidation for Hermes Agent. Summarize the day:
       active projects, pending tasks, decisions made by the owner, and key
       facts to maintain continuity. Store in memory/context. Silent operation.
+
+  - name: "AI Security Standards Tracker"
+    enabled: true
+    schedule: "0 9 * * 1"
+    timezone: "America/New_York"
+    notify: true
+    delivery:
+      channel: telegram
+    message: >
+      Search the web for AI security standard publications or updates from the
+      past 7 days. Prioritize: NIST AI Agent Standards Initiative, CSA MAESTRO
+      revisions, OWASP Agentic AI Top 10 (ASI) updates, EU AI Act delegated acts
+      or technical guidance, ISO 42001 amendments, MITRE ATLAS new techniques, and
+      Singapore MAS autonomous agent framework updates. For each finding, state
+      the standard name, what changed, and the specific AgentShroud control layer
+      (PromptGuard / EgressFilter / ToolACL / ApprovalQueue / AuditChain) that
+      addresses it, or note a gap if none does. Report via Telegram as concise
+      bullet points only. If nothing new this week, say so in one line.
+
+  - name: "Agentic AI CVE and Exploit Watch"
+    enabled: true
+    schedule: "0 10 * * 4"
+    timezone: "America/New_York"
+    notify: true
+    delivery:
+      channel: telegram
+    message: >
+      Search NVD, GitHub Security Advisories, and security research blogs for new
+      CVEs or proof-of-concept exploits targeting AI agent frameworks published in
+      the last 7 days. Flag anything that affects Hermes Agent (nousresearch),
+      OpenClaw, or the underlying dependencies they use. For each finding include:
+      CVE ID if assigned, affected component, CVSS score if available, and whether
+      AgentShroud's gateway already mitigates it (cite the specific module). Report
+      via Telegram as bullet points only. If nothing new this week, say so briefly.
