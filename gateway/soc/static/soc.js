@@ -606,6 +606,34 @@ async function _loadScorecard() {
   _renderScorecard(data);
 }
 
+function _renderComplianceBadges(data) {
+  const compliance = (data || {}).compliance || {};
+  // Map scorecard compliance keys to their HTML badge element IDs
+  const KEY_MAP = {
+    iec_62443:    'iec_62443',
+    nist_800_190: 'nist_800_190',
+    cis_docker:   'cis_docker',
+    owasp_agentic:'owasp_agentic',
+    mitre_atlas:  'mitre_atlas',
+    nist_ai_rmf:  'nist_ai_rmf',
+    csa_maestro:  'csa_maestro',
+    eu_ai_act:    'eu_ai_act',
+    iso_42001:    'iso_42001',
+    nist_csf:     'nist_csf',
+    disa_stig:    'disa_stig',
+  };
+  Object.entries(KEY_MAP).forEach(([key, apiKey]) => {
+    const el = document.getElementById(`compliance-badge-${key}`);
+    if (!el) return;
+    const entry = compliance[apiKey];
+    const pct = entry != null ? (typeof entry === 'object' ? (entry.sub_score_pct ?? null) : entry) : null;
+    if (pct === null || pct === undefined) { el.textContent = '--'; el.className = 'compliance-live-badge'; return; }
+    const cls = pct >= 80 ? 'badge-ok' : pct >= 50 ? 'badge-partial' : 'badge-open';
+    el.textContent = `${Math.round(pct)}%`;
+    el.className = `compliance-live-badge ${cls}`;
+  });
+}
+
 function _renderScorecard(data) {
   if (!data || !data.domains) {
     document.getElementById('scorecard-grid').innerHTML = '<div style="color:var(--text-muted);font-size:12px">Scorecard unavailable — run security scan to populate.</div>';
@@ -621,7 +649,8 @@ function _renderScorecard(data) {
     scoreEl.className   = `scorecard-overall-score score-${Math.round(overall)}`;
   }
   _setText('scorecard-level', `${level} Maturity`);
-  _setText('scorecard-desc', `${MATURITY_DESC[Math.round(overall)] || ''} — 12-domain IEC 62443 / NIST SP 800-190 / CIS Docker Benchmark assessment.`);
+  _setText('scorecard-desc', `${MATURITY_DESC[Math.round(overall)] || ''} — 33-domain assessment across 15 standards (Infrastructure D1–D21 + Agentic AI D22–D33).`);
+  _renderComplianceBadges(data);
 
   const grid = document.getElementById('scorecard-grid');
   if (!grid) return;
