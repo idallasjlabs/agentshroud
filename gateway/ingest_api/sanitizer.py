@@ -271,14 +271,18 @@ class PIISanitizer:
             patterns.append(
                 (
                     "US_SSN",
-                    re.compile(r"\b\d{3}-\d{2}-\d{4}\b"),  # XXX-XX-XXXX
+                    # Exclude matches preceded by an uppercase letter or another digit
+                    # (e.g. CVE-2024-12345 starts with "E-" which precedes the digit run).
+                    # Also exclude matches followed by a digit (prevents partial matches on
+                    # longer numeric sequences like CVE trailing digits).
+                    re.compile(r"(?<![A-Z\d])\b\d{3}-\d{2}-\d{4}\b(?!\d)"),  # XXX-XX-XXXX
                     "<US_SSN>",
                 )
             )
             patterns.append(
                 (
                     "US_SSN",
-                    re.compile(r"\b\d{3}\s\d{2}\s\d{4}\b"),  # XXX XX XXXX
+                    re.compile(r"(?<![A-Z\d])\b\d{3}\s\d{2}\s\d{4}\b(?!\d)"),  # XXX XX XXXX
                     "<US_SSN>",
                 )
             )

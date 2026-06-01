@@ -98,6 +98,7 @@ class WebProxyConfig:
             "gmail.googleapis.com",
             "*.github.com",
             "*.githubusercontent.com",
+            "hc-ping.com",  # Healthchecks.io dead-man's-switch (item 2)
         ]
     )
 

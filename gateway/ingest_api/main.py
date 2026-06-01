@@ -45,7 +45,9 @@ from ..proxy.mcp_config import MCPProxyConfig
 from ..proxy.mcp_proxy import MCPProxy, MCPToolCall, MCPToolResult
 from ..proxy.pipeline import SecurityPipeline
 from ..proxy.slack_proxy import SlackAPIProxy
+from ..proxy.collaborator_greeter import CollaboratorGreeter
 from ..proxy.telegram_proxy import TelegramAPIProxy
+from ..proxy.telegram_replay import UpdateReplayBuffer
 from ..proxy.web_config import WebProxyConfig
 from ..proxy.web_proxy import WebProxy
 from ..proxy.webhook_receiver import WebhookReceiver
@@ -4260,10 +4262,20 @@ async def llm_proxy_stats(auth: AuthRequired):
 # All bot Telegram traffic routes through this endpoint for security scanning.
 # Bot uses TELEGRAM_API_BASE_URL=http://gateway:8080/telegram-api
 
+_telegram_replay = UpdateReplayBuffer(
+    db_path="/data/gateway/telegram_replay.sqlite3",
+)
+_collab_greeter = CollaboratorGreeter(
+    state_path="/data/gateway/collaborator_greetings.json",
+    taglines_path="/app/branding/taglines.json",
+    logo_path="/app/branding/logos/png/logo.png",
+)
 _telegram_proxy = TelegramAPIProxy(
     pipeline=None,  # Will be set during lifespan
     middleware_manager=None,
     sanitizer=None,
+    replay_buffer=_telegram_replay,
+    greeter=_collab_greeter,
 )
 
 _slack_proxy = SlackAPIProxy(

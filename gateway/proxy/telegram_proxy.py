@@ -324,10 +324,13 @@ _KNOWN_COLLABORATOR_ALIASES: dict[str, str] = {
 class TelegramAPIProxy:
     """Proxies Telegram Bot API calls through the security pipeline."""
 
-    def __init__(self, pipeline=None, middleware_manager=None, sanitizer=None):
+    def __init__(self, pipeline=None, middleware_manager=None, sanitizer=None,
+                 replay_buffer=None, greeter=None):
         self.pipeline = pipeline
         self.middleware_manager = middleware_manager
         self.sanitizer = sanitizer
+        self._replay_buffer = replay_buffer  # UpdateReplayBuffer | None
+        self._collab_greeter = greeter       # CollaboratorGreeter | None
         self._stats = {
             "total_requests": 0,
             "messages_scanned": 0,
@@ -2904,6 +2907,33 @@ class TelegramAPIProxy:
                 logger.error(f"Telegram file download proxy error for {method}: {e}")
                 return {"ok": False, "error_code": 502, "description": str(e)}
 
+        # === REPLAY BUFFER — pre-flight check (getUpdates only) ===
+        # Best-effort: if the buffer has messages older than the 30s grace window,
+        # return them immediately so the bot gets them without waiting on Telegram.
+        # All replay calls are wrapped in try/except — must never break the hot path.
+        _replay_buf = self._replay_buffer
+        _replay_bot_id = self._active_bot_id()
+        if _replay_buf is not None and method == "getUpdates":
+            try:
+                if body:
+                    _req_params = json.loads(body.decode("utf-8", errors="replace"))
+                    _offset = _req_params.get("offset")
+                    if _offset:
+                        _replay_buf.mark_delivered(_replay_bot_id, int(_offset))
+            except Exception as _rpe:
+                logger.warning("Replay buffer offset-mark failed (non-fatal): %s", _rpe)
+            try:
+                _replays = _replay_buf.pull_undelivered(_replay_bot_id)
+                if _replays:
+                    logger.info(
+                        "Replay buffer: returning %d buffered updates for bot=%s",
+                        len(_replays), _replay_bot_id,
+                    )
+                    return {"ok": True, "result": _replays}
+                _replay_buf.cleanup_if_due()
+            except Exception as _rpe2:
+                logger.warning("Replay buffer pull failed (non-fatal): %s", _rpe2)
+
         try:
             response_data = await self._forward_to_telegram(url, body, content_type)
         except Exception as e:
@@ -2915,6 +2945,14 @@ class TelegramAPIProxy:
         if method == "getUpdates" and response_data.get("ok"):
             inbound_updates = response_data.get("result", [])
             inbound_total = len(inbound_updates) if isinstance(inbound_updates, list) else 0
+
+            # Replay buffer: record fresh updates before filtering (INSERT OR IGNORE is safe)
+            if _replay_buf is not None and inbound_total > 0:
+                try:
+                    _replay_buf.record_inbound(_replay_bot_id, inbound_updates)
+                except Exception as _rpe3:
+                    logger.warning("Replay buffer record failed (non-fatal): %s", _rpe3)
+
             response_data = await self._filter_inbound_updates(response_data)
             filtered_updates = response_data.get("result", [])
             inbound_forwarded = len(filtered_updates) if isinstance(filtered_updates, list) else 0
@@ -4440,6 +4478,24 @@ class TelegramAPIProxy:
                     )
             except Exception as _te:
                 logger.debug("Collaborator tracker error (non-fatal): %s", _te)
+
+            # ── Daily collaborator greeting (fire-and-forget) ─────────────────
+            # Sends the AgentShroud logo + personalised caption once per 24h per
+            # (bot, user) pair. Dispatched via create_task to stay off the hot path.
+            if (is_owner or is_collaborator) and self._collab_greeter is not None:
+                try:
+                    import asyncio as _asyncio
+                    _greeter_first_name = message.get("from", {}).get("first_name")
+                    _asyncio.create_task(
+                        self._collab_greeter.maybe_greet(
+                            bot_token=self._active_send_token(),
+                            bot_id=self._active_bot_id(),
+                            user_id=str(user_id),
+                            first_name=_greeter_first_name,
+                        )
+                    )
+                except Exception as _ge:
+                    logger.warning("collaborator_greeter dispatch failed: %s", _ge)
 
             # Register collaborator chat_id → user_id for outbound response attribution
             if is_collaborator and chat_id:

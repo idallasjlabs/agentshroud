@@ -109,3 +109,48 @@ jobs:
       CVE ID if assigned, affected component, CVSS score if available, and whether
       AgentShroud's gateway already mitigates it (cite the specific module). Report
       via Telegram as bullet points only. If nothing new this week, say so briefly.
+
+  - name: "Weekly Hermes Stability Report"
+    enabled: true
+    schedule: "0 9 * * 1"
+    timezone: "America/New_York"
+    notify: true
+    delivery:
+      channel: telegram
+    message: >
+      Read /opt/data/logs/gateway-exit-diag.log (last 7 days) and
+      /opt/data/.start-history. Compute: total restarts, crashes per day
+      (sparkline), longest stable window in hours, top 3 exit codes, and any
+      backoff pauses triggered. Format as "Hermes Weekly Stability — <date range>"
+      in under 200 words. Send via Telegram. If log files do not exist, report
+      that Hermes has been stable with no recorded exits this week.
+
+  - name: "Hermes Competitive Landscape Update (AM/PM)"
+    enabled: true
+    schedule: "0 6,15 * * *"
+    timezone: "America/New_York"
+    notify: false
+    delivery:
+      channel: local
+    message: >
+      Read /opt/data/workspace/competitive-analysis.md for research instructions.
+      Execute the full 4-section competitive intelligence report with zero
+      hallucinations — every claim verified against a live primary source with URL.
+      Save as /opt/data/workspace/reports/competitive-report-YYYY-MM-DD.md and
+      append a one-line summary to /opt/data/workspace/reports/trend-log.md.
+      Silence is correct if nothing new; hallucination is a critical failure.
+
+  - name: "Hermes Competitive Intelligence Email (AM/PM)"
+    enabled: true
+    schedule: "0 7,16 * * *"
+    timezone: "America/New_York"
+    notify: false
+    delivery:
+      channel: local
+    message: >
+      Read today's competitive-report-*.md from /opt/data/workspace/reports/.
+      Render as HTML with inline CSS only. If body would be empty, use
+      "No significant changes detected today." Send via
+      /usr/local/bin/agentshroud-email-send.sh with subject
+      "AgentShroud Hermes Competitive Intelligence — YYYY-MM-DD".
+      If the send fails, report the error via Telegram.

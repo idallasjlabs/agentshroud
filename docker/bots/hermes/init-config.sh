@@ -47,11 +47,29 @@ else
     echo "[hermes-init] cron/jobs.yaml already exists — skipping"
 fi
 
+# ── Workspace seeding — competitive-intel files ────────────────────────────
+# Seeds competitive-analysis.md and reports/ dir into /opt/data/workspace/
+# on first boot. Idempotent via separate stamp.
+_WS_STAMP="${DATA_DIR}/.hermes-workspace-seeded"
+if [ ! -f "${_WS_STAMP}" ]; then
+    mkdir -p "${DATA_DIR}/workspace/reports"
+    if [ ! -f "${DATA_DIR}/workspace/competitive-analysis.md" ]; then
+        cp "${DEFAULTS_DIR}/workspace/competitive-analysis.md" \
+           "${DATA_DIR}/workspace/competitive-analysis.md"
+        echo "[hermes-init] Seeded workspace/competitive-analysis.md"
+    fi
+    touch "${_WS_STAMP}"
+    echo "[hermes-init] Workspace seeded"
+else
+    echo "[hermes-init] Workspace already seeded — skipping"
+fi
+
 # ── Native cron jobs — seed on first boot ──────────────────────────────────
 # Uses `hermes cron create` (writes to Hermes's internal db) rather than
 # the YAML file, which is not read natively by hermes-agent.
 # Idempotent: stamp file prevents re-seeding on every restart.
-_CRON_STAMP="${DATA_DIR}/.hermes-cron-seeded"
+# v2: added Weekly Stability Report + Competitive Intel cron jobs.
+_CRON_STAMP="${DATA_DIR}/.hermes-cron-seeded-v2"
 if [ ! -f "${_CRON_STAMP}" ]; then
     echo "[hermes-init] Seeding native cron jobs..."
     hermes cron create \
@@ -88,6 +106,27 @@ if [ ! -f "${_CRON_STAMP}" ]; then
         "55 23 * * *" \
         "Nightly memory consolidation. Summarize today's active projects, pending tasks, decisions made, and key facts for continuity. Store in memory. Silent operation." \
         2>/dev/null && echo "[hermes-init] Created Daily Memory Journal job" || echo "[hermes-init] WARN: Daily Memory Journal job failed"
+
+    hermes cron create \
+        --name "Weekly Hermes Stability Report" \
+        --deliver telegram \
+        "0 9 * * 1" \
+        "Read /opt/data/logs/gateway-exit-diag.log (last 7 days entries) and /opt/data/.start-history (one epoch per line). Compute: total restarts this week, crashes per day as a sparkline (e.g. 0 0 2 0 1 0 3), longest stable window in hours, top 3 exit codes by frequency, any backoff pauses triggered (5-minute sleeps). Format as 'Hermes Weekly Stability — <date range>' in under 200 words. Send via Telegram. If log files do not exist, report that Hermes has been stable with no recorded exits this week." \
+        2>/dev/null && echo "[hermes-init] Created Weekly Stability Report job" || echo "[hermes-init] WARN: Weekly Stability Report job failed"
+
+    hermes cron create \
+        --name "Hermes Competitive Landscape Update (AM/PM)" \
+        --deliver local \
+        "0 6,15 * * *" \
+        "Read /opt/data/workspace/competitive-analysis.md for research instructions. Execute the full 4-section competitive intelligence report. CRITICAL RULES: zero hallucinations — every company, product, and statistic must be verified against a live primary source. Exclude anything unverified. Every claim requires a working URL. Research competitors of AgentShroud (autonomous agent security tools — NOT the agents themselves). Verify GitHub star counts from live pages. Save report as /opt/data/workspace/reports/competitive-report-$(date +%Y-%m-%d).md. Append one-line summary to /opt/data/workspace/reports/trend-log.md. Silence is correct if nothing new is found; hallucination is a critical failure." \
+        2>/dev/null && echo "[hermes-init] Created Competitive Landscape Update job" || echo "[hermes-init] WARN: Competitive Landscape Update job failed"
+
+    hermes cron create \
+        --name "Hermes Competitive Intelligence Email (AM/PM)" \
+        --deliver local \
+        "0 7,16 * * *" \
+        "Read the most recent competitive-report-*.md from /opt/data/workspace/reports/ (use today's date: $(date +%Y-%m-%d)). If no report for today exists, read /opt/data/workspace/competitive-analysis.md as context. Render the report as a clean HTML email using inline CSS only (no external stylesheets or images beyond the report content). If the report body would render as empty or contains only headers with no content, write body='No significant changes detected today.' instead. Then call: /usr/local/bin/agentshroud-email-send.sh --html --subject 'AgentShroud Hermes Competitive Intelligence — $(date +%Y-%m-%d)' --body '<your-rendered-html>'. Expect HTTP 200 from the gateway. If the send fails, report the error via Telegram instead." \
+        2>/dev/null && echo "[hermes-init] Created Competitive Intelligence Email job" || echo "[hermes-init] WARN: Competitive Intelligence Email job failed"
 
     touch "${_CRON_STAMP}"
     echo "[hermes-init] Cron jobs seeded"

@@ -52,6 +52,9 @@ fi
 # setup-secrets.sh behavioral assertions
 run_test "test_setup_secrets.sh" bash "$SMOKE_DIR/test_setup_secrets.sh"
 
+# OpenClaw + Hermes startup photo + collaborator greeter static assertions
+run_test "test_openclaw_photo.sh" bash "$SMOKE_DIR/test_openclaw_photo.sh"
+
 # Live boot test (gated by SMOKE_LIVE=1)
 run_test "test_bot_boot_live.sh" bash "$SMOKE_DIR/test_bot_boot_live.sh"
 
