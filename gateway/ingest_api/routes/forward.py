@@ -181,24 +181,31 @@ async def email_send(request: EmailSendRequest, req: Request, auth: AuthRequired
 
     now = datetime.now(timezone.utc).isoformat().replace("+00:00", "Z")
 
-    # PII scan on body
-    sanitizer = getattr(app_state, "sanitizer", None)
+    # Recipient allowlist check — run BEFORE PII scan.
+    # Owner-bound mail (allowlisted recipients) is trusted: the owner is allowed to see
+    # their own report content verbatim.  PII redaction on a competitive-intel / CVE report
+    # addressed to the operator would collapse the body into <PERSON>/<ORGANIZATION>/<US_SSN>
+    # tags (CVE-YYYY-NNNN matches the US_SSN regex) and produce an empty email.
+    # Non-allowlisted recipients still get the full Presidio+regex scrub before the
+    # approval queue, which is the correct trust boundary.
+    recipient_allowed = _is_email_recipient_allowed(request.to)
     pii_redacted = False
     sanitized_body = request.body
-    if sanitizer:
-        try:
-            scan = await sanitizer.sanitize(request.body)
-            sanitized_body = scan.sanitized_content
-            pii_redacted = len(scan.redactions) > 0
-            if pii_redacted:
-                logger.warning(
-                    "email-send: PII redacted from body (%d items)", len(scan.redactions)
-                )
-        except Exception as e:
-            logger.warning("email-send: PII scan failed (%s), proceeding with original body", e)
+    if not recipient_allowed:
+        sanitizer = getattr(app_state, "sanitizer", None)
+        if sanitizer:
+            try:
+                scan = await sanitizer.sanitize(request.body)
+                sanitized_body = scan.sanitized_content
+                pii_redacted = len(scan.redactions) > 0
+                if pii_redacted:
+                    logger.warning(
+                        "email-send: PII redacted from body (%d items)", len(scan.redactions)
+                    )
+            except Exception as e:
+                logger.warning("email-send: PII scan failed (%s), proceeding with original body", e)
 
-    # Recipient allowlist check
-    if not _is_email_recipient_allowed(request.to):
+    if not recipient_allowed:
         # Unknown recipient → queue for approval
         approval_queue = getattr(app_state, "approval_queue", None)
         if approval_queue:
