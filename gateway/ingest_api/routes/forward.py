@@ -203,9 +203,7 @@ async def email_send(request: EmailSendRequest, req: Request, auth: AuthRequired
                         "email-send: PII redacted from body (%d items)", len(scan.redactions)
                     )
             except Exception as e:
-                logger.warning(
-                    "email-send: PII scan failed (%s), proceeding with original body", e
-                )
+                logger.warning("email-send: PII scan failed (%s), proceeding with original body", e)
 
     if not recipient_allowed:
         # Unknown recipient → queue for approval

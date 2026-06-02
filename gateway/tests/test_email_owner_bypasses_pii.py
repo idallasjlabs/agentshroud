@@ -124,9 +124,7 @@ class TestOwnerEmailBypassesPii:
         mock_queue = MagicMock()
         mock_queue.submit = AsyncMock(return_value=mock_item)
 
-        with (
-            patch("gateway.ingest_api.routes.forward.app_state") as mock_state,
-        ):
+        with (patch("gateway.ingest_api.routes.forward.app_state") as mock_state,):
             mock_state.sanitizer = mock_sanitizer
             mock_state.approval_queue = mock_queue
             resp = client.post(

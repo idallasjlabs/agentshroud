@@ -1,5 +1,6 @@
 # Copyright © 2026 Isaiah Dallas Jefferson, Jr. AgentShroud™. All rights reserved.
 """Tests for UpdateReplayBuffer (gateway/proxy/telegram_replay.py)."""
+
 from __future__ import annotations
 
 import json
@@ -25,6 +26,7 @@ def _update(update_id: int, text: str = "hi") -> dict:
 
 
 # ── core CRUD ─────────────────────────────────────────────────────────────────
+
 
 def test_record_then_pull_returns_undelivered(buf):
     updates = [_update(1), _update(2)]
@@ -95,6 +97,7 @@ def test_duplicate_record_is_ignored(buf):
 
 # ── fault tolerance ────────────────────────────────────────────────────────────
 
+
 def test_sqlite_failure_does_not_raise(tmp_path):
     bad_buf = UpdateReplayBuffer(db_path="/nonexistent/path/replay.sqlite3")
     # All methods must silently noop when DB is unavailable
@@ -164,10 +167,12 @@ def test_cleanup_db_error_swallowed(buf):
 
 def _cleanup_call_count_for_next_cleanup(buf):
     from gateway.proxy.telegram_replay import _CLEANUP_EVERY
+
     return _CLEANUP_EVERY - 1
 
 
 # ── exception handlers on live-but-failing DB connections ────────────────────
+
 
 def test_record_inbound_executemany_exception_swallowed(buf):
     """Exception during executemany (valid conn, SQL error) must be swallowed."""

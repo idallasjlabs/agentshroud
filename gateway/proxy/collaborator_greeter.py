@@ -12,6 +12,7 @@ Dispatched fire-and-forget via asyncio.create_task from telegram_proxy.py
 so it never blocks the proxy hot-path (<0.5 ms baseline unaffected).
 All I/O wrapped in try/except — must never raise.
 """
+
 from __future__ import annotations
 
 import json
@@ -103,9 +104,7 @@ class CollaboratorGreeter:
                 self._persist_state()
                 logger.info("Greeter: sent greeting to %s via bot=%s", user_id, bot_id)
                 return True
-            logger.warning(
-                "Greeter sendPhoto failed: %s %s", resp.status_code, resp.text[:200]
-            )
+            logger.warning("Greeter sendPhoto failed: %s %s", resp.status_code, resp.text[:200])
             return False
         except Exception as exc:
             logger.warning("Greeter.maybe_greet error: %s", exc)
@@ -121,7 +120,9 @@ class CollaboratorGreeter:
             if isinstance(data, list) and data:
                 return [str(t) for t in data if t]
         except Exception as exc:
-            logger.warning("Greeter: could not load taglines from %s (%s) — using default", path, exc)
+            logger.warning(
+                "Greeter: could not load taglines from %s (%s) — using default", path, exc
+            )
         return [_DEFAULT_TAGLINE]
 
     @staticmethod

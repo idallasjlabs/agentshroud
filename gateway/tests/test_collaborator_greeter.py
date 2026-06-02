@@ -1,5 +1,6 @@
 # Copyright © 2026 Isaiah Dallas Jefferson, Jr. AgentShroud™. All rights reserved.
 """Tests for CollaboratorGreeter (gateway/proxy/collaborator_greeter.py)."""
+
 from __future__ import annotations
 
 import asyncio
@@ -14,8 +15,8 @@ import pytest_asyncio
 
 from gateway.proxy.collaborator_greeter import CollaboratorGreeter, _CAPTION_MAX
 
-
 # ── helpers ────────────────────────────────────────────────────────────────────
+
 
 def _make_greeter(tmp_path, taglines=None, mock_client=None, cooldown=86400):
     taglines_path = tmp_path / "taglines.json"
@@ -53,6 +54,7 @@ def _err_response(status=500):
 
 
 # ── happy path ─────────────────────────────────────────────────────────────────
+
 
 @pytest.mark.asyncio
 async def test_first_call_sends_greeting_and_persists_state(tmp_path):
@@ -111,9 +113,7 @@ async def test_random_tagline_pulled_from_file(tmp_path):
     g = _make_greeter(tmp_path, taglines=taglines, mock_client=mock_client)
 
     with unittest.mock.patch("random.choice", return_value="Second tagline.") as mc:
-        await g.maybe_greet(
-            bot_token="TOKEN", bot_id="hermes", user_id="111", first_name="Test"
-        )
+        await g.maybe_greet(bot_token="TOKEN", bot_id="hermes", user_id="111", first_name="Test")
         mc.assert_called_once_with(taglines)
 
     call_kwargs = mock_client.post.call_args
@@ -143,9 +143,7 @@ async def test_first_name_none_uses_there_fallback(tmp_path):
     mock_client.post.return_value = _ok_response()
     g = _make_greeter(tmp_path, mock_client=mock_client)
 
-    await g.maybe_greet(
-        bot_token="TOKEN", bot_id="hermes", user_id="222", first_name=None
-    )
+    await g.maybe_greet(bot_token="TOKEN", bot_id="hermes", user_id="222", first_name=None)
 
     files = mock_client.post.call_args.kwargs.get("files") or {}
     caption = files.get("caption", (None, ""))[1]
@@ -178,9 +176,7 @@ async def test_bot_isolation(tmp_path):
 
     # Immediately greet on openclaw — independent cooldown, should send
     mock_client.post.return_value = _ok_response()
-    result = await g.maybe_greet(
-        bot_token="T2", bot_id="openclaw", user_id="999", first_name="X"
-    )
+    result = await g.maybe_greet(bot_token="T2", bot_id="openclaw", user_id="999", first_name="X")
     assert result is True
     assert "openclaw:999" in g._state
 
@@ -205,9 +201,7 @@ async def test_state_file_corruption_recovers(tmp_path):
     )
     # Greeter should have recovered with empty state
     assert g._state == {}
-    result = await g.maybe_greet(
-        bot_token="T", bot_id="hermes", user_id="1", first_name="Y"
-    )
+    result = await g.maybe_greet(bot_token="T", bot_id="hermes", user_id="1", first_name="Y")
     assert result is True
 
 
@@ -239,9 +233,7 @@ async def test_missing_logo_returns_false(tmp_path):
         logo_path="/nonexistent/logo.png",
         http_client=mock_client,
     )
-    result = await g.maybe_greet(
-        bot_token="T", bot_id="hermes", user_id="1", first_name="Test"
-    )
+    result = await g.maybe_greet(bot_token="T", bot_id="hermes", user_id="1", first_name="Test")
     assert result is False
     mock_client.post.assert_not_called()
 
@@ -252,9 +244,7 @@ async def test_exception_in_maybe_greet_returns_false(tmp_path):
     mock_client = unittest.mock.AsyncMock(spec=httpx.AsyncClient)
     mock_client.post.side_effect = RuntimeError("network borked")
     g = _make_greeter(tmp_path, mock_client=mock_client)
-    result = await g.maybe_greet(
-        bot_token="T", bot_id="hermes", user_id="500", first_name="Z"
-    )
+    result = await g.maybe_greet(bot_token="T", bot_id="hermes", user_id="500", first_name="Z")
     assert result is False
 
 
@@ -275,7 +265,7 @@ def test_load_taglines_with_non_list_json_falls_back(tmp_path):
 def test_load_state_non_dict_json_returns_empty(tmp_path):
     """_load_state returns {} when state file is a JSON list (not a dict)."""
     state_path = tmp_path / "state.json"
-    state_path.write_text('[1, 2, 3]')  # valid JSON but not a dict
+    state_path.write_text("[1, 2, 3]")  # valid JSON but not a dict
     logo_path = tmp_path / "logo.png"
     logo_path.write_bytes(b"\x89PNG")
     taglines_path = tmp_path / "t.json"

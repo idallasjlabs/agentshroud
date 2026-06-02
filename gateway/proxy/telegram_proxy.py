@@ -324,13 +324,19 @@ _KNOWN_COLLABORATOR_ALIASES: dict[str, str] = {
 class TelegramAPIProxy:
     """Proxies Telegram Bot API calls through the security pipeline."""
 
-    def __init__(self, pipeline=None, middleware_manager=None, sanitizer=None,
-                 replay_buffer=None, greeter=None):
+    def __init__(
+        self,
+        pipeline=None,
+        middleware_manager=None,
+        sanitizer=None,
+        replay_buffer=None,
+        greeter=None,
+    ):
         self.pipeline = pipeline
         self.middleware_manager = middleware_manager
         self.sanitizer = sanitizer
         self._replay_buffer = replay_buffer  # UpdateReplayBuffer | None
-        self._collab_greeter = greeter       # CollaboratorGreeter | None
+        self._collab_greeter = greeter  # CollaboratorGreeter | None
         self._stats = {
             "total_requests": 0,
             "messages_scanned": 0,
@@ -2927,7 +2933,8 @@ class TelegramAPIProxy:
                 if _replays:
                     logger.info(
                         "Replay buffer: returning %d buffered updates for bot=%s",
-                        len(_replays), _replay_bot_id,
+                        len(_replays),
+                        _replay_bot_id,
                     )
                     return {"ok": True, "result": _replays}
                 _replay_buf.cleanup_if_due()
@@ -4485,6 +4492,7 @@ class TelegramAPIProxy:
             if (is_owner or is_collaborator) and self._collab_greeter is not None:
                 try:
                     import asyncio as _asyncio
+
                     _greeter_first_name = message.get("from", {}).get("first_name")
                     _asyncio.create_task(
                         self._collab_greeter.maybe_greet(

@@ -8,6 +8,7 @@ Records every getUpdates response so that crash-recovered bots can receive
 messages that arrived while they were offline. Best-effort: all DB calls are
 wrapped in try/except to guarantee the proxy hot-path never breaks.
 """
+
 from __future__ import annotations
 
 import json

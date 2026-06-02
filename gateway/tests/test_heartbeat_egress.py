@@ -4,6 +4,7 @@
 Without this CI gate, every Hermes heartbeat ping would silently 403 and the
 dead-man's-switch would fire permanently.
 """
+
 from gateway.proxy.web_config import WebProxyConfig
 
 
