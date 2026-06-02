@@ -40,12 +40,12 @@ from starlette.responses import RedirectResponse
 from gateway import __version__
 from gateway.security.session_manager import UserSessionManager
 
+from ..proxy.collaborator_greeter import CollaboratorGreeter
 from ..proxy.http_proxy import ALLOWED_DOMAINS, HTTPConnectProxy
 from ..proxy.mcp_config import MCPProxyConfig
 from ..proxy.mcp_proxy import MCPProxy, MCPToolCall, MCPToolResult
 from ..proxy.pipeline import SecurityPipeline
 from ..proxy.slack_proxy import SlackAPIProxy
-from ..proxy.collaborator_greeter import CollaboratorGreeter
 from ..proxy.telegram_proxy import TelegramAPIProxy
 from ..proxy.telegram_replay import UpdateReplayBuffer
 from ..proxy.web_config import WebProxyConfig
