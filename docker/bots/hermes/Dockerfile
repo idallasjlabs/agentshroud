@@ -67,7 +67,9 @@ RUN chmod +x /usr/local/bin/start-hermes.sh /usr/local/bin/init-hermes-config.sh
              /etc/s6-overlay/s6-rc.d/agentshroud-crashwatch/run \
              /etc/s6-overlay/s6-rc.d/agentshroud-heartbeat/run \
  && mkdir -p /app/config-defaults \
- && chown -R 10000:10000 /app/config-defaults
+ && chown -R 10000:10000 /app/config-defaults \
+ && touch /etc/s6-overlay/s6-rc.d/user/contents.d/agentshroud-crashwatch \
+ && touch /etc/s6-overlay/s6-rc.d/user/contents.d/agentshroud-heartbeat
 
 # Port 9119: Hermes dashboard (served by s6 dashboard service when HERMES_DASHBOARD=1)
 # Port 8642: OpenAI-compatible API server (enabled, requires API_SERVER_KEY)

@@ -4263,10 +4263,10 @@ async def llm_proxy_stats(auth: AuthRequired):
 # Bot uses TELEGRAM_API_BASE_URL=http://gateway:8080/telegram-api
 
 _telegram_replay = UpdateReplayBuffer(
-    db_path="/data/gateway/telegram_replay.sqlite3",
+    db_path="/app/data/telegram_replay.sqlite3",
 )
 _collab_greeter = CollaboratorGreeter(
-    state_path="/data/gateway/collaborator_greetings.json",
+    state_path="/app/data/collaborator_greetings.json",
     taglines_path="/app/branding/taglines.json",
     logo_path="/app/branding/logos/png/logo.png",
 )

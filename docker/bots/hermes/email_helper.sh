@@ -1,4 +1,4 @@
-#!/command/with-contenv sh
+#!/bin/sh
 # Copyright © 2026 Isaiah Dallas Jefferson, Jr. AgentShroud™. All rights reserved.
 # AgentShroud™ is a trademark of Isaiah Dallas Jefferson, Jr. (USPTO Serial No. 99728633)
 # Patent Pending — U.S. Provisional Application No. 64/018,744
@@ -14,6 +14,15 @@
 # Exit codes:
 #   0 — gateway accepted (2xx)
 #   1 — gateway rejected (non-2xx) or network error
+
+# Load s6 container environment (works in both cron/s6 context and docker exec)
+if [ -d /run/s6/container_environment ]; then
+    set -a
+    for _f in /run/s6/container_environment/*; do
+        [ -f "$_f" ] && eval "$(basename "$_f")=$(cat "$_f" 2>/dev/null)" 2>/dev/null || true
+    done
+    set +a
+fi
 
 set -eu
 

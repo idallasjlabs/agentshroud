@@ -340,6 +340,7 @@ services:
       - hermes_api_key
       - github_pat
       - hermes_healthchecks_url
+      - gateway_password
     environment:
       HTTP_PROXY: http://gateway:8181
       HTTPS_PROXY: http://gateway:8181

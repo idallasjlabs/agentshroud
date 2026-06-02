@@ -12,6 +12,7 @@ from __future__ import annotations
 
 import json
 import logging
+import os
 import sqlite3
 import time
 from typing import Any
@@ -50,6 +51,7 @@ class UpdateReplayBuffer:
 
     def _init_db(self) -> None:
         try:
+            os.makedirs(os.path.dirname(self._db_path), exist_ok=True)
             conn = sqlite3.connect(self._db_path, check_same_thread=False)
             conn.execute("PRAGMA journal_mode=WAL")
             conn.execute("PRAGMA synchronous=NORMAL")

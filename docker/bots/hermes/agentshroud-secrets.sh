@@ -31,6 +31,9 @@ inject() {
 # Hermes Telegram bot token (separate from OpenClaw's token)
 inject TELEGRAM_BOT_TOKEN   /run/secrets/hermes_telegram_bot_token
 
+# Gateway auth token — needed by email_helper.sh to call /email/send-owner
+inject GATEWAY_AUTH_TOKEN   /run/secrets/gateway_password
+
 # Slack integration (optional — socket mode)
 inject SLACK_BOT_TOKEN      /run/secrets/slack_bot_token_hermes
 inject SLACK_APP_TOKEN      /run/secrets/slack_app_token_hermes
