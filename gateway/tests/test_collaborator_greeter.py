@@ -3,7 +3,6 @@
 
 from __future__ import annotations
 
-import asyncio
 import json
 import time
 import unittest.mock
@@ -11,9 +10,8 @@ from pathlib import Path
 
 import httpx
 import pytest
-import pytest_asyncio
 
-from gateway.proxy.collaborator_greeter import CollaboratorGreeter, _CAPTION_MAX
+from gateway.proxy.collaborator_greeter import _CAPTION_MAX, CollaboratorGreeter
 
 # ── helpers ────────────────────────────────────────────────────────────────────
 
@@ -211,7 +209,7 @@ def test_caption_length_clamped(tmp_path):
     logo_path.write_bytes(b"\x89PNG")
     taglines_path = tmp_path / "t.json"
     taglines_path.write_text(json.dumps([very_long_tagline]))
-    g = CollaboratorGreeter(
+    CollaboratorGreeter(
         state_path=str(tmp_path / "s.json"),
         taglines_path=str(taglines_path),
         logo_path=str(logo_path),
