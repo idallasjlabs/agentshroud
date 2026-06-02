@@ -10,6 +10,7 @@ import asyncio
 import io
 import json
 import time
+import unittest.mock
 import urllib.error
 import urllib.parse
 import urllib.request
@@ -4316,3 +4317,63 @@ class TestParseModeStrippedAfterPIIRedaction:
         assert (
             result_data.get("parse_mode", "") != "HTML"
         ), "parse_mode=HTML must be stripped when pipeline produces PII placeholders"
+
+
+class TestForwardToTelegramTimeouts:
+    """Tests that _forward_to_telegram uses correct urlopen timeouts.
+
+    Regression guard for the ThreadPoolExecutor starvation bug: long-poll
+    getUpdates calls held all 6 default asyncio executor workers for ~30s,
+    starving sendMessage/sendPhoto calls which then hit the 50s wait_for
+    ceiling and returned synthetic 504s.  Fix: non-long-poll urlopen timeout
+    dropped from 45s → 15s (fail-fast frees the thread immediately).
+    """
+
+    _URL_BASE = "https://api.telegram.org/botTOKEN"
+
+    @staticmethod
+    def _fake_urlopen_factory():
+        """Return a urlopen mock that records the timeout kwarg and succeeds."""
+        captured = {}
+
+        def _fake(req, timeout=None, context=None):
+            captured["timeout"] = timeout
+            result = SimpleNamespace()
+            result.read = lambda: b'{"ok": true, "result": []}'
+            return result
+
+        return _fake, captured
+
+    @pytest.mark.asyncio
+    async def test_non_long_poll_timeout_is_15s(self):
+        """sendMessage and similar calls must use a 15s urlopen timeout."""
+        proxy = TelegramAPIProxy(sanitizer=_make_sanitizer())
+        fake, captured = self._fake_urlopen_factory()
+
+        with unittest.mock.patch("urllib.request.urlopen", side_effect=fake):
+            await proxy._forward_to_telegram(
+                f"{self._URL_BASE}/sendMessage",
+                b'{"chat_id": "1", "text": "hi"}',
+                "application/json",
+            )
+
+        assert (
+            captured["timeout"] == 15
+        ), f"Non-long-poll urlopen timeout must be 15s, got {captured['timeout']}s"
+
+    @pytest.mark.asyncio
+    async def test_long_poll_timeout_remains_60s(self):
+        """getUpdates must use a 60s urlopen timeout so the long-poll is not aborted early."""
+        proxy = TelegramAPIProxy(sanitizer=_make_sanitizer())
+        fake, captured = self._fake_urlopen_factory()
+
+        with unittest.mock.patch("urllib.request.urlopen", side_effect=fake):
+            await proxy._forward_to_telegram(
+                f"{self._URL_BASE}/getUpdates",
+                b'{"offset": 0, "timeout": 30}',
+                "application/json",
+            )
+
+        assert (
+            captured["timeout"] == 60
+        ), f"Long-poll urlopen timeout must be 60s, got {captured['timeout']}s"
