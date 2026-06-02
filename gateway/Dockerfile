@@ -354,10 +354,11 @@ RUN mkdir -p /var/log/security && chown agentshroud:agentshroud /var/log/securit
 RUN python3 -m spacy download en_core_web_sm >/tmp/spacy-download.log 2>&1 \
     || echo "spaCy model download skipped (offline) — regex fallback enabled"
 
-# Branding assets — SOC header logo (PNG + SVG) and favicons
+# Branding assets — SOC header logo (PNG + SVG), favicons, and taglines for collaborator greeting
 COPY branding/logos/png/ /app/branding/logos/png/
 COPY branding/logos/svg/logo.svg /app/branding/logos/png/logo.svg
 COPY branding/favicons/ /app/branding/favicons/
+COPY branding/taglines.json /app/branding/taglines.json
 # scripts used by test suite
 COPY scripts/generate-cve-page.py /app/scripts/generate-cve-page.py
 

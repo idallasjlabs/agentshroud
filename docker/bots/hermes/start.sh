@@ -24,6 +24,46 @@ export XDG_STATE_HOME=/opt/data/.local/state
 export XDG_DATA_HOME=/opt/data/.local/share
 export XDG_CACHE_HOME=/opt/data/.cache
 
+# ---------------------------------------------------------------------------
+# Crash backoff escalation (Item 4)
+# Track every start in a rolling 10-minute window.  More than 5 restarts
+# in 600 seconds → pause 5 minutes before proceeding.  This prevents runaway
+# Telegram rate-limiting during asyncio crash-loops and gives the gateway's
+# getUpdates long-poll lock time to expire naturally on Telegram's servers.
+# ---------------------------------------------------------------------------
+_HISTORY_FILE="/opt/data/.start-history"
+touch "${_HISTORY_FILE}" 2>/dev/null || true
+
+_now_epoch="$(date +%s)"
+_window_start=$(( _now_epoch - 600 ))
+
+# Append current epoch and prune entries older than 600s (atomic via temp file)
+{
+    printf '%s\n' "${_now_epoch}"
+    while IFS= read -r _ts; do
+        [ "${_ts:-0}" -gt "${_window_start}" ] 2>/dev/null && printf '%s\n' "${_ts}"
+    done < "${_HISTORY_FILE}"
+} > "${_HISTORY_FILE}.tmp" && mv "${_HISTORY_FILE}.tmp" "${_HISTORY_FILE}" 2>/dev/null || true
+
+_recent_starts="$(wc -l < "${_HISTORY_FILE}" 2>/dev/null || printf '0')"
+
+if [ "${_recent_starts}" -gt 5 ]; then
+    echo "[hermes-startup] BACKOFF: ${_recent_starts} starts in last 600s — pausing 300s to avoid Telegram rate-limit"
+    # Send Telegram notice before sleeping so Isaiah knows why Hermes goes quiet.
+    # (Telegram helpers not yet defined here; use raw curl with the known base URL.)
+    _bt="${TELEGRAM_BOT_TOKEN:-}"
+    _gw="${GATEWAY_OP_PROXY_URL:-http://gateway:8080}/telegram-api"
+    if [ -n "${_bt}" ]; then
+        curl -sf --max-time 10 -X POST "${_gw}/bot${_bt}/sendMessage" \
+            -H "Content-Type: application/json" \
+            -H "Authorization: Bearer ${GATEWAY_AUTH_TOKEN:-}" \
+            -H "X-AgentShroud-System: 1" \
+            -d "{\"chat_id\":\"8096968754\",\"text\":\"⏸ Hermes backoff: ${_recent_starts} restarts in 10min — pausing 5min to avoid Telegram rate-limit\"}" \
+            >/dev/null 2>&1 || true
+    fi
+    sleep 300
+fi
+
 # Verify Telegram token was injected (non-fatal — gateway warns if absent)
 if [ -n "${TELEGRAM_BOT_TOKEN:-}" ]; then
     echo "[hermes-startup] Telegram bot token present (${#TELEGRAM_BOT_TOKEN} chars)"
@@ -107,16 +147,76 @@ _telegram_get_me_ready() {
 _STARTUP_NOTICE_STAMP="/tmp/.hermes-startup-notify-sent"
 _STARTUP_NOTICE_COOLDOWN_SECONDS=60
 
-# Forward TERM/INT to hermes process, send shutdown notification.
+# ---------------------------------------------------------------------------
+# Graceful Telegram session handoff (Item 3)
+# Call `close` on the Telegram Bot API before killing the daemon.  This is the
+# documented method for releasing a long-poll session before instance migration
+# (https://core.telegram.org/bots/api#close).  Without it, the restarted
+# instance hits "Conflict: terminated by other getUpdates" → 20s × 5 backoff.
+# As belt-and-suspenders we also drain the in-flight poll via getUpdates
+# offset=-1&timeout=0 (no-op if already expired, harmless if not).
+# ---------------------------------------------------------------------------
+_release_telegram_lock() {
+    local token
+    token="$(_telegram_bot_token)"
+    [ -z "$token" ] && return 0
+    curl -sf --max-time 5 -X POST \
+        "${_GATEWAY_TELEGRAM_BASE}/bot${token}/close" \
+        -H "Authorization: Bearer ${GATEWAY_AUTH_TOKEN:-}" \
+        -H "X-AgentShroud-System: 1" >/dev/null 2>&1 || true
+    # Drain in-flight getUpdates (idempotent — no-op if lock already released)
+    curl -sf --max-time 3 -X POST \
+        "${_GATEWAY_TELEGRAM_BASE}/bot${token}/getUpdates?offset=-1&timeout=0" \
+        -H "Authorization: Bearer ${GATEWAY_AUTH_TOKEN:-}" \
+        -H "X-AgentShroud-System: 1" >/dev/null 2>&1 || true
+}
+
+# ---------------------------------------------------------------------------
+# Email helper (Item 8)
+# Send an email to the owner via the gateway /email/send-owner endpoint.
+# No SMTP credentials, no 1Password CLI, no nodemailer needed inside Hermes —
+# the gateway already holds the Gmail credentials and does the actual send.
+# Usage: _email_owner "Subject line" "Body text" [--html]
+# ---------------------------------------------------------------------------
+_email_owner() {
+    local subject="$1"
+    local body="$2"
+    local is_html="${3:-false}"
+    [ "${is_html}" = "--html" ] && is_html="true"
+    local gw_url="${GATEWAY_OP_PROXY_URL:-http://gateway:8080}"
+    # Escape double-quotes in subject and body for JSON embedding
+    local subj_esc body_esc
+    subj_esc="$(printf '%s' "${subject}" | sed 's/"/\\"/g')"
+    body_esc="$(printf '%s' "${body}" | sed 's/"/\\"/g')"
+    curl -sf --max-time 30 -X POST "${gw_url}/email/send-owner" \
+        -H "Content-Type: application/json" \
+        -H "Authorization: Bearer ${GATEWAY_AUTH_TOKEN:-}" \
+        -H "X-AgentShroud-System: 1" \
+        -d "{\"subject\":\"${subj_esc}\",\"body\":\"${body_esc}\",\"is_html\":${is_html}}" \
+        >/dev/null 2>&1
+}
+
+# Forward TERM/INT to hermes process.
+# Order: release Telegram lock first (removes getUpdates conflict on restart),
+# then notify Isaiah, then SIGTERM the daemon (graceful asyncio shutdown),
+# wait up to 8s for cleanup, SIGKILL if still alive.
 # _HERMES_PID is set after the background launch below.
 trap '
     echo "[hermes-startup] Shutdown signal received"
-    echo "[hermes-startup] Sending Telegram shutdown notification..."
+    _release_telegram_lock \
+        && echo "[hermes-startup] ✓ Released Telegram long-poll lock" \
+        || echo "[hermes-startup] ⚠ Could not release Telegram lock"
     _telegram_send "🔴 Hermes shutting down" \
         && echo "[hermes-startup] ✓ Sent Telegram shutdown notification" \
         || echo "[hermes-startup] ⚠ Could not send Telegram shutdown notification"
     if [ -n "${_HERMES_PID:-}" ]; then
-        kill "${_HERMES_PID}" 2>/dev/null || true
+        kill -TERM "${_HERMES_PID}" 2>/dev/null || true
+        _w=0
+        while [ "${_w}" -lt 8 ]; do
+            kill -0 "${_HERMES_PID}" 2>/dev/null || break
+            sleep 1; _w=$((_w + 1))
+        done
+        kill -KILL "${_HERMES_PID}" 2>/dev/null || true
     fi
 ' TERM INT
 

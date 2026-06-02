@@ -339,6 +339,8 @@ services:
       - anthropic_oauth_token
       - hermes_api_key
       - github_pat
+      - hermes_healthchecks_url
+      - gateway_password
     environment:
       HTTP_PROXY: http://gateway:8181
       HTTPS_PROXY: http://gateway:8181
@@ -430,6 +432,8 @@ secrets:
     file: ./secrets/hermes_api_key.txt
   github_pat:
     file: ./secrets/github_pat.txt
+  hermes_healthchecks_url:
+    file: ./secrets/hermes_healthchecks_url.txt
 
 # ── Networks ───────────────────────────────────────────────────────────────────
 # Two networks: internal (internet access) and isolated (no internet)

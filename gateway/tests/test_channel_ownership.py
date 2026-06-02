@@ -181,14 +181,16 @@ class TestEmailSend:
         assert "sanitized_body" in data
         assert "pii_redacted" in data
 
-    def test_pii_in_body_is_redacted(self, client):
-        """PII in email body is flagged when sanitizer is active."""
-        mock_scan = MagicMock()
-        mock_scan.sanitized_content = "My SSN is [REDACTED]"
-        mock_scan.redactions = [MagicMock()]  # non-empty = redaction happened
+    def test_owner_body_not_redacted(self, client):
+        """Allowed (owner) recipient receives the body verbatim — PII scan is skipped.
 
+        The body may contain CVE IDs (CVE-2024-12345), company names, and dates,
+        all of which previously triggered Presidio/regex false-positives and produced
+        empty competitive-intel emails. Owner-bound mail bypasses the PII sanitizer
+        because the trust boundary is the allowlist, not the body content.
+        """
         mock_sanitizer = MagicMock()
-        mock_sanitizer.sanitize = AsyncMock(return_value=mock_scan)
+        mock_sanitizer.sanitize = AsyncMock()
 
         with (
             patch(
@@ -208,15 +210,49 @@ class TestEmailSend:
             resp = client.post(
                 "/email/send",
                 json={
-                    "to": "trusted@example.com",
-                    "subject": "Test",
-                    "body": "My SSN is 123-45-6789",
+                    "to": "idallasj@gmail.com",
+                    "subject": "Competitive Intel",
+                    "body": "CVE-2024-12345 affects OpenAI. Report date: 2026-05-26.",
                 },
             )
         assert resp.status_code == 200
         data = resp.json()
-        assert data["pii_redacted"] is True
-        assert "123-45-6789" not in data["sanitized_body"]
+        assert data["pii_redacted"] is False
+        mock_sanitizer.sanitize.assert_not_awaited()
+
+    def test_pii_redacted_for_unknown_recipient(self, client):
+        """PII in email body IS redacted before queuing for unknown recipients."""
+        mock_scan = MagicMock()
+        mock_scan.sanitized_content = "My SSN is <US_SSN>"
+        mock_scan.redactions = [MagicMock()]
+
+        mock_sanitizer = MagicMock()
+        mock_sanitizer.sanitize = AsyncMock(return_value=mock_scan)
+
+        mock_item = MagicMock()
+        mock_item.request_id = "approval-xyz"
+        mock_queue = MagicMock()
+        mock_queue.submit = AsyncMock(return_value=mock_item)
+
+        with (
+            patch(
+                "gateway.ingest_api.routes.forward._is_email_recipient_allowed", return_value=False
+            ),
+            patch("gateway.ingest_api.routes.forward.app_state") as mock_state,
+        ):
+            mock_state.sanitizer = mock_sanitizer
+            mock_state.approval_queue = mock_queue
+            resp = client.post(
+                "/email/send",
+                json={
+                    "to": "unknown@example.com",
+                    "subject": "Test",
+                    "body": "My SSN is 123-45-6789",
+                },
+            )
+        assert resp.status_code == 202
+        data = resp.json()
+        assert data["status"] == "queued"
         mock_sanitizer.sanitize.assert_awaited_once()
 
     def test_unknown_recipient_queued_for_approval(self, client):

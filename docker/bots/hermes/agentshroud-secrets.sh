@@ -31,6 +31,9 @@ inject() {
 # Hermes Telegram bot token (separate from OpenClaw's token)
 inject TELEGRAM_BOT_TOKEN   /run/secrets/hermes_telegram_bot_token
 
+# Gateway auth token — needed by email_helper.sh to call /email/send-owner
+inject GATEWAY_AUTH_TOKEN   /run/secrets/gateway_password
+
 # Slack integration (optional — socket mode)
 inject SLACK_BOT_TOKEN      /run/secrets/slack_bot_token_hermes
 inject SLACK_APP_TOKEN      /run/secrets/slack_app_token_hermes
@@ -43,6 +46,9 @@ inject ANTHROPIC_API_KEY    /run/secrets/anthropic_oauth_token
 
 # Hermes OpenAI-compatible API server key (gates port 8642)
 inject API_SERVER_KEY       /run/secrets/hermes_api_key
+
+# Healthchecks.io dead-man's-switch ping URL (optional — item 2)
+inject HERMES_HEALTHCHECKS_URL  /run/secrets/hermes_healthchecks_url
 
 # GitHub Personal Access Token (for GitHub MCP server — optional)
 inject GITHUB_TOKEN                 /run/secrets/github_pat
