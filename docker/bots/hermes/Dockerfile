@@ -75,10 +75,11 @@ RUN chmod +x /usr/local/bin/start-hermes.sh /usr/local/bin/init-hermes-config.sh
 # Port 8642: OpenAI-compatible API server (enabled, requires API_SERVER_KEY)
 EXPOSE 8642 9119
 
-# Healthcheck: probe the dashboard on 9119 (always up when HERMES_DASHBOARD=1).
+# Healthcheck: probe the OpenAI-compatible API /health endpoint on 8642.
+# v0.15.1 moved dashboard auth behind an auth gate; 9119 is no longer reliable.
 # start_period=120s allows s6 init + skill sync + gateway startup to complete.
 HEALTHCHECK --interval=30s --timeout=10s --start-period=120s --retries=3 \
-  CMD curl -fsS http://127.0.0.1:9119/ || exit 1
+  CMD curl -fsS http://127.0.0.1:8642/health || exit 1
 
 # Keep the image's own entrypoint (/init → main-wrapper.sh). CMD is passed as
 # args to main-wrapper.sh: if it's an executable it runs via s6-setuidgid hermes.
