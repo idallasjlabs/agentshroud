@@ -148,9 +148,19 @@ jobs:
     delivery:
       channel: local
     message: >
-      Read today's competitive-report-*.md from /opt/data/workspace/reports/.
-      Render as HTML with inline CSS only. If body would be empty, use
-      "No significant changes detected today." Send via
-      /usr/local/bin/agentshroud-email-send.sh with subject
-      "AgentShroud Hermes Competitive Intelligence — YYYY-MM-DD".
-      If the send fails, report the error via Telegram.
+      Read the most recent competitive-report-*.md from
+      /opt/data/workspace/reports/ (prefer today's date).
+      If no report exists, write body "No significant changes detected today."
+      Render the report as a clean HTML email with inline CSS only — no external
+      stylesheets or images. Style: white background #ffffff, body text #111111,
+      headings #111111 with a 1px #e0e0e0 bottom border, links #1a73e8,
+      monospace code in #f6f8fa boxes with 1px #d0d7de border.
+      Write the rendered HTML to /tmp/competitive-email.html.
+      Then send it using ALL THREE flags — this is mandatory, not optional.
+      EXACT command to run:
+      /usr/local/bin/agentshroud-email-send.sh
+      --html
+      --subject "AgentShroud Hermes Competitive Intelligence — $(date +%Y-%m-%d)"
+      --body "$(cat /tmp/competitive-email.html)"
+      Expect HTTP 200 from the gateway. If the send fails, report the full error
+      output via Telegram.
