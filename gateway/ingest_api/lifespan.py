@@ -784,6 +784,8 @@ async def lifespan(app: FastAPI):
     except Exception as e:
         logger.error(f"Failed to initialize CollaboratorActivityTracker: {e}")
         app_state.collaborator_tracker = None
+        # Surface the error via app_state so /status/detail can report tracker health.
+        app_state.collaborator_tracker_init_error = str(e)
 
     # NOTE: Gateway-side Slack Socket Mode listener removed.
     # Slack distributes Socket Mode events across all active connections for the same app.
