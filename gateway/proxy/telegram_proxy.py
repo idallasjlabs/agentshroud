@@ -206,6 +206,12 @@ _LOCAL_COLLABS_COMMANDS = {
     "/listcollabs",
     "listcollabs",
 }
+_LOCAL_ACTIVITY_COMMANDS = {
+    "/activity",
+    "activity",
+    "/recent",
+    "recent",
+}
 # V9-4F — Group + project commands
 _LOCAL_GROUPS_COMMANDS = {"/groups", "groups"}
 _LOCAL_GROUPINFO_COMMANDS = {"/groupinfo", "groupinfo"}
@@ -416,6 +422,11 @@ class TelegramAPIProxy:
         self._collaborator_chat_ids: dict[str, str] = {}
         # Map str(chat_id) → (correlation_id, timestamp) for inbound→outbound pairing
         self._last_inbound_corr: dict[str, tuple] = {}
+        # Coalescing throttle for owner activity mirrors: (uid, direction) → last_sent_ts
+        self._collab_mirror_last_sent: dict[tuple, float] = {}
+        self._collab_mirror_window = float(
+            os.environ.get("AGENTSHROUD_COLLAB_MIRROR_WINDOW_SECS", "60")
+        )
         self._pending_collaborator_request_cooldown_seconds = float(
             os.environ.get("AGENTSHROUD_COLLAB_REQUEST_COOLDOWN_SECONDS", "90.0")
         )
@@ -2528,11 +2539,14 @@ class TelegramAPIProxy:
         if not isinstance(text, str):
             return False
         normalized = normalize_input(text).lower()
+        # Canonical banner header from TelegramEgressNotifier (🌐 + "Egress Request").
+        # Requires both the emoji and the phrase to avoid false-positives on generic
+        # LLM responses that mention "risk:", "tool:", or "id:" in normal prose.
+        if "🌐" in text and "egress request" in normalized:
+            return True
+        # Inline-keyboard callback tokens — unique UUIDs, never appear in normal prose.
         return (
-            ("egress request" in normalized and "domain:" in normalized)
-            or ("risk:" in normalized and "tool:" in normalized and "id:" in normalized)
-            # Callback data tokens from inline keyboard (egress approval buttons)
-            or "egress_allow_always_" in normalized
+            "egress_allow_always_" in normalized
             or "egress_allow_once_" in normalized
             or "egress_allow_1h_" in normalized
             or "egress_allow_4h_" in normalized
@@ -2865,8 +2879,23 @@ class TelegramAPIProxy:
                             correlation_id=_out_corr_id,
                             bot_id=self._active_bot_id(),
                         )
+                    # Mirror outbound response to owner (coalesced)
+                    if _response_text:
+                        _collab_disp = self._resolve_display_name(_collab_uid)
+                        asyncio.create_task(
+                            self._mirror_to_owner_if_collaborator(
+                                direction="outbound",
+                                user_id=_collab_uid,
+                                username=_collab_disp,
+                                preview=_response_text[:200],
+                                bot_id=self._active_bot_id(),
+                            )
+                        )
             except Exception as _ote:
-                logger.debug("Outbound collab response tracking error (non-fatal): %s", _ote)
+                logger.warning("Outbound collab response tracking error: %s", _ote)
+                self._stats["activity_track_errors"] = (
+                    self._stats.get("activity_track_errors", 0) + 1
+                )
 
         # ── Group chat response gate ──────────────────────────────────────────
         # Suppress bot replies to group/supergroup chats where the last inbound
@@ -3287,14 +3316,6 @@ class TelegramAPIProxy:
                     and self._contains_internal_approval_banner(text)
                 ):
                     self._stats["outbound_filtered"] += 1
-                    _owner_id_str = str(getattr(self._rbac, "owner_user_id", "")).strip()
-                    if _owner_id_str:
-                        asyncio.create_task(
-                            self._send_owner_admin_notice(
-                                int(_owner_id_str),
-                                "🔔 *Egress Approval Triggered*\n\nA collaborator interaction generated an egress approval request. Check /pending to review.",
-                            )
-                        )
                     data[text_key] = _COLLABORATOR_EGRESS_NOTICE
                     return json.dumps(data).encode()
                 # Critical leakage (system paths, pairing codes, user-ID enrollment,
@@ -3784,14 +3805,6 @@ class TelegramAPIProxy:
                     and self._contains_internal_approval_banner(text)
                 ):
                     self._stats["outbound_filtered"] += 1
-                    _owner_id_str = str(getattr(self._rbac, "owner_user_id", "")).strip()
-                    if _owner_id_str:
-                        asyncio.create_task(
-                            self._send_owner_admin_notice(
-                                int(_owner_id_str),
-                                "🔔 *Egress Approval Triggered*\n\nA collaborator interaction generated an egress approval request. Check /pending to review.",
-                            )
-                        )
                     data[text_key] = _COLLABORATOR_EGRESS_NOTICE
                     return urllib.parse.urlencode(data).encode()
                 # Critical leakage — always block (no full_access bypass).
@@ -4521,7 +4534,31 @@ class TelegramAPIProxy:
                         bot_id=self._active_bot_id(),
                     )
             except Exception as _te:
-                logger.debug("Collaborator tracker error (non-fatal): %s", _te)
+                logger.warning("Collaborator tracker error: %s", _te)
+                self._stats["activity_track_errors"] = (
+                    self._stats.get("activity_track_errors", 0) + 1
+                )
+
+            # ── Owner mirror for non-owner inbound messages ───────────────────
+            if not is_owner and is_collaborator and text:
+                try:
+                    import asyncio as _asyncio_mirror
+
+                    _sender_inb = message.get("from", {})
+                    _uname_inb = _sender_inb.get("first_name") or (
+                        f"@{_sender_inb['username']}" if _sender_inb.get("username") else "unknown"
+                    )
+                    _asyncio_mirror.create_task(
+                        self._mirror_to_owner_if_collaborator(
+                            direction="inbound",
+                            user_id=str(user_id),
+                            username=_uname_inb,
+                            preview=text[:200],
+                            bot_id=self._active_bot_id(),
+                        )
+                    )
+                except Exception as _mir_err:
+                    logger.warning("Owner inbound mirror dispatch failed: %s", _mir_err)
 
             # ── Daily collaborator greeting (fire-and-forget) ─────────────────
             # Sends the AgentShroud logo + personalised caption once per 24h per
@@ -4718,6 +4755,9 @@ class TelegramAPIProxy:
                 elif is_owner and cmd_base in _LOCAL_COLLABS_COMMANDS:
                     local_handler = self._send_owner_collabs_notice
                     local_label = "collabs"
+                elif is_owner and cmd_base in _LOCAL_ACTIVITY_COMMANDS:
+                    local_handler = self._send_owner_activity_notice
+                    local_label = "activity"
 
                 # ── Group management (owner-only) ─────────────────────────────
                 elif is_owner and cmd_base in _LOCAL_LISTGROUPS_COMMANDS:
@@ -7152,6 +7192,87 @@ class TelegramAPIProxy:
         except Exception as e:
             logger.warning("Failed to send local whoami notice to chat %s: %s", chat_id, e)
 
+    async def _mirror_to_owner_if_collaborator(
+        self, direction: str, user_id: str, username: str, preview: str, bot_id: str
+    ) -> None:
+        """Send a rate-limited activity mirror to the owner chat for collaborator messages.
+
+        At most one mirror per (user_id, direction) per _collab_mirror_window seconds.
+        Skips silently if owner_user_id not set, bot token absent, or on any error.
+        """
+        try:
+            if not self._bot_token or not self._rbac:
+                return
+            _owner_id_str = str(getattr(self._rbac, "owner_user_id", "")).strip()
+            if not _owner_id_str:
+                return
+            import time as _t
+
+            _now = _t.time()
+            _key = (user_id, direction)
+            if _now - self._collab_mirror_last_sent.get(_key, 0) < self._collab_mirror_window:
+                return
+            self._collab_mirror_last_sent[_key] = _now
+            _arrow = "→" if direction == "inbound" else "←"
+            _dir_label = "said" if direction == "inbound" else "bot replied"
+            _msg = (
+                f"👤 *{username}* (`{user_id}`) {_arrow} `{bot_id}`\n"
+                f"_{_dir_label}_: {preview[:200]}"
+            )
+            await self._send_owner_admin_notice(int(_owner_id_str), _msg)
+        except Exception as _me:
+            logger.warning("Collaborator mirror to owner failed: %s", _me)
+
+    async def _send_owner_activity_notice(self, chat_id: int) -> None:
+        """Send owner a summary of recent collaborator activity (last hour)."""
+        try:
+            if not self._bot_token:
+                return
+            from gateway.ingest_api.state import app_state as _app_state
+
+            _tracker = getattr(_app_state, "collaborator_tracker", None)
+            if _tracker is None:
+                _init_err = getattr(_app_state, "collaborator_tracker_init_error", None)
+                _err_detail = f": {_init_err}" if _init_err else ""
+                await self._send_local_notice_with_fallback(
+                    chat_id,
+                    f"🛡️ Protected by AgentShroud\n⚠️ Activity tracker not initialized{_err_detail}\n\nCheck gateway logs for details.",
+                    collaborator_safe=False,
+                )
+                return
+            import time as _t
+
+            _since = _t.time() - 3600
+            try:
+                _entries = _tracker.get_activity(since=_since, limit=50)
+            except Exception as _re:
+                logger.warning("activity: tracker.get_activity failed: %s", _re)
+                _entries = []
+            if not _entries:
+                msg = "🛡️ Protected by AgentShroud\n*Collaborator Activity (last hour)*\n\n• No activity recorded."
+            else:
+                import datetime as _dt
+
+                lines = ["🛡️ Protected by AgentShroud\n*Collaborator Activity (last hour)*\n"]
+                for _e in _entries:
+                    _ts = float(_e.get("timestamp", 0))
+                    _when = _dt.datetime.fromtimestamp(_ts, tz=_dt.timezone.utc).strftime("%H:%M:%S")
+                    _uname = str(_e.get("username", "unknown"))
+                    _uid = str(_e.get("user_id", "?"))
+                    _dir = "→" if _e.get("direction") == "inbound" else "←"
+                    _pvw = str(_e.get("message_preview", ""))[:80]
+                    _bid = str(_e.get("bot_id", ""))
+                    _bid_label = f" [{_bid}]" if _bid else ""
+                    lines.append(f"• {_when} {_uname} (`{_uid}`){_bid_label} {_dir} {_pvw}")
+                msg = "\n".join(lines)
+            await self._send_local_notice_with_fallback(
+                chat_id,
+                msg,
+                collaborator_safe=False,
+            )
+        except Exception as e:
+            logger.warning("Failed to send owner activity notice to chat %s: %s", chat_id, e)
+
     async def _send_owner_pending_notice(self, chat_id: int) -> None:
         """Send deterministic owner pending-approval snapshot."""
         try:
@@ -7187,6 +7308,29 @@ class TelegramAPIProxy:
                 lines.append(f"\n*Active:* {', '.join(active_display)}")
             if revoked_ids:
                 lines.append(f"*Revoked:* {', '.join(revoked_ids)}")
+            # Append real egress approval queue entries so "/pending" is truthful.
+            try:
+                from gateway.ingest_api.state import app_state as _app_state
+
+                _eq = getattr(_app_state, "egress_approval_queue", None)
+                if _eq is not None:
+                    async with _eq._lock:
+                        _egress_items = list(_eq._pending_requests.items())
+                    if _egress_items:
+                        lines.append("\n*Pending Egress Requests:*")
+                        for _rid, _req in _egress_items:
+                            _age = int(now - getattr(_req, "created_at", now))
+                            _age_str = f"{_age}s" if _age < 60 else f"{_age // 60}m"
+                            _domain = getattr(_req, "domain", "unknown")
+                            _port = getattr(_req, "port", "?")
+                            _risk = getattr(_req, "risk_level", "?")
+                            _tool = getattr(_req, "tool_name", "?")
+                            lines.append(
+                                f"• `{_domain}:{_port}` {_risk} tool=`{_tool}` "
+                                f"id=`{_rid[:8]}` ({_age_str} ago)"
+                            )
+            except Exception as _eq_err:
+                logger.warning("pending: failed to read egress queue: %s", _eq_err)
             msg = "\n".join(lines)
             await self._send_local_notice_with_fallback(
                 chat_id,
@@ -7647,7 +7791,10 @@ class TelegramAPIProxy:
                                 bot_id=self._active_bot_id(),
                             )
                 except Exception as _te:
-                    logger.debug("Outbound local-response tracker error (non-fatal): %s", _te)
+                    logger.warning("Outbound local-response tracker error: %s", _te)
+                    self._stats["activity_track_errors"] = (
+                        self._stats.get("activity_track_errors", 0) + 1
+                    )
         except Exception as e:
             logger.warning(
                 "Failed to send collaborator safe-info response to chat %s: %s", chat_id, e
