@@ -723,11 +723,13 @@ async def lifespan(app: FastAPI):
         else:
             _tracker_log_path = Path("/app/data/collaborator_activity.jsonl")
             _tracker_contrib_dir = Path("/app/data/contributors")
+        _owner_display = _os.environ.get("AGENTSHROUD_OWNER_DISPLAY_NAME", "Isaiah")
         app_state.collaborator_tracker = CollaboratorActivityTracker(
             log_path=_tracker_log_path,
             owner_user_id=_rbac_cfg.owner_user_id,
             collaborator_ids=_rbac_cfg.collaborator_user_ids,
             contributor_log_dir=_tracker_contrib_dir,
+            owner_display_name=_owner_display,
         )
         # Prune test-fixture user IDs that leaked into the production log.
         # Heuristic: Telegram UIDs are always 9-10+ digits; any UID < 10000 is a test fixture.
@@ -780,6 +782,32 @@ async def lifespan(app: FastAPI):
                     )
             except Exception as _prune_exc:
                 logger.debug("Activity log prune skipped: %s", _prune_exc)
+        # Prune fixture markdown files from all contributor log dirs.
+        # The markdown mirrors are read by cron reports; JSONL prune above only
+        # cleans the structured log. We apply the same fixture heuristic here.
+        if not _os.environ.get("PYTEST_CURRENT_TEST"):
+            try:
+                from ..security.collaborator_tracker import _is_fixture_uid as _fix_uid
+
+                _md_pruned = 0
+                for _log_dir in app_state.collaborator_tracker.contributor_log_dirs:
+                    if not _log_dir.exists():
+                        continue
+                    for _md_file in _log_dir.glob("*.md"):
+                        # Filename format: YYYY-MM-DD-{safe_uid}.md
+                        _parts = _md_file.stem.split("-", 3)
+                        if len(_parts) >= 4:
+                            _file_uid = _parts[3]
+                            _is_short = _file_uid.isdigit() and int(_file_uid) < 10000
+                            if _is_short or _fix_uid(_file_uid):
+                                _md_file.unlink(missing_ok=True)
+                                _md_pruned += 1
+                if _md_pruned:
+                    logger.info(
+                        "Pruned %d fixture markdown files from contributor dirs", _md_pruned
+                    )
+            except Exception as _md_prune_exc:
+                logger.debug("Markdown contributor prune skipped: %s", _md_prune_exc)
         logger.info("CollaboratorActivityTracker initialized")
     except Exception as e:
         logger.error(f"Failed to initialize CollaboratorActivityTracker: {e}")
