@@ -63,6 +63,18 @@ async def health_check_detail(auth: AuthRequired):
         except Exception:
             pass
 
+    # Collaborator activity tracker health
+    tracker_health: dict | None = None
+    _ct = getattr(app_state, "collaborator_tracker", None)
+    if _ct is not None:
+        try:
+            tracker_health = _ct.get_health()
+        except Exception:
+            pass
+    else:
+        _ct_err = getattr(app_state, "collaborator_tracker_init_error", None)
+        tracker_health = {"healthy": False, "error": _ct_err or "tracker not initialized"}
+
     return StatusResponse(
         status="healthy",
         version="1.1.0",
@@ -98,4 +110,5 @@ async def health_check_detail(auth: AuthRequired):
                 "running" if getattr(app_state, "dns_transport", None) is not None else "stopped"
             ),
         },
+        tracker=tracker_health,
     )

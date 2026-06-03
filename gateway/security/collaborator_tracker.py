@@ -91,6 +91,18 @@ class CollaboratorActivityTracker:
                 "CollaboratorActivityTracker: no contributor log dirs writable; configured=%s",
                 [str(p) for p in self.contributor_log_dirs],
             )
+        self.writes_ok: int = 0
+        self.writes_failed: int = 0
+        self._write_error_throttle: float = 0.0  # last time we emitted a write-error log
+
+    def get_health(self) -> dict:
+        """Return a health snapshot suitable for /status/detail."""
+        return {
+            "healthy": self.writes_failed == 0,
+            "log_path": str(self.log_path),
+            "writes_total": self.writes_ok + self.writes_failed,
+            "writes_failed": self.writes_failed,
+        }
 
     def record_activity(
         self,
@@ -138,8 +150,17 @@ class CollaboratorActivityTracker:
         try:
             with self.log_path.open("a", encoding="utf-8") as fh:
                 fh.write(json.dumps(entry) + "\n")
+            self.writes_ok += 1
         except OSError as exc:
-            logger.warning("CollaboratorActivityTracker: write failed: %s", exc)
+            self.writes_failed += 1
+            _now = time.time()
+            if _now - self._write_error_throttle > 60:
+                self._write_error_throttle = _now
+                logger.error(
+                    "CollaboratorActivityTracker: JSONL write failed (writes_failed=%d): %s",
+                    self.writes_failed,
+                    exc,
+                )
         self._append_contributor_log(entry)
 
     def _append_contributor_log(self, entry: dict) -> None:
