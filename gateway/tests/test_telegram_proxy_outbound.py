@@ -4460,3 +4460,66 @@ class TestTelegram400Retry:
 
         assert result.get("error_code") == 400, f"Expected 400 to propagate, got: {result}"
         assert call_count == 2, f"Expected exactly 2 urlopen calls (no loop), got {call_count}"
+
+
+class TestReplayBufferOffsetParsing:
+    """Verify URL-encoded and JSON getUpdates bodies both trigger mark_delivered correctly.
+
+    Regression guard for the Hermes replay-loop bug: Hermes sends getUpdates with an
+    application/x-www-form-urlencoded body (offset=N&timeout=30), which json.loads
+    rejects → mark_delivered never called → same 10 buffered messages returned forever.
+    """
+
+    _TOKEN = "TESTTOKEN"
+
+    @staticmethod
+    def _make_proxy_with_mock_buffer():
+        mock_buf = unittest.mock.MagicMock()
+        mock_buf.pull_undelivered.return_value = []
+        proxy = TelegramAPIProxy(sanitizer=_make_sanitizer(), replay_buffer=mock_buf)
+        return proxy, mock_buf
+
+    @staticmethod
+    def _fake_get_updates_urlopen():
+        def _fake(req, timeout=None, context=None):
+            resp = SimpleNamespace()
+            resp.read = lambda: json.dumps({"ok": True, "result": []}).encode()
+            return resp
+
+        return _fake
+
+    @pytest.mark.asyncio
+    async def test_url_encoded_body_calls_mark_delivered(self):
+        """URL-encoded getUpdates body must call mark_delivered with the correct int offset."""
+        proxy, mock_buf = self._make_proxy_with_mock_buffer()
+
+        with unittest.mock.patch(
+            "urllib.request.urlopen", side_effect=self._fake_get_updates_urlopen()
+        ):
+            await proxy._proxy_request_impl(
+                bot_token=self._TOKEN,
+                method="getUpdates",
+                body=b"offset=42&timeout=30",
+                content_type="application/x-www-form-urlencoded",
+                is_system=False,
+            )
+
+        mock_buf.mark_delivered.assert_called_once_with("openclaw", 42)
+
+    @pytest.mark.asyncio
+    async def test_json_body_still_calls_mark_delivered(self):
+        """JSON getUpdates body must still call mark_delivered (existing behaviour preserved)."""
+        proxy, mock_buf = self._make_proxy_with_mock_buffer()
+
+        with unittest.mock.patch(
+            "urllib.request.urlopen", side_effect=self._fake_get_updates_urlopen()
+        ):
+            await proxy._proxy_request_impl(
+                bot_token=self._TOKEN,
+                method="getUpdates",
+                body=json.dumps({"offset": 55, "timeout": 30}).encode(),
+                content_type="application/json",
+                is_system=False,
+            )
+
+        mock_buf.mark_delivered.assert_called_once_with("openclaw", 55)

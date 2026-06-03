@@ -2921,11 +2921,16 @@ class TelegramAPIProxy:
         _replay_bot_id = self._active_bot_id()
         if _replay_buf is not None and method == "getUpdates":
             try:
+                _offset = None
                 if body:
-                    _req_params = json.loads(body.decode("utf-8", errors="replace"))
-                    _offset = _req_params.get("offset")
-                    if _offset:
-                        _replay_buf.mark_delivered(_replay_bot_id, int(_offset))
+                    _body_str = body.decode("utf-8", errors="replace")
+                    try:
+                        _offset = json.loads(_body_str).get("offset")
+                    except (json.JSONDecodeError, ValueError, AttributeError):
+                        # Hermes sends URL-encoded body: offset=N&timeout=30
+                        _offset = dict(urllib.parse.parse_qsl(_body_str)).get("offset")
+                if _offset:
+                    _replay_buf.mark_delivered(_replay_bot_id, int(_offset))
             except Exception as _rpe:
                 logger.warning("Replay buffer offset-mark failed (non-fatal): %s", _rpe)
             try:
