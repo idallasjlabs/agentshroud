@@ -50,11 +50,11 @@ def test_jobs_yaml_has_expected_job_count():
     ), f"Expected {_EXPECTED_YAML_JOB_COUNT} jobs in jobs.yaml, got {len(names)}: {names}"
 
 
-def test_cron_stamp_is_v2():
+def test_cron_stamp_is_v3():
     text = INIT_CONFIG.read_text(encoding="utf-8")
     assert (
-        ".hermes-cron-seeded-v2" in text
-    ), "Cron stamp must be '.hermes-cron-seeded-v2' to trigger re-seed on existing deploys"
+        ".hermes-cron-seeded-v3" in text
+    ), "Cron stamp must be '.hermes-cron-seeded-v3' to trigger re-seed after HTML email fix"
 
 
 def test_stability_report_job_present():

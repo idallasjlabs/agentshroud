@@ -29,6 +29,16 @@ check "openclaw start.sh: _telegram_send_photo called with AgentShroud™ captio
 check "openclaw Dockerfile: logo.png COPY" \
     "docker/bots/openclaw/Dockerfile" "COPY branding/logos/png/logo.png"
 
+# docker-compose.yml bind-mounts branding/ → /app/branding/ at runtime,
+# overriding the image's COPY.  The file must also exist at branding/logo.png
+# on the host so the bind-mount path resolves.  A symlink is sufficient.
+if [ -e "$REPO/branding/logo.png" ]; then
+    echo "  OK : branding/logo.png exists on host (bind-mount runtime path)"
+else
+    echo "  FAIL: branding/logo.png missing — openclaw startup photo fails at runtime" >&2
+    fail=1
+fi
+
 echo ""
 echo "── Hermes startup photo assertions ────────────────────"
 
