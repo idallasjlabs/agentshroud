@@ -1,0 +1,50 @@
+#!/usr/bin/env bash
+# Smoke test: Hermes Competitive Intelligence Email cron — HTML email assertions.
+# Verifies that the cron prompt in jobs.yaml and init-config.sh both include
+# the --html flag and --body argument required to deliver HTML email.
+# Without --html, the gateway defaults to text/plain and delivers raw markdown.
+# Run as part of scripts/smoke.sh.
+set -euo pipefail
+
+REPO="$(cd "$(dirname "${BASH_SOURCE[0]}")/../.." && pwd)"
+fail=0
+
+check() {
+    local label="$1" file="$2" pattern="$3"
+    if /usr/bin/grep -q "$pattern" "$REPO/$file" 2>/dev/null; then
+        echo "  OK : $label"
+    else
+        echo "  FAIL: $label — pattern '$pattern' not found in $file" >&2
+        fail=1
+    fi
+}
+
+echo ""
+echo "── Hermes cron HTML email assertions ──────────────────"
+
+check "jobs.yaml: competitive email message includes --html flag" \
+    "docker/config/hermes/cron/jobs.yaml" "\-\-html"
+
+check "jobs.yaml: competitive email message includes --body flag" \
+    "docker/config/hermes/cron/jobs.yaml" "\-\-body"
+
+check "jobs.yaml: competitive email message mentions inline CSS" \
+    "docker/config/hermes/cron/jobs.yaml" "inline CSS\|inline styles"
+
+check "init-config.sh: competitive email cron create includes --html" \
+    "docker/bots/hermes/init-config.sh" "\-\-html"
+
+check "init-config.sh: competitive email cron create includes --body" \
+    "docker/bots/hermes/init-config.sh" "\-\-body"
+
+check "init-config.sh: cron stamp version is v3 (ensures re-seeding after HTML fix)" \
+    "docker/bots/hermes/init-config.sh" "hermes-cron-seeded-v3"
+
+echo ""
+if [[ "$fail" -eq 0 ]]; then
+    echo "  ALL CHECKS PASSED"
+    exit 0
+else
+    echo "  ONE OR MORE CHECKS FAILED" >&2
+    exit 1
+fi

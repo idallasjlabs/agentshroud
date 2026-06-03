@@ -69,7 +69,9 @@ fi
 # the YAML file, which is not read natively by hermes-agent.
 # Idempotent: stamp file prevents re-seeding on every restart.
 # v2: added Weekly Stability Report + Competitive Intel cron jobs.
-_CRON_STAMP="${DATA_DIR}/.hermes-cron-seeded-v2"
+# v3: fixed Competitive Intel Email prompt — explicit --html --body temp-file
+#     invocation to prevent raw-markdown delivery (gateway default is plain text).
+_CRON_STAMP="${DATA_DIR}/.hermes-cron-seeded-v3"
 if [ ! -f "${_CRON_STAMP}" ]; then
     echo "[hermes-init] Seeding native cron jobs..."
     hermes cron create \
@@ -125,7 +127,7 @@ if [ ! -f "${_CRON_STAMP}" ]; then
         --name "Hermes Competitive Intelligence Email (AM/PM)" \
         --deliver local \
         "0 7,16 * * *" \
-        "Read the most recent competitive-report-*.md from /opt/data/workspace/reports/ (use today's date: $(date +%Y-%m-%d)). If no report for today exists, read /opt/data/workspace/competitive-analysis.md as context. Render the report as a clean HTML email using inline CSS only (no external stylesheets or images beyond the report content). If the report body would render as empty or contains only headers with no content, write body='No significant changes detected today.' instead. Then call: /usr/local/bin/agentshroud-email-send.sh --html --subject 'AgentShroud Hermes Competitive Intelligence — $(date +%Y-%m-%d)' --body '<your-rendered-html>'. Expect HTTP 200 from the gateway. If the send fails, report the error via Telegram instead." \
+        "Read the most recent competitive-report-*.md from /opt/data/workspace/reports/ (prefer today's date). If no report exists, use body 'No significant changes detected today.' Render as a clean HTML email with inline CSS only (white bg #ffffff, text #111111, links #1a73e8, code bg #f6f8fa). Write the rendered HTML to /tmp/competitive-email.html. Then run EXACTLY: /usr/local/bin/agentshroud-email-send.sh --html --subject 'AgentShroud Hermes Competitive Intelligence' --body \"\$(cat /tmp/competitive-email.html)\". The --html flag is mandatory — omitting it delivers raw markdown as plain text. Expect HTTP 200. On failure, report the full error via Telegram." \
         2>/dev/null && echo "[hermes-init] Created Competitive Intelligence Email job" || echo "[hermes-init] WARN: Competitive Intelligence Email job failed"
 
     touch "${_CRON_STAMP}"

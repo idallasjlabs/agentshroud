@@ -9,6 +9,7 @@ import subprocess
 import threading
 import time
 import urllib.request
+from concurrent.futures import ThreadPoolExecutor
 from contextlib import asynccontextmanager
 from pathlib import Path
 from typing import TYPE_CHECKING
@@ -79,6 +80,18 @@ async def lifespan(app: FastAPI):
     _install_uvicorn_warning_filter()
     logger.info("=" * 80)
     logger.info("AgentShroud Gateway starting up...")
+
+    # Install a dedicated thread-pool for blocking Telegram I/O.
+    # asyncio's default executor has only min(32, cpu_count+4) workers — on a
+    # 2-vCPU host that is 6.  Each long-poll getUpdates call holds a worker for
+    # ~30 s; two bots drain the pool and starve sendMessage/sendPhoto calls,
+    # producing synthetic 504s.  64 workers gives plenty of headroom for both
+    # bots' long-polls plus concurrent burst photo/message sends from crons and
+    # the collaborator greeter.  ~1 MB RAM per idle thread = ~64 MB worst-case,
+    # negligible on the target host.
+    _telegram_io_executor = ThreadPoolExecutor(max_workers=64, thread_name_prefix="tg-io")
+    asyncio.get_event_loop().set_default_executor(_telegram_io_executor)
+    logger.info("Installed 64-worker ThreadPoolExecutor for Telegram I/O")
 
     # Authenticate with 1Password using personal credentials.
     # Service accounts require a Teams/Enterprise plan; personal/family accounts
@@ -1900,6 +1913,12 @@ async def lifespan(app: FastAPI):
 
     # === SHUTDOWN ===
     logger.info("AgentShroud Gateway shutting down...")
+
+    # Drain the Telegram I/O executor without blocking shutdown.
+    try:
+        _telegram_io_executor.shutdown(wait=False)
+    except Exception:
+        pass
 
     # Stop HTTP CONNECT proxy
     if getattr(app_state, "http_proxy", None):
