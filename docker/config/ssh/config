@@ -57,6 +57,22 @@ Host trillian
     ServerAliveCountMax 3
     ProxyCommand nc -X connect -x gateway:8181 %h %p
 
+# ─── Tailscale Tailnet ───────────────────────────────────────────────────────
+# Matches any host on the personal Tailnet (*.tail240ea8.ts.net).
+# Routes via the gateway HTTP CONNECT proxy — same as all other approved hosts.
+Host *.tail240ea8.ts.net
+    User ijefferson
+    Port 22
+    IdentityFile ~/.ssh/id_ed25519
+    IdentitiesOnly yes
+    PasswordAuthentication no
+    PubkeyAuthentication yes
+    StrictHostKeyChecking accept-new
+    ServerAliveInterval 30
+    ServerAliveCountMax 3
+    ConnectTimeout 10
+    ProxyCommand nc -X connect -x gateway:8181 %h %p
+
 # ─── Block all other SSH connections ─────────────────────────────────────────
 # SECURITY: Any host not listed above will fail immediately.
 # Approved hosts tunnel through the gateway CONNECT proxy; the wildcard below

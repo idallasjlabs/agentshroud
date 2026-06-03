@@ -83,3 +83,46 @@ async def test_empty_content(sanitizer):
 
     assert result.sanitized_content == ""
     assert len(result.redactions) == 0
+
+
+# ── Telegram UID / phone regression (Bug A) ───────────────────────────────────
+
+
+@pytest.mark.asyncio
+async def test_telegram_uid_not_redacted_as_phone(sanitizer):
+    """Bare 10-digit Telegram UID must pass through unchanged — no <PHONE_NUMBER>."""
+    result = await sanitizer.sanitize("UID 8506022825 sent a message")
+    assert "<PHONE_NUMBER>" not in result.sanitized_content
+    assert "8506022825" in result.sanitized_content
+
+
+@pytest.mark.asyncio
+async def test_real_phone_still_redacted(sanitizer):
+    """Phone number with separator must still be redacted."""
+    result = await sanitizer.sanitize("Call me at (415) 555-1234")
+    assert "<PHONE_NUMBER>" in result.sanitized_content
+    assert "415" not in result.sanitized_content.replace("<PHONE_NUMBER>", "")
+
+
+@pytest.mark.asyncio
+async def test_uid_inside_parens_preserved(sanitizer):
+    """UID in parens — as written in contributor logs — must not be redacted."""
+    result = await sanitizer.sanitize("Brett Galura (8506022825) — 45 msgs")
+    assert "<PHONE_NUMBER>" not in result.sanitized_content
+    assert "8506022825" in result.sanitized_content
+
+
+@pytest.mark.asyncio
+async def test_regex_fallback_requires_separator(sanitizer):
+    """Regex-only path must not match bare 10-digit digit string as phone number."""
+    # Exercise _sanitize_regex directly by temporarily forcing regex mode.
+    import asyncio
+
+    original_mode = sanitizer.mode
+    sanitizer.mode = "regex"
+    try:
+        result = await asyncio.wait_for(sanitizer._sanitize_regex("8506022825"), timeout=5)
+    finally:
+        sanitizer.mode = original_mode
+    assert "<PHONE_NUMBER>" not in result.sanitized_content
+    assert "8506022825" in result.sanitized_content
