@@ -2947,6 +2947,38 @@ class TelegramAPIProxy:
             logger.error(f"Telegram API proxy error for {method}: {e}")
             return {"ok": False, "error_code": 502, "description": str(e)}
 
+        # B1: one-shot 400-retry — strip parse_mode + HTML tags when Telegram rejects
+        # due to malformed markup ("can't parse entities" / "Can't find end tag").
+        # Capped at one retry to prevent loops; falls through to the original 400 on failure.
+        if (
+            response_data.get("error_code") == 400
+            and method in ("sendMessage", "editMessageText")
+            and body
+            and content_type
+            and "json" in content_type.lower()
+        ):
+            _desc = str(response_data.get("description", "")).lower()
+            if "can't parse entities" in _desc or "can't find end tag" in _desc:
+                try:
+                    _retry_data = json.loads(body.decode("utf-8", errors="replace"))
+                    _retry_data.pop("parse_mode", None)
+                    _txt_key, _txt = self._resolve_text_field(_retry_data)
+                    if isinstance(_txt, str):
+                        _retry_data[_txt_key] = re.sub(r"<[^>]+>", "", _txt)
+                    _retry_body = json.dumps(_retry_data).encode()
+                    _retry_resp = await self._forward_to_telegram(url, _retry_body, content_type)
+                    if _retry_resp.get("ok"):
+                        logger.info("[telegram] retry-after-400 ok method=%s", method)
+                        response_data = _retry_resp
+                    else:
+                        logger.warning(
+                            "[telegram] retry-after-400 failed method=%s code=%s",
+                            method,
+                            _retry_resp.get("error_code"),
+                        )
+                except Exception as _re:
+                    logger.debug("[telegram] retry-after-400 error: %s", _re)
+
         # === INBOUND FILTERING (Telegram → bot) ===
         # For getUpdates: scan each message in the response
         if method == "getUpdates" and response_data.get("ok"):

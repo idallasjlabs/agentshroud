@@ -4377,3 +4377,86 @@ class TestForwardToTelegramTimeouts:
         assert (
             captured["timeout"] == 60
         ), f"Long-poll urlopen timeout must be 60s, got {captured['timeout']}s"
+
+
+class TestTelegram400Retry:
+    """B1: one-shot 400-retry for unbalanced HTML parse errors."""
+
+    _TOKEN = "TESTTOKEN"
+    _URL_BASE = f"https://api.telegram.org/bot{_TOKEN}"
+
+    @staticmethod
+    def _make_proxy() -> TelegramAPIProxy:
+        return TelegramAPIProxy(sanitizer=_make_sanitizer())
+
+    @pytest.mark.asyncio
+    async def test_400_retry_succeeds_when_text_strippable(self):
+        """First sendMessage returns 400 'can't parse entities'; retry with plain text succeeds."""
+        proxy = self._make_proxy()
+        call_count = 0
+
+        def _fake_urlopen(req, timeout=None, context=None):
+            nonlocal call_count
+            call_count += 1
+            import io
+            from types import SimpleNamespace
+
+            if call_count == 1:
+                import urllib.error
+
+                body = json.dumps(
+                    {
+                        "ok": False,
+                        "error_code": 400,
+                        "description": "Bad Request: can't parse entities",
+                    }
+                ).encode()
+                raise urllib.error.HTTPError(req.full_url, 400, "Bad Request", {}, io.BytesIO(body))
+            resp = SimpleNamespace()
+            resp.read = lambda: json.dumps({"ok": True, "result": {"message_id": 1}}).encode()
+            return resp
+
+        with unittest.mock.patch("urllib.request.urlopen", side_effect=_fake_urlopen):
+            result = await proxy._proxy_request_impl(
+                bot_token=self._TOKEN,
+                method="sendMessage",
+                body=json.dumps(
+                    {"chat_id": "123", "text": "hi <code>broken", "parse_mode": "HTML"}
+                ).encode(),
+                content_type="application/json",
+                is_system=True,
+            )
+
+        assert result.get("ok") is True, f"Expected retry to succeed, got: {result}"
+        assert (
+            call_count == 2
+        ), f"Expected exactly 2 urlopen calls (original + retry), got {call_count}"
+
+    @pytest.mark.asyncio
+    async def test_400_retry_no_loop(self):
+        """Persistent 400 returns the error after exactly one retry (no infinite loop)."""
+        proxy = self._make_proxy()
+        call_count = 0
+
+        def _fake_urlopen(req, timeout=None, context=None):
+            nonlocal call_count
+            call_count += 1
+            import io
+            import urllib.error
+
+            body = json.dumps(
+                {"ok": False, "error_code": 400, "description": "Bad Request: can't parse entities"}
+            ).encode()
+            raise urllib.error.HTTPError(req.full_url, 400, "Bad Request", {}, io.BytesIO(body))
+
+        with unittest.mock.patch("urllib.request.urlopen", side_effect=_fake_urlopen):
+            result = await proxy._proxy_request_impl(
+                bot_token=self._TOKEN,
+                method="sendMessage",
+                body=json.dumps({"chat_id": "123", "text": "hi <code>broken"}).encode(),
+                content_type="application/json",
+                is_system=True,
+            )
+
+        assert result.get("error_code") == 400, f"Expected 400 to propagate, got: {result}"
+        assert call_count == 2, f"Expected exactly 2 urlopen calls (no loop), got {call_count}"
