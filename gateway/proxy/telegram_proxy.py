@@ -367,7 +367,9 @@ class TelegramAPIProxy:
         self.sanitizer = sanitizer
         self._replay_buffer = replay_buffer  # UpdateReplayBuffer | None
         self._collab_greeter = greeter  # CollaboratorGreeter | None
-        self._default_bot_id = default_bot_id  # used when no contextvar is set (out-of-request paths)
+        self._default_bot_id = (
+            default_bot_id  # used when no contextvar is set (out-of-request paths)
+        )
         self._stats = {
             "total_requests": 0,
             "messages_scanned": 0,
