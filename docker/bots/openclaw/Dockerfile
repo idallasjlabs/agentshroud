@@ -5,7 +5,7 @@
 
 # M8: Base image pinned to SHA256 digest for supply chain integrity
 # Update with: docker pull node:22-bookworm-slim && docker inspect --format='{{index .RepoDigests 0}}' node:22-bookworm-slim
-FROM node:22-bookworm-slim@sha256:5373f1906319b3a1f291da5d102f4ce5c77ccbe29eb637f072b6c7b70443fc36
+FROM node:22-bookworm-slim@sha256:7af03b14a13c8cdd38e45058fd957bf00a72bbe17feac43b1c15a689c029c732
 ENV DEBIAN_FRONTEND=noninteractive
 
 # Install system dependencies

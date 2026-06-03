@@ -1868,7 +1868,43 @@ async def lifespan(app: FastAPI):
                 except Exception:
                     pass
 
+        # RFC 7231 method prefixes + CONNECT/TRACE.  Tailscale health probes and
+        # TLS ClientHellos start with non-ASCII bytes — drop them before proxying
+        # to suppress "Invalid HTTP request received" spam in Hermes uvicorn logs.
+        _HTTP_METHOD_PREFIXES = (
+            b"GET ",
+            b"POST",
+            b"PUT ",
+            b"HEAD",
+            b"OPTI",
+            b"DELE",
+            b"PATC",
+            b"CONN",
+            b"TRAC",
+        )
+
         async def _handle(reader: _asyncio.StreamReader, writer: _asyncio.StreamWriter) -> None:
+            # Peek at the first 16 bytes to filter non-HTTP connections.
+            try:
+                peeked = await _asyncio.wait_for(reader.read(16), timeout=5.0)
+            except Exception:
+                try:
+                    writer.close()
+                except Exception:
+                    pass
+                return
+            if not peeked or peeked[:4] not in _HTTP_METHOD_PREFIXES:
+                peer = writer.get_extra_info("peername", ("-", 0))
+                logger.info(
+                    "[hermes-forwarder] dropped non-http peer=%s bytes=%s",
+                    peer[0],
+                    peeked[:4].hex() if peeked else "",
+                )
+                try:
+                    writer.close()
+                except Exception:
+                    pass
+                return
             try:
                 r2, w2 = await _asyncio.open_connection(_hermes_api_host, _hermes_api_upstream_port)
             except Exception:
@@ -1879,6 +1915,9 @@ async def lifespan(app: FastAPI):
                 except Exception:
                     pass
                 return
+            # Forward the peeked bytes first, then pipe the rest bidirectionally.
+            w2.write(peeked)
+            await w2.drain()
             await _asyncio.gather(_pipe(reader, w2), _pipe(r2, writer), return_exceptions=True)
 
         try:
