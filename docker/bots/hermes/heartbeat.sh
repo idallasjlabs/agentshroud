@@ -5,9 +5,11 @@
 #
 # AgentShroud Hermes Healthchecks.io dead-man's-switch heartbeat.
 # Runs as s6 longrun service (root) inside the Hermes container.
-# Pings HERMES_HEALTHCHECKS_URL every 60s when both internal health gates pass:
-#   1. Dashboard port 9119 (HERMES_DASHBOARD=1 service)
-#   2. API server port 8642 /health endpoint
+# Pings HERMES_HEALTHCHECKS_URL every 60s when the API health gate passes:
+#   Port 8642 /health endpoint (same probe as Docker HEALTHCHECK)
+#
+# Note: dashboard port 9119 is NOT checked — v0.15.1 requires DashboardAuthProvider
+# which is not configured; 9119 returns 401 and is not part of the SLO.
 #
 # If HERMES_HEALTHCHECKS_URL is absent, logs once per hour and noop.
 # Heartbeat flows through HTTP_PROXY=gateway:8181 (inherited from compose env).
@@ -35,18 +37,16 @@ while true; do
         continue
     fi
 
-    dashboard_ok=0
     api_ok=0
 
-    curl -fsS --max-time 5 -o /dev/null http://127.0.0.1:9119/ 2>/dev/null && dashboard_ok=1 || true
     curl -fsS --max-time 5 -o /dev/null http://127.0.0.1:8642/health 2>/dev/null && api_ok=1 || true
 
-    if [ "${dashboard_ok}" -eq 1 ] && [ "${api_ok}" -eq 1 ]; then
+    if [ "${api_ok}" -eq 1 ]; then
         curl -fsS --max-time 10 "${_URL}" -o /dev/null 2>/dev/null \
             && _log "Pinged Healthchecks.io OK" \
             || _log "WARN: Healthchecks.io ping failed (will retry in ${_TICK}s)"
     else
-        _log "Health gates not ready (dashboard=${dashboard_ok} api=${api_ok}) — skipping ping"
+        _log "Health gate not ready (api=${api_ok}) — skipping ping"
     fi
 
     sleep "${_TICK}"
