@@ -381,9 +381,10 @@ services:
     cpus: 1.5
     pids_limit: 512
     healthcheck:
-      # Dashboard port 9119 is served by the s6 dashboard service (HERMES_DASHBOARD=1).
+      # v0.15.1: dashboard auth gate blocks 9119 binding without a DashboardAuthProvider.
+      # Probe the OpenAI-compatible API /health endpoint on 8642 instead.
       # start_period=120s covers s6 init + skill sync + gateway startup.
-      test: ["CMD-SHELL", "curl -fsS http://127.0.0.1:9119/ -o /dev/null || exit 1"]
+      test: ["CMD-SHELL", "curl -fsS http://127.0.0.1:8642/health || exit 1"]
       interval: 30s
       timeout: 10s
       start_period: 120s
