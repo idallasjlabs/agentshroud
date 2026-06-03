@@ -54,8 +54,9 @@ inject HERMES_HEALTHCHECKS_URL  /run/secrets/hermes_healthchecks_url
 inject GITHUB_TOKEN                 /run/secrets/github_pat
 inject GITHUB_PERSONAL_ACCESS_TOKEN /run/secrets/github_pat
 
-# Hermes runs as uid 10000; cron jobs.json can be created root-owned on a prior
-# boot, making the scheduler fail EACCES every tick. Reclaim ownership here.
-if [ -d /opt/data/cron ]; then
-    chown -R 10000:10000 /opt/data/cron 2>/dev/null || true
-fi
+# Hermes runs as uid 10000; these paths can be created root-owned on a prior
+# boot (e.g. auth.json, mcp.json written by a root container init step),
+# causing EACCES on token refresh and MCP config reads. Reclaim ownership here.
+for _f in /opt/data/auth.json /opt/data/mcp.json /opt/data/.local /opt/data/.cache /opt/data/cron; do
+    [ -e "$_f" ] && chown -R 10000:10000 "$_f" 2>/dev/null || true
+done
