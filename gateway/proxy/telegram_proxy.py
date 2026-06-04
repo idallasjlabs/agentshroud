@@ -7904,13 +7904,13 @@ class TelegramAPIProxy:
         # getUpdates is a long-poll: Telegram holds the connection open for up to 30s
         # waiting for messages, then closes with {"ok": true, "result": []}.
         # urlopen_timeout must exceed Telegram's hold time or we abort mid-poll.
-        # Non-long-poll calls (sendMessage, sendPhoto, etc.) use 15s — enough to
-        # cover TLS handshake + IPv6→IPv4 fallback (~12s) + actual payload upload
-        # for the logo photo (~150 KB over a slow link).  Fail-fast at 15s rather
-        # than 45s so a stuck thread is released quickly, preventing the default
-        # asyncio ThreadPoolExecutor from draining under concurrent long-polls.
+        # Binary-upload methods (sendPhoto, sendDocument, etc.) carry large bodies
+        # (logo PNG is ~300 KB); on a VPN link they need up to 45s.  Text-only
+        # methods (sendMessage, getMe, etc.) stay at 15s for fail-fast behaviour.
         is_long_poll = "getUpdates" in url
-        urlopen_timeout = 60 if is_long_poll else 15
+        _binary_methods = ("sendPhoto", "sendDocument", "sendAnimation", "sendVideo", "sendAudio", "sendVoice", "sendVideoNote")
+        is_binary_upload = any(m in url for m in _binary_methods)
+        urlopen_timeout = 60 if is_long_poll else (45 if is_binary_upload else 15)
         wait_for_timeout = urlopen_timeout + 5  # queue + execution budget
 
         loop = asyncio.get_event_loop()

@@ -119,16 +119,34 @@ _telegram_send_photo() {
     local photo_path="${2:-/app/branding/logo.png}"
     local token
     token="$(_telegram_bot_token)"
-    if [ -z "$token" ] || [ ! -f "$photo_path" ]; then
+    if [ -z "$token" ]; then
+        echo "[hermes-startup] ⚠ Photo notification: no bot token available" >&2
         return 1
     fi
-    curl -sf --max-time 15 -X POST "${_GATEWAY_TELEGRAM_BASE}/bot${token}/sendPhoto" \
+    if [ ! -f "$photo_path" ]; then
+        echo "[hermes-startup] ⚠ Photo notification: logo file not found at ${photo_path}" >&2
+        return 1
+    fi
+    # Logo PNG is ~300 KB; on a VPN link the upload can take up to 30s.
+    # Use --max-time 45 to match the gateway's 45s binary-upload timeout.
+    local resp exit_code
+    resp=$(curl -s --max-time 45 -X POST "${_GATEWAY_TELEGRAM_BASE}/bot${token}/sendPhoto" \
         -H "Authorization: Bearer ${GATEWAY_AUTH_TOKEN:-}" \
         -H "X-AgentShroud-System: 1" \
         -F "chat_id=${_OWNER_CHAT_ID}" \
         -F "caption=${caption}" \
         -F "photo=@${photo_path}" \
-        >/dev/null 2>&1
+        2>/dev/null)
+    exit_code=$?
+    if [ "$exit_code" -ne 0 ]; then
+        echo "[hermes-startup] ⚠ Photo notification: curl failed (exit=${exit_code})" >&2
+        return 1
+    fi
+    if ! echo "$resp" | grep -q '"ok":true'; then
+        echo "[hermes-startup] ⚠ Photo notification: gateway error: ${resp:0:200}" >&2
+        return 1
+    fi
+    return 0
 }
 
 _telegram_get_me_ready() {
@@ -276,7 +294,7 @@ echo "[hermes-startup] Starting Hermes Agent gateway (Telegram/Discord long-poll
     done
 
     if [ "${ready}" = "yes" ]; then
-        if _telegram_send_photo "🛡️ Hermes online" "/app/branding/logo.png" 2>/dev/null; then
+        if _telegram_send_photo "🛡️ Hermes online" "/app/branding/logo.png"; then
             echo "[hermes-startup] ✓ Sent Telegram startup photo notification"
         else
             _telegram_send "🛡️ Hermes online" \
