@@ -22,12 +22,12 @@ import urllib.request
 from collections.abc import AsyncIterator
 from typing import Any
 
-from gateway.proxy.llm_quota_detector import is_quota_exhausted
+from gateway.proxy.anthropic_openai_sse_translator import translate_openai_sse_to_anthropic
 from gateway.proxy.anthropic_openai_translator import (
     anthropic_to_openai_request,
     openai_to_anthropic_response,
 )
-from gateway.proxy.anthropic_openai_sse_translator import translate_openai_sse_to_anthropic
+from gateway.proxy.llm_quota_detector import is_quota_exhausted
 
 logger = logging.getLogger("agentshroud.proxy.llm_api")
 
@@ -168,7 +168,7 @@ class LLMProxy:
         import time as _time
 
         ts = _time.strftime("%Y-%m-%dT%H:%M:%SZ", _time.gmtime())
-        self._stats["failover_active"] = (outcome == "success")
+        self._stats["failover_active"] = outcome == "success"
         self._stats["failover_last_provider"] = provider
         self._stats["failover_last_event"] = ts
 
@@ -176,7 +176,12 @@ class LLMProxy:
             return
         try:
             content = f"LLM failover {outcome}: {provider} → {model} at {ts}"
-            metadata = {"provider": provider, "outcome": outcome, "local_model": model, "timestamp": ts}
+            metadata = {
+                "provider": provider,
+                "outcome": outcome,
+                "local_model": model,
+                "timestamp": ts,
+            }
             self.audit_chain.append(content, direction="llm_failover", metadata=metadata)
         except Exception as e:
             logger.debug("Failover audit log failed (non-fatal): %s", e)
@@ -227,7 +232,9 @@ class LLMProxy:
                         return None
                 return f_status, f_headers, f_body
 
-            logger.warning("Failover local model returned HTTP %s — returning original cloud error", f_status)
+            logger.warning(
+                "Failover local model returned HTTP %s — returning original cloud error", f_status
+            )
             return None
         except Exception as e:
             logger.warning("Failover dispatch error: %s — returning original cloud error", e)
@@ -349,18 +356,14 @@ class LLMProxy:
 
         # === QUOTA FAILOVER: cloud→local on quota-exhausted responses ===
         _failover_enabled = os.environ.get("AGENTSHROUD_FAILOVER_ON_QUOTA", "1") == "1"
-        if (
-            _failover_enabled
-            and not _failover_opt_out
-            and not is_ollama
-            and not is_streaming
-        ):
+        if _failover_enabled and not _failover_opt_out and not is_ollama and not is_streaming:
             quota_hit, quota_token = is_quota_exhausted(status, resp_body)
             if quota_hit:
                 local_model = self._get_local_model()
                 logger.info(
                     "Quota failover triggered (%s) — attempting local model %s",
-                    quota_token, local_model,
+                    quota_token,
+                    local_model,
                 )
                 fo_result = await self._failover_request(
                     path, request_data, body, model_name, is_openai
@@ -481,6 +484,7 @@ class LLMProxy:
 
         async def _stream() -> AsyncIterator[bytes]:
             import httpx as _httpx
+
             collected_status: list[int] = []
             collected_body: list[bytes] = []
 
@@ -517,7 +521,8 @@ class LLMProxy:
                                     local_model = self._get_local_model()
                                     logger.info(
                                         "Streaming quota failover (%s) → %s",
-                                        quota_token, local_model,
+                                        quota_token,
+                                        local_model,
                                     )
                                     try:
                                         if is_openai:
@@ -532,7 +537,9 @@ class LLMProxy:
                                             fo_body = json.dumps(oai_req).encode()
                                             fo_url = f"{OLLAMA_API_BASE}/v1/chat/completions"
                                         else:
-                                            self._emit_failover_notice(quota_token, translated=False)
+                                            self._emit_failover_notice(
+                                                quota_token, translated=False
+                                            )
                                             yield first_chunk
                                             return
 
@@ -540,18 +547,28 @@ class LLMProxy:
                                             verify=True, timeout=_httpx.Timeout(5.0, read=1800.0)
                                         ) as fo_client:
                                             async with fo_client.stream(
-                                                "POST", fo_url,
+                                                "POST",
+                                                fo_url,
                                                 content=fo_body,
                                                 headers={"content-type": "application/json"},
                                             ) as fo_resp:
                                                 if fo_resp.status_code == 200:
                                                     self._stats["failover_quota_succeeded"] = (
-                                                        self._stats.get("failover_quota_succeeded", 0) + 1
+                                                        self._stats.get(
+                                                            "failover_quota_succeeded", 0
+                                                        )
+                                                        + 1
                                                     )
-                                                    self._record_failover_event(quota_token, "success", local_model)
-                                                    self._emit_failover_notice(quota_token, translated=True)
+                                                    self._record_failover_event(
+                                                        quota_token, "success", local_model
+                                                    )
+                                                    self._emit_failover_notice(
+                                                        quota_token, translated=True
+                                                    )
                                                     if "/v1/messages" in path:
-                                                        async for translated in translate_openai_sse_to_anthropic(
+                                                        async for (
+                                                            translated
+                                                        ) in translate_openai_sse_to_anthropic(
                                                             fo_resp.aiter_bytes(), model_name
                                                         ):
                                                             yield translated

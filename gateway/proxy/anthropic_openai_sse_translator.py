@@ -67,22 +67,25 @@ async def translate_openai_sse_to_anthropic(
     finish_reason: str | None = None
 
     # Emit message_start
-    yield _sse("message_start", {
-        "type": "message_start",
-        "message": {
-            "id": msg_id,
-            "type": "message",
-            "role": "assistant",
-            "model": original_model,
-            "content": [],
-            "stop_reason": None,
-            "stop_sequence": None,
-            "usage": {"input_tokens": 0, "output_tokens": 0},
+    yield _sse(
+        "message_start",
+        {
+            "type": "message_start",
+            "message": {
+                "id": msg_id,
+                "type": "message",
+                "role": "assistant",
+                "model": original_model,
+                "content": [],
+                "stop_reason": None,
+                "stop_sequence": None,
+                "usage": {"input_tokens": 0, "output_tokens": 0},
+            },
         },
-    })
+    )
 
     # Anthropic clients expect a ping to follow message_start
-    yield b"event: ping\ndata: {\"type\":\"ping\"}\n\n"
+    yield b'event: ping\ndata: {"type":"ping"}\n\n'
 
     buf = b""
 
@@ -116,16 +119,22 @@ async def translate_openai_sse_to_anthropic(
                 if text_delta is not None and text_delta != "":
                     if not text_started:
                         text_started = True
-                        yield _sse("content_block_start", {
-                            "type": "content_block_start",
+                        yield _sse(
+                            "content_block_start",
+                            {
+                                "type": "content_block_start",
+                                "index": 0,
+                                "content_block": {"type": "text", "text": ""},
+                            },
+                        )
+                    yield _sse(
+                        "content_block_delta",
+                        {
+                            "type": "content_block_delta",
                             "index": 0,
-                            "content_block": {"type": "text", "text": ""},
-                        })
-                    yield _sse("content_block_delta", {
-                        "type": "content_block_delta",
-                        "index": 0,
-                        "delta": {"type": "text_delta", "text": text_delta},
-                    })
+                            "delta": {"type": "text_delta", "text": text_delta},
+                        },
+                    )
 
                 # ---- tool_calls deltas ----
                 for tc_delta in delta.get("tool_calls") or []:
@@ -140,16 +149,19 @@ async def translate_openai_sse_to_anthropic(
                             "name": (tc_delta.get("function") or {}).get("name", ""),
                             "args_buf": "",
                         }
-                        yield _sse("content_block_start", {
-                            "type": "content_block_start",
-                            "index": anthr_idx,
-                            "content_block": {
-                                "type": "tool_use",
-                                "id": tool_call_blocks[idx]["id"],
-                                "name": tool_call_blocks[idx]["name"],
-                                "input": {},
+                        yield _sse(
+                            "content_block_start",
+                            {
+                                "type": "content_block_start",
+                                "index": anthr_idx,
+                                "content_block": {
+                                    "type": "tool_use",
+                                    "id": tool_call_blocks[idx]["id"],
+                                    "name": tool_call_blocks[idx]["name"],
+                                    "input": {},
+                                },
                             },
-                        })
+                        )
                     else:
                         # Name can arrive in later chunks too
                         fn = tc_delta.get("function") or {}
@@ -160,11 +172,14 @@ async def translate_openai_sse_to_anthropic(
                     args_chunk = (tc_delta.get("function") or {}).get("arguments", "")
                     if args_chunk:
                         tool_call_blocks[idx]["args_buf"] += args_chunk
-                        yield _sse("content_block_delta", {
-                            "type": "content_block_delta",
-                            "index": anthr_idx,
-                            "delta": {"type": "input_json_delta", "partial_json": args_chunk},
-                        })
+                        yield _sse(
+                            "content_block_delta",
+                            {
+                                "type": "content_block_delta",
+                                "index": anthr_idx,
+                                "delta": {"type": "input_json_delta", "partial_json": args_chunk},
+                            },
+                        )
 
             if usage_update:
                 output_token_count = usage_update.get("completion_tokens", output_token_count)
@@ -180,10 +195,13 @@ async def translate_openai_sse_to_anthropic(
 
     stop_reason = _FINISH_REASON_TO_STOP_REASON.get(finish_reason or "stop", "end_turn")
 
-    yield _sse("message_delta", {
-        "type": "message_delta",
-        "delta": {"stop_reason": stop_reason, "stop_sequence": None},
-        "usage": {"output_tokens": output_token_count},
-    })
+    yield _sse(
+        "message_delta",
+        {
+            "type": "message_delta",
+            "delta": {"stop_reason": stop_reason, "stop_sequence": None},
+            "usage": {"output_tokens": output_token_count},
+        },
+    )
 
     yield _sse("message_stop", {"type": "message_stop"})

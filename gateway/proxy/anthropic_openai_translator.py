@@ -60,7 +60,10 @@ def _anthropic_content_to_openai(content: str | list) -> str | list:
             elif src.get("type") == "url":
                 openai_parts.append({"type": "image_url", "image_url": {"url": src.get("url", "")}})
             else:
-                logger.warning("anthropic_to_openai: unsupported image source type %s — skipping", src.get("type"))
+                logger.warning(
+                    "anthropic_to_openai: unsupported image source type %s — skipping",
+                    src.get("type"),
+                )
         elif btype == "tool_use":
             # Accumulated as a separate tool_call on the assistant message — handled
             # at the message level, not the content-part level.
@@ -124,14 +127,16 @@ def anthropic_to_openai_request(body: dict, target_model: str) -> dict:
                 if not isinstance(block, dict):
                     continue
                 if block.get("type") == "tool_use":
-                    tool_calls.append({
-                        "id": block.get("id", f"call_{_random_msg_id()}"),
-                        "type": "function",
-                        "function": {
-                            "name": block.get("name", ""),
-                            "arguments": json.dumps(block.get("input", {})),
-                        },
-                    })
+                    tool_calls.append(
+                        {
+                            "id": block.get("id", f"call_{_random_msg_id()}"),
+                            "type": "function",
+                            "function": {
+                                "name": block.get("name", ""),
+                                "arguments": json.dumps(block.get("input", {})),
+                            },
+                        }
+                    )
                 elif block.get("type") == "text":
                     text_parts.append(block.get("text", ""))
 
@@ -148,8 +153,7 @@ def anthropic_to_openai_request(body: dict, target_model: str) -> dict:
             # Check for tool_result blocks — these become separate tool-role messages
             content_list = content if isinstance(content, list) else []
             has_tool_result = any(
-                isinstance(b, dict) and b.get("type") == "tool_result"
-                for b in content_list
+                isinstance(b, dict) and b.get("type") == "tool_result" for b in content_list
             )
 
             if has_tool_result:
@@ -161,14 +165,17 @@ def anthropic_to_openai_request(body: dict, target_model: str) -> dict:
                         if isinstance(tool_content, list):
                             # Flatten content blocks to plain text
                             tool_content = "".join(
-                                b.get("text", "") for b in tool_content
+                                b.get("text", "")
+                                for b in tool_content
                                 if isinstance(b, dict) and b.get("type") == "text"
                             )
-                        messages.append({
-                            "role": "tool",
-                            "tool_call_id": block.get("tool_use_id", ""),
-                            "content": tool_content or "",
-                        })
+                        messages.append(
+                            {
+                                "role": "tool",
+                                "tool_call_id": block.get("tool_use_id", ""),
+                                "content": tool_content or "",
+                            }
+                        )
             else:
                 oai_content = _anthropic_content_to_openai(content)
                 messages.append({"role": "user", "content": oai_content})
@@ -250,12 +257,14 @@ def openai_to_anthropic_response(openai_resp: dict, original_model: str) -> dict
             fn_input = json.loads(fn.get("arguments", "{}"))
         except (json.JSONDecodeError, TypeError):
             fn_input = {}
-        content_blocks.append({
-            "type": "tool_use",
-            "id": tc.get("id", f"toolu_{_random_msg_id()}"),
-            "name": fn.get("name", ""),
-            "input": fn_input,
-        })
+        content_blocks.append(
+            {
+                "type": "tool_use",
+                "id": tc.get("id", f"toolu_{_random_msg_id()}"),
+                "name": fn.get("name", ""),
+                "input": fn_input,
+            }
+        )
 
     # Usage
     usage_raw = openai_resp.get("usage", {})

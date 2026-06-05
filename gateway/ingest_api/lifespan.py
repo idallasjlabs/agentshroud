@@ -614,11 +614,10 @@ async def lifespan(app: FastAPI):
         # Startup probe: warn if failover is enabled but Ollama is unreachable
         import os as _os
         import urllib.request as _urllib_req
+
         if _os.environ.get("AGENTSHROUD_FAILOVER_ON_QUOTA", "1") == "1":
             try:
-                _urllib_req.urlopen(
-                    "http://host.docker.internal:11434/api/tags", timeout=3
-                )
+                _urllib_req.urlopen("http://host.docker.internal:11434/api/tags", timeout=3)
                 logger.info("LLM failover: Ollama reachable at host.docker.internal:11434")
             except Exception:
                 logger.warning(
