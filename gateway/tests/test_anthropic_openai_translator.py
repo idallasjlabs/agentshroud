@@ -9,12 +9,11 @@ import json
 
 import pytest
 
+from gateway.proxy.anthropic_openai_sse_translator import translate_openai_sse_to_anthropic
 from gateway.proxy.anthropic_openai_translator import (
     anthropic_to_openai_request,
     openai_to_anthropic_response,
 )
-from gateway.proxy.anthropic_openai_sse_translator import translate_openai_sse_to_anthropic
-
 
 # ---------------------------------------------------------------------------
 # anthropic_to_openai_request
@@ -219,6 +218,7 @@ def test_translator_max_tokens_finish_reason():
 
 async def _collect_sse(chunks: list[bytes]) -> list[dict]:
     """Feed raw SSE bytes into the translator and collect Anthropic events."""
+
     async def source() -> AsyncIterator[bytes]:
         for chunk in chunks:
             yield chunk
