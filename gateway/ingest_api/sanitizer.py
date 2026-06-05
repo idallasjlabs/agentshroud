@@ -251,7 +251,9 @@ class PIISanitizer:
                 if r.entity_type != "TELEGRAM_UID"
             ]
 
-            entity_types = list(set(r.entity_type for r in results if r.entity_type != "TELEGRAM_UID"))
+            entity_types = list(
+                set(r.entity_type for r in results if r.entity_type != "TELEGRAM_UID")
+            )
 
             return RedactionResult(
                 sanitized_content=anonymized.text,

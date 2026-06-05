@@ -4746,13 +4746,19 @@ class TestOwnerMirrorCoalescing:
 
         # First call — should send.
         await proxy._mirror_to_owner_if_collaborator(
-            direction="inbound", user_id="8506022825", username="Brett",
-            preview="hello", bot_id="openclaw",
+            direction="inbound",
+            user_id="8506022825",
+            username="Brett",
+            preview="hello",
+            bot_id="openclaw",
         )
         # Second call within the 60s window — should be suppressed.
         await proxy._mirror_to_owner_if_collaborator(
-            direction="inbound", user_id="8506022825", username="Brett",
-            preview="hello again", bot_id="openclaw",
+            direction="inbound",
+            user_id="8506022825",
+            username="Brett",
+            preview="hello again",
+            bot_id="openclaw",
         )
 
         assert len(sent) == 1, f"Expected 1 mirror send, got {len(sent)}"
@@ -4780,8 +4786,11 @@ class TestOwnerMirrorCoalescing:
         proxy._collab_mirror_last_sent[("8506022825", "inbound")] = time.time() - 120
 
         await proxy._mirror_to_owner_if_collaborator(
-            direction="inbound", user_id="8506022825", username="Brett",
-            preview="message after window", bot_id="openclaw",
+            direction="inbound",
+            user_id="8506022825",
+            username="Brett",
+            preview="message after window",
+            bot_id="openclaw",
         )
 
         assert len(sent) == 1, "Expected exactly one mirror after window expired"
