@@ -7256,7 +7256,9 @@ class TelegramAPIProxy:
                 lines = ["🛡️ Protected by AgentShroud\n*Collaborator Activity (last hour)*\n"]
                 for _e in _entries:
                     _ts = float(_e.get("timestamp", 0))
-                    _when = _dt.datetime.fromtimestamp(_ts, tz=_dt.timezone.utc).strftime("%H:%M:%S")
+                    _when = _dt.datetime.fromtimestamp(_ts, tz=_dt.timezone.utc).strftime(
+                        "%H:%M:%S"
+                    )
                     _uname = str(_e.get("username", "unknown"))
                     _uid = str(_e.get("user_id", "?"))
                     _dir = "→" if _e.get("direction") == "inbound" else "←"
@@ -7908,7 +7910,15 @@ class TelegramAPIProxy:
         # (logo PNG is ~300 KB); on a VPN link they need up to 45s.  Text-only
         # methods (sendMessage, getMe, etc.) stay at 15s for fail-fast behaviour.
         is_long_poll = "getUpdates" in url
-        _binary_methods = ("sendPhoto", "sendDocument", "sendAnimation", "sendVideo", "sendAudio", "sendVoice", "sendVideoNote")
+        _binary_methods = (
+            "sendPhoto",
+            "sendDocument",
+            "sendAnimation",
+            "sendVideo",
+            "sendAudio",
+            "sendVoice",
+            "sendVideoNote",
+        )
         is_binary_upload = any(m in url for m in _binary_methods)
         urlopen_timeout = 60 if is_long_poll else (45 if is_binary_upload else 15)
         wait_for_timeout = urlopen_timeout + 5  # queue + execution budget

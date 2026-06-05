@@ -6,6 +6,7 @@
 Verifies that on startup the gateway prunes fixture markdown files from all
 contributor log dirs while leaving real-UID files untouched.
 """
+
 from __future__ import annotations
 
 import datetime
@@ -14,7 +15,6 @@ from pathlib import Path
 import pytest
 
 from gateway.security.collaborator_tracker import CollaboratorActivityTracker, _is_fixture_uid
-
 
 # ── _is_fixture_uid unit tests ────────────────────────────────────────────────
 
@@ -62,9 +62,7 @@ def test_prune_walks_all_contributor_dirs(tmp_path, monkeypatch):
     dir_b.mkdir()
     log_file = tmp_path / "activity.jsonl"
 
-    monkeypatch.setenv(
-        "AGENTSHROUD_CONTRIBUTOR_LOG_DIRS", f"{dir_a},{dir_b}"
-    )
+    monkeypatch.setenv("AGENTSHROUD_CONTRIBUTOR_LOG_DIRS", f"{dir_a},{dir_b}")
 
     tracker = CollaboratorActivityTracker(
         log_path=log_file,
