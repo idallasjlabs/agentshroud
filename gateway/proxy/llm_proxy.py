@@ -22,7 +22,19 @@ import urllib.request
 from collections.abc import AsyncIterator
 from typing import Any
 
+from gateway.proxy.llm_quota_detector import is_quota_exhausted
+from gateway.proxy.anthropic_openai_translator import (
+    anthropic_to_openai_request,
+    openai_to_anthropic_response,
+)
+from gateway.proxy.anthropic_openai_sse_translator import translate_openai_sse_to_anthropic
+
 logger = logging.getLogger("agentshroud.proxy.llm_api")
+
+# Cooldown window (seconds) for "failover active" Telegram notices.
+# One notice per window — avoids spamming on every cron tick.
+_FAILOVER_NOTIFY_COOLDOWN_SECONDS = 1800
+_FAILOVER_NOTIFY_STAMP = "/tmp/.gateway-failover-notify-stamp"
 
 ANTHROPIC_API_BASE = "https://api.anthropic.com"
 OPENAI_API_BASE = "https://api.openai.com"
@@ -75,10 +87,151 @@ class LLMProxy:
             "streaming_responses_scanned": 0,
             "streaming_responses_blocked": 0,
             "streaming_responses_redacted": 0,
+            "failover_quota_succeeded": 0,
+            "failover_quota_failed": 0,
+            "failover_active": False,
+            "failover_last_provider": None,
+            "failover_last_event": None,
         }
+        # Optional AuditChain for persistent failover event logging.
+        # Injected by lifespan.py if available.
+        self.audit_chain = None
 
     def get_stats(self) -> dict:
         return dict(self._stats)
+
+    # ---------------------------------------------------------------------------
+    # Quota failover helpers
+    # ---------------------------------------------------------------------------
+
+    def _get_local_model(self) -> str:
+        ref = os.environ.get("AGENTSHROUD_LOCAL_MODEL_REF", "ollama/qwen3:14b")
+        return ref.split("/", 1)[-1]
+
+    def _emit_failover_notice(self, token: str, translated: bool) -> None:
+        """Send a single Telegram notice per cooldown window when failover activates."""
+        import time as _time
+
+        now = int(_time.time())
+        try:
+            if os.path.exists(_FAILOVER_NOTIFY_STAMP):
+                with open(_FAILOVER_NOTIFY_STAMP) as f:
+                    parts = f.read().strip().split()
+                    last_ts = int(parts[0]) if parts else 0
+                    last_token = parts[1] if len(parts) > 1 else ""
+                    if now - last_ts < _FAILOVER_NOTIFY_COOLDOWN_SECONDS and last_token == token:
+                        return  # cooldown active
+        except Exception:
+            pass
+
+        try:
+            with open(_FAILOVER_NOTIFY_STAMP, "w") as f:
+                f.write(f"{now} {token}")
+        except Exception:
+            pass
+
+        local_model = self._get_local_model()
+        if translated:
+            msg = (
+                f"\U0001f501 LLM failover active — cloud quota exhausted ({token}). "
+                f"Cron jobs running on {local_model} until cloud quota resets."
+            )
+        else:
+            msg = (
+                f"⚠️ LLM failover triggered ({token}) but no translator "
+                f"available for this provider — cron job will fail."
+            )
+
+        try:
+            gw_url = os.environ.get("GATEWAY_OP_PROXY_URL", "http://gateway:8080")
+            bot_token = os.environ.get("TELEGRAM_BOT_TOKEN", "")
+            auth_token = os.environ.get("GATEWAY_AUTH_TOKEN", "")
+            owner_chat = os.environ.get("AGENTSHROUD_OWNER_CHAT_ID", "8096968754")
+            if not bot_token:
+                return
+            payload = json.dumps({"chat_id": owner_chat, "text": msg}).encode()
+            req = urllib.request.Request(
+                f"{gw_url}/telegram-api/bot{bot_token}/sendMessage",
+                data=payload,
+                headers={
+                    "Content-Type": "application/json",
+                    "Authorization": f"Bearer {auth_token}",
+                    "X-AgentShroud-System": "1",
+                },
+            )
+            urllib.request.urlopen(req, timeout=10)
+        except Exception as e:
+            logger.debug("Failover notification failed (non-fatal): %s", e)
+
+    def _record_failover_event(self, provider: str, outcome: str, model: str) -> None:
+        """Persist a failover event to the audit chain if wired."""
+        import time as _time
+
+        ts = _time.strftime("%Y-%m-%dT%H:%M:%SZ", _time.gmtime())
+        self._stats["failover_active"] = (outcome == "success")
+        self._stats["failover_last_provider"] = provider
+        self._stats["failover_last_event"] = ts
+
+        if self.audit_chain is None:
+            return
+        try:
+            content = f"LLM failover {outcome}: {provider} → {model} at {ts}"
+            metadata = {"provider": provider, "outcome": outcome, "local_model": model, "timestamp": ts}
+            self.audit_chain.append(content, direction="llm_failover", metadata=metadata)
+        except Exception as e:
+            logger.debug("Failover audit log failed (non-fatal): %s", e)
+
+    async def _failover_request(
+        self,
+        path: str,
+        request_data: dict | None,
+        body: bytes,
+        model_name: str,
+        is_openai: bool,
+    ) -> tuple[int, dict, bytes] | None:
+        """Attempt a cloud→local failover dispatch.
+
+        Returns (status, headers, body) from the local model, or None if the
+        failover itself fails (caller should return the original cloud 429 body).
+        """
+        local_model = self._get_local_model()
+        try:
+            if is_openai:
+                # OpenAI-compat is drop-in with Ollama — just rewrite model
+                fo_data = dict(request_data or {})
+                fo_data["model"] = local_model
+                fo_body = json.dumps(fo_data).encode()
+                fo_url = f"{OLLAMA_API_BASE}/v1/chat/completions"
+            elif "/v1/messages" in path:
+                # Anthropic → translate to OpenAI, re-dispatch, translate response
+                oai_req = anthropic_to_openai_request(request_data or {}, local_model)
+                fo_body = json.dumps(oai_req).encode()
+                fo_url = f"{OLLAMA_API_BASE}/v1/chat/completions"
+            else:
+                return None  # Google / unknown — no translator
+
+            f_status, f_headers, f_body = await self._forward_request(
+                fo_url, fo_body, {"content-type": "application/json"}
+            )
+
+            if f_status == 200 and f_body:
+                if "/v1/messages" in path:
+                    # Translate Ollama OpenAI response back to Anthropic format
+                    try:
+                        oai_resp = json.loads(f_body)
+                        f_body = json.dumps(
+                            openai_to_anthropic_response(oai_resp, model_name)
+                        ).encode()
+                    except Exception as te:
+                        logger.warning("Response translation failed: %s", te)
+                        return None
+                return f_status, f_headers, f_body
+
+            logger.warning("Failover local model returned HTTP %s — returning original cloud error", f_status)
+            return None
+        except Exception as e:
+            logger.warning("Failover dispatch error: %s — returning original cloud error", e)
+            return None
 
     async def proxy_messages(
         self,
@@ -170,6 +323,9 @@ class LLMProxy:
         # Check if streaming
         is_streaming = request_data and request_data.get("stream", False)
 
+        # Per-request opt-out: X-AgentShroud-No-Failover: 1 skips quota failover
+        _failover_opt_out = headers.get("x-agentshroud-no-failover", "") == "1"
+
         try:
             status, resp_headers, resp_body = await self._forward_request(url, body, headers)
         except TimeoutError as e:
@@ -190,6 +346,41 @@ class LLMProxy:
                 }
             ).encode()
             return 502, {"content-type": "application/json"}, error_resp
+
+        # === QUOTA FAILOVER: cloud→local on quota-exhausted responses ===
+        _failover_enabled = os.environ.get("AGENTSHROUD_FAILOVER_ON_QUOTA", "1") == "1"
+        if (
+            _failover_enabled
+            and not _failover_opt_out
+            and not is_ollama
+            and not is_streaming
+        ):
+            quota_hit, quota_token = is_quota_exhausted(status, resp_body)
+            if quota_hit:
+                local_model = self._get_local_model()
+                logger.info(
+                    "Quota failover triggered (%s) — attempting local model %s",
+                    quota_token, local_model,
+                )
+                fo_result = await self._failover_request(
+                    path, request_data, body, model_name, is_openai
+                )
+                if fo_result is not None:
+                    self._stats["failover_quota_succeeded"] = (
+                        self._stats.get("failover_quota_succeeded", 0) + 1
+                    )
+                    self._record_failover_event(quota_token, "success", local_model)
+                    self._emit_failover_notice(quota_token, translated=True)
+                    return 200, {"content-type": "application/json"}, fo_result[2]
+                else:
+                    self._stats["failover_quota_failed"] = (
+                        self._stats.get("failover_quota_failed", 0) + 1
+                    )
+                    self._record_failover_event(quota_token, "failed", local_model)
+                    # Google / unknown provider: notify even though we can't translate
+                    if not is_openai and "/v1/messages" not in path:
+                        self._emit_failover_notice(quota_token, translated=False)
+                    # Fall through → return original cloud 429
 
         # === OUTBOUND FILTERING ===
         if not is_streaming and status == 200 and resp_body:
@@ -285,17 +476,98 @@ class LLMProxy:
         if self.credential_injector and base_url == ANTHROPIC_API_BASE:
             self.credential_injector.inject_headers("api.anthropic.com", forward_headers)
 
+        _failover_opt_out = headers.get("x-agentshroud-no-failover", "") == "1"
+        _failover_enabled = os.environ.get("AGENTSHROUD_FAILOVER_ON_QUOTA", "1") == "1"
+
         async def _stream() -> AsyncIterator[bytes]:
+            import httpx as _httpx
+            collected_status: list[int] = []
+            collected_body: list[bytes] = []
+
             try:
-                async with httpx.AsyncClient(
-                    verify=True, timeout=httpx.Timeout(5.0, read=1800.0)
+                async with _httpx.AsyncClient(
+                    verify=True, timeout=_httpx.Timeout(5.0, read=1800.0)
                 ) as client:
                     async with client.stream(
                         "POST", url, content=body, headers=forward_headers
                     ) as response:
+                        collected_status.append(response.status_code)
+                        # Buffer first chunk to detect quota errors before committing
+                        first_chunk: bytes | None = None
                         async for chunk in response.aiter_bytes():
                             if chunk:
-                                yield chunk
+                                if first_chunk is None:
+                                    first_chunk = chunk
+                                else:
+                                    # First non-quota chunk already yielded — just stream
+                                    yield chunk
+
+                        if first_chunk is not None:
+                            # Check for quota error in first chunk before yielding
+                            if (
+                                _failover_enabled
+                                and not _failover_opt_out
+                                and not is_ollama
+                                and response.status_code in (429, 402)
+                            ):
+                                quota_hit, quota_token = is_quota_exhausted(
+                                    response.status_code, first_chunk
+                                )
+                                if quota_hit:
+                                    local_model = self._get_local_model()
+                                    logger.info(
+                                        "Streaming quota failover (%s) → %s",
+                                        quota_token, local_model,
+                                    )
+                                    try:
+                                        if is_openai:
+                                            fo_data = dict(request_data or {})
+                                            fo_data["model"] = local_model
+                                            fo_body = json.dumps(fo_data).encode()
+                                            fo_url = f"{OLLAMA_API_BASE}/v1/chat/completions"
+                                        elif "/v1/messages" in path:
+                                            oai_req = anthropic_to_openai_request(
+                                                request_data or {}, local_model
+                                            )
+                                            fo_body = json.dumps(oai_req).encode()
+                                            fo_url = f"{OLLAMA_API_BASE}/v1/chat/completions"
+                                        else:
+                                            self._emit_failover_notice(quota_token, translated=False)
+                                            yield first_chunk
+                                            return
+
+                                        async with _httpx.AsyncClient(
+                                            verify=True, timeout=_httpx.Timeout(5.0, read=1800.0)
+                                        ) as fo_client:
+                                            async with fo_client.stream(
+                                                "POST", fo_url,
+                                                content=fo_body,
+                                                headers={"content-type": "application/json"},
+                                            ) as fo_resp:
+                                                if fo_resp.status_code == 200:
+                                                    self._stats["failover_quota_succeeded"] = (
+                                                        self._stats.get("failover_quota_succeeded", 0) + 1
+                                                    )
+                                                    self._record_failover_event(quota_token, "success", local_model)
+                                                    self._emit_failover_notice(quota_token, translated=True)
+                                                    if "/v1/messages" in path:
+                                                        async for translated in translate_openai_sse_to_anthropic(
+                                                            fo_resp.aiter_bytes(), model_name
+                                                        ):
+                                                            yield translated
+                                                    else:
+                                                        async for fo_chunk in fo_resp.aiter_bytes():
+                                                            if fo_chunk:
+                                                                yield fo_chunk
+                                                    return
+                                    except Exception as fe:
+                                        logger.warning("Streaming failover error: %s", fe)
+                                    # Failover failed — fall through, yield original first chunk
+                                    self._stats["failover_quota_failed"] = (
+                                        self._stats.get("failover_quota_failed", 0) + 1
+                                    )
+                            yield first_chunk
+
             except Exception as e:
                 logger.error("LLM proxy streaming error: %s", e)
                 err = json.dumps(
