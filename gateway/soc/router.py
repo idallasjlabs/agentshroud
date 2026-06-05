@@ -1739,6 +1739,26 @@ async def get_modules(caller: SCLCaller = Depends(get_caller)) -> List[Dict]:
     return modules
 
 
+@router.get("/llm/failover")
+async def get_llm_failover_stats(caller: SCLCaller = Depends(get_caller)) -> Dict:
+    """Return current LLM quota failover statistics."""
+    caller.require(Action.READ, Resource.SYSTEM)
+    app = _app_state()
+    proxy = getattr(app, "llm_proxy", None)
+    if proxy is None:
+        return {"available": False, "succeeded": 0, "failed": 0, "active": False}
+    stats = proxy.get_stats()
+    return {
+        "available": True,
+        "succeeded": stats.get("failover_quota_succeeded", 0),
+        "failed": stats.get("failover_quota_failed", 0),
+        "active": stats.get("failover_active", False),
+        "last_provider": stats.get("failover_last_provider"),
+        "last_event": stats.get("failover_last_event"),
+        "local_model": proxy._get_local_model(),
+    }
+
+
 class SetModuleModeRequest(BaseModel):
     mode: str  # "enforce" | "monitor" | "disabled"
 
