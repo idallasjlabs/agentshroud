@@ -136,6 +136,19 @@ class PIISanitizer:
 
                 registry = RecognizerRegistry(supported_languages=["en"])
                 registry.load_predefined_recognizers(languages=["en"])
+                # Register TELEGRAM_UID ahead of PHONE_NUMBER so bare 7-12 digit
+                # platform IDs score higher (0.95) than the phone recognizer and
+                # are kept rather than redacted (see _sanitize_presidio operator map).
+                from presidio_analyzer import Pattern as _Pattern
+                from presidio_analyzer import PatternRecognizer as _PRec
+
+                _uid_rec = _PRec(
+                    supported_entity="TELEGRAM_UID",
+                    patterns=[_Pattern(name="telegram_uid", regex=r"\b\d{7,12}\b", score=0.95)],
+                    context=["uid", "user_id", "user id", "id", "telegram"],
+                    supported_language="en",
+                )
+                registry.add_recognizer(_uid_rec)
                 self.analyzer = AnalyzerEngine(
                     nlp_engine=nlp_engine,
                     supported_languages=["en"],
@@ -199,8 +212,11 @@ class PIISanitizer:
         """
 
         def _analyze_and_anonymize() -> RedactionResult:
-            # Map internal entity names to Presidio names
-            entities = self.config.entities
+            # Always include TELEGRAM_UID so it wins over PHONE_NUMBER for bare
+            # digit sequences — the recognizer scores 0.95 vs phone's ~0.75.
+            entities = list(self.config.entities)
+            if "TELEGRAM_UID" not in entities:
+                entities.append("TELEGRAM_UID")
 
             # Analyze
             results = self.analyzer.analyze(text=content, entities=entities, language="en")
@@ -213,10 +229,16 @@ class PIISanitizer:
                     sanitized_content=content, redactions=[], entity_types_found=[]
                 )
 
-            # Anonymize
-            anonymized = self.anonymizer.anonymize(text=content, analyzer_results=results)
+            # TELEGRAM_UID → keep (platform IDs are not PII in this audit context).
+            from presidio_anonymizer.entities import OperatorConfig as _OC
 
-            # Build redaction details
+            operators = {"TELEGRAM_UID": _OC("keep", {})}
+            # Anonymize
+            anonymized = self.anonymizer.anonymize(
+                text=content, analyzer_results=results, operators=operators
+            )
+
+            # Build redaction details — exclude TELEGRAM_UID (kept, not redacted).
             redactions = [
                 RedactionDetail(
                     entity_type=r.entity_type,
@@ -226,9 +248,12 @@ class PIISanitizer:
                     replacement=f"<{r.entity_type}>",
                 )
                 for r in results
+                if r.entity_type != "TELEGRAM_UID"
             ]
 
-            entity_types = list(set(r.entity_type for r in results))
+            entity_types = list(
+                set(r.entity_type for r in results if r.entity_type != "TELEGRAM_UID")
+            )
 
             return RedactionResult(
                 sanitized_content=anonymized.text,
@@ -311,7 +336,11 @@ class PIISanitizer:
             patterns.append(
                 (
                     "PHONE_NUMBER",
-                    re.compile(r"\b(?:\+?1[-.\s]?)?\(?\d{3}\)?[-.\s]?\d{3}[-.\s]?\d{4}\b"),
+                    # Separator after area code is now REQUIRED (was optional).
+                    # This prevents bare 10-digit platform IDs (Telegram UIDs, etc.)
+                    # from matching. Real phone numbers virtually always carry a
+                    # separator between area code and exchange.
+                    re.compile(r"\b(?:\+?1[-.\s]?)?\(?\d{3}\)?[-.\s]\d{3}[-.\s]?\d{4}\b"),
                     "<PHONE_NUMBER>",
                 )
             )

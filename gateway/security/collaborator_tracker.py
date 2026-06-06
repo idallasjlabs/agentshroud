@@ -22,6 +22,22 @@ logger = logging.getLogger("agentshroud.security.collaborator_tracker")
 
 _PREVIEW_MAX = 80
 
+# Minimum digit length for a real Telegram/Slack UID.
+# Telegram issues UIDs ≥ 9 digits; Slack uses "U" + base36 (non-numeric).
+# Anything shorter is a test fixture and should never reach the production log.
+_UID_MIN_DIGIT_LEN = 7
+
+
+def _is_fixture_uid(uid: str) -> bool:
+    """Return True when uid looks like a test fixture that should be silently dropped.
+
+    Protects production contributor logs from pytest artifacts (uid=42, uid=999, etc.).
+    """
+    if uid.isdigit() and len(uid) < _UID_MIN_DIGIT_LEN:
+        return True
+    _lower = uid.lower()
+    return _lower.startswith("test_user") or _lower.startswith("test-user")
+
 
 class CollaboratorActivityTracker:
     """Tracks collaborator messages at the gateway level.
@@ -41,9 +57,11 @@ class CollaboratorActivityTracker:
         owner_user_id: str,
         collaborator_ids: list[str],
         contributor_log_dir: Optional[Path] = None,
+        owner_display_name: str = "Owner",
     ) -> None:
         self.log_path = log_path
         self.owner_user_id = str(owner_user_id)
+        self.owner_display_name = owner_display_name or "Owner"
         self.collaborator_ids: set[str] = {str(uid) for uid in (collaborator_ids or [])}
         self.track_unknown_non_owner = str(
             os.environ.get("AGENTSHROUD_TRACK_ALL_NON_OWNER_ACTIVITY", "true")
@@ -91,6 +109,18 @@ class CollaboratorActivityTracker:
                 "CollaboratorActivityTracker: no contributor log dirs writable; configured=%s",
                 [str(p) for p in self.contributor_log_dirs],
             )
+        self.writes_ok: int = 0
+        self.writes_failed: int = 0
+        self._write_error_throttle: float = 0.0  # last time we emitted a write-error log
+
+    def get_health(self) -> dict:
+        """Return a health snapshot suitable for /status/detail."""
+        return {
+            "healthy": self.writes_failed == 0,
+            "log_path": str(self.log_path),
+            "writes_total": self.writes_ok + self.writes_failed,
+            "writes_failed": self.writes_failed,
+        }
 
     def record_activity(
         self,
@@ -115,7 +145,16 @@ class CollaboratorActivityTracker:
             bot_id: Optional bot identity (e.g. "openclaw", "hermes") for per-bot filtering.
         """
         uid = str(user_id)
+        # Drop test-fixture UIDs before any write — they must never reach the
+        # production JSONL or the markdown contributor mirrors.
+        if _is_fixture_uid(uid):
+            return
         is_owner = uid == self.owner_user_id
+        # Replace owner's Telegram display name with a stable configured label
+        # to avoid log pollution when the owner's first_name contains special
+        # characters (e.g. pipe symbols that normalize to slashes).
+        if is_owner:
+            username = self.owner_display_name
         if not is_owner:
             if uid not in self.collaborator_ids and self.track_unknown_non_owner:
                 self.collaborator_ids.add(uid)
@@ -138,8 +177,17 @@ class CollaboratorActivityTracker:
         try:
             with self.log_path.open("a", encoding="utf-8") as fh:
                 fh.write(json.dumps(entry) + "\n")
+            self.writes_ok += 1
         except OSError as exc:
-            logger.warning("CollaboratorActivityTracker: write failed: %s", exc)
+            self.writes_failed += 1
+            _now = time.time()
+            if _now - self._write_error_throttle > 60:
+                self._write_error_throttle = _now
+                logger.error(
+                    "CollaboratorActivityTracker: JSONL write failed (writes_failed=%d): %s",
+                    self.writes_failed,
+                    exc,
+                )
         self._append_contributor_log(entry)
 
     def _append_contributor_log(self, entry: dict) -> None:

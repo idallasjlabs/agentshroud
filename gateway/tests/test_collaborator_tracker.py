@@ -393,3 +393,75 @@ def test_pruner_real_telegram_uids_not_flagged():
     real_ids = ["7614658040", "8506022825", "123456789012"]
     for uid in real_ids:
         assert not (uid.isdigit() and int(uid) < 10000), f"{uid} should NOT be flagged"
+
+
+# ── fixture gate (Bug B) ──────────────────────────────────────────────────────
+
+
+def test_fixture_uid_writes_blocked(log_file, monkeypatch):
+    """Short numeric UIDs (< 7 digits) must be silently dropped before any write."""
+    monkeypatch.setenv("AGENTSHROUD_TRACK_ALL_NON_OWNER_ACTIVITY", "true")
+    contributor_dir = log_file.parent / "contributors"
+    monkeypatch.setenv("AGENTSHROUD_CONTRIBUTOR_LOG_DIRS", str(contributor_dir))
+    t = CollaboratorActivityTracker(
+        log_path=log_file,
+        owner_user_id="9876543210",
+        collaborator_ids=[],
+        contributor_log_dir=contributor_dir,
+    )
+    t.record_activity("42", "FixtureUser", "hello", "telegram")
+    assert not log_file.exists() or log_file.read_text().strip() == ""
+    assert list(contributor_dir.glob("*-42.md")) == []
+
+
+def test_real_uid_writes_unblocked(log_file, monkeypatch):
+    """10-digit real UID must still be written to JSONL and markdown."""
+    monkeypatch.setenv("AGENTSHROUD_TRACK_ALL_NON_OWNER_ACTIVITY", "true")
+    contributor_dir = log_file.parent / "contributors"
+    monkeypatch.setenv("AGENTSHROUD_CONTRIBUTOR_LOG_DIRS", str(contributor_dir))
+    t = CollaboratorActivityTracker(
+        log_path=log_file,
+        owner_user_id="9999999999",
+        collaborator_ids=[],
+        contributor_log_dir=contributor_dir,
+    )
+    t.record_activity("8506022825", "Brett", "hello", "telegram")
+    assert log_file.exists() and log_file.read_text().strip() != ""
+    assert list(contributor_dir.glob("*-8506022825.md")) != []
+
+
+def test_test_user_prefix_blocked(log_file, monkeypatch):
+    """UIDs matching test_user* prefix must be silently dropped."""
+    monkeypatch.setenv("AGENTSHROUD_TRACK_ALL_NON_OWNER_ACTIVITY", "true")
+    contributor_dir = log_file.parent / "contributors"
+    monkeypatch.setenv("AGENTSHROUD_CONTRIBUTOR_LOG_DIRS", str(contributor_dir))
+    t = CollaboratorActivityTracker(
+        log_path=log_file,
+        owner_user_id="9876543210",
+        collaborator_ids=[],
+        contributor_log_dir=contributor_dir,
+    )
+    t.record_activity("test_user_123", "TestBot", "hello", "telegram")
+    assert not log_file.exists() or log_file.read_text().strip() == ""
+
+
+# ── owner_display_name (Bug C) ────────────────────────────────────────────────
+
+
+def test_owner_display_name_overrides_pipe(log_file, monkeypatch):
+    """Owner's Telegram first_name with pipe chars is replaced by owner_display_name."""
+    monkeypatch.setenv("AGENTSHROUD_TRACK_ALL_NON_OWNER_ACTIVITY", "false")
+    contributor_dir = log_file.parent / "contributors"
+    monkeypatch.setenv("AGENTSHROUD_CONTRIBUTOR_LOG_DIRS", str(contributor_dir))
+    t = CollaboratorActivityTracker(
+        log_path=log_file,
+        owner_user_id="8096968754",
+        collaborator_ids=[],
+        contributor_log_dir=contributor_dir,
+        owner_display_name="Isaiah",
+    )
+    t.record_activity("8096968754", "Test|Isaiah owner", "cmd", "telegram")
+    entry = json.loads(log_file.read_text().strip())
+    assert entry["username"] == "Isaiah"
+    assert "Test" not in entry["username"]
+    assert "/" not in entry["username"]
