@@ -153,6 +153,7 @@ class StatusResponse(BaseModel):
     security_summary: Optional[dict] = Field(None, description="Security modules summary")
     egress: Optional[dict] = Field(None, description="Egress firewall stats")
     proxies: Optional[dict] = Field(None, description="Proxy subsystem health (http, dns)")
+    tracker: Optional[dict] = Field(None, description="Collaborator activity tracker health")
 
 
 class ApprovalQueueItem(BaseModel):
