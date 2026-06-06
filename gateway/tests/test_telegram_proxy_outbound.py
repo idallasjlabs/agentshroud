@@ -4523,3 +4523,318 @@ class TestReplayBufferOffsetParsing:
             )
 
         mock_buf.mark_delivered.assert_called_once_with("openclaw", 55)
+
+
+# ─────────────────────────────────────────────────────────────────────────────
+# Tests: egress banner matcher + spurious notification removal (fix/egress-notify)
+# ─────────────────────────────────────────────────────────────────────────────
+
+
+class TestInternalBannerMatcher:
+    """_contains_internal_approval_banner must only fire on real egress banners."""
+
+    def test_no_false_positive_on_generic_llm_response(self):
+        """Common LLM prose with 'risk:', 'tool:', 'id:' must NOT trigger the matcher."""
+        text = "Risk: low. Tool: web_search. ID: abc123. Here is my analysis."
+        assert TelegramAPIProxy._contains_internal_approval_banner(text) is False
+
+    def test_no_false_positive_on_domain_mention(self):
+        """Generic 'domain:' mention without the egress emoji must not trigger."""
+        text = "The request domain: example.com returned a 200 OK response."
+        assert TelegramAPIProxy._contains_internal_approval_banner(text) is False
+
+    def test_true_on_real_egress_banner_header(self):
+        """The canonical 🌐 *Egress Request* header from TelegramEgressNotifier must match."""
+        text = "🌐 *Egress Request*\n\nDomain: `api.example.com:443`\nRisk: 🟡 medium\nTool: `web_search`\nAgent: `openclaw`\nID: `abcd1234`"
+        assert TelegramAPIProxy._contains_internal_approval_banner(text) is True
+
+    def test_true_on_callback_token(self):
+        """Inline-keyboard callback tokens must always match (egress_allow_always_<uuid>)."""
+        text = "egress_allow_always_550e8400-e29b-41d4-a716-446655440000"
+        assert TelegramAPIProxy._contains_internal_approval_banner(text) is True
+
+    def test_true_on_deny_token(self):
+        """egress_deny_ callback token must match."""
+        text = "egress_deny_550e8400-e29b-41d4-a716-446655440000"
+        assert TelegramAPIProxy._contains_internal_approval_banner(text) is True
+
+    def test_false_on_empty_string(self):
+        assert TelegramAPIProxy._contains_internal_approval_banner("") is False
+
+    def test_false_on_non_string(self):
+        assert TelegramAPIProxy._contains_internal_approval_banner(None) is False  # type: ignore[arg-type]
+
+
+class TestEgressBannerRedactionNoOwnerNotice:
+    """Outbound filter must redact egress banners but NOT call _send_owner_admin_notice."""
+
+    @pytest.mark.asyncio
+    async def test_redaction_silent_no_owner_notice(self):
+        """When outbound text matches the banner, text is replaced but owner is NOT notified."""
+        sanitizer = _make_sanitizer()
+        proxy = TelegramAPIProxy(sanitizer=sanitizer)
+
+        # Patch _send_owner_admin_notice — it must NOT be called.
+        with unittest.mock.patch.object(
+            proxy, "_send_owner_admin_notice", new_callable=unittest.mock.AsyncMock
+        ) as mock_notice:
+            body = json.dumps(
+                {
+                    "chat_id": "99999",
+                    "text": "🌐 *Egress Request*\n\nDomain: `bad.com:443`\nRisk: 🔴 critical\nTool: `shell`\nAgent: `openclaw`\nID: `abc12345`",
+                }
+            ).encode()
+            result = await proxy._filter_outbound(body, "application/json")
+
+        mock_notice.assert_not_called()
+        result_data = json.loads(result)
+        # Text must be replaced (not the original banner).
+        assert "Egress Request" not in result_data.get("text", "")
+
+
+class TestPendingNoticeIncludesEgressSection:
+    """_send_owner_pending_notice must append Pending Egress Requests when queue non-empty."""
+
+    @pytest.mark.asyncio
+    async def test_pending_includes_egress_entries(self):
+        sanitizer = _make_sanitizer()
+        proxy = TelegramAPIProxy(sanitizer=sanitizer)
+        proxy._bot_token = "TESTTOKEN"
+
+        # Fake egress request with attribute-style access.
+        class _FakeReq:
+            domain = "evil.com"
+            port = 443
+            risk_level = "high"
+            tool_name = "shell"
+            created_at = time.time()
+
+        fake_queue = unittest.mock.AsyncMock()
+        fake_queue._lock = asyncio.Lock()
+        fake_queue._pending_requests = {"aabbccdd-1234-5678-abcd-ef0123456789": _FakeReq()}
+
+        sent_msgs: list[str] = []
+
+        async def _capture(chat_id, msg, *, collaborator_safe=True):
+            sent_msgs.append(msg)
+
+        proxy._send_local_notice_with_fallback = _capture  # type: ignore[method-assign]
+
+        import gateway.ingest_api.state as _state
+
+        orig = getattr(_state.app_state, "egress_approval_queue", None)
+        try:
+            _state.app_state.egress_approval_queue = fake_queue
+            await proxy._send_owner_pending_notice(chat_id=12345)
+        finally:
+            if orig is None:
+                try:
+                    del _state.app_state.egress_approval_queue
+                except AttributeError:
+                    pass
+            else:
+                _state.app_state.egress_approval_queue = orig
+
+        assert sent_msgs, "No message sent"
+        combined = "\n".join(sent_msgs)
+        assert "Pending Egress Requests" in combined
+        assert "evil.com" in combined
+        assert "shell" in combined
+
+
+class TestOwnerActivityNotice:
+    """_send_owner_activity_notice must render tracker entries or honest error."""
+
+    @pytest.mark.asyncio
+    async def test_activity_command_renders_entries(self):
+        """When tracker has entries, /activity renders them."""
+        sanitizer = _make_sanitizer()
+        proxy = TelegramAPIProxy(sanitizer=sanitizer)
+        proxy._bot_token = "TESTTOKEN"
+
+        fake_tracker = unittest.mock.MagicMock()
+        fake_tracker.get_activity.return_value = [
+            {
+                "timestamp": time.time() - 10,
+                "username": "Brett",
+                "user_id": "8506022825",
+                "direction": "inbound",
+                "message_preview": "hello world",
+                "bot_id": "openclaw",
+            }
+        ]
+
+        sent_msgs: list[str] = []
+
+        async def _capture(chat_id, msg, *, collaborator_safe=True):
+            sent_msgs.append(msg)
+
+        proxy._send_local_notice_with_fallback = _capture  # type: ignore[method-assign]
+
+        import gateway.ingest_api.state as _state
+
+        orig = getattr(_state.app_state, "collaborator_tracker", None)
+        try:
+            _state.app_state.collaborator_tracker = fake_tracker
+            await proxy._send_owner_activity_notice(chat_id=12345)
+        finally:
+            _state.app_state.collaborator_tracker = orig
+
+        combined = "\n".join(sent_msgs)
+        assert "Brett" in combined
+        assert "hello world" in combined
+
+    @pytest.mark.asyncio
+    async def test_activity_command_reports_tracker_unhealthy(self):
+        """When tracker is None, /activity returns honest error, not silent empty."""
+        sanitizer = _make_sanitizer()
+        proxy = TelegramAPIProxy(sanitizer=sanitizer)
+        proxy._bot_token = "TESTTOKEN"
+
+        sent_msgs: list[str] = []
+
+        async def _capture(chat_id, msg, *, collaborator_safe=True):
+            sent_msgs.append(msg)
+
+        proxy._send_local_notice_with_fallback = _capture  # type: ignore[method-assign]
+
+        import gateway.ingest_api.state as _state
+
+        orig = getattr(_state.app_state, "collaborator_tracker", None)
+        orig_err = getattr(_state.app_state, "collaborator_tracker_init_error", None)
+        try:
+            _state.app_state.collaborator_tracker = None
+            _state.app_state.collaborator_tracker_init_error = "disk full"
+            await proxy._send_owner_activity_notice(chat_id=12345)
+        finally:
+            _state.app_state.collaborator_tracker = orig
+            if orig_err is None:
+                try:
+                    del _state.app_state.collaborator_tracker_init_error
+                except AttributeError:
+                    pass
+            else:
+                _state.app_state.collaborator_tracker_init_error = orig_err
+
+        combined = "\n".join(sent_msgs)
+        assert "not initialized" in combined.lower() or "Activity tracker" in combined
+        assert "disk full" in combined
+
+
+class TestOwnerMirrorCoalescing:
+    """_mirror_to_owner_if_collaborator must coalesce within the window."""
+
+    @pytest.mark.asyncio
+    async def test_two_messages_within_window_send_only_one_mirror(self):
+        sanitizer = _make_sanitizer()
+        proxy = TelegramAPIProxy(sanitizer=sanitizer)
+        proxy._bot_token = "TESTTOKEN"
+        proxy._collab_mirror_window = 60.0
+
+        # Give the proxy an RBAC mock with owner_user_id
+        class _FakeRBAC:
+            owner_user_id = "1111111111"
+
+        proxy._rbac = _FakeRBAC()
+
+        sent: list[str] = []
+
+        async def _fake_admin_notice(owner_id: int, msg: str) -> None:
+            sent.append(msg)
+
+        proxy._send_owner_admin_notice = _fake_admin_notice  # type: ignore[method-assign]
+
+        # First call — should send.
+        await proxy._mirror_to_owner_if_collaborator(
+            direction="inbound",
+            user_id="8506022825",
+            username="Brett",
+            preview="hello",
+            bot_id="openclaw",
+        )
+        # Second call within the 60s window — should be suppressed.
+        await proxy._mirror_to_owner_if_collaborator(
+            direction="inbound",
+            user_id="8506022825",
+            username="Brett",
+            preview="hello again",
+            bot_id="openclaw",
+        )
+
+        assert len(sent) == 1, f"Expected 1 mirror send, got {len(sent)}"
+
+    @pytest.mark.asyncio
+    async def test_second_message_after_window_sends_again(self):
+        sanitizer = _make_sanitizer()
+        proxy = TelegramAPIProxy(sanitizer=sanitizer)
+        proxy._bot_token = "TESTTOKEN"
+        proxy._collab_mirror_window = 60.0
+
+        class _FakeRBAC:
+            owner_user_id = "1111111111"
+
+        proxy._rbac = _FakeRBAC()
+
+        sent: list[str] = []
+
+        async def _fake_admin_notice(owner_id: int, msg: str) -> None:
+            sent.append(msg)
+
+        proxy._send_owner_admin_notice = _fake_admin_notice  # type: ignore[method-assign]
+
+        # Backdate the last-sent timestamp to simulate window expiry.
+        proxy._collab_mirror_last_sent[("8506022825", "inbound")] = time.time() - 120
+
+        await proxy._mirror_to_owner_if_collaborator(
+            direction="inbound",
+            user_id="8506022825",
+            username="Brett",
+            preview="message after window",
+            bot_id="openclaw",
+        )
+
+        assert len(sent) == 1, "Expected exactly one mirror after window expired"
+
+
+class TestTrackerGetHealth:
+    """CollaboratorActivityTracker.get_health() must return accurate counters."""
+
+    def test_initial_state_healthy(self, tmp_path):
+        from gateway.security.collaborator_tracker import CollaboratorActivityTracker
+
+        t = CollaboratorActivityTracker(
+            log_path=tmp_path / "activity.jsonl",
+            owner_user_id="1111",
+            collaborator_ids=[],
+        )
+        h = t.get_health()
+        assert h["healthy"] is True
+        assert h["writes_total"] == 0
+        assert h["writes_failed"] == 0
+
+    def test_failed_write_makes_unhealthy(self, tmp_path):
+        from gateway.security.collaborator_tracker import CollaboratorActivityTracker
+
+        # Create tracker pointing to a file in a non-writable location.
+        log_path = tmp_path / "subdir" / "activity.jsonl"
+        # subdir exists but we will make the file unwritable after creating it.
+        log_path.parent.mkdir()
+        log_path.touch()
+        log_path.chmod(0o000)  # no permissions
+
+        t = CollaboratorActivityTracker(
+            log_path=log_path,
+            owner_user_id="1111",
+            collaborator_ids=["9999999999"],
+        )
+        t.record_activity(
+            user_id="9999999999",
+            username="tester",
+            message_preview="test",
+            source="telegram",
+            direction="inbound",
+        )
+        h = t.get_health()
+        assert h["healthy"] is False
+        assert h["writes_failed"] > 0
+        log_path.chmod(0o644)  # restore so tmp_path cleanup works
