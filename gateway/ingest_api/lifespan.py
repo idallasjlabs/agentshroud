@@ -607,6 +607,24 @@ async def lifespan(app: FastAPI):
             sanitizer=app_state.sanitizer,
             credential_injector=getattr(app_state.middleware_manager, "credential_injector", None),
         )
+        # Wire audit chain for persistent failover event logging
+        if hasattr(app_state, "audit_chain") and app_state.audit_chain is not None:
+            app_state.llm_proxy.audit_chain = app_state.audit_chain
+
+        # Startup probe: warn if failover is enabled but Ollama is unreachable
+        import os as _os
+        import urllib.request as _urllib_req
+
+        if _os.environ.get("AGENTSHROUD_FAILOVER_ON_QUOTA", "1") == "1":
+            try:
+                _urllib_req.urlopen("http://host.docker.internal:11434/api/tags", timeout=3)
+                logger.info("LLM failover: Ollama reachable at host.docker.internal:11434")
+            except Exception:
+                logger.warning(
+                    "LLM failover: AGENTSHROUD_FAILOVER_ON_QUOTA=1 but Ollama is unreachable "
+                    "at host.docker.internal:11434 — failover will fail loud if triggered"
+                )
+
         logger.info("LLM proxy initialized")
     except Exception as e:
         logger.error(f"Failed to initialize LLM proxy: {e}")

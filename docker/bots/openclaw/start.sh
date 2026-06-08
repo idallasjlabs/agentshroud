@@ -359,7 +359,7 @@ trap '
         echo "[startup] ✓ Memory backed up before shutdown"
     fi
     echo "[startup] Sending Telegram notification..."
-    _telegram_send "🔴 AgentShroud shutting down" \
+    _telegram_send "🔴 OpenClaw shutting down" \
         && echo "[startup] ✓ Sent Telegram shutdown notification" \
         || echo "[startup] ⚠ Could not send Telegram shutdown notification"
     kill $OPENCLAW_PID 2>/dev/null
@@ -386,7 +386,7 @@ trap '
 
     mkdir -p "$(dirname "${_STARTUP_NOTICE_STAMP}")" 2>/dev/null || true
     printf '%s\n' "${now_epoch}" > "${_STARTUP_NOTICE_STAMP}" 2>/dev/null || true
-    _telegram_send "🟡 AgentShroud starting" \
+    _telegram_send "🟡 OpenClaw starting" \
         && echo "[startup] ✓ Sent Telegram starting notification" \
         || echo "[startup] ⚠ Could not send Telegram starting notification"
 
@@ -403,15 +403,15 @@ trap '
     done
 
     if [ "${ready}" = "yes" ]; then
-        if _telegram_send_photo "🛡️ AgentShroud™ online — ${_INSTANCE_LABEL}" "/app/branding/logo.png"; then
+        if _telegram_send_photo "🛡️ OpenClaw online — ${_INSTANCE_LABEL}" "/app/branding/logo.png"; then
             echo "[startup] ✓ Sent Telegram startup photo notification"
         else
-            _telegram_send "🛡️ AgentShroud online — ${_INSTANCE_LABEL}" \
+            _telegram_send "🛡️ OpenClaw online — ${_INSTANCE_LABEL}" \
                 && echo "[startup] ✓ Sent Telegram startup notification" \
                 || echo "[startup] ⚠ Could not send Telegram startup notification"
         fi
     else
-        _telegram_send "🟠 AgentShroud starting (readiness delayed)" \
+        _telegram_send "🟠 OpenClaw starting (readiness delayed)" \
             && echo "[startup] ⚠ Sent delayed startup notification" \
             || echo "[startup] ⚠ Could not send delayed startup notification"
     fi
