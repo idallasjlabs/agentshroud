@@ -364,6 +364,40 @@ _slack_send() {
         >/dev/null 2>&1
 }
 
+_telegram_send_photo() {
+    local caption="$1"
+    local photo_path="${2:-/app/branding/logo.png}"
+    local token
+    token="$(_telegram_bot_token)"
+    if [ -z "$token" ]; then
+        echo "[startup] ⚠ Photo notification: no bot token available" >&2
+        return 1
+    fi
+    if [ ! -f "$photo_path" ]; then
+        echo "[startup] ⚠ Photo notification: logo file not found at ${photo_path}" >&2
+        return 1
+    fi
+    # Logo PNG is ~300 KB; on a VPN link the upload can take up to 30s.
+    local resp exit_code
+    resp=$(curl -s --max-time 45 -X POST "${_GATEWAY_TELEGRAM_BASE}/bot${token}/sendPhoto" \
+        -H "Authorization: Bearer ${GATEWAY_AUTH_TOKEN:-}" \
+        -H "X-AgentShroud-System: 1" \
+        -F "chat_id=${_OWNER_CHAT_ID}" \
+        -F "caption=${caption}" \
+        -F "photo=@${photo_path}" \
+        2>/dev/null)
+    exit_code=$?
+    if [ "$exit_code" -ne 0 ]; then
+        echo "[startup] ⚠ Photo notification: curl failed (exit=${exit_code})" >&2
+        return 1
+    fi
+    if ! echo "$resp" | /usr/bin/grep -q '"ok":true'; then
+        echo "[startup] ⚠ Photo notification: gateway error: ${resp:0:200}" >&2
+        return 1
+    fi
+    return 0
+}
+
 _telegram_get_me_ready() {
     local token
     token="$(_telegram_bot_token)"
@@ -415,10 +449,10 @@ trap '
         echo "[startup] ✓ Memory backed up before shutdown"
     fi
     echo "[startup] Sending shutdown notifications..."
-    _telegram_send "🔴 AgentShroud shutting down" \
+    _telegram_send "🔴 OpenClaw shutting down" \
         && echo "[startup] ✓ Sent Telegram shutdown notification" \
         || echo "[startup] ⚠ Could not send Telegram shutdown notification"
-    _slack_send "AgentShroud shutting down" \
+    _slack_send "OpenClaw shutting down" \
         && echo "[startup] ✓ Sent Slack shutdown notification" \
         || true
     kill $OPENCLAW_PID 2>/dev/null
@@ -426,6 +460,9 @@ trap '
 
 # Wait for gateway/model/telegram readiness, then send startup notifications
 (
+    # Isolate from parent set -euo pipefail so transient failures never kill the subshell
+    set +euo pipefail 2>/dev/null || true
+
     now_epoch="$(date +%s)"
     last_notice_epoch=""
     if [ -f "${_STARTUP_NOTICE_STAMP}" ]; then
@@ -446,35 +483,57 @@ trap '
 
     mkdir -p "$(dirname "${_STARTUP_NOTICE_STAMP}")" 2>/dev/null || true
     printf '%s\n' "${now_epoch}" > "${_STARTUP_NOTICE_STAMP}" 2>/dev/null || true
-    _telegram_send "🟡 AgentShroud starting" \
+    _telegram_send "🟡 OpenClaw starting" \
         && echo "[startup] ✓ Sent Telegram starting notification" \
         || echo "[startup] ⚠ Could not send Telegram starting notification"
-    _slack_send "AgentShroud starting" || true
+    _slack_send "OpenClaw starting" || true
 
     # Poll OpenClaw HTTP endpoint and Telegram/model readiness — up to 120s
     ready="no"
     for _i in $(seq 1 60); do
-        if curl -sf http://localhost:18789/ >/dev/null 2>&1 \
-            && _telegram_get_me_ready \
-            && _model_runtime_ready; then
+        _http_ok=0
+        _tg_ok=0
+        _model_ok=0
+        curl -sf http://localhost:18789/ >/dev/null 2>&1 && _http_ok=1
+        _telegram_get_me_ready && _tg_ok=1
+        _model_runtime_ready && _model_ok=1
+        if [ "${_http_ok}" = "1" ] && [ "${_tg_ok}" = "1" ] && [ "${_model_ok}" = "1" ]; then
             ready="yes"
             break
         fi
         sleep 2
     done
 
+    echo "[startup] Readiness result: ready=${ready}"
+
     if [ "${ready}" = "yes" ]; then
-        _telegram_send "🛡️ AgentShroud online" \
-            && echo "[startup] ✓ Sent Telegram startup notification" \
-            || echo "[startup] ⚠ Could not send Telegram startup notification"
-        _slack_send "AgentShroud online" \
+        # Give the Telegram provider a moment to finish initialising before the photo upload
+        sleep 5
+        _photo_sent="no"
+        for _attempt in 1 2 3; do
+            echo "[startup] Photo attempt ${_attempt}/3..."
+            if _telegram_send_photo "🛡️ OpenClaw online — ${_INSTANCE_LABEL}" "/app/branding/logo.png"; then
+                echo "[startup] ✓ Sent Telegram startup photo notification"
+                _photo_sent="yes"
+                break
+            fi
+            echo "[startup] ⚠ Photo attempt ${_attempt}/3 failed — retrying in 5s"
+            sleep 5
+        done
+        if [ "${_photo_sent}" != "yes" ]; then
+            echo "[startup] Falling back to text notification"
+            _telegram_send "🛡️ OpenClaw online — ${_INSTANCE_LABEL}" \
+                && echo "[startup] ✓ Sent Telegram startup notification" \
+                || echo "[startup] ⚠ Could not send Telegram startup notification"
+        fi
+        _slack_send "OpenClaw online" \
             && echo "[startup] ✓ Sent Slack startup notification" \
             || true
     else
-        _telegram_send "🟠 AgentShroud starting (readiness delayed)" \
+        _telegram_send "🟠 OpenClaw starting (readiness delayed)" \
             && echo "[startup] ⚠ Sent delayed startup notification" \
             || echo "[startup] ⚠ Could not send delayed startup notification"
-        _slack_send "AgentShroud starting (readiness delayed)" || true
+        _slack_send "OpenClaw starting (readiness delayed)" || true
     fi
 ) &
 
