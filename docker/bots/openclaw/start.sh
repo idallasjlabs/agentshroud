@@ -367,6 +367,9 @@ trap '
 
 # Wait for gateway/model/telegram readiness, then send startup notifications
 (
+    # Isolate from parent set -euo pipefail so transient failures never kill the subshell
+    set +euo pipefail 2>/dev/null || true
+
     now_epoch="$(date +%s)"
     last_notice_epoch=""
     if [ -f "${_STARTUP_NOTICE_STAMP}" ]; then
@@ -393,19 +396,37 @@ trap '
     # Poll OpenClaw HTTP endpoint and Telegram/model readiness — up to 120s
     ready="no"
     for _i in $(seq 1 60); do
-        if curl -sf http://localhost:18789/ >/dev/null 2>&1 \
-            && _telegram_get_me_ready \
-            && _model_runtime_ready; then
+        _http_ok=0
+        _tg_ok=0
+        _model_ok=0
+        curl -sf http://localhost:18789/ >/dev/null 2>&1 && _http_ok=1
+        _telegram_get_me_ready && _tg_ok=1
+        _model_runtime_ready && _model_ok=1
+        if [ "${_http_ok}" = "1" ] && [ "${_tg_ok}" = "1" ] && [ "${_model_ok}" = "1" ]; then
             ready="yes"
             break
         fi
         sleep 2
     done
 
+    echo "[startup] Readiness result: ready=${ready}"
+
     if [ "${ready}" = "yes" ]; then
-        if _telegram_send_photo "🛡️ OpenClaw online — ${_INSTANCE_LABEL}" "/app/branding/logo.png"; then
-            echo "[startup] ✓ Sent Telegram startup photo notification"
-        else
+        # Give the Telegram provider a moment to finish initializing before the photo upload
+        sleep 5
+        _photo_sent="no"
+        for _attempt in 1 2 3; do
+            echo "[startup] Photo attempt ${_attempt}/3..."
+            if _telegram_send_photo "🛡️ OpenClaw online — ${_INSTANCE_LABEL}" "/app/branding/logo.png"; then
+                echo "[startup] ✓ Sent Telegram startup photo notification"
+                _photo_sent="yes"
+                break
+            fi
+            echo "[startup] ⚠ Photo attempt ${_attempt}/3 failed — retrying in 5s"
+            sleep 5
+        done
+        if [ "${_photo_sent}" != "yes" ]; then
+            echo "[startup] Falling back to text notification"
             _telegram_send "🛡️ OpenClaw online — ${_INSTANCE_LABEL}" \
                 && echo "[startup] ✓ Sent Telegram startup notification" \
                 || echo "[startup] ⚠ Could not send Telegram startup notification"
