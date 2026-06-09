@@ -64,77 +64,65 @@ else
     echo "[hermes-init] Workspace already seeded — skipping"
 fi
 
-# ── Native cron jobs — seed on first boot ──────────────────────────────────
+# ── Native cron jobs — idempotent seed on every boot ───────────────────────
 # Uses `hermes cron create` (writes to Hermes's internal db) rather than
 # the YAML file, which is not read natively by hermes-agent.
-# Idempotent: stamp file prevents re-seeding on every restart.
-# v2: added Weekly Stability Report + Competitive Intel cron jobs.
-# v3: fixed Competitive Intel Email prompt — explicit --html --body temp-file
-#     invocation to prevent raw-markdown delivery (gateway default is plain text).
-_CRON_STAMP="${DATA_DIR}/.hermes-cron-seeded-v3"
-if [ ! -f "${_CRON_STAMP}" ]; then
-    echo "[hermes-init] Seeding native cron jobs..."
-    hermes cron create \
-        --name "AgentShroud Daily Check-in" \
-        --deliver telegram \
-        "0 14 * * *" \
-        "Daily AgentShroud check-in from Hermes. Report current date/time, brief status of active tasks, and anything noteworthy from today. Under 150 words, send via Telegram to Isaiah." \
-        2>/dev/null && echo "[hermes-init] Created Daily Check-in job" || echo "[hermes-init] WARN: Daily Check-in job failed"
+# Idempotent: _seed_cron deletes any existing job with the same name before
+# creating, so re-seeds on upgrade never accumulate duplicates.
+# (Prior stamp-file gating v1/v2/v3 caused triplication on each version bump
+# because hermes cron create has no dedup — removed in favour of this approach.)
 
-    hermes cron create \
-        --name "AgentShroud Weekly Summary" \
-        --deliver telegram \
-        "0 18 * * 5" \
-        "Weekly summary from Hermes: key topics this week, skills learned or created, and what to focus on next week. Format concisely, deliver via Telegram." \
-        2>/dev/null && echo "[hermes-init] Created Weekly Summary job" || echo "[hermes-init] WARN: Weekly Summary job failed"
+_seed_cron() {
+    local _name="$1" _deliver="$2" _schedule="$3" _prompt="$4"
+    # Remove all pre-existing jobs with this exact name, then create one canonical copy.
+    hermes cron list 2>/dev/null \
+      | awk -v name="$_name" '
+            /^  [a-f0-9]{12} \[/ { id = $1; next }
+            index($0, "Name:") && index($0, name) { print id }
+          ' \
+      | xargs -r -n1 hermes cron delete >/dev/null 2>&1 || true
+    hermes cron create --name "$_name" --deliver "$_deliver" "$_schedule" "$_prompt" \
+      2>/dev/null \
+      && echo "[hermes-init] Seeded: $_name" \
+      || echo "[hermes-init] WARN: seed failed: $_name"
+}
 
-    hermes cron create \
-        --name "Weekly Kaizen Review" \
-        --deliver telegram \
-        "0 17 * * 5" \
-        "Friday 5 PM weekly kaizen review (Hermes). What shipped this week? What caused friction? What process improvements would most help AgentShroud development? Format: SHIPPED / FRICTION / IMPROVE. Be specific and actionable." \
-        2>/dev/null && echo "[hermes-init] Created Weekly Kaizen job" || echo "[hermes-init] WARN: Weekly Kaizen job failed"
+echo "[hermes-init] Seeding native cron jobs (idempotent)..."
 
-    hermes cron create \
-        --name "Monthly Chaos Engineering Drill" \
-        --deliver telegram \
-        "0 9 1 * *" \
-        "First of month chaos engineering drill (Hermes). Simulate one failure scenario for AgentShroud involving Hermes: gateway crash, volume corruption, bot disconnect, or dependency outage. Describe failure mode, detection method, blast radius, and recovery procedure." \
-        2>/dev/null && echo "[hermes-init] Created Monthly Chaos Drill job" || echo "[hermes-init] WARN: Monthly Chaos Drill job failed"
+_seed_cron "AgentShroud Daily Check-in" "telegram" "0 14 * * *" \
+    "Daily AgentShroud check-in from Hermes. Report current date/time, brief status of active tasks, and anything noteworthy from today. Under 150 words, send via Telegram to Isaiah."
 
-    hermes cron create \
-        --name "Daily Memory Journal" \
-        --deliver local \
-        "55 23 * * *" \
-        "Nightly memory consolidation. Summarize today's active projects, pending tasks, decisions made, and key facts for continuity. Store in memory. Silent operation." \
-        2>/dev/null && echo "[hermes-init] Created Daily Memory Journal job" || echo "[hermes-init] WARN: Daily Memory Journal job failed"
+_seed_cron "AgentShroud Weekly Summary" "telegram" "0 18 * * 5" \
+    "Weekly summary from Hermes: key topics this week, skills learned or created, and what to focus on next week. Format concisely, deliver via Telegram."
 
-    hermes cron create \
-        --name "Weekly Hermes Stability Report" \
-        --deliver telegram \
-        "0 9 * * 1" \
-        "Read /opt/data/logs/gateway-exit-diag.log (last 7 days entries) and /opt/data/.start-history (one epoch per line). Compute: total restarts this week, crashes per day as a sparkline (e.g. 0 0 2 0 1 0 3), longest stable window in hours, top 3 exit codes by frequency, any backoff pauses triggered (5-minute sleeps). Format as 'Hermes Weekly Stability — <date range>' in under 200 words. Send via Telegram. If log files do not exist, report that Hermes has been stable with no recorded exits this week." \
-        2>/dev/null && echo "[hermes-init] Created Weekly Stability Report job" || echo "[hermes-init] WARN: Weekly Stability Report job failed"
+_seed_cron "Weekly Kaizen Review" "telegram" "0 17 * * 5" \
+    "Friday 5 PM weekly kaizen review (Hermes). What shipped this week? What caused friction? What process improvements would most help AgentShroud development? Format: SHIPPED / FRICTION / IMPROVE. Be specific and actionable."
 
-    hermes cron create \
-        --name "Hermes Competitive Landscape Update (AM/PM)" \
-        --deliver local \
-        "0 6,15 * * *" \
-        "Read /opt/data/workspace/competitive-analysis.md for research instructions. Execute the full 4-section competitive intelligence report. CRITICAL RULES: zero hallucinations — every company, product, and statistic must be verified against a live primary source. Exclude anything unverified. Every claim requires a working URL. Research competitors of AgentShroud (autonomous agent security tools — NOT the agents themselves). Verify GitHub star counts from live pages. Save report as /opt/data/workspace/reports/competitive-report-$(date +%Y-%m-%d).md. Append one-line summary to /opt/data/workspace/reports/trend-log.md. Silence is correct if nothing new is found; hallucination is a critical failure." \
-        2>/dev/null && echo "[hermes-init] Created Competitive Landscape Update job" || echo "[hermes-init] WARN: Competitive Landscape Update job failed"
+_seed_cron "Monthly Chaos Engineering Drill" "telegram" "0 9 1 * *" \
+    "First of month chaos engineering drill (Hermes). Simulate one failure scenario for AgentShroud involving Hermes: gateway crash, volume corruption, bot disconnect, or dependency outage. Describe failure mode, detection method, blast radius, and recovery procedure."
 
-    hermes cron create \
-        --name "Hermes Competitive Intelligence Email (AM/PM)" \
-        --deliver local \
-        "0 7,16 * * *" \
-        "Read the most recent competitive-report-*.md from /opt/data/workspace/reports/ (prefer today's date). If no report exists, use body 'No significant changes detected today.' Render as a clean HTML email with inline CSS only (white bg #ffffff, text #111111, links #1a73e8, code bg #f6f8fa). Write the rendered HTML to /tmp/competitive-email.html. Then run EXACTLY: /usr/local/bin/agentshroud-email-send.sh --html --subject 'AgentShroud Hermes Competitive Intelligence' --body \"\$(cat /tmp/competitive-email.html)\". The --html flag is mandatory — omitting it delivers raw markdown as plain text. Expect HTTP 200. On failure, report the full error via Telegram." \
-        2>/dev/null && echo "[hermes-init] Created Competitive Intelligence Email job" || echo "[hermes-init] WARN: Competitive Intelligence Email job failed"
+# SC2016: $(date) intentionally not expanded — agent evaluates at run time
+# shellcheck disable=SC2016
+_memory_journal_prompt='Nightly memory consolidation. Summarize today'"'"'s active projects, pending tasks, decisions made, and key facts for continuity. Append your summary to /opt/data/memories/journal-$(date +%Y-%m).md as a new dated section (use today'"'"'s date in YYYY-MM-DD format as the section heading). Create the file if it does not exist. Silent operation — no Telegram delivery.'
+_seed_cron "Daily Memory Journal" "local" "55 23 * * *" "$_memory_journal_prompt"
 
-    touch "${_CRON_STAMP}"
-    echo "[hermes-init] Cron jobs seeded"
-else
-    echo "[hermes-init] Cron jobs already seeded — skipping"
-fi
+_seed_cron "Weekly Hermes Stability Report" "telegram" "0 9 * * 1" \
+    "Read /opt/data/logs/gateway-exit-diag.log (last 7 days entries) and /opt/data/.start-history (one epoch per line). Compute: total restarts this week, crashes per day as a sparkline (e.g. 0 0 2 0 1 0 3), longest stable window in hours, top 3 exit codes by frequency, any backoff pauses triggered (5-minute sleeps). Format as 'Hermes Weekly Stability — <date range>' in under 200 words. Send via Telegram. If log files do not exist, report that Hermes has been stable with no recorded exits this week."
+
+# SC2016: $(date) intentionally not expanded — agent evaluates at run time
+# shellcheck disable=SC2016
+_competitive_landscape_prompt='Read /opt/data/workspace/competitive-analysis.md for research instructions. Execute the full 4-section competitive intelligence report. CRITICAL RULES: zero hallucinations — every company, product, and statistic must be verified against a live primary source. Exclude anything unverified. Every claim requires a working URL. Research competitors of AgentShroud (autonomous agent security tools — NOT the agents themselves). Verify GitHub star counts from live pages. Save report as /opt/data/workspace/reports/competitive-report-$(date +%Y-%m-%d).md (use today'"'"'s date in YYYY-MM-DD format). Append one-line summary to /opt/data/workspace/reports/trend-log.md. Silence is correct if nothing new is found; hallucination is a critical failure.'
+_seed_cron "Hermes Competitive Landscape Update (AM/PM)" "local" "0 6,15 * * *" "$_competitive_landscape_prompt"
+
+# SC2016: $(cat ...) in prompt is instructions to the agent, not a shell expansion
+# shellcheck disable=SC2016
+_competitive_email_prompt='Read the most recent competitive-report-*.md from /opt/data/workspace/reports/ (prefer today'"'"'s date in YYYY-MM-DD format). If no report exists, use body '"'"'No significant changes detected today.'"'"' Render as a clean HTML email with inline CSS only (white bg #ffffff, text #111111, links #1a73e8, code bg #f6f8fa). Write the rendered HTML to /tmp/competitive-email.html. Then run EXACTLY: /usr/local/bin/agentshroud-email-send.sh --html --subject '"'"'AgentShroud Hermes Competitive Intelligence'"'"' --body "$(cat /tmp/competitive-email.html)". The --html flag is mandatory — omitting it delivers raw markdown as plain text. Expect HTTP 200. On failure, report the full error via Telegram.'
+_seed_cron "Hermes Competitive Intelligence Email (AM/PM)" "local" "0 7,16 * * *" "$_competitive_email_prompt"
+
+# Ensure memory journal write directory exists on the persistent volume
+mkdir -p "${DATA_DIR}/memories"
+
+echo "[hermes-init] Cron jobs seeded"
 
 # ── GitHub MCP server — wire on first boot if PAT is available ─────────────
 # Requires github_pat Docker secret (stored in 1Password "Agent Shroud Bot Credentials").
