@@ -303,10 +303,10 @@ class TestConfigValidation:
         if not path.exists():
             pytest.skip("start-agentshroud.sh not available in this environment")
         script = path.read_text()
-        assert "🟡 AgentShroud starting" in script
-        assert "🛡️ AgentShroud online" in script
-        assert "🟠 AgentShroud starting (readiness delayed)" in script
-        assert "🔴 AgentShroud shutting down" in script
+        assert "🟡 OpenClaw starting" in script
+        assert "🛡️ OpenClaw online" in script
+        assert "🟠 OpenClaw starting (readiness delayed)" in script
+        assert "🔴 OpenClaw shutting down" in script
 
     def test_startup_notifications_wait_for_runtime_readiness(self):
         """Startup script should verify Telegram/model readiness before sending online notice."""
@@ -327,9 +327,9 @@ class TestConfigValidation:
         if not path.exists():
             pytest.skip("openclaw/start.sh not available in this environment")
         script = path.read_text()
-        assert "🟡 AgentShroud starting" in script
-        assert "🛡️ AgentShroud online" in script
-        assert "🟠 AgentShroud starting (readiness delayed)" in script
+        assert "🟡 OpenClaw starting" in script
+        assert "🛡️ OpenClaw online" in script
+        assert "🟠 OpenClaw starting (readiness delayed)" in script
         assert "_telegram_get_me_ready" in script
         assert "_model_runtime_ready" in script
         assert "for _i in $(seq 1 60)" in script
@@ -347,7 +347,7 @@ class TestConfigValidation:
         assert script.index("_model_runtime_ready") < script.index(
             'if [ "${ready}" = "yes" ]; then'
         )
-        assert script.index("🟡 AgentShroud starting") < script.index("🛡️ AgentShroud online")
+        assert script.index("🟡 OpenClaw starting") < script.index("🛡️ OpenClaw online")
 
     def test_openclaw_bot_start_script_online_notice_after_readiness_gate(self):
         """OpenClaw bot wrapper should send online notice only after readiness checks pass."""
@@ -362,7 +362,7 @@ class TestConfigValidation:
         assert script.index("_model_runtime_ready") < script.index(
             'if [ "${ready}" = "yes" ]; then'
         )
-        assert script.index("🟡 AgentShroud starting") < script.index("🛡️ AgentShroud online")
+        assert script.index("🟡 OpenClaw starting") < script.index("🛡️ OpenClaw online")
 
     def test_startup_telegram_calls_use_system_header(self):
         """Startup notification Telegram calls should be marked as system-originated."""
