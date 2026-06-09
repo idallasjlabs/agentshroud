@@ -496,94 +496,93 @@ class LLMProxy:
                         "POST", url, content=body, headers=forward_headers
                     ) as response:
                         collected_status.append(response.status_code)
-                        # Buffer first chunk to detect quota errors before committing
-                        first_chunk: bytes | None = None
-                        async for chunk in response.aiter_bytes():
-                            if chunk:
-                                if first_chunk is None:
-                                    first_chunk = chunk
-                                else:
-                                    # First non-quota chunk already yielded — just stream
-                                    yield chunk
-
-                        if first_chunk is not None:
-                            # Check for quota error in first chunk before yielding
-                            if (
-                                _failover_enabled
-                                and not _failover_opt_out
-                                and not is_ollama
-                                and response.status_code in (429, 402)
-                            ):
-                                quota_hit, quota_token = is_quota_exhausted(
-                                    response.status_code, first_chunk
+                        # Quota failover only possible on error status codes (429, 402).
+                        # For 200 responses stream immediately — buffering first_chunk and
+                        # yielding it last caused content_block_start to arrive before
+                        # message_start, breaking the Anthropic SDK streaming parser.
+                        if (
+                            _failover_enabled
+                            and not _failover_opt_out
+                            and not is_ollama
+                            and response.status_code in (429, 402)
+                        ):
+                            # Error body is small JSON — safe to read in full
+                            error_body = await response.aread()
+                            quota_hit, quota_token = is_quota_exhausted(
+                                response.status_code, error_body
+                            )
+                            if quota_hit:
+                                local_model = self._get_local_model()
+                                logger.info(
+                                    "Streaming quota failover (%s) → %s",
+                                    quota_token,
+                                    local_model,
                                 )
-                                if quota_hit:
-                                    local_model = self._get_local_model()
-                                    logger.info(
-                                        "Streaming quota failover (%s) → %s",
-                                        quota_token,
-                                        local_model,
-                                    )
-                                    try:
-                                        if is_openai:
-                                            fo_data = dict(request_data or {})
-                                            fo_data["model"] = local_model
-                                            fo_body = json.dumps(fo_data).encode()
-                                            fo_url = f"{OLLAMA_API_BASE}/v1/chat/completions"
-                                        elif "/v1/messages" in path:
-                                            oai_req = anthropic_to_openai_request(
-                                                request_data or {}, local_model
-                                            )
-                                            fo_body = json.dumps(oai_req).encode()
-                                            fo_url = f"{OLLAMA_API_BASE}/v1/chat/completions"
-                                        else:
-                                            self._emit_failover_notice(
-                                                quota_token, translated=False
-                                            )
-                                            yield first_chunk
-                                            return
+                                try:
+                                    if is_openai:
+                                        fo_data = dict(request_data or {})
+                                        fo_data["model"] = local_model
+                                        fo_body = json.dumps(fo_data).encode()
+                                        fo_url = f"{OLLAMA_API_BASE}/v1/chat/completions"
+                                    elif "/v1/messages" in path:
+                                        oai_req = anthropic_to_openai_request(
+                                            request_data or {}, local_model
+                                        )
+                                        fo_body = json.dumps(oai_req).encode()
+                                        fo_url = f"{OLLAMA_API_BASE}/v1/chat/completions"
+                                    else:
+                                        self._emit_failover_notice(
+                                            quota_token, translated=False
+                                        )
+                                        yield error_body
+                                        return
 
-                                        async with _httpx.AsyncClient(
-                                            verify=True, timeout=_httpx.Timeout(5.0, read=1800.0)
-                                        ) as fo_client:
-                                            async with fo_client.stream(
-                                                "POST",
-                                                fo_url,
-                                                content=fo_body,
-                                                headers={"content-type": "application/json"},
-                                            ) as fo_resp:
-                                                if fo_resp.status_code == 200:
-                                                    self._stats["failover_quota_succeeded"] = (
-                                                        self._stats.get(
-                                                            "failover_quota_succeeded", 0
-                                                        )
-                                                        + 1
+                                    async with _httpx.AsyncClient(
+                                        verify=True, timeout=_httpx.Timeout(5.0, read=1800.0)
+                                    ) as fo_client:
+                                        async with fo_client.stream(
+                                            "POST",
+                                            fo_url,
+                                            content=fo_body,
+                                            headers={"content-type": "application/json"},
+                                        ) as fo_resp:
+                                            if fo_resp.status_code == 200:
+                                                self._stats["failover_quota_succeeded"] = (
+                                                    self._stats.get(
+                                                        "failover_quota_succeeded", 0
                                                     )
-                                                    self._record_failover_event(
-                                                        quota_token, "success", local_model
-                                                    )
-                                                    self._emit_failover_notice(
-                                                        quota_token, translated=True
-                                                    )
-                                                    if "/v1/messages" in path:
-                                                        async for (
-                                                            translated
-                                                        ) in translate_openai_sse_to_anthropic(
-                                                            fo_resp.aiter_bytes(), model_name
-                                                        ):
-                                                            yield translated
-                                                    else:
-                                                        async for fo_chunk in fo_resp.aiter_bytes():
-                                                            if fo_chunk:
-                                                                yield fo_chunk
-                                                    return
-                                    except Exception as fe:
-                                        logger.warning("Streaming failover error: %s", fe)
-                                    # Failover failed — fall through, yield original first chunk
-                                    self._stats["failover_quota_failed"] = (
-                                        self._stats.get("failover_quota_failed", 0) + 1
-                                    )
-                            yield first_chunk
+                                                    + 1
+                                                )
+                                                self._record_failover_event(
+                                                    quota_token, "success", local_model
+                                                )
+                                                self._emit_failover_notice(
+                                                    quota_token, translated=True
+                                                )
+                                                if "/v1/messages" in path:
+                                                    async for (
+                                                        translated
+                                                    ) in translate_openai_sse_to_anthropic(
+                                                        fo_resp.aiter_bytes(), model_name
+                                                    ):
+                                                        yield translated
+                                                else:
+                                                    async for fo_chunk in fo_resp.aiter_bytes():
+                                                        if fo_chunk:
+                                                            yield fo_chunk
+                                                return
+                                except Exception as fe:
+                                    logger.warning("Streaming failover error: %s", fe)
+                                # Failover failed — fall through, yield original error body
+                                self._stats["failover_quota_failed"] = (
+                                    self._stats.get("failover_quota_failed", 0) + 1
+                                )
+                            yield error_body
+                        else:
+                            # Normal streaming — forward chunks immediately, no buffering
+                            async for chunk in response.aiter_bytes():
+                                if chunk:
+                                    yield chunk
 
             except Exception as e:
                 logger.error("LLM proxy streaming error: %s", e)
