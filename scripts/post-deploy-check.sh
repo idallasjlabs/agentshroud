@@ -73,7 +73,10 @@ if docker ps --format '{{.Names}}' 2>/dev/null | grep -q 'agentshroud-openclaw';
     deadline=$(( $(date +%s) + BOT_WAIT_SECS ))
     while [[ $(date +%s) -lt $deadline ]]; do
         bot_logs=$(docker logs agentshroud-openclaw 2>&1 || echo "")
-        if [[ "$bot_logs" == *"Telegram startup notification"* || "$bot_logs" == *"Listening for"* || "$bot_logs" == *"Bot is running"* ]]; then
+        # "Startup notification suppressed" = startup reached the notification step but
+        # the anti-spam cooldown (recent restart) skipped the Telegram send — still a
+        # successful start, the marker just never appears in that window.
+        if [[ "$bot_logs" == *"Telegram startup notification"* || "$bot_logs" == *"Listening for"* || "$bot_logs" == *"Bot is running"* || "$bot_logs" == *"Startup notification suppressed"* ]]; then
             started=true
             break
         fi

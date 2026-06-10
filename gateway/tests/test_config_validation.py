@@ -418,6 +418,41 @@ class TestConfigValidation:
             "secrets", {}
         ), "compose must define the openai_api_key secret"
 
+    def test_hermes_dashboard_insecure_optin_is_loopback_bounded(self):
+        """HERMES_DASHBOARD_INSECURE may only be enabled with a loopback-only host publish.
+
+        hermes-agent v0.15.1+ fails closed on non-loopback dashboard binds without an
+        OAuth provider. We opt in to the pre-gate behaviour, which is only acceptable
+        while the host port publish stays 127.0.0.1-bound and the service stays on the
+        internal isolated network.
+        """
+        import yaml
+
+        compose_path = REPO_ROOT / "docker" / "docker-compose.yml"
+        if not compose_path.exists():
+            pytest.skip("compose file not available in this environment")
+
+        compose = yaml.safe_load(compose_path.read_text())
+        hermes = compose["services"]["hermes"]
+        env = hermes.get("environment", {})
+        if str(env.get("HERMES_DASHBOARD_INSECURE", "")) not in ("1", "true"):
+            pytest.skip("HERMES_DASHBOARD_INSECURE not enabled — nothing to bound")
+
+        # 9119 reaches the host via the gateway's TCP forwarder publish, not hermes
+        # itself (hermes sits on the internal isolated network and publishes nothing).
+        gateway_ports = compose["services"]["gateway"].get("ports", [])
+        dash_ports = [p for p in gateway_ports if ":9119" in str(p)]
+        assert dash_ports, "dashboard port 9119 must be published via the gateway forwarder"
+        for port in dash_ports:
+            assert str(port).startswith(
+                "127.0.0.1:"
+            ), f"insecure dashboard requires loopback-only publish, got: {port}"
+        networks = hermes.get("networks", [])
+        net_names = networks if isinstance(networks, list) else list(networks)
+        assert net_names and all(
+            "isolated" in n for n in net_names
+        ), f"insecure dashboard requires isolated-only networks, got: {net_names}"
+
     def test_patch_slack_sdk_pong_patch_is_idempotent(self):
         """patch-slack-sdk.sh must stay quiet when the pong patch is already applied.
 
