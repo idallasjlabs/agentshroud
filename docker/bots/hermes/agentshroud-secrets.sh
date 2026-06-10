@@ -60,8 +60,11 @@ inject GITHUB_TOKEN                 /run/secrets/github_pat
 inject GITHUB_PERSONAL_ACCESS_TOKEN /run/secrets/github_pat
 
 # Hermes runs as uid 10000; these paths can be created root-owned on a prior
-# boot (e.g. auth.json, mcp.json written by a root container init step),
-# causing EACCES on token refresh and MCP config reads. Reclaim ownership here.
-for _f in /opt/data/auth.json /opt/data/mcp.json /opt/data/.local /opt/data/.cache /opt/data/cron; do
+# boot (e.g. auth.json, mcp.json written by a root container init step) or by
+# a root `docker exec` session (.hermes_history — CLI history append fails with
+# EACCES), causing EACCES on token refresh, MCP config reads, or CLI use.
+# Reclaim ownership here.
+for _f in /opt/data/auth.json /opt/data/mcp.json /opt/data/.local /opt/data/.cache \
+          /opt/data/cron /opt/data/.hermes_history /opt/data/.crashwatch-state.json; do
     [ -e "$_f" ] && chown -R 10000:10000 "$_f" 2>/dev/null || true
 done
