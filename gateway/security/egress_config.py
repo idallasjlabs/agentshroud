@@ -68,6 +68,7 @@ PERMANENT_EGRESS_DOMAINS: list[str] = [
     # ── Health Checks ──
     "status.docker.com",
     "status.aws.amazon.com",
+    "hc-ping.com",  # Healthchecks.io dead-man's-switch (hermes heartbeat)
     # ── Security Sidecars ──
     "database.clamav.net",
     # ── LLM Routing (local proxy) ──
