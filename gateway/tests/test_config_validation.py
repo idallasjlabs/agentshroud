@@ -400,6 +400,66 @@ class TestConfigValidation:
             "_STARTUP_NOTICE_STAMP" in script
         ), "Must use cooldown stamp to suppress duplicate notifications"
 
+    def test_hermes_dockerfile_installs_xxd(self):
+        """Hermes Dockerfile must install xxd — terminal_tool hex dumps fail without it."""
+        import re
+
+        path = REPO_ROOT / "docker" / "bots" / "hermes" / "Dockerfile"
+        if not path.exists():
+            pytest.skip("hermes Dockerfile not available in this environment")
+        dockerfile = path.read_text()
+        install_block = re.search(r"apt-get install\b.*?(?=&&)", dockerfile, re.S)
+        assert install_block, "Hermes Dockerfile must have an apt-get install block"
+        assert re.search(
+            r"\bxxd\b", install_block.group(0)
+        ), "Hermes Dockerfile must install xxd (upstream image lacks it; tool exec errors)"
+
+    def test_hermes_openai_api_key_wired_via_secret(self):
+        """Hermes must receive OPENAI_API_KEY from the shared openai_api_key Docker secret.
+
+        Hermes routes all OpenAI calls through the gateway (OPENAI_BASE_URL),
+        but its client rebuild logs 'missing OPENAI_API_KEY' warnings unless
+        the env var is present. The injector script and compose must agree.
+        """
+        import yaml
+
+        secrets_path = REPO_ROOT / "docker" / "bots" / "hermes" / "agentshroud-secrets.sh"
+        compose_path = REPO_ROOT / "docker" / "docker-compose.yml"
+        if not secrets_path.exists() or not compose_path.exists():
+            pytest.skip("hermes secrets script or compose file not available")
+
+        script = secrets_path.read_text()
+        assert "inject OPENAI_API_KEY" in script, "Injector must export OPENAI_API_KEY"
+        assert (
+            "/run/secrets/openai_api_key" in script
+        ), "Injector must read the openai_api_key Docker secret"
+
+        compose = yaml.safe_load(compose_path.read_text())
+        hermes_secrets = compose["services"]["hermes"].get("secrets", [])
+        assert (
+            "openai_api_key" in hermes_secrets
+        ), "hermes service must mount the openai_api_key secret"
+        assert "openai_api_key" in compose.get(
+            "secrets", {}
+        ), "compose must define the openai_api_key secret"
+
+    def test_patch_slack_sdk_pong_patch_is_idempotent(self):
+        """patch-slack-sdk.sh must stay quiet when the pong patch is already applied.
+
+        The script runs at image build AND every boot; without the
+        already-patched guard it logs 'pattern not found' noise on every start.
+        """
+        path = REPO_ROOT / "docker" / "scripts" / "patch-slack-sdk.sh"
+        if not path.exists():
+            pytest.skip("patch-slack-sdk.sh not available in this environment")
+        script = path.read_text()
+        # Already-patched detection must come before the warn-pattern rewrite.
+        assert "pong timeout already patched" in script
+        assert script.index("already patched") < script.index("pattern not found")
+        # Pattern-absent case must continue (informational skip), never fail the boot.
+        assert "skipped, continuing" in script
+        assert "exit 1" not in script
+
     def test_start_control_center_script_uses_repo_relative_exec(self):
         """Control center launcher should be robust to current working directory."""
         path = REPO_ROOT / "scripts" / "start-control-center"
