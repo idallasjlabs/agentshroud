@@ -6,6 +6,8 @@ from typing import Annotated
 
 from fastapi import APIRouter, Depends, HTTPException, Request
 
+from gateway import __version__
+
 from ..auth import create_auth_dependency
 from ..models import StatusResponse
 from ..state import app_state
@@ -30,7 +32,7 @@ async def health_check():
 
     Returns only basic liveness info. Detailed status requires auth via /status/detail.
     """
-    return {"status": "healthy", "version": "1.1.0"}
+    return {"status": "healthy", "version": __version__}
 
 
 @router.get("/status/detail", response_model=StatusResponse)
@@ -77,7 +79,7 @@ async def health_check_detail(auth: AuthRequired):
 
     return StatusResponse(
         status="healthy",
-        version="1.1.0",
+        version=__version__,
         uptime_seconds=uptime,
         ledger_entries=stats.get("total_entries", 0),
         pending_approvals=len(pending),

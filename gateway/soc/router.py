@@ -28,6 +28,8 @@ from fastapi import APIRouter, Depends, HTTPException, Query, Request, WebSocket
 from fastapi.responses import HTMLResponse, JSONResponse, StreamingResponse
 from pydantic import BaseModel, Field
 
+from gateway import __version__
+
 from ..security.rbac import Action, Resource
 from .auth import SCLCaller, get_caller, issue_session_token, issue_ws_token
 from .models import (
@@ -2233,7 +2235,7 @@ async def trigger_cve_report(caller: SCLCaller = Depends(get_caller)) -> Dict:
 # ---------------------------------------------------------------------------
 
 _GH_RELEASES_API = "https://api.github.com/repos/idallasjlabs/agentshroud/releases/latest"
-_CURRENT_VERSION = "1.1.0"
+_CURRENT_VERSION = __version__
 
 # Content-hash cache busters for static assets — recomputed at import time so
 # any change to soc.js / soc.css produces a new hash and busts browser caches.
