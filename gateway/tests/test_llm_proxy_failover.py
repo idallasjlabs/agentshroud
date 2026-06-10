@@ -407,9 +407,9 @@ async def test_proxy_failover_gemini_streaming_passthrough(monkeypatch, caplog):
     notices: list[dict] = []
     monkeypatch.setattr(proxy, "_forward_request", mock_forward)
     monkeypatch.setattr(
-        proxy, "_emit_failover_notice", lambda token, translated: notices.append(
-            {"token": token, "translated": translated}
-        )
+        proxy,
+        "_emit_failover_notice",
+        lambda token, translated: notices.append({"token": token, "translated": translated}),
     )
     monkeypatch.setattr(proxy, "_record_failover_event", lambda *a, **kw: None)
     monkeypatch.setenv("AGENTSHROUD_FAILOVER_ON_QUOTA", "1")

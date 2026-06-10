@@ -82,12 +82,8 @@ class TestComputeBackoff:
 
         monkeypatch.setattr(client, "_get_wss_url", fake_get_wss_url)
         monkeypatch.setattr(client, "_connect_and_handle", fake_connect_and_handle)
-        monkeypatch.setattr(
-            "gateway.proxy.slack_socket_client.compute_backoff", fake_backoff
-        )
-        monkeypatch.setattr(
-            "gateway.proxy.slack_socket_client.asyncio.sleep", fake_sleep
-        )
+        monkeypatch.setattr("gateway.proxy.slack_socket_client.compute_backoff", fake_backoff)
+        monkeypatch.setattr("gateway.proxy.slack_socket_client.asyncio.sleep", fake_sleep)
 
         await client.run()
 

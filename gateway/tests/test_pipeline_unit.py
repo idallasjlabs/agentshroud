@@ -205,9 +205,7 @@ def _make_integrity_pipeline(score: float, factors=None, scorer_error=None, owne
     if scorer_error:
         scorer.score_context.side_effect = scorer_error
     else:
-        scorer.score_context.return_value = _FakeIntegrityScore(
-            score=score, factors=factors or []
-        )
+        scorer.score_context.return_value = _FakeIntegrityScore(score=score, factors=factors or [])
     pii = MagicMock()
     pii.filter_xml_blocks = MagicMock(return_value=("msg", False))
     pii.sanitize = AsyncMock(
@@ -345,9 +343,7 @@ class TestEnvelopeSignerInPipeline:
         )
         signer.wrap_tool_result.return_value = envelope
         pipeline = _make_signer_pipeline(signer)
-        result = await pipeline.process_outbound(
-            "tool output", metadata={"tool_name": "read_file"}
-        )
+        result = await pipeline.process_outbound("tool output", metadata={"tool_name": "read_file"})
         signer.wrap_tool_result.assert_called_once()
         assert signer.wrap_tool_result.call_args.args[1] == "read_file"
         signer.sign.assert_not_called()

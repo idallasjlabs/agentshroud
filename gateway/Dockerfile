@@ -383,6 +383,11 @@ COPY docker/bots/hermes/Dockerfile /app/docker/bots/hermes/Dockerfile
 COPY docker/bots/hermes/start.sh /app/docker/bots/hermes/start.sh
 COPY docker/bots/hermes/agentshroud-secrets.sh /app/docker/bots/hermes/agentshroud-secrets.sh
 COPY docker/scripts/patch-slack-sdk.sh /app/docker/scripts/patch-slack-sdk.sh
+COPY docker/bots/hermes/init-config.sh /app/docker/bots/hermes/init-config.sh
+COPY docker/config/hermes/cron/jobs.yaml /app/docker/config/hermes/cron/jobs.yaml
+COPY docker/config/openclaw/cron/jobs.json /app/docker/config/openclaw/cron/jobs.json
+COPY docker/bots/openclaw/config/cron/jobs.json /app/docker/bots/openclaw/config/cron/jobs.json
+COPY docker/config/ssh/config /app/docker/config/ssh/config
 COPY scripts/start-control-center /app/scripts/start-control-center
 COPY scripts/chat-console /app/scripts/chat-console
 COPY scripts/switch_model.sh /app/scripts/switch_model.sh

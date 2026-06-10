@@ -69,8 +69,7 @@ _REASONING_MODEL_PREFIXES = ("deepseek-r1", "mlx-community/deepseek-r1")
 # backend (mlx_lm / Ollama / LM Studio) is unreachable at connect time.
 _LOCAL_BACKEND_HINTS: dict[str, str] = {
     MLXLM_API_BASE: (
-        "mlx_lm backend is not running on the host. "
-        "Start it with: mlx_lm.server --port 8234"
+        "mlx_lm backend is not running on the host. " "Start it with: mlx_lm.server --port 8234"
     ),
     OLLAMA_API_BASE: ("Ollama backend is not running on the host. Start it with: ollama serve"),
     LMSTUDIO_API_BASE: (
@@ -325,14 +324,10 @@ class LLMProxy:
         last = self._backend_unavailable_last_warn.get(base_url, float("-inf"))
         if now - last >= _BACKEND_UNAVAILABLE_WARN_INTERVAL_SECONDS:
             self._backend_unavailable_last_warn[base_url] = now
-            logger.warning(
-                "Local LLM backend unreachable (%s): %s — %s", base_url, exc, hint
-            )
+            logger.warning("Local LLM backend unreachable (%s): %s — %s", base_url, exc, hint)
         else:
             logger.debug("Local LLM backend unreachable (%s): %s", base_url, exc)
-        body = json.dumps(
-            {"error": {"type": "backend_unavailable", "message": hint}}
-        ).encode()
+        body = json.dumps({"error": {"type": "backend_unavailable", "message": hint}}).encode()
         return 503, {"content-type": "application/json"}, body
 
     async def proxy_messages(
@@ -640,9 +635,7 @@ class LLMProxy:
                                         fo_body = json.dumps(oai_req).encode()
                                         fo_url = f"{OLLAMA_API_BASE}/v1/chat/completions"
                                     else:
-                                        self._emit_failover_notice(
-                                            quota_token, translated=False
-                                        )
+                                        self._emit_failover_notice(quota_token, translated=False)
                                         yield error_body
                                         return
 
@@ -657,9 +650,7 @@ class LLMProxy:
                                         ) as fo_resp:
                                             if fo_resp.status_code == 200:
                                                 self._stats["failover_quota_succeeded"] = (
-                                                    self._stats.get(
-                                                        "failover_quota_succeeded", 0
-                                                    )
+                                                    self._stats.get("failover_quota_succeeded", 0)
                                                     + 1
                                                 )
                                                 self._record_failover_event(
