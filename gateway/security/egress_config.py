@@ -32,6 +32,9 @@ PERMANENT_EGRESS_DOMAINS: list[str] = [
     "api.anthropic.com",
     "api.openai.com",
     "generativelanguage.googleapis.com",
+    # ── Hermes Agent (NousResearch) ──
+    "nousresearch.com",
+    "*.nousresearch.com",
     # ── Google Services ──
     "oauth2.googleapis.com",
     "www.googleapis.com",
