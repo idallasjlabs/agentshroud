@@ -1,4 +1,7 @@
 # Copyright © 2026 Isaiah Dallas Jefferson, Jr. AgentShroud™. All rights reserved.
+# AgentShroud™ is a trademark of Isaiah Dallas Jefferson, Jr. (USPTO Serial No. 99728633)
+# Patent Pending — U.S. Provisional Application No. 64/018,744
+# Unauthorized reproduction, distribution, or use of the AgentShroud name or brand is strictly prohibited.
 """Tests for the cloud→local quota failover orchestrator in LLMProxy."""
 
 from __future__ import annotations
@@ -327,3 +330,168 @@ def test_failover_notification_distinguishes_translated_vs_not(tmp_path, monkeyp
 
     assert sent_messages
     assert "no translator" in sent_messages[0].lower() or "will fail" in sent_messages[0].lower()
+
+
+# ---------------------------------------------------------------------------
+# T19 — Gemini quota → translated Ollama failover (non-streaming text)
+# ---------------------------------------------------------------------------
+
+GOOGLE_QUOTA_BODY = json.dumps(
+    {
+        "error": {
+            "code": 429,
+            "message": "Quota exceeded for quota metric 'GenerateContent requests'.",
+            "status": "RESOURCE_EXHAUSTED",
+        }
+    }
+).encode()
+
+GEMINI_PATH = "/v1beta/models/gemini-2.0-flash:generateContent"
+
+
+@pytest.mark.asyncio
+async def test_proxy_failover_gemini_quota_success(monkeypatch):
+    proxy = make_proxy()
+    ollama_requests: list[dict] = []
+
+    async def mock_forward(url, body, headers):
+        if "generativelanguage.googleapis.com" in url:
+            return 429, {}, GOOGLE_QUOTA_BODY
+        ollama_requests.append(json.loads(body))
+        return 200, {"content-type": "application/json"}, OLLAMA_OK_BODY
+
+    monkeypatch.setattr(proxy, "_forward_request", mock_forward)
+    monkeypatch.setattr(proxy, "_emit_failover_notice", lambda *a, **kw: None)
+    monkeypatch.setattr(proxy, "_record_failover_event", lambda *a, **kw: None)
+    monkeypatch.setenv("AGENTSHROUD_FAILOVER_ON_QUOTA", "1")
+
+    status, _, body = await _call_proxy(
+        proxy,
+        GEMINI_PATH,
+        {
+            "systemInstruction": {"parts": [{"text": "Be brief."}]},
+            "contents": [{"role": "user", "parts": [{"text": "hello"}]}],
+        },
+    )
+    assert status == 200
+    resp = json.loads(body)
+    # Gemini candidates shape returned to the client
+    assert resp["candidates"][0]["content"]["parts"][0]["text"] == "Hello from local!"
+    assert resp["candidates"][0]["content"]["role"] == "model"
+    assert resp["candidates"][0]["finishReason"] == "STOP"
+    assert proxy._stats["failover_quota_succeeded"] == 1
+    # Translated OpenAI-format request was sent to Ollama
+    assert len(ollama_requests) == 1
+    sent = ollama_requests[0]
+    assert sent["messages"][0] == {"role": "system", "content": "Be brief."}
+    assert sent["messages"][1] == {"role": "user", "content": "hello"}
+
+
+# ---------------------------------------------------------------------------
+# T20 — Gemini streaming request → passthrough 429 + warning, no failover
+# ---------------------------------------------------------------------------
+
+
+@pytest.mark.asyncio
+async def test_proxy_failover_gemini_streaming_passthrough(monkeypatch, caplog):
+    import logging
+
+    proxy = make_proxy()
+    ollama_called = [False]
+
+    async def mock_forward(url, body, headers):
+        if "host.docker.internal" in url:
+            ollama_called[0] = True
+        return 429, {}, GOOGLE_QUOTA_BODY
+
+    notices: list[dict] = []
+    monkeypatch.setattr(proxy, "_forward_request", mock_forward)
+    monkeypatch.setattr(
+        proxy, "_emit_failover_notice", lambda token, translated: notices.append(
+            {"token": token, "translated": translated}
+        )
+    )
+    monkeypatch.setattr(proxy, "_record_failover_event", lambda *a, **kw: None)
+    monkeypatch.setenv("AGENTSHROUD_FAILOVER_ON_QUOTA", "1")
+
+    caplog.set_level(logging.WARNING, logger="agentshroud.proxy.llm_api")
+    status, _, body = await _call_proxy(
+        proxy,
+        "/v1beta/models/gemini-2.0-flash:streamGenerateContent?alt=sse",
+        {"contents": [{"role": "user", "parts": [{"text": "hi"}]}]},
+    )
+    assert status == 429
+    assert b"RESOURCE_EXHAUSTED" in body
+    assert not ollama_called[0]
+    assert proxy._stats["failover_quota_failed"] == 1
+    assert any(
+        "Gemini failover" in r.getMessage() and "unsupported" in r.getMessage()
+        for r in caplog.records
+    )
+    # Genuinely untranslatable → "no translator" notice fires
+    assert notices == [{"token": "google_quota", "translated": False}]
+
+
+# ---------------------------------------------------------------------------
+# T21 — Gemini tool request → passthrough 429, no failover
+# ---------------------------------------------------------------------------
+
+
+@pytest.mark.asyncio
+async def test_proxy_failover_gemini_tools_passthrough(monkeypatch):
+    proxy = make_proxy()
+    ollama_called = [False]
+
+    async def mock_forward(url, body, headers):
+        if "host.docker.internal" in url:
+            ollama_called[0] = True
+        return 429, {}, GOOGLE_QUOTA_BODY
+
+    monkeypatch.setattr(proxy, "_forward_request", mock_forward)
+    monkeypatch.setattr(proxy, "_emit_failover_notice", lambda *a, **kw: None)
+    monkeypatch.setattr(proxy, "_record_failover_event", lambda *a, **kw: None)
+    monkeypatch.setenv("AGENTSHROUD_FAILOVER_ON_QUOTA", "1")
+
+    status, _, _ = await _call_proxy(
+        proxy,
+        GEMINI_PATH,
+        {
+            "contents": [{"role": "user", "parts": [{"text": "weather?"}]}],
+            "tools": [{"functionDeclarations": [{"name": "get_weather"}]}],
+        },
+    )
+    assert status == 429
+    assert not ollama_called[0]
+    assert proxy._stats["failover_quota_failed"] == 1
+
+
+# ---------------------------------------------------------------------------
+# T22 — Gemini translatable but Ollama down → original 429, no false
+#       "no translator" notice (translator DOES exist for this request)
+# ---------------------------------------------------------------------------
+
+
+@pytest.mark.asyncio
+async def test_proxy_failover_gemini_ollama_down_no_false_notice(monkeypatch):
+    proxy = make_proxy()
+    notices: list = []
+
+    async def mock_forward(url, body, headers):
+        if "generativelanguage.googleapis.com" in url:
+            return 429, {}, GOOGLE_QUOTA_BODY
+        raise ConnectionRefusedError("Ollama not running")
+
+    monkeypatch.setattr(proxy, "_forward_request", mock_forward)
+    monkeypatch.setattr(proxy, "_emit_failover_notice", lambda *a, **kw: notices.append(a))
+    monkeypatch.setattr(proxy, "_record_failover_event", lambda *a, **kw: None)
+    monkeypatch.setenv("AGENTSHROUD_FAILOVER_ON_QUOTA", "1")
+
+    status, _, body = await _call_proxy(
+        proxy,
+        GEMINI_PATH,
+        {"contents": [{"role": "user", "parts": [{"text": "hi"}]}]},
+    )
+    assert status == 429
+    assert b"RESOURCE_EXHAUSTED" in body
+    assert proxy._stats["failover_quota_failed"] == 1
+    assert notices == []  # translator exists — no "no translator" notice

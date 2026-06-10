@@ -27,6 +27,11 @@ from gateway.proxy.anthropic_openai_translator import (
     anthropic_to_openai_request,
     openai_to_anthropic_response,
 )
+from gateway.proxy.gemini_openai_translator import (
+    gemini_failover_unsupported_reason,
+    gemini_to_openai_request,
+    openai_to_gemini_response,
+)
 from gateway.proxy.llm_quota_detector import is_quota_exhausted
 
 logger = logging.getLogger("agentshroud.proxy.llm_api")
@@ -59,6 +64,24 @@ LOCAL_MODEL_ROUTES: dict[str, str] = {
 
 # Models that SHOULD think (reasoning models) — used for routing to mlx_lm.
 _REASONING_MODEL_PREFIXES = ("deepseek-r1", "mlx-community/deepseek-r1")
+
+# Per-backend operator hints returned in the structured 503 body when a local
+# backend (mlx_lm / Ollama / LM Studio) is unreachable at connect time.
+_LOCAL_BACKEND_HINTS: dict[str, str] = {
+    MLXLM_API_BASE: (
+        "mlx_lm backend is not running on the host. "
+        "Start it with: mlx_lm.server --port 8234"
+    ),
+    OLLAMA_API_BASE: ("Ollama backend is not running on the host. Start it with: ollama serve"),
+    LMSTUDIO_API_BASE: (
+        "LM Studio backend is not running on the host. "
+        "Start the LM Studio local server (default port 1234)."
+    ),
+}
+
+# Minimum seconds between repeated "backend unavailable" WARNING logs per backend
+# (avoids per-request log spam while a backend is down).
+_BACKEND_UNAVAILABLE_WARN_INTERVAL_SECONDS = 300
 
 
 class LLMProxy:
@@ -96,6 +119,9 @@ class LLMProxy:
         # Optional AuditChain for persistent failover event logging.
         # Injected by lifespan.py if available.
         self.audit_chain = None
+        # Per-backend monotonic timestamp of the last "backend unavailable"
+        # WARNING — rate-limits the log to one per interval per backend.
+        self._backend_unavailable_last_warn: dict[str, float] = {}
 
     def get_stats(self) -> dict:
         return dict(self._stats)
@@ -200,6 +226,8 @@ class LLMProxy:
         failover itself fails (caller should return the original cloud 429 body).
         """
         local_model = self._get_local_model()
+        is_google = "/v1beta" in path or "google" in path.lower()
+        translate_back: str | None = None  # "anthropic" | "gemini" | None
         try:
             if is_openai:
                 # OpenAI-compat is drop-in with Ollama — just rewrite model
@@ -212,21 +240,45 @@ class LLMProxy:
                 oai_req = anthropic_to_openai_request(request_data or {}, local_model)
                 fo_body = json.dumps(oai_req).encode()
                 fo_url = f"{OLLAMA_API_BASE}/v1/chat/completions"
+                translate_back = "anthropic"
+            elif is_google:
+                # Gemini → translate to OpenAI, re-dispatch, translate response.
+                # Non-streaming text only — streaming/tool requests pass through.
+                reason = gemini_failover_unsupported_reason(request_data or {}, path)
+                if reason is not None:
+                    logger.warning(
+                        "Gemini failover: streaming/tool requests unsupported — "
+                        "passing through 429 (%s)",
+                        reason,
+                    )
+                    return None
+                oai_req = gemini_to_openai_request(request_data or {}, local_model)
+                fo_body = json.dumps(oai_req).encode()
+                fo_url = f"{OLLAMA_API_BASE}/v1/chat/completions"
+                translate_back = "gemini"
             else:
-                return None  # Google / unknown — no translator
+                return None  # Unknown provider — no translator
 
             f_status, f_headers, f_body = await self._forward_request(
                 fo_url, fo_body, {"content-type": "application/json"}
             )
 
             if f_status == 200 and f_body:
-                if "/v1/messages" in path:
+                if translate_back == "anthropic":
                     # Translate Ollama OpenAI response back to Anthropic format
                     try:
                         oai_resp = json.loads(f_body)
                         f_body = json.dumps(
                             openai_to_anthropic_response(oai_resp, model_name)
                         ).encode()
+                    except Exception as te:
+                        logger.warning("Response translation failed: %s", te)
+                        return None
+                elif translate_back == "gemini":
+                    # Translate Ollama OpenAI response back to Gemini format
+                    try:
+                        oai_resp = json.loads(f_body)
+                        f_body = json.dumps(openai_to_gemini_response(oai_resp)).encode()
                     except Exception as te:
                         logger.warning("Response translation failed: %s", te)
                         return None
@@ -239,6 +291,49 @@ class LLMProxy:
         except Exception as e:
             logger.warning("Failover dispatch error: %s — returning original cloud error", e)
             return None
+
+    # ---------------------------------------------------------------------------
+    # Local backend availability helpers
+    # ---------------------------------------------------------------------------
+
+    @staticmethod
+    def _is_connect_error(exc: BaseException) -> bool:
+        """True for connection-level failures (refused / unreachable / reset).
+
+        Unwraps urllib URLError to its underlying OS-level reason. HTTPError
+        (a valid HTTP response) is never a connect error. Also matches httpx
+        ConnectError/ConnectTimeout by name without importing httpx.
+        """
+        if isinstance(exc, urllib.error.HTTPError):
+            return False
+        if type(exc).__name__ in ("ConnectError", "ConnectTimeout"):
+            return True
+        if isinstance(exc, urllib.error.URLError) and isinstance(exc.reason, BaseException):
+            exc = exc.reason
+        return isinstance(exc, (ConnectionError, TimeoutError, OSError))
+
+    def _local_backend_unavailable_response(
+        self, base_url: str, exc: BaseException
+    ) -> tuple[int, dict, bytes]:
+        """Build a structured 503 for an unreachable local backend.
+
+        Logs one WARNING per backend per _BACKEND_UNAVAILABLE_WARN_INTERVAL_SECONDS
+        window (DEBUG otherwise) to avoid per-request log spam.
+        """
+        hint = _LOCAL_BACKEND_HINTS[base_url]
+        now = time.monotonic()
+        last = self._backend_unavailable_last_warn.get(base_url, float("-inf"))
+        if now - last >= _BACKEND_UNAVAILABLE_WARN_INTERVAL_SECONDS:
+            self._backend_unavailable_last_warn[base_url] = now
+            logger.warning(
+                "Local LLM backend unreachable (%s): %s — %s", base_url, exc, hint
+            )
+        else:
+            logger.debug("Local LLM backend unreachable (%s): %s", base_url, exc)
+        body = json.dumps(
+            {"error": {"type": "backend_unavailable", "message": hint}}
+        ).encode()
+        return 503, {"content-type": "application/json"}, body
 
     async def proxy_messages(
         self,
@@ -345,6 +440,10 @@ class LLMProxy:
             )
             return 200, {"content-type": "application/json"}, fallback_body
         except Exception as e:
+            # Local backend (mlx_lm / Ollama / LM Studio) connect failure →
+            # structured 503 with an operator hint instead of a raw 502.
+            if base_url in _LOCAL_BACKEND_HINTS and self._is_connect_error(e):
+                return self._local_backend_unavailable_response(base_url, e)
             logger.error(f"LLM proxy error: {e}")
             error_resp = json.dumps(
                 {
@@ -380,9 +479,19 @@ class LLMProxy:
                         self._stats.get("failover_quota_failed", 0) + 1
                     )
                     self._record_failover_event(quota_token, "failed", local_model)
-                    # Google / unknown provider: notify even though we can't translate
+                    # Untranslatable provider/request: notify that no translation
+                    # path exists. Gemini non-streaming text HAS a translator, so
+                    # only notify for unsupported Gemini requests (streaming/tools)
+                    # or truly unknown providers.
                     if not is_openai and "/v1/messages" not in path:
-                        self._emit_failover_notice(quota_token, translated=False)
+                        _no_translator = True
+                        if is_google:
+                            _no_translator = (
+                                gemini_failover_unsupported_reason(request_data or {}, path)
+                                is not None
+                            )
+                        if _no_translator:
+                            self._emit_failover_notice(quota_token, translated=False)
                     # Fall through → return original cloud 429
 
         # === OUTBOUND FILTERING ===
