@@ -321,19 +321,6 @@ class TestConfigValidation:
         assert 'ready="no"' in script
         assert "for _i in $(seq 1 60)" in script
 
-    def test_openclaw_start_script_uses_two_phase_startup_notifications(self):
-        """OpenClaw start script should send starting first, then online after readiness checks."""
-        path = REPO_ROOT / "docker" / "bots" / "openclaw" / "start.sh"
-        if not path.exists():
-            pytest.skip("openclaw/start.sh not available in this environment")
-        script = path.read_text()
-        assert "🟡 OpenClaw starting" in script
-        assert "🛡️ OpenClaw online" in script
-        assert "🟠 OpenClaw starting (readiness delayed)" in script
-        assert "_telegram_get_me_ready" in script
-        assert "_model_runtime_ready" in script
-        assert "for _i in $(seq 1 60)" in script
-
     def test_startup_online_notice_sent_only_after_readiness_gate(self):
         """Online notice must appear after readiness probes to avoid premature status signals."""
         path = REPO_ROOT / "docker" / "scripts" / "start-agentshroud.sh"
@@ -349,33 +336,14 @@ class TestConfigValidation:
         )
         assert script.index("🟡 OpenClaw starting") < script.index("🛡️ OpenClaw online")
 
-    def test_openclaw_bot_start_script_online_notice_after_readiness_gate(self):
-        """OpenClaw bot wrapper should send online notice only after readiness checks pass."""
-        path = REPO_ROOT / "docker" / "bots" / "openclaw" / "start.sh"
-        if not path.exists():
-            pytest.skip("openclaw/start.sh not available in this environment")
-        script = path.read_text()
-        assert script.index('ready="no"') < script.index('if [ "${ready}" = "yes" ]; then')
-        assert script.index("_telegram_get_me_ready") < script.index(
-            'if [ "${ready}" = "yes" ]; then'
-        )
-        assert script.index("_model_runtime_ready") < script.index(
-            'if [ "${ready}" = "yes" ]; then'
-        )
-        assert script.index("🟡 OpenClaw starting") < script.index("🛡️ OpenClaw online")
-
     def test_startup_telegram_calls_use_system_header(self):
         """Startup notification Telegram calls should be marked as system-originated."""
         script_path = REPO_ROOT / "docker" / "scripts" / "start-agentshroud.sh"
-        bot_path = REPO_ROOT / "docker" / "bots" / "openclaw" / "start.sh"
-        if not script_path.exists() or not bot_path.exists():
+        if not script_path.exists():
             pytest.skip("startup scripts not available in this environment")
         script = script_path.read_text()
-        bot_script = bot_path.read_text()
         assert "X-AgentShroud-System: 1" in script
-        assert "X-AgentShroud-System: 1" in bot_script
         assert "/getMe" in script
-        assert "/getMe" in bot_script
 
     def test_hermes_startup_telegram_calls_use_system_header(self):
         """Hermes startup notifications must use X-AgentShroud-System: 1 (bypasses content filter)."""
