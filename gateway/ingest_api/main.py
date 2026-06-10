@@ -31,10 +31,12 @@ from datetime import datetime, timezone
 from pathlib import Path
 from typing import Annotated, Optional
 
+import anyio
 from fastapi import Depends, FastAPI, HTTPException, Query, Request, WebSocket, status
 from fastapi.responses import HTMLResponse, JSONResponse
 from fastapi.staticfiles import StaticFiles
 from pydantic import BaseModel, Field
+from starlette.requests import ClientDisconnect
 from starlette.responses import RedirectResponse
 
 from gateway import __version__
@@ -50,7 +52,6 @@ from ..proxy.telegram_proxy import TelegramAPIProxy
 from ..proxy.telegram_replay import UpdateReplayBuffer
 from ..proxy.web_config import WebProxyConfig
 from ..proxy.web_proxy import WebProxy
-from ..proxy.webhook_receiver import WebhookReceiver
 from ..security.egress_filter import EgressFilter
 from ..security.killswitch_monitor import KillSwitchMonitor
 from ..security.outbound_filter import OutboundInfoFilter
@@ -304,14 +305,27 @@ async def limit_request_body(request: Request, call_next):
         # No Content-Length — chunked or unknown. Measure actual bytes.
         total = 0
         chunks: list[bytes] = []
-        async for chunk in request.stream():
-            total += len(chunk)
-            if total > _MAX_BODY_SIZE:
-                return JSONResponse(
-                    status_code=413,
-                    content={"detail": "Request body too large (max 1MB)"},
-                )
-            chunks.append(chunk)
+        try:
+            async for chunk in request.stream():
+                total += len(chunk)
+                if total > _MAX_BODY_SIZE:
+                    return JSONResponse(
+                        status_code=413,
+                        content={"detail": "Request body too large (max 1MB)"},
+                    )
+                chunks.append(chunk)
+        except (ClientDisconnect, anyio.EndOfStream, anyio.ClosedResourceError):
+            # Client dropped mid-upload (network blip, cancelled request).
+            # Without this, the disconnect surfaces inside Starlette's anyio
+            # TaskGroup as an unhandled BaseExceptionGroup traceback. The
+            # response is never delivered (the client is gone) — returning
+            # cleanly here just stops the noise. Size limit semantics are
+            # unchanged: oversized bodies are still rejected above.
+            logger.info("Client disconnected during request body read: %s", request.url.path)
+            return JSONResponse(
+                status_code=400,
+                content={"detail": "Client disconnected during request body read"},
+            )
 
         # Re-inject the consumed body so downstream handlers can still read it.
         async def _body_stream():
@@ -833,38 +847,8 @@ async def mcp_result_endpoint(payload: MCPResultRequest, http_request: Request, 
 
 # === Channel Ownership (P3) ===
 #
-# Telegram: all inbound messages route through WebhookReceiver + SecurityPipeline
-# Email:    bot submits send requests here; gateway validates, scans PII, and
-#           either approves or queues for human review.
-#
-# Activated now. The bot uses these endpoints once it's updated to call the
-# gateway instead of sending directly (FINAL PR wires docker-compose).
-
-
-@app.post("/webhook/telegram")
-async def telegram_webhook(request: Request, auth: AuthRequired):
-    """Telegram inbound webhook (P3: channel ownership).
-
-    All Telegram messages destined for the bot pass through this endpoint.
-    Messages are scanned for prompt injection and PII before being forwarded.
-    Authentication required.
-    """
-    try:
-        payload = await request.json()
-    except Exception:
-        payload = {}
-
-    # Build receiver using available app_state components
-    pipeline = getattr(app_state, "pipeline", None)
-    forwarder = getattr(app_state, "forwarder", None)
-    session_manager = getattr(app_state, "session_manager", None)
-    receiver = WebhookReceiver(
-        pipeline=pipeline, forwarder=forwarder, session_manager=session_manager
-    )
-
-    result = await receiver.process_webhook(payload, source="telegram")
-    logger.info(f"telegram-webhook: status={result.get('status')}")
-    return result
+# Telegram inbound webhook lives in routes/forward.py (forward_router),
+# included at startup — defining it here too produced a dead duplicate route.
 
 
 @app.get("/ledger", response_model=LedgerQueryResponse)
@@ -4287,7 +4271,11 @@ _slack_proxy = SlackAPIProxy(
 )
 
 
-@app.api_route("/telegram-api/{path:path}", methods=["GET", "POST", "PUT", "DELETE"])
+@app.api_route(
+    "/telegram-api/{path:path}",
+    methods=["GET", "POST", "PUT", "DELETE"],
+    include_in_schema=False,
+)
 async def telegram_api_proxy(path: str, request: Request):
     """Proxy Telegram Bot API calls through security pipeline."""
     # R2-M3: IP allowlist — mirror LLM proxy restrictions for defense-in-depth
@@ -4393,7 +4381,11 @@ async def telegram_api_proxy(path: str, request: Request):
     return JSONResponse(content=result, status_code=status_code)
 
 
-@app.api_route("/slack-api/{path:path}", methods=["GET", "POST"])
+@app.api_route(
+    "/slack-api/{path:path}",
+    methods=["GET", "POST"],
+    include_in_schema=False,
+)
 async def slack_api_proxy(path: str, request: Request):
     """Proxy bot Slack Web API calls through SecurityPipeline.
 

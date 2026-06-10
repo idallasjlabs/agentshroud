@@ -7921,6 +7921,9 @@ class TelegramAPIProxy:
         )
         is_binary_upload = any(m in url for m in _binary_methods)
         urlopen_timeout = 60 if is_long_poll else (45 if is_binary_upload else 15)
+        # Intentional self-healing watchdog: the 65s cap (60s long-poll + 5s budget)
+        # aborts a hung getUpdates forward and returns a clean 504 so the bot
+        # immediately re-polls — the periodic "timed out after 65s" WARNING is expected.
         wait_for_timeout = urlopen_timeout + 5  # queue + execution budget
 
         loop = asyncio.get_event_loop()

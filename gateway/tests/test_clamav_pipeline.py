@@ -20,7 +20,7 @@ from unittest.mock import AsyncMock, MagicMock, patch
 import pytest
 
 from gateway.proxy.pipeline import PipelineAction, SecurityPipeline
-from gateway.security.clamav_scanner import parse_clamscan_output, scan_bytes
+from gateway.security.clamav_scanner import scan_bytes
 
 # ---------------------------------------------------------------------------
 # scan_bytes unit tests
@@ -45,11 +45,21 @@ async def test_scan_bytes_binary_not_found():
     assert result["error"] == "binary_not_found"
 
 
+async def _timeout_wait_for(coro, timeout):
+    """Test replacement for asyncio.wait_for — raises TimeoutError.
+
+    Closes the un-awaited coroutine first, otherwise its garbage collection
+    emits 'coroutine was never awaited' in whatever test runs next.
+    """
+    coro.close()
+    raise asyncio.TimeoutError()
+
+
 @pytest.mark.asyncio
 async def test_scan_bytes_timeout():
     mock_proc = AsyncMock()
     with patch("asyncio.create_subprocess_exec", return_value=mock_proc):
-        with patch("asyncio.wait_for", side_effect=asyncio.TimeoutError()):
+        with patch("asyncio.wait_for", new=_timeout_wait_for):
             result = await scan_bytes(b"x" * 500, timeout=1)
     assert result["infected_count"] == 0
     assert result["error"] == "timeout"

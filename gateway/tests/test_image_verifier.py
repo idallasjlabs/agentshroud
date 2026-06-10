@@ -12,7 +12,7 @@ Covers:
 from __future__ import annotations
 
 import asyncio
-from unittest.mock import AsyncMock, MagicMock, patch
+from unittest.mock import AsyncMock, patch
 
 import pytest
 
@@ -64,11 +64,21 @@ async def test_cosign_fails_bad_signature():
     assert "no matching signatures" in result["error"]
 
 
+async def _timeout_wait_for(coro, timeout):
+    """Test replacement for asyncio.wait_for — raises TimeoutError.
+
+    Closes the un-awaited coroutine first, otherwise its garbage collection
+    emits 'coroutine was never awaited' in whatever test runs next.
+    """
+    coro.close()
+    raise asyncio.TimeoutError()
+
+
 @pytest.mark.asyncio
 async def test_cosign_timeout():
     with patch("shutil.which", return_value="/usr/local/bin/cosign"):
         with patch("asyncio.create_subprocess_exec"):
-            with patch("asyncio.wait_for", side_effect=asyncio.TimeoutError()):
+            with patch("asyncio.wait_for", new=_timeout_wait_for):
                 result = await verify_image("ghcr.io/example/app:latest", timeout=5)
 
     assert result["verified"] is False

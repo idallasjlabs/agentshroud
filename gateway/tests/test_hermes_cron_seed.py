@@ -26,8 +26,8 @@ _EXPECTED_YAML_JOB_COUNT = 10
 
 def _parse_cron_names_from_sh() -> list[str]:
     text = INIT_CONFIG.read_text(encoding="utf-8")
-    # Match lines like: --name "Some Job Name"
-    return re.findall(r'--name\s+"([^"]+)"', text)
+    # Jobs are seeded via: _seed_cron "Job Name" "deliver" "schedule" "prompt"
+    return re.findall(r'^_seed_cron\s+"([^"]+)"', text, re.MULTILINE)
 
 
 def _parse_job_names_from_yaml() -> list[str]:
@@ -50,11 +50,19 @@ def test_jobs_yaml_has_expected_job_count():
     ), f"Expected {_EXPECTED_YAML_JOB_COUNT} jobs in jobs.yaml, got {len(names)}: {names}"
 
 
-def test_cron_stamp_is_v3():
+def test_cron_seed_is_stampless_and_idempotent():
+    """Stamp-file gating (v1/v2/v3) caused job triplication on every version bump.
+
+    The seeder must instead delete any same-named job before creating it, and the
+    old stamp mechanism must not return.
+    """
     text = INIT_CONFIG.read_text(encoding="utf-8")
-    assert (
-        ".hermes-cron-seeded-v3" in text
-    ), "Cron stamp must be '.hermes-cron-seeded-v3' to trigger re-seed after HTML email fix"
+    assert "hermes-cron-seeded" not in text, (
+        "Stamp-file gating must stay removed — it caused cron job triplication "
+        "on every version bump (see PR #148)"
+    )
+    assert "_seed_cron" in text, "Idempotent _seed_cron helper missing from init-config.sh"
+    assert "cron delete" in text, "_seed_cron must delete same-named jobs before re-creating"
 
 
 def test_stability_report_job_present():

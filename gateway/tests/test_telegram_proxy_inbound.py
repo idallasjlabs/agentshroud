@@ -26,6 +26,22 @@ import pytest
 
 from gateway.proxy.telegram_proxy import TelegramAPIProxy
 
+
+@pytest.fixture(autouse=True)
+def _no_owner_mirror(monkeypatch):
+    """Stub the fire-and-forget owner activity mirror.
+
+    The mirror runs via asyncio.create_task and races with the reply send,
+    nondeterministically clobbering the `captured` payload these tests assert
+    on. Mirror behaviour has its own coverage in test_telegram_proxy_outbound.
+    """
+
+    async def _noop(self, *args, **kwargs):
+        return None
+
+    monkeypatch.setattr(TelegramAPIProxy, "_mirror_to_owner_if_collaborator", _noop)
+
+
 # ── Helpers ──────────────────────────────────────────────────────────────────
 
 

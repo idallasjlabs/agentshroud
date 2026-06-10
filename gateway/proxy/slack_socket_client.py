@@ -20,7 +20,8 @@ from __future__ import annotations
 import asyncio
 import json
 import logging
-from typing import TYPE_CHECKING
+import random
+from typing import TYPE_CHECKING, Callable
 
 if TYPE_CHECKING:
     from gateway.proxy.slack_proxy import SlackAPIProxy
@@ -28,8 +29,25 @@ if TYPE_CHECKING:
 logger = logging.getLogger("agentshroud.proxy.slack_socket")
 
 CONNECTIONS_OPEN_URL = "https://slack.com/api/apps.connections.open"
-# Seconds to wait before reconnect after error
-_RECONNECT_BACKOFF = [2, 5, 10, 30, 60]
+# Capped exponential backoff parameters for the reconnect loop
+_BACKOFF_BASE = 1.0  # seconds
+_BACKOFF_CAP = 60.0  # seconds
+
+
+def compute_backoff(
+    attempt: int,
+    base: float = _BACKOFF_BASE,
+    cap: float = _BACKOFF_CAP,
+    rand: Callable[[], float] = random.random,
+) -> float:
+    """Capped exponential backoff with jitter for reconnect attempts.
+
+    Returns a wait between 50% and 100% of min(cap, base * 2**attempt) so
+    repeated network blips don't produce a fixed-interval retry storm and
+    reconnecting clients don't thunder-herd Slack at the same instant.
+    """
+    ceiling = min(cap, base * (2 ** min(attempt, 16)))
+    return ceiling * (0.5 + 0.5 * rand())
 
 
 class SlackSocketClient:
@@ -43,24 +61,31 @@ class SlackSocketClient:
         self._app_token = app_token
         self._running = False
         self._ws = None
+        self._connect_ok = False  # True once a WSS connection was established
 
     async def run(self) -> None:
         """Main reconnect loop. Runs until stop() is called."""
         self._running = True
-        backoff_idx = 0
+        attempt = 0
         logger.info("Slack Socket Mode client starting")
 
         while self._running:
             try:
+                self._connect_ok = False
                 wss_url = await self._get_wss_url()
-                backoff_idx = 0  # reset backoff on successful URL fetch
                 await self._connect_and_handle(wss_url)
+                attempt = 0  # clean disconnect (Slack rotation) — reconnect at once
             except asyncio.CancelledError:
                 break
             except Exception as exc:
-                wait = _RECONNECT_BACKOFF[min(backoff_idx, len(_RECONNECT_BACKOFF) - 1)]
-                logger.error("Slack Socket Mode error: %s — reconnecting in %ds", exc, wait)
-                backoff_idx += 1
+                # Reset backoff only after a successful WSS connection — a
+                # successful apps.connections.open alone must not reset it, or
+                # repeated WSS failures retry at a fixed short interval.
+                if self._connect_ok:
+                    attempt = 0
+                wait = compute_backoff(attempt)
+                logger.error("Slack Socket Mode error: %s — reconnecting in %.1fs", exc, wait)
+                attempt += 1
                 await asyncio.sleep(wait)
 
         logger.info("Slack Socket Mode client stopped")
@@ -93,6 +118,7 @@ class SlackSocketClient:
         logger.info("Slack Socket Mode: connecting to WSS endpoint")
         async with websockets.connect(wss_url, ping_interval=30, ping_timeout=10) as ws:
             self._ws = ws
+            self._connect_ok = True  # connection established — run() may reset backoff
             async for raw_message in ws:
                 if not self._running:
                     break
