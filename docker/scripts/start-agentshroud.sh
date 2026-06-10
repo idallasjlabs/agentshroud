@@ -184,41 +184,6 @@ if [ -n "${GATEWAY_AUTH_TOKEN:-}" ] && [ -n "${GATEWAY_OP_PROXY_URL:-}" ] && $_O
         echo "[startup] ⚠ Brave Search API key unavailable (continuing without web search key)"
     fi
 
-    # iCloud email credentials — loaded in background to avoid blocking startup
-    # (non-critical: email features degrade gracefully without iCloud creds)
-    SECRETS_DIR="${SECRETS_DIR:-/tmp/secrets}"
-    _ICLOUD_ENV_FILE="/tmp/.icloud-env"
-    (
-        ICLOUD_APP_PASSWORD="$(op_proxy_read_with_retry "iCloud app password" \
-            "op://Agent Shroud Bot Credentials/25ghxryyvup5wpufgfldgc2vjm/agentshroud app-specific password")" || true
-        if [ -n "$ICLOUD_APP_PASSWORD" ]; then
-            cat > "$_ICLOUD_ENV_FILE" << EOF
-export ICLOUD_APP_PASSWORD="$ICLOUD_APP_PASSWORD"
-
-# ── SECURITY (C3/H2): Write secrets to tmpfs files, then unset env vars ──
-# Prevents secrets from appearing in /proc/*/environ of child processes.
-# OpenClaw reads these at startup; after that, file-based access only.
-SECRETS_DIR="\${SECRETS_DIR:-/tmp/secrets}"
-mkdir -p "\${SECRETS_DIR}"
-chmod 700 "\${SECRETS_DIR}"
-
-for _var in ANTHROPIC_OAUTH_TOKEN BRAVE_API_KEY ICLOUD_APP_PASSWORD; do
-  _val=\$(eval echo "\$\$_var")
-  if [ -n "\$_val" ]; then
-    printf '%s' "\$_val" > "\$SECRETS_DIR/\$_var"
-    chmod 600 "\$SECRETS_DIR/\$_var"
-  fi
-done
-echo "[security] ✓ Secrets written to tmpfs files, env vars preserved for OpenClaw startup"
-export ICLOUD_USERNAME="agentshroud.ai@gmail.com"
-export ICLOUD_EMAIL="agentshroud.ai@icloud.com"
-EOF
-            echo "[startup] ✓ Loaded iCloud email credentials (background)"
-        else
-            echo "[startup] ⚠ Could not load iCloud app-specific password after retries"
-        fi
-    ) &
-    _ICLOUD_BG_PID=$!
 else
     echo "[startup] Warning: Gateway op-proxy not configured, 1Password secrets unavailable"
 fi
@@ -239,21 +204,6 @@ if [ -f "$_WORKSPACE_PKG" ] && grep -q '"underscore"' "$_WORKSPACE_PKG" 2>/dev/n
         echo "[startup] underscore upgraded from $_US_VER (CVE-2021-23358)"
     else
         echo "[startup] underscore $_US_VER already patched — skipping update (CVE-2021-23358)"
-    fi
-fi
-
-# Wait briefly for background iCloud fetch, then source if ready
-if [ -n "${_ICLOUD_BG_PID:-}" ]; then
-    # Give it 3 seconds — if it's not done, gateway starts without iCloud
-    for _i in 1 2 3; do
-        if [ -f "${_ICLOUD_ENV_FILE:-/tmp/.icloud-env}" ]; then
-            . "$_ICLOUD_ENV_FILE" || true; set -u
-            break
-        fi
-        sleep 1
-    done
-    if [ ! -f "${_ICLOUD_ENV_FILE:-/tmp/.icloud-env}" ]; then
-        echo "[startup] iCloud credentials still loading in background — gateway starting without them"
     fi
 fi
 
