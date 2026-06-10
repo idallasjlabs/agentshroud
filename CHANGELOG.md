@@ -8,6 +8,56 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ---
 
+## [1.1.1] — fix/guard-wiring-and-ops-hardening (2026-06-10)
+
+### Summary
+
+v1.1.1 — security-wiring and operational-hardening release. Two dormant guards
+(ContextIntegrityScorer, EnvelopeSigner) are now live in the pipeline, the Gemini
+quota-failover path gained a real request/response translator, and container log
+warnings/errors across gateway, OpenClaw, and Hermes were eliminated.
+
+### Security
+
+- **ContextIntegrityScorer wired into inbound pipeline** (`gateway/proxy/pipeline.py`) —
+  previously instantiated but never invoked. Integrity score < 0.3 blocks non-owner
+  messages (owner exempt); 0.3–0.6 warns and forwards. Scorer exceptions fail closed
+  for non-owners. `integrity_score`/`integrity_factors` added to `PipelineResult`.
+- **EnvelopeSigner wired into outbound pipeline** — every sanitized outbound message is
+  now signed (tool results via `wrap_tool_result`). Signing is attestation, never a gate;
+  failures log but do not block. `envelope_id`/`envelope_signature` in `PipelineResult` + audit.
+- Both guards added to `_RECOMMENDED_GUARDS`.
+
+### Added
+
+- **Gemini↔OpenAI failover translator** (`gateway/proxy/gemini_openai_translator.py`) —
+  Gemini quota failover now translates non-streaming text requests/responses instead of
+  silently returning `None`; streaming/tool-call requests punt with an explicit log.
+- `xxd` installed in the Hermes image (was breaking 33+ tool executions).
+- `openai_api_key` Docker secret plumbed to Hermes (silences missing-key warnings).
+
+### Fixed
+
+- mlx_lm backend down now returns a clean 503 `backend_unavailable` JSON with an
+  actionable hint instead of a raw connection error (rate-limited warnings).
+- `ClientDisconnect` during body-stream middleware handled cleanly (no more unhandled
+  `ExceptionGroup` in Starlette middleware).
+- Slack socket-mode reconnects use capped exponential backoff with jitter (1s→60s),
+  ending retry storms.
+- `patch-slack-sdk.sh` is idempotent and version-tolerant — warns and exits 0 when the
+  pong pattern is absent or already patched.
+- 1Password `op` prewarm thread no longer spawns real subprocesses under pytest.
+- Benchmark regression tests keyed to the real baseline schema (`100_inbound_s`);
+  dead `100_outbound` test removed.
+
+### Removed
+
+- Dead OpenClaw scripts: `docker/bots/openclaw/{start.sh, init-config.sh,
+  patch-anthropic-sdk.sh, patch-telegram-sdk.sh}` — production uses
+  `docker/scripts/start-agentshroud.sh`.
+
+---
+
 ## [1.1.0] — feat-v1.4.0-shroud-another-bot — "Hermes" (2026-05-29)
 
 ### Summary

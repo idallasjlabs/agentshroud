@@ -44,6 +44,11 @@ inject BRAVE_API_KEY        /run/secrets/brave_api_key
 # Anthropic API key (routed through gateway:8080 via ANTHROPIC_BASE_URL in compose)
 inject ANTHROPIC_API_KEY    /run/secrets/anthropic_oauth_token
 
+# OpenAI API key (routed through gateway:8080 via OPENAI_BASE_URL in compose).
+# Without this, hermes' OpenAI client rebuild logs "missing OPENAI_API_KEY"
+# warnings on every config reload even though all calls go via the gateway.
+inject OPENAI_API_KEY       /run/secrets/openai_api_key
+
 # Hermes OpenAI-compatible API server key (gates port 8642)
 inject API_SERVER_KEY       /run/secrets/hermes_api_key
 

@@ -37,8 +37,17 @@ check "init-config.sh: competitive email cron create includes --html" \
 check "init-config.sh: competitive email cron create includes --body" \
     "docker/bots/hermes/init-config.sh" "\-\-body"
 
-check "init-config.sh: cron stamp version is v3 (ensures re-seeding after HTML fix)" \
-    "docker/bots/hermes/init-config.sh" "hermes-cron-seeded-v3"
+# Stamp-file gating was removed (PR #148): it caused cron job triplication on
+# every version bump. Seeding is now idempotent via delete-then-create.
+check "init-config.sh: idempotent _seed_cron helper present (stampless re-seed)" \
+    "docker/bots/hermes/init-config.sh" "_seed_cron"
+
+if /usr/bin/grep -q "hermes-cron-seeded" "$REPO/docker/bots/hermes/init-config.sh" 2>/dev/null; then
+    echo "  FAIL: stamp-file gating reintroduced — causes cron job triplication (PR #148)" >&2
+    fail=1
+else
+    echo "  OK : no stamp-file gating (idempotent seeding only)"
+fi
 
 echo ""
 if [[ "$fail" -eq 0 ]]; then

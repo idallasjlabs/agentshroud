@@ -16,6 +16,7 @@ from fastapi import HTTPException
 
 from gateway.ingest_api.main import (
     global_exception_handler,
+    limit_request_body,
     log_requests,
     security_headers_middleware,
 )
@@ -95,6 +96,86 @@ async def test_security_headers_middleware_reraises_non_group():
 
     with pytest.raises(KeyboardInterrupt):
         await security_headers_middleware(request, mock_call_next_raises)
+
+
+@pytest.mark.asyncio
+async def test_limit_request_body_client_disconnect_returns_clean_response():
+    """limit_request_body returns a clean 400 when the client drops mid-upload.
+
+    Without explicit handling, ClientDisconnect raised by request.stream()
+    propagates into Starlette's anyio TaskGroup and surfaces as an unhandled
+    BaseExceptionGroup traceback in the logs.
+    """
+    from starlette.requests import ClientDisconnect
+
+    request = MagicMock()
+    request.headers = {}  # no Content-Length → chunked body-read path
+    request.url.path = "/forward"
+
+    async def disconnecting_stream():
+        yield b"partial-chunk"
+        raise ClientDisconnect()
+
+    request.stream = disconnecting_stream
+
+    call_next_invoked = False
+
+    async def mock_call_next(req):
+        nonlocal call_next_invoked
+        call_next_invoked = True
+        return MagicMock()
+
+    result = await limit_request_body(request, mock_call_next)
+
+    assert result.status_code == 400
+    assert "disconnected" in result.body.decode().lower()
+    assert call_next_invoked is False  # downstream never runs for a dead client
+
+
+@pytest.mark.asyncio
+async def test_limit_request_body_chunked_body_within_limit_passes_through():
+    """limit_request_body re-injects a fully-read chunked body and calls downstream."""
+    request = MagicMock()
+    request.headers = {}  # no Content-Length → chunked body-read path
+    request.url.path = "/forward"
+
+    async def small_stream():
+        yield b"hello "
+        yield b"world"
+
+    request.stream = small_stream
+
+    response = MagicMock()
+
+    async def mock_call_next(req):
+        return response
+
+    result = await limit_request_body(request, mock_call_next)
+
+    assert result is response
+    # Re-injected stream must replay the consumed chunks for downstream readers
+    replayed = b"".join([c async for c in request._stream])
+    assert replayed == b"hello world"
+
+
+@pytest.mark.asyncio
+async def test_limit_request_body_chunked_body_over_limit_rejected():
+    """limit_request_body rejects chunked bodies over 1MB with 413."""
+    request = MagicMock()
+    request.headers = {}
+    request.url.path = "/forward"
+
+    async def oversized_stream():
+        yield b"x" * 1_048_577  # 1MB + 1 byte
+
+    request.stream = oversized_stream
+
+    async def mock_call_next(req):  # pragma: no cover - must not be reached
+        raise AssertionError("call_next must not run for oversized body")
+
+    result = await limit_request_body(request, mock_call_next)
+
+    assert result.status_code == 413
 
 
 @pytest.mark.asyncio

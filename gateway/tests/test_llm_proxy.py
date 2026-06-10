@@ -494,3 +494,120 @@ async def test_streaming_secret_value_redacted():
     result = await proxy._filter_outbound_streaming(sse_body, user_id="u1")
     assert b"supersecrettoken12345" not in result
     assert b"REDACTED" in result
+
+
+# ---------------------------------------------------------------------------
+# Local backend graceful degradation: structured 503 on connect failure
+# ---------------------------------------------------------------------------
+
+
+async def _proxy_with_connect_refused(monkeypatch, model: str):
+    proxy = LLMProxy()
+
+    async def mock_forward(url, body, headers):
+        raise ConnectionRefusedError(f"[Errno 61] Connection refused: {url}")
+
+    monkeypatch.setattr(proxy, "_forward_request", mock_forward)
+    status, headers, body = await proxy.proxy_messages(
+        "/v1/chat/completions",
+        json.dumps({"model": model, "messages": [{"role": "user", "content": "hi"}]}).encode(),
+        {"content-type": "application/json"},
+    )
+    return proxy, status, headers, body
+
+
+@pytest.mark.asyncio
+async def test_mlxlm_connect_failure_returns_structured_503(monkeypatch):
+    """mlx_lm down (connection refused) → 503 backend_unavailable with start hint."""
+    _, status, headers, body = await _proxy_with_connect_refused(monkeypatch, "deepseek-r1")
+    assert status == 503
+    assert headers["content-type"] == "application/json"
+    data = json.loads(body)
+    assert data["error"]["type"] == "backend_unavailable"
+    assert "mlx_lm.server --port 8234" in data["error"]["message"]
+
+
+@pytest.mark.asyncio
+async def test_ollama_connect_failure_returns_structured_503(monkeypatch):
+    """Ollama down → 503 backend_unavailable with ollama serve hint."""
+    _, status, _, body = await _proxy_with_connect_refused(monkeypatch, "llama3.2")
+    assert status == 503
+    data = json.loads(body)
+    assert data["error"]["type"] == "backend_unavailable"
+    assert "ollama serve" in data["error"]["message"]
+
+
+@pytest.mark.asyncio
+async def test_lmstudio_connect_failure_returns_structured_503(monkeypatch):
+    """LM Studio down → 503 backend_unavailable with LM Studio hint."""
+    _, status, _, body = await _proxy_with_connect_refused(monkeypatch, "qwen3:14b")
+    assert status == 503
+    data = json.loads(body)
+    assert data["error"]["type"] == "backend_unavailable"
+    assert "LM Studio" in data["error"]["message"]
+
+
+@pytest.mark.asyncio
+async def test_backend_unavailable_warning_rate_limited(monkeypatch, caplog):
+    """Repeated connect failures log one WARNING per window, not per request."""
+    import logging
+
+    proxy = LLMProxy()
+
+    async def mock_forward(url, body, headers):
+        raise ConnectionRefusedError("Connection refused")
+
+    monkeypatch.setattr(proxy, "_forward_request", mock_forward)
+    caplog.set_level(logging.WARNING, logger="agentshroud.proxy.llm_api")
+
+    req = json.dumps(
+        {"model": "deepseek-r1", "messages": [{"role": "user", "content": "hi"}]}
+    ).encode()
+    for _ in range(3):
+        status, _, _ = await proxy.proxy_messages(
+            "/v1/chat/completions", req, {"content-type": "application/json"}
+        )
+        assert status == 503
+
+    warnings = [
+        r
+        for r in caplog.records
+        if r.levelno == logging.WARNING and "backend unreachable" in r.getMessage()
+    ]
+    assert len(warnings) == 1
+
+
+@pytest.mark.asyncio
+async def test_cloud_backend_connect_failure_still_returns_502(monkeypatch):
+    """Connect failures to cloud providers keep the existing 502 behavior."""
+    monkeypatch.setattr(llm_proxy_module, "MODEL_MODE", "cloud")
+    proxy = LLMProxy()
+
+    async def mock_forward(url, body, headers):
+        raise ConnectionRefusedError("Connection refused")
+
+    monkeypatch.setattr(proxy, "_forward_request", mock_forward)
+    status, _, body = await proxy.proxy_messages(
+        "/v1/messages",
+        json.dumps(
+            {"model": "claude-opus-4-6", "messages": [{"role": "user", "content": "hi"}]}
+        ).encode(),
+        {"content-type": "application/json"},
+    )
+    assert status == 502
+    assert json.loads(body)["error"]["type"] == "api_error"
+
+
+def test_is_connect_error_classification():
+    """_is_connect_error matches connection-level failures only."""
+    import urllib.error
+
+    class ConnectError(Exception):  # mimics httpx.ConnectError by name
+        pass
+
+    assert LLMProxy._is_connect_error(ConnectError("refused"))
+    assert LLMProxy._is_connect_error(ConnectionRefusedError())
+    assert LLMProxy._is_connect_error(ConnectionResetError())
+    assert LLMProxy._is_connect_error(urllib.error.URLError(ConnectionRefusedError()))
+    assert not LLMProxy._is_connect_error(ValueError("nope"))
+    assert not LLMProxy._is_connect_error(urllib.error.HTTPError("http://x", 500, "err", {}, None))

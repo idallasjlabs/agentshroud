@@ -12,7 +12,12 @@ let changed = false;
 
 // Patch 1: Demote pong timeout warning to debug.
 // 'A pong wasn't received from the server before...' floods logs on VPN reconnects.
-if (c.includes(\"this.logger.warn(\\\`A pong wasn't received\")) {
+// Idempotent: this script runs at image build AND on every boot, so the warn
+// pattern is normally already gone — detect that case and stay quiet instead
+// of emitting 'pattern not found' noise on every startup.
+if (c.includes(\"this.logger.debug(\\\`A pong wasn't received\")) {
+    console.log('patch-slack-sdk: pong timeout already patched (ok)');
+} else if (c.includes(\"this.logger.warn(\\\`A pong wasn't received\")) {
     c = c.replace(
         /this\.logger\.warn\(\`A pong wasn't received/g,
         \"this.logger.debug(\\\`A pong wasn't received\"
@@ -20,7 +25,7 @@ if (c.includes(\"this.logger.warn(\\\`A pong wasn't received\")) {
     changed = true;
     console.log('patch-slack-sdk: pong timeout warn -> debug (applied)');
 } else {
-    console.log('patch-slack-sdk: pong warning pattern not found — skipped (SDK may have changed)');
+    console.log('patch-slack-sdk: pong warning pattern not found — skipped, continuing (SDK layout changed; harmless)');
 }
 
 // Patch 2: Demote reconnect retry warn/error to debug.

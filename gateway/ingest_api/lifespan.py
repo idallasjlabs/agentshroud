@@ -151,7 +151,14 @@ async def lifespan(app: FastAPI):
         logger.warning(f"1Password sign-in failed: {r.stderr.strip()[:200]}")
         return None
 
-    if Path(_op_email_file).exists() and Path(_op_email_file).stat().st_size > 0:
+    # Never spawn real `op` sign-in subprocesses under pytest — tests must not
+    # make network calls, and the 30s op timeouts surface as unhandled-thread
+    # warnings in the suite.
+    if (
+        Path(_op_email_file).exists()
+        and Path(_op_email_file).stat().st_size > 0
+        and "PYTEST_CURRENT_TEST" not in os.environ
+    ):
 
         def _prewarm_op():
             session = _op_authenticate()

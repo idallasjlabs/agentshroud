@@ -20,11 +20,11 @@ check() {
 echo ""
 echo "── OpenClaw startup photo assertions ──────────────────"
 
-check "openclaw start.sh: _telegram_send_photo helper defined" \
-    "docker/bots/openclaw/start.sh" "_telegram_send_photo()"
+check "openclaw start-agentshroud.sh: _telegram_send_photo helper defined" \
+    "docker/scripts/start-agentshroud.sh" "_telegram_send_photo()"
 
-check "openclaw start.sh: _telegram_send_photo called with AgentShroud™ caption" \
-    "docker/bots/openclaw/start.sh" "_telegram_send_photo.*AgentShroud"
+check "openclaw start-agentshroud.sh: _telegram_send_photo called at startup" \
+    "docker/scripts/start-agentshroud.sh" "_telegram_send_photo .*OpenClaw online"
 
 check "openclaw Dockerfile: logo.png COPY" \
     "docker/bots/openclaw/Dockerfile" "COPY branding/logos/png/logo.png"
