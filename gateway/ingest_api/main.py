@@ -34,7 +34,9 @@ from typing import Annotated, Optional
 from fastapi import Depends, FastAPI, HTTPException, Query, Request, WebSocket, status
 from fastapi.responses import HTMLResponse, JSONResponse
 from fastapi.staticfiles import StaticFiles
+import anyio
 from pydantic import BaseModel, Field
+from starlette.requests import ClientDisconnect
 from starlette.responses import RedirectResponse
 
 from gateway import __version__
@@ -304,14 +306,27 @@ async def limit_request_body(request: Request, call_next):
         # No Content-Length — chunked or unknown. Measure actual bytes.
         total = 0
         chunks: list[bytes] = []
-        async for chunk in request.stream():
-            total += len(chunk)
-            if total > _MAX_BODY_SIZE:
-                return JSONResponse(
-                    status_code=413,
-                    content={"detail": "Request body too large (max 1MB)"},
-                )
-            chunks.append(chunk)
+        try:
+            async for chunk in request.stream():
+                total += len(chunk)
+                if total > _MAX_BODY_SIZE:
+                    return JSONResponse(
+                        status_code=413,
+                        content={"detail": "Request body too large (max 1MB)"},
+                    )
+                chunks.append(chunk)
+        except (ClientDisconnect, anyio.EndOfStream, anyio.ClosedResourceError):
+            # Client dropped mid-upload (network blip, cancelled request).
+            # Without this, the disconnect surfaces inside Starlette's anyio
+            # TaskGroup as an unhandled BaseExceptionGroup traceback. The
+            # response is never delivered (the client is gone) — returning
+            # cleanly here just stops the noise. Size limit semantics are
+            # unchanged: oversized bodies are still rejected above.
+            logger.info("Client disconnected during request body read: %s", request.url.path)
+            return JSONResponse(
+                status_code=400,
+                content={"detail": "Client disconnected during request body read"},
+            )
 
         # Re-inject the consumed body so downstream handlers can still read it.
         async def _body_stream():
