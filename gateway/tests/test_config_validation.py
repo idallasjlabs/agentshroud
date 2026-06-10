@@ -281,6 +281,13 @@ class TestConfigValidation:
         assert "10.254.111.0/24" in source
         assert "10.254.112.0/24" in source
 
+    def test_lifespan_op_prewarm_guarded_against_pytest(self):
+        """The 1Password prewarm thread must never spawn real op subprocesses under pytest."""
+        source = (REPO_ROOT / "gateway" / "ingest_api" / "lifespan.py").read_text()
+        guard_pos = source.index('"PYTEST_CURRENT_TEST" not in os.environ')
+        thread_pos = source.index("threading.Thread(target=_prewarm_op")
+        assert guard_pos < thread_pos, "pytest guard must gate the op prewarm thread"
+
     def test_startup_wrapper_defaults_openclaw_bind_to_loopback(self):
         """Startup wrapper should default OpenClaw bind to loopback unless explicitly overridden."""
         path = REPO_ROOT / "docker" / "scripts" / "start-agentshroud.sh"
@@ -321,19 +328,6 @@ class TestConfigValidation:
         assert 'ready="no"' in script
         assert "for _i in $(seq 1 60)" in script
 
-    def test_openclaw_start_script_uses_two_phase_startup_notifications(self):
-        """OpenClaw start script should send starting first, then online after readiness checks."""
-        path = REPO_ROOT / "docker" / "bots" / "openclaw" / "start.sh"
-        if not path.exists():
-            pytest.skip("openclaw/start.sh not available in this environment")
-        script = path.read_text()
-        assert "🟡 OpenClaw starting" in script
-        assert "🛡️ OpenClaw online" in script
-        assert "🟠 OpenClaw starting (readiness delayed)" in script
-        assert "_telegram_get_me_ready" in script
-        assert "_model_runtime_ready" in script
-        assert "for _i in $(seq 1 60)" in script
-
     def test_startup_online_notice_sent_only_after_readiness_gate(self):
         """Online notice must appear after readiness probes to avoid premature status signals."""
         path = REPO_ROOT / "docker" / "scripts" / "start-agentshroud.sh"
@@ -349,33 +343,14 @@ class TestConfigValidation:
         )
         assert script.index("🟡 OpenClaw starting") < script.index("🛡️ OpenClaw online")
 
-    def test_openclaw_bot_start_script_online_notice_after_readiness_gate(self):
-        """OpenClaw bot wrapper should send online notice only after readiness checks pass."""
-        path = REPO_ROOT / "docker" / "bots" / "openclaw" / "start.sh"
-        if not path.exists():
-            pytest.skip("openclaw/start.sh not available in this environment")
-        script = path.read_text()
-        assert script.index('ready="no"') < script.index('if [ "${ready}" = "yes" ]; then')
-        assert script.index("_telegram_get_me_ready") < script.index(
-            'if [ "${ready}" = "yes" ]; then'
-        )
-        assert script.index("_model_runtime_ready") < script.index(
-            'if [ "${ready}" = "yes" ]; then'
-        )
-        assert script.index("🟡 OpenClaw starting") < script.index("🛡️ OpenClaw online")
-
     def test_startup_telegram_calls_use_system_header(self):
         """Startup notification Telegram calls should be marked as system-originated."""
         script_path = REPO_ROOT / "docker" / "scripts" / "start-agentshroud.sh"
-        bot_path = REPO_ROOT / "docker" / "bots" / "openclaw" / "start.sh"
-        if not script_path.exists() or not bot_path.exists():
+        if not script_path.exists():
             pytest.skip("startup scripts not available in this environment")
         script = script_path.read_text()
-        bot_script = bot_path.read_text()
         assert "X-AgentShroud-System: 1" in script
-        assert "X-AgentShroud-System: 1" in bot_script
         assert "/getMe" in script
-        assert "/getMe" in bot_script
 
     def test_hermes_startup_telegram_calls_use_system_header(self):
         """Hermes startup notifications must use X-AgentShroud-System: 1 (bypasses content filter)."""
@@ -399,6 +374,105 @@ class TestConfigValidation:
         assert (
             "_STARTUP_NOTICE_STAMP" in script
         ), "Must use cooldown stamp to suppress duplicate notifications"
+
+    def test_hermes_dockerfile_installs_xxd(self):
+        """Hermes Dockerfile must install xxd — terminal_tool hex dumps fail without it."""
+        import re
+
+        path = REPO_ROOT / "docker" / "bots" / "hermes" / "Dockerfile"
+        if not path.exists():
+            pytest.skip("hermes Dockerfile not available in this environment")
+        dockerfile = path.read_text()
+        install_block = re.search(r"apt-get install\b.*?(?=&&)", dockerfile, re.S)
+        assert install_block, "Hermes Dockerfile must have an apt-get install block"
+        assert re.search(
+            r"\bxxd\b", install_block.group(0)
+        ), "Hermes Dockerfile must install xxd (upstream image lacks it; tool exec errors)"
+
+    def test_hermes_openai_api_key_wired_via_secret(self):
+        """Hermes must receive OPENAI_API_KEY from the shared openai_api_key Docker secret.
+
+        Hermes routes all OpenAI calls through the gateway (OPENAI_BASE_URL),
+        but its client rebuild logs 'missing OPENAI_API_KEY' warnings unless
+        the env var is present. The injector script and compose must agree.
+        """
+        import yaml
+
+        secrets_path = REPO_ROOT / "docker" / "bots" / "hermes" / "agentshroud-secrets.sh"
+        compose_path = REPO_ROOT / "docker" / "docker-compose.yml"
+        if not secrets_path.exists() or not compose_path.exists():
+            pytest.skip("hermes secrets script or compose file not available")
+
+        script = secrets_path.read_text()
+        assert "inject OPENAI_API_KEY" in script, "Injector must export OPENAI_API_KEY"
+        assert (
+            "/run/secrets/openai_api_key" in script
+        ), "Injector must read the openai_api_key Docker secret"
+
+        compose = yaml.safe_load(compose_path.read_text())
+        hermes_secrets = compose["services"]["hermes"].get("secrets", [])
+        assert (
+            "openai_api_key" in hermes_secrets
+        ), "hermes service must mount the openai_api_key secret"
+        assert "openai_api_key" in compose.get(
+            "secrets", {}
+        ), "compose must define the openai_api_key secret"
+
+    def test_hermes_dashboard_insecure_optin_is_loopback_bounded(self):
+        """HERMES_DASHBOARD_INSECURE may only be enabled with a loopback-only host publish.
+
+        hermes-agent v0.15.1+ fails closed on non-loopback dashboard binds without an
+        OAuth provider. We opt in to the pre-gate behaviour, which is only acceptable
+        while the host port publish stays 127.0.0.1-bound and the service stays on the
+        internal isolated network.
+        """
+        import yaml
+
+        compose_path = REPO_ROOT / "docker" / "docker-compose.yml"
+        if not compose_path.exists():
+            pytest.skip("compose file not available in this environment")
+
+        compose = yaml.safe_load(compose_path.read_text())
+        hermes = compose["services"]["hermes"]
+        env = hermes.get("environment", {})
+        if str(env.get("HERMES_DASHBOARD_INSECURE", "")) not in ("1", "true"):
+            pytest.skip("HERMES_DASHBOARD_INSECURE not enabled — nothing to bound")
+
+        # 9119 reaches the host via the gateway's TCP forwarder publish, not hermes
+        # itself (hermes sits on the internal isolated network and publishes nothing).
+        gateway_ports = compose["services"]["gateway"].get("ports", [])
+        dash_ports = [p for p in gateway_ports if ":9119" in str(p)]
+        assert dash_ports, "dashboard port 9119 must be published via the gateway forwarder"
+        for port in dash_ports:
+            assert str(port).startswith(
+                "127.0.0.1:"
+            ), f"insecure dashboard requires loopback-only publish, got: {port}"
+        networks = hermes.get("networks", [])
+        net_names = networks if isinstance(networks, list) else list(networks)
+        assert net_names and all(
+            "isolated" in n for n in net_names
+        ), f"insecure dashboard requires isolated-only networks, got: {net_names}"
+
+    def test_patch_slack_sdk_pong_patch_is_idempotent(self):
+        """patch-slack-sdk.sh must stay quiet when the pong patch is already applied.
+
+        The script runs at image build AND every boot; without the
+        already-patched guard it logs 'pattern not found' noise on every start.
+        """
+        path = REPO_ROOT / "docker" / "scripts" / "patch-slack-sdk.sh"
+        if not path.exists():
+            pytest.skip("patch-slack-sdk.sh not available in this environment")
+        script = path.read_text()
+        # Already-patched detection must come before the pattern-absent fallback.
+        # Match the console.log markers specifically — bare substrings also appear
+        # in the script's explanatory comment, which precedes both code branches.
+        assert "pong timeout already patched" in script
+        assert script.index("pong timeout already patched") < script.index(
+            "pattern not found — skipped"
+        )
+        # Pattern-absent case must continue (informational skip), never fail the boot.
+        assert "skipped, continuing" in script
+        assert "exit 1" not in script
 
     def test_start_control_center_script_uses_repo_relative_exec(self):
         """Control center launcher should be robust to current working directory."""

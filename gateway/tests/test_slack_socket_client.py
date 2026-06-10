@@ -13,7 +13,7 @@ from unittest.mock import AsyncMock, MagicMock, call, patch
 
 import pytest
 
-from gateway.proxy.slack_socket_client import SlackSocketClient
+from gateway.proxy.slack_socket_client import SlackSocketClient, compute_backoff
 
 
 def _make_client(proxy=None) -> SlackSocketClient:
@@ -21,6 +21,76 @@ def _make_client(proxy=None) -> SlackSocketClient:
         proxy = MagicMock()
         proxy.handle_event = AsyncMock()
     return SlackSocketClient(proxy=proxy, app_token="xapp-test-token")
+
+
+class TestComputeBackoff:
+    """Unit tests for the reconnect backoff calculation."""
+
+    def test_grows_exponentially_with_attempt(self):
+        """With jitter pinned to max, backoff doubles per attempt until the cap."""
+        waits = [compute_backoff(a, base=1.0, cap=60.0, rand=lambda: 1.0) for a in range(7)]
+        assert waits == [1.0, 2.0, 4.0, 8.0, 16.0, 32.0, 60.0]
+
+    def test_capped_at_cap_for_large_attempts(self):
+        """Backoff never exceeds the cap, even for huge attempt counts."""
+        assert compute_backoff(50, base=1.0, cap=60.0, rand=lambda: 1.0) == 60.0
+        assert compute_backoff(10_000, base=1.0, cap=60.0, rand=lambda: 1.0) == 60.0
+
+    def test_jitter_stays_within_half_to_full_ceiling(self):
+        """Jitter scales the wait between 50% and 100% of the ceiling."""
+        assert compute_backoff(3, base=1.0, cap=60.0, rand=lambda: 0.0) == 4.0
+        assert compute_backoff(3, base=1.0, cap=60.0, rand=lambda: 1.0) == 8.0
+        for _ in range(50):
+            wait = compute_backoff(3, base=1.0, cap=60.0)  # real random jitter
+            assert 4.0 <= wait <= 8.0
+
+    def test_first_attempt_uses_base(self):
+        """Attempt 0 waits at most the base interval (1s default)."""
+        assert compute_backoff(0, rand=lambda: 1.0) == 1.0
+        assert compute_backoff(0, rand=lambda: 0.0) == 0.5
+
+    @pytest.mark.asyncio
+    async def test_run_resets_backoff_after_successful_connect(self, monkeypatch):
+        """A successful WSS connection resets the attempt counter to 0."""
+        client = _make_client()
+        sleeps: list[float] = []
+        backoff_attempts: list[int] = []
+
+        async def fake_get_wss_url():
+            return "wss://example"
+
+        connect_count = 0
+
+        async def fake_connect_and_handle(url):
+            nonlocal connect_count
+            connect_count += 1
+            if connect_count <= 2:
+                # Two straight failures before any connection is established
+                raise ConnectionError("blip")
+            if connect_count == 3:
+                # Successful connection, then the link drops
+                client._connect_ok = True
+                raise ConnectionError("dropped after connect")
+            client.stop()
+
+        async def fake_sleep(wait):
+            sleeps.append(wait)
+
+        def fake_backoff(attempt):
+            backoff_attempts.append(attempt)
+            return 0.0
+
+        monkeypatch.setattr(client, "_get_wss_url", fake_get_wss_url)
+        monkeypatch.setattr(client, "_connect_and_handle", fake_connect_and_handle)
+        monkeypatch.setattr("gateway.proxy.slack_socket_client.compute_backoff", fake_backoff)
+        monkeypatch.setattr("gateway.proxy.slack_socket_client.asyncio.sleep", fake_sleep)
+
+        await client.run()
+
+        # Attempts 0, 1 for the two pre-connect failures; reset to 0 after the
+        # successful connection on the third try.
+        assert backoff_attempts == [0, 1, 0]
+        assert len(sleeps) == 3
 
 
 class TestSlackSocketClient:

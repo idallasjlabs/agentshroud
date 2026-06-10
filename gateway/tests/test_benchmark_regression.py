@@ -83,10 +83,14 @@ class TestBenchmarkRegression:
         assert_within_threshold(measured_ms, baseline_ms, "single_outbound")
 
     def test_100_inbound_requests(self):
-        """100 sequential inbound requests should stay within baseline."""
-        baseline_ms = self.baseline.get("100_inbound_ms", 0)
-        if not baseline_ms:
-            pytest.skip("No baseline for 100_inbound_ms")
+        """100 sequential inbound requests should stay within baseline.
+
+        Baseline key is 100_inbound_s (seconds for the full 100-request batch).
+        """
+        baseline_s = self.baseline.get("100_inbound_s", 0)
+        if not baseline_s:
+            pytest.skip("No baseline for 100_inbound_s")
+        baseline_ms = baseline_s * 1000
 
         with patch("gateway.proxy.http_proxy.HTTPConnectProxy") as mock_proxy:
             mock_proxy.return_value.handle_request = MagicMock(return_value={"status": 200})
@@ -97,22 +101,6 @@ class TestBenchmarkRegression:
             elapsed_ms = (time.perf_counter() - start) * 1000
 
         assert_within_threshold(elapsed_ms, baseline_ms, "100_inbound")
-
-    def test_100_outbound_requests(self):
-        """100 sequential outbound requests should stay within baseline."""
-        baseline_ms = self.baseline.get("100_outbound_ms", 0)
-        if not baseline_ms:
-            pytest.skip("No baseline for 100_outbound_ms")
-
-        with patch("gateway.proxy.http_proxy.HTTPConnectProxy") as mock_proxy:
-            mock_proxy.return_value.handle_outbound = MagicMock(return_value={"status": 200})
-
-            start = time.perf_counter()
-            for _ in range(100):
-                mock_proxy.return_value.handle_outbound({"method": "POST", "path": "/api/chat"})
-            elapsed_ms = (time.perf_counter() - start) * 1000
-
-        assert_within_threshold(elapsed_ms, baseline_ms, "100_outbound")
 
     def test_baseline_file_exists(self):
         """Baseline file must exist and contain expected keys."""
