@@ -463,9 +463,13 @@ class TestConfigValidation:
         if not path.exists():
             pytest.skip("patch-slack-sdk.sh not available in this environment")
         script = path.read_text()
-        # Already-patched detection must come before the warn-pattern rewrite.
+        # Already-patched detection must come before the pattern-absent fallback.
+        # Match the console.log markers specifically — bare substrings also appear
+        # in the script's explanatory comment, which precedes both code branches.
         assert "pong timeout already patched" in script
-        assert script.index("already patched") < script.index("pattern not found")
+        assert script.index("pong timeout already patched") < script.index(
+            "pattern not found — skipped"
+        )
         # Pattern-absent case must continue (informational skip), never fail the boot.
         assert "skipped, continuing" in script
         assert "exit 1" not in script
