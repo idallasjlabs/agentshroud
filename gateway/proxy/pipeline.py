@@ -64,6 +64,12 @@ class PipelineResult:
     canary_blocked: bool = False
     encoding_detections: list[str] = field(default_factory=list)
     encoding_decoded_segments: int = 0
+    # C21 context integrity (-1.0 = not scored; real scores are 0.0–1.0)
+    integrity_score: float = -1.0
+    integrity_factors: list[str] = field(default_factory=list)
+    # C46 signed instruction envelope attestation (outbound)
+    envelope_id: str = ""
+    envelope_signature: str = ""
 
     def to_dict(self) -> dict[str, Any]:
         return {
@@ -88,6 +94,10 @@ class PipelineResult:
             "canary_blocked": self.canary_blocked,
             "encoding_detections": self.encoding_detections,
             "encoding_decoded_segments": self.encoding_decoded_segments,
+            "integrity_score": self.integrity_score,
+            "integrity_factors": self.integrity_factors,
+            "envelope_id": self.envelope_id,
+            "envelope_signature": self.envelope_signature,
         }
 
 
@@ -337,6 +347,8 @@ class SecurityPipeline:
             "canary_tripwire",
             "encoding_detector",
             "clamav_scanner",
+            "context_integrity_scorer",
+            "envelope_signer",
         )
         for guard_name in _RECOMMENDED_GUARDS:
             if getattr(self, guard_name) is None:
@@ -414,6 +426,62 @@ class SecurityPipeline:
                     result.action = PipelineAction.BLOCK
                     result.blocked = True
                     result.block_reason = f"ContextGuard error: {exc}"
+                    result.processing_time_ms = (time.time() - start) * 1000
+                    return result
+
+        # Step 0.5: Context Integrity Scoring (C21) — rolling 0.0–1.0 score over
+        # the session's segment provenance.  Score < 0.3 blocks non-owner
+        # (lockdown threshold); < 0.6 warns but forwards.  Owner exempt,
+        # mirroring the ContextGuard policy above.
+        if self.context_integrity_scorer and self.context_guard:
+            try:
+                segments = self.context_guard.get_segment_provenance(agent_id)
+                integrity = self.context_integrity_scorer.score_context(
+                    session_id=agent_id, segments=segments
+                )
+                result.integrity_score = integrity.score
+                result.integrity_factors = list(integrity.factors)
+                if integrity.score < 0.3:
+                    if is_owner:
+                        logger.info(
+                            "ContextIntegrity: owner session %s below lockdown threshold "
+                            "(score=%.3f) — allowing",
+                            agent_id,
+                            integrity.score,
+                        )
+                    else:
+                        result.action = PipelineAction.BLOCK
+                        result.blocked = True
+                        result.block_reason = (
+                            f"Context integrity critical (score={integrity.score:.3f}, "
+                            f"factors={integrity.factors})"
+                        )
+                        self._stats["inbound_blocked"] += 1
+                        entry = await self.audit_chain.append_block(
+                            message, "inbound_integrity_blocked", metadata
+                        )
+                        result.audit_entry_id = entry.id
+                        result.audit_hash = entry.chain_hash
+                        result.processing_time_ms = (time.time() - start) * 1000
+                        return result
+                elif integrity.score < 0.6:
+                    logger.warning(
+                        "ContextIntegrity: low score %.3f for session %s — forwarding",
+                        integrity.score,
+                        agent_id,
+                    )
+            except Exception as exc:
+                logger.error("ContextIntegrityScorer error in pipeline: %s", exc)
+                if is_owner:
+                    logger.warning(
+                        "ContextIntegrityScorer error on owner message — allowing through"
+                    )
+                else:
+                    # Fail closed — block non-owner on error
+                    result.action = PipelineAction.BLOCK
+                    result.blocked = True
+                    result.block_reason = f"ContextIntegrityScorer error: {exc}"
+                    self._stats["inbound_blocked"] += 1
                     result.processing_time_ms = (time.time() - start) * 1000
                     return result
 
@@ -989,9 +1057,36 @@ class SecurityPipeline:
                     result.processing_time_ms = (time.time() - start) * 1000
                     return result
 
+        # Step 2.5: Envelope signing (C46) — HMAC attestation of the final
+        # sanitized response.  Attestation, not a gate: signing failure logs an
+        # error but never blocks delivery.
+        envelope_timestamp = 0.0
+        if self.envelope_signer:
+            try:
+                tool_name = (metadata or {}).get("tool_name", "")
+                if tool_name:
+                    envelope = self.envelope_signer.wrap_tool_result(
+                        result.sanitized_message, tool_name
+                    )
+                else:
+                    envelope = self.envelope_signer.sign(
+                        result.sanitized_message, issuer=f"agent:{agent_id}"
+                    )
+                result.envelope_id = envelope.instruction_id
+                result.envelope_signature = envelope.signature
+                envelope_timestamp = envelope.timestamp
+            except Exception as exc:
+                logger.error("EnvelopeSigner error (non-blocking): %s", exc)
+
         # Step 3: Audit and return
         result.action = PipelineAction.FORWARD
-        entry = self.audit_chain.append(result.sanitized_message, "outbound", metadata)
+        audit_metadata = metadata
+        if result.envelope_id:
+            audit_metadata = dict(metadata or {})
+            audit_metadata["envelope_id"] = result.envelope_id
+            audit_metadata["envelope_signature"] = result.envelope_signature
+            audit_metadata["envelope_timestamp"] = envelope_timestamp
+        entry = self.audit_chain.append(result.sanitized_message, "outbound", audit_metadata)
         result.audit_entry_id = entry.id
         result.audit_hash = entry.chain_hash
         result.processing_time_ms = (time.time() - start) * 1000

@@ -3,8 +3,8 @@ source: "gateway/proxy/pipeline.py"
 module: pipeline
 layer: proxy
 created: 2026-06-09
-updated: 2026-06-09
-tags: [proxy, pipeline, security, audit-chain, pii, prompt-guard, egress, canary, clamav]
+updated: 2026-06-10
+tags: [proxy, pipeline, security, audit-chain, pii, prompt-guard, egress, canary, clamav, context-integrity, envelope-signing]
 type: module-doc
 status: production
 coverage: "≥94%"
@@ -43,6 +43,7 @@ are skipped.
 | Step | Guard | Class / Module | Block Condition | Owner Exemption |
 |------|-------|----------------|-----------------|-----------------|
 | 0 | **ContextGuard** | `gateway/security/context_guard.py` | `critical` or `high` severity cross-turn injection. Repetition attacks are logged only, never blocked. | Yes — owner messages are allowed through with an INFO log |
+| 0.5 | **ContextIntegrityScorer** | `gateway/security/context_integrity.py` | C21 — scores session segment provenance 0.0–1.0. Score < 0.3 blocks (lockdown threshold); 0.3 ≤ score < 0.6 warns and forwards. Requires `context_guard` to supply segments. Fail-closed for non-owners on scorer error. Audit label: `inbound_integrity_blocked`. | Yes |
 | 1 | **PromptGuard** | `gateway/security/prompt_guard.py` | `scan.blocked == True` OR `scan.score >= prompt_block_threshold` (default 0.8) | Yes |
 | 1.1 | **HeuristicClassifier** | `gateway/security/heuristic_classifier.py` | Secondary signal only when PromptGuard score is in the uncertain zone (0.3–0.8). Blocks on `is_injection == True`. Never the sole blocking signal. | Yes |
 | 1.5 | **InboundInjectionScanner** | `gateway/security/tool_result_injection.py` (reused) | CVE-2026-30741 — applies 12-rule ToolResultInjectionScanner pattern set (encoded injection + unicode obfuscation) to inbound messages. Blocks on `InjectionAction.STRIP`; warns on `InjectionAction.WARN`. | Yes |
@@ -68,17 +69,13 @@ are skipped.
 | 1.8 | **OutputCanary** | `gateway/security/output_canary.py` | Checks for leaked canary tokens in outbound responses. Blocks on `risk_level in ("high", "critical")`. Fail-closed for non-owners on module crash. |
 | 1.9 | **OutputSchemaEnforcer** | `gateway/security/output_schema_enforcer.py` | C25 — validates response schema; redacts violations via `schema_result.sanitized_output`. Does not block. |
 | 2 | **EgressFilter** | `gateway/security/egress_filter.py` | Checks each `destination_url` against allow/deny rules. Blocks on `action == "deny"`. Supports both sync (`check`) and async (`check_async`) interfaces. |
+| 2.5 | **EnvelopeSigner** | `gateway/security/instruction_envelope.py` | C46 — HMAC-SHA256 attestation of the final sanitized response. Tool results (`metadata["tool_name"]` present) are signed via `wrap_tool_result()`; all others via `sign(issuer="agent:<agent_id>")`. **Never blocks** — signing failure logs ERROR and delivery proceeds. `envelope_id` / `envelope_signature` / `envelope_timestamp` are written into the final audit entry metadata. |
 | 3 | **Audit + Return** | `AuditChain.append()` | Terminal step — appends to chain and sets `action = FORWARD`. |
 
-### Declared-Only Guards (wired in constructor, not yet active in pipeline logic)
-
-| Guard | Constructor Parameter | Reason |
-|-------|-----------------------|--------|
-| `context_integrity_scorer` | `context_integrity_scorer=` | C21 — stored on `self`; no call site in pipeline body yet. Tracked as active P2 item. |
-| `envelope_signer` | `envelope_signer=` | C46 — stored on `self`; no call site in pipeline body yet. Tracked as active P2 item. |
-
-These are not stubs — the constructor accepts and stores them, and tests verify their
-presence — but the pipeline body does not invoke them in this version.
+> **Signing key:** `EnvelopeSigner` sources its key from `AGENTSHROUD_ENVELOPE_SIGNING_KEY`;
+> without it a random 32-byte key is generated and **rotates on every restart**, which
+> invalidates verification of envelopes signed before the restart. Set the env var in
+> production for stable attestation.
 
 ---
 
@@ -128,6 +125,10 @@ JSON for logging and API responses.
 | `canary_blocked` | `bool` | True if CanaryTripwire or OutputCanary triggered a block |
 | `encoding_detections` | `list[str]` | Encoding methods detected by EncodingDetector (e.g. `["base64", "unicode_escape"]`) |
 | `encoding_decoded_segments` | `int` | Number of encoded segments decoded and replaced |
+| `integrity_score` | `float` | C21 context integrity score (0.0–1.0). `-1.0` means not scored (scorer or context_guard absent). |
+| `integrity_factors` | `list[str]` | Score component breakdown from ContextIntegrityScorer (e.g. `["system_prompt_hmac_valid:+0.3"]`) |
+| `envelope_id` | `str` | C46 — UUID of the signed instruction envelope (outbound only; empty if signer absent or signing failed) |
+| `envelope_signature` | `str` | C46 — hex HMAC-SHA256 signature of the final sanitized response |
 
 ---
 
@@ -191,8 +192,8 @@ all guards injected.
 | `tool_result_injection_scanner` | guard | Optional | CVE-2026-30741 inbound injection scanner |
 | `xml_leak_filter` | guard | Optional | CVE-2026-34425 inbound command injection scanner |
 | `output_schema_enforcer` | guard | Optional | C25 schema enforcement |
-| `context_integrity_scorer` | guard | Optional | C21 — declared only, not yet active in pipeline |
-| `envelope_signer` | guard | Optional | C46 — declared only, not yet active in pipeline |
+| `context_integrity_scorer` | guard | Recommended | C21 — inbound Step 0.5 session integrity scoring (requires `context_guard`) |
+| `envelope_signer` | guard | Recommended | C46 — outbound Step 2.5 response attestation |
 | `prompt_block_threshold` | `float` | Optional | PromptGuard block score threshold (default: `0.8`) |
 | `approval_actions` | `list[str]` | Optional | Actions that route to the approval queue (default: `execute_command`, `delete_file`, `admin_action`, `install_package`) |
 | `audit_store` | object | Optional | SQLite AuditStore for persistent audit logging |
@@ -233,6 +234,8 @@ all guards injected.
 | `canary_tripwire` | Recommended | `CRITICAL` log; canary final defense skipped |
 | `encoding_detector` | Recommended | `CRITICAL` log; encoding bypass normalization skipped |
 | `clamav_scanner` | Recommended | `CRITICAL` log; malware scanning of base64 payloads skipped |
+| `context_integrity_scorer` | Recommended | `CRITICAL` log; session integrity scoring skipped |
+| `envelope_signer` | Recommended | `CRITICAL` log; outbound response attestation skipped |
 
 ### Key Thresholds
 

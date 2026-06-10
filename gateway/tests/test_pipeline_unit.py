@@ -183,3 +183,204 @@ class TestContextGuardInPipeline:
         )
         assert not result.blocked
         cg.analyze_message.assert_not_called()
+
+
+# ── ContextIntegrityScorer wiring in SecurityPipeline (C21) ──────────────────
+
+
+@dataclass
+class _FakeIntegrityScore:
+    score: float
+    factors: list
+    timestamp: float = 0.0
+    session_id: str = "default"
+
+
+def _make_integrity_pipeline(score: float, factors=None, scorer_error=None, owner_id=None):
+    """Pipeline with ContextGuard + ContextIntegrityScorer mocks."""
+    cg = MagicMock()
+    cg.analyze_message.return_value = []
+    cg.get_segment_provenance.return_value = []
+    scorer = MagicMock()
+    if scorer_error:
+        scorer.score_context.side_effect = scorer_error
+    else:
+        scorer.score_context.return_value = _FakeIntegrityScore(
+            score=score, factors=factors or []
+        )
+    pii = MagicMock()
+    pii.filter_xml_blocks = MagicMock(return_value=("msg", False))
+    pii.sanitize = AsyncMock(
+        return_value=MagicMock(sanitized_content="msg", entity_types_found=[], redactions=[])
+    )
+    pipeline = SecurityPipeline(
+        pii_sanitizer=pii, context_guard=cg, context_integrity_scorer=scorer
+    )
+    if owner_id is not None:
+        pipeline._owner_user_id = owner_id
+    return pipeline, cg, scorer
+
+
+class TestContextIntegrityInPipeline:
+    """ContextIntegrityScorer must run in process_inbound() — C21 wiring."""
+
+    @pytest.mark.asyncio
+    async def test_scorer_invoked_with_session_segments(self):
+        pipeline, cg, scorer = _make_integrity_pipeline(score=1.0)
+        await pipeline.process_inbound("hello", agent_id="sess-1")
+        cg.get_segment_provenance.assert_called_once_with("sess-1")
+        scorer.score_context.assert_called_once()
+        kwargs = scorer.score_context.call_args.kwargs
+        assert kwargs["session_id"] == "sess-1"
+
+    @pytest.mark.asyncio
+    async def test_high_score_forwards_and_records(self):
+        pipeline, _, _ = _make_integrity_pipeline(score=0.9, factors=["ok:+0.9"])
+        result = await pipeline.process_inbound("hello")
+        assert not result.blocked
+        assert result.integrity_score == 0.9
+        assert result.integrity_factors == ["ok:+0.9"]
+
+    @pytest.mark.asyncio
+    async def test_lockdown_score_blocks_non_owner(self):
+        pipeline, _, _ = _make_integrity_pipeline(score=0.2, factors=["bad:+0.0"])
+        result = await pipeline.process_inbound("hello", metadata={"user_id": "stranger"})
+        assert result.blocked is True
+        assert result.action == PipelineAction.BLOCK
+        assert "integrity" in result.block_reason.lower()
+
+    @pytest.mark.asyncio
+    async def test_lockdown_score_allows_owner(self):
+        pipeline, _, _ = _make_integrity_pipeline(score=0.2, owner_id="111")
+        result = await pipeline.process_inbound("hello", metadata={"user_id": "111"})
+        assert not result.blocked
+        assert result.integrity_score == 0.2
+
+    @pytest.mark.asyncio
+    async def test_warn_zone_forwards(self):
+        """0.3 ≤ score < 0.6 warns but never blocks."""
+        pipeline, _, _ = _make_integrity_pipeline(score=0.45)
+        result = await pipeline.process_inbound("hello", metadata={"user_id": "stranger"})
+        assert not result.blocked
+        assert result.integrity_score == 0.45
+
+    @pytest.mark.asyncio
+    async def test_scorer_error_fails_closed_non_owner(self):
+        pipeline, _, _ = _make_integrity_pipeline(
+            score=1.0, scorer_error=RuntimeError("scorer crashed")
+        )
+        result = await pipeline.process_inbound("hello", metadata={"user_id": "stranger"})
+        assert result.blocked is True
+        assert "ContextIntegrityScorer error" in result.block_reason
+
+    @pytest.mark.asyncio
+    async def test_scorer_error_allows_owner(self):
+        pipeline, _, _ = _make_integrity_pipeline(
+            score=1.0, scorer_error=RuntimeError("scorer crashed"), owner_id="111"
+        )
+        result = await pipeline.process_inbound("hello", metadata={"user_id": "111"})
+        assert not result.blocked
+
+    @pytest.mark.asyncio
+    async def test_no_scorer_leaves_result_unscored(self):
+        pipeline = _make_pipeline(context_guard=None)
+        result = await pipeline.process_inbound("hello")
+        assert not result.blocked
+        assert result.integrity_score == -1.0
+        assert result.integrity_factors == []
+
+    @pytest.mark.asyncio
+    async def test_lockdown_block_is_audited(self):
+        pipeline, _, _ = _make_integrity_pipeline(score=0.1)
+        result = await pipeline.process_inbound("hello", metadata={"user_id": "stranger"})
+        assert result.blocked is True
+        assert result.audit_entry_id
+        entry = pipeline.audit_chain.entries[-1]
+        assert entry.direction == "inbound_integrity_blocked"
+
+
+# ── EnvelopeSigner wiring in SecurityPipeline (C46) ──────────────────────────
+
+
+def _make_signer_pipeline(signer):
+    pii = MagicMock()
+    pii.filter_xml_blocks = MagicMock(return_value=("response text", False))
+    pii.sanitize = AsyncMock(
+        return_value=MagicMock(
+            sanitized_content="response text", entity_types_found=[], redactions=[]
+        )
+    )
+    return SecurityPipeline(pii_sanitizer=pii, envelope_signer=signer)
+
+
+class TestEnvelopeSignerInPipeline:
+    """EnvelopeSigner must attest outbound responses — C46 wiring."""
+
+    @pytest.mark.asyncio
+    async def test_outbound_response_is_signed_and_verifiable(self):
+        from gateway.security.instruction_envelope import EnvelopeSigner, InstructionEnvelope
+
+        signer = EnvelopeSigner(key=b"test-key-32-bytes-for-unit-test!")
+        pipeline = _make_signer_pipeline(signer)
+        result = await pipeline.process_outbound("response text", agent_id="agent-1")
+        assert not result.blocked
+        assert result.envelope_id
+        assert result.envelope_signature
+        # Round-trip: reconstruct envelope from result + audit metadata and verify
+        entry = pipeline.audit_chain.entries[-1]
+        envelope = InstructionEnvelope(
+            instruction_id=result.envelope_id,
+            content=result.sanitized_message,
+            issuer="agent:agent-1",
+            timestamp=entry.metadata["envelope_timestamp"],
+            signature=result.envelope_signature,
+        )
+        assert signer.verify(envelope) is True
+
+    @pytest.mark.asyncio
+    async def test_tool_result_uses_wrap_tool_result(self):
+        signer = MagicMock()
+        envelope = MagicMock(
+            instruction_id="env-1", signature="sig-1", timestamp=123.0, issuer="tool:read_file"
+        )
+        signer.wrap_tool_result.return_value = envelope
+        pipeline = _make_signer_pipeline(signer)
+        result = await pipeline.process_outbound(
+            "tool output", metadata={"tool_name": "read_file"}
+        )
+        signer.wrap_tool_result.assert_called_once()
+        assert signer.wrap_tool_result.call_args.args[1] == "read_file"
+        signer.sign.assert_not_called()
+        assert result.envelope_id == "env-1"
+
+    @pytest.mark.asyncio
+    async def test_signer_failure_never_blocks(self):
+        signer = MagicMock()
+        signer.sign.side_effect = RuntimeError("signing crashed")
+        pipeline = _make_signer_pipeline(signer)
+        result = await pipeline.process_outbound("response text")
+        assert not result.blocked
+        assert result.envelope_id == ""
+        assert result.envelope_signature == ""
+
+    @pytest.mark.asyncio
+    async def test_no_signer_leaves_envelope_empty(self):
+        pipeline = _make_pipeline()
+        result = await pipeline.process_outbound("response text")
+        assert not result.blocked
+        assert result.envelope_id == ""
+        assert result.envelope_signature == ""
+
+    @pytest.mark.asyncio
+    async def test_envelope_metadata_in_audit_entry(self):
+        signer = MagicMock()
+        envelope = MagicMock(
+            instruction_id="env-9", signature="sig-9", timestamp=456.0, issuer="agent:default"
+        )
+        signer.sign.return_value = envelope
+        pipeline = _make_signer_pipeline(signer)
+        await pipeline.process_outbound("response text")
+        entry = pipeline.audit_chain.entries[-1]
+        assert entry.metadata["envelope_id"] == "env-9"
+        assert entry.metadata["envelope_signature"] == "sig-9"
+        assert entry.metadata["envelope_timestamp"] == 456.0
