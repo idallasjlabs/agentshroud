@@ -40,6 +40,7 @@ class TestEgressFilterConfig:
         assert "*.github.com" in config.default_allowlist
         assert "nousresearch.com" in config.default_allowlist
         assert "*.nousresearch.com" in config.default_allowlist
+        assert "hc-ping.com" in config.default_allowlist
         assert "pastebin.com" in config.default_denylist
         assert "*.pastebin.com" in config.default_denylist
         assert config.strict_mode is True
