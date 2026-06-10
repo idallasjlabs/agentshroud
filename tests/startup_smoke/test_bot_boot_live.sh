@@ -75,7 +75,7 @@ check "L5: bot logs contain no 'Pool overlaps' (subnet conflict)" \
     "$([[ "$bot_logs" != *"Pool overlaps"* ]] && echo true || echo false)"
 
 check "L6: bot logs contain Telegram startup notification sent" \
-    "$([[ "$bot_logs" == *"Sent Telegram startup notification"* ]] && echo true || echo false)"
+    "$([[ "$bot_logs" == *"Sent Telegram startup notification"* || "$bot_logs" == *"Sent Telegram startup photo notification"* ]] && echo true || echo false)"
 
 # ── Gateway logs ─────────────────────────────────────────────────────────
 gw_logs=$(docker logs agentshroud-gateway 2>&1 || true)
