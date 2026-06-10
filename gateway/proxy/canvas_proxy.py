@@ -6,7 +6,7 @@
 
 Intercepts all Canvas (OpenClaw Web UI) traffic on port 18789 and validates
 the gateway password via HTTP Basic Auth before forwarding to the bot container
-on the agentshroud-isolated network (http://bot:18789).
+on the agentshroud-isolated network (http://agentshroud-openclaw:18789).
 
 Mitigates CVE-2026-34871: OpenClaw Canvas Authentication Bypass — the upstream
 ``authorizeCanvasRequest()`` unconditionally allows local-direct requests without
@@ -14,7 +14,7 @@ validating tokens. This proxy adds an application-layer auth gate that the bot
 container itself cannot provide.
 
 Architecture:
-  Host :18789 → [gateway canvas_proxy] → bot:18789 (agentshroud-isolated network)
+  Host :18789 → [gateway canvas_proxy] → agentshroud-openclaw:18789 (agentshroud-isolated network)
 
 Auth: HTTP Basic Auth
   - Username: any (ignored)
@@ -43,7 +43,9 @@ import httpx
 
 logger = logging.getLogger("agentshroud.proxy.canvas")
 
-_BOT_CANVAS_URL = os.environ.get("CANVAS_BOT_URL", "http://bot:18789")
+# Default tracks the v1.1.0 container rename (agentshroud-bot → agentshroud-openclaw);
+# the old "bot" hostname no longer resolves on agentshroud-isolated.
+_BOT_CANVAS_URL = os.environ.get("CANVAS_BOT_URL", "http://agentshroud-openclaw:18789")
 # Skip HTTP Basic Auth on the Canvas proxy.  The port is already bound to
 # 127.0.0.1, and OpenClaw has its own gateway-token auth in the web UI.
 _SKIP_BASIC_AUTH = os.environ.get("CANVAS_SKIP_BASIC_AUTH", "").lower() in ("1", "true", "yes")
