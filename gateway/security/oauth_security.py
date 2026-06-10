@@ -25,22 +25,18 @@ from urllib.parse import urlparse
 
 
 class OAuthError(Exception):
-    # TODO(v1.1.0): implement
     pass
 
 
 class ConfusedDeputyError(OAuthError):
-    # TODO(v1.1.0): implement
     pass
 
 
 class PKCEViolation(OAuthError):
-    # TODO(v1.1.0): implement
     pass
 
 
 class RedirectMismatch(OAuthError):
-    # TODO(v1.1.0): implement
     pass
 
 

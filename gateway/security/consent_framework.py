@@ -21,12 +21,10 @@ from typing import Dict, List, Optional
 
 
 class ConfigValidationError(Exception):
-    # TODO(v1.1.0): implement
     pass
 
 
 class ShellInjectionDetected(ConfigValidationError):
-    # TODO(v1.1.0): implement
     pass
 
 
