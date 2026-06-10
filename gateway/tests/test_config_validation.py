@@ -281,6 +281,13 @@ class TestConfigValidation:
         assert "10.254.111.0/24" in source
         assert "10.254.112.0/24" in source
 
+    def test_lifespan_op_prewarm_guarded_against_pytest(self):
+        """The 1Password prewarm thread must never spawn real op subprocesses under pytest."""
+        source = (REPO_ROOT / "gateway" / "ingest_api" / "lifespan.py").read_text()
+        guard_pos = source.index('"PYTEST_CURRENT_TEST" not in os.environ')
+        thread_pos = source.index("threading.Thread(target=_prewarm_op")
+        assert guard_pos < thread_pos, "pytest guard must gate the op prewarm thread"
+
     def test_startup_wrapper_defaults_openclaw_bind_to_loopback(self):
         """Startup wrapper should default OpenClaw bind to loopback unless explicitly overridden."""
         path = REPO_ROOT / "docker" / "scripts" / "start-agentshroud.sh"
