@@ -132,35 +132,41 @@ KNOWN AGENTS TO TRACK:
 1. OpenClaw — https://github.com/openclaw/openclaw
    Baseline: ~287K stars as of March 9, 2026
 
-2. PicoClaw — https://github.com/sipeed/picoclaw
+2. Hermes Agent — https://github.com/NousResearch/hermes-agent
+   Baseline: ~189.6K stars as of June 10, 2026
+   Note: AgentShroud runs Hermes as a secured bot (agentshroud-hermes). Track upstream
+   releases, security-relevant changes, and tools targeting Hermes (e.g., hermes-katana).
+   MUST appear in every Agent Ecosystem table and report.
+
+3. PicoClaw — https://github.com/sipeed/picoclaw
    Baseline: ~22.8K stars as of March 9, 2026
 
-3. NanoClaw — https://github.com/qwibitai/nanoclaw
+4. NanoClaw — https://github.com/qwibitai/nanoclaw
    Baseline: ~18K+ stars as of March 9, 2026
 
-4. NanoBot — https://github.com/HKUDS/nanobot
+5. NanoBot — https://github.com/HKUDS/nanobot
    Baseline: ~21.7K stars as of March 9, 2026
 
-5. CrocBot — https://github.com/moshehbenavraham/crocbot
+6. CrocBot — https://github.com/moshehbenavraham/crocbot
    Baseline: ~500 stars as of March 9, 2026
 
-6. memU — https://github.com/NevaMind-AI/memU / https://memu.bot
+7. memU — https://github.com/NevaMind-AI/memU / https://memu.bot
    Track: PyPI downloads, new features
 
-7. IronClaw — NEAR AI's Rust/WASM sandboxed rewrite of OpenClaw
+8. IronClaw — NEAR AI's Rust/WASM sandboxed rewrite of OpenClaw
    Search: https://github.com/near/ and https://www.taskade.com/blog/best-openclaw-alternatives
    Note: Positioned as modular, production-grade, sandboxed. Direct security competitor to
    OpenClaw's surface. HIGH PRIORITY for AgentShroud integration assessment.
 
-8. TrustClaw — cloud-hosted agent with OAuth sandboxing
+9. TrustClaw — cloud-hosted agent with OAuth sandboxing
    Search: https://www.taskade.com/blog/best-openclaw-alternatives
    Note: Cloud-hosted with built-in auth controls. Verify GitHub/product URL before including.
 
-9. Agent S3 — GUI-level computer control agent
-   Search: https://o-mega.ai/articles/top-10-openclaw-alternatives-2026
-   Note: GUI automation attack surface is a new category. Track for security-relevant features.
+10. Agent S3 — GUI-level computer control agent
+    Search: https://o-mega.ai/articles/top-10-openclaw-alternatives-2026
+    Note: GUI automation attack surface is a new category. Track for security-relevant features.
 
-10. Knolli — enterprise safety-first autonomous agent
+11. Knolli — enterprise safety-first autonomous agent
     Search: https://o-mega.ai/articles/top-10-openclaw-alternatives-2026
     Note: "Safety-first" framing may encroach on AgentShroud messaging territory.
 
