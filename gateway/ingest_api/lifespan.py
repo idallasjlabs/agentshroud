@@ -16,6 +16,7 @@ from typing import TYPE_CHECKING
 
 from fastapi import FastAPI
 
+from gateway import __version__
 from gateway.security.session_manager import UserSessionManager
 
 from ..approval_queue.enhanced_queue import EnhancedApprovalQueue
@@ -487,7 +488,7 @@ async def lifespan(app: FastAPI):
         await app_state.audit_store.log_event(
             event_type="gateway_startup",
             severity="INFO",
-            details={"version": "1.1.0", "db_path": _audit_db},
+            details={"version": __version__, "db_path": _audit_db},
             source_module="lifespan",
         )
     except Exception as e:
