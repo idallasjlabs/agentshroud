@@ -76,7 +76,9 @@ if docker ps --format '{{.Names}}' 2>/dev/null | grep -q 'agentshroud-openclaw';
         # "Startup notification suppressed" = startup reached the notification step but
         # the anti-spam cooldown (recent restart) skipped the Telegram send — still a
         # successful start, the marker just never appears in that window.
-        if [[ "$bot_logs" == *"Telegram startup notification"* || "$bot_logs" == *"Listening for"* || "$bot_logs" == *"Bot is running"* || "$bot_logs" == *"Startup notification suppressed"* ]]; then
+        # "startup photo notification" = the photo path in start-agentshroud.sh, which
+        # replaces the plain-text marker when a startup photo is configured.
+        if [[ "$bot_logs" == *"Telegram startup notification"* || "$bot_logs" == *"Telegram startup photo notification"* || "$bot_logs" == *"Listening for"* || "$bot_logs" == *"Bot is running"* || "$bot_logs" == *"Startup notification suppressed"* ]]; then
             started=true
             break
         fi
