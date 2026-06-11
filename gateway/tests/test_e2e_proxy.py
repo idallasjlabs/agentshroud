@@ -405,6 +405,92 @@ async def test_webhook_strips_pii(pipeline):
     assert "123-45-6789" not in result["sanitized"]
 
 
+class _StubForwarder:
+    """Forwarder stub returning a canned bot response body."""
+
+    def __init__(self, body: str):
+        self._body = body
+
+    async def forward(self, path: str, body: str):
+        from types import SimpleNamespace
+
+        return SimpleNamespace(success=True, body=self._body, error=None)
+
+
+class _PassInboundPipeline:
+    """Pipeline stub: inbound passes through; outbound behavior injectable."""
+
+    def __init__(self, outbound):
+        self._outbound = outbound
+
+    async def process_inbound(self, message, **kwargs):
+        from types import SimpleNamespace
+
+        return SimpleNamespace(
+            blocked=False,
+            queued_for_approval=False,
+            sanitized_message=message,
+            pii_redaction_count=0,
+        )
+
+    async def process_outbound(self, response, **kwargs):
+        return await self._outbound(response)
+
+
+@pytest.mark.asyncio
+async def test_webhook_outbound_block_withheld():
+    """A pipeline-blocked outbound response must NOT be delivered.
+
+    Regression test: the receiver previously returned outbound.sanitized_message
+    without checking outbound.blocked — a pipeline BLOCK still delivered text.
+    """
+    from types import SimpleNamespace
+
+    async def blocking_outbound(response):
+        return SimpleNamespace(
+            blocked=True,
+            block_reason="credential leak",
+            sanitized_message=response,
+            pii_redaction_count=0,
+        )
+
+    receiver = WebhookReceiver(
+        pipeline=_PassInboundPipeline(blocking_outbound),
+        forwarder=_StubForwarder("key=sk-test-leaked-credential-value"),
+    )
+    result = await receiver.process_webhook(
+        payload={"message": {"text": "show me the key"}}, agent_id="default"
+    )
+
+    assert result["status"] == "blocked"
+    assert "sk-test-leaked" not in json.dumps(result), (
+        "Blocked outbound content must not appear anywhere in the webhook response"
+    )
+    assert receiver.get_stats()["webhooks_blocked"] == 1
+
+
+@pytest.mark.asyncio
+async def test_webhook_outbound_pipeline_crash_fails_closed():
+    """If the outbound pipeline crashes, the bot response must be withheld."""
+
+    async def crashing_outbound(response):
+        raise RuntimeError("Intentional crash")
+
+    receiver = WebhookReceiver(
+        pipeline=_PassInboundPipeline(crashing_outbound),
+        forwarder=_StubForwarder("unscanned bot response with secrets"),
+    )
+    result = await receiver.process_webhook(
+        payload={"message": {"text": "hello"}}, agent_id="default"
+    )
+
+    assert result["status"] == "blocked"
+    assert "unscanned bot response" not in json.dumps(result), (
+        "Unscanned content must not be delivered when the pipeline crashes (fail-closed)"
+    )
+    assert receiver.get_stats()["webhooks_blocked"] == 1
+
+
 @pytest.mark.asyncio
 async def test_sidecar_scanner(pipeline):
     """Verify sidecar scanner works."""

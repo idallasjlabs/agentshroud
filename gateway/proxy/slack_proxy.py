@@ -37,7 +37,21 @@ SLACK_API_BASE = "https://slack.com/api"
 _GATEWAY_WS_HOST = os.environ.get("AGENTSHROUD_GATEWAY_WS_HOST", "gateway:8080")
 
 # Message methods whose text content must be scanned before forwarding to Slack
-_CONTENT_METHODS = frozenset({"chat.postMessage", "chat.update", "chat.meMessage"})
+_CONTENT_METHODS = frozenset(
+    {
+        "chat.postMessage",
+        "chat.update",
+        "chat.meMessage",
+        "chat.postEphemeral",
+        "files.upload",
+        "files.completeUploadExternal",
+    }
+)
+
+# Text-bearing payload fields scanned on _CONTENT_METHODS requests.
+# blocks/attachments are Block Kit JSON structures; initial_comment/title
+# carry file-upload text.
+_SCAN_FIELDS = ("text", "blocks", "attachments", "initial_comment", "title")
 
 
 class SlackAPIProxy:
@@ -141,55 +155,87 @@ class SlackAPIProxy:
         if method in _CONTENT_METHODS and self.pipeline and not is_system:
             channel = payload.get("channel", "")
             is_owner = self._is_owner_channel(channel)
-            text = payload.get("text", "") or payload.get("blocks", "")
-            if isinstance(text, (list, dict)):
-                text = json.dumps(text)
-            if text:
+            # Gather every text-bearing field. Block Kit structures (blocks,
+            # attachments) are scanned as serialized JSON — previously they
+            # were only scanned when "text" was empty, leaking unscanned text.
+            scan_items: list[tuple[str, str, bool]] = []
+            for field in _SCAN_FIELDS:
+                value = payload.get(field)
+                if not value:
+                    continue
+                structured = isinstance(value, (list, dict))
+                scan_items.append(
+                    (field, json.dumps(value) if structured else str(value), structured)
+                )
+            if scan_items:
                 # Pre-pipeline fast-path: reject obvious infrastructure leakage to
                 # non-owner channels before running the full pipeline.
                 if not is_owner:
                     from .telegram_proxy import TelegramAPIProxy as _TelegramAPIProxy
 
-                    if _TelegramAPIProxy._contains_high_risk_collaborator_leakage(str(text)):
-                        logger.warning(
-                            "Slack outbound BLOCKED: high-risk leakage detected for non-owner channel %s",
-                            channel,
-                        )
-                        self._stats["outbound_blocked"] += 1
-                        return {"ok": False, "error": "content_policy_violation"}
+                    for _field, _text, _ in scan_items:
+                        if _TelegramAPIProxy._contains_high_risk_collaborator_leakage(_text):
+                            logger.warning(
+                                "Slack outbound BLOCKED: high-risk leakage detected for "
+                                "non-owner channel %s (field=%s)",
+                                channel,
+                                _field,
+                            )
+                            self._stats["outbound_blocked"] += 1
+                            return {"ok": False, "error": "content_policy_violation"}
 
                 trust_level = "FULL" if is_owner else "UNTRUSTED"
                 try:
-                    result = await self.pipeline.process_outbound(
-                        response=str(text),
-                        agent_id="default",
-                        metadata={"source": "slack_outbound", "method": method},
-                        user_trust_level=trust_level,
-                    )
-                    if result.blocked:
-                        self._stats["outbound_blocked"] += 1
-                        logger.warning(
-                            "Slack proxy: outbound %s BLOCKED: %s", method, result.block_reason
+                    for field, text, structured in scan_items:
+                        result = await self.pipeline.process_outbound(
+                            response=text,
+                            agent_id="default",
+                            metadata={
+                                "source": "slack_outbound",
+                                "method": method,
+                                "field": field,
+                            },
+                            user_trust_level=trust_level,
                         )
-                        return {"ok": False, "error": "content_policy_violation"}
-                    # For non-owner channels: block if the info filter redacted anything.
-                    # Sending a sanitized (redacted) response to a collaborator confirms
-                    # that the original response contained infrastructure data.
-                    if not is_owner:
-                        try:
-                            rc = getattr(result, "info_filter_redaction_count", None)
-                            if isinstance(rc, int) and rc > 0:
+                        if result.blocked:
+                            self._stats["outbound_blocked"] += 1
+                            logger.warning(
+                                "Slack proxy: outbound %s BLOCKED: %s",
+                                method,
+                                result.block_reason,
+                            )
+                            return {"ok": False, "error": "content_policy_violation"}
+                        # For non-owner channels: block if the info filter redacted anything.
+                        # Sending a sanitized (redacted) response to a collaborator confirms
+                        # that the original response contained infrastructure data.
+                        if not is_owner:
+                            try:
+                                rc = getattr(result, "info_filter_redaction_count", None)
+                                if isinstance(rc, int) and rc > 0:
+                                    self._stats["outbound_blocked"] += 1
+                                    logger.warning(
+                                        "Slack proxy: outbound %s BLOCKED: info redaction "
+                                        "(count=%d) for non-owner",
+                                        method,
+                                        rc,
+                                    )
+                                    return {"ok": False, "error": "content_policy_violation"}
+                            except Exception:
+                                pass
+                        if result.sanitized_message and result.sanitized_message != text:
+                            if structured:
+                                # Redaction needed inside Block Kit JSON cannot be
+                                # applied surgically — fail safe and block delivery
+                                # rather than forward the unredacted structure.
                                 self._stats["outbound_blocked"] += 1
                                 logger.warning(
-                                    "Slack proxy: outbound %s BLOCKED: info redaction (count=%d) for non-owner",
+                                    "Slack proxy: outbound %s BLOCKED: sanitization "
+                                    "required inside structured field %r",
                                     method,
-                                    rc,
+                                    field,
                                 )
                                 return {"ok": False, "error": "content_policy_violation"}
-                        except Exception:
-                            pass
-                    if result.sanitized_message and "text" in payload:
-                        payload["text"] = result.sanitized_message
+                            payload[field] = result.sanitized_message
                 except Exception as exc:
                     if not is_owner:
                         # Fail-closed: block non-owner delivery on any pipeline error.

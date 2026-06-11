@@ -4970,3 +4970,210 @@ class TestTrackerGetHealth:
         assert h["healthy"] is False
         assert h["writes_failed"] > 0
         log_path.chmod(0o644)  # restore so tmp_path cleanup works
+
+
+# ─── Multipart Outbound Pipeline (sendPhoto/sendDocument captions) ──────────────
+
+
+_MP_BOUNDARY = "agentshroudtestboundary42"
+_MP_CONTENT_TYPE = f"multipart/form-data; boundary={_MP_BOUNDARY}"
+
+
+def _make_multipart_body(
+    fields: dict, boundary: str = _MP_BOUNDARY, binary_field: tuple | None = None
+) -> bytes:
+    """Build a multipart/form-data body with text fields and an optional binary part."""
+    parts = []
+    for name, value in fields.items():
+        parts.append(
+            (
+                f'--{boundary}\r\nContent-Disposition: form-data; name="{name}"\r\n\r\n{value}\r\n'
+            ).encode()
+        )
+    if binary_field:
+        name, filename, data = binary_field
+        parts.append(
+            (
+                f'--{boundary}\r\nContent-Disposition: form-data; name="{name}"; '
+                f'filename="{filename}"\r\nContent-Type: application/octet-stream\r\n\r\n'
+            ).encode()
+            + data
+            + b"\r\n"
+        )
+    parts.append(f"--{boundary}--\r\n".encode())
+    return b"".join(parts)
+
+
+class TestMultipartOutboundPipeline:
+    """Multipart captions must get the full pipeline scan, not just the XML filter.
+
+    Regression tests for the Content-Type-class bypass family (#158): sendPhoto
+    captions previously skipped KeyLeakDetector/PII/info-filter entirely.
+    """
+
+    @pytest.mark.asyncio
+    async def test_multipart_outbound_pipeline_called(self):
+        """process_outbound must run on multipart caption text."""
+        seen = {}
+
+        class MockPipeline:
+            async def process_outbound(self, response, **kwargs):
+                seen["text"] = response
+                return SimpleNamespace(
+                    blocked=False,
+                    sanitized_message=response,
+                    block_reason="",
+                    info_filter_redaction_count=0,
+                )
+
+        proxy = TelegramAPIProxy(pipeline=MockPipeline(), sanitizer=_make_sanitizer())
+        body = _make_multipart_body(
+            {"chat_id": "12345", "caption": "hello caption"},
+            binary_field=("photo", "p.jpg", b"\x89PNG\x00\x01binarybytes"),
+        )
+
+        await proxy._filter_outbound(body, _MP_CONTENT_TYPE)
+        assert seen.get("text") == "hello caption", (
+            "Pipeline.process_outbound must scan multipart captions"
+        )
+
+    @pytest.mark.asyncio
+    async def test_multipart_sanitized_caption_applied_binary_intact(self):
+        """Redacted caption replaces the original; binary part stays byte-identical."""
+
+        class RedactingPipeline:
+            async def process_outbound(self, response, **kwargs):
+                return SimpleNamespace(
+                    blocked=False,
+                    sanitized_message="key=[REDACTED]",
+                    block_reason="",
+                    info_filter_redaction_count=0,
+                )
+
+        proxy = TelegramAPIProxy(pipeline=RedactingPipeline(), sanitizer=_make_sanitizer())
+        binary = bytes(range(256)) * 4  # all byte values — corruption canary
+        body = _make_multipart_body(
+            {"chat_id": "12345", "caption": "key=sk-a1b2c3d4e5a1b2c3d4e5a1b2c3d4e5"},
+            binary_field=("photo", "p.jpg", binary),
+        )
+
+        result = await proxy._filter_outbound(body, _MP_CONTENT_TYPE)
+        assert b"sk-a1b2c3d4e5" not in result, "Secret leaked through multipart caption"
+        assert b"key=[REDACTED]" in result
+        assert binary in result, "Binary photo part must be preserved byte-for-byte"
+
+    @pytest.mark.asyncio
+    async def test_multipart_pipeline_block_non_owner(self):
+        """Pipeline-blocked captions to non-owners are replaced with a safe notice."""
+
+        class BlockingPipeline:
+            async def process_outbound(self, response, **kwargs):
+                return SimpleNamespace(
+                    blocked=True,
+                    sanitized_message=response,
+                    block_reason="credential leak",
+                    info_filter_redaction_count=0,
+                )
+
+        proxy = TelegramAPIProxy(pipeline=BlockingPipeline(), sanitizer=_make_sanitizer())
+        body = _make_multipart_body({"chat_id": "7614658040", "caption": "leaked payload"})
+
+        result = await proxy._filter_outbound(body, _MP_CONTENT_TYPE)
+        assert b"leaked payload" not in result
+        assert b"protected by agentshroud" in result.lower()
+
+    @pytest.mark.asyncio
+    async def test_multipart_fails_closed_for_non_owner(self):
+        """If the pipeline crashes on a multipart body, non-owner captions are blocked."""
+
+        class CrashingPipeline:
+            async def process_outbound(self, response, **kwargs):
+                raise RuntimeError("Intentional crash")
+
+        proxy = TelegramAPIProxy(pipeline=CrashingPipeline(), sanitizer=_make_sanitizer())
+
+        class MockRBAC:
+            owner_user_id = "9999999999"
+
+        proxy._rbac = MockRBAC()
+        body = _make_multipart_body({"chat_id": "7614658040", "caption": "secret stuff"})
+
+        result = await proxy._filter_outbound(body, _MP_CONTENT_TYPE)
+        assert b"secret stuff" not in result, (
+            "Original caption must not leak when pipeline crashes (fail-closed)"
+        )
+        assert b"protected by agentshroud" in result.lower()
+
+    @pytest.mark.asyncio
+    async def test_multipart_owner_exempt_from_fail_closed(self):
+        """Owner multipart messages still pass through on pipeline crash (parity)."""
+
+        class CrashingPipeline:
+            async def process_outbound(self, response, **kwargs):
+                raise RuntimeError("Intentional crash")
+
+        proxy = TelegramAPIProxy(pipeline=CrashingPipeline(), sanitizer=_make_sanitizer())
+
+        class MockRBAC:
+            owner_user_id = "8096968754"
+
+        proxy._rbac = MockRBAC()
+        body = _make_multipart_body({"chat_id": "8096968754", "caption": "owner caption"})
+
+        result = await proxy._filter_outbound(body, _MP_CONTENT_TYPE)
+        assert b"owner caption" in result
+
+    @pytest.mark.asyncio
+    async def test_multipart_overlength_caption_blocked_for_non_owner(self):
+        """Over-length multipart captions to non-owners are blocked like JSON/form."""
+        proxy = TelegramAPIProxy(sanitizer=_make_sanitizer())
+        proxy._max_outbound_chars = 32
+        body = _make_multipart_body({"chat_id": "7614658040", "caption": "A" * 100})
+
+        result = await proxy._filter_outbound(body, _MP_CONTENT_TYPE)
+        assert b"A" * 100 not in result
+        assert b"protected by agentshroud" in result.lower()
+
+    @pytest.mark.asyncio
+    async def test_multipart_without_text_part_passes_through(self):
+        """Multipart bodies with no caption/text part are forwarded unchanged."""
+        proxy = TelegramAPIProxy(sanitizer=_make_sanitizer())
+        binary = bytes(range(256))
+        body = _make_multipart_body(
+            {"chat_id": "12345"}, binary_field=("photo", "p.jpg", binary)
+        )
+
+        result = await proxy._filter_outbound(body, _MP_CONTENT_TYPE)
+        assert result == body
+
+    @pytest.mark.asyncio
+    async def test_multipart_text_field_scanned_when_no_caption(self):
+        """A multipart 'text' field (sendMessage via multipart) is scanned too."""
+        seen = {}
+
+        class MockPipeline:
+            async def process_outbound(self, response, **kwargs):
+                seen["text"] = response
+                return SimpleNamespace(
+                    blocked=False,
+                    sanitized_message=response,
+                    block_reason="",
+                    info_filter_redaction_count=0,
+                )
+
+        proxy = TelegramAPIProxy(pipeline=MockPipeline(), sanitizer=_make_sanitizer())
+        body = _make_multipart_body({"chat_id": "12345", "text": "plain text via multipart"})
+
+        await proxy._filter_outbound(body, _MP_CONTENT_TYPE)
+        assert seen.get("text") == "plain text via multipart"
+
+    @pytest.mark.asyncio
+    async def test_multipart_sanitizer_fallback_redacts_pii(self):
+        """Without a pipeline, the sanitizer fallback still redacts caption PII."""
+        proxy = TelegramAPIProxy(sanitizer=_make_sanitizer())
+        body = _make_multipart_body(
+            {"chat_id": "8096968754", "caption": "SSN 987-65-4321 attached"}
+        )
+
+        result = await proxy._filter_outbound(body, _MP_CONTENT_TYPE)
+        assert b"987-65-4321" not in result, "PII leaked through multipart caption fallback"

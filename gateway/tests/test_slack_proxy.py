@@ -540,3 +540,164 @@ class TestHandleEvent:
         await proxy.handle_event(payload)
         call_kwargs = tracker.record_activity.call_args.kwargs
         assert len(call_kwargs["message_preview"]) == 80
+
+
+# ─── Multi-field Outbound Scanning (blocks / attachments / uploads) ──────────
+
+
+def _pass_result(sanitized=None):
+    result = MagicMock()
+    result.blocked = False
+    result.block_reason = ""
+    result.info_filter_redaction_count = 0
+    result.sanitized_message = sanitized
+    return result
+
+
+class TestMultiFieldOutboundScanning:
+    """blocks/attachments and upload text must be scanned, not just `text`.
+
+    Regression tests: previously blocks were scanned only when `text` was empty
+    (`text or blocks`), attachments were never scanned, and chat.postEphemeral /
+    file uploads bypassed the pipeline entirely.
+    """
+
+    @pytest.mark.asyncio
+    async def test_blocks_scanned_even_when_text_present(self):
+        """A secret hidden in blocks must be caught even if `text` is benign."""
+        pipeline = MagicMock()
+
+        async def scan(response, **kwargs):
+            if "sk-a1b2c3d4e5" in response:
+                blocked = MagicMock()
+                blocked.blocked = True
+                blocked.block_reason = "credential leak"
+                return blocked
+            return _pass_result(sanitized=response)
+
+        pipeline.process_outbound = AsyncMock(side_effect=scan)
+        proxy = _make_proxy(pipeline=pipeline)
+        proxy._call_slack_api = AsyncMock(return_value={"ok": True})
+
+        body = json.dumps(
+            {
+                "channel": "C123",
+                "text": "benign text",
+                "blocks": [
+                    {
+                        "type": "section",
+                        "text": {"type": "mrkdwn", "text": "key=sk-a1b2c3d4e5f6a7b8"},
+                    }
+                ],
+            }
+        ).encode()
+        result = await proxy.proxy_outbound("chat.postMessage", body, "application/json")
+
+        assert result["ok"] is False
+        assert result["error"] == "content_policy_violation"
+        proxy._call_slack_api.assert_not_called()
+
+    @pytest.mark.asyncio
+    async def test_attachments_scanned(self):
+        """Legacy attachments are scanned for leaked content."""
+        pipeline = MagicMock()
+
+        async def scan(response, **kwargs):
+            if "leaked-secret-value" in response:
+                blocked = MagicMock()
+                blocked.blocked = True
+                blocked.block_reason = "credential leak"
+                return blocked
+            return _pass_result(sanitized=response)
+
+        pipeline.process_outbound = AsyncMock(side_effect=scan)
+        proxy = _make_proxy(pipeline=pipeline)
+        proxy._call_slack_api = AsyncMock(return_value={"ok": True})
+
+        body = json.dumps(
+            {
+                "channel": "C123",
+                "text": "benign",
+                "attachments": [{"text": "leaked-secret-value"}],
+            }
+        ).encode()
+        result = await proxy.proxy_outbound("chat.postMessage", body, "application/json")
+
+        assert result["ok"] is False
+        proxy._call_slack_api.assert_not_called()
+
+    @pytest.mark.asyncio
+    async def test_post_ephemeral_scanned(self):
+        """chat.postEphemeral text goes through the pipeline like postMessage."""
+        pipeline = MagicMock()
+        pipeline.process_outbound = AsyncMock(return_value=_pass_result(sanitized="hi"))
+        proxy = _make_proxy(pipeline=pipeline)
+        proxy._call_slack_api = AsyncMock(return_value={"ok": True})
+
+        body = json.dumps({"channel": "C123", "user": "U001", "text": "hi"}).encode()
+        await proxy.proxy_outbound("chat.postEphemeral", body, "application/json")
+
+        pipeline.process_outbound.assert_called_once()
+
+    @pytest.mark.asyncio
+    async def test_file_upload_initial_comment_scanned(self):
+        """files.upload initial_comment/title text is scanned."""
+        pipeline = MagicMock()
+        pipeline.process_outbound = AsyncMock(
+            return_value=_pass_result(sanitized="a report")
+        )
+        proxy = _make_proxy(pipeline=pipeline)
+        proxy._call_slack_api = AsyncMock(return_value={"ok": True})
+
+        body = json.dumps(
+            {"channel": "C123", "initial_comment": "a report", "title": "report.txt"}
+        ).encode()
+        await proxy.proxy_outbound("files.upload", body, "application/json")
+
+        assert pipeline.process_outbound.call_count == 2  # initial_comment + title
+
+    @pytest.mark.asyncio
+    async def test_structured_field_sanitization_blocks_delivery(self):
+        """If the pipeline wants to redact inside blocks JSON, delivery is blocked
+        (surgical redaction inside Block Kit is not possible — fail safe)."""
+        pipeline = MagicMock()
+
+        async def scan(response, **kwargs):
+            if response.startswith("["):  # the serialized blocks field
+                return _pass_result(sanitized="[REDACTED-BLOCKS]")
+            return _pass_result(sanitized=response)
+
+        pipeline.process_outbound = AsyncMock(side_effect=scan)
+        proxy = _make_proxy(pipeline=pipeline)
+        proxy._call_slack_api = AsyncMock(return_value={"ok": True})
+
+        body = json.dumps(
+            {
+                "channel": "C123",
+                "blocks": [
+                    {"type": "section", "text": {"type": "mrkdwn", "text": "555-867-5309"}}
+                ],
+            }
+        ).encode()
+        result = await proxy.proxy_outbound("chat.postMessage", body, "application/json")
+
+        assert result["ok"] is False
+        assert result["error"] == "content_policy_violation"
+        proxy._call_slack_api.assert_not_called()
+
+    @pytest.mark.asyncio
+    async def test_text_sanitization_still_applied(self):
+        """Plain-text sanitization keeps working (redacted text forwarded)."""
+        pipeline = MagicMock()
+        pipeline.process_outbound = AsyncMock(
+            return_value=_pass_result(sanitized="phone <PHONE_NUMBER>")
+        )
+        proxy = _make_proxy(pipeline=pipeline)
+        proxy._call_slack_api = AsyncMock(return_value={"ok": True})
+
+        body = json.dumps({"channel": "C123", "text": "phone 555-867-5309"}).encode()
+        result = await proxy.proxy_outbound("chat.postMessage", body, "application/json")
+
+        assert result == {"ok": True}
+        sent_payload = proxy._call_slack_api.call_args.args[1]
+        assert sent_payload["text"] == "phone <PHONE_NUMBER>"
