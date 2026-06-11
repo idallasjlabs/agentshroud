@@ -3234,162 +3234,25 @@ class TelegramAPIProxy:
                         )
                     return json.dumps(data).encode()
 
-                if isinstance(text, str) and "session file locked" in text.lower():
+                status_notice = self._apply_outbound_status_notices(text, is_owner_chat)
+                if status_notice is not None:
                     self._stats["outbound_filtered"] += 1
-                    data[text_key] = (
-                        self._collaborator_safe_notice("processing timeout")
-                        if not is_owner_chat
-                        else "⏳ Agent is still processing a previous request. Please wait 10–20 seconds and retry."
-                    )
+                    data[text_key] = status_notice
                     return json.dumps(data).encode()
-                if (
-                    not is_owner_chat
-                    and isinstance(text, str)
-                    and normalize_input(text)
-                    .strip()
-                    .lower()
-                    .startswith("⚠️ agent failed before reply:")
-                ):
+                leak_notice = self._check_collaborator_leakage(text, chat_id, is_owner_chat)
+                if leak_notice is not None:
                     self._stats["outbound_filtered"] += 1
-                    data[text_key] = self._collaborator_safe_notice("runtime unavailable")
+                    data[text_key] = leak_notice
                     return json.dumps(data).encode()
-                if (
-                    not is_owner_chat
-                    and isinstance(text, str)
-                    and "not authorized to use this command" in text.lower()
-                ):
+                redacted_owner = self._redact_owner_ids(text, is_owner_chat)
+                if redacted_owner is not None:
                     self._stats["outbound_filtered"] += 1
-                    data[text_key] = self._collaborator_safe_notice("restricted command")
-                    return json.dumps(data).encode()
-                if self._is_no_reply_token(text):
+                    data[text_key] = redacted_owner
+                    text = redacted_owner  # sanitizer below must see the redacted text
+                model_rewrite = self._apply_outbound_model_error_rewrites(text, is_owner_chat)
+                if model_rewrite is not None:
                     self._stats["outbound_filtered"] += 1
-                    data[text_key] = (
-                        self._collaborator_safe_notice("processing timeout")
-                        if not is_owner_chat
-                        else "⏳ Agent is still processing a previous request. Please wait 10–20 seconds and retry."
-                    )
-                    return json.dumps(data).encode()
-                if (
-                    not is_owner_chat
-                    and isinstance(text, str)
-                    and (
-                        "multi-turn disclosure" in text.lower()
-                        or "blocked due to security protocols" in text.lower()
-                    )
-                ):
-                    self._stats["outbound_filtered"] += 1
-                    data[text_key] = self._collaborator_safe_notice("policy block")
-                    return json.dumps(data).encode()
-                if (
-                    not is_owner_chat
-                    and isinstance(text, str)
-                    and (
-                        "security monitoring active at" in text.lower()
-                        and "threshold" in text.lower()
-                    )
-                ):
-                    self._stats["outbound_filtered"] += 1
-                    data[text_key] = self._collaborator_safe_notice("policy block")
-                    return json.dumps(data).encode()
-                if (
-                    not is_owner_chat
-                    and isinstance(text, str)
-                    and self._contains_legacy_block_notice(text)
-                ):
-                    self._stats["outbound_filtered"] += 1
-                    data[text_key] = self._collaborator_safe_notice("policy block")
-                    return json.dumps(data).encode()
-                if (
-                    not is_owner_chat
-                    and isinstance(text, str)
-                    and self._contains_internal_approval_banner(text)
-                ):
-                    self._stats["outbound_filtered"] += 1
-                    data[text_key] = _COLLABORATOR_EGRESS_NOTICE
-                    return json.dumps(data).encode()
-                # Critical leakage (system paths, pairing codes, user-ID enrollment,
-                # raw tool blobs) must redact for ALL non-owner chats — full_access
-                # does not unlock pairing secrets or filesystem internals.
-                if (
-                    not is_owner_chat
-                    and isinstance(text, str)
-                    and self._contains_critical_collaborator_leakage(text)
-                ):
-                    self._stats["outbound_filtered"] += 1
-                    data[text_key] = self._collaborator_safe_notice("redacted protected content")
-                    return json.dumps(data).encode()
-                # High-risk leakage (traceback, sensitive filenames) — full_access
-                # collaborators may bypass for legitimate research/technical responses.
-                _is_full_access = (
-                    not is_owner_chat and self._resolve_collaborator_mode(chat_id) == "full_access"
-                )
-                if (
-                    not is_owner_chat
-                    and not _is_full_access
-                    and isinstance(text, str)
-                    and self._contains_high_risk_collaborator_leakage(text)
-                ):
-                    self._stats["outbound_filtered"] += 1
-                    data[text_key] = self._collaborator_safe_notice("redacted protected content")
-                    return json.dumps(data).encode()
-                # Redact owner's Telegram user ID from collaborator responses.
-                # Strips the ID (and surrounding "Telegram ID …" label if present) so the
-                # rest of the response — e.g. the owner's name or role — still reaches the
-                # collaborator rather than blanket-blocking the whole message.
-                if not is_owner_chat and isinstance(text, str) and self._rbac:
-                    _oid = str(getattr(self._rbac, "owner_user_id", "")).strip()
-                    if len(_oid) >= 7 and _oid in text:
-                        self._stats["outbound_filtered"] += 1
-                        # Remove the owner ID and common preceding label fragments that
-                        # would otherwise leave dangling phrases like "his ID is" or
-                        # "Telegram ID:" after the numeric value is stripped.
-                        redacted = re.sub(
-                            r"(?:"
-                            r"(?:his|her|their|the\s+owner'?s?|my)\s+(?:Telegram\s+)?(?:user\s+)?ID\s+is\s*:?\s*|"
-                            r"Telegram\s+(?:user\s+)?ID\s*:?\s*|"
-                            r"(?:user\s+)?ID\s*:?\s*"
-                            r")?" + re.escape(_oid),
-                            "",
-                            text,
-                            flags=re.IGNORECASE,
-                        ).strip()
-                        data[text_key] = (
-                            redacted
-                            if redacted
-                            else self._collaborator_safe_notice("redacted protected content")
-                        )
-                        text = data[
-                            text_key
-                        ]  # update local ref so sanitizer sees the redacted text
-                if isinstance(text, str) and "does not support tools" in text.lower():
-                    self._stats["outbound_filtered"] += 1
-                    data[text_key] = (
-                        "⚠️ Current local model does not support tool calls. Use scripts/switch_model.sh local qwen3:14b (or a tools-capable model)."
-                    )
-                    return json.dumps(data).encode()
-                if isinstance(text, str) and "ollama requires authentication" in text.lower():
-                    self._stats["outbound_filtered"] += 1
-                    data[text_key] = (
-                        "⚠️ Ollama provider is not configured in this session. Set OLLAMA_API_KEY=ollama-local and restart, "
-                        "or run scripts/switch_model.sh gemini."
-                    )
-                    return json.dumps(data).encode()
-                if isinstance(text, str) and "unknown model:" in text.lower():
-                    self._stats["outbound_filtered"] += 1
-                    data[text_key] = (
-                        "⚠️ Selected model is not registered. Use scripts/switch_model.sh to pick a configured model "
-                        "(local qwen3:14b or cloud gemini/openai)."
-                    )
-                    return json.dumps(data).encode()
-                rewritten_runtime_error = (
-                    self._rewrite_known_runtime_errors(text) if isinstance(text, str) else None
-                )
-                if rewritten_runtime_error:
-                    self._stats["outbound_filtered"] += 1
-                    if not is_owner_chat and "switch_model.sh" in rewritten_runtime_error.lower():
-                        data[text_key] = self._collaborator_safe_notice("runtime unavailable")
-                    else:
-                        data[text_key] = rewritten_runtime_error
+                    data[text_key] = model_rewrite
                     return json.dumps(data).encode()
 
                 if text:
@@ -3693,148 +3556,26 @@ class TelegramAPIProxy:
                         )
                     return urllib.parse.urlencode(data).encode()
 
-                if isinstance(text, str) and "session file locked" in text.lower():
+                status_notice = self._apply_outbound_status_notices(text, is_owner_chat)
+                if status_notice is not None:
                     self._stats["outbound_filtered"] += 1
-                    data[text_key] = (
-                        self._collaborator_safe_notice("processing timeout")
-                        if not is_owner_chat
-                        else "⏳ Agent is still processing a previous request. Please wait 10–20 seconds and retry."
-                    )
+                    data[text_key] = status_notice
                     return urllib.parse.urlencode(data).encode()
-                if (
-                    not is_owner_chat
-                    and isinstance(text, str)
-                    and normalize_input(text)
-                    .strip()
-                    .lower()
-                    .startswith("⚠️ agent failed before reply:")
-                ):
+                leak_notice = self._check_collaborator_leakage(text, chat_id, is_owner_chat)
+                if leak_notice is not None:
                     self._stats["outbound_filtered"] += 1
-                    data[text_key] = self._collaborator_safe_notice("runtime unavailable")
+                    data[text_key] = leak_notice
                     return urllib.parse.urlencode(data).encode()
-                if (
-                    not is_owner_chat
-                    and isinstance(text, str)
-                    and "not authorized to use this command" in text.lower()
-                ):
+                redacted_owner = self._redact_owner_ids(text, is_owner_chat)
+                if redacted_owner is not None:
                     self._stats["outbound_filtered"] += 1
-                    data[text_key] = self._collaborator_safe_notice("restricted command")
-                    return urllib.parse.urlencode(data).encode()
-                if self._is_no_reply_token(text):
+                    data[text_key] = redacted_owner
+                    text = redacted_owner  # pipeline scan below must see the redacted text
+                model_rewrite = self._apply_outbound_model_error_rewrites(text, is_owner_chat)
+                if model_rewrite is not None:
                     self._stats["outbound_filtered"] += 1
-                    data[text_key] = (
-                        self._collaborator_safe_notice("processing timeout")
-                        if not is_owner_chat
-                        else "⏳ Agent is still processing a previous request. Please wait 10–20 seconds and retry."
-                    )
+                    data[text_key] = model_rewrite
                     return urllib.parse.urlencode(data).encode()
-                if isinstance(text, str) and "does not support tools" in text.lower():
-                    self._stats["outbound_filtered"] += 1
-                    data[text_key] = (
-                        "⚠️ Current local model does not support tool calls. Use scripts/switch_model.sh local qwen3:14b (or a tools-capable model)."
-                    )
-                    return urllib.parse.urlencode(data).encode()
-                if isinstance(text, str) and "ollama requires authentication" in text.lower():
-                    self._stats["outbound_filtered"] += 1
-                    data[text_key] = (
-                        "⚠️ Ollama provider is not configured in this session. Set OLLAMA_API_KEY=ollama-local and restart, "
-                        "or run scripts/switch_model.sh gemini."
-                    )
-                    return urllib.parse.urlencode(data).encode()
-                if isinstance(text, str) and "unknown model:" in text.lower():
-                    self._stats["outbound_filtered"] += 1
-                    data[text_key] = (
-                        "⚠️ Selected model is not registered. Use scripts/switch_model.sh to pick a configured model "
-                        "(local qwen3:14b or cloud gemini/openai)."
-                    )
-                    return urllib.parse.urlencode(data).encode()
-                rewritten_runtime_error = (
-                    self._rewrite_known_runtime_errors(text) if isinstance(text, str) else None
-                )
-                if rewritten_runtime_error:
-                    self._stats["outbound_filtered"] += 1
-                    if not is_owner_chat and "switch_model.sh" in rewritten_runtime_error.lower():
-                        data[text_key] = self._collaborator_safe_notice("runtime unavailable")
-                    else:
-                        data[text_key] = rewritten_runtime_error
-                    return urllib.parse.urlencode(data).encode()
-                if (
-                    not is_owner_chat
-                    and isinstance(text, str)
-                    and (
-                        "multi-turn disclosure" in text.lower()
-                        or "blocked due to security protocols" in text.lower()
-                    )
-                ):
-                    self._stats["outbound_filtered"] += 1
-                    data[text_key] = self._collaborator_safe_notice("policy block")
-                    return urllib.parse.urlencode(data).encode()
-                if (
-                    not is_owner_chat
-                    and isinstance(text, str)
-                    and (
-                        "security monitoring active at" in text.lower()
-                        and "threshold" in text.lower()
-                    )
-                ):
-                    self._stats["outbound_filtered"] += 1
-                    data[text_key] = self._collaborator_safe_notice("policy block")
-                    return urllib.parse.urlencode(data).encode()
-                if (
-                    not is_owner_chat
-                    and isinstance(text, str)
-                    and self._contains_legacy_block_notice(text)
-                ):
-                    self._stats["outbound_filtered"] += 1
-                    data[text_key] = self._collaborator_safe_notice("policy block")
-                    return urllib.parse.urlencode(data).encode()
-                if (
-                    not is_owner_chat
-                    and isinstance(text, str)
-                    and self._contains_internal_approval_banner(text)
-                ):
-                    self._stats["outbound_filtered"] += 1
-                    data[text_key] = _COLLABORATOR_EGRESS_NOTICE
-                    return urllib.parse.urlencode(data).encode()
-                # Critical leakage — always block (no full_access bypass).
-                if (
-                    not is_owner_chat
-                    and isinstance(text, str)
-                    and self._contains_critical_collaborator_leakage(text)
-                ):
-                    self._stats["outbound_filtered"] += 1
-                    data[text_key] = self._collaborator_safe_notice("redacted protected content")
-                    return urllib.parse.urlencode(data).encode()
-                # High-risk leakage — full_access collaborators may bypass.
-                _is_full_access_fe = (
-                    not is_owner_chat and self._resolve_collaborator_mode(chat_id) == "full_access"
-                )
-                if (
-                    not is_owner_chat
-                    and not _is_full_access_fe
-                    and isinstance(text, str)
-                    and self._contains_high_risk_collaborator_leakage(text)
-                ):
-                    self._stats["outbound_filtered"] += 1
-                    data[text_key] = self._collaborator_safe_notice("redacted protected content")
-                    return urllib.parse.urlencode(data).encode()
-                # Redact owner's Telegram user ID from collaborator responses (form-encoded path).
-                if not is_owner_chat and isinstance(text, str) and self._rbac:
-                    _oid = str(getattr(self._rbac, "owner_user_id", "")).strip()
-                    if len(_oid) >= 7 and _oid in text:
-                        self._stats["outbound_filtered"] += 1
-                        redacted = re.sub(
-                            r"(?:Telegram\s+(?:user\s+)?ID\s*:?\s*)?" + re.escape(_oid),
-                            "",
-                            text,
-                            flags=re.IGNORECASE,
-                        ).strip()
-                        data[text_key] = (
-                            redacted
-                            if redacted
-                            else self._collaborator_safe_notice("redacted protected content")
-                        )
-                        return urllib.parse.urlencode(data).encode()
 
                 # Security pipeline scan — parity with the JSON branch. Without this,
                 # form-encoded sendMessage bodies bypass KeyLeakDetector/PII/info-filter
@@ -4239,6 +3980,125 @@ class TelegramAPIProxy:
             except Exception:
                 pass
             return body
+
+    def _apply_outbound_status_notices(self, text: Any, is_owner_chat: bool) -> Optional[str]:
+        """Map internal status/policy texts to user-safe replacement notices.
+
+        Pure helper shared by the JSON and form branches of _filter_outbound:
+        returns the replacement text when a rule matches, else None. The caller
+        owns the outbound_filtered stat increment and body re-encoding.
+        """
+        if isinstance(text, str) and "session file locked" in text.lower():
+            return (
+                self._collaborator_safe_notice("processing timeout")
+                if not is_owner_chat
+                else "⏳ Agent is still processing a previous request. Please wait 10–20 seconds and retry."
+            )
+        if (
+            not is_owner_chat
+            and isinstance(text, str)
+            and normalize_input(text).strip().lower().startswith("⚠️ agent failed before reply:")
+        ):
+            return self._collaborator_safe_notice("runtime unavailable")
+        if (
+            not is_owner_chat
+            and isinstance(text, str)
+            and "not authorized to use this command" in text.lower()
+        ):
+            return self._collaborator_safe_notice("restricted command")
+        if self._is_no_reply_token(text):
+            return (
+                self._collaborator_safe_notice("processing timeout")
+                if not is_owner_chat
+                else "⏳ Agent is still processing a previous request. Please wait 10–20 seconds and retry."
+            )
+        if not is_owner_chat and isinstance(text, str):
+            lowered = text.lower()
+            if "multi-turn disclosure" in lowered or "blocked due to security protocols" in lowered:
+                return self._collaborator_safe_notice("policy block")
+            if "security monitoring active at" in lowered and "threshold" in lowered:
+                return self._collaborator_safe_notice("policy block")
+            if self._contains_legacy_block_notice(text):
+                return self._collaborator_safe_notice("policy block")
+            if self._contains_internal_approval_banner(text):
+                return _COLLABORATOR_EGRESS_NOTICE
+        return None
+
+    def _apply_outbound_model_error_rewrites(self, text: Any, is_owner_chat: bool) -> Optional[str]:
+        """Rewrite raw model/runtime error texts to actionable user-facing messages.
+
+        Pure helper shared by the JSON and form branches of _filter_outbound.
+        """
+        if isinstance(text, str) and "does not support tools" in text.lower():
+            return (
+                "⚠️ Current local model does not support tool calls. "
+                "Use scripts/switch_model.sh local qwen3:14b (or a tools-capable model)."
+            )
+        if isinstance(text, str) and "ollama requires authentication" in text.lower():
+            return (
+                "⚠️ Ollama provider is not configured in this session. Set OLLAMA_API_KEY=ollama-local and restart, "
+                "or run scripts/switch_model.sh gemini."
+            )
+        if isinstance(text, str) and "unknown model:" in text.lower():
+            return (
+                "⚠️ Selected model is not registered. Use scripts/switch_model.sh to pick a configured model "
+                "(local qwen3:14b or cloud gemini/openai)."
+            )
+        rewritten = self._rewrite_known_runtime_errors(text) if isinstance(text, str) else None
+        if rewritten:
+            if not is_owner_chat and "switch_model.sh" in rewritten.lower():
+                return self._collaborator_safe_notice("runtime unavailable")
+            return rewritten
+        return None
+
+    def _check_collaborator_leakage(
+        self, text: Any, chat_id: str, is_owner_chat: bool
+    ) -> Optional[str]:
+        """Return a safe-notice replacement when protected content would leak.
+
+        Critical leakage (system paths, pairing codes, user-ID enrollment, raw
+        tool blobs) must redact for ALL non-owner chats — full_access does not
+        unlock pairing secrets or filesystem internals. High-risk leakage
+        (traceback, sensitive filenames) may be bypassed by full_access
+        collaborators for legitimate research/technical responses.
+        """
+        if is_owner_chat or not isinstance(text, str):
+            return None
+        if self._contains_critical_collaborator_leakage(text):
+            return self._collaborator_safe_notice("redacted protected content")
+        if (
+            self._resolve_collaborator_mode(chat_id) != "full_access"
+            and self._contains_high_risk_collaborator_leakage(text)
+        ):
+            return self._collaborator_safe_notice("redacted protected content")
+        return None
+
+    def _redact_owner_ids(self, text: Any, is_owner_chat: bool) -> Optional[str]:
+        """Redact the owner's Telegram user ID from collaborator-bound text.
+
+        Strips the ID (and surrounding "Telegram ID …" label fragments that
+        would otherwise leave dangling phrases like "his ID is") so the rest of
+        the response still reaches the collaborator rather than blanket-blocking
+        the whole message. Returns the redacted text, or None when no owner ID
+        is present. Callers must continue to the pipeline scan afterwards —
+        never deliver redacted text unscanned.
+        """
+        if is_owner_chat or not isinstance(text, str) or not self._rbac:
+            return None
+        _oid = str(getattr(self._rbac, "owner_user_id", "")).strip()
+        if len(_oid) < 7 or _oid not in text:
+            return None
+        redacted = re.sub(
+            r"(?:"
+            r"(?:his|her|their|the\s+owner'?s?|my)\s+(?:Telegram\s+)?(?:user\s+)?ID\s+is\s*:?\s*|"
+            r"Telegram\s+(?:user\s+)?ID\s*:?\s*|"
+            r"(?:user\s+)?ID\s*:?\s*"
+            r")?" + re.escape(_oid),
+            "",
+            text,
+            flags=re.IGNORECASE,
+        ).strip()
+        return redacted if redacted else self._collaborator_safe_notice("redacted protected content")
 
     async def _trigger_web_search_log(self, chat_id: str, tool_args: dict[str, Any]) -> None:
         """Log a web_search egress event with user attribution when raw JSON leaks.
