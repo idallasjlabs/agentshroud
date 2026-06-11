@@ -295,7 +295,9 @@ async def lifespan(app: FastAPI):
         app_state.heuristic_classifier = None
 
     try:
-        app_state.trust_manager = TrustManager()
+        from ..security.progressive_trust_config import ProgressiveTrustConfig
+
+        app_state.trust_manager = TrustManager(progressive_config=ProgressiveTrustConfig())
         # Register the known agent identities with STANDARD trust so internal
         # API calls are not blocked. "default" is the legacy fallback;
         # "openclaw" and "hermes" are the production bot_ids.
@@ -305,8 +307,11 @@ async def lifespan(app: FastAPI):
                 "UPDATE trust_scores SET score = 200, level = ? WHERE agent_id = ?",
                 (int(TrustLevel.STANDARD), _agent_id),
             )
+            # Internal agents are owner-operated: vouch so the trust ladder's
+            # VERIFIED rung is reachable for them via normal promotion.
+            app_state.trust_manager.vouch_for_agent(_agent_id)
         app_state.trust_manager._conn.commit()
-        logger.info("TrustManager initialized")
+        logger.info("TrustManager initialized (progressive trust ladder active)")
     except Exception as e:
         logger.critical(f"Failed to initialize TrustManager: {e}")
         raise
@@ -721,8 +726,11 @@ async def lifespan(app: FastAPI):
         from ..security.rbac_config import RBACConfig as _RBACCfgACL
         from ..security.tool_acl import ToolACLEnforcer
 
-        app_state.tool_acl_enforcer = ToolACLEnforcer(rbac_config=_RBACCfgACL())
-        logger.info("ToolACLEnforcer initialized")
+        app_state.tool_acl_enforcer = ToolACLEnforcer(
+            rbac_config=_RBACCfgACL(),
+            trust_manager=getattr(app_state, "trust_manager", None),
+        )
+        logger.info("ToolACLEnforcer initialized (trust-ladder deny gate active)")
         # Post-init wire into LLM proxy so tool_use blocks can be gated (V9-1)
         if app_state.llm_proxy is not None:
             app_state.llm_proxy.tool_acl_enforcer = app_state.tool_acl_enforcer
