@@ -48,19 +48,29 @@ if [ -z "${_subject}" ] || [ -z "${_body}" ]; then
     exit 1
 fi
 
-# Escape double-quotes in subject and body for JSON embedding
-_subj_esc="$(printf '%s' "${_subject}" | sed 's/\\/\\\\/g; s/"/\\"/g')"
-_body_esc="$(printf '%s' "${_body}"    | sed 's/\\/\\\\/g; s/"/\\"/g')"
+# Build the JSON payload with python3 — multi-line HTML bodies contain literal
+# newlines, which are illegal in JSON strings (sed escaping caused gateway 422s).
+_payload_file="/tmp/.email-send-payload.$$"
+python3 - "${_subject}" "${_body}" "${_is_html}" > "${_payload_file}" <<'PYEOF'
+import json, sys
+json.dump(
+    {"subject": sys.argv[1], "body": sys.argv[2], "is_html": sys.argv[3] == "true"},
+    sys.stdout,
+)
+PYEOF
 
-_response="$(curl -sf --max-time 30 \
+# --max-time must exceed the gateway's worst-case send (~70s: 1Password
+# credential fetch + SMTP); 30s caused false timeouts and duplicate retries.
+_response="$(curl -s --max-time 120 \
     -o /tmp/.email-send-response \
     -w "%{http_code}" \
     -X POST "${_gw_url}/email/send-owner" \
     -H "Content-Type: application/json" \
     -H "Authorization: Bearer ${GATEWAY_AUTH_TOKEN:-}" \
     -H "X-AgentShroud-System: 1" \
-    -d "{\"subject\":\"${_subj_esc}\",\"body\":\"${_body_esc}\",\"is_html\":${_is_html}}" \
-    2>/dev/null || echo "000")"
+    --data-binary "@${_payload_file}" \
+    2>/dev/null)" || _response="000"
+rm -f "${_payload_file}" 2>/dev/null || true
 
 _body_resp="$(cat /tmp/.email-send-response 2>/dev/null || true)"
 rm -f /tmp/.email-send-response 2>/dev/null || true
