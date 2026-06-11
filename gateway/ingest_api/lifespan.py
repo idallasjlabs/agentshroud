@@ -2111,6 +2111,16 @@ async def lifespan(app: FastAPI):
     if slack_socket_task and not slack_socket_task.done():
         slack_socket_task.cancel()
 
+    # Close SQLite-backed security modules so connections never leak on shutdown
+    for _attr in ("trust_manager", "drift_detector"):
+        _module = getattr(app_state, _attr, None)
+        if _module is not None:
+            try:
+                _module.close()
+                logger.info("%s closed", _attr)
+            except Exception as exc:
+                logger.warning("Failed to close %s: %s", _attr, exc)
+
     await app_state.ledger.close()
 
     logger.info("Shutdown complete")
