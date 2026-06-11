@@ -14,6 +14,10 @@ jobs:
   image-signing:
     name: Image Signing & Provenance (cosign)
     runs-on: ubuntu-latest
+    # Signing requires OIDC + registry push, which only exist on push to main.
+    # Every step fails hard: a green job means the image was built, pushed,
+    # signed, and its SBOM attested — no soft-fail theater (IEC 62443 FR3/SL3).
+    if: github.event_name == 'push' && github.ref == 'refs/heads/main'
     permissions:
       contents: read
       id-token: write
@@ -24,25 +28,34 @@ jobs:
       - name: Install cosign
         uses: sigstore/cosign-installer@v3
 
+      - name: Log in to GitHub Container Registry
+        uses: docker/login-action@v3
+        with:
+          registry: ghcr.io
+          username: ${{ github.actor }}
+          password: ${{ secrets.GITHUB_TOKEN }}
+
       - name: Build Gateway Image
-        continue-on-error: true
         run: docker build -t ghcr.io/${{ github.repository_owner }}/agentshroud-gateway:${{ github.sha }} -f gateway/Dockerfile .
+
+      - name: Push Gateway Image
+        run: docker push ghcr.io/${{ github.repository_owner }}/agentshroud-gateway:${{ github.sha }}
 
       - name: Sign Gateway Image with cosign (keyless OIDC)
         run: |
           cosign sign --yes \
-            ghcr.io/${{ github.repository_owner }}/agentshroud-gateway:${{ github.sha }} || true
+            ghcr.io/${{ github.repository_owner }}/agentshroud-gateway:${{ github.sha }}
 
       - name: Generate SBOM with syft
         run: |
-          curl -sSfL https://raw.githubusercontent.com/anchore/syft/main/install.sh | sh -s -- -b /usr/local/bin || true
+          curl -sSfL https://raw.githubusercontent.com/anchore/syft/main/install.sh | sh -s -- -b /usr/local/bin
           syft ghcr.io/${{ github.repository_owner }}/agentshroud-gateway:${{ github.sha }} \
-            -o spdx-json > sbom-gateway.json || true
+            -o spdx-json > sbom-gateway.json
 
       - name: Attest SBOM with cosign
         run: |
           cosign attest --yes --predicate sbom-gateway.json --type spdxjson \
-            ghcr.io/${{ github.repository_owner }}/agentshroud-gateway:${{ github.sha }} || true
+            ghcr.io/${{ github.repository_owner }}/agentshroud-gateway:${{ github.sha }}
 
   trivy-scan:
     name: Trivy Filesystem Scan

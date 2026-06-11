@@ -36,7 +36,8 @@ class PIIConfig(BaseModel):
         default_factory=lambda: ["US_SSN", "CREDIT_CARD", "PHONE_NUMBER", "EMAIL_ADDRESS"]
     )
     enabled: bool = True
-    min_confidence: float = 0.8
+    # 0.9 floor mandated by CLAUDE.md §7.8 — do not lower
+    min_confidence: float = 0.9
 
 
 class LedgerConfig(BaseModel):
@@ -426,7 +427,7 @@ def load_config(config_path: Optional[Path] = None) -> GatewayConfig:
 
     # Map PII configuration
     pii_enabled = security.get("pii_redaction", True)
-    pii_min_confidence = security.get("pii_min_confidence", 0.8)
+    pii_min_confidence = security.get("pii_min_confidence", 0.9)
     pii_engine = security.get("pii_detection_engine", "presidio")
     redaction_rules = security.get("redaction_rules", [])
 

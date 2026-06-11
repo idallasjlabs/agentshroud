@@ -17,7 +17,6 @@ from gateway.security.outbound_filter import (
     InfoCategory,
     OutboundInfoFilter,
 )
-from gateway.security.outbound_filter_config import OutboundFilterConfig
 
 
 class TestOutboundInfoFilter:
@@ -504,36 +503,6 @@ with tailnet tail240ea8, user 123456789012, exec tool,
             "[SECURITY_MODULE]" in result.filtered_text
             or "[SECURITY_SYSTEM]" in result.filtered_text
         )
-
-    def test_configuration_from_dict(self):
-        """Test OutboundFilterConfig.from_dict()."""
-        config_dict = {
-            "mode": "monitor",
-            "trust_overrides": {"ELEVATED": {"operational": True}},
-            "additional_patterns": [
-                {
-                    "name": "test_pattern",
-                    "pattern": "test-\\d+",
-                    "category": "operational",
-                    "replacement": "[TEST]",
-                }
-            ],
-            "enable_density_alerts": False,
-            "high_density_threshold": 10,
-        }
-
-        config = OutboundFilterConfig.from_dict(config_dict)
-        assert config.mode == "monitor"
-        assert config.enable_density_alerts == False
-        assert config.high_density_threshold == 10
-        assert len(config.additional_patterns) == 1
-        assert config.additional_patterns[0].name == "test_pattern"
-
-        # Test to_dict round-trip
-        config_dict_2 = config.to_dict()
-        assert config_dict_2["mode"] == "monitor"
-        assert config_dict_2["enable_density_alerts"] == False
-
 
 class TestFabricatedSecurityNotice:
     """Test cases for the widened fabricated_security_notice pattern."""

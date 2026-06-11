@@ -46,6 +46,8 @@ class AppState:
     delegation_manager: Optional[object]
     tool_acl_enforcer: Optional[object]
     privacy_enforcer: Optional[object]
+    # Gateway-held credential vault (seeds outbound KeyLeakDetector)
+    key_vault: Optional[object]
     # Security enforcement state (set by background tasks at startup)
     trivy_critical_count: int
     image_verification: Optional[object]

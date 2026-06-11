@@ -244,7 +244,7 @@ class SecurityPipeline:
 
     Wires together: PromptGuard, PIISanitizer, TrustManager,
     EgressFilter, ApprovalQueue, OutboundInfoFilter, CanaryTripwire,
-    EncodingDetector, and AuditChain.
+    EncodingDetector, KeyLeakDetector, and AuditChain.
     """
 
     def __init__(
@@ -260,6 +260,7 @@ class SecurityPipeline:
         context_guard=None,
         output_canary=None,
         enhanced_tool_sanitizer=None,
+        key_leak_detector=None,
         prompt_block_threshold: float = 0.8,
         approval_actions: list[str] | None = None,
         audit_store=None,
@@ -286,6 +287,7 @@ class SecurityPipeline:
         self.context_guard = context_guard
         self.output_canary = output_canary
         self.enhanced_tool_sanitizer = enhanced_tool_sanitizer
+        self.key_leak_detector = key_leak_detector
         self.prompt_protection = prompt_protection
         self.heuristic_classifier = heuristic_classifier
         self.clamav_scanner = clamav_scanner
@@ -1014,6 +1016,55 @@ class SecurityPipeline:
                     self._stats["outbound_blocked"] += 1
                     entry = self.audit_chain.append(
                         f"MODULE_ERROR: OutputCanary: {exc}",
+                        "outbound_module_error",
+                        metadata,
+                    )
+                    result.audit_entry_id = entry.id
+                    result.audit_hash = entry.chain_hash
+                    result.processing_time_ms = (time.time() - start) * 1000
+                    return result
+
+        # Step 1.85: KeyLeakDetector — stored credential values must never
+        # leave the gateway. Leaks are redacted (vault design), audited, and
+        # surfaced in the final audit entry metadata.
+        if self.key_leak_detector and not result.blocked:
+            try:
+                leak_scan = self.key_leak_detector.scan_outbound(result.sanitized_message)
+                if leak_scan.leak_detected:
+                    result.sanitized_message = self.key_leak_detector.vault.redact(
+                        result.sanitized_message
+                    )
+                    self._stats["outbound_sanitized"] += 1
+                    metadata = {
+                        **(metadata or {}),
+                        "key_leak_names": leak_scan.leaked_key_names,
+                    }
+                    logger.critical(
+                        "KeyLeakDetector: credential value(s) %s detected in outbound "
+                        "response from %s — redacted",
+                        leak_scan.leaked_key_names,
+                        source,
+                    )
+                    self.audit_chain.append(
+                        f"KEY_LEAK: {leak_scan.leaked_key_names}",
+                        "outbound_key_leak",
+                        metadata,
+                    )
+            except Exception as exc:
+                logger.error("KeyLeakDetector error: %s", exc)
+                # Fail-closed for non-owner: block if security module crashes
+                is_owner_outbound = bool(
+                    self._owner_user_id
+                    and metadata
+                    and str(metadata.get("user_id", "")) == str(self._owner_user_id)
+                )
+                if not is_owner_outbound:
+                    result.action = PipelineAction.BLOCK
+                    result.blocked = True
+                    result.block_reason = f"Security module error (KeyLeakDetector): {exc}"
+                    self._stats["outbound_blocked"] += 1
+                    entry = self.audit_chain.append(
+                        f"MODULE_ERROR: KeyLeakDetector: {exc}",
                         "outbound_module_error",
                         metadata,
                     )
