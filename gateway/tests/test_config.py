@@ -6,21 +6,25 @@
 
 from __future__ import annotations
 
-import pytest
+from pathlib import Path
 
 from gateway.ingest_api.config import load_config
 
+REPO_ROOT = Path(__file__).resolve().parents[2]
+
+
+def _load_config():
+    """Load the real agentshroud.yaml when present (deployment host), else the
+    committed agentshroud.yaml.example (CI), so these tests always execute."""
+    try:
+        return load_config()
+    except FileNotFoundError:
+        return load_config(REPO_ROOT / "agentshroud.yaml.example")
+
 
 def test_load_config():
-    """Test loading configuration from agentshroud.yaml.
-
-    Skipped in CI where agentshroud.yaml is not present (config lives on the
-    deployment host, not in the repo).  Run locally against a real config.
-    """
-    try:
-        config = load_config()
-    except FileNotFoundError:
-        pytest.skip("agentshroud.yaml not found — skipped in CI")
+    """Test loading configuration from agentshroud.yaml (or the committed example)."""
+    config = _load_config()
 
     assert config is not None
     assert config.bind == "127.0.0.1"
@@ -43,10 +47,7 @@ def test_config_defaults():
 
 def test_load_config_has_bots():
     """Test that load_config() populates bots — from YAML or backward-compat default."""
-    try:
-        config = load_config()
-    except FileNotFoundError:
-        pytest.skip("agentshroud.yaml not found — skipped in CI")
+    config = _load_config()
 
     assert config.bots, "bots dict must not be empty"
     default_bots = [b for b in config.bots.values() if b.default]
@@ -98,10 +99,7 @@ def test_entity_type_mapping():
 
 def test_load_config_registers_hermes():
     """When agentshroud.yaml declares hermes:, load_config() populates it in bots."""
-    try:
-        config = load_config()
-    except FileNotFoundError:
-        pytest.skip("agentshroud.yaml not found — skipped in CI")
+    config = _load_config()
 
     assert "hermes" in config.bots, "hermes must be declared in agentshroud.yaml bots: section"
     hermes = config.bots["hermes"]
