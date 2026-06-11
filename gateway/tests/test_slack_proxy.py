@@ -643,9 +643,7 @@ class TestMultiFieldOutboundScanning:
     async def test_file_upload_initial_comment_scanned(self):
         """files.upload initial_comment/title text is scanned."""
         pipeline = MagicMock()
-        pipeline.process_outbound = AsyncMock(
-            return_value=_pass_result(sanitized="a report")
-        )
+        pipeline.process_outbound = AsyncMock(return_value=_pass_result(sanitized="a report"))
         proxy = _make_proxy(pipeline=pipeline)
         proxy._call_slack_api = AsyncMock(return_value={"ok": True})
 
@@ -674,9 +672,7 @@ class TestMultiFieldOutboundScanning:
         body = json.dumps(
             {
                 "channel": "C123",
-                "blocks": [
-                    {"type": "section", "text": {"type": "mrkdwn", "text": "555-867-5309"}}
-                ],
+                "blocks": [{"type": "section", "text": {"type": "mrkdwn", "text": "555-867-5309"}}],
             }
         ).encode()
         result = await proxy.proxy_outbound("chat.postMessage", body, "application/json")

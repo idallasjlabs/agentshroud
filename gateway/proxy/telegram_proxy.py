@@ -4135,8 +4135,7 @@ class TelegramAPIProxy:
                     self._quarantine_outbound_block(
                         chat_id=chat_id,
                         text=text or "",
-                        reason=pipeline_result.block_reason
-                        or "Pipeline blocked outbound response",
+                        reason=pipeline_result.block_reason or "Pipeline blocked outbound response",
                         source="telegram_outbound_pipeline_block",
                     )
                     notice = (
@@ -4200,9 +4199,7 @@ class TelegramAPIProxy:
                         chat_id,
                         pii_result.entity_types_found,
                     )
-                blocked, was_blocked = await self.sanitizer.block_credentials(
-                    new_text, "telegram"
-                )
+                blocked, was_blocked = await self.sanitizer.block_credentials(new_text, "telegram")
                 if was_blocked:
                     self._quarantine_outbound_block(
                         chat_id=chat_id,
@@ -4212,9 +4209,7 @@ class TelegramAPIProxy:
                     )
                     new_text = blocked
                     self._stats["outbound_filtered"] += 1
-                    logger.warning(
-                        "Outbound multipart: credentials blocked chat_id=%s", chat_id
-                    )
+                    logger.warning("Outbound multipart: credentials blocked chat_id=%s", chat_id)
                 if new_text != text:
                     return self._multipart_replace_field(body, boundary, field_name, new_text)
             return body

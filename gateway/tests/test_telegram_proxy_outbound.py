@@ -5033,9 +5033,9 @@ class TestMultipartOutboundPipeline:
         )
 
         await proxy._filter_outbound(body, _MP_CONTENT_TYPE)
-        assert seen.get("text") == "hello caption", (
-            "Pipeline.process_outbound must scan multipart captions"
-        )
+        assert (
+            seen.get("text") == "hello caption"
+        ), "Pipeline.process_outbound must scan multipart captions"
 
     @pytest.mark.asyncio
     async def test_multipart_sanitized_caption_applied_binary_intact(self):
@@ -5099,9 +5099,9 @@ class TestMultipartOutboundPipeline:
         body = _make_multipart_body({"chat_id": "7614658040", "caption": "secret stuff"})
 
         result = await proxy._filter_outbound(body, _MP_CONTENT_TYPE)
-        assert b"secret stuff" not in result, (
-            "Original caption must not leak when pipeline crashes (fail-closed)"
-        )
+        assert (
+            b"secret stuff" not in result
+        ), "Original caption must not leak when pipeline crashes (fail-closed)"
         assert b"protected by agentshroud" in result.lower()
 
     @pytest.mark.asyncio
@@ -5139,9 +5139,7 @@ class TestMultipartOutboundPipeline:
         """Multipart bodies with no caption/text part are forwarded unchanged."""
         proxy = TelegramAPIProxy(sanitizer=_make_sanitizer())
         binary = bytes(range(256))
-        body = _make_multipart_body(
-            {"chat_id": "12345"}, binary_field=("photo", "p.jpg", binary)
-        )
+        body = _make_multipart_body({"chat_id": "12345"}, binary_field=("photo", "p.jpg", binary))
 
         result = await proxy._filter_outbound(body, _MP_CONTENT_TYPE)
         assert result == body

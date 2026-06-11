@@ -463,9 +463,9 @@ async def test_webhook_outbound_block_withheld():
     )
 
     assert result["status"] == "blocked"
-    assert "sk-test-leaked" not in json.dumps(result), (
-        "Blocked outbound content must not appear anywhere in the webhook response"
-    )
+    assert "sk-test-leaked" not in json.dumps(
+        result
+    ), "Blocked outbound content must not appear anywhere in the webhook response"
     assert receiver.get_stats()["webhooks_blocked"] == 1
 
 
@@ -485,9 +485,9 @@ async def test_webhook_outbound_pipeline_crash_fails_closed():
     )
 
     assert result["status"] == "blocked"
-    assert "unscanned bot response" not in json.dumps(result), (
-        "Unscanned content must not be delivered when the pipeline crashes (fail-closed)"
-    )
+    assert "unscanned bot response" not in json.dumps(
+        result
+    ), "Unscanned content must not be delivered when the pipeline crashes (fail-closed)"
     assert receiver.get_stats()["webhooks_blocked"] == 1
 
 

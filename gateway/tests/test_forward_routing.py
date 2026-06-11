@@ -253,6 +253,6 @@ class TestOutboundBlockedNotDelivered:
         assert resp.status_code == 201
         body = resp.json()
         assert body["agent_response"] == "[Response blocked by AgentShroud security policy]"
-        assert "sk-test-leaked" not in _json.dumps(body), (
-            "Blocked outbound content must not appear anywhere in the /forward response"
-        )
+        assert "sk-test-leaked" not in _json.dumps(
+            body
+        ), "Blocked outbound content must not appear anywhere in the /forward response"
