@@ -504,6 +504,7 @@ with tailnet tail240ea8, user 123456789012, exec tool,
             or "[SECURITY_SYSTEM]" in result.filtered_text
         )
 
+
 class TestFabricatedSecurityNotice:
     """Test cases for the widened fabricated_security_notice pattern."""
 
