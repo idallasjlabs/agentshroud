@@ -3164,7 +3164,7 @@ class TelegramAPIProxy:
                     normalized_text = normalize_input(text)
                     scrubbed_text = strip_markdown_exfil(normalized_text)
                     if scrubbed_text != text:
-                        data["text"] = scrubbed_text
+                        data[text_key] = scrubbed_text
                         text = scrubbed_text
                         self._stats["outbound_filtered"] += 1
 
@@ -3269,6 +3269,14 @@ class TelegramAPIProxy:
                     data[text_key] = model_rewrite
                     return urllib.parse.urlencode(data).encode()
 
+                # Markdown-exfil scrub — parity with the JSON branch.
+                if text:
+                    scrubbed_text = strip_markdown_exfil(normalize_input(text))
+                    if scrubbed_text != text:
+                        data[text_key] = scrubbed_text
+                        text = scrubbed_text
+                        self._stats["outbound_filtered"] += 1
+
                 # Security pipeline scan — parity with the JSON branch. Without this,
                 # form-encoded sendMessage bodies bypass KeyLeakDetector/PII/info-filter
                 # entirely (C-0 class bypass via Content-Type switch).
@@ -3308,13 +3316,16 @@ class TelegramAPIProxy:
                 chat_id = str(data.get("chat_id", ""))
                 owner_id = str(self._rbac.owner_user_id) if self._rbac else ""
                 if owner_id and chat_id != owner_id:
+                    _fc_key, _fc_text = self._resolve_text_field(data)
                     self._quarantine_outbound_block(
                         chat_id=chat_id,
-                        text=str(data.get("text", "")),
+                        text=_fc_text,
                         reason="Security pipeline error (fail-closed)",
                         source="telegram_outbound_fail_closed",
                     )
-                    data["text"] = self._collaborator_safe_notice("security pipeline error")
+                    # Resolved key (not literal "text"): a caption payload must
+                    # get its caption replaced, never an extra ignored key.
+                    data[_fc_key] = self._collaborator_safe_notice("security pipeline error")
                     return (
                         urllib.parse.urlencode(data).encode()
                         if _fc_form
@@ -3409,6 +3420,14 @@ class TelegramAPIProxy:
                 return body
 
             field_name, text = text_field
+
+            # Markdown-exfil scrub — parity with the JSON and form branches.
+            if text:
+                scrubbed_text = strip_markdown_exfil(normalize_input(text))
+                if scrubbed_text != text:
+                    body = self._multipart_replace_field(body, boundary, field_name, scrubbed_text)
+                    text = scrubbed_text
+                    self._stats["outbound_filtered"] += 1
 
             scan = await self._scan_outbound_text(
                 text,
