@@ -3611,9 +3611,7 @@ class TelegramAPIProxy:
                     self._stats["outbound_filtered"] += 1
                     logger.info("Outbound %s: XML blocks stripped chat_id=%s", label, chat_id)
             # 3. Credential blocking
-            blocked_text, was_blocked = await self.sanitizer.block_credentials(
-                new_text, "telegram"
-            )
+            blocked_text, was_blocked = await self.sanitizer.block_credentials(new_text, "telegram")
             if was_blocked:
                 self._quarantine_outbound_block(
                     chat_id=chat_id,
@@ -3689,7 +3687,9 @@ class TelegramAPIProxy:
                 if not is_owner_chat
                 else "⏳ Agent is still processing a previous request. Please wait 10–20 seconds and retry."
             )
-        elif tool_name == "sessions_spawn" and str(tool_args.get("agentId", "")) == "acp.healthcheck":
+        elif (
+            tool_name == "sessions_spawn" and str(tool_args.get("agentId", "")) == "acp.healthcheck"
+        ):
             data[text_key] = (
                 self._collaborator_safe_notice("restricted command")
                 if not is_owner_chat
@@ -3844,10 +3844,9 @@ class TelegramAPIProxy:
             return None
         if self._contains_critical_collaborator_leakage(text):
             return self._collaborator_safe_notice("redacted protected content")
-        if (
-            self._resolve_collaborator_mode(chat_id) != "full_access"
-            and self._contains_high_risk_collaborator_leakage(text)
-        ):
+        if self._resolve_collaborator_mode(
+            chat_id
+        ) != "full_access" and self._contains_high_risk_collaborator_leakage(text):
             return self._collaborator_safe_notice("redacted protected content")
         return None
 
@@ -3876,7 +3875,9 @@ class TelegramAPIProxy:
             text,
             flags=re.IGNORECASE,
         ).strip()
-        return redacted if redacted else self._collaborator_safe_notice("redacted protected content")
+        return (
+            redacted if redacted else self._collaborator_safe_notice("redacted protected content")
+        )
 
     async def _trigger_web_search_log(self, chat_id: str, tool_args: dict[str, Any]) -> None:
         """Log a web_search egress event with user attribution when raw JSON leaks.
