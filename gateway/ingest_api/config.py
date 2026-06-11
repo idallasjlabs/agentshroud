@@ -315,6 +315,8 @@ class GatewayConfig(BaseModel):
     # Security modules configuration
     security: SecurityConfig = Field(default_factory=SecurityConfig)
     # Tool result PII configuration
+    # All per-tool min_confidence values sit at the 0.9 floor mandated by
+    # CLAUDE.md §7.8 — do not lower (test_tool_result_pii.py enforces this).
     tool_result_pii: dict = Field(
         default_factory=lambda: {
             "enabled": True,
@@ -327,23 +329,23 @@ class GatewayConfig(BaseModel):
                         "EMAIL_ADDRESS",
                         "LOCATION",
                     ],
-                    "min_confidence": 0.7,
+                    "min_confidence": 0.9,
                 },
                 "email": {
                     "entities": ["US_SSN", "CREDIT_CARD", "PHONE_NUMBER", "EMAIL_ADDRESS"],
-                    "min_confidence": 0.7,
+                    "min_confidence": 0.9,
                 },
                 "contacts": {
                     "entities": ["PHONE_NUMBER", "EMAIL_ADDRESS", "LOCATION"],
-                    "min_confidence": 0.8,
+                    "min_confidence": 0.9,
                 },
                 "web_search": {
                     "entities": ["US_SSN", "CREDIT_CARD", "PHONE_NUMBER"],
-                    "min_confidence": 0.8,
+                    "min_confidence": 0.9,
                 },
                 "web_fetch": {
                     "entities": ["US_SSN", "CREDIT_CARD", "PHONE_NUMBER", "EMAIL_ADDRESS"],
-                    "min_confidence": 0.8,
+                    "min_confidence": 0.9,
                 },
                 "browser": {"entities": ["US_SSN", "CREDIT_CARD"], "min_confidence": 0.9},
             },
