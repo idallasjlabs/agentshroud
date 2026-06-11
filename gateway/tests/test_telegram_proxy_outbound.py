@@ -160,6 +160,138 @@ class TestOutboundPipelineIntegration:
         ), "Owner messages should not be blocked on pipeline crash"
 
     @pytest.mark.asyncio
+    async def test_form_outbound_pipeline_called_when_available(self):
+        """Form-encoded sendMessage bodies must also be scanned by the pipeline.
+
+        Regression test: form-urlencoded payloads bypassed process_outbound
+        entirely (only JSON bodies were scanned), letting credential leaks
+        through unscanned.
+        """
+        pipeline_called = False
+
+        class MockPipeline:
+            async def process_outbound(self, response, **kwargs):
+                nonlocal pipeline_called
+                pipeline_called = True
+                return SimpleNamespace(
+                    blocked=False,
+                    sanitized_message=response,
+                    block_reason="",
+                    info_filter_redaction_count=0,
+                )
+
+        proxy = TelegramAPIProxy(pipeline=MockPipeline(), sanitizer=_make_sanitizer())
+        body = urllib.parse.urlencode({"chat_id": "12345", "text": "Hello world"}).encode()
+
+        await proxy._filter_outbound(body, "application/x-www-form-urlencoded")
+        assert pipeline_called, "Pipeline.process_outbound must run on form-encoded bodies"
+
+    @pytest.mark.asyncio
+    async def test_form_outbound_pipeline_sanitized_text_applied(self):
+        """Pipeline-sanitized text must replace the original in form payloads."""
+
+        class RedactingPipeline:
+            async def process_outbound(self, response, **kwargs):
+                return SimpleNamespace(
+                    blocked=False,
+                    sanitized_message="key=[REDACTED]",
+                    block_reason="",
+                    info_filter_redaction_count=0,
+                )
+
+        proxy = TelegramAPIProxy(pipeline=RedactingPipeline(), sanitizer=_make_sanitizer())
+        body = urllib.parse.urlencode(
+            {"chat_id": "12345", "text": "key=sk-a1b2c3d4e5a1b2c3d4e5a1b2c3d4e5"}
+        ).encode()
+
+        result = await proxy._filter_outbound(body, "application/x-www-form-urlencoded")
+        parsed = dict(urllib.parse.parse_qsl(result.decode(), keep_blank_values=True))
+        assert parsed["text"] == "key=[REDACTED]"
+        assert "sk-a1b2c3d4e5" not in result.decode()
+
+    @pytest.mark.asyncio
+    async def test_form_outbound_pipeline_block_non_owner(self):
+        """Pipeline-blocked form payloads to non-owners must be replaced with a safe notice."""
+
+        class BlockingPipeline:
+            async def process_outbound(self, response, **kwargs):
+                return SimpleNamespace(
+                    blocked=True,
+                    sanitized_message=response,
+                    block_reason="credential leak",
+                    info_filter_redaction_count=0,
+                )
+
+        proxy = TelegramAPIProxy(pipeline=BlockingPipeline(), sanitizer=_make_sanitizer())
+        body = urllib.parse.urlencode(
+            {"chat_id": "7614658040", "text": "leaked credential payload"}
+        ).encode()
+
+        result = await proxy._filter_outbound(body, "application/x-www-form-urlencoded")
+        parsed = dict(urllib.parse.parse_qsl(result.decode(), keep_blank_values=True))
+        assert "protected by agentshroud" in parsed.get("text", "").lower()
+        assert "leaked credential payload" not in parsed.get("text", "")
+
+    @pytest.mark.asyncio
+    async def test_form_outbound_fails_closed_for_non_owner(self):
+        """If the pipeline crashes on a form payload, non-owner messages must be blocked."""
+
+        class CrashingPipeline:
+            async def process_outbound(self, response, **kwargs):
+                raise RuntimeError("Intentional crash")
+
+        proxy = TelegramAPIProxy(pipeline=CrashingPipeline(), sanitizer=_make_sanitizer())
+
+        class MockRBAC:
+            owner_user_id = "9999999999"
+
+        proxy._rbac = MockRBAC()
+        body = urllib.parse.urlencode(
+            {"chat_id": "7614658040", "text": "Some response with secrets"}
+        ).encode()
+
+        result = await proxy._filter_outbound(body, "application/x-www-form-urlencoded")
+        parsed = dict(urllib.parse.parse_qsl(result.decode(), keep_blank_values=True))
+        assert (
+            "protected by agentshroud" in parsed.get("text", "").lower()
+        ), "Non-owner form messages must be blocked when pipeline crashes"
+        assert "Some response with secrets" not in parsed.get("text", "")
+
+    @pytest.mark.asyncio
+    async def test_form_outbound_owner_exempt_from_fail_closed(self):
+        """Owner form messages still pass through when the pipeline crashes."""
+
+        class CrashingPipeline:
+            async def process_outbound(self, response, **kwargs):
+                raise RuntimeError("Intentional crash")
+
+        proxy = TelegramAPIProxy(pipeline=CrashingPipeline(), sanitizer=_make_sanitizer())
+
+        class MockRBAC:
+            owner_user_id = "8096968754"
+
+        proxy._rbac = MockRBAC()
+        body = urllib.parse.urlencode(
+            {"chat_id": "8096968754", "text": "Owner response should pass through"}
+        ).encode()
+
+        result = await proxy._filter_outbound(body, "application/x-www-form-urlencoded")
+        parsed = dict(urllib.parse.parse_qsl(result.decode(), keep_blank_values=True))
+        assert "Owner response should pass through" in parsed.get("text", "")
+
+    @pytest.mark.asyncio
+    async def test_form_outbound_overlength_blocked_for_non_owner(self):
+        """Over-length form messages to non-owners must be blocked like JSON ones."""
+        proxy = TelegramAPIProxy(sanitizer=_make_sanitizer())
+        proxy._max_outbound_chars = 32
+
+        body = urllib.parse.urlencode({"chat_id": "7614658040", "text": "A" * 100}).encode()
+
+        result = await proxy._filter_outbound(body, "application/x-www-form-urlencoded")
+        parsed = dict(urllib.parse.parse_qsl(result.decode(), keep_blank_values=True))
+        assert "protected by agentshroud" in parsed.get("text", "").lower()
+
+    @pytest.mark.asyncio
     async def test_long_outbound_message_blocked_for_non_owner(self):
         """Messages above hard size cap should be blocked to prevent split bypass."""
         sanitizer = _make_sanitizer()
