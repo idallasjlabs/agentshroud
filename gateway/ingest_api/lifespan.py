@@ -571,6 +571,32 @@ async def lifespan(app: FastAPI):
     except Exception as _clamav_pre_exc:
         logger.warning("ClamAV scan_bytes not available at pipeline init: %s", _clamav_pre_exc)
 
+    # KeyVault — gateway-held credentials, scoped to no agent (scopes=[] means
+    # no agent passes _agent_in_scope; values exist only for leak detection and
+    # redaction). KeyLeakDetector scans every outbound response for these values.
+    _key_leak_detector = None
+    app_state.key_vault = None
+    try:
+        from ..security.key_vault import KeyLeakDetector, KeyVault, KeyVaultConfig
+
+        _vault = KeyVault(KeyVaultConfig())
+        _seeded = 0
+        for _vault_secret in (
+            "gateway_password",
+            "telegram_bot_token",
+            "hermes_telegram_bot_token",
+            "hermes_api_key",
+        ):
+            _vault_value = _read_secret(_vault_secret)
+            if _vault_value:
+                _vault.store_key(_vault_secret, _vault_value, scopes=[])
+                _seeded += 1
+        app_state.key_vault = _vault
+        _key_leak_detector = KeyLeakDetector(_vault)
+        logger.info("✓ KeyVault (%d secrets seeded) + KeyLeakDetector wired", _seeded)
+    except Exception as _kv_exc:
+        logger.error("✗ KeyVault: %s", _kv_exc)
+
     app_state.pipeline = SecurityPipeline(
         prompt_guard=app_state.prompt_guard,
         pii_sanitizer=app_state.sanitizer,
@@ -602,6 +628,7 @@ async def lifespan(app: FastAPI):
         clamav_scanner=_clamav_scan_bytes,
         tool_result_injection_scanner=_inbound_injection_scanner,
         xml_leak_filter=_inbound_xml_leak_filter,
+        key_leak_detector=_key_leak_detector,
     )
     logger.info("Security pipeline initialized")
 
@@ -1094,8 +1121,8 @@ async def lifespan(app: FastAPI):
         logger.error(f"✗ EncryptedStore: {e}")
         app_state.encrypted_store = None
 
-    # KeyVault removed — was instantiated but never wired to any consumer.
-    # Re-add when a consumer (e.g. credential injector) needs it.
+    # KeyVault is initialized in the pre-pipeline block above and consumed by
+    # the outbound KeyLeakDetector (credential-exfiltration detection).
 
     # -- Canary: integrity checks on critical files --
     try:

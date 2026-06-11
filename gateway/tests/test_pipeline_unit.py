@@ -380,3 +380,81 @@ class TestEnvelopeSignerInPipeline:
         assert entry.metadata["envelope_id"] == "env-9"
         assert entry.metadata["envelope_signature"] == "sig-9"
         assert entry.metadata["envelope_timestamp"] == 456.0
+
+
+class TestKeyLeakDetection:
+    """KeyLeakDetector wiring — stored credential values must never leave the gateway."""
+
+    SECRET = "8123456789:AAH-unit-test-secret-value-123456"
+
+    @staticmethod
+    def _passthrough_pii():
+        # SecurityPipeline fail-closes without a pii_sanitizer; the stub must
+        # echo input because process_outbound Step 1 overwrites
+        # sanitized_message with sanitize_result.sanitized_content.
+        pii = MagicMock()
+        pii.filter_xml_blocks = MagicMock(side_effect=lambda t: (t, False))
+        pii.sanitize = AsyncMock(
+            side_effect=lambda text: MagicMock(
+                sanitized_content=text, entity_types_found=[], redactions=[]
+            )
+        )
+        return pii
+
+    def _make_vault_pipeline(self):
+        from gateway.security.key_vault import KeyLeakDetector, KeyVault, KeyVaultConfig
+
+        vault = KeyVault(KeyVaultConfig())
+        vault.store_key("telegram_bot_token", self.SECRET)
+        pipeline = SecurityPipeline(
+            pii_sanitizer=self._passthrough_pii(),
+            key_leak_detector=KeyLeakDetector(vault),
+        )
+        return pipeline, vault
+
+    @pytest.mark.asyncio
+    async def test_stored_key_value_redacted_from_outbound(self):
+        pipeline, vault = self._make_vault_pipeline()
+        result = await pipeline.process_outbound(f"the bot token is {self.SECRET} — use it")
+        assert self.SECRET not in result.sanitized_message
+        assert "[REDACTED]" in result.sanitized_message
+        assert not result.blocked
+        actions = [e.action for e in vault.get_audit_log()]
+        assert "leak_detected" in actions
+
+    @pytest.mark.asyncio
+    async def test_key_leak_increments_sanitized_stat_and_audits(self):
+        pipeline, _vault = self._make_vault_pipeline()
+        before = pipeline.get_stats()["outbound_sanitized"]
+        await pipeline.process_outbound(f"leak: {self.SECRET}")
+        assert pipeline.get_stats()["outbound_sanitized"] == before + 1
+        entry = pipeline.audit_chain.entries[-1]
+        assert entry.metadata.get("key_leak_names") == ["telegram_bot_token"]
+
+    @pytest.mark.asyncio
+    async def test_generic_key_pattern_audited_but_not_blocked(self):
+        pipeline, vault = self._make_vault_pipeline()
+        generic = "sk-" + "a1b2c3d4e5" * 3
+        result = await pipeline.process_outbound(f"found a key {generic} in env")
+        assert not result.blocked
+        actions = [e.action for e in vault.get_audit_log()]
+        assert "leak_detected" in actions
+
+    @pytest.mark.asyncio
+    async def test_clean_response_passes_unchanged(self):
+        pipeline, vault = self._make_vault_pipeline()
+        result = await pipeline.process_outbound("a perfectly normal response")
+        assert result.sanitized_message == "a perfectly normal response"
+        assert not result.blocked
+        assert vault.get_audit_log() == []
+
+    @pytest.mark.asyncio
+    async def test_detector_failure_fails_closed_for_non_owner(self):
+        detector = MagicMock()
+        detector.scan_outbound.side_effect = RuntimeError("scan crashed")
+        pipeline = SecurityPipeline(
+            pii_sanitizer=self._passthrough_pii(), key_leak_detector=detector
+        )
+        result = await pipeline.process_outbound("response text")
+        assert result.blocked
+        assert "KeyLeakDetector" in result.block_reason
