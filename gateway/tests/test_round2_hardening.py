@@ -168,19 +168,27 @@ class TestLLMProxyEndpoints:
         assert "return HTMLResponse(" in source
 
 
-# ── Fix 8: KeyVault dead code removed ───────────────────────────────────
+# ── Fix 8 (superseded): KeyVault is wired, not dead ─────────────────────
+# Originally KeyVault was removed as dead code. The 2026-06-11 review wired it
+# in instead: lifespan seeds it with gateway secrets and the outbound pipeline
+# runs KeyLeakDetector.scan_outbound for credential-exfiltration detection.
 
 
-class TestKeyVaultRemoved:
-    def test_keyvault_not_instantiated(self):
+class TestKeyVaultWired:
+    def test_keyvault_instantiated_and_seeded_in_lifespan(self):
         import gateway.ingest_api.lifespan as mod
 
         source = open(mod.__file__).read()
-        assert "KeyVault(KeyVaultConfig())" not in source, "KeyVault should be removed"
-        assert (
-            "KeyVault removed" in source
-            or "key_vault" not in source.split("KeyVault removed")[0].split("# KeyVault")[-1]
-        )
+        assert "KeyVault(KeyVaultConfig())" in source, "KeyVault must be initialized"
+        assert "KeyLeakDetector(" in source, "KeyLeakDetector must be constructed"
+        assert "key_leak_detector=" in source, "detector must be passed to the pipeline"
+
+    def test_pipeline_scans_outbound_for_key_leaks(self):
+        import gateway.proxy.pipeline as mod
+
+        source = open(mod.__file__).read()
+        assert "key_leak_detector" in source
+        assert "scan_outbound" in source
 
 
 # ── Fix 9: _notify_user_blocked reason sanitization ─────────────────────
