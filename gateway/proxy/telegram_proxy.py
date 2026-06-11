@@ -3111,127 +3111,9 @@ class TelegramAPIProxy:
                 )
 
                 # Guardrail: never leak raw tool-call JSON blobs to Telegram users.
-                parsed_tool_call = (
-                    self._parse_tool_call_json(text) if isinstance(text, str) else None
-                )
-                embedded_tool_call = (
-                    self._extract_embedded_tool_call_json(text) if isinstance(text, str) else None
-                )
-                if parsed_tool_call is None and embedded_tool_call is not None:
-                    parsed_tool_call, emb_start, emb_end = embedded_tool_call
-                    leading = text[:emb_start].strip()
-                    trailing = text[emb_end:].strip()
-                    cleaned = " ".join(part for part in (leading, trailing) if part).strip()
-                    if cleaned:
-                        if not is_owner_chat:
-                            data[text_key] = self._collaborator_safe_notice("tool output redacted")
-                            self._stats["outbound_filtered"] += 1
-                            return json.dumps(data).encode()
-                        tool_name = str(parsed_tool_call.get("name", "")).strip()
-                        tool_args = (
-                            parsed_tool_call.get("arguments")
-                            if isinstance(parsed_tool_call.get("arguments"), dict)
-                            else {}
-                        )
-                        if tool_name == "web_fetch":
-                            approval_queued = await self._trigger_web_fetch_approval(
-                                chat_id, tool_args
-                            )
-                            if approval_queued:
-                                cleaned = (
-                                    f"{cleaned}\n\n"
-                                    "🌐 Web access request detected. Approval request queued for this destination."
-                                ).strip()
-                        elif tool_name == "web_search":
-                            await self._trigger_web_search_log(chat_id, tool_args)
-                        data[text_key] = cleaned
-                        self._stats["outbound_filtered"] += 1
-                        return json.dumps(data).encode()
-                if parsed_tool_call is not None:
-                    tool_name = str(parsed_tool_call.get("name", "")).strip()
-                    tool_args = (
-                        parsed_tool_call.get("arguments")
-                        if isinstance(parsed_tool_call.get("arguments"), dict)
-                        else {}
-                    )
-                    self._stats["outbound_filtered"] += 1
-                    if tool_name.upper() == "NO_REPLY":
-                        data[text_key] = (
-                            self._collaborator_safe_notice("processing timeout")
-                            if not is_owner_chat
-                            else "⏳ Agent is still processing a previous request. Please wait 10–20 seconds and retry."
-                        )
-                    elif (
-                        tool_name == "sessions_spawn"
-                        and str(tool_args.get("agentId", "")) == "acp.healthcheck"
-                    ):
-                        data[text_key] = (
-                            self._collaborator_safe_notice("restricted command")
-                            if not is_owner_chat
-                            else "✅ Healthcheck started. I’ll reply with status once complete."
-                        )
-                    elif tool_name == "web_search":
-                        await self._trigger_web_search_log(chat_id, tool_args)
-                        if not is_owner_chat:
-                            data[text_key] = self._collaborator_safe_notice(
-                                "web search in progress"
-                            )
-                        else:
-                            data[text_key] = (
-                                "🔍 Web search requested, but this model returned raw tool JSON instead of executing it. "
-                                "Switch to a tool-capable model."
-                            )
-                    elif tool_name == "web_fetch":
-                        _is_full_access_fetch = (
-                            not is_owner_chat
-                            and self._resolve_collaborator_mode(chat_id) == "full_access"
-                        )
-                        approval_queued = await self._trigger_web_fetch_approval(chat_id, tool_args)
-                        if not is_owner_chat:
-                            if _is_full_access_fetch:
-                                data[text_key] = self._collaborator_safe_notice(
-                                    "web fetch in progress"
-                                )
-                            else:
-                                data[text_key] = (
-                                    _COLLABORATOR_EGRESS_NOTICE
-                                    if approval_queued
-                                    else self._collaborator_safe_notice("web access unavailable")
-                                )
-                        else:
-                            approval_note = (
-                                " Approval request queued for this destination."
-                                if approval_queued
-                                else ""
-                            )
-                            data[text_key] = (
-                                "🌐 Web fetch requested, but this model returned raw tool JSON instead of executing it. "
-                                "Switch to a tool-capable model (e.g., scripts/switch_model.sh gemini or local qwen3:14b once pulled)."
-                                + approval_note
-                            )
-                    elif tool_name in {"sessions_spawn", "sessions_send", "subagents"}:
-                        data[text_key] = (
-                            self._collaborator_safe_notice("restricted command")
-                            if not is_owner_chat
-                            else "✅ Request accepted and queued."
-                        )
-                    else:
-                        self._quarantine_outbound_block(
-                            chat_id=chat_id,
-                            text=text or "",
-                            reason=f"Raw tool-call JSON leaked to outbound text (tool={tool_name or 'unknown'})",
-                            source="telegram_outbound_toolcall_json",
-                        )
-                        data[text_key] = (
-                            self._collaborator_safe_notice("tool output redacted")
-                            if not is_owner_chat
-                            else (
-                                f"⚠️ Agent returned a raw tool-call JSON for '{tool_name or 'unknown'}' "
-                                "which is not configured in this environment. "
-                                "Ask the agent to report findings as text rather than executing commands, "
-                                "or switch to a tool-capable model (scripts/switch_model.sh)."
-                            )
-                        )
+                if await self._handle_outbound_tool_calls(
+                    data, text_key, text, chat_id, is_owner_chat, flavor="json"
+                ):
                     return json.dumps(data).encode()
 
                 status_notice = self._apply_outbound_status_notices(text, is_owner_chat)
@@ -3444,116 +3326,9 @@ class TelegramAPIProxy:
                 chat_id = str(data.get("chat_id", ""))
                 is_owner_chat = self._is_owner_chat(chat_id)
 
-                parsed_tool_call = (
-                    self._parse_tool_call_json(text) if isinstance(text, str) else None
-                )
-                embedded_tool_call = (
-                    self._extract_embedded_tool_call_json(text) if isinstance(text, str) else None
-                )
-                if parsed_tool_call is None and embedded_tool_call is not None:
-                    parsed_tool_call, emb_start, emb_end = embedded_tool_call
-                    leading = text[:emb_start].strip()
-                    trailing = text[emb_end:].strip()
-                    cleaned = " ".join(part for part in (leading, trailing) if part).strip()
-                    if cleaned:
-                        if not is_owner_chat:
-                            data[text_key] = self._collaborator_safe_notice("tool output redacted")
-                            self._stats["outbound_filtered"] += 1
-                            return urllib.parse.urlencode(data).encode()
-                        tool_name = str(parsed_tool_call.get("name", "")).strip()
-                        tool_args = (
-                            parsed_tool_call.get("arguments")
-                            if isinstance(parsed_tool_call.get("arguments"), dict)
-                            else {}
-                        )
-                        if tool_name == "web_fetch":
-                            approval_queued = await self._trigger_web_fetch_approval(
-                                chat_id, tool_args
-                            )
-                            if approval_queued:
-                                cleaned = (
-                                    f"{cleaned}\n\n"
-                                    "🌐 Web access request detected. Approval request queued for this destination."
-                                ).strip()
-                        elif tool_name == "web_search":
-                            await self._trigger_web_search_log(chat_id, tool_args)
-                        data[text_key] = cleaned
-                        self._stats["outbound_filtered"] += 1
-                        return urllib.parse.urlencode(data).encode()
-                if parsed_tool_call is not None:
-                    tool_name = str(parsed_tool_call.get("name", "")).strip()
-                    tool_args = (
-                        parsed_tool_call.get("arguments")
-                        if isinstance(parsed_tool_call.get("arguments"), dict)
-                        else {}
-                    )
-                    self._stats["outbound_filtered"] += 1
-                    if tool_name.upper() == "NO_REPLY":
-                        data[text_key] = (
-                            self._collaborator_safe_notice("processing timeout")
-                            if not is_owner_chat
-                            else "⏳ Agent is still processing a previous request. Please wait 10–20 seconds and retry."
-                        )
-                    elif (
-                        tool_name == "sessions_spawn"
-                        and str(tool_args.get("agentId", "")) == "acp.healthcheck"
-                    ):
-                        data[text_key] = (
-                            self._collaborator_safe_notice("restricted command")
-                            if not is_owner_chat
-                            else "✅ Healthcheck started. I’ll reply with status once complete."
-                        )
-                    elif tool_name == "web_search":
-                        await self._trigger_web_search_log(chat_id, tool_args)
-                        if not is_owner_chat:
-                            data[text_key] = self._collaborator_safe_notice(
-                                "web search in progress"
-                            )
-                        else:
-                            data[text_key] = (
-                                "🔍 Web search requested, but this model returned raw tool JSON instead of executing it. "
-                                "Switch to a tool-capable model (e.g., scripts/switch_model.sh gemini or local qwen3:14b once pulled)."
-                            )
-                    elif tool_name == "web_fetch":
-                        _is_full_access_fetch = (
-                            not is_owner_chat
-                            and self._resolve_collaborator_mode(chat_id) == "full_access"
-                        )
-                        approval_queued = await self._trigger_web_fetch_approval(chat_id, tool_args)
-                        if not is_owner_chat:
-                            if _is_full_access_fetch:
-                                data[text_key] = self._collaborator_safe_notice(
-                                    "web fetch in progress"
-                                )
-                            else:
-                                data[text_key] = (
-                                    _COLLABORATOR_EGRESS_NOTICE
-                                    if approval_queued
-                                    else self._collaborator_safe_notice("web access unavailable")
-                                )
-                        else:
-                            approval_note = (
-                                " Approval request queued for this destination."
-                                if approval_queued
-                                else ""
-                            )
-                            data[text_key] = (
-                                "🌐 Web fetch requested, but this model returned raw tool JSON instead of executing it. "
-                                "Switch to a tool-capable model (e.g., scripts/switch_model.sh gemini or local qwen3:14b once pulled)."
-                                + approval_note
-                            )
-                    elif tool_name in {"sessions_spawn", "sessions_send", "subagents"}:
-                        data[text_key] = (
-                            self._collaborator_safe_notice("restricted command")
-                            if not is_owner_chat
-                            else "✅ Request accepted and queued."
-                        )
-                    else:
-                        data[text_key] = (
-                            self._collaborator_safe_notice("tool output redacted")
-                            if not is_owner_chat
-                            else _PROTECTED_POLICY_NOTICE
-                        )
+                if await self._handle_outbound_tool_calls(
+                    data, text_key, text, chat_id, is_owner_chat, flavor="form"
+                ):
                     return urllib.parse.urlencode(data).encode()
 
                 status_notice = self._apply_outbound_status_notices(text, is_owner_chat)
@@ -3980,6 +3755,141 @@ class TelegramAPIProxy:
             except Exception:
                 pass
             return body
+
+    async def _handle_outbound_tool_calls(
+        self,
+        data: dict[str, Any],
+        text_key: str,
+        text: Any,
+        chat_id: str,
+        is_owner_chat: bool,
+        flavor: str,
+    ) -> bool:
+        """Intercept leaked raw tool-call JSON in outbound text.
+
+        Shared by the JSON and form branches of _filter_outbound. Mutates
+        ``data[text_key]`` in place and returns True when the caller must
+        re-encode and return the body immediately; returns False to continue
+        filtering. ``flavor`` ("json" or "form") selects the per-flavor owner
+        messaging and the quarantine audit source, preserving pre-refactor
+        behavior.
+        """
+        parsed_tool_call = self._parse_tool_call_json(text) if isinstance(text, str) else None
+        embedded_tool_call = (
+            self._extract_embedded_tool_call_json(text) if isinstance(text, str) else None
+        )
+        if parsed_tool_call is None and embedded_tool_call is not None:
+            parsed_tool_call, emb_start, emb_end = embedded_tool_call
+            leading = text[:emb_start].strip()
+            trailing = text[emb_end:].strip()
+            cleaned = " ".join(part for part in (leading, trailing) if part).strip()
+            if cleaned:
+                if not is_owner_chat:
+                    data[text_key] = self._collaborator_safe_notice("tool output redacted")
+                    self._stats["outbound_filtered"] += 1
+                    return True
+                tool_name = str(parsed_tool_call.get("name", "")).strip()
+                tool_args = (
+                    parsed_tool_call.get("arguments")
+                    if isinstance(parsed_tool_call.get("arguments"), dict)
+                    else {}
+                )
+                if tool_name == "web_fetch":
+                    approval_queued = await self._trigger_web_fetch_approval(chat_id, tool_args)
+                    if approval_queued:
+                        cleaned = (
+                            f"{cleaned}\n\n"
+                            "🌐 Web access request detected. Approval request queued for this destination."
+                        ).strip()
+                elif tool_name == "web_search":
+                    await self._trigger_web_search_log(chat_id, tool_args)
+                data[text_key] = cleaned
+                self._stats["outbound_filtered"] += 1
+                return True
+        if parsed_tool_call is None:
+            return False
+        tool_name = str(parsed_tool_call.get("name", "")).strip()
+        tool_args = (
+            parsed_tool_call.get("arguments")
+            if isinstance(parsed_tool_call.get("arguments"), dict)
+            else {}
+        )
+        self._stats["outbound_filtered"] += 1
+        if tool_name.upper() == "NO_REPLY":
+            data[text_key] = (
+                self._collaborator_safe_notice("processing timeout")
+                if not is_owner_chat
+                else "⏳ Agent is still processing a previous request. Please wait 10–20 seconds and retry."
+            )
+        elif tool_name == "sessions_spawn" and str(tool_args.get("agentId", "")) == "acp.healthcheck":
+            data[text_key] = (
+                self._collaborator_safe_notice("restricted command")
+                if not is_owner_chat
+                else "✅ Healthcheck started. I’ll reply with status once complete."
+            )
+        elif tool_name == "web_search":
+            await self._trigger_web_search_log(chat_id, tool_args)
+            if not is_owner_chat:
+                data[text_key] = self._collaborator_safe_notice("web search in progress")
+            elif flavor == "json":
+                data[text_key] = (
+                    "🔍 Web search requested, but this model returned raw tool JSON instead of executing it. "
+                    "Switch to a tool-capable model."
+                )
+            else:
+                data[text_key] = (
+                    "🔍 Web search requested, but this model returned raw tool JSON instead of executing it. "
+                    "Switch to a tool-capable model (e.g., scripts/switch_model.sh gemini or local qwen3:14b once pulled)."
+                )
+        elif tool_name == "web_fetch":
+            _is_full_access_fetch = (
+                not is_owner_chat and self._resolve_collaborator_mode(chat_id) == "full_access"
+            )
+            approval_queued = await self._trigger_web_fetch_approval(chat_id, tool_args)
+            if not is_owner_chat:
+                if _is_full_access_fetch:
+                    data[text_key] = self._collaborator_safe_notice("web fetch in progress")
+                else:
+                    data[text_key] = (
+                        _COLLABORATOR_EGRESS_NOTICE
+                        if approval_queued
+                        else self._collaborator_safe_notice("web access unavailable")
+                    )
+            else:
+                approval_note = (
+                    " Approval request queued for this destination." if approval_queued else ""
+                )
+                data[text_key] = (
+                    "🌐 Web fetch requested, but this model returned raw tool JSON instead of executing it. "
+                    "Switch to a tool-capable model (e.g., scripts/switch_model.sh gemini or local qwen3:14b once pulled)."
+                    + approval_note
+                )
+        elif tool_name in {"sessions_spawn", "sessions_send", "subagents"}:
+            data[text_key] = (
+                self._collaborator_safe_notice("restricted command")
+                if not is_owner_chat
+                else "✅ Request accepted and queued."
+            )
+        else:
+            self._quarantine_outbound_block(
+                chat_id=chat_id,
+                text=text or "",
+                reason=f"Raw tool-call JSON leaked to outbound text (tool={tool_name or 'unknown'})",
+                source=f"telegram_outbound_toolcall_{flavor}",
+            )
+            data[text_key] = (
+                self._collaborator_safe_notice("tool output redacted")
+                if not is_owner_chat
+                else (
+                    f"⚠️ Agent returned a raw tool-call JSON for '{tool_name or 'unknown'}' "
+                    "which is not configured in this environment. "
+                    "Ask the agent to report findings as text rather than executing commands, "
+                    "or switch to a tool-capable model (scripts/switch_model.sh)."
+                    if flavor == "json"
+                    else _PROTECTED_POLICY_NOTICE
+                )
+            )
+        return True
 
     def _apply_outbound_status_notices(self, text: Any, is_owner_chat: bool) -> Optional[str]:
         """Map internal status/policy texts to user-safe replacement notices.
