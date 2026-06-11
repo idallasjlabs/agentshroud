@@ -138,6 +138,8 @@ jobs:
       hallucinations — every claim verified against a live primary source with URL.
       Save as /opt/data/workspace/reports/competitive-report-YYYY-MM-DD.md and
       append a one-line summary to /opt/data/workspace/reports/trend-log.md.
+      Do NOT send any email — the separate "Hermes Competitive Intelligence
+      Email" cron job handles delivery.
       Silence is correct if nothing new; hallucination is a critical failure.
 
   - name: "Hermes Competitive Intelligence Email (AM/PM)"
