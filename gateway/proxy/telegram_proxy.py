@@ -3846,12 +3846,152 @@ class TelegramAPIProxy:
                             else self._collaborator_safe_notice("redacted protected content")
                         )
                         return urllib.parse.urlencode(data).encode()
+
+                # Security pipeline scan — parity with the JSON branch. Without this,
+                # form-encoded sendMessage bodies bypass KeyLeakDetector/PII/info-filter
+                # entirely (C-0 class bypass via Content-Type switch).
+                if chat_id:
+                    blocked_until = self._recent_outbound_blocks_until.get(chat_id, 0.0)
+                    if blocked_until > time.time() and not is_owner_chat:
+                        self._quarantine_outbound_block(
+                            chat_id=chat_id,
+                            text=text or "",
+                            reason="Outbound block cascade active",
+                            source="telegram_outbound_cascade",
+                        )
+                        data[text_key] = self._collaborator_safe_notice("outbound policy block")
+                        self._stats["outbound_filtered"] += 1
+                        return urllib.parse.urlencode(data).encode()
+
+                if text and chat_id and not is_owner_chat and len(text) > self._max_outbound_chars:
+                    self._quarantine_outbound_block(
+                        chat_id=chat_id,
+                        text=text or "",
+                        reason=f"Outbound text exceeds max length ({len(text)} chars)",
+                        source="telegram_outbound_overlength",
+                    )
+                    data[text_key] = self._collaborator_safe_notice("outbound policy block")
+                    self._stats["outbound_filtered"] += 1
+                    self._set_outbound_block_cascade(chat_id, force=True)
+                    logger.warning(
+                        "Outbound over-length form message blocked for chat %s (%d chars)",
+                        chat_id,
+                        len(text),
+                    )
+                    return urllib.parse.urlencode(data).encode()
+
+                if text and self.pipeline:
+                    pipeline_result = await self.pipeline.process_outbound(
+                        response=text,
+                        source="telegram",
+                        user_trust_level="FULL" if is_owner_chat else "UNTRUSTED",
+                        metadata={"chat_id": chat_id},
+                    )
+                    if pipeline_result.blocked:
+                        self._quarantine_outbound_block(
+                            chat_id=chat_id,
+                            text=text or "",
+                            reason=pipeline_result.block_reason
+                            or "Pipeline blocked outbound response",
+                            source="telegram_outbound_pipeline_block",
+                        )
+                        data[text_key] = (
+                            self._collaborator_safe_notice(
+                                pipeline_result.block_reason or "outbound policy block"
+                            )
+                            if not is_owner_chat
+                            else _PROTECTED_POLICY_NOTICE
+                        )
+                        self._stats["outbound_filtered"] += 1
+                        self._set_outbound_block_cascade(chat_id)
+                        logger.warning(
+                            "Outbound form message blocked by pipeline: chat_id=%s reason=%s",
+                            chat_id,
+                            pipeline_result.block_reason,
+                        )
+                    elif (
+                        chat_id
+                        and not is_owner_chat
+                        and getattr(pipeline_result, "info_filter_redaction_count", 0) > 0
+                    ):
+                        self._quarantine_outbound_block(
+                            chat_id=chat_id,
+                            text=text or "",
+                            reason=(
+                                "Outbound info filter redacted protected content "
+                                f"({getattr(pipeline_result, 'info_filter_redaction_count', 0)} redactions)"
+                            ),
+                            source="telegram_outbound_info_filter_block",
+                        )
+                        data[text_key] = self._collaborator_safe_notice(
+                            "redacted protected content"
+                        )
+                        self._stats["outbound_filtered"] += 1
+                        self._set_outbound_block_cascade(chat_id)
+                        logger.warning(
+                            "Outbound form message blocked after info-filter redactions "
+                            "(chat=%s redactions=%s)",
+                            chat_id,
+                            getattr(pipeline_result, "info_filter_redaction_count", 0),
+                        )
+                    elif pipeline_result.sanitized_message != text:
+                        data[text_key] = pipeline_result.sanitized_message
+                        self._stats["outbound_filtered"] += 1
+                        if str(data.get("parse_mode", "")).upper() == "HTML" and re.search(
+                            r"<[A-Z][A-Z0-9_]{1,64}>", data[text_key]
+                        ):
+                            data.pop("parse_mode", None)
+                    return urllib.parse.urlencode(data).encode()
+                elif text and self.sanitizer:
+                    # Fallback: direct sanitizer calls when pipeline is unavailable
+                    pii_result = await self.sanitizer.sanitize(text)
+                    if pii_result.entity_types_found:
+                        data[text_key] = pii_result.sanitized_content
+                        self._stats["outbound_filtered"] += 1
+                        if str(data.get("parse_mode", "")).upper() == "HTML":
+                            data.pop("parse_mode", None)
+                        logger.info(
+                            "Outbound form message: PII redacted: chat_id=%s types=%s",
+                            chat_id,
+                            pii_result.entity_types_found,
+                        )
+                    filtered, was_filtered = self.sanitizer.filter_xml_blocks(data[text_key])
+                    if was_filtered:
+                        data[text_key] = filtered
+                        self._stats["outbound_filtered"] += 1
+                        logger.info(
+                            "Outbound form message: XML blocks stripped chat_id=%s", chat_id
+                        )
+                    blocked, was_blocked = await self.sanitizer.block_credentials(
+                        data[text_key], "telegram"
+                    )
+                    if was_blocked:
+                        self._quarantine_outbound_block(
+                            chat_id=chat_id,
+                            text=text or "",
+                            reason="Credential blocking triggered",
+                            source="telegram_outbound_credential_block",
+                        )
+                        data[text_key] = blocked
+                        self._stats["outbound_filtered"] += 1
+                        logger.warning(
+                            "Outbound form message: credentials blocked chat_id=%s", chat_id
+                        )
+                    return urllib.parse.urlencode(data).encode()
         except Exception as e:
             logger.error(f"Outbound filter error: {e}")
             # Fail-closed: if pipeline crashes, block non-owner outbound messages.
             # Determine if the destination is the owner by inspecting chat_id.
             try:
-                data = json.loads(body)
+                _fc_form = "x-www-form-urlencoded" in (content_type or "").lower()
+                if _fc_form:
+                    data = dict(
+                        urllib.parse.parse_qsl(
+                            body.decode("utf-8", errors="replace"), keep_blank_values=True
+                        )
+                    )
+                else:
+                    data = json.loads(body)
                 chat_id = str(data.get("chat_id", ""))
                 owner_id = str(self._rbac.owner_user_id) if self._rbac else ""
                 if owner_id and chat_id != owner_id:
@@ -3862,7 +4002,11 @@ class TelegramAPIProxy:
                         source="telegram_outbound_fail_closed",
                     )
                     data["text"] = self._collaborator_safe_notice("security pipeline error")
-                    return json.dumps(data).encode()
+                    return (
+                        urllib.parse.urlencode(data).encode()
+                        if _fc_form
+                        else json.dumps(data).encode()
+                    )
             except Exception:
                 pass
         return body
