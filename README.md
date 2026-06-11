@@ -16,7 +16,7 @@
     <img src="https://github.com/idallasjlabs/agentshroud/actions/workflows/ci.yml/badge.svg" alt="Tests" />
   </a>
   <a href="https://github.com/idallasjlabs/agentshroud">
-    <img src="https://img.shields.io/badge/coverage-86%25-brightgreen" alt="Coverage" />
+    <img src="https://img.shields.io/badge/coverage-85%25-brightgreen" alt="Coverage" />
   </a>
   <img src="https://img.shields.io/badge/python-3.9%2B-blue.svg" alt="Python 3.9+" />
   <a href="LICENSE">

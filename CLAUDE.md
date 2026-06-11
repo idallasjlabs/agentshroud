@@ -84,7 +84,7 @@ Configuration locations:
 | **Current Branch** | `feat/v1.0.0` ("Fortress") |
 | **Current Version** | v1.0.0 |
 | **Language** | Python 3.9+ |
-| **Test Coverage** | 86% measured (CI gate: 84%, `gateway/pyproject.toml fail_under`) — 3,700+ tests; maintain or improve |
+| **Test Coverage** | 85% measured (85.39%, CI gate: 84%, `gateway/pyproject.toml fail_under`) — 4,300+ tests; maintain or improve |
 
 AgentShroud sits as a transparent proxy between AI agents and the systems they
 interact with. Every API call, file write, cloud change, and tool invocation is
