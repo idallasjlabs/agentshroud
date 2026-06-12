@@ -653,19 +653,6 @@ class TelegramAPIProxy:
         return re.sub(r"[^a-z0-9_/\-]", "", first)
 
     @staticmethod
-    def _extract_owner_revoke_target(text: str) -> Optional[str]:
-        """Parse /revoke <telegram_user_id> and return normalized target id."""
-        if not isinstance(text, str):
-            return None
-        tokens = normalize_input(text).strip().split()
-        if len(tokens) < 2:
-            return None
-        candidate = re.sub(r"[^0-9]", "", tokens[1])
-        if not candidate:
-            return None
-        return candidate
-
-    @staticmethod
     def _extract_owner_target(text: str) -> Optional[str]:
         """Parse owner command target as numeric id or known collaborator alias."""
         if not isinstance(text, str):
@@ -7531,26 +7518,6 @@ class TelegramAPIProxy:
             )
         except Exception as e:
             logger.warning("Failed to send collaborator pending notice to chat %s: %s", chat_id, e)
-
-    async def _send_collaborator_safe_info_notice(self, chat_id: int) -> None:
-        """Send concise informative collaborator-safe guidance."""
-        try:
-            if self._bot_token:
-                sent = await self._send_telegram_text(
-                    chat_id,
-                    _COLLABORATOR_SAFE_INFO_NOTICE,
-                    retries=2,
-                )
-                if not sent:
-                    await self._send_telegram_text(
-                        chat_id,
-                        _COLLABORATOR_UNAVAILABLE_NOTICE,
-                        retries=5,
-                    )
-        except Exception as e:
-            logger.warning(
-                "Failed to send collaborator safe-info notice to chat %s: %s", chat_id, e
-            )
 
     # ------------------------------------------------------------------
     # V9-4D — Collab mode resolution + project scope
