@@ -67,6 +67,16 @@ class UpdateReplayBuffer:
     def _conn_ok(self) -> bool:
         return self._conn is not None
 
+    def close(self) -> None:
+        """Close the SQLite connection (idempotent)."""
+        if self._conn is not None:
+            try:
+                self._conn.close()
+            except Exception:
+                pass
+            finally:
+                self._conn = None
+
     # ── public API ────────────────────────────────────────────────────────────
 
     def record_inbound(self, bot_id: str, updates: list[dict[str, Any]]) -> None:

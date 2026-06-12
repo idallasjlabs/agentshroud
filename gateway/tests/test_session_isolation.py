@@ -375,7 +375,19 @@ class TestMiddlewareSessionEnforcement:
                 base_workspace=temp_workspace, owner_user_id="admin_123"
             )
 
-            return manager
+            try:
+                yield manager
+            finally:
+                # Close sqlite-backed sub-modules so Python 3.13's GC does
+                # not finalize them mid-suite (unraisable gate).
+                for attr in ("drift_detector", "token_validator"):
+                    obj = getattr(manager, attr, None)
+                    if obj is None:
+                        continue
+                    try:
+                        obj.close()
+                    except Exception:
+                        pass
 
     @pytest.mark.asyncio
     async def test_middleware_user_identification(self, middleware_manager):

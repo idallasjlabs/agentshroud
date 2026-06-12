@@ -353,6 +353,18 @@ class TestRBACIntegration:
         self.collaborator_id = "8506022825"
         self.viewer_id = "unknown_user"
 
+    def teardown_method(self):
+        """Close sqlite-holding sub-modules so Python 3.13's GC does not
+        finalize them mid-suite (unraisable gate)."""
+        for attr in ("drift_detector", "token_validator"):
+            obj = getattr(self.middleware, attr, None)
+            if obj is None:
+                continue
+            try:
+                obj.close()
+            except Exception:
+                pass
+
     def test_rbac_initialization_in_middleware(self):
         """Test that RBAC is properly initialized in middleware."""
         assert self.middleware.rbac_manager is not None
