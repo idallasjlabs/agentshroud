@@ -992,6 +992,33 @@ async def lifespan(app: FastAPI):
         logger.error(f"✗ AlertDispatcher: {e}")
         app_state.alert_dispatcher = None
 
+    # -- ResourceGuard: per-agent CPU/memory/disk/request limits + system spike alerts --
+    try:
+        from ..security.resource_guard import setup_resource_guard
+
+        app_state.resource_guard = setup_resource_guard()
+        if app_state.alert_dispatcher is not None:
+            _dispatcher = app_state.alert_dispatcher
+
+            def _resource_alert_bridge(payload: dict) -> None:
+                alert_type = str(payload.get("type", "unknown"))
+                severity = "HIGH" if alert_type.endswith("_spike") else "MEDIUM"
+                _dispatcher.dispatch(
+                    {
+                        "id": f"resource-guard-{alert_type}-{int(payload.get('timestamp', 0))}",
+                        "severity": severity,
+                        "source": "resource_guard",
+                        "alert_type": alert_type,
+                        "data": payload.get("data", {}),
+                    }
+                )
+
+            app_state.resource_guard.add_alert_callback(_resource_alert_bridge)
+        logger.info("✓ ResourceGuard → per-agent limits + system spike alerts")
+    except Exception as e:
+        logger.error(f"✗ ResourceGuard: {e}")
+        app_state.resource_guard = None
+
     # -- KillSwitchMonitor: automated kill switch verification and heartbeat monitoring --
     try:
         app_state.killswitch_monitor = KillSwitchMonitor(
@@ -2118,6 +2145,14 @@ async def lifespan(app: FastAPI):
     slack_socket_task = getattr(app_state, "slack_socket_task", None)
     if slack_socket_task and not slack_socket_task.done():
         slack_socket_task.cancel()
+
+    # Stop ResourceGuard background monitor task
+    if getattr(app_state, "resource_guard", None) is not None:
+        try:
+            await app_state.resource_guard.stop()
+            logger.info("ResourceGuard monitor stopped")
+        except Exception as exc:
+            logger.warning("Failed to stop ResourceGuard: %s", exc)
 
     # Close SQLite-backed security modules so connections never leak on shutdown
     for _attr in ("trust_manager", "drift_detector"):
