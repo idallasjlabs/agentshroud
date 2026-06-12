@@ -163,6 +163,6 @@ jobs:
       /usr/local/bin/agentshroud-email-send.sh
       --html
       --subject "AgentShroud Hermes Competitive Intelligence — $(date +%Y-%m-%d)"
-      --body "$(cat /tmp/competitive-email.html)"
+      --body-file /tmp/competitive-email.html
       Expect HTTP 200 from the gateway. If the send fails, report the full error
       output via Telegram.

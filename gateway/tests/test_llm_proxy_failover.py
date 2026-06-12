@@ -495,3 +495,151 @@ async def test_proxy_failover_gemini_ollama_down_no_false_notice(monkeypatch):
     assert b"RESOURCE_EXHAUSTED" in body
     assert proxy._stats["failover_quota_failed"] == 1
     assert notices == []  # translator exists — no "no translator" notice
+
+
+# ---------------------------------------------------------------------------
+# Overloaded failover — Anthropic HTTP-200 / 529 "overloaded_error" envelopes
+# (the 2026-06-11 silent hermes cron-death failure mode)
+# ---------------------------------------------------------------------------
+
+ANTHROPIC_OVERLOADED_BODY = json.dumps(
+    {
+        "type": "error",
+        "error": {"details": None, "type": "overloaded_error", "message": "Overloaded"},
+        "request_id": "req_test_overloaded",
+    }
+).encode()
+
+
+@pytest.mark.asyncio
+async def test_proxy_failover_anthropic_overloaded_http200(monkeypatch):
+    """HTTP 200 with an overloaded_error body must trigger local failover."""
+    proxy = make_proxy()
+    call_count = [0]
+    monkeypatch.setattr("gateway.proxy.llm_proxy.MODEL_MODE", "cloud")
+
+    async def mock_forward(url, body, headers):
+        call_count[0] += 1
+        if "api.anthropic.com" in url:
+            return 200, {"content-type": "application/json"}, ANTHROPIC_OVERLOADED_BODY
+        return 200, {"content-type": "application/json"}, OLLAMA_OK_BODY
+
+    monkeypatch.setattr(proxy, "_forward_request", mock_forward)
+    monkeypatch.setattr(proxy, "_emit_failover_notice", lambda *a, **kw: None)
+    monkeypatch.setattr(proxy, "_record_failover_event", lambda *a, **kw: None)
+    monkeypatch.setenv("AGENTSHROUD_FAILOVER_ON_QUOTA", "1")
+
+    status, _, resp_body = await _call_proxy(
+        proxy,
+        "/v1/messages",
+        {
+            "model": "claude-opus-4-6",
+            "messages": [{"role": "user", "content": "hello"}],
+            "max_tokens": 10,
+        },
+    )
+    assert status == 200
+    resp = json.loads(resp_body)
+    assert resp["type"] == "message"
+    assert any(b.get("text") == "Hello from local!" for b in resp["content"])
+    assert proxy._stats["failover_quota_succeeded"] == 1
+    assert call_count[0] == 2
+
+
+@pytest.mark.asyncio
+async def test_proxy_failover_anthropic_overloaded_529(monkeypatch):
+    """HTTP 529 with an overloaded_error body must trigger local failover."""
+    proxy = make_proxy()
+    monkeypatch.setattr("gateway.proxy.llm_proxy.MODEL_MODE", "cloud")
+
+    async def mock_forward(url, body, headers):
+        if "api.anthropic.com" in url:
+            return 529, {"content-type": "application/json"}, ANTHROPIC_OVERLOADED_BODY
+        return 200, {"content-type": "application/json"}, OLLAMA_OK_BODY
+
+    monkeypatch.setattr(proxy, "_forward_request", mock_forward)
+    monkeypatch.setattr(proxy, "_emit_failover_notice", lambda *a, **kw: None)
+    monkeypatch.setattr(proxy, "_record_failover_event", lambda *a, **kw: None)
+    monkeypatch.setenv("AGENTSHROUD_FAILOVER_ON_QUOTA", "1")
+
+    status, _, resp_body = await _call_proxy(
+        proxy,
+        "/v1/messages",
+        {
+            "model": "claude-opus-4-6",
+            "messages": [{"role": "user", "content": "hello"}],
+            "max_tokens": 10,
+        },
+    )
+    assert status == 200
+    assert json.loads(resp_body)["type"] == "message"
+    assert proxy._stats["failover_quota_succeeded"] == 1
+
+
+@pytest.mark.asyncio
+async def test_proxy_normal_200_passthrough_untouched(monkeypatch):
+    """A healthy 200 message body must NOT be failed over."""
+    proxy = make_proxy()
+    ok_body = json.dumps(
+        {"type": "message", "model": "claude-opus-4-6", "content": [{"type": "text", "text": "hi"}]}
+    ).encode()
+    monkeypatch.setattr("gateway.proxy.llm_proxy.MODEL_MODE", "cloud")
+    calls = [0]
+
+    async def mock_forward(url, body, headers):
+        calls[0] += 1
+        return 200, {"content-type": "application/json"}, ok_body
+
+    monkeypatch.setattr(proxy, "_forward_request", mock_forward)
+    monkeypatch.setenv("AGENTSHROUD_FAILOVER_ON_QUOTA", "1")
+
+    status, _, resp_body = await _call_proxy(
+        proxy,
+        "/v1/messages",
+        {
+            "model": "claude-opus-4-6",
+            "messages": [{"role": "user", "content": "hi"}],
+            "max_tokens": 5,
+        },
+    )
+    assert status == 200
+    assert calls[0] == 1  # no second (failover) dispatch
+    assert json.loads(resp_body)["type"] == "message"
+
+
+@pytest.mark.asyncio
+async def test_failover_routes_qwen3_to_lm_studio_with_normalized_model(monkeypatch):
+    """Failover for a qwen3 local ref must dispatch to LM Studio (not Ollama,
+    which has no models installed) and normalize ollama-style 'qwen3:14b' to
+    the LM Studio identifier 'qwen3-14b'."""
+    proxy = make_proxy()
+    monkeypatch.setattr("gateway.proxy.llm_proxy.MODEL_MODE", "cloud")
+    monkeypatch.setenv("AGENTSHROUD_LOCAL_MODEL_REF", "ollama/qwen3:14b")
+    captured = {}
+
+    async def mock_forward(url, body, headers):
+        if "api.anthropic.com" in url:
+            return 200, {"content-type": "application/json"}, ANTHROPIC_OVERLOADED_BODY
+        captured["url"] = url
+        captured["model"] = json.loads(body).get("model")
+        return 200, {"content-type": "application/json"}, OLLAMA_OK_BODY
+
+    monkeypatch.setattr(proxy, "_forward_request", mock_forward)
+    monkeypatch.setattr(proxy, "_emit_failover_notice", lambda *a, **kw: None)
+    monkeypatch.setattr(proxy, "_record_failover_event", lambda *a, **kw: None)
+    monkeypatch.setenv("AGENTSHROUD_FAILOVER_ON_QUOTA", "1")
+
+    status, _, _ = await _call_proxy(
+        proxy,
+        "/v1/messages",
+        {
+            "model": "claude-opus-4-6",
+            "messages": [{"role": "user", "content": "hello"}],
+            "max_tokens": 10,
+        },
+    )
+    assert status == 200
+    from gateway.proxy.llm_proxy import LMSTUDIO_API_BASE
+
+    assert captured["url"].startswith(LMSTUDIO_API_BASE)
+    assert captured["model"] == "qwen3-14b"

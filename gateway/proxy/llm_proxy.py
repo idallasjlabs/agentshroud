@@ -32,7 +32,7 @@ from gateway.proxy.gemini_openai_translator import (
     gemini_to_openai_request,
     openai_to_gemini_response,
 )
-from gateway.proxy.llm_quota_detector import is_quota_exhausted
+from gateway.proxy.llm_quota_detector import is_overloaded, is_quota_exhausted
 
 logger = logging.getLogger("agentshroud.proxy.llm_api")
 
@@ -133,6 +133,26 @@ class LLMProxy:
         ref = os.environ.get("AGENTSHROUD_LOCAL_MODEL_REF", "ollama/qwen3:14b")
         return ref.split("/", 1)[-1]
 
+    @staticmethod
+    def _local_failover_base(local_model: str) -> str:
+        """Resolve the local backend for failover dispatch via LOCAL_MODEL_ROUTES.
+
+        Failover previously hardcoded Ollama, which fails when the configured
+        local model is actually served by LM Studio or mlx_lm."""
+        ml = local_model.lower()
+        for prefix, route_url in LOCAL_MODEL_ROUTES.items():
+            if ml.startswith(prefix):
+                return route_url
+        return OLLAMA_API_BASE
+
+    @staticmethod
+    def _normalize_local_model(local_model: str, base_url: str) -> str:
+        # LM Studio identifiers use dashes ('qwen3-14b'); ollama-style refs use
+        # colons ('qwen3:14b'). Normalize so the dispatch matches a loaded model.
+        if base_url == LMSTUDIO_API_BASE:
+            return local_model.replace(":", "-")
+        return local_model
+
     def _emit_failover_notice(self, token: str, translated: bool) -> None:
         """Send a single Telegram notice per cooldown window when failover activates."""
         import time as _time
@@ -225,20 +245,22 @@ class LLMProxy:
         failover itself fails (caller should return the original cloud 429 body).
         """
         local_model = self._get_local_model()
+        fo_base = self._local_failover_base(local_model)
+        local_model = self._normalize_local_model(local_model, fo_base)
         is_google = "/v1beta" in path or "google" in path.lower()
         translate_back: str | None = None  # "anthropic" | "gemini" | None
         try:
             if is_openai:
-                # OpenAI-compat is drop-in with Ollama — just rewrite model
+                # OpenAI-compat is drop-in with local backends — just rewrite model
                 fo_data = dict(request_data or {})
                 fo_data["model"] = local_model
                 fo_body = json.dumps(fo_data).encode()
-                fo_url = f"{OLLAMA_API_BASE}/v1/chat/completions"
+                fo_url = f"{fo_base}/v1/chat/completions"
             elif "/v1/messages" in path:
                 # Anthropic → translate to OpenAI, re-dispatch, translate response
                 oai_req = anthropic_to_openai_request(request_data or {}, local_model)
                 fo_body = json.dumps(oai_req).encode()
-                fo_url = f"{OLLAMA_API_BASE}/v1/chat/completions"
+                fo_url = f"{fo_base}/v1/chat/completions"
                 translate_back = "anthropic"
             elif is_google:
                 # Gemini → translate to OpenAI, re-dispatch, translate response.
@@ -253,7 +275,7 @@ class LLMProxy:
                     return None
                 oai_req = gemini_to_openai_request(request_data or {}, local_model)
                 fo_body = json.dumps(oai_req).encode()
-                fo_url = f"{OLLAMA_API_BASE}/v1/chat/completions"
+                fo_url = f"{fo_base}/v1/chat/completions"
                 translate_back = "gemini"
             else:
                 return None  # Unknown provider — no translator
@@ -452,6 +474,10 @@ class LLMProxy:
         _failover_enabled = os.environ.get("AGENTSHROUD_FAILOVER_ON_QUOTA", "1") == "1"
         if _failover_enabled and not _failover_opt_out and not is_ollama and not is_streaming:
             quota_hit, quota_token = is_quota_exhausted(status, resp_body)
+            if not quota_hit:
+                # Anthropic emits overloaded_error with HTTP 200/503/529 —
+                # invisible to status-code checks but just as fatal to cron jobs.
+                quota_hit, quota_token = is_overloaded(status, resp_body)
             if quota_hit:
                 local_model = self._get_local_model()
                 logger.info(
@@ -608,15 +634,21 @@ class LLMProxy:
                             _failover_enabled
                             and not _failover_opt_out
                             and not is_ollama
-                            and response.status_code in (429, 402)
+                            and response.status_code in (429, 402, 503, 529)
                         ):
                             # Error body is small JSON — safe to read in full
                             error_body = await response.aread()
                             quota_hit, quota_token = is_quota_exhausted(
                                 response.status_code, error_body
                             )
+                            if not quota_hit:
+                                quota_hit, quota_token = is_overloaded(
+                                    response.status_code, error_body
+                                )
                             if quota_hit:
                                 local_model = self._get_local_model()
+                                fo_base = self._local_failover_base(local_model)
+                                local_model = self._normalize_local_model(local_model, fo_base)
                                 logger.info(
                                     "Streaming quota failover (%s) → %s",
                                     quota_token,
@@ -627,13 +659,13 @@ class LLMProxy:
                                         fo_data = dict(request_data or {})
                                         fo_data["model"] = local_model
                                         fo_body = json.dumps(fo_data).encode()
-                                        fo_url = f"{OLLAMA_API_BASE}/v1/chat/completions"
+                                        fo_url = f"{fo_base}/v1/chat/completions"
                                     elif "/v1/messages" in path:
                                         oai_req = anthropic_to_openai_request(
                                             request_data or {}, local_model
                                         )
                                         fo_body = json.dumps(oai_req).encode()
-                                        fo_url = f"{OLLAMA_API_BASE}/v1/chat/completions"
+                                        fo_url = f"{fo_base}/v1/chat/completions"
                                     else:
                                         self._emit_failover_notice(quota_token, translated=False)
                                         yield error_body
