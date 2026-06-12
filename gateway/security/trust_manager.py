@@ -21,10 +21,10 @@ from typing import Optional
 
 from gateway.security.progressive_trust_config import (
     ProgressiveTrustConfig,
-    ViolationType,
 )
+from gateway.security.progressive_trust_config import TrustLevel as ProgressiveTrustLevel
 from gateway.security.progressive_trust_config import (
-    TrustLevel as ProgressiveTrustLevel,
+    ViolationType,
 )
 
 
