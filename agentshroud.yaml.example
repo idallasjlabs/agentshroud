@@ -168,6 +168,30 @@ bots:
     dockerfile: docker/bots/openclaw/Dockerfile
     env_prefix: OPENCLAW_
     default: true
+  hermes:
+    name: "Hermes Agent"
+    runtime: python
+    hostname: agentshroud-hermes          # Docker service hostname on agentshroud-isolated
+    port: 8642
+    health_path: /health
+    chat_path: /v1/chat/completions       # OpenAI-compatible API endpoint
+    webhook_path: /webhook/telegram
+    workspace_path: /opt/data/home
+    config_dir: /opt/data
+    dockerfile: docker/bots/hermes/Dockerfile
+    image: agentshroud/hermes:latest
+    env_prefix: HERMES_
+    telegram_token_secret: hermes_telegram_bot_token
+    egress_domains:
+      - api.telegram.org
+      - api.anthropic.com
+      - portal.nousresearch.com
+      - api.brave.com
+      - agentskills.io
+      - models.dev
+      - cloudflare-dns.com
+      - dns.google
+    default: false
   # nanobot:
   #   name: "NanoBot"
   #   runtime: python
