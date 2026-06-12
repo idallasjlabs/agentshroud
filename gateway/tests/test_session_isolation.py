@@ -255,6 +255,8 @@ class TestWebhookReceiverIntegration:
         pipeline.process_inbound.return_value = mock_result
 
         mock_outbound = Mock()
+        mock_outbound.blocked = False
+        mock_outbound.block_reason = None
         mock_outbound.sanitized_message = "Sanitized response"
         mock_outbound.pii_redaction_count = 0
         pipeline.process_outbound.return_value = mock_outbound

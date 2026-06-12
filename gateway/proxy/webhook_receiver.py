@@ -219,10 +219,31 @@ class WebhookReceiver:
                         )
 
                     if forward_result.body and self.pipeline:
-                        outbound = await self.pipeline.process_outbound(
-                            response=forward_result.body,
-                            agent_id=agent_id,
-                        )
+                        try:
+                            # user_trust_level defaults to UNTRUSTED (strictest)
+                            # in process_outbound — webhook callers are untrusted.
+                            outbound = await self.pipeline.process_outbound(
+                                response=forward_result.body,
+                                agent_id=agent_id,
+                            )
+                        except Exception as exc:
+                            # Fail-closed: never deliver an unscanned bot response.
+                            logger.error(
+                                "Webhook outbound pipeline error — failing closed: %s", exc
+                            )
+                            self._stats["webhooks_blocked"] += 1
+                            return {
+                                "status": "blocked",
+                                "reason": "security pipeline error (fail-closed)",
+                                "user_id": user_id,
+                            }
+                        if outbound.blocked:
+                            self._stats["webhooks_blocked"] += 1
+                            return {
+                                "status": "blocked",
+                                "reason": outbound.block_reason or "outbound policy block",
+                                "user_id": user_id,
+                            }
                         return {
                             "status": "forwarded",
                             "response": outbound.sanitized_message,
