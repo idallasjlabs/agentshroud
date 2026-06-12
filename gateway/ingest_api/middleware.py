@@ -1312,3 +1312,8 @@ class MiddlewareManager:
                 self.token_validator.close()
         except Exception as exc:
             logger.warning("MiddlewareManager.close(): TokenValidator close failed: %s", exc)
+        try:
+            if self.drift_detector:
+                self.drift_detector.close()
+        except Exception as exc:
+            logger.warning("MiddlewareManager.close(): DriftDetector close failed: %s", exc)
