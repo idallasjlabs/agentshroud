@@ -147,3 +147,7 @@ class TokenValidator:
             {"timestamp": r[0], "decision": r[1], "reason": r[2], "claims": json.loads(r[3])}
             for r in cursor
         ]
+
+    def close(self):
+        """Close the audit-log database connection."""
+        self._db.close()

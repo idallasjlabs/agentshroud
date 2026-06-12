@@ -385,9 +385,9 @@ class TestAuth:
     def token_validator(self):
         from gateway.security.token_validation import TokenValidator
 
-        return TokenValidator(
-            expected_audience="agentshroud", expected_issuer="agentshroud-gateway"
-        )
+        tv = TokenValidator(expected_audience="agentshroud", expected_issuer="agentshroud-gateway")
+        yield tv
+        tv.close()
 
     def test_reject_empty_token(self, token_validator):
         with pytest.raises(Exception):
@@ -440,6 +440,7 @@ class TestAuth:
             tm.record_violation("untrusted-agent", "test violation")
         allowed = tm.is_action_allowed("untrusted-agent", "execute_code")
         assert not allowed
+        tm.close()
 
     def test_trust_recovery(self):
         """Trust should recover after good behavior."""
@@ -452,6 +453,7 @@ class TestAuth:
             tm.record_success("agent-1")
         level = tm.get_trust("agent-1")
         assert level is not None
+        tm.close()
 
     def test_consent_framework_loads(self):
         from gateway.security.consent_framework import ConsentDecision
@@ -796,6 +798,7 @@ class TestAuditTrail:
         )
         bid = dd.set_baseline(snap)
         assert bid is not None
+        dd.close()
 
     def test_drift_detector_detects_change(self):
         from gateway.security.drift_detector import ContainerSnapshot, DriftDetector
@@ -826,6 +829,7 @@ class TestAuditTrail:
         )
         alerts = dd.check_drift(snap2)
         assert len(alerts) > 0
+        dd.close()
 
     def test_drift_no_false_positive(self):
         from gateway.security.drift_detector import ContainerSnapshot, DriftDetector
@@ -845,6 +849,7 @@ class TestAuditTrail:
         dd.set_baseline(snap)
         alerts = dd.check_drift(snap)
         assert len(alerts) == 0
+        dd.close()
 
     def test_canary_system_importable(self):
         from gateway.security.canary import CanaryResult, run_canary

@@ -37,11 +37,13 @@ def _make_token(payload: dict) -> str:
 
 @pytest.fixture
 def validator():
-    return TokenValidator(
+    tv = TokenValidator(
         expected_audience="https://api.agentshroud.com",
         expected_issuer="https://auth.agentshroud.com",
         audit_log_path=":memory:",
     )
+    yield tv
+    tv.close()
 
 
 class TestAudienceValidation:
