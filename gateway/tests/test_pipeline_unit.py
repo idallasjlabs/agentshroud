@@ -6,6 +6,7 @@
 
 from __future__ import annotations
 
+import hashlib
 from dataclasses import dataclass
 from unittest.mock import AsyncMock, MagicMock, patch
 
@@ -88,6 +89,81 @@ class TestAuditChain:
         e2 = chain.append("world", "inbound")
         assert e1.content_hash != e2.content_hash
         assert e1.chain_hash != e2.chain_hash
+
+
+class TestAuditChainBounded:
+    """The in-memory window must be bounded; full history lives in SQLite."""
+
+    def test_window_capped_at_max_entries(self):
+        chain = AuditChain(max_entries=50)
+        for i in range(120):
+            chain.append(f"msg-{i}", "inbound")
+        assert len(chain) == 50
+        assert len(chain.entries) == 50
+        assert chain.total_appended == 120
+        # Oldest retained entry is #70 (0-indexed), newest is #119
+        assert chain.entries[0].content_hash == hashlib.sha256(b"msg-70").hexdigest()
+        assert chain.entries[-1].content_hash == hashlib.sha256(b"msg-119").hexdigest()
+
+    def test_verify_chain_valid_after_wrap(self):
+        chain = AuditChain(max_entries=50)
+        for i in range(120):
+            chain.append(f"msg-{i}", "inbound")
+        valid, msg = chain.verify_chain()
+        assert valid, msg
+
+    def test_chain_continuity_preserved_across_wrap(self):
+        chain = AuditChain(max_entries=10)
+        for i in range(25):
+            chain.append(f"msg-{i}", "inbound")
+        # Window wrapped: anchor is no longer genesis, but links stay intact
+        assert chain.entries[0].previous_hash != AuditChain.GENESIS_HASH
+        for prev, cur in zip(chain.entries, chain.entries[1:]):
+            assert cur.previous_hash == prev.chain_hash
+        assert chain.last_hash == chain.entries[-1].chain_hash
+
+    def test_tamper_in_retained_window_detected(self):
+        chain = AuditChain(max_entries=50)
+        for i in range(120):
+            chain.append(f"msg-{i}", "inbound")
+        chain._entries[10].content_hash = "tampered"
+        valid, msg = chain.verify_chain()
+        assert not valid
+        assert "mismatch" in msg.lower()
+
+    def test_unwrapped_chain_must_anchor_at_genesis(self):
+        """A self-consistent window on a forged anchor must fail when the
+        chain never wrapped (anchor must be GENESIS_HASH)."""
+        chain = AuditChain(max_entries=10)
+        chain.append("a", "inbound")
+        chain.append("b", "inbound")
+        prev = "f" * 64  # forged anchor
+        for e in chain._entries:
+            e.previous_hash = prev
+            chain_input = f"{prev}:{e.content_hash}:{e.direction}:{e.timestamp}"
+            e.chain_hash = hashlib.sha256(chain_input.encode()).hexdigest()
+            prev = e.chain_hash
+        valid, msg = chain.verify_chain()
+        assert not valid
+
+    def test_default_window_is_10k(self):
+        chain = AuditChain()
+        assert chain._entries.maxlen == 10_000
+
+    @pytest.mark.asyncio
+    async def test_persisted_event_records_true_previous_hash(self):
+        """The fire-and-forget SQLite log must record the entry's actual
+        previous_hash, not the post-append _last_hash (regression)."""
+        import asyncio
+
+        store = MagicMock()
+        store.log_event = AsyncMock()
+        chain = AuditChain(audit_store=store)
+        entry = chain.append("test", "inbound")
+        await asyncio.sleep(0)
+        details = store.log_event.call_args.kwargs["details"]
+        assert details["previous_hash"] == entry.previous_hash == AuditChain.GENESIS_HASH
+        assert details["chain_hash"] == entry.chain_hash
 
 
 # ── ContextGuard wiring in SecurityPipeline ──────────────────────────────────

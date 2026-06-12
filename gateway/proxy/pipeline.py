@@ -15,6 +15,7 @@ Outbound: PII sanitizer → outbound info filter → canary tripwire → encodin
 import hashlib
 import logging
 import time
+from collections import deque
 from dataclasses import dataclass, field
 from enum import Enum
 from typing import Any, Optional
@@ -119,8 +120,11 @@ class AuditChain:
 
     GENESIS_HASH = "0" * 64
 
-    def __init__(self, audit_store=None):
-        self._entries: list[AuditChainEntry] = []
+    def __init__(self, audit_store=None, max_entries: int = 10_000):
+        # Bounded in-memory window: full history is durably persisted to the
+        # SQLite audit store; only the most recent entries stay resident.
+        self._entries: deque[AuditChainEntry] = deque(maxlen=max_entries)
+        self._total_appended: int = 0
         self._last_hash: str = self.GENESIS_HASH
         self._audit_store = audit_store  # Optional AuditStore for persistence
 
@@ -148,6 +152,7 @@ class AuditChain:
             metadata=metadata or {},
         )
         self._entries.append(entry)
+        self._total_appended += 1
         self._last_hash = chain_hash
 
         # Persist to SQLite audit store if configured (fire-and-forget).
@@ -163,7 +168,7 @@ class AuditChain:
                         details={
                             "chain_hash": chain_hash,
                             "content_hash": content_hash,
-                            "previous_hash": self._last_hash,
+                            "previous_hash": entry.previous_hash,
                             **(metadata or {}),
                         },
                         source_module="pipeline.audit_chain",
@@ -210,11 +215,23 @@ class AuditChain:
         return entry
 
     def verify_chain(self) -> tuple[bool, str]:
-        """Verify the integrity of the entire hash chain.
+        """Verify the integrity of the retained hash-chain window.
+
+        When the bounded window has wrapped, verification anchors at the
+        first retained entry's previous_hash (full-history verification is
+        done against the SQLite audit store).  When it has not wrapped, the
+        anchor must be the genesis hash.
         Returns (valid, error_message)."""
         if not self._entries:
             return True, "Empty chain"
-        prev_hash = self.GENESIS_HASH
+        first = self._entries[0]
+        wrapped = self._total_appended > len(self._entries)
+        if not wrapped and first.previous_hash != self.GENESIS_HASH:
+            return (
+                False,
+                f"Entry 0 ({first.id}): anchor mismatch (unwrapped chain must anchor at genesis)",
+            )
+        prev_hash = first.previous_hash
         for i, entry in enumerate(self._entries):
             if entry.previous_hash != prev_hash:
                 return False, f"Entry {i} ({entry.id}): previous_hash mismatch"
@@ -225,7 +242,7 @@ class AuditChain:
             if entry.chain_hash != expected_hash:
                 return False, f"Entry {i} ({entry.id}): chain_hash mismatch (tampered)"
             prev_hash = entry.chain_hash
-        return True, f"Chain valid ({len(self._entries)} entries)"
+        return True, f"Chain valid ({len(self._entries)} entries, {self._total_appended} total)"
 
     @property
     def entries(self) -> list[AuditChainEntry]:
@@ -234,6 +251,10 @@ class AuditChain:
     @property
     def last_hash(self) -> str:
         return self._last_hash
+
+    @property
+    def total_appended(self) -> int:
+        return self._total_appended
 
     def __len__(self) -> int:
         return len(self._entries)
