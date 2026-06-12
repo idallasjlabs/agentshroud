@@ -1307,3 +1307,8 @@ class MiddlewareManager:
                 await self.resource_guard.stop()
         except Exception as exc:
             logger.warning("MiddlewareManager.close(): ResourceGuard stop failed: %s", exc)
+        try:
+            if self.token_validator:
+                self.token_validator.close()
+        except Exception as exc:
+            logger.warning("MiddlewareManager.close(): TokenValidator close failed: %s", exc)

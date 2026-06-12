@@ -45,7 +45,10 @@ class ApprovalStore:
         self._db: aiosqlite.Connection | None = None
 
     async def initialize(self) -> None:
-        """Open the database and create the schema."""
+        """Open the database and create the schema. Idempotent: a second call
+        must not orphan the live aiosqlite connection (a non-daemon thread)."""
+        if self._db is not None:
+            return
         self._db = await aiosqlite.connect(self.db_path)
         await self._db.execute(SCHEMA)
         await self._db.commit()
