@@ -3097,18 +3097,7 @@ class TelegramAPIProxy:
         try:
             ct = (content_type or "").lower()
             if "multipart" in ct:
-                # For multipart/form-data (sendPhoto, sendDocument with caption):
-                # apply XML leak filter using latin-1 for lossless binary round-trip.
-                # latin-1 is bijective over 0x00-0xFF so binary image parts are
-                # preserved byte-for-byte while XML patterns in text fields are stripped.
-                if self.sanitizer:
-                    body_str = body.decode("latin-1")
-                    filtered, was_filtered = self.sanitizer.filter_xml_blocks(body_str)
-                    if was_filtered:
-                        body = filtered.encode("latin-1")
-                        self._stats["outbound_filtered"] += 1
-                        logger.info("Outbound multipart: XML blocks stripped")
-                return body
+                return await self._filter_outbound_multipart(body, ct)
             elif "json" in ct or (not ct and body.lstrip().startswith(b"{")):
                 data = json.loads(body)
                 text_key, text = self._resolve_text_field(data)
@@ -4010,6 +3999,246 @@ class TelegramAPIProxy:
             except Exception:
                 pass
         return body
+
+    @staticmethod
+    def _multipart_boundary(content_type: str) -> str:
+        """Extract the boundary token from a multipart Content-Type header."""
+        match = re.search(r'boundary="?([^";,\s]+)"?', content_type or "")
+        return match.group(1) if match else ""
+
+    @staticmethod
+    def _multipart_get_field(body: bytes, boundary: str, name: str) -> Optional[str]:
+        """Extract a non-file text field value from a multipart/form-data body."""
+        delim = b"--" + boundary.encode("latin-1")
+        target = f'name="{name}"'.encode("latin-1")
+        for segment in body.split(delim):
+            header_end = segment.find(b"\r\n\r\n")
+            if header_end < 0:
+                continue
+            headers = segment[:header_end]
+            if target not in headers or b"filename=" in headers:
+                continue
+            payload = segment[header_end + 4 :]
+            if payload.endswith(b"\r\n"):
+                payload = payload[:-2]
+            return payload.decode("utf-8", errors="replace")
+        return None
+
+    @staticmethod
+    def _multipart_replace_field(body: bytes, boundary: str, name: str, new_value: str) -> bytes:
+        """Replace a non-file text field value in a multipart/form-data body.
+
+        Only the matched text part is rewritten; every other part (including
+        binary file parts) is preserved byte-for-byte.
+        """
+        delim = b"--" + boundary.encode("latin-1")
+        target = f'name="{name}"'.encode("latin-1")
+        segments = body.split(delim)
+        for i, segment in enumerate(segments):
+            header_end = segment.find(b"\r\n\r\n")
+            if header_end < 0:
+                continue
+            headers = segment[:header_end]
+            if target not in headers or b"filename=" in headers:
+                continue
+            trailing = b"\r\n" if segment.endswith(b"\r\n") else b""
+            segments[i] = segment[: header_end + 4] + new_value.encode("utf-8") + trailing
+            break
+        return delim.join(segments)
+
+    async def _filter_outbound_multipart(self, body: bytes, content_type: str) -> bytes:
+        """Filter multipart/form-data outbound bodies (sendPhoto/sendDocument).
+
+        Text parts (caption, text) get the same security treatment as the JSON
+        and form branches of _filter_outbound: cascade check, over-length block,
+        full pipeline scan, sanitizer fallback — fail-closed for non-owner chats.
+        Binary file parts are never modified (latin-1/byte-level surgery only).
+        """
+        boundary = self._multipart_boundary(content_type)
+        chat_id = ""
+        text_field: Optional[tuple[str, str]] = None
+        try:
+            if boundary:
+                chat_id = self._multipart_get_field(body, boundary, "chat_id") or ""
+                for name in ("caption", "text"):
+                    value = self._multipart_get_field(body, boundary, name)
+                    if value is not None:
+                        text_field = (name, value)
+                        break
+            is_owner_chat = self._is_owner_chat(chat_id)
+
+            # XML leak filter on the whole body using latin-1 for lossless
+            # binary round-trip (bijective over 0x00-0xFF) — preserved behavior.
+            if self.sanitizer:
+                body_str = body.decode("latin-1")
+                filtered, was_filtered = self.sanitizer.filter_xml_blocks(body_str)
+                if was_filtered:
+                    body = filtered.encode("latin-1")
+                    self._stats["outbound_filtered"] += 1
+                    logger.info("Outbound multipart: XML blocks stripped")
+                    if boundary and text_field is not None:
+                        refreshed = self._multipart_get_field(body, boundary, text_field[0])
+                        if refreshed is not None:
+                            text_field = (text_field[0], refreshed)
+
+            if not boundary or text_field is None:
+                return body
+
+            field_name, text = text_field
+
+            if chat_id:
+                blocked_until = self._recent_outbound_blocks_until.get(chat_id, 0.0)
+                if blocked_until > time.time() and not is_owner_chat:
+                    self._quarantine_outbound_block(
+                        chat_id=chat_id,
+                        text=text or "",
+                        reason="Outbound block cascade active",
+                        source="telegram_outbound_cascade",
+                    )
+                    self._stats["outbound_filtered"] += 1
+                    return self._multipart_replace_field(
+                        body,
+                        boundary,
+                        field_name,
+                        self._collaborator_safe_notice("outbound policy block"),
+                    )
+
+            if text and chat_id and not is_owner_chat and len(text) > self._max_outbound_chars:
+                self._quarantine_outbound_block(
+                    chat_id=chat_id,
+                    text=text or "",
+                    reason=f"Outbound text exceeds max length ({len(text)} chars)",
+                    source="telegram_outbound_overlength",
+                )
+                self._stats["outbound_filtered"] += 1
+                self._set_outbound_block_cascade(chat_id, force=True)
+                logger.warning(
+                    "Outbound over-length multipart caption blocked for chat %s (%d chars)",
+                    chat_id,
+                    len(text),
+                )
+                return self._multipart_replace_field(
+                    body,
+                    boundary,
+                    field_name,
+                    self._collaborator_safe_notice("outbound policy block"),
+                )
+
+            if text and self.pipeline:
+                pipeline_result = await self.pipeline.process_outbound(
+                    response=text,
+                    source="telegram",
+                    user_trust_level="FULL" if is_owner_chat else "UNTRUSTED",
+                    metadata={"chat_id": chat_id},
+                )
+                if pipeline_result.blocked:
+                    self._quarantine_outbound_block(
+                        chat_id=chat_id,
+                        text=text or "",
+                        reason=pipeline_result.block_reason or "Pipeline blocked outbound response",
+                        source="telegram_outbound_pipeline_block",
+                    )
+                    notice = (
+                        self._collaborator_safe_notice(
+                            pipeline_result.block_reason or "outbound policy block"
+                        )
+                        if not is_owner_chat
+                        else _PROTECTED_POLICY_NOTICE
+                    )
+                    self._stats["outbound_filtered"] += 1
+                    self._set_outbound_block_cascade(chat_id)
+                    logger.warning(
+                        "Outbound multipart blocked by pipeline: chat_id=%s reason=%s",
+                        chat_id,
+                        pipeline_result.block_reason,
+                    )
+                    return self._multipart_replace_field(body, boundary, field_name, notice)
+                elif (
+                    chat_id
+                    and not is_owner_chat
+                    and getattr(pipeline_result, "info_filter_redaction_count", 0) > 0
+                ):
+                    self._quarantine_outbound_block(
+                        chat_id=chat_id,
+                        text=text or "",
+                        reason=(
+                            "Outbound info filter redacted protected content "
+                            f"({getattr(pipeline_result, 'info_filter_redaction_count', 0)} redactions)"
+                        ),
+                        source="telegram_outbound_info_filter_block",
+                    )
+                    self._stats["outbound_filtered"] += 1
+                    self._set_outbound_block_cascade(chat_id)
+                    logger.warning(
+                        "Outbound multipart blocked after info-filter redactions "
+                        "(chat=%s redactions=%s)",
+                        chat_id,
+                        getattr(pipeline_result, "info_filter_redaction_count", 0),
+                    )
+                    return self._multipart_replace_field(
+                        body,
+                        boundary,
+                        field_name,
+                        self._collaborator_safe_notice("redacted protected content"),
+                    )
+                elif pipeline_result.sanitized_message != text:
+                    self._stats["outbound_filtered"] += 1
+                    return self._multipart_replace_field(
+                        body, boundary, field_name, pipeline_result.sanitized_message
+                    )
+                return body
+            elif text and self.sanitizer:
+                # Fallback: direct sanitizer calls when pipeline is unavailable
+                new_text = text
+                pii_result = await self.sanitizer.sanitize(new_text)
+                if pii_result.entity_types_found:
+                    new_text = pii_result.sanitized_content
+                    self._stats["outbound_filtered"] += 1
+                    logger.info(
+                        "Outbound multipart: PII redacted: chat_id=%s types=%s",
+                        chat_id,
+                        pii_result.entity_types_found,
+                    )
+                blocked, was_blocked = await self.sanitizer.block_credentials(new_text, "telegram")
+                if was_blocked:
+                    self._quarantine_outbound_block(
+                        chat_id=chat_id,
+                        text=text or "",
+                        reason="Credential blocking triggered",
+                        source="telegram_outbound_credential_block",
+                    )
+                    new_text = blocked
+                    self._stats["outbound_filtered"] += 1
+                    logger.warning("Outbound multipart: credentials blocked chat_id=%s", chat_id)
+                if new_text != text:
+                    return self._multipart_replace_field(body, boundary, field_name, new_text)
+            return body
+        except Exception as e:
+            logger.error(f"Outbound multipart filter error: {e}")
+            # Fail-closed: mirror the JSON/form handler — block non-owner delivery
+            # when the scan crashes instead of forwarding unscanned content.
+            try:
+                owner_id = str(self._rbac.owner_user_id) if self._rbac else ""
+                if owner_id and chat_id != owner_id:
+                    self._quarantine_outbound_block(
+                        chat_id=chat_id,
+                        text=text_field[1] if text_field else "",
+                        reason="Security pipeline error (fail-closed)",
+                        source="telegram_outbound_fail_closed",
+                    )
+                    if boundary and text_field is not None:
+                        return self._multipart_replace_field(
+                            body,
+                            boundary,
+                            text_field[0],
+                            self._collaborator_safe_notice("security pipeline error"),
+                        )
+                    # Unparseable multipart — withhold entirely (Telegram rejects
+                    # the empty body, so nothing unscanned is delivered).
+                    return b""
+            except Exception:
+                pass
+            return body
 
     async def _trigger_web_search_log(self, chat_id: str, tool_args: dict[str, Any]) -> None:
         """Log a web_search egress event with user attribution when raw JSON leaks.

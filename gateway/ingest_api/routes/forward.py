@@ -568,7 +568,17 @@ async def forward_content(request: ForwardRequest, req: Request, auth: AuthRequi
                 user_trust_level=user_trust_level,
                 source=request.source,
             )
-            filtered_response = out_result.sanitized_message
+            if out_result.blocked:
+                # Never deliver content the pipeline blocked — sanitized_message
+                # may still carry the original text for audit purposes.
+                logger.warning(
+                    "Outbound agent response blocked by pipeline for source=%s: %s",
+                    request.source,
+                    out_result.block_reason,
+                )
+                filtered_response = "[Response blocked by AgentShroud security policy]"
+            else:
+                filtered_response = out_result.sanitized_message
         else:
             filtered_response, xml_was_filtered = app_state.sanitizer.filter_xml_blocks(
                 agent_response
