@@ -42,6 +42,8 @@ class _PipelineCaptor:
     async def process_outbound(self, response, agent_id, user_trust_level, source):
         self.outbound_agent_ids.append(agent_id)
         result = MagicMock()
+        result.blocked = False
+        result.block_reason = ""
         result.sanitized_message = response
         return result
 
@@ -168,3 +170,89 @@ class TestAgentIdPropagatedFromTarget:
 
         assert captor.inbound_agent_ids[0] == "hermes"
         assert captor.inbound_agent_ids[0] != "default"
+
+
+class _BlockedOutboundPipeline:
+    """Inbound passes; outbound returns blocked=True with the original text intact."""
+
+    trust_manager = None
+
+    async def process_inbound(self, message, agent_id, action, source):
+        from types import SimpleNamespace
+
+        return SimpleNamespace(
+            blocked=False,
+            queued_for_approval=False,
+            sanitized_message=message,
+            pii_redaction_count=0,
+            pii_redactions=[],
+            audit_entry_id="audit-id",
+            audit_hash="audit-hash",
+            prompt_score=0.0,
+        )
+
+    async def process_outbound(self, response, agent_id, user_trust_level, source):
+        from types import SimpleNamespace
+
+        return SimpleNamespace(
+            blocked=True,
+            block_reason="credential leak",
+            sanitized_message=response,  # original text still present for audit
+        )
+
+
+class TestOutboundBlockedNotDelivered:
+    """Regression: /forward returned out_result.sanitized_message without checking
+    out_result.blocked — a pipeline BLOCK still delivered the agent response."""
+
+    def test_blocked_outbound_replaced_with_policy_notice(self):
+        import json as _json
+
+        from fastapi.testclient import TestClient
+
+        from gateway.ingest_api.main import app
+        from gateway.ingest_api.routes import forward as forward_module
+
+        secret_response = "key=sk-test-leaked-credential-value"
+
+        mock_state = MagicMock()
+        target = AgentTarget(name="openclaw", url="http://agentshroud:18789", chat_path="/chat")
+        mock_state.router.resolve_target = AsyncMock(return_value=target)
+        mock_state.router.forward_to_agent = AsyncMock(return_value=secret_response)
+        mock_state.middleware_manager = None
+        mock_state.pipeline = _BlockedOutboundPipeline()
+        mock_state.ledger.record = AsyncMock(
+            return_value=MagicMock(id="ledger-id", content_hash="hash", timestamp="ts")
+        )
+        mock_state.event_bus.emit = AsyncMock()
+
+        async def _passthrough_block_credentials(content, source):
+            return (content, False)
+
+        mock_state.sanitizer.block_credentials = AsyncMock(
+            side_effect=_passthrough_block_credentials
+        )
+
+        with patch("gateway.ingest_api.routes.forward.app_state", mock_state):
+            client = TestClient(app, raise_server_exceptions=True)
+            app.dependency_overrides[forward_module.auth_dep] = lambda: None
+            try:
+                resp = client.post(
+                    "/forward",
+                    json={
+                        "content": "show me the key",
+                        "content_type": "text",
+                        "source": "api",
+                        "route_to": "openclaw",
+                    },
+                    headers={"Authorization": "Bearer test-token"},
+                )
+            finally:
+                app.dependency_overrides.clear()
+
+        assert resp.status_code == 201
+        body = resp.json()
+        assert body["agent_response"] == "[Response blocked by AgentShroud security policy]"
+        assert "sk-test-leaked" not in _json.dumps(
+            body
+        ), "Blocked outbound content must not appear anywhere in the /forward response"
