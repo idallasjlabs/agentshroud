@@ -264,6 +264,36 @@ class TestToolResultSanitizer:
 class TestMiddlewareIntegration:
     """Test integration with MiddlewareManager"""
 
+    @pytest.fixture(autouse=True)
+    def _close_middleware_after(self):
+        """Track every MiddlewareManager instantiated in this class and
+        close its sqlite-holding sub-modules after the test runs. Each MM
+        holds a DriftDetector + TokenValidator (sqlite3 connections);
+        Python 3.13's stricter GC finalizes them mid-suite and trips the
+        unraisable gate. Use direct sub-module close() instead of MM.close()
+        because most tests here are sync."""
+        created: list = []
+        orig = MiddlewareManager.__init__
+
+        def tracker(self, *a, **k):
+            orig(self, *a, **k)
+            created.append(self)
+
+        MiddlewareManager.__init__ = tracker  # type: ignore[method-assign]
+        try:
+            yield
+        finally:
+            MiddlewareManager.__init__ = orig  # type: ignore[method-assign]
+            for m in created:
+                for attr in ("drift_detector", "token_validator"):
+                    obj = getattr(m, attr, None)
+                    if obj is None:
+                        continue
+                    try:
+                        obj.close()
+                    except Exception:
+                        pass
+
     @pytest.fixture
     def mock_config(self):
         """Mock configuration for middleware tests"""

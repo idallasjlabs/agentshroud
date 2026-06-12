@@ -183,6 +183,8 @@ def test_record_inbound_executemany_exception_swallowed(buf):
 
 def test_mark_delivered_execute_exception_swallowed(buf):
     """Exception during execute in mark_delivered must be swallowed."""
+    if buf._conn is not None:
+        buf._conn.close()
     mock_conn = unittest.mock.MagicMock()
     mock_conn.execute.side_effect = sqlite3.OperationalError("fail")
     buf._conn = mock_conn
