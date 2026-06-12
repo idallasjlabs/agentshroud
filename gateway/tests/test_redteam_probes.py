@@ -48,10 +48,11 @@ def _make_approval_queue() -> MagicMock:
 def _make_full_pipeline(**overrides) -> SecurityPipeline:
     """Build a SecurityPipeline with all guards wired up."""
     pii = _make_pii_sanitizer()
+    tm = TrustManager(config=TrustConfig(initial_level=TrustLevel.BASIC))
     kwargs = dict(
         prompt_guard=PromptGuard(),
         pii_sanitizer=pii,
-        trust_manager=TrustManager(config=TrustConfig(initial_level=TrustLevel.BASIC)),
+        trust_manager=tm,
         egress_filter=EgressFilter(
             config=EgressFilterConfig(mode="enforce"),
             default_policy=EgressPolicy(deny_all=True),
@@ -67,7 +68,9 @@ def _make_full_pipeline(**overrides) -> SecurityPipeline:
 
 @pytest.fixture
 def pipeline():
-    return _make_full_pipeline()
+    pipe = _make_full_pipeline()
+    yield pipe
+    pipe.trust_manager.close()
 
 
 # ── Probe 1.1: exec command execution requires approval ──────────────────────
@@ -239,6 +242,7 @@ async def test_encoding_detector_catches_base64_inbound():
         f"DEFENSE GAP: Base64-encoded injection passed undetected! "
         f"blocked={result.blocked}, score={result.prompt_score}"
     )
+    pipe.trust_manager.close()
 
 
 @pytest.mark.asyncio
@@ -251,6 +255,7 @@ async def test_encoding_detector_base64_outbound():
     assert (
         len(result.encoding_detections) > 0 or result.encoding_decoded_segments > 0
     ), "DEFENSE GAP: Base64-encoded content in outbound was not detected!"
+    pipe.trust_manager.close()
 
 
 # ── Probe: Multi-turn trust escalation ───────────────────────────────────────
@@ -270,6 +275,7 @@ async def test_trust_escalation_blocked():
     assert (
         result.queued_for_approval or result.blocked
     ), "DEFENSE GAP: Trust escalated from conversation alone to allow exec!"
+    pipe.trust_manager.close()
 
 
 # ── Probe: Cross-session isolation ───────────────────────────────────────────
@@ -287,6 +293,7 @@ async def test_session_isolation():
     assert (
         "ABC123" not in result2.sanitized_message
     ), "DEFENSE GAP: Cross-session data leakage detected!"
+    pipe.trust_manager.close()
 
 
 # ── Probe: Context window poisoning ──────────────────────────────────────────
@@ -303,6 +310,7 @@ async def test_context_poisoning_blocked():
     assert (
         result.blocked or result.prompt_score >= 0.5
     ), f"DEFENSE GAP: Context poisoning not detected! blocked={result.blocked}, score={result.prompt_score}"
+    pipe.trust_manager.close()
 
 
 # ── Probe: Pipeline fail-closed ──────────────────────────────────────────────

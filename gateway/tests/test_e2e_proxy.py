@@ -63,7 +63,8 @@ def trust_manager():
         decay_rate=0.0,  # No decay in tests
     )
     tm = TrustManager(db_path=":memory:", config=config)
-    return tm
+    yield tm
+    tm.close()
 
 
 @pytest.fixture

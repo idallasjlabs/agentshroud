@@ -81,6 +81,7 @@ class TestTimingAttacks:
                 pass
         elapsed = time.monotonic() - start
         assert elapsed < 2.0, f"100 invalid tokens took {elapsed:.2f}s (should be <2s)"
+        tv.close()
 
     def test_pii_scan_time_independent_of_content(self):
         """PII scanning time should be roughly linear, not exponential."""
@@ -218,6 +219,7 @@ class TestConcurrency:
         # Verify all baselines stored
         for i in range(20):
             assert dd.get_baseline(f"container-{i}") is not None
+        dd.close()
 
     def test_trust_manager_rapid_updates(self):
         """Rapid trust score updates shouldn't corrupt state."""
@@ -232,6 +234,7 @@ class TestConcurrency:
                 tm.record_failure("rapid-agent")
         level = tm.get_trust("rapid-agent")
         assert level is not None
+        tm.close()
 
     def test_prompt_guard_concurrent_scans(self):
         """Concurrent prompt scans shouldn't interfere with each other."""
@@ -408,6 +411,7 @@ class TestInfoLeakage:
         except Exception as e:
             error_msg = str(e).lower()
             assert "secret" not in error_msg or "key" not in error_msg
+        tv.close()
 
     def test_git_guard_no_path_leak(self):
         """Git guard errors shouldn't expose full file paths."""
@@ -523,6 +527,7 @@ class TestPrivilegeEscalation:
             tm.record_success("maxed-agent")
         level, score = tm.get_trust("maxed-agent")
         assert score <= 100.0 or level <= 4  # Should cap somewhere
+        tm.close()
 
     def test_violation_drops_trust_significantly(self):
         """A single violation should meaningfully impact trust."""
@@ -536,6 +541,7 @@ class TestPrivilegeEscalation:
         tm.record_violation("violator", "attempted_exfiltration")
         _, post_score = tm.get_trust("violator")
         assert post_score < pre_score
+        tm.close()
 
     def test_unregistered_agent_blocked(self):
         """Unregistered agents should not be trusted."""
@@ -544,6 +550,7 @@ class TestPrivilegeEscalation:
         tm = TrustManager(db_path=":memory:")
         result = tm.get_trust("unknown-agent")
         assert result is None
+        tm.close()
 
     def test_subagent_monitor_tracks_events(self):
         """Subagent events should be trackable."""

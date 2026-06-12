@@ -34,11 +34,12 @@ def canary_pipeline():
     trust_manager = TrustManager(db_path=":memory:")
     trust_manager.register_agent("canary")
 
-    return SecurityPipeline(
+    yield SecurityPipeline(
         prompt_guard=prompt_guard,
         pii_sanitizer=sanitizer,
         trust_manager=trust_manager,
     )
+    trust_manager.close()
 
 
 @pytest.fixture
