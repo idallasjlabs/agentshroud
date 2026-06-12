@@ -130,3 +130,33 @@ async def test_store_survives_restart(tmp_path: Path):
     assert len(pending) == 1
     assert pending[0].request_id == "restart-001"
     assert len(all_items) == 2
+
+
+@pytest.mark.asyncio
+async def test_initialize_is_idempotent(tmp_path: Path):
+    """Re-initializing must not orphan the first aiosqlite connection.
+
+    aiosqlite connections are non-daemon threads; an orphaned one blocks
+    interpreter exit and trips the PytestUnraisableExceptionWarning gate."""
+    s = ApprovalStore(tmp_path / "idempotent.db")
+    await s.initialize()
+    first_conn = s._db
+    assert first_conn is not None
+    await s.initialize()
+    assert s._db is first_conn
+    await s.close()
+    assert s._db is None
+
+
+@pytest.mark.asyncio
+async def test_audit_store_initialize_is_idempotent(tmp_path: Path):
+    """AuditStore: same idempotency contract as ApprovalStore."""
+    from gateway.security.audit_store import AuditStore
+
+    s = AuditStore(db_path=tmp_path / "audit.db")
+    await s.initialize()
+    first_conn = s._db
+    assert first_conn is not None
+    await s.initialize()
+    assert s._db is first_conn
+    await s.close()

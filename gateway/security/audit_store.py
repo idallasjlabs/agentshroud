@@ -133,7 +133,12 @@ class AuditStore:
         1. Create the table (without bot_id index, in case the column is absent).
         2. Migrate: ALTER TABLE ADD COLUMN bot_id (no-op if already present).
         3. Create the bot_id index now that the column is guaranteed to exist.
+
+        Idempotent: a second call must not orphan the live aiosqlite
+        connection (a non-daemon thread).
         """
+        if self._db is not None:
+            return
         self._db = await aiosqlite.connect(self.db_path)
 
         # Step 1: create base table + non-bot_id indexes

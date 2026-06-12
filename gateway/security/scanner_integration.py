@@ -352,6 +352,7 @@ def _is_container_running(container_name: str) -> bool:
     import http.client
     import socket as _socket
 
+    conn = None
     try:
 
         class _UnixHTTP(http.client.HTTPConnection):
@@ -370,20 +371,29 @@ def _is_container_running(container_name: str) -> bool:
         return data.get("State", {}).get("Status") == "running"
     except Exception:
         return False
+    finally:
+        # Always release the docker.sock connection — leaked unix sockets
+        # trip the ResourceWarning gate at GC time.
+        if conn is not None:
+            try:
+                conn.close()
+            except Exception:
+                pass
 
 
 def _is_clamd_running() -> bool:
     """Return True if clamd Unix socket /tmp/clamd.ctl is connectable."""
     import socket as _socket
 
+    sock = _socket.socket(_socket.AF_UNIX, _socket.SOCK_STREAM)
     try:
-        sock = _socket.socket(_socket.AF_UNIX, _socket.SOCK_STREAM)
         sock.settimeout(1)
         sock.connect("/tmp/clamd.ctl")
-        sock.close()
         return True
     except Exception:
         return False
+    finally:
+        sock.close()
 
 
 def _is_fluent_bit_running() -> bool:

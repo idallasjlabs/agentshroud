@@ -2,6 +2,7 @@
 
 import os
 import sys
+from pathlib import Path
 from unittest.mock import MagicMock, patch
 
 import pytest
@@ -129,7 +130,7 @@ class TestDRYOwnerChatID:
     def test_no_hardcoded_owner_id_in_lifespan(self):
         import gateway.ingest_api.lifespan as mod
 
-        source = open(mod.__file__).read()
+        source = Path(mod.__file__).read_text()
         # The string "8096968754" should NOT appear as a hardcoded value
         # (it may appear in comments, but not in admin_chat_id= or owner_chat_id=)
         import re
@@ -146,7 +147,7 @@ class TestLLMProxyEndpoints:
         """The /v1/{path} endpoint must exist (enabled in v0.9.0)."""
         import gateway.ingest_api.main as mod
 
-        source = open(mod.__file__).read()
+        source = Path(mod.__file__).read_text()
         # v0.9.0 enables the LLM proxy — endpoint delegates to llm_proxy.proxy_messages
         assert "/v1/{path:path}" in source, "LLM proxy endpoint must be defined"
         assert "proxy_messages" in source, "LLM proxy must call proxy_messages"
@@ -155,14 +156,14 @@ class TestLLMProxyEndpoints:
         """The /llm-proxy/stats endpoint must exist."""
         import gateway.ingest_api.main as mod
 
-        source = open(mod.__file__).read()
+        source = Path(mod.__file__).read_text()
         assert "llm_proxy_stats" in source, "LLM proxy stats endpoint must be defined"
 
     def test_v1_endpoint_handles_non_json_upstream_bodies(self):
         """Proxy endpoint must not crash if upstream returns non-JSON body."""
         import gateway.ingest_api.main as mod
 
-        source = open(mod.__file__).read()
+        source = Path(mod.__file__).read_text()
         assert "json.loads(resp_body)" in source
         assert "except Exception" in source
         assert "return HTMLResponse(" in source
@@ -178,7 +179,7 @@ class TestKeyVaultWired:
     def test_keyvault_instantiated_and_seeded_in_lifespan(self):
         import gateway.ingest_api.lifespan as mod
 
-        source = open(mod.__file__).read()
+        source = Path(mod.__file__).read_text()
         assert "KeyVault(KeyVaultConfig())" in source, "KeyVault must be initialized"
         assert "KeyLeakDetector(" in source, "KeyLeakDetector must be constructed"
         assert "key_leak_detector=" in source, "detector must be passed to the pipeline"
@@ -186,7 +187,7 @@ class TestKeyVaultWired:
     def test_pipeline_scans_outbound_for_key_leaks(self):
         import gateway.proxy.pipeline as mod
 
-        source = open(mod.__file__).read()
+        source = Path(mod.__file__).read_text()
         assert "key_leak_detector" in source
         assert "scan_outbound" in source
 

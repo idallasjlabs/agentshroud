@@ -14,7 +14,12 @@ from gateway.proxy.telegram_replay import UpdateReplayBuffer
 
 @pytest.fixture
 def buf(tmp_path):
-    return UpdateReplayBuffer(db_path=str(tmp_path / "replay.sqlite3"))
+    b = UpdateReplayBuffer(db_path=str(tmp_path / "replay.sqlite3"))
+    try:
+        yield b
+    finally:
+        # close() is a no-op if a test already replaced or closed buf._conn
+        b.close()
 
 
 def _update(update_id: int, text: str = "hi") -> dict:
@@ -183,6 +188,8 @@ def test_record_inbound_executemany_exception_swallowed(buf):
 
 def test_mark_delivered_execute_exception_swallowed(buf):
     """Exception during execute in mark_delivered must be swallowed."""
+    if buf._conn is not None:
+        buf._conn.close()
     mock_conn = unittest.mock.MagicMock()
     mock_conn.execute.side_effect = sqlite3.OperationalError("fail")
     buf._conn = mock_conn

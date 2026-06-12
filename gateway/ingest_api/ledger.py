@@ -84,8 +84,11 @@ class DataLedger:
     async def initialize(self) -> None:
         """Create database, tables, and run initial cleanup
 
-        Must be called before using the ledger.
+        Must be called before using the ledger. Idempotent: a second call
+        must not orphan the live aiosqlite connection (a non-daemon thread).
         """
+        if self.db is not None:
+            return
         # Ensure parent directory exists
         self.config.path.parent.mkdir(parents=True, exist_ok=True)
 
