@@ -14,7 +14,9 @@ from unittest.mock import MagicMock, patch
 
 import pytest
 
-BASELINE_PATH = Path(".benchmarks/baseline-v1.0.0.json")
+# Resolve from this file so the baseline is found regardless of pytest cwd
+# (CI runs from repo root; local runs often start from gateway/).
+BASELINE_PATH = Path(__file__).resolve().parents[2] / ".benchmarks" / "baseline-v1.0.0.json"
 THRESHOLD = 0.20  # 20% regression tolerance
 
 
