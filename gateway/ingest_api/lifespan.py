@@ -200,8 +200,16 @@ async def lifespan(app: FastAPI):
         logger.critical(f"Failed to initialize PII sanitizer: {e}")
         raise
 
-    # Initialize data ledger
+    # Initialize data ledger. Close any pre-existing ledger first (double
+    # startup, e.g. dev reload or tests pre-seeding app_state) so its
+    # aiosqlite worker thread is never orphaned.
     try:
+        _prior_ledger = getattr(app_state, "ledger", None)
+        if _prior_ledger is not None:
+            try:
+                await _prior_ledger.close()
+            except Exception:
+                pass
         app_state.ledger = DataLedger(app_state.config.ledger)
         await app_state.ledger.initialize()
         logger.info("Data ledger initialized")
@@ -1855,6 +1863,7 @@ async def lifespan(app: FastAPI):
                 access_log=False,
             )
             _canvas_server = _uvicorn.Server(_canvas_config)
+            app_state._canvas_server = _canvas_server
             await _canvas_server.serve()
         except OSError as _ose:
             logger.warning("⚠ Canvas auth-proxy port %d unavailable: %s", _canvas_port, _ose)
@@ -2111,13 +2120,16 @@ async def lifespan(app: FastAPI):
         app_state.dns_blocklist.stop()
         logger.info("DNSBlocklist periodic updates stopped")
 
-    # Stop Canvas auth-proxy
+    # Stop Canvas auth-proxy gracefully: a bare cancel() kills uvicorn's
+    # serve() before its socket-cleanup runs and leaks the listening socket.
     canvas_proxy_task = getattr(app_state, "_canvas_proxy_task", None)
     if canvas_proxy_task and not canvas_proxy_task.done():
-        canvas_proxy_task.cancel()
+        canvas_server = getattr(app_state, "_canvas_server", None)
+        if canvas_server is not None:
+            canvas_server.should_exit = True
         try:
-            await canvas_proxy_task
-        except asyncio.CancelledError:
+            await asyncio.wait_for(canvas_proxy_task, timeout=5)
+        except (asyncio.TimeoutError, asyncio.CancelledError):
             pass
 
     # Stop Hermes dashboard TCP forwarder
@@ -2153,6 +2165,14 @@ async def lifespan(app: FastAPI):
             logger.info("ResourceGuard monitor stopped")
         except Exception as exc:
             logger.warning("Failed to stop ResourceGuard: %s", exc)
+
+    # Close the module-level Telegram replay buffer (sqlite conn in main.py)
+    try:
+        from .main import _telegram_replay
+
+        _telegram_replay.close()
+    except Exception:
+        pass
 
     # Close SQLite-backed security modules so connections never leak on shutdown
     for _attr in ("trust_manager", "drift_detector"):

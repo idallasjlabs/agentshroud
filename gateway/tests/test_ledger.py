@@ -210,3 +210,23 @@ async def test_query_with_forwarded_to_filter(test_ledger):
 
     assert results.total >= 1
     assert all(entry.forwarded_to == "agent1" for entry in results.entries)
+
+
+@pytest.mark.asyncio
+async def test_initialize_is_idempotent(tmp_path):
+    """Re-initializing must not orphan the first aiosqlite connection.
+
+    aiosqlite connections are non-daemon threads; an orphaned one blocks
+    interpreter exit and trips the PytestUnraisableExceptionWarning gate."""
+    from pathlib import Path
+
+    from gateway.ingest_api.config import LedgerConfig
+    from gateway.ingest_api.ledger import DataLedger
+
+    ledger = DataLedger(LedgerConfig(backend="sqlite", path=tmp_path / "l.db", retention_days=1))
+    await ledger.initialize()
+    first_conn = ledger.db
+    assert first_conn is not None
+    await ledger.initialize()
+    assert ledger.db is first_conn
+    await ledger.close()
