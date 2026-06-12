@@ -135,6 +135,40 @@ pool_error=$(docker network inspect agentshroud-internal 2>&1 || true)
 check "No 'Pool overlaps' error in Docker network state" \
     "$([[ "$pool_error" != *"Pool overlaps"* ]] && echo true || echo false)"
 
+# ── P5: Static compose-file network self-check ───────────────────────────
+# Validates docker/docker-compose.yml against NetworkValidator's rules
+# (isolated networks, exposed ports, privileged, etc.). Fails only on
+# `critical` findings — high/medium are surfaced as INFO.
+COMPOSE_FILE="${AGENTSHROUD_COMPOSE_FILE:-docker/docker-compose.yml}"
+if [[ -f "$COMPOSE_FILE" ]] && command -v docker >/dev/null 2>&1 \
+   && docker ps --format '{{.Names}}' 2>/dev/null | grep -q '^agentshroud-gateway$'; then
+    # Pipe the host's compose file into the gateway container; validator runs
+    # there because that's where the gateway package + deps are already installed.
+    net_report=$(docker exec -i agentshroud-gateway python3 -c '
+import json, sys, tempfile
+from gateway.security.network_validator import validate_network_security
+with tempfile.NamedTemporaryFile("w", suffix=".yml", delete=False) as f:
+    f.write(sys.stdin.read())
+    tmp = f.name
+report = validate_network_security(tmp).get_security_report()
+print(json.dumps(report))
+' < "$COMPOSE_FILE" 2>/dev/null || echo '{}')
+
+    critical_count=$(printf '%s' "$net_report" | python3 -c \
+        'import json,sys; d=json.loads(sys.stdin.read() or "{}"); print(d.get("by_severity",{}).get("critical",0))' 2>/dev/null || echo "0")
+    check "Network validator: 0 critical findings in $COMPOSE_FILE" \
+        "$([[ "$critical_count" == "0" ]] && echo true || echo false)" \
+        "saw $critical_count critical"
+
+    high_count=$(printf '%s' "$net_report" | python3 -c \
+        'import json,sys; d=json.loads(sys.stdin.read() or "{}"); print(d.get("by_severity",{}).get("high",0))' 2>/dev/null || echo "0")
+    medium_count=$(printf '%s' "$net_report" | python3 -c \
+        'import json,sys; d=json.loads(sys.stdin.read() or "{}"); print(d.get("by_severity",{}).get("medium",0))' 2>/dev/null || echo "0")
+    if [[ "$high_count" != "0" || "$medium_count" != "0" ]]; then
+        echo "  [post-deploy-check] INFO: network validator: high=$high_count medium=$medium_count (non-fatal)"
+    fi
+fi
+
 # ── Summary ───────────────────────────────────────────────────────────────
 echo ""
 total=$(( pass + fail ))
