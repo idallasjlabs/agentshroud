@@ -549,6 +549,38 @@ class TestRealWorldScenarios:
             assert entity_types == {"US_SSN", "CREDIT_CARD", "EMAIL_ADDRESS"}
 
 
+class TestConfidenceFloor:
+    """CLAUDE.md §7.8 mandates a 0.9 minimum PII confidence — guard the floor.
+
+    The per-tool overrides previously sat at 0.7/0.8 (false-positive tuning);
+    the floor now applies to every override and the default. This test makes
+    any future lowering a CI failure instead of a silent policy regression.
+    """
+
+    FLOOR = 0.9
+
+    def test_default_pii_config_meets_floor(self):
+        assert PIIConfig().min_confidence >= self.FLOOR
+
+    def test_all_production_tool_overrides_meet_floor(self):
+        from gateway.ingest_api.config import GatewayConfig
+
+        tool_result_pii = GatewayConfig().tool_result_pii
+        overrides = tool_result_pii.get("tool_overrides", {})
+        assert overrides, "production tool_overrides must not be empty"
+        for tool, override in overrides.items():
+            assert override.get("min_confidence", 0) >= self.FLOOR, (
+                f"tool_result_pii override for '{tool}' is below the mandated "
+                f"{self.FLOOR} confidence floor (CLAUDE.md §7.8)"
+            )
+
+    def test_tool_result_config_default_meets_floor(self):
+        config = ToolResultPIIConfig()
+        assert config.default_config.min_confidence >= self.FLOOR
+        for tool in ("icloud", "email", "contacts", "web_search", "web_fetch", "browser"):
+            assert config.get_config_for_tool(tool).min_confidence >= self.FLOOR
+
+
 if __name__ == "__main__":
     # Run tests with: python3 -m pytest gateway/tests/test_tool_result_pii.py -v
     pytest.main(["-v", __file__])
