@@ -60,7 +60,8 @@ def trust_manager():
     # Deplete low_trust_agent score so delete_file is denied
     for _ in range(80):
         tm.record_violation("low_trust_agent", "test")
-    return tm
+    yield tm
+    tm.close()
 
 
 @pytest.fixture
