@@ -211,10 +211,16 @@ class ToolACLEnforcer:
     """
 
     def __init__(
-        self, acl_config: Optional[ToolACLConfig] = None, rbac_config: Optional["RBACConfig"] = None
+        self,
+        acl_config: Optional[ToolACLConfig] = None,
+        rbac_config: Optional["RBACConfig"] = None,
+        trust_manager=None,
     ):
         self._acl = acl_config or ToolACLConfig()
         self._rbac = rbac_config
+        # Optional TrustManager with a progressive trust ladder: consulted as an
+        # additional deny gate (deny wins) for tools the ladder knows about.
+        self._trust_manager = trust_manager
         # C35: sliding window call-time store  { user_id: { tool_name: [timestamps] } }
         self._tool_call_times: Dict[str, Dict[str, List[float]]] = {}
         # V9-2: per-user denial counter for SOC cross-signal correlation
@@ -234,6 +240,26 @@ class ToolACLEnforcer:
         # Owner: unrestricted
         if role_value == "owner":
             return True, "owner has unrestricted tool access"
+
+        # Progressive trust ladder: deny wins over any ACL allow below. The
+        # ladder only rules on identities it tracks and tools in its vocabulary
+        # (is_tool_allowed returns None otherwise), so unrelated tools and
+        # untracked users fall through to the role-based ACL unchanged.
+        if self._trust_manager is not None:
+            try:
+                verdict = self._trust_manager.is_tool_allowed(user_id, tool_lower)
+            except Exception:
+                verdict = None
+            if verdict is False:
+                reason = f"tool '{tool_name}' requires a higher trust level for {user_id}"
+                logger.warning(
+                    "ToolACL DENIED by trust ladder: user=%s role=%s tool=%s",
+                    user_id,
+                    role_value,
+                    tool_name,
+                )
+                self._denial_counts[user_id] = self._denial_counts.get(user_id, 0) + 1
+                return False, reason
 
         # Private tools: owner-only
         if tool_lower in self._acl.effective_private:
