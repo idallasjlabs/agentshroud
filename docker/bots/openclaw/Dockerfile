@@ -78,9 +78,9 @@ WORKDIR /app
 
 # Install OpenClaw from npm registry. Tracking @latest per owner decision
 # 2026-06-13 — rebuild bumps to whatever is current on npm at build time.
-RUN npm install -g openclaw@latest
-RUN node -e "console.log(require('openclaw/package.json').version)" > /app/.openclaw-image-version
-RUN npm cache clean --force
+RUN npm install -g openclaw@latest \
+ && cat "$(npm root -g)/openclaw/package.json" | node -e "process.stdout.write(JSON.parse(require('fs').readFileSync(0)).version)" > /app/.openclaw-image-version \
+ && npm cache clean --force
 # SECURITY: Route LLM API through AgentShroud gateway
 COPY docker/scripts/patch-anthropic-sdk.sh /usr/local/bin/patch-anthropic-sdk.sh
 RUN sh /usr/local/bin/patch-anthropic-sdk.sh
