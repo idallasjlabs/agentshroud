@@ -29,6 +29,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
       curl \
       ca-certificates \
       jq \
+      sqlite3 \
       xxd \
     && rm -rf /var/lib/apt/lists/*
 
