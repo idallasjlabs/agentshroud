@@ -20,6 +20,44 @@ logger = logging.getLogger("agentshroud.proxy.telegram_egress_notify")
 RISK_EMOJI = {"low": "🟢", "medium": "🟡", "high": "🔴", "unknown": "⚪"}
 
 
+# Stable-string fingerprints from Telegram Bot API 400 responses that mean
+# "the callback or message expired" — not a bug, log at DEBUG.
+_STALE_CALLBACK_PHRASES = (
+    "query is too old",
+    "query ID is invalid",
+    "QUERY_ID_INVALID",
+)
+_STALE_EDIT_PHRASES = (
+    "message to edit not found",
+    "message is too old",
+    "message can't be edited",
+    "MESSAGE_NOT_MODIFIED",
+)
+
+
+def _err_text(exc: BaseException) -> str:
+    """urllib HTTPError carries the response body on .read(); fall back to str."""
+    try:
+        from urllib.error import HTTPError
+
+        if isinstance(exc, HTTPError):
+            body = exc.read().decode("utf-8", errors="replace")
+            return body or str(exc)
+    except Exception:
+        pass
+    return str(exc)
+
+
+def _is_stale_callback_error(exc: BaseException) -> bool:
+    text = _err_text(exc)
+    return any(p in text for p in _STALE_CALLBACK_PHRASES)
+
+
+def _is_stale_edit_error(exc: BaseException) -> bool:
+    text = _err_text(exc)
+    return any(p in text for p in _STALE_EDIT_PHRASES)
+
+
 class EgressTelegramNotifier:
     """Sends Telegram inline keyboard notifications for egress approval.
 
@@ -229,6 +267,10 @@ class EgressTelegramNotifier:
 
         Pass ``token`` (from handle_callback result["notify_token"]) to ensure
         the response uses the same bot that sent the original notification.
+
+        Callback queries expire after Telegram's TTL (~60 minutes); pressing
+        an old button raises HTTP 400 "query is too old". That's expected,
+        not a bug — log at DEBUG and return False quietly.
         """
         try:
             result = await self._async_send(
@@ -242,7 +284,10 @@ class EgressTelegramNotifier:
             )
             return result.get("ok", False)
         except Exception as e:
-            logger.error(f"Failed to answer callback: {e}")
+            if _is_stale_callback_error(e):
+                logger.debug("answer_callback skipped — callback_query expired (TTL hit): %s", e)
+            else:
+                logger.error(f"Failed to answer callback: {e}")
             return False
 
     async def edit_decision_message(
@@ -253,6 +298,9 @@ class EgressTelegramNotifier:
         Removes the buttons and shows the outcome so it's visible in chat history.
         Pass ``token`` (from handle_callback result["notify_token"]) to ensure
         the edit uses the same bot that sent the original notification.
+
+        The message can be too old (>48h) or already edited; both raise
+        HTTP 400 with a known Telegram error string. Log at DEBUG, not ERROR.
         """
         try:
             result = await self._async_send(
@@ -267,7 +315,13 @@ class EgressTelegramNotifier:
             )
             return result.get("ok", False)
         except Exception as e:
-            logger.error(f"Failed to edit egress decision message: {e}")
+            if _is_stale_edit_error(e):
+                logger.debug(
+                    "edit_decision_message skipped — message too old or already edited: %s",
+                    e,
+                )
+            else:
+                logger.error(f"Failed to edit egress decision message: {e}")
             return False
 
     def cleanup_expired(self, max_age_seconds: int = 300) -> int:
