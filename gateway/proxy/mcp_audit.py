@@ -15,6 +15,7 @@ import hashlib
 import logging
 import time
 import uuid
+from collections import deque
 from dataclasses import dataclass
 from typing import Any, Optional
 
@@ -58,8 +59,11 @@ class MCPAuditTrail:
 
     MAX_PENDING_CALLS = 1000  # Prevent unbounded growth
 
-    def __init__(self):
-        self._entries: list[MCPAuditEntry] = []
+    def __init__(self, max_entries: int = 10_000):
+        # Bounded in-memory window; older entries roll off (counts preserved
+        # via _total_appended for reporting).
+        self._entries: deque[MCPAuditEntry] = deque(maxlen=max_entries)
+        self._total_appended: int = 0
         self._last_hash: str = self.GENESIS_HASH
         self._call_start_times: dict[str, float] = {}
 
@@ -126,6 +130,7 @@ class MCPAuditTrail:
         )
 
         self._entries.append(entry)
+        self._total_appended += 1
         self._last_hash = chain_hash
         self.start_call(entry_id)
 
@@ -182,6 +187,7 @@ class MCPAuditTrail:
         )
 
         self._entries.append(entry)
+        self._total_appended += 1
         self._last_hash = chain_hash
 
         logger.info(
@@ -195,11 +201,21 @@ class MCPAuditTrail:
         return entry
 
     def verify_chain(self) -> tuple[bool, str]:
-        """Verify integrity of the MCP audit hash chain."""
+        """Verify integrity of the retained MCP audit hash-chain window.
+
+        Anchors at the first retained entry's previous_hash once the bounded
+        window has wrapped; an unwrapped chain must anchor at genesis."""
         if not self._entries:
             return True, "Empty chain"
 
-        prev_hash = self.GENESIS_HASH
+        first = next(iter(self._entries))
+        wrapped = self._total_appended > len(self._entries)
+        if not wrapped and first.previous_hash != self.GENESIS_HASH:
+            return (
+                False,
+                f"Entry 0 ({first.id}): anchor mismatch (unwrapped chain must anchor at genesis)",
+            )
+        prev_hash = first.previous_hash
         for i, entry in enumerate(self._entries):
             if entry.previous_hash != prev_hash:
                 return False, f"Entry {i} ({entry.id}): previous_hash mismatch"
@@ -218,7 +234,7 @@ class MCPAuditTrail:
 
             prev_hash = entry.chain_hash
 
-        return True, f"Chain valid ({len(self._entries)} entries)"
+        return True, f"Chain valid ({len(self._entries)} entries, {self._total_appended} total)"
 
     @property
     def entries(self) -> list[MCPAuditEntry]:
@@ -227,6 +243,10 @@ class MCPAuditTrail:
     @property
     def last_hash(self) -> str:
         return self._last_hash
+
+    @property
+    def total_appended(self) -> int:
+        return self._total_appended
 
     def __len__(self) -> int:
         return len(self._entries)
@@ -265,7 +285,8 @@ class MCPAuditTrail:
         valid, msg = self.verify_chain()
 
         return {
-            "total_entries": len(self._entries),
+            "total_entries": self._total_appended,
+            "window_entries": len(self._entries),
             "tool_calls": len(tool_calls),
             "tool_results": len(tool_results),
             "blocked": len(blocked),
