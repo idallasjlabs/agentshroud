@@ -25,8 +25,8 @@ echo "── Hermes cron HTML email assertions ───────────
 check "jobs.yaml: competitive email message includes --html flag" \
     "docker/config/hermes/cron/jobs.yaml" "\-\-html"
 
-check "jobs.yaml: competitive email message includes --body flag" \
-    "docker/config/hermes/cron/jobs.yaml" "\-\-body"
+check "jobs.yaml: competitive email message uses --body-file (argv-safe large HTML)" \
+    "docker/config/hermes/cron/jobs.yaml" "\-\-body-file /tmp/competitive-email.html"
 
 check "jobs.yaml: competitive email message mentions inline CSS" \
     "docker/config/hermes/cron/jobs.yaml" "inline CSS\|inline styles"
@@ -34,8 +34,11 @@ check "jobs.yaml: competitive email message mentions inline CSS" \
 check "init-config.sh: competitive email cron create includes --html" \
     "docker/bots/hermes/init-config.sh" "\-\-html"
 
-check "init-config.sh: competitive email cron create includes --body" \
-    "docker/bots/hermes/init-config.sh" "\-\-body"
+check "init-config.sh: competitive email cron create uses --body-file" \
+    "docker/bots/hermes/init-config.sh" "\-\-body-file /tmp/competitive-email.html"
+
+check "email_helper.sh: supports --body-file option" \
+    "docker/bots/hermes/email_helper.sh" "\-\-body-file"
 
 # Stamp-file gating was removed (PR #148): it caused cron job triplication on
 # every version bump. Seeding is now idempotent via delete-then-create.

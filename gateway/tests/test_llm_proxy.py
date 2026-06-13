@@ -610,4 +610,10 @@ def test_is_connect_error_classification():
     assert LLMProxy._is_connect_error(ConnectionResetError())
     assert LLMProxy._is_connect_error(urllib.error.URLError(ConnectionRefusedError()))
     assert not LLMProxy._is_connect_error(ValueError("nope"))
-    assert not LLMProxy._is_connect_error(urllib.error.HTTPError("http://x", 500, "err", {}, None))
+    # HTTPError wraps a file object — close it or its GC finalizer trips the
+    # ResourceWarning gate in pytest.ini
+    http_err = urllib.error.HTTPError("http://x", 500, "err", {}, None)
+    try:
+        assert not LLMProxy._is_connect_error(http_err)
+    finally:
+        http_err.close()

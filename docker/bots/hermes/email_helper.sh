@@ -10,6 +10,13 @@
 # Usage:
 #   agentshroud-email-send.sh --subject "Subject line" --body "Body text"
 #   agentshroud-email-send.sh --subject "Subject line" --body "HTML content" --html
+#   agentshroud-email-send.sh --subject "Subject line" --body-file /tmp/report.html --html
+#
+# --body-file reads the body from a file, bypassing shell-argv limits and
+# quoting fragility for large multi-line HTML payloads.
+#
+# --body-file reads the body from a file, bypassing shell argv entirely —
+# required for large multi-line HTML bodies (argv length/quoting limits).
 #
 # Exit codes:
 #   0 — gateway accepted (2xx)
@@ -28,14 +35,16 @@ set -eu
 
 _subject=""
 _body=""
+_body_file=""
 _is_html="false"
 _gw_url="${GATEWAY_OP_PROXY_URL:-http://gateway:8080}"
 
 while [ "$#" -gt 0 ]; do
     case "$1" in
-        --subject) _subject="$2"; shift 2 ;;
-        --body)    _body="$2";    shift 2 ;;
-        --html)    _is_html="true"; shift ;;
+        --subject)   _subject="$2";   shift 2 ;;
+        --body)      _body="$2";      shift 2 ;;
+        --body-file) _body_file="$2"; shift 2 ;;
+        --html)      _is_html="true"; shift ;;
         *)
             echo "[email-send] Unknown argument: $1" >&2
             exit 1
@@ -43,18 +52,31 @@ while [ "$#" -gt 0 ]; do
     esac
 done
 
-if [ -z "${_subject}" ] || [ -z "${_body}" ]; then
-    echo "[email-send] ERROR: --subject and --body are required" >&2
+if [ -z "${_subject}" ]; then
+    echo "[email-send] ERROR: --subject is required" >&2
+    exit 1
+fi
+if [ -z "${_body}" ] && [ -z "${_body_file}" ]; then
+    echo "[email-send] ERROR: --body or --body-file is required" >&2
+    exit 1
+fi
+if [ -n "${_body_file}" ] && [ ! -r "${_body_file}" ]; then
+    echo "[email-send] ERROR: --body-file not readable: ${_body_file}" >&2
     exit 1
 fi
 
 # Build the JSON payload with python3 — multi-line HTML bodies contain literal
 # newlines, which are illegal in JSON strings (sed escaping caused gateway 422s).
+# --body-file bodies are read inside python, never touching shell argv.
 _payload_file="/tmp/.email-send-payload.$$"
-python3 - "${_subject}" "${_body}" "${_is_html}" > "${_payload_file}" <<'PYEOF'
+python3 - "${_subject}" "${_body}" "${_is_html}" "${_body_file}" > "${_payload_file}" <<'PYEOF'
 import json, sys
+subject, body, is_html, body_file = sys.argv[1:5]
+if body_file:
+    with open(body_file, encoding="utf-8", errors="replace") as f:
+        body = f.read()
 json.dump(
-    {"subject": sys.argv[1], "body": sys.argv[2], "is_html": sys.argv[3] == "true"},
+    {"subject": subject, "body": body, "is_html": is_html == "true"},
     sys.stdout,
 )
 PYEOF

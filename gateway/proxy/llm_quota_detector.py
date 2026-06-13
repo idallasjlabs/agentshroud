@@ -122,3 +122,37 @@ def is_quota_exhausted(status: int, body: bytes) -> tuple[bool, str]:
     if _is_google_quota(status, body):
         return True, "google_quota"
     return False, ""
+
+
+# ---------------------------------------------------------------------------
+# Overloaded detection — capacity errors that warrant cloud→local failover.
+# Anthropic can return HTTP 200 with an error envelope in the body, which
+# bypasses all status-code-based handling (observed 2026-06-11: cron jobs
+# died on "HTTP 200: Overloaded" after 3 client retries).
+# ---------------------------------------------------------------------------
+
+_OVERLOADED_STATUSES = (200, 503, 529)
+
+
+def is_overloaded(status: int, body: bytes) -> tuple[bool, str]:
+    """Return (True, "anthropic_overloaded") for an overloaded_error envelope.
+
+    Only claims statuses outside is_quota_exhausted's domain (429/402 are
+    quota territory). The error envelope is compact, so a fast substring
+    check on the body head avoids JSON-parsing large legitimate responses;
+    a full parse then confirms error.type to avoid content false-positives.
+    """
+    if status not in _OVERLOADED_STATUSES or not body:
+        return False, ""
+    if b"overloaded_error" not in body[:2048]:
+        return False, ""
+    try:
+        parsed = json.loads(body.decode("utf-8", errors="replace"))
+    except json.JSONDecodeError:
+        return False, ""
+    if not isinstance(parsed, dict):
+        return False, ""
+    err = parsed.get("error")
+    if isinstance(err, dict) and err.get("type") == "overloaded_error":
+        return True, "anthropic_overloaded"
+    return False, ""
