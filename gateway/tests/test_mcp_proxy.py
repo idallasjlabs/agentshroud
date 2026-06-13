@@ -348,6 +348,48 @@ class TestAuditTrail:
         assert entry.pii_redacted
 
 
+class TestAuditTrailBounded:
+    """In-memory MCP audit window must be bounded (mirrors AuditChain)."""
+
+    def test_window_capped_at_max_entries(self):
+        trail = MCPAuditTrail(max_entries=50)
+        for i in range(120):
+            trail.log_tool_call("a", "s", f"tool-{i}", {})
+        assert len(trail) == 50
+        assert len(trail.entries) == 50
+        assert trail.total_appended == 120
+        assert trail.entries[0].tool_name == "tool-70"
+        assert trail.entries[-1].tool_name == "tool-119"
+
+    def test_verify_chain_valid_after_wrap(self):
+        trail = MCPAuditTrail(max_entries=50)
+        for i in range(120):
+            trail.log_tool_call("a", "s", f"tool-{i}", {})
+        valid, msg = trail.verify_chain()
+        assert valid, msg
+
+    def test_tamper_in_retained_window_detected(self):
+        trail = MCPAuditTrail(max_entries=50)
+        for i in range(120):
+            trail.log_tool_call("a", "s", f"tool-{i}", {})
+        trail._entries[10].content_hash = "tampered"
+        valid, msg = trail.verify_chain()
+        assert not valid
+        assert "mismatch" in msg.lower()
+
+    def test_report_total_reflects_all_appended(self):
+        trail = MCPAuditTrail(max_entries=50)
+        for i in range(120):
+            trail.log_tool_call("a", "s", f"tool-{i}", {})
+        report = trail.generate_report()
+        assert report["total_entries"] == 120
+        assert report["chain_valid"] is True
+
+    def test_default_window_is_10k(self):
+        trail = MCPAuditTrail()
+        assert trail._entries.maxlen == 10_000
+
+
 # ============================================================
 # MCPAuditTrail -- Queries and Reports
 # ============================================================
