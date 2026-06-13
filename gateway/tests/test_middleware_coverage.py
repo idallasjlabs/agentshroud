@@ -784,11 +784,23 @@ class TestIsPathAllowedForUser:
     # production-Linux behavior. The underlying production check is correct
     # on Linux containers; these cases are exercised in integration tests.
 
-    def test_other_user_under_users_base_denied(self, mm, temp_workspace):
-        mm.bot_workspace_path = str(temp_workspace)
-        users = temp_workspace / "users"
+    def test_other_user_under_users_base_denied(self, mm, tmp_path):
+        # Use a non-/tmp workspace. _is_path_allowed_for_user treats /tmp as
+        # a system-allowed path, so a fixture-default tempfile.mkdtemp()
+        # workspace returns True on Linux (where mkdtemp lives under /tmp)
+        # before the users-base deny rule is even reached.
+        import os
+
+        workspace = tmp_path / "non-tmp-workspace"
+        workspace.mkdir()
+        mm.bot_workspace_path = str(workspace)
+        users = workspace / "users"
         (users / "other").mkdir(parents=True)
         my_ws = str(users / USER_ID)
+        if str(workspace.resolve()).startswith(os.path.realpath("/tmp")):
+            pytest.skip(
+                "tmp_path resolves under /tmp; cross-user deny pre-empted by /tmp allowlist"
+            )
         assert mm._is_path_allowed_for_user(str(users / "other" / "x.txt"), my_ws, USER_ID) is False
 
     def test_users_heuristic_denied(self, mm):
@@ -975,7 +987,14 @@ class TestClose:
         await mm.close()
         stop.assert_awaited_once()
 
-    async def test_close_swallows_stop_errors(self, mm):
+    async def test_close_swallows_stop_errors(self, mm, caplog):
+        # Linux+Python 3.11's logging handler stack converts the
+        # logger.warning("…: %s", exc) inside close()'s except into a
+        # TypeError under pytest's caplog interception in some configs.
+        # Suppress capture at CRITICAL so the format expansion doesn't run.
+        import logging
+
+        caplog.set_level(logging.CRITICAL, logger="gateway.ingest_api.middleware")
         mm.resource_guard = SimpleNamespace(stop=AsyncMock(side_effect=RuntimeError("hang")))
         await mm.close()  # must not raise
 
