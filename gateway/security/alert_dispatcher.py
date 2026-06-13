@@ -127,42 +127,69 @@ class AlertDispatcher:
         except OSError as e:
             logger.error("Failed to log alert: %s", e)
 
+    # Retry policy for _send_notification. Errors topped the gateway log at
+    # 14/wk before this — usually transient timeouts hitting localhost while
+    # the event loop is busy. Three attempts with exponential backoff covers
+    # the common cases; the alert is already persisted to alert_log so a
+    # final failure is non-fatal — log at WARNING, not ERROR.
+    _NOTIFY_MAX_ATTEMPTS = 3
+    _NOTIFY_TIMEOUT_SECONDS = 20
+    _NOTIFY_BACKOFF_SECONDS = (1.0, 3.0)  # delays before attempt 2, 3
+
     def _send_notification(self, alert: dict[str, Any]) -> bool:
-        """Send immediate notification via gateway API.
+        """POST alert to /api/alerts with bounded retry + backoff.
 
-        Args:
-            alert: Alert dict.
-
-        Returns:
-            True if notification sent successfully.
+        Returns True on first success, False if all attempts failed (the alert
+        is still persisted to alert_log, so dropping a notification only
+        affects realtime surfacing).
         """
-        try:
-            import urllib.error
-            import urllib.request
+        import urllib.error
+        import urllib.request
 
-            payload = json.dumps(
-                {
-                    "type": "security_alert",
-                    "severity": alert.get("severity", "UNKNOWN"),
-                    "tool": alert.get("tool", "unknown"),
-                    "message": self._format_alert_message(alert),
-                    "alert_id": alert.get("id", ""),
-                    "timestamp": datetime.now(timezone.utc).isoformat(),
-                }
-            ).encode()
+        payload = json.dumps(
+            {
+                "type": "security_alert",
+                "severity": alert.get("severity", "UNKNOWN"),
+                "tool": alert.get("tool", "unknown"),
+                "message": self._format_alert_message(alert),
+                "alert_id": alert.get("id", ""),
+                "timestamp": datetime.now(timezone.utc).isoformat(),
+            }
+        ).encode()
 
-            req = urllib.request.Request(
-                f"{self.gateway_url}/api/alerts",
-                data=payload,
-                headers={"Content-Type": "application/json"},
-                method="POST",
-            )
-            urllib.request.urlopen(req, timeout=10)
-            logger.info("Alert notification sent: %s", alert.get("id", ""))
-            return True
-        except Exception as e:
-            logger.error("Failed to send alert notification: %s", e)
-            return False
+        last_exc: Exception | None = None
+        for attempt in range(1, self._NOTIFY_MAX_ATTEMPTS + 1):
+            try:
+                req = urllib.request.Request(
+                    f"{self.gateway_url}/api/alerts",
+                    data=payload,
+                    headers={"Content-Type": "application/json"},
+                    method="POST",
+                )
+                urllib.request.urlopen(req, timeout=self._NOTIFY_TIMEOUT_SECONDS)
+                logger.info("Alert notification sent: %s", alert.get("id", ""))
+                return True
+            except Exception as e:
+                last_exc = e
+                if attempt < self._NOTIFY_MAX_ATTEMPTS:
+                    delay = self._NOTIFY_BACKOFF_SECONDS[attempt - 1]
+                    logger.debug(
+                        "Alert notification attempt %d/%d failed (%s) — retrying in %.1fs",
+                        attempt,
+                        self._NOTIFY_MAX_ATTEMPTS,
+                        e,
+                        delay,
+                    )
+                    time.sleep(delay)
+        # All attempts failed. The alert is still in alert_log; surface at
+        # WARNING (not ERROR) so the log is not noisy when the receiver is
+        # transiently unavailable.
+        logger.warning(
+            "Alert notification failed after %d attempts (alert_log retains it): %s",
+            self._NOTIFY_MAX_ATTEMPTS,
+            last_exc,
+        )
+        return False
 
     def _format_alert_message(self, alert: dict[str, Any]) -> str:
         """Format alert as human-readable message."""
