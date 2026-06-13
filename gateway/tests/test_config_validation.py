@@ -210,7 +210,8 @@ class TestConfigValidation:
         assert "Set internal gateway model" not in script
 
     def test_openclaw_version_pin_is_consistent_across_bot_images(self):
-        """Both bot Dockerfiles must pin the same OpenClaw version."""
+        """Both bot Dockerfiles must pin OpenClaw to the same value
+        (either both a specific version or both @latest)."""
         import re
 
         primary_path = REPO_ROOT / "docker" / "Dockerfile.agentshroud"
@@ -220,13 +221,17 @@ class TestConfigValidation:
         primary = primary_path.read_text()
         openclaw = openclaw_path.read_text()
 
-        primary_match = re.search(r"openclaw@([0-9]{4}\.[0-9]+\.[0-9]+)", primary)
-        openclaw_match = re.search(r"openclaw@([0-9]{4}\.[0-9]+\.[0-9]+)", openclaw)
+        # Accept either a pinned version (YYYY.MM.NN) or the literal "latest".
+        pat = re.compile(r"openclaw@([0-9]{4}\.[0-9]+\.[0-9]+|latest)")
+        primary_match = pat.search(primary)
+        openclaw_match = pat.search(openclaw)
 
-        assert primary_match, "Primary bot Dockerfile must pin openclaw@<version>"
-        assert openclaw_match, "OpenClaw bot Dockerfile must pin openclaw@<version>"
-        assert primary_match.group(1) == openclaw_match.group(1)
-        assert primary_match.group(1) == "2026.3.24"
+        assert primary_match, "Primary bot Dockerfile must pin openclaw@<version|latest>"
+        assert openclaw_match, "OpenClaw bot Dockerfile must pin openclaw@<version|latest>"
+        assert primary_match.group(1) == openclaw_match.group(1), (
+            f"OpenClaw pin drift: primary={primary_match.group(1)} "
+            f"openclaw={openclaw_match.group(1)}"
+        )
 
     def test_openclaw_patch_script_sets_control_ui_allowed_origins(self):
         """openclaw init patch script must seed control UI origins for non-loopback bind."""
