@@ -48,8 +48,11 @@ def client():
         mock_state.llm_proxy.proxy_messages = AsyncMock(
             return_value=(502, {"content-type": "text/plain"}, b"unused upstream")
         )
-        with TestClient(app) as c:
-            yield c
+        # Do NOT use `with TestClient(app)`: that triggers the FastAPI
+        # lifespan, which calls load_config() and fails on CI where
+        # agentshroud.yaml is gitignored. Direct instantiation skips the
+        # lifespan; we only need request routing for these tests.
+        yield TestClient(app)
 
 
 @pytest.mark.parametrize(
