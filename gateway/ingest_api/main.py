@@ -4071,6 +4071,22 @@ async def llm_api_proxy(request: Request, path: str):
     else:
         raise HTTPException(status_code=403, detail="Forbidden")
 
+    # Hermes v0.16.0+ preflights GET /v1/models/<id> before each /v1/messages
+    # call. The OAuth token (sk-ant-oat01-…) we use as ANTHROPIC_API_KEY works
+    # for /v1/messages but Anthropic rejects it for the model-metadata route,
+    # so the preflight returned 400/401 and hermes raised AssertionError.
+    # Synthesize a 200 response from a known model name so the preflight
+    # always succeeds without round-tripping.
+    if request.method == "GET" and path.startswith("models/"):
+        model_id = path[len("models/") :]
+        synthetic = {
+            "type": "model",
+            "id": model_id,
+            "display_name": model_id,
+            "created_at": datetime.now(timezone.utc).isoformat().replace("+00:00", "Z"),
+        }
+        return JSONResponse(content=synthetic)
+
     llm_proxy = getattr(app_state, "llm_proxy", None)
     if not llm_proxy:
         raise HTTPException(status_code=503, detail="LLM proxy not available")
