@@ -16,6 +16,7 @@ import json
 import logging
 import random
 import string
+import time
 
 logger = logging.getLogger("agentshroud.proxy.anthropic_openai_translator")
 
@@ -222,6 +223,109 @@ def anthropic_to_openai_request(body: dict, target_model: str) -> dict:
             openai_req["tool_choice"] = "auto"
 
     return openai_req
+
+
+# ---------------------------------------------------------------------------
+# Request: OpenAI → Anthropic  (hermes v0.16.0 sends /chat/completions for Claude)
+# ---------------------------------------------------------------------------
+
+
+def openai_to_anthropic_request(body: dict, target_model: str | None = None) -> dict:
+    """Translate an OpenAI /v1/chat/completions request body to Anthropic /v1/messages.
+
+    Minimal coverage for hermes v0.16.0 cron jobs (text-only, no tools, no
+    streaming SSE — buffered responses only).  Strips the OpenAI "system"
+    role messages out of the messages array and puts the joined text in
+    Anthropic's top-level `system` field.
+    """
+    out: dict = {
+        "model": target_model or body.get("model", ""),
+        "max_tokens": body.get("max_tokens", 1024),
+    }
+    if "temperature" in body:
+        out["temperature"] = body["temperature"]
+    if "top_p" in body:
+        out["top_p"] = body["top_p"]
+    if "stop" in body and body["stop"]:
+        out["stop_sequences"] = (
+            [body["stop"]] if isinstance(body["stop"], str) else list(body["stop"])
+        )
+    system_parts: list[str] = []
+    messages: list[dict] = []
+    for m in body.get("messages", []) or []:
+        role = m.get("role")
+        content = m.get("content", "")
+        if role == "system":
+            if isinstance(content, str):
+                system_parts.append(content)
+            elif isinstance(content, list):
+                for c in content:
+                    if isinstance(c, dict) and c.get("type") == "text":
+                        system_parts.append(c.get("text", ""))
+            continue
+        if role not in ("user", "assistant"):
+            continue
+        if isinstance(content, list):
+            messages.append({"role": role, "content": content})
+        else:
+            messages.append({"role": role, "content": str(content)})
+    if system_parts:
+        out["system"] = "\n\n".join(p for p in system_parts if p)
+    out["messages"] = messages
+    return out
+
+
+# ---------------------------------------------------------------------------
+# Response: Anthropic → OpenAI  (hermes's OpenAI client expects this shape)
+# ---------------------------------------------------------------------------
+
+
+def anthropic_to_openai_response(anthropic_resp: dict, original_model: str | None = None) -> dict:
+    """Anthropic /v1/messages response → OpenAI /v1/chat/completions envelope."""
+    content_blocks = anthropic_resp.get("content", []) or []
+    text_parts = [
+        b.get("text", "") for b in content_blocks if isinstance(b, dict) and b.get("type") == "text"
+    ]
+    tool_calls = [
+        {
+            "id": b.get("id") or f"call_{_random_msg_id()}",
+            "type": "function",
+            "function": {
+                "name": b.get("name", ""),
+                "arguments": json.dumps(b.get("input", {})),
+            },
+        }
+        for b in content_blocks
+        if isinstance(b, dict) and b.get("type") == "tool_use"
+    ]
+    message: dict = {"role": "assistant", "content": "\n".join(text_parts)}
+    if tool_calls:
+        message["tool_calls"] = tool_calls
+    usage = anthropic_resp.get("usage", {}) or {}
+    stop_map = {
+        "end_turn": "stop",
+        "max_tokens": "length",
+        "stop_sequence": "stop",
+        "tool_use": "tool_calls",
+    }
+    return {
+        "id": anthropic_resp.get("id") or f"chatcmpl_{_random_msg_id()}",
+        "object": "chat.completion",
+        "created": int(time.time()),
+        "model": original_model or anthropic_resp.get("model", ""),
+        "choices": [
+            {
+                "index": 0,
+                "message": message,
+                "finish_reason": stop_map.get(anthropic_resp.get("stop_reason") or "", "stop"),
+            }
+        ],
+        "usage": {
+            "prompt_tokens": usage.get("input_tokens", 0),
+            "completion_tokens": usage.get("output_tokens", 0),
+            "total_tokens": usage.get("input_tokens", 0) + usage.get("output_tokens", 0),
+        },
+    }
 
 
 # ---------------------------------------------------------------------------
