@@ -607,8 +607,6 @@ class LLMProxy:
         _forward_request so OpenClaw's 60-second HTTP fetch timeout is not
         triggered while waiting for the first response byte from a slow model.
         """
-        import httpx
-
         self._stats["total_requests"] += 1
 
         request_data = None
@@ -683,7 +681,6 @@ class LLMProxy:
             import httpx as _httpx
 
             collected_status: list[int] = []
-            collected_body: list[bytes] = []
 
             try:
                 async with _httpx.AsyncClient(

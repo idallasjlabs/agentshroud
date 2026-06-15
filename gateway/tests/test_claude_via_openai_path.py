@@ -15,8 +15,7 @@ from __future__ import annotations
 
 import builtins
 import json
-from contextlib import contextmanager
-from unittest.mock import mock_open, patch
+from unittest.mock import mock_open
 
 import pytest
 
