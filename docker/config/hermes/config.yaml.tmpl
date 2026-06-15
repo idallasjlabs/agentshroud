@@ -22,6 +22,16 @@ model:
   provider: "anthropic"
 
 # =============================================================================
+# Web Search Configuration
+# =============================================================================
+# Default to DuckDuckGo (keyless) so the competitive cron can still verify
+# sources when no Parallel/Brave/Tavily API key is configured. Override to
+# 'brave-free', 'tavily', or 'parallel' here when a key is provisioned.
+web:
+  search_backend: "ddgs"
+  extract_backend: ""
+
+# =============================================================================
 # Terminal Tool Configuration
 # =============================================================================
 terminal:

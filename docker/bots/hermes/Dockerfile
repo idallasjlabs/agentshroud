@@ -33,6 +33,13 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
       xxd \
     && rm -rf /var/lib/apt/lists/*
 
+# Pre-install ddgs (DuckDuckGo HTML scraper) into the hermes venv so the keyless
+# web_search backend is available at first boot. Without it the cron's verify-
+# every-claim contract degrades to "no sources" the first time the cloud LLM
+# quota is exhausted and failover routes to local LM Studio. uv is part of the
+# upstream image; installing into the venv keeps the system Python clean.
+RUN /usr/local/bin/uv pip install --python /opt/hermes/.venv/bin/python3 ddgs==9.14.4
+
 # Give s6 15s grace before SIGKILL so the TERM trap can release the Telegram
 # long-poll lock and wait up to 8s for the asyncio daemon to exit cleanly.
 # Default is 5000ms which cuts the trap short before lock release completes.
