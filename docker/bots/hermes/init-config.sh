@@ -26,6 +26,13 @@ if [ ! -f "${DATA_DIR}/config.yaml" ]; then
 elif ! grep -q "telegram-api/bot" "${DATA_DIR}/config.yaml" 2>/dev/null; then
     cp "${DEFAULTS_DIR}/config.yaml.tmpl" "${DATA_DIR}/config.yaml"
     echo "[hermes-init] Upgraded config.yaml: added telegram.extra.base_url for AgentShroud gateway routing"
+elif grep -q 'claude-opus-4\.[0-9]' "${DATA_DIR}/config.yaml" 2>/dev/null; then
+    # Migration: old template had "claude-opus-4.6" (dot) which Anthropic 404s with
+    # "Did you mean claude-opus-4-6?". Rewrite in-place to the current valid name
+    # from the template without destroying user-edited fields elsewhere.
+    sed -i.bak -E 's|claude-opus-4\.[0-9]+|claude-opus-4-7|g' "${DATA_DIR}/config.yaml"
+    rm -f "${DATA_DIR}/config.yaml.bak"
+    echo "[hermes-init] Migrated config.yaml: invalid 'claude-opus-4.X' model name → claude-opus-4-7"
 else
     echo "[hermes-init] config.yaml already exists and is current — skipping"
 fi
