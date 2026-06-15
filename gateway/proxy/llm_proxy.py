@@ -25,6 +25,8 @@ from typing import Any
 from gateway.proxy.anthropic_openai_sse_translator import translate_openai_sse_to_anthropic
 from gateway.proxy.anthropic_openai_translator import (
     anthropic_to_openai_request,
+    anthropic_to_openai_response,
+    openai_to_anthropic_request,
     openai_to_anthropic_response,
 )
 from gateway.proxy.gemini_openai_translator import (
@@ -384,6 +386,49 @@ class LLMProxy:
 
         # Detect local model (Ollama, LM Studio, or mlx_lm)
         model_name = request_data.get("model", "") if request_data else ""
+
+        # Hermes v0.16.0+ routes ALL provider calls through its OpenAI client,
+        # so a request for a Claude model arrives at /v1/chat/completions
+        # with auth=`Bearer None` (hermes's empty api_key turned into a
+        # literal "None" string).  Forwarding upstream to OpenAI fails with
+        # 401 "no API key", killing competitive-intel cron jobs.
+        #
+        # When we detect this combo: rewrite path to /v1/messages, translate
+        # the OpenAI body to Anthropic shape, substitute Authorization with
+        # the gateway's own Anthropic key from /run/secrets/, translate the
+        # response back to OpenAI shape on the way out.
+        _claude_translation = False
+        _original_model_name = model_name
+        if is_openai and model_name and "claude" in model_name.lower() and request_data:
+            try:
+                anth_body = openai_to_anthropic_request(request_data, target_model=model_name)
+                body = json.dumps(anth_body).encode()
+                request_data = anth_body
+                path = "/v1/messages"
+                is_openai = False
+                _claude_translation = True
+                # Substitute Authorization with the gateway-side Anthropic
+                # token.  Keep the original headers untouched otherwise.
+                headers = dict(headers)
+                try:
+                    with open("/run/secrets/anthropic_oauth_token") as _f:
+                        _gw_anthropic_key = _f.read().strip()
+                except Exception:
+                    _gw_anthropic_key = ""
+                if _gw_anthropic_key:
+                    headers["x-api-key"] = _gw_anthropic_key
+                    headers["anthropic-version"] = "2023-06-01"
+                    # Strip the broken Bearer header
+                    headers.pop("authorization", None)
+                    headers.pop("Authorization", None)
+                logger.info(
+                    "Claude-via-OpenAI-path: rewrote /v1/chat/completions → /v1/messages "
+                    "for model %s",
+                    model_name,
+                )
+            except Exception as e:
+                logger.warning("Claude-via-OpenAI-path translation failed: %s", e)
+                _claude_translation = False
         local_keywords = [
             "qwen",
             "llama",
@@ -525,6 +570,17 @@ class LLMProxy:
                         if _no_translator:
                             self._emit_failover_notice(quota_token, translated=False)
                     # Fall through → return original cloud 429
+
+        # Translate Anthropic response → OpenAI shape if we did the inbound flip
+        if _claude_translation and status == 200 and resp_body:
+            try:
+                anth_resp = json.loads(resp_body)
+                resp_body = json.dumps(
+                    anthropic_to_openai_response(anth_resp, original_model=_original_model_name)
+                ).encode()
+                resp_headers = {**resp_headers, "content-type": "application/json"}
+            except Exception as e:
+                logger.warning("Claude→OpenAI response translation failed: %s", e)
 
         # === OUTBOUND FILTERING ===
         if not is_streaming and status == 200 and resp_body:
