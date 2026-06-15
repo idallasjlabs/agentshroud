@@ -4052,6 +4052,24 @@ async def get_soc2_compliance_report(auth: AuthRequired):
 
 
 @app.api_route(
+    "/chat/{path:path}",
+    methods=["GET", "POST"],
+    include_in_schema=False,
+)
+async def llm_openai_chat_alias(request: Request, path: str):
+    """Alias for hermes v0.16.0+'s OpenAI client.
+
+    Hermes upgraded to v0.16.0 on 2026-06-13 and began sending requests to
+    `/chat/completions` (no `/v1` prefix) because its OpenAI client was
+    configured with OPENAI_BASE_URL=http://gateway:8080. The 404 propagated
+    as AssertionError, killing competitive-intel cron jobs for 3 days
+    (2026-06-13/14/15). Route the request to the canonical v1 proxy below
+    so the security pipeline runs unchanged.
+    """
+    return await llm_api_proxy(request, f"chat/{path}")
+
+
+@app.api_route(
     "/v1/{path:path}",
     methods=["GET", "POST"],
     include_in_schema=False,
