@@ -7,7 +7,6 @@
 from __future__ import annotations
 
 import logging
-import tempfile
 from pathlib import Path
 
 import pytest
@@ -222,7 +221,10 @@ class TestOAuthInjection:
         assert "oauth-2025-04-20" in headers["anthropic-beta"]
 
     def test_inject_if_absent_skips_when_bearer_already_present(self, tmp_path):
-        """inject_headers does NOT overwrite an existing Authorization: Bearer token."""
+        """inject_headers does NOT overwrite an existing Authorization: Bearer token,
+        but it must still apply protocol-required extra_headers (e.g. anthropic-version).
+        Hermes sends its own Bearer via the base-URL override without setting the version
+        header — failing to add the version here is the bug behind the 400 retry loop."""
         inj = self._make_anthropic_injector(tmp_path)
         original = "Bearer sk-ant-oat01-openclaw-runtime-token"
         headers: dict[str, str] = {"Authorization": original}
@@ -230,6 +232,10 @@ class TestOAuthInjection:
         assert (
             headers["Authorization"] == original
         ), "Gateway must not clobber client's Bearer token"
+        assert (
+            headers.get("anthropic-version") == "2023-06-01"
+        ), "extra_headers must still be applied when caller owns auth"
+        assert "oauth-2025-04-20" in headers.get("anthropic-beta", "")
 
     def test_x_api_key_stripped_and_bearer_plus_beta_injected(self, tmp_path):
         """x-api-key is stripped; Authorization: Bearer and anthropic-beta are added."""
@@ -243,6 +249,27 @@ class TestOAuthInjection:
         assert headers["Authorization"] == "Bearer sk-ant-oat01-gateway-token"
         assert "oauth-2025-04-20" in headers["anthropic-beta"]
         assert "anthropic-version" in headers  # unrelated headers must survive
+
+    def test_anthropic_version_auto_injected_when_absent(self, tmp_path):
+        """anthropic-version is required on every /v1/messages call; the gateway adds it
+        automatically when the upstream client (e.g. hermes via base-URL override) does not.
+        Without this Anthropic returns 400: 'anthropic-version: header is required'.
+        """
+        inj = self._make_anthropic_injector(tmp_path)
+        headers: dict[str, str] = {"x-api-key": "sk-ant-oat01-hermes-token"}
+        inj.inject_headers("api.anthropic.com", headers)
+        assert headers.get("anthropic-version") == "2023-06-01"
+
+    def test_existing_anthropic_version_preserved(self, tmp_path):
+        """Caller-supplied anthropic-version (e.g. a newer beta date) must not be clobbered."""
+        inj = self._make_anthropic_injector(tmp_path)
+        headers: dict[str, str] = {
+            "x-api-key": "sk-ant-oat01-hermes-token",
+            "anthropic-version": "2024-10-01",
+        }
+        inj.inject_headers("api.anthropic.com", headers)
+        # Comma-merge logic preserves the caller's value, appending the default once.
+        assert "2024-10-01" in headers["anthropic-version"]
 
     def test_existing_anthropic_beta_preserved_and_oauth_appended_no_duplicate(self, tmp_path):
         """Existing anthropic-beta values are kept; oauth-2025-04-20 is appended once."""

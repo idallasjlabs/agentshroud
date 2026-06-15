@@ -9,12 +9,7 @@ from __future__ import annotations
 
 import json
 
-import pytest
-
 from gateway.proxy.llm_quota_detector import (
-    _is_anthropic_quota,
-    _is_google_quota,
-    _is_openai_quota,
     is_quota_exhausted,
 )
 
@@ -49,6 +44,35 @@ def test_detect_anthropic_rate_limit_type_quota_message():
     ).encode()
     result = is_quota_exhausted(429, payload)
     assert result == (True, "anthropic_credit_balance")
+
+
+def test_detect_anthropic_400_oauth_extra_usage():
+    """Anthropic returns the Claude.ai OAuth quota copy with HTTP 400
+    (wrapped as invalid_request_error), not 429/402. Observed 2026-06-15
+    when the user exhausted their monthly Claude.ai usage cap and every
+    hermes cron run died with this 400 in a generic retry loop."""
+    payload = json.dumps(
+        {
+            "type": "error",
+            "error": {
+                "type": "invalid_request_error",
+                "message": "You're out of extra usage. Add more at claude.ai/settings/usage and keep going.",
+            },
+        }
+    ).encode()
+    result = is_quota_exhausted(400, payload)
+    assert result == (True, "anthropic_credit_balance")
+
+
+def test_400_without_quota_substring_not_flagged():
+    """Generic 400 validation errors must NOT trigger failover."""
+    payload = json.dumps(
+        {
+            "type": "error",
+            "error": {"type": "invalid_request_error", "message": "messages: field required"},
+        }
+    ).encode()
+    assert is_quota_exhausted(400, payload) == (False, "")
 
 
 def test_no_false_positive_on_anthropic_request_rate_limit():

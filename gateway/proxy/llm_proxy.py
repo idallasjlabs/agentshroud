@@ -698,7 +698,10 @@ class LLMProxy:
                             _failover_enabled
                             and not _failover_opt_out
                             and not is_ollama
-                            and response.status_code in (429, 402, 503, 529)
+                            # 400 included so the Claude.ai OAuth "out of extra usage"
+                            # quota wall (returned as invalid_request_error / HTTP 400)
+                            # still triggers failover instead of crash-looping cron jobs.
+                            and response.status_code in (400, 429, 402, 503, 529)
                         ):
                             # Error body is small JSON — safe to read in full
                             error_body = await response.aread()
