@@ -56,6 +56,13 @@ PERMANENT_EGRESS_DOMAINS: list[str] = [
     "api.brave.com",
     "*.brave.com",
     "*.search.brave.com",
+    # DuckDuckGo (no-key web search for hermes ddgs provider — keeps the competitive
+    # cron working when the Anthropic OAuth quota is exhausted and the LLM has fallen
+    # back to local qwen3-14b. The ddgs package scrapes the HTML front-end, not an API.)
+    "duckduckgo.com",
+    "html.duckduckgo.com",
+    "duckduckgo-search-private.com",
+    "*.duckduckgo.com",
     # ── Development & Package Registries ──
     "*.github.com",
     "*.githubusercontent.com",
