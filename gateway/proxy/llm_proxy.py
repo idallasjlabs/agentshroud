@@ -32,7 +32,11 @@ from gateway.proxy.gemini_openai_translator import (
     gemini_to_openai_request,
     openai_to_gemini_response,
 )
-from gateway.proxy.llm_quota_detector import is_overloaded, is_quota_exhausted
+from gateway.proxy.llm_quota_detector import (
+    is_overloaded,
+    is_quota_exhausted,
+    is_rate_limited_post_retry,
+)
 
 logger = logging.getLogger("agentshroud.proxy.llm_api")
 
@@ -478,6 +482,13 @@ class LLMProxy:
                 # Anthropic emits overloaded_error with HTTP 200/503/529 —
                 # invisible to status-code checks but just as fatal to cron jobs.
                 quota_hit, quota_token = is_overloaded(status, resp_body)
+            if not quota_hit:
+                # A 429 that survived _forward_request's retry loop
+                # ({429,503,529}) is a persistent rate-limit, not a transient
+                # one. Hermes treats the final 429 as AssertionError and
+                # kills the cron run (observed 2026-06-13/14/15 — 3 days of
+                # competitive reports missed). Failover so the run completes.
+                quota_hit, quota_token = is_rate_limited_post_retry(status, resp_body)
             if quota_hit:
                 local_model = self._get_local_model()
                 logger.info(
