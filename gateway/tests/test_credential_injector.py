@@ -244,6 +244,27 @@ class TestOAuthInjection:
         assert "oauth-2025-04-20" in headers["anthropic-beta"]
         assert "anthropic-version" in headers  # unrelated headers must survive
 
+    def test_anthropic_version_auto_injected_when_absent(self, tmp_path):
+        """anthropic-version is required on every /v1/messages call; the gateway adds it
+        automatically when the upstream client (e.g. hermes via base-URL override) does not.
+        Without this Anthropic returns 400: 'anthropic-version: header is required'.
+        """
+        inj = self._make_anthropic_injector(tmp_path)
+        headers: dict[str, str] = {"x-api-key": "sk-ant-oat01-hermes-token"}
+        inj.inject_headers("api.anthropic.com", headers)
+        assert headers.get("anthropic-version") == "2023-06-01"
+
+    def test_existing_anthropic_version_preserved(self, tmp_path):
+        """Caller-supplied anthropic-version (e.g. a newer beta date) must not be clobbered."""
+        inj = self._make_anthropic_injector(tmp_path)
+        headers: dict[str, str] = {
+            "x-api-key": "sk-ant-oat01-hermes-token",
+            "anthropic-version": "2024-10-01",
+        }
+        inj.inject_headers("api.anthropic.com", headers)
+        # Comma-merge logic preserves the caller's value, appending the default once.
+        assert "2024-10-01" in headers["anthropic-version"]
+
     def test_existing_anthropic_beta_preserved_and_oauth_appended_no_duplicate(self, tmp_path):
         """Existing anthropic-beta values are kept; oauth-2025-04-20 is appended once."""
         inj = self._make_anthropic_injector(tmp_path)

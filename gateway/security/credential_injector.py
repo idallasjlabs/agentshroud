@@ -119,8 +119,17 @@ class CredentialInjector:
                 header_prefix="Bearer ",
                 # OpenClaw sends x-api-key; strip it so Anthropic sees only the Bearer token
                 strip_headers=["x-api-key"],
-                # OAuth tokens require this beta header; merge with any existing flags
-                extra_headers={"anthropic-beta": "oauth-2025-04-20"},
+                # OAuth tokens require the beta header; the version header is mandatory on
+                # every /v1/messages call. Hermes routes everything through the gateway with
+                # ANTHROPIC_BASE_URL=http://gateway:8080 but does not always set the version
+                # header itself — without it Anthropic returns 400 "anthropic-version: header
+                # is required". Merge defensively (existing values are preserved by
+                # inject_headers's comma-merge logic so we don't clobber callers that already
+                # set a different version).
+                extra_headers={
+                    "anthropic-beta": "oauth-2025-04-20",
+                    "anthropic-version": "2023-06-01",
+                },
             ),
             CredentialMapping(
                 domain="api.openai.com",
