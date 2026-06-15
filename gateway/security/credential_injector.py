@@ -21,7 +21,6 @@ This module ensures:
 from __future__ import annotations
 
 import logging
-import os
 import re
 from dataclasses import dataclass, field
 from pathlib import Path
@@ -187,19 +186,23 @@ class CredentialInjector:
 
         mapping = self._domain_map.get(destination_domain)
         if mapping and mapping.loaded_value:
-            # inject-if-absent: skip when Authorization: Bearer is already present (protects
+            # inject-if-absent: do NOT overwrite a caller-supplied Bearer token (protects
             # clients that manage their own OAuth tokens, e.g. OpenClaw runtime refresh).
+            # extra_headers (e.g. anthropic-version) still need to be applied either way —
+            # they are protocol-required headers, not credentials. Hermes hits this branch
+            # because it sends `Authorization: Bearer <something>` via its base-URL override
+            # without setting anthropic-version itself.
             existing_auth = headers.get("Authorization") or headers.get("authorization", "")
-            if existing_auth.startswith("Bearer "):
-                return headers
+            has_caller_bearer = existing_auth.startswith("Bearer ")
 
-            # Strip conflicting auth headers (e.g. x-api-key when injecting Bearer)
-            for strip_hdr in mapping.strip_headers:
-                headers.pop(strip_hdr, None)
-                headers.pop(strip_hdr.lower(), None)
-                headers.pop(strip_hdr.title(), None)
-            headers[mapping.header_name] = f"{mapping.header_prefix}{mapping.loaded_value}"
-            logger.debug(f"Injected credential for {destination_domain}")
+            if not has_caller_bearer:
+                # Strip conflicting auth headers (e.g. x-api-key when injecting Bearer)
+                for strip_hdr in mapping.strip_headers:
+                    headers.pop(strip_hdr, None)
+                    headers.pop(strip_hdr.lower(), None)
+                    headers.pop(strip_hdr.title(), None)
+                headers[mapping.header_name] = f"{mapping.header_prefix}{mapping.loaded_value}"
+                logger.debug(f"Injected credential for {destination_domain}")
 
             # Merge extra_headers (comma-join for multi-value headers, no duplicate values)
             for hdr_key, hdr_val in mapping.extra_headers.items():

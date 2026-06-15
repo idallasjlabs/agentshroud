@@ -9,12 +9,7 @@ from __future__ import annotations
 
 import json
 
-import pytest
-
 from gateway.proxy.llm_quota_detector import (
-    _is_anthropic_quota,
-    _is_google_quota,
-    _is_openai_quota,
     is_quota_exhausted,
 )
 
@@ -72,7 +67,10 @@ def test_detect_anthropic_400_oauth_extra_usage():
 def test_400_without_quota_substring_not_flagged():
     """Generic 400 validation errors must NOT trigger failover."""
     payload = json.dumps(
-        {"type": "error", "error": {"type": "invalid_request_error", "message": "messages: field required"}}
+        {
+            "type": "error",
+            "error": {"type": "invalid_request_error", "message": "messages: field required"},
+        }
     ).encode()
     assert is_quota_exhausted(400, payload) == (False, "")
 

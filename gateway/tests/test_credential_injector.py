@@ -7,7 +7,6 @@
 from __future__ import annotations
 
 import logging
-import tempfile
 from pathlib import Path
 
 import pytest
@@ -222,7 +221,10 @@ class TestOAuthInjection:
         assert "oauth-2025-04-20" in headers["anthropic-beta"]
 
     def test_inject_if_absent_skips_when_bearer_already_present(self, tmp_path):
-        """inject_headers does NOT overwrite an existing Authorization: Bearer token."""
+        """inject_headers does NOT overwrite an existing Authorization: Bearer token,
+        but it must still apply protocol-required extra_headers (e.g. anthropic-version).
+        Hermes sends its own Bearer via the base-URL override without setting the version
+        header — failing to add the version here is the bug behind the 400 retry loop."""
         inj = self._make_anthropic_injector(tmp_path)
         original = "Bearer sk-ant-oat01-openclaw-runtime-token"
         headers: dict[str, str] = {"Authorization": original}
@@ -230,6 +232,10 @@ class TestOAuthInjection:
         assert (
             headers["Authorization"] == original
         ), "Gateway must not clobber client's Bearer token"
+        assert (
+            headers.get("anthropic-version") == "2023-06-01"
+        ), "extra_headers must still be applied when caller owns auth"
+        assert "oauth-2025-04-20" in headers.get("anthropic-beta", "")
 
     def test_x_api_key_stripped_and_bearer_plus_beta_injected(self, tmp_path):
         """x-api-key is stripped; Authorization: Bearer and anthropic-beta are added."""
