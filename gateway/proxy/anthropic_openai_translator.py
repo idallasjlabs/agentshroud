@@ -280,15 +280,11 @@ def openai_to_anthropic_request(body: dict, target_model: str | None = None) -> 
 # ---------------------------------------------------------------------------
 
 
-def anthropic_to_openai_response(
-    anthropic_resp: dict, original_model: str | None = None
-) -> dict:
+def anthropic_to_openai_response(anthropic_resp: dict, original_model: str | None = None) -> dict:
     """Anthropic /v1/messages response → OpenAI /v1/chat/completions envelope."""
     content_blocks = anthropic_resp.get("content", []) or []
     text_parts = [
-        b.get("text", "")
-        for b in content_blocks
-        if isinstance(b, dict) and b.get("type") == "text"
+        b.get("text", "") for b in content_blocks if isinstance(b, dict) and b.get("type") == "text"
     ]
     tool_calls = [
         {
