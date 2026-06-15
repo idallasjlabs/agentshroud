@@ -156,3 +156,37 @@ def is_overloaded(status: int, body: bytes) -> tuple[bool, str]:
     if isinstance(err, dict) and err.get("type") == "overloaded_error":
         return True, "anthropic_overloaded"
     return False, ""
+
+
+# ---------------------------------------------------------------------------
+# Post-retry rate-limit failover — the response we propagate to the caller
+# already survived the upstream retry loop (_RETRYABLE = {429, 503, 529} at
+# llm_proxy.py:1142). A final 429 here is not a quota wall (those are caught
+# by is_quota_exhausted) and not a capacity flag in the body (caught by
+# is_overloaded) — it's persistent rate-limit. Hermes's SDK turns this into
+# AssertionError → cron jobs miss (observed 2026-06-13/14/15). Failover so
+# the run completes on local rather than die.
+# ---------------------------------------------------------------------------
+
+
+def is_rate_limited_post_retry(status: int, body: bytes) -> tuple[bool, str]:
+    """Return (True, "anthropic_rate_limit"/"openai_rate_limit"/...) for a
+    persistent 429 that escaped the upstream retry loop.
+
+    Caller must invoke is_quota_exhausted and is_overloaded first so this
+    only fires for the residual rate-limit case (otherwise we'd mis-label
+    quota walls as rate limits in telemetry)."""
+    if status != 429:
+        return False, ""
+    # The body for a plain 429 may still carry provider hints — preserve the
+    # token so failover telemetry can distinguish providers.
+    text = body.decode("utf-8", errors="replace") if body else ""
+    lower = text.lower()
+    # Anthropic — request IDs prefixed with "req_011", error.type "rate_limit_error"
+    if "anthropic" in lower or "req_011" in lower or "rate_limit_error" in lower:
+        return True, "anthropic_rate_limit"
+    if "openai" in lower or "insufficient" in lower:
+        return True, "openai_rate_limit"
+    if "google" in lower or "RESOURCE" in text:
+        return True, "google_rate_limit"
+    return True, "cloud_rate_limit"

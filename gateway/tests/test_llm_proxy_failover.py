@@ -191,21 +191,28 @@ async def test_proxy_failover_flag_off_returns_429(monkeypatch):
 
 
 @pytest.mark.asyncio
-async def test_proxy_non_quota_429_does_not_failover(monkeypatch):
+async def test_proxy_post_retry_429_now_failovers(monkeypatch):
+    """Updated 2026-06-15: a plain 429 that escaped the upstream retry loop
+    NOW triggers failover (see is_rate_limited_post_retry). Pre-fix
+    behavior was to propagate the 429 to the caller, which broke hermes
+    cron jobs (3 days of competitive reports missed) because hermes's SDK
+    treated the final 429 as AssertionError."""
     proxy = make_proxy()
     monkeypatch.setattr("gateway.proxy.llm_proxy.MODEL_MODE", "cloud")
-    ollama_called = [False]
     rate_limit_body = json.dumps(
         {"error": {"type": "rate_limit_error", "message": "Too many requests, slow down."}}
     ).encode()
+    ollama_called = [False]
 
     async def mock_forward(url, body, headers):
-        if "host.docker.internal" in url:
+        if "host.docker.internal" in url or "localhost" in url:
             ollama_called[0] = True
+            return 200, {"content-type": "application/json"}, OLLAMA_OK_BODY
         return 429, {}, rate_limit_body
 
     monkeypatch.setattr(proxy, "_forward_request", mock_forward)
     monkeypatch.setattr(proxy, "_emit_failover_notice", lambda *a, **kw: None)
+    monkeypatch.setattr(proxy, "_record_failover_event", lambda *a, **kw: None)
     monkeypatch.setenv("AGENTSHROUD_FAILOVER_ON_QUOTA", "1")
 
     status, _, _ = await _call_proxy(
@@ -213,8 +220,9 @@ async def test_proxy_non_quota_429_does_not_failover(monkeypatch):
         "/v1/messages",
         {"model": "claude-opus-4-6", "messages": [{"role": "user", "content": "hi"}]},
     )
-    assert status == 429
-    assert not ollama_called[0]
+    # Failover succeeded → 200, local was hit
+    assert status == 200
+    assert ollama_called[0]
 
 
 # ---------------------------------------------------------------------------
