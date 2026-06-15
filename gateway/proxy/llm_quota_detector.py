@@ -43,7 +43,12 @@ _ANTHROPIC_RATE_LIMIT_QUOTA_MARKERS = (
 
 
 def _is_anthropic_quota(status: int, body: bytes) -> bool:
-    if status not in (429, 402):
+    # Anthropic returns the Claude.ai OAuth "out of extra usage" copy with HTTP 400
+    # (wrapped as invalid_request_error), not 429/402. Observed 2026-06-15 with the
+    # hermes competitive-intel cron after the user exhausted their monthly Claude.ai
+    # usage cap. 400/403 are validation errors generally, so we only accept them
+    # when the body carries the explicit quota substring.
+    if status not in (429, 402, 400, 403):
         return False
     text = body.decode("utf-8", errors="replace")
 
