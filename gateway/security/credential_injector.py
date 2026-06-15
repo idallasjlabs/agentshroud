@@ -21,7 +21,6 @@ This module ensures:
 from __future__ import annotations
 
 import logging
-import os
 import re
 from dataclasses import dataclass, field
 from pathlib import Path
@@ -119,8 +118,17 @@ class CredentialInjector:
                 header_prefix="Bearer ",
                 # OpenClaw sends x-api-key; strip it so Anthropic sees only the Bearer token
                 strip_headers=["x-api-key"],
-                # OAuth tokens require this beta header; merge with any existing flags
-                extra_headers={"anthropic-beta": "oauth-2025-04-20"},
+                # OAuth tokens require the beta header; the version header is mandatory on
+                # every /v1/messages call. Hermes routes everything through the gateway with
+                # ANTHROPIC_BASE_URL=http://gateway:8080 but does not always set the version
+                # header itself — without it Anthropic returns 400 "anthropic-version: header
+                # is required". Merge defensively (existing values are preserved by
+                # inject_headers's comma-merge logic so we don't clobber callers that already
+                # set a different version).
+                extra_headers={
+                    "anthropic-beta": "oauth-2025-04-20",
+                    "anthropic-version": "2023-06-01",
+                },
             ),
             CredentialMapping(
                 domain="api.openai.com",
@@ -178,19 +186,23 @@ class CredentialInjector:
 
         mapping = self._domain_map.get(destination_domain)
         if mapping and mapping.loaded_value:
-            # inject-if-absent: skip when Authorization: Bearer is already present (protects
+            # inject-if-absent: do NOT overwrite a caller-supplied Bearer token (protects
             # clients that manage their own OAuth tokens, e.g. OpenClaw runtime refresh).
+            # extra_headers (e.g. anthropic-version) still need to be applied either way —
+            # they are protocol-required headers, not credentials. Hermes hits this branch
+            # because it sends `Authorization: Bearer <something>` via its base-URL override
+            # without setting anthropic-version itself.
             existing_auth = headers.get("Authorization") or headers.get("authorization", "")
-            if existing_auth.startswith("Bearer "):
-                return headers
+            has_caller_bearer = existing_auth.startswith("Bearer ")
 
-            # Strip conflicting auth headers (e.g. x-api-key when injecting Bearer)
-            for strip_hdr in mapping.strip_headers:
-                headers.pop(strip_hdr, None)
-                headers.pop(strip_hdr.lower(), None)
-                headers.pop(strip_hdr.title(), None)
-            headers[mapping.header_name] = f"{mapping.header_prefix}{mapping.loaded_value}"
-            logger.debug(f"Injected credential for {destination_domain}")
+            if not has_caller_bearer:
+                # Strip conflicting auth headers (e.g. x-api-key when injecting Bearer)
+                for strip_hdr in mapping.strip_headers:
+                    headers.pop(strip_hdr, None)
+                    headers.pop(strip_hdr.lower(), None)
+                    headers.pop(strip_hdr.title(), None)
+                headers[mapping.header_name] = f"{mapping.header_prefix}{mapping.loaded_value}"
+                logger.debug(f"Injected credential for {destination_domain}")
 
             # Merge extra_headers (comma-join for multi-value headers, no duplicate values)
             for hdr_key, hdr_val in mapping.extra_headers.items():
