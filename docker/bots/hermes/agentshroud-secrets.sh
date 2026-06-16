@@ -65,6 +65,7 @@ inject GITHUB_PERSONAL_ACCESS_TOKEN /run/secrets/github_pat
 # EACCES), causing EACCES on token refresh, MCP config reads, or CLI use.
 # Reclaim ownership here.
 for _f in /opt/data/auth.json /opt/data/mcp.json /opt/data/.local /opt/data/.cache \
-          /opt/data/cron /opt/data/.hermes_history /opt/data/.crashwatch-state.json; do
+          /opt/data/cron /opt/data/.hermes_history /opt/data/.crashwatch-state.json \
+          /opt/data/skills/.hub; do
     [ -e "$_f" ] && chown -R 10000:10000 "$_f" 2>/dev/null || true
 done
