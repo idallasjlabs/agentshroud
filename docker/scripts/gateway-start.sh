@@ -11,7 +11,11 @@ set -uo pipefail
 _TRIVY_WRITABLE_CACHE="${TRIVY_CACHE_DIR:-/var/log/security/.trivy-cache}"
 if [ ! -d "$_TRIVY_WRITABLE_CACHE/db" ]; then
     mkdir -p "$_TRIVY_WRITABLE_CACHE"
-    trivy fs --download-db-only --cache-dir "$_TRIVY_WRITABLE_CACHE" --db-repository ghcr.io/aquasecurity/trivy-db --no-progress 2>&1 \
+    # Swallow trivy's own stdout/stderr so its FATAL log line (emitted on
+    # every transient OCI-pull hiccup) doesn't pollute the container log
+    # with a scary-looking error we already handle.  Our own WARNING /
+    # success message is the canonical signal here.
+    trivy fs --download-db-only --cache-dir "$_TRIVY_WRITABLE_CACHE" --db-repository ghcr.io/aquasecurity/trivy-db --no-progress >/dev/null 2>&1 \
         && echo "[gateway-start] Trivy DB downloaded to $_TRIVY_WRITABLE_CACHE" \
         || echo "[gateway-start] WARNING: Trivy DB download failed (VPN?) — scans will retry"
 fi
