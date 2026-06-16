@@ -34,6 +34,13 @@ class ResourceLimits:
     max_requests_per_minute: int = 300
     alert_cpu_spike_threshold: float = 80.0  # CPU % that triggers alert
     alert_memory_spike_threshold: float = 90.0  # Memory % that triggers alert
+    # Number of consecutive 10-second samples that must exceed a threshold
+    # before firing the alert.  Without debouncing, every ClamAV outbound scan,
+    # audit-chain flush, or drift-detector pass briefly tripped the spike
+    # threshold and produced an alert that AlertDispatcher rate-limited
+    # downstream — pure noise.  3 samples = ~30 seconds of sustained pressure,
+    # which is the real signal we want.
+    alert_spike_debounce_samples: int = 3
 
 
 @dataclass
@@ -60,6 +67,10 @@ class ResourceGuard:
         self.alert_callbacks: List[callable] = []
         self.monitoring_active = True
         self._monitor_task: Optional[asyncio.Task] = None
+        # Consecutive-over-threshold counters for the spike debounce.
+        # Reset whenever a sample comes in under threshold.
+        self._cpu_over_count: int = 0
+        self._memory_over_count: int = 0
         self._start_monitoring_task()
 
     def add_alert_callback(self, callback: callable):
@@ -112,23 +123,35 @@ class ResourceGuard:
             cpu_percent = psutil.cpu_percent(interval=1)
             memory_percent = psutil.virtual_memory().percent
 
+            debounce = max(1, self.limits.alert_spike_debounce_samples)
+
             if cpu_percent > self.limits.alert_cpu_spike_threshold:
-                self._alert_high_usage(
-                    "cpu_spike",
-                    {
-                        "cpu_percent": cpu_percent,
-                        "threshold": self.limits.alert_cpu_spike_threshold,
-                    },
-                )
+                self._cpu_over_count += 1
+                if self._cpu_over_count == debounce:
+                    self._alert_high_usage(
+                        "cpu_spike",
+                        {
+                            "cpu_percent": cpu_percent,
+                            "threshold": self.limits.alert_cpu_spike_threshold,
+                            "consecutive_samples": self._cpu_over_count,
+                        },
+                    )
+            else:
+                self._cpu_over_count = 0
 
             if memory_percent > self.limits.alert_memory_spike_threshold:
-                self._alert_high_usage(
-                    "memory_spike",
-                    {
-                        "memory_percent": memory_percent,
-                        "threshold": self.limits.alert_memory_spike_threshold,
-                    },
-                )
+                self._memory_over_count += 1
+                if self._memory_over_count == debounce:
+                    self._alert_high_usage(
+                        "memory_spike",
+                        {
+                            "memory_percent": memory_percent,
+                            "threshold": self.limits.alert_memory_spike_threshold,
+                            "consecutive_samples": self._memory_over_count,
+                        },
+                    )
+            else:
+                self._memory_over_count = 0
         except Exception as e:
             logger.error(f"System resource check failed: {e}")
 

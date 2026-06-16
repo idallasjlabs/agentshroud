@@ -102,16 +102,40 @@ class TestResourceGuard:
         assert "requests" in reason.lower()
 
     @patch("gateway.security.resource_guard.psutil")
-    def test_system_resource_monitoring(self, mock_psutil):
-        """Test system resource monitoring."""
-        # Mock high CPU usage
+    def test_system_resource_monitoring_alerts_after_debounce(self, mock_psutil):
+        """Sustained high CPU fires the alert after debounce samples are crossed."""
         mock_psutil.cpu_percent.return_value = 95.0
-        mock_psutil.virtual_memory.return_value.percent = 85.0
+        mock_psutil.virtual_memory.return_value.percent = 50.0  # below memory threshold
 
-        # Should detect high resource usage
+        # Force tight debounce for a deterministic assertion.
+        self.guard.limits.alert_spike_debounce_samples = 2
+        self.guard._cpu_over_count = 0
+
         with patch.object(self.guard, "_alert_high_usage") as mock_alert:
             self.guard._check_system_resources()
-            mock_alert.assert_called()
+            assert mock_alert.call_count == 0, "First over-threshold sample must not alert"
+            self.guard._check_system_resources()
+            assert mock_alert.call_count == 1, "Second consecutive over-threshold sample fires the alert"
+
+    @patch("gateway.security.resource_guard.psutil")
+    def test_brief_spike_below_debounce_does_not_alert(self, mock_psutil):
+        """A single over-threshold sample followed by an under-threshold sample is suppressed."""
+        self.guard.limits.alert_spike_debounce_samples = 3
+        self.guard._cpu_over_count = 0
+        mock_psutil.virtual_memory.return_value.percent = 50.0  # quiet memory side
+
+        with patch.object(self.guard, "_alert_high_usage") as mock_alert:
+            mock_psutil.cpu_percent.return_value = 95.0
+            self.guard._check_system_resources()  # 1st over
+            mock_psutil.cpu_percent.return_value = 10.0
+            self.guard._check_system_resources()  # under-threshold → resets counter
+            mock_psutil.cpu_percent.return_value = 95.0
+            self.guard._check_system_resources()  # 1st over again
+            mock_psutil.cpu_percent.return_value = 95.0
+            self.guard._check_system_resources()  # 2nd over (still below 3)
+            assert mock_alert.call_count == 0, (
+                "Brief spikes that don't accumulate must not produce alerts"
+            )
 
     def test_multiple_agents_isolated(self):
         """Test that different agents have isolated resource tracking."""
