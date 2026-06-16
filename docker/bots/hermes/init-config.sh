@@ -129,6 +129,23 @@ mkdir -p "${DATA_DIR}/memories"
 
 echo "[hermes-init] Cron jobs seeded"
 
+# ── Tirith trust: competitor reachability ──────────────────────────────────
+# The hermes URL scanner (tirith) flags `.ai`, `.security`, `.dev`, `.io`
+# TLDs under its `lookalike_tld` rule and *blocks* the agent from probing
+# them. The competitive cron's "verify-every-source" contract then can't
+# reach the 9 known-safe competitor sites and the report ends up filled
+# with ⚠️ UNVERIFIED markers. Scope-only-to-rule trust entries narrow the
+# bypass to lookalike_tld alone — every other tirith rule still fires.
+# Idempotent: `tirith trust add` no-ops on already-trusted patterns.
+if [ -x /opt/data/bin/tirith ]; then
+    for _dom in lakera.ai prompt.security calypsoai.com lasso.security \
+                cequence.ai arcade.dev cyberark.com gravitee.io maxim.ai; do
+        /opt/data/bin/tirith trust add "${_dom}" --rule lookalike_tld \
+            >/dev/null 2>&1 || true
+    done
+    echo "[hermes-init] Tirith trust seeded for 9 competitor domains (rule=lookalike_tld)"
+fi
+
 # ── GitHub MCP server — wire on first boot if PAT is available ─────────────
 # Requires github_pat Docker secret (stored in 1Password "Agent Shroud Bot Credentials").
 # If the secret is absent or empty, this step is skipped silently.
