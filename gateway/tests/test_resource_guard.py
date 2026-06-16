@@ -115,7 +115,9 @@ class TestResourceGuard:
             self.guard._check_system_resources()
             assert mock_alert.call_count == 0, "First over-threshold sample must not alert"
             self.guard._check_system_resources()
-            assert mock_alert.call_count == 1, "Second consecutive over-threshold sample fires the alert"
+            assert (
+                mock_alert.call_count == 1
+            ), "Second consecutive over-threshold sample fires the alert"
 
     @patch("gateway.security.resource_guard.psutil")
     def test_brief_spike_below_debounce_does_not_alert(self, mock_psutil):
@@ -133,9 +135,9 @@ class TestResourceGuard:
             self.guard._check_system_resources()  # 1st over again
             mock_psutil.cpu_percent.return_value = 95.0
             self.guard._check_system_resources()  # 2nd over (still below 3)
-            assert mock_alert.call_count == 0, (
-                "Brief spikes that don't accumulate must not produce alerts"
-            )
+            assert (
+                mock_alert.call_count == 0
+            ), "Brief spikes that don't accumulate must not produce alerts"
 
     def test_multiple_agents_isolated(self):
         """Test that different agents have isolated resource tracking."""
