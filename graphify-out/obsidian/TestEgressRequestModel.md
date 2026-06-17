@@ -1,0 +1,20 @@
+---
+source_file: "gateway/tests/test_soc_egress.py"
+type: "code"
+community: "URL Analyzer & Content Scanner"
+location: "L17"
+tags:
+  - graphify/code
+  - graphify/EXTRACTED
+  - community/URL_Analyzer__Content_Scanner
+---
+
+# TestEgressRequestModel
+
+## Connections
+- [[.test_approved_status()]] - `method` [EXTRACTED]
+- [[.test_pending_status_default()]] - `method` [EXTRACTED]
+- [[.test_red_risk_high_threat()]] - `method` [EXTRACTED]
+- [[test_soc_egress.py]] - `contains` [EXTRACTED]
+
+#graphify/code #graphify/EXTRACTED #community/URL_Analyzer__Content_Scanner

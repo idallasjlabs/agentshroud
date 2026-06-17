@@ -1,0 +1,17 @@
+---
+source_file: "docs/vault/02 - Modules/Security Modules/session_security.py.md"
+type: "code"
+community: "Module Group 320"
+location: "gateway/security/session_security.py"
+tags:
+  - graphify/code
+  - graphify/EXTRACTED
+  - community/Module_Group_320
+---
+
+# SessionManager (Class)
+
+## Connections
+- [[session_security.py_1]] - `contains` [EXTRACTED]
+
+#graphify/code #graphify/EXTRACTED #community/Module_Group_320

@@ -1,0 +1,17 @@
+---
+source_file: "gateway/proxy/telegram_proxy.py"
+type: "rationale"
+community: "Telegram Proxy Core"
+location: "L1517"
+tags:
+  - graphify/rationale
+  - graphify/EXTRACTED
+  - community/Telegram_Proxy_Core
+---
+
+# Detect collaborator prompts requesting direct memory content/search access.
+
+## Connections
+- [[._looks_like_memory_access_request()]] - `rationale_for` [EXTRACTED]
+
+#graphify/rationale #graphify/EXTRACTED #community/Telegram_Proxy_Core

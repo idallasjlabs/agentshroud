@@ -1,0 +1,17 @@
+---
+source_file: "gateway/proxy/anthropic_openai_translator.py"
+type: "rationale"
+community: "Module Group 101"
+location: "L234"
+tags:
+  - graphify/rationale
+  - graphify/EXTRACTED
+  - community/Module_Group_101
+---
+
+# Translate an OpenAI /v1/chat/completions request body to Anthropic /v1/messages.
+
+## Connections
+- [[openai_to_anthropic_request()]] - `rationale_for` [EXTRACTED]
+
+#graphify/rationale #graphify/EXTRACTED #community/Module_Group_101

@@ -1,0 +1,245 @@
+---
+type: community
+cohesion: 0.02
+members: 164
+---
+
+# Tool Result Sanitizer
+
+**Cohesion:** 0.02 - loosely connected
+**Members:** 164 nodes
+
+## Members
+- [[.__init__()_10]] - code - gateway/ingest_api/sanitizer.py
+- [[.__init__()_98]] - code - gateway/security/tool_result_sanitizer.py
+- [[.__init__()_99]] - code - gateway/security/tool_result_sanitizer.py
+- [[._close_middleware_after()]] - code - gateway/tests/test_tool_result_pii.py
+- [[._extract_dict_content()]] - code - gateway/security/tool_result_sanitizer.py
+- [[._extract_scannable_content()]] - code - gateway/security/tool_result_sanitizer.py
+- [[._get_sanitizer_for_tool()]] - code - gateway/security/tool_result_sanitizer.py
+- [[._init_presidio()]] - code - gateway/ingest_api/sanitizer.py
+- [[._log_redaction_audit()]] - code - gateway/security/tool_result_sanitizer.py
+- [[._reconstruct_result()]] - code - gateway/security/tool_result_sanitizer.py
+- [[._sanitize_presidio()]] - code - gateway/ingest_api/sanitizer.py
+- [[._sanitize_regex()]] - code - gateway/ingest_api/sanitizer.py
+- [[.block_credentials()]] - code - gateway/ingest_api/sanitizer.py
+- [[.default_config()]] - code - gateway/tests/test_tool_result_pii.py
+- [[.filter_xml_blocks()]] - code - gateway/ingest_api/sanitizer.py
+- [[.get_config_for_tool()]] - code - gateway/security/tool_result_sanitizer.py
+- [[.get_mode()]] - code - gateway/ingest_api/sanitizer.py
+- [[.get_supported_entities()]] - code - gateway/ingest_api/sanitizer.py
+- [[.get_supported_tools()]] - code - gateway/security/tool_result_sanitizer.py
+- [[.get_tool_config()]] - code - gateway/security/tool_result_sanitizer.py
+- [[.mock_config()]] - code - gateway/tests/test_tool_result_pii.py
+- [[.pipeline()_1]] - code - gateway/tests/test_performance.py
+- [[.sanitize()]] - code - gateway/ingest_api/sanitizer.py
+- [[.sanitize_tool_result()]] - code - gateway/security/tool_result_sanitizer.py
+- [[.sanitizer()]] - code - gateway/tests/test_performance.py
+- [[.sanitizer()_1]] - code - gateway/tests/test_security_audit.py
+- [[.sanitizer()_3]] - code - gateway/tests/test_tool_result_pii.py
+- [[.set_config()]] - code - gateway/ingest_api/middleware.py
+- [[.test_1000_entries_under_5s()]] - code - gateway/tests/test_performance.py
+- [[.test_1000_messages_under_10s()]] - code - gateway/tests/test_performance.py
+- [[.test_all_production_tool_overrides_meet_floor()]] - code - gateway/tests/test_tool_result_pii.py
+- [[.test_default_config()_6]] - code - gateway/tests/test_tool_result_pii.py
+- [[.test_default_pii_config_meets_floor()]] - code - gateway/tests/test_tool_result_pii.py
+- [[.test_email_content_scanning()]] - code - gateway/tests/test_tool_result_pii.py
+- [[.test_empty_content_handling()]] - code - gateway/tests/test_tool_result_pii.py
+- [[.test_extract_scannable_content_dict()]] - code - gateway/tests/test_tool_result_pii.py
+- [[.test_extract_scannable_content_list()]] - code - gateway/tests/test_tool_result_pii.py
+- [[.test_extract_scannable_content_string()]] - code - gateway/tests/test_tool_result_pii.py
+- [[.test_icloud_contact_scanning()]] - code - gateway/tests/test_tool_result_pii.py
+- [[.test_initialization()_5]] - code - gateway/tests/test_tool_result_pii.py
+- [[.test_middleware_set_config()]] - code - gateway/tests/test_tool_result_pii.py
+- [[.test_middleware_set_config_disabled()]] - code - gateway/tests/test_tool_result_pii.py
+- [[.test_middleware_set_config_missing()]] - code - gateway/tests/test_tool_result_pii.py
+- [[.test_pii_detection_accuracy_at_scale()]] - code - gateway/tests/test_performance.py
+- [[.test_process_tool_result_no_sanitizer()]] - code - gateway/tests/test_tool_result_pii.py
+- [[.test_process_tool_result_sanitizer_error()]] - code - gateway/tests/test_tool_result_pii.py
+- [[.test_process_tool_result_success()]] - code - gateway/tests/test_tool_result_pii.py
+- [[.test_query_after_1000_entries()]] - code - gateway/tests/test_performance.py
+- [[.test_resolve_text_field_falls_back_to_first_string_when_all_empty()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[.test_resolve_text_field_prefers_first_non_empty_field()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[.test_sanitize_dict_with_pii()]] - code - gateway/tests/test_tool_result_pii.py
+- [[.test_sanitize_disabled()]] - code - gateway/tests/test_tool_result_pii.py
+- [[.test_sanitize_string_with_pii()]] - code - gateway/tests/test_tool_result_pii.py
+- [[.test_single_message_pipeline_under_100ms()]] - code - gateway/tests/test_performance.py
+- [[.test_tool_result_config_default_meets_floor()]] - code - gateway/tests/test_tool_result_pii.py
+- [[.test_tool_specific_config()]] - code - gateway/tests/test_tool_result_pii.py
+- [[.test_tool_specific_configuration()]] - code - gateway/tests/test_tool_result_pii.py
+- [[.tool_config()]] - code - gateway/tests/test_tool_result_pii.py
+- [[Any_56]] - code - gateway/security/tool_result_sanitizer.py
+- [[Audit chain 1000 entries in  5s.]] - rationale - gateway/tests/test_performance.py
+- [[Block credential display via untrusted sources (e.g., Telegram)          Args]] - rationale - gateway/ingest_api/sanitizer.py
+- [[CLAUDE.md §7.8 mandates a 0.9 minimum PII confidence — guard the floor.      The]] - rationale - gateway/tests/test_tool_result_pii.py
+- [[Collect and write benchmark baselines to .benchmarksbaseline-v1.0.0.json.]] - rationale - gateway/tests/test_performance.py
+- [[Default PII configuration for tests]] - rationale - gateway/tests/test_tool_result_pii.py
+- [[Detect and redact PII from content          Args             content Text to s]] - rationale - gateway/ingest_api/sanitizer.py
+- [[End-to-end pipeline latency for a single message.]] - rationale - gateway/tests/test_performance.py
+- [[Extract text content from various tool result formats for PII scanning]] - rationale - gateway/security/tool_result_sanitizer.py
+- [[Get PII config for a specific tool, applying overrides if configured]] - rationale - gateway/security/tool_result_sanitizer.py
+- [[Get list of tools with specific PII configurations]] - rationale - gateway/security/tool_result_sanitizer.py
+- [[Get or create a PIISanitizer instance for the specified tool]] - rationale - gateway/security/tool_result_sanitizer.py
+- [[Get the PII configuration for a specific tool]] - rationale - gateway/security/tool_result_sanitizer.py
+- [[Individual redaction record]] - rationale - gateway/ingest_api/models.py
+- [[Initialize Microsoft Presidio engines          Falls back to regex if Presidios]] - rationale - gateway/ingest_api/sanitizer.py
+- [[Initialize sanitizer          Args             config PII configuration from a]] - rationale - gateway/ingest_api/sanitizer.py
+- [[Log PII redaction for audit trail without logging actual PII]] - rationale - gateway/security/tool_result_sanitizer.py
+- [[Mock configuration for middleware tests]] - rationale - gateway/tests/test_tool_result_pii.py
+- [[Outbound filter must redact egress banners but NOT call _send_owner_admin_notice]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
+- [[PII configuration with per-tool overrides]] - rationale - gateway/security/tool_result_sanitizer.py
+- [[PII detection and redaction configuration]] - rationale - gateway/ingest_api/config.py
+- [[PII detection and redaction engine      Attempts to use Microsoft Presidio with]] - rationale - gateway/ingest_api/sanitizer.py
+- [[PII sanitizer 1000 messages in  10s.]] - rationale - gateway/tests/test_performance.py
+- [[PIIConfig_2]] - code - gateway/security/tool_result_sanitizer.py
+- [[PIIConfig]] - code - gateway/ingest_api/config.py
+- [[PIISanitizer_1]] - code - gateway/security/tool_result_sanitizer.py
+- [[PIISanitizer]] - code - gateway/ingest_api/sanitizer.py
+- [[Pipeline with all modules disabled acts as passthrough.]] - rationale - gateway/tests/test_security_integration.py
+- [[Pipeline with only PII enabled, prompt guard disabled.]] - rationale - gateway/tests/test_security_integration.py
+- [[Process 1000 mixed messages in under 10 seconds.]] - rationale - gateway/tests/test_performance.py
+- [[Query performance after 1000 entries.]] - rationale - gateway/tests/test_performance.py
+- [[Reconstruct the tool result with sanitized content]] - rationale - gateway/security/tool_result_sanitizer.py
+- [[Recursively extract string content from dictionary]] - rationale - gateway/security/tool_result_sanitizer.py
+- [[RedactionDetail]] - code - gateway/ingest_api/models.py
+- [[RedactionResult_1]] - code - gateway/ingest_api/sanitizer.py
+- [[RedactionResult_3]] - code - gateway/security/tool_result_sanitizer.py
+- [[RedactionResult]] - code - gateway/ingest_api/models.py
+- [[Regression tests for Telegram HTML parse error caused by PII placeholders.]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
+- [[Remove Claude XML function call blocks from responses          Strips out intern]] - rationale - gateway/ingest_api/sanitizer.py
+- [[Result of PII sanitization]] - rationale - gateway/ingest_api/models.py
+- [[Return current enforcement mode          Returns             enforce or moni]] - rationale - gateway/ingest_api/sanitizer.py
+- [[Return list of entity types currently enabled          Returns             List]] - rationale - gateway/ingest_api/sanitizer.py
+- [[Sanitize a tool result for PII before it reaches the agent          Args]] - rationale - gateway/security/tool_result_sanitizer.py
+- [[Sanitize using Microsoft Presidio          Wraps synchronous Presidio calls in a]] - rationale - gateway/ingest_api/sanitizer.py
+- [[Sanitize using regex patterns (fallback mode)          Detects         - US_SSN]] - rationale - gateway/ingest_api/sanitizer.py
+- [[Set configuration and initialize tool result sanitizer]] - rationale - gateway/ingest_api/middleware.py
+- [[Single message through full pipeline in under 100ms.]] - rationale - gateway/tests/test_performance.py
+- [[Test configuration loading and validation]] - rationale - gateway/tests/test_tool_result_pii.py
+- [[Test content extraction from dictionary results]] - rationale - gateway/tests/test_tool_result_pii.py
+- [[Test content extraction from list results]] - rationale - gateway/tests/test_tool_result_pii.py
+- [[Test content extraction from string results]] - rationale - gateway/tests/test_tool_result_pii.py
+- [[Test default configuration]] - rationale - gateway/tests/test_tool_result_pii.py
+- [[Test handling of empty or whitespace-only content]] - rationale - gateway/tests/test_tool_result_pii.py
+- [[Test integration with MiddlewareManager]] - rationale - gateway/tests/test_tool_result_pii.py
+- [[Test middleware configuration setup]] - rationale - gateway/tests/test_tool_result_pii.py
+- [[Test middleware configuration with disabled tool result PII]] - rationale - gateway/tests/test_tool_result_pii.py
+- [[Test middleware configuration with missing tool_result_pii config]] - rationale - gateway/tests/test_tool_result_pii.py
+- [[Test realistic tool result scenarios]] - rationale - gateway/tests/test_tool_result_pii.py
+- [[Test sanitizer initialization]] - rationale - gateway/tests/test_tool_result_pii.py
+- [[Test sanitizer when disabled]] - rationale - gateway/tests/test_tool_result_pii.py
+- [[Test sanitizing dictionary content with PII]] - rationale - gateway/tests/test_tool_result_pii.py
+- [[Test sanitizing string content with PII]] - rationale - gateway/tests/test_tool_result_pii.py
+- [[Test scanning email content for sensitive data]] - rationale - gateway/tests/test_tool_result_pii.py
+- [[Test scanning iCloud contact data for PII]] - rationale - gateway/tests/test_tool_result_pii.py
+- [[Test successful tool result processing]] - rationale - gateway/tests/test_tool_result_pii.py
+- [[Test that different tools get different PII configurations]] - rationale - gateway/tests/test_tool_result_pii.py
+- [[Test the ToolResultPIIConfig configuration class]] - rationale - gateway/tests/test_tool_result_pii.py
+- [[Test the ToolResultSanitizer class]] - rationale - gateway/tests/test_tool_result_pii.py
+- [[Test tool result processing when sanitizer not configured]] - rationale - gateway/tests/test_tool_result_pii.py
+- [[Test tool result processing when sanitizer raises an exception]] - rationale - gateway/tests/test_tool_result_pii.py
+- [[Test tool-specific configuration overrides]] - rationale - gateway/tests/test_tool_result_pii.py
+- [[TestAuditChainPerformance]] - code - gateway/tests/test_performance.py
+- [[TestBenchmarkBaseline]] - code - gateway/tests/test_performance.py
+- [[TestConfidenceFloor]] - code - gateway/tests/test_tool_result_pii.py
+- [[TestConfigurationLoading]] - code - gateway/tests/test_tool_result_pii.py
+- [[TestEgressBannerRedactionNoOwnerNotice]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[TestForwardToTelegramTimeouts]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[TestFullPipelineLatency]] - code - gateway/tests/test_performance.py
+- [[TestMiddlewareIntegration]] - code - gateway/tests/test_tool_result_pii.py
+- [[TestOutboundTextFieldResolution]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[TestOwnerActivityNotice]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[TestPIISanitizerPerformance]] - code - gateway/tests/test_performance.py
+- [[TestParseModeStrippedAfterPIIRedaction]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[TestPendingNoticeIncludesEgressSection]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[TestRealWorldScenarios]] - code - gateway/tests/test_tool_result_pii.py
+- [[TestToolResultPIIConfig]] - code - gateway/tests/test_tool_result_pii.py
+- [[TestToolResultSanitizer]] - code - gateway/tests/test_tool_result_pii.py
+- [[Tests for TelegramAPIProxy outbound security pipeline integration.  Proves that]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
+- [[Tests that _forward_to_telegram uses correct urlopen timeouts.      Regression g]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
+- [[Tool result PII configuration for tests]] - rationale - gateway/tests/test_tool_result_pii.py
+- [[Tool result PII sanitizer with per-tool configuration]] - rationale - gateway/security/tool_result_sanitizer.py
+- [[Tool result sanitizer instance for tests]] - rationale - gateway/tests/test_tool_result_pii.py
+- [[ToolResultPIIConfig]] - code - gateway/security/tool_result_sanitizer.py
+- [[ToolResultSanitizer]] - code - gateway/security/tool_result_sanitizer.py
+- [[Track every MiddlewareManager instantiated in this class and         close its s]] - rationale - gateway/tests/test_tool_result_pii.py
+- [[Unit tests for outbound text field resolution helper behavior.]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
+- [[Verify detection accuracy doesn't degrade at scale.]] - rationale - gateway/tests/test_performance.py
+- [[Write 1000 audit entries in under 5 seconds.]] - rationale - gateway/tests/test_performance.py
+- [[_send_owner_activity_notice must render tracker entries or honest error.]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
+- [[_send_owner_pending_notice must append Pending Egress Requests when queue non-em]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
+- [[test_performance.py]] - code - gateway/tests/test_performance.py
+- [[test_pipeline_all_modules_disabled()]] - code - gateway/tests/test_security_integration.py
+- [[test_pipeline_selective_modules()]] - code - gateway/tests/test_security_integration.py
+- [[test_telegram_proxy_outbound.py]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[test_tool_result_pii.py]] - code - gateway/tests/test_tool_result_pii.py
+- [[tool_result_sanitizer.py]] - code - gateway/security/tool_result_sanitizer.py
+
+## Live Query (requires Dataview plugin)
+
+```dataview
+TABLE source_file, type FROM #community/Tool_Result_Sanitizer
+SORT file.name ASC
+```
+
+## Connections to other communities
+- 45 edges to [[_COMMUNITY_RBAC Middleware & Ingest API]]
+- 34 edges to [[_COMMUNITY_Security Pipeline & Audit Chain]]
+- 33 edges to [[_COMMUNITY_SSH Proxy & Gateway Config]]
+- 24 edges to [[_COMMUNITY_Gateway Config & Lifespan]]
+- 19 edges to [[_COMMUNITY_Ledger Config & Test Infra]]
+- 14 edges to [[_COMMUNITY_PII Sanitizer & Resource Guard]]
+- 13 edges to [[_COMMUNITY_Middleware Coverage Tests]]
+- 12 edges to [[_COMMUNITY_Context Guard & Integrity]]
+- 10 edges to [[_COMMUNITY_Module Group 140]]
+- 9 edges to [[_COMMUNITY_Progressive Trust Levels]]
+- 8 edges to [[_COMMUNITY_Sidecar Security Scanner]]
+- 7 edges to [[_COMMUNITY_Telegram Proxy Outbound Tests]]
+- 7 edges to [[_COMMUNITY_Module Group 74]]
+- 7 edges to [[_COMMUNITY_Telegram Proxy Core]]
+- 6 edges to [[_COMMUNITY_Module Group 72]]
+- 5 edges to [[_COMMUNITY_Module Group 322]]
+- 5 edges to [[_COMMUNITY_Module Group 216]]
+- 5 edges to [[_COMMUNITY_Telegram Outbound Test Coverage]]
+- 5 edges to [[_COMMUNITY_Module Group 390]]
+- 4 edges to [[_COMMUNITY_Module Group 92]]
+- 4 edges to [[_COMMUNITY_Module Group 89]]
+- 4 edges to [[_COMMUNITY_Module Group 217]]
+- 4 edges to [[_COMMUNITY_Environment Guard & Leak Detection]]
+- 3 edges to [[_COMMUNITY_Module Group 83]]
+- 3 edges to [[_COMMUNITY_Module Group 214]]
+- 3 edges to [[_COMMUNITY_Module Group 292]]
+- 3 edges to [[_COMMUNITY_Module Group 489]]
+- 3 edges to [[_COMMUNITY_Module Group 235]]
+- 3 edges to [[_COMMUNITY_Module Group 249]]
+- 3 edges to [[_COMMUNITY_Module Group 225]]
+- 3 edges to [[_COMMUNITY_Module Group 309]]
+- 3 edges to [[_COMMUNITY_Module Group 234]]
+- 3 edges to [[_COMMUNITY_Module Group 187]]
+- 3 edges to [[_COMMUNITY_Telegram Outbound Test Rationale]]
+- 3 edges to [[_COMMUNITY_Module Group 287]]
+- 3 edges to [[_COMMUNITY_Module Group 446]]
+- 3 edges to [[_COMMUNITY_Module Group 339]]
+- 3 edges to [[_COMMUNITY_Module Group 472]]
+- 3 edges to [[_COMMUNITY_Module Group 338]]
+- 3 edges to [[_COMMUNITY_Alert Dispatcher]]
+- 3 edges to [[_COMMUNITY_Module Group 497]]
+- 2 edges to [[_COMMUNITY_Session Manager & Webhook]]
+- 2 edges to [[_COMMUNITY_Module Group 469]]
+- 2 edges to [[_COMMUNITY_CLI & Core Gateway Routes]]
+- 2 edges to [[_COMMUNITY_Module Group 110]]
+- 1 edge to [[_COMMUNITY_Module Group 127]]
+- 1 edge to [[_COMMUNITY_Module Group 255]]
+- 1 edge to [[_COMMUNITY_Module Group 443]]
+- 1 edge to [[_COMMUNITY_Module Group 258]]
+- 1 edge to [[_COMMUNITY_Module Group 257]]
+- 1 edge to [[_COMMUNITY_Subagent Monitor]]
+- 1 edge to [[_COMMUNITY_Module Group 66]]
+- 1 edge to [[_COMMUNITY_Module Group 137]]
+
+## Top bridge nodes
+- [[PIIConfig]] - degree 159, connects to 41 communities
+- [[PIISanitizer]] - degree 137, connects to 39 communities
+- [[test_telegram_proxy_outbound.py]] - degree 29, connects to 18 communities
+- [[test_performance.py]] - degree 14, connects to 6 communities
+- [[RedactionResult]] - degree 27, connects to 4 communities
