@@ -1,0 +1,45 @@
+---
+source_file: "gateway/ingest_api/bot_config.py"
+type: "code"
+community: "Module Group 127"
+location: "L20"
+tags:
+  - graphify/code
+  - graphify/INFERRED
+  - community/Module_Group_127
+---
+
+# BotConfig
+
+## Connections
+- [[.base_url()]] - `method` [EXTRACTED]
+- [[.test_bot_config_has_telegram_token_secret_field()]] - `calls` [EXTRACTED]
+- [[.test_bot_config_image_field_present()]] - `calls` [EXTRACTED]
+- [[.test_bot_config_telegram_token_secret_set()]] - `calls` [EXTRACTED]
+- [[.test_openclaw_bot_config_backward_compat()]] - `calls` [EXTRACTED]
+- [[ApprovalQueueConfig_2]] - `uses` [INFERRED]
+- [[AuditExportConfig]] - `uses` [INFERRED]
+- [[BaseModel]] - `inherits` [EXTRACTED]
+- [[ChannelsConfig]] - `uses` [INFERRED]
+- [[Declaration for a single bot encapsulated by AgentShroud.      Required bot HTTP]] - `rationale_for` [EXTRACTED]
+- [[GatewayConfig_1]] - `uses` [INFERRED]
+- [[LedgerConfig]] - `uses` [INFERRED]
+- [[PIIConfig]] - `uses` [INFERRED]
+- [[Path_1]] - `uses` [INFERRED]
+- [[RouterConfig]] - `uses` [INFERRED]
+- [[SecurityConfig]] - `uses` [INFERRED]
+- [[SecurityModuleConfig]] - `uses` [INFERRED]
+- [[TestMultiBotContextvarRouting]] - `uses` [INFERRED]
+- [[TestTelegramBotConfigTokenSecretField]] - `uses` [INFERRED]
+- [[TestTelegramProxyRouteMultiBot]] - `uses` [INFERRED]
+- [[TestTelegramTokenRegistry]] - `uses` [INFERRED]
+- [[ToolRiskConfig_1]] - `uses` [INFERRED]
+- [[ToolRiskPolicy_1]] - `uses` [INFERRED]
+- [[bot_config.py]] - `contains` [EXTRACTED]
+- [[config.py]] - `imports` [EXTRACTED]
+- [[load_config()]] - `calls` [EXTRACTED]
+- [[test_bot_config_base_url()]] - `calls` [EXTRACTED]
+- [[test_config.py]] - `imports` [EXTRACTED]
+- [[test_telegram_proxy_multibot.py]] - `imports` [EXTRACTED]
+
+#graphify/code #graphify/INFERRED #community/Module_Group_127

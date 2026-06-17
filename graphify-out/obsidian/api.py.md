@@ -1,0 +1,68 @@
+---
+source_file: "gateway/web/api.py"
+type: "code"
+community: "Web API & Dashboard UI"
+location: "L1"
+tags:
+  - graphify/code
+  - graphify/EXTRACTED
+  - community/Web_API__Dashboard_UI
+---
+
+# api.py
+
+## Connections
+- [[ConfigUpdate]] - `contains` [EXTRACTED]
+- [[KillSwitchAction]] - `contains` [EXTRACTED]
+- [[ModeRequest]] - `contains` [EXTRACTED]
+- [[RuntimeConfig]] - `imports` [EXTRACTED]
+- [[ServiceAction]] - `contains` [EXTRACTED]
+- [[UpdateRequest]] - `contains` [EXTRACTED]
+- [[_create_mgmt_ws_token()]] - `contains` [EXTRACTED]
+- [[_get_default_bot_dockerfile()]] - `contains` [EXTRACTED]
+- [[_get_engine()]] - `contains` [EXTRACTED]
+- [[_resolve_bot_container()]] - `contains` [EXTRACTED]
+- [[_validate_mgmt_ws_token()]] - `contains` [EXTRACTED]
+- [[_validate_service_name()]] - `contains` [EXTRACTED]
+- [[auth.py]] - `imports_from` [EXTRACTED]
+- [[check_agentshroud_updates()]] - `contains` [EXTRACTED]
+- [[check_bot_updates()]] - `contains` [EXTRACTED]
+- [[check_openclaw_updates()]] - `contains` [EXTRACTED]
+- [[config.py]] - `imports_from` [EXTRACTED]
+- [[config.py_1]] - `imports_from` [EXTRACTED]
+- [[dashboard_endpoints.py]] - `imports_from` [EXTRACTED]
+- [[detect_runtime()]] - `imports` [EXTRACTED]
+- [[export_config()]] - `contains` [EXTRACTED]
+- [[get_config()_1]] - `contains` [EXTRACTED]
+- [[get_engine()]] - `imports` [EXTRACTED]
+- [[get_logs()_1]] - `contains` [EXTRACTED]
+- [[get_mode()]] - `contains` [EXTRACTED]
+- [[get_security_comparison()]] - `imports` [EXTRACTED]
+- [[get_status()]] - `contains` [EXTRACTED]
+- [[import_config()]] - `contains` [EXTRACTED]
+- [[killswitch()]] - `contains` [EXTRACTED]
+- [[load_config()]] - `imports` [EXTRACTED]
+- [[main.py_2]] - `imports_from` [EXTRACTED]
+- [[management.py]] - `imports_from` [EXTRACTED]
+- [[rebuild()]] - `contains` [EXTRACTED]
+- [[require_auth()]] - `contains` [EXTRACTED]
+- [[restart_service()_2]] - `contains` [EXTRACTED]
+- [[rollback_agentshroud()]] - `contains` [EXTRACTED]
+- [[rollback_bot()]] - `contains` [EXTRACTED]
+- [[rollback_openclaw()]] - `contains` [EXTRACTED]
+- [[security.py]] - `imports_from` [EXTRACTED]
+- [[security_report()]] - `contains` [EXTRACTED]
+- [[set_mode()_1]] - `contains` [EXTRACTED]
+- [[start_service()_1]] - `contains` [EXTRACTED]
+- [[stop_service()_2]] - `contains` [EXTRACTED]
+- [[update_config()]] - `contains` [EXTRACTED]
+- [[update_history()]] - `contains` [EXTRACTED]
+- [[upgrade_agentshroud()]] - `contains` [EXTRACTED]
+- [[upgrade_bot()_1]] - `contains` [EXTRACTED]
+- [[upgrade_openclaw()]] - `contains` [EXTRACTED]
+- [[verify_token()]] - `imports` [EXTRACTED]
+- [[warn_missing_features()]] - `imports` [EXTRACTED]
+- [[ws_logs()]] - `contains` [EXTRACTED]
+- [[ws_updates()]] - `contains` [EXTRACTED]
+
+#graphify/code #graphify/EXTRACTED #community/Web_API__Dashboard_UI

@@ -1,0 +1,71 @@
+---
+source_file: "gateway/ingest_api/config.py"
+type: "code"
+community: "Enhanced Approval Queue"
+location: "L103"
+tags:
+  - graphify/code
+  - graphify/INFERRED
+  - community/Enhanced_Approval_Queue
+---
+
+# ApprovalQueueConfig
+
+## Connections
+- [[.disabled_client()]] - `calls` [EXTRACTED]
+- [[.no_approval_client()]] - `calls` [EXTRACTED]
+- [[.test_enforce_mode_disabled()]] - `calls` [EXTRACTED]
+- [[.test_restore_pending_items()]] - `calls` [EXTRACTED]
+- [[Any]] - `uses` [INFERRED]
+- [[Approval queue configuration]] - `rationale_for` [EXTRACTED]
+- [[ApprovalQueueConfig]] - `uses` [INFERRED]
+- [[ApprovalQueueItem]] - `uses` [INFERRED]
+- [[ApprovalRequest]] - `uses` [INFERRED]
+- [[ApprovalStore]] - `uses` [INFERRED]
+- [[BaseModel]] - `inherits` [EXTRACTED]
+- [[BotConfig]] - `uses` [INFERRED]
+- [[EnhancedApprovalQueue]] - `uses` [INFERRED]
+- [[GatewayConfig_2]] - `uses` [INFERRED]
+- [[GatewayConfig_3]] - `uses` [INFERRED]
+- [[PIISanitizer_2]] - `uses` [INFERRED]
+- [[SSHConfig]] - `uses` [INFERRED]
+- [[TestApprovalStorePersistence]] - `uses` [INFERRED]
+- [[TestApprovalTimeout]] - `uses` [INFERRED]
+- [[TestApprovalWorkflow]] - `uses` [INFERRED]
+- [[TestAutoExpire]] - `uses` [INFERRED]
+- [[TestConcurrentApprovalRequests]] - `uses` [INFERRED]
+- [[TestMCPProxyConfigLoading]] - `uses` [INFERRED]
+- [[TestMCPProxyIntegration]] - `uses` [INFERRED]
+- [[TestMCPResultEndpoint]] - `uses` [INFERRED]
+- [[TestPersistence]] - `uses` [INFERRED]
+- [[TestSSHDisabledEndpoint]] - `uses` [INFERRED]
+- [[TestSSHExec]] - `uses` [INFERRED]
+- [[TestSSHHistory]] - `uses` [INFERRED]
+- [[TestSSHHosts]] - `uses` [INFERRED]
+- [[TestSSHRequireApprovalFalse]] - `uses` [INFERRED]
+- [[TestToolRiskClassification]] - `uses` [INFERRED]
+- [[ToolRiskConfig]] - `uses` [INFERRED]
+- [[ToolRiskPolicy]] - `uses` [INFERRED]
+- [[WebSocket]] - `uses` [INFERRED]
+- [[approval_queue()_1]] - `calls` [EXTRACTED]
+- [[config.py]] - `contains` [EXTRACTED]
+- [[conftest.py]] - `imports` [EXTRACTED]
+- [[enhanced_queue()]] - `calls` [EXTRACTED]
+- [[enhanced_queue.py]] - `imports` [EXTRACTED]
+- [[full_pipeline_config()]] - `calls` [EXTRACTED]
+- [[load_config()]] - `calls` [EXTRACTED]
+- [[queue()]] - `calls` [EXTRACTED]
+- [[queue.py]] - `imports` [EXTRACTED]
+- [[queue_config()]] - `calls` [EXTRACTED]
+- [[test_approval_queue.py]] - `imports` [EXTRACTED]
+- [[test_approval_stress.py]] - `imports` [EXTRACTED]
+- [[test_config()]] - `calls` [EXTRACTED]
+- [[test_config()_1]] - `calls` [EXTRACTED]
+- [[test_config_with_ssh()]] - `calls` [EXTRACTED]
+- [[test_enhanced_approval.py]] - `imports` [EXTRACTED]
+- [[test_mcp_result_endpoint.py]] - `imports` [EXTRACTED]
+- [[test_security_integration.py]] - `imports` [EXTRACTED]
+- [[test_ssh_endpoints.py]] - `imports` [EXTRACTED]
+- [[test_websocket_notifications()]] - `calls` [EXTRACTED]
+
+#graphify/code #graphify/INFERRED #community/Enhanced_Approval_Queue

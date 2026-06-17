@@ -1,0 +1,45 @@
+---
+source_file: "gateway/tests/test_security_hardening.py"
+type: "code"
+community: "Module Group 79"
+location: "L1"
+tags:
+  - graphify/code
+  - graphify/EXTRACTED
+  - community/Module_Group_79
+---
+
+# test_security_hardening.py
+
+## Connections
+- [[AgentRegistry]] - `imports` [EXTRACTED]
+- [[ContainerConfig]] - `imports` [EXTRACTED]
+- [[ContainerSnapshot]] - `imports` [EXTRACTED]
+- [[DriftDetector]] - `imports` [EXTRACTED]
+- [[EgressAction]] - `imports` [EXTRACTED]
+- [[EgressFilter_1]] - `imports` [EXTRACTED]
+- [[EgressFilterConfig]] - `imports` [EXTRACTED]
+- [[EgressPolicy]] - `imports` [EXTRACTED]
+- [[EncryptedStore]] - `imports` [EXTRACTED]
+- [[IsolationStatus]] - `imports` [EXTRACTED]
+- [[IsolationVerifier]] - `imports` [EXTRACTED]
+- [[PatternRule]] - `imports` [EXTRACTED]
+- [[PromptGuard]] - `imports` [EXTRACTED]
+- [[TestAgentIsolation]] - `contains` [EXTRACTED]
+- [[TestDriftDetector]] - `contains` [EXTRACTED]
+- [[TestDriftDetectorHardened]] - `contains` [EXTRACTED]
+- [[TestEgressFilter]] - `contains` [EXTRACTED]
+- [[TestEgressSSRF]] - `contains` [EXTRACTED]
+- [[TestEncryptedStore]] - `contains` [EXTRACTED]
+- [[TestPromptGuard_1]] - `contains` [EXTRACTED]
+- [[TestPromptGuardEvasion]] - `contains` [EXTRACTED]
+- [[TestSecureZero]] - `contains` [EXTRACTED]
+- [[TestTrustManager]] - `contains` [EXTRACTED]
+- [[TestTrustManagerHardened]] - `contains` [EXTRACTED]
+- [[ThreatAction]] - `imports` [EXTRACTED]
+- [[TrustConfig]] - `imports` [EXTRACTED]
+- [[TrustLevel_1]] - `imports` [EXTRACTED]
+- [[TrustManager]] - `imports` [EXTRACTED]
+- [[_secure_zero()]] - `imports` [EXTRACTED]
+
+#graphify/code #graphify/EXTRACTED #community/Module_Group_79

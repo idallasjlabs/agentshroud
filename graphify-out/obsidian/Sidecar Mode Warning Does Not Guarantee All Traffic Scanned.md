@@ -1,0 +1,17 @@
+---
+source_file: "docker-compose.sidecar.yml"
+type: "rationale"
+community: "Module Group 138"
+location: "lines 1-7"
+tags:
+  - graphify/rationale
+  - graphify/EXTRACTED
+  - community/Module_Group_138
+---
+
+# Sidecar Mode Warning: Does Not Guarantee All Traffic Scanned
+
+## Connections
+- [[docker-compose.sidecar.yml Optional Sidecar Scanning Mode]] - `references` [EXTRACTED]
+
+#graphify/rationale #graphify/EXTRACTED #community/Module_Group_138

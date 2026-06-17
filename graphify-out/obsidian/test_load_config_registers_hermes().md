@@ -1,0 +1,19 @@
+---
+source_file: "gateway/tests/test_config.py"
+type: "code"
+community: "Module Group 246"
+location: "L100"
+tags:
+  - graphify/code
+  - graphify/EXTRACTED
+  - community/Module_Group_246
+---
+
+# test_load_config_registers_hermes()
+
+## Connections
+- [[When agentshroud.yaml declares hermes, load_config() populates it in bots.]] - `rationale_for` [EXTRACTED]
+- [[_load_config()]] - `calls` [EXTRACTED]
+- [[test_config.py]] - `contains` [EXTRACTED]
+
+#graphify/code #graphify/EXTRACTED #community/Module_Group_246
