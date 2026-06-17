@@ -1,0 +1,17 @@
+---
+source_file: "gateway/tests/test_telegram_proxy_outbound.py"
+type: "rationale"
+community: "Module Group 684"
+location: "L1191"
+tags:
+  - graphify/rationale
+  - graphify/EXTRACTED
+  - community/Module_Group_684
+---
+
+# Empty text field must not bypass filtering when draft contains tool payload.
+
+## Connections
+- [[.test_collaborator_empty_text_with_draft_payload_is_normalized_json()]] - `rationale_for` [EXTRACTED]
+
+#graphify/rationale #graphify/EXTRACTED #community/Module_Group_684
