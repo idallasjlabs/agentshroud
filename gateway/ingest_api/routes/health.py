@@ -77,6 +77,27 @@ async def health_check_detail(auth: AuthRequired):
         _ct_err = getattr(app_state, "collaborator_tracker_init_error", None)
         tracker_health = {"healthy": False, "error": _ct_err or "tracker not initialized"}
 
+    # Per-bot inventory — query Docker for each configured bot container.
+    bots_inventory: dict = {}
+    if hasattr(app_state, "config") and app_state.config.bots:
+        try:
+            from ..runtime import get_engine as _get_engine_fn
+
+            _eng = _get_engine_fn()
+            _containers = {c.name: c for c in _eng.ps(all=True)}
+            for bot_id in app_state.config.bots:
+                cname = f"agentshroud-{bot_id}"
+                cinfo = _containers.get(cname)
+                bots_inventory[bot_id] = {
+                    "container": cname,
+                    "healthy": cinfo is not None
+                    and ("Up" in cinfo.status or "healthy" in cinfo.status.lower()),
+                    "image": cinfo.image if cinfo else None,
+                    "status": cinfo.status if cinfo else "not found",
+                }
+        except Exception as _e:
+            bots_inventory = {"error": str(_e)}
+
     return StatusResponse(
         status="healthy",
         version=__version__,
@@ -113,4 +134,5 @@ async def health_check_detail(auth: AuthRequired):
             ),
         },
         tracker=tracker_health,
+        bots=bots_inventory or None,
     )

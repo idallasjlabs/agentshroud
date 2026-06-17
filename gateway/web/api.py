@@ -86,25 +86,41 @@ async def require_auth(
 
 # --- Input validation ------------------------------------------------------
 
-VALID_SERVICES = frozenset(
-    {
-        "agentshroud-gateway",
-        "agentshroud-openclaw",
-        "falco",
-        "wazuh-agent",
-        "clamav",
-    }
-)
+# Sidecar services that are always valid regardless of bot config.
+_SIDECAR_SERVICES = frozenset({"agentshroud-gateway", "falco", "wazuh-agent", "clamav"})
+
+# Static fallback used when config cannot be loaded (e.g., during testing).
+VALID_SERVICES = _SIDECAR_SERVICES | frozenset({"agentshroud-openclaw"})
 
 VALID_KILLSWITCH_MODES = frozenset({"freeze", "shutdown", "disconnect"})
 
 
+def _bot_service_names() -> list[str]:
+    """Return container names for all configured bots (e.g. ['agentshroud-openclaw', 'agentshroud-hermes'])."""
+    try:
+        cfg = load_config()
+        return [f"agentshroud-{bot_id}" for bot_id in cfg.bots]
+    except Exception:
+        return ["agentshroud-openclaw"]
+
+
+def _valid_services() -> frozenset:
+    """Compute valid service names from config + sidecars at call-time."""
+    try:
+        cfg = load_config()
+        bot_names = frozenset(f"agentshroud-{bot_id}" for bot_id in cfg.bots)
+        return _SIDECAR_SERVICES | bot_names
+    except Exception:
+        return VALID_SERVICES
+
+
 def _validate_service_name(name: str) -> str:
     """Validate service name against allowlist to prevent injection."""
-    if name not in VALID_SERVICES:
+    valid = _valid_services()
+    if name not in valid:
         raise HTTPException(
             status_code=400,
-            detail=f"Invalid service name. Must be one of: {sorted(VALID_SERVICES)}",
+            detail=f"Invalid service name. Must be one of: {sorted(valid)}",
         )
     return name
 
@@ -227,13 +243,7 @@ async def get_status(user: str = Depends(require_auth)) -> dict:
     disk = shutil.disk_usage("/")
 
     services = {}
-    service_names = [
-        "agentshroud-gateway",
-        "agentshroud-openclaw",
-        "falco",
-        "wazuh-agent",
-        "clamav",
-    ]
+    service_names = sorted(_valid_services())
     container_map = {c.name: c for c in containers}
 
     for svc_name in service_names:
@@ -339,11 +349,11 @@ async def killswitch(
     engine = _get_engine()
 
     if mode == "freeze":
-        for name in ["agentshroud-openclaw"]:
+        for name in _bot_service_names():
             try:
                 engine.pause(name)
-            except Exception:
-                pass
+            except Exception as _e:
+                logger.warning("killswitch freeze: could not pause %s: %s", name, _e)
         return {"status": "frozen", "mode": mode}
 
     elif mode == "shutdown":
@@ -354,12 +364,12 @@ async def killswitch(
         return {"status": "shutdown", "mode": mode}
 
     elif mode == "disconnect":
-        for name in ["agentshroud-openclaw"]:
+        for name in _bot_service_names():
             try:
                 engine.stop(name)
                 engine.rm(name, force=True)
-            except Exception:
-                pass
+            except Exception as _e:
+                logger.warning("killswitch disconnect: could not remove %s: %s", name, _e)
         return {"status": "disconnected", "mode": mode}
 
     return {"status": "unknown"}
@@ -453,7 +463,10 @@ async def rebuild(user: str = Depends(require_auth)) -> dict:
         engine.compose_down(config.compose_file)
         # Rebuild images
         engine.build("gateway/Dockerfile", "agentshroud-gateway:latest", ".")
-        engine.build(_get_default_bot_dockerfile(), "agentshroud-openclaw:latest", ".")
+        for bot_svc in _bot_service_names():
+            bot_id = bot_svc.removeprefix("agentshroud-")
+            bot_dockerfile = f"docker/bots/{bot_id}/Dockerfile"
+            engine.build(bot_dockerfile, f"{bot_svc}:latest", ".")
         engine.compose_up(config.compose_file)
         return {"status": "rebuilt"}
     except Exception as e:
@@ -693,7 +706,9 @@ async def upgrade_agentshroud(req: UpdateRequest, user: str = Depends(require_au
         engine = _get_engine()
         config = RuntimeConfig.from_env()
         engine.build("gateway/Dockerfile", "agentshroud-gateway:latest", ".")
-        engine.build(_get_default_bot_dockerfile(), "agentshroud-openclaw:latest", ".")
+        for bot_svc in _bot_service_names():
+            bot_id = bot_svc.removeprefix("agentshroud-")
+            engine.build(f"docker/bots/{bot_id}/Dockerfile", f"{bot_svc}:latest", ".")
         steps[-1]["status"] = "done"
 
         # 5. Restart services
@@ -803,9 +818,9 @@ async def get_logs(
         except Exception as e:
             raise HTTPException(status_code=404, detail=f"Service not found: {e}")
     else:
-        # Combined logs from all services
+        # Combined logs from gateway + all configured bots
         all_logs = {}
-        for svc in ["agentshroud-gateway", "agentshroud-openclaw"]:
+        for svc in ["agentshroud-gateway"] + _bot_service_names():
             try:
                 all_logs[svc] = engine.logs(svc, tail=tail).splitlines()
             except Exception:
@@ -836,7 +851,7 @@ async def ws_logs(websocket: WebSocket, token: str = Query(default="")):
             await asyncio.sleep(5)
             try:
                 engine = _get_engine()
-                for svc in ["agentshroud-gateway", "agentshroud-openclaw"]:
+                for svc in ["agentshroud-gateway"] + _bot_service_names():
                     try:
                         logs = engine.logs(svc, tail=5)
                         await websocket.send_json({"service": svc, "logs": logs.splitlines()})
