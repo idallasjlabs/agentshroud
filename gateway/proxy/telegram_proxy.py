@@ -360,12 +360,16 @@ class TelegramAPIProxy:
         sanitizer=None,
         replay_buffer=None,
         greeter=None,
+        default_bot_id: str = "openclaw",
     ):
         self.pipeline = pipeline
         self.middleware_manager = middleware_manager
         self.sanitizer = sanitizer
         self._replay_buffer = replay_buffer  # UpdateReplayBuffer | None
         self._collab_greeter = greeter  # CollaboratorGreeter | None
+        self._default_bot_id = (
+            default_bot_id  # used when no contextvar is set (out-of-request paths)
+        )
         self._stats = {
             "total_requests": 0,
             "messages_scanned": 0,
@@ -2789,9 +2793,9 @@ class TelegramAPIProxy:
         """Per-request bot_id for activity tracking.
 
         Returns the bot_id set by proxy_request (via _inbound_bot_id contextvar),
-        falling back to "openclaw" when called outside a proxy_request context.
+        falling back to _default_bot_id when called outside a proxy_request context.
         """
-        return _inbound_bot_id.get() or "openclaw"
+        return _inbound_bot_id.get() or self._default_bot_id
 
     async def proxy_request(
         self,
@@ -2806,7 +2810,7 @@ class TelegramAPIProxy:
         """Thin wrapper: sets per-request bot identity in contextvars so local replies
         egress through the correct bot token (multi-bot routing fix)."""
         _tok = _inbound_bot_token.set(bot_token)
-        _bid = _inbound_bot_id.set(bot_id or "openclaw")
+        _bid = _inbound_bot_id.set(bot_id or self._default_bot_id)
         try:
             return await self._proxy_request_impl(
                 bot_token, method, body, content_type, is_system, path_prefix

@@ -20,7 +20,7 @@ import pytest
 
 from gateway.ingest_api.config import PIIConfig
 from gateway.ingest_api.sanitizer import PIISanitizer
-from gateway.proxy.telegram_proxy import TelegramAPIProxy
+from gateway.proxy.telegram_proxy import TelegramAPIProxy, _inbound_bot_id
 
 
 def _make_sanitizer():
@@ -5357,3 +5357,28 @@ class TestOutboundScanUnification:
         assert "secret caption" not in json.dumps(result)
         assert "protected by agentshroud" in result.get("caption", "").lower()
         assert "text" not in result
+
+
+# ─────────────────────────────────────────────────────────────────────────────
+# Tests: _active_bot_id config-driven (chore/hermes-parity Item 10)
+# ─────────────────────────────────────────────────────────────────────────────
+
+
+class TestDefaultBotId:
+    """_active_bot_id returns the constructor-injected default when no contextvar is set."""
+
+    def test_default_is_openclaw_when_not_injected(self):
+        proxy = TelegramAPIProxy()
+        assert proxy._active_bot_id() == "openclaw"
+
+    def test_injected_default_overrides_openclaw(self):
+        proxy = TelegramAPIProxy(default_bot_id="hermes")
+        assert proxy._active_bot_id() == "hermes"
+
+    def test_contextvar_takes_precedence_over_default(self):
+        proxy = TelegramAPIProxy(default_bot_id="hermes")
+        token = _inbound_bot_id.set("openclaw")
+        try:
+            assert proxy._active_bot_id() == "openclaw"
+        finally:
+            _inbound_bot_id.reset(token)
