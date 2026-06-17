@@ -1019,6 +1019,19 @@
       "StatusResponse": {
         "description": "Health check response with v0.8.0 security dashboard data",
         "properties": {
+          "bots": {
+            "anyOf": [
+              {
+                "additionalProperties": true,
+                "type": "object"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "description": "Per-bot inventory: {bot_id: {healthy, image, container}}",
+            "title": "Bots"
+          },
           "config_loaded": {
             "description": "Whether config loaded successfully",
             "title": "Config Loaded",

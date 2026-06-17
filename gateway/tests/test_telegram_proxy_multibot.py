@@ -189,6 +189,7 @@ class TestMultiBotContextvarRouting:
         proxy = TelegramAPIProxy.__new__(TelegramAPIProxy)
         proxy._bot_token = default_token
         proxy._ssl_context = MagicMock()
+        proxy._default_bot_id = "openclaw"
         return proxy
 
     def test_active_send_token_returns_default_outside_request(self):

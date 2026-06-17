@@ -154,6 +154,9 @@ class StatusResponse(BaseModel):
     egress: Optional[dict] = Field(None, description="Egress firewall stats")
     proxies: Optional[dict] = Field(None, description="Proxy subsystem health (http, dns)")
     tracker: Optional[dict] = Field(None, description="Collaborator activity tracker health")
+    bots: Optional[dict] = Field(
+        None, description="Per-bot inventory: {bot_id: {healthy, image, container}}"
+    )
 
 
 class ApprovalQueueItem(BaseModel):
