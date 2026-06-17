@@ -1,0 +1,50 @@
+---
+source_file: "gateway/security/encoding_detector.py"
+type: "code"
+community: "Security Pipeline & Audit Chain"
+location: "L57"
+tags:
+  - graphify/code
+  - graphify/EXTRACTED
+  - community/Security_Pipeline__Audit_Chain
+---
+
+# EncodingDetector
+
+## Connections
+- [[.__init__()_61]] - `method` [EXTRACTED]
+- [[.analyze()_1]] - `method` [EXTRACTED]
+- [[.decode_base64_segments()]] - `method` [EXTRACTED]
+- [[.decode_hex()]] - `method` [EXTRACTED]
+- [[.decode_url()]] - `method` [EXTRACTED]
+- [[.replace_homoglyphs()]] - `method` [EXTRACTED]
+- [[.setup_method()_5]] - `calls` [EXTRACTED]
+- [[.strip_zero_width()]] - `method` [EXTRACTED]
+- [[.test_config_disable_base64()]] - `calls` [EXTRACTED]
+- [[PIISanitizer_3]] - `uses` [INFERRED]
+- [[SecurityPipeline_1]] - `uses` [INFERRED]
+- [[TestE2E01PromptGuardBlocking]] - `uses` [INFERRED]
+- [[TestE2E02InboundPIIRedaction]] - `uses` [INFERRED]
+- [[TestE2E03OutboundPIIRedaction]] - `uses` [INFERRED]
+- [[TestE2E04ContextGuardBlocking]] - `uses` [INFERRED]
+- [[TestE2E05CanaryTripwire]] - `uses` [INFERRED]
+- [[TestE2E06EncodingBypassDetection]] - `uses` [INFERRED]
+- [[TestE2E07TrustEnforcement]] - `uses` [INFERRED]
+- [[TestE2E08AuditChainIntegrity]] - `uses` [INFERRED]
+- [[TestE2E09SessionIsolation]] - `uses` [INFERRED]
+- [[TestE2E10FailClosed]] - `uses` [INFERRED]
+- [[TestEncodingDetector]] - `uses` [INFERRED]
+- [[_BrokenOutputCanary]] - `uses` [INFERRED]
+- [[_BrokenSanitizer]] - `uses` [INFERRED]
+- [[_make_full_pipeline()]] - `calls` [EXTRACTED]
+- [[encoding_detector.py]] - `contains` [EXTRACTED]
+- [[enforcement-audit-script.py]] - `imports` [EXTRACTED]
+- [[lifespan()_1]] - `calls` [EXTRACTED]
+- [[lifespan.py]] - `imports` [EXTRACTED]
+- [[pipeline()_1]] - `calls` [EXTRACTED]
+- [[run()]] - `calls` [EXTRACTED]
+- [[test_e2e_watchtower.py]] - `imports` [EXTRACTED]
+- [[test_encoding_detector.py]] - `imports` [EXTRACTED]
+- [[test_redteam_probes.py]] - `imports` [EXTRACTED]
+
+#graphify/code #graphify/EXTRACTED #community/Security_Pipeline__Audit_Chain

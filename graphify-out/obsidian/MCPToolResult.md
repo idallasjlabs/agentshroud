@@ -1,0 +1,87 @@
+---
+source_file: "gateway/proxy/mcp_proxy.py"
+type: "code"
+community: "Module Group 266"
+location: "L55"
+tags:
+  - graphify/code
+  - graphify/INFERRED
+  - community/Module_Group_266
+---
+
+# MCPToolResult
+
+## Connections
+- [[.__post_init__()_1]] - `method` [EXTRACTED]
+- [[._execute_tool_call()]] - `references` [EXTRACTED]
+- [[.process_tool_result()_1]] - `references` [EXTRACTED]
+- [[.test_admin_private_data_not_redacted_for_owner()]] - `calls` [EXTRACTED]
+- [[.test_admin_private_data_redacted_for_non_owner()]] - `calls` [EXTRACTED]
+- [[.test_clean_result_passes()]] - `calls` [EXTRACTED]
+- [[.test_error_result_logged()]] - `calls` [EXTRACTED]
+- [[.test_gateway_contributor_paths_redacted_for_non_owner()]] - `calls` [EXTRACTED]
+- [[.test_memory_markers_redacted_for_non_owner()]] - `calls` [EXTRACTED]
+- [[.test_mixed_allowed_blocked_chain()]] - `calls` [EXTRACTED]
+- [[.test_passthrough_process_tool_result()]] - `calls` [EXTRACTED]
+- [[.test_pii_redacted_in_result()]] - `calls` [EXTRACTED]
+- [[.test_private_redaction_emits_privacy_event()]] - `calls` [EXTRACTED]
+- [[.test_process_tool_result_handles_none_content()]] - `calls` [EXTRACTED]
+- [[.test_process_tool_result_redacts_private_data()]] - `calls` [EXTRACTED]
+- [[.test_result_audit_logged()]] - `calls` [EXTRACTED]
+- [[.test_result_processing_time()]] - `calls` [EXTRACTED]
+- [[.test_tool_result_timestamp_default()]] - `calls` [EXTRACTED]
+- [[Exception_3]] - `uses` [INFERRED]
+- [[FakeApprovalQueue]] - `uses` [INFERRED]
+- [[FakeConn]] - `uses` [INFERRED]
+- [[FakeProcess]] - `uses` [INFERRED]
+- [[MCPAuditTrail]] - `uses` [INFERRED]
+- [[MCPInspector]] - `uses` [INFERRED]
+- [[MCPPermissionManager]] - `uses` [INFERRED]
+- [[MCPProxy_1]] - `uses` [INFERRED]
+- [[MCPProxyConfig_3]] - `uses` [INFERRED]
+- [[MCPProxyConfig]] - `uses` [INFERRED]
+- [[MCPServerConfig]] - `uses` [INFERRED]
+- [[MCPToolCall_1]] - `uses` [INFERRED]
+- [[MCPTransport]] - `uses` [INFERRED]
+- [[Represents an MCP tool result.]] - `rationale_for` [EXTRACTED]
+- [[TestAllowDenyList]] - `uses` [INFERRED]
+- [[TestApprovalQueue]] - `uses` [INFERRED]
+- [[TestAuditQueries]] - `uses` [INFERRED]
+- [[TestAuditTrail]] - `uses` [INFERRED]
+- [[TestAuditTrailBounded]] - `uses` [INFERRED]
+- [[TestChainIntegrityMultiple]] - `uses` [INFERRED]
+- [[TestConfigParsing]] - `uses` [INFERRED]
+- [[TestConnectionPool]] - `uses` [INFERRED]
+- [[TestDataclasses]] - `uses` [INFERRED]
+- [[TestEgressFilterPaths]] - `uses` [INFERRED]
+- [[TestEmitPrivacyEvent]] - `uses` [INFERRED]
+- [[TestExecuteToolCall]] - `uses` [INFERRED]
+- [[TestExtractEgressTargets]] - `uses` [INFERRED]
+- [[TestHashChainIntegration]] - `uses` [INFERRED]
+- [[TestHttpSseConnection]] - `uses` [INFERRED]
+- [[TestInjectionDetection]] - `uses` [INFERRED]
+- [[TestInspectorEdgeCases]] - `uses` [INFERRED]
+- [[TestPIIDetection]] - `uses` [INFERRED]
+- [[TestPassthrough]] - `uses` [INFERRED]
+- [[TestPassthroughMode]] - `uses` [INFERRED]
+- [[TestPrivacyPolicyEvents]] - `uses` [INFERRED]
+- [[TestProcessingTime]] - `uses` [INFERRED]
+- [[TestProxyInterception]] - `uses` [INFERRED]
+- [[TestProxyPermissions]] - `uses` [INFERRED]
+- [[TestProxyRateLimiting]] - `uses` [INFERRED]
+- [[TestProxyResultProcessing]] - `uses` [INFERRED]
+- [[TestProxyStats]] - `uses` [INFERRED]
+- [[TestResultProcessingAndLifecycle]] - `uses` [INFERRED]
+- [[TestSanitizeAdminPrivateData]] - `uses` [INFERRED]
+- [[TestSensitiveOps]] - `uses` [INFERRED]
+- [[TestStdioConnection]] - `uses` [INFERRED]
+- [[TestSuspiciousEncoding]] - `uses` [INFERRED]
+- [[TestThreatLevelCalc]] - `uses` [INFERRED]
+- [[__init__.py_6]] - `imports` [EXTRACTED]
+- [[main.py_2]] - `imports` [EXTRACTED]
+- [[mcp_proxy.py]] - `contains` [EXTRACTED]
+- [[mcp_result_endpoint()]] - `calls` [EXTRACTED]
+- [[test_mcp_proxy.py]] - `imports` [EXTRACTED]
+- [[test_mcp_proxy_coverage.py]] - `imports` [EXTRACTED]
+
+#graphify/code #graphify/INFERRED #community/Module_Group_266

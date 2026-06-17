@@ -1,0 +1,31 @@
+---
+source_file: "gateway/tests/test_privacy_policy.py"
+type: "code"
+community: "Privacy Policy"
+location: "L1"
+tags:
+  - graphify/code
+  - graphify/EXTRACTED
+  - community/Privacy_Policy
+---
+
+# test_privacy_policy.py
+
+## Connections
+- [[PrivacyPolicy]] - `imports` [EXTRACTED]
+- [[PrivacyPolicyEnforcer]] - `imports` [EXTRACTED]
+- [[RBACConfig_1]] - `imports` [EXTRACTED]
+- [[Role_1]] - `imports` [EXTRACTED]
+- [[ServicePolicy]] - `imports` [EXTRACTED]
+- [[ServicePrivacy]] - `imports` [EXTRACTED]
+- [[TeamsConfig]] - `imports` [EXTRACTED]
+- [[TestAuditAndAlert]] - `contains` [EXTRACTED]
+- [[TestPrivacyPolicyParsing]] - `contains` [EXTRACTED]
+- [[TestResponseFiltering]] - `contains` [EXTRACTED]
+- [[TestServiceAccessControl]] - `contains` [EXTRACTED]
+- [[_make_rbac()]] - `contains` [EXTRACTED]
+- [[default_policy()]] - `contains` [EXTRACTED]
+- [[enforcer()_1]] - `contains` [EXTRACTED]
+- [[rbac()]] - `contains` [EXTRACTED]
+
+#graphify/code #graphify/EXTRACTED #community/Privacy_Policy

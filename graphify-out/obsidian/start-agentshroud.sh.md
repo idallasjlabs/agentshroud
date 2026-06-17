@@ -1,0 +1,27 @@
+---
+source_file: "docker/scripts/start-agentshroud.sh"
+type: "code"
+community: "Module Group 331"
+location: "L1"
+tags:
+  - graphify/code
+  - graphify/EXTRACTED
+  - community/Module_Group_331
+---
+
+# start-agentshroud.sh
+
+## Connections
+- [[_dns_warmup_probe()]] - `defines` [EXTRACTED]
+- [[_model_runtime_ready()]] - `defines` [EXTRACTED]
+- [[_read_secret_file()]] - `defines` [EXTRACTED]
+- [[_slack_channel_id()]] - `defines` [EXTRACTED]
+- [[_slack_send()]] - `defines` [EXTRACTED]
+- [[_telegram_bot_token()_1]] - `defines` [EXTRACTED]
+- [[_telegram_get_me_ready()_1]] - `defines` [EXTRACTED]
+- [[_telegram_send()_1]] - `defines` [EXTRACTED]
+- [[_telegram_send_photo()_1]] - `defines` [EXTRACTED]
+- [[op_proxy_read_with_retry()]] - `defines` [EXTRACTED]
+- [[start-agentshroud.sh script]] - `contains` [EXTRACTED]
+
+#graphify/code #graphify/EXTRACTED #community/Module_Group_331

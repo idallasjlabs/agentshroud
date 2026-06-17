@@ -1,0 +1,309 @@
+---
+type: community
+cohesion: 0.01
+members: 245
+---
+
+# PII Sanitizer & Resource Guard
+
+**Cohesion:** 0.01 - loosely connected
+**Members:** 245 nodes
+
+## Members
+- [[.__del__()]] - code - gateway/security/resource_guard.py
+- [[.__init__()_90]] - code - gateway/security/resource_guard.py
+- [[._alert_high_usage()]] - code - gateway/security/resource_guard.py
+- [[._build_bridge()]] - code - gateway/tests/test_resource_guard_wiring.py
+- [[._check_system_resources()_1]] - code - gateway/security/resource_guard.py
+- [[._cleanup_expired_usage()]] - code - gateway/security/resource_guard.py
+- [[._get_disk_io_stats()]] - code - gateway/security/resource_guard.py
+- [[._monitor_resources()]] - code - gateway/security/resource_guard.py
+- [[._start_monitoring_task()]] - code - gateway/security/resource_guard.py
+- [[.add_alert_callback()_1]] - code - gateway/security/resource_guard.py
+- [[.check_cpu_limit()]] - code - gateway/security/resource_guard.py
+- [[.check_disk_write_limit()]] - code - gateway/security/resource_guard.py
+- [[.check_memory_limit()]] - code - gateway/security/resource_guard.py
+- [[.cleanup_temp_files()]] - code - gateway/security/resource_guard.py
+- [[.get_usage_stats()]] - code - gateway/security/resource_guard.py
+- [[.guard()_6]] - code - gateway/tests/test_security_audit.py
+- [[.register_temp_file()]] - code - gateway/security/resource_guard.py
+- [[.setup_method()_19]] - code - gateway/tests/test_resource_guard.py
+- [[.start_request_tracking()]] - code - gateway/security/resource_guard.py
+- [[.stop()_10]] - code - gateway/security/resource_guard.py
+- [[.stop_monitoring()]] - code - gateway/security/resource_guard.py
+- [[.store()_1]] - code - gateway/tests/test_security_audit.py
+- [[.teardown_method()_4]] - code - gateway/tests/test_resource_guard.py
+- [[.test_agent_isolation_module()]] - code - gateway/tests/test_security_audit.py
+- [[.test_agent_registry_module()]] - code - gateway/tests/test_security_audit.py
+- [[.test_all_modules_have_copyright()]] - code - gateway/tests/test_security_audit.py
+- [[.test_all_security_modules_importable()]] - code - gateway/tests/test_security_audit.py
+- [[.test_base64_injection()]] - code - gateway/tests/test_security_audit.py
+- [[.test_bridge_registered_via_add_alert_callback_fires_through()]] - code - gateway/tests/test_resource_guard_wiring.py
+- [[.test_brief_spike_below_debounce_does_not_alert()]] - code - gateway/tests/test_resource_guard.py
+- [[.test_check_cpu_limit_returns_false_on_exception()]] - code - gateway/tests/test_round2_hardening.py
+- [[.test_check_disk_write_limit_returns_false_on_exception()]] - code - gateway/tests/test_round2_hardening.py
+- [[.test_check_memory_limit_returns_false_on_exception()]] - code - gateway/tests/test_round2_hardening.py
+- [[.test_check_resource_over_limit_blocked()]] - code - gateway/tests/test_resource_guard.py
+- [[.test_check_resource_temp_files_limit()]] - code - gateway/tests/test_resource_guard.py
+- [[.test_check_resource_under_limit_passes()]] - code - gateway/tests/test_resource_guard.py
+- [[.test_ciphertext_not_plaintext()]] - code - gateway/tests/test_security_audit.py
+- [[.test_clean_conversation()]] - code - gateway/tests/test_security_audit.py
+- [[.test_clean_message_not_blocked()]] - code - gateway/tests/test_security_audit.py
+- [[.test_clean_technical_message()]] - code - gateway/tests/test_security_audit.py
+- [[.test_consent_framework_loads()]] - code - gateway/tests/test_security_audit.py
+- [[.test_context_window_stuffing()]] - code - gateway/tests/test_security_audit.py
+- [[.test_conversation_history_manipulation()]] - code - gateway/tests/test_security_audit.py
+- [[.test_cpu_limit_check()]] - code - gateway/tests/test_security_audit.py
+- [[.test_credit_card_amex()]] - code - gateway/tests/test_security_audit.py
+- [[.test_credit_card_no_dashes()]] - code - gateway/tests/test_security_audit.py
+- [[.test_credit_card_visa()]] - code - gateway/tests/test_security_audit.py
+- [[.test_dan_jailbreak()]] - code - gateway/tests/test_security_audit.py
+- [[.test_different_plaintexts_different_ciphertexts()]] - code - gateway/tests/test_security_audit.py
+- [[.test_disk_write_limit()]] - code - gateway/tests/test_security_audit.py
+- [[.test_dockerfile_exists()]] - code - gateway/tests/test_security_audit.py
+- [[.test_email_standard()]] - code - gateway/tests/test_security_audit.py
+- [[.test_email_with_plus()]] - code - gateway/tests/test_security_audit.py
+- [[.test_empty_and_none_input()]] - code - gateway/tests/test_security_audit.py
+- [[.test_empty_input()_2]] - code - gateway/tests/test_security_audit.py
+- [[.test_encrypt_decrypt_roundtrip()]] - code - gateway/tests/test_security_audit.py
+- [[.test_encrypt_json()]] - code - gateway/tests/test_security_audit.py
+- [[.test_fake_system_message()]] - code - gateway/tests/test_security_audit.py
+- [[.test_ignore_previous_instructions()]] - code - gateway/tests/test_security_audit.py
+- [[.test_indirect_injection_url()]] - code - gateway/tests/test_security_audit.py
+- [[.test_instruction_override()]] - code - gateway/tests/test_security_audit.py
+- [[.test_invalid_resource_type()]] - code - gateway/tests/test_resource_guard.py
+- [[.test_json_injection()]] - code - gateway/tests/test_security_audit.py
+- [[.test_key_rotation()]] - code - gateway/tests/test_security_audit.py
+- [[.test_markdown_heading_injection()]] - code - gateway/tests/test_security_audit.py
+- [[.test_memory_limit_check()]] - code - gateway/tests/test_security_audit.py
+- [[.test_missing_timestamp_falls_back_to_zero()]] - code - gateway/tests/test_resource_guard_wiring.py
+- [[.test_multilingual_injection()]] - code - gateway/tests/test_security_audit.py
+- [[.test_multiple_agents_isolated()]] - code - gateway/tests/test_resource_guard.py
+- [[.test_multiple_pii_single_message()]] - code - gateway/tests/test_security_audit.py
+- [[.test_network_validator_init()]] - code - gateway/tests/test_security_audit.py
+- [[.test_no_eval_or_exec_in_security()]] - code - gateway/tests/test_security_audit.py
+- [[.test_no_false_positive_on_dates()]] - code - gateway/tests/test_security_audit.py
+- [[.test_no_false_positive_on_zip()]] - code - gateway/tests/test_security_audit.py
+- [[.test_no_hardcoded_secrets_in_source()]] - code - gateway/tests/test_security_audit.py
+- [[.test_non_spike_alert_dispatched_with_medium_severity()]] - code - gateway/tests/test_resource_guard_wiring.py
+- [[.test_oauth_confused_deputy()]] - code - gateway/tests/test_security_audit.py
+- [[.test_oauth_pkce_violation()]] - code - gateway/tests/test_security_audit.py
+- [[.test_phone_international()]] - code - gateway/tests/test_security_audit.py
+- [[.test_phone_us_standard()]] - code - gateway/tests/test_security_audit.py
+- [[.test_pii_boundary_handling()]] - code - gateway/tests/test_security_audit.py
+- [[.test_pii_in_code_block()]] - code - gateway/tests/test_security_audit.py
+- [[.test_pii_in_json()]] - code - gateway/tests/test_security_audit.py
+- [[.test_pii_with_obfuscation_attempt()]] - code - gateway/tests/test_security_audit.py
+- [[.test_prompt_leaking_via_markdown()]] - code - gateway/tests/test_security_audit.py
+- [[.test_rapid_fire_messages()]] - code - gateway/tests/test_security_audit.py
+- [[.test_reject_empty_token()]] - code - gateway/tests/test_security_audit.py
+- [[.test_reject_garbage_token()]] - code - gateway/tests/test_security_audit.py
+- [[.test_reject_malformed_jwt()]] - code - gateway/tests/test_security_audit.py
+- [[.test_reject_none_algorithm()]] - code - gateway/tests/test_security_audit.py
+- [[.test_repeated_injection()]] - code - gateway/tests/test_security_audit.py
+- [[.test_request_count_limiting()]] - code - gateway/tests/test_resource_guard.py
+- [[.test_resource_guard_config()]] - code - gateway/tests/test_resource_guard.py
+- [[.test_resource_guard_init()]] - code - gateway/tests/test_security_audit.py
+- [[.test_role_reassignment()]] - code - gateway/tests/test_security_audit.py
+- [[.test_role_switching()]] - code - gateway/tests/test_security_audit.py
+- [[.test_security_toolchain_clamav()]] - code - gateway/tests/test_security_audit.py
+- [[.test_security_toolchain_falco()]] - code - gateway/tests/test_security_audit.py
+- [[.test_security_toolchain_trivy()]] - code - gateway/tests/test_security_audit.py
+- [[.test_security_toolchain_wazuh()]] - code - gateway/tests/test_security_audit.py
+- [[.test_session_binding()]] - code - gateway/tests/test_security_audit.py
+- [[.test_session_different_fingerprints()]] - code - gateway/tests/test_security_audit.py
+- [[.test_session_isolation()]] - code - gateway/tests/test_security_audit.py
+- [[.test_session_rate_limit()]] - code - gateway/tests/test_security_audit.py
+- [[.test_setup_resource_guard_returns_real_guard_with_default_limits()]] - code - gateway/tests/test_resource_guard_wiring.py
+- [[.test_setup_with_custom_limits_overrides_defaults()]] - code - gateway/tests/test_resource_guard_wiring.py
+- [[.test_spike_alert_dispatched_with_high_severity()]] - code - gateway/tests/test_resource_guard_wiring.py
+- [[.test_ssn_no_dashes()]] - code - gateway/tests/test_security_audit.py
+- [[.test_ssn_space_separated()]] - code - gateway/tests/test_security_audit.py
+- [[.test_ssn_standard_format()]] - code - gateway/tests/test_security_audit.py
+- [[.test_stop_cancels_monitor_task()]] - code - gateway/tests/test_resource_guard.py
+- [[.test_stop_cancels_monitor_task_and_idempotent()]] - code - gateway/tests/test_resource_guard_wiring.py
+- [[.test_subagent_monitor_loaded()]] - code - gateway/tests/test_security_audit.py
+- [[.test_system_prompt_extraction()]] - code - gateway/tests/test_security_audit.py
+- [[.test_system_resource_monitoring_alerts_after_debounce()]] - code - gateway/tests/test_resource_guard.py
+- [[.test_tampered_ciphertext_fails()]] - code - gateway/tests/test_security_audit.py
+- [[.test_token_smuggling()]] - code - gateway/tests/test_security_audit.py
+- [[.test_unicode_pii()]] - code - gateway/tests/test_security_audit.py
+- [[.test_usage_stats()]] - code - gateway/tests/test_security_audit.py
+- [[.test_window_expiry_resets_usage()]] - code - gateway/tests/test_resource_guard.py
+- [[.test_wrong_key_fails()]] - code - gateway/tests/test_security_audit.py
+- [[.test_xml_injection()]] - code - gateway/tests/test_security_audit.py
+- [[.test_xml_tag_injection()]] - code - gateway/tests/test_security_audit.py
+- [[.to_dict()_5]] - code - gateway/security/canary.py
+- [[.token_validator()]] - code - gateway/tests/test_security_audit.py
+- [[A single over-threshold sample followed by an under-threshold sample is suppress]] - rationale - gateway/tests/test_resource_guard.py
+- [[Add a callback function to be called when resource alerts are triggered.]] - rationale - gateway/security/resource_guard.py
+- [[Agent registry should be importable.]] - rationale - gateway/tests/test_security_audit.py
+- [[All security modules should have copyright header.]] - rationale - gateway/tests/test_security_audit.py
+- [[Amex card 378282246310005 (15 digits starting with 37).]] - rationale - gateway/tests/test_security_audit.py
+- [[Any_29]] - code - gateway/security/canary.py
+- [[Any_50]] - code - gateway/security/resource_guard.py
+- [[Any_62]] - code - gateway/tests/test_resource_guard_wiring.py
+- [[Attempt to hide PII with zero-width chars.]] - rationale - gateway/tests/test_security_audit.py
+- [[Background task to monitor resource usage and trigger alerts.]] - rationale - gateway/security/resource_guard.py
+- [[Base64 encoded instruction.]] - rationale - gateway/tests/test_security_audit.py
+- [[Best-effort cleanup for test contexts that don't call stop().]] - rationale - gateway/security/resource_guard.py
+- [[CanaryResult]] - code - gateway/security/canary.py
+- [[Card without dashes 4111111111111111.]] - rationale - gateway/tests/test_security_audit.py
+- [[Check if agent has exceeded CPU time limit.]] - rationale - gateway/security/resource_guard.py
+- [[Check if agent has exceeded disk write limit.]] - rationale - gateway/security/resource_guard.py
+- [[Check if agent has exceeded memory limit.]] - rationale - gateway/security/resource_guard.py
+- [[Check system-wide resource usage for anomalies (synchronous).]] - rationale - gateway/security/resource_guard.py
+- [[Clean up old usage data (older than 5 minutes).]] - rationale - gateway/security/resource_guard.py
+- [[Clean up temporary files for an agent.]] - rationale - gateway/security/resource_guard.py
+- [[Configuration for resource limits.]] - rationale - gateway/security/resource_guard.py
+- [[Current resource usage metrics.]] - rationale - gateway/security/resource_guard.py
+- [[Dates should not be flagged as SSNphone.]] - rationale - gateway/tests/test_security_audit.py
+- [[Different fingerprints should create different sessions.]] - rationale - gateway/tests/test_security_audit.py
+- [[Different sessions should not share state unsafely.]] - rationale - gateway/tests/test_security_audit.py
+- [[Dockerfile should be present for reproducible builds.]] - rationale - gateway/tests/test_security_audit.py
+- [[Edge case empty string.]] - rationale - gateway/tests/test_security_audit.py
+- [[Email with plus addressing user+tag@gmail.com.]] - rationale - gateway/tests/test_security_audit.py
+- [[End-to-end register the bridge on a real ResourceGuard, trigger         its ale]] - rationale - gateway/tests/test_resource_guard_wiring.py
+- [[Every security module should import without error.]] - rationale - gateway/tests/test_security_audit.py
+- [[Fill context with repeated instructions.]] - rationale - gateway/tests/test_security_audit.py
+- [[Get current disk IO statistics.]] - rationale - gateway/security/resource_guard.py
+- [[Get current usage statistics.]] - rationale - gateway/security/resource_guard.py
+- [[Get the global resource guard instance, creating it lazily on first call.]] - rationale - gateway/security/resource_guard.py
+- [[Injection in another language.]] - rationale - gateway/tests/test_security_audit.py
+- [[International phone +1-555-867-5309.]] - rationale - gateway/tests/test_security_audit.py
+- [[IsolationStatus]] - code - gateway/security/agent_isolation.py
+- [[Key rotation should re-encrypt all blobs.]] - rationale - gateway/tests/test_security_audit.py
+- [[Markdown-based injection.]] - rationale - gateway/tests/test_security_audit.py
+- [[Monitor and limit resource usage per agentrequest.]] - rationale - gateway/security/resource_guard.py
+- [[Multiple PII entities in one message.]] - rationale - gateway/tests/test_security_audit.py
+- [[No hardcoded secrets in Python source files.]] - rationale - gateway/tests/test_security_audit.py
+- [[Normal messages should pass.]] - rationale - gateway/tests/test_security_audit.py
+- [[PII at message start and end.]] - rationale - gateway/tests/test_security_audit.py
+- [[PII embedded in JSON.]] - rationale - gateway/tests/test_security_audit.py
+- [[PII in codemarkdown blocks.]] - rationale - gateway/tests/test_security_audit.py
+- [[PII with Unicode characters nearby.]] - rationale - gateway/tests/test_security_audit.py
+- [[PIIConfig_1]] - code - gateway/ingest_api/sanitizer.py
+- [[Rapid messages shouldn't cause errors.]] - rationale - gateway/tests/test_security_audit.py
+- [[Recreate the lifespan bridge closure verbatim from gatewayingest_apilifespan.p]] - rationale - gateway/tests/test_resource_guard_wiring.py
+- [[RedirectMismatch]] - code - gateway/security/oauth_security.py
+- [[Register a temporary file for tracking.]] - rationale - gateway/security/resource_guard.py
+- [[Reject JWTs with alg=none (classic attack).]] - rationale - gateway/tests/test_security_audit.py
+- [[ResourceGuard]] - code - gateway/security/resource_guard.py
+- [[ResourceGuard is instantiated at startup and reachable on app_state.]] - rationale - gateway/tests/test_resource_guard_wiring.py
+- [[ResourceLimits]] - code - gateway/security/resource_guard.py
+- [[ResourceUsage]] - code - gateway/security/resource_guard.py
+- [[Result of running the canary system.]] - rationale - gateway/security/canary.py
+- [[SSN in standard XXX-XX-XXXX format.]] - rationale - gateway/tests/test_security_audit.py
+- [[SSN with spaces 123 45 6789.]] - rationale - gateway/tests/test_security_audit.py
+- [[SSN without dashes 123456789 — Presidio+spaCy only (regex needs dashes).]] - rationale - gateway/tests/test_security_audit.py
+- [[Same injection multiple times shouldn't bypass.]] - rationale - gateway/tests/test_security_audit.py
+- [[Same plaintext encrypted twice should produce different ciphertext (random IV).]] - rationale - gateway/tests/test_security_audit.py
+- [[Security modules should not use eval() or exec().]] - rationale - gateway/tests/test_security_audit.py
+- [[Session]] - code - gateway/security/session_security.py
+- [[Session must bind to user identity.]] - rationale - gateway/tests/test_security_audit.py
+- [[Setup resource guard with custom limits.]] - rationale - gateway/security/resource_guard.py
+- [[Standard email address.]] - rationale - gateway/tests/test_security_audit.py
+- [[Start background monitoring task.]] - rationale - gateway/security/resource_guard.py
+- [[Start tracking resources for a specific agentrequest.]] - rationale - gateway/security/resource_guard.py
+- [[Stop background monitoring task cleanly.]] - rationale - gateway/security/resource_guard.py
+- [[Stop background monitoring.]] - rationale - gateway/security/resource_guard.py
+- [[Sustained high CPU fires the alert after debounce samples are crossed.]] - rationale - gateway/tests/test_resource_guard.py
+- [[Technical discussion mentioning 'system' shouldn't trigger.]] - rationale - gateway/tests/test_security_audit.py
+- [[Test PII sanitization — works with Presidio (Python ≤3.13) or regex fallback (3.]] - rationale - gateway/tests/test_security_audit.py
+- [[Test ResourceGuardConfig dataclass.]] - rationale - gateway/tests/test_resource_guard.py
+- [[Test authentication and authorization enforcement.]] - rationale - gateway/tests/test_security_audit.py
+- [[Test container hardening and runtime security.]] - rationale - gateway/tests/test_security_audit.py
+- [[Test context manipulation detection.]] - rationale - gateway/tests/test_security_audit.py
+- [[Test encryption, key management, and secret handling.]] - rationale - gateway/tests/test_security_audit.py
+- [[Test handling of invalid resource types.]] - rationale - gateway/tests/test_resource_guard.py
+- [[Test prompt injection detection with adversarial payloads.]] - rationale - gateway/tests/test_security_audit.py
+- [[Test request count per minute limiting.]] - rationale - gateway/tests/test_resource_guard.py
+- [[Test resource limits and DoS prevention.]] - rationale - gateway/tests/test_security_audit.py
+- [[Test supply chain security measures.]] - rationale - gateway/tests/test_security_audit.py
+- [[Test temp file count limiting.]] - rationale - gateway/tests/test_resource_guard.py
+- [[Test that different agents have isolated resource tracking.]] - rationale - gateway/tests/test_resource_guard.py
+- [[Test that resource usage over limits is blocked.]] - rationale - gateway/tests/test_resource_guard.py
+- [[Test that resource usage resets after time window.]] - rationale - gateway/tests/test_resource_guard.py
+- [[Test that resource usage under limits passes.]] - rationale - gateway/tests/test_resource_guard.py
+- [[TestAuth]] - code - gateway/tests/test_security_audit.py
+- [[TestContainerSecurity]] - code - gateway/tests/test_security_audit.py
+- [[TestContextGuard_1]] - code - gateway/tests/test_security_audit.py
+- [[TestCryptography]] - code - gateway/tests/test_security_audit.py
+- [[TestPIIDetection_1]] - code - gateway/tests/test_security_audit.py
+- [[TestPromptGuard]] - code - gateway/tests/test_security_audit.py
+- [[TestResourceGuard]] - code - gateway/tests/test_resource_guard.py
+- [[TestResourceGuardAlertBridge]] - code - gateway/tests/test_resource_guard_wiring.py
+- [[TestResourceGuardFailClosed]] - code - gateway/tests/test_round2_hardening.py
+- [[TestResourceGuardLifecycle]] - code - gateway/tests/test_resource_guard_wiring.py
+- [[TestResourceGuardWiring]] - code - gateway/tests/test_resource_guard_wiring.py
+- [[TestResourceProtection]] - code - gateway/tests/test_security_audit.py
+- [[TestSupplyChain_1]] - code - gateway/tests/test_security_audit.py
+- [[The lifespan bridges ResourceGuard's native callback payload to AlertDispatcher.]] - rationale - gateway/tests/test_resource_guard_wiring.py
+- [[The lifespan must stop the background monitor task on shutdown.]] - rationale - gateway/tests/test_resource_guard_wiring.py
+- [[Token boundary attack.]] - rationale - gateway/tests/test_security_audit.py
+- [[Trigger a resource usage alert synchronously.]] - rationale - gateway/security/resource_guard.py
+- [[URL-based indirect injection.]] - rationale - gateway/tests/test_security_audit.py
+- [[US phone (555) 867-5309.]] - rationale - gateway/tests/test_security_audit.py
+- [[Verify resource check methods return False (deny) on exception.]] - rationale - gateway/tests/test_round2_hardening.py
+- [[Visa card 4111-1111-1111-1111.]] - rationale - gateway/tests/test_security_audit.py
+- [[ZIP codes should not be flagged as SSNphoneCC.]] - rationale - gateway/tests/test_security_audit.py
+- [[callable_1]] - code - gateway/security/resource_guard.py
+- [[get_resource_guard()]] - code - gateway/security/resource_guard.py
+- [[resource_guard.py]] - code - gateway/security/resource_guard.py
+- [[setup_resource_guard()]] - code - gateway/security/resource_guard.py
+- [[stop() should cancel background monitor cleanly.]] - rationale - gateway/tests/test_resource_guard.py
+- [[test_resource_guard.py]] - code - gateway/tests/test_resource_guard.py
+- [[test_resource_guard_wiring.py]] - code - gateway/tests/test_resource_guard_wiring.py
+- [[test_security_audit.py]] - code - gateway/tests/test_security_audit.py
+
+## Live Query (requires Dataview plugin)
+
+```dataview
+TABLE source_file, type FROM #community/PII_Sanitizer__Resource_Guard
+SORT file.name ASC
+```
+
+## Connections to other communities
+- 57 edges to [[_COMMUNITY_RBAC Middleware & Ingest API]]
+- 53 edges to [[_COMMUNITY_Environment Guard & Leak Detection]]
+- 40 edges to [[_COMMUNITY_Alert Dispatcher]]
+- 26 edges to [[_COMMUNITY_Module Group 103]]
+- 21 edges to [[_COMMUNITY_Subagent Monitor]]
+- 19 edges to [[_COMMUNITY_Module Group 110]]
+- 19 edges to [[_COMMUNITY_Module Group 63]]
+- 14 edges to [[_COMMUNITY_Tool Result Sanitizer]]
+- 14 edges to [[_COMMUNITY_Module Group 66]]
+- 11 edges to [[_COMMUNITY_Context Guard & Integrity]]
+- 11 edges to [[_COMMUNITY_Progressive Trust Levels]]
+- 10 edges to [[_COMMUNITY_Module Group 88]]
+- 10 edges to [[_COMMUNITY_Module Group 80]]
+- 9 edges to [[_COMMUNITY_Agent Isolation & Container Config]]
+- 9 edges to [[_COMMUNITY_Module Group 113]]
+- 9 edges to [[_COMMUNITY_Module Group 102]]
+- 9 edges to [[_COMMUNITY_DNS Filter & Tunneling Detection]]
+- 8 edges to [[_COMMUNITY_Module Group 137]]
+- 6 edges to [[_COMMUNITY_Module Group 79]]
+- 6 edges to [[_COMMUNITY_Module Group 155]]
+- 3 edges to [[_COMMUNITY_CLI & Core Gateway Routes]]
+- 3 edges to [[_COMMUNITY_Module Group 92]]
+- 3 edges to [[_COMMUNITY_Module Group 67]]
+- 3 edges to [[_COMMUNITY_Module Group 176]]
+- 2 edges to [[_COMMUNITY_Gateway Config & Lifespan]]
+- 2 edges to [[_COMMUNITY_Module Group 258]]
+- 2 edges to [[_COMMUNITY_Module Group 257]]
+- 2 edges to [[_COMMUNITY_URL Analyzer & Content Scanner]]
+- 1 edge to [[_COMMUNITY_Telegram Proxy Core]]
+- 1 edge to [[_COMMUNITY_Module Group 323]]
+- 1 edge to [[_COMMUNITY_Module Group 285]]
+- 1 edge to [[_COMMUNITY_Egress Filter & Approval]]
+- 1 edge to [[_COMMUNITY_Module Group 141]]
+- 1 edge to [[_COMMUNITY_Module Group 114]]
+- 1 edge to [[_COMMUNITY_Module Group 189]]
+- 1 edge to [[_COMMUNITY_Module Group 163]]
+
+## Top bridge nodes
+- [[test_security_audit.py]] - degree 54, connects to 23 communities
+- [[TestContainerSecurity]] - degree 46, connects to 18 communities
+- [[TestPIIDetection_1]] - degree 56, connects to 16 communities
+- [[TestPromptGuard]] - degree 52, connects to 16 communities
+- [[TestAuth]] - degree 49, connects to 16 communities

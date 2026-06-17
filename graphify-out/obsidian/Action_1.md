@@ -1,0 +1,77 @@
+---
+source_file: "gateway/security/rbac.py"
+type: "code"
+community: "RBAC Configuration"
+location: "L33"
+tags:
+  - graphify/code
+  - graphify/INFERRED
+  - community/RBAC_Configuration
+---
+
+# Action
+
+## Connections
+- [[._build_permission_matrix()]] - `references` [EXTRACTED]
+- [[.check_group_permission()]] - `references` [EXTRACTED]
+- [[.check_permission()]] - `references` [EXTRACTED]
+- [[Action]] - `uses` [INFERRED]
+- [[Actions that can be performed in the system.]] - `rationale_for` [EXTRACTED]
+- [[Any_6]] - `uses` [INFERRED]
+- [[Any_65]] - `uses` [INFERRED]
+- [[AuthRequired]] - `uses` [INFERRED]
+- [[Enum]] - `inherits` [EXTRACTED]
+- [[Exception]] - `uses` [INFERRED]
+- [[LogSanitizer]] - `uses` [INFERRED]
+- [[MCPProxyRequest]] - `uses` [INFERRED]
+- [[MCPResultRequest]] - `uses` [INFERRED]
+- [[MiddlewareManager]] - `uses` [INFERRED]
+- [[MiddlewareResult]] - `uses` [INFERRED]
+- [[OpProxyRequest]] - `uses` [INFERRED]
+- [[RBACConfig_3]] - `uses` [INFERRED]
+- [[RBACConfig_1]] - `uses` [INFERRED]
+- [[RBACManager]] - `uses` [INFERRED]
+- [[Request]] - `uses` [INFERRED]
+- [[Resource]] - `uses` [INFERRED]
+- [[Role_1]] - `uses` [INFERRED]
+- [[SOCWebSocketHandler_1]] - `uses` [INFERRED]
+- [[SSHExecRequest]] - `uses` [INFERRED]
+- [[SimpleNamespace]] - `uses` [INFERRED]
+- [[TestCoerceToWSEventExtra]] - `uses` [INFERRED]
+- [[TestCollectRecentEvents]] - `uses` [INFERRED]
+- [[TestEventFanOut]] - `uses` [INFERRED]
+- [[TestFromAnomalyAlert]] - `uses` [INFERRED]
+- [[TestFromAuditChainEntry]] - `uses` [INFERRED]
+- [[TestFromDict]] - `uses` [INFERRED]
+- [[TestFromEgressAttempt]] - `uses` [INFERRED]
+- [[TestFromPipelineResult]] - `uses` [INFERRED]
+- [[TestGetConfigToken]] - `uses` [INFERRED]
+- [[TestGroupRegistry]] - `uses` [INFERRED]
+- [[TestHandlerRun]] - `uses` [INFERRED]
+- [[TestMapSeverity]] - `uses` [INFERRED]
+- [[TestRBACConfig]] - `uses` [INFERRED]
+- [[TestRBACErrorHandling]] - `uses` [INFERRED]
+- [[TestRBACIntegration]] - `uses` [INFERRED]
+- [[TestRBACManager]] - `uses` [INFERRED]
+- [[TestResolveCaller]] - `uses` [INFERRED]
+- [[TestSCLCaller]] - `uses` [INFERRED]
+- [[TestSendEventAndKeepalive]] - `uses` [INFERRED]
+- [[TestTokenStorePruning]] - `uses` [INFERRED]
+- [[TestVerifyBearer]] - `uses` [INFERRED]
+- [[TestWSSOCEndpoint]] - `uses` [INFERRED]
+- [[ToolTier]] - `uses` [INFERRED]
+- [[ToolTier_2]] - `uses` [INFERRED]
+- [[WebSocket_2]] - `uses` [INFERRED]
+- [[_FakeBus]] - `uses` [INFERRED]
+- [[_FakeRBAC_1]] - `uses` [INFERRED]
+- [[auth.py_1]] - `imports` [EXTRACTED]
+- [[enforcement-audit-script.py]] - `imports` [EXTRACTED]
+- [[main.py_2]] - `imports` [EXTRACTED]
+- [[middleware.py]] - `imports` [EXTRACTED]
+- [[rbac.py]] - `contains` [EXTRACTED]
+- [[router.py_1]] - `imports` [EXTRACTED]
+- [[str]] - `inherits` [EXTRACTED]
+- [[test_rbac.py]] - `imports` [EXTRACTED]
+- [[test_soc_realtime_coverage.py]] - `imports` [EXTRACTED]
+
+#graphify/code #graphify/INFERRED #community/RBAC_Configuration

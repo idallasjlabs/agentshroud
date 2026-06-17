@@ -1,0 +1,62 @@
+---
+type: community
+cohesion: 0.06
+members: 34
+---
+
+# Module Group 145
+
+**Cohesion:** 0.06 - loosely connected
+**Members:** 34 nodes
+
+## Members
+- [[.test_answer_callback_success()]] - code - gateway/tests/test_egress_telegram_notify.py
+- [[.test_cleanup_expired_requests()_1]] - code - gateway/tests/test_egress_telegram_notify.py
+- [[.test_get_pending_count()]] - code - gateway/tests/test_egress_telegram_notify.py
+- [[.test_handle_callback_approve_1h()]] - code - gateway/tests/test_egress_telegram_notify.py
+- [[.test_handle_callback_approve_4h()]] - code - gateway/tests/test_egress_telegram_notify.py
+- [[.test_handle_callback_approve_permanent()]] - code - gateway/tests/test_egress_telegram_notify.py
+- [[.test_handle_callback_deny()]] - code - gateway/tests/test_egress_telegram_notify.py
+- [[.test_handle_callback_deny_returns_agent_id()]] - code - gateway/tests/test_egress_telegram_notify.py
+- [[.test_handle_callback_invalid_format()]] - code - gateway/tests/test_egress_telegram_notify.py
+- [[.test_handle_callback_missing_agent_id_safe()]] - code - gateway/tests/test_egress_telegram_notify.py
+- [[.test_handle_callback_request_not_found()]] - code - gateway/tests/test_egress_telegram_notify.py
+- [[.test_handle_callback_returns_agent_id()]] - code - gateway/tests/test_egress_telegram_notify.py
+- [[.test_notification_recipients_owner_only_by_default()]] - code - gateway/tests/test_egress_telegram_notify.py
+- [[.test_notify_pending_failure()]] - code - gateway/tests/test_egress_telegram_notify.py
+- [[.test_notify_pending_success()]] - code - gateway/tests/test_egress_telegram_notify.py
+- [[.test_risk_emoji_mapping()]] - code - gateway/tests/test_egress_telegram_notify.py
+- [[Collaborators are never added to notification_recipients — only owner gets egres]] - rationale - gateway/tests/test_egress_telegram_notify.py
+- [[Denial result also includes agent_id so collaborator can be notified.]] - rationale - gateway/tests/test_egress_telegram_notify.py
+- [[Missing agent_id in stored request returns empty string, not a crash.]] - rationale - gateway/tests/test_egress_telegram_notify.py
+- [[Test Telegram egress notification system.]] - rationale - gateway/tests/test_egress_telegram_notify.py
+- [[Test answering callback query.]] - rationale - gateway/tests/test_egress_telegram_notify.py
+- [[Test callback for non-existent request.]] - rationale - gateway/tests/test_egress_telegram_notify.py
+- [[Test cleanup removes expired pending requests.]] - rationale - gateway/tests/test_egress_telegram_notify.py
+- [[Test handling 1-hour time-limited approval callback.]] - rationale - gateway/tests/test_egress_telegram_notify.py
+- [[Test handling 4-hour time-limited approval callback.]] - rationale - gateway/tests/test_egress_telegram_notify.py
+- [[Test handling deny callback.]] - rationale - gateway/tests/test_egress_telegram_notify.py
+- [[Test handling invalid callback data.]] - rationale - gateway/tests/test_egress_telegram_notify.py
+- [[Test handling permanent (allow_always) approval callback.]] - rationale - gateway/tests/test_egress_telegram_notify.py
+- [[Test notification handles API failure gracefully.]] - rationale - gateway/tests/test_egress_telegram_notify.py
+- [[Test risk level emoji display.]] - rationale - gateway/tests/test_egress_telegram_notify.py
+- [[Test successful notification sending.]] - rationale - gateway/tests/test_egress_telegram_notify.py
+- [[TestEgressTelegramNotify]] - code - gateway/tests/test_egress_telegram_notify.py
+- [[handle_callback must include agent_id so the proxy can notify the originating co]] - rationale - gateway/tests/test_egress_telegram_notify.py
+- [[test_egress_telegram_notify.py]] - code - gateway/tests/test_egress_telegram_notify.py
+
+## Live Query (requires Dataview plugin)
+
+```dataview
+TABLE source_file, type FROM #community/Module_Group_145
+SORT file.name ASC
+```
+
+## Connections to other communities
+- 3 edges to [[_COMMUNITY_Module Group 279]]
+- 1 edge to [[_COMMUNITY_Module Group 667]]
+- 1 edge to [[_COMMUNITY_Module Group 668]]
+
+## Top bridge nodes
+- [[TestEgressTelegramNotify]] - degree 22, connects to 3 communities
+- [[test_egress_telegram_notify.py]] - degree 2, connects to 1 community

@@ -1,0 +1,230 @@
+---
+type: community
+cohesion: 0.03
+members: 118
+---
+
+# Gateway Config & Lifespan
+
+**Cohesion:** 0.03 - loosely connected
+**Members:** 118 nodes
+
+## Members
+- [[NOTE Gateway-side Slack Socket Mode listener removed.]] - rationale - gateway/ingest_api/lifespan.py
+- [[.__init__()_88]] - code - gateway/security/prompt_protection.py
+- [[._calculate_similarity()]] - code - gateway/security/prompt_protection.py
+- [[._compile_detection_patterns()_1]] - code - gateway/security/prompt_protection.py
+- [[._load_protected_content()]] - code - gateway/security/prompt_protection.py
+- [[._redact_fuzzy_match()]] - code - gateway/security/prompt_protection.py
+- [[._redact_match()]] - code - gateway/security/prompt_protection.py
+- [[.add_protected_content()]] - code - gateway/security/prompt_protection.py
+- [[.filter()]] - code - gateway/ingest_api/lifespan.py
+- [[.get_next_trust_level()]] - code - gateway/security/progressive_trust_config.py
+- [[.get_previous_trust_level()]] - code - gateway/security/progressive_trust_config.py
+- [[.get_protection_stats()]] - code - gateway/security/prompt_protection.py
+- [[.get_trust_level_order()]] - code - gateway/security/progressive_trust_config.py
+- [[.model_post_init()]] - code - gateway/ingest_api/config.py
+- [[.register_bot_hostnames()]] - code - gateway/security/prompt_protection.py
+- [[.scan_response()_2]] - code - gateway/security/prompt_protection.py
+- [[.test_get_module_mode_enforce_override()]] - code - gateway/tests/test_enforce_defaults.py
+- [[.test_get_module_mode_no_override()]] - code - gateway/tests/test_enforce_defaults.py
+- [[.test_get_module_mode_with_override()]] - code - gateway/tests/test_enforce_defaults.py
+- [[.test_monitor_mode_warning_message_format()]] - code - gateway/tests/test_enforce_defaults.py
+- [[.test_monitor_mode_warnings_all_modules()]] - code - gateway/tests/test_enforce_defaults.py
+- [[.test_monitor_mode_warnings_no_warnings_in_enforce()]] - code - gateway/tests/test_enforce_defaults.py
+- [[.test_pii_sanitizer_default_action()]] - code - gateway/tests/test_enforce_defaults.py
+- [[.test_pii_sanitizer_default_enforcement()]] - code - gateway/tests/test_enforce_defaults.py
+- [[.test_pii_sanitizer_mode_param()]] - code - gateway/tests/test_enforce_defaults.py
+- [[.test_security_config_all_defaults_enforce()]] - code - gateway/tests/test_enforce_defaults.py
+- [[.test_security_config_dns_filter_enforce()]] - code - gateway/tests/test_all_modules_enforce.py
+- [[.test_security_config_egress_filter_enforce()]] - code - gateway/tests/test_all_modules_enforce.py
+- [[.test_security_config_egress_monitor_enforce()]] - code - gateway/tests/test_all_modules_enforce.py
+- [[.test_security_config_killswitch_enforce()]] - code - gateway/tests/test_all_modules_enforce.py
+- [[.test_security_config_mcp_proxy_enforce()]] - code - gateway/tests/test_all_modules_enforce.py
+- [[.test_security_config_pii_sanitizer_enforce()]] - code - gateway/tests/test_all_modules_enforce.py
+- [[.test_security_config_prompt_guard_enforce()]] - code - gateway/tests/test_all_modules_enforce.py
+- [[.test_security_config_subagent_monitor_enforce()]] - code - gateway/tests/test_all_modules_enforce.py
+- [[.test_security_module_config_defaults()]] - code - gateway/tests/test_enforce_defaults.py
+- [[A piece of content that should be protected from disclosure.]] - rationale - gateway/security/prompt_protection.py
+- [[Add bot container hostnames to the infrastructure detection patterns.          C]] - rationale - gateway/security/prompt_protection.py
+- [[Add content to the protected registry.          Args             name Identifi]] - rationale - gateway/security/prompt_protection.py
+- [[Any_48]] - code - gateway/security/prompt_protection.py
+- [[AppState]] - code - gateway/ingest_api/state.py
+- [[Attach BufferHandler to the root agentshroud logger.]] - rationale - gateway/web/dashboard_endpoints.py
+- [[AuditExportConfig]] - code - gateway/ingest_api/config.py
+- [[BufferHandler]] - code - gateway/web/dashboard_endpoints.py
+- [[Calculate similarity between text and protected content.]] - rationale - gateway/security/prompt_protection.py
+- [[Channel ownership configuration (P3 Telegram + email oversight, P5 iMessage)]] - rationale - gateway/ingest_api/config.py
+- [[ChannelsConfig]] - code - gateway/ingest_api/config.py
+- [[Compile regex patterns for detecting disclosure attempts.]] - rationale - gateway/security/prompt_protection.py
+- [[Complete security configuration]] - rationale - gateway/ingest_api/config.py
+- [[Configuration for compliance audit export functionality.]] - rationale - gateway/ingest_api/config.py
+- [[Container for application-wide state]] - rationale - gateway/ingest_api/state.py
+- [[Create a PromptProtection instance for testing.]] - rationale - gateway/tests/test_prompt_protection.py
+- [[FastAPI_1]] - code - gateway/ingest_api/lifespan.py
+- [[FastAPI lifespan - startup and shutdown]] - rationale - gateway/ingest_api/lifespan.py
+- [[Get statistics about the protection system.]] - rationale - gateway/security/prompt_protection.py
+- [[Get the next trust level for promotion, or None if already at max.]] - rationale - gateway/security/progressive_trust_config.py
+- [[Get the previous trust level for demotion, or None if already at min.]] - rationale - gateway/security/progressive_trust_config.py
+- [[Get trust levels in ascending order.]] - rationale - gateway/security/progressive_trust_config.py
+- [[Initialize prompt protection system.          Args             config Configur]] - rationale - gateway/security/prompt_protection.py
+- [[Install warning filter once for uvicorn logger.]] - rationale - gateway/ingest_api/lifespan.py
+- [[Load and validate configuration from agentshroud.yaml      Search order     1.]] - rationale - gateway/ingest_api/config.py
+- [[Load protected content from configured sources.]] - rationale - gateway/security/prompt_protection.py
+- [[Log warnings for any core modules running in monitor mode.]] - rationale - gateway/ingest_api/config.py
+- [[LogRecord]] - code - gateway/ingest_api/lifespan.py
+- [[Logging handler that pushes records into the LogBuffer.]] - rationale - gateway/web/dashboard_endpoints.py
+- [[Main system prompt protection engine.      Maintains fingerprints of sensitive c]] - rationale - gateway/security/prompt_protection.py
+- [[Map agentshroud.yaml entity names to Presidiointernal entity names]] - rationale - gateway/ingest_api/config.py
+- [[Match]] - code - gateway/security/prompt_protection.py
+- [[Path_1]] - code - gateway/ingest_api/config.py
+- [[PromptProtection]] - code - gateway/security/prompt_protection.py
+- [[ProtectedContent]] - code - gateway/security/prompt_protection.py
+- [[Proxy statistics (requests allowedblockedflagged).]] - rationale - gateway/web/dashboard_endpoints.py
+- [[Redact text that fuzzy matches protected content.]] - rationale - gateway/security/prompt_protection.py
+- [[RedactionResult_2]] - code - gateway/security/prompt_protection.py
+- [[Replace a regex match with a redaction placeholder.]] - rationale - gateway/security/prompt_protection.py
+- [[Result of scanning and redacting content.]] - rationale - gateway/security/prompt_protection.py
+- [[Return module mode, respecting the global permissive override.]] - rationale - gateway/ingest_api/config.py
+- [[Sample protected content for testing.]] - rationale - gateway/tests/test_prompt_protection.py
+- [[Scan text for protected content and return redacted version.          Args]] - rationale - gateway/security/prompt_protection.py
+- [[SecurityConfig]] - code - gateway/ingest_api/config.py
+- [[Suppress noisy uvicorn warning spam for malformed probe traffic.]] - rationale - gateway/ingest_api/lifespan.py
+- [[Test PIISanitizer accepts and stores mode parameter.]] - rationale - gateway/tests/test_enforce_defaults.py
+- [[Test PIISanitizer defaults to enforce mode.]] - rationale - gateway/tests/test_enforce_defaults.py
+- [[Test get_module_mode returns enforce when explicitly set.]] - rationale - gateway/tests/test_enforce_defaults.py
+- [[Test get_module_mode returns enforce when no override set.]] - rationale - gateway/tests/test_enforce_defaults.py
+- [[Test get_module_mode returns monitor when AGENTSHROUD_MODE=monitor.]] - rationale - gateway/tests/test_enforce_defaults.py
+- [[Test that PII sanitizer defaults to redact action.]] - rationale - gateway/tests/test_enforce_defaults.py
+- [[Test that SecurityModuleConfig defaults to enforce mode.]] - rationale - gateway/tests/test_enforce_defaults.py
+- [[Test that all core modules default to enforce mode.]] - rationale - gateway/tests/test_enforce_defaults.py
+- [[Test that core security modules default to enforce mode.]] - rationale - gateway/tests/test_enforce_defaults.py
+- [[Test that individual modules respect the enforcemonitor mode.]] - rationale - gateway/tests/test_enforce_defaults.py
+- [[Test that monitor mode warnings contain required information.]] - rationale - gateway/tests/test_enforce_defaults.py
+- [[Test that no warnings are logged when all modules are in enforce mode.]] - rationale - gateway/tests/test_enforce_defaults.py
+- [[Test that warnings are logged for all core modules in monitor mode.]] - rationale - gateway/tests/test_enforce_defaults.py
+- [[TestEnforceDefaults]] - code - gateway/tests/test_enforce_defaults.py
+- [[TestModuleEnforcement]] - code - gateway/tests/test_enforce_defaults.py
+- [[_DropInvalidHTTPRequestFilter]] - code - gateway/ingest_api/lifespan.py
+- [[_entity_type_mapping()]] - code - gateway/ingest_api/config.py
+- [[_install_uvicorn_warning_filter()]] - code - gateway/ingest_api/lifespan.py
+- [[_tcp_check()]] - code - gateway/web/dashboard_endpoints.py
+- [[check_monitor_mode_warnings()]] - code - gateway/ingest_api/config.py
+- [[config.py]] - code - gateway/ingest_api/config.py
+- [[dashboard_endpoints.py]] - code - gateway/web/dashboard_endpoints.py
+- [[get_module_mode()]] - code - gateway/ingest_api/config.py
+- [[install_log_handler()]] - code - gateway/web/dashboard_endpoints.py
+- [[ledger.py]] - code - gateway/ingest_api/ledger.py
+- [[lifespan()_1]] - code - gateway/ingest_api/lifespan.py
+- [[lifespan.py]] - code - gateway/ingest_api/lifespan.py
+- [[load_config()]] - code - gateway/ingest_api/config.py
+- [[pipeline.py]] - code - gateway/proxy/pipeline.py
+- [[prompt_guard.py]] - code - gateway/security/prompt_guard.py
+- [[prompt_protection()]] - code - gateway/tests/test_prompt_protection.py
+- [[prompt_protection.py]] - code - gateway/security/prompt_protection.py
+- [[proxy_status()_1]] - code - gateway/web/dashboard_endpoints.py
+- [[sample_protected_content()]] - code - gateway/tests/test_prompt_protection.py
+- [[sanitizer.py]] - code - gateway/ingest_api/sanitizer.py
+- [[state.py]] - code - gateway/ingest_api/state.py
+- [[test_enforce_defaults.py]] - code - gateway/tests/test_enforce_defaults.py
+- [[test_prompt_protection.py]] - code - gateway/tests/test_prompt_protection.py
+
+## Live Query (requires Dataview plugin)
+
+```dataview
+TABLE source_file, type FROM #community/Gateway_Config__Lifespan
+SORT file.name ASC
+```
+
+## Connections to other communities
+- 38 edges to [[_COMMUNITY_CLI & Core Gateway Routes]]
+- 34 edges to [[_COMMUNITY_RBAC Middleware & Ingest API]]
+- 24 edges to [[_COMMUNITY_Tool Result Sanitizer]]
+- 22 edges to [[_COMMUNITY_SSH Proxy & Gateway Config]]
+- 16 edges to [[_COMMUNITY_Progressive Trust Levels]]
+- 13 edges to [[_COMMUNITY_Enhanced Approval Queue]]
+- 11 edges to [[_COMMUNITY_Ledger Config & Test Infra]]
+- 9 edges to [[_COMMUNITY_Context Guard & Integrity]]
+- 8 edges to [[_COMMUNITY_Security Pipeline & Audit Chain]]
+- 7 edges to [[_COMMUNITY_Module Group 127]]
+- 7 edges to [[_COMMUNITY_Agent Isolation & Container Config]]
+- 7 edges to [[_COMMUNITY_Session Manager & Webhook]]
+- 6 edges to [[_COMMUNITY_Web API & Dashboard UI]]
+- 6 edges to [[_COMMUNITY_Module Group 63]]
+- 6 edges to [[_COMMUNITY_Tool ACL & RBAC Config]]
+- 6 edges to [[_COMMUNITY_Module Group 125]]
+- 5 edges to [[_COMMUNITY_Module Group 240]]
+- 5 edges to [[_COMMUNITY_HTTP CONNECT Proxy & Egress]]
+- 5 edges to [[_COMMUNITY_Module Group 186]]
+- 5 edges to [[_COMMUNITY_Module Group 304]]
+- 4 edges to [[_COMMUNITY_Module Group 246]]
+- 4 edges to [[_COMMUNITY_Module Group 275]]
+- 4 edges to [[_COMMUNITY_Alert Dispatcher]]
+- 4 edges to [[_COMMUNITY_Module Group 142]]
+- 3 edges to [[_COMMUNITY_Module Group 83]]
+- 3 edges to [[_COMMUNITY_Module Group 65]]
+- 3 edges to [[_COMMUNITY_MCP Inspector & Audit]]
+- 3 edges to [[_COMMUNITY_Module Group 78]]
+- 3 edges to [[_COMMUNITY_Module Group 176]]
+- 3 edges to [[_COMMUNITY_Module Group 71]]
+- 3 edges to [[_COMMUNITY_Pipeline Action & Instruction Envelope]]
+- 3 edges to [[_COMMUNITY_Privacy Policy]]
+- 3 edges to [[_COMMUNITY_Module Group 166]]
+- 2 edges to [[_COMMUNITY_Group Config & Teams]]
+- 2 edges to [[_COMMUNITY_Module Group 70]]
+- 2 edges to [[_COMMUNITY_Module Group 100]]
+- 2 edges to [[_COMMUNITY_Module Group 73]]
+- 2 edges to [[_COMMUNITY_MCP Config & Proxy]]
+- 2 edges to [[_COMMUNITY_Module Group 279]]
+- 2 edges to [[_COMMUNITY_Audit Store & Ledger]]
+- 2 edges to [[_COMMUNITY_Module Group 115]]
+- 2 edges to [[_COMMUNITY_Module Group 140]]
+- 2 edges to [[_COMMUNITY_Module Group 264]]
+- 2 edges to [[_COMMUNITY_Module Group 190]]
+- 2 edges to [[_COMMUNITY_Module Group 252]]
+- 2 edges to [[_COMMUNITY_Module Group 88]]
+- 2 edges to [[_COMMUNITY_Module Group 66]]
+- 2 edges to [[_COMMUNITY_Module Group 197]]
+- 2 edges to [[_COMMUNITY_Module Group 85]]
+- 2 edges to [[_COMMUNITY_Module Group 143]]
+- 2 edges to [[_COMMUNITY_Module Group 168]]
+- 2 edges to [[_COMMUNITY_Module Group 198]]
+- 2 edges to [[_COMMUNITY_Module Group 157]]
+- 2 edges to [[_COMMUNITY_PII Sanitizer & Resource Guard]]
+- 2 edges to [[_COMMUNITY_URL Analyzer & Content Scanner]]
+- 2 edges to [[_COMMUNITY_Module Group 79]]
+- 1 edge to [[_COMMUNITY_Module Group 94]]
+- 1 edge to [[_COMMUNITY_Module Group 208]]
+- 1 edge to [[_COMMUNITY_Module Group 126]]
+- 1 edge to [[_COMMUNITY_Module Group 233]]
+- 1 edge to [[_COMMUNITY_Module Group 189]]
+- 1 edge to [[_COMMUNITY_Module Group 276]]
+- 1 edge to [[_COMMUNITY_Module Group 92]]
+- 1 edge to [[_COMMUNITY_Module Group 155]]
+- 1 edge to [[_COMMUNITY_Module Group 184]]
+- 1 edge to [[_COMMUNITY_Module Group 263]]
+- 1 edge to [[_COMMUNITY_Module Group 141]]
+- 1 edge to [[_COMMUNITY_Module Group 242]]
+- 1 edge to [[_COMMUNITY_Module Group 114]]
+- 1 edge to [[_COMMUNITY_Module Group 253]]
+- 1 edge to [[_COMMUNITY_Module Group 98]]
+- 1 edge to [[_COMMUNITY_Module Group 282]]
+- 1 edge to [[_COMMUNITY_Module Group 381]]
+- 1 edge to [[_COMMUNITY_Module Group 228]]
+- 1 edge to [[_COMMUNITY_SOC Router & Correlation]]
+- 1 edge to [[_COMMUNITY_Module Group 163]]
+- 1 edge to [[_COMMUNITY_Module Group 471]]
+- 1 edge to [[_COMMUNITY_Module Group 99]]
+- 1 edge to [[_COMMUNITY_Config Validation Tests]]
+- 1 edge to [[_COMMUNITY_Module Group 195]]
+- 1 edge to [[_COMMUNITY_Authentication & Rate Limiting]]
+- 1 edge to [[_COMMUNITY_Module Group 177]]
+- 1 edge to [[_COMMUNITY_Module Group 76]]
+- 1 edge to [[_COMMUNITY_Telegram Proxy Core]]
+
+## Top bridge nodes
+- [[lifespan.py]] - degree 113, connects to 61 communities
+- [[lifespan()_1]] - degree 68, connects to 42 communities
+- [[state.py]] - degree 34, connects to 16 communities
+- [[config.py]] - degree 30, connects to 11 communities
+- [[load_config()]] - degree 30, connects to 11 communities

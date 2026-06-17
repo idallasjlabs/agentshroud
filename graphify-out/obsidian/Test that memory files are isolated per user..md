@@ -1,0 +1,17 @@
+---
+source_file: "gateway/tests/test_session_isolation.py"
+type: "rationale"
+community: "Webhook Receiver"
+location: "L115"
+tags:
+  - graphify/rationale
+  - graphify/EXTRACTED
+  - community/Webhook_Receiver
+---
+
+# Test that memory files are isolated per user.
+
+## Connections
+- [[.test_memory_file_isolation()]] - `rationale_for` [EXTRACTED]
+
+#graphify/rationale #graphify/EXTRACTED #community/Webhook_Receiver
