@@ -4387,6 +4387,13 @@ async def telegram_api_proxy(path: str, request: Request):
     # GAP-3: Wire SecurityPipeline so Telegram proxy scans all messages
     if hasattr(app_state, "pipeline") and app_state.pipeline is not None:
         _telegram_proxy.pipeline = app_state.pipeline
+    # Wire default_bot_id from config so out-of-context bot attribution is correct
+    if hasattr(app_state, "config") and app_state.config.bots and _telegram_proxy._default_bot_id == "openclaw":
+        _default = next(
+            (b.id for b in app_state.config.bots.values() if b.default),
+            next(iter(app_state.config.bots), "openclaw"),
+        )
+        _telegram_proxy._default_bot_id = _default
     # Proxy the request.
     # System notifications (startup/shutdown from start.sh) carry X-AgentShroud-System: 1
     # so the proxy skips outbound content filtering — these are not LLM-generated output.
