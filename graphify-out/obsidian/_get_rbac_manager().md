@@ -1,0 +1,23 @@
+---
+source_file: "gateway/soc/auth.py"
+type: "code"
+community: "Module Group 120"
+location: "L38"
+tags:
+  - graphify/code
+  - graphify/EXTRACTED
+  - community/Module_Group_120
+---
+
+# _get_rbac_manager()
+
+## Connections
+- [[.test_get_rbac_manager_builds_real_manager()]] - `calls` [EXTRACTED]
+- [[RBACConfig_1]] - `calls` [EXTRACTED]
+- [[RBACManager_2]] - `references` [EXTRACTED]
+- [[RBACManager_1]] - `calls` [EXTRACTED]
+- [[_resolve_caller()]] - `calls` [EXTRACTED]
+- [[auth.py_1]] - `contains` [EXTRACTED]
+- [[test_soc_realtime_coverage.py]] - `imports` [EXTRACTED]
+
+#graphify/code #graphify/EXTRACTED #community/Module_Group_120
