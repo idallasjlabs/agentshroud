@@ -63,6 +63,13 @@ PERMANENT_EGRESS_DOMAINS: list[str] = [
     "html.duckduckgo.com",
     "duckduckgo-search-private.com",
     "*.duckduckgo.com",
+    # Failover search engines for hermes web_search (extend DDG pattern: queried
+    # when DDG returns 0 results or rate-limits the front-end scraper). All four
+    # observed in the egress approval queue during normal hermes operation.
+    "search.yahoo.com",
+    "www.google.com",
+    "yandex.com",
+    "www.mojeek.com",
     # ── Development & Package Registries ──
     "*.github.com",
     "*.githubusercontent.com",
