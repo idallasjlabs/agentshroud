@@ -44,18 +44,21 @@ AgentShroud is simultaneously a **production-grade tool**, a **learning laborato
 
 ---
 
-## What's New — v1.0.0 "Fortress" (March 2026)
+## What's New — v1.1.1 "Hermes" (June 2026)
 
-A major development sprint wired all **76 security modules** into the live pipeline and delivered two complete control center interfaces:
+The v1.1.x line introduces **multi-bot governance**: AgentShroud now secures two autonomous AI agents simultaneously — **OpenClaw** (Node.js, the original) and **Hermes** (Python, `nousresearch/hermes-agent`) — through the same 76-module security pipeline.
+
+- **v1.1.0 "Hermes"** (2026-05-29): Hermes bot first-class peer to OpenClaw, Tailscale serve integration, per-bot Telegram tokens, ClamAV OOM fix, branding refresh
+- **v1.1.1** (2026-06-10): Two dormant guards (ContextIntegrityScorer, EnvelopeSigner) wired live, Gemini quota-failover translator, container log hygiene
+
+### v1.0.0 "Fortress" foundations (March 2026)
+
+The original release wired all **76 security modules** into the live pipeline and delivered two complete control center interfaces — Web (7-page responsive dashboard) and Terminal (TUI + chat console). Every module is active in the pipeline — no stubs, no dead code, no planned-but-unbuilt features.
 
 - **P0 — Core Pipeline**: PromptGuard, TrustManager, EgressFilter, PII fix, gateway binding
 - **P1 — Middleware**: 12 modules wired (7 original + SessionManager, TokenValidator, ConsentFramework, SubagentMonitor, AgentRegistry) + MCP fail-closed enforcement
 - **P2 — Network**: 5 modules active in web proxy into the request flow
 - **P3 — Infrastructure**: 10 modules loaded (AlertDispatcher, DriftDetector, EncryptedStore, KeyVault, Canary, ClamAV, Trivy, Falco, Wazuh, HealthReport)
-- **Web Control Center**: 7-page responsive dashboard for browser-based management
-- **Terminal Control Center**: Full TUI + chat console (optimized for Blink Shell / mobile)
-
-All 76 security modules are now **active in the pipeline** — no stubs, no dead code, no planned-but-unbuilt features.
 
 ---
 
