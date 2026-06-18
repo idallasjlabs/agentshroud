@@ -379,3 +379,10 @@ llm_settings/mcp-servers/**/.env
 .gemini/*.local.*
 .codex/config.local.toml
 .codex/*.local.*
+
+# ESP-IDF generated files — may contain WiFi credentials
+firmware/voice-terminal/sdkconfig
+firmware/voice-terminal/build/
+firmware/voice-terminal/managed_components/
+firmware/voice-terminal/dependencies.lock
+firmware/voice-terminal/main/wifi_credentials.h
