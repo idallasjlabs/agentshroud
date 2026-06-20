@@ -39,6 +39,9 @@ CONFIG_CODEC_I2C_BACKWARD_COMPATIBLE=y
 CONFIG_LV_FONT_MONTSERRAT_20=y
 CONFIG_LV_FONT_MONTSERRAT_28=y
 
+# Fix ILI9341 RGB565 byte order (little-endian CPU, big-endian display)
+CONFIG_LV_COLOR_16_SWAP=y
+
 # WiFi credentials (SSID pre-set; set password via: idf.py menuconfig → Voice Terminal Config)
 CONFIG_VT_WIFI_SSID="ford-prefect"
 CONFIG_VT_WIFI_PASSWORD=""

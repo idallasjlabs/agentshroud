@@ -78,13 +78,13 @@ static void ui_init(void)
     lv_obj_set_style_bg_color(scr, lv_color_hex(0x1a1a2e), LV_PART_MAIN);
 
     s_label = lv_label_create(scr);
-    lv_obj_set_style_text_color(s_label, lv_color_hex(0xeaeaea), LV_PART_MAIN);
+    lv_obj_set_style_text_color(s_label, lv_color_hex(0xffffff), LV_PART_MAIN);
     lv_obj_set_style_text_font(s_label, &lv_font_montserrat_28, LV_PART_MAIN);
     lv_obj_align(s_label, LV_ALIGN_CENTER, 0, -28);
     lv_label_set_text(s_label, "Starting...");
 
     s_sub_label = lv_label_create(scr);
-    lv_obj_set_style_text_color(s_sub_label, lv_color_hex(0x888888), LV_PART_MAIN);
+    lv_obj_set_style_text_color(s_sub_label, lv_color_hex(0xcccccc), LV_PART_MAIN);
     lv_obj_set_style_text_font(s_sub_label, &lv_font_montserrat_28, LV_PART_MAIN);
     lv_obj_align(s_sub_label, LV_ALIGN_CENTER, 0, 28);
     lv_label_set_text(s_sub_label, "");
