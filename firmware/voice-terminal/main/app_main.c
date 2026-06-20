@@ -79,14 +79,14 @@ static void ui_init(void)
 
     s_label = lv_label_create(scr);
     lv_obj_set_style_text_color(s_label, lv_color_hex(0xeaeaea), LV_PART_MAIN);
-    lv_obj_set_style_text_font(s_label, &lv_font_montserrat_14, LV_PART_MAIN);
-    lv_obj_align(s_label, LV_ALIGN_CENTER, 0, -20);
+    lv_obj_set_style_text_font(s_label, &lv_font_montserrat_28, LV_PART_MAIN);
+    lv_obj_align(s_label, LV_ALIGN_CENTER, 0, -28);
     lv_label_set_text(s_label, "Starting...");
 
     s_sub_label = lv_label_create(scr);
     lv_obj_set_style_text_color(s_sub_label, lv_color_hex(0x888888), LV_PART_MAIN);
-    lv_obj_set_style_text_font(s_sub_label, &lv_font_montserrat_14, LV_PART_MAIN);
-    lv_obj_align(s_sub_label, LV_ALIGN_CENTER, 0, 20);
+    lv_obj_set_style_text_font(s_sub_label, &lv_font_montserrat_28, LV_PART_MAIN);
+    lv_obj_align(s_sub_label, LV_ALIGN_CENTER, 0, 28);
     lv_label_set_text(s_sub_label, "");
 
     bsp_display_unlock();
@@ -101,9 +101,10 @@ static void wifi_event_handler(void *arg, esp_event_base_t base,
         esp_wifi_connect();
 
     } else if (base == WIFI_EVENT && id == WIFI_EVENT_STA_DISCONNECTED) {
+        wifi_event_sta_disconnected_t *ev = (wifi_event_sta_disconnected_t *)data;
         s_retry++;
-        ESP_LOGW(TAG, "WiFi disconnected from '%s' (attempt %d/%d)",
-                 NETWORKS[s_net_idx].ssid, s_retry, CONFIG_VT_WIFI_MAX_RETRY);
+        ESP_LOGW(TAG, "WiFi disconnected from '%s' reason=%d (attempt %d/%d)",
+                 NETWORKS[s_net_idx].ssid, ev->reason, s_retry, CONFIG_VT_WIFI_MAX_RETRY);
 
         if (s_retry >= CONFIG_VT_WIFI_MAX_RETRY) {
             /* Try next network in the list; skip blank SSIDs */
@@ -148,7 +149,7 @@ static void wifi_init(void)
     wifi_config_t cfg = {};
     strlcpy((char *)cfg.sta.ssid,     NETWORKS[0].ssid, 32);
     strlcpy((char *)cfg.sta.password, NETWORKS[0].pass, 64);
-    cfg.sta.threshold.authmode = WIFI_AUTH_WPA2_PSK;
+    cfg.sta.threshold.authmode = WIFI_AUTH_OPEN;
 
     ESP_ERROR_CHECK(esp_wifi_set_mode(WIFI_MODE_STA));
     ESP_ERROR_CHECK(esp_wifi_set_config(WIFI_IF_STA, &cfg));

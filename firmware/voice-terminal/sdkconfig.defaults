@@ -37,6 +37,7 @@ CONFIG_CODEC_I2C_BACKWARD_COMPATIBLE=y
 
 # LVGL fonts
 CONFIG_LV_FONT_MONTSERRAT_20=y
+CONFIG_LV_FONT_MONTSERRAT_28=y
 
 # WiFi credentials (SSID pre-set; set password via: idf.py menuconfig → Voice Terminal Config)
 CONFIG_VT_WIFI_SSID="ford-prefect"
