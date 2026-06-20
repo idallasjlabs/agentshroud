@@ -30,4 +30,12 @@ menu "Voice Terminal Config"
         help
             Number of times to retry each network before trying the next.
 
+    config VT_VG_WS_URL
+        string "Voice Gateway WebSocket URL"
+        default "ws://192.168.0.1:8765/voice"
+        help
+            WebSocket URL of the AgentShroud Voice Gateway.
+            Phase 1 (LAN bring-up): ws://<marvin-LAN-IP>:8765/voice
+            Phase 2 (Tailscale):    wss://marvin.tail240ea8.ts.net:8765/voice
+
 endmenu

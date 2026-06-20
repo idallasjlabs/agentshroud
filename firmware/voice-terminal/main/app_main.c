@@ -10,9 +10,14 @@
 #include "bsp/esp-bsp.h"
 #include "lvgl.h"
 
+#include "audio.h"
+#include "wakeword.h"
+#include "ws_client.h"
+#include "ui_face.h"
+
 static const char *TAG = "vt";
 
-/* ── WiFi ─────────────────────────────────────────────────────────────── */
+/* ── WiFi ─────────────────────────────────────────────────────────────────── */
 
 #define WIFI_CONNECTED_BIT BIT0
 #define WIFI_FAIL_BIT      BIT1
@@ -29,7 +34,7 @@ static const wifi_net_t NETWORKS[] = {
 #define NETWORK_COUNT (sizeof(NETWORKS) / sizeof(NETWORKS[0]))
 static int s_net_idx = 0;
 
-/* ── LVGL UI ──────────────────────────────────────────────────────────── */
+/* ── LVGL UI ──────────────────────────────────────────────────────────────── */
 
 typedef enum {
     UI_WIFI_CONNECTING,
@@ -57,7 +62,7 @@ static void ui_update(ui_state_t state, const char *detail)
             break;
         case UI_READY:
             lv_label_set_text(s_label, "Hermes online");
-            lv_label_set_text(s_sub_label, "Say \"hey buddy\"");
+            lv_label_set_text(s_sub_label, "Hold button or say Hi,ESP");
             break;
     }
     bsp_display_unlock();
@@ -92,7 +97,7 @@ static void ui_init(void)
     bsp_display_unlock();
 }
 
-/* ── WiFi event handler ───────────────────────────────────────────────── */
+/* ── WiFi event handler ───────────────────────────────────────────────────── */
 
 static void wifi_event_handler(void *arg, esp_event_base_t base,
                                int32_t id, void *data)
@@ -107,7 +112,6 @@ static void wifi_event_handler(void *arg, esp_event_base_t base,
                  NETWORKS[s_net_idx].ssid, ev->reason, s_retry, CONFIG_VT_WIFI_MAX_RETRY);
 
         if (s_retry >= CONFIG_VT_WIFI_MAX_RETRY) {
-            /* Try next network in the list; skip blank SSIDs */
             s_retry = 0;
             s_net_idx = (s_net_idx + 1) % NETWORK_COUNT;
             if (strlen(NETWORKS[s_net_idx].ssid) == 0) {
@@ -159,7 +163,92 @@ static void wifi_init(void)
     ui_update(UI_WIFI_CONNECTING, NETWORKS[0].ssid);
 }
 
-/* ── app_main ─────────────────────────────────────────────────────────── */
+/* ── Voice Gateway callbacks ──────────────────────────────────────────────── */
+
+static void _on_vg_state(ws_vg_state_t state, void *ctx)
+{
+    ui_face_set_state(state);
+    /* Mirror state in the text labels too */
+    bsp_display_lock(0);
+    switch (state) {
+    case WS_VG_STATE_LISTENING:
+        lv_label_set_text(s_label, "Listening...");
+        lv_label_set_text(s_sub_label, "Speak now");
+        break;
+    case WS_VG_STATE_THINKING:
+        lv_label_set_text(s_label, "Thinking...");
+        lv_label_set_text(s_sub_label, "");
+        break;
+    case WS_VG_STATE_SPEAKING:
+        lv_label_set_text(s_label, "Hermes says:");
+        lv_label_set_text(s_sub_label, "");
+        break;
+    case WS_VG_STATE_IDLE:
+    default:
+        lv_label_set_text(s_label, "Hermes online");
+        lv_label_set_text(s_sub_label, "Hold button or say Hi,ESP");
+        break;
+    }
+    bsp_display_unlock();
+}
+
+static void _on_tts_pcm(const uint8_t *pcm, size_t len, void *ctx)
+{
+    audio_play(pcm, len);
+}
+
+/* ── Voice task ───────────────────────────────────────────────────────────── */
+
+typedef struct {
+    ws_client_handle_t ws;
+} voice_task_args_t;
+
+static void voice_task(void *arg)
+{
+    voice_task_args_t *a = (voice_task_args_t *)arg;
+    ws_client_handle_t ws = a->ws;
+
+    static uint8_t frame_buf[AUDIO_FRAME_BYTES];
+    bool streaming = false;
+
+    ESP_LOGI(TAG, "Voice task running");
+
+    while (1) {
+        /* Capture one 10 ms mic frame */
+        size_t got = audio_capture_frame(frame_buf);
+        if (got == 0) {
+            vTaskDelay(pdMS_TO_TICKS(10));
+            continue;
+        }
+
+        /* Feed frame to the trigger detector */
+        wakeword_push_frame(frame_buf, got);
+
+        if (!streaming && wakeword_triggered()) {
+            /* New utterance: signal gateway and start streaming */
+            if (ws_client_connected(ws)) {
+                ws_client_send_listen(ws);
+                streaming = true;
+                ESP_LOGI(TAG, "Utterance started");
+            }
+        }
+
+        if (streaming) {
+            /* Stream PCM to gateway */
+            ws_client_send_pcm(ws, frame_buf, got);
+
+            if (wakeword_ended()) {
+                /* Utterance complete */
+                ws_client_send_end(ws);
+                streaming = false;
+                wakeword_clear();
+                ESP_LOGI(TAG, "Utterance ended");
+            }
+        }
+    }
+}
+
+/* ── app_main ─────────────────────────────────────────────────────────────── */
 
 void app_main(void)
 {
@@ -173,12 +262,14 @@ void app_main(void)
     }
     ESP_ERROR_CHECK(err);
 
-    /* Log PSRAM (confirmed by sdkconfig; init is automatic) */
     ESP_LOGI(TAG, "PSRAM: %u KB available",
              (unsigned)(heap_caps_get_total_size(MALLOC_CAP_SPIRAM) / 1024));
 
     /* Display + touch */
     ui_init();
+    bsp_display_lock(0);
+    ui_face_init();
+    bsp_display_unlock();
     ESP_LOGI(TAG, "Display initialised");
 
     /* WiFi */
@@ -186,16 +277,49 @@ void app_main(void)
     ESP_ERROR_CHECK(esp_event_loop_create_default());
     wifi_init();
 
-    /* Wait for first connection, then show ready screen */
+    /* Wait for first connection */
     xEventGroupWaitBits(s_wifi_eg, WIFI_CONNECTED_BIT, pdFALSE, pdTRUE,
                         portMAX_DELAY);
+    vTaskDelay(pdMS_TO_TICKS(1500));
 
-    /* Brief pause so user can read the IP */
-    vTaskDelay(pdMS_TO_TICKS(2000));
+    /* Audio codecs */
+    if (audio_init() != ESP_OK) {
+        ESP_LOGE(TAG, "Audio init failed — voice features disabled");
+        ui_update(UI_READY, NULL);
+        while (1) vTaskDelay(pdMS_TO_TICKS(10000));
+    }
+
+    /* Wake-word + PTT trigger */
+    wakeword_init("model");  /* NULL → PTT only, "model" → PTT + WakeNet */
+
+    /* Voice Gateway WebSocket client.
+     *
+     * Phase 1 (bring-up): plain ws:// to the LAN IP of marvin.
+     *   Set CONFIG_VT_VG_WS_URL = ws://192.168.x.y:8765/voice in menuconfig.
+     * Phase 2: wss:// through MicroLink.
+     *   Set CONFIG_VT_VG_WS_URL = wss://marvin.tail240ea8.ts.net:8765/voice
+     */
+    ws_client_handle_t ws = ws_client_create(
+        CONFIG_VT_VG_WS_URL,
+        _on_vg_state,
+        _on_tts_pcm,
+        NULL
+    );
+
+    if (!ws) {
+        ESP_LOGW(TAG, "WebSocket connection failed — retrying in background");
+    }
+
     ui_update(UI_READY, NULL);
-    ESP_LOGI(TAG, "Ready. Tunnel and voice streaming in next phase.");
+    ui_face_set_state(WS_VG_STATE_IDLE);
+    ESP_LOGI(TAG, "Ready. Voice terminal active.");
 
-    /* Reconnect loop — WiFi event handler already retries; this just idles */
+    static voice_task_args_t voice_args;
+    voice_args.ws = ws;
+    xTaskCreatePinnedToCore(voice_task, "voice", 8192, &voice_args,
+                            5, NULL, 1);  /* pin to core 1, away from WiFi */
+
+    /* Main task idles; voice_task owns the audio loop */
     while (1) {
         vTaskDelay(pdMS_TO_TICKS(10000));
     }

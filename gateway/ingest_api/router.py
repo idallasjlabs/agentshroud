@@ -152,13 +152,24 @@ class MultiAgentRouter:
         Raises:
             ForwardError: If forwarding fails
         """
-        payload = {
-            "content": sanitized_content,
-            "ledger_id": ledger_id,
-            "source": metadata.get("source", "unknown"),
-            "content_type": metadata.get("content_type", "text"),
-            "metadata": metadata,
-        }
+        # OpenAI-compatible targets (chat_path ending /v1/chat/completions) require
+        # a messages[] body; generic targets (OpenClaw /chat) use the legacy shape.
+        _OPENAI_DEFAULT_MODEL = "anthropic/claude-opus-4-8"
+        is_openai = target.chat_path.endswith("/v1/chat/completions")
+
+        if is_openai:
+            payload = {
+                "model": _OPENAI_DEFAULT_MODEL,
+                "messages": [{"role": "user", "content": sanitized_content}],
+            }
+        else:
+            payload = {
+                "content": sanitized_content,
+                "ledger_id": ledger_id,
+                "source": metadata.get("source", "unknown"),
+                "content_type": metadata.get("content_type", "text"),
+                "metadata": metadata,
+            }
 
         logger.info(f"Forwarding to {target.name} at {target.url} (ledger_id={ledger_id})")
 
@@ -174,7 +185,20 @@ class MultiAgentRouter:
                     f"Successfully forwarded to {target.name} " f"(status={response.status_code})"
                 )
 
-                return response.json()
+                raw = response.json()
+
+                if is_openai:
+                    try:
+                        return raw["choices"][0]["message"]["content"]
+                    except (KeyError, IndexError, TypeError) as exc:
+                        raise ForwardError(
+                            f"Malformed OpenAI response from {target.name}: {exc}"
+                        ) from exc
+
+                return raw
+
+        except ForwardError:
+            raise
 
         except httpx.ConnectError as e:
             # Agent is offline - this is expected in Phase 2
