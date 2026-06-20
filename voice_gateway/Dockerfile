@@ -18,10 +18,15 @@ RUN apt-get update -qq && \
         curl \
     && rm -rf /var/lib/apt/lists/*
 
-# Install Piper TTS binary (pre-built for linux/amd64)
+# Install Piper TTS binary — supports linux/amd64 and linux/arm64 (marvin is arm64)
 ARG PIPER_VERSION=2023.11.14-2
-RUN curl -fsSL \
-        "https://github.com/rhasspy/piper/releases/download/${PIPER_VERSION}/piper_linux_x86_64.tar.gz" \
+ARG TARGETARCH
+RUN case "${TARGETARCH}" in \
+        arm64|aarch64) PIPER_ARCH="aarch64" ;; \
+        *)             PIPER_ARCH="x86_64"  ;; \
+    esac && \
+    curl -fsSL \
+        "https://github.com/rhasspy/piper/releases/download/${PIPER_VERSION}/piper_linux_${PIPER_ARCH}.tar.gz" \
         | tar -xz -C /usr/local/bin --strip-components=1 piper/piper && \
     chmod +x /usr/local/bin/piper
 
@@ -32,10 +37,10 @@ RUN mkdir -p /opt/piper && \
     curl -fsSL "https://huggingface.co/rhasspy/piper-voices/resolve/main/en/en_US/lessac/medium/en_US-lessac-medium.onnx.json" \
         -o /opt/piper/en_US-lessac-medium.onnx.json
 
-COPY requirements.txt .
+COPY voice_gateway/requirements.txt .
 RUN pip install --no-cache-dir -r requirements.txt
 
-COPY . /app/voice_gateway/
+COPY voice_gateway/ /app/voice_gateway/
 
 ENV PIPER_BIN=/usr/local/bin/piper
 ENV PIPER_MODEL=/opt/piper/en_US-lessac-medium.onnx

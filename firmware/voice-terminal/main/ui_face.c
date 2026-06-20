@@ -89,7 +89,7 @@ void ui_face_init(void)
     lv_obj_set_style_text_color(s_status, lv_color_hex(0x888888), LV_PART_MAIN);
     lv_obj_set_style_text_font(s_status, &lv_font_montserrat_20, LV_PART_MAIN);
     lv_obj_align(s_status, LV_ALIGN_BOTTOM_MID, 0, -10);
-    lv_label_set_text(s_status, "Hold button or say Hi,ESP");
+    lv_label_set_text(s_status, "Say 'Hi, ESP' or tap to talk");
 
     ESP_LOGI(TAG, "Face initialised");
 }
@@ -108,7 +108,7 @@ void ui_face_set_state(ws_vg_state_t state)
         lv_obj_set_size(s_eye_r, EYE_RADIUS * 2, EYE_RADIUS * 2);
         lv_anim_del(s_mouth, _mouth_anim_cb);
         lv_obj_set_height(s_mouth, MOUTH_H / 3);
-        lv_label_set_text(s_status, "Hold button or say Hi,ESP");
+        lv_label_set_text(s_status, "Say 'Hi, ESP' or tap to talk");
         break;
 
     case WS_VG_STATE_LISTENING:

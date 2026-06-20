@@ -2,13 +2,14 @@
 /* Wake-word and push-to-talk trigger for the BOX-3 voice terminal.
  *
  * Two trigger modes run concurrently:
- *   PTT  — BOX-3 boot/home button: hold = start, release = END
- *   WW   — esp-sr WakeNet (stock keyword) detected via the AFE pipeline
+ *   PTT  — tap-and-hold the touchscreen (BSP_BUTTON_MAIN)
+ *   WW   — say "Hi, ESP" (esp-sr WakeNet WN9, stock keyword — no training required)
  *
  * The caller feeds mic frames one at a time via wakeword_push_frame().
+ * Frame size MUST equal wakeword_feed_bytes() (the AFE's required chunk size).
  * wakeword_triggered() returns true when a trigger fires; wakeword_clear()
  * resets it.  This is intentionally simple/polling — the audio task drives
- * the loop at AUDIO_FRAME_BYTES / (16000 * 2) ≈ 10 ms intervals.
+ * the loop at wakeword_feed_bytes() / (AUDIO_SAMPLE_RATE * 2) intervals.
  */
 
 #include <stdbool.h>
@@ -27,9 +28,18 @@
 esp_err_t wakeword_init(const char *model_partition);
 
 /**
+ * @brief Returns the required number of bytes per audio frame for wakeword_push_frame().
+ *
+ * This is the AFE's feed chunk size in bytes (samples × 2).  After wakeword_init()
+ * returns, call this once and allocate your frame buffer accordingly.
+ * If esp-sr is not compiled in, returns a safe default (512 bytes).
+ */
+int wakeword_feed_bytes(void);
+
+/**
  * @brief Feed one capture frame to the AFE + WakeNet pipeline.
  *
- * @param pcm  Raw S16LE 16 kHz mono frame (AUDIO_FRAME_BYTES bytes).
+ * @param pcm  Raw S16LE 16 kHz mono frame; length must equal wakeword_feed_bytes().
  * @param len  Frame length in bytes.
  */
 void wakeword_push_frame(const uint8_t *pcm, size_t len);

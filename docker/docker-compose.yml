@@ -418,7 +418,8 @@ services:
       gateway:
         condition: service_healthy
     networks:
-      - agentshroud-isolated    # no direct internet — all egress via gateway:8181
+      - agentshroud-internal    # required for Docker host port publishing (internal: true nets cannot NAT)
+      - agentshroud-isolated    # egress isolation — all outbound via gateway:8181 HTTP proxy
     ports:
       - "127.0.0.1:8765:8765"  # loopback-only; Tailscale serve exposes externally
     environment:
@@ -426,8 +427,7 @@ services:
       HTTPS_PROXY: http://gateway:8181
       NO_PROXY: gateway,agentshroud-voice-gateway,127.0.0.1,localhost
       GATEWAY_URL: http://gateway:8080
-      # GATEWAY_AUTH_TOKEN is read from the gateway_password secret at runtime.
-      # Injected by the entrypoint: export GATEWAY_AUTH_TOKEN=$(cat /run/secrets/gateway_password)
+      GATEWAY_AUTH_TOKEN_FILE: /run/secrets/gateway_password
       PIPER_BIN: /usr/local/bin/piper
       PIPER_MODEL: /opt/piper/en_US-lessac-medium.onnx
       VG_HOST: "0.0.0.0"

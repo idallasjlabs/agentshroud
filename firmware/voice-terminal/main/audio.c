@@ -12,10 +12,10 @@ static bool                   s_ready  = false;
 
 esp_err_t audio_init(void)
 {
-    /* I2S bus initialised by the BSP when bsp_audio_init() is called with
-     * a custom config overriding the default 22050 Hz to 16000 Hz. */
-    i2s_std_config_t i2s_cfg = BSP_I2S_DUPLEX_MONO_CFG(AUDIO_SAMPLE_RATE);
-    esp_err_t ret = bsp_audio_init(&i2s_cfg);
+    /* Use BSP defaults (22050 Hz, 16-bit, mono, full-duplex).
+     * Passing NULL avoids needing to hand-construct the i2s_std_config_t,
+     * and faster-whisper resamples from 22050 Hz internally. */
+    esp_err_t ret = bsp_audio_init(NULL);
     if (ret != ESP_OK) {
         ESP_LOGE(TAG, "bsp_audio_init failed: %s", esp_err_to_name(ret));
         return ret;
@@ -65,15 +65,15 @@ esp_err_t audio_init(void)
     return ESP_OK;
 }
 
-size_t audio_capture_frame(uint8_t *buf)
+size_t audio_capture_frame(uint8_t *buf, size_t nbytes)
 {
-    if (!s_ready || !buf) return 0;
-    esp_err_t ret = esp_codec_dev_read(s_mic, buf, AUDIO_FRAME_BYTES);
+    if (!s_ready || !buf || nbytes == 0) return 0;
+    esp_err_t ret = esp_codec_dev_read(s_mic, buf, (int)nbytes);
     if (ret != ESP_OK) {
         ESP_LOGW(TAG, "esp_codec_dev_read failed: %s", esp_err_to_name(ret));
         return 0;
     }
-    return AUDIO_FRAME_BYTES;
+    return nbytes;
 }
 
 esp_err_t audio_play(const uint8_t *buf, size_t len)

@@ -5,13 +5,17 @@
 #include <stdint.h>
 #include "esp_err.h"
 
-/* PCM config used for both capture and playback. */
+/* PCM config used for both capture and playback.
+ * 16 kHz is required by the esp-sr WakeNet AFE pipeline.
+ * faster-whisper also works natively at 16 kHz (no resampling needed). */
 #define AUDIO_SAMPLE_RATE    16000
 #define AUDIO_BITS           16
 #define AUDIO_CHANNELS       1
 
-/* Size of one capture frame fed to the wake-word AFE pipeline (10 ms @ 16 kHz). */
-#define AUDIO_FRAME_BYTES    320   /* 160 samples × 2 bytes */
+/* AFE feed chunk size is determined at runtime via afe->get_feed_chunksize().
+ * Typically 256 samples (512 bytes) for WN9 at 16 kHz mono.
+ * AUDIO_FRAME_BYTES_MAX is the worst-case buffer size for a single feed call. */
+#define AUDIO_FRAME_BYTES_MAX  1024   /* 512 samples × 2 bytes — safe upper bound */
 
 /* Maximum PCM buffered for one push-to-talk utterance (5 s). */
 #define AUDIO_UTTERANCE_MAX  (AUDIO_SAMPLE_RATE * AUDIO_BITS / 8 * 5)
@@ -27,14 +31,16 @@
 esp_err_t audio_init(void);
 
 /**
- * @brief Read one capture frame from the microphone into *buf*.
+ * @brief Read exactly *nbytes* from the microphone into *buf*.
  *
- * Blocking call; returns AUDIO_FRAME_BYTES on success or 0 on codec error.
+ * Blocking call; returns nbytes on success or 0 on codec error.
+ * The caller supplies nbytes — typically afe->get_feed_chunksize() * 2 (bytes).
  *
- * @param buf   Output buffer; must be at least AUDIO_FRAME_BYTES bytes.
- * @return Number of bytes written into buf.
+ * @param buf    Output buffer; must be at least nbytes bytes.
+ * @param nbytes Bytes to capture; must be a multiple of 2 (16-bit samples).
+ * @return Number of bytes written into buf, or 0 on error.
  */
-size_t audio_capture_frame(uint8_t *buf);
+size_t audio_capture_frame(uint8_t *buf, size_t nbytes);
 
 /**
  * @brief Play raw S16LE PCM from *buf* through the speaker.

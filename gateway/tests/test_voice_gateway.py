@@ -252,6 +252,39 @@ def test_ws_full_utterance_state_sequence(monkeypatch):
                 assert binary_received == pcm_reply
 
 
+# ── Token secret-file loading ─────────────────────────────────────────────────
+
+
+def test_token_loaded_from_secret_file(tmp_path, monkeypatch):
+    """_GATEWAY_TOKEN is read from the secret file when it exists."""
+    import importlib
+    import os
+
+    secret_file = tmp_path / "gw_password.txt"
+    secret_file.write_text("test-secret-token\n")
+
+    monkeypatch.setenv("GATEWAY_AUTH_TOKEN_FILE", str(secret_file))
+    monkeypatch.delenv("GATEWAY_AUTH_TOKEN", raising=False)
+
+    import voice_gateway.server as srv
+    importlib.reload(srv)
+
+    assert srv._GATEWAY_TOKEN == "test-secret-token"
+
+
+def test_token_falls_back_to_env_when_no_file(tmp_path, monkeypatch):
+    """When secret file is absent, _GATEWAY_TOKEN falls back to GATEWAY_AUTH_TOKEN env var."""
+    import importlib
+
+    monkeypatch.setenv("GATEWAY_AUTH_TOKEN_FILE", str(tmp_path / "nonexistent.txt"))
+    monkeypatch.setenv("GATEWAY_AUTH_TOKEN", "env-token")
+
+    import voice_gateway.server as srv
+    importlib.reload(srv)
+
+    assert srv._GATEWAY_TOKEN == "env-token"
+
+
 def test_ws_empty_transcript_goes_idle(monkeypatch):
     """Empty STT result: no forward call, state goes directly to idle."""
     import voice_gateway.stt as stt_mod

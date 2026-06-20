@@ -1,3 +1,4 @@
+#include <stdlib.h>
 #include <string.h>
 #include "wifi_credentials.h"
 #include "freertos/FreeRTOS.h"
@@ -61,8 +62,9 @@ static void ui_update(ui_state_t state, const char *detail)
             lv_label_set_text(s_sub_label, detail ? detail : "");
             break;
         case UI_READY:
-            lv_label_set_text(s_label, "Hermes online");
-            lv_label_set_text(s_sub_label, "Hold button or say Hi,ESP");
+            /* Hand off display to ui_face; hide the WiFi status labels. */
+            lv_obj_add_flag(s_label,     LV_OBJ_FLAG_HIDDEN);
+            lv_obj_add_flag(s_sub_label, LV_OBJ_FLAG_HIDDEN);
             break;
     }
     bsp_display_unlock();
@@ -168,28 +170,6 @@ static void wifi_init(void)
 static void _on_vg_state(ws_vg_state_t state, void *ctx)
 {
     ui_face_set_state(state);
-    /* Mirror state in the text labels too */
-    bsp_display_lock(0);
-    switch (state) {
-    case WS_VG_STATE_LISTENING:
-        lv_label_set_text(s_label, "Listening...");
-        lv_label_set_text(s_sub_label, "Speak now");
-        break;
-    case WS_VG_STATE_THINKING:
-        lv_label_set_text(s_label, "Thinking...");
-        lv_label_set_text(s_sub_label, "");
-        break;
-    case WS_VG_STATE_SPEAKING:
-        lv_label_set_text(s_label, "Hermes says:");
-        lv_label_set_text(s_sub_label, "");
-        break;
-    case WS_VG_STATE_IDLE:
-    default:
-        lv_label_set_text(s_label, "Hermes online");
-        lv_label_set_text(s_sub_label, "Hold button or say Hi,ESP");
-        break;
-    }
-    bsp_display_unlock();
 }
 
 static void _on_tts_pcm(const uint8_t *pcm, size_t len, void *ctx)
@@ -208,14 +188,21 @@ static void voice_task(void *arg)
     voice_task_args_t *a = (voice_task_args_t *)arg;
     ws_client_handle_t ws = a->ws;
 
-    static uint8_t frame_buf[AUDIO_FRAME_BYTES];
-    bool streaming = false;
+    /* Frame size is determined by the AFE at init time — must match afe->get_feed_chunksize(). */
+    const int frame_bytes = wakeword_feed_bytes();
+    uint8_t  *frame_buf   = (uint8_t *)malloc(frame_bytes);
+    if (!frame_buf) {
+        ESP_LOGE(TAG, "voice_task: frame_buf alloc failed (%d bytes)", frame_bytes);
+        vTaskDelete(NULL);
+        return;
+    }
 
-    ESP_LOGI(TAG, "Voice task running");
+    bool streaming = false;
+    ESP_LOGI(TAG, "Voice task running (frame=%d bytes)", frame_bytes);
 
     while (1) {
-        /* Capture one 10 ms mic frame */
-        size_t got = audio_capture_frame(frame_buf);
+        /* Capture one AFE-sized mic frame */
+        size_t got = audio_capture_frame(frame_buf, (size_t)frame_bytes);
         if (got == 0) {
             vTaskDelay(pdMS_TO_TICKS(10));
             continue;
@@ -267,9 +254,6 @@ void app_main(void)
 
     /* Display + touch */
     ui_init();
-    bsp_display_lock(0);
-    ui_face_init();
-    bsp_display_unlock();
     ESP_LOGI(TAG, "Display initialised");
 
     /* WiFi */
@@ -281,6 +265,11 @@ void app_main(void)
     xEventGroupWaitBits(s_wifi_eg, WIFI_CONNECTED_BIT, pdFALSE, pdTRUE,
                         portMAX_DELAY);
     vTaskDelay(pdMS_TO_TICKS(1500));
+
+    /* WiFi labels no longer needed — bring up face UI */
+    bsp_display_lock(0);
+    ui_face_init();
+    bsp_display_unlock();
 
     /* Audio codecs */
     if (audio_init() != ESP_OK) {

@@ -14,4 +14,5 @@ idf_component_register(
         esp_websocket_client
         json
         button
+        esp-sr
 )

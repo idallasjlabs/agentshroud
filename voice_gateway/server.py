@@ -38,8 +38,24 @@ from . import tts as _tts
 logger = logging.getLogger("voice_gateway.server")
 
 _GATEWAY_URL = os.environ.get("GATEWAY_URL", "http://gateway:8080")
-_GATEWAY_TOKEN = os.environ.get("GATEWAY_AUTH_TOKEN", "")
 _CHUNK_SIZE = 4096  # bytes per TTS chunk
+
+# Read the bearer token from a secret file first (Docker secrets pattern), then
+# fall back to the env var — mirrors how agentshroud-gateway reads GATEWAY_AUTH_TOKEN_FILE.
+# Token value is never logged.
+_token_file = os.environ.get(
+    "GATEWAY_AUTH_TOKEN_FILE", "/run/secrets/gateway_password"
+)
+if os.path.isfile(_token_file):
+    with open(_token_file) as _fh:
+        _GATEWAY_TOKEN = _fh.read().strip()
+else:
+    _GATEWAY_TOKEN = os.environ.get("GATEWAY_AUTH_TOKEN", "")
+if not _GATEWAY_TOKEN:
+    logger.warning(
+        "GATEWAY_AUTH_TOKEN not set — /forward calls will fail authentication. "
+        "Mount docker secret 'gateway_password' or set GATEWAY_AUTH_TOKEN env var."
+    )
 
 
 class _State(Enum):
