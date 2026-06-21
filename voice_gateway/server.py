@@ -44,7 +44,7 @@ _CHUNK_SIZE = 4096  # bytes per TTS chunk
 # The voice-terminal is the device owner, so we use the owner's Telegram user_id
 # (which has OWNER role in RBAC and can invoke tool_use).  Set via docker-compose
 # GATEWAY_OWNER_USER_ID env var; falls back to "api" (viewer, blocked) if unset.
-_OWNER_USER_ID = os.environ.get("GATEWAY_OWNER_USER_ID", "api")
+_OWNER_USER_ID = os.environ.get("GATEWAY_OWNER_USER_ID", "")
 
 # Read the bearer token from a secret file first (Docker secrets pattern), then
 # fall back to the env var — mirrors how agentshroud-gateway reads GATEWAY_AUTH_TOKEN_FILE.
@@ -92,9 +92,13 @@ async def _call_forward(transcript: str) -> str:
             f"{_GATEWAY_URL}/forward",
             json={
                 "content": transcript,
-                "source": _OWNER_USER_ID,
+                "source": "api",
                 "content_type": "text",
                 "route_to": "hermes",
+                # user_id drives RBAC: middleware resolves this field first, before source.
+                # Owner UID maps to OWNER role (tool_use allowed); falls back to None
+                # (→ viewer, blocked) if the env var is not set.
+                "user_id": _OWNER_USER_ID or None,
             },
             headers={"Authorization": f"Bearer {_GATEWAY_TOKEN}"},
         )

@@ -12,6 +12,7 @@ Handles graceful degradation when agents are offline.
 
 
 import logging
+import os
 from datetime import datetime
 from typing import Any
 
@@ -82,6 +83,14 @@ class MultiAgentRouter:
             bots: Mapping of bot_id → BotConfig from GatewayConfig.bots.
         """
         for bot_id, bot in bots.items():
+            # Read bot-specific API key from Docker secret (e.g. hermes_api_key).
+            # The secret file name is <bot_id>_api_key; absent or empty → None.
+            secret_path = f"/run/secrets/{bot_id}_api_key"
+            api_key: str | None = None
+            if os.path.isfile(secret_path):
+                with open(secret_path) as _f:
+                    api_key = _f.read().strip() or None
+
             target = AgentTarget(
                 name=bot_id,
                 url=bot.base_url,
@@ -89,9 +98,11 @@ class MultiAgentRouter:
                 tags=[],
                 chat_path=bot.chat_path,
                 health_path=bot.health_path,
+                api_key=api_key,
             )
             self.targets[bot_id] = target
-            logger.info("Router: registered bot target '%s' → %s", bot_id, bot.base_url)
+            logger.info("Router: registered bot target '%s' → %s (api_key=%s)",
+                        bot_id, bot.base_url, "set" if api_key else "absent")
 
         logger.info("Router: %d bot target(s) registered", len(self.targets))
 
@@ -152,15 +163,15 @@ class MultiAgentRouter:
         Raises:
             ForwardError: If forwarding fails
         """
-        # OpenAI-compatible targets (chat_path ending /v1/chat/completions) require
-        # a messages[] body; generic targets (OpenClaw /chat) use the legacy shape.
-        _OPENAI_DEFAULT_MODEL = "anthropic/claude-opus-4-8"
-        is_openai = target.chat_path.endswith("/v1/chat/completions")
-
-        if is_openai:
-            payload = {
-                "model": _OPENAI_DEFAULT_MODEL,
+        # OpenAI-compatible endpoints (chat/completions) expect a different payload
+        # shape than the gateway's custom format.  The hermes agent exposes such
+        # an endpoint; detect by path rather than by name so any future OpenAI-
+        # compatible bot benefits automatically.
+        if "chat/completions" in target.chat_path:
+            payload: dict[str, Any] = {
+                "model": target.name,
                 "messages": [{"role": "user", "content": sanitized_content}],
+                "metadata": metadata,
             }
         else:
             payload = {
@@ -171,6 +182,10 @@ class MultiAgentRouter:
                 "metadata": metadata,
             }
 
+        headers: dict[str, str] = {}
+        if target.api_key:
+            headers["Authorization"] = f"Bearer {target.api_key}"
+
         logger.info(f"Forwarding to {target.name} at {target.url} (ledger_id={ledger_id})")
 
         try:
@@ -178,6 +193,7 @@ class MultiAgentRouter:
                 response = await client.post(
                     f"{target.url}{target.chat_path}",
                     json=payload,
+                    headers=headers,
                 )
                 response.raise_for_status()
 
@@ -185,20 +201,20 @@ class MultiAgentRouter:
                     f"Successfully forwarded to {target.name} " f"(status={response.status_code})"
                 )
 
-                raw = response.json()
+                data = response.json()
 
-                if is_openai:
+                # For OpenAI-compatible targets, extract the assistant reply string
+                # so the rest of the pipeline sees a consistent text value.
+                if "chat/completions" in target.chat_path:
                     try:
-                        return raw["choices"][0]["message"]["content"]
+                        text = data["choices"][0]["message"]["content"]
                     except (KeyError, IndexError, TypeError) as exc:
                         raise ForwardError(
                             f"Malformed OpenAI response from {target.name}: {exc}"
                         ) from exc
+                    return text
 
-                return raw
-
-        except ForwardError:
-            raise
+                return data
 
         except httpx.ConnectError as e:
             # Agent is offline - this is expected in Phase 2
@@ -220,6 +236,9 @@ class MultiAgentRouter:
             raise ForwardError(
                 f"Agent {target.name} returned error: {e.response.status_code}"
             ) from e
+
+        except ForwardError:
+            raise  # preserve specific ForwardError messages (e.g. Malformed OpenAI response)
 
         except Exception as e:
             logger.error(f"Unexpected error forwarding to {target.name}: {e}")

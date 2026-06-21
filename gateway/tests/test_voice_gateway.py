@@ -311,8 +311,13 @@ def test_owner_user_id_used_as_source_in_forward(monkeypatch):
 
         asyncio.run(srv._call_forward("test query"))
 
-    assert captured_body.get("source") == "8096968754", (
-        f"Expected source='8096968754', got {captured_body.get('source')!r}"
+    # source must remain "api" (enum-validated by ForwardRequest.validate_source)
+    assert captured_body.get("source") == "api", (
+        f"Expected source='api', got {captured_body.get('source')!r}"
+    )
+    # user_id carries the owner UID — RBAC middleware reads this field first
+    assert captured_body.get("user_id") == "8096968754", (
+        f"Expected user_id='8096968754', got {captured_body.get('user_id')!r}"
     )
 
 
