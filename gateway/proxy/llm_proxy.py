@@ -777,6 +777,68 @@ class LLMProxy:
                                 self._stats["failover_quota_failed"] = (
                                     self._stats.get("failover_quota_failed", 0) + 1
                                 )
+                                # Cloud failover: local model unavailable → try OpenAI
+                                _oai_key: str | None = None
+                                try:
+                                    with open("/run/secrets/openai_api_key") as _kf:
+                                        _oai_key = _kf.read().strip() or None
+                                except OSError:
+                                    pass
+                                if _oai_key:
+                                    try:
+                                        _oai_model = "gpt-4o-mini"
+                                        if is_openai:
+                                            _fo2_data = dict(request_data or {})
+                                            _fo2_data["model"] = _oai_model
+                                        else:
+                                            _fo2_data = anthropic_to_openai_request(
+                                                request_data or {}, _oai_model
+                                            )
+                                        # gpt-4o-mini max completion tokens = 16384
+                                        if _fo2_data.get("max_tokens", 0) > 16384:
+                                            _fo2_data["max_tokens"] = 16384
+                                        _fo2_body = json.dumps(_fo2_data).encode()
+                                        _fo2_url = f"{OPENAI_API_BASE}/v1/chat/completions"
+                                        async with _httpx.AsyncClient(
+                                            verify=True,
+                                            timeout=_httpx.Timeout(5.0, read=1800.0),
+                                        ) as _fo2_client:
+                                            async with _fo2_client.stream(
+                                                "POST",
+                                                _fo2_url,
+                                                content=_fo2_body,
+                                                headers={
+                                                    "content-type": "application/json",
+                                                    "authorization": f"Bearer {_oai_key}",
+                                                },
+                                            ) as _fo2_resp:
+                                                if _fo2_resp.status_code == 200:
+                                                    logger.info(
+                                                        "Cloud failover → OpenAI %s",
+                                                        _oai_model,
+                                                    )
+                                                    if "/v1/messages" in path:
+                                                        async for _t in translate_openai_sse_to_anthropic(
+                                                            _fo2_resp.aiter_bytes(),
+                                                            model_name,
+                                                        ):
+                                                            yield _t
+                                                    else:
+                                                        async for _fo2_chunk in _fo2_resp.aiter_bytes():
+                                                            if _fo2_chunk:
+                                                                yield _fo2_chunk
+                                                    return
+                                                else:
+                                                    _fo2_err = await _fo2_resp.aread()
+                                                    logger.warning(
+                                                        "Cloud failover OpenAI %s: %s",
+                                                        _fo2_resp.status_code,
+                                                        _fo2_err[:300],
+                                                    )
+                                    except Exception as _fe2:
+                                        logger.warning(
+                                            "Cloud failover (OpenAI) error: %s", _fe2
+                                        )
                             yield error_body
                         else:
                             # Normal streaming — forward chunks immediately, no buffering
