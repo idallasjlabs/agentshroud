@@ -37,17 +37,6 @@ else
     echo "[hermes-init] config.yaml already exists and is current — skipping"
 fi
 
-# Upgrade: inject api_server.api_key when missing.
-# Hermes reads this from the config file, not from the API_SERVER_KEY env var.
-# Without it Hermes rejects all /v1/chat/completions requests with 401.
-# Idempotent: only patches when the field is absent.
-if [ -n "${API_SERVER_KEY:-}" ] && \
-   ! grep -q "^  api_key:" "${DATA_DIR}/config.yaml" 2>/dev/null; then
-    sed -i "s|^api_server:|api_server:\n  api_key: \"${API_SERVER_KEY}\"|" \
-        "${DATA_DIR}/config.yaml"
-    echo "[hermes-init] Patched: added api_server.api_key from API_SERVER_KEY"
-fi
-
 # SOUL.md — bot identity file
 if [ ! -f "${DATA_DIR}/SOUL.md" ]; then
     cp "${DEFAULTS_DIR}/SOUL.md" "${DATA_DIR}/SOUL.md"

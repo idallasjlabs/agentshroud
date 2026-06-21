@@ -144,10 +144,11 @@ class LLMProxy:
         """Resolve the local backend for failover dispatch via LOCAL_MODEL_ROUTES.
 
         Failover previously hardcoded Ollama, which fails when the configured
-        local model is actually served by LM Studio or mlx_lm."""
+        local model is actually served by LM Studio or mlx_lm.
+        Skips empty base URLs (e.g. LMSTUDIO_API_BASE="") so the URL stays valid."""
         ml = local_model.lower()
         for prefix, route_url in LOCAL_MODEL_ROUTES.items():
-            if ml.startswith(prefix):
+            if ml.startswith(prefix) and route_url and route_url.startswith("http"):
                 return route_url
         return OLLAMA_API_BASE
 
