@@ -183,5 +183,12 @@ async def voice_endpoint(ws: WebSocket) -> None:
 
     except WebSocketDisconnect:
         logger.info("Disconnected: %s", remote)
+    except RuntimeError as exc:
+        # Starlette raises RuntimeError("Cannot call 'receive' once a disconnect
+        # message has been received") on a dirty close — treat it as a normal disconnect.
+        if "disconnect" in str(exc).lower():
+            logger.info("Disconnected (dirty close): %s", remote)
+        else:
+            logger.error("Unhandled WS error from %s: %s", remote, exc, exc_info=True)
     except Exception as exc:
         logger.error("Unhandled WS error from %s: %s", remote, exc, exc_info=True)
