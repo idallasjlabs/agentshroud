@@ -10,11 +10,12 @@ RUN useradd -m -u 1001 -s /sbin/nologin vg
 
 WORKDIR /app
 
-# System deps: Piper needs libsndfile; faster-whisper needs ffmpeg for audio decoding
+# System deps: Piper needs libsndfile + libespeak-ng1; faster-whisper needs ffmpeg
 RUN apt-get update -qq && \
     apt-get install -y --no-install-recommends \
         ffmpeg \
         libsndfile1 \
+        libespeak-ng1 \
         curl \
     && rm -rf /var/lib/apt/lists/*
 
