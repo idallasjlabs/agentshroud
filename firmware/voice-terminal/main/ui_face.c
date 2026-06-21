@@ -137,6 +137,14 @@ void ui_face_set_state(ws_vg_state_t state)
         lv_label_set_text(s_status, "Speaking...");
         break;
 
+    case WS_VG_STATE_DISCONNECTED:
+        lv_obj_set_size(s_eye_l, EYE_RADIUS * 2, EYE_RADIUS * 2);
+        lv_obj_set_size(s_eye_r, EYE_RADIUS * 2, EYE_RADIUS * 2);
+        lv_anim_del(s_mouth, _mouth_anim_cb);
+        lv_obj_set_height(s_mouth, MOUTH_H / 6);
+        lv_label_set_text(s_status, "Reconnecting...");
+        break;
+
     default:
         break;
     }

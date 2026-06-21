@@ -206,9 +206,9 @@ def test_ws_full_utterance_state_sequence(monkeypatch):
     with patch("httpx.AsyncClient.post", new=AsyncMock(return_value=mock_forward_resp)):
         with TestClient(app) as client:
             with client.websocket_connect("/voice") as ws:
-                # Should receive "listening" state on connect
+                # Should receive "idle" state on connect (device drives LISTEN; server does not presume)
                 state_msg = ws.receive_text()
-                assert json.loads(state_msg)["state"] == "listening"
+                assert json.loads(state_msg)["state"] == "idle"
 
                 # Send a new utterance
                 ws.send_text("LISTEN")
@@ -371,7 +371,7 @@ def test_ws_empty_transcript_goes_idle(monkeypatch):
     with patch("httpx.AsyncClient.post", new=AsyncMock(side_effect=Exception("should not call"))):
         with TestClient(app) as client:
             with client.websocket_connect("/voice") as ws:
-                ws.receive_text()  # initial listening state
+                ws.receive_text()  # initial idle state
 
                 ws.send_text("LISTEN")
                 ws.receive_text()  # listening
@@ -398,3 +398,21 @@ def test_ws_empty_transcript_goes_idle(monkeypatch):
                 assert "thinking" in states
                 assert "idle" in states
                 assert "speaking" not in states
+
+
+# ── Connect-state test ────────────────────────────────────────────────────────
+
+
+def test_ws_connect_sends_idle_first():
+    """The very first frame after WS accept must be idle, not listening.
+
+    The device owns the transition to LISTENING by sending "LISTEN".  The server
+    must not pre-emptively declare the device listening on connect, which would
+    make a healthy-but-idle device appear stuck.
+    """
+    with TestClient(app) as client:
+        with client.websocket_connect("/voice") as ws:
+            first = ws.receive_text()
+            assert json.loads(first) == {"state": "idle"}, (
+                f"Expected first frame {{state: idle}}, got {first!r}"
+            )

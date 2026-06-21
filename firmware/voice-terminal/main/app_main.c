@@ -217,6 +217,12 @@ static void voice_task(void *arg)
                 ws_client_send_listen(ws);
                 streaming = true;
                 ESP_LOGI(TAG, "Utterance started");
+            } else {
+                /* WS is down — clear the trigger so the next tap/wake-word works
+                 * once the connection recovers.  Without this, s_triggered stays
+                 * true and all future activations are silently dropped. */
+                wakeword_clear();
+                ESP_LOGW(TAG, "Trigger while disconnected — cleared");
             }
         }
 
@@ -288,18 +294,22 @@ void app_main(void)
      * Phase 2: wss:// through MicroLink.
      *   Set CONFIG_VT_VG_WS_URL = wss://marvin.tail240ea8.ts.net:8765/voice
      */
-    ws_client_handle_t ws = ws_client_create(
-        CONFIG_VT_VG_WS_URL,
-        _on_vg_state,
-        _on_tts_pcm,
-        NULL
-    );
-
-    if (!ws) {
-        ESP_LOGW(TAG, "WebSocket connection failed — retrying in background");
-    }
-
     ui_update(UI_READY, NULL);
+
+    ws_client_handle_t ws = NULL;
+    while (!ws) {
+        ws = ws_client_create(
+            CONFIG_VT_VG_WS_URL,
+            _on_vg_state,
+            _on_tts_pcm,
+            NULL
+        );
+        if (!ws) {
+            ESP_LOGW(TAG, "WebSocket connection failed — retrying in 5 s");
+            ui_face_set_state(WS_VG_STATE_DISCONNECTED);
+            vTaskDelay(pdMS_TO_TICKS(5000));
+        }
+    }
     ui_face_set_state(WS_VG_STATE_IDLE);
     ESP_LOGI(TAG, "Ready. Voice terminal active.");
 

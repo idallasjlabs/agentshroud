@@ -120,7 +120,7 @@ async def voice_endpoint(ws: WebSocket) -> None:
     remote = ws.client
     logger.info("Connection from %s", remote)
 
-    state = _State.LISTENING
+    state = _State.IDLE
     await _send_state(ws, state)
 
     pcm_chunks: List[bytes] = []

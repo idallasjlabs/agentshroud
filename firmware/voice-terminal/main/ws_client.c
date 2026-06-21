@@ -34,6 +34,7 @@ static void _on_event(void *handler_args, esp_event_base_t base,
 
     case WEBSOCKET_EVENT_DISCONNECTED:
         ESP_LOGW(TAG, "WebSocket disconnected");
+        if (c->state_cb) c->state_cb(WS_VG_STATE_DISCONNECTED, c->user_ctx);
         break;
 
     case WEBSOCKET_EVENT_DATA:
@@ -80,6 +81,7 @@ static void _on_event(void *handler_args, esp_event_base_t base,
 
     case WEBSOCKET_EVENT_ERROR:
         ESP_LOGE(TAG, "WebSocket error");
+        if (c->state_cb) c->state_cb(WS_VG_STATE_DISCONNECTED, c->user_ctx);
         break;
 
     default:

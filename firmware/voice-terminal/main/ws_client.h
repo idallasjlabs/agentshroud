@@ -28,6 +28,7 @@ typedef enum {
     WS_VG_STATE_LISTENING,
     WS_VG_STATE_THINKING,
     WS_VG_STATE_SPEAKING,
+    WS_VG_STATE_DISCONNECTED,
     WS_VG_STATE_UNKNOWN,
 } ws_vg_state_t;
 
