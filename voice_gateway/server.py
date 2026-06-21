@@ -81,7 +81,7 @@ async def _send_state(ws: WebSocket, state: _State) -> None:
 
 async def _call_forward(transcript: str) -> str:
     """POST transcript to AgentShroud /forward, return agent_response text."""
-    async with httpx.AsyncClient(timeout=60.0) as client:
+    async with httpx.AsyncClient(timeout=60.0, trust_env=False) as client:
         resp = await client.post(
             f"{_GATEWAY_URL}/forward",
             json={

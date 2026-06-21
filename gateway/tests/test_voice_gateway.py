@@ -285,6 +285,41 @@ def test_token_falls_back_to_env_when_no_file(tmp_path, monkeypatch):
     assert srv._GATEWAY_TOKEN == "env-token"
 
 
+def test_stt_uses_local_model_dir_when_env_set(monkeypatch):
+    """WHISPER_MODEL_DIR env var is honoured: _MODEL_PATH resolves to the directory
+    and WhisperModel is constructed with that path — no network call at runtime.
+
+    Uses sys.modules injection so faster_whisper need not be installed on the host.
+    """
+    import importlib
+    import sys
+
+    local_dir = "/opt/whisper/base.en"
+    monkeypatch.setenv("WHISPER_MODEL_DIR", local_dir)
+
+    import voice_gateway.stt as stt_mod
+    importlib.reload(stt_mod)
+
+    # _MODEL_PATH must pick up the env var after reload
+    assert stt_mod._MODEL_PATH == local_dir
+
+    # Inject a fake faster_whisper module so the lazy import inside _get_model() works
+    # without a real installation (and without any network call).
+    captured = {}
+    fake_fw = MagicMock()
+    fake_fw.WhisperModel = lambda path, **kw: (
+        captured.update({"model_path": path}) or MagicMock()
+    )
+    monkeypatch.setitem(sys.modules, "faster_whisper", fake_fw)
+
+    # _get_model() must pass _MODEL_PATH (the directory) to WhisperModel
+    stt_mod.reset_model()
+    stt_mod._get_model()
+    assert captured.get("model_path") == local_dir, (
+        f"Expected WhisperModel({local_dir!r}), got {captured.get('model_path')!r}"
+    )
+
+
 def test_ws_empty_transcript_goes_idle(monkeypatch):
     """Empty STT result: no forward call, state goes directly to idle."""
     import voice_gateway.stt as stt_mod

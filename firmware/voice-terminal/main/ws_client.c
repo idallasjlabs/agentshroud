@@ -4,6 +4,7 @@
 #include "cJSON.h"
 #include "esp_log.h"
 #include "esp_websocket_client.h"
+#include "esp_crt_bundle.h"
 #include "freertos/FreeRTOS.h"
 #include "freertos/semphr.h"
 
@@ -102,11 +103,14 @@ ws_client_handle_t ws_client_create(const char *url,
     c->mutex     = xSemaphoreCreateMutex();
 
     esp_websocket_client_config_t cfg = {
-        .uri              = url,
+        .uri                  = url,
         .reconnect_timeout_ms = 5000,
         .network_timeout_ms   = 10000,
         /* Buffer large enough for one TTS chunk (4 KB PCM). */
-        .buffer_size      = 8192,
+        .buffer_size          = 8192,
+        /* TLS: attach the ESP-IDF CA bundle (includes ISRG Root X1 / Let's Encrypt).
+         * Required for wss:// connections to Tailscale Funnel. No-op for ws://. */
+        .crt_bundle_attach    = esp_crt_bundle_attach,
     };
 
     c->wsc = esp_websocket_client_init(&cfg);

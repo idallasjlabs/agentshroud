@@ -5,10 +5,9 @@
 
 from __future__ import annotations
 
-import io
 import logging
+import os
 import struct
-from typing import Optional
 
 logger = logging.getLogger("voice_gateway.stt")
 
@@ -16,14 +15,21 @@ logger = logging.getLogger("voice_gateway.stt")
 _model = None
 _MODEL_SIZE = "base.en"  # fast, English-only; swap to "small.en" for better accuracy
 
+# In the Docker image the model is pre-baked at build time into WHISPER_MODEL_DIR
+# (set by Dockerfile ENV).  Passing a local directory path to WhisperModel loads from
+# disk with zero network calls — required because voice-gateway runs on
+# agentshroud-isolated and all egress goes through a default-deny proxy that blocks
+# huggingface.co.  Falls back to the model size string for local dev (with internet).
+_MODEL_PATH = os.environ.get("WHISPER_MODEL_DIR", _MODEL_SIZE)
+
 
 def _get_model():
     global _model
     if _model is None:
         from faster_whisper import WhisperModel  # type: ignore[import]
 
-        logger.info("Loading faster-whisper model '%s'…", _MODEL_SIZE)
-        _model = WhisperModel(_MODEL_SIZE, device="cpu", compute_type="int8")
+        logger.info("Loading faster-whisper model from '%s'…", _MODEL_PATH)
+        _model = WhisperModel(_MODEL_PATH, device="cpu", compute_type="int8")
         logger.info("faster-whisper model loaded")
     return _model
 

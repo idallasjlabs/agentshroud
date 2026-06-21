@@ -40,6 +40,17 @@ RUN mkdir -p /opt/piper && \
 COPY voice_gateway/requirements.txt .
 RUN pip install --no-cache-dir -r requirements.txt
 
+# Pre-bake the faster-whisper STT model so runtime needs ZERO egress.
+# voice-gateway runs on agentshroud-isolated; all outbound is blocked by the
+# gateway egress proxy (default-deny enforce mode, huggingface.co not allowlisted).
+# Mirrors the Piper voice-model bake above — build time has full internet.
+ENV WHISPER_MODEL_DIR=/opt/whisper/base.en
+RUN python -c "from faster_whisper import download_model; \
+    download_model('base.en', output_dir='/opt/whisper/base.en')" && \
+    chmod -R a+rX /opt/whisper
+# Belt-and-suspenders: never reach out to HF at runtime even for metadata checks.
+ENV HF_HUB_OFFLINE=1
+
 COPY voice_gateway/ /app/voice_gateway/
 
 ENV PIPER_BIN=/usr/local/bin/piper

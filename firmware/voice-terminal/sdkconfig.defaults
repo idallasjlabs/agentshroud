@@ -53,7 +53,7 @@ CONFIG_USE_MULTINET=n
 
 # WiFi credentials (SSID pre-set; set password via: idf.py menuconfig → Voice Terminal Config)
 # Voice Gateway WS URL — marvin LAN (Phase 1; switch to wss://... for Tailscale Phase 2)
-CONFIG_VT_VG_WS_URL="ws://10.10.10.3:8765/voice"
+CONFIG_VT_VG_WS_URL="wss://marvin.tail240ea8.ts.net/voice"
 
 CONFIG_VT_WIFI_SSID="ford-prefect"
 CONFIG_VT_WIFI_PASSWORD=""

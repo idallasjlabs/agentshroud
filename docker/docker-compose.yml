@@ -421,7 +421,7 @@ services:
       - agentshroud-internal    # required for Docker host port publishing (internal: true nets cannot NAT)
       - agentshroud-isolated    # egress isolation — all outbound via gateway:8181 HTTP proxy
     ports:
-      - "127.0.0.1:8765:8765"  # loopback-only; Tailscale serve exposes externally
+      - "8765:8765"  # Phase 1 LAN; Phase 2 restrict to loopback + tailscale serve
     environment:
       HTTP_PROXY: http://gateway:8181
       HTTPS_PROXY: http://gateway:8181
