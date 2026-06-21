@@ -428,6 +428,9 @@ services:
       NO_PROXY: gateway,agentshroud-voice-gateway,127.0.0.1,localhost
       GATEWAY_URL: http://gateway:8080
       GATEWAY_AUTH_TOKEN_FILE: /run/secrets/gateway_password
+      # RBAC: voice-terminal is operated by the owner — use owner Telegram UID so
+      # middleware maps the request to OWNER role (tool_use permission required for /forward).
+      GATEWAY_OWNER_USER_ID: "8096968754"
       PIPER_BIN: /usr/local/bin/piper
       PIPER_MODEL: /opt/piper/en_US-lessac-medium.onnx
       VG_HOST: "0.0.0.0"

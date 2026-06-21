@@ -285,6 +285,37 @@ def test_token_falls_back_to_env_when_no_file(tmp_path, monkeypatch):
     assert srv._GATEWAY_TOKEN == "env-token"
 
 
+def test_owner_user_id_used_as_source_in_forward(monkeypatch):
+    """GATEWAY_OWNER_USER_ID is forwarded as 'source' so RBAC grants owner privileges."""
+    import importlib
+    import voice_gateway.server as srv
+
+    monkeypatch.setenv("GATEWAY_OWNER_USER_ID", "8096968754")
+    importlib.reload(srv)
+
+    assert srv._OWNER_USER_ID == "8096968754"
+
+    # Verify _call_forward passes _OWNER_USER_ID as source (not hardcoded "api")
+    captured_body = {}
+    mock_resp = MagicMock()
+    mock_resp.status_code = 201
+    mock_resp.json = MagicMock(return_value={"agent_response": "Hello"})
+    mock_resp.raise_for_status = MagicMock()
+
+    async def _capture_post(url, json=None, **kw):
+        captured_body.update(json or {})
+        return mock_resp
+
+    with patch("httpx.AsyncClient.post", new=AsyncMock(side_effect=_capture_post)):
+        import asyncio
+
+        asyncio.run(srv._call_forward("test query"))
+
+    assert captured_body.get("source") == "8096968754", (
+        f"Expected source='8096968754', got {captured_body.get('source')!r}"
+    )
+
+
 def test_stt_uses_local_model_dir_when_env_set(monkeypatch):
     """WHISPER_MODEL_DIR env var is honoured: _MODEL_PATH resolves to the directory
     and WhisperModel is constructed with that path — no network call at runtime.
