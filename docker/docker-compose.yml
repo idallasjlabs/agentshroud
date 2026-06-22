@@ -368,14 +368,12 @@ services:
       # HTTPXRequest that honours base_url → http://gateway:8080/telegram-api/bot.
       HERMES_TELEGRAM_DISABLE_FALLBACK_IPS: "1"
       HERMES_DASHBOARD: "1"
-      HERMES_DASHBOARD_HOST: "0.0.0.0"
+      # v0.17.0: HERMES_DASHBOARD_INSECURE removed. Loopback bind skips auth gate.
+      # Host publish (127.0.0.1:9119:9119) is still reachable via `docker exec` or
+      # SSH/Tailscale tunnel from marvin. Configure basic auth when an OAuth app is
+      # provisioned: set HERMES_DASHBOARD_BASIC_AUTH_USERNAME + _PASSWORD.
+      HERMES_DASHBOARD_HOST: "127.0.0.1"
       HERMES_DASHBOARD_PORT: "9119"
-      # hermes-agent v0.15.1+ fails closed on non-loopback dashboard binds unless an
-      # OAuth DashboardAuthProvider is registered. No OAuth app is provisioned for this
-      # deployment, so opt in to the pre-0.15.1 behaviour explicitly. Exposure is bounded:
-      # host publish is loopback-only (127.0.0.1:9119) and the container sits on the
-      # internal agentshroud-isolated network. Revisit if an OAuth client is provisioned.
-      HERMES_DASHBOARD_INSECURE: "1"
       AGENTSHROUD_BOT_ID: hermes
       API_SERVER_ENABLED: "1"
       API_SERVER_HOST: "0.0.0.0"
