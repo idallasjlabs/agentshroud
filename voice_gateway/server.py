@@ -64,6 +64,23 @@ if not _GATEWAY_TOKEN:
         "Mount docker secret 'gateway_password' or set GATEWAY_AUTH_TOKEN env var."
     )
 
+# Token that the ESP32 voice terminal must send as ?token= in the WS URL.
+# Read from Docker secret first, then fall back to env var.
+# If empty, the check is skipped (dev/test mode — set in production).
+_vg_token_file = os.environ.get(
+    "VOICE_GW_AUTH_TOKEN_FILE", "/run/secrets/voice_gateway_token"
+)
+if os.path.isfile(_vg_token_file):
+    with open(_vg_token_file) as _vfh:
+        _VG_AUTH_TOKEN = _vfh.read().strip()
+else:
+    _VG_AUTH_TOKEN = os.environ.get("VOICE_GW_AUTH_TOKEN", "")
+if not _VG_AUTH_TOKEN:
+    logger.warning(
+        "VOICE_GW_AUTH_TOKEN not set — /voice WebSocket is unauthenticated. "
+        "Mount docker secret 'voice_gateway_token' or set VOICE_GW_AUTH_TOKEN env var."
+    )
+
 
 class _State(Enum):
     IDLE = auto()
@@ -128,8 +145,16 @@ async def _call_forward(transcript: str) -> str:
 @app.websocket("/voice")
 async def voice_endpoint(ws: WebSocket) -> None:
     await ws.accept()
+    # Auth: check ?token= query parameter before processing any frames.
+    # _VG_AUTH_TOKEN is empty in dev/test (skipped); set via docker secret in prod.
+    token = ws.query_params.get("token", "")
+    if _VG_AUTH_TOKEN and token != _VG_AUTH_TOKEN:
+        logger.warning("Rejected WS connection (invalid token) from %s", ws.client)
+        await ws.close(code=1008)  # 1008 = Policy Violation
+        return
+
     remote = ws.client
-    logger.info("Connection from %s", remote)
+    logger.info("Connection from %s (authenticated)", remote)
 
     state = _State.IDLE
     await _send_state(ws, state)

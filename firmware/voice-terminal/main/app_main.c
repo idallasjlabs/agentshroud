@@ -299,7 +299,9 @@ void app_main(void)
     ws_client_handle_t ws = NULL;
     while (!ws) {
         ws = ws_client_create(
-            CONFIG_VT_VG_WS_URL,
+            /* Append ?token= so the server can authenticate the device.
+             * CONFIG_VT_VG_WS_TOKEN is defined in wifi_credentials.h (gitignored). */
+            CONFIG_VT_VG_WS_URL "?token=" CONFIG_VT_VG_WS_TOKEN,
             _on_vg_state,
             _on_tts_pcm,
             NULL

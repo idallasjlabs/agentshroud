@@ -433,8 +433,11 @@ services:
       PIPER_MODEL: /opt/piper/en_US-lessac-medium.onnx
       VG_HOST: "0.0.0.0"
       VG_PORT: "8765"
+      # WS auth: token the ESP32 must send as ?token= in the connection URL.
+      VOICE_GW_AUTH_TOKEN_FILE: /run/secrets/voice_gateway_token
     secrets:
       - gateway_password
+      - voice_gateway_token
     security_opt:
       - no-new-privileges:true
     tmpfs:
@@ -459,6 +462,8 @@ services:
 secrets:
   gateway_password:
     file: ./secrets/gateway_password.txt
+  voice_gateway_token:
+    file: ./secrets/voice_gateway_token.txt
   anthropic_oauth_token:
     file: ./secrets/anthropic_oauth_token.txt
   openai_api_key:

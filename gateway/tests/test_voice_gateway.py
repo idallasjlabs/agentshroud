@@ -452,3 +452,54 @@ def test_ws_connect_sends_idle_first():
             assert json.loads(first) == {"state": "idle"}, (
                 f"Expected first frame {{state: idle}}, got {first!r}"
             )
+
+
+# ── WS token authentication tests ────────────────────────────────────────────
+
+
+def test_ws_accepts_correct_token(monkeypatch):
+    """Connection with correct ?token= query param is accepted and gets idle state."""
+    import voice_gateway.server as srv
+
+    monkeypatch.setattr(srv, "_VG_AUTH_TOKEN", "correct-token")
+
+    with TestClient(app) as client:
+        with client.websocket_connect("/voice?token=correct-token") as ws:
+            first = ws.receive_text()
+            assert json.loads(first) == {"state": "idle"}
+
+
+def test_ws_rejects_wrong_token(monkeypatch):
+    """Connection with wrong ?token= is closed (server returns no state frame)."""
+    import voice_gateway.server as srv
+
+    monkeypatch.setattr(srv, "_VG_AUTH_TOKEN", "correct-token")
+
+    with TestClient(app) as client:
+        with pytest.raises(Exception):
+            with client.websocket_connect("/voice?token=wrong-token") as ws:
+                ws.receive_text()  # Server closes immediately — this should raise
+
+
+def test_ws_rejects_missing_token(monkeypatch):
+    """Connection with no token is rejected when auth is configured."""
+    import voice_gateway.server as srv
+
+    monkeypatch.setattr(srv, "_VG_AUTH_TOKEN", "correct-token")
+
+    with TestClient(app) as client:
+        with pytest.raises(Exception):
+            with client.websocket_connect("/voice") as ws:
+                ws.receive_text()
+
+
+def test_ws_accepts_when_auth_not_configured(monkeypatch):
+    """When _VG_AUTH_TOKEN is empty, any connection is accepted (dev / backward compat)."""
+    import voice_gateway.server as srv
+
+    monkeypatch.setattr(srv, "_VG_AUTH_TOKEN", "")
+
+    with TestClient(app) as client:
+        with client.websocket_connect("/voice") as ws:
+            first = ws.receive_text()
+            assert json.loads(first) == {"state": "idle"}
