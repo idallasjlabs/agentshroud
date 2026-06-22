@@ -19,17 +19,24 @@ RUN apt-get update -qq && \
         curl \
     && rm -rf /var/lib/apt/lists/*
 
-# Install Piper TTS binary — supports linux/amd64 and linux/arm64 (marvin is arm64)
+# Install Piper TTS binary + bundled shared libs.
+# The piper release tarball contains libpiper_phonemize.so.1 and libonnxruntime.so.1.14.1
+# alongside the binary — these MUST be extracted or piper exits 127 at runtime.
+# We extract everything into /opt/piper-bin, then symlink the executable so
+# LD_LIBRARY_PATH=/opt/piper-bin makes the bundled libs visible.
 ARG PIPER_VERSION=2023.11.14-2
 ARG TARGETARCH
 RUN case "${TARGETARCH}" in \
         arm64|aarch64) PIPER_ARCH="aarch64" ;; \
         *)             PIPER_ARCH="x86_64"  ;; \
     esac && \
+    mkdir -p /opt/piper-bin && \
     curl -fsSL \
         "https://github.com/rhasspy/piper/releases/download/${PIPER_VERSION}/piper_linux_${PIPER_ARCH}.tar.gz" \
-        | tar -xz -C /usr/local/bin --strip-components=1 piper/piper && \
-    chmod +x /usr/local/bin/piper
+        | tar -xz -C /opt/piper-bin --strip-components=1 && \
+    chmod +x /opt/piper-bin/piper && \
+    ln -sf /opt/piper-bin/piper /usr/local/bin/piper
+ENV LD_LIBRARY_PATH=/opt/piper-bin
 
 # Download Piper voice model
 RUN mkdir -p /opt/piper && \
@@ -54,7 +61,7 @@ ENV HF_HUB_OFFLINE=1
 
 COPY voice_gateway/ /app/voice_gateway/
 
-ENV PIPER_BIN=/usr/local/bin/piper
+ENV PIPER_BIN=/opt/piper-bin/piper
 ENV PIPER_MODEL=/opt/piper/en_US-lessac-medium.onnx
 ENV VG_HOST=0.0.0.0
 ENV VG_PORT=8765

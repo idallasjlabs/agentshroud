@@ -88,7 +88,9 @@ def test_tts_empty_text_returns_empty():
 
 
 def test_tts_synthesize_mocked_piper(monkeypatch):
-    """synthesize() invokes piper and returns its stdout."""
+    """synthesize() invokes piper; when rates match no resampling occurs."""
+    import voice_gateway.tts as tts_mod
+
     pcm_bytes = b"\x00\x01" * 100
 
     mock_result = MagicMock()
@@ -97,11 +99,45 @@ def test_tts_synthesize_mocked_piper(monkeypatch):
     mock_result.stderr = b""
 
     monkeypatch.setattr(subprocess, "run", lambda *a, **kw: mock_result)
+    # Pin rates equal so no resampling — tests the pass-through path.
+    monkeypatch.setattr(tts_mod, "TARGET_SAMPLE_RATE", tts_mod.OUTPUT_SAMPLE_RATE)
 
-    from voice_gateway import tts
-
-    result = tts.synthesize("hello world")
+    result = tts_mod.synthesize("hello world")
     assert result == pcm_bytes
+
+
+def test_tts_resamples_22050_to_16000(monkeypatch):
+    """When OUTPUT_SAMPLE_RATE (22050) != TARGET_SAMPLE_RATE (16000), the output
+    is resampled.  For N input samples at 22050 Hz the output should have
+    approximately N * 16000/22050 samples.  The exact ratio is checked within 1%.
+    """
+    import math
+    import struct as _struct
+    import voice_gateway.tts as tts_mod
+
+    # Build 0.5 s of silence at 22050 Hz (the native Piper rate)
+    n_src = 22050 // 2  # 0.5 s
+    raw_pcm = _struct.pack(f"<{n_src}h", *([0] * n_src))
+
+    mock_result = MagicMock()
+    mock_result.returncode = 0
+    mock_result.stdout = raw_pcm
+    mock_result.stderr = b""
+
+    monkeypatch.setattr(subprocess, "run", lambda *a, **kw: mock_result)
+    # Ensure resampling is active (default — but be explicit)
+    monkeypatch.setattr(tts_mod, "OUTPUT_SAMPLE_RATE", 22050)
+    monkeypatch.setattr(tts_mod, "TARGET_SAMPLE_RATE", 16000)
+
+    result = tts_mod.synthesize("hello")
+
+    n_dst = len(result) // 2  # 16-bit samples
+    expected = n_src * 16000 / 22050
+    ratio_error = abs(n_dst - expected) / expected
+    assert ratio_error < 0.01, (
+        f"Resampled length {n_dst} samples deviates {ratio_error:.2%} from expected "
+        f"{expected:.1f} (src={n_src}, 22050→16000 Hz)"
+    )
 
 
 def test_tts_piper_not_found_raises(monkeypatch):
