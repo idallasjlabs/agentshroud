@@ -76,10 +76,19 @@ curl http://localhost:8080/status
            │  - Port: 9121 (Basic-Auth)   │
            │  - Hermes Control Interface  │
            └──────────────────────────────┘
+
+           ┌──────────────────────────────┐
+           │  agentshroud-voice-gateway   │
+           │  [--profile voice|full]      │
+           │  - Port: 8765 (WebSocket)    │
+           │  - Whisper STT + Piper TTS   │
+           │  → ESP32-S3-BOX-3 terminal   │
+           └──────────────────────────────┘
 ```
 
-**Profile `full`** starts the complete stack (gateway + OpenClaw + Hermes + HCI).
-Omitting `--profile full` starts gateway + OpenClaw only (original default).
+**Profile `full`** starts the complete stack (gateway + OpenClaw + Hermes + HCI + voice-gateway).
+**Profile `voice`** starts gateway + voice-gateway only (useful for voice-terminal testing without the full bot stack).
+Omitting profiles starts gateway + OpenClaw only (original default).
 
 ### Security Features (Implemented)
 
