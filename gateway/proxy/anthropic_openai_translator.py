@@ -370,6 +370,11 @@ def openai_to_anthropic_response(openai_resp: dict, original_model: str) -> dict
             }
         )
 
+    # Anthropic Messages API requires at least one content block; an empty
+    # content array causes IndexError on the client (e.g. Hermes content[0]).
+    if not content_blocks:
+        content_blocks.append({"type": "text", "text": ""})
+
     # Usage
     usage_raw = openai_resp.get("usage", {})
     usage = {

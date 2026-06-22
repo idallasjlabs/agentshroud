@@ -280,3 +280,56 @@ def test_sse_translator_empty_stream_emits_full_sequence():
     event_types = {e.get("type") for e in events}
     assert "message_start" in event_types
     assert "message_stop" in event_types
+
+
+# ---------------------------------------------------------------------------
+# openai_to_anthropic_response — empty-content guard (regression: IndexError)
+# ---------------------------------------------------------------------------
+
+
+def test_translator_null_content_no_tool_calls_yields_nonempty_content():
+    """Failover reply with null content and no tool_calls must not return content:[]."""
+    openai_resp = {
+        "choices": [{"message": {"role": "assistant", "content": None}, "finish_reason": "stop"}],
+        "usage": {},
+    }
+    result = openai_to_anthropic_response(openai_resp, "claude-opus-4-7")
+    assert len(result["content"]) >= 1
+    assert result["content"][0]["type"] == "text"
+
+
+def test_translator_empty_string_content_yields_nonempty_content():
+    """Failover reply with empty-string content must not return content:[]."""
+    openai_resp = {
+        "choices": [{"message": {"role": "assistant", "content": ""}, "finish_reason": "stop"}],
+        "usage": {},
+    }
+    result = openai_to_anthropic_response(openai_resp, "claude-opus-4-7")
+    assert len(result["content"]) >= 1
+
+
+def test_translator_empty_choices_yields_nonempty_content():
+    """Failover reply with choices:[] (e.g. rate-limit stub) must not return content:[]."""
+    openai_resp = {"choices": [], "usage": {}}
+    result = openai_to_anthropic_response(openai_resp, "claude-opus-4-7")
+    assert len(result["content"]) >= 1
+    assert result["content"][0]["type"] == "text"
+
+
+# ---------------------------------------------------------------------------
+# SSE translator — tool-call-only index offset (regression: gap at index 0)
+# ---------------------------------------------------------------------------
+
+
+def test_sse_translator_tool_call_only_starts_at_index_0():
+    """Tool-call-only SSE stream must produce tool_use at index 0 (no text gap)."""
+    chunks = [
+        b'data: {"choices":[{"delta":{"tool_calls":[{"index":0,"id":"call_1","type":"function","function":{"name":"get_weather","arguments":""}}]},"finish_reason":null}]}\n',
+        b'data: {"choices":[{"delta":{"tool_calls":[{"index":0,"function":{"arguments":"{\\"city\\":\\"NY\\"}"}}]},"finish_reason":"tool_calls"}]}\n',
+        b"data: [DONE]\n",
+    ]
+    events = asyncio.run(_collect_sse(chunks))
+    starts = [e for e in events if e.get("type") == "content_block_start"]
+    tool_start = next((e for e in starts if e.get("content_block", {}).get("type") == "tool_use"), None)
+    assert tool_start is not None, "no tool_use content_block_start found"
+    assert tool_start["index"] == 0, f"tool_use should start at index 0, got {tool_start['index']}"

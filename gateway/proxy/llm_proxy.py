@@ -312,12 +312,58 @@ class LLMProxy:
                 return f_status, f_headers, f_body
 
             logger.warning(
-                "Failover local model returned HTTP %s — returning original cloud error", f_status
+                "Failover local model returned HTTP %s — trying OpenAI cloud fallback", f_status
             )
-            return None
         except Exception as e:
-            logger.warning("Failover dispatch error: %s — returning original cloud error", e)
-            return None
+            logger.warning("Failover dispatch error: %s — trying OpenAI cloud fallback", e)
+        # Cloud fallback: local model failed → try OpenAI gpt-4o-mini (non-streaming)
+        _oai_key: str | None = None
+        try:
+            with open("/run/secrets/openai_api_key") as _kf:
+                _oai_key = _kf.read().strip() or None
+        except OSError:
+            pass
+        if _oai_key:
+            try:
+                _oai_model = "gpt-4o-mini"
+                if is_openai:
+                    _fo2_data = dict(request_data or {})
+                    _fo2_data["model"] = _oai_model
+                elif "/v1/messages" in path:
+                    _fo2_data = anthropic_to_openai_request(request_data or {}, _oai_model)
+                elif is_google:
+                    _fo2_data = gemini_to_openai_request(request_data or {}, _oai_model)
+                else:
+                    return None
+                if _fo2_data.get("max_tokens", 0) > 16384:
+                    _fo2_data["max_tokens"] = 16384
+                _fo2_body = json.dumps(_fo2_data).encode()
+                _fo2_url = f"{OPENAI_API_BASE}/v1/chat/completions"
+                _f2_status, _f2_hdrs, _f2_body = await self._forward_request(
+                    _fo2_url,
+                    _fo2_body,
+                    {
+                        "content-type": "application/json",
+                        "authorization": f"Bearer {_oai_key}",
+                    },
+                )
+                if _f2_status == 200 and _f2_body:
+                    logger.info("Cloud failover (non-streaming) → OpenAI %s", _oai_model)
+                    if translate_back == "anthropic":
+                        _oai_resp = json.loads(_f2_body)
+                        _f2_body = json.dumps(
+                            openai_to_anthropic_response(_oai_resp, model_name)
+                        ).encode()
+                    elif translate_back == "gemini":
+                        _oai_resp = json.loads(_f2_body)
+                        _f2_body = json.dumps(openai_to_gemini_response(_oai_resp)).encode()
+                    return _f2_status, _f2_hdrs, _f2_body
+                logger.warning(
+                    "Cloud failover (non-streaming) OpenAI returned HTTP %s", _f2_status
+                )
+            except Exception as _fe2:
+                logger.warning("Cloud failover (non-streaming) error: %s", _fe2)
+        return None
 
     # ---------------------------------------------------------------------------
     # Local backend availability helpers

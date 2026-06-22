@@ -180,9 +180,8 @@ void wakeword_push_frame(const uint8_t *pcm, size_t len)
 
 #if HAVE_ESP_SR
     if (!s_afe_iface || !s_afe_data) return;
-    /* Only run AFE when idle (PTT-triggered utterances skip the AFE feed path). */
-    if (s_ptt_held || (s_triggered && s_ended == false && !s_ptt_held == false)) return;
-    if (s_triggered) return;
+    /* Skip AFE feed during active PTT or wake-word-triggered utterance. */
+    if (s_ptt_held || s_triggered) return;
 
     /* Feed the mic frame into the AFE pipeline. */
     int rc = s_afe_iface->feed(s_afe_data, (const int16_t *)pcm);

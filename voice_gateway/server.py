@@ -23,6 +23,7 @@ Required env vars (set by docker-compose):
 
 from __future__ import annotations
 
+import asyncio
 import json
 import logging
 import os
@@ -79,6 +80,16 @@ async def health() -> dict:
     return {"status": "ok"}
 
 
+async def _keepalive(ws: WebSocket) -> None:
+    """Send a heartbeat every 8 s to prevent ESP32 network_timeout_ms=10000 disconnects."""
+    try:
+        while True:
+            await asyncio.sleep(8)
+            await ws.send_text('{"heartbeat":1}')
+    except Exception:
+        pass
+
+
 async def _send_state(ws: WebSocket, state: _State) -> None:
     name = state.name.lower()
     await ws.send_text(json.dumps({"state": name}))
@@ -124,7 +135,7 @@ async def voice_endpoint(ws: WebSocket) -> None:
     await _send_state(ws, state)
 
     pcm_chunks: List[bytes] = []
-
+    heartbeat = asyncio.create_task(_keepalive(ws))
     try:
         while True:
             message = await ws.receive()
@@ -192,3 +203,5 @@ async def voice_endpoint(ws: WebSocket) -> None:
             logger.error("Unhandled WS error from %s: %s", remote, exc, exc_info=True)
     except Exception as exc:
         logger.error("Unhandled WS error from %s: %s", remote, exc, exc_info=True)
+    finally:
+        heartbeat.cancel()
