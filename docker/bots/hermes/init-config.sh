@@ -131,21 +131,31 @@ mkdir -p "${DATA_DIR}/memories"
 
 echo "[hermes-init] Cron jobs seeded"
 
-# ── Tirith trust: competitor reachability ──────────────────────────────────
+# ── Tirith trust: competitor + research-source reachability ────────────────
 # The hermes URL scanner (tirith) flags `.ai`, `.security`, `.dev`, `.io`
 # TLDs under its `lookalike_tld` rule and *blocks* the agent from probing
 # them. The competitive cron's "verify-every-source" contract then can't
-# reach the 9 known-safe competitor sites and the report ends up filled
-# with ⚠️ UNVERIFIED markers. Scope-only-to-rule trust entries narrow the
-# bypass to lookalike_tld alone — every other tirith rule still fires.
+# reach known-safe sites and the report ends up filled with ⚠️ UNVERIFIED
+# markers. Scope-only-to-rule trust entries narrow the bypass to
+# lookalike_tld alone — every other tirith rule still fires.
 # Idempotent: `tirith trust add` no-ops on already-trusted patterns.
 if [ -x /opt/data/bin/tirith ]; then
-    for _dom in lakera.ai prompt.security calypsoai.com lasso.security \
-                cequence.ai arcade.dev cyberark.com gravitee.io maxim.ai; do
+    # trust.json is written by tirith as hermes user, but may be root-owned
+    # if a previous boot ran the add as root. Ensure the hermes user can write it.
+    _tirith_cfg="/opt/data/.config/tirith"
+    _tirith_json="${_tirith_cfg}/trust.json"
+    mkdir -p "${_tirith_cfg}" 2>/dev/null || true
+    if [ -f "${_tirith_json}" ] && [ "$(stat -c '%u' "${_tirith_json}" 2>/dev/null || echo 0)" != "10000" ]; then
+        chown 10000:10000 "${_tirith_json}" 2>/dev/null || true
+    fi
+    for _dom in \
+        lakera.ai prompt.security calypsoai.com lasso.security \
+        cequence.ai arcade.dev cyberark.com gravitee.io maxim.ai \
+        adversa.ai o-mega.ai getmaxim.ai; do
         /opt/data/bin/tirith trust add "${_dom}" --rule lookalike_tld \
             >/dev/null 2>&1 || true
     done
-    echo "[hermes-init] Tirith trust seeded for 9 competitor domains (rule=lookalike_tld)"
+    echo "[hermes-init] Tirith trust seeded for 12 competitor/research domains (rule=lookalike_tld)"
 fi
 
 # ── GitHub MCP server — wire on first boot if PAT is available ─────────────
