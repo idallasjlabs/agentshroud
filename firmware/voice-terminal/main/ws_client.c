@@ -110,6 +110,13 @@ ws_client_handle_t ws_client_create(const char *url,
         .network_timeout_ms   = 10000,
         /* Buffer large enough for one TTS chunk (4 KB PCM). */
         .buffer_size          = 8192,
+        /* Send a WebSocket PING every 15 s during idle.  Starlette/uvicorn
+         * auto-replies PONG, producing bidirectional traffic that keeps the
+         * Tailscale Funnel relay alive (idle timeout ~60-90 s otherwise).
+         * pingpong_timeout_sec=10 makes the client declare a dead socket within
+         * 10 s of a missing PONG so auto-reconnect fires promptly. */
+        .ping_interval_sec    = 15,
+        .pingpong_timeout_sec = 10,
         /* TLS: attach the ESP-IDF CA bundle (includes ISRG Root X1 / Let's Encrypt).
          * Required for wss:// connections to Tailscale Funnel. No-op for ws://. */
         .crt_bundle_attach    = esp_crt_bundle_attach,

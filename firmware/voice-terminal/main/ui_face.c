@@ -2,6 +2,7 @@
 #include "bsp/esp-bsp.h"
 #include "lvgl.h"
 #include "ws_client.h"
+#include "wakeword.h"
 #include "esp_log.h"
 
 static const char *TAG = "ui_face";
@@ -22,8 +23,9 @@ static lv_obj_t *s_eye_l    = NULL;  /* left eye white */
 static lv_obj_t *s_eye_r    = NULL;  /* right eye white */
 static lv_obj_t *s_pupil_l  = NULL;
 static lv_obj_t *s_pupil_r  = NULL;
-static lv_obj_t *s_mouth    = NULL;  /* arc for mouth */
+static lv_obj_t *s_mouth    = NULL;  /* rounded-rect mouth */
 static lv_obj_t *s_status   = NULL;  /* small status label */
+static lv_obj_t *s_touch    = NULL;  /* full-screen transparent touch overlay */
 static lv_anim_t s_mouth_anim;
 
 static ws_vg_state_t s_current_state = WS_VG_STATE_IDLE;
@@ -60,6 +62,20 @@ static void _start_mouth_anim(void)
     lv_anim_start(&s_mouth_anim);
 }
 
+/* ── Touch-to-talk overlay callbacks ─────────────────────────────────────── */
+
+static void _touch_pressed(lv_event_t *e)
+{
+    (void)e;
+    wakeword_ptt_press();
+}
+
+static void _touch_released(lv_event_t *e)
+{
+    (void)e;
+    wakeword_ptt_release();
+}
+
 /* ── Public API ─────────────────────────────────────────────────────────── */
 
 void ui_face_init(void)
@@ -91,7 +107,20 @@ void ui_face_init(void)
     lv_obj_align(s_status, LV_ALIGN_BOTTOM_MID, 0, -10);
     lv_label_set_text(s_status, "Say 'Hi, ESP' or tap to talk");
 
-    ESP_LOGI(TAG, "Face initialised");
+    /* Touchscreen PTT overlay — full-screen transparent object on top of the
+     * face widgets so any screen tap triggers PTT.  The physical button
+     * (BSP_BUTTON_MAIN) is registered separately in wakeword.c and still works. */
+    s_touch = lv_obj_create(scr);
+    lv_obj_set_size(s_touch, LV_HOR_RES, LV_VER_RES);
+    lv_obj_set_pos(s_touch, 0, 0);
+    lv_obj_set_style_bg_opa(s_touch, LV_OPA_TRANSP, LV_PART_MAIN);
+    lv_obj_set_style_border_width(s_touch, 0, LV_PART_MAIN);
+    lv_obj_clear_flag(s_touch, LV_OBJ_FLAG_SCROLLABLE);
+    lv_obj_add_event_cb(s_touch, _touch_pressed,  LV_EVENT_PRESSED,    NULL);
+    lv_obj_add_event_cb(s_touch, _touch_released, LV_EVENT_RELEASED,   NULL);
+    lv_obj_add_event_cb(s_touch, _touch_released, LV_EVENT_PRESS_LOST, NULL);
+
+    ESP_LOGI(TAG, "Face initialised (touchscreen PTT active)");
 }
 
 void ui_face_set_state(ws_vg_state_t state)

@@ -42,7 +42,16 @@ def _mock_response(body, status_code: int = 200) -> MagicMock:
 
 @pytest.mark.asyncio
 async def test_openai_target_sends_messages_body(router, monkeypatch):
-    """forward_to_agent sends {model, messages[]} when chat_path ends /v1/chat/completions."""
+    """forward_to_agent sends {model, messages[]} when chat_path ends /v1/chat/completions.
+
+    The messages array MUST start with a system message that includes a date/time
+    string (injected so the model can answer time-aware queries), followed by the
+    user message containing the sanitized content.
+    """
+    import re
+    from datetime import datetime
+    from zoneinfo import ZoneInfo
+
     captured = {}
 
     async def mock_post(self, url, json=None, **kwargs):
@@ -70,7 +79,23 @@ async def test_openai_target_sends_messages_body(router, monkeypatch):
     assert captured["url"] == "http://agentshroud-hermes:8642/v1/chat/completions"
     body = captured["json"]
     assert "messages" in body
-    assert body["messages"] == [{"role": "user", "content": "what time is it?"}]
+    messages = body["messages"]
+
+    # First message must be a system message with a date/time string
+    assert len(messages) == 2, f"Expected [system, user], got {messages}"
+    sys_msg = messages[0]
+    assert sys_msg["role"] == "system"
+    # The content should contain a date pattern (e.g. "Monday, June 23, 2026")
+    assert re.search(r"\w+, \w+ \d{1,2}, \d{4}", sys_msg["content"]), (
+        f"System message should contain a date: {sys_msg['content']}"
+    )
+    assert "current date and time" in sys_msg["content"].lower()
+
+    # Second message must be the user content
+    user_msg = messages[1]
+    assert user_msg["role"] == "user"
+    assert user_msg["content"] == "what time is it?"
+
     assert "model" in body
     assert "content" not in body  # generic field must NOT be sent
     assert "ledger_id" not in body  # generic field must NOT be sent

@@ -60,6 +60,18 @@ bool wakeword_ended(void);
 void wakeword_clear(void);
 
 /**
+ * @brief Programmatically start a PTT utterance (e.g. from an LVGL touch handler).
+ *        Equivalent to pressing the physical button.  No-op if already triggered.
+ */
+void wakeword_ptt_press(void);
+
+/**
+ * @brief Programmatically end a PTT utterance (e.g. on touch release / PRESS_LOST).
+ *        Equivalent to releasing the physical button.  No-op if not holding PTT.
+ */
+void wakeword_ptt_release(void);
+
+/**
  * @brief Free all AFE/WakeNet resources (called at shutdown).
  */
 void wakeword_deinit(void);

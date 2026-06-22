@@ -15,6 +15,7 @@ import logging
 import os
 from datetime import datetime
 from typing import Any
+from zoneinfo import ZoneInfo
 
 import httpx
 
@@ -168,9 +169,17 @@ class MultiAgentRouter:
         # an endpoint; detect by path rather than by name so any future OpenAI-
         # compatible bot benefits automatically.
         if "chat/completions" in target.chat_path:
+            # Inject current date/time as a system message so the model can
+            # answer time-aware queries ("what time is it?", "what day is it?").
+            # Timezone is owner-configurable via GATEWAY_TZ (default: US/Eastern).
+            _tz = ZoneInfo(os.environ.get("GATEWAY_TZ", "America/New_York"))
+            _now = datetime.now(_tz).strftime("%A, %B %d, %Y at %-I:%M %p %Z")
             payload: dict[str, Any] = {
                 "model": target.name,
-                "messages": [{"role": "user", "content": sanitized_content}],
+                "messages": [
+                    {"role": "system", "content": f"The current date and time is {_now}."},
+                    {"role": "user", "content": sanitized_content},
+                ],
                 "metadata": metadata,
             }
         else:

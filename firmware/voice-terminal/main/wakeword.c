@@ -35,14 +35,16 @@ static volatile bool s_ptt_held  = false;
 #define VAD_TIMEOUT_MS 8000
 static TickType_t s_trigger_tick = 0;
 
-/* ── Touchscreen PTT (BSP_BUTTON_MAIN) ──────────────────────────────────── */
+/* ── Physical button PTT (BSP_BUTTON_MAIN — top button on BOX-3) ─────────── */
 static button_handle_t s_bsp_buttons[BSP_BUTTON_NUM];
 static int             s_bsp_btn_cnt = 0;
 
-static void _btn_pressed(void *arg, void *data)
+/* Shared PTT logic — called from physical button callbacks and from the
+ * LVGL touch overlay in ui_face.c (wakeword_ptt_press / wakeword_ptt_release). */
+static void _ptt_start(void)
 {
     if (!s_triggered) {
-        ESP_LOGI(TAG, "Touch PTT: START");
+        ESP_LOGI(TAG, "PTT: START");
         s_ptt_held     = true;
         s_triggered    = true;
         s_ended        = false;
@@ -50,14 +52,17 @@ static void _btn_pressed(void *arg, void *data)
     }
 }
 
-static void _btn_released(void *arg, void *data)
+static void _ptt_end(void)
 {
     if (s_ptt_held) {
-        ESP_LOGI(TAG, "Touch PTT: END");
+        ESP_LOGI(TAG, "PTT: END");
         s_ptt_held = false;
         s_ended    = true;
     }
 }
+
+static void _btn_pressed(void *arg, void *data)  { _ptt_start(); }
+static void _btn_released(void *arg, void *data) { _ptt_end(); }
 
 /* ── AFE / WakeNet ─────────────────────────────────────────────────────────── */
 #if HAVE_ESP_SR
@@ -72,9 +77,11 @@ static int                       s_feed_bytes = 0;    /* bytes per feed() call *
 
 esp_err_t wakeword_init(const char *model_partition)
 {
-    /* ── Touchscreen PTT ─────────────────────────────────────────────────── *
+    /* ── Physical button PTT (BSP_BUTTON_MAIN) ──────────────────────────── *
      * bsp_display_start_with_config() ran in ui_init() before this call, so
-     * BSP_BUTTON_MAIN (touch panel) is available via bsp_iot_button_create(). */
+     * the BSP button registry is populated. BSP_BUTTON_MAIN is the top button
+     * on the BOX-3 (NOT the touchscreen — touchscreen PTT is handled separately
+     * via the LVGL overlay in ui_face.c calling wakeword_ptt_press/release). */
     esp_err_t ret = bsp_iot_button_create(s_bsp_buttons, &s_bsp_btn_cnt,
                                           BSP_BUTTON_NUM);
     if (ret != ESP_OK) {
@@ -88,7 +95,7 @@ esp_err_t wakeword_init(const char *model_partition)
     }
     iot_button_register_cb(main_btn, BUTTON_PRESS_DOWN, _btn_pressed, NULL);
     iot_button_register_cb(main_btn, BUTTON_PRESS_UP,   _btn_released, NULL);
-    ESP_LOGI(TAG, "Touch PTT registered (BSP_BUTTON_MAIN)");
+    ESP_LOGI(TAG, "Physical button PTT registered (BSP_BUTTON_MAIN)");
 
 #if HAVE_ESP_SR
     if (!model_partition) {
@@ -154,7 +161,7 @@ esp_err_t wakeword_init(const char *model_partition)
     int feed_samples = s_afe_iface->get_feed_chunksize(s_afe_data);
     s_feed_bytes = feed_samples * (int)sizeof(int16_t);
     ESP_LOGI(TAG, "AFE feed chunk: %d samples = %d bytes", feed_samples, s_feed_bytes);
-    ESP_LOGI(TAG, "WakeNet + Touch-PTT ready — say 'Hi, ESP' or tap the screen");
+    ESP_LOGI(TAG, "WakeNet + PTT ready — say 'Hi, ESP' or tap the screen");
 #else
     (void)model_partition;
     ESP_LOGW(TAG, "esp-sr not compiled in — touch-PTT only");
@@ -225,6 +232,10 @@ void wakeword_clear(void)
     s_ended     = false;
     s_ptt_held  = false;
 }
+
+/* Public PTT API — called from the LVGL touch overlay in ui_face.c. */
+void wakeword_ptt_press(void)   { _ptt_start(); }
+void wakeword_ptt_release(void) { _ptt_end(); }
 
 void wakeword_deinit(void)
 {
