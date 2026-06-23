@@ -27,6 +27,7 @@ import asyncio
 import json
 import logging
 import os
+import re
 from enum import Enum, auto
 from typing import List
 
@@ -187,7 +188,11 @@ async def voice_endpoint(ws: WebSocket) -> None:
                         transcript = _stt.transcribe(pcm_bytes)
                         logger.info("Transcript: %r", transcript)
 
-                        if not transcript.strip():
+                        # Reject empty transcripts and Whisper hallucinations that
+                        # contain only punctuation/whitespace (e.g. "...", ". . .")
+                        # on near-silent or very short audio frames.
+                        _words = re.sub(r"[^\w]", "", transcript)
+                        if not _words:
                             state = _State.IDLE
                             await _send_state(ws, state)
                             continue

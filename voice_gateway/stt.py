@@ -58,7 +58,15 @@ def transcribe(pcm_bytes: bytes, sample_rate: int = 16000) -> str:
     audio = np.array(samples, dtype=np.float32) / 32768.0
 
     model = _get_model()
-    segments, _ = model.transcribe(audio, beam_size=3, language="en")
+    segments, _ = model.transcribe(
+        audio,
+        beam_size=3,
+        language="en",
+        # Suppress hallucinated punctuation on near-silence (dots, ellipses, etc.)
+        no_speech_threshold=0.6,
+        condition_on_previous_text=False,
+        compression_ratio_threshold=2.4,
+    )
     text = " ".join(seg.text for seg in segments).strip()
     logger.debug("STT result: %r", text)
     return text
