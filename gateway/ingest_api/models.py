@@ -204,6 +204,7 @@ class AgentTarget(BaseModel):
     tags: list[str] = Field(default_factory=list)
     chat_path: str = "/chat"
     health_path: str = "/health"
+    api_key: Optional[str] = Field(default=None, exclude=True)
 
 
 # === SSH Models ===
