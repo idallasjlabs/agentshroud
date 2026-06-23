@@ -17,8 +17,11 @@ Gateway → device protocol:
   • Text "END"     — TTS stream complete, device may start next utterance
 
 Required env vars (set by docker-compose):
-  GATEWAY_URL         — e.g. http://gateway:8080
-  GATEWAY_AUTH_TOKEN  — Bearer token for POST /forward
+  GATEWAY_URL           — e.g. http://gateway:8080
+  GATEWAY_AUTH_TOKEN    — Bearer token for gateway (kept for /forward fallback)
+  GATEWAY_OWNER_USER_ID — owner Telegram UID for RBAC propagation
+  VOICE_MODEL           — LLM model for voice (default: claude-haiku-4-5-20251001)
+  GATEWAY_TZ            — IANA timezone for date/time injection (default: America/New_York)
 """
 
 from __future__ import annotations
@@ -28,8 +31,10 @@ import json
 import logging
 import os
 import re
+from datetime import datetime
 from enum import Enum, auto
-from typing import List
+from typing import Dict, List
+from zoneinfo import ZoneInfo
 
 import httpx
 from fastapi import FastAPI, WebSocket, WebSocketDisconnect
@@ -42,15 +47,17 @@ logger = logging.getLogger("voice_gateway.server")
 _GATEWAY_URL = os.environ.get("GATEWAY_URL", "http://gateway:8080")
 _CHUNK_SIZE = 4096  # bytes per TTS chunk
 
-# The RBAC middleware resolves `source` to a user_id for permission checking.
-# The voice-terminal is the device owner, so we use the owner's Telegram user_id
-# (which has OWNER role in RBAC and can invoke tool_use).  Set via docker-compose
-# GATEWAY_OWNER_USER_ID env var; falls back to "api" (viewer, blocked) if unset.
 _OWNER_USER_ID = os.environ.get("GATEWAY_OWNER_USER_ID", "")
 
-# Read the bearer token from a secret file first (Docker secrets pattern), then
-# fall back to the env var — mirrors how agentshroud-gateway reads GATEWAY_AUTH_TOKEN_FILE.
-# Token value is never logged.
+# Model for voice — bypasses Hermes agentic overhead, calls gateway's OpenAI-compat
+# proxy directly. Gateway substitutes its own Anthropic key; no key needed here.
+_VOICE_MODEL = os.environ.get("VOICE_MODEL", "claude-haiku-4-5-20251001")
+
+# Conversation history: keep at most this many user+assistant turn pairs.
+# Older turns are dropped (FIFO) to bound token usage and maintain context.
+_MAX_HISTORY_TURNS = 10
+
+# Read the bearer token (kept for compatibility / future use).
 _token_file = os.environ.get(
     "GATEWAY_AUTH_TOKEN_FILE", "/run/secrets/gateway_password"
 )
@@ -61,13 +68,10 @@ else:
     _GATEWAY_TOKEN = os.environ.get("GATEWAY_AUTH_TOKEN", "")
 if not _GATEWAY_TOKEN:
     logger.warning(
-        "GATEWAY_AUTH_TOKEN not set — /forward calls will fail authentication. "
-        "Mount docker secret 'gateway_password' or set GATEWAY_AUTH_TOKEN env var."
+        "GATEWAY_AUTH_TOKEN not set — gateway calls may fail authentication."
     )
 
-# Token that the ESP32 voice terminal must send as ?token= in the WS URL.
-# Read from Docker secret first, then fall back to env var.
-# If empty, the check is skipped (dev/test mode — set in production).
+# WS auth token the ESP32 must provide as ?token=.
 _vg_token_file = os.environ.get(
     "VOICE_GW_AUTH_TOKEN_FILE", "/run/secrets/voice_gateway_token"
 )
@@ -114,44 +118,59 @@ async def _send_state(ws: WebSocket, state: _State) -> None:
     logger.debug("→ state: %s", name)
 
 
-async def _call_forward(transcript: str) -> str:
-    """POST transcript to AgentShroud /forward, return agent_response text."""
-    async with httpx.AsyncClient(timeout=120.0, trust_env=False) as client:
+def _voice_system_message() -> Dict[str, str]:
+    """Build a system message with the current date/time for voice context."""
+    tz = ZoneInfo(os.environ.get("GATEWAY_TZ", "America/New_York"))
+    now = datetime.now(tz).strftime("%A, %B %d, %Y at %-I:%M %p %Z")
+    return {
+        "role": "system",
+        "content": (
+            f"You are a concise voice assistant built into an ESP32 device. "
+            f"The current date and time is {now}. "
+            "Keep every response to 1-2 short spoken sentences — no markdown, "
+            "no bullet points, no lists. Plain conversational English only. "
+            "If asked a follow-up, remember the prior context in this conversation."
+        ),
+    }
+
+
+async def _call_llm(history: List[Dict[str, str]]) -> str:
+    """POST conversation history to the gateway's OpenAI-compat endpoint.
+
+    Bypasses Hermes's full agentic loop for lower latency. The gateway's LLM
+    proxy substitutes its own Anthropic key, so no API key is needed here.
+    Still routes through AgentShroud's security pipeline (PII, audit, egress).
+    """
+    async with httpx.AsyncClient(timeout=30.0, trust_env=False) as client:
         resp = await client.post(
-            f"{_GATEWAY_URL}/forward",
+            f"{_GATEWAY_URL}/v1/chat/completions",
             json={
-                "content": transcript,
-                "source": "api",
-                "content_type": "text",
-                "route_to": "hermes",
-                # user_id drives RBAC: middleware resolves this field first, before source.
-                # Owner UID maps to OWNER role (tool_use allowed); falls back to None
-                # (→ viewer, blocked) if the env var is not set.
-                "user_id": _OWNER_USER_ID or None,
+                "model": _VOICE_MODEL,
+                "messages": history,
+                "max_tokens": 150,  # ~100 words — keep voice replies brief
             },
-            headers={"Authorization": f"Bearer {_GATEWAY_TOKEN}"},
+            headers={
+                # IP allowlist passes (isolated network); proxy substitutes Anthropic key.
+                "Authorization": f"Bearer {_GATEWAY_TOKEN}",
+                # Propagate owner identity for RBAC and audit trail.
+                "X-AgentShroud-User-Id": _OWNER_USER_ID or "voice",
+            },
         )
-
-    if resp.status_code == 202:
-        return "Your request has been queued for approval."
-
     resp.raise_for_status()
     data = resp.json()
-    agent_response = data.get("agent_response") or ""
-    if not agent_response:
-        return "Sorry, Hermes is offline right now."
-    return agent_response
+    try:
+        return data["choices"][0]["message"]["content"].strip()
+    except (KeyError, IndexError, TypeError) as exc:
+        raise RuntimeError(f"Unexpected LLM response shape: {exc}") from exc
 
 
 @app.websocket("/voice")
 async def voice_endpoint(ws: WebSocket) -> None:
     await ws.accept()
-    # Auth: check ?token= query parameter before processing any frames.
-    # _VG_AUTH_TOKEN is empty in dev/test (skipped); set via docker secret in prod.
     token = ws.query_params.get("token", "")
     if _VG_AUTH_TOKEN and token != _VG_AUTH_TOKEN:
         logger.warning("Rejected WS connection (invalid token) from %s", ws.client)
-        await ws.close(code=1008)  # 1008 = Policy Violation
+        await ws.close(code=1008)
         return
 
     remote = ws.client
@@ -159,6 +178,11 @@ async def voice_endpoint(ws: WebSocket) -> None:
 
     state = _State.IDLE
     await _send_state(ws, state)
+
+    # Per-session conversation history.
+    # Index 0 is always the system message (refreshed at each utterance for time accuracy).
+    # User+assistant turns are appended and trimmed to _MAX_HISTORY_TURNS pairs.
+    history: List[Dict[str, str]] = [_voice_system_message()]
 
     pcm_chunks: List[bytes] = []
     heartbeat = asyncio.create_task(_keepalive(ws))
@@ -174,6 +198,8 @@ async def voice_endpoint(ws: WebSocket) -> None:
 
                 if msg == "LISTEN":
                     pcm_chunks.clear()
+                    # Refresh the system message so time stays accurate on long sessions.
+                    history[0] = _voice_system_message()
                     state = _State.LISTENING
                     await _send_state(ws, state)
 
@@ -188,17 +214,22 @@ async def voice_endpoint(ws: WebSocket) -> None:
                         transcript = _stt.transcribe(pcm_bytes)
                         logger.info("Transcript: %r", transcript)
 
-                        # Reject empty transcripts and Whisper hallucinations that
-                        # contain only punctuation/whitespace (e.g. "...", ". . .")
-                        # on near-silent or very short audio frames.
                         _words = re.sub(r"[^\w]", "", transcript)
                         if not _words:
                             state = _State.IDLE
                             await _send_state(ws, state)
                             continue
 
-                        agent_text = await _call_forward(transcript)
+                        # Add user turn to history before calling LLM.
+                        history.append({"role": "user", "content": transcript})
+
+                        agent_text = await _call_llm(history)
                         logger.info("Agent reply: %r", agent_text)
+
+                        # Append assistant turn and trim old turns.
+                        history.append({"role": "assistant", "content": agent_text})
+                        if len(history) > 1 + _MAX_HISTORY_TURNS * 2:
+                            history = history[:1] + history[-(  _MAX_HISTORY_TURNS * 2):]
 
                         state = _State.SPEAKING
                         await _send_state(ws, state)
@@ -216,6 +247,9 @@ async def voice_endpoint(ws: WebSocket) -> None:
 
                     except Exception as exc:
                         logger.error("Pipeline error: %s", exc, exc_info=True)
+                        # Roll back the user turn we already appended (no assistant reply).
+                        if history and history[-1]["role"] == "user":
+                            history.pop()
                         try:
                             state = _State.IDLE
                             await _send_state(ws, state)
@@ -225,8 +259,6 @@ async def voice_endpoint(ws: WebSocket) -> None:
     except WebSocketDisconnect:
         logger.info("Disconnected: %s", remote)
     except RuntimeError as exc:
-        # Starlette raises RuntimeError("Cannot call 'receive' once a disconnect
-        # message has been received") on a dirty close — treat it as a normal disconnect.
         if "disconnect" in str(exc).lower():
             logger.info("Disconnected (dirty close): %s", remote)
         else:
