@@ -128,12 +128,9 @@ void ui_face_set_state(ws_vg_state_t state)
     if (state == s_current_state) return;
     s_current_state = state;
 
-    /* portMAX_DELAY: wait for the LVGL timer task to release the mutex before
-     * modifying any LVGL objects.  The previous timeout of 0 (non-blocking)
-     * silently skipped the lock and mutated LVGL state from a foreign task,
-     * which could corrupt the touch overlay's event callback list and prevent
-     * subsequent taps from firing. */
-    bsp_display_lock(portMAX_DELAY);
+    /* timeout_ms=0 maps to portMAX_DELAY inside lvgl_port_lock() — waits until
+     * the LVGL timer task releases the mutex before touching any lv_obj. */
+    bsp_display_lock(0);
 
     switch (state) {
     case WS_VG_STATE_IDLE:
