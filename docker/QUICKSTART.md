@@ -82,6 +82,87 @@ HCI (Hermes Control Interface): `http://localhost:9121` (HTTP Basic Auth require
 
 ---
 
+## Voice Terminal (optional — ESP32-S3-BOX-3 + Hermes)
+
+The voice gateway bridges an ESP32-S3-BOX-3 hardware terminal to Hermes over WebSocket.
+Say **"Hi, ESP"** (or tap the touchscreen) → speech-to-text → Hermes reply → spoken back.
+
+**Requires**: Hermes running (`--profile full`), a Tailscale Funnel on port 8765, and the
+ESP32-S3-BOX-3 flashed with `firmware/voice-terminal/`.
+
+### Server-side setup
+
+**1. Generate the voice gateway auth token** (shared secret between server and ESP firmware):
+
+```bash
+python3 -c "import secrets; print(secrets.token_hex(32))" > docker/secrets/voice_gateway_token.txt
+chmod 600 docker/secrets/voice_gateway_token.txt
+```
+
+**2. Start the stack with voice enabled** (voice-gateway activates on `--profile voice` or `--profile full`):
+
+```bash
+docker-compose -f docker/docker-compose.yml -p agentshroud --profile full up -d
+```
+
+**3. Expose port 8765 via Tailscale Funnel** (the ESP connects over the internet to this URL):
+
+```bash
+tailscale funnel --bg 8765
+# Or if you use a custom path mapping:
+# tailscale serve --bg --set-path /voice 8765
+```
+
+Confirm: `tailscale serve status` should show `|-- / proxy http://127.0.0.1:8765`.
+
+**4. Note your Funnel URL** — it will be `wss://<your-node>.ts.net/voice`.
+
+### Firmware setup (ESP32-S3-BOX-3)
+
+**5. Set credentials** — edit `firmware/voice-terminal/main/wifi_credentials.h` (gitignored):
+
+```c
+#define CONFIG_VT_WIFI_SSID       "your-ssid"
+#define CONFIG_VT_WIFI_PASSWORD   "your-password"
+#define CONFIG_VT_VG_WS_TOKEN     "paste-token-from-step-1-here"
+```
+
+**6. Set the WS URL** — if your Tailscale node differs from the default, update `sdkconfig`:
+
+```bash
+cd firmware/voice-terminal
+idf.py menuconfig   # → Voice Terminal Config → Voice Gateway WebSocket URL
+# Default: wss://marvin.tail240ea8.ts.net/voice
+```
+
+**7. Build and flash**:
+
+```bash
+cd firmware/voice-terminal
+. $IDF_PATH/export.sh
+idf.py build
+idf.py -p /dev/cu.usbserial-XXXX flash   # replace port
+idf.py -p /dev/cu.usbserial-XXXX monitor
+```
+
+`idf.py flash` writes all 5 binaries including the WakeNet model (`srmodels.bin` at 0x6c4000).
+
+### Verify
+
+```bash
+# Voice gateway health
+curl http://localhost:8765/health
+# → {"status":"ok"}
+
+# Serial monitor on first utterance should show:
+# vt: WakeNet: 'Hi, ESP' detected
+# ws_client: WebSocket connecting to wss://…/voice?token=…
+# voice_gateway.server: Transcript: "…"
+# voice_gateway.server: Agent reply: "…"
+```
+
+---
+
 ## Test the System
 
 ### 1. Health Check (Gateway)

@@ -4070,6 +4070,21 @@ async def llm_openai_chat_alias(request: Request, path: str):
 
 
 @app.api_route(
+    "/api/v1/{path:path}",
+    methods=["GET", "POST"],
+    include_in_schema=False,
+)
+async def llm_api_v1_prefix_alias(request: Request, path: str):
+    """Alias for Hermes Anthropic SDK's /api/v1/* preflight path.
+
+    Some Anthropic SDK versions send model preflight requests to /api/v1/models
+    instead of /v1/models. Without this route the gateway returns 404 and the
+    SDK raises AssertionError, killing every conversation turn.
+    """
+    return await llm_api_proxy(request, path)
+
+
+@app.api_route(
     "/v1/{path:path}",
     methods=["GET", "POST"],
     include_in_schema=False,
@@ -4089,20 +4104,25 @@ async def llm_api_proxy(request: Request, path: str):
     else:
         raise HTTPException(status_code=403, detail="Forbidden")
 
-    # Hermes v0.16.0+ preflights GET /v1/models/<id> before each /v1/messages
-    # call. The OAuth token (sk-ant-oat01-…) we use as ANTHROPIC_API_KEY works
-    # for /v1/messages but Anthropic rejects it for the model-metadata route,
-    # so the preflight returned 400/401 and hermes raised AssertionError.
-    # Synthesize a 200 response from a known model name so the preflight
-    # always succeeds without round-tripping.
-    if request.method == "GET" and path.startswith("models/"):
-        model_id = path[len("models/") :]
-        synthetic = {
-            "type": "model",
-            "id": model_id,
-            "display_name": model_id,
-            "created_at": datetime.now(timezone.utc).isoformat().replace("+00:00", "Z"),
-        }
+    # Hermes preflights GET /v1/models (list) or GET /v1/models/<id> before
+    # each /v1/messages call. Synthesize a success response so the preflight
+    # always succeeds without a round-trip to Anthropic (avoids rate-limits
+    # on the models metadata endpoint and OAuth token rejection on older SDKs).
+    if request.method == "GET" and (path == "models" or path.startswith("models/")):
+        if path == "models":
+            created = datetime.now(timezone.utc).isoformat().replace("+00:00", "Z")
+            synthetic = {
+                "data": [{"type": "model", "id": "claude-opus-4-7", "display_name": "Claude Opus 4.7", "created_at": created}],
+                "has_more": False,
+            }
+        else:
+            model_id = path[len("models/"):]
+            synthetic = {
+                "type": "model",
+                "id": model_id,
+                "display_name": model_id,
+                "created_at": datetime.now(timezone.utc).isoformat().replace("+00:00", "Z"),
+            }
         return JSONResponse(content=synthetic)
 
     llm_proxy = getattr(app_state, "llm_proxy", None)

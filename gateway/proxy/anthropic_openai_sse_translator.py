@@ -139,8 +139,10 @@ async def translate_openai_sse_to_anthropic(
                 # ---- tool_calls deltas ----
                 for tc_delta in delta.get("tool_calls") or []:
                     idx = tc_delta.get("index", 0)
-                    # Anthropic content block index: text gets 0, each tool gets idx+1
-                    anthr_idx = idx + 1
+                    # If text has started, reserve index 0 for the text block and
+                    # offset tools by 1.  For tool-call-only responses text_started
+                    # is False, so tools begin at index 0 (no gap).
+                    anthr_idx = idx + (1 if text_started else 0)
 
                     if idx not in tool_call_blocks:
                         # Start of a new tool_use block
@@ -190,7 +192,7 @@ async def translate_openai_sse_to_anthropic(
 
     # Close tool_use blocks
     for idx in sorted(tool_call_blocks.keys()):
-        anthr_idx = idx + 1
+        anthr_idx = idx + (1 if text_started else 0)
         yield _sse("content_block_stop", {"type": "content_block_stop", "index": anthr_idx})
 
     stop_reason = _FINISH_REASON_TO_STOP_REASON.get(finish_reason or "stop", "end_turn")
