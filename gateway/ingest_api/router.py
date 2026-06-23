@@ -197,8 +197,15 @@ class MultiAgentRouter:
 
         logger.info(f"Forwarding to {target.name} at {target.url} (ledger_id={ledger_id})")
 
+        # OpenAI-compatible targets (Hermes/Anthropic) can take 60+ s for
+        # long Opus replies.  Use a generous read timeout; keep connect tight.
+        _timeout = (
+            httpx.Timeout(connect=10.0, read=120.0, write=30.0, pool=10.0)
+            if "chat/completions" in target.chat_path
+            else httpx.Timeout(30.0)
+        )
         try:
-            async with httpx.AsyncClient(timeout=30.0) as client:
+            async with httpx.AsyncClient(timeout=_timeout) as client:
                 response = await client.post(
                     f"{target.url}{target.chat_path}",
                     json=payload,
