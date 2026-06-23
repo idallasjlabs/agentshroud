@@ -157,7 +157,15 @@ jobs:
       stylesheets or images. Style: white background #ffffff, body text #111111,
       headings #111111 with a 1px #e0e0e0 bottom border, links #1a73e8,
       monospace code in #f6f8fa boxes with 1px #d0d7de border.
-      Write the rendered HTML to /tmp/competitive-email.html.
+      To render: copy the cron-operations skill's scripts/render_md_email.py to
+      /opt/data/workspace/render_email.py, set its SRC/DST Path() constants
+      (DST = /tmp/competitive-email.html), then run:
+      python3 /opt/data/workspace/render_email.py.
+      If the skill script is unavailable, write a pure-stdlib renderer to
+      /opt/data/workspace/render_email.py and run it the same way.
+      NEVER use execute_code, python3 -c, pip install, or uv pip install — all
+      are blocked in cron mode. NEVER write_file a .py to /tmp/ — write renderer
+      scripts to /opt/data/workspace/ only. The final .html output at /tmp/ is fine.
       Then send it using ALL THREE flags — this is mandatory, not optional.
       EXACT command to run:
       /usr/local/bin/agentshroud-email-send.sh

@@ -18,7 +18,7 @@
 # ANTHROPIC_BASE_URL=http://gateway:8080 in compose routes all LLM calls through
 # the AgentShroud gateway for PII redaction + audit + egress inspection.
 model:
-  default: "anthropic/claude-opus-4-7"
+  default: "claude-haiku-4-5-20251001"
   provider: "anthropic"
 
 # =============================================================================
@@ -75,5 +75,5 @@ api_server:
   enabled: true
   host: "0.0.0.0"
   port: 8642
-  allow_model_override: false
+  allow_model_override: true
   cors_origins: []

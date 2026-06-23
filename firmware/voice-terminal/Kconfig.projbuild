@@ -1,0 +1,33 @@
+menu "Voice Terminal Config"
+
+    config VT_WIFI_SSID
+        string "WiFi SSID"
+        default "My iPhone"
+        help
+            SSID of the primary WiFi network (e.g. iPhone hotspot).
+
+    config VT_WIFI_PASSWORD
+        string "WiFi Password"
+        default ""
+        help
+            Password for the primary WiFi network.
+
+    config VT_WIFI_SSID_2
+        string "WiFi SSID (fallback)"
+        default ""
+        help
+            SSID of a fallback network (e.g. home WiFi). Leave blank to disable.
+
+    config VT_WIFI_PASSWORD_2
+        string "WiFi Password (fallback)"
+        default ""
+        help
+            Password for the fallback network.
+
+    config VT_WIFI_MAX_RETRY
+        int "WiFi max connect retries per network"
+        default 5
+        help
+            Number of times to retry each network before trying the next.
+
+endmenu
