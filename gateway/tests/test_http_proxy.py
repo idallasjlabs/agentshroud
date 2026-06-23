@@ -410,11 +410,15 @@ def test_agent_id_for_peer_lazy_rdns_hit(monkeypatch):
 
 
 def test_agent_id_for_peer_lazy_rdns_miss(monkeypatch):
-    """Unknown IP whose rDNS doesn't match any bot → generic label, cached."""
+    """Unknown IP whose rDNS doesn't match any bot, and fDNS fails → generic label, cached."""
     p = HTTPConnectProxy(bot_hostnames={"hermes": "agentshroud-hermes"})
     monkeypatch.setattr(
         "gateway.proxy.http_proxy.socket.gethostbyaddr",
         lambda ip: ("some-unknown-host.local", [], [ip]),
+    )
+    monkeypatch.setattr(
+        "gateway.proxy.http_proxy.socket.getaddrinfo",
+        lambda host, port: (_ for _ in ()).throw(OSError("NXDOMAIN")),
     )
     result = p._agent_id_for_peer(("192.168.5.5", 1234))
     assert result == "http_connect_proxy"
@@ -422,27 +426,86 @@ def test_agent_id_for_peer_lazy_rdns_miss(monkeypatch):
 
 
 def test_agent_id_for_peer_lazy_rdns_error(monkeypatch):
-    """rDNS failure (e.g. NXDOMAIN) → generic label, cached, no exception."""
+    """rDNS failure + fDNS failure → generic label, cached, no exception."""
     p = HTTPConnectProxy(bot_hostnames={"hermes": "agentshroud-hermes"})
     monkeypatch.setattr(
         "gateway.proxy.http_proxy.socket.gethostbyaddr",
         lambda ip: (_ for _ in ()).throw(OSError("nodename nor servname provided")),
+    )
+    monkeypatch.setattr(
+        "gateway.proxy.http_proxy.socket.getaddrinfo",
+        lambda host, port: (_ for _ in ()).throw(OSError("NXDOMAIN")),
     )
     result = p._agent_id_for_peer(("10.0.0.1", 8080))
     assert result == "http_connect_proxy"
 
 
 def test_agent_id_for_peer_cached_after_first_lookup(monkeypatch):
-    """Second call for same IP uses cache; rDNS is only called once."""
-    call_count = {"n": 0}
+    """Second call for same IP uses cache; rDNS is only called once, fDNS never."""
+    rdns_calls = {"n": 0}
+    fdns_calls = {"n": 0}
 
     def _rdns(ip):
-        call_count["n"] += 1
+        rdns_calls["n"] += 1
         return ("agentshroud-hermes", [], [ip])
+
+    def _fdns(host, port):
+        fdns_calls["n"] += 1
+        return [(0, 0, 0, "", ("172.22.0.7", 0))]
 
     p = HTTPConnectProxy(bot_hostnames={"hermes": "agentshroud-hermes"})
     monkeypatch.setattr("gateway.proxy.http_proxy.socket.gethostbyaddr", _rdns)
+    monkeypatch.setattr("gateway.proxy.http_proxy.socket.getaddrinfo", _fdns)
 
     p._agent_id_for_peer(("172.22.0.7", 111))
     p._agent_id_for_peer(("172.22.0.7", 222))
-    assert call_count["n"] == 1
+    assert rdns_calls["n"] == 1
+    assert fdns_calls["n"] == 0  # rDNS hit → fDNS never reached
+
+
+def test_agent_id_for_peer_forward_dns_hit(monkeypatch):
+    """rDNS fails; forward DNS resolves bot hostname to source IP → correct bot_id cached."""
+    p = HTTPConnectProxy(bot_hostnames={"hermes": "agentshroud-hermes"})
+    monkeypatch.setattr(
+        "gateway.proxy.http_proxy.socket.gethostbyaddr",
+        lambda ip: (_ for _ in ()).throw(OSError("no PTR record")),
+    )
+    monkeypatch.setattr(
+        "gateway.proxy.http_proxy.socket.getaddrinfo",
+        lambda host, port: [(0, 0, 0, "", ("172.22.0.5", 0))],
+    )
+    result = p._agent_id_for_peer(("172.22.0.5", 9999))
+    assert result == "hermes"
+    assert p._ip_to_bot_registry["172.22.0.5"] == "hermes"
+
+
+def test_agent_id_for_peer_rdns_miss_forward_dns_hit(monkeypatch):
+    """rDNS returns non-matching hostname; forward DNS matches → correct bot_id cached."""
+    p = HTTPConnectProxy(bot_hostnames={"hermes": "agentshroud-hermes"})
+    monkeypatch.setattr(
+        "gateway.proxy.http_proxy.socket.gethostbyaddr",
+        lambda ip: ("some-other-host.local", [], [ip]),
+    )
+    monkeypatch.setattr(
+        "gateway.proxy.http_proxy.socket.getaddrinfo",
+        lambda host, port: [(0, 0, 0, "", ("10.20.30.40", 0))],
+    )
+    result = p._agent_id_for_peer(("10.20.30.40", 443))
+    assert result == "hermes"
+    assert p._ip_to_bot_registry["10.20.30.40"] == "hermes"
+
+
+def test_agent_id_for_peer_forward_dns_no_ip_match(monkeypatch):
+    """rDNS fails; forward DNS resolves to a DIFFERENT IP → generic label, cached."""
+    p = HTTPConnectProxy(bot_hostnames={"hermes": "agentshroud-hermes"})
+    monkeypatch.setattr(
+        "gateway.proxy.http_proxy.socket.gethostbyaddr",
+        lambda ip: (_ for _ in ()).throw(OSError("no PTR record")),
+    )
+    monkeypatch.setattr(
+        "gateway.proxy.http_proxy.socket.getaddrinfo",
+        lambda host, port: [(0, 0, 0, "", ("1.2.3.4", 0))],  # different IP
+    )
+    result = p._agent_id_for_peer(("192.168.99.99", 443))
+    assert result == "http_connect_proxy"
+    assert p._ip_to_bot_registry["192.168.99.99"] == "http_connect_proxy"
