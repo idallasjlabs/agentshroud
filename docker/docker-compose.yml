@@ -110,6 +110,10 @@ services:
       - TELEGRAM_BOT_USERNAME=${TELEGRAM_BOT_USERNAME:-agentshroud_bot}
       # Group chat: set to Telegram group/supergroup chat ID to bind → group-project agent
       - AGENTSHROUD_GROUP_CHAT_ID=${AGENTSHROUD_GROUP_CHAT_ID:-}
+      # Voice terminal: fast model for gateway-routed chat/completions (Haiku = 3-8 s vs Opus 30-60 s)
+      - GATEWAY_CHAT_MODEL=${GATEWAY_CHAT_MODEL:-claude-haiku-4-5-20251001}
+      # Router timezone for date/time injection in OpenAI-compat system messages
+      - GATEWAY_TZ=${GATEWAY_TZ:-America/New_York}
     group_add:
       - "991"   # docker socket GID — read-only service introspection for SOC
     security_opt:

@@ -174,8 +174,12 @@ class MultiAgentRouter:
             # Timezone is owner-configurable via GATEWAY_TZ (default: US/Eastern).
             _tz = ZoneInfo(os.environ.get("GATEWAY_TZ", "America/New_York"))
             _now = datetime.now(_tz).strftime("%A, %B %d, %Y at %-I:%M %p %Z")
+            # Use a fast model for gateway-routed chat (voice terminal).  Opus takes
+            # 30-60 s which is unusable for voice; Haiku responds in 3-8 s.
+            # GATEWAY_CHAT_MODEL overrides the default without a code change.
+            _chat_model = os.environ.get("GATEWAY_CHAT_MODEL", "claude-haiku-4-5-20251001")
             payload: dict[str, Any] = {
-                "model": target.name,
+                "model": _chat_model,
                 "messages": [
                     {"role": "system", "content": f"The current date and time is {_now}."},
                     {"role": "user", "content": sanitized_content},
