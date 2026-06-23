@@ -28,9 +28,11 @@
 static const char *TAG = "wakeword";
 
 /* ── Shared state ──────────────────────────────────────────────────────────── */
-static volatile bool s_triggered = false;
-static volatile bool s_ended     = false;
-static volatile bool s_ptt_held  = false;
+static volatile bool s_triggered   = false;
+static volatile bool s_ended       = false;
+static volatile bool s_ptt_held    = false;
+/* Set while TTS is playing so speaker echo cannot retrigger the mic pipeline. */
+static volatile bool s_tts_playing = false;
 
 #define VAD_TIMEOUT_MS 8000
 static TickType_t s_trigger_tick = 0;
@@ -43,7 +45,7 @@ static int             s_bsp_btn_cnt = 0;
  * LVGL touch overlay in ui_face.c (wakeword_ptt_press / wakeword_ptt_release). */
 static void _ptt_start(void)
 {
-    if (!s_triggered) {
+    if (!s_triggered && !s_tts_playing) {
         ESP_LOGI(TAG, "PTT: START");
         s_ptt_held     = true;
         s_triggered    = true;
@@ -187,8 +189,10 @@ void wakeword_push_frame(const uint8_t *pcm, size_t len)
 
 #if HAVE_ESP_SR
     if (!s_afe_iface || !s_afe_data) return;
-    /* Skip AFE feed during active PTT or wake-word-triggered utterance. */
-    if (s_ptt_held || s_triggered) return;
+    /* Skip AFE feed during active PTT, triggered utterance, or TTS playback.
+     * Suppressing WakeNet while TTS is playing prevents the speaker echo from
+     * accidentally triggering a second utterance before the reply finishes. */
+    if (s_ptt_held || s_triggered || s_tts_playing) return;
 
     /* Feed the mic frame into the AFE pipeline. */
     int rc = s_afe_iface->feed(s_afe_data, (const int16_t *)pcm);
@@ -236,6 +240,19 @@ void wakeword_clear(void)
 /* Public PTT API — called from the LVGL touch overlay in ui_face.c. */
 void wakeword_ptt_press(void)   { _ptt_start(); }
 void wakeword_ptt_release(void) { _ptt_end(); }
+
+void wakeword_set_tts_playing(bool playing)
+{
+    s_tts_playing = playing;
+    if (!playing) {
+        /* When TTS ends, clear any stale trigger that may have latched during
+         * the SPEAKING window (e.g. phantom wake-word on speaker echo). */
+        if (!s_ptt_held) {
+            s_triggered = false;
+            s_ended     = false;
+        }
+    }
+}
 
 void wakeword_deinit(void)
 {

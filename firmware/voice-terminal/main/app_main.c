@@ -170,6 +170,16 @@ static void wifi_init(void)
 static void _on_vg_state(ws_vg_state_t state, void *ctx)
 {
     ui_face_set_state(state);
+    if (state == WS_VG_STATE_SPEAKING) {
+        /* Block new triggers while TTS is playing so speaker echo cannot
+         * accidentally re-trigger the mic pipeline mid-response. */
+        wakeword_set_tts_playing(true);
+    } else if (state == WS_VG_STATE_IDLE) {
+        /* Re-enable triggers and clear any stale trigger state.  Called both
+         * when the server sends the text "END" frame (ws_client converts it to
+         * WS_VG_STATE_IDLE) and when the {"state":"idle"} JSON arrives. */
+        wakeword_set_tts_playing(false);
+    }
 }
 
 static void _on_tts_pcm(const uint8_t *pcm, size_t len, void *ctx)

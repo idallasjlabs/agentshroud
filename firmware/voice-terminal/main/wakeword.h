@@ -61,7 +61,8 @@ void wakeword_clear(void);
 
 /**
  * @brief Programmatically start a PTT utterance (e.g. from an LVGL touch handler).
- *        Equivalent to pressing the physical button.  No-op if already triggered.
+ *        Equivalent to pressing the physical button.  No-op if already triggered or
+ *        if TTS is currently playing (prevents triggering on speaker echo).
  */
 void wakeword_ptt_press(void);
 
@@ -70,6 +71,19 @@ void wakeword_ptt_press(void);
  *        Equivalent to releasing the physical button.  No-op if not holding PTT.
  */
 void wakeword_ptt_release(void);
+
+/**
+ * @brief Signal that TTS playback is starting or ending.
+ *
+ * While TTS is playing (playing=true) both PTT and WakeNet are suppressed so
+ * the speaker output cannot accidentally trigger a new utterance.  The Voice
+ * Gateway state machine clears this flag when it transitions to IDLE (i.e.
+ * after the server's "END" frame is received), re-enabling triggers.
+ *
+ * @param playing  true when the gateway enters SPEAKING state;
+ *                 false when the gateway returns to IDLE.
+ */
+void wakeword_set_tts_playing(bool playing);
 
 /**
  * @brief Free all AFE/WakeNet resources (called at shutdown).
