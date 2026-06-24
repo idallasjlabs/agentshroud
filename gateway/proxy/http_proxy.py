@@ -169,12 +169,15 @@ class HTTPConnectProxy:
                 pass
 
     def _agent_id_for_peer(self, peer) -> str:
-        """Resolve source IP to a bot_id; lazily extends registry via reverse-DNS.
+        """Resolve source IP to a bot_id; lazily extends registry via DNS.
 
         The startup registry may be empty for bots that start after the gateway
-        (e.g. Hermes). On first CONNECT from an unknown IP, attempt a reverse-DNS
-        lookup via Docker's embedded DNS and match against known bot hostnames.
-        Cache both hits and misses so the lookup runs at most once per IP.
+        (e.g. Hermes).  On first CONNECT from an unknown IP, two lookups are tried:
+         1. Reverse-DNS (PTR): gethostbyaddr — fast but Docker's embedded DNS may
+            not serve PTR records, so this frequently fails for container IPs.
+         2. Forward-DNS (A): getaddrinfo for each known bot hostname — more
+            reliable in Docker networks where only A records are guaranteed.
+        Cache both hits and misses so DNS is queried at most once per source IP.
         """
         if not peer:
             return "http_connect_proxy"
@@ -182,6 +185,7 @@ class HTTPConnectProxy:
         if ip in self._ip_to_bot_registry:
             return self._ip_to_bot_registry[ip]
         if self._bot_hostnames:
+            # --- Attempt 1: reverse DNS (PTR record) ---
             try:
                 rdns_host = socket.gethostbyaddr(ip)[0]
                 for bot_id, bot_host in self._bot_hostnames.items():
@@ -196,6 +200,23 @@ class HTTPConnectProxy:
                         return bot_id
             except Exception:
                 pass
+            # --- Attempt 2: forward DNS (A record) ---
+            # Docker's embedded DNS reliably serves A records but may not serve PTR.
+            # Resolve each known bot hostname and compare to the source IP.
+            for bot_id, bot_host in self._bot_hostnames.items():
+                try:
+                    for info in socket.getaddrinfo(bot_host, None):
+                        if info[4][0] == ip:
+                            self._ip_to_bot_registry[ip] = bot_id
+                            logger.debug(
+                                "IP→bot registry (lazy fDNS): %s → %s (hostname=%s)",
+                                ip,
+                                bot_id,
+                                bot_host,
+                            )
+                            return bot_id
+                except Exception:
+                    pass
         self._ip_to_bot_registry[ip] = "http_connect_proxy"
         return "http_connect_proxy"
 
