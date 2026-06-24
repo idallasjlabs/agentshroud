@@ -28,6 +28,7 @@ from dataclasses import dataclass, field
 from typing import TYPE_CHECKING, Dict, List, Optional, Tuple
 
 if TYPE_CHECKING:
+    from gateway.security.group_rbac import GroupRole, GroupRoleResolver
     from gateway.security.rbac_config import RBACConfig, Role
 
 logger = logging.getLogger("agentshroud.security.tool_acl")
@@ -330,6 +331,99 @@ class ToolACLEnforcer:
         )
         self._denial_counts[user_id] = self._denial_counts.get(user_id, 0) + 1
         return False, reason
+
+    def can_use_tool_in_group_context(
+        self,
+        user_id: str,
+        tool_name: str,
+        group_chat_id: str,
+        group_role_resolver: "GroupRoleResolver",  # noqa: F821 — resolved at runtime
+    ) -> Tuple[bool, str]:
+        """Check whether user_id may invoke tool_name when acting inside a group workspace.
+
+        Resolution order:
+          1. If user is the system owner (RBACConfig.owner_user_id) → unrestricted.
+          2. Resolve the per-group role via group_role_resolver.get_role().
+          3. OWNER group-role → unrestricted (same as system owner for this group).
+          4. Any group role → deny private tools outright (owner-only tier).
+          5. READ_ONLY group-role → deny high-risk tools outright.
+          6. MEMBER group-role → allow high-risk tools but flag as approval-required.
+          7. Fall through to standard can_use_tool() for remaining checks.
+
+        Args:
+            user_id: Telegram user ID of the requesting member.
+            tool_name: Name of the tool being invoked.
+            group_chat_id: Telegram chat_id of the active group workspace.
+            group_role_resolver: GroupRoleResolver instance with per-group role maps.
+
+        Returns:
+            (allowed: bool, reason: str)
+
+        IEC 62443 FR3 (SL3): per-identity access control at every tool call boundary.
+        """
+        from gateway.security.group_rbac import GroupRole, GroupRoleResolver  # noqa: F811
+
+        tool_lower = tool_name.lower().strip()
+
+        # Step 1: System owner is always unrestricted.
+        if self._rbac is not None and self._rbac.is_owner(user_id):
+            return True, "owner has unrestricted tool access"
+
+        # Step 2: Resolve per-group role.
+        group_role = group_role_resolver.get_role(group_chat_id, user_id)
+
+        # Step 3: Group owner-role → unrestricted within the group.
+        if group_role == GroupRole.OWNER:
+            return True, "group owner has unrestricted tool access"
+
+        # Step 4: Private tools are owner-only regardless of group role.
+        if tool_lower in self._acl.effective_private:
+            reason = (
+                f"tool '{tool_name}' is owner-private; "
+                f"group role '{group_role.value}' cannot use it"
+            )
+            logger.warning(
+                "ToolACL DENIED private-tier tool in group context: "
+                "user=%s group_role=%s tool=%s tier=PRIVATE group=%s",
+                user_id,
+                group_role.value,
+                tool_name,
+                group_chat_id,
+            )
+            self._denial_counts[user_id] = self._denial_counts.get(user_id, 0) + 1
+            return False, reason
+
+        # Step 5: Read-only members are denied high-risk tools outright.
+        if group_role == GroupRole.READ_ONLY and group_role_resolver.is_high_risk_tool(tool_lower):
+            reason = (
+                f"tool '{tool_name}' is high-risk; "
+                f"read-only group members cannot invoke it"
+            )
+            logger.warning(
+                "ToolACL DENIED high-risk tool for read-only member: "
+                "user=%s group_role=%s tool=%s group=%s",
+                user_id,
+                group_role.value,
+                tool_name,
+                group_chat_id,
+            )
+            self._denial_counts[user_id] = self._denial_counts.get(user_id, 0) + 1
+            return False, reason
+
+        # Step 6: Member role with a high-risk tool → allowed but requires approval queue.
+        if group_role == GroupRole.MEMBER and group_role_resolver.is_high_risk_tool(tool_lower):
+            logger.info(
+                "ToolACL ALLOWED high-risk tool for group member (approval required): "
+                "user=%s group_role=%s tool=%s group=%s",
+                user_id,
+                group_role.value,
+                tool_name,
+                group_chat_id,
+            )
+            return True, f"group member may request '{tool_name}' — approval required"
+
+        # Step 7: Fall through to standard RBAC check for remaining cases.
+        return self.can_use_tool(user_id, tool_name)
 
     def get_allowed_tools(self, user_id: str) -> List[str]:
         """Return the list of tools the user is allowed to use (union of all sets)."""
