@@ -604,3 +604,56 @@ class TestSMTPIMAPPorts:
         ef.set_agent_policy("http_connect_proxy", policy)
         result = ef.check("http_connect_proxy", "evil.example.com:465", port=465)
         assert result.action == EgressAction.DENY
+
+
+# ---------------------------------------------------------------------------
+# PERMANENT_EGRESS_DOMAINS — OpenClaw research/web_search domains (#191-fix)
+# ---------------------------------------------------------------------------
+
+
+class TestOpenClawResearchDomainsAllowlisted:
+    """Verify that OpenClaw's web_search/research destinations are pre-approved.
+
+    These domains were observed generating egress DENY events in production
+    (audit.db, 2026-06-24: 210 denials saturating the SOC risk-score gauge to
+    100%).  They must appear in PERMANENT_EGRESS_DOMAINS so EgressFilterConfig
+    includes them in the default allowlist.
+    """
+
+    EXPECTED_ALLOWED = [
+        "en.wikipedia.org",
+        "www.startpage.com",
+        "grokipedia.com",
+        "github.githubassets.com",
+    ]
+
+    def test_domains_in_default_allowlist(self):
+        """All four domains must be in EgressFilterConfig's default allowlist."""
+        cfg = EgressFilterConfig()
+        allowlist = cfg.get_effective_allowlist("openclaw")
+        for domain in self.EXPECTED_ALLOWED:
+            assert domain in allowlist, (
+                f"{domain!r} not in PERMANENT_EGRESS_DOMAINS — "
+                "add it to gateway/security/egress_config.py"
+            )
+
+    def test_domains_not_denylisted(self):
+        """None of the four domains should match the default denylist."""
+        cfg = EgressFilterConfig()
+        for domain in self.EXPECTED_ALLOWED:
+            assert not cfg.is_denylisted(domain), (
+                f"{domain!r} is unexpectedly on the denylist"
+            )
+
+    def test_egress_filter_allows_in_enforce_mode(self):
+        """EgressFilter in enforce mode allows all four domains for openclaw."""
+        from gateway.security.egress_filter import EgressAction, EgressFilter
+
+        cfg = EgressFilterConfig()
+        ef = EgressFilter(config=cfg)
+        for domain in self.EXPECTED_ALLOWED:
+            result = ef.check("openclaw", f"{domain}:443", port=443)
+            assert result.action == EgressAction.ALLOW, (
+                f"EgressFilter denied {domain!r} in enforce mode — "
+                "ensure it is in PERMANENT_EGRESS_DOMAINS"
+            )
