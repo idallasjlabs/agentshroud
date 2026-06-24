@@ -211,7 +211,12 @@ async def voice_endpoint(ws: WebSocket) -> None:
                     pcm_chunks.clear()
 
                     try:
-                        transcript = _stt.transcribe(pcm_bytes)
+                        loop = asyncio.get_event_loop()
+                        # Run blocking CPU inference in a thread so the event loop
+                        # stays live for WebSocket PING/PONG during STT and TTS.
+                        transcript = await loop.run_in_executor(
+                            None, _stt.transcribe, pcm_bytes
+                        )
                         logger.info("Transcript: %r", transcript)
 
                         _words = re.sub(r"[^\w]", "", transcript)
@@ -234,12 +239,15 @@ async def voice_endpoint(ws: WebSocket) -> None:
                         state = _State.SPEAKING
                         await _send_state(ws, state)
 
-                        pcm_reply = _tts.synthesize(agent_text)
+                        pcm_reply = await loop.run_in_executor(
+                            None, _tts.synthesize, agent_text
+                        )
 
                         for i in range(0, max(len(pcm_reply), 1), _CHUNK_SIZE):
                             chunk = pcm_reply[i : i + _CHUNK_SIZE]
                             if chunk:
                                 await ws.send_bytes(chunk)
+                                await asyncio.sleep(0)  # yield between chunks
 
                         await ws.send_text("END")
                         state = _State.IDLE

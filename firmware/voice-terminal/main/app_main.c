@@ -167,19 +167,37 @@ static void wifi_init(void)
 
 /* ── Voice Gateway callbacks ──────────────────────────────────────────────── */
 
+static ws_vg_state_t s_prev_vg_state = WS_VG_STATE_DISCONNECTED;
+
 static void _on_vg_state(ws_vg_state_t state, void *ctx)
 {
-    ui_face_set_state(state);
     if (state == WS_VG_STATE_SPEAKING) {
-        /* Block new triggers while TTS is playing so speaker echo cannot
-         * accidentally re-trigger the mic pipeline mid-response. */
         wakeword_set_tts_playing(true);
+        ui_face_set_state(state);
+
     } else if (state == WS_VG_STATE_IDLE) {
-        /* Re-enable triggers and clear any stale trigger state.  Called both
-         * when the server sends the text "END" frame (ws_client converts it to
-         * WS_VG_STATE_IDLE) and when the {"state":"idle"} JSON arrives. */
+        bool post_tts = (s_prev_vg_state == WS_VG_STATE_SPEAKING);
         wakeword_set_tts_playing(false);
+
+        if (post_tts) {
+            /* TTS just finished — auto-listen so the user can ask a follow-up
+             * without saying "Hi, ESP" again.  VAD timeout (8 s of silence)
+             * will send END and return to idle if no follow-up arrives. */
+            wakeword_ptt_press();
+            ui_face_set_state(WS_VG_STATE_LISTENING);
+        } else if (!wakeword_triggered()) {
+            /* Normal idle.  Skip the face update if auto-listen is already
+             * active (wakeword_triggered() is true) to avoid the redundant
+             * {"state":"idle"} JSON frame briefly flashing "Say Hi" over the
+             * "Listening…" screen that was just set. */
+            ui_face_set_state(WS_VG_STATE_IDLE);
+        }
+
+    } else {
+        ui_face_set_state(state);
     }
+
+    s_prev_vg_state = state;
 }
 
 static void _on_tts_pcm(const uint8_t *pcm, size_t len, void *ctx)

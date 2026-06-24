@@ -116,7 +116,7 @@ ws_client_handle_t ws_client_create(const char *url,
          * pingpong_timeout_sec=10 makes the client declare a dead socket within
          * 10 s of a missing PONG so auto-reconnect fires promptly. */
         .ping_interval_sec    = 15,
-        .pingpong_timeout_sec = 10,
+        .pingpong_timeout_sec = 30,
         /* TLS: attach the ESP-IDF CA bundle (includes ISRG Root X1 / Let's Encrypt).
          * Required for wss:// connections to Tailscale Funnel. No-op for ws://. */
         .crt_bundle_attach    = esp_crt_bundle_attach,

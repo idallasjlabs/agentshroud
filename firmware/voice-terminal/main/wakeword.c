@@ -57,9 +57,18 @@ static void _ptt_start(void)
 static void _ptt_end(void)
 {
     if (s_ptt_held) {
-        ESP_LOGI(TAG, "PTT: END");
         s_ptt_held = false;
-        s_ended    = true;
+        TickType_t elapsed_ms = (xTaskGetTickCount() - s_trigger_tick)
+                                * portTICK_PERIOD_MS;
+        if (elapsed_ms >= 1000) {
+            /* Long press — end immediately on release. */
+            ESP_LOGI(TAG, "PTT: END (held %ums)", (unsigned)elapsed_ms);
+            s_ended = true;
+        } else {
+            /* Short tap (<1 s): stay triggered so the user can speak after
+             * lifting their finger.  VAD timeout (8 s) will end the utterance. */
+            ESP_LOGI(TAG, "PTT: tap (%ums) — VAD will end", (unsigned)elapsed_ms);
+        }
     }
 }
 
