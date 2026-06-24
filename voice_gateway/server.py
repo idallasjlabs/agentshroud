@@ -108,10 +108,10 @@ async def health() -> dict:
 
 
 async def _keepalive(ws: WebSocket) -> None:
-    """Send a heartbeat every 8 s to prevent ESP32 network_timeout_ms=10000 disconnects."""
+    """Send a heartbeat every 4 s to keep Tailscale Funnel relay and hotspot NAT alive."""
     try:
         while True:
-            await asyncio.sleep(8)
+            await asyncio.sleep(4)
             await ws.send_text('{"heartbeat":1}')
     except Exception:
         pass
