@@ -115,3 +115,25 @@ void wakeword_agent_switch_ack(void);
  * @brief Returns the current agent index (0-based, into the app_main agent table).
  */
 int wakeword_agent_index(void);
+
+/**
+ * @brief Request an immediate stop of TTS playback.
+ *
+ * Called when the user taps the screen or presses the physical button while
+ * TTS is playing.  Sets an internal flag that causes the PCM callback in
+ * app_main.c to discard incoming audio chunks until the server sends "END".
+ * No-op if TTS is not currently playing.
+ */
+void wakeword_tts_stop_request(void);
+
+/**
+ * @brief Returns true if a TTS stop has been requested by the user.
+ *        Checked in the PCM callback to drop incoming audio chunks.
+ */
+bool wakeword_tts_stop_requested(void);
+
+/**
+ * @brief Clear the TTS stop request flag.
+ *        Called in _on_vg_state when IDLE is received after a SPEAKING state.
+ */
+void wakeword_tts_stop_clear(void);

@@ -33,6 +33,8 @@ static volatile bool s_ended       = false;
 static volatile bool s_ptt_held    = false;
 /* Set while TTS is playing so speaker echo cannot retrigger the mic pipeline. */
 static volatile bool s_tts_playing = false;
+/* Set when the user taps/presses during SPEAKING to interrupt TTS immediately. */
+static volatile bool s_tts_stop_requested = false;
 
 #define VAD_TIMEOUT_MS 8000
 static TickType_t s_trigger_tick = 0;
@@ -78,8 +80,24 @@ static void _ptt_end(void)
     }
 }
 
-static void _btn_pressed(void *arg, void *data)  { _ptt_start(); }
-static void _btn_released(void *arg, void *data) { _ptt_end(); }
+static void _btn_pressed(void *arg, void *data)
+{
+    if (s_tts_playing) {
+        /* Physical button pressed during TTS — interrupt playback. */
+        ESP_LOGI(TAG, "Physical button: TTS interrupt");
+        s_tts_stop_requested = true;
+    } else {
+        _ptt_start();
+    }
+}
+
+static void _btn_released(void *arg, void *data)
+{
+    /* Only end PTT if we started one; a stop-press has no PTT to end. */
+    if (!s_tts_stop_requested) {
+        _ptt_end();
+    }
+}
 
 /* Agent-toggle button: advance to the next agent on press.
  * Declared extern here; the table is defined in app_main.c. */
@@ -329,6 +347,20 @@ int wakeword_agent_index(void)
 {
     return (int)s_agent_index;
 }
+
+/* ── TTS interrupt public API ────────────────────────────────────────────── */
+
+void wakeword_tts_stop_request(void)
+{
+    if (s_tts_playing) {
+        ESP_LOGI(TAG, "TTS stop requested");
+        s_tts_stop_requested = true;
+    }
+}
+
+bool wakeword_tts_stop_requested(void) { return s_tts_stop_requested; }
+
+void wakeword_tts_stop_clear(void)     { s_tts_stop_requested = false; }
 
 void wakeword_deinit(void)
 {

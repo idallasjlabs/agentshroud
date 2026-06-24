@@ -68,7 +68,19 @@ static void _start_mouth_anim(void)
 static void _touch_pressed(lv_event_t *e)
 {
     (void)e;
-    wakeword_ptt_press();
+    if (s_current_state == WS_VG_STATE_SPEAKING) {
+        /* Interrupt TTS — already in the LVGL timer task so widget writes are
+         * safe without re-acquiring the display lock.  Stop the mouth animation
+         * and reset visuals immediately; the PCM callback will discard remaining
+         * audio chunks until the server's "END" frame clears the stop flag. */
+        wakeword_tts_stop_request();
+        s_current_state = WS_VG_STATE_IDLE;
+        lv_anim_del(s_mouth, _mouth_anim_cb);
+        lv_obj_set_height(s_mouth, MOUTH_H / 3);
+        lv_label_set_text(s_status, "Say 'Hi, ESP' or tap to talk");
+    } else {
+        wakeword_ptt_press();
+    }
 }
 
 static void _touch_released(lv_event_t *e)

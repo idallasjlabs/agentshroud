@@ -212,20 +212,21 @@ static void _on_vg_state(ws_vg_state_t state, void *ctx)
         ui_face_set_state(state);
 
     } else if (state == WS_VG_STATE_IDLE) {
-        bool post_tts = (s_prev_vg_state == WS_VG_STATE_SPEAKING);
+        bool post_tts    = (s_prev_vg_state == WS_VG_STATE_SPEAKING);
+        bool interrupted = wakeword_tts_stop_requested();
         wakeword_set_tts_playing(false);
+        wakeword_tts_stop_clear();
 
-        if (post_tts) {
-            /* TTS just finished — auto-listen so the user can ask a follow-up
-             * without saying "Hi, ESP" again.  VAD timeout (8 s of silence)
-             * will send END and return to idle if no follow-up arrives. */
+        if (post_tts && !interrupted) {
+            /* TTS finished naturally — auto-listen so the user can ask a
+             * follow-up without saying "Hi, ESP" again.  VAD timeout (8 s of
+             * silence) will send END and return to idle if no follow-up. */
             wakeword_ptt_press();
             ui_face_set_state(WS_VG_STATE_LISTENING);
         } else if (!wakeword_triggered()) {
-            /* Normal idle.  Skip the face update if auto-listen is already
-             * active (wakeword_triggered() is true) to avoid the redundant
-             * {"state":"idle"} JSON frame briefly flashing "Say Hi" over the
-             * "Listening…" screen that was just set. */
+            /* Interrupted or normal idle.  ui_face may already show IDLE if
+             * the user tapped (touch callback updated it); set_state() has an
+             * early-return guard so the redundant call is harmless. */
             ui_face_set_state(WS_VG_STATE_IDLE);
         }
 
@@ -238,7 +239,9 @@ static void _on_vg_state(ws_vg_state_t state, void *ctx)
 
 static void _on_tts_pcm(const uint8_t *pcm, size_t len, void *ctx)
 {
-    audio_play(pcm, len);
+    if (!wakeword_tts_stop_requested()) {
+        audio_play(pcm, len);
+    }
 }
 
 /* ── Voice task ───────────────────────────────────────────────────────────── */
