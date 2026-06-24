@@ -228,6 +228,7 @@ async def get_status(user: str = Depends(require_auth)) -> dict:
     runtime_config = RuntimeConfig.from_env()
     available_runtimes = detect_runtime()
 
+    engine = None
     try:
         engine = get_engine(runtime_config.runtime)
         runtime_healthy = engine.health_check()
@@ -269,7 +270,7 @@ async def get_status(user: str = Depends(require_auth)) -> dict:
         },
         "runtime": {
             "selected": runtime_config.runtime or "auto",
-            "active": engine.name if runtime_healthy else None,
+            "active": engine.name if (runtime_healthy and engine is not None) else None,
             "available": available_runtimes,
             "healthy": runtime_healthy,
             "rootless": runtime_config.effective_rootless,
@@ -282,7 +283,7 @@ async def get_status(user: str = Depends(require_auth)) -> dict:
         },
         "security": {
             "comparison": get_security_comparison(),
-            "warnings": warn_missing_features(engine.name) if runtime_healthy else [],
+            "warnings": warn_missing_features(engine.name) if (runtime_healthy and engine is not None) else [],
         },
     }
 
@@ -936,6 +937,85 @@ async def skills_reload(user: str = Depends(require_auth)) -> dict:
         raise HTTPException(status_code=500, detail=str(exc)) from exc
     except ValueError as exc:
         raise HTTPException(status_code=500, detail=str(exc)) from exc
+
+
+# --- Competitive Intel -------------------------------------------------------
+
+# Default store path; overrideable via AGENTSHROUD_INTEL_REPORT_PATH env var.
+_INTEL_REPORT_PATH_DEFAULT = Path("./gateway-data/intel-reports")
+
+
+def _intel_store():
+    """Return an IntelReportStore pointed at the configured data directory."""
+    from pathlib import Path as _Path
+
+    from gateway.security.intel_report import IntelReportStore
+
+    path = _Path(os.environ.get("AGENTSHROUD_INTEL_REPORT_PATH", str(_INTEL_REPORT_PATH_DEFAULT)))
+    return IntelReportStore(store_path=path)
+
+
+@router.get("/intel/competitive")
+async def get_competitive_intel(user: str = Depends(require_auth)) -> dict:
+    """Return the latest validated competitive-intelligence report.
+
+    Auth-gated (owner only).  Returns the most recently persisted report
+    along with its chain-integrity status.
+
+    IEC 62443 FR6 (Audit): the response includes the content_hash and
+    chain_valid flag so callers can independently verify report provenance.
+
+    Returns:
+        200 + report JSON  — if a validated report exists.
+        404                — if no reports have been stored yet.
+        409                — if the latest report fails integrity verification.
+    """
+    store = _intel_store()
+    try:
+        report = store.load_latest(verify=True)
+    except Exception as exc:
+        # ReportIntegrityError or unexpected parse failure
+        logger.error("intel/competitive: integrity check failed: %s", exc)
+        raise HTTPException(
+            status_code=409,
+            detail=f"Report integrity check failed: {exc}",
+        )
+
+    if report is None:
+        raise HTTPException(status_code=404, detail="No competitive intel reports found")
+
+    chain_valid, chain_msg = store.verify_chain()
+
+    return {
+        "report": report.model_dump(),
+        "chain_valid": chain_valid,
+        "chain_message": chain_msg,
+        "retrieved_at": datetime.now(timezone.utc).isoformat(),
+    }
+
+
+@router.get("/intel/competitive/history")
+async def get_competitive_intel_history(
+    limit: int = Query(default=10, ge=1, le=100),
+    user: str = Depends(require_auth),
+) -> dict:
+    """Return recent competitive-intelligence reports in reverse-chronological order.
+
+    Auth-gated (owner only).  Returns up to *limit* reports (default 10, max 100).
+    """
+    store = _intel_store()
+    all_reports = store.load_all()
+    # Newest first
+    recent = list(reversed(all_reports))[:limit]
+    chain_valid, chain_msg = store.verify_chain()
+
+    return {
+        "reports": [r.model_dump() for r in recent],
+        "total_stored": len(all_reports),
+        "chain_valid": chain_valid,
+        "chain_message": chain_msg,
+        "retrieved_at": datetime.now(timezone.utc).isoformat(),
+    }
 
 
 # --- Helpers ----------------------------------------------------------------

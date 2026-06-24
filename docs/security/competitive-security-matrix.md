@@ -1,6 +1,6 @@
 # Competitive Security Matrix — AgentShroud vs AI Agent Platforms
 
-**February 2026 | 26 Security Modules Compared**
+**June 2026 | 28 Security Modules Compared** *(updated v1.2.0 — added modules 27–28)*
 
 ## Module Comparison
 
@@ -32,17 +32,19 @@
 | 24 | Resource Exhaustion Guard | ✅ | ❌ | ❌ | ❌ | ❌ | ❌ | ❌ | ❌ | ❌ | ❌ | ❌ | ❌ |
 | 25 | Tool Result Injection Scanning | ✅ | ❌ | ❌ | ❌ | ❌ | ❌ | ❌ | ❌ | ❌ | ❌ | ❌ | ❌ |
 | 26 | Port Conflict Auto-Detection | ✅ | ❌ | ❌ | ❌ | ❌ | ❌ | ❌ | ❌ | ❌ | ❌ | ❌ | ❌ |
+| 27 | Cross-Bot Trust Ledger *(v1.2.0)* | ✅ | ❌ | ❌ | ❌ | ❌ | ❌ | ❌ | ❌ | ❌ | ❌ | ❌ | ❌ |
+| 28 | Differential PII Detector — tool results 0.7-floor *(v1.2.0)* | ✅ | ❌ | ❌ | ❌ | ❌ | ❌ | ❌ | ❌ | ❌ | ❌ | ❌ | ❌ |
 
-## Security Score (out of 26)
+## Security Score (out of 28)
 
 | Platform | Score | Percentage |
 |----------|-------|-----------|
-| **AgentShroud** | **26/26** | **100%** |
-| Zetherion | 4/26 | 15% |
-| CogniShield | 3/26 | 12% |
-| NanoClaw | 1.5/26 | 6% |
-| SentinelBot | 0.5/26 | 2% |
-| All others | 0/26 | 0% |
+| **AgentShroud** | **28/28** | **100%** |
+| Zetherion | 4/28 | 14% |
+| CogniShield | 3/28 | 11% |
+| NanoClaw | 1.5/28 | 5% |
+| SentinelBot | 0.5/28 | 2% |
+| All others | 0/28 | 0% |
 
 ## Container Security Toolchain Comparison
 
@@ -60,7 +62,7 @@
 
 ## Key Takeaways
 
-1. **AgentShroud is the only platform with ANY of modules 12-26** — these are novel security capabilities that don't exist anywhere in the AI agent ecosystem
+1. **AgentShroud is the only platform with ANY of modules 12-28** — these are novel security capabilities that don't exist anywhere in the AI agent ecosystem
 2. **No competitor has a tamper-evident audit trail** — hash chains for audit integrity are unique to AgentShroud
 3. **No competitor inspects MCP tool calls** — AgentShroud is the only platform that can see what tools are doing
 4. **No competitor scans web content for prompt injection** — CVE-2026-22708 remains unmitigated on all other platforms
@@ -77,4 +79,4 @@
 | NanoClaw | 7.0 | 1.5 | Challengers |
 | All others | 3-6 | 0-1 | Niche |
 
-AgentShroud's security score increased from 9.5 to **10.0** with the addition of 8 deep hardening modules that address attack vectors no other platform has even identified, let alone mitigated.
+AgentShroud's security score increased from 9.5 to **10.0** with the addition of 8 deep hardening modules (v1.1.x) and further to **10.0+** in v1.2.0 with Cross-Bot Trust Ledger (Module 27) and Differential PII Detector (Module 28) — attack vectors no other platform has even identified, let alone mitigated.
