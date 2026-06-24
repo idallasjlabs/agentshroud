@@ -7,12 +7,12 @@
 ## 🔴 CRITICAL: Operational Blockers
 
 ### 1. Anthropic API Credits Exhausted
-- **Source:** `docs/project/SYSTEM_STATUS.md`, `docs/planning/RECOVERY_PLAN.md`
+- **Source:** `docs/project/SYSTEM_STATUS.md`, `docs/planning/recovery/RECOVERY_PLAN.md`
 - **Impact:** The bot cannot respond to any LLM-based requests. Claude API calls fail with `429 Too Many Requests`.
 - **Action Required:** Top up credits at [Anthropic Console](https://console.anthropic.com/settings/billing).
 
 ### 2. iMessage Integration Permission Denied
-- **Source:** `docs/project/SYSTEM_STATUS.md`, `docs/planning/RECOVERY_PLAN.md`
+- **Source:** `docs/project/SYSTEM_STATUS.md`, `docs/planning/recovery/RECOVERY_PLAN.md`
 - **Impact:** Error: `"Not authorized to send Apple events to Messages (-1743)"`. The bot cannot send or receive iMessages.
 - **Root Cause:** macOS Security & Privacy blocks automation access to `Messages.app`.
 - **Action Required:** Manually grant "Automation" permissions for Terminal/Docker in macOS System Settings.
@@ -27,7 +27,7 @@
 ## 🟠 HIGH: Security & Core Logic Issues
 
 ### 4. Function Call Exposure (XML Leak)
-- **Source:** `docs/planning/RECOVERY_PLAN.md`
+- **Source:** `docs/planning/recovery/RECOVERY_PLAN.md`
 - **Impact:** Agent responses via Telegram/iMessage include raw XML blocks (`<function_calls>`, `<invoke>`), exposing internal system commands, file paths, and infrastructure details.
 - **Status:** Mitigation plan (Option A: Response Filter) identified in Phase 1 of Recovery Plan.
 
@@ -104,7 +104,7 @@
 | Issue | Source | Context |
 |-------|--------|---------|
 | **Docker Desktop Isolation** | `reviews/phase-review-2026-03-03.md` | macOS limitation prevents full network isolation; application-enforced only. |
-| **WidgetKit Refresh Limit** | `docs/ROADMAP-POST-v1.0.md` | iOS limitation: widget timeline only refreshes every 15-30 mins. |
+| **WidgetKit Refresh Limit** | `docs/planning/v1.0/ROADMAP-POST-v1.0.md` | iOS limitation: widget timeline only refreshes every 15-30 mins. |
 | **spaCy/Presidio Failures** | `gateway/tests/test_integration.py` | Potential model corruption or dependency conflict in container. |
 | **Unauthorized File Access Bug** | `gateway/tests/test_file_sandbox_message_gate.py` | Logic bug in FileSandbox path validation. |
 
