@@ -189,30 +189,42 @@ async def _call_agent(transcript: str, agent: str) -> str:
     Returns:
         Spoken reply string (suitable for TTS synthesis).
     """
-    async with httpx.AsyncClient(timeout=125.0, trust_env=False) as client:
-        resp = await client.post(
-            f"{_GATEWAY_URL}/forward",
-            json={
-                "content": transcript,
-                "source": "api",
-                "route_to": agent,
-                "user_id": _OWNER_USER_ID or "voice",
-            },
-            headers={
-                "Authorization": f"Bearer {_GATEWAY_TOKEN}",
-                "X-AgentShroud-User-Id": _OWNER_USER_ID or "voice",
-            },
+    # Voice timeout: 35 s read deadline — enough for any normal agent reply (typical
+    # Hermes: 3-10 s).  Gateway's own internal forward timeout is 120 s; setting
+    # httpx read=125 s means we always catch its graceful 201 body when it fires.
+    # The 35 s read deadline fires first for a hung agent, returning a spoken
+    # fallback so the ESP returns to IDLE rather than sitting in THINKING for 2 min.
+    timeout = httpx.Timeout(connect=10.0, read=35.0, write=10.0, pool=5.0)
+    try:
+        async with httpx.AsyncClient(timeout=timeout, trust_env=False) as client:
+            resp = await client.post(
+                f"{_GATEWAY_URL}/forward",
+                json={
+                    "content": transcript,
+                    "source": "api",
+                    "route_to": agent,
+                    "user_id": _OWNER_USER_ID or "voice",
+                },
+                headers={
+                    "Authorization": f"Bearer {_GATEWAY_TOKEN}",
+                    "X-AgentShroud-User-Id": _OWNER_USER_ID or "voice",
+                },
+            )
+        resp.raise_for_status()
+        data = resp.json()
+        agent_reply = data.get("agent_response") or ""
+        if agent_reply.strip():
+            logger.info("Agent %r reply: %r", agent, agent_reply[:120])
+            return agent_reply.strip()
+        # Async agents (OpenClaw) route the message but reply later over Telegram.
+        notice = f"{agent.capitalize()} received your message and will reply on Telegram."
+        logger.info("Agent %r returned no synchronous reply — notifying user via TTS", agent)
+        return notice
+    except httpx.ReadTimeout:
+        logger.warning(
+            "Agent %r read timeout after 35 s — returning voice fallback", agent
         )
-    resp.raise_for_status()
-    data = resp.json()
-    agent_reply = data.get("agent_response") or ""
-    if agent_reply.strip():
-        logger.info("Agent %r reply: %r", agent, agent_reply[:120])
-        return agent_reply.strip()
-    # Async agents (OpenClaw) route the message but reply later over Telegram.
-    notice = f"{agent.capitalize()} received your message and will reply on Telegram."
-    logger.info("Agent %r returned no synchronous reply — notifying user via TTS", agent)
-    return notice
+        return "I'm having trouble connecting right now. Please try again in a moment."
 
 
 @app.websocket("/voice")
