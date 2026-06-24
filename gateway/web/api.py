@@ -887,6 +887,57 @@ async def ws_updates(websocket: WebSocket, token: str = Query(default="")):
         pass
 
 
+# --- Skills manifest reload -------------------------------------------------
+
+
+def _skills_reload_impl() -> dict:
+    """Re-read ``~/.llm_settings/``, deploy to both bot config dirs, return summary.
+
+    This is the inner implementation called by the endpoint so it can be patched
+    independently in tests.
+
+    Raises:
+        FileNotFoundError: if ``~/.llm_settings/`` does not exist.
+    """
+    from pathlib import Path
+
+    from ..skills.manifest import SkillsManifest, deploy_manifest
+
+    source = Path("~/.llm_settings").expanduser()
+    manifest = SkillsManifest.from_source(source)
+
+    repo_root = Path(__file__).parent.parent.parent
+    destinations = [
+        repo_root / "docker" / "config" / "openclaw",
+        repo_root / "docker" / "config" / "hermes",
+    ]
+    deploy_manifest(manifest, source, destinations)
+
+    skill_names = sorted(
+        {e.name.split("/")[1] for e in manifest.entries if e.name.startswith("skills/")}
+    )
+    logger.info(
+        "Skills manifest reloaded: %d entries, skills=%s",
+        len(manifest.entries),
+        skill_names,
+    )
+    return {"reloaded": True, "skills": skill_names}
+
+
+@router.post("/skills/reload")
+async def skills_reload(user: str = Depends(require_auth)) -> dict:
+    """Re-read ``~/.llm_settings/`` and sync skills/agents/MCP into both bot configs.
+
+    Owner-only (Bearer token required). Returns ``{"reloaded": true, "skills": [...names...]}``.
+    """
+    try:
+        return _skills_reload_impl()
+    except FileNotFoundError as exc:
+        raise HTTPException(status_code=500, detail=str(exc)) from exc
+    except ValueError as exc:
+        raise HTTPException(status_code=500, detail=str(exc)) from exc
+
+
 # --- Helpers ----------------------------------------------------------------
 
 
