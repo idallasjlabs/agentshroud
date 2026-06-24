@@ -35,7 +35,8 @@ CONFIG_LOG_DEFAULT_LEVEL_INFO=y
 # Force esp_codec_dev to use legacy I2C driver — avoids conflict with BSP v1.1.3
 CONFIG_CODEC_I2C_BACKWARD_COMPATIBLE=y
 
-# LVGL fonts
+# LVGL fonts — 14pt agent label (ui_face_set_agent), 20pt status, 28pt wifi splash
+CONFIG_LV_FONT_MONTSERRAT_14=y
 CONFIG_LV_FONT_MONTSERRAT_20=y
 CONFIG_LV_FONT_MONTSERRAT_28=y
 
