@@ -19,6 +19,13 @@ services:
       dockerfile: gateway/Dockerfile
       args:
         AGENTSHROUD_VERSION: ${AGENTSHROUD_VERSION:-latest}
+    # Infra env — load docker/.env regardless of compose invocation directory.
+    # Path is relative to this file (docker/), so this always resolves correctly.
+    # This prevents the recurring regression where AGENTSHROUD_ALLOWED_IPS and
+    # AGENTSHROUD_ALLOWED_PORTS resolve to empty when compose is run from the
+    # repo root (which loads the root .env, a GitHub-bot-credentials file).
+    env_file:
+      - .env
     # Host entries for personal lab — override via AGENTSHROUD_EXTRA_HOSTS env var or docker-compose.override.yml
     extra_hosts:
       - "host.docker.internal:host-gateway"
@@ -73,8 +80,10 @@ services:
       - PYTHONDONTWRITEBYTECODE=1
       - PYTHONPYCACHEPREFIX=/tmp/pycache
       - AGENTSHROUD_EGRESS_APPROVAL_ALL=false
-      - AGENTSHROUD_ALLOWED_IPS=${AGENTSHROUD_ALLOWED_IPS:-}
-      - AGENTSHROUD_ALLOWED_PORTS=${AGENTSHROUD_ALLOWED_PORTS:-}
+      # AGENTSHROUD_ALLOWED_IPS and AGENTSHROUD_ALLOWED_PORTS are supplied by
+      # env_file: .env above.  They must NOT appear here — compose environment:
+      # entries override env_file and would shadow the populated values with
+      # the empty default, repeating the recurring allowed-IPs regression.
       - GATEWAY_AUTH_TOKEN_FILE=/run/secrets/gateway_password
       - CANVAS_SKIP_BASIC_AUTH=true
       - OP_SERVICE_ACCOUNT_TOKEN_FILE=/run/secrets/1password_service_account

@@ -70,6 +70,20 @@ PERMANENT_EGRESS_DOMAINS: list[str] = [
     "www.google.com",
     "yandex.com",
     "www.mojeek.com",
+    # ── Web Search / Research (OpenClaw web_search + research tool) ──
+    # Observed generating DENY events in production (2026-06-24, audit.db: 210
+    # denials, saturating the SOC risk-score gauge to 100%).  Added here so
+    # EgressFilterConfig includes them in the default allowlist for all agents.
+    "en.wikipedia.org",
+    "*.wikipedia.org",
+    "startpage.com",
+    "www.startpage.com",
+    "*.startpage.com",
+    "grokipedia.com",
+    "*.grokipedia.com",
+    # GitHub static asset host — NOT covered by *.github.com (different apex).
+    "github.githubassets.com",
+    "*.githubassets.com",
     # ── Development & Package Registries ──
     "*.github.com",
     "*.githubusercontent.com",
