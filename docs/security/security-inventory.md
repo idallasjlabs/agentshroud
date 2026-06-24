@@ -140,19 +140,19 @@
 | 1 | Security Policy | `SECURITY.md` | Top-level security policy and disclosure |
 | 2 | Security Architecture | `docs/security/SECURITY_ARCHITECTURE.md` | System-wide security architecture overview |
 | 3 | Security Architecture (detailed) | `docs/security/security-architecture.md` | Detailed architecture diagrams and flows |
-| 4 | Security Plan | `docs/SECURITY_PLAN.md` | Roadmap and implementation plan |
+| 4 | Security Plan | `docs/planning/v0.8/SECURITY_PLAN.md` | Roadmap and implementation plan (historic; moved to planning/v0.8) |
 | 5 | Security Policy Final | `docs/security/SECURITY-POLICY-FINAL.md` | Finalized security policy document |
 | 6 | Threat Model | `docs/security/threat-model.md` | STRIDE threat model for all attack surfaces |
 | 7 | Incident Response | `docs/security/incident-response.md` | Incident response procedures and playbook |
 | **Access & Container** ||||
 | 8 | Access Control Matrix | `docs/security/access-control-matrix.md` | Per-role permission matrix |
 | 9 | Container Policy | `docs/security/container-policy.md` | Docker container security policies |
-| 10 | Container Audit | `docs/security/container-security-audit-v0.8.0.md` | v0.8.0 container security audit |
+| 10 | Container Audit | `docs/planning/v0.8/container-security-audit-v0.8.0.md` | v0.8.0 container security audit (historic; moved to planning/v0.8) |
 | **Assessments & Audits** ||||
-| 11 | Blue Team Assessment | `docs/security/blue-team-assessment-v0.8.0.md` | Initial blue team assessment |
-| 12 | Blue Team R2 | `docs/security/blue-team-assessment-v0.8.0-r2.md` | Revision 2 |
-| 13 | Blue Team R3 | `docs/security/blue-team-assessment-v0.8.0-r3.md` | Revision 3 |
-| 14 | Blue Team Final | `docs/security/blue-team-assessment-v0.8.0-final.md` | Final blue team assessment |
+| 11 | Blue Team Assessment | `docs/planning/v0.8/blue-team-assessment-v0.8.0.md` | Initial blue team assessment (historic; moved to planning/v0.8) |
+| 12 | Blue Team R2 | `docs/planning/v0.8/blue-team-assessment-v0.8.0-r2.md` | Revision 2 (historic; moved to planning/v0.8) |
+| 13 | Blue Team R3 | `docs/planning/v0.8/blue-team-assessment-v0.8.0-r3.md` | Revision 3 (historic; moved to planning/v0.8) |
+| 14 | Blue Team Final | `docs/planning/v0.8/blue-team-assessment-v0.8.0-final.md` | Final blue team assessment (historic; moved to planning/v0.8) |
 | 15 | Security Verification | `docs/security/SECURITY_VERIFICATION.md` | Verification test results |
 | 16 | Verification Results | `docs/security/VERIFICATION_RESULTS.md` | Detailed verification output |
 | 17 | Implementation Verification | `docs/security/SECURITY-IMPLEMENTATION-VERIFICATION.md` | Implementation correctness checks |
