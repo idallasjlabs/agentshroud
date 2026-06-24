@@ -8,6 +8,55 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ---
 
+## [1.2.0] — feat/esp32-s3-hermes-voice (2026-06-24)
+
+### Summary
+
+v1.2.0 — Voice release. The ESP32-S3-BOX-3 voice terminal is now a first-class
+AgentShroud control surface: say "Hi, ESP" or tap the screen, speak naturally, and
+hear Hermes (or any registered agent) reply through the speaker — all routed through
+the full AgentShroud security pipeline (PII redaction, prompt-guard, audit hash-chain,
+egress policy). An agent-toggle button (BSP_BUTTON_MUTE) cycles between Hermes, the
+fast LLM path, and OpenClaw at runtime without reflashing.
+
+### Added
+
+- **ESP32-S3-BOX-3 Voice Terminal** — end-to-end voice pipeline: wake word ("Hi, ESP")
+  / tap-to-talk → PCM WebSocket → STT (faster-whisper) → proxied agent → TTS (Piper)
+  → spoken reply through the BOX-3 speaker.
+- **Voice Gateway** (`voice_gateway/`) — FastAPI WebSocket server (port 8765); exposes
+  `/voice?token=&agent=` endpoint. Routes utterances to any registered AgentShroud agent
+  via `POST /forward` with `route_to=<agent>` — running the full security pipeline.
+- **Agent routing** — `?agent=hermes` (default) routes synchronously to the Hermes agentic
+  assistant; `?agent=direct` uses the low-latency LLM proxy; `?agent=openclaw` dispatches
+  to OpenClaw and speaks an honest notice ("OpenClaw received your message and will reply
+  on Telegram") since OpenClaw is asynchronous by design.
+- **Runtime agent toggle** — BSP_BUTTON_MUTE on the BOX-3 cycles the active agent without
+  reflashing; the current agent name is shown in the top-left of the face UI.
+- **Tailscale Funnel transport** — `wss://marvin.tail240ea8.ts.net/voice` via Tailscale
+  Funnel on port 443; works on home WiFi and cellular (phone hotspot confirmed).
+- **Auto-follow-up listen** — after the agent's spoken reply, the device auto-enters a
+  listen window (8 s VAD timeout) so the user can ask a follow-up without repeating the
+  wake word; returns to "Say Hi" on silence.
+- **Tap-to-talk UX fix** — short tap (<1 s) stays in LISTENING state so the user can
+  speak after lifting their finger; long press ends immediately on release.
+- **Firmware: ping/pong timeout** — `pingpong_timeout_sec` raised 10→30 to survive
+  STT/LLM/TTS latency on cellular connections.
+- `docs/integrations/voice-terminal-esp32-s3.md` — full installation + configuration
+  guide for the optional voice terminal add-on.
+- `VOICE_DEFAULT_AGENT=hermes` in docker-compose voice-gateway environment.
+
+### Fixed
+
+- **Async event-loop blocking** — STT/TTS were synchronous; moved to
+  `run_in_executor` so WebSocket PING/PONG stays alive during inference.
+- **Stale firmware URL** — firmware was pointing to `:8765` directly; corrected to
+  Tailscale Funnel `:443` via config rebuild.
+- **form-urlencoded outbound bypass** (carried from v1.1.1) — outbound filter now
+  applies to `application/x-www-form-urlencoded` bodies in addition to JSON.
+
+---
+
 ## [1.1.1] — fix/guard-wiring-and-ops-hardening (2026-06-10)
 
 ### Summary
