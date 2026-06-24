@@ -33,7 +33,11 @@ static void _on_event(void *handler_args, esp_event_base_t base,
         break;
 
     case WEBSOCKET_EVENT_DISCONNECTED:
-        ESP_LOGW(TAG, "WebSocket disconnected");
+        ESP_LOGW(TAG, "WebSocket disconnected — HTTP:%d tls_err:0x%x tls_stack:0x%x sock_errno:%d",
+                 data ? data->error_handle.esp_ws_handshake_status_code : -1,
+                 data ? data->error_handle.esp_tls_last_esp_err        : -1,
+                 data ? data->error_handle.esp_tls_stack_err            : -1,
+                 data ? data->error_handle.esp_transport_sock_errno     : -1);
         if (c->state_cb) c->state_cb(WS_VG_STATE_DISCONNECTED, c->user_ctx);
         break;
 
@@ -80,7 +84,17 @@ static void _on_event(void *handler_args, esp_event_base_t base,
         break;
 
     case WEBSOCKET_EVENT_ERROR:
-        ESP_LOGE(TAG, "WebSocket error");
+        ESP_LOGE(TAG, "WebSocket error — HTTP:%d tls_err:0x%x tls_stack:0x%x sock_errno:%d",
+                 data ? data->error_handle.esp_ws_handshake_status_code : -1,
+                 data ? data->error_handle.esp_tls_last_esp_err        : -1,
+                 data ? data->error_handle.esp_tls_stack_err            : -1,
+                 data ? data->error_handle.esp_transport_sock_errno     : -1);
+        if (c->state_cb) c->state_cb(WS_VG_STATE_DISCONNECTED, c->user_ctx);
+        break;
+
+    case WEBSOCKET_EVENT_CLOSED:
+        ESP_LOGW(TAG, "WebSocket closed — code:%d",
+                 data ? data->error_handle.esp_ws_handshake_status_code : -1);
         if (c->state_cb) c->state_cb(WS_VG_STATE_DISCONNECTED, c->user_ctx);
         break;
 
@@ -107,15 +121,18 @@ ws_client_handle_t ws_client_create(const char *url,
     esp_websocket_client_config_t cfg = {
         .uri                  = url,
         .reconnect_timeout_ms = 5000,
-        .network_timeout_ms   = 10000,
+        /* 15 s allows for hotspot/DERP latency spikes during TLS reconnect. */
+        .network_timeout_ms   = 15000,
         /* Buffer large enough for one TTS chunk (4 KB PCM). */
         .buffer_size          = 8192,
-        /* Send a WebSocket PING every 15 s during idle.  Starlette/uvicorn
+        /* Send a WebSocket PING every 10 s during idle.  Starlette/uvicorn
          * auto-replies PONG, producing bidirectional traffic that keeps the
-         * Tailscale Funnel relay alive (idle timeout ~60-90 s otherwise).
-         * pingpong_timeout_sec=10 makes the client declare a dead socket within
-         * 10 s of a missing PONG so auto-reconnect fires promptly. */
-        .ping_interval_sec    = 15,
+         * Tailscale Funnel relay and any intermediate NAT alive (idle timeout
+         * ~60-90 s otherwise).  pingpong_timeout_sec=30 declares a dead socket
+         * within 30 s of a missing PONG so auto-reconnect fires promptly.
+         * If serial logs show repeated pong-timeout teardowns with no other
+         * error, raise or set to 0 to disable the timeout entirely. */
+        .ping_interval_sec    = 10,
         .pingpong_timeout_sec = 30,
         /* TLS: attach the ESP-IDF CA bundle (includes ISRG Root X1 / Let's Encrypt).
          * Required for wss:// connections to Tailscale Funnel. No-op for ws://. */
