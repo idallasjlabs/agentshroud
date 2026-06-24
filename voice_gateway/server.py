@@ -189,7 +189,7 @@ async def _call_agent(transcript: str, agent: str) -> str:
     Returns:
         Spoken reply string (suitable for TTS synthesis).
     """
-    async with httpx.AsyncClient(timeout=120.0, trust_env=False) as client:
+    async with httpx.AsyncClient(timeout=125.0, trust_env=False) as client:
         resp = await client.post(
             f"{_GATEWAY_URL}/forward",
             json={
