@@ -30,6 +30,7 @@ Complete guides for setting up AgentShroud and all integrated services.
 - [Tailscale Setup](./setup/TAILSCALE_SETUP.md) - Tailscale VPN configuration
 
 **Service Integrations:**
+- [Voice Terminal (ESP32-S3-BOX-3)](./integrations/voice-terminal-esp32-s3.md) — optional hardware voice control
 - [Apple Services Setup](./setup/APPLE-SERVICES-SETUP.md)
 - [Google Services Setup](./setup/GOOGLE-SERVICES-SETUP.md)
 - [Google Calendar Quick Setup](./setup/GOOGLE-CALENDAR-QUICK-SETUP.md)

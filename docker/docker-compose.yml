@@ -391,7 +391,11 @@ services:
       API_SERVER_ENABLED: "1"
       API_SERVER_HOST: "0.0.0.0"
       API_SERVER_PORT: "8642"
-      API_SERVER_KEY: "${API_SERVER_KEY:-}"
+      # API_SERVER_KEY is intentionally NOT set here. It is injected by
+      # docker/bots/hermes/agentshroud-secrets.sh via s6 with-contenv from
+      # /run/secrets/hermes_api_key. Setting it in environment: would shadow
+      # the cont-init value with an empty string when the host var is unset,
+      # causing Hermes to reject every gateway request (start.sh:78-82).
     # Security note: nousresearch/hermes-agent uses s6-overlay which must start as root
     # and drop to UID 10000 via s6-setuidgid. cap_drop: ALL and no-new-privileges break
     # this. Primary security boundaries: agentshroud-isolated network + seccomp + resource limits.
@@ -448,6 +452,10 @@ services:
       VG_PORT: "8765"
       # WS auth: token the ESP32 must send as ?token= in the connection URL.
       VOICE_GW_AUTH_TOKEN_FILE: /run/secrets/voice_gateway_token
+      # Default agent for voice → proxied-agent routing.  Override per-connection via ?agent=.
+      # "hermes" = Hermes agentic assistant (synchronous OpenAI-compat reply via /forward).
+      # "direct" = legacy fast-path LLM proxy (no agentic tools, lower latency).
+      VOICE_DEFAULT_AGENT: "hermes"
     secrets:
       - gateway_password
       - voice_gateway_token

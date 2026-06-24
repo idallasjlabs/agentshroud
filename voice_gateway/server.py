@@ -17,8 +17,11 @@ Gateway → device protocol:
   • Text "END"     — TTS stream complete, device may start next utterance
 
 Required env vars (set by docker-compose):
-  GATEWAY_URL         — e.g. http://gateway:8080
-  GATEWAY_AUTH_TOKEN  — Bearer token for POST /forward
+  GATEWAY_URL           — e.g. http://gateway:8080
+  GATEWAY_AUTH_TOKEN    — Bearer token for gateway (kept for /forward fallback)
+  GATEWAY_OWNER_USER_ID — owner Telegram UID for RBAC propagation
+  VOICE_MODEL           — LLM model for voice (default: claude-haiku-4-5-20251001)
+  GATEWAY_TZ            — IANA timezone for date/time injection (default: America/New_York)
 """
 
 from __future__ import annotations
@@ -28,8 +31,10 @@ import json
 import logging
 import os
 import re
+from datetime import datetime
 from enum import Enum, auto
-from typing import List
+from typing import Dict, List
+from zoneinfo import ZoneInfo
 
 import httpx
 from fastapi import FastAPI, WebSocket, WebSocketDisconnect
@@ -42,15 +47,22 @@ logger = logging.getLogger("voice_gateway.server")
 _GATEWAY_URL = os.environ.get("GATEWAY_URL", "http://gateway:8080")
 _CHUNK_SIZE = 4096  # bytes per TTS chunk
 
-# The RBAC middleware resolves `source` to a user_id for permission checking.
-# The voice-terminal is the device owner, so we use the owner's Telegram user_id
-# (which has OWNER role in RBAC and can invoke tool_use).  Set via docker-compose
-# GATEWAY_OWNER_USER_ID env var; falls back to "api" (viewer, blocked) if unset.
 _OWNER_USER_ID = os.environ.get("GATEWAY_OWNER_USER_ID", "")
 
-# Read the bearer token from a secret file first (Docker secrets pattern), then
-# fall back to the env var — mirrors how agentshroud-gateway reads GATEWAY_AUTH_TOKEN_FILE.
-# Token value is never logged.
+# Model for voice — used only by the "direct" fast-path (_call_llm).
+# Other agents (hermes, openclaw, …) route through /forward → gateway pipeline.
+_VOICE_MODEL = os.environ.get("VOICE_MODEL", "claude-haiku-4-5-20251001")
+
+# Default proxied agent to route voice to.  Override per-connection via ?agent= query param.
+# "direct" = fast path (_call_llm, bypasses /forward pipeline, backward-compat).
+# Any other value = gateway /forward with route_to=<value>.
+_DEFAULT_AGENT = os.environ.get("VOICE_DEFAULT_AGENT", "hermes")
+
+# Conversation history: keep at most this many user+assistant turn pairs.
+# Older turns are dropped (FIFO) to bound token usage and maintain context.
+_MAX_HISTORY_TURNS = 10
+
+# Read the bearer token (kept for compatibility / future use).
 _token_file = os.environ.get(
     "GATEWAY_AUTH_TOKEN_FILE", "/run/secrets/gateway_password"
 )
@@ -61,13 +73,10 @@ else:
     _GATEWAY_TOKEN = os.environ.get("GATEWAY_AUTH_TOKEN", "")
 if not _GATEWAY_TOKEN:
     logger.warning(
-        "GATEWAY_AUTH_TOKEN not set — /forward calls will fail authentication. "
-        "Mount docker secret 'gateway_password' or set GATEWAY_AUTH_TOKEN env var."
+        "GATEWAY_AUTH_TOKEN not set — gateway calls may fail authentication."
     )
 
-# Token that the ESP32 voice terminal must send as ?token= in the WS URL.
-# Read from Docker secret first, then fall back to env var.
-# If empty, the check is skipped (dev/test mode — set in production).
+# WS auth token the ESP32 must provide as ?token=.
 _vg_token_file = os.environ.get(
     "VOICE_GW_AUTH_TOKEN_FILE", "/run/secrets/voice_gateway_token"
 )
@@ -99,10 +108,10 @@ async def health() -> dict:
 
 
 async def _keepalive(ws: WebSocket) -> None:
-    """Send a heartbeat every 8 s to prevent ESP32 network_timeout_ms=10000 disconnects."""
+    """Send a heartbeat every 4 s to keep Tailscale Funnel relay and hotspot NAT alive."""
     try:
         while True:
-            await asyncio.sleep(8)
+            await asyncio.sleep(4)
             await ws.send_text('{"heartbeat":1}')
     except Exception:
         pass
@@ -114,51 +123,134 @@ async def _send_state(ws: WebSocket, state: _State) -> None:
     logger.debug("→ state: %s", name)
 
 
-async def _call_forward(transcript: str) -> str:
-    """POST transcript to AgentShroud /forward, return agent_response text."""
-    async with httpx.AsyncClient(timeout=120.0, trust_env=False) as client:
+def _voice_system_message() -> Dict[str, str]:
+    """Build a system message with the current date/time for voice context."""
+    tz = ZoneInfo(os.environ.get("GATEWAY_TZ", "America/New_York"))
+    now = datetime.now(tz).strftime("%A, %B %d, %Y at %-I:%M %p %Z")
+    return {
+        "role": "system",
+        "content": (
+            f"You are a concise voice assistant built into an ESP32 device. "
+            f"The current date and time is {now}. "
+            "Keep every response to 1-2 short spoken sentences — no markdown, "
+            "no bullet points, no lists. Plain conversational English only. "
+            "If asked a follow-up, remember the prior context in this conversation."
+        ),
+    }
+
+
+async def _call_llm(history: List[Dict[str, str]]) -> str:
+    """POST conversation history to the gateway's OpenAI-compat endpoint.
+
+    Fast path — bypasses the full agentic loop for lower latency. Used only
+    when ?agent=direct (or _DEFAULT_AGENT=="direct"). Gateway substitutes its
+    own Anthropic key, so no API key is needed here. Still routes through
+    AgentShroud's security pipeline (PII, audit, egress).
+    """
+    async with httpx.AsyncClient(timeout=30.0, trust_env=False) as client:
         resp = await client.post(
-            f"{_GATEWAY_URL}/forward",
+            f"{_GATEWAY_URL}/v1/chat/completions",
             json={
-                "content": transcript,
-                "source": "api",
-                "content_type": "text",
-                "route_to": "hermes",
-                # user_id drives RBAC: middleware resolves this field first, before source.
-                # Owner UID maps to OWNER role (tool_use allowed); falls back to None
-                # (→ viewer, blocked) if the env var is not set.
-                "user_id": _OWNER_USER_ID or None,
+                "model": _VOICE_MODEL,
+                "messages": history,
+                "max_tokens": 150,  # ~100 words — keep voice replies brief
             },
-            headers={"Authorization": f"Bearer {_GATEWAY_TOKEN}"},
+            headers={
+                # IP allowlist passes (isolated network); proxy substitutes Anthropic key.
+                "Authorization": f"Bearer {_GATEWAY_TOKEN}",
+                # Propagate owner identity for RBAC and audit trail.
+                "X-AgentShroud-User-Id": _OWNER_USER_ID or "voice",
+            },
         )
-
-    if resp.status_code == 202:
-        return "Your request has been queued for approval."
-
     resp.raise_for_status()
     data = resp.json()
-    agent_response = data.get("agent_response") or ""
-    if not agent_response:
-        return "Sorry, Hermes is offline right now."
-    return agent_response
+    try:
+        return data["choices"][0]["message"]["content"].strip()
+    except (KeyError, IndexError, TypeError) as exc:
+        raise RuntimeError(f"Unexpected LLM response shape: {exc}") from exc
+
+
+async def _call_agent(transcript: str, agent: str) -> str:
+    """Route a voice utterance to a proxied agent via the AgentShroud gateway /forward endpoint.
+
+    Unlike _call_llm, this path runs the full AgentShroud security pipeline:
+    PII redaction, prompt-guard scoring, audit hash-chain, egress policy.
+
+    Hermes (and any future agent with an OpenAI-compat chat_path) returns a
+    synchronous agent_response in the ForwardResponse body.  Async agents like
+    OpenClaw have no synchronous body reply; in that case we return an honest
+    spoken notice so the user knows their message was received.
+
+    Args:
+        transcript: STT-produced utterance text (already PII-clean at voice level).
+        agent:      AgentShroud bot slug (e.g. "hermes", "openclaw").  Must match
+                    a key in the agentshroud.yaml bots: section.
+
+    Returns:
+        Spoken reply string (suitable for TTS synthesis).
+    """
+    # Voice timeout: 35 s read deadline — enough for any normal agent reply (typical
+    # Hermes: 3-10 s).  Gateway's own internal forward timeout is 120 s; setting
+    # httpx read=125 s means we always catch its graceful 201 body when it fires.
+    # The 35 s read deadline fires first for a hung agent, returning a spoken
+    # fallback so the ESP returns to IDLE rather than sitting in THINKING for 2 min.
+    timeout = httpx.Timeout(connect=10.0, read=35.0, write=10.0, pool=5.0)
+    try:
+        async with httpx.AsyncClient(timeout=timeout, trust_env=False) as client:
+            resp = await client.post(
+                f"{_GATEWAY_URL}/forward",
+                json={
+                    "content": transcript,
+                    "source": "api",
+                    "route_to": agent,
+                    "user_id": _OWNER_USER_ID or "voice",
+                },
+                headers={
+                    "Authorization": f"Bearer {_GATEWAY_TOKEN}",
+                    "X-AgentShroud-User-Id": _OWNER_USER_ID or "voice",
+                },
+            )
+        resp.raise_for_status()
+        data = resp.json()
+        agent_reply = data.get("agent_response") or ""
+        if agent_reply.strip():
+            logger.info("Agent %r reply: %r", agent, agent_reply[:120])
+            return agent_reply.strip()
+        # Async agents (OpenClaw) route the message but reply later over Telegram.
+        notice = f"{agent.capitalize()} received your message and will reply on Telegram."
+        logger.info("Agent %r returned no synchronous reply — notifying user via TTS", agent)
+        return notice
+    except httpx.ReadTimeout:
+        logger.warning(
+            "Agent %r read timeout after 35 s — returning voice fallback", agent
+        )
+        return "I'm having trouble connecting right now. Please try again in a moment."
 
 
 @app.websocket("/voice")
 async def voice_endpoint(ws: WebSocket) -> None:
     await ws.accept()
-    # Auth: check ?token= query parameter before processing any frames.
-    # _VG_AUTH_TOKEN is empty in dev/test (skipped); set via docker secret in prod.
     token = ws.query_params.get("token", "")
     if _VG_AUTH_TOKEN and token != _VG_AUTH_TOKEN:
         logger.warning("Rejected WS connection (invalid token) from %s", ws.client)
-        await ws.close(code=1008)  # 1008 = Policy Violation
+        await ws.close(code=1008)
         return
 
+    # Agent routing: ?agent=<slug> selects the target proxied agent.
+    # "direct" = fast LLM path (legacy, lower latency, no agentic tools).
+    # Any other value = gateway POST /forward with route_to=<slug>.
+    agent = ws.query_params.get("agent", _DEFAULT_AGENT)
     remote = ws.client
-    logger.info("Connection from %s (authenticated)", remote)
+    logger.info("Connection from %s (authenticated) → agent=%r", remote, agent)
 
     state = _State.IDLE
     await _send_state(ws, state)
+
+    # Per-session conversation history — only used by the "direct" fast path.
+    # Agents like Hermes maintain their own server-side memory keyed by user_id.
+    # Index 0 is always the system message (refreshed at each utterance for time accuracy).
+    # User+assistant turns are appended and trimmed to _MAX_HISTORY_TURNS pairs.
+    history: List[Dict[str, str]] = [_voice_system_message()]
 
     pcm_chunks: List[bytes] = []
     heartbeat = asyncio.create_task(_keepalive(ws))
@@ -174,6 +266,8 @@ async def voice_endpoint(ws: WebSocket) -> None:
 
                 if msg == "LISTEN":
                     pcm_chunks.clear()
+                    # Refresh the system message so time stays accurate on long sessions.
+                    history[0] = _voice_system_message()
                     state = _State.LISTENING
                     await _send_state(ws, state)
 
@@ -185,30 +279,52 @@ async def voice_endpoint(ws: WebSocket) -> None:
                     pcm_chunks.clear()
 
                     try:
-                        transcript = _stt.transcribe(pcm_bytes)
+                        loop = asyncio.get_event_loop()
+                        # Run blocking CPU inference in a thread so the event loop
+                        # stays live for WebSocket PING/PONG during STT and TTS.
+                        transcript = await loop.run_in_executor(
+                            None, _stt.transcribe, pcm_bytes
+                        )
                         logger.info("Transcript: %r", transcript)
 
-                        # Reject empty transcripts and Whisper hallucinations that
-                        # contain only punctuation/whitespace (e.g. "...", ". . .")
-                        # on near-silent or very short audio frames.
                         _words = re.sub(r"[^\w]", "", transcript)
                         if not _words:
                             state = _State.IDLE
                             await _send_state(ws, state)
                             continue
 
-                        agent_text = await _call_forward(transcript)
+                        # Dispatch to the appropriate agent.
+                        if agent == "direct":
+                            # Fast path: multi-turn LLM proxy (no agentic tools).
+                            history.append({"role": "user", "content": transcript})
+                            agent_text = await _call_llm(history)
+                        else:
+                            # Proxied agent path: full AgentShroud pipeline via /forward.
+                            # Hermes and future OpenAI-compat agents return a synchronous
+                            # reply; async agents (OpenClaw) get an honest Telegram notice.
+                            agent_text = await _call_agent(transcript, agent)
+
                         logger.info("Agent reply: %r", agent_text)
+
+                        # Maintain multi-turn history only for the "direct" fast path.
+                        # Proxied agents (Hermes, etc.) manage their own conversation state.
+                        if agent == "direct":
+                            history.append({"role": "assistant", "content": agent_text})
+                            if len(history) > 1 + _MAX_HISTORY_TURNS * 2:
+                                history = history[:1] + history[-(  _MAX_HISTORY_TURNS * 2):]
 
                         state = _State.SPEAKING
                         await _send_state(ws, state)
 
-                        pcm_reply = _tts.synthesize(agent_text)
+                        pcm_reply = await loop.run_in_executor(
+                            None, _tts.synthesize, agent_text
+                        )
 
                         for i in range(0, max(len(pcm_reply), 1), _CHUNK_SIZE):
                             chunk = pcm_reply[i : i + _CHUNK_SIZE]
                             if chunk:
                                 await ws.send_bytes(chunk)
+                                await asyncio.sleep(0)  # yield between chunks
 
                         await ws.send_text("END")
                         state = _State.IDLE
@@ -216,6 +332,10 @@ async def voice_endpoint(ws: WebSocket) -> None:
 
                     except Exception as exc:
                         logger.error("Pipeline error: %s", exc, exc_info=True)
+                        # Roll back the user turn appended for the "direct" path only
+                        # (proxied agents don't mutate local history on the call path).
+                        if agent == "direct" and history and history[-1]["role"] == "user":
+                            history.pop()
                         try:
                             state = _State.IDLE
                             await _send_state(ws, state)
@@ -225,8 +345,6 @@ async def voice_endpoint(ws: WebSocket) -> None:
     except WebSocketDisconnect:
         logger.info("Disconnected: %s", remote)
     except RuntimeError as exc:
-        # Starlette raises RuntimeError("Cannot call 'receive' once a disconnect
-        # message has been received") on a dirty close — treat it as a normal disconnect.
         if "disconnect" in str(exc).lower():
             logger.info("Disconnected (dirty close): %s", remote)
         else:
