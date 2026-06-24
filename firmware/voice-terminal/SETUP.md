@@ -403,7 +403,7 @@ are written into `sdkconfig`.
 
 ---
 
-## 11. Current status
+## 11. Current status (v1.2.0)
 
 | Feature | Status | Notes |
 |---------|--------|-------|
@@ -412,13 +412,50 @@ are written into `sdkconfig`.
 | WiFi — roaming list + state machine | ✅ Done | Up to 2 SSIDs; retry + network-swap |
 | Display — LVGL 28pt status + IP | ✅ Done | Montserrat 28, 320×240, legible |
 | PSRAM — 16 MB octal | ✅ Done | 15424 KB available at runtime |
-| Tailscale on-device (MicroLink) | ⏳ Pending | Phase 5 |
-| Voice Gateway container on marvin | ⏳ Pending | Phase 5 |
-| STT (faster-whisper) | ⏳ Pending | Phase 5 |
-| TTS (Piper) | ⏳ Pending | Phase 5 |
-| Governed-path schema fix (§2.2) | ⏳ Pending | `gateway/proxy/router.py` |
-| Animated face reacting to states | ⏳ Pending | Phase 5 (LVGL state machine) |
-| "hey buddy" WakeNet model | ⏳ Pending | After Phase 5; push-to-talk in interim |
+| Tailscale Funnel transport | ✅ Done | `wss://marvin.tail240ea8.ts.net/voice` port 443; works on cellular |
+| Voice Gateway container on marvin | ✅ Done | FastAPI, port 8765; `docker --profile voice` |
+| STT (faster-whisper base.en) | ✅ Done | `/opt/whisper/base.en`; `run_in_executor` (non-blocking) |
+| TTS (Piper en_US-lessac-medium) | ✅ Done | 22050→16000 Hz resample; chunked streaming |
+| Agent routing via `POST /forward` | ✅ Done | `?agent=hermes/direct/openclaw`; full security pipeline |
+| Runtime agent toggle button | ✅ Done | BSP_BUTTON_MUTE cycles agents; label shown top-left |
+| Animated face reacting to states | ✅ Done | IDLE / LISTENING / THINKING / SPEAKING / DISCONNECTED |
+| Auto-follow-up listen window | ✅ Done | 8 s VAD timeout after TTS; tap-to-talk UX fix |
+| "Hi, ESP" WakeNet wake word | ✅ Done | WN9 model in `model` SPIFFS partition |
+| OpenClaw async notice | ✅ Done | Spoken Telegram-redirect; no fake reply |
+
+### Credentials file
+
+`wifi_credentials.h` is **gitignored and never committed**. It lives at
+`firmware/voice-terminal/main/wifi_credentials.h` and contains:
+
+```c
+#define CONFIG_VT_WIFI_SSID      "your-ssid"
+#define CONFIG_VT_WIFI_PASSWORD  "your-password"
+// Optional second network (leave empty to disable):
+#define CONFIG_VT_WIFI_SSID_2    ""
+#define CONFIG_VT_WIFI_PASSWORD_2 ""
+// Voice Gateway auth token (64-char hex, must match docker/secrets/voice_gateway_token.txt):
+#define CONFIG_VT_VG_WS_TOKEN    "your-64-char-token"
+```
+
+The token must match `docker/secrets/voice_gateway_token.txt` on marvin. Generate once with:
+```bash
+python3 -c "import secrets; print(secrets.token_hex(32))"
+```
+
+### Agent toggle — runtime button
+
+- **BSP_BUTTON_MUTE** (top-right physical button on the BOX-3) cycles the active agent.
+- The on-screen label (top-left, blue) shows the current agent name.
+- Cycling is safe to do at any time when not mid-utterance.
+- The WebSocket reconnects automatically with the new `?agent=<slug>` parameter.
+
+### Adding a future agent
+
+1. Add an entry to `agentshroud.yaml bots:` on marvin.
+2. Add a row to `VT_AGENTS[]` in `firmware/voice-terminal/main/app_main.c`.
+3. Rebuild firmware (`idf.py build`) and reflash.
+4. No voice-gateway code change needed — routing is data-driven.
 
 ---
 

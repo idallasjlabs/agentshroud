@@ -24,7 +24,8 @@ static lv_obj_t *s_eye_r    = NULL;  /* right eye white */
 static lv_obj_t *s_pupil_l  = NULL;
 static lv_obj_t *s_pupil_r  = NULL;
 static lv_obj_t *s_mouth    = NULL;  /* rounded-rect mouth */
-static lv_obj_t *s_status   = NULL;  /* small status label */
+static lv_obj_t *s_status   = NULL;  /* small status label (bottom) */
+static lv_obj_t *s_agent    = NULL;  /* agent name label (top-left) */
 static lv_obj_t *s_touch    = NULL;  /* full-screen transparent touch overlay */
 static lv_anim_t s_mouth_anim;
 
@@ -100,12 +101,21 @@ void ui_face_init(void)
     lv_obj_set_style_border_width(s_mouth, 0, LV_PART_MAIN);
     lv_obj_set_pos(s_mouth, FACE_CX - MOUTH_W / 2, MOUTH_Y);
 
-    /* Status text */
+    /* Status text (bottom-centre) */
     s_status = lv_label_create(scr);
     lv_obj_set_style_text_color(s_status, lv_color_hex(0x888888), LV_PART_MAIN);
     lv_obj_set_style_text_font(s_status, &lv_font_montserrat_20, LV_PART_MAIN);
     lv_obj_align(s_status, LV_ALIGN_BOTTOM_MID, 0, -10);
     lv_label_set_text(s_status, "Say 'Hi, ESP' or tap to talk");
+
+    /* Agent name label (top-left corner) — updated by ui_face_set_agent().
+     * Shows the currently active proxied agent so the user always knows who
+     * they are talking to.  Font is small so it doesn't crowd the face. */
+    s_agent = lv_label_create(scr);
+    lv_obj_set_style_text_color(s_agent, lv_color_hex(0x4fc3f7), LV_PART_MAIN);
+    lv_obj_set_style_text_font(s_agent, &lv_font_montserrat_14, LV_PART_MAIN);
+    lv_obj_set_pos(s_agent, 6, 6);
+    lv_label_set_text(s_agent, "");
 
     /* Touchscreen PTT overlay — full-screen transparent object on top of the
      * face widgets so any screen tap triggers PTT.  The physical button
@@ -181,4 +191,13 @@ void ui_face_set_state(ws_vg_state_t state)
     }
 
     bsp_display_unlock();
+}
+
+void ui_face_set_agent(const char *name)
+{
+    if (!s_agent || !name) return;
+    bsp_display_lock(0);
+    lv_label_set_text(s_agent, name);
+    bsp_display_unlock();
+    ESP_LOGI(TAG, "Agent label → %s", name);
 }

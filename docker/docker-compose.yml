@@ -439,6 +439,10 @@ services:
       VG_PORT: "8765"
       # WS auth: token the ESP32 must send as ?token= in the connection URL.
       VOICE_GW_AUTH_TOKEN_FILE: /run/secrets/voice_gateway_token
+      # Default agent for voice → proxied-agent routing.  Override per-connection via ?agent=.
+      # "hermes" = Hermes agentic assistant (synchronous OpenAI-compat reply via /forward).
+      # "direct" = legacy fast-path LLM proxy (no agentic tools, lower latency).
+      VOICE_DEFAULT_AGENT: "hermes"
     secrets:
       - gateway_password
       - voice_gateway_token

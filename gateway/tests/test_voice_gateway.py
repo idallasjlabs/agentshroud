@@ -522,3 +522,272 @@ def test_ws_accepts_when_auth_not_configured(monkeypatch):
         with client.websocket_connect("/voice") as ws:
             first = ws.receive_text()
             assert json.loads(first) == {"state": "idle"}
+
+
+# ── _call_agent unit tests ────────────────────────────────────────────────────
+
+
+def _forward_resp(agent_response: str, status: int = 201):
+    """Build a mock httpx response with a ForwardResponse-shape body."""
+    mock = MagicMock()
+    mock.status_code = status
+    mock.json = MagicMock(
+        return_value={
+            "id": "abc123",
+            "sanitized": False,
+            "redactions": [],
+            "redaction_count": 0,
+            "content_hash": "deadbeef",
+            "forwarded_to": "hermes",
+            "timestamp": "2026-06-24T00:00:00Z",
+            "agent_response": agent_response,
+        }
+    )
+    mock.raise_for_status = MagicMock()
+    return mock
+
+
+@pytest.mark.asyncio
+async def test_call_agent_returns_agent_response():
+    """_call_agent POSTs to /forward and returns agent_response when non-empty."""
+    from voice_gateway.server import _call_agent
+
+    with patch(
+        "httpx.AsyncClient.post",
+        new=AsyncMock(return_value=_forward_resp("Hello from Hermes!")),
+    ):
+        result = await _call_agent("what is the weather", "hermes")
+
+    assert result == "Hello from Hermes!"
+
+
+@pytest.mark.asyncio
+async def test_call_agent_async_agent_returns_telegram_notice():
+    """_call_agent returns an honest spoken notice for agents with empty agent_response."""
+    from voice_gateway.server import _call_agent
+
+    with patch(
+        "httpx.AsyncClient.post",
+        new=AsyncMock(return_value=_forward_resp("")),
+    ):
+        result = await _call_agent("do something", "openclaw")
+
+    assert "Telegram" in result
+    assert "openclaw" in result.lower() or "Openclaw" in result
+
+
+@pytest.mark.asyncio
+async def test_call_agent_null_agent_response_returns_telegram_notice():
+    """agent_response key absent in body → honest Telegram notice, no crash."""
+    from voice_gateway.server import _call_agent
+
+    mock = MagicMock()
+    mock.status_code = 201
+    mock.json = MagicMock(
+        return_value={
+            "id": "x",
+            "sanitized": False,
+            "redactions": [],
+            "redaction_count": 0,
+            "content_hash": "ff",
+            "forwarded_to": "openclaw",
+            "timestamp": "2026-06-24T00:00:00Z",
+            # agent_response key intentionally absent
+        }
+    )
+    mock.raise_for_status = MagicMock()
+
+    with patch("httpx.AsyncClient.post", new=AsyncMock(return_value=mock)):
+        result = await _call_agent("hello", "openclaw")
+
+    assert "Telegram" in result
+
+
+@pytest.mark.asyncio
+async def test_call_agent_posts_to_forward_endpoint(monkeypatch):
+    """_call_agent must POST to /forward, not /v1/chat/completions."""
+    import voice_gateway.server as srv
+
+    monkeypatch.setattr(srv, "_GATEWAY_URL", "http://gateway:8080")
+    monkeypatch.setattr(srv, "_GATEWAY_TOKEN", "test-bearer")
+    monkeypatch.setattr(srv, "_OWNER_USER_ID", "9999")
+
+    captured: dict = {}
+
+    async def _capture(url, json=None, headers=None, **kw):
+        captured["url"] = url
+        captured["body"] = json or {}
+        captured["headers"] = headers or {}
+        return _forward_resp("ok")
+
+    with patch("httpx.AsyncClient.post", new=AsyncMock(side_effect=_capture)):
+        await srv._call_agent("test query", "hermes")
+
+    assert captured["url"].endswith("/forward"), f"Expected /forward, got {captured['url']!r}"
+    assert captured["body"].get("route_to") == "hermes"
+    assert captured["body"].get("source") == "api"
+    assert captured["body"].get("content") == "test query"
+    assert captured["headers"].get("Authorization") == "Bearer test-bearer"
+    assert captured["headers"].get("X-AgentShroud-User-Id") == "9999"
+
+
+@pytest.mark.asyncio
+async def test_call_agent_uses_120s_timeout(monkeypatch):
+    """_call_agent uses 120 s timeout (Hermes agentic loop is slower than raw LLM)."""
+    import voice_gateway.server as srv
+
+    captured_timeout: dict = {}
+
+    class _FakeClient:
+        def __init__(self, *args, **kwargs):
+            captured_timeout["timeout"] = kwargs.get("timeout")
+
+        async def __aenter__(self):
+            return self
+
+        async def __aexit__(self, *a):
+            pass
+
+        async def post(self, url, **kw):
+            return _forward_resp("ok")
+
+    monkeypatch.setattr(srv.httpx, "AsyncClient", _FakeClient)
+
+    await srv._call_agent("hi", "hermes")
+
+    assert "timeout" in captured_timeout, "_call_agent must pass a timeout to AsyncClient"
+    assert float(str(captured_timeout["timeout"])) == 120.0, (
+        f"Expected timeout=120.0 for agentic path, got {captured_timeout['timeout']}"
+    )
+
+
+# ── Agent dispatch routing tests ──────────────────────────────────────────────
+
+
+@pytest.mark.asyncio
+async def test_ws_direct_agent_calls_call_llm(monkeypatch):
+    """?agent=direct must route to _call_llm (fast path), not /forward."""
+    import voice_gateway.server as srv
+    import voice_gateway.stt as stt_mod
+    import voice_gateway.tts as tts_mod
+
+    monkeypatch.setattr(stt_mod, "transcribe", lambda b: "hello")
+    monkeypatch.setattr(tts_mod, "synthesize", lambda t: _pcm_bytes(20))
+    monkeypatch.setattr(srv, "_VG_AUTH_TOKEN", "")
+    monkeypatch.setattr(srv, "_DEFAULT_AGENT", "direct")
+
+    llm_called = []
+    agent_called = []
+
+    original_call_llm = srv._call_llm
+    original_call_agent = srv._call_agent if hasattr(srv, "_call_agent") else None
+
+    async def _mock_llm(history):
+        llm_called.append(True)
+        return "fast reply"
+
+    async def _mock_agent(transcript, agent):
+        agent_called.append(agent)
+        return "agent reply"
+
+    monkeypatch.setattr(srv, "_call_llm", _mock_llm)
+    if original_call_agent:
+        monkeypatch.setattr(srv, "_call_agent", _mock_agent)
+
+    with TestClient(app) as client:
+        with client.websocket_connect("/voice?agent=direct") as ws:
+            ws.receive_text()  # idle
+            ws.send_text("LISTEN")
+            ws.receive_text()  # listening
+            ws.send_bytes(_pcm_bytes())
+            ws.send_text("END")
+            # drain responses
+            for _ in range(15):
+                try:
+                    msg = ws.receive()
+                    if "text" in msg:
+                        try:
+                            d = json.loads(msg["text"])
+                            if d.get("state") == "idle":
+                                break
+                        except Exception:
+                            pass
+                except Exception:
+                    break
+
+    assert len(llm_called) >= 1, "direct agent must call _call_llm"
+    assert len(agent_called) == 0, "direct agent must NOT call _call_agent"
+
+
+@pytest.mark.asyncio
+async def test_ws_hermes_agent_calls_call_agent(monkeypatch):
+    """?agent=hermes must route to _call_agent (gateway /forward), not _call_llm."""
+    import voice_gateway.server as srv
+    import voice_gateway.stt as stt_mod
+    import voice_gateway.tts as tts_mod
+
+    monkeypatch.setattr(stt_mod, "transcribe", lambda b: "hello hermes")
+    monkeypatch.setattr(tts_mod, "synthesize", lambda t: _pcm_bytes(20))
+    monkeypatch.setattr(srv, "_VG_AUTH_TOKEN", "")
+
+    llm_called = []
+    agent_called = []
+
+    async def _mock_llm(history):
+        llm_called.append(True)
+        return "fast reply"
+
+    async def _mock_agent(transcript, agent):
+        agent_called.append(agent)
+        return "Hermes says hi"
+
+    monkeypatch.setattr(srv, "_call_llm", _mock_llm)
+    if hasattr(srv, "_call_agent"):
+        monkeypatch.setattr(srv, "_call_agent", _mock_agent)
+
+    with TestClient(app) as client:
+        with client.websocket_connect("/voice?agent=hermes") as ws:
+            ws.receive_text()  # idle
+            ws.send_text("LISTEN")
+            ws.receive_text()  # listening
+            ws.send_bytes(_pcm_bytes())
+            ws.send_text("END")
+            for _ in range(15):
+                try:
+                    msg = ws.receive()
+                    if "text" in msg:
+                        try:
+                            d = json.loads(msg["text"])
+                            if d.get("state") == "idle":
+                                break
+                        except Exception:
+                            pass
+                except Exception:
+                    break
+
+    assert len(agent_called) >= 1, "hermes agent must call _call_agent"
+    assert "hermes" in agent_called, f"route_to must be 'hermes', got {agent_called}"
+    assert len(llm_called) == 0, "hermes agent must NOT call _call_llm"
+
+
+def test_ws_default_agent_is_hermes(monkeypatch):
+    """When ?agent= is absent the default agent must be 'hermes', not 'direct'."""
+    import voice_gateway.server as srv
+
+    assert srv._DEFAULT_AGENT == "hermes", (
+        f"Expected _DEFAULT_AGENT='hermes', got {srv._DEFAULT_AGENT!r}"
+    )
+
+
+def test_ws_agent_query_param_absent_uses_default(monkeypatch):
+    """No ?agent= param → _DEFAULT_AGENT is used for routing."""
+    import voice_gateway.server as srv
+
+    # We just verify the server connects and sends idle (doesn't crash with unknown agent).
+    monkeypatch.setattr(srv, "_VG_AUTH_TOKEN", "")
+    monkeypatch.setattr(srv, "_DEFAULT_AGENT", "hermes")
+
+    with TestClient(app) as client:
+        with client.websocket_connect("/voice") as ws:
+            first = ws.receive_text()
+            assert json.loads(first) == {"state": "idle"}

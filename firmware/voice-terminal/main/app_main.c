@@ -18,6 +18,42 @@
 
 static const char *TAG = "vt";
 
+/* ── Agent table ──────────────────────────────────────────────────────────── *
+ * Defines the ordered list of agents the user can cycle through with the
+ * agent-toggle button (BSP_BUTTON_MUTE).  The slug is passed as ?agent=<slug>
+ * in the WebSocket URL; the gateway resolves it via the agentshroud.yaml bots:
+ * registry.  Index 0 is the default (matches VOICE_DEFAULT_AGENT on the server).
+ *
+ * To add a future agent: add an entry here, update agentshroud.yaml bots:,
+ * and reflash the firmware.  No server code change needed.
+ */
+typedef struct {
+    const char *slug;    /* AgentShroud bot key (agentshroud.yaml bots: section) */
+    const char *display; /* Human-readable name shown on screen */
+} vt_agent_t;
+
+static const vt_agent_t VT_AGENTS[] = {
+    { "hermes",  "Hermes"   },   /* Hermes agentic assistant — synchronous OpenAI-compat reply */
+    { "direct",  "Fast LLM" },   /* Low-latency gateway LLM proxy — no agentic tools          */
+    { "openclaw","OpenClaw" },   /* OpenClaw — async Telegram bot; replies on Telegram         */
+};
+#define VT_AGENT_COUNT ((int)(sizeof(VT_AGENTS) / sizeof(VT_AGENTS[0])))
+
+/* Called by wakeword.c via the forward declaration. */
+int vt_agent_count(void) { return VT_AGENT_COUNT; }
+
+/* Build the full WebSocket URL with ?token= and &agent= query params.
+ * buf must be at least 512 bytes.  Returns the length written (excl. NUL). */
+static int _build_ws_url(char *buf, size_t bufsz, int agent_idx)
+{
+    const char *slug = (agent_idx >= 0 && agent_idx < VT_AGENT_COUNT)
+                       ? VT_AGENTS[agent_idx].slug
+                       : VT_AGENTS[0].slug;
+    return snprintf(buf, bufsz,
+                    "%s?token=%s&agent=%s",
+                    CONFIG_VT_VG_WS_URL, CONFIG_VT_VG_WS_TOKEN, slug);
+}
+
 /* ── WiFi ─────────────────────────────────────────────────────────────────── */
 
 #define WIFI_CONNECTED_BIT BIT0
@@ -207,14 +243,17 @@ static void _on_tts_pcm(const uint8_t *pcm, size_t len, void *ctx)
 
 /* ── Voice task ───────────────────────────────────────────────────────────── */
 
+/* Shared WS handle — written by app_main, read/written by voice_task on switch. */
+static volatile ws_client_handle_t s_ws = NULL;
+
 typedef struct {
-    ws_client_handle_t ws;
+    /* intentionally empty — voice_task reads s_ws and wakeword state directly */
+    int unused;
 } voice_task_args_t;
 
 static void voice_task(void *arg)
 {
-    voice_task_args_t *a = (voice_task_args_t *)arg;
-    ws_client_handle_t ws = a->ws;
+    (void)arg;
 
     /* Frame size is determined by the AFE at init time — must match afe->get_feed_chunksize(). */
     const int frame_bytes = wakeword_feed_bytes();
@@ -229,6 +268,43 @@ static void voice_task(void *arg)
     ESP_LOGI(TAG, "Voice task running (frame=%d bytes)", frame_bytes);
 
     while (1) {
+        /* ── Agent switch ── */
+        if (!streaming && wakeword_agent_switch_pending()) {
+            int idx = wakeword_agent_index();
+            ESP_LOGI(TAG, "Agent switch → [%d] %s (%s)",
+                     idx, VT_AGENTS[idx].display, VT_AGENTS[idx].slug);
+
+            ws_client_handle_t old_ws = s_ws;
+            char url[512];
+            _build_ws_url(url, sizeof(url), idx);
+
+            /* Reconnect with the new agent slug in the query string. */
+            ws_client_handle_t new_ws = NULL;
+            int attempts = 0;
+            while (!new_ws && attempts < 5) {
+                new_ws = ws_client_create(url, _on_vg_state, _on_tts_pcm, NULL);
+                if (!new_ws) {
+                    ESP_LOGW(TAG, "Agent switch WS connect failed (attempt %d/5)", attempts + 1);
+                    vTaskDelay(pdMS_TO_TICKS(3000));
+                }
+                attempts++;
+            }
+
+            if (new_ws) {
+                s_ws = new_ws;
+                if (old_ws) ws_client_destroy(old_ws);
+                wakeword_agent_switch_ack();
+                /* Update the on-screen agent label */
+                ui_face_set_agent(VT_AGENTS[idx].display);
+                ESP_LOGI(TAG, "Agent switch complete → %s", VT_AGENTS[idx].display);
+            } else {
+                ESP_LOGE(TAG, "Agent switch failed — keeping previous connection");
+                wakeword_agent_switch_ack();   /* clear pending to avoid retry storm */
+            }
+        }
+
+        ws_client_handle_t ws = s_ws;  /* local copy; avoids torn reads */
+
         /* Capture one AFE-sized mic frame */
         size_t got = audio_capture_frame(frame_buf, (size_t)frame_bytes);
         if (got == 0) {
@@ -324,27 +400,31 @@ void app_main(void)
      */
     ui_update(UI_READY, NULL);
 
-    ws_client_handle_t ws = NULL;
-    while (!ws) {
-        ws = ws_client_create(
-            /* Append ?token= so the server can authenticate the device.
-             * CONFIG_VT_VG_WS_TOKEN is defined in wifi_credentials.h (gitignored). */
-            CONFIG_VT_VG_WS_URL "?token=" CONFIG_VT_VG_WS_TOKEN,
-            _on_vg_state,
-            _on_tts_pcm,
-            NULL
-        );
-        if (!ws) {
+    /* Build the initial WS URL with the default agent (index 0 = Hermes). */
+    char ws_url[512];
+    _build_ws_url(ws_url, sizeof(ws_url), 0);
+    ESP_LOGI(TAG, "Connecting to voice gateway: %.*s…",
+             /* truncate to avoid logging the full token */
+             (int)(strstr(ws_url, "?token=") ? strstr(ws_url, "?token=") - ws_url + 7 : 80),
+             ws_url);
+
+    while (!s_ws) {
+        s_ws = ws_client_create(ws_url, _on_vg_state, _on_tts_pcm, NULL);
+        if (!s_ws) {
             ESP_LOGW(TAG, "WebSocket connection failed — retrying in 5 s");
             ui_face_set_state(WS_VG_STATE_DISCONNECTED);
             vTaskDelay(pdMS_TO_TICKS(5000));
         }
     }
     ui_face_set_state(WS_VG_STATE_IDLE);
-    ESP_LOGI(TAG, "Ready. Voice terminal active.");
+
+    /* Show the active agent name immediately after connecting.
+     * ui_face_set_agent() acquires the display lock internally. */
+    ui_face_set_agent(VT_AGENTS[0].display);
+
+    ESP_LOGI(TAG, "Ready. Voice terminal active → agent: %s", VT_AGENTS[0].display);
 
     static voice_task_args_t voice_args;
-    voice_args.ws = ws;
     xTaskCreatePinnedToCore(voice_task, "voice", 8192, &voice_args,
                             5, NULL, 1);  /* pin to core 1, away from WiFi */
 

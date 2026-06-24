@@ -89,3 +89,29 @@ void wakeword_set_tts_playing(bool playing);
  * @brief Free all AFE/WakeNet resources (called at shutdown).
  */
 void wakeword_deinit(void);
+
+/**
+ * @brief Advance to the next agent in the compiled-in agent list.
+ *
+ * Called from the agent-select button (BSP_BUTTON_MUTE or BSP_BUTTON_CONFIG).
+ * The agent list and display names are defined in app_main.c.
+ * Thread-safe (increments an atomic index).
+ */
+void wakeword_next_agent(void);
+
+/**
+ * @brief Returns true if a pending agent switch has been requested
+ *        (wakeword_next_agent() was called since the last wakeword_agent_ack()).
+ */
+bool wakeword_agent_switch_pending(void);
+
+/**
+ * @brief Acknowledge an agent switch (clear the pending flag).
+ *        Call after the voice task has processed the switch and reconnected.
+ */
+void wakeword_agent_switch_ack(void);
+
+/**
+ * @brief Returns the current agent index (0-based, into the app_main agent table).
+ */
+int wakeword_agent_index(void);

@@ -24,3 +24,14 @@ void ui_face_init(void);
  * Safe to call from any task; acquires the display lock internally.
  */
 void ui_face_set_state(ws_vg_state_t state);
+
+/**
+ * @brief Update the agent name label shown in the top-left corner of the face.
+ *
+ * @param name  Display name of the active agent (e.g. "Hermes", "Fast LLM").
+ *              Must be a null-terminated string that remains valid until the
+ *              next call (LVGL copies the text internally via lv_label_set_text).
+ *
+ * Safe to call from any task; acquires the display lock internally.
+ */
+void ui_face_set_agent(const char *name);

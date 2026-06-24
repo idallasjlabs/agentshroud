@@ -250,6 +250,7 @@
       <li><a href="#layers">Architecture</a></li>
       <li><a href="#openclaw">OpenClaw</a></li>
       <li><a href="#hermes">Hermes</a></li>
+      <li><a href="#voice">Voice Terminal</a></li>
       <li><a href="#cves">CVEs</a></li>
       <li><a href="#cves-hermes">Hermes CVEs</a></li>
       <li><a href="#quickstart">Quickstart</a></li>
@@ -261,7 +262,7 @@
 <!-- ── Hero ────────────────────────────────────────────────── -->
 <section class="hero">
   <div class="container">
-    <div class="version-badge">v1.1.1 "Hermes" — Now Available</div>
+    <div class="version-badge">v1.2.0 "Voice" — Now Available</div>
     <h1>Enterprise Governance for<br><em>Autonomous AI Agents</em></h1>
     <p class="hero-sub">
       AgentShroud sits transparently between your AI agents and every system they touch.
@@ -489,6 +490,47 @@ curl http://localhost:8080/status
 curl http://localhost:8642/health
 
 <span class="cm"># Full setup guide: docs/setup/HERMES_SETUP.md</span></pre>
+    </div>
+  </div>
+</section>
+
+<!-- ── Voice Terminal ────────────────────────────────────────── -->
+<section id="voice">
+  <div class="container">
+    <h2>Voice Terminal</h2>
+    <p class="section-sub">The ESP32-S3-BOX-3 is an optional hardware control surface that lets you interact with any AgentShroud-proxied agent by voice — say "Hi, ESP" or tap the screen, speak naturally, and hear the agent's reply through the built-in speaker. All audio routes through the full 76-module security pipeline: PII redaction, prompt-guard, audit hash-chain, egress policy.</p>
+    <div class="feature-grid">
+      <div class="feature-card">
+        <div class="feature-icon">🎤</div>
+        <h3>Wake Word + Tap-to-Talk</h3>
+        <p>Say "Hi, ESP" or tap anywhere on the touchscreen. Short tap → VAD timeout (8 s silence ends utterance). Long press → ends on release.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">🔄</div>
+        <h3>Runtime Agent Toggle</h3>
+        <p>Press the MUTE button to cycle between Hermes (agentic, synchronous reply), Fast LLM (low-latency Claude Haiku proxy), and OpenClaw (async — replies on Telegram).</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">🔒</div>
+        <h3>Full Security Pipeline</h3>
+        <p>Utterances route through <code>POST /forward?route_to=&lt;agent&gt;</code> — the same AgentShroud pipeline used by all other control surfaces. Token-authenticated WebSocket over Tailscale Funnel (TLS 443).</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">📡</div>
+        <h3>Works Anywhere</h3>
+        <p>Tailscale Funnel provides a public TLS endpoint on marvin. The device works on home WiFi, cellular hotspot, or any internet connection — no VPN client on the ESP required.</p>
+      </div>
+    </div>
+    <div class="code-block"><pre>
+<span class="cm"># Start the voice gateway</span>
+docker-compose -f docker/docker-compose.yml -p agentshroud --profile voice up -d
+
+<span class="cm"># Flash the firmware (ESP32-S3-BOX-3 on USB)</span>
+cd firmware/voice-terminal
+idf.py -p /dev/cu.usbmodem* flash
+
+<span class="cm"># Full setup guide:</span>
+<a href="integrations/voice-terminal-esp32-s3.md">docs/integrations/voice-terminal-esp32-s3.md</a></pre>
     </div>
   </div>
 </section>

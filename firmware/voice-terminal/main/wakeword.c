@@ -37,6 +37,12 @@ static volatile bool s_tts_playing = false;
 #define VAD_TIMEOUT_MS 8000
 static TickType_t s_trigger_tick = 0;
 
+/* ── Agent-toggle state ────────────────────────────────────────────────────── */
+/* Agent index cycles through the list in app_main.c on each button press.
+ * s_agent_switch_pending signals voice_task to reconnect with the new agent. */
+static volatile int  s_agent_index          = 0;
+static volatile bool s_agent_switch_pending = false;
+
 /* ── Physical button PTT (BSP_BUTTON_MAIN — top button on BOX-3) ─────────── */
 static button_handle_t s_bsp_buttons[BSP_BUTTON_NUM];
 static int             s_bsp_btn_cnt = 0;
@@ -75,6 +81,24 @@ static void _ptt_end(void)
 static void _btn_pressed(void *arg, void *data)  { _ptt_start(); }
 static void _btn_released(void *arg, void *data) { _ptt_end(); }
 
+/* Agent-toggle button: advance to the next agent on press.
+ * Declared extern here; the table is defined in app_main.c. */
+extern int  vt_agent_count(void);   /* returns the length of the agent table */
+
+static void _agent_btn_pressed(void *arg, void *data)
+{
+    int count = vt_agent_count();
+    if (count < 1) return;
+    /* Atomic-ish under FreeRTOS single-core critical section (portENTER_CRITICAL
+     * is too heavy in a callback; use __atomic or accept the race on a single
+     * assignment — either s_agent_index update or the switch flag is acceptable
+     * to miss by one; the physical button press repeats easily). */
+    int next = ((int)s_agent_index + 1) % count;
+    s_agent_index = next;
+    s_agent_switch_pending = true;
+    ESP_LOGI(TAG, "Agent toggle → index %d", next);
+}
+
 /* ── AFE / WakeNet ─────────────────────────────────────────────────────────── */
 #if HAVE_ESP_SR
 static const esp_afe_sr_iface_t *s_afe_iface = NULL;  /* vtable */
@@ -107,6 +131,23 @@ esp_err_t wakeword_init(const char *model_partition)
     iot_button_register_cb(main_btn, BUTTON_PRESS_DOWN, _btn_pressed, NULL);
     iot_button_register_cb(main_btn, BUTTON_PRESS_UP,   _btn_released, NULL);
     ESP_LOGI(TAG, "Physical button PTT registered (BSP_BUTTON_MAIN)");
+
+    /* Agent-toggle button — BSP_BUTTON_MUTE (GPIO1) on the BOX-3.
+     * The button is created by bsp_iot_button_create() above; we only need to
+     * register our callback.  If the handle is NULL (board variant without the
+     * button), skip silently — agent selection works only via ?agent= URL param. */
+    if (s_bsp_btn_cnt > BSP_BUTTON_MUTE) {
+        button_handle_t mute_btn = s_bsp_buttons[BSP_BUTTON_MUTE];
+        if (mute_btn) {
+            iot_button_register_cb(mute_btn, BUTTON_PRESS_DOWN, _agent_btn_pressed, NULL);
+            ESP_LOGI(TAG, "Agent-toggle button registered (BSP_BUTTON_MUTE)");
+        } else {
+            ESP_LOGW(TAG, "BSP_BUTTON_MUTE handle NULL — agent toggle via button disabled");
+        }
+    } else {
+        ESP_LOGW(TAG, "BSP_BUTTON_MUTE index %d >= bsp_btn_cnt %d — skipped",
+                 BSP_BUTTON_MUTE, s_bsp_btn_cnt);
+    }
 
 #if HAVE_ESP_SR
     if (!model_partition) {
@@ -261,6 +302,32 @@ void wakeword_set_tts_playing(bool playing)
             s_ended     = false;
         }
     }
+}
+
+/* ── Agent-toggle public API ─────────────────────────────────────────────── */
+
+void wakeword_next_agent(void)
+{
+    int count = vt_agent_count();
+    if (count < 1) return;
+    s_agent_index = ((int)s_agent_index + 1) % count;
+    s_agent_switch_pending = true;
+    ESP_LOGI(TAG, "wakeword_next_agent() → index %d", (int)s_agent_index);
+}
+
+bool wakeword_agent_switch_pending(void)
+{
+    return s_agent_switch_pending;
+}
+
+void wakeword_agent_switch_ack(void)
+{
+    s_agent_switch_pending = false;
+}
+
+int wakeword_agent_index(void)
+{
+    return (int)s_agent_index;
 }
 
 void wakeword_deinit(void)

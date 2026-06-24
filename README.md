@@ -44,7 +44,19 @@ AgentShroud is simultaneously a **production-grade tool**, a **learning laborato
 
 ---
 
-## What's New — v1.1.1 "Hermes" (June 2026)
+## What's New — v1.2.0 "Voice" (June 2026)
+
+v1.2.0 adds the **ESP32-S3 Voice Terminal** — an optional hardware control surface for AgentShroud. Speak to your agents from anywhere via a pocket-sized device; all audio routes through the same 76-module security pipeline.
+
+- **Voice Terminal** (`firmware/voice-terminal/`): ESP32-S3-BOX-3 firmware — WakeNet "Hi, ESP" wake word + touchscreen tap-to-talk. Whisper STT → AgentShroud gateway LLM → Piper TTS, streamed back to the device speaker.
+- **Voice Gateway** (`voice_gateway/`): FastAPI WebSocket service (`/voice`), token-authenticated. Async STT/TTS keeps the event loop live for WS keepalives. Server-side heartbeat prevents cellular idle drops.
+- **Tap-to-talk UX**: short tap → 8-second listen window (VAD auto-ends); after every response → automatic follow-up listen window; 8s silence → returns to wake-word mode.
+- **Portable**: works from home WiFi, phone hotspot, or office via Tailscale Funnel (`wss://marvin.tail240ea8.ts.net/voice`). No VPN required on the device.
+- **Hermes operational fixes**: email renderer baked into Hermes image (eliminates `\1` artifacts); HTTP proxy forward-DNS fallback for correct Hermes egress attribution.
+
+→ See [docs/integrations/voice-terminal-esp32-s3.md](docs/integrations/voice-terminal-esp32-s3.md) for hardware setup and flash instructions.
+
+### v1.1.x "Hermes" (May–June 2026)
 
 The v1.1.x line introduces **multi-bot governance**: AgentShroud now secures two autonomous AI agents simultaneously — **OpenClaw** (Node.js, the original) and **Hermes** (Python, `nousresearch/hermes-agent`) — through the same 76-module security pipeline.
 
@@ -68,6 +80,7 @@ The original release wired all **76 security modules** into the live pipeline an
 ┌─────────────────────────────────────────────────────────────┐
 │                      YOUR DEVICES                           │
 │  Telegram · iOS Shortcuts · Browser Extension · SSH · API  │
+│                    Voice Terminal (ESP32)                   │
 └──────────────────────────┬──────────────────────────────────┘
                            │ HTTPS (Tailscale)
                            ▼
@@ -277,6 +290,31 @@ Secrets are extracted into a temp directory for the duration of `docker compose 
 scripts/asb status   # container health
 scripts/asb logs     # tail all logs
 ```
+
+### 5. (Optional) Voice Terminal — ESP32-S3-BOX-3
+
+Start the voice gateway profile, then flash the ESP firmware:
+
+```bash
+# Start voice gateway alongside the core stack
+docker-compose -f docker/docker-compose.yml -p agentshroud --profile voice up -d
+
+# Flash the ESP32 (from the firmware directory, device on USB):
+cd firmware/voice-terminal
+conda activate gsdl && source ~/esp/esp-idf/export.sh
+idf.py -p /dev/cu.usbmodem* flash monitor
+```
+
+Once flashed, say **"Hi, ESP"** (or tap the screen) and speak to Hermes. Press the
+**MUTE button** on the BOX-3 to cycle between agents at runtime:
+
+| ?agent= | Behaviour |
+|---------|-----------|
+| `hermes` (default) | Routes to Hermes via `POST /forward` — full agentic reply |
+| `direct` | Low-latency gateway LLM proxy (no agentic tools) |
+| `openclaw` | Dispatches to OpenClaw; replies arrive on Telegram |
+
+See [`docs/integrations/voice-terminal-esp32-s3.md`](docs/integrations/voice-terminal-esp32-s3.md) for full setup.
 
 ### `asb` reference
 

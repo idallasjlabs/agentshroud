@@ -49,9 +49,14 @@ _CHUNK_SIZE = 4096  # bytes per TTS chunk
 
 _OWNER_USER_ID = os.environ.get("GATEWAY_OWNER_USER_ID", "")
 
-# Model for voice — bypasses Hermes agentic overhead, calls gateway's OpenAI-compat
-# proxy directly. Gateway substitutes its own Anthropic key; no key needed here.
+# Model for voice — used only by the "direct" fast-path (_call_llm).
+# Other agents (hermes, openclaw, …) route through /forward → gateway pipeline.
 _VOICE_MODEL = os.environ.get("VOICE_MODEL", "claude-haiku-4-5-20251001")
+
+# Default proxied agent to route voice to.  Override per-connection via ?agent= query param.
+# "direct" = fast path (_call_llm, bypasses /forward pipeline, backward-compat).
+# Any other value = gateway /forward with route_to=<value>.
+_DEFAULT_AGENT = os.environ.get("VOICE_DEFAULT_AGENT", "hermes")
 
 # Conversation history: keep at most this many user+assistant turn pairs.
 # Older turns are dropped (FIFO) to bound token usage and maintain context.
@@ -137,9 +142,10 @@ def _voice_system_message() -> Dict[str, str]:
 async def _call_llm(history: List[Dict[str, str]]) -> str:
     """POST conversation history to the gateway's OpenAI-compat endpoint.
 
-    Bypasses Hermes's full agentic loop for lower latency. The gateway's LLM
-    proxy substitutes its own Anthropic key, so no API key is needed here.
-    Still routes through AgentShroud's security pipeline (PII, audit, egress).
+    Fast path — bypasses the full agentic loop for lower latency. Used only
+    when ?agent=direct (or _DEFAULT_AGENT=="direct"). Gateway substitutes its
+    own Anthropic key, so no API key is needed here. Still routes through
+    AgentShroud's security pipeline (PII, audit, egress).
     """
     async with httpx.AsyncClient(timeout=30.0, trust_env=False) as client:
         resp = await client.post(
@@ -164,6 +170,51 @@ async def _call_llm(history: List[Dict[str, str]]) -> str:
         raise RuntimeError(f"Unexpected LLM response shape: {exc}") from exc
 
 
+async def _call_agent(transcript: str, agent: str) -> str:
+    """Route a voice utterance to a proxied agent via the AgentShroud gateway /forward endpoint.
+
+    Unlike _call_llm, this path runs the full AgentShroud security pipeline:
+    PII redaction, prompt-guard scoring, audit hash-chain, egress policy.
+
+    Hermes (and any future agent with an OpenAI-compat chat_path) returns a
+    synchronous agent_response in the ForwardResponse body.  Async agents like
+    OpenClaw have no synchronous body reply; in that case we return an honest
+    spoken notice so the user knows their message was received.
+
+    Args:
+        transcript: STT-produced utterance text (already PII-clean at voice level).
+        agent:      AgentShroud bot slug (e.g. "hermes", "openclaw").  Must match
+                    a key in the agentshroud.yaml bots: section.
+
+    Returns:
+        Spoken reply string (suitable for TTS synthesis).
+    """
+    async with httpx.AsyncClient(timeout=120.0, trust_env=False) as client:
+        resp = await client.post(
+            f"{_GATEWAY_URL}/forward",
+            json={
+                "content": transcript,
+                "source": "api",
+                "route_to": agent,
+                "user_id": _OWNER_USER_ID or "voice",
+            },
+            headers={
+                "Authorization": f"Bearer {_GATEWAY_TOKEN}",
+                "X-AgentShroud-User-Id": _OWNER_USER_ID or "voice",
+            },
+        )
+    resp.raise_for_status()
+    data = resp.json()
+    agent_reply = data.get("agent_response") or ""
+    if agent_reply.strip():
+        logger.info("Agent %r reply: %r", agent, agent_reply[:120])
+        return agent_reply.strip()
+    # Async agents (OpenClaw) route the message but reply later over Telegram.
+    notice = f"{agent.capitalize()} received your message and will reply on Telegram."
+    logger.info("Agent %r returned no synchronous reply — notifying user via TTS", agent)
+    return notice
+
+
 @app.websocket("/voice")
 async def voice_endpoint(ws: WebSocket) -> None:
     await ws.accept()
@@ -173,13 +224,18 @@ async def voice_endpoint(ws: WebSocket) -> None:
         await ws.close(code=1008)
         return
 
+    # Agent routing: ?agent=<slug> selects the target proxied agent.
+    # "direct" = fast LLM path (legacy, lower latency, no agentic tools).
+    # Any other value = gateway POST /forward with route_to=<slug>.
+    agent = ws.query_params.get("agent", _DEFAULT_AGENT)
     remote = ws.client
-    logger.info("Connection from %s (authenticated)", remote)
+    logger.info("Connection from %s (authenticated) → agent=%r", remote, agent)
 
     state = _State.IDLE
     await _send_state(ws, state)
 
-    # Per-session conversation history.
+    # Per-session conversation history — only used by the "direct" fast path.
+    # Agents like Hermes maintain their own server-side memory keyed by user_id.
     # Index 0 is always the system message (refreshed at each utterance for time accuracy).
     # User+assistant turns are appended and trimmed to _MAX_HISTORY_TURNS pairs.
     history: List[Dict[str, str]] = [_voice_system_message()]
@@ -225,16 +281,25 @@ async def voice_endpoint(ws: WebSocket) -> None:
                             await _send_state(ws, state)
                             continue
 
-                        # Add user turn to history before calling LLM.
-                        history.append({"role": "user", "content": transcript})
+                        # Dispatch to the appropriate agent.
+                        if agent == "direct":
+                            # Fast path: multi-turn LLM proxy (no agentic tools).
+                            history.append({"role": "user", "content": transcript})
+                            agent_text = await _call_llm(history)
+                        else:
+                            # Proxied agent path: full AgentShroud pipeline via /forward.
+                            # Hermes and future OpenAI-compat agents return a synchronous
+                            # reply; async agents (OpenClaw) get an honest Telegram notice.
+                            agent_text = await _call_agent(transcript, agent)
 
-                        agent_text = await _call_llm(history)
                         logger.info("Agent reply: %r", agent_text)
 
-                        # Append assistant turn and trim old turns.
-                        history.append({"role": "assistant", "content": agent_text})
-                        if len(history) > 1 + _MAX_HISTORY_TURNS * 2:
-                            history = history[:1] + history[-(  _MAX_HISTORY_TURNS * 2):]
+                        # Maintain multi-turn history only for the "direct" fast path.
+                        # Proxied agents (Hermes, etc.) manage their own conversation state.
+                        if agent == "direct":
+                            history.append({"role": "assistant", "content": agent_text})
+                            if len(history) > 1 + _MAX_HISTORY_TURNS * 2:
+                                history = history[:1] + history[-(  _MAX_HISTORY_TURNS * 2):]
 
                         state = _State.SPEAKING
                         await _send_state(ws, state)
@@ -255,8 +320,9 @@ async def voice_endpoint(ws: WebSocket) -> None:
 
                     except Exception as exc:
                         logger.error("Pipeline error: %s", exc, exc_info=True)
-                        # Roll back the user turn we already appended (no assistant reply).
-                        if history and history[-1]["role"] == "user":
+                        # Roll back the user turn appended for the "direct" path only
+                        # (proxied agents don't mutate local history on the call path).
+                        if agent == "direct" and history and history[-1]["role"] == "user":
                             history.pop()
                         try:
                             state = _State.IDLE
