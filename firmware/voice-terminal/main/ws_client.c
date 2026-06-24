@@ -125,15 +125,14 @@ ws_client_handle_t ws_client_create(const char *url,
         .network_timeout_ms   = 15000,
         /* Buffer large enough for one TTS chunk (4 KB PCM). */
         .buffer_size          = 8192,
-        /* Send a WebSocket PING every 10 s during idle.  Starlette/uvicorn
-         * auto-replies PONG, producing bidirectional traffic that keeps the
-         * Tailscale Funnel relay and any intermediate NAT alive (idle timeout
-         * ~60-90 s otherwise).  pingpong_timeout_sec=30 declares a dead socket
-         * within 30 s of a missing PONG so auto-reconnect fires promptly.
-         * If serial logs show repeated pong-timeout teardowns with no other
-         * error, raise or set to 0 to disable the timeout entirely. */
-        .ping_interval_sec    = 10,
-        .pingpong_timeout_sec = 30,
+        /* WS-level PING disabled (0 = off).  Tailscale Funnel / DERP relay does
+         * not reliably relay WebSocket control frames (PING/PONG) — the relay
+         * drops the PONG, pingpong_timeout_sec fires, and the ESP disconnects
+         * after ~40 s of idle.  Application-level heartbeat ({"heartbeat":1}
+         * text frame every 4 s from the server) keeps the relay and hotspot
+         * NAT alive without control frames. */
+        .ping_interval_sec    = 0,
+        .pingpong_timeout_sec = 0,
         /* TLS: attach the ESP-IDF CA bundle (includes ISRG Root X1 / Let's Encrypt).
          * Required for wss:// connections to Tailscale Funnel. No-op for ws://. */
         .crt_bundle_attach    = esp_crt_bundle_attach,
