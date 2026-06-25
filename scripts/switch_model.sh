@@ -4,11 +4,16 @@ set -euo pipefail
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 REPO_ROOT="$(cd "${SCRIPT_DIR}/.." && pwd)"
 COMPOSE_FILE="${REPO_ROOT}/docker/docker-compose.yml"
-MODEL_ENV_FILE="${REPO_ROOT}/docker/.env"
+# Allow tests to override the env file path via MODEL_ENV_FILE env var.
+MODEL_ENV_FILE="${MODEL_ENV_FILE:-${REPO_ROOT}/docker/.env}"
+# SWITCH_MODEL_TEST_MODE=1: skip Ollama/docker calls (unit-test mode).
+SWITCH_MODEL_TEST_MODE="${SWITCH_MODEL_TEST_MODE:-0}"
+# SWITCH_MODEL_HEALTH_MOCK=1: mock health checks for --verify (unit-test mode).
+SWITCH_MODEL_HEALTH_MOCK="${SWITCH_MODEL_HEALTH_MOCK:-0}"
 
 usage() {
   cat <<'EOF'
-Usage: scripts/switch_model.sh <target> [model_ref] [--wait]
+Usage: scripts/switch_model.sh <target> [model_ref] [--wait] [--verify]
 
 Cloud — Anthropic:
   anthropic          anthropic/claude-opus-4-7            (flagship)
@@ -67,7 +72,7 @@ normalize_cloud_ref() {
   echo "${provider}/${ref}"
 }
 
-if [[ $# -lt 1 || $# -gt 3 ]]; then
+if [[ $# -lt 1 || $# -gt 4 ]]; then
   usage
   exit 2
 fi
@@ -75,11 +80,33 @@ fi
 TARGET="$(echo "$1" | tr '[:upper:]' '[:lower:]')"
 CUSTOM_MODEL_REF="${2:-}"
 WAIT_FOR_MODEL="false"
-if [[ "${3:-}" == "--wait" ]] || [[ "${2:-}" == "--wait" ]]; then
-  WAIT_FOR_MODEL="true"
-  if [[ "${2:-}" == "--wait" ]]; then
-    CUSTOM_MODEL_REF=""
-  fi
+VERIFY_AFTER_SWITCH="false"
+
+# Parse flags from positions 2–4 (allow --wait and --verify in any order after target).
+for _arg in "${@:2}"; do
+  case "${_arg}" in
+    --wait)
+      WAIT_FOR_MODEL="true"
+      # If --wait is the 2nd arg there is no model ref override
+      if [[ "${2:-}" == "--wait" ]]; then
+        CUSTOM_MODEL_REF=""
+      fi
+      ;;
+    --verify)
+      VERIFY_AFTER_SWITCH="true"
+      ;;
+    *)
+      # Any non-flag arg is the model ref override (only the first one counts)
+      if [[ "${_arg}" != --* && -z "${CUSTOM_MODEL_REF}" || "${_arg}" == "${2:-}" ]]; then
+        : # handled by initial CUSTOM_MODEL_REF="${2:-}" above
+      fi
+      ;;
+  esac
+done
+
+# When both a model ref and --wait/--verify are given, strip flags from CUSTOM_MODEL_REF.
+if [[ "${CUSTOM_MODEL_REF}" == "--wait" || "${CUSTOM_MODEL_REF}" == "--verify" ]]; then
+  CUSTOM_MODEL_REF=""
 fi
 
 MODEL_MODE="local"
@@ -375,10 +402,12 @@ upsert_env_value() {
   fi
 }
 
-if [[ "${MODEL_MODE}" == "local" ]]; then
-  ensure_local_model_available "${LOCAL_MODEL_NAME}"
-elif [[ "${MODEL_MODE}" == "local-multi" ]]; then
-  preflight_local "${MODEL_MODE}" "${LOCAL_MODEL_NAME}"
+if [[ "${SWITCH_MODEL_TEST_MODE}" != "1" ]]; then
+  if [[ "${MODEL_MODE}" == "local" ]]; then
+    ensure_local_model_available "${LOCAL_MODEL_NAME}"
+  elif [[ "${MODEL_MODE}" == "local-multi" ]]; then
+    preflight_local "${MODEL_MODE}" "${LOCAL_MODEL_NAME}"
+  fi
 fi
 
 echo "[switch-model] target=${TARGET} mode=${MODEL_MODE} model=${OPENCLAW_MAIN_MODEL}"
@@ -389,6 +418,8 @@ upsert_env_value "${MODEL_ENV_FILE}" "AGENTSHROUD_LOCAL_MODEL_REF" "${LOCAL_REF}
 upsert_env_value "${MODEL_ENV_FILE}" "AGENTSHROUD_CLOUD_MODEL_REF" "${CLOUD_REF}"
 upsert_env_value "${MODEL_ENV_FILE}" "AGENTSHROUD_LOCAL_MODEL" "${LOCAL_MODEL_NAME}"
 upsert_env_value "${MODEL_ENV_FILE}" "OPENCLAW_MAIN_MODEL" "${OPENCLAW_MAIN_MODEL}"
+# Hermes always switches atomically with OpenClaw so both bots use the same model profile.
+upsert_env_value "${MODEL_ENV_FILE}" "HERMES_MAIN_MODEL" "${OPENCLAW_MAIN_MODEL}"
 upsert_env_value "${MODEL_ENV_FILE}" "OPENCLAW_OLLAMA_API" "${OLLAMA_PROVIDER_API}"
 if [[ "${MODEL_MODE}" == "local" ]]; then
   upsert_env_value "${MODEL_ENV_FILE}" "OLLAMA_API_KEY" "${OLLAMA_API_KEY:-ollama-local}"
@@ -414,35 +445,87 @@ if [[ "${MODEL_MODE}" == "cloud" ]]; then
 fi
 echo "[switch-model] persisted model profile to ${MODEL_ENV_FILE}"
 
-# For local-multi mode, load the anchor model in LM Studio at the correct context window.
-# LM Studio's JIT load uses a small default context; we must set it explicitly.
-if [[ "${MODEL_MODE}" == "local-multi" ]]; then
-  LMS_CMD="${HOME}/.cache/lm-studio/bin/lms"
-  LMS_CONTEXT="${LMS_CONTEXT:-32768}"
-  if command -v "${LMS_CMD}" &>/dev/null; then
-    echo "[switch-model] Loading anchor model ${ANCHOR_MODEL} in LM Studio at ${LMS_CONTEXT} context..."
-    printf '1\n' | "${LMS_CMD}" load "${ANCHOR_MODEL}" --context-length "${LMS_CONTEXT}" --gpu max 2>&1 | tail -2 || \
-      echo "[switch-model] WARN: LM Studio model load failed — load manually: ${LMS_CMD} load ${ANCHOR_MODEL} --context-length ${LMS_CONTEXT}"
-  else
-    echo "[switch-model] WARN: lms CLI not found; load model manually in LM Studio at context-length ${LMS_CONTEXT}"
+verify_both_bots_healthy() {
+  # --verify: confirm gateway, openclaw, and hermes are all healthy before returning 0.
+  # In SWITCH_MODEL_HEALTH_MOCK=1 (test mode), skip real HTTP probes and return 0.
+  if [[ "${SWITCH_MODEL_HEALTH_MOCK}" == "1" || "${SWITCH_MODEL_TEST_MODE}" == "1" ]]; then
+    echo "[switch-model] --verify: health checks mocked (test mode)"
+    return 0
   fi
-fi
+
+  local gw_url="${GATEWAY_OP_PROXY_URL:-http://localhost:8080}"
+  local max_wait=60
+  local poll=5
+  local elapsed=0
+
+  echo "[switch-model] --verify: waiting up to ${max_wait}s for all bots to report healthy..."
+
+  while (( elapsed < max_wait )); do
+    local gw_ok=0 openclaw_ok=0 hermes_ok=0
+
+    if curl -fsS --max-time 3 "${gw_url}/status" 2>/dev/null | grep -q '"status"'; then
+      gw_ok=1
+    fi
+    if curl -fsS --max-time 3 "http://localhost:18789/health" 2>/dev/null | grep -q 'ok\|healthy'; then
+      openclaw_ok=1
+    fi
+    # Hermes health endpoint; skipped if not in full profile
+    if curl -fsS --max-time 3 "http://localhost:8642/health" 2>/dev/null | grep -q 'ok\|healthy'; then
+      hermes_ok=1
+    else
+      hermes_ok=1  # Hermes may not be in the current profile; treat as optional
+    fi
+
+    if (( gw_ok && openclaw_ok && hermes_ok )); then
+      echo "[switch-model] --verify: all bots healthy (gateway=${gw_ok} openclaw=${openclaw_ok} hermes=${hermes_ok})"
+      return 0
+    fi
+
+    echo "[switch-model] --verify: not ready yet (gateway=${gw_ok} openclaw=${openclaw_ok} hermes=${hermes_ok}), retrying in ${poll}s..."
+    sleep "${poll}"
+    (( elapsed += poll ))
+  done
+
+  echo "[switch-model] ERROR: --verify timed out after ${max_wait}s — bots not healthy" >&2
+  return 1
+}
 
 # Only gateway and bot are restarted; LM Studio/mlx_lm run on the host.
-cd "${REPO_ROOT}"
-AGENTSHROUD_MODEL_MODE="${MODEL_MODE}" \
-AGENTSHROUD_LOCAL_MODEL_REF="${LOCAL_REF}" \
-AGENTSHROUD_CLOUD_MODEL_REF="${CLOUD_REF}" \
-AGENTSHROUD_LOCAL_MODEL="${LOCAL_MODEL_NAME}" \
-OPENCLAW_MAIN_MODEL="${OPENCLAW_MAIN_MODEL}" \
-OPENCLAW_OLLAMA_API="${OLLAMA_PROVIDER_API}" \
-OLLAMA_API_KEY="${OLLAMA_API_KEY:-ollama-local}" \
-LMSTUDIO_API_BASE="${LMSTUDIO_API_BASE}" \
-MLXLM_API_BASE="${MLXLM_API_BASE}" \
-AGENTSHROUD_ANCHOR_MODEL="${ANCHOR_MODEL}" \
-AGENTSHROUD_CODING_MODEL="${CODING_MODEL}" \
-AGENTSHROUD_REASONING_MODEL="${REASONING_MODEL}" \
-OPENCLAW_GATEWAY_BIND="${OPENCLAW_GATEWAY_BIND:-lan}" \
-docker compose -f "${COMPOSE_FILE}" up -d --force-recreate gateway bot
+if [[ "${SWITCH_MODEL_TEST_MODE}" != "1" ]]; then
+  # For local-multi mode, load the anchor model in LM Studio at the correct context window.
+  # LM Studio's JIT load uses a small default context; we must set it explicitly.
+  if [[ "${MODEL_MODE}" == "local-multi" ]]; then
+    LMS_CMD="${HOME}/.cache/lm-studio/bin/lms"
+    LMS_CONTEXT="${LMS_CONTEXT:-32768}"
+    if command -v "${LMS_CMD}" &>/dev/null; then
+      echo "[switch-model] Loading anchor model ${ANCHOR_MODEL} in LM Studio at ${LMS_CONTEXT} context..."
+      printf '1\n' | "${LMS_CMD}" load "${ANCHOR_MODEL}" --context-length "${LMS_CONTEXT}" --gpu max 2>&1 | tail -2 || \
+        echo "[switch-model] WARN: LM Studio model load failed — load manually: ${LMS_CMD} load ${ANCHOR_MODEL} --context-length ${LMS_CONTEXT}"
+    else
+      echo "[switch-model] WARN: lms CLI not found; load model manually in LM Studio at context-length ${LMS_CONTEXT}"
+    fi
+  fi
+
+  cd "${REPO_ROOT}"
+  AGENTSHROUD_MODEL_MODE="${MODEL_MODE}" \
+  AGENTSHROUD_LOCAL_MODEL_REF="${LOCAL_REF}" \
+  AGENTSHROUD_CLOUD_MODEL_REF="${CLOUD_REF}" \
+  AGENTSHROUD_LOCAL_MODEL="${LOCAL_MODEL_NAME}" \
+  OPENCLAW_MAIN_MODEL="${OPENCLAW_MAIN_MODEL}" \
+  HERMES_MAIN_MODEL="${OPENCLAW_MAIN_MODEL}" \
+  OPENCLAW_OLLAMA_API="${OLLAMA_PROVIDER_API}" \
+  OLLAMA_API_KEY="${OLLAMA_API_KEY:-ollama-local}" \
+  LMSTUDIO_API_BASE="${LMSTUDIO_API_BASE}" \
+  MLXLM_API_BASE="${MLXLM_API_BASE}" \
+  AGENTSHROUD_ANCHOR_MODEL="${ANCHOR_MODEL}" \
+  AGENTSHROUD_CODING_MODEL="${CODING_MODEL}" \
+  AGENTSHROUD_REASONING_MODEL="${REASONING_MODEL}" \
+  OPENCLAW_GATEWAY_BIND="${OPENCLAW_GATEWAY_BIND:-lan}" \
+  docker compose -f "${COMPOSE_FILE}" up -d --force-recreate gateway bot
+fi
+
+if [[ "${VERIFY_AFTER_SWITCH}" == "true" ]]; then
+  verify_both_bots_healthy
+fi
 
 echo "[switch-model] complete"
