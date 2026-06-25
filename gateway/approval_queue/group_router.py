@@ -33,11 +33,6 @@ logger = logging.getLogger("agentshroud.approval_queue.group_router")
 # Sentinel prefix that identifies group-context agent IDs.
 _GROUP_AGENT_PREFIX = "group-"
 
-# Default async send_message stub when no Telegram transport is provided.
-# Real production code injects the TelegramAPIProxy._send helper.
-_NOOP_SEND: Callable[..., Awaitable[dict[str, Any]]] = None  # type: ignore[assignment]
-
-
 class GroupApprovalRouter:
     """Routes approval notifications to owner DM and (optionally) group thread.
 
@@ -156,7 +151,7 @@ class GroupApprovalRouter:
 
     @staticmethod
     async def _default_send(
-        bot_token: str, chat_id: str, text: str, **kwargs: Any
+        bot_token: str, chat_id: str, text: str
     ) -> dict[str, Any]:
         """No-op send stub — used when no transport is injected."""
         logger.debug(

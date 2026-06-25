@@ -13,9 +13,6 @@ Tests that:
 
 from __future__ import annotations
 
-import tempfile
-from pathlib import Path
-
 import pytest
 
 from gateway.security.agent_isolation import AgentRegistry, ContainerConfig
@@ -213,6 +210,7 @@ class TestAgentRegistryGroupIdentity:
 
         assert GROUP_A_ID in registry.list_agents()
         retrieved = registry.get(GROUP_A_ID)
+        assert retrieved is not None
         assert retrieved.agent_id == GROUP_A_ID
 
     def test_register_group_agent_with_chat_type_supergroup(self):
@@ -275,4 +273,6 @@ class TestAgentRegistryGroupIdentity:
 
         cfg_a = registry.get(GROUP_A_ID)
         cfg_b = registry.get(GROUP_B_ID)
+        assert cfg_a is not None
+        assert cfg_b is not None
         assert cfg_a.volume != cfg_b.volume

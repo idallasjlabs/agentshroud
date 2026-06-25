@@ -28,8 +28,8 @@ from dataclasses import dataclass, field
 from typing import TYPE_CHECKING, Dict, List, Optional, Tuple
 
 if TYPE_CHECKING:
-    from gateway.security.group_rbac import GroupRole, GroupRoleResolver
-    from gateway.security.rbac_config import RBACConfig, Role
+    from gateway.security.group_rbac import GroupRoleResolver  # type: ignore[import]  # noqa: F401
+    from gateway.security.rbac_config import RBACConfig
 
 logger = logging.getLogger("agentshroud.security.tool_acl")
 
@@ -361,7 +361,7 @@ class ToolACLEnforcer:
 
         IEC 62443 FR3 (SL3): per-identity access control at every tool call boundary.
         """
-        from gateway.security.group_rbac import GroupRole, GroupRoleResolver  # noqa: F811
+        from gateway.security.group_rbac import GroupRole  # type: ignore[import]  # noqa: F811
 
         tool_lower = tool_name.lower().strip()
 
