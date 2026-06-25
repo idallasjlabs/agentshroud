@@ -373,7 +373,6 @@ services:
       # blocks any accidental direct Telegram egress at the network level.
       NO_PROXY: gateway,agentshroud-hermes,api.telegram.org,127.0.0.1,localhost
       ANTHROPIC_BASE_URL: http://gateway:8080
-      OPENAI_BASE_URL: http://gateway:8080
       OLLAMA_BASE_URL: http://gateway:8080/v1
       # Local-model parity (Workstream C): Hermes can run fully on local LLMs.
       # These mirror the gateway env vars so both bots switch atomically via switch_model.sh.

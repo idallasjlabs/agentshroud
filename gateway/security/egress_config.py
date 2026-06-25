@@ -81,6 +81,18 @@ PERMANENT_EGRESS_DOMAINS: list[str] = [
     "*.startpage.com",
     "grokipedia.com",
     "*.grokipedia.com",
+    # ── AI-Security Research / Competitive Intel (Hermes research cron, 2026-06-25) ──
+    # Domains observed blocked in production during Hermes blue-team/competitive-intel
+    # research tasks. All are reputable public AI-security vendors/gov sources.
+    # Authorized by Isaiah Jefferson 2026-06-25 for Hermes web_extract tool use.
+    "nist.gov", "www.nist.gov",
+    "lakera.ai", "www.lakera.ai",
+    "paloaltonetworks.com", "www.paloaltonetworks.com",
+    "menlosecurity.com", "www.menlosecurity.com",
+    "adversa.ai", "www.adversa.ai",
+    "neuraltrust.ai", "www.neuraltrust.ai",
+    "atlan.com", "www.atlan.com",
+    "mintmcp.com", "www.mintmcp.com",
     # GitHub static asset host — NOT covered by *.github.com (different apex).
     "github.githubassets.com",
     "*.githubassets.com",
