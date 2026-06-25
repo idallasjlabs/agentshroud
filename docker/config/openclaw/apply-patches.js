@@ -743,6 +743,36 @@ if (telegramToken && _TELEGRAM_TOKEN_RE.test(telegramToken)) {
     console.log('[init-patch] Seeded channels.telegram.groupAllowFrom to satisfy allowlist policy');
     changed = true;
   }
+
+  // v1.2.0 Workstream A: Extend groupAllowFrom with Telegram group chat IDs
+  // so OpenClaw accepts messages from group/supergroup workspaces.
+  //
+  // AGENTSHROUD_TELEGRAM_GROUP_CHAT_IDS is a comma-separated list of negative
+  // Telegram chat_ids (e.g. "-1001000000001,-1001000000002") that represent
+  // group workspaces where the bot has been added as a member.
+  //
+  // These are appended to groupAllowFrom so OpenClaw routes group messages
+  // through the gateway RBAC layer rather than dropping them at the OpenClaw
+  // allowlist gate.  The gateway remains the enforcement point; adding the
+  // chat_id here is a transport-layer unlock, not a security bypass.
+  const groupChatIdsEnv = String(process.env.AGENTSHROUD_TELEGRAM_GROUP_CHAT_IDS || '')
+    .split(',')
+    .map((v) => v.trim())
+    .filter(Boolean);
+  if (groupChatIdsEnv.length > 0) {
+    const existingGroupAllowFrom = Array.isArray(config.channels.telegram.groupAllowFrom)
+      ? config.channels.telegram.groupAllowFrom
+      : [];
+    const updatedGroupAllowFrom = Array.from(new Set([...existingGroupAllowFrom, ...groupChatIdsEnv]));
+    if (updatedGroupAllowFrom.length !== existingGroupAllowFrom.length) {
+      config.channels.telegram.groupAllowFrom = updatedGroupAllowFrom;
+      console.log(
+        '[init-patch] Extended channels.telegram.groupAllowFrom with group chat IDs: ' +
+        groupChatIdsEnv.join(', ')
+      );
+      changed = true;
+    }
+  }
 }
 
 // Patch 4: Slack (native Socket Mode — OpenClaw handles inbound directly)
