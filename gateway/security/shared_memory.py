@@ -93,26 +93,44 @@ class SharedMemoryManager:
     # User private memory
     # ------------------------------------------------------------------
 
-    def get_user_memory(self, user_id: str) -> str:
-        """Read raw private memory for a user."""
+    def get_user_memory(self, user_id: str, bot_id: str = "openclaw") -> str:
+        """Read raw private memory for a user.
+
+        Args:
+            user_id: The user whose memory to read.
+            bot_id: Which bot's workspace to read from (default: "openclaw").
+                    Pass the calling bot's identity to avoid cross-bot memory leaks
+                    (BT-H1: v1.2.0 security finding — each bot maintains an isolated
+                    MEMORY.md per-user under users/{user_id}/bots/{bot_id}/).
+        """
         try:
-            sess = self._sm.get_or_create_session(user_id)
+            sess = self._sm.get_or_create_session(user_id, bot_id=bot_id)
             if sess.memory_file.exists():
                 return sess.memory_file.read_text(encoding="utf-8", errors="replace")
         except Exception as exc:
-            logger.warning("Could not read user memory for %s: %s", user_id, exc)
+            logger.warning("Could not read user memory for %s (bot=%s): %s", user_id, bot_id, exc)
         return ""
 
-    def append_to_user_memory(self, user_id: str, content: str) -> None:
-        """Append content to user's private memory file."""
+    def append_to_user_memory(self, user_id: str, content: str, bot_id: str = "openclaw") -> None:
+        """Append content to user's private memory file.
+
+        Args:
+            user_id: The user whose memory to append to.
+            content: Markdown content to append.
+            bot_id: Which bot's workspace to write to (default: "openclaw").
+                    Must match the bot that initiated the append to maintain
+                    cross-bot isolation (BT-H1: v1.2.0 security finding).
+        """
         try:
-            sess = self._sm.get_or_create_session(user_id)
+            sess = self._sm.get_or_create_session(user_id, bot_id=bot_id)
             ts = datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M UTC")
             entry = f"\n---\n**[{ts}]**\n{content.strip()}\n"
             with open(sess.memory_file, "a", encoding="utf-8") as fh:
                 fh.write(entry)
         except Exception as exc:
-            logger.warning("Could not append to user memory for %s: %s", user_id, exc)
+            logger.warning(
+                "Could not append to user memory for %s (bot=%s): %s", user_id, bot_id, exc
+            )
 
     # ------------------------------------------------------------------
     # Merged memory context for prompt injection
@@ -123,6 +141,7 @@ class SharedMemoryManager:
         user_id: str,
         rbac_config: "RBACConfig",
         active_group_id: Optional[str] = None,
+        bot_id: str = "openclaw",
     ) -> str:
         """Build merged memory context for bot prompt injection.
 
@@ -137,6 +156,9 @@ class SharedMemoryManager:
             user_id: The requesting user.
             rbac_config: Used to determine group membership and owner status.
             active_group_id: Optional hint — prioritise this group's memory.
+            bot_id: Which bot's per-user workspace to read (default: "openclaw").
+                    Pass the calling bot's identity to avoid cross-bot memory leaks
+                    (BT-H1: v1.2.0 security finding).
 
         Returns:
             Multi-section string suitable for prepending to bot system context.
@@ -145,7 +167,7 @@ class SharedMemoryManager:
         parts: List[str] = []
 
         # 1. User's private memory (always first, always unfiltered)
-        private_mem = self.get_user_memory(user_id)
+        private_mem = self.get_user_memory(user_id, bot_id=bot_id)
         if private_mem.strip():
             parts.append(f"[YOUR PRIVATE MEMORY]\n{private_mem}")
 
@@ -193,21 +215,25 @@ class SharedMemoryManager:
         user_id: str,
         rbac_config: "RBACConfig",
         query_text: str,
+        bot_id: str = "openclaw",
     ) -> str:
         """Return memory from groups whose focus_topics match the query text.
 
         For project_scoped groups, only return memory relevant to the query.
         Falls back to full merged memory if no topic match or no projects configured.
+
+        Args:
+            bot_id: Which bot's per-user workspace to read (BT-H1 cross-bot isolation fix).
         """
         teams = getattr(rbac_config, "teams_config", None)
         if teams is None:
-            return self.get_merged_memory_for_user(user_id, rbac_config)
+            return self.get_merged_memory_for_user(user_id, rbac_config, bot_id=bot_id)
 
         is_owner = getattr(rbac_config, "is_owner", lambda _: False)(user_id)
         parts: List[str] = []
 
         # Private memory always included
-        private_mem = self.get_user_memory(user_id)
+        private_mem = self.get_user_memory(user_id, bot_id=bot_id)
         if private_mem.strip():
             parts.append(f"[YOUR PRIVATE MEMORY]\n{private_mem}")
 
