@@ -15,11 +15,34 @@ import os
 import time
 from collections import defaultdict
 from dataclasses import dataclass
-from typing import Any, Dict, List, Optional
+from typing import Any, Callable, Dict, List, Optional
 
 import psutil
 
 logger = logging.getLogger(__name__)
+
+
+class VRAMHeadroomError(Exception):
+    """Raised when a local-model call is rejected because estimated VRAM usage
+    would exceed the configured headroom threshold.
+
+    This is a hard-reject (fail-closed) to prevent OOM crashes on the GPU host.
+    The caller should either route to a smaller model or return a graceful error.
+    """
+
+
+# ---------------------------------------------------------------------------
+# VRAM estimation constants
+# ---------------------------------------------------------------------------
+
+# Bytes of KV-cache VRAM per token per layer for FP16 attention heads (2 bytes × 2 heads).
+# This is a conservative estimate; actual usage varies by model architecture.
+_VRAM_BYTES_PER_TOKEN_PER_LAYER: int = 4
+
+# Default number of transformer layers for estimation when model size is unknown.
+# Covers up to 14B models (typical local deployment). Callers with model metadata
+# should pass a more precise layer count.
+_DEFAULT_TRANSFORMER_LAYERS: int = 40
 
 
 @dataclass
@@ -41,6 +64,9 @@ class ResourceLimits:
     # downstream — pure noise.  3 samples = ~30 seconds of sustained pressure,
     # which is the real signal we want.
     alert_spike_debounce_samples: int = 3
+    # VRAM headroom required before accepting a long-context local-model call.
+    # Set to 0 to disable VRAM pre-flight checks (e.g. in CI / cloud-only mode).
+    max_vram_headroom_mb: int = 0
 
 
 @dataclass
@@ -64,7 +90,7 @@ class ResourceGuard:
         self.usage_by_agent: Dict[str, ResourceUsage] = defaultdict(ResourceUsage)
         self.baseline_disk_io = self._get_disk_io_stats()
         self.temp_files_by_agent: Dict[str, List[str]] = defaultdict(list)
-        self.alert_callbacks: List[callable] = []
+        self.alert_callbacks: List[Callable[..., Any]] = []
         self.monitoring_active = True
         self._monitor_task: Optional[asyncio.Task] = None
         # Consecutive-over-threshold counters for the spike debounce.
@@ -73,7 +99,7 @@ class ResourceGuard:
         self._memory_over_count: int = 0
         self._start_monitoring_task()
 
-    def add_alert_callback(self, callback: callable):
+    def add_alert_callback(self, callback: Callable[..., Any]):
         """Add a callback function to be called when resource alerts are triggered."""
         self.alert_callbacks.append(callback)
 
@@ -246,7 +272,8 @@ class ResourceGuard:
     def _get_disk_io_stats(self) -> Dict[str, Any]:
         """Get current disk I/O statistics."""
         try:
-            return psutil.disk_io_counters()._asdict() if psutil.disk_io_counters() else {}
+            io_counters = psutil.disk_io_counters()
+            return io_counters._asdict() if io_counters else {}
         except Exception:
             return {}
 
@@ -319,6 +346,56 @@ class ResourceGuard:
         except Exception as e:
             logger.error(f"Disk write check failed for agent {agent_id}: {e}")
             return False  # Fail-closed: deny on error
+
+    def check_vram_headroom(
+        self,
+        agent_id: str,
+        estimated_tokens: int,
+        available_vram_mb: int,
+        transformer_layers: int = _DEFAULT_TRANSFORMER_LAYERS,
+    ) -> None:
+        """Pre-flight VRAM headroom check before dispatching a long-context local-model call.
+
+        Raises VRAMHeadroomError when the estimated KV-cache VRAM for the request
+        would exhaust available VRAM below the configured headroom threshold.
+
+        The check is skipped (passes silently) when:
+        - limits.max_vram_headroom_mb == 0 (disabled)
+        - available_vram_mb >= max_vram_headroom_mb (sufficient headroom)
+
+        Args:
+            agent_id: Agent/request identifier for logging.
+            estimated_tokens: Total token count (input + output estimate) for the call.
+            available_vram_mb: Free VRAM on the GPU host in megabytes.
+            transformer_layers: Number of transformer layers (used for KV-cache estimate).
+
+        Raises:
+            VRAMHeadroomError: When available_vram_mb < max_vram_headroom_mb.
+
+        Entry point: gateway/security/resource_guard.py:ResourceGuard.check_vram_headroom
+        Routing: called by gateway/proxy/llm_proxy.py before local dispatch
+        Handler: raises VRAMHeadroomError; caller routes to secondary model or returns error
+        """
+        threshold = self.limits.max_vram_headroom_mb
+        if threshold == 0:
+            # VRAM check disabled
+            return
+
+        if available_vram_mb >= threshold:
+            return
+
+        # Estimate KV-cache VRAM in MB for this request
+        kv_cache_bytes = estimated_tokens * transformer_layers * _VRAM_BYTES_PER_TOKEN_PER_LAYER
+        kv_cache_mb = kv_cache_bytes // (1024 * 1024)
+
+        msg = (
+            f"Agent {agent_id}: insufficient VRAM headroom for {estimated_tokens} token request. "
+            f"Available: {available_vram_mb} MB, required threshold: {threshold} MB, "
+            f"estimated KV-cache: {kv_cache_mb} MB. "
+            f"Route to a smaller model or reduce context length."
+        )
+        logger.warning("ResourceGuard VRAM pre-flight rejected: %s", msg)
+        raise VRAMHeadroomError(msg)
 
     def register_temp_file(self, agent_id: str, file_path: str) -> bool:
         """Register a temporary file for tracking."""

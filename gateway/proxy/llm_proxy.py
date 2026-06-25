@@ -68,9 +68,6 @@ LOCAL_MODEL_ROUTES: dict[str, str] = {
     "gemma": LMSTUDIO_API_BASE,  # Gemma family — LM Studio on :1234
 }
 
-# Models that SHOULD think (reasoning models) — used for routing to mlx_lm.
-_REASONING_MODEL_PREFIXES = ("deepseek-r1", "mlx-community/deepseek-r1")
-
 # Per-backend operator hints returned in the structured 503 body when a local
 # backend (mlx_lm / Ollama / LM Studio) is unreachable at connect time.
 _LOCAL_BACKEND_HINTS: dict[str, str] = {
@@ -138,6 +135,113 @@ class LLMProxy:
     def _get_local_model(self) -> str:
         ref = os.environ.get("AGENTSHROUD_LOCAL_MODEL_REF", "ollama/qwen3:14b")
         return ref.split("/", 1)[-1]
+
+    def _get_local_secondary_model(self) -> str | None:
+        """Return the bare secondary local model name, or None if not configured.
+
+        Reads AGENTSHROUD_LOCAL_SECONDARY_MODEL_REF (e.g. 'ollama/qwen3:1.7b')
+        and strips the provider prefix. Returns None when the env var is unset or empty.
+        """
+        ref = os.environ.get("AGENTSHROUD_LOCAL_SECONDARY_MODEL_REF", "")
+        if not ref:
+            return None
+        return ref.split("/", 1)[-1]
+
+    @staticmethod
+    def _is_local_oom(status: int, body: bytes) -> bool:
+        """Return True if the response indicates a local-model OOM or backend_unavailable.
+
+        Detects:
+        - HTTP 503 with error.type == 'backend_unavailable' (our own structured error)
+        - Any HTTP 5xx response body containing 'out of memory' (GPU/CPU OOM)
+        - CUDA OOM string patterns from Ollama / LM Studio / mlx_lm error messages
+        """
+        if status == 200:
+            return False
+        if status == 429:
+            # Cloud quota error — handled by quota failover, not OOM failover
+            return False
+        try:
+            data = json.loads(body)
+            # Our structured 503: {"error": {"type": "backend_unavailable", ...}}
+            err = data.get("error", {})
+            if isinstance(err, dict) and err.get("type") == "backend_unavailable":
+                return True
+            # Generic error string containing OOM keywords
+            err_str = json.dumps(data).lower()
+            return any(kw in err_str for kw in ("out of memory", "cuda out of memory", "oom"))
+        except (json.JSONDecodeError, AttributeError):
+            # Raw string body from some backends
+            body_lower = body.decode("utf-8", errors="replace").lower()
+            return any(kw in body_lower for kw in ("out of memory", "cuda out of memory", "oom"))
+
+    async def _local_secondary_failover_request(
+        self,
+        path: str,
+        request_data: dict | None,
+        is_openai: bool,
+    ) -> tuple[int, dict, bytes] | None:
+        """Attempt a local→local-secondary failover when the primary local model hits OOM.
+
+        Returns (status, headers, body) from the secondary local model, or None if:
+        - No secondary model is configured (AGENTSHROUD_LOCAL_SECONDARY_MODEL_REF unset)
+        - The secondary dispatch also fails
+
+        Entry point: gateway/proxy/llm_proxy.py:proxy_messages (OOM/timeout detected)
+        Routing: _local_secondary_failover_request dispatches to secondary backend
+        Handler: _forward_request forwards to secondary local model HTTP endpoint
+        """
+        secondary_model = self._get_local_secondary_model()
+        if secondary_model is None:
+            return None
+
+        fo_base = self._local_failover_base(secondary_model)
+        secondary_model_normalized = self._normalize_local_model(secondary_model, fo_base)
+
+        logger.info(
+            "Local→secondary failover: dispatching to %s at %s",
+            secondary_model_normalized,
+            fo_base,
+        )
+
+        try:
+            if is_openai:
+                fo_data = dict(request_data or {})
+                fo_data["model"] = secondary_model_normalized
+                fo_body = json.dumps(fo_data).encode()
+                fo_url = f"{fo_base}/v1/chat/completions"
+            elif path and "/v1/messages" in path:
+                oai_req = anthropic_to_openai_request(request_data or {}, secondary_model_normalized)
+                fo_body = json.dumps(oai_req).encode()
+                fo_url = f"{fo_base}/v1/chat/completions"
+            else:
+                return None
+
+            f_status, f_headers, f_body = await self._forward_request(
+                fo_url, fo_body, {"content-type": "application/json"}
+            )
+
+            if f_status == 200 and f_body:
+                self._stats["failover_local_secondary_succeeded"] = (
+                    self._stats.get("failover_local_secondary_succeeded", 0) + 1
+                )
+                logger.info(
+                    "Local→secondary failover succeeded: %s HTTP 200", secondary_model_normalized
+                )
+                return f_status, f_headers, f_body
+
+            logger.warning(
+                "Local→secondary failover model %s returned HTTP %s",
+                secondary_model_normalized,
+                f_status,
+            )
+        except Exception as e:
+            logger.warning("Local→secondary failover error: %s", e)
+
+        self._stats["failover_local_secondary_failed"] = (
+            self._stats.get("failover_local_secondary_failed", 0) + 1
+        )
+        return None
 
     @staticmethod
     def _local_failover_base(local_model: str) -> str:
@@ -241,7 +345,7 @@ class LLMProxy:
         self,
         path: str,
         request_data: dict | None,
-        body: bytes,
+        _body: bytes,
         model_name: str,
         is_openai: bool,
     ) -> tuple[int, dict, bytes] | None:
@@ -507,8 +611,10 @@ class LLMProxy:
         model_lower = model_name.lower()
         for prefix in ("ollama/", "lmstudio/"):
             if model_lower.startswith(prefix):
-                request_data["model"] = model_name.split("/", 1)[1]
-                model_name = request_data["model"]
+                bare = model_name.split("/", 1)[1]
+                if request_data is not None:
+                    request_data["model"] = bare
+                model_name = bare
                 model_lower = model_name.lower()
                 break
 
@@ -527,6 +633,16 @@ class LLMProxy:
                 if model_lower.startswith(prefix):
                     base_url = route_url
                     break
+            # Round-trip model name through normalization so LM Studio receives
+            # dash-separated IDs ('qwen3-14b') and Ollama keeps colons ('qwen3:14b').
+            # Must happen after prefix stripping (ollama/ lmstudio/) above.
+            if request_data:
+                normalized = self._normalize_local_model(model_name, base_url)
+                if normalized != model_name:
+                    request_data["model"] = normalized
+                    model_name = normalized
+                    model_lower = model_name.lower()
+                    body = json.dumps(request_data).encode()
         elif is_openai:
             base_url = OPENAI_API_BASE
         elif is_google:
@@ -544,6 +660,18 @@ class LLMProxy:
             status, resp_headers, resp_body = await self._forward_request(url, body, headers)
         except TimeoutError as e:
             logger.error(f"LLM proxy timeout: {e}")
+            # === LOCAL→SECONDARY FAILOVER: p99 timeout on primary local model ===
+            # Before returning a graceful timeout, try the secondary local model.
+            _local_oom_failover_enabled = (
+                os.environ.get("AGENTSHROUD_LOCAL_FAILOVER_ON_OOM", "1") == "1"
+            )
+            if is_ollama and _local_oom_failover_enabled and not _failover_opt_out:
+                logger.info("Local p99 timeout on primary — trying secondary local model")
+                _sec_result = await self._local_secondary_failover_request(
+                    path, request_data, is_openai
+                )
+                if _sec_result is not None:
+                    return 200, {"content-type": "application/json"}, _sec_result[2]
             fallback_body = self._build_timeout_fallback_response(
                 is_openai=is_openai,
                 is_google=is_google,
@@ -564,6 +692,29 @@ class LLMProxy:
                 }
             ).encode()
             return 502, {"content-type": "application/json"}, error_resp
+
+        # === LOCAL→SECONDARY FAILOVER: OOM on primary local model ===
+        # Triggered when primary local backend returns OOM or backend_unavailable.
+        # Only active for local model dispatches with AGENTSHROUD_LOCAL_FAILOVER_ON_OOM=1.
+        _local_oom_failover_enabled = (
+            os.environ.get("AGENTSHROUD_LOCAL_FAILOVER_ON_OOM", "1") == "1"
+        )
+        if (
+            is_ollama
+            and _local_oom_failover_enabled
+            and not _failover_opt_out
+            and not is_streaming
+            and self._is_local_oom(status, resp_body)
+        ):
+            logger.info(
+                "Local OOM detected (HTTP %s) — attempting local→secondary failover", status
+            )
+            _sec_result = await self._local_secondary_failover_request(
+                path, request_data, is_openai
+            )
+            if _sec_result is not None:
+                return 200, {"content-type": "application/json"}, _sec_result[2]
+            # Secondary also failed — fall through to return original OOM response
 
         # === QUOTA FAILOVER: cloud→local on quota-exhausted responses ===
         _failover_enabled = os.environ.get("AGENTSHROUD_FAILOVER_ON_QUOTA", "1") == "1"
@@ -1035,6 +1186,8 @@ class LLMProxy:
         Only acts on non-streaming Anthropic-format responses (content list with
         tool_use blocks). Silently passes through non-Anthropic or malformed responses.
         """
+        if self.tool_acl_enforcer is None:
+            return resp_body
         try:
             data = json.loads(resp_body)
         except (json.JSONDecodeError, UnicodeDecodeError):
@@ -1382,3 +1535,6 @@ class LLMProxy:
                     wait,
                 )
                 await asyncio.sleep(wait)
+
+        # Final-attempt always returns inside the except block above; this is unreachable.
+        return 503, {}, b'{"error":{"type":"max_retries_exceeded"}}'
