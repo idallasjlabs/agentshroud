@@ -1504,6 +1504,88 @@
         ]
       }
     },
+    "/api/intel/competitive": {
+      "get": {
+        "description": "Return the latest validated competitive-intelligence report.\n\nAuth-gated (owner only).  Returns the most recently persisted report\nalong with its chain-integrity status.\n\nIEC 62443 FR6 (Audit): the response includes the content_hash and\nchain_valid flag so callers can independently verify report provenance.\n\nReturns:\n    200 + report JSON  \u2014 if a validated report exists.\n    404                \u2014 if no reports have been stored yet.\n    409                \u2014 if the latest report fails integrity verification.",
+        "operationId": "get_competitive_intel_api_intel_competitive_get",
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "additionalProperties": true,
+                  "title": "Response Get Competitive Intel Api Intel Competitive Get",
+                  "type": "object"
+                }
+              }
+            },
+            "description": "Successful Response"
+          }
+        },
+        "security": [
+          {
+            "HTTPBearer": []
+          }
+        ],
+        "summary": "Get Competitive Intel",
+        "tags": [
+          "management"
+        ]
+      }
+    },
+    "/api/intel/competitive/history": {
+      "get": {
+        "description": "Return recent competitive-intelligence reports in reverse-chronological order.\n\nAuth-gated (owner only).  Returns up to *limit* reports (default 10, max 100).",
+        "operationId": "get_competitive_intel_history_api_intel_competitive_history_get",
+        "parameters": [
+          {
+            "in": "query",
+            "name": "limit",
+            "required": false,
+            "schema": {
+              "default": 10,
+              "maximum": 100,
+              "minimum": 1,
+              "title": "Limit",
+              "type": "integer"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "additionalProperties": true,
+                  "title": "Response Get Competitive Intel History Api Intel Competitive History Get",
+                  "type": "object"
+                }
+              }
+            },
+            "description": "Successful Response"
+          },
+          "422": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            },
+            "description": "Validation Error"
+          }
+        },
+        "security": [
+          {
+            "HTTPBearer": []
+          }
+        ],
+        "summary": "Get Competitive Intel History",
+        "tags": [
+          "management"
+        ]
+      }
+    },
     "/api/killswitch/{mode}": {
       "post": {
         "description": "Emergency kill switch: freeze, shutdown, or disconnect.",
