@@ -791,3 +791,270 @@ def test_ws_agent_query_param_absent_uses_default(monkeypatch):
         with client.websocket_connect("/voice") as ws:
             first = ws.receive_text()
             assert json.loads(first) == {"state": "idle"}
+
+
+# ── Disconnect-handling tests ─────────────────────────────────────────────────
+#
+# These tests call voice_endpoint() directly (not via TestClient) to avoid the
+# ASGI transport boundary that can deadlock: when the server returns without
+# sending an explicit close frame, the TestClient's receive hangs indefinitely.
+# Direct invocation runs entirely within one asyncio event loop — no threads.
+
+
+async def _run_disconnect_test(exc_to_raise, monkeypatch, caplog):
+    """
+    Directly invoke ``voice_endpoint`` with a mocked WebSocket whose second
+    ``receive()`` call raises ``exc_to_raise`` (simulating an ungraceful or
+    clean client drop from the websockets-library layer).
+
+    Asserts:
+      - No ERROR-level log from voice_gateway.server
+      - No exc_info / traceback attached to any voice_gateway log record
+      - At least one INFO "Disconnected" line emitted
+    """
+    import asyncio
+    import logging
+    from unittest.mock import AsyncMock, MagicMock
+
+    import voice_gateway.server as srv
+
+    # Build a minimal mock WebSocket.
+    ws = MagicMock()
+    ws.client = MagicMock()
+    ws.client.__str__ = lambda s: "127.0.0.1:9999"
+    params = {}
+    ws.query_params = MagicMock()
+    ws.query_params.get = lambda k, d="": params.get(k, d)
+    ws.accept = AsyncMock()
+    ws.close = AsyncMock()
+    ws.send_text = AsyncMock()
+
+    # First receive: LISTEN command triggers _send_state(LISTENING) on server.
+    # Second receive: raises the target exception → exercises the except chain.
+    ws.receive = AsyncMock(side_effect=[
+        {"text": "LISTEN", "bytes": None},
+        exc_to_raise,
+    ])
+
+    original_token = srv._VG_AUTH_TOKEN
+    monkeypatch.setattr(srv, "_VG_AUTH_TOKEN", "")  # disable auth
+
+    with caplog.at_level(logging.DEBUG, logger="voice_gateway.server"):
+        # voice_endpoint is an ASGI WebSocket handler; call it directly.
+        await srv.voice_endpoint(ws)
+
+    monkeypatch.setattr(srv, "_VG_AUTH_TOKEN", original_token)
+
+    vg_records = [r for r in caplog.records if r.name.startswith("voice_gateway")]
+
+    # 1. No ERROR-level logs
+    errors = [r for r in vg_records if r.levelno >= logging.ERROR]
+    assert not errors, (
+        "Expected no ERROR-level log from voice_gateway.server, got:\n"
+        + "\n".join(f"  [{r.levelname}] {r.getMessage()}" for r in errors)
+    )
+
+    # 2. No exc_info / traceback
+    with_tb = [r for r in vg_records if r.exc_info and r.exc_info[0] is not None]
+    assert not with_tb, (
+        "Expected no traceback in voice_gateway logs, got:\n"
+        + "\n".join(f"  {r.getMessage()}" for r in with_tb)
+    )
+
+    # 3. At least one INFO "Disconnected" line
+    disconnected = [
+        r for r in vg_records
+        if "disconnected" in r.getMessage().lower() and r.levelno == logging.INFO
+    ]
+    assert disconnected, (
+        "Expected an INFO 'Disconnected' log from voice_gateway.server, got:\n"
+        + "\n".join(f"  [{r.levelname}] {r.getMessage()}" for r in vg_records)
+    )
+
+
+async def test_ws_connectionclosed_error_logs_info_no_traceback(monkeypatch, caplog):
+    """ConnectionClosedError (WS code 1006 — ungraceful ESP disconnect, e.g. device
+    loses WiFi/power mid-session) must be caught and logged at INFO with no traceback.
+
+    Regression guard: previously fell through to ``except Exception … exc_info=True``
+    and dumped a full Starlette/uvicorn traceback on every device reboot/drop.
+    """
+    from websockets.exceptions import ConnectionClosedError
+
+    await _run_disconnect_test(
+        ConnectionClosedError(rcvd=None, sent=None), monkeypatch, caplog
+    )
+
+
+async def test_ws_connectionclosed_ok_logs_info_no_traceback(monkeypatch, caplog):
+    """ConnectionClosedOK (WS code 1000/1001 — clean websockets-library close path)
+    must also be caught and logged at INFO with no traceback.
+
+    This covers the case where the websockets library signals a graceful close via
+    ``ConnectionClosedOK`` rather than Starlette's ``WebSocketDisconnect``.
+    """
+    from websockets.exceptions import ConnectionClosedOK
+
+    await _run_disconnect_test(
+        ConnectionClosedOK(rcvd=None, sent=None), monkeypatch, caplog
+    )
+
+
+async def test_ws_pipeline_error_logs_and_recovers_to_idle(monkeypatch, caplog):
+    """When the STT→LLM→TTS pipeline raises, the inner exception handler must:
+      1. log the pipeline error at ERROR with exc_info
+      2. send the IDLE state back to the client
+      3. continue the receive loop (next receive exits via WebSocketDisconnect → INFO log)
+    Covers voice_gateway/server.py lines 334-344 and 347.
+    """
+    import asyncio
+    import logging
+    from unittest.mock import AsyncMock, MagicMock
+    from fastapi.websockets import WebSocketDisconnect
+
+    import voice_gateway.server as srv
+
+    # Mock WebSocket
+    ws = MagicMock()
+    ws.client = MagicMock()
+    ws.client.__str__ = lambda s: "127.0.0.1:8888"
+    ws.query_params = MagicMock()
+    ws.query_params.get = lambda k, d="": "hermes" if k == "agent" else d
+    ws.accept = AsyncMock()
+    ws.close = AsyncMock()
+    ws.send_text = AsyncMock()
+    ws.send_bytes = AsyncMock()
+
+    # receive() sequence:
+    # 1. LISTEN   → server sends "listening" state
+    # 2. PCM bytes → buffered
+    # 3. END       → triggers pipeline (STT raises) → inner except catches, sends idle
+    # 4. WebSocketDisconnect → outer except WebSocketDisconnect handler (line 347)
+    ws.receive = AsyncMock(side_effect=[
+        {"text": "LISTEN", "bytes": None},
+        {"bytes": b"\x00\x01\x02\x03", "text": None},
+        {"text": "END", "bytes": None},
+        WebSocketDisconnect(code=1000),
+    ])
+
+    # Patch STT to raise so the inner pipeline exception handler fires
+    def _failing_transcribe(raw):
+        raise RuntimeError("synthetic STT failure for coverage")
+
+    monkeypatch.setattr(srv, "_VG_AUTH_TOKEN", "")
+    monkeypatch.setattr(srv._stt, "transcribe", _failing_transcribe)
+
+    with caplog.at_level(logging.DEBUG, logger="voice_gateway.server"):
+        await srv.voice_endpoint(ws)
+
+    vg = [r for r in caplog.records if r.name.startswith("voice_gateway")]
+
+    # Inner except: "Pipeline error" at ERROR with exc_info
+    pipeline_errors = [r for r in vg if "Pipeline error" in r.getMessage()]
+    assert pipeline_errors, f"Expected 'Pipeline error' log, got: {[r.getMessage() for r in vg]}"
+    assert pipeline_errors[0].levelno == logging.ERROR
+    assert pipeline_errors[0].exc_info is not None
+
+    # Outer except WebSocketDisconnect: "Disconnected" at INFO (line 347)
+    disconnected = [
+        r for r in vg
+        if "disconnected" in r.getMessage().lower() and r.levelno == logging.INFO
+    ]
+    assert disconnected, f"Expected INFO 'Disconnected' log, got: {[r.getMessage() for r in vg]}"
+
+    # Recovery send: _send_state(IDLE) was called after the pipeline error
+    send_calls = [str(c) for c in ws.send_text.call_args_list]
+    idle_sends = [c for c in send_calls if '"idle"' in c]
+    # At minimum: initial idle + recovery idle = 2 idle sends
+    assert len(idle_sends) >= 2, f"Expected ≥2 idle sends (initial + recovery), got: {send_calls}"
+
+
+async def test_call_agent_read_timeout_returns_fallback(monkeypatch):
+    """_call_agent must return a spoken fallback string and log a WARNING when
+    httpx raises ReadTimeout (agent hung for > 35 s).
+    Covers voice_gateway/server.py lines 224-228.
+    """
+    import logging
+    import httpx
+    from unittest.mock import AsyncMock, patch
+
+    import voice_gateway.server as srv
+
+    with patch(
+        "httpx.AsyncClient.post",
+        new=AsyncMock(side_effect=httpx.ReadTimeout("timed out")),
+    ):
+        result = await srv._call_agent("hello", "hermes")
+
+    assert "having trouble" in result.lower() or "try again" in result.lower(), (
+        f"Expected fallback string, got: {result!r}"
+    )
+
+
+async def test_ws_direct_agent_pipeline_error_pops_history_and_recovery_send_fails(monkeypatch, caplog):
+    """When the LLM raises in the 'direct' agent path:
+      - the user message appended to history must be popped (line 339)
+      - if the recovery _send_state(IDLE) also raises, lines 343-344 silence it
+    Covers server.py lines 339, 343-344 and the outer WebSocketDisconnect handler (347).
+    """
+    import logging
+    from unittest.mock import AsyncMock, MagicMock
+    from fastapi.websockets import WebSocketDisconnect
+
+    import voice_gateway.server as srv
+
+    ws = MagicMock()
+    ws.client = MagicMock()
+    ws.client.__str__ = lambda s: "127.0.0.1:7777"
+    ws.query_params = MagicMock()
+    # ?agent is absent → default; we'll patch _DEFAULT_AGENT to "direct"
+    ws.query_params.get = lambda k, d="": d
+    ws.accept = AsyncMock()
+    ws.close = AsyncMock()
+    ws.send_bytes = AsyncMock()
+
+    # send_text side_effect:
+    #  call 1 → initial _send_state(IDLE) — succeeds
+    #  call 2 → _send_state(LISTENING)    — succeeds
+    #  call 3 → _send_state(THINKING)     — succeeds
+    #  call 4 → recovery _send_state(IDLE) after pipeline error — raises → line 343-344
+    ws.send_text = AsyncMock(side_effect=[
+        None,
+        None,
+        None,
+        RuntimeError("send_text failed during recovery"),
+    ])
+
+    ws.receive = AsyncMock(side_effect=[
+        {"text": "LISTEN", "bytes": None},
+        {"bytes": b"\x00\x01", "text": None},
+        {"text": "END", "bytes": None},
+        WebSocketDisconnect(code=1000),       # clean exit after recovery
+    ])
+
+    monkeypatch.setattr(srv, "_VG_AUTH_TOKEN", "")
+    monkeypatch.setattr(srv, "_DEFAULT_AGENT", "direct")
+    # STT succeeds so a user message is appended to history before the LLM is called
+    monkeypatch.setattr(srv._stt, "transcribe", lambda raw: "test utterance for history pop")
+
+    # LLM raises — triggers inner pipeline except with user message in history
+    async def _fail_llm(history):
+        raise RuntimeError("synthetic LLM failure for line-339 coverage")
+
+    monkeypatch.setattr(srv, "_call_llm", _fail_llm)
+
+    with caplog.at_level(logging.DEBUG, logger="voice_gateway.server"):
+        await srv.voice_endpoint(ws)
+
+    vg = [r for r in caplog.records if r.name.startswith("voice_gateway")]
+
+    # Inner pipeline exception logged at ERROR
+    pipeline_errors = [r for r in vg if "Pipeline error" in r.getMessage()]
+    assert pipeline_errors, f"Expected 'Pipeline error' log, got: {[r.getMessage() for r in vg]}"
+
+    # Outer WebSocketDisconnect logged at INFO (line 347)
+    disconnected = [
+        r for r in vg
+        if "disconnected" in r.getMessage().lower() and r.levelno == logging.INFO
+    ]
+    assert disconnected, f"Expected INFO 'Disconnected' log, got: {[r.getMessage() for r in vg]}"
