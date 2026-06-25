@@ -24,7 +24,6 @@ from gateway.security.differential_pii_detector import (
     DifferentialPIIDetector,
     PIIHit,
     PIIHitSeverity,
-    ToolResultPIIReport,
 )
 
 

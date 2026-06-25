@@ -369,6 +369,7 @@ class DifferentialPIIDetector:
 
     def _detect_presidio(self, text: str, floor: float) -> list[PIIHit]:
         """Use Presidio with the given confidence floor."""
+        assert self._presidio_analyzer is not None
         try:
             results = self._presidio_analyzer.analyze(
                 text=text,
