@@ -68,9 +68,6 @@ LOCAL_MODEL_ROUTES: dict[str, str] = {
     "gemma": LMSTUDIO_API_BASE,  # Gemma family — LM Studio on :1234
 }
 
-# Models that SHOULD think (reasoning models) — used for routing to mlx_lm.
-_REASONING_MODEL_PREFIXES = ("deepseek-r1", "mlx-community/deepseek-r1")
-
 # Per-backend operator hints returned in the structured 503 body when a local
 # backend (mlx_lm / Ollama / LM Studio) is unreachable at connect time.
 _LOCAL_BACKEND_HINTS: dict[str, str] = {
@@ -348,7 +345,7 @@ class LLMProxy:
         self,
         path: str,
         request_data: dict | None,
-        body: bytes,
+        _body: bytes,
         model_name: str,
         is_openai: bool,
     ) -> tuple[int, dict, bytes] | None:
@@ -614,8 +611,10 @@ class LLMProxy:
         model_lower = model_name.lower()
         for prefix in ("ollama/", "lmstudio/"):
             if model_lower.startswith(prefix):
-                request_data["model"] = model_name.split("/", 1)[1]
-                model_name = request_data["model"]
+                bare = model_name.split("/", 1)[1]
+                if request_data is not None:
+                    request_data["model"] = bare
+                model_name = bare
                 model_lower = model_name.lower()
                 break
 
@@ -1187,6 +1186,8 @@ class LLMProxy:
         Only acts on non-streaming Anthropic-format responses (content list with
         tool_use blocks). Silently passes through non-Anthropic or malformed responses.
         """
+        if self.tool_acl_enforcer is None:
+            return resp_body
         try:
             data = json.loads(resp_body)
         except (json.JSONDecodeError, UnicodeDecodeError):
@@ -1534,3 +1535,6 @@ class LLMProxy:
                     wait,
                 )
                 await asyncio.sleep(wait)
+
+        # Final-attempt always returns inside the except block above; this is unreachable.
+        return 503, {}, b'{"error":{"type":"max_retries_exceeded"}}'

@@ -15,7 +15,7 @@ import os
 import time
 from collections import defaultdict
 from dataclasses import dataclass
-from typing import Any, Dict, List, Optional
+from typing import Any, Callable, Dict, List, Optional
 
 import psutil
 
@@ -90,7 +90,7 @@ class ResourceGuard:
         self.usage_by_agent: Dict[str, ResourceUsage] = defaultdict(ResourceUsage)
         self.baseline_disk_io = self._get_disk_io_stats()
         self.temp_files_by_agent: Dict[str, List[str]] = defaultdict(list)
-        self.alert_callbacks: List[callable] = []
+        self.alert_callbacks: List[Callable[..., Any]] = []
         self.monitoring_active = True
         self._monitor_task: Optional[asyncio.Task] = None
         # Consecutive-over-threshold counters for the spike debounce.
@@ -99,7 +99,7 @@ class ResourceGuard:
         self._memory_over_count: int = 0
         self._start_monitoring_task()
 
-    def add_alert_callback(self, callback: callable):
+    def add_alert_callback(self, callback: Callable[..., Any]):
         """Add a callback function to be called when resource alerts are triggered."""
         self.alert_callbacks.append(callback)
 
@@ -272,7 +272,8 @@ class ResourceGuard:
     def _get_disk_io_stats(self) -> Dict[str, Any]:
         """Get current disk I/O statistics."""
         try:
-            return psutil.disk_io_counters()._asdict() if psutil.disk_io_counters() else {}
+            io_counters = psutil.disk_io_counters()
+            return io_counters._asdict() if io_counters else {}
         except Exception:
             return {}
 

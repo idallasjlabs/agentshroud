@@ -16,13 +16,9 @@ Environment requirements (all mocked here):
 from __future__ import annotations
 
 import os
-import re
 import subprocess
 import tempfile
 from pathlib import Path
-from unittest.mock import MagicMock, patch
-
-import pytest
 
 # Path to switch_model.sh in the repo root
 _SCRIPT_DIR = Path(__file__).parent.parent.parent / "scripts"
