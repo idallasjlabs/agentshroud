@@ -265,7 +265,8 @@ class SecurityPipeline:
 
     Wires together: PromptGuard, PIISanitizer, TrustManager,
     EgressFilter, ApprovalQueue, OutboundInfoFilter, CanaryTripwire,
-    EncodingDetector, KeyLeakDetector, and AuditChain.
+    EncodingDetector, KeyLeakDetector, AuditChain, CrossBotTrustLedger
+    (Module 27), and DifferentialPIIDetector (Module 28).
     """
 
     def __init__(
@@ -296,6 +297,12 @@ class SecurityPipeline:
         tool_result_injection_scanner=None,
         # CVE-2026-34425: inbound command injection scanner (reuses XMLLeakFilter C32 patterns)
         xml_leak_filter=None,
+        # Module 27 (v1.2.0): Cross-Bot Trust Ledger
+        # IEC 62443 FR3/FR6 — propagates trust decay across bot peers on incident
+        cross_bot_trust_ledger=None,
+        # Module 28 (v1.2.0): Differential PII Detector for Tool Results
+        # IEC 62443 FR3 — lower-floor PII pass on tool results to catch adversarial exfil
+        differential_pii_detector=None,
     ):
         self.prompt_guard = prompt_guard
         self.pii_sanitizer = pii_sanitizer
@@ -318,6 +325,10 @@ class SecurityPipeline:
         self.context_integrity_scorer = context_integrity_scorer
         self.output_schema_enforcer = output_schema_enforcer
         self.envelope_signer = envelope_signer
+        # Module 27: Cross-Bot Trust Ledger (v1.2.0)
+        self.cross_bot_trust_ledger = cross_bot_trust_ledger
+        # Module 28: Differential PII Detector (v1.2.0)
+        self.differential_pii_detector = differential_pii_detector
         self.prompt_block_threshold = prompt_block_threshold
         # Owner exemption: owner messages are logged but never blocked
         self._owner_user_id = None
@@ -948,6 +959,44 @@ class SecurityPipeline:
                     result.audit_hash = entry.chain_hash
                     result.processing_time_ms = (time.time() - start) * 1000
                     return result
+
+        # Step 1.755: Module 28 — Differential PII Detection on tool results.
+        # IEC 62443 FR3: a lower confidence floor (0.7) is applied when the
+        # outbound message originates from a tool result, catching adversarially
+        # formatted exfiltration that evades the standard 0.9-floor PII pass.
+        # Runs only when a tool_name is present in metadata (i.e. this is a
+        # tool-result response, not a direct LLM reply).
+        if self.differential_pii_detector and not result.blocked:
+            tool_name = (metadata or {}).get("tool_name", "")
+            if tool_name:
+                try:
+                    diff_pii_report = self.differential_pii_detector.scan_tool_result(
+                        tool_name=tool_name,
+                        content=result.sanitized_message,
+                    )
+                    if diff_pii_report.has_pii:
+                        result.sanitized_message = diff_pii_report.redacted_content
+                        self._stats["outbound_sanitized"] += 1
+                        self._stats["pii_redactions_total"] += len(diff_pii_report.hits)
+                        logger.info(
+                            "DifferentialPIIDetector: %d hit(s) at floor=%.2f in tool=%r — redacted",
+                            len(diff_pii_report.hits),
+                            diff_pii_report.confidence_floor_used,
+                            tool_name,
+                        )
+                    if diff_pii_report.adversarial_patterns_detected > 0:
+                        logger.warning(
+                            "DifferentialPIIDetector: %d adversarial pattern(s) normalized in tool=%r",
+                            diff_pii_report.adversarial_patterns_detected,
+                            tool_name,
+                        )
+                        self.audit_chain.append(
+                            f"ADVERSARIAL_PII: tool={tool_name} patterns={diff_pii_report.adversarial_patterns_detected}",
+                            "outbound_adversarial_pii",
+                            metadata,
+                        )
+                except Exception as exc:
+                    logger.error("DifferentialPIIDetector error: %s", exc)
 
         # Step 1.76: PromptGuard tool-result scan — block indirect prompt injection
         # embedded in tool outputs (web pages, file reads, API responses).
