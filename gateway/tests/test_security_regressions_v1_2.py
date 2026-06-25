@@ -384,6 +384,30 @@ class TestHermesEgressAllowlist:
                 "Hermes web_search failover engine will be blocked"
             )
 
+    def test_ai_security_research_domains_in_allowlist(self):
+        """AI-security research/competitive-intel domains must be allowlisted.
+
+        These domains were observed blocked during Hermes blue-team research tasks
+        (2026-06-25).  Authorized by owner for Hermes web_extract tool use.
+        """
+        from gateway.security.egress_config import PERMANENT_EGRESS_DOMAINS
+
+        research_domains = (
+            "nist.gov",
+            "lakera.ai",
+            "paloaltonetworks.com",
+            "menlosecurity.com",
+            "adversa.ai",
+            "neuraltrust.ai",
+            "atlan.com",
+            "mintmcp.com",
+        )
+        for domain in research_domains:
+            assert domain in PERMANENT_EGRESS_DOMAINS, (
+                f"{domain} not in PERMANENT_EGRESS_DOMAINS — "
+                "Hermes AI-security research tool will be blocked on this domain"
+            )
+
 
 # ---------------------------------------------------------------------------
 # Session isolation between bots (path separation check)
