@@ -632,8 +632,14 @@ async def test_call_agent_posts_to_forward_endpoint(monkeypatch):
 
 
 @pytest.mark.asyncio
-async def test_call_agent_uses_120s_timeout(monkeypatch):
-    """_call_agent uses 120 s timeout (Hermes agentic loop is slower than raw LLM)."""
+async def test_call_agent_uses_structured_timeout(monkeypatch):
+    """_call_agent must pass a structured httpx.Timeout to AsyncClient.
+
+    The read deadline (35 s) is intentionally shorter than the gateway's own
+    internal /forward timeout (120 s) so the ESP returns to IDLE quickly on a
+    hung agent instead of sitting in THINKING for two minutes.
+    """
+    import httpx
     import voice_gateway.server as srv
 
     captured_timeout: dict = {}
@@ -656,9 +662,12 @@ async def test_call_agent_uses_120s_timeout(monkeypatch):
     await srv._call_agent("hi", "hermes")
 
     assert "timeout" in captured_timeout, "_call_agent must pass a timeout to AsyncClient"
-    assert float(str(captured_timeout["timeout"])) == 120.0, (
-        f"Expected timeout=120.0 for agentic path, got {captured_timeout['timeout']}"
+    t = captured_timeout["timeout"]
+    assert isinstance(t, httpx.Timeout), (
+        f"Expected httpx.Timeout instance, got {type(t)}: {t!r}"
     )
+    assert t.read == 35.0, f"Expected read=35.0 (ESP THINKING deadline), got {t.read}"
+    assert t.connect == 10.0, f"Expected connect=10.0, got {t.connect}"
 
 
 # ── Agent dispatch routing tests ──────────────────────────────────────────────
