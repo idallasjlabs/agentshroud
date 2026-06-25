@@ -102,10 +102,13 @@ fi
 
 # ── P3: Hermes health checks (only when hermes container is running) ─────────
 if docker ps --format '{{.Names}}' 2>/dev/null | grep -q 'agentshroud-hermes'; then
+    # Hermes dashboard binds to 127.0.0.1:9119 inside the container (loopback-only).
+    # Docker's published port (127.0.0.1:9119:9119) cannot forward to the container's
+    # loopback, so we check from inside the container via docker exec instead.
     hermes_dash_ok=false
     deadline=$(( $(date +%s) + WAIT_SECS ))
     while [[ $(date +%s) -lt $deadline ]]; do
-        if curl -sf "http://localhost:9119/" > /dev/null 2>&1; then
+        if docker exec agentshroud-hermes curl -sf --max-time 5 "http://127.0.0.1:9119/" > /dev/null 2>&1; then
             hermes_dash_ok=true
             break
         fi
