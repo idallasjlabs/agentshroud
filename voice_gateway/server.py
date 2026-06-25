@@ -38,6 +38,7 @@ from zoneinfo import ZoneInfo
 
 import httpx
 from fastapi import FastAPI, WebSocket, WebSocketDisconnect
+from websockets.exceptions import ConnectionClosed, ConnectionClosedError, ConnectionClosedOK
 
 from . import stt as _stt
 from . import tts as _tts
@@ -344,6 +345,12 @@ async def voice_endpoint(ws: WebSocket) -> None:
 
     except WebSocketDisconnect:
         logger.info("Disconnected: %s", remote)
+    except (ConnectionClosed, ConnectionClosedError, ConnectionClosedOK) as exc:
+        # Raised by the websockets library on ungraceful (code 1006) or library-level
+        # graceful close — expected when the ESP32 loses WiFi/power mid-session.
+        # Log at INFO, not ERROR: this is normal device behaviour, not a server fault.
+        code = getattr(exc, "code", "?")
+        logger.info("Disconnected (websockets code %s): %s", code, remote)
     except RuntimeError as exc:
         if "disconnect" in str(exc).lower():
             logger.info("Disconnected (dirty close): %s", remote)
