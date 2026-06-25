@@ -61,6 +61,9 @@ run_test "test_hermes_cron_html_email.sh" bash "$SMOKE_DIR/test_hermes_cron_html
 # Hermes chown coverage assertions
 run_test "test_hermes_chown_coverage.sh" bash "$SMOKE_DIR/test_hermes_chown_coverage.sh"
 
+# Skills manifest sync + idempotency assertions (Workstream D)
+run_test "test-skills-sync.sh" bash "$SCRIPT_DIR/smoke.d/test-skills-sync.sh"
+
 # Live boot test (gated by SMOKE_LIVE=1)
 run_test "test_bot_boot_live.sh" bash "$SMOKE_DIR/test_bot_boot_live.sh"
 
