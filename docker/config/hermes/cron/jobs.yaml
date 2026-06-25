@@ -154,6 +154,8 @@ jobs:
       /opt/data/workspace/reports/ (prefer today's date).
       If no report exists, write body "No significant changes detected today."
       To render: a pre-installed renderer is baked into the image.
+      The renderer converts the Markdown report to HTML with inline styles
+      for email client compatibility (white bg #ffffff, text #111111, links #1a73e8).
       Run it with the report file and output path as positional arguments:
       python3 /usr/local/lib/agentshroud/render_md_email.py
         <path-to-report.md> /tmp/competitive-email.html
