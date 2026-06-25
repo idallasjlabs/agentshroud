@@ -43,6 +43,15 @@ _inbound_bot_id: contextvars.ContextVar[Optional[str]] = contextvars.ContextVar(
     "agentshroud_inbound_bot_id", default=None
 )
 
+# Group context — set per inbound update when chat.type is 'group' or 'supergroup'.
+# Value is the Telegram chat_id (as str) of the active group, or None for DM chats.
+# Consumers (ApprovalQueue routing, ToolACL group-context check) read this contextvar
+# to determine whether the current pipeline run is group-scoped.
+# Pattern mirrors _inbound_bot_id: set in _filter_inbound_updates, reset after each update.
+_inbound_group_chat_id: contextvars.ContextVar[Optional[str]] = contextvars.ContextVar(
+    "agentshroud_inbound_group_chat_id", default=None
+)
+
 # Prefer IPv4 when connecting to Telegram API.
 # In some VPN/Docker environments (Colima + Cisco AnyConnect) IPv6 packets are
 # silently dropped, causing socket.create_connection to hang for 10-12 seconds
@@ -4346,6 +4355,15 @@ class TelegramAPIProxy:
             user_id = str(message.get("from", {}).get("id", "unknown"))
             chat_id = message.get("chat", {}).get("id")
 
+            # ── Group context contextvar ──────────────────────────────────────
+            # Set _inbound_group_chat_id so downstream pipeline modules (ToolACL
+            # group-context check, GroupApprovalRouter) know whether this update
+            # originated from a group/supergroup chat or a DM.
+            _chat_type = (message.get("chat") or {}).get("type", "")
+            _inbound_group_chat_id.set(
+                str(chat_id) if _chat_type in ("group", "supergroup") and chat_id is not None else None
+            )
+
             # ── Group chat at-mention filter ──────────────────────────────────
             # ALL group messages are forwarded to the bot for conversational context.
             # But outbound responses are suppressed unless the bot was @mentioned.
@@ -6596,6 +6614,9 @@ class TelegramAPIProxy:
                     logger.error(f"PII sanitization error for telegram message: {e}")
 
             filtered_updates.append(update)
+            # Clear group context contextvar after each update so it does not
+            # bleed into the next iteration (defensive; each iteration sets it fresh).
+            _inbound_group_chat_id.set(None)
 
         response_data["result"] = filtered_updates
         return response_data
