@@ -21,11 +21,9 @@ from typing import Optional
 
 from gateway.security.progressive_trust_config import (
     ProgressiveTrustConfig,
-)
-from gateway.security.progressive_trust_config import TrustLevel as ProgressiveTrustLevel
-from gateway.security.progressive_trust_config import (
     ViolationType,
 )
+from gateway.security.progressive_trust_config import TrustLevel as ProgressiveTrustLevel
 
 
 class TrustLevel(IntEnum):

@@ -24,12 +24,11 @@ import pytest
 from pydantic import ValidationError
 
 from gateway.security.intel_report import (
-    CompetitorEntry,
     CompetitiveIntelReport,
+    CompetitorEntry,
     IntelReportStore,
     ReportIntegrityError,
 )
-
 
 # ---------------------------------------------------------------------------
 # Schema validation

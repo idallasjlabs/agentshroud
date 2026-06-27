@@ -3443,7 +3443,7 @@ async def deep_security_test(auth: AuthRequired):
         )
         alert_file = Path("/tmp/security/alerts/alerts.jsonl")
         has = alert_file.exists() and "deep-test" in alert_file.read_text()
-        return has, f"Alert dispatched and verified in log"
+        return has, "Alert dispatched and verified in log"
 
     test("Alert Dispatcher: write + verify", "alerting", t_alert)
 

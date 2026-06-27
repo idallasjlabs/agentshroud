@@ -13,9 +13,13 @@ from __future__ import annotations
 
 import asyncio
 import json
+from typing import TYPE_CHECKING
 from unittest.mock import AsyncMock, MagicMock, patch
 
 import pytest
+
+if TYPE_CHECKING:
+    from gateway.proxy.telegram_proxy import TelegramAPIProxy
 
 _OPENCLAW_TOKEN = "123456789:OpenClawFakeTelegram_TokenABCDEFGHIJK"
 _HERMES_TOKEN = "987654321:HermesFakeTelegram_TokenXYZABCDEFGHIJ"

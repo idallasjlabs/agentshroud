@@ -23,6 +23,8 @@ if (c.includes("this.logger.debug(`A pong wasn'\''t received")) {
     );
     changed = true;
     console.log("patch-slack-sdk: pong timeout warn -> debug (" + p + ")");
+} else {
+    console.log("patch-slack-sdk: pattern not found — skipped, continuing (" + p + ")");
 }
 
 // Patch 2: Demote reconnect retry warn/error to debug.

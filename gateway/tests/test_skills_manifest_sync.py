@@ -40,7 +40,6 @@ from gateway.skills.manifest import (
 )
 from gateway.web.api import require_auth, router
 
-
 # ---------------------------------------------------------------------------
 # Helpers
 # ---------------------------------------------------------------------------

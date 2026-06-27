@@ -6,6 +6,7 @@ from __future__ import annotations
 
 import asyncio
 import json
+from typing import AsyncIterator
 
 import pytest
 

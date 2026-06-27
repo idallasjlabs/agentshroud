@@ -24,7 +24,6 @@ from gateway.security.cross_bot_trust_ledger import (
 )
 from gateway.security.trust_manager import TrustConfig, TrustLevel, TrustManager
 
-
 # ---------------------------------------------------------------------------
 # Fixtures
 # ---------------------------------------------------------------------------

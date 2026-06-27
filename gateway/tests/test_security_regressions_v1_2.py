@@ -31,7 +31,6 @@ from gateway.security.session_manager import UserSessionManager
 from gateway.security.shared_memory import SharedMemoryManager
 from gateway.security.trust_manager import TrustLevel, TrustManager
 
-
 # ---------------------------------------------------------------------------
 # Fixtures
 # ---------------------------------------------------------------------------

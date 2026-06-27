@@ -348,8 +348,8 @@ class TestOwnerTrustElevation:
     """
 
     def _post_forward(self, user_id, captor, bot_name="hermes"):
-        from gateway.ingest_api.main import app
         import gateway.ingest_api.routes.forward as forward_module
+        from gateway.ingest_api.main import app
 
         mock_state = _make_trust_app_state(bot_name, captor)
         with patch("gateway.ingest_api.routes.forward.app_state", mock_state):

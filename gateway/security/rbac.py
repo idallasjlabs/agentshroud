@@ -239,7 +239,7 @@ class RBACManager:
                 if role == Role.ADMIN and tool_tier == ToolTier.CRITICAL:
                     return PermissionResult(
                         allowed=False,
-                        reason=f"Critical tools require approval for admin users",
+                        reason="Critical tools require approval for admin users",
                         requires_approval=True,
                         denied_action="tool_use",
                     )

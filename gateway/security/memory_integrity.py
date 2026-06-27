@@ -19,7 +19,7 @@ from dataclasses import asdict, dataclass
 from datetime import datetime, timedelta
 from enum import Enum
 from pathlib import Path
-from typing import Any, Dict, Optional, Set, Tuple
+from typing import Any, Dict, List, Optional, Set, Tuple
 
 from gateway.security.memory_config import MemoryIntegrityConfig, MemorySecurityConfig
 

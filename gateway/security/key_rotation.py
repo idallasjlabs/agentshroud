@@ -482,7 +482,7 @@ class KeyRotationManager:
                     results["details"].append(f"Rotated {cred_id}")
                 else:
                     results["failures"] += 1
-                    results["details"].append(f"Failed to rotate {cred_id}: {result.get(error)}")
+                    results["details"].append(f"Failed to rotate {cred_id}: {result.get('error')}")
 
             elif cred.should_warn(policy):
                 results["warnings"] += 1

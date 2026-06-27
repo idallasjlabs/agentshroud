@@ -252,7 +252,7 @@ def _make_github_advisory(cve_id: str, severity: str = "high", score: float = 7.
         "severity": severity,
         "cvss": {"vector_string": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H", "score": score},
         "published_at": "2026-04-10T00:00:00Z",
-        "html_url": f"https://github.com/openclaw/openclaw/security/advisories/GHSA-xxxx",
+        "html_url": "https://github.com/openclaw/openclaw/security/advisories/GHSA-xxxx",
     }
 
 

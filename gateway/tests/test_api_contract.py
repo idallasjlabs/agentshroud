@@ -93,7 +93,7 @@ class TestOpenAPIContract:
         # 500 = unhandled exception — bad. 4xx = expected validation rejection.
         assert (
             response.status_code != 500
-        ), f"/ingest returned 500 on empty request — this is an unhandled exception"
+        ), "/ingest returned 500 on empty request — this is an unhandled exception"
 
     def test_openapi_snapshot_matches_live_schema(self):
         """The committed gateway/openapi.json snapshot must match the live schema.

@@ -1297,7 +1297,7 @@ class MiddlewareManager:
             logger.error(f"Tool result sanitization failed for {tool_name}: {e}")
             # Fail secure - if we can't sanitize, we should block the result
             # But for now, log and allow through to avoid breaking functionality
-            logger.warning(f"Allowing unsanitized tool result through due to sanitization error")
+            logger.warning("Allowing unsanitized tool result through due to sanitization error")
             return tool_result, False
 
     async def close(self) -> None:

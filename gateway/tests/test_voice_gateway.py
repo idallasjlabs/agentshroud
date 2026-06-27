@@ -33,9 +33,7 @@ from unittest.mock import AsyncMock, MagicMock, patch
 
 import pytest
 from fastapi.testclient import TestClient
-
-from voice_gateway.server import app, _call_llm
-
+from voice_gateway.server import _call_llm, app
 
 # ── Health endpoint ───────────────────────────────────────────────────────────
 
@@ -117,6 +115,7 @@ def test_tts_resamples_22050_to_16000(monkeypatch):
     """
     import math
     import struct as _struct
+
     import voice_gateway.tts as tts_mod
 
     # Build 0.5 s of silence at 22050 Hz (the native Piper rate)
@@ -535,8 +534,9 @@ async def test_call_llm_sends_full_history(monkeypatch):
 
 def test_owner_user_id_propagated_as_header(monkeypatch):
     """GATEWAY_OWNER_USER_ID is sent as X-AgentShroud-User-Id header (not a body field)."""
-    import importlib
     import asyncio
+    import importlib
+
     import voice_gateway.server as srv
 
     monkeypatch.setenv("GATEWAY_OWNER_USER_ID", "8096968754")
@@ -1189,9 +1189,9 @@ async def test_ws_pipeline_error_logs_and_recovers_to_idle(monkeypatch, caplog):
     import asyncio
     import logging
     from unittest.mock import AsyncMock, MagicMock
-    from fastapi.websockets import WebSocketDisconnect
 
     import voice_gateway.server as srv
+    from fastapi.websockets import WebSocketDisconnect
 
     # Mock WebSocket
     ws = MagicMock()
@@ -1254,9 +1254,9 @@ async def test_call_agent_read_timeout_returns_fallback(monkeypatch):
     Covers voice_gateway/server.py lines 224-228.
     """
     import logging
-    import httpx
     from unittest.mock import AsyncMock, patch
 
+    import httpx
     import voice_gateway.server as srv
 
     with patch(
@@ -1278,9 +1278,9 @@ async def test_ws_direct_agent_pipeline_error_pops_history_and_recovery_send_fai
     """
     import logging
     from unittest.mock import AsyncMock, MagicMock
-    from fastapi.websockets import WebSocketDisconnect
 
     import voice_gateway.server as srv
+    from fastapi.websockets import WebSocketDisconnect
 
     ws = MagicMock()
     ws.client = MagicMock()
