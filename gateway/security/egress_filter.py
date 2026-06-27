@@ -140,7 +140,7 @@ class EgressFilter:
         Called by the Telegram callback handler when the owner selects 1h/4h/24h.
         Cleans up stale entries to prevent unbounded growth.
         """
-        from datetime import datetime, timezone
+        from datetime import datetime
 
         try:
             expiry = datetime.fromisoformat(expires_at_iso.replace("Z", "+00:00")).timestamp()

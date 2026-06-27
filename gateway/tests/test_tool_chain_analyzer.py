@@ -14,12 +14,9 @@ import pytest
 from gateway.security.tool_chain_analyzer import (
     ChainAction,
     ChainMatch,
-    ChainPattern,
     ParamScanResult,
     ReversibilityScore,
     RiskLevel,
-    SessionChainContext,
-    ToolCall,
     ToolChainAnalyzer,
 )
 

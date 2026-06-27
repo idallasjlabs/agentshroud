@@ -11,8 +11,7 @@ import uuid
 from dataclasses import dataclass, field
 from enum import Enum
 from pathlib import Path
-from typing import Dict, List, Optional, Set
-from urllib.parse import urlparse
+from typing import Dict, List, Optional
 
 from .egress_config import PERMANENT_EGRESS_DOMAINS
 

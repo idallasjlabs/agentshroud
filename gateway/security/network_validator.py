@@ -63,7 +63,7 @@ class NetworkValidator:
 
         try:
             self.docker_client = docker.from_env()
-        except Exception as e:
+        except Exception:
             logger.info(
                 "NetworkValidator: Docker socket not available (expected in containerized deployments) — static validation only"
             )

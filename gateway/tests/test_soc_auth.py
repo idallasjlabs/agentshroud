@@ -5,8 +5,6 @@ from __future__ import annotations
 
 import time
 
-import pytest
-
 from gateway.soc.auth import (
     _session_tokens,
     _verify_session_token,

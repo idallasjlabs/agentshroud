@@ -18,14 +18,7 @@ import time
 from pathlib import Path
 from unittest.mock import MagicMock, patch
 
-import pytest
-
 from gateway.security.scanner_integration import (
-    _CLAMAV_REPORT_DIR,
-    _TRIVY_REPORT_DIR,
-    _score_access_control_authorization,
-    _score_data_confidentiality_encryption,
-    _score_host_os_hardening,
     _score_malware_defense,
     _score_vulnerability_management,
 )
@@ -164,7 +157,7 @@ def test_host_hardening_empty_audit_log_no_bonus(tmp_path):
     empty_audit = tmp_path / "audit.log"
     empty_audit.touch()  # zero bytes
 
-    with patch("gateway.security.scanner_integration._score_host_os_hardening") as mock_fn:
+    with patch("gateway.security.scanner_integration._score_host_os_hardening"):
         # We test the actual function directly — just verify our patch of the logic
         pass
 

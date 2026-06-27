@@ -16,9 +16,8 @@ import os
 import subprocess
 import time
 from collections import deque
-from datetime import datetime, timedelta, timezone
-from pathlib import Path
-from typing import Any, Dict, List, Optional, Tuple
+from datetime import datetime, timezone
+from typing import Any, Dict, Optional, Tuple
 
 import psutil
 
@@ -443,7 +442,7 @@ class KillSwitchMonitor:
                 # Just validate that the script accepts the mode parameter
                 # We'll use 'bash -n' to check if the command would be valid
                 cmd = ["bash", "-c", f"echo 'Testing {mode} mode parameter validation'"]
-                result = subprocess.run(cmd, capture_output=True, text=True, timeout=5)
+                subprocess.run(cmd, capture_output=True, text=True, timeout=5)
 
                 return {
                     "name": f"{mode}_mode",

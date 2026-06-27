@@ -21,10 +21,9 @@ from __future__ import annotations
 import shutil
 import tempfile
 from pathlib import Path
-from unittest.mock import MagicMock, Mock
+from unittest.mock import MagicMock
 
 import pytest
-import pytest_asyncio
 
 from gateway.ingest_api.middleware import MiddlewareManager, MiddlewareResult
 from gateway.security.session_manager import UserSessionManager

@@ -13,7 +13,6 @@ Now includes per-user session isolation.
 """
 
 
-import hashlib
 import hmac
 import json
 import logging

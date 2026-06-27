@@ -6,13 +6,11 @@
 
 from __future__ import annotations
 
-import tempfile
 from pathlib import Path
 
 import pytest
 
 from gateway.security.session_manager import (
-    ConversationMessage,
     UserSession,
     UserSessionManager,
 )
@@ -265,7 +263,6 @@ class TestMultiBotIsolation:
     def test_legacy_session_promoted_on_load(self, tmp_path):
         """Existing plain user_id keys (no separator) are promoted to user::openclaw."""
         import json
-        from pathlib import Path
 
         # Write a legacy session_registry.json with a plain user_id key
         registry_path = tmp_path / "session_registry.json"

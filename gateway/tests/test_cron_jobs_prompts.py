@@ -14,8 +14,6 @@ from __future__ import annotations
 import json
 from pathlib import Path
 
-import pytest
-
 # Primary cron config used by running containers.
 _CRON_JSON = (
     Path(__file__).parent.parent.parent / "docker" / "config" / "openclaw" / "cron" / "jobs.json"

@@ -14,9 +14,7 @@ TDD — tests are written FIRST.  Implementation must satisfy these before merge
 
 from __future__ import annotations
 
-import hashlib
 import json
-import tempfile
 import time
 from pathlib import Path
 

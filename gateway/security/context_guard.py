@@ -15,7 +15,7 @@ import re
 import time
 import uuid
 from collections import defaultdict, deque
-from dataclasses import dataclass, field
+from dataclasses import dataclass
 from typing import Any, Dict, List, Tuple
 
 from gateway.security.input_normalizer import normalize_input

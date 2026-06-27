@@ -18,7 +18,6 @@ from fastapi.testclient import TestClient
 
 from gateway.ingest_api.main import app, auth_dep
 from gateway.ingest_api.middleware import MiddlewareResult
-from gateway.ingest_api.models import ForwardRequest
 
 
 class TestForwardEndpoint:
@@ -34,7 +33,7 @@ class TestForwardEndpoint:
         )
 
         # Mock auth
-        mock_auth = MagicMock()
+        MagicMock()
 
         with (
             patch("gateway.ingest_api.routes.forward.app_state") as mock_app_state,
@@ -76,7 +75,7 @@ class TestForwardEndpoint:
         mock_middleware = MagicMock()
         mock_middleware.process.side_effect = Exception("Middleware error")
 
-        mock_auth = MagicMock()
+        MagicMock()
 
         with (
             patch("gateway.ingest_api.routes.forward.app_state") as mock_app_state,
@@ -401,8 +400,6 @@ class TestHermesDashboardPathTraversal:
         """hermes_dashboard_proxy raises HTTPException(400) for traversal in path."""
         from unittest.mock import MagicMock
 
-        from fastapi import HTTPException
-
         from gateway.ingest_api.main import hermes_dashboard_proxy
 
         mock_request = MagicMock()
@@ -418,8 +415,6 @@ class TestHermesDashboardPathTraversal:
     async def test_proxy_returns_400_on_traversal_in_query(self):
         """hermes_dashboard_proxy raises HTTPException(400) for traversal in query string."""
         from unittest.mock import MagicMock
-
-        from fastapi import HTTPException
 
         from gateway.ingest_api.main import hermes_dashboard_proxy
 

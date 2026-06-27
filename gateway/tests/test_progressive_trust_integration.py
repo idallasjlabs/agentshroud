@@ -14,8 +14,6 @@ behaves exactly as before.
 
 from __future__ import annotations
 
-import pytest
-
 from gateway.security.progressive_trust_config import (
     ProgressiveTrustConfig,
     PromotionThreshold,

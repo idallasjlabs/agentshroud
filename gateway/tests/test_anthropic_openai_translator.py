@@ -8,8 +8,6 @@ import asyncio
 import json
 from typing import AsyncIterator
 
-import pytest
-
 from gateway.proxy.anthropic_openai_sse_translator import translate_openai_sse_to_anthropic
 from gateway.proxy.anthropic_openai_translator import (
     anthropic_to_openai_request,

@@ -11,7 +11,7 @@ Strips markdown images and links pointing to non-allowlisted domains while prese
 import logging
 import re
 from dataclasses import dataclass, field
-from typing import List, Optional, Set, Tuple
+from typing import List, Optional, Tuple
 from urllib.parse import urlparse
 
 logger = logging.getLogger("agentshroud.security.tool_result_sanitizer")

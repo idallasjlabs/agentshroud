@@ -7,13 +7,12 @@ from __future__ import annotations
 """
 Comprehensive tests for Separation of Privilege (Sprint 5) - AgentShroud v0.7.0
 
-Tests that agents cannot modify AgentShroud's own source code, configuration, 
+Tests that agents cannot modify AgentShroud's own source code, configuration,
 security policies, or other security-critical files.
 """
 
 import os
 import tempfile
-from pathlib import Path
 
 import pytest
 
@@ -252,7 +251,6 @@ class TestPatternMatching:
 
     def test_symlink_resolution(self, strict_sandbox):
         """Symlinks should be resolved - symlink to blocked path must be caught."""
-        import tempfile
 
         workspace_dir = tempfile.mkdtemp(prefix="agentshroud_test_workspace_")
         os.makedirs(workspace_dir, exist_ok=True)

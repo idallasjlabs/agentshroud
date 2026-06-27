@@ -443,7 +443,7 @@ class TestEgressApprovalAPI:
             async with httpx.AsyncClient(transport=transport, base_url="http://test") as client:
                 # This would fail due to auth, but we can test the logic
                 try:
-                    response = await client.get("/manage/egress/rules")
+                    await client.get("/manage/egress/rules")
                 except Exception:
                     pass  # Expected due to auth requirements
 

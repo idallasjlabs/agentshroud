@@ -12,7 +12,7 @@ from __future__ import annotations
 import logging
 from dataclasses import dataclass
 from enum import Enum
-from typing import Any, Dict, List, Optional, Set
+from typing import Any, Dict, Optional, Set
 
 from .rbac_config import RBACConfig, Role, ToolTier
 
@@ -374,7 +374,7 @@ class RBACManager:
         manager_role = self.get_user_role(manager_user_id)
         target_role = self.get_user_role(target_user_id)
 
-        hierarchy = self.get_role_hierarchy()
+        self.get_role_hierarchy()
 
         # Owner can manage everyone except other owners
         if manager_role == Role.OWNER and target_role != Role.OWNER:

@@ -25,7 +25,7 @@ except ImportError:
     print("click is required. Install with: pip install click", file=sys.stderr)
     sys.exit(1)
 
-from .client import SCLClient, client_from_env
+from .client import SCLClient
 
 
 def _is_tty() -> bool:

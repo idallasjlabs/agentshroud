@@ -14,8 +14,6 @@ from pathlib import Path
 from typing import Any, Dict
 from unittest.mock import MagicMock, patch
 
-import pytest
-
 from gateway.security.scanner_integration import (
     _DISA_STIG_DOMAIN_MAP,
     _EU_AI_ACT_DOMAIN_MAP,
@@ -826,8 +824,6 @@ class TestScoreSecureDevelopment:
         semgrep.write_text("rules: []")
         precommit = tmp_path / ".pre-commit-config.yaml"
         precommit.write_text("repos: []")
-        semgrep_paths = [semgrep]
-        precommit_paths = [precommit]
         with (patch("gateway.security.scanner_integration.Path") as mock_path_cls,):
 
             def path_factory(s):

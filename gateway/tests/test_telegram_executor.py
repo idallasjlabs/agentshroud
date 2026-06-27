@@ -44,7 +44,6 @@ def test_lifespan_hermes_forwarder_has_http_peek():
 @pytest.mark.asyncio
 async def test_hermes_forwarder_drops_non_http():
     """Non-HTTP bytes (e.g. TLS ClientHello) must be dropped without proxying."""
-    dropped = []
     connected = []
 
     async def _fake_reader_factory(data: bytes):
@@ -72,8 +71,8 @@ async def test_hermes_forwarder_drops_non_http():
 
     # Simulate TLS ClientHello (starts with \x16\x03)
     tls_hello = b"\x16\x03\x01\x00\x80" + b"\x00" * 11
-    reader = await _fake_reader_factory(tls_hello)
-    writer = _FakeWriter()
+    await _fake_reader_factory(tls_hello)
+    _FakeWriter()
 
     # Patch open_connection to detect upstream connection attempts
     async def _fake_open_connection(host, port):

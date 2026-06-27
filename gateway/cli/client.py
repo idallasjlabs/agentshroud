@@ -7,7 +7,7 @@ import json
 import os
 from typing import Any, Dict, List, Optional
 from urllib.error import HTTPError
-from urllib.parse import urlencode, urljoin
+from urllib.parse import urlencode
 from urllib.request import Request, urlopen
 
 

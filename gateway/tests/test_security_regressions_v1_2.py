@@ -21,9 +21,7 @@ Finding-to-test mapping:
 
 from __future__ import annotations
 
-import tempfile
 from pathlib import Path
-from unittest.mock import MagicMock, patch
 
 import pytest
 
@@ -249,7 +247,7 @@ class TestCrossBotTrustPivot:
         # Register a user whose ID happens to match (name collision scenario)
         # In production this would never happen because Telegram UIDs are numeric,
         # but we verify the data-model isolation is correct.
-        result = trust_manager.register_agent("openclaw")  # already registered
+        trust_manager.register_agent("openclaw")  # already registered
         trust_info = trust_manager.get_trust("openclaw")
         assert trust_info is not None
 
@@ -318,7 +316,6 @@ class TestHermesDashboardForwarderBinding:
 
     def test_hermes_dashboard_forwarder_bind_address_is_documented(self):
         """BT-M1: Verify the forwarder bind address — currently 0.0.0.0 (accepted risk)."""
-        import ast
         import re
 
         lifespan_path = (

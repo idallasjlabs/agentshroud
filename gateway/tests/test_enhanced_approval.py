@@ -8,8 +8,6 @@ from __future__ import annotations
 
 import asyncio
 import tempfile
-from datetime import datetime, timedelta
-from unittest.mock import Mock, patch
 
 import pytest
 import pytest_asyncio
@@ -119,16 +117,16 @@ class TestToolRiskClassification:
     async def test_requires_approval(self, enhanced_queue):
         """Test approval requirement logic."""
         # Critical tools always require approval
-        assert enhanced_queue.requires_approval("exec") == True
-        assert enhanced_queue.requires_approval("cron") == True
+        assert enhanced_queue.requires_approval("exec")
+        assert enhanced_queue.requires_approval("cron")
 
         # High tools require approval except with owner bypass
-        assert enhanced_queue.requires_approval("nodes") == True
-        assert enhanced_queue.requires_approval("nodes", "test_owner") == False
+        assert enhanced_queue.requires_approval("nodes")
+        assert not enhanced_queue.requires_approval("nodes", "test_owner")
 
         # Medium/low don't require approval
-        assert enhanced_queue.requires_approval("grep") == False
-        assert enhanced_queue.requires_approval("ls") == False
+        assert not enhanced_queue.requires_approval("grep")
+        assert not enhanced_queue.requires_approval("ls")
 
     @pytest.mark.asyncio
     async def test_enforce_mode_disabled(self, tool_risk_config, temp_store):
@@ -138,8 +136,8 @@ class TestToolRiskClassification:
         queue = EnhancedApprovalQueue(config, tool_risk_config, temp_store)
 
         # Should not require approval even for critical tools
-        assert queue.requires_approval("exec") == False
-        assert queue.requires_approval("cron") == False
+        assert not queue.requires_approval("exec")
+        assert not queue.requires_approval("cron")
 
 
 class TestApprovalWorkflow:
@@ -153,7 +151,7 @@ class TestApprovalWorkflow:
             "exec", {"command": "ls -la"}, "test_agent"
         )
 
-        assert requires_wait == True
+        assert requires_wait
         assert request_id != ""
 
         # Check pending items
@@ -179,7 +177,7 @@ class TestApprovalWorkflow:
             "cron", {"schedule": "0 */6 * * *", "command": "backup.sh"}, "test_agent"
         )
 
-        assert requires_wait == True
+        assert requires_wait
 
         # Deny the request
         item = await enhanced_queue.decide(request_id, False, "Security risk")
@@ -230,7 +228,7 @@ class TestApprovalWorkflow:
 
         # Wait for decision
         approved = await enhanced_queue.wait_for_decision(request_id, timeout=1.0)
-        assert approved == True
+        assert approved
 
         await task
 
@@ -242,7 +240,7 @@ class TestApprovalWorkflow:
             "ls", {"path": "/tmp"}, "test_agent"
         )
 
-        assert requires_wait == False
+        assert not requires_wait
         assert request_id == ""
 
         # No pending items should exist
@@ -272,7 +270,7 @@ class TestMCPProxyIntegration:
         request_id, requires_wait = await queue.submit_tool_request(
             "exec", {"command": "cat /etc/passwd"}, "test_agent"
         )
-        assert requires_wait == True
+        assert requires_wait
 
         # Verify pending
         pending = await queue.get_pending()
@@ -294,8 +292,8 @@ class TestMCPProxyIntegration:
         result = await mcp_proxy_with_approval.process_tool_call(tool_call, execute=False)
 
         # Should be allowed
-        assert result.allowed == True
-        assert result.blocked == False
+        assert result.allowed
+        assert not result.blocked
 
     @pytest.mark.asyncio
     @pytest.mark.asyncio
@@ -312,8 +310,8 @@ class TestMCPProxyIntegration:
         result = await mcp_proxy_with_approval.process_tool_call(tool_call, execute=False)
 
         # Should be allowed due to owner bypass
-        assert result.allowed == True
-        assert result.blocked == False
+        assert result.allowed
+        assert not result.blocked
 
 
 class TestPersistence:
@@ -337,7 +335,7 @@ class TestPersistence:
             "exec", {"command": "test"}, "test_agent"
         )
 
-        assert requires_wait == True
+        assert requires_wait
         pending1 = await queue1.get_pending()
         assert len(pending1) == 1
 
@@ -376,7 +374,7 @@ async def test_websocket_notifications():
     request_id, requires_wait = await queue.submit_tool_request(
         "exec", {"command": "test"}, "test_agent"
     )
-    assert requires_wait == True
+    assert requires_wait
 
     # Verify the item exists and has notification metadata
     item = await queue.get_item(request_id)
