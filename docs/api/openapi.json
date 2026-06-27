@@ -3,7 +3,7 @@
   "openapi": "3.0.0",
   "info": {
     "title": "AgentShroud Gateway API",
-    "version": "1.0.0",
+    "version": "1.2.1",
     "description": "AgentShroud enterprise governance proxy API. Run scripts/export-openapi.sh to generate the full spec."
   },
   "paths": {}
