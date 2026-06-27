@@ -896,6 +896,19 @@
             "title": "Command",
             "type": "string"
           },
+          "cwd": {
+            "anyOf": [
+              {
+                "maxLength": 4096,
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "description": "Working directory on the remote host (absolute path, no shell metacharacters)",
+            "title": "Cwd"
+          },
           "host": {
             "description": "SSH host name from config",
             "maxLength": 253,
