@@ -11,7 +11,6 @@ RBAC is enforced via check_permission() on every SCL handler.
 
 from __future__ import annotations
 
-import hashlib
 import hmac
 import logging
 import os
@@ -19,7 +18,7 @@ import secrets
 import time
 from typing import Optional
 
-from fastapi import Cookie, Depends, Header, HTTPException, Request, status
+from fastapi import Cookie, Depends, Header, HTTPException, status
 
 from ..security.rbac import Action, RBACManager, Resource
 from ..security.rbac_config import RBACConfig, Role

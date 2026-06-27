@@ -498,12 +498,11 @@ def test_grant_timed_approval_does_not_affect_other_domains():
 
 def test_grant_timed_approval_expired_falls_back_to_deny():
     """An expired timed approval should be evicted and the domain denied."""
-    import time
     from datetime import datetime, timedelta, timezone
 
     ef = _make_deny_all_filter()
     # Grant an approval that already expired
-    expired = (datetime.now(timezone.utc) - timedelta(seconds=1)).isoformat()
+    (datetime.now(timezone.utc) - timedelta(seconds=1)).isoformat()
     ef._timed_approvals["weather.com"] = datetime.now(timezone.utc).timestamp() - 1
     result = ef.check("agent1", "weather.com")
     assert result.action == EgressAction.DENY

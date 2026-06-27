@@ -14,7 +14,6 @@ import fcntl
 import json
 import logging
 import os
-from dataclasses import dataclass, field
 from pathlib import Path
 from typing import Dict, List, Optional
 

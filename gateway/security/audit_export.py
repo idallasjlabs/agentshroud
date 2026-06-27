@@ -6,7 +6,7 @@ from __future__ import annotations
 # Unauthorized reproduction, distribution, or use of the AgentShroud name or brand is strictly prohibited.
 """Audit export functionality with CEF, JSON-LD, and JSON formats.
 
-Exports security audit logs in compliance-ready formats with tamper-evident 
+Exports security audit logs in compliance-ready formats with tamper-evident
 verification capabilities.
 """
 

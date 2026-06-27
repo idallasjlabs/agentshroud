@@ -19,7 +19,7 @@ import re
 import time
 from dataclasses import dataclass, field
 from enum import Enum
-from typing import Any, Dict, List, Optional, Set
+from typing import Any, Dict, List, Optional
 
 logger = logging.getLogger("agentshroud.security.multi_turn_tracker")
 
@@ -456,7 +456,6 @@ class MultiTurnTracker:
         Returns ConsistencyScore with score 0.0–1.0 (higher = more consistent).
         Anomalies below 0.4 trigger an audit warning.
         """
-        from dataclasses import dataclass as _dc
 
         factors: List[str] = []
         anomalies: List[str] = []

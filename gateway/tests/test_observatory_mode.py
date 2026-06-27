@@ -23,17 +23,16 @@ from __future__ import annotations
 import asyncio
 import logging
 import os
-import tempfile
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
-from unittest.mock import AsyncMock, MagicMock, Mock, patch
+from unittest.mock import Mock, patch
 
 import pytest
 from fastapi import FastAPI
 from fastapi.testclient import TestClient
 
 import gateway.web.api as api_module
-from gateway.ingest_api.config import GatewayConfig, get_module_mode
+from gateway.ingest_api.config import get_module_mode
 from gateway.proxy.pipeline import SecurityPipeline
 from gateway.web.api import VALID_AGENTSHROUD_MODES, ModeRequest, router
 
@@ -177,7 +176,6 @@ class TestAutoRevert:
     async def test_revert_task_created_on_put(self):
         """A revert task is created (and is an asyncio.Task)."""
         app = _make_app()
-        from fastapi.testclient import TestClient
 
         async with app.router.lifespan_context(app):
             pass  # not needed — just verify task creation

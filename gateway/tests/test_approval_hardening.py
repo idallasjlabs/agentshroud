@@ -3,8 +3,6 @@ from __future__ import annotations
 
 """Tests for approval queue hardening functionality."""
 
-import json
-import time
 from unittest.mock import patch
 
 import pytest
@@ -208,7 +206,7 @@ class TestApprovalHardening:
         agent_id = "test_agent"
 
         # First request
-        detection1 = hardening.analyze_request(tool_name, "Run command", parameters, agent_id)
+        hardening.analyze_request(tool_name, "Run command", parameters, agent_id)
 
         # Second identical request
         detection2 = hardening.analyze_request(tool_name, "Run command", parameters, agent_id)

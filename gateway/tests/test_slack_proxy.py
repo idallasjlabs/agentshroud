@@ -70,7 +70,7 @@ class TestProxyOutbound:
         proxy._call_slack_api = AsyncMock(return_value={"ok": True})
 
         body = json.dumps({"channel": "C123", "timestamp": "1234"}).encode()
-        result = await proxy.proxy_outbound("reactions.add", body, "application/json")
+        await proxy.proxy_outbound("reactions.add", body, "application/json")
 
         pipeline.process_outbound.assert_not_called()
         proxy._call_slack_api.assert_called_once()

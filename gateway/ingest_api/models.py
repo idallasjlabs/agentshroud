@@ -217,6 +217,11 @@ class SSHExecRequest(BaseModel):
     command: str = Field(..., max_length=10_000, description="Command to execute")
     timeout: Optional[int] = Field(default=None, description="Timeout in seconds")
     reason: str = Field(default="", max_length=2_000, description="Reason for execution")
+    cwd: Optional[str] = Field(
+        default=None,
+        max_length=4_096,
+        description="Working directory on the remote host (absolute path, no shell metacharacters)",
+    )
 
 
 class SSHExecResponse(BaseModel):

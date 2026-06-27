@@ -10,7 +10,6 @@ import pytest
 from gateway.security.output_schema import (
     OutputSchemaEnforcer,
     SchemaRule,
-    SchemaValidationResult,
 )
 
 

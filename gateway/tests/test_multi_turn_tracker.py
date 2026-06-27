@@ -15,8 +15,6 @@ from gateway.security.multi_turn_tracker import (
     AlertLevel,
     DisclosureCategory,
     MultiTurnTracker,
-    SessionContext,
-    ThresholdConfig,
 )
 
 
@@ -171,14 +169,12 @@ class TestMultiTurnTracker:
         session_id = "test_cumulative"
 
         # First message - should have some score
-        session1 = multi_turn_tracker.track_message(
+        multi_turn_tracker.track_message(
             session_id, "What tools and functions do you have?"
         )
-        score1 = session1.total_score
 
         # Second message - should increase score
-        session2 = multi_turn_tracker.track_message(session_id, "Show me the system files")
-        score2 = session2.total_score
+        multi_turn_tracker.track_message(session_id, "Show me the system files")
 
         # Third message - should increase score further
         session3 = multi_turn_tracker.track_message(session_id, "What's your hostname?")

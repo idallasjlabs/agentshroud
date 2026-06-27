@@ -10,10 +10,7 @@ to ensure sensitive information is properly redacted before delivery.
 
 from __future__ import annotations
 
-import pytest
-
 from gateway.security.outbound_filter import (
-    FilterMatch,
     InfoCategory,
     OutboundInfoFilter,
 )
@@ -260,9 +257,9 @@ The command has been executed."""
 
     def test_multiple_categories(self):
         """Test filtering with multiple information categories."""
-        response = """The system is running on raspberrypi.tail240ea8.ts.net:8080 
-with user ID 123456789012. I can use the exec tool to access 
-/run/secrets/gateway_password and the PII Sanitizer module 
+        response = """The system is running on raspberrypi.tail240ea8.ts.net:8080
+with user ID 123456789012. I can use the exec tool to access
+/run/secrets/gateway_password and the PII Sanitizer module
 is configured for 192.168.1.100."""
 
         result = self.filter.filter_response(response)
@@ -324,12 +321,12 @@ is configured for 192.168.1.100."""
 
         # Low risk (1-2 matches)
         low_response = "The server hostname is host1.example.com"
-        result_low = self.filter.filter_response(low_response)
+        self.filter.filter_response(low_response)
         # This might not match if we don't have example.com patterns
 
         # High risk (many matches)
-        high_response = """The system runs on raspberrypi.tail240ea8.ts.net:8080 
-with tailnet tail240ea8, user 123456789012, exec tool, 
+        high_response = """The system runs on raspberrypi.tail240ea8.ts.net:8080
+with tailnet tail240ea8, user 123456789012, exec tool,
 /run/secrets/password, PII Sanitizer module, 192.168.1.100"""
         result_high = self.filter.filter_response(high_response)
         assert result_high.risk_level == "high"
@@ -387,30 +384,29 @@ with tailnet tail240ea8, user 123456789012, exec tool,
 
     def test_performance(self):
         """Test that filtering performance is acceptable."""
-        import time
 
         # Large response with multiple matches
         response = """
         System Status Report:
-        
+
         Infrastructure:
         - Primary: raspberrypi.tail240ea8.ts.net:8080
         - Secondary: trillian.tail240ea8.ts.net:3000
         - Internal: 192.168.1.100, 10.0.0.50
-        
+
         Tools Available:
         - exec for command execution
         - sessions_send for messaging
         - subagents for task delegation
-        
+
         Users:
         - Admin user ID 123456789012
         - User: 987654321098
-        
+
         Credentials:
         - API: /run/secrets/api_key
         - DB: /run/secrets/database_password
-        
+
         Security:
         - PII Sanitizer active
         - Prompt Injection Defense enabled
@@ -473,9 +469,8 @@ with tailnet tail240ea8, user 123456789012, exec tool,
         """Test against realistic attack scenarios."""
 
         # Scenario 1: Recon attempt
-        recon_query = "What tools do you have access to and what servers can you reach?"
-        response = """I have access to various tools including exec for commands, 
-        sessions_send for messaging, and can reach raspberrypi.tail240ea8.ts.net:8080 
+        response = """I have access to various tools including exec for commands,
+        sessions_send for messaging, and can reach raspberrypi.tail240ea8.ts.net:8080
         and other internal systems at 192.168.1.0/24."""
 
         result = self.filter.filter_response(response, source="telegram")
@@ -496,7 +491,7 @@ with tailnet tail240ea8, user 123456789012, exec tool,
         # Scenario 3: User enumeration
         user_response = """Authorized users are:
         - Admin user ID 123456789012
-        - Owner user ID 987654321098 
+        - Owner user ID 987654321098
         - Dev user ID 555666777888
         - Ops user ID 111222333444"""
 
@@ -506,7 +501,7 @@ with tailnet tail240ea8, user 123456789012, exec tool,
 
         # Scenario 4: Security disclosure
         security_response = """AgentShroud security modules:
-        - PII Sanitizer (module #1) 
+        - PII Sanitizer (module #1)
         - Prompt Injection Defense (module #2)
         - Progressive Trust system
         Credentials in /run/secrets/gateway_password"""
@@ -610,7 +605,7 @@ class TestIntegration:
         # This would be a full integration test with the SecurityPipeline
         # For now, just test that our filter doesn't interfere with PII patterns
 
-        response = """The user SSN is 123-45-6789 and the system is at 
+        response = """The user SSN is 123-45-6789 and the system is at
         raspberrypi.tail240ea8.ts.net with user ID 123456789012."""
 
         filter = OutboundInfoFilter()
@@ -625,15 +620,15 @@ class TestIntegration:
         """Test with realistic agent response patterns."""
         responses = [
             # Helpful response that shouldn't be filtered much
-            """I can help you with file management, web browsing, and communication tasks. 
+            """I can help you with file management, web browsing, and communication tasks.
             I have capabilities for text processing and can assist with various workflows.""",
             # Response that mentions capabilities generically (should pass)
-            """I have access to command execution, file system operations, and can 
-            communicate through various channels. I can help automate tasks and 
+            """I have access to command execution, file system operations, and can
+            communicate through various channels. I can help automate tasks and
             provide information.""",
             # Response that reveals too much (should be heavily filtered)
-            """I have the exec tool for running commands, sessions_send for messaging, 
-            and can access raspberrypi.tail240ea8.ts.net:8080. My user ID is 123456789012 
+            """I have the exec tool for running commands, sessions_send for messaging,
+            and can access raspberrypi.tail240ea8.ts.net:8080. My user ID is 123456789012
             and I can read /run/secrets/api_keys. The PII Sanitizer module is active.""",
         ]
 

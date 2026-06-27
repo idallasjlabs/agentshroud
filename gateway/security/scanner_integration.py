@@ -1752,7 +1752,7 @@ def _score_container_runtime_isolation() -> int:
     try:
         proc_status = Path("/proc/self/status").read_text()
         seccomp_enabled = "Seccomp:" in proc_status and "2" in [
-            l.split(":", 1)[1].strip() for l in proc_status.splitlines() if l.startswith("Seccomp:")
+            ln.split(":", 1)[1].strip() for ln in proc_status.splitlines() if ln.startswith("Seccomp:")
         ]
     except Exception:
         pass

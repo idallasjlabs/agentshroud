@@ -13,9 +13,7 @@ from __future__ import annotations
 
 from unittest.mock import AsyncMock, MagicMock, patch
 
-import pytest
-
-from gateway.ingest_api.models import AgentTarget, ForwardRequest
+from gateway.ingest_api.models import AgentTarget
 
 
 class _PipelineCaptor:
@@ -129,7 +127,7 @@ class TestAgentIdPropagatedFromTarget:
 
             from gateway.ingest_api.models import AgentTarget, ForwardRequest
 
-            request = ForwardRequest(
+            ForwardRequest(
                 content="test", source="api", content_type="text", route_to="openclaw"
             )
             target = AgentTarget(name="openclaw", url="http://agentshroud:18789", chat_path="/chat")
@@ -301,7 +299,6 @@ class _TrustCaptor:
 
 def _make_trust_app_state(bot_name: str, captor: _TrustCaptor):
     """Minimal app_state for owner-trust tests."""
-    from fastapi.testclient import TestClient
 
     mock_state = MagicMock()
     target = AgentTarget(
@@ -348,8 +345,8 @@ class TestOwnerTrustElevation:
     """
 
     def _post_forward(self, user_id, captor, bot_name="hermes"):
-        from gateway.ingest_api.main import app
         import gateway.ingest_api.routes.forward as forward_module
+        from gateway.ingest_api.main import app
 
         mock_state = _make_trust_app_state(bot_name, captor)
         with patch("gateway.ingest_api.routes.forward.app_state", mock_state):

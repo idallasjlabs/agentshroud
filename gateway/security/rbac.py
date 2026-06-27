@@ -12,7 +12,7 @@ from __future__ import annotations
 import logging
 from dataclasses import dataclass
 from enum import Enum
-from typing import Any, Dict, List, Optional, Set
+from typing import Any, Dict, Optional, Set
 
 from .rbac_config import RBACConfig, Role, ToolTier
 
@@ -239,7 +239,7 @@ class RBACManager:
                 if role == Role.ADMIN and tool_tier == ToolTier.CRITICAL:
                     return PermissionResult(
                         allowed=False,
-                        reason=f"Critical tools require approval for admin users",
+                        reason="Critical tools require approval for admin users",
                         requires_approval=True,
                         denied_action="tool_use",
                     )
@@ -374,7 +374,7 @@ class RBACManager:
         manager_role = self.get_user_role(manager_user_id)
         target_role = self.get_user_role(target_user_id)
 
-        hierarchy = self.get_role_hierarchy()
+        self.get_role_hierarchy()
 
         # Owner can manage everyone except other owners
         if manager_role == Role.OWNER and target_role != Role.OWNER:

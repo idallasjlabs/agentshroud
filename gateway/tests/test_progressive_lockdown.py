@@ -16,8 +16,6 @@ import time
 from dataclasses import dataclass, field
 from typing import Any
 
-import pytest
-
 from gateway.proxy.telegram_proxy import TelegramAPIProxy
 from gateway.security.progressive_lockdown import (
     LockdownLevel,

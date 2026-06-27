@@ -7,8 +7,6 @@ from __future__ import annotations
 """Tests for audit export functionality."""
 
 import json
-from datetime import datetime, timezone
-from io import StringIO
 
 import pytest
 import pytest_asyncio

@@ -20,7 +20,6 @@ import sys
 from pathlib import Path
 from unittest.mock import patch
 
-import pytest
 
 # ── helpers ───────────────────────────────────────────────────────────────────
 
@@ -45,10 +44,8 @@ if not _SCRIPT_MISSING and _GEN_MOD_NAME not in sys.modules:
     except Exception:
         _SCRIPT_MISSING = True
 
-pytestmark = pytest.mark.skipif(
-    _SCRIPT_MISSING,
-    reason=f"scripts/generate-cve-page.py not present at {_GEN_MOD_PATH} (dev-only tool)",
-)
+# Note: if the script is missing, tests will fail at _get_mod() call (KeyError).
+# This is intentional — visibility over silence (no pytest.skip markers per policy).
 
 
 def _get_mod():

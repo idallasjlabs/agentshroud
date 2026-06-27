@@ -11,7 +11,7 @@ Strips markdown images and links pointing to non-allowlisted domains while prese
 import logging
 import re
 from dataclasses import dataclass, field
-from typing import List, Optional, Set, Tuple
+from typing import List, Optional, Tuple
 from urllib.parse import urlparse
 
 logger = logging.getLogger("agentshroud.security.tool_result_sanitizer")
@@ -140,7 +140,7 @@ class ToolResultSanitizer:
 
     def _is_internal_link(self, url: str) -> bool:
         """Check if this is an internal link (relative, anchor, etc.)."""
-        return url.startswith("#") or url.startswith("/") or not ("://" in url)
+        return url.startswith("#") or url.startswith("/") or "://" not in url
 
     def _extract_code_blocks(self, text: str) -> Tuple[str, List[str]]:
         """Extract code blocks to preserve them during sanitization."""
@@ -179,7 +179,7 @@ class ToolResultSanitizer:
             # Check for blocked patterns first
             if self._url_has_blocked_patterns(url):
                 logger.warning(f"Blocked markdown image with suspicious pattern: {url[:100]}")
-                return f"[Image removed: suspicious URL pattern]"
+                return "[Image removed: suspicious URL pattern]"
 
             # Check domain allowlist
             if not self._is_domain_allowed(url):
@@ -210,7 +210,7 @@ class ToolResultSanitizer:
             # Check for blocked patterns first
             if self._url_has_blocked_patterns(url):
                 logger.warning(f"Blocked markdown link with suspicious pattern: {url[:100]}")
-                return f"[Link removed: suspicious URL pattern]"
+                return "[Link removed: suspicious URL pattern]"
 
             # Check domain allowlist
             if not self._is_domain_allowed(url):

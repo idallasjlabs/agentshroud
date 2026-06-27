@@ -713,7 +713,7 @@ class PromptGuard:
         text = normalize_input(text)
 
         # Check for base64-encoded injection payloads
-        b64_payloads = detect_base64_payloads(text)
+        detect_base64_payloads(text)
 
         # Check unicode tricks on RAW text before normalization
         pre_norm_unicode = self._check_unicode_tricks(text) if text else []

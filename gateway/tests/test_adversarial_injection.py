@@ -17,8 +17,6 @@ CI regression gate: if detection rate drops below 85%, the suite fails.
 
 from __future__ import annotations
 
-import base64
-
 import pytest
 
 from gateway.security.heuristic_classifier import HeuristicClassifier

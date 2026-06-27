@@ -11,9 +11,7 @@ from __future__ import annotations
 
 import os
 import sys
-from dataclasses import dataclass
-from typing import Any, Dict
-from unittest.mock import Mock, patch
+from unittest.mock import patch
 
 import pytest
 
@@ -21,7 +19,6 @@ sys.path.append(os.path.join(os.path.dirname(__file__), "..", ".."))
 
 from gateway.security.rbac import (
     Action,
-    PermissionResult,
     RBACManager,
     Resource,
     ToolTier,
@@ -466,7 +463,7 @@ if __name__ == "__main__":
 
 # ── GroupRegistry tests ───────────────────────────────────────────────────────
 
-from gateway.security.rbac_config import Group, GroupRegistry, RBACConfig
+from gateway.security.rbac_config import GroupRegistry
 
 
 class TestGroupRegistry:

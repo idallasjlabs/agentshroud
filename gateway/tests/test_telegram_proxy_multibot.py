@@ -12,10 +12,11 @@ dispatches by token and rejects unrecognised tokens with 403 (fail-closed).
 from __future__ import annotations
 
 import asyncio
-import json
+from typing import TYPE_CHECKING
 from unittest.mock import AsyncMock, MagicMock, patch
 
-import pytest
+if TYPE_CHECKING:
+    from gateway.proxy.telegram_proxy import TelegramAPIProxy
 
 _OPENCLAW_TOKEN = "123456789:OpenClawFakeTelegram_TokenABCDEFGHIJK"
 _HERMES_TOKEN = "987654321:HermesFakeTelegram_TokenXYZABCDEFGHIJ"
@@ -291,7 +292,6 @@ class TestMultiBotContextvarRouting:
         invoked inside _proxy_request_impl (e.g. _send_local_status_notice) will use the
         inbound bot's token rather than the OpenClaw default — fixing the routing bug.
         """
-        from gateway.proxy import telegram_proxy as _tp
 
         proxy = self._make_proxy(_OPENCLAW_TOKEN)
         captured_token_in_impl: list = []

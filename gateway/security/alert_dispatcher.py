@@ -143,7 +143,6 @@ class AlertDispatcher:
         is still persisted to alert_log, so dropping a notification only
         affects realtime surfacing).
         """
-        import urllib.error
         import urllib.request
 
         payload = json.dumps(

@@ -84,7 +84,8 @@ Core execution engine:
 
 - **`validate_command(host, command)`** — Runs all validation checks. Returns `(bool, reason)`.
 - **`is_auto_approved(host, command)`** — Checks exact match against auto-approve list.
-- **`execute(host, command, timeout)`** — Builds SSH arguments, spawns subprocess, enforces timeout. Returns `SSHResult`.
+- **`validate_cwd(cwd)`** — Validates a proposed working directory: must be absolute or `~`-relative, no shell metacharacters. Returns `(bool, reason)`.
+- **`execute(host, command, timeout, cwd=None)`** — Builds SSH arguments, prepends `cd <cwd> &&` if cwd is set, spawns subprocess, enforces timeout. Returns `SSHResult`.
 
 ### `SSHConfig` / `SSHHostConfig` (`gateway/ingest_api/ssh_config.py`)
 
@@ -103,5 +104,8 @@ Pydantic configuration models:
 
 ### Request/Response Models (`gateway/ingest_api/models.py`)
 
-- **`SSHExecRequest`** — `host`, `command`, `timeout`, `reason`
+- **`SSHExecRequest`** — `host`, `command`, `timeout`, `reason`, `cwd` (optional absolute path)
+  - `cwd` — if set, the command is executed as `cd <cwd> && <command>` on the remote host.
+    Validated by `SSHProxy.validate_cwd()`: must be an absolute path or start with `~`,
+    and may only contain `[A-Za-z0-9/_\-.@~]` characters (no shell metacharacters).
 - **`SSHExecResponse`** — Full result including `stdout`, `stderr`, `exit_code`, `duration_seconds`, `approved_by`, `audit_id`

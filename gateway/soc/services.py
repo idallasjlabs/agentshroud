@@ -14,7 +14,7 @@ from typing import Any, Dict, List, Optional
 # Gateway process start time — used as uptime base for internal module services (CC-29)
 _GATEWAY_START_TIME: float = time.time()
 
-from .models import HealthStatus, ResourceUsage, ServiceDescriptor, ServiceStatus
+from .models import HealthStatus, ServiceDescriptor, ServiceStatus
 
 logger = logging.getLogger("agentshroud.soc.services")
 
@@ -217,7 +217,6 @@ class ServiceManager:
         if self._engine is not None:
             return self._engine
         try:
-            from ..ingest_api.state import app_state
             from ..runtime.engine import get_engine
 
             return get_engine()
@@ -461,5 +460,5 @@ class ServiceManager:
                 logger.debug("get_logs(%s): Docker socket not available at %s", name, _DOCKER_SOCK)
         if module_filter:
             needle = module_filter.lower()
-            lines = [l for l in lines if needle in l.lower()]
+            lines = [line for line in lines if needle in line.lower()]
         return lines[-tail:]

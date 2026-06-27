@@ -20,13 +20,11 @@ from gateway.security.approval_hardening import (
     ApprovalHardening,
     ApprovalHardeningConfig,
 )
-from gateway.security.audit_export import AuditExportConfig, AuditExporter
 from gateway.security.browser_security import BrowserSecurityGuard
 from gateway.security.consent_framework import ConsentFramework
 from gateway.security.context_guard import ContextGuard
 from gateway.security.credential_injector import (
     CredentialInjector,
-    CredentialInjectorConfig,
 )
 from gateway.security.dns_filter import DNSFilter, DNSFilterConfig
 from gateway.security.drift_detector import DriftDetector
@@ -1297,7 +1295,7 @@ class MiddlewareManager:
             logger.error(f"Tool result sanitization failed for {tool_name}: {e}")
             # Fail secure - if we can't sanitize, we should block the result
             # But for now, log and allow through to avoid breaking functionality
-            logger.warning(f"Allowing unsanitized tool result through due to sanitization error")
+            logger.warning("Allowing unsanitized tool result through due to sanitization error")
             return tool_result, False
 
     async def close(self) -> None:

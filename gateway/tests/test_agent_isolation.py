@@ -6,12 +6,9 @@
 
 from __future__ import annotations
 
-import pytest
-
 from gateway.security.agent_isolation import (
     AgentRegistry,
     ContainerConfig,
-    IsolationCheck,
     IsolationStatus,
     IsolationVerifier,
 )

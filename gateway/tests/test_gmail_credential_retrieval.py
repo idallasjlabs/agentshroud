@@ -5,12 +5,9 @@ Covers the secrets-fallback path that was incorrectly short-circuited when
 OP_SESSION env var is absent.
 """
 
-import os
 import subprocess
 from pathlib import Path
-from unittest.mock import MagicMock, patch
-
-import pytest
+from unittest.mock import MagicMock
 
 from gateway.ingest_api.routes.forward import _get_gmail_app_password
 

@@ -23,15 +23,11 @@ Categories:
   L. Supply Chain & Dependency Security (5 tests)
 """
 
-import hashlib
 import logging
-import os
 import re
 import tempfile
-import time
 from datetime import datetime, timezone
 from pathlib import Path
-from unittest.mock import MagicMock
 
 import pytest
 
@@ -160,9 +156,8 @@ class TestPIIDetection:
                     "PHONE_NUMBER",
                 ), f"Date misclassified as {r.entity_type}"
         # Regex engine should not touch dates at all
-        try:
-            import presidio_analyzer
-        except ImportError:
+        import importlib.util
+        if importlib.util.find_spec("presidio_analyzer") is None:
             assert "2026-02-24" in result.sanitized_content
 
     @pytest.mark.asyncio
@@ -852,7 +847,7 @@ class TestAuditTrail:
         dd.close()
 
     def test_canary_system_importable(self):
-        from gateway.security.canary import CanaryResult, run_canary
+        from gateway.security.canary import run_canary
 
         assert run_canary is not None
 
@@ -872,7 +867,7 @@ class TestAuditTrail:
             "message": "duplicate test",
             "key": "dedup-1",
         }
-        r1 = ad.dispatch(alert)
+        ad.dispatch(alert)
         r2 = ad.dispatch(alert)
         # Second dispatch should be deduplicated
         assert isinstance(r2, dict)
@@ -1141,7 +1136,6 @@ class TestSupplyChain:
 
     def test_no_hardcoded_secrets_in_source(self):
         """No hardcoded secrets in Python source files."""
-        import glob
 
         secret_patterns = [
             r'(?:password|secret|api_key|token)\s*=\s*["\'][A-Za-z0-9+/=]{20,}["\']',

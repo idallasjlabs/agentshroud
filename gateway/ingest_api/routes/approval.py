@@ -88,7 +88,7 @@ async def decide_approval(
     except KeyError:
         raise HTTPException(status_code=404, detail="Approval request not found")
 
-    except ValueError as e:
+    except ValueError:
         raise HTTPException(status_code=409, detail="Conflict: approval state changed")
 
 
@@ -163,7 +163,7 @@ async def approval_websocket(websocket: WebSocket, token: str | None = Query(Non
                         }
                     )
 
-                except (KeyError, ValueError) as e:
+                except (KeyError, ValueError):
                     await websocket.send_json({"type": "error", "message": "Invalid request"})
 
     except Exception as e:

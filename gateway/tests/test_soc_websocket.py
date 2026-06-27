@@ -3,11 +3,7 @@
 
 from __future__ import annotations
 
-import asyncio
-import json
 from unittest.mock import MagicMock
-
-import pytest
 
 from gateway.soc.models import WSEventType
 from gateway.soc.websocket import SOCWebSocketHandler, _coerce_to_ws_event
