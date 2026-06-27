@@ -218,7 +218,6 @@ async def test_initialize_is_idempotent(tmp_path):
 
     aiosqlite connections are non-daemon threads; an orphaned one blocks
     interpreter exit and trips the PytestUnraisableExceptionWarning gate."""
-    from pathlib import Path
 
     from gateway.ingest_api.config import LedgerConfig
     from gateway.ingest_api.ledger import DataLedger

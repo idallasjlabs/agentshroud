@@ -3,8 +3,6 @@ from __future__ import annotations
 
 import base64
 
-import pytest
-
 from gateway.security.encoding_detector import EncodingConfig, EncodingDetector
 
 
@@ -21,7 +19,7 @@ class TestEncodingDetector:
         encoded = base64.b64encode(b"secret password here").decode()
         r = self.det.analyze(f"Data: {encoded}")
         assert r.detected
-        assert any(l.encoding == "base64" for l in r.layers)
+        assert any(layer.encoding == "base64" for layer in r.layers)
         assert "secret password" in r.cleaned_text
 
     def test_url_encoding_detected(self):
@@ -53,7 +51,7 @@ class TestEncodingDetector:
         assert len(short) < 24
         r = self.det.analyze(f"Value: {short}")
         # base64 detection should not fire on sub-threshold length
-        assert not any(l.encoding == "base64" for l in r.layers)
+        assert not any(layer.encoding == "base64" for layer in r.layers)
 
     def test_empty_input(self):
         assert not self.det.analyze("").detected

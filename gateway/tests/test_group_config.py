@@ -4,14 +4,11 @@
 from __future__ import annotations
 
 import json
-import tempfile
-from pathlib import Path
 
 import pytest
 
 from gateway.security.group_config import (
     GroupConfig,
-    ProjectConfig,
     TeamsConfig,
     persist_user_collab_mode,
 )

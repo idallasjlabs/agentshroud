@@ -3,11 +3,11 @@
 
 import asyncio
 from pathlib import Path
-from unittest.mock import AsyncMock, MagicMock, patch
+from unittest.mock import AsyncMock, patch
 
 import pytest
 
-from gateway.proxy.dns_blocklist import SYSTEM_ALLOWLIST, DNSBlocklist
+from gateway.proxy.dns_blocklist import DNSBlocklist
 
 
 class TestParseHostsLine:
@@ -112,20 +112,20 @@ class TestLoadFromText:
     def test_deduplication(self):
         text = "0.0.0.0 dup.com\n0.0.0.0 dup.com"
         initial = len(self.bl.blocked_domains)
-        count = self.bl.load_from_text(text)
+        self.bl.load_from_text(text)
         # count may be 1 or 2 depending on implementation, but only 1 unique domain added
         assert len(self.bl.blocked_domains) - initial == 1
 
     def test_allowlist_skip(self):
         # System allowlist entries should not be added
         text = "0.0.0.0 api.anthropic.com\n0.0.0.0 malware.io"
-        count = self.bl.load_from_text(text)
+        self.bl.load_from_text(text)
         assert "api.anthropic.com" not in self.bl.blocked_domains
         assert "malware.io" in self.bl.blocked_domains
 
     def test_comments_skipped(self):
         text = "# This is a comment\n0.0.0.0 blocked.com"
-        count = self.bl.load_from_text(text)
+        self.bl.load_from_text(text)
         assert "blocked.com" in self.bl.blocked_domains
 
     def test_empty_text(self):

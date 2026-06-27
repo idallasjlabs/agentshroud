@@ -18,7 +18,6 @@ import os
 import shutil
 import time
 from dataclasses import dataclass, field
-from pathlib import Path
 from typing import Dict, Optional, Set
 
 logger = logging.getLogger(__name__)

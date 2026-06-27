@@ -23,19 +23,13 @@ Categories:
 
 import asyncio
 import concurrent.futures
-import hashlib
 import hmac
-import json
 import logging
-import os
 import re
-import secrets
-import sys
 import tempfile
 import time
 from datetime import datetime, timezone
 from pathlib import Path
-from unittest.mock import MagicMock, patch
 
 import pytest
 
@@ -554,7 +548,7 @@ class TestPrivilegeEscalation:
 
     def test_subagent_monitor_tracks_events(self):
         """Subagent events should be trackable."""
-        from security.subagent_monitor import SubagentEventType, SubagentMonitor
+        from security.subagent_monitor import SubagentEventType
 
         assert SubagentEventType is not None
 

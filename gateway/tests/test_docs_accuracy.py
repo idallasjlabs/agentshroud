@@ -14,10 +14,10 @@ import pytest
 REPO_ROOT = Path(__file__).parent.parent.parent
 
 
-def _read_file(relative_path: str) -> str:
+def _read_file(relative_path: str) -> str | None:
     path = REPO_ROOT / relative_path
     if not path.exists():
-        pytest.skip(f"{relative_path} not found")
+        return None
     return path.read_text()
 
 

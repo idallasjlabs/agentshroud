@@ -18,7 +18,6 @@ from fastapi.testclient import TestClient
 
 from gateway.ingest_api.main import app, auth_dep
 from gateway.ingest_api.middleware import MiddlewareResult
-from gateway.ingest_api.models import ForwardRequest
 
 
 class TestForwardEndpoint:
@@ -34,7 +33,7 @@ class TestForwardEndpoint:
         )
 
         # Mock auth
-        mock_auth = MagicMock()
+        MagicMock()
 
         with (
             patch("gateway.ingest_api.routes.forward.app_state") as mock_app_state,
@@ -76,7 +75,7 @@ class TestForwardEndpoint:
         mock_middleware = MagicMock()
         mock_middleware.process.side_effect = Exception("Middleware error")
 
-        mock_auth = MagicMock()
+        MagicMock()
 
         with (
             patch("gateway.ingest_api.routes.forward.app_state") as mock_app_state,
@@ -401,8 +400,6 @@ class TestHermesDashboardPathTraversal:
         """hermes_dashboard_proxy raises HTTPException(400) for traversal in path."""
         from unittest.mock import MagicMock
 
-        from fastapi import HTTPException
-
         from gateway.ingest_api.main import hermes_dashboard_proxy
 
         mock_request = MagicMock()
@@ -419,8 +416,6 @@ class TestHermesDashboardPathTraversal:
         """hermes_dashboard_proxy raises HTTPException(400) for traversal in query string."""
         from unittest.mock import MagicMock
 
-        from fastapi import HTTPException
-
         from gateway.ingest_api.main import hermes_dashboard_proxy
 
         mock_request = MagicMock()
@@ -430,3 +425,99 @@ class TestHermesDashboardPathTraversal:
             await hermes_dashboard_proxy(path="api/workspace", request=mock_request)
 
         assert exc_info.value.status_code == 400
+
+
+# ---------------------------------------------------------------------------
+# Scan parameter allowlist + /api/alerts localhost enforcement (quality-sweep)
+# ---------------------------------------------------------------------------
+
+
+class TestScanParameterAllowlists:
+    """Allowlist validation on ClamAV target, Trivy scan type, OpenSCAP profile."""
+
+    def setup_method(self):
+        app.dependency_overrides[auth_dep] = lambda: None
+        self.client = TestClient(app)
+
+    def teardown_method(self):
+        app.dependency_overrides.pop(auth_dep, None)
+
+    # ClamAV target allowlist
+    def test_clamav_invalid_target_returns_400(self):
+        from gateway.ingest_api.main import app_state as _state
+
+        _state.clamav_scanner = object()
+        resp = self.client.post("/manage/scan/clamav?target=/etc/secrets")
+        assert resp.status_code == 400
+        assert "target must be one of" in resp.json()["detail"]
+
+    def test_clamav_default_target_passes_allowlist(self):
+        from gateway.ingest_api.main import app_state as _state
+
+        _state.clamav_scanner = None
+        resp = self.client.post("/manage/scan/clamav")
+        assert resp.status_code == 200
+        assert resp.json().get("error") == "ClamAV scanner not available"
+
+    # Trivy scan-type allowlist
+    def test_trivy_invalid_scan_type_returns_400(self):
+        from gateway.ingest_api.main import app_state as _state
+
+        _state.trivy_scanner = object()
+        resp = self.client.post("/manage/scan/trivy?target=malicious")
+        assert resp.status_code == 400
+        assert "target must be one of" in resp.json()["detail"]
+
+    def test_trivy_default_scan_type_passes_allowlist(self):
+        from gateway.ingest_api.main import app_state as _state
+
+        _state.trivy_scanner = None
+        resp = self.client.post("/manage/scan/trivy")
+        assert resp.status_code == 200
+        assert resp.json().get("error") == "Trivy scanner not available"
+
+    # OpenSCAP profile regex
+    def test_openscap_invalid_profile_returns_400(self):
+        resp = self.client.post("/manage/scan/openscap?profile=bad!profile")
+        assert resp.status_code == 400
+        assert "disallowed characters" in resp.json()["detail"]
+
+    def test_openscap_semicolon_profile_returns_400(self):
+        resp = self.client.post("/manage/scan/openscap?profile=xccdf;rm+-rf+/")
+        assert resp.status_code == 400
+
+    def test_openscap_default_profile_passes_regex(self):
+        from gateway.ingest_api.main import _OPENSCAP_PROFILE_RE
+
+        assert _OPENSCAP_PROFILE_RE.match("xccdf_org.ssgproject.content_profile_standard")
+
+
+class TestAlertsLocalhostEnforcement:
+    """/api/alerts must reject non-localhost callers (S1 fix)."""
+
+    def test_alerts_rejected_from_non_localhost(self):
+        client = TestClient(app)
+        resp = client.post(
+            "/api/alerts",
+            json={"type": "security_alert", "severity": "INFO", "tool": "test"},
+        )
+        assert resp.status_code == 403
+
+    @pytest.mark.asyncio
+    async def test_alerts_accepted_from_localhost(self):
+        """Handler returns ok=True when called from 127.0.0.1."""
+        from unittest.mock import AsyncMock, MagicMock
+
+        from gateway.ingest_api.main import receive_security_alert
+
+        mock_request = MagicMock()
+        mock_request.client.host = "127.0.0.1"
+        mock_request.json = AsyncMock(
+            return_value={"type": "security_alert", "severity": "INFO", "tool": "test", "message": "ok"}
+        )
+
+        from gateway.ingest_api.main import app_state as _state
+        _state.event_bus = None
+
+        result = await receive_security_alert(mock_request)
+        assert result["ok"] is True

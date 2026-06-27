@@ -6,14 +6,12 @@
 
 from __future__ import annotations
 
-from unittest.mock import mock_open, patch
+from unittest.mock import patch
 
 import pytest
 
 from gateway.security.prompt_protection import (
     PromptProtection,
-    ProtectedContent,
-    RedactionResult,
 )
 
 
@@ -32,7 +30,7 @@ def sample_protected_content():
     Tool availability (filtered by policy):
     - read: Read file contents
     - write: Create or overwrite files
-    
+
     ## Boundaries
     Don't exfiltrate private data. Ever.
     """
@@ -263,7 +261,7 @@ class TestPromptProtection:
 
     def test_hash_fingerprinting(self, prompt_protection, sample_protected_content):
         """Test that content is properly fingerprinted with hashes."""
-        initial_count = len(prompt_protection.protected_content)
+        len(prompt_protection.protected_content)
 
         prompt_protection.add_protected_content("test", sample_protected_content)
 

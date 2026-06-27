@@ -6,8 +6,7 @@ from __future__ import annotations
 
 import asyncio
 import json
-
-import pytest
+from typing import AsyncIterator
 
 from gateway.proxy.anthropic_openai_sse_translator import translate_openai_sse_to_anthropic
 from gateway.proxy.anthropic_openai_translator import (

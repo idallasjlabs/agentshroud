@@ -21,10 +21,9 @@ Alert at < 0.6, escalate progressive lockdown at < 0.3.
 
 from __future__ import annotations
 
-import hashlib
 import logging
 import time
-from dataclasses import dataclass, field
+from dataclasses import dataclass
 from typing import TYPE_CHECKING, Any, Dict, List, Optional
 
 if TYPE_CHECKING:

@@ -16,11 +16,10 @@ from __future__ import annotations
 
 import pytest
 
-from gateway.security.group_config import GroupConfig, TeamsConfig
+from gateway.security.group_config import TeamsConfig
 from gateway.security.group_rbac import GroupRole, GroupRoleResolver
-from gateway.security.rbac_config import RBACConfig, Role
+from gateway.security.rbac_config import RBACConfig
 from gateway.security.tool_acl import (
-    PRIVATE_TOOLS,
     ToolACLConfig,
     ToolACLEnforcer,
 )

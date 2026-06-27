@@ -22,8 +22,6 @@ import pytest
 from gateway.ingest_api.middleware import MiddlewareManager
 from gateway.proxy.webhook_receiver import WebhookReceiver
 from gateway.security.session_manager import (
-    ConversationMessage,
-    UserSession,
     UserSessionManager,
 )
 

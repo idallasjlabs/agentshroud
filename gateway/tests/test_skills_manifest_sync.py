@@ -18,12 +18,9 @@ from __future__ import annotations
 
 import hashlib
 import json
-import shutil
 import time
 from pathlib import Path
-from types import SimpleNamespace
-from typing import Any
-from unittest.mock import MagicMock, patch
+from unittest.mock import patch
 
 import pytest
 from fastapi import FastAPI
@@ -39,7 +36,6 @@ from gateway.skills.manifest import (
     validate_manifest,
 )
 from gateway.web.api import require_auth, router
-
 
 # ---------------------------------------------------------------------------
 # Helpers

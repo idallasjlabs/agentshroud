@@ -30,6 +30,9 @@ class SSHResult:
     command: str
 
 
+# Path characters allowed in cwd: alphanumeric, /, -, _, ., space, @, ~
+_CWD_SAFE = re.compile(r"^[A-Za-z0-9/_\-. @~]+$")
+
 # Comprehensive shell metacharacter/injection patterns
 # Catches: ; | & ` $() ${} $VAR \n \r >> << > < and backslash sequences
 INJECTION_PATTERNS = re.compile(
@@ -104,7 +107,15 @@ class SSHProxy:
         host = self.config.hosts[host_name]
         return command in host.auto_approve_commands
 
-    async def execute(self, host_name: str, command: str, timeout: int | None = None) -> SSHResult:
+    def validate_cwd(self, cwd: str) -> tuple[bool, str]:
+        """Validate a remote working-directory path.  Must be absolute and shell-safe."""
+        if not cwd.startswith("/") and not cwd.startswith("~"):
+            return False, "cwd must be an absolute path or start with ~"
+        if not _CWD_SAFE.match(cwd):
+            return False, "cwd contains disallowed characters"
+        return True, "OK"
+
+    async def execute(self, host_name: str, command: str, timeout: int | None = None, cwd: str | None = None) -> SSHResult:
         """Execute a command on a remote host via SSH."""
         if host_name not in self.config.hosts:
             raise ValueError(f"Unknown host: {host_name}")
@@ -126,7 +137,8 @@ class SSHProxy:
         if host.key_path:
             ssh_args.extend(["-i", host.key_path])
         ssh_args.append(f"{host.username}@{host.host}")
-        ssh_args.append(command)
+        remote_command = f"cd {cwd} && {command}" if cwd else command
+        ssh_args.append(remote_command)
 
         start = time.monotonic()
         try:

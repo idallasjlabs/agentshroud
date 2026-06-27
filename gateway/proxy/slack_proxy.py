@@ -21,6 +21,7 @@ import json
 import logging
 import os
 import secrets as _secrets
+from typing import Optional
 
 from gateway.utils.secrets import read_secret as _read_secret_static
 

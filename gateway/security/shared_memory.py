@@ -23,7 +23,6 @@ from __future__ import annotations
 import logging
 import re
 from datetime import datetime, timezone
-from pathlib import Path
 from typing import TYPE_CHECKING, List, Optional
 
 if TYPE_CHECKING:

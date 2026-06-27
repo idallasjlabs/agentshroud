@@ -95,7 +95,7 @@ class ContributorManager:
             try:
                 user_groups = teams.get_user_groups(user_id)
                 groups = [g.id for g in user_groups]
-                user_projects = teams.get_user_projects(user_id)
+                teams.get_user_projects(user_id)
                 projects = [pid for g in user_groups for pid in g.projects]
                 collab_mode = teams.get_user_collab_mode(user_id)
             except Exception:

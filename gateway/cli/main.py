@@ -25,7 +25,7 @@ except ImportError:
     print("click is required. Install with: pip install click", file=sys.stderr)
     sys.exit(1)
 
-from .client import SCLClient, client_from_env
+from .client import SCLClient
 
 
 def _is_tty() -> bool:
@@ -211,7 +211,7 @@ def restart_service(ctx, name, confirm):
     result = client.restart_service(name, confirm=confirm)
     if isinstance(result, dict) and result.get("code") == "CONFIRMATION_REQUIRED":
         click.echo(f"Confirmation required: {result.get('message')}")
-        click.echo(f"Re-run with --confirm to proceed.")
+        click.echo("Re-run with --confirm to proceed.")
     else:
         _output(result, ctx.obj["fmt"])
 
@@ -231,7 +231,7 @@ def stop_service(ctx, name, confirm):
     client: SCLClient = ctx.obj["client"]
     result = client.stop_service(name, confirm=confirm)
     if isinstance(result, dict) and result.get("code") == "CONFIRMATION_REQUIRED":
-        click.echo(f"Confirmation required. Re-run with --confirm.")
+        click.echo("Confirmation required. Re-run with --confirm.")
     else:
         _output(result, ctx.obj["fmt"])
 

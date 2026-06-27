@@ -4,18 +4,15 @@
 from __future__ import annotations
 
 import time
-from unittest.mock import MagicMock
 
 import pytest
 
 from gateway.security.context_guard import ContextSegment
 from gateway.security.context_integrity import (
-    _ALERT_THRESHOLD,
-    _LOCKDOWN_THRESHOLD,
     ContextIntegrityScorer,
     IntegrityScore,
 )
-from gateway.security.prompt_guard import PromptGuard, SystemPromptFingerprint
+from gateway.security.prompt_guard import PromptGuard
 
 
 @pytest.fixture

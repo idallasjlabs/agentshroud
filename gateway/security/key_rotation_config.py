@@ -12,7 +12,7 @@ Supports time-based rotation schedules, alert thresholds, and emergency rotation
 
 import logging
 from dataclasses import dataclass, field
-from typing import Dict, Optional
+from typing import Dict
 
 logger = logging.getLogger("agentshroud.security.key_rotation_config")
 

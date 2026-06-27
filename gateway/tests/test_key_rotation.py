@@ -7,9 +7,8 @@
 from __future__ import annotations
 
 import asyncio
-import time
 from datetime import datetime, timedelta, timezone
-from unittest.mock import AsyncMock, MagicMock, patch
+from unittest.mock import patch
 
 import pytest
 
@@ -319,7 +318,7 @@ class TestKeyRotationWorkflow:
         failing_validator = MockValidator(should_pass=False)
         manager.register_validator("api_key", failing_validator)
 
-        original_op_ref = manager._credentials["test_key"].op_reference
+        manager._credentials["test_key"].op_reference
 
         with patch.object(manager, "_generate_new_credential", return_value="new_key_value"):
             with patch.object(manager, "_store_credential_in_1password", return_value=True):
