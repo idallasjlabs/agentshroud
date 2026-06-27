@@ -626,6 +626,116 @@ class TestConfigValidation:
         assert "Registered Ollama provider/models in models.json" in script
 
 
+    def test_hermes_soul_documents_ssh_hosts(self):
+        """Hermes SOUL.md must document all three lab hosts and the gateway /ssh/exec recipe.
+
+        This test guards the persona template against silent drift — SOUL.md seeding is
+        one-shot (init-config.sh:44-45), so a template regression would only surface after
+        a volume reset.
+        """
+        path = REPO_ROOT / "docker" / "config" / "hermes" / "SOUL.md"
+        if not path.exists():
+            pytest.skip("hermes SOUL.md not available in this environment")
+        soul = path.read_text()
+        # All three lab hosts by canonical name (gateway resolves; raw IPs must not be sole ref)
+        assert "marvin" in soul, "SOUL.md must document marvin host"
+        assert "trillian" in soul, "SOUL.md must document trillian host"
+        assert "raspberrypi" in soul, "SOUL.md must document raspberrypi host"
+        # SSH user
+        assert "agentshroud-bot" in soul, "SOUL.md must specify agentshroud-bot SSH user"
+        # Gateway REST recipe (both the endpoint and the auth header pattern)
+        assert "http://gateway:8080/ssh/exec" in soul, "SOUL.md must include /ssh/exec endpoint"
+        assert "Authorization: Bearer" in soul, "SOUL.md must include bearer-auth header"
+        # Proxy-bypass flag — required because HTTP_PROXY=gateway:8181 is set in the container
+        assert "--noproxy gateway" in soul, "SOUL.md must include --noproxy gateway flag"
+
+    def test_hermes_soul_has_no_refuse_directive(self):
+        """Hermes SOUL.md must instruct the agent never to issue a blanket 'cannot connect' refusal.
+
+        The directive must be honest (attempt + report real error), not silencing — the bot
+        must not fabricate success or hide genuine failures.
+        """
+        path = REPO_ROOT / "docker" / "config" / "hermes" / "SOUL.md"
+        if not path.exists():
+            pytest.skip("hermes SOUL.md not available in this environment")
+        soul = path.read_text()
+        assert "cannot connect" in soul, "SOUL.md must contain the no-refuse directive text"
+        assert "Never reply" in soul or "never reply" in soul, (
+            "SOUL.md must explicitly instruct the agent never to give a blanket refusal"
+        )
+
+    def test_openclaw_soul_has_no_refuse_directive(self):
+        """OpenClaw SOUL.md must carry the same 'never blanket-refuse cannot connect' directive.
+
+        Both bot personas must be consistent so neither emits a canned refusal when SSH is
+        attempted against a known-configured host.
+        """
+        path = REPO_ROOT / "docker" / "config" / "openclaw" / "workspace" / "SOUL.md"
+        if not path.exists():
+            pytest.skip("openclaw SOUL.md not available in this environment")
+        soul = path.read_text()
+        assert "cannot connect" in soul, "OpenClaw SOUL.md must contain the no-refuse directive"
+        assert "Never reply" in soul or "never reply" in soul, (
+            "OpenClaw SOUL.md must explicitly instruct the agent never to give a blanket refusal"
+        )
+
+    def test_gateway_yaml_ssh_hosts_cover_all_lab_hosts(self):
+        """agentshroud.yaml must define all three lab hosts in ssh.hosts as agentshroud-bot.
+
+        This test proves the gateway SSH proxy is actually configured to reach every host
+        the bot personas document — a persona claim without a backing gateway config entry
+        would produce a 404 at runtime.
+        """
+        import yaml
+
+        config_path = REPO_ROOT / "agentshroud.yaml"
+        if not config_path.exists():
+            pytest.skip("agentshroud.yaml not available in this environment")
+
+        config = yaml.safe_load(config_path.read_text())
+        ssh = config.get("ssh", {})
+        assert ssh.get("enabled") is True, "ssh.enabled must be true"
+        hosts = ssh.get("hosts", {})
+
+        lab_hosts = ["marvin", "trillian", "raspberrypi"]
+        for name in lab_hosts:
+            assert name in hosts, f"ssh.hosts must include '{name}'"
+            h = hosts[name]
+            assert h.get("username") == "agentshroud-bot", (
+                f"ssh.hosts.{name}.username must be 'agentshroud-bot', got {h.get('username')!r}"
+            )
+            assert h.get("key_path"), f"ssh.hosts.{name}.key_path must be set"
+            assert "/var/agentshroud-ssh/" in h["key_path"], (
+                f"ssh.hosts.{name}.key_path must reference the agentshroud-ssh volume"
+            )
+
+    def test_openclaw_ssh_config_allows_all_lab_hosts(self):
+        """OpenClaw's SSH client config must have Host blocks for all three lab hosts.
+
+        Each block must route through the gateway CONNECT proxy (gateway:8181) and use
+        the shared identity file. A missing Host block means OpenClaw's native `ssh`
+        silently fails via the catch-all 'Host * → ProxyCommand /bin/false' deny rule.
+        """
+        config_path = REPO_ROOT / "docker" / "config" / "ssh" / "config"
+        if not config_path.exists():
+            pytest.skip("docker/config/ssh/config not available in this environment")
+
+        text = config_path.read_text()
+        lab_hosts = ["marvin", "trillian", "raspberrypi"]
+        for name in lab_hosts:
+            assert f"Host {name}" in text or name in text, (
+                f"SSH config must have a Host block for '{name}'"
+            )
+        # All lab-host blocks must tunnel through the gateway CONNECT proxy
+        assert "gateway:8181" in text, "SSH config must route through gateway:8181 CONNECT proxy"
+        # Must use the shared identity key from the agentshroud-ssh volume
+        assert "id_ed25519" in text, "SSH config must reference the shared id_ed25519 key"
+        # Catch-all deny must be present — anything not explicitly listed is blocked
+        assert "ProxyCommand /bin/false" in text, (
+            "SSH config must have a catch-all 'Host *' deny rule"
+        )
+
+
 class TestAllExampleConfigsExist:
     """Verify all referenced example configs exist."""
 
