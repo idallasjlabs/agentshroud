@@ -170,6 +170,276 @@ def test_tts_piper_nonzero_exit_raises(monkeypatch):
         tts.synthesize("hello")
 
 
+# ── normalize_for_speech unit tests ──────────────────────────────────────────
+#
+# These tests cover the speech normalisation layer added in SCRUM-46.
+# They exercise normalize_for_speech directly (pure function, no I/O) and
+# then verify that synthesize() feeds the normalised text to Piper.
+
+
+class TestNormalizeForSpeech:
+    """Unit tests for voice_gateway.tts.normalize_for_speech."""
+
+    @staticmethod
+    def _n(text: str) -> str:
+        from voice_gateway.tts import normalize_for_speech
+        return normalize_for_speech(text)
+
+    # ── markdown stripping ────────────────────────────────────────────────
+
+    def test_bold_double_star_stripped(self):
+        assert self._n("**bold** text") == "bold text"
+
+    def test_bold_double_underscore_stripped(self):
+        assert self._n("__bold__ text") == "bold text"
+
+    def test_italic_star_stripped(self):
+        assert self._n("*italic* text") == "italic text"
+
+    def test_inline_code_backtick_stripped(self):
+        assert self._n("`some_var` is set") == "some_var is set"
+
+    def test_code_fence_delimiter_stripped(self):
+        result = self._n("```python\nprint('hi')\n```\ndone")
+        assert "```" not in result
+        assert "print" in result
+        assert "done" in result
+
+    def test_heading_stripped(self):
+        assert self._n("## Section Title") == "Section Title"
+        assert self._n("# H1") == "H1"
+
+    def test_bullet_list_marker_stripped(self):
+        result = self._n("- item one\n- item two")
+        assert "- " not in result
+        assert "item one" in result
+        assert "item two" in result
+
+    def test_numbered_list_marker_stripped(self):
+        result = self._n("1. First\n2. Second")
+        assert "1." not in result
+        assert "First" in result
+
+    def test_blockquote_stripped(self):
+        assert self._n("> quoted text") == "quoted text"
+
+    def test_horizontal_rule_stripped(self):
+        result = self._n("before\n---\nafter")
+        assert "---" not in result
+        assert "before" in result
+        assert "after" in result
+
+    def test_markdown_link_reduced_to_text(self):
+        assert self._n("[click here](https://example.com)") == "click here"
+
+    def test_image_link_reduced_to_alt(self):
+        assert self._n("![diagram](https://example.com/img.png)") == "diagram"
+
+    def test_plain_prose_unchanged(self):
+        prose = "The gateway runs on the server and listens for connections."
+        assert self._n(prose) == prose
+
+    # ── redaction token → category-aware phrase ───────────────────────────
+
+    def test_credential_redacted_spoken(self):
+        result = self._n("the key is [CREDENTIAL_REDACTED] now")
+        assert "[CREDENTIAL_REDACTED]" not in result
+        assert "a credential" in result
+
+    def test_credential_var_spoken(self):
+        result = self._n("set [CREDENTIAL_VAR] to enable")
+        assert "a credential" in result
+
+    def test_secret_path_spoken(self):
+        result = self._n("at [SECRET_PATH] you will find it")
+        assert "a credential" in result
+
+    def test_port_spoken(self):
+        result = self._n("gateway runs on port [PORT]")
+        assert "[PORT]" not in result
+        assert "a port" in result
+
+    def test_port_inline_colon(self):
+        """Reproduces the exact log pattern: http://gateway:[PORT]"""
+        result = self._n("http://gateway:[PORT]")
+        assert "[PORT]" not in result
+        assert "a port" in result
+
+    def test_internal_host_spoken(self):
+        result = self._n("connects to [INTERNAL_HOST]")
+        assert "an internal host" in result
+
+    def test_internal_url_spoken(self):
+        result = self._n("forwarded to [INTERNAL_URL]")
+        assert "an internal address" in result
+
+    def test_user_id_spoken(self):
+        result = self._n("user [USER_ID] sent this")
+        assert "a user" in result
+
+    def test_user_id_redacted_spoken(self):
+        result = self._n("[USER_ID_REDACTED] was the sender")
+        assert "a user" in result
+
+    def test_tool_spoken(self):
+        result = self._n("called [TOOL] with args")
+        assert "a tool" in result
+
+    def test_security_module_spoken(self):
+        result = self._n("[SECURITY_MODULE] blocked the request")
+        assert "a security module" in result
+
+    def test_model_info_spoken(self):
+        result = self._n("running model [MODEL_INFO]")
+        assert "a model name" in result
+
+    # ── PII angle-bracket tokens ──────────────────────────────────────────
+
+    def test_email_address_spoken(self):
+        result = self._n("send to <EMAIL_ADDRESS> for details")
+        assert "<EMAIL_ADDRESS>" not in result
+        assert "an email address" in result
+
+    def test_phone_number_spoken(self):
+        result = self._n("call <PHONE_NUMBER> now")
+        assert "a phone number" in result
+
+    def test_us_ssn_spoken(self):
+        result = self._n("SSN: <US_SSN>")
+        assert "a social security number" in result
+
+    def test_person_spoken(self):
+        result = self._n("<PERSON> submitted the form")
+        assert "a person's name" in result
+
+    # ── variable-content redaction patterns ───────────────────────────────
+
+    def test_lock_emoji_redacted_spoken(self):
+        """🔒 [REDACTED: Credentials cannot be displayed via Telegram]"""
+        result = self._n("🔒 [REDACTED: Credentials cannot be displayed via Telegram]")
+        assert "[REDACTED:" not in result
+        assert "a credential" in result
+
+    def test_angle_redacted_spoken(self):
+        """<REDACTED:secret>"""
+        result = self._n("value is <REDACTED:secret>")
+        assert "<REDACTED:" not in result
+        assert "a credential" in result
+
+    # ── fallback for unknown tokens ───────────────────────────────────────
+
+    def test_unknown_bracket_token_fallback(self):
+        result = self._n("[FOO_REDACTED] happened")
+        assert "[FOO_REDACTED]" not in result
+        assert "redacted" in result
+
+    def test_unknown_angle_token_fallback(self):
+        result = self._n("value: <CUSTOM_PII_TYPE>")
+        assert "<CUSTOM_PII_TYPE>" not in result
+        assert "redacted" in result
+
+    def test_lowercase_bracket_not_matched(self):
+        """[1], [possible], [note] — not uppercase-only, must not be touched."""
+        assert self._n("see [1] for details") == "see [1] for details"
+
+    # ── safety: secret value never leaks ─────────────────────────────────
+
+    def test_raw_secret_value_not_present_after_normalise(self):
+        """If a secret somehow reaches normalise (shouldn't — pipeline redacted it),
+        the token replacement means the secret string itself is not in the output
+        because the token replaced it *before* we see it.  This test checks the
+        guarantee that token replacement does not re-introduce secret text.
+        """
+        # Simulate the pipeline having already replaced the actual secret with a token.
+        redacted_text = "key=[CREDENTIAL_REDACTED] in config"
+        result = self._n(redacted_text)
+        # The original token (not a real secret) is gone; "a credential" appears instead.
+        assert "[CREDENTIAL_REDACTED]" not in result
+        assert "a credential" in result
+        # The word "key" (not secret) is still there — only the placeholder was removed.
+        assert "key" in result
+
+    # ── compound real-world example ───────────────────────────────────────
+
+    def test_agent_reply_from_log(self):
+        """Reproduces the 2026-06-27 12:38 agent reply that triggered SCRUM-46."""
+        sample = (
+            "**Your message arrives** at the Hermes API server.\n\n"
+            "**The system prompt is assembled** — the server injects the current "
+            "date/time as a static string into my system instructions before sending "
+            "the request to Claude.\n\n"
+            "**My context loads** — I receive the full system prompt (~4000 tokens), "
+            "which includes:\n"
+            "   - My identity as Hermes/Claude Code\n"
+            "   - AgentShroud security details\n"
+            "   - Available tools and their schemas (~50+ tool definitions)\n\n"
+            "Network round-trip — Request goes through the AgentShroud gateway at "
+            "http://gateway:[PORT], which applies audit logging.\n\n"
+            "**Token accounting** — Even though you asked 10 words, I'm processing "
+            "4000+ [CREDENTIAL_REDACTED] prompt before calling Claude."
+        )
+        result = self._n(sample)
+        # No markdown markers
+        assert "**" not in result
+        assert "```" not in result
+        # No redaction tokens
+        assert "[PORT]" not in result
+        assert "[CREDENTIAL_REDACTED]" not in result
+        # Category phrases present
+        assert "a port" in result
+        assert "a credential" in result
+        # Real content preserved
+        assert "Hermes API server" in result
+        assert "AgentShroud" in result
+        assert "audit logging" in result
+
+
+def test_tts_synthesize_passes_normalised_text_to_piper(monkeypatch):
+    """synthesize() feeds the normalised (no-markdown, no-token) text to Piper.
+
+    Verifies that the text arriving at subprocess.run contains no markdown
+    bold markers or redaction placeholder tokens.
+    """
+    import voice_gateway.tts as tts_mod
+
+    captured_input: list[bytes] = []
+
+    def _fake_run(*args, **kwargs):
+        captured_input.append(kwargs.get("input", b""))
+        mock_result = MagicMock()
+        mock_result.returncode = 0
+        mock_result.stdout = b"\x00\x01" * 50
+        mock_result.stderr = b""
+        return mock_result
+
+    monkeypatch.setattr(subprocess, "run", _fake_run)
+    monkeypatch.setattr(tts_mod, "TARGET_SAMPLE_RATE", tts_mod.OUTPUT_SAMPLE_RATE)
+
+    raw_text = "**bold claim** at http://gateway:[PORT] with [CREDENTIAL_REDACTED]."
+    tts_mod.synthesize(raw_text)
+
+    assert len(captured_input) == 1
+    spoken = captured_input[0].decode()
+    assert "**" not in spoken, "Bold marker must be stripped before Piper"
+    assert "[PORT]" not in spoken, "[PORT] token must be replaced before Piper"
+    assert "[CREDENTIAL_REDACTED]" not in spoken, "Credential token must be replaced before Piper"
+    assert "a port" in spoken
+    assert "a credential" in spoken
+
+
+def test_tts_synthesize_only_whitespace_after_normalise_returns_empty(monkeypatch):
+    """Text that normalises to empty/whitespace should return b'' without calling Piper."""
+    import voice_gateway.tts as tts_mod
+
+    piper_called = []
+    monkeypatch.setattr(subprocess, "run", lambda *a, **kw: piper_called.append(True))
+
+    # A string that is only markdown delimiters → normalises to empty.
+    result = tts_mod.synthesize("**  **\n---\n")
+    assert result == b""
+    assert not piper_called, "Piper must not be invoked for empty normalised text"
+
+
 # ── _call_llm unit tests ──────────────────────────────────────────────────────
 
 

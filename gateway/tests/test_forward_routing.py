@@ -256,3 +256,157 @@ class TestOutboundBlockedNotDelivered:
         assert "sk-test-leaked" not in _json.dumps(
             body
         ), "Blocked outbound content must not appear anywhere in the /forward response"
+
+
+# ── Owner trust elevation tests (SCRUM-46) ───────────────────────────────────
+
+
+class _TrustCaptor:
+    """Pipeline mock that records the user_trust_level passed to process_outbound.
+
+    trust_manager is None so the standard score-based path yields 'UNTRUSTED',
+    which is then upgraded to 'FULL' if the request carries the owner user_id.
+    """
+
+    trust_manager = None
+    _owner_user_id = "8096968754"  # matches RBACConfig default
+
+    def __init__(self):
+        self.captured_trust_levels: list[str] = []
+
+    async def process_inbound(self, message, agent_id, action, source):
+        from types import SimpleNamespace
+
+        return SimpleNamespace(
+            blocked=False,
+            queued_for_approval=False,
+            sanitized_message=message,
+            pii_redaction_count=0,
+            pii_redactions=[],
+            audit_entry_id="test-audit-id",
+            audit_hash="test-hash",
+            prompt_score=0.0,
+        )
+
+    async def process_outbound(self, response, agent_id, user_trust_level, source):
+        from types import SimpleNamespace
+
+        self.captured_trust_levels.append(user_trust_level)
+        return SimpleNamespace(
+            blocked=False,
+            block_reason="",
+            sanitized_message=response,
+        )
+
+
+def _make_trust_app_state(bot_name: str, captor: _TrustCaptor):
+    """Minimal app_state for owner-trust tests."""
+    from fastapi.testclient import TestClient
+
+    mock_state = MagicMock()
+    target = AgentTarget(
+        name=bot_name,
+        url=f"http://agentshroud-{bot_name}:8642",
+        chat_path="/v1/chat/completions",
+        health_path="/health",
+    )
+    mock_state.router.resolve_target = AsyncMock(return_value=target)
+    mock_state.router.forward_to_agent = AsyncMock(return_value="hello from agent")
+    mock_state.pipeline = captor
+    mock_state.middleware_manager = None
+    mock_state.sanitizer = MagicMock()
+    mock_state.sanitizer.sanitize = AsyncMock(
+        return_value=MagicMock(
+            sanitized_content="test content",
+            redactions=[],
+            entity_types_found=[],
+        )
+    )
+    mock_state.sanitizer.filter_xml_blocks = MagicMock(return_value=("hello from agent", False))
+    mock_state.sanitizer.block_credentials = AsyncMock(return_value=("hello from agent", False))
+    mock_state.ledger = MagicMock()
+    _ledger_entry = MagicMock(id="ledger-id", content_hash="hash", timestamp="ts")
+    mock_state.ledger.add_entry = AsyncMock(return_value=_ledger_entry)
+    mock_state.ledger.update_entry = AsyncMock()
+    mock_state.ledger.record = AsyncMock(return_value=_ledger_entry)
+    mock_state.event_bus = MagicMock()
+    mock_state.event_bus.emit = AsyncMock()
+    mock_state.audit_store = None
+    mock_state.collaborator_tracker = None
+    mock_state.consent_framework = None
+    mock_state.email_sender = None
+    return mock_state
+
+
+class TestOwnerTrustElevation:
+    """SCRUM-46: verify forward.py elevates trust to FULL for the owner's user_id.
+
+    The fix: after the TrustManager score lookup (which uses agent name → low score for
+    hermes), if request.user_id matches pipeline._owner_user_id, user_trust_level is
+    forced to "FULL" so operational/infra detail is not redacted for the voice admin
+    interface.
+    """
+
+    def _post_forward(self, user_id, captor, bot_name="hermes"):
+        from gateway.ingest_api.main import app
+        import gateway.ingest_api.routes.forward as forward_module
+
+        mock_state = _make_trust_app_state(bot_name, captor)
+        with patch("gateway.ingest_api.routes.forward.app_state", mock_state):
+            app.dependency_overrides[forward_module.auth_dep] = lambda: None
+            try:
+                from fastapi.testclient import TestClient
+
+                client = TestClient(app, raise_server_exceptions=True)
+                body = {
+                    "content": "what is the port",
+                    "content_type": "text",
+                    "source": "api",
+                    "route_to": bot_name,
+                }
+                if user_id is not None:
+                    body["user_id"] = user_id
+                resp = client.post(
+                    "/forward",
+                    json=body,
+                    headers={"Authorization": "Bearer test-token"},
+                )
+            finally:
+                app.dependency_overrides.clear()
+        return resp
+
+    def test_owner_user_id_elevates_trust_to_full(self):
+        """When request.user_id matches _owner_user_id, process_outbound receives FULL."""
+        captor = _TrustCaptor()
+        resp = self._post_forward(user_id="8096968754", captor=captor)
+        assert resp.status_code == 201
+        assert captor.captured_trust_levels, "process_outbound must have been called"
+        assert captor.captured_trust_levels[-1] == "FULL", (
+            f"Owner request must use FULL trust, got {captor.captured_trust_levels[-1]}"
+        )
+
+    def test_non_owner_user_id_does_not_elevate_trust(self):
+        """A collaborator's user_id must NOT trigger the owner elevation."""
+        captor = _TrustCaptor()
+        resp = self._post_forward(user_id="8506022825", captor=captor)  # Brett Galura
+        assert resp.status_code == 201
+        assert captor.captured_trust_levels, "process_outbound must have been called"
+        assert captor.captured_trust_levels[-1] != "FULL", (
+            "Non-owner must not receive FULL trust"
+        )
+
+    def test_no_user_id_does_not_elevate_trust(self):
+        """Requests with no user_id must not be elevated to FULL."""
+        captor = _TrustCaptor()
+        resp = self._post_forward(user_id=None, captor=captor)
+        assert resp.status_code == 201
+        assert captor.captured_trust_levels
+        assert captor.captured_trust_levels[-1] != "FULL"
+
+    def test_empty_user_id_does_not_elevate_trust(self):
+        """An empty string user_id must not match the owner."""
+        captor = _TrustCaptor()
+        resp = self._post_forward(user_id="", captor=captor)
+        assert resp.status_code == 201
+        assert captor.captured_trust_levels
+        assert captor.captured_trust_levels[-1] != "FULL"
