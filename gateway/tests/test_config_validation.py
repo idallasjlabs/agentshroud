@@ -626,6 +626,60 @@ class TestConfigValidation:
         assert "Registered Ollama provider/models in models.json" in script
 
 
+    def test_hermes_soul_documents_ssh_hosts(self):
+        """Hermes SOUL.md must document all three lab hosts and the gateway /ssh/exec recipe.
+
+        This test guards the persona template against silent drift — SOUL.md seeding is
+        one-shot (init-config.sh:44-45), so a template regression would only surface after
+        a volume reset.
+        """
+        path = REPO_ROOT / "docker" / "config" / "hermes" / "SOUL.md"
+        if not path.exists():
+            pytest.skip("hermes SOUL.md not available in this environment")
+        soul = path.read_text()
+        # All three lab hosts by canonical name (gateway resolves; raw IPs must not be sole ref)
+        assert "marvin" in soul, "SOUL.md must document marvin host"
+        assert "trillian" in soul, "SOUL.md must document trillian host"
+        assert "raspberrypi" in soul, "SOUL.md must document raspberrypi host"
+        # SSH user
+        assert "agentshroud-bot" in soul, "SOUL.md must specify agentshroud-bot SSH user"
+        # Gateway REST recipe (both the endpoint and the auth header pattern)
+        assert "http://gateway:8080/ssh/exec" in soul, "SOUL.md must include /ssh/exec endpoint"
+        assert "Authorization: Bearer" in soul, "SOUL.md must include bearer-auth header"
+        # Proxy-bypass flag — required because HTTP_PROXY=gateway:8181 is set in the container
+        assert "--noproxy gateway" in soul, "SOUL.md must include --noproxy gateway flag"
+
+    def test_hermes_soul_has_no_refuse_directive(self):
+        """Hermes SOUL.md must instruct the agent never to issue a blanket 'cannot connect' refusal.
+
+        The directive must be honest (attempt + report real error), not silencing — the bot
+        must not fabricate success or hide genuine failures.
+        """
+        path = REPO_ROOT / "docker" / "config" / "hermes" / "SOUL.md"
+        if not path.exists():
+            pytest.skip("hermes SOUL.md not available in this environment")
+        soul = path.read_text()
+        assert "cannot connect" in soul, "SOUL.md must contain the no-refuse directive text"
+        assert "Never reply" in soul or "never reply" in soul, (
+            "SOUL.md must explicitly instruct the agent never to give a blanket refusal"
+        )
+
+    def test_openclaw_soul_has_no_refuse_directive(self):
+        """OpenClaw SOUL.md must carry the same 'never blanket-refuse cannot connect' directive.
+
+        Both bot personas must be consistent so neither emits a canned refusal when SSH is
+        attempted against a known-configured host.
+        """
+        path = REPO_ROOT / "docker" / "config" / "openclaw" / "workspace" / "SOUL.md"
+        if not path.exists():
+            pytest.skip("openclaw SOUL.md not available in this environment")
+        soul = path.read_text()
+        assert "cannot connect" in soul, "OpenClaw SOUL.md must contain the no-refuse directive"
+        assert "Never reply" in soul or "never reply" in soul, (
+            "OpenClaw SOUL.md must explicitly instruct the agent never to give a blanket refusal"
+        )
+
+
 class TestAllExampleConfigsExist:
     """Verify all referenced example configs exist."""
 
