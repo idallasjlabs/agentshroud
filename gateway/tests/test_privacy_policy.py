@@ -9,7 +9,6 @@ from gateway.security.group_config import TeamsConfig
 from gateway.security.privacy_policy import (
     PrivacyPolicy,
     PrivacyPolicyEnforcer,
-    ServicePolicy,
     ServicePrivacy,
 )
 from gateway.security.rbac_config import RBACConfig, Role

@@ -379,7 +379,6 @@ def test_store_restores_items_on_init(queue_config, tmp_path, monkeypatch):
 @pytest.mark.asyncio
 async def test_cleanup_decided_removes_old_decided_items(approval_queue):
     """cleanup_decided() should remove approved/rejected items older than threshold."""
-    from datetime import timezone
 
     request = ApprovalRequest(
         action_type="email_sending",

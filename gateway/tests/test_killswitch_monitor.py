@@ -9,7 +9,6 @@ from __future__ import annotations
 Basic test suite for KillSwitchMonitor and KillSwitchConfig.
 """
 
-import os
 import tempfile
 import time
 from datetime import timedelta

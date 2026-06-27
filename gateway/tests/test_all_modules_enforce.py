@@ -10,10 +10,6 @@ A pass here means every module is configured fail-closed by default.
 
 from __future__ import annotations
 
-import os
-
-import pytest
-
 from gateway.ingest_api.config import (
     GatewayConfig,
     SecurityConfig,

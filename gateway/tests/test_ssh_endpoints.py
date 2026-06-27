@@ -169,6 +169,110 @@ class TestSSHExec:
         )
         assert resp.status_code == 403
 
+    def test_ssh_exec_cwd_accepted_and_forwarded(self, client, auth_headers):
+        """cwd is validated and passed to proxy.execute()."""
+        mock_result = SSHResult(
+            stdout="ok\n",
+            stderr="",
+            exit_code=0,
+            duration_seconds=0.1,
+            host="pi",
+            command="ls",
+        )
+        with patch.object(
+            app_state.ssh_proxy,
+            "execute",
+            new_callable=AsyncMock,
+            return_value=mock_result,
+        ) as mock_exec:
+            resp = client.post(
+                "/ssh/exec",
+                json={"host": "pi", "command": "ls", "cwd": "/home/deploy/project"},
+                headers=auth_headers,
+            )
+        assert resp.status_code == 200
+        _, kwargs = mock_exec.call_args
+        assert kwargs.get("cwd") == "/home/deploy/project"
+
+    def test_ssh_exec_cwd_invalid_rejects_400(self, client, auth_headers):
+        """cwd with shell metacharacters is rejected before execution."""
+        resp = client.post(
+            "/ssh/exec",
+            json={"host": "pi", "command": "ls", "cwd": "/home/deploy; rm -rf /"},
+            headers=auth_headers,
+        )
+        assert resp.status_code == 400
+
+    def test_ssh_exec_cwd_relative_path_rejects_400(self, client, auth_headers):
+        """cwd must be an absolute path."""
+        resp = client.post(
+            "/ssh/exec",
+            json={"host": "pi", "command": "ls", "cwd": "relative/path"},
+            headers=auth_headers,
+        )
+        assert resp.status_code == 400
+
+    def test_ssh_exec_cwd_none_forwards_none(self, client, auth_headers):
+        """Omitting cwd passes cwd=None to proxy.execute()."""
+        mock_result = SSHResult(
+            stdout="ok\n",
+            stderr="",
+            exit_code=0,
+            duration_seconds=0.1,
+            host="pi",
+            command="ls",
+        )
+        with patch.object(
+            app_state.ssh_proxy,
+            "execute",
+            new_callable=AsyncMock,
+            return_value=mock_result,
+        ) as mock_exec:
+            resp = client.post(
+                "/ssh/exec",
+                json={"host": "pi", "command": "ls"},
+                headers=auth_headers,
+            )
+        assert resp.status_code == 200
+        _, kwargs = mock_exec.call_args
+        assert kwargs.get("cwd") is None
+
+
+class TestSSHValidateCwd:
+    """Unit tests for SSHProxy.validate_cwd()."""
+
+    def test_absolute_path_accepted(self, ssh_config):
+        proxy = SSHProxy(ssh_config)
+        ok, _ = proxy.validate_cwd("/home/deploy/project")
+        assert ok
+
+    def test_home_tilde_accepted(self, ssh_config):
+        proxy = SSHProxy(ssh_config)
+        ok, _ = proxy.validate_cwd("~/project")
+        assert ok
+
+    def test_relative_path_rejected(self, ssh_config):
+        proxy = SSHProxy(ssh_config)
+        ok, reason = proxy.validate_cwd("relative/path")
+        assert not ok
+        assert "absolute" in reason
+
+    def test_semicolon_rejected(self, ssh_config):
+        proxy = SSHProxy(ssh_config)
+        ok, reason = proxy.validate_cwd("/home; rm -rf /")
+        assert not ok
+        assert "disallowed" in reason
+
+    def test_backtick_rejected(self, ssh_config):
+        proxy = SSHProxy(ssh_config)
+        ok, reason = proxy.validate_cwd("/home/`whoami`")
+        assert not ok
+
+    def test_pipe_rejected(self, ssh_config):
+        proxy = SSHProxy(ssh_config)
+        ok, reason = proxy.validate_cwd("/home/|evil")
+        assert not ok
+
 
 class TestSSHHosts:
     def test_ssh_hosts_list(self, client, auth_headers):

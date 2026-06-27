@@ -344,7 +344,9 @@ class TestKillSwitch:
             resp = client.post("/api/killswitch/disconnect", json={"confirm": True})
         assert resp.status_code == 200
         assert resp.json() == {"status": "disconnected", "mode": "disconnect"}
-        eng.stop.assert_called_once_with("agentshroud-openclaw")
+        # Hermes added — both bots must be stopped
+        eng.stop.assert_any_call("agentshroud-openclaw")
+        eng.stop.assert_any_call("agentshroud-hermes")
 
     def test_disconnect_swallows_engine_errors(self, client):
         eng = _engine()
@@ -463,7 +465,7 @@ class TestRebuild:
             resp = client.post("/api/rebuild")
         assert resp.status_code == 200
         assert resp.json() == {"status": "rebuilt"}
-        assert eng.build.call_count == 2
+        assert eng.build.call_count == 3  # gateway + openclaw + hermes
         eng.compose_up.assert_called_once()
 
     def test_rebuild_failure_returns_500(self, client):
@@ -660,7 +662,7 @@ class TestAgentshroudUpdates:
             "Dependency change: requirements.txt",
             "Security module changed: gateway/security/egress_filter.py",
         ]
-        assert eng.build.call_count == 2
+        assert eng.build.call_count == 3  # gateway + openclaw + hermes
 
     def test_upgrade_skip_tests_skips_test_step(self, client):
         eng = _engine()
@@ -786,13 +788,15 @@ class TestLogs:
 
     def test_get_logs_combined_handles_partial_failure(self, client):
         eng = _engine()
-        eng.logs.side_effect = ["g1\ng2", RuntimeError("bot down")]
+        # gateway OK, openclaw errors, hermes errors — both bots gracefully return []
+        eng.logs.side_effect = ["g1\ng2", RuntimeError("bot down"), RuntimeError("bot down")]
         with patch("gateway.web.api._get_engine", return_value=eng):
             resp = client.get("/api/logs?tail=0")
         assert resp.status_code == 200
-        assert resp.json() == {
-            "logs": {"agentshroud-gateway": ["g1", "g2"], "agentshroud-openclaw": []}
-        }
+        data = resp.json()
+        assert data["logs"]["agentshroud-gateway"] == ["g1", "g2"]
+        assert data["logs"]["agentshroud-openclaw"] == []
+        assert data["logs"]["agentshroud-hermes"] == []
         eng.logs.assert_any_call("agentshroud-gateway", tail=1)  # clamped low
 
 

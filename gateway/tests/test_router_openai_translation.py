@@ -11,8 +11,7 @@ while OpenClaw (/chat) keeps the generic payload and passes response.json() thro
 
 from __future__ import annotations
 
-import json
-from unittest.mock import AsyncMock, MagicMock, patch
+from unittest.mock import MagicMock
 
 import httpx
 import pytest
@@ -49,8 +48,6 @@ async def test_openai_target_sends_messages_body(router, monkeypatch):
     user message containing the sanitized content.
     """
     import re
-    from datetime import datetime
-    from zoneinfo import ZoneInfo
 
     captured = {}
 
@@ -69,7 +66,7 @@ async def test_openai_target_sends_messages_body(router, monkeypatch):
         chat_path="/v1/chat/completions",
     )
 
-    result = await router.forward_to_agent(
+    await router.forward_to_agent(
         target=target,
         sanitized_content="what time is it?",
         ledger_id="test-id",

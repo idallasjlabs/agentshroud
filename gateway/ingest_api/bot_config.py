@@ -12,7 +12,6 @@ ports, workspace paths, etc.) from this config rather than from hardcoded
 OpenClaw-specific constants.
 """
 
-from typing import Optional
 
 from pydantic import BaseModel, Field
 

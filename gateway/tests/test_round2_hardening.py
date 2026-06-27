@@ -1,11 +1,8 @@
 """Tests for Round 2 hardening — 9 fixes."""
 
 import os
-import sys
 from pathlib import Path
-from unittest.mock import MagicMock, patch
-
-import pytest
+from unittest.mock import patch
 
 # ── Fix 1: resource_guard fail-closed ────────────────────────────────────
 
@@ -70,7 +67,6 @@ class TestGitGuardDefaultEnforce:
 
     def test_scan_repository_default_enforce(self):
         import inspect
-        import tempfile
 
         from gateway.security.git_guard import scan_repository
 

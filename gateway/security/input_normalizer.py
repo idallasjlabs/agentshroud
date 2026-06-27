@@ -11,7 +11,6 @@ from __future__ import annotations
 import html
 import re
 import unicodedata
-from typing import Optional
 from urllib.parse import unquote
 
 # Zero-width and invisible Unicode characters

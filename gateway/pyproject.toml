@@ -43,8 +43,13 @@ include = ["gateway*"]
 [tool.ruff]
 line-length = 100
 target-version = "py39"
+
+[tool.ruff.lint]
 select = ["E", "F", "W", "I"]
-ignore = ["E501"]
+ignore = [
+    "E501",   # line too long — black handles this
+    "E402",   # module import not at top — copyright header + docstring precede imports project-wide
+]
 
 [tool.black]
 line-length = 100

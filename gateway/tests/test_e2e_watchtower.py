@@ -23,7 +23,6 @@ the Watchtower release:
 from __future__ import annotations
 
 import pytest
-import pytest_asyncio
 
 from gateway.ingest_api.config import PIIConfig
 from gateway.ingest_api.sanitizer import PIISanitizer

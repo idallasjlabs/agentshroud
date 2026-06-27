@@ -1,7 +1,6 @@
 # Copyright © 2026 Isaiah Dallas Jefferson, Jr. AgentShroud™. All rights reserved.
 """Tests for heuristic injection classifier."""
 
-import pytest
 
 from gateway.security.heuristic_classifier import (
     ClassificationResult,

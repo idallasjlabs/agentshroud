@@ -13,11 +13,9 @@ Tests that:
 
 from __future__ import annotations
 
-from typing import Any, Optional
-from unittest.mock import AsyncMock, MagicMock, patch
+from typing import Any
 
 import pytest
-import pytest_asyncio
 
 from gateway.approval_queue.group_router import GroupApprovalRouter
 from gateway.ingest_api.models import ApprovalRequest

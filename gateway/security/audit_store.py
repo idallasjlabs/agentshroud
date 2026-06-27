@@ -312,7 +312,7 @@ class AuditStore:
         """
         assert self._db is not None
 
-        query = """SELECT event_id, event_type, severity, timestamp, source_module, 
+        query = """SELECT event_id, event_type, severity, timestamp, source_module,
                            details, prev_hash, entry_hash
                     FROM audit_events
                     ORDER BY id ASC"""

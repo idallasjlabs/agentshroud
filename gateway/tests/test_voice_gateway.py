@@ -33,9 +33,7 @@ from unittest.mock import AsyncMock, MagicMock, patch
 
 import pytest
 from fastapi.testclient import TestClient
-
-from voice_gateway.server import app, _call_llm
-
+from voice_gateway.server import _call_llm, app
 
 # ── Health endpoint ───────────────────────────────────────────────────────────
 
@@ -58,7 +56,6 @@ def test_stt_transcribe_empty_bytes_returns_empty():
 
 def test_stt_transcribe_mocked_model(monkeypatch):
     """transcribe() calls the model and returns joined segment text."""
-    import numpy as np
     import voice_gateway.stt as stt_mod
 
     stt_mod.reset_model()
@@ -115,8 +112,8 @@ def test_tts_resamples_22050_to_16000(monkeypatch):
     is resampled.  For N input samples at 22050 Hz the output should have
     approximately N * 16000/22050 samples.  The exact ratio is checked within 1%.
     """
-    import math
     import struct as _struct
+
     import voice_gateway.tts as tts_mod
 
     # Build 0.5 s of silence at 22050 Hz (the native Piper rate)
@@ -535,8 +532,9 @@ async def test_call_llm_sends_full_history(monkeypatch):
 
 def test_owner_user_id_propagated_as_header(monkeypatch):
     """GATEWAY_OWNER_USER_ID is sent as X-AgentShroud-User-Id header (not a body field)."""
-    import importlib
     import asyncio
+    import importlib
+
     import voice_gateway.server as srv
 
     monkeypatch.setenv("GATEWAY_OWNER_USER_ID", "8096968754")
@@ -564,7 +562,6 @@ def test_owner_user_id_propagated_as_header(monkeypatch):
 def test_token_loaded_from_secret_file(tmp_path, monkeypatch):
     """_GATEWAY_TOKEN is read from the secret file when it exists."""
     import importlib
-    import os
 
     secret_file = tmp_path / "gw_password.txt"
     secret_file.write_text("test-secret-token\n")
@@ -958,7 +955,6 @@ async def test_ws_direct_agent_calls_call_llm(monkeypatch):
     llm_called = []
     agent_called = []
 
-    original_call_llm = srv._call_llm
     original_call_agent = srv._call_agent if hasattr(srv, "_call_agent") else None
 
     async def _mock_llm(history):
@@ -1091,7 +1087,6 @@ async def _run_disconnect_test(exc_to_raise, monkeypatch, caplog):
       - No exc_info / traceback attached to any voice_gateway log record
       - At least one INFO "Disconnected" line emitted
     """
-    import asyncio
     import logging
     from unittest.mock import AsyncMock, MagicMock
 
@@ -1186,12 +1181,11 @@ async def test_ws_pipeline_error_logs_and_recovers_to_idle(monkeypatch, caplog):
       3. continue the receive loop (next receive exits via WebSocketDisconnect → INFO log)
     Covers voice_gateway/server.py lines 334-344 and 347.
     """
-    import asyncio
     import logging
     from unittest.mock import AsyncMock, MagicMock
-    from fastapi.websockets import WebSocketDisconnect
 
     import voice_gateway.server as srv
+    from fastapi.websockets import WebSocketDisconnect
 
     # Mock WebSocket
     ws = MagicMock()
@@ -1253,10 +1247,9 @@ async def test_call_agent_read_timeout_returns_fallback(monkeypatch):
     httpx raises ReadTimeout (agent hung for > 35 s).
     Covers voice_gateway/server.py lines 224-228.
     """
-    import logging
-    import httpx
     from unittest.mock import AsyncMock, patch
 
+    import httpx
     import voice_gateway.server as srv
 
     with patch(
@@ -1278,9 +1271,9 @@ async def test_ws_direct_agent_pipeline_error_pops_history_and_recovery_send_fai
     """
     import logging
     from unittest.mock import AsyncMock, MagicMock
-    from fastapi.websockets import WebSocketDisconnect
 
     import voice_gateway.server as srv
+    from fastapi.websockets import WebSocketDisconnect
 
     ws = MagicMock()
     ws.client = MagicMock()

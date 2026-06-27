@@ -36,10 +36,7 @@ from .models import (
     AuditLogEntry,
     AuditResult,
     SCLConfirmationRequired,
-    SCLError,
     SCLInterface,
-    Severity,
-    WSEventType,
 )
 
 logger = logging.getLogger("agentshroud.soc.router")
@@ -1671,7 +1668,7 @@ async def deny_request(
 @router.get("/health")
 async def get_health(caller: SCLCaller = Depends(get_caller)) -> Dict:
     caller.require(Action.READ, Resource.SYSTEM)
-    app = _app_state()
+    _app_state()
     from .services import ServiceManager
 
     mgr = ServiceManager()

@@ -7,12 +7,11 @@
 from __future__ import annotations
 
 import time
-import uuid
 from unittest.mock import patch
 
 import pytest
 
-from gateway.security.output_canary import CanaryConfig, CanaryResult, OutputCanary
+from gateway.security.output_canary import CanaryConfig, OutputCanary
 
 
 class TestOutputCanary:
@@ -67,7 +66,7 @@ class TestOutputCanary:
     def test_leaked_canary_detected_in_response(self):
         """Test that leaked canaries are detected in responses."""
         # Generate a canary
-        canary = self.canary_system.generate_canary(self.test_session_id)
+        self.canary_system.generate_canary(self.test_session_id)
 
         # Get the base canary (without invisible chars)
         canary_data = list(self.canary_system._session_canaries[self.test_session_id].values())[0]
@@ -110,7 +109,7 @@ class TestOutputCanary:
         canary_system = OutputCanary(config)
 
         # Generate a canary
-        canary = canary_system.generate_canary(self.test_session_id)
+        canary_system.generate_canary(self.test_session_id)
 
         # Get the base canary
         canary_data = list(canary_system._session_canaries[self.test_session_id].values())[0]

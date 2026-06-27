@@ -7907,7 +7907,6 @@ class TestProgressiveLockdownUX:
     _COLLAB = "7614658040"
 
     def _make_proxy(self, monkeypatch=None):
-        from gateway.ingest_api import state as state_module
 
         proxy = TelegramAPIProxy(pipeline=PassthroughPipeline())
         proxy._rbac = FakeRBAC(owner_id=self._OWNER, collaborators=[self._COLLAB])
@@ -8465,7 +8464,6 @@ class TestFileDownload:
     async def test_forward_file_download_returns_raw_body_sentinel(self, monkeypatch):
         """_forward_file_download returns dict with _raw_body, _content_type, _status_code."""
         import io
-        import ssl
 
         fake_body = b"\x89PNG\r\n\x1a\n" + b"\x00" * 100  # fake PNG bytes
         fake_response = io.BytesIO(fake_body)
@@ -8515,7 +8513,6 @@ class TestFileDownload:
     @pytest.mark.asyncio
     async def test_proxy_request_file_download_error_returns_502(self, monkeypatch):
         """proxy_request returns 502 sentinel when file download raises."""
-        import urllib.request
 
         proxy = TelegramAPIProxy()
         monkeypatch.setattr(
@@ -8594,7 +8591,6 @@ class TestFileDownload:
     @pytest.mark.asyncio
     async def test_forward_file_download_aborts_at_size_limit(self, monkeypatch):
         """_forward_file_download must raise when streamed bytes exceed limit (CVE-2026-32049)."""
-        import io
 
         from gateway.proxy.telegram_proxy import _MAX_MEDIA_FILE_SIZE
 
@@ -9406,7 +9402,6 @@ class TestFullAccessMiddlewareBypass:
     @pytest.mark.asyncio
     async def test_full_access_disclosure_text(self, monkeypatch):
         """full_access collaborator must receive the general-access disclosure message."""
-        from gateway.proxy.telegram_proxy import _DISCLOSURE_MESSAGE_FULL_ACCESS
 
         monkeypatch.setenv("AGENTSHROUD_COLLAB_LOCAL_INFO_ONLY", "0")
         proxy = TelegramAPIProxy()
@@ -9434,7 +9429,6 @@ class TestFullAccessMiddlewareBypass:
     @pytest.mark.asyncio
     async def test_default_disclosure_text(self, monkeypatch):
         """local_only collaborator must receive the restricted-scope disclosure message."""
-        from gateway.proxy.telegram_proxy import _DISCLOSURE_MESSAGE
 
         monkeypatch.setenv("AGENTSHROUD_COLLAB_LOCAL_INFO_ONLY", "1")
         proxy = TelegramAPIProxy()

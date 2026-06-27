@@ -13,11 +13,10 @@ import uuid
 from unittest.mock import AsyncMock, MagicMock
 
 import pytest
-import pytest_asyncio
 
 from gateway.ingest_api.config import PIIConfig
 from gateway.ingest_api.sanitizer import PIISanitizer
-from gateway.proxy.pipeline import PipelineAction, PipelineResult, SecurityPipeline
+from gateway.proxy.pipeline import SecurityPipeline
 from gateway.security.context_guard import ContextGuard
 from gateway.security.egress_config import EgressFilterConfig
 from gateway.security.egress_filter import EgressFilter, EgressPolicy
@@ -285,7 +284,7 @@ async def test_trust_escalation_blocked():
 async def test_session_isolation():
     """One agent's session data must not leak to another."""
     pipe = _make_full_pipeline()
-    result1 = await pipe.process_inbound("secret data ABC123", agent_id="agent-1")
+    await pipe.process_inbound("secret data ABC123", agent_id="agent-1")
     result2 = await pipe.process_inbound("what did agent-1 say?", agent_id="agent-2")
     # Pipeline processes independently — agent-2 can't access agent-1's data.
     # The pipeline is stateless per-message; agent-2's response should not

@@ -22,8 +22,7 @@ from gateway.security.cross_bot_trust_ledger import (
     IncidentRecord,
     TrustDecayPolicy,
 )
-from gateway.security.trust_manager import TrustConfig, TrustLevel, TrustManager
-
+from gateway.security.trust_manager import TrustConfig, TrustManager
 
 # ---------------------------------------------------------------------------
 # Fixtures

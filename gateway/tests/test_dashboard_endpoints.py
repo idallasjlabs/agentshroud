@@ -6,13 +6,13 @@
 
 from __future__ import annotations
 
-from unittest.mock import AsyncMock, patch
+from unittest.mock import patch
 
 import pytest
 import pytest_asyncio
 from httpx import ASGITransport, AsyncClient
 
-from gateway.ingest_api.main import app, app_state, lifespan
+from gateway.ingest_api.main import app, lifespan
 from gateway.web.dashboard_endpoints import (
     AlertStore,
     LogBuffer,

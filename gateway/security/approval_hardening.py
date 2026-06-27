@@ -9,7 +9,7 @@ from __future__ import annotations
 Approval Queue Hardening — Anti-social-engineering measures for the approval queue.
 
 Provides enhanced security measures to prevent social engineering attacks through
-misleading approval request descriptions, parameter manipulation, and rapid 
+misleading approval request descriptions, parameter manipulation, and rapid
 re-submission of denied requests.
 """
 
@@ -18,7 +18,7 @@ import logging
 import re
 import time
 from dataclasses import dataclass, field
-from typing import Any, Dict, List, Optional, Set
+from typing import Any, Dict, List, Set
 
 logger = logging.getLogger(__name__)
 

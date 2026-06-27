@@ -18,7 +18,7 @@ import time
 from dataclasses import dataclass, field
 from datetime import datetime, timedelta, timezone
 from enum import Enum
-from typing import Any, Awaitable, Callable, Dict, List, Optional
+from typing import Any, Dict, List, Optional
 from uuid import uuid4
 
 from .key_rotation_config import CredentialRotationPolicy, KeyRotationConfig
@@ -482,7 +482,7 @@ class KeyRotationManager:
                     results["details"].append(f"Rotated {cred_id}")
                 else:
                     results["failures"] += 1
-                    results["details"].append(f"Failed to rotate {cred_id}: {result.get(error)}")
+                    results["details"].append(f"Failed to rotate {cred_id}: {result.get('error')}")
 
             elif cred.should_warn(policy):
                 results["warnings"] += 1
