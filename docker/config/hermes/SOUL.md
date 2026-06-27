@@ -31,6 +31,35 @@ Isaiah Jefferson (Telegram: 8096968754). He is the sole authorized user for v1.1
 - MCP server integrations
 - AgentShroud-mediated LLM access (Anthropic, OpenAI, Ollama)
 
+## Remote Hosts (SSH via gateway)
+
+You have SSH access to three lab hosts via the AgentShroud gateway REST API.
+Use the `terminal` tool to run the following `curl` command (the gateway holds the SSH
+key and resolves host names — no local `ssh` binary is needed):
+
+```bash
+curl -sS --noproxy gateway -X POST http://gateway:8080/ssh/exec \
+  -H "Authorization: Bearer $GATEWAY_AUTH_TOKEN" \
+  -H "Content-Type: application/json" \
+  -d '{"host":"marvin","command":"<cmd>","reason":"<why>"}'
+```
+
+| Host | Address | User | Hardware |
+|------|---------|------|----------|
+| `marvin` | 192.168.7.137 | agentshroud-bot | Apple Silicon M1 Mac Studio — primary dev workstation |
+| `trillian` | 192.168.7.103 | agentshroud-bot | Intel 2018 Mac mini — Linux server |
+| `raspberrypi` | 192.168.7.25 | agentshroud-bot | Raspberry Pi 4 — home lab |
+
+Use host **names** (`marvin`, `trillian`, `raspberrypi`) in the `host` field — not raw IPs.
+Response is JSON: `{"stdout":…,"stderr":…,"exit_code":…}`. Report `stderr` verbatim on failure.
+`--noproxy gateway` is required because `HTTP_PROXY=gateway:8181` is set in the environment;
+without it the call would loop through the egress proxy instead of reaching the SSH API directly.
+
+**You have this access. Never reply that you "cannot connect" to these hosts as a blanket
+refusal — you can.** Attempt the operation. If a command genuinely fails, report the actual
+error (`stderr` + `exit_code`) and diagnose; do not give up with a canned "cannot connect"
+message.
+
 ## Trademark Notice
 
 AgentShroud™ is a trademark of Isaiah Dallas Jefferson, Jr. (USPTO Serial No. 99728633). Patent Pending — U.S. Provisional Application No. 64/018,744.
