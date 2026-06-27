@@ -323,7 +323,7 @@ mcp_proxy:
 # SSH Proxy configuration
 # Approved hosts only — no command-level restrictions (unrestricted dev access).
 # SSH key mounted from agentshroud-ssh volume at /var/agentshroud-ssh (read-only).
-# known_hosts stored at /tmp/ssh_known_hosts (gateway tmpfs, accept-new policy).
+# known_hosts stored at /var/agentshroud-ssh/known_hosts (agentshroud-ssh volume, persists across restarts).
 ssh:
   enabled: true
   require_approval: false
@@ -337,21 +337,21 @@ ssh:
       port: 22
       username: "agentshroud-bot"
       key_path: "/var/agentshroud-ssh/id_ed25519"
-      known_hosts_file: "/tmp/ssh_known_hosts"
+      known_hosts_file: "/var/agentshroud-ssh/known_hosts"
       max_session_seconds: 300
     host2:
       host: "your-hostname-2"
       port: 22
       username: "agentshroud-bot"
       key_path: "/var/agentshroud-ssh/id_ed25519"
-      known_hosts_file: "/tmp/ssh_known_hosts"
+      known_hosts_file: "/var/agentshroud-ssh/known_hosts"
       max_session_seconds: 1800
     host3:
       host: "your-hostname-3"
       port: 22
       username: "agentshroud-bot"
       key_path: "/var/agentshroud-ssh/id_ed25519"
-      known_hosts_file: "/tmp/ssh_known_hosts"
+      known_hosts_file: "/var/agentshroud-ssh/known_hosts"
       max_session_seconds: 300
 
 # Security Module Configuration (v0.7.0 - Enforce by Default)
