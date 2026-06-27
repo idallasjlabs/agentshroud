@@ -8750,7 +8750,7 @@ class TestGroupMentionFilter:
 
     The bot reads ALL group messages for context (they are forwarded inbound),
     but outbound responses are suppressed unless the bot was @mentioned.
-    _group_response_eligible[chat_id] tracks eligibility per group.
+    _group_response_eligible[(bot_id, chat_id)] tracks eligibility per bot per group.
     """
 
     def _make_proxy(self, bot_username: str = "testbot") -> TelegramAPIProxy:
@@ -8758,6 +8758,9 @@ class TestGroupMentionFilter:
         proxy._rbac = FakeRBAC(owner_id="8096968754", collaborators=["8506022825"])
         proxy._bot_token = ""
         proxy._bot_username = bot_username
+        # Keep _bot_usernames in sync so _username_for_bot returns the test username.
+        # default_bot_id is "openclaw" when TelegramAPIProxy() called with no args.
+        proxy._bot_usernames = {proxy._default_bot_id: bot_username}
         proxy._group_mention_only = True
         return proxy
 
@@ -8773,8 +8776,8 @@ class TestGroupMentionFilter:
         # Message is forwarded to bot for context
         assert len(updates) == 1
         assert updates[0].get("message") is not None, "Full message should be forwarded"
-        # But chat is marked ineligible for response
-        assert proxy._group_response_eligible.get(-1001234567890) is False
+        # But chat is marked ineligible for response (key is now (bot_id, chat_id))
+        assert proxy._group_response_eligible.get(("openclaw", -1001234567890)) is False
 
     @pytest.mark.asyncio
     async def test_group_message_with_mention_forwarded_and_eligible(self):
@@ -8789,7 +8792,7 @@ class TestGroupMentionFilter:
         updates = result["result"]
         assert len(updates) == 1
         assert updates[0].get("message", {}).get("text") == text
-        assert proxy._group_response_eligible.get(-1001234567890) is True
+        assert proxy._group_response_eligible.get(("openclaw", -1001234567890)) is True
 
     @pytest.mark.asyncio
     async def test_group_command_with_bot_suffix_eligible(self):
@@ -8801,7 +8804,7 @@ class TestGroupMentionFilter:
             text, user_id="8506022825", chat_id=-1001234567890, entities=entities
         )
         await proxy._filter_inbound_updates(_wrap_response(update))
-        assert proxy._group_response_eligible.get(-1001234567890) is True
+        assert proxy._group_response_eligible.get(("openclaw", -1001234567890)) is True
 
     @pytest.mark.asyncio
     async def test_private_message_does_not_set_eligibility_flag(self):
@@ -8809,7 +8812,8 @@ class TestGroupMentionFilter:
         proxy = self._make_proxy()
         update = _make_update("hello no mention needed", user_id="8506022825", chat_id=8506022825)
         await proxy._filter_inbound_updates(_wrap_response(update))
-        assert 8506022825 not in proxy._group_response_eligible
+        # No (bot_id, chat_id) entry for a positive (DM) chat id
+        assert ("openclaw", 8506022825) not in proxy._group_response_eligible
 
     @pytest.mark.asyncio
     async def test_filter_disabled_does_not_set_eligibility(self):
@@ -8818,7 +8822,7 @@ class TestGroupMentionFilter:
         proxy._group_mention_only = False
         update = _make_group_update("no mention", user_id="8506022825", chat_id=-999)
         await proxy._filter_inbound_updates(_wrap_response(update))
-        assert -999 not in proxy._group_response_eligible
+        assert ("openclaw", -999) not in proxy._group_response_eligible
 
     @pytest.mark.asyncio
     async def test_no_bot_username_does_not_set_eligibility(self):
@@ -8826,7 +8830,379 @@ class TestGroupMentionFilter:
         proxy = self._make_proxy(bot_username="")
         update = _make_group_update("no mention no username", user_id="8506022825", chat_id=-888)
         await proxy._filter_inbound_updates(_wrap_response(update))
-        assert -888 not in proxy._group_response_eligible
+        assert ("openclaw", -888) not in proxy._group_response_eligible
+
+
+class TestPerBotGroupMentionFilter:
+    """Per-bot eligibility — each bot in a shared group tracks mention state independently.
+
+    Regression tests for SCRUM-45 / SCRUM-33: Hermes never replied because the singleton
+    proxy used a single TELEGRAM_BOT_USERNAME matching only OpenClaw, and the eligibility
+    map was keyed by chat_id alone so bots clobbered each other.
+    """
+
+    def _make_proxy(
+        self,
+        openclaw_username: str = "agentshroud_bot",
+        hermes_username: str = "agentshroud_hermes_bot",
+    ) -> TelegramAPIProxy:
+        proxy = TelegramAPIProxy()
+        proxy._rbac = FakeRBAC(owner_id="8096968754", collaborators=["8506022825"])
+        proxy._bot_token = ""
+        proxy._bot_username = openclaw_username  # default/fallback
+        proxy._bot_usernames = {
+            "openclaw": openclaw_username,
+            "hermes": hermes_username,
+        }
+        proxy._group_mention_only = True
+        return proxy
+
+    def test_username_for_bot_returns_per_bot_username(self):
+        """_username_for_bot returns the correct @username for each bot_id."""
+        proxy = self._make_proxy()
+        assert proxy._username_for_bot("openclaw") == "agentshroud_bot"
+        assert proxy._username_for_bot("hermes") == "agentshroud_hermes_bot"
+
+    def test_username_for_bot_falls_back_to_default(self):
+        """Unknown bot_id falls back to _bot_username."""
+        proxy = self._make_proxy()
+        assert proxy._username_for_bot("unknown_bot") == proxy._bot_username
+
+    @pytest.mark.asyncio
+    async def test_hermes_mention_sets_hermes_eligibility(self):
+        """@agentshroud_hermes_bot mention sets hermes eligibility, not openclaw."""
+        from gateway.proxy.telegram_proxy import _inbound_bot_id
+
+        proxy = self._make_proxy()
+        text = "hey @agentshroud_hermes_bot help"
+        # "@agentshroud_hermes_bot" = "@"(1) + "agentshroud_hermes_bot"(22) = 23 chars
+        entities = [{"type": "mention", "offset": 4, "length": 23}]
+        update = _make_group_update(
+            text, user_id="8506022825", chat_id=-1001234567890, entities=entities
+        )
+        token = _inbound_bot_id.set("hermes")
+        try:
+            await proxy._filter_inbound_updates(_wrap_response(update))
+        finally:
+            _inbound_bot_id.reset(token)
+
+        assert proxy._group_response_eligible.get(("hermes", -1001234567890)) is True
+        assert ("openclaw", -1001234567890) not in proxy._group_response_eligible
+
+    @pytest.mark.asyncio
+    async def test_openclaw_mention_does_not_affect_hermes_eligibility(self):
+        """@agentshroud_bot mention sets only openclaw eligible; hermes entry is absent."""
+        from gateway.proxy.telegram_proxy import _inbound_bot_id
+
+        proxy = self._make_proxy()
+        text = "hey @agentshroud_bot help"
+        # "@agentshroud_bot" = "@"(1) + "agentshroud_bot"(15) = 16 chars
+        entities = [{"type": "mention", "offset": 4, "length": 16}]
+        update = _make_group_update(
+            text, user_id="8506022825", chat_id=-1001234567890, entities=entities
+        )
+        token = _inbound_bot_id.set("openclaw")
+        try:
+            await proxy._filter_inbound_updates(_wrap_response(update))
+        finally:
+            _inbound_bot_id.reset(token)
+
+        assert proxy._group_response_eligible.get(("openclaw", -1001234567890)) is True
+        assert ("hermes", -1001234567890) not in proxy._group_response_eligible
+
+    @pytest.mark.asyncio
+    async def test_hermes_mention_ignored_when_processed_as_openclaw(self):
+        """@agentshroud_hermes_bot message processed as openclaw yields ineligible for openclaw."""
+        from gateway.proxy.telegram_proxy import _inbound_bot_id
+
+        proxy = self._make_proxy()
+        text = "hey @agentshroud_hermes_bot"
+        # "@agentshroud_hermes_bot" = 23 chars
+        entities = [{"type": "mention", "offset": 4, "length": 23}]
+        update = _make_group_update(
+            text, user_id="8506022825", chat_id=-1001234567890, entities=entities
+        )
+        # Processed as openclaw — the hermes mention should NOT grant openclaw eligibility
+        token = _inbound_bot_id.set("openclaw")
+        try:
+            await proxy._filter_inbound_updates(_wrap_response(update))
+        finally:
+            _inbound_bot_id.reset(token)
+
+        assert proxy._group_response_eligible.get(("openclaw", -1001234567890)) is False
+
+    @pytest.mark.asyncio
+    async def test_two_bots_same_group_independent_eligibility(self):
+        """Two bots in the same group track eligibility independently."""
+        from gateway.proxy.telegram_proxy import _inbound_bot_id
+
+        proxy = self._make_proxy()
+        chat_id = -1009999999999
+
+        # hermes receives a message mentioning hermes → eligible
+        text_h = "hey @agentshroud_hermes_bot"
+        # "@agentshroud_hermes_bot" = 23 chars
+        entities_h = [{"type": "mention", "offset": 4, "length": 23}]
+        upd_h = _make_group_update(
+            text_h, user_id="8506022825", chat_id=chat_id, entities=entities_h
+        )
+        tok_h = _inbound_bot_id.set("hermes")
+        try:
+            await proxy._filter_inbound_updates(_wrap_response(upd_h))
+        finally:
+            _inbound_bot_id.reset(tok_h)
+
+        # openclaw receives a plain message (no mention) → ineligible
+        upd_oc = _make_group_update("general update", user_id="8506022825", chat_id=chat_id)
+        tok_oc = _inbound_bot_id.set("openclaw")
+        try:
+            await proxy._filter_inbound_updates(_wrap_response(upd_oc))
+        finally:
+            _inbound_bot_id.reset(tok_oc)
+
+        assert proxy._group_response_eligible.get(("hermes", chat_id)) is True
+        assert proxy._group_response_eligible.get(("openclaw", chat_id)) is False
+
+
+# ── Group presence probe ──────────────────────────────────────────────────────
+
+
+class TestGroupPresenceProbe:
+    """Group presence probe: bare trigger phrases make each bot reply with a short liveness ack.
+
+    Any group member can type 'hello', 'who's there', '/status', etc. in an allowlisted group
+    and both bots reply with '✅ @<username> online' — no @mention required, no LLM invocation.
+    A per-(bot_id, chat_id) cooldown (~60 s) prevents ack storms.
+    """
+
+    OWNER = "8096968754"
+    COLLAB = "8506022825"
+    STRANGER = "1111111111"
+    CHAT_ID = -1009876543210
+
+    def _make_proxy(
+        self,
+        openclaw_username: str = "agentshroud_bot",
+        hermes_username: str = "agentshroud_hermes_bot",
+    ) -> TelegramAPIProxy:
+        proxy = TelegramAPIProxy()
+        proxy._rbac = FakeRBAC(owner_id=self.OWNER, collaborators=[self.COLLAB])  # type: ignore[assignment]
+        proxy._bot_token = ""
+        proxy._bot_username = openclaw_username
+        proxy._bot_usernames = {
+            "openclaw": openclaw_username,
+            "hermes": hermes_username,
+        }
+        proxy._group_mention_only = True
+        return proxy
+
+    # ── predicate unit tests (synchronous) ────────────────────────────────────
+
+    def test_predicate_hello_matches(self):
+        proxy = self._make_proxy()
+        assert proxy._matches_presence_probe("hello") is True
+
+    def test_predicate_hi_matches(self):
+        proxy = self._make_proxy()
+        assert proxy._matches_presence_probe("hi") is True
+
+    def test_predicate_status_matches(self):
+        proxy = self._make_proxy()
+        assert proxy._matches_presence_probe("/status") is True
+        assert proxy._matches_presence_probe("status") is True
+
+    def test_predicate_whos_there_matches(self):
+        proxy = self._make_proxy()
+        assert proxy._matches_presence_probe("who's there") is True
+        assert proxy._matches_presence_probe("whos there") is True
+
+    def test_predicate_partial_match_does_not_fire(self):
+        """'hello, can you help?' must NOT match — exact-match guard."""
+        proxy = self._make_proxy()
+        assert proxy._matches_presence_probe("hello, can you help?") is False
+        assert proxy._matches_presence_probe("hello world") is False
+        assert proxy._matches_presence_probe("say hello") is False
+
+    def test_predicate_strips_leading_bot_mention(self):
+        """'@agentshroud_hermes_bot hello' normalises to 'hello' → matches."""
+        proxy = self._make_proxy()
+        assert proxy._matches_presence_probe("@agentshroud_hermes_bot hello") is True
+        assert proxy._matches_presence_probe("@agentshroud_bot hello") is True
+
+    def test_predicate_trailing_punctuation_stripped(self):
+        """'hello!' and 'hello?' should both match."""
+        proxy = self._make_proxy()
+        assert proxy._matches_presence_probe("hello!") is True
+        assert proxy._matches_presence_probe("hello?") is True
+
+    # ── integration tests (async) ──────────────────────────────────────────────
+
+    @pytest.mark.asyncio
+    async def test_hello_in_group_sends_openclaw_ack(self, monkeypatch):
+        """'hello' (bare) in a group triggers '✅ @agentshroud_bot online' from openclaw."""
+        sent: list[str] = []
+
+        async def fake_send(chat_id, text, **kw):
+            sent.append(text)
+            return True
+
+        proxy = self._make_proxy()
+        monkeypatch.setattr(proxy, "_send_telegram_text", fake_send)
+
+        update = _make_group_update("hello", user_id=self.COLLAB, chat_id=self.CHAT_ID)
+        await proxy._filter_inbound_updates(_wrap_response(update))
+
+        assert any(
+            "agentshroud_bot" in t and "online" in t for t in sent
+        ), f"Expected openclaw ack in {sent}"
+
+    @pytest.mark.asyncio
+    async def test_hello_in_group_sends_hermes_ack(self, monkeypatch):
+        """'hello' in a group triggers '✅ @agentshroud_hermes_bot online' when processed as hermes."""
+        from gateway.proxy.telegram_proxy import _inbound_bot_id
+
+        sent: list[str] = []
+
+        async def fake_send(chat_id, text, **kw):
+            sent.append(text)
+            return True
+
+        proxy = self._make_proxy()
+        monkeypatch.setattr(proxy, "_send_telegram_text", fake_send)
+
+        update = _make_group_update("hello", user_id=self.COLLAB, chat_id=self.CHAT_ID)
+        token = _inbound_bot_id.set("hermes")
+        try:
+            await proxy._filter_inbound_updates(_wrap_response(update))
+        finally:
+            _inbound_bot_id.reset(token)
+
+        assert any(
+            "agentshroud_hermes_bot" in t and "online" in t for t in sent
+        ), f"Expected hermes ack in {sent}"
+
+    @pytest.mark.asyncio
+    async def test_status_in_group_sends_short_ack_not_full_status(self, monkeypatch):
+        """/status in a group sends only the short liveness ack (no operational details)."""
+        sent: list[str] = []
+
+        async def fake_send(chat_id, text, **kw):
+            sent.append(text)
+            return True
+
+        proxy = self._make_proxy()
+        monkeypatch.setattr(proxy, "_send_telegram_text", fake_send)
+
+        # Suppress the detailed status notice if it somehow fires
+        async def noop(*a, **kw):
+            return None
+
+        monkeypatch.setattr(proxy, "_send_local_status_notice", noop, raising=False)
+
+        update = _make_group_update("/status", user_id=self.OWNER, chat_id=self.CHAT_ID)
+        await proxy._filter_inbound_updates(_wrap_response(update))
+
+        assert sent, "/status in group must send at least the short ack"
+        # The short ack contains the username and 'online'; it does NOT contain
+        # operational keywords like 'model', 'mode', or 'pipeline'.
+        ack_lines = [t for t in sent if "online" in t]
+        assert ack_lines, f"Expected an 'online' ack in {sent}"
+        for line in ack_lines:
+            assert "model" not in line.lower(), "Group /status must NOT leak model info"
+
+    @pytest.mark.asyncio
+    async def test_dm_hello_does_not_trigger_probe(self, monkeypatch):
+        """The probe is group-only; 'hello' in a DM chat must not fire the ack."""
+        sent: list[str] = []
+
+        async def fake_send(chat_id, text, **kw):
+            sent.append(text)
+            return True
+
+        proxy = self._make_proxy()
+        monkeypatch.setattr(proxy, "_send_telegram_text", fake_send)
+
+        # DM: positive chat_id, type="private"
+        dm_update = _make_update("hello", user_id=self.OWNER, chat_id=int(self.OWNER))
+        await proxy._filter_inbound_updates(_wrap_response(dm_update))
+
+        # No ack from the probe; only other notices (disclosure, etc.) may appear
+        probe_texts = [t for t in sent if "online" in t and "@agentshroud" in t]
+        assert not probe_texts, f"Probe must not fire in DM; got {probe_texts}"
+
+    @pytest.mark.asyncio
+    async def test_partial_phrase_does_not_trigger_probe(self, monkeypatch):
+        """'hello, can you help?' must reach the LLM path, not be swallowed by the probe."""
+        sent_probe: list[str] = []
+
+        async def fake_send(chat_id, text, **kw):
+            sent_probe.append(text)
+            return True
+
+        proxy = self._make_proxy()
+        monkeypatch.setattr(proxy, "_send_telegram_text", fake_send)
+
+        update = _make_group_update(
+            "hello, can you help?", user_id=self.COLLAB, chat_id=self.CHAT_ID
+        )
+        await proxy._filter_inbound_updates(_wrap_response(update))
+
+        ack_texts = [t for t in sent_probe if "online" in t and "@agentshroud" in t]
+        assert not ack_texts, f"Partial phrase must not trigger probe; got {ack_texts}"
+
+    @pytest.mark.asyncio
+    async def test_cooldown_suppresses_second_ack(self, monkeypatch):
+        """Second 'hello' within the cooldown window must NOT send a second ack."""
+        sent: list[str] = []
+
+        async def fake_send(chat_id, text, **kw):
+            sent.append(text)
+            return True
+
+        proxy = self._make_proxy()
+        monkeypatch.setattr(proxy, "_send_telegram_text", fake_send)
+
+        # First probe — should ack
+        upd1 = _make_group_update("hello", user_id=self.COLLAB, chat_id=self.CHAT_ID, update_id=1)
+        await proxy._filter_inbound_updates(_wrap_response(upd1))
+        first_count = len([t for t in sent if "online" in t])
+        assert first_count == 1, f"Expected exactly 1 ack on first probe; got {sent}"
+
+        # Second probe immediately — still within cooldown, must not fire
+        upd2 = _make_group_update("hello", user_id=self.OWNER, chat_id=self.CHAT_ID, update_id=2)
+        await proxy._filter_inbound_updates(_wrap_response(upd2))
+        second_count = len([t for t in sent if "online" in t])
+        assert second_count == 1, f"Cooldown must suppress second ack; total sent: {sent}"
+
+    @pytest.mark.asyncio
+    async def test_stranger_hello_in_group_receives_ack(self, monkeypatch):
+        """A stranger (not owner, not collaborator) typing 'hello' in a group still gets the ack.
+
+        The probe fires before the stranger-drop path so anyone can use it as a liveness check.
+        """
+        sent: list[str] = []
+
+        async def fake_send(chat_id, text, **kw):
+            sent.append(text)
+            return True
+
+        async def noop_owner_notice(chat_id, message):
+            pass
+
+        proxy = self._make_proxy()
+        monkeypatch.setattr(proxy, "_send_telegram_text", fake_send)
+        # Suppress owner notifications for access request that would otherwise fire
+        monkeypatch.setattr(proxy, "_send_owner_admin_notice", noop_owner_notice)
+
+        # A different chat to avoid cooldown from other tests
+        stranger_chat = -1009999000001
+        update = _make_group_update("hello", user_id=self.STRANGER, chat_id=stranger_chat)
+        await proxy._filter_inbound_updates(_wrap_response(update))
+
+        ack_texts = [t for t in sent if "online" in t and "@agentshroud" in t]
+        assert (
+            ack_texts
+        ), f"Stranger typing 'hello' in a group must receive the liveness ack; sent: {sent}"
 
 
 # ── full_access middleware bypass ─────────────────────────────────────────────
