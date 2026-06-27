@@ -1270,9 +1270,14 @@ async def _record_scanner_result(scanner: str, result: dict, target: str = "") -
         )
 
 
+_CLAMAV_ALLOWED_TARGETS: frozenset[str] = frozenset({"/app", "/opt", "/tmp", "/var", "/home"})
+
+
 @app.post("/manage/scan/clamav")
 async def run_clamav_scan(auth: AuthRequired, target: str = "/app"):
     """Run ClamAV antivirus scan. Tries clamdscan (daemon) first, falls back to clamscan."""
+    if target not in _CLAMAV_ALLOWED_TARGETS:
+        raise HTTPException(status_code=400, detail=f"target must be one of {sorted(_CLAMAV_ALLOWED_TARGETS)}")
     if not app_state.clamav_scanner:
         return {"error": "ClamAV scanner not available"}
     # Prefer clamdscan (daemon, shared memory) if clamd is running, else clamscan
@@ -1301,12 +1306,20 @@ async def run_clamav_scan(auth: AuthRequired, target: str = "/app"):
     return result
 
 
+_TRIVY_ALLOWED_SCAN_TYPES: frozenset[str] = frozenset({"fs", "image", "sbom", "rootfs", "config", "repo"})
+
+
 @app.post("/manage/scan/trivy")
 async def run_trivy_scan(auth: AuthRequired, target: str = "fs"):
     """Run Trivy vulnerability scan."""
+    if target not in _TRIVY_ALLOWED_SCAN_TYPES:
+        raise HTTPException(status_code=400, detail=f"target must be one of {sorted(_TRIVY_ALLOWED_SCAN_TYPES)}")
     if not app_state.trivy_scanner:
         return {"error": "Trivy scanner not available"}
-    result = app_state.trivy_scanner.run_trivy_scan(scan_type=target, timeout=300)
+    result = await asyncio.get_running_loop().run_in_executor(
+        None,
+        lambda: app_state.trivy_scanner.run_trivy_scan(scan_type=target, timeout=300),
+    )
     await _record_scanner_result("trivy", result, target=target)
     if app_state.alert_dispatcher and not result.get("error"):
         by_sev = result.get("by_severity", {})
@@ -1485,6 +1498,10 @@ async def receive_security_alert(request: Request):
         message   — human-readable description
         timestamp — ISO-8601 (optional)
     """
+    client_host = request.client.host if request.client else None
+    if client_host not in ("127.0.0.1", "::1"):
+        raise HTTPException(status_code=403, detail="Forbidden")
+
     try:
         body = await request.json()
     except Exception:
@@ -2359,11 +2376,16 @@ async def privacy_audit(auth: AuthRequired, limit: int = 200):
     }
 
 
+_OPENSCAP_PROFILE_RE = re.compile(r"^[A-Za-z0-9_.:\-]{1,256}$")
+
+
 @app.post("/manage/scan/openscap")
 async def run_openscap_scan(
     auth: AuthRequired, profile: str = "xccdf_org.ssgproject.content_profile_standard"
 ):
     """Run OpenSCAP XCCDF evaluation against the running container."""
+    if not _OPENSCAP_PROFILE_RE.match(profile):
+        raise HTTPException(status_code=400, detail="profile contains disallowed characters")
     import glob as _gl
     import os as _os
     import shutil as _sh
@@ -2401,22 +2423,16 @@ async def run_openscap_scan(
     results_xml = "/tmp/openscap-results.xml"
     report_html = "/tmp/openscap-report.html"
     try:
-        r = _sp.run(
-            [
-                "oscap",
-                "xccdf",
-                "eval",
-                "--profile",
-                profile,
-                "--results",
-                results_xml,
-                "--report",
-                report_html,
-                ds_file,
-            ],
-            capture_output=True,
-            text=True,
-            timeout=120,
+        _oscap_cmd = [
+            "oscap", "xccdf", "eval",
+            "--profile", profile,
+            "--results", results_xml,
+            "--report", report_html,
+            ds_file,
+        ]
+        r = await asyncio.get_running_loop().run_in_executor(
+            None,
+            lambda: _sp.run(_oscap_cmd, capture_output=True, text=True, timeout=120),
         )
         result = {
             "status": "completed",
@@ -2476,7 +2492,10 @@ async def run_all_scanners(auth: AuthRequired):
 
     # Trivy
     if getattr(app_state, "trivy_scanner", None):
-        trivy = app_state.trivy_scanner.run_trivy_scan(scan_type="fs", timeout=300)
+        trivy = await asyncio.get_running_loop().run_in_executor(
+            None,
+            lambda: app_state.trivy_scanner.run_trivy_scan(scan_type="fs", timeout=300),
+        )
         await _record_scanner_result("trivy", trivy, target="fs")
         results["trivy"] = trivy
     else:
