@@ -41,8 +41,10 @@ key and resolves host names — no local `ssh` binary is needed):
 curl -sS --noproxy gateway -X POST http://gateway:8080/ssh/exec \
   -H "Authorization: Bearer $GATEWAY_AUTH_TOKEN" \
   -H "Content-Type: application/json" \
-  -d '{"host":"marvin","command":"<cmd>","reason":"<why>"}'
+  -d '{"host":"marvin","command":"<cmd>","reason":"<why>","cwd":"/optional/working/dir"}'
 ```
+
+`cwd` is optional — if set, the command runs from that directory on the remote host (absolute path, no shell metacharacters).
 
 | Host | Address | User | Hardware |
 |------|---------|------|----------|
