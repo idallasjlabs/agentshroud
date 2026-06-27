@@ -252,6 +252,45 @@ class TestConfigValidation:
         assert "groupAllowFrom" in script
         assert "allowlist" in script
 
+    def test_openclaw_patch_script_uses_multi_group_allowlist_var(self):
+        """apply-patches.js must reference AGENTSHROUD_GROUP_CHAT_IDS (multi-group).
+
+        Regression: SCRUM-45 — legacy single-ID var only supported one group. The new
+        var is comma-separated and supports an allowlist of arbitrary groups.
+        """
+        path = REPO_ROOT / "docker" / "config" / "openclaw" / "apply-patches.js"
+        if not path.exists():
+            pytest.skip("apply-patches.js not available in this environment")
+        script = path.read_text()
+        assert "AGENTSHROUD_GROUP_CHAT_IDS" in script, (
+            "Multi-group allowlist env var must be referenced in apply-patches.js"
+        )
+        # Script must split on comma to support multiple IDs
+        assert "split" in script, "Script must split comma-separated chat IDs"
+        # Legacy single-ID var must still be accepted for backward compat
+        assert "AGENTSHROUD_GROUP_CHAT_ID" in script, (
+            "Legacy single-ID var must be kept for backward compat"
+        )
+
+    def test_openclaw_patch_script_emits_per_chat_group_agents(self):
+        """apply-patches.js must create per-chat group-{chatId} agents for the approval router.
+
+        gateway/approval_queue/group_router.py expects agent ids of the form "group-{chat_id}"
+        so it can extract the numeric chat id. The old static "group-project" id broke this.
+        """
+        path = REPO_ROOT / "docker" / "config" / "openclaw" / "apply-patches.js"
+        if not path.exists():
+            pytest.skip("apply-patches.js not available in this environment")
+        script = path.read_text()
+        # Script must build dynamic "group-{chatId}" agent ids
+        assert "group-${" in script or "`group-${" in script, (
+            "Script must emit per-chat group-{chatId} agent IDs for approval router compat"
+        )
+        # Script must remove stale bindings when chat IDs leave the allowlist
+        assert "stale" in script.lower(), (
+            "Script must clean up stale group bindings on config volume restart"
+        )
+
     def test_lifespan_uvicorn_warning_filter_drops_invalid_http_noise(self):
         """Lifespan filter should suppress repeated malformed HTTP warning noise."""
         import logging

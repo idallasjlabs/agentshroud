@@ -118,9 +118,15 @@ services:
       - AGENTSHROUD_COMPOSE_DIR=/Users/agentshroud-bot/Development/agentshroud
       - AGENTSHROUD_INSTANCE_LABEL=${AGENTSHROUD_INSTANCE_LABEL:-prod}
       - TRIVY_CACHE_DIR=/var/log/security/.trivy-cache
-      # Group chat: bot @handle (without @) for at-mention-only filtering in groups
+      # Group chat: bot @handles (without @) for at-mention-only filtering in groups.
+      # The singleton gateway proxy uses TELEGRAM_BOT_USERNAME for the default (openclaw)
+      # bot and HERMES_TELEGRAM_BOT_USERNAME for hermes, keyed by bot_id (SCRUM-45).
       - TELEGRAM_BOT_USERNAME=${TELEGRAM_BOT_USERNAME:-agentshroud_bot}
-      # Group chat: set to Telegram group/supergroup chat ID to bind → group-project agent
+      - HERMES_TELEGRAM_BOT_USERNAME=${HERMES_TELEGRAM_BOT_USERNAME:-agentshroud_hermes_bot}
+      # Group chat: comma-separated Telegram group/supergroup chat IDs to allow.
+      # Each ID binds to a per-chat group-{chatId} agent (approval-router compatible).
+      # Legacy single-ID var kept for compat: AGENTSHROUD_GROUP_CHAT_ID.
+      - AGENTSHROUD_GROUP_CHAT_IDS=${AGENTSHROUD_GROUP_CHAT_IDS:-}
       - AGENTSHROUD_GROUP_CHAT_ID=${AGENTSHROUD_GROUP_CHAT_ID:-}
       # Voice terminal: fast model for gateway-routed chat/completions (Haiku = 3-8 s vs Opus 30-60 s)
       - GATEWAY_CHAT_MODEL=${GATEWAY_CHAT_MODEL:-claude-haiku-4-5-20251001}
@@ -262,6 +268,7 @@ services:
       - AGENTSHROUD_SLACK_OWNER_USER_ID=${AGENTSHROUD_SLACK_OWNER_USER_ID:-}
       - AGENTSHROUD_CONTROL_UI_ORIGINS=${AGENTSHROUD_CONTROL_UI_ORIGINS:-http://localhost:18789,https://localhost:18789,http://127.0.0.1:18789,https://127.0.0.1:18789,https://marvin.tail240ea8.ts.net:18789,http://marvin.tail240ea8.ts.net:18789}
       - GATEWAY_HOST_PORT=8080
+      - AGENTSHROUD_GROUP_CHAT_IDS=${AGENTSHROUD_GROUP_CHAT_IDS:-}
       - AGENTSHROUD_GROUP_CHAT_ID=${AGENTSHROUD_GROUP_CHAT_ID:-}
       - OPENCLAW_BOT_NAME=agentshroud_bot
       - OPENCLAW_BOT_EMAIL=${OPENCLAW_BOT_EMAIL:-bot@example.com}

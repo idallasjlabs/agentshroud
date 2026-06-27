@@ -263,6 +263,25 @@ _COLLABORATOR_ALLOWED_SLASH_COMMANDS = {
     "/setname",
 }
 
+# Presence probe: short trigger phrases that make both bots send a liveness ack
+# in group chats without an @mention.  Exact-match only (not prefix) so genuine
+# requests that *start* with these words still reach the LLM on the normal path.
+_PRESENCE_PROBE_TRIGGERS: frozenset[str] = frozenset(
+    {
+        "hello",
+        "hi",
+        "hey",
+        "ping",
+        "who's there",
+        "whos there",
+        "who is there",
+        "status",
+        "/status",
+    }
+)
+# Cooldown applied per (bot_id, chat_id) to avoid repeated acks in the same group.
+_PRESENCE_PROBE_COOLDOWN_SECONDS = 60.0
+
 _DISCLOSURE_MESSAGE = (
     "\U0001f6e1\ufe0f *AgentShroud Notice*\n\n"
     "This conversation is logged and may be reviewed as part of the AgentShroud\u2122 "
@@ -435,9 +454,30 @@ class TelegramAPIProxy:
         self._group_mention_only = os.environ.get(
             "AGENTSHROUD_GROUP_MENTION_ONLY", "1"
         ).strip().lower() not in ("0", "false", "no")
-        # Tracks whether the bot should respond in each group chat. True = @mentioned,
-        # False = context only (suppress outbound). Keyed by chat_id (int).
-        self._group_response_eligible: dict[int, bool] = {}
+        # Per-bot username map: bot_id → @username (without @). The singleton proxy
+        # serves multiple bots; each bot needs its own username for @mention matching.
+        # Falls back to _bot_username (default/openclaw) for unknown bot_ids.
+        # HERMES_TELEGRAM_BOT_USERNAME defaults to agentshroud_hermes_bot.
+        _hermes_uname = (
+            os.environ.get("HERMES_TELEGRAM_BOT_USERNAME", "agentshroud_hermes_bot")
+            .strip()
+            .lstrip("@")
+            .lower()
+        )
+        self._bot_usernames: dict[str, str] = {
+            self._default_bot_id: self._bot_username,
+        }
+        if _hermes_uname:
+            self._bot_usernames["hermes"] = _hermes_uname
+        # Tracks whether each bot should respond in each group chat.
+        # True = @mentioned, False = context only (suppress outbound).
+        # Keyed by (bot_id, chat_id) tuple so bots in the same group
+        # track eligibility independently. (Previously keyed by chat_id
+        # only — caused cross-bot clobbering: SCRUM-45.)
+        self._group_response_eligible: dict[tuple, bool] = {}
+        # Presence probe cooldown: tracks until when each (bot_id, chat_id) pair
+        # should suppress repeated liveness acks.  Mirrored on _PRESENCE_PROBE_COOLDOWN_SECONDS.
+        self._recent_presence_ack_until: dict[tuple, float] = {}
 
         # Progressive lockdown: per-user cumulative block counter with escalating responses.
         # 3 blocks → owner alert; 5 blocks → double rate limit window; 10 → session suspended.
@@ -562,6 +602,35 @@ class TelegramAPIProxy:
         if str(chat_id) == str(getattr(self._rbac, "owner_user_id", "")):
             return True
         return False
+
+    def _username_for_bot(self, bot_id: str) -> str:
+        """Return the @username (without @) for the given bot_id.
+
+        Looks up ``_bot_usernames`` first (populated from per-bot env vars),
+        then falls back to ``_bot_username`` (the primary/default bot username).
+        Returns an empty string only when neither is configured.
+        """
+        return self._bot_usernames.get(bot_id) or self._bot_username
+
+    def _matches_presence_probe(self, text: str) -> bool:
+        """Return True when ``text`` is a bare liveness-check phrase.
+
+        Strips a leading @mention of any known bot username first, so
+        ``@agentshroud_hermes_bot hello`` normalises to ``hello``.  Only an
+        **exact** match against ``_PRESENCE_PROBE_TRIGGERS`` returns True —
+        a message that merely *starts* with a trigger (e.g. "hello, can you
+        help?") is left alone and reaches the normal LLM path.
+        """
+        import re as _re
+
+        normalised = text.strip().lower()
+        # Strip a leading @mention for any known bot username.
+        for uname in self._bot_usernames.values():
+            if uname:
+                normalised = _re.sub(rf"^@{_re.escape(uname)}\s*", "", normalised)
+        # Strip trailing punctuation so "hello!" and "hello?" still match.
+        normalised = normalised.rstrip("!?.,:;")
+        return normalised in _PRESENCE_PROBE_TRIGGERS
 
     @staticmethod
     def _is_group_message(message: dict) -> bool:
@@ -2923,12 +2992,15 @@ class TelegramAPIProxy:
         # ── Group chat response gate ──────────────────────────────────────────
         # Suppress bot replies to group/supergroup chats where the last inbound
         # was not an @mention. The bot still received those messages for context
-        # (_group_response_eligible tracks eligibility per chat_id). This applies
-        # to sendMessage and editMessageText only; system notifications are exempt.
+        # (_group_response_eligible tracks eligibility per (bot_id, chat_id)).
+        # This applies to sendMessage and editMessageText only; system notifications
+        # are exempt. Keyed per-bot so OpenClaw and Hermes don't clobber each other.
+        _gate_bot_id = self._active_bot_id()
+        _gate_username = self._username_for_bot(_gate_bot_id)
         if (
             not is_system
             and self._group_mention_only
-            and self._bot_username
+            and _gate_username
             and method
             in (
                 "sendMessage",
@@ -2946,9 +3018,12 @@ class TelegramAPIProxy:
                 if isinstance(_out_chat_id, (int, str)):
                     _cid = int(_out_chat_id)
                     # Telegram group/supergroup IDs are negative integers.
-                    if _cid < 0 and not self._group_response_eligible.get(_cid, True):
+                    if _cid < 0 and not self._group_response_eligible.get(
+                        (_gate_bot_id, _cid), True
+                    ):
                         logger.debug(
-                            "Group outbound suppressed (context-only mode): chat_id=%s method=%s",
+                            "Group outbound suppressed (context-only mode): bot_id=%s chat_id=%s method=%s",
+                            _gate_bot_id,
                             _cid,
                             method,
                         )
@@ -4361,30 +4436,32 @@ class TelegramAPIProxy:
             # originated from a group/supergroup chat or a DM.
             _chat_type = (message.get("chat") or {}).get("type", "")
             _inbound_group_chat_id.set(
-                str(chat_id) if _chat_type in ("group", "supergroup") and chat_id is not None else None
+                str(chat_id)
+                if _chat_type in ("group", "supergroup") and chat_id is not None
+                else None
             )
 
             # ── Group chat at-mention filter ──────────────────────────────────
             # ALL group messages are forwarded to the bot for conversational context.
             # But outbound responses are suppressed unless the bot was @mentioned.
-            # _group_response_eligible[chat_id] = True → bot may respond.
-            # _group_response_eligible[chat_id] = False → context only, no reply sent.
-            # Requires TELEGRAM_BOT_USERNAME env var; if unset, all messages get replies.
-            if (
-                self._group_mention_only
-                and self._bot_username
-                and self._is_group_message(message)
-                and chat_id is not None
-            ):
-                mentioned = self._bot_is_mentioned(message, self._bot_username)
-                self._group_response_eligible[int(chat_id)] = mentioned
-                if not mentioned:
-                    logger.debug(
-                        "Group message (context-only, no reply): user_id=%s chat_id=%s preview=%s",
-                        user_id,
-                        chat_id,
-                        (text or "")[:40].replace("\n", " "),
-                    )
+            # _group_response_eligible[(bot_id, chat_id)] = True → bot may respond.
+            # _group_response_eligible[(bot_id, chat_id)] = False → context only.
+            # Keyed per-bot so OpenClaw and Hermes track eligibility independently
+            # (SCRUM-45: shared chat_id key caused cross-bot clobbering).
+            if self._group_mention_only and self._is_group_message(message) and chat_id is not None:
+                _inbound_bid = self._active_bot_id()
+                _inbound_uname = self._username_for_bot(_inbound_bid)
+                if _inbound_uname:
+                    mentioned = self._bot_is_mentioned(message, _inbound_uname)
+                    self._group_response_eligible[(_inbound_bid, int(chat_id))] = mentioned
+                    if not mentioned:
+                        logger.debug(
+                            "Group message (context-only, no reply): bot_id=%s user_id=%s chat_id=%s preview=%s",
+                            _inbound_bid,
+                            user_id,
+                            chat_id,
+                            (text or "")[:40].replace("\n", " "),
+                        )
 
             if not text:
                 # ── CVE-2026-32049: reject oversized media before reaching the bot ─────
@@ -4559,6 +4636,46 @@ class TelegramAPIProxy:
                 self._stats["activity_track_errors"] = (
                     self._stats.get("activity_track_errors", 0) + 1
                 )
+
+            # ── Group presence probe ──────────────────────────────────────────
+            # In group chats, any member can send a bare trigger phrase (hello,
+            # who's there, /status, etc.) to confirm both bots are alive.  The
+            # probe fires BEFORE the owner-mirror and stranger-drop sections so
+            # it works for any role (owner / collaborator / stranger).  Suspended
+            # users are already `continue`d earlier at the lockdown check.
+            #
+            # Reply = short deterministic "✅ @<username> online" string — no
+            # operational details, no LLM, no info-disclosure to group members.
+            # DM /status reaches the rich _local_status_handler via the normal
+            # local-command path; group /status is intentionally downgraded here.
+            #
+            # A per-(bot, chat) cooldown (~60 s) prevents ack storms.
+            if (
+                chat_id
+                and self._is_group_message(message)
+                and text
+                and self._matches_presence_probe(text)
+            ):
+                _probe_key = (self._active_bot_id(), int(chat_id))
+                _probe_now = time.time()
+                if self._recent_presence_ack_until.get(_probe_key, 0.0) <= _probe_now:
+                    _bot_uname = self._username_for_bot(self._active_bot_id())
+                    _ack_text = f"✅ @{_bot_uname} online" if _bot_uname else "✅ online"
+                    try:
+                        await self._send_telegram_text(int(chat_id), _ack_text)
+                        self._recent_presence_ack_until[_probe_key] = (
+                            _probe_now + _PRESENCE_PROBE_COOLDOWN_SECONDS
+                        )
+                        logger.info(
+                            "Presence probe ack sent for bot=%s chat=%s trigger=%r",
+                            self._active_bot_id(),
+                            chat_id,
+                            text[:40],
+                        )
+                    except Exception as _probe_exc:
+                        logger.debug("Presence probe send error (non-fatal): %s", _probe_exc)
+                # Drop the update — the probe is no-LLM by design; do not forward.
+                continue
 
             # ── Owner mirror for non-owner inbound messages ───────────────────
             if not is_owner and is_collaborator and text:
@@ -5899,7 +6016,7 @@ class TelegramAPIProxy:
                 # on the outbound side via _group_response_eligible.
                 if (
                     self._group_mention_only
-                    and self._bot_username
+                    and self._username_for_bot(self._active_bot_id())
                     and self._is_group_message(message)
                 ):
                     filtered_updates.append(update)
