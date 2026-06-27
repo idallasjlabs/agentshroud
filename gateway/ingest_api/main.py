@@ -932,9 +932,15 @@ async def ssh_exec(request: SSHExecRequest, auth: AuthRequired):
         )
         raise HTTPException(status_code=403, detail=denial_reason)
 
+    # Validate cwd path before execution
+    if request.cwd is not None:
+        cwd_valid, cwd_reason = proxy.validate_cwd(request.cwd)
+        if not cwd_valid:
+            raise HTTPException(status_code=400, detail=f"Invalid cwd: {cwd_reason}")
+
     async def _execute_and_record(approved_by: str) -> SSHExecResponse:
         """Execute command and record to ledger with PII sanitization."""
-        result = await proxy.execute(request.host, request.command, request.timeout)
+        result = await proxy.execute(request.host, request.command, request.timeout, cwd=request.cwd)
         # Sanitize command for ledger storage
         sanitized = await app_state.sanitizer.sanitize(request.command)
         content_hash = hashlib.sha256(f"{request.command}:{request.host}".encode()).hexdigest()
