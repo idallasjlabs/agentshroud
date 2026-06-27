@@ -45,7 +45,9 @@ _EMAIL_ALLOWED_RECIPIENTS: list[str] = [
     "idallasj@gmail.com",
 ]
 _EMAIL_SENDER = "agentshroud.ai@gmail.com"
-_EMAIL_OP_REF = "op://Agent Shroud Bot Credentials/AgentShroud - Google/gmail app password"
+_EMAIL_OP_REF = (
+    "op://Agent Shroud Bot Credentials/AgentShroud - Google/gmail app password"
+)
 _EMAIL_SMTP_HOST = "smtp.gmail.com"
 _EMAIL_SMTP_PORT = 465
 
@@ -67,7 +69,9 @@ def _get_gmail_app_password() -> "str | None":
         secrets = "/run/secrets"
         try:
             email = Path(f"{secrets}/1password_bot_email").read_text().strip()
-            password = Path(f"{secrets}/1password_bot_master_password").read_text().strip()
+            password = (
+                Path(f"{secrets}/1password_bot_master_password").read_text().strip()
+            )
             key_path = Path(f"{secrets}/1password_bot_secret_key")
             key = key_path.read_text().strip() if key_path.exists() else ""
         except OSError:
@@ -200,10 +204,13 @@ async def email_send(request: EmailSendRequest, req: Request, auth: AuthRequired
                 pii_redacted = len(scan.redactions) > 0
                 if pii_redacted:
                     logger.warning(
-                        "email-send: PII redacted from body (%d items)", len(scan.redactions)
+                        "email-send: PII redacted from body (%d items)",
+                        len(scan.redactions),
                     )
             except Exception as e:
-                logger.warning("email-send: PII scan failed (%s), proceeding with original body", e)
+                logger.warning(
+                    "email-send: PII scan failed (%s), proceeding with original body", e
+                )
 
     if not recipient_allowed:
         # Unknown recipient → queue for approval
@@ -232,7 +239,9 @@ async def email_send(request: EmailSendRequest, req: Request, auth: AuthRequired
                     timestamp=now,
                 ).model_dump(),
             )
-        logger.warning("email-send: unknown recipient blocked (no approval queue available)")
+        logger.warning(
+            "email-send: unknown recipient blocked (no approval queue available)"
+        )
         raise HTTPException(
             status_code=status.HTTP_403_FORBIDDEN,
             detail="Recipient not in allowlist and no approval queue available",
@@ -308,7 +317,9 @@ class OwnerEmailRequest(BaseModel):
 
 
 @router.post("/email/send-owner", status_code=status.HTTP_200_OK)
-async def email_send_owner(request: OwnerEmailRequest, req: Request, auth: AuthRequired):
+async def email_send_owner(
+    request: OwnerEmailRequest, req: Request, auth: AuthRequired
+):
     """Send an email to the owner without exposing the recipient address in the request.
 
     Identical to /email/send but the recipient is always _EMAIL_ALLOWED_RECIPIENTS[0]
@@ -327,7 +338,9 @@ async def email_send_owner(request: OwnerEmailRequest, req: Request, auth: AuthR
     return await email_send(inner, req, auth)
 
 
-@router.post("/forward", response_model=ForwardResponse, status_code=status.HTTP_201_CREATED)
+@router.post(
+    "/forward", response_model=ForwardResponse, status_code=status.HTTP_201_CREATED
+)
 async def forward_content(request: ForwardRequest, req: Request, auth: AuthRequired):
     """Main ingest endpoint
 
@@ -374,10 +387,14 @@ async def forward_content(request: ForwardRequest, req: Request, auth: AuthRequi
             }
 
             # Process through middleware
-            middleware_result = await middleware_manager.process_request(request_data, bot_id)
+            middleware_result = await middleware_manager.process_request(
+                request_data, bot_id
+            )
 
             if not middleware_result.allowed:
-                logger.warning(f"Middleware blocked request: {middleware_result.reason}")
+                logger.warning(
+                    f"Middleware blocked request: {middleware_result.reason}"
+                )
                 raise HTTPException(
                     status_code=status.HTTP_403_FORBIDDEN,
                     detail=f"Request blocked by middleware: {middleware_result.reason}",
@@ -400,7 +417,9 @@ async def forward_content(request: ForwardRequest, req: Request, auth: AuthRequi
                 detail="Middleware processing failed. Request blocked for safety.",
             )
     else:
-        logger.warning("MiddlewareManager not available - middleware security checks skipped")
+        logger.warning(
+            "MiddlewareManager not available - middleware security checks skipped"
+        )
 
     # Step 1: Run through security pipeline (injection scan + PII sanitization + audit)
     pipeline = getattr(app_state, "pipeline", None)
@@ -433,7 +452,10 @@ async def forward_content(request: ForwardRequest, req: Request, auth: AuthRequi
         if pipeline_result.queued_for_approval:
             return JSONResponse(
                 status_code=status.HTTP_202_ACCEPTED,
-                content={"status": "queued", "approval_id": pipeline_result.approval_id},
+                content={
+                    "status": "queued",
+                    "approval_id": pipeline_result.approval_id,
+                },
             )
         sanitized_content = pipeline_result.sanitized_message
         sanitized = pipeline_result.pii_redaction_count > 0
@@ -562,6 +584,23 @@ async def forward_content(request: ForwardRequest, req: Request, auth: AuthRequi
                     elif trust_score >= 100:
                         user_trust_level = "BASIC"
 
+            # Owner-authenticated requests (voice admin interface, owner DMs, API calls
+            # carrying the owner's user_id) receive FULL trust so operational detail
+            # such as hostnames and ports is spoken/shown rather than redacted.
+            #
+            # Security: request.user_id is trusted here because /forward requires
+            # gateway auth (AuthRequired) and the user_id field is set by the
+            # authenticated bot/voice-gateway, not by an untrusted end user.
+            # FULL trust still keeps credential: False (outbound_filter.py:96) and
+            # block_credentials() still runs below (forward.py:590), so raw secrets
+            # are never delivered regardless of trust level.
+            if user_trust_level != "FULL":
+                _owner_uid = getattr(pipeline, "_owner_user_id", None)
+                if _owner_uid and str(getattr(request, "user_id", "") or "") == str(
+                    _owner_uid
+                ):
+                    user_trust_level = "FULL"
+
             out_result = await pipeline.process_outbound(
                 response=agent_response,
                 agent_id=target.name,
@@ -584,7 +623,9 @@ async def forward_content(request: ForwardRequest, req: Request, auth: AuthRequi
                 agent_response
             )
             if xml_was_filtered:
-                logger.info(f"Filtered XML blocks from agent response for source={request.source}")
+                logger.info(
+                    f"Filtered XML blocks from agent response for source={request.source}"
+                )
 
         # Step 5.1: Block credentials from being displayed via untrusted sources
         blocked_response, was_blocked = await app_state.sanitizer.block_credentials(
