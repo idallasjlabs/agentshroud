@@ -567,24 +567,81 @@ if (gpIdx < 0) {
   }
 }
 
-// Bind a configured group chat ID to the group-project agent.
-// Set AGENTSHROUD_GROUP_CHAT_ID to your Telegram group/supergroup chat ID.
-const GROUP_CHAT_ID = String(process.env.AGENTSHROUD_GROUP_CHAT_ID || '').trim();
-if (GROUP_CHAT_ID) {
-  const hasGroupBinding = config.bindings.some(
-    (b) => b.agentId === 'group-project' && b.match && b.match.peer && b.match.peer.id === GROUP_CHAT_ID
-  );
-  if (!hasGroupBinding) {
-    config.bindings = config.bindings.filter(
-      (b) => !(b.match && b.match.peer && b.match.peer.id === GROUP_CHAT_ID)
-    );
-    config.bindings.push({
-      agentId: 'group-project',
-      match: { channel: 'telegram', peer: { kind: 'group', id: GROUP_CHAT_ID } },
+// Patch 1e: multi-group allowlist — bind each allowlisted Telegram group to its own
+// per-chat agent (group-{chatId}). This reconciles the agent-id scheme used by
+// gateway/approval_queue/group_router.py (which expects "group-{chat_id}") with
+// OpenClaw's binding model. The legacy single-ID var (AGENTSHROUD_GROUP_CHAT_ID) is
+// accepted as a fallback for backward compat.
+//
+// Set AGENTSHROUD_GROUP_CHAT_IDS to a comma-separated list of Telegram group/supergroup
+// chat IDs (negative integers). Example: "-1001234567890,-1009876543210"
+// Legacy single-ID: AGENTSHROUD_GROUP_CHAT_ID (kept for compat, added to the list).
+const _rawGroupIds = [
+  process.env.AGENTSHROUD_GROUP_CHAT_IDS || '',
+  process.env.AGENTSHROUD_GROUP_CHAT_ID || '',  // legacy compat
+].join(',');
+const GROUP_CHAT_IDS = _rawGroupIds
+  .split(',')
+  .map((s) => s.trim())
+  .filter(Boolean);
+
+for (const chatId of GROUP_CHAT_IDS) {
+  // Each group gets its own agent id (group-{chatId}) so group_router.py can extract
+  // the real chat_id from the agent_id prefix. Keep group-project as the fallback/default.
+  const groupAgentId = `group-${chatId}`;
+
+  // Ensure the per-chat group agent exists (idempotent: find by id before push).
+  const existingAgentIdx = config.agents.list.findIndex((a) => a.id === groupAgentId);
+  if (existingAgentIdx < 0) {
+    config.agents.list.push({
+      id: groupAgentId,
+      name: `AgentShroud Group ${chatId}`,
+      model: MAIN_MODEL,
+      tools: { profile: 'minimal', deny: _GROUP_TOOL_DENY },
+      skills: [],
+      workspace: `.agentshroud/group-${chatId}`,
+      memorySearch: { enabled: true },
     });
-    console.log(`[init-patch] Bound group chat ${GROUP_CHAT_ID} → group-project`);
+    console.log(`[init-patch] Added per-chat group agent: ${groupAgentId}`);
     changed = true;
   }
+
+  // Bind this chat id → its per-chat agent (idempotent).
+  const hasBinding = config.bindings.some(
+    (b) => b.agentId === groupAgentId && b.match && b.match.peer && b.match.peer.id === chatId
+  );
+  if (!hasBinding) {
+    // Remove any stale binding for this chat id to a different agent (e.g. stale group-project).
+    config.bindings = config.bindings.filter(
+      (b) => !(b.match && b.match.peer && b.match.peer.id === chatId)
+    );
+    config.bindings.push({
+      agentId: groupAgentId,
+      match: { channel: 'telegram', peer: { kind: 'group', id: chatId } },
+    });
+    console.log(`[init-patch] Bound group chat ${chatId} → ${groupAgentId}`);
+    changed = true;
+  }
+}
+
+// Remove stale bindings for chat IDs that are no longer in the allowlist.
+// This prevents orphaned group-{chatId} bindings from accumulating on the config volume.
+const staleGroupBindings = config.bindings.filter(
+  (b) =>
+    b.agentId &&
+    b.agentId.startsWith('group-') &&
+    b.agentId !== 'group-project' &&
+    b.match && b.match.peer &&
+    !GROUP_CHAT_IDS.includes(String(b.match.peer.id))
+);
+if (staleGroupBindings.length > 0) {
+  config.bindings = config.bindings.filter(
+    (b) => !staleGroupBindings.includes(b)
+  );
+  staleGroupBindings.forEach((b) =>
+    console.log(`[init-patch] Removed stale group binding: ${b.agentId} (chat ${b.match && b.match.peer && b.match.peer.id})`)
+  );
+  changed = true;
 }
 
 // Patch 2: gateway auth and cleanup
