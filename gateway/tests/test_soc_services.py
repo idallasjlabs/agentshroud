@@ -3,7 +3,7 @@
 
 from __future__ import annotations
 
-from unittest.mock import AsyncMock, MagicMock, patch
+from unittest.mock import MagicMock, patch
 
 import pytest
 
@@ -100,7 +100,7 @@ class TestServiceManagerGetLogs:
         )
         engine.logs.return_value = raw
         lines = await mgr.get_logs("agentshroud-gateway", tail=50, module_filter="http_proxy")
-        assert all("http_proxy" in l for l in lines)
+        assert all("http_proxy" in ln for ln in lines)
         assert len(lines) == 2
 
     @pytest.mark.asyncio
@@ -114,7 +114,7 @@ class TestServiceManagerGetLogs:
         engine.logs.return_value = raw
         lines = await mgr.get_logs("agentshroud-gateway", tail=50, module_filter="egress_filter")
         assert len(lines) == 2
-        assert all("egress_filter" in l for l in lines)
+        assert all("egress_filter" in ln for ln in lines)
 
     @pytest.mark.asyncio
     async def test_get_logs_module_filter_case_insensitive(self, mgr_with_engine):

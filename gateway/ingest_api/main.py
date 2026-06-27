@@ -19,7 +19,6 @@ Entry point for the gateway API. Wires together all components:
 import asyncio
 import fnmatch
 import hashlib
-import hmac
 import ipaddress as _ipaddress
 import json
 import logging
@@ -40,55 +39,30 @@ from starlette.requests import ClientDisconnect
 from starlette.responses import RedirectResponse
 
 from gateway import __version__
-from gateway.security.session_manager import UserSessionManager
 
 from ..proxy.collaborator_greeter import CollaboratorGreeter
-from ..proxy.http_proxy import ALLOWED_DOMAINS, HTTPConnectProxy
-from ..proxy.mcp_config import MCPProxyConfig
-from ..proxy.mcp_proxy import MCPProxy, MCPToolCall, MCPToolResult
-from ..proxy.pipeline import SecurityPipeline
+from ..proxy.mcp_proxy import MCPToolCall, MCPToolResult
 from ..proxy.slack_proxy import SlackAPIProxy
 from ..proxy.telegram_proxy import TelegramAPIProxy
 from ..proxy.telegram_replay import UpdateReplayBuffer
-from ..proxy.web_config import WebProxyConfig
-from ..proxy.web_proxy import WebProxy
-from ..security.egress_filter import EgressFilter
-from ..security.killswitch_monitor import KillSwitchMonitor
-from ..security.outbound_filter import OutboundInfoFilter
 from ..security.prompt_guard import PromptGuard
 from ..security.rbac_config import RBACConfig
-from ..security.trust_manager import TrustLevel, TrustManager
+from ..security.trust_manager import TrustManager
 from ..soc.router import router as soc_router
 from ..ssh_proxy.proxy import SSHProxy
 from ..web.api import router as management_api_router
-from ..web.dashboard_endpoints import install_log_handler
 from ..web.dashboard_endpoints import router as dashboard_api_router
 from ..web.management import router as management_dashboard_router
 from .auth import create_auth_dependency
-from .config import (
-    GatewayConfig,
-    check_monitor_mode_warnings,
-    get_module_mode,
-    load_config,
-)
-from .event_bus import EventBus, make_event
+from .event_bus import make_event
 from .lifespan import _read_secret, lifespan
-from .middleware import MiddlewareManager
 from .models import (
-    ApprovalDecision,
-    ApprovalQueueItem,
     ApprovalRequest,
-    EmailSendRequest,
-    EmailSendResponse,
-    ForwardRequest,
-    ForwardResponse,
     LedgerEntry,
     LedgerQueryResponse,
     SSHExecRequest,
     SSHExecResponse,
-    StatusResponse,
 )
-from .router import ForwardError, MultiAgentRouter
 from .routes.approval import router as approval_router
 from .routes.dashboard import router as dashboard_router
 from .routes.forward import router as forward_router
@@ -2868,7 +2842,6 @@ async def container_security_profile(auth: AuthRequired):
 @app.post("/manage/scan/cis-benchmark")
 async def run_cis_benchmark(auth: AuthRequired):
     """CIS Docker Benchmark checks for this container."""
-    import json
     import os
     import subprocess
     from datetime import datetime, timezone
@@ -2932,7 +2905,7 @@ async def run_cis_benchmark(auth: AuthRequired):
     try:
         with open("/proc/mounts") as f:
             mounts = f.read()
-        mounted_sensitive = [
+        [
             d for d in sensitive_mounts if f" {d} " in mounts or mounts.startswith(f"{d} ")
         ]
         docker_sock = "/var/run/docker.sock" in mounts
@@ -3046,13 +3019,11 @@ async def run_cis_benchmark(auth: AuthRequired):
 @app.post("/manage/deep-test")
 async def deep_security_test(auth: AuthRequired):
     """Comprehensive security integration test — tests every module with real payloads."""
-    import hashlib
     import json
     import logging
     import os
     import shutil
     import subprocess
-    import time
     from datetime import datetime, timezone
     from pathlib import Path
 
@@ -3135,7 +3106,6 @@ async def deep_security_test(auth: AuthRequired):
     # 6-8. PROMPT GUARD
     # ═══════════════════════════════════════════════════
     def t_prompt(text, desc):
-        from ..security.prompt_guard import PromptGuard
 
         pg = PromptGuard()
         r = pg.scan(text)
@@ -3411,7 +3381,6 @@ async def deep_security_test(auth: AuthRequired):
     # 25. TRUST MANAGER
     # ═══════════════════════════════════════════════════
     def t_trust():
-        from ..security.trust_manager import TrustManager
 
         tm = TrustManager(db_path=":memory:")
         level = tm.register_agent("test-agent")
@@ -3529,7 +3498,7 @@ async def deep_security_test(auth: AuthRequired):
     # ═══════════════════════════════════════════════════
     def _check_mod(name):
         try:
-            mod = __import__(f"gateway.security.{name}", fromlist=[name])
+            __import__(f"gateway.security.{name}", fromlist=[name])
             return True, f"{name} loaded"
         except ImportError:
             try:
@@ -3557,9 +3526,9 @@ async def deep_security_test(auth: AuthRequired):
             checks.append(("ro-rootfs", True))
         try:
             with open("/proc/self/status") as f:
-                for l in f:
-                    if l.startswith("NoNewPrivs:"):
-                        checks.append(("no-new-privs", l.split(":")[1].strip() == "1"))
+                for line in f:
+                    if line.startswith("NoNewPrivs:"):
+                        checks.append(("no-new-privs", line.split(":")[1].strip() == "1"))
                         break
         except Exception:
             checks.append(("no-new-privs", False))

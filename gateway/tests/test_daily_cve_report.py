@@ -3,16 +3,13 @@
 
 from __future__ import annotations
 
-import asyncio
 import json
 from datetime import datetime, timezone
-from pathlib import Path
-from unittest.mock import AsyncMock, MagicMock, patch
+from unittest.mock import MagicMock
 
 import pytest
 
 from gateway.security.daily_cve_report import (
-    _LAST_REPORT_PATH,
     _already_sent_today,
     format_cve_report,
     run_and_send_cve_report,
@@ -127,9 +124,9 @@ class TestFormatCveReport:
         msg = format_cve_report(_make_report(critical=0, high=0, medium=5, low=0))
         # CRITICAL and HIGH with 0 count should not appear in the breakdown
         lines = msg.split("\n")
-        severity_lines = [l for l in lines if "🔴" in l or "🟠" in l]
-        assert not any("CRITICAL" in l for l in severity_lines)
-        assert not any("HIGH" in l for l in severity_lines)
+        severity_lines = [ln for ln in lines if "🔴" in ln or "🟠" in ln]
+        assert not any("CRITICAL" in ln for ln in severity_lines)
+        assert not any("HIGH" in ln for ln in severity_lines)
 
 
 # ── _already_sent_today ───────────────────────────────────────────────────────
@@ -259,10 +256,8 @@ def _make_github_advisory(cve_id: str, severity: str = "high", score: float = 7.
 class TestCheckUpstreamCves:
     def _patch_urllib(self, monkeypatch, advisories: list) -> None:
         """Stub urllib.request.urlopen to return a list of advisories."""
-        import io
         import urllib.request as _ur
 
-        import gateway.security.daily_cve_report as _mod
 
         fake_resp = MagicMock()
         fake_resp.__enter__ = lambda s: s
@@ -290,7 +285,6 @@ class TestCheckUpstreamCves:
         assert check_upstream_cves() == []
 
     def test_skips_cve_already_in_registry(self, monkeypatch):
-        from gateway.security import daily_cve_report as _mod
         from gateway.security.daily_cve_report import check_upstream_cves
 
         # CVE-2026-22171 is in AGENT_CVE_REGISTRY
@@ -318,9 +312,7 @@ class TestCheckUpstreamCves:
         from gateway.security.daily_cve_report import check_upstream_cves
 
         captured = {}
-        orig_urlopen = _ur.urlopen
 
-        import io
 
         fake_resp = MagicMock()
         fake_resp.__enter__ = lambda s: s
