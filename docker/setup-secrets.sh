@@ -6,11 +6,11 @@
 #   extract  — read all secrets from backend and write docker/secrets/<name>.txt
 #   (none)   — backwards-compat interactive mode: prompt and write secret files directly
 #
-# Credential backend hierarchy (auto-detected):
-#   1. 1Password CLI  — cross-platform, team-friendly (primary)
-#   2. macOS Keychain — fallback on macOS (security command)
-#   3. Linux secret-tool — fallback on Linux (libsecret)
-#   4. prompt         — write directly to secret files (no credential store)
+# Credential backend hierarchy (store writes to tier 1; get cascades all tiers):
+#   1. macOS Keychain — dedicated agentshroud.keychain, never auto-locks (PRIMARY)
+#   2. Linux secret-tool — libsecret/GNOME Keyring (PRIMARY on Linux)
+#   3. 1Password CLI  — non-interactive fallback; uses "Agent Shroud Bot Credentials" vault
+#   4. homedir        — ~/.agentshroud/secrets/*.txt (file fallback)
 #
 # Usage:
 #   ./setup-secrets.sh                         # interactive, writes files directly (legacy)
@@ -20,6 +20,7 @@
 #   ./setup-secrets.sh extract                 # write ALL secret files from credential backend
 #   ./setup-secrets.sh extract --bot openclaw  # write only OpenClaw + shared secret files
 #   ./setup-secrets.sh extract --bot hermes    # write only Hermes + shared secret files
+#   ./setup-secrets.sh migrate                 # one-time: pull secrets from 1Password → Keychain
 #   ./setup-secrets.sh help                    # show this message
 
 set -euo pipefail
@@ -29,38 +30,16 @@ SECRETS_DIR="${AGENTSHROUD_SECRETS_DIR:-${SCRIPT_DIR}/secrets}"
 
 # ── Credential backend detection ──────────────────────────────────────────────
 # AGENTSHROUD_SECRET_BACKEND env var always wins.
-# Auto-detection falls back to 'homedir' when stdin is not a TTY (service
-# account / SSH / launchd) because macOS Keychain requires an interactive
-# login session and will fail with "User interaction is not allowed".
+# On macOS the dedicated agentshroud.keychain is primary — it never auto-locks
+# so it works over SSH without prompts. 1Password is a cascade fallback only.
 SECRETS_HOME_DIR="${HOME}/.agentshroud/secrets"
 
 detect_backend() {
-    # macOS interactive session: prefer Keychain (fast, local, no network dependency).
-    # Keychain must be unlocked — SSH sessions start with it locked; fall through to
-    # 1Password if unlock fails so service accounts still work.
-    if [[ "$(uname)" == "Darwin" ]] && [[ -t 0 ]]; then
-        if ! security show-keychain-info ~/Library/Keychains/login.keychain-db &>/dev/null; then
-            echo "  Keychain is locked. Unlocking..." >&2
-            if ! security unlock-keychain ~/Library/Keychains/login.keychain-db; then
-                echo "  Keychain unlock failed — trying 1Password..." >&2
-                # fall through to 1Password check below
-                true
-            else
-                echo "keychain"
-                return
-            fi
-        else
-            echo "keychain"
-            return
-        fi
-    fi
-    # Non-macOS or Keychain unavailable: prefer 1Password CLI (cross-platform, team-friendly).
-    if command -v op &>/dev/null && op account list &>/dev/null 2>&1; then
-        echo "1password"
-    elif command -v secret-tool &>/dev/null && [[ -t 0 ]]; then
+    if [[ "$(uname)" == "Darwin" ]]; then
+        echo "keychain"
+    elif command -v secret-tool &>/dev/null; then
         echo "secretstore"
     elif [[ -d "${SECRETS_HOME_DIR}" ]]; then
-        # Service account fallback: home-directory secrets store
         echo "homedir"
     else
         echo "prompt"
@@ -68,23 +47,86 @@ detect_backend() {
 }
 
 BACKEND="${AGENTSHROUD_SECRET_BACKEND:-$(detect_backend)}"
-OP_VAULT="${AGENTSHROUD_OP_VAULT:-Private}"
+# 1Password vault containing AgentShroud secrets. Override with AGENTSHROUD_OP_VAULT.
+# Per-host item: "AgentShroud - <hostname> [<user>]". Override with AGENTSHROUD_OP_ITEM.
+OP_VAULT="${AGENTSHROUD_OP_VAULT:-Agent Shroud Bot Credentials}"
+
+# ── macOS dedicated Keychain helpers ──────────────────────────────────────────
+# Uses a separate agentshroud.keychain (never auto-locks) so SSH/headless runs
+# never need a TTY or 1Password approval.
+AGENTSHROUD_KC="agentshroud.keychain"
+KEYCHAIN_PASS_FILE="${HOME}/.config/agentshroud/keychain.pass"
+
+ensure_keychain() {
+    [[ "$(uname)" != "Darwin" ]] && return 0
+    local kc_db="${HOME}/Library/Keychains/agentshroud.keychain-db"
+
+    # Generate a random password for the keychain on first run.
+    if [[ ! -f "$KEYCHAIN_PASS_FILE" ]]; then
+        mkdir -p "$(dirname "$KEYCHAIN_PASS_FILE")"
+        python3 -c "import secrets; print(secrets.token_hex(32), end='')" > "$KEYCHAIN_PASS_FILE"
+        chmod 600 "$KEYCHAIN_PASS_FILE"
+    fi
+    local kc_pass
+    kc_pass="$(cat "$KEYCHAIN_PASS_FILE")"
+
+    if [[ ! -f "$kc_db" ]]; then
+        security create-keychain -p "$kc_pass" "$AGENTSHROUD_KC" 2>/dev/null
+        # No -l or -u flags → keychain never auto-locks (required for headless SSH).
+        security set-keychain-settings "$AGENTSHROUD_KC" 2>/dev/null
+        # Append to user search list without removing existing keychains.
+        local current_kcs
+        current_kcs=$(security list-keychains -d user | tr -d '"' | xargs)
+        # shellcheck disable=SC2086
+        security list-keychains -d user -s $current_kcs "$kc_db" 2>/dev/null
+        echo "  [keychain] Created ${AGENTSHROUD_KC} (never auto-locks)" >&2
+    fi
+
+    # Unlock is idempotent — safe to call when already unlocked.
+    security unlock-keychain -p "$kc_pass" "$AGENTSHROUD_KC" 2>/dev/null || true
+}
+
+keychain_store() {
+    local name="$1" value="$2"
+    ensure_keychain
+    # -U: update if exists; -A: no per-access approval (required for headless SSH).
+    security add-generic-password -U -A \
+        -s "agentshroud" -a "${name}" -w "${value}" \
+        "${AGENTSHROUD_KC}" 2>/dev/null
+}
+
+keychain_get() {
+    local name="$1"
+    security find-generic-password -s "agentshroud" -a "${name}" -w \
+        "${AGENTSHROUD_KC}" 2>/dev/null || true
+}
+
+# ── 1Password non-interactive fallback ────────────────────────────────────────
+# op_get tries several field-label variants to handle the inconsistencies in
+# the "Agent Shroud Bot Credentials" vault (e.g. openai+api_key vs openai_api_key).
+op_get() {
+    local name="$1"
+    command -v op &>/dev/null || return 0
+    command -v op &>/dev/null && op account list &>/dev/null 2>&1 || return 0
+    local item="${AGENTSHROUD_OP_ITEM:-AgentShroud - $(hostname -s) [$(id -un)]}"
+    local val
+    # Try exact canonical name.
+    val=$(op item get "$item" --vault "$OP_VAULT" --fields "$name" 2>/dev/null || true)
+    [[ -n "$val" ]] && { echo "$val"; return; }
+    # Try with + instead of _ (e.g. openai+api_key).
+    val=$(op item get "$item" --vault "$OP_VAULT" --fields "${name//_/+}" 2>/dev/null || true)
+    [[ -n "$val" ]] && { echo "$val"; return; }
+    # Try with space instead of _ (e.g. "gateway password", "ssh key").
+    val=$(op item get "$item" --vault "$OP_VAULT" --fields "${name//_/ }" 2>/dev/null || true)
+    [[ -n "$val" ]] && echo "$val" || true
+}
 
 # ── Backend primitives ─────────────────────────────────────────────────────────
 store_secret() {
     local name="$1" value="$2"
     case "$BACKEND" in
-        1password)
-            op item edit "AgentShroud" "${name}[password]=${value}" --vault "$OP_VAULT" 2>/dev/null \
-            || op item create \
-                --category login \
-                --title "AgentShroud" \
-                --vault "$OP_VAULT" \
-                "username=${name}" \
-                "password=${value}"
-            ;;
         keychain)
-            security add-generic-password -U -s "agentshroud" -a "${name}" -w "${value}"
+            keychain_store "${name}" "${value}"
             ;;
         secretstore)
             secret-tool store --label="agentshroud-${name}" service agentshroud key "${name}" <<< "${value}"
@@ -100,27 +142,46 @@ store_secret() {
             printf '%s' "$value" > "${SECRETS_DIR}/${name}.txt"
             chmod 600 "${SECRETS_DIR}/${name}.txt"
             ;;
+        1password)
+            # Explicit override only — never auto-detected as primary.
+            op item edit "AgentShroud" "${name}[password]=${value}" --vault "$OP_VAULT" 2>/dev/null \
+            || op item create \
+                --category login \
+                --title "AgentShroud" \
+                --vault "$OP_VAULT" \
+                "username=${name}" \
+                "password=${value}"
+            ;;
     esac
 }
 
+# get_secret cascades through all tiers: Keychain → secret-tool → 1Password → file.
+# This order guarantees prompt-free reads over SSH once the Keychain is populated.
 get_secret() {
     local name="$1"
+    local val
+
+    # Tier 1: macOS dedicated Keychain (always unlocked, no TTY needed).
+    if [[ "$(uname)" == "Darwin" ]]; then
+        ensure_keychain
+        val=$(keychain_get "$name")
+        [[ -n "$val" ]] && { echo "$val"; return; }
+    fi
+
+    # Tier 2: Linux secret-tool (libsecret).
+    if command -v secret-tool &>/dev/null; then
+        val=$(secret-tool lookup service agentshroud key "$name" 2>/dev/null || true)
+        [[ -n "$val" ]] && { echo "$val"; return; }
+    fi
+
+    # Tier 3: 1Password non-interactive fallback (skipped if op not signed in).
+    val=$(op_get "$name")
+    [[ -n "$val" ]] && { echo "$val"; return; }
+
+    # Tier 4: plain file fallback.
     case "$BACKEND" in
-        1password)
-            op item get "AgentShroud" --fields "${name}" 2>/dev/null || true
-            ;;
-        keychain)
-            security find-generic-password -s "agentshroud" -a "${name}" -w 2>/dev/null || true
-            ;;
-        secretstore)
-            secret-tool lookup service agentshroud key "${name}" 2>/dev/null || true
-            ;;
-        homedir)
-            cat "${SECRETS_HOME_DIR}/${name}.txt" 2>/dev/null || true
-            ;;
-        prompt)
-            cat "${SECRETS_DIR}/${name}.txt" 2>/dev/null || true
-            ;;
+        homedir) cat "${SECRETS_HOME_DIR}/${name}.txt" 2>/dev/null || true ;;
+        prompt)  cat "${SECRETS_DIR}/${name}.txt" 2>/dev/null || true ;;
     esac
 }
 
@@ -381,6 +442,58 @@ cmd_interactive() {
     fi
 }
 
+cmd_migrate() {
+    if [[ "$(uname)" != "Darwin" ]]; then
+        echo "migrate is macOS-only (dedicated Keychain). On Linux, run 'store' to populate secret-tool." >&2
+        exit 1
+    fi
+
+    local item="${AGENTSHROUD_OP_ITEM:-AgentShroud - $(hostname -s) [$(id -un)]}"
+    echo "╔═══════════════════════════════════════════╗"
+    echo "║  AgentShroud — Migrate Secrets to Keychain ║"
+    echo "╚═══════════════════════════════════════════╝"
+    echo ""
+    echo "  Reading from: 1Password vault '${OP_VAULT}'"
+    echo "               item '${item}'"
+    echo "  Writing to:   ${AGENTSHROUD_KC} (never auto-locks)"
+    echo ""
+    echo "  1Password may prompt for approval once. After this migration,"
+    echo "  all extract/deploy/restart runs will use the Keychain — no more prompts."
+    echo ""
+
+    ensure_keychain
+
+    local all_names=("gateway_password")
+    for def in "${SECRET_DEFS[@]}"; do
+        IFS='|' read -r name _ _ _ _ <<< "$def"
+        all_names+=("$name")
+    done
+
+    local migrated=0 missing=0
+    for name in "${all_names[@]}"; do
+        local val
+        val=$(op_get "$name")
+        if [[ -n "$val" ]]; then
+            keychain_store "$name" "$val"
+            echo "  [migrated] $name"
+            migrated=$((migrated + 1))
+        else
+            echo "  [missing]  $name — not found in 1Password (run 'store' to add manually)"
+            missing=$((missing + 1))
+        fi
+    done
+
+    echo ""
+    echo "Migration complete: ${migrated} migrated, ${missing} not found in 1Password."
+    if [[ $missing -gt 0 ]]; then
+        echo ""
+        echo "For missing secrets, run: ./docker/setup-secrets.sh store"
+        echo "to enter them and store directly in the Keychain."
+    fi
+    echo ""
+    echo "From now on, './docker/setup-secrets.sh extract' runs prompt-free over SSH."
+}
+
 cmd_help() {
     cat <<'EOF'
 setup-secrets.sh — Docker secrets manager for AgentShroud
@@ -393,6 +506,7 @@ Usage:
   ./setup-secrets.sh extract                 Extract ALL secrets → docker/secrets/*.txt
   ./setup-secrets.sh extract --bot openclaw  Extract only OpenClaw + shared secret files
   ./setup-secrets.sh extract --bot hermes    Extract only Hermes + shared secret files
+  ./setup-secrets.sh migrate                 One-time: pull secrets from 1Password → Keychain
   ./setup-secrets.sh help                    Show this message
 
 Bot values for --bot flag:
@@ -400,69 +514,73 @@ Bot values for --bot flag:
   hermes     Hermes agent secrets only + shared infra secrets
   all        All secrets (default when --bot is omitted)
 
-Credential backend hierarchy (auto-detected, or set AGENTSHROUD_SECRET_BACKEND):
-  1password    1Password CLI (cross-platform, team-friendly) — requires: op CLI + signed-in account
-  keychain     macOS Keychain (security command)             — macOS only
-  secretstore  Linux secret-tool (libsecret)                 — Linux only
-  prompt       Write directly to secret files                — always available fallback
+Credential backend (store writes to tier 1; get cascades all tiers):
+  1. keychain     macOS dedicated agentshroud.keychain (never auto-locks, works over SSH)
+  2. secretstore  Linux secret-tool / libsecret
+  3. 1password    1Password CLI — non-interactive fallback (no biometric prompt)
+  4. homedir      ~/.agentshroud/secrets/*.txt — file fallback
 
-Typical first-time setup (all bots):
-  1. ./setup-secrets.sh store      # enter secrets once; stored securely
+Override auto-detection: AGENTSHROUD_SECRET_BACKEND=keychain|secretstore|homedir|prompt
+Override 1Password vault: AGENTSHROUD_OP_VAULT="Agent Shroud Bot Credentials"
+Override 1Password item:  AGENTSHROUD_OP_ITEM="AgentShroud - marvin [agentshroud-bot]"
+
+Typical first-time setup (all bots, new machine):
+  1. ./setup-secrets.sh migrate    # pull from 1Password → Keychain (approve once)
   2. ./setup-secrets.sh extract    # write *.txt files Docker mounts need
   3. docker compose -f docker/docker-compose.yml up -d
 
-First-time setup for Hermes only (already have OpenClaw running):
-  1. ./setup-secrets.sh store --bot hermes
-  2. ./setup-secrets.sh extract --bot hermes
-  3. docker compose -f docker/docker-compose.yml --profile hermes up -d hermes
+First-time setup without 1Password (store directly):
+  1. ./setup-secrets.sh store      # enter secrets; stored in Keychain
+  2. ./setup-secrets.sh extract    # write *.txt files
+  3. docker compose ... up -d
 
-On a new machine (secrets already stored in 1Password/Keychain):
-  1. ./setup-secrets.sh extract    # pull from backend → local files
-  2. docker compose ... up -d
-
-Environment:
-  AGENTSHROUD_SECRET_BACKEND   Override auto-detected backend (1password|keychain|secretstore|prompt)
+From any SSH session after migration:
+  ./setup-secrets.sh extract   # prompt-free; reads from Keychain
 EOF
 }
 
 # ── Dispatch ───────────────────────────────────────────────────────────────────
-SUBCOMMAND="${1:-}"
-shift || true  # consume subcommand; remaining args parsed below
+# Guard allows tests to `source` this script to access helpers without triggering dispatch.
+if [[ "${BASH_SOURCE[0]}" == "$0" ]]; then
+    SUBCOMMAND="${1:-}"
+    shift || true  # consume subcommand; remaining args parsed below
 
-# Parse optional --bot flag for store/extract subcommands.
-# Exported as BOT_FILTER so helper functions can read it.
-BOT_FILTER="all"
-while [[ $# -gt 0 ]]; do
-    case "$1" in
-        --bot)
-            shift
-            BOT_FILTER="${1:-all}"
-            case "$BOT_FILTER" in
-                openclaw|hermes|all) ;;
-                *)
-                    echo "Invalid --bot value: '$BOT_FILTER'. Use: openclaw, hermes, all" >&2
-                    exit 1
-                    ;;
-            esac
-            shift
-            ;;
+    # Parse optional --bot flag for store/extract subcommands.
+    # Exported as BOT_FILTER so helper functions can read it.
+    BOT_FILTER="all"
+    while [[ $# -gt 0 ]]; do
+        case "$1" in
+            --bot)
+                shift
+                BOT_FILTER="${1:-all}"
+                case "$BOT_FILTER" in
+                    openclaw|hermes|all) ;;
+                    *)
+                        echo "Invalid --bot value: '$BOT_FILTER'. Use: openclaw, hermes, all" >&2
+                        exit 1
+                        ;;
+                esac
+                shift
+                ;;
+            *)
+                echo "Unknown argument: $1" >&2
+                echo "Run './setup-secrets.sh help' for usage." >&2
+                exit 1
+                ;;
+        esac
+    done
+    export BOT_FILTER
+
+    case "$SUBCOMMAND" in
+        store)   cmd_store ;;
+        extract) cmd_extract ;;
+        migrate) cmd_migrate ;;
+        help|--help|-h) cmd_help ;;
+        "")      cmd_interactive ;;
         *)
-            echo "Unknown argument: $1" >&2
+            echo "Unknown subcommand: $SUBCOMMAND" >&2
             echo "Run './setup-secrets.sh help' for usage." >&2
             exit 1
             ;;
     esac
-done
-export BOT_FILTER
-
-case "$SUBCOMMAND" in
-    store)   cmd_store ;;
-    extract) cmd_extract ;;
-    help|--help|-h) cmd_help ;;
-    "")      cmd_interactive ;;
-    *)
-        echo "Unknown subcommand: $SUBCOMMAND" >&2
-        echo "Run './setup-secrets.sh help' for usage." >&2
-        exit 1
-        ;;
-esac
+fi
