@@ -176,6 +176,189 @@ else
     fail "Sensitive vars cleared" "env leak: $result"
 fi
 
+# ===========================================================================
+# Tests 6-9: setup-secrets.sh get_secret() cascade (Keychain → op → file)
+# These tests stub both `security` and `op` as PATH shims so they work on
+# Linux CI (no real Keychain). The stubs write/read from a temp directory.
+# ===========================================================================
+
+SETUP_SECRETS="$(dirname "$SCRIPT_DIR")/setup-secrets.sh"
+
+# Shared stub environment for cascade tests
+MOCK_KC_DIR="$TMPDIR/keychain"
+mkdir -p "$MOCK_KC_DIR"
+
+# security stub: reads/writes files named <service>__<account> in MOCK_KC_DIR
+cat > "$MOCK_BIN/security" << 'SECSTUB'
+#!/bin/bash
+kc_dir="${MOCK_KC_DIR:-/tmp/mock_kc}"
+mkdir -p "$kc_dir"
+case "$1" in
+    create-keychain|set-keychain-settings|unlock-keychain|list-keychains) exit 0 ;;
+    add-generic-password)
+        # parse: -s service -a account -w value
+        svc="" acc="" val=""
+        while [[ $# -gt 0 ]]; do
+            case "$1" in -s) svc="$2"; shift 2 ;; -a) acc="$2"; shift 2 ;; -w) val="$2"; shift 2 ;; *) shift ;; esac
+        done
+        printf '%s' "$val" > "$kc_dir/${svc}__${acc}"
+        exit 0 ;;
+    find-generic-password)
+        svc="" acc=""
+        while [[ $# -gt 0 ]]; do
+            case "$1" in -s) svc="$2"; shift 2 ;; -a) acc="$2"; shift 2 ;; *) shift ;; esac
+        done
+        f="$kc_dir/${svc}__${acc}"
+        [[ -f "$f" ]] && cat "$f" && exit 0
+        exit 44 ;;  # 44 = item not found
+    *) exit 0 ;;
+esac
+SECSTUB
+chmod +x "$MOCK_BIN/security"
+
+# ---------------------------------------------------------------------------
+# Test 6: Keychain hit wins — op is NOT called when Keychain has the value
+# ---------------------------------------------------------------------------
+echo "Test 6: Keychain hit — op not called"
+# Pre-populate Keychain stub with a value
+mkdir -p "$MOCK_KC_DIR"
+printf 'keychain_value_42' > "$MOCK_KC_DIR/agentshroud__my_secret"
+
+# op stub that fails hard if called (proves Keychain won before op)
+cat > "$MOCK_BIN/op" << 'OPSTUB6'
+#!/bin/bash
+if [[ "$*" == *"account list"* ]]; then exit 0; fi
+echo "OP_WAS_CALLED" >&2
+exit 1
+OPSTUB6
+chmod +x "$MOCK_BIN/op"
+
+result=$(bash --norc << TEST6
+    export PATH="$MOCK_BIN:$PATH"
+    export AGENTSHROUD_SECRET_BACKEND=keychain
+    export MOCK_KC_DIR="$MOCK_KC_DIR"
+    export HOME="$REAL_HOME"
+    source "$SETUP_SECRETS"
+    get_secret my_secret
+TEST6
+)
+
+if echo "$result" | grep -q "keychain_value_42" && ! echo "$result" | grep -q "OP_WAS_CALLED"; then
+    pass "Keychain hit returns value and does not call op"
+else
+    fail "Keychain hit wins over op" "output: $result"
+fi
+
+# ---------------------------------------------------------------------------
+# Test 7: Keychain miss → 1Password fallback returns value
+# ---------------------------------------------------------------------------
+echo "Test 7: Keychain miss → op fallback"
+# Remove the Keychain entry so it misses
+rm -f "$MOCK_KC_DIR/agentshroud__missing_secret"
+
+# op stub that returns a value for "missing_secret"
+cat > "$MOCK_BIN/op" << 'OPSTUB7'
+#!/bin/bash
+if [[ "$*" == *"account list"* ]]; then echo "my.1password.com"; exit 0; fi
+if [[ "$*" == *"item get"* ]]; then
+    if [[ "$*" == *"missing_secret"* ]]; then echo "op_fallback_value"; exit 0; fi
+fi
+exit 1
+OPSTUB7
+chmod +x "$MOCK_BIN/op"
+
+result=$(bash --norc << TEST7
+    export PATH="$MOCK_BIN:$PATH"
+    export AGENTSHROUD_SECRET_BACKEND=keychain
+    export MOCK_KC_DIR="$MOCK_KC_DIR"
+    export HOME="$REAL_HOME"
+    source "$SETUP_SECRETS"
+    get_secret missing_secret
+TEST7
+)
+
+if echo "$result" | grep -q "op_fallback_value"; then
+    pass "Keychain miss falls back to 1Password and returns value"
+else
+    fail "Keychain miss → op fallback" "output: $result"
+fi
+
+# ---------------------------------------------------------------------------
+# Test 8: Both Keychain and op miss → file fallback returns value
+# ---------------------------------------------------------------------------
+echo "Test 8: Keychain + op miss → file fallback"
+rm -f "$MOCK_KC_DIR/agentshroud__file_secret"
+mkdir -p "$REAL_HOME/.agentshroud/secrets"
+printf 'file_value_99' > "$REAL_HOME/.agentshroud/secrets/file_secret.txt"
+
+cat > "$MOCK_BIN/op" << 'OPSTUB8'
+#!/bin/bash
+if [[ "$*" == *"account list"* ]]; then exit 1; fi  # op not signed in
+exit 1
+OPSTUB8
+chmod +x "$MOCK_BIN/op"
+
+result=$(bash --norc << TEST8
+    export PATH="$MOCK_BIN:$PATH"
+    export AGENTSHROUD_SECRET_BACKEND=homedir
+    export MOCK_KC_DIR="$MOCK_KC_DIR"
+    export HOME="$REAL_HOME"
+    source "$SETUP_SECRETS"
+    get_secret file_secret
+TEST8
+)
+
+if echo "$result" | grep -q "file_value_99"; then
+    pass "Keychain + op miss falls through to homedir file"
+else
+    fail "File fallback tier" "output: $result"
+fi
+
+# ---------------------------------------------------------------------------
+# Test 9: migrate cmd populates Keychain from op for each SECRET_DEFS entry
+# ---------------------------------------------------------------------------
+echo "Test 9: migrate populates Keychain from op"
+rm -rf "$MOCK_KC_DIR"
+mkdir -p "$MOCK_KC_DIR"
+
+# op stub that returns a predictable value per secret name
+cat > "$MOCK_BIN/op" << 'OPSTUB9'
+#!/bin/bash
+if [[ "$*" == *"account list"* ]]; then echo "my.1password.com"; exit 0; fi
+if [[ "$*" == *"item get"* ]]; then
+    # Extract the field name from the last --fields argument
+    field=""
+    while [[ $# -gt 0 ]]; do
+        if [[ "$1" == "--fields" ]]; then field="$2"; fi
+        shift
+    done
+    [[ -n "$field" ]] && echo "migrated_${field}" && exit 0
+fi
+exit 1
+OPSTUB9
+chmod +x "$MOCK_BIN/op"
+
+bash --norc << TEST9 2>/dev/null
+    export PATH="$MOCK_BIN:$PATH"
+    export AGENTSHROUD_SECRET_BACKEND=keychain
+    export MOCK_KC_DIR="$MOCK_KC_DIR"
+    export HOME="$REAL_HOME"
+    source "$SETUP_SECRETS"
+    cmd_migrate
+TEST9
+
+# Verify that gateway_password was written to the Keychain stub
+if [[ -f "$MOCK_KC_DIR/agentshroud__gateway_password" ]]; then
+    val=$(cat "$MOCK_KC_DIR/agentshroud__gateway_password")
+    if [[ "$val" == migrated_* ]]; then
+        pass "migrate wrote gateway_password to Keychain"
+    else
+        fail "migrate gateway_password value" "got: $val"
+    fi
+else
+    fail "migrate did not write gateway_password to Keychain" "file not found"
+fi
+
 # ---------------------------------------------------------------------------
 # Summary
 # ---------------------------------------------------------------------------
