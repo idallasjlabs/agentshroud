@@ -8,6 +8,39 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ---
 
+## [1.2.2] — release/v1.2.2 (2026-06-28)
+
+### Summary
+
+v1.2.2 — Code quality sweep and knowledge graph update. Continues the
+enforcement-first hardening trajectory of v1.2.x. Zero lint errors,
+zero test failures, zero skipped tests post-sweep.
+
+### Fixed
+
+- **Lint**: Auto-fixed 13 ruff F401/I001/F541 issues — unused imports (`os`,
+  `sys`, `threading`, `datetime.timedelta`, `pytest`), unsorted imports, and
+  f-strings with no placeholders.
+- **Lint**: 5 manual ruff fixes — bare `except:` narrowed to typed exceptions
+  (`OSError`, `Exception`); unused variable removed in branding asset generator;
+  `# noqa: E402` markers added for intentional post-init imports in
+  `voice_gateway/__main__.py` and `test_package_skill.py`.
+- **OpenAPI snapshot**: `gateway/openapi.json` was stale at v1.2.0 since the
+  v1.2.1 release; regenerated so the contract gate passes cleanly.
+- **Tests**: 4 web-API tests (`TestKillSwitch::test_disconnect_stops_and_removes_bot`,
+  `TestRebuild::test_rebuild_success`, `TestAgentshroudUpdates::test_upgrade_success_with_tests_and_security_review`,
+  `TestLogs::test_get_logs_combined_handles_partial_failure`) were missing a
+  `load_config` patch after Hermes was added — `_bot_service_names()` fell back
+  to openclaw-only, causing assertion mismatches. Added `_two_bots` fixture patch.
+- **Version**: Bumped `gateway/__init__.py` and `gateway/pyproject.toml` to 1.2.2.
+
+### Changed
+
+- Knowledge graph (`graphify-out/`) updated to v1.2.2 corpus: 24,234 nodes,
+  40,861 edges, 1,306 communities across 288 changed files (205 code + 83 docs).
+
+---
+
 ## [1.2.1] — release/v1.2.1-quality-sweep (2026-06-27)
 
 ### Summary
