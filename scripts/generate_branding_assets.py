@@ -13,11 +13,8 @@ Usage:
 Outputs written to ./branding/ subdirectories.
 """
 
-import os
-import struct
-import zlib
 from pathlib import Path
-from PIL import Image, ImageDraw, ImageFont, ImageFilter
+from PIL import Image, ImageDraw, ImageFont
 
 # ─── Paths ────────────────────────────────────────────────────────────────────
 REPO_ROOT = Path(__file__).parent.parent
@@ -103,8 +100,6 @@ def icon_on_canvas(canvas_size: tuple[int,int], icon_frac: float = 0.8,
 def generate_favicons():
     print("\n[1] Favicons")
     out = ensure(BRANDING / "favicons")
-    src = Image.open(SOURCE_LOGO).convert("RGBA")
-
     sizes = [16, 32, 48, 64, 96, 128, 192, 256, 512]
     frames = []
     for s in [16, 32, 48]:

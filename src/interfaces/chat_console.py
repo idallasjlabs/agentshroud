@@ -6,7 +6,6 @@ Usage:
     python3 src/interfaces/chat_console.py
     ./scripts/chat-console
 """
-import sys
 import json
 import urllib.request
 import urllib.error
@@ -69,7 +68,7 @@ def check_status():
     try:
         with urllib.request.urlopen(OPENCLAW_URL, timeout=5) as response:
             if response.status == 200:
-                print(f"✓ OpenClaw UI: Accessible")
+                print("✓ OpenClaw UI: Accessible")
     except Exception as e:
         print(f"✗ OpenClaw error: {e}")
     print()
