@@ -214,6 +214,72 @@ def normalize_for_speech(text: str) -> str:
     return text
 
 
+_RE_SENTENCE_SPLIT = re.compile(r"(?<=[.!?])\s+")
+
+
+def split_for_speech(text: str, max_chars: int = 240) -> list[str]:
+    """Split an agent reply into ordered sentence-sized TTS chunks.
+
+    Applies normalize_for_speech() to the full text first (markdown/code-fence
+    context requires whole-text processing), then sentence-splits on sentence
+    boundary whitespace.  Each chunk is short enough that Piper renders it
+    quickly, enabling the first PCM frame to reach the ESP32 while later
+    sentences are still synthesizing.
+
+    Short trailing fragments (under 12 chars) are merged forward to prevent
+    over-splitting on abbreviations.  Sentences longer than max_chars are
+    word-wrapped so each Piper invocation stays bounded.
+
+    Returns an empty list when the text normalises to empty/whitespace.
+    """
+    normalized = normalize_for_speech(text)
+    if not normalized:
+        return []
+
+    raw_chunks = _RE_SENTENCE_SPLIT.split(normalized)
+
+    # Merge very short fragments (< 12 chars) forward into the next chunk.
+    merged: list[str] = []
+    pending = ""
+    for chunk in raw_chunks:
+        chunk = chunk.strip()
+        if not chunk:
+            continue
+        if pending:
+            chunk = pending + " " + chunk
+            pending = ""
+        if len(chunk) < 12:
+            pending = chunk
+        else:
+            merged.append(chunk)
+    if pending:  # leftover short trailing fragment
+        if merged:
+            merged[-1] = merged[-1] + " " + pending
+        else:
+            merged.append(pending)
+
+    # Word-wrap any chunk that still exceeds max_chars.
+    result: list[str] = []
+    for chunk in merged:
+        if len(chunk) <= max_chars:
+            result.append(chunk)
+        else:
+            words = chunk.split()
+            current = ""
+            for word in words:
+                if not current:
+                    current = word
+                elif len(current) + 1 + len(word) <= max_chars:
+                    current += " " + word
+                else:
+                    result.append(current)
+                    current = word
+            if current:
+                result.append(current)
+
+    return result
+
+
 def synthesize(text: str) -> bytes:
     """Synthesize *text* to raw S16LE PCM mono audio bytes at TARGET_SAMPLE_RATE.
 

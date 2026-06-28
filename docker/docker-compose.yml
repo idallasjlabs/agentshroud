@@ -441,6 +441,8 @@ services:
     build:
       context: ..
       dockerfile: voice_gateway/Dockerfile
+      args:
+        WHISPER_MODEL_SIZE: small.en
     container_name: agentshroud-voice-gateway
     hostname: agentshroud-voice-gateway
     restart: unless-stopped
