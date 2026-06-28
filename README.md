@@ -44,13 +44,26 @@ AgentShroud is simultaneously a **production-grade tool**, a **learning laborato
 
 ---
 
-## What's New — v1.2.0 "Voice" (June 2026)
+## What's New — v1.2.2 (June 2026)
+
+v1.2.2 is a code quality and knowledge graph update. Zero lint errors, zero test failures, zero skipped tests.
+
+- **Lint clean**: 18 ruff findings resolved — unused imports, unsorted imports, bare `except` clauses narrowed, f-strings without placeholders removed, intentional post-init imports annotated with `# noqa: E402`.
+- **OpenAPI contract**: `gateway/openapi.json` regenerated to match live schema (was stale at v1.2.0 since v1.2.1 release).
+- **Test reliability**: 4 web-API tests now correctly patch `load_config` when both OpenClaw and Hermes bots are active.
+- **Knowledge graph**: 24,234-node / 40,861-edge graph updated across all 288 changed files.
+
+### v1.2.1 (2026-06-27) — Quality sweep
+
+Zero lint errors, zero test failures, zero skipped tests. Three async blocking calls wrapped in `run_in_executor`, four security hardening fixes (localhost enforcement, scan parameter allowlists), SSH `cwd` field support, 19 new tests.
+
+### v1.2.0 "Voice" (June 2026)
 
 v1.2.0 adds the **ESP32-S3 Voice Terminal** — an optional hardware control surface for AgentShroud. Speak to your agents from anywhere via a pocket-sized device; all audio routes through the same 76-module security pipeline.
 
 - **Voice Terminal** (`firmware/voice-terminal/`): ESP32-S3-BOX-3 firmware — WakeNet "Hi, ESP" wake word + touchscreen tap-to-talk. Whisper STT → AgentShroud gateway LLM → Piper TTS, streamed back to the device speaker.
 - **Voice Gateway** (`voice_gateway/`): FastAPI WebSocket service (`/voice`), token-authenticated. Async STT/TTS keeps the event loop live for WS keepalives. Server-side heartbeat prevents cellular idle drops.
-- **Tap-to-talk UX**: short tap → 8-second listen window (VAD auto-ends); after every response → automatic follow-up listen window; 8s silence → returns to wake-word mode.
+- **Sentence-chunked TTS** (v1.2.x): First audio starts after the first sentence synthesizes, not after the whole reply. STT upgraded to `small.en` for better accuracy. Markdown and redaction tokens stripped before speech.
 - **Portable**: works from home WiFi, phone hotspot, or office via Tailscale Funnel (`wss://marvin.tail240ea8.ts.net/voice`). No VPN required on the device.
 - **Hermes operational fixes**: email renderer baked into Hermes image (eliminates `\1` artifacts); HTTP proxy forward-DNS fallback for correct Hermes egress attribution.
 
