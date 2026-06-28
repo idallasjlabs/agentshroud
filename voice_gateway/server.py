@@ -38,7 +38,11 @@ from zoneinfo import ZoneInfo
 
 import httpx
 from fastapi import FastAPI, WebSocket, WebSocketDisconnect
-from websockets.exceptions import ConnectionClosed, ConnectionClosedError, ConnectionClosedOK
+from websockets.exceptions import (
+    ConnectionClosed,
+    ConnectionClosedError,
+    ConnectionClosedOK,
+)
 
 from . import stt as _stt
 from . import tts as _tts
@@ -64,9 +68,7 @@ _DEFAULT_AGENT = os.environ.get("VOICE_DEFAULT_AGENT", "hermes")
 _MAX_HISTORY_TURNS = 10
 
 # Read the bearer token (kept for compatibility / future use).
-_token_file = os.environ.get(
-    "GATEWAY_AUTH_TOKEN_FILE", "/run/secrets/gateway_password"
-)
+_token_file = os.environ.get("GATEWAY_AUTH_TOKEN_FILE", "/run/secrets/gateway_password")
 if os.path.isfile(_token_file):
     with open(_token_file) as _fh:
         _GATEWAY_TOKEN = _fh.read().strip()
@@ -218,8 +220,12 @@ async def _call_agent(transcript: str, agent: str) -> str:
             logger.info("Agent %r reply: %r", agent, agent_reply[:120])
             return agent_reply.strip()
         # Async agents (OpenClaw) route the message but reply later over Telegram.
-        notice = f"{agent.capitalize()} received your message and will reply on Telegram."
-        logger.info("Agent %r returned no synchronous reply — notifying user via TTS", agent)
+        notice = (
+            f"{agent.capitalize()} received your message and will reply on Telegram."
+        )
+        logger.info(
+            "Agent %r returned no synchronous reply — notifying user via TTS", agent
+        )
         return notice
     except httpx.ReadTimeout:
         logger.warning(
@@ -312,20 +318,22 @@ async def voice_endpoint(ws: WebSocket) -> None:
                         if agent == "direct":
                             history.append({"role": "assistant", "content": agent_text})
                             if len(history) > 1 + _MAX_HISTORY_TURNS * 2:
-                                history = history[:1] + history[-(  _MAX_HISTORY_TURNS * 2):]
+                                history = (
+                                    history[:1] + history[-(_MAX_HISTORY_TURNS * 2) :]
+                                )
 
                         state = _State.SPEAKING
                         await _send_state(ws, state)
 
-                        pcm_reply = await loop.run_in_executor(
-                            None, _tts.synthesize, agent_text
-                        )
-
-                        for i in range(0, max(len(pcm_reply), 1), _CHUNK_SIZE):
-                            chunk = pcm_reply[i : i + _CHUNK_SIZE]
-                            if chunk:
-                                await ws.send_bytes(chunk)
-                                await asyncio.sleep(0)  # yield between chunks
+                        for sentence in _tts.split_for_speech(agent_text):
+                            pcm = await loop.run_in_executor(
+                                None, _tts.synthesize, sentence
+                            )
+                            for i in range(0, len(pcm), _CHUNK_SIZE):
+                                frame = pcm[i : i + _CHUNK_SIZE]
+                                if frame:
+                                    await ws.send_bytes(frame)
+                                    await asyncio.sleep(0)  # yield between frames
 
                         await ws.send_text("END")
                         state = _State.IDLE
@@ -335,7 +343,11 @@ async def voice_endpoint(ws: WebSocket) -> None:
                         logger.error("Pipeline error: %s", exc, exc_info=True)
                         # Roll back the user turn appended for the "direct" path only
                         # (proxied agents don't mutate local history on the call path).
-                        if agent == "direct" and history and history[-1]["role"] == "user":
+                        if (
+                            agent == "direct"
+                            and history
+                            and history[-1]["role"] == "user"
+                        ):
                             history.pop()
                         try:
                             state = _State.IDLE

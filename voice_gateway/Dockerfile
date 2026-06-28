@@ -52,9 +52,10 @@ RUN pip install --no-cache-dir -r requirements.txt
 # voice-gateway runs on agentshroud-isolated; all outbound is blocked by the
 # gateway egress proxy (default-deny enforce mode, huggingface.co not allowlisted).
 # Mirrors the Piper voice-model bake above — build time has full internet.
-ENV WHISPER_MODEL_DIR=/opt/whisper/base.en
+ARG WHISPER_MODEL_SIZE=small.en
+ENV WHISPER_MODEL_DIR=/opt/whisper/${WHISPER_MODEL_SIZE}
 RUN python -c "from faster_whisper import download_model; \
-    download_model('base.en', output_dir='/opt/whisper/base.en')" && \
+    download_model('${WHISPER_MODEL_SIZE}', output_dir='/opt/whisper/${WHISPER_MODEL_SIZE}')" && \
     chmod -R a+rX /opt/whisper
 # Belt-and-suspenders: never reach out to HF at runtime even for metadata checks.
 ENV HF_HUB_OFFLINE=1
