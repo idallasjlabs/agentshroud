@@ -391,6 +391,66 @@ class TestNormalizeForSpeech:
         assert "audit logging" in result
 
 
+class TestSplitForSpeech:
+    """Unit tests for voice_gateway.tts.split_for_speech (pure function, no I/O)."""
+
+    @staticmethod
+    def _s(text: str, **kw) -> list[str]:
+        from voice_gateway.tts import split_for_speech
+        return split_for_speech(text, **kw)
+
+    def test_multi_sentence_returns_ordered_chunks(self):
+        chunks = self._s(
+            "It is Monday today. The sun is shining brightly. Time to get to work."
+        )
+        assert len(chunks) == 3
+        assert "It is Monday today." in chunks[0]
+        assert "The sun is shining brightly." in chunks[1]
+        assert "Time to get to work." in chunks[2]
+
+    def test_single_sentence_returns_one_chunk(self):
+        chunks = self._s("Just one sentence here.")
+        assert len(chunks) == 1
+        assert chunks[0] == "Just one sentence here."
+
+    def test_empty_after_normalise_returns_empty_list(self):
+        chunks = self._s("**  **\n---\n")
+        assert chunks == []
+
+    def test_empty_string_returns_empty_list(self):
+        assert self._s("") == []
+
+    def test_long_sentence_wrapped_at_max_chars(self):
+        long_sent = "word " * 60  # 300 chars, no punctuation
+        chunks = self._s(long_sent.strip(), max_chars=50)
+        assert len(chunks) > 1
+        for chunk in chunks:
+            assert len(chunk) <= 50, f"Chunk too long: {len(chunk)} chars: {chunk!r}"
+        # Verify no words are lost (join and compare word sets)
+        all_words = long_sent.strip().split()
+        rejoined_words = " ".join(chunks).split()
+        assert rejoined_words == all_words
+
+    def test_per_chunk_normalisation(self):
+        """split_for_speech normalises the full text so no markdown or tokens survive."""
+        text = "**bold claim** at [PORT]. Then [CREDENTIAL_REDACTED] done."
+        chunks = self._s(text)
+        full = " ".join(chunks)
+        assert "**" not in full
+        assert "[PORT]" not in full
+        assert "[CREDENTIAL_REDACTED]" not in full
+        assert "a port" in full
+        assert "a credential" in full
+
+    def test_short_fragment_merged_forward(self):
+        """A fragment under 12 chars is merged into the following chunk."""
+        text = "Hi. This is the second sentence."
+        chunks = self._s(text)
+        # "Hi." is 3 chars — merged forward into "This is the second sentence."
+        assert all(len(c) >= 12 or i == len(chunks) - 1 for i, c in enumerate(chunks))
+        assert "Hi." in " ".join(chunks)
+
+
 def test_tts_synthesize_passes_normalised_text_to_piper(monkeypatch):
     """synthesize() feeds the normalised (no-markdown, no-token) text to Piper.
 
@@ -586,6 +646,62 @@ def test_token_falls_back_to_env_when_no_file(tmp_path, monkeypatch):
     importlib.reload(srv)
 
     assert srv._GATEWAY_TOKEN == "env-token"
+
+
+def test_stt_default_model_size_is_small_en(monkeypatch):
+    """Default _MODEL_SIZE is 'small.en' when WHISPER_MODEL_SIZE is not set."""
+    import importlib
+    import sys
+
+    monkeypatch.delenv("WHISPER_MODEL_SIZE", raising=False)
+    monkeypatch.delenv("WHISPER_MODEL_DIR", raising=False)
+
+    import voice_gateway.stt as stt_mod
+    importlib.reload(stt_mod)
+
+    assert stt_mod._MODEL_SIZE == "small.en"
+    assert stt_mod._MODEL_PATH == "small.en"
+
+
+def test_stt_model_size_env_override(monkeypatch):
+    """WHISPER_MODEL_SIZE overrides the default when WHISPER_MODEL_DIR is unset."""
+    import importlib
+
+    monkeypatch.setenv("WHISPER_MODEL_SIZE", "base.en")
+    monkeypatch.delenv("WHISPER_MODEL_DIR", raising=False)
+
+    import voice_gateway.stt as stt_mod
+    importlib.reload(stt_mod)
+
+    assert stt_mod._MODEL_SIZE == "base.en"
+    assert stt_mod._MODEL_PATH == "base.en"
+
+
+def test_stt_model_dir_wins_over_model_size(monkeypatch):
+    """WHISPER_MODEL_DIR (baked path) beats WHISPER_MODEL_SIZE — preserves offline guarantee."""
+    import importlib
+    import sys
+
+    baked_dir = "/opt/whisper/small.en"
+    monkeypatch.setenv("WHISPER_MODEL_DIR", baked_dir)
+    monkeypatch.setenv("WHISPER_MODEL_SIZE", "base.en")
+
+    import voice_gateway.stt as stt_mod
+    importlib.reload(stt_mod)
+
+    assert stt_mod._MODEL_PATH == baked_dir
+
+    # Verify WhisperModel receives the directory path, not the size string.
+    captured = {}
+    fake_fw = MagicMock()
+    fake_fw.WhisperModel = lambda path, **kw: (
+        captured.update({"model_path": path}) or MagicMock()
+    )
+    monkeypatch.setitem(sys.modules, "faster_whisper", fake_fw)
+
+    stt_mod.reset_model()
+    stt_mod._get_model()
+    assert captured.get("model_path") == baked_dir
 
 
 def test_stt_uses_local_model_dir_when_env_set(monkeypatch):
@@ -896,6 +1012,130 @@ async def test_call_agent_posts_to_forward_endpoint(monkeypatch):
     assert captured["body"].get("content") == "test query"
     assert captured["headers"].get("Authorization") == "Bearer test-bearer"
     assert captured["headers"].get("X-AgentShroud-User-Id") == "9999"
+
+
+# ── Sentence-chunked TTS tests ────────────────────────────────────────────────
+
+
+def test_ws_sentence_chunked_tts_calls_synthesize_per_sentence(monkeypatch):
+    """Sentence-chunked TTS: synthesize() is called once per sentence; all PCM arrives
+    in order; exactly one 'END' text frame is sent; final state is idle."""
+    import voice_gateway.stt as stt_mod
+    import voice_gateway.tts as tts_mod
+
+    # Three distinct PCM blobs so we can verify ordering.
+    pcm_s1 = b"\x01\x00" * 40
+    pcm_s2 = b"\x02\x00" * 40
+    pcm_s3 = b"\x03\x00" * 40
+
+    synth_calls: list[str] = []
+
+    def _mock_synthesize(text: str) -> bytes:
+        synth_calls.append(text)
+        idx = len(synth_calls)
+        return [pcm_s1, pcm_s2, pcm_s3][idx - 1] if idx <= 3 else b""
+
+    monkeypatch.setattr(stt_mod, "transcribe", lambda b: "what time is it")
+    monkeypatch.setattr(tts_mod, "synthesize", _mock_synthesize)
+
+    three_sentence_reply = "It is Monday today. The sun is shining brightly. Time to get to work."
+
+    with patch(
+        "httpx.AsyncClient.post",
+        new=AsyncMock(return_value=_forward_resp(three_sentence_reply)),
+    ):
+        with TestClient(app) as client:
+            with client.websocket_connect("/voice") as ws:
+                ws.receive_text()  # initial idle
+
+                ws.send_text("LISTEN")
+                ws.receive_text()  # listening
+
+                ws.send_bytes(_pcm_bytes())
+                ws.send_text("END")
+
+                binary_received = b""
+                end_count = 0
+                final_state = None
+
+                for _ in range(40):
+                    try:
+                        msg = ws.receive()
+                    except Exception:
+                        break
+                    if "bytes" in msg:
+                        binary_received += msg["bytes"] or b""
+                    elif "text" in msg:
+                        text = msg["text"]
+                        try:
+                            data = json.loads(text)
+                            if data.get("state") == "idle":
+                                final_state = "idle"
+                                break
+                        except (json.JSONDecodeError, KeyError):
+                            if text == "END":
+                                end_count += 1
+
+    # synthesize() called once per sentence (3 sentences)
+    assert len(synth_calls) == 3, f"Expected 3 synth calls, got {len(synth_calls)}: {synth_calls}"
+    # All PCM received in order
+    assert binary_received == pcm_s1 + pcm_s2 + pcm_s3
+    # Exactly one END frame
+    assert end_count == 1, f"Expected 1 END frame, got {end_count}"
+    # Final state is idle
+    assert final_state == "idle"
+
+
+def test_ws_one_sentence_reply_unchanged(monkeypatch):
+    """Regression: a single-sentence reply still produces exactly one synthesize call."""
+    import voice_gateway.stt as stt_mod
+    import voice_gateway.tts as tts_mod
+
+    pcm_reply = _pcm_bytes(100)
+    synth_calls: list[str] = []
+
+    def _mock_synthesize(text: str) -> bytes:
+        synth_calls.append(text)
+        return pcm_reply
+
+    monkeypatch.setattr(stt_mod, "transcribe", lambda b: "what time is it")
+    monkeypatch.setattr(tts_mod, "synthesize", _mock_synthesize)
+
+    with patch(
+        "httpx.AsyncClient.post",
+        new=AsyncMock(return_value=_forward_resp("It is noon.")),
+    ):
+        with TestClient(app) as client:
+            with client.websocket_connect("/voice") as ws:
+                ws.receive_text()  # initial idle
+                ws.send_text("LISTEN")
+                ws.receive_text()  # listening
+                ws.send_bytes(_pcm_bytes())
+                ws.send_text("END")
+
+                binary_received = b""
+                end_count = 0
+
+                for _ in range(20):
+                    try:
+                        msg = ws.receive()
+                    except Exception:
+                        break
+                    if "bytes" in msg:
+                        binary_received += msg["bytes"] or b""
+                    elif "text" in msg:
+                        text = msg["text"]
+                        try:
+                            data = json.loads(text)
+                            if data.get("state") == "idle":
+                                break
+                        except (json.JSONDecodeError, KeyError):
+                            if text == "END":
+                                end_count += 1
+
+    assert len(synth_calls) == 1, f"Expected 1 synth call, got {len(synth_calls)}"
+    assert binary_received == pcm_reply
+    assert end_count == 1
 
 
 @pytest.mark.asyncio

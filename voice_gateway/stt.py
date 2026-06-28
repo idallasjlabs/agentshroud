@@ -13,7 +13,7 @@ logger = logging.getLogger("voice_gateway.stt")
 
 # Lazy-loaded to avoid slow import at startup
 _model = None
-_MODEL_SIZE = "base.en"  # fast, English-only; swap to "small.en" for better accuracy
+_MODEL_SIZE = os.environ.get("WHISPER_MODEL_SIZE", "small.en")
 
 # In the Docker image the model is pre-baked at build time into WHISPER_MODEL_DIR
 # (set by Dockerfile ENV).  Passing a local directory path to WhisperModel loads from
@@ -29,7 +29,9 @@ def _get_model():
         from faster_whisper import WhisperModel  # type: ignore[import]
 
         logger.info("Loading faster-whisper model from '%s'…", _MODEL_PATH)
-        _model = WhisperModel(_MODEL_PATH, device="cpu", compute_type="int8")
+        _model = WhisperModel(
+            _MODEL_PATH, device="cpu", compute_type="int8", cpu_threads=2
+        )
         logger.info("faster-whisper model loaded")
     return _model
 
@@ -51,7 +53,9 @@ def transcribe(pcm_bytes: bytes, sample_rate: int = 16000) -> str:
     try:
         import numpy as np  # type: ignore[import]
     except ImportError:
-        raise RuntimeError("numpy is required for STT; install voice_gateway dependencies")
+        raise RuntimeError(
+            "numpy is required for STT; install voice_gateway dependencies"
+        )
 
     num_samples = len(pcm_bytes) // 2
     samples = struct.unpack(f"<{num_samples}h", pcm_bytes)
