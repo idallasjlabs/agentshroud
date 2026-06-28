@@ -340,7 +340,11 @@ class TestKillSwitch:
 
     def test_disconnect_stops_and_removes_bot(self, client):
         eng = _engine()
-        with patch("gateway.web.api._get_engine", return_value=eng):
+        _two_bots = SimpleNamespace(bots={"openclaw": SimpleNamespace(), "hermes": SimpleNamespace()})
+        with (
+            patch("gateway.web.api._get_engine", return_value=eng),
+            patch("gateway.web.api.load_config", return_value=_two_bots),
+        ):
             resp = client.post("/api/killswitch/disconnect", json={"confirm": True})
         assert resp.status_code == 200
         assert resp.json() == {"status": "disconnected", "mode": "disconnect"}
@@ -455,8 +459,10 @@ class TestDefaultBotDockerfile:
 class TestRebuild:
     def test_rebuild_success(self, client):
         eng = _engine()
+        _two_bots = SimpleNamespace(bots={"openclaw": SimpleNamespace(), "hermes": SimpleNamespace()})
         with (
             patch("gateway.web.api._get_engine", return_value=eng),
+            patch("gateway.web.api.load_config", return_value=_two_bots),
             patch(
                 "gateway.web.api._get_default_bot_dockerfile",
                 return_value="docker/bots/openclaw/Dockerfile",
@@ -641,9 +647,11 @@ class TestAgentshroudUpdates:
 
     def test_upgrade_success_with_tests_and_security_review(self, client):
         eng = _engine()
+        _two_bots = SimpleNamespace(bots={"openclaw": SimpleNamespace(), "hermes": SimpleNamespace()})
         with (
             patch("subprocess.run", side_effect=_gitless_run()),
             patch("gateway.web.api._get_engine", return_value=eng),
+            patch("gateway.web.api.load_config", return_value=_two_bots),
             patch(
                 "gateway.web.api._get_default_bot_dockerfile",
                 return_value="docker/bots/openclaw/Dockerfile",
@@ -790,7 +798,11 @@ class TestLogs:
         eng = _engine()
         # gateway OK, openclaw errors, hermes errors — both bots gracefully return []
         eng.logs.side_effect = ["g1\ng2", RuntimeError("bot down"), RuntimeError("bot down")]
-        with patch("gateway.web.api._get_engine", return_value=eng):
+        _two_bots = SimpleNamespace(bots={"openclaw": SimpleNamespace(), "hermes": SimpleNamespace()})
+        with (
+            patch("gateway.web.api._get_engine", return_value=eng),
+            patch("gateway.web.api.load_config", return_value=_two_bots),
+        ):
             resp = client.get("/api/logs?tail=0")
         assert resp.status_code == 200
         data = resp.json()

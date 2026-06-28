@@ -8,7 +8,7 @@ logging.basicConfig(
     format="%(asctime)s | %(levelname)s | %(name)s | %(message)s",
 )
 
-from .server import app
+from .server import app  # noqa: E402
 
 if __name__ == "__main__":
     uvicorn.run(

@@ -651,7 +651,6 @@ def test_token_falls_back_to_env_when_no_file(tmp_path, monkeypatch):
 def test_stt_default_model_size_is_small_en(monkeypatch):
     """Default _MODEL_SIZE is 'small.en' when WHISPER_MODEL_SIZE is not set."""
     import importlib
-    import sys
 
     monkeypatch.delenv("WHISPER_MODEL_SIZE", raising=False)
     monkeypatch.delenv("WHISPER_MODEL_DIR", raising=False)

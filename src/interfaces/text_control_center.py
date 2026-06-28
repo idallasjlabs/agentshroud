@@ -22,8 +22,7 @@ import os
 import getpass
 import time
 import select
-import threading
-from datetime import datetime, timedelta
+from datetime import datetime
 
 # ANSI escape codes
 class ANSI:
@@ -88,7 +87,7 @@ class ControlCenter:
             with open('/run/secrets/gateway_password', 'r') as f:
                 GATEWAY_PASSWORD = f.read().strip()
                 return GATEWAY_PASSWORD
-        except:
+        except OSError:
             pass
         
         # Prompt user
@@ -352,7 +351,7 @@ class ControlCenter:
         try:
             if select.select([sys.stdin], [], [], 0.1)[0]:
                 return sys.stdin.read(1).lower()
-        except:
+        except Exception:
             pass
         return None
     

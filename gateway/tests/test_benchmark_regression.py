@@ -12,8 +12,6 @@ import time
 from pathlib import Path
 from unittest.mock import MagicMock, patch
 
-import pytest
-
 # Resolve from this file so the baseline is found regardless of pytest cwd
 # (CI runs from repo root; local runs often start from gateway/).
 BASELINE_PATH = Path(__file__).resolve().parents[2] / ".benchmarks" / "baseline-v1.0.0.json"
