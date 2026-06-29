@@ -21,7 +21,7 @@ Same fix — use RBACConfig.
 **File:** `gateway/proxy/webhook_receiver.py:45`
 
 #### C3: Bot Tokens Partially Exposed in Chat History
-Production token prefix `8481143014:AAE5` and Marvin token prefix `8736289266:AAGV` were printed during debugging.
+Production token prefix `[REDACTED]` and Marvin token prefix `[REDACTED]` were printed during debugging.
 **Fix:** Rotate both tokens via @BotFather (manual — Isaiah only).
 
 ### HIGH — Should Fix

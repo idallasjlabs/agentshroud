@@ -19,7 +19,11 @@ source .venv/bin/activate
 pip install -r gateway/requirements.txt
 pip install black isort flake8 pytest-cov
 
-# 4. Verify tests pass
+# 4. Install pre-commit hooks (secret scanning, linting, SAST)
+pip install pre-commit
+pre-commit install
+
+# 5. Verify tests pass
 pytest gateway/tests/ -v
 ```
 

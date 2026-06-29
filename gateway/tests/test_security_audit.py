@@ -965,7 +965,7 @@ class TestLoggingSecurity:
         assert "AKIAIOSFODNN7EXAMPLE" not in rec.getMessage()
 
     def test_github_token_redaction(self, sanitizer):
-        rec = self._make_record("token=ghp_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx")
+        rec = self._make_record("token=ghp_EXAMPLEFAKETOKENabcdefghijklmnopqrst")
         sanitizer.filter(rec)
         assert "ghp_" not in rec.getMessage()
 
