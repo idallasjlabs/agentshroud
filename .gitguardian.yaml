@@ -30,6 +30,10 @@ secret:
     - .gitguardian.yaml
     - .gitleaks.toml
     - .gitallowed
+    # detect-secrets baseline: stores SHA1 hashes of known-fake patterns (not real secrets)
+    - .secrets.baseline
+    # Third-party container sources — minified JS identifiers are not credentials
+    - oneclaw-container/
 
   ignored-matches:
     # Fake/example patterns already allow-listed in .gitleaks.toml
@@ -53,3 +57,19 @@ secret:
       name: "synthetic Google OAuth test fixture"
     - match: "YOUR_GATEWAY_PASSWORD_HERE"
       name: "gateway password placeholder"
+    - match: "sk-proj-abc123"
+      name: "synthetic OpenAI-style key in log-sanitizer test fixture"
+    - match: "sk-1234567890abcdef"
+      name: "synthetic OpenAI-style key in historical log-sanitizer test fixture"
+    - match: "sk-abcdef1234567890"
+      name: "synthetic OpenAI-style key in historical log-sanitizer test fixture"
+    - match: "aW1hZ2VwdWxsOnBsYWNlaG9sZGVy"
+      name: "base64 of 'imagepull:placeholder' — fake Docker registry auth for CIS compliance scorer"
+    - match: "YOUR_TOKEN"
+      name: "documentation placeholder in curl examples — not a real credential"
+    - match: "sk-abcdef1234567890abcdef1234567890"
+      name: "synthetic OpenAI-style key in historical log-sanitizer test fixture (full value)"
+    - match: "***REVOKED-"
+      name: "git-filter-repo Phase B/C/D replacement marker — not a real credential"
+    - match: "REVOKED-GATEWAY-TOKEN"
+      name: "git-filter-repo Phase D replacement marker — not a real credential"
