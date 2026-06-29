@@ -3266,7 +3266,7 @@ async def deep_security_test(auth: AuthRequired):
             logging.INFO,
             "",
             0,
-            "key=AKIAIOSFODNN7EXAMPLE and token=sk-example-000",
+            "key=AKIAIOSFODNN7EXAMPLE and token=sk-example-not-a-real-key",
             None,
             None,
         )
