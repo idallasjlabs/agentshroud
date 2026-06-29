@@ -8,6 +8,48 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ---
 
+## [1.2.3] — release/v1.2.3 (2026-06-29)
+
+### Summary
+
+v1.2.3 — Security patch release. Eliminates all GitGuardian-flagged secrets from
+tracked files and full git history; enables full-history secret scanning in CI;
+and fixes a trust-gate gap that caused the owner's voice replies to be wrongly
+blocked by the outbound PromptGuard indirect-injection scanner.
+
+### Security
+
+- **History rewrite (PR #226, #227, #228)**: All real secret values (Telegram bot
+  tokens, iCloud app-specific password) removed from every historical commit via
+  `git filter-repo --replace-text`. Real-shaped test fixtures replaced with clearly
+  synthetic values. Deleted secret-riddled files (`outreach/send-test.js`,
+  `telegram_history.jsonl`, etc.) purged from history. Full gitleaks scan now green.
+- **Full-history CI gate (PR #228)**: `.gitleaks.toml` SHA pin (`c628add`) dropped;
+  `.github/workflows/ci.yml` gitleaks job switched to `--source . --redact` full-history
+  scan. History is clean; the pin is no longer needed.
+- **PromptGuard trust gate (PR #229)**: Outbound Step 1.76 (CVE-2026-31045 indirect-
+  injection guard) now respects `user_trust_level`. `FULL`-trust (owner-authenticated)
+  responses are audited but not hard-blocked — the owner's voice/chat reply is delivered
+  to a human, not a downstream LLM tool-loop. All non-FULL trust levels keep the hard
+  block. Detection and audit-chain entries run for everyone.
+
+### Fixed
+
+- **ESP32 voice replies blocked**: Owner voice requests via ESP32 were replaced with
+  `[Response blocked by AgentShroud security policy]` due to a false positive on
+  `multilingual_injection_tier1` (score 0.90 > 0.6 threshold). Now correctly audited
+  and allowed through for FULL-trust sources.
+- **GitGuardian alerts**: All 205 gitleaks findings eliminated. `gitleaks detect
+  --source . --redact` returns 0 findings on the rewritten history.
+
+### Changed
+
+- `.secrets.baseline` regenerated against the clean tree.
+- `.gitguardian.yaml` added at repo root with `secret.ignored-paths` for test/docs
+  directories (helps ggshield CLI / pre-commit; SaaS monitor governed by dashboard).
+
+---
+
 ## [1.2.2] — release/v1.2.2 (2026-06-28)
 
 ### Summary
