@@ -1001,18 +1001,17 @@ class SecurityPipeline:
         # Step 1.76: PromptGuard tool-result scan — block indirect prompt injection
         # embedded in tool outputs (web pages, file reads, API responses).
         # CVE-2026-31045 fix: tool results are a request-side injection vector.
+        #
+        # Trust gate: FULL-trust (owner-authenticated) responses are audited but
+        # NOT hard-blocked. The consumer is the owner (voice/chat), not a downstream
+        # LLM tool-loop, so the CVE-2026-31045 injection threat model does not apply.
+        # All non-FULL trust levels keep the hard block. Detection and audit chain
+        # entries run for everyone — forensics are never suppressed.
         if self.prompt_guard:
             try:
                 tool_result_scan = self.prompt_guard.scan_tool_result(result.sanitized_message)
                 if tool_result_scan.blocked:
-                    result.action = PipelineAction.BLOCK
-                    result.blocked = True
-                    result.block_reason = (
-                        f"PromptGuard(tool_result): indirect injection detected "
-                        f"(score={tool_result_scan.score:.2f}, "
-                        f"patterns={tool_result_scan.patterns[:3]})"
-                    )
-                    self._stats["outbound_blocked"] += 1
+                    # Always audit — detection is recorded regardless of trust level.
                     entry = self.audit_chain.append(
                         f"TOOL_RESULT_INJECTION: score={tool_result_scan.score:.2f} "
                         f"patterns={tool_result_scan.patterns[:3]}",
@@ -1021,15 +1020,32 @@ class SecurityPipeline:
                     )
                     result.audit_entry_id = entry.id
                     result.audit_hash = entry.chain_hash
-                    result.processing_time_ms = (time.time() - start) * 1000
-                    logger.warning(
-                        "PromptGuard blocked tool result injection from %s: "
-                        "score=%.2f patterns=%s",
-                        source,
-                        tool_result_scan.score,
-                        tool_result_scan.patterns[:3],
-                    )
-                    return result
+                    if user_trust_level == "FULL":
+                        logger.warning(
+                            "PromptGuard tool_result injection detected but allowed "
+                            "for FULL-trust source %s: score=%.2f patterns=%s",
+                            source,
+                            tool_result_scan.score,
+                            tool_result_scan.patterns[:3],
+                        )
+                    else:
+                        result.action = PipelineAction.BLOCK
+                        result.blocked = True
+                        result.block_reason = (
+                            f"PromptGuard(tool_result): indirect injection detected "
+                            f"(score={tool_result_scan.score:.2f}, "
+                            f"patterns={tool_result_scan.patterns[:3]})"
+                        )
+                        self._stats["outbound_blocked"] += 1
+                        result.processing_time_ms = (time.time() - start) * 1000
+                        logger.warning(
+                            "PromptGuard blocked tool result injection from %s: "
+                            "score=%.2f patterns=%s",
+                            source,
+                            tool_result_scan.score,
+                            tool_result_scan.patterns[:3],
+                        )
+                        return result
                 elif tool_result_scan.score > 0:
                     logger.debug(
                         "PromptGuard tool_result scan: score=%.2f patterns=%s (allowed)",
