@@ -120,7 +120,7 @@ class TestCredentialLeakDetection:
 
     def test_detect_github_token(self, injector):
         result = injector.scan_for_credential_leak(
-            "Token: ghp_ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghij"
+            "Token: ghp_EXAMPLEFAKETOKENabcdefghijklmnopqrst"
         )
         assert result is not None
         assert "GitHub" in result
