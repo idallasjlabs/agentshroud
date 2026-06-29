@@ -23,9 +23,11 @@ class _PipelineCaptor:
         self._bot_name = bot_name
         self.inbound_agent_ids: list[str] = []
         self.outbound_agent_ids: list[str] = []
+        self.inbound_metadata_calls: list[dict] = []
 
-    async def process_inbound(self, message, agent_id, action, source):
+    async def process_inbound(self, message, agent_id, action, source, metadata=None):
         self.inbound_agent_ids.append(agent_id)
+        self.inbound_metadata_calls.append(metadata or {})
         result = MagicMock()
         result.blocked = False
         result.queued_for_approval = False
@@ -169,13 +171,54 @@ class TestAgentIdPropagatedFromTarget:
         assert captor.inbound_agent_ids[0] == "hermes"
         assert captor.inbound_agent_ids[0] != "default"
 
+    def test_forward_passes_user_id_in_metadata_to_process_inbound(self):
+        """process_inbound must receive metadata={'user_id': ...} from /forward so that
+        the pipeline can resolve is_owner and exempt the authenticated owner from PII
+        redaction (Fix 1A: gateway/ingest_api/routes/forward.py).
+        """
+        from fastapi.testclient import TestClient
+
+        from gateway.ingest_api.main import app
+
+        captor = _PipelineCaptor("hermes")
+        mock_state = _make_mock_app_state("hermes", captor)
+
+        with patch("gateway.ingest_api.routes.forward.app_state", mock_state):
+            import gateway.ingest_api.routes.forward as forward_module
+
+            app.dependency_overrides[forward_module.auth_dep] = lambda: None
+            try:
+                client = TestClient(app, raise_server_exceptions=True)
+                client.post(
+                    "/forward",
+                    json={
+                        "content": "call Jane at 555-0100",
+                        "content_type": "text",
+                        "source": "api",
+                        "route_to": "hermes",
+                        "user_id": "8096968754",
+                    },
+                    headers={"Authorization": "Bearer test-token"},
+                )
+            finally:
+                app.dependency_overrides.clear()
+
+        assert captor.inbound_metadata_calls, "process_inbound must have been called"
+        metadata = captor.inbound_metadata_calls[0]
+        assert "user_id" in metadata, (
+            f"process_inbound must receive metadata with 'user_id'; got {metadata!r}"
+        )
+        assert metadata["user_id"] == "8096968754", (
+            f"user_id must match the request field; got {metadata['user_id']!r}"
+        )
+
 
 class _BlockedOutboundPipeline:
     """Inbound passes; outbound returns blocked=True with the original text intact."""
 
     trust_manager = None
 
-    async def process_inbound(self, message, agent_id, action, source):
+    async def process_inbound(self, message, agent_id, action, source, metadata=None):
         from types import SimpleNamespace
 
         return SimpleNamespace(
@@ -272,7 +315,7 @@ class _TrustCaptor:
     def __init__(self):
         self.captured_trust_levels: list[str] = []
 
-    async def process_inbound(self, message, agent_id, action, source):
+    async def process_inbound(self, message, agent_id, action, source, metadata=None):
         from types import SimpleNamespace
 
         return SimpleNamespace(

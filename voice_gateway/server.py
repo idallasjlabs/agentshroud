@@ -251,7 +251,6 @@ async def voice_endpoint(ws: WebSocket) -> None:
     logger.info("Connection from %s (authenticated) → agent=%r", remote, agent)
 
     state = _State.IDLE
-    await _send_state(ws, state)
 
     # Per-session conversation history — only used by the "direct" fast path.
     # Agents like Hermes maintain their own server-side memory keyed by user_id.
@@ -260,8 +259,16 @@ async def voice_endpoint(ws: WebSocket) -> None:
     history: List[Dict[str, str]] = [_voice_system_message()]
 
     pcm_chunks: List[bytes] = []
-    heartbeat = asyncio.create_task(_keepalive(ws))
+    # Define before the try so the finally clause can always reference it safely,
+    # even if a dirty-close fires before the task is created.
+    heartbeat = None
     try:
+        # Send the initial IDLE state to the device.  This must be inside the try
+        # block so that a dirty-close (code 1006) arriving before the first frame
+        # is delivered is caught by the existing WebSocketDisconnect handler below,
+        # producing one clean INFO log instead of an unhandled ASGI traceback.
+        await _send_state(ws, state)
+        heartbeat = asyncio.create_task(_keepalive(ws))
         while True:
             message = await ws.receive()
 
@@ -371,4 +378,5 @@ async def voice_endpoint(ws: WebSocket) -> None:
     except Exception as exc:
         logger.error("Unhandled WS error from %s: %s", remote, exc, exc_info=True)
     finally:
-        heartbeat.cancel()
+        if heartbeat is not None:
+            heartbeat.cancel()

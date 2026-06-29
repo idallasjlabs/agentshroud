@@ -433,6 +433,12 @@ async def forward_content(request: ForwardRequest, req: Request, auth: AuthRequi
                 agent_id=target.name,
                 action="send_message",
                 source=request.source,
+                # Pass the caller's user_id so process_inbound can resolve is_owner
+                # and exempt the authenticated owner from PII redaction.  The accessor
+                # mirrors forward.py:382 where the same field is already read for
+                # middleware.  When user_id is absent (anonymous API calls) this is
+                # None → is_owner stays False → PII sanitization runs as normal.
+                metadata={"user_id": getattr(request, "user_id", None)},
             )
         except Exception as e:
             logger.error(f"Security pipeline failed: {e}")
