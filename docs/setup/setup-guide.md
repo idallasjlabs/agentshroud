@@ -390,7 +390,7 @@ curl http://localhost:8080/health
 # Expected response:
 {
   "status": "healthy",
-  "version": "1.2.3",
+  "version": "1.2.4",
   "modules": {
     "egress_filter": "active",
     "message_scanner": "active",

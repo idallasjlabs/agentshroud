@@ -8,6 +8,31 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ---
 
+## [1.2.4] — release/v1.2.4 (2026-06-29)
+
+### Summary
+
+v1.2.4 — Security patch. Stops the owner's voice queries from being PII-redacted before
+reaching the agent, and hardens the voice-gateway WebSocket pre-loop error path.
+
+### Fixed
+
+- **Owner voice queries garbled (PR #231)**: The owner's spoken/typed queries were
+  PII-redacted (names, numbers, locations replaced with `<PERSON>` / `<PHONE_NUMBER>`
+  placeholders) before Hermes could act on them. Root cause: `forward.py` never passed
+  `user_id` into `process_inbound`, so `is_owner` was always `False` on the voice path,
+  and the inbound PII step (Step 2) had no `is_owner` gate unlike every other inbound
+  guard (ContextGuard, PromptGuard, etc.). Fixed by passing `metadata={'user_id': ...}`
+  into `process_inbound` and gating Step 2 PII sanitisation with `is_owner`. Non-owner
+  traffic is unaffected — Presidio detector and 0.9 confidence threshold are unchanged.
+- **Voice-gateway pre-loop ASGI traceback (PR #231)**: `_send_state` at the start of
+  `voice_endpoint` ran outside the `try/except` block. A dirty-close (code 1006) before
+  the first frame produced an unhandled `WebSocketDisconnect` ASGI traceback instead of
+  a clean INFO log. Fixed by moving the initial `_send_state` + heartbeat creation inside
+  the existing `try` block.
+
+---
+
 ## [1.2.3] — release/v1.2.3 (2026-06-29)
 
 ### Summary
