@@ -1,0 +1,44 @@
+# AgentShroud™ ggshield / GitGuardian CLI configuration
+#
+# NOTE: This file controls the ggshield CLI tool and pre-commit hook only.
+# The GitGuardian SaaS dashboard ignores it — to silence dashboard reports
+# from historical findings, mark each incident "Resolved" in the dashboard.
+#
+# See: https://docs.gitguardian.com/ggshield-docs/reference/configuration
+
+exit-zero: false     # still fail the hook; allows us to triage interactively
+
+secret:
+  # Paths that legitimately contain synthetic/example credential strings used
+  # as test fixtures for the production credential-leak detectors.  These are
+  # FAKE values that are deliberately credential-shaped so the detector logic
+  # can be exercised.  They are NOT real credentials.
+  ignored-paths:
+    - gateway/tests/
+    - gateway/examples/
+    - docs/
+    - docker/secrets/*.example
+    - docker/.env.example
+    - examples/
+    - .gitleaksignore
+
+  ignored-matches:
+    # Fake/example patterns already allow-listed in .gitleaks.toml
+    - match: "sk-example-not-a-real-key"
+      name: "synthetic OpenAI-shaped test fixture"
+    - match: "AKIAIOSFODNN7EXAMPLE"
+      name: "AWS public documentation example key"
+    - match: "ghp_EXAMPLEFAKETOKENabcdefghijklmnopqrst"
+      name: "synthetic GitHub PAT test fixture"
+    - match: "0000000001:AAFakeTokenXXXXXXXXXXXXXXXXXXXXXXXX"
+      name: "synthetic Telegram bot token test fixture"
+    - match: "A3-XXXXXX"
+      name: "synthetic 1Password secret key placeholder"
+    - match: "EXAMPLE_PAYLOAD.EXAMPLE_SIGNATURE"
+      name: "synthetic JWT test fixture"
+    - match: "EXAMPLE_CANARY_VALUE"
+      name: "synthetic canary test fixture"
+    - match: "GOCSPX-EXAMPLE"
+      name: "synthetic Google OAuth test fixture"
+    - match: "YOUR_GATEWAY_PASSWORD_HERE"
+      name: "gateway password placeholder"

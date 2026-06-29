@@ -201,13 +201,13 @@ class TestOutboundPipelineIntegration:
 
         proxy = TelegramAPIProxy(pipeline=RedactingPipeline(), sanitizer=_make_sanitizer())
         body = urllib.parse.urlencode(
-            {"chat_id": "12345", "text": "key=sk-a1b2c3d4e5a1b2c3d4e5a1b2c3d4e5"}
+            {"chat_id": "12345", "text": "key=sk-example-not-a-real-key-000000000"}
         ).encode()
 
         result = await proxy._filter_outbound(body, "application/x-www-form-urlencoded")
         parsed = dict(urllib.parse.parse_qsl(result.decode(), keep_blank_values=True))
         assert parsed["text"] == "key=[REDACTED]"
-        assert "sk-a1b2c3d4e5" not in result.decode()
+        assert "sk-example-not-a-real-key" not in result.decode()
 
     @pytest.mark.asyncio
     async def test_form_outbound_pipeline_block_non_owner(self):

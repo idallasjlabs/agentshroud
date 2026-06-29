@@ -128,7 +128,7 @@ class TestCredentialInjection:
 
 class TestLeakDetection:
     def test_openai_key_detected(self, injector):
-        content = "Here is the key: sk-abcdefghijklmnopqrstuvwxyz1234"
+        content = "Here is the key: sk-EXAMPLEFAKEKEYabcdef000000000000000000000000"
         result = injector.scan_for_credential_leak(content)
         assert result is not None
 
@@ -138,7 +138,7 @@ class TestLeakDetection:
         assert result is not None
 
     def test_github_token_detected(self, injector):
-        content = "Token: ghp_ABCDEFghijklmnopqrstuvwxyz0123456789"
+        content = "Token: ghp_EXAMPLEFAKETOKENabcdefghijklmnopqrst"
         result = injector.scan_for_credential_leak(content)
         assert result is not None
 
@@ -153,7 +153,7 @@ class TestLeakDetection:
             leak_detection=False,
         )
         inj = CredentialInjector(config=cfg)
-        result = inj.scan_for_credential_leak("sk-abcdefghijklmnopqrstuvwxyz1234")
+        result = inj.scan_for_credential_leak("sk-EXAMPLEFAKEKEYabcdef000000000000000000000000")
         assert result is None
 
     def test_jwt_detected(self, injector):

@@ -891,7 +891,7 @@ services:
 
 ```bash
 # openclaw-api-key.txt
-sk-1234567890abcdef1234567890abcdef
+sk-EXAMPLE0000000000000000000000000
 
 # virustotal-api-key.txt (optional)
 a1b2c3d4e5f6789012345678901234567890abcd
