@@ -31,8 +31,8 @@ class TestLogSanitizer:
         assert "REDACTED" in result
 
     def test_aws_key_redacted(self):
-        result = self._filter_msg("AWS key: AKIAEXAMPLEKEY123456")
-        assert "AKIAEXAMPLEKEY123456" not in result
+        result = self._filter_msg("AWS key: AKIAIOSFODNN7EXAMPLE")
+        assert "AKIAIOSFODNN7EXAMPLE" not in result
         assert "REDACTED" in result
 
     def test_openai_key_redacted(self):
@@ -69,17 +69,18 @@ class TestLogSanitizer:
         assert self.sanitizer.filter(rec) is True
 
     def test_telegram_bot_token_in_url_redacted(self):
-        # Simulate a URL path logged by the Telegram proxy containing a bot token
+        # Simulate a URL path logged by the Telegram proxy containing a bot token.
+        # Synthetic fixture — bot_id and token value are deliberately fake.
         result = self._filter_msg(
-            "GET /telegram-api/bot1234567890:ABCDefghijklmnopqrstuvwxyz01234567/sendMessage"
+            "GET /telegram-api/bot0000000001:AAFakeTokenXXXXXXXXXXXXXXXXXXXXXXX/sendMessage"
         )
-        assert "1234567890:ABCDefghijklmnopqrstuvwxyz01234567" not in result
+        assert "0000000001:AAFakeTokenXXXXXXXXXXXXXXXXXXXXXXX" not in result
         assert "/bot***/" in result
 
     def test_telegram_bot_token_shorter_id_redacted(self):
-        # Minimum-length bot ID (8 digits)
-        result = self._filter_msg("POST /bot12345678:ABCDefghijklmnopqrstuvwxyz01234567/getUpdates")
-        assert "12345678:ABCDefghijklmnopqrstuvwxyz01234567" not in result
+        # Minimum-length bot ID (8 digits). Synthetic fixture — values are deliberately fake.
+        result = self._filter_msg("POST /bot00000001:AAFakeTokenXXXXXXXXXXXXXXXXXXXXXXX/getUpdates")
+        assert "00000001:AAFakeTokenXXXXXXXXXXXXXXXXXXXXXXX" not in result
 
     def test_install_log_sanitizer_no_error(self):
         install_log_sanitizer()  # Should not raise

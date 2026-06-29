@@ -48,7 +48,7 @@ archive/SETUP_SUMMARY.md                       # Gateway auth token b539ae... x2
 archive/HOW_TO_CONNECT.md                      # Gateway auth token 14bf48... x3 in alternate connection guide [not required]
 archive/session-notes/continue-20260215-1457.md # Gateway auth token b539ae... x3 in session continuation notes [not required]
 archive/session-notes/continue-20260215-0717.md # Gateway auth token dd9228... x2 in session continuation notes [not required]
-archive/ALL-SERVICES-WORKING.md               # iCloud app-specific password (ibkd-byru-cade-fpaq) in working config [not required]
+archive/ALL-SERVICES-WORKING.md               # iCloud app-specific password (ibkd-…-[REDACTED]) in working config [not required]
 archive/ICLOUD-SUCCESS-SUMMARY.md             # iCloud app-specific password x3 in iCloud setup summary [not required]
 docs/archive/CONNECTION-GUIDE.md              # Gateway auth token acd084... x2 in tracked connection guide [not required]
 docs/archive/README.md                         # Gateway auth token acd084... in tracked archive README [not required]

@@ -18,9 +18,9 @@ from gateway.utils.secrets import _normalize_secret, read_secret
 _GARBLED_BLOB = (
     "\n  \u2192 Telegram bot token (marvin dev): "
     "**********************************************"
-    "\n0000000001:AAFakeTokenXXXXXXXXXXXXXXXXXXXXXXX"
+    "\n0000000001:AAFakeTokenXXXXXXXXXXXXXXXXXXXXXXXX"
 )
-_REAL_TOKEN = "0000000001:AAFakeTokenXXXXXXXXXXXXXXXXXXXXXXX"
+_REAL_TOKEN = "0000000001:AAFakeTokenXXXXXXXXXXXXXXXXXXXXXXXX"
 
 
 # ── _normalize_secret ─────────────────────────────────────────────────────────

@@ -345,7 +345,7 @@ def test_drift_detection_in_pipeline():
 @pytest.mark.asyncio
 async def test_response_credential_blocking(sanitizer):
     """Outbound responses have credentials blocked for untrusted sources."""
-    response = "Here is the API key: sk-abcdefghijklmnopqrstuvwxyz1234567890"
+    response = "Here is the API key: sk-EXAMPLEFAKEKEYabcdef000000000000000000000000"
     sanitized, blocked = await sanitizer.block_credentials(response, "telegram")
     assert blocked
     assert "REDACTED" in sanitized

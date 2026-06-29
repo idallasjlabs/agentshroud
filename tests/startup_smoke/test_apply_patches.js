@@ -197,10 +197,10 @@ console.log('\n=== test_apply_patches.js ===\n');
 }
 
 // A7: Garbled multi-line Telegram token is rejected — botToken NOT written to config
-// Regression test for the marvin-dev secret issue: a pre-017e7bd Keychain entry
-// that captured TUI output (label + asterisks + real token) instead of a bare value.
+// Regression test for the garbled Telegram token normalization bug (pre-017e7bd):
+// a Keychain entry that captured TUI output (label + asterisks + token) instead of a bare value.
 {
-  const garbledToken = '\n  \u2192 Telegram bot token (marvin dev): **********************************************\n8736289266:AAGVzcmqiSaTSyPz5B8lJCcxkmZPg9jTe28';
+  const garbledToken = '\n  \u2192 Telegram bot token (marvin dev): **********************************************\n0000000001:AAFakeTokenXXXXXXXXXXXXXXXXXXXXXXXX';
   const cfg = runPatches(
     {
       TELEGRAM_BOT_TOKEN: garbledToken,
@@ -215,7 +215,7 @@ console.log('\n=== test_apply_patches.js ===\n');
   );
   assert(
     'A7b: Garbled multi-line token: last-line normalizer extracts the real token',
-    cfg?.channels?.telegram?.botToken === '8736289266:AAGVzcmqiSaTSyPz5B8lJCcxkmZPg9jTe28',
+    cfg?.channels?.telegram?.botToken === '0000000001:AAFakeTokenXXXXXXXXXXXXXXXXXXXXXXXX',
     `got ${JSON.stringify(cfg?.channels?.telegram?.botToken)}`,
   );
 }
