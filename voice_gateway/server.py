@@ -332,15 +332,38 @@ async def voice_endpoint(ws: WebSocket) -> None:
                         state = _State.SPEAKING
                         await _send_state(ws, state)
 
-                        for sentence in _tts.split_for_speech(agent_text):
-                            pcm = await loop.run_in_executor(
-                                None, _tts.synthesize, sentence
-                            )
-                            for i in range(0, len(pcm), _CHUNK_SIZE):
-                                frame = pcm[i : i + _CHUNK_SIZE]
-                                if frame:
-                                    await ws.send_bytes(frame)
-                                    await asyncio.sleep(0)  # yield between frames
+                        # Pipeline synthesis with sending: synthesise sentence N+1
+                        # concurrently in a thread while sentence N's PCM frames are
+                        # being transmitted.  Without this, inter-sentence Piper
+                        # inference (~200-500 ms each) creates audio gaps that empty
+                        # the ESP32 DMA buffer and produce audible dropouts.
+                        sentences = _tts.split_for_speech(agent_text)
+                        _synth_q: asyncio.Queue[bytes | None] = asyncio.Queue(maxsize=2)
+
+                        async def _synthesize_all() -> None:
+                            for _s in sentences:
+                                _pcm = await loop.run_in_executor(None, _tts.synthesize, _s)
+                                await _synth_q.put(_pcm)
+                            await _synth_q.put(None)  # sentinel
+
+                        synth_task = asyncio.create_task(_synthesize_all())
+                        try:
+                            while True:
+                                pcm = await _synth_q.get()
+                                if pcm is None:
+                                    break
+                                for i in range(0, len(pcm), _CHUNK_SIZE):
+                                    frame = pcm[i : i + _CHUNK_SIZE]
+                                    if frame:
+                                        await ws.send_bytes(frame)
+                                        await asyncio.sleep(0)
+                        finally:
+                            if not synth_task.done():
+                                synth_task.cancel()
+                                try:
+                                    await synth_task
+                                except asyncio.CancelledError:
+                                    pass
 
                         await ws.send_text("END")
                         state = _State.IDLE
