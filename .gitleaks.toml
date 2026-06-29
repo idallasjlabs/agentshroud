@@ -1,9 +1,9 @@
 # AgentShroud™ gitleaks configuration
 # Prevents secrets from being committed to the repository.
 #
-# All real credentials were redacted in commit c628add (v1.0.4).
-# The CI scans only commits from that point forward so the pre-redaction
-# history does not produce false positives.
+# Full history was rewritten with git-filter-repo in 2026-06 (PR #227 + Phase B)
+# to purge all real secret values from every commit.  The history is now clean;
+# no SHA pin is required and CI scans the full history.
 
 title = "AgentShroud gitleaks config"
 
@@ -13,12 +13,6 @@ useDefault = true
 
 [allowlist]
 description = "Known safe patterns in this repo"
-
-# Commit SHA where all historical secrets were redacted (v1.0.4).
-# Any finding on or before this commit is a pre-remediation artefact.
-commits = [
-  "c628add",  # fix: redact all secret values flagged by GitGuardian/gitleaks (#14)
-]
 
 # Paths that contain intentionally fake / example credential strings
 paths = [
