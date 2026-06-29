@@ -13,13 +13,14 @@ from __future__ import annotations
 from gateway.utils import secrets as secrets_mod
 from gateway.utils.secrets import _normalize_secret, read_secret
 
-# Real-world garbled blob captured from the marvin-dev gateway logs 2026-04-10.
+# Synthetic garbled blob matching the format captured from marvin-dev logs 2026-04-10.
+# Token format: {bot_id}:{35-char alphanumeric} \u2014 values here are deliberately fake.
 _GARBLED_BLOB = (
     "\n  \u2192 Telegram bot token (marvin dev): "
     "**********************************************"
-    "\n8736289266:AAGVzcmqiSaTSyPz5B8lJCcxkmZPg9jTe28"
+    "\n0000000001:AAFakeTokenXXXXXXXXXXXXXXXXXXXXXXX"
 )
-_REAL_TOKEN = "8736289266:AAGVzcmqiSaTSyPz5B8lJCcxkmZPg9jTe28"
+_REAL_TOKEN = "0000000001:AAFakeTokenXXXXXXXXXXXXXXXXXXXXXXX"
 
 
 # ── _normalize_secret ─────────────────────────────────────────────────────────
