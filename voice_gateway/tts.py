@@ -28,8 +28,14 @@ TARGET_SAMPLE_RATE = int(_os.environ.get("VG_OUTPUT_SAMPLE_RATE", "16000"))
 def _resample_s16le_mono(pcm: bytes, src_rate: int, dst_rate: int) -> bytes:
     """Resample raw S16LE mono PCM from *src_rate* Hz to *dst_rate* Hz.
 
-    Uses numpy linear interpolation — already a requirement for STT.  Clips
-    to int16 range after resampling to avoid wrap-around artefacts.
+    For downsampling (the 22050→16000 Hz case): applies a Kaiser-windowed sinc
+    anti-aliasing filter before linear interpolation.  Pure linear interpolation
+    without a low-pass filter aliases high-frequency content into the audible
+    band, producing choppy / metallic artefacts on the ESP32 speaker.
+
+    The filter kernel is a length-129 Kaiser-windowed sinc (β=8.0) with a
+    normalised cutoff at dst_rate/src_rate, giving >80 dB stopband attenuation
+    above the output Nyquist (8 kHz at 16 kHz playback).
 
     Args:
         pcm:      Raw S16LE mono PCM bytes at *src_rate*.
@@ -47,11 +53,22 @@ def _resample_s16le_mono(pcm: bytes, src_rate: int, dst_rate: int) -> bytes:
 
     samples = _np.frombuffer(pcm, dtype="<i2").astype(_np.float32)
 
-    # Build the output sample positions in terms of source indices.
+    # Anti-aliasing: apply a Kaiser-windowed sinc low-pass filter before
+    # downsampling so content above the output Nyquist doesn't fold into the
+    # audible band as aliasing artefacts.
+    if dst_rate < src_rate:
+        cutoff = dst_rate / src_rate  # normalised cutoff in (0, 1)
+        n_taps = 128  # even → kernel is n_taps+1 samples long (odd, symmetric)
+        n = _np.arange(-(n_taps // 2), n_taps // 2 + 1)
+        h = cutoff * _np.sinc(cutoff * n) * _np.kaiser(n_taps + 1, 8.0)
+        h = h / h.sum()
+        samples = _np.convolve(samples, h, mode="same")
+
+    # Resample via linear interpolation.  After the anti-aliasing filter there
+    # is no meaningful content above dst_rate/2, so linear interp introduces no
+    # perceptible artefacts.
     n_dst = int(round(n_src * dst_rate / src_rate))
     src_indices = _np.linspace(0, n_src - 1, n_dst)
-
-    # Linear interpolation (fast, no external dep beyond numpy).
     lo = _np.floor(src_indices).astype(_np.int32)
     hi = _np.minimum(lo + 1, n_src - 1)
     frac = (src_indices - lo).astype(_np.float32)
