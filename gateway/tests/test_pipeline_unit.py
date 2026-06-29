@@ -607,3 +607,68 @@ class TestPromptGuardToolResultTrustGate:
             "test content", user_trust_level="STANDARD", source="api"
         )
         assert result.blocked
+
+
+class TestInboundPIIOwnerExemption:
+    """Step 2 PII sanitisation must be skipped for the authenticated owner.
+
+    Non-owner traffic is still scrubbed at the 0.9 floor — the detector and
+    threshold are untouched.  This only exempts the owner, exactly as
+    ContextGuard / PromptGuard already do on the inbound path.
+
+    Fixes: inbound PII step had no is_owner gate; forward.py never passed
+    user_id into process_inbound so is_owner was always False on the voice path.
+    """
+
+    OWNER_ID = "111"
+    NON_OWNER_ID = "999"
+    QUERY = "call Jane at 555-0100"
+    REDACTED = "call [PERSON] at [PHONE_NUMBER]"
+
+    @staticmethod
+    def _redacting_pii():
+        """PII sanitiser mock that simulates two entity redactions."""
+        pii = MagicMock()
+        pii.filter_xml_blocks = MagicMock(side_effect=lambda t: (t, False))
+        pii.sanitize = AsyncMock(
+            return_value=MagicMock(
+                sanitized_content=TestInboundPIIOwnerExemption.REDACTED,
+                entity_types_found=["PERSON", "PHONE_NUMBER"],
+                redactions=[MagicMock(), MagicMock()],
+            )
+        )
+        return pii
+
+    async def test_owner_inbound_query_not_pii_redacted(self):
+        """Owner query must pass through PII sanitisation unchanged; sanitiser not called."""
+        pii = self._redacting_pii()
+        pipeline = SecurityPipeline(pii_sanitizer=pii)
+        pipeline._owner_user_id = self.OWNER_ID
+
+        result = await pipeline.process_inbound(
+            self.QUERY, metadata={"user_id": self.OWNER_ID}
+        )
+
+        # Sanitiser must not have been invoked for the owner's query.
+        pii.sanitize.assert_not_awaited()
+        assert result.sanitized_message == self.QUERY, (
+            f"Owner query must be unredacted; got {result.sanitized_message!r}"
+        )
+        assert result.pii_redaction_count == 0
+
+    async def test_non_owner_inbound_query_still_redacted(self):
+        """Non-owner query must still be PII-scrubbed (detector + threshold unchanged)."""
+        pii = self._redacting_pii()
+        pipeline = SecurityPipeline(pii_sanitizer=pii)
+        pipeline._owner_user_id = self.OWNER_ID
+
+        result = await pipeline.process_inbound(
+            self.QUERY, metadata={"user_id": self.NON_OWNER_ID}
+        )
+
+        # Sanitiser must have run and produced the redacted version.
+        pii.sanitize.assert_awaited_once()
+        assert result.sanitized_message == self.REDACTED, (
+            f"Non-owner query must be redacted; got {result.sanitized_message!r}"
+        )
+        assert result.pii_redaction_count == 2
