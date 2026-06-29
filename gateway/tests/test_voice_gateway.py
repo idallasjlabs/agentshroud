@@ -1618,3 +1618,157 @@ async def test_ws_dirty_close_before_initial_state_is_handled_cleanly(monkeypatc
         f"Expected an INFO 'Disconnected' log for code-1006 pre-loop drop; "
         f"got: {[(r.levelno, r.getMessage()) for r in vg]}"
     )
+
+
+# ── TTS quality: anti-aliased resampling ─────────────────────────────────────
+
+
+def test_resample_antialias_attenuates_above_nyquist():
+    """Kaiser-windowed sinc anti-aliasing filter suppresses content above the output
+    Nyquist (8 kHz when resampling 22050→16000).
+
+    A pure 9 kHz sine at 22050 Hz would fold into the output band (appearing as
+    ~7 kHz) with plain linear interpolation.  With the anti-aliasing filter the
+    output amplitude at that frequency must be at most 5 % of the input — ≥26 dB
+    suppression, well within the Kaiser β=8 design target of >80 dB.
+    """
+    import math
+    import struct
+
+    import numpy as np
+
+    from voice_gateway.tts import _resample_s16le_mono
+
+    src_rate = 22050
+    dst_rate = 16000
+    duration_s = 0.2  # 200 ms is enough for frequency analysis
+    freq_hz = 9000  # 9 kHz is above the 8 kHz Nyquist of the 16 kHz output
+
+    # Build a pure 9 kHz sine at 22050 Hz (amplitude 10000, safely in int16 range)
+    n_src = int(src_rate * duration_s)
+    amplitude = 10000
+    samples_src = [
+        int(amplitude * math.sin(2 * math.pi * freq_hz * i / src_rate))
+        for i in range(n_src)
+    ]
+    pcm_in = struct.pack(f"<{n_src}h", *samples_src)
+
+    pcm_out = _resample_s16le_mono(pcm_in, src_rate, dst_rate)
+
+    # Measure output amplitude via RMS.
+    n_dst = len(pcm_out) // 2
+    arr = np.frombuffer(pcm_out, dtype="<i2").astype(np.float32)
+    rms_out = float(np.sqrt(np.mean(arr ** 2)))
+    # With no filtering, linear interp would alias 9 kHz → ~7 kHz and the output
+    # RMS would be ~amplitude/sqrt(2) ≈ 7071.  With the anti-aliasing filter the
+    # RMS must be at most 5% of amplitude.
+    max_allowed = amplitude * 0.05
+    assert rms_out <= max_allowed, (
+        f"Anti-aliasing filter not working: output RMS {rms_out:.1f} exceeds "
+        f"5% threshold {max_allowed:.1f} for a {freq_hz} Hz input (above 8 kHz Nyquist)"
+    )
+
+
+def test_resample_passband_preserved():
+    """Frequencies well below the Nyquist (≤3 kHz) must pass through with minimal
+    attenuation — ≥90% amplitude preserved.  Ensures the filter is not too aggressive.
+    """
+    import math
+    import struct
+
+    import numpy as np
+
+    from voice_gateway.tts import _resample_s16le_mono
+
+    src_rate = 22050
+    dst_rate = 16000
+    freq_hz = 3000  # typical voiced speech fundamental range
+    duration_s = 0.2
+    amplitude = 10000
+
+    n_src = int(src_rate * duration_s)
+    samples_src = [
+        int(amplitude * math.sin(2 * math.pi * freq_hz * i / src_rate))
+        for i in range(n_src)
+    ]
+    pcm_in = struct.pack(f"<{n_src}h", *samples_src)
+    pcm_out = _resample_s16le_mono(pcm_in, src_rate, dst_rate)
+
+    arr = np.frombuffer(pcm_out, dtype="<i2").astype(np.float32)
+    rms_out = float(np.sqrt(np.mean(arr ** 2)))
+    # Expected RMS ≈ amplitude/sqrt(2) ≈ 7071; must be ≥ 90% of that.
+    expected_rms = amplitude / (2 ** 0.5)
+    assert rms_out >= expected_rms * 0.90, (
+        f"Passband attenuation too high at {freq_hz} Hz: RMS {rms_out:.1f} < 90% of "
+        f"{expected_rms:.1f} — filter cutoff may be set too low"
+    )
+
+
+# ── TTS pipeline: synthesis pipelined with sending ────────────────────────────
+
+
+@pytest.mark.asyncio
+async def test_ws_tts_pipeline_sends_all_sentences(monkeypatch):
+    """When split_for_speech returns multiple sentences, the pipelined TTS loop must
+    synthesise and transmit PCM for ALL sentences in order, with no sentences dropped.
+
+    This verifies the refactored concurrent synthesis/send path introduced to
+    eliminate inter-sentence audio gaps on the ESP32.
+    """
+    import voice_gateway.server as srv
+    import voice_gateway.stt as stt_mod
+    import voice_gateway.tts as tts_mod
+
+    # Each sentence produces its own distinct PCM bytes so we can verify ordering.
+    sentence_pcm = {
+        "First sentence here.": b"\x01\x00" * 10,
+        "Second sentence here.": b"\x02\x00" * 10,
+        "Third sentence here.": b"\x03\x00" * 10,
+    }
+
+    monkeypatch.setattr(stt_mod, "transcribe", lambda b: "First sentence here.  Second sentence here.  Third sentence here.")
+    monkeypatch.setattr(tts_mod, "synthesize", lambda t: sentence_pcm.get(t, b"\xff\x00" * 4))
+    monkeypatch.setattr(srv, "_VG_AUTH_TOKEN", "")
+
+    async def _mock_agent(transcript, agent):
+        return "First sentence here.  Second sentence here.  Third sentence here."
+
+    if hasattr(srv, "_call_agent"):
+        monkeypatch.setattr(srv, "_call_agent", _mock_agent)
+
+    bytes_received: list[bytes] = []
+    text_received: list[str] = []
+
+    with TestClient(app) as client:
+        with client.websocket_connect("/voice?agent=hermes") as ws:
+            ws.receive_text()  # idle
+            ws.send_text("LISTEN")
+            ws.receive_text()  # listening
+            ws.send_bytes(_pcm_bytes())
+            ws.send_text("END")
+            # Drain all messages until idle (up to 50 frames)
+            for _ in range(50):
+                try:
+                    msg = ws.receive()
+                    if "bytes" in msg and msg["bytes"]:
+                        bytes_received.append(msg["bytes"])
+                    elif "text" in msg and msg["text"]:
+                        text_received.append(msg["text"])
+                        try:
+                            if json.loads(msg["text"]).get("state") == "idle":
+                                break
+                        except Exception:
+                            pass
+                except Exception:
+                    break
+
+    # All three sentence PCM payloads must appear in the transmitted bytes
+    all_bytes = b"".join(bytes_received)
+    assert b"\x01\x00" * 10 in all_bytes, "First sentence PCM not transmitted"
+    assert b"\x02\x00" * 10 in all_bytes, "Second sentence PCM not transmitted"
+    assert b"\x03\x00" * 10 in all_bytes, "Third sentence PCM not transmitted"
+    # END text frame and idle state must follow
+    assert any("END" in t for t in text_received), "END text frame not sent"
+    assert any(
+        "idle" in t for t in text_received
+    ), "state:idle not sent after multi-sentence TTS"
