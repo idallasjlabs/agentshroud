@@ -13,9 +13,9 @@
 | Bot | Token | Found In |
 |-----|-------|----------|
 | `@therealidallasj_bot` (old) | `8469477154:AAFOF...IpTg` | `archive/SYSTEM_STATUS.md:127` |
-| `@agentshroud_marvin_bot` | `***REVOKED-MARVIN***` | `telegram_history.jsonl:857`, `:967`, `:970`, `:971`, `:996` |
-| `@agentshroud_trillian_bot` | `***REVOKED-TRILLIAN***` | `telegram_history.jsonl:864`, `:1636` |
-| `@agentshroud_raspberrypi_bot` | `***REVOKED-RASPBERRYPI***` | `telegram_history.jsonl:867` |
+| `@agentshroud_marvin_bot` | `8736289266:AAGV…[REDACTED — REVOKE via @BotFather]` | `telegram_history.jsonl:857`, `:967`, `:970`, `:971`, `:996` |
+| `@agentshroud_trillian_bot` | `8751040644:AAHf…[REDACTED — REVOKE via @BotFather]` | `telegram_history.jsonl:864`, `:1636` |
+| `@agentshroud_raspberrypi_bot` | `8690957340:AAHg…[REDACTED — REVOKE via @BotFather]` | `telegram_history.jsonl:867` |
 
 **Rotation:** @BotFather → `/revoke` then `/newtoken` for each bot. Update:
 - Docker secrets: `docker/secrets/telegram_bot_token_*.txt`
@@ -40,7 +40,7 @@
 
 | Credential | Value | Found In |
 |-----------|-------|----------|
-| iCloud app password | `ibkd-REVOKED-cade-REVOKED` | `archive/ALL-SERVICES-WORKING.md:123`, `archive/ICLOUD-SUCCESS-SUMMARY.md:13,119,164` |
+| iCloud app password | `ibkd-…-[REDACTED — REVOKE at appleid.apple.com]` | `archive/ALL-SERVICES-WORKING.md:123`, `archive/ICLOUD-SUCCESS-SUMMARY.md:13,119,164` |
 
 **Rotation:** appleid.apple.com → Security → App-Specific Passwords → Revoke + regenerate. Update 1Password item `25ghxryyvup5wpufgfldgc2vjm`.
 

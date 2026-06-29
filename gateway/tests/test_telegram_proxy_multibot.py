@@ -18,9 +18,9 @@ from unittest.mock import AsyncMock, MagicMock, patch
 if TYPE_CHECKING:
     from gateway.proxy.telegram_proxy import TelegramAPIProxy
 
-_OPENCLAW_TOKEN = "123456789:OpenClawFakeTelegram_TokenABCDEFGHIJK"
-_HERMES_TOKEN = "987654321:HermesFakeTelegram_TokenXYZABCDEFGHIJ"
-_UNKNOWN_TOKEN = "000000000:UnknownFakeTelegram_TokenZZZZZZZZZZZZ"
+_OPENCLAW_TOKEN = "000000001:EXAMPLEFakeOpenClawToken0000000000000"
+_HERMES_TOKEN = "000000002:EXAMPLEFakeHermesToken00000000000000"
+_UNKNOWN_TOKEN = "000000003:EXAMPLEFakeUnknownToken000000000000000"
 
 _REGISTRY = {
     _OPENCLAW_TOKEN: "openclaw",

@@ -72,7 +72,7 @@ async def test_telegram_blocks_password(sanitizer):
 @pytest.mark.asyncio
 async def test_telegram_blocks_openai_api_key(sanitizer):
     """Telegram should block OpenAI API keys."""
-    content = "Your key is sk-abcdefghijklmnopqrstuvwxyz1234567890"
+    content = "Your key is sk-EXAMPLEFAKEKEYabcdef000000000000000000000000"
     result, blocked = await sanitizer.block_credentials(content, source="telegram")
     assert blocked is True
 
@@ -80,7 +80,7 @@ async def test_telegram_blocks_openai_api_key(sanitizer):
 @pytest.mark.asyncio
 async def test_telegram_blocks_github_token(sanitizer):
     """Telegram should block GitHub tokens."""
-    content = "Token: ghp_ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefgh"
+    content = "Token: ghp_EXAMPLEFAKETOKENabcdefghijklmnopqrst"
     result, blocked = await sanitizer.block_credentials(content, source="telegram")
     assert blocked is True
 
