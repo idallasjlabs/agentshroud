@@ -534,3 +534,76 @@ class TestKeyLeakDetection:
         result = await pipeline.process_outbound("response text")
         assert result.blocked
         assert "KeyLeakDetector" in result.block_reason
+
+
+class TestPromptGuardToolResultTrustGate:
+    """Step 1.76 PromptGuard tool-result scan must respect user_trust_level.
+
+    CVE-2026-31045: scan still runs and audits for everyone; but FULL-trust
+    (owner voice/chat) must NOT be hard-blocked by false positives.
+    Non-FULL paths keep the hard block intact.
+    """
+
+    @staticmethod
+    def _passthrough_pii():
+        pii = MagicMock()
+        pii.filter_xml_blocks = MagicMock(side_effect=lambda t: (t, False))
+        pii.sanitize = AsyncMock(
+            side_effect=lambda t: MagicMock(
+                sanitized_content=t, entity_types_found=[], redactions=[]
+            )
+        )
+        return pii
+
+    @staticmethod
+    def _blocking_prompt_guard():
+        from gateway.security.prompt_guard import ScanResult, ThreatAction
+
+        pg = MagicMock()
+        blocked_result = ScanResult(
+            blocked=True,
+            score=0.90,
+            patterns=["multilingual_injection_tier1"],
+            sanitized_input="test content",
+            action=ThreatAction.BLOCK,
+        )
+        pg.scan_tool_result = MagicMock(return_value=blocked_result)
+        return pg
+
+    @pytest.mark.asyncio
+    async def test_full_trust_tool_result_injection_audited_not_blocked(self):
+        """FULL-trust owner response: scan runs, detection audited, delivery NOT blocked."""
+        pipeline = SecurityPipeline(
+            pii_sanitizer=self._passthrough_pii(),
+            prompt_guard=self._blocking_prompt_guard(),
+        )
+        result = await pipeline.process_outbound(
+            "test content", user_trust_level="FULL", source="voice"
+        )
+        assert not result.blocked, "FULL-trust owner reply must not be blocked by tool_result scan"
+        assert result.audit_entry_id, "Audit entry must still be recorded for forensics"
+
+    @pytest.mark.asyncio
+    async def test_untrusted_tool_result_injection_is_blocked(self):
+        """UNTRUSTED source: tool-result injection scan blocks as before (CVE-2026-31045)."""
+        pipeline = SecurityPipeline(
+            pii_sanitizer=self._passthrough_pii(),
+            prompt_guard=self._blocking_prompt_guard(),
+        )
+        result = await pipeline.process_outbound(
+            "test content", user_trust_level="UNTRUSTED", source="api"
+        )
+        assert result.blocked
+        assert "PromptGuard(tool_result)" in result.block_reason
+
+    @pytest.mark.asyncio
+    async def test_standard_trust_tool_result_injection_is_blocked(self):
+        """STANDARD-trust source: also blocked — only FULL bypasses the block."""
+        pipeline = SecurityPipeline(
+            pii_sanitizer=self._passthrough_pii(),
+            prompt_guard=self._blocking_prompt_guard(),
+        )
+        result = await pipeline.process_outbound(
+            "test content", user_trust_level="STANDARD", source="api"
+        )
+        assert result.blocked
