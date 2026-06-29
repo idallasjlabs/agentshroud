@@ -16,11 +16,20 @@ secret:
   ignored-paths:
     - gateway/tests/
     - gateway/examples/
+    - tests/
     - docs/
     - docker/secrets/*.example
     - docker/.env.example
     - examples/
     - .gitleaksignore
+    # Agent skill/config dirs contain example AWS credential configs for documentation
+    - .claude/
+    - .codex/
+    - .gemini/
+    # Config files reference fake patterns as allowlist entries — not real credentials
+    - .gitguardian.yaml
+    - .gitleaks.toml
+    - .gitallowed
 
   ignored-matches:
     # Fake/example patterns already allow-listed in .gitleaks.toml
@@ -28,6 +37,8 @@ secret:
       name: "synthetic OpenAI-shaped test fixture"
     - match: "AKIAIOSFODNN7EXAMPLE"
       name: "AWS public documentation example key"
+    - match: "AKIAI44QH8DHBEXAMPLE"
+      name: "AWS public documentation example key (second variant)"
     - match: "ghp_EXAMPLEFAKETOKENabcdefghijklmnopqrst"
       name: "synthetic GitHub PAT test fixture"
     - match: "0000000001:AAFakeTokenXXXXXXXXXXXXXXXXXXXXXXXX"
