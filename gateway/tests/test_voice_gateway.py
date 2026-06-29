@@ -1569,3 +1569,52 @@ async def test_ws_direct_agent_pipeline_error_pops_history_and_recovery_send_fai
         if "disconnected" in r.getMessage().lower() and r.levelno == logging.INFO
     ]
     assert disconnected, f"Expected INFO 'Disconnected' log, got: {[r.getMessage() for r in vg]}"
+
+
+# ── Pre-loop dirty-close hardening ───────────────────────────────────────────
+
+
+async def test_ws_dirty_close_before_initial_state_is_handled_cleanly(monkeypatch, caplog):
+    """When the WS dirty-closes (code 1006) before the initial _send_state(IDLE) frame
+    is delivered, voice_endpoint must catch the disconnect cleanly and log one INFO
+    'Disconnected' line.  No heartbeat task must be left pending.
+
+    Without the fix, voice_gateway/server.py line 254 (_send_state outside the try block)
+    propagates an unhandled WebSocketDisconnect, causing ASGI traceback spam in production.
+    """
+    import logging
+
+    import voice_gateway.server as srv
+    from fastapi.websockets import WebSocketDisconnect
+
+    ws = MagicMock()
+    ws.client = MagicMock()
+    ws.client.__str__ = lambda s: "10.0.0.1:55432"
+    ws.query_params = MagicMock()
+    ws.query_params.get = lambda k, d="": d
+    ws.accept = AsyncMock()
+    ws.close = AsyncMock()
+    ws.send_bytes = AsyncMock()
+
+    # First (and only) send_text call is the initial _send_state(IDLE) — dirty-close it.
+    # Before the fix, this exception escapes the function unhandled.
+    ws.send_text = AsyncMock(side_effect=WebSocketDisconnect(code=1006))
+
+    monkeypatch.setattr(srv, "_VG_AUTH_TOKEN", "")
+
+    with caplog.at_level(logging.DEBUG, logger="voice_gateway.server"):
+        # Must not raise — pre-loop dirty-close must be caught by the existing
+        # disconnect handlers (WebSocketDisconnect except clause, line 358).
+        await srv.voice_endpoint(ws)
+
+    vg = [r for r in caplog.records if r.name.startswith("voice_gateway")]
+
+    # Expect one INFO "Disconnected" log, no ERROR or unhandled propagation.
+    disconnected = [
+        r for r in vg
+        if "disconnected" in r.getMessage().lower() and r.levelno == logging.INFO
+    ]
+    assert disconnected, (
+        f"Expected an INFO 'Disconnected' log for code-1006 pre-loop drop; "
+        f"got: {[(r.levelno, r.getMessage()) for r in vg]}"
+    )
