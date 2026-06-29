@@ -651,8 +651,13 @@ class SecurityPipeline:
             except Exception as exc:
                 logger.error("C32InboundScan error: %s", exc)
 
-        # Step 2: PII sanitization
-        if self.pii_sanitizer:
+        # Step 2: PII sanitization — owner (FULL-trust) queries are exempt so the
+        # owner's own spoken/typed request is not garbled before the agent can act on it.
+        # Non-owner traffic is still scrubbed at the 0.9 Presidio confidence floor;
+        # the detector and threshold are untouched (gateway/ingest_api/config.py:39-40).
+        # Mirrors the is_owner exemption already present on every other inbound guard
+        # (ContextGuard :434, ContextIntegrity :479, PromptGuard :529, etc.).
+        if self.pii_sanitizer and not is_owner:
             sanitize_result = await self.pii_sanitizer.sanitize(message)
             result.sanitized_message = sanitize_result.sanitized_content
             result.pii_redactions = sanitize_result.entity_types_found
@@ -660,6 +665,12 @@ class SecurityPipeline:
             if sanitize_result.redactions:
                 self._stats["inbound_sanitized"] += 1
                 self._stats["pii_redactions_total"] += len(sanitize_result.redactions)
+        elif self.pii_sanitizer and is_owner:
+            logger.info(
+                "PII sanitize: owner inbound query exempt — not redacting (source=%s agent=%s)",
+                source,
+                agent_id,
+            )
 
         # Step 2.5: ClamAV inline scan — check base64-encoded binary content for malware.
         # Only triggered when message contains a plausible base64 payload (>256 decoded bytes).
