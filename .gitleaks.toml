@@ -18,16 +18,28 @@ description = "Known safe patterns in this repo"
 paths = [
   '''gateway/tests/''',
   '''gateway/examples/''',
+  '''tests/''',
   '''docs/''',
   '''docker/scap-content/''',
   '''.llm_settings/''',
+  # Agent skill/config dirs contain example AWS credential configs for documentation
+  '''\.claude/''',
+  '''\.codex/''',
+  '''\.gemini/''',
   # The ignore file itself references known-fake key strings in comments
   '''\.gitleaksignore''',
+  # Config files reference fake patterns as allowlist entries — not real credentials
+  '''\.gitleaks\.toml''',
+  '''\.gitguardian\.yaml''',
+  '''\.gitallowed''',
 ]
 
 # Patterns that appear in test fixtures, example configs, or benchmark XML
 # and are not real credentials (clearly fake values).
 regexes = [
+  # AWS public documentation example key IDs — used as safe test fixtures
+  '''AKIAIOSFODNN7EXAMPLE''',
+  '''AKIAI44QH8DHBEXAMPLE''',
   # Fake gateway passwords used in tests/examples
   '''YOUR_GATEWAY_PASSWORD_HERE''',
   # Fake API keys used in test fixtures
