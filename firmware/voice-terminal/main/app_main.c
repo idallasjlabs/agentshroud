@@ -15,6 +15,7 @@
 #include "wakeword.h"
 #include "ws_client.h"
 #include "ui_face.h"
+#include "ota.h"
 
 static const char *TAG = "vt";
 
@@ -378,6 +379,8 @@ void app_main(void)
     xEventGroupWaitBits(s_wifi_eg, WIFI_CONNECTED_BIT, pdFALSE, pdTRUE,
                         portMAX_DELAY);
     vTaskDelay(pdMS_TO_TICKS(1500));
+
+    ota_check(CONFIG_VT_VG_WS_URL, CONFIG_VT_VG_WS_TOKEN);
 
     /* WiFi labels no longer needed — bring up face UI.
      * ui_face_init() manages its own bsp_display_lock internally. */

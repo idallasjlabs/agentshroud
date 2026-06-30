@@ -471,6 +471,7 @@ services:
       # "hermes" = Hermes agentic assistant (synchronous OpenAI-compat reply via /forward).
       # "direct" = legacy fast-path LLM proxy (no agentic tools, lower latency).
       VOICE_DEFAULT_AGENT: "hermes"
+      FIRMWARE_BIN_PATH: /firmware/build/voice_terminal.bin
     secrets:
       - gateway_password
       - voice_gateway_token
@@ -478,6 +479,8 @@ services:
       - no-new-privileges:true
     tmpfs:
       - /tmp:size=64m,mode=1777
+    volumes:
+      - ../firmware/voice-terminal/build:/firmware/build:ro
     mem_limit: 3g
     cpus: 2.0
     pids_limit: 256
