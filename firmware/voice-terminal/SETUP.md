@@ -422,6 +422,10 @@ are written into `sdkconfig`.
 | Auto-follow-up listen window | ✅ Done | 8 s VAD timeout after TTS; tap-to-talk UX fix |
 | "Hi, ESP" WakeNet wake word | ✅ Done | WN9 model in `model` SPIFFS partition |
 | OpenClaw async notice | ✅ Done | Spoken Telegram-redirect; no fake reply |
+| LVGL 8.4 → 9.5 upgrade | ✅ Done | PR #241 — 6 API renames, BSP 3.2.0, Kconfig cleanup |
+| Kawaii animated face | ✅ Done | PR #242 — lvgl_kawaii_face submodule; face_set_emotion() |
+| OTA wireless firmware updates | ✅ Done | PR #243 — HEAD ETag check + GET streaming via voice gateway |
+| Bootloader rollback (anti-brick) | ✅ Done | PR #243 — auto-revert if new image doesn't mark itself valid |
 
 ### Credentials file
 
@@ -454,8 +458,128 @@ python3 -c "import secrets; print(secrets.token_hex(32))"
 
 1. Add an entry to `agentshroud.yaml bots:` on marvin.
 2. Add a row to `VT_AGENTS[]` in `firmware/voice-terminal/main/app_main.c`.
-3. Rebuild firmware (`idf.py build`) and reflash.
+3. Rebuild firmware (`idf.py build`) and redeploy the voice gateway.
 4. No voice-gateway code change needed — routing is data-driven.
+
+---
+
+## 12. OTA Wireless Firmware Updates
+
+All future firmware changes push wirelessly — no USB required after the one-time
+bootstrap below. The flow: build on marvin → redeploy voice-gateway → reboot ESP
+→ device downloads the new binary and reflashes itself.
+
+### How it works
+
+On every boot, after WiFi connects, the firmware:
+1. Sends `HEAD https://marvin.tail240ea8.ts.net/firmware/bin?token=<VG_TOKEN>` to the
+   voice gateway (same Tailscale Funnel path as WebSocket; no new infra).
+2. Compares the `ETag` (SHA-256 of the binary) against the value stored in NVS.
+3. **Match → skip.** Logs `Firmware current` and continues normal boot in <1 s.
+4. **Mismatch → update.** Streams the GET response into the inactive OTA partition
+   (`ota_0` ↔ `ota_1`), switches the boot partition, and restarts.
+5. After the first successful WebSocket connect, marks the new image valid
+   (`esp_ota_mark_app_valid_cancel_rollback`). If the device crashes before this
+   point, the bootloader automatically reverts to the previous working slot —
+   a bad OTA update **cannot brick the device**.
+
+### One-time bootstrap (USB flash — do this when back at marvin)
+
+This procedure is required exactly once because the partition table changed to add
+the second OTA slot. After it, every update is wireless.
+
+**Prerequisites:**
+- BOX-3 connected to marvin via a **data** USB-C cable (charge-only cables won't work)
+- `conda activate gsdl && . ~/esp/esp-idf/export.sh` active in your shell
+- Voice gateway deployed and healthy (`curl http://localhost:8765/health`)
+
+```bash
+cd ~/Development/agentshroud
+
+# 1. Pull the merged OTA firmware (PR #243)
+git checkout main && git pull
+
+# 2. Pick up new sdkconfig.defaults key (CONFIG_BOOTLOADER_APP_ROLLBACK_ENABLE)
+cd firmware/voice-terminal
+idf.py reconfigure
+
+# 3. Clean build (partition table changed — must start fresh)
+rm -rf build
+idf.py build
+# Expect: voice_terminal.bin  ~1.9 MB  (build/voice_terminal.bin)
+
+# 4. Redeploy voice gateway so /firmware/bin endpoint goes live
+cd ~/Development/agentshroud
+docker-compose -f docker/docker-compose.yml -p agentshroud up -d voice-gateway
+
+# 5. Smoke-test the endpoint (substitute your actual token)
+TOKEN=$(cat docker/secrets/voice_gateway_token.txt)
+curl -sI "http://localhost:8765/firmware/bin?token=$TOKEN"
+# Expect: HTTP/1.1 200 OK  +  ETag: "sha256hex..."
+curl -sI "http://localhost:8765/firmware/bin"
+# Expect: HTTP/1.1 401 Unauthorized  (token required)
+
+# 6. Find the USB port (BOX-3 must be powered on and connected)
+ls /dev/cu.usbmodem*
+# Typical: /dev/cu.usbmodem3101  or  /dev/cu.usbmodem5101
+
+# 7. Flash and watch the first boot
+cd firmware/voice-terminal
+idf.py flash monitor -p /dev/cu.usbmodem3101
+# (replace port with the one found in step 6)
+```
+
+**Expected first-boot serial output:**
+```
+I (vt_ota) OTA HEAD → https://marvin.tail240ea8.ts.net/firmware/bin
+I (vt_ota) Remote ETag: "a3f7c..."
+I (vt_ota) ETag mismatch — starting OTA download     ← first boot: NVS is empty
+I (vt_ota) Downloaded 1892352 bytes
+I (vt_ota) OTA complete — rebooting into new firmware
+... (reboots into ota_1) ...
+I (vt_ota) Remote ETag: "a3f7c..."
+I (vt_ota) Firmware current                           ← ETag now in NVS, matches
+I (vt)     Ready. Voice terminal active → agent: Hermes
+```
+
+> **Why two downloads on first boot?** After a USB flash, NVS is empty — no stored
+> ETag — so the first boot downloads the same binary into `ota_1`. After that reboot,
+> the ETag is in NVS and subsequent boots skip the download.
+
+Press `Ctrl-]` to exit the monitor. The device is now OTA-capable.
+
+### Ongoing update workflow (no USB ever again)
+
+```bash
+# After any code change in firmware/voice-terminal/main/:
+cd ~/Development/agentshroud
+
+# 1. Build
+cd firmware/voice-terminal && idf.py build
+
+# 2. Redeploy gateway (re-mounts new binary → new SHA-256 ETag)
+cd ~/Development/agentshroud
+docker-compose -f docker/docker-compose.yml -p agentshroud up -d voice-gateway
+
+# 3. Trigger update — either:
+#    a. Power-cycle the BOX-3 (unplug/replug USB-C or remove batteries)
+#    b. Press the physical reset button on the back of the BOX-3
+# The device will detect the ETag mismatch and self-update.
+```
+
+Watch the serial monitor (if connected) or just wait ~30 s — the BOX-3 will show its
+face disappear briefly, reboot, and come back online with the new firmware.
+
+### Troubleshooting OTA
+
+| Symptom | Cause | Fix |
+|---------|-------|-----|
+| `/firmware/bin` returns 404 | Build not mounted | Run `idf.py build` first, then redeploy gateway |
+| `/firmware/bin` returns 401 | Wrong or missing token | Check `?token=` matches `docker/secrets/voice_gateway_token.txt` |
+| `OTA HEAD failed: err=… http=0` | No network / Funnel down | Check WiFi, Tailscale, `curl https://marvin.tail240ea8.ts.net/health` |
+| Boot loop after OTA update | Bad firmware (no mark_valid) | Bootloader auto-reverts to previous slot after 2nd failed boot |
+| NVS ETag stale after flash erase | `idf.py erase-flash` clears NVS | Normal — first boot re-downloads; resolves itself |
+| `OTA: no update partition` in log | Old single-slot partition table | Must USB-flash the new partitions.csv (one-time bootstrap, §12 above) |
 
 ---
 
@@ -468,20 +592,32 @@ conda activate gsdl && . ~/esp/esp-idf/export.sh
 # Build only
 idf.py build
 
-# Build + flash + monitor
-idf.py build flash monitor -p /dev/cu.usbmodem5101
+# Build + flash + monitor (USB required; replaces OTA for partition table changes)
+idf.py build flash monitor -p /dev/cu.usbmodem3101
 
-# Reconfigure (pick up new sdkconfig.defaults keys)
+# Reconfigure (pick up new sdkconfig.defaults keys — always run after git pull)
 idf.py reconfigure
 
-# Erase flash (clean slate)
-idf.py erase-flash -p /dev/cu.usbmodem5101
+# Erase flash (clean slate — also clears NVS OTA ETag; first boot will re-download)
+idf.py erase-flash -p /dev/cu.usbmodem3101
 
 # Serial monitor only (device already flashed)
-idf.py monitor -p /dev/cu.usbmodem5101
+idf.py monitor -p /dev/cu.usbmodem3101
 
 # Monitor firmware size
 idf.py size-components
+
+# ── OTA update (no USB) ───────────────────────────────────────────────────────
+# Make code changes, then:
+idf.py build
+docker-compose -f ~/Development/agentshroud/docker/docker-compose.yml \
+    -p agentshroud up -d voice-gateway
+# Power-cycle BOX-3 — it will detect ETag mismatch and self-update (~30 s)
+
+# Smoke-test the firmware endpoint on marvin
+TOKEN=$(cat ~/Development/agentshroud/docker/secrets/voice_gateway_token.txt)
+curl -sI "http://localhost:8765/firmware/bin?token=$TOKEN"   # 200 + ETag
+curl -sI "https://marvin.tail240ea8.ts.net/firmware/bin?token=$TOKEN"   # Funnel path
 ```
 
 ---
