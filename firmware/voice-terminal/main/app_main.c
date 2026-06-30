@@ -8,6 +8,7 @@
 #include "esp_wifi.h"
 #include "esp_event.h"
 #include "nvs_flash.h"
+#include "esp_ota_ops.h"
 #include "bsp/esp-bsp.h"
 #include "lvgl.h"
 
@@ -381,6 +382,9 @@ void app_main(void)
     vTaskDelay(pdMS_TO_TICKS(1500));
 
     ota_check(CONFIG_VT_VG_WS_URL, CONFIG_VT_VG_WS_TOKEN);
+    /* WiFi is up and gateway was reachable — this image can self-update.
+     * No-op on normal boots; cancels bootloader rollback on first boot of a new OTA image. */
+    esp_ota_mark_app_valid_cancel_rollback();
 
     /* WiFi labels no longer needed — bring up face UI.
      * ui_face_init() manages its own bsp_display_lock internally. */

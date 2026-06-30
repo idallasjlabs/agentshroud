@@ -9,6 +9,9 @@ CONFIG_ESPTOOLPY_FLASHFREQ_80M=y
 CONFIG_PARTITION_TABLE_CUSTOM=y
 CONFIG_PARTITION_TABLE_CUSTOM_FILENAME="partitions.csv"
 
+# OTA rollback — auto-revert to previous slot if new firmware doesn't mark itself valid
+CONFIG_BOOTLOADER_APP_ROLLBACK_ENABLE=y
+
 # Octal PSRAM — required for MicroLink TLS headroom
 CONFIG_SPIRAM=y
 CONFIG_SPIRAM_MODE_OCT=y
