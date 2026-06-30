@@ -1,6 +1,6 @@
 # Copyright © 2026 Isaiah Dallas Jefferson, Jr. AgentShroud™. All rights reserved.
 # AgentShroud Voice Gateway — STT + TTS bridge for ESP32-S3-BOX-3
-FROM python:3.13-slim
+FROM python:3.12-slim
 
 LABEL maintainer="Isaiah Dallas Jefferson, Jr. <idallasj@gmail.com>"
 LABEL org.agentshroud.component="voice-gateway"
