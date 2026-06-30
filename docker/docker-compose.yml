@@ -463,8 +463,6 @@ services:
       # RBAC: voice-terminal is operated by the owner — use owner Telegram UID so
       # middleware maps the request to OWNER role (tool_use permission required for /forward).
       GATEWAY_OWNER_USER_ID: "8096968754"
-      PIPER_BIN: /usr/local/bin/piper
-      PIPER_MODEL: /opt/piper/en_US-lessac-medium.onnx
       VG_HOST: "0.0.0.0"
       VG_PORT: "8765"
       # WS auth: token the ESP32 must send as ?token= in the connection URL.
@@ -480,7 +478,7 @@ services:
       - no-new-privileges:true
     tmpfs:
       - /tmp:size=64m,mode=1777
-    mem_limit: 2g
+    mem_limit: 3g
     cpus: 2.0
     pids_limit: 256
     healthcheck:
