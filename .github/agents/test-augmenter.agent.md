@@ -106,26 +106,26 @@ A test augmentation task is "done" only when:
 
 ## Repository Context
 
-This repository implements a **Data Lakehouse platform** for distributed energy storage systems.
+This repository implements **AgentShroud** — a Python/FastAPI AI-gateway security platform
+with outbound PII/secret filtering, multi-bot orchestration (OpenClaw + Hermes), and a
+Docker Compose production stack.
 
 **Primary Focus:**
-- Data pipelines (Central DAS → S3 lakehouse)
-- Schema validation and partitioning
-- Data quality checks
-
-**Supporting:** CTA API Integration (when requested)
+- Gateway proxy and outbound filter pipeline (`gateway/proxy/`, `gateway/ingest_api/pipeline/`)
+- Bot handlers and per-collaborator memory isolation
+- Docker secrets, environment injection, and smoke-test coverage
 
 ## Environment
 
 ```bash
-# Activate environment
-conda activate gsdl
+# Run tests via Docker (production-aligned)
+docker exec agentshroud-gateway python -m pytest gateway/tests/ -q
 
-# Run tests
-pytest -q
+# Or locally with a Python 3.11+ virtualenv
+cd gateway && pip install -e ".[test]" && pytest -q
 
-# Check coverage
-pytest --cov=.
+# Coverage
+pytest --cov=gateway --cov-report=term-missing
 ```
 
 ## Remember

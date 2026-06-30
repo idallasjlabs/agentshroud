@@ -29,20 +29,24 @@ You (ChatGPT Codex CLI) are used for:
 ## 1) REPOSITORY OVERVIEW
 ──────────────────────────────────────────────────────────────────────────────
 
-This repository implements a **Data Lakehouse platform** for extracting,
-processing, validating, and serving operational data from distributed
-energy storage systems.
+This repository implements **AgentShroud** — a Python/FastAPI AI-gateway security
+platform that proxies LLM traffic, enforces outbound PII/secret filtering, and
+orchestrates two Telegram bots (OpenClaw and Hermes) in a Docker Compose stack.
 
-### Primary Focus
+### Primary Components
 
-**Data Lakehouse Pipelines**
-- Extract data from multiple Central DAS (Data Acquisition System) instances
-- Normalize, validate, and partition data
-- Persist data in an S3-based lakehouse (Parquet + Athena)
+**Gateway (`gateway/`)** — FastAPI service
+- Proxies LLM requests to cloud providers and local models (Ollama/LM Studio)
+- Outbound filtering pipeline: PII detection (Presidio), secret-leak detection
+  (KeyLeakDetector / KeyVault), and content policy enforcement
+- Management dashboard (`gateway/web/`), Slack ↔ Telegram bridge, SOC integrations
 
-### Supporting Integrations
-**CTA API Integration** (when explicitly requested)
-- Interactive extraction from Fluence Central Terminal Application (CTA) REST APIs
+**Bots (`docker/bots/`)** — Telegram-connected agents
+- OpenClaw: multi-skill conversational bot with per-collaborator memory isolation
+- Hermes: specialized Hermes-function-calling bot with heartbeat + dashboard
+
+**Firmware (`firmware/voice-terminal/`)** — ESP32-S3-BOX-3 voice terminal
+- Wake-word → voice-gateway WebSocket → LLM response cycle
 
 ──────────────────────────────────────────────────────────────────────────────
 ## 2) WHAT YOU SHOULD DO (YOUR JOBS)
@@ -50,21 +54,21 @@ energy storage systems.
 
 ### A) Test Augmenter (Primary Job)
 When code changes are made:
-- Identify missing test coverage for parsing/matching/transform logic
-- Add targeted tests (prefer small, deterministic tests)
+- Identify missing test coverage for gateway proxy logic, filter pipeline steps, and bot handlers
+- Add targeted tests (prefer small, deterministic tests; mock all external LLM/Telegram calls)
 - Add regression tests for bug fixes
 - Ensure ≥80% coverage on new/modified code
 
 ### B) Validation Runner (Primary Job)
 Run the smallest validation necessary to build confidence:
-- If change is local utilities: run a small script or focused notebook execution
-- If change touches Stage1/Stage2 scripts: run relevant check scripts
-- Validate dry-run behavior
+- If change is local utilities: run focused unit tests (`pytest tests/unit/ -q`)
+- If change touches the filter pipeline or gateway routes: run the gateway test suite
+- Run the secret-leak gate check if outbound filtering logic was modified
 
 Always report:
 - Commands executed
 - Pass/fail output summary
-- Any warnings (schema drift, missing env vars, network dependencies)
+- Any warnings (missing env vars, network dependencies, Docker secret injection)
 
 ### C) Safe Refactor (Secondary Job)
 Only after tests/validation succeed:
@@ -78,8 +82,7 @@ Only after tests/validation succeed:
 
 A change is considered **done** only when:
 - Scoped to request
-- Validation evidence exists (tests/notebook/script/check output)
-- High-impact mapping changes include spot-check examples
+- Validation evidence exists (pytest output, smoke test run, or filter-pipeline check)
 - Tests pass (≥80% coverage on new/modified code)
 
 ──────────────────────────────────────────────────────────────────────────────
@@ -110,16 +113,21 @@ Preferred commands:
 ## 5) ENVIRONMENT SETUP
 ──────────────────────────────────────────────────────────────────────────────
 
-### Conda Environment
+### Gateway / Python Tests
+
+Running via Docker (production-aligned, recommended):
 ```bash
-conda env create -f environment/environment.yml
-conda activate gsdl
+docker exec agentshroud-gateway python -m pytest gateway/tests/ -q
 ```
 
-Platform-specific alternatives:
-- `environment/macos/conda_environment_macos.yml`
-- `environment/linux/conda_environment_linux.yml`
-- `environment/windows/conda_environment_windows.yml`
+Running locally (requires Python 3.11+ virtualenv with gateway deps installed):
+```bash
+cd gateway
+pip install -e ".[test]"
+pytest -q
+```
+
+There is no conda environment for this repo. Do not run `conda activate gsdl`.
 
 ──────────────────────────────────────────────────────────────────────────────
 ## 6) SECURITY & SAFETY REQUIREMENTS

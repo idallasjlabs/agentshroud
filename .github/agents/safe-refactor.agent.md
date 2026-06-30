@@ -155,13 +155,15 @@ pytest
 
 ## Repository Context
 
-This repository implements a **Data Lakehouse platform** for distributed energy storage systems.
+This repository implements **AgentShroud** — a Python/FastAPI AI-gateway security platform
+with outbound PII/secret filtering, multi-bot orchestration (OpenClaw + Hermes), and a
+Docker Compose production stack.
 
-**Extra caution needed for:**
-- Schema transformations (no changes without Claude)
-- Partitioning logic (no changes without Claude)
-- Data validation rules (no changes without Claude)
-- API endpoints (no changes without Claude)
+**Extra caution needed for (defer to Claude Code):**
+- Outbound filter pipeline (`gateway/proxy/`, `gateway/ingest_api/pipeline/`)
+- Gateway authentication and Docker secret injection
+- Bot config (`docker/config/openclaw/apply-patches.js`, `docker/config/hermes/`)
+- Public API endpoints and their response contracts
 
 ## Definition of Done
 
