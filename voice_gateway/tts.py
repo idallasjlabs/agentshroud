@@ -1,23 +1,36 @@
 # Copyright © 2026 Isaiah Dallas Jefferson, Jr. AgentShroud™. All rights reserved.
 # AgentShroud™ is a trademark of Isaiah Dallas Jefferson, Jr. (USPTO Serial No. 99728633)
 # Patent Pending — U.S. Provisional Application No. 64/018,744
-"""Text-to-Speech using Piper (local CPU inference, outputs S16LE PCM)."""
+"""Text-to-Speech using Kokoro (local neural TTS, outputs S16LE PCM)."""
 
 from __future__ import annotations
 
 import logging
 import os as _os
 import re
-import subprocess
+from typing import Any
 
 logger = logging.getLogger("voice_gateway.tts")
 
-# Path to the piper binary and voice model; override via env vars.
-_PIPER_BIN = _os.environ.get("PIPER_BIN", "piper")
-_PIPER_MODEL = _os.environ.get("PIPER_MODEL", "/opt/piper/en_US-lessac-medium.onnx")
+# Kokoro voice character and speed; override via env vars.
+# Available voices: af_heart (warm female), af_alloy, am_adam, am_michael,
+#                   bf_emma (British female), bm_george (British male)
+_KOKORO_VOICE = _os.environ.get("KOKORO_VOICE", "af_heart")
+_KOKORO_SPEED = float(_os.environ.get("KOKORO_SPEED", "1.0"))
 
-# Native sample rate for the lessac-medium voice model.
-OUTPUT_SAMPLE_RATE = 22050
+# Kokoro's native output sample rate.
+OUTPUT_SAMPLE_RATE = 24000
+
+# Pipeline singleton — lazy-initialised on first synthesis call.
+_pipeline: Any = None
+
+
+def _get_pipeline() -> Any:
+    global _pipeline
+    if _pipeline is None:
+        from kokoro import KPipeline  # type: ignore[import]
+        _pipeline = KPipeline(lang_code="a")
+    return _pipeline
 
 # Target rate for the ESP32-S3-BOX-3 speaker.  The mic and speaker share one
 # full-duplex I²S bus locked to 16 kHz (required by WakeNet).  Piper output
@@ -173,7 +186,7 @@ _RE_WHITESPACE = re.compile(r"[ \t\n\r]+")
 
 
 def normalize_for_speech(text: str) -> str:
-    """Return *text* suitable for Piper TTS synthesis on the ESP32 voice interface.
+    """Return *text* suitable for TTS synthesis on the ESP32 voice interface.
 
     Two transformations are applied in order:
 
@@ -239,7 +252,7 @@ def split_for_speech(text: str, max_chars: int = 240) -> list[str]:
 
     Applies normalize_for_speech() to the full text first (markdown/code-fence
     context requires whole-text processing), then sentence-splits on sentence
-    boundary whitespace.  Each chunk is short enough that Piper renders it
+    boundary whitespace.  Each chunk is short enough that Kokoro renders it
     quickly, enabling the first PCM frame to reach the ESP32 while later
     sentences are still synthesizing.
 
@@ -300,10 +313,9 @@ def split_for_speech(text: str, max_chars: int = 240) -> list[str]:
 def synthesize(text: str) -> bytes:
     """Synthesize *text* to raw S16LE PCM mono audio bytes at TARGET_SAMPLE_RATE.
 
-    Piper is invoked with ``--output_raw`` (no WAV header); its stdout is raw
-    S16LE PCM at OUTPUT_SAMPLE_RATE (22050 Hz for lessac-medium).  When
-    TARGET_SAMPLE_RATE differs, the output is resampled via numpy linear
-    interpolation before returning so the ESP32-S3-BOX-3 speaker (locked to
+    Kokoro neural TTS produces float32 audio at OUTPUT_SAMPLE_RATE (24000 Hz).
+    When TARGET_SAMPLE_RATE differs, the output is resampled via the existing
+    Kaiser-windowed sinc resampler so the ESP32-S3-BOX-3 speaker (locked to
     16 kHz by the WakeNet I²S bus) plays audio at the correct pitch and speed.
 
     Args:
@@ -313,36 +325,29 @@ def synthesize(text: str) -> bytes:
         Raw S16LE PCM bytes at TARGET_SAMPLE_RATE Hz, mono.
 
     Raises:
-        RuntimeError: If Piper returns a non-zero exit code or is not found.
+        RuntimeError: If Kokoro fails to synthesize.
     """
-    # Normalise for speech: strip markdown and replace redaction tokens with
-    # category-aware phrases before feeding text to Piper.  The raw reply is
-    # logged by server.py before this call, so the audit trail is unaffected.
+    import numpy as _np
+
     text = normalize_for_speech(text)
     if not text:
         return b""
 
     try:
-        result = subprocess.run(
-            [_PIPER_BIN, "--model", _PIPER_MODEL, "--output_raw"],
-            input=text.encode(),
-            capture_output=True,
-            timeout=30,
-        )
-    except FileNotFoundError:
-        raise RuntimeError(
-            f"Piper binary not found at '{_PIPER_BIN}'. "
-            "Set PIPER_BIN env var or install piper in the container."
-        )
-    except subprocess.TimeoutExpired:
-        raise RuntimeError("Piper TTS timed out after 30 seconds")
+        pipeline = _get_pipeline()
+        chunks: list = []
+        for _, _, audio in pipeline(text, voice=_KOKORO_VOICE, speed=_KOKORO_SPEED):
+            chunks.append(audio)
+    except Exception as exc:
+        raise RuntimeError(f"Kokoro TTS failed: {exc}") from exc
 
-    if result.returncode != 0:
-        raise RuntimeError(
-            f"Piper exited {result.returncode}: {result.stderr.decode(errors='replace')}"
-        )
+    if not chunks:
+        return b""
 
-    pcm = result.stdout
+    samples = _np.concatenate(chunks).astype(_np.float32)
+    # Convert float32 [-1, 1] → S16LE
+    pcm = _np.clip(samples * 32767, -32768, 32767).astype("<i2").tobytes()
+
     if TARGET_SAMPLE_RATE != OUTPUT_SAMPLE_RATE:
         pcm = _resample_s16le_mono(pcm, OUTPUT_SAMPLE_RATE, TARGET_SAMPLE_RATE)
         logger.debug(
