@@ -31,6 +31,7 @@ import json
 import logging
 import os
 import re
+from contextlib import asynccontextmanager
 from datetime import datetime
 from enum import Enum, auto
 from typing import Dict, List
@@ -102,7 +103,17 @@ class _State(Enum):
     SPEAKING = auto()
 
 
-app = FastAPI(title="AgentShroud Voice Gateway")
+@asynccontextmanager
+async def _lifespan(_app: FastAPI):
+    loop = asyncio.get_event_loop()
+    await asyncio.gather(
+        loop.run_in_executor(None, _stt._get_model),
+        loop.run_in_executor(None, _tts._get_pipeline),
+    )
+    yield
+
+
+app = FastAPI(title="AgentShroud Voice Gateway", lifespan=_lifespan)
 
 
 @app.get("/health")
@@ -329,14 +340,16 @@ async def voice_endpoint(ws: WebSocket) -> None:
                                     history[:1] + history[-(_MAX_HISTORY_TURNS * 2) :]
                                 )
 
-                        state = _State.SPEAKING
-                        await _send_state(ws, state)
-
                         # Pipeline synthesis with sending: synthesise sentence N+1
                         # concurrently in a thread while sentence N's PCM frames are
-                        # being transmitted.  Without this, inter-sentence Piper
+                        # being transmitted.  Without this, inter-sentence Kokoro
                         # inference (~200-500 ms each) creates audio gaps that empty
                         # the ESP32 DMA buffer and produce audible dropouts.
+                        #
+                        # SPEAKING state is sent immediately before the first PCM
+                        # frame (not before synthesis) so the ESP32 mouth animation
+                        # is synchronised with the audio onset rather than leading it
+                        # by the full first-sentence inference time.
                         sentences = _tts.split_for_speech(agent_text)
                         _synth_q: asyncio.Queue[bytes | None] = asyncio.Queue(maxsize=2)
 
@@ -347,6 +360,7 @@ async def voice_endpoint(ws: WebSocket) -> None:
                             await _synth_q.put(None)  # sentinel
 
                         synth_task = asyncio.create_task(_synthesize_all())
+                        _speaking_sent = False
                         try:
                             while True:
                                 pcm = await _synth_q.get()
@@ -355,6 +369,10 @@ async def voice_endpoint(ws: WebSocket) -> None:
                                 for i in range(0, len(pcm), _CHUNK_SIZE):
                                     frame = pcm[i : i + _CHUNK_SIZE]
                                     if frame:
+                                        if not _speaking_sent:
+                                            state = _State.SPEAKING
+                                            await _send_state(ws, state)
+                                            _speaking_sent = True
                                         await ws.send_bytes(frame)
                                         await asyncio.sleep(0)
                         finally:
