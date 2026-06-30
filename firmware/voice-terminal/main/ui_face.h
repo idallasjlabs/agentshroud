@@ -11,10 +11,11 @@
 #include "ws_client.h"  /* for ws_vg_state_t */
 
 /**
- * @brief Create the face widget on the active LVGL screen.
+ * @brief Create the kawaii face widget on the active LVGL screen.
  *
- * Must be called inside a bsp_display_lock()/bsp_display_unlock() pair,
- * after the status labels are set up in ui_init().
+ * Manages its own bsp_display_lock/unlock internally. Must NOT be called
+ * while the caller holds the display lock (would deadlock on lvgl_port_lock).
+ * Call after status labels are hidden via ui_update(UI_READY).
  */
 void ui_face_init(void);
 

@@ -1,0 +1,3 @@
+[submodule "firmware/voice-terminal/components/lvgl_kawaii_face"]
+	path = firmware/voice-terminal/components/lvgl_kawaii_face
+	url = https://github.com/0015/lvgl_kawaii_face.git

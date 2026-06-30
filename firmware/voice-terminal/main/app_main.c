@@ -379,10 +379,9 @@ void app_main(void)
                         portMAX_DELAY);
     vTaskDelay(pdMS_TO_TICKS(1500));
 
-    /* WiFi labels no longer needed — bring up face UI */
-    bsp_display_lock(0);
+    /* WiFi labels no longer needed — bring up face UI.
+     * ui_face_init() manages its own bsp_display_lock internally. */
     ui_face_init();
-    bsp_display_unlock();
 
     /* Audio codecs */
     if (audio_init() != ESP_OK) {

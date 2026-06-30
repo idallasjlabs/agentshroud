@@ -15,4 +15,5 @@ idf_component_register(
         json
         button
         esp-sr
+        lvgl_kawaii_face
 )
