@@ -117,7 +117,7 @@ static void ui_init(void)
 
     bsp_display_lock(0);
 
-    lv_obj_t *scr = lv_scr_act();
+    lv_obj_t *scr = lv_screen_active();
     lv_obj_set_style_bg_color(scr, lv_color_hex(0x1a1a2e), LV_PART_MAIN);
 
     s_label = lv_label_create(scr);

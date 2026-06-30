@@ -40,9 +40,6 @@ CONFIG_LV_FONT_MONTSERRAT_14=y
 CONFIG_LV_FONT_MONTSERRAT_20=y
 CONFIG_LV_FONT_MONTSERRAT_28=y
 
-# Fix ILI9341 RGB565 byte order (little-endian CPU, big-endian display)
-CONFIG_LV_COLOR_16_SWAP=y
-
 # ── esp-sr / WakeNet ─────────────────────────────────────────────────────────
 # Stock "Hi, ESP" keyword — no Espressif training required.
 # Models land in the 9 MB 'model' SPIFFS partition (partitions.csv offset 0x6c4000).
