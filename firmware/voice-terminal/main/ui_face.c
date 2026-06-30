@@ -27,7 +27,9 @@ static lv_obj_t *s_mouth    = NULL;  /* rounded-rect mouth */
 static lv_obj_t *s_status   = NULL;  /* small status label (bottom) */
 static lv_obj_t *s_agent    = NULL;  /* agent name label (top-left) */
 static lv_obj_t *s_touch    = NULL;  /* full-screen transparent touch overlay */
-static lv_anim_t s_mouth_anim;
+static lv_anim_t   s_mouth_anim;
+static lv_anim_t   s_pupil_anim;          /* THINKING pupil-scan animation */
+static lv_timer_t *s_blink_timer = NULL;  /* periodic eye-blink (IDLE only) */
 
 static ws_vg_state_t s_current_state = WS_VG_STATE_IDLE;
 
@@ -63,6 +65,54 @@ static void _start_mouth_anim(void)
     lv_anim_start(&s_mouth_anim);
 }
 
+/* ── Eye blink (IDLE only) ───────────────────────────────────────────────── */
+
+static void _blink_restore_cb(lv_timer_t *t)
+{
+    (void)t;
+    lv_obj_set_height(s_eye_l, EYE_RADIUS * 2);
+    lv_obj_set_height(s_eye_r, EYE_RADIUS * 2);
+}
+
+static void _blink_cb(lv_timer_t *t)
+{
+    (void)t;
+    if (s_current_state != WS_VG_STATE_IDLE) return;
+    lv_obj_set_height(s_eye_l, 2);
+    lv_obj_set_height(s_eye_r, 2);
+    lv_timer_t *restore = lv_timer_create(_blink_restore_cb, 150, NULL);
+    lv_timer_set_repeat_count(restore, 1);
+}
+
+/* ── Pupil scan (THINKING) ───────────────────────────────────────────────── */
+
+static void _pupil_x_anim_cb(void *var, int32_t v)
+{
+    (void)var;
+    lv_obj_set_x(s_pupil_l, (FACE_CX - EYE_SPACING) - PUPIL_RADIUS + v);
+    lv_obj_set_x(s_pupil_r, (FACE_CX + EYE_SPACING) - PUPIL_RADIUS + v);
+}
+
+static void _start_pupil_scan(void)
+{
+    lv_anim_init(&s_pupil_anim);
+    lv_anim_set_var(&s_pupil_anim, s_pupil_l);
+    lv_anim_set_exec_cb(&s_pupil_anim, _pupil_x_anim_cb);
+    lv_anim_set_values(&s_pupil_anim, -14, 14);
+    lv_anim_set_time(&s_pupil_anim, 600);
+    lv_anim_set_playback_time(&s_pupil_anim, 600);
+    lv_anim_set_repeat_count(&s_pupil_anim, LV_ANIM_REPEAT_INFINITE);
+    lv_anim_start(&s_pupil_anim);
+}
+
+static void _stop_pupil_scan(void)
+{
+    lv_anim_del(s_pupil_l, _pupil_x_anim_cb);
+    /* re-centre pupils */
+    lv_obj_set_x(s_pupil_l, (FACE_CX - EYE_SPACING) - PUPIL_RADIUS);
+    lv_obj_set_x(s_pupil_r, (FACE_CX + EYE_SPACING) - PUPIL_RADIUS);
+}
+
 /* ── Touch-to-talk overlay callbacks ─────────────────────────────────────── */
 
 static void _touch_pressed(lv_event_t *e)
@@ -77,6 +127,8 @@ static void _touch_pressed(lv_event_t *e)
         s_current_state = WS_VG_STATE_IDLE;
         lv_anim_del(s_mouth, _mouth_anim_cb);
         lv_obj_set_height(s_mouth, MOUTH_H / 3);
+        lv_obj_set_style_bg_color(s_pupil_l, lv_color_hex(0x1a1a2e), LV_PART_MAIN);
+        lv_obj_set_style_bg_color(s_pupil_r, lv_color_hex(0x1a1a2e), LV_PART_MAIN);
         lv_label_set_text(s_status, "Say 'Hi, ESP' or tap to talk");
     } else {
         wakeword_ptt_press();
@@ -142,6 +194,9 @@ void ui_face_init(void)
     lv_obj_add_event_cb(s_touch, _touch_released, LV_EVENT_RELEASED,   NULL);
     lv_obj_add_event_cb(s_touch, _touch_released, LV_EVENT_PRESS_LOST, NULL);
 
+    /* Periodic blink timer — fires every 4 s; callback is a no-op outside IDLE */
+    s_blink_timer = lv_timer_create(_blink_cb, 4000, NULL);
+
     ESP_LOGI(TAG, "Face initialised (touchscreen PTT active)");
 }
 
@@ -156,36 +211,48 @@ void ui_face_set_state(ws_vg_state_t state)
 
     switch (state) {
     case WS_VG_STATE_IDLE:
-        /* Normal eyes, static mouth */
+        /* Normal eyes, static mouth, navy pupils, blink active */
         lv_obj_set_size(s_eye_l, EYE_RADIUS * 2, EYE_RADIUS * 2);
         lv_obj_set_size(s_eye_r, EYE_RADIUS * 2, EYE_RADIUS * 2);
         lv_anim_del(s_mouth, _mouth_anim_cb);
         lv_obj_set_height(s_mouth, MOUTH_H / 3);
+        _stop_pupil_scan();
+        lv_obj_set_style_bg_color(s_pupil_l, lv_color_hex(0x1a1a2e), LV_PART_MAIN);
+        lv_obj_set_style_bg_color(s_pupil_r, lv_color_hex(0x1a1a2e), LV_PART_MAIN);
         lv_label_set_text(s_status, "Say 'Hi, ESP' or tap to talk");
         break;
 
     case WS_VG_STATE_LISTENING:
-        /* Wide eyes */
+        /* Wide eyes, cyan pupils — alert, attentive */
         lv_obj_set_size(s_eye_l, EYE_RADIUS * 2 + 8, EYE_RADIUS * 2 + 8);
         lv_obj_set_size(s_eye_r, EYE_RADIUS * 2 + 8, EYE_RADIUS * 2 + 8);
         lv_anim_del(s_mouth, _mouth_anim_cb);
         lv_obj_set_height(s_mouth, MOUTH_H / 4);
+        _stop_pupil_scan();
+        lv_obj_set_style_bg_color(s_pupil_l, lv_color_hex(0x00bcd4), LV_PART_MAIN);
+        lv_obj_set_style_bg_color(s_pupil_r, lv_color_hex(0x00bcd4), LV_PART_MAIN);
         lv_label_set_text(s_status, "Listening...");
         break;
 
     case WS_VG_STATE_THINKING:
-        /* Normal eyes, no mouth anim */
+        /* Normal eyes, amber pupils, scanning side-to-side */
         lv_obj_set_size(s_eye_l, EYE_RADIUS * 2, EYE_RADIUS * 2);
         lv_obj_set_size(s_eye_r, EYE_RADIUS * 2, EYE_RADIUS * 2);
         lv_anim_del(s_mouth, _mouth_anim_cb);
         lv_obj_set_height(s_mouth, MOUTH_H / 6);
+        lv_obj_set_style_bg_color(s_pupil_l, lv_color_hex(0xffa726), LV_PART_MAIN);
+        lv_obj_set_style_bg_color(s_pupil_r, lv_color_hex(0xffa726), LV_PART_MAIN);
+        _start_pupil_scan();
         lv_label_set_text(s_status, "Thinking...");
         break;
 
     case WS_VG_STATE_SPEAKING:
-        /* Normal eyes, animated mouth */
+        /* Normal eyes, green pupils, animated mouth */
         lv_obj_set_size(s_eye_l, EYE_RADIUS * 2, EYE_RADIUS * 2);
         lv_obj_set_size(s_eye_r, EYE_RADIUS * 2, EYE_RADIUS * 2);
+        _stop_pupil_scan();
+        lv_obj_set_style_bg_color(s_pupil_l, lv_color_hex(0x66bb6a), LV_PART_MAIN);
+        lv_obj_set_style_bg_color(s_pupil_r, lv_color_hex(0x66bb6a), LV_PART_MAIN);
         _start_mouth_anim();
         lv_label_set_text(s_status, "Speaking...");
         break;
@@ -195,6 +262,9 @@ void ui_face_set_state(ws_vg_state_t state)
         lv_obj_set_size(s_eye_r, EYE_RADIUS * 2, EYE_RADIUS * 2);
         lv_anim_del(s_mouth, _mouth_anim_cb);
         lv_obj_set_height(s_mouth, MOUTH_H / 6);
+        _stop_pupil_scan();
+        lv_obj_set_style_bg_color(s_pupil_l, lv_color_hex(0xef5350), LV_PART_MAIN);
+        lv_obj_set_style_bg_color(s_pupil_r, lv_color_hex(0xef5350), LV_PART_MAIN);
         lv_label_set_text(s_status, "Reconnecting...");
         break;
 
