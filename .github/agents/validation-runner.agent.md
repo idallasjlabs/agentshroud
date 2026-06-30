@@ -66,14 +66,16 @@ mypy .
 pytest --cov=. --cov-report=term-missing
 ```
 
-### Data Pipeline Validation
+### AgentShroud-Specific Checks
 ```bash
-# Stage 1/2 validation checks
-# (Specific commands depend on pipeline structure)
+# Smoke tests (requires deployed stack)
+bash scripts/smoke.sh
 
-# Schema validation
-# Partition correctness check
-# Data quality verification
+# Post-deploy dashboard and health check
+bash scripts/post-deploy-check.sh
+
+# Secret-leak gate (filter pipeline)
+pytest gateway/tests/ -k 'keyleak or keyvault or secret' -v
 ```
 
 ## Report Format
@@ -122,21 +124,24 @@ Next steps:
 
 ## Repository Context
 
-This repository implements a **Data Lakehouse platform** for distributed energy storage systems.
+This repository implements **AgentShroud** — a Python/FastAPI AI-gateway security platform
+with outbound PII/secret filtering, multi-bot orchestration (OpenClaw + Hermes), and a
+Docker Compose production stack.
 
 **Key Validation Points:**
-- Data extraction correctness
-- Schema stability
-- Partition correctness
-- Backward compatibility
+- Gateway proxy correctness (routing, auth, error handling)
+- Outbound filter pipeline integrity (PII/secret detection pass-through and block)
+- Docker secret injection and environment variable correctness
+- Smoke-test + post-deploy health check coverage
 
 ## Environment Setup
 
 ```bash
-# Activate conda environment
-conda activate gsdl
+# Run tests via Docker (production-aligned)
+docker exec agentshroud-gateway python -m pytest gateway/tests/ -q
 
-# Verify environment
+# Or locally with a Python 3.11+ virtualenv
+cd gateway && pip install -e ".[test]"
 python --version
 pytest --version
 ```
@@ -167,11 +172,11 @@ pytest --cov=. --cov-report=html
 pytest && ruff check . && black --check . && mypy .
 ```
 
-### Data Validation
+### AgentShroud Stack Validation
 ```bash
-# Stage validation (example - adjust to actual commands)
-# python scripts/validate_stage1.py --date 2024-01-01
-# python scripts/check_partitions.py --array ARRAY_NAME
+# Full stack health (requires running Docker stack)
+curl -s http://localhost:8080/status
+bash scripts/smoke.sh
 ```
 
 ## Error Handling

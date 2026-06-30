@@ -38,7 +38,7 @@ decorative panels, illustrations, and data visualizations.
 
 ## Semantic Colors
 
-Semantic colors match production code (`web/styles.css`) exactly.
+Semantic colors match production code (`gateway/web/static/agentshroud-dashboard.css`) exactly.
 
 **Success Green**
 - **Hex:** `#22c55e`
@@ -62,7 +62,7 @@ Semantic colors match production code (`web/styles.css`) exactly.
 
 ## Neutral Colors
 
-Neutral values match the production dark theme (sourced from `web/styles.css`).
+Neutral values match the production dark theme (sourced from `gateway/web/static/agentshroud-dashboard.css`).
 
 ### Dark Surface Hierarchy
 - **Void:** `#08090b` — Primary background (deepest)
