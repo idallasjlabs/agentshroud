@@ -35,8 +35,8 @@ static ws_vg_state_t s_current_state = WS_VG_STATE_IDLE;
 
 /* ── Helpers ─────────────────────────────────────────────────────────────── */
 
-static lv_obj_t *_make_circle(lv_obj_t *parent, lv_coord_t x, lv_coord_t y,
-                               lv_coord_t r, lv_color_t color)
+static lv_obj_t *_make_circle(lv_obj_t *parent, int32_t x, int32_t y,
+                               int32_t r, lv_color_t color)
 {
     lv_obj_t *obj = lv_obj_create(parent);
     lv_obj_set_size(obj, r * 2, r * 2);
@@ -50,7 +50,7 @@ static lv_obj_t *_make_circle(lv_obj_t *parent, lv_coord_t x, lv_coord_t y,
 static void _mouth_anim_cb(void *obj, int32_t v)
 {
     if (!obj) return;
-    lv_obj_set_height((lv_obj_t *)obj, (lv_coord_t)v);
+    lv_obj_set_height((lv_obj_t *)obj, (int32_t)v);
 }
 
 static void _start_mouth_anim(void)
@@ -59,8 +59,8 @@ static void _start_mouth_anim(void)
     lv_anim_set_var(&s_mouth_anim, s_mouth);
     lv_anim_set_exec_cb(&s_mouth_anim, _mouth_anim_cb);
     lv_anim_set_values(&s_mouth_anim, MOUTH_H / 4, MOUTH_H);
-    lv_anim_set_time(&s_mouth_anim, 400);
-    lv_anim_set_playback_time(&s_mouth_anim, 300);
+    lv_anim_set_duration(&s_mouth_anim, 400);
+    lv_anim_set_playback_duration(&s_mouth_anim, 300);
     lv_anim_set_repeat_count(&s_mouth_anim, LV_ANIM_REPEAT_INFINITE);
     lv_anim_start(&s_mouth_anim);
 }
@@ -99,8 +99,8 @@ static void _start_pupil_scan(void)
     lv_anim_set_var(&s_pupil_anim, s_pupil_l);
     lv_anim_set_exec_cb(&s_pupil_anim, _pupil_x_anim_cb);
     lv_anim_set_values(&s_pupil_anim, -14, 14);
-    lv_anim_set_time(&s_pupil_anim, 600);
-    lv_anim_set_playback_time(&s_pupil_anim, 600);
+    lv_anim_set_duration(&s_pupil_anim, 600);
+    lv_anim_set_playback_duration(&s_pupil_anim, 600);
     lv_anim_set_repeat_count(&s_pupil_anim, LV_ANIM_REPEAT_INFINITE);
     lv_anim_start(&s_pupil_anim);
 }
@@ -145,7 +145,7 @@ static void _touch_released(lv_event_t *e)
 
 void ui_face_init(void)
 {
-    lv_obj_t *scr = lv_scr_act();
+    lv_obj_t *scr = lv_screen_active();
 
     /* Eyes */
     s_eye_l   = _make_circle(scr, FACE_CX - EYE_SPACING, EYE_Y,
@@ -185,11 +185,11 @@ void ui_face_init(void)
      * face widgets so any screen tap triggers PTT.  The physical button
      * (BSP_BUTTON_MAIN) is registered separately in wakeword.c and still works. */
     s_touch = lv_obj_create(scr);
-    lv_obj_set_size(s_touch, LV_HOR_RES, LV_VER_RES);
+    lv_obj_set_size(s_touch, lv_display_get_horizontal_resolution(NULL), lv_display_get_vertical_resolution(NULL));
     lv_obj_set_pos(s_touch, 0, 0);
     lv_obj_set_style_bg_opa(s_touch, LV_OPA_TRANSP, LV_PART_MAIN);
     lv_obj_set_style_border_width(s_touch, 0, LV_PART_MAIN);
-    lv_obj_clear_flag(s_touch, LV_OBJ_FLAG_SCROLLABLE);
+    lv_obj_remove_flag(s_touch, LV_OBJ_FLAG_SCROLLABLE);
     lv_obj_add_event_cb(s_touch, _touch_pressed,  LV_EVENT_PRESSED,    NULL);
     lv_obj_add_event_cb(s_touch, _touch_released, LV_EVENT_RELEASED,   NULL);
     lv_obj_add_event_cb(s_touch, _touch_released, LV_EVENT_PRESS_LOST, NULL);

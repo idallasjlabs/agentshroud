@@ -146,8 +146,8 @@ esp_err_t wakeword_init(const char *model_partition)
         ESP_LOGE(TAG, "BSP_BUTTON_MAIN handle is NULL");
         return ESP_FAIL;
     }
-    iot_button_register_cb(main_btn, BUTTON_PRESS_DOWN, _btn_pressed, NULL);
-    iot_button_register_cb(main_btn, BUTTON_PRESS_UP,   _btn_released, NULL);
+    iot_button_register_cb(main_btn, BUTTON_PRESS_DOWN, NULL, _btn_pressed, NULL);
+    iot_button_register_cb(main_btn, BUTTON_PRESS_UP,   NULL, _btn_released, NULL);
     ESP_LOGI(TAG, "Physical button PTT registered (BSP_BUTTON_MAIN)");
 
     /* Agent-toggle button — BSP_BUTTON_MUTE (GPIO1) on the BOX-3.
@@ -157,7 +157,7 @@ esp_err_t wakeword_init(const char *model_partition)
     if (s_bsp_btn_cnt > BSP_BUTTON_MUTE) {
         button_handle_t mute_btn = s_bsp_buttons[BSP_BUTTON_MUTE];
         if (mute_btn) {
-            iot_button_register_cb(mute_btn, BUTTON_PRESS_DOWN, _agent_btn_pressed, NULL);
+            iot_button_register_cb(mute_btn, BUTTON_PRESS_DOWN, NULL, _agent_btn_pressed, NULL);
             ESP_LOGI(TAG, "Agent-toggle button registered (BSP_BUTTON_MUTE)");
         } else {
             ESP_LOGW(TAG, "BSP_BUTTON_MUTE handle NULL — agent toggle via button disabled");
