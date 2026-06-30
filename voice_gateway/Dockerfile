@@ -26,11 +26,8 @@ RUN pip install --no-cache-dir -r requirements.txt
 # voice-gateway runs on agentshroud-isolated; HF_HUB_OFFLINE=1 blocks all
 # outbound at runtime.  We download here at build time while internet is available.
 ENV HF_HOME=/opt/hf-cache
-RUN python -c "
-from kokoro import KPipeline
-pipe = KPipeline(lang_code='a')
-pipe.load_voice('af_heart')
-" && chmod -R a+rX /opt/hf-cache
+RUN python -c "from kokoro import KPipeline; pipe = KPipeline(lang_code='a'); pipe.load_voice('af_heart')" && \
+    chmod -R a+rX /opt/hf-cache
 
 # Pre-bake the faster-whisper STT model so runtime needs ZERO egress.
 # voice-gateway runs on agentshroud-isolated; all outbound is blocked by the
