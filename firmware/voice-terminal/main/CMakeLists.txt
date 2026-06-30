@@ -5,6 +5,7 @@ idf_component_register(
         "wakeword.c"
         "ws_client.c"
         "ui_face.c"
+        "ota.c"
     INCLUDE_DIRS "."
     PRIV_REQUIRES
         esp_wifi
@@ -16,4 +17,7 @@ idf_component_register(
         button
         esp-sr
         lvgl_kawaii_face
+        esp_http_client
+        app_update
+        esp-tls
 )

@@ -27,11 +27,14 @@ Required env vars (set by docker-compose):
 from __future__ import annotations
 
 import asyncio
+import hashlib
+import hmac
 import json
 import logging
 import os
 import re
 from contextlib import asynccontextmanager
+from pathlib import Path
 from datetime import datetime
 from enum import Enum, auto
 from typing import Dict, List
@@ -39,6 +42,7 @@ from zoneinfo import ZoneInfo
 
 import httpx
 from fastapi import FastAPI, WebSocket, WebSocketDisconnect
+from fastapi.responses import FileResponse, Response
 from websockets.exceptions import (
     ConnectionClosed,
     ConnectionClosedError,
@@ -95,6 +99,22 @@ if not _VG_AUTH_TOKEN:
         "Mount docker secret 'voice_gateway_token' or set VOICE_GW_AUTH_TOKEN env var."
     )
 
+_FIRMWARE_BIN_PATH = Path(os.environ.get("FIRMWARE_BIN_PATH", "/firmware/voice_terminal.bin"))
+_fw_etag: str = ""
+_fw_mtime: float = 0.0
+
+
+def _get_firmware_etag() -> str | None:
+    global _fw_etag, _fw_mtime
+    if not _FIRMWARE_BIN_PATH.exists():
+        return None
+    mtime = _FIRMWARE_BIN_PATH.stat().st_mtime
+    if mtime != _fw_mtime or not _fw_etag:
+        sha = hashlib.sha256(_FIRMWARE_BIN_PATH.read_bytes()).hexdigest()
+        _fw_etag = f'"{sha}"'
+        _fw_mtime = mtime
+    return _fw_etag
+
 
 class _State(Enum):
     IDLE = auto()
@@ -119,6 +139,20 @@ app = FastAPI(title="AgentShroud Voice Gateway", lifespan=_lifespan)
 @app.get("/health")
 async def health() -> dict:
     return {"status": "ok"}
+
+
+@app.api_route("/firmware/bin", methods=["GET", "HEAD"])
+async def firmware_bin(token: str = "") -> Response:
+    if _VG_AUTH_TOKEN and not hmac.compare_digest(token, _VG_AUTH_TOKEN):
+        return Response(status_code=401)
+    etag = _get_firmware_etag()
+    if etag is None:
+        return Response(status_code=404)
+    return FileResponse(
+        str(_FIRMWARE_BIN_PATH),
+        media_type="application/octet-stream",
+        headers={"ETag": etag},
+    )
 
 
 async def _keepalive(ws: WebSocket) -> None:
