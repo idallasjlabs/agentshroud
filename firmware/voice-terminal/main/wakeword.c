@@ -242,9 +242,10 @@ esp_err_t wakeword_init(const char *model_partition)
 
 void wakeword_push_frame(const uint8_t *pcm, size_t len)
 {
-    if (!pcm || len == 0) return;
-
-    /* VAD timeout: auto-end a dangling triggered utterance. */
+    /* VAD timeout: auto-end a dangling triggered utterance.
+     * Runs BEFORE the pcm/len guard so that the 8-second safety net fires
+     * even when audio capture returns 0 bytes (codec not ready, I2S underrun,
+     * etc.).  Without this, a stuck streaming state can never self-recover. */
     if (s_triggered && !s_ended) {
         TickType_t elapsed_ms = (xTaskGetTickCount() - s_trigger_tick)
                                 * portTICK_PERIOD_MS;
@@ -254,6 +255,8 @@ void wakeword_push_frame(const uint8_t *pcm, size_t len)
             s_ptt_held = false;
         }
     }
+
+    if (!pcm || len == 0) return;
 
 #if HAVE_ESP_SR
     if (!s_afe_iface || !s_afe_data) return;
@@ -297,6 +300,21 @@ int wakeword_feed_bytes(void)
 
 bool wakeword_triggered(void) { return s_triggered; }
 bool wakeword_ended(void)     { return s_ended; }
+
+void wakeword_tick(void)
+{
+    /* Advance the VAD timeout even when no audio frame is available.
+     * Mirrors the timeout block at the top of wakeword_push_frame(). */
+    if (s_triggered && !s_ended) {
+        TickType_t elapsed_ms = (xTaskGetTickCount() - s_trigger_tick)
+                                * portTICK_PERIOD_MS;
+        if (elapsed_ms > VAD_TIMEOUT_MS) {
+            ESP_LOGW(TAG, "VAD timeout (no audio) — auto-ending utterance");
+            s_ended    = true;
+            s_ptt_held = false;
+        }
+    }
+}
 
 void wakeword_clear(void)
 {

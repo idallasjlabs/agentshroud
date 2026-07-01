@@ -411,7 +411,11 @@ static void voice_task(void *arg)
         }
 
         if (got == 0) {
-            /* No audio data — check utterance-end and keepalive before looping */
+            /* No audio data — advance timers so a triggered utterance can still
+             * time out and send END even when the codec is unavailable. */
+            wakeword_tick();
+
+            /* Check utterance-end and keepalive before looping */
             if (streaming && wakeword_ended()) {
                 ws_client_send_end(ws);
                 streaming = false;

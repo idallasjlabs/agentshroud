@@ -45,6 +45,15 @@ int wakeword_feed_bytes(void);
 void wakeword_push_frame(const uint8_t *pcm, size_t len);
 
 /**
+ * @brief Advance internal timers (VAD timeout, PTT release) without audio data.
+ *
+ * Call from the voice_task loop when audio_capture_frame() returns 0 bytes so
+ * that a triggered-but-stuck streaming state can still time out and send END.
+ * wakeword_push_frame() calls this automatically when len > 0.
+ */
+void wakeword_tick(void);
+
+/**
  * @brief Returns true if a trigger (PTT press or WakeNet detection) fired.
  *        The caller should drain the ring buffer and start streaming.
  */

@@ -327,6 +327,7 @@ async def voice_endpoint(ws: WebSocket) -> None:
                     pass  # client keepalive — no response needed
 
                 elif msg == "LISTEN":
+                    logger.info("LISTEN from %s", remote)
                     pcm_chunks.clear()
                     # Refresh the system message so time stays accurate on long sessions.
                     history[0] = _voice_system_message()
