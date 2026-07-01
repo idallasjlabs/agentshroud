@@ -81,7 +81,7 @@ void ui_face_init(void)
     bsp_display_lock(0);
     face_config_t cfg = {
         .parent          = face_panel,
-        .animation_speed = 50,   /* 20 fps — gives DMA more time between flushes */
+        .animation_speed = 100,  /* 10 fps — keeps SPI queue clear under I2S load */
         .blink_interval  = 4000,
         .auto_blink      = true,
         .bg_color        = lv_color_hex(0x1a1a2e),
