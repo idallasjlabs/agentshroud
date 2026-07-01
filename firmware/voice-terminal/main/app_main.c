@@ -390,14 +390,11 @@ static void voice_task(void *arg)
 
         /* Capture one AFE-sized mic frame */
         size_t got = audio_capture_frame(frame_buf, (size_t)frame_bytes);
-        if (got == 0) {
-            vTaskDelay(pdMS_TO_TICKS(10));
-            continue;
-        }
 
-        /* Feed frame to the trigger detector */
-        wakeword_push_frame(frame_buf, got);
-
+        /* Check PTT/wakeword trigger BEFORE the audio-failure guard so that a
+         * touch tap reaches the gateway even when mic capture has a transient
+         * failure (got == 0).  wakeword_triggered() is set by the touch ISR
+         * independently of audio data. */
         if (!streaming && wakeword_triggered()) {
             /* New utterance: signal gateway and start streaming */
             if (ws_client_connected(ws)) {
@@ -412,6 +409,27 @@ static void voice_task(void *arg)
                 ESP_LOGW(TAG, "Trigger while disconnected — cleared");
             }
         }
+
+        if (got == 0) {
+            /* No audio data — check utterance-end and keepalive before looping */
+            if (streaming && wakeword_ended()) {
+                ws_client_send_end(ws);
+                streaming = false;
+                wakeword_clear();
+                keepalive_frames = 0;
+                ESP_LOGI(TAG, "Utterance ended");
+            } else if (!streaming) {
+                if (++keepalive_frames >= KEEPALIVE_INTERVAL) {
+                    keepalive_frames = 0;
+                    ws_client_send_keepalive(ws);
+                }
+            }
+            vTaskDelay(pdMS_TO_TICKS(10));
+            continue;
+        }
+
+        /* Feed frame to the trigger detector */
+        wakeword_push_frame(frame_buf, got);
 
         if (streaming) {
             /* Stream PCM to gateway */

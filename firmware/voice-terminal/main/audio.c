@@ -12,10 +12,24 @@ static bool                   s_ready  = false;
 
 esp_err_t audio_init(void)
 {
-    /* Use BSP defaults (22050 Hz, 16-bit, mono, full-duplex).
-     * Passing NULL avoids needing to hand-construct the i2s_std_config_t,
-     * and faster-whisper resamples from 22050 Hz internally. */
-    esp_err_t ret = bsp_audio_init(NULL);
+    /* Init I2S at the project's native sample rate instead of the BSP default.
+     * Passing NULL uses BSP_I2S_DUPLEX_MONO_CFG(22050) which then mismatches
+     * the 16000 Hz passed to esp_codec_dev_open below, causing
+     * esp_codec_dev_read to fail and audio_capture_frame to return 0. */
+    i2s_std_config_t i2s_cfg = {
+        .clk_cfg  = I2S_STD_CLK_DEFAULT_CONFIG(AUDIO_SAMPLE_RATE),
+        .slot_cfg = I2S_STD_PHILIP_SLOT_DEFAULT_CONFIG(I2S_DATA_BIT_WIDTH_16BIT,
+                                                       I2S_SLOT_MODE_MONO),
+        .gpio_cfg = {
+            .mclk = BSP_I2S_MCLK,
+            .bclk = BSP_I2S_SCLK,
+            .ws   = BSP_I2S_LCLK,
+            .dout = BSP_I2S_DOUT,
+            .din  = BSP_I2S_DSIN,
+            .invert_flags = { .mclk_inv = false, .bclk_inv = false, .ws_inv = false },
+        },
+    };
+    esp_err_t ret = bsp_audio_init(&i2s_cfg);
     if (ret != ESP_OK) {
         ESP_LOGE(TAG, "bsp_audio_init failed: %s", esp_err_to_name(ret));
         return ret;

@@ -151,11 +151,18 @@ esp_err_t ota_check(const char *ws_url, const char *token)
         return ESP_OK;
     }
 
-    char buf[4096];
+    char *buf = malloc(4096);
+    if (!buf) {
+        ESP_LOGE(TAG, "OTA: out of memory for download buffer");
+        esp_http_client_close(client);
+        esp_http_client_cleanup(client);
+        esp_ota_abort(ota_handle);
+        return ESP_OK;
+    }
     int total = 0;
     int rd;
     bool ok = true;
-    while ((rd = esp_http_client_read(client, buf, sizeof(buf))) > 0) {
+    while ((rd = esp_http_client_read(client, buf, 4096)) > 0) {
         if (esp_ota_write(ota_handle, buf, rd) != ESP_OK) {
             ESP_LOGE(TAG, "esp_ota_write failed at byte %d", total);
             ok = false;
@@ -165,6 +172,7 @@ esp_err_t ota_check(const char *ws_url, const char *token)
     }
     esp_http_client_close(client);
     esp_http_client_cleanup(client);
+    free(buf);
 
     if (!ok || total == 0) {
         ESP_LOGE(TAG, "OTA download incomplete (%d bytes)", total);
