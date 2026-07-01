@@ -4,6 +4,8 @@
 #include "freertos/FreeRTOS.h"
 #include "freertos/task.h"
 #include "freertos/event_groups.h"
+#include "freertos/stream_buffer.h"
+#include "esp_heap_caps.h"
 #include "esp_log.h"
 #include "esp_wifi.h"
 #include "esp_event.h"
@@ -11,6 +13,10 @@
 #include "esp_ota_ops.h"
 #include "bsp/esp-bsp.h"
 #include "lvgl.h"
+/* Private header needed for disp->flushing field used in flush_wait_cb below.
+ * LVGL's cmake adds both ${LVGL_ROOT_DIR} and ${LVGL_ROOT_DIR}/src to INCLUDE_DIRS,
+ * so "display/lv_display_private.h" resolves correctly in the IDF build. */
+#include "display/lv_display_private.h"
 
 #include "audio.h"
 #include "wakeword.h"
@@ -73,6 +79,27 @@ static const wifi_net_t NETWORKS[] = {
 #define NETWORK_COUNT (sizeof(NETWORKS) / sizeof(NETWORKS[0]))
 static int s_net_idx = 0;
 
+/* ── LVGL flush-wait shim ─────────────────────────────────────────────────── *
+ * esp_lvgl_port never sets lv_display_set_flush_wait_cb(), so LVGL falls back
+ * to a bare busy-wait ("while(disp->flushing);") inside wait_for_flushing().
+ * When the SPI DMA ISR is slow to call lv_disp_flush_ready(), taskLVGL spins
+ * continuously, starving IDLE0 → WDT fires after 5 s.
+ *
+ * Fix: yield in 1 ms slices while waiting, with a 200 ms hard timeout.
+ * 200 ms covers worst-case: multiple dirty regions flushed per animation tick,
+ * or I2S DMA contention slowing SPI ISR scheduling.  LVGL forces
+ * disp->flushing = 0 after the callback returns, so we cannot create a true
+ * livelock — worst case we skip one frame and the DMA transaction eventually
+ * drains.
+ */
+static void _lvgl_flush_wait_yield(lv_display_t *disp)
+{
+    uint32_t start = xTaskGetTickCount();
+    while (disp->flushing && (xTaskGetTickCount() - start) < pdMS_TO_TICKS(200)) {
+        vTaskDelay(pdMS_TO_TICKS(1));
+    }
+}
+
 /* ── LVGL UI ──────────────────────────────────────────────────────────────── */
 
 typedef enum {
@@ -118,6 +145,12 @@ static void ui_init(void)
     bsp_display_backlight_on();
 
     bsp_display_lock(0);
+    /* Replace the default busy-wait with a yielding wait so taskLVGL doesn't
+     * starve IDLE0 when a SPI DMA flush takes longer than usual. */
+    lv_display_t *disp = lv_display_get_default();
+    if (disp) {
+        lv_display_set_flush_wait_cb(disp, _lvgl_flush_wait_yield);
+    }
 
     lv_obj_t *scr = lv_screen_active();
     lv_obj_set_style_bg_color(scr, lv_color_hex(0x1a1a2e), LV_PART_MAIN);
@@ -203,6 +236,39 @@ static void wifi_init(void)
     ui_update(UI_WIFI_CONNECTING, NETWORKS[0].ssid);
 }
 
+/* ── TTS ring buffer ──────────────────────────────────────────────────────── *
+ * PCM frames from the gateway arrive in the websocket_task context (CPU 0).
+ * Calling audio_play() there blocks i2s_channel_write() for ~93 ms per 4 KB
+ * chunk, which stalls the WebSocket receive loop and eventually causes a dirty
+ * close (transport detects no progress).
+ *
+ * Fix: _on_tts_pcm pushes PCM into a stream buffer (non-blocking).  A
+ * dedicated tts_task on CPU 1 drains it and calls audio_play(), leaving the
+ * websocket_task free to keep reading frames.  If the buffer fills (gateway
+ * sending faster than real-time playback), we drop the excess — a momentary
+ * audio gap is better than a connection crash.
+ *
+ * The backing store is placed in PSRAM explicitly (heap_caps_malloc +
+ * xStreamBufferCreateStatic) so we get a large buffer without needing
+ * CONFIG_SPIRAM_USE_MALLOC to redirect pvPortMalloc to PSRAM.
+ */
+#define TTS_STREAM_BUF_BYTES   (64 * 1024)   /* ~2 s at 16000 Hz 16-bit mono */
+static StreamBufferHandle_t  s_tts_buf      = NULL;
+static StaticStreamBuffer_t  s_tts_sbuf_ctrl;     /* control struct — internal DRAM (BSS) */
+static uint8_t              *s_tts_sbuf_mem = NULL; /* backing store — PSRAM */
+
+static void tts_task(void *arg)
+{
+    static uint8_t play_chunk[4096];
+    while (1) {
+        size_t got = xStreamBufferReceive(s_tts_buf, play_chunk, sizeof(play_chunk),
+                                          pdMS_TO_TICKS(100));
+        if (got > 0 && !wakeword_tts_stop_requested()) {
+            audio_play(play_chunk, got);
+        }
+    }
+}
+
 /* ── Voice Gateway callbacks ──────────────────────────────────────────────── */
 
 static ws_vg_state_t s_prev_vg_state = WS_VG_STATE_DISCONNECTED;
@@ -241,8 +307,10 @@ static void _on_vg_state(ws_vg_state_t state, void *ctx)
 
 static void _on_tts_pcm(const uint8_t *pcm, size_t len, void *ctx)
 {
-    if (!wakeword_tts_stop_requested()) {
-        audio_play(pcm, len);
+    /* Non-blocking push: if the buffer is full, drop this chunk rather than
+     * stalling websocket_task (which would corrupt the WS receive loop). */
+    if (s_tts_buf && !wakeword_tts_stop_requested()) {
+        xStreamBufferSend(s_tts_buf, pcm, len, 0);
     }
 }
 
@@ -396,6 +464,17 @@ void app_main(void)
         ui_update(UI_READY, NULL);
         while (1) vTaskDelay(pdMS_TO_TICKS(10000));
     }
+
+    /* TTS playback task — drains s_tts_buf on CPU 1 so websocket_task is
+     * never blocked by i2s_channel_write during TTS streaming.
+     * Back the stream buffer with PSRAM so we don't eat internal DRAM. */
+    s_tts_sbuf_mem = heap_caps_malloc(TTS_STREAM_BUF_BYTES + 1,
+                                      MALLOC_CAP_SPIRAM | MALLOC_CAP_8BIT);
+    configASSERT(s_tts_sbuf_mem);
+    s_tts_buf = xStreamBufferCreateStatic(TTS_STREAM_BUF_BYTES, 1,
+                                          s_tts_sbuf_mem, &s_tts_sbuf_ctrl);
+    configASSERT(s_tts_buf);
+    xTaskCreatePinnedToCore(tts_task, "tts_play", 4096, NULL, 4, NULL, 1);
 
     /* Wake-word + PTT trigger */
     wakeword_init("model");  /* NULL → PTT only, "model" → PTT + WakeNet */

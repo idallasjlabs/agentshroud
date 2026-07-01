@@ -12,7 +12,7 @@ CONFIG_PARTITION_TABLE_CUSTOM_FILENAME="partitions.csv"
 # OTA rollback — auto-revert to previous slot if new firmware doesn't mark itself valid
 CONFIG_BOOTLOADER_APP_ROLLBACK_ENABLE=y
 
-# Octal PSRAM — required for MicroLink TLS headroom
+# Octal PSRAM — required for TLS headroom + audio buffers
 CONFIG_SPIRAM=y
 CONFIG_SPIRAM_MODE_OCT=y
 CONFIG_SPIRAM_SPEED_80M=y
@@ -23,6 +23,19 @@ CONFIG_SPIRAM_RODATA=y
 CONFIG_SPIRAM_MALLOC_ALWAYSINTERNAL=8192
 # Use default malloc (respects ALWAYSINTERNAL threshold) so TLS can use PSRAM.
 CONFIG_MBEDTLS_DEFAULT_MEM_ALLOC=y
+# Hardware MPI (RSA bignum accelerator) — ESP32-S3 has a dedicated crypto coprocessor.
+# Without this, TLS RSA handshake runs in software and can starve IDLE0 for 500ms+ per
+# operation. Hardware MPI reduces that to <5ms, eliminating WDT fires during reconnect.
+CONFIG_MBEDTLS_HARDWARE_MPI=y
+# WDT timeout increased from default 5s → 10s. DERP-relayed TLS handshakes can run
+# close to 5s on slow relay paths; 10s gives headroom while HW MPI (above) takes effect.
+CONFIG_ESP_TASK_WDT_TIMEOUT_S=10
+
+# Stack sizes — esp_timer overflow at WiFi IP acquisition with TLS in system
+# ota_check has a heap-allocated 4KB buffer; main task still needs 8KB for TLS call frames
+CONFIG_ESP_TIMER_TASK_STACK_SIZE=6144
+CONFIG_ESP_SYSTEM_EVENT_TASK_STACK_SIZE=4096
+CONFIG_ESP_MAIN_TASK_STACK_SIZE=8192
 
 # BOX-3 BSP board selection
 CONFIG_BSP_BOARD_ESP32_S3_BOX_3=y
@@ -36,12 +49,6 @@ CONFIG_FREERTOS_HZ=1000
 # WiFi
 CONFIG_ESP_WIFI_STATIC_RX_BUFFER_NUM=10
 CONFIG_ESP_WIFI_DYNAMIC_RX_BUFFER_NUM=32
-
-# Stack sizes — esp_timer overflow at WiFi IP acquisition with TLS in system
-# ota_check has a heap-allocated 4KB buffer; main task still needs 8KB for TLS call frames
-CONFIG_ESP_TIMER_TASK_STACK_SIZE=6144
-CONFIG_ESP_SYSTEM_EVENT_TASK_STACK_SIZE=4096
-CONFIG_ESP_MAIN_TASK_STACK_SIZE=8192
 
 # Log level
 CONFIG_LOG_DEFAULT_LEVEL_INFO=y

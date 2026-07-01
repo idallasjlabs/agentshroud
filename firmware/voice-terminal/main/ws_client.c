@@ -121,8 +121,10 @@ ws_client_handle_t ws_client_create(const char *url,
     esp_websocket_client_config_t cfg = {
         .uri                  = url,
         .reconnect_timeout_ms = 5000,
-        /* 15 s allows for hotspot/DERP latency spikes during TLS reconnect. */
-        .network_timeout_ms   = 15000,
+        /* 8 s — gives TLS enough headroom for DERP relay latency spikes while
+         * staying safely under the 10 s task WDT timeout. 15 s was too close
+         * to the old 5 s WDT and triggered it on every retry cycle. */
+        .network_timeout_ms   = 8000,
         /* Buffer large enough for one TTS chunk (4 KB PCM). */
         .buffer_size          = 8192,
         /* WS-level PING disabled (0 = off).  Tailscale Funnel / DERP relay does
@@ -136,8 +138,11 @@ ws_client_handle_t ws_client_create(const char *url,
         /* TLS: attach the ESP-IDF CA bundle (includes ISRG Root X1 / Let's Encrypt).
          * Required for wss:// connections to Tailscale Funnel. No-op for ws://. */
         .crt_bundle_attach    = esp_crt_bundle_attach,
-        /* Pin websocket_task to CPU 0 so it cannot starve IDLE1 (CPU 1) during
-         * TLS bignum computation, which would otherwise fire the WDT. */
+        /* Pin websocket_task to CPU 0 so TLS bignum cannot starve IDLE1 (CPU 1).
+         * task_core_id_set MUST be true — the client ignores task_core_id and
+         * uses tskNO_AFFINITY when task_core_id_set is false (default for a
+         * zero-initialised struct, even if task_core_id is explicitly set to 0). */
+        .task_core_id_set     = true,
         .task_core_id         = 0,
     };
 
