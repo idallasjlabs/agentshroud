@@ -323,7 +323,10 @@ async def voice_endpoint(ws: WebSocket) -> None:
             elif "text" in message and message["text"] is not None:
                 msg = message["text"].strip()
 
-                if msg == "LISTEN":
+                if msg == '{"ping":1}':
+                    pass  # client keepalive — no response needed
+
+                elif msg == "LISTEN":
                     pcm_chunks.clear()
                     # Refresh the system message so time stays accurate on long sessions.
                     history[0] = _voice_system_message()

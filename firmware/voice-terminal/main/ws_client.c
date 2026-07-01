@@ -197,6 +197,16 @@ esp_err_t ws_client_send_end(ws_client_handle_t c)
     return (sent >= 0) ? ESP_OK : ESP_FAIL;
 }
 
+esp_err_t ws_client_send_keepalive(ws_client_handle_t c)
+{
+    if (!c) return ESP_ERR_INVALID_ARG;
+    if (!esp_websocket_client_is_connected(c->wsc)) return ESP_OK;
+    const char *msg = "{\"ping\":1}";
+    int sent = esp_websocket_client_send_text(c->wsc, msg, strlen(msg),
+                                              pdMS_TO_TICKS(1000));
+    return (sent >= 0) ? ESP_OK : ESP_FAIL;
+}
+
 bool ws_client_connected(ws_client_handle_t c)
 {
     if (!c) return false;

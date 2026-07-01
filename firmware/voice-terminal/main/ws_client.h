@@ -71,6 +71,15 @@ esp_err_t ws_client_send_listen(ws_client_handle_t c);
 esp_err_t ws_client_send_end(ws_client_handle_t c);
 
 /**
+ * @brief Send a keepalive text frame to the Voice Gateway.
+ *
+ * Sends {"ping":1} to keep NAT and Tailscale relay state alive when no audio
+ * is flowing.  Call every ~30 s from the voice_task idle path.
+ * No-op if the connection is not currently open.
+ */
+esp_err_t ws_client_send_keepalive(ws_client_handle_t c);
+
+/**
  * @brief Returns true if the WebSocket connection is currently open.
  */
 bool ws_client_connected(ws_client_handle_t c);

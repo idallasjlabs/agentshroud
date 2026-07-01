@@ -140,6 +140,9 @@ static void ui_init(void)
     bsp_display_cfg_t cfg = {
         .lvgl_port_cfg = ESP_LVGL_PORT_INIT_CONFIG(),
         .buffer_size   = BSP_LCD_H_RES * BSP_LCD_V_RES / 4,
+        .flags = {
+            .buff_dma = true,   /* must be DMA-capable; non-DMA buffer fails spi_device_queue_trans */
+        },
     };
     bsp_display_start_with_config(&cfg);
     bsp_display_backlight_on();
@@ -327,6 +330,7 @@ typedef struct {
 static void voice_task(void *arg)
 {
     (void)arg;
+    ESP_LOGI(TAG, "voice_task started on core %d", (int)xPortGetCoreID());
 
     /* Frame size is determined by the AFE at init time — must match afe->get_feed_chunksize(). */
     const int frame_bytes = wakeword_feed_bytes();
@@ -338,6 +342,12 @@ static void voice_task(void *arg)
     }
 
     bool streaming = false;
+    /* Keepalive: send {"ping":1} every 30 s when idle so the office NAT and
+     * Tailscale DERP relay see bidirectional traffic and don't drop the TCP
+     * connection.  frame_bytes is ~512 bytes at 16kHz; ~62 frames/s → counter
+     * of 1860 ≈ 30 s. */
+    int keepalive_frames = 0;
+    const int KEEPALIVE_INTERVAL = 1860;
     ESP_LOGI(TAG, "Voice task running (frame=%d bytes)", frame_bytes);
 
     while (1) {
@@ -412,7 +422,16 @@ static void voice_task(void *arg)
                 ws_client_send_end(ws);
                 streaming = false;
                 wakeword_clear();
+                keepalive_frames = 0;   /* reset so we don't ping immediately after */
                 ESP_LOGI(TAG, "Utterance ended");
+            }
+        } else {
+            /* Idle path: periodic keepalive to prevent NAT/relay dropping the
+             * connection.  The server's own heartbeat goes server→device; this
+             * goes device→server so the NAT table sees traffic in both directions. */
+            if (++keepalive_frames >= KEEPALIVE_INTERVAL) {
+                keepalive_frames = 0;
+                ws_client_send_keepalive(ws);
             }
         }
     }
@@ -512,9 +531,28 @@ void app_main(void)
 
     ESP_LOGI(TAG, "Ready. Voice terminal active → agent: %s", VT_AGENTS[0].display);
 
+    /* voice_task stack must come from PSRAM — internal DRAM is too fragmented by
+     * the time we reach this point (AFE, TLS, DMA buffers already allocated).
+     * pvPortMalloc still routes to internal DRAM even for large requests due to
+     * heap fragmentation; use xTaskCreateStaticPinnedToCore with an explicit
+     * PSRAM allocation instead. */
+    #define VOICE_STACK_WORDS 4096   /* 16 KB — covers esp-sr AFE + codec call depth */
+    static StaticTask_t s_voice_tcb;
     static voice_task_args_t voice_args;
-    xTaskCreatePinnedToCore(voice_task, "voice", 8192, &voice_args,
-                            5, NULL, 1);  /* pin to core 1, away from WiFi */
+    StackType_t *voice_stack = heap_caps_malloc(
+        VOICE_STACK_WORDS * sizeof(StackType_t),
+        MALLOC_CAP_SPIRAM | MALLOC_CAP_8BIT);
+    if (!voice_stack) {
+        ESP_LOGE(TAG, "voice_task PSRAM stack alloc failed (need %u bytes, PSRAM free %u)",
+                 (unsigned)(VOICE_STACK_WORDS * sizeof(StackType_t)),
+                 (unsigned)heap_caps_get_free_size(MALLOC_CAP_SPIRAM));
+    } else {
+        xTaskCreateStaticPinnedToCore(voice_task, "voice",
+                                      VOICE_STACK_WORDS, &voice_args,
+                                      5, voice_stack, &s_voice_tcb, 1);
+        ESP_LOGI(TAG, "voice_task started (PSRAM stack, %u KB)",
+                 (unsigned)(VOICE_STACK_WORDS * sizeof(StackType_t) / 1024));
+    }
 
     /* Main task idles; voice_task owns the audio loop */
     while (1) {
