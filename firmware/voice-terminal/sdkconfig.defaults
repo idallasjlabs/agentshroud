@@ -18,6 +18,11 @@ CONFIG_SPIRAM_MODE_OCT=y
 CONFIG_SPIRAM_SPEED_80M=y
 CONFIG_SPIRAM_FETCH_INSTRUCTIONS=y
 CONFIG_SPIRAM_RODATA=y
+# Allocations ≤8192 bytes go to internal DRAM; larger (e.g. 16KB TLS IN buffer)
+# fall through to PSRAM. Prevents mbedtls_ssl_setup OOM after WiFi+audio+AFE init.
+CONFIG_SPIRAM_MALLOC_ALWAYSINTERNAL=8192
+# Use default malloc (respects ALWAYSINTERNAL threshold) so TLS can use PSRAM.
+CONFIG_MBEDTLS_DEFAULT_MEM_ALLOC=y
 
 # BOX-3 BSP board selection
 CONFIG_BSP_BOARD_ESP32_S3_BOX_3=y
@@ -32,11 +37,19 @@ CONFIG_FREERTOS_HZ=1000
 CONFIG_ESP_WIFI_STATIC_RX_BUFFER_NUM=10
 CONFIG_ESP_WIFI_DYNAMIC_RX_BUFFER_NUM=32
 
+# Stack sizes — esp_timer overflow at WiFi IP acquisition with TLS in system
+# ota_check has a heap-allocated 4KB buffer; main task still needs 8KB for TLS call frames
+CONFIG_ESP_TIMER_TASK_STACK_SIZE=6144
+CONFIG_ESP_SYSTEM_EVENT_TASK_STACK_SIZE=4096
+CONFIG_ESP_MAIN_TASK_STACK_SIZE=8192
+
 # Log level
 CONFIG_LOG_DEFAULT_LEVEL_INFO=y
 
-# Force esp_codec_dev to use legacy I2C driver — avoids conflict with BSP v1.1.3
-CONFIG_CODEC_I2C_BACKWARD_COMPATIBLE=y
+# BSP v3.2.0 uses i2c_new_master_bus() (driver_ng). Codec must also use new API
+# to avoid the "driver_ng not allowed with old driver" conflict. Backward compat
+# flag was correct for BSP v1.1.3 (old API) but breaks with BSP v3.2.0 (new API).
+CONFIG_CODEC_I2C_BACKWARD_COMPATIBLE=n
 
 # LVGL fonts — 14pt agent label (ui_face_set_agent), 20pt status, 28pt wifi splash
 CONFIG_LV_FONT_MONTSERRAT_14=y

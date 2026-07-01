@@ -136,6 +136,9 @@ ws_client_handle_t ws_client_create(const char *url,
         /* TLS: attach the ESP-IDF CA bundle (includes ISRG Root X1 / Let's Encrypt).
          * Required for wss:// connections to Tailscale Funnel. No-op for ws://. */
         .crt_bundle_attach    = esp_crt_bundle_attach,
+        /* Pin websocket_task to CPU 0 so it cannot starve IDLE1 (CPU 1) during
+         * TLS bignum computation, which would otherwise fire the WDT. */
+        .task_core_id         = 0,
     };
 
     c->wsc = esp_websocket_client_init(&cfg);

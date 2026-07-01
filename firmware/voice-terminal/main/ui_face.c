@@ -21,7 +21,7 @@ static face_emotion_t _state_to_emotion(ws_vg_state_t state)
         case WS_VG_STATE_LISTENING:    return FACE_SURPRISED;
         case WS_VG_STATE_THINKING:     return FACE_WORKING_HARD;
         case WS_VG_STATE_SPEAKING:     return FACE_HAPPY;
-        case WS_VG_STATE_DISCONNECTED: return FACE_SAD;
+        case WS_VG_STATE_DISCONNECTED: return FACE_WORRIED;
         default:                       return FACE_NEUTRAL;
     }
 }
@@ -76,15 +76,19 @@ void ui_face_init(void)
 
     bsp_display_unlock();
 
-    // Init kawaii face — acquires lvgl_port lock internally; must NOT hold it here.
+    // face_lock() inside face_animation_init is a no-op (no lock fns registered).
+    // Hold the display lock here so LVGL object creation doesn't race taskLVGL.
+    bsp_display_lock(0);
     face_config_t cfg = {
         .parent          = face_panel,
-        .animation_speed = 30,
+        .animation_speed = 50,   /* 20 fps — gives DMA more time between flushes */
         .blink_interval  = 4000,
         .auto_blink      = true,
+        .bg_color        = lv_color_hex(0x1a1a2e),
     };
     ESP_ERROR_CHECK(face_animation_init(&cfg));
     face_set_emotion(FACE_NEUTRAL, false);
+    bsp_display_unlock();
 
     // Touch overlay — created last so it sits at the highest z-order.
     bsp_display_lock(0);
